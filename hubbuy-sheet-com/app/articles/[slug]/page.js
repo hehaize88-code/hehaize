@@ -87,7 +87,7 @@ export default async function ArticlePage({ params }) {
         <div className="wrap seo-article-hero-grid">
           <div>
             <nav className="breadcrumbs" aria-label="Breadcrumb">
-              <Link href="/">Home</Link><span>/</span><Link href="/articles">Articles</Link><span>/</span><span>Field guide</span>
+              <Link href="/">Home</Link><span>/</span><Link href="/articles">Articles</Link><span>/</span><span>Research article</span>
             </nav>
             <div className="article-card-meta"><span>{article.category}</span><span>English article</span></div>
             <h1>{article.title}</h1>
@@ -251,11 +251,11 @@ export default async function ArticlePage({ params }) {
       <section className="related-guides">
         <div className="wrap">
           <span className="eyebrow">Continue reading</span>
-          <h2>Use the guide for the next decision.</h2>
+          <h2>Use a checklist for the next action.</h2>
           <div>
-            <Link href="/guides/how-to-buy">Beginner buying workflow <ArrowIcon /></Link>
-            <Link href="/guides/qc-checks">Warehouse QC checklist <ArrowIcon /></Link>
-            <Link href="/guides/shipping">Parcel planning guide <ArrowIcon /></Link>
+            <Link href="/guides/how-to-buy">Five-step order checklist <ArrowIcon /></Link>
+            <Link href="/guides/qc-checks">Category-by-category QC checklist <ArrowIcon /></Link>
+            <Link href="/guides/shipping">Parcel packing and route checklist <ArrowIcon /></Link>
           </div>
         </div>
       </section>

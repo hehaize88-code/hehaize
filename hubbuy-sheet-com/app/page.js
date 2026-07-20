@@ -15,9 +15,9 @@ const steps = [
 ];
 
 const guideCards = [
-  { tag: "Start here", title: "How to use a shopping agent without losing track", text: "A calm, step-by-step workflow from the product link to parcel submission.", href: "/guides/how-to-buy", tone: "mint" },
-  { tag: "Before shipping", title: "A category-specific QC photo checklist", text: "Know which angles, measurements and details are actually useful.", href: "/guides/qc-checks", tone: "orange" },
-  { tag: "Total cost", title: "Why weight and parcel size change the answer", text: "Compare item cost and shipping assumptions before you commit.", href: "/guides/shipping", tone: "blue" },
+  { tag: "5-step checklist", title: "Hubbuy order checklist", text: "Five actions from product link and exact variant to warehouse review and parcel submission.", href: "/guides/how-to-buy", tone: "mint" },
+  { tag: "By product type", title: "Warehouse QC checklist", text: "Choose useful views, labels and measurements for shoes, clothing, bags or electronics.", href: "/guides/qc-checks", tone: "orange" },
+  { tag: "Parcel checklist", title: "Packing, weight and route plan", text: "Review the final parcel data, protection needs and eligible lines before submission.", href: "/guides/shipping", tone: "blue" },
 ];
 
 const homeArticles = articles.slice(1, 4);
@@ -66,7 +66,7 @@ export default function HomePage() {
             <SearchBox />
             <div className="hero-links">
               <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">Browse all live products <ArrowIcon /></a>
-              <Link href="/guides/how-to-buy">Read the beginner guide</Link>
+              <Link href="/guides/how-to-buy">Open the order checklist</Link>
             </div>
             <div className="trust-row">
               <span><CheckIcon /> Exact product links</span>
@@ -124,7 +124,7 @@ export default function HomePage() {
             <span className="eyebrow eyebrow-light">A better workflow</span>
             <h2>Four checks before your parcel moves.</h2>
             <p>A spreadsheet is useful only when it helps you remove uncertainty. Follow the product from source page to warehouse review, then make a shipping decision with real information.</p>
-            <Link className="text-link-light" href="/guides/how-to-buy">Open the complete buying guide <ArrowIcon /></Link>
+            <Link className="text-link-light" href="/guides/how-to-buy">Open the five-step order checklist <ArrowIcon /></Link>
           </div>
           <div className="steps-grid">
             {steps.map(([number, title, text]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}

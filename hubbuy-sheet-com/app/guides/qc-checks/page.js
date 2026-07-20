@@ -12,35 +12,34 @@ const OFFICIAL_EXAMPLES = [
 ];
 
 export const metadata = {
-  title: "Hubbuy QC Images Guide 2026: Warehouse Photo Checklist",
-  description: "A fact-checked guide to the QC Images, warehouse estimates, weight and dimensions shown on public Hubbuy product pages, plus a practical photo-review checklist.",
+  title: "Hubbuy Warehouse QC Checklist by Product Category",
+  description: "Use category-specific Hubbuy warehouse checks for clothing, shoes, bags, accessories and electronics, including useful angles, labels and measurement requests.",
   alternates: { canonical: "/guides/qc-checks/" },
   openGraph: {
-    title: "Hubbuy QC Images & Warehouse Photo Guide 2026",
-    description: "What Hubbuy's public pages show—and what QC photos can and cannot prove.",
+    title: "Hubbuy Warehouse QC Checklist by Product Category",
+    description: "A practical checklist for choosing useful warehouse views, labels and measurements by product type.",
     url: `${SITE_URL}/guides/qc-checks/`,
-    images: [{ url: "/brand/og-card.png", width: 1200, height: 630, alt: "Hubbuy QC images guide" }],
+    images: [{ url: "/brand/og-card.png", width: 1200, height: 630, alt: "Hubbuy warehouse QC checklist" }],
   },
 };
 
 const toc = [
-  { id: "official", label: "What Hubbuy shows" },
-  { id: "purpose", label: "What QC can prove" },
+  { id: "official", label: "Confirm the live interface" },
+  { id: "purpose", label: "Set the evidence boundary" },
   { id: "source", label: "Save the exact variant" },
-  { id: "universal", label: "Universal checks" },
-  { id: "category", label: "Category checks" },
-  { id: "request", label: "Extra-photo requests" },
+  { id: "universal", label: "Run five base checks" },
+  { id: "category", label: "Choose your category" },
+  { id: "request", label: "Request one missing view" },
   { id: "sources", label: "Official sources" },
 ];
 
 export default function QCPage() {
   const guideSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Hubbuy QC Images Guide 2026: Warehouse Photo Checklist",
+    "@type": "HowTo",
+    name: "Hubbuy Warehouse QC Checklist by Product Category",
     description: metadata.description,
     url: `${SITE_URL}/guides/qc-checks/`,
-    mainEntityOfPage: `${SITE_URL}/guides/qc-checks/`,
     datePublished: "2026-07-20",
     dateModified: "2026-07-20",
     inLanguage: "en",
@@ -48,21 +47,29 @@ export default function QCPage() {
     publisher: { "@type": "Organization", name: "Hubbuy Sheet" },
     image: [`${SITE_URL}/products/3359.webp`, `${SITE_URL}/products/3346.webp`],
     citation: [OFFICIAL_SITE, ...OFFICIAL_EXAMPLES],
+    step: [
+      "Save the exact product variant and source evidence",
+      "Check identity, quantity, visible condition, labels and scale",
+      "Apply the clothing, footwear, bag or electronics checklist",
+      "Request one precise missing angle or measurement",
+      "Decide from visible evidence without treating photos as certification",
+    ].map((name, index) => ({ "@type": "HowToStep", position: index + 1, name })),
   };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideSchema) }} />
       <PageHero
-        eyebrow="English research edition · Updated July 2026"
-        title="How Hubbuy QC images fit into a warehouse decision."
-        intro="Public Hubbuy product pages expose QC images and listing-level warehouse signals. This guide separates those verified interface facts from independent photo-review advice."
+        eyebrow="Category checklist · Updated July 2026"
+        title="A category-by-category Hubbuy warehouse QC checklist."
+        intro="Choose the checks that match the product: useful views, readable labels, measurements and one precise request when an important detail is missing."
         crumbs={["Guides", "QC checks"]}
         noTranslate
       />
       <div className="wrap guide-review-meta" data-no-translate><Link href="/about/">Hubbuy Sheet Editorial</Link><span>Last fact-checked 20 July 2026</span></div>
       <GuideShell toc={toc} noTranslate>
-        <GuideSection id="official" kicker="Verified on Hubbuy.com" title="What Hubbuy's public pages currently show">
+        <div className="guide-purpose-note"><span>Use this page during warehouse review</span><strong>A product-category checklist, not a general QC photo article.</strong><p>For a deeper explanation of photographic evidence, uncertainty and acceptance decisions, read <Link href="/articles/hubbuy-qc-photos-guide/">how to interpret Hubbuy QC photos</Link>.</p></div>
+        <GuideSection id="official" kicker="Before using the checklist" title="Confirm which QC fields and images the live order provides">
           <p>The official Hubbuy homepage describes the service as a purchasing agent for Chinese marketplaces including Taobao and 1688 and presents a shipping-cost estimate. On the public product pages reviewed on 20 July 2026, we also found a dedicated <strong>QC Images</strong> area with a <strong>View More</strong> link.</p>
           <p>Those product pages can also display listing-level signals such as estimated warehouse arrival, average delivery time, weight and package dimensions. The fields vary by product, and an estimate on one listing is not a permanent service promise for every order.</p>
 
@@ -101,7 +108,7 @@ export default function QCPage() {
           </div>
         </GuideSection>
 
-        <GuideSection id="purpose" kicker="Independent interpretation" title="QC images reduce visible uncertainty; they do not certify quality">
+        <GuideSection id="purpose" kicker="Evidence boundary" title="Use photos for visible decisions, not product certification">
           <p>The verified fact is that public Hubbuy product pages expose a QC Images area. What those images can prove still depends on the angle, lighting and visible detail. A warehouse photo can help confirm that an item arrived, resembles the ordered variant and has no obvious external damage.</p>
           <p>It cannot establish long-term durability, material composition, authenticity, internal electronics condition or exact fit. Treat the images as evidence for a specific keep, exchange or return decision—not as a general quality certificate.</p>
           <div className="qc-boundary-grid">
@@ -135,7 +142,7 @@ export default function QCPage() {
           </ul>
         </GuideSection>
 
-        <GuideSection id="category" kicker="Ask category-specific questions" title="The useful angle changes with the product">
+        <GuideSection id="category" kicker="Choose the product type" title="Use the checklist that matches the item">
           <div className="qc-category-grid">
             <article><span>Shoes</span><h3>Shape and sizing</h3><p>Compare both outer sides, heels, toe shape, outsoles and size tags. Ask for insole length when fit is uncertain.</p></article>
             <article><span>Clothing</span><h3>Measurements and finish</h3><p>Check front, back, size tag, seams and key print details. Chest width and garment length are more useful than a size label alone.</p></article>

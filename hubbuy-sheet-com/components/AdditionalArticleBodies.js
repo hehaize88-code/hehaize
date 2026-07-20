@@ -49,9 +49,9 @@ function ArticleCta() {
 function QCPhotosArticle({ article }) {
   return (
     <>
-      <p className="article-deck">A warehouse photo is useful only when it answers a question you decided to ask. This guide turns Hubbuy QC images into a repeatable review: first confirm the ordered variant, then inspect visible condition, then request one precise missing detail before you accept or reject the item.</p>
+      <p className="article-deck">A warehouse photo is useful only when it answers a question you decided to ask. This article examines Hubbuy QC images as evidence: what a visible detail supports, what remains uncertain and when one precise missing view can change an acceptance decision.</p>
 
-      <ResearchDisclosure>Hubbuy’s public homepage currently says that goods enter the warehouse for quality inspection and that customers receive free quality-inspection images. It does not publish a universal photo count in that public workflow, so this guide does not invent one.</ResearchDisclosure>
+      <ResearchDisclosure>Hubbuy’s public homepage currently says that goods enter the warehouse for quality inspection and that customers receive free quality-inspection images. It does not publish a universal photo count in that public workflow, so this article does not invent one.</ResearchDisclosure>
 
       <section id="official-qc">
         <span>01 · Verified Hubbuy feature</span>
@@ -175,7 +175,7 @@ function ShippingCostArticle({ article }) {
           <small>Delivered-cost range</small>
           <strong>Product + China shipping + current services + packaging + international shipping + destination charges</strong>
         </div>
-        <p>Check currency conversion and promotions at the point of payment. Exchange rates and coupon banners are time-sensitive. This guide does not turn a temporary promotion into a permanent saving or publish an unverified fixed exchange markup.</p>
+        <p>Check currency conversion and promotions at the point of payment. Exchange rates and coupon banners are time-sensitive. This article does not turn a temporary promotion into a permanent saving or publish an unverified fixed exchange markup.</p>
       </section>
 
       <section id="weight">
@@ -228,7 +228,7 @@ function ShippingCostArticle({ article }) {
         <h2>A good shipping line fits the parcel, product and destination</h2>
         <p>Compare the routes shown for the completed parcel, not a generic list copied weeks earlier. Check whether the line accepts the product category, how chargeable weight is determined, what tracking is included, whether compensation has limits and which customs responsibilities remain with the recipient. A route that cannot accept the item is not a bargain.</p>
         <p>Delivery estimates are not guarantees. Customs inspection, peak periods, weather and carrier handling can affect a shipment after it leaves the warehouse. Keep the parcel submission, weight, dimensions, selected line, declaration information and tracking record. Photograph the delivered parcel before opening if the exterior is damaged.</p>
-        <p>The right question is not “Which Hubbuy line is always cheapest?” It is “Which currently available line gives this exact parcel an acceptable balance of cost, eligibility, tracking and risk?” Recalculate when the parcel changes. Our <Link href="/guides/shipping">shipping guide</Link> provides a compact comparison checklist.</p>
+        <p>The right question is not “Which Hubbuy line is always cheapest?” It is “Which currently available line gives this exact parcel an acceptable balance of cost, eligibility, tracking and risk?” Recalculate when the parcel changes. Our <Link href="/guides/shipping">parcel packing and route checklist</Link> turns that analysis into a compact submission workflow.</p>
       </section>
 
       <ArticleFaq items={article.faq} />

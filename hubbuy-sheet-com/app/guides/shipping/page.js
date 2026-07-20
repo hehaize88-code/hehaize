@@ -1,28 +1,51 @@
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { GuideShell, GuideSection } from "@/components/GuideLayout";
+import { SITE_URL } from "@/data/site";
 
 export const metadata = {
-  title: "Hubbuy Shipping and Parcel Planning Guide",
-  description: "Understand actual versus volumetric weight, packaging choices, shipping estimates and parcel planning before submitting a Hubbuy agent shipment.",
-  alternates: { canonical: "/guides/shipping" },
+  title: "Hubbuy Parcel Planning & Packaging Checklist",
+  description: "Use a Hubbuy parcel checklist to review approved items, packed weight, dimensions, protection, route eligibility and shipment records before submission.",
+  alternates: { canonical: "/guides/shipping/" },
 };
 
 const toc = [
-  { id: "total", label: "Calculate total cost" },
-  { id: "weight", label: "Weight vs volume" },
-  { id: "packing", label: "Packaging choices" },
-  { id: "line", label: "Choose a line" },
-  { id: "records", label: "Keep records" },
+  { id: "total", label: "Set the parcel goal" },
+  { id: "weight", label: "Check weight and size" },
+  { id: "packing", label: "Choose protection" },
+  { id: "line", label: "Compare live routes" },
+  { id: "records", label: "Save parcel records" },
 ];
 
 export default function ShippingPage() {
+  const checklistSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Hubbuy Parcel Planning and Packaging Checklist",
+    description: metadata.description,
+    url: `${SITE_URL}/guides/shipping/`,
+    inLanguage: "en",
+    dateModified: "2026-07-20",
+    author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
+    step: [
+      "Confirm every item is approved for the parcel",
+      "Review final actual weight and parcel dimensions",
+      "Choose protection that matches the contents",
+      "Compare current eligible shipping lines",
+      "Save the parcel, declaration and tracking records",
+    ].map((name, index) => ({ "@type": "HowToStep", position: index + 1, name })),
+  };
+
   return (
     <>
-      <PageHero eyebrow="Parcel planning" title="The cheapest item can still build an expensive parcel." intro="Estimate shipping with weight, dimensions and packaging in mind. Product price alone is not a useful total-cost comparison." crumbs={["Guides", "Shipping"]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(checklistSchema) }} />
+      <PageHero eyebrow="Parcel action checklist" title="Plan the parcel before choosing a shipping line." intro="Use the completed warehouse data to choose packing, protection and an eligible route for the exact items you approved." crumbs={["Guides", "Shipping"]} />
+      <div className="wrap guide-review-meta"><Link href="/about/">Hubbuy Sheet Editorial</Link><span>Checklist reviewed 20 July 2026</span></div>
       <GuideShell toc={toc}>
-        <GuideSection id="total" kicker="Cost model" title="Separate the item decision from the parcel decision.">
-          <p>Your likely total can include item price, domestic delivery, payment or service costs, optional photos, packaging and international shipping. Taxes or customs charges may also apply depending on the destination and current rules.</p>
-          <p>Use a range rather than one perfect estimate. A realistic low and high scenario makes it easier to decide whether the item is still worthwhile before it reaches the warehouse.</p>
+        <div className="guide-purpose-note"><span>Use this page at parcel submission</span><strong>A packing and route checklist, not a shipping-price analysis.</strong><p>For the detailed cost model, including domestic freight, weight, volume and consolidation scenarios, read <Link href="/articles/hubbuy-shipping-cost-guide/">how Hubbuy shipping costs are built</Link>.</p></div>
+        <GuideSection id="total" kicker="Parcel goal" title="Start with approved items and one clear parcel plan.">
+          <p>Confirm that every included item has passed warehouse review and that no unresolved support issue remains. Record which items belong together, the destination and any protection requirement before comparing routes.</p>
+          <p>Keep the earlier product budget separate from this final parcel decision. At this stage, the useful inputs are the approved contents, packed weight, dimensions, restrictions and current destination options.</p>
         </GuideSection>
         <GuideSection id="weight" kicker="Chargeable weight" title="Actual weight and volumetric weight answer different questions.">
           <p>Actual weight is what the packed parcel weighs on a scale. Volumetric weight represents how much space it occupies. Some lines charge using the larger figure, which is why a light but bulky box can cost more than expected.</p>

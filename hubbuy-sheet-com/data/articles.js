@@ -1,10 +1,10 @@
 export const articles = [
   {
     slug: "how-to-use-a-hubbuy-spreadsheet",
-    category: "China shopping agent guide",
-    title: "How to Use a Hubbuy Spreadsheet in 2026: From Product Link to International Parcel",
-    seoTitle: "Hubbuy Spreadsheet Guide 2026: Buy, QC and Ship",
-    excerpt: "A fact-checked Hubbuy buying guide covering source verification, real cost planning, warehouse QC, storage, consolidation and international shipping.",
+    category: "Purchase research",
+    title: "How to Research a Hubbuy Purchase in 2026: Link, Cost, QC and Parcel",
+    seoTitle: "Hubbuy Purchase Research 2026: Links, Costs, QC & Shipping",
+    excerpt: "An evidence-led Hubbuy purchase analysis covering source verification, real cost planning, warehouse QC, storage, consolidation and international shipping.",
     published: "2026-07-20",
     updated: "2026-07-20",
     displayDate: "20 July 2026",
@@ -14,7 +14,7 @@ export const articles = [
     wordCount: 1714,
     images: ["/products/3356.webp", "/products/3346.webp"],
     cover: {
-      label: "FIELD GUIDE · 01",
+      label: "RESEARCH ARTICLE · 01",
       tone: "workflow",
       steps: [
         ["Find", "Source link"],
@@ -40,10 +40,10 @@ export const articles = [
   },
   {
     slug: "hubbuy-qc-photos-guide",
-    category: "Warehouse QC guide",
-    title: "Hubbuy QC Photos Guide 2026: What to Check Before You Ship",
-    seoTitle: "Hubbuy QC Photos Guide 2026: Warehouse Checklist",
-    excerpt: "A practical Hubbuy QC photo checklist for variants, measurements, visible defects and category-specific warehouse decisions.",
+    category: "QC photo analysis",
+    title: "How to Read Hubbuy QC Photos: Evidence, Limits and Decisions",
+    seoTitle: "How to Read Hubbuy QC Photos: What Images Can Prove",
+    excerpt: "An evidence-focused analysis of how to interpret Hubbuy QC photos, recognize their limits and decide when one clearer warehouse image is needed.",
     published: "2026-07-20",
     updated: "2026-07-20",
     displayDate: "20 July 2026",
@@ -53,7 +53,7 @@ export const articles = [
     wordCount: 1434,
     images: ["/products/3350.webp", "/products/3357.webp"],
     cover: {
-      label: "FIELD GUIDE · 02",
+      label: "RESEARCH ARTICLE · 02",
       tone: "qc",
       steps: [
         ["Match", "Saved variant"],
@@ -63,11 +63,11 @@ export const articles = [
     },
     toc: [
       ["official-qc", "What Hubbuy confirms"],
-      ["prepare", "Prepare before arrival"],
-      ["universal", "Universal QC checks"],
-      ["category-qc", "Category checks"],
-      ["extra-photo", "Request useful photos"],
-      ["limits", "Know the limits"],
+      ["prepare", "Define the evidence question"],
+      ["universal", "Read the visible evidence"],
+      ["category-qc", "Interpret useful angles"],
+      ["extra-photo", "Resolve one missing fact"],
+      ["limits", "Separate evidence from proof"],
       ["faq", "QC photo FAQ"],
     ],
     faq: [
@@ -79,10 +79,10 @@ export const articles = [
   },
   {
     slug: "hubbuy-shipping-cost-guide",
-    category: "International shipping guide",
-    title: "Hubbuy Shipping Cost Guide 2026: Plan the Parcel Before You Pay",
-    seoTitle: "Hubbuy Shipping Cost Guide 2026: Parcel Planning",
-    excerpt: "Learn how item cost, China shipping, packed weight, parcel size, consolidation and route rules shape a realistic Hubbuy shipping budget.",
+    category: "Shipping cost analysis",
+    title: "How Hubbuy Shipping Costs Are Built: Weight, Volume and Route Rules",
+    seoTitle: "Hubbuy Shipping Costs Explained: Weight, Volume & Routes",
+    excerpt: "An evidence-led explanation of how China shipping, packed weight, parcel size, consolidation and route rules shape a realistic Hubbuy shipping budget.",
     published: "2026-07-20",
     updated: "2026-07-20",
     displayDate: "20 July 2026",
@@ -92,7 +92,7 @@ export const articles = [
     wordCount: 1346,
     images: ["/products/3361.webp", "/products/3357.webp"],
     cover: {
-      label: "FIELD GUIDE · 03",
+      label: "RESEARCH ARTICLE · 03",
       tone: "shipping",
       steps: [
         ["Estimate", "Cost range"],

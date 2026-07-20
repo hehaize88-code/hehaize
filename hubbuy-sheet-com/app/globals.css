@@ -249,6 +249,11 @@ p { color: var(--muted); }
 .guide-section h2 { margin: 8px 0 20px; font-size: 38px; }
 .guide-section p { font-size: 16px; line-height: 1.85; }
 .guide-section p:last-child { margin-bottom: 0; }
+.guide-purpose-note { margin: 0 0 50px; padding: 24px 26px; border: 1px solid #9ab9a2; border-left: 4px solid var(--orange); border-radius: 16px; background: #eff7f0; }
+.guide-purpose-note > span { display: block; margin-bottom: 8px; color: var(--forest-2); font-size: 9px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+.guide-purpose-note > strong { display: block; margin-bottom: 7px; font-size: 18px; }
+.guide-purpose-note p { margin: 0; font-size: 13px; line-height: 1.7; }
+.guide-purpose-note a { color: var(--forest-2); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
 .callout { margin-top: 26px; padding: 22px 24px; border-radius: 15px; background: var(--mint); }
 .callout strong { display: block; margin-bottom: 5px; font-size: 13px; }
 .callout p { margin: 0; color: #43564a; font-size: 13px; }
