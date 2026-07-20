@@ -1,0 +1,44 @@
+import Link from "next/link";
+import { MAIN_SITE } from "@/data/site";
+import { ArrowIcon } from "@/components/Icons";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+
+const nav = [
+  ["Products", "/products"],
+  ["How to buy", "/guides/how-to-buy"],
+  ["QC guide", "/guides/qc-checks"],
+  ["Shipping", "/guides/shipping"],
+  ["Articles", "/articles"],
+  ["FAQ", "/faq"],
+];
+
+export default function Header() {
+  return (
+    <header className="site-header">
+      <div className="announcement">
+        <span>Independent Hubbuy spreadsheet guide</span>
+        <span className="announcement-dot" />
+        <span>Catalog checked July 2026</span>
+      </div>
+      <div className="nav-shell wrap">
+        <Link href="/" className="brand" aria-label="Hubbuy Sheet home">
+          <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy" width="963" height="133" />
+        </Link>
+        <nav className="desktop-nav" aria-label="Primary navigation">
+          {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
+        </nav>
+        <LanguageSwitcher />
+        <a className="nav-cta" href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">
+          Live catalog <ArrowIcon size={16} />
+        </a>
+        <details className="mobile-nav">
+          <summary aria-label="Open menu"><span /><span /><span /></summary>
+          <div className="mobile-nav-panel">
+            {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
+            <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">Open live catalog</a>
+          </div>
+        </details>
+      </div>
+    </header>
+  );
+}
