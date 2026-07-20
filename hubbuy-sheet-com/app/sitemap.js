@@ -4,7 +4,7 @@ import { articles } from "@/data/articles";
 export const dynamic = "force-static";
 
 export default function sitemap() {
-  const routes = ["", "/products", "/articles/", "/guides/how-to-buy", "/guides/qc-checks", "/guides/shipping", "/faq", "/about", "/legal/privacy", "/legal/terms"];
+  const routes = ["/", "/products/", "/articles/", "/guides/how-to-buy/", "/guides/qc-checks/", "/guides/shipping/", "/faq/", "/about/", "/contact/", "/legal/privacy/", "/legal/terms/"];
   const pages = routes.map((route, index) => ({
     url: `${SITE_URL}${route}`,
     lastModified: new Date("2026-07-20T00:00:00Z"),

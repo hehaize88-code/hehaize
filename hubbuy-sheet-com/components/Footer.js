@@ -23,6 +23,8 @@ export default function Footer() {
           <strong>Site</strong>
           <Link href="/faq">FAQ</Link>
           <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/about#cnbuy-relationship">Relationship disclosure</Link>
           <Link href="/legal/privacy">Privacy</Link>
           <Link href="/legal/terms">Terms</Link>
         </div>
@@ -35,8 +37,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="wrap footer-bottom">
-        <p>© 2026 Hubbuy Sheet. Independent editorial guide.</p>
-        <p>Not affiliated with Hubbuy. We do not sell products, process payments, inspect goods or arrange shipping. Verify every live listing before ordering.</p>
+        <p>© 2026 Hubbuy Sheet. Editorial discovery guide for CNBuy Sheet.</p>
+        <p>Independent from Hubbuy and not an official Hubbuy website. Product, category, search and Live Catalog links lead to CNBuy Sheet at cnbuycha.com, in which this website has a commercial interest. Transactions occur on the destination site; verify live details before ordering.</p>
       </div>
     </footer>
   );

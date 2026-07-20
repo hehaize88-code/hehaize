@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
       description: article.excerpt,
       url: `${SITE_URL}${path}`,
       publishedTime: article.published,
-      modifiedTime: article.updated,
+      modifiedTime: article.factChecked,
       images: [{ url: "/brand/og-card.png", width: 1200, height: 630, alt: article.title }],
     },
   };
@@ -47,10 +47,10 @@ export default async function ArticlePage({ params }) {
     url: articleUrl,
     mainEntityOfPage: articleUrl,
     datePublished: article.published,
-    dateModified: article.updated,
+    dateModified: article.factChecked,
     wordCount: article.wordCount,
     inLanguage: "en",
-    author: { "@type": "Organization", name: "Hubbuy Sheet Editorial" },
+    author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
     publisher: {
       "@type": "Organization",
       name: "Hubbuy Sheet",
@@ -93,8 +93,9 @@ export default async function ArticlePage({ params }) {
             <h1>{article.title}</h1>
             <p>{article.excerpt}</p>
             <div className="article-byline">
-              <span>Hubbuy Sheet Editorial</span>
+              <Link href="/about/">Hubbuy Sheet Editorial</Link>
               <span>Published {article.displayDate}</span>
+              <span>Last fact-checked {article.factCheckedDisplayDate}</span>
               <span>{article.readTime}</span>
             </div>
           </div>

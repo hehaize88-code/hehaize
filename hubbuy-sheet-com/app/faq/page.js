@@ -6,7 +6,7 @@ import { faqGroups, faqs, SITE_URL } from "@/data/site";
 export const metadata = {
   title: "Hubbuy FAQ 2026: Orders, QC, Storage & Shipping",
   description: "Fact-checked Hubbuy FAQ covering product orders, China shipping, free QC images, 300-day storage, consolidation, parcel fees, returns and support.",
-  alternates: { canonical: "/faq" },
+  alternates: { canonical: "/faq/" },
 };
 
 const verifiedFacts = [
@@ -21,7 +21,7 @@ export default function FAQPage() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map(faq => ({ "@type": "Question", name: faq.q, acceptedAnswer: { "@type": "Answer", text: faq.a } })),
-    url: `${SITE_URL}/faq`,
+    url: `${SITE_URL}/faq/`,
   };
   return (
     <>

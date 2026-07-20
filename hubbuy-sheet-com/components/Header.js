@@ -10,6 +10,7 @@ const nav = [
   ["Shipping", "/guides/shipping"],
   ["Articles", "/articles"],
   ["FAQ", "/faq"],
+  ["Contact", "/contact"],
 ];
 
 export default function Header() {

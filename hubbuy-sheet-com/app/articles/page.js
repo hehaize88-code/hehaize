@@ -29,6 +29,8 @@ export default function ArticlesPage() {
       headline: article.title,
       url: `${SITE_URL}/articles/${article.slug}/`,
       datePublished: article.published,
+      dateModified: article.factChecked,
+      author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
     })),
   };
 

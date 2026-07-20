@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { GuideShell, GuideSection } from "@/components/GuideLayout";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
@@ -43,7 +44,7 @@ export default function QCPage() {
     datePublished: "2026-07-20",
     dateModified: "2026-07-20",
     inLanguage: "en",
-    author: { "@type": "Organization", name: "Hubbuy Sheet Editorial" },
+    author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
     publisher: { "@type": "Organization", name: "Hubbuy Sheet" },
     image: [`${SITE_URL}/products/3359.webp`, `${SITE_URL}/products/3346.webp`],
     citation: [OFFICIAL_SITE, ...OFFICIAL_EXAMPLES],
@@ -59,6 +60,7 @@ export default function QCPage() {
         crumbs={["Guides", "QC checks"]}
         noTranslate
       />
+      <div className="wrap guide-review-meta" data-no-translate><Link href="/about/">Hubbuy Sheet Editorial</Link><span>Last fact-checked 20 July 2026</span></div>
       <GuideShell toc={toc} noTranslate>
         <GuideSection id="official" kicker="Verified on Hubbuy.com" title="What Hubbuy's public pages currently show">
           <p>The official Hubbuy homepage describes the service as a purchasing agent for Chinese marketplaces including Taobao and 1688 and presents a shipping-cost estimate. On the public product pages reviewed on 20 July 2026, we also found a dedicated <strong>QC Images</strong> area with a <strong>View More</strong> link.</p>
