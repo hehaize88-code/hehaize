@@ -4,8 +4,12 @@ import ArticleCover from "@/components/ArticleCover";
 import AdditionalArticleBody from "@/components/AdditionalArticleBodies";
 import SearchBox from "@/components/SearchBox";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
-import { getArticle } from "@/data/articles";
+import { articles, getArticle } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
+
+export function generateStaticParams() {
+  return articles.map((article) => ({ slug: article.slug }));
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;

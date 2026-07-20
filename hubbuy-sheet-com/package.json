@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "node scripts/build.mjs",
+    "build:pages": "CF_PAGES_STATIC_EXPORT=1 next build",
     "start": "vinext start"
   },
   "dependencies": {
