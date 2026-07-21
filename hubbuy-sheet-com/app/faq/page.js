@@ -3,6 +3,7 @@ import SearchBox from "@/components/SearchBox";
 import { ArrowIcon } from "@/components/Icons";
 import { faqGroups, faqs, SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
+import { createBreadcrumbSchema } from "@/data/structured-data";
 
 export const metadata = createPageMetadata({
   title: "Hubbuy FAQ 2026: Orders, QC, Storage & Shipping",
@@ -24,9 +25,13 @@ export default function FAQPage() {
     mainEntity: faqs.map(faq => ({ "@type": "Question", name: faq.q, acceptedAnswer: { "@type": "Answer", text: faq.a } })),
     url: `${SITE_URL}/faq/`,
   };
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Hubbuy FAQ", path: "/faq/" },
+  ]);
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PageHero eyebrow="Hubbuy FAQ · reviewed July 2026" title="Practical answers for ordering, QC, storage and shipping." intro="Facts below were checked against Hubbuy's current public homepage. Where the public site does not state one universal number, the answer points you back to the live order or parcel page." crumbs={["FAQ"]} />
       <section className="section faq-page">
         <div className="wrap">

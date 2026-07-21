@@ -28,6 +28,7 @@ export default function ArticlesPage() {
       datePublished: article.published,
       dateModified: article.factChecked,
       author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
+      image: `${SITE_URL}${article.socialImage}`,
     })),
   };
 

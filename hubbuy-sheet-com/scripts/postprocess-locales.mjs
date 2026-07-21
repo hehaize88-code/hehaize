@@ -89,14 +89,15 @@ function localizeAbsoluteUrl(rawValue, locale) {
   return `${siteUrl}${routeForLocale(url.pathname, locale)}${url.search}${url.hash}`;
 }
 
-function translateJsonValues(value, dictionary, locale) {
-  if (Array.isArray(value)) return value.map((item) => translateJsonValues(item, dictionary, locale));
+function translateJsonValues(value, dictionary, locale, parentKey = null) {
+  if (Array.isArray(value)) return value.map((item) => translateJsonValues(item, dictionary, locale, parentKey));
   if (value && typeof value === "object") {
     return Object.fromEntries(
-      Object.entries(value).map(([key, item]) => [key, translateJsonValues(item, dictionary, locale)]),
+      Object.entries(value).map(([key, item]) => [key, translateJsonValues(item, dictionary, locale, key)]),
     );
   }
   if (typeof value !== "string") return value;
+  if (parentKey === "@context" || parentKey === "@type") return value;
   if (value.startsWith(siteUrl)) return localizeAbsoluteUrl(value, locale);
   if (/^https?:\/\//.test(value)) return value;
   if (value === "en") return localeConfig[locale].htmlLang;

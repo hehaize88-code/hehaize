@@ -3,6 +3,7 @@ import PageHero from "@/components/PageHero";
 import { GuideShell, GuideSection } from "@/components/GuideLayout";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { SITE_URL } from "@/data/site";
+import { createBreadcrumbSchema } from "@/data/structured-data";
 
 const OFFICIAL_SITE = "https://hubbuy.com/";
 const OFFICIAL_EXAMPLES = [
@@ -55,10 +56,14 @@ export default function QCPage() {
       "Decide from visible evidence without treating photos as certification",
     ].map((name, index) => ({ "@type": "HowToStep", position: index + 1, name })),
   };
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Hubbuy warehouse QC checklist", path: "/guides/qc-checks/" },
+  ]);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PageHero
         eyebrow="Category checklist · Updated July 2026"
         title="A category-by-category Hubbuy warehouse QC checklist."

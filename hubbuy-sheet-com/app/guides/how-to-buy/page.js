@@ -3,6 +3,7 @@ import PageHero from "@/components/PageHero";
 import { GuideShell, GuideSection } from "@/components/GuideLayout";
 import { SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
+import { createBreadcrumbSchema } from "@/data/structured-data";
 
 export const metadata = createPageMetadata({
   title: "Hubbuy Order Checklist: 5 Steps from Link to Parcel",
@@ -36,10 +37,14 @@ export default function HowToBuyPage() {
       "Choose packaging and a shipping line from the completed parcel data",
     ].map((name, index) => ({ "@type": "HowToStep", position: index + 1, name })),
   };
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Hubbuy order checklist", path: "/guides/how-to-buy/" },
+  ]);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(checklistSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PageHero eyebrow="Five-step action checklist" title="A five-step Hubbuy order checklist." intro="Keep this page open while you move from a product link to order review, warehouse QC and final parcel submission." crumbs={["Guides", "How to buy"]} />
       <div className="wrap guide-review-meta"><Link href="/about/">Hubbuy Sheet Editorial</Link><span>Checklist reviewed 20 July 2026</span></div>
       <GuideShell toc={toc}>

@@ -1,7 +1,7 @@
 import ProductCard from "@/components/ProductCard";
 import PageHero from "@/components/PageHero";
 import SearchBox from "@/components/SearchBox";
-import { categories, products, MAIN_SITE } from "@/data/site";
+import { categories, products, MAIN_SITE, SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
 
 export const metadata = createPageMetadata({
@@ -11,8 +11,29 @@ export const metadata = createPageMetadata({
 });
 
 export default function ProductsPage() {
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Hubbuy Spreadsheet Finds 2026",
+    description: metadata.description,
+    url: `${SITE_URL}/products/`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      numberOfItems: products.length,
+      itemListElement: products.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: product.href,
+        image: `${SITE_URL}${product.image}`,
+      })),
+    },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
       <PageHero eyebrow="Hubbuy spreadsheet finds" title="A smaller list you can actually review." intro="These recent catalog finds link to individual product pages—not a generic all-products screen. Check the live listing before saving any item." crumbs={["Products"]} />
       <section className="section product-page-section">
         <div className="wrap">

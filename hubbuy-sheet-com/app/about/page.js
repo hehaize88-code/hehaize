@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { MAIN_SITE, SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
+import { createBreadcrumbSchema } from "@/data/structured-data";
 
 export const metadata = createPageMetadata({
   title: "About This Independent Hubbuy Sheet",
@@ -23,9 +24,13 @@ export default function AboutPage() {
       description: "The publishing identity responsible for Hubbuy Sheet research, product-link checks and corrections.",
     },
   };
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "About Hubbuy Sheet", path: "/about/" },
+  ]);
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PageHero eyebrow="About Hubbuy Sheet" title="A decision guide, not another endless list." intro="We organize a smaller set of product links and explain the checks that matter between discovery, warehouse arrival and parcel submission." crumbs={["About"]} />
       <section className="section about-page"><div className="wrap about-grid">
         <div className="about-copy"><span className="eyebrow">Our purpose</span><h2>Help shoppers remove uncertainty one decision at a time.</h2><p>Traditional spreadsheets are quick to publish but difficult to use on a phone, easy to duplicate and often unclear about the source of a price. Hubbuy Sheet presents recent links in a cleaner format and separates product discovery from warehouse QC and parcel guidance.</p><p>Hubbuy Sheet Editorial is the publishing identity responsible for this website. It describes a documented review process; it does not pretend that an unnamed writer personally completed every transaction discussed. Platform facts are tied to public sources, while practical checklists are clearly presented as independent editorial guidance.</p><p>We are independent from Hubbuy and are not its official website. We do not take Hubbuy orders, process payments, inspect goods, store parcels or provide international delivery.</p><div className="about-actions"><Link href="/products" className="button-dark">Review recent finds <ArrowIcon /></Link><Link href="/contact" className="button-outline">Send a correction <ArrowIcon /></Link></div></div>

@@ -41,7 +41,12 @@ function sourceMetadata(route) {
     return {
       title: { absolute: article.seoTitle },
       description: article.excerpt,
-      openGraph: { type: "article", title: article.title, description: article.excerpt },
+      openGraph: {
+        type: "article",
+        title: article.title,
+        description: article.excerpt,
+        images: [{ url: article.socialImage }],
+      },
     };
   }
   return null;
@@ -63,6 +68,7 @@ export async function getLocalizedMetadata(params, locale) {
   const page = localePages[locale];
   const title = translateExact(absoluteTitle(source), locale);
   const description = translateExact(source.description, locale);
+  const image = source.openGraph?.images?.[0]?.url || "/brand/og-card.png";
   const alternates = {
     en: getLocalizedPath(englishPath, "en"),
     "pt-BR": getLocalizedPath(englishPath, "pt-br"),
@@ -81,9 +87,9 @@ export async function getLocalizedMetadata(params, locale) {
       url: `${SITE_URL}${canonical}`,
       locale: page.ogLocale,
       alternateLocale: locale === "de" ? ["en_US", "pt_BR"] : ["en_US", "de_DE"],
-      images: [{ url: "/brand/og-card.png", width: 1200, height: 630, alt: title }],
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
     },
-    twitter: { card: "summary_large_image", title, description, images: ["/brand/og-card.png"] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }
 

@@ -380,6 +380,7 @@ p { color: var(--muted); }
 .seo-article-hero .article-card-meta { color: #a9c6b1; }
 .seo-article-hero h1 { max-width: 800px; margin: 20px 0; font-size: clamp(48px, 5.1vw, 70px); }
 .seo-article-hero h1 + p { max-width: 720px; color: #c5d3ca; font-size: 17px; line-height: 1.75; }
+.seo-article-topic-image { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; box-shadow: 0 28px 70px rgba(8,25,18,.3); }
 .article-byline { margin-top: 30px; display: flex; gap: 10px 20px; flex-wrap: wrap; color: #92aa9b; font-size: 10px; font-weight: 750; text-transform: uppercase; letter-spacing: .06em; }
 .article-byline span + span::before { margin-right: 20px; content: "·"; color: var(--orange); }
 .article-byline a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
@@ -708,6 +709,7 @@ p { color: var(--muted); }
   .seo-article-hero { padding: 48px 0 54px; }
   .seo-article-hero h1 { font-size: 43px; }
   .seo-article-hero h1 + p { font-size: 15px; }
+  .seo-article-topic-image { border-radius: 20px; }
   .article-byline { flex-direction: column; }
   .article-byline span + span::before, .article-byline a + span::before { display: none; }
   .guide-review-meta { flex-direction: column; }

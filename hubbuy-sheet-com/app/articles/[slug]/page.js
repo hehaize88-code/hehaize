@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ArticleCover from "@/components/ArticleCover";
 import AdditionalArticleBody from "@/components/AdditionalArticleBodies";
 import SearchBox from "@/components/SearchBox";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
@@ -28,7 +27,13 @@ export async function generateMetadata({ params }) {
       url: `${SITE_URL}${path}`,
       publishedTime: article.published,
       modifiedTime: article.factChecked,
-      images: [{ url: "/brand/og-card.png", width: 1200, height: 630, alt: article.title }],
+      images: [{ url: article.socialImage, width: 1200, height: 630, alt: article.socialImageAlt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+      images: [article.socialImage],
     },
   };
 }
@@ -56,7 +61,14 @@ export default async function ArticlePage({ params }) {
       name: "Hubbuy Sheet",
       logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/hubbuy.png` },
     },
-    image: [`${SITE_URL}/brand/og-card.png`, ...article.images.map((src) => `${SITE_URL}${src}`)],
+    image: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}${article.socialImage}`,
+      width: 1200,
+      height: 630,
+      caption: article.socialImageAlt,
+    },
+    thumbnailUrl: `${SITE_URL}${article.socialImage}`,
     citation: ["https://hubbuy.com/"],
   };
   const breadcrumbSchema = {
@@ -99,7 +111,14 @@ export default async function ArticlePage({ params }) {
               <span>{article.readTime}</span>
             </div>
           </div>
-          <ArticleCover cover={article.cover} />
+          <img
+            className="seo-article-topic-image"
+            src={article.socialImage}
+            alt={article.socialImageAlt}
+            width="1200"
+            height="630"
+            fetchPriority="high"
+          />
         </div>
       </header>
 

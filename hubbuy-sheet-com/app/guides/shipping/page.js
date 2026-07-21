@@ -3,6 +3,7 @@ import PageHero from "@/components/PageHero";
 import { GuideShell, GuideSection } from "@/components/GuideLayout";
 import { SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
+import { createBreadcrumbSchema } from "@/data/structured-data";
 
 export const metadata = createPageMetadata({
   title: "Hubbuy Parcel Planning & Packaging Checklist",
@@ -36,10 +37,14 @@ export default function ShippingPage() {
       "Save the parcel, declaration and tracking records",
     ].map((name, index) => ({ "@type": "HowToStep", position: index + 1, name })),
   };
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Hubbuy parcel checklist", path: "/guides/shipping/" },
+  ]);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(checklistSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PageHero eyebrow="Parcel action checklist" title="Plan the parcel before choosing a shipping line." intro="Use the completed warehouse data to choose packing, protection and an eligible route for the exact items you approved." crumbs={["Guides", "Shipping"]} />
       <div className="wrap guide-review-meta"><Link href="/about/">Hubbuy Sheet Editorial</Link><span>Checklist reviewed 20 July 2026</span></div>
       <GuideShell toc={toc}>

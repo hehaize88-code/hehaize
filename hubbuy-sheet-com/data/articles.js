@@ -12,6 +12,8 @@ export const articles = [
     factCheckedDisplayDate: "20 July 2026",
     readTime: "12 min read",
     wordCount: 1714,
+    socialImage: "/brand/articles/purchase-research.png",
+    socialImageAlt: "Editorial illustration of source research, warehouse review and parcel planning",
     images: ["/products/3356.webp", "/products/3346.webp"],
     cover: {
       label: "RESEARCH ARTICLE · 01",
@@ -51,6 +53,8 @@ export const articles = [
     factCheckedDisplayDate: "20 July 2026",
     readTime: "10 min read",
     wordCount: 1434,
+    socialImage: "/brand/articles/qc-photo-analysis.png",
+    socialImageAlt: "Editorial illustration of warehouse photo inspection and measurement checks",
     images: ["/products/3350.webp", "/products/3357.webp"],
     cover: {
       label: "RESEARCH ARTICLE · 02",
@@ -90,6 +94,8 @@ export const articles = [
     factCheckedDisplayDate: "20 July 2026",
     readTime: "9 min read",
     wordCount: 1346,
+    socialImage: "/brand/articles/shipping-cost-analysis.png",
+    socialImageAlt: "Editorial illustration of parcel weight, dimensions and shipping routes",
     images: ["/products/3361.webp", "/products/3357.webp"],
     cover: {
       label: "RESEARCH ARTICLE · 03",
@@ -129,6 +135,8 @@ export const articles = [
     factCheckedDisplayDate: "20 July 2026",
     readTime: "9 min read",
     wordCount: 1377,
+    socialImage: "/brand/articles/warehouse-storage.png",
+    socialImageAlt: "Editorial illustration of warehouse storage, QC and parcel consolidation",
     images: ["/products/3349.webp", "/products/3361.webp"],
     cover: {
       label: "FIELD GUIDE · 04",
