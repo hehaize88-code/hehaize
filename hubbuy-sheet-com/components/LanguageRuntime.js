@@ -1,10 +1,12 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   LANGUAGE_STORAGE_KEY,
   getEnglishSource,
   getLanguage,
+  getLocalizedPath,
   languages,
   translateExact,
 } from "@/data/i18n";
@@ -13,6 +15,7 @@ const LanguageContext = createContext({ locale: "en", setLanguage: () => {} });
 const textSources = new WeakMap();
 const attributeSources = new WeakMap();
 const translatedAttributes = ["placeholder", "aria-label", "title"];
+const staticAssetPattern = /\.(?:avif|css|gif|ico|jpe?g|js|json|png|svg|txt|webp|xml)$/i;
 
 function isSupported(code) {
   return languages.some((language) => language.code === code);
@@ -30,7 +33,7 @@ function getSpacing(value) {
 }
 
 function shouldSkip(element) {
-  return !element || Boolean(element.closest("script, style, noscript, code, pre, [data-no-translate]"));
+  return !element || Boolean(element.closest("script, style, noscript, code, pre"));
 }
 
 function translateTextNode(node, locale) {
@@ -77,6 +80,16 @@ function translateElementAttributes(element, locale) {
   }
 }
 
+function localizeInternalLink(element, locale) {
+  if (element?.tagName !== "A" || element.hasAttribute("data-locale-code")) return;
+  const href = element.getAttribute("href") || "";
+  if (!href.startsWith("/") || href.startsWith("//") || staticAssetPattern.test(href.split(/[?#]/)[0])) return;
+
+  const url = new URL(href, window.location.origin);
+  const localized = `${getLocalizedPath(url.pathname, locale)}${url.search}${url.hash}`;
+  if (href !== localized) element.setAttribute("href", localized);
+}
+
 function translateTree(root, locale) {
   if (!root) return;
   if (root.nodeType === Node.TEXT_NODE) {
@@ -84,12 +97,18 @@ function translateTree(root, locale) {
     return;
   }
 
-  if (root.nodeType === Node.ELEMENT_NODE) translateElementAttributes(root, locale);
+  if (root.nodeType === Node.ELEMENT_NODE) {
+    translateElementAttributes(root, locale);
+    localizeInternalLink(root, locale);
+  }
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
   let node = walker.nextNode();
   while (node) {
     if (node.nodeType === Node.TEXT_NODE) translateTextNode(node, locale);
-    else translateElementAttributes(node, locale);
+    else {
+      translateElementAttributes(node, locale);
+      localizeInternalLink(node, locale);
+    }
     node = walker.nextNode();
   }
 }
@@ -100,16 +119,21 @@ export function useSiteLanguage() {
 
 export default function LanguageRuntime({ children }) {
   const [locale, setLocale] = useState("en");
+  const pathname = usePathname() || "/";
 
   useEffect(() => {
-    const pathLanguage = getPathLanguage(window.location.pathname);
-    const queryLanguage = new URLSearchParams(window.location.search).get("lang");
+    const pathLanguage = getPathLanguage(pathname);
+    const search = new URLSearchParams(window.location.search);
+    const queryLanguage = search.get("lang");
     if (pathLanguage === "en" && isSupported(queryLanguage) && queryLanguage !== "en") {
-      window.location.replace(getLanguage(queryLanguage).url);
+      search.delete("lang");
+      const query = search.toString();
+      const destination = `${getLocalizedPath(pathname, queryLanguage)}${query ? `?${query}` : ""}${window.location.hash}`;
+      window.location.replace(destination);
       return;
     }
     setLocale(pathLanguage);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     document.documentElement.lang = getLanguage(locale).htmlLang;
@@ -128,7 +152,7 @@ export default function LanguageRuntime({ children }) {
       childList: true,
       characterData: true,
       attributes: true,
-      attributeFilter: translatedAttributes,
+      attributeFilter: [...translatedAttributes, "href"],
     });
 
     return () => observer.disconnect();
@@ -143,7 +167,7 @@ export default function LanguageRuntime({ children }) {
       // A shareable URL remains available when storage is unavailable.
     }
 
-    const destination = getLanguage(nextLocale).url;
+    const destination = getLocalizedPath(window.location.pathname, nextLocale);
     if (window.location.pathname !== destination) window.location.assign(destination);
     else setLocale(nextLocale);
   }, []);

@@ -111,7 +111,7 @@ export default async function ArticlePage({ params }) {
             <Link href="/articles">All articles <ArrowIcon size={14} /></Link>
           </aside>
 
-          <article className="seo-article-body" data-no-translate>
+          <article className="seo-article-body">
             {article.slug === "how-to-use-a-hubbuy-spreadsheet" ? <>
             <p className="article-deck">A Hubbuy spreadsheet is useful when it gets you to the right product link faster. It becomes risky when the shortcut is mistaken for the source of truth. The practical approach is to treat the spreadsheet as discovery, the live seller page as evidence and Hubbuy as the purchasing, warehouse and parcel layer between China and your address.</p>
 

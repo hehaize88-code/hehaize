@@ -1,4 +1,5 @@
 import { supplementalTranslations } from "./locale-content.js";
+import { generatedTranslations } from "./generated-translations.js";
 
 export const LANGUAGE_STORAGE_KEY = "hubbuy-sheet-language";
 
@@ -7,6 +8,18 @@ export const languages = [
   { code: "pt-br", short: "PT", label: "Português", market: "Brasil", flag: "🇧🇷", htmlLang: "pt-BR", hrefLang: "pt-BR", url: "/pt-br/" },
   { code: "de", short: "DE", label: "Deutsch", market: "Deutschland", flag: "🇩🇪", htmlLang: "de", hrefLang: "de", url: "/de/" },
 ];
+
+export function getBaseLanguagePath(pathname = "/") {
+  const cleanPath = pathname.split("?")[0].split("#")[0] || "/";
+  const segments = cleanPath.split("/").filter(Boolean);
+  if (segments[0] === "pt-br" || segments[0] === "de") segments.shift();
+  return segments.length ? `/${segments.join("/")}/` : "/";
+}
+
+export function getLocalizedPath(pathname, locale = "en") {
+  const basePath = getBaseLanguagePath(pathname);
+  return locale === "en" ? basePath : `/${locale}${basePath}`;
+}
 
 export const translations = {
   "pt-br": {
@@ -485,6 +498,10 @@ export const translations = {
     "Parcel planning guide": "Leitfaden zur Paketplanung"
   }
 };
+
+for (const [locale, generated] of Object.entries(generatedTranslations)) {
+  translations[locale] = { ...generated, ...translations[locale] };
+}
 
 for (const [locale, additions] of Object.entries(supplementalTranslations)) {
   Object.assign(translations[locale], additions);

@@ -1,10 +1,13 @@
 "use client";
 
 import { getLanguage, languages } from "@/data/i18n";
+import { getLocalizedPath } from "@/data/i18n";
 import { useSiteLanguage } from "@/components/LanguageRuntime";
+import { usePathname } from "next/navigation";
 
 export default function LanguageSwitcher() {
   const { locale } = useSiteLanguage();
+  const pathname = usePathname() || "/";
   const current = getLanguage(locale);
 
   return (
@@ -21,7 +24,7 @@ export default function LanguageSwitcher() {
           return (
             <a
               className="language-option"
-              href={language.url}
+              href={getLocalizedPath(pathname, language.code)}
               hrefLang={language.hrefLang}
               lang={language.htmlLang}
               key={language.code}
