@@ -18,6 +18,11 @@ function isSupported(code) {
   return languages.some((language) => language.code === code);
 }
 
+function getPathLanguage(pathname) {
+  const firstSegment = pathname.split("/").filter(Boolean)[0]?.toLowerCase();
+  return isSupported(firstSegment) && firstSegment !== "en" ? firstSegment : "en";
+}
+
 function getSpacing(value) {
   const leading = value.match(/^\s*/)?.[0] || "";
   const trailing = value.match(/\s*$/)?.[0] || "";
@@ -97,16 +102,13 @@ export default function LanguageRuntime({ children }) {
   const [locale, setLocale] = useState("en");
 
   useEffect(() => {
+    const pathLanguage = getPathLanguage(window.location.pathname);
     const queryLanguage = new URLSearchParams(window.location.search).get("lang");
-    let storedLanguage = null;
-    try {
-      storedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    } catch {
-      // The selector still works when storage is unavailable.
+    if (pathLanguage === "en" && isSupported(queryLanguage) && queryLanguage !== "en") {
+      window.location.replace(getLanguage(queryLanguage).url);
+      return;
     }
-
-    const initial = isSupported(queryLanguage) ? queryLanguage : storedLanguage;
-    if (isSupported(initial)) setLocale(initial);
+    setLocale(pathLanguage);
   }, []);
 
   useEffect(() => {
@@ -134,7 +136,6 @@ export default function LanguageRuntime({ children }) {
 
   const setLanguage = useCallback((nextLocale) => {
     if (!isSupported(nextLocale)) return;
-    setLocale(nextLocale);
 
     try {
       window.localStorage.setItem(LANGUAGE_STORAGE_KEY, nextLocale);
@@ -142,10 +143,9 @@ export default function LanguageRuntime({ children }) {
       // A shareable URL remains available when storage is unavailable.
     }
 
-    const url = new URL(window.location.href);
-    if (nextLocale === "en") url.searchParams.delete("lang");
-    else url.searchParams.set("lang", nextLocale);
-    window.history.replaceState(window.history.state, "", url);
+    const destination = getLanguage(nextLocale).url;
+    if (window.location.pathname !== destination) window.location.assign(destination);
+    else setLocale(nextLocale);
   }, []);
 
   const value = useMemo(() => ({ locale, setLanguage }), [locale, setLanguage]);

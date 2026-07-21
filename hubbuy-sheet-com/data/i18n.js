@@ -1,9 +1,11 @@
+import { supplementalTranslations } from "./locale-content.js";
+
 export const LANGUAGE_STORAGE_KEY = "hubbuy-sheet-language";
 
 export const languages = [
-  { code: "en", short: "EN", label: "English", market: "Global", flag: "🌐", htmlLang: "en" },
-  { code: "pt-br", short: "PT", label: "Português", market: "Brasil", flag: "🇧🇷", htmlLang: "pt-BR" },
-  { code: "de", short: "DE", label: "Deutsch", market: "Deutschland", flag: "🇩🇪", htmlLang: "de" },
+  { code: "en", short: "EN", label: "English", market: "Global", flag: "🌐", htmlLang: "en", hrefLang: "en", url: "/" },
+  { code: "pt-br", short: "PT", label: "Português", market: "Brasil", flag: "🇧🇷", htmlLang: "pt-BR", hrefLang: "pt-BR", url: "/pt-br/" },
+  { code: "de", short: "DE", label: "Deutsch", market: "Deutschland", flag: "🇩🇪", htmlLang: "de", hrefLang: "de", url: "/de/" },
 ];
 
 export const translations = {
@@ -483,6 +485,10 @@ export const translations = {
     "Parcel planning guide": "Leitfaden zur Paketplanung"
   }
 };
+
+for (const [locale, additions] of Object.entries(supplementalTranslations)) {
+  Object.assign(translations[locale], additions);
+}
 
 export function getLanguage(code) {
   return languages.find((language) => language.code === code) || languages[0];

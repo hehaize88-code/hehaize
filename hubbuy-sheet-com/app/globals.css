@@ -55,8 +55,8 @@ p { color: var(--muted); }
 .language-switcher[open] .language-chevron { transform: rotate(180deg) translateY(-2px); }
 .language-menu { position: absolute; z-index: 80; top: 50px; right: 0; width: 224px; padding: 8px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); box-shadow: 0 20px 60px rgba(21,32,27,.16); }
 .language-menu > p { margin: 2px 8px 5px; color: #7a8680; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.language-option { width: 100%; min-height: 52px; padding: 7px 9px; display: grid; grid-template-columns: 28px 1fr 18px; align-items: center; gap: 8px; border: 0; border-radius: 11px; color: var(--ink); background: transparent; text-align: left; cursor: pointer; }
-.language-option:hover, .language-option[aria-current="true"] { background: var(--cream); }
+.language-option { width: 100%; min-height: 52px; padding: 7px 9px; display: grid; grid-template-columns: 28px 1fr 18px; align-items: center; gap: 8px; border: 0; border-radius: 11px; color: var(--ink); background: transparent; text-align: left; text-decoration: none; cursor: pointer; }
+.language-option:hover, .language-option[aria-current="page"] { background: var(--cream); }
 .language-option > span:nth-child(2) { display: grid; }
 .language-option strong { font-size: 13px; line-height: 1.35; }
 .language-option small { color: var(--muted); font-size: 10px; line-height: 1.35; }

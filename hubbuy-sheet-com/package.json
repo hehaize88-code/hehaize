@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vinext dev",
+    "dev": "vite",
     "build": "node scripts/build.mjs",
-    "build:pages": "CF_PAGES_STATIC_EXPORT=1 next build",
+    "build:pages": "CF_PAGES_STATIC_EXPORT=1 next build && node scripts/postprocess-locales.mjs out",
+    "validate:pages": "node scripts/validate-static.mjs out",
     "start": "vinext start"
   },
   "dependencies": {

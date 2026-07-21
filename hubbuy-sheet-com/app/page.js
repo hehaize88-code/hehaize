@@ -4,8 +4,21 @@ import ProductCard from "@/components/ProductCard";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { categories, products, faqs, MAIN_SITE, SITE_URL } from "@/data/site";
 import { articles } from "@/data/articles";
+import { localePages } from "@/data/locale-content";
 
-export const metadata = { alternates: { canonical: "/" } };
+const languageAlternates = {
+  en: "/",
+  "pt-BR": "/pt-br/",
+  de: "/de/",
+  "x-default": "/",
+};
+
+export const metadata = {
+  alternates: {
+    canonical: "/",
+    languages: languageAlternates,
+  },
+};
 
 const steps = [
   ["01", "Find a product", "Search the live catalog or open a category. Start with a clear product name, source link or image reference."],
@@ -22,14 +35,16 @@ const guideCards = [
 
 const homeArticles = articles.slice(1, 4);
 
-export default function HomePage() {
+export default function HomePage({ locale = "en" } = {}) {
+  const localePage = localePages[locale];
+  const pageUrl = localePage ? `${SITE_URL}${localePage.path}` : SITE_URL;
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Hubbuy Sheet",
-    url: SITE_URL,
-    description: "Independent Hubbuy spreadsheet, product discovery and shopping workflow guide.",
-    inLanguage: "en",
+    url: pageUrl,
+    description: localePage?.description || "Independent Hubbuy spreadsheet, product discovery and shopping workflow guide.",
+    inLanguage: localePage?.htmlLang || "en",
   };
   const itemListSchema = {
     "@context": "https://schema.org",

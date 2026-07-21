@@ -1,21 +1,14 @@
 "use client";
 
-import { useRef } from "react";
 import { getLanguage, languages } from "@/data/i18n";
 import { useSiteLanguage } from "@/components/LanguageRuntime";
 
 export default function LanguageSwitcher() {
-  const menuRef = useRef(null);
-  const { locale, setLanguage } = useSiteLanguage();
+  const { locale } = useSiteLanguage();
   const current = getLanguage(locale);
 
-  function selectLanguage(code) {
-    setLanguage(code);
-    menuRef.current?.removeAttribute("open");
-  }
-
   return (
-    <details className="language-switcher" ref={menuRef} data-no-translate>
+    <details className="language-switcher">
       <summary aria-label="Choose language">
         <span className="language-globe" aria-hidden="true">◎</span>
         <strong>{current.short}</strong>
@@ -26,12 +19,14 @@ export default function LanguageSwitcher() {
         {languages.map((language) => {
           const selected = language.code === locale;
           return (
-            <button
+            <a
               className="language-option"
-              type="button"
+              href={language.url}
+              hrefLang={language.hrefLang}
+              lang={language.htmlLang}
               key={language.code}
-              aria-current={selected ? "true" : undefined}
-              onClick={() => selectLanguage(language.code)}
+              data-locale-code={language.code}
+              aria-current={selected ? "page" : undefined}
             >
               <span className="language-flag" aria-hidden="true">{language.flag}</span>
               <span>
@@ -39,7 +34,7 @@ export default function LanguageSwitcher() {
                 <small>{language.market}</small>
               </span>
               <span className="language-check" aria-hidden="true">{selected ? "✓" : ""}</span>
-            </button>
+            </a>
           );
         })}
       </div>
