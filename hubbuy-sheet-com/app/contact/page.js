@@ -2,14 +2,15 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { MAIN_SITE, SITE_URL } from "@/data/site";
+import { createPageMetadata } from "@/data/seo";
 
 const REPOSITORY_ISSUES = "https://github.com/hehaize88-code/hehaize/issues/new";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Contact Hubbuy Sheet Editorial",
   description: "Report a factual error, broken product link or source update to Hubbuy Sheet Editorial, and find the correct destination for order support.",
-  alternates: { canonical: "/contact/" },
-};
+  path: "/contact/",
+});
 
 export default function ContactPage() {
   const schema = {

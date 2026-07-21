@@ -2,12 +2,13 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { GuideShell, GuideSection } from "@/components/GuideLayout";
 import { SITE_URL } from "@/data/site";
+import { createPageMetadata } from "@/data/seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Hubbuy Parcel Planning & Packaging Checklist",
   description: "Use a Hubbuy parcel checklist to review approved items, packed weight, dimensions, protection, route eligibility and shipment records before submission.",
-  alternates: { canonical: "/guides/shipping/" },
-};
+  path: "/guides/shipping/",
+});
 
 const toc = [
   { id: "total", label: "Set the parcel goal" },

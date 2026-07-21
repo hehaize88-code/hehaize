@@ -2,12 +2,13 @@ import PageHero from "@/components/PageHero";
 import SearchBox from "@/components/SearchBox";
 import { ArrowIcon } from "@/components/Icons";
 import { faqGroups, faqs, SITE_URL } from "@/data/site";
+import { createPageMetadata } from "@/data/seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Hubbuy FAQ 2026: Orders, QC, Storage & Shipping",
   description: "Fact-checked Hubbuy FAQ covering product orders, China shipping, free QC images, 300-day storage, consolidation, parcel fees, returns and support.",
-  alternates: { canonical: "/faq/" },
-};
+  path: "/faq/",
+});
 
 const verifiedFacts = [
   ["QC", "Free inspection images"],

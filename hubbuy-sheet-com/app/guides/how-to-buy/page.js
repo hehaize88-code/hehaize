@@ -2,12 +2,13 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { GuideShell, GuideSection } from "@/components/GuideLayout";
 import { SITE_URL } from "@/data/site";
+import { createPageMetadata } from "@/data/seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Hubbuy Order Checklist: 5 Steps from Link to Parcel",
   description: "Use a five-step Hubbuy order checklist to verify a product link, record the exact variant, review warehouse photos and prepare an international parcel.",
-  alternates: { canonical: "/guides/how-to-buy/" },
-};
+  path: "/guides/how-to-buy/",
+});
 
 const toc = [
   { id: "before", label: "1. Define the item" },

@@ -4,17 +4,14 @@ import ArticleCover from "@/components/ArticleCover";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { articles } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
+import { createPageMetadata } from "@/data/seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "China Shopping Agent Articles & Hubbuy Guides",
   description: "Read independent, long-form articles about Hubbuy spreadsheets, China shopping agents, warehouse QC, parcel planning and international shipping decisions.",
-  alternates: { canonical: "/articles/" },
-  openGraph: {
-    title: "China Shopping Agent Articles | Hubbuy Sheet",
-    description: "Independent long-form reading about product research, warehouse QC and international parcel planning.",
-    url: `${SITE_URL}/articles/`,
-  },
-};
+  path: "/articles/",
+  imageAlt: "China shopping agent articles from Hubbuy Sheet",
+});
 
 export default function ArticlesPage() {
   const [featuredArticle, ...moreArticles] = articles;

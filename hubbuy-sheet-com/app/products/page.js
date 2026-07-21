@@ -2,12 +2,13 @@ import ProductCard from "@/components/ProductCard";
 import PageHero from "@/components/PageHero";
 import SearchBox from "@/components/SearchBox";
 import { categories, products, MAIN_SITE } from "@/data/site";
+import { createPageMetadata } from "@/data/seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Hubbuy Spreadsheet Finds 2026",
   description: "Browse recent Hubbuy spreadsheet finds by category, see reference prices in CNY and open the exact live CNBuy Sheet product page.",
-  alternates: { canonical: "/products" },
-};
+  path: "/products/",
+});
 
 export default function ProductsPage() {
   return (

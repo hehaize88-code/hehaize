@@ -2,12 +2,13 @@ import PageHero from "@/components/PageHero";
 import Link from "next/link";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { MAIN_SITE, SITE_URL } from "@/data/site";
+import { createPageMetadata } from "@/data/seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "About This Independent Hubbuy Sheet",
   description: "See who publishes Hubbuy Sheet, how platform claims and product links are checked, and how this website is commercially connected to CNBuy Sheet.",
-  alternates: { canonical: "/about/" },
-};
+  path: "/about/",
+});
 
 export default function AboutPage() {
   const schema = {

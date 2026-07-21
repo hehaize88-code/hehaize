@@ -41,6 +41,15 @@ function expectedAlternates(basePath) {
   ]);
 }
 
+function metaContent(html, attribute, key) {
+  for (const match of html.matchAll(/<meta\b[^>]*>/gi)) {
+    const tag = match[0];
+    if (!new RegExp(`${attribute}=["']${key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}["']`, "i").test(tag)) continue;
+    return tag.match(/content=["']([^"']*)["']/i)?.[1];
+  }
+  return undefined;
+}
+
 for (const url of urls) {
   const file = pagePath(url);
   if (!existsSync(file)) throw new Error(`Sitemap URL has no file: ${url}`);
@@ -54,9 +63,17 @@ for (const url of urls) {
   const h1Count = (html.match(/<h1\b/g) || []).length;
   const lang = html.match(/<html lang="([^"]+)"/)?.[1];
   const expectedLang = locale === "pt-br" ? "pt-BR" : locale;
+  const ogTitle = metaContent(html, "property", "og:title");
+  const ogUrl = metaContent(html, "property", "og:url");
+  const ogImage = metaContent(html, "property", "og:image");
+  const twitterImage = metaContent(html, "name", "twitter:image");
 
   if (!title || !canonical || !h1 || h1Count !== 1) throw new Error(`Invalid SEO head on ${url}`);
   if (canonical !== url) throw new Error(`Canonical mismatch on ${url}: ${canonical}`);
+  if (!ogTitle) throw new Error(`Missing og:title on ${url}`);
+  if (ogUrl !== url) throw new Error(`Open Graph URL mismatch on ${url}: ${ogUrl}`);
+  if (ogImage !== `${siteUrl}/brand/og-card.png`) throw new Error(`Invalid og:image on ${url}: ${ogImage}`);
+  if (twitterImage !== `${siteUrl}/brand/og-card.png`) throw new Error(`Invalid twitter:image on ${url}: ${twitterImage}`);
   if (lang !== expectedLang) throw new Error(`HTML language mismatch on ${url}: ${lang}`);
   if (/__X\d|TOKEN|>>\s*por\s*<<|\?lang=(?:pt-br|de)/i.test(html)) throw new Error(`Translation artifact on ${url}`);
   if (/aria-current=["']page["']>>/.test(html)) throw new Error(`Malformed language menu on ${url}`);
@@ -87,9 +104,9 @@ for (const url of urls) {
     if (!existsSync(target)) brokenLinks.push({ from: url, href });
   }
 
-  records.push({ url, pathname, locale, basePath, title, canonical, h1, lang });
+  records.push({ url, pathname, locale, basePath, title, canonical, h1, lang, ogTitle, ogUrl, ogImage });
   if (!localeGroups.has(basePath)) localeGroups.set(basePath, {});
-  localeGroups.get(basePath)[locale] = { title, h1, url };
+  localeGroups.get(basePath)[locale] = { title, h1, ogTitle, url };
 }
 
 for (const [basePath, group] of localeGroups) {
@@ -99,6 +116,9 @@ for (const [basePath, group] of localeGroups) {
   }
   if (group.en.h1 === group["pt-br"].h1 || group.en.h1 === group.de.h1) {
     throw new Error(`Untranslated H1 in locale group: ${basePath}`);
+  }
+  if (group.en.ogTitle === group["pt-br"].ogTitle || group.en.ogTitle === group.de.ogTitle) {
+    throw new Error(`Untranslated Open Graph title in locale group: ${basePath}`);
   }
 }
 
@@ -126,6 +146,8 @@ console.log(JSON.stringify({
   localeGroups: localeGroups.size,
   uniqueTitles: new Set(records.map((item) => item.title)).size,
   uniqueCanonicals: new Set(records.map((item) => item.canonical)).size,
+  correctOpenGraphUrls: records.filter((item) => item.ogUrl === item.url).length,
+  pagesWithOpenGraphImages: records.filter((item) => item.ogImage).length,
   brokenInternalLinks: brokenLinks.length,
   languages: Object.fromEntries(["en", "pt-BR", "de"].map((lang) => [lang, records.filter((item) => item.lang === lang).length])),
 }, null, 2));
