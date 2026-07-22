@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="wrap footer-grid">
         <div className="footer-intro">
           <Link href="/" className="brand brand-invert">
-            <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy" width="963" height="133" />
+            <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy" width="963" height="133" loading="lazy" decoding="async" />
           </Link>
           <p>A compact, independent guide for comparing China shopping finds before opening the live catalog.</p>
         </div>

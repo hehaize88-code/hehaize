@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { preload } from "react-dom";
 import { MAIN_SITE } from "@/data/site";
 import { ArrowIcon } from "@/components/Icons";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -14,6 +15,8 @@ const nav = [
 ];
 
 export default function Header() {
+  preload("/brand/hubbuy.png", { as: "image", fetchPriority: "high" });
+
   return (
     <header className="site-header">
       <div className="announcement">
@@ -23,7 +26,7 @@ export default function Header() {
       </div>
       <div className="nav-shell wrap">
         <Link href="/" className="brand" aria-label="Hubbuy Sheet home">
-          <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy" width="963" height="133" />
+          <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy" width="963" height="133" loading="eager" fetchPriority="high" decoding="async" />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}

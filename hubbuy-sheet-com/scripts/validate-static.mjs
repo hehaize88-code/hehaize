@@ -159,6 +159,25 @@ for (const url of urls) {
   if (/__X\d|TOKEN|>>\s*por\s*<<|\?lang=(?:pt-br|de)/i.test(html)) throw new Error(`Translation artifact on ${url}`);
   if (/aria-current=["']page["']>>/.test(html)) throw new Error(`Malformed language menu on ${url}`);
 
+  if (basePath === "/") {
+    const imagePreloadTags = [...html.matchAll(/<link\b[^>]*>/gi)]
+      .map((match) => match[0])
+      .filter((tag) => /\brel=["']preload["']/i.test(tag) && /\bas=["']image["']/i.test(tag));
+    const imagePreloads = imagePreloadTags.map((tag) => tag.match(/\bhref=["']([^"']+)["']/i)?.[1]);
+    const expectedPreloads = new Set(["/brand/hubbuy.png", products[0].image]);
+    if (imagePreloads.length !== expectedPreloads.size || imagePreloads.some((href) => !expectedPreloads.has(href))) {
+      throw new Error(`Homepage must preload only the logo and LCP image on ${url}: ${imagePreloads.join(", ")}`);
+    }
+
+    const imageTags = [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
+    const eagerImages = imageTags.filter((tag) => /\bloading=["']eager["']/i.test(tag));
+    const lazyImages = imageTags.filter((tag) => /\bloading=["']lazy["']/i.test(tag));
+    const highPriorityImages = imageTags.filter((tag) => /\bfetchpriority=["']high["']/i.test(tag));
+    if (eagerImages.length !== 2 || highPriorityImages.length !== 2 || eagerImages.length + lazyImages.length !== imageTags.length) {
+      throw new Error(`Invalid homepage image loading policy on ${url}: ${eagerImages.length} eager, ${lazyImages.length} lazy, ${highPriorityImages.length} high priority`);
+    }
+  }
+
   const alternates = new Map(
     [...html.matchAll(/rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)]
       .map((match) => [match[1], match[2]]),

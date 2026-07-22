@@ -5,7 +5,15 @@ export default function ProductCard({ product, priority = false }) {
   return (
     <article className="product-card">
       <Link className="product-image" href={product.localHref} aria-label={`Open ${product.name} research page`}>
-        <img src={product.image} alt={`${product.name} product reference`} width="720" height="720" loading={priority ? "eager" : "lazy"} />
+        <img
+          src={product.image}
+          alt={`${product.name} product reference`}
+          width="720"
+          height="720"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "low"}
+          decoding="async"
+        />
         <span className="product-category">{product.category}</span>
       </Link>
       <div className="product-content">

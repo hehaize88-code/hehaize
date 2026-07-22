@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { preload } from "react-dom";
 import SearchBox from "@/components/SearchBox";
 import ProductCard from "@/components/ProductCard";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
@@ -36,6 +37,8 @@ const guideCards = [
 const homeArticles = articles.slice(1, 4);
 
 export default function HomePage({ locale = "en" } = {}) {
+  preload(products[0].image, { as: "image", fetchPriority: "high" });
+
   const localePage = localePages[locale];
   const pageUrl = localePage ? `${SITE_URL}${localePage.path}` : SITE_URL;
   const websiteSchema = {
@@ -93,7 +96,15 @@ export default function HomePage({ locale = "en" } = {}) {
             <div className="showcase-note"><span>Live shortlist</span><strong>New this week</strong></div>
             {products.slice(0, 3).map((product, index) => (
               <a key={product.id} className={`showcase-product showcase-${index + 1}`} href={product.href} target="_blank" rel="noopener">
-                <img src={product.image} alt={product.name} width="520" height="520" />
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  width="520"
+                  height="520"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "low"}
+                  decoding="async"
+                />
                 <span><small>{product.category}</small><strong>{product.name}</strong><em>¥{product.price}</em></span>
               </a>
             ))}
@@ -127,7 +138,7 @@ export default function HomePage({ locale = "en" } = {}) {
             <Link href="/products">See the full shortlist <ArrowIcon /></Link>
           </div>
           <div className="product-grid home-product-grid">
-            {products.slice(0, 8).map((product, index) => <ProductCard key={product.id} product={product} priority={index < 4} />)}
+            {products.slice(0, 8).map(product => <ProductCard key={product.id} product={product} />)}
           </div>
           <p className="micro-disclaimer">Names and prices are references, not endorsements or authenticity claims. Verify the current source page, variant and total cost.</p>
         </div>
