@@ -1,6 +1,8 @@
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { articles } from "../data/articles.js";
+import { categoryPages } from "../data/categories.js";
+import { products } from "../data/site.js";
 import { getBaseLanguagePath, getLocalizedPath } from "../data/i18n.js";
 
 const outputRoot = resolve(process.argv[2] || "out");
@@ -12,6 +14,9 @@ const brokenLinks = [];
 const localeGroups = new Map();
 const articleByPath = new Map(
   articles.map((article) => [`/articles/${article.slug}/`, article]),
+);
+const categoryByPath = new Map(
+  categoryPages.map((category) => [`/categories/${category.slug}/`, category]),
 );
 const breadcrumbPaths = new Set([
   "/guides/how-to-buy/",
@@ -99,6 +104,16 @@ function collectSchemaTypes(value, types = []) {
   return types;
 }
 
+function visibleWordCount(fragment) {
+  const text = fragment
+    .replace(/<script[\s\S]*?<\/script>/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[^;]+;/g, " ")
+    .replace(/[^A-Za-z0-9£¥€$.%+-]+/g, " ")
+    .trim();
+  return text ? text.split(/\s+/).length : 0;
+}
+
 for (const url of urls) {
   const file = pagePath(url);
   if (!existsSync(file)) throw new Error(`Sitemap URL has no file: ${url}`);
@@ -117,6 +132,7 @@ for (const url of urls) {
   const ogImage = metaContent(html, "property", "og:image");
   const twitterImage = metaContent(html, "name", "twitter:image");
   const article = articleByPath.get(basePath);
+  const category = categoryByPath.get(basePath);
   const expectedImage = `${siteUrl}${article?.socialImage || "/brand/og-card.png"}`;
 
   if (!title || !canonical || !h1 || h1Count !== 1) throw new Error(`Invalid SEO head on ${url}`);
@@ -142,6 +158,9 @@ for (const url of urls) {
     if ((html.match(/<script\b(?![^>]*application\/ld\+json)/g) || []).length) {
       throw new Error(`Localized page still depends on client JavaScript: ${url}`);
     }
+    if (/product references, one focused review path\.|Product price and China shipping appear at the order stage\.|The public page currently advertises 300 days|The official policy labels visible in Hubbuy’s footer/.test(html)) {
+      throw new Error(`Untranslated new content on ${url}`);
+    }
   }
 
   const schemas = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)]
@@ -156,6 +175,17 @@ for (const url of urls) {
     if (!collection || !schemaType(itemList, "ItemList")) throw new Error(`Missing CollectionPage + ItemList on ${url}`);
     if (itemList.numberOfItems !== 16 || itemList.itemListElement?.length !== 16) throw new Error(`Incomplete product ItemList on ${url}`);
     if (new Set(itemList.itemListElement.map((item) => item.url)).size !== 16) throw new Error(`Duplicate product URLs in ItemList on ${url}`);
+  }
+
+  if (category) {
+    const collection = schemas.find((schema) => schemaType(schema, "CollectionPage"));
+    const itemList = collection?.mainEntity;
+    const expectedProducts = products.filter((product) => product.category === category.name);
+    if (!collection || !schemaType(itemList, "ItemList")) throw new Error(`Missing category CollectionPage + ItemList on ${url}`);
+    if (itemList.numberOfItems !== expectedProducts.length || itemList.itemListElement?.length !== expectedProducts.length) {
+      throw new Error(`Incomplete category ItemList on ${url}`);
+    }
+    if (!schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) throw new Error(`Missing category BreadcrumbList on ${url}`);
   }
 
   if (breadcrumbPaths.has(basePath) && !schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) {
@@ -173,6 +203,20 @@ for (const url of urls) {
     if (articleSchema.thumbnailUrl !== expectedImage) throw new Error(`Invalid Article thumbnailUrl on ${url}`);
     if (!schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) throw new Error(`Missing article BreadcrumbList on ${url}`);
     if (!html.includes(`src="${article.socialImage}"`)) throw new Error(`Article topic image is not visible on ${url}`);
+    if (!html.includes('id="research-evidence"') || !html.includes('class="source-ledger"')) {
+      throw new Error(`Missing article research enhancement on ${url}`);
+    }
+    const researchSection = html.match(/<section id="research-evidence"[\s\S]*?<\/section>/)?.[0] || "";
+    if ((researchSection.match(/href="https:\/\/hubbuy\.com\/"/g) || []).length !== 3) {
+      throw new Error(`Article does not name three exact official sections on ${url}`);
+    }
+    if (locale === "en") {
+      const body = html.match(/<article class="seo-article-body">([\s\S]*?)<\/article>/)?.[1] || "";
+      const count = visibleWordCount(body);
+      if (count !== article.wordCount || count < 1200 || count > 1800) {
+        throw new Error(`Article word count mismatch on ${url}: schema ${article.wordCount}, visible ${count}`);
+      }
+    }
   }
 
   for (const match of html.matchAll(/href="([^"]+)"/g)) {
@@ -200,7 +244,7 @@ for (const [basePath, group] of localeGroups) {
   }
 }
 
-for (const [locale, expectedCount] of [["en", 15], ["pt-br", 15], ["de", 15]]) {
+for (const [locale, expectedCount] of [["en", 23], ["pt-br", 23], ["de", 23]]) {
   const file = resolve(outputRoot, `sitemap-${locale}.xml`);
   if (!existsSync(file)) throw new Error(`Missing language sitemap: ${locale}`);
   const count = (readFileSync(file, "utf8").match(/<loc>/g) || []).length;
@@ -214,7 +258,7 @@ const duplicateCanonicals = records.filter((record, index) => (
   records.findIndex((candidate) => candidate.canonical === record.canonical) !== index
 ));
 
-if (urls.length !== 45 || new Set(urls).size !== 45) throw new Error(`Expected 45 unique sitemap URLs, found ${urls.length}`);
+if (urls.length !== 69 || new Set(urls).size !== 69) throw new Error(`Expected 69 unique sitemap URLs, found ${urls.length}`);
 if (duplicateTitles.length) throw new Error(`Duplicate titles: ${duplicateTitles.map((item) => item.url).join(", ")}`);
 if (duplicateCanonicals.length) throw new Error("Duplicate canonical URLs");
 if (brokenLinks.length) throw new Error(`Broken internal links: ${JSON.stringify(brokenLinks.slice(0, 10))}`);
@@ -239,6 +283,7 @@ console.log(JSON.stringify({
   pagesWithOpenGraphImages: records.filter((item) => item.ogImage).length,
   structuredData: {
     productCollections: records.filter((item) => item.basePath === "/products/").length,
+    categoryCollections: records.filter((item) => categoryByPath.has(item.basePath)).length,
     breadcrumbPages: records.filter((item) => breadcrumbPaths.has(item.basePath)).length,
     articlePagesWithAuthorAndUniqueImage: records.filter((item) => articleByPath.has(item.basePath)).length,
   },

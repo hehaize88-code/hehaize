@@ -10,7 +10,9 @@ import AboutPage, { metadata as aboutMetadata } from "@/app/about/page";
 import ContactPage, { metadata as contactMetadata } from "@/app/contact/page";
 import PrivacyPage, { metadata as privacyMetadata } from "@/app/legal/privacy/page";
 import TermsPage, { metadata as termsMetadata } from "@/app/legal/terms/page";
+import CategoryPage, { getCategoryMetadata } from "@/app/categories/[slug]/page";
 import { articles, getArticle } from "@/data/articles";
+import { categoryPages, getCategory } from "@/data/categories";
 import { getLocalizedPath, translateExact } from "@/data/i18n";
 import { localePages } from "@/data/locale-content";
 import { SITE_URL } from "@/data/site";
@@ -31,6 +33,7 @@ const staticPages = {
 export const localizedStaticParams = [
   ...Object.keys(staticPages).map((route) => ({ segments: route.split("/") })),
   ...articles.map((article) => ({ segments: ["articles", article.slug] })),
+  ...categoryPages.map((category) => ({ segments: ["categories", category.slug] })),
 ];
 
 function sourceMetadata(route) {
@@ -48,6 +51,10 @@ function sourceMetadata(route) {
         images: [{ url: article.socialImage }],
       },
     };
+  }
+  if (route.startsWith("categories/")) {
+    const category = getCategory(route.slice("categories/".length));
+    return category ? getCategoryMetadata(category) : null;
   }
   return null;
 }
@@ -104,6 +111,10 @@ export default async function LocalizedRoutePage({ params }) {
 
   if (segments[0] === "articles" && segments.length === 2 && getArticle(segments[1])) {
     return <ArticlePage params={Promise.resolve({ slug: segments[1] })} />;
+  }
+
+  if (segments[0] === "categories" && segments.length === 2 && getCategory(segments[1])) {
+    return <CategoryPage params={Promise.resolve({ slug: segments[1] })} />;
   }
 
   notFound();

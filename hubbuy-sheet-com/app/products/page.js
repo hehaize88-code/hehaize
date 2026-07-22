@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import PageHero from "@/components/PageHero";
 import SearchBox from "@/components/SearchBox";
@@ -39,7 +40,7 @@ export default function ProductsPage() {
         <div className="wrap">
           <SearchBox compact />
           <div className="category-chips">
-            {categories.map(category => <a key={category.name} href={category.href} target="_blank" rel="noopener">{category.name}</a>)}
+            {categories.map(category => <Link key={category.name} href={category.href}>{category.name}</Link>)}
           </div>
           <div className="product-page-header"><div><span className="eyebrow">July 2026 edit</span><h2>Recent product links</h2></div><a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">Open the complete live catalog ↗</a></div>
           <div className="product-grid">{products.map((product, index) => <ProductCard key={product.id} product={product} priority={index < 4} />)}</div>

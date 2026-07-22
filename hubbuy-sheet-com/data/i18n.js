@@ -1,5 +1,7 @@
 import { supplementalTranslations } from "./locale-content.js";
 import { generatedTranslations } from "./generated-translations.js";
+import { categoryTranslations } from "./categories.js";
+import { researchTranslations } from "./research-translations.js";
 
 export const LANGUAGE_STORAGE_KEY = "hubbuy-sheet-language";
 
@@ -504,6 +506,14 @@ for (const [locale, generated] of Object.entries(generatedTranslations)) {
 }
 
 for (const [locale, additions] of Object.entries(supplementalTranslations)) {
+  Object.assign(translations[locale], additions);
+}
+
+for (const [locale, additions] of Object.entries(categoryTranslations)) {
+  Object.assign(translations[locale], additions);
+}
+
+for (const [locale, additions] of Object.entries(researchTranslations)) {
   Object.assign(translations[locale], additions);
 }
 

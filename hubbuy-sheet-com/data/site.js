@@ -1,20 +1,17 @@
+import { categoryPages } from "./categories.js";
+
 export const MAIN_SITE = "https://www.cnbuycha.com";
 export const SITE_URL = "https://hubbuy-sheet.com";
 
-export const categories = [
-  { name: "Shoes", note: "Sneakers & footwear", href: `${MAIN_SITE}/shoes/`, code: "01" },
-  { name: "Hoodies", note: "Sweaters & layers", href: `${MAIN_SITE}/hoodies-sweaters/`, code: "02" },
-  { name: "T-Shirts", note: "Tees & tops", href: `${MAIN_SITE}/t-shirts/`, code: "03" },
-  { name: "Jackets", note: "Coats & outerwear", href: `${MAIN_SITE}/jackets/`, code: "04" },
-  { name: "Bottoms", note: "Pants & shorts", href: `${MAIN_SITE}/pants-shorts/`, code: "05" },
-  { name: "Headwear", note: "Caps & beanies", href: `${MAIN_SITE}/headwear/`, code: "06" },
-  { name: "Accessories", note: "Bags & extras", href: `${MAIN_SITE}/accessories/`, code: "07" },
-  { name: "Electronics", note: "Tech finds", href: `${MAIN_SITE}/electronics/`, code: "08" },
-];
+export const categories = categoryPages.map((category) => ({
+  ...category,
+  href: `/categories/${category.slug}/`,
+  liveHref: `${MAIN_SITE}${category.livePath}`,
+}));
 
 export const products = [
   { id: 3346, name: "Nike Elite Backpack", price: "89", image: "/products/3346.webp", category: "Accessories", href: `${MAIN_SITE}/AllProducts/3346.html` },
-  { id: 3361, name: "Jellycat", price: "39", image: "/products/3361.webp", category: "Other", href: `${MAIN_SITE}/AllProducts/3361.html` },
+  { id: 3361, name: "Jellycat", price: "39", image: "/products/3361.webp", category: "Collectibles", href: `${MAIN_SITE}/AllProducts/3361.html` },
   { id: 3360, name: "Maison Margiela Hoodie", price: "130", image: "/products/3360.webp", category: "Hoodies", href: `${MAIN_SITE}/AllProducts/3360.html` },
   { id: 3359, name: "HOKA Speedgoat 5 Trail Shoes", price: "218", image: "/products/3359.webp", category: "Shoes", href: `${MAIN_SITE}/AllProducts/3359.html` },
   { id: 3358, name: "Louis Vuitton Slides", price: "100", image: "/products/3358.webp", category: "Shoes", href: `${MAIN_SITE}/AllProducts/3358.html` },

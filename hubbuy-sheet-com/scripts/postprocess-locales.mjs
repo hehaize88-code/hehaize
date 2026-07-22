@@ -1,12 +1,13 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { articles } from "../data/articles.js";
+import { categoryPages } from "../data/categories.js";
 import { getLocalizedPath, translations } from "../data/i18n.js";
 import { localePages } from "../data/locale-content.js";
 
 const outputRoot = resolve(process.argv[2] || "out");
 const siteUrl = "https://hubbuy-sheet.com";
-const lastModified = "2026-07-21";
+const lastModified = "2026-07-22";
 const localeConfig = {
   en: { code: "en", hrefLang: "en", htmlLang: "en", short: "EN", ogLocale: "en_US" },
   "pt-br": localePages["pt-br"],
@@ -25,6 +26,7 @@ const baseRoutes = [
   "/legal/privacy/",
   "/legal/terms/",
   ...articles.map((article) => `/articles/${article.slug}/`),
+  ...categoryPages.map((category) => `/categories/${category.slug}/`),
 ];
 const staticAssetPattern = /\.(?:avif|css|gif|ico|jpe?g|js|json|png|svg|txt|webp|xml)$/i;
 const translatedMetaFields = new Set([

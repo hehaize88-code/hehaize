@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import AdditionalArticleBody from "@/components/AdditionalArticleBodies";
-import SearchBox from "@/components/SearchBox";
+import ArticleResearchEnhancements from "@/components/ArticleResearchEnhancements";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { articles, getArticle } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
@@ -136,7 +136,7 @@ export default async function ArticlePage({ params }) {
 
             <div className="article-disclosure">
               <CheckIcon />
-              <p><strong>Research note:</strong> This independent guide was checked against the public <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy homepage</a> on 20 July 2026. It does not accept orders or payments. Where the public page does not provide a number or rule, this article does not invent one.</p>
+              <p><strong>Research note:</strong> This independent guide was checked against the public <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy homepage</a> on 22 July 2026. It does not accept orders or payments. Where the public page does not provide a number or rule, this article does not invent one.</p>
             </div>
 
             <section id="official">
@@ -144,7 +144,7 @@ export default async function ArticlePage({ params }) {
               <h2>Hubbuy is a staged buying process, not one international checkout</h2>
               <p>Hubbuy’s homepage describes the service in plain terms: it purchases Chinese goods for customers. More importantly, its public “How to Purchase” section breaks the journey into three stages. First, the shopper searches for a product and places an order, paying the product price and the China shipping fee. Hubbuy then orders the goods, and the seller sends them to the warehouse.</p>
               <p>The second stage begins at warehouse arrival. Hubbuy says the item enters quality inspection, the buyer receives free quality-inspection images and storage is free for 300 days. The third stage is the parcel: different orders can be combined, the buyer pays the international shipping fee and then waits for delivery.</p>
-              <p>That sequence is the most useful fact on the whole site because it shows where each decision belongs. A low seller price is not a delivered price. A paid product is not yet an international parcel. A warehouse photo is a checkpoint between those two moments. The navigation also exposes separate entries for a shipping-cost estimate, forwarding and “Fill & Buy,” reinforcing that there is more than one way to begin, but the same basic warehouse-and-parcel logic still matters.</p>
+              <p>That sequence shows where each decision belongs. A seller price is not a delivered price, a paid product is not yet an international parcel, and a warehouse photo is the checkpoint between those moments. The navigation also exposes separate entries for a shipping-cost estimate, forwarding and “Fill & Buy.”</p>
 
               <div className="official-workflow" aria-label="Hubbuy official three-stage buying workflow">
                 <div><b>01</b><strong>Order</strong><span>Product price + China shipping</span></div>
@@ -252,17 +252,8 @@ export default async function ArticlePage({ params }) {
               </div>
             </section>
 
-            <div className="article-sources">
-              <strong>Official source and editorial boundary</strong>
-              <p>The three purchase stages, free quality-inspection images, 300-day free storage, order consolidation and separate international-shipping payment were checked on the <a href="https://hubbuy.com/" target="_blank" rel="noopener">official Hubbuy homepage</a> on 20 July 2026. Product-research, QC interpretation and parcel-planning recommendations are independent editorial guidance. No fixed exchange markup, photo count, extra-photo fee, route price, delivery time or customs result is claimed.</p>
-            </div>
-
-            <div className="article-search">
-              <h2>Ready to check a live product?</h2>
-              <p>Search the current catalog, then verify the individual listing before making a decision.</p>
-              <SearchBox compact />
-            </div>
             </> : <AdditionalArticleBody article={article} />}
+            <ArticleResearchEnhancements article={article} />
           </article>
         </div>
       </section>

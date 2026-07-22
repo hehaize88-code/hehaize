@@ -42,7 +42,7 @@ export default function ContactPage() {
 
           <aside className="contact-routes">
             <article><span>Hubbuy support</span><h3>Orders, warehouse status and parcels</h3><p>Hubbuy Sheet cannot view or change a Hubbuy order. Use the current support and account channels published by Hubbuy itself.</p><a href="https://hubbuy.com/" target="_blank" rel="noopener">Open official Hubbuy website <ArrowIcon /></a></article>
-            <article><span>CNBuy Sheet destination</span><h3>Catalog and destination-page questions</h3><p>Our product, category and search links open CNBuy Sheet. Its live page controls the current listing and any transaction made after leaving this website.</p><a href={MAIN_SITE} target="_blank" rel="noopener">Open CNBuy Sheet <ArrowIcon /></a></article>
+            <article><span>CNBuy Sheet destination</span><h3>Catalog and destination-page questions</h3><p>Our product cards, search forms and category-page catalog buttons open CNBuy Sheet. Its live page controls the current listing and any transaction made after leaving this website.</p><a href={MAIN_SITE} target="_blank" rel="noopener">Open CNBuy Sheet <ArrowIcon /></a></article>
             <article><span>Relationship</span><h3>Why these links point to CNBuy Sheet</h3><p>Hubbuy Sheet has a commercial interest in sending readers to CNBuy Sheet. Read the full disclosure and editorial boundary before using the catalog.</p><Link href="/about/#cnbuy-relationship">Read the relationship disclosure <ArrowIcon /></Link></article>
           </aside>
         </div>
