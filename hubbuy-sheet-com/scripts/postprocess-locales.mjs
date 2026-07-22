@@ -4,6 +4,7 @@ import { articles } from "../data/articles.js";
 import { categoryPages } from "../data/categories.js";
 import { getLocalizedPath, translations } from "../data/i18n.js";
 import { localePages } from "../data/locale-content.js";
+import { products } from "../data/site.js";
 
 const outputRoot = resolve(process.argv[2] || "out");
 const siteUrl = "https://hubbuy-sheet.com";
@@ -28,6 +29,8 @@ const baseRoutes = [
   ...articles.map((article) => `/articles/${article.slug}/`),
   ...categoryPages.map((category) => `/categories/${category.slug}/`),
 ];
+const englishOnlyRoutes = products.map((product) => product.localHref);
+const allEnglishRoutes = [...baseRoutes, ...englishOnlyRoutes];
 const staticAssetPattern = /\.(?:avif|css|gif|ico|jpe?g|js|json|png|svg|txt|webp|xml)$/i;
 const translatedMetaFields = new Set([
   "description",
@@ -81,6 +84,7 @@ function localizeInternalPath(rawValue, locale) {
   if (!rawValue.startsWith("/") || rawValue.startsWith("//")) return rawValue;
   const url = new URL(rawValue, siteUrl);
   if (staticAssetPattern.test(url.pathname)) return rawValue;
+  if (/^\/products\/\d+\/$/.test(url.pathname)) return rawValue;
   return `${routeForLocale(url.pathname, locale)}${url.search}${url.hash}`;
 }
 
@@ -107,7 +111,10 @@ function translateJsonValues(value, dictionary, locale, parentKey = null) {
 }
 
 function alternateLinks(route) {
-  const alternates = [
+  const alternates = englishOnlyRoutes.includes(route) ? [
+    ["en", route],
+    ["x-default", route],
+  ] : [
     ["en", routeForLocale(route, "en")],
     ["pt-BR", routeForLocale(route, "pt-br")],
     ["de", routeForLocale(route, "de")],
@@ -144,7 +151,9 @@ function updateLanguageMenu(html, route, locale) {
   return html.replace(/<a class="language-option"[\s\S]*?<\/a>/g, (link) => {
     const code = link.match(/data-locale-code="([^"]+)"/)?.[1];
     if (!code) return link;
-    const href = routeForLocale(route, code);
+    const href = englishOnlyRoutes.includes(route) && code !== "en"
+      ? routeForLocale("/products/", code)
+      : routeForLocale(route, code);
     let updated = link
       .replace(/href="[^"]*"/, `href="${href}"`)
       .replace(/\saria-current="page"/g, "")
@@ -232,7 +241,7 @@ function enhanceEnglishHtml(sourceHtml, route) {
   return html;
 }
 
-function sitemapXml(routes, selectedLocale = null) {
+function sitemapXml(routes, selectedLocale = null, singleLanguageRoutes = []) {
   const records = [];
   for (const route of routes) {
     const locales = selectedLocale ? [selectedLocale] : ["en", "pt-br", "de"];
@@ -249,19 +258,32 @@ function sitemapXml(routes, selectedLocale = null) {
       records.push(`  <url>\n    <loc>${siteUrl}${path}</loc>\n    <lastmod>${article?.updated || lastModified}</lastmod>\n    <changefreq>${["/", "/products/", "/articles/"].includes(route) ? "weekly" : "monthly"}</changefreq>\n    <priority>${priority}</priority>\n${alternates}\n  </url>`);
     }
   }
+  if (!selectedLocale || selectedLocale === "en") {
+    for (const route of singleLanguageRoutes) {
+      const product = products.find((item) => item.localHref === route);
+      const alternates = ["en", "x-default"]
+        .map((code) => `    <xhtml:link rel="alternate" hreflang="${code}" href="${siteUrl}${route}" />`)
+        .join("\n");
+      records.push(`  <url>\n    <loc>${siteUrl}${route}</loc>\n    <lastmod>${product?.checked || lastModified}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.72</priority>\n${alternates}\n  </url>`);
+    }
+  }
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${records.join("\n")}\n</urlset>\n`;
 }
 
 const englishSources = new Map();
-for (const route of baseRoutes) {
+for (const route of allEnglishRoutes) {
   const sourcePath = htmlPath(route, "en");
   if (!existsSync(sourcePath)) throw new Error(`Missing English static page: ${sourcePath}`);
   englishSources.set(route, readFileSync(sourcePath, "utf8"));
 }
 
-for (const route of baseRoutes) {
+for (const route of allEnglishRoutes) {
   const sourceHtml = englishSources.get(route);
   writeFileSync(htmlPath(route, "en"), enhanceEnglishHtml(sourceHtml, route));
+}
+
+for (const route of baseRoutes) {
+  const sourceHtml = englishSources.get(route);
   for (const locale of ["pt-br", "de"]) {
     const destination = htmlPath(route, locale);
     mkdirSync(dirname(destination), { recursive: true });
@@ -269,8 +291,8 @@ for (const route of baseRoutes) {
   }
 }
 
-writeFileSync(resolve(outputRoot, "sitemap.xml"), sitemapXml(baseRoutes));
-writeFileSync(resolve(outputRoot, "sitemap-en.xml"), sitemapXml(baseRoutes, "en"));
+writeFileSync(resolve(outputRoot, "sitemap.xml"), sitemapXml(baseRoutes, null, englishOnlyRoutes));
+writeFileSync(resolve(outputRoot, "sitemap-en.xml"), sitemapXml(baseRoutes, "en", englishOnlyRoutes));
 writeFileSync(resolve(outputRoot, "sitemap-pt-br.xml"), sitemapXml(baseRoutes, "pt-br"));
 writeFileSync(resolve(outputRoot, "sitemap-de.xml"), sitemapXml(baseRoutes, "de"));
 

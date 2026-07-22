@@ -2,7 +2,7 @@ import Link from "next/link";
 import SearchBox from "@/components/SearchBox";
 import ProductCard from "@/components/ProductCard";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
-import { categories, products, faqs, MAIN_SITE, SITE_URL } from "@/data/site";
+import { categories, getProductImageUrl, products, faqs, MAIN_SITE, SITE_URL } from "@/data/site";
 import { articles } from "@/data/articles";
 import { localePages } from "@/data/locale-content";
 
@@ -51,7 +51,7 @@ export default function HomePage({ locale = "en" } = {}) {
     "@type": "ItemList",
     name: "Recent Hubbuy spreadsheet finds",
     itemListElement: products.slice(0, 8).map((product, index) => ({
-      "@type": "ListItem", position: index + 1, name: product.name, url: product.href, image: `${SITE_URL}${product.image}`,
+      "@type": "ListItem", position: index + 1, name: product.name, url: `${SITE_URL}${product.localHref}`, image: getProductImageUrl(product),
     })),
   };
   const articleListSchema = {

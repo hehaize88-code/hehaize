@@ -4,7 +4,8 @@ import PageHero from "@/components/PageHero";
 import ProductCard from "@/components/ProductCard";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { categoryPages, getCategory } from "@/data/categories";
-import { products, MAIN_SITE, SITE_URL } from "@/data/site";
+import { categoryDepth } from "@/data/category-depth";
+import { products, getProductImageUrl, MAIN_SITE, SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
 
 export function generateStaticParams() {
@@ -29,6 +30,7 @@ export default async function CategoryPage({ params }) {
   const { slug } = await params;
   const category = getCategory(slug);
   if (!category) notFound();
+  const depth = categoryDepth[slug];
 
   const categoryProducts = products.filter((product) => product.category === category.name);
   const pagePath = `/categories/${category.slug}/`;
@@ -48,8 +50,8 @@ export default async function CategoryPage({ params }) {
         "@type": "ListItem",
         position: index + 1,
         name: product.name,
-        url: product.href,
-        image: `${SITE_URL}${product.image}`,
+        url: `${SITE_URL}${product.localHref}`,
+        image: getProductImageUrl(product),
       })),
     },
   };
@@ -82,11 +84,26 @@ export default async function CategoryPage({ params }) {
       <section className="section category-products-section">
         <div className="wrap">
           <div className="product-page-header">
-            <div><span className="eyebrow">Current category shortlist</span><h2>{category.name}</h2><p>Every product card opens its exact live catalog destination.</p></div>
+            <div><span className="eyebrow">Current category shortlist</span><h2>{category.name}</h2><p>Every product card opens a local research page before the exact live catalog destination.</p></div>
             <a href={searchUrl} target="_blank" rel="noopener">Search this category in the live catalog ↗</a>
           </div>
           <div className="product-grid category-product-grid">
             {categoryProducts.map((product, index) => <ProductCard key={product.id} product={product} priority={index < 4} />)}
+          </div>
+        </div>
+      </section>
+
+      <section className="section category-depth-section">
+        <div className="wrap category-depth-layout">
+          <div>
+            <span className="eyebrow">How to review this category</span>
+            <h2>{depth.heading}</h2>
+            <div className="category-depth-signals">
+              {depth.signals.map((signal, index) => <span key={signal}><b>0{index + 1}</b>{signal}</span>)}
+            </div>
+          </div>
+          <div className="category-depth-copy">
+            {depth.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
         </div>
       </section>

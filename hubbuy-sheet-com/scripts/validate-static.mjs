@@ -18,6 +18,9 @@ const articleByPath = new Map(
 const categoryByPath = new Map(
   categoryPages.map((category) => [`/categories/${category.slug}/`, category]),
 );
+const productByPath = new Map(
+  products.map((product) => [product.localHref, product]),
+);
 const breadcrumbPaths = new Set([
   "/guides/how-to-buy/",
   "/guides/qc-checks/",
@@ -36,9 +39,12 @@ const allowedSchemaTypes = new Set([
   "HowTo",
   "HowToStep",
   "ImageObject",
+  "ItemPage",
   "ItemList",
   "ListItem",
+  "Offer",
   "Organization",
+  "Product",
   "Question",
   "WebSite",
 ]);
@@ -66,6 +72,12 @@ function internalTarget(href) {
 }
 
 function expectedAlternates(basePath) {
+  if (productByPath.has(basePath)) {
+    return new Map([
+      ["en", `${siteUrl}${basePath}`],
+      ["x-default", `${siteUrl}${basePath}`],
+    ]);
+  }
   return new Map([
     ["en", `${siteUrl}${getLocalizedPath(basePath, "en")}`],
     ["pt-BR", `${siteUrl}${getLocalizedPath(basePath, "pt-br")}`],
@@ -133,7 +145,9 @@ for (const url of urls) {
   const twitterImage = metaContent(html, "name", "twitter:image");
   const article = articleByPath.get(basePath);
   const category = categoryByPath.get(basePath);
-  const expectedImage = `${siteUrl}${article?.socialImage || "/brand/og-card.png"}`;
+  const product = productByPath.get(basePath);
+  const productImage = product?.image?.startsWith("http") ? product.image : product ? `${siteUrl}${product.image}` : null;
+  const expectedImage = productImage || `${siteUrl}${article?.socialImage || "/brand/og-card.png"}`;
 
   if (!title || !canonical || !h1 || h1Count !== 1) throw new Error(`Invalid SEO head on ${url}`);
   if (canonical !== url) throw new Error(`Canonical mismatch on ${url}: ${canonical}`);
@@ -165,6 +179,9 @@ for (const url of urls) {
 
   const schemas = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)]
     .map((script) => JSON.parse(script[1]));
+  if (JSON.stringify(schemas).includes(`${siteUrl}https://`)) {
+    throw new Error(`Malformed absolute URL in structured data on ${url}`);
+  }
   for (const type of collectSchemaTypes(schemas)) {
     if (!allowedSchemaTypes.has(type)) throw new Error(`Invalid or translated Schema.org type on ${url}: ${type}`);
   }
@@ -173,8 +190,8 @@ for (const url of urls) {
     const collection = schemas.find((schema) => schemaType(schema, "CollectionPage"));
     const itemList = collection?.mainEntity;
     if (!collection || !schemaType(itemList, "ItemList")) throw new Error(`Missing CollectionPage + ItemList on ${url}`);
-    if (itemList.numberOfItems !== 16 || itemList.itemListElement?.length !== 16) throw new Error(`Incomplete product ItemList on ${url}`);
-    if (new Set(itemList.itemListElement.map((item) => item.url)).size !== 16) throw new Error(`Duplicate product URLs in ItemList on ${url}`);
+    if (itemList.numberOfItems !== products.length || itemList.itemListElement?.length !== products.length) throw new Error(`Incomplete product ItemList on ${url}`);
+    if (new Set(itemList.itemListElement.map((item) => item.url)).size !== products.length) throw new Error(`Duplicate product URLs in ItemList on ${url}`);
   }
 
   if (category) {
@@ -186,6 +203,27 @@ for (const url of urls) {
       throw new Error(`Incomplete category ItemList on ${url}`);
     }
     if (!schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) throw new Error(`Missing category BreadcrumbList on ${url}`);
+    if (locale === "en") {
+      const main = html.match(/<main id="main-content">([\s\S]*?)<\/main>/)?.[1] || "";
+      const count = visibleWordCount(main);
+      if (count < 300 || count > 600) throw new Error(`Category page content is outside 300–600 words on ${url}: ${count}`);
+    }
+  }
+
+  if (product) {
+    if (locale !== "en") throw new Error(`Product reference page must remain English-only: ${url}`);
+    const itemPage = schemas.find((schema) => schemaType(schema, "ItemPage"));
+    if (!itemPage || !schemaType(itemPage.mainEntity, "Product") || !schemaType(itemPage.mainEntity?.offers, "Offer")) {
+      throw new Error(`Missing ItemPage + Product + Offer schema on ${url}`);
+    }
+    if (itemPage.mainEntity.sku !== product.sourceId || itemPage.mainEntity.offers.url !== product.href) {
+      throw new Error(`Product schema does not match source record on ${url}`);
+    }
+    if (!schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) throw new Error(`Missing product BreadcrumbList on ${url}`);
+    const main = html.match(/<main id="main-content">([\s\S]*?)<\/main>/)?.[1] || "";
+    const count = visibleWordCount(main);
+    if (count < 350 || count > 800) throw new Error(`Product research page content is outside 350–800 words on ${url}: ${count}`);
+    if (!html.includes(`href="${product.href}"`)) throw new Error(`Product research page lacks its live source link: ${url}`);
   }
 
   if (breadcrumbPaths.has(basePath) && !schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) {
@@ -227,8 +265,10 @@ for (const url of urls) {
   }
 
   records.push({ url, pathname, locale, basePath, title, canonical, h1, lang, ogTitle, ogUrl, ogImage });
-  if (!localeGroups.has(basePath)) localeGroups.set(basePath, {});
-  localeGroups.get(basePath)[locale] = { title, h1, ogTitle, url };
+  if (!product) {
+    if (!localeGroups.has(basePath)) localeGroups.set(basePath, {});
+    localeGroups.get(basePath)[locale] = { title, h1, ogTitle, url };
+  }
 }
 
 for (const [basePath, group] of localeGroups) {
@@ -244,7 +284,7 @@ for (const [basePath, group] of localeGroups) {
   }
 }
 
-for (const [locale, expectedCount] of [["en", 23], ["pt-br", 23], ["de", 23]]) {
+for (const [locale, expectedCount] of [["en", 23 + products.length], ["pt-br", 23], ["de", 23]]) {
   const file = resolve(outputRoot, `sitemap-${locale}.xml`);
   if (!existsSync(file)) throw new Error(`Missing language sitemap: ${locale}`);
   const count = (readFileSync(file, "utf8").match(/<loc>/g) || []).length;
@@ -258,7 +298,8 @@ const duplicateCanonicals = records.filter((record, index) => (
   records.findIndex((candidate) => candidate.canonical === record.canonical) !== index
 ));
 
-if (urls.length !== 69 || new Set(urls).size !== 69) throw new Error(`Expected 69 unique sitemap URLs, found ${urls.length}`);
+const expectedSitemapUrls = 69 + products.length;
+if (urls.length !== expectedSitemapUrls || new Set(urls).size !== expectedSitemapUrls) throw new Error(`Expected ${expectedSitemapUrls} unique sitemap URLs, found ${urls.length}`);
 if (duplicateTitles.length) throw new Error(`Duplicate titles: ${duplicateTitles.map((item) => item.url).join(", ")}`);
 if (duplicateCanonicals.length) throw new Error("Duplicate canonical URLs");
 if (brokenLinks.length) throw new Error(`Broken internal links: ${JSON.stringify(brokenLinks.slice(0, 10))}`);

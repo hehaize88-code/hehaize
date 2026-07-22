@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/data/site";
+import { products, SITE_URL } from "@/data/site";
 import { articles } from "@/data/articles";
 import { categoryPages } from "@/data/categories";
 
@@ -27,7 +27,7 @@ export default function sitemap() {
   ];
 
   const localizedPath = (route, prefix) => prefix ? `${prefix}${route}` : route;
-  return baseRoutes.flatMap((route) => {
+  const localizedEntries = baseRoutes.flatMap((route) => {
     const article = route.startsWith("/articles/") && route !== "/articles/"
       ? articles.find((item) => route.includes(item.slug))
       : null;
@@ -45,4 +45,17 @@ export default function sitemap() {
       alternates: { languages },
     }));
   });
+  const productEntries = products.map((product) => ({
+    url: `${SITE_URL}${product.localHref}`,
+    lastModified: new Date(`${product.checked}T00:00:00Z`),
+    changeFrequency: "weekly",
+    priority: 0.72,
+    alternates: {
+      languages: {
+        en: `${SITE_URL}${product.localHref}`,
+        "x-default": `${SITE_URL}${product.localHref}`,
+      },
+    },
+  }));
+  return [...localizedEntries, ...productEntries];
 }
