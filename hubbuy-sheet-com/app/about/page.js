@@ -20,8 +20,10 @@ export default function AboutPage() {
     mainEntity: {
       "@type": "Organization",
       name: "Hubbuy Sheet Editorial",
+      alternateName: "Hubbuy Sheet",
       url: `${SITE_URL}/about/`,
-      description: "The publishing identity responsible for Hubbuy Sheet research, product-link checks and corrections.",
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/hubbuy.png` },
+      description: "The independent publishing identity responsible for Hubbuy Sheet research, product-link checks and corrections. It is not Hubbuy and is not affiliated with Hubbuy.",
     },
   };
   const breadcrumbSchema = createBreadcrumbSchema([

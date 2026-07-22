@@ -48,6 +48,20 @@ export default function HomePage({ locale = "en" } = {}) {
     url: pageUrl,
     description: localePage?.description || "Independent Hubbuy spreadsheet, product discovery and shopping workflow guide.",
     inLanguage: localePage?.htmlLang || "en",
+    publisher: { "@id": `${SITE_URL}/#publisher` },
+  };
+  const publisherSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#publisher`,
+    name: "Hubbuy Sheet Editorial",
+    alternateName: "Hubbuy Sheet",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/brand/hubbuy.png`,
+    },
+    description: "Independent publisher of the Hubbuy Sheet product-discovery directory and shopping guides. Not the official Hubbuy website and not affiliated with Hubbuy.",
   };
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -73,6 +87,7 @@ export default function HomePage({ locale = "en" } = {}) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(publisherSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleListSchema) }} />
       <section className="hero">

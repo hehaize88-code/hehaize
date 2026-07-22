@@ -20,13 +20,13 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="announcement">
-        <span>Independent Hubbuy spreadsheet guide</span>
+        <span>Hubbuy Sheet · Independent guide</span>
         <span className="announcement-dot" />
-        <span>Catalog checked July 2026</span>
+        <span>Not the official Hubbuy website</span>
       </div>
       <div className="nav-shell wrap">
         <Link href="/" className="brand" aria-label="Hubbuy Sheet home">
-          <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy" width="963" height="133" loading="eager" fetchPriority="high" decoding="async" />
+          <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy Sheet independent guide" width="963" height="133" loading="eager" fetchPriority="high" decoding="async" />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
