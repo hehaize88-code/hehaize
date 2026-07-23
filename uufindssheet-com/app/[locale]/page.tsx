@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { DocumentLanguage } from "../components/document-language";
-import { categories } from "../site-data";
+import { ResponsiveHeroImage, SiteImage } from "../components/site-image";
+import { products } from "../products/product-data";
+import { articleCards, categories } from "../site-data";
 import { socialImage } from "../seo-image";
 
 const localized = {
@@ -133,28 +135,48 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
   if (!content) notFound();
 
   return (
-    <main className="localized-page">
+    <main>
       <DocumentLanguage language={locale === "pt-br" ? "pt-BR" : locale === "en-gb" ? "en-GB" : locale} />
       <SiteHeader locale={content.region} labels={content.nav} />
-      <section className="localized-hero">
-        <div>
+
+      <section className="hero" id="top">
+        <div className="hero-copy">
           <p className="eyebrow">{content.eyebrow}</p>
           <h1>{content.title}<br /><em>{content.accent}</em></h1>
-          <p>{content.intro}</p>
-          <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" target="_blank">
+          <p className="hero-intro">{content.intro}</p>
+          <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" role="search">
             <input type="hidden" name="channelid" value="2" />
             <span className="search-icon" aria-hidden="true">⌕</span>
             <input name="keywords" required placeholder={content.search} aria-label={content.search} />
             <button type="submit">{content.searchButton}</button>
           </form>
+          <a className="browse-button" href="#finds">
+            <span aria-hidden="true">↗</span><strong>{content.categoryTitle}</strong><b aria-hidden="true">→</b>
+          </a>
+          <div className="proof-row" aria-label="Site features">
+            <div><span>09</span><small>Category<br />shortcuts</small></div>
+            <div><span>QC</span><small>First buying<br />guide</small></div>
+            <div><span>↗</span><small>Direct CNBuy<br />Sheet links</small></div>
+          </div>
         </div>
-        <aside>
-          <span>DE</span><span>PL</span><span>BR</span><span>US</span><span>UK</span>
-          <strong>{content.marketText}<br />{content.marketNote}</strong>
-        </aside>
+
+        <div className="hero-visual" aria-label="Editorial collage of a shoe, hoodie, and cap">
+          <div className="index-mark" aria-hidden="true">01</div>
+          <div className="grid-lines" aria-hidden="true" />
+          <ResponsiveHeroImage />
+          <div className="route-tag" aria-hidden="true">
+            <span>CNBUY SHEET LINK</span>
+            <strong>READY TO OPEN</strong>
+            <b>↑</b>
+          </div>
+        </div>
       </section>
-      <section className="localized-categories">
-        <div className="section-heading"><div><p className="eyebrow">09 / CNBUY SHEET</p><h2>{content.categoryTitle}</h2></div><p>{content.categoryIntro}</p></div>
+
+      <section className="category-section" id="finds">
+        <div className="section-heading">
+          <div><p className="eyebrow">09 / CNBUY SHEET</p><h2>{content.categoryTitle}</h2></div>
+          <p>{content.categoryIntro}</p>
+        </div>
         <div className="category-grid">
           {categories.map((category, index) => (
             <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
@@ -165,11 +187,96 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           ))}
         </div>
       </section>
-      <section className="localized-article-card">
-        <p className="eyebrow inverse">{content.articleLabel}</p>
-        <h2>{content.articleTitle}</h2><p>{content.articleText}</p>
-        <Link href={`/${locale}/guides/uufinds-spreadsheet-shopping-guide-2026/`}>{content.articleButton}</Link>
+
+      <section className="product-showcase-section" id="featured-products">
+        <div className="section-heading">
+          <div><p className="eyebrow">Product routes / 08</p><h2>{content.nav.products}</h2></div>
+          <p>{content.intro}</p>
+        </div>
+        <div className="product-showcase-grid">
+          {products.map((product, index) => (
+            <Link className="product-card" href={`/${locale}/products/${product.slug}/`} key={product.slug}>
+              <div className="product-card-image">
+                <SiteImage src={product.images[0]} alt={product.name} width={800} height={800} />
+                <span>{String(index + 1).padStart(2, "0")} / 08</span>
+              </div>
+              <div className="product-card-copy">
+                <p>{product.category}</p>
+                <h3>{product.shortName}</h3>
+                <div><span>¥{product.price}</span><b>{content.nav.products} ↗</b></div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </section>
+
+      <section className="split-callout" id="qc-guide">
+        <div>
+          <p className="eyebrow inverse">QC before checkout</p>
+          <h2>{content.articleTitle}</h2>
+        </div>
+        <div className="callout-copy">
+          <p>{content.articleText}</p>
+          <Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{content.nav.qcGuide} <span>→</span></Link>
+        </div>
+      </section>
+
+      <section className="workflow-section" id="how-it-works">
+        <div className="section-heading">
+          <div><p className="eyebrow">Research route / 03 steps</p><h2>{content.nav.howItWorks}</h2></div>
+          <p>{content.intro}</p>
+        </div>
+        <div className="workflow-grid">
+          <article><span>01</span><p className="step-label">RESEARCH</p><h3>UUFinds</h3><p>{content.intro}</p><Link href={`/${locale}/guides/how-to-use-uufinds/`}>{content.articleButton}</Link></article>
+          <article><span>02</span><p className="step-label">COMPARE</p><h3>QC</h3><p>{content.articleText}</p><Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{content.nav.qcGuide} →</Link></article>
+          <article><span>03</span><p className="step-label">BROWSE</p><h3>CNBuy Sheet</h3><p>{content.categoryIntro}</p><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></article>
+        </div>
+      </section>
+
+      <section className="articles-section" id="articles">
+        <div className="section-heading">
+          <div><p className="eyebrow">{content.articleLabel}</p><h2>{content.nav.articles}</h2></div>
+          <p>{content.articleText}</p>
+        </div>
+        <div className="article-grid">
+          {articleCards.map((article, index) => (
+            <Link href={`/${locale}${article.href}`} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+              <div className="article-meta"><span>{index === 0 ? content.articleLabel : article.tag}</span><b>0{index + 1}</b></div>
+              <h3>{index === 0 ? content.articleTitle : article.title}</h3>
+              <p>{index === 0 ? content.articleText : article.summary}</p>
+              <div className="article-foot"><span>{article.read}</span><b>{content.articleButton}</b></div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="trust-section">
+        <div className="trust-card">
+          <p className="eyebrow">Independent guide</p>
+          <h2>UUFinds Sheet</h2>
+          <p>{content.description}</p>
+        </div>
+        <div className="facts-card">
+          <div><span>01</span><p>UUFinds publicly describes a QC finder for available photos and videos.</p></div>
+          <div><span>02</span><p>Keep the exact product link, seller and variant attached to any QC evidence.</p></div>
+          <div><span>03</span><p>Confirm current product details on the live CNBuy Sheet page.</p></div>
+          <div className="source-row"><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></div>
+        </div>
+      </section>
+
+      <section className="faq-section">
+        <div>
+          <p className="eyebrow">FAQ</p>
+          <h2>{content.nav.faq}</h2>
+          <Link className="full-faq-link" href={`/${locale}/faq/`}>{content.nav.faq} →</Link>
+        </div>
+        <div className="faq-list">
+          <details open><summary>Is this the official UUFinds website?<span>+</span></summary><p>No. UUFinds Sheet is an independent editorial guide.</p></details>
+          <details><summary>Does a QC photo guarantee product quality?<span>+</span></summary><p>No. It documents one photographed item or batch and must be matched to the intended listing.</p></details>
+          <details><summary>What should be checked on the destination page?<span>+</span></summary><p>Confirm the product ID, price, variants, sizing, seller link and current availability.</p></details>
+        </div>
+      </section>
+
       <SiteFooter locale={locale as Locale} />
     </main>
   );

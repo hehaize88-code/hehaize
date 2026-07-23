@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const trustPaths = ["about", "contact", "editorial-policy", "privacy", "terms"];
   const localizedPaths = [
     "finds", "products", "how-it-works", "articles", "faq",
+    ...trustPaths,
     ...products.map((product) => `products/${product.slug}`),
     ...guides.map((guide) => `guides/${guide.slug}`),
   ];

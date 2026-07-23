@@ -34,7 +34,7 @@ export function TrustPage({ slug }: { slug: PolicyPageData["slug"] }) {
 
   return (
     <main className="trust-page">
-      <SiteHeader />
+      <SiteHeader routePath={`/${page.slug}/`} />
       <nav className="trust-breadcrumb" aria-label="Breadcrumb">
         <Link href="/">Home</Link><span>/</span><strong>{page.title}</strong>
       </nav>

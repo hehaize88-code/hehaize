@@ -37,11 +37,11 @@ export function SiteFooter({ locale = "en" }: { locale?: FooterLocale }) {
       </div>
       <p>{copy.text}</p>
       <nav className="footer-links" aria-label="Trust and policy links">
-        <Link href="/about/">About</Link>
-        <Link href="/contact/">Contact</Link>
-        <Link href="/editorial-policy/">Editorial Policy</Link>
-        <Link href="/privacy/">Privacy</Link>
-        <Link href="/terms/">Terms</Link>
+        <Link href={`${prefix}/about/`}>About</Link>
+        <Link href={`${prefix}/contact/`}>Contact</Link>
+        <Link href={`${prefix}/editorial-policy/`}>Editorial Policy</Link>
+        <Link href={`${prefix}/privacy/`}>Privacy</Link>
+        <Link href={`${prefix}/terms/`}>Terms</Link>
       </nav>
       <Link className="footer-shop-link" href={`${prefix}/products/`}>{copy.link}</Link>
     </footer>
