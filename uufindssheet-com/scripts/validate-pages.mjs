@@ -6,6 +6,17 @@ const root = new URL("../out/", import.meta.url);
 const locales = ["en-gb", "de", "pl", "pt-br"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
 const count = (html, pattern) => (html.match(pattern) ?? []).length;
+const block = (html, tag, className) => {
+  const match = html.match(new RegExp(`<${tag}[^>]*class="${className}"[^>]*>[\\s\\S]*?</${tag}>`));
+  assert.ok(match, `missing ${tag}.${className}`);
+  return match[0];
+};
+const betweenClasses = (html, startClass, endClass) => {
+  const start = html.indexOf(`class="${startClass}"`);
+  const end = html.indexOf(`class="${endClass}"`, start + 1);
+  assert.ok(start >= 0 && end > start, `missing range ${startClass} -> ${endClass}`);
+  return html.slice(start, end);
+};
 
 for (const locale of locales) {
   const home = await readPage(locale);
@@ -29,6 +40,25 @@ for (const locale of locales) {
     }
   }
 
+  const finds = await readPage(`${locale}/finds`);
+  assert.equal(count(finds, /class="category-card"/g), 9, `${locale}/finds must keep all 9 category routes`);
+  assert.equal(count(block(finds, "div", "evidence-grid"), /<article>/g), 4, `${locale}/finds must keep all 4 evidence cards`);
+  assert.equal(count(block(finds, "section", "decision-checklist"), /<li>/g), 5, `${locale}/finds must keep the 5-step discovery routine`);
+  assert.equal(count(finds, /class="source-method-note"/g), 1, `${locale}/finds must keep its source boundary`);
+
+  const how = await readPage(`${locale}/how-it-works`);
+  assert.equal(count(betweenClasses(how, "official-fact-strip", "workflow-grid"), /<article>/g), 3, `${locale}/how-it-works must keep all verified facts`);
+  assert.equal(count(block(how, "div", "workflow-grid"), /<article>/g), 3, `${locale}/how-it-works must keep all workflow steps`);
+  assert.equal(count(block(how, "div", "evidence-grid"), /<article>/g), 4, `${locale}/how-it-works must keep all evidence cards`);
+  assert.equal(count(block(how, "section", "decision-checklist"), /<li>/g), 5, `${locale}/how-it-works must keep the 5-line decision record`);
+  assert.equal(count(how, /class="method-note"/g), 1, `${locale}/how-it-works must keep the conclusion panel`);
+
+  const faq = await readPage(`${locale}/faq`);
+  assert.equal(count(faq, /class="faq-group"/g), 4, `${locale}/faq must keep all 4 English-equivalent topic groups`);
+  assert.equal(count(betweenClasses(faq, "faq-directory", "source-method-note"), /<details/g), 18, `${locale}/faq must keep all 18 English-equivalent answers`);
+  assert.equal(count(betweenClasses(faq, "official-fact-strip", "faq-directory"), /<article>/g), 3, `${locale}/faq must keep all verified facts`);
+  assert.equal(count(faq, /class="faq-next-step"/g), 1, `${locale}/faq must keep the next-step panel`);
+
   const product = await readPage(`${locale}/products/hoka-speedgoat-5-trail-running-shoes`);
   assert.match(product, /class="product-page"/);
   assert.match(product, /class="product-gallery"/);
@@ -40,6 +70,9 @@ for (const locale of locales) {
   assert.match(guide, /class="guide-page"/);
   assert.match(guide, /class="guide-layout"/);
   assert.match(guide, /class="guide-body"/);
+  assert.equal(count(guide, /class="lead"/g), 3, `${locale} QC guide must keep all 3 introductory paragraphs`);
+  assert.equal(count(guide, /id="section-\d+"/g), 9, `${locale} QC guide must keep all 9 English-equivalent sections`);
+  assert.equal(count(guide, /class="source-note"/g), 1, `${locale} QC guide must keep the complete primary-source note`);
 
   for (const policy of ["about", "contact", "editorial-policy", "privacy", "terms"]) {
     const html = await readPage(`${locale}/${policy}`);
@@ -48,8 +81,21 @@ for (const locale of locales) {
   }
 }
 
+for (const locale of ["de", "pl", "pt-br"]) {
+  const targetPages = await Promise.all([
+    readPage(`${locale}/finds`),
+    readPage(`${locale}/how-it-works`),
+    readPage(`${locale}/faq`),
+    readPage(`${locale}/guides/uufinds-qc-checklist`),
+  ]);
+  for (const html of targetPages) {
+    assert.doesNotMatch(html, /A photographed item is not a guarantee for every later unit\./, `${locale} page must not fall back to the retired English evidence card`);
+    assert.doesNotMatch(html, />ON THIS PAGE</, `${locale} QC guide must localize its section navigation`);
+  }
+}
+
 const sitemap = await readFile(join(root.pathname, "sitemap.xml"), "utf8");
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/de\/about\//);
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/pt-br\/terms\//);
 
-console.log("Validated multilingual layout, image markup, route-preserving language links, trust pages, and sitemap.");
+console.log("Validated multilingual content parity, layout, image markup, route-preserving language links, trust pages, and sitemap.");

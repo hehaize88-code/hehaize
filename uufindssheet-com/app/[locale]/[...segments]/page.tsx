@@ -11,6 +11,9 @@ import { articleCards, categories } from "../../site-data";
 import { policyPages, type PolicyPageData } from "../../policy-data";
 import { localizedRouteCopy } from "../localized-route-content";
 import { socialImage } from "../../seo-image";
+import { hubParityCopy } from "../localized-hub-copy";
+import { localizedFAQCopy } from "../localized-faq-copy";
+import { localizedQCCopy } from "../localized-qc-copy";
 
 const locales = ["en-gb", "de", "pl", "pt-br"] as const;
 type Locale = (typeof locales)[number];
@@ -103,15 +106,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const policy = segments.length === 1 && isPolicySlug(route) ? policyPages[route] : undefined;
   const routeCopy = locale === "en-gb" ? undefined : localizedRouteCopy[locale as Exclude<Locale, "en-gb">];
   const guideCopy = guide ? routeCopy?.guides[guide.slug] : undefined;
+  const qcCopy = guide?.slug === "uufinds-qc-checklist" && locale !== "en-gb"
+    ? localizedQCCopy[locale as Exclude<Locale, "en-gb">]
+    : undefined;
   const title = policy
     ? `${policy.title} | UUFinds Sheet`
     : product
       ? `${product.shortName} – ${t.guide} QC`
       : guide
-        ? `${guideCopy?.title ?? guide.title} – ${t.guide}`
+        ? `${qcCopy?.title ?? guideCopy?.title ?? guide.title} – ${t.guide}`
         : `${route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how} | UUFinds Sheet`;
   const path = `/${locale}/${route}/`;
-  const description = policy?.description ?? guideCopy?.description ?? `${t.intro} ${t.check}`;
+  const description = policy?.description ?? qcCopy?.description ?? guideCopy?.description ?? `${t.intro} ${t.check}`;
   return {
     title,
     description,
@@ -144,7 +150,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
 
   if (policy) {
     return (
-      <main className="trust-page">
+      <main className="trust-page" lang={t.lang}>
         <DocumentLanguage language={t.lang} />
         <SiteHeader locale={t.region} routePath={`/${policy.slug}/`} />
         <nav className="trust-breadcrumb" aria-label="Breadcrumb">
@@ -179,35 +185,46 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
   }
 
   if (guide) {
-    const title = guideCopy?.title ?? guide.title;
-    const description = guideCopy?.description ?? guide.description;
-    const localizedSections = guideCopy
+    const qcCopy = guide.slug === "uufinds-qc-checklist" && currentLocale !== "en-gb"
+      ? localizedQCCopy[currentLocale]
+      : undefined;
+    const title = qcCopy?.title ?? guideCopy?.title ?? guide.title;
+    const description = qcCopy?.description ?? guideCopy?.description ?? guide.description;
+    const localizedIntro = qcCopy?.intro ?? (
+      guideCopy
+        ? [guideCopy.description, t.intro]
+        : guide.intro
+    );
+    const localizedSections = qcCopy?.sections ?? (guideCopy
       ? [
           { heading: guideCopy.sectionTitle, paragraphs: [...guideCopy.paragraphs] },
           { heading: "QC", paragraphs: [t.check] },
           { heading: "CNBuy Sheet", paragraphs: [t.intro] },
         ]
-      : guide.sections;
+      : guide.sections);
     return (
-      <main className="guide-page">
+      <main className="guide-page" lang={t.lang}>
         <DocumentLanguage language={t.lang} />
         <SiteHeader locale={t.region} routePath={`/guides/${guide.slug}/`} />
         <div className="guide-subnav"><Link className="back-link" href={`/${currentLocale}/articles/`}>← {t.allGuides}</Link></div>
         <article>
           <div className="guide-hero">
-            <p className="eyebrow">{guide.label} / {t.guide}</p>
+            <p className="eyebrow">{qcCopy?.label ?? guide.label} / {t.guide}</p>
             <h1>{title}</h1>
             <p className="guide-deck">{description}</p>
-            <div className="guide-byline"><span>Updated {guide.updated}</span><span>{guide.readTime}</span><span>Evidence-led editorial</span></div>
+            <div className="guide-byline">
+              <span>{qcCopy ? qcCopy.updated : `Updated ${guide.updated}`}</span>
+              <span>{qcCopy?.readTime ?? guide.readTime}</span>
+              <span>{qcCopy?.editorial ?? "Evidence-led editorial"}</span>
+            </div>
           </div>
           <div className="guide-layout">
             <aside>
-              <p>ON THIS PAGE</p>
+              <p>{qcCopy?.onThisPage ?? "ON THIS PAGE"}</p>
               {localizedSections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{String(index + 1).padStart(2, "0")} — {section.heading.replace(/^\d+\.\s*/, "")}</a>)}
             </aside>
             <div className="guide-body">
-              <p className="lead">{description}</p>
-              <p className="lead">{t.intro}</p>
+              {localizedIntro.map((paragraph) => <p className="lead" key={paragraph}>{paragraph}</p>)}
               {localizedSections.map((section, index) => (
                 <section id={`section-${index + 1}`} key={section.heading}>
                   <p className="section-number">{String(index + 1).padStart(2, "0")}</p>
@@ -217,8 +234,8 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
                 </section>
               ))}
               <div className="source-note">
-                <p className="eyebrow">Primary source notes</p>
-                <p>{guide.sourceNote ?? t.check}</p>
+                <p className="eyebrow">{qcCopy?.sourceLabel ?? "Primary source notes"}</p>
+                <p>{qcCopy?.sourceNote ?? guide.sourceNote ?? t.check}</p>
                 <div><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></div>
               </div>
             </div>
@@ -249,33 +266,27 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
     );
   }
 
-  const title = route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how;
+  if (route === "finds") {
+    return <LocalizedFinds locale={currentLocale} t={t} routeCopy={routeCopy} />;
+  }
+  if (route === "how-it-works") {
+    return <LocalizedHowItWorks locale={currentLocale} t={t} />;
+  }
+  if (route === "faq") {
+    return <LocalizedFAQ locale={currentLocale} t={t} />;
+  }
+
+  const title = route === "articles" ? t.articles : t.products;
   return (
-    <main className={`hub-page${route === "faq" ? " faq-page" : ""}`}>
+    <main className="hub-page" lang={t.lang}>
       <DocumentLanguage language={t.lang} />
       <SiteHeader locale={t.region} routePath={`/${route}/`} />
-      <section className={`hub-hero${route === "faq" ? " faq-hero" : route === "articles" ? " article-hub-hero" : ""}`}>
+      <section className={`hub-hero${route === "articles" ? " article-hub-hero" : ""}`}>
         <p className="eyebrow">{t.guide} / {t.region}</p>
         <h1>{title}<br /><em>UUFinds Sheet</em></h1>
         <p>{t.intro}</p>
       </section>
-      <section className={`hub-content${route === "faq" ? " faq-page-content" : route === "how-it-works" ? " how-page-content" : ""}`}>
-        {route === "finds" && (
-          <>
-            <div className="category-grid">
-              {categories.map((category) => (
-                <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
-                  <div className={`category-code ${category.color}`}>{category.code}</div>
-                  <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
-                  <h2>{routeCopy?.categories[category.name] ?? category.name}</h2>
-                  <p>{category.note}</p><span className="card-arrow" aria-hidden="true">↗</span>
-                </a>
-              ))}
-            </div>
-            <EvidenceMatrix title={t.finds} intro={t.intro} check={t.check} />
-          </>
-        )}
-
+      <section className="hub-content">
         {route === "products" && (
           <>
             <ProductGrid locale={currentLocale} t={t} routeCopy={routeCopy} />
@@ -305,47 +316,175 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
             </div>
           </>
         )}
-
-        {route === "faq" && (
-          <>
-            <div className="official-fact-strip">
-              <article><span>01</span><div><strong>QC</strong><p>{t.intro}</p></div></article>
-              <article><span>02</span><div><strong>Match</strong><p>{t.check}</p></div></article>
-              <article><span>03</span><div><strong>Live page</strong><p>CNBuy Sheet</p></div></article>
-            </div>
-            <div className="faq-directory">
-              <aside aria-label="FAQ topics"><p className="eyebrow">{t.faq}</p><a href="#questions">01 / {t.guide}</a></aside>
-              <div className="faq-groups">
-                <section id="questions" className="faq-group">
-                  <p className="eyebrow">01 / {t.faq}</p><h2>{t.faq}</h2>
-                  <div className="faq-list">
-                    {t.questions.map((question, index) => <details open={index === 0} key={question}><summary>{question}<span>+</span></summary><p>{t.answers[index]}</p></details>)}
-                  </div>
-                </section>
-              </div>
-            </div>
-          </>
-        )}
-
-        {route === "how-it-works" && (
-          <>
-            <div className="official-fact-strip" aria-label="Verified UUFinds functions">
-              <article><span>01</span><div><strong>UUFinds</strong><p>{t.intro}</p></div></article>
-              <article><span>02</span><div><strong>QC</strong><p>{t.check}</p></div></article>
-              <article><span>03</span><div><strong>CNBuy Sheet</strong><p>{t.open}</p></div></article>
-            </div>
-            <div className="workflow-grid">
-              <article><span>01</span><p className="step-label">MATCH</p><h2>UUFinds</h2><p>{t.intro}</p><Link href={`/${currentLocale}/finds/`}>{t.finds} →</Link></article>
-              <article><span>02</span><p className="step-label">INSPECT</p><h2>QC</h2><p>{t.check}</p><Link href={`/${currentLocale}/guides/uufinds-qc-checklist/`}>{t.guide} →</Link></article>
-              <article><span>03</span><p className="step-label">CONFIRM</p><h2>CNBuy Sheet</h2><p>{t.check}</p><Link href={`/${currentLocale}/products/`}>{t.products} →</Link></article>
-            </div>
-            <EvidenceMatrix title={t.how} intro={t.intro} check={t.check} />
-          </>
-        )}
-
         <div className="source-method-note"><p className="eyebrow">Research boundary</p><p>{t.intro} {t.check}</p></div>
       </section>
       <SiteFooter locale={currentLocale} />
+    </main>
+  );
+}
+
+function LocalizedFinds({
+  locale,
+  t,
+  routeCopy,
+}: {
+  locale: Locale;
+  t: (typeof text)[Locale];
+  routeCopy: (typeof localizedRouteCopy)[Exclude<Locale, "en-gb">] | undefined;
+}) {
+  const copy = hubParityCopy[locale].finds;
+  return (
+    <main className="hub-page" lang={t.lang}>
+      <DocumentLanguage language={t.lang} />
+      <SiteHeader locale={t.region} routePath="/finds/" />
+      <section className="hub-hero">
+        <p className="eyebrow">{copy.eyebrow}</p>
+        <h1>{copy.title[0]}<br /><em>{copy.title[1]}</em></h1>
+        <p>{copy.deck}</p>
+      </section>
+      <section className="hub-content">
+        <div className="category-grid">
+          {categories.map((category) => (
+            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+              <div className={`category-code ${category.color}`}>{category.code}</div>
+              <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
+              <h2>{routeCopy?.categories[category.name] ?? category.name}</h2>
+              <p>{copy.categoryNotes[category.name] ?? category.note}</p>
+              <span className="card-arrow" aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+        <section className="evidence-matrix">
+          <div className="section-heading">
+            <div><p className="eyebrow">{copy.evidenceLabel}</p><h2>{copy.evidenceTitle}</h2></div>
+            <p>{copy.evidenceDeck}</p>
+          </div>
+          <div className="evidence-grid">
+            {copy.evidenceCards.map((card) => (
+              <article key={card.label}><p className="step-label">{card.label}</p><h3>{card.title}</h3><p>{card.body}</p><strong>{card.note}</strong></article>
+            ))}
+          </div>
+        </section>
+        <section className="decision-checklist">
+          <div><p className="eyebrow">{copy.checklistLabel}</p><h2>{copy.checklistTitle}</h2></div>
+          <ol>
+            {copy.checklist.map((item, index) => (
+              <li key={item.lead}><span>{String(index + 1).padStart(2, "0")}</span><p><strong>{item.lead}</strong> {item.body}</p></li>
+            ))}
+          </ol>
+        </section>
+        <div className="source-method-note"><p className="eyebrow">{copy.sourceLabel}</p><p>{copy.sourceBody}</p></div>
+      </section>
+      <SiteFooter locale={locale} />
+    </main>
+  );
+}
+
+function LocalizedHowItWorks({ locale, t }: { locale: Locale; t: (typeof text)[Locale] }) {
+  const copy = hubParityCopy[locale].how;
+  const links = [`/${locale}/finds/`, `/${locale}/guides/uufinds-qc-checklist/`, `/${locale}/products/`];
+  return (
+    <main className="hub-page" lang={t.lang}>
+      <DocumentLanguage language={t.lang} />
+      <SiteHeader locale={t.region} routePath="/how-it-works/" />
+      <section className="hub-hero">
+        <p className="eyebrow">{copy.eyebrow}</p>
+        <h1>{copy.title[0]}<br />{copy.title[1]}<br /><em>{copy.title[2]}</em></h1>
+        <p>{copy.deck}</p>
+      </section>
+      <section className="hub-content how-page-content">
+        <div className="official-fact-strip" aria-label={copy.factsLabel}>
+          {copy.facts.map((fact, index) => (
+            <article key={fact.title}><span>{String(index + 1).padStart(2, "0")}</span><div><strong>{fact.title}</strong><p>{fact.body}</p></div></article>
+          ))}
+        </div>
+        <div className="workflow-grid">
+          {copy.workflow.map((step, index) => (
+            <article key={step.label}>
+              <span>{String(index + 1).padStart(2, "0")}</span><p className="step-label">{step.label}</p>
+              <h2>{step.title}</h2><p>{step.body}</p><Link href={links[index]}>{step.link} →</Link>
+            </article>
+          ))}
+        </div>
+        <section className="evidence-matrix">
+          <div className="section-heading">
+            <div><p className="eyebrow">{copy.matrixLabel}</p><h2>{copy.matrixTitle}</h2></div><p>{copy.matrixDeck}</p>
+          </div>
+          <div className="evidence-grid">
+            {copy.matrix.map((card) => (
+              <article key={card.label}><p className="step-label">{card.label}</p><h3>{card.title}</h3><p>{card.body}</p><strong>{card.note}</strong></article>
+            ))}
+          </div>
+        </section>
+        <section className="decision-checklist">
+          <div><p className="eyebrow">{copy.checklistLabel}</p><h2>{copy.checklistTitle}</h2></div>
+          <ol>
+            {copy.checklist.map((item, index) => (
+              <li key={item.lead}><span>{String(index + 1).padStart(2, "0")}</span><p><strong>{item.lead}</strong> {item.body}</p></li>
+            ))}
+          </ol>
+        </section>
+        <div className="method-note">
+          <p className="eyebrow inverse">{copy.boundaryLabel}</p><h2>{copy.boundaryTitle}</h2><p>{copy.boundaryBody}</p>
+          <Link href={`/${locale}/guides/uufinds-spreadsheet-shopping-guide-2026/`}>{copy.boundaryLink} →</Link>
+        </div>
+      </section>
+      <SiteFooter locale={locale} />
+    </main>
+  );
+}
+
+function LocalizedFAQ({ locale, t }: { locale: Locale; t: (typeof text)[Locale] }) {
+  const copy = localizedFAQCopy[locale];
+  const faqEntities = copy.groups.flatMap((group) =>
+    group.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  );
+  return (
+    <main className="hub-page faq-page" lang={t.lang}>
+      <DocumentLanguage language={t.lang} />
+      <SiteHeader locale={t.region} routePath="/faq/" />
+      <section className="hub-hero faq-hero">
+        <p className="eyebrow">{copy.eyebrow}</p>
+        <h1>{copy.title[0]}<br /><em>{copy.title[1]}</em></h1><p>{copy.deck}</p>
+      </section>
+      <section className="hub-content faq-page-content">
+        <div className="official-fact-strip">
+          {copy.facts.map((fact, index) => (
+            <article key={fact.title}><span>{String(index + 1).padStart(2, "0")}</span><div><strong>{fact.title}</strong><p>{fact.body}</p></div></article>
+          ))}
+        </div>
+        <div className="faq-directory">
+          <aside aria-label="FAQ topics"><p className="eyebrow">{copy.jumpLabel}</p>{copy.groups.map((group) => <a href={`#${group.id}`} key={group.id}>{group.label}</a>)}</aside>
+          <div className="faq-groups">
+            {copy.groups.map((group, groupIndex) => (
+              <section id={group.id} className="faq-group" key={group.id}>
+                <p className="eyebrow">{group.label}</p><h2>{group.title}</h2>
+                <div className="faq-list">
+                  {group.items.map((item, itemIndex) => (
+                    <details key={item.question} open={groupIndex === 0 && itemIndex === 0}>
+                      <summary>{item.question}<span aria-hidden="true">+</span></summary><p>{item.answer}</p>
+                    </details>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        </div>
+        <div className="source-method-note"><p className="eyebrow">{copy.sourceLabel}</p><p>{copy.sourceBody}</p></div>
+        <section className="faq-next-step">
+          <div><p className="eyebrow inverse">{copy.nextLabel}</p><h2>{copy.nextTitle}</h2></div>
+          <div>
+            <Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{copy.checklistLink} →</Link>
+            <Link href={`/${locale}/products/`}>{copy.productsLink} →</Link>
+          </div>
+        </section>
+      </section>
+      <SiteFooter locale={locale} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqEntities }) }} />
     </main>
   );
 }
@@ -394,7 +533,7 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
   const category = routeCopy?.categories[product.category] ?? product.category;
   const inspection = routeCopy?.inspections[product.slug] ?? product.inspectionFocus;
   return (
-    <main className="product-page">
+    <main className="product-page" lang={t.lang}>
       <DocumentLanguage language={t.lang} />
       <SiteHeader locale={t.region} routePath={`/products/${product.slug}/`} />
       <div className="guide-subnav"><Link className="back-link" href={`/${locale}/products/`}>← {t.backProducts}</Link></div>

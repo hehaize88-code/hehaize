@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqGroups = [
+export const faqGroups = [
   {
     id: "using-uufinds",
     label: "01 / Using UUFinds",

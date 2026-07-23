@@ -23,6 +23,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       Pants: "Hosen",
       Headwear: "Kopfbedeckungen",
       Accessories: "Accessoires",
+      Jersey: "Trikots",
       Electronics: "Elektronik",
     },
     inspections: {
@@ -95,6 +96,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       Pants: "Spodnie",
       Headwear: "Nakrycia głowy",
       Accessories: "Akcesoria",
+      Jersey: "Koszulki sportowe",
       Electronics: "Elektronika",
     },
     inspections: {
@@ -167,6 +169,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       Pants: "Calças",
       Headwear: "Bonés",
       Accessories: "Acessórios",
+      Jersey: "Camisas esportivas",
       Electronics: "Eletrônicos",
     },
     inspections: {
@@ -231,4 +234,3 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
     },
   },
 };
-
