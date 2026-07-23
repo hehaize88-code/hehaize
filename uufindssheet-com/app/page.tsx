@@ -43,8 +43,8 @@ export default function Home() {
           <Image
             src="/hero-product-collage.png"
             alt="Unbranded shoe, charcoal hoodie and black cap presented as product finds"
-            width={1536}
-            height={1152}
+            width={1000}
+            height={747}
             priority
             unoptimized
           />
