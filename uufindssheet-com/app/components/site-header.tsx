@@ -37,12 +37,18 @@ const defaultLabels: HeaderLabels = {
 export function SiteHeader({
   locale = "EN",
   labels = defaultLabels,
+  routePath = "",
 }: {
   locale?: string;
   labels?: HeaderLabels;
+  routePath?: string;
 }) {
   const language = locale === "UK" ? "en-gb" : locale === "DE" ? "de" : locale === "PL" ? "pl" : locale === "BR" ? "pt-br" : "en";
   const current = languageOptions.find((option) => option.language === language) || languageOptions[0];
+  const prefix = language === "en" ? "" : `/${language}`;
+  const localHref = (path: string) => `${prefix}${path}`;
+  const languageHref = (option: (typeof languageOptions)[number]) =>
+    `${option.language === "en" ? "" : `/${option.language}`}${routePath || "/"}`;
   const currentLabels = language === "de"
     ? { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "CNBuy Sheet öffnen", language: "Sprache", menu: "Menü" }
     : language === "pl"
@@ -53,7 +59,7 @@ export function SiteHeader({
 
   return (
     <header className="site-header">
-      <Link className="brand" href="/" aria-label="UUFinds Sheet home">
+      <Link className="brand" href={localHref("/")} aria-label="UUFinds Sheet home">
         <Image
           className="brand-logo"
           src="/uufinds-logo.png"
@@ -65,23 +71,23 @@ export function SiteHeader({
         />
       </Link>
       <nav aria-label="Main navigation">
-        <Link href="/finds/">{currentLabels.finds}</Link>
-        <Link href="/products/">{currentLabels.products}</Link>
-        <Link href="/guides/uufinds-qc-checklist/">{currentLabels.qcGuide}</Link>
-        <Link href="/how-it-works/">{currentLabels.howItWorks}</Link>
-        <Link href="/articles/">{currentLabels.articles}</Link>
-        <Link href="/faq/">{currentLabels.faq}</Link>
+        <Link href={localHref("/finds/")}>{currentLabels.finds}</Link>
+        <Link href={localHref("/products/")}>{currentLabels.products}</Link>
+        <Link href={localHref("/guides/uufinds-qc-checklist/")}>{currentLabels.qcGuide}</Link>
+        <Link href={localHref("/how-it-works/")}>{currentLabels.howItWorks}</Link>
+        <Link href={localHref("/articles/")}>{currentLabels.articles}</Link>
+        <Link href={localHref("/faq/")}>{currentLabels.faq}</Link>
       </nav>
       <div className="header-actions">
         <details className="mobile-nav-menu">
           <summary aria-label={currentLabels.menu ?? "Menu"}>{currentLabels.menu ?? "Menu"}</summary>
           <div className="mobile-nav-panel">
-            <Link href="/finds/">{currentLabels.finds}</Link>
-            <Link href="/products/">{currentLabels.products}</Link>
-            <Link href="/guides/uufinds-qc-checklist/">{currentLabels.qcGuide}</Link>
-            <Link href="/how-it-works/">{currentLabels.howItWorks}</Link>
-            <Link href="/articles/">{currentLabels.articles}</Link>
-            <Link href="/faq/">{currentLabels.faq}</Link>
+            <Link href={localHref("/finds/")}>{currentLabels.finds}</Link>
+            <Link href={localHref("/products/")}>{currentLabels.products}</Link>
+            <Link href={localHref("/guides/uufinds-qc-checklist/")}>{currentLabels.qcGuide}</Link>
+            <Link href={localHref("/how-it-works/")}>{currentLabels.howItWorks}</Link>
+            <Link href={localHref("/articles/")}>{currentLabels.articles}</Link>
+            <Link href={localHref("/faq/")}>{currentLabels.faq}</Link>
           </div>
         </details>
         <details className="language-menu">
@@ -92,7 +98,7 @@ export function SiteHeader({
             <p>{currentLabels.language}</p>
             {languageOptions.map((option) => (
               <Link
-                href={option.href}
+                href={languageHref(option)}
                 hrefLang={option.hrefLang}
                 lang={option.hrefLang}
                 aria-current={option.language === language ? "page" : undefined}
