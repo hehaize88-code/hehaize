@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.9,
     })),
-    ...["de", "pl", "pt-br"].map((locale) => ({
+    ...["en-gb", "de", "pl", "pt-br"].map((locale) => ({
       url: `https://uufindssheet.com/${locale}/`,
       lastModified,
       changeFrequency: "weekly" as const,
