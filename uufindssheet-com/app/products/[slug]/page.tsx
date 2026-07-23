@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProduct, products } from "../product-data";
 import { SiteHeader } from "../../components/site-header";
+import { localizedAlternates } from "../../seo-alternates";
 
 export const dynamicParams = false;
 
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${product.shortName} — Product Details | UUFinds Sheet`,
     description: `Review images, listing information and QC checkpoints for ${product.shortName}, then open the matching CNBuy Sheet product page.`,
-    alternates: { canonical: `/products/${product.slug}/` },
+    alternates: localizedAlternates(`/products/${product.slug}/`),
     openGraph: {
       title: `${product.shortName} | UUFinds Sheet`,
       description: "An independent product-detail route with a direct link to the matching CNBuy Sheet listing.",
@@ -37,7 +38,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <main className="product-page">
-      <SiteHeader />
+      <SiteHeader routePath={`/products/${product.slug}/`} />
       <div className="guide-subnav"><Link className="back-link" href="/products/">← Back to product finds</Link></div>
 
       <div className="product-breadcrumb" aria-label="Breadcrumb">

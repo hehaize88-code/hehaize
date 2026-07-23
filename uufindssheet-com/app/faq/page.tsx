@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter } from "../components/site-footer";
 import { SiteHeader } from "../components/site-header";
+import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
   title: "UUFinds FAQ: QC Photos, Link Matching & Buying Checks",
   description:
     "Fact-checked answers about UUFinds QC photos, videos, image recognition, Taobao, Weidian and 1688 links, plus the checks to make before opening CNBuy Sheet.",
-  alternates: { canonical: "/faq/" },
+  alternates: localizedAlternates("/faq/"),
+  openGraph: {
+    title: "UUFinds FAQ: QC Photos, Link Matching & Buying Checks",
+    description: "Fact-checked answers about UUFinds QC photos, videos, image recognition, Taobao, Weidian and 1688 links, plus the checks to make before opening CNBuy Sheet.",
+    url: "/faq/",
+    siteName: "UUFinds Sheet",
+    type: "website",
+  },
 };
 
 const faqGroups = [
@@ -145,7 +153,7 @@ const faqEntities = faqGroups.flatMap((group) =>
 export default function FAQPage() {
   return (
     <main className="hub-page faq-page">
-      <SiteHeader />
+      <SiteHeader routePath="/faq/" />
       <section className="hub-hero faq-hero">
         <p className="eyebrow">FAQ / Official functions reviewed July 23, 2026</p>
         <h1>Useful questions.<br /><em>Evidence-based answers.</em></h1>

@@ -4,17 +4,25 @@ import Link from "next/link";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { products } from "./product-data";
+import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
   title: "Product Detail Research with UUFinds QC Checks | UUFinds Sheet",
   description: "Browse eight CNBuy Sheet product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
-  alternates: { canonical: "/products/" },
+  alternates: localizedAlternates("/products/"),
+  openGraph: {
+    title: "Product Detail Research with UUFinds QC Checks | UUFinds Sheet",
+    description: "Browse eight CNBuy Sheet product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
+    url: "/products/",
+    siteName: "UUFinds Sheet",
+    type: "website",
+  },
 };
 
 export default function ProductsPage() {
   return (
     <main className="hub-page">
-      <SiteHeader />
+      <SiteHeader routePath="/products/" />
       <section className="hub-hero">
         <p className="eyebrow">Products / 08 direct listing routes</p>
         <h1>See the listing.<br /><em>Separate it from QC evidence.</em></h1>

@@ -2,17 +2,25 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
+import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
   title: "How to Use UUFinds QC Research Before Opening CNBuy Sheet",
   description: "A fact-checked UUFinds workflow for matching a product link, reading available QC photos or video, and verifying the live CNBuy Sheet listing.",
-  alternates: { canonical: "/how-it-works/" },
+  alternates: localizedAlternates("/how-it-works/"),
+  openGraph: {
+    title: "How to Use UUFinds QC Research Before Opening CNBuy Sheet",
+    description: "A fact-checked UUFinds workflow for matching a product link, reading available QC photos or video, and verifying the live CNBuy Sheet listing.",
+    url: "/how-it-works/",
+    siteName: "UUFinds Sheet",
+    type: "website",
+  },
 };
 
 export default function HowItWorksPage() {
   return (
     <main className="hub-page">
-      <SiteHeader />
+      <SiteHeader routePath="/how-it-works/" />
       <section className="hub-hero">
         <p className="eyebrow">How it works / Fact-checked July 23, 2026</p>
         <h1>Match the link.<br />Read the evidence.<br /><em>Verify what changed.</em></h1>

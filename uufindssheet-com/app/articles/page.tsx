@@ -3,17 +3,25 @@ import Link from "next/link";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { articleCards } from "../site-data";
+import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
   title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
   description: "Independent, source-checked guides about UUFinds QC photos, videos, image recognition, link matching and exact CNBuy Sheet destinations.",
-  alternates: { canonical: "/articles/" },
+  alternates: localizedAlternates("/articles/"),
+  openGraph: {
+    title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
+    description: "Independent, source-checked guides about UUFinds QC photos, videos, image recognition, link matching and exact CNBuy Sheet destinations.",
+    url: "/articles/",
+    siteName: "UUFinds Sheet",
+    type: "website",
+  },
 };
 
 export default function ArticlesPage() {
   return (
     <main className="hub-page">
-      <SiteHeader />
+      <SiteHeader routePath="/articles/" />
       <section className="hub-hero article-hub-hero">
         <p className="eyebrow">Articles / Official functions checked July 23, 2026</p>
         <h1>Search-led guides.<br /><em>Source-led claims.</em></h1>

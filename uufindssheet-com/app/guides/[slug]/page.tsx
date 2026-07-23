@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getGuide, guides } from "../article-data";
 import { SiteHeader } from "../../components/site-header";
+import { localizedAlternates } from "../../seo-alternates";
 
 export const dynamicParams = false;
 
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${guide.title} | UUFinds Sheet`,
     description: guide.description,
-    alternates: { canonical: `/guides/${guide.slug}/` },
+    alternates: localizedAlternates(`/guides/${guide.slug}/`),
     openGraph: { title: guide.title, description: guide.description, type: "article", url: `/guides/${guide.slug}/` },
   };
 }
@@ -34,7 +35,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
   return (
     <main className="guide-page">
-      <SiteHeader />
+      <SiteHeader routePath={`/guides/${guide.slug}/`} />
       <div className="guide-subnav"><Link className="back-link" href="/articles/">← All guides</Link></div>
 
       <article>

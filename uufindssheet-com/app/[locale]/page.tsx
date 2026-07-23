@@ -25,6 +25,9 @@ const localized = {
     articleButton: "Vollständigen Ratgeber lesen →",
     nav: { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "CNBuy Sheet öffnen", language: "Sprache" },
     names: ["Schuhe", "Hoodies", "T-Shirts", "Jacken", "Hosen", "Kopfbedeckungen", "Accessoires", "Trikots", "Elektronik"],
+    notes: ["Sneaker & Schuhe", "Pullover & Sweatshirts", "Shirts & Oberteile", "Mäntel & Oberbekleidung", "Hosen & Shorts", "Caps & Hüte", "Taschen, Geldbörsen & mehr", "Teamwear-Funde", "Technik & Geräte"],
+    marketText: "Fünf wichtige UUFinds-Märkte",
+    marketNote: "Aktuelle öffentliche Traffic-Schätzung",
   },
   pl: {
     region: "PL",
@@ -44,6 +47,9 @@ const localized = {
     articleButton: "Przeczytaj pełny poradnik →",
     nav: { finds: "Znaleziska", products: "Produkty", qcGuide: "Poradnik QC", howItWorks: "Jak to działa", articles: "Artykuły", faq: "FAQ", shopMain: "Otwórz CNBuy Sheet", language: "Język" },
     names: ["Buty", "Bluzy", "T-shirty", "Kurtki", "Spodnie", "Nakrycia głowy", "Akcesoria", "Koszulki sportowe", "Elektronika"],
+    notes: ["Sneakersy i obuwie", "Swetry i bluzy", "Koszulki i topy", "Płaszcze i odzież wierzchnia", "Spodnie i szorty", "Czapki i kapelusze", "Torby, portfele i więcej", "Odzież drużynowa", "Technologia i urządzenia"],
+    marketText: "Pięć ważnych rynków UUFinds",
+    marketNote: "Aktualny publiczny szacunek ruchu",
   },
   "pt-br": {
     region: "BR",
@@ -63,6 +69,9 @@ const localized = {
     articleButton: "Ler o guia completo →",
     nav: { finds: "Achados", products: "Produtos", qcGuide: "Guia de QC", howItWorks: "Como funciona", articles: "Artigos", faq: "FAQ", shopMain: "Abrir CNBuy Sheet", language: "Idioma" },
     names: ["Tênis", "Moletons", "Camisetas", "Jaquetas", "Calças", "Bonés", "Acessórios", "Camisas esportivas", "Eletrônicos"],
+    notes: ["Tênis e calçados", "Suéteres e moletons", "Camisetas e blusas", "Casacos e agasalhos", "Calças e shorts", "Bonés e chapéus", "Bolsas, carteiras e mais", "Roupas esportivas", "Tecnologia e dispositivos"],
+    marketText: "Cinco mercados importantes do UUFinds",
+    marketNote: "Estimativa pública recente de tráfego",
   },
   "en-gb": {
     region: "UK",
@@ -82,6 +91,9 @@ const localized = {
     articleButton: "Read the complete guide →",
     nav: { finds: "Finds", products: "Products", qcGuide: "QC Guide", howItWorks: "How It Works", articles: "Articles", faq: "FAQ", shopMain: "Enter CNBuy Sheet", language: "Language" },
     names: ["Trainers", "Hoodies", "T-Shirts", "Jackets", "Trousers", "Headwear", "Accessories", "Football Shirts", "Electronics"],
+    notes: ["Trainers & footwear", "Jumpers & sweatshirts", "Tees & tops", "Coats & outerwear", "Trousers & shorts", "Caps & hats", "Bags, wallets & more", "Teamwear finds", "Tech & devices"],
+    marketText: "Five important UUFinds markets",
+    marketNote: "Recent public traffic estimate",
   },
 } as const;
 
@@ -99,8 +111,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: content.description,
     alternates: {
       canonical: `/${locale}/`,
-      languages: { "en-US": "/", "en-GB": "/en-gb/", de: "/de/", pl: "/pl/", "pt-BR": "/pt-br/" },
+      languages: { "x-default": "/", "en-US": "/", "en-GB": "/en-gb/", de: "/de/", pl: "/pl/", "pt-BR": "/pt-br/" },
     },
+    openGraph: {
+      title: content.htmlTitle,
+      description: content.description,
+      url: `/${locale}/`,
+      siteName: "UUFinds Sheet",
+      type: "website",
+      locale: locale === "pt-br" ? "pt-BR" : locale === "en-gb" ? "en-GB" : locale,
+    },
+    twitter: { card: "summary", title: content.htmlTitle, description: content.description },
   };
 }
 
@@ -127,7 +148,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
         </div>
         <aside>
           <span>DE</span><span>PL</span><span>BR</span><span>US</span><span>UK</span>
-          <strong>Top five UUFinds markets<br />Recent public traffic estimate</strong>
+          <strong>{content.marketText}<br />{content.marketNote}</strong>
         </aside>
       </section>
       <section className="localized-categories">
@@ -137,7 +158,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
             <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
               <div className={`category-code ${category.color}`}>{category.code}</div>
               <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
-              <h2>{content.names[index]}</h2><p>{category.note}</p><span className="card-arrow" aria-hidden="true">↗</span>
+              <h2>{content.names[index]}</h2><p>{content.notes[index]}</p><span className="card-arrow" aria-hidden="true">↗</span>
             </a>
           ))}
         </div>
@@ -145,9 +166,9 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
       <section className="localized-article-card">
         <p className="eyebrow inverse">{content.articleLabel}</p>
         <h2>{content.articleTitle}</h2><p>{content.articleText}</p>
-        <Link href="/guides/uufinds-spreadsheet-shopping-guide-2026/">{content.articleButton}</Link>
+        <Link href={`/${locale}/guides/uufinds-spreadsheet-shopping-guide-2026/`}>{content.articleButton}</Link>
       </section>
-      <SiteFooter />
+      <SiteFooter locale={locale as Locale} />
     </main>
   );
 }

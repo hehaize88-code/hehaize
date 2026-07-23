@@ -7,6 +7,7 @@ import { SiteFooter } from "../../components/site-footer";
 import { DocumentLanguage } from "../../components/document-language";
 import { guides } from "../../guides/article-data";
 import { products } from "../../products/product-data";
+import { localizedRouteCopy } from "../localized-route-content";
 
 const locales = ["en-gb", "de", "pl", "pt-br"] as const;
 type Locale = (typeof locales)[number];
@@ -83,9 +84,25 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const route = segments.join("/");
   const product = segments[0] === "products" ? products.find((item) => item.slug === segments[1]) : undefined;
   const guide = segments[0] === "guides" ? guides.find((item) => item.slug === segments[1]) : undefined;
-  const title = product ? `${product.shortName} – ${t.guide} QC` : guide ? `${guide.title} – ${t.guide}` : `${route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how} | UUFinds Sheet`;
+  const routeCopy = locale === "en-gb" ? undefined : localizedRouteCopy[locale as Exclude<Locale, "en-gb">];
+  const guideCopy = guide ? routeCopy?.guides[guide.slug] : undefined;
+  const title = product ? `${product.shortName} – ${t.guide} QC` : guide ? `${guideCopy?.title ?? guide.title} – ${t.guide}` : `${route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how} | UUFinds Sheet`;
   const path = `/${locale}/${route}/`;
-  return { title, description: `${t.intro} ${t.check}`, alternates: alternates(path) };
+  const description = guideCopy?.description ?? `${t.intro} ${t.check}`;
+  return {
+    title,
+    description,
+    alternates: alternates(path),
+    openGraph: {
+      title,
+      description,
+      url: path,
+      siteName: "UUFinds Sheet",
+      type: guide ? "article" : "website",
+      locale: t.lang,
+    },
+    twitter: { card: "summary", title, description },
+  };
 }
 
 export default async function LocalizedRoute({ params }: { params: Promise<{ locale: string; segments: string[] }> }) {
@@ -96,10 +113,12 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
   const routePath = `/${route}/`;
   const product = segments[0] === "products" && segments.length === 2 ? products.find((item) => item.slug === segments[1]) : undefined;
   const guide = segments[0] === "guides" ? guides.find((item) => item.slug === segments[1]) : undefined;
+  const routeCopy = locale === "en-gb" ? undefined : localizedRouteCopy[locale as Exclude<Locale, "en-gb">];
+  const guideCopy = guide ? routeCopy?.guides[guide.slug] : undefined;
   const validCore = corePaths.includes(route);
   if (!validCore && !product && !guide) notFound();
 
-  const title = product ? product.shortName : guide ? guide.title : route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how;
+  const title = product ? product.shortName : guide ? guideCopy?.title ?? guide.title : route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how;
 
   return (
     <main className="inner-page">
@@ -117,7 +136,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
             {products.map((item) => (
               <Link className="product-card" href={`/${locale}/products/${item.slug}/`} key={item.slug}>
                 <div className="product-card-image"><Image src={item.images[0]} alt={item.name} width={800} height={800} unoptimized /></div>
-                <div className="product-card-copy"><p>{item.category}</p><h2>{item.shortName}</h2><div><span>¥{item.price}</span><b>{t.view} ↗</b></div></div>
+                <div className="product-card-copy"><p>{routeCopy?.categories[item.category] ?? item.category}</p><h2>{item.shortName}</h2><div><span>¥{item.price}</span><b>{t.view} ↗</b></div></div>
               </Link>
             ))}
           </div>
@@ -126,7 +145,10 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
 
       {route === "articles" ? (
         <section className="articles-section"><div className="article-grid">
-          {guides.map((item) => <Link className="article-card" href={`/${locale}/guides/${item.slug}/`} key={item.slug}><h2>{item.title}</h2><p>{item.description}</p><b>{t.read} →</b></Link>)}
+          {guides.map((item) => {
+            const copy = routeCopy?.guides[item.slug];
+            return <Link className="article-card" href={`/${locale}/guides/${item.slug}/`} key={item.slug}><h2>{copy?.title ?? item.title}</h2><p>{copy?.description ?? item.description}</p><b>{t.read} →</b></Link>;
+          })}
         </div></section>
       ) : null}
 
@@ -145,14 +167,14 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
       {product ? (
         <section className="product-detail-layout">
           <div className="product-detail-gallery"><Image src={product.images[0]} alt={product.name} width={900} height={900} unoptimized /></div>
-          <article className="product-detail-copy"><p>{product.category}</p><h2>{product.name}</h2><p>{product.inspectionFocus}</p><p><strong>{t.price}:</strong> ¥{product.price}</p><p>{t.check}</p><a className="product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">{t.open}</a></article>
+          <article className="product-detail-copy"><p>{routeCopy?.categories[product.category] ?? product.category}</p><h2>{product.name}</h2><p>{routeCopy?.inspections[product.slug] ?? product.inspectionFocus}</p><p><strong>{t.price}:</strong> ¥{product.price}</p><p>{t.check}</p><a className="product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">{t.open}</a></article>
         </section>
       ) : null}
 
       {guide ? (
-        <article className="guide-article"><p className="article-lead">{guide.description}</p><p>{t.intro}</p><h2>QC</h2><p>{t.check}</p><p>{guide.sections[0]?.paragraphs?.[0]}</p><p>{guide.sections[1]?.paragraphs?.[0]}</p><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></article>
+        <article className="guide-article"><p className="article-lead">{guideCopy?.description ?? guide.description}</p><p>{t.intro}</p><h2>{guideCopy?.sectionTitle ?? "QC"}</h2><p>{t.check}</p>{(guideCopy?.paragraphs ?? [guide.sections[0]?.paragraphs?.[0] ?? "", guide.sections[1]?.paragraphs?.[0] ?? ""]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></article>
       ) : null}
-      <SiteFooter />
+      <SiteFooter locale={locale as Locale} />
     </main>
   );
 }

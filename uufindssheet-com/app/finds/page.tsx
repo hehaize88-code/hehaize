@@ -2,17 +2,25 @@ import type { Metadata } from "next";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { categories } from "../site-data";
+import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
   title: "UUFinds Product Discovery Method & CNBuy Sheet Categories",
   description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled CNBuy Sheet categories for shoes, clothing, accessories and electronics.",
-  alternates: { canonical: "/finds/" },
+  alternates: localizedAlternates("/finds/"),
+  openGraph: {
+    title: "UUFinds Product Discovery Method & CNBuy Sheet Categories",
+    description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled CNBuy Sheet categories for shoes, clothing, accessories and electronics.",
+    url: "/finds/",
+    siteName: "UUFinds Sheet",
+    type: "website",
+  },
 };
 
 export default function FindsPage() {
   return (
     <main className="hub-page">
-      <SiteHeader />
+      <SiteHeader routePath="/finds/" />
       <section className="hub-hero">
         <p className="eyebrow">Finds / UUFinds research + 09 direct routes</p>
         <h1>Discover broadly.<br /><em>Match precisely.</em></h1>
