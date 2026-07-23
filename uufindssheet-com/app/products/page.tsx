@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import { SiteImage } from "../components/site-image";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { products } from "./product-data";
@@ -33,7 +33,7 @@ export default function ProductsPage() {
           {products.map((product, index) => (
             <Link className="product-card" href={`/products/${product.slug}/`} key={product.slug}>
               <div className="product-card-image">
-                <Image src={product.images[0]} alt={product.name} width={800} height={800} unoptimized />
+                <SiteImage src={product.images[0]} alt={product.name} width={800} height={800} />
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>
               </div>
               <div className="product-card-copy">

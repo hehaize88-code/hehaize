@@ -1,7 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { products } from "./products/product-data";
 import { articleCards, categories } from "./site-data";
+import { ResponsiveHeroImage, SiteImage } from "./components/site-image";
+import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
 
 export default function Home() {
@@ -40,14 +41,7 @@ export default function Home() {
         <div className="hero-visual" aria-label="Editorial collage of a shoe, hoodie, and cap">
           <div className="index-mark" aria-hidden="true">01</div>
           <div className="grid-lines" aria-hidden="true" />
-          <Image
-            src="/hero-product-collage.png"
-            alt="Unbranded shoe, charcoal hoodie and black cap presented as product finds"
-            width={1000}
-            height={747}
-            priority
-            unoptimized
-          />
+          <ResponsiveHeroImage />
           <div className="route-tag" aria-hidden="true">
             <span>CNBUY SHEET LINK</span>
             <strong>READY TO OPEN</strong>
@@ -89,7 +83,7 @@ export default function Home() {
           {products.map((product, index) => (
             <Link className="product-card" href={`/products/${product.slug}/`} key={product.slug}>
               <div className="product-card-image">
-                <Image src={product.images[0]} alt={product.name} width={800} height={800} loading="lazy" unoptimized />
+                <SiteImage src={product.images[0]} alt={product.name} width={800} height={800} />
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>
               </div>
               <div className="product-card-copy">
@@ -210,11 +204,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
-        <div className="footer-brand"><Image className="footer-logo" src="/uufinds-logo.png" alt="UUFinds" width={1144} height={284} unoptimized /></div>
-        <p>Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. All outbound shopping links lead only to CNBuy Sheet.</p>
-        <a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse all CNBuy finds ↗</a>
-      </footer>
+      <SiteFooter />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

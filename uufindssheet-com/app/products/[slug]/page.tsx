@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProduct, products } from "../product-data";
+import { SiteFooter } from "../../components/site-footer";
 import { SiteHeader } from "../../components/site-header";
+import { SiteImage } from "../../components/site-image";
 import { localizedAlternates } from "../../seo-alternates";
 
 export const dynamicParams = false;
@@ -48,13 +49,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <article className="product-detail">
         <div className="product-gallery">
           <div className="product-main-image">
-            <Image src={product.images[0]} alt={product.name} width={1200} height={1200} priority unoptimized />
+            <SiteImage src={product.images[0]} alt={product.name} width={1200} height={1200} priority />
             <span>01 / {String(product.images.length).padStart(2, "0")}</span>
           </div>
           <div className="product-thumbnails" aria-label="Additional product images">
             {product.images.slice(1).map((image, index) => (
               <div key={image}>
-                <Image src={image} alt={`${product.name} — view ${index + 2}`} width={700} height={700} loading="lazy" unoptimized />
+                <SiteImage src={image} alt={`${product.name} — view ${index + 2}`} width={700} height={700} />
                 <span>{String(index + 2).padStart(2, "0")}</span>
               </div>
             ))}
@@ -102,13 +103,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      <footer>
-        <div className="footer-brand">
-          <Image className="footer-logo" src="/uufinds-logo.png" alt="UUFinds" width={1144} height={284} unoptimized />
-        </div>
-        <p>Independent educational guide. All outbound product and category links lead only to CNBuy Sheet.</p>
-        <Link href="/#featured-products">Browse all product finds →</Link>
-      </footer>
+      <SiteFooter />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",

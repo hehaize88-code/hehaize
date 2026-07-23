@@ -5,6 +5,7 @@ import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { DocumentLanguage } from "../components/document-language";
 import { categories } from "../site-data";
+import { socialImage } from "../seo-image";
 
 const localized = {
   de: {
@@ -120,8 +121,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "UUFinds Sheet",
       type: "website",
       locale: locale === "pt-br" ? "pt-BR" : locale === "en-gb" ? "en-GB" : locale,
+      images: [socialImage],
     },
-    twitter: { card: "summary", title: content.htmlTitle, description: content.description },
+    twitter: { card: "summary_large_image", title: content.htmlTitle, description: content.description, images: [socialImage.url] },
   };
 }
 

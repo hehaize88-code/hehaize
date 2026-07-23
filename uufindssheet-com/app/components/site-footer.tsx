@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { SiteImage } from "./site-image";
 
 const footerCopy = {
   en: {
@@ -33,10 +33,17 @@ export function SiteFooter({ locale = "en" }: { locale?: FooterLocale }) {
   return (
     <footer>
       <div className="footer-brand">
-        <Image className="footer-logo" src="/uufinds-logo.png" alt="UUFinds" width={1144} height={284} unoptimized />
+        <SiteImage className="footer-logo" src="/optimized/uufinds-logo.webp" alt="UUFinds" width={1144} height={284} />
       </div>
       <p>{copy.text}</p>
-      <Link href={`${prefix}/products/`}>{copy.link}</Link>
+      <nav className="footer-links" aria-label="Trust and policy links">
+        <Link href="/about/">About</Link>
+        <Link href="/contact/">Contact</Link>
+        <Link href="/editorial-policy/">Editorial Policy</Link>
+        <Link href="/privacy/">Privacy</Link>
+        <Link href="/terms/">Terms</Link>
+      </nav>
+      <Link className="footer-shop-link" href={`${prefix}/products/`}>{copy.link}</Link>
     </footer>
   );
 }

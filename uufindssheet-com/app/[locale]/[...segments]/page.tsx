@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "../../components/site-header";
 import { SiteFooter } from "../../components/site-footer";
 import { DocumentLanguage } from "../../components/document-language";
+import { SiteImage } from "../../components/site-image";
 import { guides } from "../../guides/article-data";
 import { products } from "../../products/product-data";
 import { localizedRouteCopy } from "../localized-route-content";
+import { socialImage } from "../../seo-image";
 
 const locales = ["en-gb", "de", "pl", "pt-br"] as const;
 type Locale = (typeof locales)[number];
@@ -100,8 +101,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "UUFinds Sheet",
       type: guide ? "article" : "website",
       locale: t.lang,
+      images: [socialImage],
     },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description, images: [socialImage.url] },
   };
 }
 
@@ -135,7 +137,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
           <div className="product-showcase-grid">
             {products.map((item) => (
               <Link className="product-card" href={`/${locale}/products/${item.slug}/`} key={item.slug}>
-                <div className="product-card-image"><Image src={item.images[0]} alt={item.name} width={800} height={800} unoptimized /></div>
+                <div className="product-card-image"><SiteImage src={item.images[0]} alt={item.name} width={800} height={800} /></div>
                 <div className="product-card-copy"><p>{routeCopy?.categories[item.category] ?? item.category}</p><h2>{item.shortName}</h2><div><span>¥{item.price}</span><b>{t.view} ↗</b></div></div>
               </Link>
             ))}
@@ -166,7 +168,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
 
       {product ? (
         <section className="product-detail-layout">
-          <div className="product-detail-gallery"><Image src={product.images[0]} alt={product.name} width={900} height={900} unoptimized /></div>
+          <div className="product-detail-gallery"><SiteImage src={product.images[0]} alt={product.name} width={900} height={900} /></div>
           <article className="product-detail-copy"><p>{routeCopy?.categories[product.category] ?? product.category}</p><h2>{product.name}</h2><p>{routeCopy?.inspections[product.slug] ?? product.inspectionFocus}</p><p><strong>{t.price}:</strong> ¥{product.price}</p><p>{t.check}</p><a className="product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">{t.open}</a></article>
         </section>
       ) : null}
@@ -175,6 +177,31 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
         <article className="guide-article"><p className="article-lead">{guideCopy?.description ?? guide.description}</p><p>{t.intro}</p><h2>{guideCopy?.sectionTitle ?? "QC"}</h2><p>{t.check}</p>{(guideCopy?.paragraphs ?? [guide.sections[0]?.paragraphs?.[0] ?? "", guide.sections[1]?.paragraphs?.[0] ?? ""]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></article>
       ) : null}
       <SiteFooter locale={locale as Locale} />
+      {guide ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            headline: guideCopy?.title ?? guide.title,
+            description: guideCopy?.description ?? guide.description,
+            image: `https://uufindssheet.com${socialImage.url}`,
+            dateModified: guide.modifiedISO ?? "2026-07-22",
+            datePublished: "2026-07-22",
+            inLanguage: t.lang,
+            author: { "@type": "Organization", name: "UUFinds Sheet Editorial" },
+            publisher: { "@type": "Organization", name: "UUFinds Sheet" },
+            mainEntityOfPage: `https://uufindssheet.com/${locale}/guides/${guide.slug}/`,
+          },
+          {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `https://uufindssheet.com/${locale}/` },
+              { "@type": "ListItem", position: 2, name: t.articles, item: `https://uufindssheet.com/${locale}/articles/` },
+              { "@type": "ListItem", position: 3, name: guideCopy?.title ?? guide.title, item: `https://uufindssheet.com/${locale}/guides/${guide.slug}/` },
+            ],
+          },
+        ],
+      }) }} /> : null}
     </main>
   );
 }

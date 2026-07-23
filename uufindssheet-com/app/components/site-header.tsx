@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { SiteImage } from "./site-image";
 const languageOptions = [
   { code: "US", label: "English (US)", language: "en", href: "/", hrefLang: "en-US" },
   { code: "UK", label: "English (UK)", language: "en-gb", href: "/en-gb/", hrefLang: "en-GB" },
@@ -60,14 +60,13 @@ export function SiteHeader({
   return (
     <header className="site-header">
       <Link className="brand" href={localHref("/")} aria-label="UUFinds Sheet home">
-        <Image
+        <SiteImage
           className="brand-logo"
-          src="/uufinds-logo.png"
+          src="/optimized/uufinds-logo.webp"
           alt="UUFinds"
           width={1144}
           height={284}
           priority
-          unoptimized
         />
       </Link>
       <nav aria-label="Main navigation">

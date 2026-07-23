@@ -6,6 +6,7 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-23");
+  const trustPaths = ["about", "contact", "editorial-policy", "privacy", "terms"];
   const localizedPaths = [
     "finds", "products", "how-it-works", "articles", "faq",
     ...products.map((product) => `products/${product.slug}`),
@@ -18,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly" as const,
       priority: 0.9,
+    })),
+    ...trustPaths.map((path) => ({
+      url: `https://uufindssheet.com/${path}/`,
+      lastModified,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
     })),
     ...["en-gb", "de", "pl", "pt-br"].map((locale) => ({
       url: `https://uufindssheet.com/${locale}/`,

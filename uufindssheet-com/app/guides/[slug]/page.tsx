@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { getGuide, guides } from "../article-data";
+import { SiteFooter } from "../../components/site-footer";
 import { SiteHeader } from "../../components/site-header";
 import { localizedAlternates } from "../../seo-alternates";
+import { socialImage } from "../../seo-image";
 
 export const dynamicParams = false;
 
@@ -20,7 +21,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${guide.title} | UUFinds Sheet`,
     description: guide.description,
     alternates: localizedAlternates(`/guides/${guide.slug}/`),
-    openGraph: { title: guide.title, description: guide.description, type: "article", url: `/guides/${guide.slug}/` },
+    openGraph: {
+      title: guide.title,
+      description: guide.description,
+      type: "article",
+      url: `/guides/${guide.slug}/`,
+      images: [socialImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: guide.title,
+      description: guide.description,
+      images: [socialImage.url],
+    },
   };
 }
 
@@ -70,33 +83,33 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         </div>
       </article>
 
-      <footer>
-        <div className="footer-brand">
-          <Image
-            className="footer-logo"
-            src="/uufinds-logo.png"
-            alt="UUFinds"
-            width={1144}
-            height={284}
-            unoptimized
-          />
-        </div>
-        <p>Independent educational guide. All outbound shopping links lead only to CNBuy Sheet.</p>
-        <Link href="/#finds">Browse category routes →</Link>
-      </footer>
+      <SiteFooter />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Article",
-        headline: guide.title,
-        description: guide.description,
-        dateModified: guide.modifiedISO ?? "2026-07-22",
-        datePublished: "2026-07-22",
-        author: { "@type": "Organization", name: "UUFinds Sheet Editorial" },
-        publisher: { "@type": "Organization", name: "UUFinds Sheet" },
-        wordCount,
-        inLanguage: "en",
-        mainEntityOfPage: `https://uufindssheet.com/guides/${guide.slug}/`,
+        "@graph": [
+          {
+            "@type": "Article",
+            headline: guide.title,
+            description: guide.description,
+            image: `https://uufindssheet.com${socialImage.url}`,
+            dateModified: guide.modifiedISO ?? "2026-07-22",
+            datePublished: "2026-07-22",
+            author: { "@type": "Organization", name: "UUFinds Sheet Editorial" },
+            publisher: { "@type": "Organization", name: "UUFinds Sheet" },
+            wordCount,
+            inLanguage: "en",
+            mainEntityOfPage: `https://uufindssheet.com/guides/${guide.slug}/`,
+          },
+          {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://uufindssheet.com/" },
+              { "@type": "ListItem", position: 2, name: "Articles", item: "https://uufindssheet.com/articles/" },
+              { "@type": "ListItem", position: 3, name: guide.title, item: `https://uufindssheet.com/guides/${guide.slug}/` },
+            ],
+          },
+        ],
       }) }} />
     </main>
   );

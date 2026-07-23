@@ -4,6 +4,7 @@ import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { articleCards } from "../site-data";
 import { localizedAlternates } from "../seo-alternates";
+import { socialImage } from "../seo-image";
 
 export const metadata: Metadata = {
   title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
@@ -15,6 +16,13 @@ export const metadata: Metadata = {
     url: "/articles/",
     siteName: "UUFinds Sheet",
     type: "website",
+    images: [socialImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
+    description: "Independent, source-checked guides about UUFinds QC photos, videos, image recognition, link matching and exact CNBuy Sheet destinations.",
+    images: [socialImage.url],
   },
 };
 
@@ -48,6 +56,14 @@ export default function ArticlesPage() {
         </div>
       </section>
       <SiteFooter />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://uufindssheet.com/" },
+          { "@type": "ListItem", position: 2, name: "Articles", item: "https://uufindssheet.com/articles/" },
+        ],
+      }) }} />
     </main>
   );
 }

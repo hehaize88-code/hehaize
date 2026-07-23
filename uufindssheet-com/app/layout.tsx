@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ClickTracker } from "./components/click-tracker";
+import { socialImage } from "./seo-image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,6 +28,13 @@ export const metadata: Metadata = {
     url: "https://uufindssheet.com/",
     siteName: "UUFinds Sheet",
     type: "website",
+    images: [socialImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UUFinds Sheet — Research First, Browse Smarter",
+    description: "Independent UUFinds spreadsheet and QC research guide with direct CNBuy Sheet category routes.",
+    images: [socialImage.url],
   },
   robots: { index: true, follow: true },
   ...(process.env.CF_PAGES_STATIC_EXPORT === "1"
@@ -48,6 +57,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <ClickTracker />
       </body>
     </html>
   );
