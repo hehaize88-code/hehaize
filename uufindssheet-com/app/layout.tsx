@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   robots: { index: true, follow: true },
-  other: {
-    "codex-preview": "development",
-  },
+  ...(process.env.CF_PAGES_STATIC_EXPORT === "1"
+    ? {}
+    : { other: { "codex-preview": "development" } }),
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
