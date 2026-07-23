@@ -2,14 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import type { SiteLanguage } from "./language-translator";
-
 const languageOptions = [
-  { code: "EN", label: "English", language: "en" },
-  { code: "DE", label: "Deutsch", language: "de" },
-  { code: "PL", label: "Polski", language: "pl" },
-  { code: "BR", label: "Português", language: "pt-br" },
+  { code: "US", label: "English (US)", language: "en", href: "/", hrefLang: "en-US" },
+  { code: "UK", label: "English (UK)", language: "en-gb", href: "/en-gb/", hrefLang: "en-GB" },
+  { code: "DE", label: "Deutsch", language: "de", href: "/de/", hrefLang: "de" },
+  { code: "PL", label: "Polski", language: "pl", href: "/pl/", hrefLang: "pl" },
+  { code: "BR", label: "Português", language: "pt-br", href: "/pt-br/", hrefLang: "pt-BR" },
 ];
 
 type HeaderLabels = {
@@ -43,17 +41,7 @@ export function SiteHeader({
   locale?: string;
   labels?: HeaderLabels;
 }) {
-  const initialLanguage = (locale === "DE" ? "de" : locale === "PL" ? "pl" : locale === "BR" ? "pt-br" : "en") as SiteLanguage;
-  const [language, setLanguage] = useState<SiteLanguage>(initialLanguage);
-
-  useEffect(() => {
-    const stored = window.localStorage.getItem("uufinds-language") as SiteLanguage | null;
-    if (stored && languageOptions.some((option) => option.language === stored)) {
-      const frame = window.requestAnimationFrame(() => setLanguage(stored));
-      return () => window.cancelAnimationFrame(frame);
-    }
-  }, []);
-
+  const language = locale === "UK" ? "en-gb" : locale === "DE" ? "de" : locale === "PL" ? "pl" : locale === "BR" ? "pt-br" : "en";
   const current = languageOptions.find((option) => option.language === language) || languageOptions[0];
   const currentLabels = language === "de"
     ? { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "CNBuy Sheet öffnen", language: "Sprache", menu: "Menü" }
@@ -62,13 +50,6 @@ export function SiteHeader({
       : language === "pt-br"
         ? { finds: "Achados", products: "Produtos", qcGuide: "Guia de QC", howItWorks: "Como funciona", articles: "Artigos", faq: "FAQ", shopMain: "Abrir CNBuy Sheet", language: "Idioma", menu: "Menu" }
         : labels;
-
-  function selectLanguage(nextLanguage: SiteLanguage, button: HTMLButtonElement) {
-    setLanguage(nextLanguage);
-    window.localStorage.setItem("uufinds-language", nextLanguage);
-    window.dispatchEvent(new CustomEvent("uufinds-language-change", { detail: nextLanguage }));
-    button.closest("details")?.removeAttribute("open");
-  }
 
   return (
     <header className="site-header">
@@ -110,15 +91,16 @@ export function SiteHeader({
           <div className="language-panel">
             <p>{currentLabels.language}</p>
             {languageOptions.map((option) => (
-              <button
-                type="button"
-                aria-pressed={option.language === language}
-                onClick={(event) => selectLanguage(option.language as SiteLanguage, event.currentTarget)}
+              <Link
+                href={option.href}
+                hrefLang={option.hrefLang}
+                lang={option.hrefLang}
+                aria-current={option.language === language ? "page" : undefined}
                 key={option.code}
               >
                 <b>{option.code}</b>
                 <span>{option.label}</span>
-              </button>
+              </Link>
             ))}
           </div>
         </details>
