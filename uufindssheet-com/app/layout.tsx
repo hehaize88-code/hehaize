@@ -19,12 +19,12 @@ export const metadata: Metadata = {
   description: "An independent guide to researching products with UUFinds QC tools and exploring matching Shoes, Hoodies, T-Shirts and more on CNBuy Sheet.",
   alternates: {
     canonical: "/",
-    languages: { en: "/", de: "/de", pl: "/pl", "pt-BR": "/pt-br" },
+    languages: { en: "/", de: "/de/", pl: "/pl/", "pt-BR": "/pt-br/" },
   },
   openGraph: {
     title: "UUFinds Sheet — Research First, Browse Smarter",
     description: "Independent UUFinds spreadsheet and QC research guide with direct CNBuy Sheet category routes.",
-    url: "https://uufindssheet.com",
+    url: "https://uufindssheet.com/",
     siteName: "UUFinds Sheet",
     type: "website",
   },

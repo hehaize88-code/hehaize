@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "UUFinds FAQ: QC Photos, Link Matching & Buying Checks",
   description:
     "Fact-checked answers about UUFinds QC photos, videos, image recognition, Taobao, Weidian and 1688 links, plus the checks to make before opening CNBuy Sheet.",
-  alternates: { canonical: "/faq" },
+  alternates: { canonical: "/faq/" },
 };
 
 const faqGroups = [
@@ -207,8 +207,8 @@ export default function FAQPage() {
             <h2>Match first. Inspect second. Confirm the live listing last.</h2>
           </div>
           <div>
-            <Link href="/guides/uufinds-qc-checklist">Open the full QC checklist →</Link>
-            <Link href="/products">Browse product details →</Link>
+            <Link href="/guides/uufinds-qc-checklist/">Open the full QC checklist →</Link>
+            <Link href="/products/">Browse product details →</Link>
           </div>
         </section>
       </section>

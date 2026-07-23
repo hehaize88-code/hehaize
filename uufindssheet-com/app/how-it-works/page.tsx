@@ -6,7 +6,7 @@ import { SiteFooter } from "../components/site-footer";
 export const metadata: Metadata = {
   title: "How to Use UUFinds QC Research Before Opening CNBuy Sheet",
   description: "A fact-checked UUFinds workflow for matching a product link, reading available QC photos or video, and verifying the live CNBuy Sheet listing.",
-  alternates: { canonical: "/how-it-works" },
+  alternates: { canonical: "/how-it-works/" },
 };
 
 export default function HowItWorksPage() {
@@ -31,21 +31,21 @@ export default function HowItWorksPage() {
             <p className="step-label">MATCH</p>
             <h2>Preserve the exact source</h2>
             <p>Keep the full marketplace or agent link. Compare the item ID, seller and visible variant before treating an album as a match. Image recognition may find a visually similar item, but similarity alone does not prove it is the same listing or batch.</p>
-            <Link href="/finds">Build a category shortlist →</Link>
+            <Link href="/finds/">Build a category shortlist →</Link>
           </article>
           <article>
             <span>02</span>
             <p className="step-label">INSPECT</p>
             <h2>Read every available angle</h2>
             <p>Start with silhouette and proportion, then inspect construction, finish and measurements. Note the QC date and whether more than one example exists. Record missing angles as unknowns instead of turning them into assumptions.</p>
-            <Link href="/guides/uufinds-qc-checklist">Use the full QC checklist →</Link>
+            <Link href="/guides/uufinds-qc-checklist/">Use the full QC checklist →</Link>
           </article>
           <article>
             <span>03</span>
             <p className="step-label">CONFIRM</p>
             <h2>Check today’s listing facts</h2>
             <p>Open the exact CNBuy Sheet product page and re-check the identifier, current price, variants, size information and availability. An older QC set can inform the decision, but it cannot confirm what the seller offers today.</p>
-            <Link href="/products">Open product details →</Link>
+            <Link href="/products/">Open product details →</Link>
           </article>
         </div>
 
@@ -83,7 +83,7 @@ export default function HowItWorksPage() {
           <p className="eyebrow inverse">Research boundary</p>
           <h2>Discovery expands options. QC reduces uncertainty. The live listing confirms current facts.</h2>
           <p>Official claims reviewed: UUFinds QC finder, QC browsing copy, product-detail disclaimer, account pages and public app information. No UUFinds outbound link is included on this site.</p>
-          <Link href="/guides/uufinds-spreadsheet-shopping-guide-2026">Read the complete buying guide →</Link>
+          <Link href="/guides/uufinds-spreadsheet-shopping-guide-2026/">Read the complete buying guide →</Link>
         </div>
       </section>
       <SiteFooter />

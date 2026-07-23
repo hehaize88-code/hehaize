@@ -87,7 +87,7 @@ export default function Home() {
         </div>
         <div className="product-showcase-grid">
           {products.map((product, index) => (
-            <Link className="product-card" href={`/products/${product.slug}`} key={product.slug}>
+            <Link className="product-card" href={`/products/${product.slug}/`} key={product.slug}>
               <div className="product-card-image">
                 <Image src={product.images[0]} alt={product.name} width={800} height={800} loading="lazy" unoptimized />
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>
@@ -127,14 +127,14 @@ export default function Home() {
             <p className="step-label">RESEARCH</p>
             <h3>Start with UUFinds</h3>
             <p>Paste a supported product or agent link into UUFinds and look for available QC photos or video. Match the listing—not just a similar-looking product.</p>
-            <Link href="/guides/how-to-use-uufinds">Read the on-site research guide →</Link>
+            <Link href="/guides/how-to-use-uufinds/">Read the on-site research guide →</Link>
           </article>
           <article>
             <span>02</span>
             <p className="step-label">COMPARE</p>
             <h3>Read the evidence</h3>
             <p>Compare shape, material, stitching, print placement, hardware, labels and measured dimensions. Check more than one angle when it is available.</p>
-            <Link href="/guides/uufinds-qc-checklist">Use the full QC checklist →</Link>
+            <Link href="/guides/uufinds-qc-checklist/">Use the full QC checklist →</Link>
           </article>
           <article>
             <span>03</span>
@@ -184,7 +184,7 @@ export default function Home() {
         <div>
           <p className="eyebrow">FAQ / Straight answers</p>
           <h2>Before you open another tab.</h2>
-          <Link className="full-faq-link" href="/faq">Open the complete fact-checked FAQ →</Link>
+          <Link className="full-faq-link" href="/faq/">Open the complete fact-checked FAQ →</Link>
         </div>
         <div className="faq-list">
           <details open>

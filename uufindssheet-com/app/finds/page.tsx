@@ -6,7 +6,7 @@ import { categories } from "../site-data";
 export const metadata: Metadata = {
   title: "UUFinds Product Discovery Method & CNBuy Sheet Categories",
   description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled CNBuy Sheet categories for shoes, clothing, accessories and electronics.",
-  alternates: { canonical: "/finds" },
+  alternates: { canonical: "/finds/" },
 };
 
 export default function FindsPage() {

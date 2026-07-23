@@ -98,8 +98,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: content.htmlTitle,
     description: content.description,
     alternates: {
-      canonical: `/${locale}`,
-      languages: { "en-US": "/", "en-GB": "/en-gb", de: "/de", pl: "/pl", "pt-BR": "/pt-br" },
+      canonical: `/${locale}/`,
+      languages: { "en-US": "/", "en-GB": "/en-gb/", de: "/de/", pl: "/pl/", "pt-BR": "/pt-br/" },
     },
   };
 }
@@ -145,7 +145,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
       <section className="localized-article-card">
         <p className="eyebrow inverse">{content.articleLabel}</p>
         <h2>{content.articleTitle}</h2><p>{content.articleText}</p>
-        <Link href="/guides/uufinds-spreadsheet-shopping-guide-2026">{content.articleButton}</Link>
+        <Link href="/guides/uufinds-spreadsheet-shopping-guide-2026/">{content.articleButton}</Link>
       </section>
       <SiteFooter />
     </main>

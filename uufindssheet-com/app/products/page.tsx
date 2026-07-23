@@ -8,7 +8,7 @@ import { products } from "./product-data";
 export const metadata: Metadata = {
   title: "Product Detail Research with UUFinds QC Checks | UUFinds Sheet",
   description: "Browse eight CNBuy Sheet product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
-  alternates: { canonical: "/products" },
+  alternates: { canonical: "/products/" },
 };
 
 export default function ProductsPage() {
@@ -23,7 +23,7 @@ export default function ProductsPage() {
       <section className="hub-content">
         <div className="product-showcase-grid">
           {products.map((product, index) => (
-            <Link className="product-card" href={`/products/${product.slug}`} key={product.slug}>
+            <Link className="product-card" href={`/products/${product.slug}/`} key={product.slug}>
               <div className="product-card-image">
                 <Image src={product.images[0]} alt={product.name} width={800} height={800} unoptimized />
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>

@@ -19,12 +19,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${product.shortName} — Product Details | UUFinds Sheet`,
     description: `Review images, listing information and QC checkpoints for ${product.shortName}, then open the matching CNBuy Sheet product page.`,
-    alternates: { canonical: `/products/${product.slug}` },
+    alternates: { canonical: `/products/${product.slug}/` },
     openGraph: {
       title: `${product.shortName} | UUFinds Sheet`,
       description: "An independent product-detail route with a direct link to the matching CNBuy Sheet listing.",
       type: "website",
-      url: `/products/${product.slug}`,
+      url: `/products/${product.slug}/`,
       images: [{ url: product.images[0], alt: product.name }],
     },
   };
@@ -38,7 +38,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   return (
     <main className="product-page">
       <SiteHeader />
-      <div className="guide-subnav"><Link className="back-link" href="/products">← Back to product finds</Link></div>
+      <div className="guide-subnav"><Link className="back-link" href="/products/">← Back to product finds</Link></div>
 
       <div className="product-breadcrumb" aria-label="Breadcrumb">
         <Link href="/">Home</Link><span>/</span><a href={product.categoryUrl} target="_blank" rel="noreferrer">{product.category}</a><span>/</span><strong>Product detail</strong>
@@ -97,7 +97,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div><p className="eyebrow">Evidence boundary</p><h2>Listing media is not automatically QC media.</h2></div>
         <div>
           <p>UUFinds publicly describes QC-photo and QC-video discovery, image recognition and supported link handling, while also stating that it does not sell products. This independent page likewise does not process an order. It identifies the CNBuy Sheet product, explains what to inspect and keeps the final destination explicit.</p>
-          <div className="product-source-links"><a href={product.mainSiteUrl} target="_blank" rel="noreferrer">CNBuy Sheet detail ↗</a><a href={product.categoryUrl} target="_blank" rel="noreferrer">More {product.category} ↗</a><Link href="/guides/uufinds-qc-checklist">QC checklist →</Link></div>
+          <div className="product-source-links"><a href={product.mainSiteUrl} target="_blank" rel="noreferrer">CNBuy Sheet detail ↗</a><a href={product.categoryUrl} target="_blank" rel="noreferrer">More {product.category} ↗</a><Link href="/guides/uufinds-qc-checklist/">QC checklist →</Link></div>
         </div>
       </section>
 
@@ -114,7 +114,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         "@type": "ItemPage",
         name: product.name,
         description: `Independent product-detail route for ${product.name} with a direct link to the matching CNBuy Sheet page.`,
-        url: `https://uufindssheet.com/products/${product.slug}`,
+        url: `https://uufindssheet.com/products/${product.slug}/`,
         primaryImageOfPage: product.images[0],
         dateModified: "2026-07-22",
         mainEntity: {

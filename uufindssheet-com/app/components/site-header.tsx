@@ -84,23 +84,23 @@ export function SiteHeader({
         />
       </Link>
       <nav aria-label="Main navigation">
-        <Link href="/finds">{currentLabels.finds}</Link>
-        <Link href="/products">{currentLabels.products}</Link>
-        <Link href="/guides/uufinds-qc-checklist">{currentLabels.qcGuide}</Link>
-        <Link href="/how-it-works">{currentLabels.howItWorks}</Link>
-        <Link href="/articles">{currentLabels.articles}</Link>
-        <Link href="/faq">{currentLabels.faq}</Link>
+        <Link href="/finds/">{currentLabels.finds}</Link>
+        <Link href="/products/">{currentLabels.products}</Link>
+        <Link href="/guides/uufinds-qc-checklist/">{currentLabels.qcGuide}</Link>
+        <Link href="/how-it-works/">{currentLabels.howItWorks}</Link>
+        <Link href="/articles/">{currentLabels.articles}</Link>
+        <Link href="/faq/">{currentLabels.faq}</Link>
       </nav>
       <div className="header-actions">
         <details className="mobile-nav-menu">
           <summary aria-label={currentLabels.menu ?? "Menu"}>{currentLabels.menu ?? "Menu"}</summary>
           <div className="mobile-nav-panel">
-            <Link href="/finds">{currentLabels.finds}</Link>
-            <Link href="/products">{currentLabels.products}</Link>
-            <Link href="/guides/uufinds-qc-checklist">{currentLabels.qcGuide}</Link>
-            <Link href="/how-it-works">{currentLabels.howItWorks}</Link>
-            <Link href="/articles">{currentLabels.articles}</Link>
-            <Link href="/faq">{currentLabels.faq}</Link>
+            <Link href="/finds/">{currentLabels.finds}</Link>
+            <Link href="/products/">{currentLabels.products}</Link>
+            <Link href="/guides/uufinds-qc-checklist/">{currentLabels.qcGuide}</Link>
+            <Link href="/how-it-works/">{currentLabels.howItWorks}</Link>
+            <Link href="/articles/">{currentLabels.articles}</Link>
+            <Link href="/faq/">{currentLabels.faq}</Link>
           </div>
         </details>
         <details className="language-menu">

@@ -7,7 +7,7 @@ import { articleCards } from "../site-data";
 export const metadata: Metadata = {
   title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
   description: "Independent, source-checked guides about UUFinds QC photos, videos, image recognition, link matching and exact CNBuy Sheet destinations.",
-  alternates: { canonical: "/articles" },
+  alternates: { canonical: "/articles/" },
 };
 
 export default function ArticlesPage() {

@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${guide.title} | UUFinds Sheet`,
     description: guide.description,
-    alternates: { canonical: `/guides/${guide.slug}` },
-    openGraph: { title: guide.title, description: guide.description, type: "article", url: `/guides/${guide.slug}` },
+    alternates: { canonical: `/guides/${guide.slug}/` },
+    openGraph: { title: guide.title, description: guide.description, type: "article", url: `/guides/${guide.slug}/` },
   };
 }
 
@@ -35,7 +35,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   return (
     <main className="guide-page">
       <SiteHeader />
-      <div className="guide-subnav"><Link className="back-link" href="/articles">← All guides</Link></div>
+      <div className="guide-subnav"><Link className="back-link" href="/articles/">← All guides</Link></div>
 
       <article>
         <div className="guide-hero">
@@ -95,7 +95,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         publisher: { "@type": "Organization", name: "UUFinds Sheet" },
         wordCount,
         inLanguage: "en",
-        mainEntityOfPage: `https://uufindssheet.com/guides/${guide.slug}`,
+        mainEntityOfPage: `https://uufindssheet.com/guides/${guide.slug}/`,
       }) }} />
     </main>
   );
