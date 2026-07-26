@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "hubbuy-product-link-not-working": [
+    ["Homepage search · Product name or link", "The public search field accepts a product name or link as the starting point."],
+    ["Public service description · Taobao, 1688 and Weidian", "Hubbuy publicly describes itself as a purchasing agent for these marketplaces."],
+    ["Header navigation · Fill & Buy", "The current public navigation exposes a manual purchasing entry when a standard import is not enough."],
+  ],
   "how-to-use-a-hubbuy-spreadsheet": [
     ["How to Purchase · Place an order and pay", "Product price and China shipping appear at the order stage."],
     ["How to Purchase · Pay package fee", "The public page places inspection images and the advertised storage period at warehouse arrival."],
@@ -39,6 +44,24 @@ function EvidenceChain() {
         <div><b>04</b><strong>Parcel</strong><span>Weight + route + tracking</span></div>
       </div>
       <figcaption>Editorial workflow created by Hubbuy Sheet from the public three-stage purchase sequence. It is not an official Hubbuy interface image.</figcaption>
+    </figure>
+  );
+}
+
+function LinkTroubleshootingMap() {
+  return (
+    <figure className="research-visual research-chain">
+      <div className="research-visual-heading"><span>Original troubleshooting map</span><strong>Repair the first broken handoff</strong></div>
+      <div className="research-chain-grid">
+        <div><b>01</b><strong>Open source</strong><span>Confirm the seller item still exists</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>02</b><strong>Copy final URL</strong><span>Preserve the item identifier</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>03</b><strong>Test import</strong><span>Match title, image and option</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>04</b><strong>Use manual path</strong><span>Submit saved evidence exactly</span></div>
+      </div>
+      <figcaption>Editorial decision flow created by Hubbuy Sheet. It is not a Hubbuy interface screenshot and does not claim that every marketplace uses one permanent URL format.</figcaption>
     </figure>
   );
 }
@@ -95,6 +118,7 @@ function WarehouseLedger() {
 }
 
 function ArticleVisual({ slug }) {
+  if (slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingMap />;
   if (slug === "how-to-use-a-hubbuy-spreadsheet") return <EvidenceChain />;
   if (slug === "hubbuy-qc-photos-guide") return <QcInterfaceMap />;
   if (slug === "hubbuy-shipping-cost-guide") return <ShippingExample />;
@@ -106,7 +130,7 @@ export default function ArticleResearchEnhancements({ article }) {
   const compact = article.slug === "how-to-use-a-hubbuy-spreadsheet";
   return (
     <section id="research-evidence" className="article-research-evidence">
-      <span>Research evidence · checked 22 July 2026</span>
+      <span>Research evidence · checked {article.factCheckedDisplayDate}</span>
       <h2>See the calculation, interface logic and exact official section</h2>
       <p>{compact ? "Separate the public statement, the editorial example and the live transaction data." : "These additions separate three things that are often mixed together: what Hubbuy states publicly, the example used to explain a decision, and the live account data that must still be checked at transaction time."}</p>
 

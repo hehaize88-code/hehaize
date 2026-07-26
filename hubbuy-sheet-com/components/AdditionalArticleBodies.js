@@ -27,11 +27,11 @@ function ArticleFaq({ items }) {
   );
 }
 
-function SourceNote({ children }) {
+function SourceNote({ children, checked = "20 July 2026" }) {
   return (
     <div className="article-sources">
       <strong>Official source and editorial boundary</strong>
-      <p>{children} Verified against the <a href={OFFICIAL_SITE} target="_blank" rel="noopener">official Hubbuy homepage</a> on 20 July 2026. Practical checklists are independent editorial guidance; live account terms remain the current source.</p>
+      <p>{children} Verified against the <a href={OFFICIAL_SITE} target="_blank" rel="noopener">official Hubbuy homepage</a> on {`${checked}.`} Practical checklists are independent editorial guidance; live account terms remain the current source.</p>
     </div>
   );
 }
@@ -43,6 +43,98 @@ function ArticleCta() {
       <p>Use the catalog to find a lead, then confirm the individual seller listing before making a decision.</p>
       <SearchBox compact />
     </div>
+  );
+}
+
+function LinkTroubleshootingArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">A broken product link is not one problem. The seller page may be gone, a mobile share address may hide the real destination, or Hubbuy may fail to import a page that still opens normally. The fastest fix is to identify which layer failed before changing the URL or entering an order manually.</p>
+
+      <ResearchDisclosure>Hubbuy’s public homepage currently invites shoppers to enter a product name or link and presents the service as a Taobao, 1688 and Weidian purchasing agent. It does not publish a permanent list of accepted URL formats, so this guide separates those official facts from independent troubleshooting.</ResearchDisclosure>
+
+      <section id="official-support">
+        <span>01 · Official capability</span>
+        <h2>Hubbuy supports link-led product search, but a link still has to identify a live item</h2>
+        <p>The <a href="https://hubbuy.com/" target="_blank" rel="noopener">official Hubbuy homepage</a> places a product-name-or-link search box at the start of the buying journey. Its public description identifies Hubbuy as a purchasing service for Taobao, 1688 and Weidian, while the visible purchase workflow says Hubbuy orders the item and the seller sends it to the warehouse.</p>
+        <p>That confirms the intended workflow, not that every shared address will import forever. Marketplaces use desktop, mobile and app-share pages; sellers also remove items. “The source does not open” and “Hubbuy does not import it” are different failures. Find which one happened before editing the address.</p>
+
+        <div className="official-workflow" aria-label="Three layers in a Hubbuy product-link check">
+          <div><b>01</b><strong>Source page</strong><span>Does the seller item still open?</span></div>
+          <div><b>02</b><strong>Shared URL</strong><span>Does it preserve the item identity?</span></div>
+          <div><b>03</b><strong>Hubbuy import</strong><span>Does the correct product appear?</span></div>
+        </div>
+      </section>
+
+      <section id="diagnose">
+        <span>02 · Diagnose before editing</span>
+        <h2>Find the first place where the chain breaks</h2>
+        <p>Open the original link in a normal browser first. A removed, unrelated or error page cannot be restored by an agent. Treat a replacement seller link as a new sourcing decision, not the same item under a repaired address.</p>
+        <p>If login is required, record it. A page that works in your signed-in browser may expose less data to an importer. After any redirects, copy the final item-page address, paste it untouched into Hubbuy and compare the imported title, image, seller, price and options. The wrong variant is still a failed import.</p>
+
+        <div className="article-callout">
+          <strong>Keep the original before every experiment</strong>
+          <p>Save the complete first URL in a note. If a cleaned version loses the product identifier, you can return to the evidence instead of guessing what the address used to contain.</p>
+        </div>
+      </section>
+
+      <section id="clean-link">
+        <span>03 · Build a usable source address</span>
+        <h2>Remove wrappers carefully; never remove the product identity</h2>
+        <p>Remove copied commentary around the URL, open it, then copy the final item page. You may test a version without obvious analytics parameters, but preserve the original and never delete the item or offer identifier. Because an identifier can appear after a question mark, “delete everything after ?” can destroy a valid link.</p>
+        <p>Login gates, marketplace security checks and regional access can break the source-page layer even when an item still exists. Treat that as a diagnostic possibility, not a Hubbuy policy: confirm the marketplace page and the Hubbuy import result separately before deciding which layer failed.</p>
+        <ul>
+          <li>Prefer the final individual item page over a search result, shop homepage or social redirect.</li>
+          <li>Keep the marketplace name, seller name and item identifier in your record.</li>
+          <li>Do not use an image, spreadsheet row or agent card as a substitute for a source URL.</li>
+          <li>Stop if the “fixed” address opens a different product or seller.</li>
+        </ul>
+      </section>
+
+      <section id="source-evidence">
+        <span>04 · Preserve the source</span>
+        <h2>Save enough evidence to rebuild the order without relying on one link</h2>
+        <p>Before payment, save the original URL, seller, item identifier, selected variant, quantity, visible price and China shipping. Add a screenshot of the exact option. A source link without the chosen size or color is incomplete evidence.</p>
+        <p>A <a href="https://www.reddit.com/r/repweidiansneakers/comments/1hwy6nm/guide_poncecatchemalls_agents_taobao_weidian/" target="_blank" rel="noopener">January 2025 community guide</a> reported difficulty recovering a raw source link from a Hubbuy-generated listing and advised saving it separately. This is one dated user report, not a current platform guarantee, but it shows why the source should survive outside the agent page.</p>
+
+        <div className="article-point-grid">
+          <div><b>Identity</b><strong>Marketplace · seller · item ID</strong><span>Enough to trace the source again.</span></div>
+          <div><b>Selection</b><strong>Color · size · model · quantity</strong><span>The option Hubbuy should purchase.</span></div>
+          <div><b>Cost</b><strong>Item price · China shipping</strong><span>Recorded at the same moment as the option.</span></div>
+          <div><b>Evidence</b><strong>URL · screenshot · order note</strong><span>A record that survives a redirect.</span></div>
+        </div>
+      </section>
+
+      <section id="manual-order">
+        <span>05 · When automatic import fails</span>
+        <h2>Use Hubbuy’s current manual path without inventing missing details</h2>
+        <p>Hubbuy’s public navigation currently exposes “Fill &amp; Buy.” If a live source item will not import, use the current official interface or ask official support which route applies. Forms and charges can change, so this guide does not claim a permanent screen or fee.</p>
+        <p>Copy the seller’s variant wording, quantity, item price and China shipping evidence exactly. Pause when a field is unclear. Manual entry cannot make a dead listing safe; a replacement URL requires a new source check.</p>
+      </section>
+
+      <section id="price-variant">
+        <span>06 · Import mismatches</span>
+        <h2>Resolve the wrong price or option before paying</h2>
+        <p>Listings can show a low default price while another variant costs more; promotions and China shipping can also change the number. Compare the selected option before assuming the importer is wrong. Do not overwrite the price merely to match the cheapest figure.</p>
+        <p>If the image or option is wrong, return to the source or manual path. The <Link href="/articles/how-to-use-a-hubbuy-spreadsheet/">complete Hubbuy purchase-research workflow</Link> also explains why product price and China shipping are separate from the later international parcel fee.</p>
+      </section>
+
+      <section id="after-submit">
+        <span>07 · Protect the order record</span>
+        <h2>Check the submitted order, then reconnect it to warehouse QC</h2>
+        <p>Compare the submitted order with your evidence: seller, option, quantity, item price and domestic shipping. Keep any message that changes the order. At warehouse arrival, use the saved option to spot a wrong color, label, quantity or model; the <Link href="/guides/qc-checks/">Hubbuy QC checklist</Link> covers visible checks.</p>
+        <p>Be cautious with link-extraction extensions. One Chrome Web Store listing updated in April 2025 claimed to recover original Hubbuy links but showed a very small user base and no ratings on 26 July 2026. That shows demand, not endorsement or a security review. Saving the source yourself is the safer default.</p>
+
+        <div className="article-callout">
+          <strong>The durable fix is a better record</strong>
+          <p>A cleaned URL may solve today’s import. The original source, selected option and submitted order together solve the larger problem: proving what you meant to buy after pages change.</p>
+        </div>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <SourceNote checked="26 July 2026">The product-name-or-link search, Taobao/1688/Weidian purchasing description, staged order workflow and Fill &amp; Buy navigation are public Hubbuy facts. URL cleaning, evidence files and troubleshooting order are independent editorial methods.</SourceNote>
+      <ArticleCta />
+    </>
   );
 }
 
@@ -332,6 +424,7 @@ function WarehouseArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingArticle article={article} />;
   if (article.slug === "hubbuy-qc-photos-guide") return <QCPhotosArticle article={article} />;
   if (article.slug === "hubbuy-shipping-cost-guide") return <ShippingCostArticle article={article} />;
   if (article.slug === "hubbuy-warehouse-storage-consolidation") return <WarehouseArticle article={article} />;

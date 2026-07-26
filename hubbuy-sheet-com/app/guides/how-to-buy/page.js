@@ -56,6 +56,7 @@ export default function HowToBuyPage() {
         </GuideSection>
         <GuideSection id="source" kicker="Step 02 · Verify" title="Open the individual product page and save the source evidence.">
           <p>Use the product card or catalog search to open the exact detail page. Compare the title, main image, price and available variants. If an original Taobao, Weidian or 1688 source is shown, keep a copy of it. That source helps you identify the seller and revisit the listing if an agent-generated link changes.</p>
+          <p>If the marketplace page opens but Hubbuy imports the wrong item—or does not import it at all—use the <Link href="/articles/hubbuy-product-link-not-working/">Hubbuy product-link troubleshooting guide</Link> before entering the order manually.</p>
           <ul className="check-list"><li>Confirm color and size are selectable, not just pictured.</li><li>Look for variant names that change the price.</li><li>Check whether domestic shipping is shown separately.</li><li>Save a screenshot of the exact option you intend to order.</li></ul>
         </GuideSection>
         <GuideSection id="order" kicker="Step 03 · Order" title="Submit precise instructions, then review the order summary.">

@@ -31,13 +31,20 @@ export default function sitemap() {
     const article = route.startsWith("/articles/") && route !== "/articles/"
       ? articles.find((item) => route.includes(item.slug))
       : null;
-    const languages = {
-      en: `${SITE_URL}${localizedPath(route, "")}`,
-      "pt-BR": `${SITE_URL}${localizedPath(route, "/pt-br")}`,
-      de: `${SITE_URL}${localizedPath(route, "/de")}`,
-      "x-default": `${SITE_URL}${localizedPath(route, "")}`,
-    };
-    return locales.map(({ prefix }) => ({
+    const englishOnly = article?.locales?.length === 1 && article.locales[0] === "en";
+    const languages = englishOnly
+      ? {
+          en: `${SITE_URL}${localizedPath(route, "")}`,
+          "x-default": `${SITE_URL}${localizedPath(route, "")}`,
+        }
+      : {
+          en: `${SITE_URL}${localizedPath(route, "")}`,
+          "pt-BR": `${SITE_URL}${localizedPath(route, "/pt-br")}`,
+          de: `${SITE_URL}${localizedPath(route, "/de")}`,
+          "x-default": `${SITE_URL}${localizedPath(route, "")}`,
+        };
+    const routeLocales = englishOnly ? locales.filter(({ code }) => code === "en") : locales;
+    return routeLocales.map(({ prefix }) => ({
       url: `${SITE_URL}${localizedPath(route, prefix)}`,
       lastModified: new Date(`${article?.updated || "2026-07-22"}T00:00:00Z`),
       changeFrequency: ["/", "/products/", "/articles/"].includes(route) ? "weekly" : "monthly",

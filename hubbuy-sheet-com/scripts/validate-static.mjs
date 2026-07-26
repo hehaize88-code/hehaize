@@ -4,6 +4,7 @@ import { articles } from "../data/articles.js";
 import { categoryPages } from "../data/categories.js";
 import { products } from "../data/site.js";
 import { getBaseLanguagePath, getLocalizedPath } from "../data/i18n.js";
+import { keywordTopicMap } from "../data/keyword-map.js";
 
 const outputRoot = resolve(process.argv[2] || "out");
 const siteUrl = "https://hubbuy-sheet.com";
@@ -20,6 +21,11 @@ const categoryByPath = new Map(
 );
 const productByPath = new Map(
   products.map((product) => [product.localHref, product]),
+);
+const englishOnlyArticlePaths = new Set(
+  articles
+    .filter((article) => article.locales?.length === 1 && article.locales[0] === "en")
+    .map((article) => `/articles/${article.slug}/`),
 );
 const breadcrumbPaths = new Set([
   "/guides/how-to-buy/",
@@ -72,7 +78,7 @@ function internalTarget(href) {
 }
 
 function expectedAlternates(basePath) {
-  if (productByPath.has(basePath)) {
+  if (productByPath.has(basePath) || englishOnlyArticlePaths.has(basePath)) {
     return new Map([
       ["en", `${siteUrl}${basePath}`],
       ["x-default", `${siteUrl}${basePath}`],
@@ -144,6 +150,7 @@ for (const url of urls) {
   const ogImage = metaContent(html, "property", "og:image");
   const twitterImage = metaContent(html, "name", "twitter:image");
   const article = articleByPath.get(basePath);
+  const englishOnlyArticle = englishOnlyArticlePaths.has(basePath);
   const category = categoryByPath.get(basePath);
   const product = productByPath.get(basePath);
   const productImage = product?.image?.startsWith("http") ? product.image : product ? `${siteUrl}${product.image}` : null;
@@ -284,7 +291,7 @@ for (const url of urls) {
   }
 
   records.push({ url, pathname, locale, basePath, title, canonical, h1, lang, ogTitle, ogUrl, ogImage });
-  if (!product) {
+  if (!product && !englishOnlyArticle) {
     if (!localeGroups.has(basePath)) localeGroups.set(basePath, {});
     localeGroups.get(basePath)[locale] = { title, h1, ogTitle, url };
   }
@@ -303,7 +310,10 @@ for (const [basePath, group] of localeGroups) {
   }
 }
 
-for (const [locale, expectedCount] of [["en", 23 + products.length], ["pt-br", 23], ["de", 23]]) {
+const localizedArticleCount = articles.length - englishOnlyArticlePaths.size;
+const localizedBaseRouteCount = 11 + localizedArticleCount + categoryPages.length;
+const englishRouteCount = localizedBaseRouteCount + products.length + englishOnlyArticlePaths.size;
+for (const [locale, expectedCount] of [["en", englishRouteCount], ["pt-br", localizedBaseRouteCount], ["de", localizedBaseRouteCount]]) {
   const file = resolve(outputRoot, `sitemap-${locale}.xml`);
   if (!existsSync(file)) throw new Error(`Missing language sitemap: ${locale}`);
   const count = (readFileSync(file, "utf8").match(/<loc>/g) || []).length;
@@ -317,7 +327,7 @@ const duplicateCanonicals = records.filter((record, index) => (
   records.findIndex((candidate) => candidate.canonical === record.canonical) !== index
 ));
 
-const expectedSitemapUrls = 69 + products.length;
+const expectedSitemapUrls = (localizedBaseRouteCount * 3) + products.length + englishOnlyArticlePaths.size;
 if (urls.length !== expectedSitemapUrls || new Set(urls).size !== expectedSitemapUrls) throw new Error(`Expected ${expectedSitemapUrls} unique sitemap URLs, found ${urls.length}`);
 if (duplicateTitles.length) throw new Error(`Duplicate titles: ${duplicateTitles.map((item) => item.url).join(", ")}`);
 if (duplicateCanonicals.length) throw new Error("Duplicate canonical URLs");
@@ -334,6 +344,35 @@ if (new Set(articles.map((article) => article.socialImage)).size !== articles.le
   throw new Error("Article social images must be unique");
 }
 
+const englishPaths = new Set(
+  urls
+    .map((url) => new URL(url).pathname)
+    .filter((pathname) => !pathname.startsWith("/pt-br/") && !pathname.startsWith("/de/")),
+);
+const mappedPaths = new Set(keywordTopicMap.map((entry) => entry.url));
+const missingKeywordPages = [...englishPaths].filter((pathname) => !mappedPaths.has(pathname));
+const extraKeywordPages = [...mappedPaths].filter((pathname) => !englishPaths.has(pathname));
+if (missingKeywordPages.length || extraKeywordPages.length) {
+  throw new Error(`Keyword map mismatch. Missing: ${missingKeywordPages.join(", ")}. Extra: ${extraKeywordPages.join(", ")}`);
+}
+const normalizedQueries = keywordTopicMap.map((entry) => entry.primaryQuery.trim().toLowerCase());
+if (new Set(normalizedQueries).size !== normalizedQueries.length) {
+  throw new Error("Keyword map contains duplicate primary queries");
+}
+for (const entry of keywordTopicMap) {
+  if (
+    !entry.url ||
+    !entry.primaryQuery ||
+    !entry.secondaryTerms?.length ||
+    !entry.searchIntent ||
+    !entry.angle ||
+    !entry.evidence?.length ||
+    !entry.internalLinkRole
+  ) {
+    throw new Error(`Incomplete keyword-map entry: ${entry.url || "unknown"}`);
+  }
+}
+
 console.log(JSON.stringify({
   sitemapUrls: urls.length,
   localeGroups: localeGroups.size,
@@ -346,6 +385,10 @@ console.log(JSON.stringify({
     categoryCollections: records.filter((item) => categoryByPath.has(item.basePath)).length,
     breadcrumbPages: records.filter((item) => breadcrumbPaths.has(item.basePath)).length,
     articlePagesWithAuthorAndUniqueImage: records.filter((item) => articleByPath.has(item.basePath)).length,
+  },
+  keywordMap: {
+    pages: keywordTopicMap.length,
+    uniquePrimaryQueries: new Set(normalizedQueries).size,
   },
   brokenInternalLinks: brokenLinks.length,
   languages: Object.fromEntries(["en", "pt-BR", "de"].map((lang) => [lang, records.filter((item) => item.lang === lang).length])),

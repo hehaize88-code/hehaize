@@ -14,6 +14,12 @@ const localeConfig = {
   "pt-br": localePages["pt-br"],
   de: localePages.de,
 };
+const localizedArticles = articles.filter((article) => (
+  !article.locales || article.locales.some((locale) => locale !== "en")
+));
+const englishOnlyArticles = articles.filter((article) => (
+  article.locales?.length === 1 && article.locales[0] === "en"
+));
 const baseRoutes = [
   "/",
   "/products/",
@@ -26,10 +32,13 @@ const baseRoutes = [
   "/contact/",
   "/legal/privacy/",
   "/legal/terms/",
-  ...articles.map((article) => `/articles/${article.slug}/`),
+  ...localizedArticles.map((article) => `/articles/${article.slug}/`),
   ...categoryPages.map((category) => `/categories/${category.slug}/`),
 ];
-const englishOnlyRoutes = products.map((product) => product.localHref);
+const englishOnlyRoutes = [
+  ...products.map((product) => product.localHref),
+  ...englishOnlyArticles.map((article) => `/articles/${article.slug}/`),
+];
 const allEnglishRoutes = [...baseRoutes, ...englishOnlyRoutes];
 const staticAssetPattern = /\.(?:avif|css|gif|ico|jpe?g|js|json|png|svg|txt|webp|xml)$/i;
 const translatedMetaFields = new Set([
@@ -84,14 +93,14 @@ function localizeInternalPath(rawValue, locale) {
   if (!rawValue.startsWith("/") || rawValue.startsWith("//")) return rawValue;
   const url = new URL(rawValue, siteUrl);
   if (staticAssetPattern.test(url.pathname)) return rawValue;
-  if (/^\/products\/\d+\/$/.test(url.pathname)) return rawValue;
+  if (englishOnlyRoutes.includes(url.pathname)) return rawValue;
   return `${routeForLocale(url.pathname, locale)}${url.search}${url.hash}`;
 }
 
 function localizeAbsoluteUrl(rawValue, locale) {
   if (!rawValue.startsWith(siteUrl)) return rawValue;
   const url = new URL(rawValue);
-  if (staticAssetPattern.test(url.pathname)) return rawValue;
+  if (staticAssetPattern.test(url.pathname) || englishOnlyRoutes.includes(url.pathname)) return rawValue;
   return `${siteUrl}${routeForLocale(url.pathname, locale)}${url.search}${url.hash}`;
 }
 
@@ -151,8 +160,9 @@ function updateLanguageMenu(html, route, locale) {
   return html.replace(/<a class="language-option"[\s\S]*?<\/a>/g, (link) => {
     const code = link.match(/data-locale-code="([^"]+)"/)?.[1];
     if (!code) return link;
+    const fallbackRoute = route.startsWith("/articles/") ? "/articles/" : "/products/";
     const href = englishOnlyRoutes.includes(route) && code !== "en"
-      ? routeForLocale("/products/", code)
+      ? routeForLocale(fallbackRoute, code)
       : routeForLocale(route, code);
     let updated = link
       .replace(/href="[^"]*"/, `href="${href}"`)
@@ -261,10 +271,11 @@ function sitemapXml(routes, selectedLocale = null, singleLanguageRoutes = []) {
   if (!selectedLocale || selectedLocale === "en") {
     for (const route of singleLanguageRoutes) {
       const product = products.find((item) => item.localHref === route);
+      const article = articles.find((item) => route === `/articles/${item.slug}/`);
       const alternates = ["en", "x-default"]
         .map((code) => `    <xhtml:link rel="alternate" hreflang="${code}" href="${siteUrl}${route}" />`)
         .join("\n");
-      records.push(`  <url>\n    <loc>${siteUrl}${route}</loc>\n    <lastmod>${product?.checked || lastModified}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.72</priority>\n${alternates}\n  </url>`);
+      records.push(`  <url>\n    <loc>${siteUrl}${route}</loc>\n    <lastmod>${article?.updated || product?.checked || lastModified}</lastmod>\n    <changefreq>${article ? "monthly" : "weekly"}</changefreq>\n    <priority>${article ? "0.8" : "0.72"}</priority>\n${alternates}\n  </url>`);
     }
   }
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${records.join("\n")}\n</urlset>\n`;

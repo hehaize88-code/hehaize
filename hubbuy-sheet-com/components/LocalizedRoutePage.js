@@ -32,7 +32,9 @@ const staticPages = {
 
 export const localizedStaticParams = [
   ...Object.keys(staticPages).map((route) => ({ segments: route.split("/") })),
-  ...articles.map((article) => ({ segments: ["articles", article.slug] })),
+  ...articles
+    .filter((article) => !article.locales || article.locales.some((locale) => locale !== "en"))
+    .map((article) => ({ segments: ["articles", article.slug] })),
   ...categoryPages.map((category) => ({ segments: ["categories", category.slug] })),
 ];
 

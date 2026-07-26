@@ -69,7 +69,7 @@ export default async function ArticlePage({ params }) {
       caption: article.socialImageAlt,
     },
     thumbnailUrl: `${SITE_URL}${article.socialImage}`,
-    citation: ["https://hubbuy.com/"],
+    citation: article.citations || ["https://hubbuy.com/"],
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
