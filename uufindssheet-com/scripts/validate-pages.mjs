@@ -4,8 +4,25 @@ import { join } from "node:path";
 
 const root = new URL("../out/", import.meta.url);
 const locales = ["en-gb", "de", "pl", "pt-br"];
+const translatedLocales = ["de", "pl", "pt-br"];
+const guideSlugs = [
+  "uufinds-spreadsheet-shopping-guide-2026",
+  "uufinds-qc-checklist",
+  "how-to-use-uufinds",
+  "spreadsheet-vs-qc-finder",
+];
+const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
 const count = (html, pattern) => (html.match(pattern) ?? []).length;
+const structure = (html) => ({
+  sections: count(html, /<section\b/g),
+  articles: count(html, /<article\b/g),
+  h2: count(html, /<h2\b/g),
+  h3: count(html, /<h3\b/g),
+  details: count(html, /<details\b/g),
+  listItems: count(html, /<li\b/g),
+  images: count(html, /<img\b/g),
+});
 const block = (html, tag, className) => {
   const match = html.match(new RegExp(`<${tag}[^>]*class="${className}"[^>]*>[\\s\\S]*?</${tag}>`));
   assert.ok(match, `missing ${tag}.${className}`);
@@ -35,9 +52,11 @@ for (const locale of locales) {
   };
   for (const [route, classNames] of Object.entries(expectations)) {
     const html = await readPage(`${locale}/${route}`);
+    const english = await readPage(route);
     for (const className of classNames) {
       assert.match(html, new RegExp(`class="${className.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`), `${locale}/${route} is missing ${className}`);
     }
+    assert.deepEqual(structure(html), structure(english), `${locale}/${route} must keep the English page structure`);
   }
 
   const finds = await readPage(`${locale}/finds`);
@@ -65,32 +84,59 @@ for (const locale of locales) {
   assert.match(product, /class="product-thumbnails"/);
   assert.ok(count(product, /\/product-images\//g) >= 5, `${locale} product detail must keep the complete gallery`);
   assert.match(product, new RegExp(`href="/${locale === "pl" ? "de" : "pl"}/products/hoka-speedgoat-5-trail-running-shoes/"`), "language switch must preserve the product route");
+  assert.deepEqual(
+    structure(product),
+    structure(await readPage("products/hoka-speedgoat-5-trail-running-shoes")),
+    `${locale} product detail must keep the English page structure`,
+  );
 
-  const guide = await readPage(`${locale}/guides/uufinds-qc-checklist`);
-  assert.match(guide, /class="guide-page"/);
-  assert.match(guide, /class="guide-layout"/);
-  assert.match(guide, /class="guide-body"/);
-  assert.equal(count(guide, /class="lead"/g), 3, `${locale} QC guide must keep all 3 introductory paragraphs`);
-  assert.equal(count(guide, /id="section-\d+"/g), 9, `${locale} QC guide must keep all 9 English-equivalent sections`);
-  assert.equal(count(guide, /class="source-note"/g), 1, `${locale} QC guide must keep the complete primary-source note`);
+  for (const slug of guideSlugs) {
+    const guide = await readPage(`${locale}/guides/${slug}`);
+    const englishGuide = await readPage(`guides/${slug}`);
+    assert.match(guide, /class="guide-page"/);
+    assert.match(guide, /class="guide-layout"/);
+    assert.match(guide, /class="guide-body"/);
+    assert.equal(
+      count(guide, /class="lead"/g),
+      count(englishGuide, /class="lead"/g),
+      `${locale}/${slug} must keep every English introductory paragraph`,
+    );
+    assert.equal(
+      count(guide, /id="section-\d+"/g),
+      count(englishGuide, /id="section-\d+"/g),
+      `${locale}/${slug} must keep every English guide section`,
+    );
+    assert.deepEqual(structure(guide), structure(englishGuide), `${locale}/${slug} must keep the English guide structure`);
+    assert.equal(count(guide, /class="source-note"/g), 1, `${locale}/${slug} must keep the complete primary-source note`);
+  }
 
-  for (const policy of ["about", "contact", "editorial-policy", "privacy", "terms"]) {
+  for (const policy of policySlugs) {
     const html = await readPage(`${locale}/${policy}`);
+    const english = await readPage(policy);
     assert.match(html, /class="trust-page"/, `${locale}/${policy} must use the trust-page layout`);
     assert.match(html, /class="trust-page-body"/, `${locale}/${policy} must keep the complete policy body`);
+    assert.deepEqual(structure(html), structure(english), `${locale}/${policy} must keep the English policy structure`);
   }
 }
 
-for (const locale of ["de", "pl", "pt-br"]) {
+for (const locale of translatedLocales) {
   const targetPages = await Promise.all([
     readPage(`${locale}/finds`),
+    readPage(`${locale}/products`),
     readPage(`${locale}/how-it-works`),
+    readPage(`${locale}/articles`),
     readPage(`${locale}/faq`),
-    readPage(`${locale}/guides/uufinds-qc-checklist`),
+    ...guideSlugs.map((slug) => readPage(`${locale}/guides/${slug}`)),
+    ...policySlugs.map((slug) => readPage(`${locale}/${slug}`)),
+    readPage(`${locale}/products/hoka-speedgoat-5-trail-running-shoes`),
   ]);
   for (const html of targetPages) {
     assert.doesNotMatch(html, /A photographed item is not a guarantee for every later unit\./, `${locale} page must not fall back to the retired English evidence card`);
-    assert.doesNotMatch(html, />ON THIS PAGE</, `${locale} QC guide must localize its section navigation`);
+    assert.doesNotMatch(html, />ON THIS PAGE</, `${locale} guides must localize their section navigation`);
+    assert.doesNotMatch(html, />What this site is</, `${locale} trust pages must not reuse English policy copy`);
+    assert.doesNotMatch(html, />Match the exact source</, `${locale} product pages must localize the complete inspection method`);
+    assert.doesNotMatch(html, />Claim standard</, `${locale} article pages must localize their editorial standards`);
+    assert.doesNotMatch(html, />LISTING IMAGE</, `${locale} product pages must localize evidence-card labels`);
   }
 }
 

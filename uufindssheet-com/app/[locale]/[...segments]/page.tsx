@@ -13,7 +13,11 @@ import { localizedRouteCopy } from "../localized-route-content";
 import { socialImage } from "../../seo-image";
 import { hubParityCopy } from "../localized-hub-copy";
 import { localizedFAQCopy } from "../localized-faq-copy";
-import { localizedQCCopy } from "../localized-qc-copy";
+import {
+  localizeGuide,
+  localizePolicy,
+  localizeText,
+} from "../localized-content";
 
 const locales = ["en-gb", "de", "pl", "pt-br"] as const;
 type Locale = (typeof locales)[number];
@@ -99,25 +103,23 @@ function isPolicySlug(value: string): value is PolicyPageData["slug"] {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; segments: string[] }> }): Promise<Metadata> {
   const { locale, segments } = await params;
   if (!locales.includes(locale as Locale)) return {};
-  const t = text[locale as Locale];
+  const currentLocale = locale as Locale;
+  const t = text[currentLocale];
   const route = segments.join("/");
   const product = segments[0] === "products" ? products.find((item) => item.slug === segments[1]) : undefined;
-  const guide = segments[0] === "guides" ? guides.find((item) => item.slug === segments[1]) : undefined;
-  const policy = segments.length === 1 && isPolicySlug(route) ? policyPages[route] : undefined;
-  const routeCopy = locale === "en-gb" ? undefined : localizedRouteCopy[locale as Exclude<Locale, "en-gb">];
-  const guideCopy = guide ? routeCopy?.guides[guide.slug] : undefined;
-  const qcCopy = guide?.slug === "uufinds-qc-checklist" && locale !== "en-gb"
-    ? localizedQCCopy[locale as Exclude<Locale, "en-gb">]
-    : undefined;
+  const rawGuide = segments[0] === "guides" ? guides.find((item) => item.slug === segments[1]) : undefined;
+  const guide = rawGuide ? localizeGuide(currentLocale, rawGuide) : undefined;
+  const rawPolicy = segments.length === 1 && isPolicySlug(route) ? policyPages[route] : undefined;
+  const policy = rawPolicy ? localizePolicy(currentLocale, rawPolicy) : undefined;
   const title = policy
     ? `${policy.title} | UUFinds Sheet`
     : product
       ? `${product.shortName} – ${t.guide} QC`
       : guide
-        ? `${qcCopy?.title ?? guideCopy?.title ?? guide.title} – ${t.guide}`
+        ? `${guide.title} – ${t.guide}`
         : `${route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how} | UUFinds Sheet`;
   const path = `/${locale}/${route}/`;
-  const description = policy?.description ?? qcCopy?.description ?? guideCopy?.description ?? `${t.intro} ${t.check}`;
+  const description = policy?.description ?? guide?.description ?? `${t.intro} ${t.check}`;
   return {
     title,
     description,
@@ -142,10 +144,11 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
   const t = text[currentLocale];
   const route = segments.join("/");
   const product = segments[0] === "products" && segments.length === 2 ? products.find((item) => item.slug === segments[1]) : undefined;
-  const guide = segments[0] === "guides" ? guides.find((item) => item.slug === segments[1]) : undefined;
-  const policy = segments.length === 1 && isPolicySlug(route) ? policyPages[route] : undefined;
+  const rawGuide = segments[0] === "guides" ? guides.find((item) => item.slug === segments[1]) : undefined;
+  const guide = rawGuide ? localizeGuide(currentLocale, rawGuide) : undefined;
+  const rawPolicy = segments.length === 1 && isPolicySlug(route) ? policyPages[route] : undefined;
+  const policy = rawPolicy ? localizePolicy(currentLocale, rawPolicy) : undefined;
   const routeCopy = currentLocale === "en-gb" ? undefined : localizedRouteCopy[currentLocale as Exclude<Locale, "en-gb">];
-  const guideCopy = guide ? routeCopy?.guides[guide.slug] : undefined;
   if (!corePaths.includes(route) && !product && !guide) notFound();
 
   if (policy) {
@@ -153,14 +156,14 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
       <main className="trust-page" lang={t.lang}>
         <DocumentLanguage language={t.lang} />
         <SiteHeader locale={t.region} routePath={`/${policy.slug}/`} />
-        <nav className="trust-breadcrumb" aria-label="Breadcrumb">
+        <nav className="trust-breadcrumb" aria-label={localizeText(currentLocale, "Breadcrumb")}>
           <Link href={`/${currentLocale}/`}>{t.home}</Link><span>/</span><strong>{policy.title}</strong>
         </nav>
         <header className="trust-page-hero">
           <p className="eyebrow">{policy.eyebrow}</p>
           <h1>{policy.title}</h1>
           <p>{policy.description}</p>
-          <small>Last updated {policy.updated}</small>
+          <small>{localizeText(currentLocale, "Last updated")} {policy.updated}</small>
         </header>
         <article className="trust-page-body">
           {policy.sections.map((section, index) => (
@@ -173,9 +176,30 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
               </div>
             </section>
           ))}
-          {policy.contactEmail && <aside className="trust-contact-card"><p className="eyebrow inverse">Direct contact</p><a href={`mailto:${policy.contactEmail}`}>{policy.contactEmail}</a></aside>}
+          {policy.contactEmail && <aside className="trust-contact-card"><p className="eyebrow inverse">{localizeText(currentLocale, "Direct contact")}</p><a href={`mailto:${policy.contactEmail}`}>{policy.contactEmail}</a></aside>}
         </article>
         <SiteFooter locale={currentLocale} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              name: policy.title,
+              description: policy.description,
+              url: `https://uufindssheet.com/${currentLocale}/${policy.slug}/`,
+              dateModified: "2026-07-23",
+              inLanguage: t.lang,
+              isPartOf: { "@type": "WebSite", name: "UUFinds Sheet", url: "https://uufindssheet.com/" },
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: t.home, item: `https://uufindssheet.com/${currentLocale}/` },
+                { "@type": "ListItem", position: 2, name: policy.title, item: `https://uufindssheet.com/${currentLocale}/${policy.slug}/` },
+              ],
+            },
+          ],
+        }) }} />
       </main>
     );
   }
@@ -185,23 +209,12 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
   }
 
   if (guide) {
-    const qcCopy = guide.slug === "uufinds-qc-checklist" && currentLocale !== "en-gb"
-      ? localizedQCCopy[currentLocale]
-      : undefined;
-    const title = qcCopy?.title ?? guideCopy?.title ?? guide.title;
-    const description = qcCopy?.description ?? guideCopy?.description ?? guide.description;
-    const localizedIntro = qcCopy?.intro ?? (
-      guideCopy
-        ? [guideCopy.description, t.intro]
-        : guide.intro
-    );
-    const localizedSections = qcCopy?.sections ?? (guideCopy
-      ? [
-          { heading: guideCopy.sectionTitle, paragraphs: [...guideCopy.paragraphs] },
-          { heading: "QC", paragraphs: [t.check] },
-          { heading: "CNBuy Sheet", paragraphs: [t.intro] },
-        ]
-      : guide.sections);
+    const title = guide.title;
+    const description = guide.description;
+    const wordCount = [
+      ...guide.intro,
+      ...guide.sections.flatMap((section) => [section.heading, ...section.paragraphs, ...(section.points ?? [])]),
+    ].join(" ").trim().split(/\s+/).length;
     return (
       <main className="guide-page" lang={t.lang}>
         <DocumentLanguage language={t.lang} />
@@ -209,23 +222,23 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
         <div className="guide-subnav"><Link className="back-link" href={`/${currentLocale}/articles/`}>← {t.allGuides}</Link></div>
         <article>
           <div className="guide-hero">
-            <p className="eyebrow">{qcCopy?.label ?? guide.label} / {t.guide}</p>
+            <p className="eyebrow">{guide.label} / {t.guide}</p>
             <h1>{title}</h1>
             <p className="guide-deck">{description}</p>
             <div className="guide-byline">
-              <span>{qcCopy ? qcCopy.updated : `Updated ${guide.updated}`}</span>
-              <span>{qcCopy?.readTime ?? guide.readTime}</span>
-              <span>{qcCopy?.editorial ?? "Evidence-led editorial"}</span>
+              <span>{localizeText(currentLocale, "Updated")} {guide.updated}</span>
+              <span>{guide.readTime}</span>
+              <span>{localizeText(currentLocale, "Evidence-led editorial")}</span>
             </div>
           </div>
           <div className="guide-layout">
             <aside>
-              <p>{qcCopy?.onThisPage ?? "ON THIS PAGE"}</p>
-              {localizedSections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{String(index + 1).padStart(2, "0")} — {section.heading.replace(/^\d+\.\s*/, "")}</a>)}
+              <p>{localizeText(currentLocale, "ON THIS PAGE")}</p>
+              {guide.sections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{String(index + 1).padStart(2, "0")} — {section.heading.replace(/^\d+\.\s*/, "")}</a>)}
             </aside>
             <div className="guide-body">
-              {localizedIntro.map((paragraph) => <p className="lead" key={paragraph}>{paragraph}</p>)}
-              {localizedSections.map((section, index) => (
+              {guide.intro.map((paragraph) => <p className="lead" key={paragraph}>{paragraph}</p>)}
+              {guide.sections.map((section, index) => (
                 <section id={`section-${index + 1}`} key={section.heading}>
                   <p className="section-number">{String(index + 1).padStart(2, "0")}</p>
                   <h2>{section.heading}</h2>
@@ -234,8 +247,8 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
                 </section>
               ))}
               <div className="source-note">
-                <p className="eyebrow">{qcCopy?.sourceLabel ?? "Primary source notes"}</p>
-                <p>{qcCopy?.sourceNote ?? guide.sourceNote ?? t.check}</p>
+                <p className="eyebrow">{localizeText(currentLocale, "Primary source notes")}</p>
+                <p>{guide.sourceNote ?? t.check}</p>
                 <div><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></div>
               </div>
             </div>
@@ -250,6 +263,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
               dateModified: guide.modifiedISO ?? "2026-07-22", datePublished: "2026-07-22", inLanguage: t.lang,
               author: { "@type": "Organization", name: "UUFinds Sheet Editorial" },
               publisher: { "@type": "Organization", name: "UUFinds Sheet" },
+              wordCount,
               mainEntityOfPage: `https://uufindssheet.com/${currentLocale}/guides/${guide.slug}/`,
             },
             {
@@ -275,50 +289,165 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
   if (route === "faq") {
     return <LocalizedFAQ locale={currentLocale} t={t} />;
   }
+  if (route === "products") {
+    return <LocalizedProducts locale={currentLocale} t={t} routeCopy={routeCopy} />;
+  }
+  if (route === "articles") {
+    return <LocalizedArticles locale={currentLocale} t={t} />;
+  }
+  notFound();
+}
 
-  const title = route === "articles" ? t.articles : t.products;
+function LocalizedProducts({
+  locale,
+  t,
+  routeCopy,
+}: {
+  locale: Locale;
+  t: (typeof text)[Locale];
+  routeCopy: (typeof localizedRouteCopy)[Exclude<Locale, "en-gb">] | undefined;
+}) {
+  const translate = (value: string) => localizeText(locale, value);
+  const evidenceCards = [
+    {
+      label: "LISTING IMAGE",
+      title: "Shows how the product is presented",
+      body: "Use it to identify the model, color, design and seller-facing description on the current product page.",
+      note: "It may be a catalog or promotional image rather than a warehouse sample.",
+    },
+    {
+      label: "MATCHED QC PHOTO",
+      title: "Shows one photographed item",
+      body: "Use it to inspect visible shape, construction, finish and measurements when the source link or item ID agrees.",
+      note: "It documents a sample, not every future unit.",
+    },
+    {
+      label: "QC VIDEO",
+      title: "Adds motion and hidden angles",
+      body: "Use video to examine fabric drape, zipper movement, sole flex, reflective material or angles missing from still images.",
+      note: "It does not confirm durability, authenticity or internal specifications.",
+    },
+    {
+      label: "LIVE DESTINATION",
+      title: "Confirms current listing data",
+      body: "Use CNBuy Sheet to re-check the product ID, current price, available variants, size details and destination link.",
+      note: "If live information conflicts with an older guide, use the live page.",
+    },
+  ];
+
   return (
     <main className="hub-page" lang={t.lang}>
       <DocumentLanguage language={t.lang} />
-      <SiteHeader locale={t.region} routePath={`/${route}/`} />
-      <section className={`hub-hero${route === "articles" ? " article-hub-hero" : ""}`}>
-        <p className="eyebrow">{t.guide} / {t.region}</p>
-        <h1>{title}<br /><em>UUFinds Sheet</em></h1>
-        <p>{t.intro}</p>
+      <SiteHeader locale={t.region} routePath="/products/" />
+      <section className="hub-hero">
+        <p className="eyebrow">{translate("Products / 08 direct listing routes")}</p>
+        <h1>{translate("See the listing.")}<br /><em>{translate("Separate it from QC evidence.")}</em></h1>
+        <p>{translate("The images below come from the corresponding CNBuy Sheet listings; they are not labeled as UUFinds warehouse QC albums. Open a detail page, note the exact item ID, then use the official UUFinds research functions only when matched QC media is available for that source.")}</p>
       </section>
       <section className="hub-content">
-        {route === "products" && (
-          <>
-            <ProductGrid locale={currentLocale} t={t} routeCopy={routeCopy} />
-            <EvidenceMatrix title={t.products} intro={t.intro} check={t.check} />
-          </>
-        )}
-
-        {route === "articles" && (
-          <>
-            <div className="official-fact-strip article-standard">
-              <article><span>01</span><div><strong>Source</strong><p>{t.intro}</p></div></article>
-              <article><span>02</span><div><strong>Evidence</strong><p>{t.check}</p></div></article>
-              <article><span>03</span><div><strong>Destination</strong><p>CNBuy Sheet</p></div></article>
+        <ProductGrid locale={locale} routeCopy={routeCopy} />
+        <section className="evidence-matrix">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">{translate("Listing image versus QC evidence")}</p>
+              <h2>{translate("Do not grade the wrong photo set.")}</h2>
             </div>
-            <div className="article-grid article-hub-grid">
-              {articleCards.map((article, index) => {
-                const slug = article.href.split("/").filter(Boolean).pop() ?? "";
-                const copy = routeCopy?.guides[slug];
-                return (
-                  <Link href={`/${currentLocale}${article.href}`} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
-                    <div className="article-meta"><span>{article.tag}</span><b>{String(index + 1).padStart(2, "0")}</b></div>
-                    <h2>{copy?.title ?? article.title}</h2><p>{copy?.description ?? article.summary}</p>
-                    <div className="article-foot"><span>{article.read}</span><b>{t.read} ↗</b></div>
-                  </Link>
-                );
-              })}
-            </div>
-          </>
-        )}
-        <div className="source-method-note"><p className="eyebrow">Research boundary</p><p>{t.intro} {t.check}</p></div>
+            <p>{translate("UUFinds says it can help find QC photos and videos. The first job is still matching that material to the exact item you intend to open.")}</p>
+          </div>
+          <div className="evidence-grid">
+            {evidenceCards.map((card) => (
+              <article key={card.label}>
+                <p className="step-label">{translate(card.label)}</p>
+                <h3>{translate(card.title)}</h3>
+                <p>{translate(card.body)}</p>
+                <strong>{translate(card.note)}</strong>
+              </article>
+            ))}
+          </div>
+        </section>
+        <div className="source-method-note">
+          <p className="eyebrow">{translate("Research rule / Reviewed July 23, 2026")}</p>
+          <p>{translate("UUFinds publicly supports QC-photo and QC-video discovery, image recognition and marketplace or agent-link handling, but it does not sell the products. These product cards lead only to CNBuy Sheet, where current listing information must be confirmed.")}</p>
+        </div>
       </section>
-      <SiteFooter locale={currentLocale} />
+      <SiteFooter locale={locale} />
+    </main>
+  );
+}
+
+function LocalizedArticles({
+  locale,
+  t,
+}: {
+  locale: Locale;
+  t: (typeof text)[Locale];
+}) {
+  const translate = (value: string) => localizeText(locale, value);
+  const standards = [
+    {
+      title: "Claim standard",
+      body: "Feature statements must be supported by UUFinds’ public QC, account, product or app information.",
+    },
+    {
+      title: "Advice standard",
+      body: "Inspection advice must clearly distinguish a visible observation from an unsupported conclusion.",
+    },
+    {
+      title: "Link standard",
+      body: "Every shopping, category and product destination on this site points only to CNBuy Sheet.",
+    },
+  ];
+
+  return (
+    <main className="hub-page" lang={t.lang}>
+      <DocumentLanguage language={t.lang} />
+      <SiteHeader locale={t.region} routePath="/articles/" />
+      <section className="hub-hero article-hub-hero">
+        <p className="eyebrow">{translate("Articles / Official functions checked July 23, 2026")}</p>
+        <h1>{translate("Search-led guides.")}<br /><em>{translate("Source-led claims.")}</em></h1>
+        <p>{translate("Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to CNBuy Sheet.")}</p>
+      </section>
+      <section className="hub-content">
+        <div className="official-fact-strip article-standard">
+          {standards.map((standard, index) => (
+            <article key={standard.title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div><strong>{translate(standard.title)}</strong><p>{translate(standard.body)}</p></div>
+            </article>
+          ))}
+        </div>
+        <div className="article-grid article-hub-grid">
+          {articleCards.map((article, index) => {
+            const slug = article.href.split("/").filter(Boolean).pop() ?? "";
+            const guide = guides.find((item) => item.slug === slug);
+            const localizedGuide = guide ? localizeGuide(locale, guide) : undefined;
+            return (
+              <Link href={`/${locale}${article.href}`} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+                <div className="article-meta">
+                  <span>{translate(article.tag)}</span>
+                  <b>{String(index + 1).padStart(2, "0")}</b>
+                </div>
+                <h2>{locale === "en-gb" ? article.title : localizedGuide?.title ?? translate(article.title)}</h2>
+                <p>{locale === "en-gb" ? article.summary : localizedGuide?.description ?? translate(article.summary)}</p>
+                <div className="article-foot"><span>{translate(article.read)}</span><b>{translate("Read article ↗")}</b></div>
+              </Link>
+            );
+          })}
+        </div>
+        <div className="source-method-note">
+          <p className="eyebrow">{translate("Editorial source set")}</p>
+          <p>{translate("The current guide set was reviewed against UUFinds’ public QC finder and QC browsing copy, product-detail disclaimers, account pages, personalized display description and public app information. Where those sources do not establish a fact—such as a guaranteed number of recent QC sets, shipping price or product quality—the articles do not invent one.")}</p>
+        </div>
+      </section>
+      <SiteFooter locale={locale} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t.home, item: `https://uufindssheet.com/${locale}/` },
+          { "@type": "ListItem", position: 2, name: t.articles, item: `https://uufindssheet.com/${locale}/articles/` },
+        ],
+      }) }} />
     </main>
   );
 }
@@ -491,11 +620,9 @@ function LocalizedFAQ({ locale, t }: { locale: Locale; t: (typeof text)[Locale] 
 
 function ProductGrid({
   locale,
-  t,
   routeCopy,
 }: {
   locale: Locale;
-  t: (typeof text)[Locale];
   routeCopy: (typeof localizedRouteCopy)[Exclude<Locale, "en-gb">] | undefined;
 }) {
   return (
@@ -506,24 +633,10 @@ function ProductGrid({
             <SiteImage src={item.images[0]} alt={item.name} width={800} height={800} />
             <span>{String(index + 1).padStart(2, "0")} / 08</span>
           </div>
-          <div className="product-card-copy"><p>{routeCopy?.categories[item.category] ?? item.category}</p><h2>{item.shortName}</h2><div><span>¥{item.price}</span><b>{t.view} ↗</b></div></div>
+          <div className="product-card-copy"><p>{routeCopy?.categories[item.category] ?? item.category}</p><h2>{item.shortName}</h2><div><span>¥{item.price}</span><b>{localizeText(locale, "View details ↗")}</b></div></div>
         </Link>
       ))}
     </div>
-  );
-}
-
-function EvidenceMatrix({ title, intro, check }: { title: string; intro: string; check: string }) {
-  return (
-    <section className="evidence-matrix">
-      <div className="section-heading"><div><p className="eyebrow">UUFinds / QC / CNBuy Sheet</p><h2>{title}</h2></div><p>{intro}</p></div>
-      <div className="evidence-grid">
-        <article><p className="step-label">SOURCE LINK</p><h3>Match the exact item</h3><p>{intro}</p><strong>{check}</strong></article>
-        <article><p className="step-label">QC PHOTO</p><h3>Inspect visible evidence</h3><p>{check}</p><strong>A photographed item is not a guarantee for every later unit.</strong></article>
-        <article><p className="step-label">QC VIDEO</p><h3>Check motion and hidden angles</h3><p>{intro}</p><strong>Record missing evidence as unknown.</strong></article>
-        <article><p className="step-label">LIVE PAGE</p><h3>Confirm current facts</h3><p>{check}</p><strong>Use the current CNBuy Sheet page for live listing data.</strong></article>
-      </div>
-    </section>
   );
 }
 
@@ -532,12 +645,13 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
   const routeCopy = locale === "en-gb" ? undefined : localizedRouteCopy[locale as Exclude<Locale, "en-gb">];
   const category = routeCopy?.categories[product.category] ?? product.category;
   const inspection = routeCopy?.inspections[product.slug] ?? product.inspectionFocus;
+  const translate = (value: string) => localizeText(locale, value);
   return (
     <main className="product-page" lang={t.lang}>
       <DocumentLanguage language={t.lang} />
       <SiteHeader locale={t.region} routePath={`/products/${product.slug}/`} />
       <div className="guide-subnav"><Link className="back-link" href={`/${locale}/products/`}>← {t.backProducts}</Link></div>
-      <div className="product-breadcrumb" aria-label="Breadcrumb">
+      <div className="product-breadcrumb" aria-label={translate("Breadcrumb")}>
         <Link href={`/${locale}/`}>{t.home}</Link><span>/</span><a href={product.categoryUrl} target="_blank" rel="noreferrer">{category}</a><span>/</span><strong>{t.productDetail}</strong>
       </div>
       <article className="product-detail">
@@ -546,32 +660,82 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
             <SiteImage src={product.images[0]} alt={product.name} width={1200} height={1200} priority />
             <span>01 / {String(product.images.length).padStart(2, "0")}</span>
           </div>
-          <div className="product-thumbnails" aria-label="Additional product images">
+          <div className="product-thumbnails" aria-label={translate("Additional product images")}>
             {product.images.slice(1).map((image, index) => (
               <div key={image}><SiteImage src={image} alt={`${product.name} — view ${index + 2}`} width={700} height={700} /><span>{String(index + 2).padStart(2, "0")}</span></div>
             ))}
           </div>
         </div>
         <div className="product-summary">
-          <p className="eyebrow">{category}</p><h1>{product.shortName}</h1><p className="product-deck">{t.listingNote}</p>
-          <div className="product-price-row"><div><small>{t.price}</small><strong>¥{product.price}</strong></div><div><small>MAIN-SITE ID</small><strong>{product.listingId}</strong></div></div>
-          <a className="primary-product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">{t.open}</a>
-          <div className="live-note"><strong>{product.checked}</strong><p>{t.check}</p></div>
+          <p className="eyebrow">{translate("Product find /")} {category}</p>
+          <h1>{product.shortName}</h1>
+          <p className="product-deck">{translate("These are images published with the corresponding CNBuy Sheet listing, not a claimed UUFinds QC album. Use the item ID to keep the listing traceable, then compare separately matched QC material when it exists.")}</p>
+          <div className="product-price-row">
+            <div><small>{translate("PRICE SHOWN")}</small><strong>¥{product.price}</strong></div>
+            <div><small>{translate("MAIN-SITE ID")}</small><strong>{product.listingId}</strong></div>
+          </div>
+          <a className="primary-product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">
+            {translate("View this product on CNBuy Sheet")} <span aria-hidden="true">↗</span>
+          </a>
+          <div className="live-note">
+            <strong>{translate("Checked")} {translate(product.checked)}</strong>
+            <p>{translate("The displayed price and images are a dated snapshot. Confirm the current CNBuy Sheet listing for price, availability, sizes, colors, seller or source link and other live details.")}</p>
+          </div>
         </div>
       </article>
       <section className="product-checks">
-        <div><p className="eyebrow inverse">UUFinds / QC</p><h2>{t.how}</h2></div>
+        <div>
+          <p className="eyebrow inverse">{translate("Apply the UUFinds research method")}</p>
+          <h2>{translate("Three checks, three different jobs.")}</h2>
+        </div>
         <div className="product-check-grid">
-          <article><span>01</span><h3>Match</h3><p>{t.intro}</p></article>
-          <article><span>02</span><h3>Inspect</h3><p>{inspection}</p></article>
-          <article><span>03</span><h3>Verify</h3><p>{t.check}</p></article>
+          <article>
+            <span>01</span>
+            <h3>{translate("Match the exact source")}</h3>
+            <p>{translate("Confirm that the destination still shows item ID")} {product.listingId}{translate(". If UUFinds returns QC media, compare its source link, seller and visible variant—not only a similar thumbnail.")}</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>{translate("Inspect the visible evidence")}</h3>
+            <p>{translate("Review")} {inspection}{translate(". Compare more than one angle and record missing views or measurements as unknowns.")}</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>{translate("Verify current facts")}</h3>
+            <p>{translate("Check the current price, available variants, size information, availability and seller or source details on the CNBuy Sheet product page before deciding.")}</p>
+          </article>
         </div>
       </section>
       <section className="product-source-panel">
-        <div><p className="eyebrow">Evidence boundary</p><h2>{t.listingNote}</h2></div>
-        <div><p>{t.intro}</p><div className="product-source-links"><a href={product.mainSiteUrl} target="_blank" rel="noreferrer">{t.open}</a><a href={product.categoryUrl} target="_blank" rel="noreferrer">{category} ↗</a><Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{t.guide} →</Link></div></div>
+        <div><p className="eyebrow">{translate("Evidence boundary")}</p><h2>{translate("Listing media is not automatically QC media.")}</h2></div>
+        <div>
+          <p>{translate("UUFinds publicly describes QC-photo and QC-video discovery, image recognition and supported link handling, while also stating that it does not sell products. This independent page likewise does not process an order. It identifies the CNBuy Sheet product, explains what to inspect and keeps the final destination explicit.")}</p>
+          <div className="product-source-links">
+            <a href={product.mainSiteUrl} target="_blank" rel="noreferrer">{translate("CNBuy Sheet detail ↗")}</a>
+            <a href={product.categoryUrl} target="_blank" rel="noreferrer">{translate("More")} {category} ↗</a>
+            <Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{translate("QC checklist →")}</Link>
+          </div>
+        </div>
       </section>
       <SiteFooter locale={locale} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ItemPage",
+        name: product.name,
+        description: `${t.productDetail}: ${product.name}`,
+        url: `https://uufindssheet.com/${locale}/products/${product.slug}/`,
+        primaryImageOfPage: product.images[0],
+        dateModified: "2026-07-22",
+        inLanguage: t.lang,
+        mainEntity: {
+          "@type": "Product",
+          name: product.name,
+          image: product.images,
+          sku: product.listingId,
+          category,
+          url: product.mainSiteUrl,
+        },
+      }) }} />
     </main>
   );
 }
