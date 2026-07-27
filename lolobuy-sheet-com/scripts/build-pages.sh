@@ -10,6 +10,8 @@ npm run build
 pages_output="${project_root}/dist/client"
 worker_source="${project_root}/dist/server"
 esbuild="${project_root}/node_modules/.bin/esbuild"
+async_hooks_polyfill="${project_root}/node_modules/unenv/dist/runtime/node/async_hooks.mjs"
+empty_module="${project_root}/node_modules/unenv/dist/runtime/mock/empty.mjs"
 
 [[ -f "${worker_source}/index.js" ]] || {
   echo "Missing Vinext Worker entry: dist/server/index.js" >&2
@@ -19,13 +21,19 @@ esbuild="${project_root}/node_modules/.bin/esbuild"
   echo "Missing esbuild required to bundle the Pages Worker" >&2
   exit 69
 }
+[[ -f "${async_hooks_polyfill}" && -f "${empty_module}" ]] || {
+  echo "Missing Worker-compatible Node.js polyfills" >&2
+  exit 69
+}
 
 "${esbuild}" \
   "${worker_source}/index.js" \
   --bundle \
   --format=esm \
   --platform=neutral \
-  '--external:node:*' \
+  "--alias:node:async_hooks=${async_hooks_polyfill}" \
+  "--alias:node:fs=${empty_module}" \
+  "--alias:node:path=${empty_module}" \
   --outfile="${pages_output}/_worker.js"
 
 [[ -f "${pages_output}/_worker.js" ]] || {
