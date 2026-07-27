@@ -10,6 +10,8 @@ npm run build
 pages_output="${project_root}/dist/client"
 worker_source="${project_root}/dist/server"
 pages_worker_entry="${script_dir}/pages-worker-entry.mjs"
+asset_version="v20260727-1"
+versioned_assets="${pages_output}/assets/${asset_version}"
 esbuild="${project_root}/node_modules/.bin/esbuild"
 async_hooks_polyfill="${project_root}/node_modules/unenv/dist/runtime/node/async_hooks.mjs"
 empty_module="${project_root}/node_modules/unenv/dist/runtime/mock/empty.mjs"
@@ -28,6 +30,9 @@ process_shim="${script_dir}/pages-process-shim.mjs"
   exit 69
 }
 
+mkdir -p "${versioned_assets}"
+find "${pages_output}/assets" -maxdepth 1 -type f -exec cp {} "${versioned_assets}/" \;
+
 "${esbuild}" \
   "${pages_worker_entry}" \
   --bundle \
@@ -38,6 +43,7 @@ process_shim="${script_dir}/pages-process-shim.mjs"
   "--alias:node:fs=${empty_module}" \
   "--alias:node:path=${empty_module}" \
   "--inject:${process_shim}" \
+  "--define:PAGES_ASSET_VERSION=\"${asset_version}\"" \
   --outfile="${pages_output}/_worker.js"
 
 [[ -f "${pages_output}/_worker.js" ]] || {
@@ -48,11 +54,16 @@ process_shim="${script_dir}/pages-process-shim.mjs"
   echo "Missing packaged static assets in dist/client" >&2
   exit 66
 }
+compgen -G "${versioned_assets}/*.css" >/dev/null || {
+  echo "Missing cache-busted stylesheet in ${versioned_assets}" >&2
+  exit 66
+}
 
-node --input-type=module - "${pages_output}/_worker.js" <<'NODE'
+node --input-type=module - "${pages_output}/_worker.js" "${asset_version}" <<'NODE'
 import { pathToFileURL } from "node:url";
 
 const workerUrl = pathToFileURL(process.argv[2]);
+const assetVersion = process.argv[3];
 workerUrl.searchParams.set("pages-validation", `${process.pid}-${Date.now()}`);
 const worker = await import(workerUrl.href);
 if (!worker.default || typeof worker.default.fetch !== "function") {
@@ -61,7 +72,7 @@ if (!worker.default || typeof worker.default.fetch !== "function") {
 
 const assetMarker = "pages-static-asset";
 const assetResponse = await worker.default.fetch(
-  new Request("https://example.com/assets/test.css"),
+  new Request(`https://example.com/assets/${assetVersion}/test.css`),
   {
     ASSETS: {
       fetch() {
@@ -78,6 +89,26 @@ if (
   (await assetResponse.text()) !== assetMarker
 ) {
   throw new Error("Cloudflare Pages static assets must be forwarded through env.ASSETS");
+}
+
+const homeResponse = await worker.default.fetch(
+  new Request("https://example.com/"),
+  {
+    ASSETS: {
+      fetch() {
+        return new Response("not found", { status: 404 });
+      },
+    },
+  },
+  {},
+);
+const homeBody = await homeResponse.text();
+if (
+  homeResponse.status !== 200 ||
+  !homeBody.includes(`/assets/${assetVersion}/`) ||
+  /(?:src|href)="\/assets\/(?!v)/.test(homeBody)
+) {
+  throw new Error("Application responses must use the versioned Pages asset path");
 }
 NODE
 
