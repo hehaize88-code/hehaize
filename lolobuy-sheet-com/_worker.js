@@ -8,10 +8,26 @@ var __export = (target, all) => {
     __defProp(target, name, { get: all[name], enumerable: true });
 };
 
+// scripts/pages-process-shim.mjs
+var process;
+var init_pages_process_shim = __esm({
+  "scripts/pages-process-shim.mjs"() {
+    "use strict";
+    process = {
+      env: {},
+      versions: {},
+      emit() {
+        return false;
+      }
+    };
+  }
+});
+
 // node_modules/unenv/dist/runtime/node/internal/async_hooks/async-local-storage.mjs
 var _AsyncLocalStorage, AsyncLocalStorage2;
 var init_async_local_storage = __esm({
   "node_modules/unenv/dist/runtime/node/internal/async_hooks/async-local-storage.mjs"() {
+    init_pages_process_shim();
     _AsyncLocalStorage = class {
       __unenv__ = true;
       _currentStore;
@@ -54,6 +70,7 @@ var init_async_local_storage = __esm({
 var kInit, kBefore, kAfter, kDestroy, kPromiseResolve, _AsyncHook, asyncWrapProviders;
 var init_async_hook = __esm({
   "node_modules/unenv/dist/runtime/node/internal/async_hooks/async-hook.mjs"() {
+    init_pages_process_shim();
     kInit = /* @__PURE__ */ Symbol("init");
     kBefore = /* @__PURE__ */ Symbol("before");
     kAfter = /* @__PURE__ */ Symbol("after");
@@ -161,6 +178,7 @@ var init_async_hook = __esm({
 // node_modules/unenv/dist/runtime/node/async_hooks.mjs
 var init_async_hooks = __esm({
   "node_modules/unenv/dist/runtime/node/async_hooks.mjs"() {
+    init_pages_process_shim();
     init_async_local_storage();
     init_async_hook();
   }
@@ -171,6 +189,7 @@ var vite_rsc_assets_manifest_default;
 var init_vite_rsc_assets_manifest = __esm({
   "dist/server/__vite_rsc_assets_manifest.js"() {
     "use strict";
+    init_pages_process_shim();
     vite_rsc_assets_manifest_default = {
       "bootstrapScriptContent": 'import("/assets/index-DLMCD6S-.js")',
       "clientReferenceDeps": {
@@ -272,6 +291,7 @@ var vite_rsc_assets_manifest_default2;
 var init_vite_rsc_assets_manifest2 = __esm({
   "dist/server/ssr/__vite_rsc_assets_manifest.js"() {
     "use strict";
+    init_pages_process_shim();
     vite_rsc_assets_manifest_default2 = {
       "bootstrapScriptContent": 'import("/assets/index-DLMCD6S-.js")',
       "clientReferenceDeps": {
@@ -857,6 +877,7 @@ var import_ipaddr, import_react, import_jsx_runtime, nestedKeys, fixedMap, camel
 var init_image_BZzd6GLU = __esm({
   "dist/server/ssr/assets/image-BZzd6GLU.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     import_ipaddr = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((exports, module) => {
       (function(root) {
@@ -3440,6 +3461,7 @@ var import_react2, RouterContext, VINEXT_VERSION, __basePath, routerEvents, _ssr
 var init_router_DBBCSpZ5 = __esm({
   "dist/server/ssr/assets/router-DBBCSpZ5.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     init_link_BbZtp5cn();
     import_react2 = /* @__PURE__ */ __toESM(require_react(), 1);
@@ -3985,6 +4007,7 @@ var PATH_DELIMITER_REGEX, _getI18nContext, import_react3, import_jsx_runtime2, L
 var init_link_BbZtp5cn = __esm({
   "dist/server/ssr/assets/link-BbZtp5cn.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     PATH_DELIMITER_REGEX = /([/#?\\]|%(2f|23|3f|5c))/gi;
     _getI18nContext = () => {
@@ -4292,6 +4315,7 @@ var import_react4, localeOptions, headerCopy, searchCopy, homeCopy, footerCopy, 
 var init_site_header_BiFGkBby = __esm({
   "dist/server/ssr/assets/site-header-BiFGkBby.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     init_image_BZzd6GLU();
     init_link_BbZtp5cn();
@@ -4876,6 +4900,7 @@ var import_jsx_runtime4, siteLabels, destinationBase, productFinds, articles, fa
 var init_localized_data_CseP4yEO = __esm({
   "dist/server/ssr/assets/localized-data-CseP4yEO.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     init_image_BZzd6GLU();
     init_link_BbZtp5cn();
@@ -7915,6 +7940,7 @@ var import_react5, articleUiCopy, import_jsx_runtime5, categoryEdits;
 var init_home_client_f5bq30WP = __esm({
   "dist/server/ssr/assets/home-client-f5bq30WP.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     init_image_BZzd6GLU();
     init_link_BbZtp5cn();
@@ -7998,6 +8024,7 @@ var import_react6;
 var init_layout_segment_context_Cf4mxF9d = __esm({
   "dist/server/ssr/assets/layout-segment-context-Cf4mxF9d.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     import_react6 = /* @__PURE__ */ __toESM(require_react(), 1);
   }
@@ -8180,6 +8207,7 @@ var import_react7, import_jsx_runtime6, directoryCopy;
 var init_finds_client_B35qnxSP = __esm({
   "dist/server/ssr/assets/finds-client-B35qnxSP.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     init_image_BZzd6GLU();
     init_link_BbZtp5cn();
@@ -8411,6 +8439,7 @@ var import_react8, import_jsx_runtime7, RedirectErrorBoundary, ErrorBoundaryInne
 var init_error_boundary_7uI2t8DX = __esm({
   "dist/server/ssr/assets/error-boundary-7uI2t8DX.js"() {
     "use strict";
+    init_pages_process_shim();
     init_ssr();
     import_react8 = /* @__PURE__ */ __toESM(require_react(), 1);
     import_jsx_runtime7 = require_jsx_runtime();
@@ -9788,6 +9817,7 @@ var __create, __defProp2, __getOwnPropDesc, __getOwnPropNames2, __getProtoOf, __
 var init_ssr = __esm({
   "dist/server/ssr/index.js"() {
     "use strict";
+    init_pages_process_shim();
     init_vite_rsc_assets_manifest2();
     init_async_hooks();
     init_async_hooks();
@@ -22127,7 +22157,7 @@ function getAndClearPendingCookies() {
   return cookies;
 }
 function getDraftSecret() {
-  return "9faefabd-2a2f-4eb6-84b8-87b960e025a9";
+  return "8f25dbe4-70f8-4b9b-b485-c00949337897";
 }
 function getDraftModeCookieHeader() {
   const state = _getState$2();
@@ -27941,7 +27971,7 @@ function buildCacheKey(prefix, pathname, suffix) {
   if (key.length <= 200) return key;
   return `${prefix}:__hash:${fnv1a64(normalized)}${suffixPart}`;
 }
-function appIsrCacheKey(pathname, suffix, buildId = "63172eee-6e33-43ef-8da8-d012d6d9a7f1") {
+function appIsrCacheKey(pathname, suffix, buildId = "f62c88ff-89cd-4a4e-9bb7-656072c39727") {
   return buildCacheKey(buildId ? `app:${buildId}` : "app", pathname, suffix);
 }
 function appIsrHtmlKey(pathname) {
@@ -28251,7 +28281,7 @@ function createAppPageArtifactCompatibility(element, routePattern2) {
       routePattern: routePattern2,
       rootBoundaryId
     }),
-    deploymentVersion: "63172eee-6e33-43ef-8da8-d012d6d9a7f1",
+    deploymentVersion: "f62c88ff-89cd-4a4e-9bb7-656072c39727",
     rootBoundaryId
   });
 }
@@ -30985,6 +31015,7 @@ async function handleRequest(request, env, ctx) {
 var __create2, __defProp3, __getOwnPropDesc2, __getOwnPropNames3, __getProtoOf2, __hasOwnProp2, __commonJSMin2, __exportAll2, __copyProps2, __toESM2, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES, ABSOLUTE_MAX_WIDTH, IMAGE_CACHE_CONTROL, SAFE_IMAGE_CONTENT_TYPES, _g$8, _REQUEST_CONTEXT_ALS_KEY2, _g$7, _als$4, _als$3, VINEXT_CACHE_HEADER, VINEXT_STATIC_FILE_HEADER, VINEXT_MW_CTX_HEADER, VINEXT_TIMING_HEADER, VINEXT_PRERENDER_SECRET_HEADER, VINEXT_PARAMS_HEADER2, VINEXT_MOUNTED_SLOTS_HEADER2, VINEXT_INTERCEPTION_CONTEXT_HEADER2, VINEXT_RSC_RENDER_MODE_HEADER2, NEXTJS_ACTION_NOT_FOUND_HEADER, ACTION_REVALIDATED_HEADER, ACTION_REDIRECT_HEADER, ACTION_REDIRECT_TYPE_HEADER, ACTION_REDIRECT_STATUS_HEADER, MIDDLEWARE_REQUEST_HEADER_PREFIX, MIDDLEWARE_OVERRIDE_HEADERS, MIDDLEWARE_SET_COOKIE_HEADER, MIDDLEWARE_NEXT_HEADER, MIDDLEWARE_REWRITE_HEADER, MIDDLEWARE_REDIRECT_HEADER, MIDDLEWARE_SKIP_HEADER, NEXT_ROUTER_STATE_TREE_HEADER2, NEXT_ROUTER_PREFETCH_HEADER2, NEXT_ROUTER_SEGMENT_PREFETCH_HEADER2, NEXT_URL_HEADER2, FLIGHT_HEADERS, INTERNAL_HEADERS, CREDENTIAL_REQUEST_HEADERS, _compiledPatternCache, _compiledHeaderSourceCache, _compiledConditionCache, _compiledDestinationParamCache, _LOCALE_STATIC_RE, _redirectIndexCache, HOP_BY_HOP_HEADERS, REQUEST_HOP_BY_HOP_HEADERS, NO_BODY_RESPONSE_STATUSES, TinyAssertionError, SERVER_REFERENCE_PREFIX, SERVER_DECODE_CLIENT_PREFIX, require_react_react_server_production, require_react_react_server, require_react_dom_react_server_production, require_react_dom_react_server, require_react_server_dom_webpack_server_edge_production, import_server_edge2, init2, requireModule, require_react_server_dom_webpack_client_edge_production2, decodeReply, createTemporaryReferenceSet, server_references_default, REACT_FLIGHT_STYLESHEET_PRELOAD_HINT, import_react_react_server, ReadonlyURLSearchParamsError2, ReadonlyURLSearchParams2, LEADING_IGNORED2, SCHEME_IGNORED2, APP_INTERCEPTION_SEPARATOR2, APP_ARTIFACT_COMPATIBILITY_KEY2, APP_INTERCEPTION_CONTEXT_KEY2, APP_LAYOUT_IDS_KEY2, APP_LAYOUT_FLAGS_KEY2, APP_ROUTE_KEY2, APP_ROOT_LAYOUT_KEY2, APP_UNMATCHED_SLOT_WIRE_VALUE2, UNMATCHED_SLOT2, AppElementsWire2, APP_RSC_RENDER_MODE_NAVIGATION2, APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI2, APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI2, VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM2, VINEXT_RSC_VARY_HEADER, CACHE_BUSTING_DIGEST_BYTES2, textEncoder2, _SERVER_INSERTED_HTML_CTX_KEY2, GLOBAL_ACCESSORS_KEY2, _GLOBAL_ACCESSORS_KEY2, _GLOBAL_HYDRATION_CONTEXT_KEY2, _serverContext2, _getServerContext2, _setServerContext2, isServer2, _CLIENT_NAV_STATE_KEY2, HTTP_ERROR_FALLBACK_ERROR_CODE2, VinextNavigationError2, VALID_COOKIE_NAME_RE, _FALLBACK_KEY$4, _g$6, _als$2, _fallbackState$3, _HEADERS_MUTATING_METHODS, DRAFT_MODE_COOKIE, wellKnownProperties, require_react_jsx_runtime_react_server_production, import_jsx_runtime_react_server, DEFAULT_VIEWPORT, OUT_OF_CLASS_CHAR, OUT_OF_CLASS_RUN, workUnitAsyncStorage, MemoryCacheHandler, _HANDLER_KEY, _gHandler, _resolvedIOPromise, _FALLBACK_KEY$3, _g$5, _cacheAls, _cacheFallbackState, ACTION_DID_NOT_REVALIDATE$1, HEADER_BLOCKLIST, CACHE_KEY_PREFIX, MAX_CACHE_KEY_BODY_BYTES, BodyTooLargeForCacheKeyError, SkipCacheKeyGenerationError, AUTH_HEADERS, _PENDING_KEY, _gPending, pendingRefetches, DEDUP_TIMEOUT_MS, _ORIG_FETCH_KEY, _gFetch, originalFetch, _FALLBACK_KEY$2, _g$4, _als$12, _noop, _responseBodyRegistry, _fallbackState$2, _PATCH_KEY, ESCAPE_REGEX, ADDITIVE_RESPONSE_HEADER_NAMES, PATH_DELIMITER_REGEX2, NextRequest, NextURL, RequestCookies, ReadonlyRequestCookiesError, REQUEST_HEADERS_MUTATING_METHODS, ReadonlyRequestHeadersError, NextFetchEvent, EMPTY_MIDDLEWARE_REQUEST_CONTEXT, _mwPatternCache, FLIGHT_HEADER_SET, NEVER_CACHE_CONTROL, STATIC_CACHE_CONTROL, STALE_REVALIDATE_CACHE_CONTROL, NO_STORE_CACHE_CONTROL$1, NEXT_CACHE_IMPLICIT_TAG_ID, _FALLBACK_KEY$1, _g$3, _fallbackState$1, STATIC_PARAMS_ENDPOINT, PAGES_STATIC_PATHS_ENDPOINT, JSON_HEADERS, metadataImageIdPattern, routeFunctionCache, ROUTE_HANDLER_HTTP_METHODS, _KNOWN_DYNAMIC_APP_ROUTE_HANDLERS_KEY, _g$22, knownDynamicAppRouteHandlers, APP_ROUTE_REWRITE_ERROR, APP_ROUTE_NEXT_ERROR, SERVER_ACTION_NOT_FOUND_DOCS, SERVER_ACTION_NOT_FOUND_BODY, SERVER_ACTION_ARGS_LIMIT, ACTION_DID_NOT_REVALIDATE, ACTION_DID_REVALIDATE_STATIC_AND_DYNAMIC, ErrorBoundary2, ForbiddenBoundary2, NotFoundBoundary2, RedirectBoundary2, UnauthorizedBoundary2, LayoutSegmentProvider2, Children2, ParallelSlot2, Slot2, _clientHookPattern, EMPTY_MW_CTX, _PENDING_REGEN_KEY, _g$12, pendingRegenerations, _REVALIDATE_KEY, NO_STORE_CACHE_CONTROL, DYNAMIC_VALUES, FETCH_CACHE_VALUES, _FALLBACK_KEY2, _g2, _als2, _fallbackState2, _accessors2, injectedFonts, injectedClassRules, injectedVariableRules, ssrFontStyles$1, ssrFontUrls, ssrFontPreloads$1, ssrFontPreloadHrefs, injectedSelfHosted, googleFonts, ssrFontStyles, ssrFontPreloads, suppressHookWarningAls, _origConsoleError, home_client_default, localeOptions2, headerCopy2, searchCopy2, footerCopy2, faqPageCopy, workflowPageCopy, page_exports$13, Resources, Geist, Geist_Mono, layout_exports, geistSans, geistMono, metadata$10, $$wrap_RootLayout, link_default, image_default, siteLabels2, site_header_default, not_found_exports, commonPageCopy, categoriesPageCopy, qcPageCopy, shippingPageCopy, aboutPageCopy, articlesIndexCopy, articleUiCopy2, contactPageCopy, privacyPageCopy, termsPageCopy, page_exports$12, metadata$9, destinationBase2, productFinds2, categories, articles2, faqs2, productText2, categoryText, faqText2, articleMetaText2, articleBodyText2, page_exports$11, metadata$8, page_exports$10, metadata$7, page_exports$9, metadata$6, page_exports$8, metadata$5, finds_client_default, page_exports$7, metadataCopy, page_exports$6, metadata$4, page_exports$5, metadata$3, page_exports$4, metadata$2, stageLinks, page_exports$3, metadata$1, route_exports, baseUrl$1, staticRoutes, page_exports$2, metadata, page_exports$1, page_exports, productPageCopy, productMetadataCopy, robots_exports, sitemap_exports, baseUrl, renderToReadableStream, __isrDebug, __classDebug, routes, __routeMatcher, metadataRoutes, rootNotFoundModule, rootForbiddenModule, rootUnauthorizedModule, rootLayouts, createRscOnErrorHandler, __fallbackRenderer, __basePath3, __trailingSlash, __i18nConfig, __configRedirects, __configRewrites, __configHeaders, __publicFiles, __allowedOrigins, __expireTime, __allowedDevOrigins, __safeDevHosts, __MAX_ACTION_BODY_SIZE, _virtual_vinext_rsc_entry_default, app_router_entry_default, worker_entry_default;
 var init_index = __esm({
   "dist/server/index.js"() {
+    init_pages_process_shim();
     init_async_hooks();
     init_async_hooks();
     init_vite_rsc_assets_manifest();
@@ -34424,7 +34455,7 @@ var init_index = __esm({
       * Matches the Next.js API: `request.nextUrl.buildId`.
       */
       get buildId() {
-        return "63172eee-6e33-43ef-8da8-d012d6d9a7f1";
+        return "f62c88ff-89cd-4a4e-9bb7-656072c39727";
       }
     };
     RequestCookies = class {

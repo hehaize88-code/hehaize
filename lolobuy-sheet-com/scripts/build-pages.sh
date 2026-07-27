@@ -12,6 +12,7 @@ worker_source="${project_root}/dist/server"
 esbuild="${project_root}/node_modules/.bin/esbuild"
 async_hooks_polyfill="${project_root}/node_modules/unenv/dist/runtime/node/async_hooks.mjs"
 empty_module="${project_root}/node_modules/unenv/dist/runtime/mock/empty.mjs"
+process_shim="${script_dir}/pages-process-shim.mjs"
 
 [[ -f "${worker_source}/index.js" ]] || {
   echo "Missing Vinext Worker entry: dist/server/index.js" >&2
@@ -21,7 +22,7 @@ empty_module="${project_root}/node_modules/unenv/dist/runtime/mock/empty.mjs"
   echo "Missing esbuild required to bundle the Pages Worker" >&2
   exit 69
 }
-[[ -f "${async_hooks_polyfill}" && -f "${empty_module}" ]] || {
+[[ -f "${async_hooks_polyfill}" && -f "${empty_module}" && -f "${process_shim}" ]] || {
   echo "Missing Worker-compatible Node.js polyfills" >&2
   exit 69
 }
@@ -34,6 +35,7 @@ empty_module="${project_root}/node_modules/unenv/dist/runtime/mock/empty.mjs"
   "--alias:node:async_hooks=${async_hooks_polyfill}" \
   "--alias:node:fs=${empty_module}" \
   "--alias:node:path=${empty_module}" \
+  "--inject:${process_shim}" \
   --outfile="${pages_output}/_worker.js"
 
 [[ -f "${pages_output}/_worker.js" ]] || {
