@@ -9,6 +9,7 @@ npm run build
 
 pages_output="${project_root}/dist/client"
 worker_source="${project_root}/dist/server"
+pages_worker_entry="${script_dir}/pages-worker-entry.mjs"
 esbuild="${project_root}/node_modules/.bin/esbuild"
 async_hooks_polyfill="${project_root}/node_modules/unenv/dist/runtime/node/async_hooks.mjs"
 empty_module="${project_root}/node_modules/unenv/dist/runtime/mock/empty.mjs"
@@ -22,16 +23,17 @@ process_shim="${script_dir}/pages-process-shim.mjs"
   echo "Missing esbuild required to bundle the Pages Worker" >&2
   exit 69
 }
-[[ -f "${async_hooks_polyfill}" && -f "${empty_module}" && -f "${process_shim}" ]] || {
+[[ -f "${pages_worker_entry}" && -f "${async_hooks_polyfill}" && -f "${empty_module}" && -f "${process_shim}" ]] || {
   echo "Missing Worker-compatible Node.js polyfills" >&2
   exit 69
 }
 
 "${esbuild}" \
-  "${worker_source}/index.js" \
+  "${pages_worker_entry}" \
   --bundle \
   --format=esm \
   --platform=neutral \
+  --minify \
   "--alias:node:async_hooks=${async_hooks_polyfill}" \
   "--alias:node:fs=${empty_module}" \
   "--alias:node:path=${empty_module}" \
@@ -55,6 +57,27 @@ workerUrl.searchParams.set("pages-validation", `${process.pid}-${Date.now()}`);
 const worker = await import(workerUrl.href);
 if (!worker.default || typeof worker.default.fetch !== "function") {
   throw new Error("dist/client/_worker.js must export a callable default.fetch");
+}
+
+const assetMarker = "pages-static-asset";
+const assetResponse = await worker.default.fetch(
+  new Request("https://example.com/assets/test.css"),
+  {
+    ASSETS: {
+      fetch() {
+        return new Response(assetMarker, {
+          headers: { "content-type": "text/css" },
+        });
+      },
+    },
+  },
+  {},
+);
+if (
+  assetResponse.status !== 200 ||
+  (await assetResponse.text()) !== assetMarker
+) {
+  throw new Error("Cloudflare Pages static assets must be forwarded through env.ASSETS");
 }
 NODE
 
