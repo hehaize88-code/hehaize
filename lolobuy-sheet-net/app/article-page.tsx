@@ -30,8 +30,15 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
     author: {
       "@type": "Organization",
       name: "LoloBuy Sheet Editorial",
-      url: "https://lolobuy-sheet.net/",
+      url: "https://lolobuy-sheet.net/about",
     },
+    editor: {
+      "@type": "Organization",
+      name: "LoloBuy Sheet Editorial",
+      url: "https://lolobuy-sheet.net/about",
+    },
+    publishingPrinciples:
+      "https://lolobuy-sheet.net/editorial-policy",
     publisher: {
       "@type": "Organization",
       name: "LoloBuy Sheet",
@@ -91,6 +98,25 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
               <p className="eyebrow">{article.eyebrow}</p>
               <h1>{article.title}</h1>
               <p className="article-standfirst">{article.standfirst}</p>
+              <div className="article-byline">
+                <div>
+                  <p>
+                    Written by{" "}
+                    <Link href="/about">LoloBuy Sheet Editorial</Link>
+                  </p>
+                  <p>
+                    Fact-checked against public LoloBuy information
+                  </p>
+                  <p>Last reviewed: {article.checkedDate}</p>
+                </div>
+                <nav aria-label="Article editorial information">
+                  <Link href="/editorial-policy">Editorial policy</Link>
+                  <Link href="/research-method">
+                    Sources &amp; research method
+                  </Link>
+                  <Link href="/contact">Corrections</Link>
+                </nav>
+              </div>
               <dl className="article-meta">
                 <div>
                   <dt>Checked</dt>

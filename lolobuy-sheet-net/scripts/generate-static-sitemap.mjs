@@ -16,6 +16,7 @@ const contentDates = JSON.parse(
 );
 const corePaths = Object.keys(contentDates.core);
 const articleSlugs = Object.keys(contentDates.articles);
+const trustPaths = Object.keys(contentDates.trust);
 
 function localizedPath(locale, pathname) {
   if (locale === "en") return pathname;
@@ -48,7 +49,12 @@ const articleEntries = articleSlugs.map((slug) => ({
   alternates: "",
   lastModified: contentDates.articles[slug].modified,
 }));
-const entries = [...localizedEntries, ...articleEntries];
+const trustEntries = trustPaths.map((pathname) => ({
+  location: absolute(pathname),
+  alternates: "",
+  lastModified: contentDates.trust[pathname],
+}));
+const entries = [...localizedEntries, ...articleEntries, ...trustEntries];
 
 for (const entry of entries) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(entry.lastModified)) {

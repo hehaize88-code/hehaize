@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     string,
     { published: string; modified: string }
   >;
+  const trustDates = contentDates.trust as Record<string, string>;
 
   return [
     ...corePaths.flatMap((path) =>
@@ -34,6 +35,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articles.map((article) => ({
       url: absoluteUrl(`/articles/${article.slug}`),
       lastModified: articleDates[article.slug].modified,
+    })),
+    ...Object.entries(trustDates).map(([path, lastModified]) => ({
+      url: absoluteUrl(path),
+      lastModified,
     })),
   ];
 }

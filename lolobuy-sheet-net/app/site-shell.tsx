@@ -88,6 +88,13 @@ export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
         <Link href="/shipping">Shipping</Link>
         <Link href="/articles">SEO Articles</Link>
       </div>
+      <div>
+        <p className="footer-label">EDITORIAL</p>
+        <Link href="/about">About</Link>
+        <Link href="/editorial-policy">Editorial policy</Link>
+        <Link href="/research-method">Research method</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
       <p className="footer-disclaimer">
         This is an independent informational website and is not LoloBuy or an
         official LoloBuy service. Product information can change. Always review

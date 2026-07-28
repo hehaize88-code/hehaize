@@ -82,7 +82,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 43 canonical sitemap URLs with language alternates", async () => {
+test("publishes 47 canonical sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -91,17 +91,17 @@ test("publishes 43 canonical sitemap URLs with language alternates", async () =>
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 43);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 47);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
     xml,
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 43);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 47);
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-27<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-28<\/lastmod>/,
   );
   assert.match(
     xml,
@@ -111,6 +111,16 @@ test("publishes 43 canonical sitemap URLs with language alternates", async () =>
     new Set([...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1])).size,
     2,
   );
+  assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/about<\/loc>/);
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/editorial-policy<\/loc>/,
+  );
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/research-method<\/loc>/,
+  );
+  assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/contact<\/loc>/);
 });
 
 test("uses concise standalone SEO titles for all long-form guides", async () => {
@@ -153,4 +163,85 @@ test("redirects legacy language parameters to clean locale paths", async () => {
     response.headers.get("location"),
     "http://localhost/fr/shipping",
   );
+});
+
+function visibleMainWordCount(html) {
+  const main = html.match(/<main\b[\s\S]*?<\/main>/i)?.[0] ?? html;
+  const text = main
+    .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&(?:[a-z]+|#\d+);/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return text ? text.split(" ").length : 0;
+}
+
+test("gives every standalone guide enough independent editorial value", async () => {
+  const minimumWords = new Map([
+    ["/how-it-works", 500],
+    ["/categories", 480],
+    ["/products", 490],
+    ["/faq", 1000],
+    ["/articles", 520],
+    ["/qc-guide", 570],
+    ["/shipping", 580],
+  ]);
+
+  for (const [pathname, minimum] of minimumWords) {
+    const response = await fetchPage(pathname);
+    assert.equal(response.status, 200, pathname);
+    const count = visibleMainWordCount(await response.text());
+    assert.equal(
+      count >= minimum,
+      true,
+      `${pathname} rendered ${count} words; expected at least ${minimum}`,
+    );
+  }
+});
+
+test("shows visible authorship that agrees with Article structured data", async () => {
+  for (const pathname of [
+    "/articles/how-to-use-lolobuy-spreadsheet",
+    "/articles/lolobuy-qc-photos-guide",
+    "/articles/lolobuy-shipping-cost-guide",
+  ]) {
+    const response = await fetchPage(pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+
+    assert.match(html, /Written by/);
+    assert.match(html, /LoloBuy Sheet Editorial/);
+    assert.match(html, /href="\/about"/);
+    assert.match(html, /href="\/editorial-policy"/);
+    assert.match(html, /href="\/research-method"/);
+    assert.match(html, /Last reviewed:/);
+    assert.match(
+      html,
+      /"publishingPrinciples":"https:\/\/lolobuy-sheet\.net\/editorial-policy"/,
+    );
+  }
+});
+
+test("publishes transparent editorial identity and policy pages", async () => {
+  const pages = new Map([
+    ["/about", "Who writes LoloBuy Sheet"],
+    ["/editorial-policy", "No invented fees, ratings or customer stories"],
+    ["/research-method", "How a LoloBuy Sheet guide is researched"],
+    ["/contact", "This static site does not currently publish a verified editorial inbox"],
+  ]);
+
+  for (const [pathname, expectedText] of pages) {
+    const response = await fetchPage(pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+    assert.match(html, new RegExp(expectedText));
+    assert.match(
+      html,
+      new RegExp(
+        `rel="canonical" href="https://lolobuy-sheet\\.net${pathname.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`,
+      ),
+    );
+    assert.match(html, /LoloBuy Sheet Editorial/);
+  }
 });
