@@ -1,3 +1,5 @@
+import contentDates from "./content-dates.json";
+
 export type ArticleSection = {
   heading: string;
   paragraphs: string[];
@@ -8,6 +10,7 @@ export type ArticleSection = {
 export type ArticleRecord = {
   slug: string;
   title: string;
+  seoTitle: string;
   shortTitle: string;
   description: string;
   eyebrow: string;
@@ -15,6 +18,8 @@ export type ArticleRecord = {
   secondaryKeywords: string[];
   intent: string;
   checkedDate: string;
+  publishedDate: string;
+  modifiedDate: string;
   image: string;
   imageAlt: string;
   imageCaption: string;
@@ -29,6 +34,7 @@ export const articles: ArticleRecord[] = [
     slug: "how-to-use-lolobuy-spreadsheet",
     title:
       "How to Use a LoloBuy Spreadsheet Without Losing the Original Product Context",
+    seoTitle: "How to Use a LoloBuy Spreadsheet | 2026 Guide",
     shortTitle: "How to Use a LoloBuy Spreadsheet",
     description:
       "A practical LoloBuy spreadsheet guide covering source links, variants, seller notes, W2C terminology and the checks to make before ordering.",
@@ -42,6 +48,10 @@ export const articles: ArticleRecord[] = [
     ],
     intent: "Find products and understand what to verify before ordering",
     checkedDate: "28 July 2026",
+    publishedDate:
+      contentDates.articles["how-to-use-lolobuy-spreadsheet"].published,
+    modifiedDate:
+      contentDates.articles["how-to-use-lolobuy-spreadsheet"].modified,
     image: "/products/3359.webp",
     imageAlt:
       "A product image used in the LoloBuy Sheet catalog as a discovery reference",
@@ -142,6 +152,7 @@ export const articles: ArticleRecord[] = [
   {
     slug: "lolobuy-qc-photos-guide",
     title: "LoloBuy QC Photos: A Warehouse Inspection Guide That Avoids Guesswork",
+    seoTitle: "LoloBuy QC Photos Guide: What to Check",
     shortTitle: "LoloBuy QC Photos Guide",
     description:
       "Learn how to review LoloBuy QC photos for identity, variants, measurements and visible condition, plus what warehouse pictures cannot prove.",
@@ -155,6 +166,8 @@ export const articles: ArticleRecord[] = [
     ],
     intent: "Review a warehouse arrival before parcel submission",
     checkedDate: "28 July 2026",
+    publishedDate: contentDates.articles["lolobuy-qc-photos-guide"].published,
+    modifiedDate: contentDates.articles["lolobuy-qc-photos-guide"].modified,
     image: "/products/3368.webp",
     imageAlt:
       "Catalog image of a garment used to explain the difference between seller images and warehouse QC photos",
@@ -276,6 +289,7 @@ export const articles: ArticleRecord[] = [
     slug: "lolobuy-shipping-cost-guide",
     title:
       "LoloBuy Shipping Cost Guide: Weight, Parcel Size, Routes and Consolidation",
+    seoTitle: "LoloBuy Shipping Cost Guide: Weight & Parcel Size",
     shortTitle: "LoloBuy Shipping Cost Guide",
     description:
       "Understand LoloBuy shipping cost variables, actual versus volumetric weight, consolidation, packaging, route restrictions and realistic parcel estimates.",
@@ -289,6 +303,10 @@ export const articles: ArticleRecord[] = [
     ],
     intent: "Estimate and plan an international parcel after warehouse arrival",
     checkedDate: "28 July 2026",
+    publishedDate:
+      contentDates.articles["lolobuy-shipping-cost-guide"].published,
+    modifiedDate:
+      contentDates.articles["lolobuy-shipping-cost-guide"].modified,
     image: "/products/3372.webp",
     imageAlt:
       "A product in the catalog used to illustrate how size and fragility can affect parcel planning",
