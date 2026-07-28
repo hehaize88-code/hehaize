@@ -28,6 +28,15 @@ async function fetchPage(worker, path) {
   );
 }
 
+function decodeHtml(value) {
+  return value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&#x27;", "'")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">");
+}
+
 test("renders production metadata without development-preview signals", async () => {
   const worker = await loadWorker();
   const response = await fetchPage(worker, "/");
@@ -124,6 +133,92 @@ test("publishes all 140 language URLs in the sitemap", async () => {
     /https:\/\/lolobuy-sheet\.com\/it\/articles\/lolobuy-weidian-link-guide/,
   );
   assert.match(xml, /hreflang="x-default"/);
+});
+
+test("keeps sitemap.xml as the only sitemap document", async () => {
+  const worker = await loadWorker();
+  const response = await fetchPage(worker, "/sitemap-main.xml");
+
+  assert.equal(response.status, 301);
+  assert.equal(
+    response.headers.get("location"),
+    "https://lolobuy-sheet.com/sitemap.xml",
+  );
+  assert.doesNotMatch(await response.text(), /<urlset\b/i);
+});
+
+test("returns a search-safe 404 without a homepage canonical", async () => {
+  const worker = await loadWorker();
+  const response = await fetchPage(worker, "/missing-audit-page");
+  const html = await response.text();
+
+  assert.equal(response.status, 404);
+  assert.match(html, /<title>Page Not Found \| Lolobuy Sheet<\/title>/i);
+  assert.match(
+    html,
+    /<meta name="robots" content="noindex, follow"\s*\/?>/i,
+  );
+  assert.doesNotMatch(html, /<link rel="canonical"/i);
+  assert.doesNotMatch(
+    html,
+    /<meta property="og:url" content="https:\/\/lolobuy-sheet\.com\/"/i,
+  );
+});
+
+test("adds the required security headers to application responses", async () => {
+  const worker = await loadWorker();
+  const response = await fetchPage(worker, "/");
+
+  assert.equal(
+    response.headers.get("strict-transport-security"),
+    "max-age=31536000; includeSubDomains",
+  );
+  assert.equal(
+    response.headers.get("x-content-type-options"),
+    "nosniff",
+  );
+  assert.equal(
+    response.headers.get("referrer-policy"),
+    "strict-origin-when-cross-origin",
+  );
+  assert.equal(response.headers.get("x-frame-options"), "DENY");
+  assert.match(
+    response.headers.get("content-security-policy") ?? "",
+    /default-src 'self'.*frame-ancestors 'none'.*object-src 'none'/i,
+  );
+});
+
+test("keeps every indexed title concise and every description snippet bounded", async () => {
+  const worker = await loadWorker();
+  const sitemapResponse = await fetchPage(worker, "/sitemap.xml");
+  const sitemap = await sitemapResponse.text();
+  const paths = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
+    (match) => new URL(match[1]).pathname,
+  );
+  const titles = new Map();
+
+  for (const path of paths) {
+    const response = await fetchPage(worker, path);
+    const html = await response.text();
+    const title = decodeHtml(html.match(/<title>([^<]+)<\/title>/i)?.[1] ?? "");
+    const description = decodeHtml(
+      html.match(/<meta name="description" content="([^"]*)"/i)?.[1] ?? "",
+    );
+
+    assert.equal(response.status, 200, path);
+    assert.ok(title.length > 0, `${path} must have a title`);
+    assert.ok(title.length <= 60, `${path} title is ${title.length} characters`);
+    assert.ok(
+      description.length > 0,
+      `${path} must have a meta description`,
+    );
+    assert.ok(
+      description.length <= 155,
+      `${path} description is ${description.length} characters`,
+    );
+    assert.equal(titles.has(title), false, `${path} duplicates title "${title}"`);
+    titles.set(title, path);
+  }
 });
 
 test("serves substantial localized category and article landing pages", async () => {
@@ -225,5 +320,23 @@ test("publishes article images, social previews and complete article schema", as
       /"publisher":\{.*?"url":"https:\/\/lolobuy-sheet\.com\/".*?"logo":\{"@type":"ImageObject","url":"https:\/\/lolobuy-sheet\.com\/social\/lolobuy-publisher-logo\.png"/,
     );
     assert.match(html, /"@type":"BreadcrumbList"/);
+    assert.match(html, /class="article-context-links"/);
+    assert.match(html, /href="\/categories\//);
+    assert.match(html, /href="\/products\//);
+    assert.match(html, /href="\/(?:guides|articles)\//);
   }
+});
+
+test("publishes a measurable, Lolobuy-specific research footprint", async () => {
+  const worker = await loadWorker();
+  const response = await fetchPage(worker, "/about");
+  const html = await response.text();
+
+  assert.equal(response.status, 200);
+  assert.match(html, /CURRENT RESEARCH FOOTPRINT/);
+  assert.match(html, /8<\/dt><dd>individual product evidence pages/);
+  assert.match(html, /3<\/dt><dd>deep category guides/);
+  assert.match(html, /5<\/dt><dd>fact-checked long-form articles/);
+  assert.match(html, /href="\/articles\/lolobuy-weidian-link-guide"/);
+  assert.match(html, /href="\/categories\/shoes"/);
 });

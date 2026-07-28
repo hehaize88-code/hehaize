@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import JsonLd from "../components/json-ld";
-import { localizedPath, normalizeLocale, type Locale } from "../i18n";
+import { normalizeLocale, type Locale } from "../i18n";
 import { getLocalizedProducts } from "../localized-data";
 import {
   absoluteLocalizedUrl,
-  languageAlternates,
+  localizedMetadata,
 } from "../seo";
 import FindsClient from "./finds-client";
 
@@ -50,20 +50,12 @@ export async function generateMetadata({
   const locale = normalizeLocale(params.lang);
   const copy = metadataCopy[locale];
 
-  return {
+  return localizedMetadata({
+    locale,
+    path: "/finds",
     title: copy.title,
     description: copy.description,
-    alternates: {
-      canonical: localizedPath("/finds", locale),
-      languages: languageAlternates("/finds"),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: copy.title,
-      description: copy.description,
-    },
-    other: { "content-language": locale },
-  };
+  });
 }
 
 export default async function FindsPage({

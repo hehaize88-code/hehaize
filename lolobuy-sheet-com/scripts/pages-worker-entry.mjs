@@ -1,4 +1,8 @@
 import applicationWorker from "../dist/server/index.js";
+import {
+  withSearchSafeNotFound,
+  withSecurityHeaders,
+} from "../worker/security-headers.ts";
 
 const versionedAssetsPrefix = `/assets/${PAGES_ASSET_VERSION}/`;
 
@@ -13,7 +17,10 @@ const staticFiles = new Set([
 function isStaticAsset(pathname) {
   return (
     pathname.startsWith("/assets/") ||
+    pathname.startsWith("/articles/") ||
+    pathname.startsWith("/product-finds/") ||
     pathname.startsWith("/products/") ||
+    pathname.startsWith("/social/") ||
     staticFiles.has(pathname)
   );
 }
@@ -57,17 +64,20 @@ export default {
       const destination = new URL(url);
       destination.protocol = "https:";
       destination.hostname = "lolobuy-sheet.com";
-      return Response.redirect(destination, 301);
+      return withSecurityHeaders(Response.redirect(destination, 301));
     }
 
     if (isStaticAsset(url.pathname) && env?.ASSETS?.fetch) {
       const assetResponse = await env.ASSETS.fetch(request);
       if (assetResponse.status !== 404) {
-        return assetResponse;
+        return withSecurityHeaders(assetResponse);
       }
     }
 
     const response = await applicationWorker.fetch(request, env, ctx);
-    return versionAssetReferences(response);
+    const versionedResponse = await versionAssetReferences(response);
+    return withSecurityHeaders(
+      await withSearchSafeNotFound(versionedResponse),
+    );
   },
 };

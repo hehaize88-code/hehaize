@@ -3,10 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lolobuy-sheet.com"),
-  title: {
-    default: "Lolobuy Spreadsheet 2026 | Curated Finds & QC Guide",
-    template: "%s | Lolobuy Sheet",
-  },
+  title: "Lolobuy Spreadsheet 2026 | Curated Finds & QC Guide",
   description:
     "Browse a curated Lolobuy spreadsheet, explore product categories, learn how to review QC photos, and open current product listings.",
   keywords: [

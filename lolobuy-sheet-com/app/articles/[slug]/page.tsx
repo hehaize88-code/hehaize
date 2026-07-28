@@ -2,11 +2,17 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Fragment } from "react";
+import { getArticleContext } from "../../article-context-links";
 import ArticleCard from "../../components/article-card";
 import JsonLd from "../../components/json-ld";
 import SiteFooter from "../../components/site-footer";
 import SiteHeader from "../../components/site-header";
-import { localizedPath, normalizeLocale } from "../../i18n";
+import {
+  localizedPath,
+  normalizeLocale,
+  type Locale,
+} from "../../i18n";
 import { getLocalizedArticles } from "../../localized-data";
 import { articleUiCopy, commonPageCopy } from "../../page-copy";
 import {
@@ -20,6 +26,69 @@ import { getArticleMedia } from "../../article-media";
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
 }
+
+const articleSearchTitles: Record<Locale, Record<string, string>> = {
+  en: {
+    "lolobuy-spreadsheet-guide":
+      "Lolobuy Spreadsheet Guide 2026: Find & Verify Products",
+    "how-to-read-qc-photos":
+      "How to Read Lolobuy QC Photos: Warehouse Checklist",
+    "plan-china-shopping-haul":
+      "Lolobuy Shipping Guide: Storage, Consolidation & Weight",
+    "lolobuy-review-early-user-experience":
+      "Lolobuy Review 2026: Early User Evidence Examined",
+    "lolobuy-weidian-link-guide":
+      "Lolobuy Weidian Link Guide 2026: Order & QC Steps",
+  },
+  es: {
+    "lolobuy-spreadsheet-guide":
+      "Guía Lolobuy Spreadsheet 2026: buscar y verificar",
+    "how-to-read-qc-photos":
+      "Fotos QC Lolobuy: checklist de almacén",
+    "plan-china-shopping-haul":
+      "Envío Lolobuy: almacén, paquetes y peso",
+    "lolobuy-review-early-user-experience":
+      "Reseña Lolobuy 2026: pruebas de usuarios",
+    "lolobuy-weidian-link-guide":
+      "Enlaces Weidian con Lolobuy: pedido y QC",
+  },
+  de: {
+    "lolobuy-spreadsheet-guide":
+      "Lolobuy Spreadsheet 2026: Produkte prüfen",
+    "how-to-read-qc-photos":
+      "Lolobuy QC-Fotos: Lager-Checkliste",
+    "plan-china-shopping-haul":
+      "Lolobuy Versand: Lagerung, Paket und Gewicht",
+    "lolobuy-review-early-user-experience":
+      "Lolobuy Erfahrungen 2026: Nutzerbelege",
+    "lolobuy-weidian-link-guide":
+      "Lolobuy Weidian-Link: Bestellung und QC",
+  },
+  fr: {
+    "lolobuy-spreadsheet-guide":
+      "Guide Spreadsheet Lolobuy 2026 : vérifier les produits",
+    "how-to-read-qc-photos":
+      "Photos QC Lolobuy : checklist d’entrepôt",
+    "plan-china-shopping-haul":
+      "Expédition Lolobuy : stockage, colis et poids",
+    "lolobuy-review-early-user-experience":
+      "Avis Lolobuy 2026 : preuves d’utilisateurs",
+    "lolobuy-weidian-link-guide":
+      "Lien Weidian Lolobuy : commande et QC",
+  },
+  it: {
+    "lolobuy-spreadsheet-guide":
+      "Guida Spreadsheet Lolobuy 2026: verifica prodotti",
+    "how-to-read-qc-photos":
+      "Foto QC Lolobuy: checklist di magazzino",
+    "plan-china-shopping-haul":
+      "Spedizione Lolobuy: deposito, pacco e peso",
+    "lolobuy-review-early-user-experience":
+      "Recensione Lolobuy 2026: prove degli utenti",
+    "lolobuy-weidian-link-guide":
+      "Link Weidian Lolobuy: ordine e QC",
+  },
+};
 
 export async function generateMetadata({
   params,
@@ -37,32 +106,21 @@ export async function generateMetadata({
     return {};
   }
 
-  const englishSearchTitles: Record<string, string> = {
-    "lolobuy-spreadsheet-guide":
-      "Lolobuy Spreadsheet Guide 2026: Find & Verify Products",
-    "how-to-read-qc-photos":
-      "How to Read Lolobuy QC Photos: Warehouse Checklist",
-    "plan-china-shopping-haul":
-      "Lolobuy Shipping Guide: Storage, Consolidation & Weight",
-    "lolobuy-review-early-user-experience":
-      "Lolobuy Review 2026: Early User Evidence Examined",
-    "lolobuy-weidian-link-guide":
-      "Lolobuy Weidian Link Guide 2026: Order & QC Steps",
-  };
-  const searchTitle = englishSearchTitles[article.slug] ?? article.title;
+  const searchTitle =
+    articleSearchTitles[locale][article.slug] ?? article.title;
   const media = getArticleMedia(article.slug);
   const imageUrl = `${siteUrl}${media.src}`;
 
   const metadata = localizedMetadata({
     locale,
     path: `/articles/${article.slug}`,
-    title: locale === "en" ? searchTitle : article.title,
+    title: searchTitle,
     description: article.description,
   });
 
   return {
     ...metadata,
-    title: { absolute: locale === "en" ? searchTitle : article.title },
+    title: { absolute: searchTitle },
     openGraph: {
       ...metadata.openGraph,
       title: article.title,
@@ -104,6 +162,7 @@ export default async function ArticlePage({
   const article = localizedArticles.find((item) => item.slug === slug);
   const common = commonPageCopy[locale];
   const ui = articleUiCopy[locale];
+  const context = getArticleContext(slug, locale);
 
   if (!article) {
     notFound();
@@ -194,20 +253,44 @@ export default async function ArticlePage({
               </div>
             </figure>
             {article.sections.map((section, index) => (
-              <section id={`section-${index + 1}`} key={section.heading}>
-                <p className="section-number">{String(index + 1).padStart(2, "0")}</p>
-                <h2>{section.heading}</h2>
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-                {section.bullets ? (
-                  <ul>
-                    {section.bullets.map((bullet) => (
-                      <li key={bullet}>{bullet}</li>
-                    ))}
-                  </ul>
+              <Fragment key={section.heading}>
+                <section id={`section-${index + 1}`}>
+                  <p className="section-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <h2>{section.heading}</h2>
+                  {section.paragraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                  {section.bullets ? (
+                    <ul>
+                      {section.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </section>
+                {index === 1 ? (
+                  <section
+                    className="article-context-links"
+                    aria-labelledby="related-decision-paths"
+                  >
+                    <p className="section-number">{context.eyebrow}</p>
+                    <h2 id="related-decision-paths">{context.title}</h2>
+                    <p>{context.intro}</p>
+                    <nav aria-label={context.ariaLabel}>
+                      {context.links.map((link) => (
+                        <Link
+                          href={localizedPath(link.path, locale)}
+                          key={link.path}
+                        >
+                          {link.label} <span aria-hidden="true">→</span>
+                        </Link>
+                      ))}
+                    </nav>
+                  </section>
                 ) : null}
-              </section>
+              </Fragment>
             ))}
             <section className="article-sources" aria-labelledby="research-sources">
               <p className="section-number">{common.sourceLabel.toUpperCase()}</p>

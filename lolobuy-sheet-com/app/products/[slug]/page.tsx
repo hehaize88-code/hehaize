@@ -20,6 +20,7 @@ import {
 import { getProductEvidence } from "../../product-detail-data";
 import {
   absoluteLocalizedUrl,
+  compactMetaDescription,
   languageAlternates,
   siteUrl,
 } from "../../seo";
@@ -563,11 +564,11 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
 };
 
 const productMetadataCopy: Record<Locale, string> = {
-  en: "Product Details & QC Checklist",
-  es: "Detalles del producto y lista QC",
-  de: "Produktdetails und QC-Prüfliste",
-  fr: "Fiche produit et liste de contrôle QC",
-  it: "Dettagli prodotto e lista di controllo QC",
+  en: "Listing & QC Review",
+  es: "Ficha y control QC",
+  de: "Angebot & QC-Check",
+  fr: "Fiche et contrôle QC",
+  it: "Scheda e controllo QC",
 };
 
 export function generateStaticParams() {
@@ -591,10 +592,12 @@ export async function generateMetadata({
   }
 
   const socialImage = productImagePath(product.slug, 640);
+  const searchTitle = `${product.name} | ${productMetadataCopy[locale]}`;
+  const searchDescription = compactMetaDescription(product.description);
 
   return {
-    title: `${product.name} | ${productMetadataCopy[locale]}`,
-    description: product.description,
+    title: { absolute: searchTitle },
+    description: searchDescription,
     alternates: {
       canonical: localizedPath(`/products/${product.slug}`, locale),
       languages: languageAlternates(`/products/${product.slug}`),
@@ -602,7 +605,7 @@ export async function generateMetadata({
     other: { "content-language": locale },
     openGraph: {
       title: `${product.name} | Lolobuy Sheet`,
-      description: product.description,
+      description: searchDescription,
       url: localizedPath(`/products/${product.slug}`, locale),
       type: "website",
       images: [
@@ -617,7 +620,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: `${product.name} | Lolobuy Sheet`,
-      description: product.description,
+      description: searchDescription,
       images: [socialImage],
     },
   };

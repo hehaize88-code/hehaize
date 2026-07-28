@@ -1,6 +1,30 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "./components/site-footer";
 import SiteHeader from "./components/site-header";
+
+export const metadata: Metadata = {
+  title: { absolute: "Page Not Found | Lolobuy Sheet" },
+  description:
+    "This Lolobuy Sheet page is unavailable. Browse the current product directory, category guides and research articles instead.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+  openGraph: {
+    title: "Page Not Found | Lolobuy Sheet",
+    description:
+      "The requested page is unavailable. Browse current product research and guides instead.",
+    siteName: "Lolobuy Sheet",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Page Not Found | Lolobuy Sheet",
+    description:
+      "The requested page is unavailable. Browse current product research and guides instead.",
+  },
+};
 
 export default function NotFound() {
   return (

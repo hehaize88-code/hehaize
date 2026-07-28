@@ -28,6 +28,26 @@ export function absoluteLocalizedUrl(path: string, locale: Locale) {
   return `${siteUrl}${localizedPath(path, locale)}`;
 }
 
+export function compactMetaDescription(
+  description: string,
+  maxLength = 155,
+) {
+  const normalized = description.replace(/\s+/g, " ").trim();
+
+  if (normalized.length <= maxLength) {
+    return normalized;
+  }
+
+  const candidate = normalized.slice(0, maxLength - 1);
+  const lastWordBoundary = candidate.lastIndexOf(" ");
+  const shortened =
+    lastWordBoundary >= Math.floor(maxLength * 0.72)
+      ? candidate.slice(0, lastWordBoundary)
+      : candidate;
+
+  return `${shortened.replace(/[\s,;:–—-]+$/u, "")}…`;
+}
+
 export function localizedMetadata({
   locale,
   path,
@@ -40,17 +60,18 @@ export function localizedMetadata({
   description: string;
 }): Metadata {
   const canonical = localizedPath(path, locale);
+  const searchDescription = compactMetaDescription(description);
 
   return {
-    title,
-    description,
+    title: { absolute: title },
+    description: searchDescription,
     alternates: {
       canonical,
       languages: languageAlternates(path),
     },
     openGraph: {
       title,
-      description,
+      description: searchDescription,
       url: canonical,
       siteName: "Lolobuy Sheet",
       locale: openGraphLocales[locale],
@@ -70,7 +91,7 @@ export function localizedMetadata({
     twitter: {
       card: "summary_large_image",
       title,
-      description,
+      description: searchDescription,
       images: [defaultSocialImage],
     },
     other: {

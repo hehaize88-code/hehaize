@@ -27,3 +27,4 @@ timeout \
 
 node "${script_dir}/wrap-server-output.mjs"
 "${script_dir}/validate-artifact.sh"
+node --test "${SITES_PROJECT_ROOT}/tests/rendered-html.test.mjs"
