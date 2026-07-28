@@ -35,9 +35,6 @@ export const metadata: Metadata = {
     description:
       "Curated product finds, category shortcuts, and practical QC guidance.",
   },
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

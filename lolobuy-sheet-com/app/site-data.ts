@@ -185,6 +185,14 @@ export const categories = [
       "Review tees by print placement, collar construction, fabric weight and the seller's measurement chart.",
   },
   {
+    name: "Bags",
+    slug: "bags",
+    image: "/products/bag.webp",
+    href: `${destinationBase}/AllProducts/`,
+    description:
+      "Compare backpacks and other bags by dimensions, compartments, straps, closures and the exact selected option.",
+  },
+  {
     name: "All products",
     slug: "all-products",
     image: "/products/bag.webp",
@@ -796,139 +804,111 @@ export const articles: Article[] = [
       },
     ],
   },
-];
-
-export const faqs = [
   {
-    question: "What is a Lolobuy spreadsheet?",
-    basis: "INDEPENDENT DIRECTORY",
-    answer:
-      "A Lolobuy spreadsheet is an independent product-discovery directory that groups product links, categories and practical buying guidance in one place. It is not a service described or operated by LoloBuy on its public homepage, and it is not a substitute for the live product listing. Use the directory to discover an item, then recheck the current title, seller, selected colour or size, quantity, price and China-side delivery charge on the destination page before submitting an order. A spreadsheet link is a lead, not evidence that an item is still in stock, that the seller is reliable or that the physical product has passed warehouse inspection.",
-  },
-  {
-    question: "Is Lolobuy Sheet an official Lolobuy website?",
-    basis: "INDEPENDENT DIRECTORY",
-    answer:
-      "No. Lolobuy Sheet is an independent product-discovery and educational website. It is not owned, operated or endorsed by LoloBuy. The service facts in this FAQ were checked against LoloBuy's publicly indexed English homepage on July 26, 2026, but live account information still controls an actual order. Product availability, service options, warehouse deadlines and charges can change after a page is researched. A product card on this site is not an offer from LoloBuy and does not create a promise about price, stock, inspection results, shipping eligibility or delivery.",
-  },
-  {
-    question: "Does this site sell, store or ship products?",
-    basis: "INDEPENDENT DIRECTORY",
-    answer:
-      "No. This site organizes product finds and explains the buying process; it does not accept payment, purchase from sellers, inspect goods, operate a warehouse or arrange international delivery. Each product card first opens an independent detail page so that you can review the item reference and a pre-order checklist. Only the final product button continues to the current ordering destination. Any order status, payment, warehouse photograph, return request, parcel quote or tracking update belongs to the service handling that transaction, not to this directory.",
-  },
-  {
-    question: "What does LoloBuy officially say its buying service does?",
-    basis: "CONFIRMED ON OFFICIAL HOMEPAGE",
-    answer:
-      "LoloBuy's public English homepage says it assists users with purchasing products from channels in China, both online and offline. It also says a user can paste a product link to begin the order. That wording supports describing LoloBuy as a purchasing service rather than the original seller of every listed item. The homepage does not turn every Chinese listing into a guaranteed order: seller availability, product restrictions, incomplete information or a changed listing can still require confirmation. For a real purchase, preserve the original link and verify the exact variant and displayed cost in the order record before payment.",
-  },
-  {
-    question: "How does a LoloBuy order begin with a product link?",
-    basis: "CONFIRMED ON OFFICIAL HOMEPAGE",
-    answer:
-      "The official homepage says that you only need to paste a product link to complete the order process. In practice, the link identifies the seller page, but it may not communicate your intended size, colour, version or quantity. Before submitting it, open the live listing and record the exact option you want, the seller price and any visible China-side delivery charge. After pasting the link, compare the generated order information with the source listing instead of assuming the first image or lowest displayed price represents your choice. If the listing cannot be read correctly, do not guess; wait for the order details to be clarified.",
-  },
-  {
-    question: "Which product links can be submitted to LoloBuy?",
-    basis: "OFFICIAL CLAIM, WITH A CLEAR LIMIT",
-    answer:
-      "The public homepage uses broad language: it says LoloBuy assists with purchases from online and offline channels in China and lets users start by pasting a product link. The homepage we checked does not publish a complete marketplace whitelist, a guaranteed list of supported sellers or a promise that every product category can be purchased and shipped. Therefore, this FAQ does not copy a marketplace list from a community post or another agent. Paste the current seller link, check whether the order page can identify it correctly, and confirm any product or route restriction before paying.",
-  },
-  {
-    question: "Are all product links on this directory manually verified every day?",
-    basis: "INDEPENDENT DIRECTORY POLICY",
-    answer:
-      "No daily-verification claim is made. Seller listings can be edited, removed, repriced or placed out of stock without notice, and a directory cannot guarantee the continuing accuracy of every external page. Treat each product card as a discovery reference, open its detail page, and verify the current destination listing immediately before ordering. Pay particular attention to the selected variant because the lowest price may belong to a different size, colour, accessory or deposit. If the product title, image or options no longer match the directory entry, rely on the live listing and do not place the order from an old assumption.",
-  },
-  {
-    question: "What happens after the seller sends an item to the LoloBuy warehouse?",
-    basis: "CONFIRMED ON OFFICIAL HOMEPAGE",
-    answer:
-      "LoloBuy's official homepage says that after the merchant sends the goods to its warehouse, the service conducts a quality inspection, takes photographs for the user and provides 90 days of free storage. Those are the clearest publicly indexed warehouse facts available on the site. The same homepage does not publish the complete inspection checklist, the photo count, the processing time or the remedy for every defect. When the warehouse record appears, compare it with the saved order details and raise any visible mismatch before arranging international shipment; sending the parcel removes the opportunity to inspect it at the warehouse stage.",
-  },
-  {
-    question: "What does QC mean on a LoloBuy order?",
-    basis: "OFFICIAL WAREHOUSE PROCESS EXPLAINED",
-    answer:
-      "QC means quality control. LoloBuy's homepage specifically states that warehouse arrivals receive a quality inspection and photographs. Those images help a buyer compare the physical arrival with the ordered item before international shipping. Start with objective checks: product type, colour, labelled size, quantity and obvious damage. Then review symmetry, print or embroidery placement, stitching, measurements and other category-specific details that are actually visible. QC photographs are evidence of visible condition at a particular angle and time; they do not prove hidden construction, long-term durability, exact material composition, comfort, electronics performance or authenticity.",
-  },
-  {
-    question: "How many free QC photos does LoloBuy provide?",
-    basis: "NOT PUBLISHED ON OFFICIAL HOMEPAGE",
-    answer:
-      "The official homepage confirms that photographs are taken after warehouse arrival, but it does not publish a universal number of free QC images. This FAQ therefore does not borrow a photo count from another purchasing agent, a referral post or an old promotion. Check the actual image set attached to the warehouse order and judge whether it shows the details needed for your decision. If an important area is missing, identify the precise evidence required—for example, an insole measurement, a label, a damaged corner or the opposite side—then check whether the current account offers a suitable inspection request before any return deadline.",
-  },
-  {
-    question: "Does LoloBuy offer extra photos or a warehouse video?",
-    basis: "NOT PUBLISHED ON OFFICIAL HOMEPAGE",
-    answer:
-      "The publicly indexed homepage reviewed for this FAQ does not state a permanent extra-photo service, warehouse-video option, included quantity or price. It would be misleading to publish another platform's fee as if it were LoloBuy's. Before ordering an item that needs a specific measurement or functional view, check the current service options in the account or ask support whether that evidence can be produced. Make a focused request rather than asking for “more photos”: name the exact angle, label, measurement or visible feature needed, and confirm the charge and timing before relying on the request.",
-  },
-  {
-    question: "How long is free LoloBuy warehouse storage?",
-    basis: "CONFIRMED ON OFFICIAL HOMEPAGE",
-    answer:
-      "LoloBuy's official homepage currently advertises 90 days of free storage after goods reach the warehouse stage. The public page does not explain in the indexed text exactly when the 90-day clock begins, how exceptional items are handled or what fee or disposal rule applies after the free period. Record the warehouse-arrival date shown for every item and plan consolidation or shipment well before the final day instead of treating day 90 as a safe target. If items arrive on different dates, track each one separately because the oldest warehouse item can determine how much decision time remains.",
-  },
-  {
-    question: "Can several LoloBuy orders be combined into one international parcel?",
-    basis: "NOT PUBLISHED ON OFFICIAL HOMEPAGE",
-    answer:
-      "LoloBuy's public homepage confirms warehouse storage, but the indexed homepage text we checked does not publish a detailed consolidation policy or guarantee that every item can share one parcel. Do not present consolidation as automatic. Before building a multi-seller haul, confirm in the current parcel workflow whether the stored items can be selected together and whether any product restriction, size, protection requirement or route rule makes a split necessary. Compare the packed result rather than assuming that one large parcel is always cheaper; dimensions and route eligibility can matter as much as the item count.",
-  },
-  {
-    question: "How much does LoloBuy international shipping cost?",
-    basis: "NO FIXED PRICE PUBLISHED",
-    answer:
-      "The official homepage does not publish one fixed international-shipping price that can answer every order. A useful quote must be tied to the actual destination, packed weight and dimensions, eligible route, product restrictions and current charges shown for that parcel. Any article promising a universal per-kilogram total before the goods are packed is leaving out important variables. Use early estimates only for budgeting, then make the shipping decision from the current parcel data and payable amount. Also check what the quoted price includes and whether destination taxes, customs charges or remote-area fees remain separate.",
-  },
-  {
-    question: "Does LoloBuy publish guaranteed delivery times, carriers or tracking rules?",
-    basis: "NOT PUBLISHED ON OFFICIAL HOMEPAGE",
-    answer:
-      "The publicly indexed homepage used for this FAQ does not provide a complete, permanent table of international carriers, country coverage, delivery promises or tracking milestones. Route names and estimates can change, so a static FAQ should not turn them into guarantees. When a real parcel is ready, compare only the routes currently offered for the destination and product type. Record whether the time shown is an estimate or a guarantee, what compensation terms apply, when tracking is expected to update and which events are outside the carrier's control. Judge delivery performance from dispatch to receipt, not from the day the seller was paid.",
-  },
-  {
-    question: "Does LoloBuy publish a fixed service fee or exchange-rate markup?",
-    basis: "NOT PUBLISHED ON OFFICIAL HOMEPAGE",
-    answer:
-      "The public homepage text reviewed on July 26, 2026 does not state a universal service-fee percentage or fixed exchange-rate markup. This page therefore does not invent one. To understand the real purchase cost, compare the seller's current item price with the amount shown in the order breakdown, then separate China-side delivery, optional services, payment charges and later international freight. If the account converts currencies, compare the displayed rate and final payable amount at the same moment because market rates and payment-provider charges can move. A coupon should be shown as a separate reduction, not used to hide the underlying cost.",
-  },
-  {
-    question: "Why can a product price change after I open a spreadsheet link?",
-    basis: "PRACTICAL LISTING CHECK",
-    answer:
-      "A spreadsheet records a discovery reference, while the seller controls the live listing. The displayed headline price may belong to the cheapest variant, an accessory, a deposit or an option different from the first image; the seller may also change the price or remove stock after the directory was updated. LoloBuy's homepage explains that an order can begin from a pasted product link, but it does not promise that an old directory price will be honoured. Select the intended variant on the live page and compare the title, option, quantity, seller price and China-side delivery shown in the generated order before paying.",
-  },
-  {
-    question: "What are LoloBuy's return or exchange rules after QC?",
-    basis: "NOT PUBLISHED ON OFFICIAL HOMEPAGE",
-    answer:
-      "The official homepage confirms warehouse inspection and photographs, but the indexed page does not publish a complete return-and-exchange policy, seller deadline or fee table. The result can depend on the seller's own terms, the reason for the request and the current order status. Review warehouse images promptly, preserve screenshots of the ordered option and identify the mismatch with specific evidence. Then check the return or exchange action available for that order before authorising international shipment. Do not assume that a visible problem automatically creates a free return, and do not use another platform's deadline as if it were LoloBuy's rule.",
-  },
-  {
-    question: "Are LoloBuy coupons and shipping discounts permanent?",
-    basis: "NO PERMANENT OFFER PUBLISHED",
-    answer:
-      "The public homepage reviewed for this FAQ does not publish a permanent universal coupon value, minimum spend or guaranteed shipping discount. Promotions can be limited by account, route, destination, order value, code, start date or expiry date. Treat a coupon as valid only when the current checkout accepts it and shows the reduced payable amount. Compare the total after the discount, not the headline value alone, and avoid describing a temporary referral or event offer as a normal platform price. This FAQ intentionally omits coupon codes and dollar amounts that cannot be verified as current official terms.",
-  },
-  {
-    question: "What does W2C mean on a Lolobuy spreadsheet?",
-    basis: "INDEPENDENT DIRECTORY TERM",
-    answer:
-      "W2C commonly means “where to cop”: the source or destination link used to find a product. It is a shopping-community term, not a policy defined on LoloBuy's public homepage. A W2C link can help you locate a listing to paste into an ordering service, but it does not prove that the listing is current, that the photographed item is the variant you want or that the seller and product are acceptable for international shipping. Open the source, verify the exact option and current price, and keep the link with the order so the later warehouse photos can be compared with what was originally selected.",
-  },
-  {
-    question: "What should I check in LoloBuy warehouse QC photos?",
-    basis: "PRACTICAL QC CHECKLIST",
-    answer:
-      "The official homepage confirms inspection and photographs after warehouse arrival but does not publish a universal inspection checklist. Use a repeatable order: first confirm product type, colour, labelled size and quantity; next look for obvious damage, stains, missing parts or a wrong variant; then inspect category-specific details such as shape, symmetry, stitching, print placement, zips or measurements. Compare against the saved seller listing rather than memory. If lighting or angle prevents a fair conclusion, do not label the item defective from one ambiguous image. Check whether a precise additional inspection request is available before the relevant decision window closes.",
-  },
-  {
-    question: "Can a Lolobuy spreadsheet or QC photo guarantee authenticity or import legality?",
-    basis: "IMPORTANT LIMIT",
-    answer:
-      "No. LoloBuy's public homepage states that warehouse goods are inspected and photographed, but it does not publish a guarantee that those photographs authenticate branded goods or establish legal importability in every country. A directory link also cannot prove intellectual-property status, material composition, safety certification or compliance with destination customs rules. QC images are useful for visible comparison only. Before ordering, follow the platform's current restrictions and the laws that apply to the destination; for regulated, branded, battery-powered, liquid or otherwise sensitive products, confirm route eligibility and customs obligations rather than relying on a spreadsheet label.",
-  },
-] as const;
+    slug: "lolobuy-weidian-link-guide",
+    title:
+      "Lolobuy Weidian Link Guide 2026: From Product URL to Warehouse QC",
+    shortTitle: "How to use a Weidian link with Lolobuy",
+    description:
+      "A fact-checked guide to copying a Weidian product URL, checking variants and prices, submitting the link through Lolobuy, and preserving evidence for warehouse QC.",
+    eyebrow: "WEIDIAN LINK GUIDE",
+    published: "2026-07-28",
+    updated: "2026-07-28",
+    readingTime: "14 min read",
+    factCheckLine:
+      "Fact-checked July 28, 2026 against LoloBuy's public website, its identified community ordering guide and a documented Weidian-to-LoloBuy order example.",
+    visual: {
+      eyebrow: "THE LINK-TO-QC TRAIL",
+      title: "A product URL is the start of the evidence trail.",
+      caption:
+        "The source listing identifies the seller offer. The generated order records your choice. Warehouse photos document what physically arrived.",
+      items: [
+        {
+          label: "Source link",
+          text: "Open the live Weidian item and identify the exact option.",
+        },
+        {
+          label: "Order record",
+          text: "Compare parsed title, price, colour, size and quantity.",
+        },
+        {
+          label: "Warehouse arrival",
+          text: "Match the item and QC evidence to the saved order.",
+        },
+        {
+          label: "Parcel decision",
+          text: "Ship only after the mismatch and cost checks are complete.",
+        },
+      ],
+    },
+    sources: [
+      {
+        label: "LoloBuy public website",
+        note: "Primary source for public link-ordering, warehouse inspection, photography and 90-day storage claims.",
+      },
+      {
+        label: "Identified LoloBuy community ordering guide",
+        note: "States that users can copy links from marketplaces including Weidian, paste them into the order flow and specify size, colour and quantity.",
+      },
+      {
+        label: "Documented Weidian-to-LoloBuy order example",
+        note: "Shows a source Weidian item URL alongside the corresponding LoloBuy product-detail URL; treated as one observable example, not a permanent URL rule.",
+      },
+      {
+        label: "Weidian public website",
+        note: "Primary source confirming the marketplace and its current public product and shop surfaces.",
+      },
+    ],
+    intro: [
+      "A Weidian link looks simple: copy a product URL, paste it into a buying service, choose an option and pay. Most avoidable errors, however, happen between those verbs. A listing can contain many colours, sizes or versions; the first photograph may not match the selected option; the lowest price can belong to an accessory or deposit; and a translated label can lose the detail that distinguishes one variant from another.",
+      "LoloBuy's identified community ordering guide explicitly includes Weidian among the marketplaces users can browse. It instructs shoppers to copy the product URL, paste it into the LoloBuy search bar or order form, and specify details such as size, colour and quantity. The same guide says the order view provides the item price and domestic shipping charges before the later warehouse and international-shipping stages. Those statements explain the intended workflow, but they do not remove the buyer's need to compare the generated order with the live source listing.",
+      "This guide turns a Lolobuy Weidian link into a repeatable evidence trail. It does not publish an invite code, assume a fixed fee or send readers to a temporary promotion. The goal is to reduce wrong-variant orders, make warehouse QC easier to interpret and preserve the information needed if a material mismatch appears.",
+    ],
+    sections: [
+      {
+        heading: "Understand what the Weidian link proves—and what it does not",
+        paragraphs: [
+          "A Weidian item URL identifies a seller-controlled page at a point in time. It can expose the product title, images, available variants, current price and other listing information. It does not prove that the seller will keep the item available, that every image shows the selected option, that translated text is complete, or that the physical item will match the presentation.",
+          "A link inside a spreadsheet adds another discovery layer. It may help you reach a product quickly, but it does not certify the seller, product quality, authenticity, return eligibility or delivered cost. Open the live source page and make the purchase decision from the current option selector and order record, not from a saved card alone.",
+        ],
+      },
+      {
+        heading: "Copy the product URL only after opening the live item",
+        paragraphs: [
+          "Open the Weidian item in a browser and let any shared or shortened address resolve to the current product page. Confirm that the page still shows the intended item. Then copy the final product URL from the address bar or the marketplace's own sharing control. A documented community example pairs a normal Weidian item URL containing an item identifier with a LoloBuy product-detail URL that carries the source address. That demonstrates one working relationship, not a format that should be hand-built or guessed.",
+          "Do not manufacture a LoloBuy product-detail address by changing numbers from somebody else's link. Paste the source product URL through the current LoloBuy input instead. If the link cannot be read, stop and clarify it through the current order workflow rather than choosing a visually similar result.",
+        ],
+      },
+      {
+        heading: "Record the exact seller offer before pasting",
+        paragraphs: [
+          "Write a short source note before leaving Weidian: seller or shop name, item title, selected colour, size or version, quantity, visible item price, China-side delivery charge if shown, and the date checked. Save the relevant size chart and the images that define the option. This record is especially important when the listing uses Chinese option text or combines many models on one page.",
+          "Treat promotional prices carefully. A headline amount may depend on a different variant, quantity, deposit, member condition or temporary campaign. Select the intended option before comparing the payable amount. If a required detail is missing—such as a shoe measurement, garment dimension or included accessory—do not replace it with an assumption.",
+        ],
+        bullets: [
+          "Source URL and date checked",
+          "Seller or shop name",
+          "Exact colour, size, version and quantity",
+          "Visible item price and China-side delivery",
+          "Saved chart, option text and decisive images",
+        ],
+      },
+      {
+        heading: "Paste into Lolobuy, then compare the generated order line by line",
+        paragraphs: [
+          "The identified LoloBuy ordering guide says to paste the product link into the search bar or order form and specify size, colour and quantity. After the page is parsed, compare the generated product image and title with the Weidian source, but do not stop there. Check the selected option text, item price, quantity and domestic shipping. A matching hero image cannot compensate for a wrong size or version.",
+          "If the generated data is incomplete, preserve the original option wording in the order remark or the current clarification field when one is available. Use concise, observable language: the exact colour name, labelled size, version code or included piece. Avoid vague instructions such as “same as photo” when the listing contains several photos.",
+        ],
+      },
+      {
+        heading: "Separate the first payment from the delivered total",
+        paragraphs: [
+          "The LoloBuy community guide describes the item price and domestic shipping during order submission, then places warehouse arrival, consolidation and international shipping later in the process. That separation matters. Paying for the product does not establish the final freight cost, because the packed weight, dimensions, eligible route, protection and destination obligations are not yet complete.",
+          "Build a range rather than one confident total. Include the selected item, China-side delivery, any clearly displayed current service or payment charges, packaging, international freight and destination taxes or customs charges. Do not copy a per-kilogram figure from another parcel and present it as the price for yours.",
+        ],
+      },
+      {
+        heading: "Use the warehouse arrival as a second comparison point",
+        paragraphs: [
+          "LoloBuy's public website states that warehouse arrivals are inspected and photographed, and it advertises 90 days of free storage. When a Weidian order reaches that stage, compare it with the source note you saved: product identity, colour, labelled size, quantity, included pieces and visible condition. The warehouse record should be tied to the original order, not judged from memory.",
+          "The public homepage does not publish a universal number of free QC photographs, a permanent extra-photo price, a guaranteed measurement service or one return rule for every seller. Work with the evidence and actions shown for the current order. If one decisive area is missing, request a precise angle or measurement only when that option is available and before any a

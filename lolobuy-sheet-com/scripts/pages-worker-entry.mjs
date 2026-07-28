@@ -53,6 +53,13 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
+    if (url.hostname === "www.lolobuy-sheet.com") {
+      const destination = new URL(url);
+      destination.protocol = "https:";
+      destination.hostname = "lolobuy-sheet.com";
+      return Response.redirect(destination, 301);
+    }
+
     if (isStaticAsset(url.pathname) && env?.ASSETS?.fetch) {
       const assetResponse = await env.ASSETS.fetch(request);
       if (assetResponse.status !== 404) {

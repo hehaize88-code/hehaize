@@ -50,7 +50,13 @@ export default async function ContactPage({
           <h2>{copy.cards[0][1]}</h2>
           <p>{copy.cards[0][2]}</p>
           <p className="contact-status">
-            {copy.pendingContact}
+            {copy.pendingContact}{" "}
+            <a
+              className="text-link"
+              href="mailto:lianglook520@gmail.com?subject=Lolobuy%20Sheet%20correction"
+            >
+              lianglook520@gmail.com
+            </a>
           </p>
         </article>
         <article>

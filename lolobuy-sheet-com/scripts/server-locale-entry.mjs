@@ -27,6 +27,13 @@ function localizedPathname(pathname, locale) {
 }
 
 function canonicalRedirect(request, url) {
+  if (url.hostname === "www.lolobuy-sheet.com") {
+    const destination = new URL(url);
+    destination.protocol = "https:";
+    destination.hostname = "lolobuy-sheet.com";
+    return Response.redirect(destination, 301);
+  }
+
   const requestedLocale = url.searchParams.get("lang")?.toLowerCase();
   const prefixedLocale = pathLocale(url.pathname);
 

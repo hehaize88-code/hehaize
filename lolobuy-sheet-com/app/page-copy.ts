@@ -86,6 +86,7 @@ export const categoriesPageCopy = {
     crumb: "Categories",
     directory: "DIRECTORY",
     open: "Open current listings",
+    guide: "Open category guide",
     searchEyebrow: "SEARCH THE FULL DIRECTORY",
     searchTitle: "Describe the item, not the hype.",
     searchText:
@@ -113,6 +114,7 @@ export const categoriesPageCopy = {
     crumb: "Categorías",
     directory: "DIRECTORIO",
     open: "Abrir fichas actuales",
+    guide: "Abrir guía de categoría",
     searchEyebrow: "BUSCAR EN TODO EL DIRECTORIO",
     searchTitle: "Describe el producto, no la moda.",
     searchText:
@@ -140,6 +142,7 @@ export const categoriesPageCopy = {
     crumb: "Kategorien",
     directory: "VERZEICHNIS",
     open: "Aktuelle Angebote öffnen",
+    guide: "Kategorien-Ratgeber öffnen",
     searchEyebrow: "GESAMTES VERZEICHNIS DURCHSUCHEN",
     searchTitle: "Beschreibe den Artikel, nicht den Hype.",
     searchText:
@@ -167,6 +170,7 @@ export const categoriesPageCopy = {
     crumb: "Catégories",
     directory: "CATALOGUE",
     open: "Ouvrir les fiches actuelles",
+    guide: "Ouvrir le guide catégorie",
     searchEyebrow: "RECHERCHER DANS TOUT LE CATALOGUE",
     searchTitle: "Décrivez l'article, pas la tendance.",
     searchText:
@@ -194,6 +198,7 @@ export const categoriesPageCopy = {
     crumb: "Categorie",
     directory: "CATALOGO",
     open: "Apri le schede attuali",
+    guide: "Apri la guida categoria",
     searchEyebrow: "CERCA IN TUTTO IL CATALOGO",
     searchTitle: "Descrivi l'articolo, non l'hype.",
     searchText:
@@ -792,10 +797,10 @@ export const contactPageCopy = {
       ["DIRECTORY CORRECTION", "Broken link or factual error", "Record the page URL, affected heading or link, what is wrong and the public source supporting the correction. Do not include order numbers, addresses or payment information."],
       ["PRODUCT PAGE", "Listing or destination-page issue", "Product availability, images, prices and variants are controlled by the destination directory or seller. Use the contact channel shown on that website."],
       ["ACTIVE ORDER", "Warehouse, QC or shipping question", "Contact the platform handling the active order through its authenticated support workflow. This independent site cannot view or change an order."],
-      ["COPYRIGHT OR TRADEMARK", "Identification and notice", "Prepare the exact URL, protected work or mark, your authority to act and the requested correction. A public notice channel will be added before formal launch."],
+      ["COPYRIGHT OR TRADEMARK", "Identification and notice", "Prepare the exact URL, protected work or mark, your authority to act and the requested correction. Send the notice through the published email channel on this page."],
     ],
     pendingContact:
-      "A dedicated @lolobuy-sheet.com contact address will be published when the domain is formally connected.",
+      "Email directory corrections, copyright notices and cooperation enquiries to",
     openDirectory: "Open the current product directory",
   },
   es: {
@@ -808,10 +813,10 @@ export const contactPageCopy = {
       ["CORRECCIÓN DEL DIRECTORIO", "Enlace roto o error factual", "Anota URL, título o enlace afectado, error y fuente pública que respalda la corrección. No incluyas pedidos, direcciones o pagos."],
       ["PÁGINA DE PRODUCTO", "Problema con la ficha de destino", "Disponibilidad, imágenes, precios y variantes los controla la página de destino o el vendedor. Usa su canal de contacto actual."],
       ["PEDIDO ACTIVO", "Pregunta de almacén, QC o envío", "Contacta con la plataforma que gestiona el pedido desde su soporte autenticado. Este sitio independiente no puede verlo ni cambiarlo."],
-      ["DERECHOS O MARCA", "Identificación y aviso", "Prepara URL exacta, obra o marca protegida, autoridad para actuar y corrección solicitada. Se añadirá un canal público antes del lanzamiento formal."],
+      ["DERECHOS O MARCA", "Identificación y aviso", "Prepara URL exacta, obra o marca protegida, autoridad para actuar y corrección solicitada. Envía el aviso al correo publicado en esta página."],
     ],
     pendingContact:
-      "Se publicará una dirección @lolobuy-sheet.com cuando el dominio esté conectado formalmente.",
+      "Envía correcciones, avisos de derechos y consultas de cooperación a",
     openDirectory: "Abrir el directorio actual",
   },
   de: {
@@ -827,7 +832,7 @@ export const contactPageCopy = {
       ["URHEBERRECHT ODER MARKE", "Identifizierung und Hinweis", "Genaue URL, geschütztes Werk oder Zeichen, Vertretungsbefugnis und gewünschte Korrektur vorbereiten."],
     ],
     pendingContact:
-      "Eine eigene @lolobuy-sheet.com-Adresse wird nach formeller Domainverbindung veröffentlicht.",
+      "Korrekturen, Rechtehinweise und Kooperationsanfragen per E-Mail an",
     openDirectory: "Aktuelles Produktverzeichnis öffnen",
   },
   fr: {
@@ -843,7 +848,7 @@ export const contactPageCopy = {
       ["DROIT D'AUTEUR OU MARQUE", "Identification et notification", "Préparez l'URL exacte, l'œuvre ou marque protégée, votre pouvoir d'agir et la correction demandée."],
     ],
     pendingContact:
-      "Une adresse @lolobuy-sheet.com dédiée sera publiée lorsque le domaine sera formellement connecté.",
+      "Envoyez corrections, notifications de droits et demandes de coopération à",
     openDirectory: "Ouvrir le catalogue actuel",
   },
   it: {
@@ -859,7 +864,7 @@ export const contactPageCopy = {
       ["COPYRIGHT O MARCHIO", "Identificazione e avviso", "Prepara URL esatto, opera o marchio protetto, autorità ad agire e correzione richiesta."],
     ],
     pendingContact:
-      "Un indirizzo @lolobuy-sheet.com dedicato sarà pubblicato quando il dominio verrà collegato formalmente.",
+      "Invia correzioni, avvisi sui diritti e richieste di collaborazione a",
     openDirectory: "Apri il catalogo attuale",
   },
 } as const;
@@ -872,7 +877,7 @@ export const privacyPageCopy = {
       "This site is designed for public reading and product discovery without user accounts, checkout or order-data collection.",
     crumb: "Privacy",
     sections: [
-      ["Information this site does not request", "Lolobuy Sheet does not ask for passwords, payment information, delivery addresses, identity documents or order numbers. Do not send that information through a future general contact channel."],
+      ["Information this site does not request", "Lolobuy Sheet does not ask for passwords, payment information, delivery addresses, identity documents or order numbers. Do not send that information through the published correction email."],
       ["Bookmarks and search", "Product bookmarks use temporary page state and are not saved to a server. Searches open the current product directory in a new tab, where that destination's privacy terms apply."],
       ["Routine technical information", "Hosting infrastructure may process IP address, browser type, requested URL, timestamp and security events to deliver and protect the site. This version has no advertising profile or account database."],
       ["Outbound links", "Links can open independently operated websites. Their privacy notices, cookies and data practices are outside this site's control; review them before submitting personal information."],
@@ -886,7 +891,7 @@ export const privacyPageCopy = {
       "El sitio está pensado para lectura pública y descubrimiento sin cuentas, checkout ni recopilación de datos de pedido.",
     crumb: "Privacidad",
     sections: [
-      ["Información que no solicitamos", "Lolobuy Sheet no pide contraseñas, pagos, direcciones, documentos de identidad o números de pedido. No envíes esos datos por un futuro canal general."],
+      ["Información que no solicitamos", "Lolobuy Sheet no pide contraseñas, pagos, direcciones, documentos de identidad o números de pedido. No envíes esos datos al correo de correcciones."],
       ["Marcadores y búsqueda", "Los marcadores usan estado temporal y no se guardan en un servidor. Las búsquedas abren el directorio actual, donde se aplica su propia privacidad."],
       ["Información técnica rutinaria", "El alojamiento puede procesar IP, navegador, URL, hora y eventos de seguridad para servir y proteger el sitio. No hay perfil publicitario ni base de cuentas."],
       ["Enlaces salientes", "Los enlaces pueden abrir sitios independientes. Sus cookies, avisos y prácticas quedan fuera del control de este sitio."],
@@ -914,7 +919,7 @@ export const privacyPageCopy = {
       "Le site est conçu pour la lecture publique et la découverte sans compte, paiement ni collecte de données de commande.",
     crumb: "Confidentialité",
     sections: [
-      ["Informations non demandées", "Lolobuy Sheet ne demande ni mot de passe, ni paiement, ni adresse, ni pièce d'identité, ni numéro de commande. N'envoyez pas ces données via un futur contact général."],
+      ["Informations non demandées", "Lolobuy Sheet ne demande ni mot de passe, ni paiement, ni adresse, ni pièce d'identité, ni numéro de commande. N'envoyez pas ces données à l'adresse de correction."],
       ["Favoris et recherche", "Les favoris restent temporaires et ne sont pas enregistrés sur un serveur. La recherche ouvre le catalogue actuel, soumis à sa propre politique."],
       ["Informations techniques courantes", "L'hébergement peut traiter IP, navigateur, URL, heure et événements de sécurité pour servir et protéger le site. Aucun profil publicitaire ni base de comptes."],
       ["Liens sortants", "Les liens peuvent ouvrir des sites indépendants. Leurs avis, cookies et pratiques échappent au contrôle de ce site."],
@@ -928,7 +933,7 @@ export const privacyPageCopy = {
       "Il sito è pensato per lettura pubblica e scoperta senza account, checkout o raccolta di dati d'ordine.",
     crumb: "Privacy",
     sections: [
-      ["Informazioni non richieste", "Lolobuy Sheet non chiede password, pagamenti, indirizzi, documenti o numeri d'ordine. Non inviare questi dati tramite un futuro contatto generale."],
+      ["Informazioni non richieste", "Lolobuy Sheet non chiede password, pagamenti, indirizzi, documenti o numeri d'ordine. Non inviare questi dati all'indirizzo per le correzioni."],
       ["Preferiti e ricerca", "I preferiti usano stato temporaneo e non sono salvati su server. Le ricerche aprono il catalogo attuale, soggetto alla sua privacy."],
       ["Informazioni tecniche ordinarie", "L'hosting può trattare IP, browser, URL, orario ed eventi di sicurezza per servire e proteggere il sito. Non esistono profili pubblicitari o database account."],
       ["Link in uscita", "I link possono aprire siti indipendenti. Informative, cookie e pratiche di quei siti sono fuori dal nostro controllo."],
@@ -950,7 +955,7 @@ export const termsPageCopy = {
       ["Changing external information", "Prices, stock, variants, descriptions, photos, services, storage rules and routes can change. A card or article is not a live quote; verify the destination before acting."],
       ["No guarantee", "Links, images and checklists do not guarantee authenticity, legality, quality, fit, availability, delivery, customs clearance or an outcome. QC photos cannot prove every characteristic."],
       ["Responsible and lawful use", "You are responsible for platform rules, laws, intellectual-property requirements, import restrictions, declarations and tax obligations applying to you and the destination."],
-      ["Errors and availability", "Reasonable efforts are made to keep information clear, but errors or temporary unavailability can occur. Material corrections will be reviewed through the public channel after formal launch."],
+      ["Errors and availability", "Reasonable efforts are made to keep information clear, but errors or temporary unavailability can occur. Material corrections can be submitted through the published email channel."],
     ],
   },
   es: {
@@ -976,41 +981,4 @@ export const termsPageCopy = {
     crumb: "Bedingungen",
     sections: [
       ["Unabhängiger Informationsdienst", "Lolobuy Sheet gehört weder zu Lolobuy noch zu genannten Marktplätzen oder Verkäufern und wird von ihnen nicht betrieben oder unterstützt. Namen dienen der Identifikation."],
-      ["Kein Verkaufs-, Prüf- oder Versandvertrag", "Die Seite verkauft nicht, nimmt keine Zahlung an, prüft keine Lagerartikel und organisiert keinen Transport. Es gelten die Bedingungen der Zielplattform."],
-      ["Veränderliche externe Angaben", "Preise, Bestand, Varianten, Fotos, Leistungen, Lagerregeln und Routen können sich ändern. Karte oder Artikel sind kein Live-Angebot."],
-      ["Keine Garantie", "Links, Bilder und Checklisten garantieren weder Echtheit, Legalität, Qualität, Passform, Bestand, Zustellung noch Zollabfertigung."],
-      ["Verantwortliche und rechtmäßige Nutzung", "Du bist für Plattformregeln, Gesetze, Schutzrechte, Einfuhrbeschränkungen, Erklärungen und Steuern verantwortlich."],
-      ["Fehler und Verfügbarkeit", "Trotz angemessener Sorgfalt können Fehler oder Ausfälle auftreten. Wesentliche Korrekturen werden über den öffentlichen Kanal geprüft."],
-    ],
-  },
-  fr: {
-    eyebrow: "CONDITIONS / MISES À JOUR 2026-07-26",
-    title: "Conditions et avertissement éditorial.",
-    intro:
-      "En utilisant ce site, vous reconnaissez qu'il s'agit d'une ressource indépendante, non d'un vendeur, agent, entrepôt ou transporteur.",
-    crumb: "Conditions",
-    sections: [
-      ["Service d'information indépendant", "Lolobuy Sheet n'est ni détenu, ni exploité, ni approuvé, ni sponsorisé par Lolobuy, les marketplaces ou vendeurs cités. Les noms servent à l'identification."],
-      ["Aucun contrat de vente, inspection ou expédition", "Le site ne vend pas, n'encaisse pas, n'inspecte pas et n'organise pas le transport. Les transactions suivent les conditions de la plateforme cible."],
-      ["Informations externes changeantes", "Prix, stock, variantes, photos, services, stockage et routes peuvent changer. Une carte ou un article n'est pas un devis actuel."],
-      ["Aucune garantie", "Liens, images et listes ne garantissent authenticité, légalité, qualité, taille, disponibilité, livraison ou dédouanement. Les photos QC ont des limites."],
-      ["Usage responsable et légal", "Vous êtes responsable des règles, lois, propriété intellectuelle, restrictions d'importation, déclarations et taxes applicables."],
-      ["Erreurs et disponibilité", "Malgré des efforts raisonnables, erreurs ou interruptions sont possibles. Les corrections importantes seront examinées via le canal public."],
-    ],
-  },
-  it: {
-    eyebrow: "TERMINI / AGGIORNATI 2026-07-26",
-    title: "Termini e avvertenza editoriale.",
-    intro:
-      "Usando il sito riconosci che è una risorsa indipendente di informazione e scoperta, non venditore, agente, magazzino o vettore.",
-    crumb: "Termini",
-    sections: [
-      ["Servizio informativo indipendente", "Lolobuy Sheet non è posseduto, gestito, approvato o sponsorizzato da Lolobuy, marketplace o venditori citati. I nomi servono a identificazione e commento."],
-      ["Nessun contratto di vendita, ispezione o spedizione", "Il sito non vende, incassa, ispeziona o organizza trasporto. Le transazioni seguono i termini della piattaforma di destinazione."],
-      ["Informazioni esterne variabili", "Prezzi, stock, varianti, foto, servizi, deposito e rotte possono cambiare. Una scheda o articolo non è un preventivo attuale."],
-      ["Nessuna garanzia", "Link, immagini e liste non garantiscono autenticità, legalità, qualità, vestibilità, disponibilità, consegna o sdoganamento. Le foto QC hanno limiti."],
-      ["Uso responsabile e legale", "Sei responsabile di regole, leggi, proprietà intellettuale, restrizioni d'importazione, dichiarazioni e tasse applicabili."],
-      ["Errori e disponibilità", "Nonostante ragionevoli sforzi, possono esserci errori o interruzioni. Le correzioni sostanziali saranno valutate tramite il canale pubblico."],
-    ],
-  },
-} as const;
+      ["Kein Verkaufs-, Prüf- oder Versandvertrag", "Die Seite verkauft nicht, nimmt keine Zahlung an, prüft keine

@@ -34,14 +34,19 @@ export async function generateMetadata({
     return {};
   }
 
-  const searchTitle =
-    article.slug === "lolobuy-spreadsheet-guide"
-      ? "Lolobuy Spreadsheet Guide 2026: Find & Verify Products"
-      : article.slug === "how-to-read-qc-photos"
-        ? "How to Read Lolobuy QC Photos: Warehouse Checklist"
-        : article.slug === "plan-china-shopping-haul"
-          ? "Lolobuy Shipping Guide: Storage, Consolidation & Weight"
-          : "Lolobuy Review 2026: Early User Evidence Examined";
+  const englishSearchTitles: Record<string, string> = {
+    "lolobuy-spreadsheet-guide":
+      "Lolobuy Spreadsheet Guide 2026: Find & Verify Products",
+    "how-to-read-qc-photos":
+      "How to Read Lolobuy QC Photos: Warehouse Checklist",
+    "plan-china-shopping-haul":
+      "Lolobuy Shipping Guide: Storage, Consolidation & Weight",
+    "lolobuy-review-early-user-experience":
+      "Lolobuy Review 2026: Early User Evidence Examined",
+    "lolobuy-weidian-link-guide":
+      "Lolobuy Weidian Link Guide 2026: Order & QC Steps",
+  };
+  const searchTitle = englishSearchTitles[article.slug] ?? article.title;
 
   const metadata = localizedMetadata({
     locale,

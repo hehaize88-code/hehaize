@@ -1,6 +1,7 @@
 import { localeOptions, localizedPath } from "../i18n";
 import { languageAlternates } from "../seo";
 import { articles, productFinds } from "../site-data";
+import { categoryGuideSlugs } from "../category-guide-data";
 
 const baseUrl = "https://lolobuy-sheet.com";
 const staticLastModified = "2026-07-28";
@@ -29,6 +30,10 @@ export async function GET() {
     ...articles.map((article) => ({
       path: `/articles/${article.slug}`,
       lastmod: article.updated,
+    })),
+    ...categoryGuideSlugs.map((slug) => ({
+      path: `/categories/${slug}`,
+      lastmod: staticLastModified,
     })),
     ...productFinds.map((product) => ({
       path: `/products/${product.slug}`,

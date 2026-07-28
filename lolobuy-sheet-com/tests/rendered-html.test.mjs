@@ -28,7 +28,7 @@ async function fetchPage(worker, path) {
   );
 }
 
-test("renders development preview metadata", async () => {
+test("renders production metadata without development-preview signals", async () => {
   const worker = await loadWorker();
   const response = await fetchPage(worker, "/");
 
@@ -37,7 +37,29 @@ test("renders development preview metadata", async () => {
     response.headers.get("content-type") ?? "",
     /^text\/html\b/i,
   );
-  assert.match(await response.text(), developmentPreviewMeta);
+  assert.doesNotMatch(await response.text(), developmentPreviewMeta);
+});
+
+test("permanently redirects www to the apex while preserving path and query", async () => {
+  const worker = await loadWorker();
+  const response = await worker.fetch(
+    new Request("https://www.lolobuy-sheet.com/de/faq?source=bookmark"),
+    {
+      ASSETS: {
+        fetch: async () => new Response("Not found", { status: 404 }),
+      },
+    },
+    {
+      waitUntil() {},
+      passThroughOnException() {},
+    },
+  );
+
+  assert.equal(response.status, 301);
+  assert.equal(
+    response.headers.get("location"),
+    "https://lolobuy-sheet.com/de/faq?source=bookmark",
+  );
 });
 
 test("serves localized paths with complete reciprocal SEO signals", async () => {
@@ -83,7 +105,7 @@ test("redirects legacy query and /en URLs to canonical language paths", async ()
   assert.equal(englishPrefix.headers.get("location"), "https://lolobuy-sheet.com/faq");
 });
 
-test("publishes all 120 language URLs in the sitemap", async () => {
+test("publishes all 140 language URLs in the sitemap", async () => {
   const worker = await loadWorker();
   const response = await fetchPage(worker, "/sitemap.xml");
   const xml = await response.text();
@@ -93,7 +115,34 @@ test("publishes all 120 language URLs in the sitemap", async () => {
     response.headers.get("content-type") ?? "",
     /application\/xml|text\/xml/i,
   );
-  assert.equal((xml.match(/<url>/g) ?? []).length, 120);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 140);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/faq/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/shoes/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/bags/);
+  assert.match(
+    xml,
+    /https:\/\/lolobuy-sheet\.com\/it\/articles\/lolobuy-weidian-link-guide/,
+  );
   assert.match(xml, /hreflang="x-default"/);
+});
+
+test("serves substantial localized category and article landing pages", async () => {
+  const worker = await loadWorker();
+  const category = await fetchPage(worker, "/de/categories/shoes");
+  const categoryHtml = await category.text();
+  assert.equal(category.status, 200);
+  assert.match(categoryHtml, /LOLOBUY SCHUH-SPREADSHEET/i);
+  assert.match(
+    categoryHtml,
+    /rel="canonical" href="https:\/\/lolobuy-sheet\.com\/de\/categories\/shoes"/i,
+  );
+
+  const article = await fetchPage(
+    worker,
+    "/fr/articles/lolobuy-weidian-link-guide",
+  );
+  const articleHtml = await article.text();
+  assert.equal(article.status, 200);
+  assert.match(articleHtml, /Guide lien Weidian avec Lolobuy 2026/i);
+  assert.match(articleHtml, /Du lien au QC/i);
 });
