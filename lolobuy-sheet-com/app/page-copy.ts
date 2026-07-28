@@ -981,4 +981,41 @@ export const termsPageCopy = {
     crumb: "Bedingungen",
     sections: [
       ["Unabhängiger Informationsdienst", "Lolobuy Sheet gehört weder zu Lolobuy noch zu genannten Marktplätzen oder Verkäufern und wird von ihnen nicht betrieben oder unterstützt. Namen dienen der Identifikation."],
-      ["Kein Verkaufs-, Prüf- oder Versandvertrag", "Die Seite verkauft nicht, nimmt keine Zahlung an, prüft keine
+      ["Kein Verkaufs-, Prüf- oder Versandvertrag", "Die Seite verkauft nicht, nimmt keine Zahlung an, prüft keine Lagerartikel und organisiert keinen Transport. Es gelten die Bedingungen der Zielplattform."],
+      ["Veränderliche externe Angaben", "Preise, Bestand, Varianten, Fotos, Leistungen, Lagerregeln und Routen können sich ändern. Karte oder Artikel sind kein Live-Angebot."],
+      ["Keine Garantie", "Links, Bilder und Checklisten garantieren weder Echtheit, Legalität, Qualität, Passform, Bestand, Zustellung noch Zollabfertigung."],
+      ["Verantwortliche und rechtmäßige Nutzung", "Du bist für Plattformregeln, Gesetze, Schutzrechte, Einfuhrbeschränkungen, Erklärungen und Steuern verantwortlich."],
+      ["Fehler und Verfügbarkeit", "Trotz angemessener Sorgfalt können Fehler oder Ausfälle auftreten. Wesentliche Korrekturen werden über den öffentlichen Kanal geprüft."],
+    ],
+  },
+  fr: {
+    eyebrow: "CONDITIONS / MISES À JOUR 2026-07-26",
+    title: "Conditions et avertissement éditorial.",
+    intro:
+      "En utilisant ce site, vous reconnaissez qu'il s'agit d'une ressource indépendante, non d'un vendeur, agent, entrepôt ou transporteur.",
+    crumb: "Conditions",
+    sections: [
+      ["Service d'information indépendant", "Lolobuy Sheet n'est ni détenu, ni exploité, ni approuvé, ni sponsorisé par Lolobuy, les marketplaces ou vendeurs cités. Les noms servent à l'identification."],
+      ["Aucun contrat de vente, inspection ou expédition", "Le site ne vend pas, n'encaisse pas, n'inspecte pas et n'organise pas le transport. Les transactions suivent les conditions de la plateforme cible."],
+      ["Informations externes changeantes", "Prix, stock, variantes, photos, services, stockage et routes peuvent changer. Une carte ou un article n'est pas un devis actuel."],
+      ["Aucune garantie", "Liens, images et listes ne garantissent authenticité, légalité, qualité, taille, disponibilité, livraison ou dédouanement. Les photos QC ont des limites."],
+      ["Usage responsable et légal", "Vous êtes responsable des règles, lois, propriété intellectuelle, restrictions d'importation, déclarations et taxes applicables."],
+      ["Erreurs et disponibilité", "Malgré des efforts raisonnables, erreurs ou interruptions sont possibles. Les corrections importantes seront examinées via le canal public."],
+    ],
+  },
+  it: {
+    eyebrow: "TERMINI / AGGIORNATI 2026-07-26",
+    title: "Termini e avvertenza editoriale.",
+    intro:
+      "Usando il sito riconosci che è una risorsa indipendente di informazione e scoperta, non venditore, agente, magazzino o vettore.",
+    crumb: "Termini",
+    sections: [
+      ["Servizio informativo indipendente", "Lolobuy Sheet non è posseduto, gestito, approvato o sponsorizzato da Lolobuy, marketplace o venditori citati. I nomi servono a identificazione e commento."],
+      ["Nessun contratto di vendita, ispezione o spedizione", "Il sito non vende, incassa, ispeziona o organizza trasporto. Le transazioni seguono i termini della piattaforma di destinazione."],
+      ["Informazioni esterne variabili", "Prezzi, stock, varianti, foto, servizi, deposito e rotte possono cambiare. Una scheda o articolo non è un preventivo attuale."],
+      ["Nessuna garanzia", "Link, immagini e liste non garantiscono autenticità, legalità, qualità, vestibilità, disponibilità, consegna o sdoganamento. Le foto QC hanno limiti."],
+      ["Uso responsabile e legale", "Sei responsabile di regole, leggi, proprietà intellettuale, restrizioni d'importazione, dichiarazioni e tasse applicabili."],
+      ["Errori e disponibilità", "Nonostante ragionevoli sforzi, possono esserci errori o interruzioni. Le correzioni sostanziali saranno valutate tramite il canale pubblico."],
+    ],
+  },
+} as const;

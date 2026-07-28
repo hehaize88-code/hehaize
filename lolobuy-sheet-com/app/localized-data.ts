@@ -446,4 +446,432 @@ const articleBodyText: Record<
   ],
   de: [
     {
-      visual: { eyebrow: "VIER-QUELLEN-REGEL", title: "Eine Entscheidung, vier verschiedene Quellen.", caption: "Das Verzeichnis startet die Suche; Live-
+      visual: { eyebrow: "VIER-QUELLEN-REGEL", title: "Eine Entscheidung, vier verschiedene Quellen.", caption: "Das Verzeichnis startet die Suche; Live-Angebot, QC-Nachweis und Packdaten übernehmen später.", items: [["Verzeichnis", "Produktidee finden und Kategorien vergleichen."], ["Live-Angebot", "Verkäufer, Option, Preis und Beschreibung bestätigen."], ["Lager-QC", "Den tatsächlich eingegangenen Artikel prüfen."], ["Gepacktes Paket", "Versand nach Gewicht, Maßen und Zulässigkeit wählen."]] },
+      sources: [["Öffentliche LoloBuy-Website", "Öffentliche Angaben zu Einkauf, Prüfung, Fotos und 90 Tagen Lagerung."], ["LoloBuy Community-Bestellleitfaden", "Öffentlicher Überblick über die Bestellphasen."]],
+      intro: ["Ein gutes Spreadsheet verkürzt den Weg von einer Idee zu einem prüfbaren Angebot. Es ersetzt nicht die Kontrolle von Verkäufer, Preis, Optionen und Einschränkungen.", "Dieser Ratgeber trennt Verzeichnis, Live-Angebot, QC-Fotos und endgültige Paketentscheidung."],
+      sections: [
+        { heading: "Mit Absicht statt Endlos-Feed beginnen", paragraphs: ["Kategorie, Zweck, Material, Maße, Farben und Budget vor der Suche festlegen. Zwei oder drei Kandidaten vergleichen statt die erste Abbildung zu wählen."], bullets: ["Artikeltyp und Zweck", "Wichtige Maße", "Artikel- und Gesamtkosten trennen", "Mehrere Kandidaten"] },
+        { heading: "Jeden Eintrag als Hinweis behandeln", paragraphs: ["Der Verkäufer steuert Bilder, Bestand, Varianten, Preis und Text. Aktuelles Angebot öffnen, exakte Option wählen und Maße mit einem passenden eigenen Artikel vergleichen."] },
+        { heading: "Öffentlich bestätigte LoloBuy-Schritte erkennen", paragraphs: ["Öffentlich beschrieben sind Bestellung per Link, Prüfung und Fotos nach Lagereingang sowie 90 Tage kostenlose Lagerung. Festpreise, Garantielaufzeiten und allgemeine Fotozahlen müssen im Live-Konto geprüft werden."] },
+        { heading: "Aus dem Link eine Bestellnotiz machen", paragraphs: ["URL, Datum, Farbe, Größe, Menge, Originaltext der Option, Maßtabelle und Preis speichern. So bleiben mehrdeutige Übersetzungen und Varianten nachvollziehbar."], bullets: ["URL und Datum", "Exakte Option", "Schlüsselmaße", "Preis und China-Versand", "Unverzichtbares Merkmal"] },
+        { heading: "Beleglose Spreadsheet-Aussagen hinterfragen", paragraphs: ["„Verifiziert“, „am günstigsten“ oder „täglich aktualisiert“ brauchen Nachweise. Ein Verzeichniseintrag beweist weder Zuverlässigkeit, Echtheit noch Endkosten."] },
+        { heading: "Verkäuferbilder von Lager-QC trennen", paragraphs: ["Verkäuferbilder zeigen das Versprechen; QC-Fotos den eingegangenen Artikel. Erst Identität und Variante, dann Verarbeitung und Schäden prüfen."] },
+        { heading: "Einen Entscheidungspreis kalkulieren", paragraphs: ["Produkt, China-Versand, Leistungen, internationaler Transport, Verpackung und Steuern getrennt planen. Die endgültige Entscheidung basiert auf dem gepackten Paket."], bullets: ["China-Versand prüfen", "Gewicht und Volumen schätzen", "Verpackungspuffer", "Endangebot prüfen"] },
+        { heading: "Kurzen Prüfvermerk behalten", paragraphs: ["Link, Option, Maßtabelle, Preis und Datum speichern. Lesezeichen garantieren keine Verfügbarkeit; vor der Bestellung erneut prüfen."] },
+        { heading: "Die praktische Regel", paragraphs: ["Spreadsheet zum Entdecken, Live-Angebot zum Bestätigen, QC-Fotos zum Prüfen und Paketangebot zum Versenden nutzen."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "QC-REIHENFOLGE", title: "Nachweise in der richtigen Reihenfolge prüfen.", caption: "Eine ruhige Reihenfolge verhindert, dass Kleinigkeiten eine falsche Größe, fehlende Teile oder Strukturprobleme überdecken.", items: [["Identität", "Artikel, Farbe, Größe, Menge und Teile."], ["Struktur", "Form, Symmetrie, Ausrichtung und Schäden."], ["Maße", "Passformrelevante Werte mit Referenz."], ["Aktion", "Annehmen, gezielt prüfen lassen oder aktuellen Weg nutzen."]] },
+      sources: [["Öffentliche LoloBuy-Website", "Bestätigt Qualitätsprüfung und Fotografie nach Lagereingang."], ["Früher unabhängiger Nutzerbericht", "Ein vorläufiger Fall zu QC, Größenabweichung und Support; keine repräsentative Bewertung."]],
+      intro: ["QC-Fotos funktionieren am besten mit Checkliste. Gesamteindruck kann Probleme verbergen, Pixel-Zoom kann durch Licht oder Perspektive Fehlalarm auslösen.", "Ziel ist eine fundierte Annahme-, Umtausch- oder Rückgabeentscheidung, nicht der Beweis perfekter Ware."],
+      sections: [
+        { heading: "Mit der Auftragsidentität beginnen", paragraphs: ["Artikel, Farbe, Modell, Größe, Menge und enthaltene Teile zuerst bestätigen. Verpackung nur erwarten, wenn sie Bestandteil des Angebots war."], bullets: ["Artikel und Farbe", "Größe oder Variante", "Menge und Teile", "Keine sichtbaren Schäden"] },
+        { heading: "Grenze öffentlicher Angaben klar halten", paragraphs: ["LoloBuy bestätigt Prüfung und Fotos, aber keine allgemeine kostenlose Bildzahl oder dauerhafte Zusatzpreise. Tatsächliche Bilder und Kontooptionen verwenden."] },
+        { heading: "Form und Symmetrie vor Kleinigkeiten lesen", paragraphs: ["Bei Kleidung Schultern und Ärmel, bei Schuhen Paar und Sohlen, bei Taschen Silhouette und Griffe vergleichen. Perspektive durch mehrere Blickwinkel ausgleichen."] },
+        { heading: "Licht, Kompression und Abstand berücksichtigen", paragraphs: ["Beleuchtung verschiebt Farben, Weitwinkel verzerrt Kanten und Kompression zerstört Textur. Dasselbe Merkmal in mehreren Bildern und mit festen Referenzen prüfen."] },
+        { heading: "Passformfragen mit Maßen beantworten", paragraphs: ["Linealposition mit Maßtabelle und eigenem Artikel vergleichen. Kleine manuelle Abweichungen zulassen, fehlendes entscheidendes Maß gezielt anfragen."] },
+        { heading: "Eine Antwort statt einfach mehr Fotos verlangen", paragraphs: ["Merkmal, Winkel und Referenz nennen: Innenlänge, Paaransicht, Brustweite oder Schadensdetail. Nur Nachweise priorisieren, die die Entscheidung ändern."], bullets: ["Merkmal nennen", "Winkel angeben", "Abweichung beschreiben", "Entscheidungsrelevanten Nachweis wählen"] },
+        { heading: "Kleidungs-Checkliste", paragraphs: ["Ausschnitt, Verschluss, Knöpfe, Druck, Taschen, Nähte, Flecken und Löcher prüfen; bei Hosen Bund, Leibhöhe, Beinform und Saum."] },
+        { heading: "Schuhe, Taschen und Zubehör", paragraphs: ["Bei Schuhen Paar, Sohlen, Kleber und Paneele vergleichen. Bei Taschen Form, Ecken, Griffe, Gurte, Reißverschluss, Futter und Beschläge ansehen."] },
+        { heading: "Wissen, was Fotos nicht belegen", paragraphs: ["Bilder beweisen weder Haltbarkeit, Zusammensetzung, Komfort, Elektronikfunktion noch Echtheit und zeigen nicht alle inneren Teile."] },
+        { heading: "Nachweise vor dem Weiterversand sichern", paragraphs: ["Referenz, Angebot, Option und wichtige Bilder speichern. Datum, Bild und gewünschte Lösung notieren, ohne Fristen zu verpassen."] },
+        { heading: "Ruhige Annahme- oder Handlungsentscheidung", paragraphs: ["Befund als normale Variation, akzeptablen Schönheitsfehler oder wesentliche Abweichung einordnen; dann aktuelle Frist und Abhilfe prüfen."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "GESAMTKOSTEN-STAPEL", title: "Der Produktpreis ist nur die erste Zeile.", caption: "Schätzungen und bestätigte Gebühren trennen. Sinnvoll wird die internationale Wahl erst mit Packdaten.", items: [["Produkt", "Gewählte Variante zum aktuellen Preis."], ["China-Kosten", "Inlandsversand und klar ausgewiesene Gebühren."], ["Paket", "Verpackung, Gewicht, Maße und Routenregeln."], ["Ziel", "Internationaler Transport plus Steuern und Zoll."]] },
+      sources: [["Öffentliche LoloBuy-Website", "90 Tage kostenlose Lagerung und Lagerleistungen."], ["Community-Bestellleitfaden", "Bündelung, Routenwahl, internationale Zahlung und Tracking."]],
+      intro: ["Mehrere Artikel zusammen sind nicht automatisch günstiger. Bündelung kann Grundgebühren sparen, doch Volumen, Einschränkungen und Zeit bleiben wichtig.", "Die beworbenen 90 Tage sind ein Planungsfenster, kein Anlass, bis zum letzten Tag zu warten."],
+      sections: [
+        { heading: "Mit veröffentlichten LoloBuy-Angaben starten", paragraphs: ["Öffentliche Quellen stützen Einkaufshilfe, Prüfung, Fotos, 90 Tage Lagerung und spätere Bündelung. Sie liefern keine dauerhafte Paketpreisliste."] },
+        { heading: "Paket zuerst auf Papier bauen", paragraphs: ["Gewicht, Maße, Material und Schutzbedarf je Artikel notieren. Problematische Mischungen und eine persönliche Versandentscheidung vorab erkennen."] },
+        { heading: "Schätzungen als Spannen führen", paragraphs: ["Verkäufergewicht ist nicht Packgewicht. Niedrig- und Hochwert plus Zeitpuffer für Versand, Eingang, QC, Packen, Export und Zoll verwenden."], bullets: ["Gewichtsspanne", "Wahrscheinliche Verpackung", "Kompatibilität", "Eigener Versandtermin"] },
+        { heading: "Ist- und Volumengewicht verstehen", paragraphs: ["Istgewicht kommt von der Waage, Volumengewicht aus Außenmaßen und Routenformel. Berechnet werden kann der höhere Wert; weniger Verpackung kann Schutz kosten."], bullets: ["Dicht: oft Istgewicht", "Leicht und groß: oft Volumen", "Verpackung ändert beides", "Lagerdaten schlagen Schätzung"] },
+        { heading: "Lagerung als Puffer nutzen", paragraphs: ["Ankünfte können warten und QC-Probleme geklärt werden. Datum je Artikel notieren und eine frühere persönliche Frist setzen."] },
+        { heading: "Mit Kompatibilität konsolidieren", paragraphs: ["Batterien, Flüssigkeiten, Magnete und andere Kategorien können Routen einschränken. Schweres kann Textilien drücken; Zerbrechliches braucht Schutz oder Trennung."] },
+        { heading: "Bündeln und Teilen ehrlich vergleichen", paragraphs: ["Eine Box kann Grundgebühren sparen, aber Volumengewicht oder Größenlimits auslösen. Ein bestätigtes Bündelangebot mit zwei bestätigten Teilangeboten vergleichen."] },
+        { heading: "Routen nicht nur nach Preis vergleichen", paragraphs: ["Gewichtsregel, Laufzeit, Tracking, Entschädigung, Einschränkungen und Zielland prüfen. Steuern und Einfuhrrecht sind keine Verzeichnisgarantie."] },
+        { heading: "Tracking als Scanfolge lesen", paragraphs: ["Tracking zeigt Ereignisse, nicht dauernde Bewegung. Nummer, Route und Datum speichern; längere Ruhe anhand aktueller Routenhife oder Ausnahme prüfen."] },
+        { heading: "Endeinreichung durchspielen", paragraphs: ["Inhalt, Adresse, Route, Deklaration, Schutz, Verpackung und Abrechnungsgewicht vor Zahlung prüfen. Große Abweichungen zuerst erklären."] },
+        { heading: "Ein nützlicher Planungsrhythmus", paragraphs: ["Gesamtkosten mitdenken, Ankünfte prüfen, Probleme früh lösen, kompatibel bündeln, zulässige Routen vergleichen und Endpaket prüfen."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "BELEGLEITER", title: "Ein nützlicher Bericht zeigt die Quelle jeder Aussage.", caption: "Plattformaussagen beschreiben den Sollprozess, ein Bericht einen Fall, das Konto aktuelle Preise und Fristen.", items: [["Veröffentlichter Service", "Linkkauf, Prüfung, Fotos und 90 Tage."], ["Beobachteter Fall", "Größenabweichung entdeckt und Rückgabe bearbeitet."], ["Noch offen", "Endkosten, Paketergebnis und Wiederholbarkeit."], ["Eigene Prüfung", "Angebot, Belege und Abhilfe vor Zahlung prüfen."]] },
+      sources: [["Öffentliche LoloBuy-Website", "Primärquelle zu Einkauf, Prüfung, Fotos und Lagerung."], ["Vorläufiger unabhängiger Bericht", "Erfahrung mit Schuhen, Taschen, QC, Support und Größenabweichung."], ["Community-Bestellleitfaden", "Öffentliche Prozessbeschreibung zum Vergleich."]],
+      intro: ["Junge Dienste sammeln Werbung früher als vollständige unabhängige Bestellnachweise. Bei LoloBuy ist das Modell sichtbar, die überprüfbare Berichtsbasis aber noch klein.", "Diese Analyse trennt getestete Einkauf- und Lagerphasen von noch nicht abgeschlossenen Versandphasen."],
+      sections: [
+        { heading: "Warum „vorläufig“ wichtig ist", paragraphs: ["Der Autor berichtete vor Abschluss des internationalen Zyklus. Der Fall sagt etwas über Einkauf, Lager und Support, nicht über Endkosten, Zoll oder Zustellung."] },
+        { heading: "Was der Käufer tatsächlich testete", paragraphs: ["Beschrieben wurden Schuhe, Taschen, Navigation, QC-Fotos, Support und Rückgabe wegen zweier Größen. Konkreter Fall, keine breite Stichprobe."] },
+        { heading: "Der Zwei-Größen-Fall ist das nützlichste Detail", paragraphs: ["Er zeigt, warum QC mit Identität und Variante beginnt. Die bearbeitete Rückgabe ist positiv für diesen Fall, keine allgemeine Garantie."] },
+        { heading: "Was „solide QC-Fotos“ sagen können", paragraphs: ["Die Bilder waren für die Entscheidung offenbar brauchbar, ohne Umfang oder Konsistenz zu belegen. Echtheit, Haltbarkeit und Material bleiben offen."] },
+        { heading: "Oberfläche und Verlauf sind nützlich, aber persönlich", paragraphs: ["Verständliche Bedienung und Verlauf halfen diesem Nutzer. Andere Geräte, Sprachen oder Erwartungen können abweichen."] },
+        { heading: "Schneller Support in einem Fall ist kein Serviceversprechen", paragraphs: ["Die Antwort ist ein positives Signal, reicht aber nicht für allgemeine Reaktionszeiten oder komplexe Fälle."] },
+        { heading: "Ein Empfehlungslink muss sichtbar bleiben", paragraphs: ["Ein möglicher Vorteil beeinflusst die Tonbewertung. Dokumentierte Fakten bleiben nutzbar, Beobachtung und Empfehlung müssen getrennt werden."] },
+        { heading: "Die größten Fragen beginnen beim Paketversand", paragraphs: ["Ohne zugestelltes Paket bleiben Gesamtkosten, Routen, Verpackung, Tracking, Zoll und Beständigkeit unbewertet."] },
+        { heading: "Einen ersten Auftrag mit wenigen Annahmen durchführen", paragraphs: ["Klare, messbare Option wählen, Angebot sichern, QC vor weiteren Bestellungen bewerten und Packdaten vor der Versandbewertung abwarten."], bullets: ["Klare Optionen", "Angebot und Variante sichern", "QC zuerst", "Packdaten abwarten", "Zustellergebnis dokumentieren"] },
+        { heading: "Ein vorsichtiges Urteil", paragraphs: ["Der Bericht ist ein frühes positives Signal für Einkauf und Lager, aber keine Gesamtbewertung. Internationaler Zyklus und größere Stichprobe fehlen."] },
+      ],
+    },
+  ],
+  fr: [
+    {
+      visual: { eyebrow: "RÈGLE DES QUATRE SOURCES", title: "Une décision, quatre sources différentes.", caption: "Le catalogue lance la recherche ; la fiche actuelle, le QC et le colis emballé prennent le relais.", items: [["Catalogue", "Trouver une idée et comparer les catégories."], ["Fiche actuelle", "Confirmer vendeur, option, prix et description."], ["QC d'entrepôt", "Inspecter l'article réellement reçu."], ["Colis emballé", "Choisir selon poids, dimensions et admissibilité."]] },
+      sources: [["Site public LoloBuy", "Déclarations sur achat, inspection, photos et 90 jours de stockage."], ["Guide communautaire LoloBuy", "Aperçu public des étapes de commande."]],
+      intro: ["Un spreadsheet utile réduit le trajet entre une idée et une fiche évaluable. Il ne remplace pas la vérification du vendeur, du prix, des options et des restrictions.", "Ce guide sépare catalogue, fiche actuelle, preuves QC et décision finale d'expédition."],
+      sections: [
+        { heading: "Commencer par l'intention, pas par un flux infini", paragraphs: ["Définissez catégorie, usage, matière, mesures, couleurs et budget avant d'ouvrir de nombreux liens. Comparez deux ou trois candidats."], bullets: ["Type et usage", "Mesures nécessaires", "Prix article et coût total séparés", "Plusieurs candidats"] },
+        { heading: "Traiter chaque entrée comme une piste", paragraphs: ["Le vendeur contrôle images, stock, variantes, prix et texte. Ouvrez la fiche actuelle, sélectionnez l'option exacte et comparez les mesures."] },
+        { heading: "Connaître les étapes confirmées par LoloBuy", paragraphs: ["La page publique décrit commande par lien, inspection, photos et 90 jours de stockage. Tarifs permanents, délais garantis et nombre universel de photos restent à vérifier dans le compte."] },
+        { heading: "Transformer le lien en note de commande", paragraphs: ["Conservez URL, date, couleur, taille, quantité, texte original de l'option, tableau et prix. Une note précise réduit l'ambiguïté."], bullets: ["URL et date", "Option exacte", "Mesures clés", "Prix et livraison chinoise", "Détail indispensable"] },
+        { heading: "Se méfier des affirmations sans preuve", paragraphs: ["« Vérifié », « moins cher » ou « mis à jour chaque jour » exigent des preuves. Une présence au catalogue ne prouve ni fiabilité, ni authenticité, ni coût final."] },
+        { heading: "Séparer photos vendeur et photos QC", paragraphs: ["Les premières présentent l'offre ; les secondes documentent l'article reçu. Vérifiez identité et variante avant construction et dommages."] },
+        { heading: "Calculer un prix de décision", paragraphs: ["Additionnez produit, livraison chinoise, services, transport international, emballage et taxes. Estimez pour planifier, utilisez le colis réel pour décider."], bullets: ["Livraison chinoise", "Poids et volume", "Marge d'emballage", "Devis final"] },
+        { heading: "Garder une trace courte", paragraphs: ["Conservez lien, option, tableau, prix et date. Un favori ne garantit pas la disponibilité ; revérifiez avant commande."] },
+        { heading: "La règle pratique", paragraphs: ["Catalogue pour découvrir, fiche pour confirmer, QC pour inspecter et devis final pour expédier."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "ORDRE DU QC", title: "Examiner les preuves dans le bon ordre.", caption: "Une séquence calme empêche un détail mineur de masquer mauvaise taille, pièce absente ou problème structurel.", items: [["Identité", "Article, couleur, taille, quantité et pièces."], ["Structure", "Forme, symétrie, alignement et dommages."], ["Mesures", "Dimensions critiques comparées à une référence."], ["Action", "Accepter, demander un contrôle ciblé ou utiliser le recours actuel."]] },
+      sources: [["Site public LoloBuy", "Confirme contrôle qualité et photographies après réception."], ["Premier témoignage indépendant", "Cas préliminaire sur QC, écart de taille et support ; pas une note représentative."]],
+      intro: ["Les photos QC sont plus utiles avec une liste. Une impression générale cache des problèmes ; zoomer chaque pixel crée parfois de fausses alertes.", "Le but est de décider en connaissance de cause, pas de prouver la perfection."],
+      sections: [
+        { heading: "Commencer par l'identité de la commande", paragraphs: ["Confirmez article, couleur, modèle, taille, quantité et pièces avant les coutures. N'attendez l'emballage que s'il faisait partie de l'offre."], bullets: ["Article et couleur", "Taille ou variante", "Quantité et pièces", "Aucun dommage évident"] },
+        { heading: "Garder claire la limite des faits publics", paragraphs: ["LoloBuy confirme inspection et photos, mais pas un nombre universel gratuit ni un tarif permanent pour des images supplémentaires. Utilisez les éléments réels du compte."] },
+        { heading: "Lire forme et symétrie avant les petits détails", paragraphs: ["Comparez épaules et manches, paire de chaussures et semelles, silhouette et poignées. Plusieurs angles réduisent l'effet de perspective."] },
+        { heading: "Tenir compte de la lumière et de la compression", paragraphs: ["Éclairage, grand-angle et compression modifient couleur, bords et texture. Comparez plusieurs cadres avec règle ou étiquette comme référence."] },
+        { heading: "Utiliser les mesures pour la coupe", paragraphs: ["Comparez la règle au tableau vendeur et à un article adapté. Acceptez de faibles écarts manuels, demandez la mesure décisive manquante."] },
+        { heading: "Demander une réponse, pas seulement plus de photos", paragraphs: ["Nommez détail, angle et référence : semelle intérieure, vue de la paire, largeur poitrine ou dommage. Privilégiez les preuves qui changent la décision."], bullets: ["Nommer le détail", "Indiquer l'angle", "Décrire l'écart", "Choisir une preuve décisive"] },
+        { heading: "Liste vêtements", paragraphs: ["Contrôlez col, zip, boutons, motif, poches, coutures, taches et trous ; pour un pantalon, taille, fourche, jambe et ourlet."] },
+        { heading: "Chaussures, sacs et accessoires", paragraphs: ["Pour les chaussures comparez paire, semelles, colle et panneaux. Pour les sacs vérifiez forme, coins, poignées, sangles, zip, doublure et métal."] },
+        { heading: "Savoir ce que les photos ne prouvent pas", paragraphs: ["Elles ne prouvent ni durabilité, composition, confort, électronique ou authenticité et ne montrent pas toutes les parties internes."] },
+        { heading: "Sauvegarder les preuves avant l'expédition", paragraphs: ["Conservez référence, fiche, option et images importantes. Notez date, photo et solution demandée sans dépasser le délai."] },
+        { heading: "Décider calmement d'accepter ou d'agir", paragraphs: ["Classez variation normale, défaut cosmétique acceptable ou écart important, puis vérifiez délai et recours actuels."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "PILE DU COÛT FINAL", title: "Le prix produit n'est que la première ligne.", caption: "Séparez estimations et frais confirmés. Le choix international devient réel avec les données du colis.", items: [["Produit", "Variante choisie au prix actuel."], ["Coût en Chine", "Livraison locale et frais affichés."], ["Colis", "Emballage, poids, dimensions et règles."], ["Destination", "Fret international, taxes et douane."]] },
+      sources: [["Site public LoloBuy", "90 jours de stockage gratuit et services d'entrepôt."], ["Guide communautaire", "Consolidation, route, paiement international et suivi."]],
+      intro: ["Regrouper plusieurs articles ne garantit pas un coût inférieur. La consolidation peut économiser des frais de base, mais volume, restrictions et calendrier comptent.", "Les 90 jours annoncés sont une marge de planification, pas une invitation à attendre le dernier jour."],
+      sections: [
+        { heading: "Partir de ce que LoloBuy publie", paragraphs: ["Les sources publiques soutiennent achat assisté, inspection, photos, stockage et consolidation ultérieure. Elles ne créent pas de tarif permanent pour votre colis."] },
+        { heading: "Construire d'abord le colis sur papier", paragraphs: ["Listez poids, dimensions, matière et protection. Repérez les mélanges difficiles et décidez ce qui peut attendre."] },
+        { heading: "Garder les estimations en fourchettes", paragraphs: ["Le poids vendeur n'est pas le poids emballé. Utilisez valeurs basse et haute plus une marge pour chaque étape logistique."], bullets: ["Fourchette de poids", "Emballage probable", "Compatibilité", "Date personnelle d'envoi"] },
+        { heading: "Comprendre poids réel et volumétrique", paragraphs: ["Le réel vient de la balance ; le volumétrique des dimensions et d'une formule de route. Le plus élevé peut être facturé ; retirer une boîte réduit parfois la protection."], bullets: ["Dense : souvent poids réel", "Léger et grand : volume", "L'emballage change les deux", "Les données d'entrepôt priment"] },
+        { heading: "Utiliser le stockage comme marge", paragraphs: ["Il permet d'attendre les arrivées et de résoudre le QC. Notez la date de chaque article et fixez une échéance antérieure."] },
+        { heading: "Consolider selon la compatibilité", paragraphs: ["Batteries, liquides, aimants et autres catégories peuvent limiter les routes. Les objets lourds écrasent les textiles ; le fragile exige protection ou séparation."] },
+        { heading: "Comparer honnêtement consolidation et séparation", paragraphs: ["Une boîte économise parfois les frais de base mais peut déclencher volume ou limites. Comparez un devis regroupé à deux devis réels."] },
+        { heading: "Comparer les routes au-delà du prix", paragraphs: ["Vérifiez règle de poids, délai, suivi, indemnisation, restrictions et destination. Taxes et importation relèvent du pays."] },
+        { heading: "Lire le suivi comme une suite de scans", paragraphs: ["Le suivi montre des événements, pas le mouvement continu. Gardez numéro, route et date et traitez les exceptions avec la partie compétente."] },
+        { heading: "Répéter la soumission finale", paragraphs: ["Avant paiement, contrôlez contenu, adresse, route, déclaration, protection, emballage et poids facturable. Expliquez tout écart important."] },
+        { heading: "Un rythme de planification utile", paragraphs: ["Penser au coût total, inspecter, résoudre tôt, regrouper ce qui est compatible, comparer les routes et relire le colis final."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "ÉCHELLE DES PREUVES", title: "Un avis utile montre la source de chaque affirmation.", caption: "La plateforme décrit le service prévu, un témoignage documente un cas et le compte actuel contrôle prix et délais.", items: [["Service publié", "Achat par lien, inspection, photos et 90 jours."], ["Cas observé", "Écart de taille détecté et retour traité."], ["Encore inconnu", "Coût final, résultat du colis et régularité."], ["Votre contrôle", "Vérifier devis, preuves et recours avant paiement."]] },
+      sources: [["Site public LoloBuy", "Source primaire pour achat, inspection, photos et stockage."], ["Témoignage préliminaire indépendant", "Chaussures, sacs, QC, support et écart de taille."], ["Guide communautaire", "Processus public utilisé pour comparer le cas."]],
+      intro: ["Les jeunes services accumulent la promotion avant les commandes indépendantes complètes. LoloBuy présente un modèle clair, mais peu de témoignages vérifiables.", "Cette analyse distingue les étapes réellement testées de celles qui restent inachevées."],
+      sections: [
+        { heading: "Pourquoi le mot « préliminaire » compte", paragraphs: ["L'auteur écrivait avant la fin du cycle international. Le cas informe sur achat, entrepôt et support, pas sur coût final, douane ou livraison."] },
+        { heading: "Ce que l'acheteur a réellement testé", paragraphs: ["Le récit couvre chaussures, sacs, navigation, QC, support et retour lié à deux tailles. C'est un cas concret, pas un large échantillon."] },
+        { heading: "L'incident des deux tailles est le détail le plus utile", paragraphs: ["Il montre pourquoi le QC commence par identité et variante. Le retour traité est positif pour ce cas, sans garantir tous les vendeurs."] },
+        { heading: "Ce que des photos « solides » peuvent dire", paragraphs: ["Les images ont apparemment permis une décision sans prouver leur nombre ou constance. Authenticité, durée et matière restent inconnues."] },
+        { heading: "Interface et historique : utiles mais personnels", paragraphs: ["Une interface claire et l'historique ont aidé cet utilisateur. Appareils, langues et attentes peuvent produire une autre expérience."] },
+        { heading: "Un support réactif dans un cas n'est pas une promesse", paragraphs: ["La réponse est un signal positif, insuffisant pour établir des délais généraux ou des résultats complexes."] },
+        { heading: "Le lien de parrainage doit rester visible", paragraphs: ["Un avantage potentiel influence l'évaluation du ton. Les faits documentés restent utiles si observation et recommandation sont séparées."] },
+        { heading: "Les plus grandes questions commencent à l'envoi", paragraphs: ["Sans colis livré, coût, routes, emballage, suivi, douane et régularité ne peuvent être jugés."] },
+        { heading: "Faire une première commande avec peu d'hypothèses", paragraphs: ["Choisissez une option claire, sauvegardez la fiche, évaluez le QC avant d'ajouter et attendez les données emballées avant de juger le fret."], bullets: ["Options claires", "Fiche et variante sauvegardées", "QC d'abord", "Données du colis", "Résultat livré documenté"] },
+        { heading: "Un verdict prudent", paragraphs: ["Le récit est un signal précoce positif pour achat et entrepôt, pas une note globale. Le cycle international et un échantillon plus large manquent."] },
+      ],
+    },
+  ],
+  it: [
+    {
+      visual: { eyebrow: "REGOLA DELLE QUATTRO FONTI", title: "Una decisione, quattro fonti diverse.", caption: "Il catalogo avvia la ricerca; scheda attuale, QC e pacco preparato controllano le fasi successive.", items: [["Catalogo", "Trova un'idea e confronta categorie."], ["Scheda attuale", "Conferma venditore, opzione, prezzo e descrizione."], ["QC di magazzino", "Controlla l'articolo realmente arrivato."], ["Pacco preparato", "Scegli in base a peso, dimensioni e idoneità."]] },
+      sources: [["Sito pubblico LoloBuy", "Dichiarazioni su acquisto, ispezione, foto e 90 giorni di deposito."], ["Guida community LoloBuy", "Panoramica pubblica delle fasi dell'ordine."]],
+      intro: ["Uno spreadsheet utile accorcia il percorso da un'idea a una scheda valutabile. Non sostituisce controllo di venditore, prezzo, opzioni e restrizioni.", "Questa guida separa catalogo, scheda attuale, prove QC e decisione finale sul pacco."],
+      sections: [
+        { heading: "Parti dall'intento, non da un feed infinito", paragraphs: ["Definisci categoria, uso, materiale, misure, colori e budget prima di aprire molti link. Confronta due o tre candidati."], bullets: ["Tipo e uso", "Misure necessarie", "Prezzo articolo e costo totale separati", "Più candidati"] },
+        { heading: "Tratta ogni voce come una pista", paragraphs: ["Il venditore controlla immagini, stock, varianti, prezzo e testo. Apri la scheda attuale, scegli l'opzione esatta e confronta le misure."] },
+        { heading: "Conosci ciò che LoloBuy conferma pubblicamente", paragraphs: ["La pagina descrive ordine tramite link, ispezione, foto e 90 giorni di deposito. Tariffe permanenti, tempi garantiti e quantità universali vanno verificati nell'account."] },
+        { heading: "Trasforma il link in una nota d'ordine", paragraphs: ["Salva URL, data, colore, taglia, quantità, testo originale, tabella e prezzo. Una nota precisa riduce ambiguità."], bullets: ["URL e data", "Opzione esatta", "Misure chiave", "Prezzo e consegna cinese", "Dettaglio indispensabile"] },
+        { heading: "Diffida delle affermazioni senza prove", paragraphs: ["“Verificato”, “più economico” o “aggiornato ogni giorno” richiedono prove. La presenza nel catalogo non dimostra affidabilità, autenticità o costo finale."] },
+        { heading: "Separa foto venditore e foto QC", paragraphs: ["Le prime presentano l'offerta; le seconde documentano l'articolo ricevuto. Controlla identità e variante prima di costruzione e danni."] },
+        { heading: "Calcola un prezzo decisionale", paragraphs: ["Considera prodotto, consegna cinese, servizi, trasporto internazionale, imballaggio e tasse. Stima per pianificare, usa il pacco reale per decidere."], bullets: ["Consegna cinese", "Peso e volume", "Margine imballaggio", "Preventivo finale"] },
+        { heading: "Conserva un registro breve", paragraphs: ["Salva link, opzione, tabella, prezzo e data. Un preferito non garantisce disponibilità; ricontrolla prima dell'ordine."] },
+        { heading: "La regola pratica", paragraphs: ["Catalogo per scoprire, scheda per confermare, QC per ispezionare e preventivo finale per spedire."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "ORDINE DEL QC", title: "Esamina le prove nell'ordine giusto.", caption: "Una sequenza calma evita che un dettaglio minore nasconda taglia errata, pezzo mancante o problema strutturale.", items: [["Identità", "Articolo, colore, taglia, quantità e pezzi."], ["Struttura", "Forma, simmetria, allineamento e danni."], ["Misure", "Dimensioni critiche confrontate con un riferimento."], ["Azione", "Accetta, chiedi un controllo mirato o usa il rimedio attuale."]] },
+      sources: [["Sito pubblico LoloBuy", "Conferma controllo qualità e foto dopo l'arrivo."], ["Prima esperienza indipendente", "Caso preliminare su QC, differenza di taglia e supporto; non un punteggio rappresentativo."]],
+      intro: ["Le foto QC funzionano meglio con una lista. L'impressione generale nasconde problemi; lo zoom estremo crea falsi allarmi.", "Lo scopo è decidere con informazioni, non provare la perfezione."],
+      sections: [
+        { heading: "Inizia dall'identità dell'ordine", paragraphs: ["Conferma articolo, colore, modello, taglia, quantità e pezzi prima delle cuciture. Aspettati l'imballaggio solo se incluso nell'offerta."], bullets: ["Articolo e colore", "Taglia o variante", "Quantità e pezzi", "Nessun danno evidente"] },
+        { heading: "Mantieni chiaro il limite dei fatti pubblici", paragraphs: ["LoloBuy conferma ispezione e foto, ma non una quantità universale gratuita o prezzi permanenti per extra. Usa immagini e opzioni reali dell'account."] },
+        { heading: "Leggi forma e simmetria prima dei dettagli", paragraphs: ["Confronta spalle e maniche, coppia e suole, forma e manici. Più angoli riducono l'effetto della prospettiva."] },
+        { heading: "Considera luce, compressione e distanza", paragraphs: ["Illuminazione, grandangolo e compressione cambiano colore, bordi e texture. Confronta più fotogrammi con righello o etichetta."] },
+        { heading: "Usa le misure per la vestibilità", paragraphs: ["Confronta il righello con tabella venditore e un capo adatto. Accetta piccoli scarti manuali, chiedi la misura decisiva mancante."] },
+        { heading: "Chiedi una risposta, non solo più foto", paragraphs: ["Indica dettaglio, angolo e riferimento: soletta, vista coppia, larghezza torace o danno. Dai priorità alle prove che cambiano la decisione."], bullets: ["Nomina il dettaglio", "Indica l'angolo", "Descrivi la differenza", "Scegli una prova decisiva"] },
+        { heading: "Lista per abbigliamento", paragraphs: ["Controlla collo, zip, bottoni, stampa, tasche, cuciture, macchie e fori; nei pantaloni vita, cavallo, gamba e orlo."] },
+        { heading: "Scarpe, borse e accessori", paragraphs: ["Per le scarpe confronta coppia, suole, colla e pannelli. Per le borse forma, angoli, manici, cinturini, zip, fodera e metallo."] },
+        { heading: "Conosci ciò che le foto non provano", paragraphs: ["Non provano durata, composizione, comfort, elettronica o autenticità e non mostrano tutte le parti interne."] },
+        { heading: "Salva le prove prima della spedizione", paragraphs: ["Conserva riferimento, scheda, opzione e immagini importanti. Annota data, foto e soluzione senza perdere la scadenza."] },
+        { heading: "Decidi con calma se accettare o agire", paragraphs: ["Classifica variazione normale, difetto estetico accettabile o differenza sostanziale, poi verifica scadenza e rimedio attuali."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "STRATI DEL COSTO FINALE", title: "Il prezzo prodotto è solo la prima riga.", caption: "Separa stime e costi confermati. La scelta internazionale diventa reale con i dati del pacco.", items: [["Prodotto", "Variante scelta al prezzo attuale."], ["Costo in Cina", "Consegna nazionale e addebiti mostrati."], ["Pacco", "Imballaggio, peso, dimensioni e regole."], ["Destinazione", "Trasporto internazionale, tasse e dogana."]] },
+      sources: [["Sito pubblico LoloBuy", "90 giorni di deposito gratuito e servizi di magazzino."], ["Guida community", "Consolidamento, rotta, pagamento internazionale e tracking."]],
+      intro: ["Raggruppare più articoli non garantisce un costo minore. Il consolidamento può ridurre spese base, ma volume, restrizioni e tempi contano.", "I 90 giorni pubblicizzati sono una finestra di pianificazione, non un invito ad aspettare l'ultimo giorno."],
+      sections: [
+        { heading: "Parti da ciò che LoloBuy pubblica", paragraphs: ["Le fonti pubbliche supportano acquisto assistito, ispezione, foto, deposito e successivo consolidamento. Non creano un listino permanente per il tuo pacco."] },
+        { heading: "Costruisci prima il pacco su carta", paragraphs: ["Elenca peso, dimensioni, materiale e protezione. Individua combinazioni difficili e decidi cosa può aspettare."] },
+        { heading: "Mantieni le stime in intervalli", paragraphs: ["Il peso del venditore non è quello imballato. Usa valore basso e alto più margine per ogni fase logistica."], bullets: ["Intervallo di peso", "Imballaggio probabile", "Compatibilità", "Data personale di spedizione"] },
+        { heading: "Comprendi peso reale e volumetrico", paragraphs: ["Il reale viene dalla bilancia; il volumetrico da dimensioni e formula della rotta. Può essere addebitato il maggiore; togliere scatole riduce anche protezione."], bullets: ["Denso: spesso peso reale", "Leggero e grande: volume", "Imballaggio cambia entrambi", "Dati di magazzino migliori"] },
+        { heading: "Usa il deposito come margine", paragraphs: ["Permette di attendere arrivi e risolvere il QC. Registra la data di ogni articolo e fissa una scadenza precedente."] },
+        { heading: "Consolida in base alla compatibilità", paragraphs: ["Batterie, liquidi, magneti e altre categorie possono limitare rotte. Gli oggetti pesanti schiacciano tessili; i fragili richiedono protezione o separazione."] },
+        { heading: "Confronta onestamente consolidamento e divisione", paragraphs: ["Una scatola può risparmiare costi base ma attivare volume o limiti. Confronta un preventivo unito con due preventivi reali."] },
+        { heading: "Confronta le rotte oltre il prezzo", paragraphs: ["Verifica regola di peso, tempi, tracking, compensazione, restrizioni e destinazione. Tasse e importazione dipendono dal paese."] },
+        { heading: "Leggi il tracking come sequenza di scansioni", paragraphs: ["Il tracking mostra eventi, non movimento continuo. Conserva numero, rotta e data e gestisci le eccezioni con la parte corretta."] },
+        { heading: "Ripassa l'invio finale", paragraphs: ["Prima di pagare controlla contenuto, indirizzo, rotta, dichiarazione, protezione, imballaggio e peso fatturabile. Spiega gli scarti importanti."] },
+        { heading: "Un ritmo utile di pianificazione", paragraphs: ["Pensa al costo totale, ispeziona, risolvi presto, raggruppa ciò che è compatibile, confronta rotte e rileggi il pacco finale."] },
+      ],
+    },
+    {
+      visual: { eyebrow: "SCALA DELLE PROVE", title: "Una recensione utile mostra la fonte di ogni affermazione.", caption: "La piattaforma descrive il servizio previsto, un resoconto documenta un caso e l'account controlla prezzi e scadenze.", items: [["Servizio pubblicato", "Acquisto tramite link, ispezione, foto e 90 giorni."], ["Caso osservato", "Differenza di taglia individuata e reso gestito."], ["Ancora ignoto", "Costo finale, risultato del pacco e coerenza."], ["Tua verifica", "Controlla preventivo, prove e rimedio prima di pagare."]] },
+      sources: [["Sito pubblico LoloBuy", "Fonte primaria per acquisto, ispezione, foto e deposito."], ["Resoconto preliminare indipendente", "Scarpe, borse, QC, supporto e differenza di taglia."], ["Guida community", "Processo pubblico usato per confrontare il caso."]],
+      intro: ["I servizi giovani raccolgono promozione prima di ordini indipendenti completi. LoloBuy mostra un modello chiaro, ma pochi resoconti verificabili.", "Questa analisi separa le fasi realmente testate da quelle ancora incomplete."],
+      sections: [
+        { heading: "Perché la parola «preliminare» conta", paragraphs: ["L'autore scriveva prima della fine del ciclo internazionale. Il caso informa su acquisto, magazzino e supporto, non su costo finale, dogana o consegna."] },
+        { heading: "Cosa ha realmente testato l'acquirente", paragraphs: ["Il resoconto copre scarpe, borse, navigazione, QC, supporto e reso per due taglie. È un caso concreto, non un campione ampio."] },
+        { heading: "L'incidente delle due taglie è il dettaglio più utile", paragraphs: ["Mostra perché il QC parte da identità e variante. Il reso gestito è positivo per quel caso, non una garanzia generale."] },
+        { heading: "Cosa possono dire foto QC «solide»", paragraphs: ["Le immagini sembrano aver consentito una decisione senza provarne numero o coerenza. Autenticità, durata e materiale restano ignoti."] },
+        { heading: "Interfaccia e cronologia sono utili, ma personali", paragraphs: ["Interfaccia chiara e cronologia hanno aiutato quell'utente. Dispositivi, lingue e aspettative possono produrre esperienze diverse."] },
+        { heading: "Supporto rapido in un caso non è una promessa", paragraphs: ["La risposta è un segnale positivo, insufficiente per stabilire tempi generali o risultati complessi."] },
+        { heading: "Il link referral deve restare visibile", paragraphs: ["Un possibile vantaggio influenza il tono. I fatti documentati restano utili se osservazione e raccomandazione sono separate."] },
+        { heading: "Le domande maggiori iniziano con la spedizione", paragraphs: ["Senza pacco consegnato non si giudicano costo, rotte, imballaggio, tracking, dogana o coerenza."] },
+        { heading: "Esegui un primo ordine con poche ipotesi", paragraphs: ["Scegli un'opzione chiara, salva la scheda, valuta il QC prima di aggiungere e attendi i dati imballati prima di giudicare il trasporto."], bullets: ["Opzioni chiare", "Scheda e variante salvate", "QC prima", "Dati del pacco", "Risultato consegnato documentato"] },
+        { heading: "Un verdetto prudente", paragraphs: ["Il resoconto è un segnale iniziale positivo per acquisto e magazzino, non una valutazione globale. Mancano ciclo internazionale e campione maggiore."] },
+      ],
+    },
+  ],
+};
+
+const weidianArticleText: Record<
+  Exclude<Locale, "en">,
+  {
+    meta: ArticleMetaText;
+    body: LocalizedArticleBody;
+  }
+> = {
+  es: {
+    meta: {
+      title: "Guía de enlaces Weidian con Lolobuy 2026: de la URL al QC",
+      shortTitle: "Cómo usar un enlace Weidian con Lolobuy",
+      description: "Guía verificada para copiar una URL de Weidian, comprobar variantes, enviarla mediante Lolobuy y conservar pruebas para el QC.",
+      eyebrow: "GUÍA DE ENLACES WEIDIAN",
+      readingTime: "14 min de lectura",
+      factCheckLine: "Verificado el 28 de julio de 2026 con la web pública de LoloBuy, su guía comunitaria identificada y un ejemplo documentado de Weidian a LoloBuy.",
+    },
+    body: {
+      visual: {
+        eyebrow: "DEL ENLACE AL QC",
+        title: "La URL inicia una cadena de pruebas.",
+        caption: "La ficha identifica la oferta; el pedido registra la opción; las fotos muestran lo recibido.",
+        items: [
+          ["Enlace fuente", "Abre el producto Weidian y elige la opción exacta."],
+          ["Pedido", "Compara título, precio, color, talla y cantidad."],
+          ["Almacén", "Relaciona el artículo y las fotos con el pedido guardado."],
+          ["Paquete", "Envía solo después de resolver diferencias y coste."],
+        ],
+      },
+      sources: [
+        ["Web pública de LoloBuy", "Fuente para pedido por enlace, inspección, fotos y 90 días de almacenamiento."],
+        ["Guía comunitaria identificada de LoloBuy", "Indica copiar enlaces de Weidian y especificar talla, color y cantidad."],
+        ["Ejemplo documentado Weidian-LoloBuy", "Muestra una URL Weidian junto a su ficha LoloBuy; es un caso, no una regla permanente."],
+        ["Web pública de Weidian", "Fuente primaria del marketplace y sus superficies públicas."],
+      ],
+      intro: [
+        "Copiar y pegar parece sencillo, pero los errores aparecen entre ambos pasos: una ficha puede reunir tallas, colores y versiones, y el precio más bajo puede pertenecer a otra opción.",
+        "La guía comunitaria identificada de LoloBuy incluye Weidian, indica pegar la URL y especificar talla, color y cantidad. Este artículo convierte ese proceso en una cadena de pruebas sin inventar tarifas ni promociones.",
+      ],
+      sections: [
+        { heading: "Qué demuestra un enlace Weidian", paragraphs: ["La URL identifica una página controlada por el vendedor en un momento concreto. No demuestra disponibilidad futura, calidad, autenticidad, devolución o coste entregado. Abre siempre la ficha actual."] },
+        { heading: "Copia la URL desde el producto abierto", paragraphs: ["Deja que un enlace compartido llegue a la ficha final, confirma el artículo y copia la dirección actual. No construyas manualmente una URL de Lolobuy cambiando números de otro producto."] },
+        { heading: "Guarda la oferta exacta", paragraphs: ["Anota vendedor, título, color, talla o versión, cantidad, precio visible, entrega nacional y fecha. Guarda tabla e imágenes decisivas; una promoción o precio inicial puede corresponder a otra variante."], bullets: ["URL y fecha", "Vendedor", "Variante y cantidad", "Precio y entrega china", "Tabla e imágenes"] },
+        { heading: "Compara el pedido generado", paragraphs: ["Tras pegar el enlace, compara imagen, título, opción, precio, cantidad y entrega con Weidian. Conserva el texto original de la variante si la traducción pierde información."] },
+        { heading: "Separa compra y coste entregado", paragraphs: ["Producto y entrega china aparecen antes que almacenamiento, consolidación y envío internacional. El total final depende del paquete preparado, la ruta y el destino."] },
+        { heading: "Usa el almacén como segunda comparación", paragraphs: ["LoloBuy confirma inspección, fotos y 90 días de almacenamiento. Compara artículo, color, talla, cantidad y piezas con tu registro; la web no fija una cantidad universal de fotos o una devolución única."] },
+        { heading: "Adapta el QC a la categoría", paragraphs: ["En calzado revisa par y talla; en ropa, medidas, diseño y costuras; en bolsos, dimensiones, forma, correas y cierres. Las fotos no prueban composición, duración o autenticidad."] },
+        { heading: "Describe una opción incorrecta con pruebas", paragraphs: ["Indica opción pedida, detalle recibido, foto y resultado solicitado. Revisa pronto y usa la acción actual antes del envío; no prometas una devolución gratuita universal."] },
+        { heading: "Conserva pruebas si el enlace cambia", paragraphs: ["Guarda URL, capturas, texto, precio y pedido. Una página nueva del vendedor es otra ficha y debe comprobarse desde cero."] },
+        { heading: "Flujo limpio Weidian-Lolobuy", paragraphs: ["Decide en la ficha actual, guarda la variante, pega el enlace, compara el pedido, revisa el QC y juzga el envío con el paquete preparado. Este registro también permite una reseña real y completa."], bullets: ["Descubre en el directorio", "Decide en la ficha", "Compara el pedido", "Revisa el QC", "Evalúa el resultado entregado"] },
+      ],
+    },
+  },
+  de: {
+    meta: {
+      title: "Lolobuy Weidian-Link-Ratgeber 2026: Von der URL zum Lager-QC",
+      shortTitle: "Einen Weidian-Link mit Lolobuy verwenden",
+      description: "Geprüfter Ratgeber zum Kopieren eines Weidian-Links, Prüfen von Varianten, Einreichen über Lolobuy und Sichern von QC-Belegen.",
+      eyebrow: "WEIDIAN-LINK-RATGEBER",
+      readingTime: "14 Min. Lesezeit",
+      factCheckLine: "Am 28. Juli 2026 mit LoloBuys Website, identifiziertem Community-Leitfaden und dokumentiertem Weidian-LoloBuy-Beispiel geprüft.",
+    },
+    body: {
+      visual: {
+        eyebrow: "VOM LINK ZUM QC",
+        title: "Die Produkt-URL startet die Beweiskette.",
+        caption: "Das Angebot identifiziert die Auswahl, der Auftrag hält sie fest und Lagerfotos zeigen die Ankunft.",
+        items: [
+          ["Quelllink", "Weidian-Produkt öffnen und genaue Option wählen."],
+          ["Auftrag", "Titel, Preis, Farbe, Größe und Menge vergleichen."],
+          ["Lager", "Artikel und Fotos mit dem gespeicherten Auftrag abgleichen."],
+          ["Paket", "Erst nach Abweichungs- und Kostenprüfung versenden."],
+        ],
+      },
+      sources: [
+        ["LoloBuy-Website", "Primärquelle für Linkbestellung, Prüfung, Fotos und 90 Tage Lagerung."],
+        ["Identifizierter LoloBuy-Community-Leitfaden", "Nennt Weidian-Links sowie Größe, Farbe und Menge."],
+        ["Dokumentiertes Weidian-LoloBuy-Beispiel", "Zeigt Quell- und LoloBuy-Link als Einzelfall, nicht als Dauerregel."],
+        ["Weidian-Website", "Primärquelle für Marktplatz und öffentliche Produktseiten."],
+      ],
+      intro: [
+        "Kopieren und Einfügen wirkt einfach. Fehler entstehen dazwischen: Ein Angebot kann viele Größen, Farben und Versionen verbinden, der niedrigste Preis kann zu einer anderen Option gehören.",
+        "LoloBuys identifizierter Community-Leitfaden nennt Weidian, das Einfügen der URL und die Angabe von Größe, Farbe und Menge. Dieser Ratgeber macht daraus eine nachvollziehbare Prüfkette.",
+      ],
+      sections: [
+        { heading: "Was ein Weidian-Link belegt", paragraphs: ["Die URL identifiziert eine verkäufergesteuerte Seite zu einem Zeitpunkt. Sie beweist weder künftigen Bestand noch Qualität, Echtheit, Rückgabe oder Endkosten. Das aktuelle Angebot öffnen."] },
+        { heading: "URL aus dem geöffneten Produkt kopieren", paragraphs: ["Geteilte Links bis zur finalen Produktseite auflösen, Artikel prüfen und aktuelle Adresse kopieren. Keine LoloBuy-URL durch Ändern fremder Nummern bauen."] },
+        { heading: "Genaue Verkäuferauswahl sichern", paragraphs: ["Shop, Titel, Farbe, Größe oder Version, Menge, sichtbaren Preis, China-Versand und Datum notieren. Tabelle und entscheidende Bilder speichern."], bullets: ["URL und Datum", "Verkäufer", "Variante und Menge", "Preis und China-Versand", "Tabelle und Bilder"] },
+        { heading: "Erzeugten Auftrag Zeile für Zeile vergleichen", paragraphs: ["Nach dem Einfügen Bild, Titel, Auswahl, Preis, Menge und Versand mit Weidian abgleichen. Originalen Optionstext erhalten, wenn die Übersetzung Details verliert."] },
+        { heading: "Erste Zahlung und Lieferkosten trennen", paragraphs: ["Produkt und Inlandsversand liegen vor Lagerung, Bündelung und Auslandsfracht. Der Endbetrag hängt von Paket, Route und Ziel ab."] },
+        { heading: "Lagerankunft als zweite Prüfung nutzen", paragraphs: ["LoloBuy bestätigt Prüfung, Fotos und 90 Tage Lagerung. Artikel, Farbe, Größe, Menge und Teile abgleichen; eine allgemeine Fotozahl oder Rückgaberegel wird öffentlich nicht genannt."] },
+        { heading: "QC an die Kategorie anpassen", paragraphs: ["Bei Schuhen Paar und Größe, bei Kleidung Maße und Verarbeitung, bei Taschen Form, Gurte und Verschlüsse prüfen. Fotos beweisen keine Zusammensetzung, Haltbarkeit oder Echtheit."] },
+        { heading: "Falsche Option konkret belegen", paragraphs: ["Bestellte Option, erhaltenes Detail, Foto und gewünschtes Ergebnis nennen. Schnell und vor Auslandsversand handeln, ohne kostenlose Rückgabe zu versprechen."] },
+        { heading: "Belege bei geändertem Link bewahren", paragraphs: ["URL, Screenshots, Option, Preis und Auftrag zusammenhalten. Eine neue Verkäuferseite ist ein neues Angebot und erneut zu prüfen."] },
+        { heading: "Sauberer Weidian-LoloBuy-Ablauf", paragraphs: ["Im Live-Angebot entscheiden, Variante sichern, Link einfügen, Auftrag vergleichen, QC prüfen und Versand nach Paketdaten beurteilen. So entsteht auch ein belastbarer Erfahrungsbericht."], bullets: ["Im Verzeichnis entdecken", "Im Angebot entscheiden", "Auftrag vergleichen", "QC prüfen", "Lieferergebnis dokumentieren"] },
+      ],
+    },
+  },
+  fr: {
+    meta: {
+      title: "Guide lien Weidian avec Lolobuy 2026 : de l'URL au QC",
+      shortTitle: "Utiliser un lien Weidian avec Lolobuy",
+      description: "Guide vérifié pour copier une URL Weidian, contrôler variantes et prix, la soumettre via Lolobuy et garder les preuves QC.",
+      eyebrow: "GUIDE LIEN WEIDIAN",
+      readingTime: "14 min de lecture",
+      factCheckLine: "Vérifié le 28 juillet 2026 avec le site LoloBuy, son guide communautaire identifié et un exemple documenté Weidian-LoloBuy.",
+    },
+    body: {
+      visual: {
+        eyebrow: "DU LIEN AU QC",
+        title: "L'URL produit commence la chaîne de preuves.",
+        caption: "La fiche identifie l'offre, la commande garde l'option et les photos montrent l'arrivée.",
+        items: [
+          ["Lien source", "Ouvrir l'article Weidian et choisir l'option exacte."],
+          ["Commande", "Comparer titre, prix, couleur, taille et quantité."],
+          ["Entrepôt", "Relier article et photos à la commande sauvegardée."],
+          ["Colis", "Expédier après résolution des écarts et du coût."],
+        ],
+      },
+      sources: [
+        ["Site public LoloBuy", "Source pour commande par lien, inspection, photos et 90 jours de stockage."],
+        ["Guide communautaire LoloBuy identifié", "Indique les liens Weidian et les détails taille, couleur et quantité."],
+        ["Exemple Weidian-LoloBuy documenté", "Montre les deux URL comme un cas observable, pas une règle permanente."],
+        ["Site public Weidian", "Source primaire du marketplace et de ses pages publiques."],
+      ],
+      intro: [
+        "Copier-coller paraît simple, mais les erreurs se glissent entre les deux : une fiche peut réunir tailles, couleurs et versions, et le prix le plus bas viser une autre option.",
+        "Le guide communautaire identifié de LoloBuy cite Weidian, le collage de l'URL et la saisie de taille, couleur et quantité. Ce guide transforme ce parcours en chaîne de vérification.",
+      ],
+      sections: [
+        { heading: "Ce que prouve un lien Weidian", paragraphs: ["L'URL identifie une page contrôlée par le vendeur à un instant. Elle ne prouve ni stock futur, qualité, authenticité, retour ou coût livré. Ouvrez la fiche actuelle."] },
+        { heading: "Copier l'URL du produit ouvert", paragraphs: ["Laissez un lien partagé atteindre la fiche finale, confirmez l'article puis copiez l'adresse actuelle. Ne construisez pas une URL LoloBuy en modifiant celle d'un autre produit."] },
+        { heading: "Sauvegarder l'offre exacte", paragraphs: ["Notez vendeur, titre, couleur, taille ou version, quantité, prix visible, livraison chinoise et date. Gardez tableau et images décisives."], bullets: ["URL et date", "Vendeur", "Variante et quantité", "Prix et livraison chinoise", "Tableau et images"] },
+        { heading: "Comparer la commande générée", paragraphs: ["Après collage, comparez image, titre, option, prix, quantité et livraison avec Weidian. Gardez le texte original si la traduction perd un détail."] },
+        { heading: "Séparer premier paiement et coût livré", paragraphs: ["Produit et livraison chinoise précèdent entrepôt, consolidation et fret international. Le total dépend du colis, de la route et du pays."] },
+        { heading: "Utiliser l'entrepôt comme second contrôle", paragraphs: ["LoloBuy confirme inspection, photos et 90 jours de stockage. Comparez article, couleur, taille, quantité et pièces ; aucun nombre universel de photos ou retour unique n'est publié."] },
+        { heading: "Adapter le QC à la catégorie", paragraphs: ["Pour chaussures : paire et taille ; vêtements : mesures et coutures ; sacs : forme, sangles et fermetures. Les photos ne prouvent composition, durée ou authenticité."] },
+        { heading: "Documenter précisément une mauvaise option", paragraphs: ["Nommez option commandée, détail reçu, photo et résultat souhaité. Agissez vite avant l'expédition sans promettre un retour gratuit général."] },
+        { heading: "Conserver les preuves si le lien change", paragraphs: ["Gardez URL, captures, option, prix et commande. Une nouvelle page vendeur constitue une nouvelle offre à vérifier."] },
+        { heading: "Parcours Weidian-LoloBuy propre", paragraphs: ["Décidez sur la fiche actuelle, sauvegardez l'option, collez le lien, comparez la commande, vérifiez le QC et jugez le fret avec le colis préparé."], bullets: ["Découvrir dans le catalogue", "Décider sur la fiche", "Comparer la commande", "Vérifier le QC", "Documenter la livraison"] },
+      ],
+    },
+  },
+  it: {
+    meta: {
+      title: "Guida link Weidian con Lolobuy 2026: dall'URL al QC",
+      shortTitle: "Usare un link Weidian con Lolobuy",
+      description: "Guida verificata per copiare un URL Weidian, controllare varianti e prezzi, inviarlo con Lolobuy e conservare le prove QC.",
+      eyebrow: "GUIDA LINK WEIDIAN",
+      readingTime: "14 min di lettura",
+      factCheckLine: "Verificato il 28 luglio 2026 con il sito LoloBuy, la guida community identificata e un esempio documentato Weidian-LoloBuy.",
+    },
+    body: {
+      visual: {
+        eyebrow: "DAL LINK AL QC",
+        title: "L'URL del prodotto avvia la catena di prove.",
+        caption: "La scheda identifica l'offerta, l'ordine registra l'opzione e le foto mostrano l'arrivo.",
+        items: [
+          ["Link fonte", "Aprire il prodotto Weidian e scegliere l'opzione esatta."],
+          ["Ordine", "Confrontare titolo, prezzo, colore, taglia e quantità."],
+          ["Magazzino", "Collegare articolo e foto all'ordine salvato."],
+          ["Pacco", "Spedire dopo aver risolto differenze e costo."],
+        ],
+      },
+      sources: [
+        ["Sito pubblico LoloBuy", "Fonte per ordine tramite link, ispezione, foto e 90 giorni di deposito."],
+        ["Guida community LoloBuy identificata", "Indica link Weidian e dettagli di taglia, colore e quantità."],
+        ["Esempio Weidian-LoloBuy documentato", "Mostra le due URL come un caso, non una regola permanente."],
+        ["Sito pubblico Weidian", "Fonte primaria del marketplace e delle pagine pubbliche."],
+      ],
+      intro: [
+        "Copiare e incollare sembra semplice, ma gli errori stanno nel mezzo: una scheda può unire taglie, colori e versioni, e il prezzo più basso può riferirsi a un'altra opzione.",
+        "La guida community identificata di LoloBuy cita Weidian, l'incollaggio dell'URL e l'inserimento di taglia, colore e quantità. Questa guida trasforma il percorso in una catena verificabile.",
+      ],
+      sections: [
+        { heading: "Cosa dimostra un link Weidian", paragraphs: ["L'URL identifica una pagina controllata dal venditore in quel momento. Non prova disponibilità futura, qualità, autenticità, reso o costo consegnato. Apri la scheda attuale."] },
+        { heading: "Copia l'URL dal prodotto aperto", paragraphs: ["Lascia che un link condiviso arrivi alla scheda finale, conferma l'articolo e copia l'indirizzo attuale. Non costruire un URL LoloBuy modificando numeri altrui."] },
+        { heading: "Salva l'offerta esatta", paragraphs: ["Annota venditore, titolo, colore, taglia o versione, quantità, prezzo visibile, consegna cinese e data. Conserva tabella e immagini decisive."], bullets: ["URL e data", "Venditore", "Variante e quantità", "Prezzo e consegna cinese", "Tabella e immagini"] },
+        { heading: "Confronta l'ordine generato", paragraphs: ["Dopo aver incollato, confronta immagine, titolo, opzione, prezzo, quantità e consegna con Weidian. Mantieni il testo originale se la traduzione perde dettagli."] },
+        { heading: "Separa primo pagamento e costo consegnato", paragraphs: ["Prodotto e consegna cinese precedono magazzino, consolidamento e trasporto internazionale. Il totale dipende da pacco, rotta e destinazione."] },
+        { heading: "Usa il magazzino come secondo controllo", paragraphs: ["LoloBuy conferma ispezione, foto e 90 giorni di deposito. Confronta articolo, colore, taglia, quantità e pezzi; non pubblica un numero universale di foto o un reso unico."] },
+        { heading: "Adatta il QC alla categoria", paragraphs: ["Scarpe: coppia e taglia; abbigliamento: misure e cuciture; borse: forma, cinturini e chiusure. Le foto non provano composizione, durata o autenticità."] },
+        { heading: "Documenta l'opzione sbagliata", paragraphs: ["Indica opzione ordinata, dettaglio ricevuto, foto e risultato desiderato. Agisci presto prima dell'invio senza promettere un reso gratuito generale."] },
+        { heading: "Conserva le prove se il link cambia", paragraphs: ["Tieni insieme URL, screenshot, opzione, prezzo e ordine. Una nuova pagina del venditore è una nuova offerta da verificare."] },
+        { heading: "Percorso Weidian-LoloBuy pulito", paragraphs: ["Decidi sulla scheda attuale, salva la variante, incolla il link, confronta l'ordine, verifica il QC e giudica il trasporto dal pacco preparato."], bullets: ["Scopri nel catalogo", "Decidi nella scheda", "Confronta l'ordine", "Verifica il QC", "Documenta la consegna"] },
+      ],
+    },
+  },
+};
+
+export function getLocalizedArticles(locale: Locale): Article[] {
+  if (locale === "en") {
+    return articles;
+  }
+
+  return articles.map((article, index) => {
+    const translatedWeidian =
+      article.slug === "lolobuy-weidian-link-guide"
+        ? weidianArticleText[locale]
+        : null;
+    const body = translatedWeidian?.body ?? articleBodyText[locale][index];
+
+    return {
+      ...article,
+      ...(translatedWeidian?.meta ?? articleMetaText[locale][index]),
+      intro: body.intro,
+      visual: {
+        eyebrow: body.visual.eyebrow,
+        title: body.visual.title,
+        caption: body.visual.caption,
+        items: body.visual.items.map(([label, text]) => ({ label, text })),
+      },
+      sources: body.sources.map(([label, note]) => ({ label, note })),
+      sections: body.sections,
+    };
+  });
+}
