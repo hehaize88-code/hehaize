@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import JsonLd from "../components/json-ld";
 import { localizedPath, normalizeLocale, type Locale } from "../i18n";
 import { getLocalizedProducts } from "../localized-data";
+import {
+  absoluteLocalizedUrl,
+  languageAlternates,
+} from "../seo";
 import FindsClient from "./finds-client";
 
 const metadataCopy: Record<Locale, { title: string; description: string; listName: string }> = {
@@ -51,15 +55,14 @@ export async function generateMetadata({
     description: copy.description,
     alternates: {
       canonical: localizedPath("/finds", locale),
-      languages: {
-        en: "/finds",
-        es: "/finds?lang=es",
-        de: "/finds?lang=de",
-        fr: "/finds?lang=fr",
-        it: "/finds?lang=it",
-        "x-default": "/finds",
-      },
+      languages: languageAlternates("/finds"),
     },
+    twitter: {
+      card: "summary_large_image",
+      title: copy.title,
+      description: copy.description,
+    },
+    other: { "content-language": locale },
   };
 }
 
@@ -81,12 +84,13 @@ export default async function FindsPage({
           "@context": "https://schema.org",
           "@type": "ItemList",
           name: copy.listName,
+          inLanguage: locale,
           numberOfItems: localizedProducts.length,
           itemListElement: localizedProducts.map((product, index) => ({
             "@type": "ListItem",
             position: index + 1,
             name: product.name,
-            url: `https://lolobuy-sheet.com${localizedPath(`/products/${product.slug}`, locale)}`,
+            url: absoluteLocalizedUrl(`/products/${product.slug}`, locale),
           })),
         }}
       />

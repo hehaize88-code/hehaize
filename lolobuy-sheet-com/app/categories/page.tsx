@@ -8,13 +8,23 @@ import SiteHeader from "../components/site-header";
 import { localizedPath, normalizeLocale } from "../i18n";
 import { getLocalizedCategories } from "../localized-data";
 import { categoriesPageCopy, commonPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Lolobuy Spreadsheet Categories",
-  description:
-    "Browse Lolobuy spreadsheet categories for shoes, hoodies, jackets, pants, headwear, accessories and more, with direct links to current listings.",
-  alternates: { canonical: "/categories" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = categoriesPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/categories",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function CategoriesPage({
   searchParams,
@@ -89,7 +99,8 @@ export default async function CategoriesPage({
         data={{
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Lolobuy Spreadsheet Categories",
+          name: copy.title,
+          inLanguage: locale,
           itemListElement: localizedCategories.map((category, index) => ({
             "@type": "ListItem",
             position: index + 1,

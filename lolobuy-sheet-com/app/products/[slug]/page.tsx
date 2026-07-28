@@ -15,6 +15,10 @@ import {
   productFinds,
   type ProductKind,
 } from "../../site-data";
+import {
+  absoluteLocalizedUrl,
+  languageAlternates,
+} from "../../seo";
 
 type ProductPageLanguage = {
   home: string;
@@ -516,20 +520,20 @@ export async function generateMetadata({
     description: product.description,
     alternates: {
       canonical: localizedPath(`/products/${product.slug}`, locale),
-      languages: {
-        en: `/products/${product.slug}`,
-        es: `/products/${product.slug}?lang=es`,
-        de: `/products/${product.slug}?lang=de`,
-        fr: `/products/${product.slug}?lang=fr`,
-        it: `/products/${product.slug}?lang=it`,
-        "x-default": `/products/${product.slug}`,
-      },
+      languages: languageAlternates(`/products/${product.slug}`),
     },
+    other: { "content-language": locale },
     openGraph: {
       title: `${product.name} | Lolobuy Sheet`,
       description: product.description,
       type: "website",
       images: [{ url: product.image, alt: product.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | Lolobuy Sheet`,
+      description: product.description,
+      images: [product.image],
     },
   };
 }
@@ -708,10 +712,11 @@ export default async function ProductPage({
             "@context": "https://schema.org",
             "@type": "Product",
             name: product.name,
+            inLanguage: locale,
             image: product.image,
             description: product.description,
             category: product.category,
-            url: `https://lolobuy-sheet.com${localizedPath(`/products/${product.slug}`, locale)}`,
+            url: absoluteLocalizedUrl(`/products/${product.slug}`, locale),
             sku: product.listingReference,
           },
           {
@@ -722,19 +727,19 @@ export default async function ProductPage({
                 "@type": "ListItem",
                 position: 1,
                 name: copy.home,
-                item: `https://lolobuy-sheet.com${localizedPath("/", locale)}`,
+                item: absoluteLocalizedUrl("/", locale),
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: copy.finds,
-                item: `https://lolobuy-sheet.com${localizedPath("/finds", locale)}`,
+                item: absoluteLocalizedUrl("/finds", locale),
               },
               {
                 "@type": "ListItem",
                 position: 3,
                 name: product.name,
-                item: `https://lolobuy-sheet.com${localizedPath(`/products/${product.slug}`, locale)}`,
+                item: absoluteLocalizedUrl(`/products/${product.slug}`, locale),
               },
             ],
           },

@@ -6,13 +6,23 @@ import SiteFooter from "../../components/site-footer";
 import SiteHeader from "../../components/site-header";
 import { localizedPath, normalizeLocale } from "../../i18n";
 import { commonPageCopy, shippingPageCopy } from "../../page-copy";
+import { localizedMetadata } from "../../seo";
 
-export const metadata: Metadata = {
-  title: "Lolobuy Shipping Guide: Storage, Parcels & Weight",
-  description:
-    "Plan Lolobuy shipping with a clear explanation of warehouse storage, consolidation, actual versus volumetric weight, packaging and route checks.",
-  alternates: { canonical: "/guides/shipping" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = shippingPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/guides/shipping",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function ShippingGuidePage({
   searchParams,
@@ -91,6 +101,7 @@ export default async function ShippingGuidePage({
         data={{
           "@context": "https://schema.org",
           "@type": "Article",
+          inLanguage: locale,
           headline: copy.title,
           description: copy.intro,
           datePublished: "2026-07-26",

@@ -6,13 +6,23 @@ import SiteFooter from "../../components/site-footer";
 import SiteHeader from "../../components/site-header";
 import { localizedPath, normalizeLocale } from "../../i18n";
 import { commonPageCopy, qcPageCopy } from "../../page-copy";
+import { localizedMetadata } from "../../seo";
 
-export const metadata: Metadata = {
-  title: "Lolobuy QC Guide: How to Check Warehouse Photos",
-  description:
-    "A practical Lolobuy QC guide for reviewing warehouse photos, measurements, visible damage, symmetry and category-specific details before shipping.",
-  alternates: { canonical: "/guides/qc" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = qcPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/guides/qc",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function QcGuidePage({
   searchParams,
@@ -105,6 +115,7 @@ export default async function QcGuidePage({
         data={{
           "@context": "https://schema.org",
           "@type": "HowTo",
+          inLanguage: locale,
           name: copy.title,
           description: copy.intro,
           step: copy.checks.map((check) => ({

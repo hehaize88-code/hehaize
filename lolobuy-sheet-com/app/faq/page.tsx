@@ -6,13 +6,23 @@ import SiteHeader from "../components/site-header";
 import { faqPageCopy, localizedPath, normalizeLocale } from "../i18n";
 import { getLocalizedFaqs } from "../localized-data";
 import { commonPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Lolobuy FAQ 2026: Orders, QC Photos, Storage & Shipping",
-  description:
-    "Fact-checked Lolobuy FAQ covering product-link orders, warehouse QC photos, 90-day free storage, shipping costs, fees, coupons, returns and W2C links.",
-  alternates: { canonical: "/faq" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = faqPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/faq",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function FaqPage({
   searchParams,
@@ -61,6 +71,7 @@ export default async function FaqPage({
         data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
+          inLanguage: locale,
           mainEntity: localizedFaqs.map((item) => ({
             "@type": "Question",
             name: item.question,

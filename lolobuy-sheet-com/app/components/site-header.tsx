@@ -37,14 +37,9 @@ export default function SiteHeader({
   function changeLocale(nextLocale: Locale) {
     const url = new URL(window.location.href);
     window.localStorage.setItem("lolobuy-sheet-language", nextLocale);
-
-    if (nextLocale === "en") {
-      url.searchParams.delete("lang");
-    } else {
-      url.searchParams.set("lang", nextLocale);
-    }
-
-    window.location.assign(url.toString());
+    window.location.assign(
+      localizedPath(`${url.pathname}${url.search}${url.hash}`, nextLocale),
+    );
   }
 
   return (

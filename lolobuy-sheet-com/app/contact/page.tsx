@@ -4,13 +4,23 @@ import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import { localizedPath, normalizeLocale } from "../i18n";
 import { commonPageCopy, contactPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Contact & Listing Corrections",
-  description:
-    "How to report a broken product link, request a factual correction, submit a copyright notice or contact the current destination site about an order.",
-  alternates: { canonical: "/contact" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = contactPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/contact",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function ContactPage({
   searchParams,

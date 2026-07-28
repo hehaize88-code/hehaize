@@ -5,13 +5,23 @@ import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import { localizedPath, normalizeLocale } from "../i18n";
 import { aboutPageCopy, commonPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "About This Independent Lolobuy Spreadsheet",
-  description:
-    "Learn what Lolobuy Sheet does, how its editorial product directory works, what sources control current facts and where its responsibilities end.",
-  alternates: { canonical: "/about" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = aboutPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/about",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function AboutPage({
   searchParams,

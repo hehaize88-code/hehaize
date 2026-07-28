@@ -4,14 +4,26 @@ import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import { localizedPath, normalizeLocale } from "../i18n";
 import { commonPageCopy, privacyPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Privacy information for Lolobuy Sheet, including local bookmark behavior, outbound links, server logs and future policy updates.",
-  alternates: { canonical: "/privacy" },
-  robots: { index: true, follow: true },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = privacyPageCopy[locale];
+  return {
+    ...localizedMetadata({
+      locale,
+      path: "/privacy",
+      title: copy.title,
+      description: copy.intro,
+    }),
+    robots: { index: true, follow: true },
+  };
+}
 
 export default async function PrivacyPage({
   searchParams,

@@ -15,16 +15,38 @@ export function normalizeLocale(value: string | string[] | null | undefined): Lo
     : "en";
 }
 
+export function stripLocalePrefix(pathname: string) {
+  const match = pathname.match(/^\/(en|es|de|fr|it)(?=\/|$)/);
+  if (!match) {
+    return pathname || "/";
+  }
+
+  const stripped = pathname.slice(match[0].length);
+  return stripped ? (stripped.startsWith("/") ? stripped : `/${stripped}`) : "/";
+}
+
 export function localizedPath(path: string, locale: Locale) {
-  if (locale === "en" || path.startsWith("http") || path.startsWith("#")) {
+  if (path.startsWith("http") || path.startsWith("#")) {
     return path;
   }
 
   const [base, hash] = path.split("#", 2);
   const [pathname, query = ""] = base.split("?", 2);
   const params = new URLSearchParams(query);
-  params.set("lang", locale);
-  const localized = `${pathname}?${params.toString()}`;
+  params.delete("lang");
+
+  const cleanPathname = stripLocalePrefix(pathname || "/");
+  const localizedPathname =
+    locale === "en"
+      ? cleanPathname
+      : cleanPathname === "/"
+        ? `/${locale}/`
+        : `/${locale}${cleanPathname}`;
+  const queryString = params.toString();
+  const localized = queryString
+    ? `${localizedPathname}?${queryString}`
+    : localizedPathname;
+
   return hash ? `${localized}#${hash}` : localized;
 }
 

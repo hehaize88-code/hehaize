@@ -4,13 +4,23 @@ import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import { localizedPath, normalizeLocale } from "../i18n";
 import { commonPageCopy, termsPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Terms & Disclaimer",
-  description:
-    "Terms for using Lolobuy Sheet, including independent-site status, changing destination listings, no product guarantee and responsible use.",
-  alternates: { canonical: "/terms" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = termsPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/terms",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function TermsPage({
   searchParams,

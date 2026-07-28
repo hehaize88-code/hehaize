@@ -10,13 +10,23 @@ import {
   workflowPageCopy,
 } from "../i18n";
 import { commonPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "How the Lolobuy Spreadsheet Workflow Works",
-  description:
-    "See how to move from a Lolobuy spreadsheet find to a live listing, warehouse QC review, consolidation and an informed shipping decision.",
-  alternates: { canonical: "/how-it-works" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = workflowPageCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/how-it-works",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 const stageLinks = [
   "/categories",

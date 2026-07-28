@@ -6,13 +6,23 @@ import SiteHeader from "../components/site-header";
 import { localizedPath, normalizeLocale } from "../i18n";
 import { getLocalizedArticles } from "../localized-data";
 import { articlesIndexCopy, commonPageCopy } from "../page-copy";
+import { localizedMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Lolobuy Spreadsheet Guides & Articles",
-  description:
-    "Read fact-checked 2026 Lolobuy spreadsheet guides covering product discovery, warehouse QC, storage, consolidation, shipping and early customer-review evidence.",
-  alternates: { canonical: "/articles" },
-};
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[] }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const locale = normalizeLocale(params.lang);
+  const copy = articlesIndexCopy[locale];
+  return localizedMetadata({
+    locale,
+    path: "/articles",
+    title: copy.title,
+    description: copy.intro,
+  });
+}
 
 export default async function ArticlesPage({
   searchParams,

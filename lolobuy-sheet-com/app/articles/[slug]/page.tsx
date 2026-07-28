@@ -8,6 +8,10 @@ import SiteHeader from "../../components/site-header";
 import { localizedPath, normalizeLocale } from "../../i18n";
 import { getLocalizedArticles } from "../../localized-data";
 import { articleUiCopy, commonPageCopy } from "../../page-copy";
+import {
+  absoluteLocalizedUrl,
+  localizedMetadata,
+} from "../../seo";
 import { articles } from "../../site-data";
 
 export function generateStaticParams() {
@@ -16,11 +20,15 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ lang?: string | string[] }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = articles.find((item) => item.slug === slug);
+  const query = await searchParams;
+  const locale = normalizeLocale(query.lang);
+  const article = getLocalizedArticles(locale).find((item) => item.slug === slug);
 
   if (!article) {
     return {};
@@ -35,13 +43,21 @@ export async function generateMetadata({
           ? "Lolobuy Shipping Guide: Storage, Consolidation & Weight"
           : "Lolobuy Review 2026: Early User Evidence Examined";
 
-  return {
-    title: { absolute: searchTitle },
+  const metadata = localizedMetadata({
+    locale,
+    path: `/articles/${article.slug}`,
+    title: locale === "en" ? searchTitle : article.title,
     description: article.description,
-    alternates: { canonical: `/articles/${article.slug}` },
+  });
+
+  return {
+    ...metadata,
+    title: { absolute: locale === "en" ? searchTitle : article.title },
     openGraph: {
+      ...metadata.openGraph,
       title: article.title,
       description: article.description,
+      url: localizedPath(`/articles/${article.slug}`, locale),
       type: "article",
       publishedTime: article.published,
       modifiedTime: article.updated,
@@ -188,10 +204,14 @@ export default async function ArticlePage({
           "@context": "https://schema.org",
           "@type": "Article",
           headline: article.title,
+          inLanguage: locale,
           description: article.description,
           datePublished: article.published,
           dateModified: article.updated,
-          mainEntityOfPage: `https://lolobuy-sheet.com/articles/${article.slug}`,
+          mainEntityOfPage: absoluteLocalizedUrl(
+            `/articles/${article.slug}`,
+            locale,
+          ),
           author: { "@type": "Organization", name: "Lolobuy Sheet" },
           publisher: { "@type": "Organization", name: "Lolobuy Sheet" },
         }}
