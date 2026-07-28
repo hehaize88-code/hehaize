@@ -98,6 +98,52 @@ test("publishes 43 canonical sitemap URLs with language alternates", async () =>
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 43);
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-27<\/lastmod>/,
+  );
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/es\/products<\/loc>[\s\S]*?<lastmod>2026-07-28<\/lastmod>/,
+  );
+  assert.equal(
+    new Set([...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1])).size,
+    2,
+  );
+});
+
+test("uses concise standalone SEO titles for all long-form guides", async () => {
+  const expectedTitles = new Map([
+    [
+      "/articles/how-to-use-lolobuy-spreadsheet",
+      "How to Use a LoloBuy Spreadsheet | 2026 Guide",
+    ],
+    [
+      "/articles/lolobuy-qc-photos-guide",
+      "LoloBuy QC Photos Guide: What to Check",
+    ],
+    [
+      "/articles/lolobuy-shipping-cost-guide",
+      "LoloBuy Shipping Cost Guide: Weight &amp; Parcel Size",
+    ],
+  ]);
+
+  for (const [pathname, title] of expectedTitles) {
+    const response = await fetchPage(pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+    assert.match(
+      html,
+      new RegExp(`<title>${title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}</title>`),
+      pathname,
+    );
+    assert.doesNotMatch(
+      html,
+      /<title>[^<]+\| LoloBuy Sheet<\/title>/,
+      pathname,
+    );
+  }
 });
 
 test("redirects legacy language parameters to clean locale paths", async () => {
