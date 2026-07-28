@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -7,23 +7,15 @@ const projectRoot = path.resolve(
   "..",
 );
 const origin = "https://lolobuy-sheet.net";
-const lastModified = "2026-07-28";
 const locales = ["en", "es", "de", "fr", "it"];
-const corePaths = [
-  "/",
-  "/products",
-  "/categories",
-  "/qc-guide",
-  "/shipping",
-  "/articles",
-  "/faq",
-  "/how-it-works",
-];
-const articlePaths = [
-  "/articles/how-to-use-lolobuy-spreadsheet",
-  "/articles/lolobuy-qc-photos-guide",
-  "/articles/lolobuy-shipping-cost-guide",
-];
+const contentDates = JSON.parse(
+  await readFile(
+    path.join(projectRoot, "app", "content-dates.json"),
+    "utf8",
+  ),
+);
+const corePaths = Object.keys(contentDates.core);
+const articleSlugs = Object.keys(contentDates.articles);
 
 function localizedPath(locale, pathname) {
   if (locale === "en") return pathname;
@@ -48,13 +40,21 @@ const localizedEntries = corePaths.flatMap((pathname) =>
   locales.map((locale) => ({
     location: absolute(localizedPath(locale, pathname)),
     alternates: alternateLinks(pathname),
+    lastModified: contentDates.core[pathname][locale],
   })),
 );
-const articleEntries = articlePaths.map((pathname) => ({
-  location: absolute(pathname),
+const articleEntries = articleSlugs.map((slug) => ({
+  location: absolute(`/articles/${slug}`),
   alternates: "",
+  lastModified: contentDates.articles[slug].modified,
 }));
 const entries = [...localizedEntries, ...articleEntries];
+
+for (const entry of entries) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(entry.lastModified)) {
+    throw new Error(`Invalid lastmod for ${entry.location}`);
+  }
+}
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -62,7 +62,7 @@ ${entries
   .map(
     (entry) => `  <url>
     <loc>${entry.location}</loc>
-${entry.alternates ? `${entry.alternates}\n` : ""}    <lastmod>${lastModified}</lastmod>
+${entry.alternates ? `${entry.alternates}\n` : ""}    <lastmod>${entry.lastModified}</lastmod>
   </url>`,
   )
   .join("\n")}
