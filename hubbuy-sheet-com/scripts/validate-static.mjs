@@ -271,8 +271,10 @@ for (const url of urls) {
       throw new Error(`Missing article research enhancement on ${url}`);
     }
     const researchSection = html.match(/<section id="research-evidence"[\s\S]*?<\/section>/)?.[0] || "";
-    if ((researchSection.match(/href="https:\/\/hubbuy\.com\/"/g) || []).length !== 3) {
-      throw new Error(`Article does not name three exact official sections on ${url}`);
+    const officialSourceCount = (researchSection.match(/href="https:\/\/hubbuy\.com\/"/g) || []).length;
+    const ledgerLinkCount = (researchSection.match(/<a [^>]*href="https:\/\//g) || []).length;
+    if (officialSourceCount < 1 || ledgerLinkCount !== 3) {
+      throw new Error(`Article source ledger is incomplete on ${url}`);
     }
     if (locale === "en") {
       const body = html.match(/<article class="seo-article-body">([\s\S]*?)<\/article>/)?.[1] || "";

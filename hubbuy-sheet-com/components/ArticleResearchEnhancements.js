@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "hubbuy-reviews-customer-experience": [
+    ["Official service scope", "Hubbuy describes procurement, warehouse inspection, storage and consolidation; international shipping is provided by third parties.", OFFICIAL_HOME, "Official page ↗"],
+    ["Trustpilot snapshot · 28 July 2026", "The live profile displayed 56 reviews, a 4.8 score and a 96% five-star share.", "https://www.trustpilot.com/review/hubbuy.com", "Public reviews ↗"],
+    ["Trustpilot evidence boundary", "Trustpilot warns that the current sample may not be representative and labels reviews as individual opinions.", "https://www.trustpilot.com/review/hubbuy.com", "Sample limits ↗"],
+  ],
   "hubbuy-product-link-not-working": [
     ["Homepage search · Product name or link", "The public search field accepts a product name or link as the starting point."],
     ["Public service description · Taobao, 1688 and Weidian", "Hubbuy publicly describes itself as a purchasing agent for these marketplaces."],
@@ -117,7 +122,23 @@ function WarehouseLedger() {
   );
 }
 
+function ReviewEvidenceMatrix() {
+  return (
+    <figure className="research-visual review-evidence-matrix">
+      <div className="research-visual-heading"><span>Original evidence matrix</span><strong>Read themes and limits together</strong></div>
+      <div className="review-matrix-grid">
+        <div><b>REPEATED POSITIVE</b><strong>Support · packaging · QC visibility</strong><span>Frequently described in the visible recent sample.</span></div>
+        <div><b>CAUTION SIGNALS</b><strong>Cost · route choice · delivery expectations</strong><span>Appear inside both positive and lower-star reports.</span></div>
+        <div><b>ISOLATED DISPUTE</b><strong>Functional electronics · compensation</strong><span>One detailed allegation; no public company reply was visible.</span></div>
+        <div><b>SAMPLE LIMIT</b><strong>56 voluntary reviews · regional skew</strong><span>Useful for questions, insufficient for a universal failure rate.</span></div>
+      </div>
+      <figcaption>Editorial synthesis created by Hubbuy Sheet from the public Trustpilot sample checked on 28 July 2026. It is not a customer-satisfaction survey or a platform performance score.</figcaption>
+    </figure>
+  );
+}
+
 function ArticleVisual({ slug }) {
+  if (slug === "hubbuy-reviews-customer-experience") return <ReviewEvidenceMatrix />;
   if (slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingMap />;
   if (slug === "how-to-use-a-hubbuy-spreadsheet") return <EvidenceChain />;
   if (slug === "hubbuy-qc-photos-guide") return <QcInterfaceMap />;
@@ -138,9 +159,9 @@ export default function ArticleResearchEnhancements({ article }) {
 
       <div className="source-ledger">
         <div className="source-ledger-heading"><span>Primary-source ledger</span><strong>Official Hubbuy page and named section</strong></div>
-        {sources.map(([section, evidence], index) => (
-          <a key={section} href={OFFICIAL_HOME} target="_blank" rel="noopener">
-            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>Official page ↗</em>
+        {sources.map(([section, evidence, href = OFFICIAL_HOME, label = "Official page ↗"], index) => (
+          <a key={section} href={href} target="_blank" rel="noopener">
+            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{label}</em>
           </a>
         ))}
       </div>

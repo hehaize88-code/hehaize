@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-reviews-customer-experience": {
+    primaryQuery: "Hubbuy reviews",
+    secondaryTerms: ["Hubbuy customer reviews", "is Hubbuy reliable", "Hubbuy shipping reviews", "Hubbuy complaints"],
+    searchIntent: "Assess Hubbuy through attributable public customer evidence before placing an order",
+    angle: "Balanced synthesis of current support, QC, packaging, shipping and after-sales themes with explicit sample limits",
+    evidence: ["Hubbuy public service description", "Trustpilot live aggregate and dated public customer reports"],
+    internalLinkRole: "Decision-support article linking review evidence to the purchase, QC and shipping research clusters",
+  },
   "hubbuy-product-link-not-working": {
     primaryQuery: "Hubbuy link not working",
     secondaryTerms: ["Hubbuy Taobao link", "Hubbuy Weidian link", "Hubbuy 1688 link", "Hubbuy manual order"],

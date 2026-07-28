@@ -46,6 +46,88 @@ function ArticleCta() {
   );
 }
 
+function HubbuyReviewsArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">A review score can be a useful signal, but it is not a shortcut to certainty. This Hubbuy reviews analysis looks at the public sample available on 28 July 2026, separates repeated themes from isolated claims and turns that evidence into a practical pre-order checklist.</p>
+
+      <ResearchDisclosure>The customer evidence comes from a live, public Trustpilot profile. Reviews are individual reports, not verified platform statistics, and the sample is self-selected. Hubbuy’s own descriptions are treated separately as company claims and service facts.</ResearchDisclosure>
+
+      <section id="sample">
+        <span>01 · The sample today</span>
+        <h2>What the current Hubbuy customer reviews sample contains</h2>
+        <p>On 28 July 2026, the <a href="https://www.trustpilot.com/review/hubbuy.com" target="_blank" rel="noopener">public Trustpilot profile for hubbuy.com</a> displayed 56 reviews, a 4.8 TrustScore and 96% five-star ratings. It showed 2% four-star and 2% one-star, with no visible three- or two-star share. Trustpilot also said all 56 reviews were from the previous 12 months and labelled the company profile as claimed since February 2026.</p>
+        <p>Those numbers describe one platform at one moment. They are not an audit of all Hubbuy orders, and they will change as reviews are added, edited, removed or moderated. Trustpilot explicitly warned that Hubbuy had no recent history of asking for reviews and that the sample might not be representative. It also showed that the business had not replied to negative reviews.</p>
+        <p>The country mix matters. Many visible recent entries were from Brazil, with smaller numbers from Portugal, Romania, Nigeria and elsewhere. The sample cannot establish route, customs or support performance in another country.</p>
+
+        <div className="article-callout">
+          <strong>Snapshot, not a permanent rating</strong>
+          <p>This article records the profile as it appeared on 28 July 2026. Check the live review page for the current count, score, language mix and company responses before making a decision.</p>
+        </div>
+      </section>
+
+      <section id="official-vs-reports">
+        <span>02 · Separate the evidence</span>
+        <h2>Official service claims and customer reports answer different questions</h2>
+        <p>The <a href="https://hubbuy.com/" target="_blank" rel="noopener">official Hubbuy website</a> describes a purchasing-agent workflow covering procurement, warehouse inspection, storage, consolidation and parcel preparation. Hubbuy’s company description on Trustpilot adds that international shipping services are provided by third parties. These statements define the intended roles in the transaction; they do not prove how one seller’s item or one carrier’s delivery will perform.</p>
+        <p>Customer reports address lived outcomes, but with less control. A buyer may praise support, packaging or speed without identifying the route, parcel weight, destination or seller. Another may report a defective product without giving enough evidence to determine whether the seller, warehouse inspection, carrier or after-sales process caused the failure. Both reports can be sincere and still resist broad conclusions.</p>
+        <p>Editorial analysis can compare recurring praise with caution, but it cannot authenticate every reviewer, inspect private orders or calculate a platform-wide failure rate from 56 voluntary posts.</p>
+      </section>
+
+      <section id="positive-patterns">
+        <span>03 · Repeated positive signals</span>
+        <h2>Support, packaging, QC visibility and repeat use appear often</h2>
+        <p>Across the recent English and <a href="https://br.trustpilot.com/review/hubbuy.com" target="_blank" rel="noopener">Brazilian Trustpilot views</a>, customer support is the clearest recurring positive theme. Several reviewers described getting help with questions, live chat or the ordering process. That repetition is more informative than one superlative, although the posts rarely measure response time or document the issue that support resolved.</p>
+        <p>Packaging and delivered condition form a second cluster. Recent buyers reported parcels arriving protected or in good condition, and some repeat customers described storage and forwarding as straightforward. These reports align with the intermediary role Hubbuy advertises, but they do not establish a guaranteed packaging standard. Parcel contents, requested protection and the final carrier can differ substantially.</p>
+        <p>QC visibility is another useful signal. Some reviewers connected delivered goods with the photographs seen during warehouse inspection, while others said the control process helped them filter visible defects. That supports QC as a decision aid. It does not turn warehouse photos into laboratory testing, authenticity verification or a guarantee that electronics function correctly.</p>
+        <p>Some buyers mentioned a second or third shipment. Choosing to return is useful behavioural evidence, but not proof that every order was problem-free. Referral codes visible in several reviews are another reason to focus on described events rather than promotional wording.</p>
+      </section>
+
+      <section id="friction-patterns">
+        <span>04 · Cautions and negative evidence</span>
+        <h2>Shipping cost, delivery expectations and after-sales risk deserve attention</h2>
+        <p>The positive distribution should not hide the cautions inside high-star reviews. One recent reviewer said fees could be better and wanted more shipping options. Another public report described international delivery taking longer than stated while still rating the platform four stars. Other reviewers called shipping expensive or attributed delay to a busy logistics provider. These comments do not reveal a universal cost or delay rate, but they identify questions to answer before parcel payment.</p>
+        <p>The visible one-star review described an electronics order involving missing accessories, a broken cable, absent advertised functions and dissatisfaction with the compensation offered. It also alleged account and dispute problems. This is one detailed customer allegation, not an independently adjudicated finding. The public profile showed no company reply, so the page did not provide Hubbuy’s side of that dispute when checked.</p>
+        <p>The case still has decision value: ordinary warehouse photographs cannot establish every electronic function. For higher-risk items, save the listing claims, request observable checks and understand the live return or after-sales path before approval.</p>
+
+        <div className="article-comparison">
+          <div><span>Repeated positive themes</span><strong>Support · protected packaging · QC visibility · repeat orders</strong></div>
+          <div><span>Decision cautions</span><strong>Shipping cost · route choice · delays · functional-item disputes</strong></div>
+        </div>
+      </section>
+
+      <section id="reliability">
+        <span>05 · A better reliability test</span>
+        <h2>Judge the exact order, not the brand name alone</h2>
+        <p>For a simple clothing order, the important controls may be seller-link accuracy, size measurements, visible condition and a suitable tracked route. For electronics, fragile goods or restricted products, the decision also depends on functional uncertainty, packaging, route eligibility and after-sales evidence. A single average score cannot combine those risk profiles intelligently.</p>
+        <p>Use reviews to create questions, then answer them with current transaction evidence. If support is praised, test the channel with a precise pre-order question. If packaging is important, ask which protection choices are currently available. If shipping cost is a concern, wait for warehouse weight and dimensions before comparing eligible routes. If QC is central, save the selected variant and use the <Link href="/articles/hubbuy-qc-photos-guide/">Hubbuy QC photo evidence guide</Link> to define what the images can actually show.</p>
+        <p>The public sample leans strongly positive, so presenting Hubbuy reviews as mainly negative would be misleading. Converting a 4.8 score into a promise would be equally wrong. The evidence supports frequent reports of helpful service and satisfactory parcels, alongside uncertainty about representativeness, route performance and difficult after-sales cases.</p>
+      </section>
+
+      <section id="risk-checklist">
+        <span>06 · Before spending more</span>
+        <h2>Turn review themes into a small, documented first order</h2>
+        <ol>
+          <li><strong>Verify the seller page.</strong> Save the item URL, exact variant, quantity, price and visible seller promises before payment.</li>
+          <li><strong>Start with manageable risk.</strong> A modest first parcel reveals the real interface, support process and route choices for your country without concentrating too much value.</li>
+          <li><strong>Ask one testable support question.</strong> Keep the answer with the order evidence instead of relying on general praise from another customer.</li>
+          <li><strong>Review warehouse images promptly.</strong> Compare identity, quantity, size labels and visible condition; do not treat a photograph as a functional or authenticity certificate.</li>
+          <li><strong>Compare the final parcel.</strong> Use packed weight, dimensions, eligible lines, tracking and compensation terms. The <Link href="/articles/hubbuy-shipping-cost-guide/">Hubbuy shipping-cost analysis</Link> explains why an early estimate can differ from the final choice.</li>
+          <li><strong>Preserve the after-sales record.</strong> Keep listing evidence, order summary, QC images, parcel data, tracking and delivery photos until the contents have been checked.</li>
+        </ol>
+        <p>This approach does not eliminate risk; it makes the risk visible and creates a usable record if something goes wrong.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources">
+        <strong>Sources and editorial boundary</strong>
+        <p>Official workflow facts were checked against <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy’s public website</a>. Review counts, rating distribution, labels and customer themes were checked on the <a href="https://www.trustpilot.com/review/hubbuy.com" target="_blank" rel="noopener">live Trustpilot profile</a> and its Brazilian-language view on 28 July 2026. Trustpilot states that reviews express individual opinions and explains its labels and moderation on its <a href="https://help.trustpilot.com/s/article/About-Trustpilots-review-labels?language=en_US" target="_blank" rel="noopener">review-label guidance</a>. No review was treated as a verified platform-wide fact.</p>
+      </div>
+      <ArticleCta />
+    </>
+  );
+}
+
 function LinkTroubleshootingArticle({ article }) {
   return (
     <>
@@ -424,6 +506,7 @@ function WarehouseArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-reviews-customer-experience") return <HubbuyReviewsArticle article={article} />;
   if (article.slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingArticle article={article} />;
   if (article.slug === "hubbuy-qc-photos-guide") return <QCPhotosArticle article={article} />;
   if (article.slug === "hubbuy-shipping-cost-guide") return <ShippingCostArticle article={article} />;
