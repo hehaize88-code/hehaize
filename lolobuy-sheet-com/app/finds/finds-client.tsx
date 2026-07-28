@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import ProductImage from "../components/product-image";
 import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import { homeCopy, localizedPath, type Locale } from "../i18n";
@@ -249,14 +249,11 @@ export default function FindsClient({ locale }: { locale: Locale }) {
                   aria-label={`${copy.details}: ${product.name}`}
                 >
                   <div className="finds-directory-image">
-                    <Image
-                      src={product.image}
+                    <ProductImage
+                      slug={product.slug}
                       alt={product.name}
-                      width={720}
-                      height={720}
                       sizes="(max-width: 620px) 46vw, (max-width: 1040px) 31vw, 23vw"
                       priority={index < 4}
-                      unoptimized
                     />
                     <span>{String(index + 1).padStart(2, "0")}</span>
                   </div>

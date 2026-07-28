@@ -146,3 +146,84 @@ test("serves substantial localized category and article landing pages", async ()
   assert.match(articleHtml, /Guide lien Weidian avec Lolobuy 2026/i);
   assert.match(articleHtml, /Du lien au QC/i);
 });
+
+test("serves eight evidence-led product pages with local responsive images", async () => {
+  const worker = await loadWorker();
+  const products = [
+    ["snow-ski-goggles", "7813573584", 5],
+    ["gucci-hat", "7813802324", 5],
+    ["off-white-hoodies", "7813733346", 5],
+    ["numeris-high-top-shoes", "7810791921", 2],
+    ["hoka-speedgoat-5", "7806024805", 5],
+    ["nike-elite-backpack", "7804348058", 4],
+    ["balenciaga-puffer", "7804322444", 4],
+    ["winter-hooded-jacket", "7798076213", 4],
+  ];
+
+  for (const [slug, sourceItemId, galleryCount] of products) {
+    const response = await fetchPage(worker, `/products/${slug}`);
+    const html = await response.text();
+
+    assert.equal(response.status, 200, slug);
+    assert.match(
+      html,
+      new RegExp(`<dt>Source item ID</dt><dd>${sourceItemId}</dd>`),
+    );
+    assert.match(
+      html,
+      new RegExp(
+        `<dt>Distinct source gallery files</dt><dd>${galleryCount}</dd>`,
+      ),
+    );
+    assert.match(
+      html,
+      new RegExp(
+        `srcSet="/product-finds/${slug}-1-160\\.webp 160w, /product-finds/${slug}-1-320\\.webp 320w, /product-finds/${slug}-1-640\\.webp 640w"`,
+      ),
+    );
+    assert.doesNotMatch(html, /cnbuycha\.com\/uploads/i);
+    assert.match(html, /"@type":"ItemPage"/);
+    assert.match(html, /"@type":"BreadcrumbList"/);
+    assert.doesNotMatch(html, /"@type":"Product"/);
+    assert.doesNotMatch(html, /"offers"|"review"|"aggregateRating"/);
+  }
+});
+
+test("publishes article images, social previews and complete article schema", async () => {
+  const worker = await loadWorker();
+  const slugs = [
+    "lolobuy-spreadsheet-guide",
+    "how-to-read-qc-photos",
+    "plan-china-shopping-haul",
+    "lolobuy-review-early-user-experience",
+    "lolobuy-weidian-link-guide",
+  ];
+
+  for (const slug of slugs) {
+    const response = await fetchPage(worker, `/articles/${slug}`);
+    const html = await response.text();
+
+    assert.equal(response.status, 200, slug);
+    assert.match(html, new RegExp(`<img[^>]+src="/articles/${slug}\\.webp"`));
+    assert.match(
+      html,
+      new RegExp(
+        `<meta property="og:image" content="https://lolobuy-sheet\\.com/articles/${slug}\\.webp"`,
+      ),
+    );
+    assert.match(
+      html,
+      new RegExp(
+        `<meta name="twitter:image" content="https://lolobuy-sheet\\.com/articles/${slug}\\.webp"`,
+      ),
+    );
+    assert.match(html, /"@type":"Article"/);
+    assert.match(html, /"image":\{"@type":"ImageObject"/);
+    assert.match(html, /"author":\{[^}]*"url":"https:\/\/lolobuy-sheet\.com\/about"/);
+    assert.match(
+      html,
+      /"publisher":\{.*?"url":"https:\/\/lolobuy-sheet\.com\/".*?"logo":\{"@type":"ImageObject","url":"https:\/\/lolobuy-sheet\.com\/social\/lolobuy-publisher-logo\.png"/,
+    );
+    assert.match(html, /"@type":"BreadcrumbList"/);
+  }
+});

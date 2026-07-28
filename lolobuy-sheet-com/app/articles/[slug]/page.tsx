@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleCard from "../../components/article-card";
@@ -11,8 +12,10 @@ import { articleUiCopy, commonPageCopy } from "../../page-copy";
 import {
   absoluteLocalizedUrl,
   localizedMetadata,
+  siteUrl,
 } from "../../seo";
 import { articles } from "../../site-data";
+import { getArticleMedia } from "../../article-media";
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
@@ -47,6 +50,8 @@ export async function generateMetadata({
       "Lolobuy Weidian Link Guide 2026: Order & QC Steps",
   };
   const searchTitle = englishSearchTitles[article.slug] ?? article.title;
+  const media = getArticleMedia(article.slug);
+  const imageUrl = `${siteUrl}${media.src}`;
 
   const metadata = localizedMetadata({
     locale,
@@ -66,6 +71,21 @@ export async function generateMetadata({
       type: "article",
       publishedTime: article.published,
       modifiedTime: article.updated,
+      images: [
+        {
+          url: imageUrl,
+          width: media.width,
+          height: media.height,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      ...metadata.twitter,
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: [imageUrl],
     },
   };
 }
@@ -90,6 +110,12 @@ export default async function ArticlePage({
   }
 
   const related = localizedArticles.filter((item) => item.slug !== article.slug).slice(0, 2);
+  const media = getArticleMedia(article.slug);
+  const articleUrl = absoluteLocalizedUrl(
+    `/articles/${article.slug}`,
+    locale,
+  );
+  const imageUrl = `${siteUrl}${media.src}`;
 
   return (
     <main>
@@ -117,6 +143,19 @@ export default async function ArticlePage({
           </div>
           <p className="article-fact-check">{article.factCheckLine}</p>
         </header>
+
+        <figure className="article-hero-media">
+          <Image
+            src={media.src}
+            alt={`${article.shortTitle} — editorial evidence diagram`}
+            width={media.width}
+            height={media.height}
+            sizes="(max-width: 780px) 94vw, 86vw"
+            priority
+            unoptimized
+          />
+          <figcaption>{article.visual.caption}</figcaption>
+        </figure>
 
         <div className="article-body">
           <aside>
@@ -205,21 +244,70 @@ export default async function ArticlePage({
       </section>
       <SiteFooter locale={locale} />
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: article.title,
-          inLanguage: locale,
-          description: article.description,
-          datePublished: article.published,
-          dateModified: article.updated,
-          mainEntityOfPage: absoluteLocalizedUrl(
-            `/articles/${article.slug}`,
-            locale,
-          ),
-          author: { "@type": "Organization", name: "Lolobuy Sheet" },
-          publisher: { "@type": "Organization", name: "Lolobuy Sheet" },
-        }}
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: article.title,
+            inLanguage: locale,
+            description: article.description,
+            image: {
+              "@type": "ImageObject",
+              url: imageUrl,
+              width: media.width,
+              height: media.height,
+              caption: article.visual.caption,
+            },
+            datePublished: article.published,
+            dateModified: article.updated,
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": articleUrl,
+            },
+            author: {
+              "@type": "Organization",
+              "@id": `${siteUrl}/#organization`,
+              name: "Lolobuy Sheet Editorial",
+              url: `${siteUrl}/about`,
+            },
+            publisher: {
+              "@type": "Organization",
+              "@id": `${siteUrl}/#organization`,
+              name: "Lolobuy Sheet",
+              url: `${siteUrl}/`,
+              logo: {
+                "@type": "ImageObject",
+                url: `${siteUrl}/social/lolobuy-publisher-logo.png`,
+                width: 512,
+                height: 512,
+              },
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: common.home,
+                item: absoluteLocalizedUrl("/", locale),
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: common.articles,
+                item: absoluteLocalizedUrl("/articles", locale),
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: article.shortTitle,
+                item: articleUrl,
+              },
+            ],
+          },
+        ]}
       />
     </main>
   );

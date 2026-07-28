@@ -71,9 +71,15 @@ export default async function Home({
           description: copy.intro,
           publisher: {
             "@type": "Organization",
+            "@id": "https://lolobuy-sheet.com/#organization",
             name: "Lolobuy Sheet",
             url: "https://lolobuy-sheet.com/",
-            logo: "https://lolobuy-sheet.com/lolobuy-logo.png",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://lolobuy-sheet.com/social/lolobuy-publisher-logo.png",
+              width: 512,
+              height: 512,
+            },
           },
         }}
       />

@@ -24,8 +24,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "snow-ski-goggles",
     name: "Snow ski goggles",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260722/1-260H2211J0L9.webp",
+    image: "/product-finds/snow-ski-goggles-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3372.html`,
     listingReference: "3372",
     kind: "eyewear",
@@ -37,8 +36,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "gucci-hat",
     name: "Gucci hat",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260722/1-260H221155C13.webp",
+    image: "/product-finds/gucci-hat-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3371.html`,
     listingReference: "3371",
     kind: "headwear",
@@ -50,8 +48,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "off-white-hoodies",
     name: "Off-White hoodies",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260722/1-260H2211102W7.webp",
+    image: "/product-finds/off-white-hoodies-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3369.html`,
     listingReference: "3369",
     kind: "hoodie",
@@ -63,8 +60,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "numeris-high-top-shoes",
     name: "Numeris high-top shoes",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260722/1-260H2210I0623.webp",
+    image: "/product-finds/numeris-high-top-shoes-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3367.html`,
     listingReference: "3367",
     kind: "shoes",
@@ -76,8 +72,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "hoka-speedgoat-5",
     name: "HOKA Speedgoat 5",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260713/1-260G31AHDQ.webp",
+    image: "/product-finds/hoka-speedgoat-5-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3359.html`,
     listingReference: "3359",
     kind: "shoes",
@@ -89,8 +84,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "nike-elite-backpack",
     name: "Nike Elite backpack",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260706/1-260F6161259202.webp",
+    image: "/product-finds/nike-elite-backpack-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3346.html`,
     listingReference: "3346",
     kind: "bag",
@@ -102,8 +96,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "balenciaga-puffer",
     name: "Balenciaga puffer",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260706/1-260F6160550120.webp",
+    image: "/product-finds/balenciaga-puffer-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3343.html`,
     listingReference: "3343",
     kind: "jacket",
@@ -115,8 +108,7 @@ export const productFinds: ProductFind[] = [
   {
     slug: "winter-hooded-jacket",
     name: "Winter hooded jacket",
-    image:
-      "https://www.cnbuycha.com/uploads/allimg/20260701/1-260F115520U91.webp",
+    image: "/product-finds/winter-hooded-jacket-1-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3341.html`,
     listingReference: "3341",
     kind: "jacket",

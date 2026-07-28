@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "../../components/json-ld";
+import ProductImage, {
+  productImagePath,
+} from "../../components/product-image";
 import SiteFooter from "../../components/site-footer";
 import SiteHeader from "../../components/site-header";
 import {
@@ -15,9 +17,11 @@ import {
   productFinds,
   type ProductKind,
 } from "../../site-data";
+import { getProductEvidence } from "../../product-detail-data";
 import {
   absoluteLocalizedUrl,
   languageAlternates,
+  siteUrl,
 } from "../../seo";
 
 type ProductPageLanguage = {
@@ -33,6 +37,17 @@ type ProductPageLanguage = {
   routeValue: string;
   openListing: string;
   listingNote: string;
+  sourceTitleLabel: string;
+  sourceItemLabel: string;
+  galleryCountLabel: string;
+  sourceSnapshotLabel: string;
+  galleryEyebrow: string;
+  galleryTitle: string;
+  galleryIntro: string;
+  evidenceLinksEyebrow: string;
+  evidenceLinksTitle: string;
+  categoryGuide: string;
+  articleGuide: string;
   whyEyebrow: string;
   whyTitle: string;
   whyParagraphs: [string, string];
@@ -66,6 +81,18 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "View current listing",
     listingNote:
       "Opens the matching product page in a new tab. The destination controls the current offer.",
+    sourceTitleLabel: "Source-page title",
+    sourceItemLabel: "Source item ID",
+    galleryCountLabel: "Distinct source gallery files",
+    sourceSnapshotLabel: "Checked source snapshot",
+    galleryEyebrow: "LOCAL IMAGE SET",
+    galleryTitle: "Useful angles, sized for the screen.",
+    galleryIntro:
+      "These locally hosted files preserve a small evidence set without loading the main-site image host. Open the current listing for the complete gallery and live options.",
+    evidenceLinksEyebrow: "CONTINUE WITH CONTEXT",
+    evidenceLinksTitle: "Use the matching category and evidence guide.",
+    categoryGuide: "Open the related category guide",
+    articleGuide: "Read the related evidence article",
     whyEyebrow: "WHY THIS PAGE COMES FIRST",
     whyTitle: "Discover here. Verify before committing.",
     whyParagraphs: [
@@ -153,6 +180,18 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Ver ficha actual",
     listingNote:
       "Abre la página correspondiente en otra pestaña. El destino controla la oferta actual.",
+    sourceTitleLabel: "Título de la página fuente",
+    sourceItemLabel: "ID del artículo fuente",
+    galleryCountLabel: "Archivos distintos en la galería fuente",
+    sourceSnapshotLabel: "Fuente comprobada",
+    galleryEyebrow: "IMÁGENES LOCALES",
+    galleryTitle: "Ángulos útiles adaptados a cada pantalla.",
+    galleryIntro:
+      "Los archivos locales conservan una pequeña muestra sin cargar el servidor de imágenes principal. Consulta la ficha actual para opciones y galería completas.",
+    evidenceLinksEyebrow: "SEGUIR CON CONTEXTO",
+    evidenceLinksTitle: "Usa la categoría y la guía de pruebas relacionadas.",
+    categoryGuide: "Abrir la guía de categoría",
+    articleGuide: "Leer el artículo de pruebas",
     whyEyebrow: "POR QUÉ ESTA PÁGINA VA PRIMERO",
     whyTitle: "Descubre aquí. Verifica antes de decidir.",
     whyParagraphs: [
@@ -240,6 +279,18 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Aktuelles Angebot ansehen",
     listingNote:
       "Öffnet die passende Produktseite in einem neuen Tab. Dort gilt das aktuelle Angebot.",
+    sourceTitleLabel: "Titel der Quellseite",
+    sourceItemLabel: "Quellartikel-ID",
+    galleryCountLabel: "Unterschiedliche Quelldateien",
+    sourceSnapshotLabel: "Geprüfter Quellenstand",
+    galleryEyebrow: "LOKALE BILDER",
+    galleryTitle: "Nützliche Ansichten in passender Größe.",
+    galleryIntro:
+      "Die lokalen Dateien bewahren eine kleine Belegauswahl, ohne den Bildserver des Hauptverzeichnisses zu laden. Vollständige Galerie und Optionen stehen im aktuellen Angebot.",
+    evidenceLinksEyebrow: "MIT KONTEXT WEITER",
+    evidenceLinksTitle: "Passende Kategorie und Belegleitfaden nutzen.",
+    categoryGuide: "Verwandten Kategorieleitfaden öffnen",
+    articleGuide: "Verwandten Belegartikel lesen",
     whyEyebrow: "WARUM DIESE SEITE ZUERST KOMMT",
     whyTitle: "Hier entdecken. Vor der Entscheidung prüfen.",
     whyParagraphs: [
@@ -327,6 +378,18 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Voir la fiche actuelle",
     listingNote:
       "Ouvre la page produit correspondante dans un nouvel onglet. La destination contrôle l’offre actuelle.",
+    sourceTitleLabel: "Titre de la page source",
+    sourceItemLabel: "ID de l’article source",
+    galleryCountLabel: "Fichiers distincts de la galerie source",
+    sourceSnapshotLabel: "Source vérifiée",
+    galleryEyebrow: "IMAGES LOCALES",
+    galleryTitle: "Des angles utiles adaptés à l’écran.",
+    galleryIntro:
+      "Ces fichiers locaux conservent un petit ensemble de preuves sans charger l’hôte d’images principal. Consultez la fiche actuelle pour la galerie et les options complètes.",
+    evidenceLinksEyebrow: "POURSUIVRE AVEC LE CONTEXTE",
+    evidenceLinksTitle: "Utilisez la catégorie et le guide de preuves associés.",
+    categoryGuide: "Ouvrir le guide de catégorie",
+    articleGuide: "Lire l’article de preuves",
     whyEyebrow: "POURQUOI CETTE PAGE D’ABORD",
     whyTitle: "Découvrez ici. Vérifiez avant de décider.",
     whyParagraphs: [
@@ -414,6 +477,18 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Vedi scheda attuale",
     listingNote:
       "Apre la pagina corrispondente in una nuova scheda. La destinazione controlla l’offerta attuale.",
+    sourceTitleLabel: "Titolo della pagina fonte",
+    sourceItemLabel: "ID articolo fonte",
+    galleryCountLabel: "File distinti nella galleria fonte",
+    sourceSnapshotLabel: "Fonte verificata",
+    galleryEyebrow: "IMMAGINI LOCALI",
+    galleryTitle: "Angolazioni utili adattate allo schermo.",
+    galleryIntro:
+      "I file locali conservano un piccolo set di prove senza caricare l’host immagini principale. Apri la scheda attuale per galleria e opzioni complete.",
+    evidenceLinksEyebrow: "CONTINUA CON IL CONTESTO",
+    evidenceLinksTitle: "Usa la categoria e la guida alle prove collegate.",
+    categoryGuide: "Apri la guida di categoria",
+    articleGuide: "Leggi l’articolo sulle prove",
     whyEyebrow: "PERCHÉ PRIMA QUESTA PAGINA",
     whyTitle: "Scopri qui. Verifica prima di decidere.",
     whyParagraphs: [
@@ -515,6 +590,8 @@ export async function generateMetadata({
     return {};
   }
 
+  const socialImage = productImagePath(product.slug, 640);
+
   return {
     title: `${product.name} | ${productMetadataCopy[locale]}`,
     description: product.description,
@@ -526,14 +603,22 @@ export async function generateMetadata({
     openGraph: {
       title: `${product.name} | Lolobuy Sheet`,
       description: product.description,
+      url: localizedPath(`/products/${product.slug}`, locale),
       type: "website",
-      images: [{ url: product.image, alt: product.name }],
+      images: [
+        {
+          url: socialImage,
+          width: 640,
+          height: 640,
+          alt: product.name,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${product.name} | Lolobuy Sheet`,
       description: product.description,
-      images: [product.image],
+      images: [socialImage],
     },
   };
 }
@@ -552,13 +637,26 @@ export default async function ProductPage({
   const localizedProducts = getLocalizedProducts(locale);
   const productIndex = localizedProducts.findIndex((item) => item.slug === slug);
   const product = localizedProducts[productIndex];
+  const evidence = getProductEvidence(slug);
 
-  if (!product) {
+  if (!product || !evidence) {
     notFound();
   }
 
   const related = [...localizedProducts, ...localizedProducts]
     .slice(productIndex + 1, productIndex + 4);
+  const sourceSnapshot = `${copy.sourceTitleLabel}: “${evidence.sourceTitle}” · ${copy.sourceItemLabel}: ${evidence.sourceItemId} · ${copy.galleryCountLabel}: ${evidence.sourceGalleryCount}.`;
+  const editorialParagraphs =
+    locale === "en"
+      ? [
+          sourceSnapshot,
+          evidence.optionNote,
+          evidence.measurementNote,
+          evidence.decisionNote,
+        ]
+      : [sourceSnapshot, product.description, ...copy.whyParagraphs];
+  const checklistItems =
+    locale === "en" ? evidence.qcRisks : copy.checklist[product.kind];
 
   return (
     <main>
@@ -578,14 +676,11 @@ export default async function ProductPage({
 
         <section className="product-detail-hero">
           <div className="product-detail-image">
-            <Image
-              src={product.image}
+            <ProductImage
+              slug={product.slug}
               alt={product.name}
-              width={1000}
-              height={1000}
               sizes="(max-width: 780px) 100vw, 48vw"
               priority
-              unoptimized
             />
           </div>
           <div className="product-detail-copy">
@@ -606,7 +701,7 @@ export default async function ProductPage({
               </div>
               <div>
                 <dt>{copy.reviewed}</dt>
-                <dd>2026-07-26</dd>
+                <dd>{evidence.lastChecked}</dd>
               </div>
               <div>
                 <dt>{copy.route}</dt>
@@ -625,13 +720,72 @@ export default async function ProductPage({
           </div>
         </section>
 
+        <section className="product-source-snapshot">
+          <div>
+            <p className="eyebrow">{copy.sourceSnapshotLabel}</p>
+            <h2>{evidence.sourceTitle}</h2>
+          </div>
+          <dl>
+            <div>
+              <dt>{copy.reference}</dt>
+              <dd>{product.listingReference}</dd>
+            </div>
+            <div>
+              <dt>{copy.sourceItemLabel}</dt>
+              <dd>{evidence.sourceItemId}</dd>
+            </div>
+            <div>
+              <dt>{copy.galleryCountLabel}</dt>
+              <dd>{evidence.sourceGalleryCount}</dd>
+            </div>
+            <div>
+              <dt>{copy.reviewed}</dt>
+              <dd>{evidence.lastChecked}</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section className="product-local-gallery">
+          <header>
+            <p className="eyebrow">{copy.galleryEyebrow}</p>
+            <h2>{copy.galleryTitle}</h2>
+            <p>{copy.galleryIntro}</p>
+          </header>
+          <div>
+            {Array.from({ length: evidence.localViews }, (_, index) => {
+              const view = (index + 1) as 1 | 2 | 3;
+              const alt =
+                locale === "en"
+                  ? evidence.galleryAlts[index]
+                  : `${product.name} · ${copy.galleryEyebrow.toLowerCase()} ${index + 1}`;
+              const caption =
+                locale === "en"
+                  ? evidence.galleryCaptions[index]
+                  : `${copy.sourceSnapshotLabel}: ${evidence.sourceItemId} · ${index + 1}/${evidence.localViews}`;
+
+              return (
+                <figure key={view}>
+                  <ProductImage
+                    slug={product.slug}
+                    view={view}
+                    alt={alt}
+                    sizes="(max-width: 780px) 92vw, 31vw"
+                    priority={index === 0}
+                  />
+                  <figcaption>{caption}</figcaption>
+                </figure>
+              );
+            })}
+          </div>
+        </section>
+
         <section className="product-detail-editorial">
           <div>
             <p className="eyebrow">{copy.whyEyebrow}</p>
             <h2>{copy.whyTitle}</h2>
           </div>
           <div>
-            {copy.whyParagraphs.map((paragraph) => (
+            {editorialParagraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
@@ -645,7 +799,7 @@ export default async function ProductPage({
             </div>
           </div>
           <ol>
-            {copy.checklist[product.kind].map((item, index) => (
+            {checklistItems.map((item, index) => (
               <li key={item}>
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <p>{item}</p>
@@ -672,6 +826,27 @@ export default async function ProductPage({
           </div>
         </section>
 
+        <section className="product-evidence-links">
+          <div>
+            <p className="eyebrow">{copy.evidenceLinksEyebrow}</p>
+            <h2>{copy.evidenceLinksTitle}</h2>
+          </div>
+          <div>
+            <Link
+              className="button button-secondary"
+              href={localizedPath(evidence.relatedCategoryPath, locale)}
+            >
+              {copy.categoryGuide} <span aria-hidden="true">→</span>
+            </Link>
+            <Link
+              className="button button-secondary"
+              href={localizedPath(evidence.relatedArticlePath, locale)}
+            >
+              {copy.articleGuide} <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </section>
+
         <section className="related-products">
           <div className="section-heading-row">
             <div>
@@ -686,13 +861,10 @@ export default async function ProductPage({
                 href={localizedPath(`/products/${item.slug}`, locale)}
                 key={item.slug}
               >
-                <Image
-                  src={item.image}
+                <ProductImage
+                  slug={item.slug}
                   alt={item.name}
-                  width={560}
-                  height={560}
                   sizes="(max-width: 620px) 30vw, 28vw"
-                  unoptimized
                 />
                 <span>{copy.categoryNames[item.kind]}</span>
                 <h3>{item.name}</h3>
@@ -710,14 +882,45 @@ export default async function ProductPage({
         data={[
           {
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "ItemPage",
             name: product.name,
             inLanguage: locale,
-            image: product.image,
             description: product.description,
-            category: product.category,
             url: absoluteLocalizedUrl(`/products/${product.slug}`, locale),
-            sku: product.listingReference,
+            dateModified: evidence.lastChecked,
+            primaryImageOfPage: {
+              "@type": "ImageObject",
+              url: `${siteUrl}${productImagePath(product.slug, 640)}`,
+              width: 640,
+              height: 640,
+              caption: product.name,
+            },
+            about: {
+              "@type": "Thing",
+              name: product.name,
+              category: product.category,
+              identifier: [
+                {
+                  "@type": "PropertyValue",
+                  propertyID: "Directory reference",
+                  value: product.listingReference,
+                },
+                {
+                  "@type": "PropertyValue",
+                  propertyID: "Source item ID",
+                  value: evidence.sourceItemId,
+                },
+              ],
+            },
+            isPartOf: {
+              "@type": "WebSite",
+              name: "Lolobuy Sheet",
+              url: `${siteUrl}/`,
+            },
+            significantLink: [
+              absoluteLocalizedUrl(evidence.relatedCategoryPath, locale),
+              absoluteLocalizedUrl(evidence.relatedArticlePath, locale),
+            ],
           },
           {
             "@context": "https://schema.org",

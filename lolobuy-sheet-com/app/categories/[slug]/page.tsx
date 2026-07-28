@@ -8,6 +8,7 @@ import {
 } from "../../category-guide-data";
 import JsonLd from "../../components/json-ld";
 import PageHero from "../../components/page-hero";
+import ProductImage from "../../components/product-image";
 import SiteFooter from "../../components/site-footer";
 import SiteHeader from "../../components/site-header";
 import { localizedPath, normalizeLocale } from "../../i18n";
@@ -168,13 +169,10 @@ export default async function CategoryGuidePage({
                 href={localizedPath(`/products/${product.slug}`, locale)}
                 key={product.slug}
               >
-                <Image
-                  src={product.image}
+                <ProductImage
+                  slug={product.slug}
                   alt={product.name}
-                  width={560}
-                  height={560}
                   sizes="(max-width: 620px) 30vw, 28vw"
-                  unoptimized
                 />
                 <span>{product.category}</span>
                 <h3>{product.name}</h3>

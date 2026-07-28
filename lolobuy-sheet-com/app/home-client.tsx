@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ArticleCard from "./components/article-card";
+import ProductImage from "./components/product-image";
 import ProductSearch from "./components/product-search";
 import SiteFooter from "./components/site-footer";
 import SiteHeader from "./components/site-header";
@@ -138,14 +139,11 @@ export default function HomeClient({ locale }: { locale: Locale }) {
                   href={localizedPath(`/products/${item.slug}`, locale)}
                   aria-label={`View details for ${item.name}`}
                 >
-                  <Image
-                    src={item.image}
+                  <ProductImage
+                    slug={item.slug}
                     alt={item.name}
-                    width={520}
-                    height={520}
                     sizes="(max-width: 620px) 22vw, (max-width: 930px) 23vw, 11vw"
                     priority={index < 4}
-                    unoptimized
                   />
                 </Link>
                 <button

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { localeOptions, localizedPath, type Locale } from "./i18n";
 
 export const siteUrl = "https://lolobuy-sheet.com";
+export const defaultSocialImage = `${siteUrl}/social/lolobuy-sheet-share.webp`;
 
 const openGraphLocales: Record<Locale, string> = {
   en: "en_US",
@@ -57,11 +58,20 @@ export function localizedMetadata({
         .filter((option) => option.code !== locale)
         .map((option) => openGraphLocales[option.code]),
       type: "website",
+      images: [
+        {
+          url: defaultSocialImage,
+          width: 1200,
+          height: 630,
+          alt: "Lolobuy Sheet — independent product research and QC guides",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [defaultSocialImage],
     },
     other: {
       "content-language": locale,
