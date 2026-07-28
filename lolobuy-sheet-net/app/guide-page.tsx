@@ -9,6 +9,8 @@ import {
   type NavigationKey,
 } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
+import { localizeReactNode } from "./i18n";
+import type { Locale } from "./translations";
 
 type PageKind = NavigationKey | "how-it-works" | "learn";
 
@@ -75,8 +77,8 @@ function SearchIcon() {
   );
 }
 
-function CatalogSearch() {
-  return (
+function CatalogSearch({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <form
       className="product-search subpage-search"
       action={`${catalogBase}/search.html`}
@@ -97,12 +99,19 @@ function CatalogSearch() {
       <button type="submit" aria-label="Search the main product catalog">
         <SearchIcon />
       </button>
-    </form>
+    </form>,
+    locale,
   );
 }
 
-function ProductGrid({ limit = products.length }: { limit?: number }) {
-  return (
+function ProductGrid({
+  limit = products.length,
+  locale,
+}: {
+  limit?: number;
+  locale: Locale;
+}) {
+  return localizeReactNode(
     <div className="product-grid">
       {products.slice(0, limit).map((product, index) => (
         <article className="product-card" key={product.id}>
@@ -140,7 +149,8 @@ function ProductGrid({ limit = products.length }: { limit?: number }) {
           </div>
         </article>
       ))}
-    </div>
+    </div>,
+    locale,
   );
 }
 
@@ -162,8 +172,8 @@ function InfoCard({
   );
 }
 
-function ProductsPage() {
-  return (
+function ProductsPage({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <>
       <section className="subpage-search-band">
         <div>
@@ -175,7 +185,7 @@ function ProductsPage() {
             generic all-products landing page.
           </p>
         </div>
-        <CatalogSearch />
+        <CatalogSearch locale={locale} />
       </section>
       <section className="section-shell subpage-section">
         <div className="section-heading compact">
@@ -188,7 +198,7 @@ function ProductsPage() {
             and links to its exact main-site detail page.
           </p>
         </div>
-        <ProductGrid />
+        <ProductGrid locale={locale} />
         <div className="section-cta">
           <a
             className="button button-primary"
@@ -201,12 +211,13 @@ function ProductsPage() {
           <p>Recheck availability, size, color and seller details before use.</p>
         </div>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function CategoriesPage() {
-  return (
+function CategoriesPage({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <>
       <section className="section-shell subpage-section">
         <div className="category-grid">
@@ -238,14 +249,15 @@ function CategoriesPage() {
             versions. Open the exact item page before deciding.
           </p>
         </div>
-        <ProductGrid limit={8} />
+        <ProductGrid limit={8} locale={locale} />
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function QcPage() {
-  return (
+function QcPage({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -381,12 +393,13 @@ function QcPage() {
           Read the full QC guide <span aria-hidden="true">→</span>
         </Link>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function ShippingPage() {
-  return (
+function ShippingPage({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -524,12 +537,13 @@ function ShippingPage() {
           Read the full shipping guide <span aria-hidden="true">→</span>
         </Link>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function ArticlesPage() {
-  return (
+function ArticlesPage({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <>
       <section className="section-shell reading-order">
         <div>
@@ -631,16 +645,17 @@ function ArticlesPage() {
           </li>
         </ul>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function LearnPage() {
-  return <ArticlesPage />;
+function LearnPage({ locale }: { locale: Locale }) {
+  return <ArticlesPage locale={locale} />;
 }
 
-function FaqPage() {
-  return (
+function FaqPage({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <>
       <section className="section-shell faq-section faq-page-section">
         <div className="faq-title">
@@ -664,14 +679,15 @@ function FaqPage() {
       <section className="section-shell subpage-note">
         <p className="eyebrow">Still looking for an item?</p>
         <h2>Search the main catalog with the exact product term</h2>
-        <CatalogSearch />
+        <CatalogSearch locale={locale} />
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function HowItWorksPage() {
-  return (
+function HowItWorksPage({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <>
       <section className="section-shell subpage-section" id="buying-flow">
         <ol className="steps-grid">
@@ -712,20 +728,27 @@ function HowItWorksPage() {
       <section className="section-shell subpage-note">
         <p className="eyebrow">Start here</p>
         <h2>Use the exact keyword you already have in mind</h2>
-        <CatalogSearch />
+        <CatalogSearch locale={locale} />
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-export function GuidePage({ kind }: { kind: PageKind }) {
+export function GuidePage({
+  kind,
+  locale = "en",
+}: {
+  kind: PageKind;
+  locale?: Locale;
+}) {
   const intro = pageIntro[kind];
   const active =
     kind === "how-it-works" || kind === "learn" ? undefined : kind;
 
-  return (
+  return localizeReactNode(
     <>
-      <SiteHeader active={active} />
+      <SiteHeader active={active} locale={locale} />
       <main className="subpage-main">
         <section className="subpage-hero">
           <div>
@@ -737,16 +760,17 @@ export function GuidePage({ kind }: { kind: PageKind }) {
             <p>{intro.intro}</p>
           </div>
         </section>
-        {kind === "products" && <ProductsPage />}
-        {kind === "categories" && <CategoriesPage />}
-        {kind === "qc-guide" && <QcPage />}
-        {kind === "shipping" && <ShippingPage />}
-        {kind === "learn" && <LearnPage />}
-        {kind === "articles" && <ArticlesPage />}
-        {kind === "faq" && <FaqPage />}
-        {kind === "how-it-works" && <HowItWorksPage />}
+        {kind === "products" && <ProductsPage locale={locale} />}
+        {kind === "categories" && <CategoriesPage locale={locale} />}
+        {kind === "qc-guide" && <QcPage locale={locale} />}
+        {kind === "shipping" && <ShippingPage locale={locale} />}
+        {kind === "learn" && <LearnPage locale={locale} />}
+        {kind === "articles" && <ArticlesPage locale={locale} />}
+        {kind === "faq" && <FaqPage locale={locale} />}
+        {kind === "how-it-works" && <HowItWorksPage locale={locale} />}
       </main>
-      <SiteFooter />
-    </>
+      <SiteFooter locale={locale} />
+    </>,
+    locale,
   );
 }

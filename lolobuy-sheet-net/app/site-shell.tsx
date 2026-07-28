@@ -5,13 +5,21 @@ import {
   primaryNavigation,
   type NavigationKey,
 } from "./site-data";
+import { localizeReactNode } from "./i18n";
+import type { Locale } from "./translations";
 
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
 }
 
-export function SiteHeader({ active }: { active?: NavigationKey }) {
-  return (
+export function SiteHeader({
+  active,
+  locale = "en",
+}: {
+  active?: NavigationKey;
+  locale?: Locale;
+}) {
+  return localizeReactNode(
     <header className="site-header">
       <Link className="brand" href="/" aria-label="LoloBuy Sheet home">
         <img
@@ -34,7 +42,7 @@ export function SiteHeader({ active }: { active?: NavigationKey }) {
         ))}
       </nav>
       <div className="header-tools">
-        <LanguageModule />
+        <LanguageModule locale={locale} />
         <a
           className="header-find"
           href={`${catalogBase}/AllProducts/`}
@@ -44,12 +52,13 @@ export function SiteHeader({ active }: { active?: NavigationKey }) {
           Browse finds <ArrowIcon />
         </a>
       </div>
-    </header>
+    </header>,
+    locale,
   );
 }
 
-export function SiteFooter() {
-  return (
+export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
+  return localizeReactNode(
     <footer>
       <div className="footer-brand">
         <Link className="brand" href="/" aria-label="LoloBuy Sheet home">
@@ -87,6 +96,7 @@ export function SiteFooter() {
       <p className="copyright">
         © 2026 LoloBuy Sheet · Catalog reviewed 27 July 2026
       </p>
-    </footer>
+    </footer>,
+    locale,
   );
 }

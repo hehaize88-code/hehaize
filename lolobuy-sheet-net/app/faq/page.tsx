@@ -1,13 +1,8 @@
-import type { Metadata } from "next";
 import { GuidePage } from "../guide-page";
 import { faqItems } from "../site-data";
+import { coreMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "LoloBuy FAQ: Spreadsheet, QC, Storage and Shipping",
-  description:
-    "Fact-checked answers about LoloBuy spreadsheet links, ordering, QC photos, 90-day storage, consolidation and international shipping.",
-  alternates: { canonical: "/faq" },
-};
+export const metadata = coreMetadata("en", "/faq");
 
 const faqJsonLd = {
   "@context": "https://schema.org",
