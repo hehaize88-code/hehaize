@@ -2,7 +2,7 @@ import Link from "next/link";
 import { catalogBase, categories, faqItems, products } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
 
-const productJsonLd = {
+const productListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "LoloBuy spreadsheet product finds",
@@ -10,14 +10,9 @@ const productJsonLd = {
   itemListElement: products.map((product, index) => ({
     "@type": "ListItem",
     position: index + 1,
+    name: product.name,
+    image: `https://lolobuy-sheet.net${product.image}`,
     url: product.url,
-    item: {
-      "@type": "Product",
-      name: product.name,
-      image: `https://lolobuy-sheet.net${product.image}`,
-      category: product.category,
-      url: product.url,
-    },
   })),
 };
 
@@ -67,7 +62,7 @@ export default function Home() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productListJsonLd) }}
       />
 
       <SiteHeader />
