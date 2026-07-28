@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { articles } from "./article-data";
+import contentDates from "./content-dates.json";
 import {
   absoluteUrl,
   corePaths,
@@ -10,25 +11,21 @@ import {
 } from "./i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const priorities: Record<CorePath, number> = {
-    "/": 1,
-    "/products": 0.9,
-    "/categories": 0.85,
-    "/qc-guide": 0.85,
-    "/shipping": 0.85,
-    "/articles": 0.85,
-    "/faq": 0.85,
-    "/how-it-works": 0.8,
-  };
   const locales = ["en", ...localizedLocales] as const;
+  const coreDates = contentDates.core as Record<
+    CorePath,
+    Record<(typeof locales)[number], string>
+  >;
+  const articleDates = contentDates.articles as Record<
+    string,
+    { published: string; modified: string }
+  >;
 
   return [
     ...corePaths.flatMap((path) =>
       locales.map((locale) => ({
         url: absoluteUrl(localizedPath(locale, path)),
-        lastModified: new Date("2026-07-28"),
-        changeFrequency: "weekly" as const,
-        priority: priorities[path],
+        lastModified: coreDates[path][locale],
         alternates: {
           languages: languageAlternates(path),
         },
@@ -36,9 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
     ...articles.map((article) => ({
       url: absoluteUrl(`/articles/${article.slug}`),
-      lastModified: new Date("2026-07-28"),
-      changeFrequency: "monthly" as const,
-      priority: 0.82,
+      lastModified: articleDates[article.slug].modified,
     })),
   ];
 }
