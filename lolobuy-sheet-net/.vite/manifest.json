@@ -1,45 +1,4 @@
 {
-  "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-DqME_IJS.js",
-    "name": "layout-segment-context",
-    "src": "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/layout-segment-context.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DjPHiq1u.js"
-    ]
-  },
-  "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/link.js": {
-    "file": "assets/link-xPikVu1Y.js",
-    "name": "link",
-    "src": "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/link.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DjPHiq1u.js",
-      "_query-D2V9OaoK.js"
-    ],
-    "dynamicImports": [
-      "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/router.js"
-    ]
-  },
-  "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/router.js": {
-    "file": "assets/router-qqA_09nu.js",
-    "name": "router",
-    "src": "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/router.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DjPHiq1u.js",
-      "_query-D2V9OaoK.js"
-    ],
-    "dynamicImports": [
-      "_framework-DjPHiq1u.js"
-    ]
-  },
   "_framework-DjPHiq1u.js": {
     "file": "assets/framework-DjPHiq1u.js",
     "name": "framework",
@@ -56,7 +15,7 @@
     "name": "rolldown-runtime"
   },
   "app/language-module.tsx": {
-    "file": "assets/language-module-CDL_44sj.js",
+    "file": "assets/language-module-DSx-GOLY.js",
     "name": "language-module",
     "src": "app/language-module.tsx",
     "isDynamicEntry": true,
@@ -65,8 +24,49 @@
       "_framework-DjPHiq1u.js"
     ]
   },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-B_AoliOs.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/link.js": {
+    "file": "assets/link-BywbXaTB.js",
+    "name": "link",
+    "src": "node_modules/vinext/dist/shims/link.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js",
+      "_query-D2V9OaoK.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/router.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/router.js": {
+    "file": "assets/router-D6JjvkLc.js",
+    "name": "router",
+    "src": "node_modules/vinext/dist/shims/router.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js",
+      "_query-D2V9OaoK.js"
+    ],
+    "dynamicImports": [
+      "_framework-DjPHiq1u.js"
+    ]
+  },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-DYUf0JpY.js",
+    "file": "assets/index-BoHwV7Wn.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -75,10 +75,10 @@
       "_framework-DjPHiq1u.js"
     ],
     "dynamicImports": [
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
       "virtual:vinext-app-browser-entry",
       "app/language-module.tsx",
-      "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/link.js",
-      "../../sites/lolobuy-sheet-net/node_modules/vinext/dist/shims/layout-segment-context.js"
+      "node_modules/vinext/dist/shims/link.js"
     ]
   }
 }

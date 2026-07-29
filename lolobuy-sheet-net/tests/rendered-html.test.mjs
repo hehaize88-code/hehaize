@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const developmentPreviewMeta =
@@ -10,10 +11,10 @@ const workerPromise = (async () => {
   return (await import(workerUrl.href)).default;
 })();
 
-async function fetchPage(pathname) {
+async function fetchUrl(url) {
   const worker = await workerPromise;
   return worker.fetch(
-    new Request(`http://localhost${pathname}`, {
+    new Request(url, {
       headers: { accept: "text/html" },
     }),
     {
@@ -26,6 +27,10 @@ async function fetchPage(pathname) {
       passThroughOnException() {},
     },
   );
+}
+
+async function fetchPage(pathname) {
+  return fetchUrl(`http://localhost${pathname}`);
 }
 
 test("renders indexable English metadata without Product rich-result claims", async () => {
@@ -82,7 +87,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 47 canonical sitemap URLs with language alternates", async () => {
+test("publishes 50 canonical sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -91,25 +96,25 @@ test("publishes 47 canonical sitemap URLs with language alternates", async () =>
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 47);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 50);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
     xml,
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 47);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 50);
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-28<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-29<\/lastmod>/,
   );
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/es\/products<\/loc>[\s\S]*?<lastmod>2026-07-28<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/es\/products<\/loc>[\s\S]*?<lastmod>2026-07-29<\/lastmod>/,
   );
   assert.equal(
     new Set([...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1])).size,
-    2,
+    1,
   );
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/about<\/loc>/);
   assert.match(
@@ -121,6 +126,15 @@ test("publishes 47 canonical sitemap URLs with language alternates", async () =>
     /<loc>https:\/\/lolobuy-sheet\.net\/research-method<\/loc>/,
   );
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/contact<\/loc>/);
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/privacy-policy<\/loc>/,
+  );
+  assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/terms<\/loc>/);
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/independent-disclosure<\/loc>/,
+  );
 });
 
 test("uses concise standalone SEO titles for all long-form guides", async () => {
@@ -162,6 +176,17 @@ test("redirects legacy language parameters to clean locale paths", async () => {
   assert.equal(
     response.headers.get("location"),
     "http://localhost/fr/shipping",
+  );
+});
+
+test("permanently redirects www to the canonical host and preserves path and query", async () => {
+  const response = await fetchUrl(
+    "https://www.lolobuy-sheet.net/es/shipping?parcel=2",
+  );
+  assert.equal(response.status, 301);
+  assert.equal(
+    response.headers.get("location"),
+    "https://lolobuy-sheet.net/es/shipping?parcel=2",
   );
 });
 
@@ -223,12 +248,15 @@ test("shows visible authorship that agrees with Article structured data", async 
   }
 });
 
-test("publishes transparent editorial identity and policy pages", async () => {
+test("publishes transparent editorial, legal and commercial-disclosure pages", async () => {
   const pages = new Map([
     ["/about", "Who writes LoloBuy Sheet"],
     ["/editorial-policy", "No invented fees, ratings or customer stories"],
     ["/research-method", "How a LoloBuy Sheet guide is researched"],
     ["/contact", "This static site does not currently publish a verified editorial inbox"],
+    ["/privacy-policy", "Technical request data and hosting"],
+    ["/terms", "External links and commercial context"],
+    ["/independent-disclosure", "Associated catalog and potential commercial benefit"],
   ]);
 
   for (const [pathname, expectedText] of pages) {
@@ -244,4 +272,61 @@ test("publishes transparent editorial identity and policy pages", async () => {
     );
     assert.match(html, /LoloBuy Sheet Editorial/);
   }
+});
+
+test("uses distinct 1200 by 630 social images for audited page intents", async () => {
+  const pages = new Map([
+    ["/", "spreadsheet-guide.png"],
+    ["/products", "product-catalog.png"],
+    ["/categories", "categories.png"],
+    ["/qc-guide", "qc-guide.png"],
+    ["/shipping", "shipping-guide.png"],
+    ["/articles", "buying-guides.png"],
+    ["/faq", "faq.png"],
+    ["/how-it-works", "how-it-works.png"],
+    ["/privacy-policy", "editorial-standards.png"],
+  ]);
+
+  for (const [pathname, filename] of pages) {
+    const response = await fetchPage(pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+    assert.match(
+      html,
+      new RegExp(
+        `property="og:image" content="https://lolobuy-sheet\\.net/social/${filename.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`,
+      ),
+      pathname,
+    );
+  }
+
+  for (const filename of new Set(pages.values())) {
+    const bytes = await readFile(
+      new URL(`../public/social/${filename}`, import.meta.url),
+    );
+    assert.equal(bytes.readUInt32BE(16), 1200, filename);
+    assert.equal(bytes.readUInt32BE(20), 630, filename);
+  }
+});
+
+test("keeps product destinations while removing unverified brand titles", async () => {
+  const response = await fetchPage("/");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+
+  assert.match(html, /Cushioned trail running shoes/);
+  assert.match(html, /Graphic pullover hoodie collection/);
+  assert.doesNotMatch(
+    html,
+    /HOKA|Off-White|GUCCI|Samsung|Rick Owens|Nike|Louis Vuitton|Dior|Celine|Golden Goose|Polo Ralph|Syna World|Corteiz|NUMERIS/i,
+  );
+  assert.match(html, /not endorsed by LoloBuy or any product brand/);
+  assert.match(html, /operator may benefit commercially/);
+
+  const destinationIds = [
+    ...html.matchAll(
+      /https:\/\/www\.cnbuycha\.com\/AllProducts\/(\d+)\.html/g,
+    ),
+  ].map((match) => match[1]);
+  assert.equal(new Set(destinationIds).size, 12);
 });

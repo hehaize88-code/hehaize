@@ -65,6 +65,11 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
+    if (url.hostname === "www.lolobuy-sheet.net") {
+      url.hostname = "lolobuy-sheet.net";
+      return Response.redirect(url, 301);
+    }
+
     const legacyLocale = url.searchParams.get("lang");
     if (legacyLocale && /^(en|es|de|fr|it)$/.test(legacyLocale)) {
       url.searchParams.delete("lang");

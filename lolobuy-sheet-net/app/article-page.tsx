@@ -164,8 +164,8 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
                 <img
                   src={article.image}
                   alt={article.imageAlt}
-                  width="1100"
-                  height="760"
+                  width="1200"
+                  height="630"
                 />
                 <figcaption>{article.imageCaption}</figcaption>
               </figure>

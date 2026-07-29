@@ -6,7 +6,10 @@ export type EditorialPageKind =
   | "about"
   | "editorial-policy"
   | "research-method"
-  | "contact";
+  | "contact"
+  | "privacy-policy"
+  | "terms"
+  | "independent-disclosure";
 
 type EditorialSection = {
   heading: string;
@@ -32,7 +35,7 @@ const records: Record<EditorialPageKind, EditorialPageRecord> = {
       "Meet LoloBuy Sheet Editorial, understand the site's independent scope, and see how product discovery, QC and shipping guidance are maintained.",
     summary:
       "LoloBuy Sheet is an independent product-discovery and educational publication. It organizes matched product links and explains the checks that remain after discovery: reading a live listing, recording the selected option, reviewing warehouse evidence and planning a parcel. It is not LoloBuy, does not represent LoloBuy staff and does not sell, purchase, inspect, store or ship products.",
-    reviewed: "28 July 2026",
+    reviewed: "29 July 2026",
     pageType: "AboutPage",
     sections: [
       {
@@ -65,7 +68,7 @@ const records: Record<EditorialPageKind, EditorialPageRecord> = {
       {
         heading: "Independence and commercial boundaries",
         paragraphs: [
-          "LoloBuy Sheet is not an official LoloBuy website. Educational navigation stays on this publication. Product cards and category actions lead only to the associated main catalog pages that were matched during catalog review; the site does not add clickable links to LoloBuy or competing directories.",
+          "LoloBuy Sheet is not an official LoloBuy website. Educational navigation stays on this publication. Product cards, category actions and catalog search lead only to the associated main catalog at cnbuycha.com; the operator may benefit commercially from visits or purchases there. That relationship is disclosed rather than presented as a neutral third-party recommendation.",
           "Editorial conclusions are not based on a manufactured star rating. If customer experiences are discussed in a future article, the evidence must be identifiable as individual experience, dated where possible and separated from official claims and referral-driven promotion.",
         ],
       },
@@ -78,7 +81,7 @@ const records: Record<EditorialPageKind, EditorialPageRecord> = {
       "Read the LoloBuy Sheet editorial policy for sourcing, factual claims, reviews, corrections, updates and independent product guidance.",
     summary:
       "Every page is written to answer a real research question without inventing precision. The policy below governs official claims, live variables, worked examples, customer reports, affiliate-style language, product safety and corrections.",
-    reviewed: "28 July 2026",
+    reviewed: "29 July 2026",
     pageType: "WebPage",
     sections: [
       {
@@ -131,7 +134,7 @@ const records: Record<EditorialPageKind, EditorialPageRecord> = {
       "See the source hierarchy, claim-checking method, link verification, review handling and update process used by LoloBuy Sheet Editorial.",
     summary:
       "The method is designed around traceability: identify the reader's decision, locate the strongest available source, record the date, separate fixed facts from live variables, write the practical check and test the published page.",
-    reviewed: "28 July 2026",
+    reviewed: "29 July 2026",
     pageType: "WebPage",
     sections: [
       {
@@ -178,182 +181,31 @@ const records: Record<EditorialPageKind, EditorialPageRecord> = {
       },
     ],
   },
-  contact: {
-    eyebrow: "Contact scope and corrections",
-    title: "Know where to take an editorial, product or order question",
+  "privacy-policy": {
+    eyebrow: "Privacy policy",
+    title: "Privacy policy for this independent LoloBuy Sheet publication",
     description:
-      "Understand the contact scope for LoloBuy Sheet, what belongs in an editorial correction, and where account or order support must be handled.",
+      "Learn what LoloBuy Sheet does and does not collect, how hosting requests and outbound catalog links work, and how to protect private order information.",
     summary:
-      "LoloBuy Sheet is an independent static publication and does not operate an order-support desk. This page explains the correct destination for different questions and the evidence needed for a future editorial correction channel.",
-    reviewed: "28 July 2026",
-    pageType: "ContactPage",
+      "LoloBuy Sheet is a public, static editorial website. It does not provide user accounts, a checkout, an order-support form or an advertising-profile system. This policy explains the limited data boundary of the publication and the separate privacy context that begins when a visitor follows an external catalog link.",
+    reviewed: "29 July 2026",
+    pageType: "WebPage",
     sections: [
       {
-        heading: "Editorial corrections",
+        heading: "Information this publication asks you to provide",
         paragraphs: [
-          "A useful correction identifies the exact page URL, the sentence or product card in question, why it may be wrong, the strongest available source and the date that source was checked. For a mismatched product card, include the item number and describe whether the image, title or destination is inconsistent.",
-          "This static site does not currently publish a verified editorial inbox or collect messages through a form. A mailbox or submission channel will be listed only after its domain routing and ownership are verified. Until then, the site will not invent a contact address that may silently reject mail.",
-        ],
-        bullets: [
-          "Exact page URL and affected sentence or item number",
-          "Primary source or current destination page",
-          "Date observed and a concise explanation of the conflict",
-          "No passwords, payment details, identity documents or private order data",
+          "The website does not ask visitors to create an account, enter payment information, upload identity documents or submit an order number. There is currently no editorial contact form or verified public mailbox. As a result, the publication does not intentionally collect personal data through a form on these pages.",
+          "Do not send passwords, payment-card details, passport images, full delivery addresses or private warehouse records to an address or social account merely because it uses the LoloBuy Sheet name. The Contact page will identify a correction channel only after ownership and delivery have been verified.",
         ],
       },
       {
-        heading: "Order, payment and warehouse support",
+        heading: "Technical request data and hosting",
         paragraphs: [
-          "Questions about payment, purchasing status, returns, warehouse photographs, storage counters, parcel quotes or tracking require access to the actual order record. They must be handled through the support entry inside the service account used for the order.",
-          "LoloBuy Sheet cannot view an account, change an order, approve a return, request a photograph, select a route or locate a parcel. Anyone claiming to perform those actions on behalf of this independent site should not receive account credentials or payment.",
+          "Like most public websites, the hosting and security infrastructure may process ordinary request information needed to deliver and protect a page. This can include an IP address, browser or device information, requested URL, request time and security signals. That processing is performed at the infrastructure level and may be retained under the provider's own operational and security practices.",
+          "The publication does not currently embed a marketing-pixel dashboard, behavioral advertising profile or third-party comment widget in its page code. If that changes materially, this policy should be updated before the new collection is treated as active.",
         ],
       },
       {
-        heading: "Product availability and seller questions",
+        heading: "External catalog links create a separate visit",
         paragraphs: [
-          "Open the matched destination page again for current stock, variants, seller notes and domestic delivery. A catalog card records a reviewed match, not a permanent seller commitment. If the page has changed products or no longer exposes the selected option, do not rely on the older card.",
-          "Keep a dated source record before ordering. That record is the most useful starting point when the purchasing service needs clarification.",
-        ],
-      },
-      {
-        heading: "Privacy boundary",
-        paragraphs: [
-          "This publication does not need passports, payment-card details, account passwords, full delivery addresses or private warehouse records. Do not post those details in a public correction request or send them to an unverified social account.",
-          "When a verified editorial channel is added, its purpose will be limited to content corrections and research questions. It will not become an order-support substitute.",
-        ],
-      },
-    ],
-  },
-};
-
-const paths: Record<EditorialPageKind, string> = {
-  about: "/about",
-  "editorial-policy": "/editorial-policy",
-  "research-method": "/research-method",
-  contact: "/contact",
-};
-
-export function editorialMetadata(kind: EditorialPageKind): Metadata {
-  const record = records[kind];
-  const path = paths[kind];
-
-  return {
-    title: { absolute: `${record.title} | LoloBuy Sheet` },
-    description: record.description,
-    alternates: { canonical: path },
-    openGraph: {
-      title: record.title,
-      description: record.description,
-      type: "article",
-      url: path,
-      siteName: "LoloBuy Sheet",
-      images: [
-        {
-          url: "/products/3359.webp",
-          width: 900,
-          height: 900,
-          alt: "LoloBuy Sheet editorial research",
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: record.title,
-      description: record.description,
-      images: ["/products/3359.webp"],
-    },
-  };
-}
-
-export function EditorialPage({ kind }: { kind: EditorialPageKind }) {
-  const record = records[kind];
-  const canonical = `https://lolobuy-sheet.net${paths[kind]}`;
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": record.pageType,
-    name: record.title,
-    description: record.description,
-    url: canonical,
-    inLanguage: "en",
-    dateModified: "2026-07-28",
-    author: {
-      "@type": "Organization",
-      name: "LoloBuy Sheet Editorial",
-      url: "https://lolobuy-sheet.net/about",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "LoloBuy Sheet",
-      url: "https://lolobuy-sheet.net/",
-      publishingPrinciples:
-        "https://lolobuy-sheet.net/editorial-policy",
-    },
-  };
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <SiteHeader />
-      <main className="subpage-main editorial-page" data-i18n-ignore>
-        <section className="subpage-hero editorial-page-hero">
-          <div>
-            <p className="subpage-breadcrumb">
-              <Link href="/">Home</Link> <span>/</span> {record.eyebrow}
-            </p>
-            <p className="eyebrow">{record.eyebrow}</p>
-            <h1>{record.title}</h1>
-            <p>{record.summary}</p>
-          </div>
-        </section>
-        <div className="editorial-page-layout">
-          <aside className="editorial-profile" aria-label="Editorial identity">
-            <p className="footer-label">RESPONSIBLE EDITOR</p>
-            <h2>LoloBuy Sheet Editorial</h2>
-            <p>
-              Independent product-discovery research, fact checks and practical
-              buying guidance.
-            </p>
-            <dl>
-              <div>
-                <dt>Last reviewed</dt>
-                <dd>{record.reviewed}</dd>
-              </div>
-              <div>
-                <dt>Affiliation</dt>
-                <dd>Independent; not LoloBuy</dd>
-              </div>
-            </dl>
-            <nav aria-label="Editorial information">
-              <Link href="/about">About</Link>
-              <Link href="/editorial-policy">Editorial policy</Link>
-              <Link href="/research-method">Sources & research method</Link>
-              <Link href="/contact">Contact & corrections</Link>
-            </nav>
-          </aside>
-          <div className="editorial-page-content">
-            {record.sections.map((section, index) => (
-              <section key={section.heading}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <h2>{section.heading}</h2>
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-                {section.bullets && (
-                  <ul>
-                    {section.bullets.map((bullet) => (
-                      <li key={bullet}>{bullet}</li>
-                    ))}
-                  </ul>
-                )}
-              </section>
-            ))}
-          </div>
-        </div>
-      </main>
-      <SiteFooter />
-    </>
-  );
-}
+          "Product, category and search actions open the associated catalog at cnbuycha.com in a separate tab. That destination is a different website with its own hosting, account, transaction and privacy practices. LoloBuy Sheet does not control the information a visitor chooses to provide after leaving this 

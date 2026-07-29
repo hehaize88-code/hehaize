@@ -235,9 +235,48 @@ export function seoCopy(locale: Locale, path: CorePath) {
   return routeSeo[path][locale];
 }
 
+const coreSocialImages: Record<
+  CorePath,
+  { url: string; alt: string }
+> = {
+  "/": {
+    url: "/social/spreadsheet-guide.png",
+    alt: "LoloBuy Sheet product discovery, checking and parcel-planning flow",
+  },
+  "/products": {
+    url: "/social/product-catalog.png",
+    alt: "Search, match and verify product catalog workflow",
+  },
+  "/categories": {
+    url: "/social/categories.png",
+    alt: "Category map for shoes, layers, outerwear and accessories",
+  },
+  "/qc-guide": {
+    url: "/social/qc-guide.png",
+    alt: "Warehouse photo checklist for item, variant, condition and measurements",
+  },
+  "/shipping": {
+    url: "/social/shipping-guide.png",
+    alt: "Parcel planning comparison of actual and volumetric weight",
+  },
+  "/articles": {
+    url: "/social/buying-guides.png",
+    alt: "LoloBuy Sheet buying guides for spreadsheet, QC and shipping research",
+  },
+  "/faq": {
+    url: "/social/faq.png",
+    alt: "LoloBuy Sheet frequently asked questions and evidence-led answers",
+  },
+  "/how-it-works": {
+    url: "/social/how-it-works.png",
+    alt: "Seven-step product discovery, order, QC and parcel-planning flow",
+  },
+};
+
 export function coreMetadata(locale: Locale, path: CorePath): Metadata {
   const copy = seoCopy(locale, path);
   const canonicalPath = localizedPath(locale, path);
+  const socialImage = coreSocialImages[path];
 
   return {
     title: copy.title,
@@ -258,10 +297,10 @@ export function coreMetadata(locale: Locale, path: CorePath): Metadata {
       ),
       images: [
         {
-          url: "/products/3359.webp",
-          width: 900,
-          height: 900,
-          alt: "LoloBuy Sheet product guide",
+          url: socialImage.url,
+          width: 1200,
+          height: 630,
+          alt: socialImage.alt,
         },
       ],
     },
@@ -269,7 +308,7 @@ export function coreMetadata(locale: Locale, path: CorePath): Metadata {
       card: "summary_large_image",
       title: copy.title,
       description: copy.description,
-      images: ["/products/3359.webp"],
+      images: [socialImage.url],
     },
     robots: {
       index: true,
@@ -283,4 +322,3 @@ export function coreMetadata(locale: Locale, path: CorePath): Metadata {
     },
   };
 }
-
