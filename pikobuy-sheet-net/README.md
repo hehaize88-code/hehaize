@@ -23,9 +23,11 @@ navigation remains on `pikobuy-sheet.net`.
 The committed project root contains a ready-to-serve Pages bundle after running
 `npm run build:pages`:
 
-- `_worker.js` handles application routes and locale-aware HTML;
-- `assets/` contains versioned JavaScript, CSS and local font files;
-- root image files contain the PikoBuy Sheet brand assets.
+- `_worker.js` handles application routes, locale-aware HTML and embedded
+  binary font/logo responses;
+- `assets/` contains versioned JavaScript and CSS;
+- `public/pikobuy-logo.base64` preserves the supplied Logo as rebuildable
+  source without requiring a binary GitHub upload.
 
 Use `pikobuy-sheet-net` as the Pages root directory. When the generated bundle
 is committed, no Cloudflare build command or separate output directory is
