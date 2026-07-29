@@ -10,7 +10,18 @@ export const categories = [
   { code: "09", name: "Electronics", note: "Tech & gadgets", href: "https://www.cnbuycha.com/electronics/", color: "ink" },
 ];
 
-export const articleCards = [
+type ArticleCard = {
+  tag: string;
+  title: string;
+  summary: string;
+  href: string;
+  read: string;
+  featured?: boolean;
+  englishOnly?: boolean;
+  localized?: Partial<Record<"en-gb" | "de" | "pl" | "pt-br", { tag: string; title: string; summary: string }>>;
+};
+
+export const articleCards: ArticleCard[] = [
   {
     tag: "SEO BUYING GUIDE",
     title: "UUFinds Spreadsheet Guide 2026: from QC research to better product finds",
@@ -39,5 +50,35 @@ export const articleCards = [
     summary: "Why product discovery and quality research work better as separate steps—and where each tool fits.",
     href: "/guides/spreadsheet-vs-qc-finder/",
     read: "9 min read",
+  },
+  {
+    tag: "PARCEL PLANNING",
+    title: "UUFinds Product Weight vs Volumetric Weight: A Practical Parcel Estimate",
+    summary: "Turn a QC weight clue into transparent actual, volumetric and chargeable-weight scenarios without inventing a shipping quote.",
+    href: "/guides/uufinds-product-weight-vs-volumetric-weight/",
+    read: "11 min read",
+    englishOnly: true,
+    localized: {
+      "en-gb": {
+        tag: "PARCEL PLANNING",
+        title: "UUFinds Product Weight vs Volumetric Weight: A Practical Parcel Estimate",
+        summary: "Turn a QC weight clue into transparent actual, volumetric and chargeable-weight scenarios without inventing a shipping quote.",
+      },
+      de: {
+        tag: "PAKETPLANUNG",
+        title: "UUFinds-Produktgewicht und Volumengewicht: eine praktische Paketschätzung",
+        summary: "So wird aus einem QC-Gewichtshinweis eine nachvollziehbare Schätzung für tatsächliches, volumetrisches und abrechenbares Gewicht – ohne erfundenes Versandangebot.",
+      },
+      pl: {
+        tag: "PLANOWANIE PACZKI",
+        title: "Waga produktu UUFinds a waga objętościowa: praktyczne oszacowanie paczki",
+        summary: "Zamień wskazówkę o wadze z QC w przejrzyste scenariusze wagi rzeczywistej, objętościowej i rozliczeniowej bez wymyślania ceny wysyłki.",
+      },
+      "pt-br": {
+        tag: "PLANEJAMENTO DO PACOTE",
+        title: "Peso do produto no UUFinds versus peso volumétrico: uma estimativa prática",
+        summary: "Transforme uma indicação de peso do QC em cenários transparentes de peso real, volumétrico e tarifável sem inventar uma cotação de frete.",
+      },
+    },
   },
 ];

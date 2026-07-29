@@ -5,10 +5,25 @@ export type Guide = {
   description: string;
   updated: string;
   readTime: string;
+  publishedISO?: string;
   sourceNote?: string;
   modifiedISO?: string;
+  englishOnly?: boolean;
   intro: string[];
-  sections: { heading: string; paragraphs: string[]; points?: string[] }[];
+  sections: {
+    heading: string;
+    paragraphs: string[];
+    points?: string[];
+    table?: { caption: string; headers: string[]; rows: string[][] };
+  }[];
+  evidence?: {
+    type: string;
+    source: string;
+    checked: string;
+    supports: string;
+    boundary: string;
+  }[];
+  relatedLinks?: { href: string; label: string; description: string }[];
 };
 
 export const guides: Guide[] = [
@@ -393,6 +408,188 @@ export const guides: Guide[] = [
         paragraphs: [
           "Use a spreadsheet to expand or organize your options. Use a QC finder to reduce uncertainty around a specific option. Use the live destination page to confirm the facts that can change. When each tool keeps its proper job, the entire search process becomes easier to audit and less dependent on assumptions.",
         ],
+      },
+    ],
+  },
+  {
+    slug: "uufinds-product-weight-vs-volumetric-weight",
+    label: "PARCEL PLANNING",
+    title: "UUFinds Product Weight vs Volumetric Weight: A Practical Parcel Estimate",
+    description: "Learn what a UUFinds QC weight can—and cannot—tell you, calculate dimensional weight, and compare parcel options without inventing a shipping quote.",
+    updated: "July 29, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-07-29",
+    modifiedISO: "2026-07-29",
+    englishOnly: true,
+    sourceNote: "Fact-checked July 29, 2026. UUFinds’ public QC finder and sampled product/QC pages support the existence of QC photos, QC videos, approximate style weights and sample-level weight entries. They do not establish packed parcel dimensions, a universal shipping divisor, a route quote or a final chargeable weight. Carrier examples below are identified separately and are illustrations, not CNBuy Sheet or UUFinds shipping terms.",
+    intro: [
+      "A weight shown beside a UUFinds product or QC set is useful, but it is not a shipping quote. It may describe an estimated style weight or one photographed warehouse sample. International parcel pricing can depend on a different number: the packed parcel’s chargeable weight, often the greater of actual scale weight and volumetric (dimensional) weight. Confusing those stages is how a 700 g product turns into an unrealistic 700 g shipping assumption.",
+      "This guide explains how to move from a UUFinds weight clue to a defensible parcel estimate. It uses current public UUFinds pages to define what is visible, current carrier guidance to explain dimensional-weight arithmetic, and independent worked examples to show the decisions. It does not claim a UUFinds fee, CNBuy Sheet shipping price, route divisor, packing service or delivery time. Those facts must be confirmed on the live service that will handle the parcel.",
+    ],
+    sections: [
+      {
+        heading: "1. Read the UUFinds weight as a clue, not a parcel total",
+        paragraphs: [
+          "UUFinds publicly describes its core tool as a finder for QC photos and QC videos. Some public product pages show an approximate weight beside available styles, while some QC sets show a sample weight alongside the QC time. That can help you compare the likely density of two candidates or notice variation across photographed units. It does not tell you what the final carton will measure.",
+          "The distinction is visible in UUFinds’ own public results. A sampled shorts page showed three QC entries at 236 g, 254 g and 271 g when checked on July 29, 2026. Those entries are evidence that individual recorded weights can vary; they are not a platform-wide tolerance rule and they do not predict the packed shipment. The sensible note is “recent samples were roughly a quarter kilogram,” followed by a separate allowance for packaging and other items.",
+          "Before using any weight, first apply the exact-link method from the on-site QC checklist: match the source or item identifier, seller and visible variant. A number attached to a look-alike listing is not evidence for the product you saved. Also record whether the number appears as an approximate style weight or inside a dated QC set. The second is closer to a measured sample, but neither includes a future parcel by default.",
+        ],
+        points: [
+          "Record the displayed weight and its unit exactly as shown.",
+          "Note whether it belongs to a style estimate or a dated QC sample.",
+          "Match the listing and variant before treating the number as relevant.",
+          "Never relabel an item weight as packed or chargeable weight.",
+        ],
+      },
+      {
+        heading: "2. Keep four different weights in separate columns",
+        paragraphs: [
+          "A useful estimate needs four columns. Item weight is the product alone, or the closest sample-level number available. Packed actual weight is everything the scale will see: products, inner packaging, protective material and outer carton. Volumetric weight converts the parcel’s outside dimensions into a weight-like value using the route’s divisor. Chargeable weight is the rating value selected under the service’s rules—commonly the higher of packed actual and volumetric weight, although the live route must confirm that.",
+          "This separation prevents false precision. If a UUFinds page displays 820 g for a clothing set, you know only the first column. You still need a packaging assumption, the finished length, width and height, and the exact route rule. Writing “820 g item; parcel data unknown” is better planning than multiplying 0.82 kg by a price found in an unrelated forum post.",
+        ],
+        table: {
+          caption: "The four numbers to keep separate",
+          headers: ["Number", "What it represents", "Where to verify it"],
+          rows: [
+            ["Item weight", "Product or photographed sample before final parcel packing", "Matched product/QC evidence"],
+            ["Packed actual", "All contents and packaging on a scale", "Final packed-parcel record"],
+            ["Volumetric", "Outside box volume converted with the route divisor", "Dimensions plus current route rule"],
+            ["Chargeable", "The rating weight selected under the service terms", "Live calculator or checkout"],
+          ],
+        },
+      },
+      {
+        heading: "3. Calculate volumetric weight—but verify the divisor",
+        paragraphs: [
+          "The general metric formula is length × width × height in centimetres, divided by the service’s volumetric divisor, producing kilograms. The formula is easy; choosing the divisor is the part that cannot be guessed. DHL Express published a 2025 explanation using 5,000 as its typical divisor and explicitly said divisors can vary by carrier and transport mode. A separate DHL eCommerce US page uses 6,000 for centimetre measurements. UPS publishes inch-based factors that differ between daily and retail rates. These current carrier pages demonstrate why there is no honest universal number.",
+          "For a worked method—not a quote—suppose a packed carton measures 35 × 25 × 12 cm and the route actually confirms a divisor of 5,000. Its volumetric weight is 35 × 25 × 12 ÷ 5,000 = 2.10 kg. If the packed scale weight is 1.20 kg and the route charges the greater number, the example chargeable weight is 2.10 kg. Change the divisor to 6,000 and the same carton becomes 1.75 kg volumetric. One unchecked input changes the result materially.",
+          "Measure the outside of the finished parcel, including bulges and protrusions. Carrier rounding rules can also matter. UPS, for example, tells shippers to measure the longest side as length and round package dimensions according to its published method. Do not copy that rule automatically to another route; use it as proof that measurement and rounding belong to the specific carrier calculation.",
+        ],
+        points: [
+          "Formula: length × width × height ÷ confirmed divisor.",
+          "Use final outside dimensions, not the product’s catalog measurements.",
+          "Apply the route’s own unit and rounding rules.",
+          "Compare the result with packed actual weight only after both exist.",
+        ],
+      },
+      {
+        heading: "4. Use scenarios instead of pretending you have a quote",
+        paragraphs: [
+          "Early in the search, exact parcel dimensions usually do not exist. A scenario range is more honest than a single total. Create a compact-pack case, a realistic case and a protective-pack case. Keep the same item shortlist, then change only the unknown packaging inputs. This reveals whether your decision is sensitive to box volume or mostly driven by scale weight.",
+          "The examples below all use 5,000 solely to demonstrate the arithmetic. They are not UUFinds, CNBuy Sheet or destination-route rates. In the first case, the box is light but bulky, so volume controls. In the second, the parcel is dense enough for scale weight to control. The point is not which outcome is cheaper; it is seeing which missing input can reverse the result.",
+        ],
+        table: {
+          caption: "Worked parcel scenarios using an illustrative 5,000 divisor",
+          headers: ["Scenario", "Packed actual", "Outside size", "Volumetric", "Higher value"],
+          rows: [
+            ["Light, bulky carton", "1.20 kg", "35 × 25 × 12 cm", "2.10 kg", "2.10 kg"],
+            ["Dense compact carton", "2.40 kg", "32 × 24 × 15 cm", "2.30 kg", "2.40 kg"],
+            ["Uncompressed outerwear", "2.10 kg", "45 × 35 × 20 cm", "6.30 kg", "6.30 kg"],
+            ["Smaller outerwear box", "2.10 kg", "38 × 30 × 16 cm", "3.65 kg", "3.65 kg"],
+          ],
+        },
+      },
+      {
+        heading: "5. Treat packing changes as trade-offs, not automatic savings",
+        paragraphs: [
+          "Reducing empty space can lower volumetric weight, but “remove all packaging” is not a universal recommendation. A shoe box, rigid insert or stronger carton may protect shape. Bubble wrap and corner protection add size and some mass. Vacuum packing can reduce soft-goods volume but may crease structured garments or graphics. The right question is which protection is necessary for this item and which volume is merely empty air.",
+          "Use QC photos to identify the risk before choosing the packing request. A soft T-shirt and a structured cap do not need the same treatment. Electronics, fragile hardware and liquids may also be subject to route restrictions that a weight calculation cannot solve. Confirm whether the line accepts the item before optimizing its dimensions. A mathematically smaller parcel is not useful if its contents are prohibited or inadequately protected.",
+          "The outerwear example in the table shows the leverage of dimensions. Moving from 45 × 35 × 20 cm to 38 × 30 × 16 cm lowers the illustrative volumetric result from 6.30 kg to 3.65 kg—about 42 percent—without changing the assumed 2.10 kg scale weight. That is editorial arithmetic, not a promise that a warehouse can or should achieve those dimensions.",
+        ],
+      },
+      {
+        heading: "6. Consolidation changes volume in ways addition cannot predict",
+        paragraphs: [
+          "Item weights can be added; box dimensions cannot. Two products weighing 600 g and 900 g give a 1.50 kg item subtotal, but their combined parcel volume depends on how they nest, whether boxes are retained and how much protection separates them. Putting two cartons inside a larger carton can create unused air. Combining folded clothing may do the opposite and use space efficiently.",
+          "For each consolidation option, record the item subtotal, packaging allowance and an estimated outer box. Then calculate actual and volumetric scenarios again. Compare one consolidated parcel with separate parcels only after applying the same route rules, minimum charges and restrictions shown by the live service. This guide intentionally supplies no universal conclusion because fees and handling rules are not established by UUFinds’ QC pages.",
+        ],
+        points: [
+          "Add item weights to build a starting subtotal.",
+          "Model the consolidated box rather than adding dimensions.",
+          "Keep necessary protection in every comparison.",
+          "Check route restrictions and live terms before selecting an option.",
+        ],
+      },
+      {
+        heading: "7. Compare routes with a worksheet, not a headline price",
+        paragraphs: [
+          "Once a packed estimate exists, collect the same fields for every eligible route: accepted product type, destination, actual-weight rule, volumetric divisor, rounding increment, size limits, included service, tracking, declared-value requirements and the date checked. Enter your parcel dimensions once, then calculate each route under its own rules. A lower per-kilogram headline can lose its advantage when a different divisor or rounding step applies.",
+          "Separate verified facts from unknowns. A current calculator result for your destination is verified for that input and time; an old screenshot from another country is not. A UUFinds QC weight is evidence about a sample; it is not evidence about a carrier tariff. If a field is missing, mark it unknown and ask the responsible service rather than filling the cell with a convenient assumption.",
+          "Finish on the live CNBuy Sheet or service page responsible for the transaction. Re-check the exact product, current variants and any available parcel or route information. The on-site spreadsheet research guide explains this broader handoff: discovery finds candidates, QC material reduces product uncertainty, and the live destination confirms changing commercial facts.",
+        ],
+      },
+      {
+        heading: "8. A defensible pre-shipping checklist",
+        paragraphs: [
+          "A good estimate should be reproducible by someone who did not open your original tabs. Save the exact product or source identifier, the UUFinds page name and check date, each relevant QC sample weight, your packaging assumptions, the proposed outer dimensions and the route rule source. Show the formula. Label every hypothetical number as hypothetical. When the parcel is actually packed, replace the assumptions with the warehouse scale and dimension record.",
+          "The final decision is not “the item weighs 700 g, therefore shipping is cheap.” It is “the matched evidence suggests an item weight near 700 g; the packed parcel is expected within this scale-and-volume range; this route currently uses these rules; and these inputs still need confirmation.” That conclusion contains uncertainty, but it is useful uncertainty—the kind that can be checked before money or a parcel moves.",
+        ],
+        points: [
+          "Exact listing and variant matched to the weight evidence.",
+          "Item, packed actual, volumetric and chargeable weights kept separate.",
+          "Final outer dimensions and divisor verified for the chosen route.",
+          "Restrictions, protection and consolidation effects reviewed.",
+          "Live calculator or checkout checked before acting.",
+        ],
+      },
+    ],
+    evidence: [
+      {
+        type: "Official platform statement",
+        source: "UUFinds QC Finder page and public QC/product-detail pages",
+        checked: "July 29, 2026",
+        supports: "QC-photo and QC-video discovery; visible approximate style weights and sample-level weight entries on some pages.",
+        boundary: "Does not establish packed dimensions, shipping price, route divisor, delivery time or a guaranteed weight for a future unit.",
+      },
+      {
+        type: "Current official example",
+        source: "UUFinds public QC page for a shorts listing",
+        checked: "July 29, 2026",
+        supports: "Three visible sample entries of 236 g, 254 g and 271 g, used only to illustrate sample variation.",
+        boundary: "One listing is not evidence of a platform-wide tolerance or packing rule.",
+      },
+      {
+        type: "Carrier methodology",
+        source: "DHL Express, “What is volumetric weight and how is it calculated?”",
+        checked: "July 29, 2026",
+        supports: "Metric dimensional-weight formula, a typical 5,000 example divisor, outer-dimension measurement and comparison with actual weight.",
+        boundary: "DHL states that divisors vary; this is not a UUFinds or CNBuy Sheet route term.",
+      },
+      {
+        type: "Carrier methodology",
+        source: "DHL eCommerce US, “Chargeable Weight”; UPS US, “Package Dimensions, Size Limits and Weight Guide”",
+        checked: "July 29, 2026",
+        supports: "Different documented divisors and service-specific measurement/rounding rules.",
+        boundary: "Used to demonstrate rule variation, not to quote a destination route.",
+      },
+      {
+        type: "Independent editorial analysis",
+        source: "UUFinds Sheet worked scenarios",
+        checked: "July 29, 2026",
+        supports: "Transparent arithmetic for hypothetical boxes using a clearly labeled illustrative divisor.",
+        boundary: "No scenario is a fee, guarantee, warehouse promise or actual customer order.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/guides/uufinds-qc-checklist/",
+        label: "Match weight evidence with the UUFinds QC checklist",
+        description: "Confirm the exact source, variant, dates and visible evidence before recording a sample weight.",
+      },
+      {
+        href: "/guides/uufinds-spreadsheet-shopping-guide-2026/",
+        label: "Use the complete spreadsheet research workflow",
+        description: "Move from broad discovery to a traceable shortlist and a current CNBuy Sheet destination.",
+      },
+      {
+        href: "/faq/",
+        label: "Check the independent UUFinds Sheet FAQ",
+        description: "Review the site’s evidence boundaries, link policy and live-page verification rules.",
+      },
+      {
+        href: "/products/",
+        label: "Compare current product detail pages",
+        description: "Keep listing identity, displayed price and category routes visible before opening CNBuy Sheet.",
       },
     ],
   },

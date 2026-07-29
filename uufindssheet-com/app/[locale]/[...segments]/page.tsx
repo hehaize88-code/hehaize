@@ -74,7 +74,7 @@ const corePaths = ["finds", "products", "how-it-works", "articles", "faq", ...po
 const allSegments = [
   ...corePaths.map((path) => [path]),
   ...products.map((product) => ["products", product.slug]),
-  ...guides.map((guide) => ["guides", guide.slug]),
+  ...guides.filter((guide) => !guide.englishOnly).map((guide) => ["guides", guide.slug]),
 ];
 
 export const dynamicParams = false;
@@ -421,14 +421,15 @@ function LocalizedArticles({
             const slug = article.href.split("/").filter(Boolean).pop() ?? "";
             const guide = guides.find((item) => item.slug === slug);
             const localizedGuide = guide ? localizeGuide(locale, guide) : undefined;
+            const localizedCard = article.localized?.[locale];
             return (
-              <Link href={`/${locale}${article.href}`} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+              <Link href={article.englishOnly ? article.href : `/${locale}${article.href}`} hrefLang={article.englishOnly ? "en-US" : undefined} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
                 <div className="article-meta">
-                  <span>{translate(article.tag)}</span>
+                  <span>{localizedCard?.tag ?? translate(article.tag)}</span>
                   <b>{String(index + 1).padStart(2, "0")}</b>
                 </div>
-                <h2>{locale === "en-gb" ? article.title : localizedGuide?.title ?? translate(article.title)}</h2>
-                <p>{locale === "en-gb" ? article.summary : localizedGuide?.description ?? translate(article.summary)}</p>
+                <h2>{localizedCard?.title ?? (locale === "en-gb" ? article.title : localizedGuide?.title ?? translate(article.title))}</h2>
+                <p>{localizedCard?.summary ?? (locale === "en-gb" ? article.summary : localizedGuide?.description ?? translate(article.summary))}</p>
                 <div className="article-foot"><span>{translate(article.read)}</span><b>{translate("Read article ↗")}</b></div>
               </Link>
             );

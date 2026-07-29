@@ -11,6 +11,7 @@ const guideSlugs = [
   "how-to-use-uufinds",
   "spreadsheet-vs-qc-finder",
 ];
+const englishOnlyGuideSlug = "uufinds-product-weight-vs-volumetric-weight";
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
 const count = (html, pattern) => (html.match(pattern) ?? []).length;
@@ -140,8 +141,38 @@ for (const locale of translatedLocales) {
   }
 }
 
+const englishOnlyGuide = await readPage(`guides/${englishOnlyGuideSlug}`);
+assert.match(englishOnlyGuide, /<h1>UUFinds Product Weight vs Volumetric Weight: A Practical Parcel Estimate<\/h1>/);
+assert.match(englishOnlyGuide, /<link rel="canonical" href="https:\/\/uufindssheet\.com\/guides\/uufinds-product-weight-vs-volumetric-weight\/"/);
+assert.doesNotMatch(englishOnlyGuide, /hrefLang="de"|hreflang="de"/i, "English-only article must not claim a German equivalent");
+assert.match(englishOnlyGuide, /"datePublished":"2026-07-29"/);
+assert.match(englishOnlyGuide, /"dateModified":"2026-07-29"/);
+assert.match(englishOnlyGuide, /"@type":"Article"/);
+assert.match(englishOnlyGuide, /"@type":"BreadcrumbList"/);
+assert.match(englishOnlyGuide, /class="evidence-ledger"/);
+assert.match(englishOnlyGuide, /class="guide-table-wrap"/);
+assert.match(englishOnlyGuide, /href="\/guides\/uufinds-qc-checklist\/"/);
+assert.match(englishOnlyGuide, /href="\/guides\/uufinds-spreadsheet-shopping-guide-2026\/"/);
+const wordCountMatch = englishOnlyGuide.match(/data-visible-word-count="(\d+)"/);
+assert.ok(wordCountMatch, "English-only article must expose its validated visible word count");
+const visibleWordCount = Number(wordCountMatch[1]);
+assert.ok(visibleWordCount >= 1200 && visibleWordCount <= 1800, `English-only article word count must be 1,200–1,800, received ${visibleWordCount}`);
+assert.match(englishOnlyGuide, new RegExp(`"wordCount":${visibleWordCount}`));
+await assert.rejects(readPage(`de/guides/${englishOnlyGuideSlug}`), "English-only article must not generate a fake German page");
+await assert.rejects(readPage(`pl/guides/${englishOnlyGuideSlug}`), "English-only article must not generate a fake Polish page");
+await assert.rejects(readPage(`pt-br/guides/${englishOnlyGuideSlug}`), "English-only article must not generate a fake Portuguese page");
+
+const articleIndex = await readPage("articles");
+assert.match(articleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`));
+for (const locale of locales) {
+  const localizedArticleIndex = await readPage(`${locale}/articles`);
+  assert.match(localizedArticleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`), `${locale} article index must route the English-only card to its canonical page`);
+}
+
 const sitemap = await readFile(join(root.pathname, "sitemap.xml"), "utf8");
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/de\/about\//);
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/pt-br\/terms\//);
+assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnlyGuideSlug}/`));
+assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
 
 console.log("Validated multilingual content parity, layout, image markup, route-preserving language links, trust pages, and sitemap.");

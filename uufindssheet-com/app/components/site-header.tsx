@@ -38,10 +38,12 @@ export function SiteHeader({
   locale = "EN",
   labels = defaultLabels,
   routePath = "",
+  englishOnly = false,
 }: {
   locale?: string;
   labels?: HeaderLabels;
   routePath?: string;
+  englishOnly?: boolean;
 }) {
   const language = locale === "UK" ? "en-gb" : locale === "DE" ? "de" : locale === "PL" ? "pl" : locale === "BR" ? "pt-br" : "en";
   const current = languageOptions.find((option) => option.language === language) || languageOptions[0];
@@ -95,18 +97,25 @@ export function SiteHeader({
           </summary>
           <div className="language-panel">
             <p>{currentLabels.language}</p>
-            {languageOptions.map((option) => (
-              <Link
-                href={languageHref(option)}
-                hrefLang={option.hrefLang}
-                lang={option.hrefLang}
-                aria-current={option.language === language ? "page" : undefined}
-                key={option.code}
-              >
-                <b>{option.code}</b>
-                <span>{option.label}</span>
-              </Link>
-            ))}
+            {englishOnly ? (
+              <>
+                <Link href={routePath} hrefLang="en-US" lang="en-US" aria-current="page">
+                  <b>US</b><span>English (article language)</span>
+                </Link>
+                <p className="language-availability-note">This article is currently published in English only. Other site pages remain available in every listed language.</p>
+              </>
+            ) : languageOptions.map((option) => (
+                <Link
+                  href={languageHref(option)}
+                  hrefLang={option.hrefLang}
+                  lang={option.hrefLang}
+                  aria-current={option.language === language ? "page" : undefined}
+                  key={option.code}
+                >
+                  <b>{option.code}</b>
+                  <span>{option.label}</span>
+                </Link>
+              ))}
           </div>
         </details>
         <a className="seo-guide-button" href="https://www.cnbuycha.com/" target="_blank" rel="noreferrer">

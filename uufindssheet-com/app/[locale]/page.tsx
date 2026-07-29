@@ -131,7 +131,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function LocalizedHome({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const content = localized[locale as Locale];
+  const currentLocale = locale as Locale;
+  const content = localized[currentLocale];
   if (!content) notFound();
 
   return (
@@ -239,14 +240,17 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           <p>{content.articleText}</p>
         </div>
         <div className="article-grid">
-          {articleCards.map((article, index) => (
-            <Link href={`/${locale}${article.href}`} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
-              <div className="article-meta"><span>{index === 0 ? content.articleLabel : article.tag}</span><b>0{index + 1}</b></div>
-              <h3>{index === 0 ? content.articleTitle : article.title}</h3>
-              <p>{index === 0 ? content.articleText : article.summary}</p>
-              <div className="article-foot"><span>{article.read}</span><b>{content.articleButton}</b></div>
-            </Link>
-          ))}
+          {articleCards.map((article, index) => {
+            const localizedCard = article.localized?.[currentLocale];
+            return (
+              <Link href={article.englishOnly ? article.href : `/${locale}${article.href}`} hrefLang={article.englishOnly ? "en-US" : undefined} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+                <div className="article-meta"><span>{localizedCard?.tag ?? (index === 0 ? content.articleLabel : article.tag)}</span><b>0{index + 1}</b></div>
+                <h3>{localizedCard?.title ?? (index === 0 ? content.articleTitle : article.title)}</h3>
+                <p>{localizedCard?.summary ?? (index === 0 ? content.articleText : article.summary)}</p>
+                <div className="article-foot"><span>{article.read}</span><b>{content.articleButton}</b></div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
