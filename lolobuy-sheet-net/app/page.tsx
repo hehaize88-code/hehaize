@@ -477,4 +477,156 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
                 </p>
               </div>
             </div>
-            <p clas
+            <p className="fact-note">
+              QC photos reduce uncertainty, but they do not guarantee fit,
+              material composition, authenticity or long-term performance.
+            </p>
+          </div>
+        </section>
+
+        <section className="section-shell shipping-section" id="shipping">
+          <div className="shipping-copy">
+            <p className="eyebrow">Shipping without guesswork</p>
+            <h2>Plan the parcel before you pay international freight</h2>
+            <p>
+              LoloBuy&apos;s public homepage says warehouse products can be
+              selected and submitted as one parcel, and describes global
+              shipping. The final choice still depends on destination, route
+              limits, actual weight, parcel dimensions and packing.
+            </p>
+            <Link className="text-link" href="/shipping">
+              Read the complete shipping guide <ArrowIcon />
+            </Link>
+          </div>
+          <div className="shipping-grid">
+            <article>
+              <span>WEIGHT</span>
+              <h3>Actual vs. volumetric</h3>
+              <p>
+                Bulky, light goods may be billed by volume on routes that use
+                dimensional weight. Packaging can therefore matter as much as
+                the scale reading.
+              </p>
+            </article>
+            <article>
+              <span>ROUTE</span>
+              <h3>Limits differ</h3>
+              <p>
+                Each route can have its own destination, weight and item
+                restrictions. An unavailable route is a planning constraint,
+                not a checkout error to ignore.
+              </p>
+            </article>
+            <article>
+              <span>PARCEL</span>
+              <h3>Consolidate carefully</h3>
+              <p>
+                Combining warehouse items can reduce repeated base charges, but
+                a very large or mixed parcel may narrow the routes available to
+                you.
+              </p>
+            </article>
+            <article>
+              <span>STORAGE</span>
+              <h3>Use the warehouse window</h3>
+              <p>
+                The public page states 90 days of free storage. Review arrivals
+                promptly, resolve QC questions and leave time to compare parcel
+                options.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className="section-shell learn-section" id="learn">
+          <div className="section-heading compact">
+            <div>
+              <p className="eyebrow">Decision-first reading</p>
+              <h2>What to check before ordering</h2>
+            </div>
+            <p>
+              Useful product research should change what you check—not merely
+              repeat the phrase “LoloBuy spreadsheet.”
+            </p>
+          </div>
+          <div className="learn-grid">
+            <article>
+              <span className="article-type">BUYING BASICS · 6 MIN</span>
+              <h3>Why the listing variant matters more than the thumbnail</h3>
+              <p>
+                Marketplace pages can group many colors, batches or versions
+                under one image. Confirm the exact selected option and preserve
+                any useful note for the purchasing agent.
+              </p>
+              <Link href="/how-it-works">
+                Read the buying flow <ArrowIcon />
+              </Link>
+            </article>
+            <article>
+              <span className="article-type">QC NOTES · 7 MIN</span>
+              <h3>A repeatable warehouse-photo checklist</h3>
+              <p>
+                Start with identity and variant, then move to visible condition,
+                labels, symmetry and the specific details that matter for that
+                product type.
+              </p>
+              <Link href="/qc-guide">
+                Use the QC checklist <ArrowIcon />
+              </Link>
+            </article>
+            <article>
+              <span className="article-type">SHIPPING · 8 MIN</span>
+              <h3>How parcel dimensions can change the route decision</h3>
+              <p>
+                Estimate with realistic dimensions, understand chargeable
+                weight and compare route restrictions before adding packaging
+                services.
+              </p>
+              <Link href="/shipping">
+                Review parcel planning <ArrowIcon />
+              </Link>
+            </article>
+          </div>
+          <div className="section-cta">
+            <Link className="button button-secondary" href="/articles">
+              View all SEO articles <span aria-hidden="true">→</span>
+            </Link>
+            <p>
+              Each guide focuses on a specific decision: product selection,
+              warehouse-photo review or parcel planning.
+            </p>
+          </div>
+        </section>
+
+        <section className="section-shell faq-section">
+          <div className="faq-title">
+            <p className="eyebrow">Clear answers</p>
+            <h2>LoloBuy spreadsheet FAQ</h2>
+            <p>
+              Short answers to the questions that matter before you leave the
+              product-discovery stage.
+            </p>
+          </div>
+          <div className="faq-list">
+            {faqItems.slice(0, 5).map((item, index) => (
+              <details key={item.question} open={index === 0}>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+            <Link className="faq-more" href="/faq">
+              Open the complete FAQ <ArrowIcon />
+            </Link>
+          </div>
+        </section>
+      </main>
+
+      <SiteFooter locale={locale} />
+    </>,
+    locale,
+  );
+}
+
+export default function Home() {
+  return <HomePage />;
+}
