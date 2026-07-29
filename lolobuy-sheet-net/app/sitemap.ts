@@ -1,30 +1,44 @@
 import type { MetadataRoute } from "next";
 import { articles } from "./article-data";
+import contentDates from "./content-dates.json";
+import {
+  absoluteUrl,
+  corePaths,
+  languageAlternates,
+  localizedLocales,
+  localizedPath,
+  type CorePath,
+} from "./i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = [
-    { path: "/", priority: 1 },
-    { path: "/products", priority: 0.9 },
-    { path: "/categories", priority: 0.85 },
-    { path: "/qc-guide", priority: 0.85 },
-    { path: "/shipping", priority: 0.85 },
-    { path: "/articles", priority: 0.85 },
-    { path: "/faq", priority: 0.85 },
-    { path: "/how-it-works", priority: 0.8 },
-  ];
+  const locales = ["en", ...localizedLocales] as const;
+  const coreDates = contentDates.core as Record<
+    CorePath,
+    Record<(typeof locales)[number], string>
+  >;
+  const articleDates = contentDates.articles as Record<
+    string,
+    { published: string; modified: string }
+  >;
+  const trustDates = contentDates.trust as Record<string, string>;
 
   return [
-    ...pages.map((page) => ({
-      url: `https://lolobuy-sheet.net${page.path}`,
-      lastModified: new Date("2026-07-28"),
-      changeFrequency: "weekly" as const,
-      priority: page.priority,
-    })),
+    ...corePaths.flatMap((path) =>
+      locales.map((locale) => ({
+        url: absoluteUrl(localizedPath(locale, path)),
+        lastModified: coreDates[path][locale],
+        alternates: {
+          languages: languageAlternates(path),
+        },
+      })),
+    ),
     ...articles.map((article) => ({
-      url: `https://lolobuy-sheet.net/articles/${article.slug}`,
-      lastModified: new Date("2026-07-28"),
-      changeFrequency: "monthly" as const,
-      priority: 0.82,
+      url: absoluteUrl(`/articles/${article.slug}`),
+      lastModified: articleDates[article.slug].modified,
+    })),
+    ...Object.entries(trustDates).map(([path, lastModified]) => ({
+      url: absoluteUrl(path),
+      lastModified,
     })),
   ];
 }

@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     siteName: "LoloBuy Sheet",
     images: [
       {
-        url: "/products/3359.webp",
-        width: 900,
-        height: 900,
-        alt: "Product find featured on LoloBuy Sheet",
+        url: "/social/spreadsheet-guide.png",
+        width: 1200,
+        height: 630,
+        alt: "LoloBuy Sheet product discovery, checking and parcel-planning flow",
       },
     ],
   },
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "LoloBuy Spreadsheet 2026",
     description:
       "Product finds with matched images and destination pages, plus practical QC and shipping context.",
-    images: ["/products/3359.webp"],
+    images: ["/social/spreadsheet-guide.png"],
   },
   robots: {
     index: true,

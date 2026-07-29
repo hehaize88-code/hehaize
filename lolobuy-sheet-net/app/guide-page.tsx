@@ -9,6 +9,12 @@ import {
   type NavigationKey,
 } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
+import { localizeReactNode } from "./i18n";
+import {
+  guideDepthCopy,
+  type SectionCopy,
+} from "./guide-depth-copy";
+import type { Locale } from "./translations";
 
 type PageKind = NavigationKey | "how-it-works" | "learn";
 
@@ -75,8 +81,8 @@ function SearchIcon() {
   );
 }
 
-function CatalogSearch() {
-  return (
+function CatalogSearch({ locale }: { locale: Locale }) {
+  return localizeReactNode(
     <form
       className="product-search subpage-search"
       action={`${catalogBase}/search.html`}
@@ -97,12 +103,19 @@ function CatalogSearch() {
       <button type="submit" aria-label="Search the main product catalog">
         <SearchIcon />
       </button>
-    </form>
+    </form>,
+    locale,
   );
 }
 
-function ProductGrid({ limit = products.length }: { limit?: number }) {
-  return (
+function ProductGrid({
+  limit = products.length,
+  locale,
+}: {
+  limit?: number;
+  locale: Locale;
+}) {
+  return localizeReactNode(
     <div className="product-grid">
       {products.slice(0, limit).map((product, index) => (
         <article className="product-card" key={product.id}>
@@ -140,7 +153,8 @@ function ProductGrid({ limit = products.length }: { limit?: number }) {
           </div>
         </article>
       ))}
-    </div>
+    </div>,
+    locale,
   );
 }
 
@@ -162,8 +176,48 @@ function InfoCard({
   );
 }
 
-function ProductsPage() {
+function DetailedCardSection({
+  copy,
+  ariaLabel,
+}: {
+  copy: SectionCopy;
+  ariaLabel: string;
+}) {
   return (
+    <>
+      <section className="section-shell depth-section-heading">
+        <div>
+          <p className="eyebrow">{copy.eyebrow}</p>
+          <h2>{copy.title}</h2>
+        </div>
+        <p>{copy.intro}</p>
+      </section>
+      <section className="subpage-card-grid" aria-label={ariaLabel}>
+        {copy.cards.map((card, index) => (
+          <InfoCard
+            key={card.title}
+            number={String(index + 1).padStart(2, "0")}
+            title={card.title}
+          >
+            <p>{card.body}</p>
+            {card.bullets && (
+              <ul>
+                {card.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            )}
+          </InfoCard>
+        ))}
+      </section>
+    </>
+  );
+}
+
+function ProductsPage({ locale }: { locale: Locale }) {
+  const depth = guideDepthCopy[locale].products;
+
+  return localizeReactNode(
     <>
       <section className="subpage-search-band">
         <div>
@@ -175,8 +229,12 @@ function ProductsPage() {
             generic all-products landing page.
           </p>
         </div>
-        <CatalogSearch />
+        <CatalogSearch locale={locale} />
       </section>
+      <DetailedCardSection
+        copy={depth}
+        ariaLabel="Product filtering and verification method"
+      />
       <section className="section-shell subpage-section">
         <div className="section-heading compact">
           <div>
@@ -188,7 +246,7 @@ function ProductsPage() {
             and links to its exact main-site detail page.
           </p>
         </div>
-        <ProductGrid />
+        <ProductGrid locale={locale} />
         <div className="section-cta">
           <a
             className="button button-primary"
@@ -201,12 +259,15 @@ function ProductsPage() {
           <p>Recheck availability, size, color and seller details before use.</p>
         </div>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function CategoriesPage() {
-  return (
+function CategoriesPage({ locale }: { locale: Locale }) {
+  const depth = guideDepthCopy[locale].categories;
+
+  return localizeReactNode(
     <>
       <section className="section-shell subpage-section">
         <div className="category-grid">
@@ -227,6 +288,28 @@ function CategoriesPage() {
           ))}
         </div>
       </section>
+      <DetailedCardSection
+        copy={depth}
+        ariaLabel="Category-specific product checks"
+      />
+      <section className="section-shell decision-section">
+        <div className="section-heading compact">
+          <div>
+            <p className="eyebrow">{depth.decisionEyebrow}</p>
+            <h2>{depth.decisionTitle}</h2>
+          </div>
+          <p>{depth.decisionIntro}</p>
+        </div>
+        <div className="decision-grid">
+          {depth.decisions.map((decision) => (
+            <article key={decision.title}>
+              <span>CHECK</span>
+              <h3>{decision.title}</h3>
+              <p>{decision.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
       <section className="section-shell subpage-section">
         <div className="section-heading compact">
           <div>
@@ -238,14 +321,17 @@ function CategoriesPage() {
             versions. Open the exact item page before deciding.
           </p>
         </div>
-        <ProductGrid limit={8} />
+        <ProductGrid limit={8} locale={locale} />
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function QcPage() {
-  return (
+function QcPage({ locale }: { locale: Locale }) {
+  const depth = guideDepthCopy[locale].qc;
+
+  return localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -366,6 +452,11 @@ function QcPage() {
         </div>
       </section>
 
+      <DetailedCardSection
+        copy={depth}
+        ariaLabel="Product-specific warehouse photo checks"
+      />
+
       <section className="section-shell subpage-note">
         <p className="eyebrow">1,200–1,800 word editorial guide</p>
         <h2>Read the complete LoloBuy QC photo workflow</h2>
@@ -381,12 +472,15 @@ function QcPage() {
           Read the full QC guide <span aria-hidden="true">→</span>
         </Link>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function ShippingPage() {
-  return (
+function ShippingPage({ locale }: { locale: Locale }) {
+  const depth = guideDepthCopy[locale].shipping;
+
+  return localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -509,6 +603,11 @@ function ShippingPage() {
         </div>
       </section>
 
+      <DetailedCardSection
+        copy={depth}
+        ariaLabel="Shipping route comparison record"
+      />
+
       <section className="section-shell subpage-note">
         <p className="eyebrow">1,200–1,800 word editorial guide</p>
         <h2>Read the complete LoloBuy shipping cost guide</h2>
@@ -524,12 +623,16 @@ function ShippingPage() {
           Read the full shipping guide <span aria-hidden="true">→</span>
         </Link>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function ArticlesPage() {
-  return (
+function ArticlesPage({ locale }: { locale: Locale }) {
+  const articleSummaries = guideDepthCopy[locale].articleSummaries;
+  const depth = guideDepthCopy[locale].articles;
+
+  return localizeReactNode(
     <>
       <section className="section-shell reading-order">
         <div>
@@ -561,6 +664,11 @@ function ArticlesPage() {
         </ol>
       </section>
 
+      <DetailedCardSection
+        copy={depth}
+        ariaLabel="Guide selection by buying stage"
+      />
+
       <section className="section-shell article-index" aria-label="Buying guides">
         {articles.map((article, index) => (
           <article key={article.slug}>
@@ -579,7 +687,7 @@ function ArticlesPage() {
               <h2>
                 <Link href={`/articles/${article.slug}`}>{article.title}</Link>
               </h2>
-              <p>{article.description}</p>
+              <p>{articleSummaries[article.slug]}</p>
               <dl>
                 <div>
                   <dt>Primary topic</dt>
@@ -631,17 +739,32 @@ function ArticlesPage() {
           </li>
         </ul>
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function LearnPage() {
-  return <ArticlesPage />;
+function LearnPage({ locale }: { locale: Locale }) {
+  return <ArticlesPage locale={locale} />;
 }
 
-function FaqPage() {
-  return (
+function FaqPage({ locale }: { locale: Locale }) {
+  const depth = guideDepthCopy[locale].faq;
+
+  return localizeReactNode(
     <>
+      <section className="section-shell research-fact-band">
+        <div>
+          <p className="eyebrow">{depth.eyebrow}</p>
+          <h2>{depth.title}</h2>
+        </div>
+        <div className="research-facts">
+          <p>{depth.intro}</p>
+          {depth.points.map((point) => (
+            <p key={point}>{point}</p>
+          ))}
+        </div>
+      </section>
       <section className="section-shell faq-section faq-page-section">
         <div className="faq-title">
           <p className="eyebrow">Fact-checked practical answers</p>
@@ -664,68 +787,82 @@ function FaqPage() {
       <section className="section-shell subpage-note">
         <p className="eyebrow">Still looking for an item?</p>
         <h2>Search the main catalog with the exact product term</h2>
-        <CatalogSearch />
+        <CatalogSearch locale={locale} />
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-function HowItWorksPage() {
-  return (
+function HowItWorksPage({ locale }: { locale: Locale }) {
+  const copy = guideDepthCopy[locale].how;
+
+  return localizeReactNode(
     <>
+      <section className="section-shell research-fact-band">
+        <div>
+          <p className="eyebrow">{copy.factEyebrow}</p>
+          <h2>{copy.factTitle}</h2>
+        </div>
+        <div className="research-facts">
+          {copy.facts.map((fact) => (
+            <p key={fact}>{fact}</p>
+          ))}
+        </div>
+      </section>
       <section className="section-shell subpage-section" id="buying-flow">
         <ol className="steps-grid">
-          <li>
-            <span>01</span>
-            <h2>Find the matching item</h2>
-            <p>
-              Search by keyword, choose a category or open a product card whose
-              image and main-site detail page are already paired.
-            </p>
-          </li>
-          <li>
-            <span>02</span>
-            <h2>Review the listing</h2>
-            <p>
-              Confirm the seller page, selected option, price, size, color and
-              domestic delivery details before submitting anything.
-            </p>
-          </li>
-          <li>
-            <span>03</span>
-            <h2>Preserve the source</h2>
-            <p>
-              Keep the original marketplace address and any useful variant
-              notes so the requested item remains unambiguous.
-            </p>
-          </li>
-          <li>
-            <span>04</span>
-            <h2>Inspect before shipping</h2>
-            <p>
-              Compare the warehouse photos with the order record and only plan
-              the parcel after checking visible condition and route needs.
-            </p>
-          </li>
+          {copy.steps.map((step, index) => (
+            <li key={step.title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h2>{step.title}</h2>
+              <p>{step.body}</p>
+            </li>
+          ))}
         </ol>
+      </section>
+      <section className="section-shell depth-section-heading">
+        <div>
+          <p className="eyebrow">{copy.errorEyebrow}</p>
+          <h2>{copy.errorTitle}</h2>
+        </div>
+        <p>{copy.errorIntro}</p>
+      </section>
+      <section className="subpage-card-grid" aria-label="Common ordering errors">
+        {copy.errors.map((error, index) => (
+          <InfoCard
+            key={error.title}
+            number={String(index + 1).padStart(2, "0")}
+            title={error.title}
+          >
+            <p>{error.body}</p>
+          </InfoCard>
+        ))}
       </section>
       <section className="section-shell subpage-note">
         <p className="eyebrow">Start here</p>
         <h2>Use the exact keyword you already have in mind</h2>
-        <CatalogSearch />
+        <CatalogSearch locale={locale} />
       </section>
-    </>
+    </>,
+    locale,
   );
 }
 
-export function GuidePage({ kind }: { kind: PageKind }) {
+export function GuidePage({
+  kind,
+  locale = "en",
+}: {
+  kind: PageKind;
+  locale?: Locale;
+}) {
   const intro = pageIntro[kind];
   const active =
     kind === "how-it-works" || kind === "learn" ? undefined : kind;
 
-  return (
+  return localizeReactNode(
     <>
-      <SiteHeader active={active} />
+      <SiteHeader active={active} locale={locale} />
       <main className="subpage-main">
         <section className="subpage-hero">
           <div>
@@ -737,16 +874,17 @@ export function GuidePage({ kind }: { kind: PageKind }) {
             <p>{intro.intro}</p>
           </div>
         </section>
-        {kind === "products" && <ProductsPage />}
-        {kind === "categories" && <CategoriesPage />}
-        {kind === "qc-guide" && <QcPage />}
-        {kind === "shipping" && <ShippingPage />}
-        {kind === "learn" && <LearnPage />}
-        {kind === "articles" && <ArticlesPage />}
-        {kind === "faq" && <FaqPage />}
-        {kind === "how-it-works" && <HowItWorksPage />}
+        {kind === "products" && <ProductsPage locale={locale} />}
+        {kind === "categories" && <CategoriesPage locale={locale} />}
+        {kind === "qc-guide" && <QcPage locale={locale} />}
+        {kind === "shipping" && <ShippingPage locale={locale} />}
+        {kind === "learn" && <LearnPage locale={locale} />}
+        {kind === "articles" && <ArticlesPage locale={locale} />}
+        {kind === "faq" && <FaqPage locale={locale} />}
+        {kind === "how-it-works" && <HowItWorksPage locale={locale} />}
       </main>
-      <SiteFooter />
-    </>
+      <SiteFooter locale={locale} />
+    </>,
+    locale,
   );
 }

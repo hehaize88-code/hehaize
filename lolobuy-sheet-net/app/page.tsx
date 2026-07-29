@@ -1,34 +1,17 @@
 import Link from "next/link";
 import { catalogBase, categories, faqItems, products } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
+import {
+  absoluteUrl,
+  localizeReactNode,
+  localizedPath,
+  translate,
+} from "./i18n";
+import { seoCopy } from "./seo";
+import type { Locale } from "./translations";
+import { coreMetadata } from "./seo";
 
-const productListJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "LoloBuy spreadsheet product finds",
-  numberOfItems: products.length,
-  itemListElement: products.map((product, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    name: product.name,
-    image: `https://lolobuy-sheet.net${product.image}`,
-    url: product.url,
-  })),
-};
-
-const websiteJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "LoloBuy Sheet",
-  url: "https://lolobuy-sheet.net/",
-  description:
-    "An independent LoloBuy spreadsheet, product-finding directory, QC guide and shipping explainer.",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${catalogBase}/search.html?keywords={search_term_string}&channelid=2`,
-    "query-input": "required name=search_term_string",
-  },
-};
+export const metadata = coreMetadata("en", "/");
 
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
@@ -51,10 +34,40 @@ function CheckIcon() {
   );
 }
 
-export default function Home() {
+export function HomePage({ locale = "en" }: { locale?: Locale }) {
   const featured = products.slice(0, 4);
+  const homeUrl = absoluteUrl(localizedPath(locale, "/"));
+  const homeSeo = seoCopy(locale, "/");
+  const productListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: translate(locale, "LoloBuy spreadsheet product finds"),
+    inLanguage: locale,
+    url: homeUrl,
+    numberOfItems: products.length,
+    itemListElement: products.map((product, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: translate(locale, product.name),
+      image: `https://lolobuy-sheet.net${product.image}`,
+      url: product.url,
+    })),
+  };
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "LoloBuy Sheet",
+    url: homeUrl,
+    inLanguage: locale,
+    description: homeSeo.description,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${catalogBase}/search.html?keywords={search_term_string}&channelid=2`,
+      "query-input": "required name=search_term_string",
+    },
+  };
 
-  return (
+  return localizeReactNode(
     <>
       <script
         type="application/ld+json"
@@ -65,7 +78,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productListJsonLd) }}
       />
 
-      <SiteHeader />
+      <SiteHeader locale={locale} />
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
@@ -210,7 +223,7 @@ export default function Home() {
             <div className="status-panel">
               <p>PRODUCT SOURCE</p>
               <strong>Image and page paired</strong>
-              <span>Checked 27 Jul 2026</span>
+              <span>Checked 29 Jul 2026</span>
             </div>
             <div className="status-panel">
               <p>BEFORE ORDERING</p>
@@ -243,7 +256,7 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Current catalog sample</p>
-              <h2>Real products, correctly paired</h2>
+              <h2>Catalog entries, correctly paired</h2>
             </div>
             <p>
               Every card below uses the first product image from its matching
@@ -251,6 +264,14 @@ export default function Home() {
               exact product—not a generic category or duplicated link.
             </p>
           </div>
+          <p className="catalog-rights-note">
+            Neutral titles describe the visible item only. Third-party marks in
+            source images belong to their owners and do not imply endorsement,
+            authorization or authenticity.{" "}
+            <Link href="/independent-disclosure">
+              Read the independent disclosure.
+            </Link>
+          </p>
 
           <div className="product-grid">
             {products.map((product, index) => (
@@ -600,7 +621,12 @@ export default function Home() {
         </section>
       </main>
 
-      <SiteFooter />
-    </>
+      <SiteFooter locale={locale} />
+    </>,
+    locale,
   );
+}
+
+export default function Home() {
+  return <HomePage />;
 }

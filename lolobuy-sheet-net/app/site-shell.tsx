@@ -5,19 +5,27 @@ import {
   primaryNavigation,
   type NavigationKey,
 } from "./site-data";
+import { localizeReactNode } from "./i18n";
+import type { Locale } from "./translations";
 
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
 }
 
-export function SiteHeader({ active }: { active?: NavigationKey }) {
-  return (
+export function SiteHeader({
+  active,
+  locale = "en",
+}: {
+  active?: NavigationKey;
+  locale?: Locale;
+}) {
+  return localizeReactNode(
     <header className="site-header">
       <Link className="brand" href="/" aria-label="LoloBuy Sheet home">
         <img
           className="brand-logo"
           src="/lolobuy.png"
-          alt="LoloBuy"
+          alt="LoloBuy Sheet"
           width="128"
           height="30"
         />
@@ -34,7 +42,7 @@ export function SiteHeader({ active }: { active?: NavigationKey }) {
         ))}
       </nav>
       <div className="header-tools">
-        <LanguageModule />
+        <LanguageModule locale={locale} />
         <a
           className="header-find"
           href={`${catalogBase}/AllProducts/`}
@@ -44,19 +52,20 @@ export function SiteHeader({ active }: { active?: NavigationKey }) {
           Browse finds <ArrowIcon />
         </a>
       </div>
-    </header>
+    </header>,
+    locale,
   );
 }
 
-export function SiteFooter() {
-  return (
+export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
+  return localizeReactNode(
     <footer>
       <div className="footer-brand">
         <Link className="brand" href="/" aria-label="LoloBuy Sheet home">
           <img
             className="brand-logo"
             src="/lolobuy.png"
-            alt="LoloBuy"
+            alt="LoloBuy Sheet"
             width="128"
             height="30"
           />
@@ -79,14 +88,30 @@ export function SiteFooter() {
         <Link href="/shipping">Shipping</Link>
         <Link href="/articles">SEO Articles</Link>
       </div>
+      <div>
+        <p className="footer-label">EDITORIAL</p>
+        <Link href="/about">About</Link>
+        <Link href="/editorial-policy">Editorial policy</Link>
+        <Link href="/research-method">Research method</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
+      <div>
+        <p className="footer-label">LEGAL</p>
+        <Link href="/privacy-policy">Privacy policy</Link>
+        <Link href="/terms">Terms of use</Link>
+        <Link href="/independent-disclosure">Independent disclosure</Link>
+      </div>
       <p className="footer-disclaimer">
-        This is an independent informational website and is not LoloBuy or an
-        official LoloBuy service. Product information can change. Always review
-        the current item page and applicable platform terms before ordering.
+        This independent publication is not LoloBuy and is not endorsed by
+        LoloBuy or any product brand. Product, category and search links promote
+        the associated catalog at cnbuycha.com, so the operator may benefit
+        commercially from visits or purchases. Verify every live listing before
+        ordering.
       </p>
       <p className="copyright">
-        © 2026 LoloBuy Sheet · Catalog reviewed 27 July 2026
+        © 2026 LoloBuy Sheet · Catalog reviewed 29 July 2026
       </p>
-    </footer>
+    </footer>,
+    locale,
   );
 }

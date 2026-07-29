@@ -6,10 +6,12 @@ project_root="$(cd "${script_dir}/.." && pwd)"
 
 cd "${project_root}"
 npm run build
+node scripts/generate-static-sitemap.mjs
 
 pages_output="${project_root}/dist/client"
 worker_source="${project_root}/dist/server"
 pages_worker_entry="${script_dir}/pages-worker-entry.mjs"
+pages_headers="${script_dir}/pages-headers.txt"
 asset_version="v20260728-1"
 versioned_assets="${pages_output}/assets/${asset_version}"
 esbuild="${project_root}/node_modules/.bin/esbuild"
@@ -25,11 +27,12 @@ process_shim="${script_dir}/pages-process-shim.mjs"
   echo "Missing esbuild required to bundle the Pages Worker" >&2
   exit 69
 }
-[[ -f "${pages_worker_entry}" && -f "${async_hooks_polyfill}" && -f "${empty_module}" && -f "${process_shim}" ]] || {
+[[ -f "${pages_worker_entry}" && -f "${pages_headers}" && -f "${async_hooks_polyfill}" && -f "${empty_module}" && -f "${process_shim}" ]] || {
   echo "Missing Worker-compatible Node.js polyfills" >&2
   exit 69
 }
 
+cp "${pages_headers}" "${pages_output}/_headers"
 mkdir -p "${versioned_assets}"
 find "${pages_output}/assets" -maxdepth 1 -type f -exec cp {} "${versioned_assets}/" \;
 
@@ -92,7 +95,7 @@ if (
 }
 
 const homeResponse = await worker.default.fetch(
-  new Request("https://example.com/"),
+  new Request("https://example.com/es"),
   {
     ASSETS: {
       fetch() {
@@ -106,9 +109,11 @@ const homeBody = await homeResponse.text();
 if (
   homeResponse.status !== 200 ||
   !homeBody.includes(`/assets/${assetVersion}/`) ||
-  /(?:src|href)="\/assets\/(?!v)/.test(homeBody)
+  /(?:src|href)="\/assets\/(?!v)/.test(homeBody) ||
+  !homeBody.includes('lang="es"') ||
+  !/hreflang/i.test(homeBody)
 ) {
-  throw new Error("Application responses must use the versioned Pages asset path");
+  throw new Error("Localized application responses must retain versioned assets and SEO language signals");
 }
 NODE
 

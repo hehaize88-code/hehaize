@@ -1,12 +1,7 @@
-import type { Metadata } from "next";
 import { GuidePage } from "../guide-page";
+import { coreMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "LoloBuy Product Categories",
-  description:
-    "Browse shoes, hoodies, jackets and accessories through focused main-catalog category links.",
-  alternates: { canonical: "/categories" },
-};
+export const metadata = coreMetadata("en", "/categories");
 
 export default function CategoriesPage() {
   return <GuidePage kind="categories" />;

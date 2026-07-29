@@ -22,16 +22,23 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
     headline: article.title,
     description: article.description,
     image: `https://lolobuy-sheet.net${article.image}`,
-    datePublished: "2026-07-28",
-    dateModified: "2026-07-28",
+    datePublished: article.publishedDate,
+    dateModified: article.modifiedDate,
     inLanguage: "en",
     wordCount,
     mainEntityOfPage: canonical,
     author: {
       "@type": "Organization",
       name: "LoloBuy Sheet Editorial",
-      url: "https://lolobuy-sheet.net/",
+      url: "https://lolobuy-sheet.net/about",
     },
+    editor: {
+      "@type": "Organization",
+      name: "LoloBuy Sheet Editorial",
+      url: "https://lolobuy-sheet.net/about",
+    },
+    publishingPrinciples:
+      "https://lolobuy-sheet.net/editorial-policy",
     publisher: {
       "@type": "Organization",
       name: "LoloBuy Sheet",
@@ -91,6 +98,25 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
               <p className="eyebrow">{article.eyebrow}</p>
               <h1>{article.title}</h1>
               <p className="article-standfirst">{article.standfirst}</p>
+              <div className="article-byline">
+                <div>
+                  <p>
+                    Written by{" "}
+                    <Link href="/about">LoloBuy Sheet Editorial</Link>
+                  </p>
+                  <p>
+                    Fact-checked against public LoloBuy information
+                  </p>
+                  <p>Last reviewed: {article.checkedDate}</p>
+                </div>
+                <nav aria-label="Article editorial information">
+                  <Link href="/editorial-policy">Editorial policy</Link>
+                  <Link href="/research-method">
+                    Sources &amp; research method
+                  </Link>
+                  <Link href="/contact">Corrections</Link>
+                </nav>
+              </div>
               <dl className="article-meta">
                 <div>
                   <dt>Checked</dt>
@@ -138,8 +164,8 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
                 <img
                   src={article.image}
                   alt={article.imageAlt}
-                  width="1100"
-                  height="760"
+                  width="1200"
+                  height="630"
                 />
                 <figcaption>{article.imageCaption}</figcaption>
               </figure>

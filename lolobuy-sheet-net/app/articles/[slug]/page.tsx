@@ -18,29 +18,29 @@ export async function generateMetadata({
   if (!article) return {};
 
   return {
-    title: article.title,
+    title: { absolute: article.seoTitle },
     description: article.description,
     alternates: { canonical: `/articles/${article.slug}` },
     keywords: [article.primaryKeyword, ...article.secondaryKeywords],
     openGraph: {
-      title: article.title,
+      title: article.seoTitle,
       description: article.description,
       type: "article",
       url: `/articles/${article.slug}`,
-      publishedTime: "2026-07-28",
-      modifiedTime: "2026-07-28",
+      publishedTime: article.publishedDate,
+      modifiedTime: article.modifiedDate,
       images: [
         {
           url: article.image,
-          width: 900,
-          height: 900,
+          width: 1200,
+          height: 630,
           alt: article.imageAlt,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: article.shortTitle,
+      title: article.seoTitle,
       description: article.description,
       images: [article.image],
     },

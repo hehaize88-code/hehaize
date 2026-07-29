@@ -1,3 +1,5 @@
+import contentDates from "./content-dates.json";
+
 export type ArticleSection = {
   heading: string;
   paragraphs: string[];
@@ -8,6 +10,7 @@ export type ArticleSection = {
 export type ArticleRecord = {
   slug: string;
   title: string;
+  seoTitle: string;
   shortTitle: string;
   description: string;
   eyebrow: string;
@@ -15,6 +18,8 @@ export type ArticleRecord = {
   secondaryKeywords: string[];
   intent: string;
   checkedDate: string;
+  publishedDate: string;
+  modifiedDate: string;
   image: string;
   imageAlt: string;
   imageCaption: string;
@@ -29,6 +34,7 @@ export const articles: ArticleRecord[] = [
     slug: "how-to-use-lolobuy-spreadsheet",
     title:
       "How to Use a LoloBuy Spreadsheet Without Losing the Original Product Context",
+    seoTitle: "How to Use a LoloBuy Spreadsheet | 2026 Guide",
     shortTitle: "How to Use a LoloBuy Spreadsheet",
     description:
       "A practical LoloBuy spreadsheet guide covering source links, variants, seller notes, W2C terminology and the checks to make before ordering.",
@@ -42,11 +48,15 @@ export const articles: ArticleRecord[] = [
     ],
     intent: "Find products and understand what to verify before ordering",
     checkedDate: "28 July 2026",
-    image: "/products/3359.webp",
+    publishedDate:
+      contentDates.articles["how-to-use-lolobuy-spreadsheet"].published,
+    modifiedDate:
+      contentDates.articles["how-to-use-lolobuy-spreadsheet"].modified,
+    image: "/social/spreadsheet-guide.png",
     imageAlt:
-      "A product image used in the LoloBuy Sheet catalog as a discovery reference",
+      "Three-stage diagram for finding, checking and planning a product purchase",
     imageCaption:
-      "A matched catalog image is a starting point. The current product page, selected option and warehouse result still need separate checks.",
+      "Discovery is only the first stage. Preserve the source, check the selected option and plan the warehouse and parcel decisions separately.",
     standfirst:
       "A spreadsheet is useful because it shortens the search. It becomes risky when the thumbnail replaces the listing in your mind. The reliable way to use one is to preserve the source, define the exact variant and treat every later stage—ordering, warehouse inspection and shipping—as a separate decision.",
     takeaways: [
@@ -142,6 +152,7 @@ export const articles: ArticleRecord[] = [
   {
     slug: "lolobuy-qc-photos-guide",
     title: "LoloBuy QC Photos: A Warehouse Inspection Guide That Avoids Guesswork",
+    seoTitle: "LoloBuy QC Photos Guide: What to Check",
     shortTitle: "LoloBuy QC Photos Guide",
     description:
       "Learn how to review LoloBuy QC photos for identity, variants, measurements and visible condition, plus what warehouse pictures cannot prove.",
@@ -155,11 +166,13 @@ export const articles: ArticleRecord[] = [
     ],
     intent: "Review a warehouse arrival before parcel submission",
     checkedDate: "28 July 2026",
-    image: "/products/3368.webp",
+    publishedDate: contentDates.articles["lolobuy-qc-photos-guide"].published,
+    modifiedDate: contentDates.articles["lolobuy-qc-photos-guide"].modified,
+    image: "/social/qc-guide.png",
     imageAlt:
-      "Catalog image of a garment used to explain the difference between seller images and warehouse QC photos",
+      "Warehouse photo checklist covering item identity, variant, condition and measurements",
     imageCaption:
-      "A seller or catalog image describes the offer. Warehouse photos should be compared with the exact ordered option, not treated as a new advertisement.",
+      "Review QC in a fixed order: confirm identity and variant, inspect visible condition, then request only the measurements that affect the decision.",
     standfirst:
       "Good QC is not a hunt for microscopic flaws. It is a structured comparison between what was ordered and what arrived. Start with identity and variant, move to visible measurements and condition, then decide whether the photographs answer the few questions that could change your decision.",
     takeaways: [
@@ -276,6 +289,7 @@ export const articles: ArticleRecord[] = [
     slug: "lolobuy-shipping-cost-guide",
     title:
       "LoloBuy Shipping Cost Guide: Weight, Parcel Size, Routes and Consolidation",
+    seoTitle: "LoloBuy Shipping Cost Guide: Weight & Parcel Size",
     shortTitle: "LoloBuy Shipping Cost Guide",
     description:
       "Understand LoloBuy shipping cost variables, actual versus volumetric weight, consolidation, packaging, route restrictions and realistic parcel estimates.",
@@ -289,11 +303,15 @@ export const articles: ArticleRecord[] = [
     ],
     intent: "Estimate and plan an international parcel after warehouse arrival",
     checkedDate: "28 July 2026",
-    image: "/products/3372.webp",
+    publishedDate:
+      contentDates.articles["lolobuy-shipping-cost-guide"].published,
+    modifiedDate:
+      contentDates.articles["lolobuy-shipping-cost-guide"].modified,
+    image: "/social/shipping-guide.png",
     imageAlt:
-      "A product in the catalog used to illustrate how size and fragility can affect parcel planning",
+      "Parcel diagram comparing actual scale weight with volumetric weight",
     imageCaption:
-      "Two items with similar purchase prices can create very different parcels. Packed size, weight, restrictions and protection—not the product price—drive the shipping decision.",
+      "A route may compare scale weight with dimensional weight. Packed size, route rules and protection can matter as much as the item weight.",
     standfirst:
       "There is no honest single answer to “How much is LoloBuy shipping?” without a destination, packed weight, dimensions, product type and currently available route. The useful question is how to build an estimate, identify the variables that can move it and compare the final options after warehouse data exists.",
     takeaways: [
