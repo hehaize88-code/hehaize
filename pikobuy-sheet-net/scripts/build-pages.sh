@@ -55,8 +55,8 @@ node "${embedded_assets_generator}" "${pages_output}" "${asset_version}" "${embe
   echo "Missing Cloudflare Pages Worker entry: dist/client/_worker.js" >&2
   exit 66
 }
-[[ -f "${pages_output}/pikobuy-logo.png" ]] || {
-  echo "Missing PikoBuy Sheet logo in dist/client" >&2
+[[ -s "${project_root}/public/pikobuy-logo.base64" ]] || {
+  echo "Missing encoded PikoBuy Sheet logo source" >&2
   exit 66
 }
 compgen -G "${versioned_assets}/*.css" >/dev/null || {
