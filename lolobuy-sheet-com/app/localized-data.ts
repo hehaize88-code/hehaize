@@ -848,6 +848,195 @@ const weidianArticleText: Record<
   },
 };
 
+const qcMismatchArticleText: Record<
+  Exclude<Locale, "en">,
+  {
+    meta: ArticleMetaText;
+    body: LocalizedArticleBody;
+  }
+> = {
+  es: {
+    meta: {
+      title: "Qué hacer si el QC de Lolobuy no coincide: prepara las pruebas antes de pedir una devolución",
+      shortTitle: "Qué hacer si el QC de Lolobuy muestra una diferencia",
+      description: "Guía práctica para documentar una talla, color, artículo o defecto incorrectos en fotos QC de Lolobuy sin inventar reglas de devolución.",
+      eyebrow: "RESPUESTA A UN QC INCORRECTO",
+      readingTime: "15 min de lectura",
+      factCheckLine: "Verificado el 29 de julio de 2026 con la web pública de LoloBuy, su guía comunitaria identificada y un informe independiente de la fase de almacén.",
+    },
+    body: {
+      visual: {
+        eyebrow: "EL EXPEDIENTE DE LA DIFERENCIA",
+        title: "Convierte una duda en cuatro hechos comprobables.",
+        caption: "Una solicitud es más fácil de evaluar cuando conecta pedido, prueba de almacén, diferencia exacta y resultado solicitado.",
+        items: [
+          ["Pedido", "Ficha guardada, opción elegida, cantidad y referencia."],
+          ["Recibido", "Foto QC, etiqueta, medida o estado visible concreto."],
+          ["Diferencia", "Una frase objetiva que explica el conflicto."],
+          ["Acción solicitada", "Aclaración, prueba, cambio o devolución según el pedido actual."],
+        ],
+      },
+      sources: [
+        ["Web pública de LoloBuy — comprobada el 29 de julio de 2026", "Fuente primaria para pedido por enlace, inspección, fotos y 90 días de almacenamiento."],
+        ["Guía comunitaria LoloBuy identificada — comprobada el 29 de julio de 2026", "Contexto fechado sobre enlace, opciones y QC; no se trata como política."],
+        ["Informe preliminar independiente — comprobado el 29 de julio de 2026", "Un comprador dijo que se detectaron dos tallas distintas y se gestionó una devolución; incluía enlace de referido y no un paquete completo."],
+        ["Marco editorial de Lolobuy Sheet", "La tabla y el formato de mensaje son análisis independientes, no política de LoloBuy."],
+      ],
+      intro: [
+        "Abres las fotos de almacén y ves algo que no coincide: otra talla, un color dudoso, una pieza ausente o daño visible. La pregunta útil pasa a ser qué puedes demostrar con el pedido y las imágenes, y qué deberías solicitar después.",
+        "La web pública de LoloBuy confirma inspección y fotografías en almacén, pero no publica una ventana universal de devolución, plazo de reembolso, precio de fotos extra ni resultado garantizado. Esta guía se centra en conservar pruebas y redactar una solicitud verificable antes de que el artículo entre en el paquete internacional.",
+      ],
+      sections: [
+        { heading: "Guarda el pedido antes de que cambie la ficha", paragraphs: ["Conserva la página del vendedor, color, talla o versión, cantidad, imagen, número de pedido, nota y fecha. Una ficha puede editarse o desaparecer."], bullets: ["Ficha fuente", "Variante, talla, color y cantidad", "Referencia y fecha", "Texto original y explicación", "Imágenes o tabla decisivas"] },
+        { heading: "Describe la diferencia como un conflicto observable", paragraphs: ["«Pedí EU 42; la foto 3 muestra EU 41» compara dos hechos. «Se ve mal» es una opinión. Usa la misma estructura para color, modelo, cantidad, piezas y daños.", "Afirma solo lo que muestra la prueba. Si una marca puede ser sombra o polvo, pide una vista más clara en vez de llamarla daño permanente."] },
+        { heading: "Clasifica el problema según la prueba necesaria", paragraphs: ["Identidad cubre producto, talla, color, cantidad o pieza principal; medidas requieren regla y referencia; estado cubre roturas, manchas o herrajes; apariencia exige cautela por luz y ángulo.", "Las fotos no demuestran comodidad, composición, batería, impermeabilidad, duración o autenticidad. No conviertas una duda visual en una afirmación que la imagen no sostiene."] },
+        { heading: "Prepara un expediente breve", paragraphs: ["Coloca primero la referencia, luego opción guardada, número de foto, conflicto y resultado solicitado. Conserva el plano completo junto al recorte.", "Elige pruebas que cambien la decisión. Quita dirección, pago y tracking no relacionados antes de compartir capturas."], bullets: ["Referencia", "Esperado", "Observado", "Conflicto", "Solicitud"] },
+        { heading: "Pide la prueba que falta sin asumir que es gratis", paragraphs: ["Solicita un resultado observable: ambas etiquetas en una foto, regla sobre la plantilla, etiqueta interior o esquina dañada de frente.", "La homepage no publica número universal de fotos gratis, tarifa extra, vídeo o servicio de medidas. Comprueba las opciones y el precio del pedido actual."] },
+        { heading: "Elige la acción por la prueba, no por el enfado", paragraphs: ["Usa aclaración si el registro puede ser correcto pero confuso; pide una vista si resolverá la duda; considera cambio o devolución si hay una diferencia material y la acción existe.", "Una variación estética menor y una talla incorrecta no tienen el mismo peso. Define tu umbral antes de escribir a soporte."] },
+        { heading: "Redacta una solicitud que soporte pueda comprobar", paragraphs: ["Empieza por artículo, prueba y resultado: «El pedido muestra L; la foto 4 parece mostrar M. Confirmen la etiqueta y, si es M, indiquen la acción disponible».", "No prometas una devolución gratuita ni uses un plazo no publicado. Guarda cualquier respuesta sobre fecha, coste o condición del vendedor."] },
+        { heading: "Trata el informe público como un caso, no una norma", paragraphs: ["Un informe preliminar de 2026 dijo que LoloBuy detectó dos tallas distintas y gestionó una devolución. Es un caso relevante, no prueba del resultado para todos los vendedores.", "El autor incluyó un enlace de referido y aún no había completado el envío internacional. No extraigas una tasa de éxito o un plazo general."] },
+        { heading: "No envíes internacionalmente con una diferencia material abierta", paragraphs: ["Resuelve un problema que cambiaría tu decisión mientras el pedido conserve una acción de almacén. Añadir el envío complica costes y responsabilidades.", "Los 90 días de almacenamiento no equivalen a 90 días para devolver. Revisa estado y plazo mostrados en ese pedido."] },
+        { heading: "Cierra el caso con un registro de decisión", paragraphs: ["Anota preocupación, pruebas, comprobación extra, respuesta, coste o condición, acción final y fecha. Si llega un reemplazo, compáralo con la misma opción guardada."] },
+      ],
+    },
+  },
+  de: {
+    meta: {
+      title: "Wenn Lolobuy-QC nicht passt: Belege vor einer Rückgabeanfrage sichern",
+      shortTitle: "Was bei einer Lolobuy-QC-Abweichung zu tun ist",
+      description: "Belegleitfaden für falsche Größe, Farbe, Artikel oder sichtbare Schäden in Lolobuy-QC-Fotos – ohne erfundene Rückgaberegeln.",
+      eyebrow: "QC-ABWEICHUNG KLÄREN",
+      readingTime: "15 Min. Lesezeit",
+      factCheckLine: "Am 29. Juli 2026 mit LoloBuys Website, identifiziertem Community-Leitfaden und einem unabhängigen Lagerbericht geprüft.",
+    },
+    body: {
+      visual: {
+        eyebrow: "DIE ABWEICHUNGSAKTE",
+        title: "Aus einem Verdacht werden vier prüfbare Fakten.",
+        caption: "Eine Anfrage lässt sich besser prüfen, wenn Auftrag, Lagerbeleg, genaue Abweichung und gewünschtes Ergebnis verbunden sind.",
+        items: [
+          ["Bestellt", "Gespeichertes Angebot, Auswahl, Menge und Referenz."],
+          ["Erhalten", "Konkretes QC-Bild, Etikett, Maß oder sichtbarer Zustand."],
+          ["Abweichung", "Ein objektiver Satz zum Konflikt beider Datensätze."],
+          ["Gewünschte Aktion", "Klärung, Beleg, Umtausch oder Rückgabe nach aktuellem Auftrag."],
+        ],
+      },
+      sources: [
+        ["LoloBuy-Website — geprüft am 29. Juli 2026", "Primärquelle für Linkbestellung, Qualitätsprüfung, Fotos und 90 Tage Lagerung."],
+        ["Identifizierter LoloBuy-Community-Leitfaden — geprüft am 29. Juli 2026", "Datierter Kontext zu Link, Auswahl und QC; keine Plattformrichtlinie."],
+        ["Unabhängiger vorläufiger Bericht — geprüft am 29. Juli 2026", "Ein Käufer berichtete über verschieden große Schuhe und eine bearbeitete Rückgabe; mit Empfehlungslink und ohne fertiges Paket."],
+        ["Redaktioneller Belegrahmen von Lolobuy Sheet", "Vergleich und Nachrichtenformat sind unabhängige Analyse, keine LoloBuy-Regel."],
+      ],
+      intro: [
+        "In den Lagerfotos fällt eine Abweichung auf: anderes Größenetikett, falsche Farbe, fehlendes Teil oder sichtbarer Schaden. Entscheidend ist nun, was Auftrag und Bilder belegen und welche nächste Prüfung sinnvoll ist.",
+        "LoloBuy bestätigt öffentlich Qualitätsprüfung und Fotos im Lager, veröffentlicht aber kein allgemeines Rückgabefenster, keine Erstattungsdauer, Extra-Fotopreise oder Ergebnisgarantie. Dieser Ratgeber ordnet die Belege vor dem internationalen Versand.",
+      ],
+      sections: [
+        { heading: "Auftragsdaten sichern, bevor sich das Angebot ändert", paragraphs: ["Verkäuferseite, Farbe, Größe oder Version, Menge, Bild, Bestellnummer, Notiz und Datum speichern. Angebote können geändert oder entfernt werden."], bullets: ["Quellangebot", "Variante, Größe, Farbe und Menge", "Referenz und Datum", "Originaltext und Erklärung", "Entscheidende Bilder oder Tabelle"] },
+        { heading: "Die Abweichung als beobachtbaren Konflikt benennen", paragraphs: ["„Bestellt EU 42; Bild 3 zeigt EU 41“ verbindet zwei Fakten. „Sieht schlecht aus“ ist nur eine Meinung. Dasselbe Schema gilt für Farbe, Modell, Anzahl, Teile und Schäden.", "Nur so weit behaupten, wie das Bild reicht. Bei möglichem Schatten oder Staub eine klare Ansicht erbitten, statt dauerhaften Schaden zu behaupten."] },
+        { heading: "Problem nach Belegart einordnen", paragraphs: ["Identität umfasst Produkt, Größe, Farbe, Menge oder Hauptteil; Maße brauchen Lineal und Bezug; Zustand umfasst Risse oder Flecken; Optik verlangt wegen Licht und Perspektive Vorsicht.", "Fotos beweisen weder Komfort, Material, Akku, Wasserdichtigkeit, Haltbarkeit noch Echtheit. Sichtbare Zweifel nicht überdehnen."] },
+        { heading: "Eine kompakte Belegakte erstellen", paragraphs: ["Referenz, gespeicherte Auswahl, Bildnummer, Konflikt und Wunsch in dieser Reihenfolge angeben. Zum Ausschnitt auch das vollständige Bild behalten.", "Nur entscheidungsrelevante Belege wählen und Adresse, Zahlung oder Tracking vor dem Teilen entfernen."], bullets: ["Referenz", "Erwartet", "Beobachtet", "Konflikt", "Anfrage"] },
+        { heading: "Fehlende Belege anfordern, ohne kostenlose Leistung anzunehmen", paragraphs: ["Eine beobachtbare Prüfung nennen: beide Größenetiketten zusammen, Lineal an der Einlegesohle, Pflegeetikett oder beschädigte Ecke frontal.", "Die Homepage nennt keine allgemeine Gratis-Fotozahl, Extra-Gebühr, Video- oder Messleistung. Aktuelle Auftragsoptionen und Preise prüfen."] },
+        { heading: "Nächsten Schritt nach Belegen wählen", paragraphs: ["Klärung bei unklarer Oberfläche, gezielte Aufnahme bei einer lösbaren Lücke, Umtausch oder Rückgabeanfrage bei materieller Abweichung und verfügbarer Aktion.", "Kleine kosmetische Abweichung und falsche Größe sind nicht gleich. Eigene Entscheidungsschwelle vor der Nachricht festlegen."] },
+        { heading: "Eine prüfbare Supportanfrage schreiben", paragraphs: ["Artikel, Beleg und Wunsch nennen: „Auftrag zeigt L; Bild 4 scheint M zu zeigen. Bitte Etikett bestätigen und verfügbare Aktion nennen.“", "Keine kostenlose Rückgabe oder unbekannte Frist versprechen. Antworten zu Termin, Kosten oder Verkäuferbedingung sichern."] },
+        { heading: "Den öffentlichen Bericht als Einzelfall behandeln", paragraphs: ["Ein vorläufiger Bericht von 2026 sagt, LoloBuy habe zwei verschiedene Schuhgrößen erkannt und eine Rückgabe bearbeitet. Das ist relevant, aber keine allgemeine Regel.", "Der Beitrag enthielt einen Empfehlungslink und noch kein abgeschlossenes Auslandspaket. Keine Erfolgsquote oder feste Dauer ableiten."] },
+        { heading: "Bei offener materieller Abweichung nicht international versenden", paragraphs: ["Ein entscheidungsrelevantes Problem klären, solange der Auftrag noch eine Lageraktion zeigt. Versand fügt Kosten und Zuständigkeiten hinzu.", "90 Tage Lagerung bedeuten keine 90 Tage Rückgaberecht. Status und angezeigte Frist dieses Auftrags prüfen."] },
+        { heading: "Den Fall mit einem Entscheidungsprotokoll schließen", paragraphs: ["Ausgangsproblem, Belege, Zusatzprüfung, Antwort, Kosten oder Bedingungen, Endaktion und Datum notieren. Ersatz erneut mit derselben Auswahl vergleichen."] },
+      ],
+    },
+  },
+  fr: {
+    meta: {
+      title: "Que faire si le QC Lolobuy ne correspond pas : préparer les preuves avant un retour",
+      shortTitle: "Que faire face à un écart dans le QC Lolobuy",
+      description: "Guide de preuves pour une mauvaise taille, couleur, référence ou un défaut visible dans le QC Lolobuy, sans inventer de règle de retour.",
+      eyebrow: "RÉPONDRE À UN ÉCART QC",
+      readingTime: "15 min de lecture",
+      factCheckLine: "Vérifié le 29 juillet 2026 avec le site LoloBuy, son guide communautaire identifié et un témoignage indépendant au stade entrepôt.",
+    },
+    body: {
+      visual: {
+        eyebrow: "LE DOSSIER D'ÉCART",
+        title: "Transformez un doute en quatre faits vérifiables.",
+        caption: "Une demande est plus facile à étudier si elle relie commande, preuve d'entrepôt, écart précis et résultat demandé.",
+        items: [
+          ["Commandé", "Fiche sauvegardée, option, quantité et référence."],
+          ["Reçu", "Photo QC, étiquette, mesure ou état visible précis."],
+          ["Écart", "Une phrase objective reliant les deux dossiers."],
+          ["Action demandée", "Clarification, preuve, échange ou retour selon la commande actuelle."],
+        ],
+      },
+      sources: [
+        ["Site public LoloBuy — vérifié le 29 juillet 2026", "Source primaire pour commande par lien, inspection, photos et 90 jours de stockage."],
+        ["Guide communautaire LoloBuy identifié — vérifié le 29 juillet 2026", "Contexte daté sur le lien, les options et le QC ; pas une politique."],
+        ["Témoignage préliminaire indépendant — vérifié le 29 juillet 2026", "Un acheteur rapporte deux pointures différentes et un retour traité ; présence d'un lien de parrainage et absence de colis terminé."],
+        ["Cadre éditorial de Lolobuy Sheet", "La comparaison et le format de message sont une analyse indépendante, pas une règle LoloBuy."],
+      ],
+      intro: [
+        "Vous ouvrez les photos d'entrepôt et voyez un écart : mauvaise taille, couleur incertaine, pièce absente ou dommage visible. La question utile devient ce que la commande et les images prouvent, puis ce qu'il faut demander.",
+        "LoloBuy confirme publiquement inspection et photos en entrepôt, mais ne publie ni délai universel de retour, ni durée de remboursement, ni tarif photo supplémentaire, ni résultat garanti. Ce guide organise les preuves avant le colis international.",
+      ],
+      sections: [
+        { heading: "Sauvegarder la commande avant que la fiche change", paragraphs: ["Conservez page vendeur, couleur, taille ou version, quantité, image, numéro, remarque et date. Une fiche peut être modifiée ou supprimée."], bullets: ["Fiche source", "Variante, taille, couleur et quantité", "Référence et date", "Texte original et explication", "Images ou tableau décisifs"] },
+        { heading: "Décrire l'écart comme un conflit observable", paragraphs: ["« Commandé EU 42 ; la photo 3 montre EU 41 » relie deux faits. « L'article est mauvais » reste une opinion. Appliquez la structure à la couleur, au modèle, aux pièces et aux dommages.", "Limitez l'affirmation à la preuve. Si une marque peut être une ombre ou de la poussière, demandez une vue claire."] },
+        { heading: "Classer le problème selon la preuve", paragraphs: ["L'identité couvre article, taille, couleur, quantité ou pièce principale ; les mesures exigent règle et référence ; l'état couvre déchirure ou casse ; l'apparence exige de la prudence.", "Les photos ne prouvent ni confort, composition, batterie, étanchéité, durée ni authenticité. Ne dépassez pas leur portée."] },
+        { heading: "Construire un dossier compact", paragraphs: ["Placez référence, option sauvegardée, numéro de photo, conflit et résultat souhaité. Gardez l'image entière avec le recadrage.", "Choisissez les preuves utiles à la décision et masquez adresse, paiement et suivi sans rapport."], bullets: ["Référence", "Attendu", "Observé", "Conflit", "Demande"] },
+        { heading: "Demander la preuve manquante sans supposer sa gratuité", paragraphs: ["Demandez un résultat observable : deux étiquettes ensemble, règle sur la semelle, étiquette intérieure ou coin endommagé de face.", "La homepage ne fixe ni nombre de photos gratuites, ni prix supplémentaire, ni vidéo ou mesure universelle. Vérifiez la commande actuelle."] },
+        { heading: "Choisir l'action selon les preuves", paragraphs: ["Clarification si l'interface est ambiguë, photo ciblée si elle tranche, échange ou retour si l'écart matériel est démontré et l'action disponible.", "Une variation esthétique mineure et une mauvaise taille ne se valent pas. Définissez votre seuil avant d'écrire."] },
+        { heading: "Rédiger une demande vérifiable par le support", paragraphs: ["Commencez par article, preuve et résultat : « La commande indique L ; la photo 4 semble montrer M. Merci de confirmer et d'indiquer l'action disponible. »", "Ne promettez ni retour gratuit ni délai non publié. Gardez la réponse sur date, coût ou condition vendeur."] },
+        { heading: "Traiter le témoignage public comme un cas", paragraphs: ["Un témoignage préliminaire de 2026 dit que LoloBuy a détecté deux pointures différentes et traité un retour. C'est pertinent, mais pas une règle pour tous.", "L'auteur avait un lien de parrainage et aucun colis international achevé. N'en déduisez ni taux de réussite ni durée fixe."] },
+        { heading: "Ne pas expédier avec un écart matériel non résolu", paragraphs: ["Résolvez le problème qui changerait votre décision tant qu'une action d'entrepôt reste disponible. L'envoi ajoute coûts et responsabilités.", "Les 90 jours de stockage ne sont pas 90 jours de droit au retour. Vérifiez le statut et le délai affichés."] },
+        { heading: "Clore le dossier avec un journal de décision", paragraphs: ["Notez problème, preuves, contrôle, réponse, coût ou condition, action finale et date. Comparez tout remplacement à la même option."] },
+      ],
+    },
+  },
+  it: {
+    meta: {
+      title: "Cosa fare se il QC Lolobuy non coincide: prepara le prove prima di chiedere un reso",
+      shortTitle: "Cosa fare quando il QC Lolobuy mostra una differenza",
+      description: "Guida alle prove per taglia, colore, articolo o difetto errati nelle foto QC Lolobuy, senza inventare regole di reso.",
+      eyebrow: "GESTIRE UNA DIFFERENZA QC",
+      readingTime: "15 min di lettura",
+      factCheckLine: "Verificato il 29 luglio 2026 con il sito LoloBuy, la guida community identificata e un resoconto indipendente della fase di magazzino.",
+    },
+    body: {
+      visual: {
+        eyebrow: "IL DOSSIER DELLA DIFFERENZA",
+        title: "Trasforma un dubbio in quattro fatti verificabili.",
+        caption: "Una richiesta è più facile da valutare se collega ordine, prova di magazzino, differenza esatta e risultato richiesto.",
+        items: [
+          ["Ordinato", "Scheda salvata, opzione, quantità e riferimento."],
+          ["Ricevuto", "Foto QC, etichetta, misura o condizione visibile precisa."],
+          ["Differenza", "Una frase oggettiva che collega i due dati."],
+          ["Azione richiesta", "Chiarimento, prova, cambio o reso secondo l'ordine attuale."],
+        ],
+      },
+      sources: [
+        ["Sito pubblico LoloBuy — verificato il 29 luglio 2026", "Fonte primaria per ordine da link, ispezione, foto e 90 giorni di deposito."],
+        ["Guida community LoloBuy identificata — verificata il 29 luglio 2026", "Contesto datato su link, opzioni e QC; non una politica."],
+        ["Resoconto preliminare indipendente — verificato il 29 luglio 2026", "Un acquirente riferisce due taglie diverse e un reso gestito; era presente un referral e mancava il pacco completato."],
+        ["Metodo editoriale Lolobuy Sheet", "Confronto e formato del messaggio sono analisi indipendenti, non regole LoloBuy."],
+      ],
+      intro: [
+        "Apri le foto di magazzino e noti una differenza: taglia errata, colore dubbio, pezzo mancante o danno visibile. La domanda utile è cosa provano ordine e immagini e quale passo chiedere.",
+        "LoloBuy conferma pubblicamente ispezione e foto in magazzino, ma non pubblica una finestra universale di reso, tempi di rimborso, prezzi per foto extra o esiti garantiti. Questa guida ordina le prove prima del pacco internazionale.",
+      ],
+      sections: [
+        { heading: "Salva l'ordine prima che la scheda cambi", paragraphs: ["Conserva pagina del venditore, colore, taglia o versione, quantità, immagine, numero ordine, nota e data. Una scheda può cambiare o sparire."], bullets: ["Scheda fonte", "Variante, taglia, colore e quantità", "Riferimento e data", "Testo originale e spiegazione", "Immagini o tabella decisive"] },
+        { heading: "Descrivi la differenza come conflitto osservabile", paragraphs: ["«Ordinato EU 42; la foto 3 mostra EU 41» collega due fatti. «È brutto» è un'opinione. Usa la stessa struttura per colore, modello, quantità, pezzi e danni.", "Afferma solo ciò che la prova mostra. Se un segno può essere ombra o polvere, chiedi una vista chiara."] },
+        { heading: "Classifica il problema per tipo di prova", paragraphs: ["Identità copre prodotto, taglia, colore, quantità o pezzo; misure richiedono righello e riferimento; condizione copre rotture o macchie; aspetto richiede cautela.", "Le foto non provano comodità, composizione, batteria, impermeabilità, durata o autenticità. Non andare oltre l'evidenza."] },
+        { heading: "Costruisci un dossier compatto", paragraphs: ["Metti riferimento, opzione salvata, numero foto, conflitto e risultato. Conserva l'immagine intera con il ritaglio.", "Scegli prove che cambiano la decisione e rimuovi indirizzo, pagamento e tracking non pertinenti."], bullets: ["Riferimento", "Atteso", "Osservato", "Conflitto", "Richiesta"] },
+        { heading: "Chiedi la prova mancante senza presumere che sia gratuita", paragraphs: ["Chiedi un risultato osservabile: entrambe le etichette insieme, righello sulla soletta, etichetta interna o angolo danneggiato frontale.", "La homepage non indica numero universale di foto gratis, tariffa extra, video o misurazione. Controlla opzioni e prezzo dell'ordine."] },
+        { heading: "Scegli l'azione in base alle prove", paragraphs: ["Chiarimento se l'interfaccia è ambigua, foto mirata se risolve, cambio o reso se la differenza materiale è provata e l'azione disponibile.", "Una piccola variazione estetica non equivale a una taglia sbagliata. Definisci la tua soglia prima del messaggio."] },
+        { heading: "Scrivi una richiesta verificabile dal supporto", paragraphs: ["Inizia con articolo, prova e risultato: «L'ordine mostra L; la foto 4 sembra M. Confermate l'etichetta e indicate l'azione disponibile».", "Non promettere reso gratuito o scadenze non pubblicate. Salva la risposta su data, costo o condizione del venditore."] },
+        { heading: "Tratta il resoconto pubblico come un caso", paragraphs: ["Un resoconto preliminare del 2026 dice che LoloBuy rilevò due taglie diverse e gestì un reso. È rilevante, ma non una regola generale.", "L'autore aveva un link referral e non aveva completato il pacco internazionale. Non dedurre tasso di successo o durata fissa."] },
+        { heading: "Non spedire con una differenza materiale irrisolta", paragraphs: ["Risolvi il problema che cambierebbe la decisione finché l'ordine mostra un'azione di magazzino. La spedizione aggiunge costi e responsabilità.", "I 90 giorni di deposito non sono 90 giorni di diritto al reso. Controlla stato e scadenza mostrati."] },
+        { heading: "Chiudi il caso con un registro decisionale", paragraphs: ["Annota problema, prove, controllo extra, risposta, costo o condizione, azione finale e data. Confronta il sostituto con la stessa opzione."] },
+      ],
+    },
+  },
+};
+
 export function getLocalizedArticles(locale: Locale): Article[] {
   if (locale === "en") {
     return articles;
@@ -858,11 +1047,16 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       article.slug === "lolobuy-weidian-link-guide"
         ? weidianArticleText[locale]
         : null;
-    const body = translatedWeidian?.body ?? articleBodyText[locale][index];
+    const translatedQcMismatch =
+      article.slug === "lolobuy-qc-mismatch-evidence-guide"
+        ? qcMismatchArticleText[locale]
+        : null;
+    const translatedStandalone = translatedWeidian ?? translatedQcMismatch;
+    const body = translatedStandalone?.body ?? articleBodyText[locale][index];
 
     return {
       ...article,
-      ...(translatedWeidian?.meta ?? articleMetaText[locale][index]),
+      ...(translatedStandalone?.meta ?? articleMetaText[locale][index]),
       intro: body.intro,
       visual: {
         eyebrow: body.visual.eyebrow,

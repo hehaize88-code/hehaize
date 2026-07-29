@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const developmentPreviewMeta =
@@ -114,7 +115,7 @@ test("redirects legacy query and /en URLs to canonical language paths", async ()
   assert.equal(englishPrefix.headers.get("location"), "https://lolobuy-sheet.com/faq");
 });
 
-test("publishes all 140 language URLs in the sitemap", async () => {
+test("publishes all 145 language URLs in the sitemap", async () => {
   const worker = await loadWorker();
   const response = await fetchPage(worker, "/sitemap.xml");
   const xml = await response.text();
@@ -124,13 +125,17 @@ test("publishes all 140 language URLs in the sitemap", async () => {
     response.headers.get("content-type") ?? "",
     /application\/xml|text\/xml/i,
   );
-  assert.equal((xml.match(/<url>/g) ?? []).length, 140);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 145);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/faq/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/shoes/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/bags/);
   assert.match(
     xml,
     /https:\/\/lolobuy-sheet\.com\/it\/articles\/lolobuy-weidian-link-guide/,
+  );
+  assert.match(
+    xml,
+    /https:\/\/lolobuy-sheet\.com\/es\/articles\/lolobuy-qc-mismatch-evidence-guide/,
   );
   assert.match(xml, /hreflang="x-default"/);
 });
@@ -240,6 +245,15 @@ test("serves substantial localized category and article landing pages", async ()
   assert.equal(article.status, 200);
   assert.match(articleHtml, /Guide lien Weidian avec Lolobuy 2026/i);
   assert.match(articleHtml, /Du lien au QC/i);
+
+  const mismatchArticle = await fetchPage(
+    worker,
+    "/de/articles/lolobuy-qc-mismatch-evidence-guide",
+  );
+  const mismatchHtml = await mismatchArticle.text();
+  assert.equal(mismatchArticle.status, 200);
+  assert.match(mismatchHtml, /Wenn Lolobuy-QC nicht passt/i);
+  assert.match(mismatchHtml, /DIE ABWEICHUNGSAKTE/i);
 });
 
 test("serves eight evidence-led product pages with local responsive images", async () => {
@@ -292,6 +306,7 @@ test("publishes article images, social previews and complete article schema", as
     "plan-china-shopping-haul",
     "lolobuy-review-early-user-experience",
     "lolobuy-weidian-link-guide",
+    "lolobuy-qc-mismatch-evidence-guide",
   ];
 
   for (const slug of slugs) {
@@ -336,7 +351,48 @@ test("publishes a measurable, Lolobuy-specific research footprint", async () => 
   assert.match(html, /CURRENT RESEARCH FOOTPRINT/);
   assert.match(html, /8<\/dt><dd>individual product evidence pages/);
   assert.match(html, /3<\/dt><dd>deep category guides/);
-  assert.match(html, /5<\/dt><dd>fact-checked long-form articles/);
+  assert.match(html, /6<\/dt><dd>fact-checked long-form articles/);
   assert.match(html, /href="\/articles\/lolobuy-weidian-link-guide"/);
   assert.match(html, /href="\/categories\/shoes"/);
+});
+
+test("publishes a bounded English QC-mismatch article and an evolving topic map", async () => {
+  const worker = await loadWorker();
+  const response = await fetchPage(
+    worker,
+    "/articles/lolobuy-qc-mismatch-evidence-guide",
+  );
+  const html = await response.text();
+  const prose = html.match(
+    /<div class="article-prose">([\s\S]*?)<\/div><\/div><\/article>/,
+  )?.[1] ?? "";
+  const visibleText = decodeHtml(
+    prose.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim(),
+  );
+  const words =
+    visibleText.match(/[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*/g) ?? [];
+
+  assert.equal(response.status, 200);
+  assert.equal(words.length, 1635);
+  assert.ok(words.length >= 1200, `article has only ${words.length} words`);
+  assert.ok(words.length <= 1800, `article has ${words.length} words`);
+  assert.match(
+    html,
+    /<link rel="canonical" href="https:\/\/lolobuy-sheet\.com\/articles\/lolobuy-qc-mismatch-evidence-guide"/,
+  );
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+
+  const topicMap = await readFile(
+    new URL("../app/article-topic-map.ts", import.meta.url),
+    "utf8",
+  );
+  assert.match(topicMap, /primaryQuery: "what to do if lolobuy qc is wrong"/);
+  assert.match(topicMap, /intent: "problem solving"/);
+  assert.match(topicMap, /internalLinkRole:/);
+  assert.equal(
+    (topicMap.match(/url: "\/articles\//g) ?? []).length,
+    6,
+  );
 });

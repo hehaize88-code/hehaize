@@ -39,6 +39,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy Review 2026: Early User Evidence Examined",
     "lolobuy-weidian-link-guide":
       "Lolobuy Weidian Link Guide 2026: Order & QC Steps",
+    "lolobuy-qc-mismatch-evidence-guide":
+      "Lolobuy QC Mismatch: Evidence Before Return Requests",
   },
   es: {
     "lolobuy-spreadsheet-guide":
@@ -51,6 +53,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Reseña Lolobuy 2026: pruebas de usuarios",
     "lolobuy-weidian-link-guide":
       "Enlaces Weidian con Lolobuy: pedido y QC",
+    "lolobuy-qc-mismatch-evidence-guide":
+      "QC Lolobuy incorrecto: pruebas antes del retorno",
   },
   de: {
     "lolobuy-spreadsheet-guide":
@@ -63,6 +67,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy Erfahrungen 2026: Nutzerbelege",
     "lolobuy-weidian-link-guide":
       "Lolobuy Weidian-Link: Bestellung und QC",
+    "lolobuy-qc-mismatch-evidence-guide":
+      "Lolobuy QC-Abweichung: Belege vor der Rückgabe",
   },
   fr: {
     "lolobuy-spreadsheet-guide":
@@ -75,6 +81,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Avis Lolobuy 2026 : preuves d’utilisateurs",
     "lolobuy-weidian-link-guide":
       "Lien Weidian Lolobuy : commande et QC",
+    "lolobuy-qc-mismatch-evidence-guide":
+      "Écart QC Lolobuy : preuves avant un retour",
   },
   it: {
     "lolobuy-spreadsheet-guide":
@@ -87,6 +95,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Recensione Lolobuy 2026: prove degli utenti",
     "lolobuy-weidian-link-guide":
       "Link Weidian Lolobuy: ordine e QC",
+    "lolobuy-qc-mismatch-evidence-guide":
+      "QC Lolobuy errato: prove prima del reso",
   },
 };
 

@@ -943,6 +943,150 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-qc-mismatch-evidence-guide",
+    title:
+      "What to Do When Lolobuy QC Is Wrong: Build Evidence Before Requesting a Return",
+    shortTitle: "What to do when Lolobuy QC shows a mismatch",
+    description:
+      "A practical evidence guide for a wrong size, colour, item or visible defect in Lolobuy QC photos—without inventing return rules or refund promises.",
+    eyebrow: "QC MISMATCH RESPONSE",
+    published: "2026-07-29",
+    updated: "2026-07-29",
+    readingTime: "15 min read",
+    factCheckLine:
+      "Fact-checked July 29, 2026 against LoloBuy's public website, its identified community ordering guide and one dated independent warehouse-stage report.",
+    visual: {
+      eyebrow: "THE MISMATCH FILE",
+      title: "Turn a concern into four checkable facts.",
+      caption:
+        "A support request is easier to assess when it connects the saved order, the warehouse evidence, the exact difference and the outcome you want.",
+      items: [
+        {
+          label: "Ordered",
+          text: "Saved listing, selected option, quantity and order reference.",
+        },
+        {
+          label: "Received",
+          text: "The specific QC frame, label, measurement or visible condition.",
+        },
+        {
+          label: "Difference",
+          text: "One objective sentence explaining how the two records conflict.",
+        },
+        {
+          label: "Requested action",
+          text: "Clarification, focused evidence, exchange or return—subject to the current order.",
+        },
+      ],
+    },
+    sources: [
+      {
+        label: "LoloBuy public website — checked July 29, 2026",
+        note: "Primary source for the public link-ordering, warehouse quality-inspection, photography and 90-day storage statements.",
+      },
+      {
+        label: "Identified LoloBuy community ordering guide — checked July 29, 2026",
+        note: "Dated community guidance describing source-link submission, option details and warehouse QC; treated as workflow context, not platform policy.",
+      },
+      {
+        label: "Independent preliminary LoloBuy report — checked July 29, 2026",
+        note: "One shopper reported that differently sized shoes were identified and a return was handled. The post included a referral link and did not cover a completed parcel.",
+      },
+      {
+        label: "Lolobuy Sheet editorial evidence framework",
+        note: "The comparison table and message format are independent analysis designed to organise observable facts, not a statement of LoloBuy policy.",
+      },
+    ],
+    intro: [
+      "You open the warehouse photographs expecting a quick approval and notice something that does not match: the size label is different, the colour looks wrong, one shoe appears to be another size, a strap is missing, or damage is visible near a seam. The useful question is no longer simply “Is this good QC?” It is “What can I prove from the order record and the photographs, and what should I ask for next?”",
+      "LoloBuy's public website says that goods arriving at its warehouse receive a quality inspection and photographs. That supports using the warehouse stage as a comparison point. The public homepage does not publish a universal return window, refund timeline, seller-obligation table, extra-photo price or guaranteed outcome for every mismatch. Any article that fills those gaps with fixed numbers is describing something other than the public policy we could verify.",
+    ],
+    sections: [
+      {
+        heading: "Freeze the order record before the listing changes",
+        paragraphs: [
+          "Start with what you actually ordered, not what you remember choosing. Save the seller page or product-detail record, selected colour, labelled size or version, quantity, item image, order number and any note you entered. Include the date. Marketplace listings can be edited, repriced or removed, and a later screenshot may no longer show the option that was available when you paid.",
+        ],
+        bullets: [
+          "Source listing or product-detail record",
+          "Exact variant, size, colour and quantity",
+          "Order reference and date",
+          "Original option wording plus your explanation",
+          "Any seller image or chart that defined the choice",
+        ],
+      },
+      {
+        heading: "Name the mismatch as an observable conflict",
+        paragraphs: [
+          "A useful report connects two facts. “I ordered EU 42; QC image 3 shows an EU 41 label” is a conflict. “These shoes look bad” is an opinion. The same structure works for colour, model, quantity, included pieces and visible damage: identify the ordered record, identify the warehouse frame, then state the difference in one sentence.",
+          "Use the smallest accurate claim. If the image shows a stain-shaped mark, say that a dark mark is visible at a specific location; do not call it permanent damage until a closer view rules out shadow, dust or compression. If the colour differs on one frame but matches on two others, record the lighting uncertainty rather than declaring the wrong colour. Precision protects your credibility.",
+        ],
+      },
+      {
+        heading: "Sort the issue into the right evidence category",
+        paragraphs: [
+          "Identity mismatches are usually the clearest: wrong product, labelled size, colour name, quantity or missing major component. Measurement mismatches require a visible ruler and a saved reference point. Condition issues include tears, cracks, stains, broken hardware or separation that can be located in an image. Appearance concerns—shape, alignment, shade or texture—often need more caution because camera angle and lighting can change what you see.",
+          "Hidden performance is a separate category. Standard photographs cannot establish comfort, material composition, battery condition, waterproofing, long-term durability or authenticity. Do not turn a visual concern into a claim the evidence cannot support. Ask whether the current order offers an appropriate check, while recognising that some questions cannot be resolved at the warehouse-photo stage.",
+        ],
+      },
+      {
+        heading: "Build a compact evidence pack",
+        paragraphs: [
+          "A compact file is easier to review than a long chat. Put the order reference first, then the saved option, the relevant QC image number, a short description of the conflict and the result you want. Crop only when a crop helps locate the issue, and retain the full frame so the crop keeps its context. Marking the area with a simple circle can help, but never alter the product detail itself.",
+          "Choose evidence that changes the decision. Five nearly identical screenshots do not strengthen a size-label conflict; one full frame and one readable close view usually explain it better. Keep original files when possible because messaging apps can reduce resolution. Remove unrelated personal information before sharing a screenshot, especially addresses, payment details and tracking data.",
+        ],
+        bullets: [
+          "Order reference: the exact item under review",
+          "Expected: the saved option or listing detail",
+          "Observed: the numbered QC frame and visible fact",
+          "Conflict: one neutral comparison sentence",
+          "Request: one realistic next action",
+        ],
+      },
+      {
+        heading: "Ask for missing evidence without assuming it is free",
+        paragraphs: [
+          "Sometimes the existing photographs do not answer the question. Ask for one observable result: show both shoe size labels in the same frame, place a ruler along the insole, photograph the inside care tag, show the damaged corner straight on, or lay out all included pieces. A focused request gives the photographer a test that can succeed or fail.",
+          "LoloBuy's public homepage confirms inspection and photography but does not state a universal free-photo count, extra-photo fee, video entitlement or measurement service. Check the action and price shown for the actual order before relying on another image. If the option is unavailable, ask support what evidence can be produced rather than borrowing another agent's process.",
+        ],
+      },
+      {
+        heading: "Choose the next action from evidence, not frustration",
+        paragraphs: [
+          "Use clarification when the records may be correct but the interface or translation is unclear. Request focused evidence when one missing view could settle the question. Consider an exchange or return request when the saved order and warehouse record show a material mismatch, but check the current seller terms, order status, available action and any displayed charge first.",
+          "A minor cosmetic variation may be acceptable if it does not affect your intended use; a wrong labelled size, missing component or structural break is different. This is a personal threshold, not a platform rule. Write down the decision standard before contacting support so that the request stays about the item rather than expanding into every small imperfection visible under zoom.",
+        ],
+      },
+      {
+        heading: "Write a request that support can verify",
+        paragraphs: [
+          "Lead with the item, evidence and requested outcome. For example: “Order 1234, black hoodie, labelled size L. The saved order shows L, but QC image 4 appears to show an M neck tag. Please confirm the tag with a clear close photograph. If it is M, please tell me which return or exchange action is available for this order.” This format does not demand a result before the fact is confirmed.",
+          "Avoid unsupported legal language, threats or a page of emotion. Do not claim a guaranteed free return if no current term says so. If support replies with a deadline, charge or seller condition, save that response with the order. Ask one follow-up question when a term is ambiguous, then record the outcome and date.",
+        ],
+      },
+      {
+        heading: "Treat the public user report as one case, not a policy",
+        paragraphs: [
+          "A preliminary independent report published in 2026 said LoloBuy caught that two shoes in one purchase were different sizes and handled a return, including on a listing the author described as B-grade. That is directly relevant because it shows one documented warehouse-stage mismatch and response. It does not prove that every seller, listing or reason receives the same remedy.",
+          "The author also included a referral link and said the full haul review would come later. Both details matter. Referral incentives can influence tone, and the report did not yet test the complete international-shipping outcome. Use the case to understand why size evidence matters, not to promise a return success rate, processing time or universal exception.",
+        ],
+      },
+      {
+        heading: "Do not authorise international shipping with an unresolved material mismatch",
+        paragraphs: [
+          "The practical value of warehouse QC is the chance to compare before parcel submission. If the issue would change whether you want the item, resolve it while the order still shows an available warehouse action. Once an item is packed and dispatched internationally, the evidence trail, costs and responsible parties can become more complicated.",
+          "This is not a claim that every pre-shipment issue is returnable. It is a sequencing rule: investigate before adding another irreversible step. Check the item's current status and any displayed deadline, because the public homepage does not define one universal window. Keep the 90-day storage statement separate from after-sales timing; free storage does not imply a 90-day right to return.",
+        ],
+      },
+      {
+        heading: "Close the case with a decision log",
+        paragraphs: [
+          "Record what happened: initial concern, evidence supplied, any extra check, support response, charge or seller condition shown, final action and date. If a replacement arrives, compare it with the same saved option rather than assuming the problem is solved. If you keep the item, note why the variation was acceptable. A decision log turns a stressful exchange into reusable buying knowledge.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const faqs = [

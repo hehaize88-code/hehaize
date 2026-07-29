@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Lolobuy QC mismatch evidence flow</title>
+  <desc id="desc">A four-step editorial diagram connecting the saved order, warehouse QC evidence, the exact mismatch and a specific requested action.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f0df"/>
+      <stop offset="1" stop-color="#e8d8bb"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1d2c28" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1045" cy="92" r="142" fill="#d87644" opacity=".13"/>
+  <circle cx="112" cy="610" r="176" fill="#395e54" opacity=".12"/>
+  <text x="72" y="92" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4" fill="#9a4f2c">QC MISMATCH RESPONSE</text>
+  <text x="72" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="50" font-weight="700" fill="#1d2c28">Build a checkable evidence trail.</text>
+  <text x="72" y="192" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#42534e">Connect what you ordered to what the warehouse record actually shows.</text>
+  <g filter="url(#shadow)" font-family="Arial, Helvetica, sans-serif">
+    <rect x="72" y="254" width="238" height="228" rx="20" fill="#fffdf8"/>
+    <rect x="336" y="254" width="238" height="228" rx="20" fill="#fffdf8"/>
+    <rect x="600" y="254" width="238" height="228" rx="20" fill="#fffdf8"/>
+    <rect x="864" y="254" width="264" height="228" rx="20" fill="#fffdf8"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <circle cx="112" cy="296" r="22" fill="#395e54"/>
+    <text x="112" y="303" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">01</text>
+    <text x="100" y="354" font-size="27" font-weight="700" fill="#1d2c28">Ordered</text>
+    <text x="100" y="393" font-size="19" fill="#42534e">Saved option, listing,</text>
+    <text x="100" y="421" font-size="19" fill="#42534e">quantity and reference.</text>
+
+    <circle cx="376" cy="296" r="22" fill="#395e54"/>
+    <text x="376" y="303" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">02</text>
+    <text x="364" y="354" font-size="27" font-weight="700" fill="#1d2c28">Received</text>
+    <text x="364" y="393" font-size="19" fill="#42534e">QC frame, label,</text>
+    <text x="364" y="421" font-size="19" fill="#42534e">measure or condition.</text>
+
+    <circle cx="640" cy="296" r="22" fill="#d87644"/>
+    <text x="640" y="303" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">03</text>
+    <text x="628" y="354" font-size="27" font-weight="700" fill="#1d2c28">Difference</text>
+    <text x="628" y="393" font-size="19" fill="#42534e">One neutral sentence</text>
+    <text x="628" y="421" font-size="19" fill="#42534e">that connects both facts.</text>
+
+    <circle cx="904" cy="296" r="22" fill="#395e54"/>
+    <text x="904" y="303" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">04</text>
+    <text x="892" y="354" font-size="27" font-weight="700" fill="#1d2c28">Next action</text>
+    <text x="892" y="393" font-size="19" fill="#42534e">Ask for one result the</text>
+    <text x="892" y="421" font-size="19" fill="#42534e">current order can support.</text>
+  </g>
+  <g stroke="#9a4f2c" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M310 366h20"/>
+    <path d="M574 366h20"/>
+    <path d="M838 366h20"/>
+  </g>
+  <text x="72" y="558" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="1.4" fill="#395e54">INDEPENDENT EDITORIAL FRAMEWORK · FACT-CHECKED 29 JULY 2026</text>
+</svg>

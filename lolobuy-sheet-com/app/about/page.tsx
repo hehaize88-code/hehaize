@@ -30,7 +30,7 @@ const researchFootprintCopy: Record<
     title: "A specific Lolobuy evidence set, not a swapped brand template.",
     intro:
       "This site’s present scope is source-link verification, warehouse-photo review, product-specific sizing and condition checks, packed-parcel planning and carefully bounded customer evidence. Counts below come from the pages currently published here.",
-    reviewed: "Scope reviewed 28 July 2026",
+    reviewed: "Scope reviewed 29 July 2026",
     statLabels: [
       "individual product evidence pages",
       "deep category guides",
@@ -51,7 +51,7 @@ const researchFootprintCopy: Record<
     title: "Pruebas específicas de Lolobuy, no una plantilla con otra marca.",
     intro:
       "El alcance actual se centra en verificar enlaces fuente, revisar fotos de almacén, comprobar talla y estado por producto, planificar el paquete y delimitar las pruebas de clientes. Los recuentos proceden de las páginas publicadas aquí.",
-    reviewed: "Alcance revisado el 28 de julio de 2026",
+    reviewed: "Alcance revisado el 29 de julio de 2026",
     statLabels: [
       "páginas individuales de pruebas de producto",
       "guías de categoría detalladas",
@@ -72,7 +72,7 @@ const researchFootprintCopy: Record<
     title: "Eigene Lolobuy-Belege statt einer Vorlage mit neuem Markennamen.",
     intro:
       "Der aktuelle Schwerpunkt liegt auf Quellenlinks, Lagerfotos, produktspezifischen Größen- und Zustandsprüfungen, Paketplanung und klar begrenzten Nutzerbelegen. Die Zahlen stammen aus den hier veröffentlichten Seiten.",
-    reviewed: "Umfang geprüft am 28. Juli 2026",
+    reviewed: "Umfang geprüft am 29. Juli 2026",
     statLabels: [
       "einzelne Produkt-Belegseiten",
       "ausführliche Kategorien-Ratgeber",
@@ -93,7 +93,7 @@ const researchFootprintCopy: Record<
     title: "Des preuves propres à Lolobuy, pas un modèle rebaptisé.",
     intro:
       "Le périmètre actuel couvre la vérification des liens sources, les photos d’entrepôt, les contrôles de taille et d’état par produit, la préparation du colis et les témoignages clients correctement délimités. Les chiffres viennent des pages publiées ici.",
-    reviewed: "Périmètre vérifié le 28 juillet 2026",
+    reviewed: "Périmètre vérifié le 29 juillet 2026",
     statLabels: [
       "pages individuelles de preuves produit",
       "guides catégorie approfondis",
@@ -114,7 +114,7 @@ const researchFootprintCopy: Record<
     title: "Prove specifiche su Lolobuy, non un modello con il marchio cambiato.",
     intro:
       "L’ambito attuale riguarda link sorgente, foto di magazzino, controlli specifici di taglia e condizioni, pianificazione del pacco e prove dei clienti con limiti chiari. I conteggi derivano dalle pagine pubblicate qui.",
-    reviewed: "Ambito verificato il 28 luglio 2026",
+    reviewed: "Ambito verificato il 29 luglio 2026",
     statLabels: [
       "pagine individuali di prove prodotto",
       "guide categoria approfondite",

@@ -24,6 +24,11 @@ const articleMedia = {
     width: 1200,
     height: 630,
   },
+  "lolobuy-qc-mismatch-evidence-guide": {
+    src: "/articles/lolobuy-qc-mismatch-evidence-guide.webp",
+    width: 1200,
+    height: 630,
+  },
 } as const;
 
 export function getArticleMedia(slug: string) {

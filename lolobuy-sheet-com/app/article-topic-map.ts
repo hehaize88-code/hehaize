@@ -1,0 +1,66 @@
+export type ArticleTopicMapEntry = {
+  url: `/articles/${string}`;
+  primaryQuery: string;
+  relatedTerms: string[];
+  intent: "informational" | "commercial investigation" | "problem solving";
+  angle: string;
+  evidence: string[];
+  internalLinkRole: string;
+};
+
+export const articleTopicMap: ArticleTopicMapEntry[] = [
+  {
+    url: "/articles/lolobuy-spreadsheet-guide",
+    primaryQuery: "lolobuy spreadsheet guide",
+    relatedTerms: ["lolobuy spreadsheet", "verify product links", "lolobuy finds"],
+    intent: "informational",
+    angle: "Use a directory for discovery while rechecking the live seller record.",
+    evidence: ["LoloBuy public website", "Identified community ordering guide"],
+    internalLinkRole: "Entry point to the finds directory, source verification and general QC.",
+  },
+  {
+    url: "/articles/how-to-read-qc-photos",
+    primaryQuery: "how to read lolobuy qc photos",
+    relatedTerms: ["lolobuy qc checklist", "warehouse photos", "qc photo measurements"],
+    intent: "informational",
+    angle: "Interpret visible identity, measurements and condition without overstating what photographs prove.",
+    evidence: ["LoloBuy public website", "Independent preliminary LoloBuy report"],
+    internalLinkRole: "General inspection hub linking to category checks and shipping decisions.",
+  },
+  {
+    url: "/articles/plan-china-shopping-haul",
+    primaryQuery: "lolobuy shipping guide",
+    relatedTerms: ["warehouse storage", "parcel consolidation", "actual vs volumetric weight"],
+    intent: "informational",
+    angle: "Plan a parcel from packed evidence rather than a universal shipping-cost promise.",
+    evidence: ["LoloBuy public website", "Identified community ordering guide"],
+    internalLinkRole: "Connect warehouse decisions with the packed-parcel shipping guide.",
+  },
+  {
+    url: "/articles/lolobuy-review-early-user-experience",
+    primaryQuery: "lolobuy review",
+    relatedTerms: ["lolobuy experience", "lolobuy qc review", "is lolobuy legit"],
+    intent: "commercial investigation",
+    angle: "Separate one preliminary warehouse-stage report from untested parcel claims.",
+    evidence: ["LoloBuy public website", "Independent preliminary LoloBuy report", "Identified community ordering guide"],
+    internalLinkRole: "Evidence boundary for readers comparing published service claims with user reports.",
+  },
+  {
+    url: "/articles/lolobuy-weidian-link-guide",
+    primaryQuery: "lolobuy weidian link",
+    relatedTerms: ["weidian product link", "lolobuy product link", "verify weidian variants"],
+    intent: "problem solving",
+    angle: "Preserve the exact source listing and verify parsed variants from URL to warehouse.",
+    evidence: ["LoloBuy public website", "Identified community ordering guide", "Documented Weidian-to-LoloBuy example", "Weidian public website"],
+    internalLinkRole: "Marketplace-specific entry point to product pages, spreadsheet verification and QC.",
+  },
+  {
+    url: "/articles/lolobuy-qc-mismatch-evidence-guide",
+    primaryQuery: "what to do if lolobuy qc is wrong",
+    relatedTerms: ["lolobuy qc mismatch", "wrong size warehouse photos", "lolobuy return after qc", "qc evidence for refund request"],
+    intent: "problem solving",
+    angle: "Build a verifiable evidence file after a mismatch appears, without inventing a universal return or refund policy.",
+    evidence: ["LoloBuy public website", "Identified community ordering guide", "Independent preliminary LoloBuy report", "Lolobuy Sheet editorial evidence framework"],
+    internalLinkRole: "Remedial follow-on from the general QC checklist to category evidence, seller-link records and current order actions.",
+  },
+];

@@ -19,7 +19,7 @@ const routesByArticle: Record<string, string[]> = {
     "/categories/bags",
     "/products/off-white-hoodies",
     "/guides/shipping",
-    "/articles/plan-china-shopping-haul",
+    "/articles/lolobuy-qc-mismatch-evidence-guide",
   ],
   "plan-china-shopping-haul": [
     "/categories/bags",
@@ -38,6 +38,12 @@ const routesByArticle: Record<string, string[]> = {
     "/products/hoka-speedgoat-5",
     "/guides/qc",
     "/articles/lolobuy-spreadsheet-guide",
+  ],
+  "lolobuy-qc-mismatch-evidence-guide": [
+    "/categories/shoes",
+    "/products/off-white-hoodies",
+    "/guides/qc",
+    "/articles/how-to-read-qc-photos",
   ],
 };
 
@@ -67,6 +73,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/articles/how-to-read-qc-photos": "How to read QC photos",
       "/articles/lolobuy-spreadsheet-guide":
         "Spreadsheet verification guide",
+      "/articles/lolobuy-qc-mismatch-evidence-guide":
+        "QC mismatch evidence guide",
     },
   },
   es: {
@@ -94,6 +102,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/articles/how-to-read-qc-photos": "Cómo leer fotos QC",
       "/articles/lolobuy-spreadsheet-guide":
         "Guía para verificar el spreadsheet",
+      "/articles/lolobuy-qc-mismatch-evidence-guide":
+        "Guía de pruebas para diferencias QC",
     },
   },
   de: {
@@ -121,6 +131,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/articles/how-to-read-qc-photos": "QC-Fotos richtig lesen",
       "/articles/lolobuy-spreadsheet-guide":
         "Ratgeber zur Spreadsheet-Prüfung",
+      "/articles/lolobuy-qc-mismatch-evidence-guide":
+        "Belegleitfaden für QC-Abweichungen",
     },
   },
   fr: {
@@ -148,6 +160,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/articles/how-to-read-qc-photos": "Comment lire les photos QC",
       "/articles/lolobuy-spreadsheet-guide":
         "Guide de vérification du spreadsheet",
+      "/articles/lolobuy-qc-mismatch-evidence-guide":
+        "Guide de preuves pour un écart QC",
     },
   },
   it: {
@@ -175,6 +189,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/articles/how-to-read-qc-photos": "Come leggere le foto QC",
       "/articles/lolobuy-spreadsheet-guide":
         "Guida alla verifica dello spreadsheet",
+      "/articles/lolobuy-qc-mismatch-evidence-guide":
+        "Guida alle prove per differenze QC",
     },
   },
 };
