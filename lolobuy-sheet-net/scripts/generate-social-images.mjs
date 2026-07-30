@@ -99,6 +99,36 @@ function categoriesArt() {
     .join("");
 }
 
+function hoodieSizingArt() {
+  return `
+    <g transform="translate(92 324)">
+      <path d="M118 42L184 10L250 42L320 76L286 146L252 130V202H116V130L82 146L48 76Z"
+        fill="${palette.panel}" stroke="${palette.ivory}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M164 18Q184 78 204 18M148 42Q184 78 220 42" fill="none"
+        stroke="${palette.mint}" stroke-width="5" stroke-linecap="round"/>
+      <path d="M116 116H252" stroke="${palette.orange}" stroke-width="5"/>
+      <path d="M116 104V128M252 104V128" stroke="${palette.orange}" stroke-width="5"/>
+      <text x="184" y="106" fill="${palette.orange}" font-family="DejaVu Sans" font-size="15"
+        font-weight="700" text-anchor="middle">CHEST</text>
+      <path d="M270 44V202" stroke="${palette.mint}" stroke-width="5"/>
+      <path d="M258 44H282M258 202H282" stroke="${palette.mint}" stroke-width="5"/>
+      <text x="294" y="128" fill="${palette.mint}" font-family="DejaVu Sans" font-size="15"
+        font-weight="700" transform="rotate(90 294 128)">LENGTH</text>
+    </g>
+    ${["MEASURE FLAT", "MATCH POINTS", "SAVE THE CHART"]
+      .map(
+        (label, index) => `<g transform="translate(520 ${342 + index * 64})">
+          <rect width="558" height="48" rx="12" fill="${index === 1 ? palette.mint : palette.panel}"
+            stroke="${palette.rule}" stroke-width="2"/>
+          <circle cx="28" cy="24" r="10" fill="${index === 1 ? palette.mintInk : palette.orange}"/>
+          <text x="52" y="31" fill="${index === 1 ? palette.mintInk : palette.ivory}"
+            font-family="DejaVu Sans" font-size="17" font-weight="700">${label}</text>
+        </g>`,
+      )
+      .join("")}
+  `;
+}
+
 function qcArt() {
   return `
     <rect x="82" y="326" width="408" height="188" rx="18" fill="${palette.panel}" stroke="${palette.rule}" stroke-width="2"/>
@@ -235,6 +265,14 @@ const cards = [
     titleLine2: "clear product intent.",
     summary: "Start broad, then narrow the source and selected option.",
     art: categoriesArt(),
+  },
+  {
+    file: "hoodie-sizing-guide.png",
+    eyebrow: "HOODIE SIZE GUIDE",
+    titleLine1: "Measure the garment.",
+    titleLine2: "Then choose the tag.",
+    summary: "Compare the same flat points before ordering and warehouse acceptance.",
+    art: hoodieSizingArt(),
   },
   {
     file: "qc-guide.png",

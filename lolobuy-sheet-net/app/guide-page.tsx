@@ -18,6 +18,47 @@ import type { Locale } from "./translations";
 
 type PageKind = NavigationKey | "how-it-works" | "learn";
 
+const hoodieGuideCallout: Record<
+  Locale,
+  { eyebrow: string; title: string; body: string; cta: string }
+> = {
+  en: {
+    eyebrow: "Focused apparel guide",
+    title: "Choose a hoodie size with garment measurements",
+    body:
+      "Compare a hoodie you already wear with the seller chart, preserve the selected option and plan one decision-changing warehouse check.",
+    cta: "Read the hoodie size guide",
+  },
+  es: {
+    eyebrow: "Guía específica de ropa",
+    title: "Elige la talla de una sudadera con medidas de la prenda",
+    body:
+      "Compara una sudadera que ya usas con la tabla del vendedor, guarda la opción y prepara una comprobación decisiva en el almacén.",
+    cta: "Leer la guía de tallas de sudaderas",
+  },
+  de: {
+    eyebrow: "Fokussierter Bekleidungsratgeber",
+    title: "Wähle eine Hoodie-Größe anhand von Kleidungsmaßen",
+    body:
+      "Vergleiche einen eigenen Hoodie mit der Verkäufertabelle, sichere die gewählte Variante und plane eine entscheidende Lagerprüfung.",
+    cta: "Hoodie-Größenratgeber lesen",
+  },
+  fr: {
+    eyebrow: "Guide vêtement ciblé",
+    title: "Choisissez une taille de hoodie avec des mesures du vêtement",
+    body:
+      "Comparez un hoodie que vous portez avec le tableau vendeur, conservez l'option et préparez un contrôle d'entrepôt décisif.",
+    cta: "Lire le guide des tailles de hoodie",
+  },
+  it: {
+    eyebrow: "Guida mirata all'abbigliamento",
+    title: "Scegli la taglia di una felpa con misure del capo",
+    body:
+      "Confronta una felpa che indossi con la tabella del venditore, conserva l'opzione e pianifica un controllo decisivo in magazzino.",
+    cta: "Leggi la guida alle taglie delle felpe",
+  },
+};
+
 const pageIntro: Record<
   PageKind,
   { eyebrow: string; title: string; intro: string }
@@ -266,6 +307,7 @@ function ProductsPage({ locale }: { locale: Locale }) {
 
 function CategoriesPage({ locale }: { locale: Locale }) {
   const depth = guideDepthCopy[locale].categories;
+  const hoodieCallout = hoodieGuideCallout[locale];
 
   return localizeReactNode(
     <>
@@ -292,6 +334,17 @@ function CategoriesPage({ locale }: { locale: Locale }) {
         copy={depth}
         ariaLabel="Category-specific product checks"
       />
+      <section className="section-shell subpage-note">
+        <p className="eyebrow">{hoodieCallout.eyebrow}</p>
+        <h2>{hoodieCallout.title}</h2>
+        <p>{hoodieCallout.body}</p>
+        <Link
+          className="button button-primary"
+          href="/articles/lolobuy-hoodie-size-guide"
+        >
+          {hoodieCallout.cta} <span aria-hidden="true">→</span>
+        </Link>
+      </section>
       <section className="section-shell decision-section">
         <div className="section-heading compact">
           <div>
@@ -676,8 +729,8 @@ function ArticlesPage({ locale }: { locale: Locale }) {
               <img
                 src={article.image}
                 alt={article.imageAlt}
-                width="900"
-                height="900"
+                width="1200"
+                height="630"
                 loading={index === 0 ? "eager" : "lazy"}
               />
               <span>{String(index + 1).padStart(2, "0")}</span>

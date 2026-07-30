@@ -2218,6 +2218,65 @@ footer > div:not(.footer-brand) a:hover {
   scroll-margin-top: 28px;
 }
 
+.related-guides {
+  margin: 8px 0 58px;
+  padding-top: 50px;
+  border-top: 1px solid rgba(8, 19, 26, 0.18);
+}
+
+.related-guides .eyebrow {
+  color: #365c4b;
+}
+
+.related-guides h2 {
+  margin: 14px 0 26px;
+  font-size: clamp(31px, 4vw, 45px);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.related-guides > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.related-guides a {
+  min-width: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(8, 19, 26, 0.2);
+  background: #edf2ec;
+}
+
+.related-guides a:hover {
+  border-color: #4b7a64;
+}
+
+.related-guides span,
+.related-guides small {
+  color: #4b7a64;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.related-guides strong {
+  color: #263b33;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.related-guides small {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(8, 19, 26, 0.14);
+}
+
 .article-section-number {
   color: #4b7a64;
   font-family: var(--font-geist-mono), monospace;
@@ -3697,5 +3756,11 @@ footer > div:not(.footer-brand) a:hover {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .related-guides > div {
+    grid-template-columns: 1fr;
   }
 }

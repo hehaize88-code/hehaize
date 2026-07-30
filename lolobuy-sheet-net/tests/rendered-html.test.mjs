@@ -87,7 +87,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 50 canonical sitemap URLs with language alternates", async () => {
+test("publishes 51 canonical sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -96,14 +96,14 @@ test("publishes 50 canonical sitemap URLs with language alternates", async () =>
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 50);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 51);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
     xml,
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 50);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 51);
   assert.match(
     xml,
     /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-29<\/lastmod>/,
@@ -114,7 +114,11 @@ test("publishes 50 canonical sitemap URLs with language alternates", async () =>
   );
   assert.equal(
     new Set([...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1])).size,
-    1,
+    2,
+  );
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-hoodie-size-guide<\/loc>[\s\S]*?<lastmod>2026-07-30<\/lastmod>/,
   );
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/about<\/loc>/);
   assert.match(
@@ -151,6 +155,10 @@ test("uses concise standalone SEO titles for all long-form guides", async () => 
       "/articles/lolobuy-shipping-cost-guide",
       "LoloBuy Shipping Cost Guide: Weight &amp; Parcel Size",
     ],
+    [
+      "/articles/lolobuy-hoodie-size-guide",
+      "LoloBuy Hoodie Size Guide: Measure Before Ordering",
+    ],
   ]);
 
   for (const [pathname, title] of expectedTitles) {
@@ -168,6 +176,50 @@ test("uses concise standalone SEO titles for all long-form guides", async () => 
       pathname,
     );
   }
+});
+
+test("publishes a distinct evidence-led hoodie sizing article", async () => {
+  const pathname = "/articles/lolobuy-hoodie-size-guide";
+  const response = await fetchPage(pathname);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+
+  assert.match(
+    html,
+    /<h1>LoloBuy Hoodie Size Guide: A Measurement-First Method for Better Fit Decisions<\/h1>/,
+  );
+  assert.match(
+    html,
+    /rel="canonical" href="https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-hoodie-size-guide"/,
+  );
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /"datePublished":"2026-07-30"/);
+  assert.match(html, /Evidence ledger and limits/);
+  assert.match(html, /90 days of free storage/);
+  assert.match(html, /href="\/categories"/);
+  assert.match(html, /href="\/articles\/lolobuy-qc-photos-guide"/);
+  assert.match(html, /href="\/articles\/how-to-use-lolobuy-spreadsheet"/);
+
+  const lengthMatch = html.match(
+    /<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/,
+  );
+  assert.ok(lengthMatch, "visible editorial word count is missing");
+  const words = Number(lengthMatch[1].replaceAll(",", ""));
+  assert.equal(
+    words >= 1200 && words <= 1800,
+    true,
+    `hoodie guide reports ${words} editorial words`,
+  );
+
+  const absoluteLinks = [...html.matchAll(/href="(https?:\/\/[^"]+)"/g)].map(
+    (match) => new URL(match[1]).hostname,
+  );
+  assert.deepEqual(
+    [...new Set(absoluteLinks)].sort(),
+    ["lolobuy-sheet.net", "www.cnbuycha.com"],
+  );
+  assert.doesNotMatch(html, /"@type":"Product"/);
 });
 
 test("redirects legacy language parameters to clean locale paths", async () => {
@@ -230,6 +282,7 @@ test("shows visible authorship that agrees with Article structured data", async 
     "/articles/how-to-use-lolobuy-spreadsheet",
     "/articles/lolobuy-qc-photos-guide",
     "/articles/lolobuy-shipping-cost-guide",
+    "/articles/lolobuy-hoodie-size-guide",
   ]) {
     const response = await fetchPage(pathname);
     assert.equal(response.status, 200, pathname);
@@ -285,6 +338,7 @@ test("uses distinct 1200 by 630 social images for audited page intents", async (
     ["/faq", "faq.png"],
     ["/how-it-works", "how-it-works.png"],
     ["/privacy-policy", "editorial-standards.png"],
+    ["/articles/lolobuy-hoodie-size-guide", "hoodie-sizing-guide.png"],
   ]);
 
   for (const [pathname, filename] of pages) {

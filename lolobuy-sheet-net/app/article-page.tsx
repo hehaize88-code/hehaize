@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { articleWordCount, type ArticleRecord } from "./article-data";
+import {
+  articleWordCount,
+  articles,
+  type ArticleRecord,
+} from "./article-data";
 import { catalogBase } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
 
@@ -15,6 +19,9 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
   const wordCount = articleWordCount(article);
   const readMinutes = Math.max(6, Math.round(wordCount / 220));
   const canonical = `https://lolobuy-sheet.net/articles/${article.slug}`;
+  const relatedArticles = articles.filter(
+    (candidate) => candidate.slug !== article.slug,
+  );
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -213,6 +220,28 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
                   )}
                 </section>
               ))}
+
+              <section className="related-guides" aria-labelledby="related-guides">
+                <p className="eyebrow">Related buying guides</p>
+                <h2 id="related-guides">Continue with the next decision</h2>
+                <div>
+                  <Link href="/categories">
+                    <span>Product discovery</span>
+                    <strong>Browse by product category</strong>
+                    <small>Open categories →</small>
+                  </Link>
+                  {relatedArticles.map((related) => (
+                    <Link
+                      href={`/articles/${related.slug}`}
+                      key={related.slug}
+                    >
+                      <span>{related.eyebrow}</span>
+                      <strong>{related.shortTitle}</strong>
+                      <small>Read guide →</small>
+                    </Link>
+                  ))}
+                </div>
+              </section>
 
               <section className="article-end">
                 <p className="eyebrow">Continue your research</p>

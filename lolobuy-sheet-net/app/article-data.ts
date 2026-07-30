@@ -428,6 +428,127 @@ export const articles: ArticleRecord[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-hoodie-size-guide",
+    title:
+      "LoloBuy Hoodie Size Guide: A Measurement-First Method for Better Fit Decisions",
+    seoTitle: "LoloBuy Hoodie Size Guide: Measure Before Ordering",
+    shortTitle: "LoloBuy Hoodie Size Guide",
+    description:
+      "Use flat garment measurements, seller charts and focused warehouse checks to choose a LoloBuy hoodie size without relying on size letters alone.",
+    eyebrow: "Hoodie sizing and QC guide",
+    primaryKeyword: "LoloBuy hoodie size guide",
+    secondaryKeywords: [
+      "how to measure a hoodie for LoloBuy",
+      "LoloBuy hoodie sizing",
+      "LoloBuy hoodie QC measurements",
+      "Chinese hoodie size chart",
+    ],
+    intent:
+      "Choose and verify a hoodie size before ordering and before accepting the warehouse arrival",
+    checkedDate: "30 July 2026",
+    publishedDate: contentDates.articles["lolobuy-hoodie-size-guide"].published,
+    modifiedDate: contentDates.articles["lolobuy-hoodie-size-guide"].modified,
+    image: "/social/hoodie-sizing-guide.png",
+    imageAlt:
+      "Flat hoodie measurement diagram showing chest width, body length and sleeve measurement points",
+    imageCaption:
+      "An original editorial measurement map. Compare a hoodie you already wear with the seller chart using the same flat positions; size letters alone are not comparable evidence.",
+    standfirst:
+      "The safest way to choose a hoodie through a shopping agent is not to convert your usual letter size. Measure a hoodie you already like, read the seller’s current chart as a measurement method rather than a promise, and decide which warehouse evidence could still change your choice before the item becomes part of an international parcel.",
+    takeaways: [
+      "Begin with a hoodie you already wear and measure it flat without stretching the fabric.",
+      "Compare the same measurement points; a familiar size letter is not a universal standard.",
+      "Save the selected chart, option and date before submitting the product link.",
+      "Use warehouse photos for identity, visible condition and clearly positioned measurements—not as a guarantee of fit or material.",
+    ],
+    sourceNote:
+      "Evidence ledger, checked 30 July 2026: the public LoloBuy homepage describes ordering with a pasted Chinese product link, warehouse quality inspection and photographs, 90 days of free storage, and consolidation into an international parcel. Those platform statements establish the workflow only. The measurement method in this guide is independent editorial analysis; no fixed photo count, measurement service, return right, fee, delivery time or fit outcome is claimed.",
+    sections: [
+      {
+        heading: "The direct answer: choose by garment measurements, not the tag",
+        paragraphs: [
+          "For a LoloBuy hoodie order, the most useful starting point is a hoodie you already own and genuinely like wearing. Lay it on a flat surface, smooth obvious folds without pulling the fabric, and record its chest width, body length and sleeve measurement. Then compare those numbers with the seller’s current chart using the same measurement positions. If the chart measures a full chest circumference while you recorded a flat half-chest width, convert the format before comparing.",
+          "Do not begin by asking whether a Chinese “XL” equals a familiar “M” or “L.” Letter sizes are labels chosen by a seller or manufacturer, not standardized dimensions. Two listings can use the same letter while describing noticeably different garments. The practical question is whether the listed garment dimensions are close to the hoodie that already gives you the fit you want.",
+          "This method will not guarantee fit. Fabric weight, stretch, pattern shape, shoulder construction and washing can change how the same numbers feel. It does, however, replace a guess based on a tag with a comparison based on visible, repeatable evidence.",
+        ],
+      },
+      {
+        heading: "Build a reference hoodie record in five minutes",
+        paragraphs: [
+          "Choose the reference garment carefully. A hoodie that is too tight, unusually oversized or made from a very different fabric will produce a poor target. Button or zip it as you normally wear it, place it front-side up, and let the garment settle. Record whether it is a pullover or zip hoodie, whether the shoulder is set-in or dropped, and whether you measured before or after washing. A short note prevents the numbers from becoming detached from the fit you meant to reproduce.",
+          "Chest width is usually measured straight across from one underarm area to the other, with the garment flat. Body length may run from the high shoulder point near the neckline to the hem, but some charts use the center back. Sleeves may be measured from the shoulder seam, from the neckline, or as part of a raglan line. These are not interchangeable. Save a quick photograph of your tape placement so you can repeat it later.",
+        ],
+        bullets: [
+          "Chest: flat width and the exact underarm position",
+          "Length: starting point, ending point and front or back",
+          "Sleeve: shoulder seam, neckline or raglan starting point",
+          "Shoulder: seam to seam only when the garment has clear seams",
+          "Fit note: fitted, regular, relaxed or deliberately oversized",
+        ],
+      },
+      {
+        heading: "Read the seller chart as instructions, not just numbers",
+        paragraphs: [
+          "Before selecting an option, check whether the chart belongs to the exact listing and hoodie version. Marketplace pages sometimes group several products, seasonal updates or fabric weights under one page. A chart embedded in a review or old promotional image may describe a previous version. Prefer the chart tied to the currently selectable option, and preserve it with the product link, chosen color, size and date.",
+          "Look for the measurement labels, units and any diagram showing tape placement. Centimeters and inches should not be mixed; convert once and keep enough precision to avoid rounding a close decision in the wrong direction. Check whether chest means full circumference or flat width. For a flat measurement, doubling can help you compare with a circumference chart, but it does not create a body measurement or define the amount of ease.",
+        ],
+      },
+      {
+        heading: "Decide how much ease you actually want",
+        paragraphs: [
+          "A hoodie is larger than the body that wears it; the difference creates wearing ease and the intended silhouette. This is why comparing a seller chart directly with your body chest can be misleading. Your reference hoodie already contains the ease you know and can evaluate, so garment-to-garment comparison is usually simpler.",
+          "Compare more than chest width. A wider chest with a short body can look boxy; a long body with narrow shoulders can feel restrictive despite a generous length. Dropped shoulders move the sleeve starting point and can make a short sleeve number look normal. Ribbed cuffs and hems may also change the worn length without appearing in a basic chart.",
+          "Write down your priority before choosing: room for a T-shirt, room for a thick layer, a regular fit, or a deliberately oversized silhouette. If you are between two charted sizes, identify which dimension would make the larger or smaller option unacceptable. That decision rule is more useful than automatically sizing up.",
+        ],
+      },
+      {
+        heading: "Use a simple comparison instead of a conversion chart",
+        paragraphs: [
+          "Imagine a reference hoodie with a 60 cm flat chest, 69 cm body length and a 61 cm sleeve measured from a visible shoulder seam. A seller chart lists one option at 58, 68 and 60 cm, and the next at 61, 70 and 61 cm using the same positions. The larger option is closer to the reference across all three measurements. That does not prove it will feel identical, but it gives a transparent reason for the choice.",
+          "Now change one fact: the listing uses a dropped shoulder and measures the sleeve from the neckline. The sleeve figures can no longer be compared with the reference seam-to-cuff number. You may still compare chest and length, but the sleeve needs either a compatible chart measurement or a different reference hoodie with the same construction.",
+          "Do not invent a universal acceptable tolerance. Seller charts may note that manual measurements can vary, and manufactured garments can differ, but the amount that matters depends on your fit preference and the dimension involved. A small chest difference may matter to a fitted buyer while a similar length difference may matter more to someone with a long torso.",
+        ],
+        note:
+          "Reference hoodie: 60 cm chest, 69 cm length, 61 cm seam-to-cuff sleeve. Compare only seller numbers measured in the same positions. The example explains a method; it is not a LoloBuy size recommendation or a promised production tolerance.",
+      },
+      {
+        heading: "Preserve the option before submitting the product link",
+        paragraphs: [
+          "LoloBuy’s public homepage says a shopper can begin an order by pasting a Chinese product link. Before doing that, save the original page and the evidence behind your size choice. The order note should identify the exact size label, color, product version and chart you used. If the listing has coded options, copy the code rather than rewriting it from memory.",
+          "Keep the saved chart until the warehouse stage is complete. Listings can change or disappear, and the chart is part of the record explaining why you selected that option. It is also the reference for any later measurement question.",
+        ],
+      },
+      {
+        heading: "Plan focused warehouse checks for a hoodie",
+        paragraphs: [
+          "The public LoloBuy workflow describes quality inspection and photographs after the seller sends an item to the warehouse, along with 90 days of free storage. That supports a useful pause before international shipping, but it does not establish a universal number of images, a fixed measurement service or a guaranteed return outcome. Use the evidence available in the current order and check live terms before assuming an extra service.",
+          "Start with identity: correct hoodie, color, size tag and quantity. Then look at front and back, print or embroidery placement, zipper or drawcords, cuffs, hem and obvious marks. If one measurement would change your decision, request or use a photograph that clearly shows the tape start, end and full path. A number without visible placement is hard to compare with your reference.",
+          "Warehouse images cannot prove how the hoodie will drape on your body, how the fabric feels, whether it will shrink, its hidden construction, long-term durability or authenticity. They are evidence of visible identity and condition at one point in the order, not a fitting-room test.",
+        ],
+      },
+      {
+        heading: "Make a pass, question or action decision",
+        paragraphs: [
+          "Pass the hoodie when the visible identity, selected size and decision-changing details match the saved record closely enough for your stated fit goal. Ask a focused question when one missing angle or measurement can resolve the uncertainty. Identify the exact location and comparison—for example, the flat underarm width using the seller diagram—rather than asking for “better QC.”",
+          "If a clear mismatch appears, preserve the source chart, selected option, order record and relevant warehouse image, then use the current order process promptly. Seller and platform options can depend on the product, timing and live terms, so this guide does not promise a return, exchange or refund. The evidence package simply makes the issue easier to describe accurately.",
+          "After acceptance, include the hoodie in parcel planning with the other warehouse items. LoloBuy publicly describes consolidating stored goods into an international parcel, but route eligibility, price and delivery conditions remain live variables. The sizing decision is complete only when you have preserved the record and consciously accepted what the available evidence cannot prove.",
+        ],
+        bullets: [
+          "Pass: evidence matches the chosen option and fit goal",
+          "Question: one specific measurement or image can decide",
+          "Action: a documented mismatch changes the order decision",
+          "Parcel: only accepted items move into shipping planning",
+        ],
+      },
+      {
+        heading: "Evidence ledger and limits",
+        paragraphs: [
+          "Official source checked 30 July 2026: the public LoloBuy homepage. It was used only for LoloBuy’s own description of the pasted-link order start, warehouse quality inspection and photographs, 90 days of free storage, and consolidation for international shipping. These statements describe the platform’s published workflow; they are not independent proof that every seller, product, route or outcome will behave the same way.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string) {

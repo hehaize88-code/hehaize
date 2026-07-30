@@ -295,6 +295,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Read this after an item reaches the warehouse or before ordering if you want to define your QC evidence in advance. It provides a repeatable sequence for identity, variant, measurements and visible condition, followed by product-specific limits. The guide does not treat a flattering photo as proof of fit, authenticity, hidden construction or durability.",
       "lolobuy-shipping-cost-guide":
         "Use this once accepted items are ready for parcel planning. The guide separates product cost, domestic delivery and international freight, then explains actual versus volumetric weight, consolidation, packing and route restrictions. Worked examples are clearly labeled so an illustrative divisor or parcel does not look like a guaranteed LoloBuy rate.",
+      "lolobuy-hoodie-size-guide":
+        "Use this before choosing a hoodie option or while reviewing its warehouse arrival. It replaces letter-size conversion with flat garment measurements, shows how to compare seller charts measured in the same positions, and defines the focused QC evidence that can support a fit decision without pretending photos guarantee fit.",
     },
   },
   es: {
@@ -544,6 +546,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Lee esta guía cuando el artículo llegue al almacén o antes de pedir para definir las pruebas. Sigue una secuencia de identidad, variante, medidas y estado visible, con límites específicos. Una foto atractiva no prueba ajuste, autenticidad, construcción oculta ni duración.",
       "lolobuy-shipping-cost-guide":
         "Úsala cuando los artículos aceptados estén listos. Separa producto, entrega nacional y flete; explica peso real y volumétrico, consolidación, embalaje y restricciones. Los ejemplos están marcados para no parecer una tarifa garantizada.",
+      "lolobuy-hoodie-size-guide":
+        "Úsala antes de elegir una sudadera o al revisar su llegada al almacén. Sustituye la conversión por letras por medidas planas, compara tablas tomadas en los mismos puntos y define qué prueba QC puede apoyar la decisión sin prometer el ajuste.",
     },
   },
   de: {
@@ -793,6 +797,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Lies diesen Ratgeber beim Lagereingang oder definiere die QC-Belege bereits vorher. Er folgt Identität, Variante, Maßen und sichtbarem Zustand samt Grenzen. Ein gutes Foto beweist weder Passform, Echtheit, verborgene Verarbeitung noch Haltbarkeit.",
       "lolobuy-shipping-cost-guide":
         "Nutze ihn für akzeptierte, versandbereite Artikel. Er trennt Produkt, Inlandslieferung und Fracht und erklärt tatsächliches sowie Volumengewicht, Zusammenlegung, Verpackung und Limits. Beispiele sind klar als solche markiert.",
+      "lolobuy-hoodie-size-guide":
+        "Nutze ihn vor der Hoodie-Größenwahl oder bei der Lagerprüfung. Er ersetzt Buchstaben-Umrechnung durch flache Kleidungsmaße, vergleicht Tabellen mit gleichen Messpunkten und grenzt ein, welche QC-Nachweise die Entscheidung stützen können.",
     },
   },
   fr: {
@@ -1042,6 +1048,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Lisez ce guide à l'arrivée en entrepôt ou définissez les preuves avant l'achat. Il suit identité, variante, mesures et état visible avec leurs limites. Une belle photo ne prouve ni coupe, authenticité, construction cachée ni durée.",
       "lolobuy-shipping-cost-guide":
         "Utilisez-le lorsque les articles acceptés sont prêts. Il sépare produit, livraison nationale et fret, puis explique poids réel et volumétrique, regroupement, emballage et limites. Les exemples sont clairement signalés.",
+      "lolobuy-hoodie-size-guide":
+        "Utilisez-le avant de choisir une taille de hoodie ou lors de l'arrivée en entrepôt. Il remplace les équivalences de lettres par des mesures à plat, compare les mêmes points et précise les preuves QC utiles sans promettre la coupe.",
     },
   },
   it: {
@@ -1291,6 +1299,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Leggi la guida all'arrivo in magazzino o definisci prima le prove. Segue identità, variante, misure e condizione visibile con i loro limiti. Una bella foto non prova vestibilità, autenticità, costruzione nascosta o durata.",
       "lolobuy-shipping-cost-guide":
         "Usala quando gli articoli accettati sono pronti. Separa prodotto, consegna nazionale e trasporto e spiega peso reale e volumetrico, consolidamento, imballaggio e limiti. Gli esempi sono chiaramente indicati.",
+      "lolobuy-hoodie-size-guide":
+        "Usala prima di scegliere la taglia di una felpa o durante il controllo in magazzino. Sostituisce le equivalenze a lettere con misure piatte, confronta gli stessi punti e definisce le prove QC utili senza promettere la vestibilità.",
     },
   },
 };
