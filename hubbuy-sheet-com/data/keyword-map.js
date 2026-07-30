@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-restricted-items-shipping-guide": {
+    primaryQuery: "Hubbuy restricted items",
+    secondaryTerms: ["Hubbuy shipping restrictions", "Hubbuy battery shipping", "Hubbuy liquids shipping", "Hubbuy prohibited items"],
+    searchIntent: "Decide whether a product is transportable before ordering or submitting an international parcel",
+    angle: "Four-layer check separating prohibited goods, transport hazards, route eligibility and destination import rules",
+    evidence: ["Hubbuy public purchase workflow", "Public HubbuyCN forwarding and shipping policies", "UPU dangerous-goods guidance"],
+    internalLinkRole: "Restricted-items decision leaf supporting the parcel checklist without competing with the shipping-cost article",
+  },
   "hubbuy-reviews-customer-experience": {
     primaryQuery: "Hubbuy reviews",
     secondaryTerms: ["Hubbuy customer reviews", "is Hubbuy reliable", "Hubbuy shipping reviews", "Hubbuy complaints"],

@@ -99,7 +99,7 @@ function HubbuyReviewsArticle({ article }) {
       <section id="reliability">
         <span>05 · A better reliability test</span>
         <h2>Judge the exact order, not the brand name alone</h2>
-        <p>For a simple clothing order, the important controls may be seller-link accuracy, size measurements, visible condition and a suitable tracked route. For electronics, fragile goods or restricted products, the decision also depends on functional uncertainty, packaging, route eligibility and after-sales evidence. A single average score cannot combine those risk profiles intelligently.</p>
+        <p>For a simple clothing order, the important controls may be seller-link accuracy, size measurements, visible condition and a suitable tracked route. For electronics, fragile goods or restricted products, the decision also depends on functional uncertainty, packaging, route eligibility and after-sales evidence. Use the <Link href="/articles/hubbuy-restricted-items-shipping-guide/">Hubbuy restricted-items route guide</Link> before assuming that a warehouse arrival can use an ordinary line. A single average score cannot combine those risk profiles intelligently.</p>
         <p>Use reviews to create questions, then answer them with current transaction evidence. If support is praised, test the channel with a precise pre-order question. If packaging is important, ask which protection choices are currently available. If shipping cost is a concern, wait for warehouse weight and dimensions before comparing eligible routes. If QC is central, save the selected variant and use the <Link href="/articles/hubbuy-qc-photos-guide/">Hubbuy QC photo evidence guide</Link> to define what the images can actually show.</p>
         <p>The public sample leans strongly positive, so presenting Hubbuy reviews as mainly negative would be misleading. Converting a 4.8 score into a promise would be equally wrong. The evidence supports frequent reports of helpful service and satisfactory parcels, alongside uncertainty about representativeness, route performance and difficult after-sales cases.</p>
       </section>
@@ -505,7 +505,95 @@ function WarehouseArticle({ article }) {
   );
 }
 
+function RestrictedItemsArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">The most expensive restricted-item mistake happens before the parcel exists: buying something because the seller will send it to a Chinese warehouse, then discovering that no suitable international route appears. This Hubbuy restricted-items guide uses a four-layer check—product, transport hazard, live route and destination—so “can I buy it?” is not confused with “can I legally and safely ship it?”</p>
+
+      <ResearchDisclosure>The current <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy homepage</a> confirms a staged workflow in which goods reach the warehouse before international shipping is selected. Public HubbuyCN help pages provide additional shipping and forwarding language. Because route controls and destination law can change, this article does not turn an old category example into a permanent permission.</ResearchDisclosure>
+
+      <section id="direct-answer">
+        <span>01 · The direct answer</span>
+        <h2>A purchasable product is not automatically an internationally shippable product</h2>
+        <p>Hubbuy publicly describes purchasing Chinese products, receiving them at a warehouse, providing inspection images and combining accepted items for international shipping. That sequence creates two separate decisions. A seller may be able to deliver an item domestically to the warehouse while the packed item still has no eligible route to your country.</p>
+        <p>Before paying, identify what the item physically contains—not just its marketplace category. A lamp may include a battery, a cosmetic may contain alcohol, and an ordinary accessory may include liquid or powder. These details can change handling and available carriers.</p>
+        <p>The safe rule is blunt: if Hubbuy’s live interface or current support cannot confirm a suitable route for the exact item and destination, do not assume that warehouse arrival will solve the problem.</p>
+
+        <div className="article-callout">
+          <strong>Ask about the exact configuration</strong>
+          <p>“Can this product ship?” is weak. “Can this 20,000 mAh power bank, shipped by itself to my country, use any current line?” gives support a product, battery type, destination and decision.</p>
+        </div>
+      </section>
+
+      <section id="four-layers">
+        <span>02 · Restriction logic</span>
+        <h2>Separate four layers that are often collapsed into one warning label</h2>
+        <p><strong>Prohibited goods</strong> are the first stop. The public <a href="https://manager.hubbuycn.com/index/help/info/id/20.html" target="_blank" rel="noopener">HubbuyCN shipping policy</a> lists categories such as explosive, flammable, corrosive, radioactive or toxic hazardous items, currency, perishable goods and other articles unsuitable for mail. It also says destination-country prohibitions and customs rules still apply. A different packing request does not make a prohibited item acceptable.</p>
+        <p><strong>Dangerous goods</strong> create a safety risk and may require classification, limited quantities or special packaging. The <a href="https://www.upu.int/en/Universal-Postal-Union/Outreach-Campaigns/Dangerous-Goods" target="_blank" rel="noopener">Universal Postal Union</a> names everyday examples including lithium batteries, perfume and cleaning fluids. Narrow exceptions exist, but acceptance depends on the operator and applicable aviation rules.</p>
+        <p><strong>Route-limited goods</strong> may be transportable only through particular lines. Hubbuy’s public freight calculator asks for a product type as well as destination, weight and dimensions, and includes categories for pure batteries, batteries installed in equipment, liquids, paste, powder, food, medicine and branded goods. Those labels show why a price result for “common goods” cannot answer a battery question.</p>
+        <p><strong>Destination-restricted goods</strong> can pass a carrier check and still fail an import rule. Customs, product regulation, intellectual-property law and local safety requirements belong to the receiving country. A visible shipping option is not an import permit or a promise of clearance.</p>
+      </section>
+
+      <section id="product-evidence">
+        <span>03 · Before ordering</span>
+        <h2>Build a transport description from evidence, not the seller title</h2>
+        <p>Open the live seller page and record the exact variant. Save specifications that reveal any battery, liquid, powder, magnet, blade, aerosol or pressurized container. For electronics, record whether the battery is built in, packed with the device or sold separately. Preserve a visible capacity or chemistry label instead of estimating it.</p>
+        <p>Do not hide a sensitive component to make an order form accept the item. An incomplete description can produce the wrong route and withhold safety information. If the seller cannot provide a battery or ingredient detail needed for the decision, pause.</p>
+        <div className="article-point-grid">
+          <div><b>Identity</b><strong>Exact product · model · variant</strong><span>A generic category can conceal a restricted component.</span></div>
+          <div><b>Contents</b><strong>Battery · liquid · powder · magnet</strong><span>Record what is physically inside or attached.</span></div>
+          <div><b>Specification</b><strong>Capacity · volume · composition</strong><span>Use seller evidence and labels, not guesses.</span></div>
+          <div><b>Destination</b><strong>Country · region · recipient limits</strong><span>Route and import checks need a real destination.</span></div>
+        </div>
+      </section>
+
+      <section id="route-check">
+        <span>04 · Use current data</span>
+        <h2>Run the route check twice: before purchase and after packing</h2>
+        <p>The first check is a go/no-go screen. Use Hubbuy’s current estimator or support channel with the exact product type and destination. Save the date, description and response. An estimate shows that a route appeared at that moment; it is not a reservation, final quote or availability guarantee.</p>
+        <p>The second check happens with the real parcel. By then Hubbuy has the item, inspection evidence, packed weight, dimensions and the other contents you plan to consolidate. Re-run eligibility because one sensitive item can change the route set for every ordinary item in the box. Compare a combined parcel with a split if the restricted product removes otherwise suitable lines.</p>
+        <p>The public <a href="https://manager.hubbuycn.com/index/help/info/id/68.html" target="_blank" rel="noopener">HubbuyCN forwarding agreement</a> says the warehouse checks forwarded parcels for forbidden items and may mark products that do not meet air-shipment requirements, then notify the customer about return matters. That is a reason to check early, not a promise that every seller will accept a return or that the process will be free.</p>
+      </section>
+
+      <section id="batteries-liquids">
+        <span>05 · Common high-risk categories</span>
+        <h2>Batteries and liquids need precise questions, not a universal yes or no</h2>
+        <p>A battery installed in a small device is not the same transport case as a loose cell or power bank. Capacity, condition, quantity and packaging can matter, while carrier and destination restrictions differ. UPU guidance says posts can accept devices containing lithium batteries only under specified conditions and only when the postal operator is authorized. That does not mean every Hubbuy line accepts them.</p>
+        <p>Liquids are equally broad. Craft paint, perfume, nail product, adhesive and cleaning fluid do not share one hazard profile. Alcohol content, flammability, aerosol pressure and destination rules may control the result. The public calculator marks liquid and paste as sensitive categories, but that is not approval for a specific product.</p>
+        <p>Food, medicine, cosmetics and branded goods can introduce both carrier restrictions and import-law questions. Do not rely on a forum claim that one buyer shipped something similar. Ask Hubbuy about the current route, then check an authoritative destination source when permits, ingredients, intellectual property or personal-use limits could matter.</p>
+      </section>
+
+      <section id="parcel-decision">
+        <span>06 · Warehouse decision</span>
+        <h2>Choose one of four outcomes before paying international freight</h2>
+        <ol>
+          <li><strong>Ship on an eligible route.</strong> The item description is accurate, the live route accepts it and the destination check is complete.</li>
+          <li><strong>Split the parcel.</strong> Separate the route-limited item when it would remove sensible options for ordinary goods.</li>
+          <li><strong>Resolve one missing fact.</strong> Request a readable battery label, ingredient information or support confirmation when that fact can change eligibility.</li>
+          <li><strong>Do not submit it.</strong> Stop when the item is prohibited, materially misdescribed or has no confirmed compliant route.</li>
+        </ol>
+        <p>Keep cost separate from eligibility. The <Link href="/articles/hubbuy-shipping-cost-guide/">Hubbuy shipping-cost guide</Link> explains actual weight, volumetric weight and route pricing; this article answers the earlier question of whether a line should be considered at all.</p>
+      </section>
+
+      <section id="delivery-records">
+        <span>07 · Evidence after submission</span>
+        <h2>Preserve the classification and route record through delivery</h2>
+        <p>Save the item description, seller specification, warehouse images, support answer, route name, declared contents, packed weight and parcel submission. If the carrier or customs asks a question, answer accurately and keep the correspondence. Do not invent a value or description to avoid a restriction.</p>
+        <p>After delivery, photograph exterior damage before opening and inspect a battery-powered, liquid or fragile item carefully. International transport eligibility does not prove that the product functions, did not leak or matches every seller claim. The route record explains how it travelled; the source and QC records explain what should have arrived.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources">
+        <strong>Sources and editorial boundary</strong>
+        <p>The staged purchase workflow was checked on <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy’s public website</a> on 30 July 2026. Restriction examples and warehouse-forwarding language come from the public HubbuyCN <a href="https://manager.hubbuycn.com/index/help/info/id/20.html" target="_blank" rel="noopener">shipping policy</a>, <a href="https://manager.hubbuycn.com/index/help/info/id/68.html" target="_blank" rel="noopener">forwarding agreement</a> and <a href="https://manager.hubbuycn.com/index/page/estimate.html" target="_blank" rel="noopener">freight calculator</a>. UPU guidance supplies the general international-mail safety boundary. Current account, carrier and destination rules control the actual shipment.</p>
+      </div>
+      <ArticleCta />
+    </>
+  );
+}
+
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsArticle article={article} />;
   if (article.slug === "hubbuy-reviews-customer-experience") return <HubbuyReviewsArticle article={article} />;
   if (article.slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingArticle article={article} />;
   if (article.slug === "hubbuy-qc-photos-guide") return <QCPhotosArticle article={article} />;

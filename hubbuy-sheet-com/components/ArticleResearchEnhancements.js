@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "hubbuy-restricted-items-shipping-guide": [
+    ["Official purchase workflow", "Hubbuy places international route selection after warehouse inspection and parcel preparation.", OFFICIAL_HOME, "Official page ↗"],
+    ["Public shipping policy", "The HubbuyCN help center separates forbidden goods, shipment restrictions and carrier responsibility.", "https://manager.hubbuycn.com/index/help/info/id/20.html", "Shipping policy ↗"],
+    ["International-mail safety boundary", "UPU identifies batteries, perfume and cleaning fluids as dangerous goods and explains that only limited exceptions may enter international mail.", "https://www.upu.int/en/Universal-Postal-Union/Outreach-Campaigns/Dangerous-Goods", "UPU guidance ↗"],
+  ],
   "hubbuy-reviews-customer-experience": [
     ["Official service scope", "Hubbuy describes procurement, warehouse inspection, storage and consolidation; international shipping is provided by third parties.", OFFICIAL_HOME, "Official page ↗"],
     ["Trustpilot snapshot · 28 July 2026", "The live profile displayed 56 reviews, a 4.8 score and a 96% five-star share.", "https://www.trustpilot.com/review/hubbuy.com", "Public reviews ↗"],
@@ -137,7 +142,23 @@ function ReviewEvidenceMatrix() {
   );
 }
 
+function RestrictedItemsMatrix() {
+  return (
+    <figure className="research-visual review-evidence-matrix">
+      <div className="research-visual-heading"><span>Original restriction matrix</span><strong>Four checks before one parcel decision</strong></div>
+      <div className="review-matrix-grid">
+        <div><b>PROHIBITED</b><strong>Stop before purchase</strong><span>No route search can make an unlawful or forbidden item acceptable.</span></div>
+        <div><b>DANGEROUS GOODS</b><strong>Classify and disclose</strong><span>Batteries, perfume and some everyday products need special handling.</span></div>
+        <div><b>ROUTE-LIMITED</b><strong>Use the live result</strong><span>Eligibility depends on product type, packed parcel and destination.</span></div>
+        <div><b>DESTINATION CHECK</b><strong>Customs decides</strong><span>An available line is not an import permit or delivery guarantee.</span></div>
+      </div>
+      <figcaption>Editorial decision map created by Hubbuy Sheet from public HubbuyCN shipping information and UPU dangerous-goods guidance. It is not a live route result.</figcaption>
+    </figure>
+  );
+}
+
 function ArticleVisual({ slug }) {
+  if (slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsMatrix />;
   if (slug === "hubbuy-reviews-customer-experience") return <ReviewEvidenceMatrix />;
   if (slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingMap />;
   if (slug === "how-to-use-a-hubbuy-spreadsheet") return <EvidenceChain />;
