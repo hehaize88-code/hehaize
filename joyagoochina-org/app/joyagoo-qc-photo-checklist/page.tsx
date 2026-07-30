@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
 import { getSeoArticleEntry } from "../seoArticleLibrary";
+import { languageAlternates } from "../seoAlternates";
 
 const entry = getSeoArticleEntry("en", "joyagoo-qc-photo-checklist")!;
 
 export const metadata: Metadata = {
-  title: entry.article.title,
+  title: "Joyagoo QC Photos: Practical Inspection Checklist",
   description: entry.article.description,
   keywords: entry.keywords,
-  alternates: { canonical: "/joyagoo-qc-photo-checklist/" },
+  alternates: languageAlternates("/joyagoo-qc-photo-checklist/"),
   openGraph: {
     type: "article",
     title: entry.article.title,

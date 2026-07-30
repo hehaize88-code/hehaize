@@ -1,4 +1,12 @@
-import { categories, guideCards, mainSite, products } from "../data";
+import {
+  categories,
+  featuredProducts,
+  guideCards,
+  mainSite,
+  productCollections,
+  products,
+  type Product,
+} from "../data";
 import {
   localizedContent,
   type ContentSection,
@@ -17,6 +25,7 @@ import {
   completeLocalizedSections,
   requireLocalizedField,
 } from "../contentParity";
+import { collectionNames } from "../productContent";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 
@@ -179,10 +188,11 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
                   index
                 ]
               }`}
-              href={products[productIndex].href}
-              target="_blank"
-              rel="noopener"
-              key={products[productIndex].href}
+              href={localizePath(
+                locale,
+                `/product/${products[productIndex].slug}/`,
+              )}
+              key={products[productIndex].id}
             >
               <img
                 src={products[productIndex].image}
@@ -219,12 +229,10 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
           </div>
           <p>{copy.home.latestDescription}</p>
         </div>
-        <ProductGrid locale={locale} />
+        <ProductGrid locale={locale} items={featuredProducts} />
         <a
           className="text-link"
-          href={`${mainSite}/AllProducts/`}
-          target="_blank"
-          rel="noopener"
+          href={localizePath(locale, "/spreadsheet/")}
         >
           {copy.home.browseAll}
         </a>
@@ -329,50 +337,31 @@ function SeoArticleFeature({ locale }: { locale: Locale }) {
   );
 }
 
-export function ProductGrid({ locale }: { locale: Locale }) {
+export function ProductGrid({
+  locale,
+  items = products,
+}: {
+  locale: Locale;
+  items?: Product[];
+}) {
   const copy = translations[locale];
   const catalogue = localizedContent[locale].catalogue;
-  const englishCatalogue = localizedContent.en.catalogue;
 
   return (
     <div className="product-grid">
-      {products.map((product, index) => (
+      {items.map((product, index) => (
         <a
           className={`product-card product-card-${index + 1}`}
-          href={product.href}
-          target="_blank"
-          rel="noopener"
-          key={product.href}
+          href={localizePath(locale, `/product/${product.slug}/`)}
+          key={product.id}
         >
           <div className="product-image">
-            <img
-              src={product.image}
-              alt={requireLocalizedField(
-                locale,
-                catalogue.names[index],
-                englishCatalogue.names[index],
-                `catalogue.names[${index}]`,
-              )}
-            />
+            <img src={product.image} alt={product.name} />
             <span>{copy.home.viewProduct}</span>
           </div>
           <div className="product-meta">
-            <small>
-              {requireLocalizedField(
-                locale,
-                catalogue.labels[index],
-                englishCatalogue.labels[index],
-                `catalogue.labels[${index}]`,
-              )}
-            </small>
-            <h3>
-              {requireLocalizedField(
-                locale,
-                catalogue.names[index],
-                englishCatalogue.names[index],
-                `catalogue.names[${index}]`,
-              )}
-            </h3>
+            <small>{collectionNames[locale][product.collection]}</small>
+            <h3>{product.name}</h3>
             <div>
               <strong>{product.price}</strong>
               <span>
@@ -851,27 +840,48 @@ export function LocalizedPage({
       )}
 
       {isCategories && (
-        <section className="category-strip localized-categories">
-          {categories.map((category, index) => (
-            <a
-              href={category.href}
-              target="_blank"
-              rel="noopener"
-              key={category.name}
-            >
-              <span>{category.glyph}</span>
-              <strong>
-                {requireLocalizedField(
-                  locale,
-                  localizedCategoryNames[locale][index],
-                  category.name,
-                  `categories[${index}]`,
-                )}
-              </strong>
-              <small>{copy.home.browseCategory}</small>
-            </a>
-          ))}
-        </section>
+        <>
+          <section className="category-strip localized-categories">
+            {categories.map((category, index) => (
+              <a
+                href={category.href}
+                target="_blank"
+                rel="noopener"
+                key={category.name}
+              >
+                <span>{category.glyph}</span>
+                <strong>
+                  {requireLocalizedField(
+                    locale,
+                    localizedCategoryNames[locale][index],
+                    category.name,
+                    `categories[${index}]`,
+                  )}
+                </strong>
+                <small>{copy.home.browseCategory}</small>
+              </a>
+            ))}
+          </section>
+          <div className="category-product-groups">
+            {productCollections.map((collection) => (
+              <section
+                className="section category-product-group"
+                key={collection.name}
+              >
+                <div className="section-heading">
+                  <div>
+                    <p className="eyebrow">{copy.home.selectedProducts}</p>
+                    <h2>{collectionNames[locale][collection.name]}</h2>
+                  </div>
+                  <p>
+                    {collection.products.length} {copy.nav.spreadsheet}
+                  </p>
+                </div>
+                <ProductGrid locale={locale} items={collection.products} />
+              </section>
+            ))}
+          </div>
+        </>
       )}
 
       {isFaq && (

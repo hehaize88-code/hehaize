@@ -44,8 +44,10 @@ async function getWorker() {
 
 async function fetchHtml(path) {
   const activeWorker = await getWorker();
+  const normalizedPath =
+    path === "/" || path.endsWith("/") ? path : `${path}/`;
   const response = await activeWorker.fetch(
-    new Request(`http://localhost${path}`, {
+    new Request(`http://localhost${normalizedPath}`, {
       headers: { accept: "text/html" },
     }),
     {
@@ -59,7 +61,7 @@ async function fetchHtml(path) {
     },
   );
 
-  assert.equal(response.status, 200, path);
+  assert.equal(response.status, 200, normalizedPath);
   return response.text();
 }
 
@@ -81,15 +83,28 @@ test("every localized homepage keeps the complete content structure", async () =
   const englishProducts = count(english, /class="product-card /g);
 
   assert.equal(englishDetails, 13);
-  assert.equal(englishProducts, 7);
+  assert.equal(englishProducts, 8);
+  assert.match(english, /<html\b[^>]*\blang="en"/i);
 
   for (const locale of locales) {
     const html = await fetchHtml(`/${locale}`);
     assert.equal(count(html, /<details\b/g), englishDetails, locale);
     assert.equal(count(html, /class="product-card /g), englishProducts, locale);
+    assert.match(html, new RegExp(`<html\\b[^>]*\\blang="${locale}"`, "i"));
     for (const slug of articleRoutes) {
       assert.match(html, new RegExp(`/${locale}/${slug}/`), `${locale}:${slug}`);
     }
+  }
+});
+
+test("the product directory keeps all verified listings in every language", async () => {
+  const english = await fetchHtml("/spreadsheet/");
+  assert.equal(count(english, /class="product-card /g), 36);
+
+  for (const locale of locales) {
+    const html = await fetchHtml(`/${locale}/spreadsheet/`);
+    assert.equal(count(html, /class="product-card /g), 36, locale);
+    assert.match(html, new RegExp(`/${locale}/product/`, "i"));
   }
 });
 

@@ -2,6 +2,20 @@
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
 
+const primaryHost = "joyagoochina.org";
+const localeCodes = new Set([
+  "en",
+  "zh",
+  "de",
+  "pl",
+  "es",
+  "it",
+  "fr",
+  "pt",
+  "ro",
+  "sv",
+]);
+
 interface Env {
   ASSETS: Fetcher;
   DB: D1Database;
@@ -29,6 +43,15 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
+    if (url.hostname === `www.${primaryHost}`) {
+      url.hostname = primaryHost;
+      return Response.redirect(url.toString(), 301);
+    }
+
+    if (url.pathname === "/sitemap-main.xml") {
+      return Response.redirect(`https://${primaryHost}/sitemap.xml`, 301);
+    }
+
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {
@@ -40,7 +63,36 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    const routeRequest =
+      url.pathname !== "/" && url.pathname.endsWith("/")
+        ? new Request(
+            new URL(
+              `${url.pathname.slice(0, -1)}${url.search}`,
+              url.origin,
+            ),
+            request,
+          )
+        : request;
+    const response = await handler.fetch(routeRequest, env, ctx);
+    const contentType = response.headers.get("content-type") ?? "";
+    if (!contentType.includes("text/html")) return response;
+
+    const firstSegment = url.pathname.split("/").filter(Boolean)[0];
+    const language =
+      firstSegment && localeCodes.has(firstSegment) ? firstSegment : "en";
+    const html = (await response.text()).replace(
+      /<html\b([^>]*?)\blang=(["'])[^"']*\2([^>]*)>/i,
+      `<html$1lang="${language}"$3>`,
+    );
+    const headers = new Headers(response.headers);
+    headers.set("content-language", language);
+    headers.delete("content-length");
+
+    return new Response(html, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    });
   },
 };
 

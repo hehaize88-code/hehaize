@@ -4,11 +4,14 @@ import {
   LocalizedHome,
   LocalizedPage,
 } from "../../components/LocalizedExperience";
+import ProductPage from "../../components/ProductPage";
+import { getProductBySlug, products } from "../../data";
 import {
   isLocale,
   languages,
   translations,
 } from "../../i18n";
+import { languageAlternates, localizedRoutePath } from "../../seoAlternates";
 import { seoArticleCopy } from "../../seoArticles";
 import {
   getSeoArticleEntry,
@@ -41,6 +44,10 @@ export function generateStaticParams() {
         locale: language.code,
         slug: [slug],
       })),
+      ...products.map((product) => ({
+        locale: language.code,
+        slug: ["product", product.slug],
+      })),
     ]);
 }
 
@@ -50,7 +57,32 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug?: string[] }>;
 }): Promise<Metadata> {
   const { locale, slug = [] } = await params;
-  if (!isLocale(locale) || locale === "en" || slug.length > 1) return {};
+  if (!isLocale(locale) || locale === "en" || slug.length > 2) return {};
+
+  const localizedProduct =
+    slug[0] === "product" && slug[1]
+      ? getProductBySlug(slug[1])
+      : undefined;
+  if (localizedProduct) {
+    const routePath = `/product/${localizedProduct.slug}/`;
+    const title = `${localizedProduct.name} — ${translations[locale].nav.spreadsheet}`;
+    const description = `${localizedProduct.name}. ${localizedProduct.price} · ID ${localizedProduct.id}. ${translations[locale].home.latestDescription}`;
+    return {
+      title,
+      description,
+      alternates: {
+        ...languageAlternates(routePath),
+        canonical: localizedRoutePath(locale, routePath),
+      },
+      openGraph: {
+        type: "website",
+        title,
+        description,
+        url: `https://joyagoochina.org${localizedRoutePath(locale, routePath)}`,
+        images: [`https://joyagoochina.org${localizedProduct.image}`],
+      },
+    };
+  }
 
   const route = slug[0];
   const seoArticle = route ? getSeoArticleEntry(locale, route) : undefined;
@@ -72,25 +104,14 @@ export async function generateMetadata({
       };
   if (!page) return {};
 
-  const path = route ? `/${locale}/${route}/` : `/${locale}/`;
+  const basePath = route ? `/${route}/` : "/";
   return {
     title: page.title,
     description: page.intro,
     keywords: seoArticle?.keywords,
     alternates: {
-      canonical: path,
-      languages: Object.fromEntries(
-        languages.map((language) => [
-          language.code,
-          language.code === "en"
-            ? route
-              ? `/${route}/`
-              : "/"
-            : route
-              ? `/${language.code}/${route}/`
-              : `/${language.code}/`,
-        ]),
-      ),
+      ...languageAlternates(basePath),
+      canonical: localizedRoutePath(locale, basePath),
     },
   };
 }
@@ -104,15 +125,19 @@ export default async function LocalizedRoute({
   if (
     !isLocale(locale) ||
     locale === "en" ||
-    slug.length > 1 ||
-    (slug[0] && !routeSlugs.includes(slug[0]))
+    slug.length > 2 ||
+    (slug.length === 1 && !routeSlugs.includes(slug[0])) ||
+    (slug.length === 2 &&
+      (slug[0] !== "product" || !getProductBySlug(slug[1])))
   ) {
     notFound();
   }
 
-  return slug.length === 0 ? (
-    <LocalizedHome locale={locale} />
-  ) : (
-    <LocalizedPage locale={locale} slug={slug[0]} />
-  );
+  if (slug.length === 0) return <LocalizedHome locale={locale} />;
+  if (slug[0] === "product") {
+    return (
+      <ProductPage locale={locale} product={getProductBySlug(slug[1])!} />
+    );
+  }
+  return <LocalizedPage locale={locale} slug={slug[0]} />;
 }

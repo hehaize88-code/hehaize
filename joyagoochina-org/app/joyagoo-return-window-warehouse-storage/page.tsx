@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
 import { getSeoArticleEntry } from "../seoArticleLibrary";
+import { languageAlternates } from "../seoAlternates";
 
 const entry = getSeoArticleEntry(
   "en",
@@ -8,10 +9,12 @@ const entry = getSeoArticleEntry(
 )!;
 
 export const metadata: Metadata = {
-  title: entry.article.title,
+  title: "Joyagoo Returns: 5-Day QC & 90-Day Storage",
   description: entry.article.description,
   keywords: entry.keywords,
-  alternates: { canonical: "/joyagoo-return-window-warehouse-storage/" },
+  alternates: languageAlternates(
+    "/joyagoo-return-window-warehouse-storage/",
+  ),
   openGraph: {
     type: "article",
     title: entry.article.title,

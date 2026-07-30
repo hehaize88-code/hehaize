@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { languageAlternates } from "./seoAlternates";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +28,7 @@ export const metadata: Metadata = {
     "Joyagoo shipping",
     "Joyagoo products",
   ],
-  alternates: {
-    canonical: "/",
-  },
+  alternates: languageAlternates("/"),
   openGraph: {
     type: "website",
     title: "Joyagoo Spreadsheet 2026",

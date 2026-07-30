@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
 import { getSeoArticleEntry } from "../seoArticleLibrary";
+import { languageAlternates } from "../seoAlternates";
 
 const entry = getSeoArticleEntry(
   "en",
@@ -8,10 +9,12 @@ const entry = getSeoArticleEntry(
 )!;
 
 export const metadata: Metadata = {
-  title: entry.article.title,
+  title: "Joyagoo Shipping Cost & Volumetric Weight Guide",
   description: entry.article.description,
   keywords: entry.keywords,
-  alternates: { canonical: "/joyagoo-volumetric-weight-shipping-cost/" },
+  alternates: languageAlternates(
+    "/joyagoo-volumetric-weight-shipping-cost/",
+  ),
   openGraph: {
     type: "article",
     title: entry.article.title,

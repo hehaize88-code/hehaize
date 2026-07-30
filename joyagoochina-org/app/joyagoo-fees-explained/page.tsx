@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
 import { seoArticleCopy } from "../seoArticles";
+import { languageAlternates } from "../seoAlternates";
 
 export const metadata: Metadata = {
-  title: seoArticleCopy.en.article.title,
+  title: "Joyagoo Fees: Service, Warehouse & Shipping Costs",
   description: seoArticleCopy.en.article.description,
   keywords: [
     "joyagoo fees",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "joyagoo rehearsal packing",
     "joyagoo volumetric weight",
   ],
-  alternates: { canonical: "/joyagoo-fees-explained/" },
+  alternates: languageAlternates("/joyagoo-fees-explained/"),
   openGraph: {
     type: "article",
     title: seoArticleCopy.en.article.title,
