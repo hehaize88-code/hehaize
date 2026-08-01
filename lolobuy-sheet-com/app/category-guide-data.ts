@@ -535,7 +535,7 @@ const categoryGuides: CategoryGuideConfig[] = [
   {
     slug: "bags",
     image: "/products/bag.webp",
-    directoryHref: "https://www.cnbuycha.com/AllProducts/",
+    directoryHref: "https://www.cnbuycha.com/accessories/",
     productKinds: ["bag"],
     copy: {
       en: {

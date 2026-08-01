@@ -81,7 +81,7 @@ const categoryText: Record<
     { name: "Accesorios", description: "Explora carteras, joyería, gafas y accesorios pequeños revisando materiales y dimensiones." },
     { name: "Camisetas", description: "Revisa camisetas por posición del estampado, cuello, peso del tejido y tabla de medidas." },
     { name: "Bolsos", description: "Compara mochilas y otros bolsos por medidas, compartimentos, correas, cierres y variante exacta." },
-    { name: "Todos los productos", description: "Busca en el directorio completo cuando una categoría sea demasiado limitada." },
+    { name: "Camisetas deportivas", description: "Explora camisetas de fútbol, baloncesto y otros deportes; confirma equipo, temporada, talla y versión elegida." },
   ],
   de: [
     { name: "Schuhe", description: "Lauf-, Freizeit- und weitere Schuhe ansehen und das aktuelle Angebot vor der Bestellung prüfen." },
@@ -92,7 +92,7 @@ const categoryText: Record<
     { name: "Accessoires", description: "Geldbörsen, Schmuck, Brillen und kleine Accessoires mit Material- und Maßprüfung ansehen." },
     { name: "T-Shirts", description: "T-Shirts nach Druckposition, Kragen, Stoffgewicht und Maßtabelle prüfen." },
     { name: "Taschen", description: "Rucksäcke und weitere Taschen nach Maßen, Fächern, Gurten, Verschlüssen und genauer Variante vergleichen." },
-    { name: "Alle Produkte", description: "Das vollständige Verzeichnis durchsuchen, wenn eine Kategorie zu eng ist." },
+    { name: "Trikots", description: "Fußball-, Basketball- und andere Sporttrikots ansehen und Team, Saison, Größe sowie gewählte Version prüfen." },
   ],
   fr: [
     { name: "Chaussures", description: "Parcourez chaussures de course, modèles décontractés et autres, puis vérifiez la fiche actuelle." },
@@ -103,7 +103,7 @@ const categoryText: Record<
     { name: "Accessoires", description: "Explorez portefeuilles, bijoux, lunettes et petits accessoires en vérifiant matières et dimensions." },
     { name: "T-shirts", description: "Examinez placement du motif, col, poids du tissu et tableau de mesures." },
     { name: "Sacs", description: "Comparez sacs à dos et autres sacs par dimensions, compartiments, sangles, fermetures et variante exacte." },
-    { name: "Tous les produits", description: "Recherchez dans le catalogue complet lorsqu'une catégorie est trop étroite." },
+    { name: "Maillots", description: "Parcourez les maillots de football, basket et autres sports, puis vérifiez équipe, saison, taille et version." },
   ],
   it: [
     { name: "Scarpe", description: "Esplora scarpe da corsa, modelli casual e altro, poi verifica la scheda attuale." },
@@ -114,7 +114,7 @@ const categoryText: Record<
     { name: "Accessori", description: "Esplora portafogli, gioielli, occhiali e piccoli accessori verificando materiali e dimensioni." },
     { name: "T-shirt", description: "Controlla posizione della stampa, collo, peso del tessuto e tabella misure." },
     { name: "Borse", description: "Confronta zaini e altre borse per misure, scomparti, cinturini, chiusure e variante esatta." },
-    { name: "Tutti i prodotti", description: "Cerca nel catalogo completo quando una categoria è troppo limitata." },
+    { name: "Maglie sportive", description: "Esplora maglie da calcio, basket e altri sport, poi verifica squadra, stagione, taglia e versione scelta." },
   ],
 };
 

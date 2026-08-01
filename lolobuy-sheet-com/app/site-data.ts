@@ -180,17 +180,17 @@ export const categories = [
     name: "Bags",
     slug: "bags",
     image: "/products/bag.webp",
-    href: `${destinationBase}/AllProducts/`,
+    href: `${destinationBase}/accessories/`,
     description:
       "Compare backpacks and other bags by dimensions, compartments, straps, closures and the exact selected option.",
   },
   {
-    name: "All products",
-    slug: "all-products",
-    image: "/products/bag.webp",
-    href: `${destinationBase}/AllProducts/`,
+    name: "Jersey",
+    slug: "jersey",
+    image: "/products/jersey.webp",
+    href: `${destinationBase}/Jersey/`,
     description:
-      "Search the complete live product directory when a category shortcut is too narrow.",
+      "Browse football, basketball and other sports jerseys, then confirm the exact team, season, size and selected version.",
   },
 ] as const;
 

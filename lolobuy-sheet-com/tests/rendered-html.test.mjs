@@ -256,6 +256,21 @@ test("serves substantial localized category and article landing pages", async ()
   assert.match(mismatchHtml, /DIE ABWEICHUNGSAKTE/i);
 });
 
+test("category cards open the matching live directories and use a jersey card", async () => {
+  const worker = await loadWorker();
+  const response = await fetchPage(worker, "/categories");
+  const html = await response.text();
+
+  assert.equal(response.status, 200);
+  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/shoes\/"/);
+  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/hoodies-sweaters\/"/);
+  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/accessories\/"/);
+  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/Jersey\/"/);
+  assert.match(html, /src="\/products\/jersey\.webp"/);
+  assert.match(html, /<h2>Jersey<\/h2>/);
+  assert.doesNotMatch(html, /<h2>All products<\/h2>/);
+});
+
 test("serves eight evidence-led product pages with local responsive images", async () => {
   const worker = await loadWorker();
   const products = [

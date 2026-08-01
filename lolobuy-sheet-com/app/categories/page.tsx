@@ -10,12 +10,6 @@ import { getLocalizedCategories } from "../localized-data";
 import { categoriesPageCopy, commonPageCopy } from "../page-copy";
 import { localizedMetadata } from "../seo";
 
-const internalCategoryGuides = new Set([
-  "shoes",
-  "hoodies-sweaters",
-  "bags",
-]);
-
 export async function generateMetadata({
   searchParams,
 }: {
@@ -60,21 +54,9 @@ export default async function CategoriesPage({
         {localizedCategories.map((category) => (
           <article className="category-page-card" key={category.slug}>
             <a
-              href={
-                internalCategoryGuides.has(category.slug)
-                  ? localizedPath(`/categories/${category.slug}`, locale)
-                  : category.href
-              }
-              target={
-                internalCategoryGuides.has(category.slug)
-                  ? undefined
-                  : "_blank"
-              }
-              rel={
-                internalCategoryGuides.has(category.slug)
-                  ? undefined
-                  : "noopener"
-              }
+              href={category.href}
+              target="_blank"
+              rel="noopener"
             >
               <div className="category-image">
                 <Image
@@ -90,11 +72,7 @@ export default async function CategoriesPage({
                 <p>{copy.directory} / {category.slug.replaceAll("-", " ").toUpperCase()}</p>
                 <h2>{category.name}</h2>
                 <span>{category.description}</span>
-                <b>
-                  {internalCategoryGuides.has(category.slug)
-                    ? `${copy.guide} →`
-                    : `${copy.open} ↗`}
-                </b>
+                <b>{copy.open} ↗</b>
               </div>
             </a>
           </article>
@@ -131,12 +109,7 @@ export default async function CategoriesPage({
             "@type": "ListItem",
             position: index + 1,
             name: category.name,
-            url: internalCategoryGuides.has(category.slug)
-              ? `https://lolobuy-sheet.com${localizedPath(
-                  `/categories/${category.slug}`,
-                  locale,
-                )}`
-              : category.href,
+            url: category.href,
           })),
         }}
       />
