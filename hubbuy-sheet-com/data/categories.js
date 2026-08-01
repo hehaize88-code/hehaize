@@ -173,7 +173,7 @@ export const categoryPages = [
     name: "Collectibles",
     note: "Plush & display items",
     code: "08",
-    livePath: "/AllProducts/",
+    livePath: "/other-stuff/",
     searchTerm: "collectibles plush",
     title: "Hubbuy Collectibles Spreadsheet: Plush and Display Items",
     seoTitle: "Hubbuy Collectibles Spreadsheet 2026: Plush & Display Items",

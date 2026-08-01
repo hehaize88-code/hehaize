@@ -132,15 +132,15 @@ export default function HomePage({ locale = "en" } = {}) {
         <div className="wrap">
           <div className="section-heading inline-heading">
             <div><span className="eyebrow">Browse by category</span><h2>Start with what you need</h2></div>
-            <Link href="/products/">View every category <ArrowIcon /></Link>
+            <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">View every category <ArrowIcon /></a>
           </div>
           <div className="category-grid">
             {categories.map(category => (
-              <Link key={category.name} className="category-card" href={category.href}>
+              <a key={category.name} className="category-card" href={category.liveHref} target="_blank" rel="noopener">
                 <span className="category-code">{category.code}</span>
                 <span><strong>{category.name}</strong><small>{category.note}</small></span>
                 <ArrowIcon size={17} />
-              </Link>
+              </a>
             ))}
           </div>
         </div>
