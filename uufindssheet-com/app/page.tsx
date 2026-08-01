@@ -13,9 +13,9 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Independent guide <span>•</span> Updated July 2026</p>
-          <h1>Find it on <em>UUFinds.</em><br />Explore it on<br />CNBuy Sheet.</h1>
+          <h1>Find it on <em>UUFinds.</em><br />Explore it on<br />the main site.</h1>
           <p className="hero-intro">
-            Research a product with UUFinds, check available QC material, then browse the matching category on CNBuy Sheet.
+            Research a product with UUFinds, check available QC material, then browse the matching category through the main shopping link.
           </p>
           <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" role="search">
             <input type="hidden" name="channelid" value="2" />
@@ -24,7 +24,7 @@ export default function Home() {
               name="keywords"
               required
               placeholder="Search shoes, hoodies, accessories…"
-              aria-label="Search CNBuy Sheet products"
+              aria-label="Search main-site products"
             />
             <button type="submit">Search finds <span aria-hidden="true">↗</span></button>
           </form>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="proof-row" aria-label="Site features">
             <div><span>09</span><small>Category<br />shortcuts</small></div>
             <div><span>QC</span><small>First buying<br />guide</small></div>
-            <div><span>↗</span><small>Direct CNBuy<br />Sheet links</small></div>
+            <div><span>↗</span><small>Direct shopping<br />links</small></div>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="grid-lines" aria-hidden="true" />
           <ResponsiveHeroImage />
           <div className="route-tag" aria-hidden="true">
-            <span>CNBUY SHEET LINK</span>
+            <span>SHOPPING LINK</span>
             <strong>READY TO OPEN</strong>
             <b>↑</b>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
             <p className="eyebrow">Curated routes / 09</p>
             <h2>Start with a category.</h2>
           </div>
-          <p>Each shortcut opens the matching CNBuy Sheet category—not a generic homepage.</p>
+          <p>Each shortcut opens the matching main-site category—not a generic homepage.</p>
         </div>
         <div className="category-grid">
           {categories.map((category) => (
@@ -77,7 +77,7 @@ export default function Home() {
             <p className="eyebrow">Product routes / 08</p>
             <h2>Open a real product detail.</h2>
           </div>
-          <p>Each find has its own page here, followed by one direct button to the exact CNBuy Sheet product.</p>
+          <p>Each find has its own page here, followed by one direct button to the exact main-site product.</p>
         </div>
         <div className="product-showcase-grid">
           {products.map((product, index) => (
@@ -133,7 +133,7 @@ export default function Home() {
           <article>
             <span>03</span>
             <p className="step-label">BROWSE</p>
-            <h3>Continue on CNBuy Sheet</h3>
+            <h3>Continue on the main site</h3>
             <p>Use the category shortcuts to explore related listings. Re-check the live product page because availability, price, variants and seller information can change.</p>
             <a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse all products ↗</a>
           </article>
@@ -164,13 +164,13 @@ export default function Home() {
         <div className="trust-card">
           <p className="eyebrow">Clear relationship</p>
           <h2>Independent by design.</h2>
-          <p>UUFinds Sheet is an editorial guide and routing site. We do not claim to be UUFinds, do not sell products and do not process orders. All outbound search, category and product routes on this site lead only to CNBuy Sheet.</p>
+          <p>UUFinds Sheet is an editorial guide and routing site. We do not claim to be UUFinds, do not sell products and do not process orders. All outbound search, category and product routes on this site lead only to the main site.</p>
         </div>
         <div className="facts-card">
           <div><span>01</span><p><strong>Official function:</strong> UUFinds describes its website as a free QC finder for photos and videos.</p></div>
           <div><span>02</span><p><strong>Supported inputs:</strong> its App Store listing mentions 1688, Taobao, Weidian and shopping-agent link conversion.</p></div>
-          <div><span>03</span><p><strong>Destination:</strong> CNBuy Sheet publishes browsable category and product-detail pages.</p></div>
-          <div className="source-row"><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse CNBuy Sheet products ↗</a></div>
+          <div><span>03</span><p><strong>Destination:</strong> The main shopping site publishes browsable category and product-detail pages.</p></div>
+          <div className="source-row"><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse main-site products ↗</a></div>
         </div>
       </section>
 
@@ -190,12 +190,12 @@ export default function Home() {
             <p>No. A photo is evidence from one item or batch at a point in time. Match the listing carefully, inspect multiple angles and confirm the destination page before making a decision.</p>
           </details>
           <details>
-            <summary>Why do the category links open CNBuy Sheet?<span>+</span></summary>
-            <p>This guide connects research intent with browsable CNBuy Sheet categories. Each category button opens its matching section rather than sending every visitor to the homepage.</p>
+            <summary>Why do the category links open another site?<span>+</span></summary>
+            <p>This guide connects research intent with browsable main-site categories. Each category button opens its matching section rather than sending every visitor to the homepage.</p>
           </details>
           <details>
             <summary>Can I search with a product name?<span>+</span></summary>
-            <p>Yes. Your complete search phrase is passed to CNBuy Sheet, so searches such as “Nike shoes” or “black hoodie” open the matching product results rather than a generic category page.</p>
+            <p>Yes. Your complete search phrase is passed to the main site, so searches such as “Nike shoes” or “black hoodie” open the matching product results rather than a generic category page.</p>
           </details>
           <details>
             <summary>What should I re-check on the destination page?<span>+</span></summary>
@@ -213,7 +213,7 @@ export default function Home() {
             "@type": "WebSite",
             name: "UUFinds Sheet",
             url: "https://uufindssheet.com/",
-            description: "Independent UUFinds spreadsheet and QC research guide with direct CNBuy Sheet category routes.",
+            description: "Independent UUFinds spreadsheet and QC research guide with direct main-site category routes.",
             publisher: { "@type": "Organization", name: "UUFinds Sheet" },
           }),
         }}

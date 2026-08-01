@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 
 const root = new URL("../out/", import.meta.url);
@@ -34,6 +34,16 @@ const betweenClasses = (html, startClass, endClass) => {
   const end = html.indexOf(`class="${endClass}"`, start + 1);
   assert.ok(start >= 0 && end > start, `missing range ${startClass} -> ${endClass}`);
   return html.slice(start, end);
+};
+
+const filesUnder = async (directory) => {
+  const result = [];
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) result.push(...await filesUnder(path));
+    else if (entry.isFile()) result.push(path);
+  }
+  return result;
 };
 
 for (const locale of locales) {
@@ -175,4 +185,21 @@ assert.match(sitemap, /https:\/\/uufindssheet\.com\/pt-br\/terms\//);
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnlyGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
 
-console.log("Validated multilingual content parity, layout, image markup, route-preserving language links, trust pages, and sitemap.");
+const allowedOutboundHosts = new Set(["uufindssheet.com", "www.cnbuycha.com"]);
+const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));
+for (const file of publishedHtmlFiles) {
+  const html = await readFile(file, "utf8");
+  assert.doesNotMatch(
+    html,
+    /(?:CNBuy|CNBUY|CNF|CNFans)/,
+    `published page still exposes a main-site brand name: ${file}`,
+  );
+  for (const match of html.matchAll(/\b(?:href|action)="([^"]+)"/g)) {
+    const target = match[1];
+    if (!/^https?:\/\//i.test(target)) continue;
+    const host = new URL(target).hostname;
+    assert.ok(allowedOutboundHosts.has(host), `unexpected outbound destination ${host} in ${file}`);
+  }
+}
+
+console.log("Validated multilingual parity, layout, images, route-preserving language links, brand-neutral copy, outbound hosts, trust pages, and sitemap.");

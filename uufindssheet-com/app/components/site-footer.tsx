@@ -3,27 +3,27 @@ import { SiteImage } from "./site-image";
 
 const footerCopy = {
   en: {
-    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. All outbound shopping links lead only to CNBuy Sheet.",
+    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. All outbound shopping links lead only to the main shopping site.",
     link: "Browse product finds →",
     policy: ["About", "Contact", "Editorial Policy", "Privacy", "Terms"],
   },
   "en-gb": {
-    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. All outbound shopping links lead only to CNBuy Sheet.",
+    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. All outbound shopping links lead only to the main shopping site.",
     link: "Browse product finds →",
     policy: ["About", "Contact", "Editorial Policy", "Privacy", "Terms"],
   },
   de: {
-    text: "Unabhängiger Bildungsratgeber. Nicht mit UUFinds verbunden, von UUFinds empfohlen oder betrieben. Alle externen Shopping-Links führen ausschließlich zu CNBuy Sheet.",
+    text: "Unabhängiger Bildungsratgeber. Nicht mit UUFinds verbunden, von UUFinds empfohlen oder betrieben. Alle externen Shopping-Links führen ausschließlich zur Hauptseite.",
     link: "Produktfunde ansehen →",
     policy: ["Über uns", "Kontakt", "Redaktionsrichtlinie", "Datenschutz", "Bedingungen"],
   },
   pl: {
-    text: "Niezależny przewodnik edukacyjny. Strona nie jest powiązana z UUFinds, wspierana ani prowadzona przez UUFinds. Wszystkie zewnętrzne linki zakupowe prowadzą wyłącznie do CNBuy Sheet.",
+    text: "Niezależny przewodnik edukacyjny. Strona nie jest powiązana z UUFinds, wspierana ani prowadzona przez UUFinds. Wszystkie zewnętrzne linki zakupowe prowadzą wyłącznie do strony głównej.",
     link: "Zobacz znalezione produkty →",
     policy: ["O stronie", "Kontakt", "Polityka redakcyjna", "Prywatność", "Warunki"],
   },
   "pt-br": {
-    text: "Guia educacional independente. Não é afiliado, endossado nem operado pelo UUFinds. Todos os links externos de compras levam somente ao CNBuy Sheet.",
+    text: "Guia educacional independente. Não é afiliado, endossado nem operado pelo UUFinds. Todos os links externos de compras levam somente ao site principal.",
     link: "Ver produtos encontrados →",
     policy: ["Sobre", "Contato", "Política editorial", "Privacidade", "Termos"],
   },

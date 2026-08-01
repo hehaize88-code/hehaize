@@ -25,7 +25,7 @@ export const articleCards: ArticleCard[] = [
   {
     tag: "SEO BUYING GUIDE",
     title: "UUFinds Spreadsheet Guide 2026: from QC research to better product finds",
-    summary: "A complete reverse-shopping workflow for researching evidence, comparing listings and continuing to the right CNBuy Sheet product page.",
+    summary: "A complete reverse-shopping workflow for researching evidence, comparing listings and continuing to the right main-site product page.",
     href: "/guides/uufinds-spreadsheet-shopping-guide-2026/",
     read: "12 min read",
     featured: true,
@@ -39,7 +39,7 @@ export const articleCards: ArticleCard[] = [
   },
   {
     tag: "BEGINNER GUIDE",
-    title: "How to use UUFinds and continue browsing on CNBuy Sheet",
+    title: "How to use UUFinds and continue browsing on the main site",
     summary: "A clear research-to-browse workflow for links from Taobao, Weidian, 1688 and supported shopping agents.",
     href: "/guides/how-to-use-uufinds/",
     read: "9 min read",

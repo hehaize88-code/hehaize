@@ -8,11 +8,11 @@ import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
   title: "Product Detail Research with UUFinds QC Checks | UUFinds Sheet",
-  description: "Browse eight CNBuy Sheet product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
+  description: "Browse eight main-site product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
   alternates: localizedAlternates("/products/"),
   openGraph: {
     title: "Product Detail Research with UUFinds QC Checks | UUFinds Sheet",
-    description: "Browse eight CNBuy Sheet product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
+    description: "Browse eight main-site product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
     url: "/products/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -26,7 +26,7 @@ export default function ProductsPage() {
       <section className="hub-hero">
         <p className="eyebrow">Products / 08 direct listing routes</p>
         <h1>See the listing.<br /><em>Separate it from QC evidence.</em></h1>
-        <p>The images below come from the corresponding CNBuy Sheet listings; they are not labeled as UUFinds warehouse QC albums. Open a detail page, note the exact item ID, then use the official UUFinds research functions only when matched QC media is available for that source.</p>
+        <p>The images below come from the corresponding main-site listings; they are not labeled as UUFinds warehouse QC albums. Open a detail page, note the exact item ID, then use the official UUFinds research functions only when matched QC media is available for that source.</p>
       </section>
       <section className="hub-content">
         <div className="product-showcase-grid">
@@ -53,13 +53,13 @@ export default function ProductsPage() {
             <article><p className="step-label">LISTING IMAGE</p><h3>Shows how the product is presented</h3><p>Use it to identify the model, color, design and seller-facing description on the current product page.</p><strong>It may be a catalog or promotional image rather than a warehouse sample.</strong></article>
             <article><p className="step-label">MATCHED QC PHOTO</p><h3>Shows one photographed item</h3><p>Use it to inspect visible shape, construction, finish and measurements when the source link or item ID agrees.</p><strong>It documents a sample, not every future unit.</strong></article>
             <article><p className="step-label">QC VIDEO</p><h3>Adds motion and hidden angles</h3><p>Use video to examine fabric drape, zipper movement, sole flex, reflective material or angles missing from still images.</p><strong>It does not confirm durability, authenticity or internal specifications.</strong></article>
-            <article><p className="step-label">LIVE DESTINATION</p><h3>Confirms current listing data</h3><p>Use CNBuy Sheet to re-check the product ID, current price, available variants, size details and destination link.</p><strong>If live information conflicts with an older guide, use the live page.</strong></article>
+            <article><p className="step-label">LIVE DESTINATION</p><h3>Confirms current listing data</h3><p>Use the main site to re-check the product ID, current price, available variants, size details and destination link.</p><strong>If live information conflicts with an older guide, use the live page.</strong></article>
           </div>
         </section>
 
         <div className="source-method-note">
           <p className="eyebrow">Research rule / Reviewed July 23, 2026</p>
-          <p>UUFinds publicly supports QC-photo and QC-video discovery, image recognition and marketplace or agent-link handling, but it does not sell the products. These product cards lead only to CNBuy Sheet, where current listing information must be confirmed.</p>
+          <p>UUFinds publicly supports QC-photo and QC-video discovery, image recognition and marketplace or agent-link handling, but it does not sell the products. These product cards lead only to the main site, where current listing information must be confirmed.</p>
         </div>
       </section>
       <SiteFooter />

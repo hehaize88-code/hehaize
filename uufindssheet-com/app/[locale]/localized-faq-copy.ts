@@ -21,7 +21,7 @@ type FAQCopy = {
 const englishPageCopy: Omit<FAQCopy, "groups"> = {
   eyebrow: "FAQ / Official functions reviewed July 23, 2026",
   title: ["Useful questions.", "Evidence-based answers."],
-  deck: "Straight answers about UUFinds QC searches, image matching, marketplace links and the checks that still belong on the live CNBuy Sheet product page.",
+  deck: "Straight answers about UUFinds QC searches, image matching, marketplace links and the checks that still belong on the live main-site product page.",
   facts: [
     { title: "QC discovery", body: "UUFinds publicly describes a finder for available product photos and videos." },
     { title: "Search inputs", body: "Its public information names image recognition plus 1688, Taobao, Weidian and agent links." },
@@ -52,7 +52,7 @@ const deGroups: FAQGroup[] = [
     items: [
       { question: "Warum liefert ein Produktlink möglicherweise kein QC-Ergebnis?", answer: "UUFinds verspricht öffentlich keine aktuellen QC-Medien für jedes Marketplace-Angebot. Ein leeres Ergebnis kann bedeuten, dass kein passendes Album vorhanden ist, das Linkformat nicht aufgelöst wird, das Angebot geändert wurde oder nie fotografiert wurde. Versuche die bereinigte Original-URL, bewahre die Artikel-ID und entferne unnötige Trackingparameter. Bleibt das Ergebnis leer, notiere „keine Belege gefunden“ statt gute oder schlechte Qualität zu unterstellen." },
       { question: "Woher weiß ich, ob ein QC-Album zum exakten Angebot gehört?", answer: "Beginne mit den stärksten Kennungen: Artikel-ID, Verkäufer oder Shop, Modell, Farbe und sichtbare Variante. Vergleiche danach charakteristische Konstruktion, Druckposition, Beschläge oder Verpackung. Ein Titel oder ähnliches Vorschaubild ist ein schwacher Beleg, weil mehrere Verkäufer dasselbe Katalogbild nutzen können. Stimmen Verkäufer oder Artikel-ID nicht überein, kennzeichne das Album nur als Referenz." },
-      { question: "Was tun, wenn die Bildsuche ein ähnliches Produkt eines anderen Verkäufers findet?", answer: "Nutze es, um Prüfpunkte zu erkennen, nicht um dein beabsichtigtes Angebot zu bewerten. Ein ähnliches Ergebnis kann typische Nähte, Maße oder Verpackung zeigen, beweist aber nicht Material, Charge oder Verarbeitung eines anderen Verkäufers. Suche weiter nach der exakten Quelle oder vergleiche mehrere Live-Angebote bei CNBuy Sheet und ordne jeden Beleg eindeutig zu." },
+      { question: "Was tun, wenn die Bildsuche ein ähnliches Produkt eines anderen Verkäufers findet?", answer: "Nutze es, um Prüfpunkte zu erkennen, nicht um dein beabsichtigtes Angebot zu bewerten. Ein ähnliches Ergebnis kann typische Nähte, Maße oder Verpackung zeigen, beweist aber nicht Material, Charge oder Verarbeitung eines anderen Verkäufers. Suche weiter nach der exakten Quelle oder vergleiche mehrere Live-Angebote auf der Hauptseite und ordne jeden Beleg eindeutig zu." },
       { question: "Hilft ein altes QC-Album noch?", answer: "Es kann sichtbare Designdetails und bekannte Prüfpunkte zeigen, besonders wenn Artikel-ID und Verkäufer weiterhin übereinstimmen. Mit größerem Zeitabstand sinkt sein Gewicht, da sich Charge, Fabrik, Material, Größe oder Varianten ändern können. Notiere das QC-Datum, vergleiche mehrere Sets, wenn vorhanden, und nutze die Live-Seite für aktuelle Angaben." },
     ],
   },
@@ -70,9 +70,9 @@ const deGroups: FAQGroup[] = [
     id: "this-site", label: "04 / Dieser unabhängige Ratgeber", title: "Wohin die Links führen und was erneut geprüft werden muss",
     items: [
       { question: "Ist uufindssheet.com die offizielle UUFinds-Website?", answer: "Nein. UUFinds Sheet ist ein unabhängiger redaktioneller Ratgeber und eine klar beschriftete Produktroute. Die Seite erklärt eine Recherchemethode rund um öffentlich beschriebene UUFinds-Funktionen, wird aber weder von UUFinds betrieben noch unterstützt oder empfohlen. Es gibt hier keine anklickbaren ausgehenden UUFinds-Links." },
-      { question: "Warum öffnen die Einkaufslinks CNBuy Sheet?", answer: "Diese Website verbindet die Recherche mit dem nächsten Browsing-Schritt bei CNBuy Sheet. Produktkarten öffnen zuerst eine interne Detailseite und danach den passenden CNBuy-Sheet-Artikel. Kategoriebuttons öffnen die entsprechende Kategorie; die Suche übergibt die vollständige Suchphrase an CNBuy Sheet statt jeden Besucher auf eine allgemeine Seite zu schicken." },
-      { question: "Sind die Produktbilder auf dieser Seite UUFinds-Warehouse-QC-Fotos?", answer: "Nein. Die Bilder im Produktbereich stammen aus den entsprechenden CNBuy-Sheet-Angeboten und werden als Listingbilder gekennzeichnet. Sie sind keine Warehouse-QC-Belege. Nutze sie zur Identifikation der Produktroute und ordne verfügbares QC-Material anschließend separat dem exakten Artikel und Verkäufer zu." },
-      { question: "Was sollte ich bei CNBuy Sheet vor dem Fortfahren erneut prüfen?", answer: "Bestätige exakte Produkt-ID und Ziel-Link, aktuellen Preis, Verkäufer oder Quelle, verfügbare Farben und Größen, Maße, Bestand sowie die auf der Live-Seite gezeigten Bedingungen. Widerspricht ein älterer Artikel, Screenshot oder ein QC-Album dem aktuellen Angebot, ist die Live-Seite maßgeblich für aktuelle Geschäftsdaten; älteres Material bleibt historischer Recherchebeleg." },
+      { question: "Warum öffnen die Einkaufslinks Hauptseite?", answer: "Diese Website verbindet die Recherche mit dem nächsten Browsing-Schritt auf der Hauptseite. Produktkarten öffnen zuerst eine interne Detailseite und danach den passenden Hauptseiten-Artikel. Kategoriebuttons öffnen die entsprechende Kategorie; die Suche übergibt die vollständige Suchphrase an die Hauptseite statt jeden Besucher auf eine allgemeine Seite zu schicken." },
+      { question: "Sind die Produktbilder auf dieser Seite UUFinds-Warehouse-QC-Fotos?", answer: "Nein. Die Bilder im Produktbereich stammen aus den entsprechenden Angebot der Hauptseiteen und werden als Listingbilder gekennzeichnet. Sie sind keine Warehouse-QC-Belege. Nutze sie zur Identifikation der Produktroute und ordne verfügbares QC-Material anschließend separat dem exakten Artikel und Verkäufer zu." },
+      { question: "Was sollte ich auf der Hauptseite vor dem Fortfahren erneut prüfen?", answer: "Bestätige exakte Produkt-ID und Ziel-Link, aktuellen Preis, Verkäufer oder Quelle, verfügbare Farben und Größen, Maße, Bestand sowie die auf der Live-Seite gezeigten Bedingungen. Widerspricht ein älterer Artikel, Screenshot oder ein QC-Album dem aktuellen Angebot, ist die Live-Seite maßgeblich für aktuelle Geschäftsdaten; älteres Material bleibt historischer Recherchebeleg." },
     ],
   },
 ];
@@ -93,7 +93,7 @@ const plGroups: FAQGroup[] = [
     items: [
       { question: "Dlaczego link produktu może nie zwrócić wyniku QC?", answer: "UUFinds nie obiecuje publicznie aktualnych materiałów QC dla każdej oferty. Pusty wynik może oznaczać brak albumu, nierozpoznany format linku, zmienioną ofertę albo brak zdjęć w dostępnych danych. Spróbuj czystej oryginalnej URL, zachowaj ID produktu i usuń zbędne parametry śledzące. Jeśli nadal jest pusto, zapisz „nie znaleziono dowodów”, a nie ocenę jakości." },
       { question: "Skąd mam wiedzieć, że album QC należy do dokładnej oferty?", answer: "Zacznij od najmocniejszych identyfikatorów: ID produktu, sprzedawcy lub sklepu, modelu, koloru i wariantu. Następnie porównaj charakterystyczną konstrukcję, położenie nadruku, okucia albo opakowanie. Tytuł lub podobna miniatura to słaby dowód, bo wielu sprzedawców używa tych samych zdjęć katalogowych. Gdy sprzedawca lub ID się nie zgadza, oznacz album wyłącznie jako referencję." },
-      { question: "Co zrobić, gdy wyszukiwanie obrazem znajdzie podobny produkt innego sprzedawcy?", answer: "Użyj go do poznania punktów kontroli, a nie do oceny zamierzonej oferty. Podobny wynik może pokazać typowe szwy, wymiary lub opakowanie, ale nie potwierdza materiału, partii ani wykonania innego sprzedawcy. Szukaj dokładnego linku źródłowego lub porównaj kilka aktywnych ofert w CNBuy Sheet i wyraźnie przypisz dowody do każdego produktu." },
+      { question: "Co zrobić, gdy wyszukiwanie obrazem znajdzie podobny produkt innego sprzedawcy?", answer: "Użyj go do poznania punktów kontroli, a nie do oceny zamierzonej oferty. Podobny wynik może pokazać typowe szwy, wymiary lub opakowanie, ale nie potwierdza materiału, partii ani wykonania innego sprzedawcy. Szukaj dokładnego linku źródłowego lub porównaj kilka aktywnych ofert w serwisie głównym i wyraźnie przypisz dowody do każdego produktu." },
       { question: "Czy stary album QC nadal jest pomocny?", answer: "Może pomagać w identyfikacji widocznych detali i punktów kontroli, zwłaszcza gdy ID i sprzedawca nadal się zgadzają. Jego wartość maleje z czasem, bo mogą zmienić się partie, fabryki, materiały, rozmiary lub warianty. Zapisz datę QC, porównaj więcej zestawów, jeśli są dostępne, a aktualne dane sprawdzaj na stronie na żywo." },
     ],
   },
@@ -111,9 +111,9 @@ const plGroups: FAQGroup[] = [
     id: "this-site", label: "04 / Ten niezależny przewodnik", title: "Dokąd prowadzą linki i co trzeba sprawdzić ponownie",
     items: [
       { question: "Czy uufindssheet.com jest oficjalną stroną UUFinds?", answer: "Nie. UUFinds Sheet to niezależny przewodnik redakcyjny i routingowy. Wyjaśnia metodę badania opartą na publicznie opisanych funkcjach UUFinds, ale nie jest przez UUFinds prowadzony, popierany ani z nim powiązany. Na stronie nie ma klikalnych wychodzących linków do UUFinds." },
-      { question: "Dlaczego linki zakupowe otwierają CNBuy Sheet?", answer: "Strona łączy badanie produktu z kolejnym krokiem przeglądania w CNBuy Sheet. Karty otwierają najpierw wewnętrzne szczegóły, a potem dopasowany produkt CNBuy Sheet. Przyciski kategorii prowadzą do odpowiednich kategorii, a wyszukiwarka przekazuje całą frazę do CNBuy Sheet zamiast kierować wszystkich na stronę ogólną." },
-      { question: "Czy zdjęcia produktów na tej stronie to magazynowe zdjęcia QC z UUFinds?", answer: "Nie. Zdjęcia w sekcji produktów pochodzą z odpowiadających ofert CNBuy Sheet i są prezentowane jako zdjęcia ofertowe. Nie należy traktować ich jak magazynowych dowodów QC. Służą do rozpoznania ścieżki produktu; dostępne materiały QC trzeba osobno dopasować do dokładnego produktu i sprzedawcy." },
-      { question: "Co ponownie sprawdzić w CNBuy Sheet przed przejściem dalej?", answer: "Potwierdź dokładne ID i link docelowy, aktualną cenę, sprzedawcę lub źródło, dostępne kolory i rozmiary, pomiary, stan magazynowy oraz warunki widoczne na stronie na żywo. Jeśli starszy artykuł, obraz lub album QC przeczy aktualnej ofercie, bieżąca strona jest źródłem aktualnych informacji handlowych, a starszy materiał pozostaje dowodem historycznym." },
+      { question: "Dlaczego linki zakupowe otwierają serwis główny?", answer: "Strona łączy badanie produktu z kolejnym krokiem przeglądania w serwisie głównym. Karty otwierają najpierw wewnętrzne szczegóły, a potem dopasowany produkt serwis główny. Przyciski kategorii prowadzą do odpowiednich kategorii, a wyszukiwarka przekazuje całą frazę do serwisu głównego zamiast kierować wszystkich na stronę ogólną." },
+      { question: "Czy zdjęcia produktów na tej stronie to magazynowe zdjęcia QC z UUFinds?", answer: "Nie. Zdjęcia w sekcji produktów pochodzą z odpowiadających ofert serwisu głównego i są prezentowane jako zdjęcia ofertowe. Nie należy traktować ich jak magazynowych dowodów QC. Służą do rozpoznania ścieżki produktu; dostępne materiały QC trzeba osobno dopasować do dokładnego produktu i sprzedawcy." },
+      { question: "Co ponownie sprawdzić w serwisie głównym przed przejściem dalej?", answer: "Potwierdź dokładne ID i link docelowy, aktualną cenę, sprzedawcę lub źródło, dostępne kolory i rozmiary, pomiary, stan magazynowy oraz warunki widoczne na stronie na żywo. Jeśli starszy artykuł, obraz lub album QC przeczy aktualnej ofercie, bieżąca strona jest źródłem aktualnych informacji handlowych, a starszy materiał pozostaje dowodem historycznym." },
     ],
   },
 ];
@@ -134,7 +134,7 @@ const ptBrGroups: FAQGroup[] = [
     items: [
       { question: "Por que um link pode não retornar resultado de QC?", answer: "O UUFinds não promete publicamente QC recente para todo anúncio. Um resultado vazio pode significar ausência de álbum correspondente, formato não resolvido, anúncio alterado ou item nunca fotografado nos dados disponíveis. Tente a URL original limpa, preserve o ID e remova parâmetros desnecessários. Se continuar vazio, registre “nenhuma evidência encontrada”, e não uma conclusão de qualidade." },
       { question: "Como saber se um álbum de QC pertence ao anúncio exato?", answer: "Comece pelos identificadores mais fortes: ID, vendedor ou loja, modelo, cor e variante visível. Depois compare construção, posição de estampas, ferragens ou embalagem. Título ou miniatura parecida é evidência fraca, pois vendedores podem reutilizar fotos de catálogo. Se vendedor ou ID não coincidir, marque o álbum apenas como referência." },
-      { question: "E se a busca por imagem encontrar produto semelhante de outro vendedor?", answer: "Use-o para descobrir o que merece inspeção, não para avaliar seu anúncio. Um resultado semelhante pode mostrar costuras, medidas ou embalagem comuns, mas não comprova material, lote ou acabamento de outro vendedor. Continue buscando a fonte exata ou compare vários anúncios ativos no CNBuy Sheet, identificando a qual produto pertence cada evidência." },
+      { question: "E se a busca por imagem encontrar produto semelhante de outro vendedor?", answer: "Use-o para descobrir o que merece inspeção, não para avaliar seu anúncio. Um resultado semelhante pode mostrar costuras, medidas ou embalagem comuns, mas não comprova material, lote ou acabamento de outro vendedor. Continue buscando a fonte exata ou compare vários anúncios ativos no site principal, identificando a qual produto pertence cada evidência." },
       { question: "Um álbum de QC antigo ainda ajuda?", answer: "Pode ajudar a reconhecer detalhes visíveis e pontos de inspeção, principalmente se ID e vendedor ainda coincidirem. Seu peso diminui com o tempo, porque lote, fábrica, material, tamanho ou opções podem mudar. Registre a data, compare mais de um conjunto quando houver e use a página ativa para preço, variantes e disponibilidade atuais." },
     ],
   },
@@ -152,9 +152,9 @@ const ptBrGroups: FAQGroup[] = [
     id: "this-site", label: "04 / Este guia independente", title: "Para onde os links levam e o que conferir novamente",
     items: [
       { question: "uufindssheet.com é o site oficial do UUFinds?", answer: "Não. UUFinds Sheet é um guia editorial e de rotas independente. Explica um método de pesquisa baseado em funções publicamente descritas do UUFinds, mas não é operado, endossado nem afiliado ao UUFinds. Não há links clicáveis de saída para o UUFinds neste site." },
-      { question: "Por que os links de compra abrem o CNBuy Sheet?", answer: "O site liga a pesquisa ao próximo passo no CNBuy Sheet. Os cartões abrem primeiro uma página interna de detalhes e depois o item correspondente no CNBuy Sheet. Botões de categoria levam à categoria correta, e a busca envia a frase completa ao CNBuy Sheet em vez de levar todos a uma página genérica." },
-      { question: "As imagens de produtos deste site são fotos de QC do armazém do UUFinds?", answer: "Não. As imagens exibidas vêm dos anúncios correspondentes no CNBuy Sheet e são apresentadas como imagens de anúncio. Elas não são evidência de QC de armazém. Use-as para identificar a rota do produto e depois relacione separadamente qualquer material de QC ao item e vendedor exatos." },
-      { question: "O que devo conferir novamente no CNBuy Sheet antes de continuar?", answer: "Confirme ID e link exatos, preço atual, vendedor ou fonte, cores e tamanhos disponíveis, medidas, estoque e condições exibidas na página ativa. Se artigo, imagem salva ou álbum antigo divergir do anúncio atual, trate a página ativa como fonte dos dados comerciais atuais e o material anterior apenas como evidência histórica." },
+      { question: "Por que os links de compra abrem o site principal?", answer: "O site liga a pesquisa ao próximo passo no site principal. Os cartões abrem primeiro uma página interna de detalhes e depois o item correspondente no site principal. Botões de categoria levam à categoria correta, e a busca envia a frase completa ao site principal em vez de levar todos a uma página genérica." },
+      { question: "As imagens de produtos deste site são fotos de QC do armazém do UUFinds?", answer: "Não. As imagens exibidas vêm dos anúncios correspondentes no site principal e são apresentadas como imagens de anúncio. Elas não são evidência de QC de armazém. Use-as para identificar a rota do produto e depois relacione separadamente qualquer material de QC ao item e vendedor exatos." },
+      { question: "O que devo conferir novamente no site principal antes de continuar?", answer: "Confirme ID e link exatos, preço atual, vendedor ou fonte, cores e tamanhos disponíveis, medidas, estoque e condições exibidas na página ativa. Se artigo, imagem salva ou álbum antigo divergir do anúncio atual, trate a página ativa como fonte dos dados comerciais atuais e o material anterior apenas como evidência histórica." },
     ],
   },
 ];
@@ -164,7 +164,7 @@ export const localizedFAQCopy: Record<ParityLocale, FAQCopy> = {
   de: {
     eyebrow: "FAQ / Offizielle Funktionen geprüft am 23. Juli 2026",
     title: ["Nützliche Fragen.", "Evidenzbasierte Antworten."],
-    deck: "Klare Antworten zu UUFinds-QC-Suchen, Bilderabgleich, Marketplace-Links und den Prüfungen, die weiterhin auf der aktuellen CNBuy-Sheet-Produktseite stattfinden müssen.",
+    deck: "Klare Antworten zu UUFinds-QC-Suchen, Bilderabgleich, Marketplace-Links und den Prüfungen, die weiterhin auf der aktuellen Produktseite der Hauptseite stattfinden müssen.",
     facts: [
       { title: "QC-Suche", body: "UUFinds beschreibt öffentlich einen Finder für verfügbare Produktfotos und -videos." },
       { title: "Sucheingaben", body: "Die öffentlichen Informationen nennen Bilderkennung sowie 1688-, Taobao-, Weidian- und Agentenlinks." },
@@ -179,7 +179,7 @@ export const localizedFAQCopy: Record<ParityLocale, FAQCopy> = {
   pl: {
     eyebrow: "FAQ / Oficjalne funkcje sprawdzone 23 lipca 2026",
     title: ["Przydatne pytania.", "Odpowiedzi oparte na dowodach."],
-    deck: "Konkretne odpowiedzi o wyszukiwaniu QC w UUFinds, dopasowaniu obrazów, linkach marketplace oraz kontrolach, które nadal trzeba wykonać na aktywnej stronie produktu CNBuy Sheet.",
+    deck: "Konkretne odpowiedzi o wyszukiwaniu QC w UUFinds, dopasowaniu obrazów, linkach marketplace oraz kontrolach, które nadal trzeba wykonać na aktywnej stronie produktu w serwisie głównym.",
     facts: [
       { title: "Odkrywanie QC", body: "UUFinds publicznie opisuje wyszukiwarkę dostępnych zdjęć i filmów produktów." },
       { title: "Dane wyszukiwania", body: "Publiczne informacje wymieniają rozpoznawanie obrazu oraz linki 1688, Taobao, Weidian i agentów." },
@@ -194,7 +194,7 @@ export const localizedFAQCopy: Record<ParityLocale, FAQCopy> = {
   "pt-br": {
     eyebrow: "FAQ / Funções oficiais revisadas em 23 de julho de 2026",
     title: ["Perguntas úteis.", "Respostas baseadas em evidências."],
-    deck: "Respostas diretas sobre buscas de QC no UUFinds, relação de imagens, links de marketplaces e as verificações que ainda devem ser feitas na página ativa do produto no CNBuy Sheet.",
+    deck: "Respostas diretas sobre buscas de QC no UUFinds, relação de imagens, links de marketplaces e as verificações que ainda devem ser feitas na página ativa do produto no site principal.",
     facts: [
       { title: "Descoberta de QC", body: "O UUFinds descreve publicamente um localizador de fotos e vídeos disponíveis de produtos." },
       { title: "Entradas de busca", body: "As informações públicas citam reconhecimento de imagem e links do 1688, Taobao, Weidian e agentes." },

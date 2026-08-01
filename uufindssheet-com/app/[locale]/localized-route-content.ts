@@ -48,11 +48,11 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       "uufinds-spreadsheet-shopping-guide-2026": {
         title: "UUFinds-Spreadsheet-Ratgeber 2026: von der QC-Recherche zu besseren Produktfunden",
         description:
-          "Ein praktischer, evidenzbasierter Weg von der UUFinds-QC-Recherche über Kategorien bis zur exakten Produktseite bei CNBuy Sheet.",
+          "Ein praktischer, evidenzbasierter Weg von der UUFinds-QC-Recherche über Kategorien bis zur exakten Produktseite auf der Hauptseite.",
         sectionTitle: "Recherche und Prüfung sauber trennen",
         paragraphs: [
           "Entscheide zuerst, ob du nur eine Produktart suchst oder bereits einen konkreten Link hast. Bei einer allgemeinen Suche ist eine Kategorie der richtige Ausgangspunkt. Bei einer bestimmten Quelle solltest du URL, Artikelnummer, Verkäufer und Variante beibehalten, damit vorhandenes QC-Material tatsächlich dem vorgesehenen Angebot zugeordnet werden kann.",
-          "Ein Spreadsheet hilft beim Entdecken und Sortieren, ist aber kein Qualitätsnachweis. Öffne deshalb jede interessante Detailseite, vergleiche aktuelle Angaben und nutze Bilder oder Videos nur als Beleg für den jeweils gezeigten Artikel. Preis, Bestand, Varianten und Verkäuferinformationen müssen am Ende auf der aktuellen Zielseite geprüft werden.",
+          "Ein Spreadsheet hilft beim Entdecken und Sortieren, ist aber kein Qualitätsnachweis. Öffne deshalb jede interessante Detailseite, vergleiche aktuelle Angaben und nutze Bilder oder Videos nur als Beleg für den jeweils gezeigten Artikel. Preis, Bestand, Varianten und Verkäuferinformationen müssen am Ende auf der aktuellen Hauptseite geprüft werden.",
         ],
       },
       "uufinds-qc-checklist": {
@@ -66,13 +66,13 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
         ],
       },
       "how-to-use-uufinds": {
-        title: "UUFinds verwenden und anschließend bei CNBuy Sheet weitersuchen",
+        title: "UUFinds verwenden und anschließend auf der Hauptseite weitersuchen",
         description:
-          "Ein klarer Ablauf vom Quellenlink über verfügbare QC-Aufnahmen bis zur passenden Kategorie oder Produktseite bei CNBuy Sheet.",
+          "Ein klarer Ablauf vom Quellenlink über verfügbare QC-Aufnahmen bis zur passenden Kategorie oder Produktseite auf der Hauptseite.",
         sectionTitle: "Vom Link zur aktuellen Produktseite",
         paragraphs: [
           "Füge nach Möglichkeit den vollständigen Taobao-, Weidian-, 1688- oder Agentenlink ein. Prüfe, ob das gefundene Material wirklich zur Quelle gehört, und vergleiche anschließend die sichtbaren Details. Eine reine Bildähnlichkeit ist nur ein Hinweis und ersetzt keinen Abgleich der Artikelangaben.",
-          "Öffne danach die entsprechende Kategorie oder die konkrete Produktseite bei CNBuy Sheet. Kontrolliere dort den aktuellen Preis, Varianten, Größen, Verkäuferlink und die Beschreibung. Wenn die Live-Seite nicht mehr zum recherchierten Material passt, gilt die Zuordnung als unterbrochen und sollte neu geprüft werden.",
+          "Öffne danach die entsprechende Kategorie oder die konkrete Produktseite auf der Hauptseite. Kontrolliere dort den aktuellen Preis, Varianten, Größen, Verkäuferlink und die Beschreibung. Wenn die Live-Seite nicht mehr zum recherchierten Material passt, gilt die Zuordnung als unterbrochen und sollte neu geprüft werden.",
         ],
       },
       "spreadsheet-vs-qc-finder": {
@@ -82,7 +82,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
         sectionTitle: "Entdecken, prüfen, aktuell bestätigen",
         paragraphs: [
           "Ein Web-Spreadsheet beantwortet vor allem die Frage, welche Produkte und Kategorien du durchsuchen kannst. Ein QC-Finder beantwortet eine engere Frage: Welches sichtbare Material ist zu einem bestimmten Link verfügbar? Der erste Schritt schafft Auswahl, der zweite reduziert Unsicherheit bei einer konkreten Option.",
-          "Keines der beiden Werkzeuge ersetzt die aktuelle Produktseite. Nutze Kategorien für eine überschaubare Vorauswahl, ordne QC-Fotos oder -Videos dem exakten Angebot zu und bestätige zum Schluss Preis, Bestand, Größen und Varianten auf der Live-Seite bei CNBuy Sheet.",
+          "Keines der beiden Werkzeuge ersetzt die aktuelle Produktseite. Nutze Kategorien für eine überschaubare Vorauswahl, ordne QC-Fotos oder -Videos dem exakten Angebot zu und bestätige zum Schluss Preis, Bestand, Größen und Varianten auf der Live-Seite auf der Hauptseite.",
         ],
       },
     },
@@ -121,7 +121,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       "uufinds-spreadsheet-shopping-guide-2026": {
         title: "Przewodnik UUFinds Spreadsheet 2026: od kontroli QC do lepszych znalezisk",
         description:
-          "Praktyczna, oparta na dowodach droga od wyszukiwania QC w UUFinds do kategorii i dokładnych stron produktów CNBuy Sheet.",
+          "Praktyczna, oparta na dowodach droga od wyszukiwania QC w UUFinds do kategorii i dokładnych stron produktów w serwisie głównym.",
         sectionTitle: "Oddziel wyszukiwanie od weryfikacji",
         paragraphs: [
           "Najpierw ustal, czy szukasz jedynie rodzaju produktu, czy masz już konkretny link. Przy ogólnym wyszukiwaniu zacznij od kategorii. Przy określonej ofercie zachowaj pełny adres, identyfikator produktu, sprzedawcę i wariant, aby materiały QC można było powiązać z właściwym źródłem.",
@@ -139,13 +139,13 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
         ],
       },
       "how-to-use-uufinds": {
-        title: "Jak korzystać z UUFinds i kontynuować wyszukiwanie w CNBuy Sheet",
+        title: "Jak korzystać z UUFinds i kontynuować wyszukiwanie w serwisie głównym",
         description:
-          "Czytelny proces od linku źródłowego przez dostępne materiały QC do właściwej kategorii lub strony produktu CNBuy Sheet.",
+          "Czytelny proces od linku źródłowego przez dostępne materiały QC do właściwej kategorii lub strony produktu serwis główny.",
         sectionTitle: "Od źródła do aktualnej oferty",
         paragraphs: [
           "Wklej pełny link z Taobao, Weidian, 1688 albo agenta, jeśli jest dostępny. Sprawdź, czy znalezione materiały rzeczywiście odnoszą się do tego źródła, a później porównaj widoczne szczegóły. Samo podobieństwo obrazu jest wskazówką, nie potwierdzeniem identycznej oferty.",
-          "Następnie otwórz odpowiednią kategorię lub dokładną stronę produktu w CNBuy Sheet. Potwierdź aktualną cenę, warianty, rozmiary, link sprzedawcy i opis. Jeśli bieżąca oferta nie odpowiada materiałom z researchu, dopasowanie należy uznać za przerwane i sprawdzić ponownie.",
+          "Następnie otwórz odpowiednią kategorię lub dokładną stronę produktu w serwisie głównym. Potwierdź aktualną cenę, warianty, rozmiary, link sprzedawcy i opis. Jeśli bieżąca oferta nie odpowiada materiałom z researchu, dopasowanie należy uznać za przerwane i sprawdzić ponownie.",
         ],
       },
       "spreadsheet-vs-qc-finder": {
@@ -155,7 +155,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
         sectionTitle: "Odkrywaj, sprawdzaj i potwierdzaj na żywo",
         paragraphs: [
           "Webowy spreadsheet odpowiada głównie na pytanie, jakie produkty i kategorie można przeglądać. Wyszukiwarka QC odpowiada na węższe pytanie: jakie materiały wizualne są dostępne dla konkretnego linku? Pierwsze narzędzie buduje listę opcji, drugie zmniejsza niepewność wokół wybranej oferty.",
-          "Żadne z nich nie zastępuje aktualnej strony produktu. Użyj kategorii do stworzenia krótkiej listy, dopasuj materiały QC do dokładnego źródła, a na końcu potwierdź cenę, dostępność, rozmiary i warianty na bieżącej stronie CNBuy Sheet.",
+          "Żadne z nich nie zastępuje aktualnej strony produktu. Użyj kategorii do stworzenia krótkiej listy, dopasuj materiały QC do dokładnego źródła, a na końcu potwierdź cenę, dostępność, rozmiary i warianty na bieżącej stronie serwis główny.",
         ],
       },
     },
@@ -194,7 +194,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       "uufinds-spreadsheet-shopping-guide-2026": {
         title: "Guia UUFinds Spreadsheet 2026: da pesquisa de QC a achados melhores",
         description:
-          "Um caminho prático e baseado em evidências, da pesquisa de QC no UUFinds às categorias e páginas exatas de produtos no CNBuy Sheet.",
+          "Um caminho prático e baseado em evidências, da pesquisa de QC no UUFinds às categorias e páginas exatas de produtos no site principal.",
         sectionTitle: "Separe descoberta e verificação",
         paragraphs: [
           "Primeiro, defina se você procura apenas um tipo de produto ou se já possui um link específico. Para uma busca ampla, comece pela categoria. Para um anúncio definido, preserve a URL completa, o identificador do item, o vendedor e a variante para que qualquer material de QC seja ligado à fonte correta.",
@@ -212,13 +212,13 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
         ],
       },
       "how-to-use-uufinds": {
-        title: "Como usar o UUFinds e continuar a busca no CNBuy Sheet",
+        title: "Como usar o UUFinds e continuar a busca no site principal",
         description:
-          "Um fluxo claro, do link de origem e materiais de QC disponíveis até a categoria ou página correta do produto no CNBuy Sheet.",
+          "Um fluxo claro, do link de origem e materiais de QC disponíveis até a categoria ou página correta do produto no site principal.",
         sectionTitle: "Do link de origem ao anúncio atual",
         paragraphs: [
           "Cole o link completo do Taobao, Weidian, 1688 ou de um agente sempre que possível. Verifique se o material encontrado realmente corresponde àquela fonte e só então compare os detalhes visíveis. Semelhança de imagem é uma pista, não a confirmação de que vendedor e variante são os mesmos.",
-          "Em seguida, abra a categoria correspondente ou a página exata do produto no CNBuy Sheet. Confirme preço atual, opções, tamanhos, link do vendedor e descrição. Se o anúncio ativo não corresponder mais ao material pesquisado, a relação foi quebrada e precisa ser refeita.",
+          "Em seguida, abra a categoria correspondente ou a página exata do produto no site principal. Confirme preço atual, opções, tamanhos, link do vendedor e descrição. Se o anúncio ativo não corresponder mais ao material pesquisado, a relação foi quebrada e precisa ser refeita.",
         ],
       },
       "spreadsheet-vs-qc-finder": {
@@ -228,7 +228,7 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
         sectionTitle: "Descubra, verifique e confirme ao vivo",
         paragraphs: [
           "Uma planilha na web responde principalmente quais produtos e categorias podem ser explorados. Um localizador de QC responde a uma pergunta mais específica: quais evidências visuais estão disponíveis para determinado link? A primeira ferramenta amplia as opções; a segunda reduz a incerteza sobre uma opção concreta.",
-          "Nenhuma delas substitui a página atual do produto. Use categorias para montar uma lista curta, relacione fotos ou vídeos de QC à fonte exata e, por fim, confirme preço, disponibilidade, tamanhos e variantes no anúncio ativo do CNBuy Sheet.",
+          "Nenhuma delas substitui a página atual do produto. Use categorias para montar uma lista curta, relacione fotos ou vídeos de QC à fonte exata e, por fim, confirme preço, disponibilidade, tamanhos e variantes no anúncio ativo do site principal.",
         ],
       },
     },

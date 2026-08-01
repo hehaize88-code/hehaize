@@ -7,11 +7,11 @@ import { localizedAlternates } from "../seo-alternates";
 export const metadata: Metadata = {
   title: "UUFinds FAQ: QC Photos, Link Matching & Buying Checks",
   description:
-    "Fact-checked answers about UUFinds QC photos, videos, image recognition, Taobao, Weidian and 1688 links, plus the checks to make before opening CNBuy Sheet.",
+    "Fact-checked answers about UUFinds QC photos, videos, image recognition, Taobao, Weidian and 1688 links, plus the checks to make before opening the main site.",
   alternates: localizedAlternates("/faq/"),
   openGraph: {
     title: "UUFinds FAQ: QC Photos, Link Matching & Buying Checks",
-    description: "Fact-checked answers about UUFinds QC photos, videos, image recognition, Taobao, Weidian and 1688 links, plus the checks to make before opening CNBuy Sheet.",
+    description: "Fact-checked answers about UUFinds QC photos, videos, image recognition, Taobao, Weidian and 1688 links, plus the checks to make before opening the main site.",
     url: "/faq/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -69,7 +69,7 @@ export const faqGroups = [
       {
         question: "What if image search finds a similar product from another seller?",
         answer:
-          "Use it to learn what details deserve inspection, not to grade your intended listing. A similar result may reveal common stitching patterns, measurements or packaging, but it cannot establish the material, batch or workmanship of another seller’s item. Keep searching for the exact source link, or compare several live listings on CNBuy Sheet and clearly mark which evidence belongs to which product.",
+          "Use it to learn what details deserve inspection, not to grade your intended listing. A similar result may reveal common stitching patterns, measurements or packaging, but it cannot establish the material, batch or workmanship of another seller’s item. Keep searching for the exact source link, or compare several live listings on the main site and clearly mark which evidence belongs to which product.",
       },
       {
         question: "Does an old QC album still help?",
@@ -121,17 +121,17 @@ export const faqGroups = [
           "No. UUFinds Sheet is an independent editorial and routing guide. It explains a research method around publicly described UUFinds functions, but it is not operated by, endorsed by or affiliated with UUFinds. There are no clickable UUFinds outbound links on this site.",
       },
       {
-        question: "Why do the shopping links open CNBuy Sheet?",
+        question: "Why do the shopping links open the main site?",
         answer:
-          "This site is designed to connect research with your next browsing step on CNBuy Sheet. Product cards open an on-site detail page first, then provide a direct route to the matching CNBuy Sheet item. Category buttons open the corresponding CNBuy Sheet category, and the search box passes your complete keyword phrase to CNBuy Sheet rather than sending every visitor to a generic page.",
+          "This site is designed to connect research with your next browsing step on the main site. Product cards open an on-site detail page first, then provide a direct route to the matching main-site item. Category buttons open the corresponding main-site category, and the search box passes your complete keyword phrase to the main site rather than sending every visitor to a generic page.",
       },
       {
         question: "Are the product images on this site UUFinds warehouse QC photos?",
         answer:
-          "No. The product images displayed in the product section come from the corresponding CNBuy Sheet listings and are presented as listing images. They should not be treated as warehouse QC evidence. Use them to identify the product route, then separately match any available QC material to the exact item and seller.",
+          "No. The product images displayed in the product section come from the corresponding main-site listings and are presented as listing images. They should not be treated as warehouse QC evidence. Use them to identify the product route, then separately match any available QC material to the exact item and seller.",
       },
       {
-        question: "What should I re-check on CNBuy Sheet before continuing?",
+        question: "What should I re-check on the main site before continuing?",
         answer:
           "Confirm the exact product ID and destination link, current price, seller or source information, available colors and sizes, measurement details, stock status and any terms shown on the live page. If an older article, saved image or QC album conflicts with the current listing, treat the live listing as the source for current commercial information and the older material only as historical research evidence.",
       },
@@ -158,7 +158,7 @@ export default function FAQPage() {
         <p className="eyebrow">FAQ / Official functions reviewed July 23, 2026</p>
         <h1>Useful questions.<br /><em>Evidence-based answers.</em></h1>
         <p>
-          Straight answers about UUFinds QC searches, image matching, marketplace links and the checks that still belong on the live CNBuy Sheet product page.
+          Straight answers about UUFinds QC searches, image matching, marketplace links and the checks that still belong on the live main-site product page.
         </p>
       </section>
 

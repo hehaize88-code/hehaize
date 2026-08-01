@@ -129,8 +129,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             )}
             <div className="source-note">
               <p className="eyebrow">Primary source notes</p>
-              <p>{guide.sourceNote ?? "Function descriptions were checked against publicly available UUFinds information and the live CNBuy Sheet category structure on July 22, 2026. External product information can change."}</p>
-              <div><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse CNBuy Sheet products ↗</a></div>
+              <p>{guide.sourceNote ?? "Function descriptions were checked against publicly available UUFinds information and the live main-site category structure on July 22, 2026. External product information can change."}</p>
+              <div><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse main-site products ↗</a></div>
             </div>
           </div>
         </div>

@@ -13,20 +13,20 @@ const localized = {
   de: {
     region: "DE",
     htmlTitle: "UUFinds Spreadsheet & QC Guide auf Deutsch",
-    description: "Deutschsprachiger UUFinds- und QC-Leitfaden mit direkten Kategorien und Produktseiten bei CNBuy Sheet.",
+    description: "Deutschsprachiger UUFinds- und QC-Leitfaden mit direkten Kategorie- und Produktlinks zur Hauptseite.",
     eyebrow: "Unabhängiger Leitfaden / Deutsch",
     title: "Produkte recherchieren.",
-    accent: "Gezielt bei CNBuy Sheet öffnen.",
-    intro: "Nutze Kategorien für die Produktsuche, prüfe vorhandene QC-Bilder und öffne anschließend die passende aktuelle Produktseite bei CNBuy Sheet.",
+    accent: "Gezielt auf der Hauptseite öffnen.",
+    intro: "Nutze Kategorien für die Produktsuche, prüfe vorhandene QC-Bilder und öffne anschließend die passende aktuelle Produktseite auf der Hauptseite.",
     search: "Schuhe, Hoodies oder Zubehör suchen",
-    searchButton: "Bei CNBuy Sheet suchen ↗",
+    searchButton: "Auf der Hauptseite suchen ↗",
     categoryTitle: "Mit einer Kategorie beginnen.",
-    categoryIntro: "Jeder Link führt direkt zum passenden Bereich bei CNBuy Sheet.",
+    categoryIntro: "Jeder Link führt direkt zum passenden Bereich der Hauptseite.",
     articleLabel: "SEO-Ratgeber / 2026",
     articleTitle: "Vom UUFinds-QC-Check zum passenden Produkt",
     articleText: "Der ausführliche Leitfaden erklärt die getrennten Schritte: entdecken, QC-Material vergleichen und die aktuelle Produktseite verifizieren.",
     articleButton: "Vollständigen Ratgeber lesen →",
-    nav: { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "CNBuy Sheet öffnen", language: "Sprache" },
+    nav: { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "Hauptseite öffnen", language: "Sprache" },
     names: ["Schuhe", "Hoodies", "T-Shirts", "Jacken", "Hosen", "Kopfbedeckungen", "Accessoires", "Trikots", "Elektronik"],
     notes: ["Sneaker & Schuhe", "Pullover & Sweatshirts", "Shirts & Oberteile", "Mäntel & Oberbekleidung", "Hosen & Shorts", "Caps & Hüte", "Taschen, Geldbörsen & mehr", "Teamwear-Funde", "Technik & Geräte"],
     marketText: "Fünf wichtige UUFinds-Märkte",
@@ -35,20 +35,20 @@ const localized = {
   pl: {
     region: "PL",
     htmlTitle: "UUFinds Spreadsheet i poradnik QC po polsku",
-    description: "Polski przewodnik po UUFinds i kontroli QC z bezpośrednimi kategoriami oraz stronami produktów CNBuy Sheet.",
+    description: "Polski przewodnik po UUFinds i kontroli QC z bezpośrednimi linkami do kategorii oraz produktów na stronie głównej.",
     eyebrow: "Niezależny przewodnik / Polski",
     title: "Sprawdź produkt.",
     accent: "Otwórz właściwą ofertę.",
-    intro: "Przeglądaj kategorie, porównuj dostępne zdjęcia QC, a następnie przejdź do aktualnej strony odpowiedniego produktu w CNBuy Sheet.",
+    intro: "Przeglądaj kategorie, porównuj dostępne zdjęcia QC, a następnie przejdź do aktualnej strony odpowiedniego produktu w serwisie docelowym.",
     search: "Szukaj butów, bluz lub akcesoriów",
-    searchButton: "Szukaj w CNBuy Sheet ↗",
+    searchButton: "Szukaj w serwisie docelowym ↗",
     categoryTitle: "Zacznij od kategorii.",
-    categoryIntro: "Każdy skrót otwiera właściwą kategorię CNBuy Sheet.",
+    categoryIntro: "Każdy skrót otwiera właściwą kategorię w serwisie docelowym.",
     articleLabel: "PORADNIK SEO / 2026",
     articleTitle: "Od kontroli QC w UUFinds do właściwego produktu",
     articleText: "Pełny poradnik oddziela trzy decyzje: odkrywanie produktów, analizę materiałów QC i weryfikację aktualnej oferty.",
     articleButton: "Przeczytaj pełny poradnik →",
-    nav: { finds: "Znaleziska", products: "Produkty", qcGuide: "Poradnik QC", howItWorks: "Jak to działa", articles: "Artykuły", faq: "FAQ", shopMain: "Otwórz CNBuy Sheet", language: "Język" },
+    nav: { finds: "Znaleziska", products: "Produkty", qcGuide: "Poradnik QC", howItWorks: "Jak to działa", articles: "Artykuły", faq: "FAQ", shopMain: "Otwórz serwis docelowy", language: "Język" },
     names: ["Buty", "Bluzy", "T-shirty", "Kurtki", "Spodnie", "Nakrycia głowy", "Akcesoria", "Koszulki sportowe", "Elektronika"],
     notes: ["Sneakersy i obuwie", "Swetry i bluzy", "Koszulki i topy", "Płaszcze i odzież wierzchnia", "Spodnie i szorty", "Czapki i kapelusze", "Torby, portfele i więcej", "Odzież drużynowa", "Technologia i urządzenia"],
     marketText: "Pięć ważnych rynków UUFinds",
@@ -57,20 +57,20 @@ const localized = {
   "pt-br": {
     region: "BR",
     htmlTitle: "Planilha UUFinds e guia de QC em português",
-    description: "Guia brasileiro independente sobre UUFinds e QC, com categorias e páginas de produtos diretas no CNBuy Sheet.",
+    description: "Guia brasileiro independente sobre UUFinds e QC, com categorias e páginas de produtos diretas no site principal.",
     eyebrow: "Guia independente / Português do Brasil",
     title: "Pesquise o produto.",
     accent: "Abra o anúncio certo.",
-    intro: "Use as categorias para descobrir produtos, compare as imagens de QC disponíveis e depois confirme a página atual do item no CNBuy Sheet.",
+    intro: "Use as categorias para descobrir produtos, compare as imagens de QC disponíveis e depois confirme a página atual do item no site principal.",
     search: "Buscar tênis, moletons ou acessórios",
-    searchButton: "Buscar no CNBuy Sheet ↗",
+    searchButton: "Buscar no site principal ↗",
     categoryTitle: "Comece por uma categoria.",
-    categoryIntro: "Cada atalho abre a categoria correspondente no CNBuy Sheet.",
+    categoryIntro: "Cada atalho abre a categoria correspondente no site principal.",
     articleLabel: "GUIA SEO / 2026",
     articleTitle: "Da pesquisa de QC no UUFinds ao produto correto",
     articleText: "O guia completo separa descoberta, comparação de evidências de QC e verificação da página atual do produto.",
     articleButton: "Ler o guia completo →",
-    nav: { finds: "Achados", products: "Produtos", qcGuide: "Guia de QC", howItWorks: "Como funciona", articles: "Artigos", faq: "FAQ", shopMain: "Abrir CNBuy Sheet", language: "Idioma" },
+    nav: { finds: "Achados", products: "Produtos", qcGuide: "Guia de QC", howItWorks: "Como funciona", articles: "Artigos", faq: "FAQ", shopMain: "Abrir site principal", language: "Idioma" },
     names: ["Tênis", "Moletons", "Camisetas", "Jaquetas", "Calças", "Bonés", "Acessórios", "Camisas esportivas", "Eletrônicos"],
     notes: ["Tênis e calçados", "Suéteres e moletons", "Camisetas e blusas", "Casacos e agasalhos", "Calças e shorts", "Bonés e chapéus", "Bolsas, carteiras e mais", "Roupas esportivas", "Tecnologia e dispositivos"],
     marketText: "Cinco mercados importantes do UUFinds",
@@ -79,20 +79,20 @@ const localized = {
   "en-gb": {
     region: "UK",
     htmlTitle: "UUFinds Spreadsheet & QC Guide for UK Shoppers",
-    description: "An independent UK English UUFinds and QC guide with direct CNBuy Sheet category and product routes.",
+    description: "An independent UK English UUFinds and QC guide with direct category and product routes to the main shopping site.",
     eyebrow: "Independent guide / United Kingdom",
     title: "Research the product.",
     accent: "Open the right listing.",
-    intro: "Use categories to discover products, compare available QC material and then confirm the current item page on CNBuy Sheet.",
+    intro: "Use categories to discover products, compare available QC material and then confirm the current item page on the main shopping site.",
     search: "Search trainers, hoodies or accessories",
-    searchButton: "Search CNBuy Sheet ↗",
+    searchButton: "Search the main site ↗",
     categoryTitle: "Start with a category.",
-    categoryIntro: "Each shortcut opens the matching CNBuy Sheet section, not a generic homepage.",
+    categoryIntro: "Each shortcut opens the matching section on the main shopping site, not a generic homepage.",
     articleLabel: "SEO BUYING GUIDE / 2026",
     articleTitle: "From UUFinds QC research to the right product",
     articleText: "The complete guide separates discovery, QC evidence comparison and verification of the current product listing.",
     articleButton: "Read the complete guide →",
-    nav: { finds: "Finds", products: "Products", qcGuide: "QC Guide", howItWorks: "How It Works", articles: "Articles", faq: "FAQ", shopMain: "Enter CNBuy Sheet", language: "Language" },
+    nav: { finds: "Finds", products: "Products", qcGuide: "QC Guide", howItWorks: "How It Works", articles: "Articles", faq: "FAQ", shopMain: "Open main site", language: "Language" },
     names: ["Trainers", "Hoodies", "T-Shirts", "Jackets", "Trousers", "Headwear", "Accessories", "Football Shirts", "Electronics"],
     notes: ["Trainers & footwear", "Jumpers & sweatshirts", "Tees & tops", "Coats & outerwear", "Trousers & shorts", "Caps & hats", "Bags, wallets & more", "Teamwear finds", "Tech & devices"],
     marketText: "Five important UUFinds markets",
@@ -157,7 +157,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           <div className="proof-row" aria-label="Site features">
             <div><span>09</span><small>Category<br />shortcuts</small></div>
             <div><span>QC</span><small>First buying<br />guide</small></div>
-            <div><span>↗</span><small>Direct CNBuy<br />Sheet links</small></div>
+            <div><span>↗</span><small>Direct shopping<br />links</small></div>
           </div>
         </div>
 
@@ -166,7 +166,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           <div className="grid-lines" aria-hidden="true" />
           <ResponsiveHeroImage />
           <div className="route-tag" aria-hidden="true">
-            <span>CNBUY SHEET LINK</span>
+            <span>SHOPPING LINK</span>
             <strong>READY TO OPEN</strong>
             <b>↑</b>
           </div>
@@ -175,7 +175,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
 
       <section className="category-section" id="finds">
         <div className="section-heading">
-          <div><p className="eyebrow">09 / CNBUY SHEET</p><h2>{content.categoryTitle}</h2></div>
+          <div><p className="eyebrow">09 / DESTINATION SITE</p><h2>{content.categoryTitle}</h2></div>
           <p>{content.categoryIntro}</p>
         </div>
         <div className="category-grid">
@@ -230,7 +230,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
         <div className="workflow-grid">
           <article><span>01</span><p className="step-label">RESEARCH</p><h3>UUFinds</h3><p>{content.intro}</p><Link href={`/${locale}/guides/how-to-use-uufinds/`}>{content.articleButton}</Link></article>
           <article><span>02</span><p className="step-label">COMPARE</p><h3>QC</h3><p>{content.articleText}</p><Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{content.nav.qcGuide} →</Link></article>
-          <article><span>03</span><p className="step-label">BROWSE</p><h3>CNBuy Sheet</h3><p>{content.categoryIntro}</p><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></article>
+          <article><span>03</span><p className="step-label">BROWSE</p><h3>{content.nav.shopMain}</h3><p>{content.categoryIntro}</p><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></article>
         </div>
       </section>
 
@@ -263,7 +263,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
         <div className="facts-card">
           <div><span>01</span><p>UUFinds publicly describes a QC finder for available photos and videos.</p></div>
           <div><span>02</span><p>Keep the exact product link, seller and variant attached to any QC evidence.</p></div>
-          <div><span>03</span><p>Confirm current product details on the live CNBuy Sheet page.</p></div>
+          <div><span>03</span><p>Confirm current product details on the live main-site page.</p></div>
           <div className="source-row"><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></div>
         </div>
       </section>

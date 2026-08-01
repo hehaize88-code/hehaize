@@ -5,12 +5,12 @@ import { SiteFooter } from "../components/site-footer";
 import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
-  title: "How to Use UUFinds QC Research Before Opening CNBuy Sheet",
-  description: "A fact-checked UUFinds workflow for matching a product link, reading available QC photos or video, and verifying the live CNBuy Sheet listing.",
+  title: "How to Use UUFinds QC Research Before Opening the main site",
+  description: "A fact-checked UUFinds workflow for matching a product link, reading available QC photos or video, and verifying the live main-site listing.",
   alternates: localizedAlternates("/how-it-works/"),
   openGraph: {
-    title: "How to Use UUFinds QC Research Before Opening CNBuy Sheet",
-    description: "A fact-checked UUFinds workflow for matching a product link, reading available QC photos or video, and verifying the live CNBuy Sheet listing.",
+    title: "How to Use UUFinds QC Research Before Opening the main site",
+    description: "A fact-checked UUFinds workflow for matching a product link, reading available QC photos or video, and verifying the live main-site listing.",
     url: "/how-it-works/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -52,7 +52,7 @@ export default function HowItWorksPage() {
             <span>03</span>
             <p className="step-label">CONFIRM</p>
             <h2>Check today’s listing facts</h2>
-            <p>Open the exact CNBuy Sheet product page and re-check the identifier, current price, variants, size information and availability. An older QC set can inform the decision, but it cannot confirm what the seller offers today.</p>
+            <p>Open the exact main-site product page and re-check the identifier, current price, variants, size information and availability. An older QC set can inform the decision, but it cannot confirm what the seller offers today.</p>
             <Link href="/products/">Open product details →</Link>
           </article>
         </div>
@@ -82,7 +82,7 @@ export default function HowItWorksPage() {
             <li><span>01</span><p><strong>Match:</strong> exact, probable, or visual reference only.</p></li>
             <li><span>02</span><p><strong>Evidence:</strong> which photos, video, angles and measurements were available.</p></li>
             <li><span>03</span><p><strong>Unknowns:</strong> missing views, material claims, sizing or internal condition.</p></li>
-            <li><span>04</span><p><strong>Live check:</strong> current ID, price, variants and availability on CNBuy Sheet.</p></li>
+            <li><span>04</span><p><strong>Live check:</strong> current ID, price, variants and availability on the main site.</p></li>
             <li><span>05</span><p><strong>Decision:</strong> keep, compare with another listing, or pause for more evidence.</p></li>
           </ol>
         </section>

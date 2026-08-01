@@ -34,20 +34,20 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "What UUFinds Sheet publishes, why it exists and how it stays independent from the services it discusses.":
       "Was UUFinds Sheet veröffentlicht, warum die Website existiert und wie sie von den besprochenen Diensten unabhängig bleibt.",
     "What this site is": "Was diese Website ist",
-    "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on CNBuy Sheet.":
-      "UUFinds Sheet ist ein unabhängiger redaktioneller Ratgeber für Menschen, die Produktlinks, verfügbares QC-Material und den nächsten Browsing-Schritt bei CNBuy Sheet recherchieren.",
+    "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on the main site.":
+      "UUFinds Sheet ist ein unabhängiger redaktioneller Ratgeber für Menschen, die Produktlinks, verfügbares QC-Material und den nächsten Browsing-Schritt auf der Hauptseite recherchieren.",
     "The site does not claim to be UUFinds, does not process orders and does not sell the products shown in its category or product pages.":
       "Die Website behauptet nicht, UUFinds zu sein, bearbeitet keine Bestellungen und verkauft die auf ihren Kategorie- oder Produktseiten gezeigten Artikel nicht.",
     "What readers can expect": "Was Leser erwarten können",
     "Guides separate a product-discovery lead from QC evidence and current destination-page facts. A saved image, an older QC album and a live listing answer different questions and should not be treated as interchangeable.":
-      "Die Ratgeber trennen einen Hinweis aus der Produktsuche von QC-Belegen und aktuellen Fakten der Zielseite. Ein gespeichertes Bild, ein älteres QC-Album und ein aktuelles Angebot beantworten unterschiedliche Fragen und dürfen nicht als austauschbar behandelt werden.",
+      "Die Ratgeber trennen einen Hinweis aus der Produktsuche von QC-Belegen und aktuellen Fakten der Hauptseite. Ein gespeichertes Bild, ein älteres QC-Album und ein aktuelles Angebot beantworten unterschiedliche Fragen und dürfen nicht als austauschbar behandelt werden.",
     "Clear labels for independent editorial content": "Klare Kennzeichnung unabhängiger redaktioneller Inhalte",
-    "Direct, identifiable CNBuy Sheet category and product routes": "Direkte, eindeutig erkennbare Kategorie- und Produktwege zu CNBuy Sheet",
+    "Direct, identifiable main-site category and product routes": "Direkte, eindeutig erkennbare Kategorie- und Produktwege zur Hauptseite",
     "Dated source checks where features or listing details can change": "Datierte Quellenprüfungen bei veränderlichen Funktionen oder Angebotsdaten",
     "Corrections when a supported factual error is identified": "Korrekturen, wenn ein belegter sachlicher Fehler festgestellt wird",
     "Commercial relationship": "Kommerzielle Beziehung",
-    "All outbound shopping, category and product links published on this site lead only to CNBuy Sheet. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.":
-      "Alle auf dieser Website veröffentlichten externen Shopping-, Kategorie- und Produktlinks führen ausschließlich zu CNBuy Sheet. Redaktionelle Seiten können öffentlich beschriebene UUFinds-Funktionen als Recherchekontext erläutern, die Website ist jedoch weder mit UUFinds verbunden noch von UUFinds empfohlen oder betrieben.",
+    "All outbound shopping, category and product links published on this site lead only to the main site. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.":
+      "Alle auf dieser Website veröffentlichten externen Shopping-, Kategorie- und Produktlinks führen ausschließlich zur Hauptseite. Redaktionelle Seiten können öffentlich beschriebene UUFinds-Funktionen als Recherchekontext erläutern, die Website ist jedoch weder mit UUFinds verbunden noch von UUFinds empfohlen oder betrieben.",
     "Contact / Corrections welcome": "Kontakt / Korrekturen willkommen",
     "Tell us what needs attention.": "Sag uns, was geprüft werden sollte.",
     "Contact UUFinds Sheet about factual corrections, broken routes, privacy questions or editorial policy.":
@@ -83,8 +83,8 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "Exact product or seller matching before QC evidence is treated as relevant":
       "Exakter Produkt- oder Verkäuferabgleich, bevor QC-Belege als relevant gelten",
     "Independence and corrections": "Unabhängigkeit und Korrekturen",
-    "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to CNBuy Sheet and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.":
-      "Redaktionelle Schlussfolgerungen werden nicht von UUFinds vorgegeben. Shopping-Wege sind auf CNBuy Sheet beschränkt und sichtbar von Quellenhinweisen getrennt. Belegte Korrekturanfragen werden anhand der stärksten verfügbaren Quelle geprüft; die betroffene Seite wird bei Bedarf aktualisiert.",
+    "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to the main site and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.":
+      "Redaktionelle Schlussfolgerungen werden nicht von UUFinds vorgegeben. Shopping-Wege sind auf der Hauptseite beschränkt und sichtbar von Quellenhinweisen getrennt. Belegte Korrekturanfragen werden anhand der stärksten verfügbaren Quelle geprüft; die betroffene Seite wird bei Bedarf aktualisiert.",
     "Privacy / Minimal collection": "Datenschutz / Minimale Erfassung",
     "Useful measurement without ad tracking.": "Nützliche Messung ohne Werbe-Tracking.",
     "What technical and click information UUFinds Sheet processes, why it is used and what the site does not collect.":
@@ -98,8 +98,8 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "This measurement is used to understand which guides, categories and product routes are useful and to find broken navigation. The tracker does not set an advertising cookie and does not create a cross-site advertising profile.":
       "Diese Messung hilft zu verstehen, welche Ratgeber, Kategorien und Produktwege nützlich sind, und defekte Navigation zu erkennen. Der Tracker setzt kein Werbe-Cookie und erstellt kein websiteübergreifendes Werbeprofil.",
     "Contact and external destinations": "Kontakt und externe Ziele",
-    "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external CNBuy Sheet link, the destination site applies its own privacy terms.":
-      "Wenn du der Website eine E-Mail sendest, werden die freiwillig übermittelten Angaben zur Prüfung und Beantwortung verwendet. Beim Folgen eines externen CNBuy-Sheet-Links gelten die Datenschutzbedingungen der Zielseite.",
+    "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external main-site link, the main site applies its own privacy terms.":
+      "Wenn du der Website eine E-Mail sendest, werden die freiwillig übermittelten Angaben zur Prüfung und Beantwortung verwendet. Beim Folgen eines externen Hauptseiten-Links gelten die Datenschutzbedingungen der Hauptseite.",
     "Terms / Editorial use": "Bedingungen / Redaktionelle Nutzung",
     "Use the guide as research, not a guarantee.": "Nutze den Ratgeber zur Recherche, nicht als Garantie.",
     "The terms that apply when using UUFinds Sheet content, product routes and independent research guidance.":
@@ -109,7 +109,7 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
       "Die Inhalte dienen allgemeinen Recherche- und Bildungszwecken. UUFinds Sheet verkauft keine Produkte, handelt nicht als Einkaufsagent, verarbeitet keine Zahlungen und trifft keine Kaufentscheidung für den Leser.",
     "Changing information": "Veränderliche Informationen",
     "Prices, stock, variants, seller information, links, shipping terms and platform features can change after a page is reviewed. Confirm material commercial information on the live destination page before acting.":
-      "Preise, Bestand, Varianten, Verkäuferinformationen, Links, Versandbedingungen und Plattformfunktionen können sich nach der Prüfung einer Seite ändern. Bestätige wesentliche kommerzielle Angaben auf der aktuellen Zielseite, bevor du handelst.",
+      "Preise, Bestand, Varianten, Verkäuferinformationen, Links, Versandbedingungen und Plattformfunktionen können sich nach der Prüfung einer Seite ändern. Bestätige wesentliche kommerzielle Angaben auf der aktuellen Hauptseite, bevor du handelst.",
     "A product image is not a guarantee of the delivered item": "Ein Produktbild ist keine Garantie für den gelieferten Artikel",
     "QC media documents a particular photographed item or batch": "QC-Material dokumentiert einen bestimmten fotografierten Artikel oder eine Charge",
     "No statement on this site guarantees authenticity, legality or fitness for a purpose":
@@ -133,20 +133,20 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "What UUFinds Sheet publishes, why it exists and how it stays independent from the services it discusses.":
       "Co publikuje UUFinds Sheet, dlaczego istnieje i jak zachowuje niezależność od opisywanych usług.",
     "What this site is": "Czym jest ta strona",
-    "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on CNBuy Sheet.":
-      "UUFinds Sheet to niezależny przewodnik redakcyjny dla osób analizujących linki produktów, dostępne materiały QC i kolejny krok przeglądania w CNBuy Sheet.",
+    "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on the main site.":
+      "UUFinds Sheet to niezależny przewodnik redakcyjny dla osób analizujących linki produktów, dostępne materiały QC i kolejny krok przeglądania w serwisie głównym.",
     "The site does not claim to be UUFinds, does not process orders and does not sell the products shown in its category or product pages.":
       "Strona nie twierdzi, że jest UUFinds, nie obsługuje zamówień i nie sprzedaje produktów pokazanych na stronach kategorii ani produktów.",
     "What readers can expect": "Czego mogą oczekiwać czytelnicy",
     "Guides separate a product-discovery lead from QC evidence and current destination-page facts. A saved image, an older QC album and a live listing answer different questions and should not be treated as interchangeable.":
       "Poradniki oddzielają trop z wyszukiwania produktu od dowodów QC i aktualnych danych strony docelowej. Zapisane zdjęcie, starszy album QC i aktywna oferta odpowiadają na różne pytania i nie powinny być traktowane wymiennie.",
     "Clear labels for independent editorial content": "Jasne oznaczenia niezależnych treści redakcyjnych",
-    "Direct, identifiable CNBuy Sheet category and product routes": "Bezpośrednie, rozpoznawalne ścieżki kategorii i produktów CNBuy Sheet",
+    "Direct, identifiable main-site category and product routes": "Bezpośrednie, rozpoznawalne ścieżki kategorii i produktów w serwisie głównym",
     "Dated source checks where features or listing details can change": "Datowane sprawdzenia źródeł przy zmiennych funkcjach lub danych oferty",
     "Corrections when a supported factual error is identified": "Korekty po potwierdzeniu błędu rzeczowego",
     "Commercial relationship": "Relacja handlowa",
-    "All outbound shopping, category and product links published on this site lead only to CNBuy Sheet. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.":
-      "Wszystkie zewnętrzne linki zakupowe, kategorii i produktów publikowane na tej stronie prowadzą wyłącznie do CNBuy Sheet. Strony redakcyjne mogą omawiać publicznie opisane funkcje UUFinds jako kontekst badawczy, ale strona nie jest powiązana, wspierana ani prowadzona przez UUFinds.",
+    "All outbound shopping, category and product links published on this site lead only to the main site. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.":
+      "Wszystkie zewnętrzne linki zakupowe, kategorii i produktów publikowane na tej stronie prowadzą wyłącznie do serwisu głównego. Strony redakcyjne mogą omawiać publicznie opisane funkcje UUFinds jako kontekst badawczy, ale strona nie jest powiązana, wspierana ani prowadzona przez UUFinds.",
     "Contact / Corrections welcome": "Kontakt / Korekty mile widziane",
     "Tell us what needs attention.": "Powiedz, co wymaga uwagi.",
     "Contact UUFinds Sheet about factual corrections, broken routes, privacy questions or editorial policy.":
@@ -182,8 +182,8 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "Exact product or seller matching before QC evidence is treated as relevant":
       "Dokładne dopasowanie produktu lub sprzedawcy przed uznaniem materiałów QC za istotne",
     "Independence and corrections": "Niezależność i korekty",
-    "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to CNBuy Sheet and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.":
-      "Wnioski redakcyjne nie są dostarczane przez UUFinds. Ścieżki zakupowe ograniczają się do CNBuy Sheet i są wyraźnie oddzielone od not źródłowych. Uzasadnione prośby o korektę są sprawdzane według najsilniejszego dostępnego źródła, a strona jest w razie potrzeby aktualizowana.",
+    "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to the main site and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.":
+      "Wnioski redakcyjne nie są dostarczane przez UUFinds. Ścieżki zakupowe ograniczają się do serwisu głównego i są wyraźnie oddzielone od not źródłowych. Uzasadnione prośby o korektę są sprawdzane według najsilniejszego dostępnego źródła, a strona jest w razie potrzeby aktualizowana.",
     "Privacy / Minimal collection": "Prywatność / Minimalne gromadzenie",
     "Useful measurement without ad tracking.": "Przydatny pomiar bez śledzenia reklamowego.",
     "What technical and click information UUFinds Sheet processes, why it is used and what the site does not collect.":
@@ -197,8 +197,8 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "This measurement is used to understand which guides, categories and product routes are useful and to find broken navigation. The tracker does not set an advertising cookie and does not create a cross-site advertising profile.":
       "Pomiar służy do ustalenia, które poradniki, kategorie i ścieżki produktów są użyteczne, oraz do wykrywania błędnej nawigacji. Tracker nie ustawia reklamowego pliku cookie ani nie tworzy międzywitrynowego profilu reklamowego.",
     "Contact and external destinations": "Kontakt i zewnętrzne cele",
-    "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external CNBuy Sheet link, the destination site applies its own privacy terms.":
-      "Jeśli wysyłasz e-mail do strony, dobrowolnie przekazane informacje są używane do sprawdzenia i odpowiedzi. Po przejściu do zewnętrznego linku CNBuy Sheet obowiązują zasady prywatności strony docelowej.",
+    "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external main-site link, the main site applies its own privacy terms.":
+      "Jeśli wysyłasz e-mail do strony, dobrowolnie przekazane informacje są używane do sprawdzenia i odpowiedzi. Po przejściu do zewnętrznego linku do serwisu głównego obowiązują zasady prywatności strony docelowej.",
     "Terms / Editorial use": "Warunki / Użycie redakcyjne",
     "Use the guide as research, not a guarantee.": "Traktuj poradnik jako materiał badawczy, nie gwarancję.",
     "The terms that apply when using UUFinds Sheet content, product routes and independent research guidance.":
@@ -232,20 +232,20 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "What UUFinds Sheet publishes, why it exists and how it stays independent from the services it discusses.":
       "O que o UUFinds Sheet publica, por que existe e como mantém independência dos serviços que analisa.",
     "What this site is": "O que é este site",
-    "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on CNBuy Sheet.":
-      "O UUFinds Sheet é um guia editorial independente para quem pesquisa links de produtos, materiais de QC disponíveis e o próximo passo de navegação no CNBuy Sheet.",
+    "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on the main site.":
+      "O UUFinds Sheet é um guia editorial independente para quem pesquisa links de produtos, materiais de QC disponíveis e o próximo passo de navegação no site principal.",
     "The site does not claim to be UUFinds, does not process orders and does not sell the products shown in its category or product pages.":
       "O site não afirma ser o UUFinds, não processa pedidos e não vende os produtos exibidos nas páginas de categorias ou produtos.",
     "What readers can expect": "O que os leitores podem esperar",
     "Guides separate a product-discovery lead from QC evidence and current destination-page facts. A saved image, an older QC album and a live listing answer different questions and should not be treated as interchangeable.":
       "Os guias separam uma pista de descoberta de produto das evidências de QC e dos fatos atuais da página de destino. Uma imagem salva, um álbum de QC antigo e um anúncio ativo respondem a perguntas diferentes e não devem ser tratados como equivalentes.",
     "Clear labels for independent editorial content": "Identificação clara de conteúdo editorial independente",
-    "Direct, identifiable CNBuy Sheet category and product routes": "Rotas diretas e identificáveis para categorias e produtos do CNBuy Sheet",
+    "Direct, identifiable main-site category and product routes": "Rotas diretas e identificáveis para categorias e produtos do site principal",
     "Dated source checks where features or listing details can change": "Verificações de fonte com data quando recursos ou dados do anúncio podem mudar",
     "Corrections when a supported factual error is identified": "Correções quando um erro factual comprovado é identificado",
     "Commercial relationship": "Relação comercial",
-    "All outbound shopping, category and product links published on this site lead only to CNBuy Sheet. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.":
-      "Todos os links externos de compra, categoria e produto publicados neste site levam somente ao CNBuy Sheet. As páginas editoriais podem discutir funções publicamente descritas do UUFinds como contexto de pesquisa, mas o site não é afiliado, endossado nem operado pelo UUFinds.",
+    "All outbound shopping, category and product links published on this site lead only to the main site. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.":
+      "Todos os links externos de compra, categoria e produto publicados neste site levam somente ao site principal. As páginas editoriais podem discutir funções publicamente descritas do UUFinds como contexto de pesquisa, mas o site não é afiliado, endossado nem operado pelo UUFinds.",
     "Contact / Corrections welcome": "Contato / Correções são bem-vindas",
     "Tell us what needs attention.": "Informe o que precisa de atenção.",
     "Contact UUFinds Sheet about factual corrections, broken routes, privacy questions or editorial policy.":
@@ -281,8 +281,8 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "Exact product or seller matching before QC evidence is treated as relevant":
       "Correspondência exata de produto ou vendedor antes de considerar a evidência de QC relevante",
     "Independence and corrections": "Independência e correções",
-    "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to CNBuy Sheet and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.":
-      "As conclusões editoriais não são fornecidas pelo UUFinds. As rotas de compra se limitam ao CNBuy Sheet e ficam visivelmente separadas das notas de fonte. Pedidos de correção fundamentados são avaliados pela melhor fonte disponível, e a página afetada é atualizada quando necessário.",
+    "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to the main site and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.":
+      "As conclusões editoriais não são fornecidas pelo UUFinds. As rotas de compra se limitam ao site principal e ficam visivelmente separadas das notas de fonte. Pedidos de correção fundamentados são avaliados pela melhor fonte disponível, e a página afetada é atualizada quando necessário.",
     "Privacy / Minimal collection": "Privacidade / Coleta mínima",
     "Useful measurement without ad tracking.": "Medição útil sem rastreamento publicitário.",
     "What technical and click information UUFinds Sheet processes, why it is used and what the site does not collect.":
@@ -296,8 +296,8 @@ const manualExtras: Record<TranslatedLocale, Record<string, string>> = {
     "This measurement is used to understand which guides, categories and product routes are useful and to find broken navigation. The tracker does not set an advertising cookie and does not create a cross-site advertising profile.":
       "Essa medição é usada para entender quais guias, categorias e rotas de produtos são úteis e para localizar navegação quebrada. O rastreador não define cookie publicitário nem cria perfil de publicidade entre sites.",
     "Contact and external destinations": "Contato e destinos externos",
-    "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external CNBuy Sheet link, the destination site applies its own privacy terms.":
-      "Se você enviar um e-mail ao site, as informações escolhidas serão usadas para analisar e responder à solicitação. Ao seguir um link externo do CNBuy Sheet, aplicam-se os termos de privacidade do site de destino.",
+    "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external main-site link, the main site applies its own privacy terms.":
+      "Se você enviar um e-mail ao site, as informações escolhidas serão usadas para analisar e responder à solicitação. Ao seguir um link externo do site principal, aplicam-se os termos de privacidade do site principal.",
     "Terms / Editorial use": "Termos / Uso editorial",
     "Use the guide as research, not a guarantee.": "Use o guia como pesquisa, não como garantia.",
     "The terms that apply when using UUFinds Sheet content, product routes and independent research guidance.":

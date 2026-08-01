@@ -25,7 +25,7 @@ export const policyPages: Record<PolicyPageData["slug"], PolicyPageData> = {
       {
         heading: "What this site is",
         paragraphs: [
-          "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on CNBuy Sheet.",
+          "UUFinds Sheet is an independent editorial guide for people researching product links, available QC material and the next browsing step on the main site.",
           "The site does not claim to be UUFinds, does not process orders and does not sell the products shown in its category or product pages.",
         ],
       },
@@ -36,7 +36,7 @@ export const policyPages: Record<PolicyPageData["slug"], PolicyPageData> = {
         ],
         points: [
           "Clear labels for independent editorial content",
-          "Direct, identifiable CNBuy Sheet category and product routes",
+          "Direct, identifiable main-site category and product routes",
           "Dated source checks where features or listing details can change",
           "Corrections when a supported factual error is identified",
         ],
@@ -44,7 +44,7 @@ export const policyPages: Record<PolicyPageData["slug"], PolicyPageData> = {
       {
         heading: "Commercial relationship",
         paragraphs: [
-          "All outbound shopping, category and product links published on this site lead only to CNBuy Sheet. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.",
+          "All outbound shopping, category and product links published on this site lead only to the main site. Editorial pages may discuss publicly described UUFinds functions for research context, but the site is not affiliated with, endorsed by or operated by UUFinds.",
         ],
       },
     ],
@@ -111,7 +111,7 @@ export const policyPages: Record<PolicyPageData["slug"], PolicyPageData> = {
       {
         heading: "Independence and corrections",
         paragraphs: [
-          "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to CNBuy Sheet and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.",
+          "Editorial conclusions are not supplied by UUFinds. Shopping routes are limited to the main site and are kept visibly separate from source notes. Supported correction requests are reviewed against the strongest available source and the affected page is updated when necessary.",
         ],
       },
     ],
@@ -139,7 +139,7 @@ export const policyPages: Record<PolicyPageData["slug"], PolicyPageData> = {
       {
         heading: "Contact and external destinations",
         paragraphs: [
-          "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external CNBuy Sheet link, the destination site applies its own privacy terms.",
+          "If you email the site, the information you choose to send is used to review and answer that request. When you follow an external main-site link, the main site applies its own privacy terms.",
         ],
       },
     ],

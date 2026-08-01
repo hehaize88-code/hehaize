@@ -29,7 +29,7 @@ const defaultLabels: HeaderLabels = {
   howItWorks: "How It Works",
   articles: "Articles",
   faq: "FAQ",
-  shopMain: "Enter CNBuy Sheet",
+  shopMain: "Enter the main site",
   language: "Language",
   menu: "Menu",
 };
@@ -52,11 +52,11 @@ export function SiteHeader({
   const languageHref = (option: (typeof languageOptions)[number]) =>
     `${option.language === "en" ? "" : `/${option.language}`}${routePath || "/"}`;
   const currentLabels = language === "de"
-    ? { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "CNBuy Sheet öffnen", language: "Sprache", menu: "Menü" }
+    ? { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "Hauptseite öffnen", language: "Sprache", menu: "Menü" }
     : language === "pl"
-      ? { finds: "Znaleziska", products: "Produkty", qcGuide: "Poradnik QC", howItWorks: "Jak to działa", articles: "Artykuły", faq: "FAQ", shopMain: "Otwórz CNBuy Sheet", language: "Język", menu: "Menu" }
+      ? { finds: "Znaleziska", products: "Produkty", qcGuide: "Poradnik QC", howItWorks: "Jak to działa", articles: "Artykuły", faq: "FAQ", shopMain: "Otwórz stronę główną", language: "Język", menu: "Menu" }
       : language === "pt-br"
-        ? { finds: "Achados", products: "Produtos", qcGuide: "Guia de QC", howItWorks: "Como funciona", articles: "Artigos", faq: "FAQ", shopMain: "Abrir CNBuy Sheet", language: "Idioma", menu: "Menu" }
+        ? { finds: "Achados", products: "Produtos", qcGuide: "Guia de QC", howItWorks: "Como funciona", articles: "Artigos", faq: "FAQ", shopMain: "Abrir site principal", language: "Idioma", menu: "Menu" }
         : labels;
 
   return (

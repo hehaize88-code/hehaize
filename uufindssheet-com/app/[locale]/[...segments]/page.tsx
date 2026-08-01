@@ -26,44 +26,44 @@ const text = {
   "en-gb": {
     lang: "en-GB", region: "UK", guide: "Guide", products: "Products", articles: "Guides", faq: "Frequently asked questions",
     finds: "Product finds by category", how: "How UUFinds research works",
-    intro: "Independent, practical information for researching products, comparing available QC material and checking the current CNBuy Sheet page.",
-    view: "View product details", read: "Read the guide", price: "Displayed reference price", open: "Open on CNBuy Sheet ↗",
+    intro: "Independent, practical information for researching products, comparing available QC material and checking the current main-site page.",
+    view: "View product details", read: "Read the guide", price: "Displayed reference price", open: "Open on the main site ↗",
     check: "Before deciding, always confirm the current price, variants, sizing, seller link and available QC material.",
     backProducts: "Back to product finds", allGuides: "All guides", home: "Home", productDetail: "Product detail",
-    listingNote: "These images belong to the corresponding CNBuy Sheet listing and are not presented as a UUFinds warehouse QC album.",
+    listingNote: "These images belong to the corresponding main-site listing and are not presented as a UUFinds warehouse QC album.",
     questions: ["Is this the official UUFinds website?", "Does a QC photo guarantee product quality?", "What should I check on the destination page?"],
     answers: ["No. This is an independent editorial guide.", "No. QC material records a particular item or batch and does not replace your own assessment.", "Check the item, seller, price, variants, measurements and current shipping and service terms."],
   },
   de: {
     lang: "de", region: "DE", guide: "Leitfaden", products: "Produkte", articles: "Ratgeber", faq: "Häufige Fragen",
     finds: "Produktfunde nach Kategorie", how: "So funktioniert die UUFinds-Recherche",
-    intro: "Unabhängige, praktische Informationen für die Produktsuche, den Vergleich von QC-Material und die anschließende Prüfung der aktuellen CNBuy-Sheet-Seite.",
-    view: "Produktdetails ansehen", read: "Ratgeber lesen", price: "Angezeigter Referenzpreis", open: "Bei CNBuy Sheet öffnen ↗",
+    intro: "Unabhängige, praktische Informationen für die Produktsuche, den Vergleich von QC-Material und die anschließende Prüfung der aktuellen Hauptseite.",
+    view: "Produktdetails ansehen", read: "Ratgeber lesen", price: "Angezeigter Referenzpreis", open: "Bei Hauptseite öffnen ↗",
     check: "Prüfe vor einer Entscheidung immer den aktuellen Preis, die Varianten, Größenangaben, den Verkäuferlink und die verfügbaren QC-Aufnahmen.",
     backProducts: "Zurück zu den Produkten", allGuides: "Alle Ratgeber", home: "Startseite", productDetail: "Produktdetail",
-    listingNote: "Diese Bilder gehören zum entsprechenden CNBuy-Sheet-Angebot und werden nicht als UUFinds-Warehouse-QC-Album dargestellt.",
-    questions: ["Ist diese Website die offizielle UUFinds-Seite?", "Garantiert ein QC-Foto die Produktqualität?", "Was sollte ich auf der Zielseite prüfen?"],
+    listingNote: "Diese Bilder gehören zum entsprechenden Angebot der Hauptseite und werden nicht als UUFinds-Warehouse-QC-Album dargestellt.",
+    questions: ["Ist diese Website die offizielle UUFinds-Seite?", "Garantiert ein QC-Foto die Produktqualität?", "Was sollte ich auf der Hauptseite prüfen?"],
     answers: ["Nein. Dies ist ein unabhängiger redaktioneller Ratgeber.", "Nein. QC-Material ist ein Hinweis zu einem bestimmten Artikel oder einer Charge und ersetzt keine eigene Prüfung.", "Kontrolliere Artikel, Verkäufer, Preis, Varianten, Maße sowie aktuelle Versand- und Servicebedingungen."],
   },
   pl: {
     lang: "pl", region: "PL", guide: "Przewodnik", products: "Produkty", articles: "Poradniki", faq: "Najczęstsze pytania",
     finds: "Znaleziska według kategorii", how: "Jak działa wyszukiwanie z UUFinds",
-    intro: "Niezależne, praktyczne informacje o wyszukiwaniu produktów, porównywaniu materiałów QC i sprawdzaniu aktualnej strony w CNBuy Sheet.",
-    view: "Zobacz szczegóły produktu", read: "Przeczytaj poradnik", price: "Wyświetlana cena orientacyjna", open: "Otwórz w CNBuy Sheet ↗",
+    intro: "Niezależne, praktyczne informacje o wyszukiwaniu produktów, porównywaniu materiałów QC i sprawdzaniu aktualnej strony w serwisie głównym.",
+    view: "Zobacz szczegóły produktu", read: "Przeczytaj poradnik", price: "Wyświetlana cena orientacyjna", open: "Otwórz w serwisie głównym ↗",
     check: "Przed podjęciem decyzji zawsze sprawdź aktualną cenę, warianty, rozmiary, link sprzedawcy i dostępne materiały QC.",
     backProducts: "Wróć do produktów", allGuides: "Wszystkie poradniki", home: "Strona główna", productDetail: "Szczegóły produktu",
-    listingNote: "Te zdjęcia pochodzą z odpowiedniej oferty CNBuy Sheet i nie są przedstawiane jako magazynowy album QC z UUFinds.",
+    listingNote: "Te zdjęcia pochodzą z odpowiedniej oferty w serwisie głównym i nie są przedstawiane jako magazynowy album QC z UUFinds.",
     questions: ["Czy to oficjalna strona UUFinds?", "Czy zdjęcie QC gwarantuje jakość?", "Co sprawdzić na stronie docelowej?"],
     answers: ["Nie. To niezależny przewodnik redakcyjny.", "Nie. Materiały QC dotyczą konkretnego produktu lub partii i nie zastępują własnej oceny.", "Sprawdź produkt, sprzedawcę, cenę, warianty, wymiary oraz aktualne warunki wysyłki i obsługi."],
   },
   "pt-br": {
     lang: "pt-BR", region: "BR", guide: "Guia", products: "Produtos", articles: "Guias", faq: "Perguntas frequentes",
     finds: "Achados por categoria", how: "Como funciona a pesquisa com UUFinds",
-    intro: "Informações independentes e práticas para pesquisar produtos, comparar materiais de QC e conferir a página atual no CNBuy Sheet.",
-    view: "Ver detalhes do produto", read: "Ler o guia", price: "Preço de referência exibido", open: "Abrir no CNBuy Sheet ↗",
+    intro: "Informações independentes e práticas para pesquisar produtos, comparar materiais de QC e conferir a página atual no site principal.",
+    view: "Ver detalhes do produto", read: "Ler o guia", price: "Preço de referência exibido", open: "Abrir no site principal ↗",
     check: "Antes de decidir, confirme sempre o preço atual, as variantes, os tamanhos, o link do vendedor e os materiais de QC disponíveis.",
     backProducts: "Voltar aos produtos", allGuides: "Todos os guias", home: "Início", productDetail: "Detalhes do produto",
-    listingNote: "Estas imagens pertencem ao anúncio correspondente no CNBuy Sheet e não são apresentadas como um álbum de QC de armazém do UUFinds.",
+    listingNote: "Estas imagens pertencem ao anúncio correspondente no site principal e não são apresentadas como um álbum de QC de armazém do UUFinds.",
     questions: ["Este é o site oficial do UUFinds?", "Uma foto de QC garante a qualidade?", "O que conferir na página de destino?"],
     answers: ["Não. Este é um guia editorial independente.", "Não. O material de QC registra um item ou lote específico e não substitui sua própria avaliação.", "Confira produto, vendedor, preço, variantes, medidas e as condições atuais de envio e serviço."],
   },
@@ -330,7 +330,7 @@ function LocalizedProducts({
     {
       label: "LIVE DESTINATION",
       title: "Confirms current listing data",
-      body: "Use CNBuy Sheet to re-check the product ID, current price, available variants, size details and destination link.",
+      body: "Use the main site to re-check the product ID, current price, available variants, size details and destination link.",
       note: "If live information conflicts with an older guide, use the live page.",
     },
   ];
@@ -342,7 +342,7 @@ function LocalizedProducts({
       <section className="hub-hero">
         <p className="eyebrow">{translate("Products / 08 direct listing routes")}</p>
         <h1>{translate("See the listing.")}<br /><em>{translate("Separate it from QC evidence.")}</em></h1>
-        <p>{translate("The images below come from the corresponding CNBuy Sheet listings; they are not labeled as UUFinds warehouse QC albums. Open a detail page, note the exact item ID, then use the official UUFinds research functions only when matched QC media is available for that source.")}</p>
+        <p>{translate("The images below come from the corresponding main-site listings; they are not labeled as UUFinds warehouse QC albums. Open a detail page, note the exact item ID, then use the official UUFinds research functions only when matched QC media is available for that source.")}</p>
       </section>
       <section className="hub-content">
         <ProductGrid locale={locale} routeCopy={routeCopy} />
@@ -367,7 +367,7 @@ function LocalizedProducts({
         </section>
         <div className="source-method-note">
           <p className="eyebrow">{translate("Research rule / Reviewed July 23, 2026")}</p>
-          <p>{translate("UUFinds publicly supports QC-photo and QC-video discovery, image recognition and marketplace or agent-link handling, but it does not sell the products. These product cards lead only to CNBuy Sheet, where current listing information must be confirmed.")}</p>
+          <p>{translate("UUFinds publicly supports QC-photo and QC-video discovery, image recognition and marketplace or agent-link handling, but it does not sell the products. These product cards lead only to the main site, where current listing information must be confirmed.")}</p>
         </div>
       </section>
       <SiteFooter locale={locale} />
@@ -394,7 +394,7 @@ function LocalizedArticles({
     },
     {
       title: "Link standard",
-      body: "Every shopping, category and product destination on this site points only to CNBuy Sheet.",
+      body: "Every shopping, category and product destination on this site points only to the main site.",
     },
   ];
 
@@ -405,7 +405,7 @@ function LocalizedArticles({
       <section className="hub-hero article-hub-hero">
         <p className="eyebrow">{translate("Articles / Official functions checked July 23, 2026")}</p>
         <h1>{translate("Search-led guides.")}<br /><em>{translate("Source-led claims.")}</em></h1>
-        <p>{translate("Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to CNBuy Sheet.")}</p>
+        <p>{translate("Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to the main site.")}</p>
       </section>
       <section className="hub-content">
         <div className="official-fact-strip article-standard">
@@ -670,17 +670,17 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
         <div className="product-summary">
           <p className="eyebrow">{translate("Product find /")} {category}</p>
           <h1>{product.shortName}</h1>
-          <p className="product-deck">{translate("These are images published with the corresponding CNBuy Sheet listing, not a claimed UUFinds QC album. Use the item ID to keep the listing traceable, then compare separately matched QC material when it exists.")}</p>
+          <p className="product-deck">{translate("These are images published with the corresponding main-site listing, not a claimed UUFinds QC album. Use the item ID to keep the listing traceable, then compare separately matched QC material when it exists.")}</p>
           <div className="product-price-row">
             <div><small>{translate("PRICE SHOWN")}</small><strong>¥{product.price}</strong></div>
             <div><small>{translate("MAIN-SITE ID")}</small><strong>{product.listingId}</strong></div>
           </div>
           <a className="primary-product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">
-            {translate("View this product on CNBuy Sheet")} <span aria-hidden="true">↗</span>
+            {translate("View this product on the main site")} <span aria-hidden="true">↗</span>
           </a>
           <div className="live-note">
             <strong>{translate("Checked")} {translate(product.checked)}</strong>
-            <p>{translate("The displayed price and images are a dated snapshot. Confirm the current CNBuy Sheet listing for price, availability, sizes, colors, seller or source link and other live details.")}</p>
+            <p>{translate("The displayed price and images are a dated snapshot. Confirm the current main-site listing for price, availability, sizes, colors, seller or source link and other live details.")}</p>
           </div>
         </div>
       </article>
@@ -703,16 +703,16 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
           <article>
             <span>03</span>
             <h3>{translate("Verify current facts")}</h3>
-            <p>{translate("Check the current price, available variants, size information, availability and seller or source details on the CNBuy Sheet product page before deciding.")}</p>
+            <p>{translate("Check the current price, available variants, size information, availability and seller or source details on the main-site product page before deciding.")}</p>
           </article>
         </div>
       </section>
       <section className="product-source-panel">
         <div><p className="eyebrow">{translate("Evidence boundary")}</p><h2>{translate("Listing media is not automatically QC media.")}</h2></div>
         <div>
-          <p>{translate("UUFinds publicly describes QC-photo and QC-video discovery, image recognition and supported link handling, while also stating that it does not sell products. This independent page likewise does not process an order. It identifies the CNBuy Sheet product, explains what to inspect and keeps the final destination explicit.")}</p>
+          <p>{translate("UUFinds publicly describes QC-photo and QC-video discovery, image recognition and supported link handling, while also stating that it does not sell products. This independent page likewise does not process an order. It identifies the main-site product, explains what to inspect and keeps the final destination explicit.")}</p>
           <div className="product-source-links">
-            <a href={product.mainSiteUrl} target="_blank" rel="noreferrer">{translate("CNBuy Sheet detail ↗")}</a>
+            <a href={product.mainSiteUrl} target="_blank" rel="noreferrer">{translate("Main-site details ↗")}</a>
             <a href={product.categoryUrl} target="_blank" rel="noreferrer">{translate("More")} {category} ↗</a>
             <Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{translate("QC checklist →")}</Link>
           </div>

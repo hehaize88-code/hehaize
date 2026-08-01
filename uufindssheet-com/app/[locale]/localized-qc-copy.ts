@@ -34,14 +34,14 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
     intro: [
       "Der öffentliche QC-Finder von UUFinds gibt an, QC-Fotos und QC-Videos auffindbar zu machen und Bilderkennung zu unterstützen. Die QC-Übersicht beschreibt Zugriff auf QC-Fotos für Produkte chinesischer Marktplätze wie Taobao und 1688; öffentliche Produktdetailseiten zeigen Artikelinformationen zusammen mit QC-Material. Die öffentliche App-Auflistung von Uufinds Limited nennt außerdem die Umwandlung von 1688-, Taobao-, Weidian- und Einkaufsagenten-Links sowie Bildsuche. Das sind nützliche Recherchefunktionen, doch keine davon macht aus einem Fotoalbum eine Garantie.",
       "Ein QC-Finder ist am nützlichsten, wenn er dich aus den richtigen Gründen bremst. Er kann Warehouse-Fotos oder Videos zu einem Produktlink zeigen, aber nicht für dich entscheiden. Die entscheidende Frage lautet nicht nur „sieht das gut aus?“, sondern „passen die vorhandenen Belege exakt zu dem Angebot, der Variante und den Details, die ich erwäge?“",
-      "Dieser unabhängige Ratgeber leitet Käufer nicht zu UUFinds weiter. Er nutzt die oben geprüften öffentlichen Informationen, um die Methode zu erklären, und hält sämtliche Einkaufs-, Produkt- und Kategoriewege bei CNBuy Sheet.",
+      "Dieser unabhängige Ratgeber leitet Käufer nicht zu UUFinds weiter. Er nutzt die oben geprüften öffentlichen Informationen, um die Methode zu erklären, und hält sämtliche Einkaufs-, Produkt- und Kategoriewege auf der Hauptseite.",
     ],
     sections: [
       {
         heading: "Was UUFinds öffentlich bestätigt",
         paragraphs: [
           "Die offizielle Website beschreibt UUFinds durchgehend als Entdeckungs- und Informationsschicht, nicht als Verkäufer. Der QC-Finder bewirbt Fotos, Videos und Bilderkennung; die gesonderte QC-Übersicht nennt chinesische Marktplätze; Produktdetailseiten verbinden QC-Material mit Artikelinformationen. Daraus ergibt sich ein praktischer Einsatz: visuelle Belege zu einem Produkt finden und prüfen, bevor eine Einkaufsseite geöffnet wird.",
-          "Die wichtige Grenze ist ebenso faktisch. Die öffentlichen UUFinds-Produktseiten erklären, dass die Plattform Produkte weder direkt noch indirekt verkauft. Ein QC-Album hilft daher beim Vergleich; Kaufbedingungen, aktuelle Varianten, Verkäuferdaten, Bestand und die endgültige Produktentscheidung gehören weiterhin zur Live-Zielseite und zum Dienst, über den die Bestellung erfolgt.",
+          "Die wichtige Grenze ist ebenso faktisch. Die öffentlichen UUFinds-Produktseiten erklären, dass die Plattform Produkte weder direkt noch indirekt verkauft. Ein QC-Album hilft daher beim Vergleich; Kaufbedingungen, aktuelle Varianten, Verkäuferdaten, Bestand und die endgültige Produktentscheidung gehören weiterhin zur Live-Hauptseite und zum Dienst, über den die Bestellung erfolgt.",
         ],
         points: [
           "Kernergebnis: verfügbare QC-Fotos und QC-Videos",
@@ -99,7 +99,7 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
         heading: "Video für Bewegung und Textur nutzen, wenn es vorhanden ist",
         paragraphs: [
           "Video kann Fragen beantworten, die ein Standbild offenlässt. Es kann zeigen, wie Stoff fällt, ein Reißverschluss läuft, eine Sohle nachgibt oder reflektierende und strukturierte Materialien auf Bewegung reagieren. Außerdem kann es Winkel sichtbar machen, die in einem sorgfältig gerahmten Foto fehlen. Sieh langsam zu und vergleiche dieselben Merkmale wie in der Foto-Checkliste, statt Bewegung an sich als Qualitätsbeweis zu werten.",
-          "Auch Video hat Grenzen. Kompression kann feine Details verbergen, Licht die Farbe verändern, und ein kurzer Clip belegt keine langfristige Haltbarkeit. Bei Elektronik bestätigt ein Außenvideo weder interne Spezifikationen noch Akkuzustand oder elektrische Sicherheit. Nutze Video als weiteren Beleg und kehre für nicht visuell prüfbare Aussagen zur Produktbeschreibung und aktuellen Zielseite zurück.",
+          "Auch Video hat Grenzen. Kompression kann feine Details verbergen, Licht die Farbe verändern, und ein kurzer Clip belegt keine langfristige Haltbarkeit. Bei Elektronik bestätigt ein Außenvideo weder interne Spezifikationen noch Akkuzustand oder elektrische Sicherheit. Nutze Video als weiteren Beleg und kehre für nicht visuell prüfbare Aussagen zur Produktbeschreibung und aktuellen Hauptseite zurück.",
         ],
       },
       {
@@ -116,9 +116,9 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
         ],
       },
       {
-        heading: "Auf der aktuellen CNBuy-Sheet-Produktseite abschließen",
+        heading: "Auf der aktuellen Produktseite der Hauptseite abschließen",
         paragraphs: [
-          "Öffne nach der QC-Recherche die passende Kategorie oder das Produktziel und bestätige den aktuellen Zustand des Angebots. Preis, Verfügbarkeit, Farben, Größen und Verkäuferangaben können sich ändern. Die direkten CNBuy-Sheet-Wege dieser Website führen zu einer relevanten Kategorie, ersetzen aber nicht die abschließende Angebotsprüfung.",
+          "Öffne nach der QC-Recherche die passende Kategorie oder das Produktziel und bestätige den aktuellen Zustand des Angebots. Preis, Verfügbarkeit, Farben, Größen und Verkäuferangaben können sich ändern. Die direkten Hauptseiten-Wege dieser Website führen zu einer relevanten Kategorie, ersetzen aber nicht die abschließende Angebotsprüfung.",
           "Speichere den Link erst, wenn du erklären kannst, was die Fotos zeigen, was sie nicht zeigen und welche Details noch bestätigt werden müssen. Diese kurze Zusammenfassung ist nützlicher als ein vages grünes oder rotes Signal.",
         ],
         points: [
@@ -131,14 +131,14 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
       {
         heading: "Ein nachvollziehbares Urteil schreiben statt nur „sieht gut aus“",
         paragraphs: [
-          "Eine verlässliche Routine muss kurz genug zum Wiederholen sein. Speichere zuerst den exakten Quellen- oder Produktlink. Entscheide dann, ob du allgemein stöberst oder ein bestimmtes Angebot prüfst. Untersuche anschließend zugeordnetes QC-Material von Gesamtform bis Konstruktion und Maßen. Öffne danach die CNBuy-Sheet-Detailseite und bestätige aktuelle Fakten. Notiere zuletzt alles, was die Bilder nicht belegen: Größenunsicherheit, fehlende Winkel, Materialangaben oder wechselnde Verfügbarkeit.",
+          "Eine verlässliche Routine muss kurz genug zum Wiederholen sein. Speichere zuerst den exakten Quellen- oder Produktlink. Entscheide dann, ob du allgemein stöberst oder ein bestimmtes Angebot prüfst. Untersuche anschließend zugeordnetes QC-Material von Gesamtform bis Konstruktion und Maßen. Öffne danach die Detailseite der Hauptseite und bestätige aktuelle Fakten. Notiere zuletzt alles, was die Bilder nicht belegen: Größenunsicherheit, fehlende Winkel, Materialangaben oder wechselnde Verfügbarkeit.",
           "Zweck einer UUFinds-Spreadsheet-Suche ist nicht, die Seite mit den meisten Links zu finden. Du sollst ein Produkt erreichen, das sich identifizieren, vergleichen und prüfen lässt, ohne die Herkunft der Informationen zu verlieren. Kategoriestöbern erweitert die Auswahl, QC-Recherche reduziert Unsicherheit und die Live-Produktseite bestätigt das aktuelle Angebot. Getrennte Rollen ergeben einen klareren Einkaufsweg.",
         ],
         points: [
           "ZUORDNUNG — exakt, wahrscheinlich oder nur Referenz",
           "SICHTBARE BELEGE — Form, Konstruktion, Verarbeitung und Maße geprüft",
           "UNBEKANNT — fehlende Winkel, Materialangaben, innerer Zustand oder Größenunsicherheit",
-          "LIVE-PRÜFUNG — aktuelle Produkt-ID, Preis und Varianten bei CNBuy Sheet bestätigt",
+          "LIVE-PRÜFUNG — aktuelle Produkt-ID, Preis und Varianten auf der Hauptseite bestätigt",
           "ENTSCHEIDUNG — behalten, Alternative vergleichen oder auf weitere Belege warten",
         ],
       },
@@ -157,7 +157,7 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
     intro: [
       "Publiczna wyszukiwarka QC UUFinds deklaruje pomoc w odnajdywaniu zdjęć i filmów QC oraz obsługę rozpoznawania obrazu. Strona przeglądania QC opisuje dostęp do zdjęć produktów z chińskich marketplace’ów, takich jak Taobao i 1688, a publiczne strony szczegółów pokazują informacje o produkcie obok materiałów QC. Karta aplikacji Uufinds Limited wymienia też konwersję linków 1688, Taobao, Weidian i agentów zakupowych oraz wyszukiwanie obrazem. Są to przydatne funkcje badawcze, lecz żadna nie zamienia albumu w gwarancję.",
       "Wyszukiwarka QC jest najbardziej użyteczna, gdy spowalnia cię z właściwych powodów. Może pokazać zdjęcia lub film z magazynu powiązane z linkiem, ale nie podejmie decyzji. Dobre pytanie brzmi nie tylko „czy to wygląda dobrze?”, lecz „czy dostępne dowody pasują do dokładnej oferty, wariantu i szczegółów, które rozważam?”",
-      "Ten niezależny przewodnik nie kieruje kupujących do UUFinds. Korzysta ze zweryfikowanych informacji publicznych, aby wyjaśnić metodę, a wszystkie trasy zakupowe, produktowe i kategoryjne prowadzi do CNBuy Sheet.",
+      "Ten niezależny przewodnik nie kieruje kupujących do UUFinds. Korzysta ze zweryfikowanych informacji publicznych, aby wyjaśnić metodę, a wszystkie trasy zakupowe, produktowe i kategoryjne prowadzi do serwisu głównego.",
     ],
     sections: [
       {
@@ -239,9 +239,9 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
         ],
       },
       {
-        heading: "Zakończ na aktywnej stronie produktu CNBuy Sheet",
+        heading: "Zakończ na aktywnej stronie produktu w serwisie głównym",
         paragraphs: [
-          "Po badaniu QC otwórz dopasowaną kategorię lub produkt i potwierdź bieżący stan oferty. Cena, dostępność, kolory, rozmiary i dane sprzedawcy mogą się zmieniać. Bezpośrednie ścieżki CNBuy Sheet na tej stronie prowadzą do odpowiedniej kategorii, ale nie zastępują końcowej kontroli oferty.",
+          "Po badaniu QC otwórz dopasowaną kategorię lub produkt i potwierdź bieżący stan oferty. Cena, dostępność, kolory, rozmiary i dane sprzedawcy mogą się zmieniać. Bezpośrednie ścieżki serwis główny na tej stronie prowadzą do odpowiedniej kategorii, ale nie zastępują końcowej kontroli oferty.",
           "Zapisz link dopiero wtedy, gdy umiesz wyjaśnić, co zdjęcia pokazały, czego nie pokazały i co nadal wymaga potwierdzenia. Takie krótkie podsumowanie jest bardziej użyteczne niż ogólna zielona lub czerwona ocena.",
         ],
         points: [
@@ -254,14 +254,14 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
       {
         heading: "Napisz możliwy do prześledzenia werdykt zamiast „wygląda dobrze”",
         paragraphs: [
-          "Dobra procedura musi być na tyle krótka, by ją powtarzać. Najpierw zapisz dokładny link źródłowy lub produktowy. Potem zdecyduj, czy przeglądasz szeroko, czy weryfikujesz konkretną ofertę. Oceń dopasowane QC od ogólnego kształtu po konstrukcję i pomiary. Otwórz szczegóły CNBuy Sheet i potwierdź bieżące fakty. Na końcu zapisz wszystko, czego obrazy nie wykazały: rozmiar, brakujące kąty, materiał lub zmieniającą się dostępność.",
+          "Dobra procedura musi być na tyle krótka, by ją powtarzać. Najpierw zapisz dokładny link źródłowy lub produktowy. Potem zdecyduj, czy przeglądasz szeroko, czy weryfikujesz konkretną ofertę. Oceń dopasowane QC od ogólnego kształtu po konstrukcję i pomiary. Otwórz szczegóły serwis główny i potwierdź bieżące fakty. Na końcu zapisz wszystko, czego obrazy nie wykazały: rozmiar, brakujące kąty, materiał lub zmieniającą się dostępność.",
           "Celem wyszukiwania UUFinds spreadsheet nie jest znalezienie strony z największą liczbą linków. Chodzi o produkt, który można zidentyfikować, porównać i zweryfikować bez utraty źródła informacji. Kategorie poszerzają wybór, QC zmniejsza niepewność, a strona na żywo potwierdza stan obecny. Rozdzielenie tych ról daje klarowniejszą drogę.",
         ],
         points: [
           "DOPASOWANIE — dokładne, prawdopodobne lub tylko referencja",
           "WIDOCZNE DOWODY — sprawdzono kształt, konstrukcję, wykończenie i wymiary",
           "NIEWIADOME — brakujące kąty, materiał, stan wewnętrzny lub rozmiar",
-          "KONTROLA NA ŻYWO — aktualne ID, cena i warianty potwierdzone w CNBuy Sheet",
+          "KONTROLA NA ŻYWO — aktualne ID, cena i warianty potwierdzone w serwisie głównym",
           "DECYZJA — zachowaj, porównaj alternatywę lub poczekaj na więcej dowodów",
         ],
       },
@@ -280,7 +280,7 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
     intro: [
       "O localizador público de QC do UUFinds afirma ajudar usuários a encontrar fotos e vídeos de QC e oferecer reconhecimento de imagem. A página de navegação descreve acesso a fotos de produtos de marketplaces chineses como Taobao e 1688, enquanto páginas públicas de detalhes exibem informações do item ao lado do QC. A listagem da Uufinds Limited também cita conversão de links do 1688, Taobao, Weidian e agentes, além de busca por imagem. São funções úteis de pesquisa, mas nenhuma transforma um álbum em garantia.",
       "Um localizador de QC é mais útil quando faz você desacelerar pelos motivos certos. Ele pode mostrar fotos ou vídeos de armazém ligados a um produto, mas não decide por você. A pergunta útil não é apenas “parece bom?”, e sim “as evidências disponíveis correspondem ao anúncio, à variante e aos detalhes exatos que estou considerando?”",
-      "Este guia independente não envia compradores ao UUFinds. Ele usa as informações públicas verificadas acima para explicar o método e mantém todas as rotas de compra, produto e categoria direcionadas ao CNBuy Sheet.",
+      "Este guia independente não envia compradores ao UUFinds. Ele usa as informações públicas verificadas acima para explicar o método e mantém todas as rotas de compra, produto e categoria direcionadas ao site principal.",
     ],
     sections: [
       {
@@ -362,9 +362,9 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
         ],
       },
       {
-        heading: "Finalize na página ativa do produto no CNBuy Sheet",
+        heading: "Finalize na página ativa do produto no site principal",
         paragraphs: [
-          "Depois da pesquisa de QC, abra a categoria ou produto correspondente e confirme o estado atual do anúncio. Preço, disponibilidade, cores, tamanhos e vendedor podem mudar. As rotas diretas do CNBuy Sheet neste site levam a uma categoria relevante, mas não substituem a verificação final.",
+          "Depois da pesquisa de QC, abra a categoria ou produto correspondente e confirme o estado atual do anúncio. Preço, disponibilidade, cores, tamanhos e vendedor podem mudar. As rotas diretas do site principal neste site levam a uma categoria relevante, mas não substituem a verificação final.",
           "Salve o link somente depois de explicar o que as fotos mostraram, o que não mostraram e quais detalhes ainda precisam de confirmação. Esse resumo é mais útil que um rótulo vago de aprovação ou rejeição.",
         ],
         points: [
@@ -377,14 +377,14 @@ export const localizedQCCopy: Record<Exclude<ParityLocale, "en-gb">, QCCopy> = {
       {
         heading: "Escreva um veredito rastreável em vez de apenas “parece bom”",
         paragraphs: [
-          "Uma rotina confiável deve ser curta o bastante para repetir. Primeiro salve o link exato. Depois defina se está navegando amplamente ou verificando um anúncio. Inspecione o QC relacionado do formato à construção e medidas. Abra os detalhes no CNBuy Sheet e confirme fatos atuais. Por fim, registre o que as imagens não estabeleceram: tamanho, ângulos ausentes, material ou disponibilidade variável.",
+          "Uma rotina confiável deve ser curta o bastante para repetir. Primeiro salve o link exato. Depois defina se está navegando amplamente ou verificando um anúncio. Inspecione o QC relacionado do formato à construção e medidas. Abra os detalhes no site principal e confirme fatos atuais. Por fim, registre o que as imagens não estabeleceram: tamanho, ângulos ausentes, material ou disponibilidade variável.",
           "O objetivo de buscar uma planilha UUFinds não é achar a página com mais links. É chegar a um produto identificável, comparável e verificável sem perder a origem das informações. Categorias ampliam opções, QC reduz incerteza e a página ativa confirma o que existe agora. Manter essas funções separadas cria uma rota mais clara.",
         ],
         points: [
           "RELAÇÃO — exata, provável ou apenas referência",
           "EVIDÊNCIA VISÍVEL — formato, construção, acabamento e medidas verificados",
           "DESCONHECIDO — ângulos ausentes, material, condição interna ou tamanho",
-          "VERIFICAÇÃO AO VIVO — ID, preço e variantes atuais confirmados no CNBuy Sheet",
+          "VERIFICAÇÃO AO VIVO — ID, preço e variantes atuais confirmados no site principal",
           "DECISÃO — manter, comparar alternativa ou aguardar mais evidências",
         ],
       },

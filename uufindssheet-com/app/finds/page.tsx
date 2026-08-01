@@ -5,12 +5,12 @@ import { categories } from "../site-data";
 import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
-  title: "UUFinds Product Discovery Method & CNBuy Sheet Categories",
-  description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled CNBuy Sheet categories for shoes, clothing, accessories and electronics.",
+  title: "UUFinds Product Discovery Method & the main site Categories",
+  description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled main-site categories for shoes, clothing, accessories and electronics.",
   alternates: localizedAlternates("/finds/"),
   openGraph: {
-    title: "UUFinds Product Discovery Method & CNBuy Sheet Categories",
-    description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled CNBuy Sheet categories for shoes, clothing, accessories and electronics.",
+    title: "UUFinds Product Discovery Method & the main site Categories",
+    description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled main-site categories for shoes, clothing, accessories and electronics.",
     url: "/finds/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -51,7 +51,7 @@ export default function FindsPage() {
             <article><p className="step-label">SHARED ITEM PAGE</p><h3>Useful for collecting leads</h3><p>UUFinds describes personalized pages that integrate items, purchasing agents and social content and can be shared through one link.</p><strong>Save the original item or seller link before researching quality.</strong></article>
             <article><p className="step-label">QC FINDER</p><h3>Useful after discovery</h3><p>The official QC finder describes photos, videos and image recognition. Availability depends on what material exists for the product or link.</p><strong>A visually similar result is not automatically the same seller, variant or batch.</strong></article>
             <article><p className="step-label">CATEGORY ROUTE</p><h3>Useful when you only know the type</h3><p>Begin with Shoes, Hoodies, T-Shirts, Jackets, Pants, Headwear, Accessories, Jerseys or Electronics when no exact link exists yet.</p><strong>Shortlist two or three candidates before comparing evidence.</strong></article>
-            <article><p className="step-label">EXACT PRODUCT</p><h3>Useful for the final match</h3><p>Open an individual CNBuy Sheet detail page and compare its product ID, images, price and variants with the item you researched.</p><strong>Use the live page for current facts that a shared find cannot preserve.</strong></article>
+            <article><p className="step-label">EXACT PRODUCT</p><h3>Useful for the final match</h3><p>Open an individual main-site detail page and compare its product ID, images, price and variants with the item you researched.</p><strong>Use the live page for current facts that a shared find cannot preserve.</strong></article>
           </div>
         </section>
 
@@ -62,13 +62,13 @@ export default function FindsPage() {
             <li><span>02</span><p><strong>Keep the source:</strong> preserve the full item URL and visible seller or item identifier.</p></li>
             <li><span>03</span><p><strong>Narrow the field:</strong> compare category, model, material, price band and visible variants.</p></li>
             <li><span>04</span><p><strong>Research evidence:</strong> check whether matched QC photos or video exist and how recent they are.</p></li>
-            <li><span>05</span><p><strong>Finish live:</strong> confirm today’s information on the exact CNBuy Sheet product page.</p></li>
+            <li><span>05</span><p><strong>Finish live:</strong> confirm today’s information on the exact main-site product page.</p></li>
           </ol>
         </section>
 
         <div className="source-method-note">
           <p className="eyebrow">Source boundary / Reviewed July 23, 2026</p>
-          <p>Function claims on this page were checked against UUFinds’ public QC finder, QC browsing page, personalized display page, product disclaimer and app information. Category and shopping buttons remain exclusive to CNBuy Sheet.</p>
+          <p>Function claims on this page were checked against UUFinds’ public QC finder, QC browsing page, personalized display page, product disclaimer and app information. Category and shopping buttons remain exclusive to the main site.</p>
         </div>
       </section>
       <SiteFooter />

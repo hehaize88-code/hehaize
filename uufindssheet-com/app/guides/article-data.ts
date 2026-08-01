@@ -31,14 +31,14 @@ export const guides: Guide[] = [
     slug: "uufinds-spreadsheet-shopping-guide-2026",
     label: "SEO BUYING GUIDE",
     title: "UUFinds Spreadsheet Guide 2026: from QC research to better product finds",
-    description: "A practical, evidence-led route from UUFinds QC research to category browsing and exact product pages on CNBuy Sheet.",
+    description: "A practical, evidence-led route from UUFinds QC research to category browsing and exact product pages on the main site.",
     updated: "July 23, 2026",
     readTime: "12 min read",
     modifiedISO: "2026-07-23",
     sourceNote: "Function claims were reviewed on July 23, 2026 against UUFinds’ public QC finder and QC browsing copy, product-detail disclaimer, account pages, personalized display description and public app information. Those sources support QC-photo and QC-video discovery, image recognition, link handling and shareable item pages. They do not support a guarantee of product quality, current stock, shipping cost or identical future batches.",
     intro: [
       "Searching for a “UUFinds spreadsheet” usually means one of two things. Some visitors want a fast catalog of products; others already have a Taobao, Weidian, 1688 or agent link and want to see real quality-control material before saving it. Those are different jobs. A useful workflow keeps product discovery, QC research and the final listing check separate instead of treating one large page of links as proof that an item is right.",
-      "This independent guide shows how to use that workflow with CNBuy Sheet as the shopping destination. It does not claim that every product has QC media, that an older warehouse photo represents the item available today, or that a spreadsheet can guarantee quality. The goal is simpler and more useful: build a shortlist, check the evidence that exists, then open the exact current product page and verify the facts that can change.",
+      "This independent guide shows how to use that workflow with the main site as the shopping destination. It does not claim that every product has QC media, that an older warehouse photo represents the item available today, or that a spreadsheet can guarantee quality. The goal is simpler and more useful: build a shortlist, check the evidence that exists, then open the exact current product page and verify the facts that can change.",
     ],
     sections: [
       {
@@ -51,7 +51,7 @@ export const guides: Guide[] = [
       {
         heading: "2. Treat a spreadsheet as a discovery tool, not a quality certificate",
         paragraphs: [
-          "A web spreadsheet is most helpful when it turns a long collection of links into clear categories and individual detail pages. On CNBuy Sheet, visitors can start with shoes, hoodies and sweaters, T-shirts, jackets, pants and shorts, headwear, accessories, jerseys or electronics. That structure reduces the friction of finding relevant listings, especially when you do not yet have a seller link in mind.",
+          "A web spreadsheet is most helpful when it turns a long collection of links into clear categories and individual detail pages. On the main site, visitors can start with shoes, hoodies and sweaters, T-shirts, jackets, pants and shorts, headwear, accessories, jerseys or electronics. That structure reduces the friction of finding relevant listings, especially when you do not yet have a seller link in mind.",
           "The limitation is equally important. A title, price and thumbnail describe a listing at a point in time; they do not prove the construction, sizing, condition or availability of the item that might be ordered later. Sellers can change variants, replace images or update prices. Use spreadsheet entries to create a shortlist, then open each promising product detail and compare its live information. Removing obviously mismatched listings early is more valuable than collecting a huge folder of links you never verify.",
         ],
         points: [
@@ -89,9 +89,9 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: "6. Open the exact CNBuy Sheet product page",
+        heading: "6. Open the exact main-site product page",
         paragraphs: [
-          "After research, move from the guide or category into a specific product detail. UUFinds Sheet now provides individual pages that show the listing images, category, displayed price and main-site identifier before sending you to the matching CNBuy Sheet URL. This extra step makes the destination visible and gives you one last opportunity to confirm that the item is the one you intended to open.",
+          "After research, move from the guide or category into a specific product detail. UUFinds Sheet now provides individual pages that show the listing images, category, displayed price and main-site identifier before sending you to the matching main-site URL. This extra step makes the destination visible and gives you one last opportunity to confirm that the item is the one you intended to open.",
           "On the live page, verify the identifier, title, seller or source link, current price, available color and size options, and any description or service information. Prices and stock can change, so the live destination should override an older guide or screenshot. If the product is gone or the details no longer match, return to the category rather than forcing a conclusion from stale information. A working alternative with clearer evidence is usually the better shortlist choice.",
         ],
       },
@@ -105,7 +105,7 @@ export const guides: Guide[] = [
       {
         heading: "8. A repeatable final checklist",
         paragraphs: [
-          "A dependable routine should be short enough to repeat. First, save the exact source or product link. Second, decide whether you are browsing broadly or verifying a particular listing. Third, inspect any matched QC media from overall shape to fine construction and measurements. Fourth, open the CNBuy Sheet detail page and confirm the current facts. Finally, record anything the images did not establish, including sizing uncertainty, missing angles, material claims or changing availability.",
+          "A dependable routine should be short enough to repeat. First, save the exact source or product link. Second, decide whether you are browsing broadly or verifying a particular listing. Third, inspect any matched QC media from overall shape to fine construction and measurements. Fourth, open the main site detail page and confirm the current facts. Finally, record anything the images did not establish, including sizing uncertainty, missing angles, material claims or changing availability.",
           "The purpose of a UUFinds spreadsheet search is not to find the page with the largest number of links. It is to reach a product you can identify, compare and verify without losing track of where the information came from. Category browsing expands your options; QC research reduces uncertainty; the live product page confirms what is available now. Keeping those roles separate produces a clearer and more useful shopping route.",
         ],
         points: [
@@ -129,7 +129,7 @@ export const guides: Guide[] = [
     intro: [
       "UUFinds’ public QC finder says it helps users find QC photos and QC videos and supports image recognition. Its QC browsing page describes access to QC photos for products from Chinese marketplaces such as Taobao and 1688, while public product-detail pages display item information alongside QC material. The public app listing from Uufinds Limited also mentions conversion of 1688, Taobao, Weidian and shopping-agent links, plus image-search features. These are useful research functions, but none of them turns a photo album into a guarantee.",
       "A QC finder is most useful when it slows you down for the right reasons. It can show warehouse photos or video connected to a product link, but it cannot make the decision for you. The useful question is not simply “does this look good?” It is “does the available evidence match the exact listing, variant and details I am considering?”",
-      "This independent guide does not send shoppers to UUFinds. It uses the verified public information above to explain the method, then keeps every shopping, product and category route pointed at CNBuy Sheet.",
+      "This independent guide does not send shoppers to UUFinds. It uses the verified public information above to explain the method, then keeps every shopping, product and category route pointed at the main site.",
     ],
     sections: [
       {
@@ -211,9 +211,9 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: "Finish on the live CNBuy Sheet product page",
+        heading: "Finish on the live main-site product page",
         paragraphs: [
-          "After QC research, open the matching category or product destination and confirm the current state of the listing. Price, availability, color options, size choices and seller information can change. The direct CNBuy Sheet routes on this site are designed to take you to a relevant category, but they do not replace the final listing check.",
+          "After QC research, open the matching category or product destination and confirm the current state of the listing. Price, availability, color options, size choices and seller information can change. The direct main-site routes on this site are designed to take you to a relevant category, but they do not replace the final listing check.",
           "Save the link only after you can explain what the photos showed, what they did not show and which details still need confirmation. That short summary is more useful than a vague green-light or red-light label.",
         ],
         points: [
@@ -226,14 +226,14 @@ export const guides: Guide[] = [
       {
         heading: "Write a traceable verdict instead of saying “looks good”",
         paragraphs: [
-          "A dependable routine should be short enough to repeat. First, save the exact source or product link. Second, decide whether you are browsing broadly or verifying a particular listing. Third, inspect any matched QC media from overall shape to fine construction and measurements. Fourth, open the CNBuy Sheet detail page and confirm the current facts. Finally, record anything the images did not establish, including sizing uncertainty, missing angles, material claims or changing availability.",
+          "A dependable routine should be short enough to repeat. First, save the exact source or product link. Second, decide whether you are browsing broadly or verifying a particular listing. Third, inspect any matched QC media from overall shape to fine construction and measurements. Fourth, open the main site detail page and confirm the current facts. Finally, record anything the images did not establish, including sizing uncertainty, missing angles, material claims or changing availability.",
           "The purpose of a UUFinds spreadsheet search is not to find the page with the largest number of links. It is to reach a product you can identify, compare and verify without losing track of where the information came from. Category browsing expands your options; QC research reduces uncertainty; the live product page confirms what is available now. Keeping those roles separate produces a clearer and more useful shopping route.",
         ],
         points: [
           "MATCH — exact, probable or reference only",
           "VISIBLE EVIDENCE — shape, construction, finish and measurements checked",
           "UNKNOWN — missing angles, material claims, internal condition or sizing uncertainty",
-          "LIVE CHECK — current product ID, price and variants confirmed on CNBuy Sheet",
+          "LIVE CHECK — current product ID, price and variants confirmed on the main site",
           "DECISION — keep, compare with an alternative or pause for more evidence",
         ],
       },
@@ -242,15 +242,15 @@ export const guides: Guide[] = [
   {
     slug: "how-to-use-uufinds",
     label: "BEGINNER GUIDE",
-    title: "How to use UUFinds and continue browsing on CNBuy Sheet",
-    description: "A research-to-browse workflow for QC material, shopping links and CNBuy Sheet category pages.",
+    title: "How to use UUFinds and continue browsing on the main site",
+    description: "A research-to-browse workflow for QC material, shopping links and main-site category pages.",
     updated: "July 23, 2026",
     readTime: "9 min read",
     modifiedISO: "2026-07-23",
     sourceNote: "The UUFinds functions in this beginner guide were checked on July 23, 2026 against the official public QC finder, QC browsing copy, account pages and public app information. Marketplace and agent-link handling, QC media and image-search features are documented; availability of matched media for any particular listing is not guaranteed.",
     intro: [
-      "UUFinds and CNBuy Sheet solve different parts of the product-search process. UUFinds focuses on QC discovery and link handling; CNBuy Sheet presents browsable categories and product-detail routes. Using them in sequence is more reliable than treating either one as a complete answer.",
-      "The official UUFinds App Store listing says the service can convert links from 1688, Taobao, Weidian and shopping agents, and can surface real quality pictures. CNBuy Sheet, meanwhile, publishes category pages for shoes, hoodies, T-shirts, jackets, pants, headwear, accessories, jerseys and electronics. Here is a clean way to move between the two.",
+      "UUFinds and the main site solve different parts of the product-search process. UUFinds focuses on QC discovery and link handling; the main site presents browsable categories and product-detail routes. Using them in sequence is more reliable than treating either one as a complete answer.",
+      "The official UUFinds App Store listing says the service can convert links from 1688, Taobao, Weidian and shopping agents, and can surface real quality pictures. the main site, meanwhile, publishes category pages for shoes, hoodies, T-shirts, jackets, pants, headwear, accessories, jerseys and electronics. Here is a clean way to move between the two.",
     ],
     sections: [
       {
@@ -272,11 +272,11 @@ export const guides: Guide[] = [
         paragraphs: [
           "Suppose you have a screenshot of a charcoal hoodie but no reliable product name. UUFinds publicly describes image recognition alongside its QC finder, so an image-led search is a reasonable discovery step. Treat the results as candidates, not matches. Open the most plausible result and recover the underlying marketplace or shopping-agent link. Then compare the graphic position, pocket shape, hood construction, cuff width and visible color options with the screenshot. A shared photo can lead you to the right product family without proving that the seller, variant or batch is identical.",
           "Next, look for QC material tied to that source. The most useful set would show the complete front and back, the hood and neckline, seams around the pocket, cuffs, the fabric surface and a ruler across the key dimensions. If the only available images show a folded garment or a close-up of a label, the evidence is too narrow to answer fit and proportion questions. Write that down. “No full-length view” is a better note than “probably oversized.”",
-          "Finally, open Hoodies and Sweaters on CNBuy Sheet and compare a small number of live listings. Do not select the first similar thumbnail. Check the current title, product identifier, displayed price, sizes, colors and destination link. If the live listing no longer resembles the QC set, the match has broken and the older evidence should not be carried over. This example is ordinary on purpose: good research is mostly careful matching, not a clever shortcut.",
+          "Finally, open Hoodies and Sweaters on the main site and compare a small number of live listings. Do not select the first similar thumbnail. Check the current title, product identifier, displayed price, sizes, colors and destination link. If the live listing no longer resembles the QC set, the match has broken and the older evidence should not be carried over. This example is ordinary on purpose: good research is mostly careful matching, not a clever shortcut.",
         ],
       },
       {
-        heading: "Step 3: Move to the correct CNBuy Sheet category",
+        heading: "Step 3: Move to the correct main-site category",
         paragraphs: [
           "Once you know what you are looking for, use a category route instead of returning to a generic homepage. On UUFinds Sheet, a shoe search opens the Shoes section; hoodie and sweater terms open Hoodies/Sweaters; caps and hats open Headwear. The same logic applies to T-shirts, jackets, pants and shorts, accessories, jerseys and electronics.",
           "A category page is a discovery surface, not a guarantee that every product is equivalent to the one you researched. Compare titles, images, item identifiers and destination links before treating a result as a match.",
@@ -307,7 +307,7 @@ export const guides: Guide[] = [
       {
         heading: "Keep a short research note before leaving the page",
         paragraphs: [
-          "A useful note can fit on six lines: original source link, seller or item ID, intended color and size, QC date, important observations, and unresolved questions. Add the exact CNBuy Sheet page you opened at the end. This small habit prevents a common mix-up when several tabs show the same catalog photo. It also makes comparison fair: one candidate may be cheaper, while another has current measurements and several recent angles.",
+          "A useful note can fit on six lines: original source link, seller or item ID, intended color and size, QC date, important observations, and unresolved questions. Add the exact main-site page you opened at the end. This small habit prevents a common mix-up when several tabs show the same catalog photo. It also makes comparison fair: one candidate may be cheaper, while another has current measurements and several recent angles.",
           "Avoid verdicts such as “1:1,” “perfect” or “safe to buy.” The public UUFinds information supports discovery of QC photos and videos, link handling and image-based search; it does not support those guarantees. A better conclusion sounds like a person who actually reviewed the material: “probable link match; shape and print placement look consistent in two recent sets; sleeve measurement and true color remain unconfirmed.” That sentence is less exciting than a score, but far more useful.",
         ],
       },
@@ -328,10 +328,10 @@ export const guides: Guide[] = [
     updated: "July 23, 2026",
     readTime: "9 min read",
     modifiedISO: "2026-07-23",
-    sourceNote: "This comparison was reviewed on July 23, 2026 against UUFinds’ public description of QC-photo and QC-video discovery, image recognition and link handling, together with CNBuy Sheet’s live category and product-page structure. The comparison distinguishes documented platform functions from independent inspection advice.",
+    sourceNote: "This comparison was reviewed on July 23, 2026 against UUFinds’ public description of QC-photo and QC-video discovery, image recognition and link handling, together with the main site’s live category and product-page structure. The comparison distinguishes documented platform functions from independent inspection advice.",
     intro: [
       "A spreadsheet answers “what can I browse?” A QC finder answers “what visual evidence can I inspect for this link?” The two tools often appear in the same search journey, which is why they are easy to confuse. Their data, strengths and limits are different.",
-      "CNBuy Sheet turns product links into browsable web categories. UUFinds describes itself as a QC finder for photos and videos and also supports link conversion. Used together, one helps create a shortlist and the other helps examine it.",
+      "the main site turns product links into browsable web categories. UUFinds describes itself as a QC finder for photos and videos and also supports link conversion. Used together, one helps create a shortlist and the other helps examine it.",
     ],
     sections: [
       {
@@ -359,7 +359,7 @@ export const guides: Guide[] = [
         heading: "Four searches that look similar but need different starting points",
         paragraphs: [
           "“I want a black hoodie” is a discovery request. Start with a spreadsheet category because breadth is useful: compare shapes, graphics, materials, prices and available sizes. Only after two or three candidates look realistic should you spend time searching for matched QC. Running a very broad phrase through a QC finder first can produce many unrelated items and make a similar image feel more convincing than it is.",
-          "“I have this Weidian link” is a verification request. Start with the QC finder and preserve the full URL or item identifier. If images appear, compare the seller, product details, color and date before judging the garment itself. After that, browse the equivalent CNBuy Sheet category to see whether another current listing has clearer measurements or more recent evidence.",
+          "“I have this Weidian link” is a verification request. Start with the QC finder and preserve the full URL or item identifier. If images appear, compare the seller, product details, color and date before judging the garment itself. After that, browse the equivalent main-site category to see whether another current listing has clearer measurements or more recent evidence.",
           "“Can I find the item in this screenshot?” is an identification request. UUFinds’ image-recognition claim makes image search a sensible first move, but the result should be treated as a lead. Recover a real listing, compare distinctive features and then look for QC attached to that listing. A screenshot cropped from social media may hide the exact color, seller and even whether the item shown was the one delivered.",
           "“Is this electronic item reliable?” is partly outside visual QC. A spreadsheet can identify choices and QC photos can document exterior condition, included accessories and visible labels. They cannot establish battery health, electrical safety, internal components or long-term performance. Finish with the live specifications and terms, and do not turn a clean exterior into a technical claim that the images cannot support.",
         ],
@@ -421,10 +421,10 @@ export const guides: Guide[] = [
     publishedISO: "2026-07-29",
     modifiedISO: "2026-07-29",
     englishOnly: true,
-    sourceNote: "Fact-checked July 29, 2026. UUFinds’ public QC finder and sampled product/QC pages support the existence of QC photos, QC videos, approximate style weights and sample-level weight entries. They do not establish packed parcel dimensions, a universal shipping divisor, a route quote or a final chargeable weight. Carrier examples below are identified separately and are illustrations, not CNBuy Sheet or UUFinds shipping terms.",
+    sourceNote: "Fact-checked July 29, 2026. UUFinds’ public QC finder and sampled product/QC pages support the existence of QC photos, QC videos, approximate style weights and sample-level weight entries. They do not establish packed parcel dimensions, a universal shipping divisor, a route quote or a final chargeable weight. Carrier examples below are identified separately and are illustrations, not the main site or UUFinds shipping terms.",
     intro: [
       "A weight shown beside a UUFinds product or QC set is useful, but it is not a shipping quote. It may describe an estimated style weight or one photographed warehouse sample. International parcel pricing can depend on a different number: the packed parcel’s chargeable weight, often the greater of actual scale weight and volumetric (dimensional) weight. Confusing those stages is how a 700 g product turns into an unrealistic 700 g shipping assumption.",
-      "This guide explains how to move from a UUFinds weight clue to a defensible parcel estimate. It uses current public UUFinds pages to define what is visible, current carrier guidance to explain dimensional-weight arithmetic, and independent worked examples to show the decisions. It does not claim a UUFinds fee, CNBuy Sheet shipping price, route divisor, packing service or delivery time. Those facts must be confirmed on the live service that will handle the parcel.",
+      "This guide explains how to move from a UUFinds weight clue to a defensible parcel estimate. It uses current public UUFinds pages to define what is visible, current carrier guidance to explain dimensional-weight arithmetic, and independent worked examples to show the decisions. It does not claim a UUFinds fee, the main site shipping price, route divisor, packing service or delivery time. Those facts must be confirmed on the live service that will handle the parcel.",
     ],
     sections: [
       {
@@ -476,7 +476,7 @@ export const guides: Guide[] = [
         heading: "4. Use scenarios instead of pretending you have a quote",
         paragraphs: [
           "Early in the search, exact parcel dimensions usually do not exist. A scenario range is more honest than a single total. Create a compact-pack case, a realistic case and a protective-pack case. Keep the same item shortlist, then change only the unknown packaging inputs. This reveals whether your decision is sensitive to box volume or mostly driven by scale weight.",
-          "The examples below all use 5,000 solely to demonstrate the arithmetic. They are not UUFinds, CNBuy Sheet or destination-route rates. In the first case, the box is light but bulky, so volume controls. In the second, the parcel is dense enough for scale weight to control. The point is not which outcome is cheaper; it is seeing which missing input can reverse the result.",
+          "The examples below all use 5,000 solely to demonstrate the arithmetic. They are not UUFinds, the main site or destination-route rates. In the first case, the box is light but bulky, so volume controls. In the second, the parcel is dense enough for scale weight to control. The point is not which outcome is cheaper; it is seeing which missing input can reverse the result.",
         ],
         table: {
           caption: "Worked parcel scenarios using an illustrative 5,000 divisor",
@@ -515,7 +515,7 @@ export const guides: Guide[] = [
         paragraphs: [
           "Once a packed estimate exists, collect the same fields for every eligible route: accepted product type, destination, actual-weight rule, volumetric divisor, rounding increment, size limits, included service, tracking, declared-value requirements and the date checked. Enter your parcel dimensions once, then calculate each route under its own rules. A lower per-kilogram headline can lose its advantage when a different divisor or rounding step applies.",
           "Separate verified facts from unknowns. A current calculator result for your destination is verified for that input and time; an old screenshot from another country is not. A UUFinds QC weight is evidence about a sample; it is not evidence about a carrier tariff. If a field is missing, mark it unknown and ask the responsible service rather than filling the cell with a convenient assumption.",
-          "Finish on the live CNBuy Sheet or service page responsible for the transaction. Re-check the exact product, current variants and any available parcel or route information. The on-site spreadsheet research guide explains this broader handoff: discovery finds candidates, QC material reduces product uncertainty, and the live destination confirms changing commercial facts.",
+          "Finish on the live main-site or service page responsible for the transaction. Re-check the exact product, current variants and any available parcel or route information. The on-site spreadsheet research guide explains this broader handoff: discovery finds candidates, QC material reduces product uncertainty, and the live destination confirms changing commercial facts.",
         ],
       },
       {
@@ -553,7 +553,7 @@ export const guides: Guide[] = [
         source: "DHL Express, “What is volumetric weight and how is it calculated?”",
         checked: "July 29, 2026",
         supports: "Metric dimensional-weight formula, a typical 5,000 example divisor, outer-dimension measurement and comparison with actual weight.",
-        boundary: "DHL states that divisors vary; this is not a UUFinds or CNBuy Sheet route term.",
+        boundary: "DHL states that divisors vary; this is not a UUFinds or the main site route term.",
       },
       {
         type: "Carrier methodology",
@@ -579,7 +579,7 @@ export const guides: Guide[] = [
       {
         href: "/guides/uufinds-spreadsheet-shopping-guide-2026/",
         label: "Use the complete spreadsheet research workflow",
-        description: "Move from broad discovery to a traceable shortlist and a current CNBuy Sheet destination.",
+        description: "Move from broad discovery to a traceable shortlist and a current main-site destination.",
       },
       {
         href: "/faq/",
@@ -589,7 +589,7 @@ export const guides: Guide[] = [
       {
         href: "/products/",
         label: "Compare current product detail pages",
-        description: "Keep listing identity, displayed price and category routes visible before opening CNBuy Sheet.",
+        description: "Keep listing identity, displayed price and category routes visible before opening the main site.",
       },
     ],
   },
