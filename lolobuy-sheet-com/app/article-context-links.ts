@@ -25,7 +25,7 @@ const routesByArticle: Record<string, string[]> = {
     "/categories/bags",
     "/products/nike-elite-backpack",
     "/guides/shipping",
-    "/articles/how-to-read-qc-photos",
+    "/articles/lolobuy-tracking-not-updating-guide",
   ],
   "lolobuy-review-early-user-experience": [
     "/categories/shoes",
@@ -44,6 +44,12 @@ const routesByArticle: Record<string, string[]> = {
     "/products/off-white-hoodies",
     "/guides/qc",
     "/articles/how-to-read-qc-photos",
+  ],
+  "lolobuy-tracking-not-updating-guide": [
+    "/categories/bags",
+    "/products/nike-elite-backpack",
+    "/guides/shipping",
+    "/articles/plan-china-shopping-haul",
   ],
 };
 
@@ -75,6 +81,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Spreadsheet verification guide",
       "/articles/lolobuy-qc-mismatch-evidence-guide":
         "QC mismatch evidence guide",
+      "/articles/lolobuy-tracking-not-updating-guide":
+        "Tracking delay last-scan checklist",
     },
   },
   es: {
@@ -104,6 +112,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Guía para verificar el spreadsheet",
       "/articles/lolobuy-qc-mismatch-evidence-guide":
         "Guía de pruebas para diferencias QC",
+      "/articles/lolobuy-tracking-not-updating-guide":
+        "Checklist del último escaneo de tracking",
     },
   },
   de: {
@@ -133,6 +143,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Ratgeber zur Spreadsheet-Prüfung",
       "/articles/lolobuy-qc-mismatch-evidence-guide":
         "Belegleitfaden für QC-Abweichungen",
+      "/articles/lolobuy-tracking-not-updating-guide":
+        "Letzter-Scan-Check für Trackinglücken",
     },
   },
   fr: {
@@ -162,6 +174,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Guide de vérification du spreadsheet",
       "/articles/lolobuy-qc-mismatch-evidence-guide":
         "Guide de preuves pour un écart QC",
+      "/articles/lolobuy-tracking-not-updating-guide":
+        "Checklist du dernier scan de suivi",
     },
   },
   it: {
@@ -191,6 +205,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Guida alla verifica dello spreadsheet",
       "/articles/lolobuy-qc-mismatch-evidence-guide":
         "Guida alle prove per differenze QC",
+      "/articles/lolobuy-tracking-not-updating-guide":
+        "Checklist dell'ultima scansione tracking",
     },
   },
 };

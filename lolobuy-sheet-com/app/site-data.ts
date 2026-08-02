@@ -1087,6 +1087,149 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-tracking-not-updating-guide",
+    title:
+      "Lolobuy Tracking Not Updating? Diagnose the Last Scan Before You Escalate",
+    shortTitle: "What to do when Lolobuy tracking is not updating",
+    description:
+      "A practical checklist for a Lolobuy tracking number with no update, including carrier handoffs, customs holds, address issues and evidence for support.",
+    eyebrow: "PARCEL TRACKING TROUBLESHOOTING",
+    published: "2026-08-02",
+    updated: "2026-08-02",
+    readingTime: "14 min read",
+    factCheckLine:
+      "Fact-checked August 2, 2026 against LoloBuy's public website and parcel interface, plus current DHL eCommerce, USPS and UPS tracking guidance.",
+    visual: {
+      eyebrow: "THE LAST-SCAN METHOD",
+      title: "Diagnose the evidence before guessing where the parcel is.",
+      caption:
+        "Record the shipment, locate the last carrier event, classify the gap and escalate with one compact evidence file.",
+      items: [
+        {
+          label: "Record",
+          text: "Save the parcel ID, tracking number, route, dispatch date and submitted address.",
+        },
+        {
+          label: "Locate",
+          text: "Find the newest dated scan on the responsible carrier's own page.",
+        },
+        {
+          label: "Classify",
+          text: "Separate label creation, handoff, transit, customs and delivery exceptions.",
+        },
+        {
+          label: "Escalate",
+          text: "Send the exact last event, elapsed time and requested next check.",
+        },
+      ],
+    },
+    sources: [
+      {
+        label: "LoloBuy public website and parcel interface — checked August 2, 2026",
+        note: "Primary source for the public order, warehouse inspection, photography and 90-day storage statements, and for the interface instruction to monitor parcels and contact support after an abnormal tracking update.",
+      },
+      {
+        label: "DHL eCommerce tracking FAQ — checked August 2, 2026",
+        note: "Carrier-specific evidence that tracking is milestone-based, handoffs can create gaps, customs and disruption can delay movement, and the sender may need to open an investigation. It is not a LoloBuy timetable.",
+      },
+      {
+        label: "USPS Tracking: The Basics — checked August 2, 2026",
+        note: "United States carrier guidance confirming that notifications require a new tracking event. It supports checking the carrier record itself rather than treating a missing alert as a missing parcel.",
+      },
+      {
+        label: "UPS Tracking Support — checked August 2, 2026",
+        note: "Carrier guidance separating ordinary status interpretation, customs issues, delivery changes and claims. The available action depends on the carrier and shipment contract.",
+      },
+      {
+        label: "Lolobuy Sheet last-scan framework",
+        note: "The diagnostic table and escalation template are independent editorial analysis for organising observable shipment evidence, not a platform promise or carrier rule.",
+      },
+    ],
+    intro: [
+      "A tracking number can exist while the parcel page still looks frozen. The label may have been created before the carrier accepted the carton, the export partner may not have published a departure scan, a local carrier may be waiting for a handoff, or customs may need information that never appears as a plain-English status. Those situations require different next steps.",
+      "LoloBuy's current public web interface tells users to track parcels, receive them promptly and contact the service if an abnormal tracking update appears. That is useful direction, but the public material we checked does not publish one universal first-scan deadline, lost-parcel threshold, carrier list or compensation outcome. This guide therefore starts with the last verifiable event and the current route terms instead of inventing a number of days that applies to every parcel.",
+    ],
+    sections: [
+      {
+        heading: "First separate parcel status from carrier tracking",
+        paragraphs: [
+          "A warehouse parcel can pass through several records: parcel submission, freight payment, warehouse processing, dispatch, carrier acceptance and public tracking. A status such as processed or shipped inside an account is not automatically the same as a physical acceptance scan from the carrier. Note the exact wording, timestamp and page where each status appears.",
+          "Do not start the clock from the day the original seller was paid. Domestic seller delivery, warehouse intake, QC, packing and international dispatch are separate stages. For a tracking problem, the useful baseline is the dispatch or handover event tied to the international parcel.",
+        ],
+      },
+      {
+        heading: "Build a five-field shipment record",
+        paragraphs: [
+          "Before contacting anyone, save the parcel reference, tracking number exactly as issued, route or service name, dispatch date and last visible event with its time and location. Add the delivery country and a redacted copy of the submitted address. If the account later replaces the tracking number or shows a local number, keep both and record when the change appeared.",
+          "This small record prevents two common mistakes: reporting an order number to a carrier that needs a tracking ID, and comparing the parcel with a delivery estimate that belongs to another route. Keep screenshots private because a full tracking number combined with a name or address can expose shipment information.",
+        ],
+        bullets: [
+          "Parcel reference and international tracking ID",
+          "Route or service shown for this parcel",
+          "Dispatch or carrier-handover date",
+          "Newest scan, timestamp and location",
+          "Destination country and redacted submitted address",
+        ],
+      },
+      {
+        heading: "Check the responsible carrier, not only an aggregator",
+        paragraphs: [
+          "Copy the tracking number rather than retyping it, then open the carrier named in the current parcel record. An aggregator is useful for discovering possible partners, but its feed can lag, translate statuses differently or stop at a handoff. Compare its result with the carrier's own page. If a second tracking number appears for the destination carrier, check that page as well and preserve the relationship between the two IDs.",
+          "A number that returns no result can mean a typo, a label that has not reached the carrier system, the wrong carrier page or a service with limited public events. It does not by itself prove loss. Ask which carrier currently owns the scan and whether the number has been physically accepted rather than requesting a generic update.",
+        ],
+      },
+      {
+        heading: "Classify the last event before choosing an action",
+        paragraphs: [
+          "Label created or data received usually means shipment information exists, but the public record does not yet prove physical acceptance. Accepted or collected means the carrier has recorded possession. In transit, departed or arrived events describe milestones, not continuous GPS movement. Export, airline or destination-arrival wording points to a cross-border leg. Customs or clearance wording needs the destination procedure. Out for delivery, attempted delivery and delivered belong to the local delivery stage.",
+          "An exception deserves the exact code, not a guess. Address incomplete, recipient unavailable, customs information required, held, returned or damaged each demands different evidence. Save the original status text and a screenshot before a translation or later scan overwrites it.",
+        ],
+      },
+      {
+        heading: "Understand why a quiet tracking page can still be moving",
+        paragraphs: [
+          "DHL eCommerce's current public FAQ explains that many services show milestone tracking, so time can pass between events while the shipment continues toward the destination. It also describes local postal handoffs and notes that weather, customs and operational backlogs can delay delivery. USPS similarly explains that an email or text alert requires a new event in its own tracking record. These are carrier examples, not a promise about the route used by your parcel.",
+          "Judge silence against the current service estimate and the last scan category. A short gap after export is different from a parcel that missed its estimated delivery and shows an unresolved exception. Do not copy another shopper's three-day or ten-day rule when their destination, carrier and handoff chain are different.",
+        ],
+      },
+      {
+        heading: "Treat address and customs problems as evidence tasks",
+        paragraphs: [
+          "For an address exception, compare the submitted recipient, street, apartment, city, region, postal code, country and phone format with the carrier record. Do not post that screenshot publicly. Some carriers restrict address changes after dispatch, so use only the current carrier or sender action shown for this shipment; a social-media message promising a paid reroute is not verification.",
+          "For customs, record the authority or carrier that issued the request, the reference number, requested document and response deadline. Customs processing varies by destination and may require information from the sender, recipient or carrier. Reply through an official channel and keep confirmation. A customs scan is not proof of seizure, a tax bill or release date unless the actual notice says so.",
+        ],
+      },
+      {
+        heading: "Escalate with one compact last-scan report",
+        paragraphs: [
+          "A useful support message states the parcel reference, route, tracking number, dispatch date, exact last event and what has changed relative to the current estimate. Then ask one answerable question: has the parcel been physically handed to the carrier, is there a replacement tracking number, which partner holds it now, or has the sender opened an investigation? Attach one full tracking screenshot and the relevant parcel record instead of a stream of cropped images.",
+          "Use the sender or shopping service first when there is no physical acceptance scan, when the carrier says only its contractual customer can investigate, or when route information must be confirmed. Use the responsible carrier for a carrier-coded delivery exception. Use the destination customs authority only when an authentic customs instruction identifies that channel.",
+        ],
+        bullets: [
+          "What the parcel record says",
+          "What the carrier record says",
+          "The exact last event and elapsed time",
+          "The route estimate or exception being compared",
+          "One specific check or action requested",
+        ],
+      },
+      {
+        heading: "Know what the tracking record cannot prove",
+        paragraphs: [
+          "A quiet page cannot prove that a parcel is lost, and a delivered scan cannot prove who received it or the condition of the contents. An estimated date is not a guarantee. A customs event does not reveal the final duty or outcome. A claim number does not guarantee compensation. Keep the language in your notes as precise as the evidence.",
+          "If the parcel eventually arrives, photograph the sealed exterior, shipping label and any visible damage before opening, then record the contents. If it does not arrive, preserve the complete event history and the current route or protection terms. Those records are more useful than a screenshot taken after statuses have disappeared.",
+        ],
+      },
+      {
+        heading: "A calm decision path for a Lolobuy parcel with no update",
+        paragraphs: [
+          "Start by identifying whether you have only a parcel status or a carrier acceptance event. Build the five-field record, check the responsible carrier, classify the last scan and compare the gap with the current route guidance. Address a genuine exception immediately; otherwise wait only within the service's stated window and escalate with the last-scan report when that boundary is crossed.",
+          "This method does not make international transport predictable. It does make the question clearer: who last recorded the parcel, what evidence is missing and which party can produce it. That is the difference between repeatedly asking where a package is and filing a request that support or a carrier can actually investigate.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const faqs = [

@@ -22,7 +22,7 @@ const researchFootprintCopy: Record<
     reviewed: string;
     statLabels: [string, string, string, string];
     scopeTitle: string;
-    scopeLinks: [string, string, string, string, string];
+    scopeLinks: [string, string, string, string, string, string];
   }
 > = {
   en: {
@@ -30,7 +30,7 @@ const researchFootprintCopy: Record<
     title: "A specific Lolobuy evidence set, not a swapped brand template.",
     intro:
       "This site’s present scope is source-link verification, warehouse-photo review, product-specific sizing and condition checks, packed-parcel planning and carefully bounded customer evidence. Counts below come from the pages currently published here.",
-    reviewed: "Scope reviewed 29 July 2026",
+    reviewed: "Scope reviewed 2 August 2026",
     statLabels: [
       "individual product evidence pages",
       "deep category guides",
@@ -44,6 +44,7 @@ const researchFootprintCopy: Record<
       "Warehouse-photo checklist",
       "Packed-parcel planning",
       "Early-user evidence review",
+      "Post-dispatch tracking diagnosis",
     ],
   },
   es: {
@@ -51,7 +52,7 @@ const researchFootprintCopy: Record<
     title: "Pruebas específicas de Lolobuy, no una plantilla con otra marca.",
     intro:
       "El alcance actual se centra en verificar enlaces fuente, revisar fotos de almacén, comprobar talla y estado por producto, planificar el paquete y delimitar las pruebas de clientes. Los recuentos proceden de las páginas publicadas aquí.",
-    reviewed: "Alcance revisado el 29 de julio de 2026",
+    reviewed: "Alcance revisado el 2 de agosto de 2026",
     statLabels: [
       "páginas individuales de pruebas de producto",
       "guías de categoría detalladas",
@@ -65,6 +66,7 @@ const researchFootprintCopy: Record<
       "Lista de fotos de almacén",
       "Planificación del paquete preparado",
       "Análisis de pruebas de usuarios",
+      "Diagnóstico del tracking tras el despacho",
     ],
   },
   de: {
@@ -72,7 +74,7 @@ const researchFootprintCopy: Record<
     title: "Eigene Lolobuy-Belege statt einer Vorlage mit neuem Markennamen.",
     intro:
       "Der aktuelle Schwerpunkt liegt auf Quellenlinks, Lagerfotos, produktspezifischen Größen- und Zustandsprüfungen, Paketplanung und klar begrenzten Nutzerbelegen. Die Zahlen stammen aus den hier veröffentlichten Seiten.",
-    reviewed: "Umfang geprüft am 29. Juli 2026",
+    reviewed: "Umfang geprüft am 2. August 2026",
     statLabels: [
       "einzelne Produkt-Belegseiten",
       "ausführliche Kategorien-Ratgeber",
@@ -86,6 +88,7 @@ const researchFootprintCopy: Record<
       "Checkliste für Lagerfotos",
       "Planung des gepackten Pakets",
       "Auswertung früher Nutzerbelege",
+      "Tracking-Diagnose nach dem Versand",
     ],
   },
   fr: {
@@ -93,7 +96,7 @@ const researchFootprintCopy: Record<
     title: "Des preuves propres à Lolobuy, pas un modèle rebaptisé.",
     intro:
       "Le périmètre actuel couvre la vérification des liens sources, les photos d’entrepôt, les contrôles de taille et d’état par produit, la préparation du colis et les témoignages clients correctement délimités. Les chiffres viennent des pages publiées ici.",
-    reviewed: "Périmètre vérifié le 29 juillet 2026",
+    reviewed: "Périmètre vérifié le 2 août 2026",
     statLabels: [
       "pages individuelles de preuves produit",
       "guides catégorie approfondis",
@@ -107,6 +110,7 @@ const researchFootprintCopy: Record<
       "Checklist des photos d’entrepôt",
       "Planification du colis préparé",
       "Analyse des premiers témoignages",
+      "Diagnostic du suivi après expédition",
     ],
   },
   it: {
@@ -114,7 +118,7 @@ const researchFootprintCopy: Record<
     title: "Prove specifiche su Lolobuy, non un modello con il marchio cambiato.",
     intro:
       "L’ambito attuale riguarda link sorgente, foto di magazzino, controlli specifici di taglia e condizioni, pianificazione del pacco e prove dei clienti con limiti chiari. I conteggi derivano dalle pagine pubblicate qui.",
-    reviewed: "Ambito verificato il 29 luglio 2026",
+    reviewed: "Ambito verificato il 2 agosto 2026",
     statLabels: [
       "pagine individuali di prove prodotto",
       "guide categoria approfondite",
@@ -128,6 +132,7 @@ const researchFootprintCopy: Record<
       "Checklist delle foto di magazzino",
       "Pianificazione del pacco preparato",
       "Analisi delle prime prove utente",
+      "Diagnosi del tracking dopo la spedizione",
     ],
   },
 };
@@ -138,6 +143,7 @@ const researchScopePaths = [
   "/guides/qc",
   "/articles/plan-china-shopping-haul",
   "/articles/lolobuy-review-early-user-experience",
+  "/articles/lolobuy-tracking-not-updating-guide",
 ] as const;
 
 export async function generateMetadata({

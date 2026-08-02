@@ -63,4 +63,13 @@ export const articleTopicMap: ArticleTopicMapEntry[] = [
     evidence: ["LoloBuy public website", "Identified community ordering guide", "Independent preliminary LoloBuy report", "Lolobuy Sheet editorial evidence framework"],
     internalLinkRole: "Remedial follow-on from the general QC checklist to category evidence, seller-link records and current order actions.",
   },
+  {
+    url: "/articles/lolobuy-tracking-not-updating-guide",
+    primaryQuery: "lolobuy tracking not updating",
+    relatedTerms: ["lolobuy tracking number not working", "lolobuy parcel no update", "lolobuy customs tracking delay", "lolobuy package stuck"],
+    intent: "problem solving",
+    angle: "Diagnose the exact last carrier event and responsible handoff before escalating, without inventing a universal lost-parcel threshold or delivery promise.",
+    evidence: ["LoloBuy public website and parcel interface", "DHL eCommerce tracking FAQ", "USPS Tracking: The Basics", "UPS Tracking Support", "Lolobuy Sheet last-scan framework"],
+    internalLinkRole: "Post-dispatch troubleshooting follow-on from parcel planning, connecting route selection with carrier, customs and evidence-led escalation.",
+  },
 ];

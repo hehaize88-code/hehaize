@@ -41,6 +41,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy Weidian Link Guide 2026: Order & QC Steps",
     "lolobuy-qc-mismatch-evidence-guide":
       "Lolobuy QC Mismatch: Evidence Before Return Requests",
+    "lolobuy-tracking-not-updating-guide":
+      "Lolobuy Tracking Not Updating? Last-Scan Checklist",
   },
   es: {
     "lolobuy-spreadsheet-guide":
@@ -55,6 +57,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Enlaces Weidian con Lolobuy: pedido y QC",
     "lolobuy-qc-mismatch-evidence-guide":
       "QC Lolobuy incorrecto: pruebas antes del retorno",
+    "lolobuy-tracking-not-updating-guide":
+      "Tracking Lolobuy sin actualizar: último escaneo",
   },
   de: {
     "lolobuy-spreadsheet-guide":
@@ -69,6 +73,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy Weidian-Link: Bestellung und QC",
     "lolobuy-qc-mismatch-evidence-guide":
       "Lolobuy QC-Abweichung: Belege vor der Rückgabe",
+    "lolobuy-tracking-not-updating-guide":
+      "Lolobuy-Tracking ohne Update: Letzter-Scan-Check",
   },
   fr: {
     "lolobuy-spreadsheet-guide":
@@ -83,6 +89,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lien Weidian Lolobuy : commande et QC",
     "lolobuy-qc-mismatch-evidence-guide":
       "Écart QC Lolobuy : preuves avant un retour",
+    "lolobuy-tracking-not-updating-guide":
+      "Suivi Lolobuy bloqué : checklist du dernier scan",
   },
   it: {
     "lolobuy-spreadsheet-guide":
@@ -97,6 +105,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Link Weidian Lolobuy: ordine e QC",
     "lolobuy-qc-mismatch-evidence-guide":
       "QC Lolobuy errato: prove prima del reso",
+    "lolobuy-tracking-not-updating-guide":
+      "Tracking Lolobuy fermo: checklist ultima scansione",
   },
 };
 
