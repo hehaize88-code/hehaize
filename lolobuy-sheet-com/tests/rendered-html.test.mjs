@@ -330,21 +330,23 @@ test("publishes article images, social previews and complete article schema", as
   ];
 
   for (const slug of slugs) {
+    const extension =
+      slug === "lolobuy-tracking-not-updating-guide" ? "png" : "webp";
     const response = await fetchPage(worker, `/articles/${slug}`);
     const html = await response.text();
 
     assert.equal(response.status, 200, slug);
-    assert.match(html, new RegExp(`<img[^>]+src="/articles/${slug}\\.webp"`));
+    assert.match(html, new RegExp(`<img[^>]+src="/articles/${slug}\\.${extension}"`));
     assert.match(
       html,
       new RegExp(
-        `<meta property="og:image" content="https://lolobuy-sheet\\.com/articles/${slug}\\.webp"`,
+        `<meta property="og:image" content="https://lolobuy-sheet\\.com/articles/${slug}\\.${extension}"`,
       ),
     );
     assert.match(
       html,
       new RegExp(
-        `<meta name="twitter:image" content="https://lolobuy-sheet\\.com/articles/${slug}\\.webp"`,
+        `<meta name="twitter:image" content="https://lolobuy-sheet\\.com/articles/${slug}\\.${extension}"`,
       ),
     );
     assert.match(html, /"@type":"Article"/);

@@ -30,7 +30,7 @@ const articleMedia = {
     height: 630,
   },
   "lolobuy-tracking-not-updating-guide": {
-    src: "/articles/lolobuy-tracking-not-updating-guide.webp",
+    src: "/articles/lolobuy-tracking-not-updating-guide.png",
     width: 1200,
     height: 630,
   },
