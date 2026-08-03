@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "hubbuy-parcel-insurance-claim-guide": [
+    ["Official parcel workflow", "Hubbuy places international shipping after warehouse inspection and parcel preparation.", OFFICIAL_HOME, "Official workflow ↗"],
+    ["Insurance and Compensation", "The publicly indexed policy defines optional parcel-loss cover, formula, published limits, timing and exclusions.", "https://manager.hubbuycn.com/index/help/info/id/69.html", "Insurance policy ↗"],
+    ["Shipping responsibility boundary", "The public shipping policy separates compensation responsibilities and excluded circumstances.", "https://manager.hubbuycn.com/index/help/info/id/20.html", "Shipping policy ↗"],
+  ],
   "hubbuy-restricted-items-shipping-guide": [
     ["Official purchase workflow", "Hubbuy places international route selection after warehouse inspection and parcel preparation.", OFFICIAL_HOME, "Official page ↗"],
     ["Public shipping policy", "The HubbuyCN help center separates forbidden goods, shipment restrictions and carrier responsibility.", "https://manager.hubbuycn.com/index/help/info/id/20.html", "Shipping policy ↗"],
@@ -157,7 +162,23 @@ function RestrictedItemsMatrix() {
   );
 }
 
+function InsuranceEvidenceMap() {
+  return (
+    <figure className="research-visual review-evidence-matrix">
+      <div className="research-visual-heading"><span>Original insurance map</span><strong>Match one event to one evidence file</strong></div>
+      <div className="review-matrix-grid">
+        <div><b>PUBLISHED COVER</b><strong>Parcel loss · whole-parcel customs loss</strong><span>Confirm the wording for the live route before dispatch.</span></div>
+        <div><b>VALUE RECORD</b><strong>Items · freight · insured amount</strong><span>Preserve the inputs and rate shown at checkout.</span></div>
+        <div><b>EVENT RECORD</b><strong>Tracking · carrier · customs notice</strong><span>Describe what happened before assigning a claim category.</span></div>
+        <div><b>EXCLUDED RISK</b><strong>Damage · delivered scan · recipient failure</strong><span>Evidence identifies an event; it does not rewrite an exclusion.</span></div>
+      </div>
+      <figcaption>Editorial evidence map created by Hubbuy Sheet from the publicly indexed HubbuyCN insurance policy checked on 3 August 2026. It is not a coverage certificate.</figcaption>
+    </figure>
+  );
+}
+
 function ArticleVisual({ slug }) {
+  if (slug === "hubbuy-parcel-insurance-claim-guide") return <InsuranceEvidenceMap />;
   if (slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsMatrix />;
   if (slug === "hubbuy-reviews-customer-experience") return <ReviewEvidenceMatrix />;
   if (slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingMap />;

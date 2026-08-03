@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-parcel-insurance-claim-guide": {
+    primaryQuery: "Hubbuy insurance",
+    secondaryTerms: ["Hubbuy parcel insurance", "Hubbuy insurance coverage", "Hubbuy insurance claim", "Hubbuy compensation evidence"],
+    searchIntent: "Understand published parcel-loss cover, exclusions and the evidence needed before choosing insurance or reporting a loss",
+    angle: "Dated policy interpretation separating parcel-loss protection from product damage, customs obligations and delivery disputes",
+    evidence: ["Hubbuy public parcel workflow", "Publicly indexed HubbuyCN insurance, shipping and forwarding policies"],
+    internalLinkRole: "Insurance decision leaf supporting the shipping and restricted-items clusters without competing with route-cost or eligibility pages",
+  },
   "hubbuy-restricted-items-shipping-guide": {
     primaryQuery: "Hubbuy restricted items",
     secondaryTerms: ["Hubbuy shipping restrictions", "Hubbuy battery shipping", "Hubbuy liquids shipping", "Hubbuy prohibited items"],

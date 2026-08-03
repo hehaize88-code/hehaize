@@ -572,7 +572,7 @@ function RestrictedItemsArticle({ article }) {
           <li><strong>Resolve one missing fact.</strong> Request a readable battery label, ingredient information or support confirmation when that fact can change eligibility.</li>
           <li><strong>Do not submit it.</strong> Stop when the item is prohibited, materially misdescribed or has no confirmed compliant route.</li>
         </ol>
-        <p>Keep cost separate from eligibility. The <Link href="/articles/hubbuy-shipping-cost-guide/">Hubbuy shipping-cost guide</Link> explains actual weight, volumetric weight and route pricing; this article answers the earlier question of whether a line should be considered at all.</p>
+        <p>Keep cost separate from eligibility. The <Link href="/articles/hubbuy-shipping-cost-guide/">Hubbuy shipping-cost guide</Link> explains actual weight, volumetric weight and route pricing; this article answers the earlier question of whether a line should be considered at all. After selecting an eligible line, compare its optional protection with the separate <Link href="/articles/hubbuy-parcel-insurance-claim-guide/">Hubbuy parcel-insurance evidence guide</Link>.</p>
       </section>
 
       <section id="delivery-records">
@@ -592,7 +592,91 @@ function RestrictedItemsArticle({ article }) {
   );
 }
 
+function HubbuyInsuranceArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">Hubbuy parcel insurance is an optional loss-protection decision made before international shipping, not a warranty that makes every product problem reimbursable. The useful questions are narrower: what event is covered, what value is insured, which exclusions still apply, and what record would let a reviewer connect a reported loss to one parcel?</p>
+
+      <ResearchDisclosure>This guide was checked on 3 August 2026 against Hubbuy’s public workflow and publicly indexed HubbuyCN insurance, shipping and forwarding policies. The help-center pages can display maintenance or account-gated content, so the dated published terms below are a research snapshot. The live parcel interface and current official support response control a transaction.</ResearchDisclosure>
+
+      <section id="direct-answer">
+        <span>01 · The direct answer</span>
+        <h2>Insurance addresses defined parcel-loss events, not every disappointing outcome</h2>
+        <p>The publicly indexed <a href="https://manager.hubbuycn.com/index/help/info/id/69.html" target="_blank" rel="noopener">HubbuyCN Insurance and Compensation policy</a> describes insurance as optional. Its stated covered events are parcel loss and whole-parcel loss during customs clearance. That scope is materially different from damage, a wrong seller item, poor quality, late delivery, a delivered scan dispute or a recipient who does not collect the shipment.</p>
+        <p>Purchase insurance because the defined loss event and published limits fit the parcel risk—not because the label sounds comprehensive. Before paying, read the live wording, exclusions, rate and insured value for the exact route.</p>
+        <div className="article-callout">
+          <strong>Use one sentence to test the cover</strong>
+          <p>“If this parcel disappears in transit, what event proves loss, what amount is insured and what evidence must I submit?” If the current interface or support answer cannot resolve those points, the protection is not yet clear enough to price.</p>
+        </div>
+      </section>
+
+      <section id="published-coverage">
+        <span>02 · Published scope</span>
+        <h2>Map the policy to the event before mapping it to the product value</h2>
+        <p>Hubbuy’s <a href="https://hubbuy.com/" target="_blank" rel="noopener">public purchase workflow</a> places international shipping after goods arrive, inspection images are reviewed and orders are prepared as a parcel. Insurance belongs to that parcel stage. It should not replace source verification, warehouse QC or a protective-packing decision made earlier.</p>
+        <p>The indexed policy uses two loss categories. The first is parcel loss during transportation. The second is whole-parcel loss connected with customs clearance. “Whole parcel” matters: a customs delay, assessment, request for documents or partial product dispute is not automatically the published covered event.</p>
+        <p>Route eligibility, customs compliance and insurance are separate controls. An insured parcel still requires accurate recipient information, truthful declaration, timely customs cooperation and payment of charges the chosen line does not assume.</p>
+      </section>
+
+      <section id="limits-cost">
+        <span>03 · Price and limits</span>
+        <h2>Use the published formula, then replace every variable with live data</h2>
+        <p>The publicly indexed policy expresses the premium as <strong>(total value of goods + actual paid shipping fee) × insurance rate</strong>. It does not provide one permanent rate in the accessible policy snippet. This guide therefore does not publish or estimate a percentage. Use the rate shown for the real parcel at checkout and preserve a screenshot of it.</p>
+        <div className="article-formula">
+          <small>Published premium structure</small>
+          <strong>(goods value + paid international shipping) × live insurance rate</strong>
+        </div>
+        <p>The same indexed policy states a maximum of CNY 1,000 per item and CNY 3,000 per parcel, with a maximum payout of CNY 3,000. Those figures were publicly indexed when checked on 3 August 2026; they are not presented as an unchanging guarantee. Confirm the current currency, item limit, parcel ceiling, calculation basis and any depreciation or evidence rule before shipping.</p>
+        <p>A parcel worth more than the ceiling contains an uninsured layer even if insurance is purchased. Likewise, several expensive items can exceed the per-item cap before the parcel cap is reached. Record the value allocated to every item rather than saving only one cart total.</p>
+      </section>
+
+      <section id="exclusions">
+        <span>04 · What remains outside</span>
+        <h2>Read the exclusions as a list of risks you still have to control</h2>
+        <p>The indexed insurance policy excludes damage to goods. It also excludes loss connected to incorrect recipient information, refusal or failure to collect, and a carrier record marked as delivered. Other exclusions address a recipient’s failure to cooperate with or pay customs when the chosen route does not take responsibility for clearance, as well as force majeure, political events and natural disasters.</p>
+        <p>Evidence cannot transform an excluded event into a covered one. It can, however, show which event actually occurred. A stable tracking record that never reaches delivery is different from a delivered scan. A customs notice showing a whole-parcel loss is different from a request for tax payment. A crushed box containing damaged goods is different from a parcel that never arrives.</p>
+        <p>The indexed shipping policy and <a href="https://manager.hubbuycn.com/index/help/info/id/68.html" target="_blank" rel="noopener">forwarding agreement</a> also describe compensation exclusions and inspection limits. Warehouse inspection does not guarantee internal electronics, product durability or every concealed defect. Insurance should therefore sit beside QC, packing and restricted-item checks, not replace them.</p>
+        <div className="article-comparison">
+          <div><span>Published covered events</span><strong>Parcel loss · whole-parcel customs-clearance loss</strong></div>
+          <div><span>Published exclusions include</span><strong>Damage · delivered scan · recipient failure · specified external events</strong></div>
+        </div>
+      </section>
+
+      <section id="before-shipping">
+        <span>05 · Build evidence first</span>
+        <h2>Create the claim file before the parcel leaves the warehouse</h2>
+        <p>The indexed policy says insurance cannot be added after shipment and cannot be cancelled after the parcel has shipped. Treat the payment screen as the final verification point. Confirm the parcel number, contents, declared values, route, recipient, premium, insured amount and timestamp before authorizing dispatch.</p>
+        <p>Keep a compact evidence bundle: the order summary and item values; warehouse photos; final contents; packed weight and dimensions; the selected route; insurance confirmation; recipient address; declaration; and the initial tracking record. Save pages as dated screenshots or PDFs because live interfaces and policy wording can change.</p>
+        <p>Check sensitive goods separately with the <Link href="/articles/hubbuy-restricted-items-shipping-guide/">Hubbuy restricted-items guide</Link>. Insurance does not make a prohibited, inaccurately declared or route-ineligible product acceptable. Check cost mechanics separately in the <Link href="/articles/hubbuy-shipping-cost-guide/">Hubbuy shipping-cost guide</Link>; a premium is one component of a delivered-cost plan.</p>
+      </section>
+
+      <section id="claim-path">
+        <span>06 · If something goes wrong</span>
+        <h2>Report the event with a chronology, not a conclusion</h2>
+        <p>Start with dates: parcel submission, carrier acceptance, every tracking update, the point at which movement stopped, support contacts and any customs notice. Preserve the original tracking page as well as screenshots. Ask the current official channel what status or waiting period is required before a parcel is treated as lost; do not invent a universal deadline from forum anecdotes.</p>
+        <p>Then identify the event. If tracking says delivered, request carrier delivery evidence and verify the address before calling it a transit-loss claim. If customs is involved, preserve the notice and show whether it describes a whole-parcel loss, a hold, a document request, a tax request, return or confiscation. If the parcel arrives damaged, photograph the sealed exterior and opening, but recognize that the indexed insurance wording excludes goods damage.</p>
+        <p>Submit a clean packet containing the parcel identifier, insured amount, contents and values, insurance record, tracking history, official notices, recipient facts and short chronology. Keep the originals and record each response. The indexed policy says platform compensation and insurance standards are not both applied to the same claim, so ask which route is being assessed rather than assuming the two awards can be stacked.</p>
+      </section>
+
+      <section id="decision-rule">
+        <span>07 · Editorial decision rule</span>
+        <h2>Buy protection only after the uncovered risks are acceptable</h2>
+        <p>First compare the parcel value with the current per-item and parcel limits. Next confirm that the event you care about is within the live wording. Then calculate the premium from the real checkout inputs. Finally, ask whether the remaining risks—damage, seller error, quality, customs obligations, delivery disputes and value above the ceiling—are manageable without reimbursement.</p>
+        <p>A lower-value, well-documented parcel can still justify insurance if the premium and covered event make sense. A high-value parcel can still be underprotected when limits leave a large gap. The useful outcome is not “always insure” or “never insure.” It is a recorded decision in which coverage, price, exclusions and evidence all refer to the same parcel.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources">
+        <strong>Sources and dated policy boundary</strong>
+        <p>The parcel workflow was checked on <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy’s public website</a> on 3 August 2026. Coverage, formula, limits, timing and exclusions were checked against the publicly indexed HubbuyCN <a href="https://manager.hubbuycn.com/index/help/info/id/69.html" target="_blank" rel="noopener">Insurance and Compensation policy</a>, with the <a href="https://manager.hubbuycn.com/index/help/info/id/20.html" target="_blank" rel="noopener">shipping policy</a> and forwarding agreement used for responsibility boundaries. Current live terms override this research snapshot.</p>
+      </div>
+      <ArticleCta />
+    </>
+  );
+}
+
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-parcel-insurance-claim-guide") return <HubbuyInsuranceArticle article={article} />;
   if (article.slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsArticle article={article} />;
   if (article.slug === "hubbuy-reviews-customer-experience") return <HubbuyReviewsArticle article={article} />;
   if (article.slug === "hubbuy-product-link-not-working") return <LinkTroubleshootingArticle article={article} />;
