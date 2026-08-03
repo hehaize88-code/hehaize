@@ -1,6 +1,8 @@
+import { categoryRoutes, productRoutes, type CatalogRoute } from "./site-products";
+
 export type Locale = "en" | "de" | "fr" | "es" | "it" | "pl";
 
-export type RouteKey =
+export type StaticRouteKey =
   | "home"
   | "finds"
   | "categories"
@@ -15,7 +17,9 @@ export type RouteKey =
   | "articles/how-to-buy-from-kameymall-2026"
   | "articles/kameymall-shipping-cost-guide-2026";
 
-export const supportedRoutes: RouteKey[] = [
+export type RouteKey = StaticRouteKey | CatalogRoute;
+
+export const staticRoutes: StaticRouteKey[] = [
   "home",
   "finds",
   "categories",
@@ -31,8 +35,18 @@ export const supportedRoutes: RouteKey[] = [
   "articles/kameymall-shipping-cost-guide-2026",
 ];
 
+export const supportedRoutes: RouteKey[] = [
+  ...staticRoutes,
+  ...categoryRoutes,
+  ...productRoutes,
+];
+
 export function isRouteKey(value: string): value is RouteKey {
   return supportedRoutes.includes(value as RouteKey);
+}
+
+export function isStaticRouteKey(value: string): value is StaticRouteKey {
+  return staticRoutes.includes(value as StaticRouteKey);
 }
 
 export const languages: Array<{ code: Locale; short: string; label: string }> = [
@@ -48,62 +62,6 @@ export function routeHref(locale: Locale, route: RouteKey): string {
   const prefix = locale === "en" ? "" : `/${locale}`;
   return route === "home" ? `${prefix || "/"}` : `${prefix}/${route}`;
 }
-
-export const products = [
-  {
-    name: "New Balance 1906R",
-    categoryKey: "shoes",
-    reference: "7818078364",
-    cny: 300,
-    image: "https://www.cnbuycha.com/uploads/allimg/20260729/1-260H9212139344.webp",
-    url: "https://www.cnbuycha.com/AllProducts/3378.html",
-  },
-  {
-    name: "2024 Premier League Jersey Haaland Havertz Jesus",
-    categoryKey: "jersey",
-    reference: "7748634331",
-    cny: 89,
-    image: "https://www.cnbuycha.com/uploads/allimg/20260428/1-26042Q51456234.jpg",
-    url: "https://www.cnbuycha.com/AllProducts/3204.html",
-  },
-  {
-    name: "Canada Goose Sweatshirt",
-    categoryKey: "sweatshirts",
-    reference: "7815092173",
-    cny: 229,
-    image: "https://www.cnbuycha.com/uploads/allimg/20260729/1-260H9212445610.webp",
-    url: "https://www.cnbuycha.com/AllProducts/3380.html",
-  },
-  {
-    name: "GUCCI hat",
-    categoryKey: "headwear",
-    reference: "7813802324",
-    cny: 75,
-    image: "https://www.cnbuycha.com/uploads/allimg/20260722/1-260H221155C13.webp",
-    url: "https://www.cnbuycha.com/AllProducts/3371.html",
-  },
-  {
-    name: "Samsung Galaxy Watch8",
-    categoryKey: "electronics",
-    reference: "7808981470",
-    cny: 218,
-    image: "https://www.cnbuycha.com/uploads/allimg/20260713/1-260G31A40J10.webp",
-    url: "https://www.cnbuycha.com/AllProducts/3357.html",
-  },
-] as const;
-
-export const categoryDestinations: Record<string, string> = {
-  shoes: "https://www.cnbuycha.com/shoes/",
-  sweatshirts: "https://www.cnbuycha.com/hoodies-sweaters/",
-  tshirts: "https://www.cnbuycha.com/t-shirts/",
-  jackets: "https://www.cnbuycha.com/jackets/",
-  pants: "https://www.cnbuycha.com/pants-shorts/",
-  headwear: "https://www.cnbuycha.com/headwear/",
-  accessories: "https://www.cnbuycha.com/accessories/",
-  jersey: "https://www.cnbuycha.com/jersey/",
-  electronics: "https://www.cnbuycha.com/electronics/",
-  other: "https://www.cnbuycha.com/other-stuff/",
-};
 
 type CategoryCopy = { label: string; description: string };
 type StepCopy = { title: string; body: string };
@@ -178,7 +136,7 @@ export type SiteCopy = {
     cards: CardCopy[];
     read: string;
   };
-  pageIntros: Record<Exclude<RouteKey, "home">, { kicker: string; title: string; intro: string }>;
+  pageIntros: Record<Exclude<StaticRouteKey, "home">, { kicker: string; title: string; intro: string }>;
   guidePages: Record<string, { title: string; label: string; intro: string; sections: ProseSection[] }>;
   articlePage: {
     label: string;
@@ -211,7 +169,7 @@ const english: SiteCopy = {
     eyebrow: "Independent KameyMall shopping guide · Updated Aug 2026",
     title: "KameyMall finds, organized for faster shopping",
     lede: "Browse curated categories, compare listing details, and open every find directly on the destination shopping platform.",
-    searchPlaceholder: "Search 20,000+ China finds",
+    searchPlaceholder: "Search 30 curated China finds",
     searchLabel: "Search the main product database",
     explore: "Explore featured finds",
     howAction: "How it works",
@@ -222,7 +180,7 @@ const english: SiteCopy = {
   },
   finder: {
     kicker: "Live find database",
-    verified: "5 verified listings",
+    verified: "30 verified listings",
     filterPlaceholder: "Search displayed items...",
     allCategories: "All categories",
     allListed: "All listed",
@@ -402,8 +360,8 @@ function cloneEnglish(): SiteCopy {
 const german = cloneEnglish();
 german.nav = { finds: "Fundstücke", categories: "Kategorien", how: "So kaufst du", guides: "Ratgeber", articles: "SEO-Artikel", faq: "FAQ" };
 german.language = "Sprache";
-german.home = { eyebrow: "Unabhängiger KameyMall-Einkaufsratgeber · Aktualisiert Aug. 2026", title: "KameyMall-Fundstücke, übersichtlich für schnelleres Einkaufen", lede: "Durchsuche kuratierte Kategorien, vergleiche Angebotsdetails und öffne jedes Fundstück direkt auf der Zielplattform.", searchPlaceholder: "20.000+ China-Fundstücke durchsuchen", searchLabel: "Haupt-Produktdatenbank durchsuchen", explore: "Empfohlene Fundstücke", howAction: "So funktioniert es", categoriesCount: "Kategorien", findsCount: "Produktfundstücke", direct: "Direkt", listingPages: "zu Produktseiten" };
-german.finder = { kicker: "Live-Funddatenbank", verified: "5 geprüfte Angebote", filterPlaceholder: "Angezeigte Artikel filtern...", allCategories: "Alle Kategorien", allListed: "Alle gelistet", clear: "Löschen", item: "Artikel", category: "Kategorie", price: "Preis in USD", status: "Status", open: "Öffnen", original: "Originalangebot", approximate: "ca.", listed: "Gelistet", noMatches: "Keine empfohlenen Fundstücke entsprechen diesen Filtern.", rateNote: "Ungefähre USD-Werte mit ¥1 = $0,1481 am 1. Aug. 2026. Prüfe den aktuellen Preis auf der Zielseite." };
+german.home = { eyebrow: "Unabhängiger KameyMall-Einkaufsratgeber · Aktualisiert Aug. 2026", title: "KameyMall-Fundstücke, übersichtlich für schnelleres Einkaufen", lede: "Durchsuche kuratierte Kategorien, vergleiche Angebotsdetails und öffne jedes Fundstück direkt auf der Zielplattform.", searchPlaceholder: "30 kuratierte China-Fundstücke durchsuchen", searchLabel: "Haupt-Produktdatenbank durchsuchen", explore: "Empfohlene Fundstücke", howAction: "So funktioniert es", categoriesCount: "Kategorien", findsCount: "Produktfundstücke", direct: "Direkt", listingPages: "zu Produktseiten" };
+german.finder = { kicker: "Live-Funddatenbank", verified: "30 geprüfte Angebote", filterPlaceholder: "Angezeigte Artikel filtern...", allCategories: "Alle Kategorien", allListed: "Alle gelistet", clear: "Löschen", item: "Artikel", category: "Kategorie", price: "Preis in USD", status: "Status", open: "Öffnen", original: "Originalangebot", approximate: "ca.", listed: "Gelistet", noMatches: "Keine empfohlenen Fundstücke entsprechen diesen Filtern.", rateNote: "Ungefähre USD-Werte mit ¥1 = $0,1481 am 1. Aug. 2026. Prüfe den aktuellen Preis auf der Zielseite." };
 german.categories = { kicker: "Tabelle durchsuchen", title: "Jedes Fundstück in der richtigen Kategorie", intro: "Jeder Kategorienlink wurde mit der passenden Zielsammlung geprüft, damit du nicht auf einer allgemeinen, unpassenden oder fehlerhaften Seite landest.", open: "Kategorie öffnen", items: {
   shoes: { label: "Schuhe", description: "Sneaker, Laufschuhe, Slides und Alltagsschuhe." }, sweatshirts: { label: "Sweatshirts", description: "Hoodies, Pullover, Strick und Lagenlooks." }, tshirts: { label: "T-Shirts", description: "Kurzarm, Langarm und grafische Shirts." }, jackets: { label: "Jacken", description: "Windbreaker, Daunenjacken und Mäntel." }, pants: { label: "Hosen & Shorts", description: "Jeans, Cargos, Jogginghosen und Shorts." }, headwear: { label: "Kopfbedeckungen", description: "Caps, Mützen und saisonale Modelle." }, accessories: { label: "Accessoires", description: "Taschen, Geldbörsen, Gürtel und kleine Artikel." }, jersey: { label: "Trikots", description: "Vereins-, Nationalteam- und Spielerversionen." }, electronics: { label: "Elektronik", description: "Uhren, Kopfhörer, Lautsprecher und Technik." }, other: { label: "Weitere Fundstücke", description: "Wohnartikel, Spielzeug, Geschenke und Sonstiges." },
 } };
@@ -423,8 +381,8 @@ german.articles = { kicker: "SEO-Bibliothek für Reverse Shopping", title: "Rech
 const french = cloneEnglish();
 french.nav = { finds: "Sélections", categories: "Catégories", how: "Comment acheter", guides: "Guides", articles: "Articles SEO", faq: "FAQ" };
 french.language = "Langue";
-french.home = { eyebrow: "Guide d’achat KameyMall indépendant · Mis à jour en août 2026", title: "Les trouvailles KameyMall, organisées pour acheter plus vite", lede: "Parcourez des catégories sélectionnées, comparez les informations et ouvrez chaque trouvaille sur la plateforme de destination.", searchPlaceholder: "Rechercher parmi 20 000+ trouvailles", searchLabel: "Rechercher dans la base principale", explore: "Voir les sélections", howAction: "Fonctionnement", categoriesCount: "catégories", findsCount: "trouvailles", direct: "Direct", listingPages: "fiches produit" };
-french.finder = { kicker: "Base de trouvailles en direct", verified: "5 fiches vérifiées", filterPlaceholder: "Filtrer les articles affichés...", allCategories: "Toutes les catégories", allListed: "Tous listés", clear: "Effacer", item: "Article", category: "Catégorie", price: "Prix USD", status: "Statut", open: "Ouvrir", original: "Annonce d’origine", approximate: "env.", listed: "Listé", noMatches: "Aucune sélection ne correspond à ces filtres.", rateNote: "Valeurs USD approximatives avec ¥1 = 0,1481 $ au 1 août 2026. Vérifiez le prix actuel sur la page de destination." };
+french.home = { eyebrow: "Guide d’achat KameyMall indépendant · Mis à jour en août 2026", title: "Les trouvailles KameyMall, organisées pour acheter plus vite", lede: "Parcourez des catégories sélectionnées, comparez les informations et ouvrez chaque trouvaille sur la plateforme de destination.", searchPlaceholder: "Rechercher parmi 30 trouvailles sélectionnées", searchLabel: "Rechercher dans la base principale", explore: "Voir les sélections", howAction: "Fonctionnement", categoriesCount: "catégories", findsCount: "trouvailles", direct: "Direct", listingPages: "fiches produit" };
+french.finder = { kicker: "Base de trouvailles en direct", verified: "30 fiches vérifiées", filterPlaceholder: "Filtrer les articles affichés...", allCategories: "Toutes les catégories", allListed: "Tous listés", clear: "Effacer", item: "Article", category: "Catégorie", price: "Prix USD", status: "Statut", open: "Ouvrir", original: "Annonce d’origine", approximate: "env.", listed: "Listé", noMatches: "Aucune sélection ne correspond à ces filtres.", rateNote: "Valeurs USD approximatives avec ¥1 = 0,1481 $ au 1 août 2026. Vérifiez le prix actuel sur la page de destination." };
 french.categories = { kicker: "Parcourir la feuille", title: "Chaque trouvaille dans la bonne catégorie", intro: "Chaque lien a été vérifié avec la collection correspondante afin d’éviter une page générique, sans rapport ou introuvable.", open: "Ouvrir la catégorie", items: {
   shoes: { label: "Chaussures", description: "Baskets, running, claquettes et chaussures du quotidien." }, sweatshirts: { label: "Sweats", description: "Sweats à capuche, pulls, mailles et superpositions." }, tshirts: { label: "T-shirts", description: "Manches courtes, longues et modèles graphiques." }, jackets: { label: "Vestes", description: "Coupe-vent, doudounes, manteaux et extérieur." }, pants: { label: "Pantalons & shorts", description: "Jeans, cargos, joggings et shorts d’été." }, headwear: { label: "Couvre-chefs", description: "Casquettes, bonnets et modèles saisonniers." }, accessories: { label: "Accessoires", description: "Sacs, portefeuilles, ceintures et petits articles." }, jersey: { label: "Maillots", description: "Clubs, équipes nationales et versions joueur." }, electronics: { label: "Électronique", description: "Montres, écouteurs, enceintes et produits tech." }, other: { label: "Autres trouvailles", description: "Maison, jouets, cadeaux et sélections diverses." },
 } };
@@ -444,8 +402,8 @@ french.articles = { kicker: "Bibliothèque SEO de reverse shopping", title: "Art
 const spanish = cloneEnglish();
 spanish.nav = { finds: "Hallazgos", categories: "Categorías", how: "Cómo comprar", guides: "Guías", articles: "Artículos SEO", faq: "FAQ" };
 spanish.language = "Idioma";
-spanish.home = { eyebrow: "Guía independiente de compras KameyMall · Actualizada en ago. 2026", title: "Hallazgos de KameyMall, organizados para comprar más rápido", lede: "Explora categorías seleccionadas, compara los datos y abre cada hallazgo directamente en la plataforma de destino.", searchPlaceholder: "Buscar entre 20.000+ hallazgos", searchLabel: "Buscar en la base principal", explore: "Ver hallazgos destacados", howAction: "Cómo funciona", categoriesCount: "categorías", findsCount: "hallazgos", direct: "Directo", listingPages: "fichas de producto" };
-spanish.finder = { kicker: "Base de hallazgos en vivo", verified: "5 listados verificados", filterPlaceholder: "Filtrar artículos mostrados...", allCategories: "Todas las categorías", allListed: "Todos listados", clear: "Limpiar", item: "Artículo", category: "Categoría", price: "Precio USD", status: "Estado", open: "Abrir", original: "Listado original", approximate: "aprox.", listed: "Listado", noMatches: "Ningún hallazgo coincide con esos filtros.", rateNote: "Valores USD aproximados con ¥1 = 0,1481 $ el 1 de agosto de 2026. Confirma el precio actual en el destino." };
+spanish.home = { eyebrow: "Guía independiente de compras KameyMall · Actualizada en ago. 2026", title: "Hallazgos de KameyMall, organizados para comprar más rápido", lede: "Explora categorías seleccionadas, compara los datos y abre cada hallazgo directamente en la plataforma de destino.", searchPlaceholder: "Buscar entre 30 hallazgos seleccionados", searchLabel: "Buscar en la base principal", explore: "Ver hallazgos destacados", howAction: "Cómo funciona", categoriesCount: "categorías", findsCount: "hallazgos", direct: "Directo", listingPages: "fichas de producto" };
+spanish.finder = { kicker: "Base de hallazgos en vivo", verified: "30 listados verificados", filterPlaceholder: "Filtrar artículos mostrados...", allCategories: "Todas las categorías", allListed: "Todos listados", clear: "Limpiar", item: "Artículo", category: "Categoría", price: "Precio USD", status: "Estado", open: "Abrir", original: "Listado original", approximate: "aprox.", listed: "Listado", noMatches: "Ningún hallazgo coincide con esos filtros.", rateNote: "Valores USD aproximados con ¥1 = 0,1481 $ el 1 de agosto de 2026. Confirma el precio actual en el destino." };
 spanish.categories = { kicker: "Explorar la hoja", title: "Cada hallazgo en la categoría correcta", intro: "Cada enlace se comprobó con la colección correspondiente para evitar páginas genéricas, ajenas o inexistentes.", open: "Abrir categoría", items: {
   shoes: { label: "Calzado", description: "Zapatillas, running, sandalias y calzado diario." }, sweatshirts: { label: "Sudaderas", description: "Sudaderas con capucha, jerséis y prendas de capa." }, tshirts: { label: "Camisetas", description: "Manga corta, larga y diseños gráficos." }, jackets: { label: "Chaquetas", description: "Cortavientos, plumíferos, abrigos y exterior." }, pants: { label: "Pantalones y shorts", description: "Vaqueros, cargos, chándal y shorts de verano." }, headwear: { label: "Sombreros y gorras", description: "Gorras, gorros y estilos de temporada." }, accessories: { label: "Accesorios", description: "Bolsos, carteras, cinturones y artículos pequeños." }, jersey: { label: "Camisetas deportivas", description: "Clubes, selecciones y versiones de jugador." }, electronics: { label: "Electrónica", description: "Relojes, auriculares, altavoces y tecnología." }, other: { label: "Otros hallazgos", description: "Hogar, juguetes, regalos y artículos variados." },
 } };
@@ -465,8 +423,8 @@ spanish.articles = { kicker: "Biblioteca SEO de compra inversa", title: "Artícu
 const italian = cloneEnglish();
 italian.nav = { finds: "Prodotti", categories: "Categorie", how: "Come acquistare", guides: "Guide", articles: "Articoli SEO", faq: "FAQ" };
 italian.language = "Lingua";
-italian.home = { eyebrow: "Guida indipendente agli acquisti KameyMall · Aggiornata ago. 2026", title: "Prodotti KameyMall organizzati per acquisti più rapidi", lede: "Sfoglia categorie selezionate, confronta i dettagli e apri ogni prodotto direttamente sulla piattaforma di destinazione.", searchPlaceholder: "Cerca tra 20.000+ prodotti", searchLabel: "Cerca nel database principale", explore: "Esplora i prodotti", howAction: "Come funziona", categoriesCount: "categorie", findsCount: "prodotti trovati", direct: "Diretto", listingPages: "schede prodotto" };
-italian.finder = { kicker: "Database prodotti live", verified: "5 inserzioni verificate", filterPlaceholder: "Filtra gli articoli mostrati...", allCategories: "Tutte le categorie", allListed: "Tutti elencati", clear: "Cancella", item: "Articolo", category: "Categoria", price: "Prezzo USD", status: "Stato", open: "Apri", original: "Inserzione originale", approximate: "circa", listed: "Elencato", noMatches: "Nessun prodotto corrisponde ai filtri.", rateNote: "Valori USD indicativi con ¥1 = $0,1481 il 1 agosto 2026. Verifica il prezzo attuale sulla pagina di destinazione." };
+italian.home = { eyebrow: "Guida indipendente agli acquisti KameyMall · Aggiornata ago. 2026", title: "Prodotti KameyMall organizzati per acquisti più rapidi", lede: "Sfoglia categorie selezionate, confronta i dettagli e apri ogni prodotto direttamente sulla piattaforma di destinazione.", searchPlaceholder: "Cerca tra 30 prodotti selezionati", searchLabel: "Cerca nel database principale", explore: "Esplora i prodotti", howAction: "Come funziona", categoriesCount: "categorie", findsCount: "prodotti trovati", direct: "Diretto", listingPages: "schede prodotto" };
+italian.finder = { kicker: "Database prodotti live", verified: "30 inserzioni verificate", filterPlaceholder: "Filtra gli articoli mostrati...", allCategories: "Tutte le categorie", allListed: "Tutti elencati", clear: "Cancella", item: "Articolo", category: "Categoria", price: "Prezzo USD", status: "Stato", open: "Apri", original: "Inserzione originale", approximate: "circa", listed: "Elencato", noMatches: "Nessun prodotto corrisponde ai filtri.", rateNote: "Valori USD indicativi con ¥1 = $0,1481 il 1 agosto 2026. Verifica il prezzo attuale sulla pagina di destinazione." };
 italian.categories = { kicker: "Sfoglia il foglio", title: "Ogni prodotto nella categoria corretta", intro: "Ogni collegamento è stato verificato con la raccolta corrispondente per evitare pagine generiche, non pertinenti o mancanti.", open: "Apri categoria", items: {
   shoes: { label: "Scarpe", description: "Sneaker, running, ciabatte e calzature quotidiane." }, sweatshirts: { label: "Felpe", description: "Felpe con cappuccio, pullover e maglieria." }, tshirts: { label: "T-shirt", description: "Maniche corte, lunghe e grafiche." }, jackets: { label: "Giacche", description: "Antivento, piumini, cappotti e capispalla." }, pants: { label: "Pantaloni e shorts", description: "Jeans, cargo, tute e shorts estivi." }, headwear: { label: "Copricapi", description: "Cappellini, berretti e modelli stagionali." }, accessories: { label: "Accessori", description: "Borse, portafogli, cinture e piccoli articoli." }, jersey: { label: "Maglie sportive", description: "Club, nazionali e versioni giocatore." }, electronics: { label: "Elettronica", description: "Orologi, cuffie, altoparlanti e tecnologia." }, other: { label: "Altri prodotti", description: "Casa, giocattoli, regali e articoli vari." },
 } };
@@ -486,8 +444,8 @@ italian.articles = { kicker: "Biblioteca SEO reverse shopping", title: "Articoli
 const polish = cloneEnglish();
 polish.nav = { finds: "Znaleziska", categories: "Kategorie", how: "Jak kupować", guides: "Poradniki", articles: "Artykuły SEO", faq: "FAQ" };
 polish.language = "Język";
-polish.home = { eyebrow: "Niezależny poradnik zakupowy KameyMall · Aktualizacja: sierpień 2026", title: "Znaleziska KameyMall uporządkowane do szybszych zakupów", lede: "Przeglądaj wybrane kategorie, porównuj dane i otwieraj każdy produkt bezpośrednio na stronie docelowej.", searchPlaceholder: "Szukaj wśród 20 000+ produktów", searchLabel: "Przeszukaj główną bazę produktów", explore: "Zobacz polecane produkty", howAction: "Jak to działa", categoriesCount: "kategorii", findsCount: "znalezisk", direct: "Bezpośrednio", listingPages: "do kart produktów" };
-polish.finder = { kicker: "Baza produktów na żywo", verified: "5 sprawdzonych ofert", filterPlaceholder: "Filtruj widoczne produkty...", allCategories: "Wszystkie kategorie", allListed: "Wszystkie aktywne", clear: "Wyczyść", item: "Produkt", category: "Kategoria", price: "Cena USD", status: "Status", open: "Otwórz", original: "Oferta źródłowa", approximate: "ok.", listed: "Aktywna", noMatches: "Brak produktów zgodnych z filtrami.", rateNote: "Orientacyjne wartości USD przy ¥1 = 0,1481 USD z 1 sierpnia 2026. Sprawdź bieżącą cenę na stronie docelowej." };
+polish.home = { eyebrow: "Niezależny poradnik zakupowy KameyMall · Aktualizacja: sierpień 2026", title: "Znaleziska KameyMall uporządkowane do szybszych zakupów", lede: "Przeglądaj wybrane kategorie, porównuj dane i otwieraj każdy produkt bezpośrednio na stronie docelowej.", searchPlaceholder: "Szukaj wśród 30 wybranych produktów", searchLabel: "Przeszukaj główną bazę produktów", explore: "Zobacz polecane produkty", howAction: "Jak to działa", categoriesCount: "kategorii", findsCount: "znalezisk", direct: "Bezpośrednio", listingPages: "do kart produktów" };
+polish.finder = { kicker: "Baza produktów na żywo", verified: "30 sprawdzonych ofert", filterPlaceholder: "Filtruj widoczne produkty...", allCategories: "Wszystkie kategorie", allListed: "Wszystkie aktywne", clear: "Wyczyść", item: "Produkt", category: "Kategoria", price: "Cena USD", status: "Status", open: "Otwórz", original: "Oferta źródłowa", approximate: "ok.", listed: "Aktywna", noMatches: "Brak produktów zgodnych z filtrami.", rateNote: "Orientacyjne wartości USD przy ¥1 = 0,1481 USD z 1 sierpnia 2026. Sprawdź bieżącą cenę na stronie docelowej." };
 polish.categories = { kicker: "Przeglądaj arkusz", title: "Każdy produkt w odpowiedniej kategorii", intro: "Każdy link sprawdzono z właściwą kolekcją, aby nie prowadził do strony ogólnej, niepowiązanej lub błędu 404.", open: "Otwórz kategorię", items: {
   shoes: { label: "Buty", description: "Sneakersy, biegowe, klapki i obuwie codzienne." }, sweatshirts: { label: "Bluzy", description: "Bluzy z kapturem, swetry i warstwy." }, tshirts: { label: "T-shirty", description: "Krótki i długi rękaw oraz grafiki." }, jackets: { label: "Kurtki", description: "Wiatrówki, puchówki, płaszcze i odzież wierzchnia." }, pants: { label: "Spodnie i szorty", description: "Jeansy, cargo, dresy i letnie szorty." }, headwear: { label: "Nakrycia głowy", description: "Czapki z daszkiem, beanie i modele sezonowe." }, accessories: { label: "Akcesoria", description: "Torby, portfele, paski i drobne produkty." }, jersey: { label: "Koszulki sportowe", description: "Kluby, reprezentacje i wersje zawodnicze." }, electronics: { label: "Elektronika", description: "Zegarki, słuchawki, głośniki i technologia." }, other: { label: "Inne znaleziska", description: "Dom, zabawki, prezenty i pozostałe produkty." },
 } };
@@ -1001,14 +959,13 @@ export const copies: Record<Locale, SiteCopy> = {
   pl: polish,
 };
 
-export const categoryOrder = ["shoes", "sweatshirts", "tshirts", "jackets", "pants", "headwear", "accessories", "jersey", "electronics", "other"];
-export const guideRoutes: RouteKey[] = [
+export const guideRoutes: StaticRouteKey[] = [
   "guides/how-to-use-kameymall-spreadsheet",
   "guides/cny-price-vs-final-cost",
   "guides/what-to-inspect-before-ordering",
 ];
-export const articleRoute: RouteKey = "articles/kameymall-spreadsheet-guide-2026";
-export const articleRoutes: RouteKey[] = [
+export const articleRoute: StaticRouteKey = "articles/kameymall-spreadsheet-guide-2026";
+export const articleRoutes: StaticRouteKey[] = [
   articleRoute,
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",

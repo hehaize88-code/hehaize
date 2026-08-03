@@ -62,6 +62,10 @@ test("renders every requested independent page", async () => {
     "/articles/kameymall-spreadsheet-guide-2026",
     "/articles/how-to-buy-from-kameymall-2026",
     "/articles/kameymall-shipping-cost-guide-2026",
+    "/categories/shoes",
+    "/products/new-balance-1906r",
+    "/fr/categories/shoes",
+    "/fr/products/new-balance-1906r",
   ];
   for (const route of routes) {
     const response = await render(worker, route);
@@ -92,11 +96,89 @@ test("uses the verified destination search and category URLs", async () => {
   assert.match(html, /action="https:\/\/www\.cnbuycha\.com\/search\.html"/);
   assert.match(html, /name="keywords"/);
   assert.match(html, /name="channelid"[^>]*value="2"|value="2"[^>]*name="channelid"/);
-  assert.match(html, /https:\/\/www\.cnbuycha\.com\/hoodies-sweaters\//);
+  assert.match(html, /href="\/categories\/sweatshirts"/);
   assert.doesNotMatch(html, /https:\/\/www\.cnbuycha\.com\/sweatshirts\//);
+
+  const categoryResponse = await render(worker, "/categories/sweatshirts");
+  const categoryHtml = await categoryResponse.text();
+  assert.match(categoryHtml, /https:\/\/www\.cnbuycha\.com\/hoodies-sweaters\//);
+});
+
+test("renders eight homepage finds, thirty catalog finds, and internal detail links", async () => {
+  const worker = await loadWorker();
+  const home = await render(worker, "/");
+  const finds = await render(worker, "/finds");
+  const homeHtml = await home.text();
+  const findsHtml = await finds.text();
+
+  assert.equal((homeHtml.match(/class="product-row"/g) ?? []).length, 8);
+  assert.equal((findsHtml.match(/class="product-row"/g) ?? []).length, 30);
+  assert.match(homeHtml, /href="\/products\/new-balance-1906r"/);
+  assert.match(homeHtml, /href="\/categories\/shoes"/);
+  assert.doesNotMatch(homeHtml, /class="product-name" href="https:\/\//);
+});
+
+test("adds product, breadcrumb, and category ItemList structured data", async () => {
+  const worker = await loadWorker();
+  const productResponse = await render(worker, "/products/new-balance-1906r");
+  const categoryResponse = await render(worker, "/categories/shoes");
+  const productHtml = await productResponse.text();
+  const categoryHtml = await categoryResponse.text();
+
+  assert.match(productHtml, /"@type":"Product"/);
+  assert.match(productHtml, /"@type":"BreadcrumbList"/);
+  assert.match(productHtml, /KMS-7818078364/);
+  assert.match(productHtml, /href="https:\/\/www\.cnbuycha\.com\/AllProducts\/3378\.html"/);
+  assert.match(categoryHtml, /"@type":"CollectionPage"/);
+  assert.match(categoryHtml, /"@type":"ItemList"/);
+  assert.equal((categoryHtml.match(/class="catalog-product-card"/g) ?? []).length, 3);
 });
 
 const locales = ["", "/de", "/fr", "/es", "/it", "/pl"];
+const categoryRoutes = [
+  "shoes",
+  "sweatshirts",
+  "tshirts",
+  "jackets",
+  "pants",
+  "headwear",
+  "accessories",
+  "jersey",
+  "electronics",
+  "other",
+].map((slug) => `/categories/${slug}`);
+const productRoutes = [
+  "new-balance-1906r",
+  "hoka-speedgoat-5",
+  "adidas-futurecraft-4d",
+  "canada-goose-sweatshirt",
+  "nike-sweater",
+  "off-white-hoodies",
+  "polo-ralph-lauren-long-sleeve",
+  "off-white-tee",
+  "louis-vuitton-tee",
+  "celine-coat",
+  "louis-vuitton-jacket",
+  "saint-vanity-windbreaker",
+  "hello-kitty-plush-pants",
+  "balenciaga-shorts",
+  "louis-vuitton-shorts",
+  "gucci-hat",
+  "designer-tie-collection",
+  "syna-world-mask",
+  "louis-vuitton-wallet",
+  "coach-backpack",
+  "nike-elite-backpack",
+  "premier-league-jersey",
+  "germany-world-cup-jersey",
+  "premier-league-player-version",
+  "samsung-galaxy-watch8",
+  "audemars-piguet-royal-oak-watch",
+  "audemars-cartier-watch",
+  "jellycat",
+  "gucci-perfume",
+  "keychain",
+].map((slug) => `/products/${slug}`);
 const auditedRoutes = [
   "",
   "/finds",
@@ -111,6 +193,8 @@ const auditedRoutes = [
   "/articles/kameymall-spreadsheet-guide-2026",
   "/articles/how-to-buy-from-kameymall-2026",
   "/articles/kameymall-shipping-cost-guide-2026",
+  ...categoryRoutes,
+  ...productRoutes,
 ];
 
 function visibleText(html) {

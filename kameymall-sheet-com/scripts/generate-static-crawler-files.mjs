@@ -39,8 +39,8 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (match) => match[1],
 );
 
-if (sitemapUrls.length !== 78) {
-  throw new Error(`Expected 78 sitemap URLs, received ${sitemapUrls.length}`);
+if (sitemapUrls.length !== 318) {
+  throw new Error(`Expected 318 sitemap URLs, received ${sitemapUrls.length}`);
 }
 if (!robots.includes("https://kameymall-sheet.com/sitemap.xml")) {
   throw new Error("robots.txt does not reference the production sitemap");

@@ -5,11 +5,14 @@ Source and ready-to-serve Cloudflare Pages bundle for `kameymall-sheet.com`.
 The site includes:
 
 - a compact KameyMall spreadsheet and finds homepage;
-- five verified product links and ten matching category destinations;
+- thirty checked product entries across ten categories;
+- thirty independent product detail pages and ten internal category pages;
+- eight featured finds on the compact homepage and the full catalog on Finds;
 - independent How to Buy, Guides, SEO Articles, and FAQ pages;
 - three fact-checked long-form SEO articles;
 - English, German, French, Spanish, Italian, and Polish routes;
-- production canonical URLs, hreflang signals, robots directives, and a 78-URL XML sitemap;
+- Product, Breadcrumb, and ItemList structured data;
+- production canonical URLs, hreflang signals, robots directives, and a 318-URL XML sitemap;
 - a compact mobile layout with no horizontal scrolling.
 
 ## Link policy

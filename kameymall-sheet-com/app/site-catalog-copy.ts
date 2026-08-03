@@ -1,0 +1,238 @@
+import type { Locale } from "./site-content";
+
+export type CatalogCopy = {
+  home: string;
+  finds: string;
+  categoryKicker: string;
+  categoryIntro: string;
+  productsFound: string;
+  openLiveCategory: string;
+  viewDetails: string;
+  allCategories: string;
+  productKicker: string;
+  backToFinds: string;
+  backToCategory: string;
+  referencePrice: string;
+  productReference: string;
+  lastChecked: string;
+  verifiedFacts: string;
+  sourceTitle: string;
+  cnyPrice: string;
+  usdPrice: string;
+  category: string;
+  buyingChecklist: string;
+  checklist: string[];
+  openLiveListing: string;
+  priceNote: string;
+  accuracyNote: string;
+  relatedProducts: string;
+  productMeta: string;
+  categoryMeta: string;
+};
+
+export const catalogCopies: Record<Locale, CatalogCopy> = {
+  en: {
+    home: "Home",
+    finds: "Finds",
+    categoryKicker: "Curated category",
+    categoryIntro: "Three checked product entries from this category, each with its own independent detail page before the live destination listing.",
+    productsFound: "curated products",
+    openLiveCategory: "Open live category",
+    viewDetails: "View details",
+    allCategories: "All categories",
+    productKicker: "Checked product entry",
+    backToFinds: "Back to all finds",
+    backToCategory: "Back to category",
+    referencePrice: "Reference price",
+    productReference: "Product reference",
+    lastChecked: "Last checked",
+    verifiedFacts: "Verified listing facts",
+    sourceTitle: "Source listing title",
+    cnyPrice: "CNY price",
+    usdPrice: "Approximate USD",
+    category: "Category",
+    buyingChecklist: "What to check before buying",
+    checklist: [
+      "Confirm the current price, availability and domestic delivery charge on the live listing.",
+      "Match the exact color, size, version and quantity before submitting an order.",
+      "Read the seller images and option table; the lowest price can belong to a different variant.",
+      "Review warehouse QC promptly and compare visible details with the order record.",
+    ],
+    openLiveListing: "Open live product listing",
+    priceNote: "USD is a dated reference conversion, not a delivered total. International freight, packaging, payment charges, taxes and duties are not included.",
+    accuracyNote: "This page only states details visible on the checked product page. It does not claim material, weight, authenticity, QC results, shipping time or customer experience.",
+    relatedProducts: "More from this category",
+    productMeta: "Checked product entry for {name}: source price, reference number, category and practical buying checks.",
+    categoryMeta: "Browse three checked {category} finds with source prices, product references and independent detail pages.",
+  },
+  de: {
+    home: "Startseite",
+    finds: "Fundstücke",
+    categoryKicker: "Kuratierte Kategorie",
+    categoryIntro: "Drei geprüfte Produkte dieser Kategorie, jeweils mit einer eigenen Detailseite vor dem Live-Zielangebot.",
+    productsFound: "kuratierte Produkte",
+    openLiveCategory: "Live-Kategorie öffnen",
+    viewDetails: "Details ansehen",
+    allCategories: "Alle Kategorien",
+    productKicker: "Geprüfter Produkteintrag",
+    backToFinds: "Zurück zu allen Fundstücken",
+    backToCategory: "Zurück zur Kategorie",
+    referencePrice: "Referenzpreis",
+    productReference: "Produktreferenz",
+    lastChecked: "Zuletzt geprüft",
+    verifiedFacts: "Geprüfte Angebotsdaten",
+    sourceTitle: "Titel des Quellangebots",
+    cnyPrice: "Preis in CNY",
+    usdPrice: "Ungefähr in USD",
+    category: "Kategorie",
+    buyingChecklist: "Vor dem Kauf prüfen",
+    checklist: [
+      "Aktuellen Preis, Verfügbarkeit und Inlandsversand im Live-Angebot prüfen.",
+      "Farbe, Größe, Version und Menge vor der Bestellung genau abgleichen.",
+      "Verkäuferbilder und Optionstabelle lesen; der niedrigste Preis kann zu einer anderen Variante gehören.",
+      "Lager-QC schnell prüfen und sichtbare Details mit der Bestellung vergleichen.",
+    ],
+    openLiveListing: "Live-Produktangebot öffnen",
+    priceNote: "USD ist eine datierte Referenzumrechnung, kein Liefergesamtpreis. Internationaler Versand, Verpackung, Zahlungsgebühren, Steuern und Zoll sind nicht enthalten.",
+    accuracyNote: "Diese Seite nennt nur sichtbare Daten der geprüften Produktseite. Sie behauptet nichts zu Material, Gewicht, Echtheit, QC, Versanddauer oder Kundenerfahrung.",
+    relatedProducts: "Mehr aus dieser Kategorie",
+    productMeta: "Geprüfter Produkteintrag für {name}: Quellpreis, Referenznummer, Kategorie und praktische Kaufprüfungen.",
+    categoryMeta: "Drei geprüfte {category}-Fundstücke mit Quellpreisen, Produktreferenzen und eigenen Detailseiten.",
+  },
+  fr: {
+    home: "Accueil",
+    finds: "Trouvailles",
+    categoryKicker: "Catégorie sélectionnée",
+    categoryIntro: "Trois produits vérifiés de cette catégorie, chacun avec sa propre page de détail avant la fiche de destination en direct.",
+    productsFound: "produits sélectionnés",
+    openLiveCategory: "Ouvrir la catégorie en direct",
+    viewDetails: "Voir les détails",
+    allCategories: "Toutes les catégories",
+    productKicker: "Fiche produit vérifiée",
+    backToFinds: "Retour à toutes les trouvailles",
+    backToCategory: "Retour à la catégorie",
+    referencePrice: "Prix de référence",
+    productReference: "Référence produit",
+    lastChecked: "Dernière vérification",
+    verifiedFacts: "Données vérifiées de la fiche",
+    sourceTitle: "Titre de la fiche source",
+    cnyPrice: "Prix en CNY",
+    usdPrice: "USD approximatif",
+    category: "Catégorie",
+    buyingChecklist: "À vérifier avant l’achat",
+    checklist: [
+      "Confirmez le prix actuel, la disponibilité et la livraison intérieure sur la fiche en direct.",
+      "Vérifiez exactement la couleur, la taille, la version et la quantité avant la commande.",
+      "Lisez les images du vendeur et les options : le prix le plus bas peut viser une autre variante.",
+      "Contrôlez rapidement le QC d’entrepôt et comparez les détails visibles à la commande.",
+    ],
+    openLiveListing: "Ouvrir la fiche produit en direct",
+    priceNote: "Le montant USD est une conversion de référence datée, pas un total livré. Fret international, emballage, frais de paiement, taxes et droits ne sont pas inclus.",
+    accuracyNote: "Cette page reprend uniquement les informations visibles de la fiche vérifiée. Elle ne prétend rien sur la matière, le poids, l’authenticité, le QC, le délai ou l’expérience client.",
+    relatedProducts: "Autres produits de cette catégorie",
+    productMeta: "Fiche vérifiée pour {name} : prix source, référence, catégorie et contrôles pratiques avant achat.",
+    categoryMeta: "Trois trouvailles {category} vérifiées avec prix source, références et pages de détail indépendantes.",
+  },
+  es: {
+    home: "Inicio",
+    finds: "Hallazgos",
+    categoryKicker: "Categoría seleccionada",
+    categoryIntro: "Tres productos comprobados de esta categoría, cada uno con su propia página de detalle antes del listado de destino en vivo.",
+    productsFound: "productos seleccionados",
+    openLiveCategory: "Abrir categoría en vivo",
+    viewDetails: "Ver detalles",
+    allCategories: "Todas las categorías",
+    productKicker: "Ficha de producto comprobada",
+    backToFinds: "Volver a todos los hallazgos",
+    backToCategory: "Volver a la categoría",
+    referencePrice: "Precio de referencia",
+    productReference: "Referencia del producto",
+    lastChecked: "Última comprobación",
+    verifiedFacts: "Datos verificados del listado",
+    sourceTitle: "Título del listado fuente",
+    cnyPrice: "Precio en CNY",
+    usdPrice: "USD aproximado",
+    category: "Categoría",
+    buyingChecklist: "Qué comprobar antes de comprar",
+    checklist: [
+      "Confirma el precio actual, la disponibilidad y el envío nacional en el listado en vivo.",
+      "Comprueba el color, la talla, la versión y la cantidad exactos antes de enviar el pedido.",
+      "Lee las imágenes y opciones del vendedor; el precio más bajo puede corresponder a otra variante.",
+      "Revisa pronto el QC de almacén y compara los detalles visibles con el pedido.",
+    ],
+    openLiveListing: "Abrir listado de producto en vivo",
+    priceNote: "El USD es una conversión de referencia con fecha, no el total entregado. No incluye transporte internacional, embalaje, cargos de pago, impuestos ni aduanas.",
+    accuracyNote: "Esta página solo indica datos visibles en la ficha comprobada. No afirma material, peso, autenticidad, resultados QC, plazo de envío ni experiencia de clientes.",
+    relatedProducts: "Más de esta categoría",
+    productMeta: "Ficha comprobada de {name}: precio fuente, referencia, categoría y verificaciones prácticas de compra.",
+    categoryMeta: "Tres hallazgos de {category} comprobados con precios fuente, referencias y páginas de detalle independientes.",
+  },
+  it: {
+    home: "Home",
+    finds: "Prodotti",
+    categoryKicker: "Categoria selezionata",
+    categoryIntro: "Tre prodotti verificati di questa categoria, ciascuno con una pagina di dettaglio indipendente prima dell’inserzione live di destinazione.",
+    productsFound: "prodotti selezionati",
+    openLiveCategory: "Apri categoria live",
+    viewDetails: "Vedi dettagli",
+    allCategories: "Tutte le categorie",
+    productKicker: "Scheda prodotto verificata",
+    backToFinds: "Torna a tutti i prodotti",
+    backToCategory: "Torna alla categoria",
+    referencePrice: "Prezzo di riferimento",
+    productReference: "Riferimento prodotto",
+    lastChecked: "Ultimo controllo",
+    verifiedFacts: "Dati verificati dell’inserzione",
+    sourceTitle: "Titolo dell’inserzione fonte",
+    cnyPrice: "Prezzo CNY",
+    usdPrice: "USD approssimativi",
+    category: "Categoria",
+    buyingChecklist: "Cosa controllare prima dell’acquisto",
+    checklist: [
+      "Conferma prezzo attuale, disponibilità e spedizione nazionale nell’inserzione live.",
+      "Abbina esattamente colore, taglia, versione e quantità prima di inviare l’ordine.",
+      "Leggi immagini e opzioni del venditore: il prezzo più basso può riferirsi a un’altra variante.",
+      "Controlla rapidamente il QC di magazzino e confronta i dettagli visibili con l’ordine.",
+    ],
+    openLiveListing: "Apri inserzione prodotto live",
+    priceNote: "L’USD è una conversione di riferimento datata, non il totale consegnato. Trasporto internazionale, imballaggio, commissioni, imposte e dazi non sono inclusi.",
+    accuracyNote: "Questa pagina riporta solo dati visibili nella scheda verificata. Non dichiara materiale, peso, autenticità, risultati QC, tempi di spedizione o esperienze cliente.",
+    relatedProducts: "Altri prodotti della categoria",
+    productMeta: "Scheda verificata per {name}: prezzo fonte, riferimento, categoria e controlli pratici prima dell’acquisto.",
+    categoryMeta: "Tre prodotti {category} verificati con prezzi fonte, riferimenti e pagine di dettaglio indipendenti.",
+  },
+  pl: {
+    home: "Strona główna",
+    finds: "Produkty",
+    categoryKicker: "Wybrana kategoria",
+    categoryIntro: "Trzy sprawdzone produkty z tej kategorii, każdy z własną stroną szczegółów przed otwarciem aktywnej oferty docelowej.",
+    productsFound: "wybrane produkty",
+    openLiveCategory: "Otwórz aktywną kategorię",
+    viewDetails: "Zobacz szczegóły",
+    allCategories: "Wszystkie kategorie",
+    productKicker: "Sprawdzona karta produktu",
+    backToFinds: "Wróć do wszystkich produktów",
+    backToCategory: "Wróć do kategorii",
+    referencePrice: "Cena referencyjna",
+    productReference: "Numer produktu",
+    lastChecked: "Ostatnia kontrola",
+    verifiedFacts: "Sprawdzone dane oferty",
+    sourceTitle: "Tytuł oferty źródłowej",
+    cnyPrice: "Cena CNY",
+    usdPrice: "Przybliżone USD",
+    category: "Kategoria",
+    buyingChecklist: "Co sprawdzić przed zakupem",
+    checklist: [
+      "Sprawdź aktualną cenę, dostępność i dostawę krajową w aktywnej ofercie.",
+      "Dokładnie dopasuj kolor, rozmiar, wersję i ilość przed wysłaniem zamówienia.",
+      "Przeczytaj zdjęcia i tabelę opcji; najniższa cena może dotyczyć innego wariantu.",
+      "Szybko sprawdź QC w magazynie i porównaj widoczne szczegóły z zamówieniem.",
+    ],
+    openLiveListing: "Otwórz aktywną ofertę produktu",
+    priceNote: "USD to datowane przeliczenie referencyjne, nie koszt z dostawą. Nie obejmuje transportu międzynarodowego, pakowania, opłat, podatków ani cła.",
+    accuracyNote: "Ta strona podaje tylko dane widoczne na sprawdzonej karcie. Nie potwierdza materiału, wagi, autentyczności, QC, czasu wysyłki ani opinii klientów.",
+    relatedProducts: "Więcej z tej kategorii",
+    productMeta: "Sprawdzona karta {name}: cena źródłowa, numer, kategoria i praktyczne kontrole przed zakupem.",
+    categoryMeta: "Trzy sprawdzone produkty {category} z cenami źródłowymi, numerami i osobnymi stronami szczegółów.",
+  },
+};

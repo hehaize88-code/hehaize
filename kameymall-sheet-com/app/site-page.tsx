@@ -4,17 +4,30 @@ import { FormEvent, ReactNode, useMemo, useState } from "react";
 import {
   articleRoute,
   articleRoutes,
-  categoryDestinations,
-  categoryOrder,
   copies,
   guideRoutes,
+  isStaticRouteKey,
   languages,
   Locale,
-  products,
   RouteKey,
   routeHref,
+  StaticRouteKey,
 } from "./site-content";
 import { additionalArticles, additionalArticleRoutes } from "./site-articles";
+import { catalogCopies } from "./site-catalog-copy";
+import {
+  categoryDestinations,
+  categoryFromRoute,
+  CategoryKey,
+  categoryOrder,
+  categoryRoute,
+  featuredProducts,
+  Product,
+  productFromRoute,
+  productRoute,
+  products,
+  productsForCategory,
+} from "./site-products";
 
 const CNY_TO_USD = 0.1481;
 
@@ -23,6 +36,14 @@ function usd(cny: number) {
     style: "currency",
     currency: "USD",
   }).format(cny * CNY_TO_USD);
+}
+
+function cny(cnyValue: number, locale: Locale) {
+  return `¥${new Intl.NumberFormat(locale, { maximumFractionDigits: 2 }).format(cnyValue)}`;
+}
+
+function checkedDate(value: string, locale: Locale) {
+  return new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeZone: "UTC" }).format(new Date(`${value}T00:00:00Z`));
 }
 
 function ArrowIcon({ external = false }: { external?: boolean }) {
@@ -75,7 +96,7 @@ function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
             <a
               key={href}
               href={routeHref(locale, href)}
-              aria-current={route === href || route.startsWith(`${href}/`) ? "page" : undefined}
+              aria-current={route === href || route.startsWith(`${href}/`) || (href === "finds" && route.startsWith("products/")) ? "page" : undefined}
             >
               {label}
             </a>
@@ -167,25 +188,27 @@ function MainSearch({ locale, compact = false }: { locale: Locale; compact?: boo
   );
 }
 
-function FindBrowser({ locale }: { locale: Locale }) {
+function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: boolean }) {
   const copy = copies[locale];
   const [tableQuery, setTableQuery] = useState("");
   const [category, setCategory] = useState("all");
+  const sourceProducts = featured ? featuredProducts : products;
   const filteredProducts = useMemo(() => {
     const query = tableQuery.trim().toLowerCase();
-    return products.filter((product) => {
+    return sourceProducts.filter((product) => {
       const label = copy.categories.items[product.categoryKey].label;
       const matchesQuery = !query || product.name.toLowerCase().includes(query) || label.toLowerCase().includes(query) || product.reference.includes(query);
       return matchesQuery && (category === "all" || product.categoryKey === category);
     });
-  }, [category, copy.categories.items, tableQuery]);
+  }, [category, copy.categories.items, sourceProducts, tableQuery]);
+  const availableCategories = categoryOrder.filter((key) => sourceProducts.some((product) => product.categoryKey === key));
 
   return (
     <section className="find-browser" aria-label={copy.finder.kicker}>
       <div className="browser-heading">
         <span className="live-dot" />
         <h2>{copy.finder.kicker}</h2>
-        <span className="browser-updated">{copy.finder.verified}</span>
+        <span className="browser-updated">{copy.finder.verified.replace("30", String(sourceProducts.length))}</span>
       </div>
       <div className="browser-toolbar">
         <label className="table-search">
@@ -197,8 +220,8 @@ function FindBrowser({ locale }: { locale: Locale }) {
           <span className="sr-only">{copy.finder.category}</span>
           <select value={category} onChange={(event) => setCategory(event.target.value)}>
             <option value="all">{copy.finder.allCategories}</option>
-            {products.map((product) => (
-              <option key={product.categoryKey} value={product.categoryKey}>{copy.categories.items[product.categoryKey].label}</option>
+            {availableCategories.map((key) => (
+              <option key={key} value={key}>{copy.categories.items[key].label}</option>
             ))}
           </select>
         </label>
@@ -218,19 +241,19 @@ function FindBrowser({ locale }: { locale: Locale }) {
             {filteredProducts.length ? filteredProducts.map((product) => (
               <div className="product-row" role="row" key={product.reference}>
                 <div className="item-cell" role="cell">
-                  <a href={product.url} aria-label={`${copy.finder.open} ${product.name}`}><img src={product.image} alt={product.name} /></a>
+                  <a href={routeHref(locale, productRoute(product.slug))} aria-label={`${copy.finder.open} ${product.name}`}><img src={product.image} alt={product.name} /></a>
                   <div>
-                    <a className="product-name" href={product.url}>{product.name}</a>
+                    <a className="product-name" href={routeHref(locale, productRoute(product.slug))}>{product.name}</a>
                     <span>{copy.finder.original} · ¥{product.cny}</span>
                     <code>KMS-{product.reference}</code>
                   </div>
                 </div>
-                <a className="category-cell" role="cell" href={categoryDestinations[product.categoryKey]}>{copy.categories.items[product.categoryKey].label}</a>
+                <a className="category-cell" role="cell" href={routeHref(locale, categoryRoute(product.categoryKey))}>{copy.categories.items[product.categoryKey].label}</a>
                 <div className="price-cell" role="cell"><strong>{usd(product.cny)}</strong><small>{copy.finder.approximate}</small></div>
                 <div className="status-cell" role="cell"><span /> {copy.finder.listed}</div>
                 <div className="open-cell" role="cell">
-                  <a className="open-pill" href={product.url}>{copy.finder.open}</a>
-                  <a className="external-link" href={product.url} aria-label={`${copy.finder.open} ${product.name}`}><ArrowIcon external /></a>
+                  <a className="open-pill" href={routeHref(locale, productRoute(product.slug))}>{copy.finder.open}</a>
+                  <a className="external-link" href={routeHref(locale, productRoute(product.slug))} aria-label={`${copy.finder.open} ${product.name}`}><ArrowIcon /></a>
                 </div>
               </div>
             )) : <p className="empty-state">{copy.finder.noMatches}</p>}
@@ -244,7 +267,7 @@ function FindBrowser({ locale }: { locale: Locale }) {
 
 function HomeHero({ locale }: { locale: Locale }) {
   const copy = copies[locale];
-  const chips = ["shoes", "jersey", "sweatshirts", "headwear", "electronics"];
+  const chips = ["shoes", "jersey", "sweatshirts", "headwear", "electronics"] as const;
   return (
     <section className="hero">
       <div className="hero-copy">
@@ -258,14 +281,14 @@ function HomeHero({ locale }: { locale: Locale }) {
         </div>
         <div className="proof-row" aria-label="Database highlights">
           <article><span className="proof-icon" aria-hidden="true">10</span><div><strong>10</strong><small>{copy.home.categoriesCount}</small></div></article>
-          <article><span className="proof-icon" aria-hidden="true">20K</span><div><strong>20K+</strong><small>{copy.home.findsCount}</small></div></article>
+          <article><span className="proof-icon" aria-hidden="true">30</span><div><strong>30</strong><small>{copy.home.findsCount}</small></div></article>
           <article><span className="proof-icon" aria-hidden="true">↗</span><div><strong>{copy.home.direct}</strong><small>{copy.home.listingPages}</small></div></article>
         </div>
         <div className="category-chips">
-          {chips.map((key) => <a key={key} href={categoryDestinations[key]}>{copy.categories.items[key].label}</a>)}
+          {chips.map((key) => <a key={key} href={routeHref(locale, categoryRoute(key))}>{copy.categories.items[key].label}</a>)}
         </div>
       </div>
-      <FindBrowser locale={locale} />
+      <FindBrowser locale={locale} featured />
     </section>
   );
 }
@@ -286,11 +309,11 @@ function CategoriesSection({ locale }: { locale: Locale }) {
       <SectionHeading kicker={copy.categories.kicker} title={copy.categories.title} intro={copy.categories.intro} />
       <div className="category-grid">
         {categoryOrder.map((key, index) => (
-          <a className="category-card" href={categoryDestinations[key]} key={key}>
+          <a className="category-card" href={routeHref(locale, categoryRoute(key))} key={key}>
             <span className="category-number">{String(index + 1).padStart(2, "0")}</span>
             <h3>{copy.categories.items[key].label}</h3>
             <p>{copy.categories.items[key].description}</p>
-            <span className="card-link">{copy.categories.open} <ArrowIcon external /></span>
+            <span className="card-link">{copy.categories.open} <ArrowIcon /></span>
           </a>
         ))}
       </div>
@@ -370,7 +393,137 @@ function FaqSection({ locale }: { locale: Locale }) {
   );
 }
 
-function InnerHero({ locale, route, children }: { locale: Locale; route: Exclude<RouteKey, "home">; children?: ReactNode }) {
+function Breadcrumbs({ locale, items }: { locale: Locale; items: Array<{ label: string; route?: RouteKey }> }) {
+  return (
+    <nav className="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        {items.map((item, index) => (
+          <li key={`${item.label}-${index}`}>
+            {item.route ? <a href={routeHref(locale, item.route)}>{item.label}</a> : <span aria-current="page">{item.label}</span>}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
+
+function ProductCard({ locale, product }: { locale: Locale; product: Product }) {
+  const copy = copies[locale];
+  const catalog = catalogCopies[locale];
+  return (
+    <article className="catalog-product-card">
+      <a className="catalog-product-image" href={routeHref(locale, productRoute(product.slug))}>
+        <img src={product.image} alt={product.name} />
+      </a>
+      <div className="catalog-product-body">
+        <a className="catalog-product-category" href={routeHref(locale, categoryRoute(product.categoryKey))}>{copy.categories.items[product.categoryKey].label}</a>
+        <h2><a href={routeHref(locale, productRoute(product.slug))}>{product.name}</a></h2>
+        <div className="catalog-product-meta"><strong>{usd(product.cny)}</strong><span>{cny(product.cny, locale)}</span></div>
+        <code>KMS-{product.reference}</code>
+        <a className="catalog-product-link" href={routeHref(locale, productRoute(product.slug))}>{catalog.viewDetails} <ArrowIcon /></a>
+      </div>
+    </article>
+  );
+}
+
+function CategoryCatalogPage({ locale, category }: { locale: Locale; category: CategoryKey }) {
+  const copy = copies[locale];
+  const catalog = catalogCopies[locale];
+  const categoryLabel = copy.categories.items[category].label;
+  const categoryProducts = productsForCategory(category);
+  return (
+    <>
+      <section className="catalog-hero">
+        <Breadcrumbs locale={locale} items={[
+          { label: catalog.home, route: "home" },
+          { label: catalog.allCategories, route: "categories" },
+          { label: categoryLabel },
+        ]} />
+        <div className="catalog-hero-layout">
+          <div>
+            <p className="section-kicker">{catalog.categoryKicker}</p>
+            <h1>{categoryLabel} KameyMall Finds</h1>
+            <p>{copy.categories.items[category].description} {catalog.categoryIntro}</p>
+          </div>
+          <div className="catalog-hero-actions">
+            <span><strong>{categoryProducts.length}</strong> {catalog.productsFound}</span>
+            <a className="button button-secondary" href={categoryDestinations[category]}>{catalog.openLiveCategory} <ArrowIcon external /></a>
+          </div>
+        </div>
+      </section>
+      <section className="catalog-list page-section" aria-label={`${categoryLabel} ${catalog.productsFound}`}>
+        <div className="catalog-grid">
+          {categoryProducts.map((product) => <ProductCard key={product.slug} locale={locale} product={product} />)}
+        </div>
+        <a className="catalog-back-link" href={routeHref(locale, "categories")}>← {catalog.allCategories}</a>
+      </section>
+    </>
+  );
+}
+
+function ProductDetailPage({ locale, product }: { locale: Locale; product: Product }) {
+  const copy = copies[locale];
+  const catalog = catalogCopies[locale];
+  const categoryLabel = copy.categories.items[product.categoryKey].label;
+  const related = productsForCategory(product.categoryKey).filter((item) => item.slug !== product.slug);
+  return (
+    <article className="product-page">
+      <div className="product-page-inner">
+        <Breadcrumbs locale={locale} items={[
+          { label: catalog.home, route: "home" },
+          { label: catalog.finds, route: "finds" },
+          { label: categoryLabel, route: categoryRoute(product.categoryKey) },
+          { label: product.name },
+        ]} />
+        <div className="product-detail">
+          <figure className="product-visual"><img src={product.image} alt={product.name} /></figure>
+          <div className="product-summary">
+            <p className="section-kicker">{catalog.productKicker}</p>
+            <h1>{product.name}</h1>
+            <a className="product-category-link" href={routeHref(locale, categoryRoute(product.categoryKey))}>{categoryLabel}</a>
+            <div className="product-price">
+              <span>{catalog.referencePrice}</span>
+              <strong>{usd(product.cny)}</strong>
+              <small>{cny(product.cny, locale)}</small>
+            </div>
+            <p className="price-note">{catalog.priceNote}</p>
+            <div className="product-cta-row">
+              <a className="button button-primary" href={product.url}>{catalog.openLiveListing} <ArrowIcon external /></a>
+              <a className="button button-secondary" href={routeHref(locale, "finds")}>← {catalog.backToFinds}</a>
+            </div>
+          </div>
+        </div>
+
+        <section className="verified-facts">
+          <div className="section-heading compact-heading">
+            <div><p className="section-kicker">KMS-{product.reference}</p><h2>{catalog.verifiedFacts}</h2></div>
+          </div>
+          <dl className="fact-grid">
+            <div><dt>{catalog.sourceTitle}</dt><dd>{product.sourceName ?? product.name}</dd></div>
+            <div><dt>{catalog.productReference}</dt><dd>{product.reference}</dd></div>
+            <div><dt>{catalog.cnyPrice}</dt><dd>{cny(product.cny, locale)}</dd></div>
+            <div><dt>{catalog.usdPrice}</dt><dd>{usd(product.cny)}</dd></div>
+            <div><dt>{catalog.category}</dt><dd><a href={routeHref(locale, categoryRoute(product.categoryKey))}>{categoryLabel}</a></dd></div>
+            <div><dt>{catalog.lastChecked}</dt><dd><time dateTime={product.lastChecked}>{checkedDate(product.lastChecked, locale)}</time></dd></div>
+          </dl>
+        </section>
+
+        <section className="buying-checklist">
+          <div><p className="section-kicker">{catalog.productKicker}</p><h2>{catalog.buyingChecklist}</h2></div>
+          <ol>{catalog.checklist.map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, "0")}</span><p>{item}</p></li>)}</ol>
+        </section>
+        <p className="accuracy-note">{catalog.accuracyNote}</p>
+
+        <section className="related-section">
+          <div className="related-heading"><h2>{catalog.relatedProducts}</h2><a href={routeHref(locale, categoryRoute(product.categoryKey))}>{catalog.backToCategory} <ArrowIcon /></a></div>
+          <div className="catalog-grid related-grid">{related.map((item) => <ProductCard key={item.slug} locale={locale} product={item} />)}</div>
+        </section>
+      </div>
+    </article>
+  );
+}
+
+function InnerHero({ locale, route, children }: { locale: Locale; route: Exclude<StaticRouteKey, "home">; children?: ReactNode }) {
   const copy = copies[locale];
   const intro = copy.pageIntros[route];
   return (
@@ -385,7 +538,7 @@ function InnerHero({ locale, route, children }: { locale: Locale; route: Exclude
   );
 }
 
-function ProsePage({ locale, route, article = false }: { locale: Locale; route: RouteKey; article?: boolean }) {
+function ProsePage({ locale, route, article = false }: { locale: Locale; route: StaticRouteKey; article?: boolean }) {
   const copy = copies[locale];
   if (article) {
     const page = route === articleRoute
@@ -402,7 +555,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
     const labels = seoLabels[locale];
     return (
       <>
-        <InnerHero locale={locale} route={route as Exclude<RouteKey, "home">}>
+        <InnerHero locale={locale} route={route as Exclude<StaticRouteKey, "home">}>
           <div className="article-meta"><span>{page.updated}</span><span>{page.readTime}</span></div>
         </InnerHero>
         <article className="prose-layout">
@@ -437,7 +590,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
   const page = copy.guidePages[route];
   return (
     <>
-      <InnerHero locale={locale} route={route as Exclude<RouteKey, "home">} />
+      <InnerHero locale={locale} route={route as Exclude<StaticRouteKey, "home">} />
       <article className="prose-layout">
         <aside>
           <a href={routeHref(locale, "guides")}>← {copy.common.backToGuides}</a>
@@ -461,24 +614,114 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
 
 function RouteContent({ locale, route }: { locale: Locale; route: RouteKey }) {
   const copy = copies[locale];
+  const product = productFromRoute(route);
+  const category = categoryFromRoute(route);
+  if (product) return <ProductDetailPage locale={locale} product={product} />;
+  if (category) return <CategoryCatalogPage locale={locale} category={category} />;
+  const staticRoute = route as StaticRouteKey;
   if (route === "home") return <><HomeHero locale={locale} /><CategoriesSection locale={locale} /><HowSection locale={locale} /><GuidesSection locale={locale} /><ArticlesSection locale={locale} /><FaqSection locale={locale} /></>;
-  if (route === "finds") return <><InnerHero locale={locale} route={route}><MainSearch locale={locale} compact /></InnerHero><section className="standalone-browser page-section"><FindBrowser locale={locale} /></section><div className="verification-band">{copy.common.verifyNote}</div></>;
-  if (route === "categories") return <><InnerHero locale={locale} route={route} /><CategoriesSection locale={locale} /></>;
-  if (route === "how-to-buy") return <><InnerHero locale={locale} route={route} /><HowSection locale={locale} /><GuidesSection locale={locale} /></>;
-  if (route === "guides") return <><InnerHero locale={locale} route={route} /><GuidesSection locale={locale} /></>;
-  if (route === "faq") return <><InnerHero locale={locale} route={route} /><FaqSection locale={locale} /></>;
-  if (route === "articles") return <><InnerHero locale={locale} route={route} /><ArticlesSection locale={locale} /></>;
-  if (articleRoutes.includes(route)) return <ProsePage locale={locale} route={route} article />;
-  return <ProsePage locale={locale} route={route} />;
+  if (route === "finds") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">}><MainSearch locale={locale} compact /></InnerHero><section className="standalone-browser page-section"><FindBrowser locale={locale} /></section><div className="verification-band">{copy.common.verifyNote}</div></>;
+  if (route === "categories") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">} /><CategoriesSection locale={locale} /></>;
+  if (route === "how-to-buy") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">} /><HowSection locale={locale} /><GuidesSection locale={locale} /></>;
+  if (route === "guides") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">} /><GuidesSection locale={locale} /></>;
+  if (route === "faq") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">} /><FaqSection locale={locale} /></>;
+  if (route === "articles") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">} /><ArticlesSection locale={locale} /></>;
+  if (articleRoutes.includes(staticRoute)) return <ProsePage locale={locale} route={staticRoute} article />;
+  return <ProsePage locale={locale} route={staticRoute} />;
 }
 
 export default function SitePage({ locale, route }: { locale: Locale; route: RouteKey }) {
   const copy = copies[locale];
+  const product = productFromRoute(route);
+  const category = categoryFromRoute(route);
+  const canonicalPath = routeHref(locale, route);
+  const canonical = `https://kameymall-sheet.com${canonicalPath === "/" ? "" : canonicalPath}`;
+  const categoryLabel = category ? copy.categories.items[category].label : product ? copy.categories.items[product.categoryKey].label : null;
+  const pageIntro = isStaticRouteKey(route) && route !== "home" ? copy.pageIntros[route] : null;
+  const breadcrumbItems = product
+    ? [
+        [catalogCopies[locale].home, routeHref(locale, "home")],
+        [catalogCopies[locale].finds, routeHref(locale, "finds")],
+        [copy.categories.items[product.categoryKey].label, routeHref(locale, categoryRoute(product.categoryKey))],
+        [product.name, routeHref(locale, route)],
+      ]
+    : category
+      ? [
+          [catalogCopies[locale].home, routeHref(locale, "home")],
+          [catalogCopies[locale].allCategories, routeHref(locale, "categories")],
+          [copy.categories.items[category].label, routeHref(locale, route)],
+        ]
+      : [];
+  const breadcrumbSchema = breadcrumbItems.length ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbItems.map(([name, path], index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name,
+      item: `https://kameymall-sheet.com${path === "/" ? "" : path}`,
+    })),
+  } : null;
+  const structuredData = product
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: product.name,
+          image: [product.image],
+          sku: `KMS-${product.reference}`,
+          category: categoryLabel,
+          url: canonical,
+          offers: { "@type": "Offer", url: product.url, priceCurrency: "CNY", price: product.cny },
+        },
+        breadcrumbSchema,
+      ]
+    : category
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: `${categoryLabel} KameyMall Finds`,
+            url: canonical,
+            inLanguage: locale,
+            mainEntity: {
+              "@type": "ItemList",
+              numberOfItems: productsForCategory(category).length,
+              itemListElement: productsForCategory(category).map((item, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                url: `https://kameymall-sheet.com${routeHref(locale, productRoute(item.slug))}`,
+                name: item.name,
+              })),
+            },
+          },
+          breadcrumbSchema,
+        ]
+      : route === "finds"
+        ? {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            numberOfItems: products.length,
+            itemListElement: products.map((item, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              url: `https://kameymall-sheet.com${routeHref(locale, productRoute(item.slug))}`,
+              name: item.name,
+            })),
+          }
+        : {
+            "@context": "https://schema.org",
+            "@type": articleRoutes.includes(route as StaticRouteKey) ? "Article" : "WebSite",
+            name: route === "home" ? "KameyMall Sheet" : pageIntro?.title,
+            description: route === "home" ? copy.home.lede : pageIntro?.intro,
+            url: canonical,
+            inLanguage: locale,
+          };
   return (
     <main lang={locale} data-route={route}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": articleRoutes.includes(route) ? "Article" : "WebSite", name: route === "home" ? "KameyMall Sheet" : copy.pageIntros[route as Exclude<RouteKey, "home">]?.title, description: route === "home" ? copy.home.lede : copy.pageIntros[route as Exclude<RouteKey, "home">]?.intro, inLanguage: locale }) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Header locale={locale} route={route} />
       <RouteContent locale={locale} route={route} />
