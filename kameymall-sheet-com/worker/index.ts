@@ -20,6 +20,18 @@ interface ExecutionContext {
 }
 
 const localizedPathSegments = new Set(["de", "fr", "es", "it", "pl"]);
+const canonicalHostname = "kameymall-sheet.com";
+const wwwHostname = `www.${canonicalHostname}`;
+
+function canonicalHostnameRedirect(url: URL): Response | null {
+  if (url.hostname !== wwwHostname) return null;
+
+  url.protocol = "https:";
+  url.hostname = canonicalHostname;
+  url.port = "";
+
+  return Response.redirect(url.toString(), 301);
+}
 
 function documentLanguage(pathname: string): string {
   const firstSegment = pathname.split("/").filter(Boolean)[0];
@@ -66,6 +78,9 @@ async function localizeDocumentLanguage(
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+    const hostnameRedirect = canonicalHostnameRedirect(url);
+
+    if (hostnameRedirect) return hostnameRedirect;
 
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];

@@ -285,7 +285,7 @@ function HomeHero({ locale }: { locale: Locale }) {
           <article><span className="proof-icon" aria-hidden="true">↗</span><div><strong>{copy.home.direct}</strong><small>{copy.home.listingPages}</small></div></article>
         </div>
         <div className="category-chips">
-          {chips.map((key) => <a key={key} href={routeHref(locale, categoryRoute(key))}>{copy.categories.items[key].label}</a>)}
+          {chips.map((key) => <a key={key} href={categoryDestinations[key]}>{copy.categories.items[key].label}</a>)}
         </div>
       </div>
       <FindBrowser locale={locale} featured />
@@ -302,14 +302,18 @@ function SectionHeading({ kicker, title, intro }: { kicker: string; title: strin
   );
 }
 
-function CategoriesSection({ locale }: { locale: Locale }) {
+function CategoriesSection({ locale, directToMainSite = false }: { locale: Locale; directToMainSite?: boolean }) {
   const copy = copies[locale];
   return (
     <section className="category-section page-section">
       <SectionHeading kicker={copy.categories.kicker} title={copy.categories.title} intro={copy.categories.intro} />
       <div className="category-grid">
         {categoryOrder.map((key, index) => (
-          <a className="category-card" href={routeHref(locale, categoryRoute(key))} key={key}>
+          <a
+            className="category-card"
+            href={directToMainSite ? categoryDestinations[key] : routeHref(locale, categoryRoute(key))}
+            key={key}
+          >
             <span className="category-number">{String(index + 1).padStart(2, "0")}</span>
             <h3>{copy.categories.items[key].label}</h3>
             <p>{copy.categories.items[key].description}</p>
@@ -619,7 +623,7 @@ function RouteContent({ locale, route }: { locale: Locale; route: RouteKey }) {
   if (product) return <ProductDetailPage locale={locale} product={product} />;
   if (category) return <CategoryCatalogPage locale={locale} category={category} />;
   const staticRoute = route as StaticRouteKey;
-  if (route === "home") return <><HomeHero locale={locale} /><CategoriesSection locale={locale} /><HowSection locale={locale} /><GuidesSection locale={locale} /><ArticlesSection locale={locale} /><FaqSection locale={locale} /></>;
+  if (route === "home") return <><HomeHero locale={locale} /><CategoriesSection locale={locale} directToMainSite /><HowSection locale={locale} /><GuidesSection locale={locale} /><ArticlesSection locale={locale} /><FaqSection locale={locale} /></>;
   if (route === "finds") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">}><MainSearch locale={locale} compact /></InnerHero><section className="standalone-browser page-section"><FindBrowser locale={locale} /></section><div className="verification-band">{copy.common.verifyNote}</div></>;
   if (route === "categories") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">} /><CategoriesSection locale={locale} /></>;
   if (route === "how-to-buy") return <><InnerHero locale={locale} route={staticRoute as Exclude<StaticRouteKey, "home">} /><HowSection locale={locale} /><GuidesSection locale={locale} /></>;

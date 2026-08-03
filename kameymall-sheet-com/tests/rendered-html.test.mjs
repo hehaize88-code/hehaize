@@ -118,17 +118,56 @@ test("keeps every localized content module as complete as English", async () => 
 
 test("uses the verified destination search and category URLs", async () => {
   const worker = await loadWorker();
-  const response = await render(worker, "/");
-  const html = await response.text();
-  assert.match(html, /action="https:\/\/www\.cnbuycha\.com\/search\.html"/);
-  assert.match(html, /name="keywords"/);
-  assert.match(html, /name="channelid"[^>]*value="2"|value="2"[^>]*name="channelid"/);
-  assert.match(html, /href="\/categories\/sweatshirts"/);
-  assert.doesNotMatch(html, /https:\/\/www\.cnbuycha\.com\/sweatshirts\//);
+  const localePrefixes = ["", "/de", "/fr", "/es", "/it", "/pl"];
+  const categoryUrls = [
+    "shoes",
+    "hoodies-sweaters",
+    "t-shirts",
+    "jackets",
+    "pants-shorts",
+    "headwear",
+    "accessories",
+    "jersey",
+    "electronics",
+    "other-stuff",
+  ].map((slug) => `https://www.cnbuycha.com/${slug}/`);
+
+  for (const prefix of localePrefixes) {
+    const response = await render(worker, prefix || "/");
+    const html = await response.text();
+    assert.match(html, /action="https:\/\/www\.cnbuycha\.com\/search\.html"/);
+    assert.match(html, /name="keywords"/);
+    assert.match(html, /name="channelid"[^>]*value="2"|value="2"[^>]*name="channelid"/);
+    assert.equal(
+      (html.match(/class="category-card" href="https:\/\/www\.cnbuycha\.com\//g) ?? []).length,
+      10,
+      `${prefix || "/"} homepage category cards`,
+    );
+    for (const url of categoryUrls) assert.ok(html.includes(`href="${url}"`), `${prefix || "/"} ${url}`);
+  }
+
+  const categoriesResponse = await render(worker, "/categories");
+  const categoriesHtml = await categoriesResponse.text();
+  assert.match(categoriesHtml, /class="category-card" href="\/categories\/sweatshirts"/);
 
   const categoryResponse = await render(worker, "/categories/sweatshirts");
   const categoryHtml = await categoryResponse.text();
   assert.match(categoryHtml, /https:\/\/www\.cnbuycha\.com\/hoodies-sweaters\//);
+});
+
+test("redirects every www path to the matching canonical hostname with HTTP 301", async () => {
+  const worker = await loadWorker();
+  const response = await worker.fetch(
+    new Request("https://www.kameymall-sheet.com/fr/categories/shoes?source=gsc&item=1"),
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+
+  assert.equal(response.status, 301);
+  assert.equal(
+    response.headers.get("location"),
+    "https://kameymall-sheet.com/fr/categories/shoes?source=gsc&item=1",
+  );
 });
 
 test("renders eight homepage finds, thirty catalog finds, and internal detail links", async () => {
