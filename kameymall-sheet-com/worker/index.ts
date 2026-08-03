@@ -19,6 +19,44 @@ interface ExecutionContext {
   passThroughOnException(): void;
 }
 
+const localizedPathSegments = new Set(["de", "fr", "es", "it", "pl"]);
+
+function documentLanguage(pathname: string): string {
+  const firstSegment = pathname.split("/").filter(Boolean)[0];
+  return firstSegment && localizedPathSegments.has(firstSegment)
+    ? firstSegment
+    : "en";
+}
+
+async function localizeDocumentLanguage(
+  response: Response,
+  pathname: string,
+): Promise<Response> {
+  const contentType = response.headers.get("content-type") ?? "";
+  if (!contentType.toLowerCase().includes("text/html")) {
+    return response;
+  }
+
+  const locale = documentLanguage(pathname);
+  const html = await response.text();
+  const htmlTag = /<html\b([^>]*?)\blang=(["'])[^"']*\2([^>]*)>/i;
+  const localizedHtml = htmlTag.test(html)
+    ? html.replace(htmlTag, `<html$1lang="${locale}"$3>`)
+    : html.replace(/<html\b([^>]*)>/i, `<html lang="${locale}"$1>`);
+  const headers = new Headers(response.headers);
+
+  headers.set("content-language", locale);
+  headers.delete("content-length");
+  headers.delete("content-encoding");
+  headers.delete("etag");
+
+  return new Response(localizedHtml, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 // Image security config. SVG sources with .svg extension auto-skip the
 // optimization endpoint on the client side (served directly, no proxy).
 // To route SVGs through the optimizer (with security headers), set
@@ -40,7 +78,8 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    const response = await handler.fetch(request, env, ctx);
+    return localizeDocumentLanguage(response, url.pathname);
   },
 };
 

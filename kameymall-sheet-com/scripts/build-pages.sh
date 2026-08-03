@@ -110,6 +110,7 @@ if (
   homeResponse.status !== 200 ||
   !homeBody.includes(`/assets/${assetVersion}/`) ||
   /(?:src|href)="\/assets\/(?!v)/.test(homeBody) ||
+  !homeBody.includes('<html lang="es">') ||
   !homeBody.includes('<main lang="es"') ||
   !/hreflang/i.test(homeBody)
 ) {

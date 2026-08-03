@@ -224,6 +224,37 @@ const auditedRoutes = [
   ...productRoutes,
 ];
 
+test("uses the correct root HTML language on all 318 canonical pages", async () => {
+  const worker = await loadWorker();
+  const localeLanguages = [
+    ["", "en"],
+    ["/de", "de"],
+    ["/fr", "fr"],
+    ["/es", "es"],
+    ["/it", "it"],
+    ["/pl", "pl"],
+  ];
+
+  for (const [prefix, expectedLanguage] of localeLanguages) {
+    for (const route of auditedRoutes) {
+      const pathname = `${prefix}${route}` || "/";
+      const response = await render(worker, pathname);
+
+      assert.equal(response.status, 200, pathname);
+      assert.equal(
+        response.headers.get("content-language"),
+        expectedLanguage,
+        `${pathname} Content-Language`,
+      );
+      assert.match(
+        await response.text(),
+        new RegExp(`<html\\b[^>]*\\blang=["']${expectedLanguage}["'][^>]*>`, "i"),
+        `${pathname} root html lang`,
+      );
+    }
+  }
+});
+
 function visibleText(html) {
   return html
     .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
