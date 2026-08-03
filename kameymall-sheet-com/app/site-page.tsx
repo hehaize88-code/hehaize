@@ -24,12 +24,14 @@ import {
   featuredProducts,
   Product,
   productFromRoute,
+  productImageSize,
   productRoute,
   products,
   productsForCategory,
 } from "./site-products";
 
 const CNY_TO_USD = 0.1481;
+const SITE_URL = "https://kameymall-sheet.com";
 
 function usd(cny: number) {
   return new Intl.NumberFormat("en-US", {
@@ -74,6 +76,21 @@ function ArrowIcon({ external = false }: { external?: boolean }) {
   );
 }
 
+function ProductImage({ product, priority = false }: { product: Product; priority?: boolean }) {
+  const { width, height } = productImageSize(product);
+  return (
+    <img
+      src={product.image}
+      alt={product.name}
+      width={width}
+      height={height}
+      loading={priority ? "eager" : "lazy"}
+      decoding="async"
+      fetchPriority={priority ? "high" : undefined}
+    />
+  );
+}
+
 function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
   const copy = copies[locale];
   const navItems: Array<[RouteKey, string]> = [
@@ -87,7 +104,7 @@ function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
   return (
     <header className="site-header">
       <a className="brand" href={routeHref(locale, "home")} aria-label="KameyMall Sheet home">
-        <img src="/kameymall-logo.png" alt="KameyMall" />
+        <img src="/kameymall-logo.png" alt="KameyMall" width={366} height={68} decoding="async" fetchPriority="high" />
         <span>Sheet</span>
       </a>
       <div className="header-actions">
@@ -140,7 +157,7 @@ function Footer({ locale }: { locale: Locale }) {
   return (
     <footer>
       <div className="footer-brand">
-        <img src="/kameymall-logo.png" alt="KameyMall" />
+        <img src="/kameymall-logo.png" alt="KameyMall" width={366} height={68} loading="lazy" decoding="async" />
         <strong>Sheet</strong>
       </div>
       <p>{copy.footer.notice}</p>
@@ -238,10 +255,10 @@ function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: 
             <span role="columnheader">{copy.finder.open}</span>
           </div>
           <div className="table-body">
-            {filteredProducts.length ? filteredProducts.map((product) => (
+            {filteredProducts.length ? filteredProducts.map((product, index) => (
               <div className="product-row" role="row" key={product.reference}>
                 <div className="item-cell" role="cell">
-                  <a href={routeHref(locale, productRoute(product.slug))} aria-label={`${copy.finder.open} ${product.name}`}><img src={product.image} alt={product.name} /></a>
+                  <a href={routeHref(locale, productRoute(product.slug))} aria-label={`${copy.finder.open} ${product.name}`}><ProductImage product={product} priority={index === 0} /></a>
                   <div>
                     <a className="product-name" href={routeHref(locale, productRoute(product.slug))}>{product.name}</a>
                     <span>{copy.finder.original} · ¥{product.cny}</span>
@@ -417,7 +434,7 @@ function ProductCard({ locale, product }: { locale: Locale; product: Product }) 
   return (
     <article className="catalog-product-card">
       <a className="catalog-product-image" href={routeHref(locale, productRoute(product.slug))}>
-        <img src={product.image} alt={product.name} />
+        <ProductImage product={product} />
       </a>
       <div className="catalog-product-body">
         <a className="catalog-product-category" href={routeHref(locale, categoryRoute(product.categoryKey))}>{copy.categories.items[product.categoryKey].label}</a>
@@ -480,7 +497,7 @@ function ProductDetailPage({ locale, product }: { locale: Locale; product: Produ
           { label: product.name },
         ]} />
         <div className="product-detail">
-          <figure className="product-visual"><img src={product.image} alt={product.name} /></figure>
+          <figure className="product-visual"><ProductImage product={product} priority /></figure>
           <div className="product-summary">
             <p className="section-kicker">{catalog.productKicker}</p>
             <h1>{product.name}</h1>
@@ -684,7 +701,7 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
           "@context": "https://schema.org",
           "@type": "Product",
           name: product.name,
-          image: [product.image],
+          image: [`${SITE_URL}${product.image}`],
           sku: `KMS-${product.reference}`,
           category: categoryLabel,
           url: canonical,

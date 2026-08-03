@@ -71,7 +71,7 @@ export function buildMetadata(locale: Locale, route: RouteKey): Metadata {
       description,
       type: isArticle ? "article" : "website",
       url: canonical,
-      images: product ? [{ url: product.image, alt: product.name }] : undefined,
+      images: product ? [{ url: `${SITE_URL}${product.image}`, alt: product.name }] : undefined,
     },
   };
 }

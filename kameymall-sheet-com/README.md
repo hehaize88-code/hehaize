@@ -12,6 +12,7 @@ The site includes:
 - four fact-checked long-form SEO articles;
 - English, German, French, Spanish, Italian, and Polish routes;
 - Product, Breadcrumb, and ItemList structured data;
+- thirty self-hosted product lead images with explicit dimensions and lazy loading outside the first viewport;
 - production canonical URLs, hreflang signals, robots directives, and a 324-URL XML sitemap;
 - a compact mobile layout with no horizontal scrolling.
 
@@ -27,6 +28,8 @@ The committed directory root contains a ready-to-serve Pages bundle:
 - `assets/` contains versioned JavaScript, CSS, and local fonts;
 - `sitemap.xml`, `sitemap.txt`, and `robots.txt` are served as static crawler files;
 - the remaining root images are public site assets.
+
+The source images are listed in `scripts/product-image-sources.json`. `npm run build` verifies that all thirty local copies exist before packaging; use `npm run sync:product-images:refresh` only when intentionally refreshing the catalog images from their checked source URLs.
 
 Use `kameymall-sheet-com` as the Cloudflare Pages root directory. The committed bundle does not require a build command or a separate output directory.
 

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readdir, stat } from "node:fs/promises";
 import test from "node:test";
 
 const developmentPreviewMeta =
@@ -197,6 +198,54 @@ test("renders eight homepage finds, thirty catalog finds, and internal detail li
   assert.doesNotMatch(homeHtml, /class="product-name" href="https:\/\//);
 });
 
+function imageTags(html) {
+  return [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
+}
+
+function productImageTags(html) {
+  return imageTags(html).filter((tag) => /\bsrc=["']\/product-images\//i.test(tag));
+}
+
+test("self-hosts all product images and uses explicit, CLS-safe loading attributes", async () => {
+  const publicImageDirectory = new URL("../public/product-images/", import.meta.url);
+  const files = (await readdir(publicImageDirectory)).filter((file) => /\.(?:jpe?g|png|webp)$/i.test(file));
+  assert.equal(files.length, 30, "local product image count");
+  for (const file of files) {
+    assert.ok((await stat(new URL(file, publicImageDirectory))).size >= 1024, `${file} is a usable local image`);
+  }
+
+  const worker = await loadWorker();
+  const homeHtml = await (await render(worker, "/")).text();
+  const findsHtml = await (await render(worker, "/finds")).text();
+  const productHtml = await (await render(worker, "/products/new-balance-1906r")).text();
+
+  for (const [pathname, html] of [["/", homeHtml], ["/finds", findsHtml], ["/products/new-balance-1906r", productHtml]]) {
+    assert.doesNotMatch(html, /<img\b[^>]*cnbuycha\.com\/uploads/i, `${pathname} remote product image`);
+    for (const tag of imageTags(html)) {
+      assert.match(tag, /\bwidth=["']\d+["']/i, `${pathname} image width: ${tag}`);
+      assert.match(tag, /\bheight=["']\d+["']/i, `${pathname} image height: ${tag}`);
+      assert.match(tag, /\bdecoding=["']async["']/i, `${pathname} async image decoding: ${tag}`);
+    }
+  }
+
+  const homeProducts = productImageTags(homeHtml);
+  assert.equal(homeProducts.length, 8);
+  assert.match(homeProducts[0], /\bloading=["']eager["']/i);
+  assert.match(homeProducts[0], /\bfetchpriority=["']high["']/i);
+  for (const tag of homeProducts.slice(1)) assert.match(tag, /\bloading=["']lazy["']/i);
+
+  const findsProducts = productImageTags(findsHtml);
+  assert.equal(findsProducts.length, 30);
+  assert.match(findsProducts[0], /\bloading=["']eager["']/i);
+  for (const tag of findsProducts.slice(1)) assert.match(tag, /\bloading=["']lazy["']/i);
+
+  const detailProducts = productImageTags(productHtml);
+  assert.equal(detailProducts.length, 3);
+  assert.match(detailProducts[0], /\bloading=["']eager["']/i);
+  for (const tag of detailProducts.slice(1)) assert.match(tag, /\bloading=["']lazy["']/i);
+  assert.match(productHtml, /"image":\["https:\/\/kameymall-sheet\.com\/product-images\/new-balance-1906r\.webp"\]/);
+});
+
 test("adds product, breadcrumb, and category ItemList structured data", async () => {
   const worker = await loadWorker();
   const productResponse = await render(worker, "/products/new-balance-1906r");
@@ -334,6 +383,12 @@ test("uses the correct root HTML language on all 324 canonical pages", async () 
       } else {
         assert.equal(imageCount, englishImageCounts.get(route), `${pathname} image parity`);
         assert.equal(sectionCount, englishSectionCounts.get(route), `${pathname} section parity`);
+      }
+      assert.doesNotMatch(html, /<img\b[^>]*cnbuycha\.com\/uploads/i, `${pathname} remote product image`);
+      for (const tag of imageTags(html)) {
+        assert.match(tag, /\bwidth=["']\d+["']/i, `${pathname} image width`);
+        assert.match(tag, /\bheight=["']\d+["']/i, `${pathname} image height`);
+        assert.match(tag, /\bdecoding=["']async["']/i, `${pathname} image decoding`);
       }
 
       for (const [alternatePrefix, alternateLanguage] of localeLanguages) {

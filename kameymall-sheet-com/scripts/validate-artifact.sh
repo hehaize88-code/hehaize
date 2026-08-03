@@ -9,6 +9,7 @@ fi
 
 worker="${SITES_PROJECT_ROOT}/dist/server/index.js"
 hosting="${SITES_PROJECT_ROOT}/dist/.openai/hosting.json"
+product_images="${SITES_PROJECT_ROOT}/dist/client/product-images"
 
 [[ -f "${worker}" ]] || {
   echo "Missing Sites Worker entry: dist/server/index.js" >&2
@@ -16,6 +17,16 @@ hosting="${SITES_PROJECT_ROOT}/dist/.openai/hosting.json"
 }
 [[ -f "${hosting}" ]] || {
   echo "Missing packaged Sites manifest: dist/.openai/hosting.json" >&2
+  exit 66
+}
+
+[[ -d "${product_images}" ]] || {
+  echo "Missing packaged product image directory: dist/client/product-images" >&2
+  exit 66
+}
+product_image_count="$(find "${product_images}" -maxdepth 1 -type f \( -name '*.jpg' -o -name '*.png' -o -name '*.webp' \) | wc -l)"
+[[ "${product_image_count}" -eq 30 ]] || {
+  echo "Expected 30 packaged product images, found ${product_image_count}" >&2
   exit 66
 }
 
@@ -34,4 +45,4 @@ if (!worker.default || typeof worker.default.fetch !== "function") {
 }
 NODE
 
-echo "Validated Sites artifact: ESM Worker default.fetch and hosting manifest are present."
+echo "Validated Sites artifact: ESM Worker, hosting manifest, and 30 local product images are present."

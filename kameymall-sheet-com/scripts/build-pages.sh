@@ -141,4 +141,10 @@ NODE
 
 rsync -a "${pages_output}/" "${project_root}/"
 
-echo "Prepared Cloudflare Pages artifact in the project root."
+product_image_count="$(find "${project_root}/product-images" -maxdepth 1 -type f \( -name '*.jpg' -o -name '*.png' -o -name '*.webp' \) | wc -l)"
+[[ "${product_image_count}" -eq 30 ]] || {
+  echo "Expected 30 deployable root product images, found ${product_image_count}" >&2
+  exit 66
+}
+
+echo "Prepared Cloudflare Pages artifact with 30 self-hosted product images in the project root."
