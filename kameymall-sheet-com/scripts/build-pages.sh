@@ -94,6 +94,27 @@ if (
   throw new Error("Cloudflare Pages static assets must be forwarded through env.ASSETS");
 }
 
+const wwwAssetResponse = await worker.default.fetch(
+  new Request(`https://www.kameymall-sheet.com/assets/${assetVersion}/test.css?source=www-check`),
+  {
+    ASSETS: {
+      fetch() {
+        return new Response(assetMarker, {
+          headers: { "content-type": "text/css" },
+        });
+      },
+    },
+  },
+  {},
+);
+if (
+  wwwAssetResponse.status !== 301 ||
+  wwwAssetResponse.headers.get("location") !==
+    `https://kameymall-sheet.com/assets/${assetVersion}/test.css?source=www-check`
+) {
+  throw new Error("Every www request, including static assets, must redirect to the canonical hostname");
+}
+
 const homeResponse = await worker.default.fetch(
   new Request("https://example.com/es"),
   {

@@ -1,6 +1,8 @@
 import applicationWorker from "../dist/server/index.js";
 
 const versionedAssetsPrefix = `/assets/${PAGES_ASSET_VERSION}/`;
+const canonicalHostname = "kameymall-sheet.com";
+const wwwHostname = `www.${canonicalHostname}`;
 
 const staticFiles = new Set([
   "/favicon.svg",
@@ -51,6 +53,13 @@ async function versionAssetReferences(response) {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+
+    if (url.hostname === wwwHostname) {
+      url.protocol = "https:";
+      url.hostname = canonicalHostname;
+      url.port = "";
+      return Response.redirect(url.toString(), 301);
+    }
 
     if (isStaticAsset(url.pathname) && env?.ASSETS?.fetch) {
       const assetResponse = await env.ASSETS.fetch(request);
