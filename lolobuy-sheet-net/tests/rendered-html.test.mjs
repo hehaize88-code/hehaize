@@ -87,7 +87,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 51 canonical sitemap URLs with language alternates", async () => {
+test("publishes 52 canonical sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -96,14 +96,14 @@ test("publishes 51 canonical sitemap URLs with language alternates", async () =>
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 51);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 52);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
     xml,
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 51);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 52);
   assert.match(
     xml,
     /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-29<\/lastmod>/,
@@ -114,11 +114,15 @@ test("publishes 51 canonical sitemap URLs with language alternates", async () =>
   );
   assert.equal(
     new Set([...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1])).size,
-    2,
+    3,
   );
   assert.match(
     xml,
     /<loc>https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-hoodie-size-guide<\/loc>[\s\S]*?<lastmod>2026-07-30<\/lastmod>/,
+  );
+  assert.match(
+    xml,
+    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/how-to-buy-from-lolobuy<\/loc>[\s\S]*?<lastmod>2026-08-03<\/lastmod>/,
   );
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/about<\/loc>/);
   assert.match(
@@ -158,6 +162,10 @@ test("uses concise standalone SEO titles for all long-form guides", async () => 
     [
       "/articles/lolobuy-hoodie-size-guide",
       "LoloBuy Hoodie Size Guide: Measure Before Ordering",
+    ],
+    [
+      "/articles/how-to-buy-from-lolobuy",
+      "How to Buy from LoloBuy: Link-to-Warehouse Guide",
     ],
   ]);
 
@@ -213,6 +221,51 @@ test("publishes a distinct evidence-led hoodie sizing article", async () => {
   );
 
   const absoluteLinks = [...html.matchAll(/href="(https?:\/\/[^"]+)"/g)].map(
+    (match) => new URL(match[1]).hostname,
+  );
+  assert.deepEqual(
+    [...new Set(absoluteLinks)].sort(),
+    ["lolobuy-sheet.net", "www.cnbuycha.com"],
+  );
+  assert.doesNotMatch(html, /"@type":"Product"/);
+});
+
+test("publishes a distinct order-to-warehouse buying guide", async () => {
+  const pathname = "/articles/how-to-buy-from-lolobuy";
+  const response = await fetchPage(pathname);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+
+  assert.match(
+    html,
+    /<h1>How to Buy from LoloBuy: From Product Link to Warehouse Check<\/h1>/,
+  );
+  assert.match(
+    html,
+    /rel="canonical" href="https:\/\/lolobuy-sheet\.net\/articles\/how-to-buy-from-lolobuy"/,
+  );
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /"datePublished":"2026-08-03"/);
+  assert.match(html, /Evidence ledger and limits/);
+  assert.match(html, /Five separate checkpoints/i);
+  assert.match(html, /90 days of free storage/);
+  assert.match(html, /href="\/articles\/how-to-use-lolobuy-spreadsheet"/);
+  assert.match(html, /href="\/articles\/lolobuy-qc-photos-guide"/);
+  assert.match(html, /href="\/articles\/lolobuy-shipping-cost-guide"/);
+
+  const lengthMatch = html.match(
+    /<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/,
+  );
+  assert.ok(lengthMatch, "visible editorial word count is missing");
+  const words = Number(lengthMatch[1].replaceAll(",", ""));
+  assert.equal(
+    words >= 1200 && words <= 1800,
+    true,
+    `buying guide reports ${words} editorial words`,
+  );
+
+  const absoluteLinks = [...html.matchAll(/href="(https?:\/\/[^\"]+)"/g)].map(
     (match) => new URL(match[1]).hostname,
   );
   assert.deepEqual(
@@ -283,6 +336,7 @@ test("shows visible authorship that agrees with Article structured data", async 
     "/articles/lolobuy-qc-photos-guide",
     "/articles/lolobuy-shipping-cost-guide",
     "/articles/lolobuy-hoodie-size-guide",
+    "/articles/how-to-buy-from-lolobuy",
   ]) {
     const response = await fetchPage(pathname);
     assert.equal(response.status, 200, pathname);
@@ -339,6 +393,7 @@ test("uses distinct 1200 by 630 social images for audited page intents", async (
     ["/how-it-works", "how-it-works.png"],
     ["/privacy-policy", "editorial-standards.png"],
     ["/articles/lolobuy-hoodie-size-guide", "hoodie-sizing-guide.png"],
+    ["/articles/how-to-buy-from-lolobuy", "how-to-buy-lolobuy.png"],
   ]);
 
   for (const [pathname, filename] of pages) {

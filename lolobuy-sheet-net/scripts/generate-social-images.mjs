@@ -129,6 +129,38 @@ function hoodieSizingArt() {
   `;
 }
 
+function orderWorkflowArt() {
+  const stages = ["LISTING", "ORDER", "PURCHASE", "WAREHOUSE", "DECIDE"];
+  return `
+    <defs>
+      <marker id="order-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+        <path d="M0 0L9 5L0 10Z" fill="${palette.orange}"/>
+      </marker>
+    </defs>
+    ${stages
+      .map((label, index) => {
+        const x = 82 + index * 208;
+        const active = index === 3;
+        return `<g transform="translate(${x} 350)">
+          <rect width="174" height="126" rx="18" fill="${active ? palette.mint : palette.panel}"
+            stroke="${active ? palette.mint : palette.rule}" stroke-width="2"/>
+          <text x="22" y="37" fill="${active ? palette.mintInk : palette.muted}"
+            font-family="DejaVu Sans" font-size="14" font-weight="700">0${index + 1}</text>
+          <text x="22" y="80" fill="${active ? palette.mintInk : palette.ivory}"
+            font-family="DejaVu Sans" font-size="18" font-weight="700">${label}</text>
+          <path d="M22 98H132" stroke="${active ? palette.mintInk : palette.muted}"
+            stroke-width="5" stroke-linecap="round"/>
+        </g>`;
+      })
+      .join("")}
+    ${Array.from({ length: 4 }, (_, index) => {
+      const start = 266 + index * 208;
+      return `<path d="M${start} 413H${start + 28}" stroke="${palette.orange}"
+        stroke-width="4" marker-end="url(#order-arrow)"/>`;
+    }).join("")}
+  `;
+}
+
 function qcArt() {
   return `
     <rect x="82" y="326" width="408" height="188" rx="18" fill="${palette.panel}" stroke="${palette.rule}" stroke-width="2"/>
@@ -273,6 +305,14 @@ const cards = [
     titleLine2: "Then choose the tag.",
     summary: "Compare the same flat points before ordering and warehouse acceptance.",
     art: hoodieSizingArt(),
+  },
+  {
+    file: "how-to-buy-lolobuy.png",
+    eyebrow: "ORDER WORKFLOW",
+    titleLine1: "One product link.",
+    titleLine2: "Five clear checkpoints.",
+    summary: "Separate the listing, order, seller shipment and warehouse evidence.",
+    art: orderWorkflowArt(),
   },
   {
     file: "qc-guide.png",

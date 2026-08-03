@@ -893,6 +893,17 @@ function HowItWorksPage({ locale }: { locale: Locale }) {
         ))}
       </section>
       <section className="section-shell subpage-note">
+        <p className="eyebrow">{copy.articleEyebrow}</p>
+        <h2>{copy.articleTitle}</h2>
+        <p>{copy.articleBody}</p>
+        <Link
+          className="button button-primary"
+          href="/articles/how-to-buy-from-lolobuy"
+        >
+          {copy.articleCta} <span aria-hidden="true">→</span>
+        </Link>
+      </section>
+      <section className="section-shell subpage-note">
         <p className="eyebrow">Start here</p>
         <h2>Use the exact keyword you already have in mind</h2>
         <CatalogSearch locale={locale} />

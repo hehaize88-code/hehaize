@@ -429,6 +429,127 @@ export const articles: ArticleRecord[] = [
     ],
   },
   {
+    slug: "how-to-buy-from-lolobuy",
+    title:
+      "How to Buy from LoloBuy: From Product Link to Warehouse Check",
+    seoTitle: "How to Buy from LoloBuy: Link-to-Warehouse Guide",
+    shortTitle: "How to Buy from LoloBuy",
+    description:
+      "Follow a fact-checked LoloBuy buying workflow from a Chinese product link through variant records, seller fulfillment, warehouse intake and QC review.",
+    eyebrow: "Order-to-warehouse workflow",
+    primaryKeyword: "how to buy from LoloBuy",
+    secondaryKeywords: [
+      "how to order on LoloBuy",
+      "how to paste a product link into LoloBuy",
+      "LoloBuy order to warehouse",
+      "what happens after LoloBuy buys an item",
+    ],
+    intent:
+      "Complete a first LoloBuy order from a live product link to an evidence-based warehouse decision",
+    checkedDate: "3 August 2026",
+    publishedDate: contentDates.articles["how-to-buy-from-lolobuy"].published,
+    modifiedDate: contentDates.articles["how-to-buy-from-lolobuy"].modified,
+    image: "/social/how-to-buy-lolobuy.png",
+    imageAlt:
+      "Five-step process diagram from a Chinese product listing through order record and seller fulfillment to warehouse intake and QC decision",
+    imageCaption:
+      "An original editorial process map. Treat the listing, submitted order, seller shipment and warehouse evidence as separate records rather than one uninterrupted checkout.",
+    standfirst:
+      "To buy through LoloBuy, start with the exact live product link, preserve the selected variant, compare the imported order with that record, then wait for the seller shipment to reach the warehouse. Review the warehouse evidence before accepting the item for parcel planning. The important skill is managing each handoff without assuming that one status proves the next stage is complete.",
+    takeaways: [
+      "Save the live listing, selected option and date before pasting the link.",
+      "Compare every imported order field with your one-line order brief before paying.",
+      "Separate LoloBuy's purchasing step from the marketplace seller's fulfillment step.",
+      "Accept an arrival only after its identity, variant, quantity and visible condition match the record.",
+    ],
+    sourceNote:
+      "Evidence ledger, checked 3 August 2026: LoloBuy’s public homepage was used only for the platform’s description of starting with a pasted Chinese product link, warehouse quality inspection and photographs, 90 days of free storage, and consolidation into an international parcel. The handoff and record-keeping method is independent editorial analysis. No fixed fee, purchase time, seller-dispatch time, photo count, return right, refund outcome, route or delivery time is claimed.",
+    sections: [
+      {
+        heading: "The direct answer: use five separate checkpoints",
+        paragraphs: [
+          "A LoloBuy order is not one continuous transaction with a single seller. The practical workflow has five checkpoints: confirm the Chinese marketplace listing, create a precise order record, let the purchasing process reach the seller, wait for domestic fulfillment to the warehouse, and decide whether the warehouse arrival matches what you requested. International parcel planning begins only after that last decision.",
+          "LoloBuy’s public homepage says a shopper can begin by pasting a Chinese product link. It also describes quality inspection and photographs after goods reach the warehouse, 90 days of free storage, and consolidation of stored items into an international parcel. Those statements explain the broad platform flow. They do not guarantee that every link can be purchased, that a seller will dispatch on a particular date, or that every item will pass inspection.",
+          "Think of each checkpoint as a handoff with its own evidence. A link proves which page you found. An order record proves which option you submitted. A purchasing status reflects the platform stage shown at that moment. A domestic tracking event reflects the seller shipment. Warehouse photographs show visible evidence of the received item. None of those records should silently replace another.",
+        ],
+      },
+      {
+        heading: "Checkpoint 1: make the live listing unambiguous",
+        paragraphs: [
+          "Open the source page rather than ordering from a thumbnail or remembered title. Confirm that the page still describes the intended product and that the exact color, size, version, bundle and quantity remain selectable. One marketplace listing may group a main product, accessories, deposits or different qualities under the same hero image.",
+          "Write a one-line brief that another person could follow without guessing: for example, one charcoal pullover hoodie, option code 04, seller size XL, no extra accessory. Copy coded option names exactly. Save the product address, seller name when visible, selected rows, current chart or seller note, quantity and date. A screenshot is useful when a listing later changes, but keep the text record as well so the important choice is searchable.",
+          "If you first found the product in a directory, use the LoloBuy spreadsheet guide to preserve source context. This article begins where discovery ends: the product has been found, and the question is whether the order can be submitted without ambiguity.",
+        ],
+        bullets: [
+          "Source: the exact current marketplace address",
+          "Variant: color, size, version, bundle and option code",
+          "Quantity: number of units and any paired pieces",
+          "Conditions: seller notes that could change the decision",
+          "Date: when the listing and option were checked",
+        ],
+      },
+      {
+        heading: "Checkpoint 2: compare the imported order before payment",
+        paragraphs: [
+          "Paste the source address into the LoloBuy order flow, then compare the resulting product information with your brief. Check the item image only as a quick identity signal; the option text, quantity, seller information and current amounts deserve the closer review. If an option is missing, translated oddly or represented by a code you do not recognize, stop and clarify it before purchase rather than adding a vague note after payment.",
+          "Keep product cost, domestic Chinese delivery and later international shipping mentally separate. The order screen can show the information available for the purchase stage, but the final overseas parcel does not yet exist. Its weight, dimensions, product mix and eligible routes may not be known until accepted warehouse items are packed. A first-stage total should not be presented as the total delivered cost.",
+          "Use the live checkout and account terms as the source of record for payment methods, currency conversion, service charges and any current promotion. These details can change, and this guide does not quote a fixed fee or discount. Save the final order summary you actually approve, because that version—not an older spreadsheet card—becomes the comparison point for the next stages.",
+        ],
+      },
+      {
+        heading: "Checkpoint 3: separate purchasing from seller fulfillment",
+        paragraphs: [
+          "After submission, distinguish two actors. LoloBuy handles the purchasing workflow presented in your account; the marketplace merchant remains responsible for preparing and sending the selected goods domestically. A platform status showing that an order was placed does not prove that the seller has dispatched the item, and a domestic tracking number does not prove that the correct variant is inside the parcel.",
+          "Read status labels as dated observations, not promises. Record when a meaningful change appears, such as purchase processing, seller dispatch or warehouse receipt, but do not invent a universal deadline for any stage. Seller stock, pre-order conditions, domestic carrier scans, weekends and listing-specific issues can all affect the sequence. If a status remains unclear, ask about the exact order number and stage shown instead of assuming a package is lost.",
+          "This separation also makes mixed orders easier to understand. Two items submitted together may come from different merchants and reach the warehouse on different dates. That is normal for a consolidation workflow and should not be confused with one seller sending a complete multi-item parcel.",
+        ],
+      },
+      {
+        heading: "Checkpoint 4: reconcile the warehouse arrival",
+        paragraphs: [
+          "When the item is recorded at the warehouse, compare it with the saved order in a fixed order: identity, selected variant, quantity, then visible condition. LoloBuy publicly describes quality inspection and photographs at this stage. The public page does not establish a universal image count, angle set, extra-photo price or measurement service, so use the evidence and options shown for the current order.",
+          "Identity comes first because close cosmetic inspection is pointless if the wrong model arrived. Next check labels, color, option code, included pieces and quantity. Then review visible marks, damage, obvious asymmetry or packaging issues that matter to the product. The broader LoloBuy QC photos guide provides product-specific checks and explains what images cannot prove, including hidden construction, long-term durability, fit and authenticity.",
+          "If one missing fact would change your decision, frame one precise request around it. “Show the flat chest width with the tape visible from underarm to underarm” is more useful than “send better photos.” Preserve the relevant order row, source evidence and warehouse image together. That package supports a clear question without claiming that a particular return, exchange or refund result is guaranteed.",
+        ],
+      },
+      {
+        heading: "Checkpoint 5: choose pass, question or action",
+        paragraphs: [
+          "Pass the arrival when its visible identity, option, quantity and decision-changing details match the saved record closely enough for your purpose. Question it when one specific image, label or measurement can resolve the remaining uncertainty. Take action through the current order interface when a documented mismatch changes the decision. Move promptly, because seller and platform options may depend on live terms and timing that this guide cannot promise.",
+          "The public LoloBuy flow states that warehouse goods receive 90 days of free storage. Treat that as a planning window, not a reason to postpone review. Record each arrival date and complete the QC decision while the source page and order evidence are still easy to reconstruct. Verify the live storage counter and current terms for the item rather than assuming the public statement answers every edge case.",
+          "Only accepted items should move into parcel planning. LoloBuy also publicly describes selecting warehouse items for consolidation into an international parcel, but price, route eligibility, restrictions and delivery conditions remain live variables. Use the shipping cost guide after the product decision is complete and realistic packed data are available.",
+        ],
+      },
+      {
+        heading: "A compact first-order record",
+        paragraphs: [
+          "A small table or note is enough if it follows the handoffs. Keep the source URL and saved option beside the submitted order number. Add the date of purchase processing, the seller-dispatch evidence when shown, the warehouse-receipt date, your QC verdict and any question raised. For multiple sellers, use one row per item rather than one row per payment.",
+          "Do not store account passwords, payment details, full addresses or sensitive tracking information in a shared sheet. The goal is decision continuity, not a public archive. A private record with only the operational fields lets you see which item is waiting for a seller, which is awaiting QC and which is ready for a parcel without exposing personal data.",
+        ],
+        bullets: [
+          "Listing checked and exact variant saved",
+          "Imported order matched before approval",
+          "Platform stage and seller dispatch kept separate",
+          "Warehouse identity, variant, quantity and condition reviewed",
+          "QC verdict recorded before parcel selection",
+        ],
+      },
+      {
+        heading: "Common first-order mistakes",
+        paragraphs: [
+          "The first mistake is paying from the cover image while the selected row describes something else. The second is writing only a size or color in free text when the listing uses several coded variants. The third is reading a purchase status as proof of seller dispatch. The fourth is approving warehouse photos without comparing them with the dated source and order record. Each error removes a checkpoint that could have caught a mismatch earlier.",
+        ],
+      },
+      {
+        heading: "Evidence ledger and limits",
+        paragraphs: [
+          "Official source checked 3 August 2026: the public LoloBuy homepage. It was used only for LoloBuy’s own description of beginning with a pasted product link, warehouse quality inspection and photographs, 90 days of free storage, and consolidation for international shipping. These are platform statements, not independent proof of every seller, order, destination or outcome.",
+          "Search results reviewed 3 August 2026 showed many third-party pages combining the entire agent journey into a short list. They were used only to identify the unanswered beginner intent, not as authority for LoloBuy fees, timing, policies or performance. The five-checkpoint method, evidence record and decision rules above are independent editorial analysis.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "lolobuy-hoodie-size-guide",
     title:
       "LoloBuy Hoodie Size Guide: A Measurement-First Method for Better Fit Decisions",

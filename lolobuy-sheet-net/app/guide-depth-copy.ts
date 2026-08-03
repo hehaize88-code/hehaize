@@ -14,6 +14,10 @@ export type SectionCopy = {
 };
 
 type HowCopy = {
+  articleEyebrow: string;
+  articleTitle: string;
+  articleBody: string;
+  articleCta: string;
   factEyebrow: string;
   factTitle: string;
   facts: string[];
@@ -132,6 +136,11 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
       ],
     },
     how: {
+      articleEyebrow: "Complete beginner workflow",
+      articleTitle: "Follow one order from product link to warehouse decision",
+      articleBody:
+        "The long-form guide separates the live listing, submitted order, purchasing stage, seller fulfillment and warehouse evidence. Use it when you need the transaction sequence rather than a broad discovery, QC or shipping guide.",
+      articleCta: "Read how to buy from LoloBuy",
       factEyebrow: "Official workflow facts · checked 28 July 2026",
       factTitle: "What the public LoloBuy page confirms",
       facts: [
@@ -295,6 +304,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Read this after an item reaches the warehouse or before ordering if you want to define your QC evidence in advance. It provides a repeatable sequence for identity, variant, measurements and visible condition, followed by product-specific limits. The guide does not treat a flattering photo as proof of fit, authenticity, hidden construction or durability.",
       "lolobuy-shipping-cost-guide":
         "Use this once accepted items are ready for parcel planning. The guide separates product cost, domestic delivery and international freight, then explains actual versus volumetric weight, consolidation, packing and route restrictions. Worked examples are clearly labeled so an illustrative divisor or parcel does not look like a guaranteed LoloBuy rate.",
+      "how-to-buy-from-lolobuy":
+        "Start here when you have a live Chinese product link and want to place a first order. The guide separates the listing, submitted order, purchasing stage, seller fulfillment and warehouse arrival into five checkpoints, then shows how to record evidence and make a pass, question or action decision before parcel planning.",
       "lolobuy-hoodie-size-guide":
         "Use this before choosing a hoodie option or while reviewing its warehouse arrival. It replaces letter-size conversion with flat garment measurements, shows how to compare seller charts measured in the same positions, and defines the focused QC evidence that can support a fit decision without pretending photos guarantee fit.",
     },
@@ -383,6 +394,11 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
       ],
     },
     how: {
+      articleEyebrow: "Flujo completo para principiantes",
+      articleTitle: "Sigue un pedido desde el enlace hasta la decisión en almacén",
+      articleBody:
+        "La guía extensa separa anuncio activo, pedido enviado, compra, despacho del vendedor y pruebas del almacén. Úsala cuando necesites la secuencia de la transacción y no una guía general de búsqueda, QC o envío.",
+      articleCta: "Leer cómo comprar con LoloBuy",
       factEyebrow: "Datos oficiales del proceso · verificados el 28 de julio de 2026",
       factTitle: "Lo que confirma la página pública de LoloBuy",
       facts: [
@@ -546,6 +562,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Lee esta guía cuando el artículo llegue al almacén o antes de pedir para definir las pruebas. Sigue una secuencia de identidad, variante, medidas y estado visible, con límites específicos. Una foto atractiva no prueba ajuste, autenticidad, construcción oculta ni duración.",
       "lolobuy-shipping-cost-guide":
         "Úsala cuando los artículos aceptados estén listos. Separa producto, entrega nacional y flete; explica peso real y volumétrico, consolidación, embalaje y restricciones. Los ejemplos están marcados para no parecer una tarifa garantizada.",
+      "how-to-buy-from-lolobuy":
+        "Empieza aquí con un enlace chino activo y un primer pedido. La guía separa anuncio, pedido enviado, compra, despacho del vendedor y llegada al almacén en cinco controles, y muestra cómo registrar pruebas antes de preparar el paquete.",
       "lolobuy-hoodie-size-guide":
         "Úsala antes de elegir una sudadera o al revisar su llegada al almacén. Sustituye la conversión por letras por medidas planas, compara tablas tomadas en los mismos puntos y define qué prueba QC puede apoyar la decisión sin prometer el ajuste.",
     },
@@ -634,6 +652,11 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
       ],
     },
     how: {
+      articleEyebrow: "Kompletter Ablauf für Einsteiger",
+      articleTitle: "Verfolge eine Bestellung vom Produktlink bis zur Lagerentscheidung",
+      articleBody:
+        "Der ausführliche Ratgeber trennt aktuelles Angebot, eingereichte Bestellung, Einkauf, Verkäufer-Versand und Lagerbelege. Nutze ihn für den Transaktionsablauf statt eines allgemeinen Such-, QC- oder Versandratgebers.",
+      articleCta: "So kaufst du mit LoloBuy",
       factEyebrow: "Offizielle Ablaufdaten · geprüft am 28. Juli 2026",
       factTitle: "Was die öffentliche LoloBuy-Seite bestätigt",
       facts: [
@@ -797,6 +820,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Lies diesen Ratgeber beim Lagereingang oder definiere die QC-Belege bereits vorher. Er folgt Identität, Variante, Maßen und sichtbarem Zustand samt Grenzen. Ein gutes Foto beweist weder Passform, Echtheit, verborgene Verarbeitung noch Haltbarkeit.",
       "lolobuy-shipping-cost-guide":
         "Nutze ihn für akzeptierte, versandbereite Artikel. Er trennt Produkt, Inlandslieferung und Fracht und erklärt tatsächliches sowie Volumengewicht, Zusammenlegung, Verpackung und Limits. Beispiele sind klar als solche markiert.",
+      "how-to-buy-from-lolobuy":
+        "Beginne hier mit einem aktuellen chinesischen Produktlink und der ersten Bestellung. Der Ratgeber trennt Angebot, eingereichte Bestellung, Einkauf, Verkäufer-Versand und Lagereingang in fünf Prüfpunkte und zeigt die Belegführung vor der Paketplanung.",
       "lolobuy-hoodie-size-guide":
         "Nutze ihn vor der Hoodie-Größenwahl oder bei der Lagerprüfung. Er ersetzt Buchstaben-Umrechnung durch flache Kleidungsmaße, vergleicht Tabellen mit gleichen Messpunkten und grenzt ein, welche QC-Nachweise die Entscheidung stützen können.",
     },
@@ -885,6 +910,11 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
       ],
     },
     how: {
+      articleEyebrow: "Parcours complet pour débuter",
+      articleTitle: "Suivez une commande du lien produit à la décision en entrepôt",
+      articleBody:
+        "Le guide long sépare annonce active, commande soumise, achat, expédition du vendeur et preuves d'entrepôt. Utilisez-le pour la séquence transactionnelle plutôt qu'un guide général de recherche, QC ou expédition.",
+      articleCta: "Lire comment acheter avec LoloBuy",
       factEyebrow: "Faits officiels · vérifiés le 28 juillet 2026",
       factTitle: "Ce que confirme la page publique de LoloBuy",
       facts: [
@@ -1048,6 +1078,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Lisez ce guide à l'arrivée en entrepôt ou définissez les preuves avant l'achat. Il suit identité, variante, mesures et état visible avec leurs limites. Une belle photo ne prouve ni coupe, authenticité, construction cachée ni durée.",
       "lolobuy-shipping-cost-guide":
         "Utilisez-le lorsque les articles acceptés sont prêts. Il sépare produit, livraison nationale et fret, puis explique poids réel et volumétrique, regroupement, emballage et limites. Les exemples sont clairement signalés.",
+      "how-to-buy-from-lolobuy":
+        "Commencez ici avec un lien produit chinois actif et une première commande. Le guide sépare annonce, commande soumise, achat, expédition du vendeur et arrivée en entrepôt en cinq contrôles, puis organise les preuves avant le colis.",
       "lolobuy-hoodie-size-guide":
         "Utilisez-le avant de choisir une taille de hoodie ou lors de l'arrivée en entrepôt. Il remplace les équivalences de lettres par des mesures à plat, compare les mêmes points et précise les preuves QC utiles sans promettre la coupe.",
     },
@@ -1136,6 +1168,11 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
       ],
     },
     how: {
+      articleEyebrow: "Percorso completo per iniziare",
+      articleTitle: "Segui un ordine dal link prodotto alla decisione in magazzino",
+      articleBody:
+        "La guida lunga separa inserzione attiva, ordine inviato, acquisto, spedizione del venditore e prove del magazzino. Usala per la sequenza della transazione, non come guida generale a ricerca, QC o spedizione.",
+      articleCta: "Leggi come acquistare con LoloBuy",
       factEyebrow: "Fatti ufficiali · verificati il 28 luglio 2026",
       factTitle: "Cosa conferma la pagina pubblica LoloBuy",
       facts: [
@@ -1299,6 +1336,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Leggi la guida all'arrivo in magazzino o definisci prima le prove. Segue identità, variante, misure e condizione visibile con i loro limiti. Una bella foto non prova vestibilità, autenticità, costruzione nascosta o durata.",
       "lolobuy-shipping-cost-guide":
         "Usala quando gli articoli accettati sono pronti. Separa prodotto, consegna nazionale e trasporto e spiega peso reale e volumetrico, consolidamento, imballaggio e limiti. Gli esempi sono chiaramente indicati.",
+      "how-to-buy-from-lolobuy":
+        "Inizia qui con un link prodotto cinese attivo e un primo ordine. La guida separa inserzione, ordine inviato, acquisto, spedizione del venditore e arrivo in magazzino in cinque controlli e organizza le prove prima del pacco.",
       "lolobuy-hoodie-size-guide":
         "Usala prima di scegliere la taglia di una felpa o durante il controllo in magazzino. Sostituisce le equivalenze a lettere con misure piatte, confronta gli stessi punti e definisce le prove QC utili senza promettere la vestibilità.",
     },
