@@ -45,6 +45,22 @@ const localizedCategoryNames: Record<Locale, string[]> = {
 const guideSlugs = ["how-to-buy", "qc-guide", "shipping-guide", "returns"];
 const policySlugs = ["about", "editorial-policy", "privacy", "terms"];
 
+const updatedPrefixes: Record<Locale, string> = {
+  en: "Updated",
+  zh: "更新于",
+  de: "Aktualisiert",
+  pl: "Zaktualizowano",
+  es: "Actualizado",
+  it: "Aggiornato",
+  fr: "Mis à jour",
+  pt: "Atualizado",
+  ro: "Actualizat",
+  sv: "Uppdaterad",
+};
+
+const articleUpdatedLabel = (locale: Locale, modifiedAt: string) =>
+  `${updatedPrefixes[locale]} ${modifiedAt}`;
+
 function completeGuide(locale: Locale, slug: string) {
   const english = localizedContent.en.guides[slug];
   const translated = localizedContent[locale].guides[slug];
@@ -304,7 +320,7 @@ function SeoArticleFeature({ locale }: { locale: Locale }) {
         >
           <div className="seo-feature-meta">
             <span>{seo.latestLabel}</span>
-            <span>{seo.updatedLabel}</span>
+            <span>{articleUpdatedLabel(locale, featured.modifiedAt)}</span>
           </div>
           <h3>{featured.article.title}</h3>
           <p>{featured.article.description}</p>
@@ -594,8 +610,8 @@ function LocalizedSeoArticleIndex({ locale }: { locale: Locale }) {
               <h2>{entry.article.title}</h2>
               <p>{entry.article.description}</p>
               <div className="seo-feature-meta">
-                <span>{seo.updatedLabel}</span>
-                <span>{seo.readTime}</span>
+                <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
+                <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
               </div>
               <strong>{seo.readArticle}</strong>
             </div>
@@ -624,8 +640,8 @@ function LocalizedSeoArticlePage({
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    datePublished: "2026-07-30",
-    dateModified: "2026-07-30",
+    datePublished: entry.publishedAt,
+    dateModified: entry.modifiedAt,
     inLanguage: locale,
     wordCount:
       locale === "en"
@@ -668,8 +684,8 @@ function LocalizedSeoArticlePage({
           <h1>{article.title}</h1>
           <p className="article-intro">{article.description}</p>
           <div className="article-meta">
-            <span>{seo.updatedLabel}</span>
-            <span>{seo.readTime}</span>
+            <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
+            <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
             <span>{translations[locale].common.disclaimer}</span>
           </div>
         </header>
@@ -710,6 +726,29 @@ function LocalizedSeoArticlePage({
               <strong>{seo.sourceTitle}</strong>
               <p>{entry.sourceBody}</p>
             </aside>
+
+            {entry.relatedLinks && (
+              <aside className="source-note related-reading">
+                <strong>{translations[locale].common.guides}</strong>
+                <p>
+                  {entry.relatedLinks.map((relatedSlug, index) => {
+                    const label =
+                      relatedSlug === "articles"
+                        ? seo.navLabel
+                        : translations[locale].pages[relatedSlug]?.title ??
+                          relatedSlug;
+                    return (
+                      <span key={relatedSlug}>
+                        {index > 0 ? " · " : ""}
+                        <a href={localizePath(locale, `/${relatedSlug}/`)}>
+                          {label}
+                        </a>
+                      </span>
+                    );
+                  })}
+                </p>
+              </aside>
+            )}
 
             <div className="article-cta">
               <div>

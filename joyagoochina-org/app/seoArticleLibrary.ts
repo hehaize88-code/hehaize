@@ -10,10 +10,16 @@ import {
   completeLocalizedSections,
   requireLocalizedField,
 } from "./contentParity";
+import {
+  taobaoArticle,
+  taobaoLocalizedMeta,
+  taobaoSourceBody,
+} from "./taobaoArticle";
 
 export type SeoArticle = SeoArticleCopy["article"];
 
 export const extraSeoArticleSlugs = [
+  "how-to-buy-from-taobao-with-joyagoo",
   "joyagoo-qc-photo-checklist",
   "joyagoo-volumetric-weight-shipping-cost",
   "joyagoo-return-window-warehouse-storage",
@@ -32,9 +38,14 @@ export type SeoArticleEntry = {
   article: SeoArticle;
   keywords: string[];
   sourceBody: string;
+  publishedAt: string;
+  modifiedAt: string;
+  readTime: string;
+  relatedLinks?: string[];
 };
 
 const englishExtras: Record<ExtraSeoArticleSlug, SeoArticle> = {
+  "how-to-buy-from-taobao-with-joyagoo": taobaoArticle,
   "joyagoo-qc-photo-checklist": {
     eyebrow: "JOYAGOO QC PHOTO GUIDE",
     title:
@@ -278,9 +289,14 @@ type LocalizedArticleMeta = {
   description: string;
 };
 
+type LegacyExtraSeoArticleSlug = Exclude<
+  ExtraSeoArticleSlug,
+  "how-to-buy-from-taobao-with-joyagoo"
+>;
+
 const localizedMeta: Record<
   Exclude<Locale, "en">,
-  Record<ExtraSeoArticleSlug, LocalizedArticleMeta>
+  Record<LegacyExtraSeoArticleSlug, LocalizedArticleMeta>
 > = {
   zh: {
     "joyagoo-qc-photo-checklist": {
@@ -342,6 +358,7 @@ const localizedMeta: Record<
 };
 
 const articleGuideMap: Record<ExtraSeoArticleSlug, string> = {
+  "how-to-buy-from-taobao-with-joyagoo": "how-to-buy",
   "joyagoo-qc-photo-checklist": "qc-guide",
   "joyagoo-volumetric-weight-shipping-cost": "shipping-guide",
   "joyagoo-return-window-warehouse-storage": "returns",
@@ -351,6 +368,7 @@ const companionSections: Record<
   ExtraSeoArticleSlug,
   Array<{ guide: string; section: number }>
 > = {
+  "how-to-buy-from-taobao-with-joyagoo": [],
   "joyagoo-qc-photo-checklist": [
     { guide: "returns", section: 0 },
     { guide: "returns", section: 4 },
@@ -366,6 +384,12 @@ const companionSections: Record<
 };
 
 const keywords: Record<SeoArticleSlug, string[]> = {
+  "how-to-buy-from-taobao-with-joyagoo": [
+    "how to buy from Taobao with Joyagoo",
+    "Joyagoo Taobao agent",
+    "buy from Taobao with Joyagoo",
+    "Joyagoo Taobao guide",
+  ],
   "joyagoo-fees-explained": [
     "joyagoo fees",
     "joyagoo service fee",
@@ -393,6 +417,7 @@ const keywords: Record<SeoArticleSlug, string[]> = {
 };
 
 const sourceBodies: Record<SeoArticleSlug, string> = {
+  "how-to-buy-from-taobao-with-joyagoo": taobaoSourceBody,
   "joyagoo-fees-explained": seoArticleCopy.en.sourceBody,
   "joyagoo-qc-photo-checklist":
     "Reviewed on 30 July 2026 against Joyagoo Shopping Guidance, the Return Policy, Value Added Services and published order-status descriptions. Photos can support a decision but do not guarantee authenticity, fit or seller approval.",
@@ -400,6 +425,32 @@ const sourceBodies: Record<SeoArticleSlug, string> = {
     "Reviewed on 30 July 2026 against Joyagoo pages for actual and volumetric weight, estimated and actual billing weight, rehearsal packing, shopping guidance, value-added services and published delivery ranges. Live route rules and final carrier measurements remain decisive.",
   "joyagoo-return-window-warehouse-storage":
     "Reviewed on 30 July 2026 against Joyagoo Return Policy, Warehouse Storage Period, Value Added Services, Shopping Guidance and order-status descriptions. Seller eligibility, current account controls and live deadlines remain decisive.",
+};
+
+export const seoArticleDates: Record<
+  SeoArticleSlug,
+  { publishedAt: string; modifiedAt: string }
+> = {
+  "how-to-buy-from-taobao-with-joyagoo": {
+    publishedAt: "2026-08-03",
+    modifiedAt: "2026-08-03",
+  },
+  "joyagoo-fees-explained": {
+    publishedAt: "2026-07-30",
+    modifiedAt: "2026-07-30",
+  },
+  "joyagoo-qc-photo-checklist": {
+    publishedAt: "2026-07-30",
+    modifiedAt: "2026-07-30",
+  },
+  "joyagoo-volumetric-weight-shipping-cost": {
+    publishedAt: "2026-07-30",
+    modifiedAt: "2026-07-30",
+  },
+  "joyagoo-return-window-warehouse-storage": {
+    publishedAt: "2026-07-30",
+    modifiedAt: "2026-07-30",
+  },
 };
 
 function completeArticle(
@@ -458,8 +509,12 @@ function buildLocalizedExtra(
     ({ guide: guideSlug, section }) =>
       localizedContent[locale].guides[guideSlug].sections[section],
   );
+  const meta =
+    slug === "how-to-buy-from-taobao-with-joyagoo"
+      ? taobaoLocalizedMeta[locale]
+      : localizedMeta[locale][slug];
   const translated = {
-    ...localizedMeta[locale][slug],
+    ...meta,
     facts: guide.facts,
     sections: [...guide.sections, ...extras],
   };
@@ -482,9 +537,11 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
       locale === "en"
         ? sourceBodies["joyagoo-fees-explained"]
         : seoArticleCopy[locale].sourceBody,
+    ...seoArticleDates["joyagoo-fees-explained"],
+    readTime: "9 minute read",
   };
 
-  const extraEntries = extraSeoArticleSlugs.map((slug) => ({
+  const extraEntries: SeoArticleEntry[] = extraSeoArticleSlugs.map((slug) => ({
     slug,
     article:
       locale === "en"
@@ -495,9 +552,20 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
       locale === "en"
         ? sourceBodies[slug]
         : `${localizedContent[locale].article.sourceBody} ${localizedContent[locale].guides[articleGuideMap[slug]].sourceLabel}.`,
+    ...seoArticleDates[slug],
+    readTime:
+      slug === "how-to-buy-from-taobao-with-joyagoo"
+        ? "10 minute read"
+        : "9 minute read",
+    relatedLinks:
+      slug === "how-to-buy-from-taobao-with-joyagoo"
+        ? ["how-to-buy", "qc-guide", "shipping-guide", "articles"]
+        : undefined,
   }));
 
-  return [feeEntry, ...extraEntries];
+  return [...extraEntries, feeEntry].sort((left, right) =>
+    right.modifiedAt.localeCompare(left.modifiedAt),
+  );
 }
 
 export function getSeoArticleEntry(

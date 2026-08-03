@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
 import { products } from "./data";
 import { languages } from "./i18n";
-import { seoArticleSlugs } from "./seoArticleLibrary";
+import {
+  seoArticleDates,
+  seoArticleSlugs,
+} from "./seoArticleLibrary";
 import { localizedRoutePath } from "./seoAlternates";
 
 const site = "https://joyagoochina.org";
@@ -17,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: SitemapPage[] = [
     {
       path: "/",
-      lastModified: "2026-07-30",
+      lastModified: "2026-08-03",
       changeFrequency: "weekly",
       priority: 1,
     },
@@ -95,13 +98,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       path: "/articles/",
-      lastModified: "2026-07-29",
+      lastModified: "2026-08-03",
       changeFrequency: "weekly",
       priority: 0.9,
     },
     ...seoArticleSlugs.map((slug) => ({
       path: `/${slug}/`,
-      lastModified: "2026-07-29",
+      lastModified: seoArticleDates[slug].modifiedAt,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     })),
