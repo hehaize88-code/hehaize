@@ -15,7 +15,8 @@ export type StaticRouteKey =
   | "guides/what-to-inspect-before-ordering"
   | "articles/kameymall-spreadsheet-guide-2026"
   | "articles/how-to-buy-from-kameymall-2026"
-  | "articles/kameymall-shipping-cost-guide-2026";
+  | "articles/kameymall-shipping-cost-guide-2026"
+  | "articles/how-to-read-kameymall-qc-photos";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
 
@@ -33,6 +34,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/kameymall-spreadsheet-guide-2026",
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",
+  "articles/how-to-read-kameymall-qc-photos",
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -259,7 +261,7 @@ const english: SiteCopy = {
   articles: {
     kicker: "Reverse-shopping SEO library",
     title: "Research-led KameyMall articles",
-    intro: "Original guides for overseas shoppers researching China product finds, listing checks, warehouse inspection and cross-border cost planning.",
+    intro: "Four original guides for overseas shoppers researching China product finds, listing checks, warehouse inspection and cross-border cost planning.",
     read: "Read article",
     cards: [
       { label: "2026 guide", title: "KameyMall Spreadsheet Guide for Overseas Shoppers", body: "A complete workflow for turning a spreadsheet find into a carefully checked cross-border order without treating the first price as the final cost.", action: "Read the full article" },
@@ -273,13 +275,14 @@ const english: SiteCopy = {
     "how-to-buy": { kicker: "Shopping workflow", title: "How to Buy Through KameyMall: Six Agent Stages", intro: "A source-based path from product link and first payment to seller delivery, QC photos, storage and international parcel submission." },
     guides: { kicker: "Guide library", title: "KameyMall Guides for Listings, QC and Shipping", intro: "Three independent guides turn published platform information into practical checks for listings, costs, warehouse photos, storage and delivery." },
     faq: { kicker: "Frequently asked questions", title: "KameyMall FAQ: Orders, QC, Storage and Shipping", intro: "Fact-checked answers separate this independent sheet from the platform’s published purchase, payment, warehouse, return and parcel information." },
-    articles: { kicker: "SEO article library", title: "KameyMall Research for Overseas Shoppers", intro: "Three original 2026 articles cover spreadsheet finds, the complete agent-shopping workflow and international shipping-cost planning." },
+    articles: { kicker: "SEO article library", title: "KameyMall Research for Overseas Shoppers", intro: "Four original 2026 articles cover spreadsheet finds, the agent-shopping workflow, international shipping costs and practical QC-photo checks." },
     "guides/how-to-use-kameymall-spreadsheet": { kicker: "Start here", title: "How to use a KameyMall spreadsheet", intro: "A step-by-step method for searching, comparing and validating a find before moving forward." },
     "guides/cny-price-vs-final-cost": { kicker: "Price check", title: "CNY product price vs. final delivered cost", intro: "Separate the number shown on a product card from the complete cost of a cross-border order." },
     "guides/what-to-inspect-before-ordering": { kicker: "Warehouse check", title: "QC Photos, Storage and Returns", intro: "A fact-checked checklist for visible inspection, the published storage period, return timing, packaging and route restrictions." },
     "articles/kameymall-spreadsheet-guide-2026": { kicker: "2026 reverse-shopping guide", title: "KameyMall Spreadsheet Guide for Overseas Shoppers", intro: "A research-led framework for discovering China products, checking listings and planning the full order rather than only the item price." },
     "articles/how-to-buy-from-kameymall-2026": { kicker: "Fact-checked buying guide", title: "How to Buy Through KameyMall in 2026", intro: "The published agent-shopping workflow, from pasting a product link to QC, storage and international parcel submission." },
     "articles/kameymall-shipping-cost-guide-2026": { kicker: "Cross-border cost guide", title: "KameyMall Shipping Cost Guide 2026", intro: "How to separate the CNY item price from domestic delivery, warehouse-stage choices and international freight." },
+    "articles/how-to-read-kameymall-qc-photos": { kicker: "Warehouse inspection guide", title: "How to Read KameyMall QC Photos Before Shipping", intro: "A source-checked method for comparing warehouse photos with the ordered variant, spotting visible problems and acting before the return opportunity closes." },
   },
   guidePages: {
     "guides/how-to-use-kameymall-spreadsheet": {
@@ -770,7 +773,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { heading: "Lagerzeit richtig verstehen", paragraphs: ["Veröffentlicht sind 180 Tage insgesamt, bis zu 90 kostenlos und 10 RMB pro Verlängerungsmonat.", "Lagerzeit und Rückgabefrist sind verschieden; der Account-Countdown ist aktuell maßgeblich."] },
       { heading: "Paket vorbereiten", paragraphs: ["Nutze gemessenes Gewicht, Maße und Linienbeschränkungen.", "Wäge Verpackungsentfernung gegen Schutz ab; die FAQ warnt vor fehlender Versicherungsdeckung bei einfacher Verpackung."] },
     ] },
-    firstArticle: { sourceNote: "Faktenbasis: öffentliche KameyMall-Seiten Shopping Agent Service, How to Purchase und FAQ, geprüft am 3. August 2026. Plattformangaben sind keine unabhängige Garantie.", primaryKeyword: "kameymall spreadsheet", seoTitle: "KameyMall Spreadsheet Guide 2026: Finds, QC & Versand", seoDescription: "KameyMall Spreadsheet richtig nutzen: Produkte finden, Live-Angebote prüfen, QC-Fotos lesen, Lagerzeit planen und internationale Fracht einschätzen." },
+    firstArticle: { sourceNote: "Faktenbasis: öffentliche KameyMall-Seiten zum Einkaufsagenten-Service, zur Kaufanleitung und zu häufigen Fragen, geprüft am 3. August 2026. Plattformangaben sind keine unabhängige Garantie.", primaryKeyword: "kameymall tabelle", seoTitle: "KameyMall-Tabelle 2026: Produkte, QC und Versand", seoDescription: "Die KameyMall-Tabelle richtig nutzen: Produkte finden, aktuelle Angebote prüfen, QC-Fotos lesen, Lagerzeit planen und internationale Fracht einschätzen." },
   },
   fr: {
     how: { kicker: "Comment acheter", title: "Fonctionnement de l’achat par agent", intro: "Ce parcours en six étapes suit les informations publiques de KameyMall. Délais et disponibilité doivent être confirmés au moment de la commande.", action: "Voir tous les produits", steps: [
@@ -810,7 +813,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { heading: "Comprendre le stockage", paragraphs: ["Sont annoncés 180 jours au total, jusqu’à 90 gratuits et 10 RMB par mois supplémentaire.", "Stockage et retour ont des délais différents ; le compteur du compte prévaut."] },
       { heading: "Préparer le colis", paragraphs: ["Utilisez poids, dimensions et restrictions de ligne mesurés.", "Arbitrez retrait et protection ; la FAQ avertit que l’emballage simple n’est pas couvert contre les dommages."] },
     ] },
-    firstArticle: { sourceNote: "Vérification : pages publiques Shopping Agent Service, How to Purchase et FAQ de KameyMall, consultées le 3 août 2026. Les déclarations de la plateforme ne sont pas des garanties indépendantes.", primaryKeyword: "kameymall spreadsheet", seoTitle: "Guide KameyMall Spreadsheet 2026 : produits, QC et envoi", seoDescription: "Utiliser un KameyMall spreadsheet : trouver les produits, vérifier les fiches, lire les photos QC, gérer le stockage et estimer le transport." },
+    firstArticle: { sourceNote: "Vérification : pages publiques de KameyMall consacrées au service d’agent d’achat, au tutoriel d’achat et aux questions fréquentes, consultées le 3 août 2026. Les déclarations de la plateforme ne sont pas des garanties indépendantes.", primaryKeyword: "tableur kameymall", seoTitle: "Guide du tableur KameyMall 2026 : produits, QC et envoi", seoDescription: "Utiliser le tableur KameyMall : trouver des produits, vérifier les fiches, lire les photos QC, gérer le stockage et estimer le transport." },
   },
   es: {
     how: { kicker: "Cómo comprar", title: "Cómo funciona la compra con agente", intro: "Este proceso de seis pasos sigue la información publicada por KameyMall. Confirma plazos y disponibilidad al pedir.", action: "Ver todos los productos", steps: [
@@ -850,7 +853,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { heading: "Entender el almacenamiento", paragraphs: ["Se publican 180 días totales, hasta 90 gratis y 10 RMB por mes extra.", "Almacenamiento y devolución tienen plazos distintos; usa el contador de cuenta."] },
       { heading: "Preparar el paquete", paragraphs: ["Usa peso, medidas y restricciones reales.", "Equilibra retirada y protección; la FAQ advierte que el embalaje simple no cubre daños por seguro."] },
     ] },
-    firstArticle: { sourceNote: "Base de verificación: páginas públicas Shopping Agent Service, How to Purchase y FAQ de KameyMall, revisadas el 3 de agosto de 2026. Las afirmaciones de la plataforma no son garantías independientes.", primaryKeyword: "kameymall spreadsheet", seoTitle: "Guía KameyMall Spreadsheet 2026: productos, QC y envío", seoDescription: "Usa un KameyMall spreadsheet: encuentra productos, verifica listados, revisa fotos QC, gestiona almacenamiento y calcula transporte." },
+    firstArticle: { sourceNote: "Base de verificación: páginas públicas de KameyMall sobre el servicio de agente de compras, el tutorial de compra y las preguntas frecuentes, revisadas el 3 de agosto de 2026. Las afirmaciones de la plataforma no son garantías independientes.", primaryKeyword: "hoja kameymall", seoTitle: "Guía de la hoja KameyMall 2026: productos, QC y envío", seoDescription: "Usa la hoja KameyMall: encuentra productos, verifica listados, revisa fotos QC, gestiona el almacenamiento y calcula el transporte." },
   },
   it: {
     how: { kicker: "Come acquistare", title: "Come funziona l’acquisto con agente", intro: "Questo processo in sei fasi segue le informazioni pubblicate da KameyMall. Verifica tempi e disponibilità al momento dell’ordine.", action: "Vedi tutti i prodotti", steps: [
@@ -890,7 +893,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { heading: "Capire il deposito", paragraphs: ["Sono pubblicati 180 giorni totali, fino a 90 gratis e 10 RMB al mese extra.", "Deposito e reso hanno scadenze diverse; vale il conto dell’account."] },
       { heading: "Preparare il pacco", paragraphs: ["Usa peso, misure e restrizioni reali.", "Bilancia rimozione e protezione; la FAQ avverte che l’imballo semplice non copre i danni."] },
     ] },
-    firstArticle: { sourceNote: "Base della verifica: pagine pubbliche Shopping Agent Service, How to Purchase e FAQ di KameyMall, consultate il 3 agosto 2026. Le dichiarazioni della piattaforma non sono garanzie indipendenti.", primaryKeyword: "kameymall spreadsheet", seoTitle: "Guida KameyMall Spreadsheet 2026: prodotti, QC e spedizione", seoDescription: "Usa un KameyMall spreadsheet: trova prodotti, verifica le schede, controlla foto QC, gestisci deposito e pianifica il trasporto." },
+    firstArticle: { sourceNote: "Base della verifica: pagine pubbliche di KameyMall dedicate al servizio di agente d’acquisto, al tutorial d’acquisto e alle domande frequenti, consultate il 3 agosto 2026. Le dichiarazioni della piattaforma non sono garanzie indipendenti.", primaryKeyword: "foglio kameymall", seoTitle: "Guida al foglio KameyMall 2026: prodotti, QC e spedizione", seoDescription: "Usa il foglio KameyMall: trova prodotti, verifica le schede, controlla le foto QC, gestisci il deposito e pianifica il trasporto." },
   },
   pl: {
     how: { kicker: "Jak kupować", title: "Jak działa zakup przez agenta", intro: "Ten sześciostopniowy proces opiera się na opublikowanych informacjach KameyMall. Terminy i dostępność sprawdzaj przy zamówieniu.", action: "Zobacz wszystkie produkty", steps: [
@@ -930,7 +933,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { heading: "Rozumiej magazynowanie", paragraphs: ["Publikowane jest 180 dni łącznie, do 90 gratis i 10 RMB za dodatkowy miesiąc.", "Magazyn i zwrot mają różne terminy; użyj licznika konta."] },
       { heading: "Przygotuj paczkę", paragraphs: ["Użyj realnej wagi, wymiarów i ograniczeń.", "Wyważ usunięcie opakowania i ochronę; FAQ ostrzega, że proste pakowanie nie obejmuje szkód ubezpieczeniem."] },
     ] },
-    firstArticle: { sourceNote: "Podstawa weryfikacji: publiczne strony Shopping Agent Service, How to Purchase i FAQ KameyMall, sprawdzone 3 sierpnia 2026. Informacje platformy nie są niezależną gwarancją.", primaryKeyword: "kameymall spreadsheet", seoTitle: "KameyMall Spreadsheet 2026: produkty, QC i wysyłka", seoDescription: "Jak używać KameyMall spreadsheet: znajdź produkty, sprawdź oferty, oceń QC, zarządzaj magazynem i planuj transport." },
+    firstArticle: { sourceNote: "Podstawa weryfikacji: publiczne strony KameyMall o usłudze agenta zakupowego, instrukcji zakupu i najczęstszych pytaniach, sprawdzone 3 sierpnia 2026. Informacje platformy nie są niezależną gwarancją.", primaryKeyword: "arkusz kameymall", seoTitle: "Arkusz KameyMall 2026: produkty, QC i wysyłka", seoDescription: "Jak używać arkusza KameyMall: znajdź produkty, sprawdź oferty, oceń QC, zarządzaj magazynem i planuj transport." },
   },
 };
 
@@ -953,6 +956,40 @@ for (const [locale, update] of Object.entries(researchUiUpdates) as Array<[Local
   copy.pageIntros["articles/kameymall-spreadsheet-guide-2026"] = { kicker: update.articles.cards[0].label, title: update.articles.cards[0].title, intro: update.articles.cards[0].body };
   copy.pageIntros["articles/how-to-buy-from-kameymall-2026"] = { kicker: update.articles.cards[1].label, title: update.articles.cards[1].title, intro: update.articles.cards[1].body };
   copy.pageIntros["articles/kameymall-shipping-cost-guide-2026"] = { kicker: update.articles.cards[2].label, title: update.articles.cards[2].title, intro: update.articles.cards[2].body };
+}
+
+const qcArticleUi: Record<Locale, { card: CardCopy; intro: { kicker: string; title: string; intro: string } }> = {
+  en: {
+    card: { label: "QC checklist", title: "How to Read KameyMall QC Photos Before Shipping", body: "Compare the ordered variant with warehouse photos, separate visible evidence from assumptions and act while a return may still be possible.", action: "Read the QC photo guide" },
+    intro: { kicker: "Warehouse inspection guide", title: "How to Read KameyMall QC Photos Before Shipping", intro: "A source-checked method for comparing warehouse photos with the ordered variant, spotting visible problems and acting before the return opportunity closes." },
+  },
+  de: {
+    card: { label: "QC-Prüfung", title: "KameyMall-QC-Fotos vor dem Versand richtig lesen", body: "Bestellte Variante und Lagerfotos vergleichen, sichtbare Belege von Annahmen trennen und rechtzeitig auf Probleme reagieren.", action: "QC-Fotoratgeber lesen" },
+    intro: { kicker: "Ratgeber zur Lagerprüfung", title: "KameyMall-QC-Fotos vor dem Versand richtig lesen", intro: "Eine quellengeprüfte Methode, um Lagerfotos mit der Bestellung zu vergleichen, sichtbare Probleme zu erkennen und rechtzeitig zu handeln." },
+  },
+  fr: {
+    card: { label: "Contrôle QC", title: "Comment lire les photos QC KameyMall avant l’envoi", body: "Comparez la variante commandée aux photos d’entrepôt, distinguez les preuves visibles des suppositions et agissez à temps.", action: "Lire le guide des photos QC" },
+    intro: { kicker: "Guide de contrôle en entrepôt", title: "Comment lire les photos QC KameyMall avant l’envoi", intro: "Une méthode vérifiée pour comparer les photos d’entrepôt à la commande, repérer les problèmes visibles et agir avant la fin du retour possible." },
+  },
+  es: {
+    card: { label: "Revisión QC", title: "Cómo leer las fotos QC de KameyMall antes del envío", body: "Compara la variante pedida con las fotos de almacén, separa pruebas visibles de suposiciones y actúa a tiempo.", action: "Leer guía de fotos QC" },
+    intro: { kicker: "Guía de inspección en almacén", title: "Cómo leer las fotos QC de KameyMall antes del envío", intro: "Un método verificado para comparar las fotos de almacén con el pedido, detectar problemas visibles y actuar antes de que termine la opción de devolución." },
+  },
+  it: {
+    card: { label: "Controllo QC", title: "Come leggere le foto QC KameyMall prima della spedizione", body: "Confronta la variante ordinata con le foto di magazzino, separa le prove visibili dalle ipotesi e intervieni in tempo.", action: "Leggi la guida alle foto QC" },
+    intro: { kicker: "Guida al controllo in magazzino", title: "Come leggere le foto QC KameyMall prima della spedizione", intro: "Un metodo verificato per confrontare le foto di magazzino con l’ordine, individuare problemi visibili e agire prima della chiusura del possibile reso." },
+  },
+  pl: {
+    card: { label: "Kontrola QC", title: "Jak czytać zdjęcia QC KameyMall przed wysyłką", body: "Porównaj zamówiony wariant ze zdjęciami magazynowymi, oddziel widoczne dowody od założeń i zareaguj na czas.", action: "Przeczytaj poradnik QC" },
+    intro: { kicker: "Poradnik kontroli magazynowej", title: "Jak czytać zdjęcia QC KameyMall przed wysyłką", intro: "Sprawdzona metoda porównywania zdjęć magazynowych z zamówieniem, wykrywania widocznych problemów i działania przed zamknięciem możliwości zwrotu." },
+  },
+};
+
+const localizedCopies: Record<Locale, SiteCopy> = { en: english, de: german, fr: french, es: spanish, it: italian, pl: polish };
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  copy.articles.cards.push(qcArticleUi[language.code].card);
+  copy.pageIntros["articles/how-to-read-kameymall-qc-photos"] = qcArticleUi[language.code].intro;
 }
 
 export const copies: Record<Locale, SiteCopy> = {
@@ -1004,4 +1041,5 @@ export const articleRoutes: StaticRouteKey[] = [
   articleRoute,
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",
+  "articles/how-to-read-kameymall-qc-photos",
 ];

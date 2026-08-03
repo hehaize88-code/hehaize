@@ -446,7 +446,7 @@ function CategoryCatalogPage({ locale, category }: { locale: Locale; category: C
         <div className="catalog-hero-layout">
           <div>
             <p className="section-kicker">{catalog.categoryKicker}</p>
-            <h1>{categoryLabel} KameyMall Finds</h1>
+            <h1>{catalog.categoryHeading.replace("{category}", categoryLabel)}</h1>
             <p>{copy.categories.items[category].description} {catalog.categoryIntro}</p>
           </div>
           <div className="catalog-hero-actions">
@@ -638,6 +638,12 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
   const copy = copies[locale];
   const product = productFromRoute(route);
   const category = categoryFromRoute(route);
+  const isArticle = isStaticRouteKey(route) && articleRoutes.includes(route);
+  const articlePage = isArticle
+    ? route === articleRoute
+      ? copy.articlePage
+      : additionalArticles[locale][route as (typeof additionalArticleRoutes)[number]]
+    : null;
   const canonicalPath = routeHref(locale, route);
   const canonical = `https://kameymall-sheet.com${canonicalPath === "/" ? "" : canonicalPath}`;
   const categoryLabel = category ? copy.categories.items[category].label : product ? copy.categories.items[product.categoryKey].label : null;
@@ -655,7 +661,13 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
           [catalogCopies[locale].allCategories, routeHref(locale, "categories")],
           [copy.categories.items[category].label, routeHref(locale, route)],
         ]
-      : [];
+      : isArticle && articlePage
+        ? [
+            [catalogCopies[locale].home, routeHref(locale, "home")],
+            [copy.nav.articles, routeHref(locale, "articles")],
+            [articlePage.title, routeHref(locale, route)],
+          ]
+        : [];
   const breadcrumbSchema = breadcrumbItems.length ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -685,7 +697,7 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            name: `${categoryLabel} KameyMall Finds`,
+            name: catalogCopies[locale].categoryHeading.replace("{category}", categoryLabel ?? ""),
             url: canonical,
             inLanguage: locale,
             mainEntity: {
@@ -713,9 +725,27 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
               name: item.name,
             })),
           }
+        : isArticle && articlePage
+          ? [
+              {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                headline: articlePage.title,
+                description: articlePage.intro,
+                datePublished: "2026-08-03",
+                dateModified: "2026-08-03",
+                mainEntityOfPage: canonical,
+                url: canonical,
+                inLanguage: locale,
+                keywords: articlePage.primaryKeyword,
+                author: { "@type": "Organization", name: "KameyMall Sheet" },
+                publisher: { "@type": "Organization", name: "KameyMall Sheet" },
+              },
+              breadcrumbSchema,
+            ]
         : {
             "@context": "https://schema.org",
-            "@type": articleRoutes.includes(route as StaticRouteKey) ? "Article" : "WebSite",
+            "@type": route === "home" ? "WebSite" : "WebPage",
             name: route === "home" ? "KameyMall Sheet" : pageIntro?.title,
             description: route === "home" ? copy.home.lede : pageIntro?.intro,
             url: canonical,

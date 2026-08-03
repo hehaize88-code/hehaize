@@ -1,6 +1,10 @@
 import type { Locale } from "./site-content";
 
 export type CatalogCopy = {
+  homeSeoTitle: string;
+  productSeoTitle: string;
+  categorySeoTitle: string;
+  categoryHeading: string;
   home: string;
   finds: string;
   categoryKicker: string;
@@ -32,6 +36,10 @@ export type CatalogCopy = {
 
 export const catalogCopies: Record<Locale, CatalogCopy> = {
   en: {
+    homeSeoTitle: "KameyMall Sheet & Spreadsheet Finds | Shopping Guide",
+    productSeoTitle: "{name} KameyMall Find | Price & Buying Notes",
+    categorySeoTitle: "{category} KameyMall Finds | Curated Product List",
+    categoryHeading: "{category} KameyMall Finds",
     home: "Home",
     finds: "Finds",
     categoryKicker: "Curated category",
@@ -66,6 +74,10 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Browse three checked {category} finds with source prices, product references and independent detail pages.",
   },
   de: {
+    homeSeoTitle: "KameyMall-Tabelle und Produktfunde | Einkaufsratgeber",
+    productSeoTitle: "{name} bei KameyMall | Preis und Kaufhinweise",
+    categorySeoTitle: "KameyMall-Fundstücke: {category} | Kuratierte Produktliste",
+    categoryHeading: "KameyMall-Fundstücke: {category}",
     home: "Startseite",
     finds: "Fundstücke",
     categoryKicker: "Kuratierte Kategorie",
@@ -100,6 +112,10 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Drei geprüfte {category}-Fundstücke mit Quellpreisen, Produktreferenzen und eigenen Detailseiten.",
   },
   fr: {
+    homeSeoTitle: "Tableur KameyMall et produits sélectionnés | Guide d’achat",
+    productSeoTitle: "{name} sur KameyMall | Prix et conseils d’achat",
+    categorySeoTitle: "Trouvailles KameyMall {category} | Liste vérifiée",
+    categoryHeading: "Trouvailles KameyMall : {category}",
     home: "Accueil",
     finds: "Trouvailles",
     categoryKicker: "Catégorie sélectionnée",
@@ -134,6 +150,10 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Trois trouvailles {category} vérifiées avec prix source, références et pages de détail indépendantes.",
   },
   es: {
+    homeSeoTitle: "Hoja KameyMall y productos seleccionados | Guía de compra",
+    productSeoTitle: "{name} en KameyMall | Precio y consejos de compra",
+    categorySeoTitle: "Productos KameyMall de {category} | Lista verificada",
+    categoryHeading: "Productos KameyMall de {category}",
     home: "Inicio",
     finds: "Hallazgos",
     categoryKicker: "Categoría seleccionada",
@@ -168,6 +188,10 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Tres hallazgos de {category} comprobados con precios fuente, referencias y páginas de detalle independientes.",
   },
   it: {
+    homeSeoTitle: "Foglio KameyMall e prodotti selezionati | Guida acquisti",
+    productSeoTitle: "{name} su KameyMall | Prezzo e consigli d’acquisto",
+    categorySeoTitle: "Prodotti KameyMall: {category} | Elenco verificato",
+    categoryHeading: "Prodotti KameyMall: {category}",
     home: "Home",
     finds: "Prodotti",
     categoryKicker: "Categoria selezionata",
@@ -202,6 +226,10 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Tre prodotti {category} verificati con prezzi fonte, riferimenti e pagine di dettaglio indipendenti.",
   },
   pl: {
+    homeSeoTitle: "Arkusz KameyMall i wybrane produkty | Poradnik zakupowy",
+    productSeoTitle: "{name} w KameyMall | Cena i wskazówki zakupowe",
+    categorySeoTitle: "Produkty KameyMall: {category} | Sprawdzona lista",
+    categoryHeading: "Produkty KameyMall: {category}",
     home: "Strona główna",
     finds: "Produkty",
     categoryKicker: "Wybrana kategoria",

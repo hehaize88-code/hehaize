@@ -38,11 +38,11 @@ export function buildMetadata(locale: Locale, route: RouteKey): Metadata {
       ? copy.categories.items[product.categoryKey].label
       : null;
   const title = product
-    ? `${product.name} KameyMall Find | Price & Buying Notes`
+    ? catalog.productSeoTitle.replace("{name}", product.name)
     : category
-      ? `${categoryLabel} KameyMall Finds | Curated Product List`
+      ? catalog.categorySeoTitle.replace("{category}", categoryLabel ?? "")
       : isHome
-        ? "KameyMall Sheet & Spreadsheet Finds | Shopping Guide"
+        ? catalog.homeSeoTitle
         : articlePage?.seoTitle ?? `${page?.title} | KameyMall Sheet`;
   const description = product
     ? catalog.productMeta.replace("{name}", product.name)

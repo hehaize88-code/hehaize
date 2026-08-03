@@ -9,10 +9,10 @@ The site includes:
 - thirty independent product detail pages and ten internal category pages;
 - eight featured finds on the compact homepage and the full catalog on Finds;
 - independent How to Buy, Guides, SEO Articles, and FAQ pages;
-- three fact-checked long-form SEO articles;
+- four fact-checked long-form SEO articles;
 - English, German, French, Spanish, Italian, and Polish routes;
 - Product, Breadcrumb, and ItemList structured data;
-- production canonical URLs, hreflang signals, robots directives, and a 318-URL XML sitemap;
+- production canonical URLs, hreflang signals, robots directives, and a 324-URL XML sitemap;
 - a compact mobile layout with no horizontal scrolling.
 
 ## Link policy

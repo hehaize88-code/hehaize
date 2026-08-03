@@ -62,6 +62,7 @@ test("renders every requested independent page", async () => {
     "/articles/kameymall-spreadsheet-guide-2026",
     "/articles/how-to-buy-from-kameymall-2026",
     "/articles/kameymall-shipping-cost-guide-2026",
+    "/articles/how-to-read-kameymall-qc-photos",
     "/categories/shoes",
     "/products/new-balance-1906r",
     "/fr/categories/shoes",
@@ -93,8 +94,11 @@ test("keeps every localized content module as complete as English", async () => 
   const worker = await loadWorker();
   const localePrefixes = ["", "/de", "/fr", "/es", "/it", "/pl"];
   let englishArticleParagraphs = 0;
+  let englishHomeImages = 0;
+  let englishHomeSections = 0;
 
   for (const prefix of localePrefixes) {
+    const homeHtml = await (await render(worker, prefix || "/")).text();
     const faqHtml = await (await render(worker, `${prefix}/faq`)).text();
     const howHtml = await (await render(worker, `${prefix}/how-to-buy`)).text();
     const guidesHtml = await (await render(worker, `${prefix}/guides`)).text();
@@ -107,8 +111,17 @@ test("keeps every localized content module as complete as English", async () => 
     assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
     assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
     assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
-    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 3, `${prefix || "/"} article cards`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 4, `${prefix || "/"} article cards`);
     assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
+
+    const homeImages = (homeHtml.match(/<img\b/g) ?? []).length;
+    const homeSections = (homeHtml.match(/<section\b/g) ?? []).length;
+    if (!prefix) {
+      englishHomeImages = homeImages;
+      englishHomeSections = homeSections;
+    }
+    assert.equal(homeImages, englishHomeImages, `${prefix || "/"} homepage images`);
+    assert.equal(homeSections, englishHomeSections, `${prefix || "/"} homepage sections`);
 
     const articleParagraphs = (articleHtml.match(/<p\b/g) ?? []).length;
     if (!prefix) englishArticleParagraphs = articleParagraphs;
@@ -259,12 +272,19 @@ const auditedRoutes = [
   "/articles/kameymall-spreadsheet-guide-2026",
   "/articles/how-to-buy-from-kameymall-2026",
   "/articles/kameymall-shipping-cost-guide-2026",
+  "/articles/how-to-read-kameymall-qc-photos",
   ...categoryRoutes,
   ...productRoutes,
 ];
 
-test("uses the correct root HTML language on all 318 canonical pages", async () => {
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+test("uses the correct root HTML language on all 324 canonical pages", async () => {
   const worker = await loadWorker();
+  const englishImageCounts = new Map();
+  const englishSectionCounts = new Map();
   const localeLanguages = [
     ["", "en"],
     ["/de", "de"],
@@ -285,11 +305,68 @@ test("uses the correct root HTML language on all 318 canonical pages", async () 
         expectedLanguage,
         `${pathname} Content-Language`,
       );
+      const html = await response.text();
       assert.match(
-        await response.text(),
+        html,
         new RegExp(`<html\\b[^>]*\\blang=["']${expectedLanguage}["'][^>]*>`, "i"),
         `${pathname} root html lang`,
       );
+
+      const canonicalUrl = `https://kameymall-sheet.com${pathname === "/" ? "" : pathname}`;
+      assert.match(
+        html,
+        new RegExp(`<link(?=[^>]*\\brel=["']canonical["'])(?=[^>]*\\bhref=["']${escapeRegExp(canonicalUrl)}["'])[^>]*>`, "i"),
+        `${pathname} self canonical`,
+      );
+      assert.match(html, /<title>[^<]+<\/title>/i, `${pathname} localized title`);
+      assert.match(
+        html,
+        /<meta(?=[^>]*\bname=["']description["'])(?=[^>]*\bcontent=["'][^"']+["'])[^>]*>/i,
+        `${pathname} localized description`,
+      );
+      assert.match(html, /<h1\b[^>]*>[^<]+<\/h1>/i, `${pathname} H1`);
+
+      const imageCount = (html.match(/<img\b/g) ?? []).length;
+      const sectionCount = (html.match(/<section\b/g) ?? []).length;
+      if (expectedLanguage === "en") {
+        englishImageCounts.set(route, imageCount);
+        englishSectionCounts.set(route, sectionCount);
+      } else {
+        assert.equal(imageCount, englishImageCounts.get(route), `${pathname} image parity`);
+        assert.equal(sectionCount, englishSectionCounts.get(route), `${pathname} section parity`);
+      }
+
+      for (const [alternatePrefix, alternateLanguage] of localeLanguages) {
+        const alternatePath = `${alternatePrefix}${route}` || "/";
+        const alternateUrl = `https://kameymall-sheet.com${alternatePath === "/" ? "" : alternatePath}`;
+        assert.match(
+          html,
+          new RegExp(`<link(?=[^>]*\\brel=["']alternate["'])(?=[^>]*\\bhreflang=["']${alternateLanguage}["'])(?=[^>]*\\bhref=["']${escapeRegExp(alternateUrl)}["'])[^>]*>`, "i"),
+          `${pathname} ${alternateLanguage} hreflang`,
+        );
+        assert.match(
+          html,
+          new RegExp(`<a(?=[^>]*\\bhref=["']${escapeRegExp(alternatePath)}["'])(?=[^>]*\\bhreflang=["']${alternateLanguage}["'])[^>]*>`, "i"),
+          `${pathname} ${alternateLanguage} same-route language switch`,
+        );
+      }
+      const englishPath = route || "/";
+      const englishUrl = `https://kameymall-sheet.com${englishPath === "/" ? "" : englishPath}`;
+      assert.match(
+        html,
+        new RegExp(`<link(?=[^>]*\\brel=["']alternate["'])(?=[^>]*\\bhreflang=["']x-default["'])(?=[^>]*\\bhref=["']${escapeRegExp(englishUrl)}["'])[^>]*>`, "i"),
+        `${pathname} x-default hreflang`,
+      );
+
+      if (expectedLanguage !== "en") {
+        const title = html.match(/<title>([^<]+)<\/title>/i)?.[1] ?? "";
+        const h1 = html.match(/<h1\b[^>]*>([^<]+)<\/h1>/i)?.[1] ?? "";
+        assert.doesNotMatch(
+          `${title} ${h1}`,
+          /Price &amp; Buying Notes|Curated Product List|KameyMall Finds|Shopping Guide/i,
+          `${pathname} leaked English title or H1 template`,
+        );
+      }
     }
   }
 });
@@ -301,6 +378,56 @@ function visibleText(html) {
     .replace(/<[^>]+>/g, " ")
     .replace(/&(?:#\d+|#x[\da-f]+|[a-z][\da-z]+);/gi, " ");
 }
+
+function longVisibleSegments(html) {
+  return [...html.matchAll(/<(?:p|h1|h2|h3|li|summary)\b[^>]*>([\s\S]*?)<\/(?:p|h1|h2|h3|li|summary)>/gi)]
+    .map((match) => visibleText(match[1]).replace(/\s+/g, " ").trim())
+    .filter((segment) => segment.length >= 90);
+}
+
+test("does not leave English fallback paragraphs in translated pages", async () => {
+  const worker = await loadWorker();
+
+  for (const route of auditedRoutes) {
+    const englishPath = route || "/";
+    const englishHtml = await (await render(worker, englishPath)).text();
+    const englishSegments = new Set(longVisibleSegments(englishHtml));
+
+    for (const prefix of locales.slice(1)) {
+      const pathname = `${prefix}${route}`;
+      const translatedHtml = await (await render(worker, pathname)).text();
+      const leakedSegments = longVisibleSegments(translatedHtml).filter((segment) => englishSegments.has(segment));
+      assert.deepEqual(leakedSegments, [], `${pathname} English fallback paragraphs`);
+    }
+  }
+});
+
+test("publishes a complete source-checked QC guide in all six languages", async () => {
+  const worker = await loadWorker();
+  const route = "/articles/how-to-read-kameymall-qc-photos";
+  let englishParagraphCount = 0;
+
+  for (const prefix of locales) {
+    const pathname = `${prefix}${route}`;
+    const response = await render(worker, pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+    const prose = html.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+    const paragraphCount = (prose.match(/<p\b/g) ?? []).length;
+    const bulletCount = (prose.match(/<li\b/g) ?? []).length;
+
+    if (!prefix) englishParagraphCount = paragraphCount;
+    assert.equal(paragraphCount, englishParagraphCount, `${pathname} paragraph parity`);
+    assert.equal(bulletCount, 6, `${pathname} checklist parity`);
+    assert.match(html, /"@type":"Article"/, `${pathname} Article structured data`);
+    assert.match(html, /"@type":"BreadcrumbList"/, `${pathname} breadcrumb structured data`);
+  }
+
+  const englishHtml = await (await render(worker, route)).text();
+  const englishProse = englishHtml.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+  const englishWords = visibleText(englishProse).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+  assert.ok(englishWords.length >= 1200 && englishWords.length <= 1800, `English QC guide has ${englishWords.length} visible words`);
+});
 
 function externalActions(html) {
   return [...html.matchAll(/<(?:a|form)\b[^>]*\b(?:href|action)=["']([^"']+)["'][^>]*>/gi)]
