@@ -539,7 +539,7 @@ longFormTranslations.de = {
     { heading: "Zwischen Kauf und internationalem Versand", paragraphs: ["Im Agentenablauf werden Produktbestellung und internationales Paket getrennt. Der Verkäufer schickt den Artikel zunächst an ein Lager, das Eingang, Prüfung und spätere Paketvorbereitung übernimmt.", "Dieser Zwischenpunkt ermöglicht Kontrolle: Vergleiche Fotos, Farbe, Größe und Menge. Mit gemessenem Gewicht und Maßen wird aus einer groben Versandschätzung eine belastbarere Planung."] },
     { heading: "Budget in Ebenen aufbauen", paragraphs: ["Notiere Produktpreis, Inlandsversand, Service, optionale Prüf- oder Verpackungskosten und internationale Fracht getrennt. So bleiben die Ursachen des Gesamtpreises nachvollziehbar.", "Fracht kann nach tatsächlichem oder volumetrischem Gewicht berechnet werden. Konsolidierung spart wiederholte Paketkosten, verändert aber Gewicht, Wert und mögliche Zollfolgen."] },
     { heading: "Prüfung und Lieferung als Qualitätsfaktoren", paragraphs: ["Qualität bedeutet auch richtige Variante, sichtbarer Zustand, Schutz während des Transports und eine zulässige Versandroute. Zerbrechliche Ware braucht eventuell mehr Schutz, sperrige Ware weniger Einzelverpackung.", "Prüfe vor dem Versand Adresse, Inhalt, Einschränkungen, Versicherung und Zeitfenster. Bewahre Angebots- und Prüfbelege für Rückfragen auf."] },
-    { heading: "Wiederholbare Checkliste", paragraphs: ["Ein verlässlicher Ablauf lautet: Bedarf definieren, suchen oder Kategorie öffnen, vergleichbare Angebote auswählen, Live-Seite prüfen, Kosten staffeln, Lagerkontrolle ansehen und mit echten Paketdaten versenden.", "Das beseitigt nicht jedes Risiko, verhindert aber viele vermeidbare Fehler wie defekte Links, falsche Varianten, unrealistische Preisannahmen und ungeprüfte Versandentscheidungen."], bullets: ["Konkretes Suchwort oder passende Kategorie nutzen.", "Zieladresse und Referenznummer bestätigen.", "Preis, Variante, Größe und Hinweise prüfen.", "Produktpreis und gelieferte Gesamtkosten trennen.", "Lagerfotos, Gewicht und Maße kontrollieren.", "Route, Einschränkungen, Schutz und Laufzeit vergleichen."] },
+    { heading: "Wiederholbare Checkliste", paragraphs: ["Ein verlässlicher Ablauf lautet: Bedarf definieren, suchen oder Kategorie öffnen, vergleichbare Angebote auswählen, Live-Seite prüfen, Kosten staffeln, Lagerkontrolle ansehen und mit echten Paketdaten versenden.", "Das beseitigt nicht jedes Risiko, verhindert aber viele vermeidbare Fehler wie defekte Links, falsche Varianten, unrealistische Preisannahmen und ungeprüfte Versandentscheidungen.", "Behalte die Nachweise bei der jeweiligen Entscheidung. Speichere Produkt-URL und gewählte Variante, notiere den bei der Bestellung sichtbaren Preis und bewahre Lagerprüfung sowie Paketmaße auf. Ändert der Verkäufer das Angebot oder schwankt eine Routenschätzung, lässt sich so erkennen, was sich geändert hat. Auch Bewertungsartikel bleiben dadurch ehrlich: Eine persönliche Lieferzeit oder ein Frachtpreis kann als datierte Einzelerfahrung berichtet werden, darf aber nie als dauerhaftes Ergebnis für alle Käufer dargestellt werden."], bullets: ["Konkretes Suchwort oder passende Kategorie nutzen.", "Zieladresse und Referenznummer bestätigen.", "Preis, Variante, Größe und Hinweise prüfen.", "Produktpreis und gelieferte Gesamtkosten trennen.", "Lagerfotos, Gewicht und Maße kontrollieren.", "Route, Einschränkungen, Schutz und Laufzeit vergleichen."] },
   ],
 };
 
@@ -573,7 +573,7 @@ longFormTranslations.fr = {
     { heading: "Entre achat et expédition internationale", paragraphs: ["Le flux d’un agent sépare généralement commande produit et colis international. Le vendeur livre d’abord à un entrepôt, qui enregistre, contrôle et prépare ensuite le colis.", "Cette étape permet de comparer photos, couleur, taille et quantité. Le poids et les dimensions réels remplacent ensuite une estimation de transport trop générale."] },
     { heading: "Construire le budget par étapes", paragraphs: ["Notez séparément prix produit, livraison nationale, service, options de contrôle ou d’emballage et fret. Vous voyez ainsi clairement l’origine du total.", "Le transport peut dépendre du poids réel ou volumétrique. La consolidation réduit certains frais répétés mais modifie poids, valeur et éventuelles conséquences douanières."] },
     { heading: "Contrôle et livraison font partie de la qualité", paragraphs: ["La qualité comprend la bonne variante, l’état visible, la protection et une route qui accepte le produit. Un article fragile peut demander plus de protection; un article volumineux moins d’emballage commercial.", "Avant l’envoi, vérifiez adresse, contenu, restrictions, assurance et délai. Conservez annonces et contrôles pour toute question au support."] },
-    { heading: "Une liste de contrôle répétable", paragraphs: ["Le processus fiable est simple: définir le besoin, chercher ou ouvrir une catégorie, présélectionner, vérifier l’annonce, détailler les coûts, contrôler l’entrepôt puis choisir la livraison avec les vraies données du colis.", "Cette méthode n’élimine pas tous les risques, mais évite de nombreux problèmes prévisibles: liens cassés, mauvaise variante, prix irréaliste ou expédition choisie sans poids ni restrictions."], bullets: ["Utiliser un mot précis ou la bonne catégorie.", "Confirmer lien et référence.", "Vérifier prix, variante, taille et notes.", "Séparer prix produit et coût livré.", "Contrôler photos, poids et dimensions.", "Comparer restrictions, protection et délai."] },
+    { heading: "Une liste de contrôle répétable", paragraphs: ["Le processus fiable est simple: définir le besoin, chercher ou ouvrir une catégorie, présélectionner, vérifier l’annonce, détailler les coûts, contrôler l’entrepôt puis choisir la livraison avec les vraies données du colis.", "Cette méthode n’élimine pas tous les risques, mais évite de nombreux problèmes prévisibles: liens cassés, mauvaise variante, prix irréaliste ou expédition choisie sans poids ni restrictions.", "Conservez les preuves liées à chaque décision. Enregistrez l’URL du produit et l’option choisie, notez le prix visible lors de la commande et gardez les contrôles d’entrepôt ainsi que les mesures du colis. Si le vendeur modifie l’annonce ou si une estimation de ligne change, ces éléments permettent d’identifier précisément l’évolution. Ils rendent aussi un article d’avis honnête : un délai ou un prix de fret personnel peut être présenté comme une expérience datée, jamais comme le résultat permanent de tous les acheteurs."], bullets: ["Utiliser un mot précis ou la bonne catégorie.", "Confirmer lien et référence.", "Vérifier prix, variante, taille et notes.", "Séparer prix produit et coût livré.", "Contrôler photos, poids et dimensions.", "Comparer restrictions, protection et délai."] },
   ],
 };
 
@@ -607,7 +607,7 @@ longFormTranslations.es = {
     { heading: "Entre compra y envío internacional", paragraphs: ["El flujo de un agente suele separar el pedido del producto y el paquete internacional. El vendedor entrega primero al almacén, donde se registra, inspecciona y prepara.", "Esta etapa permite revisar fotos, color, talla y cantidad. El peso y las medidas reales mejoran la estimación de envío."] },
     { heading: "Construir el presupuesto por capas", paragraphs: ["Anota por separado producto, envío nacional, servicio, opciones de inspección o embalaje y transporte internacional. Así entiendes cada parte del total.", "El transporte puede usar peso real o volumétrico. Consolidar reduce algunos cargos repetidos, pero cambia peso, valor y posibles efectos aduaneros."] },
     { heading: "Inspección y entrega también son calidad", paragraphs: ["La calidad incluye variante correcta, estado visible, protección y una ruta compatible. Un objeto frágil puede necesitar más protección; uno voluminoso, menos embalaje comercial.", "Antes del envío verifica dirección, contenido, restricciones, seguro y plazo. Conserva registros para cualquier consulta."] },
-    { heading: "Una lista repetible", paragraphs: ["El proceso fiable es: definir la necesidad, buscar o abrir categoría, preseleccionar, verificar, separar costes, revisar almacén y elegir envío con los datos reales.", "No elimina todo riesgo, pero evita enlaces rotos, variantes erróneas, expectativas irreales y decisiones de envío sin peso o restricciones."], bullets: ["Usa una palabra concreta o la categoría correcta.", "Confirma enlace y referencia.", "Revisa precio, variante, talla y notas.", "Separa precio y coste entregado.", "Controla fotos, peso y medidas.", "Compara restricciones, protección y plazo."] },
+    { heading: "Una lista repetible", paragraphs: ["El proceso fiable es: definir la necesidad, buscar o abrir categoría, preseleccionar, verificar, separar costes, revisar almacén y elegir envío con los datos reales.", "No elimina todo riesgo, pero evita enlaces rotos, variantes erróneas, expectativas irreales y decisiones de envío sin peso o restricciones.", "Conserva las pruebas ligadas a cada decisión. Guarda la URL del producto y la opción elegida, anota el precio visible al enviar el pedido y conserva la inspección del almacén y las medidas del paquete. Si el vendedor cambia el listado o una estimación de ruta varía, esos registros permiten identificar qué cambió. También mantienen honestos los artículos de opinión: un plazo de entrega o un precio de transporte personal puede contarse como una experiencia fechada, pero nunca como el resultado permanente de todos los compradores."], bullets: ["Usa una palabra concreta o la categoría correcta.", "Confirma enlace y referencia.", "Revisa precio, variante, talla y notas.", "Separa precio y coste entregado.", "Controla fotos, peso y medidas.", "Compara restricciones, protección y plazo."] },
   ],
 };
 
@@ -641,7 +641,7 @@ longFormTranslations.it = {
     { heading: "Tra acquisto e spedizione internazionale", paragraphs: ["Il flusso di un agente separa spesso l’ordine prodotto dal pacco internazionale. Il venditore spedisce prima al magazzino, che registra, controlla e prepara.", "Questa fase permette di confrontare foto, colore, taglia e quantità. Peso e dimensioni reali migliorano la stima di spedizione."] },
     { heading: "Costruisci il budget per livelli", paragraphs: ["Annota separatamente prodotto, spedizione nazionale, servizio, opzioni di controllo o imballaggio e trasporto internazionale. Ogni parte del totale resta chiara.", "Il trasporto può usare peso reale o volumetrico. Consolidare riduce alcuni costi ripetuti ma cambia peso, valore e possibili effetti doganali."] },
     { heading: "Ispezione e consegna fanno parte della qualità", paragraphs: ["Qualità significa variante corretta, stato visibile, protezione e rotta compatibile. Un articolo fragile richiede più protezione; uno voluminoso può beneficiare di meno confezione commerciale.", "Prima dell’invio verifica indirizzo, contenuto, restrizioni, assicurazione e tempi. Conserva inserzione e controllo per eventuali richieste."] },
-    { heading: "Una checklist ripetibile", paragraphs: ["Il processo affidabile è: definire il bisogno, cercare o aprire la categoria, selezionare, verificare, separare i costi, controllare il magazzino e scegliere la spedizione con dati reali.", "Non elimina ogni rischio, ma evita link rotti, varianti errate, aspettative di prezzo irreali e spedizioni scelte senza peso o restrizioni."], bullets: ["Usa una parola precisa o la categoria corretta.", "Conferma link e riferimento.", "Controlla prezzo, variante, taglia e note.", "Separa prezzo e costo consegnato.", "Verifica foto, peso e dimensioni.", "Confronta restrizioni, protezione e tempi."] },
+    { heading: "Una checklist ripetibile", paragraphs: ["Il processo affidabile è: definire il bisogno, cercare o aprire la categoria, selezionare, verificare, separare i costi, controllare il magazzino e scegliere la spedizione con dati reali.", "Non elimina ogni rischio, ma evita link rotti, varianti errate, aspettative di prezzo irreali e spedizioni scelte senza peso o restrizioni.", "Conserva le prove legate a ogni decisione. Salva l’URL del prodotto e la variante scelta, annota il prezzo visibile al momento dell’ordine e conserva il controllo del magazzino e le misure del pacco. Se il venditore modifica l’inserzione o cambia una stima di rotta, questi dati permettono di capire cosa è cambiato. Rendono onesto anche un articolo di recensione: un tempo di consegna o un costo di trasporto personale può essere riportato come esperienza datata, mai come risultato permanente per tutti gli acquirenti."], bullets: ["Usa una parola precisa o la categoria corretta.", "Conferma link e riferimento.", "Controlla prezzo, variante, taglia e note.", "Separa prezzo e costo consegnato.", "Verifica foto, peso e dimensioni.", "Confronta restrizioni, protezione e tempi."] },
   ],
 };
 
@@ -675,7 +675,7 @@ longFormTranslations.pl = {
     { heading: "Między zakupem a wysyłką międzynarodową", paragraphs: ["Proces agenta zwykle rozdziela zamówienie produktu i paczkę międzynarodową. Sprzedawca najpierw wysyła do magazynu, który rejestruje, kontroluje i przygotowuje przesyłkę.", "Ten etap umożliwia sprawdzenie zdjęć, koloru, rozmiaru i ilości. Rzeczywista waga i wymiary poprawiają kalkulację transportu."] },
     { heading: "Buduj budżet warstwami", paragraphs: ["Zapisuj osobno produkt, wysyłkę krajową, obsługę, kontrolę lub pakowanie i transport międzynarodowy. Każda część sumy pozostaje czytelna.", "Transport może zależeć od wagi rzeczywistej lub objętościowej. Konsolidacja zmniejsza powtarzane opłaty, ale zmienia wagę, wartość i możliwe skutki celne."] },
     { heading: "Kontrola i dostawa są częścią jakości", paragraphs: ["Jakość oznacza właściwy wariant, widoczny stan, ochronę i zgodną trasę. Delikatny przedmiot wymaga większej ochrony, a duży może skorzystać z usunięcia opakowania handlowego.", "Przed wysyłką sprawdź adres, zawartość, ograniczenia, ubezpieczenie i czas. Zachowaj zapisy oferty i kontroli."] },
-    { heading: "Powtarzalna lista kontrolna", paragraphs: ["Niezawodny proces to: określić potrzebę, wyszukać lub otworzyć kategorię, wybrać, zweryfikować, rozdzielić koszty, sprawdzić magazyn i wybrać wysyłkę na prawdziwych danych.", "Nie usuwa całego ryzyka, ale zapobiega błędnym linkom, wariantom, nierealnym cenom i wysyłce wybranej bez wagi lub ograniczeń."], bullets: ["Użyj konkretnego słowa lub właściwej kategorii.", "Potwierdź link i numer referencyjny.", "Sprawdź cenę, wariant, rozmiar i uwagi.", "Oddziel cenę produktu od kosztu dostawy.", "Kontroluj zdjęcia, wagę i wymiary.", "Porównaj ograniczenia, ochronę i czas."] },
+    { heading: "Powtarzalna lista kontrolna", paragraphs: ["Niezawodny proces to: określić potrzebę, wyszukać lub otworzyć kategorię, wybrać, zweryfikować, rozdzielić koszty, sprawdzić magazyn i wybrać wysyłkę na prawdziwych danych.", "Nie usuwa całego ryzyka, ale zapobiega błędnym linkom, wariantom, nierealnym cenom i wysyłce wybranej bez wagi lub ograniczeń.", "Zachowuj dowody związane z każdą decyzją. Zapisz adres produktu i wybrany wariant, zanotuj cenę widoczną przy składaniu zamówienia oraz przechowaj kontrolę magazynową i wymiary paczki. Gdy sprzedawca zmieni ofertę albo wycena linii wzrośnie lub spadnie, zapisy pokażą, co dokładnie się zmieniło. Dzięki nim także artykuł z opinią pozostaje uczciwy: osobisty czas dostawy lub koszt transportu można opisać jako datowane doświadczenie, ale nie jako stały wynik dla każdego kupującego."], bullets: ["Użyj konkretnego słowa lub właściwej kategorii.", "Potwierdź link i numer referencyjny.", "Sprawdź cenę, wariant, rozmiar i uwagi.", "Oddziel cenę produktu od kosztu dostawy.", "Kontroluj zdjęcia, wagę i wymiary.", "Porównaj ograniczenia, ochronę i czas."] },
   ],
 };
 
@@ -757,6 +757,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { question: "Wie lange ist die Lagerung?", answer: "Eine öffentliche FAQ nennt 180 Tage insgesamt, bis zu 90 kostenlos und verlängerte Lagerung für 10 RMB pro Monat. Prüfe den aktuellen Account-Countdown." },
       { question: "Kann jeder Artikel zurückgegeben werden?", answer: "Nein. Es gibt ausgeschlossene Kategorien und Verkäuferregeln; laut FAQ wird nach mehr als fünf Tagen im Lager keine Rückgabe unterstützt." },
       { question: "Kann jeder Artikel jede Versandlinie nutzen?", answer: "Nein. Die Paketanleitung weist auf produktabhängige Linienbeschränkungen hin. Prüfe die Live-Auswahl für Ziel, Ware und Paket." },
+      { question: "Führen Produkt- und Kategorienbuttons dieser Website nach außen?", answer: "Produkt-, Kategorie- und Suchaktionen führen nur zu den passenden Seiten der ausgewählten Zieldatenbank. Navigation, Ratgeber, Artikel und FAQ bleiben innerhalb von KameyMall Sheet." },
     ] },
     articles: { kicker: "SEO-Bibliothek für Reverse Shopping", title: "Faktengeprüfte KameyMall-Artikel", intro: "Originale Langformtexte für Suche, Einkaufsablauf und Kostenplanung, mit klarer Trennung zwischen Plattformangaben und Nutzerberichten.", read: "Artikel lesen", cards: [
       { label: "Ratgeber 2026", title: "KameyMall Spreadsheet Guide für Käufer im Ausland", body: "Von der Produktsuche über Live-Prüfung und QC bis zur Versandplanung.", action: "Vollständigen Artikel lesen" },
@@ -796,6 +797,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { question: "Combien de temps pour le stockage ?", answer: "La FAQ annonce 180 jours au total, jusqu’à 90 gratuits et 10 RMB par mois d’extension. Vérifiez le compteur du compte." },
       { question: "Tout peut-il être retourné ?", answer: "Non. Certaines catégories et règles vendeur l’excluent ; la FAQ ne prend plus en charge le retour après plus de cinq jours en entrepôt." },
       { question: "Tout produit utilise-t-il toute ligne ?", answer: "Non. Les instructions signalent des restrictions par produit. Utilisez la liste live pour le pays et le colis." },
+      { question: "Les boutons de produit et de catégorie quittent-ils ce site ?", answer: "Les actions produit, catégorie et recherche mènent uniquement aux pages correspondantes de la base de destination sélectionnée. La navigation, les guides, les articles et la FAQ restent dans KameyMall Sheet." },
     ] },
     articles: { kicker: "Bibliothèque SEO de reverse shopping", title: "Articles KameyMall vérifiés", intro: "Des articles originaux sur la recherche, le parcours et les coûts, distinguant déclarations officielles et témoignages.", read: "Lire l’article", cards: [
       { label: "Guide 2026", title: "Guide KameyMall Spreadsheet pour acheteurs internationaux", body: "De la découverte à la vérification QC et à la planification du transport.", action: "Lire l’article complet" },
@@ -835,6 +837,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { question: "¿Cuánto dura el almacenamiento?", answer: "La FAQ anuncia 180 días totales, hasta 90 gratis y ampliación a 10 RMB al mes. Comprueba el contador de cuenta." },
       { question: "¿Todo puede devolverse?", answer: "No. Hay exclusiones y reglas del vendedor; la FAQ no admite devolución tras más de cinco días en almacén." },
       { question: "¿Todo producto usa toda ruta?", answer: "No. Las instrucciones señalan restricciones por producto. Usa la lista en vivo para destino y paquete." },
+      { question: "¿Los botones de productos y categorías salen de este sitio?", answer: "Las acciones de producto, categoría y búsqueda solo llevan a las páginas correspondientes de la base de destino seleccionada. La navegación, las guías, los artículos y las FAQ permanecen dentro de KameyMall Sheet." },
     ] },
     articles: { kicker: "Biblioteca SEO de compra inversa", title: "Artículos KameyMall verificados", intro: "Textos originales sobre búsqueda, proceso y costes, separando declaraciones de plataforma y experiencias de usuarios.", read: "Leer artículo", cards: [
       { label: "Guía 2026", title: "Guía KameyMall Spreadsheet para compradores internacionales", body: "Desde el hallazgo hasta QC y planificación del transporte.", action: "Leer artículo completo" },
@@ -874,6 +877,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { question: "Quanto dura il deposito?", answer: "La FAQ annuncia 180 giorni totali, fino a 90 gratis e 10 RMB al mese extra. Controlla il conto alla rovescia." },
       { question: "Tutto può essere restituito?", answer: "No. Esistono esclusioni e regole del venditore; dopo più di cinque giorni in magazzino il reso non è supportato." },
       { question: "Ogni prodotto usa ogni linea?", answer: "No. Le istruzioni indicano restrizioni per prodotto. Usa l’elenco live per destinazione e pacco." },
+      { question: "I pulsanti di prodotti e categorie portano fuori dal sito?", answer: "Le azioni prodotto, categoria e ricerca aprono soltanto le pagine corrispondenti del database di destinazione selezionato. Navigazione, guide, articoli e FAQ restano all’interno di KameyMall Sheet." },
     ] },
     articles: { kicker: "Biblioteca SEO reverse shopping", title: "Articoli KameyMall verificati", intro: "Testi originali su ricerca, processo e costi, distinguendo dichiarazioni della piattaforma e testimonianze.", read: "Leggi articolo", cards: [
       { label: "Guida 2026", title: "Guida KameyMall Spreadsheet per acquirenti internazionali", body: "Dalla scoperta al QC e alla pianificazione del trasporto.", action: "Leggi articolo completo" },
@@ -913,6 +917,7 @@ const researchUiUpdates: Partial<Record<Locale, ResearchUiUpdate>> = {
       { question: "Jak długo trwa magazynowanie?", answer: "FAQ podaje 180 dni łącznie, do 90 gratis i 10 RMB miesięcznie za przedłużenie. Sprawdź licznik konta." },
       { question: "Czy wszystko można zwrócić?", answer: "Nie. Są wyłączenia i zasady sprzedawcy; po ponad pięciu dniach w magazynie zwrot nie jest obsługiwany." },
       { question: "Czy każdy produkt używa każdej linii?", answer: "Nie. Instrukcje opisują ograniczenia produktowe. Użyj listy live dla celu i paczki." },
+      { question: "Czy przyciski produktów i kategorii prowadzą poza tę stronę?", answer: "Akcje produktu, kategorii i wyszukiwania prowadzą wyłącznie do odpowiadających stron w wybranej bazie docelowej. Nawigacja, poradniki, artykuły i FAQ pozostają w KameyMall Sheet." },
     ] },
     articles: { kicker: "Biblioteka SEO", title: "Zweryfikowane artykuły KameyMall", intro: "Oryginalne treści o wyszukiwaniu, procesie i kosztach z rozróżnieniem deklaracji platformy i opinii użytkowników.", read: "Czytaj artykuł", cards: [
       { label: "Poradnik 2026", title: "KameyMall Spreadsheet dla kupujących za granicą", body: "Od znalezienia produktu przez QC do planowania transportu.", action: "Przeczytaj artykuł" },
@@ -958,6 +963,36 @@ export const copies: Record<Locale, SiteCopy> = {
   it: italian,
   pl: polish,
 };
+
+function proseStructure(sections: ProseSection[]) {
+  return sections.map((section) => ({
+    paragraphs: section.paragraphs.length,
+    bullets: section.bullets?.length ?? 0,
+  }));
+}
+
+function contentStructure(copy: SiteCopy) {
+  return {
+    categories: Object.keys(copy.categories.items).sort(),
+    steps: copy.how.steps.length,
+    guides: copy.guides.cards.length,
+    faq: copy.faq.items.length,
+    articles: copy.articles.cards.length,
+    pageIntros: Object.keys(copy.pageIntros).sort(),
+    guidePages: Object.entries(copy.guidePages)
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([route, page]) => ({ route, sections: proseStructure(page.sections) })),
+    articlePage: proseStructure(copy.articlePage.sections),
+  };
+}
+
+const englishContentStructure = JSON.stringify(contentStructure(copies.en));
+for (const language of languages) {
+  const localizedStructure = JSON.stringify(contentStructure(copies[language.code]));
+  if (localizedStructure !== englishContentStructure) {
+    throw new Error(`Incomplete ${language.code} translation: visible content structure must match English`);
+  }
+}
 
 export const guideRoutes: StaticRouteKey[] = [
   "guides/how-to-use-kameymall-spreadsheet",

@@ -89,6 +89,33 @@ test("keeps complete translated page structure", async () => {
   assert.match(guideHtml, /Comparer les informations visibles/);
 });
 
+test("keeps every localized content module as complete as English", async () => {
+  const worker = await loadWorker();
+  const localePrefixes = ["", "/de", "/fr", "/es", "/it", "/pl"];
+  let englishArticleParagraphs = 0;
+
+  for (const prefix of localePrefixes) {
+    const faqHtml = await (await render(worker, `${prefix}/faq`)).text();
+    const howHtml = await (await render(worker, `${prefix}/how-to-buy`)).text();
+    const guidesHtml = await (await render(worker, `${prefix}/guides`)).text();
+    const articlesHtml = await (await render(worker, `${prefix}/articles`)).text();
+    const categoriesHtml = await (await render(worker, `${prefix}/categories`)).text();
+    const articleHtml = await (await render(worker, `${prefix}/articles/kameymall-spreadsheet-guide-2026`)).text();
+    const faqBlock = faqHtml.match(/<div class="faq-list">([\s\S]*?)<\/div>/)?.[1] ?? "";
+    const howBlock = howHtml.match(/<ol class="step-list">([\s\S]*?)<\/ol>/)?.[1] ?? "";
+
+    assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
+    assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
+    assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 3, `${prefix || "/"} article cards`);
+    assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
+
+    const articleParagraphs = (articleHtml.match(/<p\b/g) ?? []).length;
+    if (!prefix) englishArticleParagraphs = articleParagraphs;
+    assert.equal(articleParagraphs, englishArticleParagraphs, `${prefix || "/"} long-form article paragraphs`);
+  }
+});
+
 test("uses the verified destination search and category URLs", async () => {
   const worker = await loadWorker();
   const response = await render(worker, "/");

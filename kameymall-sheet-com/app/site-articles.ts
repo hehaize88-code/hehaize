@@ -452,3 +452,20 @@ export const additionalArticles: Record<Locale, Record<AdditionalArticleRoute, A
   it: italian,
   pl: polish,
 };
+
+function articleStructure(pages: Record<AdditionalArticleRoute, ArticlePageContent>) {
+  return additionalArticleRoutes.map((route) => ({
+    route,
+    sections: pages[route].sections.map((section) => ({
+      paragraphs: section.paragraphs.length,
+      bullets: section.bullets?.length ?? 0,
+    })),
+  }));
+}
+
+const englishArticleStructure = JSON.stringify(articleStructure(additionalArticles.en));
+for (const [locale, pages] of Object.entries(additionalArticles)) {
+  if (JSON.stringify(articleStructure(pages)) !== englishArticleStructure) {
+    throw new Error(`Incomplete ${locale} article translation: visible content structure must match English`);
+  }
+}
