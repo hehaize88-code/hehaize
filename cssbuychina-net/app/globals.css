@@ -1140,3 +1140,160 @@ footer { padding: 72px max(5vw, calc((100vw - 1500px) / 2)) 28px; color: white; 
   .inner-hero h1 { font-size: 53px; }
   .inspection-section { margin: 0 18px 65px; padding: 55px 20px; border-radius: 28px; }
 }
+
+/* Compact mobile homepage: preserve every section and item without horizontal carousels. */
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 58px;
+    padding: 0 14px;
+  }
+  .brand-logo { width: 96px; }
+  .language-switcher summary { height: 34px; }
+  .menu-button { min-height: 34px; padding: 0 4px; font-size: 11px; }
+  .nav-links { top: 57px; padding: 12px 14px; }
+  .nav-links a { padding: 10px 0; }
+
+  .hero-content { padding: 34px 15px 24px; }
+  .eyebrow { margin-bottom: 11px; font-size: 7px; }
+  .hero h1 { font-size: clamp(39px, 11.5vw, 48px); line-height: .91; }
+  .hero-lede { margin: 14px 0 16px; font-size: 12px; line-height: 1.48; }
+  .search-box {
+    height: 48px;
+    padding: 5px 5px 5px 11px;
+    border-radius: 13px;
+  }
+  .search-box input { font-size: 11px; }
+  .search-box button { min-width: 78px; padding: 0 10px; font-size: 9px; }
+  .quick-searches { margin-top: 13px; gap: 5px; font-size: 8px; line-height: 1.35; }
+  .quick-searches a { padding: 4px 7px; }
+  .hero-notes { margin-top: 19px; }
+  .hero-notes div { padding-top: 11px; }
+  .hero-notes strong { font-size: 16px; }
+  .hero-notes span { font-size: 6px; line-height: 1.2; }
+  .hero-collage {
+    min-height: 228px;
+    margin: 0 14px 18px;
+    border-radius: 21px 21px 48px 21px;
+  }
+  .collage-card--main { left: 5%; top: 8%; width: 50%; height: 75%; }
+  .collage-card--top { right: 4%; top: 6%; width: 38%; height: 39%; }
+  .collage-card--bottom { right: 6%; bottom: 5%; width: 40%; height: 41%; }
+  .collage-stamp { width: 58px; height: 58px; left: 45%; top: 39%; }
+  .collage-stamp b { font-size: 21px; }
+
+  .trust-strip {
+    width: calc(100% - 28px);
+    min-height: 0;
+    margin-top: 0;
+    border-radius: 12px;
+  }
+  .trust-strip span { min-height: 34px; padding: 9px 4px; font-size: 5.5px; }
+
+  .section { padding: 38px 14px; }
+  .section-heading { margin-bottom: 19px; }
+  .section-heading h2 { font-size: 32px; line-height: .96; }
+  .section-heading > p { margin-top: 10px; font-size: 11px; line-height: 1.45; }
+
+  .category-grid { grid-auto-rows: 92px; gap: 7px; }
+  .category-card:nth-child(n) {
+    min-height: 92px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .category-number { width: 20px; height: 20px; font-size: 6px; }
+  .category-symbol { font-size: 27px; }
+  .category-text { gap: 2px; }
+  .category-text b { font-size: 12px; }
+  .category-card > span:last-child { width: 21px; height: 21px; font-size: 10px; }
+  .category-index-links { margin-top: 12px; gap: 5px 10px; font-size: 7px; }
+
+  .finds-heading { margin-bottom: 14px; }
+  .finds-heading .text-link { margin-top: 11px; }
+  .filter-row { gap: 5px; margin-bottom: 15px; padding: 0; }
+  .filter-row button { min-height: 30px; padding: 6px 9px; font-size: 8px; }
+  .product-grid { gap: 7px; }
+  .product-card { border-radius: 13px; }
+  .product-image,
+  .product-card:first-child .product-image { aspect-ratio: 1 / .62; }
+  .product-check { top: 6px; left: 6px; padding: 4px 5px; font-size: 6px; }
+  .product-body,
+  .product-card:first-child .product-body { padding: 8px; }
+  .product-meta { font-size: 6px; }
+  .product-body h3,
+  .product-card:first-child .product-body h3 {
+    min-height: 28px;
+    margin: 6px 0 7px;
+    font-size: 10px;
+    line-height: 1.35;
+  }
+  .product-footer { display: flex; align-items: center; gap: 5px; padding-top: 7px; }
+  .price { margin: 0; gap: 1px; }
+  .price strong { font-size: 10px; }
+  .price small { font-size: 5.5px; }
+  .product-button { width: auto; min-width: 45px; min-height: 29px; padding: 6px 7px; gap: 4px; font-size: 6px; }
+
+  .workflow-section {
+    width: calc(100% - 28px);
+    margin: 38px auto;
+    border-radius: 20px;
+  }
+  .workflow-intro { padding: 31px 16px 25px; }
+  .workflow-intro h2 { font-size: 34px; }
+  .workflow-intro > p:not(.eyebrow) { margin: 13px 0; font-size: 11px; line-height: 1.45; }
+  .workflow-intro > a { font-size: 9px; }
+  .workflow-list {
+    padding: 15px 16px 23px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+  .workflow-list li,
+  .workflow-list li:first-child {
+    min-width: 0;
+    padding: 10px;
+    display: block;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 12px;
+  }
+  .workflow-list li > span { display: block; margin-bottom: 7px; font-size: 8px; }
+  .workflow-list b { font-size: 11px; line-height: 1.2; }
+  .workflow-list p { margin-top: 4px; font-size: 8px; line-height: 1.35; }
+
+  .guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .guide-featured { grid-column: 1 / -1; }
+  .guide-card {
+    min-height: 175px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .guide-featured { min-height: 150px; }
+  .guide-label { font-size: 6px; }
+  .guide-card h3 { margin: 16px 0 7px; font-size: 14px; line-height: 1.08; }
+  .guide-featured h3 { font-size: 18px; }
+  .guide-card p { margin-bottom: 12px; font-size: 8px; line-height: 1.35; }
+  .guide-card b { gap: 6px; font-size: 7px; }
+
+  .faq-preview {
+    margin: 38px 14px;
+    padding: 31px 16px;
+    gap: 19px;
+    border-radius: 20px;
+  }
+  .faq-preview h2 { font-size: 34px; }
+  .faq-list summary { min-height: 44px; padding: 11px 0; font-size: 10px; line-height: 1.3; }
+  .faq-list summary span { font-size: 15px; }
+  .faq-list details p { margin: -2px 0 13px; font-size: 9px; line-height: 1.45; }
+  .text-link.light { margin-top: 17px; }
+
+  footer { padding: 28px 14px 18px; }
+  .footer-top {
+    grid-template-columns: .8fr 1.2fr;
+    gap: 13px;
+    padding-bottom: 24px;
+  }
+  .footer-top .brand { padding: 8px 10px; }
+  .footer-top > p { font-size: 9px; line-height: 1.45; }
+  .footer-top .search-box { grid-column: 1 / -1; height: 43px; }
+  .footer-bottom { padding-top: 14px; gap: 13px; font-size: 7px; }
+  .footer-bottom div { gap: 8px 13px; }
+}
