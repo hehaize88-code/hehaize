@@ -20,7 +20,11 @@ export function SiteImage({
   );
 }
 
-export function ResponsiveHeroImage() {
+export function ResponsiveHeroImage({
+  alt = "Unbranded shoe, charcoal hoodie and black cap presented as product finds",
+}: {
+  alt?: string;
+} = {}) {
   return (
     <picture>
       <source
@@ -30,7 +34,7 @@ export function ResponsiveHeroImage() {
       />
       <SiteImage
         src="/optimized/hero-product-collage-1000.webp"
-        alt="Unbranded shoe, charcoal hoodie and black cap presented as product finds"
+        alt={alt}
         width={1000}
         height={747}
         priority

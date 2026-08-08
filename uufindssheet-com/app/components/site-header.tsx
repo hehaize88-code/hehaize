@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { SiteImage } from "./site-image";
 const languageOptions = [
-  { code: "US", label: "English (US)", language: "en", href: "/", hrefLang: "en-US" },
+  { code: "EN", label: "English", language: "en", href: "/", hrefLang: "en" },
   { code: "UK", label: "English (UK)", language: "en-gb", href: "/en-gb/", hrefLang: "en-GB" },
-  { code: "DE", label: "Deutsch", language: "de", href: "/de/", hrefLang: "de" },
-  { code: "PL", label: "Polski", language: "pl", href: "/pl/", hrefLang: "pl" },
+  { code: "DE", label: "Deutsch", language: "de", href: "/de/", hrefLang: "de-DE" },
+  { code: "PL", label: "Polski", language: "pl", href: "/pl/", hrefLang: "pl-PL" },
   { code: "BR", label: "Português", language: "pt-br", href: "/pt-br/", hrefLang: "pt-BR" },
 ];
 
@@ -99,8 +99,8 @@ export function SiteHeader({
             <p>{currentLabels.language}</p>
             {englishOnly ? (
               <>
-                <Link href={routePath} hrefLang="en-US" lang="en-US" aria-current="page">
-                  <b>US</b><span>English (article language)</span>
+                <Link href={routePath} hrefLang="en" lang="en" aria-current="page">
+                  <b>EN</b><span>English (article language)</span>
                 </Link>
                 <p className="language-availability-note">This article is currently published in English only. Other site pages remain available in every listed language.</p>
               </>

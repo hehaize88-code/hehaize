@@ -36,6 +36,32 @@ const betweenClasses = (html, startClass, endClass) => {
   assert.ok(start >= 0 && end > start, `missing range ${startClass} -> ${endClass}`);
   return html.slice(start, end);
 };
+const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const prefixedPath = (prefix, path) => path === "/" ? `/${prefix}/` : `/${prefix}${path}`;
+const englishPathFor = (path) => path.replace(/^\/(?:en-gb|de|pl|pt-br)(?=\/)/, "") || "/";
+const assertLocaleCluster = (html, currentPath, label) => {
+  const englishPath = englishPathFor(currentPath);
+  const expected = {
+    "x-default": englishPath,
+    en: englishPath,
+    "en-GB": prefixedPath("en-gb", englishPath),
+    "de-DE": prefixedPath("de", englishPath),
+    "pl-PL": prefixedPath("pl", englishPath),
+    "pt-BR": prefixedPath("pt-br", englishPath),
+  };
+  assert.match(
+    html,
+    new RegExp(`<link rel="canonical" href="${escapeRegExp(`https://uufindssheet.com${currentPath}`)}"`),
+    `${label} must use a self-canonical`,
+  );
+  for (const [hrefLang, path] of Object.entries(expected)) {
+    assert.match(
+      html,
+      new RegExp(`<link rel="alternate" hrefLang="${escapeRegExp(hrefLang)}" href="${escapeRegExp(`https://uufindssheet.com${path}`)}"`),
+      `${label} is missing reciprocal ${hrefLang}`,
+    );
+  }
+};
 
 const filesUnder = async (directory) => {
   const result = [];
@@ -54,6 +80,7 @@ for (const locale of locales) {
   assert.match(home, /hero-product-collage-480\.webp/, `${locale} home must keep responsive hero images`);
   assert.ok(count(home, /\/product-images\//g) >= 8, `${locale} home must render all product cards`);
   assert.doesNotMatch(home, /class="localized-hero"/, `${locale} home must not use the retired alternate layout`);
+  assertLocaleCluster(home, `/${locale}/`, `${locale} home`);
 
   const expectations = {
     finds: ["hub-page", "hub-hero", "category-grid", "evidence-matrix"],
@@ -155,7 +182,7 @@ for (const locale of translatedLocales) {
 const englishOnlyGuide = await readPage(`guides/${englishOnlyGuideSlug}`);
 assert.match(englishOnlyGuide, /<h1>UUFinds Product Weight vs Volumetric Weight: A Practical Parcel Estimate<\/h1>/);
 assert.match(englishOnlyGuide, /<link rel="canonical" href="https:\/\/uufindssheet\.com\/guides\/uufinds-product-weight-vs-volumetric-weight\/"/);
-assert.doesNotMatch(englishOnlyGuide, /hrefLang="de"|hreflang="de"/i, "English-only article must not claim a German equivalent");
+assert.doesNotMatch(englishOnlyGuide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, "English-only article must not claim a translated equivalent");
 assert.match(englishOnlyGuide, /"datePublished":"2026-07-29"/);
 assert.match(englishOnlyGuide, /"dateModified":"2026-07-29"/);
 assert.match(englishOnlyGuide, /"@type":"Article"/);
@@ -181,6 +208,7 @@ for (const locale of locales) {
 }
 
 const home = await readPage("");
+assertLocaleCluster(home, "/", "English home");
 assert.match(home, /<title>UUFinds Spreadsheet 2026: Product Finds &amp; QC Guide<\/title>/);
 assert.match(home, /<meta name="description" content="Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more\. Check QC photos, compare listings and open matching product pages\."/);
 assert.match(home, /<h1>UUFinds Spreadsheet<br\/?>(?:&amp;|&) <em>QC Guide<\/em><\/h1>/);
@@ -188,6 +216,28 @@ assert.match(home, /Browse this independent UUFinds spreadsheet for shoes, hoodi
 assert.match(home, /href="\/categories\/shoes\/"/);
 assert.match(home, /href="\/categories\/hoodies\/"/);
 assert.match(home, /href="\/categories\/jersey\/"/);
+
+const polishHome = await readPage("pl");
+assert.match(polishHome, /<title>UUFinds Spreadsheet 2026 – Produkty i zdjęcia QC<\/title>/);
+assert.match(polishHome, /<meta name="description" content="Przeglądaj niezależny UUFinds Spreadsheet z butami, bluzami, koszulkami sportowymi i innymi produktami\. Sprawdzaj zdjęcia QC, porównuj oferty i otwieraj dopasowane strony produktów\."/);
+assert.match(polishHome, /<h1>UUFinds Spreadsheet 2026<br\/?><em>Produkty i zdjęcia QC<\/em><\/h1>/);
+assert.match(polishHome, /hrefLang="pl-PL"[^>]+href="\/pl\/"/);
+for (const phrase of [
+  "Jak korzystać z UUFinds Spreadsheet: produkty i proces QC",
+  "Zdjęcia QC w UUFinds: lista kontroli produktu",
+  "Jak korzystać z UUFinds: linki, zdjęcia QC i dopasowanie produktu",
+  "Spreadsheet czy QC Finder: odkrywanie czy weryfikacja?",
+  "Czy uufindssheet.com jest oficjalną stroną UUFinds?",
+  "Czy zdjęcie QC gwarantuje jakość produktu?",
+  "Co sprawdzić na stronie docelowej?",
+]) assert.ok(polishHome.includes(phrase), `Polish home must include translated copy: ${phrase}`);
+for (const retiredEnglish of [
+  "Is this the official UUFinds website?",
+  "Does a QC photo guarantee product quality?",
+  "What should be checked on the destination page?",
+  "UUFinds QC Photos Checklist: How to Review a Product",
+  "How to Use UUFinds: Links, QC Photos &amp; Product Matching",
+]) assert.doesNotMatch(polishHome, new RegExp(escapeRegExp(retiredEnglish)), `Polish home still contains English copy: ${retiredEnglish}`);
 
 const keywordGuideChecks = [
   ["uufinds-spreadsheet-shopping-guide-2026", "How to Use a UUFinds Spreadsheet: Product Finds &amp; QC Workflow", "how to use a UUFinds spreadsheet"],
@@ -217,6 +267,7 @@ for (const slug of categorySlugs) {
 assert.equal(new Set(categoryProductUrls).size, categoryProductUrls.length, "category landing pages must not reuse product destinations across categories");
 
 const sitemap = await readFile(join(root.pathname, "sitemap.xml"), "utf8");
+assert.match(sitemap, /https:\/\/uufindssheet\.com\/pl\//);
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/de\/about\//);
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/pt-br\/terms\//);
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnlyGuideSlug}/`));
@@ -227,6 +278,14 @@ const allowedOutboundHosts = new Set(["uufindssheet.com", "www.cnbuycha.com"]);
 const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));
 for (const file of publishedHtmlFiles) {
   const html = await readFile(file, "utf8");
+  const relativePath = file.slice(root.pathname.length).replaceAll("\\", "/");
+  const localeMatch = relativePath.match(/^(en-gb|de|pl|pt-br)\/(.*\/)?index\.html$/);
+  if (localeMatch) {
+    const currentPath = `/${relativePath.replace(/index\.html$/, "")}`;
+    assertLocaleCluster(html, currentPath, relativePath);
+    const englishPath = englishPathFor(currentPath);
+    assertLocaleCluster(await readPage(englishPath), englishPath, `English reciprocal for ${relativePath}`);
+  }
   assert.doesNotMatch(
     html,
     /(?:CNBuy|CNBUY|CNF|CNFans)/,

@@ -34,12 +34,12 @@ const localized = {
   },
   pl: {
     region: "PL",
-    htmlTitle: "UUFinds Spreadsheet i poradnik QC po polsku",
-    description: "Polski przewodnik po UUFinds i kontroli QC z bezpośrednimi linkami do kategorii oraz produktów na stronie głównej.",
+    htmlTitle: "UUFinds Spreadsheet 2026 – Produkty i zdjęcia QC",
+    description: "Przeglądaj niezależny UUFinds Spreadsheet z butami, bluzami, koszulkami sportowymi i innymi produktami. Sprawdzaj zdjęcia QC, porównuj oferty i otwieraj dopasowane strony produktów.",
     eyebrow: "Niezależny przewodnik / Polski",
-    title: "Sprawdź produkt.",
-    accent: "Otwórz właściwą ofertę.",
-    intro: "Przeglądaj kategorie, porównuj dostępne zdjęcia QC, a następnie przejdź do aktualnej strony odpowiedniego produktu w serwisie docelowym.",
+    title: "UUFinds Spreadsheet 2026",
+    accent: "Produkty i zdjęcia QC",
+    intro: "Przeglądaj niezależny UUFinds Spreadsheet z butami, bluzami, koszulkami sportowymi i innymi produktami. Sprawdzaj dostępne zdjęcia QC, porównuj oferty i otwieraj dopasowane strony produktów.",
     search: "Szukaj butów, bluz lub akcesoriów",
     searchButton: "Szukaj w serwisie docelowym ↗",
     categoryTitle: "Zacznij od kategorii.",
@@ -102,6 +102,45 @@ const localized = {
 
 type Locale = keyof typeof localized;
 
+const polishHomeCopy = {
+  featureLabel: "Funkcje strony",
+  featureItems: [
+    ["Kategorie", "i skróty"],
+    ["Poradnik QC", "przed zakupem"],
+    ["Bezpośrednie", "linki zakupowe"],
+  ],
+  heroAlt: "But, ciemna bluza i czarna czapka przedstawione jako przykładowe znaleziska produktowe",
+  routeTag: ["LINK ZAKUPOWY", "GOTOWY DO OTWARCIA"],
+  categoryEyebrow: "09 / SERWIS DOCELOWY",
+  productEyebrow: "Trasy produktów / 08",
+  qcEyebrow: "QC przed przejściem dalej",
+  workflowEyebrow: "Proces badania / 03 kroki",
+  workflowSteps: ["ZBADAJ", "PORÓWNAJ", "PRZEJDŹ"],
+  trustLabel: "Niezależny przewodnik",
+  facts: [
+    "UUFinds publicznie opisuje swój serwis jako wyszukiwarkę dostępnych zdjęć i filmów QC.",
+    "Zachowaj dokładny link produktu, sprzedawcę i wariant przy każdym materiale QC.",
+    "Aktualne dane produktu zawsze potwierdzaj na aktywnej stronie w serwisie docelowym.",
+  ],
+  faqs: [
+    ["Czy uufindssheet.com jest oficjalną stroną UUFinds?", "Nie. UUFinds Sheet to niezależny przewodnik redakcyjny."],
+    ["Czy zdjęcie QC gwarantuje jakość produktu?", "Nie. Zdjęcie dokumentuje jedną sztukę lub partię w określonym czasie i musi być dopasowane do właściwej oferty."],
+    ["Co sprawdzić na stronie docelowej?", "Potwierdź ID produktu, aktualną cenę, warianty, rozmiary, link sprzedawcy i dostępność."],
+  ],
+  productCategories: {
+    Shoes: "Buty",
+    Hoodies: "Bluzy",
+    "T-Shirts": "T-shirty",
+    Jackets: "Kurtki",
+    Pants: "Spodnie",
+    Headwear: "Nakrycia głowy",
+    Accessories: "Akcesoria",
+    Jersey: "Koszulki sportowe",
+    Electronics: "Elektronika",
+  } as Record<string, string>,
+  readTimes: ["12 min czytania", "11 min czytania", "9 min czytania", "9 min czytania", "11 min czytania"],
+} as const;
+
 export const dynamicParams = false;
 export function generateStaticParams() { return Object.keys(localized).map((locale) => ({ locale })); }
 
@@ -114,7 +153,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: content.description,
     alternates: {
       canonical: `/${locale}/`,
-      languages: { "x-default": "/", "en-US": "/", "en-GB": "/en-gb/", de: "/de/", pl: "/pl/", "pt-BR": "/pt-br/" },
+      languages: { "x-default": "/", en: "/", "en-GB": "/en-gb/", "de-DE": "/de/", "pl-PL": "/pl/", "pt-BR": "/pt-br/" },
     },
     openGraph: {
       title: content.htmlTitle,
@@ -134,6 +173,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
   const currentLocale = locale as Locale;
   const content = localized[currentLocale];
   if (!content) notFound();
+  const pl = currentLocale === "pl" ? polishHomeCopy : undefined;
 
   return (
     <main>
@@ -154,20 +194,20 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           <a className="browse-button" href="#finds">
             <span aria-hidden="true">↗</span><strong>{content.categoryTitle}</strong><b aria-hidden="true">→</b>
           </a>
-          <div className="proof-row" aria-label="Site features">
-            <div><span>09</span><small>Category<br />shortcuts</small></div>
-            <div><span>QC</span><small>First buying<br />guide</small></div>
-            <div><span>↗</span><small>Direct shopping<br />links</small></div>
+          <div className="proof-row" aria-label={pl?.featureLabel ?? "Site features"}>
+            <div><span>09</span><small>{pl?.featureItems[0][0] ?? "Category"}<br />{pl?.featureItems[0][1] ?? "shortcuts"}</small></div>
+            <div><span>QC</span><small>{pl?.featureItems[1][0] ?? "First buying"}<br />{pl?.featureItems[1][1] ?? "guide"}</small></div>
+            <div><span>↗</span><small>{pl?.featureItems[2][0] ?? "Direct shopping"}<br />{pl?.featureItems[2][1] ?? "links"}</small></div>
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="Editorial collage of a shoe, hoodie, and cap">
+        <div className="hero-visual" aria-label={pl?.heroAlt ?? "Editorial collage of a shoe, hoodie, and cap"}>
           <div className="index-mark" aria-hidden="true">01</div>
           <div className="grid-lines" aria-hidden="true" />
-          <ResponsiveHeroImage />
+          <ResponsiveHeroImage alt={pl?.heroAlt} />
           <div className="route-tag" aria-hidden="true">
-            <span>SHOPPING LINK</span>
-            <strong>READY TO OPEN</strong>
+            <span>{pl?.routeTag[0] ?? "SHOPPING LINK"}</span>
+            <strong>{pl?.routeTag[1] ?? "READY TO OPEN"}</strong>
             <b>↑</b>
           </div>
         </div>
@@ -175,7 +215,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
 
       <section className="category-section" id="finds">
         <div className="section-heading">
-          <div><p className="eyebrow">09 / DESTINATION SITE</p><h2>{content.categoryTitle}</h2></div>
+          <div><p className="eyebrow">{pl?.categoryEyebrow ?? "09 / DESTINATION SITE"}</p><h2>{content.categoryTitle}</h2></div>
           <p>{content.categoryIntro}</p>
         </div>
         <div className="category-grid">
@@ -191,7 +231,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
 
       <section className="product-showcase-section" id="featured-products">
         <div className="section-heading">
-          <div><p className="eyebrow">Product routes / 08</p><h2>{content.nav.products}</h2></div>
+          <div><p className="eyebrow">{pl?.productEyebrow ?? "Product routes / 08"}</p><h2>{content.nav.products}</h2></div>
           <p>{content.intro}</p>
         </div>
         <div className="product-showcase-grid">
@@ -202,7 +242,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>
               </div>
               <div className="product-card-copy">
-                <p>{product.category}</p>
+                <p>{pl?.productCategories[product.category] ?? product.category}</p>
                 <h3>{product.shortName}</h3>
                 <div><span>¥{product.price}</span><b>{content.nav.products} ↗</b></div>
               </div>
@@ -213,7 +253,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
 
       <section className="split-callout" id="qc-guide">
         <div>
-          <p className="eyebrow inverse">QC before checkout</p>
+          <p className="eyebrow inverse">{pl?.qcEyebrow ?? "QC before checkout"}</p>
           <h2>{content.articleTitle}</h2>
         </div>
         <div className="callout-copy">
@@ -224,13 +264,13 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
 
       <section className="workflow-section" id="how-it-works">
         <div className="section-heading">
-          <div><p className="eyebrow">Research route / 03 steps</p><h2>{content.nav.howItWorks}</h2></div>
+          <div><p className="eyebrow">{pl?.workflowEyebrow ?? "Research route / 03 steps"}</p><h2>{content.nav.howItWorks}</h2></div>
           <p>{content.intro}</p>
         </div>
         <div className="workflow-grid">
-          <article><span>01</span><p className="step-label">RESEARCH</p><h3>UUFinds</h3><p>{content.intro}</p><Link href={`/${locale}/guides/how-to-use-uufinds/`}>{content.articleButton}</Link></article>
-          <article><span>02</span><p className="step-label">COMPARE</p><h3>QC</h3><p>{content.articleText}</p><Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{content.nav.qcGuide} →</Link></article>
-          <article><span>03</span><p className="step-label">BROWSE</p><h3>{content.nav.shopMain}</h3><p>{content.categoryIntro}</p><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></article>
+          <article><span>01</span><p className="step-label">{pl?.workflowSteps[0] ?? "RESEARCH"}</p><h3>UUFinds</h3><p>{content.intro}</p><Link href={`/${locale}/guides/how-to-use-uufinds/`}>{content.articleButton}</Link></article>
+          <article><span>02</span><p className="step-label">{pl?.workflowSteps[1] ?? "COMPARE"}</p><h3>QC</h3><p>{content.articleText}</p><Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{content.nav.qcGuide} →</Link></article>
+          <article><span>03</span><p className="step-label">{pl?.workflowSteps[2] ?? "BROWSE"}</p><h3>{content.nav.shopMain}</h3><p>{content.categoryIntro}</p><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></article>
         </div>
       </section>
 
@@ -243,11 +283,11 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           {articleCards.map((article, index) => {
             const localizedCard = article.localized?.[currentLocale];
             return (
-              <Link href={article.englishOnly ? article.href : `/${locale}${article.href}`} hrefLang={article.englishOnly ? "en-US" : undefined} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+              <Link href={article.englishOnly ? article.href : `/${locale}${article.href}`} hrefLang={article.englishOnly ? "en" : undefined} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
                 <div className="article-meta"><span>{localizedCard?.tag ?? (index === 0 ? content.articleLabel : article.tag)}</span><b>0{index + 1}</b></div>
                 <h3>{localizedCard?.title ?? (index === 0 ? content.articleTitle : article.title)}</h3>
                 <p>{localizedCard?.summary ?? (index === 0 ? content.articleText : article.summary)}</p>
-                <div className="article-foot"><span>{article.read}</span><b>{content.articleButton}</b></div>
+                <div className="article-foot"><span>{pl?.readTimes[index] ?? article.read}</span><b>{content.articleButton}</b></div>
               </Link>
             );
           })}
@@ -256,14 +296,14 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
 
       <section className="trust-section">
         <div className="trust-card">
-          <p className="eyebrow">Independent guide</p>
+          <p className="eyebrow">{pl?.trustLabel ?? "Independent guide"}</p>
           <h2>UUFinds Sheet</h2>
           <p>{content.description}</p>
         </div>
         <div className="facts-card">
-          <div><span>01</span><p>UUFinds publicly describes a QC finder for available photos and videos.</p></div>
-          <div><span>02</span><p>Keep the exact product link, seller and variant attached to any QC evidence.</p></div>
-          <div><span>03</span><p>Confirm current product details on the live main-site page.</p></div>
+          <div><span>01</span><p>{pl?.facts[0] ?? "UUFinds publicly describes a QC finder for available photos and videos."}</p></div>
+          <div><span>02</span><p>{pl?.facts[1] ?? "Keep the exact product link, seller and variant attached to any QC evidence."}</p></div>
+          <div><span>03</span><p>{pl?.facts[2] ?? "Confirm current product details on the live main-site page."}</p></div>
           <div className="source-row"><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{content.nav.shopMain} ↗</a></div>
         </div>
       </section>
@@ -275,9 +315,9 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           <Link className="full-faq-link" href={`/${locale}/faq/`}>{content.nav.faq} →</Link>
         </div>
         <div className="faq-list">
-          <details open><summary>Is this the official UUFinds website?<span>+</span></summary><p>No. UUFinds Sheet is an independent editorial guide.</p></details>
-          <details><summary>Does a QC photo guarantee product quality?<span>+</span></summary><p>No. It documents one photographed item or batch and must be matched to the intended listing.</p></details>
-          <details><summary>What should be checked on the destination page?<span>+</span></summary><p>Confirm the product ID, price, variants, sizing, seller link and current availability.</p></details>
+          <details open><summary>{pl?.faqs[0][0] ?? "Is this the official UUFinds website?"}<span>+</span></summary><p>{pl?.faqs[0][1] ?? "No. UUFinds Sheet is an independent editorial guide."}</p></details>
+          <details><summary>{pl?.faqs[1][0] ?? "Does a QC photo guarantee product quality?"}<span>+</span></summary><p>{pl?.faqs[1][1] ?? "No. It documents one photographed item or batch and must be matched to the intended listing."}</p></details>
+          <details><summary>{pl?.faqs[2][0] ?? "What should be checked on the destination page?"}<span>+</span></summary><p>{pl?.faqs[2][1] ?? "Confirm the product ID, price, variants, sizing, seller link and current availability."}</p></details>
         </div>
       </section>
 

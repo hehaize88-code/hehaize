@@ -7,10 +7,10 @@ export function localizedAlternates(path: string) {
     canonical: path,
     languages: {
       "x-default": path,
-      "en-US": path,
+      en: path,
       "en-GB": prefixedPath("en-gb", path),
-      de: prefixedPath("de", path),
-      pl: prefixedPath("pl", path),
+      "de-DE": prefixedPath("de", path),
+      "pl-PL": prefixedPath("pl", path),
       "pt-BR": prefixedPath("pt-br", path),
     },
   };

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
   alternates: {
     canonical: "/",
-    languages: { "x-default": "/", "en-US": "/", "en-GB": "/en-gb/", de: "/de/", pl: "/pl/", "pt-BR": "/pt-br/" },
+    languages: { "x-default": "/", en: "/", "en-GB": "/en-gb/", "de-DE": "/de/", "pl-PL": "/pl/", "pt-BR": "/pt-br/" },
   },
   openGraph: {
     title: "UUFinds Spreadsheet 2026: Product Finds & QC Guide",

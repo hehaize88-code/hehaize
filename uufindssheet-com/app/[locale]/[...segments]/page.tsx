@@ -87,10 +87,10 @@ function alternates(path: string) {
     canonical: path,
     languages: {
       "x-default": path.replace(/^\/(en-gb|de|pl|pt-br)/, ""),
-      "en-US": path.replace(/^\/(en-gb|de|pl|pt-br)/, ""),
+      en: path.replace(/^\/(en-gb|de|pl|pt-br)/, ""),
       "en-GB": path.replace(/^\/(en-gb|de|pl|pt-br)/, "/en-gb"),
-      de: path.replace(/^\/(en-gb|de|pl|pt-br)/, "/de"),
-      pl: path.replace(/^\/(en-gb|de|pl|pt-br)/, "/pl"),
+      "de-DE": path.replace(/^\/(en-gb|de|pl|pt-br)/, "/de"),
+      "pl-PL": path.replace(/^\/(en-gb|de|pl|pt-br)/, "/pl"),
       "pt-BR": path.replace(/^\/(en-gb|de|pl|pt-br)/, "/pt-br"),
     },
   };
@@ -423,7 +423,7 @@ function LocalizedArticles({
             const localizedGuide = guide ? localizeGuide(locale, guide) : undefined;
             const localizedCard = article.localized?.[locale];
             return (
-              <Link href={article.englishOnly ? article.href : `/${locale}${article.href}`} hrefLang={article.englishOnly ? "en-US" : undefined} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+              <Link href={article.englishOnly ? article.href : `/${locale}${article.href}`} hrefLang={article.englishOnly ? "en" : undefined} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
                 <div className="article-meta">
                   <span>{localizedCard?.tag ?? translate(article.tag)}</span>
                   <b>{String(index + 1).padStart(2, "0")}</b>

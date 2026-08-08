@@ -38,6 +38,13 @@ export const articleCards: ArticleCard[] = [
     href: "/guides/uufinds-spreadsheet-shopping-guide-2026/",
     read: "12 min read",
     featured: true,
+    localized: {
+      pl: {
+        tag: "PORADNIK SPREADSHEET",
+        title: "Jak korzystać z UUFinds Spreadsheet: produkty i proces QC",
+        summary: "Praktyczny proces krok po kroku: wybierz produkty w arkuszu, dopasuj materiały QC i zweryfikuj aktualną stronę szczegółów.",
+      },
+    },
   },
   {
     tag: "QC METHOD",
@@ -45,6 +52,13 @@ export const articleCards: ArticleCard[] = [
     summary: "How to match QC photos to the exact listing, compare visible details and record what the images cannot confirm.",
     href: "/guides/uufinds-qc-checklist/",
     read: "11 min read",
+    localized: {
+      pl: {
+        tag: "METODA QC",
+        title: "Zdjęcia QC w UUFinds: lista kontroli produktu",
+        summary: "Jak dopasować zdjęcia QC do dokładnej oferty, porównać widoczne detale i zapisać informacje, których fotografie nie potwierdzają.",
+      },
+    },
   },
   {
     tag: "BEGINNER GUIDE",
@@ -52,6 +66,13 @@ export const articleCards: ArticleCard[] = [
     summary: "A focused tutorial for starting with a supported link, reviewing available QC material and matching the right product.",
     href: "/guides/how-to-use-uufinds/",
     read: "9 min read",
+    localized: {
+      pl: {
+        tag: "PORADNIK DLA POCZĄTKUJĄCYCH",
+        title: "Jak korzystać z UUFinds: linki, zdjęcia QC i dopasowanie produktu",
+        summary: "Skoncentrowany poradnik: zacznij od obsługiwanego linku, sprawdź dostępne materiały QC i dopasuj właściwy produkt.",
+      },
+    },
   },
   {
     tag: "COMPARISON",
@@ -59,6 +80,13 @@ export const articleCards: ArticleCard[] = [
     summary: "A narrow comparison of two different jobs: organising product choices and checking evidence for one exact listing.",
     href: "/guides/spreadsheet-vs-qc-finder/",
     read: "9 min read",
+    localized: {
+      pl: {
+        tag: "PORÓWNANIE",
+        title: "Spreadsheet czy QC Finder: odkrywanie czy weryfikacja?",
+        summary: "Porównanie dwóch różnych zadań: porządkowania wyboru produktów i sprawdzania dowodów dla jednej dokładnej oferty.",
+      },
+    },
   },
   {
     tag: "PARCEL PLANNING",

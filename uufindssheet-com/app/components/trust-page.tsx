@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { policyPages, type PolicyPageData } from "../policy-data";
+import { localizedAlternates } from "../seo-alternates";
 import { socialImage } from "../seo-image";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
@@ -10,7 +11,7 @@ export function policyMetadata(slug: PolicyPageData["slug"]): Metadata {
   return {
     title: `${page.title} | UUFinds Sheet`,
     description: page.description,
-    alternates: { canonical: `/${page.slug}/` },
+    alternates: localizedAlternates(`/${page.slug}/`),
     openGraph: {
       title: page.title,
       description: page.description,
