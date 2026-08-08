@@ -4,6 +4,7 @@ import SitePage from "./site-page";
 import { articleRoute, articleRoutes, copies, isRouteKey, isStaticRouteKey, languages, Locale, routeHref, RouteKey } from "./site-content";
 import { additionalArticles, additionalArticleRoutes } from "./site-articles";
 import { catalogCopies } from "./site-catalog-copy";
+import { priorityCategoryEditorial } from "./site-category-editorial";
 import { categoryFromRoute, productFromRoute } from "./site-products";
 
 const SITE_URL = "https://kameymall-sheet.com";
@@ -37,17 +38,18 @@ export function buildMetadata(locale: Locale, route: RouteKey): Metadata {
     : product
       ? copy.categories.items[product.categoryKey].label
       : null;
+  const categoryEditorial = category ? priorityCategoryEditorial[locale][category] : null;
   const title = product
     ? catalog.productSeoTitle.replace("{name}", product.name)
     : category
-      ? catalog.categorySeoTitle.replace("{category}", categoryLabel ?? "")
+      ? categoryEditorial?.seoTitle ?? catalog.categorySeoTitle.replace("{category}", categoryLabel ?? "")
       : isHome
         ? catalog.homeSeoTitle
         : articlePage?.seoTitle ?? `${page?.title} | KameyMall Sheet`;
   const description = product
     ? catalog.productMeta.replace("{name}", product.name)
     : category
-      ? catalog.categoryMeta.replace("{category}", categoryLabel ?? "")
+      ? categoryEditorial?.metaDescription ?? catalog.categoryMeta.replace("{category}", categoryLabel ?? "")
       : isHome
         ? copy.home.lede
         : articlePage?.seoDescription ?? page?.intro;

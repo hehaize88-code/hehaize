@@ -2713,6 +2713,99 @@ input:focus-visible {
   font-weight: 700;
 }
 
+.category-editorial {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.78fr);
+  gap: clamp(48px, 7vw, 100px);
+  margin-top: 72px;
+  padding-top: 64px;
+  border-top: 1px solid var(--line);
+}
+
+.category-editorial h2 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--forest-900);
+  font-size: clamp(30px, 3vw, 46px);
+  letter-spacing: -0.05em;
+  line-height: 1.04;
+}
+
+.category-editorial-copy > p:not(.section-kicker) {
+  max-width: 780px;
+  margin: 22px 0 0;
+  color: #455149;
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+.category-editorial-checks ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category-editorial-checks li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 13px;
+  padding: 15px 0;
+  border-top: 1px solid var(--line);
+}
+
+.category-editorial-checks li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.category-editorial-checks li span {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--lime);
+  color: var(--forest-950);
+  font-family: var(--font-geist-mono), Consolas, monospace;
+  font-size: 8px;
+}
+
+.category-editorial-checks li p {
+  margin: 4px 0 0;
+  color: #455149;
+  font-size: 13px;
+  line-height: 1.58;
+}
+
+.category-editorial-checks h3 {
+  margin: 27px 0 13px;
+  color: var(--forest-900);
+  font-size: 16px;
+}
+
+.category-editorial-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.category-editorial-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--surface);
+  color: var(--forest-900);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.category-editorial-links .icon {
+  width: 14px;
+  height: 14px;
+}
+
 .product-page {
   border-bottom: 1px solid rgba(18, 61, 43, 0.13);
   background: linear-gradient(145deg, #eef2e8 0, var(--canvas) 30%, var(--canvas) 100%);
@@ -3015,6 +3108,18 @@ input:focus-visible {
 
   .catalog-list {
     padding-top: 38px;
+  }
+
+  .category-editorial {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 44px;
+    padding-top: 42px;
+  }
+
+  .category-editorial-copy > p:not(.section-kicker) {
+    margin-top: 16px;
+    font-size: 13px;
   }
 
   .catalog-grid,

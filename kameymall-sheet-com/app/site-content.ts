@@ -16,7 +16,8 @@ export type StaticRouteKey =
   | "articles/kameymall-spreadsheet-guide-2026"
   | "articles/how-to-buy-from-kameymall-2026"
   | "articles/kameymall-shipping-cost-guide-2026"
-  | "articles/how-to-read-kameymall-qc-photos";
+  | "articles/how-to-read-kameymall-qc-photos"
+  | "articles/kameymall-warehouse-storage-returns-guide";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
 
@@ -35,6 +36,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",
   "articles/how-to-read-kameymall-qc-photos",
+  "articles/kameymall-warehouse-storage-returns-guide",
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -169,8 +171,8 @@ const english: SiteCopy = {
   language: "Language",
   home: {
     eyebrow: "Independent KameyMall shopping guide · Updated Aug 2026",
-    title: "KameyMall finds, organized for faster shopping",
-    lede: "Browse curated categories, compare listing details, and open every find directly on the destination shopping platform.",
+    title: "KameyMall Spreadsheet 2026: 30 Curated Product Finds",
+    lede: "Browse 30 curated KameyMall spreadsheet finds across shoes, hoodies, jerseys and accessories. Compare prices, use QC guidance and open exact product pages.",
     searchPlaceholder: "Search 30 curated China finds",
     searchLabel: "Search the main product database",
     explore: "Explore featured finds",
@@ -261,7 +263,7 @@ const english: SiteCopy = {
   articles: {
     kicker: "Reverse-shopping SEO library",
     title: "Research-led KameyMall articles",
-    intro: "Four original guides for overseas shoppers researching China product finds, listing checks, warehouse inspection and cross-border cost planning.",
+    intro: "Five original guides for overseas shoppers researching product finds, listing checks, QC, warehouse decisions, returns and cross-border cost planning.",
     read: "Read article",
     cards: [
       { label: "2026 guide", title: "KameyMall Spreadsheet Guide for Overseas Shoppers", body: "A complete workflow for turning a spreadsheet find into a carefully checked cross-border order without treating the first price as the final cost.", action: "Read the full article" },
@@ -270,12 +272,12 @@ const english: SiteCopy = {
     ],
   },
   pageIntros: {
-    finds: { kicker: "Product discovery", title: "Search verified featured finds", intro: "Filter the displayed selection here, or use the main search to open matching results across the complete destination database." },
+    finds: { kicker: "30-product spreadsheet", title: "KameyMall Spreadsheet Finds: 30 Curated Products", intro: "Filter 30 distinct product entries across 10 categories, compare dated CNY and approximate USD prices, then open the exact product detail or live destination listing." },
     categories: { kicker: "Direct collections", title: "Browse every category without a 404", intro: "These destination links have been checked individually, including the corrected Sweatshirts collection." },
     "how-to-buy": { kicker: "Shopping workflow", title: "How to Buy Through KameyMall: Six Agent Stages", intro: "A source-based path from product link and first payment to seller delivery, QC photos, storage and international parcel submission." },
     guides: { kicker: "Guide library", title: "KameyMall Guides for Listings, QC and Shipping", intro: "Three independent guides turn published platform information into practical checks for listings, costs, warehouse photos, storage and delivery." },
     faq: { kicker: "Frequently asked questions", title: "KameyMall FAQ: Orders, QC, Storage and Shipping", intro: "Fact-checked answers separate this independent sheet from the platform’s published purchase, payment, warehouse, return and parcel information." },
-    articles: { kicker: "SEO article library", title: "KameyMall Research for Overseas Shoppers", intro: "Four original 2026 articles cover spreadsheet finds, the agent-shopping workflow, international shipping costs and practical QC-photo checks." },
+    articles: { kicker: "Independent guide library", title: "KameyMall Guides for QC, Shipping, Storage and Returns", intro: "Five source-checked 2026 articles cover spreadsheet finds, the agent-shopping workflow, shipping costs, QC photos, warehouse storage and returns." },
     "guides/how-to-use-kameymall-spreadsheet": { kicker: "Start here", title: "How to use a KameyMall spreadsheet", intro: "A step-by-step method for searching, comparing and validating a find before moving forward." },
     "guides/cny-price-vs-final-cost": { kicker: "Price check", title: "CNY product price vs. final delivered cost", intro: "Separate the number shown on a product card from the complete cost of a cross-border order." },
     "guides/what-to-inspect-before-ordering": { kicker: "Warehouse check", title: "QC Photos, Storage and Returns", intro: "A fact-checked checklist for visible inspection, the published storage period, return timing, packaging and route restrictions." },
@@ -283,6 +285,7 @@ const english: SiteCopy = {
     "articles/how-to-buy-from-kameymall-2026": { kicker: "Fact-checked buying guide", title: "How to Buy Through KameyMall in 2026", intro: "The published agent-shopping workflow, from pasting a product link to QC, storage and international parcel submission." },
     "articles/kameymall-shipping-cost-guide-2026": { kicker: "Cross-border cost guide", title: "KameyMall Shipping Cost Guide 2026", intro: "How to separate the CNY item price from domestic delivery, warehouse-stage choices and international freight." },
     "articles/how-to-read-kameymall-qc-photos": { kicker: "Warehouse inspection guide", title: "How to Read KameyMall QC Photos Before Shipping", intro: "A source-checked method for comparing warehouse photos with the ordered variant, spotting visible problems and acting before the return opportunity closes." },
+    "articles/kameymall-warehouse-storage-returns-guide": { kicker: "Storage and returns guide", title: "KameyMall Warehouse Storage and Returns Guide", intro: "A source-checked timeline for QC review, return decisions, free storage, extended storage and parcel preparation." },
   },
   guidePages: {
     "guides/how-to-use-kameymall-spreadsheet": {
@@ -363,7 +366,7 @@ function cloneEnglish(): SiteCopy {
 const german = cloneEnglish();
 german.nav = { finds: "Fundstücke", categories: "Kategorien", how: "So kaufst du", guides: "Ratgeber", articles: "SEO-Artikel", faq: "FAQ" };
 german.language = "Sprache";
-german.home = { eyebrow: "Unabhängiger KameyMall-Einkaufsratgeber · Aktualisiert Aug. 2026", title: "KameyMall-Fundstücke, übersichtlich für schnelleres Einkaufen", lede: "Durchsuche kuratierte Kategorien, vergleiche Angebotsdetails und öffne jedes Fundstück direkt auf der Zielplattform.", searchPlaceholder: "30 kuratierte China-Fundstücke durchsuchen", searchLabel: "Haupt-Produktdatenbank durchsuchen", explore: "Empfohlene Fundstücke", howAction: "So funktioniert es", categoriesCount: "Kategorien", findsCount: "Produktfundstücke", direct: "Direkt", listingPages: "zu Produktseiten" };
+german.home = { eyebrow: "Unabhängiger KameyMall-Einkaufsratgeber · Aktualisiert Aug. 2026", title: "KameyMall-Tabelle 2026: 30 kuratierte Produktfunde", lede: "Entdecke 30 kuratierte KameyMall-Tabellenfunde aus Schuhen, Hoodies, Trikots und Accessoires. Vergleiche Preise, nutze den QC-Ratgeber und öffne die exakten Produktseiten.", searchPlaceholder: "30 kuratierte China-Fundstücke durchsuchen", searchLabel: "Haupt-Produktdatenbank durchsuchen", explore: "Empfohlene Fundstücke", howAction: "So funktioniert es", categoriesCount: "Kategorien", findsCount: "Produktfundstücke", direct: "Direkt", listingPages: "zu Produktseiten" };
 german.finder = { kicker: "Live-Funddatenbank", verified: "30 geprüfte Angebote", filterPlaceholder: "Angezeigte Artikel filtern...", allCategories: "Alle Kategorien", allListed: "Alle gelistet", clear: "Löschen", item: "Artikel", category: "Kategorie", price: "Preis in USD", status: "Status", open: "Öffnen", original: "Originalangebot", approximate: "ca.", listed: "Gelistet", noMatches: "Keine empfohlenen Fundstücke entsprechen diesen Filtern.", rateNote: "Ungefähre USD-Werte mit ¥1 = $0,1481 am 1. Aug. 2026. Prüfe den aktuellen Preis auf der Zielseite." };
 german.categories = { kicker: "Tabelle durchsuchen", title: "Jedes Fundstück in der richtigen Kategorie", intro: "Jeder Kategorienlink wurde mit der passenden Zielsammlung geprüft, damit du nicht auf einer allgemeinen, unpassenden oder fehlerhaften Seite landest.", open: "Kategorie öffnen", items: {
   shoes: { label: "Schuhe", description: "Sneaker, Laufschuhe, Slides und Alltagsschuhe." }, sweatshirts: { label: "Sweatshirts", description: "Hoodies, Pullover, Strick und Lagenlooks." }, tshirts: { label: "T-Shirts", description: "Kurzarm, Langarm und grafische Shirts." }, jackets: { label: "Jacken", description: "Windbreaker, Daunenjacken und Mäntel." }, pants: { label: "Hosen & Shorts", description: "Jeans, Cargos, Jogginghosen und Shorts." }, headwear: { label: "Kopfbedeckungen", description: "Caps, Mützen und saisonale Modelle." }, accessories: { label: "Accessoires", description: "Taschen, Geldbörsen, Gürtel und kleine Artikel." }, jersey: { label: "Trikots", description: "Vereins-, Nationalteam- und Spielerversionen." }, electronics: { label: "Elektronik", description: "Uhren, Kopfhörer, Lautsprecher und Technik." }, other: { label: "Weitere Fundstücke", description: "Wohnartikel, Spielzeug, Geschenke und Sonstiges." },
@@ -384,7 +387,7 @@ german.articles = { kicker: "SEO-Bibliothek für Reverse Shopping", title: "Rech
 const french = cloneEnglish();
 french.nav = { finds: "Sélections", categories: "Catégories", how: "Comment acheter", guides: "Guides", articles: "Articles SEO", faq: "FAQ" };
 french.language = "Langue";
-french.home = { eyebrow: "Guide d’achat KameyMall indépendant · Mis à jour en août 2026", title: "Les trouvailles KameyMall, organisées pour acheter plus vite", lede: "Parcourez des catégories sélectionnées, comparez les informations et ouvrez chaque trouvaille sur la plateforme de destination.", searchPlaceholder: "Rechercher parmi 30 trouvailles sélectionnées", searchLabel: "Rechercher dans la base principale", explore: "Voir les sélections", howAction: "Fonctionnement", categoriesCount: "catégories", findsCount: "trouvailles", direct: "Direct", listingPages: "fiches produit" };
+french.home = { eyebrow: "Guide d’achat KameyMall indépendant · Mis à jour en août 2026", title: "Tableur KameyMall 2026 : 30 produits sélectionnés", lede: "Parcourez 30 trouvailles KameyMall sélectionnées parmi chaussures, sweats, maillots et accessoires. Comparez les prix, utilisez le guide QC et ouvrez les fiches exactes.", searchPlaceholder: "Rechercher parmi 30 trouvailles sélectionnées", searchLabel: "Rechercher dans la base principale", explore: "Voir les sélections", howAction: "Fonctionnement", categoriesCount: "catégories", findsCount: "trouvailles", direct: "Direct", listingPages: "fiches produit" };
 french.finder = { kicker: "Base de trouvailles en direct", verified: "30 fiches vérifiées", filterPlaceholder: "Filtrer les articles affichés...", allCategories: "Toutes les catégories", allListed: "Tous listés", clear: "Effacer", item: "Article", category: "Catégorie", price: "Prix USD", status: "Statut", open: "Ouvrir", original: "Annonce d’origine", approximate: "env.", listed: "Listé", noMatches: "Aucune sélection ne correspond à ces filtres.", rateNote: "Valeurs USD approximatives avec ¥1 = 0,1481 $ au 1 août 2026. Vérifiez le prix actuel sur la page de destination." };
 french.categories = { kicker: "Parcourir la feuille", title: "Chaque trouvaille dans la bonne catégorie", intro: "Chaque lien a été vérifié avec la collection correspondante afin d’éviter une page générique, sans rapport ou introuvable.", open: "Ouvrir la catégorie", items: {
   shoes: { label: "Chaussures", description: "Baskets, running, claquettes et chaussures du quotidien." }, sweatshirts: { label: "Sweats", description: "Sweats à capuche, pulls, mailles et superpositions." }, tshirts: { label: "T-shirts", description: "Manches courtes, longues et modèles graphiques." }, jackets: { label: "Vestes", description: "Coupe-vent, doudounes, manteaux et extérieur." }, pants: { label: "Pantalons & shorts", description: "Jeans, cargos, joggings et shorts d’été." }, headwear: { label: "Couvre-chefs", description: "Casquettes, bonnets et modèles saisonniers." }, accessories: { label: "Accessoires", description: "Sacs, portefeuilles, ceintures et petits articles." }, jersey: { label: "Maillots", description: "Clubs, équipes nationales et versions joueur." }, electronics: { label: "Électronique", description: "Montres, écouteurs, enceintes et produits tech." }, other: { label: "Autres trouvailles", description: "Maison, jouets, cadeaux et sélections diverses." },
@@ -405,7 +408,7 @@ french.articles = { kicker: "Bibliothèque SEO de reverse shopping", title: "Art
 const spanish = cloneEnglish();
 spanish.nav = { finds: "Hallazgos", categories: "Categorías", how: "Cómo comprar", guides: "Guías", articles: "Artículos SEO", faq: "FAQ" };
 spanish.language = "Idioma";
-spanish.home = { eyebrow: "Guía independiente de compras KameyMall · Actualizada en ago. 2026", title: "Hallazgos de KameyMall, organizados para comprar más rápido", lede: "Explora categorías seleccionadas, compara los datos y abre cada hallazgo directamente en la plataforma de destino.", searchPlaceholder: "Buscar entre 30 hallazgos seleccionados", searchLabel: "Buscar en la base principal", explore: "Ver hallazgos destacados", howAction: "Cómo funciona", categoriesCount: "categorías", findsCount: "hallazgos", direct: "Directo", listingPages: "fichas de producto" };
+spanish.home = { eyebrow: "Guía independiente de compras KameyMall · Actualizada en ago. 2026", title: "Hoja KameyMall 2026: 30 productos seleccionados", lede: "Explora 30 hallazgos seleccionados de KameyMall entre calzado, sudaderas, camisetas deportivas y accesorios. Compara precios, usa la guía QC y abre las fichas exactas.", searchPlaceholder: "Buscar entre 30 hallazgos seleccionados", searchLabel: "Buscar en la base principal", explore: "Ver hallazgos destacados", howAction: "Cómo funciona", categoriesCount: "categorías", findsCount: "hallazgos", direct: "Directo", listingPages: "fichas de producto" };
 spanish.finder = { kicker: "Base de hallazgos en vivo", verified: "30 listados verificados", filterPlaceholder: "Filtrar artículos mostrados...", allCategories: "Todas las categorías", allListed: "Todos listados", clear: "Limpiar", item: "Artículo", category: "Categoría", price: "Precio USD", status: "Estado", open: "Abrir", original: "Listado original", approximate: "aprox.", listed: "Listado", noMatches: "Ningún hallazgo coincide con esos filtros.", rateNote: "Valores USD aproximados con ¥1 = 0,1481 $ el 1 de agosto de 2026. Confirma el precio actual en el destino." };
 spanish.categories = { kicker: "Explorar la hoja", title: "Cada hallazgo en la categoría correcta", intro: "Cada enlace se comprobó con la colección correspondiente para evitar páginas genéricas, ajenas o inexistentes.", open: "Abrir categoría", items: {
   shoes: { label: "Calzado", description: "Zapatillas, running, sandalias y calzado diario." }, sweatshirts: { label: "Sudaderas", description: "Sudaderas con capucha, jerséis y prendas de capa." }, tshirts: { label: "Camisetas", description: "Manga corta, larga y diseños gráficos." }, jackets: { label: "Chaquetas", description: "Cortavientos, plumíferos, abrigos y exterior." }, pants: { label: "Pantalones y shorts", description: "Vaqueros, cargos, chándal y shorts de verano." }, headwear: { label: "Sombreros y gorras", description: "Gorras, gorros y estilos de temporada." }, accessories: { label: "Accesorios", description: "Bolsos, carteras, cinturones y artículos pequeños." }, jersey: { label: "Camisetas deportivas", description: "Clubes, selecciones y versiones de jugador." }, electronics: { label: "Electrónica", description: "Relojes, auriculares, altavoces y tecnología." }, other: { label: "Otros hallazgos", description: "Hogar, juguetes, regalos y artículos variados." },
@@ -426,7 +429,7 @@ spanish.articles = { kicker: "Biblioteca SEO de compra inversa", title: "Artícu
 const italian = cloneEnglish();
 italian.nav = { finds: "Prodotti", categories: "Categorie", how: "Come acquistare", guides: "Guide", articles: "Articoli SEO", faq: "FAQ" };
 italian.language = "Lingua";
-italian.home = { eyebrow: "Guida indipendente agli acquisti KameyMall · Aggiornata ago. 2026", title: "Prodotti KameyMall organizzati per acquisti più rapidi", lede: "Sfoglia categorie selezionate, confronta i dettagli e apri ogni prodotto direttamente sulla piattaforma di destinazione.", searchPlaceholder: "Cerca tra 30 prodotti selezionati", searchLabel: "Cerca nel database principale", explore: "Esplora i prodotti", howAction: "Come funziona", categoriesCount: "categorie", findsCount: "prodotti trovati", direct: "Diretto", listingPages: "schede prodotto" };
+italian.home = { eyebrow: "Guida indipendente agli acquisti KameyMall · Aggiornata ago. 2026", title: "Foglio KameyMall 2026: 30 prodotti selezionati", lede: "Sfoglia 30 prodotti KameyMall selezionati tra scarpe, felpe, maglie sportive e accessori. Confronta i prezzi, usa la guida QC e apri le schede esatte.", searchPlaceholder: "Cerca tra 30 prodotti selezionati", searchLabel: "Cerca nel database principale", explore: "Esplora i prodotti", howAction: "Come funziona", categoriesCount: "categorie", findsCount: "prodotti trovati", direct: "Diretto", listingPages: "schede prodotto" };
 italian.finder = { kicker: "Database prodotti live", verified: "30 inserzioni verificate", filterPlaceholder: "Filtra gli articoli mostrati...", allCategories: "Tutte le categorie", allListed: "Tutti elencati", clear: "Cancella", item: "Articolo", category: "Categoria", price: "Prezzo USD", status: "Stato", open: "Apri", original: "Inserzione originale", approximate: "circa", listed: "Elencato", noMatches: "Nessun prodotto corrisponde ai filtri.", rateNote: "Valori USD indicativi con ¥1 = $0,1481 il 1 agosto 2026. Verifica il prezzo attuale sulla pagina di destinazione." };
 italian.categories = { kicker: "Sfoglia il foglio", title: "Ogni prodotto nella categoria corretta", intro: "Ogni collegamento è stato verificato con la raccolta corrispondente per evitare pagine generiche, non pertinenti o mancanti.", open: "Apri categoria", items: {
   shoes: { label: "Scarpe", description: "Sneaker, running, ciabatte e calzature quotidiane." }, sweatshirts: { label: "Felpe", description: "Felpe con cappuccio, pullover e maglieria." }, tshirts: { label: "T-shirt", description: "Maniche corte, lunghe e grafiche." }, jackets: { label: "Giacche", description: "Antivento, piumini, cappotti e capispalla." }, pants: { label: "Pantaloni e shorts", description: "Jeans, cargo, tute e shorts estivi." }, headwear: { label: "Copricapi", description: "Cappellini, berretti e modelli stagionali." }, accessories: { label: "Accessori", description: "Borse, portafogli, cinture e piccoli articoli." }, jersey: { label: "Maglie sportive", description: "Club, nazionali e versioni giocatore." }, electronics: { label: "Elettronica", description: "Orologi, cuffie, altoparlanti e tecnologia." }, other: { label: "Altri prodotti", description: "Casa, giocattoli, regali e articoli vari." },
@@ -447,7 +450,7 @@ italian.articles = { kicker: "Biblioteca SEO reverse shopping", title: "Articoli
 const polish = cloneEnglish();
 polish.nav = { finds: "Znaleziska", categories: "Kategorie", how: "Jak kupować", guides: "Poradniki", articles: "Artykuły SEO", faq: "FAQ" };
 polish.language = "Język";
-polish.home = { eyebrow: "Niezależny poradnik zakupowy KameyMall · Aktualizacja: sierpień 2026", title: "Znaleziska KameyMall uporządkowane do szybszych zakupów", lede: "Przeglądaj wybrane kategorie, porównuj dane i otwieraj każdy produkt bezpośrednio na stronie docelowej.", searchPlaceholder: "Szukaj wśród 30 wybranych produktów", searchLabel: "Przeszukaj główną bazę produktów", explore: "Zobacz polecane produkty", howAction: "Jak to działa", categoriesCount: "kategorii", findsCount: "znalezisk", direct: "Bezpośrednio", listingPages: "do kart produktów" };
+polish.home = { eyebrow: "Niezależny poradnik zakupowy KameyMall · Aktualizacja: sierpień 2026", title: "Arkusz KameyMall 2026: 30 wybranych produktów", lede: "Przeglądaj 30 wybranych produktów KameyMall: buty, bluzy, koszulki sportowe i akcesoria. Porównuj ceny, korzystaj z poradnika QC i otwieraj dokładne karty.", searchPlaceholder: "Szukaj wśród 30 wybranych produktów", searchLabel: "Przeszukaj główną bazę produktów", explore: "Zobacz polecane produkty", howAction: "Jak to działa", categoriesCount: "kategorii", findsCount: "znalezisk", direct: "Bezpośrednio", listingPages: "do kart produktów" };
 polish.finder = { kicker: "Baza produktów na żywo", verified: "30 sprawdzonych ofert", filterPlaceholder: "Filtruj widoczne produkty...", allCategories: "Wszystkie kategorie", allListed: "Wszystkie aktywne", clear: "Wyczyść", item: "Produkt", category: "Kategoria", price: "Cena USD", status: "Status", open: "Otwórz", original: "Oferta źródłowa", approximate: "ok.", listed: "Aktywna", noMatches: "Brak produktów zgodnych z filtrami.", rateNote: "Orientacyjne wartości USD przy ¥1 = 0,1481 USD z 1 sierpnia 2026. Sprawdź bieżącą cenę na stronie docelowej." };
 polish.categories = { kicker: "Przeglądaj arkusz", title: "Każdy produkt w odpowiedniej kategorii", intro: "Każdy link sprawdzono z właściwą kolekcją, aby nie prowadził do strony ogólnej, niepowiązanej lub błędu 404.", open: "Otwórz kategorię", items: {
   shoes: { label: "Buty", description: "Sneakersy, biegowe, klapki i obuwie codzienne." }, sweatshirts: { label: "Bluzy", description: "Bluzy z kapturem, swetry i warstwy." }, tshirts: { label: "T-shirty", description: "Krótki i długi rękaw oraz grafiki." }, jackets: { label: "Kurtki", description: "Wiatrówki, puchówki, płaszcze i odzież wierzchnia." }, pants: { label: "Spodnie i szorty", description: "Jeansy, cargo, dresy i letnie szorty." }, headwear: { label: "Nakrycia głowy", description: "Czapki z daszkiem, beanie i modele sezonowe." }, accessories: { label: "Akcesoria", description: "Torby, portfele, paski i drobne produkty." }, jersey: { label: "Koszulki sportowe", description: "Kluby, reprezentacje i wersje zawodnicze." }, electronics: { label: "Elektronika", description: "Zegarki, słuchawki, głośniki i technologia." }, other: { label: "Inne znaleziska", description: "Dom, zabawki, prezenty i pozostałe produkty." },
@@ -468,7 +471,7 @@ polish.articles = { kicker: "Biblioteka SEO zakupów odwrotnych", title: "Artyku
 const localizedPageIntros: Record<Locale, Partial<SiteCopy["pageIntros"]>> = {
   en: {},
   de: {
-    finds: { kicker: "Produktsuche", title: "Geprüfte Fundstücke durchsuchen", intro: "Filtere die Auswahl oder öffne mit der Hauptsuche passende Ergebnisse in der vollständigen Zieldatenbank." },
+    finds: { kicker: "Tabelle mit 30 Produkten", title: "KameyMall-Tabelle: 30 kuratierte Produkte", intro: "Filtere 30 unterschiedliche Einträge in 10 Kategorien, vergleiche datierte CNY- und ungefähre USD-Preise und öffne die exakte Detail- oder Zielseite." },
     categories: { kicker: "Direkte Sammlungen", title: "Alle Kategorien ohne 404 durchsuchen", intro: "Alle Zieladressen wurden geprüft, einschließlich der korrigierten Sweatshirts-Sammlung." },
     "how-to-buy": { kicker: "Einkaufsablauf", title: "Ein sorgfältiger Weg von der Suche bis zur Lieferung", intro: "Prüfe Produkt, Kosten und Lagerinformationen vor dem internationalen Versand." },
     guides: { kicker: "Ratgeberbibliothek", title: "Drei Ratgeber mit jeweils eigener Seite", intro: "Öffne eine vollständige, teilbare Seite statt eines Sprungs innerhalb der Startseite." },
@@ -476,7 +479,7 @@ const localizedPageIntros: Record<Locale, Partial<SiteCopy["pageIntros"]>> = {
     articles: { kicker: "SEO-Artikelbibliothek", title: "Reverse-Shopping-Recherche für Käufer im Ausland", intro: "Originale Langformartikel zu Suche, Prüfung, Kosten, Lager und Lieferung." },
   },
   fr: {
-    finds: { kicker: "Découverte produit", title: "Rechercher des sélections vérifiées", intro: "Filtrez la sélection ou ouvrez les résultats correspondants dans la base complète." },
+    finds: { kicker: "Tableur de 30 produits", title: "Tableur KameyMall : 30 produits sélectionnés", intro: "Filtrez 30 fiches distinctes dans 10 catégories, comparez les prix CNY datés et USD approximatifs, puis ouvrez la page exacte." },
     categories: { kicker: "Collections directes", title: "Parcourir les catégories sans erreur 404", intro: "Toutes les destinations ont été vérifiées, y compris la collection Sweats corrigée." },
     "how-to-buy": { kicker: "Parcours d’achat", title: "Une méthode attentive de la découverte à la livraison", intro: "Vérifiez produit, coût et contrôle d’entrepôt avant l’expédition internationale." },
     guides: { kicker: "Bibliothèque de guides", title: "Trois guides sur des pages indépendantes", intro: "Ouvrez un guide complet et partageable au lieu d’une ancre sur l’accueil." },
@@ -484,7 +487,7 @@ const localizedPageIntros: Record<Locale, Partial<SiteCopy["pageIntros"]>> = {
     articles: { kicker: "Bibliothèque d’articles SEO", title: "Recherche de reverse shopping pour acheteurs internationaux", intro: "Articles originaux sur découverte, vérification, coûts, entrepôt et livraison." },
   },
   es: {
-    finds: { kicker: "Descubrimiento", title: "Buscar hallazgos verificados", intro: "Filtra la selección o abre resultados coincidentes en la base completa." },
+    finds: { kicker: "Hoja de 30 productos", title: "Hoja KameyMall: 30 productos seleccionados", intro: "Filtra 30 fichas distintas en 10 categorías, compara precios CNY fechados y USD aproximados y abre el detalle o destino exacto." },
     categories: { kicker: "Colecciones directas", title: "Explora categorías sin errores 404", intro: "Todos los destinos están comprobados, incluida la colección corregida de Sudaderas." },
     "how-to-buy": { kicker: "Proceso de compra", title: "Un camino cuidadoso del hallazgo a la entrega", intro: "Verifica producto, coste y almacén antes del envío internacional." },
     guides: { kicker: "Biblioteca de guías", title: "Tres guías en páginas independientes", intro: "Abre una guía completa y compartible en vez de un ancla de la portada." },
@@ -492,7 +495,7 @@ const localizedPageIntros: Record<Locale, Partial<SiteCopy["pageIntros"]>> = {
     articles: { kicker: "Biblioteca SEO", title: "Investigación de compra inversa para compradores internacionales", intro: "Artículos originales sobre búsqueda, verificación, costes, almacén y entrega." },
   },
   it: {
-    finds: { kicker: "Ricerca prodotti", title: "Cerca prodotti verificati", intro: "Filtra la selezione o apri i risultati corrispondenti nel database completo." },
+    finds: { kicker: "Foglio con 30 prodotti", title: "Foglio KameyMall: 30 prodotti selezionati", intro: "Filtra 30 schede distinte in 10 categorie, confronta CNY datati e USD indicativi e apri il dettaglio o la destinazione esatta." },
     categories: { kicker: "Raccolte dirette", title: "Sfoglia le categorie senza errori 404", intro: "Tutte le destinazioni sono state verificate, compresa la raccolta Felpe corretta." },
     "how-to-buy": { kicker: "Percorso d’acquisto", title: "Un metodo attento dalla scoperta alla consegna", intro: "Verifica prodotto, costi e dati del magazzino prima della spedizione." },
     guides: { kicker: "Raccolta guide", title: "Tre guide su pagine indipendenti", intro: "Apri una guida completa e condivisibile invece di un’ancora in home page." },
@@ -500,7 +503,7 @@ const localizedPageIntros: Record<Locale, Partial<SiteCopy["pageIntros"]>> = {
     articles: { kicker: "Biblioteca articoli SEO", title: "Ricerca reverse shopping per acquirenti internazionali", intro: "Articoli originali su scoperta, verifica, costi, magazzino e consegna." },
   },
   pl: {
-    finds: { kicker: "Wyszukiwanie produktów", title: "Szukaj sprawdzonych znalezisk", intro: "Filtruj wybór lub otwórz pasujące wyniki w pełnej bazie docelowej." },
+    finds: { kicker: "Arkusz 30 produktów", title: "Arkusz KameyMall: 30 wybranych produktów", intro: "Filtruj 30 różnych kart w 10 kategoriach, porównuj datowane CNY i orientacyjne USD oraz otwieraj dokładne szczegóły lub stronę docelową." },
     categories: { kicker: "Bezpośrednie kolekcje", title: "Przeglądaj kategorie bez błędów 404", intro: "Wszystkie adresy sprawdzono, w tym poprawioną kategorię Bluzy." },
     "how-to-buy": { kicker: "Proces zakupowy", title: "Uważna droga od znalezienia do dostawy", intro: "Sprawdź produkt, koszt i dane magazynowe przed wysyłką." },
     guides: { kicker: "Biblioteka poradników", title: "Trzy poradniki na osobnych stronach", intro: "Otwórz pełną stronę zamiast kotwicy na stronie głównej." },
@@ -992,6 +995,48 @@ for (const language of languages) {
   copy.pageIntros["articles/how-to-read-kameymall-qc-photos"] = qcArticleUi[language.code].intro;
 }
 
+const storageArticleUi: Record<Locale, { card: CardCopy; intro: { kicker: string; title: string; intro: string }; libraryIntro: string }> = {
+  en: {
+    card: { label: "Storage & returns", title: "KameyMall Warehouse Storage and Returns Guide", body: "Separate the short return decision from the longer storage countdown, then plan QC, consolidation, packaging and parcel submission with dated evidence.", action: "Read the storage guide" },
+    intro: { kicker: "Storage and returns guide", title: "KameyMall Warehouse Storage and Returns Guide", intro: "A source-checked timeline for QC review, return decisions, free storage, extended storage and parcel preparation." },
+    libraryIntro: "Five original guides cover product discovery, the agent workflow, shipping costs, QC photos, warehouse storage and returns.",
+  },
+  de: {
+    card: { label: "Lager & Rückgabe", title: "KameyMall-Lagerung und Rückgabe", body: "Trenne die kurze Rückgabeentscheidung vom längeren Lager-Countdown und plane QC, Konsolidierung, Verpackung und Paket mit datierten Belegen.", action: "Lagerratgeber lesen" },
+    intro: { kicker: "Lager- und Rückgaberatgeber", title: "KameyMall-Lagerung und Rückgabe", intro: "Ein quellengeprüfter Zeitplan für QC, Rückgabe, kostenlose und verlängerte Lagerung sowie Paketvorbereitung." },
+    libraryIntro: "Fünf originale Ratgeber behandeln Produktsuche, Agentenablauf, Versandkosten, QC-Fotos, Lagerung und Rückgabe.",
+  },
+  fr: {
+    card: { label: "Stockage & retours", title: "Stockage et retours à l’entrepôt KameyMall", body: "Distinguez la décision de retour rapide du stockage plus long, puis planifiez QC, consolidation, emballage et colis avec des preuves datées.", action: "Lire le guide stockage" },
+    intro: { kicker: "Guide stockage et retours", title: "Stockage et retours à l’entrepôt KameyMall", intro: "Une chronologie vérifiée pour le QC, la décision de retour, le stockage gratuit ou prolongé et la préparation du colis." },
+    libraryIntro: "Cinq guides originaux couvrent découverte, parcours d’agent, frais d’envoi, photos QC, stockage et retours.",
+  },
+  es: {
+    card: { label: "Almacén y devoluciones", title: "Guía de almacén y devoluciones KameyMall", body: "Separa la decisión rápida de devolución del plazo de almacenamiento y planifica QC, consolidación, embalaje y paquete con pruebas fechadas.", action: "Leer guía de almacén" },
+    intro: { kicker: "Guía de almacén y devoluciones", title: "Guía de almacén y devoluciones KameyMall", intro: "Un calendario verificado para QC, devoluciones, almacenamiento gratuito o ampliado y preparación del paquete." },
+    libraryIntro: "Cinco guías originales cubren hallazgos, proceso de agente, costes de envío, fotos QC, almacén y devoluciones.",
+  },
+  it: {
+    card: { label: "Deposito e resi", title: "Guida KameyMall a deposito e resi", body: "Separa la rapida decisione sul reso dal periodo di deposito e pianifica QC, consolidamento, imballaggio e pacco con prove datate.", action: "Leggi guida deposito" },
+    intro: { kicker: "Guida a deposito e resi", title: "Guida KameyMall a deposito e resi", intro: "Una sequenza verificata per QC, decisioni di reso, deposito gratuito o esteso e preparazione del pacco." },
+    libraryIntro: "Cinque guide originali coprono prodotti, processo agente, costi di spedizione, foto QC, deposito e resi.",
+  },
+  pl: {
+    card: { label: "Magazyn i zwroty", title: "Magazyn KameyMall i zwroty — poradnik", body: "Oddziel szybką decyzję o zwrocie od dłuższego okresu magazynowania i planuj QC, łączenie, pakowanie oraz paczkę z datowanymi dowodami.", action: "Przeczytaj poradnik" },
+    intro: { kicker: "Poradnik magazynu i zwrotów", title: "Magazyn KameyMall i zwroty — poradnik", intro: "Sprawdzona oś czasu dla QC, decyzji o zwrocie, bezpłatnego lub przedłużonego magazynu i przygotowania paczki." },
+    libraryIntro: "Pięć oryginalnych poradników obejmuje produkty, proces agenta, koszty wysyłki, zdjęcia QC, magazyn i zwroty.",
+  },
+};
+
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  const update = storageArticleUi[language.code];
+  copy.articles.cards.push(update.card);
+  copy.articles.intro = update.libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: update.libraryIntro };
+  copy.pageIntros["articles/kameymall-warehouse-storage-returns-guide"] = update.intro;
+}
+
 export const copies: Record<Locale, SiteCopy> = {
   en: english,
   de: german,
@@ -1042,4 +1087,5 @@ export const articleRoutes: StaticRouteKey[] = [
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",
   "articles/how-to-read-kameymall-qc-photos",
+  "articles/kameymall-warehouse-storage-returns-guide",
 ];

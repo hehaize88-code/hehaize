@@ -36,7 +36,7 @@ export type CatalogCopy = {
 
 export const catalogCopies: Record<Locale, CatalogCopy> = {
   en: {
-    homeSeoTitle: "KameyMall Sheet & Spreadsheet Finds | Shopping Guide",
+    homeSeoTitle: "KameyMall Spreadsheet 2026: 30 Product Finds & QC Guide",
     productSeoTitle: "{name} KameyMall Find | Price & Buying Notes",
     categorySeoTitle: "{category} KameyMall Finds | Curated Product List",
     categoryHeading: "{category} KameyMall Finds",
@@ -74,7 +74,7 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Browse three checked {category} finds with source prices, product references and independent detail pages.",
   },
   de: {
-    homeSeoTitle: "KameyMall-Tabelle und Produktfunde | Einkaufsratgeber",
+    homeSeoTitle: "KameyMall-Tabelle 2026: 30 Produktfunde & QC-Ratgeber",
     productSeoTitle: "{name} bei KameyMall | Preis und Kaufhinweise",
     categorySeoTitle: "KameyMall-Fundstücke: {category} | Kuratierte Produktliste",
     categoryHeading: "KameyMall-Fundstücke: {category}",
@@ -112,7 +112,7 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Drei geprüfte {category}-Fundstücke mit Quellpreisen, Produktreferenzen und eigenen Detailseiten.",
   },
   fr: {
-    homeSeoTitle: "Tableur KameyMall et produits sélectionnés | Guide d’achat",
+    homeSeoTitle: "Tableur KameyMall 2026 : 30 produits et guide QC",
     productSeoTitle: "{name} sur KameyMall | Prix et conseils d’achat",
     categorySeoTitle: "Trouvailles KameyMall {category} | Liste vérifiée",
     categoryHeading: "Trouvailles KameyMall : {category}",
@@ -150,7 +150,7 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Trois trouvailles {category} vérifiées avec prix source, références et pages de détail indépendantes.",
   },
   es: {
-    homeSeoTitle: "Hoja KameyMall y productos seleccionados | Guía de compra",
+    homeSeoTitle: "Hoja KameyMall 2026: 30 productos y guía QC",
     productSeoTitle: "{name} en KameyMall | Precio y consejos de compra",
     categorySeoTitle: "Productos KameyMall de {category} | Lista verificada",
     categoryHeading: "Productos KameyMall de {category}",
@@ -188,7 +188,7 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Tres hallazgos de {category} comprobados con precios fuente, referencias y páginas de detalle independientes.",
   },
   it: {
-    homeSeoTitle: "Foglio KameyMall e prodotti selezionati | Guida acquisti",
+    homeSeoTitle: "Foglio KameyMall 2026: 30 prodotti e guida QC",
     productSeoTitle: "{name} su KameyMall | Prezzo e consigli d’acquisto",
     categorySeoTitle: "Prodotti KameyMall: {category} | Elenco verificato",
     categoryHeading: "Prodotti KameyMall: {category}",
@@ -226,7 +226,7 @@ export const catalogCopies: Record<Locale, CatalogCopy> = {
     categoryMeta: "Tre prodotti {category} verificati con prezzi fonte, riferimenti e pagine di dettaglio indipendenti.",
   },
   pl: {
-    homeSeoTitle: "Arkusz KameyMall i wybrane produkty | Poradnik zakupowy",
+    homeSeoTitle: "Arkusz KameyMall 2026: 30 produktów i poradnik QC",
     productSeoTitle: "{name} w KameyMall | Cena i wskazówki zakupowe",
     categorySeoTitle: "Produkty KameyMall: {category} | Sprawdzona lista",
     categoryHeading: "Produkty KameyMall: {category}",

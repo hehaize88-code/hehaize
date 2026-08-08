@@ -1,4 +1,5 @@
 import type { Locale } from "./site-content";
+import { warehouseStorageArticles } from "./site-article-storage";
 
 type ProseSection = { heading: string; paragraphs: string[]; bullets?: string[] };
 
@@ -17,18 +18,23 @@ export type ArticlePageContent = {
   seoDescription: string;
 };
 
-export type AdditionalArticleRoute =
+type LegacyAdditionalArticleRoute =
   | "articles/how-to-buy-from-kameymall-2026"
   | "articles/kameymall-shipping-cost-guide-2026"
   | "articles/how-to-read-kameymall-qc-photos";
+
+export type AdditionalArticleRoute =
+  | LegacyAdditionalArticleRoute
+  | "articles/kameymall-warehouse-storage-returns-guide";
 
 export const additionalArticleRoutes: AdditionalArticleRoute[] = [
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",
   "articles/how-to-read-kameymall-qc-photos",
+  "articles/kameymall-warehouse-storage-returns-guide",
 ];
 
-const english: Record<AdditionalArticleRoute, ArticlePageContent> = {
+const english: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
   "articles/how-to-buy-from-kameymall-2026": {
     label: "Fact-checked buying guide",
     title: "How to Buy Through KameyMall in 2026",
@@ -282,7 +288,7 @@ const english: Record<AdditionalArticleRoute, ArticlePageContent> = {
   },
 };
 
-const german: Record<AdditionalArticleRoute, ArticlePageContent> = {
+const german: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
   "articles/how-to-buy-from-kameymall-2026": {
     label: "Faktengeprüfter Einkaufsratgeber",
     title: "So kaufst du 2026 über KameyMall",
@@ -356,7 +362,7 @@ const german: Record<AdditionalArticleRoute, ArticlePageContent> = {
   },
 };
 
-const french: Record<AdditionalArticleRoute, ArticlePageContent> = {
+const french: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
   "articles/how-to-buy-from-kameymall-2026": {
     label: "Guide d’achat vérifié",
     title: "Comment acheter via KameyMall en 2026",
@@ -430,7 +436,7 @@ const french: Record<AdditionalArticleRoute, ArticlePageContent> = {
   },
 };
 
-const spanish: Record<AdditionalArticleRoute, ArticlePageContent> = {
+const spanish: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
   "articles/how-to-buy-from-kameymall-2026": {
     label: "Guía de compra verificada",
     title: "Cómo comprar mediante KameyMall en 2026",
@@ -504,7 +510,7 @@ const spanish: Record<AdditionalArticleRoute, ArticlePageContent> = {
   },
 };
 
-const italian: Record<AdditionalArticleRoute, ArticlePageContent> = {
+const italian: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
   "articles/how-to-buy-from-kameymall-2026": {
     label: "Guida all’acquisto verificata",
     title: "Come acquistare tramite KameyMall nel 2026",
@@ -578,7 +584,7 @@ const italian: Record<AdditionalArticleRoute, ArticlePageContent> = {
   },
 };
 
-const polish: Record<AdditionalArticleRoute, ArticlePageContent> = {
+const polish: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
   "articles/how-to-buy-from-kameymall-2026": {
     label: "Zweryfikowany poradnik zakupowy",
     title: "Jak kupować przez KameyMall w 2026 roku",
@@ -653,12 +659,12 @@ const polish: Record<AdditionalArticleRoute, ArticlePageContent> = {
 };
 
 export const additionalArticles: Record<Locale, Record<AdditionalArticleRoute, ArticlePageContent>> = {
-  en: english,
-  de: german,
-  fr: french,
-  es: spanish,
-  it: italian,
-  pl: polish,
+  en: { ...english, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.en },
+  de: { ...german, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.de },
+  fr: { ...french, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.fr },
+  es: { ...spanish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.es },
+  it: { ...italian, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.it },
+  pl: { ...polish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.pl },
 };
 
 function articleStructure(pages: Record<AdditionalArticleRoute, ArticlePageContent>) {

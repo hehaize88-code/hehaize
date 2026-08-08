@@ -14,6 +14,7 @@ import {
   StaticRouteKey,
 } from "./site-content";
 import { additionalArticles, additionalArticleRoutes } from "./site-articles";
+import { priorityCategoryEditorial } from "./site-category-editorial";
 import { catalogCopies } from "./site-catalog-copy";
 import {
   categoryDestinations,
@@ -452,6 +453,7 @@ function CategoryCatalogPage({ locale, category }: { locale: Locale; category: C
   const catalog = catalogCopies[locale];
   const categoryLabel = copy.categories.items[category].label;
   const categoryProducts = productsForCategory(category);
+  const editorial = priorityCategoryEditorial[locale][category];
   return (
     <>
       <section className="catalog-hero">
@@ -463,8 +465,8 @@ function CategoryCatalogPage({ locale, category }: { locale: Locale; category: C
         <div className="catalog-hero-layout">
           <div>
             <p className="section-kicker">{catalog.categoryKicker}</p>
-            <h1>{catalog.categoryHeading.replace("{category}", categoryLabel)}</h1>
-            <p>{copy.categories.items[category].description} {catalog.categoryIntro}</p>
+            <h1>{editorial?.heading ?? catalog.categoryHeading.replace("{category}", categoryLabel)}</h1>
+            <p>{editorial?.intro ?? `${copy.categories.items[category].description} ${catalog.categoryIntro}`}</p>
           </div>
           <div className="catalog-hero-actions">
             <span><strong>{categoryProducts.length}</strong> {catalog.productsFound}</span>
@@ -476,6 +478,26 @@ function CategoryCatalogPage({ locale, category }: { locale: Locale; category: C
         <div className="catalog-grid">
           {categoryProducts.map((product) => <ProductCard key={product.slug} locale={locale} product={product} />)}
         </div>
+        {editorial ? (
+          <section className="category-editorial" aria-labelledby={`category-editorial-${category}`}>
+            <div className="category-editorial-copy">
+              <p className="section-kicker">{copy.categories.items[category].label}</p>
+              <h2 id={`category-editorial-${category}`}>{editorial.detailTitle}</h2>
+              {editorial.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </div>
+            <div className="category-editorial-checks">
+              <ol>
+                {editorial.checks.map((check, index) => (
+                  <li key={check}><span>{String(index + 1).padStart(2, "0")}</span><p>{check}</p></li>
+                ))}
+              </ol>
+              <h3>{editorial.relatedTitle}</h3>
+              <div className="category-editorial-links">
+                {editorial.related.map((link) => <a key={link.route} href={routeHref(locale, link.route)}>{link.label} <ArrowIcon /></a>)}
+              </div>
+            </div>
+          </section>
+        ) : null}
         <a className="catalog-back-link" href={routeHref(locale, "categories")}>← {catalog.allCategories}</a>
       </section>
     </>
@@ -714,7 +736,7 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            name: catalogCopies[locale].categoryHeading.replace("{category}", categoryLabel ?? ""),
+            name: priorityCategoryEditorial[locale][category]?.heading ?? catalogCopies[locale].categoryHeading.replace("{category}", categoryLabel ?? ""),
             url: canonical,
             inLanguage: locale,
             mainEntity: {

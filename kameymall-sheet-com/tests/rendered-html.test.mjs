@@ -64,6 +64,7 @@ test("renders every requested independent page", async () => {
     "/articles/how-to-buy-from-kameymall-2026",
     "/articles/kameymall-shipping-cost-guide-2026",
     "/articles/how-to-read-kameymall-qc-photos",
+    "/articles/kameymall-warehouse-storage-returns-guide",
     "/categories/shoes",
     "/products/new-balance-1906r",
     "/fr/categories/shoes",
@@ -82,7 +83,7 @@ test("keeps complete translated page structure", async () => {
   const frenchGuide = await render(worker, "/fr/guides/how-to-use-kameymall-spreadsheet");
   assert.equal(frenchHome.status, 200);
   const homeHtml = await frenchHome.text();
-  assert.match(homeHtml, /Les trouvailles KameyMall/);
+  assert.match(homeHtml, /Tableur KameyMall 2026/);
   assert.match(homeHtml, /Articles SEO/);
   assert.match(homeHtml, /Articles KameyMall (?:vérifiés|fondés sur la recherche)/i);
   assert.equal(frenchGuide.status, 200);
@@ -112,7 +113,7 @@ test("keeps every localized content module as complete as English", async () => 
     assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
     assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
     assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
-    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 4, `${prefix || "/"} article cards`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 5, `${prefix || "/"} article cards`);
     assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
 
     const homeImages = (homeHtml.match(/<img\b/g) ?? []).length;
@@ -330,7 +331,7 @@ test("keeps the complete homepage in compact no-swipe mobile grids", async () =>
   assert.equal((html.match(/class="category-card"/g) ?? []).length, 10);
   assert.equal((html.match(/<ol class="step-list">[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g) ?? []).length, 6);
   assert.equal((html.match(/class="guide-card(?: |")/g) ?? []).length, 3);
-  assert.equal((html.match(/class="article-card"/g) ?? []).length, 4);
+  assert.equal((html.match(/class="article-card"/g) ?? []).length, 5);
   assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 11);
   assert.doesNotMatch(html, /<details\b[^>]*\bopen\b/i, "homepage FAQs and language menu start collapsed");
 });
@@ -395,6 +396,7 @@ const auditedRoutes = [
   "/articles/how-to-buy-from-kameymall-2026",
   "/articles/kameymall-shipping-cost-guide-2026",
   "/articles/how-to-read-kameymall-qc-photos",
+  "/articles/kameymall-warehouse-storage-returns-guide",
   ...categoryRoutes,
   ...productRoutes,
 ];
@@ -403,7 +405,7 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-test("uses the correct root HTML language on all 324 canonical pages", async () => {
+test("uses the correct root HTML language on all 330 canonical pages", async () => {
   const worker = await loadWorker();
   const englishImageCounts = new Map();
   const englishSectionCounts = new Map();
@@ -555,6 +557,54 @@ test("publishes a complete source-checked QC guide in all six languages", async 
   const englishProse = englishHtml.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
   const englishWords = visibleText(englishProse).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
   assert.ok(englishWords.length >= 1200 && englishWords.length <= 1800, `English QC guide has ${englishWords.length} visible words`);
+});
+
+test("publishes a complete source-checked warehouse storage and returns guide in all six languages", async () => {
+  const worker = await loadWorker();
+  const route = "/articles/kameymall-warehouse-storage-returns-guide";
+  let englishParagraphCount = 0;
+
+  for (const prefix of locales) {
+    const pathname = `${prefix}${route}`;
+    const response = await render(worker, pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+    const prose = html.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+    const paragraphCount = (prose.match(/<p\b/g) ?? []).length;
+    const bulletCount = (prose.match(/<li\b/g) ?? []).length;
+
+    if (!prefix) englishParagraphCount = paragraphCount;
+    assert.equal(paragraphCount, englishParagraphCount, `${pathname} paragraph parity`);
+    assert.equal(bulletCount, 6, `${pathname} checklist parity`);
+    assert.match(html, /"@type":"Article"/, `${pathname} Article structured data`);
+    assert.match(html, /"@type":"BreadcrumbList"/, `${pathname} breadcrumb structured data`);
+  }
+
+  const englishHtml = await (await render(worker, route)).text();
+  const englishProse = englishHtml.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+  const englishWords = visibleText(englishProse).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+  assert.ok(englishWords.length >= 1200 && englishWords.length <= 1800, `English storage guide has ${englishWords.length} visible words`);
+});
+
+test("uses the focused homepage metadata and deepens the three priority category pages", async () => {
+  const worker = await loadWorker();
+  const homeHtml = await (await render(worker, "/")).text();
+  assert.match(homeHtml, /<title>KameyMall Spreadsheet 2026: 30 Product Finds &amp; QC Guide<\/title>/);
+  assert.match(homeHtml, /<h1>KameyMall Spreadsheet 2026: 30 Curated Product Finds<\/h1>/);
+  assert.match(homeHtml, /Browse 30 curated KameyMall spreadsheet finds across shoes, hoodies, jerseys and accessories/);
+
+  const expectations = [
+    ["/categories/shoes", "KameyMall Shoes Spreadsheet: 3 Curated Finds", "How to compare these KameyMall shoe finds"],
+    ["/categories/sweatshirts", "KameyMall Hoodie and Sweatshirt Finds", "Compare the garment, not only the product name"],
+    ["/categories/jersey", "KameyMall Jersey Spreadsheet: 3 Curated Finds", "How to verify a multi-style jersey listing"],
+  ];
+  for (const [route, h1, h2] of expectations) {
+    const html = await (await render(worker, route)).text();
+    assert.ok(html.includes(`<h1>${h1}</h1>`), `${route} focused H1`);
+    assert.ok(html.includes(`<h2 id="category-editorial-`), `${route} editorial block`);
+    assert.ok(html.includes(h2), `${route} editorial heading`);
+    assert.equal((html.match(/class="category-editorial"/g) ?? []).length, 1, `${route} single editorial block`);
+  }
 });
 
 function externalActions(html) {
