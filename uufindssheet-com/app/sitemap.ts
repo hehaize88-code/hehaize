@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
 import { guides } from "./guides/article-data";
 import { products } from "./products/product-data";
+import { categoryLandings } from "./categories/category-data";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-23");
-  const articleUpdate = new Date("2026-07-29");
+  const articleUpdate = new Date("2026-08-08");
+  const categoryUpdate = new Date("2026-08-08");
   const trustPaths = ["about", "contact", "editorial-policy", "privacy", "terms"];
   const localizedPaths = [
     "finds", "products", "how-it-works", "articles", "faq",
@@ -47,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly" as const,
       priority: 0.85,
+    })),
+    ...categoryLandings.map((category) => ({
+      url: `https://uufindssheet.com/categories/${category.slug}/`,
+      lastModified: categoryUpdate,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
     })),
     ...guides.map((guide) => ({
       url: `https://uufindssheet.com/guides/${guide.slug}/`,

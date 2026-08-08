@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uufindssheet.com"),
-  title: "UUFinds Spreadsheet Guide & QC Finder Routes | UUFinds Sheet",
-  description: "An independent guide to researching products with UUFinds QC tools and exploring matching Shoes, Hoodies, T-Shirts and more on the main site.",
+  title: "UUFinds Spreadsheet 2026: Product Finds & QC Guide",
+  description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
   alternates: {
     canonical: "/",
     languages: { "x-default": "/", "en-US": "/", "en-GB": "/en-gb/", de: "/de/", pl: "/pl/", "pt-BR": "/pt-br/" },
   },
   openGraph: {
-    title: "UUFinds Sheet — Research First, Browse Smarter",
-    description: "Independent UUFinds spreadsheet and QC research guide with direct main-site category routes.",
+    title: "UUFinds Spreadsheet 2026: Product Finds & QC Guide",
+    description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
     url: "https://uufindssheet.com/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UUFinds Sheet — Research First, Browse Smarter",
-    description: "Independent UUFinds spreadsheet and QC research guide with direct main-site category routes.",
+    title: "UUFinds Spreadsheet 2026: Product Finds & QC Guide",
+    description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
     images: [socialImage.url],
   },
   robots: { index: true, follow: true },

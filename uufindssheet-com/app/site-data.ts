@@ -1,12 +1,21 @@
-export const categories = [
-  { code: "01", name: "Shoes", note: "Sneakers & footwear", href: "https://www.cnbuycha.com/shoes/", color: "blue" },
-  { code: "02", name: "Hoodies", note: "Sweaters & sweatshirts", href: "https://www.cnbuycha.com/hoodies-sweaters/", color: "lime" },
+export type Category = {
+  code: string;
+  name: string;
+  note: string;
+  href: string;
+  color: string;
+  landingHref?: string;
+};
+
+export const categories: Category[] = [
+  { code: "01", name: "Shoes", note: "Sneakers & footwear", href: "https://www.cnbuycha.com/shoes/", color: "blue", landingHref: "/categories/shoes/" },
+  { code: "02", name: "Hoodies", note: "Sweaters & sweatshirts", href: "https://www.cnbuycha.com/hoodies-sweaters/", color: "lime", landingHref: "/categories/hoodies/" },
   { code: "03", name: "T-Shirts", note: "Tees & tops", href: "https://www.cnbuycha.com/t-shirts/", color: "ink" },
   { code: "04", name: "Jackets", note: "Coats & outerwear", href: "https://www.cnbuycha.com/jackets/", color: "blue" },
   { code: "05", name: "Pants", note: "Pants & shorts", href: "https://www.cnbuycha.com/pants-shorts/", color: "lime" },
   { code: "06", name: "Headwear", note: "Caps & hats", href: "https://www.cnbuycha.com/headwear/", color: "ink" },
   { code: "07", name: "Accessories", note: "Bags, wallets & more", href: "https://www.cnbuycha.com/accessories/", color: "blue" },
-  { code: "08", name: "Jersey", note: "Teamwear finds", href: "https://www.cnbuycha.com/Jersey/", color: "lime" },
+  { code: "08", name: "Jersey", note: "Teamwear finds", href: "https://www.cnbuycha.com/Jersey/", color: "lime", landingHref: "/categories/jersey/" },
   { code: "09", name: "Electronics", note: "Tech & gadgets", href: "https://www.cnbuycha.com/electronics/", color: "ink" },
 ];
 
@@ -24,30 +33,30 @@ type ArticleCard = {
 export const articleCards: ArticleCard[] = [
   {
     tag: "SEO BUYING GUIDE",
-    title: "UUFinds Spreadsheet Guide 2026: from QC research to better product finds",
-    summary: "A complete reverse-shopping workflow for researching evidence, comparing listings and continuing to the right main-site product page.",
+    title: "How to Use a UUFinds Spreadsheet: Product Finds & QC Workflow",
+    summary: "A step-by-step workflow for using a spreadsheet to shortlist products, check matching QC evidence and verify the live detail page.",
     href: "/guides/uufinds-spreadsheet-shopping-guide-2026/",
     read: "12 min read",
     featured: true,
   },
   {
     tag: "QC METHOD",
-    title: "A practical UUFinds QC checklist before you save a product link",
-    summary: "What to compare in photos, which details deserve a second look, and why one image should never settle the decision.",
+    title: "UUFinds QC Photos Checklist: How to Review a Product",
+    summary: "How to match QC photos to the exact listing, compare visible details and record what the images cannot confirm.",
     href: "/guides/uufinds-qc-checklist/",
     read: "11 min read",
   },
   {
     tag: "BEGINNER GUIDE",
-    title: "How to use UUFinds and continue browsing on the main site",
-    summary: "A clear research-to-browse workflow for links from Taobao, Weidian, 1688 and supported shopping agents.",
+    title: "How to Use UUFinds: Links, QC Photos & Product Matching",
+    summary: "A focused tutorial for starting with a supported link, reviewing available QC material and matching the right product.",
     href: "/guides/how-to-use-uufinds/",
     read: "9 min read",
   },
   {
     tag: "COMPARISON",
-    title: "Spreadsheet vs QC finder: two tools, two different jobs",
-    summary: "Why product discovery and quality research work better as separate steps—and where each tool fits.",
+    title: "Product Spreadsheet vs QC Finder: Discovery or Verification?",
+    summary: "A narrow comparison of two different jobs: organising product choices and checking evidence for one exact listing.",
     href: "/guides/spreadsheet-vs-qc-finder/",
     read: "9 min read",
   },

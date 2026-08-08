@@ -1,9 +1,21 @@
 import Link from "next/link";
 import { products } from "./products/product-data";
-import { articleCards, categories } from "./site-data";
+import { articleCards, categories, type Category } from "./site-data";
 import { ResponsiveHeroImage, SiteImage } from "./components/site-image";
 import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
+
+function CategoryCardContent({ category }: { category: Category }) {
+  return (
+    <>
+      <div className={`category-code ${category.color}`}>{category.code}</div>
+      <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
+      <h3>{category.name}</h3>
+      <p>{category.note}</p>
+      <span className="card-arrow" aria-hidden="true">↗</span>
+    </>
+  );
+}
 
 export default function Home() {
   return (
@@ -13,9 +25,9 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Independent guide <span>•</span> Updated July 2026</p>
-          <h1>Find it on <em>UUFinds.</em><br />Explore it on<br />the main site.</h1>
+          <h1>UUFinds Spreadsheet<br />&amp; <em>QC Guide</em></h1>
           <p className="hero-intro">
-            Research a product with UUFinds, check available QC material, then browse the matching category through the main shopping link.
+            Browse this independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check available QC photos, compare listings and open matching product pages.
           </p>
           <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" role="search">
             <input type="hidden" name="channelid" value="2" />
@@ -60,13 +72,15 @@ export default function Home() {
         </div>
         <div className="category-grid">
           {categories.map((category) => (
-            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
-              <div className={`category-code ${category.color}`}>{category.code}</div>
-              <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
-              <h3>{category.name}</h3>
-              <p>{category.note}</p>
-              <span className="card-arrow" aria-hidden="true">↗</span>
-            </a>
+            category.landingHref ? (
+              <Link className="category-card" href={category.landingHref} key={category.name}>
+                <CategoryCardContent category={category} />
+              </Link>
+            ) : (
+              <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+                <CategoryCardContent category={category} />
+              </a>
+            )
           ))}
         </div>
       </section>
@@ -213,7 +227,7 @@ export default function Home() {
             "@type": "WebSite",
             name: "UUFinds Sheet",
             url: "https://uufindssheet.com/",
-            description: "Independent UUFinds spreadsheet and QC research guide with direct main-site category routes.",
+            description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
             publisher: { "@type": "Organization", name: "UUFinds Sheet" },
           }),
         }}

@@ -12,6 +12,7 @@ const guideSlugs = [
   "spreadsheet-vs-qc-finder",
 ];
 const englishOnlyGuideSlug = "uufinds-product-weight-vs-volumetric-weight";
+const categorySlugs = ["shoes", "hoodies", "jersey"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
 const count = (html, pattern) => (html.match(pattern) ?? []).length;
@@ -179,10 +180,47 @@ for (const locale of locales) {
   assert.match(localizedArticleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`), `${locale} article index must route the English-only card to its canonical page`);
 }
 
+const home = await readPage("");
+assert.match(home, /<title>UUFinds Spreadsheet 2026: Product Finds &amp; QC Guide<\/title>/);
+assert.match(home, /<meta name="description" content="Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more\. Check QC photos, compare listings and open matching product pages\."/);
+assert.match(home, /<h1>UUFinds Spreadsheet<br\/?>(?:&amp;|&) <em>QC Guide<\/em><\/h1>/);
+assert.match(home, /Browse this independent UUFinds spreadsheet for shoes, hoodies, jerseys and more\. Check available QC photos, compare listings and open matching product pages\./);
+assert.match(home, /href="\/categories\/shoes\/"/);
+assert.match(home, /href="\/categories\/hoodies\/"/);
+assert.match(home, /href="\/categories\/jersey\/"/);
+
+const keywordGuideChecks = [
+  ["uufinds-spreadsheet-shopping-guide-2026", "How to Use a UUFinds Spreadsheet: Product Finds &amp; QC Workflow", "how to use a UUFinds spreadsheet"],
+  ["uufinds-qc-checklist", "UUFinds QC Photos Checklist: How to Review a Product", "UUFinds QC photos"],
+  ["how-to-use-uufinds", "How to Use UUFinds: Links, QC Photos &amp; Product Matching", "how to use UUFinds"],
+];
+for (const [slug, heading, visiblePhrase] of keywordGuideChecks) {
+  const html = await readPage(`guides/${slug}`);
+  assert.match(html, new RegExp(`<h1>${heading}</h1>`), `${slug} must own its assigned H1`);
+  assert.ok(html.toLowerCase().includes(visiblePhrase.toLowerCase()), `${slug} must reinforce its assigned phrase in visible copy`);
+}
+
+const categoryProductUrls = [];
+for (const slug of categorySlugs) {
+  const html = await readPage(`categories/${slug}`);
+  assert.match(html, new RegExp(`<h1>UUFinds ${slug === "jersey" ? "Jersey" : slug[0].toUpperCase() + slug.slice(1)} Spreadsheet</h1>`));
+  assert.equal(count(html, /class="product-card"/g), 4, `${slug} category must show four distinct listings`);
+  assert.equal(count(html, /class="category-listing-note"/g), 4, `${slug} category must show a filtering note for every listing`);
+  assert.equal(count(html, /class="evidence-grid"[\s\S]*?<\/section>/g), 1, `${slug} category must keep its filtering guide`);
+  assert.match(html, /"@type":"CollectionPage"/);
+  assert.match(html, /"@type":"ItemList"/);
+  assert.match(html, /"numberOfItems":4/);
+  const urls = [...html.matchAll(/href="(https:\/\/www\.cnbuycha\.com\/AllProducts\/\d+\.html)"/g)].map((match) => match[1]);
+  assert.equal(new Set(urls).size, 4, `${slug} category must use four non-duplicate detail destinations`);
+  categoryProductUrls.push(...urls);
+}
+assert.equal(new Set(categoryProductUrls).size, categoryProductUrls.length, "category landing pages must not reuse product destinations across categories");
+
 const sitemap = await readFile(join(root.pathname, "sitemap.xml"), "utf8");
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/de\/about\//);
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/pt-br\/terms\//);
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnlyGuideSlug}/`));
+for (const slug of categorySlugs) assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/categories/${slug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
 
 const allowedOutboundHosts = new Set(["uufindssheet.com", "www.cnbuycha.com"]);
