@@ -183,7 +183,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">{content.eyebrow}</p>
-          <h1>{content.title}<br /><em>{content.accent}</em></h1>
+          <h1>{content.title}{" "}<br /><em>{content.accent}</em></h1>
           <p className="hero-intro">{content.intro}</p>
           <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" role="search">
             <input type="hidden" name="channelid" value="2" />

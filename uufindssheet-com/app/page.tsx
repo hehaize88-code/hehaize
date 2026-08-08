@@ -25,7 +25,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Independent guide <span>•</span> Updated July 2026</p>
-          <h1>UUFinds Spreadsheet<br />&amp; <em>QC Guide</em></h1>
+          <h1>UUFinds Spreadsheet{" "}<br />&amp; <em>QC Guide</em></h1>
           <p className="hero-intro">
             Browse this independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check available QC photos, compare listings and open matching product pages.
           </p>
@@ -68,7 +68,7 @@ export default function Home() {
             <p className="eyebrow">Curated routes / 09</p>
             <h2>Start with a category.</h2>
           </div>
-          <p>Each shortcut opens the matching main-site category—not a generic homepage.</p>
+          <p>Focused spreadsheet categories open an on-site comparison page first; every other shortcut opens the matching main-site category.</p>
         </div>
         <div className="category-grid">
           {categories.map((category) => (

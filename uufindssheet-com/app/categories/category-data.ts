@@ -8,7 +8,7 @@ export type CategoryListing = {
 };
 
 export type CategoryLanding = {
-  slug: "shoes" | "hoodies" | "jersey";
+  slug: "shoes" | "hoodies" | "jersey" | "accessories";
   name: string;
   keyword: string;
   title: string;
@@ -168,6 +168,56 @@ export const categoryLandings: CategoryLanding[] = [
         image: "/product-images/category-football-2025-26-jersey.jpg",
         detailUrl: "https://www.cnbuycha.com/AllProducts/2890.html",
         filterNote: "Broad multi-style listing; identify the exact club and version before treating any QC set as relevant.",
+      },
+    ],
+  },
+  {
+    slug: "accessories",
+    name: "Accessories",
+    keyword: "uufinds accessories spreadsheet",
+    title: "UUFinds Accessories Spreadsheet 2026: Bags, Wallets & QC Tips",
+    description: "Browse a focused UUFinds accessories spreadsheet with four distinct bags and wallets, checked prices, filtering notes and exact product pages.",
+    h1: "UUFinds Accessories Spreadsheet",
+    intro: "Use this accessories landing page to compare four distinct bag and wallet listings without mixing them with clothing or electronics. Product names, prices, IDs, images and destinations were checked on August 8, 2026; confirm the live variant and any matching QC evidence before deciding.",
+    categoryUrl: "https://www.cnbuycha.com/accessories/",
+    filterTips: [
+      { title: "Choose the accessory type", text: "Separate backpacks, shoulder bags and wallets before comparing price, capacity or construction." },
+      { title: "Check useful proportions", text: "Compare overall shape, pocket layout, strap length and visible measurements with how you plan to use the item." },
+      { title: "Inspect stress points", text: "Use matched QC photos to review zipper tracks, strap anchors, edge paint, stitching and hardware attachment." },
+      { title: "Keep the exact product ID", text: "Bag and wallet listings can look similar, so match the ID, selected colour and seller link before relying on a QC set." },
+    ],
+    listings: [
+      {
+        name: "Adidas Bag",
+        listingId: "7818924737",
+        price: "179",
+        image: "/product-images/category-adidas-bag.webp",
+        detailUrl: "https://www.cnbuycha.com/AllProducts/3389.html",
+        filterNote: "Multi-view bag listing; compare silhouette, pocket layout, strap attachment and zipper alignment.",
+      },
+      {
+        name: "Nike Elite Backpack",
+        listingId: "7804348058",
+        price: "89",
+        image: "/product-images/1-260F6161259202.webp",
+        detailUrl: "https://www.cnbuycha.com/AllProducts/3346.html",
+        filterNote: "Backpack option; inspect panel alignment, zipper tracks, shoulder-strap stitching and interior space.",
+      },
+      {
+        name: "Nike Bag",
+        listingId: "7798017133",
+        price: "69",
+        image: "/product-images/category-nike-bag.webp",
+        detailUrl: "https://www.cnbuycha.com/AllProducts/3342.html",
+        filterNote: "Compact bag listing; compare handle and strap placement, seam finish, pocket shape and dimensions.",
+      },
+      {
+        name: "Carhartt Wallet",
+        listingId: "7788829484",
+        price: "85",
+        image: "/product-images/category-carhartt-wallet.webp",
+        detailUrl: "https://www.cnbuycha.com/AllProducts/3322.html",
+        filterNote: "Wallet listing; check fold alignment, edge finish, card-slot spacing, logo placement and closure details.",
       },
     ],
   },

@@ -12,7 +12,7 @@ const guideSlugs = [
   "spreadsheet-vs-qc-finder",
 ];
 const englishOnlyGuideSlug = "uufinds-product-weight-vs-volumetric-weight";
-const categorySlugs = ["shoes", "hoodies", "jersey"];
+const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
 const count = (html, pattern) => (html.match(pattern) ?? []).length;
@@ -208,19 +208,22 @@ for (const locale of locales) {
 }
 
 const home = await readPage("");
+const contiguousHome = home.replaceAll("<!-- -->", "");
 assertLocaleCluster(home, "/", "English home");
 assert.match(home, /<title>UUFinds Spreadsheet 2026: Product Finds &amp; QC Guide<\/title>/);
 assert.match(home, /<meta name="description" content="Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more\. Check QC photos, compare listings and open matching product pages\."/);
-assert.match(home, /<h1>UUFinds Spreadsheet<br\/?>(?:&amp;|&) <em>QC Guide<\/em><\/h1>/);
+assert.match(contiguousHome, /<h1>UUFinds Spreadsheet <br\/?>(?:&amp;|&) <em>QC Guide<\/em><\/h1>/);
 assert.match(home, /Browse this independent UUFinds spreadsheet for shoes, hoodies, jerseys and more\. Check available QC photos, compare listings and open matching product pages\./);
 assert.match(home, /href="\/categories\/shoes\/"/);
 assert.match(home, /href="\/categories\/hoodies\/"/);
 assert.match(home, /href="\/categories\/jersey\/"/);
+assert.match(home, /href="\/categories\/accessories\/"/);
 
 const polishHome = await readPage("pl");
+const contiguousPolishHome = polishHome.replaceAll("<!-- -->", "");
 assert.match(polishHome, /<title>UUFinds Spreadsheet 2026 – Produkty i zdjęcia QC<\/title>/);
 assert.match(polishHome, /<meta name="description" content="Przeglądaj niezależny UUFinds Spreadsheet z butami, bluzami, koszulkami sportowymi i innymi produktami\. Sprawdzaj zdjęcia QC, porównuj oferty i otwieraj dopasowane strony produktów\."/);
-assert.match(polishHome, /<h1>UUFinds Spreadsheet 2026<br\/?><em>Produkty i zdjęcia QC<\/em><\/h1>/);
+assert.match(contiguousPolishHome, /<h1>UUFinds Spreadsheet 2026 <br\/?><em>Produkty i zdjęcia QC<\/em><\/h1>/);
 assert.match(polishHome, /hrefLang="pl-PL"[^>]+href="\/pl\/"/);
 for (const phrase of [
   "Jak korzystać z UUFinds Spreadsheet: produkty i proces QC",
@@ -244,17 +247,48 @@ const keywordGuideChecks = [
   ["uufinds-qc-checklist", "UUFinds QC Photos Checklist: How to Review a Product", "UUFinds QC photos"],
   ["how-to-use-uufinds", "How to Use UUFinds: Links, QC Photos &amp; Product Matching", "how to use UUFinds"],
 ];
+const assignedGuideTitles = new Set();
 for (const [slug, heading, visiblePhrase] of keywordGuideChecks) {
   const html = await readPage(`guides/${slug}`);
+  const assignedTitle = heading + " | UUFinds Sheet";
+  assert.ok(html.includes(`<title>${assignedTitle}</title>`), `${slug} must own its assigned title`);
   assert.match(html, new RegExp(`<h1>${heading}</h1>`), `${slug} must own its assigned H1`);
   assert.ok(html.toLowerCase().includes(visiblePhrase.toLowerCase()), `${slug} must reinforce its assigned phrase in visible copy`);
+  assignedGuideTitles.add(assignedTitle);
+}
+assert.equal(assignedGuideTitles.size, keywordGuideChecks.length, "guide keyword targets must use distinct titles");
+
+const productKeywordChecks = [
+  ["hoka-speedgoat-5-trail-running-shoes", "Speedgoat 5 Trail Running Shoes"],
+  ["maison-margiela-hoodie", "Maison Margiela Hoodie"],
+  ["louis-vuitton-tee", "Louis Vuitton Tee"],
+  ["celine-coat", "Celine Coat"],
+  ["hello-kitty-plush-pants", "Hello Kitty Plush Pants"],
+  ["era-hats", "Era Hats"],
+  ["nike-elite-backpack", "Nike Elite Backpack"],
+  ["samsung-galaxy-watch8", "Samsung Galaxy Watch8"],
+];
+for (const [slug, productName] of productKeywordChecks) {
+  const html = await readPage(`products/${slug}`);
+  const contiguousHtml = html.replaceAll("<!-- -->", "");
+  const escapedName = escapeRegExp(productName);
+  assert.match(html, new RegExp(`<title>${escapedName} QC &amp; Spreadsheet Guide \\| UUFinds</title>`), `${slug} must own a unique product + QC/spreadsheet title`);
+  assert.match(contiguousHtml, new RegExp(`<h1>${escapedName} QC &amp; Spreadsheet Guide</h1>`), `${slug} must own a unique product + QC/spreadsheet H1`);
+  assert.ok(contiguousHtml.toLowerCase().includes(`${productName.toLowerCase()} spreadsheet find`), `${slug} must include its product-name + spreadsheet phrase in visible copy`);
+  assert.ok(contiguousHtml.toLowerCase().includes(`review ${productName.toLowerCase()} qc evidence`), `${slug} must include its product-name + QC phrase in visible copy`);
 }
 
 const categoryProductUrls = [];
 for (const slug of categorySlugs) {
   const html = await readPage(`categories/${slug}`);
+  const listingSection = betweenClasses(html, "product-showcase-grid category-listing-grid", "evidence-matrix");
+  const productNames = [...listingSection.matchAll(/<h2>([^<]+)<\/h2>/g)].map((match) => match[1]);
   assert.match(html, new RegExp(`<h1>UUFinds ${slug === "jersey" ? "Jersey" : slug[0].toUpperCase() + slug.slice(1)} Spreadsheet</h1>`));
   assert.equal(count(html, /class="product-card"/g), 4, `${slug} category must show four distinct listings`);
+  assert.equal(count(listingSection, /class="product-card-image"/g), 4, `${slug} category must show an image for every listing`);
+  assert.equal(count(listingSection, /<span>¥(?:<!-- -->)?\d+(?:\.\d+)?<\/span>/g), 4, `${slug} category must show a price for every listing`);
+  assert.equal(productNames.length, 4, `${slug} category must name every listing`);
+  assert.equal(new Set(productNames).size, 4, `${slug} category must not repeat a product`);
   assert.equal(count(html, /class="category-listing-note"/g), 4, `${slug} category must show a filtering note for every listing`);
   assert.equal(count(html, /class="evidence-grid"[\s\S]*?<\/section>/g), 1, `${slug} category must keep its filtering guide`);
   assert.match(html, /"@type":"CollectionPage"/);
@@ -279,6 +313,7 @@ const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => pa
 for (const file of publishedHtmlFiles) {
   const html = await readFile(file, "utf8");
   const relativePath = file.slice(root.pathname.length).replaceAll("\\", "/");
+  assert.doesNotMatch(relativePath, /\b(?:uuufinds|uufinda|uufins)\b/i, `published route must not target a UUFinds misspelling: ${relativePath}`);
   const localeMatch = relativePath.match(/^(en-gb|de|pl|pt-br)\/(.*\/)?index\.html$/);
   if (localeMatch) {
     const currentPath = `/${relativePath.replace(/index\.html$/, "")}`;
@@ -290,6 +325,11 @@ for (const file of publishedHtmlFiles) {
     html,
     /(?:CNBuy|CNBUY|CNF|CNFans)/,
     `published page still exposes a main-site brand name: ${file}`,
+  );
+  assert.doesNotMatch(
+    html,
+    /\b(?:uuufinds|uufinda|uufins)\b/i,
+    `published page must not target a UUFinds misspelling: ${file}`,
   );
   for (const match of html.matchAll(/\b(?:href|action)="([^"]+)"/g)) {
     const target = match[1];

@@ -14,7 +14,7 @@ export const categories: Category[] = [
   { code: "04", name: "Jackets", note: "Coats & outerwear", href: "https://www.cnbuycha.com/jackets/", color: "blue" },
   { code: "05", name: "Pants", note: "Pants & shorts", href: "https://www.cnbuycha.com/pants-shorts/", color: "lime" },
   { code: "06", name: "Headwear", note: "Caps & hats", href: "https://www.cnbuycha.com/headwear/", color: "ink" },
-  { code: "07", name: "Accessories", note: "Bags, wallets & more", href: "https://www.cnbuycha.com/accessories/", color: "blue" },
+  { code: "07", name: "Accessories", note: "Bags, wallets & more", href: "https://www.cnbuycha.com/accessories/", color: "blue", landingHref: "/categories/accessories/" },
   { code: "08", name: "Jersey", note: "Teamwear finds", href: "https://www.cnbuycha.com/Jersey/", color: "lime", landingHref: "/categories/jersey/" },
   { code: "09", name: "Electronics", note: "Tech & gadgets", href: "https://www.cnbuycha.com/electronics/", color: "ink" },
 ];
