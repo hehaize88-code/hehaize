@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readdir, stat } from "node:fs/promises";
+import { readFile, readdir, stat } from "node:fs/promises";
 import test from "node:test";
 
 const developmentPreviewMeta =
@@ -260,6 +260,79 @@ test("adds product, breadcrumb, and category ItemList structured data", async ()
   assert.match(categoryHtml, /"@type":"CollectionPage"/);
   assert.match(categoryHtml, /"@type":"ItemList"/);
   assert.equal((categoryHtml.match(/class="catalog-product-card"/g) ?? []).length, 3);
+});
+
+function decodeHtmlText(value) {
+  return value
+    .replace(/<[^>]+>/g, "")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#x27;", "'")
+    .replaceAll("&amp;", "&")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function jsonLd(html) {
+  const source = html.match(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/i)?.[1];
+  assert.ok(source, "JSON-LD script");
+  return JSON.parse(source);
+}
+
+test("adds visible-content-matched FAQPage structured data in all six languages", async () => {
+  const worker = await loadWorker();
+
+  for (const prefix of ["", "/de", "/fr", "/es", "/it", "/pl"]) {
+    const pathname = `${prefix}/faq`;
+    const html = await (await render(worker, pathname)).text();
+    const faqBlock = html.match(/<div class="faq-list">([\s\S]*?)<\/div>/)?.[1] ?? "";
+    const visibleEntries = [...faqBlock.matchAll(/<details(?![^>]*\bopen\b)[^>]*>\s*<summary>(.*?)<span\b[\s\S]*?<\/summary>\s*<p>(.*?)<\/p>\s*<\/details>/gi)]
+      .map((match) => ({ question: decodeHtmlText(match[1]), answer: decodeHtmlText(match[2]) }));
+    const schema = jsonLd(html);
+
+    assert.equal(schema["@type"], "FAQPage", `${pathname} schema type`);
+    assert.equal(schema.url, `https://kameymall-sheet.com${pathname}`, `${pathname} schema URL`);
+    assert.equal(schema.inLanguage, prefix ? prefix.slice(1) : "en", `${pathname} schema language`);
+    assert.equal(visibleEntries.length, 11, `${pathname} visible collapsed FAQs`);
+    assert.equal(schema.mainEntity.length, visibleEntries.length, `${pathname} schema FAQ count`);
+    assert.deepEqual(
+      schema.mainEntity.map((entry) => ({
+        question: entry.name,
+        answer: entry.acceptedAnswer?.text,
+      })),
+      visibleEntries,
+      `${pathname} schema matches visible questions and answers`,
+    );
+    for (const entry of schema.mainEntity) {
+      assert.equal(entry["@type"], "Question", `${pathname} Question type`);
+      assert.equal(entry.acceptedAnswer?.["@type"], "Answer", `${pathname} acceptedAnswer type`);
+    }
+  }
+});
+
+test("keeps the complete homepage in compact no-swipe mobile grids", async () => {
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  const compactMobile = css.slice(
+    css.indexOf("/*\n * Compact mobile overview"),
+    css.indexOf("/* Product and category landing pages */"),
+  );
+
+  assert.match(compactMobile, /overflow-x:\s*hidden;[\s\S]*overflow-x:\s*clip;/);
+  assert.match(compactMobile, /main\[data-route="home"\] \.find-browser \.table-body\s*\{[\s\S]*?grid-template-columns:\s*repeat\(2,/);
+  assert.match(compactMobile, /main\[data-route="home"\] \.category-grid\s*\{[\s\S]*?grid-template-columns:\s*repeat\(2,/);
+  assert.match(compactMobile, /main\[data-route="home"\] \.step-list\s*\{[\s\S]*?grid-template-columns:\s*repeat\(2,/);
+  assert.match(compactMobile, /main\[data-route="home"\] \.guide-grid,[\s\S]*?\.article-card-grid\s*\{[\s\S]*?grid-template-columns:\s*repeat\(2,/);
+
+  const worker = await loadWorker();
+  const html = await (await render(worker, "/")).text();
+  assert.equal((html.match(/class="product-row"/g) ?? []).length, 8);
+  assert.equal((html.match(/class="category-card"/g) ?? []).length, 10);
+  assert.equal((html.match(/<ol class="step-list">[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g) ?? []).length, 6);
+  assert.equal((html.match(/class="guide-card(?: |")/g) ?? []).length, 3);
+  assert.equal((html.match(/class="article-card"/g) ?? []).length, 4);
+  assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 11);
+  assert.doesNotMatch(html, /<details\b[^>]*\bopen\b/i, "homepage FAQs and language menu start collapsed");
 });
 
 const locales = ["", "/de", "/fr", "/es", "/it", "/pl"];

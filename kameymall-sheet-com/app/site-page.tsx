@@ -742,6 +742,23 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
               name: item.name,
             })),
           }
+        : route === "faq"
+          ? {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              name: pageIntro?.title,
+              description: pageIntro?.intro,
+              url: canonical,
+              inLanguage: locale,
+              mainEntity: copy.faq.items.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }
         : isArticle && articlePage
           ? [
               {
