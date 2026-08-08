@@ -71,7 +71,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
   );
 
   return (
-    <main>
+    <main className="home-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }} />
       <header className="site-header">
         <a className="brand" href="#top" aria-label="CSSBuy China home">
