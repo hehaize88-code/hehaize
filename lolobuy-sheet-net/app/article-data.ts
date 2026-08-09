@@ -671,7 +671,6 @@ export const articles: ArticleRecord[] = [
     ],
   },
   {
-    // Bag-specific warehouse article published 10 August 2026.
     slug: "lolobuy-bag-qc-guide",
     title: "LoloBuy Bag QC Guide: Measure Structure, Straps and Hardware Before Shipping",
     seoTitle: "LoloBuy Bag QC Guide: Measurements & Warehouse Checks",
