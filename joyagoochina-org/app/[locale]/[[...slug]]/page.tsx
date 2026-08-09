@@ -105,7 +105,7 @@ export async function generateMetadata({
   if (!page) return {};
 
   const basePath = route ? `/${route}/` : "/";
-  return {
+  const metadata: Metadata = {
     title: page.title,
     description: page.intro,
     keywords: seoArticle?.keywords,
@@ -114,6 +114,15 @@ export async function generateMetadata({
       canonical: localizedRoutePath(locale, basePath),
     },
   };
+  if (seoArticle?.slug === "joyagoo-parcel-consolidation-packaging-guide") {
+    metadata.openGraph = {
+      type: "article",
+      title: seoArticle.article.title,
+      description: seoArticle.article.description,
+      url: `https://joyagoochina.org${localizedRoutePath(locale, basePath)}`,
+    };
+  }
+  return metadata;
 }
 
 export default async function LocalizedRoute({

@@ -34,6 +34,33 @@ function count(html, expression) {
   return html.match(expression)?.length ?? 0;
 }
 
+function visibleText(html) {
+  return html
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&(?:#\d+|#x[\da-f]+|[a-z][\da-z]+);/gi, " ");
+}
+
+test("new consolidation guide has complete SEO signals and 1,200–1,800 English words", async () => {
+  const slug = "joyagoo-parcel-consolidation-packaging-guide";
+  for (const prefix of ["", "/zh", "/de", "/pl", "/es", "/it", "/fr", "/pt", "/ro", "/sv"]) {
+    const path = `${prefix}/${slug}/`;
+    const response = await request(path);
+    assert.equal(response.status, 200, path);
+    const html = await response.text();
+    assert.match(html, /"@type":"Article"/, `${path}: Article schema`);
+    assert.match(html, /"@type":"BreadcrumbList"/, `${path}: breadcrumb schema`);
+    assert.match(html, /<meta property="og:type" content="article"/i, `${path}: Open Graph`);
+    assert.equal(count(html, /\bhreflang=/gi), 11, `${path}: hreflang`);
+  }
+
+  const englishHtml = await (await request(`/${slug}/`)).text();
+  const body = englishHtml.match(/<div class="article-body">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/)?.[1] ?? "";
+  const words = visibleText(body).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+  assert.ok(words.length >= 1200 && words.length <= 1800, `English consolidation guide has ${words.length} visible words`);
+});
+
 test("English and localized pages expose complete hreflang clusters", async () => {
   for (const path of ["/qc-guide/", "/de/qc-guide/"]) {
     const response = await request(path);

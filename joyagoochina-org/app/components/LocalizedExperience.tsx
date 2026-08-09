@@ -446,7 +446,6 @@ function LocalizedGuidePage({
       url: "https://joyagoochina.org/",
     },
   };
-
   return (
     <main className="guide-page">
       <script
@@ -661,6 +660,33 @@ function LocalizedSeoArticlePage({
         ? `https://joyagoochina.org/${entry.slug}/`
         : `https://joyagoochina.org/${locale}/${entry.slug}/`,
   };
+  const breadcrumbSchema =
+    entry.slug === "joyagoo-parcel-consolidation-packaging-guide"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: translations[locale].common.home,
+              item: `https://joyagoochina.org${localizePath(locale, "/")}`,
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: seo.navLabel,
+              item: `https://joyagoochina.org${localizePath(locale, "/articles/")}`,
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: article.title,
+              item: articleSchema.mainEntityOfPage,
+            },
+          ],
+        }
+      : null;
 
   return (
     <main className="guide-page seo-article-page">
@@ -668,6 +694,12 @@ function LocalizedSeoArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
       <SiteHeader locale={locale} />
       <article>
         <header className="article-hero seo-article-hero">

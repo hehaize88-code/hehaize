@@ -15,10 +15,15 @@ import {
   taobaoLocalizedMeta,
   taobaoSourceBody,
 } from "./taobaoArticle";
+import {
+  parcelConsolidationArticles,
+  parcelConsolidationSourceBodies,
+} from "./parcelConsolidationArticle";
 
 export type SeoArticle = SeoArticleCopy["article"];
 
 export const extraSeoArticleSlugs = [
+  "joyagoo-parcel-consolidation-packaging-guide",
   "how-to-buy-from-taobao-with-joyagoo",
   "joyagoo-qc-photo-checklist",
   "joyagoo-volumetric-weight-shipping-cost",
@@ -45,6 +50,8 @@ export type SeoArticleEntry = {
 };
 
 const englishExtras: Record<ExtraSeoArticleSlug, SeoArticle> = {
+  "joyagoo-parcel-consolidation-packaging-guide":
+    parcelConsolidationArticles.en,
   "how-to-buy-from-taobao-with-joyagoo": taobaoArticle,
   "joyagoo-qc-photo-checklist": {
     eyebrow: "JOYAGOO QC PHOTO GUIDE",
@@ -291,7 +298,8 @@ type LocalizedArticleMeta = {
 
 type LegacyExtraSeoArticleSlug = Exclude<
   ExtraSeoArticleSlug,
-  "how-to-buy-from-taobao-with-joyagoo"
+  | "how-to-buy-from-taobao-with-joyagoo"
+  | "joyagoo-parcel-consolidation-packaging-guide"
 >;
 
 const localizedMeta: Record<
@@ -358,6 +366,7 @@ const localizedMeta: Record<
 };
 
 const articleGuideMap: Record<ExtraSeoArticleSlug, string> = {
+  "joyagoo-parcel-consolidation-packaging-guide": "shipping-guide",
   "how-to-buy-from-taobao-with-joyagoo": "how-to-buy",
   "joyagoo-qc-photo-checklist": "qc-guide",
   "joyagoo-volumetric-weight-shipping-cost": "shipping-guide",
@@ -368,6 +377,7 @@ const companionSections: Record<
   ExtraSeoArticleSlug,
   Array<{ guide: string; section: number }>
 > = {
+  "joyagoo-parcel-consolidation-packaging-guide": [],
   "how-to-buy-from-taobao-with-joyagoo": [],
   "joyagoo-qc-photo-checklist": [
     { guide: "returns", section: 0 },
@@ -384,6 +394,13 @@ const companionSections: Record<
 };
 
 const keywords: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-parcel-consolidation-packaging-guide": [
+    "joyagoo parcel consolidation",
+    "combine Joyagoo warehouse items",
+    "Joyagoo packaging options",
+    "Joyagoo consolidate parcels",
+    "Joyagoo separate packaging restrictions",
+  ],
   "how-to-buy-from-taobao-with-joyagoo": [
     "how to buy from Taobao with Joyagoo",
     "Joyagoo Taobao agent",
@@ -417,6 +434,8 @@ const keywords: Record<SeoArticleSlug, string[]> = {
 };
 
 const sourceBodies: Record<SeoArticleSlug, string> = {
+  "joyagoo-parcel-consolidation-packaging-guide":
+    parcelConsolidationSourceBodies.en,
   "how-to-buy-from-taobao-with-joyagoo": taobaoSourceBody,
   "joyagoo-fees-explained": seoArticleCopy.en.sourceBody,
   "joyagoo-qc-photo-checklist":
@@ -431,6 +450,10 @@ export const seoArticleDates: Record<
   SeoArticleSlug,
   { publishedAt: string; modifiedAt: string }
 > = {
+  "joyagoo-parcel-consolidation-packaging-guide": {
+    publishedAt: "2026-08-09",
+    modifiedAt: "2026-08-09",
+  },
   "how-to-buy-from-taobao-with-joyagoo": {
     publishedAt: "2026-08-03",
     modifiedAt: "2026-08-03",
@@ -504,6 +527,13 @@ function buildLocalizedExtra(
   locale: Exclude<Locale, "en">,
   slug: ExtraSeoArticleSlug,
 ): SeoArticle {
+  if (slug === "joyagoo-parcel-consolidation-packaging-guide") {
+    return completeArticle(
+      locale,
+      parcelConsolidationArticles[locale],
+      parcelConsolidationArticles.en,
+    );
+  }
   const guide = localizedContent[locale].guides[articleGuideMap[slug]];
   const extras = companionSections[slug].map(
     ({ guide: guideSlug, section }) =>
@@ -551,14 +581,18 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
     sourceBody:
       locale === "en"
         ? sourceBodies[slug]
-        : `${localizedContent[locale].article.sourceBody} ${localizedContent[locale].guides[articleGuideMap[slug]].sourceLabel}.`,
+        : slug === "joyagoo-parcel-consolidation-packaging-guide"
+          ? parcelConsolidationSourceBodies[locale]
+          : `${localizedContent[locale].article.sourceBody} ${localizedContent[locale].guides[articleGuideMap[slug]].sourceLabel}.`,
     ...seoArticleDates[slug],
     readTime:
-      slug === "how-to-buy-from-taobao-with-joyagoo"
+      slug === "how-to-buy-from-taobao-with-joyagoo" ||
+      slug === "joyagoo-parcel-consolidation-packaging-guide"
         ? "10 minute read"
         : "9 minute read",
     relatedLinks:
-      slug === "how-to-buy-from-taobao-with-joyagoo"
+      slug === "how-to-buy-from-taobao-with-joyagoo" ||
+      slug === "joyagoo-parcel-consolidation-packaging-guide"
         ? ["how-to-buy", "qc-guide", "shipping-guide", "articles"]
         : undefined,
   }));
