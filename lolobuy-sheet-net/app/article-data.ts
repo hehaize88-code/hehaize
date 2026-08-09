@@ -670,6 +670,126 @@ export const articles: ArticleRecord[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-bag-qc-guide",
+    title: "LoloBuy Bag QC Guide: Measure Structure, Straps and Hardware Before Shipping",
+    seoTitle: "LoloBuy Bag QC Guide: Measurements & Warehouse Checks",
+    shortTitle: "LoloBuy Bag QC Guide",
+    description: "Review LoloBuy bag QC photos with a practical checklist for size, structure, straps, closures, hardware and visible warehouse condition.",
+    eyebrow: "Bag measurements and QC guide",
+    primaryKeyword: "LoloBuy bag QC guide",
+    secondaryKeywords: [
+      "LoloBuy bag measurements",
+      "LoloBuy bag QC photos",
+      "how to check a bag at LoloBuy warehouse",
+      "LoloBuy backpack strap measurement",
+    ],
+    intent: "Verify a bag's dimensions, structure and usable features before accepting the warehouse arrival",
+    checkedDate: "10 August 2026",
+    publishedDate: contentDates.articles["lolobuy-bag-qc-guide"].published,
+    modifiedDate: contentDates.articles["lolobuy-bag-qc-guide"].modified,
+    image: "/social/bag-qc-guide.svg",
+    imageAlt: "Editorial bag QC diagram showing dimensions, structure, straps and hardware checkpoints",
+    imageCaption: "An original evidence map for bag QC. Confirm the ordered identity first, then compare reproducible dimensions, load-bearing parts and visible condition.",
+    standfirst: "A useful bag QC review is more than zooming in on stitching. Start with the exact ordered variant, compare dimensions using a reference bag and a defined tape position, then inspect the structure, straps, closures and visible hardware that determine whether the item is usable. Warehouse photos can support that decision, but they cannot promise capacity, durability or authenticity.",
+    takeaways: [
+      "Save the exact listing, color, size or version and included pieces before ordering.",
+      "Compare length, height and depth only when the seller and warehouse use the same measurement points.",
+      "Check load-bearing strap anchors, closures and structural symmetry before cosmetic details.",
+      "Treat warehouse images as visible evidence, not a guarantee of capacity, material or long-term strength.",
+    ],
+    sourceNote: "Evidence ledger, checked 10 August 2026: LoloBuy's public website describes starting an order with a pasted Chinese product link, warehouse quality inspection and photographs, 90 days of free storage, and consolidation of accepted items into an international parcel. These are LoloBuy's platform statements, not independent proof of every seller or bag. The measurement and inspection method below is independent editorial analysis; no photo count, measurement service, return outcome, fee, shipping price or delivery time is claimed.",
+    sections: [
+      {
+        heading: "Start with the exact bag, not the cover photograph",
+        paragraphs: [
+          "Bag listings often group several sizes, colors, materials or accessory bundles behind one hero image. Before pasting the product link, record the exact selected row, seller wording, color, size label, quantity and every included piece that matters. Save the live dimensions and the date, because a seller can replace a chart or reuse a listing after the order is placed.",
+          "Describe the expected item in one plain sentence: for example, one black medium shoulder bag with the long strap and inner pouch. If the option code cannot be translated confidently, preserve the original characters and screenshot rather than rewriting it from memory. The warehouse check must compare the arrival with that dated record, not with a social-media reference image from another seller.",
+          "LoloBuy publicly says an order can begin with a pasted Chinese product link. That makes source preservation especially important: the link starts the transaction, but the option record explains which item within the page you intended to buy.",
+        ],
+      },
+      {
+        heading: "Build a reference-bag record before choosing dimensions",
+        paragraphs: [
+          "Choose a bag you already use for the same purpose. Empty it, place it in its normal shape and measure exterior length, height and depth at their widest structural points. Add the opening width, usable strap drop and the largest object that must fit. A commuter backpack may need a laptop sleeve check; a shoulder bag may depend more on opening width and strap drop than on advertised volume.",
+          "Photograph your tape placement and note whether the bag is soft, padded or rigid. A flexible tote can flatten during measurement while a structured bag keeps its depth. The numbers become useful only when they remain attached to the method and use case that produced them.",
+        ],
+        bullets: [
+          "Exterior length, height and depth with clear endpoints",
+          "Opening width or zipper length when access matters",
+          "Strap drop or adjustable range for the intended carry style",
+          "One must-fit object measured separately",
+          "Structure note: soft, padded, semi-rigid or rigid",
+        ],
+      },
+      {
+        heading: "Read seller measurements as definitions, not promises",
+        paragraphs: [
+          "A seller may measure across the base, across the widest body panel or along a curved top edge. Height may include a handle, and depth may describe an empty gusset that expands only when filled. Read the diagram, units and accompanying words before comparing values. Exterior dimensions do not prove usable interior space.",
+          "Suppose a reference bag is 31 cm wide, 23 cm high and 10 cm deep, while the seller lists 30 by 22 by 11 cm. The listing appears close as an exterior comparison if both use the same points. It still does not prove that a 30 cm object will pass through the opening, that the lining reduces the interior or that a padded sleeve will fit a device.",
+          "Do not calculate capacity by multiplying three exterior dimensions and presenting the result as usable liters. That box calculation ignores curves, padding, closures and internal divisions. Use a must-fit-object test or a clearly defined internal measurement when capacity is the deciding question.",
+        ],
+      },
+      {
+        heading: "Review warehouse QC in a fixed bag-specific order",
+        paragraphs: [
+          "LoloBuy's public page states that warehouse arrivals receive quality inspection and photographs. Begin with identity: correct bag type, color, selected size or version, quantity and promised detachable pieces. Then inspect the overall front, back, base and both sides before zooming into hardware or seams.",
+          "Look for structural symmetry, an obviously twisted body, severe panel distortion, crushed reinforcement or a base that does not sit as expected. Domestic packaging can temporarily flatten a soft bag, so distinguish a reversible fold from a clearly damaged stiffener. Describe only the visible evidence and request a focused neutral view when lighting or packaging prevents a conclusion.",
+          "The public page does not publish a universal free-photo count, extra-image price, video allowance or measurement service. Check the current order interface before requesting evidence and do not assume that a specific angle or tape measurement is included or free.",
+        ],
+      },
+      {
+        heading: "Check straps and anchors as functional evidence",
+        paragraphs: [
+          "A bag may look correct from the front while the carry system is wrong. Confirm the number and type of straps, whether a detachable strap is present, the buckle orientation and the visible attachment points. For a backpack, compare both shoulder straps for length, padding and alignment. For a shoulder bag, inspect clips, rings and the stitched or riveted anchor areas that transfer load into the body.",
+          "Warehouse photographs cannot load-test an anchor or prove long-term strength. They can reveal a missing strap, reversed buckle, obvious tear, unattached seam or visibly different hardware. If strap length determines usability, ask for the adjustable minimum and maximum using endpoints you can see, not merely a photograph of a loose tape beside the product.",
+        ],
+      },
+      {
+        heading: "Inspect closures and hardware without overclaiming material",
+        paragraphs: [
+          "Check the closure type ordered: zipper, magnetic snap, turn lock, buckle or drawcord. Verify that paired hardware is present and visually aligned. Look for obvious dents, broken pulls, missing screws, severe scratches or coating loss that changes your decision. Protective film can create reflections or uneven color, so ask whether film is present before calling a surface damaged.",
+          "A photograph cannot prove metal composition, coating durability, magnet strength or smooth operation unless a specific documented test is shown. Likewise, a logo or familiar hardware shape does not establish authenticity. If authenticity is essential, use authorized retail and appropriate provenance rather than a warehouse-image comparison.",
+        ],
+      },
+      {
+        heading: "Request one reproducible measurement when it can decide",
+        paragraphs: [
+          "A measurement is worth requesting only when it resolves a real uncertainty. State the exact line: base width from corner to corner, body height excluding the handle, depth across the structured base, zipper opening from stop to stop, or strap drop from the top of the bag to the inside of the strap. Ask that the starting point, ending point and unit remain visible.",
+          "Compare like with like. A ruler placed diagonally across a curved bag cannot verify a straight seller-chart width. A soft bag measured empty may not reproduce its expanded depth. If the image hides the zero point or bends the tape around a curve, treat the number as uncertain rather than forcing it into a precise conclusion.",
+          "Define your decision boundary before the request. If the bag must accept a 29 cm-wide object through the opening, opening width is more useful than another exterior height photo. Focused evidence produces a clearer pass-or-question decision than collecting every possible dimension.",
+        ],
+      },
+      {
+        heading: "Separate visible condition from unknown performance",
+        paragraphs: [
+          "Warehouse images can show color, option identity, visible stitching, obvious damage, hardware presence and measurable exterior points. They cannot prove real-world carrying comfort, lining wear, waterproofing, odor, hidden reinforcement, zipper life, color transfer or how the bag behaves under weight. A photograph taken before international shipping is one dated condition record, not a durability test.",
+          "Material descriptions also need restraint. Grain, weave and sheen can look different under warehouse lighting, and an image alone cannot confirm fiber, leather type or coating. Compare the received item with the seller description, but do not turn visual resemblance into a laboratory finding.",
+        ],
+      },
+      {
+        heading: "Choose pass, question or action before consolidation",
+        paragraphs: [
+          "Pass when identity, dimensions that matter, included pieces and visible condition match the saved record closely enough for the intended use. Question when one label, angle or reproducible measurement can settle the uncertainty. If a documented mismatch changes the decision, preserve the dated listing, selected option, order record and relevant warehouse image, then use the action currently shown for that order promptly.",
+          "This guide does not promise a return, exchange, refund, deadline or fee. Those outcomes can depend on the seller, product, timing and live platform terms. LoloBuy advertises 90 days of free warehouse storage, but storage time is not the same as a seller return window and should not be used to delay a material QC issue.",
+          "Only accepted bags should move into parcel planning. A rigid retail box or extra reinforcement may protect structure but increase parcel volume; removing packaging may reduce volume but change protection. LoloBuy describes consolidation, while final packed weight, dimensions, route eligibility and price remain current parcel data.",
+        ],
+        bullets: [
+          "Pass: ordered identity and decision-changing evidence match",
+          "Question: one focused image or measurement can resolve the issue",
+          "Action: documented mismatch materially changes the purchase decision",
+          "Parcel: plan packaging only after the bag is accepted",
+        ],
+      },
+      {
+        heading: "Keep a compact bag decision record",
+        paragraphs: [
+          "Store the source URL, date, exact option, seller chart, reference-bag measurements, warehouse images used, extra measurement and final verdict in one private record. Add a sentence explaining the intended use and must-fit item so the numbers keep their meaning. Do not include passwords, payment details, full addresses or tracking data in a shared document.",
+          "The record will not eliminate uncertainty. It will show which facts came from the seller, which came from your reference bag, which came from the warehouse and which remain unknown. That separation is the practical difference between a useful LoloBuy bag QC review and an optimistic judgment based on the cover photograph.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string) {
