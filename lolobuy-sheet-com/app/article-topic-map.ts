@@ -73,7 +73,7 @@ export const articleTopicMap: ArticleTopicMapEntry[] = [
     internalLinkRole: "Post-dispatch troubleshooting follow-on from parcel planning, connecting route selection with carrier, customs and evidence-led escalation.",
   },
   {
-    // Category-specific sizing article published 10 August 2026.\n    url: "/articles/lolobuy-shoe-size-guide",
+    url: "/articles/lolobuy-shoe-size-guide",
     primaryQuery: "lolobuy shoe size guide",
     relatedTerms: ["how to choose lolobuy shoe size", "lolobuy insole measurement", "lolobuy shoe qc photos", "chinese shoe size chart lolobuy"],
     intent: "problem solving",
