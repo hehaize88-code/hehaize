@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const path = routeHref(language.code, route);
       return {
         url: `${SITE_URL}${path === "/" ? "" : path}`,
-        lastModified: new Date("2026-08-03T00:00:00Z"),
+        lastModified: new Date("2026-08-09T00:00:00Z"),
         changeFrequency: route === "home" || route === "finds" || route === "articles" ? "weekly" as const : "monthly" as const,
         priority: route === "home" ? 1 : route === "finds" || route === "articles" ? 0.85 : 0.72,
       };

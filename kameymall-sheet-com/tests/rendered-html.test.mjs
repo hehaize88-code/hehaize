@@ -65,6 +65,7 @@ test("renders every requested independent page", async () => {
     "/articles/kameymall-shipping-cost-guide-2026",
     "/articles/how-to-read-kameymall-qc-photos",
     "/articles/kameymall-warehouse-storage-returns-guide",
+    "/articles/kameymall-payment-methods-fees",
     "/categories/shoes",
     "/products/new-balance-1906r",
     "/fr/categories/shoes",
@@ -113,7 +114,7 @@ test("keeps every localized content module as complete as English", async () => 
     assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
     assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
     assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
-    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 5, `${prefix || "/"} article cards`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 6, `${prefix || "/"} article cards`);
     assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
 
     const homeImages = (homeHtml.match(/<img\b/g) ?? []).length;
@@ -331,7 +332,7 @@ test("keeps the complete homepage in compact no-swipe mobile grids", async () =>
   assert.equal((html.match(/class="category-card"/g) ?? []).length, 10);
   assert.equal((html.match(/<ol class="step-list">[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g) ?? []).length, 6);
   assert.equal((html.match(/class="guide-card(?: |")/g) ?? []).length, 3);
-  assert.equal((html.match(/class="article-card"/g) ?? []).length, 5);
+  assert.equal((html.match(/class="article-card"/g) ?? []).length, 6);
   assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 11);
   assert.doesNotMatch(html, /<details\b[^>]*\bopen\b/i, "homepage FAQs and language menu start collapsed");
 });
@@ -397,6 +398,7 @@ const auditedRoutes = [
   "/articles/kameymall-shipping-cost-guide-2026",
   "/articles/how-to-read-kameymall-qc-photos",
   "/articles/kameymall-warehouse-storage-returns-guide",
+  "/articles/kameymall-payment-methods-fees",
   ...categoryRoutes,
   ...productRoutes,
 ];
@@ -405,7 +407,7 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-test("uses the correct root HTML language on all 330 canonical pages", async () => {
+test("uses the correct root HTML language on all 336 canonical pages", async () => {
   const worker = await loadWorker();
   const englishImageCounts = new Map();
   const englishSectionCounts = new Map();
@@ -584,6 +586,33 @@ test("publishes a complete source-checked warehouse storage and returns guide in
   const englishProse = englishHtml.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
   const englishWords = visibleText(englishProse).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
   assert.ok(englishWords.length >= 1200 && englishWords.length <= 1800, `English storage guide has ${englishWords.length} visible words`);
+});
+
+test("publishes a complete source-checked payment methods and fees guide in all six languages", async () => {
+  const worker = await loadWorker();
+  const route = "/articles/kameymall-payment-methods-fees";
+  let englishParagraphCount = 0;
+
+  for (const prefix of locales) {
+    const pathname = `${prefix}${route}`;
+    const response = await render(worker, pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+    const prose = html.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+    const paragraphCount = (prose.match(/<p\b/g) ?? []).length;
+    const bulletCount = (prose.match(/<li\b/g) ?? []).length;
+
+    if (!prefix) englishParagraphCount = paragraphCount;
+    assert.equal(paragraphCount, englishParagraphCount, `${pathname} paragraph parity`);
+    assert.equal(bulletCount, 6, `${pathname} checklist parity`);
+    assert.match(html, /"@type":"Article"/, `${pathname} Article structured data`);
+    assert.match(html, /"@type":"BreadcrumbList"/, `${pathname} breadcrumb structured data`);
+  }
+
+  const englishHtml = await (await render(worker, route)).text();
+  const englishProse = englishHtml.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+  const englishWords = visibleText(englishProse).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+  assert.ok(englishWords.length >= 1200 && englishWords.length <= 1800, `English payment guide has ${englishWords.length} visible words`);
 });
 
 test("uses the focused homepage metadata and deepens the three priority category pages", async () => {

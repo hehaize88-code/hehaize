@@ -17,7 +17,8 @@ export type StaticRouteKey =
   | "articles/how-to-buy-from-kameymall-2026"
   | "articles/kameymall-shipping-cost-guide-2026"
   | "articles/how-to-read-kameymall-qc-photos"
-  | "articles/kameymall-warehouse-storage-returns-guide";
+  | "articles/kameymall-warehouse-storage-returns-guide"
+  | "articles/kameymall-payment-methods-fees";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
 
@@ -37,6 +38,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/kameymall-shipping-cost-guide-2026",
   "articles/how-to-read-kameymall-qc-photos",
   "articles/kameymall-warehouse-storage-returns-guide",
+  "articles/kameymall-payment-methods-fees",
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -1037,6 +1039,48 @@ for (const language of languages) {
   copy.pageIntros["articles/kameymall-warehouse-storage-returns-guide"] = update.intro;
 }
 
+const paymentArticleUi: Record<Locale, { card: CardCopy; intro: { kicker: string; title: string; intro: string }; libraryIntro: string }> = {
+  en: {
+    card: { label: "Payment & fees", title: "KameyMall Payment Methods and Fees Explained", body: "Compare live payment options, reconcile every checkout line and keep the product order separate from the later international parcel payment.", action: "Read the payment guide" },
+    intro: { kicker: "Payment and fee guide", title: "KameyMall Payment Methods and Fees Explained", intro: "A source-checked method for comparing payment options, currency conversion, checkout fees and the two-stage cost of an agent order." },
+    libraryIntro: "Six original guides cover product discovery, the agent workflow, shipping costs, QC photos, warehouse decisions, returns, payments and fees.",
+  },
+  de: {
+    card: { label: "Zahlung & Gebühren", title: "KameyMall-Zahlungsarten und Gebühren erklärt", body: "Aktuelle Zahlungsarten vergleichen, jede Kassenzeile abstimmen und Produktauftrag von der späteren Paketzahlung trennen.", action: "Zahlungsratgeber lesen" },
+    intro: { kicker: "Zahlungs- und Gebührenleitfaden", title: "KameyMall-Zahlungsarten und Gebühren erklärt", intro: "Eine quellengeprüfte Methode für Zahlungsarten, Währungsumrechnung, Kassenpositionen und die zwei Kostenstufen des Agentenauftrags." },
+    libraryIntro: "Sechs originale Ratgeber behandeln Produktsuche, Agentenablauf, Versandkosten, QC-Fotos, Lagerentscheidungen, Rückgabe, Zahlung und Gebühren.",
+  },
+  fr: {
+    card: { label: "Paiement & frais", title: "Modes de paiement et frais KameyMall expliqués", body: "Comparez les options en direct, rapprochez chaque ligne de caisse et séparez la commande du futur paiement du colis.", action: "Lire le guide paiement" },
+    intro: { kicker: "Guide paiement et frais", title: "Modes de paiement et frais KameyMall expliqués", intro: "Une méthode vérifiée pour comparer paiements, conversion, frais de caisse et les deux étapes de coût d’une commande par agent." },
+    libraryIntro: "Six guides originaux couvrent découverte, parcours d’agent, transport, photos QC, entrepôt, retours, paiements et frais.",
+  },
+  es: {
+    card: { label: "Pagos y cargos", title: "Métodos de pago y tarifas de KameyMall", body: "Compara opciones activas, concilia cada línea y separa el pago del producto del posterior pago del paquete internacional.", action: "Leer la guía de pagos" },
+    intro: { kicker: "Guía de pagos y cargos", title: "Métodos de pago y tarifas de KameyMall explicados", intro: "Un método verificado para comparar pagos, conversión, cargos del checkout y las dos etapas de coste de un pedido con agente." },
+    libraryIntro: "Seis guías originales cubren productos, proceso de agente, transporte, fotos QC, almacén, devoluciones, pagos y cargos.",
+  },
+  it: {
+    card: { label: "Pagamenti e costi", title: "Metodi di pagamento e commissioni KameyMall", body: "Confronta le opzioni live, riconcilia ogni riga e separa l’ordine prodotto dal successivo pagamento del pacco.", action: "Leggi la guida pagamenti" },
+    intro: { kicker: "Guida a pagamenti e costi", title: "Metodi di pagamento e commissioni KameyMall", intro: "Un metodo verificato per confrontare pagamenti, conversione, costi del checkout e le due fasi di spesa dell’ordine tramite agente." },
+    libraryIntro: "Sei guide originali coprono prodotti, processo agente, spedizione, foto QC, deposito, resi, pagamenti e costi.",
+  },
+  pl: {
+    card: { label: "Płatności i opłaty", title: "Metody płatności i opłaty KameyMall", body: "Porównaj bieżące opcje, uzgodnij każdą linię i oddziel płatność za produkt od późniejszej płatności za paczkę.", action: "Przeczytaj poradnik płatności" },
+    intro: { kicker: "Poradnik płatności i opłat", title: "Metody płatności i opłaty KameyMall", intro: "Sprawdzona metoda porównania płatności, przewalutowania, opłat checkoutu i dwóch etapów kosztu zamówienia przez agenta." },
+    libraryIntro: "Sześć oryginalnych poradników obejmuje produkty, proces agenta, wysyłkę, zdjęcia QC, magazyn, zwroty, płatności i opłaty.",
+  },
+};
+
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  const update = paymentArticleUi[language.code];
+  copy.articles.cards.push(update.card);
+  copy.articles.intro = update.libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: update.libraryIntro };
+  copy.pageIntros["articles/kameymall-payment-methods-fees"] = update.intro;
+}
+
 export const copies: Record<Locale, SiteCopy> = {
   en: english,
   de: german,
@@ -1088,4 +1132,5 @@ export const articleRoutes: StaticRouteKey[] = [
   "articles/kameymall-shipping-cost-guide-2026",
   "articles/how-to-read-kameymall-qc-photos",
   "articles/kameymall-warehouse-storage-returns-guide",
+  "articles/kameymall-payment-methods-fees",
 ];

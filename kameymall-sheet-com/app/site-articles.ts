@@ -1,5 +1,6 @@
 import type { Locale } from "./site-content";
 import { warehouseStorageArticles } from "./site-article-storage";
+import { paymentArticles } from "./site-article-payment";
 
 type ProseSection = { heading: string; paragraphs: string[]; bullets?: string[] };
 
@@ -25,13 +26,15 @@ type LegacyAdditionalArticleRoute =
 
 export type AdditionalArticleRoute =
   | LegacyAdditionalArticleRoute
-  | "articles/kameymall-warehouse-storage-returns-guide";
+  | "articles/kameymall-warehouse-storage-returns-guide"
+  | "articles/kameymall-payment-methods-fees";
 
 export const additionalArticleRoutes: AdditionalArticleRoute[] = [
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",
   "articles/how-to-read-kameymall-qc-photos",
   "articles/kameymall-warehouse-storage-returns-guide",
+  "articles/kameymall-payment-methods-fees",
 ];
 
 const english: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
@@ -659,12 +662,12 @@ const polish: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
 };
 
 export const additionalArticles: Record<Locale, Record<AdditionalArticleRoute, ArticlePageContent>> = {
-  en: { ...english, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.en },
-  de: { ...german, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.de },
-  fr: { ...french, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.fr },
-  es: { ...spanish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.es },
-  it: { ...italian, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.it },
-  pl: { ...polish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.pl },
+  en: { ...english, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.en, "articles/kameymall-payment-methods-fees": paymentArticles.en },
+  de: { ...german, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.de, "articles/kameymall-payment-methods-fees": paymentArticles.de },
+  fr: { ...french, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.fr, "articles/kameymall-payment-methods-fees": paymentArticles.fr },
+  es: { ...spanish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.es, "articles/kameymall-payment-methods-fees": paymentArticles.es },
+  it: { ...italian, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.it, "articles/kameymall-payment-methods-fees": paymentArticles.it },
+  pl: { ...polish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.pl, "articles/kameymall-payment-methods-fees": paymentArticles.pl },
 };
 
 function articleStructure(pages: Record<AdditionalArticleRoute, ArticlePageContent>) {
