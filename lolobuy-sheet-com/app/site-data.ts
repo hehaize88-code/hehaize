@@ -1230,6 +1230,139 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-shoe-size-guide",
+    title:
+      "LoloBuy Shoe Size Guide: Measure Before Ordering and Warehouse QC",
+    shortTitle: "LoloBuy shoe sizing and measurement guide",
+    description:
+      "Choose a LoloBuy shoe size with foot and insole measurements, then verify labels, pair consistency and visible condition in warehouse QC photos.",
+    eyebrow: "SHOE SIZE & WAREHOUSE QC",
+    published: "2026-08-10",
+    updated: "2026-08-10",
+    readingTime: "13 min read",
+    factCheckLine:
+      "Fact-checked August 10, 2026 against LoloBuy's current public ordering and warehouse statements; sizing advice is independent editorial analysis.",
+    visual: {
+      eyebrow: "THE THREE-MEASUREMENT RECORD",
+      title: "Compare like with like before choosing a size.",
+      caption:
+        "Record foot length, a comfortable reference insole and the seller's stated measurement method. Warehouse evidence then checks the item received—not a promised fit.",
+      items: [
+        {
+          label: "Foot",
+          text: "Measure both feet while standing and keep the longer result.",
+        },
+        {
+          label: "Reference",
+          text: "Measure a removable insole from a shoe that already fits well.",
+        },
+        {
+          label: "Listing",
+          text: "Save the seller's current chart, units and measurement label.",
+        },
+        {
+          label: "Warehouse",
+          text: "Confirm the selected label, pair and any decision-changing measurement.",
+        },
+      ],
+    },
+    sources: [
+      {
+        label: "LoloBuy public website — checked August 10, 2026",
+        note: "Primary source only for LoloBuy's published link-ordering, warehouse quality-inspection, photography, 90-day storage and parcel-consolidation workflow statements. It does not publish a universal shoe-size conversion or fit guarantee.",
+      },
+      {
+        label: "Lolobuy Sheet measurement framework",
+        note: "The foot, reference-insole, listing-chart and warehouse comparison method is independent editorial analysis. The worked numbers illustrate the method and are not a recommendation for any seller or model.",
+      },
+    ],
+    intro: [
+      "The useful answer to “What LoloBuy shoe size should I buy?” is not a universal conversion table. Start with the longer of your two feet, compare it with a removable insole from a shoe that already fits, and read the seller's chart according to the measurement it actually names. Save that evidence with the exact color and size option before you submit the product link.",
+      "LoloBuy's public website describes beginning an order with a pasted product link, followed by warehouse quality inspection and photographs after the seller sends the item. That creates a valuable checkpoint, but warehouse images cannot guarantee comfort, internal shape, material, durability or authenticity. The goal is to replace an unsupported size-letter guess with a traceable decision and a focused QC review.",
+    ],
+    sections: [
+      {
+        heading: "Start with the longer foot, not your usual size label",
+        paragraphs: [
+          "Measure near the time of day when you normally wear the shoes and use the socks intended for them. Place a sheet of paper on a hard floor against a wall, stand with the heel lightly touching the wall and keep normal weight on the foot. Mark the furthest toe, then measure the straight distance from the wall edge to that mark. Repeat for the other foot and keep both results.",
+          "The longer result is the safer comparison baseline because feet are often not identical. Do not add an arbitrary amount and call it the required insole length. Toe room depends on the shoe's shape, intended use, thickness of the upper, sock choice and how the seller defines a measurement. Record the raw foot length first; make the fit decision only after you have comparable listing data.",
+        ],
+        bullets: [
+          "Measure on a hard, level surface while standing.",
+          "Use the socks you expect to wear with the pair.",
+          "Record both feet in millimetres or centimetres.",
+          "Keep the longer measurement without rounding it down.",
+        ],
+      },
+      {
+        heading: "Use a well-fitting removable insole as a second reference",
+        paragraphs: [
+          "A reference shoe helps translate a body measurement into a fit you already understand. Choose a pair with a similar purpose and toe shape, remove the insole if it comes out cleanly, lay it flat and measure from the heel's furthest point to the longest toe point. Photograph the tape or ruler placement so you can repeat it. Also note whether the reference feels close, comfortable or roomy.",
+          "Do not force out a glued insole or measure only the curved top surface of the shoe. If the insole cannot be removed, use the foot measurement as the main baseline and treat any internal measurement as approximate. A running shoe, narrow dress shoe and padded high-top may feel different even when their insoles share a similar length, so the reference is evidence—not a guarantee.",
+        ],
+      },
+      {
+        heading: "Identify what the seller's chart is actually measuring",
+        paragraphs: [
+          "Before comparing numbers, read the chart heading and diagram. It may describe foot length, internal length, insole length, outsole length or only a seller size label. These values are not interchangeable. An outsole includes the external structure and is usually a poor substitute for usable internal space. A chart labelled foot length should be compared with your foot; one labelled insole length should be compared with a similarly measured reference insole.",
+          "Check the units and preserve the current chart with the listing date. Convert inches and centimetres once, without repeatedly rounding. If a chart contains only EU, US, UK or seller labels and no measurement definition, the decision has a larger uncertainty. Ask for the measurement tied to the exact option, or choose a listing that provides clearer evidence rather than inventing a conversion.",
+        ],
+      },
+      {
+        heading: "Build a transparent comparison instead of using a universal conversion",
+        paragraphs: [
+          "Suppose the longer foot measures 26.1 cm and a comfortable reference insole measures 27.0 cm. A seller chart—clearly labelled as removable insole length—lists one option at 26.7 cm and the next at 27.1 cm. The second option is closer to the known reference. That is a reasoned comparison, not proof that the new shoe will fit the same way.",
+          "Now imagine the seller's 27.1 cm number is outsole length. The comparison is invalid because the two measurements describe different objects. The correct action is not to choose the closest number; it is to find an insole or foot-length value, request clarification if the current order flow permits it, or accept that the listing does not support a confident size decision.",
+          "Avoid claiming a universal production tolerance. If a seller publishes a measurement range, save it as part of that listing's evidence. Decide in advance what difference would change your choice, especially for a close-fitting shoe, but do not convert your personal threshold into a platform-wide rule.",
+        ],
+      },
+      {
+        heading: "Save the exact option before pasting the product link",
+        paragraphs: [
+          "LoloBuy publicly says a shopper can start by pasting a product link. Before doing so, save the source page, selected color, seller size label, quantity, chart and date. If the listing uses image-only or coded variants, keep the original code and a screenshot rather than translating it from memory. Then compare the order generated inside the current LoloBuy flow with that record before payment.",
+          "A single marketplace page can group different shoes, colorways, quality levels or accessories under one cover image. Confirm that the selected price belongs to the pair and option you intend to buy. Keep product cost, domestic seller delivery and later international parcel cost separate; a size decision does not establish the final delivered price.",
+        ],
+        bullets: [
+          "Original product URL and date checked",
+          "Exact color, size label, quantity and option code",
+          "Saved measurement chart with its definition and units",
+          "Reference foot and insole measurements",
+          "One decision threshold that would make you question the pair",
+        ],
+      },
+      {
+        heading: "Review warehouse QC in a fixed shoe-specific order",
+        paragraphs: [
+          "LoloBuy's public page states that warehouse arrivals receive quality inspection and photographs. Begin by confirming that two matching shoes are present, then check model, color, selected size labels and visible included pieces. Review both lateral sides, heels, toe boxes, outsoles and major panel alignment when the available views show them. Look for obvious damage, large asymmetry or a clear mismatch with the saved order.",
+          "Do not begin with microscopic stitching differences while the size label or pair identity is still uncertain. Lighting can shift color, lens angle can distort proportions and packaging can compress an upper temporarily. Describe only what the image shows. If a mark could be dust, reflection or damage, a closer neutral-light view may answer the question better than a confident accusation.",
+          "The official public page does not establish a universal free-photo count, extra-image price, video service or measurement allowance. Check the options and cost shown for the current order before requesting additional evidence. This guide does not promise that a particular request is available or free.",
+        ],
+      },
+      {
+        heading: "Request one measurement only when it can change the decision",
+        paragraphs: [
+          "If the label matches but the listing evidence was unclear, an insole measurement can help only when the insole is removable and the entire ruler placement is visible. Ask for the longest heel-to-toe line and state the unit. Compare that result with the reference insole measured the same way. A cropped ruler, diagonal placement or hidden starting point does not produce a trustworthy number.",
+          "Warehouse staff cannot perform a fitting test. Even a matching insole length cannot prove toe-box width, arch position, heel hold, cushioning, flexibility or comfort on your foot. Use the measurement to resolve the specific numerical question, then accept the remaining fit uncertainty consciously.",
+        ],
+      },
+      {
+        heading: "Choose pass, question or action before parcel submission",
+        paragraphs: [
+          "Pass the pair when identity, selected labels, quantity and decision-changing visible details match the saved record closely enough for your risk threshold. Ask a focused question when one clear label, angle or measurement can resolve the uncertainty. If a documented mismatch changes the purchase decision, preserve the listing, order option and relevant warehouse image, then use the action currently available in the order interface without delay.",
+          "This guide does not promise a return, exchange, refund, deadline or fee because those outcomes can depend on the seller, item, timing and live platform terms. LoloBuy's public page advertises 90 days of free warehouse storage, but storage time is not the same as a seller return window. Record the arrival date and resolve a material shoe-size issue before moving the pair into an international parcel.",
+          "After acceptance, consider the shoe box and protective packaging during parcel planning. Keeping a box may protect shape or matter to the buyer, while removing it can change volume; the appropriate choice depends on the item and current packing options. LoloBuy publicly describes consolidating warehouse items, but final weight, dimensions, route eligibility and price remain live parcel data.",
+        ],
+      },
+      {
+        heading: "A reusable LoloBuy shoe-size decision record",
+        paragraphs: [
+          "Keep one private row for the longer foot, reference insole, chart definition, selected option, warehouse label and any measured insole result. Add a final pass, question or action decision with the date. Do not place account credentials, payment details, full address or tracking number in a shared record.",
+          "The point is not to eliminate every fit risk. It is to know which number came from your body, which came from a shoe that already fits, which came from the seller and which came from the warehouse item. When those sources remain separate, a LoloBuy shoe-size decision becomes explainable and reviewable instead of a guess based on a familiar letter or country label.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const faqs = [

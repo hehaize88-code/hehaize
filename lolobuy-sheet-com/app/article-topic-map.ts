@@ -72,4 +72,13 @@ export const articleTopicMap: ArticleTopicMapEntry[] = [
     evidence: ["LoloBuy public website and parcel interface", "DHL eCommerce tracking FAQ", "USPS Tracking: The Basics", "UPS Tracking Support", "Lolobuy Sheet last-scan framework"],
     internalLinkRole: "Post-dispatch troubleshooting follow-on from parcel planning, connecting route selection with carrier, customs and evidence-led escalation.",
   },
+  {
+    url: "/articles/lolobuy-shoe-size-guide",
+    primaryQuery: "lolobuy shoe size guide",
+    relatedTerms: ["how to choose lolobuy shoe size", "lolobuy insole measurement", "lolobuy shoe qc photos", "chinese shoe size chart lolobuy"],
+    intent: "problem solving",
+    angle: "Compare foot, reference-insole and listing measurements before using warehouse evidence to verify the received pair.",
+    evidence: ["LoloBuy public website", "Lolobuy Sheet measurement framework"],
+    internalLinkRole: "Category-specific sizing path from shoe finds to the general QC and mismatch-evidence guides.",
+  },
 ];

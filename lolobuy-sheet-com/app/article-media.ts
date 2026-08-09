@@ -34,6 +34,11 @@ const articleMedia = {
     width: 1200,
     height: 630,
   },
+  "lolobuy-shoe-size-guide": {
+    src: "/articles/lolobuy-shoe-size-guide.svg",
+    width: 1200,
+    height: 630,
+  },
 } as const;
 
 export function getArticleMedia(slug: string) {

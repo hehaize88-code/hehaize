@@ -1,5 +1,6 @@
 import type { Locale } from "./i18n";
 import { trackingArticleLocales } from "./tracking-article-locales";
+import { shoeArticleLocales } from "./shoe-article-locales";
 import {
   articles,
   categories,
@@ -1056,6 +1057,16 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       article.slug === "lolobuy-tracking-not-updating-guide"
         ? trackingArticleLocales[locale]
         : null;
+    const translatedShoe =
+      article.slug === "lolobuy-shoe-size-guide"
+        ? shoeArticleLocales[locale]
+        : null;
+    if (translatedShoe) {
+      return {
+        ...article,
+        ...translatedShoe,
+      };
+    }
     const translatedStandalone = translatedWeidian ?? translatedQcMismatch;
     if (translatedTracking) {
       return {

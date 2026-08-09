@@ -43,6 +43,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy QC Mismatch: Evidence Before Return Requests",
     "lolobuy-tracking-not-updating-guide":
       "Lolobuy Tracking Not Updating? Last-Scan Checklist",
+    "lolobuy-shoe-size-guide":
+      "LoloBuy Shoe Size Guide: Measure Before Ordering",
   },
   es: {
     "lolobuy-spreadsheet-guide":
@@ -59,6 +61,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "QC Lolobuy incorrecto: pruebas antes del retorno",
     "lolobuy-tracking-not-updating-guide":
       "Tracking Lolobuy sin actualizar: último escaneo",
+    "lolobuy-shoe-size-guide":
+      "Guía de tallas LoloBuy: mide antes de pedir",
   },
   de: {
     "lolobuy-spreadsheet-guide":
@@ -75,6 +79,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy QC-Abweichung: Belege vor der Rückgabe",
     "lolobuy-tracking-not-updating-guide":
       "Lolobuy-Tracking ohne Update: Letzter-Scan-Check",
+    "lolobuy-shoe-size-guide":
+      "LoloBuy Schuhgrößen: Vor der Bestellung messen",
   },
   fr: {
     "lolobuy-spreadsheet-guide":
@@ -91,6 +97,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Écart QC Lolobuy : preuves avant un retour",
     "lolobuy-tracking-not-updating-guide":
       "Suivi Lolobuy bloqué : checklist du dernier scan",
+    "lolobuy-shoe-size-guide":
+      "Guide tailles LoloBuy : mesurer avant commande",
   },
   it: {
     "lolobuy-spreadsheet-guide":
@@ -107,6 +115,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "QC Lolobuy errato: prove prima del reso",
     "lolobuy-tracking-not-updating-guide":
       "Tracking Lolobuy fermo: checklist ultima scansione",
+    "lolobuy-shoe-size-guide":
+      "Taglie scarpe LoloBuy: misura prima dell’ordine",
   },
 };
 
