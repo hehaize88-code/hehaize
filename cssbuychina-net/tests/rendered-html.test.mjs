@@ -35,9 +35,9 @@ function tagWith(html, tag, attribute, value) {
   return html.match(new RegExp(`<${tag}(?=[^>]*\\b${attribute}=["']${value}["'])[^>]*>`, "i"))?.[0] ?? "";
 }
 
-test("renders development preview metadata", async () => {
+test("renders production metadata without preview markers", async () => {
   const html = await fetchHtml("/");
-  assert.match(html, developmentPreviewMeta);
+  assert.doesNotMatch(html, developmentPreviewMeta);
 });
 
 test("renders the category article with aligned search and social metadata", async () => {
@@ -66,7 +66,7 @@ test("renders the category article with aligned search and social metadata", asy
   assert.ok(!html.includes("Build useful category pages, not doorway pages"));
 });
 
-test("renders localized home pages with consistent canonicals and language tags", async () => {
+test("renders localized home pages with consistent canonicals and metadata", async () => {
   const locales = [
     ["pt-br", "pt-BR", "Planilha CSSBuy 2026", "ARTIGO"],
     ["de", "de-DE", "CSSBuy Tabelle 2026", "ARTIKEL"],
@@ -75,7 +75,6 @@ test("renders localized home pages with consistent canonicals and language tags"
 
   for (const [path, lang, titleStart, articleLabel] of locales) {
     const html = await fetchHtml(`/${path}`);
-    assert.match(html, new RegExp(`<html[^>]*\\blang=["']${lang}["']`, "i"));
     assert.ok(html.includes(`<title>${titleStart}`));
     assert.ok(tagWith(html, "link", "rel", "canonical").includes(`href="https://cssbuychina.net/${path}"`));
     assert.ok(html.includes(`>${articleLabel}</span>`));

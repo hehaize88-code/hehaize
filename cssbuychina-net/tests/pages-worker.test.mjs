@@ -78,6 +78,28 @@ test("serves production pages and crawler directives", async () => {
   );
   assert.equal(article.status, 200);
 
+  const localizedPages = [
+    ["/pt-br", "pt-BR"],
+    ["/de", "de-DE"],
+    ["/es", "es"],
+  ];
+  for (const [pathname, language] of localizedPages) {
+    const localized = await worker.fetch(
+      new Request(`https://cssbuychina.net${pathname}`),
+      env,
+      context,
+    );
+    assert.equal(localized.status, 200);
+    assert.match(await localized.text(), new RegExp(`<html lang=["']${language}["']`, "i"));
+  }
+
+  const articleImage = await worker.fetch(
+    new Request("https://cssbuychina.net/cssbuy-category-checks-article.webp"),
+    env,
+    context,
+  );
+  assert.equal(articleImage.status, 200);
+
   const missing = await worker.fetch(
     new Request("https://cssbuychina.net/this-page-does-not-exist"),
     env,
