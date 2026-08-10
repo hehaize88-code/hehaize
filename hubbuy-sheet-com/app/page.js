@@ -205,6 +205,7 @@ export default function HomePage({ locale = "en" } = {}) {
               </Link>
             ))}
           </div>
+          <p className="micro-disclaimer"><Link href={`/articles/${articles[0].slug}/`}>New tracking guide: {articles[0].title} <ArrowIcon /></Link></p>
         </div>
       </section>
 

@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-parcel-tracking-delay-guide": {
+    primaryQuery: "Hubbuy tracking",
+    secondaryTerms: ["Hubbuy parcel tracking", "Hubbuy tracking not updating", "Hubbuy customs delay", "Hubbuy parcel delayed"],
+    searchIntent: "Diagnose a parcel tracking pause and prepare the right evidence for a carrier, customs or platform inquiry",
+    angle: "Stage-based troubleshooting that separates warehouse handoff, carrier movement, customs and last-mile delivery",
+    evidence: ["Publicly indexed HubbuyCN shipping and forwarding policies checked 10 August 2026", "Live official help-center availability check"],
+    internalLinkRole: "Tracking troubleshooting leaf connecting parcel planning, insurance evidence and delivery records without competing with shipping-cost intent",
+  },
   "hubbuy-parcel-insurance-claim-guide": {
     primaryQuery: "Hubbuy insurance",
     secondaryTerms: ["Hubbuy parcel insurance", "Hubbuy insurance coverage", "Hubbuy insurance claim", "Hubbuy compensation evidence"],

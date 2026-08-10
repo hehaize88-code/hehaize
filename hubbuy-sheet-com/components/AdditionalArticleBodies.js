@@ -675,7 +675,82 @@ function HubbuyInsuranceArticle({ article }) {
   );
 }
 
+function HubbuyTrackingArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">A Hubbuy tracking page is useful only when you know which journey it is describing. A parcel can be waiting for a warehouse handoff, moving between export partners, held for customs information or sitting with a last-mile carrier. This guide shows how to identify that stage, preserve the last reliable evidence and escalate a delay without guessing that every quiet scan means loss.</p>
+
+      <ResearchDisclosure>The public HubbuyCN help pages displayed a maintenance notice when checked on 10 August 2026. Recent search-indexed copies of the official shipping policy and forwarding agreement were therefore used only as a dated baseline. They describe early handoff timing and responsibility boundaries, but they do not publish one universal “lost parcel” deadline. The live parcel record, selected route and current official response control a real inquiry.</ResearchDisclosure>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Start with the last confirmed event, not the number of days since payment</h2>
+        <p>When Hubbuy tracking is not updating, write down four facts before contacting anyone: the exact tracking number, the last event text, the event location and its timestamp. Then decide whether the parcel is still inside the agent-to-carrier handoff, in international transit, under customs control or with the destination carrier. The responsible party and useful evidence change at each stage.</p>
+        <div className="article-callout"><strong>The practical rule</strong><p>Escalate the gap between the last proven event and the next expected handoff. Ask for evidence of that handoff, not a generic delivery prediction.</p></div>
+      </section>
+
+      <section id="tracking-clocks">
+        <span>02 · Three tracking clocks</span>
+        <h2>Separate warehouse processing, international movement and last-mile delivery</h2>
+        <p>The first clock starts when a parcel is submitted to the warehouse. A publicly indexed HubbuyCN shipping policy, checked on 10 August 2026, states that packing and shipment normally occur within one business day and that the parcel then reaches a third-party logistics warehouse within one to two business days, with holidays capable of causing delay. Because the live help page was under maintenance, treat those figures as a dated published baseline, not a current guarantee for every parcel.</p>
+        <p>The second clock starts only after the logistics partner accepts the parcel. This is where route design matters. A parcel may move through an export consolidator, airline, postal exchange, customs broker and destination carrier. Public tracking can show only selected handoffs. Count from the carrier-acceptance evidence shown for the actual route, not from the day you bought the product or paid China domestic shipping.</p>
+        <div className="official-workflow" aria-label="Three clocks in Hubbuy parcel tracking"><div><b>01</b><strong>Warehouse handoff</strong><span>Submission, packing and carrier acceptance</span></div><div><b>02</b><strong>International transit</strong><span>Export, transport and import processing</span></div><div><b>03</b><strong>Last mile</strong><span>Local carrier, attempt, pickup or delivery</span></div></div>
+      </section>
+
+      <section id="evidence-record">
+        <span>03 · Build the record</span>
+        <h2>Save a small timeline before the tracking page changes</h2>
+        <p>A useful tracking record fits on one page. Put the Hubbuy parcel number at the top, followed by the selected route, origin and destination, submission date, warehouse dispatch date, first carrier acceptance and every later tracking number. Copy the exact last scan rather than paraphrasing it. Add screenshots only for events that affect the decision: acceptance, customs request, failed delivery, return or delivered status.</p>
+        <ul><li><strong>Identity:</strong> Hubbuy parcel number and every carrier number.</li><li><strong>Route:</strong> the exact line selected at parcel payment.</li><li><strong>Chronology:</strong> submitted, accepted, last scan and first inquiry dates.</li><li><strong>Contents:</strong> order list, declaration, packed weight and dimensions.</li><li><strong>Notices:</strong> customs, tax, delivery-attempt or pickup messages.</li></ul>
+      </section>
+
+      <section id="no-update">
+        <span>04 · No-update diagnosis</span>
+        <h2>A quiet page is a symptom; find the missing handoff</h2>
+        <p>If a label exists but there is no carrier acceptance, ask whether the parcel physically left the warehouse and request the current logistics number. If acceptance exists but no export movement appears, compare the pause with the selected route’s current inquiry guidance. Do not import a waiting period from another carrier or an old forum post.</p>
+        <p>Weekends, holidays and batch handoffs can explain a pause, but they do not create an unlimited waiting period. Use the current route terms to identify when a trace can be opened. The goal is a case number or documented answer tied to the actual tracking ID, not repeated messages asking “Where is it?”</p>
+      </section>
+
+      <section id="customs">
+        <span>05 · Customs stage</span>
+        <h2>Read a customs event as a request category, not a forecast</h2>
+        <p>“Customs processing” can describe routine presentation, a document request, a value question, an item restriction, tax assessment or physical inspection. The tracking phrase alone rarely identifies the outcome. Check messages from the carrier and customs authority, including spam folders and the phone number attached to delivery.</p>
+        <p>Respond with accurate records. A lower invented value or vague description can make the problem worse. If the route requires recipient cooperation, preserve what was requested, when you supplied it and any payment receipt. Hubbuy’s publicly indexed insurance wording lists failure to cooperate with customs or pay required duties among specified exclusions in some circumstances, so silence is not a safe strategy.</p>
+        <p>Do not describe a hold as confiscation or loss without an official notice. If an item may be restricted, review the separate <Link href="/articles/hubbuy-restricted-items-shipping-guide/">Hubbuy restricted-items route guide</Link> and provide the exact product identity.</p>
+      </section>
+
+      <section id="delivery-exception">
+        <span>06 · Destination exception</span>
+        <h2>Act quickly on failed delivery, pickup and delivered scans</h2>
+        <p>A failed attempt is usually a last-mile problem, not an international-transit delay. Verify the delivery address and contact details, then contact the destination carrier using its local number. If a pickup point is named, record its address and collection deadline. Hubbuy’s indexed insurance wording specifically identifies incorrect recipient details, refusal, late pickup and unclaimed delivery as situations that can affect coverage.</p>
+        <p>If tracking says delivered but the parcel is absent, check household members, reception desks, parcel lockers and safe places immediately. Ask the carrier for delivery evidence and confirm whether the scan belongs to the right postcode or address. Photograph the delivery area if useful and keep the tracking page. A delivered scan is also material to the indexed insurance exclusions, so report the discrepancy promptly rather than waiting for the status to change by itself.</p>
+      </section>
+
+      <section id="escalation">
+        <span>07 · Escalation packet</span>
+        <h2>Send one complete inquiry that the recipient can investigate</h2>
+        <p>Choose the party closest to the missing handoff. Hubbuy can clarify warehouse dispatch, the selected route and the logistics partner. The carrier can investigate events after its acceptance. Customs or the broker controls a document or tax request. The destination carrier controls local attempts, pickup and delivery evidence.</p>
+        <p>Your message should contain the parcel number, route, all tracking numbers, destination, dates, exact last event, the missing next event and the action requested. Attach the relevant notice, not a folder of unrelated screenshots. Ask for a case number, expected response point and any deadline for supplying evidence.</p>
+        <div className="article-formula"><small>Useful inquiry format</small><strong>Parcel identity + last proven event + missing handoff + evidence + requested action</strong></div>
+        <p>Keep every reply in the same chronology. If the parcel may qualify for protection, the <Link href="/articles/hubbuy-parcel-insurance-claim-guide/">Hubbuy parcel-insurance evidence guide</Link> explains why coverage, exclusions and the event record must refer to the same parcel.</p>
+      </section>
+
+      <section id="decision-table">
+        <span>08 · Decision table</span>
+        <h2>Use the stage to choose the next action</h2>
+        <div className="article-point-grid"><div><b>Label only</b><strong>Confirm physical dispatch</strong><span>Ask for warehouse handoff and current carrier evidence.</span></div><div><b>Accepted, no movement</b><strong>Check route inquiry rule</strong><span>Open a trace when the current line permits it.</span></div><div><b>Customs event</b><strong>Read and answer the notice</strong><span>Provide truthful documents, tax or identity information.</span></div><div><b>Delivery exception</b><strong>Contact the local carrier</strong><span>Verify address, attempt, pickup point or proof of delivery.</span></div></div>
+        <p>The decision is not “wait” versus “panic.” It is whether the next handoff is still within the current route’s normal process or whether a named party now has enough evidence to investigate. Preserve the record while you wait, and escalate once with a precise request.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources"><strong>Dated source boundary</strong><p>Platform-specific statements in this guide were checked on 10 August 2026 against Hubbuy’s public website and recent search-indexed copies of the official HubbuyCN shipping, forwarding and insurance help pages. The live help pages displayed maintenance during the check, so no fixed inquiry deadline, delivery promise or compensation outcome is inferred. Source addresses are listed in the publication report rather than added as outbound links here.</p></div>
+      <ArticleCta />
+    </>
+  );
+}
+
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-parcel-tracking-delay-guide") return <HubbuyTrackingArticle article={article} />;
   if (article.slug === "hubbuy-parcel-insurance-claim-guide") return <HubbuyInsuranceArticle article={article} />;
   if (article.slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsArticle article={article} />;
   if (article.slug === "hubbuy-reviews-customer-experience") return <HubbuyReviewsArticle article={article} />;

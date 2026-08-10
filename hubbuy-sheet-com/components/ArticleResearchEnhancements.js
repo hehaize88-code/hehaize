@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "hubbuy-parcel-tracking-delay-guide": [
+    ["Shipping policy", "Warehouse dispatch and third-party logistics handoff baseline"],
+    ["Forwarding agreement", "Inbound receipt and responsibility boundary"],
+    ["Insurance policy", "Delivery, recipient and customs-cooperation evidence"],
+  ],
   "hubbuy-parcel-insurance-claim-guide": [
     ["Official parcel workflow", "Hubbuy places international shipping after warehouse inspection and parcel preparation.", OFFICIAL_HOME, "Official workflow ↗"],
     ["Insurance and Compensation", "The publicly indexed policy defines optional parcel-loss cover, formula, published limits, timing and exclusions.", "https://manager.hubbuycn.com/index/help/info/id/69.html", "Insurance policy ↗"],
@@ -177,7 +182,23 @@ function InsuranceEvidenceMap() {
   );
 }
 
+function TrackingEvidenceMap() {
+  return (
+    <figure className="research-visual review-evidence-matrix">
+      <div className="research-visual-heading"><span>Original tracking map</span><strong>One missing handoff, one evidence request</strong></div>
+      <div className="review-matrix-grid">
+        <div><b>WAREHOUSE</b><strong>Parcel · route · dispatch</strong><span>Confirm what physically left and which carrier accepted it.</span></div>
+        <div><b>TRANSIT</b><strong>Last scan · time · location</strong><span>Preserve the last proven movement before opening a trace.</span></div>
+        <div><b>CUSTOMS</b><strong>Notice · documents · response</strong><span>Identify the request rather than predicting the outcome.</span></div>
+        <div><b>LAST MILE</b><strong>Attempt · pickup · delivery</strong><span>Use the local carrier for address and delivery evidence.</span></div>
+      </div>
+      <figcaption>Editorial decision map created by Hubbuy Sheet from publicly indexed HubbuyCN shipping, forwarding and insurance information checked on 10 August 2026. It is not a live tracking result.</figcaption>
+    </figure>
+  );
+}
+
 function ArticleVisual({ slug }) {
+  if (slug === "hubbuy-parcel-tracking-delay-guide") return <TrackingEvidenceMap />;
   if (slug === "hubbuy-parcel-insurance-claim-guide") return <InsuranceEvidenceMap />;
   if (slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsMatrix />;
   if (slug === "hubbuy-reviews-customer-experience") return <ReviewEvidenceMatrix />;
@@ -201,7 +222,11 @@ export default function ArticleResearchEnhancements({ article }) {
 
       <div className="source-ledger">
         <div className="source-ledger-heading"><span>Primary-source ledger</span><strong>Official Hubbuy page and named section</strong></div>
-        {sources.map(([section, evidence, href = OFFICIAL_HOME, label = "Official page ↗"], index) => (
+        {sources.map(([section, evidence, href = OFFICIAL_HOME, label = "Official page ↗"], index) => article.noExternalSourceLinks ? (
+          <div key={section} className="source-ledger-row">
+            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>Checked 10 Aug 2026</em>
+          </div>
+        ) : (
           <a key={section} href={href} target="_blank" rel="noopener">
             <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{label}</em>
           </a>
