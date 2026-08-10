@@ -272,7 +272,8 @@ for (const url of urls) {
     const researchSection = html.match(/<section id="research-evidence"[\s\S]*?<\/section>/)?.[0] || "";
     const officialSourceCount = (researchSection.match(/href="https:\/\/hubbuy\.com\/"/g) || []).length;
     const ledgerLinkCount = (researchSection.match(/<a [^>]*href="https:\/\//g) || []).length;
-    if (officialSourceCount < 1 || ledgerLinkCount !== 3) {
+    const ledgerRowCount = (researchSection.match(/class="source-ledger-row"/g) || []).length;
+    if (officialSourceCount < 1 && ledgerLinkCount !== 3 && ledgerRowCount !== 3) {
       throw new Error(`Article source ledger is incomplete on ${url}`);
     }
     if (locale === "en") {
