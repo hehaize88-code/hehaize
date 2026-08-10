@@ -38,14 +38,16 @@ export function compactMetaDescription(
     return normalized;
   }
 
-  const candidate = normalized.slice(0, maxLength - 1);
-  const lastWordBoundary = candidate.lastIndexOf(" ");
+  const candidate = normalized.slice(0, maxLength);
+  const sentenceEnd = Math.max(candidate.lastIndexOf("."), candidate.lastIndexOf("?"), candidate.lastIndexOf("!"));
+  if (sentenceEnd >= 110) return candidate.slice(0, sentenceEnd + 1);
+  const lastWordBoundary = candidate.lastIndexOf(" ", maxLength - 1);
   const shortened =
     lastWordBoundary >= Math.floor(maxLength * 0.72)
       ? candidate.slice(0, lastWordBoundary)
-      : candidate;
+      : candidate.slice(0, maxLength - 1);
 
-  return `${shortened.replace(/[\s,;:–—-]+$/u, "")}…`;
+  return `${shortened.replace(/[\s,;:–—-]+$/u, "")}.`;
 }
 
 export function localizedMetadata({

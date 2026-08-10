@@ -19,7 +19,10 @@ export async function generateMetadata({
   return localizedMetadata({
     locale,
     path: "/articles",
-    title: copy.title,
+    title:
+      locale === "en"
+        ? "LoloBuy Guides 2026 | Spreadsheet, QC, Shipping & Tracking"
+        : copy.title,
     description: copy.intro,
   });
 }

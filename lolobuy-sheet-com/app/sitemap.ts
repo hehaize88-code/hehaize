@@ -5,7 +5,7 @@ import { articles, productFinds } from "./site-data";
 import { categoryGuideSlugs } from "./category-guide-data";
 
 const baseUrl = "https://lolobuy-sheet.com";
-const staticLastModified = new Date("2026-08-02");
+const staticLastModified = new Date("2026-08-10");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [

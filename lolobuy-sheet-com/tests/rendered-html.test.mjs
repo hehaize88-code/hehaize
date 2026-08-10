@@ -115,7 +115,7 @@ test("redirects legacy query and /en URLs to canonical language paths", async ()
   assert.equal(englishPrefix.headers.get("location"), "https://lolobuy-sheet.com/faq");
 });
 
-test("publishes all 155 language URLs in the sitemap", async () => {
+test("publishes all 185 language URLs in the sitemap", async () => {
   const worker = await loadWorker();
   const response = await fetchPage(worker, "/sitemap.xml");
   const xml = await response.text();
@@ -125,10 +125,16 @@ test("publishes all 155 language URLs in the sitemap", async () => {
     response.headers.get("content-type") ?? "",
     /application\/xml|text\/xml/i,
   );
-  assert.equal((xml.match(/<url>/g) ?? []).length, 155);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 185);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/faq/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/shoes/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/bags/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/jackets/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/es\/categories\/pants-shorts/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/headwear/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/it\/categories\/accessories/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/t-shirts/);
+  assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/jersey/);
   assert.match(
     xml,
     /https:\/\/lolobuy-sheet\.com\/it\/articles\/lolobuy-weidian-link-guide/,
@@ -234,6 +240,42 @@ test("keeps every indexed title concise and every description snippet bounded", 
   }
 });
 
+test("aligns priority landing-page titles and H1s with their target queries", async () => {
+  const worker = await loadWorker();
+  const pages = [
+    [
+      "/finds",
+      "Lolobuy Spreadsheet Finds 2026 | Product Directory",
+      "Lolobuy Spreadsheet Finds: Curated Product Directory",
+    ],
+    [
+      "/articles",
+      "LoloBuy Guides 2026 | Spreadsheet, QC, Shipping & Tracking",
+      "LoloBuy Spreadsheet, QC, Shipping & Tracking Guides",
+    ],
+    [
+      "/faq",
+      "LoloBuy FAQ 2026 | QC, Storage, Shipping & Fees",
+      "LoloBuy FAQ: Spreadsheet, QC, Storage & Shipping",
+    ],
+  ];
+
+  for (const [path, title, h1] of pages) {
+    const response = await fetchPage(worker, path);
+    const html = await response.text();
+
+    assert.equal(response.status, 200, path);
+    assert.equal(
+      decodeHtml(html.match(/<title>([^<]+)<\/title>/i)?.[1] ?? ""),
+      title,
+    );
+    assert.equal(
+      decodeHtml(html.match(/<h1>([^<]+)<\/h1>/i)?.[1] ?? ""),
+      h1,
+    );
+  }
+});
+
 test("serves substantial localized category and article landing pages", async () => {
   const worker = await loadWorker();
   const category = await fetchPage(worker, "/de/categories/shoes");
@@ -276,23 +318,37 @@ test("category cards open the matching live directories and use a jersey card", 
   assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/Jersey\/"/);
   assert.match(html, /src="\/products\/jersey\.webp"/);
   assert.match(html, /<h2>Jersey<\/h2>/);
+  assert.match(html, /href="\/categories\/jersey"/);
+  assert.match(html, /rel="sponsored noopener"/);
   assert.doesNotMatch(html, /<h2>All products<\/h2>/);
+});
+
+test("homepage fourth edit is Jersey and commercial links are qualified", async () => {
+  const worker = await loadWorker();
+  const response = await fetchPage(worker, "/");
+  const html = await response.text();
+
+  assert.equal(response.status, 200);
+  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/Jersey\/"[^>]*rel="sponsored noopener"/);
+  assert.match(html, /src="\/products\/jersey\.webp"/);
+  assert.match(html, />Jersey<\/span>/);
+  assert.match(html, />Bags &amp; Accessories<\/span>/);
 });
 
 test("serves eight evidence-led product pages with local responsive images", async () => {
   const worker = await loadWorker();
   const products = [
-    ["snow-ski-goggles", "7813573584", 5],
-    ["gucci-hat", "7813802324", 5],
-    ["off-white-hoodies", "7813733346", 5],
-    ["numeris-high-top-shoes", "7810791921", 2],
-    ["hoka-speedgoat-5", "7806024805", 5],
-    ["nike-elite-backpack", "7804348058", 4],
-    ["balenciaga-puffer", "7804322444", 4],
-    ["winter-hooded-jacket", "7798076213", 4],
+    ["snow-ski-goggles", "7813573584", 5, "340–679", "50–101"],
+    ["gucci-hat", "7813802324", 5, "75–85", "11–13"],
+    ["off-white-hoodies", "7813733346", 5, "299.52–342.72", "44–51"],
+    ["numeris-high-top-shoes", "7810791921", 2, "455", "67"],
+    ["hoka-speedgoat-5", "7806024805", 5, "218", "32"],
+    ["nike-elite-backpack", "7804348058", 4, "89", "13"],
+    ["balenciaga-puffer", "7804322444", 4, "595", "88"],
+    ["winter-hooded-jacket", "7798076213", 4, "272", "40"],
   ];
 
-  for (const [slug, sourceItemId, galleryCount] of products) {
+  for (const [slug, sourceItemId, galleryCount, sourceCny, approxUsd] of products) {
     const response = await fetchPage(worker, `/products/${slug}`);
     const html = await response.text();
 
@@ -318,6 +374,21 @@ test("serves eight evidence-led product pages with local responsive images", asy
     assert.match(html, /"@type":"BreadcrumbList"/);
     assert.doesNotMatch(html, /"@type":"Product"/);
     assert.doesNotMatch(html, /"offers"|"review"|"aggregateRating"/);
+    const priceText = decodeHtml(
+      html.match(
+        /<p class="product-reference-price">([\s\S]*?)<\/p>/i,
+      )?.[1] ?? "",
+    )
+      .replace(/<!--[\s\S]*?-->/g, "")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    assert.equal(
+      priceText,
+      `Approx. US$${approxUsd} · Source price ¥${sourceCny} · Checked 10 Aug 2026`,
+      `${slug} must publish its checked CNY and approximate USD reference`,
+    );
+    assert.match(html, /ECB cross-rates dated 7 Aug 2026/);
   }
 });
 
@@ -380,7 +451,7 @@ test("publishes a measurable, Lolobuy-specific research footprint", async () => 
   assert.equal(response.status, 200);
   assert.match(html, /CURRENT RESEARCH FOOTPRINT/);
   assert.match(html, /8<\/dt><dd>individual product evidence pages/);
-  assert.match(html, /3<\/dt><dd>deep category guides/);
+  assert.match(html, /9<\/dt><dd>deep category guides/);
   assert.match(html, /8<\/dt><dd>fact-checked long-form articles/);
   assert.match(html, /href="\/articles\/lolobuy-weidian-link-guide"/);
   assert.match(html, /href="\/categories\/shoes"/);

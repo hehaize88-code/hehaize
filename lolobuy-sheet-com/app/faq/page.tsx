@@ -19,7 +19,10 @@ export async function generateMetadata({
   return localizedMetadata({
     locale,
     path: "/faq",
-    title: copy.title,
+    title:
+      locale === "en"
+        ? "LoloBuy FAQ 2026 | QC, Storage, Shipping & Fees"
+        : copy.title,
     description: copy.intro,
   });
 }

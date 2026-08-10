@@ -103,7 +103,7 @@ export default async function CategoryGuidePage({
               className="button button-primary"
               href={guide.directoryHref}
               target="_blank"
-              rel="noopener"
+              rel="sponsored noopener"
             >
               {guide.openDirectory} <span aria-hidden="true">↗</span>
             </a>
@@ -162,26 +162,30 @@ export default async function CategoryGuidePage({
               <p>{guide.productsIntro}</p>
             </div>
           </div>
-          <div className="related-product-grid">
-            {products.map((product) => (
-              <Link
-                className="related-product-card"
-                href={localizedPath(`/products/${product.slug}`, locale)}
-                key={product.slug}
-              >
-                <ProductImage
-                  slug={product.slug}
-                  alt={product.name}
-                  sizes="(max-width: 620px) 30vw, 28vw"
-                />
-                <span>{product.category}</span>
-                <h3>{product.name}</h3>
-                <b>
-                  {guide.viewProduct} <span aria-hidden="true">→</span>
-                </b>
-              </Link>
-            ))}
-          </div>
+          {products.length > 0 ? (
+            <div className="related-product-grid">
+              {products.map((product) => (
+                <Link
+                  className="related-product-card"
+                  href={localizedPath(`/products/${product.slug}`, locale)}
+                  key={product.slug}
+                >
+                  <ProductImage
+                    slug={product.slug}
+                    alt={product.name}
+                    sizes="(max-width: 620px) 30vw, 28vw"
+                  />
+                  <span>{product.category}</span>
+                  <h3>{product.name}</h3>
+                  <b>{guide.viewProduct} <span aria-hidden="true">→</span></b>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <a className="button button-secondary" href={guide.directoryHref} target="_blank" rel="sponsored noopener">
+              {guide.openDirectory} <span aria-hidden="true">↗</span>
+            </a>
+          )}
         </section>
 
         <section className="category-guide-faq">

@@ -1,7 +1,17 @@
 import type { Locale } from "./i18n";
 import type { ProductKind } from "./site-data";
+import { additionalCategoryGuides } from "./additional-category-guides";
 
-export type CategoryGuideSlug = "shoes" | "hoodies-sweaters" | "bags";
+export type CategoryGuideSlug =
+  | "shoes"
+  | "hoodies-sweaters"
+  | "bags"
+  | "jackets"
+  | "pants-shorts"
+  | "headwear"
+  | "accessories"
+  | "t-shirts"
+  | "jersey";
 
 type Check = {
   title: string;
@@ -13,7 +23,7 @@ type Faq = {
   answer: string;
 };
 
-type CategoryGuideText = {
+export type CategoryGuideText = {
   name: string;
   eyebrow: string;
   title: string;
@@ -43,7 +53,7 @@ export type CategoryGuide = CategoryGuideText & {
   productKinds: ProductKind[];
 };
 
-type CategoryGuideConfig = {
+export type CategoryGuideConfig = {
   slug: CategoryGuideSlug;
   image: string;
   directoryHref: string;
@@ -61,7 +71,7 @@ const categoryGuides: CategoryGuideConfig[] = [
       en: {
         name: "Shoes",
         eyebrow: "LOLOBUY SHOES SPREADSHEET",
-        title: "Find shoes, then verify the pair you will actually receive.",
+        title: "Lolobuy Shoes Spreadsheet: Finds, Size & QC Guide",
         metaTitle: "Lolobuy Shoes Spreadsheet: Size & QC Guide",
         description:
           "Browse Lolobuy shoe finds with a practical size, listing and warehouse-QC checklist for sneakers, slides and other footwear.",
@@ -303,7 +313,7 @@ const categoryGuides: CategoryGuideConfig[] = [
       en: {
         name: "Hoodies & sweaters",
         eyebrow: "LOLOBUY HOODIE FINDS",
-        title: "Compare hoodie measurements, fabric and print before ordering.",
+        title: "Lolobuy Hoodies & Sweaters Spreadsheet: Finds, Size & QC Guide",
         metaTitle: "Lolobuy Hoodie Finds: Size & QC Checklist",
         description: "Browse Lolobuy hoodie finds with measurement, fabric, print-placement and warehouse-QC guidance.",
         intro: [
@@ -541,7 +551,7 @@ const categoryGuides: CategoryGuideConfig[] = [
       en: {
         name: "Bags",
         eyebrow: "LOLOBUY BAG FINDS",
-        title: "Check dimensions, compartments and hardware before shipping a bag.",
+        title: "Lolobuy Bags Spreadsheet: Finds, Size & QC Guide",
         metaTitle: "Lolobuy Bags Spreadsheet: QC & Size Guide",
         description: "Browse Lolobuy bag finds with a practical checklist for dimensions, straps, compartments, closures and warehouse QC.",
         intro: [
@@ -772,7 +782,9 @@ const categoryGuides: CategoryGuideConfig[] = [
   },
 ];
 
-export const categoryGuideSlugs = categoryGuides.map(
+const allCategoryGuides = [...categoryGuides, ...additionalCategoryGuides];
+
+export const categoryGuideSlugs = allCategoryGuides.map(
   (guide) => guide.slug,
 );
 
@@ -780,7 +792,7 @@ export function getCategoryGuide(
   slug: string,
   locale: Locale,
 ): CategoryGuide | undefined {
-  const guide = categoryGuides.find((item) => item.slug === slug);
+  const guide = allCategoryGuides.find((item) => item.slug === slug);
   if (!guide) return undefined;
 
   return {

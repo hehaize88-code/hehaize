@@ -162,7 +162,7 @@ export const homeCopy = {
     viewDirectory: "View the full product directory",
     browseTitle: "Browse by edit",
     browseNote: "Four quick ways into the directory",
-    categories: ["Sneakers", "Outerwear", "Bags", "Accessories"],
+    categories: ["Sneakers", "Outerwear", "Bags & Accessories", "Jersey"],
     principles: [
       "Product discovery, not a seller",
       "QC guidance before checkout",
@@ -187,7 +187,7 @@ export const homeCopy = {
     sourceNote:
       "Lolobuy’s public flow describes warehouse inspection, photographs, consolidation and international shipping, and currently advertises 90 days of free storage. Confirm current terms on the platform.",
     readingEyebrow: "PRACTICAL READING",
-    readingTitle: "Four fact-checked guides, each 1,200–1,800 words",
+    readingTitle: "Fact-checked LoloBuy guides for each buying decision",
     readingLink: "View all articles",
     faqEyebrow: "QUICK ANSWERS",
     faqTitle: "What LoloBuy confirms—and what it does not publish.",
@@ -217,7 +217,7 @@ export const homeCopy = {
     viewDirectory: "Ver el directorio completo",
     browseTitle: "Explorar por estilo",
     browseNote: "Cuatro accesos rápidos al directorio",
-    categories: ["Zapatillas", "Abrigos", "Bolsos", "Accesorios"],
+    categories: ["Zapatillas", "Abrigos", "Bolsos y accesorios", "Camisetas deportivas"],
     principles: [
       "Descubrimiento, no venta",
       "Guía QC antes de comprar",
@@ -272,7 +272,7 @@ export const homeCopy = {
     viewDirectory: "Gesamtes Produktverzeichnis öffnen",
     browseTitle: "Nach Auswahl stöbern",
     browseNote: "Vier schnelle Wege ins Verzeichnis",
-    categories: ["Sneaker", "Jacken", "Taschen", "Accessoires"],
+    categories: ["Sneaker", "Jacken", "Taschen & Accessoires", "Trikots"],
     principles: [
       "Produktsuche, kein Verkäufer",
       "QC-Hilfe vor dem Kauf",
@@ -327,7 +327,7 @@ export const homeCopy = {
     viewDirectory: "Voir le catalogue complet",
     browseTitle: "Explorer par sélection",
     browseNote: "Quatre accès rapides au catalogue",
-    categories: ["Sneakers", "Vestes", "Sacs", "Accessoires"],
+    categories: ["Sneakers", "Vestes", "Sacs et accessoires", "Maillots"],
     principles: [
       "Découverte, pas vente",
       "Conseils QC avant achat",
@@ -382,7 +382,7 @@ export const homeCopy = {
     viewDirectory: "Apri il catalogo completo",
     browseTitle: "Esplora per selezione",
     browseNote: "Quattro accessi rapidi al catalogo",
-    categories: ["Sneaker", "Giacche", "Borse", "Accessori"],
+    categories: ["Sneaker", "Giacche", "Borse e accessori", "Maglie sportive"],
     principles: [
       "Scoperta, non vendita",
       "Guida QC prima dell’acquisto",
@@ -470,9 +470,9 @@ export const footerCopy = {
 export const faqPageCopy = {
   en: {
     eyebrow: "FREQUENTLY ASKED QUESTIONS",
-    title: "LoloBuy facts, separated from assumptions.",
+    title: "LoloBuy FAQ: Spreadsheet, QC, Storage & Shipping",
     intro:
-      "Every answer below distinguishes what the official public homepage confirms from details it does not publish. No fee, photo count, delivery promise or coupon value is borrowed from another agent.",
+      "Read 22 evidence-led LoloBuy answers covering spreadsheet use, QC photos, warehouse storage, shipping, fees and details requiring a live account check.",
     crumb: "FAQ",
     panelTitle: "Four facts are public. The gaps are labelled.",
     panelText:

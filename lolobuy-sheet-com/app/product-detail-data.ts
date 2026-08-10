@@ -3,6 +3,12 @@ export type ProductEvidence = {
   sourceItemId: string;
   sourceGalleryCount: number;
   lastChecked: string;
+  price: {
+    sourceCny: string;
+    approxUsd: string;
+    checkedAt: string;
+    fxAsOf: string;
+  };
   localViews: 2 | 3;
   optionNote: string;
   measurementNote: string;
@@ -20,6 +26,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7813573584",
     sourceGalleryCount: 5,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "340–679",
+      approxUsd: "50–101",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 3,
     optionNote:
       "The source page exposed five distinct gallery files when checked, but it did not publish a typed option count. The images are not interchangeable: they show visibly different lens, frame, strap and presentation details. Save the exact option text and its thumbnail before submitting the product link; a broad title containing several labels is not enough to identify the pair you intended.",
@@ -52,6 +64,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7813802324",
     sourceGalleryCount: 5,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "75–85",
+      approxUsd: "11–13",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 3,
     optionNote:
       "Five distinct gallery files were present on the checked source page. Across those images, more than one cap treatment is visible, including different colour and surface patterns, while the page does not publish a complete written option count. Record the exact colour/pattern thumbnail and option text; “GUCCI hat” alone cannot distinguish the intended cap.",
@@ -84,6 +102,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7813733346",
     sourceGalleryCount: 5,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "299.52–342.72",
+      approxUsd: "44–51",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 3,
     optionNote:
       "This is the one page in the set that states an option count in its title: 39 styles. The checked page also exposed five distinct gallery files. A style board is useful for discovery but is too compressed to preserve the ordered design. Save the chosen style number or exact option wording together with a clear thumbnail before the link is parsed.",
@@ -116,6 +140,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7810791921",
     sourceGalleryCount: 2,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "455",
+      approxUsd: "67",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 2,
     optionNote:
       "Only two distinct gallery files were exposed on the checked directory page, fewer than any other find in this set. The title does not state an option count, while the imagery shows multiple visual treatments. That limited evidence makes the live option selector especially important: preserve colour, size-system wording and the exact high-top version before ordering.",
@@ -146,6 +176,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7806024805",
     sourceGalleryCount: 5,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "218",
+      approxUsd: "32",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 3,
     optionNote:
       "The checked source page exposed five distinct gallery files. Its main collage visibly presents seven colour treatments, but the page title does not claim that seven is the complete live option count. Use the current selector to confirm colour and size; a colour shown in a discovery collage may be unavailable or named differently when the order is placed.",
@@ -178,6 +214,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7804348058",
     sourceGalleryCount: 4,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "89",
+      approxUsd: "13",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 3,
     optionNote:
       "Four distinct gallery files were exposed on the checked page. The primary collage shows six pictured treatments, including changes in body colour, accent colour and printed panels, but no complete written option count is published. Save the chosen treatment and confirm that the generated order uses the same front-panel design.",
@@ -210,6 +252,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7804322444",
     sourceGalleryCount: 4,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "595",
+      approxUsd: "88",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 3,
     optionNote:
       "The checked page exposed four distinct gallery files and did not publish an option count in its title. The main image presents a black stand-collar puffer, while additional views show the garment against rulers. Confirm colour, size and exact construction on the current listing; background props and tags are not part of the product specification.",
@@ -242,6 +290,12 @@ export const productEvidence: Record<string, ProductEvidence> = {
     sourceItemId: "7798076213",
     sourceGalleryCount: 4,
     lastChecked: "2026-07-28",
+    price: {
+      sourceCny: "272",
+      approxUsd: "40",
+      checkedAt: "2026-08-10",
+      fxAsOf: "2026-08-07",
+    },
     localViews: 3,
     optionNote:
       "Four distinct gallery files were exposed on the checked page. The primary image visibly shows four colour treatments—blue, pink, white and black—while the directory page does not state that this is the complete option count. Save the exact colour and size; the ruler-backed pink sample should not be assumed to represent every colour or production batch.",

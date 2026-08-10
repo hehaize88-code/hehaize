@@ -1434,6 +1434,22 @@ img {
   font-size: 0.72rem;
 }
 
+.category-guide-link {
+  display: block;
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--red);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.category-guide-link:hover,
+.category-guide-link:focus-visible {
+  background: var(--ink);
+  color: white;
+}
+
 .search-panel {
   display: grid;
   grid-template-columns: 1fr minmax(420px, 0.8fr);
@@ -2679,6 +2695,10 @@ img {
     font-size: 0.75rem;
   }
 
+  .category-guide-link {
+    padding: 0.75rem 0.9rem;
+  }
+
   .editorial-note-grid {
     grid-template-columns: 1fr;
   }
@@ -2835,6 +2855,21 @@ img {
   color: #48433d;
   font-size: 1rem;
   line-height: 1.65;
+}
+
+.product-detail-copy > .product-reference-price {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--lime);
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--ink);
+}
+
+.product-reference-price strong {
+  font-size: 1.08em;
+}
+
+.product-detail-copy > .product-price-note {
+  margin-top: 0.55rem;
 }
 
 .product-facts {

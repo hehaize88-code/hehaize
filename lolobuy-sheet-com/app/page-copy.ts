@@ -683,9 +683,9 @@ export const aboutPageCopy = {
 export const articlesIndexCopy = {
   en: {
     eyebrow: "EDITORIAL GUIDES",
-    title: "Researched guides, not recycled promises.",
+    title: "LoloBuy Spreadsheet, QC, Shipping & Tracking Guides",
     intro:
-      "Every 1,200–1,800 word English guide separates LoloBuy's public statements, practical shopping advice and independent user evidence. Unknown prices or service details stay marked for live verification.",
+      "Read fact-checked LoloBuy guides on spreadsheets, QC photos, warehouse storage, shipping costs, tracking and evidence-led shopping decisions.",
     crumb: "Articles",
     policyEyebrow: "EDITORIAL POLICY",
     policyTitle: "Facts, observations and unknowns stay separate.",

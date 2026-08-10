@@ -10,9 +10,9 @@ import FindsClient from "./finds-client";
 
 const metadataCopy: Record<Locale, { title: string; description: string; listName: string }> = {
   en: {
-    title: "Lolobuy Finds | Complete Product Directory",
+    title: "Lolobuy Spreadsheet Finds 2026 | Product Directory",
     description:
-      "Browse every curated Lolobuy Sheet product entry, compare useful listing details and open a separate on-site product page before continuing to the current listing.",
+      "Browse curated Lolobuy spreadsheet finds with product pages, listing references and QC checklists before opening each current destination listing.",
     listName: "Lolobuy Sheet curated finds",
   },
   es: {

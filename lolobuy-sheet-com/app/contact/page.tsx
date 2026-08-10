@@ -67,7 +67,7 @@ export default async function ContactPage({
             className="text-link"
             href="https://www.cnbuycha.com/"
             target="_blank"
-            rel="noopener"
+            rel="sponsored noopener"
           >
             {copy.openDirectory}{" "}
             <span aria-hidden="true">↗</span>

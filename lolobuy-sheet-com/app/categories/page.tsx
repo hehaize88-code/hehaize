@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import JsonLd from "../components/json-ld";
 import PageHero from "../components/page-hero";
 import ProductSearch from "../components/product-search";
@@ -54,14 +55,15 @@ export default async function CategoriesPage({
         {localizedCategories.map((category) => (
           <article className="category-page-card" key={category.slug}>
             <a
+              className="category-destination-link"
               href={category.href}
               target="_blank"
-              rel="noopener"
+              rel="sponsored noopener"
             >
               <div className="category-image">
                 <Image
                   src={category.image}
-                  alt=""
+                  alt={`${category.name} category`}
                   width={700}
                   height={700}
                   sizes="(max-width: 680px) 46vw, (max-width: 1100px) 30vw, 22vw"
@@ -75,6 +77,12 @@ export default async function CategoriesPage({
                 <b>{copy.open} ↗</b>
               </div>
             </a>
+            <Link
+              className="category-guide-link"
+              href={localizedPath(`/categories/${category.slug}`, locale)}
+            >
+              {copy.guide} →
+            </Link>
           </article>
         ))}
       </section>

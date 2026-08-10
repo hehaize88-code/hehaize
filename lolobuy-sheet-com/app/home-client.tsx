@@ -29,14 +29,14 @@ const categoryEdits = [
     image: "/products/jacket.webp",
   },
   {
-    label: "Bags",
+    label: "Bags & Accessories",
     href: "https://www.cnbuycha.com/accessories/",
     image: "/products/bag.webp",
   },
   {
-    label: "Accessories",
-    href: "https://www.cnbuycha.com/headwear/",
-    image: "/products/cap.webp",
+    label: "Jersey",
+    href: "https://www.cnbuycha.com/Jersey/",
+    image: "/products/jersey.webp",
   },
 ];
 
@@ -188,13 +188,13 @@ export default function HomeClient({ locale }: { locale: Locale }) {
             <a
               href={category.href}
               target="_blank"
-              rel="noopener"
+              rel="sponsored noopener"
               className="edit-card"
               key={category.label}
             >
               <Image
                 src={category.image}
-                alt=""
+                alt={`${copy.categories[index]} category`}
                 width={180}
                 height={180}
                 sizes="110px"

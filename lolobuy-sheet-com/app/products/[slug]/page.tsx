@@ -38,6 +38,10 @@ type ProductPageLanguage = {
   routeValue: string;
   openListing: string;
   listingNote: string;
+  approxPrice: string;
+  sourcePrice: string;
+  priceChecked: string;
+  priceNote: (date: string) => string;
   sourceTitleLabel: string;
   sourceItemLabel: string;
   galleryCountLabel: string;
@@ -82,6 +86,11 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "View current listing",
     listingNote:
       "Opens the matching product page in a new tab. The destination controls the current offer.",
+    approxPrice: "Approx.",
+    sourcePrice: "Source price",
+    priceChecked: "Checked",
+    priceNote: (date) =>
+      `The USD reference uses ECB cross-rates dated ${date}; payment conversion and fees can differ.`,
     sourceTitleLabel: "Source-page title",
     sourceItemLabel: "Source item ID",
     galleryCountLabel: "Distinct source gallery files",
@@ -181,6 +190,11 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Ver ficha actual",
     listingNote:
       "Abre la página correspondiente en otra pestaña. El destino controla la oferta actual.",
+    approxPrice: "Aprox.",
+    sourcePrice: "Precio de origen",
+    priceChecked: "Comprobado",
+    priceNote: (date) =>
+      `La referencia en USD usa los tipos cruzados del BCE del ${date}; la conversión y las comisiones pueden variar.`,
     sourceTitleLabel: "Título de la página fuente",
     sourceItemLabel: "ID del artículo fuente",
     galleryCountLabel: "Archivos distintos en la galería fuente",
@@ -280,6 +294,11 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Aktuelles Angebot ansehen",
     listingNote:
       "Öffnet die passende Produktseite in einem neuen Tab. Dort gilt das aktuelle Angebot.",
+    approxPrice: "Ca.",
+    sourcePrice: "Quellpreis",
+    priceChecked: "Geprüft",
+    priceNote: (date) =>
+      `Die USD-Referenz nutzt EZB-Kreuzkurse vom ${date}; Umrechnung und Gebühren können abweichen.`,
     sourceTitleLabel: "Titel der Quellseite",
     sourceItemLabel: "Quellartikel-ID",
     galleryCountLabel: "Unterschiedliche Quelldateien",
@@ -379,6 +398,11 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Voir la fiche actuelle",
     listingNote:
       "Ouvre la page produit correspondante dans un nouvel onglet. La destination contrôle l’offre actuelle.",
+    approxPrice: "Env.",
+    sourcePrice: "Prix source",
+    priceChecked: "Vérifié",
+    priceNote: (date) =>
+      `La référence USD utilise les taux croisés de la BCE du ${date} ; la conversion et les frais peuvent varier.`,
     sourceTitleLabel: "Titre de la page source",
     sourceItemLabel: "ID de l’article source",
     galleryCountLabel: "Fichiers distincts de la galerie source",
@@ -478,6 +502,11 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
     openListing: "Vedi scheda attuale",
     listingNote:
       "Apre la pagina corrispondente in una nuova scheda. La destinazione controlla l’offerta attuale.",
+    approxPrice: "Circa",
+    sourcePrice: "Prezzo fonte",
+    priceChecked: "Verificato",
+    priceNote: (date) =>
+      `Il riferimento USD usa i tassi incrociati BCE del ${date}; conversione e commissioni possono variare.`,
     sourceTitleLabel: "Titolo della pagina fonte",
     sourceItemLabel: "ID articolo fonte",
     galleryCountLabel: "File distinti nella galleria fonte",
@@ -563,13 +592,30 @@ const productPageCopy: Record<Locale, ProductPageLanguage> = {
   },
 };
 
-const productMetadataCopy: Record<Locale, string> = {
-  en: "Listing & QC Review",
-  es: "Ficha y control QC",
-  de: "Angebot & QC-Check",
-  fr: "Fiche et contrôle QC",
-  it: "Scheda e controllo QC",
+const productMetadataCopy: Record<Locale, (name: string) => string> = {
+  en: (name) => `${name} Lolobuy Find & QC Guide`,
+  es: (name) => `${name} | Lolobuy: ficha y QC`,
+  de: (name) => `${name} | Lolobuy-Fund & QC`,
+  fr: (name) => `${name} | Produit Lolobuy & QC`,
+  it: (name) => `${name} | Prodotto Lolobuy & QC`,
 };
+
+const dateLocales: Record<Locale, string> = {
+  en: "en-GB",
+  es: "es-ES",
+  de: "de-DE",
+  fr: "fr-FR",
+  it: "it-IT",
+};
+
+function formatCheckedDate(value: string, locale: Locale) {
+  return new Intl.DateTimeFormat(dateLocales[locale], {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${value}T00:00:00Z`));
+}
 
 export function generateStaticParams() {
   return productFinds.map((product) => ({ slug: product.slug }));
@@ -592,8 +638,10 @@ export async function generateMetadata({
   }
 
   const socialImage = productImagePath(product.slug, 640);
-  const searchTitle = `${product.name} | ${productMetadataCopy[locale]}`;
-  const searchDescription = compactMetaDescription(product.description);
+  const searchTitle = productMetadataCopy[locale](product.name);
+  const searchDescription = locale === "en"
+    ? compactMetaDescription(`${product.name} Lolobuy find with local images and focused QC checks. Verify the current option, source price and availability before ordering.`)
+    : compactMetaDescription(product.description);
 
   return {
     title: { absolute: searchTitle },
@@ -693,6 +741,19 @@ export default async function ProductPage({
               {copy.summaryLead} <strong>{product.listingReference}</strong>{" "}
               {copy.summaryTail}
             </p>
+            <p className="product-reference-price">
+              <strong>
+                {copy.approxPrice} US${evidence.price.approxUsd}
+              </strong>{" "}
+              · {copy.sourcePrice} ¥{evidence.price.sourceCny} ·{" "}
+              {copy.priceChecked}{" "}
+              {formatCheckedDate(evidence.price.checkedAt, locale)}
+            </p>
+            <small className="product-price-note">
+              {copy.priceNote(
+                formatCheckedDate(evidence.price.fxAsOf, locale),
+              )}
+            </small>
             <dl className="product-facts">
               <div>
                 <dt>{copy.category}</dt>
@@ -715,7 +776,7 @@ export default async function ProductPage({
               className="button button-primary product-listing-cta"
               href={product.destinationHref}
               target="_blank"
-              rel="noopener"
+              rel="sponsored noopener"
             >
               {copy.openListing} <span aria-hidden="true">↗</span>
             </a>

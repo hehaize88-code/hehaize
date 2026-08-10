@@ -13,12 +13,12 @@ type Filter = "all" | "new" | "trending" | "essential";
 const directoryCopy = {
   en: {
     home: "Home",
-    eyebrow: "COMPLETE PRODUCT DIRECTORY",
-    title: "All curated finds, each with its own detail page.",
+    eyebrow: "CURATED PRODUCT DIRECTORY",
+    title: "Lolobuy Spreadsheet Finds: Curated Product Directory",
     intro:
       "Browse every current entry in one place. Open a card to review its image, category, listing reference and practical QC checklist before using the final listing button.",
     countLabel: "independent product pages",
-    routeLabel: "clear browsing route",
+    routeLabel: "step browsing route",
     routeValue: "Directory → details → current listing",
     searchLabel: "Search these product pages",
     searchPlaceholder: "Search by name or category",
@@ -46,12 +46,12 @@ const directoryCopy = {
   },
   es: {
     home: "Inicio",
-    eyebrow: "DIRECTORIO COMPLETO DE PRODUCTOS",
+    eyebrow: "DIRECTORIO SELECCIONADO DE PRODUCTOS",
     title: "Todos los hallazgos, cada uno con su propia página.",
     intro:
       "Consulta todas las entradas actuales en un solo lugar. Abre una tarjeta para revisar la imagen, categoría, referencia y lista QC antes de continuar al anuncio actual.",
     countLabel: "páginas de producto independientes",
-    routeLabel: "ruta de navegación clara",
+    routeLabel: "pasos de navegación",
     routeValue: "Directorio → detalles → anuncio actual",
     searchLabel: "Buscar en estas páginas",
     searchPlaceholder: "Buscar por nombre o categoría",
@@ -70,12 +70,12 @@ const directoryCopy = {
   },
   de: {
     home: "Startseite",
-    eyebrow: "VOLLSTÄNDIGES PRODUKTVERZEICHNIS",
+    eyebrow: "KURATIERTES PRODUKTVERZEICHNIS",
     title: "Alle Fundstücke mit jeweils eigener Detailseite.",
     intro:
       "Alle aktuellen Einträge an einem Ort. Öffne eine Karte, um Bild, Kategorie, Referenz und QC-Prüfliste zu lesen, bevor du zum aktuellen Angebot weitergehst.",
     countLabel: "eigenständige Produktseiten",
-    routeLabel: "klarer Navigationsweg",
+    routeLabel: "Navigationsschritte",
     routeValue: "Verzeichnis → Details → aktuelles Angebot",
     searchLabel: "Produktseiten durchsuchen",
     searchPlaceholder: "Nach Name oder Kategorie suchen",
@@ -94,12 +94,12 @@ const directoryCopy = {
   },
   fr: {
     home: "Accueil",
-    eyebrow: "RÉPERTOIRE COMPLET DES PRODUITS",
+    eyebrow: "RÉPERTOIRE PRODUITS SÉLECTIONNÉ",
     title: "Toute la sélection, avec une page dédiée par produit.",
     intro:
       "Retrouvez toutes les entrées actuelles au même endroit. Ouvrez une carte pour consulter l’image, la catégorie, la référence et la liste QC avant l’annonce actuelle.",
     countLabel: "pages produit indépendantes",
-    routeLabel: "parcours de navigation clair",
+    routeLabel: "étapes de navigation",
     routeValue: "Répertoire → détails → annonce actuelle",
     searchLabel: "Rechercher dans ces pages",
     searchPlaceholder: "Rechercher par nom ou catégorie",
@@ -118,12 +118,12 @@ const directoryCopy = {
   },
   it: {
     home: "Home",
-    eyebrow: "DIRECTORY COMPLETA DEI PRODOTTI",
+    eyebrow: "DIRECTORY CURATA DEI PRODOTTI",
     title: "Tutti i prodotti, ciascuno con una pagina dedicata.",
     intro:
       "Consulta tutte le voci attuali in un unico posto. Apri una scheda per vedere immagine, categoria, riferimento e controlli QC prima dell’inserzione corrente.",
     countLabel: "pagine prodotto indipendenti",
-    routeLabel: "percorso di navigazione chiaro",
+    routeLabel: "passaggi di navigazione",
     routeValue: "Directory → dettagli → inserzione corrente",
     searchLabel: "Cerca tra queste pagine",
     searchPlaceholder: "Cerca per nome o categoria",

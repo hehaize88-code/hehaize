@@ -71,7 +71,7 @@ export default function SiteFooter({ locale = "en" }: { locale?: Locale }) {
         <a
           href="https://www.cnbuycha.com/AllProducts/"
           target="_blank"
-          rel="noopener"
+          rel="sponsored noopener"
         >
           {copy.directoryLink} ↗
         </a>
