@@ -97,12 +97,12 @@ test("renders all 30 product detail pages with main-store shopping links", async
   }
 });
 
-test("publishes an indexable robots file and a 76-URL sitemap", async () => {
+test("publishes an indexable robots file and a 77-URL sitemap", async () => {
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   assert.match(robots, /User-agent: \*\s+Allow: \//);
   assert.match(robots, /Sitemap: https:\/\/cssbuychina\.net\/sitemap\.xml/);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 76);
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 77);
   assert.equal((sitemap.match(/\/product\//g) ?? []).length, 30);
   assert.ok(sitemap.includes("<loc>https://cssbuychina.net/pt-br</loc>"));
   assert.ok(!sitemap.includes("<loc>https://cssbuychina.net/pt-br/</loc>"));
