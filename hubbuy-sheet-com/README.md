@@ -19,6 +19,10 @@ npm run build
 
 The production build generates static pages, localized routes, metadata, structured data, robots directives, and the XML sitemap.
 
+## Deployment
+
+The generated USD-price and localized static output was refreshed for the production deployment on 10 August 2026.
+
 ## Disclosure
 
 Hubbuy Sheet is independent from Hubbuy and is not an official Hubbuy website. Changing platform details must be verified in the current Hubbuy interface before publication. Catalog links may lead to CNBuy Sheet at `cnbuycha.com`, in which the website has a commercial interest.
