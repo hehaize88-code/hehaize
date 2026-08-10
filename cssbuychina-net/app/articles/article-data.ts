@@ -44,8 +44,9 @@ export const articles = {
   },
   "cssbuy-spreadsheet-categories-explained": {
     label: "CATEGORY BUYING CHECKS · 11 MIN",
-    title: "Best CSSBuy Spreadsheet Categories: Shoes, Hoodies, Jerseys and Smarter Buying Checks",
-    description: "A practical guide to browsing CSSBuy spreadsheet categories and applying the right listing, sizing, warehouse QC, and parcel checks to each type of product.",
+    title: "How to Choose CSSBuy Spreadsheet Categories: Sizing, QC & Shipping",
+    h1: "How to Choose a CSSBuy Spreadsheet Category",
+    description: "Compare CSSBuy spreadsheet categories and learn the sizing, warehouse QC and parcel checks that matter for shoes, clothing, jerseys, bags and electronics.",
     sections: [
       ["Why a category-first CSSBuy spreadsheet is more useful", [
         "A spreadsheet with thousands of mixed rows can look comprehensive while making comparison harder. Shoes, jerseys, jackets, bags, and electronics do not fail in the same ways, and they do not create the same parcel questions. A category-first index reduces repetitive scrolling and places similar products together so shoppers can compare the information that matters for that type of item. It also gives a search engine a clear page for specific queries such as “CSSBuy shoes spreadsheet” instead of forcing every search intent onto one generic page.",
@@ -79,9 +80,9 @@ export const articles = {
         "Once a category helps you identify a product, reopen the exact listing and select the variation. Record the product price and domestic delivery shown for the first stage. If a marketplace URL is available, submit that exact address through CSSBuy and make sure the order notes identify anything translation could confuse. CSSBuy says orders are usually handled within 24 hours after payment, but “usually” is not a delivery guarantee; seller dispatch and domestic transport still affect warehouse arrival.",
         "When the order reaches the warehouse, compare the received item with the category-specific checklist instead of approving it automatically. CSSBuy's published basic inspection covers visible attributes such as style, quantity, color, size, model, and damage. Use extra photographs or measurements for details the standard set does not reveal. If a return is necessary, act quickly: CSSBuy's public FAQ describes a seller-accepted return while the item has been in the warehouse for fewer than seven days, with return delivery paid by the shopper."
       ]],
-      ["Build useful category pages, not doorway pages", [
-        "For shoppers and search engines, a good category page needs more than a title and repeated product cards. It should explain the product-specific decisions, link to relevant individual pages, use descriptive image text, and avoid claims that cannot be supported. A shoes page should discuss sizing and box volume; a jersey page should discuss versions and printing; an electronics page should discuss restrictions and the limits of visual inspection. This makes each page meaningfully different rather than a thin doorway to the same destination.",
-        "The strongest browsing order is simple: begin with the department, narrow to a product, verify the current listing and exact option, plan the warehouse evidence, and reserve budget for the second shipping payment. Category pages make discovery faster, but the shopper still controls the quality of the decision. A well-organized CSSBuy spreadsheet is valuable because it reduces search friction while keeping the important checks visible—not because it promises that every listed item will be suitable."
+      ["Quick category decision checklist", [
+        "Before opening a product, choose the category that matches the decision you actually need to make. Use Shoes when fit depends on foot or insole length and box volume matters; Clothing when flat garment measurements and print or hardware checks matter; Jerseys when version, player print, patches, and front-and-back evidence matter; Accessories when dimensions, included parts, and structure matter; and Electronics when specifications, batteries, testing limits, route eligibility, and protective packing matter.",
+        "Then follow the same five-step decision in every department: open the individual listing, select the exact option and current CNY price, compare usable measurements, write down the warehouse photographs or measurements needed, and leave enough budget for packaging and the second international-shipping payment. A category makes discovery faster; the current seller page and warehouse evidence decide whether the item should enter a parcel."
       ]]
     ],
   },
@@ -130,60 +131,6 @@ export const articles = {
         "Before parcel submission, confirm that every item is correct, the return decisions are finished, and no storage deadline is close. Review the warehouse weight and dimensions, decide which original packaging to keep, select protection appropriate to the goods, and check whether combining the items changes route eligibility. Compare the current CSSBuy estimator or account options using the same parcel assumptions, then read the chosen line's restrictions, billing method, tracking, estimated time, and insurance or compensation conditions.",
         "A CSSBuy shipping estimate becomes trustworthy only when its assumptions are visible. Product price is a useful first number, not the answer. The practical sequence is: choose the exact variation, budget for domestic delivery, inspect promptly in the warehouse, use real weight and dimensions, package for the item, compare current routes, and reserve for destination charges where relevant. That approach produces a more honest delivered-cost decision than any spreadsheet promising one fixed shipping figure."
       ]]
-    ],
-  },
-  "order-taobao-weidian-1688-links-with-cssbuy": {
-    label: "MARKETPLACE LINK CHECKS · 13 MIN",
-    title: "How to Order Taobao, Weidian and 1688 Links with CSSBuy",
-    description: "A step-by-step CSSBuy link-ordering guide for checking Taobao, Weidian and 1688 listings, variants, minimum quantities, notes, warehouse evidence and parcel readiness.",
-    published: "2026-08-09",
-    checked: "August 9, 2026",
-    sections: [
-      ["Start with the marketplace link, not a copied product name", [
-        "When you already know the product you want, the original marketplace link is the cleanest starting point. CSSBuy's current Buy For Me page tells shoppers to copy a product link from a Chinese ecommerce website and paste it into the CSSBuy search field. That preserves more context than retyping a translated name: the seller, listing, option structure and item identifier can travel together. A keyword search remains useful for discovery, but it can return near-matches from different sellers, materials or bundles.",
-        "A working import is not proof that the listing is current or suitable. Open the source and the parsed CSSBuy page side by side. Compare the first image, full title, seller identity where visible, price range, domestic delivery, available colors, sizes, models and quantities. Stop if CSSBuy shows a different item, an empty result, a manual-order screen you do not understand, or options that no longer match the source. The goal is not merely to make the link load; it is to preserve the exact buying decision."
-      ]],
-      ["Know what CSSBuy publicly supports", [
-        "CSSBuy's current Buy For Me instructions describe two discovery methods. Shoppers can paste a Chinese marketplace URL, or search by product name and choose results from Taobao, Tmall and 1688.com. The same page lists additional supported sources and points people to Expert Buy when normal search cannot retrieve an item. Current CSSBuy product interfaces also show Taobao, 1688 and Weidian as marketplace categories. These are platform statements about workflow, not a guarantee that every seller page will parse successfully.",
-        "Some links fail because a listing requires login, changes its option data, blocks retrieval or has been removed. CSSBuy provides a manual-order route when product information cannot be retrieved. Use it only when you can supply the source URL, exact variant, quantity, unit price, domestic shipping and clear notes. Unclear fields should trigger a question rather than a guess."
-      ]],
-      ["Taobao links: lock the exact SKU before payment", [
-        "A Taobao listing can place many choices under one URL. The lowest displayed price may belong to a small size, accessory, deposit or basic version rather than the main photograph. Select every relevant property on the original listing and again on CSSBuy: color, size, model, bundle and quantity. If the option names are translated differently, compare their position, thumbnail and price instead of relying on one English word. Save a screenshot of the chosen combination so the warehouse item can later be checked against a stable reference.",
-        "Treat a size label as an identifier, not a fit guarantee. Record measurements in centimeters and note whether a chart describes the garment, body, foot or insole. Repeat any promised accessory or special print in the order note. CSSBuy says its purchasing team can contact the seller, but the note must be specific enough to act on."
-      ]],
-      ["Weidian links: verify the seller page and translated options", [
-        "Weidian links often circulate through spreadsheets, image albums and social posts after their original context has disappeared. First confirm that the address still opens the intended individual listing rather than a shop home page, expired item or unrelated replacement. Compare the current seller images with the find that led you there. If the visual, title or option set changed, the old recommendation no longer describes the present listing even though the URL still responds.",
-        "Check that all Weidian options imported and their prices align with the source. Short Chinese names can mean a color, batch, size range, version or deposit. Repeat the exact option text, thumbnail and required measurement in the note. If a necessary choice is missing, use the available enquiry or manual path rather than a close-looking substitute."
-      ]],
-      ["1688 links: calculate minimum quantity before comparing price", [
-        "CSSBuy's current Buy For Me page warns that many 1688 products have a minimum order quantity and tells shoppers to follow the supplier's minimum. A 1688 page may also show price tiers linked to quantity. The appealing first number is therefore not automatically the cost of one item. Identify the commercial unit first—one piece, one pair, one set, one pack or one carton—then record the minimum quantity, allowed increments and tier that applies to the amount you actually want.",
-        "Use a simple pre-payment calculation: required units multiplied by the unit price at that quantity, plus the displayed domestic delivery. For a hypothetical listing sold in packs of three, wanting four individual units does not mean entering quantity four until you know whether CSSBuy and the supplier interpret that as four pieces or four packs. Do not invent a workaround for a supplier minimum. If colors can be mixed within the minimum, or if a tier applies across variants, ask for confirmation and keep the response with the order."
-      ]],
-      ["Build an order note that a purchaser can follow", [
-        "A useful note resolves ambiguity; it does not repeat the product name. Write the marketplace, exact source URL, option text, size or measurement, color, version, quantity and any included part that must be present. If the seller's image contains a code, quote that code. Explain what to do if the chosen option is unavailable: contact you, cancel, or accept a named alternative. Never write a vague instruction such as “best quality” or “same as photo” when the listing itself contains several photos and versions.",
-        "Keep requests observable. “Confirm the label says size 44” can be checked; “make sure it fits me” cannot. Asking whether a pack includes two laces is actionable; “choose the good one” is not. Clear notes reduce back-and-forth, but they do not change seller stock or create a guarantee."
-      ]],
-      ["Understand the first payment and what it does not include", [
-        "CSSBuy's public item pages divide the process into two paid stages. The first payment covers the selected goods and Chinese domestic delivery to the CSSBuy warehouse, after which CSSBuy purchases from the third-party seller. Review the exact CNY item amount, selected quantity and domestic delivery before paying. Any current payment or service amount shown at checkout belongs in the decision, but there is no safe universal percentage to copy into an article because methods and terms can change.",
-        "The first payment is not a delivered total. International shipping follows warehouse receipt, inspection, consolidation and packing, so reserve budget for that stage. A cheap listing can still be poor value when the variant is wrong, the minimum creates unwanted units, the item is bulky or its attributes restrict available lines."
-      ]],
-      ["Use warehouse evidence to check the order you actually placed", [
-        "CSSBuy's public product pages describe a visible inspection covering style, quantity, color, size, model and damage. Begin with those basics and compare them with the saved source and order note. For a Taobao garment, match the exact color and size label, then request a useful flat measurement if fit remains uncertain. For a Weidian shoe, compare both shoes, the size tag, shape, outsole and selected color. For a 1688 order, count the pieces and verify whether mixed variants arrived as agreed.",
-        "Warehouse photographs cannot prove authenticity, composition, internal construction, battery health, electrical safety or durability. Decide before arrival which visible facts would make you accept, question or return the item. If a decision-critical feature is missing, request the relevant angle or measurement promptly through the current account options."
-      ]],
-      ["Resolve mismatches before building an international parcel", [
-        "If the received option, quantity or visible condition differs from the order, identify the exact mismatch and attach the relevant evidence. CSSBuy's public FAQ says it can assist with a return when the seller accepts it, the item has been in the warehouse for fewer than seven days and the shopper pays return delivery. That statement is conditional. A seller's rules, customized goods, the marketplace transaction and the order status can still prevent a return, so the deadline shown for the specific order should control.",
-        "Do not approve an obvious mistake merely because the source link took time to find. International shipment makes correction harder. On the other hand, do not reject an item because warehouse lighting changes color slightly or a wide-angle photograph distorts shape. Compare several images, ask a focused question and separate a visible defect from uncertainty. The decision should trace back to the exact option and note submitted at purchase, not to an idealized product image found elsewhere."
-      ]],
-      ["A final link-to-parcel checklist", [
-        "Before the first payment, confirm the marketplace page is current; the CSSBuy import matches it; every SKU property is selected; the quantity and commercial unit are understood; the 1688 minimum and price tier are satisfied where relevant; domestic delivery is visible; measurements are usable; and the order note contains only actionable requirements. Save the source, selected option and date. If the page fails to import cleanly, use the supported enquiry or manual route only after you can fill every important field accurately.",
-        "Before the second payment, match the warehouse item to the saved order, count units, inspect visible condition, resolve return questions, check actual item data, choose protection and compare the current eligible routes. CSSBuy says some products can be restricted for particular delivery methods and presents recommended choices at parcel submission. Recheck that live information rather than assuming a marketplace category determines eligibility. A good CSSBuy link workflow is a chain of evidence: current source, exact option, clear note, warehouse proof and a parcel decision made with current data."
-      ]]
-    ],
-    related: [
-      ["Check a product link before ordering", "/articles/how-to-check-a-cssbuy-product-link"],
-      ["Plan the full parcel cost", "/articles/cssbuy-shipping-cost-planning"],
-      ["Browse checked product finds", "/products"]
     ],
   },
 } as const;

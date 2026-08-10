@@ -13,7 +13,7 @@ function localeHref(pathname: string, target: SiteLocale) {
   const cleanPath = removeLocale(pathname);
   const safePath = localizedSections.has(cleanPath) ? cleanPath : "/";
   if (target === "en") return safePath;
-  return safePath === "/" ? `/${target}/` : `/${target}${safePath}`;
+  return safePath === "/" ? `/${target}` : `/${target}${safePath}`;
 }
 
 export function LanguageSwitcher({ locale = "en" }: { locale?: SiteLocale }) {

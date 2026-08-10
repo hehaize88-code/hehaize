@@ -1,5 +1,17 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cssbuychina.net"),
@@ -12,27 +24,18 @@ export const metadata: Metadata = {
   keywords: ["CSSBuy spreadsheet", "CSSBuy finds", "CSSBuy shoes", "CSSBuy QC", "China shopping spreadsheet"],
   authors: [{ name: "CSSBuy China Editorial" }],
   creator: "CSSBuy China Editorial",
+  other: { "codex-preview": "development" },
   alternates: {
     canonical: "/",
     languages: {
       en: "/",
-      "pt-BR": "/pt-br/",
-      "de-DE": "/de/",
-      es: "/es/",
+      "pt-BR": "/pt-br",
+      "de-DE": "/de",
+      es: "/es",
       "x-default": "/",
     },
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
+  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -52,10 +55,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const requestHeaders = await headers();
+  const language = requestHeaders.get("x-site-language") ?? "en";
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang={language}>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
     </html>
   );
 }

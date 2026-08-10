@@ -84,13 +84,14 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <div className="article-layout">
           <aside><span>ON THIS PAGE</span>{guide.sections.map(([heading], index) => <a href={`#section-${index + 1}`} key={heading}>{heading}</a>)}</aside>
           <div className="article-body">
-            <div className="article-note"><b>Research basis · checked August 8, 2026</b><p>This independent guide was reviewed against CSSBuy's public homepage, product-page workflow, warehouse information, shipping estimator, and FAQ. It does not promise product quality, delivery time, customs treatment, or a fixed final price; confirm the current order and route terms before paying.</p></div>
+            <div className="article-note"><b>Research basis · checked August 10, 2026</b><p>This independent guide was reviewed against CSSBuy's public homepage, product-page workflow, warehouse information, shipping estimator, and FAQ. It does not promise product quality, delivery time, customs treatment, or a fixed final price; confirm the current order and route terms before paying.</p></div>
             {guide.sections.map(([heading, paragraphs], index) => (
               <section id={`section-${index + 1}`} key={heading}>
                 <h2>{heading}</h2>
                 {paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
+            <a className="article-crosslink" href="/articles/cssbuy-spreadsheet-categories-explained"><span>RELATED ARTICLE</span>Choose the right CSSBuy spreadsheet category by sizing, QC and shipping risk ↗</a>
             <div className="article-end"><span>END / GUIDE</span><h2>Continue with checked finds.</h2><a href="/products">Browse the product index ↗</a></div>
           </div>
         </div>

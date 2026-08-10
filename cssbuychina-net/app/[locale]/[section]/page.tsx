@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { InnerShell } from "../../components/InnerShell";
 import { ProductCard } from "../../components/ProductCard";
-import { isSiteLocale, localeCopy, localeOptions, SiteLocale } from "../../i18n";
+import { isSiteLocale, localizedCategories, localeCopy, localeOptions, SiteLocale } from "../../i18n";
 import { categories, products } from "../../site-data";
-import { articles } from "../../articles/article-data";
 
 const sections = ["products", "categories", "how-it-works", "guides", "articles", "faq"] as const;
 type Section = (typeof sections)[number];
@@ -14,6 +13,57 @@ const sectionLabels = {
   "pt-br": { products: "Índice de produtos", categories: "Índice de categorias", how: "Processo em quatro etapas", guides: "Guias práticos", articles: "Biblioteca de artigos SEO", faq: "Respostas claras" },
   de: { products: "Produktindex", categories: "Kategorieindex", how: "Ablauf in vier Schritten", guides: "Praktische Ratgeber", articles: "SEO-Wissensbibliothek", faq: "Klare Antworten" },
   es: { products: "Índice de productos", categories: "Índice de categorías", how: "Proceso en cuatro pasos", guides: "Guías prácticas", articles: "Biblioteca de artículos SEO", faq: "Respuestas claras" },
+} as const;
+
+const sectionMeta = {
+  "pt-br": {
+    products: ["Produtos da planilha CSSBuy", "Explore 30 produtos com valores registrados em CNY, páginas individuais, data de verificação e links diretos para a loja principal."],
+    categories: ["Categorias da planilha CSSBuy", "Encontre calçados, roupas, camisas, acessórios e eletrônicos com verificações específicas de tamanho, QC e envio."],
+    "how-it-works": ["Como funciona um pedido CSSBuy", "Entenda as duas etapas de pagamento, a inspeção no armazém, a embalagem e a escolha da rota internacional."],
+    guides: ["Guias CSSBuy de planilha, QC e pacote", "Leia guias práticos sobre opções, medidas, fotos de QC, devoluções, armazenamento e custo do pacote."],
+    articles: ["Artigos CSSBuy sobre planilha, QC e envio", "Artigos detalhados e pesquisados sobre links de produto, escolha de categorias e planejamento do envio internacional."],
+    faq: ["Perguntas frequentes sobre a planilha CSSBuy", "Respostas claras sobre pagamentos, inspeção, fotos de QC, devoluções, armazenamento, preços e envio."],
+  },
+  de: {
+    products: ["Produkte der CSSBuy-Tabelle", "Durchsuche 30 Produkte mit erfassten CNY-Werten, eigenen Detailseiten, Prüfdaten und direkten Links zum Hauptshop."],
+    categories: ["Kategorien der CSSBuy-Tabelle", "Finde Schuhe, Kleidung, Trikots, Accessoires und Elektronik mit passenden Größen-, QC- und Versandprüfungen."],
+    "how-it-works": ["So funktioniert eine CSSBuy-Bestellung", "Verstehe die beiden Zahlungsstufen, die Lagerprüfung, Verpackung und Auswahl der internationalen Route."],
+    guides: ["CSSBuy-Ratgeber zu Tabelle, QC und Paket", "Praktische Hinweise zu Varianten, Maßen, QC-Fotos, Rückgabe, Lagerung und Paketkosten."],
+    articles: ["CSSBuy-Artikel zu Tabelle, QC und Versand", "Ausführliche, recherchierte Artikel über Produktlinks, Kategorienwahl und internationale Versandplanung."],
+    faq: ["Häufige Fragen zur CSSBuy-Tabelle", "Klare Antworten zu Zahlungen, Lagerprüfung, QC-Fotos, Rückgabe, Lagerung, Preisen und Versand."],
+  },
+  es: {
+    products: ["Productos de la hoja CSSBuy", "Explora 30 productos con valores registrados en CNY, páginas individuales, fecha de revisión y enlaces directos a la tienda principal."],
+    categories: ["Categorías de la hoja CSSBuy", "Encuentra calzado, ropa, camisetas, accesorios y electrónica con controles específicos de talla, QC y envío."],
+    "how-it-works": ["Cómo funciona un pedido de CSSBuy", "Entiende las dos etapas de pago, la inspección del almacén, el embalaje y la elección de la ruta internacional."],
+    guides: ["Guías CSSBuy de hoja, QC y paquete", "Lee guías prácticas sobre opciones, medidas, fotos de QC, devoluciones, almacenamiento y coste del paquete."],
+    articles: ["Artículos CSSBuy sobre hoja, QC y envío", "Artículos detallados e investigados sobre enlaces de producto, elección de categorías y planificación del envío internacional."],
+    faq: ["Preguntas frecuentes sobre la hoja CSSBuy", "Respuestas claras sobre pagos, inspección, fotos de QC, devoluciones, almacenamiento, precios y envío."],
+  },
+} as const;
+
+const localizedUi = {
+  "pt-br": { guide: "GUIA", read: "Ler artigo", faqStamp: "12 DÚVIDAS · AGO 2026" },
+  de: { guide: "RATGEBER", read: "Artikel lesen", faqStamp: "12 FRAGEN · AUG 2026" },
+  es: { guide: "GUÍA", read: "Leer artículo", faqStamp: "12 PREGUNTAS · AGO 2026" },
+} as const;
+
+const localizedArticleCards = {
+  "pt-br": [
+    { slug: "how-to-check-a-cssbuy-product-link", label: "GUIA DE LINKS · 12 MIN", title: "Como verificar um link da planilha CSSBuy antes de comprar", description: "Confira o destino, a opção exata, as medidas, as duas etapas de pagamento e as evidências do armazém." },
+    { slug: "cssbuy-spreadsheet-categories-explained", label: "ESCOLHA DE CATEGORIA · 11 MIN", title: "Como escolher uma categoria da planilha CSSBuy", description: "Compare tamanho, QC no armazém e risco de envio para calçados, roupas, camisas, bolsas e eletrônicos." },
+    { slug: "cssbuy-shipping-cost-planning", label: "CUSTO DE ENVIO · 12 MIN", title: "Como planejar o custo de envio CSSBuy", description: "Separe produto, frete nacional, embalagem, peso cobrável, rota internacional e possíveis custos no destino." },
+  ],
+  de: [
+    { slug: "how-to-check-a-cssbuy-product-link", label: "LINK-RATGEBER · 12 MIN", title: "Einen CSSBuy-Tabellenlink vor der Bestellung prüfen", description: "Zielseite, genaue Variante, Maße, beide Zahlungsstufen und Lagerbelege systematisch prüfen." },
+    { slug: "cssbuy-spreadsheet-categories-explained", label: "KATEGORIEAUSWAHL · 11 MIN", title: "Die richtige CSSBuy-Tabellenkategorie auswählen", description: "Größe, Lager-QC und Versandrisiken für Schuhe, Kleidung, Trikots, Taschen und Elektronik vergleichen." },
+    { slug: "cssbuy-shipping-cost-planning", label: "VERSANDKOSTEN · 12 MIN", title: "CSSBuy-Versandkosten realistisch planen", description: "Produkt, Inlandsversand, Verpackung, Abrechnungsgewicht, internationale Route und Zielkosten trennen." },
+  ],
+  es: [
+    { slug: "how-to-check-a-cssbuy-product-link", label: "GUÍA DE ENLACES · 12 MIN", title: "Cómo revisar un enlace de la hoja CSSBuy antes de comprar", description: "Comprueba el destino, la opción exacta, las medidas, las dos etapas de pago y las pruebas del almacén." },
+    { slug: "cssbuy-spreadsheet-categories-explained", label: "ELECCIÓN DE CATEGORÍA · 11 MIN", title: "Cómo elegir una categoría de la hoja CSSBuy", description: "Compara talla, QC de almacén y riesgo de envío para calzado, ropa, camisetas, bolsos y electrónica." },
+    { slug: "cssbuy-shipping-cost-planning", label: "COSTE DE ENVÍO · 12 MIN", title: "Cómo planificar el coste de envío de CSSBuy", description: "Separa producto, transporte nacional, embalaje, peso facturable, ruta internacional y costes de destino." },
+  ],
 } as const;
 
 const localizedGuideTitles = {
@@ -86,23 +136,31 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; section: string }> }): Promise<Metadata> {
   const { locale, section } = await params;
   if (!isSiteLocale(locale) || locale === "en" || !sections.includes(section as Section)) return {};
+  const sectionKey = section as Section;
+  const [title, description] = sectionMeta[locale][sectionKey];
+  const url = `https://cssbuychina.net/${locale}/${section}`;
+  const openGraphLocales = { "pt-br": "pt_BR", de: "de_DE", es: "es_ES" } as const;
   return {
-    title: sectionLabels[locale][section === "how-it-works" ? "how" : section as Exclude<Section, "how-it-works">],
+    title: { absolute: title },
+    description,
     alternates: {
-      canonical: `/${locale}/${section}`,
-      languages: { en: `/${section}`, "pt-BR": `/pt-br/${section}`, "de-DE": `/de/${section}`, es: `/es/${section}` },
+      canonical: url,
+      languages: { en: `/${section}`, "pt-BR": `/pt-br/${section}`, "de-DE": `/de/${section}`, es: `/es/${section}`, "x-default": `/${section}` },
     },
+    openGraph: { type: "website", locale: openGraphLocales[locale], url, siteName: "CSSBuy China", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
 function Categories({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
-  return <><section className="inner-hero categories-hero"><p className="eyebrow"><span /> {sectionLabels[locale].categories}</p><h1>{copy.categories.title}</h1><p>{copy.categories.description}</p></section><section className="section categories-page"><div className="category-grid">{categories.map((category, index) => <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug}><span className="category-number">0{index + 1}</span><span className="category-symbol" aria-hidden="true">{category.symbol}</span><span className="category-text"><b>{category.name}</b><small>{category.searchLabel}</small></span><span aria-hidden="true">↗</span></a>)}</div></section></>;
+  const categoryCopy = localizedCategories[locale];
+  return <><section className="inner-hero categories-hero"><p className="eyebrow"><span /> {sectionLabels[locale].categories}</p><h1>{copy.categories.title}</h1><p>{copy.categories.description}</p></section><section className="section categories-page"><div className="category-grid">{categories.map((category, index) => <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug}><span className="category-number">0{index + 1}</span><span className="category-symbol" aria-hidden="true">{category.symbol}</span><span className="category-text"><b>{categoryCopy[category.slug].name}</b><small>{categoryCopy[category.slug].searchLabel}</small></span><span aria-hidden="true">↗</span></a>)}</div></section></>;
 }
 
 function Products({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
-  return <><section className="inner-hero products-hero"><p className="eyebrow"><span /> {sectionLabels[locale].products}</p><h1>{copy.finds.title}</h1><p>{copy.hero.lede}</p></section><section className="section"><div className="product-grid">{products.map((product) => <ProductCard product={product} key={product.id} />)}</div></section></>;
+  return <><section className="inner-hero products-hero"><p className="eyebrow"><span /> {sectionLabels[locale].products}</p><h1>{copy.finds.title}</h1><p>{copy.hero.lede}</p></section><section className="section"><div className="product-grid">{products.map((product) => <ProductCard product={product} locale={locale} key={product.id} />)}</div></section></>;
 }
 
 function HowItWorks({ locale }: { locale: SiteLocale }) {
@@ -113,19 +171,20 @@ function HowItWorks({ locale }: { locale: SiteLocale }) {
 function Guides({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
   const guides = localizedGuideTitles[locale as keyof typeof localizedGuideTitles];
-  return <><section className="inner-hero guides-hero"><p className="eyebrow"><span /> {sectionLabels[locale].guides}</p><h1>{copy.reading.title}</h1><p>{copy.reading.description}</p></section><section className="guides-index"><div className="editorial-grid">{guides.map(([slug, title], index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index]}`} href={`/guides/${slug}`} key={slug}><div className="editorial-number">0{index + 1}</div><span>GUIDE</span><h2>{title}</h2><b>{copy.reading.read} ↗</b></a>)}</div></section></>;
+  return <><section className="inner-hero guides-hero"><p className="eyebrow"><span /> {sectionLabels[locale].guides}</p><h1>{copy.reading.title}</h1><p>{copy.reading.description}</p></section><section className="guides-index"><div className="editorial-grid">{guides.map(([slug, title], index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index]}`} href={`/guides/${slug}`} key={slug}><div className="editorial-number">0{index + 1}</div><span>{localizedUi[locale as Exclude<SiteLocale, "en">].guide}</span><h2>{title}</h2><b>{copy.reading.read} ↗</b></a>)}</div></section></>;
 }
 
 function Articles({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
-  return <><section className="inner-hero articles-hero"><p className="eyebrow"><span /> {sectionLabels[locale].articles}</p><h1>{copy.nav.articles}</h1><p>{copy.reading.description}</p></section><section className="guides-index"><div className="editorial-grid">{Object.entries(articles).map(([slug, article], index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index]}`} href={`/articles/${slug}`} key={slug}><div className="editorial-number">0{index + 1}</div><span>{article.label}</span><h2>{article.title}</h2><p>{article.description}</p><b>Read ↗</b></a>)}</div></section></>;
+  const cards = localizedArticleCards[locale as Exclude<SiteLocale, "en">];
+  return <><section className="inner-hero articles-hero"><p className="eyebrow"><span /> {sectionLabels[locale].articles}</p><h1>{copy.nav.articles}</h1><p>{copy.reading.description}</p></section><section className="guides-index"><div className="editorial-grid">{cards.map((article, index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index]}`} href={`/articles/${article.slug}`} key={article.slug}><div className="editorial-number">0{index + 1}</div><span>{article.label}</span><h2>{article.title}</h2><p>{article.description}</p><b>{localizedUi[locale as Exclude<SiteLocale, "en">].read} ↗</b></a>)}</div></section></>;
 }
 
 function Faq({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
   const questions = localizedFaqs[locale as keyof typeof localizedFaqs];
   const englishLabel = locale === "pt-br" ? "FAQ completa em inglês" : locale === "de" ? "Vollständige englische FAQ" : "FAQ completa en inglés";
-  return <><section className="inner-hero faq-hero"><p className="eyebrow"><span /> {sectionLabels[locale].faq}</p><h1>{copy.faq.title}</h1><p>{copy.reading.description}</p></section><section className="faq-page-layout"><aside><span>12 FAQ · AUG 2026</span><h2>{copy.faq.title}</h2><a href="/faq">{englishLabel} ↗</a></aside><div className="faq-page-list">{questions.map(([question, answer], index) => <details open={index === 0} key={question}><summary><span>{String(index + 1).padStart(2, "0")}</span>{question}<b>+</b></summary><p>{answer}</p></details>)}</div></section></>;
+  return <><section className="inner-hero faq-hero"><p className="eyebrow"><span /> {sectionLabels[locale].faq}</p><h1>{copy.faq.title}</h1><p>{copy.reading.description}</p></section><section className="faq-page-layout"><aside><span>{localizedUi[locale as Exclude<SiteLocale, "en">].faqStamp}</span><h2>{copy.faq.title}</h2><a href="/faq">{englishLabel} ↗</a></aside><div className="faq-page-list">{questions.map(([question, answer], index) => <details open={index === 0} key={question}><summary><span>{String(index + 1).padStart(2, "0")}</span>{question}<b>+</b></summary><p>{answer}</p></details>)}</div></section></>;
 }
 
 export default async function LocaleSectionPage({ params }: { params: Promise<{ locale: string; section: string }> }) {

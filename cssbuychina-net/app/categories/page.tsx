@@ -35,6 +35,7 @@ export default function CategoriesPage() {
           <span>Read the focused index:</span>
           {categories.map((category) => <a href={`/category/${category.slug}`} key={category.slug}>{category.name}</a>)}
         </div>
+        <a className="article-crosslink" href="/articles/cssbuy-spreadsheet-categories-explained"><span>BUYING GUIDE</span>How to choose a CSSBuy spreadsheet category: sizing, warehouse QC and shipping ↗</a>
       </section>
     </InnerShell>
   );

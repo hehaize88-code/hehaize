@@ -49,7 +49,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
           </a>
           <p>{copy.footer.copy}</p>
           <form className="search-box search-box--compact" onSubmit={submit}>
-            <label className="sr-only" htmlFor="footer-search">Search product finds</label>
+            <label className="sr-only" htmlFor="footer-search">{copy.searchLabel}</label>
             <span className="search-icon" aria-hidden="true">⌕</span>
             <input id="footer-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.nav.all} />
             <button type="submit">{copy.hero.search} <span aria-hidden="true">↗</span></button>
@@ -57,7 +57,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
         </div>
         <div className="footer-bottom">
           <span>{copy.footer.copyright}</span>
-          <div><a href="/about">About</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+          <div>{copy.footer.links.map(([label, href]) => <a href={href} key={href}>{label}</a>)}</div>
         </div>
       </footer>
     </>

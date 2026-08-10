@@ -27,7 +27,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
     <InnerShell>
       <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href={`/category/${product.category}`}>{product.categoryLabel}</a><span>/</span><span>{product.name}</span></nav>
       <section className="product-detail">
-        <div className="detail-image"><img src={product.image} alt={product.name} /><span>PRODUCT ROUTE CHECKED · AUG 08, 2026</span></div>
+        <div className="detail-image"><img src={product.image} alt={product.name} /><span>PRODUCT ROUTE CHECKED · {product.checked.toUpperCase()}, 2026</span></div>
         <div className="detail-copy">
           <p className="eyebrow dark"><span /> {product.categoryLabel} find</p>
           <h1>{product.name}</h1>
