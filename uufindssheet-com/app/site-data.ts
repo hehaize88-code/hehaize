@@ -118,4 +118,12 @@ export const articleCards: ArticleCard[] = [
       },
     },
   },
+  {
+    tag: "LINK SEARCH GUIDE",
+    title: "How to Find UUFinds QC Photos from Taobao, 1688 and Weidian Links",
+    summary: "Search with an exact marketplace or agent link, troubleshoot an empty result and verify the seller, item and variant before trusting QC media.",
+    href: "/guides/uufinds-taobao-1688-weidian-qc-search-guide/",
+    read: "10 min read",
+    englishOnly: true,
+  },
 ];

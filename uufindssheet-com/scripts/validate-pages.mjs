@@ -12,6 +12,7 @@ const guideSlugs = [
   "spreadsheet-vs-qc-finder",
 ];
 const englishOnlyGuideSlug = "uufinds-product-weight-vs-volumetric-weight";
+const linkSearchGuideSlug = "uufinds-taobao-1688-weidian-qc-search-guide";
 const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
@@ -200,11 +201,35 @@ await assert.rejects(readPage(`de/guides/${englishOnlyGuideSlug}`), "English-onl
 await assert.rejects(readPage(`pl/guides/${englishOnlyGuideSlug}`), "English-only article must not generate a fake Polish page");
 await assert.rejects(readPage(`pt-br/guides/${englishOnlyGuideSlug}`), "English-only article must not generate a fake Portuguese page");
 
+const linkSearchGuide = await readPage(`guides/${linkSearchGuideSlug}`);
+assert.match(linkSearchGuide, /<title>UUFinds Taobao, 1688 &amp; Weidian QC Search Guide \| UUFinds Sheet<\/title>/);
+assert.match(linkSearchGuide, /<h1>How to Find UUFinds QC Photos from Taobao, 1688 and Weidian Links<\/h1>/);
+assert.match(linkSearchGuide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${linkSearchGuideSlug}/"`));
+assert.doesNotMatch(linkSearchGuide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, "Link-search article must not claim a translated equivalent");
+assert.match(linkSearchGuide, /"datePublished":"2026-08-10"/);
+assert.match(linkSearchGuide, /"dateModified":"2026-08-10"/);
+assert.match(linkSearchGuide, /"@type":"Article"/);
+assert.match(linkSearchGuide, /"@type":"BreadcrumbList"/);
+assert.match(linkSearchGuide, /class="evidence-ledger"/);
+assert.match(linkSearchGuide, /class="guide-table-wrap"/);
+assert.match(linkSearchGuide, /href="\/guides\/uufinds-qc-checklist\/"/);
+assert.match(linkSearchGuide, /href="\/guides\/how-to-use-uufinds\/"/);
+const linkSearchWordCountMatch = linkSearchGuide.match(/data-visible-word-count="(\d+)"/);
+assert.ok(linkSearchWordCountMatch, "Link-search article must expose its validated visible word count");
+const linkSearchVisibleWordCount = Number(linkSearchWordCountMatch[1]);
+assert.ok(linkSearchVisibleWordCount >= 1200 && linkSearchVisibleWordCount <= 1800, `Link-search article word count must be 1,200–1,800, received ${linkSearchVisibleWordCount}`);
+assert.match(linkSearchGuide, new RegExp(`"wordCount":${linkSearchVisibleWordCount}`));
+for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
+  await assert.rejects(readPage(`${locale}/guides/${linkSearchGuideSlug}`), `English-only link-search article must not generate a fake ${locale} page`);
+}
+
 const articleIndex = await readPage("articles");
 assert.match(articleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`));
+assert.match(articleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`));
 for (const locale of locales) {
   const localizedArticleIndex = await readPage(`${locale}/articles`);
   assert.match(localizedArticleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`), `${locale} article index must route the English-only card to its canonical page`);
+  assert.match(localizedArticleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`), `${locale} article index must route the link-search card to its canonical page`);
 }
 
 const home = await readPage("");
@@ -305,8 +330,10 @@ assert.match(sitemap, /https:\/\/uufindssheet\.com\/pl\//);
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/de\/about\//);
 assert.match(sitemap, /https:\/\/uufindssheet\.com\/pt-br\/terms\//);
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnlyGuideSlug}/`));
+assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${linkSearchGuideSlug}/`));
 for (const slug of categorySlugs) assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/categories/${slug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
+assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${linkSearchGuideSlug}/`));
 
 const allowedOutboundHosts = new Set(["uufindssheet.com", "www.cnbuycha.com"]);
 const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));

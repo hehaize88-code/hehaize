@@ -9,6 +9,7 @@ export type Guide = {
   sourceNote?: string;
   modifiedISO?: string;
   englishOnly?: boolean;
+  seoTitle?: string;
   intro: string[];
   sections: {
     heading: string;
@@ -590,6 +591,172 @@ export const guides: Guide[] = [
         href: "/products/",
         label: "Compare current product detail pages",
         description: "Keep listing identity, displayed price and category routes visible before opening the main site.",
+      },
+    ],
+  },
+  {
+    slug: "uufinds-taobao-1688-weidian-qc-search-guide",
+    label: "LINK SEARCH GUIDE",
+    title: "How to Find UUFinds QC Photos from Taobao, 1688 and Weidian Links",
+    seoTitle: "UUFinds Taobao, 1688 & Weidian QC Search Guide",
+    description: "Use Taobao, 1688, Weidian or agent links to search for UUFinds QC photos, verify an exact listing match and troubleshoot an empty result.",
+    updated: "August 10, 2026",
+    readTime: "10 min read",
+    publishedISO: "2026-08-10",
+    modifiedISO: "2026-08-10",
+    englishOnly: true,
+    sourceNote: "Fact-checked August 10, 2026. The current public UUFinds QC Finder explicitly accepts Taobao, 1688, Weidian and agent links as well as product names; it presents QC videos/photos and may return an item-not-found message. The current App Store listing from Uufinds Limited also describes link conversion for those marketplaces and agent links. These sources do not promise that every valid link has QC media, that a result belongs to the same seller or variant, or that a photographed item represents a later purchase.",
+    intro: [
+      "A Taobao, 1688 or Weidian link is a better starting point than a product nickname because it can preserve the marketplace and item identity. UUFinds currently presents separate inputs for those three marketplaces, agent links and product names in its public QC Finder. That makes link-led searching a practical way to look for available warehouse photos or video. It does not make every returned image an exact match, and a valid marketplace page can still have no QC material in the finder.",
+      "This guide explains the complete UUFinds link-search workflow: preserve the source, submit the cleanest useful input, interpret an empty result, match any media to the correct listing, and move the confirmed candidate to the live product destination. It focuses on retrieval and identity rather than repeating the separate on-site QC inspection checklist. No result count, media age, seller quality, stock level or purchase outcome is assumed.",
+    ],
+    sections: [
+      {
+        heading: "1. Save the original marketplace link before converting anything",
+        paragraphs: [
+          "Begin with the longest original link you can obtain from Taobao, 1688 or Weidian. Save it in a note before pasting it into another tool. The domain, item identifier and seller context are more useful than a cropped screenshot or a shortened social caption. If an agent page contains the original marketplace address, keep both. One is the shopping or forwarding view; the other is the identity record you can compare across search results.",
+          "Remove only obvious surrounding text when copying. Do not manually rewrite item numbers, switch domains or assume that two listings with the same catalog image are interchangeable. Marketplace sellers frequently reuse titles and images. A clean URL helps the finder parse the input, while the untouched saved copy lets you recover if a redirect, share wrapper or converter loses information. Record the date as well because the live listing may change after the QC material was created.",
+        ],
+        points: [
+          "Save the full source URL and the agent URL separately.",
+          "Record the marketplace, seller and visible item identifier.",
+          "Keep the selected colour, size or style beside the link.",
+          "Add the date checked before comparing older QC material.",
+        ],
+      },
+      {
+        heading: "2. Choose the input that matches the evidence you actually have",
+        paragraphs: [
+          "UUFinds' current public finder names five entry points: Taobao link, 1688 link, Weidian link, agent link and product name. Prefer the exact marketplace link when it exists because it carries stronger identity information. Use an agent link when that is the only traceable address available. A product-name search is the broadest option and should be treated as discovery, not proof that every result comes from the same seller or batch.",
+          "The correct input depends on intent. If you need photos for one known listing, use the exact link and reject look-alikes. If the original listing has disappeared, a product name or distinctive phrase can help locate possible alternatives, but those alternatives begin a new verification process. Do not quietly transfer QC evidence from the dead listing to a replacement. The seller, item ID and variant must be checked again.",
+        ],
+        table: {
+          caption: "Use the narrowest input that your evidence supports",
+          headers: ["Input", "Best use", "Main limitation"],
+          rows: [
+            ["Marketplace link", "Research one exact Taobao, 1688 or Weidian listing", "A valid listing may still have no indexed QC media"],
+            ["Agent link", "Recover a source from a saved shopping-agent page", "The wrapper may hide or redirect the original item"],
+            ["Product name", "Find candidates when no reliable source link remains", "Similarity does not establish seller, item or batch identity"],
+          ],
+        },
+      },
+      {
+        heading: "3. Read a result as a record, not a quality verdict",
+        paragraphs: [
+          "The public UUFinds finder describes QC videos/photos and several discovery views. Their presence means that media is available to inspect; it does not prove authenticity, legality, current stock or the quality of a future unit. UUFinds' own public disclaimer says it is an informational platform, does not sell products directly or indirectly, and does not control those marketplace outcomes. Keep that boundary attached to every result.",
+          "Open the result and first look for identity fields: source address, item number, seller, product title, visible option and QC date. Then count distinct photographed examples rather than counting every image as a separate sample. Ten angles of one item are one sample. If the page shows video, use it for movement or hidden angles, but keep it tied to the same identity check. Media without a reliable source match is reference material only.",
+        ],
+        points: [
+          "Exact match: item identifier, seller and relevant variant agree.",
+          "Probable match: the item agrees but one important field is unavailable.",
+          "Reference only: the result looks similar but identity cannot be confirmed.",
+          "Reject as evidence: a different seller, identifier or visible variant conflicts.",
+        ],
+      },
+      {
+        heading: "4. Treat an empty result as missing evidence",
+        paragraphs: [
+          "UUFinds currently exposes an item-not-found message that asks the visitor to re-enter or complete the information. That message does not identify one universal cause. The listing may be malformed, wrapped in an unsupported redirect, removed, private, changed or simply absent from the available QC pool. Because the public page does not diagnose which condition applies, do not invent a reason from the message alone.",
+          "Run a controlled retry. Paste the saved original marketplace URL rather than a screenshot caption. Remove spaces and unrelated text around it. If you began with an agent wrapper, recover and try the original Taobao, 1688 or Weidian address. Then try the exact item identifier or a specific product name as a discovery search. Record the outcome of each input. Repeating the same broken string in several tabs adds no evidence.",
+        ],
+      },
+      {
+        heading: "5. Troubleshoot without turning a near match into an exact match",
+        paragraphs: [
+          "A broader search may produce something visually convincing after an exact-link search fails. Pause there. Compare marketplace, seller, item number, title, price context and visible options with the original record. Catalog images are weak identifiers because they can be copied. A distinctive product name is also weaker than a source ID. The safest conclusion may be that you found a related listing, not recovered evidence for the original one.",
+          "Use a simple two-field rule: require both listing identity and variant relevance before calling QC material matched. Listing identity means the seller or item identifier agrees. Variant relevance means the photographed colour, size, edition or style does not conflict with the option under consideration. If either field is unknown, lower the confidence label. If either conflicts, do not use that album to approve the candidate.",
+          "Age is a third field, not a substitute for identity. A recent look-alike is not stronger than an older exact match merely because its date is newer. Several exact samples across time can reveal visible consistency; one sample cannot establish a batch-wide rule. Note the newest exact QC date and sample count, then describe only what those samples visibly show. Keep durability, materials and authenticity outside the claim unless a qualified source establishes them.",
+        ],
+        points: [
+          "Do not match on a thumbnail alone.",
+          "Do not merge evidence from different sellers into one sample set.",
+          "Do not count multiple angles as multiple purchased units.",
+          "Do not let a recent date override an identity conflict.",
+        ],
+      },
+      {
+        heading: "6. Build a small decision record before opening a shopping page",
+        paragraphs: [
+          "A compact worksheet makes the result auditable. Write the original source, the input used, the returned item or seller identifier, the relevant variant, newest exact QC date, number of distinct samples, useful angles and unresolved questions. Use literal observations such as “measurement view is missing” or “two samples show the same pocket placement.” Avoid predictions such as “will fit perfectly” or “must be high quality.”",
+          "Apply a decision condition instead of a mood. Continue when the exact listing and relevant variant match and the available media answers your important visible questions. Hold when identity is probable but an essential measurement or angle is missing. Replace the candidate when the result conflicts or the unresolved risk is too important for the product. No QC result is also a valid reason to favour an alternative with more traceable evidence.",
+        ],
+        table: {
+          caption: "A three-level result record",
+          headers: ["Status", "Minimum evidence", "Next action"],
+          rows: [
+            ["Continue", "Exact listing match plus relevant visible evidence", "Verify current destination facts"],
+            ["Hold", "Probable match or one decision-critical unknown", "Seek a clearer source, angle or measurement"],
+            ["Replace", "Identity conflict, wrong variant or unacceptable uncertainty", "Return to the shortlist"],
+          ],
+        },
+      },
+      {
+        heading: "7. Inspect the media with the separate QC checklist",
+        paragraphs: [
+          "Once identity is strong enough, switch jobs. Link search retrieves and matches evidence; inspection evaluates what is visible. Use the on-site UUFinds QC photos checklist to review overall shape, symmetry, construction, print or hardware placement, labels and measurements. Start wide before zooming into small details. Treat missing angles as unknown and camera effects as possible uncertainty rather than immediately declaring a defect.",
+          "Video can add movement, texture and views between still frames, but it does not establish internal electronics, long-term durability or exact personal fit. Measurement photos are strongest when the ruler start point and item position are clear. Compare dimensions with a similar item you own. This method prevents a successful link search from being mistaken for a successful product assessment; retrieval is only the handoff to evaluation.",
+        ],
+      },
+      {
+        heading: "8. Finish on the exact current destination",
+        paragraphs: [
+          "After recording the QC evidence, open the corresponding current product page on the main site and verify the identifier, title, seller or source, displayed price, available variants and size information. The destination page controls changeable commercial facts. An older QC album cannot confirm today's stock, checkout total, service terms or route eligibility, and this guide does not publish those figures as permanent facts.",
+          "If the destination no longer matches the researched source, stop and return to the shortlist. Do not force an old album onto a new listing because the product name looks familiar. A defensible result has a visible chain: saved marketplace link, documented finder input, matched QC record, literal inspection notes and an exact current destination. That chain does not guarantee the item, but it shows precisely what was checked and what remains unknown.",
+        ],
+        points: [
+          "Original marketplace and agent links are saved.",
+          "Finder input and result status are recorded.",
+          "Seller, item ID and relevant variant are matched.",
+          "QC dates, distinct samples and missing evidence are noted.",
+          "The current product destination is re-checked before acting.",
+        ],
+      },
+    ],
+    evidence: [
+      {
+        type: "Official platform interface",
+        source: "UUFinds public QC Finder",
+        checked: "August 10, 2026",
+        supports: "Named inputs for Taobao, 1688, Weidian and agent links plus product names; QC video/photo discovery; a visible item-not-found state.",
+        boundary: "Does not promise that every link has media, explain every empty result or prove an exact seller and variant match.",
+      },
+      {
+        type: "Official platform disclaimer",
+        source: "UUFinds public QC Finder disclaimer",
+        checked: "August 10, 2026",
+        supports: "UUFinds describes itself as an informational browsing and QC-photo platform and says it does not sell products directly or indirectly.",
+        boundary: "UUFinds disclaims control over marketplace authenticity, legality and quality; visible media is not a guarantee.",
+      },
+      {
+        type: "Developer-controlled listing",
+        source: "Apple App Store listing from Uufinds Limited",
+        checked: "August 10, 2026",
+        supports: "Current public description of link conversion for 1688, Taobao, Weidian and shopping-agent links.",
+        boundary: "A feature description does not establish result coverage, current stock, seller quality or purchase outcome.",
+      },
+      {
+        type: "Independent editorial method",
+        source: "UUFinds Sheet link-matching workflow",
+        checked: "August 10, 2026",
+        supports: "Confidence labels, controlled retry steps and a decision record that keeps identity, media and live listing facts separate.",
+        boundary: "The method is guidance, not an official UUFinds procedure or evidence of a personal order.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/guides/uufinds-qc-checklist/",
+        label: "Inspect the matched UUFinds QC photos",
+        description: "Move from link identity to a category-aware review of visible shape, construction, measurements and missing evidence.",
+      },
+      {
+        href: "/guides/how-to-use-uufinds/",
+        label: "Review the complete beginner workflow",
+        description: "See how supported inputs, QC research and exact product matching fit together from start to finish.",
+      },
+      {
+        href: "/products/",
+        label: "Open traceable product detail pages",
+        description: "Compare current identifiers, images and displayed listing facts before continuing to the main site.",
       },
     ],
   },

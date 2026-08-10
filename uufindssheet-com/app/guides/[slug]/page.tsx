@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!guide) return {};
   const canonical = `/guides/${guide.slug}/`;
   return {
-    title: `${guide.title} | UUFinds Sheet`,
+    title: `${guide.seoTitle ?? guide.title} | UUFinds Sheet`,
     description: guide.description,
     alternates: guide.englishOnly ? { canonical } : localizedAlternates(canonical),
     robots: { index: true, follow: true },
