@@ -47,7 +47,7 @@ export function SiteHeader({
           className="header-find"
           href={`${catalogBase}/AllProducts/`}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored noopener noreferrer"
         >
           Browse finds <ArrowIcon />
         </a>
@@ -86,7 +86,7 @@ export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
         <p className="footer-label">PLAN</p>
         <Link href="/how-it-works">Buying flow</Link>
         <Link href="/shipping">Shipping</Link>
-        <Link href="/articles">SEO Articles</Link>
+        <Link href="/articles">Buying Guides</Link>
       </div>
       <div>
         <p className="footer-label">EDITORIAL</p>

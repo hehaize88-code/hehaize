@@ -15,7 +15,7 @@ type SeoCopy = {
 const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   "/": {
     en: {
-      title: "LoloBuy Spreadsheet 2026: Product Finds, QC & Shipping Guide",
+      title: "LoloBuy Spreadsheet 2026: Finds, QC & Shipping",
       description:
         "Browse current LoloBuy spreadsheet product finds with matched images and item links, plus independent QC and international-shipping guidance.",
     },
@@ -279,7 +279,7 @@ export function coreMetadata(locale: Locale, path: CorePath): Metadata {
   const socialImage = coreSocialImages[path];
 
   return {
-    title: copy.title,
+    title: path === "/" ? { absolute: copy.title } : copy.title,
     description: copy.description,
     alternates: {
       canonical: absoluteUrl(canonicalPath),

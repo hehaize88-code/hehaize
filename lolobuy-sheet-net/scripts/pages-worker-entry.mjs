@@ -14,6 +14,8 @@ function isStaticAsset(pathname) {
   return (
     pathname.startsWith("/assets/") ||
     pathname.startsWith("/products/") ||
+    pathname.startsWith("/products-320/") ||
+    pathname.startsWith("/products-480/") ||
     pathname.startsWith("/social/") ||
     staticFiles.has(pathname)
   );

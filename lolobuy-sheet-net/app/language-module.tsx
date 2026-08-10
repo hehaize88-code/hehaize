@@ -6,15 +6,7 @@ import { localeNames, type Locale } from "./translations";
 export function LanguageModule({ locale }: { locale: Locale }) {
   function changeLocale(next: Locale) {
     const url = new URL(window.location.href);
-    let pathname = localizedPath(next, url.pathname);
-
-    if (
-      next !== "en" &&
-      pathname === url.pathname &&
-      /^\/articles\/[^/]+/.test(url.pathname)
-    ) {
-      pathname = localizedPath(next, "/articles");
-    }
+    const pathname = localizedPath(next, url.pathname);
 
     window.location.assign(`${pathname}${url.search}${url.hash}`);
   }

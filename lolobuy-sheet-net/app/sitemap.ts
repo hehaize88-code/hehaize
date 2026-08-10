@@ -3,12 +3,19 @@ import { articles } from "./article-data";
 import contentDates from "./content-dates.json";
 import {
   absoluteUrl,
+  articleLanguageAlternates,
   corePaths,
   languageAlternates,
   localizedLocales,
   localizedPath,
   type CorePath,
 } from "./i18n";
+import {
+  categories,
+  categoryInternalPath,
+  productInternalPath,
+  products,
+} from "./site-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["en", ...localizedLocales] as const;
@@ -32,9 +39,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       })),
     ),
-    ...articles.map((article) => ({
-      url: absoluteUrl(`/articles/${article.slug}`),
-      lastModified: articleDates[article.slug].modified,
+    ...articles.flatMap((article) =>
+      locales.map((locale) => ({
+        url: absoluteUrl(localizedPath(locale, `/articles/${article.slug}`)),
+        lastModified: articleDates[article.slug].modified,
+        alternates: {
+          languages: articleLanguageAlternates(article.slug),
+        },
+      })),
+    ),
+    ...products.map((product) => ({
+      url: absoluteUrl(productInternalPath(product.id)),
+      lastModified: "2026-08-10",
+    })),
+    ...categories.map((category) => ({
+      url: absoluteUrl(categoryInternalPath(category.slug)),
+      lastModified: "2026-08-10",
     })),
     ...Object.entries(trustDates).map(([path, lastModified]) => ({
       url: absoluteUrl(path),

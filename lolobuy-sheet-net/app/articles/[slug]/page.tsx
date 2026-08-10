@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticlePage } from "../../article-page";
 import { articles, getArticle } from "../../article-data";
+import { articleLanguageAlternates, absoluteUrl } from "../../i18n";
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
@@ -20,7 +21,10 @@ export async function generateMetadata({
   return {
     title: { absolute: article.seoTitle },
     description: article.description,
-    alternates: { canonical: `/articles/${article.slug}` },
+    alternates: {
+      canonical: absoluteUrl(`/articles/${article.slug}`),
+      languages: articleLanguageAlternates(article.slug),
+    },
     keywords: [article.primaryKeyword, ...article.secondaryKeywords],
     openGraph: {
       title: article.seoTitle,

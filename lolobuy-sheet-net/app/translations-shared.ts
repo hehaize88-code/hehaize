@@ -3,7 +3,7 @@ export const sharedTranslationRows = [
   ["Categories", "Categorías", "Kategorien", "Catégories", "Categorie"],
   ["QC Guide", "Guía de QC", "QC-Ratgeber", "Guide QC", "Guida QC"],
   ["Shipping", "Envíos", "Versand", "Livraison", "Spedizione"],
-  ["SEO Articles", "Artículos SEO", "SEO-Artikel", "Articles SEO", "Articoli SEO"],
+  ["Buying Guides", "Guías de compra", "Kaufratgeber", "Guides d'achat", "Guide all'acquisto"],
   ["FAQ", "Preguntas frecuentes", "FAQ", "FAQ", "FAQ"],
   ["EDITORIAL", "EDITORIAL", "REDAKTION", "ÉDITORIAL", "REDAZIONE"],
   ["LEGAL", "LEGAL", "RECHTLICHES", "MENTIONS LÉGALES", "INFORMAZIONI LEGALI"],

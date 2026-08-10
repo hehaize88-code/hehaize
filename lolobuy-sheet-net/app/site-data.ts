@@ -5,121 +5,205 @@ export const products = [
     id: 3359,
     name: "Cushioned trail running shoes",
     category: "Shoes",
+    categorySlug: "shoes",
     image: "/products/3359.webp",
     url: `${catalogBase}/AllProducts/3359.html`,
+    priceCny: 218,
+    selectionNote: "Confirm the seller size system, selected colour and exact pair before ordering.",
+    qcFocus: "Compare both shoes, size labels, heel shape, upper panels, outsole and visible stitching.",
   },
   {
     id: 3369,
     name: "Graphic pullover hoodie collection",
     category: "Hoodies",
+    categorySlug: "hoodies",
     image: "/products/3369.webp",
     url: `${catalogBase}/AllProducts/3369.html`,
+    priceCny: 299.52,
+    selectionNote: "Choose the exact design, colour and garment size; one listing may contain many styles.",
+    qcFocus: "Check the received design, size label, chest width, print placement, cuffs, hem and visible marks.",
   },
   {
     id: 3371,
     name: "Monogram-pattern baseball cap",
     category: "Headwear",
+    categorySlug: "accessories",
     image: "/products/3371.webp",
     url: `${catalogBase}/AllProducts/3371.html`,
+    priceCny: 75,
+    selectionNote: "Confirm colour, crown style and whether the selected closure is fixed or adjustable.",
+    qcFocus: "Review crown symmetry, embroidery placement, brim shape, closure and visible surface marks.",
   },
   {
     id: 3357,
     name: "Round digital smartwatch",
     category: "Electronics",
+    categorySlug: "accessories",
     image: "/products/3357.webp",
     url: `${catalogBase}/AllProducts/3357.html`,
+    priceCny: 218,
+    selectionNote: "Confirm the exact model, colour, strap option and every accessory expressly included.",
+    qcFocus: "Check the screen, case, buttons, strap connections, charger and visible packaging contents.",
   },
   {
     id: 3367,
     name: "High-top platform sneakers",
     category: "Shoes",
+    categorySlug: "shoes",
     image: "/products/3367.webp",
     url: `${catalogBase}/AllProducts/3367.html`,
+    priceCny: 455,
+    selectionNote: "Confirm the colour and seller size label, then compare a defined foot or insole measurement.",
+    qcFocus: "Check pair symmetry, labels, toe shape, platform height, panels and sole attachment.",
   },
   {
     id: 3366,
     name: "Cushioned slide sandals",
     category: "Shoes",
+    categorySlug: "shoes",
     image: "/products/3366.webp",
     url: `${catalogBase}/AllProducts/3366.html`,
+    priceCny: 408,
+    selectionNote: "Confirm colour, seller size and whether the measurement describes the footbed or outsole.",
+    qcFocus: "Check that the pair matches, then review straps, footbeds, outsole edges and visible damage.",
   },
   {
     id: 3368,
     name: "Graphic knit sweater collection",
     category: "Sweaters",
+    categorySlug: "hoodies",
     image: "/products/3368.webp",
     url: `${catalogBase}/AllProducts/3368.html`,
+    priceCny: 363.48,
+    selectionNote: "Record the exact style, colour and size because the listing contains multiple designs.",
+    qcFocus: "Compare the chosen graphic, label, chest width, knit surface, collar, cuffs and hem.",
   },
   {
     id: 3372,
     name: "Snow and ski goggles",
     category: "Accessories",
+    categorySlug: "accessories",
     image: "/products/3372.webp",
     url: `${catalogBase}/AllProducts/3372.html`,
+    priceCny: 340,
+    selectionNote: "Confirm the selected lens, frame colour, strap and any case or accessory explicitly included.",
+    qcFocus: "Inspect lens surfaces, frame alignment, strap attachment and the visible included pieces.",
   },
   {
     id: 3356,
     name: "Belted wool-blend coat",
     category: "Jackets",
+    categorySlug: "jackets",
     image: "/products/3356.webp",
     url: `${catalogBase}/AllProducts/3356.html`,
+    priceCny: 247,
+    selectionNote: "Compare chest, shoulder, sleeve and length measurements with a coat that already fits.",
+    qcFocus: "Check the selected size, silhouette, belt, closures, lining, pockets and visible seam finish.",
   },
   {
     id: 3355,
     name: "Glitter low-top sneakers",
     category: "Shoes",
+    categorySlug: "shoes",
     image: "/products/3355.webp",
     url: `${catalogBase}/AllProducts/3355.html`,
+    priceCny: 460,
+    selectionNote: "Confirm the seller size, colour treatment and whether packaging or accessories are included.",
+    qcFocus: "Review pair symmetry, size labels, glitter surface, heel panels, sole edges and visible marks.",
   },
   {
     id: 3353,
     name: "Long-sleeve polo shirts",
     category: "Clothing",
+    categorySlug: "hoodies",
     image: "/products/3353.webp",
     url: `${catalogBase}/AllProducts/3353.html`,
+    priceCny: 168,
+    selectionNote: "Confirm colour and size, then compare garment measurements rather than the label alone.",
+    qcFocus: "Check the collar, placket, chest width, sleeve length, embroidery and visible seam alignment.",
   },
   {
     id: 3351,
     name: "Embroidered knit beanie",
     category: "Headwear",
+    categorySlug: "accessories",
     image: "/products/3351.webp",
     url: `${catalogBase}/AllProducts/3351.html`,
+    priceCny: 69,
+    selectionNote: "Confirm colour, knit style, dimensions and the exact design shown for the selected option.",
+    qcFocus: "Review embroidery placement, knit consistency, shape, edges and visible stains or pulls.",
   },
 ] as const;
 
+export type ProductRecord = (typeof products)[number];
+
+export const productSnapshotDate = "2026-07-30";
+
+export function productInternalPath(id: number) {
+  return `/products/${id}`;
+}
+
+export function productPriceUsd(priceCny: number) {
+  return (priceCny / 6.77).toFixed(2);
+}
+
+export function getProduct(id: string | number) {
+  return products.find((product) => product.id === Number(id));
+}
+
 export const categories = [
   {
+    slug: "shoes",
     name: "Shoes",
     detail: "Sneakers, runners and slides",
     href: `${catalogBase}/shoes/`,
     symbol: "↗",
+    intro: "Compare seller size systems, foot or insole measurements, pair symmetry and the protection-versus-volume trade-off of shoe boxes.",
   },
   {
+    slug: "hoodies",
     name: "Hoodies",
     detail: "Hoodies, sweaters and layers",
     href: `${catalogBase}/hoodies-sweaters/`,
     symbol: "↗",
+    intro: "Use garment measurements and the exact selected design to compare hoodies, knitwear and other upper-body layers.",
   },
   {
+    slug: "jackets",
     name: "Jackets",
     detail: "Coats, jackets and outerwear",
     href: `${catalogBase}/jackets/`,
     symbol: "↗",
+    intro: "Review garment dimensions, closures, lining and packed volume before accepting heavier outerwear for an international parcel.",
   },
   {
+    slug: "accessories",
     name: "Accessories",
     detail: "Headwear, watches and more",
     href: `${catalogBase}/accessories/`,
     symbol: "↗",
+    intro: "Confirm exact options, dimensions, included pieces and product-specific visible checks for headwear, eyewear and electronics.",
   },
 ] as const;
+
+export function categoryInternalPath(slug: string) {
+  return `/categories/${slug}`;
+}
+
+export function getCategory(slug: string) {
+  return categories.find((category) => category.slug === slug);
+}
+
+export function getCategoryProducts(slug: string) {
+  return products.filter((product) => product.categorySlug === slug);
+}
 
 export const primaryNavigation = [
   { label: "Products", href: "/products", key: "products" },
   { label: "Categories", href: "/categories", key: "categories" },
   { label: "QC Guide", href: "/qc-guide", key: "qc-guide" },
   { label: "Shipping", href: "/shipping", key: "shipping" },
-  { label: "SEO Articles", href: "/articles", key: "articles" },
+  { label: "Buying Guides", href: "/articles", key: "articles" },
   { label: "FAQ", href: "/faq", key: "faq" },
 ] as const;
 

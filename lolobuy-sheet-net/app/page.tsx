@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { catalogBase, categories, faqItems, products } from "./site-data";
+import {
+  catalogBase,
+  categories,
+  categoryInternalPath,
+  faqItems,
+  productInternalPath,
+  productPriceUsd,
+  products,
+} from "./site-data";
+import { ProductImage } from "./product-image";
 import { SiteFooter, SiteHeader } from "./site-shell";
 import {
   absoluteUrl,
@@ -50,7 +59,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
       position: index + 1,
       name: translate(locale, product.name),
       image: `https://lolobuy-sheet.net${product.image}`,
-      url: product.url,
+      url: absoluteUrl(productInternalPath(product.id)),
     })),
   };
   const websiteJsonLd = {
@@ -85,11 +94,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
           <div className="hero-copy">
             <p className="eyebrow">Independent product-finding guide</p>
             <h1 id="hero-title">
-              Find the item.
-              <br />
-              Check the details.
-              <br />
-              Buy with context.
+              LoloBuy Spreadsheet 2026: Matched Product Finds &amp; Buying Guides
             </h1>
             <p className="hero-lead">
               Searchable China shopping finds and practical LoloBuy guides,
@@ -120,15 +125,13 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
 
             <div className="quick-categories" aria-label="Product categories">
               {categories.map((category) => (
-                <a
+                <Link
                   key={category.name}
-                  href={category.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={categoryInternalPath(category.slug)}
                 >
                   <span aria-hidden="true">{category.symbol}</span>
                   {category.name}
-                </a>
+                </Link>
               ))}
             </div>
 
@@ -137,7 +140,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
                 className="button button-primary"
                 href={`${catalogBase}/AllProducts/`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
               >
                 Browse product finds <span aria-hidden="true">→</span>
               </a>
@@ -156,69 +159,41 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
           </div>
 
           <div className="hero-catalog" aria-label="Featured product finds">
-            <a
+            <Link
               className="hero-card hero-card-featured"
-              href={featured[0].url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={productInternalPath(featured[0].id)}
             >
               <span className="status-tag">SOURCE MATCHED</span>
-              <img
-                src={featured[0].image}
-                alt={featured[0].name}
-                width="900"
-                height="900"
-              />
+              <ProductImage product={featured[0]} priority sizes="(max-width: 900px) 100vw, 45vw" />
               <span className="hero-card-title">{featured[0].name}</span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               className="hero-card hero-card-small"
-              href={featured[1].url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={productInternalPath(featured[1].id)}
             >
               <span className="card-label">{featured[1].category}</span>
-              <img
-                src={featured[1].image}
-                alt={featured[1].name}
-                width="900"
-                height="900"
-              />
+              <ProductImage product={featured[1]} />
               <span className="hero-card-title">{featured[1].name}</span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               className="hero-card hero-card-small"
-              href={featured[2].url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={productInternalPath(featured[2].id)}
             >
               <span className="card-label">{featured[2].category}</span>
-              <img
-                src={featured[2].image}
-                alt={featured[2].name}
-                width="900"
-                height="900"
-              />
+              <ProductImage product={featured[2]} />
               <span className="hero-card-title">{featured[2].name}</span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               className="hero-card hero-card-rail"
-              href={featured[3].url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={productInternalPath(featured[3].id)}
             >
               <span className="card-label">{featured[3].category}</span>
-              <img
-                src={featured[3].image}
-                alt={featured[3].name}
-                width="900"
-                height="900"
-              />
+              <ProductImage product={featured[3]} />
               <span className="hero-card-title">{featured[3].name}</span>
-            </a>
+            </Link>
 
             <div className="status-panel">
               <p>PRODUCT SOURCE</p>
@@ -235,20 +210,13 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
 
         <section className="fold-preview" aria-label="More product finds">
           {products.slice(4, 10).map((product) => (
-            <a
+            <Link
               key={product.id}
-              href={product.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={productInternalPath(product.id)}
             >
-              <img
-                src={product.image}
-                alt={product.name}
-                width="700"
-                height="700"
-              />
+              <ProductImage product={product} sizes="(max-width: 620px) 33vw, 16vw" />
               <span>{product.name}</span>
-            </a>
+            </Link>
           ))}
         </section>
 
@@ -274,45 +242,31 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
           </p>
 
           <div className="product-grid">
-            {products.map((product, index) => (
+            {products.map((product) => (
               <article className="product-card" key={product.id}>
-                <a
+                <Link
                   className="product-image"
-                  href={product.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={productInternalPath(product.id)}
                   aria-label={`Open ${product.name}`}
                 >
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    width="800"
-                    height="800"
-                    loading={index < 4 ? "eager" : "lazy"}
-                  />
+                  <ProductImage product={product} />
                   <span>Open product <ArrowIcon /></span>
-                </a>
+                </Link>
                 <div className="product-copy">
                   <p>{product.category}</p>
                   <h3>
-                    <a
-                      href={product.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Link href={productInternalPath(product.id)}>
                       {product.name}
-                    </a>
+                    </Link>
                   </h3>
                   <div>
-                    <span>Item page {product.id}</span>
-                    <a
-                      href={product.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <span>¥{product.priceCny} · ${productPriceUsd(product.priceCny)}</span>
+                    <Link
+                      href={productInternalPath(product.id)}
                       aria-label={`View matching page for ${product.name}`}
                     >
                       View <ArrowIcon />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -324,7 +278,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
               className="button button-primary"
               href={`${catalogBase}/AllProducts/`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored noopener noreferrer"
             >
               View the full product catalog <span aria-hidden="true">→</span>
             </a>
@@ -349,11 +303,9 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
 
           <div className="category-grid">
             {categories.map((category, index) => (
-              <a
+              <Link
                 key={category.name}
-                href={category.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={categoryInternalPath(category.slug)}
               >
                 <span className="category-number">0{index + 1}</span>
                 <h3>{category.name}</h3>
@@ -361,7 +313,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
                 <span className="category-arrow" aria-hidden="true">
                   ↗
                 </span>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -589,7 +541,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
           </div>
           <div className="section-cta">
             <Link className="button button-secondary" href="/articles">
-              View all SEO articles <span aria-hidden="true">→</span>
+              View all buying guides <span aria-hidden="true">→</span>
             </Link>
             <p>
               Each guide focuses on a specific decision: product selection,

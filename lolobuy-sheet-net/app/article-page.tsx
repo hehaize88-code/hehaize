@@ -6,32 +6,36 @@ import {
 } from "./article-data";
 import { catalogBase } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
+import { absoluteUrl, localizedPath } from "./i18n";
+import { articleText, getLocalizedArticle } from "./article-locales";
+import type { Locale } from "./translations";
 
-function slugify(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[“”"':?,.()]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-export function ArticlePage({ article }: { article: ArticleRecord }) {
-  const wordCount = articleWordCount(article);
+export function ArticlePage({
+  article,
+  locale = "en",
+}: {
+  article: ArticleRecord;
+  locale?: Locale;
+}) {
+  const copy = getLocalizedArticle(article, locale);
+  const wordCount = articleWordCount(copy);
   const readMinutes = Math.max(6, Math.round(wordCount / 220));
-  const canonical = `https://lolobuy-sheet.net/articles/${article.slug}`;
+  const canonicalPath = localizedPath(locale, `/articles/${copy.slug}`);
+  const canonical = absoluteUrl(canonicalPath);
+  const localPath = (path: string) => localizedPath(locale, path);
   const relatedArticles = articles.filter(
-    (candidate) => candidate.slug !== article.slug,
-  );
+    (candidate) => candidate.slug !== copy.slug,
+  ).map((candidate) => getLocalizedArticle(candidate, locale));
 
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: article.title,
-    description: article.description,
-    image: `https://lolobuy-sheet.net${article.image}`,
-    datePublished: article.publishedDate,
-    dateModified: article.modifiedDate,
-    inLanguage: "en",
+    headline: copy.title,
+    description: copy.description,
+    image: `https://lolobuy-sheet.net${copy.image}`,
+    datePublished: copy.publishedDate,
+    dateModified: copy.modifiedDate,
+    inLanguage: locale,
     wordCount,
     mainEntityOfPage: canonical,
     author: {
@@ -64,19 +68,19 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
-        item: "https://lolobuy-sheet.net/",
+        name: articleText(locale, "Home"),
+        item: absoluteUrl(localPath("/")),
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Guides",
-        item: "https://lolobuy-sheet.net/articles",
+        name: articleText(locale, "Guides"),
+        item: absoluteUrl(localPath("/articles")),
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: article.shortTitle,
+        name: copy.shortTitle,
         item: canonical,
       },
     ],
@@ -92,54 +96,56 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <SiteHeader active="articles" />
+      <SiteHeader active="articles" locale={locale} />
       <main className="article-main">
-        <article data-i18n-ignore>
+        <article lang={locale} data-article-locale={locale}>
           <header className="article-hero">
             <div className="article-hero-inner">
               <p className="subpage-breadcrumb">
-                <Link href="/">Home</Link> <span>/</span>
-                <Link href="/articles">Guides</Link> <span>/</span>
-                {article.eyebrow}
+                <Link href={localPath("/")}>{articleText(locale, "Home")}</Link>{" "}
+                <span>/</span>
+                <Link href={localPath("/articles")}>{articleText(locale, "Guides")}</Link>{" "}
+                <span>/</span>
+                {copy.eyebrow}
               </p>
-              <p className="eyebrow">{article.eyebrow}</p>
-              <h1>{article.title}</h1>
-              <p className="article-standfirst">{article.standfirst}</p>
+              <p className="eyebrow">{copy.eyebrow}</p>
+              <h1>{copy.title}</h1>
+              <p className="article-standfirst">{copy.standfirst}</p>
               <div className="article-byline">
                 <div>
                   <p>
-                    Written by{" "}
+                    {articleText(locale, "Written by")}{" "}
                     <Link href="/about">LoloBuy Sheet Editorial</Link>
                   </p>
                   <p>
-                    Fact-checked against public LoloBuy information
+                    {articleText(locale, "Fact-checked against public LoloBuy information")}
                   </p>
-                  <p>Last reviewed: {article.checkedDate}</p>
+                  <p>{`${articleText(locale, "Last reviewed")}: ${copy.checkedDate}`}</p>
                 </div>
                 <nav aria-label="Article editorial information">
-                  <Link href="/editorial-policy">Editorial policy</Link>
+                  <Link href="/editorial-policy">{articleText(locale, "Editorial policy")}</Link>
                   <Link href="/research-method">
-                    Sources &amp; research method
+                    {articleText(locale, "Sources & research method")}
                   </Link>
-                  <Link href="/contact">Corrections</Link>
+                  <Link href="/contact">{articleText(locale, "Corrections")}</Link>
                 </nav>
               </div>
               <dl className="article-meta">
                 <div>
-                  <dt>Checked</dt>
-                  <dd>{article.checkedDate}</dd>
+                  <dt>{articleText(locale, "Checked")}</dt>
+                  <dd>{copy.checkedDate}</dd>
                 </div>
                 <div>
-                  <dt>Length</dt>
-                  <dd>{wordCount.toLocaleString("en-US")} words</dd>
+                  <dt>{articleText(locale, "Length")}</dt>
+                  <dd>{`${wordCount.toLocaleString(locale)} ${articleText(locale, "words")}`}</dd>
                 </div>
                 <div>
-                  <dt>Reading time</dt>
-                  <dd>{readMinutes} minutes</dd>
+                  <dt>{articleText(locale, "Reading time")}</dt>
+                  <dd>{`${readMinutes} ${articleText(locale, "minutes")}`}</dd>
                 </div>
                 <div>
-                  <dt>Main query</dt>
-                  <dd>{article.primaryKeyword}</dd>
+                  <dt>{articleText(locale, "Main query")}</dt>
+                  <dd>{copy.primaryKeyword}</dd>
                 </div>
               </dl>
             </div>
@@ -148,11 +154,11 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
           <div className="article-layout">
             <aside className="article-sidebar" aria-label="Article contents">
               <div>
-                <p className="footer-label">IN THIS GUIDE</p>
+                <p className="footer-label">{articleText(locale, "IN THIS GUIDE")}</p>
                 <ol>
-                  {article.sections.map((section, index) => (
+                  {copy.sections.map((section, index) => (
                     <li key={section.heading}>
-                      <a href={`#${slugify(section.heading)}`}>
+                      <a href={`#section-${index + 1}`}>
                         <span>{String(index + 1).padStart(2, "0")}</span>
                         {section.heading}
                       </a>
@@ -161,41 +167,41 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
                 </ol>
               </div>
               <div className="article-sidebar-note">
-                <p className="footer-label">SEARCH INTENT</p>
-                <p>{article.intent}</p>
+                <p className="footer-label">{articleText(locale, "SEARCH INTENT")}</p>
+                <p>{copy.intent}</p>
               </div>
             </aside>
 
             <div className="article-content">
               <figure className="article-figure">
                 <img
-                  src={article.image}
-                  alt={article.imageAlt}
+                  src={copy.image}
+                  alt={copy.imageAlt}
                   width="1200"
                   height="630"
                 />
-                <figcaption>{article.imageCaption}</figcaption>
+                <figcaption>{copy.imageCaption}</figcaption>
               </figure>
 
               <section className="article-summary" aria-labelledby="key-points">
-                <p className="eyebrow">Reader summary</p>
-                <h2 id="key-points">Four points to keep</h2>
+                <p className="eyebrow">{articleText(locale, "Reader summary")}</p>
+                <h2 id="key-points">{articleText(locale, "Four points to keep")}</h2>
                 <ul>
-                  {article.takeaways.map((takeaway) => (
+                  {copy.takeaways.map((takeaway) => (
                     <li key={takeaway}>{takeaway}</li>
                   ))}
                 </ul>
               </section>
 
               <aside className="research-note">
-                <p className="footer-label">FACT-CHECK NOTE</p>
-                <p>{article.sourceNote}</p>
+                <p className="footer-label">{articleText(locale, "FACT-CHECK NOTE")}</p>
+                <p>{copy.sourceNote}</p>
               </aside>
 
-              {article.sections.map((section, index) => (
+              {copy.sections.map((section, index) => (
                 <section
                   className="article-section"
-                  id={slugify(section.heading)}
+                  id={`section-${index + 1}`}
                   key={section.heading}
                 >
                   <span className="article-section-number">
@@ -214,7 +220,7 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
                   )}
                   {section.note && (
                     <aside className="calculation-note">
-                      <strong>Worked example</strong>
+                      <strong>{articleText(locale, "Worked example")}</strong>
                       <p>{section.note}</p>
                     </aside>
                   )}
@@ -222,48 +228,45 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
               ))}
 
               <section className="related-guides" aria-labelledby="related-guides">
-                <p className="eyebrow">Related buying guides</p>
-                <h2 id="related-guides">Continue with the next decision</h2>
+                <p className="eyebrow">{articleText(locale, "Related buying guides")}</p>
+                <h2 id="related-guides">{articleText(locale, "Continue with the next decision")}</h2>
                 <div>
-                  <Link href="/categories">
-                    <span>Product discovery</span>
-                    <strong>Browse by product category</strong>
-                    <small>Open categories →</small>
+                  <Link href={localPath("/categories")}>
+                    <span>{articleText(locale, "Product discovery")}</span>
+                    <strong>{articleText(locale, "Browse by product category")}</strong>
+                    <small>{articleText(locale, "Open categories")} →</small>
                   </Link>
                   {relatedArticles.map((related) => (
                     <Link
-                      href={`/articles/${related.slug}`}
+                      href={localPath(`/articles/${related.slug}`)}
                       key={related.slug}
                     >
                       <span>{related.eyebrow}</span>
                       <strong>{related.shortTitle}</strong>
-                      <small>Read guide →</small>
+                      <small>{articleText(locale, "Read guide")} →</small>
                     </Link>
                   ))}
                 </div>
               </section>
 
               <section className="article-end">
-                <p className="eyebrow">Continue your research</p>
-                <h2>Open a matched product, then verify the live details</h2>
+                <p className="eyebrow">{articleText(locale, "Continue your research")}</p>
+                <h2>{articleText(locale, "Open a matched product, then verify the live details")}</h2>
                 <p>
-                  Product availability, options, prices and seller notes can
-                  change. Use the catalog to find an item, then make the
-                  purchase decision from the current page and your saved order
-                  record.
+                  {articleText(locale, "Product availability, options, prices and seller notes can change. Use the catalog to find an item, then make the purchase decision from the current page and your saved order record.")}
                 </p>
                 <div>
                   <a
                     className="button button-primary"
                     href={`${catalogBase}/AllProducts/`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored noopener noreferrer"
                   >
-                    Browse main-site products{" "}
+                    {articleText(locale, "Browse main-site products")}{" "}
                     <span aria-hidden="true">→</span>
                   </a>
-                  <Link className="button button-secondary" href="/articles">
-                    Read another guide <span aria-hidden="true">→</span>
+                  <Link className="button button-secondary" href={localPath("/articles")}>
+                    {articleText(locale, "Read another guide")} <span aria-hidden="true">→</span>
                   </Link>
                 </div>
               </section>
@@ -271,7 +274,7 @@ export function ArticlePage({ article }: { article: ArticleRecord }) {
           </div>
         </article>
       </main>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </>
   );
 }

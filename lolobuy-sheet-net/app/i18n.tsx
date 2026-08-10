@@ -91,8 +91,9 @@ export function localizedPath(locale: Locale, rawHref: string) {
 
   const url = new URL(rawHref, "https://lolobuy-sheet.net");
   const basePath = removeLocalePrefix(url.pathname).replace(/\/+$/, "") || "/";
+  const isArticlePath = /^\/articles\/[^/]+$/.test(basePath);
 
-  if (!isCorePath(basePath)) {
+  if (!isCorePath(basePath) && !isArticlePath) {
     return `${basePath}${url.search}${url.hash}`;
   }
 
@@ -104,6 +105,18 @@ export function localizedPath(locale: Locale, rawHref: string) {
         : `/${locale}${basePath}`;
 
   return `${pathname}${url.search}${url.hash}`;
+}
+
+export function articleLanguageAlternates(slug: string) {
+  const path = `/articles/${slug}`;
+  return {
+    en: absoluteUrl(localizedPath("en", path)),
+    es: absoluteUrl(localizedPath("es", path)),
+    de: absoluteUrl(localizedPath("de", path)),
+    fr: absoluteUrl(localizedPath("fr", path)),
+    it: absoluteUrl(localizedPath("it", path)),
+    "x-default": absoluteUrl(localizedPath("en", path)),
+  };
 }
 
 export function absoluteUrl(path: string) {

@@ -4,7 +4,10 @@ import { articleWordCount, articles } from "./article-data";
 import {
   catalogBase,
   categories,
+  categoryInternalPath,
   faqItems,
+  productInternalPath,
+  productPriceUsd,
   products,
   type NavigationKey,
 } from "./site-data";
@@ -15,6 +18,7 @@ import {
   type SectionCopy,
 } from "./guide-depth-copy";
 import type { Locale } from "./translations";
+import { ProductImage } from "./product-image";
 
 type PageKind = NavigationKey | "how-it-works" | "learn";
 
@@ -158,38 +162,30 @@ function ProductGrid({
 }) {
   return localizeReactNode(
     <div className="product-grid">
-      {products.slice(0, limit).map((product, index) => (
+      {products.slice(0, limit).map((product) => (
         <article className="product-card" key={product.id}>
-          <a
+          <Link
             className="product-image"
-            href={product.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Open ${product.name} on the main site`}
+            href={productInternalPath(product.id)}
+            aria-label={`Open the guide page for ${product.name}`}
           >
-            <img
-              src={product.image}
-              alt={product.name}
-              width="800"
-              height="800"
-              loading={index < 4 ? "eager" : "lazy"}
-            />
+            <ProductImage product={product} />
             <span>
               Open product <span aria-hidden="true">↗</span>
             </span>
-          </a>
+          </Link>
           <div className="product-copy">
             <p>{product.category}</p>
             <h3>
-              <a href={product.url} target="_blank" rel="noopener noreferrer">
+              <Link href={productInternalPath(product.id)}>
                 {product.name}
-              </a>
+              </Link>
             </h3>
             <div>
-              <span>Item page {product.id}</span>
-              <a href={product.url} target="_blank" rel="noopener noreferrer">
+              <span>¥{product.priceCny} · ${productPriceUsd(product.priceCny)}</span>
+              <Link href={productInternalPath(product.id)}>
                 View <span aria-hidden="true">↗</span>
-              </a>
+              </Link>
             </div>
           </div>
         </article>
@@ -293,7 +289,7 @@ function ProductsPage({ locale }: { locale: Locale }) {
             className="button button-primary"
             href={`${catalogBase}/AllProducts/`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored noopener noreferrer"
           >
             Browse the full main catalog <span aria-hidden="true">→</span>
           </a>
@@ -314,11 +310,9 @@ function CategoriesPage({ locale }: { locale: Locale }) {
       <section className="section-shell subpage-section">
         <div className="category-grid">
           {categories.map((category, index) => (
-            <a
+            <Link
               key={category.name}
-              href={category.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={categoryInternalPath(category.slug)}
             >
               <span className="category-number">0{index + 1}</span>
               <h2>{category.name}</h2>
@@ -326,7 +320,7 @@ function CategoriesPage({ locale }: { locale: Locale }) {
               <span className="category-arrow" aria-hidden="true">
                 ↗
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
