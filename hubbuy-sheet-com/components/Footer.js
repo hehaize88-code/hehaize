@@ -33,12 +33,12 @@ export default function Footer() {
           <Link href="/categories/shoes/">Shoes</Link>
           <Link href="/categories/hoodies/">Hoodies</Link>
           <Link href="/categories/electronics/">Electronics</Link>
-          <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">Live catalog ↗</a>
+          <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="sponsored noopener">Live catalog ↗</a>
         </div>
       </div>
       <div className="wrap footer-bottom">
-        <p>© 2026 Hubbuy Sheet. Editorial discovery guide for CNBuy Sheet.</p>
-        <p>Independent from Hubbuy and not an official Hubbuy website. Product cards, search forms, category-page catalog buttons and Live Catalog links lead to CNBuy Sheet at cnbuycha.com, in which this website has a commercial interest. Transactions occur on the destination site; verify live details before ordering.</p>
+        <p>© 2026 Hubbuy Sheet. Independent editorial discovery guide.</p>
+        <p>Independent from Hubbuy and not an official Hubbuy website. Product, category, search and live-catalog links lead to a destination catalog in which this website has a commercial interest. Transactions occur on the destination site; verify live details before ordering.</p>
       </div>
     </footer>
   );

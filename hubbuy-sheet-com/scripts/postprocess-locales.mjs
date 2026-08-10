@@ -34,9 +34,9 @@ const baseRoutes = [
   "/legal/terms/",
   ...localizedArticles.map((article) => `/articles/${article.slug}/`),
   ...categoryPages.map((category) => `/categories/${category.slug}/`),
+  ...products.map((product) => product.localHref),
 ];
 const englishOnlyRoutes = [
-  ...products.map((product) => product.localHref),
   ...englishOnlyArticles.map((article) => `/articles/${article.slug}/`),
 ];
 const allEnglishRoutes = [...baseRoutes, ...englishOnlyRoutes];
@@ -240,6 +240,21 @@ function localizeHtml(sourceHtml, route, locale) {
     html = html
       .replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(page.title)}</title>`)
       .replace(/(<meta\b[^>]*name="description"[^>]*content=")([^"]*)("[^>]*>)/i, `$1${escapeHtml(page.description)}$3`);
+  }
+
+  const product = products.find((item) => item.localHref === route);
+  if (product) {
+    const localizedTitle = locale === "de"
+      ? `${product.name} | Hubbuy Tabellenfund`
+      : `${product.name} | Achado da Planilha Hubbuy`;
+    const localizedDescription = locale === "de"
+      ? `${product.name}: ungefährer USD-Preis, ursprüngliche CNY-Referenz, Quellen-ID und praktische QC-Prüfpunkte.`
+      : `${product.name}: preço aproximado em USD, referência original em CNY, ID da fonte e verificações práticas de QC.`;
+    html = html
+      .replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(localizedTitle)}</title>`)
+      .replace(/(<meta\b[^>]*name="description"[^>]*content=")([^"]*)("[^>]*>)/i, `$1${escapeHtml(localizedDescription)}$3`)
+      .replace(/(<meta\b[^>]*property="og:title"[^>]*content=")([^"]*)("[^>]*>)/i, `$1${escapeHtml(localizedTitle)}$3`)
+      .replace(/(<meta\b[^>]*property="og:description"[^>]*content=")([^"]*)("[^>]*>)/i, `$1${escapeHtml(localizedDescription)}$3`);
   }
 
   return html.replace("</body>", `<!-- Static localized edition: ${localeConfig[locale].htmlLang} --></body>`);

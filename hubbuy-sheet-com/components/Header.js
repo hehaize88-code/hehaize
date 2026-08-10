@@ -32,14 +32,14 @@ export default function Header() {
           {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
         </nav>
         <LanguageSwitcher />
-        <a className="nav-cta" href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">
+        <a className="nav-cta" href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="sponsored noopener">
           Live catalog <ArrowIcon size={16} />
         </a>
         <details className="mobile-nav">
           <summary aria-label="Open menu"><span /><span /><span /></summary>
           <div className="mobile-nav-panel">
             {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
-            <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">Open live catalog</a>
+            <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="sponsored noopener">Open live catalog</a>
           </div>
         </details>
       </div>

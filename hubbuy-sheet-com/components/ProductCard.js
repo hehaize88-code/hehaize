@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowIcon } from "@/components/Icons";
+import { usdReference } from "@/data/site";
 
 export default function ProductCard({ product, priority = false }) {
   return (
@@ -19,7 +20,8 @@ export default function ProductCard({ product, priority = false }) {
       <div className="product-content">
         <div>
           <h3>{product.name}</h3>
-          <p><span>¥</span>{product.price} <small>reference</small></p>
+          <p><span>$</span>{usdReference(product.price)} <small>approx.</small></p>
+          <small className="cny-reference">Reference ¥{product.price}</small>
         </div>
         <Link className="product-link" href={product.localHref} aria-label={`View ${product.name} research page`}><ArrowIcon /></Link>
       </div>

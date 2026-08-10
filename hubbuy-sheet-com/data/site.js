@@ -2,6 +2,12 @@ import { categoryPages } from "./categories.js";
 
 export const MAIN_SITE = "https://www.cnbuycha.com";
 export const SITE_URL = "https://hubbuy-sheet.com";
+export const CNY_PER_USD = 7.20;
+export const PRICE_RATE_DATE = "10 August 2026";
+
+export function usdReference(price) {
+  return (Number(price) / CNY_PER_USD).toFixed(2);
+}
 
 export const categories = categoryPages.map((category) => ({
   ...category,

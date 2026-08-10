@@ -3,7 +3,7 @@ import { preload } from "react-dom";
 import SearchBox from "@/components/SearchBox";
 import ProductCard from "@/components/ProductCard";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
-import { categories, getProductImageUrl, products, faqs, MAIN_SITE, SITE_URL } from "@/data/site";
+import { categories, getProductImageUrl, products, faqs, MAIN_SITE, SITE_URL, PRICE_RATE_DATE, usdReference } from "@/data/site";
 import { articles } from "@/data/articles";
 import { localePages } from "@/data/locale-content";
 
@@ -98,19 +98,19 @@ export default function HomePage({ locale = "en" } = {}) {
             <p>Browse organized China shopping finds, open the exact live product page, and use practical QC and shipping checks before making a decision.</p>
             <SearchBox />
             <div className="hero-links">
-              <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">Browse all live products <ArrowIcon /></a>
+              <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="sponsored noopener">Browse all live products <ArrowIcon /></a>
               <Link href="/guides/how-to-buy">Open the order checklist</Link>
             </div>
             <div className="trust-row">
               <span><CheckIcon /> Exact product links</span>
-              <span><CheckIcon /> Prices shown in CNY</span>
+              <span><CheckIcon /> Approximate prices shown in USD</span>
               <span><CheckIcon /> No checkout on this site</span>
             </div>
           </div>
           <div className="hero-showcase" aria-label="Featured product preview">
             <div className="showcase-note"><span>Live shortlist</span><strong>New this week</strong></div>
             {products.slice(0, 3).map((product, index) => (
-              <a key={product.id} className={`showcase-product showcase-${index + 1}`} href={product.href} target="_blank" rel="noopener">
+              <a key={product.id} className={`showcase-product showcase-${index + 1}`} href={product.href} target="_blank" rel="sponsored noopener">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -120,7 +120,7 @@ export default function HomePage({ locale = "en" } = {}) {
                   fetchPriority={index === 0 ? "high" : "low"}
                   decoding="async"
                 />
-                <span><small>{product.category}</small><strong>{product.name}</strong><em>¥{product.price}</em></span>
+                <span><small>{product.category}</small><strong>{product.name}</strong><em>Approx. ${usdReference(product.price)}</em></span>
               </a>
             ))}
             <div className="showcase-stamp">2026<br/><span>EDIT</span></div>
@@ -132,11 +132,11 @@ export default function HomePage({ locale = "en" } = {}) {
         <div className="wrap">
           <div className="section-heading inline-heading">
             <div><span className="eyebrow">Browse by category</span><h2>Start with what you need</h2></div>
-            <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="noopener">View every category <ArrowIcon /></a>
+            <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="sponsored noopener">View every category <ArrowIcon /></a>
           </div>
           <div className="category-grid">
             {categories.map(category => (
-              <a key={category.name} className="category-card" href={category.liveHref} target="_blank" rel="noopener">
+              <a key={category.name} className="category-card" href={category.liveHref} target="_blank" rel="sponsored noopener">
                 <span className="category-code">{category.code}</span>
                 <span><strong>{category.name}</strong><small>{category.note}</small></span>
                 <ArrowIcon size={17} />
@@ -149,7 +149,7 @@ export default function HomePage({ locale = "en" } = {}) {
       <section className="section products-section">
         <div className="wrap">
           <div className="section-heading inline-heading">
-            <div><span className="eyebrow">Recently checked</span><h2>Current spreadsheet finds</h2><p>Reference prices were checked against the linked catalog in July 2026.</p></div>
+            <div><span className="eyebrow">Recently checked</span><h2>Current spreadsheet finds</h2><p>USD estimates use ¥7.20 per US$1, dated {PRICE_RATE_DATE}; CNY references are retained for comparison.</p></div>
             <Link href="/products">See the full shortlist <ArrowIcon /></Link>
           </div>
           <div className="product-grid home-product-grid">
@@ -205,7 +205,6 @@ export default function HomePage({ locale = "en" } = {}) {
               </Link>
             ))}
           </div>
-          <p className="micro-disclaimer"><Link href={`/articles/${articles[0].slug}/`}>New tracking guide: {articles[0].title} <ArrowIcon /></Link></p>
         </div>
       </section>
 

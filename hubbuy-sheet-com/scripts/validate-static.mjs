@@ -237,12 +237,11 @@ for (const url of urls) {
   }
 
   if (product) {
-    if (locale !== "en") throw new Error(`Product reference page must remain English-only: ${url}`);
     const itemPage = schemas.find((schema) => schemaType(schema, "ItemPage"));
-    if (!itemPage || !schemaType(itemPage.mainEntity, "Product") || !schemaType(itemPage.mainEntity?.offers, "Offer")) {
-      throw new Error(`Missing ItemPage + Product + Offer schema on ${url}`);
+    if (!itemPage || !schemaType(itemPage.mainEntity, "Product")) {
+      throw new Error(`Missing ItemPage + Product schema on ${url}`);
     }
-    if (itemPage.mainEntity.sku !== product.sourceId || itemPage.mainEntity.offers.url !== product.href) {
+    if (itemPage.mainEntity.sku !== product.sourceId || itemPage.mainEntity.offers) {
       throw new Error(`Product schema does not match source record on ${url}`);
     }
     if (!schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) throw new Error(`Missing product BreadcrumbList on ${url}`);
@@ -273,9 +272,7 @@ for (const url of urls) {
     const researchSection = html.match(/<section id="research-evidence"[\s\S]*?<\/section>/)?.[0] || "";
     const officialSourceCount = (researchSection.match(/href="https:\/\/hubbuy\.com\/"/g) || []).length;
     const ledgerLinkCount = (researchSection.match(/<a [^>]*href="https:\/\//g) || []).length;
-    if (article.noExternalSourceLinks) {
-      if (ledgerLinkCount !== 0 || !researchSection.includes("source-ledger-row")) throw new Error(`Article source ledger must remain non-clickable on ${url}`);
-    } else if (officialSourceCount < 1 || ledgerLinkCount !== 3) {
+    if (officialSourceCount < 1 || ledgerLinkCount !== 3) {
       throw new Error(`Article source ledger is incomplete on ${url}`);
     }
     if (locale === "en") {
@@ -315,8 +312,8 @@ for (const [basePath, group] of localeGroups) {
 }
 
 const localizedArticleCount = articles.length - englishOnlyArticlePaths.size;
-const localizedBaseRouteCount = 11 + localizedArticleCount + categoryPages.length;
-const englishRouteCount = localizedBaseRouteCount + products.length + englishOnlyArticlePaths.size;
+const localizedBaseRouteCount = 11 + localizedArticleCount + categoryPages.length + products.length;
+const englishRouteCount = localizedBaseRouteCount + englishOnlyArticlePaths.size;
 for (const [locale, expectedCount] of [["en", englishRouteCount], ["pt-br", localizedBaseRouteCount], ["de", localizedBaseRouteCount]]) {
   const file = resolve(outputRoot, `sitemap-${locale}.xml`);
   if (!existsSync(file)) throw new Error(`Missing language sitemap: ${locale}`);
@@ -331,7 +328,7 @@ const duplicateCanonicals = records.filter((record, index) => (
   records.findIndex((candidate) => candidate.canonical === record.canonical) !== index
 ));
 
-const expectedSitemapUrls = (localizedBaseRouteCount * 3) + products.length + englishOnlyArticlePaths.size;
+const expectedSitemapUrls = (localizedBaseRouteCount * 3) + englishOnlyArticlePaths.size;
 if (urls.length !== expectedSitemapUrls || new Set(urls).size !== expectedSitemapUrls) throw new Error(`Expected ${expectedSitemapUrls} unique sitemap URLs, found ${urls.length}`);
 if (duplicateTitles.length) throw new Error(`Duplicate titles: ${duplicateTitles.map((item) => item.url).join(", ")}`);
 if (duplicateCanonicals.length) throw new Error("Duplicate canonical URLs");

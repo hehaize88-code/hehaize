@@ -11,11 +11,12 @@ import ContactPage, { metadata as contactMetadata } from "@/app/contact/page";
 import PrivacyPage, { metadata as privacyMetadata } from "@/app/legal/privacy/page";
 import TermsPage, { metadata as termsMetadata } from "@/app/legal/terms/page";
 import CategoryPage, { getCategoryMetadata } from "@/app/categories/[slug]/page";
+import ProductReferencePage, { generateMetadata as getProductMetadata } from "@/app/products/[id]/page";
 import { articles, getArticle } from "@/data/articles";
 import { categoryPages, getCategory } from "@/data/categories";
 import { getLocalizedPath, translateExact } from "@/data/i18n";
 import { localePages } from "@/data/locale-content";
-import { SITE_URL } from "@/data/site";
+import { getProduct, products, SITE_URL } from "@/data/site";
 
 const staticPages = {
   products: { Component: ProductsPage, metadata: productsMetadata },
@@ -36,6 +37,7 @@ export const localizedStaticParams = [
     .filter((article) => !article.locales || article.locales.some((locale) => locale !== "en"))
     .map((article) => ({ segments: ["articles", article.slug] })),
   ...categoryPages.map((category) => ({ segments: ["categories", category.slug] })),
+  ...products.map((product) => ({ segments: ["products", String(product.id)] })),
 ];
 
 function sourceMetadata(route) {
@@ -58,6 +60,10 @@ function sourceMetadata(route) {
     const category = getCategory(route.slice("categories/".length));
     return category ? getCategoryMetadata(category) : null;
   }
+  if (route.startsWith("products/")) {
+    const product = getProduct(route.slice("products/".length));
+    return product ? getProductMetadata({ params: Promise.resolve({ id: String(product.id) }) }) : null;
+  }
   return null;
 }
 
@@ -69,14 +75,22 @@ function absoluteTitle(metadata) {
 export async function getLocalizedMetadata(params, locale) {
   const { segments = [] } = await params;
   const route = segments.join("/");
-  const source = sourceMetadata(route);
+  const source = await sourceMetadata(route);
   if (!source) return {};
 
   const englishPath = `/${route}/`;
   const canonical = getLocalizedPath(englishPath, locale);
   const page = localePages[locale];
-  const title = translateExact(absoluteTitle(source), locale);
-  const description = translateExact(source.description, locale);
+  const productRoute = route.startsWith("products/");
+  const productTitle = productRoute ? getProduct(route.slice("products/".length))?.name : null;
+  const title = productTitle
+    ? (locale === "de" ? `${productTitle} | Hubbuy Tabellenfund` : `${productTitle} | Achado da Planilha Hubbuy`)
+    : translateExact(absoluteTitle(source), locale);
+  const description = productTitle
+    ? (locale === "de"
+      ? `${productTitle}: ungefährer USD-Preis, ursprüngliche CNY-Referenz, Quellen-ID und praktische QC-Prüfpunkte.`
+      : `${productTitle}: preço aproximado em USD, referência original em CNY, ID da fonte e verificações práticas de QC.`)
+    : translateExact(source.description, locale);
   const image = source.openGraph?.images?.[0]?.url || "/brand/og-card.png";
   const alternates = {
     en: getLocalizedPath(englishPath, "en"),
@@ -91,8 +105,8 @@ export async function getLocalizedMetadata(params, locale) {
     alternates: { canonical, languages: alternates },
     openGraph: {
       type: source.openGraph?.type || "website",
-      title: translateExact(source.openGraph?.title || absoluteTitle(source), locale),
-      description: translateExact(source.openGraph?.description || source.description, locale),
+      title,
+      description,
       url: `${SITE_URL}${canonical}`,
       locale: page.ogLocale,
       alternateLocale: locale === "de" ? ["en_US", "pt_BR"] : ["en_US", "de_DE"],
@@ -117,6 +131,10 @@ export default async function LocalizedRoutePage({ params }) {
 
   if (segments[0] === "categories" && segments.length === 2 && getCategory(segments[1])) {
     return <CategoryPage params={Promise.resolve({ slug: segments[1] })} />;
+  }
+
+  if (segments[0] === "products" && segments.length === 2 && getProduct(segments[1])) {
+    return <ProductReferencePage params={Promise.resolve({ id: segments[1] })} />;
   }
 
   notFound();

@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import ProductCard from "@/components/ProductCard";
 import { ArrowIcon, CheckIcon, ExternalIcon } from "@/components/Icons";
 import { getCategory } from "@/data/categories";
-import { getProduct, getProductImageUrl, products, SITE_URL } from "@/data/site";
+import { getProduct, getProductImageUrl, products, SITE_URL, PRICE_RATE_DATE, usdReference } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
 
 export const dynamicParams = false;
@@ -14,7 +14,7 @@ export function generateStaticParams() {
 }
 
 function referenceDescription(product) {
-  return `Review the ${product.name} catalog reference: recorded at ¥${product.price}, source ID ${product.sourceId}, with ${product.category.toLowerCase()} QC and parcel-planning checks.`;
+  return `Review the ${product.name} catalog reference: approximately $${usdReference(product.price)} (reference ¥${product.price}), source ID ${product.sourceId}, with ${product.category.toLowerCase()} QC checks.`;
 }
 
 export async function generateMetadata({ params }) {
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
   if (!product) return {};
   const description = referenceDescription(product);
   const metadata = createPageMetadata({
-    title: `${product.name} – Hubbuy Sheet Reference`,
+    title: `${product.name} | Hubbuy Spreadsheet Find`,
     description,
     path: product.localHref,
     openGraphTitle: `${product.name} | Hubbuy Sheet Product Research`,
@@ -69,12 +69,6 @@ export default async function ProductReferencePage({ params }) {
       image: getProductImageUrl(product),
       sku: product.sourceId,
       category: product.category,
-      offers: {
-        "@type": "Offer",
-        url: product.href,
-        priceCurrency: "CNY",
-        price: product.price,
-      },
     },
   };
   const breadcrumbSchema = {
@@ -95,7 +89,7 @@ export default async function ProductReferencePage({ params }) {
       <PageHero
         eyebrow="Independent product reference"
         title={product.name}
-        intro={`A locally indexed review page for catalog item ${product.id}, with the recorded source ID, CNY price reference and ${product.category.toLowerCase()}-specific checks before you open the live listing.`}
+        intro={`A locally indexed review page with an approximate USD price, the original CNY reference and ${product.category.toLowerCase()}-specific checks before you open the live listing.`}
         crumbs={["Products", product.category, product.name]}
       />
 
@@ -109,13 +103,14 @@ export default async function ProductReferencePage({ params }) {
             <span className="eyebrow">Recorded catalog facts</span>
             <h2>Check the saved reference against the live page.</h2>
             <dl>
-              <div><dt>Reference price</dt><dd>¥{product.price} CNY</dd></div>
-              <div><dt>CNBuy Sheet item</dt><dd>{product.id}</dd></div>
+              <div><dt>Approximate price</dt><dd>${usdReference(product.price)} USD</dd></div>
+              <div><dt>Original reference</dt><dd>¥{product.price} CNY</dd></div>
+              <div><dt>Catalog item</dt><dd>{product.id}</dd></div>
               <div><dt>Source listing ID</dt><dd>{product.sourceId}</dd></div>
               <div><dt>Category</dt><dd>{product.category}</dd></div>
               <div><dt>Checked</dt><dd>{checkedLabel(product.checked)}</dd></div>
             </dl>
-            <a className="live-product-button" href={product.href} target="_blank" rel="noopener">
+            <a className="live-product-button" href={product.href} target="_blank" rel="sponsored noopener">
               Open the current live listing <ExternalIcon />
             </a>
             <p className="product-reference-disclosure">The destination page controls the current seller, price, variants, stock and transaction. Hubbuy Sheet does not sell this item or process an order.</p>
@@ -130,7 +125,7 @@ export default async function ProductReferencePage({ params }) {
             <h2>A decision record, not another unverified product claim.</h2>
           </div>
           <div className="product-review-prose">
-            <p>This page records the catalog label <strong>{product.name}</strong>, the reference price of <strong>¥{product.price}</strong>, CNBuy Sheet item number <strong>{product.id}</strong> and source listing ID <strong>{product.sourceId}</strong>. Those facts make it easier to return to the same reference instead of relying on a screenshot or a generic category link. They do not confirm who manufactured the item, whether a trademark claim is authorized, or whether the seller and inventory remain unchanged.</p>
+            <p>This page records the catalog label <strong>{product.name}</strong>, an approximate price of <strong>${usdReference(product.price)} USD</strong>, the original <strong>¥{product.price} CNY</strong> reference, catalog item <strong>{product.id}</strong> and source listing ID <strong>{product.sourceId}</strong>. The conversion uses ¥7.20 per US$1, dated {PRICE_RATE_DATE}, and is not a checkout quote.</p>
             <p>{variantNote(product)}</p>
             <p>{category.intro} Compare the current source listing with the option you intend to submit, then keep a screenshot of the title, selected variant, seller and price. If the destination no longer matches this record, rely on the live page and choose whether to continue rather than treating an older spreadsheet entry as a promise.</p>
           </div>
