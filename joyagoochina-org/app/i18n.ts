@@ -96,7 +96,7 @@ const en: Copy = {
     explore: "Explore products",
   },
   home: {
-    kicker: "Independent product discovery · Updated July 2026",
+    kicker: "Independent product discovery · Updated August 2026",
     title: "Joyagoo Spreadsheet 2026: Find Better Products with Real Buying Guidance",
     intro:
       "Browse curated products, compare categories, and learn how to use QC photos, shipping choices and return rules before you submit a parcel.",
@@ -134,7 +134,7 @@ const en: Copy = {
     },
     categories: {
       eyebrow: "SHOP BY CATEGORY",
-      title: "Find the right product section",
+      title: "Joyagoo Spreadsheet Categories: Shoes, Clothing & Accessories",
       intro:
         "Use focused category links instead of landing on a broad, unrelated page.",
     },
