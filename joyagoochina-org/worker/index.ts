@@ -86,6 +86,7 @@ const worker = {
     );
     const headers = new Headers(response.headers);
     headers.set("content-language", language);
+    headers.set("cache-control", "public, max-age=300, s-maxage=86400, stale-while-revalidate=604800");
     headers.delete("content-length");
 
     return new Response(html, {
