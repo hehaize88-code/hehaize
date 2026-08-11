@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     title: seoArticleCopy.en.article.title,
     description: seoArticleCopy.en.article.description,
     url: "https://joyagoochina.org/joyagoo-fees-explained/",
+    images: ["https://joyagoochina.org/products/3382.webp"],
   },
+  twitter: { card: "summary_large_image", images: ["https://joyagoochina.org/products/3382.webp"] },
 };
 
 export default function JoyagooFeesPage() {
