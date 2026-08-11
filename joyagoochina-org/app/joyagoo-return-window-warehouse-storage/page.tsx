@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     title: entry.article.title,
     description: entry.article.description,
     url: "https://joyagoochina.org/joyagoo-return-window-warehouse-storage/",
+    images: ["https://joyagoochina.org/products/3380.webp"],
   },
+  twitter: { card: "summary_large_image", images: ["https://joyagoochina.org/products/3380.webp"] },
 };
 
 export default function JoyagooReturnWindowPage() {
