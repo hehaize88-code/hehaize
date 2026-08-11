@@ -36,6 +36,7 @@ interface ExecutionContext {
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
+const htmlCacheVersion = "seo60-c01-20260811";
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
@@ -152,6 +153,7 @@ function isCacheableHtmlRequest(request: Request, url: URL): boolean {
 function htmlCacheKey(url: URL): Request {
   const normalized = new URL(url.origin);
   normalized.pathname = url.pathname;
+  normalized.searchParams.set("__html_cache_version", htmlCacheVersion);
   return new Request(normalized.toString(), {
     method: "GET",
     headers: { accept: "text/html" },

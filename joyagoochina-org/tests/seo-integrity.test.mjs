@@ -330,7 +330,10 @@ test("production HTML receives edge caching headers and is stored by pathname", 
     );
     await Promise.all(pending);
     assert.equal(stored.length, 1);
-    assert.equal(stored[0].key, "https://joyagoochina.org/qc-guide/");
+    assert.equal(
+      stored[0].key,
+      "https://joyagoochina.org/qc-guide/?__html_cache_version=seo60-c01-20260811",
+    );
   } finally {
     if (originalCaches) {
       Object.defineProperty(globalThis, "caches", originalCaches);
