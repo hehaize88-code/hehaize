@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     title: entry.article.title,
     description: entry.article.description,
     url: "https://joyagoochina.org/joyagoo-volumetric-weight-shipping-cost/",
+    images: ["https://joyagoochina.org/products/3377.webp"],
   },
+  twitter: { card: "summary_large_image", images: ["https://joyagoochina.org/products/3377.webp"] },
 };
 
 export default function JoyagooVolumetricWeightPage() {
