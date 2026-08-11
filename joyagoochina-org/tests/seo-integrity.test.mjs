@@ -21,6 +21,7 @@ const articleRoutes = [
   "how-to-buy-from-taobao-with-joyagoo",
   "joyagoo-fees-explained",
   "joyagoo-parcel-consolidation-packaging-guide",
+  "joyagoo-domestic-shipping-seller-to-warehouse",
   "joyagoo-qc-photo-checklist",
   "joyagoo-return-window-warehouse-storage",
   "joyagoo-volumetric-weight-shipping-cost",
@@ -86,7 +87,27 @@ test("new consolidation guide has complete SEO signals and 1,200–1,800 English
   assert.ok(words.length >= 1200 && words.length <= 1800, `English consolidation guide has ${words.length} visible words`);
 });
 
-test("all 100 article pages expose images, breadcrumbs and direct official sources", async () => {
+test("new domestic shipping guide has complete SEO signals and 1,200–1,800 English words", async () => {
+  const slug = "joyagoo-domestic-shipping-seller-to-warehouse";
+  for (const prefix of localePrefixes) {
+    const path = `${prefix}/${slug}/`;
+    const response = await request(path);
+    assert.equal(response.status, 200, path);
+    const html = await response.text();
+    assert.match(html, /"@type":"Article"/, `${path}: Article schema`);
+    assert.match(html, /"@type":"BreadcrumbList"/, `${path}: breadcrumb schema`);
+    assert.match(html, /<meta property="og:type" content="article"/i, `${path}: Open Graph`);
+    assert.equal(count(html, /\bhreflang=/gi), 11, `${path}: hreflang`);
+    assert.doesNotMatch(html, /href="https:\/\/(?:mgt|mapi)\.joyagoo\.com/i, `${path}: no new platform outbound link`);
+  }
+
+  const englishHtml = await (await request(`/${slug}/`)).text();
+  const body = englishHtml.match(/<div class="article-body">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/)?.[1] ?? "";
+  const words = visibleText(body).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+  assert.ok(words.length >= 1200 && words.length <= 1800, `English domestic shipping guide has ${words.length} visible words`);
+});
+
+test("all 110 article pages expose images and breadcrumbs while legacy source links stay intact", async () => {
   for (const slug of articleRoutes) {
     for (const prefix of localePrefixes) {
       const path = `${prefix}/${slug}/`;
@@ -119,11 +140,13 @@ test("all 100 article pages expose images, breadcrumbs and direct official sourc
         /<figure class="article-cover"><img[^>]+width="\d+"[^>]+height="\d+"/i,
         `${path}: sized cover image`,
       );
-      assert.match(
-        html,
-        /href="https:\/\/mgt\.joyagoo\.com\/help-center\//i,
-        `${path}: official source link`,
-      );
+      if (slug !== "joyagoo-domestic-shipping-seller-to-warehouse") {
+        assert.match(
+          html,
+          /href="https:\/\/mgt\.joyagoo\.com\/help-center\//i,
+          `${path}: official source link`,
+        );
+      }
     }
   }
 });
@@ -138,7 +161,7 @@ test("homepage keeps its English title and H1 while fixing catalogue mappings", 
     html,
     /<h1>Joyagoo Spreadsheet 2026: Find Better Products with Real Buying Guidance<\/h1>/,
   );
-  assert.match(html, /Updated August 9, 2026/);
+  assert.match(html, /Updated August 11, 2026/);
   assert.match(html, /"@type":"Organization"/);
   assert.match(html, /"logo":\{"@type":"ImageObject"/);
 

@@ -220,6 +220,10 @@ function OfficialSourceLinks({
   );
 }
 
+const hidesEditorialSourceLinks = new Set([
+  "joyagoo-domestic-shipping-seller-to-warehouse",
+]);
+
 export function LocalizedHome({ locale }: { locale: Locale }) {
   const copy = translations[locale];
   const categoryNames = localizedCategoryNames[locale];
@@ -673,7 +677,9 @@ function LocalizedGuidePage({
               <p>
                 {guide.sourceLabel}. {details.article.sourceBody}
               </p>
-              <OfficialSourceLinks locale={locale} slug={slug} />
+              {!hidesEditorialSourceLinks.has(slug) && (
+                <OfficialSourceLinks locale={locale} slug={slug} />
+              )}
             </aside>
 
             <div className="article-cta">
@@ -923,7 +929,9 @@ function LocalizedSeoArticlePage({
             <aside className="source-note">
               <strong>{seo.sourceTitle}</strong>
               <p>{entry.sourceBody}</p>
-              <OfficialSourceLinks locale={locale} slug={slug} />
+              {!hidesEditorialSourceLinks.has(slug) && (
+                <OfficialSourceLinks locale={locale} slug={slug} />
+              )}
             </aside>
 
             {entry.relatedLinks && (

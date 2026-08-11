@@ -9,6 +9,7 @@ const guideRoutes = [
   "returns",
 ];
 const articleRoutes = [
+  "joyagoo-domestic-shipping-seller-to-warehouse",
   "joyagoo-parcel-consolidation-packaging-guide",
   "how-to-buy-from-taobao-with-joyagoo",
   "joyagoo-fees-explained",
