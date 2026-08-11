@@ -85,7 +85,15 @@ export default function ProductPage({
 
         <div className="product-detail-hero">
           <div className="product-detail-image">
-            <img src={product.image} alt={product.name} width="900" height="900" fetchPriority="high" />
+            <img
+              src={product.image}
+              alt={product.name}
+              width={product.imageWidth}
+              height={product.imageHeight}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
           </div>
           <div className="product-detail-copy">
             <p className="eyebrow">{copy.directory}</p>
@@ -118,9 +126,9 @@ export default function ProductPage({
                 href={product.href}
                 target="_blank"
                 rel="noopener"
-                data-outbound-product-id={product.id}
-                data-outbound-language={locale}
-                data-outbound-type="product"
+                data-outbound-kind="product"
+                data-product-id={product.id}
+                data-category={product.collection}
               >
                 {copy.openListing}
               </a>
@@ -174,7 +182,14 @@ export default function ProductPage({
                 key={item.id}
               >
                 <div className="product-image">
-                  <img src={item.image} alt={item.name} width="640" height="640" loading="lazy" />
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    width={item.imageWidth}
+                    height={item.imageHeight}
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <span>{common.home.viewProduct}</span>
                 </div>
                 <div className="product-meta">

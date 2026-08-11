@@ -1,6 +1,7 @@
 import {
   categories,
   featuredProducts,
+  getProductById,
   guideCards,
   mainSite,
   productCollections,
@@ -26,24 +27,85 @@ import {
   requireLocalizedField,
 } from "../contentParity";
 import { collectionNames } from "../productContent";
+import {
+  articleImageSchema,
+  getEditorialImage,
+  organizationLogoSchema,
+} from "../editorialAssets";
+import {
+  getOfficialSources,
+  officialSourcesCheckedAt,
+} from "../officialSources";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 
 const localizedCategoryNames: Record<Locale, string[]> = {
-  en: ["Shoes", "Sweatshirts", "T-Shirts", "Jackets", "Pants", "Headwear", "Accessories", "Electronics"],
-  zh: ["鞋类", "卫衣", "T恤", "夹克", "裤装", "帽子", "配饰", "电子产品"],
-  de: ["Schuhe", "Sweatshirts", "T-Shirts", "Jacken", "Hosen", "Kopfbedeckung", "Accessoires", "Elektronik"],
-  pl: ["Buty", "Bluzy", "T-shirty", "Kurtki", "Spodnie", "Nakrycia głowy", "Akcesoria", "Elektronika"],
-  es: ["Calzado", "Sudaderas", "Camisetas", "Chaquetas", "Pantalones", "Gorras", "Accesorios", "Electrónica"],
-  it: ["Scarpe", "Felpe", "T-shirt", "Giacche", "Pantaloni", "Cappelli", "Accessori", "Elettronica"],
-  fr: ["Chaussures", "Sweats", "T-shirts", "Vestes", "Pantalons", "Couvre-chefs", "Accessoires", "Électronique"],
-  pt: ["Calçados", "Moletons", "Camisetas", "Jaquetas", "Calças", "Chapéus", "Acessórios", "Eletrônicos"],
-  ro: ["Pantofi", "Hanorace", "Tricouri", "Jachete", "Pantaloni", "Pălării", "Accesorii", "Electronice"],
-  sv: ["Skor", "Tröjor", "T-shirts", "Jackor", "Byxor", "Huvudbonader", "Accessoarer", "Elektronik"],
+  en: ["Shoes", "Sweatshirts", "T-Shirts", "Jackets", "Pants", "Headwear", "Accessories", "Electronics", "Jerseys", "Other"],
+  zh: ["鞋类", "卫衣", "T恤", "夹克", "裤装", "帽子", "配饰", "电子产品", "球衣", "其他"],
+  de: ["Schuhe", "Sweatshirts", "T-Shirts", "Jacken", "Hosen", "Kopfbedeckung", "Accessoires", "Elektronik", "Trikots", "Sonstiges"],
+  pl: ["Buty", "Bluzy", "T-shirty", "Kurtki", "Spodnie", "Nakrycia głowy", "Akcesoria", "Elektronika", "Koszulki sportowe", "Inne"],
+  es: ["Calzado", "Sudaderas", "Camisetas", "Chaquetas", "Pantalones", "Gorras", "Accesorios", "Electrónica", "Camisetas deportivas", "Otros"],
+  it: ["Scarpe", "Felpe", "T-shirt", "Giacche", "Pantaloni", "Cappelli", "Accessori", "Elettronica", "Maglie sportive", "Altro"],
+  fr: ["Chaussures", "Sweats", "T-shirts", "Vestes", "Pantalons", "Couvre-chefs", "Accessoires", "Électronique", "Maillots", "Autres"],
+  pt: ["Calçados", "Moletons", "Camisetas", "Jaquetas", "Calças", "Chapéus", "Acessórios", "Eletrônicos", "Camisolas esportivas", "Outros"],
+  ro: ["Pantofi", "Hanorace", "Tricouri", "Jachete", "Pantaloni", "Pălării", "Accesorii", "Electronice", "Tricouri sportive", "Altele"],
+  sv: ["Skor", "Tröjor", "T-shirts", "Jackor", "Byxor", "Huvudbonader", "Accessoarer", "Elektronik", "Matchtröjor", "Övrigt"],
 };
 
 const guideSlugs = ["how-to-buy", "qc-guide", "shipping-guide", "returns"];
 const policySlugs = ["about", "editorial-policy", "privacy", "terms"];
+
+const updatedPrefixes: Record<Locale, string> = {
+  en: "Updated",
+  zh: "更新于",
+  de: "Aktualisiert",
+  pl: "Zaktualizowano",
+  es: "Actualizado",
+  it: "Aggiornato",
+  fr: "Mis à jour",
+  pt: "Atualizado",
+  ro: "Actualizat",
+  sv: "Uppdaterad",
+};
+
+const sourceCheckedPrefixes: Record<Locale, string> = {
+  en: "Official links checked",
+  zh: "官方链接核查于",
+  de: "Offizielle Links geprüft am",
+  pl: "Oficjalne linki sprawdzono",
+  es: "Enlaces oficiales comprobados el",
+  it: "Link ufficiali verificati il",
+  fr: "Liens officiels vérifiés le",
+  pt: "Links oficiais verificados em",
+  ro: "Linkuri oficiale verificate la",
+  sv: "Officiella länkar kontrollerade",
+};
+
+const localeTags: Record<Locale, string> = {
+  en: "en-US",
+  zh: "zh-CN",
+  de: "de-DE",
+  pl: "pl-PL",
+  es: "es-ES",
+  it: "it-IT",
+  fr: "fr-FR",
+  pt: "pt-PT",
+  ro: "ro-RO",
+  sv: "sv-SE",
+};
+
+const formatLocalizedDate = (locale: Locale, date: string) =>
+  new Intl.DateTimeFormat(localeTags[locale], {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${date}T00:00:00Z`));
+
+const articleUpdatedLabel = (locale: Locale, modifiedAt: string) =>
+  `${updatedPrefixes[locale]} ${formatLocalizedDate(locale, modifiedAt)}`;
+
+const heroProductIds = ["3367", "3369", "3373", "3357"] as const;
 
 function completeGuide(locale: Locale, slug: string) {
   const english = localizedContent.en.guides[slug];
@@ -108,10 +170,62 @@ function completeFaq(locale: Locale) {
   });
 }
 
+function ArticleCover({
+  slug,
+  title,
+}: {
+  slug: string;
+  title: string;
+}) {
+  const image = getEditorialImage(slug);
+  return (
+    <figure className="article-cover">
+      <img
+        src={image.src}
+        alt={title}
+        width={image.width}
+        height={image.height}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+      />
+    </figure>
+  );
+}
+
+function OfficialSourceLinks({
+  locale,
+  slug,
+}: {
+  locale: Locale;
+  slug: string;
+}) {
+  const sources = getOfficialSources(slug);
+  return (
+    <div className="official-source-links">
+      <small>
+        {sourceCheckedPrefixes[locale]}{" "}
+        {formatLocalizedDate(locale, officialSourcesCheckedAt)}
+      </small>
+      <ul>
+        {sources.map((source) => (
+          <li key={source.href}>
+            <a href={source.href} target="_blank" rel="noopener noreferrer">
+              {source.title} ↗
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export function LocalizedHome({ locale }: { locale: Locale }) {
   const copy = translations[locale];
   const categoryNames = localizedCategoryNames[locale];
   const faq = completeFaq(locale);
+  const latestArticle = getSeoArticleEntries(locale)[0];
+  const homeKicker = `${copy.home.kicker.split("·")[0].trim()} · ${articleUpdatedLabel(locale, latestArticle.modifiedAt)}`;
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -128,12 +242,10 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://joyagoochina.org/#organization",
     name: "Joyagoo China",
     url: "https://joyagoochina.org/",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://joyagoochina.org/joyagoo-logo.png",
-    },
+    logo: organizationLogoSchema,
   };
   const faqSchema = {
     "@context": "https://schema.org",
@@ -150,13 +262,17 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([websiteSchema, organizationSchema, faqSchema]),
+          __html: JSON.stringify([
+            websiteSchema,
+            organizationSchema,
+            faqSchema,
+          ]),
         }}
       />
       <SiteHeader locale={locale} />
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="kicker">{copy.home.kicker}</p>
+          <p className="kicker">{homeKicker}</p>
           <h1>{copy.home.title}</h1>
           <p className="hero-intro">{copy.home.intro}</p>
           <form
@@ -164,6 +280,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
             action={`${mainSite}/AllProducts/`}
             method="get"
             target="_blank"
+            data-outbound-kind="search"
           >
             <label className="sr-only" htmlFor={`product-search-${locale}`}>
               {copy.home.search}
@@ -190,30 +307,40 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
             <strong>{copy.home.researched}</strong>
             <span>{copy.home.buyingGuide}</span>
           </div>
-          {[4, 2, 1, 6].map((productIndex, index) => (
-            <a
-              className={`collage-item ${
-                ["collage-main", "collage-top", "collage-side", "collage-watch"][
-                  index
-                ]
-              }`}
-              href={localizePath(
-                locale,
-                `/product/${products[productIndex].slug}/`,
-              )}
-              key={products[productIndex].id}
-            >
-              <img
-                src={products[productIndex].image}
-                alt={products[productIndex].name}
-                width="640"
-                height="640"
-                loading={index === 0 ? "eager" : "lazy"}
-                fetchPriority={index === 0 ? "high" : "auto"}
-              />
-              <span>{products[productIndex].name}</span>
-            </a>
-          ))}
+          {heroProductIds.map(
+            (productId, index) => {
+              const product = getProductById(productId);
+              if (!product) return null;
+              return (
+                <a
+                  className={`collage-item ${
+                    [
+                      "collage-main",
+                      "collage-top",
+                      "collage-side",
+                      "collage-watch",
+                    ][index]
+                  }`}
+                  href={localizePath(
+                    locale,
+                    `/product/${product.slug}/`,
+                  )}
+                  key={product.id}
+                >
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    width={product.imageWidth}
+                    height={product.imageHeight}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    fetchPriority={index === 0 ? "high" : "auto"}
+                    decoding="async"
+                  />
+                  <span>{product.name}</span>
+                </a>
+              );
+            },
+          )}
           <div className="year-stamp">2026</div>
           <div className="qc-note">{copy.home.selectedProducts}</div>
         </div>
@@ -225,6 +352,8 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
             href={category.href}
             target="_blank"
             rel="noopener"
+            data-outbound-kind="category"
+            data-category={category.name}
             key={category.name}
           >
             <span>{category.glyph}</span>
@@ -317,7 +446,7 @@ function SeoArticleFeature({ locale }: { locale: Locale }) {
         >
           <div className="seo-feature-meta">
             <span>{seo.latestLabel}</span>
-            <span>{seo.updatedLabel}</span>
+            <span>{articleUpdatedLabel(locale, featured.modifiedAt)}</span>
           </div>
           <h3>{featured.article.title}</h3>
           <p>{featured.article.description}</p>
@@ -358,6 +487,7 @@ export function ProductGrid({
   items?: Product[];
 }) {
   const copy = translations[locale];
+
   return (
     <div className="product-grid">
       {items.map((product, index) => (
@@ -367,7 +497,14 @@ export function ProductGrid({
           key={product.id}
         >
           <div className="product-image">
-            <img src={product.image} alt={product.name} width="640" height="640" loading="lazy" />
+            <img
+              src={product.image}
+              alt={product.name}
+              width={product.imageWidth}
+              height={product.imageHeight}
+              loading="lazy"
+              decoding="async"
+            />
             <span>{copy.home.viewProduct}</span>
           </div>
           <div className="product-meta">
@@ -375,7 +512,7 @@ export function ProductGrid({
             <h3>{product.name}</h3>
             <div>
               <strong>{product.price}</strong>
-              <span>{copy.common.disclaimer ? `ID ${product.id}` : product.id}</span>
+              <span>ID {product.id}</span>
             </div>
           </div>
         </a>
@@ -424,37 +561,59 @@ function LocalizedGuidePage({
   const details = localizedContent[locale];
   const page = copy.pages[slug];
   const guide = completeGuide(locale, slug);
+  const routePath = localizePath(locale, `/${slug}/`);
+  const absoluteUrl = `https://joyagoochina.org${routePath}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: page.title,
     description: page.intro,
+    image: articleImageSchema(slug, page.title),
     dateModified: "2026-07-30",
     datePublished: "2026-07-29",
     inLanguage: locale,
-    image: ["https://joyagoochina.org/products/3378.webp"],
     author: { "@type": "Organization", name: "Joyagoo China Editorial" },
     publisher: {
       "@type": "Organization",
       name: "Joyagoo China",
       url: "https://joyagoochina.org/",
+      logo: organizationLogoSchema,
     },
+    mainEntityOfPage: absoluteUrl,
   };
-  const guideBreadcrumbSchema = {
+  const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: details.article.home, item: `https://joyagoochina.org${localizePath(locale, "/")}` },
-      { "@type": "ListItem", position: 2, name: details.article.guides, item: `https://joyagoochina.org${localizePath(locale, "/guides/")}` },
-      { "@type": "ListItem", position: 3, name: page.title, item: `https://joyagoochina.org${localizePath(locale, `/${slug}/`)}` },
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: details.article.home,
+        item: `https://joyagoochina.org${localizePath(locale, "/")}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: details.article.guides,
+        item: `https://joyagoochina.org${localizePath(locale, "/guides/")}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: page.title,
+        item: absoluteUrl,
+      },
     ],
   };
-
   return (
     <main className="guide-page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, guideBreadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <SiteHeader locale={locale} />
       <article>
@@ -477,6 +636,8 @@ function LocalizedGuidePage({
             <span>{details.article.independent}</span>
           </div>
         </header>
+
+        <ArticleCover slug={slug} title={page.title} />
 
         <aside className="article-facts" aria-label={details.article.keyFacts}>
           {guide.facts.map((fact) => (
@@ -512,6 +673,7 @@ function LocalizedGuidePage({
               <p>
                 {guide.sourceLabel}. {details.article.sourceBody}
               </p>
+              <OfficialSourceLinks locale={locale} slug={slug} />
             </aside>
 
             <div className="article-cta">
@@ -525,6 +687,7 @@ function LocalizedGuidePage({
                 href={`${mainSite}/AllProducts/`}
                 target="_blank"
                 rel="noopener"
+                data-outbound-kind="all-products"
               >
                 {details.article.explore}
               </a>
@@ -613,8 +776,8 @@ function LocalizedSeoArticleIndex({ locale }: { locale: Locale }) {
               <h2>{entry.article.title}</h2>
               <p>{entry.article.description}</p>
               <div className="seo-feature-meta">
-                <span>{seo.updatedLabel}</span>
-                <span>{seo.readTime}</span>
+                <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
+                <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
               </div>
               <strong>{seo.readArticle}</strong>
             </div>
@@ -638,26 +801,15 @@ function LocalizedSeoArticlePage({
   const entry = getSeoArticleEntry(locale, slug);
   if (!entry) return null;
   const article = entry.article;
-  const articleUrl = locale === "en"
-    ? `https://joyagoochina.org/${entry.slug}/`
-    : `https://joyagoochina.org/${locale}/${entry.slug}/`;
-  const articleImage = `https://joyagoochina.org${products[
-    ({
-      "joyagoo-fees-explained": 0,
-      "joyagoo-qc-photo-checklist": 4,
-      "joyagoo-volumetric-weight-shipping-cost": 7,
-      "joyagoo-return-window-warehouse-storage": 2,
-    } as Record<string, number>)[entry.slug] ?? 0
-  ].image}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    datePublished: "2026-07-30",
-    dateModified: "2026-07-30",
+    image: articleImageSchema(slug, article.title),
+    datePublished: entry.publishedAt,
+    dateModified: entry.modifiedAt,
     inLanguage: locale,
-    image: [articleImage],
     wordCount:
       locale === "en"
         ? article.sections
@@ -670,16 +822,35 @@ function LocalizedSeoArticlePage({
       "@type": "Organization",
       name: "Joyagoo China",
       url: "https://joyagoochina.org/",
+      logo: organizationLogoSchema,
     },
-    mainEntityOfPage: articleUrl,
+    mainEntityOfPage:
+      locale === "en"
+        ? `https://joyagoochina.org/${entry.slug}/`
+        : `https://joyagoochina.org/${locale}/${entry.slug}/`,
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: translations[locale].common.home, item: `https://joyagoochina.org${localizePath(locale, "/")}` },
-      { "@type": "ListItem", position: 2, name: seo.navLabel, item: `https://joyagoochina.org${localizePath(locale, "/articles/")}` },
-      { "@type": "ListItem", position: 3, name: article.title, item: articleUrl },
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: translations[locale].common.home,
+        item: `https://joyagoochina.org${localizePath(locale, "/")}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: seo.navLabel,
+        item: `https://joyagoochina.org${localizePath(locale, "/articles/")}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: articleSchema.mainEntityOfPage,
+      },
     ],
   };
 
@@ -687,7 +858,11 @@ function LocalizedSeoArticlePage({
     <main className="guide-page seo-article-page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <SiteHeader locale={locale} />
       <article>
@@ -705,11 +880,13 @@ function LocalizedSeoArticlePage({
           <h1>{article.title}</h1>
           <p className="article-intro">{article.description}</p>
           <div className="article-meta">
-            <span>{seo.updatedLabel}</span>
-            <span>{seo.readTime}</span>
+            <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
+            <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
             <span>{translations[locale].common.disclaimer}</span>
           </div>
         </header>
+
+        <ArticleCover slug={slug} title={article.title} />
 
         <aside className="article-facts" aria-label={article.title}>
           {article.facts.map((fact) => (
@@ -746,12 +923,31 @@ function LocalizedSeoArticlePage({
             <aside className="source-note">
               <strong>{seo.sourceTitle}</strong>
               <p>{entry.sourceBody}</p>
-              <p>
-                <a href={entry.slug === "joyagoo-return-window-warehouse-storage" ? "https://mgt.joyagoo.com/help-center/terms-of-promised-returns-with-no-reasons/" : entry.slug === "joyagoo-volumetric-weight-shipping-cost" ? "https://mgt.joyagoo.com/help-center/value-added-services/" : "https://mgt.joyagoo.com/help-center/shopping-assistant-guidance/"} target="_blank" rel="noopener noreferrer">
-                  Joyagoo official policy source ↗
-                </a>{" "}· Checked 11 August 2026
-              </p>
+              <OfficialSourceLinks locale={locale} slug={slug} />
             </aside>
+
+            {entry.relatedLinks && (
+              <aside className="source-note related-reading">
+                <strong>{translations[locale].common.guides}</strong>
+                <p>
+                  {entry.relatedLinks.map((relatedSlug, index) => {
+                    const label =
+                      relatedSlug === "articles"
+                        ? seo.navLabel
+                        : translations[locale].pages[relatedSlug]?.title ??
+                          relatedSlug;
+                    return (
+                      <span key={relatedSlug}>
+                        {index > 0 ? " · " : ""}
+                        <a href={localizePath(locale, `/${relatedSlug}/`)}>
+                          {label}
+                        </a>
+                      </span>
+                    );
+                  })}
+                </p>
+              </aside>
+            )}
 
             <div className="article-cta">
               <div>
@@ -764,6 +960,7 @@ function LocalizedSeoArticlePage({
                 href={`${mainSite}/AllProducts/`}
                 target="_blank"
                 rel="noopener"
+                data-outbound-kind="all-products"
               >
                 {seo.ctaButton}
               </a>
@@ -875,6 +1072,7 @@ export function LocalizedPage({
             href={`${mainSite}/AllProducts/`}
             target="_blank"
             rel="noopener"
+            data-outbound-kind="all-products"
           >
             {copy.home.browseAll}
           </a>
@@ -889,6 +1087,8 @@ export function LocalizedPage({
                 href={category.href}
                 target="_blank"
                 rel="noopener"
+                data-outbound-kind="category"
+                data-category={category.name}
                 key={category.name}
               >
                 <span>{category.glyph}</span>

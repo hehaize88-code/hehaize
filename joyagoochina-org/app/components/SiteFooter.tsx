@@ -14,7 +14,14 @@ export default function SiteFooter({
         className="brand brand-image footer-brand"
         href={localizePath(locale, "/")}
       >
-        <img src="/joyagoo-logo.png" alt="JoyaGoo" width="220" height="64" loading="lazy" />
+        <img
+          src="/joyagoo-logo.png"
+          alt="JoyaGoo"
+          width={768}
+          height={235}
+          loading="lazy"
+          decoding="async"
+        />
       </a>
       <p>{copy.common.footer}</p>
       <nav aria-label={copy.common.footer}>
@@ -32,10 +39,18 @@ export default function SiteFooter({
         <a href={localizePath(locale, "/returns/")}>
           {copy.common.returns}
         </a>
-        <a href={localizePath(locale, "/about/")}>About</a>
-        <a href={localizePath(locale, "/editorial-policy/")}>Editorial Policy</a>
-        <a href={localizePath(locale, "/privacy/")}>Privacy</a>
-        <a href={localizePath(locale, "/terms/")}>Terms</a>
+        <a href={localizePath(locale, "/about/")}>
+          {copy.pages.about.title}
+        </a>
+        <a href={localizePath(locale, "/editorial-policy/")}>
+          {copy.pages["editorial-policy"].title}
+        </a>
+        <a href={localizePath(locale, "/privacy/")}>
+          {copy.pages.privacy.title}
+        </a>
+        <a href={localizePath(locale, "/terms/")}>
+          {copy.pages.terms.title}
+        </a>
       </nav>
       <small>© 2026 Joyagoo China. {copy.common.disclaimer}</small>
     </footer>

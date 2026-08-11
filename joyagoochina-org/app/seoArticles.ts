@@ -35,9 +35,9 @@ export type SeoArticleCopy = {
 };
 
 const en: SeoArticleCopy = {
-  navLabel: "Articles",
+  navLabel: "Buying Research",
   indexEyebrow: "INDEPENDENT RESEARCH",
-  indexTitle: "Joyagoo SEO articles built around real buying questions",
+  indexTitle: "Joyagoo buying research for real shopping questions",
   indexIntro:
     "Long-form, fact-checked guides about fees, QC, returns, warehouse decisions and international parcels—not rewritten advertising copy.",
   latestLabel: "LATEST COST GUIDE",
@@ -144,9 +144,9 @@ const en: SeoArticleCopy = {
 const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   zh: {
     ...en,
-    navLabel: "SEO文章",
+    navLabel: "购买研究",
     indexEyebrow: "独立事实调研",
-    indexTitle: "围绕真实购买问题撰写的 Joyagoo SEO 文章",
+    indexTitle: "围绕真实购买问题整理的 Joyagoo 购买研究",
     indexIntro: "长篇内容聚焦费用、质检、退货、仓储和国际包裹，不写空泛广告。",
     latestLabel: "最新费用指南",
     readArticle: "阅读完整文章 →",
@@ -226,9 +226,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   de: {
     ...en,
-    navLabel: "SEO-Artikel",
+    navLabel: "Kaufrecherche",
     indexEyebrow: "UNABHÄNGIGE RECHERCHE",
-    indexTitle: "Joyagoo-SEO-Artikel zu echten Fragen vor dem Kauf",
+    indexTitle: "Joyagoo-Kaufrecherche zu echten Fragen vor dem Kauf",
     indexIntro: "Ausführliche, geprüfte Leitfäden zu Gebühren, QC, Rückgabe, Lager und internationalen Paketen.",
     latestLabel: "NEUER KOSTENLEITFADEN",
     readArticle: "Vollständigen Artikel lesen →",
@@ -284,9 +284,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   pl: {
     ...en,
-    navLabel: "Artykuły SEO",
+    navLabel: "Poradniki zakupowe",
     indexEyebrow: "NIEZALEŻNY RESEARCH",
-    indexTitle: "Artykuły SEO o Joyagoo odpowiadające na realne pytania kupujących",
+    indexTitle: "Badania zakupowe Joyagoo odpowiadające na realne pytania",
     indexIntro: "Długie, sprawdzone poradniki o opłatach, QC, zwrotach, magazynie i przesyłkach międzynarodowych.",
     latestLabel: "NAJNOWSZY PORADNIK KOSZTOWY",
     readArticle: "Przeczytaj cały artykuł →",
@@ -342,9 +342,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   es: {
     ...en,
-    navLabel: "Artículos SEO",
+    navLabel: "Investigación de compra",
     indexEyebrow: "INVESTIGACIÓN INDEPENDIENTE",
-    indexTitle: "Artículos SEO sobre Joyagoo basados en dudas reales de compra",
+    indexTitle: "Investigación sobre Joyagoo para dudas reales de compra",
     indexIntro: "Guías largas y verificadas sobre tarifas, QC, devoluciones, almacén y paquetes internacionales.",
     latestLabel: "NUEVA GUÍA DE COSTES",
     readArticle: "Leer el artículo completo →",
@@ -400,9 +400,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   it: {
     ...en,
-    navLabel: "Articoli SEO",
+    navLabel: "Ricerca d’acquisto",
     indexEyebrow: "RICERCA INDIPENDENTE",
-    indexTitle: "Articoli SEO su Joyagoo basati su vere domande d’acquisto",
+    indexTitle: "Ricerca su Joyagoo per vere domande d’acquisto",
     indexIntro: "Guide lunghe e verificate su costi, QC, resi, magazzino e pacchi internazionali.",
     latestLabel: "NUOVA GUIDA AI COSTI",
     readArticle: "Leggi l’articolo completo →",
@@ -458,9 +458,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   fr: {
     ...en,
-    navLabel: "Articles",
+    navLabel: "Recherche d’achat",
     indexEyebrow: "RECHERCHE INDÉPENDANTE",
-    indexTitle: "Des articles SEO Joyagoo fondés sur de vraies questions d’achat",
+    indexTitle: "Recherche Joyagoo pour de vraies questions d’achat",
     indexIntro: "Des guides longs et vérifiés sur les frais, le QC, les retours, l’entrepôt et les colis internationaux.",
     latestLabel: "NOUVEAU GUIDE DES COÛTS",
     readArticle: "Lire l’article complet →",
@@ -516,9 +516,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   pt: {
     ...en,
-    navLabel: "Artigos SEO",
+    navLabel: "Pesquisa de compra",
     indexEyebrow: "PESQUISA INDEPENDENTE",
-    indexTitle: "Artigos SEO sobre Joyagoo baseados em dúvidas reais de compra",
+    indexTitle: "Pesquisa sobre Joyagoo para dúvidas reais de compra",
     indexIntro: "Guias longos e verificados sobre taxas, QC, devoluções, armazém e encomendas internacionais.",
     latestLabel: "NOVO GUIA DE CUSTOS",
     readArticle: "Ler artigo completo →",
@@ -574,9 +574,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   ro: {
     ...en,
-    navLabel: "Articole SEO",
+    navLabel: "Cercetare de cumpărare",
     indexEyebrow: "CERCETARE INDEPENDENTĂ",
-    indexTitle: "Articole SEO despre Joyagoo bazate pe întrebări reale de cumpărare",
+    indexTitle: "Cercetare Joyagoo pentru întrebări reale de cumpărare",
     indexIntro: "Ghiduri lungi și verificate despre taxe, QC, retururi, depozit și colete internaționale.",
     latestLabel: "GHID NOU DE COSTURI",
     readArticle: "Citește articolul complet →",
@@ -632,9 +632,9 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   sv: {
     ...en,
-    navLabel: "SEO-artiklar",
+    navLabel: "Köpresearch",
     indexEyebrow: "OBEROENDE RESEARCH",
-    indexTitle: "Joyagoo SEO-artiklar byggda kring verkliga köpfrågor",
+    indexTitle: "Joyagoo-köpresearch för verkliga köpfrågor",
     indexIntro: "Långa, faktakontrollerade guider om avgifter, QC, returer, lager och internationella paket.",
     latestLabel: "NY KOSTNADSGUIDE",
     readArticle: "Läs hela artikeln →",

@@ -1,35 +1,30 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
+import { editorialSocialMetadata } from "../editorialAssets";
 import { getSeoArticleEntry } from "../seoArticleLibrary";
 import { languageAlternates } from "../seoAlternates";
 
-const entry = getSeoArticleEntry(
-  "en",
-  "joyagoo-volumetric-weight-shipping-cost",
-)!;
+const slug = "joyagoo-volumetric-weight-shipping-cost";
+const entry = getSeoArticleEntry("en", slug)!;
 
 export const metadata: Metadata = {
   title: "Joyagoo Shipping Cost & Volumetric Weight Guide",
   description: entry.article.description,
   keywords: entry.keywords,
-  alternates: languageAlternates(
-    "/joyagoo-volumetric-weight-shipping-cost/",
-  ),
-  openGraph: {
-    type: "article",
+  alternates: languageAlternates(`/${slug}/`),
+  ...editorialSocialMetadata({
+    slug,
     title: entry.article.title,
     description: entry.article.description,
-    url: "https://joyagoochina.org/joyagoo-volumetric-weight-shipping-cost/",
-    images: ["https://joyagoochina.org/products/3377.webp"],
-  },
-  twitter: { card: "summary_large_image", images: ["https://joyagoochina.org/products/3377.webp"] },
+    url: `https://joyagoochina.org/${slug}/`,
+  }),
 };
 
 export default function JoyagooVolumetricWeightPage() {
   return (
     <LocalizedPage
       locale="en"
-      slug="joyagoo-volumetric-weight-shipping-cost"
+      slug={slug}
     />
   );
 }

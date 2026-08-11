@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
+import { editorialSocialMetadata } from "../editorialAssets";
 import { seoArticleCopy } from "../seoArticles";
 import { languageAlternates } from "../seoAlternates";
 
+const slug = "joyagoo-fees-explained";
+const title = "Joyagoo Fees: Service, Warehouse & Shipping Costs";
+const description = seoArticleCopy.en.article.description;
+
 export const metadata: Metadata = {
-  title: "Joyagoo Fees: Service, Warehouse & Shipping Costs",
-  description: seoArticleCopy.en.article.description,
+  title,
+  description,
   keywords: [
     "joyagoo fees",
     "joyagoo service fee",
@@ -14,17 +19,15 @@ export const metadata: Metadata = {
     "joyagoo rehearsal packing",
     "joyagoo volumetric weight",
   ],
-  alternates: languageAlternates("/joyagoo-fees-explained/"),
-  openGraph: {
-    type: "article",
+  alternates: languageAlternates(`/${slug}/`),
+  ...editorialSocialMetadata({
+    slug,
     title: seoArticleCopy.en.article.title,
-    description: seoArticleCopy.en.article.description,
-    url: "https://joyagoochina.org/joyagoo-fees-explained/",
-    images: ["https://joyagoochina.org/products/3382.webp"],
-  },
-  twitter: { card: "summary_large_image", images: ["https://joyagoochina.org/products/3382.webp"] },
+    description,
+    url: `https://joyagoochina.org/${slug}/`,
+  }),
 };
 
 export default function JoyagooFeesPage() {
-  return <LocalizedPage locale="en" slug="joyagoo-fees-explained" />;
+  return <LocalizedPage locale="en" slug={slug} />;
 }

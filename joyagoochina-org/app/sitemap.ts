@@ -8,6 +8,7 @@ import {
 import { localizedRoutePath } from "./seoAlternates";
 
 const site = "https://joyagoochina.org";
+const siteTemplateModifiedAt = "2026-08-11";
 
 type SitemapPage = {
   path: string;
@@ -121,7 +122,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const localizedPath = localizedRoutePath(language.code, page.path);
       return {
         url: `${site}${localizedPath}`,
-        lastModified: new Date(page.lastModified),
+        lastModified: new Date(
+          page.lastModified > siteTemplateModifiedAt
+            ? page.lastModified
+            : siteTemplateModifiedAt,
+        ),
         changeFrequency: page.changeFrequency,
         priority: page.priority,
         alternates: {

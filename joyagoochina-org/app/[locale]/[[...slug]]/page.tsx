@@ -6,10 +6,12 @@ import {
 } from "../../components/LocalizedExperience";
 import ProductPage from "../../components/ProductPage";
 import { getProductBySlug, products } from "../../data";
+import { editorialSocialMetadata } from "../../editorialAssets";
 import {
   isLocale,
   languages,
   translations,
+  type Locale,
 } from "../../i18n";
 import { languageAlternates, localizedRoutePath } from "../../seoAlternates";
 import { seoArticleCopy } from "../../seoArticles";
@@ -34,6 +36,18 @@ const routeSlugs = [
   "articles",
   ...seoArticleSlugs,
 ];
+
+const localizedHomeMetadataTitles: Partial<Record<Locale, string>> = {
+  zh: "Joyagoo 选品表 2026",
+  de: "Joyagoo Produkttabelle 2026",
+  pl: "Arkusz Joyagoo 2026",
+  es: "Hoja de productos Joyagoo 2026",
+  it: "Catalogo prodotti Joyagoo 2026",
+  fr: "Tableur produits Joyagoo 2026",
+  pt: "Planilha de produtos Joyagoo 2026",
+  ro: "Tabel produse Joyagoo 2026",
+  sv: "Joyagoo produktkalkylblad 2026",
+};
 
 export function generateStaticParams() {
   return languages
@@ -79,6 +93,20 @@ export async function generateMetadata({
         title,
         description,
         url: `https://joyagoochina.org${localizedRoutePath(locale, routePath)}`,
+        siteName: "Joyagoo China",
+        images: [
+          {
+            url: `https://joyagoochina.org${localizedProduct.image}`,
+            width: localizedProduct.imageWidth,
+            height: localizedProduct.imageHeight,
+            alt: localizedProduct.name,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title,
+        description,
         images: [`https://joyagoochina.org${localizedProduct.image}`],
       },
     };
@@ -105,28 +133,30 @@ export async function generateMetadata({
   if (!page) return {};
 
   const basePath = route ? `/${route}/` : "/";
-  return {
-    title: page.title,
+  const absoluteUrl = `https://joyagoochina.org${localizedRoutePath(locale, basePath)}`;
+  const isArticle = Boolean(
+    seoArticle ||
+      (route && ["how-to-buy", "qc-guide", "shipping-guide", "returns"].includes(route)),
+  );
+  const metadata: Metadata = {
+    title: route
+      ? page.title
+      : { absolute: localizedHomeMetadataTitles[locale] ?? page.title },
     description: page.intro,
     keywords: seoArticle?.keywords,
     alternates: {
       ...languageAlternates(basePath),
       canonical: localizedRoutePath(locale, basePath),
     },
-    openGraph: {
-      type: seoArticle ? "article" : "website",
+    ...editorialSocialMetadata({
+      slug: route,
       title: page.title,
       description: page.intro,
-      url: `https://joyagoochina.org${localizedRoutePath(locale, basePath)}`,
-      images: ["https://joyagoochina.org/joyagoo-logo.png"],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: page.title,
-      description: page.intro,
-      images: ["https://joyagoochina.org/joyagoo-logo.png"],
-    },
+      url: absoluteUrl,
+      type: isArticle ? "article" : "website",
+    }),
   };
+  return metadata;
 }
 
 export default async function LocalizedRoute({

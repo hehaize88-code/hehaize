@@ -31,6 +31,20 @@ export async function generateMetadata({
       title,
       description,
       url: `https://joyagoochina.org/product/${product.slug}/`,
+      siteName: "Joyagoo China",
+      images: [
+        {
+          url: `https://joyagoochina.org${product.image}`,
+          width: product.imageWidth,
+          height: product.imageHeight,
+          alt: product.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
       images: [`https://joyagoochina.org${product.image}`],
     },
     twitter: { card: "summary_large_image", images: [`https://joyagoochina.org${product.image}`] },

@@ -17,7 +17,16 @@ export type Product = {
   popularity: string;
   href: string;
   image: string;
+  imageWidth: number;
+  imageHeight: number;
   checkedAt: string;
+};
+
+const productImageDimensions: Record<string, [number, number]> = {
+  "3348": [1280, 673],
+  "3358": [640, 427],
+  "3366": [640, 640],
+  "3382": [640, 480],
 };
 
 const product = (
@@ -29,22 +38,27 @@ const product = (
   priceCny: number,
   views: number,
   extension: "webp" | "jpg" | "gif" = "webp",
-): Product => ({
-  id,
-  slug,
-  name,
-  label,
-  collection,
-  price: `$${(priceCny / 6.77).toFixed(2)}`,
-  priceCny,
-  popularity: `${views} finds`,
-  href: `${mainSite}/AllProducts/${id}.html`,
-  image: `/products/${id}.${extension}`,
-  checkedAt: "2026-07-30",
-});
+): Product => {
+  const [imageWidth, imageHeight] = productImageDimensions[id] ?? [750, 750];
+  return {
+    id,
+    slug,
+    name,
+    label,
+    collection,
+    price: `$${(priceCny / 6.77).toFixed(2)}`,
+    priceCny,
+    popularity: `${views} finds`,
+    href: `${mainSite}/AllProducts/${id}.html`,
+    image: `/products/${id}.${extension}`,
+    imageWidth,
+    imageHeight,
+    checkedAt: "2026-07-30",
+  };
+};
 
 // Names, IDs, source prices, images and destination URLs were checked against
-// the live CNBuy Sheet product directory on 30 July 2026. USD figures are
+// the live linked product directory on 30 July 2026. USD figures are
 // clearly presented as references and are not checkout quotes.
 export const products: Product[] = [
   product("3382", "louis-vuitton-wallet-3382", "Louis Vuitton Wallet", "Wallet", "Bags & Accessories", 115, 548),
@@ -59,7 +73,7 @@ export const products: Product[] = [
   product("3373", "designer-hats-3373", "Designer Hats — Multiple Brands", "Headwear", "Bags & Accessories", 203, 599, "jpg"),
   product("3372", "designer-snow-goggles-3372", "Designer Snow Goggles", "Goggles", "Bags & Accessories", 340, 546),
   product("3371", "gucci-hat-3371", "Gucci Hat", "Headwear", "Bags & Accessories", 75, 909),
-  product("3370", "balenciaga-accessory-3370", "Balenciaga Accessory", "Accessory", "Bags & Accessories", 90, 515, "gif"),
+  product("3370", "balenciaga-accessory-3370", "Balenciaga Accessory", "Accessory", "Bags & Accessories", 90, 515),
   product("3369", "off-white-hoodies-3369", "Off-White Hoodies — 39 Styles", "Hoodie", "Clothing", 299.52, 583),
   product("3368", "corteiz-c-star-sweater-3368", "Corteiz C Star Sweater — 15 Styles", "Sweater", "Clothing", 363.48, 915),
   product("3367", "numeris-rick-owens-high-tops-3367", "NUMERIS / Rick Owens High-Top Shoes", "High-top shoes", "Footwear", 455, 657),
@@ -119,6 +133,9 @@ export const productCollections: Array<{
 export const getProductBySlug = (slug: string) =>
   products.find((item) => item.slug === slug);
 
+export const getProductById = (id: string) =>
+  products.find((item) => item.id === id);
+
 export const categories = [
   { name: "Shoes", glyph: "↗", href: `${mainSite}/shoes/` },
   {
@@ -132,8 +149,8 @@ export const categories = [
   { name: "Headwear", glyph: "H", href: `${mainSite}/headwear/` },
   { name: "Accessories", glyph: "A", href: `${mainSite}/accessories/` },
   { name: "Electronics", glyph: "E", href: `${mainSite}/electronics/` },
-  { name: "Jerseys", glyph: "J", href: `${mainSite}/jerseys/` },
-  { name: "Other", glyph: "+", href: `${mainSite}/AllProducts/` },
+  { name: "Jerseys", glyph: "J", href: `${mainSite}/Jersey/` },
+  { name: "Other", glyph: "+", href: `${mainSite}/other-stuff/` },
 ];
 
 export const guideCards = [

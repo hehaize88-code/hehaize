@@ -32,7 +32,7 @@ export default function NotFound() {
             Product directory
           </Link>
           <Link className="button secondary" href="/articles/">
-            SEO articles
+            Buying research
           </Link>
           <Link className="button secondary" href="/faq/">
             FAQ

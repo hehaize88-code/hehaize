@@ -1,5 +1,6 @@
 const primaryHost = "joyagoochina.org";
 const localeCodes = new Set([
+  "en",
   "zh",
   "de",
   "pl",
@@ -10,6 +11,121 @@ const localeCodes = new Set([
   "ro",
   "sv",
 ]);
+const browserHtmlCacheControl = "public, max-age=0";
+const edgeHtmlCacheControl =
+  "public, max-age=21600, stale-while-revalidate=86400";
+const outboundEndpoint = "/api/outbound-click";
+const maxOutboundPayloadBytes = 4096;
+
+const jsonResponse = (message, status) =>
+  new Response(JSON.stringify({ error: message }), {
+    status,
+    headers: {
+      "cache-control": "no-store",
+      "content-type": "application/json; charset=utf-8",
+    },
+  });
+
+const cleanText = (value, maxLength) => {
+  if (typeof value !== "string") return undefined;
+  const cleaned = value.trim().slice(0, maxLength);
+  return cleaned || undefined;
+};
+
+async function handleOutboundClick(request, requestUrl) {
+  if (request.method !== "POST") {
+    return new Response(null, {
+      status: 405,
+      headers: { allow: "POST", "cache-control": "no-store" },
+    });
+  }
+
+  const origin = request.headers.get("origin");
+  if (origin) {
+    try {
+      if (new URL(origin).origin !== requestUrl.origin) {
+        return jsonResponse("Cross-origin analytics requests are not accepted.", 403);
+      }
+    } catch {
+      return jsonResponse("Invalid request origin.", 403);
+    }
+  }
+
+  const declaredLength = Number(request.headers.get("content-length") ?? 0);
+  if (declaredLength > maxOutboundPayloadBytes) {
+    return jsonResponse("Analytics payload is too large.", 413);
+  }
+
+  const rawBody = await request.text();
+  if (new TextEncoder().encode(rawBody).byteLength > maxOutboundPayloadBytes) {
+    return jsonResponse("Analytics payload is too large.", 413);
+  }
+
+  let body;
+  try {
+    body = JSON.parse(rawBody);
+  } catch {
+    return jsonResponse("Invalid analytics payload.", 400);
+  }
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    return jsonResponse("Invalid analytics payload.", 400);
+  }
+
+  const rawDestination = cleanText(body.destination, 500);
+  if (!rawDestination) return jsonResponse("Missing destination.", 400);
+
+  let destination;
+  try {
+    destination = new URL(rawDestination);
+  } catch {
+    return jsonResponse("Invalid destination.", 400);
+  }
+  if (!new Set(["cnbuycha.com", "www.cnbuycha.com"]).has(destination.hostname)) {
+    return jsonResponse("Destination is not the linked product store.", 400);
+  }
+
+  const sourcePage = cleanText(body.source_page, 300);
+  const language = cleanText(body.language, 12);
+  const productId = cleanText(body.product_id, 32);
+  const category = cleanText(body.category, 80);
+  const linkKind = cleanText(body.link_kind, 40) ?? "link";
+
+  console.log(
+    JSON.stringify({
+      type: "joyagoo_outbound_click",
+      destination: `${destination.origin}${destination.pathname}`,
+      source_page: sourcePage?.startsWith("/") ? sourcePage : "/",
+      language: language && localeCodes.has(language) ? language : "en",
+      link_kind: linkKind,
+      ...(productId ? { product_id: productId } : {}),
+      ...(category ? { category } : {}),
+    }),
+  );
+
+  return new Response(null, {
+    status: 204,
+    headers: { "cache-control": "no-store" },
+  });
+}
+
+const isCacheableHtmlRequest = (request, url) =>
+  request.method === "GET" &&
+  url.hostname === primaryHost &&
+  (url.pathname === "/" || url.pathname.endsWith("/")) &&
+  !url.pathname.startsWith("/api/") &&
+  !request.headers.has("authorization") &&
+  !request.headers.has("range");
+
+const htmlCacheKey = (url) => {
+  const normalized = new URL(url.origin);
+  normalized.pathname = url.pathname;
+  return new Request(normalized.toString(), {
+    method: "GET",
+    headers: { accept: "text/html" },
+  });
+};
+
+const htmlCache = () => globalThis.caches?.default;
 const notFoundHtml = `<!doctype html>
 <html lang="en">
   <head>
@@ -40,7 +156,7 @@ const notFoundHtml = `<!doctype html>
 </html>`;
 
 const worker = {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     if (url.hostname === `www.${primaryHost}`) {
@@ -50,6 +166,28 @@ const worker = {
 
     if (url.pathname === "/sitemap-main.xml") {
       return Response.redirect(`https://${primaryHost}/sitemap.xml`, 301);
+    }
+
+    if (url.pathname === outboundEndpoint) {
+      return handleOutboundClick(request, url);
+    }
+
+    const cacheableHtml = isCacheableHtmlRequest(request, url);
+    const cacheKey = cacheableHtml ? htmlCacheKey(url) : undefined;
+    const edgeCache = cacheKey ? htmlCache() : undefined;
+    if (cacheKey && edgeCache) {
+      try {
+        const cached = await edgeCache.match(cacheKey);
+        if (cached) return cached;
+      } catch (error) {
+        console.error(
+          JSON.stringify({
+            type: "joyagoo_html_cache_match_error",
+            path: url.pathname,
+            message: error instanceof Error ? error.message : String(error),
+          }),
+        );
+      }
     }
 
     let response = await env.ASSETS.fetch(request);
@@ -74,11 +212,42 @@ const worker = {
       headers.set("content-language", language);
     }
 
-    return new Response(response.body, {
+    const shouldStore =
+      Boolean(cacheKey && edgeCache) &&
+      response.status === 200 &&
+      (headers.get("content-type") ?? "").includes("text/html") &&
+      !headers.has("set-cookie");
+    if (shouldStore) {
+      headers.set("cache-control", browserHtmlCacheControl);
+      headers.set("cloudflare-cdn-cache-control", edgeHtmlCacheControl);
+      headers.set("cache-tag", "joyagoo-html");
+    } else if (response.status >= 400) {
+      headers.set("cache-control", "no-store");
+      headers.delete("cloudflare-cdn-cache-control");
+      headers.delete("cache-tag");
+    }
+
+    const finalResponse = new Response(response.body, {
       status: response.status,
       statusText: response.statusText,
       headers,
     });
+
+    if (shouldStore && cacheKey && edgeCache && ctx?.waitUntil) {
+      ctx.waitUntil(
+        edgeCache.put(cacheKey, finalResponse.clone()).catch((error) => {
+          console.error(
+            JSON.stringify({
+              type: "joyagoo_html_cache_put_error",
+              path: url.pathname,
+              message: error instanceof Error ? error.message : String(error),
+            }),
+          );
+        }),
+      );
+    }
+
+    return finalResponse;
   },
 };
 
