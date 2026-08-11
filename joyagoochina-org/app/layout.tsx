@@ -36,6 +36,11 @@ export const metadata: Metadata = {
       "Curated product discovery with practical Joyagoo QC, shipping and return guidance.",
     url: "https://joyagoochina.org/",
     siteName: "Joyagoo China",
+    images: [{ url: "/joyagoo-logo.png", width: 1200, height: 630, alt: "Joyagoo China buying research" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/joyagoo-logo.png"],
   },
   other: {
     "codex-preview": "development",
@@ -57,6 +62,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script dangerouslySetInnerHTML={{__html: `document.addEventListener('click',function(e){var a=e.target.closest('a[href*="cnbuycha.com"]');if(!a)return;var d={event:'outbound_product_click',source_page:location.pathname,language:a.dataset.outboundLanguage||document.documentElement.lang,product_id:a.dataset.outboundProductId||'',category:a.dataset.outboundCategory||'',destination:a.href};window.dataLayer=window.dataLayer||[];window.dataLayer.push(d);window.dispatchEvent(new CustomEvent('joyagoo:outbound-click',{detail:d}));});`}} />
       </body>
     </html>
   );
