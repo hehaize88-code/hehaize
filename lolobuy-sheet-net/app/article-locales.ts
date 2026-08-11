@@ -8,7 +8,8 @@ type ArticleSlug =
   | "lolobuy-shipping-cost-guide"
   | "how-to-buy-from-lolobuy"
   | "lolobuy-hoodie-size-guide"
-  | "lolobuy-bag-qc-guide";
+  | "lolobuy-bag-qc-guide"
+  | "lolobuy-stitching-finish-qc-checklist";
 
 type TopicCopy = {
   title: string;
@@ -76,6 +77,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "El QC de un bolso empieza por la variante y las dimensiones. Después revisa estructura, correas, cierres y herrajes visibles, sin confundir una fotografía con una prueba de capacidad o durabilidad.",
       focus: "comprobar medidas, estructura y herrajes de un bolso",
     },
+    "lolobuy-stitching-finish-qc-checklist": {
+      title: "QC de costuras y acabados LoloBuy: checklist de fotos de almacén",
+      shortTitle: "QC de costuras y acabados LoloBuy",
+      description: "Revisa uniones funcionales, simetría, bordes, hilos y acabados visibles sin convertir cada marca cosmética en un defecto.",
+      eyebrow: "QC de costuras y acabados",
+      intent: "Decidir si la evidencia visible se acepta, requiere una comprobación o documenta una diferencia material",
+      standfirst: "Un hilo suelto no siempre significa fallo y una costura limpia no demuestra duración. Confirma primero el artículo, revisa las uniones funcionales y después valora simetría, bordes y acabado cosmético.",
+      focus: "revisar costuras y acabados visibles por función y evidencia",
+    },
   },
   de: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -131,6 +141,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Maße, Form und nutzbare Funktionen vor der Annahme prüfen",
       standfirst: "Taschen-QC beginnt mit Variante und Abmessungen. Prüfe danach Form, Riemen, Verschlüsse und sichtbare Beschläge, ohne Fotos mit einem Beleg für Kapazität oder Haltbarkeit zu verwechseln.",
       focus: "Maße, Form und Beschläge einer Tasche zu prüfen",
+    },
+    "lolobuy-stitching-finish-qc-checklist": {
+      title: "LoloBuy Naht- und Finish-QC: Checkliste für Lagerfotos",
+      shortTitle: "LoloBuy Naht- und Finish-QC",
+      description: "Funktionale Nähte, Symmetrie, Kanten, Fadenenden und sichtbares Finish prüfen, ohne jedes Detail zum Defekt zu erklären.",
+      eyebrow: "Naht- und Finish-QC",
+      intent: "Sichtbare Belege akzeptieren, gezielt nachfragen oder eine wesentliche Abweichung dokumentieren",
+      standfirst: "Ein Fadenende ist nicht automatisch ein Fehler und eine saubere Naht kein Haltbarkeitsbeweis. Erst Artikel und funktionale Verbindungen bestätigen, dann Symmetrie, Kanten und kosmetisches Finish bewerten.",
+      focus: "sichtbare Nähte und Oberflächen nach Funktion und Belegen zu prüfen",
     },
   },
   fr: {
@@ -188,6 +207,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "Le QC d’un sac commence par la variante et les dimensions. Contrôlez ensuite structure, sangles, fermetures et ferrures visibles sans confondre une photo avec une preuve de capacité ou de durabilité.",
       focus: "vérifier les dimensions, la structure et les ferrures d’un sac",
     },
+    "lolobuy-stitching-finish-qc-checklist": {
+      title: "QC des coutures et finitions LoloBuy : checklist des photos d’entrepôt",
+      shortTitle: "QC coutures et finitions LoloBuy",
+      description: "Contrôlez assemblages fonctionnels, symétrie, bords, fils et finitions visibles sans qualifier chaque détail de défaut.",
+      eyebrow: "QC des coutures et finitions",
+      intent: "Accepter les éléments visibles, demander un contrôle ciblé ou documenter un écart important",
+      standfirst: "Un fil libre n’est pas toujours un défaut et une couture nette ne prouve pas la durée. Confirmez d’abord l’article et les assemblages fonctionnels, puis examinez symétrie, bords et finition cosmétique.",
+      focus: "contrôler les coutures et finitions visibles selon leur fonction et les preuves",
+    },
   },
   it: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -243,6 +271,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Verificare dimensioni, struttura e funzioni prima dell’accettazione",
       standfirst: "Il QC di una borsa parte da variante e dimensioni. Esamina poi struttura, tracolle, chiusure e hardware visibile senza scambiare una foto per una prova di capacità o durata.",
       focus: "verificare misure, struttura e hardware di una borsa",
+    },
+    "lolobuy-stitching-finish-qc-checklist": {
+      title: "QC di cuciture e finiture LoloBuy: checklist delle foto di magazzino",
+      shortTitle: "QC cuciture e finiture LoloBuy",
+      description: "Controlla giunzioni funzionali, simmetria, bordi, fili e finiture visibili senza chiamare difetto ogni dettaglio cosmetico.",
+      eyebrow: "QC di cuciture e finiture",
+      intent: "Accettare le prove visibili, chiedere un controllo mirato o documentare una differenza materiale",
+      standfirst: "Un filo libero non indica sempre un difetto e una cucitura pulita non prova la durata. Conferma prima articolo e giunzioni funzionali, poi valuta simmetria, bordi e finitura cosmetica.",
+      focus: "controllare cuciture e finiture visibili in base alla funzione e alle prove",
     },
   },
 };

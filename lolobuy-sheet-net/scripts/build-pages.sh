@@ -42,12 +42,15 @@ find "${pages_output}/assets" -maxdepth 1 -type f -exec cp {} "${versioned_asset
   --format=esm \
   --platform=neutral \
   --minify \
+  --splitting \
+  --entry-names=_worker \
+  --chunk-names=worker-chunks/[name]-[hash] \
   "--alias:node:async_hooks=${async_hooks_polyfill}" \
   "--alias:node:fs=${empty_module}" \
   "--alias:node:path=${empty_module}" \
   "--inject:${process_shim}" \
   "--define:PAGES_ASSET_VERSION=\"${asset_version}\"" \
-  --outfile="${pages_output}/_worker.js"
+  --outdir="${pages_output}"
 
 [[ -f "${pages_output}/_worker.js" ]] || {
   echo "Missing Cloudflare Pages Worker entry: dist/client/_worker.js" >&2

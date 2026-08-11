@@ -87,7 +87,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 93 canonical sitemap URLs with language alternates", async () => {
+test("publishes 98 canonical sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -96,14 +96,14 @@ test("publishes 93 canonical sitemap URLs with language alternates", async () =>
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 93);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 98);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
     xml,
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 93);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 98);
   assert.match(
     xml,
     /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-29<\/lastmod>/,
@@ -305,6 +305,26 @@ test("publishes a distinct evidence-led bag QC guide", async () => {
   const absoluteLinks = [...html.matchAll(/href="(https?:\/\/[^\"]+)"/g)].map((match) => new URL(match[1]).hostname);
   assert.deepEqual([...new Set(absoluteLinks)].sort(), ["lolobuy-sheet.net", "www.cnbuycha.com"]);
   assert.doesNotMatch(html, /"@type":"Product"/);
+});
+
+test("publishes a function-first stitching and finish QC checklist", async () => {
+  const pathname = "/articles/lolobuy-stitching-finish-qc-checklist";
+  const response = await fetchPage(pathname);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+
+  assert.match(html, /<h1>LoloBuy Stitching and Finish QC:/);
+  assert.match(html, /rel="canonical" href="https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-stitching-finish-qc-checklist"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /"datePublished":"2026-08-12"/);
+  assert.match(html, /src="\/social\/stitching-finish-qc\.svg"/);
+  assert.doesNotMatch(html, /"@type":"Product"/);
+
+  const lengthMatch = html.match(/<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/);
+  assert.ok(lengthMatch, "visible editorial word count is missing");
+  assert.equal(Number(lengthMatch[1].replaceAll(",", "")) >= 1200, true);
+  assert.equal(Number(lengthMatch[1].replaceAll(",", "")) <= 1800, true);
 });
 
 test("redirects legacy language parameters to clean locale paths", async () => {
@@ -521,6 +541,7 @@ test("publishes every article detail in all five languages with reciprocal hrefl
     "how-to-buy-from-lolobuy",
     "lolobuy-hoodie-size-guide",
     "lolobuy-bag-qc-guide",
+    "lolobuy-stitching-finish-qc-checklist",
   ];
   const localeMarkers = new Map([
     ["es", "Qué decisión resuelve esta guía"],

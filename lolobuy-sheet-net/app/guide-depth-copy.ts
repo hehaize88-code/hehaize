@@ -308,6 +308,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Start here when you have a live Chinese product link and want to place a first order. The guide separates the listing, submitted order, purchasing stage, seller fulfillment and warehouse arrival into five checkpoints, then shows how to record evidence and make a pass, question or action decision before parcel planning.",
       "lolobuy-hoodie-size-guide":
         "Use this before choosing a hoodie option or while reviewing its warehouse arrival. It replaces letter-size conversion with flat garment measurements, shows how to compare seller charts measured in the same positions, and defines the focused QC evidence that can support a fit decision without pretending photos guarantee fit.",
+      "lolobuy-stitching-finish-qc-checklist":
+        "Use this after confirming the correct item and before approving shipment. It orders the review by function: critical joins first, then matched sides, edges, applied decoration and cosmetic cleanup, with a clear pass, focused-question or material-mismatch decision.",
     },
   },
   es: {
@@ -566,6 +568,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Empieza aquí con un enlace chino activo y un primer pedido. La guía separa anuncio, pedido enviado, compra, despacho del vendedor y llegada al almacén en cinco controles, y muestra cómo registrar pruebas antes de preparar el paquete.",
       "lolobuy-hoodie-size-guide":
         "Úsala antes de elegir una sudadera o al revisar su llegada al almacén. Sustituye la conversión por letras por medidas planas, compara tablas tomadas en los mismos puntos y define qué prueba QC puede apoyar la decisión sin prometer el ajuste.",
+      "lolobuy-stitching-finish-qc-checklist":
+        "Úsala después de confirmar el artículo y antes del envío. Prioriza uniones funcionales, lados equivalentes, bordes, decoración y limpieza cosmética, y termina con una decisión de aceptar, preguntar o documentar una diferencia.",
     },
   },
   de: {
@@ -824,6 +828,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Beginne hier mit einem aktuellen chinesischen Produktlink und der ersten Bestellung. Der Ratgeber trennt Angebot, eingereichte Bestellung, Einkauf, Verkäufer-Versand und Lagereingang in fünf Prüfpunkte und zeigt die Belegführung vor der Paketplanung.",
       "lolobuy-hoodie-size-guide":
         "Nutze ihn vor der Hoodie-Größenwahl oder bei der Lagerprüfung. Er ersetzt Buchstaben-Umrechnung durch flache Kleidungsmaße, vergleicht Tabellen mit gleichen Messpunkten und grenzt ein, welche QC-Nachweise die Entscheidung stützen können.",
+      "lolobuy-stitching-finish-qc-checklist":
+        "Nach der Artikelbestätigung und vor dem Versand nutzen. Der Ratgeber prüft zuerst funktionale Nähte, dann passende Seiten, Kanten, Dekoration und Finish und endet mit Annehmen, gezielter Frage oder dokumentierter Abweichung.",
     },
   },
   fr: {
@@ -1082,6 +1088,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Commencez ici avec un lien produit chinois actif et une première commande. Le guide sépare annonce, commande soumise, achat, expédition du vendeur et arrivée en entrepôt en cinq contrôles, puis organise les preuves avant le colis.",
       "lolobuy-hoodie-size-guide":
         "Utilisez-le avant de choisir une taille de hoodie ou lors de l'arrivée en entrepôt. Il remplace les équivalences de lettres par des mesures à plat, compare les mêmes points et précise les preuves QC utiles sans promettre la coupe.",
+      "lolobuy-stitching-finish-qc-checklist":
+        "À utiliser après l'identité et avant l'expédition. Il examine d'abord les assemblages fonctionnels, puis les côtés comparables, bords, décors et finitions avant une décision d'accepter, demander ou documenter un écart.",
     },
   },
   it: {
@@ -1340,6 +1348,8 @@ export const guideDepthCopy: Record<Locale, GuideDepthCopy> = {
         "Inizia qui con un link prodotto cinese attivo e un primo ordine. La guida separa inserzione, ordine inviato, acquisto, spedizione del venditore e arrivo in magazzino in cinque controlli e organizza le prove prima del pacco.",
       "lolobuy-hoodie-size-guide":
         "Usala prima di scegliere la taglia di una felpa o durante il controllo in magazzino. Sostituisce le equivalenze a lettere con misure piatte, confronta gli stessi punti e definisce le prove QC utili senza promettere la vestibilità.",
+      "lolobuy-stitching-finish-qc-checklist":
+        "Usala dopo aver confermato l'articolo e prima della spedizione. Controlla prima le giunzioni funzionali, poi lati equivalenti, bordi, decorazioni e finiture, con decisione finale di accettare, chiedere o documentare una differenza.",
     },
   },
 };
