@@ -35,7 +35,7 @@ export type SeoArticleCopy = {
 };
 
 const en: SeoArticleCopy = {
-  navLabel: "SEO Articles",
+  navLabel: "Articles",
   indexEyebrow: "INDEPENDENT RESEARCH",
   indexTitle: "Joyagoo SEO articles built around real buying questions",
   indexIntro:
@@ -458,7 +458,7 @@ const localized: Record<Exclude<Locale, "en">, SeoArticleCopy> = {
   },
   fr: {
     ...en,
-    navLabel: "Articles SEO",
+    navLabel: "Articles",
     indexEyebrow: "RECHERCHE INDÉPENDANTE",
     indexTitle: "Des articles SEO Joyagoo fondés sur de vraies questions d’achat",
     indexIntro: "Des guides longs et vérifiés sur les frais, le QC, les retours, l’entrepôt et les colis internationaux.",
