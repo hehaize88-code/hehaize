@@ -105,7 +105,7 @@ export async function generateMetadata({
   if (!page) return {};
 
   const basePath = route ? `/${route}/` : "/";
-  const metadata: Metadata = {
+  return {
     title: page.title,
     description: page.intro,
     keywords: seoArticle?.keywords,
@@ -113,16 +113,20 @@ export async function generateMetadata({
       ...languageAlternates(basePath),
       canonical: localizedRoutePath(locale, basePath),
     },
-  };
-  if (seoArticle?.slug === "joyagoo-parcel-consolidation-packaging-guide") {
-    metadata.openGraph = {
-      type: "article",
-      title: seoArticle.article.title,
-      description: seoArticle.article.description,
+    openGraph: {
+      type: seoArticle ? "article" : "website",
+      title: page.title,
+      description: page.intro,
       url: `https://joyagoochina.org${localizedRoutePath(locale, basePath)}`,
-    };
-  }
-  return metadata;
+      images: ["https://joyagoochina.org/joyagoo-logo.png"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.title,
+      description: page.intro,
+      images: ["https://joyagoochina.org/joyagoo-logo.png"],
+    },
+  };
 }
 
 export default async function LocalizedRoute({
