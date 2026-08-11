@@ -45,22 +45,6 @@ const localizedCategoryNames: Record<Locale, string[]> = {
 const guideSlugs = ["how-to-buy", "qc-guide", "shipping-guide", "returns"];
 const policySlugs = ["about", "editorial-policy", "privacy", "terms"];
 
-const updatedPrefixes: Record<Locale, string> = {
-  en: "Updated",
-  zh: "更新于",
-  de: "Aktualisiert",
-  pl: "Zaktualizowano",
-  es: "Actualizado",
-  it: "Aggiornato",
-  fr: "Mis à jour",
-  pt: "Atualizado",
-  ro: "Actualizat",
-  sv: "Uppdaterad",
-};
-
-const articleUpdatedLabel = (locale: Locale, modifiedAt: string) =>
-  `${updatedPrefixes[locale]} ${modifiedAt}`;
-
 function completeGuide(locale: Locale, slug: string) {
   const english = localizedContent.en.guides[slug];
   const translated = localizedContent[locale].guides[slug];
@@ -126,7 +110,6 @@ function completeFaq(locale: Locale) {
 
 export function LocalizedHome({ locale }: { locale: Locale }) {
   const copy = translations[locale];
-  const details = localizedContent[locale];
   const categoryNames = localizedCategoryNames[locale];
   const faq = completeFaq(locale);
   const websiteSchema = {
@@ -140,6 +123,16 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
       "@type": "SearchAction",
       target: `${mainSite}/AllProducts/?keyword={search_term_string}`,
       "query-input": "required name=search_term_string",
+    },
+  };
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Joyagoo China",
+    url: "https://joyagoochina.org/",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://joyagoochina.org/joyagoo-logo.png",
     },
   };
   const faqSchema = {
@@ -157,7 +150,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([websiteSchema, faqSchema]),
+          __html: JSON.stringify([websiteSchema, organizationSchema, faqSchema]),
         }}
       />
       <SiteHeader locale={locale} />
@@ -212,9 +205,13 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
             >
               <img
                 src={products[productIndex].image}
-                alt={details.catalogue.names[productIndex]}
+                alt={products[productIndex].name}
+                width="640"
+                height="640"
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
               />
-              <span>{details.catalogue.names[productIndex]}</span>
+              <span>{products[productIndex].name}</span>
             </a>
           ))}
           <div className="year-stamp">2026</div>
@@ -320,7 +317,7 @@ function SeoArticleFeature({ locale }: { locale: Locale }) {
         >
           <div className="seo-feature-meta">
             <span>{seo.latestLabel}</span>
-            <span>{articleUpdatedLabel(locale, featured.modifiedAt)}</span>
+            <span>{seo.updatedLabel}</span>
           </div>
           <h3>{featured.article.title}</h3>
           <p>{featured.article.description}</p>
@@ -361,8 +358,6 @@ export function ProductGrid({
   items?: Product[];
 }) {
   const copy = translations[locale];
-  const catalogue = localizedContent[locale].catalogue;
-
   return (
     <div className="product-grid">
       {items.map((product, index) => (
@@ -372,7 +367,7 @@ export function ProductGrid({
           key={product.id}
         >
           <div className="product-image">
-            <img src={product.image} alt={product.name} />
+            <img src={product.image} alt={product.name} width="640" height="640" loading="lazy" />
             <span>{copy.home.viewProduct}</span>
           </div>
           <div className="product-meta">
@@ -380,9 +375,7 @@ export function ProductGrid({
             <h3>{product.name}</h3>
             <div>
               <strong>{product.price}</strong>
-              <span>
-                {product.popularity.replace("finds", catalogue.finds)}
-              </span>
+              <span>{copy.common.disclaimer ? `ID ${product.id}` : product.id}</span>
             </div>
           </div>
         </a>
@@ -439,6 +432,7 @@ function LocalizedGuidePage({
     dateModified: "2026-07-30",
     datePublished: "2026-07-29",
     inLanguage: locale,
+    image: ["https://joyagoochina.org/products/3378.webp"],
     author: { "@type": "Organization", name: "Joyagoo China Editorial" },
     publisher: {
       "@type": "Organization",
@@ -446,11 +440,21 @@ function LocalizedGuidePage({
       url: "https://joyagoochina.org/",
     },
   };
+  const guideBreadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: details.article.home, item: `https://joyagoochina.org${localizePath(locale, "/")}` },
+      { "@type": "ListItem", position: 2, name: details.article.guides, item: `https://joyagoochina.org${localizePath(locale, "/guides/")}` },
+      { "@type": "ListItem", position: 3, name: page.title, item: `https://joyagoochina.org${localizePath(locale, `/${slug}/`)}` },
+    ],
+  };
+
   return (
     <main className="guide-page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, guideBreadcrumbSchema]) }}
       />
       <SiteHeader locale={locale} />
       <article>
@@ -609,8 +613,8 @@ function LocalizedSeoArticleIndex({ locale }: { locale: Locale }) {
               <h2>{entry.article.title}</h2>
               <p>{entry.article.description}</p>
               <div className="seo-feature-meta">
-                <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
-                <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
+                <span>{seo.updatedLabel}</span>
+                <span>{seo.readTime}</span>
               </div>
               <strong>{seo.readArticle}</strong>
             </div>
@@ -634,14 +638,26 @@ function LocalizedSeoArticlePage({
   const entry = getSeoArticleEntry(locale, slug);
   if (!entry) return null;
   const article = entry.article;
+  const articleUrl = locale === "en"
+    ? `https://joyagoochina.org/${entry.slug}/`
+    : `https://joyagoochina.org/${locale}/${entry.slug}/`;
+  const articleImage = `https://joyagoochina.org${products[
+    ({
+      "joyagoo-fees-explained": 0,
+      "joyagoo-qc-photo-checklist": 4,
+      "joyagoo-volumetric-weight-shipping-cost": 7,
+      "joyagoo-return-window-warehouse-storage": 2,
+    } as Record<string, number>)[entry.slug] ?? 0
+  ].image}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    datePublished: entry.publishedAt,
-    dateModified: entry.modifiedAt,
+    datePublished: "2026-07-30",
+    dateModified: "2026-07-30",
     inLanguage: locale,
+    image: [articleImage],
     wordCount:
       locale === "en"
         ? article.sections
@@ -655,51 +671,24 @@ function LocalizedSeoArticlePage({
       name: "Joyagoo China",
       url: "https://joyagoochina.org/",
     },
-    mainEntityOfPage:
-      locale === "en"
-        ? `https://joyagoochina.org/${entry.slug}/`
-        : `https://joyagoochina.org/${locale}/${entry.slug}/`,
+    mainEntityOfPage: articleUrl,
   };
-  const breadcrumbSchema =
-    entry.slug === "joyagoo-parcel-consolidation-packaging-guide"
-      ? {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: translations[locale].common.home,
-              item: `https://joyagoochina.org${localizePath(locale, "/")}`,
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: seo.navLabel,
-              item: `https://joyagoochina.org${localizePath(locale, "/articles/")}`,
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: article.title,
-              item: articleSchema.mainEntityOfPage,
-            },
-          ],
-        }
-      : null;
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: translations[locale].common.home, item: `https://joyagoochina.org${localizePath(locale, "/")}` },
+      { "@type": "ListItem", position: 2, name: seo.navLabel, item: `https://joyagoochina.org${localizePath(locale, "/articles/")}` },
+      { "@type": "ListItem", position: 3, name: article.title, item: articleUrl },
+    ],
+  };
 
   return (
     <main className="guide-page seo-article-page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
       />
-      {breadcrumbSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-      )}
       <SiteHeader locale={locale} />
       <article>
         <header className="article-hero seo-article-hero">
@@ -716,8 +705,8 @@ function LocalizedSeoArticlePage({
           <h1>{article.title}</h1>
           <p className="article-intro">{article.description}</p>
           <div className="article-meta">
-            <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
-            <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
+            <span>{seo.updatedLabel}</span>
+            <span>{seo.readTime}</span>
             <span>{translations[locale].common.disclaimer}</span>
           </div>
         </header>
@@ -757,30 +746,12 @@ function LocalizedSeoArticlePage({
             <aside className="source-note">
               <strong>{seo.sourceTitle}</strong>
               <p>{entry.sourceBody}</p>
+              <p>
+                <a href={entry.slug === "joyagoo-return-window-warehouse-storage" ? "https://mgt.joyagoo.com/help-center/terms-of-promised-returns-with-no-reasons/" : entry.slug === "joyagoo-volumetric-weight-shipping-cost" ? "https://mgt.joyagoo.com/help-center/value-added-services/" : "https://mgt.joyagoo.com/help-center/shopping-assistant-guidance/"} target="_blank" rel="noopener noreferrer">
+                  Joyagoo official policy source ↗
+                </a>{" "}· Checked 11 August 2026
+              </p>
             </aside>
-
-            {entry.relatedLinks && (
-              <aside className="source-note related-reading">
-                <strong>{translations[locale].common.guides}</strong>
-                <p>
-                  {entry.relatedLinks.map((relatedSlug, index) => {
-                    const label =
-                      relatedSlug === "articles"
-                        ? seo.navLabel
-                        : translations[locale].pages[relatedSlug]?.title ??
-                          relatedSlug;
-                    return (
-                      <span key={relatedSlug}>
-                        {index > 0 ? " · " : ""}
-                        <a href={localizePath(locale, `/${relatedSlug}/`)}>
-                          {label}
-                        </a>
-                      </span>
-                    );
-                  })}
-                </p>
-              </aside>
-            )}
 
             <div className="article-cta">
               <div>
