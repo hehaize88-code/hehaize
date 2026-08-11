@@ -33,6 +33,7 @@ export async function generateMetadata({
       url: `https://joyagoochina.org/product/${product.slug}/`,
       images: [`https://joyagoochina.org${product.image}`],
     },
+    twitter: { card: "summary_large_image", images: [`https://joyagoochina.org${product.image}`] },
   };
 }
 
