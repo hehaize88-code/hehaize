@@ -95,7 +95,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Listing checked",
     overviewTitle: "What this product page confirms",
     overviewBody:
-      "The name, product ID, source price and image on this page were matched to the linked CNBuy Sheet listing on the checked date. Open the live listing before paying because stock, variants, seller notes and price can change.",
+      "The name, product ID, source price and image on this page were matched to the linked product listing on the checked date. Open the source product page before paying because stock, variants, seller notes and price can change.",
     qcTitle: "QC checks to make before accepting",
     qcIntro:
       "Use warehouse photos as evidence, not as a guarantee. Compare the exact paid variant and request one precise additional view when a decision-critical detail is missing.",
@@ -122,7 +122,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "商品核查日期",
     overviewTitle: "本商品页已核对的内容",
     overviewBody:
-      "本页商品名、商品ID、来源价格和图片已在标注日期与对应的 CNBuy Sheet 商品页逐项核对。付款前仍应打开实时页面，因为库存、规格、卖家说明和价格可能变化。",
+      "本页商品名、商品ID、来源价格和图片已在标注日期与对应的商品页面逐项核对。付款前仍应打开来源商品页面，因为库存、规格、卖家说明和价格可能变化。",
     qcTitle: "确认收货前的质检重点",
     qcIntro:
       "仓库照片是核对证据，不是质量保证。请对照已付款规格；如果影响决定的细节看不清，只提出一个明确的补拍要求。",
@@ -148,7 +148,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Angebot geprüft",
     overviewTitle: "Was diese Produktseite bestätigt",
     overviewBody:
-      "Name, Produkt-ID, Ausgangspreis und Bild wurden am Prüftag mit dem verlinkten CNBuy-Sheet-Angebot abgeglichen. Vor der Zahlung das Live-Angebot öffnen, da Bestand, Varianten, Verkäuferhinweise und Preis wechseln können.",
+      "Name, Produkt-ID, Ausgangspreis und Bild wurden am Prüftag mit dem verlinkten Produktangebot abgeglichen. Vor der Zahlung die Quellseite öffnen, da Bestand, Varianten, Verkäuferhinweise und Preis wechseln können.",
     qcTitle: "QC-Prüfungen vor der Annahme",
     qcIntro:
       "Lagerfotos sind Belege, keine Garantie. Vergleiche die bezahlte Variante und fordere bei einem entscheidenden fehlenden Detail eine gezielte Zusatzansicht an.",
@@ -175,7 +175,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Oferta sprawdzona",
     overviewTitle: "Co potwierdza ta strona produktu",
     overviewBody:
-      "Nazwa, ID, cena źródłowa i zdjęcie zostały porównane z podaną ofertą CNBuy Sheet w dniu kontroli. Przed płatnością otwórz aktualną ofertę, ponieważ zapasy, warianty, uwagi i cena mogą się zmienić.",
+      "Nazwa, ID, cena źródłowa i zdjęcie zostały porównane z podaną ofertą produktu w dniu kontroli. Przed płatnością otwórz stronę źródłową, ponieważ zapasy, warianty, uwagi i cena mogą się zmienić.",
     qcTitle: "Kontrole QC przed akceptacją",
     qcIntro:
       "Zdjęcia magazynowe są dowodem, a nie gwarancją. Porównaj opłacony wariant i poproś o jedno dokładne ujęcie, jeśli brakuje ważnego szczegółu.",
@@ -202,7 +202,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Oferta comprobada",
     overviewTitle: "Qué confirma esta página",
     overviewBody:
-      "Nombre, ID, precio de origen e imagen se contrastaron con la ficha enlazada de CNBuy Sheet en la fecha indicada. Abre la oferta actual antes de pagar porque existencias, variantes, notas y precio pueden cambiar.",
+      "Nombre, ID, precio de origen e imagen se contrastaron con la ficha de producto enlazada en la fecha indicada. Abre la página de origen antes de pagar porque existencias, variantes, notas y precio pueden cambiar.",
     qcTitle: "Controles QC antes de aceptar",
     qcIntro:
       "Las fotos del almacén aportan pruebas, no una garantía. Compara la variante pagada y pide una vista concreta si falta un detalle decisivo.",
@@ -229,7 +229,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Inserzione verificata",
     overviewTitle: "Cosa conferma questa pagina",
     overviewBody:
-      "Nome, ID, prezzo e immagine sono stati confrontati con l’inserzione CNBuy Sheet collegata alla data indicata. Prima del pagamento apri la pagina live, perché disponibilità, varianti, note e prezzo possono cambiare.",
+      "Nome, ID, prezzo e immagine sono stati confrontati con l’inserzione prodotto collegata alla data indicata. Prima del pagamento apri la pagina di origine, perché disponibilità, varianti, note e prezzo possono cambiare.",
     qcTitle: "Controlli QC prima dell’accettazione",
     qcIntro:
       "Le foto di magazzino sono prove, non garanzie. Confronta la variante pagata e chiedi una vista precisa quando manca un dettaglio decisivo.",
@@ -256,7 +256,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Annonce vérifiée",
     overviewTitle: "Ce que confirme cette page",
     overviewBody:
-      "Le nom, l’ID, le prix source et l’image ont été comparés à l’annonce CNBuy Sheet liée à la date indiquée. Ouvrez l’annonce actuelle avant paiement, car stock, variantes, notes et prix peuvent changer.",
+      "Le nom, l’ID, le prix source et l’image ont été comparés à la fiche produit liée à la date indiquée. Ouvrez la page source avant paiement, car stock, variantes, notes et prix peuvent changer.",
     qcTitle: "Contrôles QC avant acceptation",
     qcIntro:
       "Les photos d’entrepôt sont des preuves, pas une garantie. Comparez la variante payée et demandez une vue précise lorsqu’un détail décisif manque.",
@@ -283,7 +283,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Oferta verificada",
     overviewTitle: "O que esta página confirma",
     overviewBody:
-      "Nome, ID, preço e imagem foram comparados com a oferta CNBuy Sheet na data indicada. Abra a página atual antes de pagar, pois stock, variantes, notas e preço podem mudar.",
+      "Nome, ID, preço e imagem foram comparados com a oferta de produto na data indicada. Abra a página de origem antes de pagar, pois stock, variantes, notas e preço podem mudar.",
     qcTitle: "Controlos QC antes de aceitar",
     qcIntro:
       "As fotos do armazém são provas, não garantia. Compare a variante paga e peça uma vista objetiva quando faltar um detalhe decisivo.",
@@ -310,7 +310,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Ofertă verificată",
     overviewTitle: "Ce confirmă această pagină",
     overviewBody:
-      "Numele, ID-ul, prețul și imaginea au fost comparate cu oferta CNBuy Sheet la data indicată. Deschide oferta live înainte de plată deoarece stocul, variantele, notele și prețul se pot schimba.",
+      "Numele, ID-ul, prețul și imaginea au fost comparate cu pagina produsului la data indicată. Deschide pagina sursă înainte de plată deoarece stocul, variantele, notele și prețul se pot schimba.",
     qcTitle: "Verificări QC înainte de acceptare",
     qcIntro:
       "Fotografiile din depozit sunt dovezi, nu garanții. Compară varianta plătită și cere o imagine precisă dacă lipsește un detaliu important.",
@@ -337,7 +337,7 @@ export const productPageCopy: Record<Locale, ProductPageCopy> = {
     checked: "Annons kontrollerad",
     overviewTitle: "Vad den här sidan bekräftar",
     overviewBody:
-      "Namn, ID, källpris och bild jämfördes med den länkade CNBuy Sheet-annonsen på angivet datum. Öppna den aktuella sidan före betalning eftersom lager, varianter, anteckningar och pris kan ändras.",
+      "Namn, ID, källpris och bild jämfördes med den länkade produktsidan på angivet datum. Öppna källsidan före betalning eftersom lager, varianter, anteckningar och pris kan ändras.",
     qcTitle: "QC-kontroller före godkännande",
     qcIntro:
       "Lagerbilder är bevis, inte garanti. Jämför den betalda varianten och be om en exakt bild om en avgörande detalj saknas.",
