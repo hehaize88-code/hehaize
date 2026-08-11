@@ -15,7 +15,9 @@ export const metadata: Metadata = {
     title: entry.article.title,
     description: entry.article.description,
     url: "https://joyagoochina.org/joyagoo-qc-photo-checklist/",
+    images: ["https://joyagoochina.org/products/3378.webp"],
   },
+  twitter: { card: "summary_large_image", images: ["https://joyagoochina.org/products/3378.webp"] },
 };
 
 export default function JoyagooQcPhotoChecklistPage() {
