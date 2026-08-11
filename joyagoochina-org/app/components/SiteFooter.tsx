@@ -14,7 +14,7 @@ export default function SiteFooter({
         className="brand brand-image footer-brand"
         href={localizePath(locale, "/")}
       >
-        <img src="/joyagoo-logo.png" alt="JoyaGoo" />
+        <img src="/joyagoo-logo.png" alt="JoyaGoo" width="220" height="64" loading="lazy" />
       </a>
       <p>{copy.common.footer}</p>
       <nav aria-label={copy.common.footer}>
@@ -32,6 +32,10 @@ export default function SiteFooter({
         <a href={localizePath(locale, "/returns/")}>
           {copy.common.returns}
         </a>
+        <a href={localizePath(locale, "/about/")}>About</a>
+        <a href={localizePath(locale, "/editorial-policy/")}>Editorial Policy</a>
+        <a href={localizePath(locale, "/privacy/")}>Privacy</a>
+        <a href={localizePath(locale, "/terms/")}>Terms</a>
       </nav>
       <small>© 2026 Joyagoo China. {copy.common.disclaimer}</small>
     </footer>
