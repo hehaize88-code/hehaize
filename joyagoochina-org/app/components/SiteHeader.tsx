@@ -17,7 +17,7 @@ export default function SiteHeader({
           href={localizePath(locale, "/")}
           aria-label={`Joyagoo — ${copy.common.home}`}
         >
-          <img src="/joyagoo-logo.png" alt="JoyaGoo" />
+          <img src="/joyagoo-logo.png" alt="JoyaGoo" width="220" height="64" />
         </a>
         <nav className="desktop-nav" aria-label={copy.common.guides}>
           <a href={localizePath(locale, "/spreadsheet/")}>
