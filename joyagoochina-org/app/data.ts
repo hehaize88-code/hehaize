@@ -132,6 +132,8 @@ export const categories = [
   { name: "Headwear", glyph: "H", href: `${mainSite}/headwear/` },
   { name: "Accessories", glyph: "A", href: `${mainSite}/accessories/` },
   { name: "Electronics", glyph: "E", href: `${mainSite}/electronics/` },
+  { name: "Jerseys", glyph: "J", href: `${mainSite}/jerseys/` },
+  { name: "Other", glyph: "+", href: `${mainSite}/AllProducts/` },
 ];
 
 export const guideCards = [
