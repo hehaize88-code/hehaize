@@ -1,6 +1,7 @@
 import type { Locale } from "./site-content";
 import { warehouseStorageArticles } from "./site-article-storage";
 import { paymentArticles } from "./site-article-payment";
+import { orderStatusArticles } from "./site-article-order-status";
 
 type ProseSection = { heading: string; paragraphs: string[]; bullets?: string[] };
 
@@ -27,7 +28,8 @@ type LegacyAdditionalArticleRoute =
 export type AdditionalArticleRoute =
   | LegacyAdditionalArticleRoute
   | "articles/kameymall-warehouse-storage-returns-guide"
-  | "articles/kameymall-payment-methods-fees";
+  | "articles/kameymall-payment-methods-fees"
+  | "articles/kameymall-order-status-guide";
 
 export const additionalArticleRoutes: AdditionalArticleRoute[] = [
   "articles/how-to-buy-from-kameymall-2026",
@@ -35,6 +37,7 @@ export const additionalArticleRoutes: AdditionalArticleRoute[] = [
   "articles/how-to-read-kameymall-qc-photos",
   "articles/kameymall-warehouse-storage-returns-guide",
   "articles/kameymall-payment-methods-fees",
+  "articles/kameymall-order-status-guide",
 ];
 
 const english: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
@@ -662,12 +665,12 @@ const polish: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
 };
 
 export const additionalArticles: Record<Locale, Record<AdditionalArticleRoute, ArticlePageContent>> = {
-  en: { ...english, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.en, "articles/kameymall-payment-methods-fees": paymentArticles.en },
-  de: { ...german, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.de, "articles/kameymall-payment-methods-fees": paymentArticles.de },
-  fr: { ...french, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.fr, "articles/kameymall-payment-methods-fees": paymentArticles.fr },
-  es: { ...spanish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.es, "articles/kameymall-payment-methods-fees": paymentArticles.es },
-  it: { ...italian, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.it, "articles/kameymall-payment-methods-fees": paymentArticles.it },
-  pl: { ...polish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.pl, "articles/kameymall-payment-methods-fees": paymentArticles.pl },
+  en: { ...english, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.en, "articles/kameymall-payment-methods-fees": paymentArticles.en, "articles/kameymall-order-status-guide": orderStatusArticles.en },
+  de: { ...german, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.de, "articles/kameymall-payment-methods-fees": paymentArticles.de, "articles/kameymall-order-status-guide": orderStatusArticles.de },
+  fr: { ...french, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.fr, "articles/kameymall-payment-methods-fees": paymentArticles.fr, "articles/kameymall-order-status-guide": orderStatusArticles.fr },
+  es: { ...spanish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.es, "articles/kameymall-payment-methods-fees": paymentArticles.es, "articles/kameymall-order-status-guide": orderStatusArticles.es },
+  it: { ...italian, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.it, "articles/kameymall-payment-methods-fees": paymentArticles.it, "articles/kameymall-order-status-guide": orderStatusArticles.it },
+  pl: { ...polish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.pl, "articles/kameymall-payment-methods-fees": paymentArticles.pl, "articles/kameymall-order-status-guide": orderStatusArticles.pl },
 };
 
 function articleStructure(pages: Record<AdditionalArticleRoute, ArticlePageContent>) {

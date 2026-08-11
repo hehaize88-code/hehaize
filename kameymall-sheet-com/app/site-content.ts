@@ -18,7 +18,8 @@ export type StaticRouteKey =
   | "articles/kameymall-shipping-cost-guide-2026"
   | "articles/how-to-read-kameymall-qc-photos"
   | "articles/kameymall-warehouse-storage-returns-guide"
-  | "articles/kameymall-payment-methods-fees";
+  | "articles/kameymall-payment-methods-fees"
+  | "articles/kameymall-order-status-guide";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
 
@@ -39,6 +40,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/how-to-read-kameymall-qc-photos",
   "articles/kameymall-warehouse-storage-returns-guide",
   "articles/kameymall-payment-methods-fees",
+  "articles/kameymall-order-status-guide",
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -1081,6 +1083,48 @@ for (const language of languages) {
   copy.pageIntros["articles/kameymall-payment-methods-fees"] = update.intro;
 }
 
+const orderStatusArticleUi: Record<Locale, { card: CardCopy; intro: { kicker: string; title: string; intro: string }; libraryIntro: string }> = {
+  en: {
+    card: { label: "Order status", title: "KameyMall Order Status: Payment to Warehouse", body: "Read each handoff between payment, buyer, seller, domestic carrier, warehouse QC and the later international parcel.", action: "Read the status guide" },
+    intro: { kicker: "Order status guide", title: "KameyMall Order Status Guide: From Payment to Warehouse", intro: "A source-checked method for identifying the next responsible party, preserving evidence and escalating the exact missing milestone." },
+    libraryIntro: "Seven original guides cover product discovery, ordering, shipping costs, QC, storage, returns, payments and order-status troubleshooting.",
+  },
+  de: {
+    card: { label: "Bestellstatus", title: "KameyMall-Bestellstatus: Zahlung bis Lager", body: "Jede Übergabe zwischen Zahlung, Einkäufer, Verkäufer, Inlandsträger, Lager-QC und späterem Auslandspaket lesen.", action: "Statusleitfaden lesen" },
+    intro: { kicker: "Bestellstatus-Leitfaden", title: "KameyMall-Bestellstatus: von der Zahlung bis zum Lager", intro: "Eine quellengeprüfte Methode, den nächsten Verantwortlichen zu finden, Belege zu sichern und die fehlende Etappe zu eskalieren." },
+    libraryIntro: "Sieben originale Ratgeber behandeln Produktsuche, Bestellung, Versandkosten, QC, Lager, Rückgabe, Zahlung und Statusprobleme.",
+  },
+  fr: {
+    card: { label: "Statut de commande", title: "Statut KameyMall : du paiement à l’entrepôt", body: "Suivez chaque transfert entre paiement, acheteur, vendeur, transport chinois, QC et futur colis international.", action: "Lire le guide des statuts" },
+    intro: { kicker: "Guide du statut de commande", title: "Statut de commande KameyMall : du paiement à l’entrepôt", intro: "Une méthode vérifiée pour identifier le prochain responsable, conserver les preuves et signaler l’étape exacte manquante." },
+    libraryIntro: "Sept guides originaux couvrent découverte, commande, transport, QC, stockage, retours, paiements et dépannage des statuts.",
+  },
+  es: {
+    card: { label: "Estado del pedido", title: "Estado KameyMall: del pago al almacén", body: "Sigue cada relevo entre pago, comprador, vendedor, transporte chino, QC y posterior paquete internacional.", action: "Leer guía de estados" },
+    intro: { kicker: "Guía de estado del pedido", title: "Estado del pedido KameyMall: del pago al almacén", intro: "Un método verificado para identificar al siguiente responsable, guardar pruebas y escalar la etapa exacta que falta." },
+    libraryIntro: "Siete guías originales cubren productos, pedidos, transporte, QC, almacén, devoluciones, pagos y solución de estados.",
+  },
+  it: {
+    card: { label: "Stato ordine", title: "Stato KameyMall: dal pagamento al magazzino", body: "Segui ogni passaggio tra pagamento, buyer, venditore, corriere cinese, QC e successivo pacco internazionale.", action: "Leggi la guida agli stati" },
+    intro: { kicker: "Guida allo stato ordine", title: "Stato ordine KameyMall: dal pagamento al magazzino", intro: "Un metodo verificato per individuare il prossimo responsabile, conservare le prove e segnalare la fase esatta mancante." },
+    libraryIntro: "Sette guide originali coprono prodotti, ordini, spedizione, QC, deposito, resi, pagamenti e problemi di stato.",
+  },
+  pl: {
+    card: { label: "Status zamówienia", title: "Status KameyMall: od płatności do magazynu", body: "Śledź przekazanie między płatnością, kupującym, sprzedawcą, przewoźnikiem, QC i późniejszą paczką.", action: "Przeczytaj poradnik statusu" },
+    intro: { kicker: "Poradnik statusu zamówienia", title: "Status zamówienia KameyMall: od płatności do magazynu", intro: "Sprawdzona metoda wskazania następnej strony, zachowania dowodów i zgłoszenia dokładnie brakującego etapu." },
+    libraryIntro: "Siedem oryginalnych poradników obejmuje produkty, zamówienia, wysyłkę, QC, magazyn, zwroty, płatności i statusy.",
+  },
+};
+
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  const update = orderStatusArticleUi[language.code];
+  copy.articles.cards.push(update.card);
+  copy.articles.intro = update.libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: update.libraryIntro };
+  copy.pageIntros["articles/kameymall-order-status-guide"] = update.intro;
+}
+
 export const copies: Record<Locale, SiteCopy> = {
   en: english,
   de: german,
@@ -1133,4 +1177,5 @@ export const articleRoutes: StaticRouteKey[] = [
   "articles/how-to-read-kameymall-qc-photos",
   "articles/kameymall-warehouse-storage-returns-guide",
   "articles/kameymall-payment-methods-fees",
+  "articles/kameymall-order-status-guide",
 ];
