@@ -39,6 +39,11 @@ const articleMedia = {
     width: 1200,
     height: 630,
   },
+  "lolobuy-keyword-search-product-finds": {
+    src: "/articles/lolobuy-keyword-search-product-finds.svg",
+    width: 1200,
+    height: 630,
+  },
 } as const;
 
 export function getArticleMedia(slug: string) {

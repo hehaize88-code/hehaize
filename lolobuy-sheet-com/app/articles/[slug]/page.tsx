@@ -45,6 +45,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy Tracking Not Updating? Last-Scan Checklist",
     "lolobuy-shoe-size-guide":
       "LoloBuy Shoe Size Guide: Measure Before Ordering",
+    "lolobuy-keyword-search-product-finds":
+      "LoloBuy Keyword Search: Find Better Product Links",
   },
   es: {
     "lolobuy-spreadsheet-guide":
@@ -63,6 +65,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Tracking Lolobuy sin actualizar: último escaneo",
     "lolobuy-shoe-size-guide":
       "Guía de tallas LoloBuy: mide antes de pedir",
+    "lolobuy-keyword-search-product-finds":
+      "Búsqueda LoloBuy: encuentra mejores enlaces",
   },
   de: {
     "lolobuy-spreadsheet-guide":
@@ -81,6 +85,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Lolobuy-Tracking ohne Update: Letzter-Scan-Check",
     "lolobuy-shoe-size-guide":
       "LoloBuy Schuhgrößen: Vor der Bestellung messen",
+    "lolobuy-keyword-search-product-finds":
+      "LoloBuy Keyword-Suche: bessere Produktlinks",
   },
   fr: {
     "lolobuy-spreadsheet-guide":
@@ -99,6 +105,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Suivi Lolobuy bloqué : checklist du dernier scan",
     "lolobuy-shoe-size-guide":
       "Guide tailles LoloBuy : mesurer avant commande",
+    "lolobuy-keyword-search-product-finds":
+      "Recherche LoloBuy : trouver de meilleurs liens",
   },
   it: {
     "lolobuy-spreadsheet-guide":
@@ -117,6 +125,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Tracking Lolobuy fermo: checklist ultima scansione",
     "lolobuy-shoe-size-guide":
       "Taglie scarpe LoloBuy: misura prima dell’ordine",
+    "lolobuy-keyword-search-product-finds":
+      "Ricerca LoloBuy: trovare link prodotto migliori",
   },
 };
 

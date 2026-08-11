@@ -81,4 +81,13 @@ export const articleTopicMap: ArticleTopicMapEntry[] = [
     evidence: ["LoloBuy public website", "Lolobuy Sheet measurement framework"],
     internalLinkRole: "Category-specific sizing path from shoe finds to the general QC and mismatch-evidence guides.",
   },
+  {
+    url: "/articles/lolobuy-keyword-search-product-finds",
+    primaryQuery: "lolobuy keyword search",
+    relatedTerms: ["lolobuy product search", "find products on lolobuy", "lolobuy search terms", "lolobuy spreadsheet keywords"],
+    intent: "problem solving",
+    angle: "Build a query ladder, compare live source records and preserve exact variants instead of collecting random search cards.",
+    evidence: ["LoloBuy public website checked August 12, 2026", "Lolobuy Sheet query-and-variant framework"],
+    internalLinkRole: "Product-discovery bridge from the finds directory to source-link verification and spreadsheet maintenance.",
+  },
 ];

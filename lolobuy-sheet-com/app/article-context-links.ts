@@ -57,6 +57,12 @@ const routesByArticle: Record<string, string[]> = {
     "/guides/qc",
     "/articles/lolobuy-qc-mismatch-evidence-guide",
   ],
+  "lolobuy-keyword-search-product-finds": [
+    "/finds",
+    "/categories/hoodies",
+    "/articles/lolobuy-weidian-link-guide",
+    "/articles/lolobuy-spreadsheet-guide",
+  ],
 };
 
 const contextCopy: Record<Locale, ContextCopy> = {
@@ -89,6 +95,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "QC mismatch evidence guide",
       "/articles/lolobuy-tracking-not-updating-guide":
         "Tracking delay last-scan checklist",
+      "/articles/lolobuy-weidian-link-guide":
+        "Product-link and variant verification",
     },
   },
   es: {
@@ -120,6 +128,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Guía de pruebas para diferencias QC",
       "/articles/lolobuy-tracking-not-updating-guide":
         "Checklist del último escaneo de tracking",
+      "/articles/lolobuy-weidian-link-guide":
+        "Verificación de enlaces y variantes",
     },
   },
   de: {
@@ -151,6 +161,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Belegleitfaden für QC-Abweichungen",
       "/articles/lolobuy-tracking-not-updating-guide":
         "Letzter-Scan-Check für Trackinglücken",
+      "/articles/lolobuy-weidian-link-guide":
+        "Produktlink- und Variantenprüfung",
     },
   },
   fr: {
@@ -182,6 +194,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Guide de preuves pour un écart QC",
       "/articles/lolobuy-tracking-not-updating-guide":
         "Checklist du dernier scan de suivi",
+      "/articles/lolobuy-weidian-link-guide":
+        "Vérification du lien et de la variante",
     },
   },
   it: {
@@ -213,6 +227,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Guida alle prove per differenze QC",
       "/articles/lolobuy-tracking-not-updating-guide":
         "Checklist dell'ultima scansione tracking",
+      "/articles/lolobuy-weidian-link-guide":
+        "Verifica di link e varianti",
     },
   },
 };

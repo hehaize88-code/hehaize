@@ -1,6 +1,7 @@
 import type { Locale } from "./i18n";
 import { trackingArticleLocales } from "./tracking-article-locales";
 import { shoeArticleLocales } from "./shoe-article-locales";
+import { keywordSearchArticleLocales } from "./keyword-search-article-locales";
 import {
   articles,
   categories,
@@ -1061,6 +1062,16 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       article.slug === "lolobuy-shoe-size-guide"
         ? shoeArticleLocales[locale]
         : null;
+    const translatedKeywordSearch =
+      article.slug === "lolobuy-keyword-search-product-finds"
+        ? keywordSearchArticleLocales[locale]
+        : null;
+    if (translatedKeywordSearch) {
+      return {
+        ...article,
+        ...translatedKeywordSearch,
+      };
+    }
     if (translatedShoe) {
       return {
         ...article,
