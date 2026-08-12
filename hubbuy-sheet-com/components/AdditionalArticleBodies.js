@@ -128,6 +128,86 @@ function HubbuyReviewsArticle({ article }) {
   );
 }
 
+function HubbuyOrderStatusArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">A Hubbuy order status is useful only when you know which handoff it describes. Payment, purchasing, seller dispatch, warehouse receipt, quality inspection and storage are different events. This guide helps you identify the last event that is actually supported by evidence, then ask the party responsible for the next one.</p>
+
+      <ResearchDisclosure>The current public HubbuyCN homepage, checked on 12 August 2026, confirms a staged sequence: place and pay for an order, Hubbuy purchases it, the seller sends it to the warehouse, the warehouse provides inspection and photos, and approved orders can later be combined for international shipping. The public page does not publish a permanent list of account-status labels or a universal processing time. Exact wording and account-specific instructions must therefore be read from the live order.</ResearchDisclosure>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Translate the label into a completed event and a missing next event</h2>
+        <p>Do not start with “How long has the order taken?” Start with “What is the last event I can prove?” A payment record proves that funds were accepted for the order. It does not prove that a buyer placed the marketplace order. A domestic tracking number proves that a shipment record exists. It does not necessarily prove carrier acceptance. Warehouse receipt proves arrival, not completed QC.</p>
+        <p>Copy the exact status, timestamp and any attached note before interpreting it. Account language can change, and two labels that sound similar may belong to different steps. Then write one sentence: “The last proven event is ___; the next event I need confirmed is ___.” That sentence turns a vague delay into a precise request.</p>
+        <div className="article-callout"><strong>The useful status formula</strong><p>Last proven event + responsible party + missing handoff + evidence needed.</p></div>
+      </section>
+
+      <section id="stage-map">
+        <span>02 · Stage map</span>
+        <h2>Use six stages without pretending they are permanent interface labels</h2>
+        <p>The current official public sequence supports six practical stages. First comes order submission and payment. Second is purchasing, when the agent acts on the selected marketplace listing. Third is seller dispatch through domestic logistics. Fourth is warehouse receipt and identification. Fifth is quality inspection and publication of order-specific photos. Sixth is storage, where an approved item waits for a later parcel decision.</p>
+        <p>These are editorial stage names, not a transcription of every Hubbuy screen. Their value is diagnostic. If the order is between purchase and seller dispatch, the seller or purchasing record is relevant. If domestic tracking shows delivery but the warehouse has not attached the item, receipt identification is relevant. If receipt is confirmed but photographs are absent, the missing step is inspection rather than transport.</p>
+        <div className="official-workflow" aria-label="Six diagnostic stages for a Hubbuy order"><div><b>01</b><strong>Paid</strong><span>Order and payment recorded</span></div><div><b>02</b><strong>Purchased</strong><span>Marketplace order placed</span></div><div><b>03</b><strong>Dispatched</strong><span>Seller hands off domestically</span></div><div><b>04</b><strong>Received</strong><span>Warehouse identifies arrival</span></div><div><b>05</b><strong>QC</strong><span>Photos and visible checks</span></div><div><b>06</b><strong>Stored</strong><span>Ready for an item decision</span></div></div>
+      </section>
+
+      <section id="order-record">
+        <span>03 · Build one record</span>
+        <h2>Track the order with fields that survive a changing interface</h2>
+        <p>Create one row per item rather than one note for an entire haul. Record the Hubbuy order number, source marketplace, seller, item identifier, selected colour or model, size, quantity, product payment time and domestic shipping charge shown for that transaction. Add the exact current status and the time it last changed.</p>
+        <ul><li><strong>Identity:</strong> order number, seller, source ID and selected option.</li><li><strong>Money event:</strong> what was paid and when, without assuming it proves purchase.</li><li><strong>Movement:</strong> domestic carrier, tracking number and last scan.</li><li><strong>Warehouse:</strong> receipt, QC publication and storage state.</li><li><strong>Decision:</strong> waiting, approved, evidence needed or problem raised.</li></ul>
+      </section>
+
+      <section id="purchase">
+        <span>04 · Payment and purchasing</span>
+        <h2>A paid order can still be waiting for the marketplace purchase</h2>
+        <p>The official public sequence says the customer places and pays for an order, after which Hubbuy purchases the product and the seller ships it to the warehouse. That wording establishes separate handoffs. If payment is complete but no purchasing evidence appears, check for an order note: an option may be unclear, the displayed seller price may have changed, domestic shipping may need confirmation, or the listing may no longer be usable.</p>
+        <p>If the source page changed, keep the original link and selected-option capture. The <Link href="/articles/hubbuy-product-link-not-working/">Hubbuy product-link troubleshooting guide</Link> explains how to preserve identity without treating a visually similar replacement as the same order.</p>
+      </section>
+
+      <section id="seller-dispatch">
+        <span>05 · Seller dispatch</span>
+        <h2>Separate a created tracking number from physical carrier movement</h2>
+        <p>After purchasing, the seller controls the next domestic handoff. A tracking number is helpful, but read its events. “Information received” can mean that a label exists while the carrier has not scanned the parcel. A carrier-acceptance or collection event is stronger evidence that movement began. Use the exact domestic record attached to the order rather than estimating from another seller.</p>
+        <div className="article-comparison"><div><span>Weak movement evidence</span><strong>Tracking created · no acceptance scan</strong></div><div><span>Stronger movement evidence</span><strong>Carrier accepted · transit events · delivery record</strong></div></div>
+      </section>
+
+      <section id="warehouse">
+        <span>06 · Warehouse receipt</span>
+        <h2>Allow for the receiving step, but document a missing match</h2>
+        <p>A domestic parcel can reach the warehouse before the item is visible as received. The receiving team may need to identify the order, open the package, confirm quantity and attach it to the correct account record. Treat carrier delivery and account receipt as adjacent but different events.</p>
+        <p>Once warehouse receipt is shown, compare the identified item with the source record. The next expected evidence is QC, not international tracking. The item has not entered your outbound parcel merely because it reached storage.</p>
+      </section>
+
+      <section id="qc-storage">
+        <span>07 · QC and storage</span>
+        <h2>QC complete and stored are decision states, not automatic approval</h2>
+        <p>The current public homepage places inspection, photos and storage after seller delivery to the warehouse. When photos appear, check the saved colour, size, model and quantity first. Then review visible condition and any decision-critical measurement. The <Link href="/articles/hubbuy-qc-photos-guide/">Hubbuy QC photo guide</Link> provides the category-level inspection method.</p>
+        <p>Do not confuse storage time with a seller-return window. The public storage statement and a transaction-specific problem process answer different questions. Act on QC issues promptly and follow the live order instructions.</p>
+      </section>
+
+      <section id="problem-status">
+        <span>08 · Exceptions</span>
+        <h2>Escalate the missing handoff with a compact evidence packet</h2>
+        <p>Use a four-part message: order identity, last proven event, missing next event and requested action. For a paid order, ask whether purchase was completed. For a seller shipment, ask for dispatch or domestic carrier evidence. For delivered domestic tracking, ask for warehouse receipt matching. For received goods without QC, ask whether inspection is pending or whether the order requires information.</p>
+        <div className="article-formula"><small>Example support request</small><strong>Order ID + last event and time + expected next event + one requested confirmation</strong></div>
+      </section>
+
+      <section id="worked-example">
+        <span>09 · Worked example</span>
+        <h2>Diagnose two items placed on the same day without merging their delays</h2>
+        <p>Imagine a hoodie and shoes were paid on the same evening. The hoodie shows a domestic carrier acceptance and two transit scans. The shoes show only that the order was purchased. The hoodie is in seller-to-warehouse movement; the correct action is to follow its domestic record. The shoes are waiting for seller dispatch; the useful question is whether the seller has provided an update. “Both orders are late” loses that distinction.</p>
+        <p>Two days later, the hoodie carrier shows delivery while Hubbuy has not yet posted QC. Your ledger now says: carrier delivery proven, warehouse receipt or identification not yet proven. Save the delivery event and ask about matching if the account remains unchanged. When photos appear, change the stage to QC and make an item decision. Only after approval should the hoodie move into the warehouse and consolidation plan described in the <Link href="/articles/hubbuy-warehouse-storage-consolidation/">storage and consolidation guide</Link>.</p>
+        <p>The method is deliberately conservative. It does not invent a deadline, promise seller speed or call an item lost from one quiet status. It keeps every inquiry tied to the handoff that is actually missing.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources"><strong>Dated source boundary</strong><p>Platform-specific statements were checked on 12 August 2026 against the current public HubbuyCN homepage operated by HK HUBBUYCN LIMITED. The page confirms procurement, seller delivery to the warehouse, inspection, photos, storage and later consolidation. It does not publish a permanent account-status dictionary or universal stage timing, so those details are intentionally not invented. Source addresses are kept in the publication report rather than added as outbound links here.</p></div>
+      <ArticleCta />
+    </>
+  );
+}
+
 function LinkTroubleshootingArticle({ article }) {
   return (
     <>
@@ -750,6 +830,7 @@ function HubbuyTrackingArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-order-status-guide") return <HubbuyOrderStatusArticle article={article} />;
   if (article.slug === "hubbuy-parcel-tracking-delay-guide") return <HubbuyTrackingArticle article={article} />;
   if (article.slug === "hubbuy-parcel-insurance-claim-guide") return <HubbuyInsuranceArticle article={article} />;
   if (article.slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsArticle article={article} />;

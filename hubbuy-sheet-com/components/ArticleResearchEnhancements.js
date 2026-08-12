@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "hubbuy-order-status-guide": [
+    ["Current purchase sequence", "The official public homepage separates ordering and payment from seller delivery to the warehouse."],
+    ["Current warehouse sequence", "The official public homepage places quality inspection, inspection photos and storage after domestic arrival."],
+    ["Current parcel sequence", "The official public homepage places consolidation and international-shipping payment after the warehouse stage."],
+  ],
   "hubbuy-parcel-tracking-delay-guide": [
     ["Shipping policy", "Warehouse dispatch and third-party logistics handoff baseline"],
     ["Forwarding agreement", "Inbound receipt and responsibility boundary"],
@@ -64,6 +69,24 @@ function EvidenceChain() {
         <div><b>04</b><strong>Parcel</strong><span>Weight + route + tracking</span></div>
       </div>
       <figcaption>Editorial workflow created by Hubbuy Sheet from the public three-stage purchase sequence. It is not an official Hubbuy interface image.</figcaption>
+    </figure>
+  );
+}
+
+function OrderStatusMap() {
+  return (
+    <figure className="research-visual research-chain">
+      <div className="research-visual-heading"><span>Original status map</span><strong>Prove the last completed handoff</strong></div>
+      <div className="research-chain-grid">
+        <div><b>01</b><strong>Order</strong><span>Payment and purchasing record</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>02</b><strong>Seller</strong><span>Domestic dispatch evidence</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>03</b><strong>Warehouse</strong><span>Receipt and item identification</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>04</b><strong>QC</strong><span>Photos, decision and storage</span></div>
+      </div>
+      <figcaption>Editorial stage map based on the current public purchase sequence checked on 12 August 2026. It is not an account screenshot or a promise that Hubbuy uses these exact English labels.</figcaption>
     </figure>
   );
 }
@@ -198,6 +221,7 @@ function TrackingEvidenceMap() {
 }
 
 function ArticleVisual({ slug }) {
+  if (slug === "hubbuy-order-status-guide") return <OrderStatusMap />;
   if (slug === "hubbuy-parcel-tracking-delay-guide") return <TrackingEvidenceMap />;
   if (slug === "hubbuy-parcel-insurance-claim-guide") return <InsuranceEvidenceMap />;
   if (slug === "hubbuy-restricted-items-shipping-guide") return <RestrictedItemsMatrix />;
@@ -224,7 +248,7 @@ export default function ArticleResearchEnhancements({ article }) {
         <div className="source-ledger-heading"><span>Primary-source ledger</span><strong>Official Hubbuy page and named section</strong></div>
         {sources.map(([section, evidence, href = OFFICIAL_HOME, label = "Official page ↗"], index) => article.noExternalSourceLinks ? (
           <div key={section} className="source-ledger-row">
-            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>Checked 10 Aug 2026</em>
+            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{article.slug === "hubbuy-order-status-guide" ? "Checked 12 Aug 2026" : "Checked 10 Aug 2026"}</em>
           </div>
         ) : (
           <a key={section} href={href} target="_blank" rel="noopener">

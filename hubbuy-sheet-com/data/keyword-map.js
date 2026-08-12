@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-order-status-guide": {
+    primaryQuery: "Hubbuy order status",
+    secondaryTerms: ["Hubbuy seller dispatch status", "Hubbuy warehouse received status", "Hubbuy QC status", "Hubbuy order stuck before warehouse"],
+    searchIntent: "Identify the last completed order handoff and the evidence needed for the next stage",
+    angle: "Stage-based diagnosis separating payment, purchasing, seller dispatch, warehouse receipt, QC and storage",
+    evidence: ["Current HubbuyCN public purchase sequence checked 12 August 2026", "Order-specific evidence boundaries"],
+    internalLinkRole: "Order-status troubleshooting leaf connecting purchase-link, QC and warehouse-planning clusters without competing with parcel tracking",
+  },
   "hubbuy-parcel-tracking-delay-guide": {
     primaryQuery: "Hubbuy tracking",
     secondaryTerms: ["Hubbuy parcel tracking", "Hubbuy tracking not updating", "Hubbuy customs delay", "Hubbuy parcel delayed"],
