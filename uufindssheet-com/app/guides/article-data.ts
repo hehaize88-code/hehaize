@@ -3,6 +3,8 @@ export type Guide = {
   label: string;
   title: string;
   description: string;
+  primaryKeyword?: string;
+  longTailKeywords?: string[];
   updated: string;
   readTime: string;
   publishedISO?: string;
@@ -28,6 +30,190 @@ export type Guide = {
 };
 
 export const guides: Guide[] = [
+  {
+    slug: "uufinds-qc-search-capabilities-limitations",
+    label: "QC SEARCH EVIDENCE",
+    title: "UUFinds QC Search Explained: What Results Can and Cannot Show",
+    seoTitle: "UUFinds QC Search: What Results Can and Cannot Show",
+    description: "Learn what a UUFinds QC search result can reveal, where its evidence stops and how to decide whether a listing needs more research.",
+    primaryKeyword: "UUFinds QC search",
+    longTailKeywords: [
+      "what does UUFinds QC show",
+      "UUFinds QC search results",
+      "UUFinds QC photo limitations",
+      "can UUFinds prove product quality",
+    ],
+    updated: "August 12, 2026",
+    readTime: "10 min read",
+    publishedISO: "2026-08-12",
+    modifiedISO: "2026-08-12",
+    englishOnly: true,
+    sourceNote: "Fact-checked August 12, 2026. The current public UUFinds QC Finder accepts Taobao, 1688, Weidian and agent links plus product names, and presents QC videos/photos and discovery views. Its public disclaimer describes the service as informational and says UUFinds does not sell products or control marketplace authenticity, legality or quality. The evidence method in this guide is independent editorial analysis, not an official buying procedure.",
+    intro: [
+      "A UUFinds QC search can help you locate warehouse photos or video connected with a product candidate. It can reveal visible construction, labels, measurements and differences between photographed samples when those details are actually present. It cannot turn a similar-looking result into the same listing, certify authenticity or predict the condition of a unit that has not been purchased. The result is evidence to classify, not a verdict to accept.",
+      "This guide gives QC researchers a strict boundary map. It explains what the current public search accepts, what a returned record supports, which conclusions remain outside the images and when an empty or incomplete result should stop the research. It does not repeat the separate link-search tutorial or the full photo-inspection checklist. The goal is to decide whether a result is exact enough and complete enough to remain on a shortlist.",
+    ],
+    sections: [
+      {
+        heading: "1. Start with the narrow answer: a result shows available records, not a future product",
+        paragraphs: [
+          "The current public UUFinds QC Finder describes access to QC videos and photos gathered from shopping agents. That is the useful core: a researcher may be able to find visual records associated with a marketplace item or product query. A result can therefore answer questions such as whether any media is available, which visible option appears in it and which details were photographed.",
+          "A result does not establish that the same seller still has stock, that a later unit will look identical or that the media covers every version on a multi-option listing. It also does not mean UUFinds sold, inspected or approved the product. The public disclaimer describes UUFinds as an informational platform and says it does not sell products directly or indirectly. Keep that role boundary beside every observation.",
+        ],
+        points: [
+          "Search evidence: a record or media set was returned for the input.",
+          "Identity evidence: the returned record matches the intended source and option.",
+          "Visual evidence: the media clearly shows a decision-relevant detail.",
+          "Unknown: anything not established by those three layers.",
+        ],
+      },
+      {
+        heading: "2. Read the input method before judging the output",
+        paragraphs: [
+          "The live finder currently names inputs for Taobao, 1688, Weidian and agent links, plus a product-name search. These inputs do not carry equal identity strength. An exact marketplace link can preserve a source item identifier. An agent link may point to a wrapper that needs comparison with the original source. A product name is broad discovery evidence because titles, keywords and catalog images can be reused by different sellers.",
+          "UUFinds also displays discovery views such as Recommended, New QC, Search Ranking, QC Ranking and Buyer Show. Those views can help a researcher find candidates, but a ranking or recommendation label is not a quality certificate. Treat it as a route into records. The exact item, seller context and relevant option still need to be checked before any media is assigned to the candidate.",
+          "Choose the narrowest input your evidence supports. If you have an exact marketplace address, do not begin with a vague nickname. If you have only a screenshot or product phrase, label the search as discovery and expect several possible matches. Changing the input changes the claim you can make about the output.",
+        ],
+        table: {
+          caption: "Input strength and the conclusion it supports",
+          headers: ["Input", "Useful conclusion", "Boundary"],
+          rows: [
+            ["Exact marketplace link", "A result may relate to one source item", "Seller, option and media record still need matching"],
+            ["Agent link", "A wrapper may help recover a source candidate", "The agent page is not proof of affiliation or an exact source match"],
+            ["Product name", "Possible listings or related records can be discovered", "Visual or textual similarity is not item identity"],
+          ],
+        },
+      },
+      {
+        heading: "3. Classify identity before inspecting workmanship",
+        paragraphs: [
+          "Researchers often zoom into stitching before proving that the photos belong to the intended listing. Reverse the order. First compare the marketplace, visible item identifier, seller or source field when available, product title and selected style. Then check whether the photographed colour, size, edition or model conflicts with the option being considered.",
+          "Use four confidence labels. “Exact” means the source identity agrees and the relevant option does not conflict. “Probable” means the central item agrees but one material identity field is absent. “Reference only” means the object looks related but the source cannot be tied to the candidate. “Conflict” means an item number, seller or visible option disagrees. Only the exact level should carry a strong listing-specific conclusion.",
+        ],
+        points: [
+          "Exact: source identity agrees and the photographed option is relevant.",
+          "Probable: likely item, but one important identity field is unavailable.",
+          "Reference only: useful visual context without a traceable listing match.",
+          "Conflict: a visible identifier or option contradicts the candidate.",
+        ],
+      },
+      {
+        heading: "4. Count samples, not image files",
+        paragraphs: [
+          "A gallery with many angles can still represent one physical item. Count distinct photographed units only when the record clearly separates them. Front, back, sole, label and measurement views of one shoe are five images but one sample. This matters because repeated angles improve coverage while repeated units can provide limited evidence about visible consistency.",
+          "Write the number conservatively. If the page structure does not prove whether two groups belong to separate units, call them media groups rather than purchased samples. Do not describe the number of files as the number of customers, orders or batches. The public finder does not make every record a statistically representative product study.",
+        ],
+      },
+      {
+        heading: "5. Name only what the photos or video visibly establish",
+        paragraphs: [
+          "Useful observations are literal. A straight image may show overall shape, panel spacing, colour blocking and visible symmetry. Close views may show seam paths, print edges, hardware attachment, labels or surface marks. A measurement image may support a dimension when the ruler start point, end point and item position are visible. Video may add movement and angles between still frames.",
+          "Write “the left and right panel spacing appears similar in this view,” not “the construction is perfect.” Write “the ruler appears to run from heel to toe and reads approximately 28 centimetres,” not “this will fit everyone who wears size 44.” A visible fact remains useful even when its conclusion is modest.",
+        ],
+        points: [
+          "Shape and visible proportions in the photographed view.",
+          "Visible assembly, stitching, printing, labels and surface condition.",
+          "A shown measurement when the measuring method is readable.",
+          "Missing angles or details that remain unknown.",
+        ],
+      },
+      {
+        heading: "6. Keep authenticity, legality, durability and future performance outside the claim",
+        paragraphs: [
+          "UUFinds' public disclaimer says it does not control the authenticity, legality or quality of products sold on third-party marketplaces. That boundary is decisive. QC media can help compare visible features, but it is not an authentication certificate, legal opinion, laboratory test or warranty. A label photographed clearly is evidence that the photographed item carried that label; it does not independently prove the label's truth.",
+          "Images also cannot establish long-term durability, material composition, electronics performance, waterproofing or personal fit unless a qualified test directly addresses that property. Even a functional-looking video is limited to what occurs in the clip. Internal components and later failure remain unknown.",
+          "Most importantly, media from a past record does not guarantee a future unit. Sellers can change stock, options, batches or listing content. Treat several exact records as examples of observed units, not a promise that all units are identical. Final commercial facts belong to the live seller listing and the purchasing service the user independently chooses.",
+        ],
+        table: {
+          caption: "Do not upgrade a visual observation into an unsupported promise",
+          headers: ["Media may support", "Media does not independently prove"],
+          rows: [
+            ["A visible label, seam or measurement", "Authenticity, material composition or exact fit"],
+            ["Condition of the photographed sample", "Condition of a later unit or entire batch"],
+            ["Movement shown in one video", "Durability, safety or long-term function"],
+            ["Similarity to a source listing", "Legality, seller reliability or current stock"],
+          ],
+        },
+      },
+      {
+        heading: "7. Treat an empty or incomplete result as missing evidence",
+        paragraphs: [
+          "The current public finder can display an item-not-found message asking the visitor to re-enter or complete the information. That state does not prove the listing is fake, removed or unsupported. It only proves that the submitted search did not produce the expected record in that attempt. Several causes are possible, and the public message does not identify one universal cause.",
+          "Run a controlled retry: preserve the original input, remove unrelated text around the link, try the original marketplace address when you began with a wrapper, and then use a precise product phrase only as discovery. Record each result. If broader searching returns a look-alike, start a new identity check rather than transferring confidence from the missing record.",
+          "Stop when the decision-critical evidence remains absent. A blank result is not permission to borrow photos from another seller. An incomplete result may still support a low-risk observation, but if size, option identity or a critical component is unknown, keep the candidate on hold or replace it with one that has a stronger evidence chain.",
+        ],
+      },
+      {
+        heading: "8. Finish with a decision record, then choose the purchasing service independently",
+        paragraphs: [
+          "Summarise the search in six fields: original source, input used, match confidence, relevant variant, useful visible evidence and unresolved questions. Then assign one of three outcomes. Continue means the listing is exact enough and the visible evidence answers the important questions. Hold means identity is probable or one critical view is missing. Replace means the record conflicts or the uncertainty is unacceptable.",
+          "If the candidate continues, re-check the current seller page for identifier, seller, displayed price, options and size information. Save the original source link. The user must then choose a purchasing agent or marketplace process independently, paste or submit the exact source according to that service's current instructions and review the new order and warehouse evidence it provides. UUFinds research does not create an affiliation with that agent and does not replace its terms, fees or support.",
+          "The defensible chain is simple: exact source, documented search, classified match, literal media notes, unresolved limits and a current destination check. It cannot guarantee the product. It does show precisely why the candidate remained on the shortlist and which facts still belong to the later purchasing decision.",
+        ],
+        table: {
+          caption: "A result-based decision rule",
+          headers: ["Decision", "Minimum condition", "Next step"],
+          rows: [
+            ["Continue", "Exact identity and sufficient relevant media", "Re-check the live source and save the record"],
+            ["Hold", "Probable match or one critical unknown", "Seek a stronger identifier, view or measurement"],
+            ["Replace", "Identity conflict or unacceptable missing evidence", "Return to discovery without reusing the old media"],
+          ],
+        },
+      },
+    ],
+    evidence: [
+      {
+        type: "Official platform interface",
+        source: "UUFinds public QC Finder",
+        checked: "August 12, 2026",
+        supports: "Named marketplace, agent-link and product-name inputs; QC video/photo discovery; discovery views and an item-not-found state.",
+        boundary: "Does not make every result an exact listing match or guarantee that every valid product has media.",
+      },
+      {
+        type: "Official platform disclaimer",
+        source: "UUFinds public QC Finder disclaimer",
+        checked: "August 12, 2026",
+        supports: "UUFinds describes itself as informational, says it does not sell products and identifies limits around marketplace authenticity, legality and quality.",
+        boundary: "The disclaimer does not turn a photograph into authentication, product approval or a future-unit guarantee.",
+      },
+      {
+        type: "Developer-controlled listing",
+        source: "Apple App Store listing from Uufinds Limited",
+        checked: "August 12, 2026",
+        supports: "The public app description names link conversion and quality-picture functions; version notes describe QC and photo-search development.",
+        boundary: "Feature copy does not establish result coverage, seller reliability, stock or purchasing outcome.",
+      },
+      {
+        type: "Independent editorial analysis",
+        source: "UUFinds Sheet evidence-boundary method",
+        checked: "August 12, 2026",
+        supports: "Identity labels, sample-count rules and continue/hold/replace decisions used in this guide.",
+        boundary: "The method is not an official UUFinds procedure and is not based on a claimed personal order.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/guides/uufinds-taobao-1688-weidian-qc-search-guide/",
+        label: "Run the complete UUFinds product-link search",
+        description: "Preserve a Taobao, 1688, Weidian or agent link and troubleshoot an empty result without losing identity.",
+      },
+      {
+        href: "/guides/uufinds-qc-checklist/",
+        label: "Inspect an exact UUFinds QC match",
+        description: "Use the category-aware photo review order after the source and relevant option have been confirmed.",
+      },
+      {
+        href: "/guides/spreadsheet-vs-qc-finder/",
+        label: "Separate discovery from verification",
+        description: "Compare what a product spreadsheet organises with what a QC finder can help verify.",
+      },
+      {
+        href: "/faq/",
+        label: "Review the independent evidence FAQ",
+        description: "Check the site's source, link and visible-evidence boundaries before continuing research.",
+      },
+    ],
+  },
   {
     slug: "uufinds-spreadsheet-shopping-guide-2026",
     label: "SEO BUYING GUIDE",

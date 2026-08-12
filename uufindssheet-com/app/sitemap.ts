@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-23");
-  const articleUpdate = new Date("2026-08-10");
+  const articleUpdate = new Date("2026-08-12");
   const categoryUpdate = new Date("2026-08-08");
   const trustPaths = ["about", "contact", "editorial-policy", "privacy", "terms"];
   const localizedPaths = [

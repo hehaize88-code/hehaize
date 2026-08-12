@@ -32,6 +32,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "QC SEARCH EVIDENCE",
+    title: "UUFinds QC Search Explained: What Results Can and Cannot Show",
+    summary: "Classify listing identity, visible evidence and unresolved limits before treating a QC result as useful research.",
+    href: "/guides/uufinds-qc-search-capabilities-limitations/",
+    read: "10 min read",
+    englishOnly: true,
+  },
+  {
     tag: "SEO BUYING GUIDE",
     title: "How to Use a UUFinds Spreadsheet: Product Finds & QC Workflow",
     summary: "A step-by-step workflow for using a spreadsheet to shortlist products, check matching QC evidence and verify the live detail page.",
