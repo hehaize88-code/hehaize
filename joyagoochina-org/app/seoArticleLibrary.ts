@@ -23,10 +23,15 @@ import {
   domesticShippingArticles,
   domesticShippingSourceBodies,
 } from "./domesticShippingArticle";
+import {
+  exchangeRateArticles,
+  exchangeRateSourceBodies,
+} from "./exchangeRateArticle";
 
 export type SeoArticle = SeoArticleCopy["article"];
 
 export const extraSeoArticleSlugs = [
+  "joyagoo-exchange-rate-currency-conversion",
   "joyagoo-domestic-shipping-seller-to-warehouse",
   "joyagoo-parcel-consolidation-packaging-guide",
   "how-to-buy-from-taobao-with-joyagoo",
@@ -55,6 +60,7 @@ export type SeoArticleEntry = {
 };
 
 const englishExtras: Record<ExtraSeoArticleSlug, SeoArticle> = {
+  "joyagoo-exchange-rate-currency-conversion": exchangeRateArticles.en,
   "joyagoo-domestic-shipping-seller-to-warehouse":
     domesticShippingArticles.en,
   "joyagoo-parcel-consolidation-packaging-guide":
@@ -374,6 +380,7 @@ const localizedMeta: Record<
 };
 
 const articleGuideMap: Record<ExtraSeoArticleSlug, string> = {
+  "joyagoo-exchange-rate-currency-conversion": "how-to-buy",
   "joyagoo-domestic-shipping-seller-to-warehouse": "how-to-buy",
   "joyagoo-parcel-consolidation-packaging-guide": "shipping-guide",
   "how-to-buy-from-taobao-with-joyagoo": "how-to-buy",
@@ -386,6 +393,7 @@ const companionSections: Record<
   ExtraSeoArticleSlug,
   Array<{ guide: string; section: number }>
 > = {
+  "joyagoo-exchange-rate-currency-conversion": [],
   "joyagoo-domestic-shipping-seller-to-warehouse": [],
   "joyagoo-parcel-consolidation-packaging-guide": [],
   "how-to-buy-from-taobao-with-joyagoo": [],
@@ -404,6 +412,13 @@ const companionSections: Record<
 };
 
 const keywords: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-exchange-rate-currency-conversion": [
+    "joyagoo exchange rate",
+    "joyagoo currency conversion",
+    "joyagoo top up currency",
+    "joyagoo payment exchange rate",
+    "joyagoo local currency payment",
+  ],
   "joyagoo-domestic-shipping-seller-to-warehouse": [
     "joyagoo domestic shipping",
     "joyagoo seller to warehouse shipping",
@@ -450,6 +465,7 @@ const keywords: Record<SeoArticleSlug, string[]> = {
 };
 
 const sourceBodies: Record<SeoArticleSlug, string> = {
+  "joyagoo-exchange-rate-currency-conversion": exchangeRateSourceBodies.en,
   "joyagoo-domestic-shipping-seller-to-warehouse":
     domesticShippingSourceBodies.en,
   "joyagoo-parcel-consolidation-packaging-guide":
@@ -468,6 +484,10 @@ export const seoArticleDates: Record<
   SeoArticleSlug,
   { publishedAt: string; modifiedAt: string }
 > = {
+  "joyagoo-exchange-rate-currency-conversion": {
+    publishedAt: "2026-08-13",
+    modifiedAt: "2026-08-13",
+  },
   "joyagoo-domestic-shipping-seller-to-warehouse": {
     publishedAt: "2026-08-11",
     modifiedAt: "2026-08-11",
@@ -549,6 +569,13 @@ function buildLocalizedExtra(
   locale: Exclude<Locale, "en">,
   slug: ExtraSeoArticleSlug,
 ): SeoArticle {
+  if (slug === "joyagoo-exchange-rate-currency-conversion") {
+    return completeArticle(
+      locale,
+      exchangeRateArticles[locale],
+      exchangeRateArticles.en,
+    );
+  }
   if (slug === "joyagoo-domestic-shipping-seller-to-warehouse") {
     return completeArticle(
       locale,
@@ -612,18 +639,22 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
         ? sourceBodies[slug]
         : slug === "joyagoo-domestic-shipping-seller-to-warehouse"
           ? domesticShippingSourceBodies[locale]
+        : slug === "joyagoo-exchange-rate-currency-conversion"
+          ? exchangeRateSourceBodies[locale]
         : slug === "joyagoo-parcel-consolidation-packaging-guide"
           ? parcelConsolidationSourceBodies[locale]
           : `${localizedContent[locale].article.sourceBody} ${localizedContent[locale].guides[articleGuideMap[slug]].sourceLabel}.`,
     ...seoArticleDates[slug],
     readTime:
       slug === "how-to-buy-from-taobao-with-joyagoo" ||
+      slug === "joyagoo-exchange-rate-currency-conversion" ||
       slug === "joyagoo-parcel-consolidation-packaging-guide" ||
       slug === "joyagoo-domestic-shipping-seller-to-warehouse"
         ? "10 minute read"
         : "9 minute read",
     relatedLinks:
       slug === "how-to-buy-from-taobao-with-joyagoo" ||
+      slug === "joyagoo-exchange-rate-currency-conversion" ||
       slug === "joyagoo-parcel-consolidation-packaging-guide" ||
       slug === "joyagoo-domestic-shipping-seller-to-warehouse"
         ? ["how-to-buy", "qc-guide", "shipping-guide", "articles"]

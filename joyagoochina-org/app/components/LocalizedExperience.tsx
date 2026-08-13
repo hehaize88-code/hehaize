@@ -221,6 +221,7 @@ function OfficialSourceLinks({
 }
 
 const hidesEditorialSourceLinks = new Set([
+  "joyagoo-exchange-rate-currency-conversion",
   "joyagoo-domestic-shipping-seller-to-warehouse",
 ]);
 

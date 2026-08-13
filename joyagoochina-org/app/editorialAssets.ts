@@ -43,6 +43,11 @@ const editorialImages: Record<string, EditorialImage> = {
     width: 750,
     height: 750,
   },
+  "joyagoo-exchange-rate-currency-conversion": {
+    src: "/products/3377.webp",
+    width: 750,
+    height: 750,
+  },
   "joyagoo-parcel-consolidation-packaging-guide": {
     src: "/products/3376.webp",
     width: 750,
