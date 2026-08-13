@@ -47,6 +47,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "LoloBuy Shoe Size Guide: Measure Before Ordering",
     "lolobuy-keyword-search-product-finds":
       "LoloBuy Keyword Search: Find Better Product Links",
+    "lolobuy-taobao-finds-compare-options":
+      "LoloBuy Taobao Finds: Compare Options Before Ordering",
   },
   es: {
     "lolobuy-spreadsheet-guide":
@@ -67,6 +69,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Guía de tallas LoloBuy: mide antes de pedir",
     "lolobuy-keyword-search-product-finds":
       "Búsqueda LoloBuy: encuentra mejores enlaces",
+    "lolobuy-taobao-finds-compare-options":
+      "Hallazgos Taobao LoloBuy: comparar opciones",
   },
   de: {
     "lolobuy-spreadsheet-guide":
@@ -87,6 +91,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "LoloBuy Schuhgrößen: Vor der Bestellung messen",
     "lolobuy-keyword-search-product-finds":
       "LoloBuy Keyword-Suche: bessere Produktlinks",
+    "lolobuy-taobao-finds-compare-options":
+      "LoloBuy Taobao-Funde: Optionen vergleichen",
   },
   fr: {
     "lolobuy-spreadsheet-guide":
@@ -107,6 +113,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Guide tailles LoloBuy : mesurer avant commande",
     "lolobuy-keyword-search-product-finds":
       "Recherche LoloBuy : trouver de meilleurs liens",
+    "lolobuy-taobao-finds-compare-options":
+      "Trouvailles Taobao LoloBuy : comparer les options",
   },
   it: {
     "lolobuy-spreadsheet-guide":
@@ -127,6 +135,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Taglie scarpe LoloBuy: misura prima dell’ordine",
     "lolobuy-keyword-search-product-finds":
       "Ricerca LoloBuy: trovare link prodotto migliori",
+    "lolobuy-taobao-finds-compare-options":
+      "Prodotti Taobao LoloBuy: confrontare le opzioni",
   },
 };
 

@@ -90,4 +90,13 @@ export const articleTopicMap: ArticleTopicMapEntry[] = [
     evidence: ["LoloBuy public website checked August 12, 2026", "Lolobuy Sheet query-and-variant framework"],
     internalLinkRole: "Product-discovery bridge from the finds directory to source-link verification and spreadsheet maintenance.",
   },
+  {
+    url: "/articles/lolobuy-taobao-finds-compare-options",
+    primaryQuery: "LoloBuy Taobao finds",
+    relatedTerms: ["compare Taobao product options", "LoloBuy Taobao size color quantity", "Taobao finds checklist", "LoloBuy Taobao product link"],
+    intent: "commercial investigation",
+    angle: "Compare exact live option combinations, evidence and seller terms before submitting a Taobao source link.",
+    evidence: ["LoloBuy public website checked August 14, 2026", "Lolobuy Sheet Taobao option-comparison framework"],
+    internalLinkRole: "Marketplace-specific comparison branch after keyword discovery and before order or warehouse verification.",
+  },
 ];

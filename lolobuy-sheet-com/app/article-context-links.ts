@@ -63,6 +63,12 @@ const routesByArticle: Record<string, string[]> = {
     "/articles/lolobuy-weidian-link-guide",
     "/articles/lolobuy-spreadsheet-guide",
   ],
+  "lolobuy-taobao-finds-compare-options": [
+    "/finds",
+    "/articles/lolobuy-keyword-search-product-finds",
+    "/articles/lolobuy-weidian-link-guide",
+    "/guides/qc",
+  ],
 };
 
 const contextCopy: Record<Locale, ContextCopy> = {
@@ -97,6 +103,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Tracking delay last-scan checklist",
       "/articles/lolobuy-weidian-link-guide":
         "Product-link and variant verification",
+      "/articles/lolobuy-keyword-search-product-finds":
+        "Keyword search and shortlist workflow",
     },
   },
   es: {
@@ -130,6 +138,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Checklist del último escaneo de tracking",
       "/articles/lolobuy-weidian-link-guide":
         "Verificación de enlaces y variantes",
+      "/articles/lolobuy-keyword-search-product-finds":
+        "Búsqueda por palabras y lista corta",
     },
   },
   de: {
@@ -163,6 +173,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Letzter-Scan-Check für Trackinglücken",
       "/articles/lolobuy-weidian-link-guide":
         "Produktlink- und Variantenprüfung",
+      "/articles/lolobuy-keyword-search-product-finds":
+        "Keyword-Suche und Auswahlliste",
     },
   },
   fr: {
@@ -196,6 +208,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Checklist du dernier scan de suivi",
       "/articles/lolobuy-weidian-link-guide":
         "Vérification du lien et de la variante",
+      "/articles/lolobuy-keyword-search-product-finds":
+        "Recherche par mots-clés et présélection",
     },
   },
   it: {
@@ -229,6 +243,8 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Checklist dell'ultima scansione tracking",
       "/articles/lolobuy-weidian-link-guide":
         "Verifica di link e varianti",
+      "/articles/lolobuy-keyword-search-product-finds":
+        "Ricerca per parole e lista breve",
     },
   },
 };

@@ -115,7 +115,7 @@ test("redirects legacy query and /en URLs to canonical language paths", async ()
   assert.equal(englishPrefix.headers.get("location"), "https://lolobuy-sheet.com/faq");
 });
 
-test("publishes all 190 language URLs in the sitemap", async () => {
+test("publishes all 195 language URLs in the sitemap", async () => {
   const worker = await loadWorker();
   const response = await fetchPage(worker, "/sitemap.xml");
   const xml = await response.text();
@@ -125,7 +125,7 @@ test("publishes all 190 language URLs in the sitemap", async () => {
     response.headers.get("content-type") ?? "",
     /application\/xml|text\/xml/i,
   );
-  assert.equal((xml.match(/<url>/g) ?? []).length, 190);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 195);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/faq/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/shoes/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/bags/);
@@ -452,7 +452,7 @@ test("publishes a measurable, Lolobuy-specific research footprint", async () => 
   assert.match(html, /CURRENT RESEARCH FOOTPRINT/);
   assert.match(html, /8<\/dt><dd>individual product evidence pages/);
   assert.match(html, /9<\/dt><dd>deep category guides/);
-  assert.match(html, /9<\/dt><dd>fact-checked long-form articles/);
+  assert.match(html, /10<\/dt><dd>fact-checked long-form articles/);
   assert.match(html, /href="\/articles\/lolobuy-weidian-link-guide"/);
   assert.match(html, /href="\/categories\/shoes"/);
 });
@@ -494,7 +494,7 @@ test("publishes a bounded English QC-mismatch article and an evolving topic map"
   assert.match(topicMap, /internalLinkRole:/);
   assert.equal(
     (topicMap.match(/url: "\/articles\//g) ?? []).length,
-    9,
+    10,
   );
 });
 
@@ -548,7 +548,7 @@ test("publishes a distinct five-language tracking troubleshooting article", asyn
   );
   assert.match(topicMap, /primaryQuery: "lolobuy tracking not updating"/);
   assert.match(topicMap, /lolobuy tracking number not working/);
-  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 9);
+  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 10);
 });
 
 test("publishes a distinct five-language shoe sizing decision guide", async () => {
@@ -595,7 +595,7 @@ test("publishes a distinct five-language shoe sizing decision guide", async () =
   );
   assert.match(topicMap, /primaryQuery: "lolobuy shoe size guide"/);
   assert.match(topicMap, /lolobuy insole measurement/);
-  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 9);
+  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 10);
 });
 
 test("publishes a distinct five-language keyword-search workflow", async () => {
@@ -617,6 +617,32 @@ test("publishes a distinct five-language keyword-search workflow", async () => {
 
   for (const locale of ["es", "de", "fr", "it"]) {
     const localized = await fetchPage(worker, `/${locale}/articles/lolobuy-keyword-search-product-finds`);
+    assert.equal(localized.status, 200, locale);
+    assert.match(await localized.text(), /class="article-context-links"/);
+  }
+});
+
+test("publishes a distinct five-language Taobao option comparison guide", async () => {
+  const worker = await loadWorker();
+  const pathname = "/articles/lolobuy-taobao-finds-compare-options";
+  const response = await fetchPage(worker, pathname);
+  const html = await response.text();
+  const prose = html.match(/<div class="article-prose">([\s\S]*?)<\/div><\/div><\/article>/)?.[1] ?? "";
+  const visibleText = decodeHtml(prose.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+  const words = visibleText.match(/[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*/g) ?? [];
+
+  assert.equal(response.status, 200);
+  assert.ok(words.length >= 1200, `article has only ${words.length} words`);
+  assert.ok(words.length <= 1800, `article has ${words.length} words`);
+  assert.match(html, /rel="canonical" href="https:\/\/lolobuy-sheet\.com\/articles\/lolobuy-taobao-finds-compare-options"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /lolobuy-taobao-finds-compare-options\.svg/);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+  assert.doesNotMatch(html, /"@type":"Product"/);
+
+  for (const locale of ["es", "de", "fr", "it"]) {
+    const localized = await fetchPage(worker, `/${locale}${pathname}`);
     assert.equal(localized.status, 200, locale);
     assert.match(await localized.text(), /class="article-context-links"/);
   }

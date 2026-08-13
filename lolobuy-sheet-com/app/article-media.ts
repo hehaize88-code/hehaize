@@ -44,6 +44,11 @@ const articleMedia = {
     width: 1200,
     height: 630,
   },
+  "lolobuy-taobao-finds-compare-options": {
+    src: "/articles/lolobuy-taobao-finds-compare-options.svg",
+    width: 1200,
+    height: 630,
+  },
 } as const;
 
 export function getArticleMedia(slug: string) {
