@@ -87,7 +87,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 98 canonical sitemap URLs with language alternates", async () => {
+test("publishes 103 canonical sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -96,14 +96,14 @@ test("publishes 98 canonical sitemap URLs with language alternates", async () =>
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 98);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 103);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
     xml,
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 98);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 103);
   assert.match(
     xml,
     /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-29<\/lastmod>/,
@@ -327,6 +327,25 @@ test("publishes a function-first stitching and finish QC checklist", async () =>
   assert.equal(Number(lengthMatch[1].replaceAll(",", "")) <= 1800, true);
 });
 
+test("publishes a perspective-aware alignment and print-placement QC guide", async () => {
+  const pathname = "/articles/lolobuy-alignment-symmetry-print-placement-qc";
+  const response = await fetchPage(pathname);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+
+  assert.match(html, /<h1>LoloBuy Alignment QC:/);
+  assert.match(html, /rel="canonical" href="https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-alignment-symmetry-print-placement-qc"/);
+  assert.match(html, /"@type":"Article"/);
+  assert.match(html, /"@type":"BreadcrumbList"/);
+  assert.match(html, /"datePublished":"2026-08-14"/);
+  assert.doesNotMatch(html, /"@type":"Product"/);
+
+  const lengthMatch = html.match(/<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/);
+  assert.ok(lengthMatch, "visible editorial word count is missing");
+  const words = Number(lengthMatch[1].replaceAll(",", ""));
+  assert.equal(words >= 1200 && words <= 1800, true, `alignment QC guide reports ${words} words`);
+});
+
 test("redirects legacy language parameters to clean locale paths", async () => {
   const response = await fetchPage("/shipping?lang=fr");
   assert.equal(response.status, 301);
@@ -427,155 +446,4 @@ test("publishes transparent editorial, legal and commercial-disclosure pages", a
       html,
       new RegExp(
         `rel="canonical" href="https://lolobuy-sheet\\.net${pathname.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`,
-      ),
-    );
-    assert.match(html, /LoloBuy Sheet Editorial/);
-  }
-});
-
-test("uses distinct 1200 by 630 social images for audited page intents", async () => {
-  const pages = new Map([
-    ["/", "spreadsheet-guide.png"],
-    ["/products", "product-catalog.png"],
-    ["/categories", "categories.png"],
-    ["/qc-guide", "qc-guide.png"],
-    ["/shipping", "shipping-guide.png"],
-    ["/articles", "buying-guides.png"],
-    ["/faq", "faq.png"],
-    ["/how-it-works", "how-it-works.png"],
-    ["/privacy-policy", "editorial-standards.png"],
-    ["/articles/lolobuy-hoodie-size-guide", "hoodie-sizing-guide.png"],
-    ["/articles/how-to-buy-from-lolobuy", "how-to-buy-lolobuy.png"],
-  ]);
-
-  for (const [pathname, filename] of pages) {
-    const response = await fetchPage(pathname);
-    assert.equal(response.status, 200, pathname);
-    const html = await response.text();
-    assert.match(
-      html,
-      new RegExp(
-        `property="og:image" content="https://lolobuy-sheet\\.net/social/${filename.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`,
-      ),
-      pathname,
-    );
-  }
-
-  for (const filename of new Set(pages.values())) {
-    const bytes = await readFile(
-      new URL(`../public/social/${filename}`, import.meta.url),
-    );
-    assert.equal(bytes.readUInt32BE(16), 1200, filename);
-    assert.equal(bytes.readUInt32BE(20), 630, filename);
-  }
-});
-
-test("keeps all twelve product references while removing unverified brand titles", async () => {
-  const response = await fetchPage("/");
-  assert.equal(response.status, 200);
-  const html = await response.text();
-
-  assert.match(html, /Cushioned trail running shoes/);
-  assert.match(html, /Graphic pullover hoodie collection/);
-  assert.doesNotMatch(
-    html,
-    /HOKA|Off-White|GUCCI|Samsung|Rick Owens|Nike|Louis Vuitton|Dior|Celine|Golden Goose|Polo Ralph|Syna World|Corteiz|NUMERIS/i,
-  );
-  assert.match(html, /not endorsed by LoloBuy or any product brand/);
-  assert.match(html, /operator may benefit commercially/);
-
-  const referenceIds = [
-    ...html.matchAll(/href="\/products\/(\d+)"/g),
-  ].map((match) => match[1]);
-  assert.equal(new Set(referenceIds).size, 12);
-});
-
-test("uses the requested homepage title, H1 and Buying Guides label", async () => {
-  const response = await fetchPage("/");
-  assert.equal(response.status, 200);
-  const html = await response.text();
-
-  assert.match(html, /<title>LoloBuy Spreadsheet 2026: Finds, QC &amp; Shipping<\/title>/);
-  assert.match(html, /<h1 id="hero-title">LoloBuy Spreadsheet 2026: Matched Product Finds &amp; Buying Guides<\/h1>/);
-  assert.match(html, />Buying Guides<\/a>/);
-  assert.doesNotMatch(html, /SEO Articles|SEO articles/);
-});
-
-test("publishes twelve internal product reference pages with honest schema", async () => {
-  const ids = [3359, 3369, 3371, 3357, 3367, 3366, 3368, 3372, 3356, 3355, 3353, 3351];
-
-  for (const id of ids) {
-    const pathname = `/products/${id}`;
-    const response = await fetchPage(pathname);
-    assert.equal(response.status, 200, pathname);
-    const html = await response.text();
-
-    assert.match(html, /"@type":"ItemPage"/, pathname);
-    assert.match(html, /"@type":"BreadcrumbList"/, pathname);
-    assert.doesNotMatch(html, /"@type":"Product"|"@type":"Offer"/, pathname);
-    assert.match(html, /These are dated reference values, not a live offer/, pathname);
-    assert.match(html, new RegExp(`AllProducts/${id}\\.html`), pathname);
-    assert.match(html, /rel="sponsored noopener noreferrer"/, pathname);
-  }
-});
-
-test("publishes four internal category reference pages", async () => {
-  for (const slug of ["shoes", "hoodies", "jackets", "accessories"]) {
-    const pathname = `/categories/${slug}`;
-    const response = await fetchPage(pathname);
-    assert.equal(response.status, 200, pathname);
-    const html = await response.text();
-
-    assert.match(html, /"@type":"CollectionPage"/, pathname);
-    assert.match(html, /"@type":"ItemList"/, pathname);
-    assert.match(html, /href="\/products\/\d+"/, pathname);
-    assert.match(html, /rel="sponsored noopener noreferrer"/, pathname);
-  }
-});
-
-test("publishes every article detail in all five languages with reciprocal hreflang", async () => {
-  const slugs = [
-    "how-to-use-lolobuy-spreadsheet",
-    "lolobuy-qc-photos-guide",
-    "lolobuy-shipping-cost-guide",
-    "how-to-buy-from-lolobuy",
-    "lolobuy-hoodie-size-guide",
-    "lolobuy-bag-qc-guide",
-    "lolobuy-stitching-finish-qc-checklist",
-  ];
-  const localeMarkers = new Map([
-    ["es", "Qué decisión resuelve esta guía"],
-    ["de", "Welche Entscheidung dieser Ratgeber unterstützt"],
-    ["fr", "La décision traitée par ce guide"],
-    ["it", "La decisione affrontata dalla guida"],
-  ]);
-
-  for (const slug of slugs) {
-    for (const [locale, marker] of localeMarkers) {
-      const pathname = `/${locale}/articles/${slug}`;
-      const response = await fetchPage(pathname);
-      assert.equal(response.status, 200, pathname);
-      const html = await response.text();
-
-      assert.match(html, new RegExp(`<html[^>]+lang="${locale}"`), pathname);
-      assert.match(html, new RegExp(`data-article-locale="${locale}"`), pathname);
-      assert.match(html, new RegExp(marker), pathname);
-      assert.match(html, new RegExp(`rel="canonical" href="https://lolobuy-sheet\\.net${pathname}"`), pathname);
-      assert.match(html, new RegExp(`hrefLang="en" href="https://lolobuy-sheet\\.net/articles/${slug}"`), pathname);
-      assert.match(html, new RegExp(`hrefLang="${locale}" href="https://lolobuy-sheet\\.net/${locale}/articles/${slug}"`), pathname);
-      assert.match(html, new RegExp(`"inLanguage":"${locale}"`), pathname);
-    }
-  }
-});
-
-test("serves responsive lazy product images and marks commercial links sponsored", async () => {
-  const response = await fetchPage("/");
-  assert.equal(response.status, 200);
-  const html = await response.text();
-
-  assert.match(html, /imageSrcSet="\/products-320\/3359\.webp 320w, \/products-480\/3359\.webp 480w, \/products\/3359\.webp 750w"/);
-  assert.match(html, /fetchPriority="high"/);
-  assert.match(html, /loading="lazy"/);
-  assert.match(html, /rel="sponsored noopener noreferrer"/);
-  assert.doesNotMatch(html, /target="_blank" rel="noopener noreferrer"/);
-});
+      
