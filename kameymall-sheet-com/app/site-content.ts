@@ -19,7 +19,8 @@ export type StaticRouteKey =
   | "articles/how-to-read-kameymall-qc-photos"
   | "articles/kameymall-warehouse-storage-returns-guide"
   | "articles/kameymall-payment-methods-fees"
-  | "articles/kameymall-order-status-guide";
+  | "articles/kameymall-order-status-guide"
+  | "articles/kameymall-consolidation-vs-split-parcels";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
 
@@ -41,6 +42,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/kameymall-warehouse-storage-returns-guide",
   "articles/kameymall-payment-methods-fees",
   "articles/kameymall-order-status-guide",
+  "articles/kameymall-consolidation-vs-split-parcels",
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -1125,6 +1127,24 @@ for (const language of languages) {
   copy.pageIntros["articles/kameymall-order-status-guide"] = update.intro;
 }
 
+const consolidationArticleUi: Record<Locale, { card: CardCopy; intro: { kicker: string; title: string; intro: string }; libraryIntro: string }> = {
+  en: { card: { label: "Parcel planning", title: "KameyMall Consolidation vs Split Parcels", body: "Compare route eligibility, billable shape, protection, timing and live quotes before grouping warehouse items.", action: "Read the parcel guide" }, intro: { kicker: "Parcel planning guide", title: "KameyMall Consolidation vs Split Parcels: A Decision Guide", intro: "A source-checked framework for choosing one compatible parcel, isolating a conflict item or creating sensible groups." }, libraryIntro: "Eight original guides cover product discovery, ordering, shipping costs, QC, storage, returns, payments, status troubleshooting and parcel consolidation." },
+  de: { card: { label: "Paketplanung", title: "KameyMall-Konsolidierung oder Teilpakete", body: "Route, abrechenbare Form, Schutz, Zeit und Live-Angebote vor der Gruppierung vergleichen.", action: "Paketleitfaden lesen" }, intro: { kicker: "Leitfaden zur Paketplanung", title: "KameyMall-Konsolidierung oder Teilpakete: Entscheidungshilfe", intro: "Ein quellengeprüfter Rahmen für ein gemeinsames Paket, die Isolation eines Konflikts oder sinnvolle Gruppen." }, libraryIntro: "Acht originale Ratgeber behandeln Produktsuche, Bestellung, Fracht, QC, Lager, Rückgabe, Zahlung, Status und Konsolidierung." },
+  fr: { card: { label: "Planification des colis", title: "Consolidation KameyMall ou colis séparés", body: "Comparez ligne, forme facturable, protection, délai et devis avant de regrouper les articles.", action: "Lire le guide colis" }, intro: { kicker: "Guide de planification des colis", title: "Consolidation KameyMall ou colis séparés : guide de décision", intro: "Un cadre vérifié pour choisir un colis compatible, isoler un conflit ou constituer des groupes cohérents." }, libraryIntro: "Huit guides originaux couvrent découverte, commande, transport, QC, stockage, retours, paiements, statuts et consolidation." },
+  es: { card: { label: "Planificación de paquetes", title: "Consolidación KameyMall o paquetes separados", body: "Compara ruta, forma facturable, protección, tiempo y cotización antes de agrupar artículos.", action: "Leer guía de paquetes" }, intro: { kicker: "Guía de planificación de paquetes", title: "Consolidación KameyMall o paquetes separados: guía práctica", intro: "Un marco verificado para elegir un paquete compatible, aislar un conflicto o crear grupos sensatos." }, libraryIntro: "Ocho guías originales cubren productos, pedidos, transporte, QC, almacén, devoluciones, pagos, estados y consolidación." },
+  it: { card: { label: "Pianificazione pacchi", title: "Consolidamento KameyMall o pacchi separati", body: "Confronta rotta, forma fatturabile, protezione, tempi e preventivo prima di unire gli articoli.", action: "Leggi la guida pacchi" }, intro: { kicker: "Guida alla pianificazione dei pacchi", title: "Consolidamento KameyMall o pacchi separati: guida pratica", intro: "Un metodo verificato per un pacco compatibile, isolare un conflitto o creare gruppi coerenti." }, libraryIntro: "Otto guide originali coprono prodotti, ordini, trasporto, QC, deposito, resi, pagamenti, stati e consolidamento." },
+  pl: { card: { label: "Planowanie paczek", title: "Konsolidacja KameyMall czy osobne paczki", body: "Porównaj trasę, kształt rozliczeniowy, ochronę, czas i wycenę przed grupowaniem.", action: "Przeczytaj poradnik paczek" }, intro: { kicker: "Poradnik planowania paczek", title: "Konsolidacja KameyMall czy osobne paczki: poradnik", intro: "Sprawdzony schemat wyboru wspólnej paczki, izolacji konfliktu lub tworzenia logicznych grup." }, libraryIntro: "Osiem oryginalnych poradników obejmuje produkty, zamówienia, fracht, QC, magazyn, zwroty, płatności, statusy i konsolidację." },
+};
+
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  const update = consolidationArticleUi[language.code];
+  copy.articles.cards.push(update.card);
+  copy.articles.intro = update.libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: update.libraryIntro };
+  copy.pageIntros["articles/kameymall-consolidation-vs-split-parcels"] = update.intro;
+}
+
 export const copies: Record<Locale, SiteCopy> = {
   en: english,
   de: german,
@@ -1178,4 +1198,5 @@ export const articleRoutes: StaticRouteKey[] = [
   "articles/kameymall-warehouse-storage-returns-guide",
   "articles/kameymall-payment-methods-fees",
   "articles/kameymall-order-status-guide",
+  "articles/kameymall-consolidation-vs-split-parcels",
 ];
