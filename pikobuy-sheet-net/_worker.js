@@ -1,4 +1,5 @@
 const ROUTES = new Set([
+  '/articles/pikobuy-taobao-finds-compare-options/',
   '/articles/pikobuy-keyword-search-product-finds/',
   '/de/guides/how-to-use-pikobuy/',
   '/de/guides/pikobuy-qc-checklist/',
