@@ -208,6 +208,79 @@ function HubbuyOrderStatusArticle({ article }) {
   );
 }
 
+function HubbuyReturnsAfterQcArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">A warehouse problem is easiest to solve before the item enters an international parcel. The useful question is not simply “Can I get a refund?” It is: what was ordered, what arrived, what can the QC evidence prove, and which transaction-specific remedy is still available?</p>
+
+      <ResearchDisclosure>Hubbuy’s current public sequence confirms that sellers deliver purchases to its warehouse, where inspection photos and storage precede international parcel submission. Publicly indexed HubbuyCN navigation also lists “Returns and Refunds” as a separate help topic. During the 14 August 2026 check, the detailed help interface was under maintenance, so this guide does not publish a fixed window, fee, seller obligation or guaranteed outcome.</ResearchDisclosure>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Pause the item, prove the mismatch and ask for the live resolution terms</h2>
+        <p>If a warehouse photo shows the wrong colour, model, size, quantity or visible damage, do not approve the item for an outbound parcel. Save the order record and photo set, describe one observable mismatch, and use the current order’s support path to ask whether return, exchange, missing-part delivery, price adjustment or another remedy is available.</p>
+        <div className="article-callout"><strong>First action</strong><p>Mark the item as unresolved in your own ledger and exclude it from every parcel plan until the final order record matches the agreed outcome.</p></div>
+      </section>
+
+      <section id="return-boundary">
+        <span>02 · Policy boundary</span>
+        <h2>Storage time and a seller return opportunity are different clocks</h2>
+        <p>The public HubbuyCN homepage places inspection photos and storage after warehouse arrival. That storage allowance is not a seller’s return period. Report problems promptly and read the live transaction terms.</p>
+        <p>The public help navigation names Returns and Refunds, but the detailed page was not reliably accessible during this fact check. That means a universal number would be guesswork. Read the current order controls and support reply for the exact deadline, eligibility, domestic freight responsibility and refund path. If a reply gives a date, save it with the timezone or platform timestamp rather than relying on memory.</p>
+      </section>
+
+      <section id="qc-evidence">
+        <span>03 · Build the evidence</span>
+        <h2>Connect every claim to the saved listing and selected option</h2>
+        <p>Start with identity. Keep the Hubbuy order number, source marketplace link, seller or store reference, item identifier, selected variant and quantity. Add the order summary captured at payment and any seller size chart or product specification that influenced the choice. A photo of a blue hoodie is not evidence of an error until the record shows that black was ordered.</p>
+        <p>Describe the warehouse observation without diagnosing a cause. “QC image 4 shows M; the saved option says XL” is useful. For damage, name the location and visible form.</p>
+        <ul><li><strong>Expected:</strong> quote or capture the exact selected field.</li><li><strong>Observed:</strong> name the photo and visible fact.</li><li><strong>Impact:</strong> explain why it changes acceptance.</li><li><strong>Request:</strong> ask for one resolution or the available choices.</li></ul>
+        <p>If the angle cannot prove the issue, request one useful check before alleging a defect. The <Link href="/articles/hubbuy-qc-photos-guide/">Hubbuy QC photo guide</Link> separates visible facts from assumptions.</p>
+      </section>
+
+      <section id="issue-types">
+        <span>04 · Classify the problem</span>
+        <h2>Different issue types need different proof</h2>
+        <p>A wrong variant is an identity problem: show the selected colour, size or model beside the warehouse label or item. Missing quantity is a counting problem: show the paid quantity and every visible piece. Transit damage from the seller to the warehouse is a condition problem, but the photographs may not establish when or why it happened. A measurement concern requires the seller’s stated measurement and a comparable warehouse measurement using the same endpoints.</p>
+        <div className="article-comparison"><div><span>Strong issue record</span><strong>Selected XL · QC label M · readable images</strong></div><div><span>Weak issue record</span><strong>“Looks wrong” · no saved option · no exact photo</strong></div></div>
+      </section>
+
+      <section id="resolution-options">
+        <span>05 · Compare remedies</span>
+        <h2>Return, exchange and acceptance solve different problems</h2>
+        <p>A return aims to reverse the item purchase, subject to the live seller and platform response. Confirm whether the seller accepts it, what amount is expected back, who bears domestic return freight, whether any service cost is non-refundable and how the account will record completion. Do not subtract an assumed fee from the expected refund.</p>
+        <p>An exchange adds domestic return, replacement dispatch, warehouse receipt and new QC. Use it when stock is confirmed and the extra uncertainty is acceptable. Record any price adjustment as a confirmed amount, not a vague promise.</p>
+        <table><caption>Resolution decision conditions</caption><thead><tr><th>Option</th><th>Prefer when</th><th>Confirm first</th></tr></thead><tbody><tr><td>Return</td><td>The item is unusable or no longer wanted under the available terms</td><td>Acceptance, cost, return address process and expected account credit</td></tr><tr><td>Exchange</td><td>The exact replacement is available and extra time is acceptable</td><td>Replacement option, seller stock, domestic movement and new QC</td></tr><tr><td>Accept</td><td>The difference is documented and does not cross your decision threshold</td><td>Any confirmed adjustment and removal of the support hold</td></tr></tbody></table>
+      </section>
+
+      <section id="support-request">
+        <span>06 · Write the request</span>
+        <h2>Use one message that a purchasing team can act on</h2>
+        <p>Lead with identity, then evidence, then the requested outcome. A compact message is easier to relay to a seller: “Order HB-Example, black hoodie, XL, quantity one. The order summary shows XL; QC photo 3 shows an M label. Please keep it out of parcel submission and confirm whether the seller accepts return or exchange, the domestic return cost, the response deadline and how the result will appear in my account.”</p>
+      </section>
+
+      <section id="worked-example">
+        <span>07 · Worked example</span>
+        <h2>Compare a return with an exchange without inventing the answer</h2>
+        <p>Suppose QC shows size 42 while the saved option says 43. The seller offers a return under the live terms or an exchange if size 43 remains in stock. Both are feasible.</p>
+        <p>The return decision closes the item but requires a new product search. The exchange retains the listing but adds domestic movement and a second QC check. The buyer records four unknowns before choosing: seller stock, domestic return cost, expected replacement dispatch and whether a new measurement can verify the replacement. If any one makes the exchange unattractive, return becomes clearer. The calculation uses confirmed transaction facts, not an invented “typical” fee or duration.</p>
+        <p>After choosing exchange, the original item remains excluded from consolidation. The record closes only when the returned unit has movement evidence, the replacement is matched to the same agreed option, and the new QC result is approved. The <Link href="/articles/hubbuy-order-status-guide/">order-status guide</Link> helps track those handoffs without confusing seller dispatch with warehouse receipt.</p>
+      </section>
+
+      <section id="decision-checklist">
+        <span>08 · Final checklist</span>
+        <h2>Close every financial and physical loose end</h2>
+        <ol><li>Confirm the item is not included in a submitted parcel.</li><li>Save the listing, chosen option, order summary and relevant QC views.</li><li>Describe one observable mismatch and its decision impact.</li><li>Record the live eligibility, response date, domestic cost and remedy.</li><li>Track the physical item: held, returned, replaced or accepted.</li><li>Track the money: expected amount, confirmed posting and destination balance.</li><li>Review a replacement as a new warehouse arrival.</li><li>Add the item to consolidation only after the support case is closed.</li></ol>
+        <p>This process cannot guarantee seller acceptance. It does prevent the most avoidable loss: shipping an unresolved item internationally while the useful evidence and domestic resolution path are still at the warehouse stage. Keep the final record beside the warehouse ledger in the <Link href="/articles/hubbuy-warehouse-storage-consolidation/">storage and consolidation guide</Link>.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources"><strong>Dated source boundary</strong><p>Platform facts were checked on 14 August 2026 against the current public HubbuyCN homepage and publicly indexed help navigation. The detailed returns page was not reliably accessible during the check, so fixed windows, fees, seller obligations and refund timing are intentionally left to the live order and current official response.</p></div>
+      <ArticleCta />
+    </>
+  );
+}
+
 function LinkTroubleshootingArticle({ article }) {
   return (
     <>
@@ -830,6 +903,7 @@ function HubbuyTrackingArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-return-exchange-after-qc") return <HubbuyReturnsAfterQcArticle article={article} />;
   if (article.slug === "hubbuy-order-status-guide") return <HubbuyOrderStatusArticle article={article} />;
   if (article.slug === "hubbuy-parcel-tracking-delay-guide") return <HubbuyTrackingArticle article={article} />;
   if (article.slug === "hubbuy-parcel-insurance-claim-guide") return <HubbuyInsuranceArticle article={article} />;

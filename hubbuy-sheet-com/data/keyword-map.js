@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-return-exchange-after-qc": {
+    primaryQuery: "Hubbuy returns after QC",
+    secondaryTerms: ["Hubbuy return after warehouse QC", "Hubbuy exchange wrong item", "Hubbuy refund QC issue", "Hubbuy warehouse return evidence"],
+    searchIntent: "Turn a warehouse QC problem into a documented return, exchange or acceptance decision before parcel submission",
+    angle: "Evidence-first after-sales workflow that separates visible mismatch, seller response, warehouse handling and final account reconciliation",
+    evidence: ["Current HubbuyCN public purchase and warehouse sequence checked 14 August 2026", "Current public help navigation and transaction-specific policy boundary"],
+    internalLinkRole: "After-sales decision leaf connecting QC evidence and warehouse planning without competing with order-status or parcel-tracking intent",
+  },
   "hubbuy-order-status-guide": {
     primaryQuery: "Hubbuy order status",
     secondaryTerms: ["Hubbuy seller dispatch status", "Hubbuy warehouse received status", "Hubbuy QC status", "Hubbuy order stuck before warehouse"],

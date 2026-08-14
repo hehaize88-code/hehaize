@@ -34,7 +34,7 @@ const guideCards = [
   { tag: "Parcel checklist", title: "Packing, weight and route plan", text: "Review the final parcel data, protection needs and eligible lines before submission.", href: "/guides/shipping", tone: "blue" },
 ];
 
-const homeArticles = articles.slice(1, 4);
+const homeArticles = articles.slice(0, 4);
 
 export default function HomePage({ locale = "en" } = {}) {
   preload(products[0].image, { as: "image", fetchPriority: "high" });
