@@ -31,6 +31,178 @@ export type Guide = {
 
 export const guides: Guide[] = [
   {
+    slug: "how-to-read-uufinds-product-detail-page",
+    label: "PRODUCT DETAIL RESEARCH",
+    title: "How to Read a UUFinds Product Detail Page: QC Evidence Guide",
+    seoTitle: "How to Read a UUFinds Product Detail Page",
+    description: "Read a UUFinds product detail page without confusing a source record, seller information or QC media with proof about a future purchase.",
+    primaryKeyword: "UUFinds product detail page",
+    longTailKeywords: [
+      "how to read UUFinds item details",
+      "UUFinds QC product page fields",
+      "UUFinds seller and image evidence",
+      "UUFinds no data product page",
+    ],
+    updated: "August 14, 2026",
+    readTime: "10 min read",
+    publishedISO: "2026-08-14",
+    modifiedISO: "2026-08-14",
+    englishOnly: true,
+    sourceNote: "Fact-checked August 14, 2026 against the current public UUFinds QC Finder and public goodItemDetail routes. The finder accepts marketplace links, agent links and product names, while public detail states can show image browsing, a seller entry, an item-details or note area, and empty-result messages. Fields vary by record. UUFinds describes itself as an informational QC-photo platform, not a seller; any later purchase is handled by the independent agent the user chooses.",
+    intro: [
+      "A UUFinds product detail page is useful when you read it as a bundle of separate clues. One clue identifies the page route, another may describe the seller or source, and another presents QC images connected with a stored record. None of those clues automatically proves that a listing is still live, that every option shares the same construction or that a future unit will match the photographed one.",
+      "The safest reading order is identity first, option second, media third and purchase status last. This guide explains that order using only fields and states visible on current public UUFinds pages. It also shows what to record when a page is incomplete or says that no data is available. The aim is a defensible shortlist, not a quality verdict.",
+    ],
+    sections: [
+      {
+        heading: "1. Identify which detail route you opened",
+        paragraphs: [
+          "Current public UUFinds results can lead to detail addresses whose path includes either a QC context or a UU context. Public QC detail states expose labels such as Browse Image and Seller when data is available, while a UU detail state can present Item Details and Note. The exact fields are record-dependent, and some public addresses return No data available. Read the route and visible labels before assuming that every page is the same template.",
+          "The route type is not a quality grade. It helps you describe where the record came from and which evidence the page is attempting to show. Save the complete detail URL before clicking elsewhere. If a later result looks similar, the two addresses give you a basic way to keep the records separate rather than merging them by appearance.",
+        ],
+        points: [
+          "Record type: QC detail, UU detail or an empty/error state.",
+          "Record address: save the complete URL, including any identifier or source parameter.",
+          "Visible modules: note which item, seller, image or note areas actually load.",
+          "Research status: exact candidate, reference only, conflict or insufficient data.",
+        ],
+      },
+      {
+        heading: "2. Prove item identity before reading the photographs",
+        paragraphs: [
+          "Do not begin by zooming into stitching. First ask whether the page belongs to the marketplace item you intended to research. Compare any visible source link, item identifier, title, seller reference and catalog image with the original address or spreadsheet row that brought you there. A matching silhouette is weak evidence because multiple sellers can reuse the same studio image or product name.",
+          "Use three identity levels. Exact means the source item identifier agrees and no visible option conflicts. Probable means the central item appears to agree but a material field is absent. Reference only means the page shows a related product without a traceable source match. If the identifier, seller or selected model conflicts, label the record Conflict and stop using its QC media for the candidate.",
+          "An agent wrapper link deserves the same discipline. The public finder currently accepts agent links, but that input capability does not establish an affiliation between UUFinds and the agent. Recover and preserve the underlying marketplace source whenever the page exposes it; otherwise keep the record at probable or reference-only confidence.",
+        ],
+        table: {
+          caption: "Identity confidence before visual inspection",
+          headers: ["Level", "Minimum evidence", "What you may claim"],
+          rows: [
+            ["Exact", "Source item agrees; no option conflict", "Media can be assessed as evidence for this candidate"],
+            ["Probable", "Central item agrees; one key field is absent", "Media may inform questions, not a final match"],
+            ["Reference only", "Visual similarity without source identity", "Use only to learn what details could be checked"],
+            ["Conflict", "Seller, item or option disagrees", "Do not assign the media to the candidate"],
+          ],
+        },
+      },
+      {
+        heading: "3. Separate seller information from item evidence",
+        paragraphs: [
+          "A visible Seller entry tells you that seller context may be available for the record. It does not prove current stock, dispatch reliability, after-sales terms or the quality of every item from that shop. Seller-level information and unit-level QC media answer different questions. Keep the seller name or source reference beside the exact item identifier rather than using a shop association as a substitute for item matching.",
+          "If the seller link or source page opens, compare the current title, active options and listing images. If it is dead, do not silently replace it with a visually similar page. Mark the source as unavailable and keep the old detail URL as historical research evidence. A new seller page becomes a new candidate with its own identity check.",
+        ],
+        points: [
+          "Seller clue: identifies context when present.",
+          "Listing clue: identifies one marketplace item when recoverable.",
+          "Option clue: identifies colour, size, model or edition when visible.",
+          "QC clue: documents only the photographed record, not the seller's entire output.",
+        ],
+      },
+      {
+        heading: "4. Read Browse Image as a media set, not a verdict",
+        paragraphs: [
+          "The current public QC detail interface can expose a Browse Image area. Begin with coverage: count the distinct useful views and identify what each one actually shows. Then move from overall shape to option labels, construction, finish and measurement evidence. Repeated crops of the same angle do not add the same confidence as a front view, back view, label view and a decision-relevant close-up.",
+          "Write observations in neutral language. “The left seam changes direction near the cuff” is visible. “The garment will fail” is a prediction. “The label reads size L” is visible when legible. “It fits like a US medium” is not. Lighting, lens distance, compression and screen settings also limit colour comparisons. If colour decides the purchase, treat an uncertain shade as unresolved rather than forcing a match.",
+          "QC media describes an item or batch represented in that record. It cannot guarantee the condition of a unit not yet purchased. UUFinds’ public disclaimer explicitly places authenticity, legality and marketplace product quality outside its control. Use the images to generate checks and rejection conditions, not to convert uncertainty into certification.",
+        ],
+      },
+      {
+        heading: "5. Match the option or keep the result conditional",
+        paragraphs: [
+          "A listing can combine colours, sizes, materials, versions and bundled accessories under one item address. A product-level match is therefore not enough. Compare any option information in the detail record with the exact version you would choose. If the QC images show black size 42 and the candidate is white size 44, the media may reveal general construction but cannot confirm colour, dimensions or option-specific details.",
+          "Create an option tuple in one line: colour or model, size, edition, bundle and quantity. Fill only fields that are visible or saved from the live source. Mark absent fields Unknown. This prevents an attractive photo set from quietly acquiring option details it never showed.",
+        ],
+        table: {
+          caption: "Example option tuple",
+          headers: ["Field", "Recorded evidence", "Decision"],
+          rows: [
+            ["Model", "Source and detail record agree", "Matched"],
+            ["Colour", "QC appears dark; exact option absent", "Unknown"],
+            ["Size", "Readable 42 label; candidate needs 44", "Conflict"],
+            ["Accessories", "Not visible in the media set", "Request evidence later"],
+          ],
+        },
+      },
+      {
+        heading: "6. Interpret No data and Item does not exist correctly",
+        paragraphs: [
+          "Current public UUFinds states can display No data available, No data, or a message that the item does not exist and the input should be entered again. These are evidence states, not product reviews. They can mean that the requested record did not load or was not found through that route. They do not prove that the marketplace listing is fake, sold out or poor quality.",
+          "Retry with the clean original marketplace URL when you have it, then verify that redirects did not remove the item identifier. If you began with a name, narrow it with a distinctive model term; if you began with an agent wrapper, recover the source address. Record the date of the empty result. A later successful search is a new observation, not proof that the earlier page secretly contained media.",
+          "Stop after a small number of controlled attempts. Changing the URL, keyword, marketplace and product at once destroys the diagnostic value of the test. If no traceable result appears, keep the candidate as No QC record found and evaluate it through other legitimate evidence rather than borrowing photos from a similar listing.",
+        ],
+      },
+      {
+        heading: "7. Build a one-row detail-page record",
+        paragraphs: [
+          "A useful research row should survive a page update. Save the detail URL, date checked, route type, original marketplace address, visible item and seller identifiers, option tuple, media coverage, strongest observation, unresolved question and confidence label. Add a separate field for current source status: live, changed, gated or unavailable.",
+          "For example, imagine a QC detail page whose source item agrees with a shoe candidate. Images show both sides, outsole and a readable size 42 label, but no insole measurement. Your row says Exact item, size 42 media, measurement unresolved. If you need size 42, the page remains a strong candidate for later measurement verification. If you need size 44, the record becomes option reference only. The photographs did not change; the decision did.",
+          "Date the row because seller pages, options and media availability can change. Keep observations separate from conclusions so another reader can audit the match. The separate UUFinds QC search limitations guide explains why an available record and a future product remain different objects.",
+        ],
+      },
+      {
+        heading: "8. Move from research to a chosen agent without implying affiliation",
+        paragraphs: [
+          "UUFinds describes itself as an informational platform and says it does not sell products directly or indirectly. When research is complete, any purchase must be handled through the marketplace and the independent purchasing agent the user chooses. A button, converted link or accepted agent URL does not by itself prove an official relationship, shared policy or shared responsibility.",
+          "Carry forward the original marketplace link, exact option tuple and decision-critical QC questions. In the chosen agent’s current order interface, verify the seller, price, option, fees and service terms again. Later warehouse photos belong to that order and should be reviewed on their own evidence. Do not assume an older UUFinds record guarantees what the seller will dispatch.",
+          "The final pre-order rule is simple: proceed only when the source identity is traceable, the required option is available, the unresolved risks are acceptable and the chosen agent independently confirms the transaction it will handle. Otherwise keep researching or remove the candidate from the shortlist.",
+        ],
+        points: [
+          "Save the marketplace source—not only a UUFinds or agent wrapper URL.",
+          "Copy the exact option tuple and quantity.",
+          "List the two or three QC checks that could change acceptance.",
+          "Re-check every price, service term and order field with the chosen agent.",
+        ],
+      },
+    ],
+    evidence: [
+      {
+        type: "Official interface",
+        source: "UUFinds QC Finder",
+        checked: "August 14, 2026",
+        supports: "Marketplace, agent-link and product-name inputs; QC media discovery; empty-result messaging.",
+        boundary: "An input method or returned record does not prove product identity, authenticity or future unit quality.",
+      },
+      {
+        type: "Official interface",
+        source: "Public QC detail routes",
+        checked: "August 14, 2026",
+        supports: "Public states displaying Browse Image, Seller and no-data results.",
+        boundary: "Fields vary by record, and an empty state is not a seller or product verdict.",
+      },
+      {
+        type: "Official interface",
+        source: "Public UU item-detail route",
+        checked: "August 14, 2026",
+        supports: "Item Details, Note and No data available states on the public route checked.",
+        boundary: "The route does not guarantee that any particular candidate has complete detail data.",
+      },
+      {
+        type: "Official disclaimer",
+        source: "UUFinds platform disclaimer",
+        checked: "August 14, 2026",
+        supports: "UUFinds describes itself as informational and says it does not sell products or control marketplace authenticity, legality or quality.",
+        boundary: "Any later purchase and its terms belong to the marketplace and independently chosen agent.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/guides/uufinds-qc-search-capabilities-limitations/",
+        label: "Understand QC search limits",
+        description: "Separate available records, identity evidence and unknowns before accepting a result.",
+      },
+      {
+        href: "/guides/uufinds-qc-checklist/",
+        label: "Use the full QC checklist",
+        description: "Review visible identity, condition, construction and measurement evidence in a repeatable order.",
+      },
+      {
+        href: "/guides/uufinds-taobao-1688-weidian-qc-search-guide/",
+        label: "Troubleshoot the source link",
+        description: "Search with an exact marketplace address and diagnose empty or mismatched results.",
+      },
+    ],
+  },
+  {
     slug: "uufinds-qc-search-capabilities-limitations",
     label: "QC SEARCH EVIDENCE",
     title: "UUFinds QC Search Explained: What Results Can and Cannot Show",

@@ -32,6 +32,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "PRODUCT DETAIL RESEARCH",
+    title: "How to Read a UUFinds Product Detail Page: QC Evidence Guide",
+    summary: "Check route type, item identity, seller context, options, QC media and empty states without treating one record as a guarantee.",
+    href: "/guides/how-to-read-uufinds-product-detail-page/",
+    read: "10 min read",
+    englishOnly: true,
+  },
+  {
     tag: "QC SEARCH EVIDENCE",
     title: "UUFinds QC Search Explained: What Results Can and Cannot Show",
     summary: "Classify listing identity, visible evidence and unresolved limits before treating a QC result as useful research.",
