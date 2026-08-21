@@ -35,29 +35,35 @@ export const metadata = {
 export default function RootLayout({ children }) {
  return (
   <html lang="en">
-    <body>
+<body>
 
 <Script
-  async
   src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"
+  strategy="afterInteractive"
 />
 
-<Script id="google-analytics">
+<Script id="google-analytics" strategy="afterInteractive">
 {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QY8MM7VZV2');
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QY8MM7VZV2');
 `}
 </Script>
 
-     <LanguageRuntime>
-          <a className="skip-link" href="#main-content">Skip to content</a>
-          <Header />
-          <main id="main-content">{children}</main>
-          <Footer />
-        </LanguageRuntime>
+<LanguageRuntime>
+  <a className="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+  <Header />
+
+  <main id="main-content">
+    {children}
+  </main>
+
+  <Footer />
+</LanguageRuntime>
 
     </body>
   </html>
