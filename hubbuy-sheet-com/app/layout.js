@@ -33,7 +33,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script>
+
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QY8MM7VZV2');
+      `,
+    }}
+  />
+</head>
       <body>
         <LanguageRuntime>
           <a className="skip-link" href="#main-content">Skip to content</a>
