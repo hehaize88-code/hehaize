@@ -34,7 +34,7 @@ import {
 const CNY_TO_USD = 0.1481;
 const SITE_URL = "https://kameymall-sheet.com";
 
-const articleDates: Record<(typeof articleRoutes)[number], string> = {
+const articleDates: Partial<Record<StaticRouteKey, string>> = {
   "articles/kameymall-spreadsheet-guide-2026": "2026-08-03",
   "articles/how-to-buy-from-kameymall-2026": "2026-08-03",
   "articles/kameymall-shipping-cost-guide-2026": "2026-08-03",
@@ -799,8 +799,8 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
                 "@type": "Article",
                 headline: articlePage.title,
                 description: articlePage.intro,
-                datePublished: articleDates[route as (typeof articleRoutes)[number]],
-                dateModified: articleDates[route as (typeof articleRoutes)[number]],
+                datePublished: articleDates[route as StaticRouteKey] ?? "2026-08-03",
+                dateModified: articleDates[route as StaticRouteKey] ?? "2026-08-03",
                 mainEntityOfPage: canonical,
                 url: canonical,
                 inLanguage: locale,
