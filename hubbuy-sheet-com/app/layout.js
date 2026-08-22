@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
 <body>
 
 <Script
+  id="google-analytics-loader"
   src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"
   strategy="afterInteractive"
 />
