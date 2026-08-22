@@ -258,6 +258,7 @@ test("adds product, breadcrumb, and category ItemList structured data", async ()
   const categoryHtml = await categoryResponse.text();
 
   assert.match(productHtml, /"@type":"Product"/);
+  assert.doesNotMatch(productHtml, /"@type":"Offer"/);
   assert.match(productHtml, /"@type":"BreadcrumbList"/);
   assert.match(productHtml, /KMS-7818078364/);
   assert.match(productHtml, /href="https:\/\/www\.cnbuycha\.com\/AllProducts\/3378\.html"/);
@@ -283,6 +284,44 @@ function jsonLd(html) {
   assert.ok(source, "JSON-LD script");
   return JSON.parse(source);
 }
+
+
+test("renders intent-specific search metadata without changing page modules", async () => {
+  const worker = await loadWorker();
+  const expectations = [
+    ["/", "KameyMall Spreadsheet 2026 – 30 Verified Finds &amp; QC", "Browse 30 checked KameyMall finds with live product links"],
+    ["/finds", "KameyMall Finds 2026: 30 Checked Products &amp; Prices", "Search 30 checked KameyMall finds across 10 categories"],
+    ["/articles", "KameyMall Guides 2026: Shipping, QC, Storage &amp; Fees", "Read eight source-checked KameyMall guides"],
+    ["/products/new-balance-1906r", "New Balance 1906R KameyMall Find | Price &amp; Buying Notes", "product ID 7818078364"],
+  ];
+
+  for (const [pathname, title, descriptionFragment] of expectations) {
+    const html = await (await render(worker, pathname)).text();
+    assert.ok(html.includes(`<title>${title}</title>`), `${pathname} title`);
+    assert.ok(html.includes(descriptionFragment), `${pathname} description`);
+    assert.match(html, /property="og:site_name" content="KameyMall Sheet"/);
+    assert.match(html, /name="twitter:card" content="summary(?:_large_image)?"/);
+  }
+});
+
+test("uses each article's real publication date in Article structured data", async () => {
+  const worker = await loadWorker();
+  const cases = [
+    ["/articles/kameymall-spreadsheet-guide-2026", "2026-08-03"],
+    ["/articles/kameymall-warehouse-storage-returns-guide", "2026-08-08"],
+    ["/articles/kameymall-payment-methods-fees", "2026-08-09"],
+    ["/articles/kameymall-order-status-guide", "2026-08-11"],
+    ["/articles/kameymall-consolidation-vs-split-parcels", "2026-08-13"],
+  ];
+
+  for (const [pathname, expectedDate] of cases) {
+    const schema = jsonLd(await (await render(worker, pathname)).text());
+    const article = Array.isArray(schema) ? schema.find((item) => item["@type"] === "Article") : schema;
+    assert.equal(article.datePublished, expectedDate, pathname);
+    assert.equal(article.dateModified, expectedDate, pathname);
+    assert.equal(article.isAccessibleForFree, true, pathname);
+  }
+});
 
 test("adds visible-content-matched FAQPage structured data in all six languages", async () => {
   const worker = await loadWorker();
@@ -676,7 +715,7 @@ test("publishes a complete consolidation decision guide in all six languages", a
 test("uses the focused homepage metadata and deepens the three priority category pages", async () => {
   const worker = await loadWorker();
   const homeHtml = await (await render(worker, "/")).text();
-  assert.match(homeHtml, /<title>KameyMall Spreadsheet 2026: 30 Product Finds &amp; QC Guide<\/title>/);
+  assert.match(homeHtml, /<title>KameyMall Spreadsheet 2026 – 30 Verified Finds &amp; QC<\/title>/);
   assert.match(homeHtml, /<h1>KameyMall Spreadsheet 2026: 30 Curated Product Finds<\/h1>/);
   assert.match(homeHtml, /Browse 30 curated KameyMall spreadsheet finds across shoes, hoodies, jerseys and accessories/);
 
