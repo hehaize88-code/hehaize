@@ -417,7 +417,7 @@ test("production HTML receives edge caching headers and is stored by pathname", 
     assert.equal(stored.length, 1);
     assert.equal(
       stored[0].key,
-      "https://joyagoochina.org/qc-guide/?__html_cache_version=seo-clicks-20260822-e982c4d",
+      "https://joyagoochina.org/qc-guide/?__html_cache_version=seo-clicks-20260822-r2",
     );
   } finally {
     if (originalCaches) {
