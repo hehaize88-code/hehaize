@@ -4,9 +4,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lolobuy-sheet.com"),
-  title: "Lolobuy Spreadsheet 2026 | Curated Finds & QC Guide",
+  title: "Lolobuy Spreadsheet 2026: Product Finds, Links & QC",
   description:
-    "Browse a curated Lolobuy spreadsheet, explore product categories, learn how to review QC photos, and open current product listings.",
+    "Browse Lolobuy product finds by category, open current listing links, and check sizing, variants and QC details before ordering.",
   keywords: [
     "lolobuy spreadsheet",
     "lolobuy sheet",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Lolobuy Spreadsheet 2026 | Curated Finds & QC Guide",
+    title: "Lolobuy Spreadsheet 2026: Product Finds, Links & QC",
     description:
-      "A clear, independent product-discovery guide with curated categories and practical QC guidance.",
+      "Browse Lolobuy product finds by category, open current listing links, and check sizing, variants and QC details before ordering.",
     url: "/",
     siteName: "Lolobuy Sheet",
     locale: "en_US",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lolobuy Spreadsheet 2026",
+    title: "Lolobuy Spreadsheet 2026: Product Finds, Links & QC",
     description:
-      "Curated product finds, category shortcuts, and practical QC guidance.",
+      "Browse product finds, open current listing links, and check sizing, variants and QC details before ordering.",
     images: ["/social/lolobuy-sheet-share.webp"],
   },
   icons: {

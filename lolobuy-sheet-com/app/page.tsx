@@ -9,9 +9,9 @@ const homeMetadataCopy: Record<
   { title: string; description: string }
 > = {
   en: {
-    title: "Lolobuy Spreadsheet 2026 | Curated Finds & QC Guide",
+    title: "Lolobuy Spreadsheet 2026: Product Finds, Links & QC",
     description:
-      "Browse a curated Lolobuy spreadsheet, explore product categories, learn how to review QC photos, and open current product listings.",
+      "Browse Lolobuy product finds by category, open current listing links, and check sizing, variants and QC details before ordering.",
   },
   es: {
     title: "Spreadsheet Lolobuy 2026 | Productos y guía QC",
