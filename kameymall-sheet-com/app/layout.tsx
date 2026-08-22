@@ -13,17 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KameyMall Spreadsheet 2026: 30 Product Finds & QC Guide",
+  title: "KameyMall Spreadsheet 2026 – 30 Verified Finds & QC",
   description:
-    "Browse 30 curated KameyMall spreadsheet finds across shoes, hoodies, jerseys and accessories. Compare prices, use QC guidance and open exact product pages.",
+    "Browse 30 checked KameyMall finds with live product links, dated CNY and USD prices, category filters, QC checks and shipping guides. Updated August 2026.",
   other: {
     "codex-preview": "development",
   },
   openGraph: {
-    title: "KameyMall Spreadsheet 2026: 30 Product Finds & QC Guide",
+    title: "KameyMall Spreadsheet 2026 – 30 Verified Finds & QC",
     description:
-      "Browse 30 curated KameyMall spreadsheet finds across shoes, hoodies, jerseys and accessories. Compare prices, use QC guidance and open exact product pages.",
+      "Browse 30 checked KameyMall finds with live product links, dated CNY and USD prices, category filters, QC checks and shipping guides. Updated August 2026.",
     type: "website",
+    siteName: "KameyMall Sheet",
   },
 };
 
