@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LanguageRuntime from "@/components/LanguageRuntime";
 import { SITE_URL } from "@/data/site";
-import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
