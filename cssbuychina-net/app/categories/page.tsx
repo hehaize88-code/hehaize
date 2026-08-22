@@ -3,7 +3,7 @@ import { InnerShell } from "../components/InnerShell";
 import { categories } from "../site-data";
 
 export const metadata: Metadata = {
-  title: "CSSBuy Spreadsheet Categories – Shoes, Hoodies, Jerseys & More",
+  title: { absolute: "CSSBuy Spreadsheet Categories: Shoes, Hoodies & More" },
   description: "Browse eight focused CSSBuy spreadsheet categories with direct department routes and product-specific sizing, warehouse QC, packing, and shipping checks.",
   alternates: { canonical: "/categories" },
 };

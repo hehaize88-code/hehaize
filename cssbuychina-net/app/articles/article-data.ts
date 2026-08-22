@@ -88,6 +88,7 @@ export const articles = {
   },
   "cssbuy-shipping-cost-planning": {
     label: "CSSBUY SHIPPING COST · 12 MIN",
+    seoTitle: "CSSBuy Shipping Cost 2026: Weight, Packing & Fees",
     title: "CSSBuy Shipping Cost Guide 2026: Two Payments, Parcel Weight and Total Cost",
     description: "A fact-based explanation of CSSBuy's two payment stages, domestic delivery, warehouse inspection, packaging, chargeable weight, route estimates, storage, returns, and realistic parcel budgeting.",
     sections: [

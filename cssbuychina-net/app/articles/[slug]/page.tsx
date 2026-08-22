@@ -14,6 +14,11 @@ const categoryDecisionRows = [
   { category: "Electronics", before: "Model, plug, battery, compatibility and route", qc: "Label, visible condition and included parts", shipping: "Restricted routes, protection and insurance terms", href: "/category/electronics", anchor: "CSSBuy Electronics Spreadsheet" },
 ] as const;
 
+function toIsoDate(date: string, fallback: string) {
+  const parsed = new Date(`${date} 00:00:00 UTC`);
+  return Number.isNaN(parsed.getTime()) ? fallback : parsed.toISOString().slice(0, 10);
+}
+
 const categorySectionLinks: Record<string, Array<{ href: string; label: string }>> = {
   "Shoes: size evidence, pair alignment, and parcel volume": [
     { href: "/category/shoes", label: "Browse the CSSBuy Shoes Spreadsheet" },
@@ -61,24 +66,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const isCategoryArticle = slug === categoryArticleSlug;
   const published = "published" in article ? article.published : "2026-08-08";
   const checked = "checked" in article ? article.checked : "August 10, 2026";
+  const modified = toIsoDate(checked, published);
+  const seoTitle = "seoTitle" in article ? article.seoTitle : article.title;
   return {
-    title: { absolute: article.title },
+    title: { absolute: seoTitle },
     description: article.description,
     alternates: { canonical: articleUrl },
     openGraph: {
       type: "article",
       url: articleUrl,
       siteName: "CSSBuy China",
-      title: article.title,
+      title: seoTitle,
       description: article.description,
       publishedTime: `${published}T00:00:00Z`,
-      modifiedTime: `${published}T00:00:00Z`,
+      modifiedTime: `${modified}T00:00:00Z`,
       authors: ["https://cssbuychina.net/about"],
       images: isCategoryArticle ? [{ url: categoryArticleImage, width: 1536, height: 1024, alt: "Product-category sizing, warehouse QC and parcel-planning checklist" }] : undefined,
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
+      title: seoTitle,
       description: article.description,
       images: isCategoryArticle ? [categoryArticleImage] : undefined,
     },
@@ -94,9 +101,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const h1 = "h1" in article ? article.h1 : article.title;
   const published = "published" in article ? article.published : "2026-08-08";
   const checked = "checked" in article ? article.checked : "August 10, 2026";
+  const modified = toIsoDate(checked, published);
   const jsonLd = {
     "@context": "https://schema.org", "@type": "Article", headline: h1, description: article.description,
-    datePublished: published, dateModified: published,
+    datePublished: published, dateModified: modified,
     author: { "@type": "Organization", name: "CSSBuy China Editorial", url: "https://cssbuychina.net/about" },
     publisher: { "@type": "Organization", name: "CSSBuy China Editorial", url: "https://cssbuychina.net/", logo: { "@type": "ImageObject", url: "https://cssbuychina.net/cssbuy-logo.png" } },
     image: isCategoryArticle ? { "@type": "ImageObject", url: categoryArticleImage, width: 1536, height: 1024 } : undefined,

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { InnerShell } from "../components/InnerShell";
 
 export const metadata: Metadata = {
-  title: "CSSBuy Guides – QC, Spreadsheet & Parcel Cost",
+  title: { absolute: "CSSBuy Guides 2026: Spreadsheet, QC & Parcel Cost" },
   description: "Read fact-first CSSBuy spreadsheet guides covering product research, warehouse QC photos, sizing, and the difference between item price and parcel cost.",
   alternates: { canonical: "/guides" },
 };

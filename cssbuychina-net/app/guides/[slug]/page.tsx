@@ -3,6 +3,7 @@ import { InnerShell } from "../../components/InnerShell";
 
 const guideData = {
   "cssbuy-spreadsheet-guide": {
+    seoTitle: "CSSBuy Spreadsheet Guide 2026: From Link to Parcel",
     title: "How to Use a CSSBuy Spreadsheet: From First Payment to Parcel",
     description: "Use a CSSBuy spreadsheet as a discovery tool, then verify the exact option, two-payment workflow, warehouse inspection, return deadline, storage, and parcel cost.",
     readTime: "10 MIN READ",
@@ -17,6 +18,7 @@ const guideData = {
     ],
   },
   "read-warehouse-qc-photos": {
+    seoTitle: "CSSBuy Warehouse QC Photos: 6 Checks Before Shipping",
     title: "How to Read CSSBuy Warehouse QC Photos Before Shipping",
     description: "Use CSSBuy's published visible-inspection scope as a baseline, then review option, measurements, condition, limitations, and the return clock before parcel approval.",
     readTime: "8 MIN READ",
@@ -31,6 +33,7 @@ const guideData = {
     ],
   },
   "product-price-vs-parcel-cost": {
+    seoTitle: "CSSBuy Product Price vs. Total Parcel Cost",
     title: "CSSBuy Product Price vs. Total Parcel Cost",
     description: "Separate CSSBuy's first product-and-domestic-delivery payment from warehouse decisions, packaging, route selection, and the second international-shipping payment.",
     readTime: "9 MIN READ",
@@ -53,7 +56,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const guide = guideData[slug as keyof typeof guideData] ?? guideData["cssbuy-spreadsheet-guide"];
-  return { title: guide.title, description: guide.description, alternates: { canonical: `/guides/${slug}` } };
+  return { title: { absolute: guide.seoTitle }, description: guide.description, alternates: { canonical: `/guides/${slug}` } };
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {

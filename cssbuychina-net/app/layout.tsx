@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "CSSBuy Spreadsheet 2026 – Checked Product Finds",
     template: "%s | CSSBuy China",
   },
-  description: "Browse a fact-checked CSSBuy spreadsheet with category pages, recorded CNY values, product links, two-payment guidance, warehouse QC checks, and parcel-cost articles.",
+  description: "Browse checked CSSBuy spreadsheet finds by category, recorded CNY value and product link. Compare sizing, warehouse QC, ordering steps and parcel costs.",
   applicationName: "CSSBuy China Spreadsheet",
   keywords: ["CSSBuy spreadsheet", "CSSBuy finds", "CSSBuy shoes", "CSSBuy QC", "China shopping spreadsheet"],
   authors: [{ name: "CSSBuy China Editorial" }],

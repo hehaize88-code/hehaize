@@ -3,7 +3,7 @@ import { InnerShell } from "../components/InnerShell";
 import { articles } from "./article-data";
 
 export const metadata: Metadata = {
-  title: "CSSBuy Articles 2026 – Product Search, Links, QC & Shipping",
+  title: { absolute: "CSSBuy Articles 2026: Search, QC & Shipping" },
   description: "Read fact-checked CSSBuy articles about keyword and image-assisted product search, spreadsheet links, category checks, warehouse QC and parcel planning.",
   alternates: { canonical: "/articles" },
 };
