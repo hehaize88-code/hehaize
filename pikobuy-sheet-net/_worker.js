@@ -367,6 +367,14 @@ const ROUTES = new Set([
   '/pt/seo-articles/',
   '/seo-articles/'
 ]);
+const GA_SNIPPET = `
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QY8MM7VZV2');
+</script>`;
 const STATIC_PREFIXES = ["/assets/", "/_next/"];
 const STATIC_FILES = new Set(["/pikobuy-logo.png","/favicon.svg","/article-social.svg","/robots.txt","/sitemap.xml","/sitemap-main.xml","/404.html"]);
 export default {
@@ -382,7 +390,13 @@ export default {
   const response=await env.ASSETS.fetch(request);
   if(response.status===404)return response;
   const headers=new Headers(response.headers);
-  if(request.method==='GET'&&response.headers.get('content-type')?.includes('text/html'))headers.set('cache-control','public, max-age=0, s-maxage=86400, stale-while-revalidate=604800');
+  const isHtml=request.method==='GET'&&response.headers.get('content-type')?.includes('text/html');
+  if(isHtml){
+   headers.set('cache-control','public, max-age=0, s-maxage=86400, stale-while-revalidate=604800');
+   headers.delete('content-length');
+   const htmlResponse=new Response(response.body,{status:response.status,headers});
+   return new HTMLRewriter().on('head',{element(element){element.append(GA_SNIPPET,{html:true});}}).transform(htmlResponse);
+  }
   return new Response(response.body,{status:response.status,headers});
  }
 };
