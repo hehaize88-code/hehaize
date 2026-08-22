@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClickTracker } from "./components/click-tracker";
 import { socialImage } from "./seo-image";
