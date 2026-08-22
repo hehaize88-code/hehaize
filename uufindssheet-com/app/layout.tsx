@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uufindssheet.com"),
-  title: "UUFinds Spreadsheet 2026: Product Finds & QC Guide",
-  description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
+  title: "UUFinds Guide 2026: Spreadsheet, QC Photos & Product Search",
+  description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
   alternates: {
     canonical: "/",
     languages: { "x-default": "/", en: "/", "en-GB": "/en-gb/", "de-DE": "/de/", "pl-PL": "/pl/", "pt-BR": "/pt-br/" },
   },
   openGraph: {
-    title: "UUFinds Spreadsheet 2026: Product Finds & QC Guide",
-    description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
+    title: "UUFinds Guide 2026: Spreadsheet, QC Photos & Product Search",
+    description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
     url: "https://uufindssheet.com/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -32,11 +32,21 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UUFinds Spreadsheet 2026: Product Finds & QC Guide",
-    description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
+    title: "UUFinds Guide 2026: Spreadsheet, QC Photos & Product Search",
+    description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
     images: [socialImage.url],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   ...(process.env.CF_PAGES_STATIC_EXPORT === "1"
     ? {}
     : { other: { "codex-preview": "development" } }),

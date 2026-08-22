@@ -235,10 +235,10 @@ for (const locale of locales) {
 const home = await readPage("");
 const contiguousHome = home.replaceAll("<!-- -->", "");
 assertLocaleCluster(home, "/", "English home");
-assert.match(home, /<title>UUFinds Spreadsheet 2026: Product Finds &amp; QC Guide<\/title>/);
-assert.match(home, /<meta name="description" content="Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more\. Check QC photos, compare listings and open matching product pages\."/);
-assert.match(contiguousHome, /<h1>UUFinds Spreadsheet <br\/?>(?:&amp;|&) <em>QC Guide<\/em><\/h1>/);
-assert.match(home, /Browse this independent UUFinds spreadsheet for shoes, hoodies, jerseys and more\. Check available QC photos, compare listings and open matching product pages\./);
+assert.match(home, /<title>UUFinds Guide 2026: Spreadsheet, QC Photos &amp; Product Search<\/title>/);
+assert.match(home, /<meta name="description" content="Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more\."/);
+assert.match(contiguousHome, /<h1>Find with UUFinds\.<br\/?>(?:Check QC photos\.)<br\/?><em>Compare products\.<\/em><\/h1>/);
+assert.match(home, /Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page\./);
 assert.match(home, /href="\/categories\/shoes\/"/);
 assert.match(home, /href="\/categories\/hoodies\/"/);
 assert.match(home, /href="\/categories\/jersey\/"/);

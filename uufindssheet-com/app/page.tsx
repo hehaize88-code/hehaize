@@ -24,10 +24,10 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Independent guide <span>•</span> Updated July 2026</p>
-          <h1>UUFinds Spreadsheet{" "}<br />&amp; <em>QC Guide</em></h1>
+          <p className="eyebrow">UUFinds product research <span>•</span> Updated August 2026</p>
+          <h1>Find with UUFinds.<br />Check QC photos.<br /><em>Compare products.</em></h1>
           <p className="hero-intro">
-            Browse this independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check available QC photos, compare listings and open matching product pages.
+            Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page.
           </p>
           <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" role="search">
             <input type="hidden" name="channelid" value="2" />
@@ -157,7 +157,7 @@ export default function Home() {
       <section className="articles-section" id="articles">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Field notes / July 2026</p>
+            <p className="eyebrow">Field notes / August 2026</p>
             <h2>Useful answers, not link dumps.</h2>
           </div>
           <p>Original guides written around real search questions: QC photos, spreadsheet links, product matching and safer comparison habits.</p>
@@ -227,7 +227,7 @@ export default function Home() {
             "@type": "WebSite",
             name: "UUFinds Sheet",
             url: "https://uufindssheet.com/",
-            description: "Browse an independent UUFinds spreadsheet for shoes, hoodies, jerseys and more. Check QC photos, compare listings and open matching product pages.",
+            description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
             publisher: { "@type": "Organization", name: "UUFinds Sheet" },
           }),
         }}
