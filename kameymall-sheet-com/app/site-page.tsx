@@ -34,6 +34,17 @@ import {
 const CNY_TO_USD = 0.1481;
 const SITE_URL = "https://kameymall-sheet.com";
 
+const articleDates: Record<(typeof articleRoutes)[number], string> = {
+  "articles/kameymall-spreadsheet-guide-2026": "2026-08-03",
+  "articles/how-to-buy-from-kameymall-2026": "2026-08-03",
+  "articles/kameymall-shipping-cost-guide-2026": "2026-08-03",
+  "articles/how-to-read-kameymall-qc-photos": "2026-08-03",
+  "articles/kameymall-warehouse-storage-returns-guide": "2026-08-08",
+  "articles/kameymall-payment-methods-fees": "2026-08-09",
+  "articles/kameymall-order-status-guide": "2026-08-11",
+  "articles/kameymall-consolidation-vs-split-parcels": "2026-08-13",
+};
+
 function usd(cny: number) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -727,7 +738,7 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
           sku: `KMS-${product.reference}`,
           category: categoryLabel,
           url: canonical,
-          offers: { "@type": "Offer", url: product.url, priceCurrency: "CNY", price: product.cny },
+          description: catalogCopies[locale].productMeta.replace("{name}", product.name),
         },
         breadcrumbSchema,
       ]
@@ -788,11 +799,12 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
                 "@type": "Article",
                 headline: articlePage.title,
                 description: articlePage.intro,
-                datePublished: "2026-08-03",
-                dateModified: "2026-08-03",
+                datePublished: articleDates[route as (typeof articleRoutes)[number]],
+                dateModified: articleDates[route as (typeof articleRoutes)[number]],
                 mainEntityOfPage: canonical,
                 url: canonical,
                 inLanguage: locale,
+                isAccessibleForFree: true,
                 keywords: articlePage.primaryKeyword,
                 author: { "@type": "Organization", name: "KameyMall Sheet" },
                 publisher: { "@type": "Organization", name: "KameyMall Sheet" },
