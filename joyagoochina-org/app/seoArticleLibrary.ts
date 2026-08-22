@@ -59,6 +59,57 @@ export type SeoArticleEntry = {
   relatedLinks?: string[];
 };
 
+const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-fees-explained": [
+    "joyagoo-exchange-rate-currency-conversion",
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-return-window-warehouse-storage",
+    "articles",
+  ],
+  "joyagoo-exchange-rate-currency-conversion": [
+    "joyagoo-fees-explained",
+    "joyagoo-domestic-shipping-seller-to-warehouse",
+    "how-to-buy-from-taobao-with-joyagoo",
+    "articles",
+  ],
+  "joyagoo-domestic-shipping-seller-to-warehouse": [
+    "how-to-buy-from-taobao-with-joyagoo",
+    "joyagoo-parcel-consolidation-packaging-guide",
+    "joyagoo-fees-explained",
+    "articles",
+  ],
+  "joyagoo-parcel-consolidation-packaging-guide": [
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-return-window-warehouse-storage",
+    "joyagoo-qc-photo-checklist",
+    "articles",
+  ],
+  "how-to-buy-from-taobao-with-joyagoo": [
+    "joyagoo-domestic-shipping-seller-to-warehouse",
+    "joyagoo-qc-photo-checklist",
+    "joyagoo-volumetric-weight-shipping-cost",
+    "articles",
+  ],
+  "joyagoo-qc-photo-checklist": [
+    "joyagoo-return-window-warehouse-storage",
+    "joyagoo-fees-explained",
+    "joyagoo-volumetric-weight-shipping-cost",
+    "articles",
+  ],
+  "joyagoo-volumetric-weight-shipping-cost": [
+    "joyagoo-parcel-consolidation-packaging-guide",
+    "joyagoo-fees-explained",
+    "joyagoo-return-window-warehouse-storage",
+    "articles",
+  ],
+  "joyagoo-return-window-warehouse-storage": [
+    "joyagoo-qc-photo-checklist",
+    "joyagoo-parcel-consolidation-packaging-guide",
+    "joyagoo-fees-explained",
+    "articles",
+  ],
+};
+
 const englishExtras: Record<ExtraSeoArticleSlug, SeoArticle> = {
   "joyagoo-exchange-rate-currency-conversion": exchangeRateArticles.en,
   "joyagoo-domestic-shipping-seller-to-warehouse":
@@ -625,6 +676,7 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
         : seoArticleCopy[locale].sourceBody,
     ...seoArticleDates["joyagoo-fees-explained"],
     readTime: "9 minute read",
+    relatedLinks: relatedArticleLinks["joyagoo-fees-explained"],
   };
 
   const extraEntries: SeoArticleEntry[] = extraSeoArticleSlugs.map((slug) => ({
@@ -652,13 +704,7 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
       slug === "joyagoo-domestic-shipping-seller-to-warehouse"
         ? "10 minute read"
         : "9 minute read",
-    relatedLinks:
-      slug === "how-to-buy-from-taobao-with-joyagoo" ||
-      slug === "joyagoo-exchange-rate-currency-conversion" ||
-      slug === "joyagoo-parcel-consolidation-packaging-guide" ||
-      slug === "joyagoo-domestic-shipping-seller-to-warehouse"
-        ? ["how-to-buy", "qc-guide", "shipping-guide", "articles"]
-        : undefined,
+    relatedLinks: relatedArticleLinks[slug],
   }));
 
   return [...extraEntries, feeEntry].sort((left, right) =>

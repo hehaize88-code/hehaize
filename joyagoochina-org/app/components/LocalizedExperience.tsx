@@ -940,10 +940,15 @@ function LocalizedSeoArticlePage({
                 <strong>{translations[locale].common.guides}</strong>
                 <p>
                   {entry.relatedLinks.map((relatedSlug, index) => {
+                    const relatedArticle = getSeoArticleEntry(
+                      locale,
+                      relatedSlug,
+                    );
                     const label =
                       relatedSlug === "articles"
                         ? seo.navLabel
-                        : translations[locale].pages[relatedSlug]?.title ??
+                        : relatedArticle?.article.title ??
+                          translations[locale].pages[relatedSlug]?.title ??
                           relatedSlug;
                     return (
                       <span key={relatedSlug}>

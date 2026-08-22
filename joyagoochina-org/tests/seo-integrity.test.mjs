@@ -208,6 +208,67 @@ test("homepage keeps its English title and H1 while fixing catalogue mappings", 
   assert.doesNotMatch(visibleText(html), /SEO Articles/i);
 });
 
+test("high-intent research pages use concise search snippets and localized related links", async () => {
+  const pages = [
+    {
+      slug: "joyagoo-fees-explained",
+      title: "Joyagoo Fees 2026: Product, Warehouse &amp; Shipping Costs",
+      description: "See Joyagoo product payments, domestic delivery, QC extras, storage and international shipping costs before you order or submit a parcel.",
+      related: "joyagoo-exchange-rate-currency-conversion",
+    },
+    {
+      slug: "joyagoo-qc-photo-checklist",
+      title: "Joyagoo QC Photos: 7 Checks Before Accepting an Item",
+      description: "Use this Joyagoo QC photo checklist to verify variants, measurements, defects and packaging before the five-day return window closes.",
+      related: "joyagoo-return-window-warehouse-storage",
+    },
+    {
+      slug: "joyagoo-return-window-warehouse-storage",
+      title: "Joyagoo Returns: 5-Day QC &amp; 90-Day Storage",
+      description: "Understand Joyagoo's five-day QC return window, 90-day item storage and 30-day parcel storage timeline before deadlines expire.",
+      related: "joyagoo-qc-photo-checklist",
+    },
+    {
+      slug: "joyagoo-volumetric-weight-shipping-cost",
+      title: "Joyagoo Shipping Cost 2026: Weight &amp; Rehearsal Packing",
+      description: "Calculate Joyagoo actual and volumetric weight, compare route divisors, and decide when rehearsal packing can prevent surprise shipping costs.",
+      related: "joyagoo-parcel-consolidation-packaging-guide",
+    },
+  ];
+
+  for (const page of pages) {
+    const html = await (await request(`/${page.slug}/`)).text();
+    assert.match(html, new RegExp(`<title>${page.title}</title>`), page.slug);
+    assert.match(
+      html,
+      new RegExp(
+        `<meta name="description" content="${page.description.replace("'", "(?:'|&#x27;)")}"`,
+      ),
+      `${page.slug}: concise description`,
+    );
+    assert.match(
+      html,
+      new RegExp(
+        `class="source-note related-reading"[\\s\\S]+href="/${page.related}/"`,
+      ),
+      `${page.slug}: related research link`,
+    );
+  }
+
+  const localizedHtml = await (
+    await request("/de/joyagoo-fees-explained/")
+  ).text();
+  assert.match(
+    localizedHtml,
+    /href="\/de\/joyagoo-exchange-rate-currency-conversion\/"/,
+  );
+  assert.doesNotMatch(
+    visibleText(localizedHtml),
+    /joyagoo-exchange-rate-currency-conversion/,
+    "localized related links should use the translated article title, not the raw slug",
+  );
+});
+
 test("spreadsheet images are sized, lazy-loaded and no longer use the large GIF", async () => {
   const html = await (await request("/spreadsheet/")).text();
   const productImages = [

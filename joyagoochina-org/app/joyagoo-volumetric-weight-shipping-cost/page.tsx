@@ -6,16 +6,19 @@ import { languageAlternates } from "../seoAlternates";
 
 const slug = "joyagoo-volumetric-weight-shipping-cost";
 const entry = getSeoArticleEntry("en", slug)!;
+const title = "Joyagoo Shipping Cost 2026: Weight & Rehearsal Packing";
+const description =
+  "Calculate Joyagoo actual and volumetric weight, compare route divisors, and decide when rehearsal packing can prevent surprise shipping costs.";
 
 export const metadata: Metadata = {
-  title: "Joyagoo Shipping Cost & Volumetric Weight Guide",
-  description: entry.article.description,
+  title: { absolute: title },
+  description,
   keywords: entry.keywords,
   alternates: languageAlternates(`/${slug}/`),
   ...editorialSocialMetadata({
     slug,
-    title: entry.article.title,
-    description: entry.article.description,
+    title,
+    description,
     url: `https://joyagoochina.org/${slug}/`,
   }),
 };

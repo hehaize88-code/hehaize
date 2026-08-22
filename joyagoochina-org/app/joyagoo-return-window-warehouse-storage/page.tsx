@@ -6,16 +6,19 @@ import { languageAlternates } from "../seoAlternates";
 
 const slug = "joyagoo-return-window-warehouse-storage";
 const entry = getSeoArticleEntry("en", slug)!;
+const title = "Joyagoo Returns: 5-Day QC & 90-Day Storage";
+const description =
+  "Understand Joyagoo's five-day QC return window, 90-day item storage and 30-day parcel storage timeline before deadlines expire.";
 
 export const metadata: Metadata = {
-  title: "Joyagoo Returns: 5-Day QC & 90-Day Storage",
-  description: entry.article.description,
+  title: { absolute: title },
+  description,
   keywords: entry.keywords,
   alternates: languageAlternates(`/${slug}/`),
   ...editorialSocialMetadata({
     slug,
-    title: entry.article.title,
-    description: entry.article.description,
+    title,
+    description,
     url: `https://joyagoochina.org/${slug}/`,
   }),
 };

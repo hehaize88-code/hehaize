@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
 import { editorialSocialMetadata } from "../editorialAssets";
-import { seoArticleCopy } from "../seoArticles";
 import { languageAlternates } from "../seoAlternates";
 
 const slug = "joyagoo-fees-explained";
-const title = "Joyagoo Fees: Service, Warehouse & Shipping Costs";
-const description = seoArticleCopy.en.article.description;
+const title = "Joyagoo Fees 2026: Product, Warehouse & Shipping Costs";
+const description =
+  "See Joyagoo product payments, domestic delivery, QC extras, storage and international shipping costs before you order or submit a parcel.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   keywords: [
     "joyagoo fees",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   alternates: languageAlternates(`/${slug}/`),
   ...editorialSocialMetadata({
     slug,
-    title: seoArticleCopy.en.article.title,
+    title,
     description,
     url: `https://joyagoochina.org/${slug}/`,
   }),
