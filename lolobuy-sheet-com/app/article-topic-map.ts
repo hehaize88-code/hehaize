@@ -99,4 +99,13 @@ export const articleTopicMap: ArticleTopicMapEntry[] = [
     evidence: ["LoloBuy public website checked August 14, 2026", "Lolobuy Sheet Taobao option-comparison framework"],
     internalLinkRole: "Marketplace-specific comparison branch after keyword discovery and before order or warehouse verification.",
   },
+  {
+    url: "/articles/lolobuy-1688-finds-moq-variants",
+    primaryQuery: "LoloBuy 1688 finds",
+    relatedTerms: ["LoloBuy 1688 MOQ", "1688 variant verification", "1688 quantity tiers", "1688 seller questions"],
+    intent: "commercial investigation",
+    angle: "Verify minimum quantity, pricing unit, exact SKU, applicable tier and seller-supplied conditions before submitting a 1688 link.",
+    evidence: ["LoloBuy public website checked August 26, 2026", "Current 1688 listing fields", "Lolobuy Sheet 1688 order-equation framework"],
+    internalLinkRole: "Wholesale-listing branch after keyword discovery, distinct from the retail-option focus of the Taobao comparison guide.",
+  },
 ];

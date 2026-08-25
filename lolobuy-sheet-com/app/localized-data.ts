@@ -3,6 +3,7 @@ import { trackingArticleLocales } from "./tracking-article-locales";
 import { shoeArticleLocales } from "./shoe-article-locales";
 import { keywordSearchArticleLocales } from "./keyword-search-article-locales";
 import { taobaoFindsArticleLocales } from "./taobao-finds-article-locales";
+import { finds1688ArticleLocales } from "./1688-finds-article-locales";
 import {
   articles,
   categories,
@@ -1071,6 +1072,16 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       article.slug === "lolobuy-taobao-finds-compare-options"
         ? taobaoFindsArticleLocales[locale]
         : null;
+    const translated1688Finds =
+      article.slug === "lolobuy-1688-finds-moq-variants"
+        ? finds1688ArticleLocales[locale]
+        : null;
+    if (translated1688Finds) {
+      return {
+        ...article,
+        ...translated1688Finds,
+      };
+    }
     if (translatedTaobaoFinds) {
       return {
         ...article,

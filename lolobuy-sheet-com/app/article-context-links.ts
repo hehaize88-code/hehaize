@@ -69,6 +69,12 @@ const routesByArticle: Record<string, string[]> = {
     "/articles/lolobuy-weidian-link-guide",
     "/guides/qc",
   ],
+  "lolobuy-1688-finds-moq-variants": [
+    "/finds",
+    "/articles/lolobuy-keyword-search-product-finds",
+    "/articles/lolobuy-spreadsheet-guide",
+    "/guides/qc",
+  ],
 };
 
 const contextCopy: Record<Locale, ContextCopy> = {

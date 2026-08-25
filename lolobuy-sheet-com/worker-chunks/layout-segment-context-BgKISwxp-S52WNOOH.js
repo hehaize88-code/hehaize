@@ -1,0 +1,1 @@
+import{c as r,g as o,q as a}from"./chunk-L77XJPAV.js";import"./chunk-V3DKI4G4.js";var i=r(o(),1);function c({segmentMap:n,children:t}){let e=a();return e?(0,i.createElement)(e.Provider,{value:n},t):t}export{c as LayoutSegmentProvider};

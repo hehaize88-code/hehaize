@@ -49,6 +49,11 @@ const articleMedia = {
     width: 1200,
     height: 630,
   },
+  "lolobuy-1688-finds-moq-variants": {
+    src: "/articles/lolobuy-1688-finds-moq-variants.svg",
+    width: 1200,
+    height: 630,
+  },
 } as const;
 
 export function getArticleMedia(slug: string) {
