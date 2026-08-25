@@ -1,0 +1,100 @@
+name: Install GA tag on legacy sites
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/install-ga-legacy.yml
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Add GA tag to published HTML and source layouts
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          measurement_id = "G-QY8MM7VZV2"
+          site_dirs = [
+              "hubbuy-sheet-com",
+              "uufindssheet-com",
+              "kameymall-sheet-com",
+              "joyagoochina-org",
+              "cssbuychina-net",
+              "pikobuy-sheet-net",
+              "lolobuy-sheet-com",
+              "lolobuy-sheet-net",
+          ]
+          snippet = """<!-- Google tag (gtag.js) -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QY8MM7VZV2');
+          </script>
+          """
+
+          changed_html = 0
+          fixed_layouts = 0
+          for site in site_dirs:
+              root = Path(site)
+              if not root.exists():
+                  raise SystemExit(f"Missing site directory: {site}")
+
+              for path in root.rglob("*.html"):
+                  text = path.read_text(encoding="utf-8")
+                  if measurement_id in text:
+                      continue
+                  lower = text.lower()
+                  pos = lower.find("<head")
+                  if pos < 0:
+                      continue
+                  close = text.find(">", pos)
+                  if close < 0:
+                      continue
+                  text = text[:close + 1] + "\n" + snippet + text[close + 1:]
+                  path.write_text(text, encoding="utf-8")
+                  changed_html += 1
+
+              app_dir = root / "app"
+              if app_dir.exists():
+                  for name in ("layout.tsx", "layout.ts", "layout.jsx", "layout.js"):
+                      path = app_dir / name
+                      if not path.exists():
+                          continue
+                      text = path.read_text(encoding="utf-8")
+                      if "<Script" in text and "from \"next/script\"" not in text and "from 'next/script'" not in text:
+                          path.write_text('import Script from "next/script";\n' + text, encoding="utf-8")
+                          fixed_layouts += 1
+
+          print(f"Updated {changed_html} HTML files and fixed {fixed_layouts} source layouts")
+          if changed_html == 0:
+              raise SystemExit("No published HTML files required updating")
+          PY
+      - name: Commit generated tag updates
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            hubbuy-sheet-com \
+            uufindssheet-com \
+            kameymall-sheet-com \
+            joyagoochina-org \
+            cssbuychina-net \
+            pikobuy-sheet-net \
+            lolobuy-sheet-com \
+            lolobuy-sheet-net
+          git diff --cached --quiet && exit 0
+          git commit -m "fix: install GA tag on legacy sites"
+          git push origin HEAD:main
