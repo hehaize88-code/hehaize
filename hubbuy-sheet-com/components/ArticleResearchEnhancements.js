@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "how-to-buy-from-taobao-with-hubbuy": [
+    ["Product-name-or-link search", "The current public portal accepts a product name or link as the starting point."],
+    ["Taobao marketplace tab", "The current public shopping interface visibly separates Taobao and 1688 browsing."],
+    ["Manual order form", "The public form requests the link, product name, CNY unit price, quantity, China shipping, shop name and specification note."],
+  ],
   "hubbuy-return-exchange-after-qc": [
     ["Current warehouse sequence", "The official public homepage places inspection photos and storage after seller delivery to the warehouse."],
     ["Current help navigation", "The publicly indexed HubbuyCN help structure lists Returns and Refunds as a distinct purchasing-guidance topic."],
@@ -243,7 +248,26 @@ function TrackingEvidenceMap() {
   );
 }
 
+function TaobaoHandoffMap() {
+  return (
+    <figure className="research-visual research-chain">
+      <div className="research-visual-heading"><span>Original Taobao handoff map</span><strong>Keep one product identity through three records</strong></div>
+      <div className="research-chain-grid">
+        <div><b>01</b><strong>Taobao source</strong><span>Shop, item ID and selected SKU</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>02</b><strong>Hubbuy order</strong><span>Exact instruction and China shipping</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>03</b><strong>Warehouse receipt</strong><span>Identity, quantity and visible condition</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>04</b><strong>Decision</strong><span>Approve, clarify or resolve</span></div>
+      </div>
+      <figcaption>Editorial workflow based on the public HubbuyCN purchase and manual-order interfaces checked on 26 August 2026. It is not an account screenshot or a seller-performance promise.</figcaption>
+    </figure>
+  );
+}
+
 function ArticleVisual({ slug }) {
+  if (slug === "how-to-buy-from-taobao-with-hubbuy") return <TaobaoHandoffMap />;
   if (slug === "hubbuy-return-exchange-after-qc") return <ReturnsDecisionMap />;
   if (slug === "hubbuy-order-status-guide") return <OrderStatusMap />;
   if (slug === "hubbuy-parcel-tracking-delay-guide") return <TrackingEvidenceMap />;
@@ -272,7 +296,7 @@ export default function ArticleResearchEnhancements({ article }) {
         <div className="source-ledger-heading"><span>Primary-source ledger</span><strong>Official Hubbuy page and named section</strong></div>
         {sources.map(([section, evidence, href = OFFICIAL_HOME, label = "Official page ↗"], index) => article.noExternalSourceLinks ? (
           <div key={section} className="source-ledger-row">
-            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{article.slug === "hubbuy-return-exchange-after-qc" ? "Checked 14 Aug 2026" : article.slug === "hubbuy-order-status-guide" ? "Checked 12 Aug 2026" : "Checked 10 Aug 2026"}</em>
+            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{article.slug === "how-to-buy-from-taobao-with-hubbuy" ? "Checked 26 Aug 2026" : article.slug === "hubbuy-return-exchange-after-qc" ? "Checked 14 Aug 2026" : article.slug === "hubbuy-order-status-guide" ? "Checked 12 Aug 2026" : "Checked 10 Aug 2026"}</em>
           </div>
         ) : (
           <a key={section} href={href} target="_blank" rel="noopener">

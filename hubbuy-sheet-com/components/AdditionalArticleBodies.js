@@ -46,6 +46,108 @@ function ArticleCta() {
   );
 }
 
+function HubbuyTaobaoArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">Buying from Taobao through Hubbuy is a chain of handoffs. Preserve the seller listing, define one option, check the order and reuse that evidence at warehouse arrival.</p>
+
+      <ResearchDisclosure>Hubbuy’s original public domain returned an error page when checked on 26 August 2026. The currently accessible HubbuyCN public portal displayed product-name-or-link search, a Taobao shopping tab and a manual order form. This guide uses only those visible functions and does not claim a fixed payment method, fee, delivery time or seller-return rule.</ResearchDisclosure>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Use Taobao as the source record and Hubbuy as the purchasing workflow</h2>
+        <p>Start on the final Taobao item page, not a social post, image, shop homepage or search result. Save the page and selected option before passing the link to Hubbuy. The current public portal lets a shopper begin with a product name or link and exposes a Taobao tab. Its published sequence separates paying for the item and China shipping from warehouse receipt and the later international parcel.</p>
+        <p>Hubbuy cannot infer which color, size or bundle you meant from an ambiguous screenshot. Create an instruction another person can follow, confirm the submitted order preserves it, then compare the warehouse arrival with the same record.</p>
+        <div className="article-callout"><strong>The working rule</strong><p>If the seller, item, option, quantity and current price cannot be reconstructed from your saved record, the order is not ready to submit.</p></div>
+        <figure className="research-visual">
+          <img src="/brand/articles/hubbuy-taobao-buying-checklist.png" alt="Four-step Taobao listing, Hubbuy order, warehouse inspection and approval workflow" width="1200" height="630" loading="lazy" />
+          <figcaption>Original Hubbuy Sheet editorial illustration created for this guide; it depicts a verification workflow, not a customer order or platform screenshot.</figcaption>
+        </figure>
+      </section>
+
+      <section id="source-record">
+        <span>02 · Preserve the source</span>
+        <h2>Save the Taobao evidence before the listing changes</h2>
+        <p>Taobao pages can change. Preserve the final URL after redirects, shop name, item identifier and a screenshot of the selected option. A screenshot without the URL is hard to trace; a URL without the chosen option is incomplete.</p>
+        <p>Record the seller’s exact option wording plus a plain note, such as “navy, 175/96A, one hoodie, no gift box.” Keep the dated size chart when letter sizes and measurements disagree.</p>
+        <ul>
+          <li><strong>Identity:</strong> final URL, shop name and item identifier.</li>
+          <li><strong>Selection:</strong> color, model, size, bundle and quantity.</li>
+          <li><strong>Price:</strong> selected-option price and displayed China shipping.</li>
+          <li><strong>Evidence:</strong> option screenshot, size chart and any seller message.</li>
+        </ul>
+        <p>Do not trim the link blindly. If a cleaned address opens another item, return to the original. The <Link href="/articles/hubbuy-product-link-not-working/">product-link troubleshooting guide</Link> separates source, shared URL and import failures.</p>
+      </section>
+
+      <section id="listing-check">
+        <span>03 · Check the listing</span>
+        <h2>Read the selected SKU, not the cheapest headline price</h2>
+        <p>A Taobao card may show the lowest available price while your size, color or bundle costs more. Select the intended option and confirm that the title, main photos and detail description still refer to the same product. Look for a stated China shipping charge and whether the listing describes a preorder, customization or a later seller dispatch. Do not convert silence into a promise.</p>
+        <p>For clothing, compare measurements with an item you own. For shoes, confirm the size system and model. For sets, list every expected piece. Mark claims that warehouse photos cannot test as unresolved.</p>
+        <p>Stop when a key choice is unclear. If the original item is gone, treat a similar listing as a new seller and product decision and repeat the source check.</p>
+      </section>
+
+      <section id="submit">
+        <span>04 · Submit accurately</span>
+        <h2>Let the automatic result earn your trust—or use the current manual path</h2>
+        <p>Paste the saved final URL into the current Hubbuy interface. If a product draft appears, compare its shop, title, image, option names, quantity, item price and China shipping with the source. An imported page is not proof of a correct order; it is a draft assembled from current marketplace data.</p>
+        <p>The accessible manual form showed fields for product link, name, CNY unit price, quantity, shipping, shop and specification notes. Interfaces can change, so use what you actually see. Copy source facts exactly; never substitute a guessed shipping charge, teaser price or ambiguous translated color.</p>
+        <p>If the automatic draft and seller page disagree, pause. Reopen the source, check whether the selected SKU changed and use the current official support path if the mismatch remains. A manual entry is appropriate only when it preserves a live listing accurately; it cannot revive a removed item or prove stock.</p>
+      </section>
+
+      <section id="order-review">
+        <span>05 · Review before payment</span>
+        <h2>Compare the Hubbuy order line by line</h2>
+        <p>Before paying, compare the saved Taobao evidence with the Hubbuy draft. Match seller, item, option, quantity, product amount and China shipping. Record corrections beside the order. The accessible public pages do not publish a permanent payment method or fee schedule, so this guide does not name one.</p>
+        <div className="article-point-grid">
+          <div><b>MATCH</b><strong>Seller + item ID</strong><span>The order points to the intended source.</span></div>
+          <div><b>DEFINE</b><strong>Option + quantity</strong><span>No color, model or bundle is left implied.</span></div>
+          <div><b>RECONCILE</b><strong>Item + China shipping</strong><span>The order reflects the selected SKU, not the teaser price.</span></div>
+          <div><b>PRESERVE</b><strong>Changes + messages</strong><span>The final instruction survives after payment.</span></div>
+        </div>
+        <p>Keep international shipping separate. The public sequence places it after warehouse processing and parcel submission.</p>
+      </section>
+
+      <section id="warehouse">
+        <span>06 · Reconnect at warehouse</span>
+        <h2>Use the saved Taobao option as the QC reference</h2>
+        <p>When the domestic parcel arrives, match the warehouse order number to your source record. Check count, model, color, size label and visible condition first. Then inspect the category-specific details that matter: measurements and print placement for clothing, size labels and pair consistency for shoes, or included pieces and hardware for accessories.</p>
+        <p>Photos cannot prove fiber content, durability, authenticity or hidden functions. Request a clearer view only when it resolves a named decision; the <Link href="/articles/hubbuy-qc-photos-guide/">QC photo guide</Link> separates facts from assumptions.</p>
+        <p>If the item does not match the saved order, keep it out of the international parcel and report one precise difference. Current seller acceptance, costs and timing are transaction-specific. Use the <Link href="/articles/hubbuy-return-exchange-after-qc/">warehouse return and exchange evidence guide</Link> to preserve the issue, response and final resolution without inventing a universal deadline.</p>
+      </section>
+
+      <section id="worked-example">
+        <span>07 · Worked example</span>
+        <h2>A hoodie order shows why every handoff needs the same identifiers</h2>
+        <p>Suppose a Taobao listing offers three navy hoodies: a standard version, a lined version and a two-piece set. The headline card displays ¥89, but the intended lined version in size 175/96A displays ¥129 plus ¥8 China shipping. These amounts are illustrative, not a current seller quote.</p>
+        <p>The saved record contains the URL, shop, lined navy version, 175/96A, quantity one, ¥129 price and ¥8 domestic shipping. The Hubbuy draft must match. At arrival, check color, label, lining and quantity; one targeted interior image is more useful than several general pictures.</p>
+        <div className="article-formula"><small>Illustrative order-stage subtotal</small><strong>¥129 selected item + ¥8 China shipping = ¥137 before later account and international-parcel costs</strong></div>
+        <p>This is not a delivered-total forecast. Packed weight, routes and destination charges are later decisions.</p>
+      </section>
+
+      <section id="decision-checklist">
+        <span>08 · Final checklist</span>
+        <h2>Do not advance until the current stage is internally consistent</h2>
+        <ol>
+          <li>Open the final live Taobao item page and save the complete URL.</li>
+          <li>Record the shop, item identifier, exact SKU wording, quantity and size chart.</li>
+          <li>Capture the selected-option price and China shipping at the same moment.</li>
+          <li>Paste the link into Hubbuy and compare every imported field with the source.</li>
+          <li>Use the current manual path only with a live source and exact evidence.</li>
+          <li>Review the submitted order and preserve every approved correction.</li>
+          <li>At warehouse arrival, match identity and quantity before judging details.</li>
+          <li>Resolve material mismatches before adding the item to an international parcel.</li>
+        </ol>
+        <p>This workflow does not remove seller, sizing or shipping risk. It makes the product decision auditable. If a later page changes, you still know what was selected, what Hubbuy was asked to buy and what the warehouse actually received.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources"><strong>Dated source boundary</strong><p>Platform facts were checked on 26 August 2026 against the currently accessible public HubbuyCN homepage, marketplace search interface and manual order form. The original public domain returned an error during the check. No fixed payment option, service fee, exchange deadline, delivery time or international route is inferred.</p></div>
+      <ArticleCta />
+    </>
+  );
+}
+
 function HubbuyReviewsArticle({ article }) {
   return (
     <>
@@ -903,6 +1005,7 @@ function HubbuyTrackingArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "how-to-buy-from-taobao-with-hubbuy") return <HubbuyTaobaoArticle article={article} />;
   if (article.slug === "hubbuy-return-exchange-after-qc") return <HubbuyReturnsAfterQcArticle article={article} />;
   if (article.slug === "hubbuy-order-status-guide") return <HubbuyOrderStatusArticle article={article} />;
   if (article.slug === "hubbuy-parcel-tracking-delay-guide") return <HubbuyTrackingArticle article={article} />;

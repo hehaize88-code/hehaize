@@ -261,7 +261,7 @@ function localizeHtml(sourceHtml, route, locale) {
 }
 
 function enhanceEnglishHtml(sourceHtml, route) {
-  let html = updateLanguageMenu(sourceHtml, route, "en");
+  let html = updateLanguageMenu(sourceHtml.replaceAll("hrefLang=", "hreflang="), route, "en");
   html = replaceSeoHead(html, route, "en");
   return html;
 }

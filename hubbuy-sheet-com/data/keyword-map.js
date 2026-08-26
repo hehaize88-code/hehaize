@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "how-to-buy-from-taobao-with-hubbuy": {
+    primaryQuery: "how to buy from Taobao with Hubbuy",
+    secondaryTerms: ["Hubbuy Taobao buying guide", "submit Taobao link to Hubbuy", "Hubbuy Taobao order checklist", "Taobao listing warehouse QC workflow"],
+    searchIntent: "Submit a Taobao product to Hubbuy without losing the source listing, selected SKU or warehouse comparison evidence",
+    angle: "Listing-to-warehouse verification workflow focused on source preservation, exact SKU instructions and order reconciliation",
+    evidence: ["Current HubbuyCN product-name-or-link search and Taobao tab checked 26 August 2026", "Current public manual order fields and staged purchase workflow"],
+    internalLinkRole: "Marketplace-specific buying leaf connecting link troubleshooting, QC interpretation and warehouse after-sales decisions",
+  },
   "hubbuy-return-exchange-after-qc": {
     primaryQuery: "Hubbuy returns after QC",
     secondaryTerms: ["Hubbuy return after warehouse QC", "Hubbuy exchange wrong item", "Hubbuy refund QC issue", "Hubbuy warehouse return evidence"],
