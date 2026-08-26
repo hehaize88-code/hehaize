@@ -10,7 +10,8 @@ type ArticleSlug =
   | "lolobuy-hoodie-size-guide"
   | "lolobuy-bag-qc-guide"
   | "lolobuy-stitching-finish-qc-checklist"
-  | "lolobuy-alignment-symmetry-print-placement-qc";
+  | "lolobuy-alignment-symmetry-print-placement-qc"
+  | "lolobuy-size-measurement-qc-photo-limits";
 
 type TopicCopy = {
   title: string;
@@ -96,6 +97,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "Un estampado puede parecer inclinado porque la prenda está doblada o la cámara no está centrada. Usa líneas propias del artículo y puntos equivalentes antes de decidir.",
       focus: "comprobar alineación, simetría y posición del estampado sin confundir perspectiva con un defecto",
     },
+    "lolobuy-size-measurement-qc-photo-limits": {
+      title: "QC de medidas LoloBuy: lo que una foto puede y no puede demostrar",
+      shortTitle: "QC de medidas LoloBuy",
+      description: "Define puntos, revisa regla y tensión, compara el mismo método y separa la cifra de las conclusiones sobre ajuste.",
+      eyebrow: "QC de medidas y sus límites",
+      intent: "Decidir si una foto con regla responde a la pregunta de talla antes de aprobar el paquete",
+      standfirst: "Una regla puede parecer precisa y medir desde el punto equivocado. Define los extremos, exige que se vea la colocación completa y compara con una prenda medida igual; comodidad y ajuste siguen sin probarse.",
+      focus: "evaluar medidas de almacén sin convertir una foto en garantía de ajuste",
+    },
   },
   de: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -169,6 +179,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Vor der QC-Freigabe eine echte Abweichung vom Kamerawinkel trennen",
       standfirst: "Ein Druck kann durch Falten oder einen schrägen Kamerawinkel verschoben wirken. Nutze produktbezogene Referenzlinien und gleiche Merkmale für die Entscheidung.",
       focus: "Ausrichtung, Symmetrie und Druckposition ohne falsche Schlüsse aus der Perspektive zu prüfen",
+    },
+    "lolobuy-size-measurement-qc-photo-limits": {
+      title: "LoloBuy Größenmessungs-QC: Was ein Lagerfoto beweisen kann",
+      shortTitle: "LoloBuy Größenmessungs-QC",
+      description: "Endpunkte, Maßbandlage und Spannung prüfen, gleichartige Werte vergleichen und Fit-Grenzen erkennen.",
+      eyebrow: "Messungs-QC und Beleggrenzen",
+      intent: "Vor der Paketfreigabe beurteilen, ob ein Maßfoto die Größenfrage beantwortet",
+      standfirst: "Ein sichtbares Maßband kann am falschen Punkt beginnen. Definiere beide Enden, prüfe den gesamten Verlauf und vergleiche nur dieselbe Methode; Komfort und Sitz bleiben offen.",
+      focus: "Lagermessungen zu bewerten, ohne ein Foto zur Passformgarantie zu machen",
     },
   },
   fr: {
@@ -244,6 +263,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "Un motif peut sembler incliné si le vêtement est plié ou si l’appareil est décentré. Utilisez les lignes propres à l’article et des repères appariés avant de décider.",
       focus: "contrôler alignement, symétrie et placement sans confondre perspective et défaut",
     },
+    "lolobuy-size-measurement-qc-photo-limits": {
+      title: "QC des mesures LoloBuy : ce qu’une photo peut et ne peut pas prouver",
+      shortTitle: "QC des mesures LoloBuy",
+      description: "Définissez les points, contrôlez règle et tension, comparez la même méthode et gardez les limites de coupe.",
+      eyebrow: "QC des mesures et limites",
+      intent: "Décider si une photo de mesure répond à la question de taille avant validation",
+      standfirst: "Une règle visible peut commencer au mauvais point. Définissez les deux extrémités, vérifiez tout le trajet et comparez la même méthode ; confort et coupe restent inconnus.",
+      focus: "évaluer une mesure d’entrepôt sans transformer la photo en garantie de coupe",
+    },
   },
   it: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -317,6 +345,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Separare una vera differenza di allineamento dall’angolo della fotocamera prima dell’approvazione",
       standfirst: "Una stampa può sembrare inclinata per una piega o una ripresa decentrata. Usa linee dell’articolo e punti corrispondenti prima di decidere.",
       focus: "controllare allineamento, simmetria e posizione della stampa senza scambiare la prospettiva per un difetto",
+    },
+    "lolobuy-size-measurement-qc-photo-limits": {
+      title: "QC delle misure LoloBuy: cosa può e non può provare una foto",
+      shortTitle: "QC misure LoloBuy",
+      description: "Definisci estremi, controlla righello e tensione, confronta lo stesso metodo e separa il numero dalla vestibilità.",
+      eyebrow: "QC delle misure e limiti",
+      intent: "Decidere se una foto con misura risponde alla domanda di taglia prima del pacco",
+      standfirst: "Un righello può sembrare preciso partendo dal punto sbagliato. Definisci gli estremi, mostra tutto il percorso e confronta lo stesso metodo; comfort e vestibilità restano incerti.",
+      focus: "valutare misure di magazzino senza trasformare una foto in garanzia di vestibilità",
     },
   },
 };

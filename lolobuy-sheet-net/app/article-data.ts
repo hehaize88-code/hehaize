@@ -1024,6 +1024,108 @@ export const articles: ArticleRecord[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-size-measurement-qc-photo-limits",
+    title: "LoloBuy Size Measurement QC: What Warehouse Photos Can and Cannot Prove",
+    seoTitle: "LoloBuy Size Measurement QC: Photo Limits",
+    shortTitle: "LoloBuy Size Measurement QC",
+    description: "Use LoloBuy warehouse measurement photos correctly: define endpoints, check ruler placement, compare like with like and understand what photos cannot prove about fit.",
+    eyebrow: "Size-measurement QC",
+    primaryKeyword: "LoloBuy size measurement QC",
+    secondaryKeywords: [
+      "LoloBuy measurement photos",
+      "what QC photos cannot prove",
+      "warehouse clothing measurements",
+      "LoloBuy size check",
+    ],
+    intent: "Decide whether a warehouse measurement answers the buyer's fit question before parcel approval",
+    checkedDate: "26 August 2026",
+    publishedDate: contentDates.articles["lolobuy-size-measurement-qc-photo-limits"].published,
+    modifiedDate: contentDates.articles["lolobuy-size-measurement-qc-photo-limits"].modified,
+    image: "/social/size-measurement-qc-limits.svg",
+    imageAlt: "Diagram showing defined measurement endpoints, visible ruler placement, comparable reference data and the remaining fit uncertainty",
+    imageCaption: "A useful measurement photo answers one defined numerical question. It does not turn a warehouse image into a fitting room.",
+    standfirst: "A ruler in a warehouse photo can look precise while answering the wrong question. The garment may be stretched, the tape may begin outside the frame, or the seller chart may define the measurement differently. Reliable LoloBuy size measurement QC starts by naming two endpoints, checking the full ruler placement and comparing the result with a reference measured the same way. Even then, the image cannot prove comfort, drape or how the item will fit a particular body.",
+    takeaways: [
+      "Define the two measurement endpoints before requesting or reading a photo.",
+      "Reject numbers when the zero mark, tape path or garment position is hidden.",
+      "Compare only measurements taken with the same method and level of tension.",
+      "Keep numerical evidence separate from conclusions about comfort, stretch and fit.",
+    ],
+    sourceNote: "Evidence ledger, checked 26 August 2026: LoloBuy's public website was reachable and continues to describe product-link ordering plus warehouse quality inspection and photographs. Those platform statements establish a review checkpoint, not a universal measurement service, free-photo count, tolerance, return rule or fit guarantee. The endpoint, ruler-placement and comparison tests below are independent editorial analysis. Any additional photo, measurement or order action must be confirmed in the current warehouse interface.",
+    sections: [
+      {
+        heading: "Begin with the fit question, not the ruler",
+        paragraphs: [
+          "Before asking for a measurement, write the decision it must change. “Will this hoodie fit?” is too broad. “Is the flat chest width within two centimetres of the sweatshirt I wear comfortably?” is testable. For trousers, the decisive question may be waist laid flat, rise, thigh width or inseam. For shoes, it may be removable-insole length rather than the printed size label. One image should answer one clearly bounded question.",
+          "Use the saved listing and order record to identify what was promised. Confirm product, selected size, colour or model and the seller chart that influenced the order. If the wrong labelled size is visible, there is no need to debate a measurement first. Identity precedes fit evidence. A measurement becomes useful only after the warehouse item can be tied to the intended option.",
+        ],
+      },
+      {
+        heading: "Translate every chart label into two physical endpoints",
+        paragraphs: [
+          "Words such as length, width and waist are not self-defining. Garment length might run from the highest shoulder point, the collar seam or the back neck. Chest may mean full circumference, half width or a point below the armhole. Shoe length may refer to foot length, insole length or outsole length. Write the start point, end point, path and whether the item lies flat before comparing any numbers.",
+          "Preserve the original chart label beside your interpretation. Translation can blur technical terms or omit whether a value is one-sided. When the source diagram shows measurement arrows, save it. If the chart has no method, label the comparison uncertain and avoid inventing a conventional definition. Two identical numbers measured from different points do not describe the same dimension.",
+        ],
+      },
+      {
+        heading: "Check the complete measurement setup",
+        paragraphs: [
+          "A trustworthy photo should show both endpoints, the ruler's zero mark, the full measuring path and enough of the item to confirm its position. The tape should lie on the same plane as the product and follow the stated path. A cropped image that shows only the final number does not reveal where the measurement began. A diagonal tape can add distance, while a tape floating above a curved surface can shorten or lengthen the apparent path.",
+          "Look for folds, bunching, stuffing and uneven tension. A hoodie pulled wide at the armpits can inflate chest width. An elastic waistband stretched by hand is not comparable with an unstretched seller-chart value. A removable insole curled at the heel can produce a misleading length. Describe the setup before accepting the number: laid flat, relaxed, gently straightened, stretched or uncertain.",
+        ],
+        bullets: [
+          "Both physical endpoints visible",
+          "Zero mark and final reading visible",
+          "Tape flat and on the intended path",
+          "Item position and tension identifiable",
+          "Units readable without guessing",
+        ],
+      },
+      {
+        heading: "Compare like with like",
+        paragraphs: [
+          "The strongest reference is usually an item you own that fits as intended and that you measure using the same endpoints and setup. Lay it on a similar surface, smooth it without stretching and use the same tool and unit. Record whether the garment is washed and worn or new, because fabric can change with use. The goal is not laboratory precision; it is a reproducible comparison between the warehouse item and a known fit.",
+          "A body measurement and a flat garment measurement are different evidence. A 100-centimetre chest circumference does not mean a garment with a 50-centimetre flat chest will fit identically; ease, fabric stretch, cut and layering all matter. Likewise, foot length is not the same as insole or internal shoe space. Do not subtract unlike numbers and present the remainder as guaranteed comfort.",
+        ],
+      },
+      {
+        heading: "Account for tolerance without inventing a universal rule",
+        paragraphs: [
+          "Seller charts sometimes include their own tolerance or measurement note. Save that exact statement and apply it only to the current listing. If no tolerance is published, do not borrow one from another seller, category or agent. Manual measurement can vary because of tape placement, fabric, tension and rounding, but that does not justify a blanket rule that every difference below a chosen number must be accepted.",
+          "Set a personal decision threshold from the fit question. A two-centimetre difference may be irrelevant for a loose scarf and decisive for a fitted waistband. Record the target range from your reference item, then classify the warehouse reading as inside, outside or inconclusive because the setup is weak. This language is more defensible than calling every small difference a defect.",
+        ],
+      },
+      {
+        heading: "Know what a warehouse measurement photo cannot prove",
+        paragraphs: [
+          "Even a well-positioned ruler cannot prove comfort, drape, softness, pressure points, toe-box shape on your foot, heel slip, mobility or how several dimensions interact on your body. A flat chest width does not show shoulder rotation. An inseam does not show rise comfort. An insole length does not establish arch position, width, cushioning or internal volume. Those are residual fit risks, not missing decimals.",
+          "Photos also cannot reliably prove material composition, long-term stretch recovery, shrinkage after washing, waterproofing, durability or authenticity. LoloBuy's public description confirms inspection and photographs but does not turn the warehouse into a fitting service or materials laboratory. Use each image for visible identity, condition and clearly defined measurements only.",
+        ],
+      },
+      {
+        heading: "Request one decision-changing measurement",
+        paragraphs: [
+          "If the available photos leave a material question, phrase the request so a different person can repeat it: “Please lay the hoodie flat without stretching and measure chest width from the lower edge of one armpit seam to the other, showing the zero mark and both seams.” For shoes: “If the insole is removable, measure its longest heel-to-toe line with the entire ruler visible.” Name one item, one setup, two endpoints and one unit.",
+          "Check whether the current order offers the requested service and what it costs before relying on it. The public homepage does not establish a universal included photo count, extra-photo price or measurement guarantee. Do not request ten generic images when one controlled view can settle the issue. If the required setup is unavailable, classify the fit question unresolved and decide from your own risk tolerance.",
+        ],
+      },
+      {
+        heading: "Use a pass, question or mismatch decision",
+        paragraphs: [
+          "Pass when identity is correct, the method is visible and the comparable measurement falls within the documented range you chose. Ask a focused question when one improved setup could resolve a decision-changing uncertainty. Record a mismatch when the ordered size or a reproducible measurement conflicts with the saved option or chart in a way that changes your willingness to ship. Keep descriptive language: expected, observed, method and difference.",
+          "Then use only the action and terms shown for that order. This guide cannot promise a return, exchange, refund, deadline or fee. Save the source chart, selected option, full warehouse image, relevant crop or annotation, calculation and date. Do not include passwords, payment data, addresses or unrelated tracking information in a shared evidence pack.",
+        ],
+      },
+      {
+        heading: "A compact size-measurement QC record",
+        paragraphs: [
+          "Keep one row with product, selected size, seller measurement label, your two endpoint definitions, seller value, reference-item value, warehouse reading, setup quality and decision. Add a note for residual fit risk. For example: “Chest width comparable and inside range; shoulder shape and fabric stretch remain unknown.” This prevents one reassuring number from becoming a claim the image cannot support.",
+          "This page answers a narrower question than the broad LoloBuy QC photo guide and the hoodie sizing article. The general guide sets the inspection order; the hoodie page helps choose a category-specific size before ordering; this article evaluates whether a ruler photo is methodologically usable across products. That distinction keeps the pages complementary and gives QC-focused buyers a repeatable way to reject false precision.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string) {
