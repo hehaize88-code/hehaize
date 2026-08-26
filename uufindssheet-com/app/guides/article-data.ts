@@ -31,6 +31,113 @@ export type Guide = {
 
 export const guides: Guide[] = [
   {
+    slug: "uufinds-jeans-trousers-qc-checklist",
+    label: "TROUSERS QC GUIDE",
+    title: "UUFinds Jeans QC Checklist: Fit, Wash and Construction Evidence",
+    seoTitle: "UUFinds Jeans QC Checklist: Fit, Wash & Construction",
+    description: "Use this UUFinds jeans QC checklist to review fit evidence, measurements, wash, seams, hardware and trouser details without overclaiming what photos prove.",
+    primaryKeyword: "UUFinds jeans QC checklist",
+    longTailKeywords: ["UUFinds trousers QC photos", "how to check jeans QC pictures", "jeans measurement photo checklist", "UUFinds pants spreadsheet QC guide"],
+    updated: "August 26, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-08-26",
+    modifiedISO: "2026-08-26",
+    englishOnly: true,
+    sourceNote: "Fact-checked August 26, 2026 against the current public UUFinds QC Finder, UUFinds public browsing page and the current App Store listing from Uufinds Limited. Those sources support QC-photo discovery, marketplace and agent-link handling, image-based search, and current filtering references for size, style and agent options. They do not establish that every jeans listing has complete measurements, that photographed and future units are identical, or that UUFinds sells, stores, ships or guarantees a product.",
+    intro: [
+      "A useful UUFinds jeans QC checklist begins before the first seam inspection. Jeans and trousers can share the same catalog image while differing in cut, wash, fabric, hardware and size. A clean-looking photo set is therefore weak evidence unless it belongs to the exact source item and relevant option.",
+      "This guide is for QC researchers comparing denim jeans, cargo trousers and casual pants. It gives a fixed review order, a measurement record and practical stop conditions. It does not treat UUFinds as a seller or purchasing agent. UUFinds publicly describes itself as an informational QC-photo platform. If a candidate survives research, the marketplace transaction and any later warehouse checks must be handled by the independent agent the user chooses under that agent's current terms.",
+    ],
+    sections: [
+      {
+        heading: "1. Match the exact source, style and colour first",
+        paragraphs: [
+          "Start with identity because two black jeans can be visually close but belong to different sellers, item IDs or cuts. Preserve the original Taobao, 1688 or Weidian address when available and compare its item identifier with the returned record. If the input is an agent wrapper, recover the underlying marketplace source before treating the result as exact. UUFinds can accept marketplace and agent links, but input compatibility does not prove an affiliation with any agent.",
+          "Next define the option as a tuple: style or cut, colour or wash, waist size, length, material version and quantity. A product-level match is not enough when one listing contains straight, baggy and tapered versions or several washes. Label the result Exact only when the source item agrees and no visible option conflicts. Use Probable when the item agrees but a decisive option is absent. A different seller, item ID or clearly different cut is a Conflict, even if the studio image looks familiar.",
+        ],
+        table: { caption: "Identity decision before reviewing garment quality", headers: ["Status", "Minimum evidence", "Use of the QC set"], rows: [
+          ["Exact", "Source item agrees; relevant option has no conflict", "Inspect as evidence for the candidate"],
+          ["Probable", "Item agrees; one decisive option is missing", "Use to form questions, not a final verdict"],
+          ["Reference only", "Similar garment without traceable identity", "Learn which details to request later"],
+          ["Conflict", "Seller, item, cut, colour or size disagrees", "Do not assign the photos to the candidate"],
+        ] },
+      },
+      {
+        heading: "2. Read the full silhouette before close-ups",
+        paragraphs: [
+          "Look for an unobstructed front and back view with the waistband, rise, legs and hems visible. Overall shape answers a different question from stitching. Compare the apparent rise, thigh width, knee line, taper and leg opening with the listing's selected cut. A wide-leg trouser should not quietly become a slim candidate because its close-up details look good. Note whether the garment is laid flat, folded or hanging; presentation changes how proportions appear.",
+        ],
+        points: ["Front coverage: waistband, fly, pockets, rise and both hems.", "Back coverage: yoke, seat seam, pockets and leg alignment.", "Cut evidence: thigh, knee and opening proportions visible together.", "Presentation note: flat, hanging, folded or partly obscured."],
+      },
+      {
+        heading: "3. Treat measurements as evidence, not a fit guarantee",
+        paragraphs: [
+          "Letter sizes are not comparable across every seller, so decision-relevant measurements matter more than an S, M or L label. For jeans, useful fields are waistband laid flat, front rise, back rise, thigh width, inseam, outseam and leg opening. Cargo trousers may also need knee width or pocket position. A tape must have visible start and end points, lie reasonably straight and measure the garment rather than empty background.",
+          "Convert the evidence carefully. A flat waistband reading is usually one side of the garment; doubling it produces a garment circumference estimate, not a body-size recommendation. Suppose the visible flat waist is 42 cm. The simple garment estimate is 84 cm. If a comparison pair measures 43.5 cm the same way, the candidate is 1.5 cm narrower flat, or about 3 cm in doubled circumference. That comparison is more useful than announcing a universal size conversion.",
+          "Fabric composition, stretch, shrinkage, rise and personal ease preference can still change fit. Photos cannot prove how the waistband behaves under tension or after washing. When a crucial measurement is absent or the tape placement is ambiguous, mark it Unknown and request a new measurement through the independently chosen agent after ordering. Never borrow a dimension from a similar listing and attach it to this one.",
+        ],
+        table: { caption: "A compact trousers measurement record", headers: ["Field", "What the photo must show", "Common limit"], rows: [
+          ["Waist flat", "Both waistband edges and tape endpoints", "Does not prove stretch or body fit"],
+          ["Rise", "Crotch seam to waistband along a clear path", "Small placement changes affect the reading"],
+          ["Inseam", "Crotch point to hem on one leg", "Folds can shorten the visible path"],
+          ["Leg opening", "Hem measured edge to edge", "One hem does not prove both match"],
+        ] },
+      },
+      {
+        heading: "4. Check wash and colour with lighting limits in mind",
+        paragraphs: [
+          "Denim wash is a pattern as well as a colour. Compare fading at the thighs, whiskering near the fly, abrasion around pockets, seam highlights and any distressed areas with the selected listing image. For solid trousers, compare panel-to-panel consistency and look for unexpected marks. Use several views because one bright photograph can make dark indigo look mid-blue and one compressed image can hide subtle stains.",
+          "Do not call a shade exact from QC media alone. White balance, exposure, screen settings and fabric direction all affect colour. A better conclusion is “wash placement appears consistent across front and back; exact shade unresolved.” If the option difference is mainly colour—black versus washed charcoal, for example—ask for an image under neutral lighting with a simple reference object. If the available photos contradict one another, keep the colour unresolved rather than choosing the most flattering frame.",
+        ],
+      },
+      {
+        heading: "5. Inspect load-bearing seams, pockets and hems",
+        paragraphs: [
+          "Move from structure to finish. Follow the waistband seam, side seams, inseams, seat seam and hems. Look for missed stitches, open seam sections, strong puckering, loose thread clusters and abrupt changes in stitch direction. One loose thread may be trim-level cleanup; a gap in the seat seam is a functional concern. The useful question is not whether every stitch is cosmetically perfect, but whether a visible issue affects appearance, durability or use.",
+          "Pockets deserve their own pass. Compare front-pocket openings, coin-pocket position, back-pocket height and shape, cargo-pocket alignment, flap closure and reinforcement at stress points. Check whether printed or embroidered details cross pocket seams as the selected design intends. If a pocket appears sewn shut or missing, confirm the same area from another angle before marking a defect; folds and hands inside a garment can conceal an opening.",
+        ],
+      },
+      {
+        heading: "6. Verify hardware, labels and the chosen configuration",
+        paragraphs: [
+          "Inspect the fly type, waist closure, rivets, adjustment tabs, drawcords and any cargo-pocket hardware that should be present. Photos can show whether a button is attached, a zipper track appears aligned or a drawcord end is missing. They cannot prove repeated zipper operation, metal composition or long-term durability. If function matters, request a short operational check through the agent handling the actual order rather than inferring it from a still image.",
+          "Read visible size, care and composition labels only when the text is legible. Compare the size label with the option record, but do not let a matching label override conflicting measurements. A composition label describes printed information; it is not laboratory proof of fibre content. Branded markings also cannot establish authenticity. UUFinds' public disclaimer says it does not control marketplace authenticity, legality or quality, so describe only visible details and avoid certification language.",
+        ],
+      },
+      {
+        heading: "7. Use a three-outcome decision, not a quality score",
+        paragraphs: [
+          "Finish with Accept for further consideration, Request evidence, or Reject from the shortlist. Accept means the source and option are traceable, coverage answers the decision-critical questions and no unacceptable visible issue remains. Request evidence means the candidate may work but a missing measurement, unclear wash, concealed seam or untested closure could change the choice. Reject means identity conflicts, the wrong option appears, a critical measurement misses your range or a visible construction issue exceeds your tolerance.",
+          "Save the source URL, UUFinds record, date checked, option tuple, measurement table, strongest visible concern and unresolved request. If moving forward, pass the original marketplace link and exact option to the independent purchasing agent you choose. Re-check the current seller, price, option and service terms in that agent's interface. Any new warehouse photos belong to the purchased unit and must be assessed separately; an older UUFinds QC set cannot guarantee what a seller later dispatches.",
+        ],
+      },
+      {
+        heading: "8. Final jeans and trousers QC checklist",
+        paragraphs: ["Before closing the record, make sure every conclusion has a visible basis. The fastest reliable workflow is identity, option, silhouette, measurements, colour, construction, hardware and decision. Skipping identity makes the rest potentially irrelevant; skipping measurements turns fit into guesswork; skipping unknowns encourages a clean photo set to look more complete than it is."],
+        points: [
+          "Exact marketplace item and relevant option are matched or clearly qualified.",
+          "Front and back silhouettes show the intended cut and no repeated asymmetry.",
+          "Waist, rise, inseam and opening evidence is recorded with tape placement limits.",
+          "Wash or colour is compared across views without claiming photographic exactness.",
+          "Waistband, side, inseam, seat, pocket and hem construction is reviewed.",
+          "Closures, hardware and readable labels agree with the chosen configuration.",
+          "The result is Accept, Request evidence or Reject, with a written reason.",
+          "The source and research notes—not an assumed affiliation—move to the chosen agent.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official interface", source: "UUFinds QC Finder", checked: "August 26, 2026", supports: "Taobao, 1688, Weidian, agent-link and product-name inputs; QC videos/photos and discovery results.", boundary: "A supported input or returned photo set does not prove listing identity, fit, authenticity or future product quality." },
+      { type: "Official listing", source: "UUFinds App Store listing", checked: "August 26, 2026", supports: "Link conversion and real-quality-picture functions; the current version history references size, style and agent filtering.", boundary: "A filtering feature does not guarantee that every result contains complete or accurate option and measurement evidence." },
+      { type: "Official disclaimer", source: "UUFinds platform disclaimer", checked: "August 26, 2026", supports: "UUFinds describes itself as informational, not a direct or indirect seller, and disclaims control over marketplace authenticity, legality and quality.", boundary: "Marketplace transactions and later order checks belong to the seller and the independently chosen purchasing agent." },
+    ],
+    relatedLinks: [
+      { href: "/guides/how-to-read-uufinds-product-detail-page/", label: "Read a product detail page", description: "Separate source, seller, option and media fields before treating a record as relevant." },
+      { href: "/guides/uufinds-qc-search-capabilities-limitations/", label: "Understand search limits", description: "Classify what a returned QC record supports and which conclusions remain unknown." },
+      { href: "/categories/hoodies/", label: "Compare another apparel category", description: "See how measurement and construction priorities change by garment type." },
+    ],
+  },
+  {
     slug: "how-to-read-uufinds-product-detail-page",
     label: "PRODUCT DETAIL RESEARCH",
     title: "How to Read a UUFinds Product Detail Page: QC Evidence Guide",

@@ -32,6 +32,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "TROUSERS QC GUIDE",
+    title: "UUFinds Jeans QC Checklist: Fit, Wash and Construction Evidence",
+    summary: "Review matched jeans and trousers QC photos in a decision order that separates visible construction, measurement evidence and unresolved fit risk.",
+    href: "/guides/uufinds-jeans-trousers-qc-checklist/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "PRODUCT DETAIL RESEARCH",
     title: "How to Read a UUFinds Product Detail Page: QC Evidence Guide",
     summary: "Check route type, item identity, seller context, options, QC media and empty states without treating one record as a guarantee.",
