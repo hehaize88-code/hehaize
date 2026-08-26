@@ -107,7 +107,11 @@ const worker = {
     }
 
     const language = languageForPath(url.pathname);
-    const html = (await response.text()).replace(
+    const rawHtml = await response.text();
+    const isNotFoundDocument = response.status === 200
+      && rawHtml.includes("<title>404: This page could not be found.</title>")
+      && rawHtml.includes('name="robots" content="noindex"');
+    const html = rawHtml.replace(
       /<html\s+lang=(["'])[^"']*\1/i,
       `<html lang="${language}"`,
     );
@@ -117,8 +121,8 @@ const worker = {
     headers.delete("etag");
 
     return new Response(html, {
-      status: response.status,
-      statusText: response.statusText,
+      status: isNotFoundDocument ? 404 : response.status,
+      statusText: isNotFoundDocument ? "Not Found" : response.statusText,
       headers,
     });
   },
