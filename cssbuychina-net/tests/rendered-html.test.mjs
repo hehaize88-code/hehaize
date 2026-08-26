@@ -66,6 +66,21 @@ test("renders the category article with aligned search and social metadata", asy
   assert.ok(!html.includes("Build useful category pages, not doorway pages"));
 });
 
+test("renders the Taobao comparison article with complete SEO metadata", async () => {
+  const html = await fetchHtml("/articles/cssbuy-taobao-finds-compare-listings");
+  const url = "https://cssbuychina.net/articles/cssbuy-taobao-finds-compare-listings";
+  const title = "CSSBuy Taobao Finds: Compare Listings Before Ordering";
+
+  assert.ok(html.includes(`<title>${title}</title>`));
+  assert.ok(html.includes("<h1>How to Compare CSSBuy Taobao Finds Before You Order</h1>"));
+  assert.ok(tagWith(html, "link", "rel", "canonical").includes(`href="${url}"`));
+  assert.ok(tagWith(html, "meta", "property", "og:type").includes('content="article"'));
+  assert.ok(tagWith(html, "meta", "property", "og:url").includes(`content="${url}"`));
+  assert.ok(html.includes('"@type":"BreadcrumbList"'));
+  assert.ok(html.includes('"datePublished":"2026-08-27"'));
+  assert.ok(html.includes("Final Taobao listing decision checklist"));
+});
+
 test("renders localized home pages with consistent canonicals and metadata", async () => {
   const locales = [
     ["pt-br", "pt-BR", "Planilha CSSBuy 2026", "ARTIGO"],
@@ -97,12 +112,12 @@ test("renders all 30 product detail pages with main-store shopping links", async
   }
 });
 
-test("publishes an indexable robots file and a 78-URL sitemap", async () => {
+test("publishes an indexable robots file and a 79-URL sitemap", async () => {
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   assert.match(robots, /User-agent: \*\s+Allow: \//);
   assert.match(robots, /Sitemap: https:\/\/cssbuychina\.net\/sitemap\.xml/);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 78);
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 79);
   assert.equal((sitemap.match(/\/product\//g) ?? []).length, 30);
   assert.ok(sitemap.includes("<loc>https://cssbuychina.net/pt-br</loc>"));
   assert.ok(!sitemap.includes("<loc>https://cssbuychina.net/pt-br/</loc>"));
