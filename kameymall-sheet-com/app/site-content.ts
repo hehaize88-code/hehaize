@@ -20,7 +20,8 @@ export type StaticRouteKey =
   | "articles/kameymall-warehouse-storage-returns-guide"
   | "articles/kameymall-payment-methods-fees"
   | "articles/kameymall-order-status-guide"
-  | "articles/kameymall-consolidation-vs-split-parcels";
+  | "articles/kameymall-consolidation-vs-split-parcels"
+  | "articles/kameymall-shipping-lines-comparison";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
 
@@ -43,6 +44,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/kameymall-payment-methods-fees",
   "articles/kameymall-order-status-guide",
   "articles/kameymall-consolidation-vs-split-parcels",
+  "articles/kameymall-shipping-lines-comparison",
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -1145,6 +1147,24 @@ for (const language of languages) {
   copy.pageIntros["articles/kameymall-consolidation-vs-split-parcels"] = update.intro;
 }
 
+const shippingLineArticleUi: Record<Locale, { card: CardCopy; intro: { kicker: string; title: string; intro: string }; libraryIntro: string }> = {
+  en: { card: { label: "Route decision", title: "KameyMall Shipping Lines: Cost, Speed & Restrictions", body: "Compare only live-eligible lines using the same parcel, packing assumptions, delivery range and final measurement.", action: "Read the line guide" }, intro: { kicker: "Shipping line guide", title: "KameyMall Shipping Lines: Compare Cost, Speed and Restrictions", intro: "A source-checked framework for selecting the best valid route for a real warehouse parcel." }, libraryIntro: "Nine original guides cover product discovery, ordering, shipping costs, QC, storage, returns, payments, status, parcel consolidation and shipping-line choice." },
+  de: { card: { label: "Routenentscheidung", title: "KameyMall-Versandlinien vergleichen", body: "Nur live zulässige Linien mit gleichem Paket, gleicher Verpackung, Laufzeitspanne und Endmessung vergleichen.", action: "Linienratgeber lesen" }, intro: { kicker: "Versandlinien-Ratgeber", title: "KameyMall-Versandlinien: Kosten, Laufzeit und Einschränkungen", intro: "Ein quellengeprüfter Rahmen für die beste gültige Route des konkreten Lagerpakets." }, libraryIntro: "Neun originale Ratgeber behandeln Produkte, Bestellung, Fracht, QC, Lager, Rückgabe, Zahlung, Status, Konsolidierung und Linienwahl." },
+  fr: { card: { label: "Choix de ligne", title: "Comparer les lignes KameyMall", body: "Comparez les lignes admissibles avec le même colis, emballage, plage de délai et mesure finale.", action: "Lire le guide" }, intro: { kicker: "Guide des lignes", title: "Lignes KameyMall : comparer coût, délai et restrictions", intro: "Un cadre vérifié pour choisir la meilleure ligne valide d’un colis réel." }, libraryIntro: "Neuf guides originaux couvrent produits, commande, fret, QC, stockage, retours, paiements, statuts, consolidation et lignes." },
+  es: { card: { label: "Decisión de ruta", title: "Comparar líneas KameyMall", body: "Compara líneas elegibles con el mismo paquete, embalaje, franja de entrega y medición final.", action: "Leer guía" }, intro: { kicker: "Guía de líneas", title: "Líneas KameyMall: compara coste, plazo y restricciones", intro: "Un marco verificado para elegir la mejor ruta válida de un paquete real." }, libraryIntro: "Nueve guías originales cubren productos, pedidos, transporte, QC, almacén, devoluciones, pagos, estados, consolidación y líneas." },
+  it: { card: { label: "Scelta della rotta", title: "Confrontare le linee KameyMall", body: "Confronta linee idonee con stesso pacco, imballo, intervallo di consegna e misurazione finale.", action: "Leggi la guida" }, intro: { kicker: "Guida alle linee", title: "Linee KameyMall: confrontare costo, tempi e restrizioni", intro: "Un metodo verificato per scegliere la migliore rotta valida del pacco reale." }, libraryIntro: "Nove guide originali coprono prodotti, ordini, nolo, QC, deposito, resi, pagamenti, stati, consolidamento e linee." },
+  pl: { card: { label: "Wybór trasy", title: "Porównanie linii KameyMall", body: "Porównaj dopuszczone linie dla tej samej paczki, pakowania, zakresu czasu i pomiaru końcowego.", action: "Czytaj poradnik" }, intro: { kicker: "Poradnik linii", title: "Linie KameyMall: porównaj koszt, czas i ograniczenia", intro: "Sprawdzony schemat wyboru najlepszej ważnej trasy dla rzeczywistej paczki." }, libraryIntro: "Dziewięć oryginalnych poradników obejmuje produkty, zamówienia, fracht, QC, magazyn, zwroty, płatności, status, konsolidację i linie." },
+};
+
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  const update = shippingLineArticleUi[language.code];
+  copy.articles.cards.push(update.card);
+  copy.articles.intro = update.libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: update.libraryIntro };
+  copy.pageIntros["articles/kameymall-shipping-lines-comparison"] = update.intro;
+}
+
 export const copies: Record<Locale, SiteCopy> = {
   en: english,
   de: german,
@@ -1199,4 +1219,5 @@ export const articleRoutes: StaticRouteKey[] = [
   "articles/kameymall-payment-methods-fees",
   "articles/kameymall-order-status-guide",
   "articles/kameymall-consolidation-vs-split-parcels",
+  "articles/kameymall-shipping-lines-comparison",
 ];
