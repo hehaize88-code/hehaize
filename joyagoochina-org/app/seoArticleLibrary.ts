@@ -27,10 +27,15 @@ import {
   exchangeRateArticles,
   exchangeRateSourceBodies,
 } from "./exchangeRateArticle";
+import {
+  shoeboxDecisionArticles,
+  shoeboxDecisionSourceBodies,
+} from "./shoeboxDecisionArticle";
 
 export type SeoArticle = SeoArticleCopy["article"];
 
 export const extraSeoArticleSlugs = [
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk",
   "joyagoo-exchange-rate-currency-conversion",
   "joyagoo-domestic-shipping-seller-to-warehouse",
   "joyagoo-parcel-consolidation-packaging-guide",
@@ -60,6 +65,12 @@ export type SeoArticleEntry = {
 };
 
 const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": [
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-parcel-consolidation-packaging-guide",
+    "shipping-guide",
+    "articles",
+  ],
   "joyagoo-fees-explained": [
     "joyagoo-exchange-rate-currency-conversion",
     "joyagoo-volumetric-weight-shipping-cost",
@@ -111,6 +122,7 @@ const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
 };
 
 const englishExtras: Record<ExtraSeoArticleSlug, SeoArticle> = {
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": shoeboxDecisionArticles.en,
   "joyagoo-exchange-rate-currency-conversion": exchangeRateArticles.en,
   "joyagoo-domestic-shipping-seller-to-warehouse":
     domesticShippingArticles.en,
@@ -431,6 +443,7 @@ const localizedMeta: Record<
 };
 
 const articleGuideMap: Record<ExtraSeoArticleSlug, string> = {
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": "shipping-guide",
   "joyagoo-exchange-rate-currency-conversion": "how-to-buy",
   "joyagoo-domestic-shipping-seller-to-warehouse": "how-to-buy",
   "joyagoo-parcel-consolidation-packaging-guide": "shipping-guide",
@@ -444,6 +457,7 @@ const companionSections: Record<
   ExtraSeoArticleSlug,
   Array<{ guide: string; section: number }>
 > = {
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": [],
   "joyagoo-exchange-rate-currency-conversion": [],
   "joyagoo-domestic-shipping-seller-to-warehouse": [],
   "joyagoo-parcel-consolidation-packaging-guide": [],
@@ -463,6 +477,13 @@ const companionSections: Record<
 };
 
 const keywords: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": [
+    "joyagoo shoebox removal",
+    "remove shoe box joyagoo shipping",
+    "joyagoo shoe box shipping cost",
+    "keep shoe box or remove",
+    "joyagoo package removal",
+  ],
   "joyagoo-exchange-rate-currency-conversion": [
     "joyagoo exchange rate",
     "joyagoo currency conversion",
@@ -516,6 +537,7 @@ const keywords: Record<SeoArticleSlug, string[]> = {
 };
 
 const sourceBodies: Record<SeoArticleSlug, string> = {
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": shoeboxDecisionSourceBodies.en,
   "joyagoo-exchange-rate-currency-conversion": exchangeRateSourceBodies.en,
   "joyagoo-domestic-shipping-seller-to-warehouse":
     domesticShippingSourceBodies.en,
@@ -535,6 +557,10 @@ export const seoArticleDates: Record<
   SeoArticleSlug,
   { publishedAt: string; modifiedAt: string }
 > = {
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": {
+    publishedAt: "2026-08-27",
+    modifiedAt: "2026-08-27",
+  },
   "joyagoo-exchange-rate-currency-conversion": {
     publishedAt: "2026-08-13",
     modifiedAt: "2026-08-13",
@@ -620,6 +646,13 @@ function buildLocalizedExtra(
   locale: Exclude<Locale, "en">,
   slug: ExtraSeoArticleSlug,
 ): SeoArticle {
+  if (slug === "joyagoo-shoebox-removal-shipping-cost-damage-risk") {
+    return completeArticle(
+      locale,
+      shoeboxDecisionArticles[locale],
+      shoeboxDecisionArticles.en,
+    );
+  }
   if (slug === "joyagoo-exchange-rate-currency-conversion") {
     return completeArticle(
       locale,
@@ -689,6 +722,8 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
     sourceBody:
       locale === "en"
         ? sourceBodies[slug]
+        : slug === "joyagoo-shoebox-removal-shipping-cost-damage-risk"
+          ? shoeboxDecisionSourceBodies[locale]
         : slug === "joyagoo-domestic-shipping-seller-to-warehouse"
           ? domesticShippingSourceBodies[locale]
         : slug === "joyagoo-exchange-rate-currency-conversion"
@@ -699,6 +734,7 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
     ...seoArticleDates[slug],
     readTime:
       slug === "how-to-buy-from-taobao-with-joyagoo" ||
+      slug === "joyagoo-shoebox-removal-shipping-cost-damage-risk" ||
       slug === "joyagoo-exchange-rate-currency-conversion" ||
       slug === "joyagoo-parcel-consolidation-packaging-guide" ||
       slug === "joyagoo-domestic-shipping-seller-to-warehouse"

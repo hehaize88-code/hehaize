@@ -221,6 +221,7 @@ function OfficialSourceLinks({
 }
 
 const hidesEditorialSourceLinks = new Set([
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk",
   "joyagoo-exchange-rate-currency-conversion",
   "joyagoo-domestic-shipping-seller-to-warehouse",
 ]);

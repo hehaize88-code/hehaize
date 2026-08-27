@@ -9,6 +9,7 @@ const guideRoutes = [
   "returns",
 ];
 const articleRoutes = [
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk",
   "joyagoo-exchange-rate-currency-conversion",
   "joyagoo-domestic-shipping-seller-to-warehouse",
   "joyagoo-parcel-consolidation-packaging-guide",

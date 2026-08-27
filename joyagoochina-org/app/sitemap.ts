@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: SitemapPage[] = [
     {
       path: "/",
-      lastModified: "2026-08-13",
+      lastModified: "2026-08-27",
       changeFrequency: "weekly",
       priority: 1,
     },
@@ -99,7 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       path: "/articles/",
-      lastModified: "2026-08-13",
+      lastModified: "2026-08-27",
       changeFrequency: "weekly",
       priority: 0.9,
     },

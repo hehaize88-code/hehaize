@@ -48,6 +48,11 @@ const editorialImages: Record<string, EditorialImage> = {
     width: 750,
     height: 750,
   },
+  "joyagoo-shoebox-removal-shipping-cost-damage-risk": {
+    src: "/products/3376.webp",
+    width: 750,
+    height: 750,
+  },
   "joyagoo-parcel-consolidation-packaging-guide": {
     src: "/products/3376.webp",
     width: 750,
