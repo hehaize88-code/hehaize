@@ -11,7 +11,8 @@ type ArticleSlug =
   | "lolobuy-bag-qc-guide"
   | "lolobuy-stitching-finish-qc-checklist"
   | "lolobuy-alignment-symmetry-print-placement-qc"
-  | "lolobuy-size-measurement-qc-photo-limits";
+  | "lolobuy-size-measurement-qc-photo-limits"
+  | "lolobuy-qc-color-lighting-errors";
 
 type TopicCopy = {
   title: string;
@@ -106,6 +107,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "Una regla puede parecer precisa y medir desde el punto equivocado. Define los extremos, exige que se vea la colocación completa y compara con una prenda medida igual; comodidad y ajuste siguen sin probarse.",
       focus: "evaluar medidas de almacén sin convertir una foto en garantía de ajuste",
     },
+    "lolobuy-qc-color-lighting-errors": {
+      title: "Color y luz en fotos QC de LoloBuy: distinguir un error real de un tinte fotográfico",
+      shortTitle: "Color y luz en QC de LoloBuy",
+      description: "Compara referencias neutras, exposición y varias vistas antes de identificar un color incorrecto.",
+      eyebrow: "QC de color e iluminación",
+      intent: "Decidir si la diferencia de color es real o una incertidumbre fotográfica antes del envío",
+      standfirst: "La luz cálida, el balance automático, los reflejos y la exposición pueden cambiar el color aparente. Compara la opción pedida, referencias neutras y varias vistas antes de decidir.",
+      focus: "separar una diferencia real de color de los efectos de luz, exposición y pantalla",
+    },
   },
   de: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -188,6 +198,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Vor der Paketfreigabe beurteilen, ob ein Maßfoto die Größenfrage beantwortet",
       standfirst: "Ein sichtbares Maßband kann am falschen Punkt beginnen. Definiere beide Enden, prüfe den gesamten Verlauf und vergleiche nur dieselbe Methode; Komfort und Sitz bleiben offen.",
       focus: "Lagermessungen zu bewerten, ohne ein Foto zur Passformgarantie zu machen",
+    },
+    "lolobuy-qc-color-lighting-errors": {
+      title: "LoloBuy QC-Farbe und Licht: Echte Abweichung oder Farbstich?",
+      shortTitle: "LoloBuy Farb- und Licht-QC",
+      description: "Neutrale Referenzen, Belichtung und mehrere Ansichten prüfen, bevor eine Farbe als falsch gilt.",
+      eyebrow: "Farb- und Beleuchtungs-QC",
+      intent: "Vor dem Versand eine echte Farbabweichung von fotografischer Unsicherheit trennen",
+      standfirst: "Warmes Licht, automatischer Weißabgleich, Reflexe und Belichtung verändern die wahrgenommene Farbe. Bestelloption, neutrale Referenzen und mehrere Bilder gemeinsam auswerten.",
+      focus: "echte Farbabweichungen von Licht-, Belichtungs- und Displayeffekten zu trennen",
     },
   },
   fr: {
@@ -272,6 +291,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "Une règle visible peut commencer au mauvais point. Définissez les deux extrémités, vérifiez tout le trajet et comparez la même méthode ; confort et coupe restent inconnus.",
       focus: "évaluer une mesure d’entrepôt sans transformer la photo en garantie de coupe",
     },
+    "lolobuy-qc-color-lighting-errors": {
+      title: "Couleur et lumière des photos QC LoloBuy : écart réel ou dominante ?",
+      shortTitle: "QC couleur et lumière LoloBuy",
+      description: "Comparez références neutres, exposition et plusieurs vues avant de conclure à une mauvaise couleur.",
+      eyebrow: "QC de la couleur et de l’éclairage",
+      intent: "Séparer une véritable différence de couleur d’une incertitude photographique avant expédition",
+      standfirst: "Éclairage chaud, balance automatique, reflets et exposition peuvent modifier la couleur apparente. Comparez option commandée, repères neutres et vues répétées.",
+      focus: "distinguer une différence réelle de couleur des effets de lumière, d’exposition et d’écran",
+    },
   },
   it: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -354,6 +382,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Decidere se una foto con misura risponde alla domanda di taglia prima del pacco",
       standfirst: "Un righello può sembrare preciso partendo dal punto sbagliato. Definisci gli estremi, mostra tutto il percorso e confronta lo stesso metodo; comfort e vestibilità restano incerti.",
       focus: "valutare misure di magazzino senza trasformare una foto in garanzia di vestibilità",
+    },
+    "lolobuy-qc-color-lighting-errors": {
+      title: "Colore e luce nelle foto QC LoloBuy: differenza reale o dominante fotografica?",
+      shortTitle: "QC colore e luce LoloBuy",
+      description: "Confronta riferimenti neutri, esposizione e più viste prima di indicare un colore errato.",
+      eyebrow: "QC di colore e illuminazione",
+      intent: "Separare una vera differenza di colore dall’incertezza fotografica prima della spedizione",
+      standfirst: "Luce calda, bilanciamento automatico, riflessi ed esposizione possono cambiare il colore apparente. Confronta opzione ordinata, riferimenti neutri e più immagini.",
+      focus: "distinguere una differenza reale di colore dagli effetti di luce, esposizione e schermo",
     },
   },
 };
@@ -503,12 +540,27 @@ export function articleText(locale: Locale, key: string) {
   return articleUiExtra[locale][key] ?? articleUi[locale][key] ?? key;
 }
 
+const colorArticleCheckedDate: Record<LocalizedLocale, string> = {
+  es: "28 de agosto de 2026",
+  de: "28. August 2026",
+  fr: "28 août 2026",
+  it: "28 agosto 2026",
+};
+
+const colorArticleSourceNote: Record<LocalizedLocale, string> = {
+  es: "Base verificada el 28 de agosto de 2026: LoloBuy describe actualmente control de talla, color y otros detalles, además de fotos de inspección. Esto no convierte las imágenes en medición calibrada ni fija número de fotos, iluminación, tarifa o devolución. Los controles de tinte, exposición y vistas repetidas son análisis editorial independiente.",
+  de: "Geprüfte Basis vom 28. August 2026: LoloBuy beschreibt derzeit die Kontrolle von Größe, Farbe und weiteren Details sowie Inspektionsfotos. Das macht Bilder weder zu kalibrierten Messungen noch legt es Fotozahl, Beleuchtung, Preis oder Rückgabe fest. Farbstich-, Belichtungs- und Mehrbildtests sind unabhängige Analyse.",
+  fr: "Base vérifiée le 28 août 2026 : LoloBuy décrit actuellement le contrôle de la taille, de la couleur et d’autres détails, ainsi que des photos d’inspection. Cela ne rend pas les images calibrées et ne fixe ni nombre, éclairage, tarif ni retour. Les tests de dominante, exposition et vues répétées sont une analyse indépendante.",
+  it: "Base verificata il 28 agosto 2026: LoloBuy descrive attualmente il controllo di taglia, colore e altri dettagli, oltre alle foto di ispezione. Ciò non rende le immagini una misura calibrata e non fissa numero, luce, prezzo o reso. I controlli su dominante, esposizione e viste ripetute sono analisi indipendente.",
+};
+
 export function getLocalizedArticle(article: ArticleRecord, locale: Locale): ArticleRecord {
   if (locale === "en") return article;
 
   const topic = topics[locale][article.slug as ArticleSlug];
   if (!topic) return article;
   const shared = localeText[locale];
+  const isColorArticle = article.slug === "lolobuy-qc-color-lighting-errors";
   const insertFocus = (value: string) => value.replace("{focus}", topic.focus);
 
   return {
@@ -520,12 +572,12 @@ export function getLocalizedArticle(article: ArticleRecord, locale: Locale): Art
     eyebrow: topic.eyebrow,
     primaryKeyword: topic.shortTitle,
     intent: topic.intent,
-    checkedDate: shared.checkedDate,
+    checkedDate: isColorArticle ? colorArticleCheckedDate[locale] : shared.checkedDate,
     imageAlt: shared.imageAlt,
     imageCaption: shared.imageCaption,
     standfirst: topic.standfirst,
     takeaways: shared.takeaways.map(insertFocus),
-    sourceNote: shared.sourceNote,
+    sourceNote: isColorArticle ? colorArticleSourceNote[locale] : shared.sourceNote,
     sections: shared.sections.map((section) => ({
       heading: section.heading,
       paragraphs: section.paragraphs.map(insertFocus),

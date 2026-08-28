@@ -1126,6 +1126,108 @@ export const articles: ArticleRecord[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-qc-color-lighting-errors",
+    title: "LoloBuy QC Color and Lighting Errors: How to Separate a Real Mismatch From a Photo Cast",
+    seoTitle: "LoloBuy QC Color and Lighting Errors Guide",
+    shortTitle: "LoloBuy QC Color and Lighting Errors",
+    description: "Check LoloBuy QC color evidence without guessing: compare neutral references, exposure, white balance, angles and repeated views before calling a color mismatch.",
+    eyebrow: "Color and lighting QC",
+    primaryKeyword: "LoloBuy QC color and lighting",
+    secondaryKeywords: [
+      "LoloBuy QC color mismatch",
+      "warehouse photo lighting error",
+      "QC photo white balance",
+      "LoloBuy item color check",
+    ],
+    intent: "Decide whether an apparent color difference is a real product mismatch or a photographic uncertainty before parcel approval",
+    checkedDate: "28 August 2026",
+    publishedDate: contentDates.articles["lolobuy-qc-color-lighting-errors"].published,
+    modifiedDate: contentDates.articles["lolobuy-qc-color-lighting-errors"].modified,
+    image: "/social/qc-guide.png",
+    imageAlt: "Warehouse color review flow comparing neutral references, multiple views, exposure and the ordered option",
+    imageCaption: "Color is a comparison problem. Use the ordered option, neutral references and repeated views before deciding that a warehouse item is wrong.",
+    standfirst: "A warehouse photo can make the right color look wrong. Warm lamps can push gray toward beige, cool light can make black look blue, automatic white balance can shift one frame, and bright exposure can wash out saturation. Reliable LoloBuy QC color review does not trust one pixel or one screen. It compares the ordered color with several complete images, checks neutral references and asks whether the difference repeats under a controlled view.",
+    takeaways: [
+      "Confirm the ordered color name and option image before interpreting warehouse photos.",
+      "Use neutral objects and repeated views to detect a whole-image color cast.",
+      "Do not sample pixels or compare screens as if they were calibrated instruments.",
+      "Request one decision-changing view when lighting, exposure or reflections make the result uncertain.",
+    ],
+    sourceNote: "Evidence ledger, checked 28 August 2026: LoloBuy's public homepage currently says warehouse staff inspect size, color and other details and provide inspection photographs. That establishes a color-review checkpoint, not calibrated photography, controlled illumination, a universal photo count or a return result. The color-cast and white-balance limits use current Adobe documentation and CIE/NIST color-appearance principles as technical background; all order actions must be confirmed in the live LoloBuy interface.",
+    sections: [
+      {
+        heading: "Anchor the question to the exact ordered color",
+        paragraphs: [
+          "Begin with the saved seller page and order record. Write the original color label, seller option code and selected image. If the option was “dark olive,” do not reduce the test to “green.” If the listing used a poetic name without a standard reference, preserve that uncertainty. Confirm the product and variant before judging color: a wrong model photographed beautifully is still the wrong item, while a correct item under weak lighting may only need better evidence.",
+          "Separate three possible findings. An identity mismatch means the visible option or label differs from the order. A color mismatch means the item appears consistently different from the selected reference. A photographic uncertainty means lighting, white balance, exposure, reflections, compression or display conditions prevent a reliable conclusion. The third result is not a pass or a defect; it is a reason to improve the comparison only when the answer could change the shipment decision.",
+        ],
+      },
+      {
+        heading: "Understand why illumination changes apparent color",
+        paragraphs: [
+          "Object color is not seen independently of light. The spectrum and direction of illumination, surface reflectance and the viewer's adaptation all affect appearance. A warm source can add yellow or orange across the frame; a cool source can push neutrals toward blue. Mixed lighting is harder: daylight from one side and indoor light from another can make different parts of the same item appear to have different hues.",
+          "Glossy, metallic, satin and textured materials add another layer. Direct light creates highlights that can become nearly white, while shadows lower brightness and saturation. A black nylon panel can look charcoal in a broad reflection and deep black beside it. Do not choose a highlight or shadow as the representative color. Look for a midtone area on the main material where texture remains visible and illumination appears even.",
+        ],
+      },
+      {
+        heading: "Use neutral references to detect a whole-frame cast",
+        paragraphs: [
+          "Look for objects expected to be approximately neutral within the same image: a white or gray background, ruler, label, packing card or table surface. They are not certified color targets, but they can reveal a strong global cast. If every nominally white object looks yellow, the item is probably being viewed under warm light or warm white balance. If whites and grays shift between frames, the camera processing or lighting likely changed.",
+          "A neutral-looking background does not prove accurate product color. Automatic correction can neutralize one area while complex materials still render differently, and warehouse backgrounds may not be pure white. Use the reference diagnostically: it can lower confidence in a frame. Never correct the image in editing software and claim the result is the true item color unless a calibrated target and controlled workflow support that conclusion.",
+        ],
+        bullets: [
+          "Compare neutral objects within the same frame",
+          "Check whether the cast affects the whole image",
+          "Avoid highlights, deep shadows and reflected colors",
+          "Prefer a midtone area on the main material",
+          "Keep the unedited original beside any annotation",
+        ],
+      },
+      {
+        heading: "Check exposure before interpreting saturation",
+        paragraphs: [
+          "Overexposure can make a dark or saturated item look pale, while underexposure can hide hue differences and make several colors converge toward black. Check whether fine texture remains visible in the area being compared. Blown highlights without detail and blocked shadows without detail are weak evidence. Compare full views before zooming: one frame may expose for a light label and another for the dark product.",
+          "Do not infer a precise shade from a compressed thumbnail. Open the complete warehouse image at its normal size and inspect several areas. Digital compression can smear small color blocks and add edge artifacts, especially around prints, embroidery and thin piping. A localized discrepancy that appears only at a compressed boundary is less persuasive than a broad, repeated difference across the same material.",
+        ],
+      },
+      {
+        heading: "Compare repeated views instead of one favorite image",
+        paragraphs: [
+          "Create a small consistency table: image number, view, neutral-reference appearance, exposure quality, main-material appearance and confidence. Give more weight to frames where the product is fully visible, the surface faces the light evenly and the neutral context looks plausible. If three usable images agree and one strongly differs with a global cast, the outlier should not control the decision.",
+          "Matched sides can help. Compare two sleeves, shoes, bag panels or repeated components in the same frame. This avoids many cross-image lighting differences. If one component is visibly different while both sit under the same light and angle, the evidence is stronger. Still check whether one surface is tilted, reflective or covered by protective film before calling it the wrong color.",
+        ],
+      },
+      {
+        heading: "Keep seller images and warehouse images in their proper roles",
+        paragraphs: [
+          "Seller images identify the selected option and visual promise, but they may be edited, photographed under studio light or reused across variants. Warehouse images show the physical arrival under warehouse conditions, but they are not calibrated product photography. A direct pixel-for-pixel comparison between the two is therefore false precision. Compare category-level color, pattern and option identity first, then decide whether the remaining shade difference is material to you.",
+          "Use labels, option thumbnails and printed codes as supporting identity evidence. A seller's “cream” can be warmer than your idea of cream without proving a mismatch. If the listing provides a standardized color code, preserve it, but a photograph still cannot verify that code exactly without controlled measurement. The honest conclusion may be “appears warmer than the seller reference; warehouse lighting prevents a confident shade judgment.”",
+        ],
+      },
+      {
+        heading: "Do not turn your screen into a colorimeter",
+        paragraphs: [
+          "Phone and laptop displays vary in brightness, color profile, night mode and viewing angle. Messaging apps and browsers can also handle image color profiles differently. Disable obvious warm-screen modes for review and compare on one display, but do not claim that this calibrates the image. Another person's screen may show a different result from the same file.",
+          "Pixel sampling is especially misleading. A single RGB value belongs to one captured pixel after camera processing, compression and display conversion; it does not directly measure the product's reflectance. Averages over a selected area are not a cure when lighting is uneven or the material is glossy. Use visual sampling only to locate differences within the same image, never to publish a definitive real-world color value.",
+        ],
+      },
+      {
+        heading: "Request one controlled, decision-changing view",
+        paragraphs: [
+          "When color could change the keep-or-action decision, ask for one view that reduces the main uncertainty: the complete item under even neutral-looking light, camera facing the main surface, with a white and mid-gray reference already present in the warehouse environment if available. For paired goods, request both pieces together. For a color-blocked item, keep all relevant panels in one frame so relative color can be compared under the same conditions.",
+          "Do not request a universal studio setup or promise that an extra image will be free or calibrated. LoloBuy's public site confirms inspection photographs but does not specify those conditions. Check the service offered for the current order. Phrase the request around observable evidence, not a conclusion: “Please show both shoes side by side in one evenly lit full-frame image” is stronger than “prove the color is correct.”",
+        ],
+      },
+      {
+        heading: "Use a pass, mismatch or inconclusive decision record",
+        paragraphs: [
+          "Pass when the ordered option is identifiable and usable views show a consistent color within the range you accepted from the seller evidence. Record a mismatch when the option label or repeated same-light comparisons support a material difference that changes willingness to ship. Record inconclusive when global casts, clipped exposure, mixed illumination or reflections prevent a fair comparison and no obtainable view resolves it.",
+          "Save the ordered color label, seller option evidence, full warehouse images, neutral-reference observations, any controlled follow-up and the final decision date. Use descriptive wording such as “blue cast affects the full frame” or “left panel remains visibly lighter than the right panel in two same-light views.” This article is narrower than the broad QC order and measurement guides: it prevents color uncertainty from being mistaken for either proof of a defect or automatic approval.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string) {
