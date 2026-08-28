@@ -32,6 +32,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "SIZE RESEARCH GUIDE",
+    title: "UUFinds Size and Measurement Notes: Choose the Right Option",
+    summary: "Separate reference-garment measurements, seller charts, size tags and QC records before selecting an exact listing option.",
+    href: "/guides/uufinds-size-measurement-notes-before-option/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "TROUSERS QC GUIDE",
     title: "UUFinds Jeans QC Checklist: Fit, Wash and Construction Evidence",
     summary: "Review matched jeans and trousers QC photos in a decision order that separates visible construction, measurement evidence and unresolved fit risk.",

@@ -14,6 +14,7 @@ const guideSlugs = [
 const englishOnlyGuideSlug = "uufinds-product-weight-vs-volumetric-weight";
 const linkSearchGuideSlug = "uufinds-taobao-1688-weidian-qc-search-guide";
 const trousersGuideSlug = "uufinds-jeans-trousers-qc-checklist";
+const sizeNotesGuideSlug = "uufinds-size-measurement-notes-before-option";
 const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
@@ -244,15 +245,37 @@ for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
   await assert.rejects(readPage(`${locale}/guides/${trousersGuideSlug}`), `English-only trousers guide must not generate a fake ${locale} page`);
 }
 
+const sizeNotesGuide = await readPage(`guides/${sizeNotesGuideSlug}`);
+assert.match(sizeNotesGuide, /<title>UUFinds Size &amp; Measurement Notes Before Choosing \| UUFinds Sheet<\/title>/);
+assert.match(sizeNotesGuide, /<h1>UUFinds Size and Measurement Notes: Choose the Right Option<\/h1>/);
+assert.match(sizeNotesGuide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${sizeNotesGuideSlug}/"`));
+assert.doesNotMatch(sizeNotesGuide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, "Size-notes guide must not claim a translated equivalent");
+assert.match(sizeNotesGuide, /"datePublished":"2026-08-28"/);
+assert.match(sizeNotesGuide, /"dateModified":"2026-08-28"/);
+assert.match(sizeNotesGuide, /"@type":"Article"/);
+assert.match(sizeNotesGuide, /"@type":"BreadcrumbList"/);
+assert.match(sizeNotesGuide, /class="evidence-ledger"/);
+assert.match(sizeNotesGuide, /class="guide-table-wrap"/);
+const sizeNotesWordCountMatch = sizeNotesGuide.match(/data-visible-word-count="(\d+)"/);
+assert.ok(sizeNotesWordCountMatch, "Size-notes guide must expose its validated visible word count");
+const sizeNotesVisibleWordCount = Number(sizeNotesWordCountMatch[1]);
+assert.ok(sizeNotesVisibleWordCount >= 1200 && sizeNotesVisibleWordCount <= 1800, `Size-notes guide word count must be 1,200–1,800, received ${sizeNotesVisibleWordCount}`);
+assert.match(sizeNotesGuide, new RegExp(`"wordCount":${sizeNotesVisibleWordCount}`));
+for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
+  await assert.rejects(readPage(`${locale}/guides/${sizeNotesGuideSlug}`), `English-only size-notes guide must not generate a fake ${locale} page`);
+}
+
 const articleIndex = await readPage("articles");
 assert.match(articleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`));
+assert.match(articleIndex, new RegExp(`href="/guides/${sizeNotesGuideSlug}/"`));
 for (const locale of locales) {
   const localizedArticleIndex = await readPage(`${locale}/articles`);
   assert.match(localizedArticleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`), `${locale} article index must route the English-only card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`), `${locale} article index must route the link-search card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`), `${locale} article index must route the English-only trousers card to its canonical page`);
+    assert.match(localizedArticleIndex, new RegExp(`href="/guides/${sizeNotesGuideSlug}/"`), `${locale} article index must route the English-only size-notes card to its canonical page`);
 }
 
 const home = await readPage("");
@@ -355,10 +378,12 @@ assert.match(sitemap, /https:\/\/uufindssheet\.com\/pt-br\/terms\//);
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnlyGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${linkSearchGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${trousersGuideSlug}/`));
+assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${sizeNotesGuideSlug}/`));
 for (const slug of categorySlugs) assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/categories/${slug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${linkSearchGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${trousersGuideSlug}/`));
+assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${sizeNotesGuideSlug}/`));
 
 const allowedOutboundHosts = new Set(["uufindssheet.com", "www.cnbuycha.com", "www.googletagmanager.com"]);
 const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));
