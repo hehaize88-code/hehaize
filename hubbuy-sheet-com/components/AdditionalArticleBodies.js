@@ -1023,14 +1023,12 @@ function HubbuyPaymentAuditArticle({ article }) {
         <span>02 · Current public evidence</span>
         <h2>Read payment marks as candidates, not universal promises</h2>
         <p>The Hubbuy homepage displayed PayPal and four card-network marks—Visa, Mastercard, Discover and Diners Club—during this check. It also showed USD in the site currency control. These are useful current signals, but they do not establish that every method supports every country, card type, account, currency, order value or parcel transaction.</p>
-        <p>Only count a method as available when it appears on the payment screen for the exact charge. If a familiar logo is absent, do not infer an outage or attempt to force a different regional flow. Check the account currency, billing address, transaction stage and any message shown, then use the current official support channel if the restriction is unexplained.</p>
         <p>The public page did not provide a universal service-fee percentage, wallet fee, card surcharge or exchange-rate markup for this article. That missing information is a boundary, not an invitation to copy a rate from a forum. Label any unshown cost “unknown until checkout.”</p>
       </section>
 
       <section id="charge-stages">
         <span>03 · Separate the stages</span>
         <h2>Name the underlying charge before comparing methods</h2>
-        <p>Build a payment ledger with one row per authorization. The first-order row can contain the selected product amount and China shipping. Later rows may relate to a warehouse decision or international parcel. Optional services should remain separate when the live account lists them separately. This prevents a parcel fee from being mistaken for a product-price change.</p>
         <div className="article-point-grid">
           <div><b>ORDER</b><strong>Product + China shipping</strong><span>Match the live order and selected option before paying.</span></div>
           <div><b>WAREHOUSE</b><strong>Confirmed account lines</strong><span>Record only services actually selected and priced.</span></div>
@@ -1064,15 +1062,8 @@ function HubbuyPaymentAuditArticle({ article }) {
         <p>Compare like with like: same currency pair, same date, same amount and the same inclusion or exclusion of fees. A market quote from a search result is not automatically the rate available to a retail card transaction. Ask the issuer about a separately posted foreign-transaction charge; do not attribute it to Hubbuy without evidence.</p>
       </section>
 
-      <section id="compare-options">
-        <span>06 · Compare usable options</span>
-        <h2>Rank methods with a complete cost column</h2>
-        <p>For each live option, write the final proposed debit, conversion owner, visible fixed and percentage charges, refund path and evidence you will receive. Reject any comparison that mixes a pending debit from one method with an estimated rate from another. If the provider converts the transaction, compare its displayed rate and fees. If the issuer converts it, check the issuer’s current foreign-transaction terms and recognize that the final rate may not be known until posting.</p>
-        <p>Convenience and dispute handling also matter, but neither guarantees the underlying seller item or warehouse outcome. Payment protection rules can have exclusions and deadlines. Read the current terms for the chosen method and keep the Hubbuy order record, provider receipt and issuer statement connected by date and amount.</p>
-      </section>
-
       <section id="worked-example">
-        <span>07 · Worked example</span>
+        <span>06 · Worked example</span>
         <h2>A transparent calculation exposes hidden assumptions</h2>
         <p>Suppose an order-stage payment represents CNY 800. Option A proposes a USD 115.20 debit with a separate USD 2.00 fee. Option B proposes USD 118.00 with no separate line. These figures are illustrative and are not Hubbuy rates or quotes.</p>
         <p>Option A’s observed pre-fee rate is 115.20 ÷ 800, or USD 0.144 per CNY; its proposed total is USD 117.20. Option B’s observed rate and total are USD 0.1475 per CNY and USD 118.00. On these inputs, A is USD 0.80 lower. If A later receives a separate USD 3 issuer fee, however, its posted total becomes USD 120.20 and the result reverses.</p>
@@ -1080,15 +1071,14 @@ function HubbuyPaymentAuditArticle({ article }) {
       </section>
 
       <section id="reconciliation">
-        <span>08 · After authorization</span>
+        <span>07 · After authorization</span>
         <h2>Reconcile pending, posted and refunded amounts</h2>
         <p>Wait until the transaction posts before calculating the final difference. A pending authorization can be replaced, adjusted or released. Match the posted amount to the Hubbuy receipt and any wallet record. If the figures differ, isolate the layer: changed platform amount, provider conversion, issuer conversion, foreign-transaction fee or another named charge.</p>
-        <p>For a refund, retain the original amount, refund confirmation, refunded currency and final credit. Currency movement can make the home-currency credit differ from the original debit even when the same CNY amount is returned. Ask the responsible provider to explain its conversion and fees rather than promising that every difference will be recoverable.</p>
         <p>If the order itself is wrong after warehouse QC, use the <Link href="/articles/hubbuy-return-exchange-after-qc/">return and exchange evidence guide</Link>. A payment audit proves money movement; it does not prove which product the seller shipped.</p>
       </section>
 
       <section id="decision-checklist">
-        <span>09 · Final checklist</span>
+        <span>08 · Final checklist</span>
         <h2>Authorize only when the transaction can be reconstructed</h2>
         <ol>
           <li>Name the payment stage and Hubbuy reference.</li>

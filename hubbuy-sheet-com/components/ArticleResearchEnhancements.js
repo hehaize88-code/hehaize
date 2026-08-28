@@ -3,6 +3,11 @@ import Link from "next/link";
 const OFFICIAL_HOME = "https://hubbuy.com/";
 
 const sourcesByArticle = {
+  "hubbuy-payment-methods-currency-fee-audit": [
+    ["Homepage payment marks", "The public homepage displayed PayPal, Visa, Mastercard, Discover and Diners Club marks on the check date."],
+    ["Homepage currency control", "The public interface displayed USD, without publishing one universal conversion formula or markup."],
+    ["How to Purchase workflow", "The public sequence separates product and China-shipping payment from later international-shipping payment."],
+  ],
   "how-to-buy-from-taobao-with-hubbuy": [
     ["Product-name-or-link search", "The current public portal accepts a product name or link as the starting point."],
     ["Taobao marketplace tab", "The current public shopping interface visibly separates Taobao and 1688 browsing."],
@@ -266,7 +271,23 @@ function TaobaoHandoffMap() {
   );
 }
 
+function PaymentAuditMap() {
+  return (
+    <figure className="research-visual review-evidence-matrix">
+      <div className="research-visual-heading"><span>Original payment audit map</span><strong>Reconcile one charge across four records</strong></div>
+      <div className="review-matrix-grid">
+        <div><b>HUBBUY</b><strong>Stage · amount · currency</strong><span>Identify the exact obligation before comparing methods.</span></div>
+        <div><b>METHOD</b><strong>Fee · currency choice</strong><span>Record what the live authorization screen actually shows.</span></div>
+        <div><b>ISSUER</b><strong>Pending · posted debit</strong><span>Separate conversion and issuer charges after settlement.</span></div>
+        <div><b>AUDIT</b><strong>Rate · total · difference</strong><span>Compare the complete posted cost for the same obligation.</span></div>
+      </div>
+      <figcaption>Editorial payment record created by Hubbuy Sheet from the public payment and purchase-stage signals checked on 28 August 2026. It is not a checkout screenshot or fee quote.</figcaption>
+    </figure>
+  );
+}
+
 function ArticleVisual({ slug }) {
+  if (slug === "hubbuy-payment-methods-currency-fee-audit") return <PaymentAuditMap />;
   if (slug === "how-to-buy-from-taobao-with-hubbuy") return <TaobaoHandoffMap />;
   if (slug === "hubbuy-return-exchange-after-qc") return <ReturnsDecisionMap />;
   if (slug === "hubbuy-order-status-guide") return <OrderStatusMap />;
@@ -296,7 +317,7 @@ export default function ArticleResearchEnhancements({ article }) {
         <div className="source-ledger-heading"><span>Primary-source ledger</span><strong>Official Hubbuy page and named section</strong></div>
         {sources.map(([section, evidence, href = OFFICIAL_HOME, label = "Official page ↗"], index) => article.noExternalSourceLinks ? (
           <div key={section} className="source-ledger-row">
-            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{article.slug === "how-to-buy-from-taobao-with-hubbuy" ? "Checked 26 Aug 2026" : article.slug === "hubbuy-return-exchange-after-qc" ? "Checked 14 Aug 2026" : article.slug === "hubbuy-order-status-guide" ? "Checked 12 Aug 2026" : "Checked 10 Aug 2026"}</em>
+            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{article.slug === "hubbuy-payment-methods-currency-fee-audit" ? "Checked 28 Aug 2026" : article.slug === "how-to-buy-from-taobao-with-hubbuy" ? "Checked 26 Aug 2026" : article.slug === "hubbuy-return-exchange-after-qc" ? "Checked 14 Aug 2026" : article.slug === "hubbuy-order-status-guide" ? "Checked 12 Aug 2026" : "Checked 10 Aug 2026"}</em>
           </div>
         ) : (
           <a key={section} href={href} target="_blank" rel="noopener">

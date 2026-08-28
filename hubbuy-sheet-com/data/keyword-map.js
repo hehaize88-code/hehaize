@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-payment-methods-currency-fee-audit": {
+    primaryQuery: "Hubbuy payment methods",
+    secondaryTerms: ["Hubbuy payment fee", "Hubbuy currency conversion", "Hubbuy exchange rate", "Hubbuy payment cost audit"],
+    searchIntent: "Compare the complete cost of a live Hubbuy payment and reconcile the final posted debit",
+    angle: "Transaction-level audit separating payment stage, displayed charge, conversion path, issuer cost and settlement",
+    evidence: ["Hubbuy homepage payment marks, USD control and staged purchase flow checked 28 August 2026", "Visa and Mastercard public conversion tools checked 28 August 2026"],
+    internalLinkRole: "Payment-cost leaf connecting order-stage costs, parcel shipping and after-sales reconciliation without competing with delivered-cost intent",
+  },
   "how-to-buy-from-taobao-with-hubbuy": {
     primaryQuery: "how to buy from Taobao with Hubbuy",
     secondaryTerms: ["Hubbuy Taobao buying guide", "submit Taobao link to Hubbuy", "Hubbuy Taobao order checklist", "Taobao listing warehouse QC workflow"],
