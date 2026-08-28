@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 30747)
+Total output lines: 1232
+
 export type Guide = {
   slug: string;
   label: string;
@@ -595,39 +598,7 @@ export const guides: Guide[] = [
     intro: [
       "UUFinds QC photos are useful only after they are matched to the listing being reviewed. UUFinds’ public QC finder says it helps users find QC photos and QC videos and supports image recognition. Its QC browsing page describes access to QC photos for products from Chinese marketplaces such as Taobao and 1688, while public product-detail pages display item information alongside QC material. These are useful research functions, but none of them turns a photo album into a guarantee.",
       "A QC finder is most useful when it slows you down for the right reasons. It can show warehouse photos or video connected to a product link, but it cannot make the decision for you. The useful question is not simply “does this look good?” It is “does the available evidence match the exact listing, variant and details I am considering?”",
-      "This independent guide does not send shoppers to UUFinds. It uses the verified public information above to explain the method, then keeps every shopping, product and category route pointed at the main site.",
-    ],
-    sections: [
-      {
-        heading: "What UUFinds publicly confirms",
-        paragraphs: [
-          "The official website consistently frames UUFinds as a discovery and information layer rather than a seller. The QC finder promotes photos, videos and image recognition; the separate QC browsing copy names Chinese marketplaces; and product-detail pages present QC material with product information. That supports a practical use case: locate visual evidence connected to a product, then inspect it before opening a shopping destination.",
-          "The important limit is just as factual. UUFinds’ public product pages state that the platform does not sell products directly or indirectly. A QC album can therefore help with comparison, but purchasing terms, current variants, seller information, stock and the final product decision still belong to the live destination and the service used to place an order.",
-        ],
-        points: [
-          "Core output: available QC photos and QC videos",
-          "Search input: marketplace, product or shopping-agent links, plus image search",
-          "Research scope: product discovery and visual comparison",
-          "Not established: a guarantee of quality, stock, sizing or batch consistency",
-        ],
-      },
-      {
-        heading: "Confirm that you are looking at the same listing",
-        paragraphs: [
-          "Start with the source link. A similar title or thumbnail is not enough. Compare the seller, item identifier, selected color and size where those details are visible. Sellers may reuse images across listings, and visually similar products can come from different batches. If you cannot establish a reasonable match, treat the QC album as reference material—not proof for your exact item.",
-          "Also check the date and the number of available examples. A larger set of recent images can reveal whether details stay consistent from item to item. One old photo may still be helpful, but it carries less weight than several clearly matched examples.",
-        ],
-        points: [
-          "Exact match: the source link or item ID, seller and visible variant agree",
-          "Probable match: the item agrees but one important field is missing",
-          "Reference only: the thumbnail looks similar but the seller or item ID cannot be confirmed",
-        ],
-      },
-      {
-        heading: "Read the overall shape before zooming into details",
-        paragraphs: [
-          "Look at proportion, silhouette and symmetry first. For footwear, compare the toe shape, heel height, panel spacing and the way the sole meets the upper. For clothing, check the body width, sleeve length, shoulder shape and how the fabric hangs. For bags or accessories, compare the outline, handle placement and hardware position.",
-          "This wide view matters because a sharply printed label cannot rescue an incorrect shape. If the overall structure looks wrong, note that before spending time on tiny details.",
+      "This independent guide does not send shoppers t…747 tokens truncated…  "This wide view matters because a sharply printed label cannot rescue an incorrect shape. If the overall structure looks wrong, note that before spending time on tiny details.",
         ],
         points: [
           "Front, back and side views agree with each other",
