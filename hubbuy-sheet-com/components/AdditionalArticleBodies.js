@@ -1004,7 +1004,114 @@ function HubbuyTrackingArticle({ article }) {
   );
 }
 
+function HubbuyPaymentAuditArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">A payment method is not just a logo at checkout. The useful comparison is the complete path from the amount Hubbuy requests to the final amount posted by your card, wallet or bank.</p>
+
+      <ResearchDisclosure>Hubbuy’s public homepage was checked on 28 August 2026. It displayed a USD currency selector and marks for PayPal, Visa, Mastercard, Discover and Diners Club, but the public pages reviewed did not state one permanent fee schedule or exchange-rate formula. Availability, charges and currency can vary by account, country and payment stage, so this guide teaches a transaction-level audit instead of publishing an unverified percentage.</ResearchDisclosure>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Compare the final payable amount, not the payment logo</h2>
+        <p>Before authorizing a Hubbuy payment, identify what you are paying for, the amount and currency Hubbuy displays, any separately shown platform or payment charge, the currency offered by the payment provider and the final amount your issuer will post. Capture those fields at the same moment. A lower-looking percentage can still produce a higher debit when the conversion rate or a fixed charge is worse.</p>
+        <p>Keep order-stage and parcel-stage payments separate. Hubbuy’s current public workflow places the product price and China shipping in the first payment, then international shipping after warehouse processing. Comparing two receipts without naming the stage can make a legitimate difference look like a duplicate fee.</p>
+        <div className="article-callout"><strong>The payment rule</strong><p>Use the live authorization screen for the decision and the final posted debit for the audit. A homepage logo, an estimate or another buyer’s screenshot is not your transaction price.</p></div>
+      </section>
+
+      <section id="current-options">
+        <span>02 · Current public evidence</span>
+        <h2>Read payment marks as candidates, not universal promises</h2>
+        <p>The Hubbuy homepage displayed PayPal and four card-network marks—Visa, Mastercard, Discover and Diners Club—during this check. It also showed USD in the site currency control. These are useful current signals, but they do not establish that every method supports every country, card type, account, currency, order value or parcel transaction.</p>
+        <p>Only count a method as available when it appears on the payment screen for the exact charge. If a familiar logo is absent, do not infer an outage or attempt to force a different regional flow. Check the account currency, billing address, transaction stage and any message shown, then use the current official support channel if the restriction is unexplained.</p>
+        <p>The public page did not provide a universal service-fee percentage, wallet fee, card surcharge or exchange-rate markup for this article. That missing information is a boundary, not an invitation to copy a rate from a forum. Label any unshown cost “unknown until checkout.”</p>
+      </section>
+
+      <section id="charge-stages">
+        <span>03 · Separate the stages</span>
+        <h2>Name the underlying charge before comparing methods</h2>
+        <p>Build a payment ledger with one row per authorization. The first-order row can contain the selected product amount and China shipping. Later rows may relate to a warehouse decision or international parcel. Optional services should remain separate when the live account lists them separately. This prevents a parcel fee from being mistaken for a product-price change.</p>
+        <div className="article-point-grid">
+          <div><b>ORDER</b><strong>Product + China shipping</strong><span>Match the live order and selected option before paying.</span></div>
+          <div><b>WAREHOUSE</b><strong>Confirmed account lines</strong><span>Record only services actually selected and priced.</span></div>
+          <div><b>PARCEL</b><strong>International shipping</strong><span>Use the packed parcel, selected route and live charge.</span></div>
+          <div><b>ISSUER</b><strong>Conversion + issuer fees</strong><span>Verify the final posted amount outside Hubbuy.</span></div>
+        </div>
+        <p>If a method is offered at more than one stage, compare it again. Availability and cost at product checkout do not prove the same result for international shipping. The <Link href="/articles/hubbuy-shipping-cost-guide/">Hubbuy shipping-cost guide</Link> explains why the parcel quote should be assessed separately from payment conversion.</p>
+      </section>
+
+      <section id="payment-record">
+        <span>04 · Capture a clean record</span>
+        <h2>Save six fields before clicking Pay</h2>
+        <p>Record the transaction purpose, Hubbuy reference, Hubbuy amount, displayed currency, chosen method and every visible fee line. Then record the provider’s proposed billing amount and currency. If the provider offers currency choice, preserve both options before selecting one. Do not enter card details into an unofficial page or follow a payment link sent through an unverified message.</p>
+        <ul>
+          <li><strong>Stage:</strong> product order, China shipping, warehouse service or international parcel.</li>
+          <li><strong>Platform amount:</strong> exact number and currency immediately before authorization.</li>
+          <li><strong>Visible charges:</strong> named percentage, fixed fee or other line, if shown.</li>
+          <li><strong>Provider amount:</strong> wallet or card authorization amount and currency.</li>
+          <li><strong>Time:</strong> timestamp, because exchange treatment can depend on authorization or processing.</li>
+          <li><strong>Final result:</strong> posted debit, refund or reversal after pending status clears.</li>
+        </ul>
+        <p>Mask sensitive information in saved screenshots. Keep the last four digits or a non-sensitive transaction reference if needed, but exclude the full card number, security code and account credentials.</p>
+      </section>
+
+      <section id="exchange-rate">
+        <span>05 · Measure the conversion</span>
+        <h2>Calculate an observed rate from the actual transaction</h2>
+        <p>If the Hubbuy charge is represented in CNY and your provider proposes a billing amount in another currency, divide the billing amount by the CNY amount. The result is the observed billing-currency cost per CNY for that authorization. If a payment fee is separately itemized, calculate the rate before that fee and then add the fee to the total.</p>
+        <div className="article-formula"><small>Observed transaction rate</small><strong>billing-currency amount ÷ represented CNY amount</strong></div>
+        <p>This number is an audit tool, not proof of who set the rate. A platform, wallet, card network or issuer can control different parts of the path. Visa’s public calculator describes its result as an indication of the rate a cardholder may receive. Mastercard’s public converter likewise says its result is indicative, can include an entered bank fee and may differ when the merchant converts the transaction or the issuer adds charges.</p>
+        <p>Compare like with like: same currency pair, same date, same amount and the same inclusion or exclusion of fees. A market quote from a search result is not automatically the rate available to a retail card transaction. Ask the issuer about a separately posted foreign-transaction charge; do not attribute it to Hubbuy without evidence.</p>
+      </section>
+
+      <section id="compare-options">
+        <span>06 · Compare usable options</span>
+        <h2>Rank methods with a complete cost column</h2>
+        <p>For each live option, write the final proposed debit, conversion owner, visible fixed and percentage charges, refund path and evidence you will receive. Reject any comparison that mixes a pending debit from one method with an estimated rate from another. If the provider converts the transaction, compare its displayed rate and fees. If the issuer converts it, check the issuer’s current foreign-transaction terms and recognize that the final rate may not be known until posting.</p>
+        <p>Convenience and dispute handling also matter, but neither guarantees the underlying seller item or warehouse outcome. Payment protection rules can have exclusions and deadlines. Read the current terms for the chosen method and keep the Hubbuy order record, provider receipt and issuer statement connected by date and amount.</p>
+      </section>
+
+      <section id="worked-example">
+        <span>07 · Worked example</span>
+        <h2>A transparent calculation exposes hidden assumptions</h2>
+        <p>Suppose an order-stage payment represents CNY 800. Option A proposes a USD 115.20 debit with a separate USD 2.00 fee. Option B proposes USD 118.00 with no separate line. These figures are illustrative and are not Hubbuy rates or quotes.</p>
+        <p>Option A’s observed pre-fee rate is 115.20 ÷ 800, or USD 0.144 per CNY; its proposed total is USD 117.20. Option B’s observed rate and total are USD 0.1475 per CNY and USD 118.00. On these inputs, A is USD 0.80 lower. If A later receives a separate USD 3 issuer fee, however, its posted total becomes USD 120.20 and the result reverses.</p>
+        <p>The example shows why “no fee” is incomplete. The correct comparison is the full posted cost attached to the same CNY obligation. It also shows why a card-network calculator cannot replace your receipt: the issuer and conversion path still matter.</p>
+      </section>
+
+      <section id="reconciliation">
+        <span>08 · After authorization</span>
+        <h2>Reconcile pending, posted and refunded amounts</h2>
+        <p>Wait until the transaction posts before calculating the final difference. A pending authorization can be replaced, adjusted or released. Match the posted amount to the Hubbuy receipt and any wallet record. If the figures differ, isolate the layer: changed platform amount, provider conversion, issuer conversion, foreign-transaction fee or another named charge.</p>
+        <p>For a refund, retain the original amount, refund confirmation, refunded currency and final credit. Currency movement can make the home-currency credit differ from the original debit even when the same CNY amount is returned. Ask the responsible provider to explain its conversion and fees rather than promising that every difference will be recoverable.</p>
+        <p>If the order itself is wrong after warehouse QC, use the <Link href="/articles/hubbuy-return-exchange-after-qc/">return and exchange evidence guide</Link>. A payment audit proves money movement; it does not prove which product the seller shipped.</p>
+      </section>
+
+      <section id="decision-checklist">
+        <span>09 · Final checklist</span>
+        <h2>Authorize only when the transaction can be reconstructed</h2>
+        <ol>
+          <li>Name the payment stage and Hubbuy reference.</li>
+          <li>Record the platform amount, currency and every visible charge.</li>
+          <li>Confirm which methods are actually offered for this transaction.</li>
+          <li>Record the provider’s billing amount, currency and conversion choice.</li>
+          <li>Compare total proposed debits, not isolated fee percentages.</li>
+          <li>Keep a masked receipt and authorization timestamp.</li>
+          <li>After posting, calculate the observed rate and add separate issuer charges.</li>
+          <li>Reconcile any refund in both the transaction and billing currencies.</li>
+        </ol>
+        <p>The aim is not to predict a permanent cheapest method. It is to make one current payment understandable before authorization and auditable afterward. When a fee or rate is absent, preserve that uncertainty and decide from the live screen.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources"><strong>Dated source boundary</strong><p>Hubbuy’s public homepage and buying-stage description were checked on 28 August 2026. Its visible USD control and PayPal, Visa, Mastercard, Discover and Diners Club marks support only the current public-option summary above. Visa and Mastercard public currency tools were checked the same day for conversion boundaries. No fixed Hubbuy fee, markup, rate, payment guarantee or refund timing is inferred.</p></div>
+      <ArticleCta />
+    </>
+  );
+}
+
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-payment-methods-currency-fee-audit") return <HubbuyPaymentAuditArticle article={article} />;
   if (article.slug === "how-to-buy-from-taobao-with-hubbuy") return <HubbuyTaobaoArticle article={article} />;
   if (article.slug === "hubbuy-return-exchange-after-qc") return <HubbuyReturnsAfterQcArticle article={article} />;
   if (article.slug === "hubbuy-order-status-guide") return <HubbuyOrderStatusArticle article={article} />;
