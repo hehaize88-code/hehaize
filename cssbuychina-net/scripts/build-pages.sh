@@ -75,6 +75,10 @@ cp "${pages_headers}" "${pages_output}/_headers"
   exit 66
 }
 
-rsync -a "${pages_output}/" "${project_root}/"
+if command -v rsync >/dev/null 2>&1; then
+  rsync -a "${pages_output}/" "${project_root}/"
+else
+  cp -a "${pages_output}/." "${project_root}/"
+fi
 
 echo "Prepared Cloudflare Pages artifact in ${project_root}."
