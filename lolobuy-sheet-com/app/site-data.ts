@@ -1,3 +1,5 @@
+import { sellerPageArticle } from "./seller-page-article";
+
 export const destinationBase = "https://www.cnbuycha.com";
 
 export type ProductKind =
@@ -1712,6 +1714,7 @@ export const articles: Article[] = [
       },
     ],
   },
+  sellerPageArticle,
 ];
 
 export const faqs = [

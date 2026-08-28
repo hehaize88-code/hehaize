@@ -108,4 +108,13 @@ export const articleTopicMap: ArticleTopicMapEntry[] = [
     evidence: ["LoloBuy public website checked August 26, 2026", "Current 1688 listing fields", "Lolobuy Sheet 1688 order-equation framework"],
     internalLinkRole: "Wholesale-listing branch after keyword discovery, distinct from the retail-option focus of the Taobao comparison guide.",
   },
+  {
+    url: "/articles/lolobuy-seller-page-checklist",
+    primaryQuery: "LoloBuy seller page checklist",
+    relatedTerms: ["verify seller page before saving", "LoloBuy product find checklist", "seller listing evidence"],
+    intent: "commercial investigation",
+    angle: "Qualify any seller page through reconstructable identity, exact offer fields and explicit evidence gaps before it enters a spreadsheet.",
+    evidence: ["LoloBuy public website checked August 28, 2026", "Lolobuy Sheet seller-page evidence framework"],
+    internalLinkRole: "Pre-save evidence gate feeding marketplace-specific comparison and warehouse-review guides.",
+  },
 ];

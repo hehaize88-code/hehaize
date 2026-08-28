@@ -115,7 +115,7 @@ test("redirects legacy query and /en URLs to canonical language paths", async ()
   assert.equal(englishPrefix.headers.get("location"), "https://lolobuy-sheet.com/faq");
 });
 
-test("publishes all 200 language URLs in the sitemap", async () => {
+test("publishes all 205 language URLs in the sitemap", async () => {
   const worker = await loadWorker();
   const response = await fetchPage(worker, "/sitemap.xml");
   const xml = await response.text();
@@ -125,7 +125,7 @@ test("publishes all 200 language URLs in the sitemap", async () => {
     response.headers.get("content-type") ?? "",
     /application\/xml|text\/xml/i,
   );
-  assert.equal((xml.match(/<url>/g) ?? []).length, 200);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 205);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/faq/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/shoes/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/bags/);
@@ -146,6 +146,10 @@ test("publishes all 200 language URLs in the sitemap", async () => {
   assert.match(
     xml,
     /https:\/\/lolobuy-sheet\.com\/de\/articles\/lolobuy-tracking-not-updating-guide/,
+  );
+  assert.match(
+    xml,
+    /https:\/\/lolobuy-sheet\.com\/fr\/articles\/lolobuy-seller-page-checklist/,
   );
   assert.match(
     xml,
@@ -452,7 +456,7 @@ test("publishes a measurable, Lolobuy-specific research footprint", async () => 
   assert.match(html, /CURRENT RESEARCH FOOTPRINT/);
   assert.match(html, /8<\/dt><dd>individual product evidence pages/);
   assert.match(html, /9<\/dt><dd>deep category guides/);
-  assert.match(html, /11<\/dt><dd>fact-checked long-form articles/);
+  assert.match(html, /12<\/dt><dd>fact-checked long-form articles/);
   assert.match(html, /href="\/articles\/lolobuy-weidian-link-guide"/);
   assert.match(html, /href="\/categories\/shoes"/);
 });
@@ -494,7 +498,7 @@ test("publishes a bounded English QC-mismatch article and an evolving topic map"
   assert.match(topicMap, /internalLinkRole:/);
   assert.equal(
     (topicMap.match(/url: "\/articles\//g) ?? []).length,
-    11,
+    12,
   );
 });
 
@@ -548,7 +552,7 @@ test("publishes a distinct five-language tracking troubleshooting article", asyn
   );
   assert.match(topicMap, /primaryQuery: "lolobuy tracking not updating"/);
   assert.match(topicMap, /lolobuy tracking number not working/);
-  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 11);
+  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 12);
 });
 
 test("publishes a distinct five-language shoe sizing decision guide", async () => {
@@ -595,7 +599,7 @@ test("publishes a distinct five-language shoe sizing decision guide", async () =
   );
   assert.match(topicMap, /primaryQuery: "lolobuy shoe size guide"/);
   assert.match(topicMap, /lolobuy insole measurement/);
-  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 11);
+  assert.equal((topicMap.match(/url: "\/articles\//g) ?? []).length, 12);
 });
 
 test("publishes a distinct five-language keyword-search workflow", async () => {

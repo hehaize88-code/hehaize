@@ -51,6 +51,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "LoloBuy Taobao Finds: Compare Options Before Ordering",
     "lolobuy-1688-finds-moq-variants":
       "LoloBuy 1688 Finds: Check MOQ and Variants",
+    "lolobuy-seller-page-checklist":
+      "LoloBuy Seller Page Checklist: Verify Before Saving",
   },
   es: {
     "lolobuy-spreadsheet-guide":
@@ -75,6 +77,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Hallazgos Taobao LoloBuy: comparar opciones",
     "lolobuy-1688-finds-moq-variants":
       "Productos 1688 LoloBuy: verificar MOQ y variantes",
+    "lolobuy-seller-page-checklist":
+      "Checklist vendedor LoloBuy: verificar antes de guardar",
   },
   de: {
     "lolobuy-spreadsheet-guide":
@@ -99,6 +103,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "LoloBuy Taobao-Funde: Optionen vergleichen",
     "lolobuy-1688-finds-moq-variants":
       "LoloBuy 1688-Funde: MOQ und Varianten prüfen",
+    "lolobuy-seller-page-checklist":
+      "LoloBuy Verkäuferseite: vor dem Speichern prüfen",
   },
   fr: {
     "lolobuy-spreadsheet-guide":
@@ -123,6 +129,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Trouvailles Taobao LoloBuy : comparer les options",
     "lolobuy-1688-finds-moq-variants":
       "Trouvailles 1688 LoloBuy : vérifier MOQ et variantes",
+    "lolobuy-seller-page-checklist":
+      "Checklist vendeur LoloBuy : vérifier avant d’enregistrer",
   },
   it: {
     "lolobuy-spreadsheet-guide":
@@ -147,6 +155,8 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "Prodotti Taobao LoloBuy: confrontare le opzioni",
     "lolobuy-1688-finds-moq-variants":
       "Prodotti 1688 LoloBuy: verificare MOQ e varianti",
+    "lolobuy-seller-page-checklist":
+      "Checklist venditore LoloBuy: verifica prima di salvare",
   },
 };
 

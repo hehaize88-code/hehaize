@@ -4,6 +4,7 @@ import { shoeArticleLocales } from "./shoe-article-locales";
 import { keywordSearchArticleLocales } from "./keyword-search-article-locales";
 import { taobaoFindsArticleLocales } from "./taobao-finds-article-locales";
 import { finds1688ArticleLocales } from "./1688-finds-article-locales";
+import { sellerPageArticleLocales } from "./seller-page-article-locales";
 import {
   articles,
   categories,
@@ -1076,6 +1077,16 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       article.slug === "lolobuy-1688-finds-moq-variants"
         ? finds1688ArticleLocales[locale]
         : null;
+    const translatedSellerPage =
+      article.slug === "lolobuy-seller-page-checklist"
+        ? sellerPageArticleLocales[locale]
+        : null;
+    if (translatedSellerPage) {
+      return {
+        ...article,
+        ...translatedSellerPage,
+      };
+    }
     if (translated1688Finds) {
       return {
         ...article,
