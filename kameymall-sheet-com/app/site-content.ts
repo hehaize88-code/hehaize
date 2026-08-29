@@ -21,7 +21,8 @@ export type StaticRouteKey =
   | "articles/kameymall-payment-methods-fees"
   | "articles/kameymall-order-status-guide"
   | "articles/kameymall-consolidation-vs-split-parcels"
-  | "articles/kameymall-shipping-lines-comparison";
+  | "articles/kameymall-shipping-lines-comparison"
+  | "articles/kameymall-tracking-no-update-guide";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
 
@@ -45,6 +46,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/kameymall-order-status-guide",
   "articles/kameymall-consolidation-vs-split-parcels",
   "articles/kameymall-shipping-lines-comparison",
+  "articles/kameymall-tracking-no-update-guide",
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -1165,6 +1167,23 @@ for (const language of languages) {
   copy.pageIntros["articles/kameymall-shipping-lines-comparison"] = update.intro;
 }
 
+const trackingArticleUi: Record<Locale, { card: CardCopy; intro: { kicker: string; title: string; intro: string }; libraryIntro: string }> = {
+  en: { card: { label: "Tracking help", title: "KameyMall Tracking Status & No-Update Checklist", body: "Identify the last confirmed event, carrier handoff and evidence needed before you wait or escalate.", action: "Read the tracking guide" }, intro: { kicker: "Tracking troubleshooting", title: "KameyMall Tracking Statuses: Diagnose a Parcel With No Updates", intro: "A stage-by-stage evidence workflow for international parcel tracking gaps." }, libraryIntro: "Ten original guides cover discovery, ordering, cost, QC, storage, returns, payments, parcel planning, line choice and tracking." },
+  de: { card: { label: "Tracking-Hilfe", title: "KameyMall Tracking ohne Update", body: "Letztes Ereignis, Übergabe und Belege vor Warten oder Eskalation prüfen.", action: "Ratgeber lesen" }, intro: { kicker: "Tracking-Prüfung", title: "KameyMall Tracking-Status: Paket ohne Updates prüfen", intro: "Ein Stufenmodell für Ereignisse, Übergaben und Supportbelege." }, libraryIntro: "Zehn originale Ratgeber behandeln Suche, Bestellung, Kosten, QC, Lager, Rückgabe, Zahlung, Pakete, Linien und Tracking." },
+  fr: { card: { label: "Aide au suivi", title: "Suivi KameyMall sans mise à jour", body: "Identifier événement, relais et preuves avant d’attendre ou d’escalader.", action: "Lire le guide" }, intro: { kicker: "Diagnostic du suivi", title: "Suivi KameyMall sans mise à jour : méthode de diagnostic", intro: "Une chronologie vérifiable pour les silences de suivi." }, libraryIntro: "Dix guides couvrent découverte, commande, coûts, QC, stockage, retours, paiements, colis, lignes et suivi." },
+  es: { card: { label: "Ayuda de seguimiento", title: "Seguimiento KameyMall sin actualización", body: "Identifica evento, traspaso y pruebas antes de esperar o escalar.", action: "Leer la guía" }, intro: { kicker: "Diagnóstico de seguimiento", title: "Seguimiento KameyMall sin actualizaciones", intro: "Un flujo verificable para investigar pausas de seguimiento." }, libraryIntro: "Diez guías cubren descubrimiento, pedidos, costes, QC, almacén, devoluciones, pagos, paquetes, líneas y seguimiento." },
+  it: { card: { label: "Aiuto tracking", title: "Tracking KameyMall senza aggiornamenti", body: "Individua evento, passaggio e prove prima di attendere o segnalare.", action: "Leggi la guida" }, intro: { kicker: "Diagnosi tracking", title: "Tracking KameyMall senza aggiornamenti", intro: "Un flusso verificabile per le pause di tracking." }, libraryIntro: "Dieci guide coprono ricerca, ordine, costi, QC, deposito, resi, pagamenti, pacchi, linee e tracking." },
+  pl: { card: { label: "Pomoc śledzenia", title: "Śledzenie KameyMall bez aktualizacji", body: "Ustal zdarzenie, przekazanie i dowody przed oczekiwaniem lub eskalacją.", action: "Czytaj poradnik" }, intro: { kicker: "Diagnoza śledzenia", title: "Śledzenie KameyMall bez aktualizacji", intro: "Sprawdzalny proces badania przerw w śledzeniu." }, libraryIntro: "Dziesięć poradników obejmuje wyszukiwanie, zamówienia, koszty, QC, magazyn, zwroty, płatności, paczki, linie i śledzenie." },
+};
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  const update = trackingArticleUi[language.code];
+  copy.articles.cards.push(update.card);
+  copy.articles.intro = update.libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: update.libraryIntro };
+  copy.pageIntros["articles/kameymall-tracking-no-update-guide"] = update.intro;
+}
+
 export const copies: Record<Locale, SiteCopy> = {
   en: english,
   de: german,
@@ -1220,4 +1239,5 @@ export const articleRoutes: StaticRouteKey[] = [
   "articles/kameymall-order-status-guide",
   "articles/kameymall-consolidation-vs-split-parcels",
   "articles/kameymall-shipping-lines-comparison",
+  "articles/kameymall-tracking-no-update-guide",
 ];
