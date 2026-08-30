@@ -96,6 +96,18 @@ test("renders the 1688 finds article with complete SEO metadata", async () => {
   assert.ok(html.includes("Final CSSBuy 1688 finds checklist"));
 });
 
+test("renders the Weidian finds article with complete SEO metadata", async () => {
+  const html = await fetchHtml("/articles/cssbuy-weidian-finds-options-seller-signals");
+  const url = "https://cssbuychina.net/articles/cssbuy-weidian-finds-options-seller-signals";
+  assert.ok(html.includes("<title>CSSBuy Weidian Finds: Options &amp; Seller Signals</title>"));
+  assert.ok(html.includes(`<link rel="canonical" href="${url}"`));
+  assert.ok(html.includes(`<meta property="og:url" content="${url}"`));
+  assert.ok(html.includes("<h1>How to Verify CSSBuy Weidian Finds Before Saving Them</h1>"));
+  assert.ok(html.includes('"@type":"Article"'));
+  assert.ok(html.includes('"@type":"BreadcrumbList"'));
+  assert.ok(html.includes("Final CSSBuy Weidian finds checklist"));
+});
+
 test("renders localized home pages with consistent canonicals and metadata", async () => {
   const locales = [
     ["pt-br", "pt-BR", "Planilha CSSBuy 2026", "ARTIGO"],
@@ -127,12 +139,13 @@ test("renders all 30 product detail pages with main-store shopping links", async
   }
 });
 
-test("publishes an indexable robots file and an 80-URL sitemap", async () => {
+test("publishes an indexable robots file and an 81-URL sitemap", async () => {
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   assert.match(robots, /User-agent: \*\s+Allow: \//);
   assert.match(robots, /Sitemap: https:\/\/cssbuychina\.net\/sitemap\.xml/);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 80);
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 81);
+  assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-weidian-finds-options-seller-signals"));
   assert.equal((sitemap.match(/\/product\//g) ?? []).length, 30);
   assert.ok(sitemap.includes("<loc>https://cssbuychina.net/pt-br</loc>"));
   assert.ok(!sitemap.includes("<loc>https://cssbuychina.net/pt-br/</loc>"));

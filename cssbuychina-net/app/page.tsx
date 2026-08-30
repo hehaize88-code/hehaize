@@ -270,7 +270,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           </a>
         </div>
         <a className="article-crosslink" href="/articles/cssbuy-spreadsheet-categories-explained"><span>{copy.reading.articleLabel}</span>{copy.reading.categoryArticle} <ArrowIcon /></a>
-        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-1688-finds-moq-variants-seller-questions"><span>NEW ARTICLE</span>Compare 1688 MOQ, variants and seller questions <ArrowIcon /></a> : null}
+        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-weidian-finds-options-seller-signals"><span>NEW ARTICLE</span>Verify Weidian options and seller-page signals <ArrowIcon /></a> : null}
       </section>
 
       <section className="faq-preview">

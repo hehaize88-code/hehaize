@@ -340,6 +340,62 @@ export const articles = {
       ["Verify a CSSBuy product link before ordering", "/articles/how-to-check-a-cssbuy-product-link"]
     ],
   },
+  "cssbuy-weidian-finds-options-seller-signals": {
+    label: "WEIDIAN PRODUCT DISCOVERY · 11 MIN",
+    title: "CSSBuy Weidian Finds: Options and Seller Signals",
+    seoTitle: "CSSBuy Weidian Finds: Options & Seller Signals",
+    h1: "How to Verify CSSBuy Weidian Finds Before Saving Them",
+    description: "Verify CSSBuy Weidian finds by source identity, exact options, current price, seller-page signals and a warehouse evidence plan before ordering.",
+    published: "2026-08-31",
+    checked: "August 31, 2026",
+    sections: [
+      ["Begin with the source item, not a copied thumbnail", [
+        "A Weidian find should begin with a reproducible source. Save the original marketplace URL, its visible item identifier and the CSSBuy product route before judging the photographs. Current CSSBuy pages can retrieve third-party Weidian items, but the product still belongs to an outside marketplace seller. A CSSBuy page is the purchasing path; it does not turn a copied image, spreadsheet label or social post into proof of the original seller, product batch or current inventory.",
+        "Open the source again instead of trusting a saved preview. Check that the page resolves to the same product type, shop and option family that the spreadsheet describes. If the URL redirects, the title changes or the item identifier no longer matches, preserve the old record and mark it for investigation. Do not silently replace a dead page with a visual look-alike. A new seller page is a new candidate and must earn its own evidence record."
+      ]],
+      ["Build an option key before comparing prices", [
+        "Weidian listings can place several colours, sizes, models, bundles or versions behind one main image. Write a complete option key from the selected attribute text, cautious translation, colour, size or model, included pieces and quantity. Keep the original option words next to the English working label. This matters when a short translated name hides a deposit, accessory, preorder, upgraded version or a different package from the one pictured.",
+        "Select the intended option before recording the amount. If the price changes, the selected option price is the comparison figure—not the lowest number attached to the page. Where two candidates use different option structures, describe them as alternatives instead of forcing false equivalence. A spreadsheet row such as “black / L / standard version / one item” can be checked later. A row that says only “black hoodie” cannot reliably connect the source listing, order and warehouse evidence."
+      ]],
+      ["Separate product facts from seller-page signals", [
+        "Product facts describe the item you intend to buy: option text, written measurements, material claim, quantity, current amount, domestic delivery and included parts. Seller-page signals describe the context in which that listing appears: visible shop identity, category consistency, how clearly the page is maintained and whether the description agrees with its options. Store those groups separately. A detailed shop page can reduce ambiguity, but it cannot prove the item will be defect-free, authentic or identical to another seller's listing.",
+        "Use only signals whose meaning is clear in the current interface. A counter, badge or label is not useful evidence when the page does not explain what it measures. Do not invent a reliability percentage or copy an unexplained number into a score. Instead, record observations such as “shop identity visible,” “measurements provided,” “option images correspond to names,” or “included pieces unclear.” This scores research completeness rather than seller quality."
+      ]],
+      ["Compare candidates with an evidence matrix", [
+        "Open several candidates for the same brief and compare consistent fields. Use columns for source item and shop, exact option key, current option amount, domestic delivery, written dimensions, material or construction claim, included pieces, unanswered question and check date. Write “not stated” when a fact is missing. Never fill one seller's gap with another seller's description merely because both pages use the same promotional photograph.",
+        "A simple traffic-light decision works better than a vague ranking. Green means the exact item, option, quantity and key specifications are clear enough to order. Amber means one focused answer or warehouse check could settle the decision. Red means the source identity changed, the selected option is not the pictured product, or a decision-critical fact cannot be confirmed. The colour describes evidence readiness, not expected product quality. Save the reason beside the status so another shopper can reproduce it."
+      ]],
+      ["Ask questions that have a pass or fail answer", [
+        "Ask the seller only about an unknown that could change buy, hold or reject status. Useful questions name the exact option and ask whether one order includes the pictured accessory, whether a chart reports flat garment width or body size, whether the item is ready stock or preorder, or whether a written model label matches the chosen thumbnail. “Is the quality good?” has no measurable acceptance condition and should not be used as evidence.",
+        "Save the question, answer, date and candidate URL. Distinguish a direct answer from your interpretation. If the reply changes the option name, included parts, current amount or delivery terms, update the matrix before ordering. If no answer arrives, decide whether a visible warehouse check could safely resolve the gap while action is still possible. Do not order first when the unknown defines what the product is, which version arrives or whether it can be used."
+      ]],
+      ["Record the product-stage cost without guessing the parcel", [
+        "For each candidate, record the selected CNY amount, quantity and domestic seller-to-warehouse delivery separately. Include only transaction amounts actually shown in the current CSSBuy flow. Do not add a universal platform percentage, a guessed exchange-rate markup or an old promotional discount. Keep the quote date because option prices, seller delivery and payment conditions can change between spreadsheet review and checkout.",
+        "International shipping belongs to the later parcel stage. A compact accessory, a structured shoe box and a thick jacket can create very different packed results even when their product prices are similar. Record credible weight or packaging information when the current page supplies it, but label it as seller information until warehouse and parcel data exist. The discovery decision should test whether the selected product and first-stage cost make sense, not pretend to know a final delivered total."
+      ]],
+      ["Turn the winning find into an order record", [
+        "Before payment, freeze the candidate details that matter: original Weidian URL and item identifier, CSSBuy route, shop identity, title, exact option text, colour, size or model, quantity, selected amount, domestic delivery, written measurements, included pieces, seller answer and check date. Save relevant page images only when you have a legitimate research copy, and never publish private checkout or account information as spreadsheet evidence.",
+        "Write order notes in literal terms. State the selected colour, size, version and quantity exactly as recorded, then add one or two visible priorities such as a model label, included strap or print position. Do not ask a purchasing note to certify authenticity, fabric composition or durability from appearance. If the chosen option needs customization or is described as preorder, confirm the current conditions before payment and keep that confirmation with the order record."
+      ]],
+      ["Plan warehouse evidence from the saved option", [
+        "Warehouse review should compare the received item with the saved source and option key. Begin with identity: correct product, colour, size or model, version, quantity and included pieces. Then check category-specific visible condition. A shoe record might prioritize pair alignment, size labels and the selected colour. A bag record might prioritize dimensions, closures, strap and hardware. A jersey record might prioritize version, size, name, number and requested customization.",
+        "Current CSSBuy public product pages describe inspection before goods are combined and sent internationally. Use that checkpoint promptly, while the listing evidence and order decision are still available. Request a useful angle or measurement under the current account terms when standard evidence cannot answer a decision-critical question. Warehouse photographs can show visible identity and condition; they do not prove authenticity, fibre content, hidden construction or long-term performance."
+      ]],
+      ["Maintain every saved Weidian find as dated evidence", [
+        "A live URL can still become stale. Reopen the source before publication, before payment and after any long delay. Compare the saved item identifier, shop, title, option family, selected amount, domestic delivery and specification text. Update the checked date only after repeating those steps. If the seller changes the product behind the same address, keep the historical record and mark the current page as changed instead of overwriting the evidence trail.",
+        "Use three maintenance states: order-ready, answer pending and recheck required. Order-ready means the source and exact option are reproducible, not that quality is guaranteed. Answer pending means one defined unknown blocks the decision. Recheck required means the page changed, disappeared or conflicts with the saved details. A useful CSSBuy Weidian spreadsheet exposes those limits. Fewer well-documented finds are more valuable than many rows built from copied pictures and unexplained seller signals."
+      ]],
+      ["Final CSSBuy Weidian finds checklist", [
+        "Save a find only after confirming the original Weidian source, item identifier, shop, exact option key, quantity, selected CNY amount, domestic delivery, written specifications, check date and unresolved question. Separate product facts from seller context. Treat badges and counters as unknown unless their meaning is clear. Reject copied photographs as identity proof, record “not stated” rather than guessing and preserve any seller answer that changes the purchase.",
+        "The strongest CSSBuy Weidian find is the candidate another shopper can reproduce from source page to warehouse check. It does not need a manufactured quality score or a promise about the seller. It needs a stable identity, an exact selected option, transparent unknowns and a visible inspection plan. Reopen the page before payment, compare the received item with the saved record and update the spreadsheet only when current evidence supports the change."
+      ]]
+    ],
+    related: [
+      ["Compare 1688 MOQ, variants and seller questions", "/articles/cssbuy-1688-finds-moq-variants-seller-questions"],
+      ["Compare Taobao listings before ordering", "/articles/cssbuy-taobao-finds-compare-listings"],
+      ["Verify a CSSBuy product link before ordering", "/articles/how-to-check-a-cssbuy-product-link"]
+    ],
+  },
 } as const;
 
 export type ArticleSlug = keyof typeof articles;
