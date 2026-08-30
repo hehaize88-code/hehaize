@@ -15,6 +15,7 @@ const englishOnlyGuideSlug = "uufinds-product-weight-vs-volumetric-weight";
 const linkSearchGuideSlug = "uufinds-taobao-1688-weidian-qc-search-guide";
 const trousersGuideSlug = "uufinds-jeans-trousers-qc-checklist";
 const sizeNotesGuideSlug = "uufinds-size-measurement-notes-before-option";
+const sellerGuideSlug = "uufinds-seller-information-reliability-signals";
 const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
@@ -263,6 +264,31 @@ assert.ok(sizeNotesVisibleWordCount >= 1200 && sizeNotesVisibleWordCount <= 1800
 assert.match(sizeNotesGuide, new RegExp(`"wordCount":${sizeNotesVisibleWordCount}`));
 for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
   await assert.rejects(readPage(`${locale}/guides/${sizeNotesGuideSlug}`), `English-only size-notes guide must not generate a fake ${locale} page`);
+}
+
+const sellerGuide = await readPage(`guides/${sellerGuideSlug}`);
+assert.match(sellerGuide, /<title>UUFinds Seller Information &amp; Reliability Signals \| UUFinds Sheet<\/title>/);
+assert.match(sellerGuide, /<h1>UUFinds Seller Information: Reliability Signals Without Guesswork<\/h1>/);
+assert.match(sellerGuide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${sellerGuideSlug}/"`));
+assert.doesNotMatch(sellerGuide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, "Seller guide must not claim a translated equivalent");
+assert.match(sellerGuide, /"datePublished":"2026-08-30"/);
+assert.match(sellerGuide, /"dateModified":"2026-08-30"/);
+assert.match(sellerGuide, /"@type":"Article"/);
+assert.match(sellerGuide, /"@type":"BreadcrumbList"/);
+assert.match(sellerGuide, /class="guide-table-wrap"/);
+assert.doesNotMatch(sellerGuide, /class="evidence-ledger"|class="source-note"|Primary source notes|Evidence and source ledger/, "Seller guide must not expose research-process modules");
+const sellerGuideBodyStart = sellerGuide.indexOf('class="guide-body"');
+const sellerGuideBodyEnd = sellerGuide.indexOf("</article>", sellerGuideBodyStart);
+assert.ok(sellerGuideBodyStart >= 0 && sellerGuideBodyEnd > sellerGuideBodyStart, "Seller guide body must be extractable");
+const sellerGuideBody = sellerGuide.slice(sellerGuideBodyStart, sellerGuideBodyEnd);
+assert.doesNotMatch(sellerGuideBody, /href="https?:\/\//i, "Seller guide body must not add external links");
+const sellerWordCountMatch = sellerGuide.match(/data-visible-word-count="(\d+)"/);
+assert.ok(sellerWordCountMatch, "Seller guide must expose its validated visible word count");
+const sellerVisibleWordCount = Number(sellerWordCountMatch[1]);
+assert.ok(sellerVisibleWordCount >= 1200 && sellerVisibleWordCount <= 1800, `Seller guide word count must be 1,200–1,800, received ${sellerVisibleWordCount}`);
+assert.match(sellerGuide, new RegExp(`"wordCount":${sellerVisibleWordCount}`));
+for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
+  await assert.rejects(readPage(`${locale}/guides/${sellerGuideSlug}`), `English-only seller guide must not generate a fake ${locale} page`);
 }
 
 const articleIndex = await readPage("articles");

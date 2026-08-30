@@ -32,6 +32,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "SELLER RESEARCH GUIDE",
+    title: "UUFinds Seller Information: Reliability Signals Without Guesswork",
+    summary: "Preserve the exact seller, source item and option, then rank dated QC evidence without treating labels or counters as guarantees.",
+    href: "/guides/uufinds-seller-information-reliability-signals/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "SIZE RESEARCH GUIDE",
     title: "UUFinds Size and Measurement Notes: Choose the Right Option",
     summary: "Separate reference-garment measurements, seller charts, size tags and QC records before selecting an exact listing option.",

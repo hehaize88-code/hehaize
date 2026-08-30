@@ -109,7 +109,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 </div>
               </section>
             )}
-            {guide.evidence && (
+            {!guide.hideSourceNote && guide.evidence && (
               <section className="evidence-ledger" aria-labelledby="evidence-ledger-heading">
                 <p className="section-number">SOURCES</p>
                 <h2 id="evidence-ledger-heading">Evidence and source ledger</h2>
@@ -127,11 +127,11 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 </div>
               </section>
             )}
-            <div className="source-note">
+            {!guide.hideSourceNote && <div className="source-note">
               <p className="eyebrow">Primary source notes</p>
               <p>{guide.sourceNote ?? "Function descriptions were checked against publicly available UUFinds information and the live main-site category structure on July 22, 2026. External product information can change."}</p>
               <div><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse main-site products ↗</a></div>
-            </div>
+            </div>}
           </div>
         </div>
       </article>

@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 30747)
-Total output lines: 1232
-
 export type Guide = {
   slug: string;
   label: string;
@@ -12,6 +9,7 @@ export type Guide = {
   readTime: string;
   publishedISO?: string;
   sourceNote?: string;
+  hideSourceNote?: boolean;
   modifiedISO?: string;
   englishOnly?: boolean;
   seoTitle?: string;
@@ -33,6 +31,216 @@ export type Guide = {
 };
 
 export const guides: Guide[] = [
+  {
+    slug: "uufinds-seller-information-reliability-signals",
+    label: "SELLER RESEARCH GUIDE",
+    title: "UUFinds Seller Information: Reliability Signals Without Guesswork",
+    seoTitle: "UUFinds Seller Information & Reliability Signals",
+    description: "Read UUFinds seller information as research evidence: preserve the source, compare item-level QC records and avoid turning labels or counters into guarantees.",
+    primaryKeyword: "UUFinds seller information",
+    longTailKeywords: ["UUFinds seller reliability", "UUFinds reliable seller label", "compare UUFinds sellers", "seller signals in UUFinds QC records"],
+    updated: "August 30, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-08-30",
+    modifiedISO: "2026-08-30",
+    englishOnly: true,
+    hideSourceNote: true,
+    intro: [
+      "UUFinds seller information can help you keep two visually similar results apart, but it cannot certify a shop. The useful task is narrower: identify which seller and marketplace item produced a record, then decide whether the available item-level evidence is current, option-relevant and consistent enough to keep researching.",
+      "This guide treats seller names, shop links, interface labels and QC records as separate clues. It does not assume that an unlabeled number is a sales count, that a visible label explains a private ranking method or that earlier QC media predicts a future unit. If a candidate survives the process, the original marketplace source and exact option move to the independent purchasing agent you choose. UUFinds is the research layer, not that agent and not the seller.",
+    ],
+    sections: [
+      {
+        heading: "1. Separate seller identity from seller reliability",
+        paragraphs: [
+          "Seller identity answers who is attached to the displayed source record. Reliability is a conclusion about whether the evidence supports a particular decision. A shop name, seller button or marketplace source can strengthen identity, but none proves stock, honest descriptions, consistent batches, dispatch speed, returns or product quality. Keep those concepts in different spreadsheet columns so a familiar name does not quietly become a trust score.",
+          "Begin by saving the complete UUFinds detail address and every seller or shop name shown on that record. Then preserve the original Taobao, 1688 or Weidian item address when it is recoverable. Record the item identifier, the selected style and size context, and the date checked. If a seller name appears without a traceable current item, mark the seller clue as present but the listing link as unresolved. That is useful context, not a green light.",
+        ],
+        table: { caption: "Four seller-research fields that should not be merged", headers: ["Field", "What it can establish", "What remains unknown"], rows: [
+          ["Seller or shop name", "Identity shown on the record", "Ownership, reputation and future behaviour"],
+          ["Marketplace item", "One traceable source listing", "Stock, unchanged options and future batch"],
+          ["QC record", "Visible evidence for a photographed record", "Condition of a unit not yet purchased"],
+          ["Interface label", "How the current interface groups a seller", "Methodology, guarantee or official endorsement"],
+        ] },
+      },
+      {
+        heading: "2. Build an exact seller-source-item tuple",
+        paragraphs: [
+          "A defensible record uses three linked identifiers: seller, marketplace source and item. Add the option tuple—colour, size, style, edition, bundle and quantity—because one item page can contain materially different versions. A seller-level conclusion is too broad when the photographs belong to only one product or option. The question is not “is this seller reliable?” but “how strong is the evidence for this seller, item and option at this date?”",
+          "Use Exact when the marketplace item identifier agrees, the seller context is consistent and no visible option conflicts. Use Conditional when the item agrees but a decisive option field is missing. Use Reference only when the appearance is similar but the source cannot be traced. Use Conflict when the seller, item or option disagrees. Stop quality inspection at Conflict; sharp photographs of another product are still the wrong evidence.",
+        ],
+        points: [
+          "Save the final detail URL and the recoverable marketplace source.",
+          "Copy seller and shop names exactly instead of normalising similar spellings.",
+          "Record the item identifier and the complete option tuple.",
+          "Add a checked date and a relevance state: Exact, Conditional, Reference or Conflict.",
+        ],
+      },
+      {
+        heading: "3. Read the Reliable Seller label cautiously",
+        paragraphs: [
+          "A public UUFinds product-detail interface can group names under a Reliable Seller heading. Treat that wording as an interface label. Unless the page publishes the criteria, time window, sample size and update method, you cannot reproduce the classification or translate it into a guaranteed success rate. Do not write “verified,” “approved” or “safe” merely because the label is visible.",
+          "The label can still support a limited note: “Seller appeared in the current Reliable Seller interface group on the checked date.” Then do the item-level work. Confirm that the seller entry leads to the intended shop or source context, that the exact listing is current and that relevant QC records belong to the item and option under review. A labeled seller with a dead source or mismatched option is weaker for this decision than an unlabeled seller with a traceable current item and well-matched evidence.",
+          "Avoid interpreting nearby numbers when their meaning is not labeled. A counter might describe records, interactions or another interface quantity; guessing turns a visible number into a fabricated metric. Save the number only with its exact on-screen label. If there is no label, leave it out of any reliability comparison.",
+        ],
+      },
+      {
+        heading: "4. Rank item-level signals by decision value",
+        paragraphs: [
+          "Strong signals are directly connected to the question you must answer. A live marketplace source is stronger for current option availability than an old catalog image. An exact item match is stronger than a similar silhouette. A dated, option-relevant QC record is stronger for visible construction than a seller-level badge. Several records can show whether the photographed examples are consistent, but only after each record is matched and dated.",
+          "Use a five-part evidence ladder. First, source traceability: can you recover the exact item? Second, option relevance: do style, size and colour agree? Third, recency: when was the QC record produced, and is the seller listing still current? Fourth, coverage: do the photos answer the important visual questions? Fifth, consistency: do multiple matched records show the same feature or expose variation? Unknown fields remain unknown; do not replace them with an average seller reputation.",
+        ],
+        table: { caption: "Seller signals ranked for one product decision", headers: ["Signal", "Decision value", "Safe conclusion"], rows: [
+          ["Current exact source", "High for identity and live options", "This listing can be re-checked now"],
+          ["Exact, dated QC record", "High for visible photographed details", "This record supports named observations"],
+          ["Several matched records", "Moderate for visible consistency", "Examples agree or vary on a stated feature"],
+          ["Seller-group label", "Context only without published criteria", "The interface displayed this grouping on the date"],
+          ["Unlabeled counter", "None for reliability", "No interpretation should be assigned"],
+        ] },
+      },
+      {
+        heading: "5. Use reviews and dates without inflating the sample",
+        paragraphs: [
+          "A product-detail record may show a customer-review area, including a zero count. Zero is not positive or negative evidence; it means that this visible area supplies no review sample for synthesis. A small non-zero count is still a limited, self-selected sample. Record the count, date and whether the comments can be tied to the exact item. Do not convert a handful of comments into a seller-wide satisfaction rate.",
+          "QC dates matter differently. A recent record can be more relevant to a current listing, while an older record may still reveal which seam, label or measurement view to request later. Recency does not prove that the same factory, material or batch continues. If older and newer matched records disagree, preserve the variation instead of selecting the image that supports the desired purchase.",
+          "Keep public comments, seller claims and your visual observations in separate fields. “Seller states cotton” is a claim. “Care label text appears to state cotton” is a visible observation when legible. Neither is laboratory confirmation. This separation prevents repeated seller copy from looking like independent corroboration.",
+        ],
+      },
+      {
+        heading: "6. Compare sellers with a conflict-first matrix",
+        paragraphs: [
+          "Compare sellers only after defining the same target option and hard requirements. Put candidates in rows and use columns for exact source, option match, current price field, dated QC coverage, visible conflicts and unresolved questions. Do not score a missing field as zero and then average it into a neat total. A missing size chart and a visibly wrong size are different states: Unknown and Conflict.",
+          "Reject hard conflicts first. Next decide whether an unknown could change the choice. If yes, the seller remains Needs evidence. Only then compare softer signals such as the number of matched records or how recently they were captured. This order keeps a prominent interface label from overpowering a wrong option, dead listing or contradictory measurement.",
+        ],
+        points: [
+          "Reject: wrong source, seller, item, option or a hard measurement conflict.",
+          "Needs evidence: traceable candidate with a missing decision-critical field.",
+          "Shortlist: current source, relevant option evidence and no hard conflict.",
+          "Reference only: useful examples without enough identity to support this purchase.",
+        ],
+      },
+      {
+        heading: "7. Worked example: the labeled seller does not automatically win",
+        paragraphs: [
+          "Suppose two hoodie candidates share a similar studio image. Seller A appears under a Reliable Seller heading, but the saved source now fails to open and the visible QC records do not show whether they belong to the lined version or the lightweight version. Seller B does not have that visible label, yet its current marketplace item opens, the exact colour and size fields agree, and three dated QC records show the lined version with consistent pocket placement. This is an illustrative comparison, not a claim about any real seller.",
+          "Seller A is Reference only because identity and option relevance cannot be completed. Seller B is a Shortlist candidate for the exact lined hoodie, subject to the limits of the photos and the current listing. The conclusion is not that Seller B is universally more reliable. It is that Seller B supplies stronger traceable evidence for this item-level decision today.",
+          "If Seller A later receives a recoverable source and matched records, reassess it from the new evidence. Do not preserve the earlier ranking as a permanent seller score. Reliability research is dated and decision-specific.",
+        ],
+      },
+      {
+        heading: "8. Move the source record to an independent agent",
+        paragraphs: [
+          "When a candidate reaches Shortlist, save the original marketplace link, seller and item identifiers, exact option tuple, checked date, relevant UUFinds detail address, visible concerns and unresolved questions. Open the marketplace source again inside the independent purchasing agent you choose. Confirm that seller, item, option, quantity and current price still agree before paying. Support for an agent-formatted input does not imply that UUFinds is affiliated with that agent.",
+          "Treat later order and warehouse evidence as a new stage. The chosen agent controls its own purchasing, payment, warehouse, photo, return and shipping terms; verify those terms in that agent's current interface. Compare any new photos with the actual order record, not only with public UUFinds examples. Older research can identify what to inspect, but it cannot guarantee what the seller dispatches later.",
+          "Finish with a one-sentence reason: Shortlist, Needs evidence, Reference only or Reject. A good seller note does not promise trust. It preserves exactly which source, item and observations supported the next step—and which uncertainties survived it.",
+        ],
+        points: [
+          "Preserve the exact source, seller, item, option and research date.",
+          "Use labels only as dated interface context, never as certification.",
+          "Keep unknowns and conflicts distinct in the comparison.",
+          "Re-check the live listing in the independently chosen agent before purchase.",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { href: "/guides/how-to-read-uufinds-product-detail-page/", label: "Read the product-detail page", description: "Separate seller, source, option and media fields before judging relevance." },
+      { href: "/guides/uufinds-size-measurement-notes-before-option/", label: "Compare size evidence", description: "Keep seller charts, size tags and measurement records in separate layers." },
+      { href: "/guides/uufinds-qc-search-capabilities-limitations/", label: "Understand search limits", description: "See which conclusions a returned QC result can and cannot support." },
+    ],
+  },
+  {
+    slug: "uufinds-size-measurement-notes-before-option",
+    label: "SIZE RESEARCH GUIDE",
+    title: "UUFinds Size and Measurement Notes: Choose the Right Option",
+    seoTitle: "UUFinds Size & Measurement Notes Before Choosing",
+    description: "Build UUFinds size and measurement notes that separate body data, garment dimensions, seller charts, size tags and QC evidence before choosing an option.",
+    primaryKeyword: "UUFinds size and measurement notes",
+    longTailKeywords: ["UUFinds size tag filter", "UUFinds clothing measurements", "how to compare UUFinds sizes", "measurement notes before ordering"],
+    updated: "August 28, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-08-28",
+    modifiedISO: "2026-08-28",
+    englishOnly: true,
+    sourceNote: "Fact-checked August 28, 2026 against the current public UUFinds QC Finder, a live public UUFinds product-detail record, the UUFinds platform disclaimer and current NIST measurement guidance. The public record showed Styles and Size Tag filters plus size, colour, weight and QC-date fields for individual records; fields vary, and a label is not a garment measurement or fit guarantee. UUFinds is an informational research platform, not a seller. A later purchase and any order-specific measurement request are handled by the independent purchasing agent the user chooses, without implied affiliation.",
+    intro: [
+      "The most useful UUFinds size note is not a copied label such as M, L or 42. It is a short evidence record that connects your body or reference-garment measurements to the exact marketplace item, selected option, seller chart and any relevant QC record. Those layers can agree, conflict or leave gaps. Keeping them separate prevents a familiar size letter from becoming an unsupported fit promise.",
+      "Use UUFinds to locate and compare available research evidence, then choose an option only when the decision-critical dimensions are traceable. A public product-detail record may expose a Size Tag filter and individual size fields, but those labels describe stored records; they do not establish a universal size system. This workflow shows what to save, how to compare it and what must remain unknown before the original source link moves to the independent purchasing agent you select.",
+    ],
+    sections: [
+      {
+        heading: "1. Start with a reference measurement card",
+        paragraphs: [
+          "Measure a garment that already fits the intended use, not merely your body in isolation. Lay it in the same position the seller's chart appears to use, record the endpoints and note whether the fabric is relaxed, stretched or shaped. For a hoodie, that might mean pit-to-pit width, shoulder, sleeve and back length. For trousers, it may mean the waistband laid flat, front rise, inseam, thigh and leg opening. For footwear, begin with foot length and the usable internal-length evidence the seller actually provides.",
+          "Add fit intent beside every number. A 58 cm chest width can represent a close fit on one reference garment and a layering fit on another. Write the garment type, how it currently fits, what you would change and the tolerance that matters. A note such as 'reference hoodie: 58 cm flat chest; comfortable over a T-shirt; accept 57–60 cm using the same method' is more actionable than 'usually size L.' Do not manufacture a tolerance just to complete the card; mark it unknown when you lack a tested reference.",
+        ],
+        points: ["Reference item and intended use, such as summer tee or layered hoodie.", "Measurement name, endpoints, garment position and relaxed or stretched state.", "Observed value, acceptable range and unit.", "Fit note explaining what already works and what should change.", "Measurement date and any uncertainty caused by curves, elastic or thick fabric."],
+      },
+      {
+        heading: "2. Keep four size layers separate",
+        paragraphs: [
+          "Body measurements, reference-garment measurements, seller-chart dimensions and UUFinds record fields answer different questions. Body data describes the wearer. A reference garment shows a known fit. A seller chart states how the listing presents its options. UUFinds fields help locate records associated with a size or style when that data is available. Never put all four into one unlabeled column, because a body chest circumference cannot be compared directly with a garment's flat half-chest.",
+          "Create a source column for each value. Record whether the number came from your tape, the current seller page, a chart image, a visible measurement photo or a text field. Also save whether the value is a circumference, a flat width, a length or a label. When a seller chart lists 116 cm chest and your reference card says 58 cm pit to pit, they may describe the same nominal width only if the garment is measured flat and doubled. Treat that conversion as a documented comparison, not as proof that cut, stretch and construction are identical.",
+        ],
+        table: { caption: "Four evidence layers in a size decision", headers: ["Layer", "Useful for", "Cannot prove"], rows: [["Body", "Wearer dimensions and basic clearance", "Finished garment dimensions or preferred ease"], ["Reference garment", "A known fit measured with stated endpoints", "That another pattern will drape the same way"], ["Seller chart", "Listing-specific option claims", "Factory accuracy or the dimensions of a future unit"], ["UUFinds record", "Finding size-tagged research and visible QC evidence", "Universal sizing, exact fit or a future order outcome"]] },
+      },
+      {
+        heading: "3. Match the exact item and option before comparing size",
+        paragraphs: [
+          "A measurement is relevant only after the source item is matched. Save the original Taobao, 1688 or Weidian address, item identifier when visible, seller context and the full option tuple: colour, size, style, edition, bundle and quantity. Compare those fields with the UUFinds detail record before using its photos or size tag. Visual similarity alone is weak because listings can share catalog images while using different patterns, materials or factories.",
+          "Use three relevance states. Exact means the item identifier agrees and the photographed option does not conflict. Conditional means the item matches but one option field is absent, so the evidence can guide a question but not settle the choice. Reference only means the item looks related without a traceable source match. If the record says size XL while you are considering M, use shared construction views cautiously and do not transfer dimensions, label placement or fit expectations across sizes.",
+        ],
+      },
+      {
+        heading: "4. Treat a size tag as a filter, not a measurement",
+        paragraphs: [
+          "A current public UUFinds product-detail page can show Styles and Size Tag filters, while individual QC records may display a size, colour, weight and QC date. These fields help narrow a set of records. They do not reveal the grading rule behind S, M, XL or a numeric shoe size, and they do not turn a stored label into physical dimensions. The same letter may map to different charts across sellers, categories and even options inside one listing.",
+          "Record the tag exactly as shown, including regional notation or combined labels, then add a separate chart-dimension column. If the label and chart disagree with your reference range, prefer the traceable measurement comparison and mark the label conflict. If only the tag is available, the correct conclusion is 'size record found; decision measurements missing.' That is a reason to seek more evidence, not a reason to assume the familiar label will fit.",
+        ],
+      },
+      {
+        heading: "5. Standardize endpoints before calculating a difference",
+        paragraphs: [
+          "Measurement comparisons fail when the labels match but the endpoints do not. A sleeve can be measured from the shoulder seam, neck point or center back. Trouser length may mean outseam or inseam. Waist can mean a flat edge-to-edge width, doubled circumference or a stretched maximum. Write the method beside the number, and compare values only when the garment position, endpoints, tension and unit are compatible.",
+          "Photographs add perspective limits. Check that the tape begins at its zero mark, lies on the intended path, stays in the same plane as the fabric and reaches a visible endpoint. Curved seams, thick edges, elastic tension and folds increase uncertainty. NIST's measurement guidance describes measurement as experimental and uncertainty as incomplete knowledge of the value; its tape guidance also emphasizes reference accuracy and tension. For shopping research, that means recording a sensible range and method note instead of presenting one pixel-level reading as exact.",
+        ],
+        table: { caption: "Decision-critical endpoints by product type", headers: ["Product", "Useful dimensions", "Method trap"], rows: [["Tops", "Flat chest, shoulder, sleeve, back length", "Chest circumference mixed with half-chest width"], ["Trousers", "Flat waist, rise, inseam, thigh, opening", "Elastic stretched in one record but relaxed in another"], ["Footwear", "Foot length and listing-specific internal-length evidence", "Converting a printed size without the seller's chart"], ["Bags", "External height, width, depth and opening", "Treating external dimensions as usable internal capacity"]] },
+      },
+      {
+        heading: "6. Compare ranges with an explicit worked example",
+        paragraphs: [
+          "Suppose a reference sweatshirt has a 58 cm flat chest and 66 cm back length. It feels right through the torso but could be 1 cm longer. Your decision range becomes 57–60 cm chest and 66–68 cm length when measured by the same method. A seller chart lists option M at 56 cm by 65 cm, L at 58 cm by 67 cm and XL at 60 cm by 69 cm. On chart evidence, L falls inside both ranges; M misses both, while XL meets chest but exceeds the chosen length range.",
+          "That calculation identifies L as the current evidence leader, not a guaranteed fit. Pattern shape, shoulder slope, fabric stretch, shrinkage and chart accuracy remain unresolved. If a relevant UUFinds record shows an L size tag but no tape photos, write 'tag supports option relevance; dimensions still seller-claimed.' If a compatible measurement photo appears to show approximately 57.5–58.5 cm chest using visible endpoints, record the observed range and the photo limits rather than replacing it with a false 58.0 cm certainty.",
+        ],
+      },
+      {
+        heading: "7. Resolve conflicts without averaging unlike evidence",
+        paragraphs: [
+          "When the seller chart, size tag and visible tape disagree, do not average them. First confirm that every source belongs to the same item and option. Next compare measurement methods and units. Then rank the evidence for the question being asked: a clear, option-matched tape view is more direct for that photographed record than a generic chart, while the live chart is more relevant to available option claims than an unrelated visual match. Neither guarantees a future unit.",
+          "Classify the result as Ready to shortlist, Needs evidence or Reject. Ready means the source and option are traceable, compatible dimensions fall inside the prewritten range and no decision-critical conflict remains. Needs evidence means the candidate may work but a missing endpoint, unclear method or option mismatch could change the outcome. Reject means the exact option falls outside a hard range or identity cannot be reconciled. Save the reason in one sentence so a later review does not restart from memory.",
+        ],
+        points: ["Do not convert a size label into dimensions without a listing-specific basis.", "Do not average measurements taken from different endpoints or tension states.", "Do not transfer a measurement from another seller or replacement listing.", "Do not describe a measurement photo as proof of fit, authenticity or future quality.", "Do keep unknowns visible when the evidence cannot settle the choice."],
+      },
+      {
+        heading: "8. Preserve the research when moving to an agent",
+        paragraphs: [
+          "Once a candidate is ready, pass the original marketplace link, exact option tuple, reference range, seller-chart capture date, relevant UUFinds record and unresolved questions to the independent purchasing agent you choose. UUFinds does not sell the item, and using a supported agent-link input does not establish an official relationship. Re-check the live seller, price, stock and option inside the chosen agent's current interface before paying.",
+          "If that agent offers an order-specific measurement or photo request, state the endpoints, garment position, tension and unit. Judge the resulting evidence as belonging to the purchased unit, not as confirmation that the earlier public record was the same unit. Service availability, cost, timing, return rules and outcomes depend on the chosen agent's current terms; this guide makes no claim about them.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official interface", source: "UUFinds QC Finder", checked: "August 28, 2026", supports: "Taobao, 1688, Weidian, agent-link and product-name inputs for locating public research records.", boundary: "An accepted input or returned result does not establish item identity, option equivalence, dimensions or fit." },
+      { type: "Official interface", source: "UUFinds public product-detail record", checked: "August 28, 2026", supports: "Styles and Size Tag filters plus size, colour, weight and QC-date fields were visible for individual records.", boundary: "Fields vary by record; a size tag is not a physical measurement, standardized grading system or fit guarantee." },
+      { type: "Official disclaimer", source: "UUFinds platform disclaimer", checked: "August 28, 2026", supports: "UUFinds describes itself as an informational QC-photo platform rather than a direct or indirect seller.", boundary: "Marketplace transactions and order-specific services belong to the seller and the independently chosen purchasing agent." },
+      { type: "Measurement reference", source: "NIST measurement uncertainty guidance", checked: "August 28, 2026", supports: "Measurements are experimental results and uncertainty represents incomplete knowledge about the measured value.", boundary: "NIST does not validate a seller chart, warehouse photograph or clothing fit conclusion." },
+      { type: "Measurement reference", source: "NIST tape-measure accuracy guidance", checked: "August 28, 2026", supports: "Reference accuracy, tape condition and applied tension affect tape-based measurements.", boundary: "Laboratory traceability concepts do not make an uncalibrated marketplace photo exact." },
+    ],
+    relatedLinks: [
+      { href: "/guides/how-to-read-uufinds-product-detail-page/", label: "Read the detail record", description: "Match source, seller, option and QC fields before interpreting a size tag." },
+      { href: "/guides/uufinds-qc-checklist/", label: "Review QC photos", description: "Use an identity-first sequence for visible construction and unresolved evidence." },
+      { href: "/guides/uufinds-jeans-trousers-qc-checklist/", label: "Check trousers specifically", description: "Apply category-specific waist, rise, inseam and construction checks after matching the item." },
+    ],
+  },
   {
     slug: "uufinds-jeans-trousers-qc-checklist",
     label: "TROUSERS QC GUIDE",
@@ -598,7 +806,39 @@ export const guides: Guide[] = [
     intro: [
       "UUFinds QC photos are useful only after they are matched to the listing being reviewed. UUFinds’ public QC finder says it helps users find QC photos and QC videos and supports image recognition. Its QC browsing page describes access to QC photos for products from Chinese marketplaces such as Taobao and 1688, while public product-detail pages display item information alongside QC material. These are useful research functions, but none of them turns a photo album into a guarantee.",
       "A QC finder is most useful when it slows you down for the right reasons. It can show warehouse photos or video connected to a product link, but it cannot make the decision for you. The useful question is not simply “does this look good?” It is “does the available evidence match the exact listing, variant and details I am considering?”",
-      "This independent guide does not send shoppers t…747 tokens truncated…  "This wide view matters because a sharply printed label cannot rescue an incorrect shape. If the overall structure looks wrong, note that before spending time on tiny details.",
+      "This independent guide does not send shoppers to UUFinds. It uses the verified public information above to explain the method, then keeps every shopping, product and category route pointed at the main site.",
+    ],
+    sections: [
+      {
+        heading: "What UUFinds publicly confirms",
+        paragraphs: [
+          "The official website consistently frames UUFinds as a discovery and information layer rather than a seller. The QC finder promotes photos, videos and image recognition; the separate QC browsing copy names Chinese marketplaces; and product-detail pages present QC material with product information. That supports a practical use case: locate visual evidence connected to a product, then inspect it before opening a shopping destination.",
+          "The important limit is just as factual. UUFinds’ public product pages state that the platform does not sell products directly or indirectly. A QC album can therefore help with comparison, but purchasing terms, current variants, seller information, stock and the final product decision still belong to the live destination and the service used to place an order.",
+        ],
+        points: [
+          "Core output: available QC photos and QC videos",
+          "Search input: marketplace, product or shopping-agent links, plus image search",
+          "Research scope: product discovery and visual comparison",
+          "Not established: a guarantee of quality, stock, sizing or batch consistency",
+        ],
+      },
+      {
+        heading: "Confirm that you are looking at the same listing",
+        paragraphs: [
+          "Start with the source link. A similar title or thumbnail is not enough. Compare the seller, item identifier, selected color and size where those details are visible. Sellers may reuse images across listings, and visually similar products can come from different batches. If you cannot establish a reasonable match, treat the QC album as reference material—not proof for your exact item.",
+          "Also check the date and the number of available examples. A larger set of recent images can reveal whether details stay consistent from item to item. One old photo may still be helpful, but it carries less weight than several clearly matched examples.",
+        ],
+        points: [
+          "Exact match: the source link or item ID, seller and visible variant agree",
+          "Probable match: the item agrees but one important field is missing",
+          "Reference only: the thumbnail looks similar but the seller or item ID cannot be confirmed",
+        ],
+      },
+      {
+        heading: "Read the overall shape before zooming into details",
+        paragraphs: [
+          "Look at proportion, silhouette and symmetry first. For footwear, compare the toe shape, heel height, panel spacing and the way the sole meets the upper. For clothing, check the body width, sleeve length, shoulder shape and how the fabric hangs. For bags or accessories, compare the outline, handle placement and hardware position.",
+          "This wide view matters because a sharply printed label cannot rescue an incorrect shape. If the overall structure looks wrong, note that before spending time on tiny details.",
         ],
         points: [
           "Front, back and side views agree with each other",
