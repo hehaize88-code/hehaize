@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-rehearsal-package-decision-guide": {
+    primaryQuery: "Hubbuy rehearsal shipping",
+    secondaryTerms: ["Hubbuy rehearsal package", "Hubbuy pre-packing", "Hubbuy parcel weight and dimensions", "Hubbuy split parcel decision"],
+    searchIntent: "Decide whether a pre-packed parcel result changes the choice to combine, split, repackage or delay submission",
+    angle: "Decision-first rehearsal workflow separating candidate assumptions, packed evidence and current route comparison",
+    evidence: ["Hubbuy public purchase flow and order-combination statement checked 30 August 2026", "Current public Rehearsal Package navigation signal checked 30 August 2026"],
+    internalLinkRole: "Pre-packing decision leaf linking warehouse consolidation with shipping-cost analysis without repeating either topic",
+  },
   "hubbuy-payment-methods-currency-fee-audit": {
     primaryQuery: "Hubbuy payment methods",
     secondaryTerms: ["Hubbuy payment fee", "Hubbuy currency conversion", "Hubbuy exchange rate", "Hubbuy payment cost audit"],

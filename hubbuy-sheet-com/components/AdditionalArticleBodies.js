@@ -46,6 +46,106 @@ function ArticleCta() {
   );
 }
 
+function HubbuyRehearsalArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">A rehearsal package is useful only when a packed result can change a real decision. Define the candidate parcel first, identify the uncertainty that matters, then compare the returned evidence with a practical combined or split alternative.</p>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Use rehearsal shipping when parcel assumptions could change what you submit</h2>
+        <p>Hubbuy’s public purchase sequence places international shipping after seller delivery, warehouse inspection and the option to combine different orders. Its current public interface also exposes a Rehearsal Package entry, although the detailed workflow is account-gated. That makes the sensible purpose clear without inventing account rules: rehearsal belongs between approving warehouse items and paying for an international parcel.</p>
+        <p>Request it when an uncertain packed weight, dimension, packaging choice or route condition could make you combine, split, repackage or postpone the parcel. If the result cannot change any action, the request adds information but not necessarily value. If one bulky box or protected item may alter chargeable size or route eligibility, a packed result can replace a weak estimate with evidence tied to one defined parcel plan.</p>
+        <div className="article-callout"><strong>The decision rule</strong><p>Write the action threshold before rehearsal: “Keep one parcel if this candidate remains eligible for the intended route and its current quoted total stays below the two-parcel alternative; otherwise split the bulky item.”</p></div>
+      </section>
+
+      <section id="evidence-boundary">
+        <span>02 · Evidence boundary</span>
+        <h2>A rehearsal result answers a parcel question, not every shipping question</h2>
+        <p>A useful result identifies the candidate items and packing choices, then reports the fields the live account actually provides. Packed weight and dimensions can improve chargeable-weight analysis. A current route list can show which choices remain available for that parcel. A displayed quote can support a same-time comparison. None of those fields should be expanded beyond what is visible.</p>
+        <p>Do not assume a universal rehearsal fee, processing time, repacking rule or guaranteed saving. Those details were not published on the open pages checked for this guide. Do not treat a rehearsal result as proof that customs will clear an item, that a carrier will meet an exact delivery date or that compensation applies to every loss. The result is stronger than an early estimate for the defined parcel, but it still belongs to a particular account state and decision time.</p>
+        <div className="article-comparison">
+          <div><span>It can clarify</span><strong>Packed weight · dimensions · current route choices · displayed quote</strong></div>
+          <div><span>It cannot guarantee</span><strong>Future availability · customs outcome · delivery date · universal compensation</strong></div>
+        </div>
+      </section>
+
+      <section id="before-request">
+        <span>03 · Prepare the request</span>
+        <h2>Freeze the candidate parcel before asking for a packed answer</h2>
+        <p>Start with approved warehouse items only. An unresolved wrong size, missing part or return request should stay outside the parcel because adding it creates a result for a plan you may never ship. For every included item, record the warehouse identifier, quantity, known weight, packaging state and any protection requirement. Keep the source and QC decision beside that record so a similar item name cannot be confused with another arrival.</p>
+        <p>Next describe the packaging scenario. Note whether retail boxes should remain, whether a structured product must hold its shape and whether fragile goods need separation or reinforcement. Do not request aggressive compression merely to chase a smaller number; protection and route compliance are decision constraints. Use the <Link href="/articles/hubbuy-warehouse-storage-consolidation/">warehouse and consolidation guide</Link> to group compatible goods before creating the candidate.</p>
+        <ul>
+          <li><strong>Contents:</strong> exact warehouse items, quantities and approval status.</li>
+          <li><strong>Packaging:</strong> boxes kept or removed, protection and shape constraints.</li>
+          <li><strong>Destination:</strong> country or region used for the current comparison.</li>
+          <li><strong>Decision:</strong> combined plan, split alternative and the threshold between them.</li>
+          <li><strong>Timestamp:</strong> when every quote and route result was recorded.</li>
+        </ul>
+      </section>
+
+      <section id="decision-triggers">
+        <span>04 · Decision triggers</span>
+        <h2>Four situations make pre-packing materially useful</h2>
+        <p><strong>Bulky retail packaging</strong> is the first trigger. Shoe boxes, presentation cases and rigid product cartons may make a light parcel occupy more space. Rehearsal can show the packed result of the packaging choice you actually selected. It cannot tell you whether removing a box is worth the protection or resale trade-off; you must decide that before interpreting the number.</p>
+        <p><strong>Mixed protection needs</strong> are the second. Soft clothing may pack efficiently together, while a structured bag, collectible or fragile component may require space and reinforcement. <strong>Route uncertainty</strong> is the third: a parcel’s final attributes may affect which current methods appear. <strong>A close combine-versus-split calculation</strong> is the fourth. When two credible plans are near each other, packed evidence can move the choice. When one plan is clearly unacceptable for risk or eligibility reasons, rehearsal need not pretend price is the only factor.</p>
+      </section>
+
+      <section id="compare-plans">
+        <span>05 · Compare plans</span>
+        <h2>Score one combined plan against one sensible split</h2>
+        <p>Use the same destination, time and currency. For the combined plan, record the rehearsal result, current eligible routes, displayed shipping amount and any separately shown service or packaging charges. For the split, build two realistic parcels rather than dividing the combined quote by two. Each parcel can have its own base charge, packed size, route choices and protection requirements.</p>
+        <div className="article-point-grid">
+          <div><b>COST</b><strong>Current complete quote</strong><span>Include every visible parcel and packaging line.</span></div>
+          <div><b>ELIGIBILITY</b><strong>Routes still offered</strong><span>A cheap plan is irrelevant if the parcel cannot use it.</span></div>
+          <div><b>PROTECTION</b><strong>Compatible packing</strong><span>Do not trade away a required protection condition silently.</span></div>
+          <div><b>OPERATIONS</b><strong>Tracking and handoffs</strong><span>Two parcels create two records and two delivery outcomes.</span></div>
+        </div>
+        <p>Calculate the split total as parcel A plus parcel B using current results. Then state the non-price trade-off. One combined parcel creates one tracking chain but concentrates the contents in one shipment. A split creates more handling and tracking work but may isolate a bulky, restricted, fragile or high-priority item. The best result is the lowest acceptable plan, not automatically the lowest displayed number.</p>
+      </section>
+
+      <section id="worked-example">
+        <span>06 · Worked example</span>
+        <h2>A shoe box changes a hoodie-and-shoes decision</h2>
+        <p>Imagine one approved hoodie and one approved pair of shoes. The values below are deliberately illustrative, not Hubbuy prices. Before packing, the item records suggest 1.1 kg for the hoodie and 1.4 kg for the boxed shoes. The buyer’s preferred rule is to keep one parcel only if both items remain route-compatible and the combined current total is no more than 8% above a split that protects the shoes.</p>
+        <p>Plan A keeps the shoe box and combines both items. The rehearsal result reports the packed weight and dimensions for that exact setup. Plan B separates the boxed shoes and hoodie. Plan C removes the shoe box but uses the protective option the buyer is willing to accept. Current account quotes—not a generic rate—are placed beside each result.</p>
+        <div className="article-formula"><small>Illustrative comparison structure</small><strong>Combined current total versus shoe parcel + hoodie parcel versus compact combined total</strong></div>
+        <p>If compact Plan C meets protection requirements, preserves route eligibility and is below the written threshold, the result changes the decision toward one parcel. If the box must remain and Plan A loses the intended route, split Plan B wins even if its displayed total is slightly higher. The rehearsal did not “save money” by itself; it revealed which physical plan satisfied the buyer’s rules.</p>
+        <figure className="research-visual">
+          <img src="/brand/articles/hubbuy-rehearsal-decision.png" alt="Hubbuy rehearsal shipping decision map comparing assumed and packed parcel evidence" width="1200" height="630" loading="lazy" />
+          <figcaption>Original Hubbuy Sheet decision diagram created for this guide. It illustrates a comparison method and is not a platform screenshot, quote or customer parcel.</figcaption>
+        </figure>
+      </section>
+
+      <section id="after-result">
+        <span>07 · After the result</span>
+        <h2>Reconcile the result before paying, changing or splitting anything</h2>
+        <p>Match the returned parcel to the contents and packaging scenario you requested. Record the packed weight, dimensions, available routes, displayed costs and result time exactly as shown. If an item, box-removal choice or protection instruction differs, the result describes a different parcel and should not be used as though the plan matched.</p>
+        <p>Next reopen the alternative at the same time. Use the <Link href="/articles/hubbuy-shipping-cost-guide/">shipping-cost guide</Link> to distinguish actual weight, dimensions and route inputs without reusing an old quote. If the result crosses your threshold, take the written action: keep together, split, change an acceptable packaging choice or wait for another compatible item. If it does not cross the threshold, avoid making a new parcel simply because more data feels safer.</p>
+        <p>Save the final parcel membership and payment record. A later tracking problem is easier to diagnose when the rehearsal result, submitted contents and paid parcel all agree.</p>
+      </section>
+
+      <section id="decision-checklist">
+        <span>08 · Final checklist</span>
+        <h2>Request rehearsal only after the decision is testable</h2>
+        <ol>
+          <li>Resolve QC, returns and missing-item questions before parcel inclusion.</li>
+          <li>List exact warehouse items and quantities.</li>
+          <li>State packaging and protection constraints without vague instructions.</li>
+          <li>Choose a destination and one credible combined plan.</li>
+          <li>Create one practical split alternative when a specific item may change the outcome.</li>
+          <li>Write the cost, eligibility or protection threshold that triggers a different action.</li>
+          <li>Record only the packed fields and current routes the live result actually displays.</li>
+          <li>Compare complete same-time plans and preserve the submitted parcel record.</li>
+        </ol>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <ArticleCta />
+    </>
+  );
+}
+
 function HubbuyTaobaoArticle({ article }) {
   return (
     <>
@@ -1101,6 +1201,7 @@ function HubbuyPaymentAuditArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-rehearsal-package-decision-guide") return <HubbuyRehearsalArticle article={article} />;
   if (article.slug === "hubbuy-payment-methods-currency-fee-audit") return <HubbuyPaymentAuditArticle article={article} />;
   if (article.slug === "how-to-buy-from-taobao-with-hubbuy") return <HubbuyTaobaoArticle article={article} />;
   if (article.slug === "hubbuy-return-exchange-after-qc") return <HubbuyReturnsAfterQcArticle article={article} />;

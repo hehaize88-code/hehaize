@@ -266,15 +266,19 @@ for (const url of urls) {
     if (articleSchema.thumbnailUrl !== expectedImage) throw new Error(`Invalid Article thumbnailUrl on ${url}`);
     if (!schemas.some((schema) => schemaType(schema, "BreadcrumbList"))) throw new Error(`Missing article BreadcrumbList on ${url}`);
     if (!html.includes(`src="${article.socialImage}"`)) throw new Error(`Article topic image is not visible on ${url}`);
-    if (!html.includes('id="research-evidence"') || !html.includes('class="source-ledger"')) {
-      throw new Error(`Missing article research enhancement on ${url}`);
-    }
-    const researchSection = html.match(/<section id="research-evidence"[\s\S]*?<\/section>/)?.[0] || "";
-    const officialSourceCount = (researchSection.match(/href="https:\/\/hubbuy\.com\/"/g) || []).length;
-    const ledgerLinkCount = (researchSection.match(/<a [^>]*href="https:\/\//g) || []).length;
-    const ledgerRowCount = (researchSection.match(/class="source-ledger-row"/g) || []).length;
-    if (officialSourceCount < 1 && ledgerLinkCount !== 3 && ledgerRowCount !== 3) {
-      throw new Error(`Article source ledger is incomplete on ${url}`);
+    if (!article.hideResearchEvidence) {
+      if (!html.includes('id="research-evidence"') || !html.includes('class="source-ledger"')) {
+        throw new Error(`Missing article research enhancement on ${url}`);
+      }
+      const researchSection = html.match(/<section id="research-evidence"[\s\S]*?<\/section>/)?.[0] || "";
+      const officialSourceCount = (researchSection.match(/href="https:\/\/hubbuy\.com\/"/g) || []).length;
+      const ledgerLinkCount = (researchSection.match(/<a [^>]*href="https:\/\//g) || []).length;
+      const ledgerRowCount = (researchSection.match(/class="source-ledger-row"/g) || []).length;
+      if (officialSourceCount < 1 && ledgerLinkCount !== 3 && ledgerRowCount !== 3) {
+        throw new Error(`Article source ledger is incomplete on ${url}`);
+      }
+    } else if (/Research note:|Research evidence|Primary-source ledger/.test(html)) {
+      throw new Error(`Hidden research process leaked into ${url}`);
     }
     if (locale === "en") {
       const body = html.match(/<article class="seo-article-body">([\s\S]*?)<\/article>/)?.[1] || "";

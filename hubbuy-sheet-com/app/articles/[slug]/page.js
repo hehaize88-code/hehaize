@@ -253,7 +253,7 @@ export default async function ArticlePage({ params }) {
             </section>
 
             </> : <AdditionalArticleBody article={article} />}
-            <ArticleResearchEnhancements article={article} />
+            {!article.hideResearchEvidence && <ArticleResearchEnhancements article={article} />}
           </article>
         </div>
       </section>
