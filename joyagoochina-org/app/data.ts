@@ -29,6 +29,56 @@ const productImageDimensions: Record<string, [number, number]> = {
   "3382": [640, 480],
 };
 
+// Joyagoo's local catalogue IDs are not the same as Cnbuycha's current route
+// IDs. Keep the verified destination paths explicit so a reused route number
+// cannot silently send visitors to an unrelated product.
+const productDestinationPaths: Record<string, string> = {
+  "3382": "/accessories/3363.html",
+  "3381": "/accessories/3362.html",
+  "3380": "/jackets/3425.html",
+  "3379": "/shoes/3365.html",
+  "3378": "/shoes/3366.html",
+  "3377": "/accessories/3364.html",
+  "3376": "/accessories/3369.html",
+  "3375": "/hoodies-sweaters/3367.html",
+  "3374": "/hoodies-sweaters/3426.html",
+  "3373": "/accessories/3368.html",
+  "3372": "/accessories/3359.html",
+  "3371": "/headwear/3353.html",
+  "3370": "/headwear/3356.html",
+  "3369": "/hoodies-sweaters/3413.html",
+  "3368": "/hoodies-sweaters/3412.html",
+  "3367": "/shoes/3355.html",
+  "3366": "/shoes/3354.html",
+  "3365": "/accessories/3358.html",
+  "3364": "/accessories/3360.html",
+  "3363": "/accessories/3357.html",
+  "3362": "/short-sets/3348.html",
+  "3361": "/other-stuff/3279.html",
+  "3360": "/t-shirts/3400.html",
+  "3359": "/shoes/3328.html",
+  "3358": "/shoes/3316.html",
+  "3357": "/electronics/3286.html",
+  "3356": "/jackets/3402.html",
+  "3355": "/shoes/3321.html",
+  "3354": "/jackets/3403.html",
+  "3353": "/t-shirts/3401.html",
+  "3352": "/t-shirts/3392.html",
+  "3351": "/headwear/3307.html",
+  "3350": "/t-shirts/3394.html",
+  "3349": "/short-sets/3340.html",
+  "3348": "/shoes/3289.html",
+  "3347": "/t-shirts/3332.html",
+};
+
+const productHref = (id: string) => {
+  const destinationPath = productDestinationPaths[id];
+  if (!destinationPath) {
+    throw new Error(`Missing verified Cnbuycha destination for product ${id}`);
+  }
+  return `${mainSite}${destinationPath}`;
+};
+
 const product = (
   id: string,
   slug: string,
@@ -49,17 +99,16 @@ const product = (
     price: `$${(priceCny / 6.77).toFixed(2)}`,
     priceCny,
     popularity: `${views} finds`,
-    href: `${mainSite}/AllProducts/${id}.html`,
+    href: productHref(id),
     image: `/products/${id}.${extension}`,
     imageWidth,
     imageHeight,
-    checkedAt: "2026-07-30",
+    checkedAt: "2026-09-01",
   };
 };
 
-// Names, IDs, source prices, images and destination URLs were checked against
-// the live linked product directory on 30 July 2026. USD figures are
-// clearly presented as references and are not checkout quotes.
+// Destination URLs were rechecked against the live Cnbuycha catalogue on
+// 1 September 2026. USD figures are references and are not checkout quotes.
 export const products: Product[] = [
   product("3382", "louis-vuitton-wallet-3382", "Louis Vuitton Wallet", "Wallet", "Bags & Accessories", 115, 548),
   product("3381", "ugg-gloves-3381", "UGG Gloves", "Gloves", "Bags & Accessories", 99, 871, "jpg"),
