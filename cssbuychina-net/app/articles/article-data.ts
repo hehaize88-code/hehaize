@@ -396,6 +396,62 @@ export const articles = {
       ["Verify a CSSBuy product link before ordering", "/articles/how-to-check-a-cssbuy-product-link"]
     ],
   },
+  "cssbuy-seller-page-checklist-before-saving-find": {
+    label: "SELLER-PAGE REVIEW · 11 MIN",
+    title: "CSSBuy Seller-Page Checklist Before Saving a Find",
+    seoTitle: "CSSBuy Seller-Page Checklist Before Saving a Find",
+    h1: "CSSBuy Seller-Page Checklist: Verify a Find Before Saving It",
+    description: "Use a CSSBuy seller-page checklist to verify source identity, exact options, current product-stage cost, specifications and evidence gaps before saving a find.",
+    published: "2026-09-02",
+    checked: "September 2, 2026",
+    sections: [
+      ["Set the acceptance brief before opening the seller page", [
+        "A seller page is useful only when you know what it must prove. Write a one-line acceptance brief before reviewing the listing: product type, intended use, required colour, measurable size, construction detail, quantity and one rejection condition. A shoe brief might require a particular closure, usable foot-length guidance and one pair rather than a replacement component. A bag brief might require external dimensions, a top zip and an included adjustable strap. This prevents a persuasive photograph or low starting amount from changing the product you meant to research.",
+        "Keep requirements separate from preferences. A required measurement or included part decides whether the find can advance. A preferred shade, packaging style or minor detail can rank otherwise acceptable candidates. Record unknowns explicitly instead of turning them into assumptions. The seller-page review is complete when another shopper can explain why the exact listing is ready, on hold or rejected. It is not complete merely because the page opens or looks similar to a spreadsheet thumbnail."
+      ]],
+      ["Capture the final source, marketplace and item identity", [
+        "Open the listing through CSSBuy, then save the final resolved marketplace URL as well as the CSSBuy product route. Record whether the source is Taobao, 1688, Weidian or another supported marketplace, plus the visible item identifier and shop name where available. CSSBuy currently states that shopping-agent products shown on its pages come from third-party platforms and are not sold directly by CSSBuy. The routed page supports purchasing; it does not transfer the seller's product claims into a CSSBuy guarantee.",
+        "Check for redirects and changed content. A successful load is not enough when the title, shop, product type or option family no longer matches the saved reference. Preserve the previous address in a history field and classify the current result as same source, changed listing, new candidate or unresolved. Never replace a dead item with a look-alike while retaining the original seller or batch label. Reused photographs can connect visually similar pages without proving common stock, factory, materials or quality."
+      ]],
+      ["Select the exact option before recording price", [
+        "Choose the intended colour, size, model, bundle and quantity before copying an amount. The lowest number on a seller page can belong to an accessory, deposit, child size, sample, unfinished part or different version. Preserve the original option wording beside a careful working translation, especially when a short label could hide a material, batch or package difference. If the option text, thumbnail and price movement conflict, mark the choice unclear rather than selecting the interpretation that makes the find look best.",
+        "Create one option key in a fixed order: product or model, colour, size, version, included pieces and quantity. For example, “zip hoodie / charcoal / XL / standard / one piece” is auditable; “grey hoodie” is not. If the required option has disappeared, the listing is not order-ready even if a nearby choice looks acceptable. Treat that nearby choice as a separate candidate and compare it against the original acceptance brief rather than silently changing the spreadsheet row."
+      ]],
+      ["Record product-stage cost without inventing delivery cost", [
+        "Save the selected CNY product amount, quantity and domestic seller-to-warehouse delivery as separate fields, with the review date. Use only figures displayed for the current option and order. Do not add an old coupon, a universal service percentage, a guessed exchange-rate markup or a parcel estimate from another item. CSSBuy's public workflow separates buying from later international shipping, so the seller-page amount is a product-stage record rather than a delivered total.",
+        "When the page offers quantity tiers, confirm the commercial unit and the quantity at which the shown tier applies. When it shows several bundles, identify what one order contains. A low per-piece number can be irrelevant to a first order if it requires unwanted units. Record credible seller-supplied weight or packaging details only as preliminary claims. International route eligibility and chargeable parcel data should be checked later with current warehouse and packing evidence, not manufactured during product discovery."
+      ]],
+      ["Separate written specifications from visual evidence", [
+        "List the specifications that define acceptance and note where each came from. A seller size chart, material description, model code, dimension diagram and included-parts statement are written claims. Product photographs can show visible shape, layout, colour family and hardware, but they do not establish fibre composition, hidden construction, durability or authenticity. Keep those evidence types in separate columns so a polished image does not silently verify a claim that requires text, measurement or another method.",
+        "Use category-specific fields. Shoes need a clear size reference and an explanation of whether centimetres mean foot, insole, internal or outsole length. Hoodies need garment measurements, measurement method and any stated fabric or item weight. Jerseys need version, sizing, name and number conditions, especially when customized. Bags need external dimensions, closure, strap and included accessories. Write “not stated” when the page is silent; never borrow a chart or specification from a visually similar listing."
+      ]],
+      ["Read shop context without creating a reliability score", [
+        "Seller context can reveal inconsistency, but it cannot deliver a universal verdict. Record whether the shop identity is visible, whether the product category fits the surrounding shop, whether option names agree with the images and whether the description answers basic order questions. A specialist-looking store is not proof of quality, while a mixed-category store is not automatically unsafe. Use observations that another reviewer can reproduce instead of converting presentation into a made-up percentage.",
+        "Save ratings, counts or badges only when the current interface clearly explains what they measure. Date any retained signal because marketplace counters and labels can change. An unexplained number should stay out of the decision record. More durable evidence includes the exact shop, item identifier, selected option, clear unit, written specification and a seller answer tied to the candidate. This checklist measures completeness and internal consistency; it does not certify the seller or predict the item that will arrive."
+      ]],
+      ["Use a known, claimed and unknown evidence table", [
+        "Before saving the find, sort decision facts into three columns. Known means directly reproducible now: working source, item identifier, selected option, quantity and currently displayed amounts. Claimed means the seller states it but the page cannot independently prove it, such as fabric composition, production batch or water resistance. Unknown means the information is absent, ambiguous or contradicted. This vocabulary is more useful than a single confidence score because it shows exactly what can still change the decision.",
+        "Add one action beside every unknown: ask before ordering, verify at warehouse, accept the uncertainty or reject the listing. Questions should have pass-or-fail answers. Ask whether the selected amount covers one complete item, whether a chart uses flat width or circumference, whether the pictured accessory is included, or whether an option is preorder or customized. Avoid “Is the quality good?” Save the exact question, answer, date and URL, and redo the option or cost record if the answer changes it."
+      ]],
+      ["Choose save, hold or reject—and explain why", [
+        "Save a listing as order-ready only when the source, exact option, quantity, product-stage cost and decision-critical specifications are reproducible. Use hold when one focused seller answer or later visible warehouse check can safely resolve the gap. Reject when the source identity changed, the price belongs to another option, the required size or part is absent, the quantity is unsuitable or a critical unknown cannot be resolved in time. The status describes evidence readiness, not expected product quality.",
+        "Consider a simple example with three shoe listings. Candidate A has the correct colour and a low headline amount but no usable size basis. Candidate B states foot-length guidance, one-pair unit and domestic delivery, although its material description remains a seller claim. Candidate C reuses A's image but offers only a replacement lace. Save B with the material limitation recorded, hold A for one precise sizing question and reject C for failing product identity. No invented purchase experience or seller score is needed."
+      ]],
+      ["Save a maintainable row and reopen it before payment", [
+        "A finished row should contain the original marketplace URL, CSSBuy route, marketplace, item identifier, shop, title, exact option key, quantity, selected CNY amount, domestic delivery, specifications, evidence class, unresolved question, status and checked date. Keep a previous URL or option in history rather than overwriting it. The record should also state which visible details must be compared after warehouse arrival, such as colour, size label, quantity, dimensions, print placement, closures or included parts.",
+        "Reopen the page immediately before payment and compare every volatile field: source status, shop, option family, selected choice, amount, domestic delivery and availability language. Update the date only after repeating the check. After warehouse arrival, compare the received item with the saved order record, not only with promotional photographs. A useful CSSBuy seller-page checklist produces fewer saved finds, but each one has an identifiable source, intentional option, transparent unknowns and a practical inspection plan."
+      ]],
+      ["Final CSSBuy seller-page checklist", [
+        "Confirm the acceptance brief, final marketplace URL, CSSBuy route, item identifier and visible shop. Select the exact colour, size, model, bundle and quantity before recording the CNY amount. Separate domestic delivery from later parcel cost. Store written claims apart from visual evidence, mark missing details “not stated,” and avoid unexplained badges or invented reliability percentages. Give every unresolved fact an action and record seller answers with dates.",
+        "Then assign one evidence-based status: save, hold or reject. An order-ready find is not a quality promise. It is a reproducible seller-page record that defines what will be purchased and what can be checked later. Recheck the listing before payment, preserve changes instead of erasing history, and use warehouse evidence against the saved option. That discipline keeps a first-order spreadsheet useful after prices, options and pages inevitably change."
+      ]]
+    ],
+    related: [
+      ["Verify Weidian options and seller signals", "/articles/cssbuy-weidian-finds-options-seller-signals"],
+      ["Compare Taobao listings before ordering", "/articles/cssbuy-taobao-finds-compare-listings"],
+      ["Verify a CSSBuy product link before ordering", "/articles/how-to-check-a-cssbuy-product-link"]
+    ],
+  },
 } as const;
 
 export type ArticleSlug = keyof typeof articles;
