@@ -1,24 +1,25 @@
 import applicationWorker from "../dist/server/index.js";
 
-const PRODUCT_IDS = new Set([
-  "3351",
-  "3353",
-  "3355",
-  "3356",
-  "3357",
-  "3359",
-  "3366",
-  "3367",
-  "3368",
-  "3369",
-  "3371",
-  "3372",
+const PRODUCT_DESTINATIONS = new Map([
+  ["3351", "3307"],
+  ["3353", "3401"],
+  ["3355", "3321"],
+  ["3356", "3402"],
+  ["3357", "3286"],
+  ["3359", "3328"],
+  ["3366", "3354"],
+  ["3367", "3355"],
+  ["3368", "3412"],
+  ["3369", "3413"],
+  ["3371", "3353"],
+  ["3372", "3359"],
 ]);
 
 function productDestination(pathname) {
   const match = pathname.match(/^\/products\/(\d+)\/?$/);
-  return match && PRODUCT_IDS.has(match[1])
-    ? `https://www.cnbuycha.com/AllProducts/${match[1]}.html`
+  const destinationId = match && PRODUCT_DESTINATIONS.get(match[1]);
+  return destinationId
+    ? `https://www.cnbuycha.com/AllProducts/${destinationId}.html`
     : null;
 }
 
@@ -39,6 +40,8 @@ const productLinkRewriter = {
       const destination = productDestination(resolved.pathname);
       if (destination) {
         element.setAttribute("href", destination);
+        element.setAttribute("target", "_blank");
+        element.setAttribute("rel", "sponsored noopener noreferrer");
       }
     } catch {}
   },
