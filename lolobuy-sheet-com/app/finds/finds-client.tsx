@@ -16,128 +16,128 @@ const directoryCopy = {
     eyebrow: "CURATED PRODUCT DIRECTORY",
     title: "Lolobuy Spreadsheet Finds: Curated Product Directory",
     intro:
-      "Browse every current entry in one place. Open a card to review its image, category, listing reference and practical QC checklist before using the final listing button.",
-    countLabel: "independent product pages",
-    routeLabel: "step browsing route",
-    routeValue: "Directory → details → current listing",
-    searchLabel: "Search these product pages",
+      "Browse every current entry in one place. Each card carries its image, category and listing reference directly to the matching current product page on the main site.",
+    countLabel: "matched product routes",
+    routeLabel: "direct click",
+    routeValue: "Directory reference → main listing",
+    searchLabel: "Search these products",
     searchPlaceholder: "Search by name or category",
     results: "products shown",
     reference: "Reference",
-    details: "View product details",
+    details: "View matching product",
     emptyTitle: "No matching product pages",
     emptyText: "Try a broader product name or return to the All filter.",
     guideEyebrow: "HOW THIS DIRECTORY WORKS",
-    guideTitle: "One index. Separate pages. A deliberate final step.",
+    guideTitle: "One index. Exact references. Direct product routes.",
     guide: [
       [
         "Browse the complete index",
         "The Finds page keeps every curated entry together so visitors and search engines can reach the full collection from one permanent URL.",
       ],
       [
-        "Open an on-site detail page",
-        "Each card leads to a unique product page with a useful summary, reference, category-specific checks and related finds.",
+        "Check the directory reference",
+        "Each card keeps the matching image, product name, category and main-site listing reference together.",
       ],
       [
-        "Continue only when ready",
-        "The external listing is reached from the final button on the detail page, after the shopper has reviewed what should be verified.",
+        "Open the matching product",
+        "The card opens the exact corresponding main-site product in a new tab so the current offer can be checked immediately.",
       ],
     ],
   },
   es: {
     home: "Inicio",
     eyebrow: "DIRECTORIO SELECCIONADO DE PRODUCTOS",
-    title: "Todos los hallazgos, cada uno con su propia página.",
+    title: "Todos los hallazgos con su producto correspondiente.",
     intro:
-      "Consulta todas las entradas actuales en un solo lugar. Abre una tarjeta para revisar la imagen, categoría, referencia y lista QC antes de continuar al anuncio actual.",
-    countLabel: "páginas de producto independientes",
-    routeLabel: "pasos de navegación",
-    routeValue: "Directorio → detalles → anuncio actual",
-    searchLabel: "Buscar en estas páginas",
+      "Consulta todas las entradas actuales en un solo lugar. Cada tarjeta abre directamente el producto correspondiente del sitio principal con la misma referencia.",
+    countLabel: "rutas de producto verificadas",
+    routeLabel: "clic directo",
+    routeValue: "Referencia → producto principal",
+    searchLabel: "Buscar productos",
     searchPlaceholder: "Buscar por nombre o categoría",
     results: "productos mostrados",
     reference: "Referencia",
-    details: "Ver detalles del producto",
+    details: "Ver producto correspondiente",
     emptyTitle: "No hay productos coincidentes",
     emptyText: "Prueba un nombre más amplio o vuelve al filtro Todos.",
     guideEyebrow: "CÓMO FUNCIONA EL DIRECTORIO",
-    guideTitle: "Un índice. Páginas separadas. Un último paso consciente.",
+    guideTitle: "Un índice. Referencias exactas. Rutas directas.",
     guide: [
       ["Explora el índice", "La página reúne todas las entradas en una URL permanente."],
-      ["Abre el detalle", "Cada tarjeta conduce a una página propia con información y controles QC."],
-      ["Continúa al final", "El anuncio externo solo se abre desde el botón final de la página de detalle."],
+      ["Comprueba la referencia", "Cada tarjeta conserva juntos la imagen, el nombre, la categoría y la referencia correspondiente."],
+      ["Abre el producto", "La tarjeta abre directamente el producto exacto del sitio principal en una pestaña nueva."],
     ],
   },
   de: {
     home: "Startseite",
     eyebrow: "KURATIERTES PRODUKTVERZEICHNIS",
-    title: "Alle Fundstücke mit jeweils eigener Detailseite.",
+    title: "Alle Fundstücke mit dem jeweils passenden Produkt.",
     intro:
-      "Alle aktuellen Einträge an einem Ort. Öffne eine Karte, um Bild, Kategorie, Referenz und QC-Prüfliste zu lesen, bevor du zum aktuellen Angebot weitergehst.",
-    countLabel: "eigenständige Produktseiten",
-    routeLabel: "Navigationsschritte",
-    routeValue: "Verzeichnis → Details → aktuelles Angebot",
-    searchLabel: "Produktseiten durchsuchen",
+      "Alle aktuellen Einträge an einem Ort. Jede Karte öffnet anhand derselben Referenz direkt das passende Produkt auf der Hauptseite.",
+    countLabel: "zugeordnete Produktrouten",
+    routeLabel: "direkter Klick",
+    routeValue: "Referenz → Hauptangebot",
+    searchLabel: "Produkte durchsuchen",
     searchPlaceholder: "Nach Name oder Kategorie suchen",
     results: "Produkte angezeigt",
     reference: "Referenz",
-    details: "Produktdetails ansehen",
+    details: "Passendes Produkt öffnen",
     emptyTitle: "Keine passenden Produktseiten",
     emptyText: "Versuche einen allgemeineren Begriff oder den Filter Alle.",
     guideEyebrow: "SO FUNKTIONIERT DAS VERZEICHNIS",
-    guideTitle: "Ein Index. Eigene Seiten. Ein bewusster letzter Schritt.",
+    guideTitle: "Ein Index. Exakte Referenzen. Direkte Produktrouten.",
     guide: [
       ["Gesamtindex öffnen", "Alle kuratierten Einträge sind über eine feste URL erreichbar."],
-      ["Detailseite lesen", "Jede Karte öffnet eine eigene Seite mit Angaben und QC-Prüfpunkten."],
-      ["Gezielt fortfahren", "Das externe Angebot folgt erst über die Schaltfläche auf der Detailseite."],
+      ["Referenz prüfen", "Jede Karte hält Bild, Name, Kategorie und passende Hauptseiten-Referenz zusammen."],
+      ["Produkt öffnen", "Die Karte öffnet das exakt passende Produkt der Hauptseite direkt in einem neuen Tab."],
     ],
   },
   fr: {
     home: "Accueil",
     eyebrow: "RÉPERTOIRE PRODUITS SÉLECTIONNÉ",
-    title: "Toute la sélection, avec une page dédiée par produit.",
+    title: "Toute la sélection avec le produit correspondant.",
     intro:
-      "Retrouvez toutes les entrées actuelles au même endroit. Ouvrez une carte pour consulter l’image, la catégorie, la référence et la liste QC avant l’annonce actuelle.",
-    countLabel: "pages produit indépendantes",
-    routeLabel: "étapes de navigation",
-    routeValue: "Répertoire → détails → annonce actuelle",
-    searchLabel: "Rechercher dans ces pages",
+      "Retrouvez toutes les entrées actuelles au même endroit. Chaque carte ouvre directement le produit correspondant du site principal avec la même référence.",
+    countLabel: "routes produit associées",
+    routeLabel: "clic direct",
+    routeValue: "Référence → produit principal",
+    searchLabel: "Rechercher des produits",
     searchPlaceholder: "Rechercher par nom ou catégorie",
     results: "produits affichés",
     reference: "Référence",
-    details: "Voir la fiche produit",
+    details: "Voir le produit correspondant",
     emptyTitle: "Aucun produit correspondant",
     emptyText: "Essayez un terme plus large ou revenez au filtre Tout.",
     guideEyebrow: "FONCTIONNEMENT DU RÉPERTOIRE",
-    guideTitle: "Un index. Des pages séparées. Une dernière étape maîtrisée.",
+    guideTitle: "Un index. Des références exactes. Des routes directes.",
     guide: [
       ["Parcourir l’index", "Toutes les entrées sont accessibles depuis une URL permanente."],
-      ["Lire la fiche", "Chaque carte ouvre une page unique avec des informations et contrôles QC."],
-      ["Continuer ensuite", "L’annonce externe s’ouvre uniquement depuis le bouton final de la fiche."],
+      ["Vérifier la référence", "Chaque carte réunit l’image, le nom, la catégorie et la référence correspondante."],
+      ["Ouvrir le produit", "La carte ouvre directement le produit exact du site principal dans un nouvel onglet."],
     ],
   },
   it: {
     home: "Home",
     eyebrow: "DIRECTORY CURATA DEI PRODOTTI",
-    title: "Tutti i prodotti, ciascuno con una pagina dedicata.",
+    title: "Tutti i prodotti con l’articolo corrispondente.",
     intro:
-      "Consulta tutte le voci attuali in un unico posto. Apri una scheda per vedere immagine, categoria, riferimento e controlli QC prima dell’inserzione corrente.",
-    countLabel: "pagine prodotto indipendenti",
-    routeLabel: "passaggi di navigazione",
-    routeValue: "Directory → dettagli → inserzione corrente",
-    searchLabel: "Cerca tra queste pagine",
+      "Consulta tutte le voci attuali in un unico posto. Ogni scheda apre direttamente il prodotto corrispondente del sito principale con lo stesso riferimento.",
+    countLabel: "percorsi prodotto associati",
+    routeLabel: "clic diretto",
+    routeValue: "Riferimento → prodotto principale",
+    searchLabel: "Cerca prodotti",
     searchPlaceholder: "Cerca per nome o categoria",
     results: "prodotti visualizzati",
     reference: "Riferimento",
-    details: "Vedi dettagli prodotto",
+    details: "Vedi prodotto corrispondente",
     emptyTitle: "Nessun prodotto corrispondente",
     emptyText: "Prova un termine più ampio o torna al filtro Tutti.",
     guideEyebrow: "COME FUNZIONA LA DIRECTORY",
-    guideTitle: "Un indice. Pagine separate. Un ultimo passaggio consapevole.",
+    guideTitle: "Un indice. Riferimenti esatti. Percorsi diretti.",
     guide: [
       ["Sfoglia l’indice", "Tutte le voci curate sono raggiungibili da un URL permanente."],
-      ["Apri i dettagli", "Ogni scheda porta a una pagina unica con informazioni e controlli QC."],
-      ["Continua alla fine", "L’inserzione esterna si apre solo dal pulsante finale della pagina."],
+      ["Controlla il riferimento", "Ogni scheda riunisce immagine, nome, categoria e riferimento corrispondente."],
+      ["Apri il prodotto", "La scheda apre direttamente il prodotto esatto del sito principale in una nuova scheda."],
     ],
   },
 } as const;
@@ -197,11 +197,11 @@ export default function FindsClient({ locale }: { locale: Locale }) {
             <span>{copy.countLabel}</span>
           </p>
           <p>
-            <strong>3</strong>
+            <strong>1</strong>
             <span>{copy.routeLabel}</span>
           </p>
           <p>
-            <strong>01 → 02 → 03</strong>
+            <strong>ID → ID</strong>
             <span>{copy.routeValue}</span>
           </p>
         </div>
@@ -244,8 +244,10 @@ export default function FindsClient({ locale }: { locale: Locale }) {
           <div className="finds-directory-grid">
             {visibleProducts.map((product, index) => (
               <article className="finds-directory-card" key={product.slug}>
-                <Link
-                  href={localizedPath(`/products/${product.slug}`, locale)}
+                <a
+                  href={product.destinationHref}
+                  target="_blank"
+                  rel="sponsored noopener"
                   aria-label={`${copy.details}: ${product.name}`}
                 >
                   <div className="finds-directory-image">
@@ -269,7 +271,7 @@ export default function FindsClient({ locale }: { locale: Locale }) {
                       {copy.details} <span aria-hidden="true">→</span>
                     </b>
                   </div>
-                </Link>
+                </a>
               </article>
             ))}
           </div>

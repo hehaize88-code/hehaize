@@ -12,31 +12,31 @@ const metadataCopy: Record<Locale, { title: string; description: string; listNam
   en: {
     title: "Lolobuy Spreadsheet Finds 2026 | Product Directory",
     description:
-      "Browse curated Lolobuy spreadsheet finds with product pages, listing references and QC checklists before opening each current destination listing.",
+      "Browse curated Lolobuy spreadsheet finds with exact listing references and direct links to each corresponding current product on the main site.",
     listName: "Lolobuy Sheet curated finds",
   },
   es: {
     title: "Productos Lolobuy | Directorio completo",
     description:
-      "Explora todos los productos seleccionados, compara los datos útiles y abre una página independiente antes de continuar a la ficha actual.",
+      "Explora los productos seleccionados con referencias exactas y enlaces directos a cada producto correspondiente del sitio principal.",
     listName: "Selección de productos Lolobuy Sheet",
   },
   de: {
     title: "Lolobuy-Produkte | Vollständiges Verzeichnis",
     description:
-      "Alle kuratierten Produkte ansehen, wichtige Angaben vergleichen und vor dem aktuellen Angebot eine eigene Detailseite öffnen.",
+      "Kuratierte Produkte mit exakten Referenzen und direkten Links zum jeweils passenden Produkt der Hauptseite ansehen.",
     listName: "Kuratierte Lolobuy-Sheet-Produkte",
   },
   fr: {
     title: "Produits Lolobuy | Répertoire complet",
     description:
-      "Parcourez toute la sélection, comparez les informations utiles et ouvrez une fiche dédiée avant de consulter l’annonce actuelle.",
+      "Parcourez la sélection avec des références exactes et des liens directs vers chaque produit correspondant du site principal.",
     listName: "Sélection de produits Lolobuy Sheet",
   },
   it: {
     title: "Prodotti Lolobuy | Directory completa",
     description:
-      "Sfoglia tutti i prodotti selezionati, confronta i dati utili e apri una pagina dedicata prima dell’inserzione corrente.",
+      "Sfoglia i prodotti selezionati con riferimenti esatti e link diretti a ogni prodotto corrispondente del sito principale.",
     listName: "Selezione di prodotti Lolobuy Sheet",
   },
 };

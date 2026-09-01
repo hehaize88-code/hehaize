@@ -165,9 +165,11 @@ export default async function CategoryGuidePage({
           {products.length > 0 ? (
             <div className="related-product-grid">
               {products.map((product) => (
-                <Link
+                <a
                   className="related-product-card"
-                  href={localizedPath(`/products/${product.slug}`, locale)}
+                  href={product.destinationHref}
+                  target="_blank"
+                  rel="sponsored noopener"
                   key={product.slug}
                 >
                   <ProductImage
@@ -178,7 +180,7 @@ export default async function CategoryGuidePage({
                   <span>{product.category}</span>
                   <h3>{product.name}</h3>
                   <b>{guide.viewProduct} <span aria-hidden="true">→</span></b>
-                </Link>
+                </a>
               ))}
             </div>
           ) : (

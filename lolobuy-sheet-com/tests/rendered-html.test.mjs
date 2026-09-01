@@ -339,6 +339,37 @@ test("homepage fourth edit is Jersey and commercial links are qualified", async 
   assert.match(html, />Bags &amp; Accessories<\/span>/);
 });
 
+test("product cards open their exact matching main-site product pages", async () => {
+  const worker = await loadWorker();
+  const expectedProductUrls = [
+    "3372",
+    "3371",
+    "3369",
+    "3367",
+    "3359",
+    "3346",
+    "3343",
+    "3341",
+  ].map((id) => `https://www.cnbuycha.com/AllProducts/${id}.html`);
+
+  for (const path of ["/", "/finds"]) {
+    const response = await fetchPage(worker, path);
+    const html = await response.text();
+
+    assert.equal(response.status, 200, path);
+    for (const url of expectedProductUrls) {
+      assert.match(
+        html,
+        new RegExp(
+          `href="${url.replaceAll(".", "\\.")}"[^>]*target="_blank"[^>]*rel="sponsored noopener"`,
+        ),
+        `${path} must link directly to ${url}`,
+      );
+    }
+    assert.doesNotMatch(html, /href="\/products\//);
+  }
+});
+
 test("serves eight evidence-led product pages with local responsive images", async () => {
   const worker = await loadWorker();
   const products = [

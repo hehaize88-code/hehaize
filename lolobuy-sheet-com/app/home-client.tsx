@@ -134,10 +134,12 @@ export default function HomeClient({ locale }: { locale: Locale }) {
           <div className="find-grid" aria-live="polite">
             {visibleFinds.map((item, index) => (
               <article className="find-card" key={item.name}>
-                <Link
+                <a
                   className="find-link"
-                  href={localizedPath(`/products/${item.slug}`, locale)}
-                  aria-label={`View details for ${item.name}`}
+                  href={item.destinationHref}
+                  target="_blank"
+                  rel="sponsored noopener"
+                  aria-label={`View ${item.name} on the main site`}
                 >
                   <ProductImage
                     slug={item.slug}
@@ -145,7 +147,7 @@ export default function HomeClient({ locale }: { locale: Locale }) {
                     sizes="(max-width: 620px) 22vw, (max-width: 930px) 23vw, 11vw"
                     priority={index < 4}
                   />
-                </Link>
+                </a>
                 <button
                   className={saved[item.name] ? "save-button is-saved" : "save-button"}
                   type="button"

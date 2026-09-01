@@ -920,9 +920,11 @@ export default async function ProductPage({
           </div>
           <div className="related-product-grid">
             {related.map((item) => (
-              <Link
+              <a
                 className="related-product-card"
-                href={localizedPath(`/products/${item.slug}`, locale)}
+                href={item.destinationHref}
+                target="_blank"
+                rel="sponsored noopener"
                 key={item.slug}
               >
                 <ProductImage
@@ -935,7 +937,7 @@ export default async function ProductPage({
                 <b>
                   {copy.viewDetails} <span aria-hidden="true">→</span>
                 </b>
-              </Link>
+              </a>
             ))}
           </div>
         </section>

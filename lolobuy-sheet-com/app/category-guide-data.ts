@@ -345,7 +345,7 @@ const categoryGuides: CategoryGuideConfig[] = [
           "If a size or print is wrong, resolve it before international shipment. The public LoloBuy homepage confirms inspection and photographs, but it does not publish one complete seller-return policy or guaranteed remedy for every mismatch.",
         ],
         productsTitle: "Current hoodie finds in this directory",
-        productsIntro: "Use each internal detail page to preserve the reference before opening the current seller destination.",
+        productsIntro: "Use each matched card to open the corresponding current product, then verify the exact option before ordering.",
         openDirectory: "Open the complete hoodie directory",
         viewProduct: "Review product details",
         faqTitle: "Lolobuy hoodie questions",

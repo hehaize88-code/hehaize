@@ -1734,7 +1734,7 @@ export const faqs = [
     question: "Does this site sell, store or ship products?",
     basis: "INDEPENDENT DIRECTORY",
     answer:
-      "No. This site organizes product finds and explains the buying process; it does not accept payment, purchase from sellers, inspect goods, operate a warehouse or arrange international delivery. Each product card first opens an independent detail page so that you can review the item reference and a pre-order checklist. Only the final product button continues to the current ordering destination. Any order status, payment, warehouse photograph, return request, parcel quote or tracking update belongs to the service handling that transaction, not to this directory.",
+      "No. This site organizes product finds and explains the buying process; it does not accept payment, purchase from sellers, inspect goods, operate a warehouse or arrange international delivery. Each product card uses its listing reference to open the corresponding product on the main site directly. Any order status, payment, warehouse photograph, return request, parcel quote or tracking update belongs to the service handling that transaction, not to this directory.",
   },
   {
     question: "What does LoloBuy officially say its buying service does?",
@@ -1758,7 +1758,7 @@ export const faqs = [
     question: "Are all product links on this directory manually verified every day?",
     basis: "INDEPENDENT DIRECTORY POLICY",
     answer:
-      "No daily-verification claim is made. Seller listings can be edited, removed, repriced or placed out of stock without notice, and a directory cannot guarantee the continuing accuracy of every external page. Treat each product card as a discovery reference, open its detail page, and verify the current destination listing immediately before ordering. Pay particular attention to the selected variant because the lowest price may belong to a different size, colour, accessory or deposit. If the product title, image or options no longer match the directory entry, rely on the live listing and do not place the order from an old assumption.",
+      "No daily-verification claim is made. Seller listings can be edited, removed, repriced or placed out of stock without notice, and a directory cannot guarantee the continuing accuracy of every external page. Treat each product card as a discovery reference and verify the directly linked destination listing immediately before ordering. Pay particular attention to the selected variant because the lowest price may belong to a different size, colour, accessory or deposit. If the product title, image or options no longer match the directory entry, rely on the live listing and do not place the order from an old assumption.",
   },
   {
     question: "What happens after the seller sends an item to the LoloBuy warehouse?",

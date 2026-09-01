@@ -427,7 +427,7 @@ export const footerCopy = {
     directory: "Product directory",
     directoryLink: "Open current listings",
     verify: "Verify current prices, variants and availability at destination.",
-    imageNote: "Product cards open their matching independent detail pages first.",
+    imageNote: "Product cards open their exact matching main-site listings directly.",
   },
   es: {
     lead: "Descubrimiento independiente y orientación QC. No vendemos, almacenamos ni enviamos productos y no estamos afiliados con Lolobuy.",
@@ -436,7 +436,7 @@ export const footerCopy = {
     directory: "Directorio de productos",
     directoryLink: "Abrir fichas actuales",
     verify: "Comprueba precios, variantes y disponibilidad en el destino.",
-    imageNote: "Cada tarjeta abre primero su página de detalle independiente.",
+    imageNote: "Cada tarjeta abre directamente el producto exacto del sitio principal.",
   },
   de: {
     lead: "Unabhängige Produktsuche und praktische QC-Hilfe. Wir verkaufen, lagern oder versenden keine Produkte und sind nicht mit Lolobuy verbunden.",
@@ -445,7 +445,7 @@ export const footerCopy = {
     directory: "Produktverzeichnis",
     directoryLink: "Aktuelle Angebote öffnen",
     verify: "Preis, Variante und Verfügbarkeit auf der Zielseite prüfen.",
-    imageNote: "Jede Produktkarte öffnet zuerst ihre eigene Detailseite.",
+    imageNote: "Jede Produktkarte öffnet direkt das exakt passende Angebot der Hauptseite.",
   },
   fr: {
     lead: "Découverte indépendante et conseils QC pratiques. Nous ne vendons, stockons ou expédions aucun produit et ne sommes pas affiliés à Lolobuy.",
@@ -454,7 +454,7 @@ export const footerCopy = {
     directory: "Catalogue produits",
     directoryLink: "Ouvrir les fiches actuelles",
     verify: "Vérifiez prix, variantes et disponibilité sur la page cible.",
-    imageNote: "Chaque carte ouvre d’abord sa propre fiche détaillée.",
+    imageNote: "Chaque carte ouvre directement le produit exact du site principal.",
   },
   it: {
     lead: "Scoperta indipendente e guida QC pratica. Non vendiamo, conserviamo o spediamo prodotti e non siamo affiliati a Lolobuy.",
@@ -463,7 +463,7 @@ export const footerCopy = {
     directory: "Catalogo prodotti",
     directoryLink: "Apri le schede attuali",
     verify: "Verifica prezzi, varianti e disponibilità sulla pagina di destinazione.",
-    imageNote: "Ogni scheda apre prima la propria pagina di dettaglio.",
+    imageNote: "Ogni scheda apre direttamente il prodotto esatto del sito principale.",
   },
 } as const;
 
