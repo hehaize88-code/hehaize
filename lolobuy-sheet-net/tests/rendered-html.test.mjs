@@ -522,9 +522,22 @@ test("uses the requested homepage title, H1 and Buying Guides label", async () =
 });
 
 test("publishes twelve internal product reference pages with honest schema", async () => {
-  const ids = [3359, 3369, 3371, 3357, 3367, 3366, 3368, 3372, 3356, 3355, 3353, 3351];
+  const destinations = new Map([
+    [3359, 3328],
+    [3369, 3413],
+    [3371, 3353],
+    [3357, 3286],
+    [3367, 3355],
+    [3366, 3354],
+    [3368, 3412],
+    [3372, 3359],
+    [3356, 3402],
+    [3355, 3321],
+    [3353, 3401],
+    [3351, 3307],
+  ]);
 
-  for (const id of ids) {
+  for (const [id, destinationId] of destinations) {
     const pathname = `/products/${id}`;
     const response = await fetchPage(pathname);
     assert.equal(response.status, 200, pathname);
@@ -534,7 +547,7 @@ test("publishes twelve internal product reference pages with honest schema", asy
     assert.match(html, /"@type":"BreadcrumbList"/, pathname);
     assert.doesNotMatch(html, /"@type":"Product"|"@type":"Offer"/, pathname);
     assert.match(html, /These are dated reference values, not a live offer/, pathname);
-    assert.match(html, new RegExp(`AllProducts/${id}\\.html`), pathname);
+    assert.match(html, new RegExp(`AllProducts/${destinationId}\\.html`), pathname);
     assert.match(html, /rel="sponsored noopener noreferrer"/, pathname);
   }
 });
