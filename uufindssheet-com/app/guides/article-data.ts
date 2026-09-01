@@ -32,6 +32,118 @@ export type Guide = {
 
 export const guides: Guide[] = [
   {
+    slug: "uufinds-product-price-total-parcel-cost",
+    label: "COST RESEARCH GUIDE",
+    title: "UUFinds Product Price vs Total Parcel Cost: Build a Research Range",
+    seoTitle: "UUFinds Product Price vs Total Parcel Cost",
+    description: "Use a UUFinds product price as one dated input, then map domestic delivery, chosen-agent charges, packing, international shipping and destination costs without inventing a quote.",
+    primaryKeyword: "UUFinds product price",
+    longTailKeywords: ["UUFinds total parcel cost", "UUFinds product price vs shipping", "UUFinds QC weight cost estimate", "UUFinds landed cost worksheet"],
+    updated: "September 1, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-09-01",
+    modifiedISO: "2026-09-01",
+    englishOnly: true,
+    hideSourceNote: true,
+    intro: [
+      "A UUFinds product price is a research input, not a delivered-cost quote. A current detail record can help you identify a source item, visible option context, price and sometimes a recorded weight. It does not prove future stock, the price of another option, the chargeable weight of a packed parcel or the fees, routes and destination charges that an independently chosen purchasing agent may apply.",
+      "The useful question is therefore not “What is the final shipping cost on UUFinds?” UUFinds describes itself as an informational platform rather than a product seller. Build a transparent range from the evidence that is actually visible, preserve every unknown, then take the original marketplace source and exact option to the independent agent you choose. That agent—not UUFinds—controls its own purchase, payment, warehouse, packing, return and shipping terms.",
+    ],
+    sections: [
+      {
+        heading: "1. Label the price before using it",
+        paragraphs: [
+          "Save the complete UUFinds detail address, marketplace channel, original source when recoverable, item identifier, seller context, selected or displayed option, visible currency, amount and check date. Call the value a displayed product price unless the interface clearly gives it another meaning. Do not silently convert it into an all-options minimum, an account checkout total or evidence that the seller will honor it later.",
+          "Price relevance depends on identity. A visually similar result from another seller, an old QC record or a different style, color, size, bundle or quantity may carry a different amount. Apply the same Exact, Conditional, Reference and Conflict states used for source research. Only an Exact price belongs in a candidate calculation. Conditional and Reference amounts may define a broad research range; a Conflict should be excluded.",
+        ],
+        table: { caption: "Price labels that prevent false precision", headers: ["Record state", "What you know", "How to use the amount"], rows: [
+          ["Exact", "Source item and option agree", "Candidate product-price input"],
+          ["Conditional", "Item agrees; decisive option field is missing", "Range only, pending confirmation"],
+          ["Reference", "Similar item; exact source is unresolved", "Discovery context, not a quote"],
+          ["Conflict", "Source, seller or option disagrees", "Exclude from the calculation"],
+        ] },
+      },
+      {
+        heading: "2. Split product-level and parcel-level costs",
+        paragraphs: [
+          "Product-level costs attach to one candidate: the live item amount, required quantity, seller-to-warehouse delivery when confirmed, and an order-specific charge shown by the agent you later choose. Parcel-level costs arise after one or more approved items are packed: optional packing, international freight, insurance when selected and destination charges. Keeping these layers apart stops a low product price from hiding an expensive parcel decision.",
+          "Create columns for Known, Range and Unknown. Known requires a dated, transaction-relevant amount. Range needs a stated basis, such as two current option prices or two eligible route estimates shown later by the chosen agent. Unknown means the evidence is absent. Entering zero for an unknown is not conservative; it produces a false low total. A useful worksheet can remain incomplete and still explain what must be confirmed next.",
+        ],
+        points: [
+          "Product layer: exact option price, quantity and confirmed China delivery.",
+          "Agent layer: only the purchase, payment or service charges shown by the chosen agent.",
+          "Parcel layer: packing decision, route eligibility, chargeable weight and live freight.",
+          "Destination layer: current tax, duty, carrier handling or other assessed charges.",
+        ],
+      },
+      {
+        heading: "3. Use displayed weight only for a bounded scenario",
+        paragraphs: [
+          "Some current public UUFinds detail records display a weight beside an individual QC record. Preserve the number, unit, record date, item identity and option context together. Do not assume every record has weight, that the value describes a future unit, or that it includes the same packaging a purchasing agent will later use. A weight attached to the wrong option is not useful merely because it looks precise.",
+          "Displayed product weight is also not automatically chargeable parcel weight. International routes can use actual weight, dimensions or another line-specific charging rule, and several items share outer packaging. Use a matched record only to build a sensitivity case: “If the purchased unit is near this recorded weight and the final parcel remains actual-weight based, this is one input.” The live warehouse and parcel evidence from the chosen agent replaces that assumption later.",
+          "The separate UUFinds weight guide explains the difference between product evidence and a packed parcel. Do not choose an agent or route from a public QC weight alone. The purpose of an early scenario is to compare how sensitive candidates are to weight and packaging, not to publish a freight quote that UUFinds never made.",
+        ],
+      },
+      {
+        heading: "4. Build a range without invented fees",
+        paragraphs: [
+          "Use variables until a live, attributable amount exists. Let P be the exact product price, D confirmed seller-to-warehouse delivery, A charges shown by the independently chosen agent, K optional packing, S the item's allocated share of international shipping and T destination charges. The planning expression is P + D + A + K + S + T. It is a research framework, not a UUFinds calculator or a promise that every cost category applies.",
+          "Give each variable a source and date. P may begin with a matched UUFinds record but must be checked again on the original marketplace page and in the chosen agent's order flow. D and A come from that agent's current transaction. K and S cannot be confirmed until the items, packing choice and eligible routes are known. T comes from current destination rules and any actual collection process, not from a social post about another country.",
+          "If P is known, D is a small current range and all later variables are unknown, report exactly that. Do not present the subtotal as “total cost.” You can compare candidates on product-stage evidence while marking the parcel decision unresolved. The honest range widens when a decisive field is missing; it should never shrink because the answer would look cleaner.",
+        ],
+        table: { caption: "Variable ledger for one shortlisted item", headers: ["Variable", "Evidence source", "Allowed state"], rows: [
+          ["P — product", "Exact source, option and dated amount", "Known or current range"],
+          ["D — China delivery", "Chosen agent order flow or seller terms", "Known, range or unknown"],
+          ["A — agent charges", "Chosen agent's live transaction terms", "Known, range or unknown"],
+          ["K + S — parcel", "Packed evidence and eligible live routes", "Later range or unknown"],
+          ["T — destination", "Current official destination rules", "Range or unknown until assessed"],
+        ] },
+      },
+      {
+        heading: "5. Allocate shared parcel cost transparently",
+        paragraphs: [
+          "A consolidated parcel creates a shared cost that cannot be read from one public product result. Choose an allocation method only after the packed parcel exists. Actual-weight share can work when items are similarly dense and the route charges actual weight. Chargeable-weight contribution is better when one bulky item changes dimensions. Equal shares are easy but can mislead when a compact accessory and a structured box occupy very different space.",
+          "Write the method beside the result. If removing Candidate A reduces the live parcel estimate materially, the difference is a useful marginal-cost scenario. If two parcel plans use different routes or packaging, do not pretend that subtraction isolates only one item. Preserve both complete plans and the conditions behind them. An allocated number is an editorial comparison choice, not an invoice line created by UUFinds.",
+          "For discovery, a simple High, Medium or Low parcel-risk label may be more honest than a currency amount. High can mean unknown dimensions, rigid retail packaging or sensitive attributes that may restrict routes. Low can mean compact evidence with fewer unresolved packaging questions. These labels rank research uncertainty; they do not guarantee a shipping outcome.",
+        ],
+      },
+      {
+        heading: "6. Compare candidates by decision state, not cheapness",
+        paragraphs: [
+          "Set the same target brief before comparing listings. Candidate rows should share the required product type, exact option, quantity and hard dimensions. Then compare source identity, displayed price, date, matched QC evidence, usable weight context, parcel-risk label and unresolved costs. A lower displayed amount should not win when it belongs to the wrong option or when a decision-critical field remains untraceable.",
+          "Use Reject for a source or option conflict. Use Needs evidence when one focused question could change the choice. Use Research shortlist when the current source and exact option are reproducible and no hard conflict appears. Use Cost-ready only after the chosen agent confirms the order-stage figures and supplies a parcel scenario relevant to the actual destination. Cost-ready does not mean quality-approved or guaranteed to clear customs.",
+          "Suppose Candidate A shows a lower price but its source is unresolved and its weight belongs to another size. Candidate B costs more, yet its exact option, current source and dated QC record agree. Candidate B is the stronger research shortlist; Candidate A remains Reference. This example is a method, not a claim about a real product, seller, agent or parcel.",
+        ],
+      },
+      {
+        heading: "7. Hand off a cost research packet to your chosen agent",
+        paragraphs: [
+          "Once a candidate survives, save the original marketplace link, seller and item identifiers, exact option tuple, quantity, UUFinds detail address, price and weight fields with dates, QC concerns, Known/Range/Unknown ledger and the question that could still change the decision. Open the original source inside the independent purchasing agent you select and verify the current order figures before payment.",
+          "Do not interpret successful link handling as an affiliation between UUFinds and that agent. The agent controls its own accepted marketplaces, purchase service, payment, warehouse, photo, packing, return, insurance and shipping terms. Read those current terms directly. Replace public research assumptions with actual order and warehouse evidence as it arrives; do not keep an older UUFinds number merely because it produced a preferred total.",
+          "Before international shipment, reconcile the packed items, route eligibility, actual and dimensional data, selected services and displayed charge. Preserve two snapshots: the research range before ordering and the live parcel decision before payment. The difference teaches you which assumptions mattered and makes future spreadsheet records more useful without turning one parcel into a universal price rule.",
+        ],
+        points: [
+          "Preserve the exact source, option, amount, unit and checked date.",
+          "Keep public QC evidence separate from the chosen agent's later order evidence.",
+          "Replace assumptions with live transaction fields instead of averaging them.",
+          "State the final decision and every cost that remains unresolved.",
+        ],
+      },
+      {
+        heading: "8. Final pre-agent cost research check",
+        paragraphs: [
+          "A defensible UUFinds cost note answers eight questions. Is the exact source traceable? Does the option match? What amount and currency are displayed, and on what date? Is any weight tied to the correct record? Which costs are product-level and which wait for a parcel? What remains Known, Range or Unknown? Which allocation method will be used later? Which independently chosen agent will verify the current transaction fields?",
+          "Stop when the source conflicts, the option is ambiguous or a missing cost could reverse the shortlist. Proceed to the chosen agent only when the handoff packet can be reproduced. UUFinds can help organize product and QC research; it cannot supply another company's checkout, warehouse or shipping commitment. The strongest estimate is the one that shows its limits before money moves.",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-seller-information-reliability-signals/", label: "Check seller and source signals", description: "Keep seller identity, item evidence and reliability conclusions separate." },
+      { href: "/guides/uufinds-product-weight-vs-volumetric-weight/", label: "Use weight evidence carefully", description: "Separate a product record from packed and chargeable parcel weight." },
+      { href: "/guides/uufinds-size-measurement-notes-before-option/", label: "Confirm the exact option", description: "Match size and measurement evidence before assigning a price to a candidate." },
+    ],
+  },
+  {
     slug: "uufinds-seller-information-reliability-signals",
     label: "SELLER RESEARCH GUIDE",
     title: "UUFinds Seller Information: Reliability Signals Without Guesswork",

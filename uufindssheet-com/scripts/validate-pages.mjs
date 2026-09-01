@@ -16,6 +16,7 @@ const linkSearchGuideSlug = "uufinds-taobao-1688-weidian-qc-search-guide";
 const trousersGuideSlug = "uufinds-jeans-trousers-qc-checklist";
 const sizeNotesGuideSlug = "uufinds-size-measurement-notes-before-option";
 const sellerGuideSlug = "uufinds-seller-information-reliability-signals";
+const costGuideSlug = "uufinds-product-price-total-parcel-cost";
 const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
@@ -291,17 +292,46 @@ for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
   await assert.rejects(readPage(`${locale}/guides/${sellerGuideSlug}`), `English-only seller guide must not generate a fake ${locale} page`);
 }
 
+const costGuide = await readPage(`guides/${costGuideSlug}`);
+assert.match(costGuide, /<title>UUFinds Product Price vs Total Parcel Cost \| UUFinds Sheet<\/title>/);
+assert.match(costGuide, /<h1>UUFinds Product Price vs Total Parcel Cost: Build a Research Range<\/h1>/);
+assert.match(costGuide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${costGuideSlug}/"`));
+assert.doesNotMatch(costGuide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, "Cost guide must not claim a translated equivalent");
+assert.match(costGuide, /"datePublished":"2026-09-01"/);
+assert.match(costGuide, /"dateModified":"2026-09-01"/);
+assert.match(costGuide, /"@type":"Article"/);
+assert.match(costGuide, /"@type":"BreadcrumbList"/);
+assert.match(costGuide, /class="guide-table-wrap"/);
+assert.doesNotMatch(costGuide, /class="evidence-ledger"|class="source-note"|Primary source notes|Evidence and source ledger/, "Cost guide must not expose research-process modules");
+const costGuideBodyStart = costGuide.indexOf('class="guide-body"');
+const costGuideBodyEnd = costGuide.indexOf("</article>", costGuideBodyStart);
+assert.ok(costGuideBodyStart >= 0 && costGuideBodyEnd > costGuideBodyStart, "Cost guide body must be extractable");
+const costGuideBody = costGuide.slice(costGuideBodyStart, costGuideBodyEnd);
+assert.doesNotMatch(costGuideBody, /href="https?:\/\//i, "Cost guide body must not add external links");
+assert.match(costGuideBody, /independent purchasing agent|independently chosen purchasing agent|independent agent you choose/i);
+assert.match(costGuideBody, /not affiliated|does not imply|Do not interpret successful link handling as an affiliation/i);
+const costWordCountMatch = costGuide.match(/data-visible-word-count="(\d+)"/);
+assert.ok(costWordCountMatch, "Cost guide must expose its validated visible word count");
+const costVisibleWordCount = Number(costWordCountMatch[1]);
+assert.ok(costVisibleWordCount >= 1200 && costVisibleWordCount <= 1800, `Cost guide word count must be 1,200–1,800, received ${costVisibleWordCount}`);
+assert.match(costGuide, new RegExp(`"wordCount":${costVisibleWordCount}`));
+for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
+  await assert.rejects(readPage(`${locale}/guides/${costGuideSlug}`), `English-only cost guide must not generate a fake ${locale} page`);
+}
+
 const articleIndex = await readPage("articles");
 assert.match(articleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${sizeNotesGuideSlug}/"`));
+assert.match(articleIndex, new RegExp(`href="/guides/${costGuideSlug}/"`));
 for (const locale of locales) {
   const localizedArticleIndex = await readPage(`${locale}/articles`);
   assert.match(localizedArticleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`), `${locale} article index must route the English-only card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`), `${locale} article index must route the link-search card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`), `${locale} article index must route the English-only trousers card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${sizeNotesGuideSlug}/"`), `${locale} article index must route the English-only size-notes card to its canonical page`);
+    assert.match(localizedArticleIndex, new RegExp(`href="/guides/${costGuideSlug}/"`), `${locale} article index must route the English-only cost card to its canonical page`);
 }
 
 const home = await readPage("");

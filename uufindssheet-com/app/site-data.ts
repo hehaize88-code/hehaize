@@ -32,6 +32,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "COST RESEARCH GUIDE",
+    title: "UUFinds Product Price vs Total Parcel Cost: Build a Research Range",
+    summary: "Use dated product and QC fields as bounded inputs, then preserve every agent, parcel and destination cost that remains unknown.",
+    href: "/guides/uufinds-product-price-total-parcel-cost/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "SELLER RESEARCH GUIDE",
     title: "UUFinds Seller Information: Reliability Signals Without Guesswork",
     summary: "Preserve the exact seller, source item and option, then rank dated QC evidence without treating labels or counters as guarantees.",
