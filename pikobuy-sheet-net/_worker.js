@@ -1,40 +1,39 @@
-const PRODUCT_IDS = Object.freeze({
-  'acg-sup-pullover-sweatshirt-3374': '3374',
-  'acne-studios-longsleeve-3350': '3350',
-  'ap-swatch-rolex-watch-3363': '3363',
-  'canada-goose-sweatshirt-3380': '3380',
-  'celine-coat-3356': '3356',
-  'coach-backpack-styles-3377': '3377',
-  'corteiz-c-star-sweater-3368': '3368',
-  'designer-tie-3373': '3373',
-  'fuzzy-slippers-3379': '3379',
-  'goyard-umbrella-3268': '3268',
-  'gucci-hat-3371': '3371',
-  'gucci-perfume-3344': '3344',
-  'gucci-tracksuit-3362': '3362',
-  'hoka-speedgoat-5-3359': '3359',
-  'jellycat-3361': '3361',
-  'labubu-coke-pendant-3315': '3315',
-  'louis-vuitton-jacket-3354': '3354',
-  'louis-vuitton-wallet-3382': '3382',
-  'maison-margiela-hoodie-3360': '3360',
-  'new-balance-1906r-3378': '3378',
-  'nike-air-more-uptempo-slippers-3366': '3366',
-  'nike-sweater-3375': '3375',
-  'numeris-rick-owens-shoes-3367': '3367',
-  'off-white-hoodies-3369': '3369',
-  'polo-ralph-lauren-long-sleeve-3353': '3353',
-  'rimowa-luggage-3376': '3376',
-  'royal-oak-swatch-rolex-watches-3365': '3365',
-  'snow-ski-goggles-3372': '3372',
-  'square-dial-pocket-watches-3364': '3364',
-  'ugg-gloves-3381': '3381'
+const PRODUCT_DESTINATIONS = Object.freeze({
+  'acg-sup-pullover-sweatshirt-3374': 'https://www.cnbuycha.com/hoodies-sweaters/3426.html',
+  'acne-studios-longsleeve-3350': 'https://www.cnbuycha.com/t-shirts/3394.html',
+  'ap-swatch-rolex-watch-3363': 'https://www.cnbuycha.com/accessories/3357.html',
+  'canada-goose-sweatshirt-3380': 'https://www.cnbuycha.com/jackets/3425.html',
+  'celine-coat-3356': 'https://www.cnbuycha.com/AllProducts/?q=Celine%20Coat',
+  'coach-backpack-styles-3377': 'https://www.cnbuycha.com/accessories/3364.html',
+  'corteiz-c-star-sweater-3368': 'https://www.cnbuycha.com/hoodies-sweaters/3412.html',
+  'designer-tie-3373': 'https://www.cnbuycha.com/accessories/3368.html',
+  'fuzzy-slippers-3379': 'https://www.cnbuycha.com/shoes/3365.html',
+  'goyard-umbrella-3268': 'https://www.cnbuycha.com/accessories/3299.html',
+  'gucci-hat-3371': 'https://www.cnbuycha.com/headwear/3353.html',
+  'gucci-perfume-3344': 'https://www.cnbuycha.com/accessories/3344.html',
+  'gucci-tracksuit-3362': 'https://www.cnbuycha.com/short-sets/3348.html',
+  'hoka-speedgoat-5-3359': 'https://www.cnbuycha.com/shoes/3328.html',
+  'jellycat-3361': 'https://www.cnbuycha.com/other-stuff/3279.html',
+  'labubu-coke-pendant-3315': 'https://www.cnbuycha.com/other-stuff/3273.html',
+  'louis-vuitton-jacket-3354': 'https://www.cnbuycha.com/AllProducts/?q=Louis%20Vuitton%20Jacket',
+  'louis-vuitton-wallet-3382': 'https://www.cnbuycha.com/accessories/3363.html',
+  'maison-margiela-hoodie-3360': 'https://www.cnbuycha.com/t-shirts/3400.html',
+  'new-balance-1906r-3378': 'https://www.cnbuycha.com/shoes/3366.html',
+  'nike-air-more-uptempo-slippers-3366': 'https://www.cnbuycha.com/shoes/3354.html',
+  'nike-sweater-3375': 'https://www.cnbuycha.com/hoodies-sweaters/3367.html',
+  'numeris-rick-owens-shoes-3367': 'https://www.cnbuycha.com/shoes/3355.html',
+  'off-white-hoodies-3369': 'https://www.cnbuycha.com/hoodies-sweaters/3413.html',
+  'polo-ralph-lauren-long-sleeve-3353': 'https://www.cnbuycha.com/AllProducts/?q=Polo%20Ralph%20Lauren',
+  'rimowa-luggage-3376': 'https://www.cnbuycha.com/accessories/3369.html',
+  'royal-oak-swatch-rolex-watches-3365': 'https://www.cnbuycha.com/accessories/3358.html',
+  'snow-ski-goggles-3372': 'https://www.cnbuycha.com/accessories/3359.html',
+  'square-dial-pocket-watches-3364': 'https://www.cnbuycha.com/accessories/3360.html',
+  'ugg-gloves-3381': 'https://www.cnbuycha.com/accessories/3362.html'
 });
 
 function productDestination(pathname) {
   const match = pathname.match(/^\/(?:(?:de|fr|es|it|pl|pt)\/)?finds\/([^/]+)\/?$/);
-  const id = match && PRODUCT_IDS[match[1]];
-  return id ? `https://www.cnbuycha.com/AllProducts/${id}.html` : null;
+  return match ? PRODUCT_DESTINATIONS[match[1]] || null : null;
 }
 
 const PRODUCT_LINK_REWRITER = {
@@ -454,7 +453,7 @@ const GA_SNIPPET = `
     }
 
     var productMatch = target.hostname.replace(/^www\./, '') === 'cnbuycha.com'
-      ? target.pathname.match(/^\/AllProducts\/(\d+)\.html$/)
+      ? target.pathname.match(/^\/(?:AllProducts|accessories|headwear|hoodies-sweaters|jackets|shoes|short-sets|t-shirts|other-stuff)\/(\d+)\.html$/)
       : null;
     var details = {
       source_page: location.pathname,
@@ -503,7 +502,7 @@ export default {
   if(url.hostname==="www.pikobuy-sheet.net"){url.hostname="pikobuy-sheet.net";return Response.redirect(url.toString(),301);}
   if(url.pathname==="/sitemap-main.xml"){url.pathname="/sitemap.xml";return Response.redirect(url.toString(),301);}
   const destination=productDestination(url.pathname);
-  if(destination&&(request.method==='GET'||request.method==='HEAD'))return Response.redirect(destination,302);
+  if(destination&&(request.method==='GET'||request.method==='HEAD'))return new Response(null,{status:302,headers:{location:destination,'cache-control':'no-store, max-age=0'}});
   const isStatic=STATIC_FILES.has(url.pathname)||STATIC_PREFIXES.some(p=>url.pathname.startsWith(p));
   if(!ROUTES.has(url.pathname)&&!isStatic){
    const page=await env.ASSETS.fetch(new Request(new URL('/404.html',url),request));
