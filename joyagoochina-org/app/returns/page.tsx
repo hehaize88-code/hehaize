@@ -3,12 +3,12 @@ import { LocalizedPage } from "../components/LocalizedExperience";
 import { editorialSocialMetadata } from "../editorialAssets";
 import { languageAlternates } from "../seoAlternates";
 
-const title = "Joyagoo Return Policy: The 5-Day QC Window Explained";
+const title = "How to Refund on Joyagoo: 5-Day Return Window (2026)";
 const description =
-  "Understand Joyagoo's published five-day return-request window, eligibility limits, packaging conditions and possible return costs.";
+  "Learn how to request a Joyagoo refund after QC, the five-day deadline, seller eligibility, packaging rules and possible return shipping costs.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: languageAlternates("/returns/"),
   ...editorialSocialMetadata({

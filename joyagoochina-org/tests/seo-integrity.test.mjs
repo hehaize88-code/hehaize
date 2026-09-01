@@ -234,8 +234,8 @@ test("high-intent research pages use concise search snippets and localized relat
   const pages = [
     {
       slug: "joyagoo-fees-explained",
-      title: "Joyagoo Fees 2026: Product, Warehouse &amp; Shipping Costs",
-      description: "See Joyagoo product payments, domestic delivery, QC extras, storage and international shipping costs before you order or submit a parcel.",
+      title: "Joyagoo Shipping Cost &amp; Fees 2026: Is It Expensive?",
+      description: "See what Joyagoo shipping costs include, why parcel prices vary, and how product, warehouse, storage, QC and international fees add up.",
       related: "joyagoo-exchange-rate-currency-conversion",
     },
     {
