@@ -1,6 +1,7 @@
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AnalyticsEvents } from "./components/AnalyticsEvents";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,10 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cssbuychina.net"),
   title: {
-    default: "CSSBuy Spreadsheet 2026 – Checked Product Finds",
+    default: "CSSBuy Spreadsheet 2026: 30 Checked Product Links",
     template: "%s | CSSBuy China",
   },
-  description: "Browse checked CSSBuy spreadsheet finds by category, recorded CNY value and product link. Compare sizing, warehouse QC, ordering steps and parcel costs.",
+  description: "Browse 30 current CSSBuy spreadsheet finds with matching product links, USD estimates, category filters and practical warehouse QC checks.",
   applicationName: "CSSBuy China Spreadsheet",
   keywords: ["CSSBuy spreadsheet", "CSSBuy finds", "CSSBuy shoes", "CSSBuy QC", "China shopping spreadsheet"],
   authors: [{ name: "CSSBuy China Editorial" }],
@@ -40,13 +41,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "CSSBuy China",
-    title: "CSSBuy Spreadsheet 2026 – Checked Product Finds",
-    description: "A category-first CSSBuy spreadsheet index with checked product links and research-led guidance on ordering, warehouse QC, returns, storage, and parcel cost.",
+    title: "CSSBuy Spreadsheet 2026: 30 Checked Product Links",
+    description: "Browse 30 current CSSBuy spreadsheet finds with matching product links, category filters, USD estimates and warehouse QC guidance.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSSBuy Spreadsheet 2026 – Checked Product Finds",
-    description: "A category-first CSSBuy spreadsheet index with checked product links and fact-based order and parcel guidance.",
+    title: "CSSBuy Spreadsheet 2026: 30 Checked Product Links",
+    description: "Browse 30 current CSSBuy spreadsheet finds with matching product links, category filters and warehouse QC guidance.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -70,7 +71,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             gtag('config', 'G-QY8MM7VZV2');
           `}
         </Script>
-{children}</body>
+        <AnalyticsEvents />
+        {children}
+      </body>
     </html>
   );
 }

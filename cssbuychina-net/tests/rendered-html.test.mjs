@@ -38,6 +38,10 @@ function tagWith(html, tag, attribute, value) {
 test("renders production metadata without preview markers", async () => {
   const html = await fetchHtml("/");
   assert.doesNotMatch(html, developmentPreviewMeta);
+  assert.ok(html.includes("<title>CSSBuy Spreadsheet 2026: 30 Checked Product Links</title>"));
+  assert.ok(tagWith(html, "meta", "name", "description").includes("Browse 30 current CSSBuy spreadsheet finds"));
+  assert.ok(html.includes('class="footer-top" data-nosnippet="true"'));
+  assert.ok(!html.includes("SEO Articles"));
 });
 
 test("renders the category article with aligned search and social metadata", async () => {
@@ -134,8 +138,11 @@ test("renders all 30 product detail pages with current main-store shopping links
   for (const id of ids) {
     const html = await fetchHtml(`/product/${id}`);
     assert.ok(html.includes('class="detail-cta" href="https://cnbuycha.com/'));
+    assert.ok(html.includes('data-track-event="product_outbound_click"'));
     assert.ok(html.includes("Recorded product value: ¥"));
     assert.ok(html.includes("PRODUCT ROUTE CHECKED"));
+    assert.ok(html.includes('"@type":"BreadcrumbList"'));
+    assert.match(tagWith(html, "meta", "property", "og:image"), /content="https:\/\//);
   }
 });
 
@@ -143,18 +150,32 @@ test("links product card images, titles, and buttons to matching main-store prod
   for (const path of ["/", "/products", "/de/products"]) {
     const html = await fetchHtml(path);
     assert.ok(
-      html.includes('class="product-image" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow"'),
+      html.includes('class="product-image" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow" data-track-event="product_outbound_click"'),
       `${path} should link the product image directly to the main-store product`,
     );
     assert.ok(
-      html.includes('<h3><a href="https://cnbuycha.com/shoes/1011.html" rel="nofollow">Nike P6000&amp;Air Max 96</a></h3>'),
+      /<h3><a href="https:\/\/cnbuycha\.com\/shoes\/1011\.html"[^>]*data-track-event="product_outbound_click"[^>]*>Nike P6000&amp;Air Max 96<\/a><\/h3>/.test(html),
       `${path} should link the product title directly to the main-store product`,
     );
     assert.ok(
-      html.includes('class="product-button" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow"'),
+      html.includes('class="product-button" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow" data-track-event="product_outbound_click"'),
       `${path} should keep the product button on the same destination`,
     );
   }
+});
+
+test("publishes CTR-focused catalog metadata and analytics hooks", async () => {
+  const productsHtml = await fetchHtml("/products");
+  const categoriesHtml = await fetchHtml("/categories");
+  const articlesHtml = await fetchHtml("/articles");
+
+  assert.ok(productsHtml.includes("<title>CSSBuy Finds 2026: Shoes, Hoodies, Jerseys &amp; More | CSSBuy China</title>"));
+  assert.ok(tagWith(productsHtml, "meta", "name", "description").includes("Search 30 current CSSBuy finds"));
+  assert.ok(productsHtml.includes("PRODUCT ROUTES REVIEWED SEPTEMBER 1, 2026"));
+  assert.ok(productsHtml.includes('data-track-event="product_outbound_click"'));
+  assert.ok(categoriesHtml.includes('data-track-event="category_outbound_click"'));
+  assert.ok(articlesHtml.includes("<title>CSSBuy Buying Guides 2026: Product Links, QC &amp; Shipping</title>"));
+  assert.ok(!articlesHtml.includes("SEO knowledge library"));
 });
 
 test("publishes an indexable robots file and an 81-URL sitemap", async () => {
@@ -165,6 +186,8 @@ test("publishes an indexable robots file and an 81-URL sitemap", async () => {
   assert.equal((sitemap.match(/<url>/g) ?? []).length, 81);
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-weidian-finds-options-seller-signals"));
   assert.equal((sitemap.match(/\/product\//g) ?? []).length, 30);
+  assert.ok(sitemap.includes("<loc>https://cssbuychina.net/product/3402</loc><lastmod>2026-09-01</lastmod>"));
+  assert.ok(sitemap.includes("<loc>https://cssbuychina.net/articles</loc><lastmod>2026-09-01</lastmod>"));
   assert.ok(sitemap.includes("<loc>https://cssbuychina.net/pt-br</loc>"));
   assert.ok(!sitemap.includes("<loc>https://cssbuychina.net/pt-br/</loc>"));
 });

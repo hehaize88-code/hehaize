@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "All CSSBuy Spreadsheet Finds 2026",
-  description: "Search and filter checked CSSBuy spreadsheet finds by category, recorded CNY value, and product name, with individual research pages and matching product routes.",
+  title: "CSSBuy Finds 2026: Shoes, Hoodies, Jerseys & More",
+  description: "Search 30 current CSSBuy finds by product or category. Compare USD estimates and open each matching shoes, clothing, jersey or accessory link directly.",
   alternates: { canonical: "/products" },
 };
 

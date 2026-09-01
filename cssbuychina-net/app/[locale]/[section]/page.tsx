@@ -9,10 +9,10 @@ const sections = ["products", "categories", "how-it-works", "guides", "articles"
 type Section = (typeof sections)[number];
 
 const sectionLabels = {
-  en: { products: "Product index", categories: "Category index", how: "Four-step workflow", guides: "Practical guides", articles: "SEO knowledge library", faq: "Clear answers" },
-  "pt-br": { products: "Índice de produtos", categories: "Índice de categorias", how: "Processo em quatro etapas", guides: "Guias práticos", articles: "Biblioteca de artigos SEO", faq: "Respostas claras" },
-  de: { products: "Produktindex", categories: "Kategorieindex", how: "Ablauf in vier Schritten", guides: "Praktische Ratgeber", articles: "SEO-Wissensbibliothek", faq: "Klare Antworten" },
-  es: { products: "Índice de productos", categories: "Índice de categorías", how: "Proceso en cuatro pasos", guides: "Guías prácticas", articles: "Biblioteca de artículos SEO", faq: "Respuestas claras" },
+  en: { products: "Product index", categories: "Category index", how: "Four-step workflow", guides: "Practical guides", articles: "Buyer research library", faq: "Clear answers" },
+  "pt-br": { products: "Índice de produtos", categories: "Índice de categorias", how: "Processo em quatro etapas", guides: "Guias práticos", articles: "Biblioteca de compras", faq: "Respostas claras" },
+  de: { products: "Produktindex", categories: "Kategorieindex", how: "Ablauf in vier Schritten", guides: "Praktische Ratgeber", articles: "Kaufratgeber-Bibliothek", faq: "Klare Antworten" },
+  es: { products: "Índice de productos", categories: "Índice de categorías", how: "Proceso en cuatro pasos", guides: "Guías prácticas", articles: "Biblioteca de compras", faq: "Respuestas claras" },
 } as const;
 
 const sectionMeta = {
@@ -155,7 +155,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 function Categories({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
   const categoryCopy = localizedCategories[locale];
-  return <><section className="inner-hero categories-hero"><p className="eyebrow"><span /> {sectionLabels[locale].categories}</p><h1>{copy.categories.title}</h1><p>{copy.categories.description}</p></section><section className="section categories-page"><div className="category-grid">{categories.map((category, index) => <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug}><span className="category-number">0{index + 1}</span><span className="category-symbol" aria-hidden="true">{category.symbol}</span><span className="category-text"><b>{categoryCopy[category.slug].name}</b><small>{categoryCopy[category.slug].searchLabel}</small></span><span aria-hidden="true">↗</span></a>)}</div></section></>;
+  return <><section className="inner-hero categories-hero"><p className="eyebrow"><span /> {sectionLabels[locale].categories}</p><h1>{copy.categories.title}</h1><p>{copy.categories.description}</p></section><section className="section categories-page"><div className="category-grid">{categories.map((category, index) => <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug} data-track-event="category_outbound_click" data-item-category={category.slug} data-click-area="localized-category-card"><span className="category-number">0{index + 1}</span><span className="category-symbol" aria-hidden="true">{category.symbol}</span><span className="category-text"><b>{categoryCopy[category.slug].name}</b><small>{categoryCopy[category.slug].searchLabel}</small></span><span aria-hidden="true">↗</span></a>)}</div></section></>;
 }
 
 function Products({ locale }: { locale: SiteLocale }) {

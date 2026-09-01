@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
+import { trackAnalyticsEvent } from "./components/AnalyticsEvents";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { localizedCategories, localeCopy, localePrefix, SiteLocale } from "./i18n";
 import { categories, products } from "./site-data";
@@ -45,6 +46,11 @@ function SearchBox({ compact = false, locale = "en" }: { compact?: boolean; loca
     event.preventDefault();
     const value = query.trim();
     if (!value) return;
+    trackAnalyticsEvent("store_search_submit", {
+      search_location: compact ? "footer" : "hero",
+      query_length: value.length,
+      site_locale: locale,
+    });
     window.location.href = `${STORE_SEARCH}${encodeURIComponent(value)}`;
   }
 
@@ -77,6 +83,15 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
     () => products.filter((product) => activeCategory === "all" || product.category === activeCategory).slice(0, 8),
     [activeCategory],
   );
+
+  function selectCategory(category: string) {
+    setActiveCategory(category);
+    trackAnalyticsEvent("product_filter_use", {
+      filter_category: category,
+      filter_location: "homepage",
+      site_locale: locale,
+    });
+  }
 
   return (
     <main className="home-page">
@@ -122,26 +137,32 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           <div className="quick-searches" aria-label={copy.hero.popular}>
             <span>{copy.hero.popular}</span>
             {copy.hero.terms.map((term) => (
-              <a key={term} href={`${STORE_SEARCH}${encodeURIComponent(term)}`}>{term}</a>
+              <a
+                key={term}
+                href={`${STORE_SEARCH}${encodeURIComponent(term)}`}
+                data-track-event="store_search_submit"
+                data-search-location="popular-term"
+                data-click-area="quick-search"
+              >{term}</a>
             ))}
           </div>
           <div className="hero-notes">
             <div><strong>08</strong><span>{copy.hero.stats[0]}</span></div>
             <div><strong>{products.length}</strong><span>{copy.hero.stats[1]}</span></div>
-            <div><strong>Aug 08</strong><span>{copy.hero.stats[2]}</span></div>
+            <div><strong>{products[0].checked}</strong><span>{copy.hero.stats[2]}</span></div>
           </div>
         </div>
 
         <aside className="hero-collage" aria-label="A preview of recently checked product finds">
-          <a className="collage-card collage-card--main" href={products[0].storeUrl} rel="nofollow">
+          <a className="collage-card collage-card--main" href={products[0].storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={products[0].id} data-item-name={products[0].name} data-item-category={products[0].category} data-click-area="hero-collage-main">
             <img src={products[0].image} alt={products[0].name} fetchPriority="high" />
             <span><b>01</b>{products[0].name}</span>
           </a>
-          <a className="collage-card collage-card--top" href={products[3].storeUrl} rel="nofollow">
+          <a className="collage-card collage-card--top" href={products[3].storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={products[3].id} data-item-name={products[3].name} data-item-category={products[3].category} data-click-area="hero-collage-top">
             <img src={products[3].image} alt={products[3].name} fetchPriority="high" />
             <span><b>02</b>{copy.collage.second}</span>
           </a>
-          <a className="collage-card collage-card--bottom" href={products[9].storeUrl} rel="nofollow">
+          <a className="collage-card collage-card--bottom" href={products[9].storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={products[9].id} data-item-name={products[9].name} data-item-category={products[9].category} data-click-area="hero-collage-bottom">
             <img src={products[9].image} alt={products[9].name} />
             <span><b>03</b>{copy.collage.third}</span>
           </a>
@@ -164,7 +185,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
         </div>
         <div className="category-grid">
           {categories.map((category, index) => (
-            <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug}>
+            <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug} data-track-event="category_outbound_click" data-item-category={category.slug} data-click-area="homepage-category-card">
               <span className="category-number">0{index + 1}</span>
               <span className="category-symbol" aria-hidden="true">{category.symbol}</span>
               <span className="category-text">
@@ -191,12 +212,12 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
         </div>
 
         <div className="filter-row" role="group" aria-label="Filter products by category">
-          <button className={activeCategory === "all" ? "active" : ""} onClick={() => setActiveCategory("all")}>{copy.finds.all}</button>
+          <button className={activeCategory === "all" ? "active" : ""} onClick={() => selectCategory("all")}>{copy.finds.all}</button>
           {categories.slice(0, 6).map((category) => (
             <button
               className={activeCategory === category.slug ? "active" : ""}
               key={category.slug}
-              onClick={() => setActiveCategory(category.slug)}
+              onClick={() => selectCategory(category.slug)}
             >
               {categoryCopy[category.slug].name}
             </button>
@@ -206,7 +227,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
         <div className="product-grid">
           {visibleProducts.map((product) => (
             <article className="product-card" key={product.id}>
-              <a className="product-image" href={product.storeUrl} rel="nofollow">
+              <a className="product-image" href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-image">
                 <img src={product.image} alt={product.name} loading="lazy" />
                 <span className="product-check">{copy.finds.checked}</span>
               </a>
@@ -215,13 +236,13 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
                   <span>{categoryCopy[product.category].name}</span>
                   <span>{product.checked}</span>
                 </div>
-                <h3><a href={product.storeUrl} rel="nofollow">{product.name}</a></h3>
+                <h3><a href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-title">{product.name}</a></h3>
                 <div className="product-footer">
                   <div className="price">
                     <strong>≈ ${product.usd}</strong>
                     <small>{copy.finds.source} ¥{product.cny}</small>
                   </div>
-                  <a className="product-button" href={product.storeUrl} rel="nofollow">{copy.finds.open} <ArrowIcon /></a>
+                  <a className="product-button" href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-button">{copy.finds.open} <ArrowIcon /></a>
                 </div>
               </div>
             </article>
@@ -285,7 +306,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
       </section>
 
       <footer>
-        <div className="footer-top">
+        <div className="footer-top" data-nosnippet>
           <a className="brand brand--light" href="#top">
             <img className="brand-logo" src="/cssbuy-logo.png" alt="CSSBuy" />
             <span className="brand-tagline">{copy.brandTagline}</span>
@@ -293,7 +314,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           <p>{copy.footer.copy}</p>
           <SearchBox compact locale={locale} />
         </div>
-        <div className="footer-bottom">
+        <div className="footer-bottom" data-nosnippet>
           <span>{copy.footer.copyright}</span>
           <div>{copy.footer.links.map(([label, href]) => <a href={href} key={href}>{label}</a>)}</div>
         </div>

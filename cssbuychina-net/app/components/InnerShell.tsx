@@ -2,6 +2,7 @@
 
 import { FormEvent, ReactNode, useState } from "react";
 import { localeCopy, localePrefix, SiteLocale } from "../i18n";
+import { trackAnalyticsEvent } from "./AnalyticsEvents";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function InnerShell({ children, locale = "en" }: { children: ReactNode; locale?: SiteLocale }) {
@@ -14,6 +15,11 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
     event.preventDefault();
     const value = query.trim();
     if (!value) return;
+    trackAnalyticsEvent("store_search_submit", {
+      search_location: "footer",
+      query_length: value.length,
+      site_locale: locale,
+    });
     window.location.href = `https://cnbuycha.com/AllProducts/?q=${encodeURIComponent(value)}`;
   }
 
@@ -42,7 +48,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
       </header>
       {children}
       <footer>
-        <div className="footer-top">
+        <div className="footer-top" data-nosnippet>
           <a className="brand brand--light" href={prefix || "/"}>
             <img className="brand-logo" src="/cssbuy-logo.png" alt="CSSBuy" />
             <span className="brand-tagline">{copy.brandTagline}</span>
@@ -55,7 +61,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
             <button type="submit">{copy.hero.search} <span aria-hidden="true">↗</span></button>
           </form>
         </div>
-        <div className="footer-bottom">
+        <div className="footer-bottom" data-nosnippet>
           <span>{copy.footer.copyright}</span>
           <div>{copy.footer.links.map(([label, href]) => <a href={href} key={href}>{label}</a>)}</div>
         </div>

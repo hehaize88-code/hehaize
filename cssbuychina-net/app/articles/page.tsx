@@ -3,8 +3,8 @@ import { InnerShell } from "../components/InnerShell";
 import { articles } from "./article-data";
 
 export const metadata: Metadata = {
-  title: { absolute: "CSSBuy Articles 2026: Search, QC & Shipping" },
-  description: "Read fact-checked CSSBuy articles about keyword and image-assisted product search, spreadsheet links, category checks, warehouse QC and parcel planning.",
+  title: { absolute: "CSSBuy Buying Guides 2026: Product Links, QC & Shipping" },
+  description: "Compare CSSBuy product links, spreadsheet categories, warehouse QC photos and parcel costs with practical guides for first-order shoppers.",
   alternates: { canonical: "/articles" },
 };
 
@@ -12,7 +12,7 @@ export default function ArticlesPage() {
   return (
     <InnerShell>
       <section className="inner-hero articles-hero">
-        <p className="eyebrow"><span /> SEO knowledge library</p>
+        <p className="eyebrow"><span /> Buyer research library</p>
         <h1>CSSBuy articles built around real shopper questions.</h1>
         <p>Long-form, fact-first reading based on CSSBuy's public workflow and policies—without invented fees, ratings, promises, or customer stories.</p>
       </section>

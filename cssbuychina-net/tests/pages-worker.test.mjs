@@ -56,10 +56,9 @@ test("serves production pages and crawler directives", async () => {
   const externalHrefs = [
     ...html.matchAll(/href=["'](https?:\/\/[^"']+)["']/g),
   ].map((match) => new URL(match[1]).hostname);
-  assert.deepEqual(
-    [...new Set(externalHrefs.filter((hostname) => hostname !== "cssbuychina.net"))],
-    ["cnbuycha.com", "fonts.googleapis.com"],
-  );
+  const externalHosts = [...new Set(externalHrefs.filter((hostname) => hostname !== "cssbuychina.net"))];
+  assert.ok(externalHosts.includes("cnbuycha.com"));
+  assert.deepEqual(externalHosts.filter((hostname) => hostname !== "fonts.googleapis.com"), ["cnbuycha.com"]);
 
   const assetPaths = [
     ...html.matchAll(/(?:src|href)=["'](\/assets\/[^"']+)["']/g),

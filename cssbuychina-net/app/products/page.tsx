@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { trackAnalyticsEvent } from "../components/AnalyticsEvents";
 import { InnerShell } from "../components/InnerShell";
 import { ProductCard } from "../components/ProductCard";
 import { categories, products } from "../site-data";
@@ -18,6 +19,14 @@ export default function ProductsPage() {
     });
   }, [category, query]);
 
+  function selectCategory(value: string) {
+    setCategory(value);
+    trackAnalyticsEvent("product_filter_use", {
+      filter_category: value,
+      filter_location: "product-index",
+    });
+  }
+
   return (
     <InnerShell>
       <section className="inner-hero products-hero">
@@ -33,16 +42,16 @@ export default function ProductsPage() {
       <section className="catalog-layout">
         <aside className="catalog-sidebar">
           <p>FILTER / CATEGORY</p>
-          <button className={category === "all" ? "active" : ""} onClick={() => setCategory("all")}><span>All finds</span><b>{products.length}</b></button>
+          <button className={category === "all" ? "active" : ""} onClick={() => selectCategory("all")}><span>All finds</span><b>{products.length}</b></button>
           {categories.map((item) => {
             const count = products.filter((product) => product.category === item.slug).length;
-            return <button className={category === item.slug ? "active" : ""} key={item.slug} onClick={() => setCategory(item.slug)}><span>{item.name}</span><b>{count}</b></button>;
+            return <button className={category === item.slug ? "active" : ""} key={item.slug} onClick={() => selectCategory(item.slug)}><span>{item.name}</span><b>{count}</b></button>;
           })}
         </aside>
         <div>
-          <div className="catalog-topline"><span>PRODUCT ROUTES REVIEWED AUGUST 8–10, 2026</span><span>USD VALUES ARE DISPLAY ESTIMATES</span></div>
+          <div className="catalog-topline"><span>PRODUCT ROUTES REVIEWED SEPTEMBER 1, 2026</span><span>USD VALUES ARE DISPLAY ESTIMATES</span></div>
           {filtered.length ? <div className="product-grid catalog-grid">{filtered.map((product) => <ProductCard product={product} key={product.id} />)}</div> : (
-            <div className="empty-state"><b>No matching preview find.</b><p>Try another term or open the live store search for a wider selection.</p><a href={`https://cnbuycha.com/AllProducts/?q=${encodeURIComponent(query)}`}>Search the full catalog ↗</a></div>
+            <div className="empty-state"><b>No matching preview find.</b><p>Try another term or open the live store search for a wider selection.</p><a href={`https://cnbuycha.com/AllProducts/?q=${encodeURIComponent(query)}`} data-track-event="store_search_submit" data-search-location="product-index-empty" data-click-area="empty-state">Search the full catalog ↗</a></div>
           )}
         </div>
       </section>

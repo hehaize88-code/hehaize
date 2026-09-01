@@ -23,7 +23,7 @@ export default function CategoriesPage() {
         </div>
         <div className="category-grid">
           {categories.map((category, index) => (
-            <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug}>
+            <a className={`category-card tone-${(index % 4) + 1}`} href={category.storeUrl} rel="nofollow" key={category.slug} data-track-event="category_outbound_click" data-item-category={category.slug} data-click-area="category-index-card">
               <span className="category-number">0{index + 1}</span>
               <span className="category-symbol" aria-hidden="true">{category.symbol}</span>
               <span className="category-text"><b>{category.name}</b><small>{category.searchLabel}</small></span>

@@ -64,7 +64,7 @@ export const localeCopy = {
   en: {
     brandTagline: "Independent CSSBuy guide",
     searchLabel: "Search product finds",
-    nav: { all: "All finds", categories: "Categories", how: "How it works", guides: "Guides", articles: "SEO Articles", faq: "FAQ", browse: "Browse finds" },
+    nav: { all: "All finds", categories: "Categories", how: "How it works", guides: "Guides", articles: "Buying Guides", faq: "FAQ", browse: "Browse finds" },
     hero: {
       eyebrow: "Fact-checked CSSBuy find edit · 2026",
       title: "A clearer way to use a",
@@ -91,7 +91,7 @@ export const localeCopy = {
   "pt-br": {
     brandTagline: "Guia CSSBuy independente",
     searchLabel: "Pesquisar produtos",
-    nav: { all: "Todos os achados", categories: "Categorias", how: "Como funciona", guides: "Guias", articles: "Artigos SEO", faq: "Dúvidas", browse: "Ver achados" },
+    nav: { all: "Todos os achados", categories: "Categorias", how: "Como funciona", guides: "Guias", articles: "Guias de compra", faq: "Dúvidas", browse: "Ver achados" },
     hero: {
       eyebrow: "Seleção CSSBuy verificada · 2026",
       title: "Uma forma mais clara de usar a",
@@ -118,7 +118,7 @@ export const localeCopy = {
   de: {
     brandTagline: "Unabhängiger CSSBuy-Ratgeber",
     searchLabel: "Produktfunde suchen",
-    nav: { all: "Alle Funde", categories: "Kategorien", how: "So funktioniert es", guides: "Ratgeber", articles: "SEO-Artikel", faq: "FAQ", browse: "Funde ansehen" },
+    nav: { all: "Alle Funde", categories: "Kategorien", how: "So funktioniert es", guides: "Ratgeber", articles: "Kaufratgeber", faq: "FAQ", browse: "Funde ansehen" },
     hero: {
       eyebrow: "Geprüfte CSSBuy-Auswahl · 2026",
       title: "Der klarere Weg durch die",
@@ -145,7 +145,7 @@ export const localeCopy = {
   es: {
     brandTagline: "Guía CSSBuy independiente",
     searchLabel: "Buscar productos",
-    nav: { all: "Todos los hallazgos", categories: "Categorías", how: "Cómo funciona", guides: "Guías", articles: "Artículos SEO", faq: "Preguntas", browse: "Ver hallazgos" },
+    nav: { all: "Todos los hallazgos", categories: "Categorías", how: "Cómo funciona", guides: "Guías", articles: "Guías de compra", faq: "Preguntas", browse: "Ver hallazgos" },
     hero: {
       eyebrow: "Selección CSSBuy verificada · 2026",
       title: "Una forma más clara de usar la",
