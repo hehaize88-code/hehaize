@@ -13,8 +13,6 @@ import {
 import {
   categories,
   categoryInternalPath,
-  productInternalPath,
-  products,
 } from "./site-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -48,10 +46,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       })),
     ),
-    ...products.map((product) => ({
-      url: absoluteUrl(productInternalPath(product.id)),
-      lastModified: "2026-08-10",
-    })),
     ...categories.map((category) => ({
       url: absoluteUrl(categoryInternalPath(category.slug)),
       lastModified: "2026-08-10",

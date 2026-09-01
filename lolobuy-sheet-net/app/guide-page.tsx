@@ -87,7 +87,7 @@ const pageIntro: Record<
   },
   shipping: {
     eyebrow: "International parcel planning",
-    title: "Understand what can change the shipping total",
+    title: "LoloBuy Shipping Cost: What Changes the Final Price",
     intro:
       "Destination, route restrictions, chargeable weight, parcel dimensions and packing choices can all affect a shipment. Plan with realistic inputs instead of a product-price guess.",
   },

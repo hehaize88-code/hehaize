@@ -54,7 +54,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   const checks = [
     ["/es", "es", "Hoja LoloBuy 2026", "/es/products"],
     ["/de/qc-guide", "de", "Praktische QC-Checkliste", "/de/products"],
-    ["/fr/shipping", "fr", "Comprenez ce qui peut modifier", "/fr/products"],
+    ["/fr/shipping", "fr", "Coût de livraison LoloBuy", "/fr/products"],
     [
       "/it/articles",
       "it",
@@ -87,7 +87,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 113 canonical sitemap URLs with language alternates", async () => {
+test("publishes 101 final-site sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -96,7 +96,7 @@ test("publishes 113 canonical sitemap URLs with language alternates", async () =
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 113);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 101);
   assert.match(xml, /lolobuy-qc-color-lighting-errors/);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
@@ -104,10 +104,11 @@ test("publishes 113 canonical sitemap URLs with language alternates", async () =
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 113);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 101);
+  assert.doesNotMatch(xml, /<loc>https:\/\/lolobuy-sheet\.net\/products\/\d+<\/loc>/);
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-07-29<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-09-01<\/lastmod>/,
   );
   assert.match(
     xml,
@@ -130,7 +131,6 @@ test("publishes 113 canonical sitemap URLs with language alternates", async () =
     /<loc>https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-bag-qc-guide<\/loc>[\s\S]*?<lastmod>2026-08-10<\/lastmod>/,
   );
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es\/articles\/lolobuy-bag-qc-guide<\/loc>/);
-  assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/products\/3359<\/loc>/);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/categories\/shoes<\/loc>/);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/about<\/loc>/);
   assert.match(

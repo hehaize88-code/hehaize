@@ -39,22 +39,85 @@ const productLinkRewriter = {
 
       const destination = productDestination(resolved.pathname);
       if (destination) {
+        const sourceId = resolved.pathname.match(/^\/products\/(\d+)\/?$/)?.[1];
+        const destinationId = new URL(destination).pathname.match(
+          /^\/AllProducts\/(\d+)\.html$/,
+        )?.[1];
         element.setAttribute("href", destination);
         element.setAttribute("target", "_blank");
         element.setAttribute("rel", "sponsored noopener noreferrer");
+        element.setAttribute("data-product-link", "true");
+        if (sourceId) element.setAttribute("data-product-source-id", sourceId);
+        if (destinationId) {
+          element.setAttribute("data-product-destination-id", destinationId);
+        }
       }
     } catch {}
   },
 };
 
 const GA4_SNIPPET =
-  '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
+  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20260901-clicks"></script>';
+
+const GA4_INIT_SCRIPT = String.raw`
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+window.gtag('js', new Date());
+window.gtag('config', 'G-QY8MM7VZV2');
+
+document.addEventListener('click', function (event) {
+  var target = event.target;
+  var link = target && target.closest ? target.closest('a[href]') : null;
+  if (!link) return;
+
+  try {
+    var url = new URL(link.href, window.location.href);
+    if (url.hostname !== 'cnbuycha.com' && url.hostname !== 'www.cnbuycha.com') return;
+
+    var productMatch = url.pathname.match(/^\/AllProducts\/(\d+)\.html$/);
+    var eventName = productMatch ? 'product_click' : 'catalog_click';
+    var parameters = {
+      link_url: url.href,
+      link_domain: url.hostname,
+      link_text: (link.getAttribute('aria-label') || link.textContent || '').trim().slice(0, 120),
+      link_location: window.location.pathname,
+      outbound: true,
+      transport_type: 'beacon'
+    };
+
+    if (productMatch) {
+      parameters.product_id = productMatch[1];
+      parameters.source_product_id = link.dataset.productSourceId ||
+        (window.location.pathname.match(/^\/products\/(\d+)\/?$/) || [])[1] || '';
+    }
+
+    window.gtag('event', eventName, parameters);
+  } catch (error) {}
+}, true);
+
+document.addEventListener('submit', function (event) {
+  var form = event.target;
+  if (!form || !form.action) return;
+
+  try {
+    var url = new URL(form.action, window.location.href);
+    if (url.hostname !== 'cnbuycha.com' && url.hostname !== 'www.cnbuycha.com') return;
+    var data = new FormData(form);
+    window.gtag('event', 'search', {
+      search_term: String(data.get('keywords') || '').trim(),
+      link_url: url.href,
+      link_location: window.location.pathname,
+      transport_type: 'beacon'
+    });
+  } catch (error) {}
+}, true);
+`.trim();
 
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
   if (url.pathname === "/ga4-init.js") {
     return new Response(
-      "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-QY8MM7VZV2');",
+      GA4_INIT_SCRIPT,
       {
         headers: {
           "content-type": "application/javascript; charset=utf-8",

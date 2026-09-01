@@ -17,7 +17,6 @@ const contentDates = JSON.parse(
 const corePaths = Object.keys(contentDates.core);
 const articleSlugs = Object.keys(contentDates.articles);
 const trustPaths = Object.keys(contentDates.trust);
-const productIds = [3359, 3369, 3371, 3357, 3367, 3366, 3368, 3372, 3356, 3355, 3353, 3351];
 const categorySlugs = ["shoes", "hoodies", "jackets", "accessories"];
 
 function localizedPath(locale, pathname) {
@@ -53,11 +52,6 @@ const articleEntries = articleSlugs.flatMap((slug) =>
     lastModified: contentDates.articles[slug].modified,
   })),
 );
-const productEntries = productIds.map((id) => ({
-  location: absolute(`/products/${id}`),
-  alternates: "",
-  lastModified: "2026-08-10",
-}));
 const categoryEntries = categorySlugs.map((slug) => ({
   location: absolute(`/categories/${slug}`),
   alternates: "",
@@ -71,7 +65,6 @@ const trustEntries = trustPaths.map((pathname) => ({
 const entries = [
   ...localizedEntries,
   ...articleEntries,
-  ...productEntries,
   ...categoryEntries,
   ...trustEntries,
 ];

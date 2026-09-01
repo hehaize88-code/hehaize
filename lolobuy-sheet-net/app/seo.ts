@@ -42,9 +42,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/products": {
     en: {
-      title: "LoloBuy Products and Main-Site Search",
+      title: "LoloBuy Spreadsheet Products 2026: Matched Product Links",
       description:
-        "Search the main product catalog with your exact keyword and browse LoloBuy product finds with matched images and item pages.",
+        "Browse LoloBuy spreadsheet product finds with matched images and direct item links. Search the main catalog and verify the live variant before ordering.",
     },
     es: {
       title: "Productos LoloBuy y búsqueda en el catálogo",
@@ -96,9 +96,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/qc-guide": {
     en: {
-      title: "LoloBuy QC Photos and Warehouse Inspection Guide",
+      title: "LoloBuy QC Photos Checklist 2026: What to Check",
       description:
-        "Use a fact-checked LoloBuy QC checklist for item identity, variants, measurements, visible condition and the limits of warehouse photos.",
+        "Use this LoloBuy QC photos checklist to verify item identity, selected variant, measurements and visible condition before parcel submission.",
     },
     es: {
       title: "Guía de fotos QC e inspección de LoloBuy",
@@ -123,9 +123,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/shipping": {
     en: {
-      title: "LoloBuy Shipping Cost and Parcel Planning Guide",
+      title: "LoloBuy Shipping Cost 2026: Weight, Rates & Parcel Guide",
       description:
-        "Understand LoloBuy shipping cost variables, route restrictions, actual and volumetric weight, consolidation and packing choices.",
+        "Estimate LoloBuy shipping by destination, actual versus volumetric weight, parcel size and packing. See a worked example and a checklist before paying.",
     },
     es: {
       title: "Coste de envío LoloBuy y planificación del paquete",
@@ -150,7 +150,7 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/articles": {
     en: {
-      title: "LoloBuy Buying Guides: Spreadsheet, QC and Shipping",
+      title: "LoloBuy Buying Guides 2026: Spreadsheet, QC & Shipping",
       description:
         "Read fact-checked LoloBuy spreadsheet, QC and shipping guides written around real buying decisions.",
     },
@@ -177,9 +177,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/faq": {
     en: {
-      title: "LoloBuy FAQ: Spreadsheet, QC, Storage and Shipping",
+      title: "LoloBuy FAQ 2026: Safety, QC, Storage & Shipping",
       description:
-        "Fact-checked answers about LoloBuy spreadsheet links, ordering, QC photos, 90-day storage, consolidation and international shipping.",
+        "Get clear answers about LoloBuy spreadsheet links, ordering, QC photos, 90-day storage, parcel consolidation and international shipping.",
     },
     es: {
       title: "FAQ LoloBuy: hoja, QC, almacén y envío",
@@ -204,9 +204,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/how-it-works": {
     en: {
-      title: "How the LoloBuy Product-Finding Flow Works",
+      title: "How to Use LoloBuy in 2026: Order, QC & Shipping Steps",
       description:
-        "Follow a product from matched catalog page to listing review, source preservation, warehouse QC and parcel planning.",
+        "Follow the LoloBuy buying flow from a matched product link and order review to warehouse QC, parcel planning and international shipping.",
     },
     es: {
       title: "Cómo funciona el proceso de búsqueda LoloBuy",
@@ -279,7 +279,7 @@ export function coreMetadata(locale: Locale, path: CorePath): Metadata {
   const socialImage = coreSocialImages[path];
 
   return {
-    title: path === "/" ? { absolute: copy.title } : copy.title,
+    title: { absolute: copy.title },
     description: copy.description,
     alternates: {
       canonical: absoluteUrl(canonicalPath),
