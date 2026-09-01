@@ -94,6 +94,19 @@ if (
   throw new Error("Cloudflare Pages static assets must be forwarded through env.ASSETS");
 }
 
+const productRedirectResponse = await worker.default.fetch(
+  new Request("https://lolobuy-sheet.com/products/snow-ski-goggles"),
+  {},
+  {},
+);
+if (
+  productRedirectResponse.status !== 302 ||
+  productRedirectResponse.headers.get("location") !==
+    "https://www.cnbuycha.com/AllProducts/3372.html"
+) {
+  throw new Error("Product detail routes must redirect to the matching main-site product");
+}
+
 const homeResponse = await worker.default.fetch(
   new Request("https://example.com/"),
   {
