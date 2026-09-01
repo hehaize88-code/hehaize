@@ -201,7 +201,7 @@ test("homepage keeps its English title and H1 while fixing catalogue mappings", 
   const html = await (await request("/" )).text();
   assert.match(
     html,
-    /<title>Joyagoo Spreadsheet 2026 \| Products, QC &amp; Shipping Guides<\/title>/,
+    /<title>Joyagoo Spreadsheet 2026: 36 Checked Product Links<\/title>/,
   );
   assert.match(
     html,
@@ -212,16 +212,16 @@ test("homepage keeps its English title and H1 while fixing catalogue mappings", 
   assert.match(html, /"logo":\{"@type":"ImageObject"/);
 
   const expectedCards = [
-    ["numeris-rick-owens-high-tops-3367", "3367.webp", "NUMERIS / Rick Owens High-Top Shoes"],
-    ["off-white-hoodies-3369", "3369.webp", "Off-White Hoodies — 39 Styles"],
-    ["designer-hats-3373", "3373.jpg", "Designer Hats — Multiple Brands"],
-    ["samsung-galaxy-watch8-3357", "3357.webp", "Samsung Galaxy Watch8"],
+    ["numeris-rick-owens-high-tops-3367", "pcitem1809160355", "MM 07 Flat Casual Non-Slip Shoes"],
+    ["off-white-hoodies-3369", "open1623462477", "Autumn/Winter Fashion Sweater"],
+    ["designer-hats-3373", "open1823774813", "Men's Twill Silk Tie"],
+    ["samsung-galaxy-watch8-3357", "wdseller1778358520", "Galaxy Watch Ultra 8 Smartwatch"],
   ];
   for (const [slug, image, label] of expectedCards) {
     assert.match(
       html,
       new RegExp(
-        `href="/product/${slug}/"[\\s\\S]{0,700}src="/products/${image}"[\\s\\S]{0,500}<span>${label}</span>`,
+        `href="/product/${slug}/"[\\s\\S]{0,700}src="https://si\\.geilicdn\\.com/${image}[^\"]+"[\\s\\S]{0,500}<span>${label}</span>`,
       ),
       slug,
     );
@@ -291,7 +291,7 @@ test("high-intent research pages use concise search snippets and localized relat
   );
 });
 
-test("spreadsheet images are sized, lazy-loaded and no longer use the large GIF", async () => {
+test("spreadsheet images use checked listing media and stay lazy-loaded", async () => {
   const html = await (await request("/spreadsheet/")).text();
   const productImages = [
     ...html.matchAll(/<div class="product-image">\s*(<img[^>]+>)/gi),
@@ -302,8 +302,8 @@ test("spreadsheet images are sized, lazy-loaded and no longer use the large GIF"
     assert.match(image, /\bheight="\d+"/i);
     assert.match(image, /\bloading="lazy"/i);
   }
-  assert.match(html, /\/products\/3370\.webp/);
-  assert.doesNotMatch(html, /\/products\/3370\.gif/);
+  assert.equal(count(html, /src="https:\/\/si\.geilicdn\.com\//gi), 36);
+  assert.doesNotMatch(html, /src="\/products\//i);
   assert.ok(
     count(html, /<link[^>]+rel="preload"[^>]+as="image"/gi) <= 1,
     "spreadsheet should not mass-preload product images",
@@ -322,7 +322,7 @@ test("product pages use neutral listing copy and include outbound dimensions", a
     );
     assert.match(
       html,
-      /<div class="product-detail-image">\s*<img[^>]+width="750"[^>]+height="750"/i,
+      /<div class="product-detail-image">\s*<img[^>]+width="600"[^>]+height="600"/i,
       path,
     );
   }
@@ -439,7 +439,7 @@ test("production HTML receives edge caching headers and is stored by pathname", 
     assert.equal(stored.length, 1);
     assert.equal(
       stored[0].key,
-      "https://joyagoochina.org/qc-guide/?__html_cache_version=seo60-c03-20260827",
+      "https://joyagoochina.org/qc-guide/?__html_cache_version=ctr-improvements-c02-20260901",
     );
   } finally {
     if (originalCaches) {
@@ -469,7 +469,7 @@ test("product detail pages are indexable in English and localized routes", async
     const response = await request(path);
     assert.equal(response.status, 200, path);
     const html = await response.text();
-    assert.match(html, /HOKA Speedgoat 5 Trail Shoes/);
+    assert.match(html, /Skyline FloatX Outdoor Running Shoes/);
     assert.match(html, /hreflang="x-default"/i);
   }
 });

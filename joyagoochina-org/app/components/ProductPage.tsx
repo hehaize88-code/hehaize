@@ -1,4 +1,8 @@
-import { products, type Product } from "../data";
+import {
+  absoluteProductImageUrl,
+  products,
+  type Product,
+} from "../data";
 import { localizePath, translations, type Locale } from "../i18n";
 import { collectionNames, productPageCopy } from "../productContent";
 import SiteFooter from "./SiteFooter";
@@ -27,7 +31,7 @@ export default function ProductPage({
       "@context": "https://schema.org",
       "@type": "Product",
       name: product.name,
-      image: `https://joyagoochina.org${product.image}`,
+      image: absoluteProductImageUrl(product.image),
       sku: product.id,
       category: collectionNames[locale][product.collection],
       description: `${product.name}. ${copy.overviewBody}`,

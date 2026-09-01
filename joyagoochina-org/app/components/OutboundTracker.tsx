@@ -15,6 +15,7 @@ type OutboundEvent = {
 declare global {
   interface Window {
     dataLayer?: Array<Record<string, unknown>>;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -36,8 +37,20 @@ const emitOutboundEvent = (
       : {}),
   };
 
-  window.dataLayer ??= [];
-  window.dataLayer.push(payload);
+  const eventParameters = {
+    destination: payload.destination,
+    source_page: payload.source_page,
+    language: payload.language,
+    link_kind: payload.link_kind,
+    ...(payload.product_id ? { product_id: payload.product_id } : {}),
+    ...(payload.category ? { category: payload.category } : {}),
+  };
+  if (window.gtag) {
+    window.gtag("event", payload.event, eventParameters);
+  } else {
+    window.dataLayer ??= [];
+    window.dataLayer.push(payload);
+  }
   window.dispatchEvent(
     new CustomEvent("joyagoo:outbound-click", { detail: payload }),
   );
@@ -66,7 +79,12 @@ export default function OutboundTracker() {
       const form = event.target;
       if (!(form instanceof HTMLFormElement)) return;
       if (!form.dataset.outboundKind) return;
-      emitOutboundEvent(form, form.action);
+      const destination = new URL(form.action);
+      const formData = new FormData(form);
+      for (const [name, value] of formData.entries()) {
+        if (typeof value === "string") destination.searchParams.set(name, value);
+      }
+      emitOutboundEvent(form, destination.toString());
     };
 
     document.addEventListener("click", handleClick, true);

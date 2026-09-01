@@ -1,4 +1,3 @@
-import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -19,11 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://joyagoochina.org"),
   title: {
-    default: "Joyagoo Spreadsheet 2026 | Products, QC & Shipping Guides",
+    default: "Joyagoo Spreadsheet 2026: 36 Checked Product Links",
     template: "%s | Joyagoo China",
   },
   description:
-    "Explore a Joyagoo spreadsheet with direct product links, researched QC guidance, shipping explanations and return-policy help.",
+    "Browse 36 checked Joyagoo product links with current prices, matching listings, QC tips and shipping guidance. Updated September 2026.",
   keywords: [
     "Joyagoo spreadsheet",
     "Joyagoo spreadsheet 2026",
@@ -34,9 +33,9 @@ export const metadata: Metadata = {
   alternates: languageAlternates("/"),
   openGraph: {
     type: "website",
-    title: "Joyagoo Spreadsheet 2026",
+    title: "Joyagoo Spreadsheet 2026: 36 Checked Product Links",
     description:
-      "Curated product discovery with practical Joyagoo QC, shipping and return guidance.",
+      "Browse 36 checked Joyagoo product links with current prices, matching listings, QC tips and shipping guidance.",
     url: "https://joyagoochina.org/",
     siteName: "Joyagoo China",
     images: [
@@ -48,18 +47,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Joyagoo Spreadsheet 2026",
+    title: "Joyagoo Spreadsheet 2026: 36 Checked Product Links",
     description:
-      "Curated product discovery with practical Joyagoo QC, shipping and return guidance.",
+      "Browse 36 checked Joyagoo product links with current prices, matching listings, QC tips and shipping guidance.",
     images: [
       socialImage(
         undefined,
         "Joyagoo spreadsheet product discovery and buying research",
       ).url,
     ],
-  },
-  other: {
-    "codex-preview": "development",
   },
   icons: {
     icon: "/favicon.svg",
@@ -77,20 +73,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-QY8MM7VZV2');
-          `}
-        </Script>
-{children}
+        {children}
         <OutboundTracker />
       </body>
     </html>

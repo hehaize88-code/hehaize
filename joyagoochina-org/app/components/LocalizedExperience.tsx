@@ -241,7 +241,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
     inLanguage: locale,
     potentialAction: {
       "@type": "SearchAction",
-      target: `${mainSite}/AllProducts/?keyword={search_term_string}`,
+      target: `${mainSite}/AllProducts/?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };
@@ -294,7 +294,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
             <span aria-hidden="true">⌕</span>
             <input
               id={`product-search-${locale}`}
-              name="keyword"
+              name="q"
               placeholder={copy.home.searchPlaceholder}
             />
             <button type="submit">{copy.home.search}</button>

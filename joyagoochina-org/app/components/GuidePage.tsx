@@ -125,6 +125,7 @@ export default function GuidePage({
                 href={`${mainSite}/AllProducts/`}
                 target="_blank"
                 rel="noopener"
+                data-outbound-kind="all-products"
               >
                 Explore products ↗
               </a>

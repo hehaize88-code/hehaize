@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ProductPage from "../../components/ProductPage";
-import { getProductBySlug, products } from "../../data";
+import {
+  absoluteProductImageUrl,
+  getProductBySlug,
+  products,
+} from "../../data";
 import { languageAlternates } from "../../seoAlternates";
 
 export const dynamicParams = false;
@@ -19,8 +23,9 @@ export async function generateMetadata({
   const product = getProductBySlug(slug);
   if (!product) return {};
 
-  const title = `${product.name} — Price, ID & QC Checks`;
-  const description = `${product.name}: checked product ID ${product.id}, USD reference price ${product.price}, local image, QC checklist and direct matching listing.`;
+  const title = `${product.name} — Price & Direct Product Link`;
+  const description = `${product.name}: current reference price ${product.price}, checked matching listing, direct product link and practical QC tips.`;
+  const image = absoluteProductImageUrl(product.image);
 
   return {
     title,
@@ -34,7 +39,7 @@ export async function generateMetadata({
       siteName: "Joyagoo China",
       images: [
         {
-          url: `https://joyagoochina.org${product.image}`,
+          url: image,
           width: product.imageWidth,
           height: product.imageHeight,
           alt: product.name,
@@ -45,9 +50,8 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [`https://joyagoochina.org${product.image}`],
+      images: [image],
     },
-    twitter: { card: "summary_large_image", images: [`https://joyagoochina.org${product.image}`] },
   };
 }
 

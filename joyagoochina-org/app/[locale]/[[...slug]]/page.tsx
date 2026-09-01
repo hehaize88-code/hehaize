@@ -5,7 +5,11 @@ import {
   LocalizedPage,
 } from "../../components/LocalizedExperience";
 import ProductPage from "../../components/ProductPage";
-import { getProductBySlug, products } from "../../data";
+import {
+  absoluteProductImageUrl,
+  getProductBySlug,
+  products,
+} from "../../data";
 import { editorialSocialMetadata } from "../../editorialAssets";
 import {
   isLocale,
@@ -81,6 +85,7 @@ export async function generateMetadata({
     const routePath = `/product/${localizedProduct.slug}/`;
     const title = `${localizedProduct.name} — ${translations[locale].nav.spreadsheet}`;
     const description = `${localizedProduct.name}. ${localizedProduct.price} · ID ${localizedProduct.id}. ${translations[locale].home.latestDescription}`;
+    const image = absoluteProductImageUrl(localizedProduct.image);
     return {
       title,
       description,
@@ -96,7 +101,7 @@ export async function generateMetadata({
         siteName: "Joyagoo China",
         images: [
           {
-            url: `https://joyagoochina.org${localizedProduct.image}`,
+            url: image,
             width: localizedProduct.imageWidth,
             height: localizedProduct.imageHeight,
             alt: localizedProduct.name,
@@ -107,7 +112,7 @@ export async function generateMetadata({
         card: "summary_large_image",
         title,
         description,
-        images: [`https://joyagoochina.org${localizedProduct.image}`],
+        images: [image],
       },
     };
   }

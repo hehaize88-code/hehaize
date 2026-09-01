@@ -19,7 +19,13 @@ function withGoogleAnalytics(response, request) {
   const csp = headers.get("content-security-policy");
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET, { html: true }); } }).transform(htmlResponse);
+  const url = new URL(request.url);
+  const firstSegment = url.pathname.split("/").filter(Boolean)[0];
+  const language = firstSegment && localeCodes.has(firstSegment) ? firstSegment : "en";
+  return new HTMLRewriter()
+    .on("html", { element(element) { element.setAttribute("lang", language); } })
+    .on("head", { element(element) { element.append(GA4_SNIPPET, { html: true }); } })
+    .transform(htmlResponse);
 }
 
 const primaryHost = "joyagoochina.org";
@@ -38,7 +44,7 @@ const localeCodes = new Set([
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "product-links-c01-20260901";
+const htmlCacheVersion = "ctr-improvements-c02-20260901";
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
