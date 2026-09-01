@@ -428,6 +428,72 @@ const GA_SNIPPET = `
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-QY8MM7VZV2');
+
+  function pikoLocale() {
+    var match = location.pathname.match(/^\/(de|fr|es|it|pl|pt)(?:\/|$)/);
+    return match ? match[1] : 'en';
+  }
+
+  function pikoEvent(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    params = params || {};
+    params.transport_type = 'beacon';
+    window.gtag('event', name, params);
+  }
+
+  document.addEventListener('click', function(event) {
+    var origin = event.target;
+    var link = origin && origin.closest ? origin.closest('a[href]') : null;
+    if (!link) return;
+
+    var target;
+    try {
+      target = new URL(link.href, location.href);
+    } catch (error) {
+      return;
+    }
+
+    var productMatch = target.hostname.replace(/^www\./, '') === 'cnbuycha.com'
+      ? target.pathname.match(/^\/AllProducts\/(\d+)\.html$/)
+      : null;
+    var details = {
+      source_page: location.pathname,
+      locale: pikoLocale(),
+      link_url: target.href,
+      link_text: (link.textContent || '').trim().slice(0, 120)
+    };
+
+    if (productMatch) {
+      details.product_id = productMatch[1];
+      pikoEvent('outbound_product_click', details);
+      return;
+    }
+
+    if (
+      target.hostname === location.hostname &&
+      /^\/(?:(?:de|fr|es|it|pl|pt)\/)?categories\//.test(target.pathname)
+    ) {
+      details.category_path = target.pathname;
+      pikoEvent('category_click', details);
+      return;
+    }
+
+    if (/\/articles\//.test(location.pathname) && target.hostname !== location.hostname) {
+      pikoEvent('article_cta_click', details);
+    }
+  }, true);
+
+  document.addEventListener('submit', function(event) {
+    var form = event.target;
+    if (!form || !form.querySelector) return;
+    var input = form.querySelector('input[type="search"], input[name="q"], input[name="keywords"]');
+    if (!input) return;
+    pikoEvent('search_submit', {
+      search_term: String(input.value || '').trim().slice(0, 100),
+      source_page: location.pathname,
+      locale: pikoLocale()
+    });
+  }, true);
 </script>`;
 const STATIC_PREFIXES = ["/assets/", "/_next/"];
 const STATIC_FILES = new Set(["/pikobuy-logo.png","/favicon.svg","/article-social.svg","/robots.txt","/sitemap.xml","/sitemap-main.xml","/404.html"]);
