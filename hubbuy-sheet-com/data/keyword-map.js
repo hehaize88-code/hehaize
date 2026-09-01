@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-customs-tax-planning-import-record": {
+    primaryQuery: "Hubbuy customs and tax planning",
+    secondaryTerms: ["Hubbuy import tax", "Hubbuy customs declaration", "Hubbuy parcel customs checklist", "Hubbuy destination tax planning"],
+    searchIntent: "Prepare truthful item, value and parcel evidence and budget destination import charges without relying on tax-free promises",
+    angle: "Evidence-first import record separating product identity, customs value, route wording, destination rules and post-arrival notices",
+    evidence: ["Current Hubbuy public purchase and parcel-stage workflow checked 1 September 2026", "Current U.S., UK and EU customs guidance checked 1 September 2026"],
+    internalLinkRole: "Customs-planning leaf connecting restricted-item screening, parcel cost and tracking evidence without repeating shipping-route or volumetric-weight intent",
+  },
   "hubbuy-rehearsal-package-decision-guide": {
     primaryQuery: "Hubbuy rehearsal shipping",
     secondaryTerms: ["Hubbuy rehearsal package", "Hubbuy pre-packing", "Hubbuy parcel weight and dimensions", "Hubbuy split parcel decision"],

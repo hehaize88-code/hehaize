@@ -46,6 +46,101 @@ function ArticleCta() {
   );
 }
 
+function HubbuyCustomsTaxArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">Customs planning is not a hunt for a magic tax-free route. It is the work of identifying what is actually in the parcel, preserving truthful transaction evidence, checking the destination rules that apply on the decision date and keeping enough margin for charges that cannot yet be confirmed.</p>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Build the import record before you submit the Hubbuy parcel</h2>
+        <p>Start when the warehouse items are approved but before international shipping is paid. At that point, the parcel contents, quantities and warehouse records can be matched to the original orders. You can also compare the route wording shown for the actual destination and packed parcel. This is stronger than trying to solve customs from a spreadsheet card, an early product estimate or another buyer’s receipt.</p>
+        <p>Your record needs four connected layers: the exact goods, truthful transaction evidence, the selected parcel and route, and the destination rules checked on a named date. None works alone. A purchase receipt without a usable product description may not explain the goods. A route label without current terms does not prove how tax will be collected. A customs estimate without the exact parcel can become irrelevant after items are split or removed.</p>
+        <div className="article-callout"><strong>The safe planning rule</strong><p>Describe and value the goods truthfully, verify current destination rules, and treat any unconfirmed duty, tax, brokerage or handling amount as a budget range—not as zero.</p></div>
+      </section>
+
+      <section id="rule-map">
+        <span>02 · Rule map</span>
+        <h2>Separate the parties before interpreting a customs claim</h2>
+        <p>Hubbuy can show the order and parcel information available in its current interface. A carrier moves the parcel and may handle a declaration or collect charges under its own process. The destination customs or tax authority applies local law. A seller supplies product information, but a vague or inaccurate seller title does not replace your obligation to keep an honest description. Write these parties in separate columns.</p>
+        <div className="article-point-grid">
+          <div><b>HUBBUY</b><strong>Order and parcel evidence</strong><span>Use the fields, route wording and charges actually shown for your account.</span></div>
+          <div><b>CARRIER</b><strong>Transport and collection process</strong><span>Confirm who requests documents or collects an assessed amount.</span></div>
+          <div><b>AUTHORITY</b><strong>Destination import rules</strong><span>Check the official rule, threshold, tax base and effective date.</span></div>
+          <div><b>BUYER</b><strong>Truthful decision record</strong><span>Preserve item identity, value evidence and responses until delivery closes.</span></div>
+        </div>
+        <p>Be suspicious of absolute phrases such as “tax free,” “no customs” or “guaranteed clearance” when the live terms do not support them. A route may describe a particular collection mechanism, but that is not permission to generalize it to every product, destination, parcel value or future shipment.</p>
+      </section>
+
+      <section id="identity-record">
+        <span>03 · Product identity</span>
+        <h2>Describe each item well enough for a stranger to understand it</h2>
+        <p>Create one row per order line. Save the Hubbuy order reference, seller source, plain product description, material or composition when known, intended use, quantity, selected variant and country-of-origin evidence if the current process asks for it. “Accessory,” “sample” or a brand nickname is usually weaker than a neutral description such as “polyester zip hoodie” or “synthetic-upper casual shoes.” Do not claim a material or origin that the evidence does not establish.</p>
+        <p>Match the row to the warehouse record and QC decision. If the seller sent a different color, size, bundle or product, resolve that mismatch before parcel submission. Customs paperwork that describes the ordered item while the warehouse contains something else is internally inconsistent. The <Link href="/articles/hubbuy-return-exchange-after-qc/">return and exchange guide</Link> shows how to preserve a warehouse issue before it becomes an international-parcel problem.</p>
+        <ul>
+          <li><strong>Identity:</strong> order reference, source item and warehouse identifier.</li>
+          <li><strong>Description:</strong> ordinary product name, material and use when evidenced.</li>
+          <li><strong>Option:</strong> exact style, size, color, bundle and quantity shipped.</li>
+          <li><strong>Condition:</strong> new, returned or another state only when the record supports it.</li>
+          <li><strong>Conflict:</strong> any difference between the order, warehouse item and parcel row.</li>
+        </ul>
+      </section>
+
+      <section id="value-record">
+        <span>04 · Value evidence</span>
+        <h2>Keep customs value separate from total delivered cost</h2>
+        <p>The product price, seller delivery inside China, selected services, international freight, insurance, payment conversion and destination charges are different cost layers. A delivered-cost budget may include all of them; the destination customs value may use a rule-defined combination. Never assume the customs base equals either the product subtotal or your final card debit. Read the current authority guidance and route documentation for the destination.</p>
+        <p>Preserve the actual order lines, discounts genuinely applied, payment record and later parcel charge. Do not lower a number because a forum recommends it, label a purchase as a gift when it is not one, or split a truthful invoice into invented figures. If the interface asks for information you cannot reconcile with the transaction, pause and request clarification through the current official account channel.</p>
+        <div className="article-formula"><small>Delivered-cost planning range</small><strong>goods + China delivery + confirmed services + international parcel + destination charges</strong></div>
+        <p>The formula is a budgeting frame, not a customs-valuation formula. Put confirmed amounts in one column, reasonable ranges in another and unresolved items in a third. The <Link href="/articles/hubbuy-shipping-cost-guide/">shipping-cost guide</Link> helps keep freight assumptions distinct from the destination assessment.</p>
+      </section>
+
+      <section id="before-submit">
+        <span>05 · Submission checkpoint</span>
+        <h2>Read the live route wording against the completed parcel</h2>
+        <p>First screen the goods for transport and import restrictions. A route that accepts ordinary clothing may reject batteries, liquids, powders, food, medicine or another sensitive category. Customs admissibility and carrier eligibility are separate gates; passing one does not prove the other. Use the <Link href="/articles/hubbuy-restricted-items-shipping-guide/">restricted-items guide</Link> before comparing available routes.</p>
+        <p>For each eligible route, record the destination, packed weight and dimensions, route name, charge, tax or declaration wording, insurance or compensation wording if relevant, and the time checked. Read labels literally. If a page says an amount is an estimate, preserve it as an estimate. If it says a charge is prepaid, identify which charge and scope the term covers. If no tax wording appears, record “not stated” rather than “included.”</p>
+        <p>Then decide with a margin. Your budget should survive a plausible difference between estimate and assessment. If an unexpected charge would make the purchase unaffordable, postponing the parcel is a valid outcome. Customs planning should change the decision before payment, not merely explain a surprise afterward.</p>
+      </section>
+
+      <section id="country-examples">
+        <span>06 · Country examples</span>
+        <h2>Current official guidance shows why one global rule fails</h2>
+        <p>United States customs guidance for internet purchases warns that the price paid to a foreign seller, even with shipping and handling, may not include duty or customs-clearance costs. United Kingdom guidance says a courier may contact the recipient about VAT, duty or delivery-company charges, and its VAT base can include more than the item price. These are different systems and neither statement predicts the final result for every Hubbuy parcel.</p>
+        <p>The European Union also illustrates why dates matter. Current EU guidance describes a temporary customs-duty treatment for low-value consignments beginning in 2026 and distinguishes that duty from a separately discussed handling fee. A remembered rule from an older parcel can therefore be wrong even for the same destination. Check the authority page again on the submission date and save the effective date with your note.</p>
+        <p>Use country examples to learn the questions, not copy the answer: Is there a current threshold? What charges are in scope? Which value basis applies? Who is the declarant? Who collects payment? Does the treatment change by product classification or origin? Only the destination’s current official guidance can answer those questions for that system.</p>
+      </section>
+
+      <section id="notice-response">
+        <span>07 · If a notice arrives</span>
+        <h2>Verify the sender, then answer with a coherent evidence packet</h2>
+        <p>A tracking pause alone does not prove a customs problem. Read the event wording and identify the carrier stage. If a document or payment request arrives, independently verify the carrier or authority channel instead of using a shortened link in an unsolicited message. Never send account credentials, full card data or unrelated personal documents merely because a message uses urgent language.</p>
+        <p>Build the response from the same record used before submission: parcel reference, itemized orders, payment evidence, neutral product descriptions, warehouse evidence, international shipping receipt and the notice. Answer the specific question. If a requested value or classification is unclear, ask the verified recipient what evidence or format is accepted rather than inventing certainty.</p>
+        <p>Save what you sent, when you sent it and any confirmation number. The <Link href="/articles/hubbuy-parcel-tracking-delay-guide/">tracking-status guide</Link> can help place a no-update event in the carrier handoff timeline. Keep customs evidence until delivery, charges and any appeal or correction are fully closed.</p>
+      </section>
+
+      <section id="final-checklist">
+        <span>08 · Final checklist</span>
+        <h2>Submit only when the record and budget agree</h2>
+        <ol>
+          <li>Match every parcel item to its order, source and warehouse record.</li>
+          <li>Write a neutral, evidence-supported description for each line.</li>
+          <li>Preserve actual price, discount and payment evidence without alteration.</li>
+          <li>Screen both transport restrictions and destination import rules.</li>
+          <li>Record the live route, parcel data, cost wording and check time.</li>
+          <li>Separate confirmed charges, planning ranges and unresolved amounts.</li>
+          <li>Keep a verified-channel plan for document or payment requests.</li>
+          <li>Delay submission if an unknown could make the parcel unlawful or unaffordable.</li>
+        </ol>
+        <p>A strong Hubbuy customs record does not promise clearance or zero tax. It lets you explain what was bought, what was shipped, how the value evidence was preserved and which current destination rules informed the decision.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <ArticleCta />
+    </>
+  );
+}
+
 function HubbuyRehearsalArticle({ article }) {
   return (
     <>
@@ -1201,6 +1296,7 @@ function HubbuyPaymentAuditArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-customs-tax-planning-import-record") return <HubbuyCustomsTaxArticle article={article} />;
   if (article.slug === "hubbuy-rehearsal-package-decision-guide") return <HubbuyRehearsalArticle article={article} />;
   if (article.slug === "hubbuy-payment-methods-currency-fee-audit") return <HubbuyPaymentAuditArticle article={article} />;
   if (article.slug === "how-to-buy-from-taobao-with-hubbuy") return <HubbuyTaobaoArticle article={article} />;
