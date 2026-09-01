@@ -1,5 +1,49 @@
 import applicationWorker from "../dist/server/index.js";
 
+const PRODUCT_IDS = new Set([
+  "3351",
+  "3353",
+  "3355",
+  "3356",
+  "3357",
+  "3359",
+  "3366",
+  "3367",
+  "3368",
+  "3369",
+  "3371",
+  "3372",
+]);
+
+function productDestination(pathname) {
+  const match = pathname.match(/^\/products\/(\d+)\/?$/);
+  return match && PRODUCT_IDS.has(match[1])
+    ? `https://www.cnbuycha.com/AllProducts/${match[1]}.html`
+    : null;
+}
+
+const productLinkRewriter = {
+  element(element) {
+    const href = element.getAttribute("href");
+    if (!href) return;
+
+    try {
+      const resolved = new URL(href, "https://lolobuy-sheet.net");
+      if (
+        resolved.hostname !== "lolobuy-sheet.net" &&
+        resolved.hostname !== "www.lolobuy-sheet.net"
+      ) {
+        return;
+      }
+
+      const destination = productDestination(resolved.pathname);
+      if (destination) {
+        element.setAttribute("href", destination);
+      }
+    } catch {}
+  },
+};
+
 const GA4_SNIPPET =
   '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
 
@@ -68,6 +112,7 @@ function withGoogleAnalytics(response, request) {
         element.append(GA4_SNIPPET, { html: true });
       },
     })
+    .on("a[href]", productLinkRewriter)
     .transform(htmlResponse);
 }
 
@@ -130,6 +175,14 @@ export default {
     const analyticsAsset = await googleAnalyticsAsset(request);
     if (analyticsAsset) {
       return analyticsAsset;
+    }
+
+    const destination = productDestination(url.pathname);
+    if (
+      destination &&
+      (request.method === "GET" || request.method === "HEAD")
+    ) {
+      return Response.redirect(destination, 302);
     }
 
     if (isStaticAsset(url.pathname) && env?.ASSETS?.fetch) {
