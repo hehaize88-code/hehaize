@@ -177,27 +177,25 @@ function MainSearch({ locale, compact = false }: { locale: Locale; compact?: boo
   function submitMainSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
-    const keyword = String(form.get("keywords") ?? "").trim();
+    const keyword = String(form.get("q") ?? "").trim();
     if (!keyword) {
-      window.location.assign("https://www.cnbuycha.com/AllProducts/");
+      window.location.assign("https://cnbuycha.com/AllProducts/");
       return;
     }
-    const query = new URLSearchParams({ keywords: keyword, channelid: "2", method: "1" });
-    window.location.assign(`https://www.cnbuycha.com/search.html?${query.toString()}`);
+    const query = new URLSearchParams({ q: keyword });
+    window.location.assign(`https://cnbuycha.com/AllProducts/?${query.toString()}`);
   }
   return (
     <form
-      action="https://www.cnbuycha.com/search.html"
+      action="https://cnbuycha.com/AllProducts/"
       className={`hero-search${compact ? " search-compact" : ""}`}
       method="get"
       onSubmit={submitMainSearch}
     >
       <label className="sr-only" htmlFor={compact ? "route-search" : "main-search"}>{copy.home.searchLabel}</label>
-      <input name="channelid" type="hidden" value="2" />
-      <input name="method" type="hidden" value="1" />
       <input
         id={compact ? "route-search" : "main-search"}
-        name="keywords"
+        name="q"
         placeholder={copy.home.searchPlaceholder}
         type="search"
       />
@@ -259,9 +257,9 @@ function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: 
             {filteredProducts.length ? filteredProducts.map((product, index) => (
               <div className="product-row" role="row" key={product.reference}>
                 <div className="item-cell" role="cell">
-                  <a href={routeHref(locale, productRoute(product.slug))} aria-label={`${copy.finder.open} ${product.name}`}><ProductImage product={product} priority={index === 0} /></a>
+                  <a href={product.url} aria-label={`${copy.finder.open} ${product.name}`}><ProductImage product={product} priority={index === 0} /></a>
                   <div>
-                    <a className="product-name" href={routeHref(locale, productRoute(product.slug))}>{product.name}</a>
+                    <a className="product-name" href={product.url}>{product.name}</a>
                     <span>{copy.finder.original} · ¥{product.cny}</span>
                     <code>KMS-{product.reference}</code>
                   </div>
@@ -270,8 +268,8 @@ function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: 
                 <div className="price-cell" role="cell"><strong>{usd(product.cny)}</strong><small>{copy.finder.approximate}</small></div>
                 <div className="status-cell" role="cell"><span /> {copy.finder.listed}</div>
                 <div className="open-cell" role="cell">
-                  <a className="open-pill" href={routeHref(locale, productRoute(product.slug))}>{copy.finder.open}</a>
-                  <a className="external-link" href={routeHref(locale, productRoute(product.slug))} aria-label={`${copy.finder.open} ${product.name}`}><ArrowIcon /></a>
+                  <a className="open-pill" href={product.url}>{copy.finder.open}</a>
+                  <a className="external-link" href={product.url} aria-label={`${copy.finder.open} ${product.name}`}><ArrowIcon external /></a>
                 </div>
               </div>
             )) : <p className="empty-state">{copy.finder.noMatches}</p>}
@@ -351,7 +349,7 @@ function HowSection({ locale }: { locale: Locale }) {
         <p className="section-kicker">{copy.how.kicker}</p>
         <h2>{copy.how.title}</h2>
         <p>{copy.how.intro}</p>
-        <a className="button button-primary" href="https://www.cnbuycha.com/AllProducts/">{copy.how.action} <ArrowIcon external /></a>
+        <a className="button button-primary" href="https://cnbuycha.com/AllProducts/">{copy.how.action} <ArrowIcon external /></a>
       </div>
       <ol className="step-list">
         {copy.how.steps.map((step, index) => (
@@ -434,15 +432,15 @@ function ProductCard({ locale, product }: { locale: Locale; product: Product }) 
   const catalog = catalogCopies[locale];
   return (
     <article className="catalog-product-card">
-      <a className="catalog-product-image" href={routeHref(locale, productRoute(product.slug))}>
+      <a className="catalog-product-image" href={product.url} aria-label={`${catalog.openLiveListing}: ${product.name}`}>
         <ProductImage product={product} />
       </a>
       <div className="catalog-product-body">
         <a className="catalog-product-category" href={routeHref(locale, categoryRoute(product.categoryKey))}>{copy.categories.items[product.categoryKey].label}</a>
-        <h2><a href={routeHref(locale, productRoute(product.slug))}>{product.name}</a></h2>
+        <h2><a href={product.url}>{product.name}</a></h2>
         <div className="catalog-product-meta"><strong>{usd(product.cny)}</strong><span>{cny(product.cny, locale)}</span></div>
         <code>KMS-{product.reference}</code>
-        <a className="catalog-product-link" href={routeHref(locale, productRoute(product.slug))}>{catalog.viewDetails} <ArrowIcon /></a>
+        <a className="catalog-product-link" href={product.url}>{catalog.openLiveListing} <ArrowIcon external /></a>
       </div>
     </article>
   );
@@ -519,7 +517,7 @@ function ProductDetailPage({ locale, product }: { locale: Locale; product: Produ
           { label: product.name },
         ]} />
         <div className="product-detail">
-          <figure className="product-visual"><ProductImage product={product} priority /></figure>
+          <figure className="product-visual"><a href={product.url} aria-label={`${catalog.openLiveListing}: ${product.name}`}><ProductImage product={product} priority /></a></figure>
           <div className="product-summary">
             <p className="section-kicker">{catalog.productKicker}</p>
             <h1>{product.name}</h1>
@@ -605,7 +603,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
           <aside>
             <a href={routeHref(locale, "articles")}>← {copy.common.backToArticles}</a>
             <p>{copy.common.verifyNote}</p>
-            <a className="button button-primary" href="https://www.cnbuycha.com/AllProducts/">{copy.common.openProducts} <ArrowIcon external /></a>
+            <a className="button button-primary" href="https://cnbuycha.com/AllProducts/">{copy.common.openProducts} <ArrowIcon external /></a>
           </aside>
           <div className="prose-body">
             <p className="prose-lede">{page.intro}</p>
@@ -638,7 +636,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
         <aside>
           <a href={routeHref(locale, "guides")}>← {copy.common.backToGuides}</a>
           <p>{copy.common.verifyNote}</p>
-          <a className="button button-primary" href="https://www.cnbuycha.com/AllProducts/">{copy.common.openProducts} <ArrowIcon external /></a>
+          <a className="button button-primary" href="https://cnbuycha.com/AllProducts/">{copy.common.openProducts} <ArrowIcon external /></a>
         </aside>
         <div className="prose-body">
           <p className="prose-lede">{page.intro}</p>

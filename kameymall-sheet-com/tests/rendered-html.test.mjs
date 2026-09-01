@@ -117,7 +117,7 @@ test("keeps every localized content module as complete as English", async () => 
     assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
     assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
     assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
-    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 9, `${prefix || "/"} article cards`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 10, `${prefix || "/"} article cards`);
     assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
 
     const homeImages = (homeHtml.match(/<img\b/g) ?? []).length;
@@ -149,16 +149,15 @@ test("uses the verified destination search and category URLs", async () => {
     "jersey",
     "electronics",
     "other-stuff",
-  ].map((slug) => `https://www.cnbuycha.com/${slug}/`);
+  ].map((slug) => `https://cnbuycha.com/${slug}/`);
 
   for (const prefix of localePrefixes) {
     const response = await render(worker, prefix || "/");
     const html = await response.text();
-    assert.match(html, /action="https:\/\/www\.cnbuycha\.com\/search\.html"/);
-    assert.match(html, /name="keywords"/);
-    assert.match(html, /name="channelid"[^>]*value="2"|value="2"[^>]*name="channelid"/);
+    assert.match(html, /action="https:\/\/cnbuycha\.com\/AllProducts\/"/);
+    assert.match(html, /name="q"/);
     assert.equal(
-      (html.match(/class="category-card" href="https:\/\/www\.cnbuycha\.com\//g) ?? []).length,
+      (html.match(/class="category-card" href="https:\/\/cnbuycha\.com\//g) ?? []).length,
       10,
       `${prefix || "/"} homepage category cards`,
     );
@@ -171,7 +170,7 @@ test("uses the verified destination search and category URLs", async () => {
 
   const categoryResponse = await render(worker, "/categories/sweatshirts");
   const categoryHtml = await categoryResponse.text();
-  assert.match(categoryHtml, /https:\/\/www\.cnbuycha\.com\/hoodies-sweaters\//);
+  assert.match(categoryHtml, /https:\/\/cnbuycha\.com\/hoodies-sweaters\//);
 });
 
 test("redirects every www path to the matching canonical hostname with HTTP 301", async () => {
@@ -189,7 +188,7 @@ test("redirects every www path to the matching canonical hostname with HTTP 301"
   );
 });
 
-test("renders eight homepage finds, thirty catalog finds, and internal detail links", async () => {
+test("renders eight homepage finds, thirty catalog finds, and direct matching product links", async () => {
   const worker = await loadWorker();
   const home = await render(worker, "/");
   const finds = await render(worker, "/finds");
@@ -198,9 +197,9 @@ test("renders eight homepage finds, thirty catalog finds, and internal detail li
 
   assert.equal((homeHtml.match(/class="product-row"/g) ?? []).length, 8);
   assert.equal((findsHtml.match(/class="product-row"/g) ?? []).length, 30);
-  assert.match(homeHtml, /href="\/products\/new-balance-1906r"/);
+  assert.match(homeHtml, /href="https:\/\/cnbuycha\.com\/shoes\/3366\.html"/);
   assert.match(homeHtml, /href="\/categories\/shoes"/);
-  assert.doesNotMatch(homeHtml, /class="product-name" href="https:\/\//);
+  assert.match(homeHtml, /class="product-name" href="https:\/\/cnbuycha\.com\/shoes\/3366\.html"/);
 });
 
 function imageTags(html) {
@@ -261,7 +260,7 @@ test("adds product, breadcrumb, and category ItemList structured data", async ()
   assert.match(productHtml, /"@type":"Product"/);
   assert.match(productHtml, /"@type":"BreadcrumbList"/);
   assert.match(productHtml, /KMS-7818078364/);
-  assert.match(productHtml, /href="https:\/\/www\.cnbuycha\.com\/AllProducts\/3378\.html"/);
+  assert.match(productHtml, /href="https:\/\/cnbuycha\.com\/shoes\/3366\.html"/);
   assert.match(categoryHtml, /"@type":"CollectionPage"/);
   assert.match(categoryHtml, /"@type":"ItemList"/);
   assert.equal((categoryHtml.match(/class="catalog-product-card"/g) ?? []).length, 3);
@@ -335,7 +334,7 @@ test("keeps the complete homepage in compact no-swipe mobile grids", async () =>
   assert.equal((html.match(/class="category-card"/g) ?? []).length, 10);
   assert.equal((html.match(/<ol class="step-list">[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g) ?? []).length, 6);
   assert.equal((html.match(/class="guide-card(?: |")/g) ?? []).length, 3);
-  assert.equal((html.match(/class="article-card"/g) ?? []).length, 9);
+  assert.equal((html.match(/class="article-card"/g) ?? []).length, 10);
   assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 11);
   assert.doesNotMatch(html, /<details\b[^>]*\bopen\b/i, "homepage FAQs and language menu start collapsed");
 });
@@ -705,7 +704,7 @@ test("publishes a complete shipping-line decision guide in all six languages", a
 test("uses the focused homepage metadata and deepens the three priority category pages", async () => {
   const worker = await loadWorker();
   const homeHtml = await (await render(worker, "/")).text();
-  assert.match(homeHtml, /<title>KameyMall Spreadsheet 2026: 30 Product Finds &amp; QC Guide<\/title>/);
+  assert.match(homeHtml, /<title>KameyMall Spreadsheet 2026: 30 Finds, Prices &amp; Direct Links<\/title>/);
   assert.match(homeHtml, /<h1>KameyMall Spreadsheet 2026: 30 Curated Product Finds<\/h1>/);
   assert.match(homeHtml, /Browse 30 curated KameyMall spreadsheet finds across shoes, hoodies, jerseys and accessories/);
 
@@ -732,7 +731,7 @@ function externalActions(html) {
 test("keeps the main-site brand out of visible copy and blocks third-party traffic links", async () => {
   const worker = await loadWorker();
   const allowedOrigins = new Set([
-    "https://www.cnbuycha.com",
+    "https://cnbuycha.com",
     "https://kameymall-sheet.com",
   ]);
   const forbiddenVisibleBrands = /\b(?:cnbuycha|cn\s*buy\s*cha|cnbuy|cnfans|sugargoo|oopbuy|kakobuy|joyagoo|pikobuy|lolobuy|uufinds|hubbuy|findqc|allchinabuy|acbuy|superbuy|litbuy|pandabuy|hoobuy|mulebuy)\b/i;
