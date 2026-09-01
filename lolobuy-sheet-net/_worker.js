@@ -1,1 +1,194 @@
-import{a as i}from"./worker-chunks/chunk-AJGYFIEU.js";import"./worker-chunks/chunk-V3DKI4G4.js";var r='<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';async function l(t){let e=new URL(t.url);if(e.pathname==="/ga4-init.js")return new Response("window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-QY8MM7VZV2');",{headers:{"content-type":"application/javascript; charset=utf-8","cache-control":"public, max-age=3600"}});if(e.pathname==="/ga4-tag.js"){let s=await fetch("https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"),n=new Headers(s.headers);return n.set("cache-control","public, max-age=3600"),n.delete("set-cookie"),new Response(s.body,{status:s.status,statusText:s.statusText,headers:n})}return null}function u(t,e){let s=t.headers.get("content-type")||"";if(e.method!=="GET"||!s.toLowerCase().includes("text/html")||typeof HTMLRewriter>"u")return t;let n=new Headers(t.headers);n.delete("content-length"),n.delete("content-encoding"),n.delete("etag");let a=n.get("content-security-policy");a&&n.set("content-security-policy",a.replace("connect-src 'self'","connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));let o=new Response(t.body,{status:t.status,statusText:t.statusText,headers:n});return new HTMLRewriter().on("head",{element(c){c.append(r,{html:!0})}}).transform(o)}var d="/assets/v20260728-1/",g=new Set(["/favicon.svg","/file.svg","/globe.svg","/lolobuy.png","/window.svg"]);function w(t){return t.startsWith("/assets/")||t.startsWith("/products/")||t.startsWith("/products-320/")||t.startsWith("/products-480/")||t.startsWith("/social/")||g.has(t)}function h(t){let e=t.headers.get("content-type")||"";return e.includes("text/html")||e.includes("text/x-component")||e.includes("application/json")}async function f(t){if(!h(t))return t;let e=await t.text();if(!e.includes("/assets/"))return new Response(e,t);let s=new Headers(t.headers);return s.delete("content-length"),s.delete("content-encoding"),s.delete("etag"),new Response(e.replaceAll("/assets/",d),{status:t.status,statusText:t.statusText,headers:s})}var m={async fetch(t,e,s){let n=new URL(t.url),a=await l(t);if(a)return a;if(w(n.pathname)&&e?.ASSETS?.fetch){let c=await e.ASSETS.fetch(t);if(c.status!==404)return c}let o=await i.fetch(t,e,s);return u(await f(o),t)}};export{m as default};
+import { a as applicationWorker } from "./worker-chunks/chunk-AJGYFIEU.js";
+import "./worker-chunks/chunk-V3DKI4G4.js";
+
+const PRODUCT_IDS = new Set([
+  "3351",
+  "3353",
+  "3355",
+  "3356",
+  "3357",
+  "3359",
+  "3366",
+  "3367",
+  "3368",
+  "3369",
+  "3371",
+  "3372",
+]);
+
+function productDestination(pathname) {
+  const match = pathname.match(/^\/products\/(\d+)\/?$/);
+  return match && PRODUCT_IDS.has(match[1])
+    ? `https://www.cnbuycha.com/AllProducts/${match[1]}.html`
+    : null;
+}
+
+const productLinkRewriter = {
+  element(element) {
+    const href = element.getAttribute("href");
+    if (!href) return;
+
+    try {
+      const resolved = new URL(href, "https://lolobuy-sheet.net");
+      if (
+        resolved.hostname !== "lolobuy-sheet.net" &&
+        resolved.hostname !== "www.lolobuy-sheet.net"
+      ) {
+        return;
+      }
+
+      const destination = productDestination(resolved.pathname);
+      if (destination) {
+        element.setAttribute("href", destination);
+      }
+    } catch {}
+  },
+};
+
+const GA4_SNIPPET =
+  '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
+
+async function googleAnalyticsAsset(request) {
+  const url = new URL(request.url);
+  if (url.pathname === "/ga4-init.js") {
+    return new Response(
+      "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-QY8MM7VZV2');",
+      {
+        headers: {
+          "content-type": "application/javascript; charset=utf-8",
+          "cache-control": "public, max-age=3600",
+        },
+      },
+    );
+  }
+
+  if (url.pathname === "/ga4-tag.js") {
+    const upstream = await fetch(
+      "https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2",
+    );
+    const headers = new Headers(upstream.headers);
+    headers.set("cache-control", "public, max-age=3600");
+    headers.delete("set-cookie");
+    return new Response(upstream.body, {
+      status: upstream.status,
+      statusText: upstream.statusText,
+      headers,
+    });
+  }
+
+  return null;
+}
+
+function withGoogleAnalytics(response, request) {
+  const contentType = response.headers.get("content-type") || "";
+  if (
+    request.method !== "GET" ||
+    !contentType.toLowerCase().includes("text/html") ||
+    typeof HTMLRewriter === "undefined"
+  ) {
+    return response;
+  }
+
+  const headers = new Headers(response.headers);
+  headers.delete("content-length");
+  headers.delete("content-encoding");
+  headers.delete("etag");
+  const csp = headers.get("content-security-policy");
+  if (csp) {
+    headers.set(
+      "content-security-policy",
+      csp.replace(
+        "connect-src 'self'",
+        "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com",
+      ),
+    );
+  }
+
+  const htmlResponse = new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+
+  return new HTMLRewriter()
+    .on("head", {
+      element(element) {
+        element.append(GA4_SNIPPET, { html: true });
+      },
+    })
+    .on("a[href]", productLinkRewriter)
+    .transform(htmlResponse);
+}
+
+const versionedAssetsPrefix = "/assets/v20260728-1/";
+const staticFiles = new Set([
+  "/favicon.svg",
+  "/file.svg",
+  "/globe.svg",
+  "/lolobuy.png",
+  "/window.svg",
+]);
+
+function isStaticAsset(pathname) {
+  return (
+    pathname.startsWith("/assets/") ||
+    pathname.startsWith("/products/") ||
+    pathname.startsWith("/products-320/") ||
+    pathname.startsWith("/products-480/") ||
+    pathname.startsWith("/social/") ||
+    staticFiles.has(pathname)
+  );
+}
+
+function shouldVersionAssetReferences(response) {
+  const contentType = response.headers.get("content-type") || "";
+  return (
+    contentType.includes("text/html") ||
+    contentType.includes("text/x-component") ||
+    contentType.includes("application/json")
+  );
+}
+
+async function versionAssetReferences(response) {
+  if (!shouldVersionAssetReferences(response)) return response;
+
+  const body = await response.text();
+  if (!body.includes("/assets/")) return new Response(body, response);
+
+  const headers = new Headers(response.headers);
+  headers.delete("content-length");
+  headers.delete("content-encoding");
+  headers.delete("etag");
+  return new Response(body.replaceAll("/assets/", versionedAssetsPrefix), {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+    const analyticsAsset = await googleAnalyticsAsset(request);
+    if (analyticsAsset) return analyticsAsset;
+
+    const destination = productDestination(url.pathname);
+    if (
+      destination &&
+      (request.method === "GET" || request.method === "HEAD")
+    ) {
+      return Response.redirect(destination, 302);
+    }
+
+    if (isStaticAsset(url.pathname) && env?.ASSETS?.fetch) {
+      const assetResponse = await env.ASSETS.fetch(request);
+      if (assetResponse.status !== 404) return assetResponse;
+    }
+
+    const response = await applicationWorker.fetch(request, env, ctx);
+    return withGoogleAnalytics(
+      await versionAssetReferences(response),
+      request,
+    );
+  },
+};
