@@ -110,12 +110,12 @@ test("renders the Weidian finds article with complete SEO metadata", async () =>
 
 test("renders localized home pages with consistent canonicals and metadata", async () => {
   const locales = [
-    ["pt-br", "pt-BR", "Planilha CSSBuy 2026", "ARTIGO"],
-    ["de", "de-DE", "CSSBuy Tabelle 2026", "ARTIKEL"],
-    ["es", "es", "Hoja CSSBuy 2026", "ARTÍCULO"],
+    ["pt-br", "Planilha CSSBuy 2026", "ARTIGO"],
+    ["de", "CSSBuy Tabelle 2026", "ARTIKEL"],
+    ["es", "Hoja CSSBuy 2026", "ARTÍCULO"],
   ];
 
-  for (const [path, lang, titleStart, articleLabel] of locales) {
+  for (const [path, titleStart, articleLabel] of locales) {
     const html = await fetchHtml(`/${path}`);
     assert.ok(html.includes(`<title>${titleStart}`));
     assert.ok(tagWith(html, "link", "rel", "canonical").includes(`href="https://cssbuychina.net/${path}"`));
@@ -124,7 +124,7 @@ test("renders localized home pages with consistent canonicals and metadata", asy
   }
 });
 
-test("renders all 30 product detail pages with main-store shopping links", async () => {
+test("renders all 30 product detail pages with current main-store shopping links", async () => {
   const ids = [
     "3402", "3401", "3387", "3393", "3380", "3400", "3392", "3396", "3394", "3208",
     "3207", "3389", "3388", "3386", "3375", "3374", "3353", "3347", "3362", "3356",
@@ -133,9 +133,27 @@ test("renders all 30 product detail pages with main-store shopping links", async
 
   for (const id of ids) {
     const html = await fetchHtml(`/product/${id}`);
-    assert.ok(html.includes(`https://www.cnbuycha.com/AllProducts/${id}.html`));
+    assert.ok(html.includes('class="detail-cta" href="https://cnbuycha.com/'));
     assert.ok(html.includes("Recorded product value: ¥"));
     assert.ok(html.includes("PRODUCT ROUTE CHECKED"));
+  }
+});
+
+test("links product card images, titles, and buttons to matching main-store products", async () => {
+  for (const path of ["/", "/products", "/de/products"]) {
+    const html = await fetchHtml(path);
+    assert.ok(
+      html.includes('class="product-image" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow"'),
+      `${path} should link the product image directly to the main-store product`,
+    );
+    assert.ok(
+      html.includes('<h3><a href="https://cnbuycha.com/shoes/1011.html" rel="nofollow">Nike P6000&amp;Air Max 96</a></h3>'),
+      `${path} should link the product title directly to the main-store product`,
+    );
+    assert.ok(
+      html.includes('class="product-button" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow"'),
+      `${path} should keep the product button on the same destination`,
+    );
   }
 });
 

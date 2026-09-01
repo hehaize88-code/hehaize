@@ -58,7 +58,7 @@ test("serves production pages and crawler directives", async () => {
   ].map((match) => new URL(match[1]).hostname);
   assert.deepEqual(
     [...new Set(externalHrefs.filter((hostname) => hostname !== "cssbuychina.net"))],
-    ["www.cnbuycha.com"],
+    ["cnbuycha.com", "fonts.googleapis.com"],
   );
 
   const assetPaths = [

@@ -14,7 +14,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
     event.preventDefault();
     const value = query.trim();
     if (!value) return;
-    window.location.href = `https://www.cnbuycha.com/search.html?channelid=2&keywords=${encodeURIComponent(value)}`;
+    window.location.href = `https://cnbuycha.com/AllProducts/?q=${encodeURIComponent(value)}`;
   }
 
   return (

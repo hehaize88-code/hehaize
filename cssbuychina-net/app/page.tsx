@@ -5,7 +5,7 @@ import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { localizedCategories, localeCopy, localePrefix, SiteLocale } from "./i18n";
 import { categories, products } from "./site-data";
 
-const STORE_SEARCH = "https://www.cnbuycha.com/search.html?channelid=2&keywords=";
+const STORE_SEARCH = "https://cnbuycha.com/AllProducts/?q=";
 
 const languageTags: Record<SiteLocale, string> = { en: "en", "pt-br": "pt-BR", de: "de-DE", es: "es" };
 
@@ -206,7 +206,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
         <div className="product-grid">
           {visibleProducts.map((product) => (
             <article className="product-card" key={product.id}>
-              <a className="product-image" href={`/product/${product.id}`}>
+              <a className="product-image" href={product.storeUrl} rel="nofollow">
                 <img src={product.image} alt={product.name} loading="lazy" />
                 <span className="product-check">{copy.finds.checked}</span>
               </a>
@@ -215,7 +215,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
                   <span>{categoryCopy[product.category].name}</span>
                   <span>{product.checked}</span>
                 </div>
-                <h3><a href={`/product/${product.id}`}>{product.name}</a></h3>
+                <h3><a href={product.storeUrl} rel="nofollow">{product.name}</a></h3>
                 <div className="product-footer">
                   <div className="price">
                     <strong>≈ ${product.usd}</strong>

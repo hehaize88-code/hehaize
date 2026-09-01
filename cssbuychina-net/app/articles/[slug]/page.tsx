@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { InnerShell } from "../../components/InnerShell";
+import { products } from "../../site-data";
 import { ArticleSlug, articles } from "../article-data";
 
 const categoryArticleSlug = "cssbuy-spreadsheet-categories-explained";
 const categoryArticleImage = "https://cssbuychina.net/cssbuy-category-checks-article.webp";
+
+function productResource(id: string) {
+  const product = products.find((item) => item.id === id);
+  return { href: `/product/${id}`, label: `Review the ${product?.name ?? "current product"} find` };
+}
 
 const categoryDecisionRows = [
   { category: "Shoes", before: "Foot or insole length, exact size and color", qc: "Pair alignment, sole, finish, ruler photo", shipping: "Rigid box and crush protection", href: "/category/shoes", anchor: "CSSBuy Shoes Spreadsheet" },
@@ -22,35 +28,35 @@ function toIsoDate(date: string, fallback: string) {
 const categorySectionLinks: Record<string, Array<{ href: string; label: string }>> = {
   "Shoes: size evidence, pair alignment, and parcel volume": [
     { href: "/category/shoes", label: "Browse the CSSBuy Shoes Spreadsheet" },
-    { href: "/product/3402", label: "Review the Mixed Runner Sneaker find" },
-    { href: "/product/3401", label: "Review the Leather Loafer find" },
-    { href: "/product/3388", label: "Review the Runner Tatic sneaker listing" },
+    productResource("3402"),
+    productResource("3401"),
+    productResource("3388"),
   ],
   "Hoodies, T-shirts, and jackets: measurements before labels": [
     { href: "/category/hoodies-sweaters", label: "Browse the CSSBuy Hoodies Spreadsheet" },
     { href: "/category/t-shirts", label: "Browse the CSSBuy T-Shirts Spreadsheet" },
     { href: "/category/jackets", label: "Browse the CSSBuy Jackets Spreadsheet" },
-    { href: "/product/3393", label: "Review the Mertra-style hoodie find" },
-    { href: "/product/3353", label: "Review the long-sleeve polo find" },
-    { href: "/product/3356", label: "Review the long tailored coat find" },
+    productResource("3393"),
+    productResource("3353"),
+    productResource("3356"),
   ],
   "Jerseys: version, print, patches, and fit": [
     { href: "/category/jerseys", label: "Browse the CSSBuy Jersey Spreadsheet" },
-    { href: "/product/3208", label: "Review the Germany 2024 jersey find" },
-    { href: "/product/3206", label: "Review the Manchester City 2024 jersey find" },
-    { href: "/product/3204", label: "Review the Premier League 2024 jersey find" },
+    productResource("3208"),
+    productResource("3206"),
+    productResource("3204"),
   ],
   "Accessories and bags: dimensions, hardware, and included parts": [
     { href: "/category/accessories", label: "Browse the CSSBuy Accessories Spreadsheet" },
-    { href: "/product/3389", label: "Review the sport crossbody bag find" },
-    { href: "/product/3365", label: "Review the Royal Oak-style watch selection" },
-    { href: "/product/3364", label: "Review the mixed square-dial watch selection" },
+    productResource("3389"),
+    productResource("3365"),
+    productResource("3364"),
   ],
   "Electronics: route eligibility and limits of visual QC": [
     { href: "/category/electronics", label: "Browse the CSSBuy Electronics Spreadsheet" },
-    { href: "/product/3357", label: "Review the Galaxy Watch 8 listing" },
-    { href: "/product/3235", label: "Review the luxury smartwatch listing" },
-    { href: "/product/3184", label: "Review the Electronic Watch S8 listing" },
+    productResource("3357"),
+    productResource("3235"),
+    productResource("3184"),
   ],
 };
 
