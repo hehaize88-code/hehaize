@@ -118,7 +118,7 @@ export function SiteHeader({
               ))}
           </div>
         </details>
-        <a className="seo-guide-button" href="https://www.cnbuycha.com/" target="_blank" rel="noreferrer">
+        <a className="seo-guide-button" href="https://www.cnbuycha.com/" target="_blank" rel="noreferrer" data-track-event="main_site_click" data-cta-position="header">
           <span className="long-label">{currentLabels.shopMain}</span><span className="short-label">SHOP</span> ↗
         </a>
       </div>

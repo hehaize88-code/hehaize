@@ -185,7 +185,15 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           <p className="eyebrow">{content.eyebrow}</p>
           <h1>{content.title}{" "}<br /><em>{content.accent}</em></h1>
           <p className="hero-intro">{content.intro}</p>
-          <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" role="search">
+          <form
+            className="search-box"
+            action="https://www.cnbuycha.com/search.html"
+            method="get"
+            role="search"
+            aria-label={content.search}
+            data-track-event="search_submit"
+            data-cta-position="localized_home_search"
+          >
             <input type="hidden" name="channelid" value="2" />
             <span className="search-icon" aria-hidden="true">⌕</span>
             <input name="keywords" required placeholder={content.search} aria-label={content.search} />
@@ -220,7 +228,16 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
         </div>
         <div className="category-grid">
           {categories.map((category, index) => (
-            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+            <a
+              className="category-card"
+              href={category.href}
+              target="_blank"
+              rel="noreferrer"
+              data-track-event="category_click"
+              data-category={category.name}
+              data-cta-position="localized_home_category_grid"
+              key={category.name}
+            >
               <div className={`category-code ${category.color}`}>{category.code}</div>
               <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
               <h2>{content.names[index]}</h2><p>{content.notes[index]}</p><span className="card-arrow" aria-hidden="true">↗</span>
@@ -236,7 +253,15 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
         </div>
         <div className="product-showcase-grid">
           {products.map((product, index) => (
-            <Link className="product-card" href={`/${locale}/products/${product.slug}/`} key={product.slug}>
+            <Link
+              className="product-card"
+              href={`/${locale}/products/${product.slug}/`}
+              data-track-event="product_detail_click"
+              data-item-id={product.listingId}
+              data-category={product.category}
+              data-cta-position="localized_home_product_grid"
+              key={product.slug}
+            >
               <div className="product-card-image">
                 <SiteImage src={product.images[0]} alt={product.name} width={800} height={800} />
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>

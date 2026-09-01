@@ -29,7 +29,15 @@ export default function Home() {
           <p className="hero-intro">
             Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page.
           </p>
-          <form className="search-box" action="https://www.cnbuycha.com/search.html" method="get" role="search">
+          <form
+            className="search-box"
+            action="https://www.cnbuycha.com/search.html"
+            method="get"
+            role="search"
+            aria-label="Search live main-site products"
+            data-track-event="search_submit"
+            data-cta-position="home_search"
+          >
             <input type="hidden" name="channelid" value="2" />
             <span className="search-icon" aria-hidden="true">⌕</span>
             <input
@@ -44,9 +52,9 @@ export default function Home() {
             <span aria-hidden="true">↗</span><strong>Browse categories</strong><b aria-hidden="true">→</b>
           </a>
           <div className="proof-row" aria-label="Site features">
-            <div><span>09</span><small>Category<br />shortcuts</small></div>
-            <div><span>QC</span><small>First buying<br />guide</small></div>
-            <div><span>↗</span><small>Direct shopping<br />links</small></div>
+            <div><span>09</span><small>Live category<br />routes</small></div>
+            <div><span>08</span><small>Exact product<br />matches</small></div>
+            <div><span>USD</span><small>Prices shown<br />in dollars</small></div>
           </div>
         </div>
 
@@ -72,7 +80,16 @@ export default function Home() {
         </div>
         <div className="category-grid">
           {categories.map((category) => (
-            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+            <a
+              className="category-card"
+              href={category.href}
+              target="_blank"
+              rel="noreferrer"
+              data-track-event="category_click"
+              data-category={category.name}
+              data-cta-position="home_category_grid"
+              key={category.name}
+            >
               <CategoryCardContent category={category} />
             </a>
           ))}
@@ -89,7 +106,15 @@ export default function Home() {
         </div>
         <div className="product-showcase-grid">
           {products.map((product, index) => (
-            <Link className="product-card" href={`/products/${product.slug}/`} key={product.slug}>
+            <Link
+              className="product-card"
+              href={`/products/${product.slug}/`}
+              data-track-event="product_detail_click"
+              data-item-id={product.listingId}
+              data-category={product.category}
+              data-cta-position="home_product_grid"
+              key={product.slug}
+            >
               <div className="product-card-image">
                 <SiteImage src={product.images[0]} alt={product.name} width={800} height={800} />
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>
@@ -97,7 +122,7 @@ export default function Home() {
               <div className="product-card-copy">
                 <p>{product.category}</p>
                 <h3>{product.shortName}</h3>
-                <div><span>${product.price}</span><b>View details ↗</b></div>
+                <div><span>${product.price}</span><b>Details + live link ↗</b></div>
               </div>
             </Link>
           ))}
@@ -143,7 +168,7 @@ export default function Home() {
             <p className="step-label">BROWSE</p>
             <h3>Continue on the main site</h3>
             <p>Use the category shortcuts to explore related listings. Re-check the live product page because availability, price, variants and seller information can change.</p>
-            <a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse all products ↗</a>
+            <a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer" data-track-event="main_site_click" data-cta-position="workflow_all_products">Browse all products ↗</a>
           </article>
         </div>
       </section>
@@ -178,7 +203,7 @@ export default function Home() {
           <div><span>01</span><p><strong>Official function:</strong> UUFinds describes its website as a free QC finder for photos and videos.</p></div>
           <div><span>02</span><p><strong>Supported inputs:</strong> its App Store listing mentions 1688, Taobao, Weidian and shopping-agent link conversion.</p></div>
           <div><span>03</span><p><strong>Destination:</strong> The main shopping site publishes browsable category and product-detail pages.</p></div>
-          <div className="source-row"><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">Browse main-site products ↗</a></div>
+          <div className="source-row"><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer" data-track-event="main_site_click" data-cta-position="trust_all_products">Browse main-site products ↗</a></div>
         </div>
       </section>
 
@@ -221,7 +246,7 @@ export default function Home() {
             "@type": "WebSite",
             name: "UUFinds Sheet",
             url: "https://uufindssheet.com/",
-            description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
+            description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
             publisher: { "@type": "Organization", name: "UUFinds Sheet" },
           }),
         }}

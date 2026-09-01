@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = getProduct(slug);
   if (!product) return {};
 
-  const seoTitle = `${product.shortName} QC & Spreadsheet Guide | UUFinds`;
-  const seoDescription = `Research ${product.shortName} as a traceable spreadsheet find, match available QC photos by item ID and open the exact current product page.`;
+  const seoTitle = `${product.shortName} – $${product.price} | UUFinds`;
+  const seoDescription = `View ${product.shortName} at $${product.price} USD, check main-site item ${product.listingId}, review matching guidance and open the exact live product page.`;
 
   return {
     title: seoTitle,
@@ -46,7 +46,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <div className="guide-subnav"><Link className="back-link" href="/products/">← Back to product finds</Link></div>
 
       <div className="product-breadcrumb" aria-label="Breadcrumb">
-        <Link href="/">Home</Link><span>/</span><a href={product.categoryUrl} target="_blank" rel="noreferrer">{product.category}</a><span>/</span><strong>Product detail</strong>
+        <Link href="/">Home</Link><span>/</span><a href={product.categoryUrl} target="_blank" rel="noreferrer" data-track-event="category_click" data-category={product.category} data-cta-position="product_breadcrumb">{product.category}</a><span>/</span><strong>Product detail</strong>
       </div>
 
       <article className="product-detail">
@@ -75,8 +75,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div><small>MAIN-SITE ID</small><strong>{product.listingId}</strong></div>
           </div>
 
-          <a className="primary-product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">
-            View this product on the main site <span aria-hidden="true">↗</span>
+          <a
+            className="primary-product-cta"
+            href={product.mainSiteUrl}
+            target="_blank"
+            rel="noreferrer"
+            data-track-event="product_click"
+            data-item-id={product.listingId}
+            data-category={product.category}
+            data-cta-position="product_primary"
+          >
+            Open live product — ${product.price} <span aria-hidden="true">↗</span>
           </a>
 
           <div className="live-note">
@@ -102,7 +111,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div><p className="eyebrow">Evidence boundary</p><h2>Separate {product.shortName} listing media from QC media.</h2></div>
         <div>
           <p>UUFinds publicly describes QC-photo and QC-video discovery, image recognition and supported link handling, while also stating that it does not sell products. This independent page likewise does not process an order. It identifies the main-site product, explains what to inspect and keeps the final destination explicit.</p>
-          <div className="product-source-links"><a href={product.mainSiteUrl} target="_blank" rel="noreferrer">Main-site details ↗</a><a href={product.categoryUrl} target="_blank" rel="noreferrer">More {product.category} ↗</a><Link href="/guides/uufinds-qc-checklist/">QC checklist →</Link></div>
+          <div className="product-source-links"><a href={product.mainSiteUrl} target="_blank" rel="noreferrer" data-track-event="product_click" data-item-id={product.listingId} data-category={product.category} data-cta-position="product_source">Main-site details ↗</a><a href={product.categoryUrl} target="_blank" rel="noreferrer" data-track-event="category_click" data-category={product.category} data-cta-position="product_source">More {product.category} ↗</a><Link href="/guides/uufinds-qc-checklist/">QC checklist →</Link></div>
         </div>
       </section>
 
@@ -123,6 +132,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           sku: product.listingId,
           category: product.category,
           url: product.mainSiteUrl,
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "USD",
+            price: product.price,
+            url: product.mainSiteUrl,
+          },
         },
       }) }} />
     </main>

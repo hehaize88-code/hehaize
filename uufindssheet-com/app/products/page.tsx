@@ -7,12 +7,12 @@ import { products } from "./product-data";
 import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
-  title: "Product Detail Research with UUFinds QC Checks | UUFinds Sheet",
-  description: "Browse eight main-site product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
+  title: "UUFinds Products in USD | Live Links & QC Checks",
+  description: "Browse 8 current UUFinds product finds with USD prices, exact item IDs, listing images, QC checks and links to each live main-site product page.",
   alternates: localizedAlternates("/products/"),
   openGraph: {
-    title: "Product Detail Research with UUFinds QC Checks | UUFinds Sheet",
-    description: "Browse eight main-site product routes, understand what listing images can and cannot prove, and apply a fact-checked UUFinds QC research method.",
+    title: "UUFinds Products in USD | Live Links & QC Checks",
+    description: "Browse 8 current UUFinds product finds with USD prices, exact item IDs, listing images, QC checks and links to each live main-site product page.",
     url: "/products/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -31,14 +31,22 @@ export default function ProductsPage() {
       <section className="hub-content">
         <div className="product-showcase-grid">
           {products.map((product, index) => (
-            <Link className="product-card" href={`/products/${product.slug}/`} key={product.slug}>
+            <Link
+              className="product-card"
+              href={`/products/${product.slug}/`}
+              data-track-event="product_detail_click"
+              data-item-id={product.listingId}
+              data-category={product.category}
+              data-cta-position="products_grid"
+              key={product.slug}
+            >
               <div className="product-card-image">
                 <SiteImage src={product.images[0]} alt={product.name} width={800} height={800} />
                 <span>{String(index + 1).padStart(2, "0")} / 08</span>
               </div>
               <div className="product-card-copy">
                 <p>{product.category}</p><h2>{product.shortName}</h2>
-                <div><span>${product.price}</span><b>View details ↗</b></div>
+                <div><span>${product.price}</span><b>Details + live link ↗</b></div>
               </div>
             </Link>
           ))}

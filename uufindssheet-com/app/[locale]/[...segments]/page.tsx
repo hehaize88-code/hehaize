@@ -114,12 +114,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = policy
     ? `${policy.title} | UUFinds Sheet`
     : product
-      ? `${product.shortName} – ${t.guide} QC`
+      ? `${product.shortName} – $${product.price} | UUFinds`
       : guide
         ? `${guide.title} – ${t.guide}`
         : `${route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how} | UUFinds Sheet`;
   const path = `/${locale}/${route}/`;
-  const description = policy?.description ?? guide?.description ?? `${t.intro} ${t.check}`;
+  const description = policy?.description
+    ?? guide?.description
+    ?? (product
+      ? `${t.productDetail}: ${product.shortName}, $${product.price} USD, ID ${product.listingId}. ${t.check}`
+      : `${t.intro} ${t.check}`);
   return {
     title,
     description,
@@ -475,7 +479,16 @@ function LocalizedFinds({
       <section className="hub-content">
         <div className="category-grid">
           {categories.map((category) => (
-            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+            <a
+              className="category-card"
+              href={category.href}
+              target="_blank"
+              rel="noreferrer"
+              data-track-event="category_click"
+              data-category={category.name}
+              data-cta-position="localized_finds_category_grid"
+              key={category.name}
+            >
               <div className={`category-code ${category.color}`}>{category.code}</div>
               <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
               <h2>{routeCopy?.categories[category.name] ?? category.name}</h2>
@@ -629,12 +642,20 @@ function ProductGrid({
   return (
     <div className="product-showcase-grid">
       {products.map((item, index) => (
-        <Link className="product-card" href={`/${locale}/products/${item.slug}/`} key={item.slug}>
+        <Link
+          className="product-card"
+          href={`/${locale}/products/${item.slug}/`}
+          data-track-event="product_detail_click"
+          data-item-id={item.listingId}
+          data-category={item.category}
+          data-cta-position="localized_products_grid"
+          key={item.slug}
+        >
           <div className="product-card-image">
             <SiteImage src={item.images[0]} alt={item.name} width={800} height={800} />
             <span>{String(index + 1).padStart(2, "0")} / 08</span>
           </div>
-          <div className="product-card-copy"><p>{routeCopy?.categories[item.category] ?? item.category}</p><h2>{item.shortName}</h2><div><span>¥{item.price}</span><b>{localizeText(locale, "View details ↗")}</b></div></div>
+          <div className="product-card-copy"><p>{routeCopy?.categories[item.category] ?? item.category}</p><h2>{item.shortName}</h2><div><span>${item.price}</span><b>{localizeText(locale, "View details ↗")}</b></div></div>
         </Link>
       ))}
     </div>
@@ -653,7 +674,7 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
       <SiteHeader locale={t.region} routePath={`/products/${product.slug}/`} />
       <div className="guide-subnav"><Link className="back-link" href={`/${locale}/products/`}>← {t.backProducts}</Link></div>
       <div className="product-breadcrumb" aria-label={translate("Breadcrumb")}>
-        <Link href={`/${locale}/`}>{t.home}</Link><span>/</span><a href={product.categoryUrl} target="_blank" rel="noreferrer">{category}</a><span>/</span><strong>{t.productDetail}</strong>
+        <Link href={`/${locale}/`}>{t.home}</Link><span>/</span><a href={product.categoryUrl} target="_blank" rel="noreferrer" data-track-event="category_click" data-category={product.category} data-cta-position="localized_product_breadcrumb">{category}</a><span>/</span><strong>{t.productDetail}</strong>
       </div>
       <article className="product-detail">
         <div className="product-gallery">
@@ -675,8 +696,17 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
             <div><small>{translate("PRICE SHOWN")}</small><strong>${product.price}</strong></div>
             <div><small>{translate("MAIN-SITE ID")}</small><strong>{product.listingId}</strong></div>
           </div>
-          <a className="primary-product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">
-            {translate("View this product on the main site")} <span aria-hidden="true">↗</span>
+          <a
+            className="primary-product-cta"
+            href={product.mainSiteUrl}
+            target="_blank"
+            rel="noreferrer"
+            data-track-event="product_click"
+            data-item-id={product.listingId}
+            data-category={product.category}
+            data-cta-position="localized_product_primary"
+          >
+            {t.open.replace(/\s*↗$/, "")} — ${product.price} <span aria-hidden="true">↗</span>
           </a>
           <div className="live-note">
             <strong>{translate("Checked")} {translate(product.checked)}</strong>
@@ -712,8 +742,8 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
         <div>
           <p>{translate("UUFinds publicly describes QC-photo and QC-video discovery, image recognition and supported link handling, while also stating that it does not sell products. This independent page likewise does not process an order. It identifies the main-site product, explains what to inspect and keeps the final destination explicit.")}</p>
           <div className="product-source-links">
-            <a href={product.mainSiteUrl} target="_blank" rel="noreferrer">{translate("Main-site details ↗")}</a>
-            <a href={product.categoryUrl} target="_blank" rel="noreferrer">{translate("More")} {category} ↗</a>
+            <a href={product.mainSiteUrl} target="_blank" rel="noreferrer" data-track-event="product_click" data-item-id={product.listingId} data-category={product.category} data-cta-position="localized_product_source">{translate("Main-site details ↗")}</a>
+            <a href={product.categoryUrl} target="_blank" rel="noreferrer" data-track-event="category_click" data-category={product.category} data-cta-position="localized_product_source">{translate("More")} {category} ↗</a>
             <Link href={`/${locale}/guides/uufinds-qc-checklist/`}>{translate("QC checklist →")}</Link>
           </div>
         </div>
@@ -726,7 +756,7 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
         description: `${t.productDetail}: ${product.name}`,
         url: `https://uufindssheet.com/${locale}/products/${product.slug}/`,
         primaryImageOfPage: product.images[0],
-        dateModified: "2026-07-22",
+        dateModified: "2026-09-01",
         inLanguage: t.lang,
         mainEntity: {
           "@type": "Product",
@@ -735,6 +765,12 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
           sku: product.listingId,
           category,
           url: product.mainSiteUrl,
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "USD",
+            price: product.price,
+            url: product.mainSiteUrl,
+          },
         },
       }) }} />
     </main>

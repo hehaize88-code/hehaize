@@ -5,12 +5,12 @@ import { categories } from "../site-data";
 import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
-  title: "UUFinds Product Discovery Method & the main site Categories",
-  description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled main-site categories for shoes, clothing, accessories and electronics.",
+  title: "UUFinds Finds 2026 | 9 Live Product Categories",
+  description: "Explore 9 live UUFinds product categories, then open the matching main-site section for shoes, clothing, accessories, jerseys and electronics.",
   alternates: localizedAlternates("/finds/"),
   openGraph: {
-    title: "UUFinds Product Discovery Method & the main site Categories",
-    description: "Use a fact-checked UUFinds discovery method, then open nine clearly labeled main-site categories for shoes, clothing, accessories and electronics.",
+    title: "UUFinds Finds 2026 | 9 Live Product Categories",
+    description: "Explore 9 live UUFinds product categories, then open the matching main-site section for shoes, clothing, accessories, jerseys and electronics.",
     url: "/finds/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -29,7 +29,16 @@ export default function FindsPage() {
       <section className="hub-content">
         <div className="category-grid">
           {categories.map((category) => (
-            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+            <a
+              className="category-card"
+              href={category.href}
+              target="_blank"
+              rel="noreferrer"
+              data-track-event="category_click"
+              data-category={category.name}
+              data-cta-position="finds_category_grid"
+              key={category.name}
+            >
               <div className={`category-code ${category.color}`}>{category.code}</div>
               <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
               <h2>{category.name}</h2>

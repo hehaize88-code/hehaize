@@ -82,6 +82,10 @@ const worker = {
           page: clean(payload.page, 180),
           destination: clean(payload.destination, 180),
           label: clean(payload.label, 100),
+          itemId: clean(payload.itemId, 40),
+          category: clean(payload.category, 60),
+          ctaPosition: clean(payload.ctaPosition, 60),
+          language: clean(payload.language, 16),
           recordedAt: new Date().toISOString(),
         };
         console.log(JSON.stringify(trackedEvent));

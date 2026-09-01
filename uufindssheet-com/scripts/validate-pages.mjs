@@ -133,6 +133,8 @@ for (const locale of locales) {
     structure(await readPage("products/skyline-floatx-running-hiking-shoes")),
     `${locale} product detail must keep the English page structure`,
   );
+  assert.match(product, /"priceCurrency":"USD"/, `${locale} product detail must publish a USD Offer`);
+  assert.doesNotMatch(await readPage(`${locale}/products`), /¥/, `${locale} product grid must not label USD amounts as CNY`);
 
   for (const slug of guideSlugs) {
     const guide = await readPage(`${locale}/guides/${slug}`);
@@ -337,8 +339,8 @@ for (const locale of locales) {
 const home = await readPage("");
 const contiguousHome = home.replaceAll("<!-- -->", "");
 assertLocaleCluster(home, "/", "English home");
-assert.match(home, /<title>UUFinds Guide 2026: Spreadsheet, QC Photos &amp; Product Search<\/title>/);
-assert.match(home, /<meta name="description" content="Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more\."/);
+assert.match(home, /<title>UUFinds Spreadsheet 2026 \| Live Products &amp; QC Photos<\/title>/);
+assert.match(home, /<meta name="description" content="Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page\. Updated September 2026\."/);
 assert.match(contiguousHome, /<h1>Find with UUFinds\.<br\/?>(?:Check QC photos\.)<br\/?><em>Compare products\.<\/em><\/h1>/);
 assert.match(home, /Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page\./);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/shoes\/"/);
@@ -346,6 +348,10 @@ assert.match(home, /href="https:\/\/cnbuycha\.com\/hoodies-sweaters\/"/);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/jersey\/"/);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/accessories\/"/);
 assert.doesNotMatch(home, /href="\/categories\/(?:shoes|hoodies|jersey|accessories)\/"/);
+assert.equal(count(home, /data-track-event="category_click"/g), 9, "English home must track all category routes");
+assert.equal(count(home, /data-track-event="product_detail_click"/g), 8, "English home must track all product-detail routes");
+assert.match(home, /data-track-event="search_submit"/);
+assert.doesNotMatch(home, /googletagmanager\.com\/gtag\/js/, "static HTML must not include a second GA4 loader");
 
 const polishHome = await readPage("pl");
 const contiguousPolishHome = polishHome.replaceAll("<!-- -->", "");
@@ -387,23 +393,27 @@ for (const [slug, heading, visiblePhrase] of keywordGuideChecks) {
 assert.equal(assignedGuideTitles.size, keywordGuideChecks.length, "guide keyword targets must use distinct titles");
 
 const productKeywordChecks = [
-  ["skyline-floatx-running-hiking-shoes", "Skyline FLOATX Running and Hiking Shoes"],
-  ["loose-printed-hooded-sweater", "Loose Printed Hooded Sweater"],
-  ["printed-short-sleeve-collection-2", "Printed Short-Sleeve Collection 2"],
-  ["autumn-winter-loose-fitting-coat", "Autumn/Winter Loose-Fitting Coat"],
-  ["hello-kitty-plush-lounge-pants", "Hello Kitty Plush Lounge Pants"],
-  ["mlb-world-series-baseball-cap-collection", "MLB World Series Baseball Cap Collection"],
-  ["xjxpcs-fashion-backpack", "XJXPCS Fashion Backpack"],
-  ["galaxy-watch-ultra-8-smartwatch", "Galaxy Watch Ultra 8 Smartwatch"],
+  ["skyline-floatx-running-hiking-shoes", "Skyline FLOATX Running and Hiking Shoes", "30.28"],
+  ["loose-printed-hooded-sweater", "Loose Printed Hooded Sweater", "20.14"],
+  ["printed-short-sleeve-collection-2", "Printed Short-Sleeve Collection 2", "20.83"],
+  ["autumn-winter-loose-fitting-coat", "Autumn/Winter Loose-Fitting Coat", "34.31"],
+  ["hello-kitty-plush-lounge-pants", "Hello Kitty Plush Lounge Pants", "6.81"],
+  ["mlb-world-series-baseball-cap-collection", "MLB World Series Baseball Cap Collection", "9.58"],
+  ["xjxpcs-fashion-backpack", "XJXPCS Fashion Backpack", "12.36"],
+  ["galaxy-watch-ultra-8-smartwatch", "Galaxy Watch Ultra 8 Smartwatch", "30.28"],
 ];
-for (const [slug, productName] of productKeywordChecks) {
+for (const [slug, productName, price] of productKeywordChecks) {
   const html = await readPage(`products/${slug}`);
   const contiguousHtml = html.replaceAll("<!-- -->", "");
   const escapedName = escapeRegExp(productName);
-  assert.match(html, new RegExp(`<title>${escapedName} QC &amp; Spreadsheet Guide \\| UUFinds</title>`), `${slug} must own a unique product + QC/spreadsheet title`);
+  assert.match(html, new RegExp(`<title>${escapedName} – \\$${escapeRegExp(price)} \\| UUFinds</title>`), `${slug} must own a product + USD title`);
   assert.match(contiguousHtml, new RegExp(`<h1>${escapedName} QC &amp; Spreadsheet Guide</h1>`), `${slug} must own a unique product + QC/spreadsheet H1`);
   assert.ok(contiguousHtml.toLowerCase().includes(`${productName.toLowerCase()} spreadsheet find`), `${slug} must include its product-name + spreadsheet phrase in visible copy`);
   assert.ok(contiguousHtml.toLowerCase().includes(`review ${productName.toLowerCase()} qc evidence`), `${slug} must include its product-name + QC phrase in visible copy`);
+  assert.match(contiguousHtml, new RegExp(`Open live product — \\$${escapeRegExp(price)}`), `${slug} must show the price in its primary CTA`);
+  assert.match(html, /"@type":"Offer"/);
+  assert.match(html, /"priceCurrency":"USD"/);
+  assert.match(html, /data-track-event="product_click"/);
 }
 
 const categoryProductUrls = [];

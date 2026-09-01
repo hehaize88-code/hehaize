@@ -64,7 +64,17 @@ export default async function CategoryLandingPage({ params }: { params: Promise<
 
         <div className="product-showcase-grid category-listing-grid">
           {category.listings.map((listing, index) => (
-            <a className="product-card" href={listing.detailUrl} target="_blank" rel="noreferrer" key={listing.listingId}>
+            <a
+              className="product-card"
+              href={listing.detailUrl}
+              target="_blank"
+              rel="noreferrer"
+              data-track-event="product_click"
+              data-item-id={listing.listingId}
+              data-category={category.name}
+              data-cta-position="category_product_grid"
+              key={listing.listingId}
+            >
               <div className="product-card-image">
                 <SiteImage src={listing.image} alt={listing.name} width={750} height={750} />
                 <span>{String(index + 1).padStart(2, "0")} / {String(category.listings.length).padStart(2, "0")}</span>
@@ -98,7 +108,7 @@ export default async function CategoryLandingPage({ params }: { params: Promise<
 
         <div className="source-method-note">
           <p className="eyebrow">Listing check / September 1, 2026</p>
-          <p>Product names, displayed prices, listing IDs, images and detail-page destinations were checked against the current main-site category and product pages. A listing image is not a UUFinds QC photo. Confirm live price, available variants and matching QC evidence before making a decision. <a href={category.categoryUrl} target="_blank" rel="noreferrer">Open the complete {category.name.toLowerCase()} category ↗</a></p>
+          <p>Product names, displayed prices, listing IDs, images and detail-page destinations were checked against the current main-site category and product pages. A listing image is not a UUFinds QC photo. Confirm live price, available variants and matching QC evidence before making a decision. <a href={category.categoryUrl} target="_blank" rel="noreferrer" data-track-event="category_click" data-category={category.name} data-cta-position="category_footer">Open the complete {category.name.toLowerCase()} category ↗</a></p>
         </div>
       </section>
 

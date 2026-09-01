@@ -1,4 +1,3 @@
-import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClickTracker } from "./components/click-tracker";
@@ -17,15 +16,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uufindssheet.com"),
-  title: "UUFinds Guide 2026: Spreadsheet, QC Photos & Product Search",
-  description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
+  title: "UUFinds Spreadsheet 2026 | Live Products & QC Photos",
+  description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
   alternates: {
     canonical: "/",
     languages: { "x-default": "/", en: "/", "en-GB": "/en-gb/", "de-DE": "/de/", "pl-PL": "/pl/", "pt-BR": "/pt-br/" },
   },
   openGraph: {
-    title: "UUFinds Guide 2026: Spreadsheet, QC Photos & Product Search",
-    description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
+    title: "UUFinds Spreadsheet 2026 | Live Products & QC Photos",
+    description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
     url: "https://uufindssheet.com/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -33,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UUFinds Guide 2026: Spreadsheet, QC Photos & Product Search",
-    description: "Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more.",
+    title: "UUFinds Spreadsheet 2026 | Live Products & QC Photos",
+    description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
     images: [socialImage.url],
   },
   robots: {
@@ -67,20 +66,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-QY8MM7VZV2');
-          `}
-        </Script>
-{children}
+        {children}
         <ClickTracker />
       </body>
     </html>
