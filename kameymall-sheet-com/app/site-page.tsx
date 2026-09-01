@@ -34,6 +34,55 @@ import {
 const CNY_TO_USD = 0.1481;
 const SITE_URL = "https://kameymall-sheet.com";
 
+type AnalyticsParameters = Record<string, string | number | boolean>;
+
+function trackAnalyticsEvent(eventName: string, parameters: AnalyticsParameters) {
+  const analyticsWindow = window as Window & {
+    gtag?: (command: "event", name: string, params: AnalyticsParameters) => void;
+  };
+  analyticsWindow.gtag?.("event", eventName, {
+    ...parameters,
+    transport_type: "beacon",
+  });
+}
+
+function trackProductClick(product: Product, locale: Locale, placement: string) {
+  trackAnalyticsEvent("product_click", {
+    item_id: `KMS-${product.reference}`,
+    item_name: product.name,
+    item_category: product.categoryKey,
+    language: locale,
+    link_domain: "cnbuycha.com",
+    link_url: product.url,
+    outbound: true,
+    placement,
+    source_page: window.location.pathname,
+  });
+}
+
+function trackCategoryClick(category: CategoryKey, locale: Locale, placement: string) {
+  trackAnalyticsEvent("category_click", {
+    category,
+    language: locale,
+    link_domain: "cnbuycha.com",
+    link_url: categoryDestinations[category],
+    outbound: true,
+    placement,
+    source_page: window.location.pathname,
+  });
+}
+
+function trackMainSiteBrowseClick(locale: Locale, placement: string) {
+  trackAnalyticsEvent("main_site_browse_click", {
+    language: locale,
+    link_domain: "cnbuycha.com",
+    link_url: "https://cnbuycha.com/AllProducts/",
+    outbound: true,
+    placement,
+    source_page: window.location.pathname,
+  });
+}
+
 function usd(cny: number) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -178,6 +227,13 @@ function MainSearch({ locale, compact = false }: { locale: Locale; compact?: boo
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const keyword = String(form.get("q") ?? "").trim();
+    trackAnalyticsEvent("main_search_submit", {
+      language: locale,
+      link_domain: "cnbuycha.com",
+      outbound: true,
+      search_term: keyword,
+      source_page: window.location.pathname,
+    });
     if (!keyword) {
       window.location.assign("https://cnbuycha.com/AllProducts/");
       return;
@@ -257,9 +313,9 @@ function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: 
             {filteredProducts.length ? filteredProducts.map((product, index) => (
               <div className="product-row" role="row" key={product.reference}>
                 <div className="item-cell" role="cell">
-                  <a href={product.url} aria-label={`${copy.finder.open} ${product.name}`}><ProductImage product={product} priority={index === 0} /></a>
+                  <a href={product.url} aria-label={`${copy.finder.open} ${product.name}`} onClick={() => trackProductClick(product, locale, "find_table_image")}><ProductImage product={product} priority={index === 0} /></a>
                   <div>
-                    <a className="product-name" href={product.url}>{product.name}</a>
+                    <a className="product-name" href={product.url} onClick={() => trackProductClick(product, locale, "find_table_name")}>{product.name}</a>
                     <span>{copy.finder.original} · ¥{product.cny}</span>
                     <code>KMS-{product.reference}</code>
                   </div>
@@ -268,8 +324,8 @@ function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: 
                 <div className="price-cell" role="cell"><strong>{usd(product.cny)}</strong><small>{copy.finder.approximate}</small></div>
                 <div className="status-cell" role="cell"><span /> {copy.finder.listed}</div>
                 <div className="open-cell" role="cell">
-                  <a className="open-pill" href={product.url}>{copy.finder.open}</a>
-                  <a className="external-link" href={product.url} aria-label={`${copy.finder.open} ${product.name}`}><ArrowIcon external /></a>
+                  <a className="open-pill" href={product.url} onClick={() => trackProductClick(product, locale, "find_table_button")}>{copy.finder.open}</a>
+                  <a className="external-link" href={product.url} aria-label={`${copy.finder.open} ${product.name}`} onClick={() => trackProductClick(product, locale, "find_table_icon")}><ArrowIcon external /></a>
                 </div>
               </div>
             )) : <p className="empty-state">{copy.finder.noMatches}</p>}
@@ -301,7 +357,7 @@ function HomeHero({ locale }: { locale: Locale }) {
           <article><span className="proof-icon" aria-hidden="true">↗</span><div><strong>{copy.home.direct}</strong><small>{copy.home.listingPages}</small></div></article>
         </div>
         <div className="category-chips">
-          {chips.map((key) => <a key={key} href={categoryDestinations[key]}>{copy.categories.items[key].label}</a>)}
+          {chips.map((key) => <a key={key} href={categoryDestinations[key]} onClick={() => trackCategoryClick(key, locale, "home_category_chip")}>{copy.categories.items[key].label}</a>)}
         </div>
       </div>
       <FindBrowser locale={locale} featured />
@@ -329,6 +385,7 @@ function CategoriesSection({ locale, directToMainSite = false }: { locale: Local
             className="category-card"
             href={directToMainSite ? categoryDestinations[key] : routeHref(locale, categoryRoute(key))}
             key={key}
+            onClick={directToMainSite ? () => trackCategoryClick(key, locale, "home_category_card") : undefined}
           >
             <span className="category-number">{String(index + 1).padStart(2, "0")}</span>
             <h3>{copy.categories.items[key].label}</h3>
@@ -349,7 +406,7 @@ function HowSection({ locale }: { locale: Locale }) {
         <p className="section-kicker">{copy.how.kicker}</p>
         <h2>{copy.how.title}</h2>
         <p>{copy.how.intro}</p>
-        <a className="button button-primary" href="https://cnbuycha.com/AllProducts/">{copy.how.action} <ArrowIcon external /></a>
+        <a className="button button-primary" href="https://cnbuycha.com/AllProducts/" onClick={() => trackMainSiteBrowseClick(locale, "buying_workflow")}>{copy.how.action} <ArrowIcon external /></a>
       </div>
       <ol className="step-list">
         {copy.how.steps.map((step, index) => (
@@ -432,15 +489,15 @@ function ProductCard({ locale, product }: { locale: Locale; product: Product }) 
   const catalog = catalogCopies[locale];
   return (
     <article className="catalog-product-card">
-      <a className="catalog-product-image" href={product.url} aria-label={`${catalog.openLiveListing}: ${product.name}`}>
+      <a className="catalog-product-image" href={product.url} aria-label={`${catalog.openLiveListing}: ${product.name}`} onClick={() => trackProductClick(product, locale, "catalog_card_image")}>
         <ProductImage product={product} />
       </a>
       <div className="catalog-product-body">
         <a className="catalog-product-category" href={routeHref(locale, categoryRoute(product.categoryKey))}>{copy.categories.items[product.categoryKey].label}</a>
-        <h2><a href={product.url}>{product.name}</a></h2>
+        <h2><a href={product.url} onClick={() => trackProductClick(product, locale, "catalog_card_name")}>{product.name}</a></h2>
         <div className="catalog-product-meta"><strong>{usd(product.cny)}</strong><span>{cny(product.cny, locale)}</span></div>
         <code>KMS-{product.reference}</code>
-        <a className="catalog-product-link" href={product.url}>{catalog.openLiveListing} <ArrowIcon external /></a>
+        <a className="catalog-product-link" href={product.url} onClick={() => trackProductClick(product, locale, "catalog_card_button")}>{catalog.openLiveListing} <ArrowIcon external /></a>
       </div>
     </article>
   );
@@ -468,7 +525,7 @@ function CategoryCatalogPage({ locale, category }: { locale: Locale; category: C
           </div>
           <div className="catalog-hero-actions">
             <span><strong>{categoryProducts.length}</strong> {catalog.productsFound}</span>
-            <a className="button button-secondary" href={categoryDestinations[category]}>{catalog.openLiveCategory} <ArrowIcon external /></a>
+            <a className="button button-secondary" href={categoryDestinations[category]} onClick={() => trackCategoryClick(category, locale, "category_page_button")}>{catalog.openLiveCategory} <ArrowIcon external /></a>
           </div>
         </div>
       </section>
@@ -517,7 +574,7 @@ function ProductDetailPage({ locale, product }: { locale: Locale; product: Produ
           { label: product.name },
         ]} />
         <div className="product-detail">
-          <figure className="product-visual"><a href={product.url} aria-label={`${catalog.openLiveListing}: ${product.name}`}><ProductImage product={product} priority /></a></figure>
+          <figure className="product-visual"><a href={product.url} aria-label={`${catalog.openLiveListing}: ${product.name}`} onClick={() => trackProductClick(product, locale, "product_detail_image")}><ProductImage product={product} priority /></a></figure>
           <div className="product-summary">
             <p className="section-kicker">{catalog.productKicker}</p>
             <h1>{product.name}</h1>
@@ -529,7 +586,7 @@ function ProductDetailPage({ locale, product }: { locale: Locale; product: Produ
             </div>
             <p className="price-note">{catalog.priceNote}</p>
             <div className="product-cta-row">
-              <a className="button button-primary" href={product.url}>{catalog.openLiveListing} <ArrowIcon external /></a>
+              <a className="button button-primary" href={product.url} onClick={() => trackProductClick(product, locale, "product_detail_button")}>{catalog.openLiveListing} <ArrowIcon external /></a>
               <a className="button button-secondary" href={routeHref(locale, "finds")}>← {catalog.backToFinds}</a>
             </div>
           </div>
@@ -585,15 +642,6 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
     const page = route === articleRoute
       ? copy.articlePage
       : additionalArticles[locale][route as (typeof additionalArticleRoutes)[number]];
-    const seoLabels: Record<Locale, { keyword: string; title: string; description: string; details: string }> = {
-      en: { keyword: "Primary keyword", title: "SEO title", description: "SEO description", details: "SEO details" },
-      de: { keyword: "Hauptkeyword", title: "SEO-Titel", description: "SEO-Beschreibung", details: "SEO-Angaben" },
-      fr: { keyword: "Mot-clé principal", title: "Titre SEO", description: "Description SEO", details: "Données SEO" },
-      es: { keyword: "Palabra clave principal", title: "Título SEO", description: "Descripción SEO", details: "Datos SEO" },
-      it: { keyword: "Parola chiave principale", title: "Titolo SEO", description: "Descrizione SEO", details: "Dati SEO" },
-      pl: { keyword: "Główne słowo kluczowe", title: "Tytuł SEO", description: "Opis SEO", details: "Dane SEO" },
-    };
-    const labels = seoLabels[locale];
     return (
       <>
         <InnerHero locale={locale} route={route as Exclude<StaticRouteKey, "home">}>
@@ -603,7 +651,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
           <aside>
             <a href={routeHref(locale, "articles")}>← {copy.common.backToArticles}</a>
             <p>{copy.common.verifyNote}</p>
-            <a className="button button-primary" href="https://cnbuycha.com/AllProducts/">{copy.common.openProducts} <ArrowIcon external /></a>
+            <a className="button button-primary" href="https://cnbuycha.com/AllProducts/" onClick={() => trackMainSiteBrowseClick(locale, "article_sidebar")}>{copy.common.openProducts} <ArrowIcon external /></a>
           </aside>
           <div className="prose-body">
             <p className="prose-lede">{page.intro}</p>
@@ -616,13 +664,6 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
               </section>
             ))}
             <section className="takeaway"><h2>{page.conclusionTitle}</h2><p>{page.conclusion}</p></section>
-            {page.seoTitle && page.seoDescription ? (
-              <section className="seo-details" aria-label={labels.details}>
-                {page.primaryKeyword ? <p><strong>{labels.keyword}:</strong> {page.primaryKeyword}</p> : null}
-                <p><strong>{labels.title}:</strong> {page.seoTitle}</p>
-                <p><strong>{labels.description}:</strong> {page.seoDescription}</p>
-              </section>
-            ) : null}
           </div>
         </article>
       </>
@@ -636,7 +677,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
         <aside>
           <a href={routeHref(locale, "guides")}>← {copy.common.backToGuides}</a>
           <p>{copy.common.verifyNote}</p>
-          <a className="button button-primary" href="https://cnbuycha.com/AllProducts/">{copy.common.openProducts} <ArrowIcon external /></a>
+          <a className="button button-primary" href="https://cnbuycha.com/AllProducts/" onClick={() => trackMainSiteBrowseClick(locale, "guide_sidebar")}>{copy.common.openProducts} <ArrowIcon external /></a>
         </aside>
         <div className="prose-body">
           <p className="prose-lede">{page.intro}</p>

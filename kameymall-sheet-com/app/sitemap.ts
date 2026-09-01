@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { languages, routeHref, supportedRoutes } from "./site-content";
 
 const SITE_URL = "https://kameymall-sheet.com";
+const SITE_LAST_MODIFIED = new Date("2026-09-01T00:00:00Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return languages.flatMap((language) =>
@@ -9,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const path = routeHref(language.code, route);
       return {
         url: `${SITE_URL}${path === "/" ? "" : path}`,
-        lastModified: new Date(route === "articles/kameymall-tracking-no-update-guide" || route === "home" || route === "articles" ? "2026-08-29T00:00:00Z" : route === "articles/kameymall-shipping-lines-comparison" ? "2026-08-27T00:00:00Z" : route === "articles/kameymall-consolidation-vs-split-parcels" ? "2026-08-13T00:00:00Z" : route === "articles/kameymall-order-status-guide" ? "2026-08-11T00:00:00Z" : "2026-08-09T00:00:00Z"),
+        lastModified: SITE_LAST_MODIFIED,
         changeFrequency: route === "home" || route === "finds" || route === "articles" ? "weekly" as const : "monthly" as const,
         priority: route === "home" ? 1 : route === "finds" || route === "articles" ? 0.85 : 0.72,
       };

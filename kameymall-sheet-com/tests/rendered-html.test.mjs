@@ -88,7 +88,7 @@ test("keeps complete translated page structure", async () => {
   assert.equal(frenchHome.status, 200);
   const homeHtml = await frenchHome.text();
   assert.match(homeHtml, /Tableur KameyMall 2026/);
-  assert.match(homeHtml, /Articles SEO/);
+  assert.match(homeHtml, /Guides d’achat/);
   assert.match(homeHtml, /Articles KameyMall (?:vérifiés|fondés sur la recherche)/i);
   assert.equal(frenchGuide.status, 200);
   const guideHtml = await frenchGuide.text();
@@ -200,6 +200,38 @@ test("renders eight homepage finds, thirty catalog finds, and direct matching pr
   assert.match(homeHtml, /href="https:\/\/cnbuycha\.com\/shoes\/3366\.html"/);
   assert.match(homeHtml, /href="\/categories\/shoes"/);
   assert.match(homeHtml, /class="product-name" href="https:\/\/cnbuycha\.com\/shoes\/3366\.html"/);
+});
+
+test("tracks every high-intent main-site action with product-level GA4 events", async () => {
+  const source = await readFile(new URL("../app/site-page.tsx", import.meta.url), "utf8");
+  for (const eventName of ["product_click", "category_click", "main_search_submit", "main_site_browse_click"]) {
+    assert.ok(source.includes(`\"${eventName}\"`), `${eventName} analytics event`);
+  }
+  for (const parameter of ["item_id", "item_name", "item_category", "language", "link_url", "placement", "source_page", "transport_type"]) {
+    assert.ok(source.includes(parameter), `${parameter} analytics parameter`);
+  }
+});
+
+test("keeps internal SEO planning labels out of every visible language", async () => {
+  const worker = await loadWorker();
+  const internalLabels = /\bSEO\b|Primary keyword|Hauptkeyword|Mot-clé principal|Palabra clave principal|Parola chiave principale|Główne słowo kluczowe/i;
+  for (const prefix of ["", "/de", "/fr", "/es", "/it", "/pl"]) {
+    for (const route of ["", "/articles", "/articles/kameymall-spreadsheet-guide-2026"]) {
+      const pathname = `${prefix}${route}` || "/";
+      const html = await (await render(worker, pathname)).text();
+      assert.doesNotMatch(visibleText(html), internalLabels, pathname);
+    }
+  }
+});
+
+test("marks every canonical sitemap URL with the current site update date", async () => {
+  const worker = await loadWorker();
+  const response = await render(worker, "/sitemap.xml");
+  assert.equal(response.status, 200);
+  const sitemap = await response.text();
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 360);
+  assert.equal((sitemap.match(/<lastmod>2026-09-01T00:00:00\.000Z<\/lastmod>/g) ?? []).length, 360);
+  assert.doesNotMatch(sitemap, /<lastmod>2026-08-/);
 });
 
 function imageTags(html) {
