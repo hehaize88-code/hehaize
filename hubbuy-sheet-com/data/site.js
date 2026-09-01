@@ -1,4 +1,5 @@
 import { categoryPages } from "./categories.js";
+import { mainCatalogBySourceId } from "./main-catalog.js";
 
 export const MAIN_SITE = "https://www.cnbuycha.com";
 export const SITE_URL = "https://hubbuy-sheet.com";
@@ -28,6 +29,12 @@ const localImages = new Map([
 ]);
 
 function referenceProduct(id, name, price, category, sourceId, remoteImage) {
+  const liveProduct = mainCatalogBySourceId.get(String(sourceId));
+  const liveImage = liveProduct?.image?.startsWith("http")
+    ? liveProduct.image
+    : liveProduct?.image
+      ? `${MAIN_SITE}${liveProduct.image}`
+      : null;
   return {
     id,
     name,
@@ -35,8 +42,8 @@ function referenceProduct(id, name, price, category, sourceId, remoteImage) {
     category,
     sourceId,
     checked,
-    image: localImages.get(id) || remoteImage,
-    href: `${MAIN_SITE}/AllProducts/${id}.html`,
+    image: liveImage || localImages.get(id) || remoteImage,
+    href: liveProduct ? `${MAIN_SITE}${liveProduct.path}` : `${MAIN_SITE}/AllProducts/${id}.html`,
     localHref: `/products/${id}/`,
   };
 }

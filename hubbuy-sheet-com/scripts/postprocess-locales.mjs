@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { articles } from "../data/articles.js";
 import { categoryPages } from "../data/categories.js";
@@ -332,3 +332,4 @@ for (const name of ["sitemap.xml", "sitemap-en.xml", "sitemap-pt-br.xml", "sitem
   robots += `\nSitemap: ${siteUrl}/${name}`;
 }
 writeFileSync(robotsPath, `${robots}\n`);
+copyFileSync(resolve("_worker.js"), resolve(outputRoot, "_worker.js"));
