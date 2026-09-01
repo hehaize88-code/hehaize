@@ -1,3 +1,55 @@
+const PRODUCT_IDS = Object.freeze({
+  'acg-sup-pullover-sweatshirt-3374': '3374',
+  'acne-studios-longsleeve-3350': '3350',
+  'ap-swatch-rolex-watch-3363': '3363',
+  'canada-goose-sweatshirt-3380': '3380',
+  'celine-coat-3356': '3356',
+  'coach-backpack-styles-3377': '3377',
+  'corteiz-c-star-sweater-3368': '3368',
+  'designer-tie-3373': '3373',
+  'fuzzy-slippers-3379': '3379',
+  'goyard-umbrella-3268': '3268',
+  'gucci-hat-3371': '3371',
+  'gucci-perfume-3344': '3344',
+  'gucci-tracksuit-3362': '3362',
+  'hoka-speedgoat-5-3359': '3359',
+  'jellycat-3361': '3361',
+  'labubu-coke-pendant-3315': '3315',
+  'louis-vuitton-jacket-3354': '3354',
+  'louis-vuitton-wallet-3382': '3382',
+  'maison-margiela-hoodie-3360': '3360',
+  'new-balance-1906r-3378': '3378',
+  'nike-air-more-uptempo-slippers-3366': '3366',
+  'nike-sweater-3375': '3375',
+  'numeris-rick-owens-shoes-3367': '3367',
+  'off-white-hoodies-3369': '3369',
+  'polo-ralph-lauren-long-sleeve-3353': '3353',
+  'rimowa-luggage-3376': '3376',
+  'royal-oak-swatch-rolex-watches-3365': '3365',
+  'snow-ski-goggles-3372': '3372',
+  'square-dial-pocket-watches-3364': '3364',
+  'ugg-gloves-3381': '3381'
+});
+
+function productDestination(pathname) {
+  const match = pathname.match(/^\/(?:(?:de|fr|es|it|pl|pt)\/)?finds\/([^/]+)\/?$/);
+  const id = match && PRODUCT_IDS[match[1]];
+  return id ? `https://www.cnbuycha.com/AllProducts/${id}.html` : null;
+}
+
+const PRODUCT_LINK_REWRITER = {
+  element(element) {
+    const href = element.getAttribute('href');
+    if (!href) return;
+    try {
+      const resolved = new URL(href, 'https://pikobuy-sheet.net');
+      if (resolved.hostname !== 'pikobuy-sheet.net' && resolved.hostname !== 'www.pikobuy-sheet.net') return;
+      const destination = productDestination(resolved.pathname);
+      if (destination) element.setAttribute('href', destination);
+    } catch {}
+  }
+};
+
 const ROUTES = new Set([
   '/articles/pikobuy-taobao-finds-compare-options/',
   '/articles/pikobuy-keyword-search-product-finds/',
@@ -384,6 +436,8 @@ export default {
   const url=new URL(request.url);
   if(url.hostname==="www.pikobuy-sheet.net"){url.hostname="pikobuy-sheet.net";return Response.redirect(url.toString(),301);}
   if(url.pathname==="/sitemap-main.xml"){url.pathname="/sitemap.xml";return Response.redirect(url.toString(),301);}
+  const destination=productDestination(url.pathname);
+  if(destination&&(request.method==='GET'||request.method==='HEAD'))return Response.redirect(destination,302);
   const isStatic=STATIC_FILES.has(url.pathname)||STATIC_PREFIXES.some(p=>url.pathname.startsWith(p));
   if(!ROUTES.has(url.pathname)&&!isStatic){
    const page=await env.ASSETS.fetch(new Request(new URL('/404.html',url),request));
@@ -397,7 +451,10 @@ export default {
    headers.set('cache-control','public, max-age=0, s-maxage=86400, stale-while-revalidate=604800');
    headers.delete('content-length');
    const htmlResponse=new Response(response.body,{status:response.status,headers});
-   return new HTMLRewriter().on('head',{element(element){element.append(GA_SNIPPET,{html:true});}}).transform(htmlResponse);
+   return new HTMLRewriter()
+    .on('head',{element(element){element.append(GA_SNIPPET,{html:true});}})
+    .on('a[href]',PRODUCT_LINK_REWRITER)
+    .transform(htmlResponse);
   }
   return new Response(response.body,{status:response.status,headers});
  }
