@@ -5,14 +5,14 @@ import {
 } from "../worker/security-headers.ts";
 
 const productDestinations = Object.freeze({
-  "snow-ski-goggles": "3372",
-  "gucci-hat": "3371",
-  "off-white-hoodies": "3369",
-  "numeris-high-top-shoes": "3367",
-  "hoka-speedgoat-5": "3359",
-  "nike-elite-backpack": "3346",
-  "balenciaga-puffer": "3343",
-  "winter-hooded-jacket": "3341",
+  "snow-ski-goggles": "3359",
+  "gucci-hat": "3353",
+  "off-white-hoodies": "3413",
+  "numeris-high-top-shoes": "3355",
+  "hoka-speedgoat-5": "3328",
+  "nike-elite-backpack": "3295",
+  "balenciaga-puffer": "3312",
+  "winter-hooded-jacket": "3374",
 });
 
 function productDestination(pathname) {

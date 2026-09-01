@@ -102,7 +102,7 @@ const productRedirectResponse = await worker.default.fetch(
 if (
   productRedirectResponse.status !== 302 ||
   productRedirectResponse.headers.get("location") !==
-    "https://www.cnbuycha.com/AllProducts/3372.html"
+    "https://www.cnbuycha.com/AllProducts/3359.html"
 ) {
   throw new Error("Product detail routes must redirect to the matching main-site product");
 }

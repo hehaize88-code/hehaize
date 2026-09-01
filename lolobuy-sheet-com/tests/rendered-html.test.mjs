@@ -342,14 +342,14 @@ test("homepage fourth edit is Jersey and commercial links are qualified", async 
 test("product cards open their exact matching main-site product pages", async () => {
   const worker = await loadWorker();
   const expectedProductUrls = [
-    "3372",
-    "3371",
-    "3369",
-    "3367",
     "3359",
-    "3346",
-    "3343",
-    "3341",
+    "3353",
+    "3413",
+    "3355",
+    "3328",
+    "3295",
+    "3312",
+    "3374",
   ].map((id) => `https://www.cnbuycha.com/AllProducts/${id}.html`);
 
   for (const path of ["/", "/finds"]) {
