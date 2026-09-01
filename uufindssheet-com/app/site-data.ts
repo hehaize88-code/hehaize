@@ -4,19 +4,18 @@ export type Category = {
   note: string;
   href: string;
   color: string;
-  landingHref?: string;
 };
 
 export const categories: Category[] = [
-  { code: "01", name: "Shoes", note: "Sneakers & footwear", href: "https://www.cnbuycha.com/shoes/", color: "blue", landingHref: "/categories/shoes/" },
-  { code: "02", name: "Hoodies", note: "Sweaters & sweatshirts", href: "https://www.cnbuycha.com/hoodies-sweaters/", color: "lime", landingHref: "/categories/hoodies/" },
-  { code: "03", name: "T-Shirts", note: "Tees & tops", href: "https://www.cnbuycha.com/t-shirts/", color: "ink" },
-  { code: "04", name: "Jackets", note: "Coats & outerwear", href: "https://www.cnbuycha.com/jackets/", color: "blue" },
-  { code: "05", name: "Pants", note: "Pants & shorts", href: "https://www.cnbuycha.com/pants-shorts/", color: "lime" },
-  { code: "06", name: "Headwear", note: "Caps & hats", href: "https://www.cnbuycha.com/headwear/", color: "ink" },
-  { code: "07", name: "Accessories", note: "Bags, wallets & more", href: "https://www.cnbuycha.com/accessories/", color: "blue", landingHref: "/categories/accessories/" },
-  { code: "08", name: "Jersey", note: "Teamwear finds", href: "https://www.cnbuycha.com/Jersey/", color: "lime", landingHref: "/categories/jersey/" },
-  { code: "09", name: "Electronics", note: "Tech & gadgets", href: "https://www.cnbuycha.com/electronics/", color: "ink" },
+  { code: "01", name: "Shoes", note: "Sneakers & footwear", href: "https://cnbuycha.com/shoes/", color: "blue" },
+  { code: "02", name: "Hoodies", note: "Sweaters & sweatshirts", href: "https://cnbuycha.com/hoodies-sweaters/", color: "lime" },
+  { code: "03", name: "T-Shirts", note: "Tees & tops", href: "https://cnbuycha.com/t-shirts/", color: "ink" },
+  { code: "04", name: "Jackets", note: "Coats & outerwear", href: "https://cnbuycha.com/jackets/", color: "blue" },
+  { code: "05", name: "Pants", note: "Pants & shorts", href: "https://cnbuycha.com/pants-shorts/", color: "lime" },
+  { code: "06", name: "Headwear", note: "Caps & hats", href: "https://cnbuycha.com/headwear/", color: "ink" },
+  { code: "07", name: "Accessories", note: "Bags, wallets & more", href: "https://cnbuycha.com/accessories/", color: "blue" },
+  { code: "08", name: "Jersey", note: "Teamwear finds", href: "https://cnbuycha.com/jersey/", color: "lime" },
+  { code: "09", name: "Electronics", note: "Tech & gadgets", href: "https://cnbuycha.com/electronics/", color: "ink" },
 ];
 
 type ArticleCard = {

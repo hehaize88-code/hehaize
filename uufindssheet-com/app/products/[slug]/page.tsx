@@ -71,7 +71,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p className="product-deck">Use this {product.shortName} spreadsheet find as a traceable starting point. These are images published with the corresponding main-site listing, not a claimed UUFinds QC album. Keep the item ID attached, then compare separately matched QC material when it exists.</p>
 
           <div className="product-price-row">
-            <div><small>PRICE SHOWN</small><strong>¥{product.price}</strong></div>
+            <div><small>PRICE SHOWN</small><strong>${product.price}</strong></div>
             <div><small>MAIN-SITE ID</small><strong>{product.listingId}</strong></div>
           </div>
 
@@ -115,7 +115,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         description: `Independent ${product.name} spreadsheet find with QC research steps and a direct link to the matching current product page.`,
         url: `https://uufindssheet.com/products/${product.slug}/`,
         primaryImageOfPage: product.images[0],
-        dateModified: "2026-08-08",
+        dateModified: "2026-09-01",
         mainEntity: {
           "@type": "Product",
           name: product.name,

@@ -56,10 +56,10 @@ export default async function CategoryLandingPage({ params }: { params: Promise<
       <section className="hub-content">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Distinct product finds / Checked August 8, 2026</p>
+            <p className="eyebrow">Distinct product finds / Checked September 1, 2026</p>
             <h2>Compare before opening a listing.</h2>
           </div>
-          <p>Displayed prices are in CNY and may change. Each card opens the exact matching product detail page.</p>
+          <p>Displayed prices are in USD and may change. Each card opens the exact matching product detail page.</p>
         </div>
 
         <div className="product-showcase-grid category-listing-grid">
@@ -73,7 +73,7 @@ export default async function CategoryLandingPage({ params }: { params: Promise<
                 <p>{category.name} · ID {listing.listingId}</p>
                 <h2>{listing.name}</h2>
                 <p className="category-listing-note">{listing.filterNote}</p>
-                <div><span>¥{listing.price}</span><b>Open exact detail ↗</b></div>
+                <div><span>${listing.price}</span><b>Open exact detail ↗</b></div>
               </div>
             </a>
           ))}
@@ -97,7 +97,7 @@ export default async function CategoryLandingPage({ params }: { params: Promise<
         </section>
 
         <div className="source-method-note">
-          <p className="eyebrow">Listing check / August 8, 2026</p>
+          <p className="eyebrow">Listing check / September 1, 2026</p>
           <p>Product names, displayed prices, listing IDs, images and detail-page destinations were checked against the current main-site category and product pages. A listing image is not a UUFinds QC photo. Confirm live price, available variants and matching QC evidence before making a decision. <a href={category.categoryUrl} target="_blank" rel="noreferrer">Open the complete {category.name.toLowerCase()} category ↗</a></p>
         </div>
       </section>

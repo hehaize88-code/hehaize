@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { categories } from "../site-data";
@@ -30,23 +29,13 @@ export default function FindsPage() {
       <section className="hub-content">
         <div className="category-grid">
           {categories.map((category) => (
-            category.landingHref ? (
-              <Link className="category-card" href={category.landingHref} key={category.name}>
-                <div className={`category-code ${category.color}`}>{category.code}</div>
-                <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
-                <h2>{category.name}</h2>
-                <p>{category.note}</p>
-                <span className="card-arrow" aria-hidden="true">↗</span>
-              </Link>
-            ) : (
-              <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
-                <div className={`category-code ${category.color}`}>{category.code}</div>
-                <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
-                <h2>{category.name}</h2>
-                <p>{category.note}</p>
-                <span className="card-arrow" aria-hidden="true">↗</span>
-              </a>
-            )
+            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+              <div className={`category-code ${category.color}`}>{category.code}</div>
+              <div className="category-symbol" aria-hidden="true">{category.name.slice(0, 2).toUpperCase()}</div>
+              <h2>{category.name}</h2>
+              <p>{category.note}</p>
+              <span className="card-arrow" aria-hidden="true">↗</span>
+            </a>
           ))}
         </div>
 

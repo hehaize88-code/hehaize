@@ -672,7 +672,7 @@ function LocalizedProduct({ locale, product }: { locale: Locale; product: Produc
           <h1>{product.shortName}</h1>
           <p className="product-deck">{translate("These are images published with the corresponding main-site listing, not a claimed UUFinds QC album. Use the item ID to keep the listing traceable, then compare separately matched QC material when it exists.")}</p>
           <div className="product-price-row">
-            <div><small>{translate("PRICE SHOWN")}</small><strong>¥{product.price}</strong></div>
+            <div><small>{translate("PRICE SHOWN")}</small><strong>${product.price}</strong></div>
             <div><small>{translate("MAIN-SITE ID")}</small><strong>{product.listingId}</strong></div>
           </div>
           <a className="primary-product-cta" href={product.mainSiteUrl} target="_blank" rel="noreferrer">

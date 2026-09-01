@@ -244,7 +244,7 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
               <div className="product-card-copy">
                 <p>{pl?.productCategories[product.category] ?? product.category}</p>
                 <h3>{product.shortName}</h3>
-                <div><span>¥{product.price}</span><b>{content.nav.products} ↗</b></div>
+                <div><span>${product.price}</span><b>{content.nav.products} ↗</b></div>
               </div>
             </Link>
           ))}

@@ -38,7 +38,7 @@ export default function ProductsPage() {
               </div>
               <div className="product-card-copy">
                 <p>{product.category}</p><h2>{product.shortName}</h2>
-                <div><span>¥{product.price}</span><b>View details ↗</b></div>
+                <div><span>${product.price}</span><b>View details ↗</b></div>
               </div>
             </Link>
           ))}
@@ -58,7 +58,7 @@ export default function ProductsPage() {
         </section>
 
         <div className="source-method-note">
-          <p className="eyebrow">Research rule / Reviewed July 23, 2026</p>
+          <p className="eyebrow">Research rule / Reviewed September 1, 2026</p>
           <p>UUFinds publicly supports QC-photo and QC-video discovery, image recognition and marketplace or agent-link handling, but it does not sell the products. These product cards lead only to the main site, where current listing information must be confirmed.</p>
         </div>
       </section>

@@ -27,21 +27,21 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       Electronics: "Elektronik",
     },
     inspections: {
-      "hoka-speedgoat-5-trail-running-shoes":
-        "Form des Obermaterials, Sohlenprofil, Fersenkonstruktion, Seitenflächen und sichtbare Nähte",
-      "maison-margiela-hoodie":
+      "skyline-floatx-running-hiking-shoes":
+        "Form des Obermaterials, Dämpfung, Sohlenprofil, Fersenkonstruktion und sichtbare Nähte",
+      "loose-printed-hooded-sweater":
         "Stoffstruktur, Kapuzenform, Position des Drucks, Bündchen, Saum und Ausrichtung der Nähte",
-      "louis-vuitton-tee":
+      "printed-short-sleeve-collection-2":
         "Kragenform, Position des Motivs, Stoffoberfläche, Ärmellänge und Saumnaht",
-      "celine-coat":
+      "autumn-winter-loose-fitting-coat":
         "Gesamtsilhouette, Verschlüsse, Futter, Taschen, Bündchen und Verarbeitung der Nähte",
-      "hello-kitty-plush-pants":
+      "hello-kitty-plush-lounge-pants":
         "Flor des Materials, Klarheit des Motivs, Bund, Beinproportionen und Verarbeitung der Innennaht",
-      "era-hats":
+      "mlb-world-series-baseball-cap-collection":
         "Form der Krone, Stickerei, Rundung des Schirms, Innenband und Verstellmechanismus",
-      "nike-elite-backpack":
+      "xjxpcs-fashion-backpack":
         "Reißverschlüsse, Nähte der Träger, Taschenaufteilung, Ausrichtung der Flächen und Innenraum",
-      "samsung-galaxy-watch8":
+      "galaxy-watch-ultra-8-smartwatch":
         "Display, Gehäuse, Tasten, Bandanschluss, Ladezubehör und Inhalt der Verpackung",
     },
     guides: {
@@ -100,21 +100,21 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       Electronics: "Elektronika",
     },
     inspections: {
-      "hoka-speedgoat-5-trail-running-shoes":
-        "kształt cholewki, wzór podeszwy, konstrukcja pięty, panele boczne i widoczne szwy",
-      "maison-margiela-hoodie":
+      "skyline-floatx-running-hiking-shoes":
+        "kształt cholewki, amortyzację, wzór podeszwy, konstrukcję pięty i widoczne szwy",
+      "loose-printed-hooded-sweater":
         "faktura materiału, kształt kaptura, położenie nadruku, mankiety, dół i ułożenie szwów",
-      "louis-vuitton-tee":
+      "printed-short-sleeve-collection-2":
         "kształt kołnierza, położenie grafiki, powierzchnia materiału, długość rękawów i szew dolny",
-      "celine-coat":
+      "autumn-winter-loose-fitting-coat":
         "ogólna sylwetka, zapięcia, podszewka, kieszenie, mankiety i wykończenie szwów",
-      "hello-kitty-plush-pants":
+      "hello-kitty-plush-lounge-pants":
         "runo materiału, wyrazistość nadruku, pas, proporcje nogawek i wykończenie szwu wewnętrznego",
-      "era-hats":
+      "mlb-world-series-baseball-cap-collection":
         "kształt korony, haft, wygięcie daszka, taśma wewnętrzna i mechanizm regulacji",
-      "nike-elite-backpack":
+      "xjxpcs-fashion-backpack":
         "tory zamków, szwy pasków, układ kieszeni, ułożenie paneli i przestrzeń wewnętrzna",
-      "samsung-galaxy-watch8":
+      "galaxy-watch-ultra-8-smartwatch":
         "ekran, koperta, przyciski, mocowanie paska, akcesoria do ładowania i zawartość opakowania",
     },
     guides: {
@@ -173,21 +173,21 @@ export const localizedRouteCopy: Record<Exclude<LocalizedRouteLocale, "en-gb">, 
       Electronics: "Eletrônicos",
     },
     inspections: {
-      "hoka-speedgoat-5-trail-running-shoes":
-        "formato do cabedal, desenho do solado, construção do calcanhar, painéis laterais e costuras visíveis",
-      "maison-margiela-hoodie":
+      "skyline-floatx-running-hiking-shoes":
+        "formato do cabedal, amortecimento, desenho do solado, construção do calcanhar e costuras visíveis",
+      "loose-printed-hooded-sweater":
         "textura do tecido, formato do capuz, posição da estampa, punhos, barra e alinhamento das costuras",
-      "louis-vuitton-tee":
+      "printed-short-sleeve-collection-2":
         "formato da gola, posição da arte, superfície do tecido, comprimento das mangas e costura da barra",
-      "celine-coat":
+      "autumn-winter-loose-fitting-coat":
         "silhueta geral, ferragens de fechamento, forro, bolsos, punhos e acabamento das costuras",
-      "hello-kitty-plush-pants":
+      "hello-kitty-plush-lounge-pants":
         "textura felpuda, nitidez da estampa, cós, proporções das pernas e acabamento da costura interna",
-      "era-hats":
+      "mlb-world-series-baseball-cap-collection":
         "formato da copa, bordado, curvatura da aba, faixa interna e mecanismo de ajuste",
-      "nike-elite-backpack":
+      "xjxpcs-fashion-backpack":
         "trilhos dos zíperes, costuras das alças, distribuição dos bolsos, alinhamento dos painéis e espaço interno",
-      "samsung-galaxy-watch8":
+      "galaxy-watch-ultra-8-smartwatch":
         "tela, caixa, botões, encaixe da pulseira, acessórios de carregamento e conteúdo da embalagem",
     },
     guides: {

@@ -83,7 +83,7 @@ for (const locale of locales) {
   assert.match(home, /class="hero"/, `${locale} home must use the primary hero`);
   assert.match(home, /class="hero-visual"/, `${locale} home must keep the hero visual`);
   assert.match(home, /hero-product-collage-480\.webp/, `${locale} home must keep responsive hero images`);
-  assert.ok(count(home, /\/product-images\//g) >= 8, `${locale} home must render all product cards`);
+  assert.ok(count(home, /class="product-card"/g) >= 8, `${locale} home must render all product cards`);
   assert.doesNotMatch(home, /class="localized-hero"/, `${locale} home must not use the retired alternate layout`);
   assertLocaleCluster(home, `/${locale}/`, `${locale} home`);
 
@@ -122,15 +122,15 @@ for (const locale of locales) {
   assert.equal(count(betweenClasses(faq, "official-fact-strip", "faq-directory"), /<article>/g), 3, `${locale}/faq must keep all verified facts`);
   assert.equal(count(faq, /class="faq-next-step"/g), 1, `${locale}/faq must keep the next-step panel`);
 
-  const product = await readPage(`${locale}/products/hoka-speedgoat-5-trail-running-shoes`);
+  const product = await readPage(`${locale}/products/skyline-floatx-running-hiking-shoes`);
   assert.match(product, /class="product-page"/);
   assert.match(product, /class="product-gallery"/);
   assert.match(product, /class="product-thumbnails"/);
-  assert.ok(count(product, /\/product-images\//g) >= 5, `${locale} product detail must keep the complete gallery`);
-  assert.match(product, new RegExp(`href="/${locale === "pl" ? "de" : "pl"}/products/hoka-speedgoat-5-trail-running-shoes/"`), "language switch must preserve the product route");
+  assert.ok(count(product, /src="https:\/\/si\.geilicdn\.com\//g) >= 5, `${locale} product detail must keep the complete gallery`);
+  assert.match(product, new RegExp(`href="/${locale === "pl" ? "de" : "pl"}/products/skyline-floatx-running-hiking-shoes/"`), "language switch must preserve the product route");
   assert.deepEqual(
     structure(product),
-    structure(await readPage("products/hoka-speedgoat-5-trail-running-shoes")),
+    structure(await readPage("products/skyline-floatx-running-hiking-shoes")),
     `${locale} product detail must keep the English page structure`,
   );
 
@@ -172,7 +172,7 @@ for (const locale of translatedLocales) {
     readPage(`${locale}/faq`),
     ...guideSlugs.map((slug) => readPage(`${locale}/guides/${slug}`)),
     ...policySlugs.map((slug) => readPage(`${locale}/${slug}`)),
-    readPage(`${locale}/products/hoka-speedgoat-5-trail-running-shoes`),
+    readPage(`${locale}/products/skyline-floatx-running-hiking-shoes`),
   ]);
   for (const html of targetPages) {
     assert.doesNotMatch(html, /A photographed item is not a guarantee for every later unit\./, `${locale} page must not fall back to the retired English evidence card`);
@@ -341,10 +341,11 @@ assert.match(home, /<title>UUFinds Guide 2026: Spreadsheet, QC Photos &amp; Prod
 assert.match(home, /<meta name="description" content="Use UUFinds to search product and agent links, review QC photos, compare spreadsheet finds, and open matching product pages for shoes, hoodies, jerseys and more\."/);
 assert.match(contiguousHome, /<h1>Find with UUFinds\.<br\/?>(?:Check QC photos\.)<br\/?><em>Compare products\.<\/em><\/h1>/);
 assert.match(home, /Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page\./);
-assert.match(home, /href="\/categories\/shoes\/"/);
-assert.match(home, /href="\/categories\/hoodies\/"/);
-assert.match(home, /href="\/categories\/jersey\/"/);
-assert.match(home, /href="\/categories\/accessories\/"/);
+assert.match(home, /href="https:\/\/cnbuycha\.com\/shoes\/"/);
+assert.match(home, /href="https:\/\/cnbuycha\.com\/hoodies-sweaters\/"/);
+assert.match(home, /href="https:\/\/cnbuycha\.com\/jersey\/"/);
+assert.match(home, /href="https:\/\/cnbuycha\.com\/accessories\/"/);
+assert.doesNotMatch(home, /href="\/categories\/(?:shoes|hoodies|jersey|accessories)\/"/);
 
 const polishHome = await readPage("pl");
 const contiguousPolishHome = polishHome.replaceAll("<!-- -->", "");
@@ -386,14 +387,14 @@ for (const [slug, heading, visiblePhrase] of keywordGuideChecks) {
 assert.equal(assignedGuideTitles.size, keywordGuideChecks.length, "guide keyword targets must use distinct titles");
 
 const productKeywordChecks = [
-  ["hoka-speedgoat-5-trail-running-shoes", "Speedgoat 5 Trail Running Shoes"],
-  ["maison-margiela-hoodie", "Maison Margiela Hoodie"],
-  ["louis-vuitton-tee", "Louis Vuitton Tee"],
-  ["celine-coat", "Celine Coat"],
-  ["hello-kitty-plush-pants", "Hello Kitty Plush Pants"],
-  ["era-hats", "Era Hats"],
-  ["nike-elite-backpack", "Nike Elite Backpack"],
-  ["samsung-galaxy-watch8", "Samsung Galaxy Watch8"],
+  ["skyline-floatx-running-hiking-shoes", "Skyline FLOATX Running and Hiking Shoes"],
+  ["loose-printed-hooded-sweater", "Loose Printed Hooded Sweater"],
+  ["printed-short-sleeve-collection-2", "Printed Short-Sleeve Collection 2"],
+  ["autumn-winter-loose-fitting-coat", "Autumn/Winter Loose-Fitting Coat"],
+  ["hello-kitty-plush-lounge-pants", "Hello Kitty Plush Lounge Pants"],
+  ["mlb-world-series-baseball-cap-collection", "MLB World Series Baseball Cap Collection"],
+  ["xjxpcs-fashion-backpack", "XJXPCS Fashion Backpack"],
+  ["galaxy-watch-ultra-8-smartwatch", "Galaxy Watch Ultra 8 Smartwatch"],
 ];
 for (const [slug, productName] of productKeywordChecks) {
   const html = await readPage(`products/${slug}`);
@@ -413,7 +414,7 @@ for (const slug of categorySlugs) {
   assert.match(html, new RegExp(`<h1>UUFinds ${slug === "jersey" ? "Jersey" : slug[0].toUpperCase() + slug.slice(1)} Spreadsheet</h1>`));
   assert.equal(count(html, /class="product-card"/g), 4, `${slug} category must show four distinct listings`);
   assert.equal(count(listingSection, /class="product-card-image"/g), 4, `${slug} category must show an image for every listing`);
-  assert.equal(count(listingSection, /<span>¥(?:<!-- -->)?\d+(?:\.\d+)?<\/span>/g), 4, `${slug} category must show a price for every listing`);
+  assert.equal(count(listingSection, /<span>\$(?:<!-- -->)?\d+(?:\.\d+)?<\/span>/g), 4, `${slug} category must show a price for every listing`);
   assert.equal(productNames.length, 4, `${slug} category must name every listing`);
   assert.equal(new Set(productNames).size, 4, `${slug} category must not repeat a product`);
   assert.equal(count(html, /class="category-listing-note"/g), 4, `${slug} category must show a filtering note for every listing`);
@@ -421,7 +422,7 @@ for (const slug of categorySlugs) {
   assert.match(html, /"@type":"CollectionPage"/);
   assert.match(html, /"@type":"ItemList"/);
   assert.match(html, /"numberOfItems":4/);
-  const urls = [...html.matchAll(/href="(https:\/\/www\.cnbuycha\.com\/AllProducts\/\d+\.html)"/g)].map((match) => match[1]);
+  const urls = [...html.matchAll(/href="(https:\/\/cnbuycha\.com\/[a-z-]+\/\d+\.html)"/g)].map((match) => match[1]);
   assert.equal(new Set(urls).size, 4, `${slug} category must use four non-duplicate detail destinations`);
   categoryProductUrls.push(...urls);
 }
@@ -435,13 +436,13 @@ assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnl
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${linkSearchGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${trousersGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${sizeNotesGuideSlug}/`));
-for (const slug of categorySlugs) assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/categories/${slug}/`));
+for (const slug of categorySlugs) assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/categories/${slug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${linkSearchGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${trousersGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${sizeNotesGuideSlug}/`));
 
-const allowedOutboundHosts = new Set(["uufindssheet.com", "www.cnbuycha.com", "www.googletagmanager.com"]);
+const allowedOutboundHosts = new Set(["uufindssheet.com", "cnbuycha.com", "www.cnbuycha.com", "si.geilicdn.com", "www.googletagmanager.com"]);
 const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));
 for (const file of publishedHtmlFiles) {
   const html = await readFile(file, "utf8");

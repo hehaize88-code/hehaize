@@ -24,7 +24,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">UUFinds product research <span>•</span> Updated August 2026</p>
+          <p className="eyebrow">UUFinds product research <span>•</span> Updated September 2026</p>
           <h1>Find with UUFinds.<br />Check QC photos.<br /><em>Compare products.</em></h1>
           <p className="hero-intro">
             Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page.
@@ -68,19 +68,13 @@ export default function Home() {
             <p className="eyebrow">Curated routes / 09</p>
             <h2>Start with a category.</h2>
           </div>
-          <p>Focused spreadsheet categories open an on-site comparison page first; every other shortcut opens the matching main-site category.</p>
+          <p>Every shortcut opens the matching live category on the main site, without an intermediate page.</p>
         </div>
         <div className="category-grid">
           {categories.map((category) => (
-            category.landingHref ? (
-              <Link className="category-card" href={category.landingHref} key={category.name}>
-                <CategoryCardContent category={category} />
-              </Link>
-            ) : (
-              <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
-                <CategoryCardContent category={category} />
-              </a>
-            )
+            <a className="category-card" href={category.href} target="_blank" rel="noreferrer" key={category.name}>
+              <CategoryCardContent category={category} />
+            </a>
           ))}
         </div>
       </section>
@@ -103,7 +97,7 @@ export default function Home() {
               <div className="product-card-copy">
                 <p>{product.category}</p>
                 <h3>{product.shortName}</h3>
-                <div><span>¥{product.price}</span><b>View details ↗</b></div>
+                <div><span>${product.price}</span><b>View details ↗</b></div>
               </div>
             </Link>
           ))}
