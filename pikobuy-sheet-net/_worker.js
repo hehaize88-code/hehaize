@@ -112,6 +112,7 @@ const ROUTES = new Set([
   '/articles/estimate-pikobuy-parcel-cost/',
   '/articles/pikobuy-image-search-dead-link-recovery/',
   '/articles/pikobuy-1688-finds-moq-variants-seller-questions/',
+  '/articles/pikobuy-weidian-finds-options-seller-signals/',
   '/articles/pikobuy-parcel-consolidation-packing-guide/',
   '/articles/pikobuy-returns-5-day-window/',
   '/articles/pikobuy-spreadsheet-product-research/',
