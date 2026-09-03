@@ -46,6 +46,113 @@ function ArticleCta() {
   );
 }
 
+function HubbuySellerReliabilityArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">Seller reliability is not a permanent label hidden inside one rating, price or fast shipment. For a Hubbuy order, it is a dated pattern built from the exact listing you approved, what the seller dispatched, what arrived for warehouse inspection and how a documented problem was handled.</p>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Judge the seller by connected evidence, not one attractive signal</h2>
+        <p>Before payment, save the seller, product and exact option. Continue that record through dispatch and warehouse arrival, then compare the received item with the saved state. If there is a material mismatch, record the resolution offered through the current order. “Shipped quickly” is incomplete; a useful result connects the promised option, traceable dispatch, received item and any problem response.</p>
+        <p>Hubbuy’s current public workflow separates product ordering, seller delivery to the warehouse, quality inspection and later international shipping. That separation matters. A seller controls the listing and the goods sent. Hubbuy performs the purchasing and warehouse steps described in its interface. An international carrier controls later parcel movement. Do not praise or blame a seller for evidence that belongs to another stage.</p>
+        <div className="article-callout"><strong>The practical reliability test</strong><p>Can you connect the saved listing to the ordered option, the seller’s domestic dispatch, the warehouse item and the final resolution without an unexplained gap?</p></div>
+      </section>
+
+      <section id="responsibility-map">
+        <span>02 · Responsibility map</span>
+        <h2>Assign each event to the party that could actually cause it</h2>
+        <p>Use four columns: seller, Hubbuy, carrier and buyer. Assign listing accuracy, goods and domestic dispatch to the seller; purchase and warehouse records to Hubbuy; international movement to the carrier; and instructions, review and evidence preservation to the buyer.</p>
+        <div className="article-point-grid">
+          <div><b>SELLER</b><strong>Listing and goods</strong><span>Option, availability, domestic dispatch, item sent and response to a mismatch.</span></div>
+          <div><b>HUBBUY</b><strong>Purchase and warehouse record</strong><span>Order handling, receipt status and the inspection evidence actually displayed.</span></div>
+          <div><b>CARRIER</b><strong>International parcel movement</strong><span>Acceptance, transport events, customs handoff and last-mile delivery.</span></div>
+          <div><b>BUYER</b><strong>Instructions and decision</strong><span>Selected option, saved evidence, QC review and timely next action.</span></div>
+        </div>
+        <p>A warehouse delay is not proof of slow seller dispatch, while a wrong size is not an international-carrier problem. Mark an unclear event “unassigned” until another timestamp or document closes the gap.</p>
+      </section>
+
+      <section id="before-order">
+        <span>03 · Before ordering</span>
+        <h2>Freeze the listing state that the seller is expected to fulfil</h2>
+        <p>Open the final source page rather than relying on a spreadsheet thumbnail. Save the seller or shop name, item identifier, exact color, size or model text, quantity, current item price, domestic-delivery line, specification table and every promise that would change your decision. Add the date and time. If an option is expressed by an image, save both that image and its adjacent label so a later comparison does not depend on memory.</p>
+        <p>Separate facts from persuasion. A composition line, measurement table or included-parts list can be compared later; “premium” or “top quality” lacks a measurable threshold. Sales counts, reviews and store history add context when visible, but none guarantees your unit. Treat seller identity, delivery terms and return policy as separate checks.</p>
+        <ul>
+          <li><strong>Identity:</strong> final URL, item identifier and shop identity.</li>
+          <li><strong>Selection:</strong> exact option text, quantity and any customization.</li>
+          <li><strong>Evidence:</strong> current images, measurements, materials and included parts.</li>
+          <li><strong>Terms:</strong> domestic delivery and return information visible for this item.</li>
+          <li><strong>Unknowns:</strong> every important fact the page does not establish.</li>
+        </ul>
+        <p>The <Link href="/articles/how-to-buy-from-taobao-with-hubbuy/">Taobao listing-to-warehouse checklist</Link> provides a marketplace-specific version of this identity record. Use the same principle for any supported source: never convert a similar-looking replacement into the original product without a fresh review.</p>
+      </section>
+
+      <section id="dispatch">
+        <span>04 · Seller dispatch</span>
+        <h2>Measure dispatch from real timestamps and keep the status boundary clear</h2>
+        <p>Record the time the order became actionable for the seller, the first seller dispatch event, the domestic tracking reference when available and the warehouse-receipt time. Do not calculate seller dispatch from the moment you first found the listing. Payment review, purchasing work or a clarification request may occur before the seller can act. The <Link href="/articles/hubbuy-order-status-guide/">Hubbuy order-status guide</Link> helps identify the last completed handoff.</p>
+        <p>A quick dispatch is positive only when the domestic parcel stays connected to the order. A label without movement is weaker than a carrier event, while warehouse arrival proves receipt rather than correct contents. A slower shipment may reflect a disclosed preorder. Record the promise, event and unexplained difference instead of inventing a universal “fast” threshold.</p>
+        <div className="article-formula"><small>Seller dispatch interval</small><strong>first verified domestic carrier event − seller-actionable order time</strong></div>
+      </section>
+
+      <section id="warehouse-qc">
+        <span>05 · Warehouse evidence</span>
+        <h2>Use QC to test fulfilment, not to award a general quality badge</h2>
+        <p>At warehouse receipt, match the Hubbuy item to the saved seller record. Check visible identity first: color or model, size label, quantity, included pieces and overall design. Then look for observable condition issues such as staining, broken hardware, obvious deformation or a missing component. If the image set does not show a decision-critical area, mark it unknown and use the current account options to request clarification when appropriate.</p>
+        <p>Photos do not prove hidden materials, exact fit, internal function, authenticity or durability. A clean-looking item can still miss a promised measurement. Classify the result as match, material mismatch, minor visible issue or insufficient evidence. Keep the <Link href="/articles/hubbuy-qc-photos-guide/">QC photo review</Link> tied to this order, not a lifetime seller guarantee.</p>
+      </section>
+
+      <section id="return-signal">
+        <span>06 · Resolution behavior</span>
+        <h2>A seller’s response to a well-documented problem is a stronger signal</h2>
+        <p>For a meaningful mismatch, assemble the order reference, saved option, listing evidence, warehouse identifier, clearest photo, neutral description and requested outcome. Use the current order channel while live rules allow action. Do not reuse an old return window; category, seller terms and account state may differ.</p>
+        <p>Record whether the seller accepts the problem, requests usable evidence, offers the correct replacement or declines with a stated reason. Also record buyer-caused issues separately. Ordering the wrong size, overlooking a disclosed condition or asking after the live deadline does not prove seller unreliability. The <Link href="/articles/hubbuy-return-exchange-after-qc/">returns-after-QC guide</Link> explains how to preserve the decision before international shipment.</p>
+        <p>Resolution quality means the response fits the evidence and current terms, and the final record matches the agreed action. Keep the seller decision distinct from Hubbuy processing and payment settlement.</p>
+      </section>
+
+      <section id="scorecard">
+        <span>07 · Evidence scorecard</span>
+        <h2>Use gates and confidence labels instead of a fake precise rating</h2>
+        <p>For each completed order, mark four gates pass, fail or unknown: listing identity, dispatch evidence, received-item match and any resolution. Add a note and timestamp. Avoid a fake-precise percentage; another reader should understand why the seller remains on the shortlist.</p>
+        <div className="article-comparison">
+          <div><span>Reorder candidate</span><strong>Exact item matched · dispatch trace connected · no material unresolved issue</strong></div>
+          <div><span>Pause and compare</span><strong>Important field unknown · unexplained delay · weak image evidence · mixed outcomes</strong></div>
+          <div><span>Remove from shortlist</span><strong>Material mismatch or missing goods · evidence-backed problem left unresolved</strong></div>
+        </div>
+        <p>Weight recent comparable orders more heavily than an old result for a different product. A seller may handle standard clothing and customized goods differently. Preserve sample size: “two matching orders checked this month” is more honest than “reliable seller.”</p>
+      </section>
+
+      <section id="worked-example">
+        <span>08 · Worked example</span>
+        <h2>A hoodie order shows why speed alone is an incomplete answer</h2>
+        <p>Suppose a buyer saves a charcoal hoodie, size XL, with a stated chest measurement and detachable accessory. The order becomes seller-actionable on Monday, a domestic carrier event appears Wednesday and warehouse receipt follows. The dispatch gate passes because the interval begins at the correct event and remains linked to the order.</p>
+        <p>The warehouse images show an XL label and the correct color, but the accessory is not visible and no image establishes the promised chest measurement. That is not a full pass. The buyer marks identity as partial and requests evidence for the two decision-critical facts. If the accessory is confirmed and the measurement falls within the buyer’s prewritten tolerance, the fulfilment record passes. If the seller sent another size and then accepts an evidence-backed exchange, the item failed initial fulfilment but the resolution signal is constructive.</p>
+        <p>The buyer can now reorder the same SKU, compare another seller because uncertainty remained or remove the seller after a material unresolved mismatch. No invented rating is required.</p>
+      </section>
+
+      <section id="final-checklist">
+        <span>09 · Final checklist</span>
+        <h2>Keep the seller only when the evidence chain stays intact</h2>
+        <ol>
+          <li>Save the final listing, seller, item identifier and exact selected option.</li>
+          <li>Date every price, delivery, specification and return-policy observation.</li>
+          <li>Measure seller dispatch from the seller-actionable order event.</li>
+          <li>Connect domestic tracking to the correct Hubbuy order and warehouse item.</li>
+          <li>Compare QC evidence with the saved option before parcel submission.</li>
+          <li>Label decision-critical missing views or facts as unknown.</li>
+          <li>Document a material mismatch with one clear requested outcome.</li>
+          <li>Separate seller response from platform handling and payment settlement.</li>
+          <li>Keep sample size, product type and check date beside the conclusion.</li>
+        </ol>
+        <p>Hubbuy seller reliability is best treated as a living order history. It should become more useful with each connected record, while still leaving room for a new listing, option or result to change the decision.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <ArticleCta />
+    </>
+  );
+}
+
 function HubbuyCustomsTaxArticle({ article }) {
   return (
     <>
@@ -1296,6 +1403,7 @@ function HubbuyPaymentAuditArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-seller-reliability-dispatch-qc-return-signals") return <HubbuySellerReliabilityArticle article={article} />;
   if (article.slug === "hubbuy-customs-tax-planning-import-record") return <HubbuyCustomsTaxArticle article={article} />;
   if (article.slug === "hubbuy-rehearsal-package-decision-guide") return <HubbuyRehearsalArticle article={article} />;
   if (article.slug === "hubbuy-payment-methods-currency-fee-audit") return <HubbuyPaymentAuditArticle article={article} />;

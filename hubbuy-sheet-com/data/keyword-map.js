@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-seller-reliability-dispatch-qc-return-signals": {
+    primaryQuery: "Hubbuy seller reliability",
+    secondaryTerms: ["Hubbuy seller dispatch time", "Hubbuy seller QC signals", "Hubbuy seller return evidence", "Hubbuy seller reliability checklist"],
+    searchIntent: "Evaluate a seller through dated listing, dispatch, warehouse QC and problem-resolution evidence before accepting or reordering",
+    angle: "Stage-based seller evidence scorecard that separates seller performance from Hubbuy purchasing, warehouse and parcel operations",
+    evidence: ["Current Hubbuy public purchasing and warehouse workflow checked 3 September 2026", "FTC online-shopping seller and policy checks reviewed 3 September 2026"],
+    internalLinkRole: "Seller-evaluation leaf connecting source-listing checks, order-status diagnosis, warehouse QC and return decisions without competing with marketplace or tracking intent",
+  },
   "hubbuy-customs-tax-planning-import-record": {
     primaryQuery: "Hubbuy customs and tax planning",
     secondaryTerms: ["Hubbuy import tax", "Hubbuy customs declaration", "Hubbuy parcel customs checklist", "Hubbuy destination tax planning"],
