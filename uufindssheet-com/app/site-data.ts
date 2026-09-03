@@ -31,6 +31,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "GARMENT QC GUIDE",
+    title: "UUFinds Stitching and Finish QC: A Photo Review Sequence",
+    summary: "Inspect seam paths, puckering, edges, closures and trim in a repeatable order while marking details that the available photos cannot prove.",
+    href: "/guides/uufinds-stitching-finish-qc-photo-checklist/",
+    read: "10 min read",
+    englishOnly: true,
+  },
+  {
     tag: "COST RESEARCH GUIDE",
     title: "UUFinds Product Price vs Total Parcel Cost: Build a Research Range",
     summary: "Use dated product and QC fields as bounded inputs, then preserve every agent, parcel and destination cost that remains unknown.",

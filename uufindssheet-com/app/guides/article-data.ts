@@ -32,6 +32,115 @@ export type Guide = {
 
 export const guides: Guide[] = [
   {
+    slug: "uufinds-stitching-finish-qc-photo-checklist",
+    label: "GARMENT QC GUIDE",
+    title: "UUFinds Stitching and Finish QC: A Photo Review Sequence",
+    seoTitle: "UUFinds Stitching and Finish QC Photo Checklist",
+    description: "Review UUFinds garment QC photos for seam alignment, puckering, loose threads, edges, closures and trim without claiming what the images cannot prove.",
+    primaryKeyword: "UUFinds stitching QC",
+    longTailKeywords: ["UUFinds stitching and finish check", "UUFinds QC loose threads", "QC seam alignment photos", "UUFinds garment finish checklist"],
+    updated: "September 3, 2026",
+    readTime: "10 min read",
+    publishedISO: "2026-09-03",
+    modifiedISO: "2026-09-03",
+    englishOnly: true,
+    hideSourceNote: true,
+    intro: [
+      "UUFinds stitching QC works best as a controlled photo-reading task, not a hunt for a flawless-looking garment. First prove that the media belongs to the exact source item and relevant option. Then review the same construction zones in the same order: silhouette, major seam paths, stitch continuity, edges, closures and high-stress joins. Record what is visible, what is ambiguous and what is missing instead of turning one compressed image into a quality guarantee.",
+      "UUFinds describes its product information as research material and states that QC images may come from shopping agents or sellers. That means a photo can support an observation about the pictured item, but it does not establish who produced it, whether another unit will match or how a future purchase will be handled. If the evidence is useful, take the original marketplace source and exact option to the independent purchasing agent you choose. That agent—not UUFinds—controls its own order, warehouse, photo, return and shipping process, without implied affiliation.",
+    ],
+    sections: [
+      {
+        heading: "1. Confirm the record before judging a stitch",
+        paragraphs: [
+          "Begin with identity. Save the complete UUFinds detail address, marketplace source, original listing when recoverable, seller or shop context, item identifier, displayed style and size tag, QC record date and the media set you are reviewing. A sharp seam photo from the wrong color, size, batch or seller is not evidence for your candidate. If a decisive identity field is absent, label the record Conditional rather than silently treating it as Exact.",
+          "Group images by the individual QC record instead of mixing the most useful angle from several records. A result page may show multiple records, option labels and dates, while another result can have no QC media at all. More thumbnails do not automatically mean better coverage. One coherent set tied to the correct item is stronger than a collage whose option context cannot be reproduced.",
+        ],
+        table: { caption: "Identity gate for a stitching review", headers: ["State", "Evidence", "Action"], rows: [
+          ["Exact", "Source item and relevant option agree", "Continue to construction review"],
+          ["Conditional", "Item agrees; option or record context is incomplete", "Review provisionally and request the missing field"],
+          ["Reference", "Similar garment or another option", "Use only to learn where details may appear"],
+          ["Conflict", "Source, seller, item or option disagrees", "Stop; do not score the stitching"],
+        ] },
+      },
+      {
+        heading: "2. Start wide and map the garment",
+        paragraphs: [
+          "Use the front and back overviews to map construction before inspecting thread. Trace shoulder lines, side seams, sleeve joins, center lines, pockets, hems and any panels that should mirror each other. Look for a broad shape difference, twisting or a seam that appears to drift. Perspective can make the nearer side look larger, so compare structural relationships rather than counting pixels from an angled photograph.",
+          "Next compare left and right features. Pocket openings should occupy corresponding positions when the design is symmetrical. Cuffs, tabs, drawcord exits and visible topstitching should follow the intended pattern. Asymmetry is not automatically a defect: deliberate design, garment folding and camera angle can explain it. Mark a concern only when the same displacement survives more than one useful view or conflicts with the source design.",
+        ],
+      },
+      {
+        heading: "3. Trace seam paths and stitch continuity",
+        paragraphs: [
+          "Follow each visible seam from one endpoint to the other. Look for an uninterrupted line, consistent placement from the fabric edge and a clean meeting point where panels join. Construction guidance describes good seams as aligned, smooth and secure, with ends finished neatly. In QC media, you can observe alignment and visible continuity; you generally cannot test security or the hidden seam allowance.",
+          "At intersections, inspect whether the adjoining seams meet in the expected place. Check shoulder-to-sleeve joins, side-seam-to-hem crossings, pocket corners and panel junctions. A small offset may be cosmetic; an offset that changes pocket position, twists a panel or leaves an open edge can affect use. Describe the location and visible consequence instead of using a broad label such as bad stitching.",
+        ],
+        points: [
+          "Record the garment zone and exact endpoint of the observation.",
+          "Use a second angle before calling a shadow or fold a broken stitch line.",
+          "Separate visible alignment from untestable seam strength.",
+          "Escalate an open edge, missing section or distorted functional join.",
+        ],
+      },
+      {
+        heading: "4. Classify loose threads, skipped areas and puckering",
+        paragraphs: [
+          "A loose thread is a description, not yet a decision. Note whether it is a short tail on the surface, a loop pulled from an otherwise continuous line, a cluster at a seam end or evidence that the fabric edges are separating. A removable tail may be minor. A looped or skipped section at a load-bearing join deserves a closer view because the photo does not show how far the problem continues.",
+          "Puckering appears as repeated ripples or pulling along a stitch line. Sewing references treat smooth seams without puckering as a construction goal, but a QC image has confounders: the garment may be folded, elastic may be relaxed, gathers may be intentional and light can exaggerate texture. Compare the affected line with the source design, a flat overview and the same area from another record when the option matches.",
+        ],
+      },
+      {
+        heading: "5. Inspect hems, raw edges and binding",
+        paragraphs: [
+          "Trace the bottom hem, sleeve or leg hems and every visible finished edge. Look for a reasonably even path, no obvious unravelling, no section that flips out because it is unattached and no abrupt ridge that is absent from the intended design. Clothing-construction standards describe hems as smooth, flat and free from raveling; QC photographs can show those visible traits only where the edge is exposed and in focus.",
+          "Check necklines, armholes, pocket openings and bound seams for coverage. A raw edge may be intentional inside a particular construction, so compare it with the source presentation rather than assuming every exposed cut is wrong. For lined garments, the outer image does not prove the internal finish. Record Interior edge not shown and make it a purchase question if lining or binding quality is a hard requirement.",
+        ],
+      },
+      {
+        heading: "6. Review closures, trim and high-stress joins",
+        paragraphs: [
+          "Inspect buttons, buttonholes, snaps, hooks, zippers, drawcord hardware, labels and decorative patches in context. Construction standards call for secure, even buttonholes and accurate fastener placement, but still photos cannot prove repeated operation or attachment strength. You can confirm that a fastener appears present, aligned and visibly undamaged; function remains unverified unless the available media directly demonstrates it.",
+          "Give extra attention to pocket corners, belt loops, strap anchors, crotch joins, underarms, zipper bases and the ends of elastic channels. These areas carry load or repeated movement. Look for missing reinforcement that the source design clearly shows, fabric separation, a detached end or a seam that stops before the join. Avoid claiming that a visible reinforcement guarantees durability; it only reduces one visible uncertainty.",
+        ],
+      },
+      {
+        heading: "7. Use a two-view rule for ambiguous findings",
+        paragraphs: [
+          "Before rejecting a garment for a subtle finish issue, require two useful observations: either the concern appears in two angles from the same matched record, or one clear close-up agrees with the full-garment view. This is an editorial confidence rule, not a UUFinds feature. It helps separate repeated structure from blur, glare, compression, shadow or a temporary fold.",
+          "Use Confirmed visible issue only when the location and consequence are clear. Use Probable when the pattern repeats but one part remains obscured. Use Ambiguous when media quality prevents a decision, and Not shown when the needed zone is absent. Never upgrade Not shown to Pass. A blank evidence field should create a focused question, not a reassuring assumption.",
+          "Suppose a black zip hoodie appears to have a wavering zipper line. The front overview is slightly rotated, so the near panel looks wider. A second straight-on image shows both zipper tapes parallel, but one pocket corner has a visible loose loop in two views. Record the zipper concern as resolved by perspective and the pocket loop as Probable, then request one close-up of that corner if it would change the decision. This is a hypothetical method, not a report about a real listing.",
+        ],
+        table: { caption: "Finish finding and next action", headers: ["Finding", "Confidence", "Next step"], rows: [
+          ["Short surface tail; seam remains closed", "Clear but minor", "Accept, trim later or note preference"],
+          ["Gap with separated fabric edges", "Confirmed visible issue", "Pause and request resolution"],
+          ["Repeated rippling along a non-gathered seam", "Probable or confirmed", "Compare a second view and source design"],
+          ["Interior seam or closure function absent", "Not shown", "Ask the chosen agent if new evidence is available"],
+        ] },
+      },
+      {
+        heading: "8. Hand off one precise evidence request",
+        paragraphs: [
+          "When a missing view could reverse the decision, write one request with the exact garment zone, angle and purpose: “Please provide a close, well-focused view of the inside lower-left pocket corner so I can see whether the stitch line is continuous and the fabric edge is closed.” Do not ask for better photos without naming the unanswered question. Do not state that UUFinds will perform the request.",
+          "Move the saved source, exact option tuple, UUFinds record, concern location, confidence label and acceptance rule to the independent purchasing agent you select. Check that agent’s current photo and return terms before ordering. It decides whether extra evidence can be obtained, how a warehouse item is handled and whether any seller resolution is available. UUFinds remains an independent research input and is not presented as affiliated with that agent.",
+          "Finish with three outcomes. Proceed when identity is Exact and no decision-critical visible issue remains. Pause when one obtainable view could resolve an Ambiguous or Not shown field. Reject the research candidate when identity conflicts or clear media shows a hard-fail construction problem. Preserve the decision date; a later unit, record or listing change requires a new review.",
+        ],
+        points: [
+          "Keep each QC record and option context together.",
+          "Trace structure wide-to-close before judging isolated thread.",
+          "Describe location, visible consequence and confidence.",
+          "Treat missing media as unknown, never as a pass.",
+          "Use your chosen agent for any later purchase, warehouse or return action.",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-qc-checklist/", label: "Use the complete QC review order", description: "Match identity and visible condition before a category-specific decision." },
+      { href: "/guides/uufinds-jeans-trousers-qc-checklist/", label: "Review trousers construction", description: "Apply fit, wash and construction checks to jeans and trousers." },
+      { href: "/guides/uufinds-size-measurement-notes-before-option/", label: "Keep size evidence separate", description: "Do not let clean stitching stand in for measurement or fit evidence." },
+    ],
+  },
+  {
     slug: "uufinds-product-price-total-parcel-cost",
     label: "COST RESEARCH GUIDE",
     title: "UUFinds Product Price vs Total Parcel Cost: Build a Research Range",
