@@ -291,6 +291,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           </a>
         </div>
         <a className="article-crosslink" href="/articles/cssbuy-spreadsheet-categories-explained"><span>{copy.reading.articleLabel}</span>{copy.reading.categoryArticle} <ArrowIcon /></a>
+        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-hoodie-spreadsheet-fabric-measurements-weight"><span>NEW ARTICLE</span>Build a hoodie fabric, measurement and weight worksheet <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-shoes-spreadsheet-size-qc-fields"><span>NEW ARTICLE</span>Build a shoe size and QC evidence worksheet <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-seller-page-checklist-before-saving-find"><span>NEW ARTICLE</span>Run the seller-page checklist before saving a find <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-weidian-finds-options-seller-signals"><span>NEW ARTICLE</span>Verify Weidian options and seller-page signals <ArrowIcon /></a> : null}

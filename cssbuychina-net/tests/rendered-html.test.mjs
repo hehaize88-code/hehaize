@@ -138,6 +138,19 @@ test("renders the shoes spreadsheet guide with complete SEO metadata", async () 
   assert.ok(html.includes("Finish with a save, hold or reject checklist"));
 });
 
+test("renders the hoodie spreadsheet guide with complete SEO metadata", async () => {
+  const html = await fetchHtml("/articles/cssbuy-hoodie-spreadsheet-fabric-measurements-weight");
+  const url = "https://cssbuychina.net/articles/cssbuy-hoodie-spreadsheet-fabric-measurements-weight";
+  assert.ok(html.includes("<title>CSSBuy Hoodie Spreadsheet: Fabric, Measurements &amp; Weight</title>"));
+  assert.ok(html.includes(`<link rel="canonical" href="${url}"`));
+  assert.ok(html.includes(`<meta property="og:url" content="${url}"`));
+  assert.ok(html.includes("<h1>CSSBuy Hoodie Spreadsheet: Record Fabric, Measurements and Weight</h1>"));
+  assert.ok(html.includes('"@type":"Article"'));
+  assert.ok(html.includes('"@type":"BreadcrumbList"'));
+  assert.ok(html.includes('"datePublished":"2026-09-06"'));
+  assert.ok(html.includes("Finish with an order-ready hoodie record"));
+});
+
 test("renders localized home pages with consistent canonicals and metadata", async () => {
   const locales = [
     ["pt-br", "Planilha CSSBuy 2026", "ARTIGO"],
@@ -204,15 +217,16 @@ test("publishes CTR-focused catalog metadata and analytics hooks", async () => {
   assert.ok(!articlesHtml.includes("SEO knowledge library"));
 });
 
-test("publishes an indexable robots file and an 83-URL sitemap", async () => {
+test("publishes an indexable robots file and an 84-URL sitemap", async () => {
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   assert.match(robots, /User-agent: \*\s+Allow: \//);
   assert.match(robots, /Sitemap: https:\/\/cssbuychina\.net\/sitemap\.xml/);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 83);
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 84);
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-weidian-finds-options-seller-signals"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-seller-page-checklist-before-saving-find"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-shoes-spreadsheet-size-qc-fields"));
+  assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-hoodie-spreadsheet-fabric-measurements-weight"));
   assert.equal((sitemap.match(/\/product\//g) ?? []).length, 30);
   assert.ok(sitemap.includes("<loc>https://cssbuychina.net/product/3402</loc><lastmod>2026-09-01</lastmod>"));
   assert.ok(sitemap.includes("<loc>https://cssbuychina.net/articles</loc><lastmod>2026-09-01</lastmod>"));

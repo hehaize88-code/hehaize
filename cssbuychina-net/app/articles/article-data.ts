@@ -504,6 +504,58 @@ export const articles = {
       ["Run the seller-page checklist", "/articles/cssbuy-seller-page-checklist-before-saving-find"]
     ],
   },
+  "cssbuy-hoodie-spreadsheet-fabric-measurements-weight": {
+    label: "HOODIE FABRIC & MEASUREMENT WORKSHEET · 12 MIN",
+    title: "CSSBuy Hoodie Spreadsheet: Fabric, Measurements and Weight",
+    seoTitle: "CSSBuy Hoodie Spreadsheet: Fabric, Measurements & Weight",
+    h1: "CSSBuy Hoodie Spreadsheet: Record Fabric, Measurements and Weight",
+    description: "Build a CSSBuy hoodie spreadsheet that separates fabric claims, flat garment measurements, item weight, QC evidence and order-ready decisions.",
+    published: "2026-09-06",
+    checked: "September 6, 2026",
+    sections: [
+      ["Turn the intended hoodie into a measurable brief", [
+        "Describe the hoodie you need before opening a list of product links. Record pullover or zip construction, intended fit, hood style, pocket layout, closure, cuff and hem expectations, decoration method and any non-negotiable feature. Add a reference garment that already fits as intended. Its label is only an identifier; the useful evidence is a set of repeatable flat measurements taken with named endpoints.",
+        "One spreadsheet row should represent one exact listing and variation, not a collage of similar hoodies. Write what would make the candidate pass, what could be accepted as a preference and what would cause rejection. That turns browsing into a decision. A CSSBuy hoodie spreadsheet should expose whether the listing supplies enough evidence for the intended garment, rather than make every attractive thumbnail appear equally order-ready."
+      ]],
+      ["Lock the source and variation before copying specifications", [
+        "Save the original marketplace URL, CSSBuy route, marketplace, visible shop, item identifier and review date. Then build a variation key in a fixed order: hoodie type, colour, size label, version or fabric option, decoration, included pieces and quantity. Preserve the original option text beside a cautious translation. Current CSSBuy apparel pages can expose size, colour and seller-supplied product fields, but each field belongs to that particular third-party listing.",
+        "Select the intended variation before recording its amount or specifications. A headline range may include a lighter option, a different size, an accessory or another construction. If the chosen colour uses a different material statement or chart, retain that distinction. When a page changes, preserve the earlier key and date in history instead of overwriting it. A similar photograph on another page does not prove the same pattern, fabric, factory or production batch."
+      ]],
+      ["Separate fibre claims, fabric construction and surface finish", [
+        "Use different columns for fibre composition, fabric construction and visible finish. A percentage such as cotton and polyester is a seller statement about fibres. Terms such as fleece, French terry, brushed knit or double layer describe construction or finishing, although marketplace wording may be imprecise. Details such as ribbed cuffs, washed colour, embroidery and printed graphics describe visible features. Combining all three into a single “material” cell makes later verification almost impossible.",
+        "Record the exact wording, source and date for every composition claim. A product photograph can show texture, pile direction, rib structure, print placement or a visible label, but it cannot independently prove fibre percentages, warmth, softness, shrinkage or durability. If composition controls the decision, place the row on hold until there is a clear listing statement or label evidence. Never borrow a fabric claim from a visually similar seller page."
+      ]],
+      ["Copy the seller chart without changing its measurement method", [
+        "Transcribe the chart as listing-specific evidence. Keep the original size labels and units, and identify whether each number is a garment measurement, a body recommendation or an unexplained value. Note whether chest means flat half-width or full circumference; whether length starts at the high shoulder, neckline or hood seam; and whether sleeve length begins at the shoulder or centre back. Two charts cannot be compared until their endpoints mean the same thing.",
+        "Store any stated tolerance exactly as a seller claim and do not apply it to unrelated listings. Do not create a universal size conversion or assume that a familiar label will fit. If the chart omits its method, ask one precise question or mark the field “definition not stated.” A measurement without named endpoints looks precise but cannot be reproduced at warehouse arrival or compared fairly with the reference hoodie."
+      ]],
+      ["Build a repeatable flat-measurement block", [
+        "Use a compact block for the reference garment and each candidate: chest width, body length, shoulder width, sleeve length, hem width and one category-specific dimension such as hood depth or zip length. Record the start point, end point, garment state, unit and person or source. Lay the reference garment flat without stretching it. Measure the same physical path each time, because a diagonal tape or shifted seam can create a false mismatch.",
+        "Compare ranges rather than pretending that one centimetre guarantees fit. First decide which dimensions control the desired silhouette. Chest and hem can define overall room; body length can affect coverage; shoulder and sleeve geometry can change where the cuff sits. Rank those fields by decision importance. When the seller provides only a size label, the row is incomplete—not evidence that the hoodie matches the reference garment."
+      ]],
+      ["Keep GSM, item weight and packed weight in separate columns", [
+        "Fabric mass per area, often expressed as GSM, is not the weight of the finished hoodie. Item or net weight refers to one garment, while gross or packed weight may include bags, tags or other packaging. A warehouse-recorded item weight is another source, and the final parcel weight belongs to a later shipping decision. Give each value its own field, unit, source and date so one number cannot silently substitute for another.",
+        "Current public CSSBuy apparel pages may display seller-supplied gram-weight or packing information. Treat it as a field for that listing, not a universal hoodie specification or guaranteed warehouse result. If one candidate claims heavier fabric but provides only finished-item weight, do not convert the number into GSM. Record “not comparable” and ask for the missing basis. The spreadsheet should reveal the evidence gap instead of rewarding whichever page publishes the largest number."
+      ]],
+      ["Translate the row into focused warehouse QC", [
+        "Write the arrival checks before ordering. Start with identity: correct hoodie type, colour, size label, selected variation and quantity. Then list visible construction priorities such as front and back silhouette, pocket symmetry, zipper alignment, hood panels, drawstrings, rib cuffs and hem, seam paths, print or embroidery placement, stains and obvious damage. Put decision-changing checks first instead of asking for a vague judgment of overall quality.",
+        "Separate label evidence from measurement evidence. A fibre label photograph can document visible wording but cannot confirm laboratory composition. A ruler image answers a dimension question only when the garment lies flat, the endpoints are visible and the unit can be read. Use pass, mismatch or insufficient evidence for each check. Insufficient evidence is not a pass; it identifies the specific angle, label or repeatable measurement still needed."
+      ]],
+      ["Compare candidates with an evidence matrix", [
+        "Consider three hypothetical candidates for the same relaxed pullover brief. Candidate A has a complete fibre statement and size chart, but its chart defines chest as circumference. Candidate B gives flat chest width and body length yet calls the fabric only “premium fleece.” Candidate C shows a low amount and an appealing photograph but provides neither a usable chart nor a clear variation key. Normalize A's chest value before comparison, mark B's fibre composition unknown and reject C as not order-ready.",
+        "The matrix should not produce a fake quality score. Use columns for identity, variation, seller fibre claim, fabric or finish wording, normalized measurements, weight type, missing fact, next action and status. A candidate can be strongest on measurements and weakest on material evidence. The final choice depends on the brief: a fit-critical purchase may favour reproducible dimensions, while a fibre-critical purchase must remain on hold until the composition basis is clear."
+      ]],
+      ["Finish with an order-ready hoodie record", [
+        "Before payment, reopen the source and verify the item identifier, shop, selected variation, current amount, domestic delivery, chart and material wording. Save the check date only after repeating the review. Mark the row order-ready when its source, exact option, decision-critical claims, comparable measurements and warehouse checks are reproducible. Use hold for one resolvable gap and reject when the required option disappeared or a critical fact remains undefined.",
+        "After warehouse arrival, append the observed size label, visible fabric or care label, item weight, QC outcomes and evidence dates without deleting the earlier seller claims. Compare measurements using the stored endpoints and keep final packing data out of the product-discovery row until it exists. A reliable CSSBuy hoodie record does not promise fit, fibre content or warmth. It shows exactly what was claimed, measured, observed and still unknown."
+      ]]
+    ],
+    related: [
+      ["Choose the right spreadsheet category", "/articles/cssbuy-spreadsheet-categories-explained"],
+      ["Run the seller-page checklist", "/articles/cssbuy-seller-page-checklist-before-saving-find"],
+      ["Plan product price against parcel cost", "/guides/product-price-vs-parcel-cost"]
+    ],
+  },
 } as const;
 
 export type ArticleSlug = keyof typeof articles;
