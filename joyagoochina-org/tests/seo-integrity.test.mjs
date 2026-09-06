@@ -18,6 +18,7 @@ const articleRoutes = [
   "qc-guide",
   "shipping-guide",
   "returns",
+  "joyagoo-parcel-reinforcement-cost-damage-risk",
   "joyagoo-shoebox-removal-shipping-cost-damage-risk",
   "how-to-buy-from-taobao-with-joyagoo",
   "joyagoo-fees-explained",
@@ -69,6 +70,25 @@ function visibleText(html) {
     .replace(/<[^>]+>/g, " ")
     .replace(/&(?:#\d+|#x[\da-f]+|[a-z][\da-z]+);/gi, " ");
 }
+
+test("new parcel reinforcement guide has complete SEO signals and 1,200–1,800 English words", async () => {
+  const slug = "joyagoo-parcel-reinforcement-cost-damage-risk";
+  for (const prefix of localePrefixes) {
+    const path = `${prefix}/${slug}/`;
+    const response = await request(path);
+    assert.equal(response.status, 200, path);
+    const html = await response.text();
+    assert.match(html, /"@type":"Article"/, `${path}: Article schema`);
+    assert.match(html, /"@type":"BreadcrumbList"/, `${path}: breadcrumb schema`);
+    assert.match(html, /<meta property="og:type" content="article"/i, `${path}: Open Graph`);
+    assert.equal(count(html, /\bhreflang=/gi), 11, `${path}: hreflang`);
+  }
+
+  const englishHtml = await (await request(`/${slug}/`)).text();
+  const body = englishHtml.match(/<div class="article-body">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/)?.[1] ?? "";
+  const words = visibleText(body).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+  assert.ok(words.length >= 1200 && words.length <= 1800, `English parcel reinforcement guide has ${words.length} visible words`);
+});
 
 test("new consolidation guide has complete SEO signals and 1,200–1,800 English words", async () => {
   const slug = "joyagoo-parcel-consolidation-packaging-guide";
