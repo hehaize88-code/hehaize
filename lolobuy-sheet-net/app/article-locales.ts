@@ -12,7 +12,8 @@ type ArticleSlug =
   | "lolobuy-stitching-finish-qc-checklist"
   | "lolobuy-alignment-symmetry-print-placement-qc"
   | "lolobuy-size-measurement-qc-photo-limits"
-  | "lolobuy-qc-color-lighting-errors";
+  | "lolobuy-qc-color-lighting-errors"
+  | "lolobuy-material-texture-qc-photo-limits";
 
 type TopicCopy = {
   title: string;
@@ -116,6 +117,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "La luz cálida, el balance automático, los reflejos y la exposición pueden cambiar el color aparente. Compara la opción pedida, referencias neutras y varias vistas antes de decidir.",
       focus: "separar una diferencia real de color de los efectos de luz, exposición y pantalla",
     },
+    "lolobuy-material-texture-qc-photo-limits": {
+      title: "QC de material y textura LoloBuy: qué pueden demostrar las fotos",
+      shortTitle: "QC de material y textura LoloBuy",
+      description: "Separa etiquetas, textura visible, efectos de luz y propiedades que una foto de almacén no puede demostrar.",
+      eyebrow: "QC de material y textura",
+      intent: "Decidir qué respalda la evidencia visual sobre material y textura antes de aprobar el paquete",
+      standfirst: "Una foto puede mostrar tejido, pelo, grano, brillo o una etiqueta, pero no verifica por sí sola composición, tacto, rendimiento o duración. Separa afirmación, texto, observación y desconocido.",
+      focus: "evaluar material y textura sin convertir fotos de almacén en una prueba de laboratorio",
+    },
   },
   de: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -207,6 +217,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Vor dem Versand eine echte Farbabweichung von fotografischer Unsicherheit trennen",
       standfirst: "Warmes Licht, automatischer Weißabgleich, Reflexe und Belichtung verändern die wahrgenommene Farbe. Bestelloption, neutrale Referenzen und mehrere Bilder gemeinsam auswerten.",
       focus: "echte Farbabweichungen von Licht-, Belichtungs- und Displayeffekten zu trennen",
+    },
+    "lolobuy-material-texture-qc-photo-limits": {
+      title: "LoloBuy Material- und Textur-QC: Was Fotos belegen können",
+      shortTitle: "LoloBuy Material- und Textur-QC",
+      description: "Etikettentext, sichtbare Struktur, Lichteffekte und nicht belegbare Materialeigenschaften trennen.",
+      eyebrow: "Material- und Textur-QC",
+      intent: "Vor der Paketfreigabe beurteilen, was sichtbare Materialbelege tragen",
+      standfirst: "Ein Foto kann Gewebe, Flor, Narbung, Glanz oder ein Etikett zeigen, beweist aber nicht allein Zusammensetzung, Griff, Leistung oder Haltbarkeit. Trenne Behauptung, Text, Beobachtung und Unbekanntes.",
+      focus: "Material und Textur zu bewerten, ohne Lagerfotos als Labornachweis zu behandeln",
     },
   },
   fr: {
@@ -300,6 +319,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       standfirst: "Éclairage chaud, balance automatique, reflets et exposition peuvent modifier la couleur apparente. Comparez option commandée, repères neutres et vues répétées.",
       focus: "distinguer une différence réelle de couleur des effets de lumière, d’exposition et d’écran",
     },
+    "lolobuy-material-texture-qc-photo-limits": {
+      title: "QC matière et texture LoloBuy : ce que les photos peuvent prouver",
+      shortTitle: "QC matière et texture LoloBuy",
+      description: "Séparez texte d’étiquette, texture visible, effets de lumière et propriétés qu’une photo ne peut prouver.",
+      eyebrow: "QC de la matière et de la texture",
+      intent: "Décider ce que les preuves visuelles établissent avant de valider le colis",
+      standfirst: "Une photo peut montrer tissage, poil, grain, brillance ou étiquette, sans vérifier à elle seule composition, toucher, performance ou durée. Séparez affirmation, texte, observation et inconnue.",
+      focus: "évaluer matière et texture sans traiter une photo d’entrepôt comme une analyse de laboratoire",
+    },
   },
   it: {
     "how-to-use-lolobuy-spreadsheet": {
@@ -391,6 +419,15 @@ const topics: Record<LocalizedLocale, Record<ArticleSlug, TopicCopy>> = {
       intent: "Separare una vera differenza di colore dall’incertezza fotografica prima della spedizione",
       standfirst: "Luce calda, bilanciamento automatico, riflessi ed esposizione possono cambiare il colore apparente. Confronta opzione ordinata, riferimenti neutri e più immagini.",
       focus: "distinguere una differenza reale di colore dagli effetti di luce, esposizione e schermo",
+    },
+    "lolobuy-material-texture-qc-photo-limits": {
+      title: "QC di materiale e texture LoloBuy: cosa possono provare le foto",
+      shortTitle: "QC materiale e texture LoloBuy",
+      description: "Separa testo dell’etichetta, superficie visibile, effetti di luce e proprietà non provabili da una foto.",
+      eyebrow: "QC di materiale e texture",
+      intent: "Decidere cosa sostiene la prova visiva prima di approvare il pacco",
+      standfirst: "Una foto può mostrare trama, pelo, grana, lucentezza o etichetta, ma non verifica da sola composizione, tatto, prestazioni o durata. Separa affermazione, testo, osservazione e incognita.",
+      focus: "valutare materiale e texture senza trattare le foto di magazzino come una prova di laboratorio",
     },
   },
 };
@@ -554,6 +591,20 @@ const colorArticleSourceNote: Record<LocalizedLocale, string> = {
   it: "Base verificata il 28 agosto 2026: LoloBuy descrive attualmente il controllo di taglia, colore e altri dettagli, oltre alle foto di ispezione. Ciò non rende le immagini una misura calibrata e non fissa numero, luce, prezzo o reso. I controlli su dominante, esposizione e viste ripetute sono analisi indipendente.",
 };
 
+const materialArticleCheckedDate: Record<LocalizedLocale, string> = {
+  es: "7 de septiembre de 2026",
+  de: "7. September 2026",
+  fr: "7 septembre 2026",
+  it: "7 settembre 2026",
+};
+
+const materialArticleSourceNote: Record<LocalizedLocale, string> = {
+  es: "Límite comprobado el 7 de septiembre de 2026: la información pública actual de LoloBuy describe inspección y fotografías en almacén. Eso permite una revisión visual, no identifica fibras en laboratorio, no calibra superficies y no fija fotos ni devolución universal.",
+  de: "Geprüfte Grenze vom 7. September 2026: LoloBuys aktuelle öffentliche Informationen beschreiben Lagerprüfung und Fotos. Das ermöglicht Sichtprüfung, aber keine Labor-Faserbestimmung, kalibrierte Oberflächenmessung, feste Fotozahl oder allgemeine Rückgabe.",
+  fr: "Limite vérifiée le 7 septembre 2026 : les informations publiques actuelles de LoloBuy décrivent contrôle et photos en entrepôt. Cela permet un examen visuel, pas une identification des fibres en laboratoire, une mesure calibrée, un nombre fixe de photos ou un retour garanti.",
+  it: "Limite verificato il 7 settembre 2026: le informazioni pubbliche attuali di LoloBuy descrivono ispezione e foto in magazzino. Ciò consente un esame visivo, non identifica fibre in laboratorio, non calibra superfici e non fissa foto o resi universali.",
+};
+
 export function getLocalizedArticle(article: ArticleRecord, locale: Locale): ArticleRecord {
   if (locale === "en") return article;
 
@@ -561,6 +612,7 @@ export function getLocalizedArticle(article: ArticleRecord, locale: Locale): Art
   if (!topic) return article;
   const shared = localeText[locale];
   const isColorArticle = article.slug === "lolobuy-qc-color-lighting-errors";
+  const isMaterialArticle = article.slug === "lolobuy-material-texture-qc-photo-limits";
   const insertFocus = (value: string) => value.replace("{focus}", topic.focus);
 
   return {
@@ -572,12 +624,20 @@ export function getLocalizedArticle(article: ArticleRecord, locale: Locale): Art
     eyebrow: topic.eyebrow,
     primaryKeyword: topic.shortTitle,
     intent: topic.intent,
-    checkedDate: isColorArticle ? colorArticleCheckedDate[locale] : shared.checkedDate,
+    checkedDate: isColorArticle
+      ? colorArticleCheckedDate[locale]
+      : isMaterialArticle
+        ? materialArticleCheckedDate[locale]
+        : shared.checkedDate,
     imageAlt: shared.imageAlt,
     imageCaption: shared.imageCaption,
     standfirst: topic.standfirst,
     takeaways: shared.takeaways.map(insertFocus),
-    sourceNote: isColorArticle ? colorArticleSourceNote[locale] : shared.sourceNote,
+    sourceNote: isColorArticle
+      ? colorArticleSourceNote[locale]
+      : isMaterialArticle
+        ? materialArticleSourceNote[locale]
+        : shared.sourceNote,
     sections: shared.sections.map((section) => ({
       heading: section.heading,
       paragraphs: section.paragraphs.map(insertFocus),

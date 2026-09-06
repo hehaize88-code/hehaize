@@ -1228,6 +1228,112 @@ export const articles: ArticleRecord[] = [
       },
     ],
   },
+  {
+    slug: "lolobuy-material-texture-qc-photo-limits",
+    title: "LoloBuy Material and Texture QC: What Photos Can and Cannot Prove",
+    seoTitle: "LoloBuy Material and Texture QC Photo Guide",
+    shortTitle: "LoloBuy Material and Texture QC",
+    description: "Review LoloBuy fabric and surface evidence without overclaiming: separate labels, visible texture, lighting effects and material properties photos cannot prove.",
+    eyebrow: "Material and texture QC",
+    primaryKeyword: "LoloBuy material and texture QC",
+    secondaryKeywords: [
+      "LoloBuy fabric QC photos",
+      "warehouse photo material check",
+      "what QC photos prove about texture",
+      "LoloBuy material evidence",
+    ],
+    intent: "Decide what warehouse photographs support about material and surface texture, and record what remains unproved before parcel approval",
+    checkedDate: "7 September 2026",
+    publishedDate: contentDates.articles["lolobuy-material-texture-qc-photo-limits"].published,
+    modifiedDate: contentDates.articles["lolobuy-material-texture-qc-photo-limits"].modified,
+    image: "/social/qc-guide.png",
+    imageAlt: "Material evidence review separating listing claims, label text, visible surface observations and unknown properties",
+    imageCaption: "A photo can document a visible weave, nap, coating or label. It cannot by itself verify fibre composition, hand feel, performance or durability.",
+    standfirst: "A sharp warehouse image may show weave, pile, grain, coating, gloss and a printed care label, yet still reveal little about fibre percentages, softness, warmth or durability. Reliable LoloBuy material and texture QC begins by naming the exact claim, then separates listing language, label text, visual observation and unresolved properties. That evidence ladder prevents a convincing close-up from becoming a materials guarantee.",
+    takeaways: [
+      "Write the exact material claim before reviewing any warehouse image.",
+      "Treat a photographed label as readable text, not independent proof of its accuracy.",
+      "Compare full views and close views before interpreting weave, nap, gloss or coating.",
+      "Keep fibre composition, hand feel, waterproofing and durability in the unknown column unless stronger evidence exists.",
+    ],
+    sourceNote: "Evidence boundary, checked 7 September 2026: LoloBuy's current public information describes warehouse inspection and photographs. That supports a visual review checkpoint, not laboratory identification, calibrated surface measurement, a universal photo set or a guaranteed return outcome. The method below is independent editorial analysis and requires every action to be confirmed in the live order interface.",
+    sections: [
+      {
+        heading: "Name the claim before looking at the texture",
+        paragraphs: [
+          "Start with the saved listing, selected option and order note. Copy the material statement exactly: for example, “cotton blend,” “full-grain leather,” “water-resistant coating” or a specific fibre percentage. Do not silently upgrade a vague phrase such as “premium fabric” into a measurable specification. If the selected variant changes the material, record the variant code beside the claim so the photograph is compared with the item actually ordered.",
+          "Then classify the question. Identity asks whether this is the correct product and option. Surface appearance asks whether a visible structure, finish or defect matches the expectation. Composition asks what substances or fibres make up the item. Performance asks how it behaves in wear or use. Warehouse photographs can often help with the first two; they rarely settle the last two. A clear question keeps visible evidence from being stretched beyond its role.",
+        ],
+      },
+      {
+        heading: "Build a four-column material evidence ladder",
+        paragraphs: [
+          "Use four separate fields in the QC record. The listing claim preserves what the seller stated. Label text transcribes what is readable on the physical arrival. Visual observation describes only what the image shows. Unknown records the properties that remain unresolved. For a hoodie, the row might read: seller says 80% cotton; photographed label reads 80% cotton and 20% polyester; close view shows a looped inner surface; fibre accuracy, hand feel and shrinkage remain unknown.",
+          "Agreement between the seller page and label is useful identity evidence, but it is not an independent laboratory result. A label can be wrong, incomplete, mistranslated or attached to another variant. Conversely, a visually unfamiliar surface does not automatically disprove a composition claim. Keep observations descriptive—tight knit, raised pile, smooth coating, irregular grain—rather than naming a fibre from appearance alone.",
+        ],
+        bullets: [
+          "Listing claim: exact wording, option and capture date",
+          "Label text: complete readable text and units",
+          "Visual observation: structure, finish and visible condition",
+          "Unknown: composition accuracy, feel, performance and lifespan",
+        ],
+      },
+      {
+        heading: "Read surface structure at more than one scale",
+        paragraphs: [
+          "A full-item image establishes where the material sits and whether panels appear consistent. A medium view shows seams, transitions and repeated surface direction. A close view can reveal knit loops, woven crossings, pile, embossing, grain or a coating edge. One extreme crop without location is weak evidence because it may show a lining, trim, shadow or protective film instead of the main material.",
+          "Compare repeated areas under the same view. Two sleeves, bag panels or shoe quarters can reveal an inconsistent nap direction, missing coating, obvious scuff or unexpected surface change. For patterned fabric, follow the repeat rather than judging one enlarged pixel cluster. Compression and sharpening can invent small edges, so return to the complete image before recording a defect.",
+          "Texture vocabulary should remain observable. “Fine parallel ribs” is stronger than “high-quality corduroy.” “Short raised pile changes brightness when brushed in opposite directions” is more defensible than “soft velvet.” Quality and softness require a standard or physical assessment that the image does not provide.",
+        ],
+      },
+      {
+        heading: "Separate texture from light, focus and compression",
+        paragraphs: [
+          "Directional light makes ridges and fibres more visible by creating small highlights and shadows. Flat frontal light can hide the same relief. Glossy surfaces reflect the warehouse, while matte surfaces scatter light; that difference can look like a material change even when it is only illumination. Compare several angles and ask whether the feature moves with the object or changes with the highlight.",
+          "Focus matters as much as resolution. A large file focused on the background may contain fewer usable surface details than a modest close-up focused on the material. Motion blur can smooth pile, and phone processing can sharpen weave into artificial contrast. The previous color-and-lighting guide explains whole-frame casts and exposure; here the test is narrower: does the photographed structure repeat across usable views without being created by light or processing?",
+          "When every close view has clipped highlights, deep shadow or inconsistent focus, record the texture question as inconclusive. Do not choose the most flattering image as proof or the least flattering image as a defect. Evidence quality is part of the result.",
+        ],
+      },
+      {
+        heading: "Inspect coatings, gloss and protective layers cautiously",
+        paragraphs: [
+          "A photograph can reveal visible peeling, bubbles, cracking, uneven application, residue or a missing finish on an exposed area. It may also show whether matched components have similar reflectivity under one light. Those observations matter for visible condition. They do not establish the chemical type, thickness, adhesion strength or future resistance of a coating.",
+          "Protective film can create false alarms. Film edges, trapped air and wrinkles may look like scratches or delamination. Ask whether the photographed surface is the final exposed material and whether the feature appears beneath or on top of a removable layer. Do not ask staff to remove packaging or protection unless the live order interface permits it and you accept the effect on return or shipping options.",
+          "Words such as waterproof, stain-resistant, anti-scratch and genuine require more than appearance. Unless a documented test, specification and applicable condition support the claim, keep it as seller language rather than a QC conclusion. A bead of water in an image would test one moment and area, not long-term waterproofing or seam performance.",
+        ],
+      },
+      {
+        heading: "Treat label photos as transcription evidence",
+        paragraphs: [
+          "A useful label image shows the complete tag, legible fibre percentages, care symbols, country information and any model or size identifier. Save the original image and transcribe uncertain characters with a question mark instead of guessing. If several labels conflict, preserve each one and identify its location. Do not combine fragments from different tags into a cleaner statement than the physical evidence supports.",
+          "Textile labelling rules illustrate why precise names and percentages matter, but a warehouse photograph cannot verify whether printed percentages are accurate. It can only show that a label carrying those words was attached. Use the label to check the ordered variant and to record the manufacturer's stated information. If composition accuracy is safety-critical or commercially critical, visual QC is the wrong level of evidence.",
+        ],
+      },
+      {
+        heading: "Keep non-visual properties outside the pass decision",
+        paragraphs: [
+          "Photos do not prove softness, stiffness against skin, warmth, breathability, odor, weight distribution, stretch recovery or drape in motion. They cannot predict shrinkage after washing, abrasion resistance, colorfastness, pilling or how a coating ages. Even visible thickness is difficult to compare without a controlled scale and cross-section.",
+          "They also cannot establish authenticity from surface resemblance. A familiar weave, grain or logo placement is not provenance. If authenticity is essential, use authorized retail and evidence designed for that question. For protective, electrical, food-contact or other safety-critical products, do not replace compliance documents and appropriate testing with general warehouse images.",
+          "Write residual risk in plain language: “label matches listing; pile appears even; softness and fibre accuracy unverified.” This sentence is more useful than a green tick labelled “material correct,” because it tells the next decision-maker exactly what was and was not checked.",
+        ],
+      },
+      {
+        heading: "Request one view that can change the decision",
+        paragraphs: [
+          "If the current images leave a meaningful visual question, request one controlled view only if that service is available for the order. Name the location, scale and purpose: “Please photograph the full inside back panel and one focused close view of the knit structure beside the existing label.” For a glossy bag, ask for both matching panels in one frame at the same angle. The request should create a comparison, not ask staff to certify a material.",
+          "Do not assume a universal number of included images, a fixed extra-photo price or a guaranteed setup. LoloBuy's public information confirms warehouse inspection and photographs but does not publish those variables as universal rules. Check the live order interface before relying on an extra view. If no obtainable photograph can answer the property question, keep it unresolved and decide whether that uncertainty is acceptable.",
+        ],
+      },
+      {
+        heading: "Use pass, mismatch and inconclusive precisely",
+        paragraphs: [
+          "Pass the visual-material check when identity is correct, the saved claim and photographed label are recorded, and usable views show no decision-changing visible mismatch or damage. Record a mismatch when the physical label, panel structure, finish or visible condition conflicts with the ordered evidence in a repeatable way. Use inconclusive when glare, blur, scale or missing coverage prevents a fair comparison.",
+          "A mismatch does not automatically create a return right, and an inconclusive image does not automatically justify keeping the item. Use only the actions and deadlines shown for the specific order. Save the option, listing capture, full photographs, any close-up, label transcription, observation, remaining unknowns and decision date. Exclude passwords, payment data, addresses and unrelated parcel records from anything shared.",
+          "This method complements the stitching checklist and broad QC-photo guide without replacing them. Stitching checks construction visible at joins; color review handles illumination and hue; this page handles the narrower boundary between observable surface evidence and material claims. Together they support a defensible approval record without pretending that a warehouse camera is a materials laboratory.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string) {

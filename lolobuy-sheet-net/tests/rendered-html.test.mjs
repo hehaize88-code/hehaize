@@ -87,7 +87,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 101 final-site sitemap URLs with language alternates", async () => {
+test("publishes 106 final-site sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -96,15 +96,16 @@ test("publishes 101 final-site sitemap URLs with language alternates", async () 
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 101);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 106);
   assert.match(xml, /lolobuy-qc-color-lighting-errors/);
+  assert.match(xml, /lolobuy-material-texture-qc-photo-limits/);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
   assert.match(
     xml,
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 101);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 106);
   assert.doesNotMatch(xml, /<loc>https:\/\/lolobuy-sheet\.net\/products\/\d+<\/loc>/);
   assert.match(
     xml,
@@ -576,6 +577,9 @@ test("publishes every article detail in all five languages with reciprocal hrefl
     "lolobuy-bag-qc-guide",
     "lolobuy-stitching-finish-qc-checklist",
     "lolobuy-alignment-symmetry-print-placement-qc",
+    "lolobuy-size-measurement-qc-photo-limits",
+    "lolobuy-qc-color-lighting-errors",
+    "lolobuy-material-texture-qc-photo-limits",
   ];
   const localeMarkers = new Map([
     ["es", "Qué decisión resuelve esta guía"],
