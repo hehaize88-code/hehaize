@@ -43,6 +43,10 @@ export default async function ArticlePage({ params }) {
   const article = getArticle(slug);
   if (!article) notFound();
 
+  const articleScopeClass = article.slug === "hubbuy-seller-reliability-dispatch-qc-return-signals"
+    ? " hubbuy-seller-reliability-article"
+    : "";
+
   const articleUrl = `${SITE_URL}/articles/${article.slug}/`;
   const articleSchema = {
     "@context": "https://schema.org",
@@ -95,7 +99,7 @@ export default async function ArticlePage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <header className="seo-article-hero">
+      <header className={`seo-article-hero${articleScopeClass}`}>
         <div className="wrap seo-article-hero-grid">
           <div>
             <nav className="breadcrumbs" aria-label="Breadcrumb">
@@ -122,7 +126,7 @@ export default async function ArticlePage({ params }) {
         </div>
       </header>
 
-      <section className="seo-article-section">
+      <section className={`seo-article-section${articleScopeClass}`}>
         <div className="wrap seo-article-layout">
           <aside className="article-toc">
             <strong>In this article</strong>

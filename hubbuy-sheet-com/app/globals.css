@@ -751,6 +751,29 @@ p { color: var(--muted); }
 }
 
 @media (max-width: 560px) {
+  /* Keep the seller-reliability article's long evidence labels inside the mobile viewport. */
+  .hubbuy-seller-reliability-article .seo-article-hero-grid,
+  .hubbuy-seller-reliability-article .seo-article-hero-grid > *,
+  .hubbuy-seller-reliability-article .seo-article-layout,
+  .hubbuy-seller-reliability-article .seo-article-layout > *,
+  .hubbuy-seller-reliability-article .seo-article-body > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .hubbuy-seller-reliability-article h1,
+  .hubbuy-seller-reliability-article h2,
+  .hubbuy-seller-reliability-article p,
+  .hubbuy-seller-reliability-article li,
+  .hubbuy-seller-reliability-article strong,
+  .hubbuy-seller-reliability-article span {
+    overflow-wrap: anywhere;
+  }
+  .hubbuy-seller-reliability-article .seo-article-topic-image {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
   body { font-size: 15px; }
   .announcement { justify-content: flex-start; overflow: hidden; white-space: nowrap; }
   .announcement span:nth-last-child(-n+2) { display: none; }
