@@ -556,6 +556,58 @@ export const articles = {
       ["Plan product price against parcel cost", "/guides/product-price-vs-parcel-cost"]
     ],
   },
+  "cssbuy-jersey-spreadsheet-sizing-customization-qc": {
+    label: "JERSEY SIZE & CUSTOMIZATION WORKSHEET · 12 MIN",
+    title: "CSSBuy Jersey Spreadsheet: Sizing, Customization and QC",
+    seoTitle: "CSSBuy Jersey Spreadsheet: Sizing, Customization & QC",
+    h1: "CSSBuy Jersey Spreadsheet: Record Size, Customization and QC",
+    description: "Build a CSSBuy jersey spreadsheet with exact version, size evidence, name and number instructions, patch options, QC checks and decision status.",
+    published: "2026-09-08",
+    checked: "September 8, 2026",
+    sections: [
+      ["Define the jersey version before collecting links", [
+        "Begin with the garment you actually want, not a team name or front photograph. Record sport, season or design reference, adult or youth cut, short or long sleeves, shirt-only or set, intended fit and whether the target is a plain jersey, a listed player option or a free-text customization. Add any required badge or patch as a separate condition. These details form the acceptance brief for every candidate row.",
+        "One CSSBuy jersey spreadsheet row should describe one exact listing and one selectable configuration. Fan, player, training, retro and youth versions may use different cuts, charts, materials or decoration even when the colours look similar. Do not merge them because they share a promotional image. A row is useful only when another reviewer can reproduce the precise version, size and decoration choice that the original shopper intended to order."
+      ]],
+      ["Capture the source and build a complete option key", [
+        "Save the original marketplace URL, CSSBuy route, marketplace, item identifier, visible shop and review date. Current CSSBuy jersey pages can expose size choices, no-name options, listed player names, custom name-and-number choices and patch selections. These are fields supplied for a specific third-party listing. The routed page supports ordering; it does not establish that another seller using the same design has identical options or production instructions.",
+        "Build the option key in a fixed order: jersey version, colour or team design, adult or youth cut, size label, name option, number option, patch option, shorts or other included pieces and quantity. Preserve the original selectable text beside a careful working translation. Select every component before recording the amount. If a price changes after customization or a patch is chosen, store the configured amount rather than the lowest page headline."
+      ]],
+      ["Make size evidence version-specific", [
+        "Copy the seller chart into the row without turning it into a universal jersey chart. Keep its original size labels, units and any stated tolerance. Identify whether chest means flat garment width, full circumference or a body recommendation; identify the start and end points for length and sleeve measurements. A size label from a fan version cannot automatically select the same label in a player or youth version, even on one seller page.",
+        "Use a reference jersey that already fits for comparison. Record its chest width, body length and one version-relevant dimension such as shoulder width or sleeve opening, with the garment laid flat and the endpoints named. Compare like with like rather than matching labels alone. When the listing does not define its chart method, mark the field unresolved and ask a focused question. Precision without a repeatable measurement path is not reliable sizing evidence."
+      ]],
+      ["Treat customization as a production instruction", [
+        "A custom name or number is not a casual note. Store it as an instruction with separate fields for exact name string, capitalization, spaces, punctuation, accent marks, number, requested position and the seller option that enables customization. Keep “no name, no number,” a pre-listed player and free-text customization as three different option types. Never place custom text in a generic comments cell where it can be confused with an editor's note.",
+        "Create a frozen order string that can be checked character by character before payment. For a hypothetical request, the record might state: custom option selected; back name MARTIN; number 18; no front number; patch option B. That is auditable. “Martin 18 jersey” is not, because it does not resolve capitalization, front-versus-back placement, patch choice or whether the seller expects a message through a particular order field."
+      ]],
+      ["Separate listed-player choices from free custom text", [
+        "A menu can offer several named players and also a custom option. A listed choice usually refers to a predefined decoration configuration, while free custom text requires the seller to interpret buyer-supplied characters. Record which path is being used. Do not select a similar listed player and assume a note will replace the name or number. Confirm that the chosen variation and the saved instruction agree before treating the row as order-ready.",
+        "For free text, note any visible character, font, alphabet or number limits only when the current listing states them. Do not invent a maximum length or assume every script is supported. If the requested text includes punctuation or non-ASCII characters, obtain a direct confirmation tied to the exact listing. Save the answer and date. A seller reply is evidence for that order configuration, not a permanent rule for all jerseys or future listings."
+      ]],
+      ["Record patches, badges and included pieces independently", [
+        "Patch choices deserve their own fields because a patch can be optional, bundled, unavailable for one version or represented by an abbreviated label. Record the exact option text, working description, intended location, quantity and whether it changes the configured amount. Do the same for shorts, socks or other pieces. A photograph that shows a sleeve badge does not prove it is included when the option key or listing description says otherwise.",
+        "Separate design identity from authenticity claims. Visible badges, sponsor marks, crests and labels can help describe what the listing depicts and what should be checked on arrival, but they do not prove licensing, origin or authenticity. The spreadsheet should document the selected configuration without making legal or quality claims the page cannot support. When a badge is decision-critical and its availability is unclear, hold the row rather than silently treating the main image as an order promise."
+      ]],
+      ["Design QC around identity, text and placement", [
+        "Write the warehouse review plan before the order. First check identity: correct jersey version, colour, size label, quantity and included pieces. Then check customization: exact name characters, number digits, capitalization, spelling, front and back relationship, and selected patch. Finally inspect visible execution such as centring, orientation, major spacing differences, peeling edges, incomplete stitching, stains, tears and obvious print or embroidery damage.",
+        "Use separate outcomes for text accuracy, placement and attachment condition. A correct name can still be visibly off-centre; a correctly positioned number can contain the wrong digit. Mark each item pass, mismatch or insufficient evidence. Photographs can document what is visible from the supplied angles, but cannot prove fibre composition, fit on the wearer, wash durability, hidden stitching or long-term adhesion. Ask for a targeted view only when it could change the decision."
+      ]],
+      ["Use an exception log for a worked comparison", [
+        "Suppose three candidates match the same short-sleeve brief. Candidate A offers the intended size and a listed player, but no required patch option. Candidate B offers free name-and-number customization, defines the patch and provides a version-specific chart, although its body-length endpoint is unclear. Candidate C has the lowest headline amount but the selected size removes the custom option. Reject A for the missing requirement, hold B for one measurement clarification and reject C for an incompatible configuration.",
+        "Record the reason as an exception rather than hiding it in a score. Useful exception codes include version mismatch, chart definition missing, custom text unconfirmed, required patch unavailable, included pieces unclear and configured amount not recorded. Add the next action and deadline. This method prevents a complete-looking row from outranking a better candidate simply because empty cells were ignored, and it keeps customization risk visible before the item enters production."
+      ]],
+      ["Freeze the row before payment and append arrival evidence", [
+        "Reopen the listing immediately before payment. Recheck the source identity, version, size, name option, number option, patch, included pieces, quantity, configured CNY amount and domestic delivery. Confirm that the frozen instruction matches the active selection. Mark the row order-ready only when every decision-critical field is reproducible. Use hold for one resolvable gap and reject when the required configuration disappeared or the seller cannot confirm an essential custom instruction.",
+        "After warehouse arrival, append the visible size label, measured fields, exact text result, number result, patch result, placement checks, condition findings and evidence dates without erasing the original order record. A reliable CSSBuy jersey spreadsheet does not promise fit, authenticity or decoration durability. It creates a traceable chain from the intended version and frozen customization string to the specific visual evidence used for acceptance, correction or rejection."
+      ]]
+    ],
+    related: [
+      ["Run the seller-page checklist", "/articles/cssbuy-seller-page-checklist-before-saving-find"],
+      ["Build a repeatable garment measurement record", "/articles/cssbuy-hoodie-spreadsheet-fabric-measurements-weight"],
+      ["Choose the right spreadsheet category", "/articles/cssbuy-spreadsheet-categories-explained"]
+    ],
+  },
 } as const;
 
 export type ArticleSlug = keyof typeof articles;
