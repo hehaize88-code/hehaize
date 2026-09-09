@@ -32,6 +32,123 @@ export type Guide = {
 
 export const guides: Guide[] = [
   {
+    slug: "uufinds-qc-color-lighting-photo-limits",
+    label: "COLOR EVIDENCE GUIDE",
+    title: "UUFinds QC Color Check: Lighting, White Balance and Photo Limits",
+    seoTitle: "UUFinds QC Color Check: Lighting & Photo Limits",
+    description: "Separate a likely product-color mismatch from lighting, white balance, exposure, reflections and display differences when reviewing UUFinds QC photos.",
+    primaryKeyword: "UUFinds QC color check",
+    longTailKeywords: ["UUFinds QC color mismatch", "UUFinds photo lighting", "QC photo white balance", "compare product color in QC photos"],
+    updated: "September 9, 2026",
+    readTime: "10 min read",
+    publishedISO: "2026-09-09",
+    modifiedISO: "2026-09-09",
+    englishOnly: true,
+    hideSourceNote: true,
+    intro: [
+      "A UUFinds QC color check should answer a narrow question: does the matched photo set contain consistent evidence of the wrong color, or could the difference come from the way the scene was illuminated, captured, compressed or displayed? A single thumbnail that looks warmer, darker or less saturated than a seller image cannot settle that question. Review the whole record, identify scene-wide clues and state the remaining uncertainty before accepting or rejecting a candidate.",
+      "UUFinds publicly presents its QC Finder as a way to locate QC photos and videos, including image-based search. Treat those results as research evidence whose source item, option and record context still need verification. If a candidate survives, carry the original marketplace link and exact option to the independent purchasing agent you choose. That agent—not UUFinds—controls its own order, warehouse photos, seller resolution, return and shipping process; this guide does not imply an affiliation.",
+    ],
+    sections: [
+      {
+        heading: "1. Match the record before comparing color",
+        paragraphs: [
+          "Start with identity, not hue. Save the complete UUFinds detail address, recoverable marketplace source, seller or shop context, item identifier, displayed color name, size or model, QC record date and the media set being reviewed. Keep photographs from one record together. A perfectly exposed image of another option, batch or seller is not color evidence for your candidate, even when the products share a silhouette.",
+          "Assign an identity state. Exact means the source item and relevant option agree. Conditional means the item appears to agree but one decisive option field is absent. Reference means the media belongs to a similar item and can teach you where details may appear, not what your unit will look like. Conflict means the source, seller, item or option disagrees. Stop a color verdict at Conflict; do not use visual similarity to repair missing provenance.",
+        ],
+        table: { caption: "Identity gate before a color verdict", headers: ["State", "What the record establishes", "Color use"], rows: [
+          ["Exact", "Source item and relevant option agree", "Continue with the matched set"],
+          ["Conditional", "Item agrees; option context is incomplete", "Review provisionally and preserve the gap"],
+          ["Reference", "Similar item or another option", "Learn the method only"],
+          ["Conflict", "Source, seller, item or option differs", "Stop; exclude it from the verdict"],
+        ] },
+      },
+      {
+        heading: "2. Diagnose the scene before the product",
+        paragraphs: [
+          "Look for objects that should be approximately neutral within the same frame: white paper, a grey ruler, a plain wall or an uncoloured surface. They are not calibrated color targets, but they can reveal a broad cast. If every light area looks yellow, the product's warm shift may come from the lamp or camera white balance. If neutrals look blue in another frame, compare the item only after acknowledging that scene-wide change.",
+          "White balance describes how captured colors are adjusted for the illumination. Temperature usually moves the image along a blue-to-yellow direction, while tint addresses a green-to-magenta direction. Automatic processing can choose a different balance from frame to frame. Use the neutral clue to explain a possible cast; never claim that an ordinary warehouse object gives an exact color measurement.",
+          "Ask a simple counterfactual: if the photographed item were removed, would the room still appear too warm, cool, green or magenta? When the answer is yes, downgrade a color mismatch until a better-controlled comparison exists. When neutral surroundings remain stable but one product panel changes consistently, the evidence for a product-level difference becomes stronger.",
+        ],
+      },
+      {
+        heading: "3. Separate exposure and shadow from hue",
+        paragraphs: [
+          "Exposure changes brightness and can make dark fabric appear washed out or make saturated details lose texture. A black garment under direct light may look charcoal; the same fabric in shadow may collapse toward featureless black. Compare midtone areas rather than the brightest reflection or deepest fold. If the histogram is unavailable, use visible texture: clipped highlights often lose surface detail, while crushed shadows hide it.",
+          "Trace the direction of light. A gradient that follows a fold, curved shoe panel or shiny bag is usually a lighting pattern, not evidence that the material was dyed in two colors. Hard shadows create sharp boundaries; reflected light can add a nearby wall or tabletop color. Rotate your attention across multiple views. A real panel mismatch should stay attached to the same physical area when the camera angle and shadow move.",
+        ],
+        points: [
+          "Do not sample a specular highlight as the base color.",
+          "Compare areas with visible texture and similar illumination.",
+          "Follow the same physical panel across views, not the same screen coordinate.",
+          "Mark any region hidden by deep shadow as Not shown clearly.",
+        ],
+      },
+      {
+        heading: "4. Check reflections, material response and mixed light",
+        paragraphs: [
+          "Glossy leather, coated fabric, metal, plastic and satin can reflect their surroundings. A colored phone case, wall, mat or garment nearby may appear as a local tint. Matte material scatters light more broadly, while textured surfaces create small highlights and shadows. These differences mean two materials with the same nominal color can look unlike each other in one photograph without proving that either is wrong.",
+          "Mixed light is especially difficult. Window light and indoor lamps may illuminate opposite sides with different color temperatures, so one automatic white-balance correction cannot neutralize the whole frame. Look at each side's nearby neutral clues. If the product transition follows the lighting boundary and repeats on background objects, classify it as a probable capture effect. If an isolated component remains different across lighting zones, preserve it as a possible material or option mismatch.",
+          "Pattern, pile and direction also matter. Suede and brushed fabric can shift lightness when fibres face another direction. Iridescent coatings are designed to change with angle. Record the material response visible in the source presentation and avoid naming an exact shade from one compressed frame. The job is to decide whether the available evidence supports the selected option, not to extract a laboratory color value.",
+        ],
+      },
+      {
+        heading: "5. Compare a matched set with a consistency grid",
+        paragraphs: [
+          "Use at least two useful views when the available record provides them; this is an editorial method, not a promised UUFinds photo count. Create rows for front, back, detail and label views that actually exist. Create columns for identity match, neutral-object cast, exposure, reflection risk, product area and observed difference. The grid prevents a vivid but unreliable frame from outweighing several consistent observations.",
+          "Classify the result as Consistent, Scene-dependent, Localized or Unresolved. Consistent means the same product-level difference survives useful views while the scene clues remain reasonably stable. Scene-dependent means the apparent shift changes with the background, shadow or whole-frame cast. Localized means one component differs from the rest and needs identity or material confirmation. Unresolved means coverage, focus or option context is insufficient.",
+        ],
+        table: { caption: "Color evidence and the decision it supports", headers: ["Pattern", "Evidence reading", "Next action"], rows: [
+          ["Whole frame shifts together", "Probable lighting or white-balance cast", "Seek a neutral, evenly lit view"],
+          ["Difference follows shadow or reflection", "Probable capture or surface response", "Compare the same panel from another angle"],
+          ["One component differs in stable scenes", "Possible option, material or assembly mismatch", "Verify identity and request a focused comparison"],
+          ["Matched area differs across useful views", "Stronger product-color evidence", "Apply the buyer's written acceptance rule"],
+        ] },
+      },
+      {
+        heading: "6. Treat seller images and screens as imperfect references",
+        paragraphs: [
+          "The original listing establishes what option was offered and how the seller presented it on the date saved. It is not a calibrated reference. Seller images may use studio lighting, editing, another display profile or a sample from another production run. Compare design-level distinctions first: black versus navy, red versus burgundy, contrasting panels or a named colorway. Avoid rejecting a unit because a subtle shade fails to match an edited thumbnail pixel for pixel.",
+          "Your own screen adds another layer. Brightness, night mode, color profile, browser processing and ambient light can alter perception. View decisive images on the same device with night filters off and brightness at a comfortable middle setting. If possible, check a second trustworthy display, but do not vote between screens. Agreement raises confidence; disagreement proves that display conditions remain part of the uncertainty.",
+          "Downloaded or shared copies can also be resized and compressed. Compression blocks around edges and saturated areas are image artifacts, not dye variation. Preserve the highest-resolution version available in the matched record and note whether the detail survives normal zoom. Do not sharpen, saturate or recolor a file and then treat the edited result as new product evidence.",
+        ],
+      },
+      {
+        heading: "7. Use confidence and acceptance rules, not a guessed shade",
+        paragraphs: [
+          "Write the buyer's rule before judging: for example, “reject if the matched pair shows different base colors under the same light,” or “pause if the navy option cannot be distinguished from black in any stable view.” A rule tied to use is more defensible than an invented color name. Keep hard failures separate from preferences; a buyer who needs a uniform match has a narrower tolerance than someone choosing a casual garment.",
+          "Suppose a hypothetical brown bag looks orange in the front view and deeper brown in the side view. The wall and grey ruler also look warmer in the first frame, while a metal clasp reflects an orange mat. The base panels remain similarly brown where both frames show midtones. Record Scene-dependent, not Wrong color. If one detachable strap stays redder in both scenes while the surrounding panels and neutral clues remain stable, classify the strap as a Localized possible mismatch and request a focused, evenly lit comparison if that difference would change the decision.",
+          "Use High confidence only when identity is Exact and the difference repeats under useful, reasonably stable conditions. Use Medium when the pattern is persuasive but one confounder remains. Use Low when option context, exposure or coverage is weak. Unknown is a valid result. Do not convert uncertainty into a pass simply because another listing looks similar.",
+        ],
+      },
+      {
+        heading: "8. Hand off one reproducible question to the chosen agent",
+        paragraphs: [
+          "When new evidence could reverse the decision, describe the exact item area, comparison and capture condition: “Please show the main panel and detachable strap together in one evenly lit frame, with a plain neutral object nearby, so their base colors can be compared.” This is a buyer request template, not a claim that UUFinds supplies extra photography.",
+          "Carry the original marketplace source, seller and item identifiers, exact color and size, matched UUFinds record, saved frames, scene diagnosis, confidence label and acceptance rule to the independent purchasing agent you select. Check that agent's current ordering, photo and return terms before paying. It decides what warehouse evidence or seller action is available. UUFinds remains the research source and is not represented as the warehouse, seller or affiliated agent.",
+          "Proceed when identity is Exact and the matched set supports the selected color within the written tolerance. Pause when one focused comparison could resolve a Scene-dependent, Localized or Unresolved result. Reject the research candidate when identity conflicts or a stable, repeated difference violates a hard rule. Date the conclusion: a later listing, option or unit needs a fresh color review.",
+        ],
+        points: [
+          "Match source, option and QC record before looking at color.",
+          "Diagnose neutral clues, exposure, shadows and reflections across the scene.",
+          "Compare the same physical area across useful views.",
+          "Record confidence and the buyer's acceptance threshold.",
+          "Use the chosen agent for every later order, warehouse or return action.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "OFFICIAL PLATFORM", source: "UUFinds QC Finder and public UU pages", checked: "September 9, 2026", supports: "QC photo, video and image-search research context", boundary: "Does not make UUFinds the seller, warehouse or purchasing agent" },
+      { type: "COLOR METHOD", source: "Adobe white-balance guidance", checked: "September 9, 2026", supports: "Temperature, tint and neutral-reference reasoning", boundary: "Ordinary scene objects are clues, not calibrated targets" },
+      { type: "PERCEPTION METHOD", source: "NIST lighting and color-rendering guidance", checked: "September 9, 2026", supports: "Light source and viewing conditions affect perceived color", boundary: "A photograph cannot produce a laboratory color measurement" },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-qc-checklist/", label: "Start with the full QC sequence", description: "Confirm identity and broad condition before diagnosing one color difference." },
+      { href: "/guides/uufinds-stitching-finish-qc-photo-checklist/", label: "Review structure separately", description: "Keep seams and finish evidence independent from lighting-driven color judgments." },
+      { href: "/guides/how-to-read-uufinds-product-detail-page/", label: "Verify the detail record", description: "Preserve source, option and QC context before using any photo as evidence." },
+    ],
+  },
+  {
     slug: "uufinds-stitching-finish-qc-photo-checklist",
     label: "GARMENT QC GUIDE",
     title: "UUFinds Stitching and Finish QC: A Photo Review Sequence",

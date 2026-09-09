@@ -17,6 +17,7 @@ const trousersGuideSlug = "uufinds-jeans-trousers-qc-checklist";
 const sizeNotesGuideSlug = "uufinds-size-measurement-notes-before-option";
 const sellerGuideSlug = "uufinds-seller-information-reliability-signals";
 const costGuideSlug = "uufinds-product-price-total-parcel-cost";
+const colorGuideSlug = "uufinds-qc-color-lighting-photo-limits";
 const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
@@ -321,12 +322,40 @@ for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
   await assert.rejects(readPage(`${locale}/guides/${costGuideSlug}`), `English-only cost guide must not generate a fake ${locale} page`);
 }
 
+const colorGuide = await readPage(`guides/${colorGuideSlug}`);
+assert.match(colorGuide, /<title>UUFinds QC Color Check: Lighting &amp; Photo Limits \| UUFinds Sheet<\/title>/);
+assert.match(colorGuide, /<h1>UUFinds QC Color Check: Lighting, White Balance and Photo Limits<\/h1>/);
+assert.match(colorGuide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${colorGuideSlug}/"`));
+assert.doesNotMatch(colorGuide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, "Color guide must not claim a translated equivalent");
+assert.match(colorGuide, /"datePublished":"2026-09-09"/);
+assert.match(colorGuide, /"dateModified":"2026-09-09"/);
+assert.match(colorGuide, /"@type":"Article"/);
+assert.match(colorGuide, /"@type":"BreadcrumbList"/);
+assert.match(colorGuide, /class="guide-table-wrap"/);
+assert.doesNotMatch(colorGuide, /class="evidence-ledger"|class="source-note"|Primary source notes|Evidence and source ledger/, "Color guide must not expose research-process modules");
+const colorGuideBodyStart = colorGuide.indexOf('class="guide-body"');
+const colorGuideBodyEnd = colorGuide.indexOf("</article>", colorGuideBodyStart);
+assert.ok(colorGuideBodyStart >= 0 && colorGuideBodyEnd > colorGuideBodyStart, "Color guide body must be extractable");
+const colorGuideBody = colorGuide.slice(colorGuideBodyStart, colorGuideBodyEnd);
+assert.doesNotMatch(colorGuideBody, /href="https?:\/\//i, "Color guide body must not add external links");
+assert.match(colorGuideBody, /independent purchasing agent|independent purchasing agent you choose/i);
+assert.match(colorGuideBody, /does not imply an affiliation|not represented as the warehouse, seller or affiliated agent/i);
+const colorWordCountMatch = colorGuide.match(/data-visible-word-count="(\d+)"/);
+assert.ok(colorWordCountMatch, "Color guide must expose its validated visible word count");
+const colorVisibleWordCount = Number(colorWordCountMatch[1]);
+assert.ok(colorVisibleWordCount >= 1200 && colorVisibleWordCount <= 1800, `Color guide word count must be 1,200–1,800, received ${colorVisibleWordCount}`);
+assert.match(colorGuide, new RegExp(`"wordCount":${colorVisibleWordCount}`));
+for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
+  await assert.rejects(readPage(`${locale}/guides/${colorGuideSlug}`), `English-only color guide must not generate a fake ${locale} page`);
+}
+
 const articleIndex = await readPage("articles");
 assert.match(articleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${sizeNotesGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${costGuideSlug}/"`));
+assert.match(articleIndex, new RegExp(`href="/guides/${colorGuideSlug}/"`));
 for (const locale of locales) {
   const localizedArticleIndex = await readPage(`${locale}/articles`);
   assert.match(localizedArticleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`), `${locale} article index must route the English-only card to its canonical page`);
@@ -334,6 +363,7 @@ for (const locale of locales) {
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`), `${locale} article index must route the English-only trousers card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${sizeNotesGuideSlug}/"`), `${locale} article index must route the English-only size-notes card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${costGuideSlug}/"`), `${locale} article index must route the English-only cost card to its canonical page`);
+    assert.match(localizedArticleIndex, new RegExp(`href="/guides/${colorGuideSlug}/"`), `${locale} article index must route the English-only color card to its canonical page`);
 }
 
 const home = await readPage("");
@@ -446,11 +476,13 @@ assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${englishOnl
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${linkSearchGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${trousersGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${sizeNotesGuideSlug}/`));
+assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${colorGuideSlug}/`));
 for (const slug of categorySlugs) assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/categories/${slug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${linkSearchGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${trousersGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${sizeNotesGuideSlug}/`));
+assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${colorGuideSlug}/`));
 
 const allowedOutboundHosts = new Set(["uufindssheet.com", "cnbuycha.com", "www.cnbuycha.com", "si.geilicdn.com", "www.googletagmanager.com"]);
 const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));

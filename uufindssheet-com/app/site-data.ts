@@ -31,6 +31,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "COLOR EVIDENCE GUIDE",
+    title: "UUFinds QC Color Check: Lighting, White Balance and Photo Limits",
+    summary: "Separate a likely product-color mismatch from scene-wide casts, exposure, shadows, reflections and display differences.",
+    href: "/guides/uufinds-qc-color-lighting-photo-limits/",
+    read: "10 min read",
+    englishOnly: true,
+  },
+  {
     tag: "GARMENT QC GUIDE",
     title: "UUFinds Stitching and Finish QC: A Photo Review Sequence",
     summary: "Inspect seam paths, puckering, edges, closures and trim in a repeatable order while marking details that the available photos cannot prove.",
