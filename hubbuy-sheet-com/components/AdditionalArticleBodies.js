@@ -1402,7 +1402,113 @@ function HubbuyPaymentAuditArticle({ article }) {
   );
 }
 
+function HubbuyShoesArticle({ article }) {
+  return (
+    <>
+      <p className="article-deck">Buying shoes through Hubbuy creates three different questions: did you select the right size, did the warehouse receive the right pair, and will the final packaging make sense for international shipping? Keep those questions separate. A size label is not a fit test, a clean photo is not a material guarantee, and an item weight is not yet a parcel quote.</p>
+
+      <section id="direct-answer">
+        <span>01 · Direct answer</span>
+        <h2>Approve shoes only after three evidence gates pass</h2>
+        <p>Before ordering, connect your own measurements to the exact model, seller chart and option text. At warehouse arrival, compare both shoes with that saved record and inspect visible identity, condition and pair consistency. Before parcel submission, record the weight and dimensions that belong to the packaging you might actually ship. A pass at one gate cannot replace another.</p>
+        <p>Hubbuy’s current public site presents a staged process in which goods are purchased, sent by the seller to a warehouse, inspected and later prepared for international shipping. Its public estimation page also separates planning inputs from the final parcel. That sequence supports a practical rule: make the fit decision from model-specific evidence, the acceptance decision from warehouse evidence and the shipping decision from packed-parcel evidence.</p>
+        <div className="article-point-grid">
+          <div><b>SIZE GATE</b><strong>Model-specific match</strong><span>Foot record, known-shoe comparison, seller chart and exact selected option.</span></div>
+          <div><b>QC GATE</b><strong>Received-pair match</strong><span>Labels, shape, color, pair consistency, condition and decision-critical measurements.</span></div>
+          <div><b>PARCEL GATE</b><strong>Final packing evidence</strong><span>Actual weight, external dimensions, protection, route eligibility and live quote.</span></div>
+          <div><b>STOP RULE</b><strong>Resolve material unknowns</strong><span>Do not ship while size identity or a visible mismatch could still change the decision.</span></div>
+        </div>
+      </section>
+
+      <section id="size-record">
+        <span>02 · Buyer measurement record</span>
+        <h2>Start with feet and a known shoe, not a converted label</h2>
+        <p>Record both feet while bearing weight, using the same sock thickness you expect to wear. Note heel-to-longest-toe length and the widest forefoot point in millimetres. Add any fit issue that repeatedly matters, such as a wide forefoot, high instep or one foot being longer. The larger or more demanding foot usually sets the minimum space requirement, but a model’s shape still controls the result.</p>
+        <p>Add a comparable pair you already wear successfully: its model, printed size system, removable-insole length when measurable and fit at the toes, sides and heel. This connects numbers to a real fit. Brannock fitting guidance describes measurement as only the first step because manufacturing and styling vary; no conversion table guarantees comfort.</p>
+        <div className="article-formula"><small>Minimum useful size record</small><strong>both feet + sock condition + known shoe + model-specific chart + fit tolerance</strong></div>
+      </section>
+
+      <section id="listing">
+        <span>03 · Listing verification</span>
+        <h2>Freeze the exact shoe model, size system and selected option</h2>
+        <p>Open the live source listing rather than deciding from a spreadsheet image. Save the source URL, seller, item identifier, model or style code when shown, colorway, size option exactly as written, quantity, current price, domestic-delivery line and the complete size chart. If the page uses image-only option tiles, preserve the selected tile beside its text. A generic “42” without a named system or chart is an unresolved risk, not a complete size instruction.</p>
+        <p>Foot length, recommended foot length, insole length and outsole length are different fields. Do not subtract a universal allowance from an undefined chart. Mark its method unknown when necessary and decide whether a warehouse measurement would resolve the uncertainty.</p>
+        <p>Record included laces, insoles, tags, accessories or retail box only when the listing actually includes them. “True to size” and “premium” are not measurable criteria. The <Link href="/categories/shoes/">Hubbuy shoes category</Link> supports discovery; the live listing is the evidence to freeze.</p>
+      </section>
+
+      <section id="qc-sequence">
+        <span>04 · Warehouse QC</span>
+        <h2>Review the pair in an order that prevents false confidence</h2>
+        <p>First match the warehouse item to the saved order: model, colorway, selected size label, quantity and included pieces. Next compare the left and right shoe. Check that they appear to be the same model and size, with consistent panel shapes, sole profiles, material transitions and color placement. A symmetrical camera angle helps; perspective can make one shoe appear longer when it is simply closer to the lens.</p>
+        <p>Inspect toe shape, heel counters, panels, eyestays, tongue labels, outsole pattern, visible glue, stitching and obvious deformation. Confirm accessory count and attachment. Distinguish a loose thread from a split seam, wrong size or warped sole, and tie each neutral description to an image.</p>
+        <p>Photos cannot prove fit, cushioning, internal support, material composition, odor, durability, authenticity or performance under wear. They also cannot prove that two similar-looking listings are identical. Use the <Link href="/guides/qc-checks/">warehouse QC checklist</Link> to translate a missing fact into a specific observable request.</p>
+        <ul>
+          <li><strong>Identity:</strong> correct model, color, size label and expected contents.</li>
+          <li><strong>Pair consistency:</strong> left and right shape, height, panels, soles and markings.</li>
+          <li><strong>Visible condition:</strong> deformation, staining, open seams, damaged hardware or missing pieces.</li>
+          <li><strong>Evidence limit:</strong> fit, hidden construction and long-term performance remain unproved.</li>
+        </ul>
+      </section>
+
+      <section id="measurement">
+        <span>05 · Measurement evidence</span>
+        <h2>Request one ruler view that answers a defined question</h2>
+        <p>If size remains the deciding uncertainty, request the measurement that corresponds to the saved chart or known shoe. For a removable insole, ask for a flat heel-to-longest-point view with the whole ruler and both endpoints visible. If the insole cannot be removed, an outsole measurement may be possible, but it is not interchangeable with internal length. Label the field honestly and compare like with like.</p>
+        <p>The photograph should show both endpoints, the scale and the object in one frame. Reject an angled ruler, curved tape or crop that hides zero. A clear length can reveal a mismatch, but it cannot simulate toe-box width, upper volume or movement.</p>
+      </section>
+
+      <section id="weight">
+        <span>06 · Weight record</span>
+        <h2>Keep four weights separate before estimating shipping</h2>
+        <p>Write down which object every weight describes: one shoe, the pair without retail packaging, the boxed pair, or the final international parcel. A seller’s listing weight may be an estimate. A warehouse item record may include domestic packaging. A rehearsal or final parcel result may include protective materials and other products. These figures answer different questions and should not be merged.</p>
+        <p>A box also occupies space. UPS defines dimensional weight as a volume-derived weight equivalent and notes that methods vary by mode or trade lane. Use only the current route’s rules. The <Link href="/articles/hubbuy-shipping-cost-guide/">Hubbuy shipping-cost guide</Link> covers the calculation; here the job is preserving correct shoe-and-packaging inputs.</p>
+        <div className="article-comparison">
+          <div><span>Item evidence</span><strong>Pair weight without assuming the retail box or final protection</strong></div>
+          <div><span>Boxed evidence</span><strong>Pair plus retail box and any packaging included in that measurement</strong></div>
+          <div><span>Parcel evidence</span><strong>Final external size, actual weight and current route result for the chosen setup</strong></div>
+        </div>
+      </section>
+
+      <section id="box-decision">
+        <span>07 · Packaging decision</span>
+        <h2>Compare protection and volume before keeping or removing the box</h2>
+        <p>A retail box may protect shape, organize accessories or matter to a collector, but it adds volume. Removing it can increase crushing risk when alternative protection is weak. Flexible shoes may tolerate another setup; structured uppers, hardware or delicate finishes may not. Confirm available services in the live parcel interface, then compare external dimensions, actual weight, route eligibility and current total—not a guessed saving.</p>
+      </section>
+
+      <section id="worked-example">
+        <span>08 · Worked example</span>
+        <h2>A size-42 label is not enough to approve one pair</h2>
+        <p>Assume a buyer records feet of 267 mm and 270 mm plus a well-fitting removable insole of 278 mm. These are illustrative records, not a Hubbuy recommendation. The listing offers “42,” while its 275 mm value is labelled recommended foot length. The buyer saves the chart instead of converting the label.</p>
+        <p>At warehouse arrival, both shoes show 42 and the expected color. A flat insole view measures about 278 mm with clear endpoints, matching the known-shoe reference. The buyer separately checks shape, soles and stitching, then compares a boxed parcel scenario with another permitted protective setup using their actual data and current quotes. No fixed weight, saving or route rule is assumed.</p>
+      </section>
+
+      <section id="final-checklist">
+        <span>09 · Final checklist</span>
+        <h2>Keep the fit, QC and parcel records connected</h2>
+        <ol>
+          <li>Measure both feet and record the sock condition.</li>
+          <li>Add a comparable well-fitting shoe and its measured field.</li>
+          <li>Save the live listing, model, seller, exact option and size-chart method.</li>
+          <li>List included pieces and decision-critical visible details.</li>
+          <li>Match both warehouse shoes to the saved order before inspecting defects.</li>
+          <li>Compare left and right shape, labels, panels, soles and visible condition.</li>
+          <li>Request one clearly defined measurement only when it can change the decision.</li>
+          <li>Label every weight by object and packaging state.</li>
+          <li>Compare available packaging scenarios using final parcel evidence.</li>
+          <li>Resolve material size or QC mismatches before international shipment.</li>
+        </ol>
+        <p>A strong Hubbuy shoes guide does not promise remote certainty. It creates a traceable decision: the selected option connects to a personal measurement record, the received pair connects to the listing, and the shipping choice connects to the package that will actually move.</p>
+      </section>
+
+      <ArticleFaq items={article.faq} />
+      <div className="article-sources"><strong>Dated source boundary</strong><p>Hubbuy’s public homepage and estimation surface were checked on 9 September 2026. The site supports a staged order, warehouse and parcel workflow, but the public pages reviewed did not establish a universal shoe weight, size conversion, photo count, packing service, route divisor, fee or delivery time. Brannock fitting guidance and UPS dimensional-weight definitions were checked the same day for the measurement and shipping boundaries used above. The header decision diagram is original Hubbuy Sheet editorial work. Source addresses appear in the publication report rather than as outbound article links.</p></div>
+      <ArticleCta />
+    </>
+  );
+}
+
 export default function AdditionalArticleBody({ article }) {
+  if (article.slug === "hubbuy-shoes-sizing-qc-shipping-weight") return <HubbuyShoesArticle article={article} />;
   if (article.slug === "hubbuy-seller-reliability-dispatch-qc-return-signals") return <HubbuySellerReliabilityArticle article={article} />;
   if (article.slug === "hubbuy-customs-tax-planning-import-record") return <HubbuyCustomsTaxArticle article={article} />;
   if (article.slug === "hubbuy-rehearsal-package-decision-guide") return <HubbuyRehearsalArticle article={article} />;

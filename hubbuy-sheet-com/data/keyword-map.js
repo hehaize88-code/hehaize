@@ -105,6 +105,14 @@ const corePages = [
 ];
 
 const articleStrategies = {
+  "hubbuy-shoes-sizing-qc-shipping-weight": {
+    primaryQuery: "Hubbuy shoes guide",
+    secondaryTerms: ["Hubbuy shoe sizing", "Hubbuy shoe QC checklist", "Hubbuy shoes shipping weight", "Hubbuy insole measurement"],
+    searchIntent: "Choose the exact shoe size, review warehouse evidence and understand how the pair and its packaging affect the shipping decision",
+    angle: "Three-gate footwear workflow connecting buyer measurements, model-specific listing evidence, pair-level QC and final parcel data",
+    evidence: ["Current Hubbuy public purchasing, QC and estimation surfaces checked 9 September 2026", "Brannock fitting guidance and UPS dimensional-weight definitions checked 9 September 2026"],
+    internalLinkRole: "Footwear decision leaf connecting the shoes category, warehouse QC and parcel planning without repeating the site's volumetric-weight explainer",
+  },
   "hubbuy-seller-reliability-dispatch-qc-return-signals": {
     primaryQuery: "Hubbuy seller reliability",
     secondaryTerms: ["Hubbuy seller dispatch time", "Hubbuy seller QC signals", "Hubbuy seller return evidence", "Hubbuy seller reliability checklist"],
