@@ -14,5 +14,5 @@ export function generateMetadata({ params }) {
 }
 
 export default function PortugueseLocalizedPage({ params }) {
-  return <LocalizedRoutePage params={params} />;
+  return <LocalizedRoutePage params={params} locale="pt-br" />;
 }

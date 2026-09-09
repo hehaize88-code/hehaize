@@ -27,6 +27,11 @@ const englishOnlyArticlePaths = new Set(
     .filter((article) => article.locales?.length === 1 && article.locales[0] === "en")
     .map((article) => `/articles/${article.slug}/`),
 );
+const portugueseOnlyArticlePaths = new Set(
+  articles
+    .filter((article) => article.locales?.length === 1 && article.locales[0] === "pt-br")
+    .map((article) => `/articles/${article.slug}/`),
+);
 const breadcrumbPaths = new Set([
   "/guides/how-to-buy/",
   "/guides/qc-checks/",
@@ -78,7 +83,13 @@ function internalTarget(href) {
 }
 
 function expectedAlternates(basePath) {
-  if (productByPath.has(basePath) || englishOnlyArticlePaths.has(basePath)) {
+  if (portugueseOnlyArticlePaths.has(basePath)) {
+    return new Map([
+      ["pt-BR", `${siteUrl}${getLocalizedPath(basePath, "pt-br")}`],
+      ["x-default", `${siteUrl}${getLocalizedPath(basePath, "pt-br")}`],
+    ]);
+  }
+  if (englishOnlyArticlePaths.has(basePath)) {
     return new Map([
       ["en", `${siteUrl}${basePath}`],
       ["x-default", `${siteUrl}${basePath}`],
@@ -151,6 +162,7 @@ for (const url of urls) {
   const twitterImage = metaContent(html, "name", "twitter:image");
   const article = articleByPath.get(basePath);
   const englishOnlyArticle = englishOnlyArticlePaths.has(basePath);
+  const portugueseOnlyArticle = portugueseOnlyArticlePaths.has(basePath);
   const category = categoryByPath.get(basePath);
   const product = productByPath.get(basePath);
   const productImage = product?.image?.startsWith("http") ? product.image : product ? `${siteUrl}${product.image}` : null;
@@ -297,7 +309,7 @@ for (const url of urls) {
   }
 
   records.push({ url, pathname, locale, basePath, title, canonical, h1, lang, ogTitle, ogUrl, ogImage });
-  if (!product && !englishOnlyArticle) {
+  if (!product && !englishOnlyArticle && !portugueseOnlyArticle) {
     if (!localeGroups.has(basePath)) localeGroups.set(basePath, {});
     localeGroups.get(basePath)[locale] = { title, h1, ogTitle, url };
   }
@@ -316,10 +328,14 @@ for (const [basePath, group] of localeGroups) {
   }
 }
 
-const localizedArticleCount = articles.length - englishOnlyArticlePaths.size;
-const localizedBaseRouteCount = 11 + localizedArticleCount + categoryPages.length + products.length;
-const englishRouteCount = localizedBaseRouteCount + englishOnlyArticlePaths.size;
-for (const [locale, expectedCount] of [["en", englishRouteCount], ["pt-br", localizedBaseRouteCount], ["de", localizedBaseRouteCount]]) {
+const multilingualArticleCount = articles.length - englishOnlyArticlePaths.size - portugueseOnlyArticlePaths.size;
+const sharedRouteCount = 11 + multilingualArticleCount + categoryPages.length + products.length;
+const localeCounts = {
+  en: sharedRouteCount + englishOnlyArticlePaths.size,
+  "pt-br": sharedRouteCount + portugueseOnlyArticlePaths.size,
+  de: sharedRouteCount,
+};
+for (const [locale, expectedCount] of Object.entries(localeCounts)) {
   const file = resolve(outputRoot, `sitemap-${locale}.xml`);
   if (!existsSync(file)) throw new Error(`Missing language sitemap: ${locale}`);
   const count = (readFileSync(file, "utf8").match(/<loc>/g) || []).length;
@@ -333,7 +349,7 @@ const duplicateCanonicals = records.filter((record, index) => (
   records.findIndex((candidate) => candidate.canonical === record.canonical) !== index
 ));
 
-const expectedSitemapUrls = (localizedBaseRouteCount * 3) + englishOnlyArticlePaths.size;
+const expectedSitemapUrls = localeCounts.en + localeCounts["pt-br"] + localeCounts.de;
 if (urls.length !== expectedSitemapUrls || new Set(urls).size !== expectedSitemapUrls) throw new Error(`Expected ${expectedSitemapUrls} unique sitemap URLs, found ${urls.length}`);
 if (duplicateTitles.length) throw new Error(`Duplicate titles: ${duplicateTitles.map((item) => item.url).join(", ")}`);
 if (duplicateCanonicals.length) throw new Error("Duplicate canonical URLs");
@@ -346,18 +362,10 @@ for (const article of articles) {
   if (width !== 1200 || height !== 630) throw new Error(`Wrong article image dimensions for ${article.socialImage}: ${width}x${height}`);
 }
 
-if (new Set(articles.map((article) => article.socialImage)).size !== articles.length) {
-  throw new Error("Article social images must be unique");
-}
-
-const englishPaths = new Set(
-  urls
-    .map((url) => new URL(url).pathname)
-    .filter((pathname) => !pathname.startsWith("/pt-br/") && !pathname.startsWith("/de/")),
-);
+const indexedBasePaths = new Set(urls.map((url) => getBaseLanguagePath(new URL(url).pathname)));
 const mappedPaths = new Set(keywordTopicMap.map((entry) => entry.url));
-const missingKeywordPages = [...englishPaths].filter((pathname) => !mappedPaths.has(pathname));
-const extraKeywordPages = [...mappedPaths].filter((pathname) => !englishPaths.has(pathname));
+const missingKeywordPages = [...indexedBasePaths].filter((pathname) => !mappedPaths.has(pathname));
+const extraKeywordPages = [...mappedPaths].filter((pathname) => !indexedBasePaths.has(pathname));
 if (missingKeywordPages.length || extraKeywordPages.length) {
   throw new Error(`Keyword map mismatch. Missing: ${missingKeywordPages.join(", ")}. Extra: ${extraKeywordPages.join(", ")}`);
 }

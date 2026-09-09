@@ -5,6 +5,7 @@ import ArticleResearchEnhancements from "@/components/ArticleResearchEnhancement
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { articles, getArticle } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
+import { getLocalizedPath } from "@/data/i18n";
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
@@ -15,11 +16,16 @@ export async function generateMetadata({ params }) {
   const article = getArticle(slug);
   if (!article) return {};
 
-  const path = `/articles/${article.slug}/`;
+  const path = article.locales?.length === 1 && article.locales[0] === "pt-br"
+    ? `/pt-br/articles/${article.slug}/`
+    : `/articles/${article.slug}/`;
+  const languages = article.locales?.length === 1 && article.locales[0] === "pt-br"
+    ? { "pt-BR": path, "x-default": path }
+    : undefined;
   return {
     title: { absolute: article.seoTitle },
     description: article.excerpt,
-    alternates: { canonical: path },
+    alternates: { canonical: path, ...(languages ? { languages } : {}) },
     openGraph: {
       type: "article",
       title: article.title,
@@ -38,7 +44,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function ArticlePage({ params }) {
+export default async function ArticlePage({ params, locale = "en" }) {
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) notFound();
@@ -47,7 +53,8 @@ export default async function ArticlePage({ params }) {
     ? " hubbuy-seller-reliability-article"
     : "";
 
-  const articleUrl = `${SITE_URL}/articles/${article.slug}/`;
+  const localPath = (path) => getLocalizedPath(path, locale);
+  const articleUrl = `${SITE_URL}${localPath(`/articles/${article.slug}/`)}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -58,8 +65,8 @@ export default async function ArticlePage({ params }) {
     datePublished: article.published,
     dateModified: article.factChecked,
     wordCount: article.wordCount,
-    inLanguage: "en",
-    author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
+    inLanguage: locale === "pt-br" ? "pt-BR" : locale,
+    author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}${localPath("/about/")}` },
     publisher: {
       "@type": "Organization",
       name: "Hubbuy Sheet",
@@ -79,12 +86,12 @@ export default async function ArticlePage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Articles", item: `${SITE_URL}/articles/` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}${localPath("/")}` },
+      { "@type": "ListItem", position: 2, name: "Articles", item: `${SITE_URL}${localPath("/articles/")}` },
       { "@type": "ListItem", position: 3, name: article.title, item: articleUrl },
     ],
   };
-  const faqSchema = {
+  const faqSchema = article.faq?.length ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: article.faq.map(([question, answer]) => ({
@@ -92,20 +99,20 @@ export default async function ArticlePage({ params }) {
       name: question,
       acceptedAnswer: { "@type": "Answer", text: answer },
     })),
-  };
+  } : null;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <header className={`seo-article-hero${articleScopeClass}`}>
         <div className="wrap seo-article-hero-grid">
           <div>
             <nav className="breadcrumbs" aria-label="Breadcrumb">
-              <Link href="/">Home</Link><span>/</span><Link href="/articles">Articles</Link><span>/</span><span>Research article</span>
+              <Link href={localPath("/")}>Home</Link><span>/</span><Link href={localPath("/articles/")}>Articles</Link><span>/</span><span>Research article</span>
             </nav>
-            <div className="article-card-meta"><span>{article.category}</span><span>English article</span></div>
+            <div className="article-card-meta"><span>{article.category}</span><span>{article.languageLabel || "English article"}</span></div>
             <h1>{article.title}</h1>
             <p>{article.excerpt}</p>
             <div className="article-byline">
@@ -131,7 +138,7 @@ export default async function ArticlePage({ params }) {
           <aside className="article-toc">
             <strong>In this article</strong>
             {article.toc.map(([id, label]) => <a href={`#${id}`} key={id}>{label}</a>)}
-            <Link href="/articles">All articles <ArrowIcon size={14} /></Link>
+            <Link href={localPath("/articles/")}>All articles <ArrowIcon size={14} /></Link>
           </aside>
 
           <article className="seo-article-body">
@@ -267,9 +274,9 @@ export default async function ArticlePage({ params }) {
           <span className="eyebrow">Continue reading</span>
           <h2>Use a checklist for the next action.</h2>
           <div>
-            <Link href="/guides/how-to-buy">Five-step order checklist <ArrowIcon /></Link>
-            <Link href="/guides/qc-checks">Category-by-category QC checklist <ArrowIcon /></Link>
-            <Link href="/guides/shipping">Parcel packing and route checklist <ArrowIcon /></Link>
+            <Link href={localPath("/guides/how-to-buy/")}>Five-step order checklist <ArrowIcon /></Link>
+            <Link href={localPath("/guides/qc-checks/")}>Category-by-category QC checklist <ArrowIcon /></Link>
+            <Link href={localPath("/guides/shipping/")}>Parcel packing and route checklist <ArrowIcon /></Link>
           </div>
         </div>
       </section>

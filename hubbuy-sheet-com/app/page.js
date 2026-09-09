@@ -6,6 +6,7 @@ import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { categories, getProductImageUrl, products, faqs, MAIN_SITE, SITE_URL, PRICE_RATE_DATE, usdReference } from "@/data/site";
 import { articles } from "@/data/articles";
 import { localePages } from "@/data/locale-content";
+import { getLocalizedPath } from "@/data/i18n";
 
 const languageAlternates = {
   en: "/",
@@ -34,10 +35,11 @@ const guideCards = [
   { tag: "Parcel checklist", title: "Packing, weight and route plan", text: "Review the final parcel data, protection needs and eligible lines before submission.", href: "/guides/shipping", tone: "blue" },
 ];
 
-const homeArticles = articles.slice(0, 4);
-
 export default function HomePage({ locale = "en" } = {}) {
   preload(products[0].image, { as: "image", fetchPriority: "high" });
+  const localPath = (path) => getLocalizedPath(path, locale);
+  const visibleArticles = articles.filter((article) => !article.locales || article.locales.includes(locale));
+  const homeArticles = visibleArticles.slice(0, 4);
 
   const localePage = localePages[locale];
   const pageUrl = localePage ? `${SITE_URL}${localePage.path}` : SITE_URL;
@@ -75,12 +77,12 @@ export default function HomePage({ locale = "en" } = {}) {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Hubbuy buying and shipping articles",
-    numberOfItems: articles.length,
-    itemListElement: articles.map((article, index) => ({
+    numberOfItems: visibleArticles.length,
+    itemListElement: visibleArticles.map((article, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: article.title,
-      url: `${SITE_URL}/articles/${article.slug}/`,
+      url: `${SITE_URL}${localPath(`/articles/${article.slug}/`)}`,
     })),
   };
 
@@ -190,11 +192,11 @@ export default function HomePage({ locale = "en" } = {}) {
               <h2>Research before the parcel gets expensive</h2>
               <p>Fact-checked English reading on warehouse photos, shipping costs and consolidation decisions.</p>
             </div>
-            <Link href="/articles">View all {articles.length} articles <ArrowIcon /></Link>
+            <Link href={localPath("/articles/")}>View all {visibleArticles.length} articles <ArrowIcon /></Link>
           </div>
           <div className="home-article-cards">
             {homeArticles.map(article => (
-              <Link key={article.slug} href={`/articles/${article.slug}/`} className={`home-article-card home-article-${article.cover.tone}`}>
+              <Link key={article.slug} href={localPath(`/articles/${article.slug}/`)} className={`home-article-card home-article-${article.cover.tone}`}>
                 <div className="home-article-meta">
                   <span>{article.category}</span>
                   <b>{article.readTime}</b>

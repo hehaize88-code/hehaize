@@ -75,6 +75,10 @@ function absoluteTitle(metadata) {
 export async function getLocalizedMetadata(params, locale) {
   const { segments = [] } = await params;
   const route = segments.join("/");
+  if (route.startsWith("articles/")) {
+    const localizedArticle = getArticle(route.slice("articles/".length));
+    if (localizedArticle?.locales && !localizedArticle.locales.includes(locale)) return {};
+  }
   const source = await sourceMetadata(route);
   if (!source) return {};
 
@@ -116,17 +120,18 @@ export async function getLocalizedMetadata(params, locale) {
   };
 }
 
-export default async function LocalizedRoutePage({ params }) {
+export default async function LocalizedRoutePage({ params, locale }) {
   const { segments = [] } = await params;
   const route = segments.join("/");
   const entry = staticPages[route];
   if (entry) {
     const Component = entry.Component;
-    return <Component />;
+    return <Component locale={locale} />;
   }
 
-  if (segments[0] === "articles" && segments.length === 2 && getArticle(segments[1])) {
-    return <ArticlePage params={Promise.resolve({ slug: segments[1] })} />;
+  const localizedArticle = segments[0] === "articles" && segments.length === 2 ? getArticle(segments[1]) : null;
+  if (localizedArticle && (!localizedArticle.locales || localizedArticle.locales.includes(locale))) {
+    return <ArticlePage params={Promise.resolve({ slug: segments[1] })} locale={locale} />;
   }
 
   if (segments[0] === "categories" && segments.length === 2 && getCategory(segments[1])) {

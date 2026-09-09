@@ -5,6 +5,7 @@ import { ArrowIcon, CheckIcon } from "@/components/Icons";
 import { articles } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
+import { getLocalizedPath } from "@/data/i18n";
 
 export const metadata = createPageMetadata({
   title: "China Shopping Agent Articles & Hubbuy Guides",
@@ -13,18 +14,20 @@ export const metadata = createPageMetadata({
   imageAlt: "China shopping agent articles from Hubbuy Sheet",
 });
 
-export default function ArticlesPage() {
-  const [featuredArticle, ...moreArticles] = articles;
+export default function ArticlesPage({ locale = "en" }) {
+  const visibleArticles = articles.filter((article) => !article.locales || article.locales.includes(locale));
+  const [featuredArticle, ...moreArticles] = visibleArticles;
+  const localPath = (path) => getLocalizedPath(path, locale);
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "China Shopping Agent Articles",
-    url: `${SITE_URL}/articles/`,
+    url: `${SITE_URL}${localPath("/articles/")}`,
     description: metadata.description,
-    hasPart: articles.map((article) => ({
+    hasPart: visibleArticles.map((article) => ({
       "@type": "Article",
       headline: article.title,
-      url: `${SITE_URL}/articles/${article.slug}/`,
+      url: `${SITE_URL}${localPath(`/articles/${article.slug}/`)}`,
       datePublished: article.published,
       dateModified: article.factChecked,
       author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
@@ -46,9 +49,9 @@ export default function ArticlesPage() {
           <div>
             <div className="article-index-heading">
               <span className="eyebrow">Start with the complete workflow</span>
-              <p>{articles.length} fact-checked English articles</p>
+              <p>{visibleArticles.length} fact-checked {locale === "pt-br" ? "Portuguese" : locale === "de" ? "German" : "English"} articles</p>
             </div>
-            <Link className="featured-article" href={`/articles/${featuredArticle.slug}`}>
+            <Link className="featured-article" href={localPath(`/articles/${featuredArticle.slug}/`)}>
               <ArticleCover compact cover={featuredArticle.cover} />
               <div className="featured-article-copy">
                 <div className="article-card-meta"><span>{featuredArticle.category}</span><span>{featuredArticle.readTime}</span></div>
@@ -64,7 +67,7 @@ export default function ArticlesPage() {
             </div>
             <div className="article-library-grid">
               {moreArticles.map((article) => (
-                <Link className="article-library-card" href={`/articles/${article.slug}`} key={article.slug}>
+                <Link className="article-library-card" href={localPath(`/articles/${article.slug}/`)} key={article.slug}>
                   <ArticleCover compact cover={article.cover} />
                   <div>
                     <div className="article-card-meta"><span>{article.category}</span><span>{article.readTime}</span></div>

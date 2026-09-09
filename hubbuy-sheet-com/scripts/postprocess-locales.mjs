@@ -39,6 +39,9 @@ const baseRoutes = [
 const englishOnlyRoutes = [
   ...englishOnlyArticles.map((article) => `/articles/${article.slug}/`),
 ];
+const portugueseOnlyRoutes = articles
+  .filter((article) => article.locales?.length === 1 && article.locales[0] === "pt-br")
+  .map((article) => `/articles/${article.slug}/`);
 const allEnglishRoutes = [...baseRoutes, ...englishOnlyRoutes];
 const staticAssetPattern = /\.(?:avif|css|gif|ico|jpe?g|js|json|png|svg|txt|webp|xml)$/i;
 const translatedMetaFields = new Set([
@@ -94,6 +97,7 @@ function localizeInternalPath(rawValue, locale) {
   const url = new URL(rawValue, siteUrl);
   if (staticAssetPattern.test(url.pathname)) return rawValue;
   if (englishOnlyRoutes.includes(url.pathname)) return rawValue;
+  if (portugueseOnlyRoutes.includes(url.pathname)) return `${routeForLocale(url.pathname, "pt-br")}${url.search}${url.hash}`;
   return `${routeForLocale(url.pathname, locale)}${url.search}${url.hash}`;
 }
 
@@ -120,7 +124,10 @@ function translateJsonValues(value, dictionary, locale, parentKey = null) {
 }
 
 function alternateLinks(route) {
-  const alternates = englishOnlyRoutes.includes(route) ? [
+  const alternates = portugueseOnlyRoutes.includes(route) ? [
+    ["pt-BR", routeForLocale(route, "pt-br")],
+    ["x-default", routeForLocale(route, "pt-br")],
+  ] : englishOnlyRoutes.includes(route) ? [
     ["en", route],
     ["x-default", route],
   ] : [
@@ -269,17 +276,21 @@ function enhanceEnglishHtml(sourceHtml, route) {
 function sitemapXml(routes, selectedLocale = null, singleLanguageRoutes = []) {
   const records = [];
   for (const route of routes) {
-    const locales = selectedLocale ? [selectedLocale] : ["en", "pt-br", "de"];
+    const supportedLocales = portugueseOnlyRoutes.includes(route) ? ["pt-br"] : ["en", "pt-br", "de"];
+    const locales = selectedLocale ? supportedLocales.filter((locale) => locale === selectedLocale) : supportedLocales;
     for (const locale of locales) {
       const path = routeForLocale(route, locale);
       const article = articles.find((item) => path.includes(`/articles/${item.slug}/`));
       const priority = route === "/" ? (locale === "en" ? "1.0" : "0.9") : route === "/products/" ? "0.9" : route === "/articles/" ? "0.85" : article ? "0.8" : "0.7";
-      const alternates = [
+      const alternates = (portugueseOnlyRoutes.includes(route) ? [
+        ["pt-BR", routeForLocale(route, "pt-br")],
+        ["x-default", routeForLocale(route, "pt-br")],
+      ] : [
         ["en", routeForLocale(route, "en")],
         ["pt-BR", routeForLocale(route, "pt-br")],
         ["de", routeForLocale(route, "de")],
         ["x-default", routeForLocale(route, "en")],
-      ].map(([code, href]) => `    <xhtml:link rel="alternate" hreflang="${code}" href="${siteUrl}${href}" />`).join("\n");
+      ]).map(([code, href]) => `    <xhtml:link rel="alternate" hreflang="${code}" href="${siteUrl}${href}" />`).join("\n");
       records.push(`  <url>\n    <loc>${siteUrl}${path}</loc>\n    <lastmod>${article?.updated || lastModified}</lastmod>\n    <changefreq>${["/", "/products/", "/articles/"].includes(route) ? "weekly" : "monthly"}</changefreq>\n    <priority>${priority}</priority>\n${alternates}\n  </url>`);
     }
   }
@@ -296,9 +307,26 @@ function sitemapXml(routes, selectedLocale = null, singleLanguageRoutes = []) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${records.join("\n")}\n</urlset>\n`;
 }
 
+const generatedLocaleSources = new Map();
+for (const locale of ["pt-br", "de"]) {
+  const sources = new Map();
+  for (const route of baseRoutes) {
+    const generatedPath = htmlPath(route, locale);
+    if (existsSync(generatedPath)) sources.set(route, readFileSync(generatedPath, "utf8"));
+  }
+  generatedLocaleSources.set(locale, sources);
+}
+
 const englishSources = new Map();
 for (const route of allEnglishRoutes) {
   const sourcePath = htmlPath(route, "en");
+  if (!existsSync(sourcePath)) {
+    const nextExportFallback = resolve(".next/server/app", `${route.replace(/^\//, "").replace(/\/$/, "")}.html`);
+    if (existsSync(nextExportFallback)) {
+      mkdirSync(dirname(sourcePath), { recursive: true });
+      copyFileSync(nextExportFallback, sourcePath);
+    }
+  }
   if (!existsSync(sourcePath)) throw new Error(`Missing English static page: ${sourcePath}`);
   englishSources.set(route, readFileSync(sourcePath, "utf8"));
 }
@@ -311,9 +339,11 @@ for (const route of allEnglishRoutes) {
 for (const route of baseRoutes) {
   const sourceHtml = englishSources.get(route);
   for (const locale of ["pt-br", "de"]) {
+    if (portugueseOnlyRoutes.includes(route) && locale !== "pt-br") continue;
     const destination = htmlPath(route, locale);
     mkdirSync(dirname(destination), { recursive: true });
-    writeFileSync(destination, localizeHtml(sourceHtml, route, locale));
+    const localizedSource = generatedLocaleSources.get(locale)?.get(route) || sourceHtml;
+    writeFileSync(destination, localizeHtml(localizedSource, route, locale));
   }
 }
 

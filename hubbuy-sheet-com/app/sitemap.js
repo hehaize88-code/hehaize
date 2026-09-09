@@ -31,8 +31,15 @@ export default function sitemap() {
     const article = route.startsWith("/articles/") && route !== "/articles/"
       ? articles.find((item) => route.includes(item.slug))
       : null;
-    const englishOnly = article?.locales?.length === 1 && article.locales[0] === "en";
-    const languages = englishOnly
+    const supportedLocales = article?.locales || locales.map(({ code }) => code === "pt-BR" ? "pt-br" : code);
+    const portugueseOnly = supportedLocales.length === 1 && supportedLocales[0] === "pt-br";
+    const englishOnly = supportedLocales.length === 1 && supportedLocales[0] === "en";
+    const languages = portugueseOnly
+      ? {
+          "pt-BR": `${SITE_URL}${localizedPath(route, "/pt-br")}`,
+          "x-default": `${SITE_URL}${localizedPath(route, "/pt-br")}`,
+        }
+      : englishOnly
       ? {
           en: `${SITE_URL}${localizedPath(route, "")}`,
           "x-default": `${SITE_URL}${localizedPath(route, "")}`,
@@ -43,7 +50,9 @@ export default function sitemap() {
           de: `${SITE_URL}${localizedPath(route, "/de")}`,
           "x-default": `${SITE_URL}${localizedPath(route, "")}`,
         };
-    const routeLocales = englishOnly ? locales.filter(({ code }) => code === "en") : locales;
+    const routeLocales = portugueseOnly
+      ? locales.filter(({ code }) => code === "pt-BR")
+      : englishOnly ? locales.filter(({ code }) => code === "en") : locales;
     return routeLocales.map(({ prefix }) => ({
       url: `${SITE_URL}${localizedPath(route, prefix)}`,
       lastModified: new Date(`${article?.updated || "2026-07-22"}T00:00:00Z`),
@@ -52,17 +61,17 @@ export default function sitemap() {
       alternates: { languages },
     }));
   });
-  const productEntries = products.map((product) => ({
-    url: `${SITE_URL}${product.localHref}`,
+  const productEntries = products.flatMap((product) => locales.map(({ code, prefix }) => ({
+    url: `${SITE_URL}${localizedPath(product.localHref, prefix)}`,
     lastModified: new Date(`${product.checked}T00:00:00Z`),
     changeFrequency: "weekly",
     priority: 0.72,
-    alternates: {
-      languages: {
-        en: `${SITE_URL}${product.localHref}`,
-        "x-default": `${SITE_URL}${product.localHref}`,
-      },
-    },
-  }));
+    alternates: { languages: {
+      en: `${SITE_URL}${product.localHref}`,
+      "pt-BR": `${SITE_URL}${localizedPath(product.localHref, "/pt-br")}`,
+      de: `${SITE_URL}${localizedPath(product.localHref, "/de")}`,
+      "x-default": `${SITE_URL}${product.localHref}`,
+    } },
+  })));
   return [...localizedEntries, ...productEntries];
 }

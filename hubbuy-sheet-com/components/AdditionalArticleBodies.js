@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SearchBox from "@/components/SearchBox";
 import { CheckIcon } from "@/components/Icons";
+import PortugueseGrowthArticle, { portugueseGrowthSlugs } from "@/components/PortugueseGrowthArticles";
 
 const OFFICIAL_SITE = "https://hubbuy.com/";
 
@@ -1509,6 +1510,7 @@ function HubbuyShoesArticle({ article }) {
 
 export default function AdditionalArticleBody({ article }) {
   if (article.slug === "hubbuy-shoes-sizing-qc-shipping-weight") return <HubbuyShoesArticle article={article} />;
+  if (portugueseGrowthSlugs.has(article.slug)) return <PortugueseGrowthArticle article={article} />;
   if (article.slug === "hubbuy-seller-reliability-dispatch-qc-return-signals") return <HubbuySellerReliabilityArticle article={article} />;
   if (article.slug === "hubbuy-customs-tax-planning-import-record") return <HubbuyCustomsTaxArticle article={article} />;
   if (article.slug === "hubbuy-rehearsal-package-decision-guide") return <HubbuyRehearsalArticle article={article} />;
