@@ -1,8 +1,53 @@
 {
-  "updated": "2026-07-29",
+  "updated": "2026-09-09",
   "site": "https://uufindssheet.com/",
   "scope": "English editorial guides",
   "pages": [
+    {
+      "url": "/guides/uufinds-image-search-guide/",
+      "primaryQuery": "UUFinds image search",
+      "relatedTerms": [
+        "UUFinds search by image",
+        "find product from photo UUFinds",
+        "UUFinds reverse image search",
+        "find QC photos from product image"
+      ],
+      "intent": "Image-led product discovery and verification",
+      "angle": "Turns a screenshot into candidates with controlled crops and a visual fingerprint, then requires source, seller, item and option verification.",
+      "evidence": "UUFinds public QC finder and Apple App Store listing; checked 2026-09-09.",
+      "internalLinkRole": "Image-input cluster page connecting QC-search limits, the QC checklist and current product pages.",
+      "cannibalizationNote": "Distinct from the exact-link guide because the initial input is a product image with missing provenance; distinct from the general QC-search page because its task is candidate recovery and identity reconstruction."
+    },
+    {
+      "url": "/guides/uufinds-app-iphone-guide/",
+      "primaryQuery": "UUFinds app",
+      "relatedTerms": [
+        "UUFinds iPhone app",
+        "UUFinds app guide",
+        "UUFinds iOS",
+        "UUFinds app QC photos"
+      ],
+      "intent": "Mobile app installation and use",
+      "angle": "A mobile-first workflow covering App Store verification, input choice, evidence notes, QC review and transaction handoff.",
+      "evidence": "Apple App Store UUFinds listing and UUFinds public QC finder; checked 2026-09-09.",
+      "internalLinkRole": "Mobile-tool page linking image search, marketplace-link search and product-detail interpretation.",
+      "cannibalizationNote": "Distinct from the beginner UUFinds guide because it answers iPhone installation, permissions, mobile capture and note-management intent."
+    },
+    {
+      "url": "/guides/uufinds-chrome-extension-guide/",
+      "primaryQuery": "UUFinds Chrome extension",
+      "relatedTerms": [
+        "UUFinds extension",
+        "UUFinds Chrome plugin",
+        "view UUFinds QC photos in Chrome",
+        "UUFindQC Google plugin"
+      ],
+      "intent": "Browser extension installation, verification and troubleshooting",
+      "angle": "Checks the distribution listing and permissions, tests one known listing, and treats link conversion as navigation rather than identity proof.",
+      "evidence": "Chrome Web Store UUFinds extension listing and UUFinds public QC finder; checked 2026-09-09.",
+      "internalLinkRole": "Desktop-tool page linking direct link search, product-detail verification and the QC checklist.",
+      "cannibalizationNote": "Distinct from direct link search because it focuses on extension identity, permissions, in-page behavior and extension-specific failure states."
+    },
     {
       "url": "/guides/uufinds-spreadsheet-shopping-guide-2026/",
       "primaryQuery": "UUFinds spreadsheet guide 2026",

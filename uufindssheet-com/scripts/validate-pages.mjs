@@ -18,6 +18,11 @@ const sizeNotesGuideSlug = "uufinds-size-measurement-notes-before-option";
 const sellerGuideSlug = "uufinds-seller-information-reliability-signals";
 const costGuideSlug = "uufinds-product-price-total-parcel-cost";
 const colorGuideSlug = "uufinds-qc-color-lighting-photo-limits";
+const priorityGuideSlugs = [
+  "uufinds-image-search-guide",
+  "uufinds-app-iphone-guide",
+  "uufinds-chrome-extension-guide",
+];
 const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];
 const readPage = (path) => readFile(new URL(`${path.replace(/^\/|\/$/g, "") || "."}/index.html`, root), "utf8");
@@ -349,7 +354,30 @@ for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
   await assert.rejects(readPage(`${locale}/guides/${colorGuideSlug}`), `English-only color guide must not generate a fake ${locale} page`);
 }
 
+for (const slug of priorityGuideSlugs) {
+  const guide = await readPage(`guides/${slug}`);
+  assert.match(guide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${slug}/"`));
+  assert.doesNotMatch(guide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, `${slug} must not claim a translated equivalent`);
+  assert.match(guide, /"datePublished":"2026-09-09"/);
+  assert.match(guide, /"dateModified":"2026-09-09"/);
+  assert.match(guide, /"@type":"Article"/);
+  assert.match(guide, /"@type":"BreadcrumbList"/);
+  assert.match(guide, /class="evidence-ledger"/);
+  assert.match(guide, /class="guide-table-wrap"/);
+  const wordCountMatch = guide.match(/data-visible-word-count="(\d+)"/);
+  assert.ok(wordCountMatch, `${slug} must expose its validated visible word count`);
+  const visibleWordCount = Number(wordCountMatch[1]);
+  assert.ok(visibleWordCount >= 1200 && visibleWordCount <= 1800, `${slug} word count must be 1,200–1,800, received ${visibleWordCount}`);
+  assert.match(guide, new RegExp(`"wordCount":${visibleWordCount}`));
+  for (const locale of locales) {
+    await assert.rejects(readPage(`${locale}/guides/${slug}`), `English-only ${slug} must not generate a fake ${locale} page`);
+  }
+}
+
 const articleIndex = await readPage("articles");
+for (const slug of priorityGuideSlugs) {
+  assert.match(articleIndex, new RegExp(`href="/guides/${slug}/"`));
+}
 assert.match(articleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`));
@@ -358,6 +386,9 @@ assert.match(articleIndex, new RegExp(`href="/guides/${costGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${colorGuideSlug}/"`));
 for (const locale of locales) {
   const localizedArticleIndex = await readPage(`${locale}/articles`);
+  for (const slug of priorityGuideSlugs) {
+    assert.match(localizedArticleIndex, new RegExp(`href="/guides/${slug}/"`), `${locale} article index must route ${slug} to its English canonical page`);
+  }
   assert.match(localizedArticleIndex, new RegExp(`href="/guides/${englishOnlyGuideSlug}/"`), `${locale} article index must route the English-only card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${linkSearchGuideSlug}/"`), `${locale} article index must route the link-search card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${trousersGuideSlug}/"`), `${locale} article index must route the English-only trousers card to its canonical page`);
@@ -369,10 +400,10 @@ for (const locale of locales) {
 const home = await readPage("");
 const contiguousHome = home.replaceAll("<!-- -->", "");
 assertLocaleCluster(home, "/", "English home");
-assert.match(home, /<title>UUFinds Spreadsheet 2026 \| Live Products &amp; QC Photos<\/title>/);
-assert.match(home, /<meta name="description" content="Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page\. Updated September 2026\."/);
-assert.match(contiguousHome, /<h1>Find with UUFinds\.<br\/?>(?:Check QC photos\.)<br\/?><em>Compare products\.<\/em><\/h1>/);
-assert.match(home, /Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page\./);
+assert.match(home, /<title>UUFinds QC Finder &amp; Spreadsheet 2026 \| QC Photos<\/title>/);
+assert.match(home, /<meta name="description" content="Use the UUFinds spreadsheet and QC finder to compare real QC photos, browse current product links, and check Taobao, Weidian and 1688 finds\."/);
+assert.match(contiguousHome, /<h1>UUFinds Spreadsheet &amp; QC Finder\.<br\/?><em>Find products and check QC photos\.<\/em><\/h1>/);
+assert.match(home, /Search UUFinds spreadsheet finds, compare available QC photos and videos, and verify Taobao, Weidian, 1688 or agent links before opening the matching product page\./);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/shoes\/"/);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/hoodies-sweaters\/"/);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/jersey\/"/);

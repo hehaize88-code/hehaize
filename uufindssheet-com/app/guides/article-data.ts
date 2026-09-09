@@ -32,6 +32,318 @@ export type Guide = {
 
 export const guides: Guide[] = [
   {
+    slug: "uufinds-image-search-guide",
+    label: "IMAGE SEARCH GUIDE",
+    title: "UUFinds Image Search: Find a Product From a Photo",
+    seoTitle: "UUFinds Image Search Guide: Find Products From Photos",
+    description: "Use UUFinds image search to turn a product photo into a traceable candidate, then verify the source listing, seller, variant and QC evidence.",
+    primaryKeyword: "UUFinds image search",
+    longTailKeywords: ["UUFinds search by image", "find product from photo UUFinds", "UUFinds reverse image search", "find QC photos from product image"],
+    updated: "September 9, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-09-09",
+    modifiedISO: "2026-09-09",
+    englishOnly: true,
+    intro: [
+      "UUFinds image search is useful when the only starting point is a screenshot, catalog image or cropped product photo. The official QC finder currently presents image recognition as one of its discovery methods. That can shorten the route from an unknown picture to possible product records, but a visual match is a lead rather than proof that two listings share the same seller, item, variant or production batch.",
+      "The safest workflow has three stages: prepare a clean visual query, rank the returned candidates by distinctive details, and verify the winning candidate with identifiers and source context before reading its QC photos. This guide explains that sequence and the limits at each stage. It is an independent research method, not a promise that every uploaded image will produce a result or that a matched result will represent the item eventually received.",
+    ],
+    sections: [
+      {
+        heading: "1. Decide whether an image is the right input",
+        paragraphs: [
+          "Use image search when text and link inputs are unavailable or weak. A screenshot from a social post may omit the marketplace URL; a saved product photo may have no readable title; a translated description may be too generic to separate one design from hundreds of similar results. In those cases, shape, panel layout, print placement, hardware or a distinctive color combination can carry more information than a short phrase.",
+          "Prefer an exact link when you already have one. A Taobao, Weidian, 1688 or agent URL usually contains an item identifier that can support a stronger identity check than visual resemblance alone. Image search should not replace a known source. It should help recover a possible source when the chain is missing, or help discover candidates that will each be checked as a new listing.",
+        ],
+        table: { caption: "Choose the input that preserves the strongest evidence", headers: ["Starting material", "Best first input", "Reason"], rows: [
+          ["Complete marketplace URL", "Exact link", "Preserves item identity"],
+          ["Agent wrapper with recoverable source", "Recovered marketplace link", "Reduces redirect ambiguity"],
+          ["Product screenshot with no link", "Image", "Uses distinctive visual details"],
+          ["Only a specific model or product phrase", "Text", "Lets names and attributes narrow candidates"],
+        ] },
+      },
+      {
+        heading: "2. Prepare a photo that describes the product",
+        paragraphs: [
+          "Crop away browser controls, chat bubbles, prices, watermarks that cover the item, and large areas of irrelevant background. Keep the full product silhouette and any details that distinguish it: a shoe outsole pattern, a jacket pocket layout, a bag closure or the position of a graphic. An extremely tight crop of one logo may retrieve visually similar branding while losing the construction details needed to identify the actual product.",
+          "Use the clearest original available rather than a repeatedly compressed copy. Avoid filters, recoloring and heavy sharpening because they can change edges and textures. If the screenshot contains several items, make one copy for each candidate. Record where and when the image was saved. That note will not prove origin, but it prevents a later result from being confused with the original source.",
+        ],
+        points: [
+          "Keep the item large enough to show its outline and internal details.",
+          "Remove unrelated products that could dominate the visual query.",
+          "Preserve useful tags, hardware and pattern placement when visible.",
+          "Do not edit the image and then treat the edited colors as product evidence.",
+        ],
+      },
+      {
+        heading: "3. Run more than one controlled search",
+        paragraphs: [
+          "Start with the clean full-product image. Save the first useful candidates instead of opening only the most attractive thumbnail. Then run a second search with a different crop that emphasizes one distinctive region. For footwear, that might be the side-panel geometry plus outsole; for a bag, the handle attachment and closure; for a printed garment, the full placement of the design rather than isolated lettering.",
+          "Change one variable at a time. If the second search uses a different crop, keep orientation and color unchanged. If you rotate an image, keep the crop comparable. A controlled sequence shows whether results are stable or depend on one noisy feature. When every crop produces unrelated items, label the search unresolved rather than forcing the closest-looking result into the shortlist.",
+        ],
+      },
+      {
+        heading: "4. Rank candidates with a visual fingerprint",
+        paragraphs: [
+          "Build a short visual fingerprint before comparing results. List five to eight features in order of diagnostic value: number and position of panels, pocket shape, seam path, closure type, proportions, outsole segmentation, print boundaries, hardware color and visible label placement. Broad traits such as “black hoodie” or “white shoe” have little separating power. A rare combination of construction details is more useful.",
+          "Score each candidate as Match, Conflict or Not shown for every feature. A candidate with six visible matches and no conflict is stronger than one with two matches and four hidden areas, but it is still not verified. Give conflicts more weight than missing views. If the original has two side pockets and a result has one central pocket, that structural disagreement should outweigh a similar color and catalog pose.",
+        ],
+        table: { caption: "A compact visual-candidate scorecard", headers: ["Feature", "Match", "Conflict", "Not shown"], rows: [
+          ["Silhouette and proportions", "Same overall geometry", "Clearly different shape", "View is cropped"],
+          ["Panel or seam layout", "Paths agree", "Path or count differs", "Detail is hidden"],
+          ["Print or hardware placement", "Position agrees", "Position differs", "Low resolution"],
+          ["Colorway", "Broad scheme agrees", "Selected option conflicts", "Lighting prevents comparison"],
+        ] },
+      },
+      {
+        heading: "5. Verify identity before opening the QC verdict",
+        paragraphs: [
+          "Open the candidate detail and capture the source marketplace, seller or shop context, item identifier, displayed options and record date when those fields are available. Compare them with any surviving evidence from the original screenshot, caption or post. A reused catalog photo can appear under several sellers. Image similarity therefore cannot transfer one seller's QC history to another listing.",
+          "Assign an identity state. Verified means the source item and relevant option agree. Probable means the visual fingerprint is strong but a decisive identifier is missing. Reference-only means the result is a similar design useful for learning what to inspect. Conflict means seller, item, option or construction disagrees. Only Verified material should support a listing-specific decision; Probable material should remain a research lead.",
+        ],
+      },
+      {
+        heading: "6. Read QC photos as sample-level evidence",
+        paragraphs: [
+          "Once identity is strong enough, inspect the available QC set in a fixed order: overall shape, front and back alignment, construction paths, high-risk details, labels or option markers, and measurements when they are clearly shown. Compare several useful views when the record provides them. The method does not assume a fixed UUFinds photo count, and an image that is blurred, cropped or shadowed should be marked Not shown rather than interpreted optimistically.",
+          "Keep every observation literal and dated. Write “the photographed left seam curves inward near the hem” rather than “bad quality,” and “the ruler appears to show approximately this length” rather than predicting fit. QC media represents photographed samples at particular times. It cannot prove future stock, internal materials, long-term durability or the condition of a different unit.",
+        ],
+      },
+      {
+        heading: "7. Recover when the search returns nothing useful",
+        paragraphs: [
+          "A blank or irrelevant result does not identify one cause. The image may be too small, dominated by text, visually generic, absent from the indexed material or connected to a listing with no available QC record. Retry with one better full-product crop and one distinctive-detail crop. Then search a specific visible phrase or model description if reliable text exists. Avoid dozens of near-identical uploads that add no new evidence.",
+          "If a likely marketplace link appears elsewhere, switch to the exact-link workflow and start identity checking again. If only look-alikes remain, use them as category references and continue browsing without borrowing their QC evidence. Preserve the unresolved state in your notes. Not finding a match is more useful than attaching the wrong album to a purchase candidate.",
+        ],
+      },
+      {
+        heading: "8. Carry a traceable shortlist to the next page",
+        paragraphs: [
+          "For each surviving candidate, save the candidate address, source marketplace and item identifier, seller context, option, date checked, visual fingerprint, conflicts, unresolved fields and the QC observations that matter to your use. Keep the original query image beside the record. This compact evidence packet lets you compare candidates later without relying on memory or thumbnail similarity.",
+          "Proceed to a product or category page only after separating discovery from verification. Re-check the current price, option availability, seller details and destination terms on the live page. If an independent purchasing agent is involved, confirm its current ordering, warehouse-photo, return and shipping rules directly. UUFinds image search helps locate and study records; it does not become the seller, warehouse or purchasing agent in that handoff.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official feature statement", source: "UUFinds public QC Finder", checked: "September 9, 2026", supports: "The public finder presents QC-photo and QC-video discovery and image recognition.", boundary: "It does not guarantee a match for every uploaded image or establish product quality." },
+      { type: "Official app listing", source: "UUFinds on Apple App Store", checked: "September 9, 2026", supports: "The listing describes spreadsheet, link-conversion, image-upload and customizable-page functions.", boundary: "The developer's description is a feature claim, not independent performance evidence." },
+      { type: "Editorial method", source: "UUFinds Sheet verification framework", checked: "September 9, 2026", supports: "Controlled crops, visual fingerprints and identity states used in this guide.", boundary: "The framework improves traceability but cannot prove future inventory or sample equivalence." },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-qc-search-capabilities-limitations/", label: "Understand QC search limits", description: "Separate listing identity, visible evidence and unresolved fields." },
+      { href: "/guides/uufinds-qc-checklist/", label: "Review a matched QC set", description: "Use a repeatable sequence once the listing has been verified." },
+      { href: "/products/", label: "Compare current product pages", description: "Move from an image-search lead to a dated live listing check." },
+    ],
+  },
+  {
+    slug: "uufinds-app-iphone-guide",
+    label: "IPHONE APP GUIDE",
+    title: "UUFinds App for iPhone: QC Search and Product Links",
+    seoTitle: "UUFinds App for iPhone: QC Search & Product Links",
+    description: "A practical UUFinds iPhone app workflow for product links, image-led discovery, QC review and safe handoff to a current listing.",
+    primaryKeyword: "UUFinds app",
+    longTailKeywords: ["UUFinds iPhone app", "UUFinds app guide", "UUFinds iOS", "UUFinds app QC photos"],
+    updated: "September 9, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-09-09",
+    modifiedISO: "2026-09-09",
+    englishOnly: true,
+    intro: [
+      "The UUFinds app for iPhone is listed on Apple's App Store as a tool connected with spreadsheet browsing, link conversion, real quality-picture uploads and customizable pages. Those functions can keep a mobile research session together when a product arrives through a social post, marketplace link or shopping-agent page. The useful outcome is not simply opening the app; it is preserving enough identity information to connect a result with the correct product.",
+      "This independent guide turns the public feature description into a cautious mobile workflow. It covers installation checks, link handling, image-led discovery, QC review, saved notes and the final handoff. App interfaces and supported services can change, so button names should be read from the current screen. No step below assumes a guaranteed result, a fixed number of photos, a particular fee or an affiliation between this site and UUFinds.",
+    ],
+    sections: [
+      {
+        heading: "1. Confirm the listing before installing",
+        paragraphs: [
+          "Open the App Store listing and verify the app name, developer shown by Apple, compatibility information, current version history, privacy details and the destination reached from the official UUFinds site. Do not install an app merely because its icon or name resembles a screenshot. Store listings can vary by country, and availability or device requirements may change after this guide's review date.",
+          "Read the current privacy section and release notes yourself. A developer disclosure is useful context, but it should not be treated as an independent security audit. Use Apple's normal device protections, review the permissions requested after installation and deny access that is not needed for the task. If the app requests a permission, connect it to a visible function before allowing it.",
+        ],
+        points: [
+          "Verify the App Store page rather than using an unofficial download file.",
+          "Check the current developer, version date and device compatibility.",
+          "Read the privacy label and in-app permission prompts separately.",
+          "Keep iOS and the app updated through the normal App Store process.",
+        ],
+      },
+      {
+        heading: "2. Preserve the original product input",
+        paragraphs: [
+          "Before sharing or pasting anything, save the complete marketplace or agent URL in a note. Include the date, visible seller or shop, item title, color, size or model and where the link came from. Mobile share sheets can shorten, wrap or redirect addresses. The saved original provides a recovery point if conversion removes a parameter or lands on a generic page.",
+          "For a screenshot, keep the uncropped original and create a separate clean crop for searching. Do not replace the original with an edited copy. Record any caption or product code visible in the source. The app's public listing describes link conversion and real-picture uploads, but neither feature makes visually similar listings identical. Provenance still comes from item and seller context.",
+        ],
+      },
+      {
+        heading: "3. Choose link, text or image by intent",
+        paragraphs: [
+          "Use a complete link when checking one known listing. Use text when a precise product phrase, code or model is available but the link is missing. Use an image when visual details are the strongest clue. These inputs answer different questions: exact links test identity, text narrows a named space, and images discover candidates by appearance. Treating them as interchangeable creates false confidence.",
+          "If an agent link wraps an original Taobao, Weidian or 1688 address, preserve both when possible. The App Store description says the service converts those marketplace and shopping-agent links, but a conversion should be checked after it opens. Confirm that the destination still identifies the intended source item. A successful redirect is navigation evidence, not product-quality evidence.",
+        ],
+        table: { caption: "Mobile input choice", headers: ["Goal", "Use", "Verification after result"], rows: [
+          ["Check one known item", "Complete link", "Match item, seller and option"],
+          ["Recover a named product", "Specific text", "Treat each result as a new candidate"],
+          ["Find a product from a screenshot", "Clean image crop", "Compare a visual fingerprint, then identifiers"],
+          ["Move between link formats", "Conversion", "Re-open and confirm the source identity"],
+        ] },
+      },
+      {
+        heading: "4. Review a result without losing context",
+        paragraphs: [
+          "On a small screen, start with identity fields before zooming into photos. Capture the result address, source platform, item identifier, seller context, option and QC date where available. Compare them with the note made before opening the app. If a result lacks a decisive field, mark it Conditional. If it conflicts with the original, stop using that record even when the hero image looks right.",
+          "Then inspect the available media in a consistent order: overall shape, front and back alignment, construction details, labels or option markers, and measurements that are actually shown. Rotate the phone only when it improves the view; avoid judging a full garment from a tiny thumbnail. Save observations, not conclusions. “Print begins two centimetres left of the centre line” is more reusable than “looks wrong.”",
+        ],
+      },
+      {
+        heading: "5. Use an evidence note designed for mobile",
+        paragraphs: [
+          "Create one short note per candidate with fixed fields: original input, result URL, seller, item ID, selected option, date, strongest matching detail, visible concern, missing view and next action. A fixed structure prevents screenshots from becoming an unsearchable camera roll. Add the original screenshot and only the few result images necessary to explain the decision, while respecting the source's rights and your device privacy.",
+          "Use status labels such as Verified, Conditional, Reference-only and Conflict. Verified requires agreeing identity and relevant option context. Conditional means one decisive field remains absent. Reference-only is a similar product useful for inspection practice. Conflict means the record should not support the candidate. These labels work across links, images and converted pages and make later comparisons more honest.",
+        ],
+        table: { caption: "A one-screen candidate note", headers: ["Field", "What to record", "Why it matters"], rows: [
+          ["Identity", "Source, seller and item ID", "Separates the listing from look-alikes"],
+          ["Option", "Color, size, model or edition", "Stops cross-variant evidence transfer"],
+          ["QC evidence", "Literal observation and media date", "Keeps sample evidence bounded"],
+          ["Gap", "Missing angle, measurement or label", "Prevents an unknown becoming a pass"],
+        ] },
+      },
+      {
+        heading: "6. Handle empty, stale or conflicting results",
+        paragraphs: [
+          "An empty result can come from several possibilities, and the public interface does not establish one universal cause. Recopy the saved original URL without surrounding message text. If a wrapper was used, try the recoverable source address. For an image, retry once with a clearer full-product crop and once with a distinctive detail. For text, add a model code or structural attribute rather than a string of broad adjectives.",
+          "A stale result needs the same discipline. Compare its date and option with the current listing; do not assume that old QC media describes current stock. A conflict should be recorded, not repaired by selecting a different photo from the album. When a new seller or item is chosen, start a new note. This keeps the history useful even if the first candidate disappears.",
+        ],
+      },
+      {
+        heading: "7. Separate UUFinds research from the transaction",
+        paragraphs: [
+          "The app can support discovery, link handling and QC research, according to its current public listing. It does not make this independent guide the official service, and it does not turn a QC record into a sale, warehouse inspection or shipping contract. Keep the research result separate from the page where the item is actually available and from any purchasing agent used later.",
+          "Before continuing, re-check the live item's current price, seller, options, measurements and availability. If an agent is involved, read that service's current terms for ordering, photos, returns, storage and shipping. Do not copy an old assumption from the UUFinds record into the transaction. The final page and service control the current commercial details.",
+        ],
+      },
+      {
+        heading: "8. Finish with a reversible decision",
+        paragraphs: [
+          "Proceed only when the identity matches, the selected option is supported and the visible evidence meets a written acceptance rule. Pause when one missing field or view could change the answer. Reject the candidate when an identifier or option conflicts, or when a visible issue crosses a hard requirement. Keep the status and date in the note so the decision can be revisited if the listing changes.",
+          "For repeated research, create a simple shortlist with one row per item rather than many open tabs. Compare evidence quality, unresolved risk and next action before comparing visual appeal. The UUFinds iPhone app can make capture and review convenient, but convenience should reinforce traceability. A smaller shortlist with exact sources is more valuable than a large collection of screenshots that cannot be tied back to current listings.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official distribution listing", source: "Apple App Store — UUFinds", checked: "September 9, 2026", supports: "The current listing identifies an iPhone app and describes spreadsheet, link-conversion, picture-upload and customizable-page functions.", boundary: "Availability, version, compatibility, ratings and privacy disclosures can change by date or storefront." },
+      { type: "Official service page", source: "UUFinds public QC Finder", checked: "September 9, 2026", supports: "The service publicly presents QC-photo, QC-video and image-recognition discovery.", boundary: "It does not guarantee media for a specific item or the quality of a future unit." },
+      { type: "Editorial method", source: "UUFinds Sheet mobile evidence workflow", checked: "September 9, 2026", supports: "The identity states, fixed candidate note and reversible decision sequence.", boundary: "The method organizes research and does not replace current seller or agent terms." },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-image-search-guide/", label: "Search from a product photo", description: "Prepare a visual query and verify candidates before using QC evidence." },
+      { href: "/guides/uufinds-taobao-1688-weidian-qc-search-guide/", label: "Search marketplace links", description: "Troubleshoot Taobao, Weidian and 1688 inputs with a traceable sequence." },
+      { href: "/guides/how-to-read-uufinds-product-detail-page/", label: "Read a product detail page", description: "Separate identifiers, options, QC media and unresolved fields." },
+    ],
+  },
+  {
+    slug: "uufinds-chrome-extension-guide",
+    label: "BROWSER EXTENSION GUIDE",
+    title: "UUFinds Chrome Extension: View QC Photos From Product Pages",
+    seoTitle: "UUFinds Chrome Extension Guide: View QC Photos",
+    description: "Check, install and use the UUFinds Chrome extension while preserving product identity, permissions, source links and QC-photo limits.",
+    primaryKeyword: "UUFinds Chrome extension",
+    longTailKeywords: ["UUFinds extension", "UUFinds Chrome plugin", "view UUFinds QC photos in Chrome", "UUFindQC Google plugin"],
+    updated: "September 9, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-09-09",
+    modifiedISO: "2026-09-09",
+    englishOnly: true,
+    intro: [
+      "The UUFinds Chrome extension is currently published in the Chrome Web Store with a description focused on converting marketplace and agent links and showing corresponding QC images while a product is being browsed. That can remove repetitive copying between tabs. It also creates a new verification task: the extension result must still be tied to the exact page, seller, item and option currently on screen.",
+      "This guide covers the careful path from checking the store listing to reviewing permissions, testing one known product, interpreting QC media and diagnosing a mismatch. It uses the extension's public listing as a feature source, not as a guarantee of accuracy, privacy, availability or product quality. Interface labels, supported sites, permissions, version details and store disclosures can change after the review date.",
+    ],
+    sections: [
+      {
+        heading: "1. Verify the Chrome Web Store entry",
+        paragraphs: [
+          "Reach the extension through the official UUFinds site or search the Chrome Web Store and compare the complete listing. At the time checked, the store entry is titled “UUFinds-cnfans,mulebuy,acbuy,oopbuy,bbdbuy” and is offered by uufinds2024. Verify those fields again rather than trusting this dated text, because names, ownership, versions and availability can change.",
+          "Read the Overview, Details and Privacy sections before installing. The current overview describes link conversion for 1688, Taobao, Weidian and agent links, uploads of real QC photos, and access to corresponding QC images on product pages. The developer's privacy disclosure is a declaration presented by the store; it should not be described as an independent audit. Review Chrome's permission prompt as a separate source of truth.",
+        ],
+      },
+      {
+        heading: "2. Understand permissions before approving them",
+        paragraphs: [
+          "Browser extensions may need access to particular sites or page content to recognize a product URL and add controls. Read the exact permission language Chrome presents. Ask whether each requested scope is connected to the advertised function. If Chrome offers site-access choices, use the narrowest setting that still supports the product pages you intend to research.",
+          "Do not grant broader access because a guide predicts what the extension needs; only the live prompt is authoritative for the installed version. Revisit the extension's Details page after updates, especially when Chrome highlights changed permissions. Remove or disable the extension if the requested scope no longer matches your use. Keep personal order, payment, address and account pages outside the research workflow whenever possible.",
+        ],
+        points: [
+          "Install from the Chrome Web Store, not a copied package file.",
+          "Read the current site-access and data permissions in Chrome.",
+          "Prefer access on specific supported product sites when practical.",
+          "Review changed permissions after an update before resuming research.",
+        ],
+      },
+      {
+        heading: "3. Test the extension with one known listing",
+        paragraphs: [
+          "Begin with a product page whose original marketplace link and item identifier are already known. Save the full address, seller, visible option and date before using any added extension control. Open the extension's QC or conversion function and compare the result with that saved identity. A known listing makes it easier to detect a dropped identifier, wrong redirect or visually similar replacement.",
+          "Keep this first run observational. Do not treat a successfully displayed album as proof that every supported site will behave the same way. Record what the extension reads from the page, where its result opens, and whether the source item survives the transition. If the result is generic, missing or conflicting, stop and troubleshoot rather than approving the closest image set.",
+        ],
+        table: { caption: "First-run extension check", headers: ["Checkpoint", "Pass condition", "Stop condition"], rows: [
+          ["Source URL", "Original item can be recovered", "Only a generic home or search page remains"],
+          ["Item identity", "Identifier and seller agree", "Identifier or seller conflicts"],
+          ["Option context", "Relevant color, size or model agrees", "Displayed option is different"],
+          ["QC record", "Media is dated and tied to the candidate", "Album is a look-alike with unclear origin"],
+        ] },
+      },
+      {
+        heading: "4. Treat link conversion as navigation, not verification",
+        paragraphs: [
+          "A converted link is useful when it preserves the marketplace and item pair while rebuilding a route for another supported context. Compare the item ID before and after conversion whenever it is visible. Check that the seller and selected product are still the intended ones after the destination loads. A working page with an attractive thumbnail can still represent a different item.",
+          "Save the original source separately from the converted address. Redirects and wrappers may later change, and a converted link may include additional parameters unrelated to product identity. Do not manually edit an unknown identifier to make a page load. If the source cannot be recovered, classify the route as Conditional and search the original marketplace address outside the wrapper.",
+        ],
+      },
+      {
+        heading: "5. Match QC photos to the page on screen",
+        paragraphs: [
+          "When the extension exposes QC media, compare the page and record before examining quality: source marketplace, seller or shop, item identifier, variant, title details and dates. Catalog photos are frequently reused. The fact that an extension found visually corresponding images does not establish that they belong to the exact seller or option currently open.",
+          "After identity, review the media in a stable order: full silhouette, front and back, seams or panel alignment, high-risk details, labels and measurements that are actually shown. Mark hidden or blurry details as Not shown. Keep sample-level language. A photographed flaw can inform the review of that record, while clean photos cannot guarantee another unit, internal construction or long-term durability.",
+        ],
+      },
+      {
+        heading: "6. Diagnose no result, wrong result or duplicate result",
+        paragraphs: [
+          "For no result, confirm that the product page has fully loaded, the extension is enabled for that site and the address still contains the intended item. Then try the original marketplace URL in UUFinds's direct link-search workflow. The absence of an extension panel or album does not reveal whether the cause is unsupported parsing, unavailable QC material, a changed listing or a temporary interface problem.",
+          "For a wrong result, compare identifiers and stop using the album when they conflict. For duplicate-looking results, separate them by seller, item, option and QC date instead of choosing the newest or most flattering photo. Clear evidence of two listings should remain two records. Reinstalling repeatedly is unlikely to resolve an identity mismatch and may erase useful troubleshooting context.",
+        ],
+        table: { caption: "Troubleshooting by observed state", headers: ["Observed state", "Useful check", "Do not conclude"], rows: [
+          ["No QC control", "Site access, page load and original URL", "The product has never had QC media"],
+          ["Empty result", "Direct exact-link search", "The seller or product is invalid"],
+          ["Wrong item", "Compare source and item ID", "A similar image makes it equivalent"],
+          ["Several albums", "Separate seller, option and date", "The largest album is the correct one"],
+        ] },
+      },
+      {
+        heading: "7. Keep browsing and transaction data separate",
+        paragraphs: [
+          "Use a dedicated research tab or browser profile if that helps keep product discovery apart from accounts and payments. Close unrelated personal pages before granting temporary site access. Do not upload private order screenshots, addresses, payment information, tracking numbers or account messages as visual queries. A product image usually needs the product, not the surrounding personal interface.",
+          "The Chrome Web Store currently shows a developer privacy declaration, but users should still follow the live permission prompt and their own risk tolerance. This guide cannot inspect the code running in a future version or certify its data handling. If the permission scope or store identity changes materially, pause use until the new information is understood.",
+        ],
+      },
+      {
+        heading: "8. Complete the handoff with current-page checks",
+        paragraphs: [
+          "Once a candidate survives identity and QC review, reopen the intended live destination and confirm seller, current price, variant, measurements and availability. If a purchasing agent is involved, check that service's current order, warehouse-photo, return and shipping terms. The extension shortens navigation; it does not set those commercial terms or create an affiliation among the extension, this guide and the agent.",
+          "Record the original URL, converted URL, extension version date, matched identifiers, selected option, QC record dates, literal observations and unresolved gaps. Proceed when the chain is exact and the evidence meets a written rule. Pause when one missing field could reverse the decision. Reject the research candidate when identity conflicts. This final note makes the time saved by the extension useful rather than merely faster.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official distribution listing", source: "Chrome Web Store — UUFinds extension", checked: "September 9, 2026", supports: "The current listing describes marketplace and agent-link conversion, QC-photo uploads and corresponding QC-image access while browsing products.", boundary: "Store text and developer disclosures are not independent guarantees of accuracy, privacy or continued availability." },
+      { type: "Official service page", source: "UUFinds public QC Finder", checked: "September 9, 2026", supports: "The public service presents QC-photo and QC-video discovery and exact-input research paths.", boundary: "A returned image set must still be matched to its item, seller and option." },
+      { type: "Editorial method", source: "UUFinds Sheet extension verification framework", checked: "September 9, 2026", supports: "The known-listing test, pass/stop checks and troubleshooting states.", boundary: "The framework cannot certify extension code or future versions." },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-taobao-1688-weidian-qc-search-guide/", label: "Use the direct link-search workflow", description: "Recover and verify marketplace links when an extension result is empty or unclear." },
+      { href: "/guides/how-to-read-uufinds-product-detail-page/", label: "Verify the result page", description: "Check item identity, seller context, options and QC record limits." },
+      { href: "/guides/uufinds-qc-checklist/", label: "Apply the QC photo checklist", description: "Review visible evidence after the listing match is established." },
+    ],
+  },
+  {
     slug: "uufinds-qc-color-lighting-photo-limits",
     label: "COLOR EVIDENCE GUIDE",
     title: "UUFinds QC Color Check: Lighting, White Balance and Photo Limits",

@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uufindssheet.com"),
-  title: "UUFinds Spreadsheet 2026 | Live Products & QC Photos",
-  description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
+  title: "UUFinds QC Finder & Spreadsheet 2026 | QC Photos",
+  description: "Use the UUFinds spreadsheet and QC finder to compare real QC photos, browse current product links, and check Taobao, Weidian and 1688 finds.",
   alternates: {
     canonical: "/",
     languages: { "x-default": "/", en: "/", "en-GB": "/en-gb/", "de-DE": "/de/", "pl-PL": "/pl/", "pt-BR": "/pt-br/" },
   },
   openGraph: {
-    title: "UUFinds Spreadsheet 2026 | Live Products & QC Photos",
-    description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
+    title: "UUFinds QC Finder & Spreadsheet 2026 | QC Photos",
+    description: "Use the UUFinds spreadsheet and QC finder to compare real QC photos, browse current product links, and check Taobao, Weidian and 1688 finds.",
     url: "https://uufindssheet.com/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UUFinds Spreadsheet 2026 | Live Products & QC Photos",
-    description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
+    title: "UUFinds QC Finder & Spreadsheet 2026 | QC Photos",
+    description: "Use the UUFinds spreadsheet and QC finder to compare real QC photos, browse current product links, and check Taobao, Weidian and 1688 finds.",
     images: [socialImage.url],
   },
   robots: {

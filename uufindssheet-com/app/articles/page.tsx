@@ -8,11 +8,11 @@ import { socialImage } from "../seo-image";
 
 export const metadata: Metadata = {
   title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
-  description: "Independent, source-checked guides about UUFinds QC photos, videos, image recognition, link matching and exact the main site destinations.",
+  description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
   alternates: localizedAlternates("/articles/"),
   openGraph: {
     title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
-    description: "Independent, source-checked guides about UUFinds QC photos, videos, image recognition, link matching and exact the main site destinations.",
+    description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
     url: "/articles/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
-    description: "Independent, source-checked guides about UUFinds QC photos, videos, image recognition, link matching and exact the main site destinations.",
+    description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
     images: [socialImage.url],
   },
 };

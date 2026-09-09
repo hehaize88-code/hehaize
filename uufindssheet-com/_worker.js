@@ -16,6 +16,7 @@ function withGoogleAnalytics(response, request) {
   if (request.method !== "GET" || !contentType.toLowerCase().includes("text/html")) return response;
   const headers = new Headers(response.headers);
   headers.delete("content-length"); headers.delete("content-encoding"); headers.delete("etag");
+  if (response.status === 200) headers.set("cache-control", "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400");
   const csp = headers.get("content-security-policy");
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
@@ -132,6 +133,23 @@ const worker = {
   },
 };
 
-const googleAnalyticsWorker = { async fetch(request, env, ctx) { const analyticsAsset = await googleAnalyticsAsset(request); if (analyticsAsset) return analyticsAsset; return withGoogleAnalytics(await worker.fetch(request, env, ctx), request); } };
+const googleAnalyticsWorker = {
+  async fetch(request, env, ctx) {
+    const analyticsAsset = await googleAnalyticsAsset(request);
+    if (analyticsAsset) return analyticsAsset;
+
+    if (request.method === "GET") {
+      const cached = await caches.default.match(request);
+      if (cached) return cached;
+    }
+
+    const response = withGoogleAnalytics(await worker.fetch(request, env, ctx), request);
+    const contentType = response.headers.get("content-type") || "";
+    if (request.method === "GET" && response.status === 200 && contentType.toLowerCase().includes("text/html")) {
+      ctx.waitUntil(caches.default.put(request, response.clone()));
+    }
+    return response;
+  },
+};
 
 export default googleAnalyticsWorker;

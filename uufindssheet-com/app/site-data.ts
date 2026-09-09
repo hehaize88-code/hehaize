@@ -31,6 +31,31 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "IMAGE SEARCH GUIDE",
+    title: "UUFinds Image Search: Find a Product From a Photo",
+    summary: "Turn a screenshot into traceable candidates, compare a visual fingerprint and verify the seller, item, option and QC record.",
+    href: "/guides/uufinds-image-search-guide/",
+    read: "11 min read",
+    featured: true,
+    englishOnly: true,
+  },
+  {
+    tag: "IPHONE APP GUIDE",
+    title: "UUFinds App for iPhone: QC Search and Product Links",
+    summary: "Use links, images and QC records on iPhone without losing the original source, item identity or current listing context.",
+    href: "/guides/uufinds-app-iphone-guide/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
+    tag: "BROWSER EXTENSION GUIDE",
+    title: "UUFinds Chrome Extension: View QC Photos From Product Pages",
+    summary: "Check the official store entry, review permissions and match extension results to the exact product page before reading QC photos.",
+    href: "/guides/uufinds-chrome-extension-guide/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "COLOR EVIDENCE GUIDE",
     title: "UUFinds QC Color Check: Lighting, White Balance and Photo Limits",
     summary: "Separate a likely product-color mismatch from scene-wide casts, exposure, shadows, reflections and display differences.",

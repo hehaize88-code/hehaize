@@ -25,9 +25,9 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">UUFinds product research <span>•</span> Updated September 2026</p>
-          <h1>Find with UUFinds.<br />Check QC photos.<br /><em>Compare products.</em></h1>
+          <h1>UUFinds Spreadsheet &amp; QC Finder.<br /><em>Find products and check QC photos.</em></h1>
           <p className="hero-intro">
-            Use UUFinds to search product or agent links, review available QC photos and shortlist spreadsheet finds before opening the matching product page.
+            Search UUFinds spreadsheet finds, compare available QC photos and videos, and verify Taobao, Weidian, 1688 or agent links before opening the matching product page.
           </p>
           <form
             className="search-box"
@@ -246,7 +246,7 @@ export default function Home() {
             "@type": "WebSite",
             name: "UUFinds Sheet",
             url: "https://uufindssheet.com/",
-            description: "Browse current UUFinds spreadsheet finds in USD, explore 9 product categories, review QC guidance and open the exact live product page. Updated September 2026.",
+            description: "Use the UUFinds spreadsheet and QC finder to compare real QC photos, browse current product links, and check Taobao, Weidian and 1688 finds.",
             publisher: { "@type": "Organization", name: "UUFinds Sheet" },
           }),
         }}
