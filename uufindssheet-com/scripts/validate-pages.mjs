@@ -22,6 +22,13 @@ const priorityGuideSlugs = [
   "uufinds-image-search-guide",
   "uufinds-app-iphone-guide",
   "uufinds-chrome-extension-guide",
+  "uufinds-confirm-result-original-listing",
+  "uufinds-research-to-agent-source-link",
+  "uufinds-shoes-spreadsheet-qc-checklist",
+  "uufinds-hoodie-spreadsheet-qc-checklist",
+  "uufinds-jersey-spreadsheet-qc-checklist",
+  "uufinds-bags-spreadsheet-qc-checklist",
+  "uufinds-accessories-spreadsheet-qc-checklist",
 ];
 const categorySlugs = ["shoes", "hoodies", "jersey", "accessories"];
 const policySlugs = ["about", "contact", "editorial-policy", "privacy", "terms"];

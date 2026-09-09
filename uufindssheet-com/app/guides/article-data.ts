@@ -1,3 +1,5 @@
+import { completionGuides } from "./completion-guides";
+
 export type Guide = {
   slug: string;
   label: string;
@@ -31,6 +33,7 @@ export type Guide = {
 };
 
 export const guides: Guide[] = [
+  ...completionGuides,
   {
     slug: "uufinds-image-search-guide",
     label: "IMAGE SEARCH GUIDE",

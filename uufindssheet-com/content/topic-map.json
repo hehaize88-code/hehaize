@@ -49,6 +49,76 @@
       "cannibalizationNote": "Distinct from direct link search because it focuses on extension identity, permissions, in-page behavior and extension-specific failure states."
     },
     {
+      "url": "/guides/uufinds-confirm-result-original-listing/",
+      "primaryQuery": "UUFinds confirm result matches original listing",
+      "relatedTerms": ["match UUFinds QC result to listing", "verify UUFinds product result", "UUFinds item ID check"],
+      "intent": "Listing identity verification",
+      "angle": "Requires marketplace, seller, item, option and date agreement before QC media becomes listing-specific evidence.",
+      "evidence": "UUFinds public QC finder and independent identity framework; checked 2026-09-09.",
+      "internalLinkRole": "Identity gate between search methods and every category QC checklist.",
+      "cannibalizationNote": "Distinct from link search because it focuses on evidence reconciliation and match status after candidates have already been returned."
+    },
+    {
+      "url": "/guides/uufinds-research-to-agent-source-link/",
+      "primaryQuery": "move UUFinds research to agent without losing source link",
+      "relatedTerms": ["UUFinds to shopping agent workflow", "preserve source link from UUFinds", "UUFinds product link handoff"],
+      "intent": "Research-to-transaction handoff",
+      "angle": "Preserves a dated source packet while separating UUFinds research facts from current transaction terms.",
+      "evidence": "UUFinds public QC finder and independent source-handoff framework; checked 2026-09-09.",
+      "internalLinkRole": "Handoff page connecting matched QC research to current product destinations.",
+      "cannibalizationNote": "Distinct from the beginner workflow because it answers the narrow problem of preserving identity through link conversion and service handoff."
+    },
+    {
+      "url": "/guides/uufinds-shoes-spreadsheet-qc-checklist/",
+      "primaryQuery": "UUFinds shoes spreadsheet QC checklist",
+      "relatedTerms": ["UUFinds shoe finds", "UUFinds sneakers QC photos", "shoe QC checklist UUFinds"],
+      "intent": "Footwear discovery and QC comparison",
+      "angle": "Combines option-level spreadsheet fields with shape, panels, seams, outsole, labels and measurement limits.",
+      "evidence": "UUFinds public QC finder and category-specific inspection method; checked 2026-09-09.",
+      "internalLinkRole": "Shoes-category long-tail page linking size evidence, listing identity and current shoe destinations.",
+      "cannibalizationNote": "Distinct from the general QC checklist through footwear-specific option, outsole, pair-symmetry and measurement intent."
+    },
+    {
+      "url": "/guides/uufinds-hoodie-spreadsheet-qc-checklist/",
+      "primaryQuery": "UUFinds hoodie spreadsheet QC checklist",
+      "relatedTerms": ["UUFinds hoodie finds", "UUFinds hoodies QC photos", "hoodie QC checklist UUFinds"],
+      "intent": "Hoodie discovery and QC comparison",
+      "angle": "Links exact hoodie options and measurements to silhouette, fabric appearance, seams, ribbing and graphic review.",
+      "evidence": "UUFinds public QC finder and category-specific inspection method; checked 2026-09-09.",
+      "internalLinkRole": "Hoodie-category long-tail page linking measurements, lighting limits and current hoodie destinations.",
+      "cannibalizationNote": "Distinct from stitching and color guides because it unifies those checks around hoodie-specific spreadsheet intent."
+    },
+    {
+      "url": "/guides/uufinds-jersey-spreadsheet-qc-checklist/",
+      "primaryQuery": "UUFinds jersey spreadsheet QC checklist",
+      "relatedTerms": ["UUFinds jersey finds", "UUFinds jerseys QC photos", "jersey QC checklist UUFinds"],
+      "intent": "Jersey discovery and configuration QC",
+      "angle": "Preserves season, cut, size, name, number and patch configuration before reviewing panels, graphics and measurements.",
+      "evidence": "UUFinds public QC finder and category-specific inspection method; checked 2026-09-09.",
+      "internalLinkRole": "Jersey-category long-tail page linking configuration identity, color evidence and current destinations.",
+      "cannibalizationNote": "Distinct from generic garment QC through name, number, patch and configuration-specific search intent."
+    },
+    {
+      "url": "/guides/uufinds-bags-spreadsheet-qc-checklist/",
+      "primaryQuery": "UUFinds bags spreadsheet QC checklist",
+      "relatedTerms": ["UUFinds bag finds", "UUFinds bags QC photos", "bag QC checklist UUFinds"],
+      "intent": "Bag discovery and QC comparison",
+      "angle": "Matches size, hardware and strap options before reviewing shape, dimensions, closures, lining and visible construction.",
+      "evidence": "UUFinds public QC finder and category-specific inspection method; checked 2026-09-09.",
+      "internalLinkRole": "Bag long-tail page connecting accessories destinations, measurements and listing identity.",
+      "cannibalizationNote": "Distinct from the general accessories guide through bag-specific silhouette, capacity, handle, closure and lining intent."
+    },
+    {
+      "url": "/guides/uufinds-accessories-spreadsheet-qc-checklist/",
+      "primaryQuery": "UUFinds accessories spreadsheet QC checklist",
+      "relatedTerms": ["UUFinds accessory finds", "UUFinds accessories QC photos", "accessory QC checklist UUFinds"],
+      "intent": "Mixed-accessory discovery and QC",
+      "angle": "Uses universal identity fields plus category branches for soft goods, belts, wallets, jewelry, cases and small electronics.",
+      "evidence": "UUFinds public QC finder and category-aware inspection method; checked 2026-09-09.",
+      "internalLinkRole": "Accessories hub guide connecting listing verification, source handoff and current category destinations.",
+      "cannibalizationNote": "Distinct from the bags guide because it focuses on category selection, compatibility, package contents and mixed accessory risks."
+    },
+    {
       "url": "/guides/uufinds-spreadsheet-shopping-guide-2026/",
       "primaryQuery": "UUFinds spreadsheet guide 2026",
       "relatedTerms": [
