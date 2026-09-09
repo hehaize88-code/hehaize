@@ -207,7 +207,8 @@ for (const url of urls) {
 
   if (locale !== "en") {
     if (!html.includes("Static localized edition")) throw new Error(`Missing localized marker on ${url}`);
-    if ((html.match(/<script\b(?![^>]*application\/ld\+json)/g) || []).length) {
+    const localizedWithoutAnalytics = html.replace(/<script\b[^>]*data-static-analytics[^>]*>[\s\S]*?<\/script>/g, "");
+    if ((localizedWithoutAnalytics.match(/<script\b(?![^>]*application\/ld\+json)/g) || []).length) {
       throw new Error(`Localized page still depends on client JavaScript: ${url}`);
     }
     if (/product references, one focused review path\.|Product price and China shipping appear at the order stage\.|The public page currently advertises 300 days|The official policy labels visible in Hubbuy’s footer/.test(html)) {

@@ -52,6 +52,12 @@ const translatedMetaFields = new Set([
   "twitter:title",
   "twitter:description",
 ]);
+const analyticsScript = `<script data-static-analytics>(()=>{if(window.__hubbuyAnalyticsBound)return;window.__hubbuyAnalyticsBound=true;const send=(name,params={})=>{if(typeof gtag==='function')gtag('event',name,params)};document.addEventListener('submit',e=>{const f=e.target;if(f instanceof HTMLFormElement&&/cnbuycha\\.com$/i.test(new URL(f.action,location.href).hostname)){const data=new FormData(f);send('site_search_submit',{search_term:data.get('keywords')||data.get('q')||'',link_url:f.action,page_path:location.pathname})}},true);document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]');if(!a)return;const u=new URL(a.href,location.href);if(/(^|\\.)cnbuycha\\.com$/i.test(u.hostname))send('main_site_click',{link_url:u.href,link_text:(a.textContent||'').trim().slice(0,100),page_path:location.pathname});else if(u.origin===location.origin&&u.pathname.includes('/articles/'))send('article_internal_click',{link_url:u.pathname,page_path:location.pathname})},true)})();</script>`;
+
+function injectAnalytics(html) {
+  if (html.includes("data-static-analytics")) return html;
+  return html.replace("</body>", `${analyticsScript}</body>`);
+}
 
 function escapeHtml(value) {
   return value
@@ -264,13 +270,13 @@ function localizeHtml(sourceHtml, route, locale) {
       .replace(/(<meta\b[^>]*property="og:description"[^>]*content=")([^"]*)("[^>]*>)/i, `$1${escapeHtml(localizedDescription)}$3`);
   }
 
-  return html.replace("</body>", `<!-- Static localized edition: ${localeConfig[locale].htmlLang} --></body>`);
+  return injectAnalytics(html.replace("</body>", `<!-- Static localized edition: ${localeConfig[locale].htmlLang} --></body>`));
 }
 
 function enhanceEnglishHtml(sourceHtml, route) {
   let html = updateLanguageMenu(sourceHtml.replaceAll("hrefLang=", "hreflang="), route, "en");
   html = replaceSeoHead(html, route, "en");
-  return html;
+  return injectAnalytics(html);
 }
 
 function sitemapXml(routes, selectedLocale = null, singleLanguageRoutes = []) {
