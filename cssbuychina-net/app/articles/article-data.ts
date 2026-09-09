@@ -608,6 +608,62 @@ export const articles = {
       ["Choose the right spreadsheet category", "/articles/cssbuy-spreadsheet-categories-explained"]
     ],
   },
+  "cssbuy-bag-spreadsheet-dimensions-hardware-shipping": {
+    label: "BAG DIMENSIONS & HARDWARE WORKSHEET · 12 MIN",
+    title: "CSSBuy Bag Spreadsheet: Dimensions, Hardware and Shipping",
+    seoTitle: "CSSBuy Bag Spreadsheet: Dimensions, Hardware & Shipping",
+    h1: "CSSBuy Bag Spreadsheet: Record Dimensions, Hardware and Shipping",
+    description: "Build a CSSBuy bag spreadsheet with exact dimensions, hardware, included parts, shape protection, weight evidence and shipping-ready decisions.",
+    published: "2026-09-10",
+    checked: "September 10, 2026",
+    sections: [
+      ["Start with the bag's job, not its silhouette", [
+        "Define the use case before saving bag links. Record what the bag must carry, where it will be used, the preferred carry method, acceptable empty weight and whether it needs to stand upright, fold flat or protect a rigid object. Add non-negotiable features such as a secure main closure, detachable strap, padded compartment or minimum opening width. A visual style can remain a preference, but it should not replace functional acceptance criteria.",
+        "One CSSBuy bag spreadsheet row should describe one exact listing and selectable configuration. A tote, shoulder bag and crossbody can look similar in a thumbnail while differing in opening, strap geometry, internal layout and structure. Write the conditions for save, hold and reject before comparing candidates. That keeps a low headline amount or polished photograph from outranking the dimensions, hardware and included pieces that actually determine whether the bag works."
+      ]],
+      ["Lock the listing and complete option bundle", [
+        "Save the original marketplace URL, CSSBuy route, marketplace, item identifier, visible shop and review date. Current CSSBuy-routed bag pages may expose seller fields such as material, bag type, size, closure, lining or strap style. Those fields belong to the specific third-party listing; they are not CSSBuy-wide specifications. Preserve the original wording beside a cautious working translation so another reviewer can identify what the seller actually stated.",
+        "Build an option key in a fixed order: bag model, colour, size option, material or finish option, strap choice, included pouch or accessory, quantity and any bundle label. Select the complete configuration before recording its amount. A price range can include a miniature version, replacement strap, bulk tier or another variant. If the page changes, add a dated version to the row instead of silently attaching the old dimensions and hardware claims to the new option."
+      ]],
+      ["Separate outer dimensions from usable capacity", [
+        "Create fields for exterior length, height and depth, then name every endpoint. Length may mean the widest base, top opening or longest decorative edge; height may include a handle; depth may be measured with an empty soft bag collapsed or a structured bag standing naturally. Store the seller's number, unit, measurement state, source and date. A bare three-number string is not comparable until the order and physical references are clear.",
+        "Usable capacity needs separate evidence. Record main-opening width, interior compartment dimensions, divider layout and any rigid object the bag must accept. A nominal exterior size does not prove that a laptop, bottle or folder can pass through the opening or fit around internal seams. If capacity controls the purchase, keep the row on hold until the limiting dimension is known. Never calculate internal volume from exterior numbers as though lining, padding and structure consumed no space."
+      ]],
+      ["Make dimensions repeatable instead of artificially precise", [
+        "For each dimension, retain a short method: start point, end point, whether handles are excluded, whether the bag is empty or lightly filled and whether the tape follows a straight line. Apply the same method to a reference bag or target object. This makes a later warehouse ruler view comparable. It also exposes when two seller pages both say “20 cm” but measure a different part of the product.",
+        "Keep seller-stated measurements, warehouse-observed measurements and personal reference measurements in different columns. Do not overwrite one with another. Use mismatch or insufficient evidence when a ruler is angled, an endpoint is cropped or the bag is compressed into an undefined state. A precise-looking screenshot can still be unusable evidence. Repeatable endpoints and a visible unit matter more than an extra decimal place."
+      ]],
+      ["Build a hardware map, not one hardware cell", [
+        "List every decision-relevant component by location and function: main zipper, internal zipper, magnetic snap, turn lock, buckle, clasp, chain, D-ring, strap adjuster, handle anchor, protective foot or decorative plate. For each component, record the seller wording, visible finish, expected quantity, attachment method if shown and whether it must operate or is decorative. This prevents a generic “metal hardware” label from hiding a missing closure or incompatible strap connection.",
+        "Separate appearance from performance claims. Product photos can show colour, shape, placement and some visible attachment details. They cannot prove alloy composition, coating thickness, load capacity, corrosion resistance or long-term operation. If a seller describes a material, preserve it as a dated seller claim rather than an independently verified fact. If function is essential, plan an observable arrival check such as complete zipper travel or matching clasp parts instead of inventing a durability score."
+      ]],
+      ["Record straps, handles and included pieces independently", [
+        "Use dedicated fields for fixed handles, detachable straps and adjustable straps. Record count, attachment points, claimed material, width, handle drop, minimum and maximum adjustable length when stated, and whether the selected option includes the part. A model wearing a crossbody strap in a promotional image does not prove that the strap is supplied. The active option, description and seller confirmation carry more weight than the styling photograph.",
+        "Apply the same discipline to pouches, charms, dust bags, locks, keys, tags and replacement parts. Record included, optional, not included or unclear—never a simple blank. For sets, state the number of pieces and which dimensions belong to each. If an accessory changes the configured amount, preserve that result. This turns bundle ambiguity into a resolvable question before payment rather than an argument after warehouse arrival."
+      ]],
+      ["Turn structure into a packing decision", [
+        "Classify the bag as soft and foldable, semi-structured, rigid or shape-critical for the intended use. Then identify the likely damage mechanisms: crushing, permanent creasing, corner impact, hardware rubbing, chain marks, strap pressure or movement inside the parcel. Match a requested packing action to the mechanism. Examples include retaining internal stuffing, supporting corners, wrapping exposed hardware separately, securing loose straps or using an outer box when shape protection matters.",
+        "Do not make “remove all packaging” or “keep the original box” a universal rule. More protection can add weight or exterior size; less packaging can concentrate pressure on structure and hardware. Record the preferred state, the reason, the acceptable alternative and the point at which the decision should be reviewed. The useful comparison is between documented packed scenarios after measurements exist, not an assumed saving copied from another parcel."
+      ]],
+      ["Keep product weight and shipping data in different stages", [
+        "Create separate columns for seller-stated item weight, seller-stated packed weight, warehouse-recorded item weight, protective materials, rehearsal or final package dimensions and final parcel weight. Give every number a unit, source and date. A public product page may display a seller-supplied weight or packing field, but it does not establish the final international parcel. Several bags, a rigid box or added protection can change both weight and exterior dimensions.",
+        "Delay route and cost conclusions until the account shows the actual destination, packed parcel and currently eligible methods. Do not insert a universal dimensional divisor, rate or delivery range into the discovery row. Instead, compare variables: candidate price, domestic delivery, later service charges, packed chargeable weight under the selected method and destination costs. The spreadsheet should show which inputs are observed, quoted or still unknown rather than convert a product-page estimate into a promise."
+      ]],
+      ["Plan warehouse QC around function and stress points", [
+        "Write the arrival review before ordering. Start with identity: model, colour, size option, quantity, straps and included pieces. Then check front, back, sides, base and interior; main closure and secondary pockets; handle and strap anchors; seams at corners and high-load joins; hardware count and visible finish; shape, major dents, stains, scratches or missing components. Put decision-changing checks first and tie each one to the saved row.",
+        "Use pass, mismatch or insufficient evidence for each result. Photographs can document visible identity, geometry, surface condition and whether shown parts are present. They cannot prove material composition, authenticity, waterproofing, hidden reinforcement, comfortable carry or long-term hardware strength. A functional request should be specific and observable. If the evidence does not show full zipper travel or the relevant attachment point, record the gap rather than treating silence as approval."
+      ]],
+      ["Compare candidates with exceptions, then freeze the row", [
+        "Consider three hypothetical candidates for a tablet-sized crossbody brief. Candidate A states complete exterior dimensions but leaves the main opening width and detachable strap unclear. Candidate B is cheaper, yet its depth is undefined and the chain shown in images may be decorative. Candidate C has the clearest option bundle, defined opening and required strap, but its structured shape may need more protective packing. Hold A for two answers, reject B for decision-critical ambiguity and model C's packing trade-off.",
+        "Before payment, reopen the source and verify the item identifier, shop, full option key, configured amount, domestic delivery, dimensions, closure, strap and included pieces. Freeze those fields with a check date. After warehouse arrival, append observed dimensions, weight, component results, packing choice and final parcel data without deleting the original claims. A reliable CSSBuy bag record does not promise quality or cheap shipping; it preserves the evidence behind the exact product and packing decision."
+      ]]
+    ],
+    related: [
+      ["Browse current bag and accessory finds", "/category/accessories"],
+      ["Run the seller-page checklist", "/articles/cssbuy-seller-page-checklist-before-saving-find"],
+      ["Plan product price against parcel cost", "/guides/product-price-vs-parcel-cost"]
+    ],
+  },
 } as const;
 
 export type ArticleSlug = keyof typeof articles;

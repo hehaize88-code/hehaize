@@ -291,6 +291,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           </a>
         </div>
         <a className="article-crosslink" href="/articles/cssbuy-spreadsheet-categories-explained"><span>{copy.reading.articleLabel}</span>{copy.reading.categoryArticle} <ArrowIcon /></a>
+        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-bag-spreadsheet-dimensions-hardware-shipping"><span>NEW ARTICLE</span>Build a bag dimensions, hardware and shipping worksheet <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-jersey-spreadsheet-sizing-customization-qc"><span>NEW ARTICLE</span>Build a jersey sizing, customization and QC worksheet <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-hoodie-spreadsheet-fabric-measurements-weight"><span>NEW ARTICLE</span>Build a hoodie fabric, measurement and weight worksheet <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-shoes-spreadsheet-size-qc-fields"><span>NEW ARTICLE</span>Build a shoe size and QC evidence worksheet <ArrowIcon /></a> : null}
