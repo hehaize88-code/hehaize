@@ -1243,7 +1243,7 @@ export const articles: ArticleRecord[] = [
       "LoloBuy material evidence",
     ],
     intent: "Decide what warehouse photographs support about material and surface texture, and record what remains unproved before parcel approval",
-    checkedDate: "7 September 2026",
+    checkedDate: "11 September 2026",
     publishedDate: contentDates.articles["lolobuy-material-texture-qc-photo-limits"].published,
     modifiedDate: contentDates.articles["lolobuy-material-texture-qc-photo-limits"].modified,
     image: "/social/qc-guide.png",
@@ -1256,7 +1256,7 @@ export const articles: ArticleRecord[] = [
       "Compare full views and close views before interpreting weave, nap, gloss or coating.",
       "Keep fibre composition, hand feel, waterproofing and durability in the unknown column unless stronger evidence exists.",
     ],
-    sourceNote: "Evidence boundary, checked 7 September 2026: LoloBuy's current public information describes warehouse inspection and photographs. That supports a visual review checkpoint, not laboratory identification, calibrated surface measurement, a universal photo set or a guaranteed return outcome. The method below is independent editorial analysis and requires every action to be confirmed in the live order interface.",
+    sourceNote: "Evidence boundary, checked 11 September 2026: LoloBuy's current public information describes warehouse inspection and photographs. That supports a visual review checkpoint, not laboratory identification, calibrated surface measurement, a universal photo set or a guaranteed return outcome. The method below is independent editorial analysis and requires every action to be confirmed in the live order interface.",
     sections: [
       {
         heading: "Name the claim before looking at the texture",

@@ -592,17 +592,17 @@ const colorArticleSourceNote: Record<LocalizedLocale, string> = {
 };
 
 const materialArticleCheckedDate: Record<LocalizedLocale, string> = {
-  es: "7 de septiembre de 2026",
-  de: "7. September 2026",
-  fr: "7 septembre 2026",
-  it: "7 settembre 2026",
+  es: "11 de septiembre de 2026",
+  de: "11. September 2026",
+  fr: "11 septembre 2026",
+  it: "11 settembre 2026",
 };
 
 const materialArticleSourceNote: Record<LocalizedLocale, string> = {
-  es: "Límite comprobado el 7 de septiembre de 2026: la información pública actual de LoloBuy describe inspección y fotografías en almacén. Eso permite una revisión visual, no identifica fibras en laboratorio, no calibra superficies y no fija fotos ni devolución universal.",
-  de: "Geprüfte Grenze vom 7. September 2026: LoloBuys aktuelle öffentliche Informationen beschreiben Lagerprüfung und Fotos. Das ermöglicht Sichtprüfung, aber keine Labor-Faserbestimmung, kalibrierte Oberflächenmessung, feste Fotozahl oder allgemeine Rückgabe.",
-  fr: "Limite vérifiée le 7 septembre 2026 : les informations publiques actuelles de LoloBuy décrivent contrôle et photos en entrepôt. Cela permet un examen visuel, pas une identification des fibres en laboratoire, une mesure calibrée, un nombre fixe de photos ou un retour garanti.",
-  it: "Limite verificato il 7 settembre 2026: le informazioni pubbliche attuali di LoloBuy descrivono ispezione e foto in magazzino. Ciò consente un esame visivo, non identifica fibre in laboratorio, non calibra superfici e non fissa foto o resi universali.",
+  es: "Límite comprobado el 11 de septiembre de 2026: la información pública actual de LoloBuy describe inspección y fotografías en almacén. Eso permite una revisión visual, no identifica fibras en laboratorio, no calibra superficies y no fija fotos ni devolución universal.",
+  de: "Geprüfte Grenze vom 11. September 2026: LoloBuys aktuelle öffentliche Informationen beschreiben Lagerprüfung und Fotos. Das ermöglicht Sichtprüfung, aber keine Labor-Faserbestimmung, kalibrierte Oberflächenmessung, feste Fotozahl oder allgemeine Rückgabe.",
+  fr: "Limite vérifiée le 11 septembre 2026 : les informations publiques actuelles de LoloBuy décrivent contrôle et photos en entrepôt. Cela permet un examen visuel, pas une identification des fibres en laboratoire, une mesure calibrée, un nombre fixe de photos ou un retour garanti.",
+  it: "Limite verificato l'11 settembre 2026: le informazioni pubbliche attuali di LoloBuy descrivono ispezione e foto in magazzino. Ciò consente un esame visivo, non identifica fibre in laboratorio, non calibra superfici e non fissa foto o resi universali.",
 };
 
 export function getLocalizedArticle(article: ArticleRecord, locale: Locale): ArticleRecord {
