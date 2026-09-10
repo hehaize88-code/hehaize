@@ -19,7 +19,7 @@ export const priorityCategoryEditorial: Record<
 > = {
   en: {
     shoes: {
-      seoTitle: "KameyMall Shoes Spreadsheet 2026: 3 Curated Finds",
+      seoTitle: "KameyMall Shoes Spreadsheet 2026: Prices, QC & Direct Links",
       metaDescription: "Compare three curated KameyMall shoe finds with CNY prices, exact product pages and practical size, variant and warehouse QC checks.",
       heading: "KameyMall Shoes Spreadsheet: 3 Curated Finds",
       intro: "Compare the New Balance 1906R, HOKA Speedgoat 5 and Adidas Futurecraft 4D entries already listed in this independent KameyMall spreadsheet. Each card keeps its own reference, dated CNY price and exact detail page.",

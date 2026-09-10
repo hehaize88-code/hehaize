@@ -22,9 +22,36 @@ export type StaticRouteKey =
   | "articles/kameymall-order-status-guide"
   | "articles/kameymall-consolidation-vs-split-parcels"
   | "articles/kameymall-shipping-lines-comparison"
-  | "articles/kameymall-tracking-no-update-guide";
+  | "articles/kameymall-tracking-no-update-guide"
+  | "articles/is-kameymall-legit-2026"
+  | "articles/kameymall-shipping-to-usa"
+  | "articles/kameymall-shoes-buying-guide"
+  | "articles/kameymall-volumetric-weight-guide"
+  | "articles/kameymall-customs-declaration-guide"
+  | "articles/kameymall-packaging-options-guide"
+  | "articles/kameymall-insurance-claims-guide"
+  | "articles/kameymall-product-link-not-working"
+  | "articles/kameymall-app-vs-website"
+  | "articles/kameymall-shipping-to-philippines";
 
 export type RouteKey = StaticRouteKey | CatalogRoute;
+
+export const englishOnlyArticleRoutes = [
+  "articles/is-kameymall-legit-2026",
+  "articles/kameymall-shipping-to-usa",
+  "articles/kameymall-shoes-buying-guide",
+  "articles/kameymall-volumetric-weight-guide",
+  "articles/kameymall-customs-declaration-guide",
+  "articles/kameymall-packaging-options-guide",
+  "articles/kameymall-insurance-claims-guide",
+  "articles/kameymall-product-link-not-working",
+  "articles/kameymall-app-vs-website",
+  "articles/kameymall-shipping-to-philippines",
+] as const satisfies readonly StaticRouteKey[];
+
+export function isEnglishOnlyArticleRoute(route: RouteKey): boolean {
+  return englishOnlyArticleRoutes.includes(route as (typeof englishOnlyArticleRoutes)[number]);
+}
 
 export const staticRoutes: StaticRouteKey[] = [
   "home",
@@ -47,6 +74,7 @@ export const staticRoutes: StaticRouteKey[] = [
   "articles/kameymall-consolidation-vs-split-parcels",
   "articles/kameymall-shipping-lines-comparison",
   "articles/kameymall-tracking-no-update-guide",
+  ...englishOnlyArticleRoutes,
 ];
 
 export const supportedRoutes: RouteKey[] = [
@@ -165,6 +193,10 @@ export type SiteCopy = {
     primaryKeyword?: string;
     seoTitle?: string;
     seoDescription?: string;
+    published?: string;
+    modified?: string;
+    relatedTitle?: string;
+    relatedLinks?: Array<{ label: string; href: string }>;
   };
   common: {
     home: string;
@@ -296,7 +328,7 @@ const english: SiteCopy = {
     "articles/kameymall-shipping-cost-guide-2026": { kicker: "Cross-border cost guide", title: "KameyMall Shipping Cost Guide 2026", intro: "How to separate the CNY item price from domestic delivery, warehouse-stage choices and international freight." },
     "articles/how-to-read-kameymall-qc-photos": { kicker: "Warehouse inspection guide", title: "How to Read KameyMall QC Photos Before Shipping", intro: "A source-checked method for comparing warehouse photos with the ordered variant, spotting visible problems and acting before the return opportunity closes." },
     "articles/kameymall-warehouse-storage-returns-guide": { kicker: "Storage and returns guide", title: "KameyMall Warehouse Storage and Returns Guide", intro: "A source-checked timeline for QC review, return decisions, free storage, extended storage and parcel preparation." },
-  },
+  } as SiteCopy["pageIntros"],
   guidePages: {
     "guides/how-to-use-kameymall-spreadsheet": {
       label: "Start here",
@@ -1184,6 +1216,110 @@ for (const language of languages) {
   copy.pageIntros["articles/kameymall-tracking-no-update-guide"] = update.intro;
 }
 
+const opportunityArticleUi: Array<{ route: (typeof englishOnlyArticleRoutes)[number]; card: CardCopy; intro: { kicker: string; title: string; intro: string } }> = [
+  { route: "articles/is-kameymall-legit-2026", card: { label: "Buyer safety", title: "Is KameyMall Legit in 2026?", body: "Use a fact-checked checklist to separate platform evidence, independent reviews and order-level risk.", action: "Read the legitimacy checklist" }, intro: { kicker: "Independent buyer checklist", title: "Is KameyMall Legit in 2026? A Fact-Checked Buyer Checklist", intro: "A cautious review of the evidence you can verify before funding an order, plus the limits of ratings and promotional claims." } },
+  { route: "articles/kameymall-shipping-to-usa", card: { label: "United States", title: "KameyMall Shipping to the USA", body: "Plan route eligibility, weight, address checks, customs records and delivery handoffs without relying on a fixed quote.", action: "Read the USA guide" }, intro: { kicker: "Country shipping guide", title: "KameyMall Shipping to the USA: Route, Weight and Customs Checklist", intro: "A practical United States parcel workflow built around live route data, warehouse measurements and verifiable tracking events." } },
+  { route: "articles/kameymall-shoes-buying-guide", card: { label: "Shoes", title: "KameyMall Shoes Buying Guide", body: "Check size systems, listing variants, warehouse QC, shoebox choices and chargeable weight before shipping.", action: "Read the shoes guide" }, intro: { kicker: "Footwear buying guide", title: "KameyMall Shoes Buying Guide: Sizing, QC and Shipping", intro: "A shoe-specific method for choosing the exact option, documenting fit evidence and preventing a bulky box from becoming a shipping surprise." } },
+  { route: "articles/kameymall-volumetric-weight-guide", card: { label: "Shipping math", title: "KameyMall Volumetric Weight Guide", body: "Calculate chargeable weight, compare route divisors and test packaging changes with measured parcel dimensions.", action: "Learn the calculation" }, intro: { kicker: "Chargeable-weight guide", title: "KameyMall Volumetric Weight: Calculate Chargeable Weight", intro: "A worked method for comparing actual and dimensional weight without turning an estimate into a promised freight price." } },
+  { route: "articles/kameymall-customs-declaration-guide", card: { label: "Customs records", title: "KameyMall Customs Declaration Guide", body: "Prepare accurate descriptions, values and supporting records while checking the destination country’s current rules.", action: "Read the declaration guide" }, intro: { kicker: "Declaration checklist", title: "KameyMall Customs Declaration Guide: Value, Description and Records", intro: "A practical documentation workflow for truthful parcel descriptions, consistent values and destination-specific checks." } },
+  { route: "articles/kameymall-packaging-options-guide", card: { label: "Parcel protection", title: "KameyMall Packaging Options", body: "Compare box removal, reinforcement, moisture protection and parcel size by product risk.", action: "Compare packaging choices" }, intro: { kicker: "Packaging decision guide", title: "KameyMall Packaging Options: Box Removal, Reinforcement and Size", intro: "Choose packaging from the item’s fragility, resale-box value, moisture exposure and dimensional-weight risk—not from one universal rule." } },
+  { route: "articles/kameymall-insurance-claims-guide", card: { label: "Claims evidence", title: "KameyMall Insurance and Claims", body: "Check current coverage before payment and save the parcel, tracking, packaging and delivery evidence a claim may require.", action: "Read the claims guide" }, intro: { kicker: "Insurance evidence guide", title: "KameyMall Insurance and Claims: Damage, Loss and Required Evidence", intro: "A pre-shipment and post-delivery evidence plan that keeps coverage assumptions separate from facts you can prove." } },
+  { route: "articles/kameymall-product-link-not-working", card: { label: "Ordering fix", title: "KameyMall Product Link Not Working?", body: "Diagnose broken, restricted or badly parsed links and prepare a precise manual order for supported marketplaces.", action: "Fix the product link" }, intro: { kicker: "Product-link troubleshooting", title: "KameyMall Product Link Not Working: Manual Order Checklist", intro: "A step-by-step recovery path for Taobao, 1688, Weidian and other listings that fail to import cleanly." } },
+  { route: "articles/kameymall-app-vs-website", card: { label: "App and web", title: "KameyMall App vs Website", body: "Compare discovery, order review, QC, warehouse and tracking tasks, then keep one consistent evidence record.", action: "Compare app and website" }, intro: { kicker: "Platform comparison", title: "KameyMall App vs Website: Ordering, QC, Warehouse and Tracking", intro: "Choose the interface that suits each task without assuming the app and web account create different policies or prices." } },
+  { route: "articles/kameymall-shipping-to-philippines", card: { label: "Philippines", title: "KameyMall Shipping to the Philippines", body: "Prepare the address, live route check, chargeable weight, customs records and local-carrier handoff.", action: "Read the Philippines guide" }, intro: { kicker: "Country shipping guide", title: "KameyMall Shipping to the Philippines: Routes, Address and Customs", intro: "A destination-specific checklist for building a traceable parcel while avoiding unsupported promises about price or delivery time." } },
+];
+
+const opportunityCardTranslations: Record<Exclude<Locale, "en">, { libraryIntro: string; cards: CardCopy[] }> = {
+  de: {
+    libraryIntro: "Zwanzig unabhängige Ratgeber behandeln KameyMall-Produktsuche, Bestellung, QC, Versand, Länder-Routen, Verpackung, Zoll, Versicherung und Fehlerbehebung.",
+    cards: [
+      { label: "Käuferschutz", title: "Ist KameyMall 2026 seriös?", body: "Prüfe Plattformnachweise, unabhängige Bewertungen und das konkrete Bestellrisiko mit einer faktenbasierten Checkliste.", action: "Seriositäts-Checkliste lesen" },
+      { label: "USA", title: "KameyMall-Versand in die USA", body: "Plane zulässige Routen, Gewicht, Adresse, Zollunterlagen und die Übergabe an den Zusteller anhand aktueller Daten.", action: "USA-Ratgeber lesen" },
+      { label: "Schuhe", title: "KameyMall-Ratgeber für Schuhe", body: "Prüfe Größensystem, Variante, Lager-QC, Schuhkarton und abrechenbares Gewicht vor dem Versand.", action: "Schuhratgeber lesen" },
+      { label: "Versandberechnung", title: "KameyMall-Volumengewicht", body: "Berechne das abrechenbare Gewicht und teste Verpackungsänderungen mit den gemessenen Paketmaßen.", action: "Berechnung lernen" },
+      { label: "Zollunterlagen", title: "KameyMall-Zolldeklaration", body: "Bereite korrekte Beschreibungen, Werte und Belege vor und prüfe die aktuellen Regeln des Ziellands.", action: "Zollratgeber lesen" },
+      { label: "Paketschutz", title: "KameyMall-Verpackungsoptionen", body: "Vergleiche Kartonentfernung, Verstärkung, Feuchtigkeitsschutz und Paketgröße nach Produktrisiko.", action: "Verpackung vergleichen" },
+      { label: "Schadennachweis", title: "KameyMall-Versicherung und Ansprüche", body: "Prüfe den Schutz vor Zahlung und sichere Paket-, Tracking-, Verpackungs- und Zustellnachweise.", action: "Anspruchsratgeber lesen" },
+      { label: "Bestellhilfe", title: "KameyMall-Produktlink funktioniert nicht?", body: "Diagnostiziere defekte oder falsch eingelesene Links und bereite eine genaue manuelle Bestellung vor.", action: "Produktlink reparieren" },
+      { label: "App und Web", title: "KameyMall-App oder Website", body: "Vergleiche Suche, Bestellung, QC, Lager und Tracking und führe einen einheitlichen Nachweis.", action: "App und Website vergleichen" },
+      { label: "Philippinen", title: "KameyMall-Versand auf die Philippinen", body: "Bereite Adresse, Live-Routenprüfung, Gewicht, Zolldaten und lokale Zustellerübergabe vor.", action: "Philippinen-Ratgeber lesen" },
+    ],
+  },
+  fr: {
+    libraryIntro: "Vingt guides indépendants couvrent la recherche KameyMall, la commande, le QC, l’expédition, les destinations, l’emballage, la douane, l’assurance et le dépannage.",
+    cards: [
+      { label: "Sécurité acheteur", title: "KameyMall est-il fiable en 2026 ?", body: "Distinguez les preuves de la plateforme, les avis indépendants et le risque propre à chaque commande.", action: "Lire la vérification" },
+      { label: "États-Unis", title: "Expédition KameyMall vers les États-Unis", body: "Planifiez ligne admissible, poids, adresse, documents douaniers et relais du transporteur avec les données actuelles.", action: "Lire le guide USA" },
+      { label: "Chaussures", title: "Guide d’achat de chaussures KameyMall", body: "Vérifiez pointure, variante, QC, boîte et poids facturable avant l’envoi.", action: "Lire le guide chaussures" },
+      { label: "Calcul du fret", title: "Poids volumétrique KameyMall", body: "Calculez le poids facturable et testez l’effet de l’emballage avec les dimensions mesurées.", action: "Voir le calcul" },
+      { label: "Documents douaniers", title: "Déclaration douanière KameyMall", body: "Préparez descriptions, valeurs et justificatifs exacts selon les règles actuelles du pays destinataire.", action: "Lire le guide douane" },
+      { label: "Protection du colis", title: "Options d’emballage KameyMall", body: "Comparez retrait de boîte, renfort, protection contre l’humidité et volume selon le risque du produit.", action: "Comparer l’emballage" },
+      { label: "Preuves de sinistre", title: "Assurance et réclamations KameyMall", body: "Vérifiez la couverture avant paiement et conservez les preuves du colis, du suivi, de l’emballage et de la livraison.", action: "Lire le guide réclamation" },
+      { label: "Correction de commande", title: "Lien produit KameyMall défaillant ?", body: "Diagnostiquez les liens cassés ou mal importés et préparez une commande manuelle précise.", action: "Corriger le lien" },
+      { label: "Application et web", title: "Application ou site KameyMall", body: "Comparez recherche, commande, QC, entrepôt et suivi tout en gardant un dossier cohérent.", action: "Comparer les interfaces" },
+      { label: "Philippines", title: "Expédition KameyMall vers les Philippines", body: "Préparez adresse, ligne actuelle, poids facturable, documents douaniers et relais local.", action: "Lire le guide Philippines" },
+    ],
+  },
+  es: {
+    libraryIntro: "Veinte guías independientes cubren productos KameyMall, pedidos, QC, envíos, rutas por país, embalaje, aduanas, seguro y solución de problemas.",
+    cards: [
+      { label: "Seguridad", title: "¿KameyMall es fiable en 2026?", body: "Separa pruebas de la plataforma, reseñas independientes y riesgos concretos del pedido con una lista verificada.", action: "Leer comprobación" },
+      { label: "Estados Unidos", title: "Envíos KameyMall a Estados Unidos", body: "Planifica ruta válida, peso, dirección, documentos aduaneros y traspaso al transportista con datos actuales.", action: "Leer guía de EE. UU." },
+      { label: "Calzado", title: "Guía de calzado KameyMall", body: "Comprueba sistema de tallas, variante, QC, caja y peso facturable antes del envío.", action: "Leer guía de calzado" },
+      { label: "Cálculo de envío", title: "Peso volumétrico KameyMall", body: "Calcula el peso facturable y prueba cambios de embalaje con las medidas reales del paquete.", action: "Aprender el cálculo" },
+      { label: "Aduanas", title: "Declaración aduanera KameyMall", body: "Prepara descripciones, valores y justificantes exactos según las normas actuales del país de destino.", action: "Leer guía de aduanas" },
+      { label: "Protección", title: "Opciones de embalaje KameyMall", body: "Compara retirada de caja, refuerzo, protección contra humedad y tamaño según el riesgo del producto.", action: "Comparar embalaje" },
+      { label: "Pruebas", title: "Seguro y reclamaciones KameyMall", body: "Revisa la cobertura antes de pagar y guarda pruebas del paquete, seguimiento, embalaje y entrega.", action: "Leer guía de reclamación" },
+      { label: "Solución de pedido", title: "¿No funciona el enlace de KameyMall?", body: "Diagnostica enlaces rotos o mal importados y prepara un pedido manual preciso.", action: "Corregir el enlace" },
+      { label: "Aplicación y web", title: "Aplicación o web de KameyMall", body: "Compara búsqueda, pedido, QC, almacén y seguimiento manteniendo un registro coherente.", action: "Comparar app y web" },
+      { label: "Filipinas", title: "Envíos KameyMall a Filipinas", body: "Prepara dirección, ruta actual, peso facturable, documentos aduaneros y entrega al transportista local.", action: "Leer guía de Filipinas" },
+    ],
+  },
+  it: {
+    libraryIntro: "Venti guide indipendenti coprono prodotti KameyMall, ordini, QC, spedizioni, rotte nazionali, imballaggio, dogana, assicurazione e problemi comuni.",
+    cards: [
+      { label: "Sicurezza", title: "KameyMall è affidabile nel 2026?", body: "Distingui prove della piattaforma, recensioni indipendenti e rischio del singolo ordine con una checklist verificata.", action: "Leggi la verifica" },
+      { label: "Stati Uniti", title: "Spedizione KameyMall negli Stati Uniti", body: "Pianifica rotta idonea, peso, indirizzo, documenti doganali e passaggio al corriere usando dati attuali.", action: "Leggi la guida USA" },
+      { label: "Scarpe", title: "Guida alle scarpe KameyMall", body: "Controlla taglia, variante, QC, scatola e peso fatturabile prima della spedizione.", action: "Leggi la guida scarpe" },
+      { label: "Calcolo spedizione", title: "Peso volumetrico KameyMall", body: "Calcola il peso fatturabile e valuta l’imballaggio con le dimensioni misurate del pacco.", action: "Impara il calcolo" },
+      { label: "Documenti doganali", title: "Dichiarazione doganale KameyMall", body: "Prepara descrizioni, valori e documenti accurati secondo le regole attuali del paese di destinazione.", action: "Leggi la guida dogana" },
+      { label: "Protezione pacco", title: "Opzioni di imballaggio KameyMall", body: "Confronta rimozione scatola, rinforzo, protezione dall’umidità e volume in base al rischio del prodotto.", action: "Confronta imballaggi" },
+      { label: "Prove per reclami", title: "Assicurazione e reclami KameyMall", body: "Verifica la copertura prima del pagamento e conserva prove di pacco, tracking, imballo e consegna.", action: "Leggi la guida reclami" },
+      { label: "Correzione ordine", title: "Il link prodotto KameyMall non funziona?", body: "Diagnostica link interrotti o importati male e prepara un ordine manuale preciso.", action: "Correggi il link" },
+      { label: "App e web", title: "App o sito KameyMall", body: "Confronta ricerca, ordine, QC, magazzino e tracking mantenendo un unico registro coerente.", action: "Confronta app e sito" },
+      { label: "Filippine", title: "Spedizione KameyMall nelle Filippine", body: "Prepara indirizzo, rotta attuale, peso fatturabile, documenti doganali e passaggio al corriere locale.", action: "Leggi la guida Filippine" },
+    ],
+  },
+  pl: {
+    libraryIntro: "Dwadzieścia niezależnych poradników obejmuje produkty KameyMall, zamówienia, QC, wysyłkę, trasy krajowe, pakowanie, cło, ubezpieczenie i rozwiązywanie problemów.",
+    cards: [
+      { label: "Bezpieczeństwo", title: "Czy KameyMall jest wiarygodny w 2026 roku?", body: "Oddziel dowody platformy, niezależne opinie i ryzyko konkretnego zamówienia za pomocą sprawdzonej listy.", action: "Czytaj listę kontroli" },
+      { label: "Stany Zjednoczone", title: "Wysyłka KameyMall do USA", body: "Zaplanuj dostępną trasę, wagę, adres, dokumenty celne i przekazanie kurierowi według aktualnych danych.", action: "Czytaj poradnik USA" },
+      { label: "Buty", title: "Poradnik zakupu butów KameyMall", body: "Sprawdź rozmiar, wariant, QC, pudełko i wagę rozliczeniową przed wysyłką.", action: "Czytaj poradnik butów" },
+      { label: "Obliczanie wysyłki", title: "Waga objętościowa KameyMall", body: "Oblicz wagę rozliczeniową i sprawdź wpływ opakowania na podstawie zmierzonych wymiarów.", action: "Poznaj obliczenie" },
+      { label: "Dokumenty celne", title: "Deklaracja celna KameyMall", body: "Przygotuj prawidłowe opisy, wartości i dowody zgodnie z aktualnymi zasadami kraju docelowego.", action: "Czytaj poradnik celny" },
+      { label: "Ochrona paczki", title: "Opcje pakowania KameyMall", body: "Porównaj usunięcie pudełka, wzmocnienie, ochronę przed wilgocią i rozmiar według ryzyka produktu.", action: "Porównaj pakowanie" },
+      { label: "Dowody roszczenia", title: "Ubezpieczenie i roszczenia KameyMall", body: "Sprawdź ochronę przed płatnością i zachowaj dowody paczki, śledzenia, opakowania i doręczenia.", action: "Czytaj poradnik roszczeń" },
+      { label: "Naprawa zamówienia", title: "Link produktu KameyMall nie działa?", body: "Zdiagnozuj uszkodzone lub źle wczytane linki i przygotuj dokładne zamówienie ręczne.", action: "Napraw link produktu" },
+      { label: "Aplikacja i strona", title: "Aplikacja czy strona KameyMall", body: "Porównaj wyszukiwanie, zamówienie, QC, magazyn i śledzenie, zachowując spójny zapis.", action: "Porównaj aplikację i stronę" },
+      { label: "Filipiny", title: "Wysyłka KameyMall na Filipiny", body: "Przygotuj adres, aktualną trasę, wagę rozliczeniową, dokumenty celne i przekazanie lokalnemu kurierowi.", action: "Czytaj poradnik Filipiny" },
+    ],
+  },
+};
+
+for (const language of languages) {
+  const copy = localizedCopies[language.code];
+  const localizedCards = language.code === "en" ? opportunityArticleUi.map((item) => item.card) : opportunityCardTranslations[language.code].cards;
+  for (const [index, item] of opportunityArticleUi.entries()) {
+    copy.articles.cards.push(localizedCards[index]);
+    copy.pageIntros[item.route] = item.intro;
+  }
+  copy.articles.intro = language.code === "en"
+    ? "Twenty independent guides now cover KameyMall product discovery, ordering, QC, shipping, country routes, packaging, customs, insurance and troubleshooting."
+    : opportunityCardTranslations[language.code].libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: copy.articles.intro };
+}
+
 export const copies: Record<Locale, SiteCopy> = {
   en: english,
   de: german,
@@ -1240,4 +1376,5 @@ export const articleRoutes: StaticRouteKey[] = [
   "articles/kameymall-consolidation-vs-split-parcels",
   "articles/kameymall-shipping-lines-comparison",
   "articles/kameymall-tracking-no-update-guide",
+  ...englishOnlyArticleRoutes,
 ];

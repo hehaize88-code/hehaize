@@ -48,6 +48,19 @@ async function render(worker, pathname) {
   );
 }
 
+const opportunityRoutes = [
+  "/articles/is-kameymall-legit-2026",
+  "/articles/kameymall-shipping-to-usa",
+  "/articles/kameymall-shoes-buying-guide",
+  "/articles/kameymall-volumetric-weight-guide",
+  "/articles/kameymall-customs-declaration-guide",
+  "/articles/kameymall-packaging-options-guide",
+  "/articles/kameymall-insurance-claims-guide",
+  "/articles/kameymall-product-link-not-working",
+  "/articles/kameymall-app-vs-website",
+  "/articles/kameymall-shipping-to-philippines",
+];
+
 test("renders every requested independent page", async () => {
   const worker = await loadWorker();
   const routes = [
@@ -69,6 +82,7 @@ test("renders every requested independent page", async () => {
     "/articles/kameymall-order-status-guide",
     "/articles/kameymall-consolidation-vs-split-parcels",
     "/articles/kameymall-shipping-lines-comparison",
+    ...opportunityRoutes,
     "/categories/shoes",
     "/products/new-balance-1906r",
     "/fr/categories/shoes",
@@ -78,6 +92,24 @@ test("renders every requested independent page", async () => {
     const response = await render(worker, route);
     assert.equal(response.status, 200, route);
     assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i, route);
+  }
+});
+
+test("publishes substantial opportunity articles only on canonical English URLs", async () => {
+  const worker = await loadWorker();
+  for (const route of opportunityRoutes) {
+    const response = await render(worker, route);
+    assert.equal(response.status, 200, route);
+    const html = await response.text();
+    const prose = html.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+    const words = visibleText(prose).match(/[A-Za-z0-9]+(?:[’'-][A-Za-z0-9]+)*/g) ?? [];
+    assert.ok(words.length >= 1200 && words.length <= 1800, `${route} visible words: ${words.length}`);
+    assert.match(html, /"datePublished":"2026-09-10"/);
+    assert.match(html, /hreflang="en"/i);
+    assert.doesNotMatch(html, /hreflang="(?:de|fr|es|it|pl)"/i);
+    for (const locale of ["de", "fr", "es", "it", "pl"]) {
+      assert.equal((await render(worker, `/${locale}${route}`)).status, 404, `/${locale}${route}`);
+    }
   }
 });
 
@@ -117,7 +149,7 @@ test("keeps every localized content module as complete as English", async () => 
     assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
     assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
     assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
-    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 10, `${prefix || "/"} article cards`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 20, `${prefix || "/"} article cards`);
     assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
 
     const homeImages = (homeHtml.match(/<img\b/g) ?? []).length;
@@ -224,14 +256,16 @@ test("keeps internal SEO planning labels out of every visible language", async (
   }
 });
 
-test("marks every canonical sitemap URL with the current site update date", async () => {
+test("uses accurate route dates and includes English-only opportunity articles", async () => {
   const worker = await loadWorker();
   const response = await render(worker, "/sitemap.xml");
   assert.equal(response.status, 200);
   const sitemap = await response.text();
-  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 360);
-  assert.equal((sitemap.match(/<lastmod>2026-09-01T00:00:00\.000Z<\/lastmod>/g) ?? []).length, 360);
-  assert.doesNotMatch(sitemap, /<lastmod>2026-08-/);
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 370);
+  assert.equal((sitemap.match(/<lastmod>2026-09-10T00:00:00\.000Z<\/lastmod>/g) ?? []).length, 22);
+  assert.match(sitemap, /<lastmod>2026-08-03T00:00:00\.000Z<\/lastmod>/);
+  assert.match(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/articles\/is-kameymall-legit-2026<\/loc>/);
+  assert.doesNotMatch(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/(?:de|fr|es|it|pl)\/articles\/is-kameymall-legit-2026<\/loc>/);
 });
 
 function imageTags(html) {
@@ -366,7 +400,7 @@ test("keeps the complete homepage in compact no-swipe mobile grids", async () =>
   assert.equal((html.match(/class="category-card"/g) ?? []).length, 10);
   assert.equal((html.match(/<ol class="step-list">[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g) ?? []).length, 6);
   assert.equal((html.match(/class="guide-card(?: |")/g) ?? []).length, 3);
-  assert.equal((html.match(/class="article-card"/g) ?? []).length, 10);
+  assert.equal((html.match(/class="article-card"/g) ?? []).length, 20);
   assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 11);
   assert.doesNotMatch(html, /<details\b[^>]*\bopen\b/i, "homepage FAQs and language menu start collapsed");
 });

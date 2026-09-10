@@ -7,6 +7,7 @@ import {
   copies,
   guideRoutes,
   isStaticRouteKey,
+  isEnglishOnlyArticleRoute,
   languages,
   Locale,
   RouteKey,
@@ -33,6 +34,18 @@ import {
 
 const CNY_TO_USD = 0.1481;
 const SITE_URL = "https://kameymall-sheet.com";
+const articleDates: Partial<Record<StaticRouteKey, string>> = {
+  "articles/kameymall-spreadsheet-guide-2026": "2026-08-03",
+  "articles/how-to-buy-from-kameymall-2026": "2026-08-03",
+  "articles/kameymall-shipping-cost-guide-2026": "2026-08-03",
+  "articles/how-to-read-kameymall-qc-photos": "2026-08-03",
+  "articles/kameymall-warehouse-storage-returns-guide": "2026-08-08",
+  "articles/kameymall-payment-methods-fees": "2026-08-09",
+  "articles/kameymall-order-status-guide": "2026-08-11",
+  "articles/kameymall-consolidation-vs-split-parcels": "2026-08-13",
+  "articles/kameymall-shipping-lines-comparison": "2026-08-27",
+  "articles/kameymall-tracking-no-update-guide": "2026-08-29",
+};
 
 type AnalyticsParameters = Record<string, string | number | boolean>;
 
@@ -143,6 +156,9 @@ function ProductImage({ product, priority = false }: { product: Product; priorit
 
 function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
   const copy = copies[locale];
+  const routeLanguages = isEnglishOnlyArticleRoute(route)
+    ? languages.filter((language) => language.code === "en")
+    : languages;
   const navItems: Array<[RouteKey, string]> = [
     ["finds", copy.nav.finds],
     ["categories", copy.nav.categories],
@@ -176,7 +192,7 @@ function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
           </summary>
           <div className="language-popover">
             <span>{copy.language}</span>
-            {languages.map((language) => (
+            {routeLanguages.map((language) => (
               <a
                 key={language.code}
                 href={routeHref(language.code, route)}
@@ -448,7 +464,7 @@ function ArticlesSection({ locale }: { locale: Locale }) {
             <div className="article-card-top"><span>{card.label}</span><span>0{index + 1}</span></div>
             <h3>{card.title}</h3>
             <p>{card.body}</p>
-            <a href={routeHref(locale, targets[index])}>{card.action} <ArrowIcon /></a>
+            <a href={routeHref(isEnglishOnlyArticleRoute(targets[index]) ? "en" : locale, targets[index])}>{card.action} <ArrowIcon /></a>
           </article>
         ))}
       </div>
@@ -663,6 +679,12 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
                 {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
               </section>
             ))}
+            {page.relatedLinks?.length ? (
+              <section>
+                <h2>{page.relatedTitle ?? "Related KameyMall guides"}</h2>
+                <ul>{page.relatedLinks.map((link) => <li key={link.href}><a href={link.href}>{link.label}</a></li>)}</ul>
+              </section>
+            ) : null}
             <section className="takeaway"><h2>{page.conclusionTitle}</h2><p>{page.conclusion}</p></section>
           </div>
         </article>
@@ -827,8 +849,8 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
                 "@type": "Article",
                 headline: articlePage.title,
                 description: articlePage.intro,
-                datePublished: "2026-08-03",
-                dateModified: "2026-08-03",
+                datePublished: articlePage.published ?? articleDates[route as StaticRouteKey] ?? "2026-08-03",
+                dateModified: articlePage.modified ?? articlePage.published ?? articleDates[route as StaticRouteKey] ?? "2026-08-03",
                 mainEntityOfPage: canonical,
                 url: canonical,
                 inLanguage: locale,
