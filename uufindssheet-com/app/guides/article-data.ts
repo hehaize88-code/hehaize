@@ -347,6 +347,112 @@ export const guides: Guide[] = [
     ],
   },
   {
+    slug: "uufinds-measurement-photos-ruler-evidence-limits",
+    label: "MEASUREMENT EVIDENCE GUIDE",
+    title: "UUFinds Measurement Photos: What Ruler Evidence Can and Cannot Prove",
+    seoTitle: "UUFinds Measurement Photos: Evidence & Limits",
+    description: "Read UUFinds measurement photos by checking endpoints, units, item position, ruler alignment and camera angle before using a number in a QC decision.",
+    primaryKeyword: "UUFinds measurement photos",
+    longTailKeywords: ["UUFinds ruler photo", "QC measurement photo accuracy", "what QC measurements prove", "UUFinds size measurement evidence"],
+    updated: "September 11, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-09-11",
+    modifiedISO: "2026-09-11",
+    englishOnly: true,
+    hideSourceNote: true,
+    intro: [
+      "UUFinds measurement photos can support a useful size or dimension check, but the visible number is only the end of an evidence chain. First confirm that the photo belongs to the exact source item and option. Then identify what was measured, where the two endpoints sit, which unit the scale uses, how the product was positioned and whether the camera lets you read the marks without guessing. A ruler beside an item is not automatically a valid measurement.",
+      "This guide is for reviewing measurement evidence after a listing and QC record have been matched. It does not replace the earlier task of choosing a size from a seller chart, and it does not promise fit. The goal is narrower: decide whether one photographed measurement is readable, comparable with the buyer's saved requirement and strong enough to support a proceed, pause or reject decision. Unclear evidence should remain unknown rather than being rounded into a convenient answer.",
+    ],
+    sections: [
+      {
+        heading: "1. Lock the record before reading the ruler",
+        paragraphs: [
+          "Start with identity, not the scale. Save the original marketplace source, seller or shop context, item identifier, selected color, size or model, and the QC record date when those fields are available. Compare distinctive construction details across the listing and the photographed item. A precise-looking ruler cannot repair an identity conflict; it would only measure the wrong product more confidently.",
+          "Give the record one of four states: Exact, Probable, Reference-only or Conflict. Exact means the source item and relevant option agree. Probable means a decisive identifier is missing. Reference-only means the photo is useful for learning a measurement method but cannot support this listing-specific decision. Conflict means the seller, item, option or visible construction disagrees. Only an Exact record should carry a photographed number into an order decision.",
+        ],
+      },
+      {
+        heading: "2. Name the dimension and both endpoints",
+        paragraphs: [
+          "Write the measurement name before transcribing a number. Terms such as length, width and height are incomplete unless the endpoints are defined. A garment length might run from the highest shoulder point to the hem, from the collar seam to the hem, or along the back center. A bag width might mean the widest external points or the flat base. A shoe measurement might concern a removable insole, the outsole or an internal space that is not directly visible. These are different quantities.",
+          "Trace the entire measurement path in the photo. Both endpoints must be visible, the scale must cross the intended points and no crop may hide where the reading starts. Record the method literally: for example, “flat half-chest from underarm seam to underarm seam” rather than “chest 56 cm.” This prevents a later reader from doubling, comparing or interpreting the number by the wrong convention.",
+        ],
+        table: { caption: "Define the object before accepting the number", headers: ["Product", "Useful measurement label", "Required visible endpoints"], rows: [
+          ["Hoodie", "Flat half-chest", "Underarm seam to opposite underarm seam"],
+          ["Trousers", "Waist laid flat", "Outer waistband edge to outer waistband edge"],
+          ["Shoe", "Removable insole length", "Physical heel end to physical toe end"],
+          ["Bag", "External base width", "Left and right outer base corners"],
+        ] },
+      },
+      {
+        heading: "3. Audit the scale, zero and unit",
+        paragraphs: [
+          "Zoom only enough to read the markings without inventing detail. Confirm whether the scale shows centimetres, millimetres or inches. Find the zero reference rather than assuming the first visible edge is zero; the tool may begin outside the frame, the item may start at a later mark, or a ruler may have a margin before its printed scale. If the item starts at 3 cm and ends at 58 cm, the measured span is 55 cm, not 58 cm.",
+          "Check that the marks remain legible along the relevant interval and that the scale has not folded, bowed or lifted away from the measurement plane. A flexible tape pulled diagonally across a garment follows a longer path than the straight horizontal span. A rigid ruler placed above a curved object can introduce another offset. The photo does not calibrate the measuring tool; it only shows how it was used. Treat the smallest readable division and any ambiguous endpoint as limits on precision.",
+        ],
+      },
+      {
+        heading: "4. Check the product state and measuring tension",
+        paragraphs: [
+          "The product must be in a defined state. For a garment, note whether it is laid flat, naturally relaxed, stretched, folded, buttoned or zipped. Smooth only obvious wrinkles; pulling knit fabric changes the result. For trousers, align the waistband and specify whether the rise, inseam or outseam follows a seam. For a bag, identify whether it is empty, stuffed, closed or compressed. For footwear, separate removable-insole, outsole and external-length evidence.",
+          "Look for tension clues: fingers holding the item, clips, an extended elastic waistband or fabric pulled beyond a relaxed edge. A tape should lie straight along the intended path without dragging the product out of shape. If one endpoint is held under tension while the other floats, the frame may support only a rough range. State the condition rather than correcting it mentally.",
+        ],
+      },
+      {
+        heading: "5. Diagnose camera angle and parallax",
+        paragraphs: [
+          "The camera should face the ruler and endpoints as squarely as the scene allows. When the lens views the scale from an angle, near marks appear larger and the endpoint can seem to align with a different tick. This parallax risk increases when the ruler and product edge sit at different heights. A diagonal ruler can also look shorter in the image even though its physical length has not changed.",
+          "Use contextual clues. Parallel scale edges should remain reasonably parallel, circular objects should not become extreme ovals and both endpoints should be in focus. A centered overhead view of a flat garment is generally easier to read than a low side view. For a close-up endpoint, require enough wider context to prove that the same ruler still follows the intended path. Two disconnected close-ups may show readable marks without proving the distance between them.",
+        ],
+      },
+      {
+        heading: "6. Compare only compatible methods",
+        paragraphs: [
+          "A QC number should be compared with a requirement measured by the same method. Match endpoint to endpoint, item state to item state and unit to unit. A seller chart may describe body measurements, garment measurements or a recommended size range without making the distinction clear. Do not compare a flat half-chest directly with a body circumference, or an outsole length with foot length, simply because both values are expressed in centimetres.",
+          "Use a personal reference item when fit matters. Measure it with the documented endpoint method, repeat the measurement and save a comfortable acceptance band before reviewing the QC frame. For a hypothetical hoodie, suppose a buyer's relaxed reference measures 55–57 cm across the underarms. A matched QC photo appears to start at 2 cm and end at 58 cm, producing a 56 cm span. If both endpoints, the unit and the relaxed flat state are clear, the evidence falls inside that buyer's band. It still does not prove drape, stretch, shrinkage or comfort.",
+          "Avoid inventing a universal tolerance. The acceptable interval depends on the buyer's use, the product, the measurement method and the consequence of an error. A one-centimetre uncertainty may be irrelevant for a loose tote but decisive for a fitted component. Write the threshold before judging, and keep a hard requirement separate from a preference.",
+        ],
+      },
+      {
+        heading: "7. Separate proof, support and unknowns",
+        paragraphs: [
+          "Use the strongest claim the frame actually supports. A clear image can establish that a measuring tool was placed across a visible path and that its marks indicate a bounded span. It may support consistency with a saved requirement. It cannot by itself prove fit, material composition, elasticity, internal dimensions, manufacturing tolerance, future-unit consistency or the accuracy of a seller chart.",
+        ],
+        table: { caption: "Evidence strength for one matched measurement photo", headers: ["Observation", "Defensible reading", "Do not claim"], rows: [
+          ["Exact item, endpoints, unit and scale are clear", "Readable sample-level measurement", "Every future unit is identical"],
+          ["One endpoint or zero is partly hidden", "Approximate range or unresolved result", "A precise convenient number"],
+          ["Photo method matches a saved reference", "Comparable with the buyer's stated band", "Guaranteed fit or comfort"],
+          ["Tool bends, item stretches or camera is oblique", "Method conflict requiring caution", "The apparent endpoint is exact"],
+          ["Only another listing's photo is available", "Reference for method or questions", "Evidence for the intended listing"],
+        ] },
+      },
+      {
+        heading: "8. Record the verdict and hand off one clear request",
+        paragraphs: [
+          "Save a compact measurement record: source item and seller, exact option, QC record date, photographed unit, dimension name, endpoint definition, product state, tool and unit, start mark, end mark, calculated span, camera limitations, confidence and buyer acceptance band. Use Pass only when identity is Exact, the method is compatible and the bounded reading meets the written rule. Use Pause when one focused photo could reverse the decision. Use Reject when a reliable measurement conflicts with a hard requirement.",
+          "If more evidence is needed, ask for one reproducible view: “Please lay this exact size flat without stretching it, place a centimetre tape straight from the left underarm seam to the right underarm seam, show the zero and both endpoints, and photograph from directly above.” This is a buyer request template, not a statement that UUFinds provides additional photos or controls warehouse work.",
+          "Carry the original marketplace source, selected option, matched UUFinds record and measurement note to the independent purchasing agent you choose. Check that agent's current ordering, warehouse-photo, return and shipping terms before paying. That agent decides what order action, measurement request or after-sales step is available. UUFinds remains a research source and is not represented as the seller, warehouse or an affiliated agent.",
+        ],
+        points: [
+          "Proceed only from an Exact identity and a compatible, readable method.",
+          "Keep intervals and unknowns instead of rounding away weak evidence.",
+          "Use the chosen independent agent for every purchase, warehouse, return and shipping action.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official service check", source: "UUFinds public QC Finder and UU page", checked: "September 11, 2026", supports: "The official public entry points were rechecked for the current QC-research context.", boundary: "The pages do not establish that UUFinds owns warehouse measurement, ordering, returns or shipping operations." },
+      { type: "Independent measurement method", source: "NIST tape-measure accuracy guidance", checked: "September 11, 2026", supports: "Accurate length work depends on verified scale marks, controlled placement and repeatability.", boundary: "A QC photograph is not a laboratory calibration and should not be assigned laboratory precision." },
+      { type: "Editorial method", source: "UUFinds Sheet measurement-photo framework", checked: "September 11, 2026", supports: "Identity states, endpoint records, confidence labels and the worked hypothetical used here.", boundary: "The framework supports a buyer decision but cannot guarantee fit or another unit's dimensions." },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-size-measurement-notes-before-option/", label: "Prepare size evidence before choosing", description: "Build the seller-chart and reference-item record that a later QC measurement can be compared against." },
+      { href: "/guides/uufinds-qc-checklist/", label: "Start with the full QC sequence", description: "Confirm identity and broad condition before using one measurement in the verdict." },
+      { href: "/guides/uufinds-qc-color-lighting-photo-limits/", label: "Separate image conditions from product evidence", description: "Apply the same disciplined treatment to lighting, exposure and color uncertainty." },
+    ],
+  },
+  {
     slug: "uufinds-qc-color-lighting-photo-limits",
     label: "COLOR EVIDENCE GUIDE",
     title: "UUFinds QC Color Check: Lighting, White Balance and Photo Limits",

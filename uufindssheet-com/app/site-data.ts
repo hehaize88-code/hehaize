@@ -112,6 +112,14 @@ export const articleCards: ArticleCard[] = [
     englishOnly: true,
   },
   {
+    tag: "MEASUREMENT EVIDENCE GUIDE",
+    title: "UUFinds Measurement Photos: What Ruler Evidence Can and Cannot Prove",
+    summary: "Check endpoints, units, item state, ruler alignment and camera angle before using a photographed dimension in a QC decision.",
+    href: "/guides/uufinds-measurement-photos-ruler-evidence-limits/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "COLOR EVIDENCE GUIDE",
     title: "UUFinds QC Color Check: Lighting, White Balance and Photo Limits",
     summary: "Separate a likely product-color mismatch from scene-wide casts, exposure, shadows, reflections and display differences.",
