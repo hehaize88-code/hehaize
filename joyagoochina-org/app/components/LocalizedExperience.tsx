@@ -221,6 +221,7 @@ function OfficialSourceLinks({
 }
 
 const hidesEditorialSourceLinks = new Set([
+  "joyagoo-shipping-line-comparison-framework",
   "joyagoo-parcel-reinforcement-cost-damage-risk",
   "joyagoo-shoebox-removal-shipping-cost-damage-risk",
   "joyagoo-exchange-rate-currency-conversion",

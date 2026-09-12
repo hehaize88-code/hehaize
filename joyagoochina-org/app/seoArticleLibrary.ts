@@ -35,10 +35,15 @@ import {
   reinforcementDecisionArticles,
   reinforcementDecisionSourceBodies,
 } from "./reinforcementDecisionArticle";
+import {
+  shippingLineComparisonArticles,
+  shippingLineComparisonSourceBodies,
+} from "./shippingLineComparisonArticle";
 
 export type SeoArticle = SeoArticleCopy["article"];
 
 export const extraSeoArticleSlugs = [
+  "joyagoo-shipping-line-comparison-framework",
   "joyagoo-parcel-reinforcement-cost-damage-risk",
   "joyagoo-shoebox-removal-shipping-cost-damage-risk",
   "joyagoo-exchange-rate-currency-conversion",
@@ -70,6 +75,12 @@ export type SeoArticleEntry = {
 };
 
 const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shipping-line-comparison-framework": [
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-parcel-consolidation-packaging-guide",
+    "joyagoo-parcel-reinforcement-cost-damage-risk",
+    "articles",
+  ],
   "joyagoo-parcel-reinforcement-cost-damage-risk": [
     "joyagoo-shoebox-removal-shipping-cost-damage-risk",
     "joyagoo-parcel-consolidation-packaging-guide",
@@ -133,6 +144,8 @@ const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
 };
 
 const englishExtras: Record<ExtraSeoArticleSlug, SeoArticle> = {
+  "joyagoo-shipping-line-comparison-framework":
+    shippingLineComparisonArticles.en,
   "joyagoo-parcel-reinforcement-cost-damage-risk":
     reinforcementDecisionArticles.en,
   "joyagoo-shoebox-removal-shipping-cost-damage-risk": shoeboxDecisionArticles.en,
@@ -456,6 +469,7 @@ const localizedMeta: Record<
 };
 
 const articleGuideMap: Record<ExtraSeoArticleSlug, string> = {
+  "joyagoo-shipping-line-comparison-framework": "shipping-guide",
   "joyagoo-parcel-reinforcement-cost-damage-risk": "shipping-guide",
   "joyagoo-shoebox-removal-shipping-cost-damage-risk": "shipping-guide",
   "joyagoo-exchange-rate-currency-conversion": "how-to-buy",
@@ -471,6 +485,7 @@ const companionSections: Record<
   ExtraSeoArticleSlug,
   Array<{ guide: string; section: number }>
 > = {
+  "joyagoo-shipping-line-comparison-framework": [],
   "joyagoo-parcel-reinforcement-cost-damage-risk": [],
   "joyagoo-shoebox-removal-shipping-cost-damage-risk": [],
   "joyagoo-exchange-rate-currency-conversion": [],
@@ -492,6 +507,13 @@ const companionSections: Record<
 };
 
 const keywords: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shipping-line-comparison-framework": [
+    "joyagoo shipping line comparison",
+    "joyagoo shipping line eligibility",
+    "compare joyagoo shipping lines",
+    "joyagoo route restrictions",
+    "joyagoo shipping method checklist",
+  ],
   "joyagoo-parcel-reinforcement-cost-damage-risk": [
     "joyagoo parcel reinforcement",
     "joyagoo reinforcement cost",
@@ -559,6 +581,8 @@ const keywords: Record<SeoArticleSlug, string[]> = {
 };
 
 const sourceBodies: Record<SeoArticleSlug, string> = {
+  "joyagoo-shipping-line-comparison-framework":
+    shippingLineComparisonSourceBodies.en,
   "joyagoo-parcel-reinforcement-cost-damage-risk":
     reinforcementDecisionSourceBodies.en,
   "joyagoo-shoebox-removal-shipping-cost-damage-risk": shoeboxDecisionSourceBodies.en,
@@ -581,6 +605,10 @@ export const seoArticleDates: Record<
   SeoArticleSlug,
   { publishedAt: string; modifiedAt: string }
 > = {
+  "joyagoo-shipping-line-comparison-framework": {
+    publishedAt: "2026-09-12",
+    modifiedAt: "2026-09-12",
+  },
   "joyagoo-parcel-reinforcement-cost-damage-risk": {
     publishedAt: "2026-09-06",
     modifiedAt: "2026-09-06",
@@ -674,6 +702,13 @@ function buildLocalizedExtra(
   locale: Exclude<Locale, "en">,
   slug: ExtraSeoArticleSlug,
 ): SeoArticle {
+  if (slug === "joyagoo-shipping-line-comparison-framework") {
+    return completeArticle(
+      locale,
+      shippingLineComparisonArticles[locale],
+      shippingLineComparisonArticles.en,
+    );
+  }
   if (slug === "joyagoo-parcel-reinforcement-cost-damage-risk") {
     return completeArticle(
       locale,
@@ -757,6 +792,8 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
     sourceBody:
       locale === "en"
         ? sourceBodies[slug]
+        : slug === "joyagoo-shipping-line-comparison-framework"
+          ? shippingLineComparisonSourceBodies[locale]
         : slug === "joyagoo-parcel-reinforcement-cost-damage-risk"
           ? reinforcementDecisionSourceBodies[locale]
         : slug === "joyagoo-shoebox-removal-shipping-cost-damage-risk"
@@ -771,6 +808,7 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
     ...seoArticleDates[slug],
     readTime:
       slug === "how-to-buy-from-taobao-with-joyagoo" ||
+      slug === "joyagoo-shipping-line-comparison-framework" ||
       slug === "joyagoo-parcel-reinforcement-cost-damage-risk" ||
       slug === "joyagoo-shoebox-removal-shipping-cost-damage-risk" ||
       slug === "joyagoo-exchange-rate-currency-conversion" ||

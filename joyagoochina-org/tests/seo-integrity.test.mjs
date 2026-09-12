@@ -18,6 +18,7 @@ const articleRoutes = [
   "qc-guide",
   "shipping-guide",
   "returns",
+  "joyagoo-shipping-line-comparison-framework",
   "joyagoo-parcel-reinforcement-cost-damage-risk",
   "joyagoo-shoebox-removal-shipping-cost-damage-risk",
   "how-to-buy-from-taobao-with-joyagoo",
@@ -88,6 +89,25 @@ test("new parcel reinforcement guide has complete SEO signals and 1,200–1,800 
   const body = englishHtml.match(/<div class="article-body">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/)?.[1] ?? "";
   const words = visibleText(body).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
   assert.ok(words.length >= 1200 && words.length <= 1800, `English parcel reinforcement guide has ${words.length} visible words`);
+});
+
+test("new shipping line comparison has complete SEO signals and 1,200–1,800 English words", async () => {
+  const slug = "joyagoo-shipping-line-comparison-framework";
+  for (const prefix of localePrefixes) {
+    const path = `${prefix}/${slug}/`;
+    const response = await request(path);
+    assert.equal(response.status, 200, path);
+    const html = await response.text();
+    assert.match(html, /"@type":"Article"/, `${path}: Article schema`);
+    assert.match(html, /"@type":"BreadcrumbList"/, `${path}: breadcrumb schema`);
+    assert.match(html, /<meta property="og:type" content="article"/i, `${path}: Open Graph`);
+    assert.equal(count(html, /\bhreflang=/gi), 11, `${path}: hreflang`);
+  }
+
+  const englishHtml = await (await request(`/${slug}/`)).text();
+  const body = englishHtml.match(/<div class="article-body">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/)?.[1] ?? "";
+  const words = visibleText(body).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+  assert.ok(words.length >= 1200 && words.length <= 1800, `English shipping line comparison has ${words.length} visible words`);
 });
 
 test("new consolidation guide has complete SEO signals and 1,200–1,800 English words", async () => {
@@ -169,7 +189,7 @@ test("new shoebox decision guide has complete SEO signals and 1,200–1,800 Engl
   assert.ok(words.length >= 1200 && words.length <= 1800, `English shoebox guide has ${words.length} visible words`);
 });
 
-test("all 130 article pages expose images and breadcrumbs while legacy source links stay intact", async () => {
+test("all localized article pages expose images and breadcrumbs while legacy source links stay intact", async () => {
   for (const slug of articleRoutes) {
     for (const prefix of localePrefixes) {
       const path = `${prefix}/${slug}/`;
@@ -203,6 +223,8 @@ test("all 130 article pages expose images and breadcrumbs while legacy source li
         `${path}: sized cover image`,
       );
       if (!new Set([
+        "joyagoo-shipping-line-comparison-framework",
+        "joyagoo-parcel-reinforcement-cost-damage-risk",
         "joyagoo-shoebox-removal-shipping-cost-damage-risk",
         "joyagoo-domestic-shipping-seller-to-warehouse",
         "joyagoo-exchange-rate-currency-conversion",
