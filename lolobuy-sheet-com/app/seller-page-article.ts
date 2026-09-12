@@ -6,10 +6,10 @@ export const sellerPageArticle: Article = {
   shortTitle: "LoloBuy seller-page checklist",
   description: "Use a dated seller-page checklist to verify listing identity, exact variants, current price fields, seller claims and evidence gaps before saving a LoloBuy product find.",
   eyebrow: "SELLER-PAGE VERIFICATION",
-  published: "2026-08-28",
-  updated: "2026-08-28",
+  published: "2026-09-13",
+  updated: "2026-09-13",
   readingTime: "12 min read",
-  factCheckLine: "Fact-checked August 28, 2026 against LoloBuy's current public product-link search, supported marketplace cues and warehouse workflow; seller-page scoring is independent editorial analysis.",
+  factCheckLine: "Fact-checked September 13, 2026 against LoloBuy's current public product-link search, supported marketplace cues and warehouse workflow; seller-page scoring is independent editorial analysis.",
   visual: {
     eyebrow: "THE SAVE GATE",
     title: "Save the offer only when another person can reconstruct it.",
@@ -22,7 +22,7 @@ export const sellerPageArticle: Article = {
     ],
   },
   sources: [
-    { label: "LoloBuy public website — checked August 28, 2026", note: "Primary source for LoloBuy's current product-link or product-name search, visible Taobao, Weidian and 1688 marketplace cues, image-search control, link-ordering description, warehouse inspection and photographs. It does not verify an individual seller or listing." },
+    { label: "LoloBuy public website — checked September 13, 2026", note: "Primary source for LoloBuy's current product-link or product-name search, visible Taobao, Weidian and 1688 marketplace cues, image-search control, link-ordering description, warehouse inspection and photographs. It does not verify an individual seller or listing." },
     { label: "Lolobuy Sheet seller-page evidence framework", note: "The reconstruction test, evidence labels, question queue and save/archive rules are independent editorial methods for spreadsheet users." },
   ],
   intro: [
