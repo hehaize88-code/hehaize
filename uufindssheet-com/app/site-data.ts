@@ -31,6 +31,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "DEAD LINK RECOVERY GUIDE",
+    title: "UUFinds Dead Link Recovery: Preserve the Source and Find a Backup Listing",
+    summary: "Classify the failure, preserve the old item record and qualify a replacement without treating a redirect or copied image as the same listing.",
+    href: "/guides/uufinds-dead-link-recovery-backup-listing-workflow/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "IMAGE SEARCH GUIDE",
     title: "UUFinds Image Search: Find a Product From a Photo",
     summary: "Turn a screenshot into traceable candidates, compare a visual fingerprint and verify the seller, item, option and QC record.",

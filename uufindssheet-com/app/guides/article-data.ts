@@ -347,6 +347,121 @@ export const guides: Guide[] = [
     ],
   },
   {
+    slug: "uufinds-dead-link-recovery-backup-listing-workflow",
+    label: "DEAD LINK RECOVERY GUIDE",
+    title: "UUFinds Dead Link Recovery: Preserve the Source and Find a Backup Listing",
+    seoTitle: "UUFinds Dead Link Recovery & Backup Listing Guide",
+    description: "Recover a dead UUFinds or marketplace product link without confusing a redirect, copied image or similar listing with the original item.",
+    primaryKeyword: "UUFinds dead link recovery",
+    longTailKeywords: ["UUFinds product link not working", "recover expired Taobao product link", "UUFinds backup listing workflow", "replace dead product link safely"],
+    updated: "September 13, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-09-13",
+    modifiedISO: "2026-09-13",
+    englishOnly: true,
+    hideSourceNote: true,
+    intro: [
+      "UUFinds dead link recovery starts by preserving what the old address used to identify. A product link may now show a not-found page, open a generic marketplace screen, require a sign-in, time out, redirect to another item or remain visible while the intended option has disappeared. Those outcomes are not interchangeable. Before searching for a replacement, save the complete URL and extract every stable clue that can still distinguish the original seller, item and option.",
+      "The objective is not to make any page load at all. It is to decide whether the original listing can still be verified, whether a new page is merely a research lead, and what evidence must remain separate when a backup listing comes from another seller or item ID. UUFinds can help rediscover candidates through links, names and images, but a search result does not inherit the identity, QC history or trust attached to the expired source.",
+    ],
+    sections: [
+      {
+        heading: "1. Classify the failure before changing the link",
+        paragraphs: [
+          "Open the saved address without editing it and record the exact result. A true not-found response means the requested resource is unavailable at that address. A redirect means the browser was told to open another location, which may be a replacement, a sign-in page, a home page or a different product. A blank screen or timeout can be temporary and does not prove removal. A live page with no intended color or size is an option failure, not necessarily a dead product page.",
+          "Use observed states rather than a single Dead label. Record Working exact, Working but option missing, Redirected exact, Redirected generic, Sign-in or region gate, Temporarily unavailable, Not found, and Identity conflict. Retry a temporary failure once later before replacing the row. Do not repeatedly trim parameters, swap item numbers or copy an address from a thumbnail simply to obtain a successful page. A working wrong page is a more dangerous research error than an honest unresolved link.",
+        ],
+        table: { caption: "Triage the observed link state", headers: ["Observed result", "Record it as", "Next safe action"], rows: [
+          ["Exact item and option still load", "Working exact", "Refresh the checked date"],
+          ["Item loads but chosen option is gone", "Option unavailable", "Keep the item; search an option-level backup"],
+          ["Address opens a home, category or search page", "Generic redirect", "Recover identifiers before searching"],
+          ["Server or network error", "Temporary failure", "Retry once later; do not declare removal"],
+          ["Not-found or removed message", "Unavailable at saved address", "Build a recovery packet"],
+          ["Different item or seller appears", "Identity conflict", "Stop; never overwrite the original record"],
+        ] },
+      },
+      {
+        heading: "2. Freeze the original evidence packet",
+        paragraphs: [
+          "Create an immutable Old source block before looking for substitutes. Store the full address exactly as saved, source marketplace, item or product ID, seller or shop name, visible title, option tuple, last known price with currency, date last confirmed working, and the date and state of the failure. Keep the original screenshot or spreadsheet entry if it shows fields that the current page no longer exposes. Label screenshots as historical, not current availability evidence.",
+          "Separate stable identifiers from descriptive clues. An item ID and shop identity usually carry more separating power than a translated title. Exact color, size, edition, material version, quantity and customization instructions matter at option level. Images, title fragments, price and category are search clues because sellers can reuse them. Keeping these fields separate prevents a similar-looking result from silently replacing the original source in the same cell.",
+        ],
+        points: [
+          "Original URL and every recoverable item, shop or seller identifier.",
+          "Exact intended option, including version, color, size, quantity and customization.",
+          "Last-known-working date, failure-check date and observed failure state.",
+          "Historical screenshots or QC records labelled with their own source and date.",
+          "A blank Replacement URL field until a new candidate passes verification.",
+        ],
+      },
+      {
+        heading: "3. Recover the strongest search input",
+        paragraphs: [
+          "Start with the complete original marketplace address in the current UUFinds QC Finder. The public interface currently presents inputs for Taobao, 1688, Weidian, agent links and product names, plus image-led search. If the saved address is an agent wrapper, preserve it but extract the underlying marketplace URL when it is visibly available. The marketplace-and-item pair is a stronger identity input than the wrapper alone.",
+          "If the exact link produces no useful record, search one stable clue at a time. Try the item ID, then a distinctive original-language title fragment, then seller or shop plus a specific product term. Use a clean full-product image only after identifier-led attempts, and keep the image result labelled Visual candidate. Changing one input at a time makes it possible to explain why a candidate appeared. Combining a new title, cropped image and different seller in one jump destroys that trail.",
+        ],
+        table: { caption: "Recovery order by evidence strength", headers: ["Input", "What it can recover", "Main limitation"], rows: [
+          ["Original marketplace URL", "The same marketplace item", "Page or record may no longer be available"],
+          ["Item ID with marketplace", "References to the same identifier", "Does not restore a removed option"],
+          ["Shop plus original title fragment", "Possible relisting by the same shop", "Title and product may have changed"],
+          ["Exact option text or model code", "Option-level candidates", "Codes can be reused or mistyped"],
+          ["Original catalog or QC image", "Visually similar candidates", "A shared image does not prove identity"],
+        ] },
+      },
+      {
+        heading: "4. Separate a relisting from a different listing",
+        paragraphs: [
+          "A relisting is not established by matching photographs alone. Compare marketplace, shop identity, item ID, title language, option names, size chart, included pieces and distinctive construction. If the item ID changed, describe the page as a new listing even when the same shop appears to offer the same design. If the seller changed, treat it as a new seller candidate. Old QC evidence must stay attached to the old item unless a traceable record connects it to the new source.",
+          "Use three recovery outcomes. Recovered original means the same marketplace item is verifiable again. Probable relisting means the same shop and strong product details agree, but the item identity changed or one decisive field is missing. Backup candidate means another current listing may satisfy the buyer's requirements but has its own seller, option and evidence record. Conflict means a critical feature disagrees. Only the first outcome restores the old link; the others require new verification rather than inherited confidence.",
+        ],
+      },
+      {
+        heading: "5. Qualify a backup without declaring it identical",
+        paragraphs: [
+          "Define the buyer's must-haves before ranking backups: product type, construction feature, dimensions or measurement range, color family, required option, included pieces and maximum unresolved risk. Then check whether each new candidate exposes those fields. Do not use price closeness as an identity signal. A lower or higher price may reflect another seller, material claim, quantity, promotion or entirely different product.",
+          "Build one new row per candidate. Give each its own current URL, seller, item ID, option tuple, checked date and QC record. Mark must-haves Pass, Conflict or Not shown. A candidate can enter the comparison stage only when no hard conflict is visible and its unknowns can be stated clearly. This is not yet the multiple-listing comparison covered by the next research step; it is a gate that stops untraceable look-alikes from entering that comparison.",
+        ],
+      },
+      {
+        heading: "6. Keep old QC media attached to the old source",
+        paragraphs: [
+          "An expired product page does not erase useful historical QC observations, but it changes what they can support. Keep the media, record date, photographed option and source relationship together. The photos can show what a particular recorded sample looked like at that time. They cannot prove that a relisted item, a different seller's listing or a future unit uses the same materials, measurements or finish.",
+          "When a backup has its own UUFinds record, assess that record independently: confirm source identity, option, QC date, overall views, decision-critical details and missing evidence. Never merge the most flattering images from several sellers into one imaginary product file. If no listing-specific QC exists, say No matched QC record and write the exact photo or measurement request that would be needed after an independent agent purchases the chosen item.",
+        ],
+      },
+      {
+        heading: "7. Work a hypothetical recovery without overwriting history",
+        paragraphs: [
+          "Suppose a saved charcoal hoodie link now opens a generic marketplace page. The old record contains the marketplace item ID, shop name, charcoal option, size M, a distinctive two-line back graphic and a checked date. Searching the item ID finds no current page. Searching the original title plus shop finds a new item from the same shop, but its option list does not show charcoal. Image search finds a charcoal look-alike from another seller whose pocket shape differs.",
+          "The first result is a Probable relisting with an option conflict; the second is a different listing with a construction conflict. Neither should replace the old URL. Keep both as rejected or unresolved candidates and continue searching from the saved identifiers. If a third page from the original shop exposes charcoal, size M, the same construction and a new item ID, store it as a probable relisting in a new row. Verify its live options and its own QC evidence before it becomes a usable backup.",
+        ],
+      },
+      {
+        heading: "8. Close the incident with a dated decision",
+        paragraphs: [
+          "Finish with one status: Original restored, Replacement candidate ready for comparison, Recovery pending, or No acceptable backup. Save the last test date, observed destination, evidence used, conflicts, missing fields and next review date. Keep the dead address in the record for provenance; mark it inactive instead of deleting it. This lets a later researcher understand why the replacement was chosen and prevents the same failed link from being rediscovered as new.",
+          "If the buyer proceeds, pass the selected marketplace source and exact option to the independent purchasing agent they choose. Recheck that agent's current ordering interface, seller response, warehouse-photo options, return conditions and shipping terms before payment. UUFinds supports discovery and QC research; it is not represented as the seller, warehouse or an affiliated agent, and a recovered link does not create any such relationship.",
+        ],
+        points: [
+          "Preserve the failed URL and its last-known evidence instead of overwriting it.",
+          "Advance only candidates with traceable identity and no hard option conflict.",
+          "Attach every QC set to its own item, seller, option and date.",
+          "Use the independently chosen agent for all purchase and post-purchase actions.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official interface check", source: "UUFinds public QC Finder and UU page", checked: "September 13, 2026", supports: "The public finder presents marketplace-link, agent-link, product-name and image inputs, and current results can carry a possible-removal label.", boundary: "A result, label or converted route does not prove that a replacement is identical to the original listing." },
+      { type: "Independent protocol reference", source: "IETF RFC 9110 HTTP Semantics", checked: "September 13, 2026", supports: "HTTP distinguishes successful responses, redirects, client errors and server errors.", boundary: "A status category does not establish why a seller listing changed or whether another product is equivalent." },
+      { type: "Editorial method", source: "UUFinds Sheet dead-link recovery framework", checked: "September 13, 2026", supports: "The immutable source packet, recovery outcomes and candidate gate used in this guide.", boundary: "The framework preserves evidence but cannot restore removed inventory or certify a replacement." },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-taobao-1688-weidian-qc-search-guide/", label: "Search marketplace links directly", description: "Use exact marketplace inputs before broad text or image discovery." },
+      { href: "/guides/uufinds-confirm-result-original-listing/", label: "Confirm the recovered identity", description: "Verify the item, seller and option before attaching listing-specific QC evidence." },
+      { href: "/guides/how-to-read-uufinds-product-detail-page/", label: "Read the candidate detail page", description: "Separate identifiers, seller context, options, media and empty states." },
+    ],
+  },
+  {
     slug: "uufinds-measurement-photos-ruler-evidence-limits",
     label: "MEASUREMENT EVIDENCE GUIDE",
     title: "UUFinds Measurement Photos: What Ruler Evidence Can and Cannot Prove",

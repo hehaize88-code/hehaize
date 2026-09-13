@@ -19,6 +19,7 @@ const sellerGuideSlug = "uufinds-seller-information-reliability-signals";
 const costGuideSlug = "uufinds-product-price-total-parcel-cost";
 const colorGuideSlug = "uufinds-qc-color-lighting-photo-limits";
 const measurementGuideSlug = "uufinds-measurement-photos-ruler-evidence-limits";
+const deadLinkGuideSlug = "uufinds-dead-link-recovery-backup-listing-workflow";
 const priorityGuideSlugs = [
   "uufinds-image-search-guide",
   "uufinds-app-iphone-guide",
@@ -389,6 +390,33 @@ for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
   await assert.rejects(readPage(`${locale}/guides/${measurementGuideSlug}`), `English-only measurement guide must not generate a fake ${locale} page`);
 }
 
+const deadLinkGuide = await readPage(`guides/${deadLinkGuideSlug}`);
+assert.match(deadLinkGuide, /<title>UUFinds Dead Link Recovery &amp; Backup Listing Guide \| UUFinds Sheet<\/title>/);
+assert.match(deadLinkGuide, /<h1>UUFinds Dead Link Recovery: Preserve the Source and Find a Backup Listing<\/h1>/);
+assert.match(deadLinkGuide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${deadLinkGuideSlug}/"`));
+assert.doesNotMatch(deadLinkGuide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, "Dead-link guide must not claim a translated equivalent");
+assert.match(deadLinkGuide, /"datePublished":"2026-09-13"/);
+assert.match(deadLinkGuide, /"dateModified":"2026-09-13"/);
+assert.match(deadLinkGuide, /"@type":"Article"/);
+assert.match(deadLinkGuide, /"@type":"BreadcrumbList"/);
+assert.match(deadLinkGuide, /class="guide-table-wrap"/);
+assert.doesNotMatch(deadLinkGuide, /class="evidence-ledger"|class="source-note"|Primary source notes|Evidence and source ledger/, "Dead-link guide must not expose research-process modules");
+const deadLinkGuideBodyStart = deadLinkGuide.indexOf('class="guide-body"');
+const deadLinkGuideBodyEnd = deadLinkGuide.indexOf("</article>", deadLinkGuideBodyStart);
+assert.ok(deadLinkGuideBodyStart >= 0 && deadLinkGuideBodyEnd > deadLinkGuideBodyStart, "Dead-link guide body must be extractable");
+const deadLinkGuideBody = deadLinkGuide.slice(deadLinkGuideBodyStart, deadLinkGuideBodyEnd);
+assert.doesNotMatch(deadLinkGuideBody, /href="https?:\/\//i, "Dead-link guide body must not add external links");
+assert.match(deadLinkGuideBody, /independent purchasing agent|independent purchasing agent they choose/i);
+assert.match(deadLinkGuideBody, /not represented as the seller, warehouse or an affiliated agent/i);
+const deadLinkWordCountMatch = deadLinkGuide.match(/data-visible-word-count="(\d+)"/);
+assert.ok(deadLinkWordCountMatch, "Dead-link guide must expose its validated visible word count");
+const deadLinkVisibleWordCount = Number(deadLinkWordCountMatch[1]);
+assert.ok(deadLinkVisibleWordCount >= 1200 && deadLinkVisibleWordCount <= 1800, `Dead-link guide word count must be 1,200–1,800, received ${deadLinkVisibleWordCount}`);
+assert.match(deadLinkGuide, new RegExp(`"wordCount":${deadLinkVisibleWordCount}`));
+for (const locale of ["en-gb", "de", "pl", "pt-br"]) {
+  await assert.rejects(readPage(`${locale}/guides/${deadLinkGuideSlug}`), `English-only dead-link guide must not generate a fake ${locale} page`);
+}
+
 for (const slug of priorityGuideSlugs) {
   const guide = await readPage(`guides/${slug}`);
   assert.match(guide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${slug}/"`));
@@ -420,6 +448,7 @@ assert.match(articleIndex, new RegExp(`href="/guides/${sizeNotesGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${costGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${colorGuideSlug}/"`));
 assert.match(articleIndex, new RegExp(`href="/guides/${measurementGuideSlug}/"`));
+assert.match(articleIndex, new RegExp(`href="/guides/${deadLinkGuideSlug}/"`));
 for (const locale of locales) {
   const localizedArticleIndex = await readPage(`${locale}/articles`);
   for (const slug of priorityGuideSlugs) {
@@ -432,6 +461,7 @@ for (const locale of locales) {
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${costGuideSlug}/"`), `${locale} article index must route the English-only cost card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${colorGuideSlug}/"`), `${locale} article index must route the English-only color card to its canonical page`);
     assert.match(localizedArticleIndex, new RegExp(`href="/guides/${measurementGuideSlug}/"`), `${locale} article index must route the English-only measurement card to its canonical page`);
+    assert.match(localizedArticleIndex, new RegExp(`href="/guides/${deadLinkGuideSlug}/"`), `${locale} article index must route the English-only dead-link card to its canonical page`);
 }
 
 const home = await readPage("");
@@ -546,6 +576,7 @@ assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${trousersGu
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${sizeNotesGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${colorGuideSlug}/`));
 assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${measurementGuideSlug}/`));
+assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${deadLinkGuideSlug}/`));
 for (const slug of categorySlugs) assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/categories/${slug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${englishOnlyGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${linkSearchGuideSlug}/`));
@@ -553,6 +584,7 @@ assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${sizeNotesGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${colorGuideSlug}/`));
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${measurementGuideSlug}/`));
+assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${deadLinkGuideSlug}/`));
 
 const allowedOutboundHosts = new Set(["uufindssheet.com", "cnbuycha.com", "www.cnbuycha.com", "si.geilicdn.com", "www.googletagmanager.com"]);
 const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));
