@@ -21,6 +21,21 @@ export const defaultEditorialImage: EditorialImage = {
 };
 
 const editorialImages: Record<string, EditorialImage> = {
+  "joyagoo-shipping-to-usa-cost-planner": {
+    src: "/products/3376.webp",
+    width: 750,
+    height: 750,
+  },
+  "joyagoo-shipping-to-uk-cost-planner": {
+    src: "/products/3376.webp",
+    width: 750,
+    height: 750,
+  },
+  "joyagoo-small-parcel-shipping-cost-strategy": {
+    src: "/products/3377.webp",
+    width: 750,
+    height: 750,
+  },
   "how-to-buy": defaultEditorialImage,
   "qc-guide": {
     src: "/products/3367.webp",

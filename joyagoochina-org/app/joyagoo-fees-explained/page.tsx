@@ -4,9 +4,9 @@ import { editorialSocialMetadata } from "../editorialAssets";
 import { languageAlternates } from "../seoAlternates";
 
 const slug = "joyagoo-fees-explained";
-const title = "Joyagoo Shipping Cost & Fees 2026: Is It Expensive?";
+const title = "How Much Is Joyagoo Shipping? Cost & Fees in 2026";
 const description =
-  "See what Joyagoo shipping costs include, why parcel prices vary, and how product, warehouse, storage, QC and international fees add up.";
+  "See why Joyagoo shipping can be expensive and how product payment, domestic delivery, warehouse choices, billable weight and international freight add up.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

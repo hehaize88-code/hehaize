@@ -87,7 +87,7 @@ test("every localized homepage keeps the complete content structure", async () =
   const englishDetails = count(english, /<details\b/g);
   const englishProducts = count(english, /class="product-card /g);
 
-  assert.equal(englishDetails, 13);
+  assert.equal(englishDetails, 0);
   assert.equal(englishProducts, 8);
   assert.match(english, /<html\b[^>]*\blang="en"/i);
 
@@ -98,6 +98,26 @@ test("every localized homepage keeps the complete content structure", async () =
     assert.match(html, new RegExp(`<html\\b[^>]*\\blang="${locale}"`, "i"));
     for (const slug of articleRoutes) {
       assert.match(html, new RegExp(`/${locale}/${slug}/`), `${locale}:${slug}`);
+    }
+  }
+});
+
+test("priority shipping articles keep complete structure in five languages", async () => {
+  const priorityLocales = ["zh", "de", "es", "fr"];
+  const priorityRoutes = [
+    "joyagoo-shipping-to-usa-cost-planner",
+    "joyagoo-shipping-to-uk-cost-planner",
+    "joyagoo-small-parcel-shipping-cost-strategy",
+  ];
+
+  for (const route of priorityRoutes) {
+    const english = await fetchHtml(`/${route}`);
+    const sections = count(english, /id="article-section-\d+"/g);
+    const paragraphs = count(english, /<p(?:\s|>)/g);
+    for (const locale of priorityLocales) {
+      const html = await fetchHtml(`/${locale}/${route}`);
+      assert.equal(count(html, /id="article-section-\d+"/g), sections, `${locale}/${route}`);
+      assert.equal(count(html, /<p(?:\s|>)/g), paragraphs, `${locale}/${route}`);
     }
   }
 });

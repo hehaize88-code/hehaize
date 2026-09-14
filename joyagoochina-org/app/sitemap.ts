@@ -2,13 +2,13 @@ import type { MetadataRoute } from "next";
 import { products } from "./data";
 import { languages } from "./i18n";
 import {
-  seoArticleDates,
-  seoArticleSlugs,
+  getSeoArticleEntries,
+  getSeoArticleEntry,
 } from "./seoArticleLibrary";
 import { localizedRoutePath } from "./seoAlternates";
 
 const site = "https://joyagoochina.org";
-const siteTemplateModifiedAt = "2026-08-11";
+const siteTemplateModifiedAt = "2026-09-14";
 
 type SitemapPage = {
   path: string;
@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: SitemapPage[] = [
     {
       path: "/",
-      lastModified: "2026-08-27",
+      lastModified: "2026-09-14",
       changeFrequency: "weekly",
       priority: 1,
     },
@@ -99,16 +99,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       path: "/articles/",
-      lastModified: "2026-08-27",
+      lastModified: "2026-09-14",
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    ...seoArticleSlugs.map((slug) => ({
-      path: `/${slug}/`,
-      lastModified: seoArticleDates[slug].modifiedAt,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    })),
     ...products.map((item) => ({
       path: `/product/${item.slug}/`,
       lastModified: item.checkedAt,
@@ -117,7 +111,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return languages.flatMap((language) =>
+  const standardPages = languages.flatMap((language) =>
     pages.map((page) => {
       const localizedPath = localizedRoutePath(language.code, page.path);
       return {
@@ -149,4 +143,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       };
     }),
   );
+
+  const articlePages = languages.flatMap((language) =>
+    getSeoArticleEntries(language.code).map((entry) => {
+      const path = `/${entry.slug}/`;
+      return {
+        url: `${site}${localizedRoutePath(language.code, path)}`,
+        lastModified: new Date(entry.modifiedAt),
+        changeFrequency: "monthly" as const,
+        priority: 0.9,
+        alternates: {
+          languages: Object.fromEntries([
+            ...languages
+              .filter((alternateLanguage) =>
+                Boolean(getSeoArticleEntry(alternateLanguage.code, entry.slug)),
+              )
+              .map(
+                (alternateLanguage) =>
+                  [
+                    alternateLanguage.code,
+                    `${site}${localizedRoutePath(alternateLanguage.code, path)}`,
+                  ] as const,
+              ),
+            ["x-default", `${site}${localizedRoutePath("en", path)}`],
+          ]),
+        },
+      };
+    }),
+  );
+
+  return [...standardPages, ...articlePages];
 }

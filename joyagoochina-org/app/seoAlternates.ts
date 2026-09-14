@@ -19,13 +19,18 @@ export const localizedRoutePath = (locale: string, path: string) => {
       : `/${locale}${normalized}`;
 };
 
-export const languageAlternates = (path: string) => {
+export const languageAlternates = (
+  path: string,
+  supportedLocales = languages.map((language) => language.code),
+) => {
   const normalized = normalizeRoutePath(path);
   return {
     canonical: normalized,
     languages: {
       ...Object.fromEntries(
-        languages.map((language) => [
+        languages
+          .filter((language) => supportedLocales.includes(language.code))
+          .map((language) => [
           language.code,
           localizedRoutePath(language.code, normalized),
         ]),

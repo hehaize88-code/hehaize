@@ -17,9 +17,14 @@ const switcherLabels: Record<Locale, string> = {
 
 export default function LanguageSwitcher({
   currentLocale = "en",
+  supportedLocales,
 }: {
   currentLocale?: Locale;
+  supportedLocales?: Locale[];
 }) {
+  const availableLanguages = supportedLocales
+    ? languages.filter((language) => supportedLocales.includes(language.code))
+    : languages;
   const changeLanguage = (nextLocale: string) => {
     const segments = window.location.pathname.split("/").filter(Boolean);
     const firstSegment = segments[0];
@@ -42,7 +47,7 @@ export default function LanguageSwitcher({
         defaultValue={currentLocale}
         onChange={(event) => changeLanguage(event.target.value)}
       >
-        {languages.map((language) => (
+        {availableLanguages.map((language) => (
           <option value={language.code} key={language.code}>
             {language.flag} {language.label}
           </option>

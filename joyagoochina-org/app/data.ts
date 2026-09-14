@@ -1,4 +1,4 @@
-export const mainSite = "https://www.cnbuycha.com";
+export const mainSite = "https://cnfanssp.com";
 
 export type ProductCollection =
   | "Footwear"
@@ -66,7 +66,7 @@ export const absoluteProductImageUrl = (image: string) =>
     ? image
     : `https://joyagoochina.org${image}`;
 
-// Joyagoo's local catalogue IDs are not the same as Cnbuycha's current route
+// Joyagoo's local catalogue IDs are not the same as the main catalogue's route
 // IDs. Keep the verified destination paths explicit so a reused route number
 // cannot silently send visitors to an unrelated product.
 const productDestinationPaths: Record<string, string> = {
@@ -111,7 +111,7 @@ const productDestinationPaths: Record<string, string> = {
 const productHref = (id: string) => {
   const destinationPath = productDestinationPaths[id];
   if (!destinationPath) {
-    throw new Error(`Missing verified Cnbuycha destination for product ${id}`);
+    throw new Error(`Missing verified main-site destination for product ${id}`);
   }
   return `${mainSite}${destinationPath}`;
 };
@@ -144,8 +144,8 @@ const product = (
   };
 };
 
-// Destination URLs were rechecked against the live Cnbuycha catalogue on
-// 1 September 2026. USD figures are references and are not checkout quotes.
+// Destination paths were verified against the designated main catalogue.
+// USD figures are references and are not checkout quotes.
 export const products: Product[] = [
   product("3382", "louis-vuitton-wallet-3382", "Zippered Bi-Fold Card Holder", "Card holder", "Bags & Accessories", 115, 548),
   product("3381", "ugg-gloves-3381", "Windproof Gloves", "Gloves", "Bags & Accessories", 99, 871, "jpg"),

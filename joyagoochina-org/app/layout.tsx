@@ -18,42 +18,42 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://joyagoochina.org"),
   title: {
-    default: "Joyagoo Spreadsheet 2026: 36 Checked Product Links",
+    default: "Joyagoo Shipping Cost Guide 2026: Fees, Weight & Parcels",
     template: "%s | Joyagoo China",
   },
   description:
-    "Browse 36 checked Joyagoo product links with current prices, matching listings, QC tips and shipping guidance. Updated September 2026.",
+    "Plan Joyagoo shipping costs with researched guidance on fees, billable weight, parcel packing and country-specific budgets. Updated September 2026.",
   keywords: [
-    "Joyagoo spreadsheet",
-    "Joyagoo spreadsheet 2026",
-    "Joyagoo QC",
-    "Joyagoo shipping",
-    "Joyagoo products",
+    "Joyagoo shipping cost",
+    "Joyagoo shipping calculator",
+    "how much is Joyagoo shipping",
+    "Joyagoo fees",
+    "Joyagoo parcel weight",
   ],
   alternates: languageAlternates("/"),
   openGraph: {
     type: "website",
-    title: "Joyagoo Spreadsheet 2026: 36 Checked Product Links",
+    title: "Joyagoo Shipping Cost Guide 2026: Fees, Weight & Parcels",
     description:
-      "Browse 36 checked Joyagoo product links with current prices, matching listings, QC tips and shipping guidance.",
+      "Research Joyagoo shipping fees, billable weight, packing choices and realistic parcel budgets before you submit.",
     url: "https://joyagoochina.org/",
     siteName: "Joyagoo China",
     images: [
       socialImage(
         undefined,
-        "Joyagoo spreadsheet product discovery and buying research",
+        "Joyagoo shipping cost and parcel planning research",
       ),
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Joyagoo Spreadsheet 2026: 36 Checked Product Links",
+    title: "Joyagoo Shipping Cost Guide 2026: Fees, Weight & Parcels",
     description:
-      "Browse 36 checked Joyagoo product links with current prices, matching listings, QC tips and shipping guidance.",
+      "Research Joyagoo shipping fees, billable weight, packing choices and realistic parcel budgets before you submit.",
     images: [
       socialImage(
         undefined,
-        "Joyagoo spreadsheet product discovery and buying research",
+        "Joyagoo shipping cost and parcel planning research",
       ).url,
     ],
   },
@@ -70,6 +70,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-QY8MM7VZV2');",
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

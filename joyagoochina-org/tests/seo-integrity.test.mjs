@@ -189,6 +189,33 @@ test("new shoebox decision guide has complete SEO signals and 1,200–1,800 Engl
   assert.ok(words.length >= 1200 && words.length <= 1800, `English shoebox guide has ${words.length} visible words`);
 });
 
+test("three priority shipping guides are complete, long-form and localized", async () => {
+  const slugs = [
+    "joyagoo-shipping-to-usa-cost-planner",
+    "joyagoo-shipping-to-uk-cost-planner",
+    "joyagoo-small-parcel-shipping-cost-strategy",
+  ];
+  const supportedPrefixes = ["", "/zh", "/de", "/es", "/fr"];
+
+  for (const slug of slugs) {
+    for (const prefix of supportedPrefixes) {
+      const path = `${prefix}/${slug}/`;
+      const response = await request(path);
+      assert.equal(response.status, 200, path);
+      const html = await response.text();
+      assert.match(html, /"@type":"Article"/, `${path}: Article schema`);
+      assert.match(html, /"@type":"BreadcrumbList"/, `${path}: breadcrumbs`);
+      assert.equal(count(html, /\bhreflang=/gi), 6, `${path}: five languages plus x-default`);
+      assert.doesNotMatch(html, /href="https:\/\/(?:mgt|mapi)\.joyagoo\.com/i, `${path}: no platform outbound link`);
+    }
+
+    const englishHtml = await (await request(`/${slug}/`)).text();
+    const body = englishHtml.match(/<div class="article-body">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/)?.[1] ?? "";
+    const words = visibleText(body).match(/[A-Za-z]+(?:[’'-][A-Za-z]+)*/g) ?? [];
+    assert.ok(words.length >= 1200 && words.length <= 1800, `${slug} has ${words.length} English words`);
+  }
+});
+
 test("all localized article pages expose images and breadcrumbs while legacy source links stay intact", async () => {
   for (const slug of articleRoutes) {
     for (const prefix of localePrefixes) {
@@ -243,20 +270,22 @@ test("homepage keeps its English title and H1 while fixing catalogue mappings", 
   const html = await (await request("/" )).text();
   assert.match(
     html,
-    /<title>Joyagoo Spreadsheet 2026: 36 Checked Product Links<\/title>/,
+    /<title>Joyagoo Shipping Cost Guide 2026: Fees, Weight &amp; Parcels<\/title>/,
   );
   assert.match(
     html,
-    /<h1>Joyagoo Spreadsheet 2026: Find Better Products with Real Buying Guidance<\/h1>/,
+    /<h1>Joyagoo Shipping Cost Guide 2026: Plan Fees, Weight and Parcels<\/h1>/,
   );
-  assert.match(html, /Updated August 27, 2026/);
+  assert.match(html, /Updated September 14, 2026/);
+  assert.match(html, /G-QY8MM7VZV2/);
+  assert.doesNotMatch(html, /"@type":"FAQPage"/);
   assert.match(html, /"@type":"Organization"/);
   assert.match(html, /"logo":\{"@type":"ImageObject"/);
 
   const expectedCards = [
     ["numeris-rick-owens-high-tops-3367", "pcitem1809160355", "MM 07 Flat Casual Non-Slip Shoes"],
     ["off-white-hoodies-3369", "open1623462477", "Autumn/Winter Fashion Sweater"],
-    ["designer-hats-3373", "open1823774813", "Men's Twill Silk Tie"],
+    ["designer-hats-3373", "open1823774813", "Men(?:'|&#x27;)s Twill Silk Tie"],
     ["samsung-galaxy-watch8-3357", "wdseller1778358520", "Galaxy Watch Ultra 8 Smartwatch"],
   ];
   for (const [slug, image, label] of expectedCards) {
@@ -276,8 +305,8 @@ test("high-intent research pages use concise search snippets and localized relat
   const pages = [
     {
       slug: "joyagoo-fees-explained",
-      title: "Joyagoo Shipping Cost &amp; Fees 2026: Is It Expensive?",
-      description: "See what Joyagoo shipping costs include, why parcel prices vary, and how product, warehouse, storage, QC and international fees add up.",
+      title: "How Much Is Joyagoo Shipping[?] Cost &amp; Fees in 2026",
+      description: "See why Joyagoo shipping can be expensive and how product payment, domestic delivery, warehouse choices, billable weight and international freight add up.",
       related: "joyagoo-exchange-rate-currency-conversion",
     },
     {
@@ -294,8 +323,8 @@ test("high-intent research pages use concise search snippets and localized relat
     },
     {
       slug: "joyagoo-volumetric-weight-shipping-cost",
-      title: "Joyagoo Shipping Cost 2026: Weight &amp; Rehearsal Packing",
-      description: "Calculate Joyagoo actual and volumetric weight, compare route divisors, and decide when rehearsal packing can prevent surprise shipping costs.",
+      title: "Joyagoo Shipping Calculator 2026: Weight &amp; Parcel Cost",
+      description: "Estimate Joyagoo shipping cost from actual and volumetric weight, compare live route divisors, and see when rehearsal packing can reduce quote uncertainty.",
       related: "joyagoo-parcel-consolidation-packaging-guide",
     },
   ];
@@ -379,8 +408,8 @@ test("footer trust pages and added store categories are directly linked", async 
   }
 
   const categoriesHtml = await (await request("/categories/")).text();
-  assert.match(categoriesHtml, /href="https:\/\/www\.cnbuycha\.com\/Jersey\/"/);
-  assert.match(categoriesHtml, /href="https:\/\/www\.cnbuycha\.com\/other-stuff\/"/);
+  assert.match(categoriesHtml, /href="https:\/\/cnfanssp\.com\/Jersey\/"/);
+  assert.match(categoriesHtml, /href="https:\/\/cnfanssp\.com\/other-stuff\/"/);
   assert.match(categoriesHtml, /data-outbound-kind="category"/);
 });
 
@@ -403,7 +432,7 @@ test("outbound event endpoint accepts only same-origin store events", async () =
         origin: "https://localhost",
       },
       body: JSON.stringify({
-        destination: "https://www.cnbuycha.com/AllProducts/3359.html",
+        destination: "https://cnfanssp.com/shoes/3328.html",
         source_page: "/spreadsheet/",
         language: "en",
         link_kind: "product",
@@ -425,7 +454,7 @@ test("outbound event endpoint accepts only same-origin store events", async () =
         origin: "https://example.com",
       },
       body: JSON.stringify({
-        destination: "https://www.cnbuycha.com/AllProducts/3359.html",
+        destination: "https://cnfanssp.com/shoes/3328.html",
       }),
     }),
     env,
@@ -481,7 +510,7 @@ test("production HTML receives edge caching headers and is stored by pathname", 
     assert.equal(stored.length, 1);
     assert.equal(
       stored[0].key,
-      "https://joyagoochina.org/qc-guide/?__html_cache_version=ctr-improvements-c02-20260901",
+      "https://joyagoochina.org/qc-guide/?__html_cache_version=manual-seo-20260914",
     );
   } finally {
     if (originalCaches) {

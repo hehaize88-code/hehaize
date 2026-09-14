@@ -20,8 +20,12 @@ import {
 import { languageAlternates, localizedRoutePath } from "../../seoAlternates";
 import { seoArticleCopy } from "../../seoArticles";
 import {
+  priorityArticleLocales,
+  prioritySeoArticleSlugs,
+} from "../../priorityShippingArticles";
+import {
   getSeoArticleEntry,
-  seoArticleSlugs,
+  getSeoArticleEntries,
 } from "../../seoArticleLibrary";
 
 const routeSlugs = [
@@ -38,7 +42,6 @@ const routeSlugs = [
   "privacy",
   "terms",
   "articles",
-  ...seoArticleSlugs,
 ];
 
 const localizedHomeMetadataTitles: Partial<Record<Locale, string>> = {
@@ -65,6 +68,10 @@ export function generateStaticParams() {
       ...products.map((product) => ({
         locale: language.code,
         slug: ["product", product.slug],
+      })),
+      ...getSeoArticleEntries(language.code as Locale).map((entry) => ({
+        locale: language.code,
+        slug: [entry.slug],
       })),
     ]);
 }
@@ -150,7 +157,12 @@ export async function generateMetadata({
     description: page.intro,
     keywords: seoArticle?.keywords,
     alternates: {
-      ...languageAlternates(basePath),
+      ...languageAlternates(
+        basePath,
+        prioritySeoArticleSlugs.includes(route as never)
+          ? priorityArticleLocales
+          : undefined,
+      ),
       canonical: localizedRoutePath(locale, basePath),
     },
     ...editorialSocialMetadata({
@@ -174,7 +186,9 @@ export default async function LocalizedRoute({
     !isLocale(locale) ||
     locale === "en" ||
     slug.length > 2 ||
-    (slug.length === 1 && !routeSlugs.includes(slug[0])) ||
+    (slug.length === 1 &&
+      !routeSlugs.includes(slug[0]) &&
+      !getSeoArticleEntry(locale, slug[0])) ||
     (slug.length === 2 &&
       (slug[0] !== "product" || !getProductBySlug(slug[1])))
   ) {

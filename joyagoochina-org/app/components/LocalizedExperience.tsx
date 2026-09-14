@@ -221,6 +221,9 @@ function OfficialSourceLinks({
 }
 
 const hidesEditorialSourceLinks = new Set([
+  "joyagoo-shipping-to-usa-cost-planner",
+  "joyagoo-shipping-to-uk-cost-planner",
+  "joyagoo-small-parcel-shipping-cost-strategy",
   "joyagoo-shipping-line-comparison-framework",
   "joyagoo-parcel-reinforcement-cost-damage-risk",
   "joyagoo-shoebox-removal-shipping-cost-damage-risk",
@@ -231,7 +234,6 @@ const hidesEditorialSourceLinks = new Set([
 export function LocalizedHome({ locale }: { locale: Locale }) {
   const copy = translations[locale];
   const categoryNames = localizedCategoryNames[locale];
-  const faq = completeFaq(locale);
   const latestArticle = getSeoArticleEntries(locale)[0];
   const homeKicker = `${copy.home.kicker.split("·")[0].trim()} · ${articleUpdatedLabel(locale, latestArticle.modifiedAt)}`;
   const websiteSchema = {
@@ -243,7 +245,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
     inLanguage: locale,
     potentialAction: {
       "@type": "SearchAction",
-      target: `${mainSite}/AllProducts/?q={search_term_string}`,
+      target: `${mainSite}/search.html?keywords={search_term_string}&channelid=2`,
       "query-input": "required name=search_term_string",
     },
   };
@@ -255,16 +257,6 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
     url: "https://joyagoochina.org/",
     logo: organizationLogoSchema,
   };
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faq.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
-  };
-
   return (
     <main>
       <script
@@ -273,7 +265,6 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
           __html: JSON.stringify([
             websiteSchema,
             organizationSchema,
-            faqSchema,
           ]),
         }}
       />
@@ -285,7 +276,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
           <p className="hero-intro">{copy.home.intro}</p>
           <form
             className="search-form"
-            action={`${mainSite}/AllProducts/`}
+            action={`${mainSite}/search.html`}
             method="get"
             target="_blank"
             data-outbound-kind="search"
@@ -296,9 +287,10 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
             <span aria-hidden="true">⌕</span>
             <input
               id={`product-search-${locale}`}
-              name="q"
+              name="keywords"
               placeholder={copy.home.searchPlaceholder}
             />
+            <input type="hidden" name="channelid" value="2" />
             <button type="submit">{copy.home.search}</button>
           </form>
           <div className="trust-row">
@@ -420,14 +412,6 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
 
       <SeoArticleFeature locale={locale} />
 
-      <section className="section faq-section">
-        <div className="faq-intro">
-          <p className="eyebrow">{copy.home.quickAnswers}</p>
-          <h2>{copy.home.faqTitle}</h2>
-          <p>{copy.home.faqIntro}</p>
-        </div>
-        <FaqList locale={locale} />
-      </section>
       <SiteFooter locale={locale} />
     </main>
   );
@@ -874,7 +858,7 @@ function LocalizedSeoArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} articleSlug={slug} />
       <article>
         <header className="article-hero seo-article-hero">
           <nav className="breadcrumb" aria-label={seo.contentsLabel}>

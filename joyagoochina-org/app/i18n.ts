@@ -96,10 +96,10 @@ const en: Copy = {
     explore: "Explore products",
   },
   home: {
-    kicker: "Independent product discovery · Updated August 2026",
-    title: "Joyagoo Spreadsheet 2026: Find Better Products with Real Buying Guidance",
+    kicker: "Independent shipping research · Updated September 2026",
+    title: "Joyagoo Shipping Cost Guide 2026: Plan Fees, Weight and Parcels",
     intro:
-      "Browse curated products, compare categories, and learn how to use QC photos, shipping choices and return rules before you submit a parcel.",
+      "Understand what Joyagoo shipping can cost, how billable weight is calculated, and which packing decisions change a parcel budget before you submit.",
     searchPlaceholder: "Search shoes, clothing, accessories...",
     search: "Search",
     policyResearch: "Policy research",

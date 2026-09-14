@@ -1,13 +1,22 @@
 import { localizePath, translations, type Locale } from "../i18n";
 import { seoArticleCopy } from "../seoArticles";
+import {
+  priorityArticleLocales,
+  prioritySeoArticleSlugs,
+} from "../priorityShippingArticles";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function SiteHeader({
   locale = "en",
+  articleSlug,
 }: {
   locale?: Locale;
+  articleSlug?: string;
 }) {
   const copy = translations[locale];
+  const supportedLocales = prioritySeoArticleSlugs.includes(articleSlug as never)
+    ? priorityArticleLocales
+    : undefined;
 
   return (
     <header className="site-header">
@@ -47,7 +56,10 @@ export default function SiteHeader({
           <a href={localizePath(locale, "/faq/")}>{copy.nav.faq}</a>
         </nav>
         <div className="header-actions">
-          <LanguageSwitcher currentLocale={locale} />
+          <LanguageSwitcher
+            currentLocale={locale}
+            supportedLocales={supportedLocales}
+          />
           <a
             className="button button-small"
             href={localizePath(locale, "/spreadsheet/")}

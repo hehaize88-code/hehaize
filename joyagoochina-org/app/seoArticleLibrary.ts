@@ -39,6 +39,13 @@ import {
   shippingLineComparisonArticles,
   shippingLineComparisonSourceBodies,
 } from "./shippingLineComparisonArticle";
+import {
+  isPriorityArticleLocale,
+  prioritySeoArticleSlugs,
+  priorityShippingArticles,
+  priorityShippingSourceBodies,
+  type PrioritySeoArticleSlug,
+} from "./priorityShippingArticles";
 
 export type SeoArticle = SeoArticleCopy["article"];
 
@@ -56,6 +63,7 @@ export const extraSeoArticleSlugs = [
 ] as const;
 
 export const seoArticleSlugs = [
+  ...prioritySeoArticleSlugs,
   "joyagoo-fees-explained",
   ...extraSeoArticleSlugs,
 ] as const;
@@ -75,6 +83,24 @@ export type SeoArticleEntry = {
 };
 
 const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shipping-to-usa-cost-planner": [
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-shipping-line-comparison-framework",
+    "joyagoo-small-parcel-shipping-cost-strategy",
+    "articles",
+  ],
+  "joyagoo-shipping-to-uk-cost-planner": [
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-shipping-line-comparison-framework",
+    "joyagoo-small-parcel-shipping-cost-strategy",
+    "articles",
+  ],
+  "joyagoo-small-parcel-shipping-cost-strategy": [
+    "joyagoo-parcel-consolidation-packaging-guide",
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-shipping-line-comparison-framework",
+    "articles",
+  ],
   "joyagoo-shipping-line-comparison-framework": [
     "joyagoo-volumetric-weight-shipping-cost",
     "joyagoo-parcel-consolidation-packaging-guide",
@@ -507,6 +533,24 @@ const companionSections: Record<
 };
 
 const keywords: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shipping-to-usa-cost-planner": [
+    "joyagoo shipping to USA",
+    "joyagoo USA shipping cost",
+    "how much is joyagoo shipping to America",
+    "joyagoo US parcel cost",
+  ],
+  "joyagoo-shipping-to-uk-cost-planner": [
+    "joyagoo shipping to UK",
+    "joyagoo UK shipping cost",
+    "how much is joyagoo shipping to Britain",
+    "joyagoo UK parcel cost",
+  ],
+  "joyagoo-small-parcel-shipping-cost-strategy": [
+    "joyagoo small parcel shipping cost",
+    "joyagoo first weight charge",
+    "joyagoo parcel consolidation cost",
+    "when to ship joyagoo parcel",
+  ],
   "joyagoo-shipping-line-comparison-framework": [
     "joyagoo shipping line comparison",
     "joyagoo shipping line eligibility",
@@ -581,6 +625,9 @@ const keywords: Record<SeoArticleSlug, string[]> = {
 };
 
 const sourceBodies: Record<SeoArticleSlug, string> = {
+  "joyagoo-shipping-to-usa-cost-planner": priorityShippingSourceBodies.en,
+  "joyagoo-shipping-to-uk-cost-planner": priorityShippingSourceBodies.en,
+  "joyagoo-small-parcel-shipping-cost-strategy": priorityShippingSourceBodies.en,
   "joyagoo-shipping-line-comparison-framework":
     shippingLineComparisonSourceBodies.en,
   "joyagoo-parcel-reinforcement-cost-damage-risk":
@@ -605,6 +652,18 @@ export const seoArticleDates: Record<
   SeoArticleSlug,
   { publishedAt: string; modifiedAt: string }
 > = {
+  "joyagoo-shipping-to-usa-cost-planner": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
+  "joyagoo-shipping-to-uk-cost-planner": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
+  "joyagoo-small-parcel-shipping-cost-strategy": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
   "joyagoo-shipping-line-comparison-framework": {
     publishedAt: "2026-09-12",
     modifiedAt: "2026-09-12",
@@ -819,7 +878,19 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
     relatedLinks: relatedArticleLinks[slug],
   }));
 
-  return [...extraEntries, feeEntry].sort((left, right) =>
+  const priorityEntries: SeoArticleEntry[] = isPriorityArticleLocale(locale)
+    ? prioritySeoArticleSlugs.map((slug: PrioritySeoArticleSlug) => ({
+        slug,
+        article: priorityShippingArticles[locale][slug],
+        keywords: keywords[slug],
+        sourceBody: priorityShippingSourceBodies[locale],
+        ...seoArticleDates[slug],
+        readTime: "9 minute read",
+        relatedLinks: relatedArticleLinks[slug],
+      }))
+    : [];
+
+  return [...priorityEntries, ...extraEntries, feeEntry].sort((left, right) =>
     right.modifiedAt.localeCompare(left.modifiedAt),
   );
 }
