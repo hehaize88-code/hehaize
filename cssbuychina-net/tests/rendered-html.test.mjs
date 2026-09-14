@@ -222,8 +222,8 @@ test("renders all 30 product detail pages with current main-store shopping links
 
   for (const id of ids) {
     const html = await fetchHtml(`/product/${id}`);
-    assert.ok(html.includes('class="detail-cta" href="https://cnfanssp.com/'));
-    assert.ok(html.includes('data-track-event="category_outbound_click"'));
+    assert.ok(html.includes('class="detail-cta" href="https://www.cnbuycha.com/'));
+    assert.ok(html.includes('data-track-event="product_outbound_click"'));
     assert.ok(html.includes("Recorded product value: ¥"));
     assert.ok(html.includes("PRODUCT ROUTE CHECKED"));
     assert.ok(html.includes('"@type":"BreadcrumbList"'));
@@ -231,20 +231,20 @@ test("renders all 30 product detail pages with current main-store shopping links
   }
 });
 
-test("links product cards internally and sends catalog actions only to the current main store", async () => {
+test("links product card images, titles, and buttons to matching main-store products", async () => {
   for (const path of ["/", "/products", "/de/products"]) {
     const html = await fetchHtml(path);
     assert.ok(
-      html.includes('class="product-image" href="/product/3402"'),
-      `${path} should link the product image to its research page`,
+      html.includes('class="product-image" href="https://www.cnbuycha.com/shoes/1011.html" rel="nofollow" data-track-event="product_outbound_click"'),
+      `${path} should link the product image directly to the main-store product`,
     );
     assert.ok(
-      /<h3><a href="\/product\/3402">Nike P6000&amp;Air Max 96<\/a><\/h3>/.test(html),
-      `${path} should link the product title to its research page`,
+      /<h3><a href="https:\/\/www\.cnbuycha\.com\/shoes\/1011\.html"[^>]*data-track-event="product_outbound_click"[^>]*>Nike P6000&amp;Air Max 96<\/a><\/h3>/.test(html),
+      `${path} should link the product title directly to the main-store product`,
     );
     assert.ok(
-      html.includes('class="product-button" href="https://cnfanssp.com/shoes/" rel="nofollow" data-track-event="category_outbound_click"'),
-      `${path} should send the catalog action to the verified main-store category`,
+      html.includes('class="product-button" href="https://www.cnbuycha.com/shoes/1011.html" rel="nofollow" data-track-event="product_outbound_click"'),
+      `${path} should keep the product button on the same destination`,
     );
   }
 });
@@ -257,7 +257,7 @@ test("publishes CTR-focused catalog metadata and analytics hooks", async () => {
   assert.ok(productsHtml.includes("<title>CSSBuy Links &amp; Spreadsheet 2026: Product Finds by Category | CSSBuy China</title>"));
   assert.ok(tagWith(productsHtml, "meta", "name", "description").includes("Search a CSSBuy spreadsheet by product or category"));
   assert.ok(productsHtml.includes("PRODUCT ROUTES REVIEWED SEPTEMBER 1, 2026"));
-  assert.ok(productsHtml.includes('data-track-event="category_outbound_click"'));
+  assert.ok(productsHtml.includes('data-track-event="product_outbound_click"'));
   assert.ok(categoriesHtml.includes('data-track-event="category_outbound_click"'));
   assert.ok(articlesHtml.includes("<title>CSSBuy Guides 2026: Warehouse, QC, Shipping &amp; Tracking</title>"));
   assert.ok(articlesHtml.includes("CSSBuy Warehouse Status Explained: Arrived and Undergoing Quality Inspection"));

@@ -6,7 +6,7 @@ import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { localizedCategories, localeCopy, localePrefix, SiteLocale } from "./i18n";
 import { categories, products } from "./site-data";
 
-const STORE_SEARCH = "https://cnfanssp.com/search.html?keywords=";
+const STORE_SEARCH = "https://www.cnbuycha.com/AllProducts/?q=";
 
 const languageTags: Record<SiteLocale, string> = { en: "en", "pt-br": "pt-BR", de: "de-DE", es: "es" };
 
@@ -227,7 +227,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
         <div className="product-grid">
           {visibleProducts.map((product) => (
             <article className="product-card" key={product.id}>
-              <a className="product-image" href={`/product/${product.id}`}>
+              <a className="product-image" href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-image">
                 <img src={product.image} alt={product.name} loading="lazy" />
                 <span className="product-check">{copy.finds.checked}</span>
               </a>
@@ -236,13 +236,13 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
                   <span>{categoryCopy[product.category].name}</span>
                   <span>{product.checked}</span>
                 </div>
-                <h3><a href={`/product/${product.id}`}>{product.name}</a></h3>
+                <h3><a href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-title">{product.name}</a></h3>
                 <div className="product-footer">
                   <div className="price">
                     <strong>≈ ${product.usd}</strong>
                     <small>{copy.finds.source} ¥{product.cny}</small>
                   </div>
-                  <a className="product-button" href={product.storeUrl} rel="nofollow" data-track-event="category_outbound_click" data-item-category={product.category} data-click-area="homepage-card-button">Browse category <ArrowIcon /></a>
+                  <a className="product-button" href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-button">{copy.finds.open} <ArrowIcon /></a>
                 </div>
               </div>
             </article>
