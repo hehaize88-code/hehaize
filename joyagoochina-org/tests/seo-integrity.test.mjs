@@ -190,8 +190,13 @@ test("new shoebox decision guide has complete SEO signals and 1,200–1,800 Engl
   assert.ok(words.length >= 1200 && words.length <= 1800, `English shoebox guide has ${words.length} visible words`);
 });
 
-test("three priority shipping guides are complete, long-form and localized", async () => {
+test("eight priority shipping guides are complete, long-form and localized", async () => {
   const slugs = [
+    "joyagoo-shipping-calculator-cost-estimate-guide",
+    "why-is-joyagoo-shipping-so-expensive",
+    "joyagoo-shipping-cost-per-kg-explained",
+    "joyagoo-shipping-coupon-promo-discount-guide",
+    "joyagoo-shipping-to-canada-cost-planner",
     "joyagoo-shipping-to-usa-cost-planner",
     "joyagoo-shipping-to-uk-cost-planner",
     "joyagoo-small-parcel-shipping-cost-strategy",
@@ -324,7 +329,7 @@ test("high-intent research pages use concise search snippets and localized relat
     },
     {
       slug: "joyagoo-volumetric-weight-shipping-cost",
-      title: "Joyagoo Shipping Calculator 2026: Weight &amp; Parcel Cost",
+      title: "Joyagoo Volumetric Weight Guide 2026: Parcel Cost",
       description: "Estimate Joyagoo shipping cost from actual and volumetric weight, compare live route divisors, and see when rehearsal packing can reduce quote uncertainty.",
       related: "joyagoo-parcel-consolidation-packaging-guide",
     },
@@ -419,7 +424,7 @@ test("static Pages worker uses the current cache namespace and store allowlist",
     new URL("../cloudflare/static-worker.js", import.meta.url),
     "utf8",
   );
-  assert.match(source, /manual-seo-home-20260914/);
+  assert.match(source, /manual-seo-8articles-20260914/);
   assert.match(source, /cnfanssp\.com/);
   assert.doesNotMatch(source, /cnbuycha\.com/);
 });

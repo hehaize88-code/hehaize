@@ -46,6 +46,12 @@ import {
   priorityShippingSourceBodies,
   type PrioritySeoArticleSlug,
 } from "./priorityShippingArticles";
+import {
+  additionalPrioritySeoArticleSlugs,
+  additionalPriorityShippingArticles,
+  additionalPriorityShippingSourceBodies,
+  type AdditionalPrioritySeoArticleSlug,
+} from "./additionalPriorityShippingArticles";
 
 export type SeoArticle = SeoArticleCopy["article"];
 
@@ -64,6 +70,7 @@ export const extraSeoArticleSlugs = [
 
 export const seoArticleSlugs = [
   ...prioritySeoArticleSlugs,
+  ...additionalPrioritySeoArticleSlugs,
   "joyagoo-fees-explained",
   ...extraSeoArticleSlugs,
 ] as const;
@@ -83,6 +90,36 @@ export type SeoArticleEntry = {
 };
 
 const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shipping-calculator-cost-estimate-guide": [
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-shipping-cost-per-kg-explained",
+    "joyagoo-shipping-line-comparison-framework",
+    "articles",
+  ],
+  "why-is-joyagoo-shipping-so-expensive": [
+    "joyagoo-fees-explained",
+    "joyagoo-shipping-cost-per-kg-explained",
+    "joyagoo-small-parcel-shipping-cost-strategy",
+    "articles",
+  ],
+  "joyagoo-shipping-cost-per-kg-explained": [
+    "joyagoo-shipping-calculator-cost-estimate-guide",
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-small-parcel-shipping-cost-strategy",
+    "articles",
+  ],
+  "joyagoo-shipping-coupon-promo-discount-guide": [
+    "joyagoo-fees-explained",
+    "joyagoo-shipping-line-comparison-framework",
+    "joyagoo-shipping-calculator-cost-estimate-guide",
+    "articles",
+  ],
+  "joyagoo-shipping-to-canada-cost-planner": [
+    "joyagoo-shipping-calculator-cost-estimate-guide",
+    "joyagoo-volumetric-weight-shipping-cost",
+    "joyagoo-shipping-line-comparison-framework",
+    "articles",
+  ],
   "joyagoo-shipping-to-usa-cost-planner": [
     "joyagoo-volumetric-weight-shipping-cost",
     "joyagoo-shipping-line-comparison-framework",
@@ -533,6 +570,36 @@ const companionSections: Record<
 };
 
 const keywords: Record<SeoArticleSlug, string[]> = {
+  "joyagoo-shipping-calculator-cost-estimate-guide": [
+    "joyagoo shipping calculator",
+    "joyagoo shipping cost calculator",
+    "joyagoo shipping estimate",
+    "calculate joyagoo shipping",
+  ],
+  "why-is-joyagoo-shipping-so-expensive": [
+    "why is joyagoo shipping so expensive",
+    "joyagoo expensive shipping",
+    "reduce joyagoo shipping cost",
+    "joyagoo high shipping cost",
+  ],
+  "joyagoo-shipping-cost-per-kg-explained": [
+    "joyagoo shipping cost per kg",
+    "joyagoo shipping price per kg",
+    "joyagoo kg rate",
+    "joyagoo billable weight",
+  ],
+  "joyagoo-shipping-coupon-promo-discount-guide": [
+    "joyagoo shipping coupon",
+    "joyagoo promo code",
+    "joyagoo discount code",
+    "joyagoo shipping discount",
+  ],
+  "joyagoo-shipping-to-canada-cost-planner": [
+    "joyagoo shipping to Canada",
+    "joyagoo Canada shipping cost",
+    "how much is joyagoo shipping to Canada",
+    "joyagoo Canada parcel cost",
+  ],
   "joyagoo-shipping-to-usa-cost-planner": [
     "joyagoo shipping to USA",
     "joyagoo USA shipping cost",
@@ -625,6 +692,11 @@ const keywords: Record<SeoArticleSlug, string[]> = {
 };
 
 const sourceBodies: Record<SeoArticleSlug, string> = {
+  "joyagoo-shipping-calculator-cost-estimate-guide": additionalPriorityShippingSourceBodies.en,
+  "why-is-joyagoo-shipping-so-expensive": additionalPriorityShippingSourceBodies.en,
+  "joyagoo-shipping-cost-per-kg-explained": additionalPriorityShippingSourceBodies.en,
+  "joyagoo-shipping-coupon-promo-discount-guide": additionalPriorityShippingSourceBodies.en,
+  "joyagoo-shipping-to-canada-cost-planner": additionalPriorityShippingSourceBodies.en,
   "joyagoo-shipping-to-usa-cost-planner": priorityShippingSourceBodies.en,
   "joyagoo-shipping-to-uk-cost-planner": priorityShippingSourceBodies.en,
   "joyagoo-small-parcel-shipping-cost-strategy": priorityShippingSourceBodies.en,
@@ -652,6 +724,26 @@ export const seoArticleDates: Record<
   SeoArticleSlug,
   { publishedAt: string; modifiedAt: string }
 > = {
+  "joyagoo-shipping-calculator-cost-estimate-guide": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
+  "why-is-joyagoo-shipping-so-expensive": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
+  "joyagoo-shipping-cost-per-kg-explained": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
+  "joyagoo-shipping-coupon-promo-discount-guide": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
+  "joyagoo-shipping-to-canada-cost-planner": {
+    publishedAt: "2026-09-14",
+    modifiedAt: "2026-09-14",
+  },
   "joyagoo-shipping-to-usa-cost-planner": {
     publishedAt: "2026-09-14",
     modifiedAt: "2026-09-14",
@@ -890,7 +982,19 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
       }))
     : [];
 
-  return [...priorityEntries, ...extraEntries, feeEntry].sort((left, right) =>
+  const additionalPriorityEntries: SeoArticleEntry[] = isPriorityArticleLocale(locale)
+    ? additionalPrioritySeoArticleSlugs.map((slug: AdditionalPrioritySeoArticleSlug) => ({
+        slug,
+        article: additionalPriorityShippingArticles[locale][slug],
+        keywords: keywords[slug],
+        sourceBody: additionalPriorityShippingSourceBodies[locale],
+        ...seoArticleDates[slug],
+        readTime: "9 minute read",
+        relatedLinks: relatedArticleLinks[slug],
+      }))
+    : [];
+
+  return [...priorityEntries, ...additionalPriorityEntries, ...extraEntries, feeEntry].sort((left, right) =>
     right.modifiedAt.localeCompare(left.modifiedAt),
   );
 }

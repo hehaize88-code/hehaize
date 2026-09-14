@@ -23,6 +23,7 @@ import {
   priorityArticleLocales,
   prioritySeoArticleSlugs,
 } from "../../priorityShippingArticles";
+import { additionalPrioritySeoArticleSlugs } from "../../additionalPriorityShippingArticles";
 import {
   getSeoArticleEntry,
   getSeoArticleEntries,
@@ -159,7 +160,8 @@ export async function generateMetadata({
     alternates: {
       ...languageAlternates(
         basePath,
-        prioritySeoArticleSlugs.includes(route as never)
+        prioritySeoArticleSlugs.includes(route as never) ||
+          additionalPrioritySeoArticleSlugs.includes(route as never)
           ? priorityArticleLocales
           : undefined,
       ),

@@ -6,7 +6,7 @@ import { languageAlternates } from "../seoAlternates";
 
 const slug = "joyagoo-volumetric-weight-shipping-cost";
 const entry = getSeoArticleEntry("en", slug)!;
-const title = "Joyagoo Shipping Calculator 2026: Weight & Parcel Cost";
+const title = "Joyagoo Volumetric Weight Guide 2026: Parcel Cost";
 const description =
   "Estimate Joyagoo shipping cost from actual and volumetric weight, compare live route divisors, and see when rehearsal packing can reduce quote uncertainty.";
 

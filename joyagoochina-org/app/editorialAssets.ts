@@ -21,6 +21,31 @@ export const defaultEditorialImage: EditorialImage = {
 };
 
 const editorialImages: Record<string, EditorialImage> = {
+  "joyagoo-shipping-calculator-cost-estimate-guide": {
+    src: "/products/3377.webp",
+    width: 750,
+    height: 750,
+  },
+  "why-is-joyagoo-shipping-so-expensive": {
+    src: "/products/3377.webp",
+    width: 750,
+    height: 750,
+  },
+  "joyagoo-shipping-cost-per-kg-explained": {
+    src: "/products/3376.webp",
+    width: 750,
+    height: 750,
+  },
+  "joyagoo-shipping-coupon-promo-discount-guide": {
+    src: "/products/3378.webp",
+    width: 750,
+    height: 750,
+  },
+  "joyagoo-shipping-to-canada-cost-planner": {
+    src: "/products/3376.webp",
+    width: 750,
+    height: 750,
+  },
   "joyagoo-shipping-to-usa-cost-planner": {
     src: "/products/3376.webp",
     width: 750,

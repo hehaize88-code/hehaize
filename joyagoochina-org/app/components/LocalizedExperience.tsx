@@ -221,6 +221,11 @@ function OfficialSourceLinks({
 }
 
 const hidesEditorialSourceLinks = new Set([
+  "joyagoo-shipping-calculator-cost-estimate-guide",
+  "why-is-joyagoo-shipping-so-expensive",
+  "joyagoo-shipping-cost-per-kg-explained",
+  "joyagoo-shipping-coupon-promo-discount-guide",
+  "joyagoo-shipping-to-canada-cost-planner",
   "joyagoo-shipping-to-usa-cost-planner",
   "joyagoo-shipping-to-uk-cost-planner",
   "joyagoo-small-parcel-shipping-cost-strategy",
