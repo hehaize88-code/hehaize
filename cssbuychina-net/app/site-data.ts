@@ -12,14 +12,14 @@ export type Product = {
 };
 
 export const categories = [
-  { slug: "shoes", name: "Shoes", symbol: "S／", searchLabel: "Runners, loafers, slides", checkSummary: "Compare foot or insole length in centimeters, select the exact size and color, inspect pair alignment and visible finish, and decide whether the box is worth its parcel volume.", storeUrl: "https://cnbuycha.com/shoes/" },
-  { slug: "hoodies-sweaters", name: "Hoodies", symbol: "H＋", searchLabel: "Hoodies and knitwear", checkSummary: "Use actual garment measurements, confirm the color and graphic option, inspect print placement and visible marks, and plan for the volume of thick or oversized fabric.", storeUrl: "https://cnbuycha.com/hoodies-sweaters/" },
-  { slug: "t-shirts", name: "T-Shirts", symbol: "T°", searchLabel: "Tees, polos, shirts", checkSummary: "Compare flat chest, shoulder, sleeve, and length measurements; confirm the selected print and color; and inspect collars, seams, alignment, and visible staining.", storeUrl: "https://cnbuycha.com/t-shirts/" },
-  { slug: "jackets", name: "Jackets", symbol: "J↗", searchLabel: "Light and winter layers", checkSummary: "Check garment measurements, zipper and snap hardware, pockets, visible damage, and any described filling. Bulky layers can affect parcel dimensions even when they are not especially heavy.", storeUrl: "https://cnbuycha.com/jackets/" },
-  { slug: "jerseys", name: "Jerseys", symbol: "11", searchLabel: "Club and national kits", checkSummary: "Confirm fan or player version, sleeve style, size chart, name and number, and optional patches. Inspect badge and print placement on both the front and back before shipping.", storeUrl: "https://cnbuycha.com/jersey/" },
-  { slug: "accessories", name: "Accessories", symbol: "A◇", searchLabel: "Bags, watches, extras", checkSummary: "Verify dimensions, materials described, included parts, closures, straps, and hardware. Batteries, liquids, magnets, or fragile components can change available parcel routes.", storeUrl: "https://cnbuycha.com/accessories/" },
-  { slug: "headwear", name: "Headwear", symbol: "C⌒", searchLabel: "Caps, hats, beanies", checkSummary: "Check circumference or adjustability, selected color, embroidery or print placement, panel symmetry, brim shape, and packaging that will not crush structured headwear.", storeUrl: "https://cnbuycha.com/headwear/" },
-  { slug: "electronics", name: "Electronics", symbol: "E□", searchLabel: "Cases, audio, devices", checkSummary: "Confirm the exact model, voltage, plug, battery status, and included parts. Warehouse photos show visible condition but do not prove safety, compliance, battery health, or route eligibility.", storeUrl: "https://cnbuycha.com/electronics/" },
+  { slug: "shoes", name: "Shoes", symbol: "S／", searchLabel: "Runners, loafers, slides", checkSummary: "Compare foot or insole length in centimeters, select the exact size and color, inspect pair alignment and visible finish, and decide whether the box is worth its parcel volume.", storeUrl: "https://cnfanssp.com/shoes/" },
+  { slug: "hoodies-sweaters", name: "Hoodies", symbol: "H＋", searchLabel: "Hoodies and knitwear", checkSummary: "Use actual garment measurements, confirm the color and graphic option, inspect print placement and visible marks, and plan for the volume of thick or oversized fabric.", storeUrl: "https://cnfanssp.com/hoodies-sweaters/" },
+  { slug: "t-shirts", name: "T-Shirts", symbol: "T°", searchLabel: "Tees, polos, shirts", checkSummary: "Compare flat chest, shoulder, sleeve, and length measurements; confirm the selected print and color; and inspect collars, seams, alignment, and visible staining.", storeUrl: "https://cnfanssp.com/t-shirts/" },
+  { slug: "jackets", name: "Jackets", symbol: "J↗", searchLabel: "Light and winter layers", checkSummary: "Check garment measurements, zipper and snap hardware, pockets, visible damage, and any described filling. Bulky layers can affect parcel dimensions even when they are not especially heavy.", storeUrl: "https://cnfanssp.com/jackets/" },
+  { slug: "jerseys", name: "Jerseys", symbol: "11", searchLabel: "Club and national kits", checkSummary: "Confirm fan or player version, sleeve style, size chart, name and number, and optional patches. Inspect badge and print placement on both the front and back before shipping.", storeUrl: "https://cnfanssp.com/Jersey/" },
+  { slug: "accessories", name: "Accessories", symbol: "A◇", searchLabel: "Bags, watches, extras", checkSummary: "Verify dimensions, materials described, included parts, closures, straps, and hardware. Batteries, liquids, magnets, or fragile components can change available parcel routes.", storeUrl: "https://cnfanssp.com/accessories/" },
+  { slug: "headwear", name: "Headwear", symbol: "C⌒", searchLabel: "Caps, hats, beanies", checkSummary: "Check circumference or adjustability, selected color, embroidery or print placement, panel symmetry, brim shape, and packaging that will not crush structured headwear.", storeUrl: "https://cnfanssp.com/headwear/" },
+  { slug: "electronics", name: "Electronics", symbol: "E□", searchLabel: "Cases, audio, devices", checkSummary: "Confirm the exact model, voltage, plug, battery status, and included parts. Warehouse photos show visible condition but do not prove safety, compliance, battery health, or route eligibility.", storeUrl: "https://cnfanssp.com/electronics/" },
 ] as const;
 
 export const products: Product[] = [
@@ -32,7 +32,7 @@ export const products: Product[] = [
     cny: 278,
     usd: "38.61",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/shoes/1011.html",
+    storeUrl: "https://cnfanssp.com/shoes/",
     summary: "Confirm the exact model, size and color on the live product page, then compare both shoes, labels, soles and measurements in warehouse photos.",
   },
   {
@@ -44,7 +44,7 @@ export const products: Product[] = [
     cny: 588,
     usd: "81.67",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/shoes/3334.html",
+    storeUrl: "https://cnfanssp.com/shoes/",
     summary: "Confirm the exact model, size and color on the live product page, then compare both shoes, labels, soles and measurements in warehouse photos.",
   },
   {
@@ -56,7 +56,7 @@ export const products: Product[] = [
     cny: 460,
     usd: "63.89",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/shoes/3321.html",
+    storeUrl: "https://cnfanssp.com/shoes/",
     summary: "Confirm the exact model, size and color on the live product page, then compare both shoes, labels, soles and measurements in warehouse photos.",
   },
   {
@@ -68,7 +68,7 @@ export const products: Product[] = [
     cny: 220,
     usd: "30.56",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/hoodies-sweaters/1985.html",
+    storeUrl: "https://cnfanssp.com/hoodies-sweaters/",
     summary: "Confirm the exact color and size on the live product page, compare garment measurements, and inspect print placement, seams and visible marks.",
   },
   {
@@ -80,7 +80,7 @@ export const products: Product[] = [
     cny: 264,
     usd: "36.67",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/hoodies-sweaters/3367.html",
+    storeUrl: "https://cnfanssp.com/hoodies-sweaters/",
     summary: "Confirm the exact color and size on the live product page, compare garment measurements, and inspect print placement, seams and visible marks.",
   },
   {
@@ -92,7 +92,7 @@ export const products: Product[] = [
     cny: 159,
     usd: "22.08",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/t-shirts/2699.html",
+    storeUrl: "https://cnfanssp.com/t-shirts/",
     summary: "Confirm the exact design, color and size on the live product page, compare garment measurements, and inspect the collar, print and stitching.",
   },
   {
@@ -104,7 +104,7 @@ export const products: Product[] = [
     cny: 118,
     usd: "16.39",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/t-shirts/891.html",
+    storeUrl: "https://cnfanssp.com/t-shirts/",
     summary: "Confirm the exact design, color and size on the live product page, compare garment measurements, and inspect the collar, print and stitching.",
   },
   {
@@ -116,7 +116,7 @@ export const products: Product[] = [
     cny: 219,
     usd: "30.42",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jackets/717.html",
+    storeUrl: "https://cnfanssp.com/jackets/",
     summary: "Confirm the exact style, color and size on the live product page, compare garment measurements, and inspect closures, seams and visible condition.",
   },
   {
@@ -128,7 +128,7 @@ export const products: Product[] = [
     cny: 178,
     usd: "24.72",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jackets/2414.html",
+    storeUrl: "https://cnfanssp.com/jackets/",
     summary: "Confirm the exact style, color and size on the live product page, compare garment measurements, and inspect closures, seams and visible condition.",
   },
   {
@@ -140,7 +140,7 @@ export const products: Product[] = [
     cny: 99,
     usd: "13.75",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jersey/3208.html",
+    storeUrl: "https://cnfanssp.com/Jersey/",
     summary: "Confirm the exact club or national-team option, version, size, print and patches on the live product page before ordering.",
   },
   {
@@ -152,7 +152,7 @@ export const products: Product[] = [
     cny: 88,
     usd: "12.22",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jersey/3207.html",
+    storeUrl: "https://cnfanssp.com/Jersey/",
     summary: "Confirm the exact club or national-team option, version, size, print and patches on the live product page before ordering.",
   },
   {
@@ -164,7 +164,7 @@ export const products: Product[] = [
     cny: 94.8,
     usd: "13.17",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/accessories/2523.html",
+    storeUrl: "https://cnfanssp.com/accessories/",
     summary: "Confirm the exact style and option on the live product page, then inspect dimensions, hardware, included parts and visible condition.",
   },
   {
@@ -176,7 +176,7 @@ export const products: Product[] = [
     cny: 460,
     usd: "63.89",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/shoes/525.html",
+    storeUrl: "https://cnfanssp.com/shoes/",
     summary: "Confirm the exact model, size and color on the live product page, then compare both shoes, labels, soles and measurements in warehouse photos.",
   },
   {
@@ -188,7 +188,7 @@ export const products: Product[] = [
     cny: 189,
     usd: "26.25",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/shoes/3347.html",
+    storeUrl: "https://cnfanssp.com/shoes/",
     summary: "Confirm the exact model, size and color on the live product page, then compare both shoes, labels, soles and measurements in warehouse photos.",
   },
   {
@@ -200,7 +200,7 @@ export const products: Product[] = [
     cny: 198,
     usd: "27.50",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/hoodies-sweaters/3082.html",
+    storeUrl: "https://cnfanssp.com/hoodies-sweaters/",
     summary: "Confirm the exact color and size on the live product page, compare garment measurements, and inspect print placement, seams and visible marks.",
   },
   {
@@ -212,7 +212,7 @@ export const products: Product[] = [
     cny: 218,
     usd: "30.28",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/hoodies-sweaters/3338.html",
+    storeUrl: "https://cnfanssp.com/hoodies-sweaters/",
     summary: "Confirm the exact color and size on the live product page, compare garment measurements, and inspect print placement, seams and visible marks.",
   },
   {
@@ -224,7 +224,7 @@ export const products: Product[] = [
     cny: 120,
     usd: "16.67",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/t-shirts/1746.html",
+    storeUrl: "https://cnfanssp.com/t-shirts/",
     summary: "Confirm the exact design, color and size on the live product page, compare garment measurements, and inspect the collar, print and stitching.",
   },
   {
@@ -236,7 +236,7 @@ export const products: Product[] = [
     cny: 109,
     usd: "15.14",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/t-shirts/3424.html",
+    storeUrl: "https://cnfanssp.com/t-shirts/",
     summary: "Confirm the exact design, color and size on the live product page, compare garment measurements, and inspect the collar, print and stitching.",
   },
   {
@@ -248,7 +248,7 @@ export const products: Product[] = [
     cny: 309,
     usd: "42.92",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jackets/3076.html",
+    storeUrl: "https://cnfanssp.com/jackets/",
     summary: "Confirm the exact style, color and size on the live product page, compare garment measurements, and inspect closures, seams and visible condition.",
   },
   {
@@ -260,7 +260,7 @@ export const products: Product[] = [
     cny: 229,
     usd: "31.81",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jackets/3425.html",
+    storeUrl: "https://cnfanssp.com/jackets/",
     summary: "Confirm the exact style, color and size on the live product page, compare garment measurements, and inspect closures, seams and visible condition.",
   },
   {
@@ -272,7 +272,7 @@ export const products: Product[] = [
     cny: 99,
     usd: "13.75",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jersey/3206.html",
+    storeUrl: "https://cnfanssp.com/Jersey/",
     summary: "Confirm the exact club or national-team option, version, size, print and patches on the live product page before ordering.",
   },
   {
@@ -284,7 +284,7 @@ export const products: Product[] = [
     cny: 89,
     usd: "12.36",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/jersey/3204.html",
+    storeUrl: "https://cnfanssp.com/Jersey/",
     summary: "Confirm the exact club or national-team option, version, size, print and patches on the live product page before ordering.",
   },
   {
@@ -296,7 +296,7 @@ export const products: Product[] = [
     cny: 258,
     usd: "35.83",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/accessories/1839.html",
+    storeUrl: "https://cnfanssp.com/accessories/",
     summary: "Confirm the exact style and option on the live product page, then inspect dimensions, hardware, included parts and visible condition.",
   },
   {
@@ -308,7 +308,7 @@ export const products: Product[] = [
     cny: 650,
     usd: "90.28",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/accessories/1475.html",
+    storeUrl: "https://cnfanssp.com/accessories/",
     summary: "Confirm the exact style and option on the live product page, then inspect dimensions, hardware, included parts and visible condition.",
   },
   {
@@ -320,7 +320,7 @@ export const products: Product[] = [
     cny: 191,
     usd: "26.53",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/headwear/2967.html",
+    storeUrl: "https://cnfanssp.com/headwear/",
     summary: "Confirm the exact style, color and size on the live product page, then inspect shape, alignment, stitching and visible finish.",
   },
   {
@@ -332,7 +332,7 @@ export const products: Product[] = [
     cny: 80,
     usd: "11.11",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/headwear/3035.html",
+    storeUrl: "https://cnfanssp.com/headwear/",
     summary: "Confirm the exact style, color and size on the live product page, then inspect shape, alignment, stitching and visible finish.",
   },
   {
@@ -344,7 +344,7 @@ export const products: Product[] = [
     cny: 69,
     usd: "9.58",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/headwear/3315.html",
+    storeUrl: "https://cnfanssp.com/headwear/",
     summary: "Confirm the exact style, color and size on the live product page, then inspect shape, alignment, stitching and visible finish.",
   },
   {
@@ -356,7 +356,7 @@ export const products: Product[] = [
     cny: 218,
     usd: "30.28",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/electronics/3286.html",
+    storeUrl: "https://cnfanssp.com/electronics/",
     summary: "Confirm the exact model, specification and included parts on the live product page, and check current battery and shipping restrictions before ordering.",
   },
   {
@@ -368,7 +368,7 @@ export const products: Product[] = [
     cny: 1120,
     usd: "155.56",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/electronics/3235.html",
+    storeUrl: "https://cnfanssp.com/electronics/",
     summary: "Confirm the exact model, specification and included parts on the live product page, and check current battery and shipping restrictions before ordering.",
   },
   {
@@ -380,7 +380,7 @@ export const products: Product[] = [
     cny: 488,
     usd: "67.78",
     checked: "Sep 01",
-    storeUrl: "https://cnbuycha.com/electronics/3184.html",
+    storeUrl: "https://cnfanssp.com/electronics/",
     summary: "Confirm the exact model, specification and included parts on the live product page, and check current battery and shipping restrictions before ordering.",
   }
 ];

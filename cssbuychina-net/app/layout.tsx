@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cssbuychina.net"),
   title: {
-    default: "CSSBuy Spreadsheet 2026: 30 Checked Product Links",
+    default: "CSSBuy Spreadsheet 2026: Links, Warehouse QC & Shipping",
     template: "%s | CSSBuy China",
   },
-  description: "Browse 30 current CSSBuy spreadsheet finds with matching product links, USD estimates, category filters and practical warehouse QC checks.",
+  description: "Browse a current CSSBuy spreadsheet and research warehouse status, QC photos, shipping costs, restrictions and parcel tracking before ordering.",
   applicationName: "CSSBuy China Spreadsheet",
   keywords: ["CSSBuy spreadsheet", "CSSBuy finds", "CSSBuy shoes", "CSSBuy QC", "China shopping spreadsheet"],
   authors: [{ name: "CSSBuy China Editorial" }],
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "CSSBuy China",
-    title: "CSSBuy Spreadsheet 2026: 30 Checked Product Links",
-    description: "Browse 30 current CSSBuy spreadsheet finds with matching product links, category filters, USD estimates and warehouse QC guidance.",
+    title: "CSSBuy Spreadsheet 2026: Links, Warehouse QC & Shipping",
+    description: "Browse current CSSBuy finds and research warehouse status, QC photos, shipping costs, restrictions and parcel tracking.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSSBuy Spreadsheet 2026: 30 Checked Product Links",
-    description: "Browse 30 current CSSBuy spreadsheet finds with matching product links, category filters and warehouse QC guidance.",
+    title: "CSSBuy Spreadsheet 2026: Links, Warehouse QC & Shipping",
+    description: "Browse current CSSBuy finds with warehouse QC, shipping cost, restriction and tracking guidance.",
   },
   icons: {
     icon: "/favicon.svg",

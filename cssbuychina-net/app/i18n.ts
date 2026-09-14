@@ -67,8 +67,8 @@ export const localeCopy = {
     nav: { all: "All finds", categories: "Categories", how: "How it works", guides: "Guides", articles: "Buying Guides", faq: "FAQ", browse: "Browse finds" },
     hero: {
       eyebrow: "Fact-checked CSSBuy find edit · 2026",
-      title: "A clearer way to use a",
-      emphasis: "CSSBuy spreadsheet.",
+      title: "CSSBuy spreadsheet 2026:",
+      emphasis: "finds, QC and shipping.",
       lede: "Browse by category, compare recorded CNY values, and check each product before ordering. CSSBuy's public process separates the product and China delivery payment from international parcel shipping after warehouse inspection.",
       placeholder: "Search shoes, hoodies, jerseys…",
       search: "Search",

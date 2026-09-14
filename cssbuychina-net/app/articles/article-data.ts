@@ -1,4 +1,6 @@
-export const articles = {
+import { priorityArticles } from "./priority-article-data";
+
+const existingArticles = {
   "how-to-check-a-cssbuy-product-link": {
     label: "CSSBUY SPREADSHEET GUIDE · 12 MIN",
     title: "CSSBuy Spreadsheet Guide 2026: How to Check a Product Link Before You Order",
@@ -664,6 +666,11 @@ export const articles = {
       ["Plan product price against parcel cost", "/guides/product-price-vs-parcel-cost"]
     ],
   },
+} as const;
+
+export const articles = {
+  ...priorityArticles,
+  ...existingArticles,
 } as const;
 
 export type ArticleSlug = keyof typeof articles;

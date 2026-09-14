@@ -38,8 +38,8 @@ function tagWith(html, tag, attribute, value) {
 test("renders production metadata without preview markers", async () => {
   const html = await fetchHtml("/");
   assert.doesNotMatch(html, developmentPreviewMeta);
-  assert.ok(html.includes("<title>CSSBuy Spreadsheet 2026: 30 Checked Product Links</title>"));
-  assert.ok(tagWith(html, "meta", "name", "description").includes("Browse 30 current CSSBuy spreadsheet finds"));
+  assert.ok(html.includes("<title>CSSBuy Spreadsheet 2026: Links, Warehouse QC &amp; Shipping</title>"));
+  assert.ok(tagWith(html, "meta", "name", "description").includes("warehouse status, QC photos, shipping costs, restrictions and parcel tracking"));
   assert.ok(html.includes('class="footer-top" data-nosnippet="true"'));
   assert.ok(!html.includes("SEO Articles"));
 });
@@ -68,6 +68,26 @@ test("renders the category article with aligned search and social metadata", asy
   assert.ok(html.includes("CSSBuy Shoes Spreadsheet"));
   assert.ok(html.includes("Quick category decision checklist"));
   assert.ok(!html.includes("Build useful category pages, not doorway pages"));
+});
+
+test("renders all priority warehouse and shipping articles with article metadata", async () => {
+  const priorityArticles = [
+    ["cssbuy-warehouse-status-quality-inspection", "CSSBuy Warehouse Status: Arrived and Undergoing Quality Inspection"],
+    ["cssbuy-shipping-calculator-actual-vs-volumetric-weight", "CSSBuy Shipping Calculator: Actual Weight, Volume and Parcel Cost"],
+    ["cssbuy-restrictions-brands-batteries-liquids", "CSSBuy Restrictions: Check Brands, Batteries, Liquids and Shipping Routes"],
+    ["cssbuy-parcel-left-warehouse-tracking-status", "Parcel Has Left the CSSBuy Warehouse: What the Tracking Status Means"],
+    ["cssbuy-warehouse-storage-returns-consolidation", "CSSBuy Warehouse Guide: Storage, Returns, QC and Parcel Consolidation"],
+  ];
+
+  for (const [slug, h1] of priorityArticles) {
+    const html = await fetchHtml(`/articles/${slug}`);
+    const url = `https://cssbuychina.net/articles/${slug}`;
+    assert.ok(html.includes(`<h1>${h1}</h1>`));
+    assert.ok(tagWith(html, "link", "rel", "canonical").includes(`href="${url}"`));
+    assert.ok(tagWith(html, "meta", "property", "og:type").includes('content="article"'));
+    assert.ok(html.includes('"datePublished":"2026-09-14"'));
+    assert.match(html, /Research basis · checked[\s\S]{0,40}September 14, 2026/);
+  }
 });
 
 test("renders the Taobao comparison article with complete SEO metadata", async () => {
@@ -202,8 +222,8 @@ test("renders all 30 product detail pages with current main-store shopping links
 
   for (const id of ids) {
     const html = await fetchHtml(`/product/${id}`);
-    assert.ok(html.includes('class="detail-cta" href="https://cnbuycha.com/'));
-    assert.ok(html.includes('data-track-event="product_outbound_click"'));
+    assert.ok(html.includes('class="detail-cta" href="https://cnfanssp.com/'));
+    assert.ok(html.includes('data-track-event="category_outbound_click"'));
     assert.ok(html.includes("Recorded product value: ¥"));
     assert.ok(html.includes("PRODUCT ROUTE CHECKED"));
     assert.ok(html.includes('"@type":"BreadcrumbList"'));
@@ -211,20 +231,20 @@ test("renders all 30 product detail pages with current main-store shopping links
   }
 });
 
-test("links product card images, titles, and buttons to matching main-store products", async () => {
+test("links product cards internally and sends catalog actions only to the current main store", async () => {
   for (const path of ["/", "/products", "/de/products"]) {
     const html = await fetchHtml(path);
     assert.ok(
-      html.includes('class="product-image" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow" data-track-event="product_outbound_click"'),
-      `${path} should link the product image directly to the main-store product`,
+      html.includes('class="product-image" href="/product/3402"'),
+      `${path} should link the product image to its research page`,
     );
     assert.ok(
-      /<h3><a href="https:\/\/cnbuycha\.com\/shoes\/1011\.html"[^>]*data-track-event="product_outbound_click"[^>]*>Nike P6000&amp;Air Max 96<\/a><\/h3>/.test(html),
-      `${path} should link the product title directly to the main-store product`,
+      /<h3><a href="\/product\/3402">Nike P6000&amp;Air Max 96<\/a><\/h3>/.test(html),
+      `${path} should link the product title to its research page`,
     );
     assert.ok(
-      html.includes('class="product-button" href="https://cnbuycha.com/shoes/1011.html" rel="nofollow" data-track-event="product_outbound_click"'),
-      `${path} should keep the product button on the same destination`,
+      html.includes('class="product-button" href="https://cnfanssp.com/shoes/" rel="nofollow" data-track-event="category_outbound_click"'),
+      `${path} should send the catalog action to the verified main-store category`,
     );
   }
 });
@@ -234,21 +254,27 @@ test("publishes CTR-focused catalog metadata and analytics hooks", async () => {
   const categoriesHtml = await fetchHtml("/categories");
   const articlesHtml = await fetchHtml("/articles");
 
-  assert.ok(productsHtml.includes("<title>CSSBuy Finds 2026: Shoes, Hoodies, Jerseys &amp; More | CSSBuy China</title>"));
-  assert.ok(tagWith(productsHtml, "meta", "name", "description").includes("Search 30 current CSSBuy finds"));
+  assert.ok(productsHtml.includes("<title>CSSBuy Links &amp; Spreadsheet 2026: Product Finds by Category | CSSBuy China</title>"));
+  assert.ok(tagWith(productsHtml, "meta", "name", "description").includes("Search a CSSBuy spreadsheet by product or category"));
   assert.ok(productsHtml.includes("PRODUCT ROUTES REVIEWED SEPTEMBER 1, 2026"));
-  assert.ok(productsHtml.includes('data-track-event="product_outbound_click"'));
+  assert.ok(productsHtml.includes('data-track-event="category_outbound_click"'));
   assert.ok(categoriesHtml.includes('data-track-event="category_outbound_click"'));
-  assert.ok(articlesHtml.includes("<title>CSSBuy Buying Guides 2026: Product Links, QC &amp; Shipping</title>"));
+  assert.ok(articlesHtml.includes("<title>CSSBuy Guides 2026: Warehouse, QC, Shipping &amp; Tracking</title>"));
+  assert.ok(articlesHtml.includes("CSSBuy Warehouse Status Explained: Arrived and Undergoing Quality Inspection"));
   assert.ok(!articlesHtml.includes("SEO knowledge library"));
 });
 
-test("publishes an indexable robots file and an 86-URL sitemap", async () => {
+test("publishes an indexable robots file and a 91-URL sitemap", async () => {
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   assert.match(robots, /User-agent: \*\s+Allow: \//);
   assert.match(robots, /Sitemap: https:\/\/cssbuychina\.net\/sitemap\.xml/);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 86);
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 91);
+  assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-warehouse-status-quality-inspection"));
+  assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-shipping-calculator-actual-vs-volumetric-weight"));
+  assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-restrictions-brands-batteries-liquids"));
+  assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-parcel-left-warehouse-tracking-status"));
+  assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-warehouse-storage-returns-consolidation"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-weidian-finds-options-seller-signals"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-seller-page-checklist-before-saving-find"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-shoes-spreadsheet-size-qc-fields"));

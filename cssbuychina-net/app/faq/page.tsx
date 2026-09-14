@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { InnerShell } from "../components/InnerShell";
 
 export const metadata: Metadata = {
-  title: "CSSBuy Spreadsheet FAQ",
-  description: "Fact-checked answers about CSSBuy's two payments, warehouse inspection, QC photos, order handling, returns, storage, spreadsheet prices, and shipping estimates.",
+  title: "CSSBuy FAQ 2026: Warehouse, QC, Shipping & Restrictions",
+  description: "Fact-checked CSSBuy answers covering warehouse status, QC photos, two payments, returns, storage, shipping calculator inputs and route restrictions.",
   alternates: { canonical: "/faq" },
 };
 
@@ -32,7 +32,7 @@ export default function FaqPage() {
   return (
     <InnerShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="inner-hero faq-hero"><p className="eyebrow"><span /> Official facts, clear limits</p><h1>CSSBuy spreadsheet FAQ.</h1><p>Answers checked against CSSBuy's public workflow and FAQ on August 8, 2026, with changing terms clearly identified.</p></section>
+      <section className="inner-hero faq-hero"><p className="eyebrow"><span /> Official facts, clear limits</p><h1>CSSBuy warehouse, QC and shipping FAQ.</h1><p>Answers checked against CSSBuy's public workflow and FAQ on September 14, 2026, with changing terms clearly identified.</p></section>
       <section className="faq-page-layout">
         <aside><span>12 FACT-CHECKED QUESTIONS</span><h2>Useful answers without invented promises.</h2><p>Where CSSBuy's public pages differ by product context, this FAQ says so. The current order, account deadline, and selected route remain controlling.</p><a href="/contact">Report an issue ↗</a></aside>
         <div className="faq-page-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary><span>{String(index + 1).padStart(2, "0")}</span>{question}<b>+</b></summary><p>{answer}</p></details>)}</div>

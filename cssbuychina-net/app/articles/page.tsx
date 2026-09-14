@@ -3,8 +3,8 @@ import { InnerShell } from "../components/InnerShell";
 import { articles } from "./article-data";
 
 export const metadata: Metadata = {
-  title: { absolute: "CSSBuy Buying Guides 2026: Product Links, QC & Shipping" },
-  description: "Compare CSSBuy product links, spreadsheet categories, warehouse QC photos and parcel costs with practical guides for first-order shoppers.",
+  title: { absolute: "CSSBuy Guides 2026: Warehouse, QC, Shipping & Tracking" },
+  description: "Practical CSSBuy guides for warehouse status, QC photos, shipping calculator inputs, restrictions, tracking and spreadsheet product research.",
   alternates: { canonical: "/articles" },
 };
 
@@ -17,7 +17,7 @@ export default function ArticlesPage() {
         <p>Long-form, fact-first reading based on CSSBuy's public workflow and policies—without invented fees, ratings, promises, or customer stories.</p>
       </section>
       <section className="guides-index articles-index">
-        <div className="guides-index-intro"><span>ARTICLE DESK / FACT-CHECKED AUG 2026</span><h2>Start with product discovery. Then verify the listing and plan the parcel.</h2><p>The library separates keyword search, dead-link image recovery, spreadsheet categories, product-link checks and total parcel cost into distinct search intents.</p></div>
+        <div className="guides-index-intro"><span>ARTICLE DESK / FACT-CHECKED SEP 2026</span><h2>Start with the current warehouse or parcel decision.</h2><p>The library separates warehouse status, QC, shipping calculations, restrictions, tracking, product-link checks and spreadsheet research into distinct search intents.</p></div>
         <div className="editorial-grid">
           {Object.entries(articles).map(([slug, article], index) => (
             <a className={`editorial-card editorial-${["blue", "acid", "orange"][index % 3]}`} href={`/articles/${slug}`} key={slug}>

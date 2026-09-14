@@ -18,14 +18,14 @@ const guides = [
   {
     slug: "read-warehouse-qc-photos",
     label: "WAREHOUSE QC · 8 MIN",
-    title: "How to read CSSBuy warehouse QC photos before shipping",
+    title: "CSSBuy QC photos: 6 warehouse checks before shipping",
     description: "Start with CSSBuy's published visible-inspection scope, then check measurements, condition, limitations, and the return clock.",
     theme: "acid",
   },
   {
     slug: "product-price-vs-parcel-cost",
     label: "COST GUIDE · 9 MIN",
-    title: "CSSBuy product price vs. total parcel cost",
+    title: "CSSBuy shipping cost: product, parcel and calculator",
     description: "Separate the first product-and-China-delivery payment from warehouse decisions, packaging, routes, and international shipping.",
     theme: "orange",
   },
@@ -37,10 +37,10 @@ export default function GuidesPage() {
       <section className="inner-hero guides-hero">
         <p className="eyebrow"><span /> Editorial desk</p>
         <h1>CSSBuy guides for decisions that matter.</h1>
-        <p>Research-led reading checked against CSSBuy's public workflow, warehouse information, shipping estimator, and FAQ on August 8, 2026.</p>
+        <p>Research-led reading checked against CSSBuy's public workflow, warehouse information, shipping estimator, and FAQ on September 14, 2026.</p>
       </section>
       <section className="guides-index">
-        <div className="guides-index-intro"><span>FACT CHECK / AUG 2026</span><h2>Begin with the two-payment process, then go deeper.</h2><p>These guides avoid invented customer claims, universal fee percentages, and fixed delivery promises. They identify which details come from CSSBuy's public pages and which still depend on the order, seller, route, and destination.</p></div>
+        <div className="guides-index-intro"><span>FACT CHECK / SEP 2026</span><h2>Begin with the two-payment process, then go deeper.</h2><p>These guides avoid invented customer claims, universal fee percentages, and fixed delivery promises. They identify which details come from CSSBuy's public pages and which still depend on the order, seller, route, and destination.</p></div>
         <div className="editorial-grid">
           {guides.map((guide, index) => (
             <a className={`editorial-card editorial-${guide.theme}`} href={`/guides/${guide.slug}`} key={guide.slug}>

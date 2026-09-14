@@ -50,11 +50,11 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
           <p className="detail-summary">{product.summary}</p>
           <div className="detail-price"><strong>≈ ${product.usd}</strong><span>Recorded product value: ¥{product.cny}</span></div>
           <p className="price-note">USD is an approximate display conversion, not a checkout quote. Seller price, exchange rate, domestic delivery, service fees, and international shipping can change the total.</p>
-          <a className="detail-cta" href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="product-detail-cta">Open product page <span aria-hidden="true">↗</span></a>
+          <a className="detail-cta" href={product.storeUrl} rel="nofollow" data-track-event="category_outbound_click" data-item-category={product.category} data-click-area="product-detail-cta">Browse the current {product.categoryLabel} catalog <span aria-hidden="true">↗</span></a>
           <div className="detail-facts">
-            <div><span>ROUTE</span><b>Matching product page</b></div>
+            <div><span>ROUTE</span><b>Current category catalog</b></div>
             <div><span>QUALITY</span><b>Not guaranteed</b></div>
-            <div><span>STATUS</span><b>Link reachable</b></div>
+            <div><span>STATUS</span><b>Category route checked</b></div>
           </div>
         </div>
       </section>

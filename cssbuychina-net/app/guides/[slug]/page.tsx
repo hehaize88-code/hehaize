@@ -18,11 +18,11 @@ const guideData = {
     ],
   },
   "read-warehouse-qc-photos": {
-    seoTitle: "CSSBuy Warehouse QC Photos: 6 Checks Before Shipping",
-    title: "How to Read CSSBuy Warehouse QC Photos Before Shipping",
-    description: "Use CSSBuy's published visible-inspection scope as a baseline, then review option, measurements, condition, limitations, and the return clock before parcel approval.",
+    seoTitle: "CSSBuy QC Photos Guide 2026: 6 Checks Before Shipping",
+    title: "CSSBuy QC Photos: 6 Warehouse Checks Before Shipping",
+    description: "Review CSSBuy QC photos for the exact option, measurements, visible condition and missing evidence before the return clock and parcel approval.",
     readTime: "8 MIN READ",
-    updated: "UPDATED AUGUST 8, 2026",
+    updated: "UPDATED SEPTEMBER 14, 2026",
     sections: [
       ["1. Start with CSSBuy's published inspection scope", ["CSSBuy's public item pages describe a basic warehouse inspection of visible style, quantity, color, size, model, and damage. Use those checks as a baseline, not as a promise that every product characteristic has been tested. Compare the warehouse images with the exact option text saved in the order rather than relying on memory.", "Confirm model, color, size label, quantity, and included parts first. If the order includes a special print, patch, accessory, or bundle, make sure it is visible. Ask for an extra photograph when the standard images do not show a detail that would change your decision."]],
       ["2. Inspect overall shape and symmetry", ["Look at the object as a whole before zooming into details. Compare left and right shoes, garment panels, collar shape, pocket position, and print alignment. Wide-angle warehouse photos may distort edges, so use multiple views instead of judging from one frame.", "For structured items such as shoes or bags, check whether storage or packing has crushed the shape. Minor deformation may recover, while severe creasing or asymmetry may not."]],
@@ -33,11 +33,11 @@ const guideData = {
     ],
   },
   "product-price-vs-parcel-cost": {
-    seoTitle: "CSSBuy Product Price vs. Total Parcel Cost",
-    title: "CSSBuy Product Price vs. Total Parcel Cost",
-    description: "Separate CSSBuy's first product-and-domestic-delivery payment from warehouse decisions, packaging, route selection, and the second international-shipping payment.",
+    seoTitle: "CSSBuy Shipping Cost 2026: Product, Parcel & Calculator",
+    title: "CSSBuy Shipping Cost: Product Price, Parcel Weight and Calculator",
+    description: "Separate CSSBuy product cost from domestic delivery, warehouse decisions, actual or volumetric parcel weight, packaging and international shipping.",
     readTime: "9 MIN READ",
-    updated: "UPDATED AUGUST 8, 2026",
+    updated: "UPDATED SEPTEMBER 14, 2026",
     sections: [
       ["1. Start with the exact option price", ["The first number on a listing may not be the price of the version shown in the main image. Select the exact color, size, model, or bundle and check whether domestic shipping is added. Keep the source currency separate from an approximate display conversion because the checkout exchange rate can differ.", "When comparing two sellers, compare equivalent options. A cheaper listing without the same accessories, materials, or size range is not a direct comparison."]],
       ["2. Understand the first CSSBuy payment", ["CSSBuy's public item pages say the first stage covers the goods and Chinese domestic delivery to its warehouse. Domestic delivery may be free, fixed, or calculated by the seller. Current payment, exchange-rate, or service amounts shown at checkout also belong in the first-stage decision.", "Do not invent a universal fee percentage. Use the current CSSBuy checkout when placing the order, and keep the recorded CNY product value separate from any approximate display conversion."]],
@@ -68,7 +68,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     "@type": "Article",
     headline: guide.title,
     description: guide.description,
-    dateModified: "2026-08-08",
+    dateModified: "2026-09-14",
     datePublished: "2026-08-08",
     author: { "@type": "Organization", name: "CSSBuy China Editorial" },
     publisher: { "@type": "Organization", name: "CSSBuy China Editorial" },
@@ -87,7 +87,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <div className="article-layout">
           <aside><span>ON THIS PAGE</span>{guide.sections.map(([heading], index) => <a href={`#section-${index + 1}`} key={heading}>{heading}</a>)}</aside>
           <div className="article-body">
-            <div className="article-note"><b>Research basis · checked August 10, 2026</b><p>This independent guide was reviewed against CSSBuy's public homepage, product-page workflow, warehouse information, shipping estimator, and FAQ. It does not promise product quality, delivery time, customs treatment, or a fixed final price; confirm the current order and route terms before paying.</p></div>
+            <div className="article-note"><b>Research basis · checked September 14, 2026</b><p>This independent guide was reviewed against CSSBuy's public homepage, product-page workflow, warehouse information, shipping estimator, and FAQ. It does not promise product quality, delivery time, customs treatment, or a fixed final price; confirm the current order and route terms before paying.</p></div>
             {guide.sections.map(([heading, paragraphs], index) => (
               <section id={`section-${index + 1}`} key={heading}>
                 <h2>{heading}</h2>

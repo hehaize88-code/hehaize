@@ -6,7 +6,7 @@ import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { localizedCategories, localeCopy, localePrefix, SiteLocale } from "./i18n";
 import { categories, products } from "./site-data";
 
-const STORE_SEARCH = "https://cnbuycha.com/AllProducts/?q=";
+const STORE_SEARCH = "https://cnfanssp.com/search.html?keywords=";
 
 const languageTags: Record<SiteLocale, string> = { en: "en", "pt-br": "pt-BR", de: "de-DE", es: "es" };
 
@@ -227,7 +227,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
         <div className="product-grid">
           {visibleProducts.map((product) => (
             <article className="product-card" key={product.id}>
-              <a className="product-image" href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-image">
+              <a className="product-image" href={`/product/${product.id}`}>
                 <img src={product.image} alt={product.name} loading="lazy" />
                 <span className="product-check">{copy.finds.checked}</span>
               </a>
@@ -236,13 +236,13 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
                   <span>{categoryCopy[product.category].name}</span>
                   <span>{product.checked}</span>
                 </div>
-                <h3><a href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-title">{product.name}</a></h3>
+                <h3><a href={`/product/${product.id}`}>{product.name}</a></h3>
                 <div className="product-footer">
                   <div className="price">
                     <strong>≈ ${product.usd}</strong>
                     <small>{copy.finds.source} ¥{product.cny}</small>
                   </div>
-                  <a className="product-button" href={product.storeUrl} rel="nofollow" data-track-event="product_outbound_click" data-item-id={product.id} data-item-name={product.name} data-item-category={product.category} data-click-area="homepage-card-button">{copy.finds.open} <ArrowIcon /></a>
+                  <a className="product-button" href={product.storeUrl} rel="nofollow" data-track-event="category_outbound_click" data-item-category={product.category} data-click-area="homepage-card-button">Browse category <ArrowIcon /></a>
                 </div>
               </div>
             </article>
@@ -291,6 +291,10 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           </a>
         </div>
         <a className="article-crosslink" href="/articles/cssbuy-spreadsheet-categories-explained"><span>{copy.reading.articleLabel}</span>{copy.reading.categoryArticle} <ArrowIcon /></a>
+        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-warehouse-status-quality-inspection"><span>NEW · WAREHOUSE STATUS</span>Understand “arrived and undergoing quality inspection” <ArrowIcon /></a> : null}
+        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-shipping-calculator-actual-vs-volumetric-weight"><span>NEW · CALCULATOR</span>Compare actual and volumetric parcel weight <ArrowIcon /></a> : null}
+        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-restrictions-brands-batteries-liquids"><span>NEW · RESTRICTIONS</span>Check brands, batteries, liquids and route eligibility <ArrowIcon /></a> : null}
+        {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-parcel-left-warehouse-tracking-status"><span>NEW · TRACKING</span>Decode “parcel has left the warehouse” <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-bag-spreadsheet-dimensions-hardware-shipping"><span>NEW ARTICLE</span>Build a bag dimensions, hardware and shipping worksheet <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-jersey-spreadsheet-sizing-customization-qc"><span>NEW ARTICLE</span>Build a jersey sizing, customization and QC worksheet <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-hoodie-spreadsheet-fabric-measurements-weight"><span>NEW ARTICLE</span>Build a hoodie fabric, measurement and weight worksheet <ArrowIcon /></a> : null}

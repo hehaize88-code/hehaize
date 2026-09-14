@@ -20,7 +20,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
       query_length: value.length,
       site_locale: locale,
     });
-    window.location.href = `https://cnbuycha.com/AllProducts/?q=${encodeURIComponent(value)}`;
+    window.location.href = `https://cnfanssp.com/search.html?keywords=${encodeURIComponent(value)}`;
   }
 
   return (
