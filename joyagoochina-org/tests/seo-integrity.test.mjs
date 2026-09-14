@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const localePrefixes = [
@@ -411,6 +412,16 @@ test("footer trust pages and added store categories are directly linked", async 
   assert.match(categoriesHtml, /href="https:\/\/cnfanssp\.com\/Jersey\/"/);
   assert.match(categoriesHtml, /href="https:\/\/cnfanssp\.com\/other-stuff\/"/);
   assert.match(categoriesHtml, /data-outbound-kind="category"/);
+});
+
+test("static Pages worker uses the current cache namespace and store allowlist", async () => {
+  const source = await readFile(
+    new URL("../cloudflare/static-worker.js", import.meta.url),
+    "utf8",
+  );
+  assert.match(source, /manual-seo-home-20260914/);
+  assert.match(source, /cnfanssp\.com/);
+  assert.doesNotMatch(source, /cnbuycha\.com/);
 });
 
 test("outbound event endpoint accepts only same-origin store events", async () => {
