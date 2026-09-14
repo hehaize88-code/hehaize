@@ -116,6 +116,7 @@ const ROUTES = new Set([
   '/articles/pikobuy-seller-page-checklist-before-saving-find/',
   '/articles/pikobuy-shoes-spreadsheet-size-qc-fields/',
   '/articles/pikobuy-hoodie-spreadsheet-fabric-measurements-weight/',
+  '/articles/pikobuy-jersey-spreadsheet-sizing-customization-qc/',
   '/articles/pikobuy-parcel-consolidation-packing-guide/',
   '/articles/pikobuy-returns-5-day-window/',
   '/articles/pikobuy-spreadsheet-product-research/',
