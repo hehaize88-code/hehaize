@@ -414,8 +414,8 @@ test("footer trust pages and added store categories are directly linked", async 
   }
 
   const categoriesHtml = await (await request("/categories/")).text();
-  assert.match(categoriesHtml, /href="https:\/\/cnfanssp\.com\/Jersey\/"/);
-  assert.match(categoriesHtml, /href="https:\/\/cnfanssp\.com\/other-stuff\/"/);
+  assert.match(categoriesHtml, /href="https:\/\/www\.cnbuycha\.com\/Jersey\/"/);
+  assert.match(categoriesHtml, /href="https:\/\/www\.cnbuycha\.com\/other-stuff\/"/);
   assert.match(categoriesHtml, /data-outbound-kind="category"/);
 });
 
@@ -424,9 +424,9 @@ test("static Pages worker uses the current cache namespace and store allowlist",
     new URL("../cloudflare/static-worker.js", import.meta.url),
     "utf8",
   );
-  assert.match(source, /manual-seo-8articles-20260914/);
-  assert.match(source, /cnfanssp\.com/);
-  assert.doesNotMatch(source, /cnbuycha\.com/);
+  assert.match(source, /main-site-cnbuycha-20260914/);
+  assert.match(source, /cnbuycha\.com/);
+  assert.doesNotMatch(source, /cnfanssp\.com/);
 });
 
 test("outbound event endpoint accepts only same-origin store events", async () => {
@@ -448,7 +448,7 @@ test("outbound event endpoint accepts only same-origin store events", async () =
         origin: "https://localhost",
       },
       body: JSON.stringify({
-        destination: "https://cnfanssp.com/shoes/3328.html",
+        destination: "https://www.cnbuycha.com/shoes/3328.html",
         source_page: "/spreadsheet/",
         language: "en",
         link_kind: "product",
@@ -470,7 +470,7 @@ test("outbound event endpoint accepts only same-origin store events", async () =
         origin: "https://example.com",
       },
       body: JSON.stringify({
-        destination: "https://cnfanssp.com/shoes/3328.html",
+        destination: "https://www.cnbuycha.com/shoes/3328.html",
       }),
     }),
     env,

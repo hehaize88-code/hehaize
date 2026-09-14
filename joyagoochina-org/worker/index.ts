@@ -110,7 +110,7 @@ async function handleOutboundClick(
   } catch {
     return jsonResponse("Invalid destination.", 400);
   }
-  if (!new Set(["cnfanssp.com", "www.cnfanssp.com"]).has(destination.hostname)) {
+  if (!new Set(["cnbuycha.com", "www.cnbuycha.com"]).has(destination.hostname)) {
     return jsonResponse("Destination is not the linked product store.", 400);
   }
 

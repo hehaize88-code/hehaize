@@ -1,4 +1,4 @@
-export const mainSite = "https://cnfanssp.com";
+export const mainSite = "https://www.cnbuycha.com";
 
 export type ProductCollection =
   | "Footwear"

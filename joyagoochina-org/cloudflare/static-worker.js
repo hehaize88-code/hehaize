@@ -14,7 +14,7 @@ const localeCodes = new Set([
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "manual-seo-8articles-20260914";
+const htmlCacheVersion = "main-site-cnbuycha-20260914";
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
@@ -81,7 +81,7 @@ async function handleOutboundClick(request, requestUrl) {
   } catch {
     return jsonResponse("Invalid destination.", 400);
   }
-  if (!new Set(["cnfanssp.com", "www.cnfanssp.com"]).has(destination.hostname)) {
+  if (!new Set(["cnbuycha.com", "www.cnbuycha.com"]).has(destination.hostname)) {
     return jsonResponse("Destination is not the linked product store.", 400);
   }
 
