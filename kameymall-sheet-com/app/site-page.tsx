@@ -251,15 +251,15 @@ function MainSearch({ locale, compact = false }: { locale: Locale; compact?: boo
       source_page: window.location.pathname,
     });
     if (!keyword) {
-      window.location.assign("https://cnbuycha.com/AllProducts/");
+      window.location.assign("https://www.cnbuycha.com/AllProducts/");
       return;
     }
     const query = new URLSearchParams({ q: keyword });
-    window.location.assign(`https://cnbuycha.com/AllProducts/?${query.toString()}`);
+    window.location.assign(`https://www.cnbuycha.com/AllProducts/?${query.toString()}`);
   }
   return (
     <form
-      action="https://cnbuycha.com/AllProducts/"
+      action="https://www.cnbuycha.com/AllProducts/"
       className={`hero-search${compact ? " search-compact" : ""}`}
       method="get"
       onSubmit={submitMainSearch}
