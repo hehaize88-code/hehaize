@@ -433,7 +433,7 @@ const ROUTES = new Set([
   '/pt/seo-articles/',
   '/seo-articles/'
 ]);
-const GA_SNIPPET = `
+const GA_SNIPPET = String.raw`
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
