@@ -54,10 +54,15 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
             <span className="brand-tagline">{copy.brandTagline}</span>
           </a>
           <p>{copy.footer.copy}</p>
-          <form className="search-box search-box--compact" onSubmit={submit}>
+          <form
+            className="search-box search-box--compact"
+            action="https://www.cnbuycha.com/AllProducts/"
+            method="get"
+            onSubmit={submit}
+          >
             <label className="sr-only" htmlFor="footer-search">{copy.searchLabel}</label>
             <span className="search-icon" aria-hidden="true">⌕</span>
-            <input id="footer-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.nav.all} />
+            <input id="footer-search" name="q" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.nav.all} />
             <button type="submit">{copy.hero.search} <span aria-hidden="true">↗</span></button>
           </form>
         </div>

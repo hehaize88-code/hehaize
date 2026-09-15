@@ -6,7 +6,8 @@ import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { localizedCategories, localeCopy, localePrefix, SiteLocale } from "./i18n";
 import { categories, products } from "./site-data";
 
-const STORE_SEARCH = "https://www.cnbuycha.com/AllProducts/?q=";
+const STORE_SEARCH_ROOT = "https://www.cnbuycha.com/AllProducts/";
+const STORE_SEARCH = `${STORE_SEARCH_ROOT}?q=`;
 
 const languageTags: Record<SiteLocale, string> = { en: "en", "pt-br": "pt-BR", de: "de-DE", es: "es" };
 
@@ -20,7 +21,16 @@ function buildHomeJsonLd(locale: SiteLocale) {
     description: copy.hero.lede,
     url: `https://cssbuychina.net${prefix || "/"}`,
     inLanguage: languageTags[locale],
-    isPartOf: { "@type": "WebSite", name: "CSSBuy China", url: "https://cssbuychina.net/" },
+    isPartOf: {
+      "@type": "WebSite",
+      name: "CSSBuy China",
+      url: "https://cssbuychina.net/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${STORE_SEARCH_ROOT}?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    },
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: products.length,
@@ -55,13 +65,19 @@ function SearchBox({ compact = false, locale = "en" }: { compact?: boolean; loca
   }
 
   return (
-    <form className={`search-box ${compact ? "search-box--compact" : ""}`} onSubmit={submit}>
+    <form
+      className={`search-box ${compact ? "search-box--compact" : ""}`}
+      action={STORE_SEARCH_ROOT}
+      method="get"
+      onSubmit={submit}
+    >
       <label className="sr-only" htmlFor={compact ? "nav-search" : "hero-search"}>
         {copy.searchLabel}
       </label>
       <span className="search-icon" aria-hidden="true">⌕</span>
       <input
         id={compact ? "nav-search" : "hero-search"}
+        name="q"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
         placeholder={compact ? copy.nav.all : copy.hero.placeholder}

@@ -213,6 +213,19 @@ test("renders localized home pages with consistent canonicals and metadata", asy
   }
 });
 
+test("search forms submit directly to the matching main-store results", async () => {
+  for (const path of ["/", "/pt-br", "/de", "/es", "/products", "/de/products"]) {
+    const html = await fetchHtml(path);
+    assert.ok(html.includes('action="https://www.cnbuycha.com/AllProducts/"'));
+    assert.ok(html.includes('method="get"'));
+    assert.ok(html.includes('name="q"'));
+  }
+
+  const homeHtml = await fetchHtml("/");
+  assert.ok(homeHtml.includes('"@type":"SearchAction"'));
+  assert.ok(homeHtml.includes('"target":"https://www.cnbuycha.com/AllProducts/?q={search_term_string}"'));
+});
+
 test("renders all 30 product detail pages with current main-store shopping links", async () => {
   const ids = [
     "3402", "3401", "3387", "3393", "3380", "3400", "3392", "3396", "3394", "3208",
