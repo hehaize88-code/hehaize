@@ -104,7 +104,7 @@ document.addEventListener('submit', function (event) {
     if (url.hostname !== 'cnbuycha.com' && url.hostname !== 'www.cnbuycha.com') return;
     var data = new FormData(form);
     window.gtag('event', 'search', {
-      search_term: String(data.get('keywords') || '').trim(),
+      search_term: String(data.get('q') || '').trim(),
       link_url: url.href,
       link_location: window.location.pathname,
       transport_type: 'beacon'

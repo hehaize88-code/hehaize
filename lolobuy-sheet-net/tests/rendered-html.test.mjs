@@ -50,6 +50,37 @@ test("renders indexable English metadata without Product rich-result claims", as
   assert.match(html, /hrefLang="x-default"/);
 });
 
+test("submits catalog searches to the live main-site results route", async () => {
+  for (const pathname of ["/", "/products", "/es/products"]) {
+    const response = await fetchPage(pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+
+    assert.match(
+      html,
+      /<form[^>]+action="https:\/\/www\.cnbuycha\.com\/AllProducts\/"[^>]+method="get"/,
+      pathname,
+    );
+    assert.match(
+      html,
+      /<input(?=[^>]+name="q")(?=[^>]+type="search")[^>]*>/,
+      pathname,
+    );
+    assert.doesNotMatch(
+      html,
+      /\/search\.html|<input(?=[^>]+name="keywords")(?=[^>]+type="search")[^>]*>|name="channelid"/,
+      pathname,
+    );
+  }
+
+  const homeResponse = await fetchPage("/");
+  const homeHtml = await homeResponse.text();
+  assert.match(
+    homeHtml,
+    /"target":"https:\/\/www\.cnbuycha\.com\/AllProducts\/\?q=\{search_term_string\}"/,
+  );
+});
+
 test("server-renders localized URLs with reciprocal SEO signals", async () => {
   const checks = [
     ["/es", "es", "Hoja LoloBuy 2026", "/es/products"],

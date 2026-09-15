@@ -71,7 +71,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
     description: homeSeo.description,
     potentialAction: {
       "@type": "SearchAction",
-      target: `${catalogBase}/search.html?keywords={search_term_string}&channelid=2`,
+      target: `${catalogBase}/AllProducts/?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };
@@ -103,7 +103,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
 
             <form
               className="product-search"
-              action={`${catalogBase}/search.html`}
+              action={`${catalogBase}/AllProducts/`}
               method="get"
             >
               <label className="sr-only" htmlFor="product-query">
@@ -112,12 +112,11 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
               <SearchIcon />
               <input
                 id="product-query"
-                name="keywords"
+                name="q"
                 type="search"
                 placeholder="Search shoes, hoodies, watches..."
                 required
               />
-              <input type="hidden" name="channelid" value="2" />
               <button type="submit" aria-label="Open product search">
                 <SearchIcon />
               </button>

@@ -130,7 +130,7 @@ function CatalogSearch({ locale }: { locale: Locale }) {
   return localizeReactNode(
     <form
       className="product-search subpage-search"
-      action={`${catalogBase}/search.html`}
+      action={`${catalogBase}/AllProducts/`}
       method="get"
     >
       <label className="sr-only" htmlFor="subpage-product-query">
@@ -139,12 +139,11 @@ function CatalogSearch({ locale }: { locale: Locale }) {
       <SearchIcon />
       <input
         id="subpage-product-query"
-        name="keywords"
+        name="q"
         type="search"
         placeholder="Search shoes, hoodies, watches..."
         required
       />
-      <input type="hidden" name="channelid" value="2" />
       <button type="submit" aria-label="Search the main product catalog">
         <SearchIcon />
       </button>
