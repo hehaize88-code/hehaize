@@ -12,7 +12,7 @@ export default function ProductSearch({
   return (
     <form
       className={compact ? "product-search product-search-compact" : "product-search"}
-      action="https://www.cnbuycha.com/search.html"
+      action="https://www.cnbuycha.com/AllProducts/"
       method="get"
       target="_blank"
       role="search"
@@ -22,14 +22,12 @@ export default function ProductSearch({
       </label>
       <input
         id={compact ? "product-search-compact" : "product-search"}
-        name="keywords"
+        name="q"
         type="search"
         placeholder={copy.placeholder}
         autoComplete="off"
         required
       />
-      <input name="channelid" type="hidden" value="2" />
-      <input name="method" type="hidden" value="1" />
       <button type="submit" aria-label={copy.submit}>
         <svg
           aria-hidden="true"
