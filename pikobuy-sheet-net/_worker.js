@@ -50,6 +50,14 @@ const PRODUCT_LINK_REWRITER = {
 };
 
 const ROUTES = new Set([
+  '/articles/pikobuy-duplicate-listings-comparison/',
+  '/articles/pikobuy-product-weight-planning-before-warehouse/',
+  '/articles/pikobuy-order-notes-template-color-size-quantity-qc/',
+  '/articles/pikobuy-size-chart-measurement-guide/',
+  '/articles/pikobuy-holiday-shopping-timeline-2026/',
+  '/articles/pikobuy-autumn-finds-2026-practical-shortlist/',
+  '/articles/pikobuy-accessories-price-vs-parcel-cost/',
+  '/articles/pikobuy-bag-spreadsheet-dimensions-hardware-qc/',
   '/articles/pikobuy-taobao-finds-compare-options/',
   '/articles/pikobuy-keyword-search-product-finds/',
   '/de/guides/how-to-use-pikobuy/',
@@ -458,7 +466,7 @@ const GA_SNIPPET = `
     }
 
     var productMatch = target.hostname.replace(/^www\./, '') === 'cnbuycha.com'
-      ? target.pathname.match(/^\/(?:AllProducts|accessories|headwear|hoodies-sweaters|jackets|shoes|short-sets|t-shirts|other-stuff)\/(\d+)\.html$/)
+      ? target.pathname.match(/^\/(?:AllProducts|accessories|electronics|headwear|hoodies-sweaters|jackets|jersey|shoes|short-sets|t-shirts|other-stuff)\/(\d+)\.html$/i)
       : null;
     var details = {
       source_page: location.pathname,
@@ -482,6 +490,11 @@ const GA_SNIPPET = `
       return;
     }
 
+    if (target.hostname === location.hostname && /\/articles\//.test(target.pathname)) {
+      pikoEvent('article_internal_click', details);
+      return;
+    }
+
     if (/\/articles\//.test(location.pathname) && target.hostname !== location.hostname) {
       pikoEvent('article_cta_click', details);
     }
@@ -501,8 +514,9 @@ const GA_SNIPPET = `
 </script>`;
 const STATIC_PREFIXES = ["/assets/", "/_next/"];
 const STATIC_FILES = new Set(["/pikobuy-logo.png","/favicon.svg","/article-social.svg","/robots.txt","/sitemap.xml","/sitemap-main.xml","/404.html"]);
+const HTML_CACHE_VERSION = '2026-09-15-seo-refresh-1';
 export default {
- async fetch(request, env) {
+ async fetch(request, env, ctx) {
   const url=new URL(request.url);
   if(url.hostname==="www.pikobuy-sheet.net"){url.hostname="pikobuy-sheet.net";return Response.redirect(url.toString(),301);}
   if(url.pathname==="/sitemap-main.xml"){url.pathname="/sitemap.xml";return Response.redirect(url.toString(),301);}
@@ -513,18 +527,28 @@ export default {
    const page=await env.ASSETS.fetch(new Request(new URL('/404.html',url),request));
    return new Response(page.body,{status:404,headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=300','x-robots-tag':'noindex'}});
   }
+  let cacheKey=null;
+  if(request.method==='GET'&&ROUTES.has(url.pathname)&&url.pathname!=='/404.html'){
+   const cacheUrl=new URL(url.origin+url.pathname);
+   cacheUrl.searchParams.set('__pb_cache',HTML_CACHE_VERSION);
+   cacheKey=new Request(cacheUrl.toString(),{method:'GET'});
+   const cached=await caches.default.match(cacheKey);
+   if(cached)return cached;
+  }
   const response=await env.ASSETS.fetch(request);
   if(response.status===404)return response;
   const headers=new Headers(response.headers);
   const isHtml=request.method==='GET'&&response.headers.get('content-type')?.includes('text/html');
   if(isHtml){
-   headers.set('cache-control','public, max-age=0, s-maxage=86400, stale-while-revalidate=604800');
+   headers.set('cache-control','public, max-age=300, s-maxage=86400, stale-while-revalidate=604800');
    headers.delete('content-length');
    const htmlResponse=new Response(response.body,{status:response.status,headers});
-   return new HTMLRewriter()
+   const transformed=new HTMLRewriter()
     .on('head',{element(element){element.append(GA_SNIPPET,{html:true});}})
     .on('a[href]',PRODUCT_LINK_REWRITER)
     .transform(htmlResponse);
+   if(cacheKey&&ctx)ctx.waitUntil(caches.default.put(cacheKey,transformed.clone()));
+   return transformed;
   }
   return new Response(response.body,{status:response.status,headers});
  }
