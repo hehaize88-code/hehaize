@@ -57,7 +57,7 @@ const productLinkRewriter = {
 };
 
 const GA4_SNIPPET =
-  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20260901-clicks"></script>';
+  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20260915-search-fix"></script>';
 
 const GA4_INIT_SCRIPT = String.raw`
 window.dataLayer = window.dataLayer || [];
@@ -103,12 +103,21 @@ document.addEventListener('submit', function (event) {
     var url = new URL(form.action, window.location.href);
     if (url.hostname !== 'cnbuycha.com' && url.hostname !== 'www.cnbuycha.com') return;
     var data = new FormData(form);
+    var searchTerm = String(data.get('q') || data.get('keywords') || '').trim();
     window.gtag('event', 'search', {
-      search_term: String(data.get('q') || '').trim(),
+      search_term: searchTerm,
       link_url: url.href,
       link_location: window.location.pathname,
       transport_type: 'beacon'
     });
+
+    if (form.matches && form.matches('form.product-search') && searchTerm) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      window.location.assign(
+        'https://cnbuycha.com/AllProducts/?q=' + encodeURIComponent(searchTerm)
+      );
+    }
   } catch (error) {}
 }, true);
 `.trim();
