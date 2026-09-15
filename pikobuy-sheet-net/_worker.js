@@ -514,7 +514,7 @@ const GA_SNIPPET = String.raw`
 </script>`;
 const STATIC_PREFIXES = ["/assets/", "/_next/"];
 const STATIC_FILES = new Set(["/pikobuy-logo.png","/favicon.svg","/article-social.svg","/robots.txt","/sitemap.xml","/sitemap-main.xml","/404.html"]);
-const HTML_CACHE_VERSION = '2026-09-15-seo-refresh-1';
+const HTML_CACHE_VERSION = '2026-09-15-seo-refresh-2';
 export default {
  async fetch(request, env, ctx) {
   const url=new URL(request.url);
