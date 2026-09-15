@@ -118,7 +118,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 106 final-site sitemap URLs with language alternates", async () => {
+test("publishes 114 final-site sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -127,7 +127,7 @@ test("publishes 106 final-site sitemap URLs with language alternates", async () 
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 106);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 114);
   assert.match(xml, /lolobuy-qc-color-lighting-errors/);
   assert.match(xml, /lolobuy-material-texture-qc-photo-limits/);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
@@ -136,7 +136,10 @@ test("publishes 106 final-site sitemap URLs with language alternates", async () 
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 106);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 114);
+  assert.match(xml, /lolobuy-product-links-qc-finder/);
+  assert.match(xml, /lolobuy-risk-control-order-status/);
+  assert.doesNotMatch(xml, /\/fr\/articles\/lolobuy-shipping-france-guide/);
   assert.doesNotMatch(xml, /<loc>https:\/\/lolobuy-sheet\.net\/products\/\d+<\/loc>/);
   assert.match(
     xml,
@@ -547,7 +550,7 @@ test("uses the requested homepage title, H1 and Buying Guides label", async () =
   assert.equal(response.status, 200);
   const html = await response.text();
 
-  assert.match(html, /<title>LoloBuy Spreadsheet 2026: Finds, QC &amp; Shipping<\/title>/);
+  assert.match(html, /<title>LoloBuy Spreadsheet 2026: Product Links, Finds &amp; QC<\/title>/);
   assert.match(html, /<h1 id="hero-title">LoloBuy Spreadsheet 2026: Matched Product Finds &amp; Buying Guides<\/h1>/);
   assert.match(html, />Buying Guides<\/a>/);
   assert.doesNotMatch(html, /SEO Articles|SEO articles/);
@@ -634,6 +637,49 @@ test("publishes every article detail in all five languages with reciprocal hrefl
       assert.match(html, new RegExp(`hrefLang="${locale}" href="https://lolobuy-sheet\\.net/${locale}/articles/${slug}"`), pathname);
       assert.match(html, new RegExp(`"inLanguage":"${locale}"`), pathname);
     }
+  }
+});
+
+test("publishes eight research-led priority guides only at their English canonicals", async () => {
+  const slugs = [
+    "lolobuy-product-links-qc-finder",
+    "lolobuy-shipping-france-guide",
+    "lolobuy-size-conversion-guide",
+    "lolobuy-shipping-calculator-guide",
+    "lolobuy-fees-total-order-cost",
+    "lolobuy-reviews-evidence-guide",
+    "lolobuy-parcel-split-consolidate-guide",
+    "lolobuy-risk-control-order-status",
+  ];
+
+  for (const slug of slugs) {
+    const pathname = `/articles/${slug}`;
+    const response = await fetchPage(pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+
+    assert.match(html, /"@type":"Article"/, pathname);
+    assert.match(html, /"datePublished":"2026-09-15"/, pathname);
+    assert.match(
+      html,
+      new RegExp(`rel="canonical" href="https://lolobuy-sheet\\.net${pathname}"`),
+      pathname,
+    );
+    assert.doesNotMatch(html, /hrefLang="(?:es|de|fr|it)"/, pathname);
+
+    const lengthMatch = html.match(
+      /<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/,
+    );
+    assert.ok(lengthMatch, `${pathname} has no visible word count`);
+    const words = Number(lengthMatch[1].replaceAll(",", ""));
+    assert.equal(
+      words >= 1200 && words <= 1800,
+      true,
+      `${pathname} reports ${words} editorial words`,
+    );
+
+    const localized = await fetchPage(`/fr/articles/${slug}`);
+    assert.equal(localized.status, 404, `/fr/articles/${slug}`);
   }
 });
 

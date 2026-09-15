@@ -677,6 +677,9 @@ function ShippingPage({ locale }: { locale: Locale }) {
 function ArticlesPage({ locale }: { locale: Locale }) {
   const articleSummaries = guideDepthCopy[locale].articleSummaries;
   const depth = guideDepthCopy[locale].articles;
+  const visibleArticles = articles.filter(
+    (article) => locale === "en" || article.localized !== false,
+  );
 
   return localizeReactNode(
     <>
@@ -716,7 +719,7 @@ function ArticlesPage({ locale }: { locale: Locale }) {
       />
 
       <section className="section-shell article-index" aria-label="Buying guides">
-        {articles.map((article, index) => (
+        {visibleArticles.map((article, index) => (
           <article key={article.slug}>
             <div className="article-index-image">
               <img
@@ -733,7 +736,7 @@ function ArticlesPage({ locale }: { locale: Locale }) {
               <h2>
                 <Link href={`/articles/${article.slug}`}>{article.title}</Link>
               </h2>
-              <p>{articleSummaries[article.slug]}</p>
+              <p>{articleSummaries[article.slug] ?? article.description}</p>
               <dl>
                 <div>
                   <dt>Primary topic</dt>

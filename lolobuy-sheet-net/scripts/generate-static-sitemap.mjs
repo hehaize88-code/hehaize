@@ -15,7 +15,7 @@ const contentDates = JSON.parse(
   ),
 );
 const corePaths = Object.keys(contentDates.core);
-const articleSlugs = Object.keys(contentDates.articles);
+const articleRecords = Object.entries(contentDates.articles);
 const trustPaths = Object.keys(contentDates.trust);
 const categorySlugs = ["shoes", "hoodies", "jackets", "accessories"];
 
@@ -28,7 +28,13 @@ function absolute(pathname) {
   return new URL(pathname, origin).toString();
 }
 
-function alternateLinks(pathname) {
+function alternateLinks(pathname, localized = true) {
+  if (!localized) {
+    return [
+      `    <xhtml:link rel="alternate" hreflang="en" href="${absolute(pathname)}" />`,
+      `    <xhtml:link rel="alternate" hreflang="x-default" href="${absolute(pathname)}" />`,
+    ].join("\n");
+  }
   return [
     ...locales.map(
       (locale) =>
@@ -45,11 +51,14 @@ const localizedEntries = corePaths.flatMap((pathname) =>
     lastModified: contentDates.core[pathname][locale],
   })),
 );
-const articleEntries = articleSlugs.flatMap((slug) =>
-  locales.map((locale) => ({
+const articleEntries = articleRecords.flatMap(([slug, article]) =>
+  (article.localized === false ? ["en"] : locales).map((locale) => ({
     location: absolute(localizedPath(locale, `/articles/${slug}`)),
-    alternates: alternateLinks(`/articles/${slug}`),
-    lastModified: contentDates.articles[slug].modified,
+    alternates: alternateLinks(
+      `/articles/${slug}`,
+      article.localized !== false,
+    ),
+    lastModified: article.modified,
   })),
 );
 const categoryEntries = categorySlugs.map((slug) => ({

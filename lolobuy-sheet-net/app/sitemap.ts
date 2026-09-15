@@ -38,11 +38,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })),
     ),
     ...articles.flatMap((article) =>
-      locales.map((locale) => ({
+      (article.localized === false ? ["en"] as const : locales).map((locale) => ({
         url: absoluteUrl(localizedPath(locale, `/articles/${article.slug}`)),
         lastModified: articleDates[article.slug].modified,
         alternates: {
-          languages: articleLanguageAlternates(article.slug),
+          languages: articleLanguageAlternates(
+            article.slug,
+            article.localized !== false,
+          ),
         },
       })),
     ),

@@ -23,7 +23,10 @@ export async function generateMetadata({
     description: article.description,
     alternates: {
       canonical: absoluteUrl(`/articles/${article.slug}`),
-      languages: articleLanguageAlternates(article.slug),
+      languages: articleLanguageAlternates(
+        article.slug,
+        article.localized !== false,
+      ),
     },
     keywords: [article.primaryKeyword, ...article.secondaryKeywords],
     openGraph: {

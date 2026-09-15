@@ -57,13 +57,16 @@ const productLinkRewriter = {
 };
 
 const GA4_SNIPPET =
-  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20260915-search-fix"></script>';
+  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20260915-seo"></script>';
 
 const GA4_INIT_SCRIPT = String.raw`
 window.dataLayer = window.dataLayer || [];
 window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
 window.gtag('js', new Date());
-window.gtag('config', 'G-QY8MM7VZV2');
+window.gtag('config', 'G-QY8MM7VZV2', {
+  site_domain: window.location.hostname,
+  content_group: 'lolobuy-sheet.net'
+});
 
 document.addEventListener('click', function (event) {
   var target = event.target;
@@ -81,6 +84,8 @@ document.addEventListener('click', function (event) {
       link_domain: url.hostname,
       link_text: (link.getAttribute('aria-label') || link.textContent || '').trim().slice(0, 120),
       link_location: window.location.pathname,
+      site_domain: window.location.hostname,
+      content_group: 'lolobuy-sheet.net',
       outbound: true,
       transport_type: 'beacon'
     };
@@ -108,6 +113,8 @@ document.addEventListener('submit', function (event) {
       search_term: searchTerm,
       link_url: url.href,
       link_location: window.location.pathname,
+      site_domain: window.location.hostname,
+      content_group: 'lolobuy-sheet.net',
       transport_type: 'beacon'
     });
 

@@ -107,8 +107,14 @@ export function localizedPath(locale: Locale, rawHref: string) {
   return `${pathname}${url.search}${url.hash}`;
 }
 
-export function articleLanguageAlternates(slug: string) {
+export function articleLanguageAlternates(slug: string, localized = true) {
   const path = `/articles/${slug}`;
+  if (!localized) {
+    return {
+      en: absoluteUrl(path),
+      "x-default": absoluteUrl(path),
+    };
+  }
   return {
     en: absoluteUrl(localizedPath("en", path)),
     es: absoluteUrl(localizedPath("es", path)),

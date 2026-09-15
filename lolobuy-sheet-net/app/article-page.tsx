@@ -23,9 +23,13 @@ export function ArticlePage({
   const canonicalPath = localizedPath(locale, `/articles/${copy.slug}`);
   const canonical = absoluteUrl(canonicalPath);
   const localPath = (path: string) => localizedPath(locale, path);
-  const relatedArticles = articles.filter(
-    (candidate) => candidate.slug !== copy.slug,
-  ).map((candidate) => getLocalizedArticle(candidate, locale));
+  const relatedArticles = articles
+    .filter(
+      (candidate) =>
+        candidate.slug !== copy.slug &&
+        (locale === "en" || candidate.localized !== false),
+    )
+    .map((candidate) => getLocalizedArticle(candidate, locale));
 
   const articleJsonLd = {
     "@context": "https://schema.org",

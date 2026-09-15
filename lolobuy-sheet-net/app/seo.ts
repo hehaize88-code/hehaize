@@ -15,9 +15,9 @@ type SeoCopy = {
 const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   "/": {
     en: {
-      title: "LoloBuy Spreadsheet 2026: Finds, QC & Shipping",
+      title: "LoloBuy Spreadsheet 2026: Product Links, Finds & QC",
       description:
-        "Browse current LoloBuy spreadsheet product finds with matched images and item links, plus independent QC and international-shipping guidance.",
+        "Browse current LoloBuy spreadsheet finds with matched product links, then use independent QC, sizing and shipping guides before ordering.",
     },
     es: {
       title: "Hoja LoloBuy 2026: productos, QC y envíos",
@@ -42,9 +42,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/products": {
     en: {
-      title: "LoloBuy Spreadsheet Products 2026: Matched Product Links",
+      title: "LoloBuy Product Links 2026: Spreadsheet Finds & QC",
       description:
-        "Browse LoloBuy spreadsheet product finds with matched images and direct item links. Search the main catalog and verify the live variant before ordering.",
+        "Find matched LoloBuy product links, search the main catalog and verify the current seller, variant and QC evidence before ordering.",
     },
     es: {
       title: "Productos LoloBuy y búsqueda en el catálogo",
@@ -69,7 +69,7 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/categories": {
     en: {
-      title: "LoloBuy Product Categories",
+      title: "LoloBuy Product Links by Category | 2026 Spreadsheet",
       description:
         "Browse shoes, hoodies, jackets and accessories through focused main-catalog category links.",
     },
@@ -84,9 +84,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
         "Stöbere über gezielte Kategorien des Hauptkatalogs nach Schuhen, Hoodies, Jacken und Accessoires.",
     },
     fr: {
-      title: "Catégories de produits LoloBuy",
+      title: "Liens LoloBuy 2026 : produits, catégories et QC",
       description:
-        "Parcourez chaussures, sweats, vestes et accessoires grâce aux liens ciblés vers les catégories du catalogue principal.",
+        "Parcourez des liens LoloBuy pour chaussures, sweats, vestes et accessoires, puis vérifiez le produit et les photos QC.",
     },
     it: {
       title: "Categorie di prodotti LoloBuy",
@@ -96,9 +96,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/qc-guide": {
     en: {
-      title: "LoloBuy QC Photos Checklist 2026: What to Check",
+      title: "LoloBuy QC Finder 2026: Photos & Inspection Checklist",
       description:
-        "Use this LoloBuy QC photos checklist to verify item identity, selected variant, measurements and visible condition before parcel submission.",
+        "Use this LoloBuy QC finder checklist to verify product identity, selected variant, measurements and visible condition before shipping.",
     },
     es: {
       title: "Guía de fotos QC e inspección de LoloBuy",
@@ -123,9 +123,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/shipping": {
     en: {
-      title: "LoloBuy Shipping Cost 2026: Weight, Rates & Parcel Guide",
+      title: "LoloBuy Shipping Calculator 2026: Weight & Rates",
       description:
-        "Estimate LoloBuy shipping by destination, actual versus volumetric weight, parcel size and packing. See a worked example and a checklist before paying.",
+        "Estimate LoloBuy shipping cost using destination, actual and volumetric weight, packed dimensions, live route rates and a pre-payment checklist.",
     },
     es: {
       title: "Coste de envío LoloBuy y planificación del paquete",
@@ -150,9 +150,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/articles": {
     en: {
-      title: "LoloBuy Buying Guides 2026: Spreadsheet, QC & Shipping",
+      title: "LoloBuy Guides 2026: Links, QC, Sizing & Shipping",
       description:
-        "Read fact-checked LoloBuy spreadsheet, QC and shipping guides written around real buying decisions.",
+        "Read evidence-led LoloBuy guides for product links, QC photos, sizing, fees, shipping estimates, reviews and order status.",
     },
     es: {
       title: "Guías LoloBuy: hoja, QC y envío",
@@ -177,9 +177,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/faq": {
     en: {
-      title: "LoloBuy FAQ 2026: Safety, QC, Storage & Shipping",
+      title: "LoloBuy Help 2026: Safety, QC, Fees & Shipping",
       description:
-        "Get clear answers about LoloBuy spreadsheet links, ordering, QC photos, 90-day storage, parcel consolidation and international shipping.",
+        "Get clear answers about LoloBuy product links, ordering, QC photos, fees, storage, parcel consolidation and international shipping.",
     },
     es: {
       title: "FAQ LoloBuy: hoja, QC, almacén y envío",
@@ -204,9 +204,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/how-it-works": {
     en: {
-      title: "How to Use LoloBuy in 2026: Order, QC & Shipping Steps",
+      title: "How to Buy With LoloBuy 2026: Link to Warehouse",
       description:
-        "Follow the LoloBuy buying flow from a matched product link and order review to warehouse QC, parcel planning and international shipping.",
+        "Follow the LoloBuy buying flow from a verified product link and exact variant to warehouse QC, parcel planning and shipping.",
     },
     es: {
       title: "Cómo funciona el proceso de búsqueda LoloBuy",

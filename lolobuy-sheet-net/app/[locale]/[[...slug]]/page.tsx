@@ -28,7 +28,7 @@ function resolve(params: LocalizedParams) {
 
   if (params.slug?.length === 2 && params.slug[0] === "articles") {
     const article = getArticle(params.slug[1]);
-    if (article) {
+    if (article?.localized !== false) {
       return { locale: params.locale, kind: "article" as const, article };
     }
   }
@@ -42,7 +42,7 @@ export function generateStaticParams() {
     ...(["products", "categories", "qc-guide", "shipping", "articles", "faq", "how-it-works"] as const).map(
       (path) => ({ locale, slug: [path] }),
     ),
-    ...articles.map((article) => ({
+    ...articles.filter((article) => article.localized !== false).map((article) => ({
       locale,
       slug: ["articles", article.slug],
     })),
@@ -66,7 +66,10 @@ export async function generateMetadata({
       description: article.description,
       alternates: {
         canonical: absoluteUrl(canonicalPath),
-        languages: articleLanguageAlternates(article.slug),
+        languages: articleLanguageAlternates(
+          article.slug,
+          article.localized !== false,
+        ),
       },
       keywords: [article.primaryKeyword, ...article.secondaryKeywords],
       openGraph: {

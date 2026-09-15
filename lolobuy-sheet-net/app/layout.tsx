@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://lolobuy-sheet.net"),
   title: {
-    default: "LoloBuy Spreadsheet 2026: Finds, QC & Shipping",
+    default: "LoloBuy Spreadsheet 2026: Product Links, Finds & QC",
     template: "%s | LoloBuy Sheet",
   },
   description:
-    "Browse current LoloBuy spreadsheet product finds with correctly matched images and item links, plus independent QC and international-shipping guidance.",
+    "Browse current LoloBuy spreadsheet finds with matched product links, then use independent QC, sizing and shipping guides before ordering.",
   alternates: {
     canonical: "/",
   },
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "LoloBuy product links",
   ],
   openGraph: {
-    title: "LoloBuy Spreadsheet 2026: Finds, QC & Shipping",
+    title: "LoloBuy Spreadsheet 2026: Product Links, Finds & QC",
     description:
-      "Search product finds, open correctly matched item pages, and learn what to check before ordering and shipping with LoloBuy.",
+      "Find matched product links and learn what to check for QC, sizing, fees and shipping before ordering with LoloBuy.",
     type: "website",
     url: "/",
     siteName: "LoloBuy Sheet",

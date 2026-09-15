@@ -1,4 +1,5 @@
 import contentDates from "./content-dates.json";
+import { priorityArticles } from "./priority-articles";
 
 export type ArticleSection = {
   heading: string;
@@ -27,9 +28,10 @@ export type ArticleRecord = {
   takeaways: string[];
   sourceNote: string;
   sections: ArticleSection[];
+  localized?: boolean;
 };
 
-export const articles: ArticleRecord[] = [
+const existingArticles: ArticleRecord[] = [
   {
     slug: "how-to-use-lolobuy-spreadsheet",
     title:
@@ -1334,6 +1336,11 @@ export const articles: ArticleRecord[] = [
       },
     ],
   },
+];
+
+export const articles: ArticleRecord[] = [
+  ...priorityArticles,
+  ...existingArticles,
 ];
 
 export function getArticle(slug: string) {
