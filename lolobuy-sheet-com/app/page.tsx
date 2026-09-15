@@ -9,7 +9,7 @@ const homeMetadataCopy: Record<
   { title: string; description: string }
 > = {
   en: {
-    title: "Lolobuy Spreadsheet 2026: Product Finds, Links & QC",
+    title: "LoloBuy Spreadsheet 2026: Finds, W2C Links & QC",
     description:
       "Browse Lolobuy product finds by category, open current listing links, and check sizing, variants and QC details before ordering.",
   },

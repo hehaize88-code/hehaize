@@ -12,8 +12,10 @@ import {
 
 export default function SiteHeader({
   locale: initialLocale = "en",
+  languageFallbackPath,
 }: {
   locale?: Locale;
+  languageFallbackPath?: string;
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const locale = initialLocale;
@@ -37,8 +39,11 @@ export default function SiteHeader({
   function changeLocale(nextLocale: Locale) {
     const url = new URL(window.location.href);
     window.localStorage.setItem("lolobuy-sheet-language", nextLocale);
+    const destinationPath = languageFallbackPath
+      ? languageFallbackPath
+      : `${url.pathname}${url.search}${url.hash}`;
     window.location.assign(
-      localizedPath(`${url.pathname}${url.search}${url.hash}`, nextLocale),
+      localizedPath(destinationPath, nextLocale),
     );
   }
 

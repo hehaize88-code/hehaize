@@ -1,4 +1,5 @@
 import { sellerPageArticle } from "./seller-page-article";
+import { priorityArticles } from "./priority-articles";
 
 export const destinationBase = "https://www.cnbuycha.com";
 
@@ -237,7 +238,7 @@ export const articles: Article[] = [
   {
     slug: "lolobuy-spreadsheet-guide",
     title:
-      "Lolobuy Spreadsheet Guide 2026: How to Use a Product Directory Without Skipping Verification",
+      "How to Use a LoloBuy Spreadsheet in 2026: Find, Verify and Order with Better Evidence",
     shortTitle: "How to use a Lolobuy spreadsheet carefully",
     description:
       "A practical guide to using a Lolobuy spreadsheet for discovery, checking source listings, reading QC information and avoiding rushed buying decisions.",
@@ -375,7 +376,7 @@ export const articles: Article[] = [
   {
     slug: "how-to-read-qc-photos",
     title:
-      "How to Read Warehouse QC Photos: A Practical Checklist for Clothing, Shoes, Bags and Accessories",
+      "LoloBuy QC Photos Checklist 2026: What to Check Before Shipping",
     shortTitle: "A practical warehouse QC photo checklist",
     description:
       "Learn what warehouse QC photos can show, what they cannot prove, and how to review shape, measurements, construction, damage and order details.",
@@ -518,7 +519,7 @@ export const articles: Article[] = [
   {
     slug: "plan-china-shopping-haul",
     title:
-      "Planning a China Shopping Haul: Storage, Consolidation, Weight and Shipping Decisions",
+      "LoloBuy Shipping Guide 2026: Cost Factors, Weight and Parcel Planning",
     shortTitle: "Plan storage, consolidation and shipping",
     description:
       "A grounded haul-planning guide covering warehouse storage, consolidation, actual and volumetric weight, packaging choices and route checks.",
@@ -662,7 +663,7 @@ export const articles: Article[] = [
   {
     slug: "lolobuy-review-early-user-experience",
     title:
-      "Lolobuy Review 2026: What an Early User Report Tells Us—and What It Does Not",
+      "Is LoloBuy Legit? A 2026 Review of Public Facts and Early User Evidence",
     shortTitle: "Lolobuy review: useful evidence, clear limits",
     description:
       "A source-led Lolobuy review examining one detailed early shopper report, the QC mismatch it documented, and the important questions that still require a completed parcel.",
@@ -1714,6 +1715,7 @@ export const articles: Article[] = [
       },
     ],
   },
+  ...priorityArticles,
   sellerPageArticle,
 ];
 

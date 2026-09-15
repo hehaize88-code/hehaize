@@ -59,7 +59,7 @@ const routesByArticle: Record<string, string[]> = {
   ],
   "lolobuy-keyword-search-product-finds": [
     "/finds",
-    "/categories/hoodies",
+    "/categories/hoodies-sweaters",
     "/articles/lolobuy-weidian-link-guide",
     "/articles/lolobuy-spreadsheet-guide",
   ],
@@ -81,6 +81,54 @@ const routesByArticle: Record<string, string[]> = {
     "/articles/lolobuy-taobao-finds-compare-options",
     "/articles/lolobuy-weidian-link-guide",
   ],
+  "lolobuy-product-link-not-working": [
+    "/finds",
+    "/articles/lolobuy-image-search-guide",
+    "/articles/lolobuy-weidian-link-guide",
+    "/articles/lolobuy-seller-page-checklist",
+  ],
+  "lolobuy-image-search-guide": [
+    "/finds",
+    "/articles/lolobuy-product-link-not-working",
+    "/articles/lolobuy-keyword-search-product-finds",
+    "/articles/lolobuy-seller-page-checklist",
+  ],
+  "lolobuy-order-status-guide": [
+    "/how-it-works",
+    "/articles/lolobuy-return-refund-guide",
+    "/articles/lolobuy-tracking-not-updating-guide",
+    "/guides/shipping",
+  ],
+  "lolobuy-fees-explained": [
+    "/guides/shipping",
+    "/articles/lolobuy-payment-guide",
+    "/articles/plan-china-shopping-haul",
+    "/finds",
+  ],
+  "lolobuy-payment-guide": [
+    "/articles/lolobuy-fees-explained",
+    "/articles/lolobuy-order-status-guide",
+    "/guides/shipping",
+    "/how-it-works",
+  ],
+  "lolobuy-return-refund-guide": [
+    "/articles/how-to-read-qc-photos",
+    "/articles/lolobuy-extra-qc-photos-measurements",
+    "/articles/lolobuy-qc-mismatch-evidence-guide",
+    "/articles/lolobuy-order-status-guide",
+  ],
+  "lolobuy-extra-qc-photos-measurements": [
+    "/guides/qc",
+    "/articles/how-to-read-qc-photos",
+    "/articles/lolobuy-return-refund-guide",
+    "/articles/lolobuy-shoe-size-guide",
+  ],
+  "lolobuy-restricted-items-shipping-routes": [
+    "/guides/shipping",
+    "/articles/plan-china-shopping-haul",
+    "/articles/lolobuy-fees-explained",
+    "/articles/lolobuy-order-status-guide",
+  ],
 };
 
 const contextCopy: Record<Locale, ContextCopy> = {
@@ -94,6 +142,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/finds": "Curated product directory",
       "/categories/shoes": "Shoes size and QC guide",
       "/categories/bags": "Bags measurement and shipping guide",
+      "/categories/hoodies-sweaters": "Hoodies measurement and QC guide",
       "/guides/qc": "Warehouse QC checklist",
       "/guides/shipping": "Packed-parcel shipping guide",
       "/how-it-works": "Four-stage buying workflow",
@@ -117,6 +166,22 @@ const contextCopy: Record<Locale, ContextCopy> = {
         "Product-link and variant verification",
       "/articles/lolobuy-keyword-search-product-finds":
         "Keyword search and shortlist workflow",
+      "/articles/lolobuy-product-link-not-working":
+        "Broken product-link recovery guide",
+      "/articles/lolobuy-image-search-guide":
+        "Product discovery from an image",
+      "/articles/lolobuy-order-status-guide":
+        "Order and parcel status guide",
+      "/articles/lolobuy-fees-explained":
+        "Product-to-parcel cost breakdown",
+      "/articles/lolobuy-payment-guide":
+        "Product and parcel payment guide",
+      "/articles/lolobuy-return-refund-guide":
+        "Return and refund evidence guide",
+      "/articles/lolobuy-extra-qc-photos-measurements":
+        "Extra QC photo and measurement requests",
+      "/articles/lolobuy-restricted-items-shipping-routes":
+        "Restricted-item route checklist",
     },
   },
   es: {
@@ -129,6 +194,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/finds": "Directorio de productos seleccionados",
       "/categories/shoes": "Guía de talla y QC para calzado",
       "/categories/bags": "Guía de medidas y envío para bolsos",
+      "/categories/hoodies-sweaters": "Guía de medidas y QC para sudaderas",
       "/guides/qc": "Lista QC de almacén",
       "/guides/shipping": "Guía de envío del paquete preparado",
       "/how-it-works": "Flujo de compra en cuatro etapas",
@@ -164,6 +230,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/finds": "Kuratiertes Produktverzeichnis",
       "/categories/shoes": "Schuhgrößen- und QC-Ratgeber",
       "/categories/bags": "Taschenmaß- und Versandratgeber",
+      "/categories/hoodies-sweaters": "Hoodie-Maß- und QC-Ratgeber",
       "/guides/qc": "Lager-QC-Checkliste",
       "/guides/shipping": "Versandratgeber für das gepackte Paket",
       "/how-it-works": "Vierstufiger Bestellablauf",
@@ -199,6 +266,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/finds": "Répertoire de produits sélectionnés",
       "/categories/shoes": "Guide taille et QC des chaussures",
       "/categories/bags": "Guide mesures et expédition des sacs",
+      "/categories/hoodies-sweaters": "Guide mesures et QC des sweats",
       "/guides/qc": "Checklist QC d’entrepôt",
       "/guides/shipping": "Guide d’expédition du colis préparé",
       "/how-it-works": "Parcours d’achat en quatre étapes",
@@ -234,6 +302,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/finds": "Directory dei prodotti selezionati",
       "/categories/shoes": "Guida taglie e QC per le scarpe",
       "/categories/bags": "Guida misure e spedizione per le borse",
+      "/categories/hoodies-sweaters": "Guida misure e QC delle felpe",
       "/guides/qc": "Checklist QC di magazzino",
       "/guides/shipping": "Guida alla spedizione del pacco preparato",
       "/how-it-works": "Flusso d’acquisto in quattro fasi",

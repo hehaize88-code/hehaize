@@ -22,6 +22,7 @@ import {
 } from "../../seo";
 import { articles } from "../../site-data";
 import { getArticleMedia } from "../../article-media";
+import { englishOnlyArticleSlugs } from "../../priority-articles";
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
@@ -30,13 +31,13 @@ export function generateStaticParams() {
 const articleSearchTitles: Record<Locale, Record<string, string>> = {
   en: {
     "lolobuy-spreadsheet-guide":
-      "Lolobuy Spreadsheet Guide 2026: Find & Verify Products",
+      "How to Use a LoloBuy Spreadsheet in 2026",
     "how-to-read-qc-photos":
-      "How to Read Lolobuy QC Photos: Warehouse Checklist",
+      "LoloBuy QC Photos Checklist 2026: Before Shipping",
     "plan-china-shopping-haul":
-      "Lolobuy Shipping Guide: Storage, Consolidation & Weight",
+      "LoloBuy Shipping Guide 2026: Weight & Parcel Planning",
     "lolobuy-review-early-user-experience":
-      "Lolobuy Review 2026: Early User Evidence Examined",
+      "Is LoloBuy Legit? 2026 Facts and User Evidence",
     "lolobuy-weidian-link-guide":
       "Lolobuy Weidian Link Guide 2026: Order & QC Steps",
     "lolobuy-qc-mismatch-evidence-guide":
@@ -53,6 +54,22 @@ const articleSearchTitles: Record<Locale, Record<string, string>> = {
       "LoloBuy 1688 Finds: Check MOQ and Variants",
     "lolobuy-seller-page-checklist":
       "LoloBuy Seller Page Checklist: Verify Before Saving",
+    "lolobuy-product-link-not-working":
+      "LoloBuy Link Not Working? Fix Taobao, Weidian & 1688",
+    "lolobuy-image-search-guide":
+      "LoloBuy Image Search Guide: Find Products from Photos",
+    "lolobuy-order-status-guide":
+      "LoloBuy Order Status Guide: Purchased to Shipped",
+    "lolobuy-fees-explained":
+      "LoloBuy Fees Explained 2026: Product to Parcel Costs",
+    "lolobuy-payment-guide":
+      "How to Pay on LoloBuy: Product and Shipping Payments",
+    "lolobuy-return-refund-guide":
+      "LoloBuy Return and Refund Guide: Before Shipping",
+    "lolobuy-extra-qc-photos-measurements":
+      "LoloBuy Extra QC Photos: Measurements That Matter",
+    "lolobuy-restricted-items-shipping-routes":
+      "LoloBuy Restricted Items and Shipping Route Checklist",
   },
   es: {
     "lolobuy-spreadsheet-guide":
@@ -188,6 +205,12 @@ export async function generateMetadata({
     description: article.description,
   });
 
+  if (englishOnlyArticleSlugs.has(article.slug)) {
+    metadata.alternates = {
+      canonical: localizedPath(`/articles/${article.slug}`, "en"),
+    };
+  }
+
   return {
     ...metadata,
     title: { absolute: searchTitle },
@@ -248,7 +271,12 @@ export default async function ArticlePage({
 
   return (
     <main>
-      <SiteHeader locale={locale} />
+      <SiteHeader
+        locale={locale}
+        languageFallbackPath={
+          englishOnlyArticleSlugs.has(article.slug) ? "/articles" : undefined
+        }
+      />
       <article className="longform">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <span>

@@ -5,6 +5,7 @@ import { keywordSearchArticleLocales } from "./keyword-search-article-locales";
 import { taobaoFindsArticleLocales } from "./taobao-finds-article-locales";
 import { finds1688ArticleLocales } from "./1688-finds-article-locales";
 import { sellerPageArticleLocales } from "./seller-page-article-locales";
+import { englishOnlyArticleSlugs } from "./priority-articles";
 import {
   articles,
   categories,
@@ -1045,10 +1046,12 @@ const qcMismatchArticleText: Record<
 
 export function getLocalizedArticles(locale: Locale): Article[] {
   if (locale === "en") {
-    return articles;
+    return [...articles].sort((a, b) => b.published.localeCompare(a.published));
   }
 
-  return articles.map((article, index) => {
+  return articles
+    .filter((article) => !englishOnlyArticleSlugs.has(article.slug))
+    .map((article, index) => {
     const translatedWeidian =
       article.slug === "lolobuy-weidian-link-guide"
         ? weidianArticleText[locale]
@@ -1133,5 +1136,6 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       sources: body.sources.map(([label, note]) => ({ label, note })),
       sections: body.sections,
     };
-  });
+    })
+    .sort((a, b) => b.published.localeCompare(a.published));
 }

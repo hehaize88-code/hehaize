@@ -3,6 +3,7 @@ import { localeOptions, localizedPath } from "./i18n";
 import { languageAlternates } from "./seo";
 import { articles, productFinds } from "./site-data";
 import { categoryGuideSlugs } from "./category-guide-data";
+import { englishOnlyArticleSlugs } from "./priority-articles";
 
 const baseUrl = "https://lolobuy-sheet.com";
 const staticLastModified = new Date("2026-08-10");
@@ -51,20 +52,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return pages.flatMap((page) =>
-    localeOptions.map((option) => ({
+  return pages.flatMap((page) => {
+    const articleSlug = page.path.startsWith("/articles/")
+      ? page.path.slice("/articles/".length)
+      : null;
+    const locales =
+      articleSlug && englishOnlyArticleSlugs.has(articleSlug)
+        ? localeOptions.filter((option) => option.code === "en")
+        : localeOptions;
+    const alternates =
+      articleSlug && englishOnlyArticleSlugs.has(articleSlug)
+        ? {
+            en: `${baseUrl}${localizedPath(page.path, "en")}`,
+            "x-default": `${baseUrl}${localizedPath(page.path, "en")}`,
+          }
+        : Object.fromEntries(
+            Object.entries(languageAlternates(page.path)).map(([locale, path]) => [
+              locale,
+              `${baseUrl}${path}`,
+            ]),
+          );
+
+    return locales.map((option) => ({
       url: `${baseUrl}${localizedPath(page.path, option.code)}`,
       lastModified: page.lastModified,
       changeFrequency: page.changeFrequency,
       priority: page.priority,
       alternates: {
-        languages: Object.fromEntries(
-          Object.entries(languageAlternates(page.path)).map(([locale, path]) => [
-            locale,
-            `${baseUrl}${path}`,
-          ]),
-        ),
+        languages: alternates,
       },
-    })),
-  );
+    }));
+  });
 }

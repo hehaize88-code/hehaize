@@ -43,6 +43,12 @@ const productLinkRewriter = {
   },
 };
 
+const productSearchRewriter = {
+  element(element) {
+    element.setAttribute("action", "https://www.cnbuycha.com/AllProducts/");
+  },
+};
+
 const GA4_SNIPPET =
   '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
 
@@ -112,6 +118,22 @@ function withGoogleAnalytics(response, request) {
       },
     })
     .on("a[href]", productLinkRewriter)
+    .on("form.product-search", productSearchRewriter)
+    .on('form.product-search input[name="keywords"]', {
+      element(element) {
+        element.setAttribute("name", "q");
+      },
+    })
+    .on('form.product-search input[name="channelid"]', {
+      element(element) {
+        element.remove();
+      },
+    })
+    .on('form.product-search input[name="method"]', {
+      element(element) {
+        element.remove();
+      },
+    })
     .transform(htmlResponse);
 }
 
@@ -167,6 +189,36 @@ async function versionAssetReferences(response) {
   });
 }
 
+function cacheableHtmlRequest(request, url) {
+  return (
+    request.method === "GET" &&
+    url.search === "" &&
+    (request.headers.get("accept") || "").includes("text/html") &&
+    !url.pathname.startsWith("/signin-with-chatgpt") &&
+    !url.pathname.startsWith("/callback")
+  );
+}
+
+function pageCacheKey(request) {
+  const url = new URL(request.url);
+  url.searchParams.set("__lolobuy_build", PAGES_ASSET_VERSION);
+  return new Request(url, { headers: { accept: "text/html" } });
+}
+
+function withPageCacheHeaders(response, status) {
+  const headers = new Headers(response.headers);
+  headers.set(
+    "cache-control",
+    "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800",
+  );
+  headers.set("x-lolobuy-edge-cache", status);
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -198,11 +250,26 @@ export default {
       }
     }
 
+    const canCache = cacheableHtmlRequest(request, url);
+    const cache = canCache && typeof caches !== "undefined" ? caches.default : null;
+    const cacheKey = cache ? pageCacheKey(request) : null;
+    if (cache && cacheKey) {
+      const cached = await cache.match(cacheKey);
+      if (cached) return withPageCacheHeaders(cached, "HIT");
+    }
+
     const response = await applicationWorker.fetch(request, env, ctx);
     const versionedResponse = await versionAssetReferences(response);
-    return withGoogleAnalytics(
+    let finalResponse = withGoogleAnalytics(
       withSecurityHeaders(await withSearchSafeNotFound(versionedResponse)),
       request,
     );
+
+    if (cache && cacheKey && finalResponse.status === 200) {
+      finalResponse = withPageCacheHeaders(finalResponse, "MISS");
+      ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
+    }
+
+    return finalResponse;
   },
 };
