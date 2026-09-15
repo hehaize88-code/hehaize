@@ -1,8 +1,16 @@
-import applicationWorker from "../dist/server/index.js";
 import {
   withSearchSafeNotFound,
   withSecurityHeaders,
 } from "../worker/security-headers.ts";
+
+let applicationWorkerPromise;
+
+function loadApplicationWorker() {
+  applicationWorkerPromise ??= import("../dist/server/index.js").then(
+    (module) => module.default,
+  );
+  return applicationWorkerPromise;
+}
 
 const productDestinations = Object.freeze({
   "snow-ski-goggles": "3359",
@@ -258,6 +266,7 @@ export default {
       if (cached) return withPageCacheHeaders(cached, "HIT");
     }
 
+    const applicationWorker = await loadApplicationWorker();
     const response = await applicationWorker.fetch(request, env, ctx);
     const versionedResponse = await versionAssetReferences(response);
     let finalResponse = withGoogleAnalytics(
