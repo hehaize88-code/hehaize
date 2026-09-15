@@ -250,7 +250,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
     inLanguage: locale,
     potentialAction: {
       "@type": "SearchAction",
-      target: `${mainSite}/search.html?keywords={search_term_string}&channelid=2`,
+      target: `${mainSite}/AllProducts/?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };
@@ -281,7 +281,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
           <p className="hero-intro">{copy.home.intro}</p>
           <form
             className="search-form"
-            action={`${mainSite}/search.html`}
+            action={`${mainSite}/AllProducts/`}
             method="get"
             target="_blank"
             data-outbound-kind="search"
@@ -292,10 +292,9 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
             <span aria-hidden="true">⌕</span>
             <input
               id={`product-search-${locale}`}
-              name="keywords"
+              name="q"
               placeholder={copy.home.searchPlaceholder}
             />
-            <input type="hidden" name="channelid" value="2" />
             <button type="submit">{copy.home.search}</button>
           </form>
           <div className="trust-row">
