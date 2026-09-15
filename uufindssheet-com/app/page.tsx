@@ -31,17 +31,16 @@ export default function Home() {
           </p>
           <form
             className="search-box"
-            action="https://www.cnbuycha.com/search.html"
+            action="https://www.cnbuycha.com/AllProducts/"
             method="get"
             role="search"
             aria-label="Search live main-site products"
             data-track-event="search_submit"
             data-cta-position="home_search"
           >
-            <input type="hidden" name="channelid" value="2" />
             <span className="search-icon" aria-hidden="true">⌕</span>
             <input
-              name="keywords"
+              name="q"
               required
               placeholder="Search shoes, hoodies, accessories…"
               aria-label="Search main-site products"
