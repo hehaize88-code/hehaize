@@ -36,7 +36,7 @@ interface ExecutionContext {
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "manual-seo-20260914";
+const htmlCacheVersion = "search-route-20260915";
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 

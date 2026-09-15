@@ -424,7 +424,7 @@ test("static Pages worker uses the current cache namespace and store allowlist",
     new URL("../cloudflare/static-worker.js", import.meta.url),
     "utf8",
   );
-  assert.match(source, /main-site-cnbuycha-20260914/);
+  assert.match(source, /search-route-20260915/);
   assert.match(source, /cnbuycha\.com/);
   assert.doesNotMatch(source, /cnfanssp\.com/);
 });
@@ -526,7 +526,7 @@ test("production HTML receives edge caching headers and is stored by pathname", 
     assert.equal(stored.length, 1);
     assert.equal(
       stored[0].key,
-      "https://joyagoochina.org/qc-guide/?__html_cache_version=manual-seo-20260914",
+      "https://joyagoochina.org/qc-guide/?__html_cache_version=search-route-20260915",
     );
   } finally {
     if (originalCaches) {
