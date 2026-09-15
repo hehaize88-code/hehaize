@@ -35,6 +35,13 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
+const HTML_CACHE_VERSION = "2026-09-15-search-route-v2";
+
+function htmlCacheKey(request) {
+  const url = new URL(request.url);
+  url.searchParams.set("__site_cache_version", HTML_CACHE_VERSION);
+  return new Request(url.toString(), { method: "GET", headers: request.headers });
+}
 
 function languageForPath(pathname) {
   const firstSegment = pathname.split("/").filter(Boolean)[0];
@@ -138,15 +145,16 @@ const googleAnalyticsWorker = {
     const analyticsAsset = await googleAnalyticsAsset(request);
     if (analyticsAsset) return analyticsAsset;
 
+    const cacheKey = request.method === "GET" ? htmlCacheKey(request) : null;
     if (request.method === "GET") {
-      const cached = await caches.default.match(request);
+      const cached = await caches.default.match(cacheKey);
       if (cached) return cached;
     }
 
     const response = withGoogleAnalytics(await worker.fetch(request, env, ctx), request);
     const contentType = response.headers.get("content-type") || "";
     if (request.method === "GET" && response.status === 200 && contentType.toLowerCase().includes("text/html")) {
-      ctx.waitUntil(caches.default.put(request, response.clone()));
+      ctx.waitUntil(caches.default.put(cacheKey, response.clone()));
     }
     return response;
   },
