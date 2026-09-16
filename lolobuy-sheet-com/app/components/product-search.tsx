@@ -12,7 +12,7 @@ export default function ProductSearch({
   return (
     <form
       className={compact ? "product-search product-search-compact" : "product-search"}
-      action="https://www.cnbuycha.com/AllProducts/"
+      action="https://cnbuycha.com/AllProducts/"
       method="get"
       target="_blank"
       role="search"

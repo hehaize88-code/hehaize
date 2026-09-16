@@ -3,7 +3,7 @@ const contentSecurityPolicy = [
   "base-uri 'self'",
   "connect-src 'self'",
   "font-src 'self' data:",
-  "form-action 'self' https://www.cnbuycha.com",
+  "form-action 'self' https://cnbuycha.com https://www.cnbuycha.com",
   "frame-ancestors 'none'",
   "img-src 'self' data: blob:",
   "object-src 'none'",

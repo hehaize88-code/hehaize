@@ -339,6 +339,25 @@ test("homepage fourth edit is Jersey and commercial links are qualified", async 
   assert.match(html, />Bags &amp; Accessories<\/span>/);
 });
 
+test("search forms use the live main-site directory query", async () => {
+  const worker = await loadWorker();
+
+  for (const path of ["/", "/categories", "/how-it-works"]) {
+    const response = await fetchPage(worker, path);
+    const html = await response.text();
+
+    assert.equal(response.status, 200, path);
+    assert.match(
+      html,
+      /<form[^>]*class="[^"]*product-search[^"]*"[^>]*action="https:\/\/cnbuycha\.com\/AllProducts\/"[^>]*method="get"/i,
+      `${path} must submit search to the live directory`,
+    );
+    assert.match(html, /<input[^>]*name="q"[^>]*type="search"|<input[^>]*type="search"[^>]*name="q"/i);
+    assert.doesNotMatch(html, /action="https:\/\/(?:www\.)?cnbuycha\.com\/search\.html/i);
+    assert.doesNotMatch(html, /<input[^>]*name="(?:channelid|method)"/i);
+  }
+});
+
 test("product cards open their exact matching main-site product pages", async () => {
   const worker = await loadWorker();
   const expectedProductUrls = [

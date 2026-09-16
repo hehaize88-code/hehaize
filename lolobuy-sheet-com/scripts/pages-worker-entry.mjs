@@ -53,12 +53,12 @@ const productLinkRewriter = {
 
 const productSearchRewriter = {
   element(element) {
-    element.setAttribute("action", "https://www.cnbuycha.com/AllProducts/");
+    element.setAttribute("action", "https://cnbuycha.com/AllProducts/");
   },
 };
 
-const GA4_SNIPPET =
-  '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
+const HEAD_SNIPPET =
+  '<script>document.addEventListener("submit",function(e){var f=e.target;if(!(f instanceof HTMLFormElement)||!f.matches("form.product-search"))return;var k=f.querySelector(\'input[name="keywords"]\');if(k)k.name="q";f.querySelectorAll(\'input[name="channelid"],input[name="method"]\').forEach(function(i){i.remove()});f.action="https://cnbuycha.com/AllProducts/";f.method="get"},true)</script><script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
 
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
@@ -122,7 +122,7 @@ function withGoogleAnalytics(response, request) {
   return new HTMLRewriter()
     .on("head", {
       element(element) {
-        element.append(GA4_SNIPPET, { html: true });
+        element.append(HEAD_SNIPPET, { html: true });
       },
     })
     .on("a[href]", productLinkRewriter)

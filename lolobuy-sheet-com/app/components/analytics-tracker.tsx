@@ -29,6 +29,14 @@ export default function AnalyticsTracker() {
         return;
       }
 
+      const legacyQuery = form.querySelector<HTMLInputElement>('input[name="keywords"]');
+      if (legacyQuery) legacyQuery.name = "q";
+      form.querySelectorAll('input[name="channelid"], input[name="method"]').forEach((input) => {
+        input.remove();
+      });
+      form.action = "https://cnbuycha.com/AllProducts/";
+      form.method = "get";
+
       const query = new FormData(form).get("q");
       sendEvent("search_submit", {
         query_length: typeof query === "string" ? query.trim().length : 0,
