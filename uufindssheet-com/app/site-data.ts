@@ -31,6 +31,14 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "LISTING COMPARISON GUIDE",
+    title: "Compare Multiple UUFinds Listings Without Assuming They Are Identical",
+    summary: "Build an identity-first matrix for seller, item, option and QC differences instead of merging similar titles, images or prices.",
+    href: "/guides/uufinds-compare-multiple-listings-evidence-matrix/",
+    read: "11 min read",
+    englishOnly: true,
+  },
+  {
     tag: "DEAD LINK RECOVERY GUIDE",
     title: "UUFinds Dead Link Recovery: Preserve the Source and Find a Backup Listing",
     summary: "Classify the failure, preserve the old item record and qualify a replacement without treating a redirect or copied image as the same listing.",

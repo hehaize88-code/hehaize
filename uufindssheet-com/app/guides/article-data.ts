@@ -347,6 +347,125 @@ export const guides: Guide[] = [
     ],
   },
   {
+    slug: "uufinds-compare-multiple-listings-evidence-matrix",
+    label: "LISTING COMPARISON GUIDE",
+    title: "Compare Multiple UUFinds Listings Without Assuming They Are Identical",
+    seoTitle: "Compare UUFinds Listings Without Assuming They Are Identical",
+    description: "Compare UUFinds listings with an identity-first evidence matrix for seller, item, option and QC differences instead of assuming similar pages show the same product.",
+    primaryKeyword: "compare UUFinds listings",
+    longTailKeywords: ["UUFinds product comparison", "compare QC listings", "same product different seller UUFinds", "UUFinds listing comparison checklist"],
+    updated: "September 17, 2026",
+    readTime: "11 min read",
+    publishedISO: "2026-09-17",
+    modifiedISO: "2026-09-17",
+    englishOnly: true,
+    hideSourceNote: true,
+    intro: [
+      "To compare UUFinds listings safely, begin with the possibility that every result is a different product record. Similar thumbnails, translated titles or prices can place candidates in the same research set, but they do not prove a shared seller, item, option, material or production batch. The useful question is not simply which card looks best. It is which current listing satisfies the buyer's requirements with the strongest traceable evidence and the fewest decision-critical unknowns.",
+      "This workflow builds one row per listing, normalizes only genuinely comparable fields, and keeps each QC set attached to its own source. It works for candidates found through exact links, product names, image search, a Similar panel or dead-link recovery. The result is a decision record that can select one candidate, preserve two genuinely different alternatives or stop when the evidence is too weak.",
+    ],
+    sections: [
+      {
+        heading: "1. Give every candidate a separate identity record",
+        paragraphs: [
+          "Assign Candidate A, B and C before copying any descriptive fields. For each row, save the complete UUFinds address, source marketplace, marketplace item or SPU identifier when visible, seller or shop name, live title, checked date and exact intended option. Keep the displayed currency with the price. If a result was reached through image search or a Similar panel, record that discovery route without treating it as an identity link.",
+          "Do not paste a newer URL over an older candidate. Separate rows preserve conflicts that a single merged record would hide. Two pages may use the same catalog photograph while their URLs expose different marketplace channels or item identifiers. One shop may relist a design under a new item number. Those candidates can be compared, but the relationship between them must remain Unknown unless a traceable source establishes more.",
+        ],
+        table: { caption: "Minimum identity block for each candidate", headers: ["Field", "Record", "Do not infer"], rows: [
+          ["Source", "Marketplace, item ID and complete address", "Same source from a shared image"],
+          ["Seller", "Visible shop or seller name", "Same seller from a translated title"],
+          ["Option", "Version, color, size, quantity and add-ons", "Equivalent option from one matching word"],
+          ["Timing", "Page-check and QC-record dates", "Current availability from an older record"],
+        ] },
+      },
+      {
+        heading: "2. Define the comparison gate before ranking",
+        paragraphs: [
+          "Write the buyer's non-negotiable requirements before looking at prices or popularity counters. A footwear gate might require a particular size system, colorway, closure and measurable insole range. A bag gate might require external dimensions, closure type and an included strap. A garment gate might require a specific version, color, flat measurement range and construction feature. Keep preferences, such as a slightly lower price or an extra accessory, in a second list.",
+          "Mark every must-have Pass, Conflict or Not shown for each candidate. A single hard conflict removes the listing even if its photographs appear attractive. Not shown is different from Pass: it identifies evidence that must be found on the live listing or requested later. This gate prevents the cheapest or most photographed candidate from winning before the product itself has been defined.",
+        ],
+        points: [
+          "Use observable requirements, not labels such as best quality or trusted seller.",
+          "Set measurement endpoints and acceptable ranges before reading a size chart.",
+          "Separate required included pieces from optional accessories shown in styling photos.",
+          "Reject a hard conflict; carry a material unknown forward as an explicit request.",
+        ],
+      },
+      {
+        heading: "3. Compare identifiers before visual resemblance",
+        paragraphs: [
+          "Work from the strongest separating fields to the weakest. Marketplace and item ID come first, followed by seller, option tuple, model or product code, size chart, included pieces and distinctive construction. Title wording and image resemblance come later because listings can translate text differently and reuse catalog media. A Find Similar result is a new lead, not confirmation that the original page and suggested page are interchangeable.",
+          "Use four relationship labels. Same listing requires the same marketplace item and matching option context. Same seller, new listing applies when the shop agrees but the item identity changes. Different seller applies when the source shop differs even if the product looks alike. Unresolved applies when decisive fields are absent. These labels describe what is supported; they do not make claims about shared factories, batches or authenticity.",
+        ],
+        table: { caption: "Relationship labels that prevent accidental merging", headers: ["Label", "Required evidence", "QC handling"], rows: [
+          ["Same listing", "Same marketplace item plus matching option", "Use only the matching option's dated record"],
+          ["Same seller, new listing", "Seller agrees; item ID differs", "Start a new QC record"],
+          ["Different seller", "Seller or shop differs", "Keep all evidence separate"],
+          ["Unresolved", "A decisive identifier is missing", "Treat media as reference only"],
+        ] },
+      },
+      {
+        heading: "4. Normalize options, size charts and measurements",
+        paragraphs: [
+          "Do not compare a size label in one listing with a body measurement in another as if both represented the same endpoint. Record the original option text, then add a working interpretation in a separate field. For measurements, save the unit, named endpoints, item state, method and source. A chest-width value measured flat is not the same as a chest circumference; an outside shoe length is not an insole length; a bag's external width is not its usable opening.",
+          "When a measurement appears only in a photograph, check the ruler zero, endpoints, unit, alignment, item tension and camera angle before using it. If Candidate A provides a seller chart while Candidate B has a photographed sample measurement, retain both source types rather than collapsing them into one number. The comparison can show that B has stronger sample-level evidence without claiming its size label converts directly to A's.",
+        ],
+      },
+      {
+        heading: "5. Score QC evidence by relevance, not volume",
+        paragraphs: [
+          "UUFinds product-detail records can display QC media from shopping agents or sellers together with fields such as recorded option, weight and QC time when available. Count only the views that answer a decision question. Ten repeated front views may be less useful than one clear size tag, one flat measurement and one close-up of the construction feature that defines the candidate. A large gallery total does not establish that the intended option has been photographed.",
+          "For each candidate, mark overall identity view, option marker, decision-critical detail, measurement evidence and defect-relevant angle as Useful, Ambiguous or Missing. Keep the source and date beside the assessment. Do not move a favorable QC set from Candidate A to B because both pages show the same catalog image. A missing listing-specific record remains missing until B produces its own traceable evidence.",
+        ],
+        table: { caption: "QC relevance matrix", headers: ["Evidence question", "Useful", "Ambiguous or missing"], rows: [
+          ["Is this the intended option?", "Option marker agrees", "Option is hidden or conflicts"],
+          ["Can the key construction be checked?", "Required area is clear", "Only distant or repeated views"],
+          ["Is the measurement usable?", "Endpoints, unit and state are visible", "Method or zero point is unclear"],
+          ["Is the record current enough?", "Date is recorded and appropriate for the decision", "Date is absent or treated as current stock"],
+        ] },
+      },
+      {
+        heading: "6. Treat price, weight and counters as dated fields",
+        paragraphs: [
+          "Record displayed price, currency and check date exactly, but compare price only after the identity and option gate. A price may belong to a default option rather than the intended configuration. It also excludes any costs later set by the independent agent, seller's domestic delivery, packaging, international transport, tax or other transaction terms unless those fields are separately verified at the relevant stage. Price similarity is not product identity, and a lower figure is not evidence of equal construction.",
+          "Apply the same discipline to an approximate weight, gallery count, popularity figure or seller label. These can help formulate questions, but they do not prove final parcel weight, future availability, seller reliability or product quality. Save the displayed value as a snapshot and mark what remains unknown. If a counter influences the ranking, write the exact reason; otherwise leave it outside the decision score.",
+        ],
+      },
+      {
+        heading: "7. Work a three-candidate comparison without creating a fictional match",
+        paragraphs: [
+          "Consider a hypothetical overshirt search. Candidate A matches the required color and pocket layout, but its size chart uses an unnamed width. Candidate B is from another seller, shows clear flat chest and length measurements, but the cuff construction conflicts with a must-have. Candidate C uses the same catalog image as A and has a lower displayed price, yet its seller, item ID and intended color are not confirmed. None should be called identical.",
+          "The decision is straightforward when the gate is applied. Reject B because of the construction conflict. Keep C as Unresolved rather than rewarding the shared image or price. Keep A as the leading research candidate, but request the measurement endpoints or find a matching sample record before proceeding. The worksheet has not identified the best product in general; it has identified the candidate whose remaining uncertainty is both visible and potentially resolvable.",
+        ],
+        points: [
+          "A clear hard conflict outweighs extra photos or a lower displayed price.",
+          "Shared catalog media is a discovery clue, not a relationship label.",
+          "A leading candidate can still be paused when a must-have remains Not shown.",
+          "Preserve rejected rows so the same conflict is not researched again later.",
+        ],
+      },
+      {
+        heading: "8. Finish with a decision and an independent-agent handoff",
+        paragraphs: [
+          "End the matrix with Select, Hold for evidence, Keep as distinct alternative or Reject. The selected row should contain its complete source link, seller, item ID, exact option, check date, matched QC record, pass or conflict results and unresolved requests. Reopen the live listing immediately before handing it off because a dated research record cannot guarantee current availability or commercial terms.",
+          "If the buyer continues, send only the chosen marketplace source and exact option to the independent purchasing agent they select. Confirm that agent's current ordering interface, warehouse-photo options, return conditions and shipping terms directly with that service. UUFinds remains a product and QC research surface; it is not represented as the seller, warehouse or an affiliated purchasing agent, and comparing records does not create such a relationship.",
+        ],
+      },
+    ],
+    evidence: [
+      { type: "Official interface check", source: "UUFinds public QC Finder and product-detail page", checked: "September 17, 2026", supports: "The current interface presents marketplace-link, agent-link, product-name and image inputs; product pages can expose marketplace, seller, item context, price, option-level QC fields and a Similar section.", boundary: "Visible fields, counters and suggested items do not prove that separate listings are identical or that future units will match photographed samples." },
+      { type: "Official platform statement", source: "UUFinds public disclaimer and UU page", checked: "September 17, 2026", supports: "UUFinds describes product-link conversion, QC browsing and an informational role, while stating that QC images come from shopping agents or sellers.", boundary: "UUFinds states that it does not sell products or control their authenticity, legality or quality." },
+      { type: "Independent consumer guidance", source: "US Federal Trade Commission online-shopping guidance", checked: "September 17, 2026", supports: "Comparison shopping should record model or item details, size, color, total cost context and seller information instead of relying on price alone.", boundary: "The guidance is general US consumer advice and does not verify any UUFinds listing or agent service." },
+      { type: "Independent measurement reference", source: "NIST tape-measure accuracy explainer", checked: "September 17, 2026", supports: "Measurement reliability depends on defined markings, reference standards and repeatable conditions.", boundary: "It does not establish that a ruler in a QC image is calibrated or that photographed endpoints were chosen correctly." },
+      { type: "Editorial method", source: "UUFinds Sheet identity-first comparison matrix", checked: "September 17, 2026", supports: "The relationship labels, must-have gate and QC relevance matrix used in this guide.", boundary: "The framework makes uncertainty visible but cannot prove shared factories, batches, materials or authenticity." },
+    ],
+    relatedLinks: [
+      { href: "/guides/uufinds-confirm-result-original-listing/", label: "Confirm each candidate's source", description: "Verify marketplace, seller, item ID and option before comparing QC evidence." },
+      { href: "/guides/uufinds-measurement-photos-ruler-evidence-limits/", label: "Audit measurement-photo evidence", description: "Check endpoints, units, ruler alignment and item state before comparing dimensions." },
+      { href: "/guides/uufinds-seller-information-reliability-signals/", label: "Read seller information cautiously", description: "Keep dated seller context separate from unsupported guarantees." },
+    ],
+  },
+  {
     slug: "uufinds-dead-link-recovery-backup-listing-workflow",
     label: "DEAD LINK RECOVERY GUIDE",
     title: "UUFinds Dead Link Recovery: Preserve the Source and Find a Backup Listing",
