@@ -89,3 +89,10 @@
 - 此文件夹包含 `build.py`、`collect_products.py`、`products.json`、五语 `content/`、已生成的 `dist/`、README 和本记忆文件。GitHub 文件夹提交只表示源码和静态构建已入仓；域名、Cloudflare 发布配置与正式索引仍需另行核实。
 - 本版继续 `noindex,nofollow`，绝对 hreflang 和 Article 元数据仍指公开检查站。正式上线上域名前必须以真实域名重建 SEO 地址并复核，再决定解除 noindex。
 - 为使同仓库提交更轻量，在 GitHub 目标目录中将 46 张 JPEG 图等比例限制为最长边 1200px，并以 JPEG 质量 85 重新编码；图片内容和 URL 文件名不变。商品卡为 500×500 展示，原图内容仍来自同一目录快照。公开检查版 Sites 图片未修改。
+
+## 2026-09-24 站点地图与正式域名索引准备
+
+- 用户要求可提交的 sitemap 及优先收录链接。GitHub/Cloudflare 目录 `hipobuyy-sheet-com` 的原构建只有 `robots.txt`，五语 90 个内容页全部带 `noindex,nofollow`，没有 XML sitemap；预览版与 GitHub 构建分别管理。
+- 本轮只更新 GitHub 目录及其 `dist/`，以目标正式域名 `https://hipobuyy-sheet.com` 生成 sitemap.xml：8 个栏目/功能页面 + 10 个独立文章页面，每组 EN/DE/ES/FR/IT，合计 90 条绝对 URL；每条带五语及 x-default 双向 hreflang。各本地化页加入自身 canonical，去除预览版 noindex；根路径跳转页仍 noindex 且不入 sitemap；robots.txt 增加 Sitemap 指令。独立的 Sites 公共检查站仍维持 noindex。
+- 搜索服务无法直接访问目标域名或 pages.dev 地址；连接的 Cloudflare API 需要重新认证。**尚未证实**目标域名已绑定、页面在 Cloudflare 成功部署或已被 Google 抓取，不能把预期 URL 报成已上线链接。只有正式域名各 URL 和 sitemap 返回成功、查看源代码无 noindex 后，才能到对应 Google Search Console 资源提交 `https://hipobuyy-sheet.com/sitemap.xml`。
+- 优先检查：`/en/`、`/en/spreadsheet/`、`/en/finds/`、`/en/articles/`、三篇基础长文（spreadsheet、QC、shipping）、`/en/articles/return-policy-warehouse/`、`/en/faq/`。其余文章和四语版本由 sitemap 提供发现，是否索引取决于 Google 和内容质量，不保证排名。

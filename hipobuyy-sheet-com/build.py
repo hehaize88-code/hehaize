@@ -1,10 +1,11 @@
-"""Generate a static, fully localized public review build."""
+"""Generate the localized static site for the intended production domain."""
 from pathlib import Path
 import html, json, re
+import xml.etree.ElementTree as ET
 from urllib.parse import quote
 from datetime import date
 
-ROOT=Path(__file__).parent; DIST=ROOT/'dist'; SITE='https://hipobuyy-sheet-review.hehaize88.chatgpt.site'; SHOP='https://cnbuycha.com'
+ROOT=Path(__file__).parent; DIST=ROOT/'dist'; SITE='https://hipobuyy-sheet.com'; SHOP='https://cnbuycha.com'
 P=json.loads((ROOT/'products.json').read_text())
 LANGS=['en','de','es','fr','it']
 ROUTES=['','spreadsheet','finds','guide','qc','shipping','faq','articles']
@@ -147,7 +148,7 @@ def e(v):return html.escape(str(v),quote=True)
 def href(lang,path=''):return f'/{lang}/'+(path.strip('/')+'/' if path else '')
 def meta(lang,path,title,description):
     alts=''.join(f'<link rel="alternate" hreflang="{l}" href="{SITE}{href(l,path)}">' for l in LANGS)+f'<link rel="alternate" hreflang="x-default" href="{SITE}{href("en",path)}">'
-    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>{e(title)} | Hipobuyy Sheet</title><meta name="description" content="{e(description)}">{alts}<link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head>'
+    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)} | Hipobuyy Sheet</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}<link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head>'
 def shell(lang,path,title,description,body,home=False):
     t=T[lang];nav=''.join(f'<a class="{"active" if path.strip("/")==r else ""}" href="{href(lang,r)}">{e(t["nav"][i])}</a>' for i,r in enumerate(ROUTES))
     opts=''.join(f'<option value="{href(l,path)}" {"selected" if l==lang else ""}>{l.upper()}</option>' for l in LANGS)
@@ -235,5 +236,19 @@ for lang in LANGS:
   save(lang,path,article,t['article_titles'][i],t['article_descriptions'][i])
 
 (DIST/'index.html').write_text('<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=/en/"><title>Hipobuyy Sheet</title></head><body><a href="/en/">Open site</a></body></html>')
-(DIST/'robots.txt').write_text('User-agent: *\nAllow: /\n')
-print('Built',len(list(DIST.rglob('index.html'))),'localized pages; preview is noindex')
+(DIST/'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
+SITEMAP_NS='http://www.sitemaps.org/schemas/sitemap/0.9'
+XHTML_NS='http://www.w3.org/1999/xhtml'
+ET.register_namespace('',SITEMAP_NS)
+ET.register_namespace('xhtml',XHTML_NS)
+sitemap=ET.Element(f'{{{SITEMAP_NS}}}urlset')
+for route in ROUTES+[f'articles/{slug}' for slug in SLUGS]:
+ for lang in LANGS:
+  url=ET.SubElement(sitemap,f'{{{SITEMAP_NS}}}url')
+  ET.SubElement(url,f'{{{SITEMAP_NS}}}loc').text=SITE+href(lang,route)
+  for alternate in LANGS+['x-default']:
+   target='en' if alternate=='x-default' else alternate
+   ET.SubElement(url,f'{{{XHTML_NS}}}link',{'rel':'alternate','hreflang':alternate,'href':SITE+href(target,route)})
+ET.indent(sitemap,space='  ')
+ET.ElementTree(sitemap).write(DIST/'sitemap.xml',encoding='utf-8',xml_declaration=True)
+print('Built',len(list(DIST.rglob('index.html'))),'localized pages and',len(ROUTES+SLUGS),'route groups with a sitemap')
