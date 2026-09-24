@@ -102,3 +102,9 @@
 - 用户上传 Cloudflare Pages 截图：`hipobuyy-sheet-com` Production 中列出 `hipobuyy-sheet.com`、`www.hipobuyy-sheet.com`、`hipobuyy-sheet-com.pages.dev`；显示成功的生产部署仍为 `main` 的旧提交 `c861a80`。用户浏览器截图能打开 `https://hipobuyy-sheet.com/en/`，且页面显示 `PUBLIC REVIEW` 标记。这仅证明截图拍摄时该旧版页面可见，不证明当前 sitemap 已上线或新页面已解除 noindex。
 - GitHub `main` 已核实包含 `987fa42b00046bdbb0c32586077867d9bd1742e6` 的 `dist/sitemap.xml`。Cloudflare 截图显示的 `c861a80` 与之不一致；需要生产部署显示 `987fa42` 或之后提交，再测试 `https://hipobuyy-sheet.com/sitemap.xml`、`robots.txt` 和 `/en/` 页面源代码。不要在旧版时向 Search Console 提交 sitemap。
 - 用户的 Cloudflare MCP Server 截图报 `Invalid Request / Invalid client_id`，这是该连接器 OAuth 授权失败的画面，与 Cloudflare Dashboard 成功部署、站点在用户浏览器打开是不同问题。本站构建/索引是否成功应以正式域名的实际 HTTP 响应和 Cloudflare Production 提交号为准。
+
+## 2026-09-24 Search Console 站点地图读取排障
+
+- 用户截图显示 Google Search Console 对 `https://hipobuyy-sheet.com/sitemap.xml` 报“无法读取此站点地图”、发现网页为 0。之后用户浏览器截图中该路径能显示 90 个 URL，但内容呈一段普通文字。两张截图不包含 HTTP 状态码或 Content-Type，**不能据此断言根因**；不应再把这些网址误报为已被 Google 发现。
+- 本地解析 `dist/sitemap.xml` 有效：90 个 URL，每个包含五语和 x-default 共 6 个 alternate。Cloudflare Pages 官方文档允许静态资源通过输出目录 `_headers` 覆盖默认响应头。因此给 `/sitemap.xml` 指定 `Content-Type: application/xml; charset=utf-8` 和 `X-Content-Type-Options: nosniff`，并在 `build.py` 持续生成该文件；变更已提交 GitHub `main`。这是一项针对浏览器显示异常的低风险修复，**尚未测得正式域名的响应头，也未证明 Google 错误已解决**。
+- 发布后核对 Cloudflare Production 已包含 `dist/_headers` 的提交，检查真实 `/sitemap.xml` 返回 200 与 `Content-Type: application/xml`；在 GSC 对 sitemap URL 执行网址检查的实时测试，查看网页抓取是否成功和允许抓取。若仍报无法读取，按 GSC 详情诊断权限、响应状态或短暂抓取失败后再次提交。
