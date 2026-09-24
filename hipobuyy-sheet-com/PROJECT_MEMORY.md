@@ -5,7 +5,7 @@
 ## 项目与发布状态
 
 - Sites 项目 ID：`appgprj_6ab39ee4547081918d658f29cc6b9bb4`。现有公开检查链接：`https://hipobuyy-sheet-review.hehaize88.chatgpt.site/en/`，站点受 Git 源码管理。
-- 正式目标域名：`hipobuyy-sheet.com`，尚未绑定。检查版的页面带 `noindex,nofollow`；不得把“公开可看”误认为正式参与 Google 索引。
+- 正式目标域名：`hipobuyy-sheet.com`。用户 2026-09-24 截图显示其已列于 Cloudflare Pages Production Domains，且用户浏览器成功打开 `/en/`；公开检查版依然带 `noindex,nofollow`，不要将检查版提交索引。正式版是否已更新到新提交与 sitemap 是否返回 200，仍需单独核实。
 - 目标主站：`https://www.cnbuycha.com/`。商品卡、分类与搜索只跳向主站对应位置。商品图来自主站目录；目录图不能说成真实仓库 QC 图。
 - `build.py` 生成 EN/DE/ES/FR/IT 五种语言的静态页面；同一文章 slug 在五种语言均有对应路径。`content/<lang>/<slug>.md` 是文章正文的来源。修改后运行 `python build.py`。
 - 用户提供的白色 HIPOBUY logo 已用于页眉和页脚。保持站点独立声明，不声称是 Hipobuy 官方或平台客户服务。
@@ -96,3 +96,9 @@
 - 本轮只更新 GitHub 目录及其 `dist/`，以目标正式域名 `https://hipobuyy-sheet.com` 生成 sitemap.xml：8 个栏目/功能页面 + 10 个独立文章页面，每组 EN/DE/ES/FR/IT，合计 90 条绝对 URL；每条带五语及 x-default 双向 hreflang。各本地化页加入自身 canonical，去除预览版 noindex；根路径跳转页仍 noindex 且不入 sitemap；robots.txt 增加 Sitemap 指令。独立的 Sites 公共检查站仍维持 noindex。
 - 搜索服务无法直接访问目标域名或 pages.dev 地址；连接的 Cloudflare API 需要重新认证。**尚未证实**目标域名已绑定、页面在 Cloudflare 成功部署或已被 Google 抓取，不能把预期 URL 报成已上线链接。只有正式域名各 URL 和 sitemap 返回成功、查看源代码无 noindex 后，才能到对应 Google Search Console 资源提交 `https://hipobuyy-sheet.com/sitemap.xml`。
 - 优先检查：`/en/`、`/en/spreadsheet/`、`/en/finds/`、`/en/articles/`、三篇基础长文（spreadsheet、QC、shipping）、`/en/articles/return-policy-warehouse/`、`/en/faq/`。其余文章和四语版本由 sitemap 提供发现，是否索引取决于 Google 和内容质量，不保证排名。
+
+## 2026-09-24 Cloudflare 用户截图核对
+
+- 用户上传 Cloudflare Pages 截图：`hipobuyy-sheet-com` Production 中列出 `hipobuyy-sheet.com`、`www.hipobuyy-sheet.com`、`hipobuyy-sheet-com.pages.dev`；显示成功的生产部署仍为 `main` 的旧提交 `c861a80`。用户浏览器截图能打开 `https://hipobuyy-sheet.com/en/`，且页面显示 `PUBLIC REVIEW` 标记。这仅证明截图拍摄时该旧版页面可见，不证明当前 sitemap 已上线或新页面已解除 noindex。
+- GitHub `main` 已核实包含 `987fa42b00046bdbb0c32586077867d9bd1742e6` 的 `dist/sitemap.xml`。Cloudflare 截图显示的 `c861a80` 与之不一致；需要生产部署显示 `987fa42` 或之后提交，再测试 `https://hipobuyy-sheet.com/sitemap.xml`、`robots.txt` 和 `/en/` 页面源代码。不要在旧版时向 Search Console 提交 sitemap。
+- 用户的 Cloudflare MCP Server 截图报 `Invalid Request / Invalid client_id`，这是该连接器 OAuth 授权失败的画面，与 Cloudflare Dashboard 成功部署、站点在用户浏览器打开是不同问题。本站构建/索引是否成功应以正式域名的实际 HTTP 响应和 Cloudflare Production 提交号为准。
