@@ -237,6 +237,7 @@ for lang in LANGS:
 
 (DIST/'index.html').write_text('<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=/en/"><title>Hipobuyy Sheet</title></head><body><a href="/en/">Open site</a></body></html>')
 (DIST/'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n')
+(DIST/'_headers').write_text('/sitemap.xml\n  Content-Type: application/xml; charset=utf-8\n  X-Content-Type-Options: nosniff\n',encoding='utf-8')
 SITEMAP_NS='http://www.sitemaps.org/schemas/sitemap/0.9'
 XHTML_NS='http://www.w3.org/1999/xhtml'
 ET.register_namespace('',SITEMAP_NS)
