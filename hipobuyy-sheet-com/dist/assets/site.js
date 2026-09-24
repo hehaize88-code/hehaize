@@ -1,3 +1,15 @@
+// GA4: collect visits only on the production domain, including its www alias.
+if (['hipobuyy-sheet.com', 'www.hipobuyy-sheet.com'].includes(window.location.hostname)) {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-F6G27KWPPQ');
+  const googleTag = document.createElement('script');
+  googleTag.async = true;
+  googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-F6G27KWPPQ';
+  document.head.appendChild(googleTag);
+}
+
 document.querySelectorAll('form[data-shop-search]').forEach(form=>form.addEventListener('submit',event=>{
   event.preventDefault();
   const value=form.querySelector('input[type=search]').value.trim();
