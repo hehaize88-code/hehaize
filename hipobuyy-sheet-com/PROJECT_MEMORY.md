@@ -114,4 +114,4 @@
 - 在用户提供的 Google Analytics 账号 `hehaize88@gmail.com`、账号 ID `405518068` 中，创建独立 GA4 媒体资源 `hipobuyy-sheet.com`，媒体资源 ID `555650243`，其首页为 `https://analytics.google.com/analytics/web/#/a405518068p555650243/reports/intelligenthome`。
 - 新建网站数据流：网站 `https://hipobuyy-sheet.com`，数据流名称 `hipobuyy-sheet.com`，数据流 ID `15836169545`，衡量 ID `G-F6G27KWPPQ`；增强型衡量开启，包括站外链接点击。资源时区为中国 GMT+08，币种 USD。
 - 已在 GitHub `main` 的 `hipobuyy-sheet-com/dist/assets/site.js` 加入 GA4 gtag 加载与初始化，提交 `04958f474d9a12d6e939c50cc3777d5cd9ddf1a3`。这份共用脚本由每个本地化页面加载；仅在正式域名 `hipobuyy-sheet.com` 与 `www.hipobuyy-sheet.com` 发送数据，避免公开检查站的访问污染正式资源。
-- 后续重建 `dist/` 时应保留 `dist/assets/site.js` 的 GA4 初始化。页面在部署新提交之后才会有追踪代码。GA4 创建后首页初始显示“尚未从您的网站收到任何数据”；必须用正式站点实际访问和 GA4 实时报告核实收到 page_view，再称“数据已开始收集”。
+- 后续重建 `dist/` 时应保留 `dist/assets/site.js` 的 GA4 初始化。页面在部署新提交之后才会有追踪代码。GA4 创建后首页初始显示“尚未从您的网站收到任何数据”；已在正式站点 `https://hipobuyy-sheet.com/en/` 实际检查到 Google 标签脚本加载，且 GA4 实时概览显示 1 位活跃用户、该页浏览 1 次及 `page_view` 事件 1 次，证明当前已开始接收数据。此一次系浏览器核验访问，不代表真实自然流量；普通历史报告仍可能延迟。
