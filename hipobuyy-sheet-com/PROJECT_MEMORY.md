@@ -108,3 +108,10 @@
 - 用户截图显示 Google Search Console 对 `https://hipobuyy-sheet.com/sitemap.xml` 报“无法读取此站点地图”、发现网页为 0。之后用户浏览器截图中该路径能显示 90 个 URL，但内容呈一段普通文字。两张截图不包含 HTTP 状态码或 Content-Type，**不能据此断言根因**；不应再把这些网址误报为已被 Google 发现。
 - 本地解析 `dist/sitemap.xml` 有效：90 个 URL，每个包含五语和 x-default 共 6 个 alternate。Cloudflare Pages 官方文档允许静态资源通过输出目录 `_headers` 覆盖默认响应头。因此给 `/sitemap.xml` 指定 `Content-Type: application/xml; charset=utf-8` 和 `X-Content-Type-Options: nosniff`，并在 `build.py` 持续生成该文件；变更已提交 GitHub `main`。这是一项针对浏览器显示异常的低风险修复，**尚未测得正式域名的响应头，也未证明 Google 错误已解决**。
 - 发布后核对 Cloudflare Production 已包含 `dist/_headers` 的提交，检查真实 `/sitemap.xml` 返回 200 与 `Content-Type: application/xml`；在 GSC 对 sitemap URL 执行网址检查的实时测试，查看网页抓取是否成功和允许抓取。若仍报无法读取，按 GSC 详情诊断权限、响应状态或短暂抓取失败后再次提交。
+
+## 2026-09-24 Google Analytics 4 接入
+
+- 在用户提供的 Google Analytics 账号 `hehaize88@gmail.com`、账号 ID `405518068` 中，创建独立 GA4 媒体资源 `hipobuyy-sheet.com`，媒体资源 ID `555650243`，其首页为 `https://analytics.google.com/analytics/web/#/a405518068p555650243/reports/intelligenthome`。
+- 新建网站数据流：网站 `https://hipobuyy-sheet.com`，数据流名称 `hipobuyy-sheet.com`，数据流 ID `15836169545`，衡量 ID `G-F6G27KWPPQ`；增强型衡量开启，包括站外链接点击。资源时区为中国 GMT+08，币种 USD。
+- 已在 GitHub `main` 的 `hipobuyy-sheet-com/dist/assets/site.js` 加入 GA4 gtag 加载与初始化，提交 `04958f474d9a12d6e939c50cc3777d5cd9ddf1a3`。这份共用脚本由每个本地化页面加载；仅在正式域名 `hipobuyy-sheet.com` 与 `www.hipobuyy-sheet.com` 发送数据，避免公开检查站的访问污染正式资源。
+- 后续重建 `dist/` 时应保留 `dist/assets/site.js` 的 GA4 初始化。页面在部署新提交之后才会有追踪代码。GA4 创建后首页初始显示“尚未从您的网站收到任何数据”；必须用正式站点实际访问和 GA4 实时报告核实收到 page_view，再称“数据已开始收集”。
