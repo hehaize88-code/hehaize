@@ -5,7 +5,7 @@ This directory contains the source and generated static output for the independe
 - Current public review URL: https://hipobuyy-sheet-review.hehaize88.chatgpt.site/en/
 - Intended canonical domain: https://hipobuyy-sheet.com/ (Cloudflare binding must be verified separately)
 - Five locales: English, German, Spanish, French, Italian
-- Each locale has 20 FAQ entries and 10 independent articles.
+- Each locale has 20 FAQ entries. English now has 18 independent articles; the original 10 remain localized across all five locales.
 
 ## Build
 
@@ -19,7 +19,7 @@ For a static host such as Cloudflare Pages, use this repository's `hipobuyy-shee
 
 ## Search configuration
 
-The committed `dist/` includes [sitemap.xml](./dist/sitemap.xml) with 90 localized pages, `robots.txt` with a sitemap directive, reciprocal hreflang, and canonical/Article URLs pointing to `https://hipobuyy-sheet.com/`. The localized pages no longer carry the review-only `noindex`; the root redirect page remains `noindex` and is excluded from the sitemap. Verify that the intended domain is attached and all URLs return successful HTML before submitting the sitemap in Google Search Console. The separate Sites review copy retains `noindex`.
+The committed `dist/` includes [sitemap.xml](./dist/sitemap.xml) with the localized core pages plus 8 additional English SEO articles, `robots.txt` with a sitemap directive, reciprocal hreflang, and canonical/Article URLs pointing to `https://hipobuyy-sheet.com/`. The localized pages no longer carry the review-only `noindex`; the root redirect page remains `noindex` and is excluded from the sitemap. Verify that the intended domain is attached and all URLs return successful HTML before submitting the sitemap in Google Search Console. The separate Sites review copy retains `noindex`.
 
 Product links and search target the corresponding pages on `cnbuycha.com`.
 
