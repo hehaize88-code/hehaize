@@ -19,7 +19,7 @@ T={
 'en':{
 'nav':['Home','Spreadsheet','Finds','Guide','QC','Shipping','FAQ','Articles'],
 'brand':'HIPOBUYY / SHEET','eyebrow':'Independent product discovery',
-'hero':'Hipobuy spreadsheet finds, easier to inspect.',
+'hero':'Hipobuy Spreadsheet 2026: Finds, Product Links & QC',
 'sub':'Browse a real product snapshot, compare categories and open the exact listing. Photos and USD prices come from the linked catalog; check the destination before buying.',
 'search':'Search products on the catalog','searchbutton':'Search',
 'aside_title':'A spreadsheet you can actually browse','aside':'Filter real listings here or use the table view. Each product opens its matching listing; category shortcuts open their matching catalog category.','tablelink':'Open the spreadsheet',
@@ -32,7 +32,7 @@ T={
 'open':'Open listing','all':'All','item':'Product','category':'Category','price':'USD price','link':'Listing',
 'page_titles':['Find products faster','The Hipobuy spreadsheet','Product finds','How to use the directory','How to inspect QC photos','Shipping: compare the full cost','Useful buying notes','Articles and guides'],
 'page_subs':['','','Search or filter the current product snapshot. Open an exact product listing to see live details.','A short path from finding an item to deciding whether to order.','A practical visual check after an item reaches the warehouse.','Estimate the complete parcel cost before choosing a shipping method.','The details most buyers should verify before paying.','Focused articles built around product discovery, QC and shipping.'],
-'article_titles':['How to use a Hipobuy spreadsheet without losing the original listing','A QC photo checklist before you approve a warehouse item','How to compare shipping quotes for a China shopping haul'],
+'article_titles':['How to use a Hipobuy spreadsheet without losing the original listing','Hipobuy QC Photos Guide 2026: What to Check Before Shipping','How to compare shipping quotes for a China shopping haul'],
 'article_descriptions':['A repeatable way to compare listings, variants and source links.','What the standard photo angles can reveal and what they cannot.','Separate item costs, parcel weight, fees and delivery estimates.'],
 'body':{
 'guide':[
@@ -253,3 +253,44 @@ for route in ROUTES+[f'articles/{slug}' for slug in SLUGS]:
 ET.indent(sitemap,space='  ')
 ET.ElementTree(sitemap).write(DIST/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 print('Built',len(list(DIST.rglob('index.html'))),'localized pages and',len(ROUTES+SLUGS),'route groups with a sitemap')
+
+
+# EXTRA_EN_SEO_ARTICLES_20261001
+EXTRA_EN_ARTICLES=[
+('hipobuy-spreadsheet-2026','Hipobuy Spreadsheet 2026: Finds, Product Links and Categories','A practical 2026 guide to using a Hipobuy spreadsheet for product discovery, source checking, QC planning and shipping decisions.'),
+('best-hipobuy-finds-2026','Best Hipobuy Finds 2026: How to Search Shoes, Hoodies, Jerseys and Bags','A category-based method for finding and checking Hipobuy product links without treating a spreadsheet entry as a quality guarantee.'),
+('hipobuy-shoes-spreadsheet','Hipobuy Shoes Spreadsheet 2026: Sneakers, Sizing and QC Checks','How to research shoe links, compare sizes, inspect warehouse photos and account for boxes and volumetric shipping.'),
+('hipobuy-clothing-spreadsheet','Hipobuy Clothing Spreadsheet 2026: Hoodies, T-Shirts, Jackets and Sizing','A measurement-first workflow for researching clothing links, checking warehouse photos and planning a consolidated parcel.'),
+('hipobuy-shipping-calculator','Hipobuy Shipping Calculator 2026: Actual Weight, Volumetric Weight and Parcel Cost','How to estimate Hipobuy shipping without treating a pre-pack quote as a guaranteed final charge.'),
+('hipobuy-size-guide','Hipobuy Size Guide 2026: China, EU, UK and US Sizing Without Guessing','A measurement-first Hipobuy sizing guide for shoes and clothing, with practical warehouse checks before international shipping.'),
+('hipobuy-qc-photos-2026','Hipobuy QC Photos 2026: How to Check Shoes, Clothing and Accessories','A practical Hipobuy QC photo guide for matching warehouse items to the ordered variant and deciding whether more evidence is needed.'),
+('hipobuy-coupon-shipping-discounts','Hipobuy Coupon and Shipping Discounts 2026: How to Verify Current Offers','How to check Hipobuy coupons and shipping promotions without relying on expired codes or misleading headline savings.')]
+for extra_i,(slug,title,desc) in enumerate(EXTRA_EN_ARTICLES,11):
+    path='articles/'+slug
+    related='<nav class="related-guides" aria-label="Related guides"><strong>Practical reading</strong><a href="/en/spreadsheet/">Hipobuy Spreadsheet →</a><a href="/en/qc/">QC guide →</a><a href="/en/shipping/">Shipping guide →</a></nav>'
+    article=f'<div class="page-head wrap"><span class="eyebrow">{e(T["en"]["eyebrow"])}</span><h1>{e(title)}</h1><p>{e(desc)}</p></div><div class="wrap route">{article_html("en",slug)}{related}<p><a class="inline-action" href="/en/spreadsheet/">Open the spreadsheet →</a></p></div>'
+    save('en',path,article,title,desc)
+    page_path=DIST/'en'/'articles'/slug/'index.html'
+    page_text=page_path.read_text(encoding='utf-8')
+    for alt in ['de','es','fr','it']:
+        page_text=re.sub(rf'<link rel="alternate" hreflang="{alt}"[^>]*>','',page_text)
+        page_text=page_text.replace(f'<option value="/{alt}/articles/{slug}/" >{alt.upper()}</option>',f'<option value="/{alt}/articles/" >{alt.upper()}</option>')
+    page_path.write_text(page_text,encoding='utf-8')
+idx_path=DIST/'en'/'articles'/'index.html'
+idx=idx_path.read_text(encoding='utf-8')
+if '/en/articles/hipobuy-spreadsheet-2026/' not in idx:
+    cards=''.join(f'<a class="article-card" href="/en/articles/{slug}/"><span class="tag">{i:02d} / GUIDE</span><h3>{e(title)}</h3><p>{e(desc)}</p><span>Read guide →</span></a>' for i,(slug,title,desc) in enumerate(EXTRA_EN_ARTICLES,11))
+    idx=idx.replace('</div></div></main>',cards+'</div></div></main>',1)
+    idx_path.write_text(idx,encoding='utf-8')
+xml_path=DIST/'sitemap.xml'
+tree=ET.parse(xml_path); root=tree.getroot()
+existing={node.text for node in root.findall(f'{{{SITEMAP_NS}}}url/{{{SITEMAP_NS}}}loc')}
+for slug,title,desc in EXTRA_EN_ARTICLES:
+    loc=SITE+href('en','articles/'+slug)
+    if loc in existing: continue
+    url=ET.SubElement(root,f'{{{SITEMAP_NS}}}url')
+    ET.SubElement(url,f'{{{SITEMAP_NS}}}loc').text=loc
+    for alternate in ['en','x-default']:
+        ET.SubElement(url,f'{{{XHTML_NS}}}link',{'rel':'alternate','hreflang':alternate,'href':loc})
+ET.indent(root,space='  ')
+tree.write(xml_path,encoding='utf-8',xml_declaration=True)
