@@ -110,7 +110,7 @@ export default function HomePage({ locale = "en" } = {}) {
             </div>
           </div>
           <div className="hero-showcase" aria-label="Featured product preview">
-            <div className="showcase-note"><span>Live shortlist</span><strong>New this week</strong></div>
+            <div className="showcase-note"><span>Catalog shortlist</span><strong>New this week</strong></div>
             {products.slice(0, 3).map((product, index) => (
               <a key={product.id} className={`showcase-product showcase-${index + 1}`} href={product.href} target="_blank" rel="sponsored noopener">
                 <img
@@ -151,7 +151,7 @@ export default function HomePage({ locale = "en" } = {}) {
       <section className="section products-section">
         <div className="wrap">
           <div className="section-heading inline-heading">
-            <div><span className="eyebrow">Recently checked</span><h2>Current spreadsheet finds</h2><p>USD estimates use ¥7.20 per US$1, dated {PRICE_RATE_DATE}; CNY references are retained for comparison.</p></div>
+            <div><span className="eyebrow">Catalog references</span><h2>Product references from the spreadsheet</h2><p>USD estimates use ¥7.20 per US$1, dated {PRICE_RATE_DATE}; CNY references are retained for comparison.</p></div>
             <Link href="/products">See the full shortlist <ArrowIcon /></Link>
           </div>
           <div className="product-grid home-product-grid">
@@ -190,10 +190,11 @@ export default function HomePage({ locale = "en" } = {}) {
             <div>
               <span className="eyebrow">In-depth Hubbuy articles</span>
               <h2>Research before the parcel gets expensive</h2>
-              <p>Fact-checked English reading on warehouse photos, shipping costs and consolidation decisions.</p>
+              <p>{locale === "pt-br" ? "Guias em português para conferir medidas, resolver problemas no pedido e preparar o pacote." : locale === "de" ? "Geprüfte Artikel zu Lagerfotos, Versandkosten und Paketplanung." : "Fact-checked English reading on warehouse photos, shipping costs and consolidation decisions."}</p>
             </div>
-            <Link href={localPath("/articles/")}>View all {visibleArticles.length} articles <ArrowIcon /></Link>
+            <Link href={localPath("/articles/")}>{locale === "pt-br" ? `Ver os ${visibleArticles.length} artigos` : locale === "de" ? `Alle ${visibleArticles.length} Artikel ansehen` : `View all ${visibleArticles.length} articles`} <ArrowIcon /></Link>
           </div>
+          {locale === "pt-br" && <p className="article-topic-links">Comece por: <Link href="/pt-br/articles/planilha-hubbuy-tenis-nike-golden-goose-qc/">planilha de tênis e QC</Link> · <Link href="/pt-br/articles/como-pesquisar-no-hubbuy-produtos-lojas-links/">pesquisar produtos e lojas</Link> · <Link href="/pt-br/articles/hubbuy-shipping-cost-guide/">calcular o frete</Link> · <Link href="/pt-br/articles/hubbuy-qc-photos-guide/">entender as fotos de QC</Link>.</p>}
           <div className="home-article-cards">
             {homeArticles.map(article => (
               <Link key={article.slug} href={localPath(`/articles/${article.slug}/`)} className={`home-article-card home-article-${article.cover.tone}`}>

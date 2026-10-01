@@ -1,12 +1,12 @@
 import LocalizedRoutePage, {
   getLocalizedMetadata,
-  localizedStaticParams,
+  getLocalizedStaticParams,
 } from "@/components/LocalizedRoutePage";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return localizedStaticParams;
+  return getLocalizedStaticParams("de");
 }
 
 export function generateMetadata({ params }) {

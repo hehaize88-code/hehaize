@@ -1,3 +1,4 @@
+import { octoberTranslations } from "./october-translations.js";
 import { supplementalTranslations } from "./locale-content.js";
 import { generatedTranslations } from "./generated-translations.js";
 import { categoryTranslations } from "./categories.js";
@@ -514,6 +515,10 @@ for (const [locale, additions] of Object.entries(categoryTranslations)) {
 }
 
 for (const [locale, additions] of Object.entries(researchTranslations)) {
+  Object.assign(translations[locale], additions);
+}
+
+for (const [locale, additions] of Object.entries(octoberTranslations)) {
   Object.assign(translations[locale], additions);
 }
 

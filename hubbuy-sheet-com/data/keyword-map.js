@@ -171,7 +171,7 @@ const articleStrategies = {
   },
   "hubbuy-rehearsal-package-decision-guide": {
     primaryQuery: "Hubbuy rehearsal shipping",
-    secondaryTerms: ["Hubbuy rehearsal package", "Hubbuy pre-packing", "Hubbuy parcel weight and dimensions", "Hubbuy split parcel decision"],
+    secondaryTerms: ["rehearsal shipping meaning", "rehearsal shipping vs submit parcel", "Hubbuy rehearsal package", "Hubbuy pre-packing"],
     searchIntent: "Decide whether a pre-packed parcel result changes the choice to combine, split, repackage or delay submission",
     angle: "Decision-first rehearsal workflow separating candidate assumptions, packed evidence and current route comparison",
     evidence: ["Hubbuy public purchase flow and order-combination statement checked 30 August 2026", "Current public Rehearsal Package navigation signal checked 30 August 2026"],
@@ -285,7 +285,14 @@ const articleStrategies = {
 
 const articlePages = articles.map((article) => ({
   url: `/articles/${article.slug}/`,
-  ...articleStrategies[article.slug],
+  ...(articleStrategies[article.slug] || {
+    primaryQuery: article.primaryKeyword,
+    secondaryTerms: article.longTailKeywords,
+    searchIntent: article.excerpt,
+    angle: article.deck,
+    evidence: ["HubbuyCN public purchase flow, service description and calculator checked 1 October 2026"],
+    internalLinkRole: "Portuguese decision guide connected to the homepage, article collection and related purchase stages",
+  }),
 }));
 
 const categoryPagesMap = categoryPages.map((category) => ({

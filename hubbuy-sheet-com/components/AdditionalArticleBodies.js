@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PortugueseOctoberArticle from "@/components/PortugueseOctoberArticles";
 import SearchBox from "@/components/SearchBox";
 import { CheckIcon } from "@/components/Icons";
 import PortugueseGrowthArticle, { portugueseGrowthSlugs } from "@/components/PortugueseGrowthArticles";
@@ -17,11 +18,11 @@ function ResearchDisclosure({ children }) {
 function ArticleFaq({ items }) {
   return (
     <section id="faq" className="article-faq-section">
-      <span>Questions readers ask</span>
-      <h2>Clear answers, without filling gaps with guesses</h2>
+      <span>Decision notes</span>
+      <h2>Keep these boundaries in your buying plan</h2>
       <div className="article-faq-list">
         {items.map(([question, answer]) => (
-          <div key={question}><h3>{question}</h3><p>{answer}</p></div>
+          <div key={question}><p>{answer}</p></div>
         ))}
       </div>
     </section>
@@ -32,7 +33,7 @@ function SourceNote({ children, checked = "20 July 2026" }) {
   return (
     <div className="article-sources">
       <strong>Official source and editorial boundary</strong>
-      <p>{children} Verified against the <a href={OFFICIAL_SITE} target="_blank" rel="noopener">official Hubbuy homepage</a> on {`${checked}.`} Practical checklists are independent editorial guidance; live account terms remain the current source.</p>
+      <p>{children} Verified against the official Hubbuy homepage on {`${checked}.`} Practical checklists are independent editorial guidance; live account terms remain the current source.</p>
     </div>
   );
 }
@@ -252,11 +253,11 @@ function HubbuyCustomsTaxArticle({ article }) {
 function HubbuyRehearsalArticle({ article }) {
   return (
     <>
-      <p className="article-deck">A rehearsal package is useful only when a packed result can change a real decision. Define the candidate parcel first, identify the uncertainty that matters, then compare the returned evidence with a practical combined or split alternative.</p>
+      <p className="article-deck">Rehearsal shipping means checking a proposed parcel before committing to international shipment. When the service is available, use the packed weight, dimensions and packaging result to review your options. “Submit parcel” is the later shipping decision: confirm the contents, route and current charge before authorizing the next step.</p>
 
       <section id="direct-answer">
         <span>01 · Direct answer</span>
-        <h2>Use rehearsal shipping when parcel assumptions could change what you submit</h2>
+        <h2>Rehearsal shipping vs submit parcel: check the package, then authorize shipping</h2>
         <p>Hubbuy’s public purchase sequence places international shipping after seller delivery, warehouse inspection and the option to combine different orders. Its current public interface also exposes a Rehearsal Package entry, although the detailed workflow is account-gated. That makes the sensible purpose clear without inventing account rules: rehearsal belongs between approving warehouse items and paying for an international parcel.</p>
         <p>Request it when an uncertain packed weight, dimension, packaging choice or route condition could make you combine, split, repackage or postpone the parcel. If the result cannot change any action, the request adds information but not necessarily value. If one bulky box or protected item may alter chargeable size or route eligibility, a packed result can replace a weak estimate with evidence tied to one defined parcel plan.</p>
         <div className="article-callout"><strong>The decision rule</strong><p>Write the action threshold before rehearsal: “Keep one parcel if this candidate remains eligible for the intended route and its current quoted total stays below the two-parcel alternative; otherwise split the bulky item.”</p></div>
@@ -461,7 +462,7 @@ function HubbuyReviewsArticle({ article }) {
       <section id="sample">
         <span>01 · The sample today</span>
         <h2>What the current Hubbuy customer reviews sample contains</h2>
-        <p>On 28 July 2026, the <a href="https://www.trustpilot.com/review/hubbuy.com" target="_blank" rel="noopener">public Trustpilot profile for hubbuy.com</a> displayed 56 reviews, a 4.8 TrustScore and 96% five-star ratings. It showed 2% four-star and 2% one-star, with no visible three- or two-star share. Trustpilot also said all 56 reviews were from the previous 12 months and labelled the company profile as claimed since February 2026.</p>
+        <p>On 28 July 2026, the public Trustpilot profile for hubbuy.com displayed 56 reviews, a 4.8 TrustScore and 96% five-star ratings. It showed 2% four-star and 2% one-star, with no visible three- or two-star share. Trustpilot also said all 56 reviews were from the previous 12 months and labelled the company profile as claimed since February 2026.</p>
         <p>Those numbers describe one platform at one moment. They are not an audit of all Hubbuy orders, and they will change as reviews are added, edited, removed or moderated. Trustpilot explicitly warned that Hubbuy had no recent history of asking for reviews and that the sample might not be representative. It also showed that the business had not replied to negative reviews.</p>
         <p>The country mix matters. Many visible recent entries were from Brazil, with smaller numbers from Portugal, Romania, Nigeria and elsewhere. The sample cannot establish route, customs or support performance in another country.</p>
 
@@ -474,7 +475,7 @@ function HubbuyReviewsArticle({ article }) {
       <section id="official-vs-reports">
         <span>02 · Separate the evidence</span>
         <h2>Official service claims and customer reports answer different questions</h2>
-        <p>The <a href="https://hubbuy.com/" target="_blank" rel="noopener">official Hubbuy website</a> describes a purchasing-agent workflow covering procurement, warehouse inspection, storage, consolidation and parcel preparation. Hubbuy’s company description on Trustpilot adds that international shipping services are provided by third parties. These statements define the intended roles in the transaction; they do not prove how one seller’s item or one carrier’s delivery will perform.</p>
+        <p>The official Hubbuy website describes a purchasing-agent workflow covering procurement, warehouse inspection, storage, consolidation and parcel preparation. Hubbuy’s company description on Trustpilot adds that international shipping services are provided by third parties. These statements define the intended roles in the transaction; they do not prove how one seller’s item or one carrier’s delivery will perform.</p>
         <p>Customer reports address lived outcomes, but with less control. A buyer may praise support, packaging or speed without identifying the route, parcel weight, destination or seller. Another may report a defective product without giving enough evidence to determine whether the seller, warehouse inspection, carrier or after-sales process caused the failure. Both reports can be sincere and still resist broad conclusions.</p>
         <p>Editorial analysis can compare recurring praise with caution, but it cannot authenticate every reviewer, inspect private orders or calculate a platform-wide failure rate from 56 voluntary posts.</p>
       </section>
@@ -482,7 +483,7 @@ function HubbuyReviewsArticle({ article }) {
       <section id="positive-patterns">
         <span>03 · Repeated positive signals</span>
         <h2>Support, packaging, QC visibility and repeat use appear often</h2>
-        <p>Across the recent English and <a href="https://br.trustpilot.com/review/hubbuy.com" target="_blank" rel="noopener">Brazilian Trustpilot views</a>, customer support is the clearest recurring positive theme. Several reviewers described getting help with questions, live chat or the ordering process. That repetition is more informative than one superlative, although the posts rarely measure response time or document the issue that support resolved.</p>
+        <p>Across the recent English and Brazilian Trustpilot views, customer support is the clearest recurring positive theme. Several reviewers described getting help with questions, live chat or the ordering process. That repetition is more informative than one superlative, although the posts rarely measure response time or document the issue that support resolved.</p>
         <p>Packaging and delivered condition form a second cluster. Recent buyers reported parcels arriving protected or in good condition, and some repeat customers described storage and forwarding as straightforward. These reports align with the intermediary role Hubbuy advertises, but they do not establish a guaranteed packaging standard. Parcel contents, requested protection and the final carrier can differ substantially.</p>
         <p>QC visibility is another useful signal. Some reviewers connected delivered goods with the photographs seen during warehouse inspection, while others said the control process helped them filter visible defects. That supports QC as a decision aid. It does not turn warehouse photos into laboratory testing, authenticity verification or a guarantee that electronics function correctly.</p>
         <p>Some buyers mentioned a second or third shipment. Choosing to return is useful behavioural evidence, but not proof that every order was problem-free. Referral codes visible in several reviews are another reason to focus on described events rather than promotional wording.</p>
@@ -526,7 +527,7 @@ function HubbuyReviewsArticle({ article }) {
       <ArticleFaq items={article.faq} />
       <div className="article-sources">
         <strong>Sources and editorial boundary</strong>
-        <p>Official workflow facts were checked against <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy’s public website</a>. Review counts, rating distribution, labels and customer themes were checked on the <a href="https://www.trustpilot.com/review/hubbuy.com" target="_blank" rel="noopener">live Trustpilot profile</a> and its Brazilian-language view on 28 July 2026. Trustpilot states that reviews express individual opinions and explains its labels and moderation on its <a href="https://help.trustpilot.com/s/article/About-Trustpilots-review-labels?language=en_US" target="_blank" rel="noopener">review-label guidance</a>. No review was treated as a verified platform-wide fact.</p>
+        <p>Official workflow facts were checked against Hubbuy’s public website. Review counts, rating distribution, labels and customer themes were checked on the live Trustpilot profile and its Brazilian-language view on 28 July 2026. Trustpilot states that reviews express individual opinions and explains its labels and moderation on its review-label guidance. No review was treated as a verified platform-wide fact.</p>
       </div>
       <ArticleCta />
     </>
@@ -696,7 +697,7 @@ function LinkTroubleshootingArticle({ article }) {
       <section id="official-support">
         <span>01 · Official capability</span>
         <h2>Hubbuy supports link-led product search, but a link still has to identify a live item</h2>
-        <p>The <a href="https://hubbuy.com/" target="_blank" rel="noopener">official Hubbuy homepage</a> places a product-name-or-link search box at the start of the buying journey. Its public description identifies Hubbuy as a purchasing service for Taobao, 1688 and Weidian, while the visible purchase workflow says Hubbuy orders the item and the seller sends it to the warehouse.</p>
+        <p>The official Hubbuy homepage places a product-name-or-link search box at the start of the buying journey. Its public description identifies Hubbuy as a purchasing service for Taobao, 1688 and Weidian, while the visible purchase workflow says Hubbuy orders the item and the seller sends it to the warehouse.</p>
         <p>That confirms the intended workflow, not that every shared address will import forever. Marketplaces use desktop, mobile and app-share pages; sellers also remove items. “The source does not open” and “Hubbuy does not import it” are different failures. Find which one happened before editing the address.</p>
 
         <div className="official-workflow" aria-label="Three layers in a Hubbuy product-link check">
@@ -735,7 +736,7 @@ function LinkTroubleshootingArticle({ article }) {
         <span>04 · Preserve the source</span>
         <h2>Save enough evidence to rebuild the order without relying on one link</h2>
         <p>Before payment, save the original URL, seller, item identifier, selected variant, quantity, visible price and China shipping. Add a screenshot of the exact option. A source link without the chosen size or color is incomplete evidence.</p>
-        <p>A <a href="https://www.reddit.com/r/repweidiansneakers/comments/1hwy6nm/guide_poncecatchemalls_agents_taobao_weidian/" target="_blank" rel="noopener">January 2025 community guide</a> reported difficulty recovering a raw source link from a Hubbuy-generated listing and advised saving it separately. This is one dated user report, not a current platform guarantee, but it shows why the source should survive outside the agent page.</p>
+        <p>A January 2025 community guide reported difficulty recovering a raw source link from a Hubbuy-generated listing and advised saving it separately. This is one dated user report, not a current platform guarantee, but it shows why the source should survive outside the agent page.</p>
 
         <div className="article-point-grid">
           <div><b>Identity</b><strong>Marketplace · seller · item ID</strong><span>Enough to trace the source again.</span></div>
@@ -1068,7 +1069,7 @@ function RestrictedItemsArticle({ article }) {
     <>
       <p className="article-deck">The most expensive restricted-item mistake happens before the parcel exists: buying something because the seller will send it to a Chinese warehouse, then discovering that no suitable international route appears. This Hubbuy restricted-items guide uses a four-layer check—product, transport hazard, live route and destination—so “can I buy it?” is not confused with “can I legally and safely ship it?”</p>
 
-      <ResearchDisclosure>The current <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy homepage</a> confirms a staged workflow in which goods reach the warehouse before international shipping is selected. Public HubbuyCN help pages provide additional shipping and forwarding language. Because route controls and destination law can change, this article does not turn an old category example into a permanent permission.</ResearchDisclosure>
+      <ResearchDisclosure>The current Hubbuy homepage confirms a staged workflow in which goods reach the warehouse before international shipping is selected. Public HubbuyCN help pages provide additional shipping and forwarding language. Because route controls and destination law can change, this article does not turn an old category example into a permanent permission.</ResearchDisclosure>
 
       <section id="direct-answer">
         <span>01 · The direct answer</span>
@@ -1086,8 +1087,8 @@ function RestrictedItemsArticle({ article }) {
       <section id="four-layers">
         <span>02 · Restriction logic</span>
         <h2>Separate four layers that are often collapsed into one warning label</h2>
-        <p><strong>Prohibited goods</strong> are the first stop. The public <a href="https://manager.hubbuycn.com/index/help/info/id/20.html" target="_blank" rel="noopener">HubbuyCN shipping policy</a> lists categories such as explosive, flammable, corrosive, radioactive or toxic hazardous items, currency, perishable goods and other articles unsuitable for mail. It also says destination-country prohibitions and customs rules still apply. A different packing request does not make a prohibited item acceptable.</p>
-        <p><strong>Dangerous goods</strong> create a safety risk and may require classification, limited quantities or special packaging. The <a href="https://www.upu.int/en/Universal-Postal-Union/Outreach-Campaigns/Dangerous-Goods" target="_blank" rel="noopener">Universal Postal Union</a> names everyday examples including lithium batteries, perfume and cleaning fluids. Narrow exceptions exist, but acceptance depends on the operator and applicable aviation rules.</p>
+        <p><strong>Prohibited goods</strong> are the first stop. The public HubbuyCN shipping policy lists categories such as explosive, flammable, corrosive, radioactive or toxic hazardous items, currency, perishable goods and other articles unsuitable for mail. It also says destination-country prohibitions and customs rules still apply. A different packing request does not make a prohibited item acceptable.</p>
+        <p><strong>Dangerous goods</strong> create a safety risk and may require classification, limited quantities or special packaging. The Universal Postal Union names everyday examples including lithium batteries, perfume and cleaning fluids. Narrow exceptions exist, but acceptance depends on the operator and applicable aviation rules.</p>
         <p><strong>Route-limited goods</strong> may be transportable only through particular lines. Hubbuy’s public freight calculator asks for a product type as well as destination, weight and dimensions, and includes categories for pure batteries, batteries installed in equipment, liquids, paste, powder, food, medicine and branded goods. Those labels show why a price result for “common goods” cannot answer a battery question.</p>
         <p><strong>Destination-restricted goods</strong> can pass a carrier check and still fail an import rule. Customs, product regulation, intellectual-property law and local safety requirements belong to the receiving country. A visible shipping option is not an import permit or a promise of clearance.</p>
       </section>
@@ -1110,7 +1111,7 @@ function RestrictedItemsArticle({ article }) {
         <h2>Run the route check twice: before purchase and after packing</h2>
         <p>The first check is a go/no-go screen. Use Hubbuy’s current estimator or support channel with the exact product type and destination. Save the date, description and response. An estimate shows that a route appeared at that moment; it is not a reservation, final quote or availability guarantee.</p>
         <p>The second check happens with the real parcel. By then Hubbuy has the item, inspection evidence, packed weight, dimensions and the other contents you plan to consolidate. Re-run eligibility because one sensitive item can change the route set for every ordinary item in the box. Compare a combined parcel with a split if the restricted product removes otherwise suitable lines.</p>
-        <p>The public <a href="https://manager.hubbuycn.com/index/help/info/id/68.html" target="_blank" rel="noopener">HubbuyCN forwarding agreement</a> says the warehouse checks forwarded parcels for forbidden items and may mark products that do not meet air-shipment requirements, then notify the customer about return matters. That is a reason to check early, not a promise that every seller will accept a return or that the process will be free.</p>
+        <p>The public HubbuyCN forwarding agreement says the warehouse checks forwarded parcels for forbidden items and may mark products that do not meet air-shipment requirements, then notify the customer about return matters. That is a reason to check early, not a promise that every seller will accept a return or that the process will be free.</p>
       </section>
 
       <section id="batteries-liquids">
@@ -1143,7 +1144,7 @@ function RestrictedItemsArticle({ article }) {
       <ArticleFaq items={article.faq} />
       <div className="article-sources">
         <strong>Sources and editorial boundary</strong>
-        <p>The staged purchase workflow was checked on <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy’s public website</a> on 30 July 2026. Restriction examples and warehouse-forwarding language come from the public HubbuyCN <a href="https://manager.hubbuycn.com/index/help/info/id/20.html" target="_blank" rel="noopener">shipping policy</a>, <a href="https://manager.hubbuycn.com/index/help/info/id/68.html" target="_blank" rel="noopener">forwarding agreement</a> and <a href="https://manager.hubbuycn.com/index/page/estimate.html" target="_blank" rel="noopener">freight calculator</a>. UPU guidance supplies the general international-mail safety boundary. Current account, carrier and destination rules control the actual shipment.</p>
+        <p>The staged purchase workflow was checked on Hubbuy’s public website on 30 July 2026. Restriction examples and warehouse-forwarding language come from the public HubbuyCN shipping policy, forwarding agreement and freight calculator. UPU guidance supplies the general international-mail safety boundary. Current account, carrier and destination rules control the actual shipment.</p>
       </div>
       <ArticleCta />
     </>
@@ -1160,7 +1161,7 @@ function HubbuyInsuranceArticle({ article }) {
       <section id="direct-answer">
         <span>01 · The direct answer</span>
         <h2>Insurance addresses defined parcel-loss events, not every disappointing outcome</h2>
-        <p>The publicly indexed <a href="https://manager.hubbuycn.com/index/help/info/id/69.html" target="_blank" rel="noopener">HubbuyCN Insurance and Compensation policy</a> describes insurance as optional. Its stated covered events are parcel loss and whole-parcel loss during customs clearance. That scope is materially different from damage, a wrong seller item, poor quality, late delivery, a delivered scan dispute or a recipient who does not collect the shipment.</p>
+        <p>The publicly indexed HubbuyCN Insurance and Compensation policy describes insurance as optional. Its stated covered events are parcel loss and whole-parcel loss during customs clearance. That scope is materially different from damage, a wrong seller item, poor quality, late delivery, a delivered scan dispute or a recipient who does not collect the shipment.</p>
         <p>Purchase insurance because the defined loss event and published limits fit the parcel risk—not because the label sounds comprehensive. Before paying, read the live wording, exclusions, rate and insured value for the exact route.</p>
         <div className="article-callout">
           <strong>Use one sentence to test the cover</strong>
@@ -1171,7 +1172,7 @@ function HubbuyInsuranceArticle({ article }) {
       <section id="published-coverage">
         <span>02 · Published scope</span>
         <h2>Map the policy to the event before mapping it to the product value</h2>
-        <p>Hubbuy’s <a href="https://hubbuy.com/" target="_blank" rel="noopener">public purchase workflow</a> places international shipping after goods arrive, inspection images are reviewed and orders are prepared as a parcel. Insurance belongs to that parcel stage. It should not replace source verification, warehouse QC or a protective-packing decision made earlier.</p>
+        <p>Hubbuy’s public purchase workflow places international shipping after goods arrive, inspection images are reviewed and orders are prepared as a parcel. Insurance belongs to that parcel stage. It should not replace source verification, warehouse QC or a protective-packing decision made earlier.</p>
         <p>The indexed policy uses two loss categories. The first is parcel loss during transportation. The second is whole-parcel loss connected with customs clearance. “Whole parcel” matters: a customs delay, assessment, request for documents or partial product dispute is not automatically the published covered event.</p>
         <p>Route eligibility, customs compliance and insurance are separate controls. An insured parcel still requires accurate recipient information, truthful declaration, timely customs cooperation and payment of charges the chosen line does not assume.</p>
       </section>
@@ -1193,7 +1194,7 @@ function HubbuyInsuranceArticle({ article }) {
         <h2>Read the exclusions as a list of risks you still have to control</h2>
         <p>The indexed insurance policy excludes damage to goods. It also excludes loss connected to incorrect recipient information, refusal or failure to collect, and a carrier record marked as delivered. Other exclusions address a recipient’s failure to cooperate with or pay customs when the chosen route does not take responsibility for clearance, as well as force majeure, political events and natural disasters.</p>
         <p>Evidence cannot transform an excluded event into a covered one. It can, however, show which event actually occurred. A stable tracking record that never reaches delivery is different from a delivered scan. A customs notice showing a whole-parcel loss is different from a request for tax payment. A crushed box containing damaged goods is different from a parcel that never arrives.</p>
-        <p>The indexed shipping policy and <a href="https://manager.hubbuycn.com/index/help/info/id/68.html" target="_blank" rel="noopener">forwarding agreement</a> also describe compensation exclusions and inspection limits. Warehouse inspection does not guarantee internal electronics, product durability or every concealed defect. Insurance should therefore sit beside QC, packing and restricted-item checks, not replace them.</p>
+        <p>The indexed shipping policy and forwarding agreement also describe compensation exclusions and inspection limits. Warehouse inspection does not guarantee internal electronics, product durability or every concealed defect. Insurance should therefore sit beside QC, packing and restricted-item checks, not replace them.</p>
         <div className="article-comparison">
           <div><span>Published covered events</span><strong>Parcel loss · whole-parcel customs-clearance loss</strong></div>
           <div><span>Published exclusions include</span><strong>Damage · delivered scan · recipient failure · specified external events</strong></div>
@@ -1226,7 +1227,7 @@ function HubbuyInsuranceArticle({ article }) {
       <ArticleFaq items={article.faq} />
       <div className="article-sources">
         <strong>Sources and dated policy boundary</strong>
-        <p>The parcel workflow was checked on <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy’s public website</a> on 3 August 2026. Coverage, formula, limits, timing and exclusions were checked against the publicly indexed HubbuyCN <a href="https://manager.hubbuycn.com/index/help/info/id/69.html" target="_blank" rel="noopener">Insurance and Compensation policy</a>, with the <a href="https://manager.hubbuycn.com/index/help/info/id/20.html" target="_blank" rel="noopener">shipping policy</a> and forwarding agreement used for responsibility boundaries. Current live terms override this research snapshot.</p>
+        <p>The parcel workflow was checked on Hubbuy’s public website on 3 August 2026. Coverage, formula, limits, timing and exclusions were checked against the publicly indexed HubbuyCN Insurance and Compensation policy, with the shipping policy and forwarding agreement used for responsibility boundaries. Current live terms override this research snapshot.</p>
       </div>
       <ArticleCta />
     </>
@@ -1509,6 +1510,7 @@ function HubbuyShoesArticle({ article }) {
 }
 
 export default function AdditionalArticleBody({ article }) {
+  if (article.sections) return <PortugueseOctoberArticle article={article} />;
   if (article.slug === "hubbuy-shoes-sizing-qc-shipping-weight") return <HubbuyShoesArticle article={article} />;
   if (portugueseGrowthSlugs.has(article.slug)) return <PortugueseGrowthArticle article={article} />;
   if (article.slug === "hubbuy-seller-reliability-dispatch-qc-return-signals") return <HubbuySellerReliabilityArticle article={article} />;

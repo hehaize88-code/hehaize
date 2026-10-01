@@ -1,0 +1,43 @@
+export const octoberTranslations = {
+  "pt-br": {
+    "Hubbuy Sheet · Independent guide": "Hubbuy Sheet · Guia independente",
+    "Not the official Hubbuy website": "Este não é o site oficial da Hubbuy",
+    "Live catalog ↗": "Catálogo ao vivo ↗",
+    "10 August 2026": "10 de agosto de 2026",
+    "Recorded product references": "Referências de produtos",
+    "Catalog shortlist": "Seleção do catálogo",
+    "Catalog references": "Referências do catálogo",
+    "Product references from the spreadsheet": "Produtos selecionados na planilha",
+    "Source reference": "Referência da fonte",
+    "Decision notes": "Notas para a decisão",
+    "Keep these boundaries in your buying plan": "Considere estes limites ao planejar a compra",
+    "Approximate prices shown in USD": "Preços aproximados em USD",
+    "USD estimates use ¥7.20 per US$1, dated": "Estimativas em USD usam ¥7,20 por US$1, com referência em",
+    "; CNY references are retained for comparison.": "; valores em CNY são mantidos para comparação.",
+    "Reference ¥": "Referência ¥",
+    "Approx. $": "Aprox. $",
+    "approx.": "aprox.",
+    "Independent from Hubbuy and not an official Hubbuy website. Product, category, search and live-catalog links lead to a destination catalog in which this website has a commercial interest. Transactions occur on the destination site; verify live details before ordering.": "Este site é independente e não é o site oficial da Hubbuy. Os links de produtos, categorias, pesquisa e catálogo levam a um catálogo no qual este site tem interesse comercial. As transações ocorrem no site de destino; confira os dados atuais antes de comprar.",
+    "© 2026 Hubbuy Sheet. Independent editorial discovery guide.": "© 2026 Hubbuy Sheet. Guia editorial independente para pesquisar produtos.",
+    "Each card has its own indexable research page and a distinct destination. USD amounts are estimates using ¥7.20 per US$1, dated": "Cada cartão tem uma página de pesquisa e um destino próprio. Os valores em USD são estimativas calculadas com ¥7,20 por US$1, com referência em",
+    "; the original CNY reference is retained. Verify the current price, seller, variant and stock on the destination page.": "; a referência original em CNY é mantida. Confira preço atual, vendedor, variante e estoque na página de destino.",
+    "researched product references": "referências de produtos pesquisadas",
+    "Open the complete live catalog ↗": "Abrir o catálogo completo ↗",
+    "July 2026 edit": "Seleção de julho de 2026",
+    "Hubbuy Shipping Costs Explained: Weight, Volume & Routes": "Frete Hubbuy para o Brasil: Peso, Volume e Custos",
+    "How Hubbuy Shipping Costs Are Built: Weight, Volume and Route Rules": "Frete Hubbuy para o Brasil: Como Conferir Peso, Volume e Custos",
+    "9 min read": "9 min de leitura",
+    "10 min read": "10 min de leitura",
+    "8 min read": "8 min de leitura",
+    "7 min read": "7 min de leitura"
+  },
+  "de": {
+    "Recorded product references": "Erfasste Produktreferenzen",
+    "Catalog shortlist": "Katalogauswahl",
+    "Catalog references": "Katalogreferenzen",
+    "Product references from the spreadsheet": "Produkte aus der Tabelle",
+    "Source reference": "Quellenhinweis",
+    "Decision notes": "Hinweise zur Entscheidung",
+    "Keep these boundaries in your buying plan": "Berücksichtige diese Grenzen bei deiner Kaufplanung"
+  }
+};

@@ -1,4 +1,8 @@
+import { octoberUpdates } from "./october-updates.js";
+import { portugueseOctoberArticles } from "./portuguese-october.js";
+
 export const articles = [
+  ...portugueseOctoberArticles,
   {
     slug: "hubbuy-shoes-sizing-qc-shipping-weight",
     category: "Shoes buying guide",
@@ -958,6 +962,8 @@ export const articles = [
     ],
   },
 ];
+
+for (const article of articles) Object.assign(article, octoberUpdates[article.slug] || {});
 
 export function getArticle(slug) {
   return articles.find((article) => article.slug === slug);

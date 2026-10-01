@@ -29,7 +29,7 @@ export default function ArticlesPage({ locale = "en" }) {
       headline: article.title,
       url: `${SITE_URL}${localPath(`/articles/${article.slug}/`)}`,
       datePublished: article.published,
-      dateModified: article.factChecked,
+      dateModified: article.updated || article.factChecked,
       author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}/about/` },
       image: `${SITE_URL}${article.socialImage}`,
     })),
@@ -49,7 +49,7 @@ export default function ArticlesPage({ locale = "en" }) {
           <div>
             <div className="article-index-heading">
               <span className="eyebrow">Start with the complete workflow</span>
-              <p>{visibleArticles.length} fact-checked {locale === "pt-br" ? "Portuguese" : locale === "de" ? "German" : "English"} articles</p>
+              <p>{locale === "pt-br" ? `${visibleArticles.length} artigos em português com fontes verificadas` : locale === "de" ? `${visibleArticles.length} faktengeprüfte Artikel auf Deutsch` : `${visibleArticles.length} fact-checked English articles`}</p>
             </div>
             <Link className="featured-article" href={localPath(`/articles/${featuredArticle.slug}/`)}>
               <ArticleCover compact cover={featuredArticle.cover} />

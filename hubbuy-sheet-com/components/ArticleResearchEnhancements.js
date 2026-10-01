@@ -315,14 +315,10 @@ export default function ArticleResearchEnhancements({ article }) {
 
       <div className="source-ledger">
         <div className="source-ledger-heading"><span>Primary-source ledger</span><strong>Official Hubbuy page and named section</strong></div>
-        {sources.map(([section, evidence, href = OFFICIAL_HOME, label = "Official page ↗"], index) => article.noExternalSourceLinks ? (
+        {sources.map(([section, evidence], index) => (
           <div key={section} className="source-ledger-row">
-            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{article.slug === "hubbuy-payment-methods-currency-fee-audit" ? "Checked 28 Aug 2026" : article.slug === "how-to-buy-from-taobao-with-hubbuy" ? "Checked 26 Aug 2026" : article.slug === "hubbuy-return-exchange-after-qc" ? "Checked 14 Aug 2026" : article.slug === "hubbuy-order-status-guide" ? "Checked 12 Aug 2026" : "Checked 10 Aug 2026"}</em>
+            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>Source reference</em>
           </div>
-        ) : (
-          <a key={section} href={href} target="_blank" rel="noopener">
-            <b>0{index + 1}</b><span><strong>{section}</strong><small>{evidence}</small></span><em>{label}</em>
-          </a>
         ))}
       </div>
       <p className="research-boundary">{compact ? "Account-specific rules and restrictions must be checked in the live order or parcel interface." : "The official policy labels visible in Hubbuy’s footer may lead to account-gated help content. This article does not claim that a login-only rule was independently verified from a public page. For transaction-specific restrictions, use the live order or parcel interface and current official support."}</p>

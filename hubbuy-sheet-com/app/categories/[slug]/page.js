@@ -35,7 +35,7 @@ export default async function CategoryPage({ params }) {
   const categoryProducts = products.filter((product) => product.category === category.name);
   const pagePath = `/categories/${category.slug}/`;
   const pageUrl = `${SITE_URL}${pagePath}`;
-  const searchUrl = `${MAIN_SITE}/search.html?channelid=2&keywords=${encodeURIComponent(category.searchTerm)}`;
+  const searchUrl = `${MAIN_SITE}/AllProducts/?q=${encodeURIComponent(category.searchTerm)}`;
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",

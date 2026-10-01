@@ -40,6 +40,14 @@ export const localizedStaticParams = [
   ...products.map((product) => ({ segments: ["products", String(product.id)] })),
 ];
 
+export function getLocalizedStaticParams(locale) {
+  return localizedStaticParams.filter(({ segments }) => {
+    if (segments[0] !== "articles" || segments.length < 2) return true;
+    const article = getArticle(segments[1]);
+    return article && (!article.locales || article.locales.includes(locale));
+  });
+}
+
 function sourceMetadata(route) {
   if (staticPages[route]) return staticPages[route].metadata;
   if (route.startsWith("articles/")) {

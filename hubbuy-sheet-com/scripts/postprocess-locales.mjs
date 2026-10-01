@@ -55,6 +55,10 @@ const translatedMetaFields = new Set([
 const analyticsScript = `<script data-static-analytics>(()=>{if(window.__hubbuyAnalyticsBound)return;window.__hubbuyAnalyticsBound=true;const send=(name,params={})=>{if(typeof gtag==='function')gtag('event',name,params)};document.addEventListener('submit',e=>{const f=e.target;if(f instanceof HTMLFormElement&&/cnbuycha\\.com$/i.test(new URL(f.action,location.href).hostname)){const data=new FormData(f);send('site_search_submit',{search_term:data.get('keywords')||data.get('q')||'',link_url:f.action,page_path:location.pathname})}},true);document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]');if(!a)return;const u=new URL(a.href,location.href);if(/(^|\\.)cnbuycha\\.com$/i.test(u.hostname))send('main_site_click',{link_url:u.href,link_text:(a.textContent||'').trim().slice(0,100),page_path:location.pathname});else if(u.origin===location.origin&&u.pathname.includes('/articles/'))send('article_internal_click',{link_url:u.pathname,page_path:location.pathname})},true)})();</script>`;
 
 function injectAnalytics(html) {
+  html = html.replace(/<article class="seo-article-body">[\s\S]*?<\/article>/g, (body) => body.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/g, (link, attributes, label) => {
+    const href = attributes.match(/href="([^"]+)"/)?.[1] || "";
+    return /^https?:\/\//.test(href) && !/^https:\/\/(?:www\.)?cnbuycha\.com(?:\/|$)/.test(href) && !href.startsWith(siteUrl + "/") ? label : link;
+  }));
   if (html.includes("data-static-analytics")) return html;
   return html.replace("</body>", `${analyticsScript}</body>`);
 }
@@ -174,7 +178,7 @@ function updateLanguageMenu(html, route, locale) {
     const code = link.match(/data-locale-code="([^"]+)"/)?.[1];
     if (!code) return link;
     const fallbackRoute = route.startsWith("/articles/") ? "/articles/" : "/products/";
-    const href = englishOnlyRoutes.includes(route) && code !== "en"
+    const href = (englishOnlyRoutes.includes(route) && code !== "en") || (portugueseOnlyRoutes.includes(route) && code !== "pt-br")
       ? routeForLocale(fallbackRoute, code)
       : routeForLocale(route, code);
     let updated = link
@@ -275,7 +279,10 @@ function localizeHtml(sourceHtml, route, locale) {
 
 function enhanceEnglishHtml(sourceHtml, route) {
   let html = updateLanguageMenu(sourceHtml.replaceAll("hrefLang=", "hreflang="), route, "en");
-  html = replaceSeoHead(html, route, "en");
+  html = replaceSeoHead(html, route, portugueseOnlyRoutes.includes(route) ? "pt-br" : "en");
+  if (portugueseOnlyRoutes.includes(route)) {
+    html = html.replace(/<html([^>]*)lang="[^"]*"/, '<html$1lang="pt-BR"').replace(/<meta name="robots"[^>]*>/gi, "").replace("</head>", '<meta name="robots" content="noindex,follow"/></head>');
+  }
   return injectAnalytics(html);
 }
 
@@ -297,7 +304,7 @@ function sitemapXml(routes, selectedLocale = null, singleLanguageRoutes = []) {
         ["de", routeForLocale(route, "de")],
         ["x-default", routeForLocale(route, "en")],
       ]).map(([code, href]) => `    <xhtml:link rel="alternate" hreflang="${code}" href="${siteUrl}${href}" />`).join("\n");
-      records.push(`  <url>\n    <loc>${siteUrl}${path}</loc>\n    <lastmod>${article?.updated || lastModified}</lastmod>\n    <changefreq>${["/", "/products/", "/articles/"].includes(route) ? "weekly" : "monthly"}</changefreq>\n    <priority>${priority}</priority>\n${alternates}\n  </url>`);
+      records.push(`  <url>\n    <loc>${siteUrl}${path}</loc>\n    <lastmod>${article?.updated || (["/", "/articles/"].includes(route) ? "2026-10-01" : lastModified)}</lastmod>\n    <changefreq>${["/", "/products/", "/articles/"].includes(route) ? "weekly" : "monthly"}</changefreq>\n    <priority>${priority}</priority>\n${alternates}\n  </url>`);
     }
   }
   if (!selectedLocale || selectedLocale === "en") {

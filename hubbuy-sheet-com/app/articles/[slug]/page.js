@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { PortugueseRelatedArticles, PortugueseShippingUpdate } from "@/components/PortugueseOctoberArticles";
 import AdditionalArticleBody from "@/components/AdditionalArticleBodies";
 import ArticleResearchEnhancements from "@/components/ArticleResearchEnhancements";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }) {
       description: article.excerpt,
       url: `${SITE_URL}${path}`,
       publishedTime: article.published,
-      modifiedTime: article.factChecked,
+      modifiedTime: article.updated || article.factChecked,
       images: [{ url: article.socialImage, width: 1200, height: 630, alt: article.socialImageAlt }],
     },
     twitter: {
@@ -63,7 +64,7 @@ export default async function ArticlePage({ params, locale = "en" }) {
     url: articleUrl,
     mainEntityOfPage: articleUrl,
     datePublished: article.published,
-    dateModified: article.factChecked,
+    dateModified: article.updated || article.factChecked,
     wordCount: article.wordCount,
     inLanguage: locale === "pt-br" ? "pt-BR" : locale,
     author: { "@type": "Organization", name: "Hubbuy Sheet Editorial", url: `${SITE_URL}${localPath("/about/")}` },
@@ -91,21 +92,11 @@ export default async function ArticlePage({ params, locale = "en" }) {
       { "@type": "ListItem", position: 3, name: article.title, item: articleUrl },
     ],
   };
-  const faqSchema = article.faq?.length ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: article.faq.map(([question, answer]) => ({
-      "@type": "Question",
-      name: question,
-      acceptedAnswer: { "@type": "Answer", text: answer },
-    })),
-  } : null;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <header className={`seo-article-hero${articleScopeClass}`}>
         <div className="wrap seo-article-hero-grid">
           <div>
@@ -117,8 +108,8 @@ export default async function ArticlePage({ params, locale = "en" }) {
             <p>{article.excerpt}</p>
             <div className="article-byline">
               <Link href="/about/">Hubbuy Sheet Editorial</Link>
-              <span>Published {article.displayDate}</span>
-              <span>Last fact-checked {article.factCheckedDisplayDate}</span>
+              <span>{locale === "pt-br" ? "Publicado em" : locale === "de" ? "Veröffentlicht am" : "Published"} {article.displayDate}</span>
+              <span>{locale === "pt-br" ? "Última verificação em" : locale === "de" ? "Zuletzt geprüft am" : "Last fact-checked"} {article.factCheckedDisplayDate}</span>
               <span>{article.readTime}</span>
             </div>
           </div>
@@ -137,7 +128,7 @@ export default async function ArticlePage({ params, locale = "en" }) {
         <div className="wrap seo-article-layout">
           <aside className="article-toc">
             <strong>In this article</strong>
-            {article.toc.map(([id, label]) => <a href={`#${id}`} key={id}>{label}</a>)}
+            {article.toc.map(([id, label]) => <a href={`#${id}`} key={id}>{id === "faq" ? "Decision notes" : label}</a>)}
             <Link href={localPath("/articles/")}>All articles <ArrowIcon size={14} /></Link>
           </aside>
 
@@ -147,7 +138,7 @@ export default async function ArticlePage({ params, locale = "en" }) {
 
             <div className="article-disclosure">
               <CheckIcon />
-              <p><strong>Research note:</strong> This independent guide was checked against the public <a href="https://hubbuy.com/" target="_blank" rel="noopener">Hubbuy homepage</a> on 22 July 2026. It does not accept orders or payments. Where the public page does not provide a number or rule, this article does not invent one.</p>
+              <p><strong>Research note:</strong> This independent guide was checked against the public Hubbuy homepage on 22 July 2026. It does not accept orders or payments. Where the public page does not provide a number or rule, this article does not invent one.</p>
             </div>
 
             <section id="official">
@@ -253,22 +244,24 @@ export default async function ArticlePage({ params, locale = "en" }) {
             </section>
 
             <section id="faq" className="article-faq-section">
-              <span>Hubbuy spreadsheet FAQ</span>
-              <h2>Short answers based on the public workflow</h2>
+              <span>Decision notes</span>
+              <h2>Keep these boundaries in your buying plan</h2>
               <div className="article-faq-list">
-                <div><h3>What is a Hubbuy spreadsheet?</h3><p>It is an independent product-discovery list, not the seller page and not Hubbuy’s checkout. Use it to find leads, then verify the live listing before paying.</p></div>
-                <div><h3>Does Hubbuy provide QC photos?</h3><p>Yes. The official homepage currently says customers receive free quality-inspection images after warehouse arrival. It does not publish a universal image count in that public workflow.</p></div>
-                <div><h3>Can Hubbuy combine different orders?</h3><p>Yes. The homepage says different orders can be combined for shipping and also describes combining products from multiple sellers into one parcel.</p></div>
-                <div><h3>When do I pay international shipping?</h3><p>The public three-stage process places that payment after warehouse inspection, when you prepare the parcel for international delivery.</p></div>
+                <div><p>It is an independent product-discovery list, not the seller page and not Hubbuy’s checkout. Use it to find leads, then verify the live listing before paying.</p></div>
+                <div><p>Yes. The official homepage currently says customers receive free quality-inspection images after warehouse arrival. It does not publish a universal image count in that public workflow.</p></div>
+                <div><p>Yes. The homepage says different orders can be combined for shipping and also describes combining products from multiple sellers into one parcel.</p></div>
+                <div><p>The public three-stage process places that payment after warehouse inspection, when you prepare the parcel for international delivery.</p></div>
               </div>
             </section>
 
             </> : <AdditionalArticleBody article={article} />}
             {!article.hideResearchEvidence && <ArticleResearchEnhancements article={article} />}
+            {locale === "pt-br" && <PortugueseShippingUpdate slug={article.slug} />}
           </article>
         </div>
       </section>
 
+      {locale === "pt-br" && <PortugueseRelatedArticles article={article} />}
       <section className="related-guides">
         <div className="wrap">
           <span className="eyebrow">Continue reading</span>
