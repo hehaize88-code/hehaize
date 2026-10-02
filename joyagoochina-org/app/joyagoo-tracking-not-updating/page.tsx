@@ -5,7 +5,7 @@ import { languages } from "../i18n";
 import { getSeoArticleEntry } from "../seoArticleLibrary";
 import { languageAlternates } from "../seoAlternates";
 
-const slug = "joyagoo-qc-photo-checklist";
+const slug = "joyagoo-tracking-not-updating";
 const entry = getSeoArticleEntry("en", slug)!;
 const title = entry.seoTitle ?? entry.article.title;
 

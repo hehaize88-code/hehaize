@@ -1,6 +1,7 @@
 import {
   localizedContent,
 } from "./localizedContent";
+import { applyEditorialRefresh } from "./seoRefresh";
 import type { Locale } from "./i18n";
 import {
   seoArticleCopy,
@@ -79,7 +80,8 @@ export type SeoArticleSlug = (typeof seoArticleSlugs)[number];
 type ExtraSeoArticleSlug = (typeof extraSeoArticleSlugs)[number];
 
 export type SeoArticleEntry = {
-  slug: SeoArticleSlug;
+  slug: string;
+  seoTitle?: string;
   article: SeoArticle;
   keywords: string[];
   sourceBody: string;
@@ -466,6 +468,10 @@ type LegacyExtraSeoArticleSlug = Exclude<
   | "how-to-buy-from-taobao-with-joyagoo"
   | "joyagoo-parcel-consolidation-packaging-guide"
   | "joyagoo-domestic-shipping-seller-to-warehouse"
+  | "joyagoo-exchange-rate-currency-conversion"
+  | "joyagoo-shoebox-removal-shipping-cost-damage-risk"
+  | "joyagoo-parcel-reinforcement-cost-damage-risk"
+  | "joyagoo-shipping-line-comparison-framework"
 >;
 
 const localizedMeta: Record<
@@ -994,8 +1000,9 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
       }))
     : [];
 
-  return [...priorityEntries, ...additionalPriorityEntries, ...extraEntries, feeEntry].sort((left, right) =>
-    right.modifiedAt.localeCompare(left.modifiedAt),
+  return applyEditorialRefresh(
+    [...priorityEntries, ...additionalPriorityEntries, ...extraEntries, feeEntry],
+    locale,
   );
 }
 

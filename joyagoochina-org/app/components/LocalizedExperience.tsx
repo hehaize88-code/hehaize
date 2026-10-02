@@ -38,6 +38,8 @@ import {
 } from "../officialSources";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
+import { newArticleSlugs, refreshCopy } from "../seoRefresh";
+import ShippingWorksheet from "./ShippingWorksheet";
 
 const localizedCategoryNames: Record<Locale, string[]> = {
   en: ["Shoes", "Sweatshirts", "T-Shirts", "Jackets", "Pants", "Headwear", "Accessories", "Electronics", "Jerseys", "Other"],
@@ -221,6 +223,7 @@ function OfficialSourceLinks({
 }
 
 const hidesEditorialSourceLinks = new Set([
+  ...newArticleSlugs,
   "joyagoo-shipping-calculator-cost-estimate-guide",
   "why-is-joyagoo-shipping-so-expensive",
   "joyagoo-shipping-cost-per-kg-explained",
@@ -536,6 +539,12 @@ function SectionBody({ section }: { section: ContentSection }) {
       {section.paragraphs.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
+      {section.table && (
+        <table className="editorial-table">
+          <thead><tr>{section.table.headers.map((label) => <th scope="col" key={label}>{label}</th>)}</tr></thead>
+          <tbody>{section.table.rows.map((row, index) => <tr key={index}>{row.map((cell, column) => <td key={column}>{cell}</td>)}</tr>)}</tbody>
+        </table>
+      )}
       {section.callout && (
         <div className="editorial-callout">
           <strong>{section.callout.title}</strong>
@@ -557,6 +566,8 @@ function LocalizedGuidePage({
   const details = localizedContent[locale];
   const page = copy.pages[slug];
   const guide = completeGuide(locale, slug);
+  const refreshedCopy = refreshCopy[locale];
+  if (slug === "returns" && refreshedCopy) guide.sections = [refreshedCopy.returns, ...guide.sections];
   const routePath = localizePath(locale, `/${slug}/`);
   const absoluteUrl = `https://joyagoochina.org${routePath}`;
   const articleSchema = {
@@ -565,7 +576,7 @@ function LocalizedGuidePage({
     headline: page.title,
     description: page.intro,
     image: articleImageSchema(slug, page.title),
-    dateModified: "2026-07-30",
+    dateModified: slug === "returns" && refreshedCopy ? "2026-10-02" : "2026-07-30",
     datePublished: "2026-07-29",
     inLanguage: locale,
     author: { "@type": "Organization", name: "Joyagoo China Editorial" },
@@ -907,6 +918,9 @@ function LocalizedSeoArticlePage({
           </aside>
 
           <div className="article-body">
+            {slug === "joyagoo-shipping-calculator-cost-estimate-guide" && refreshCopy[locale] && (
+              <ShippingWorksheet copy={refreshCopy[locale]!.calculator} locale={locale} />
+            )}
             {article.sections.map((section, index) => (
               <section
                 id={`article-section-${index + 1}`}
@@ -930,7 +944,9 @@ function LocalizedSeoArticlePage({
               <aside className="source-note related-reading">
                 <strong>{translations[locale].common.guides}</strong>
                 <p>
-                  {entry.relatedLinks.map((relatedSlug, index) => {
+                  {entry.relatedLinks.filter((relatedSlug) =>
+                    getSeoArticleEntry(locale, relatedSlug) || ["articles", ...guideSlugs].includes(relatedSlug)
+                  ).map((relatedSlug, index) => {
                     const relatedArticle = getSeoArticleEntry(
                       locale,
                       relatedSlug,

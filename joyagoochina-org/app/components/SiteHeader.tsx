@@ -1,9 +1,6 @@
-import { localizePath, translations, type Locale } from "../i18n";
+import { languages, localizePath, translations, type Locale } from "../i18n";
 import { seoArticleCopy } from "../seoArticles";
-import {
-  priorityArticleLocales,
-  prioritySeoArticleSlugs,
-} from "../priorityShippingArticles";
+import { getSeoArticleEntry } from "../seoArticleLibrary";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function SiteHeader({
@@ -14,8 +11,8 @@ export default function SiteHeader({
   articleSlug?: string;
 }) {
   const copy = translations[locale];
-  const supportedLocales = prioritySeoArticleSlugs.includes(articleSlug as never)
-    ? priorityArticleLocales
+  const supportedLocales = articleSlug
+    ? languages.filter((language) => getSeoArticleEntry(language.code, articleSlug)).map((language) => language.code)
     : undefined;
 
   return (

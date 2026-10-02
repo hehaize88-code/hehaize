@@ -2807,3 +2807,22 @@ footer > small {
     transition-duration: 0.01ms !important;
   }
 }
+/* Article comparisons and a route-specific parcel worksheet. */
+.editorial-table { width: 100%; border-collapse: collapse; margin: 1.4rem 0; table-layout: fixed; font-size: 1rem; line-height: 1.6; }
+.editorial-table th, .editorial-table td { padding: .8rem; border: 1px solid #d9dce2; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.editorial-table th { background: #f2f5f8; color: #152234; }
+.shipping-worksheet { border: 1px solid #c8d3e1; border-radius: 12px; padding: 1.5rem; margin: 0 0 2rem; background: #f7faff; }
+.shipping-worksheet > p { font-size: 1rem; line-height: 1.7; }
+.worksheet-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+.worksheet-fields label { display: grid; gap: .4rem; min-width: 0; font-size: .95rem; line-height: 1.5; }
+.worksheet-fields input, .worksheet-fields select { width: 100%; min-width: 0; padding: .65rem; font: inherit; color: #152234; background: #fff; border: 1px solid #a8b6c9; border-radius: 5px; }
+.worksheet-rule { grid-column: 1 / -1; }
+.worksheet-results { padding: .6rem 1rem; background: #fff; border-left: 3px solid #266aac; }
+.worksheet-results p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .4rem 1rem; font-size: 1rem; line-height: 1.6; }
+.worksheet-results strong { overflow-wrap: anywhere; }
+.worksheet-note { color: #46566c; }
+@media (max-width: 480px) {
+  .shipping-worksheet { padding: 1rem; }
+  .worksheet-fields { grid-template-columns: 1fr; }
+  .editorial-table th, .editorial-table td { padding: .55rem; }
+}
