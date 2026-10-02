@@ -35,7 +35,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-09-15-search-route-v2";
+const HTML_CACHE_VERSION = "2026-10-02-seo-guides-v1";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);

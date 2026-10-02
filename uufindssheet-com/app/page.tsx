@@ -24,23 +24,24 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">UUFinds product research <span>•</span> Updated September 2026</p>
-          <h1>UUFinds Spreadsheet &amp; QC Finder.<br /><em>Find products and check QC photos.</em></h1>
+          <p className="eyebrow">UUFinds product research <span>•</span> Updated October 2026</p>
+          <h1>UUFinds Spreadsheet 2026.<br /><em>Product finds. Clear QC guides.</em></h1>
           <p className="hero-intro">
-            Search UUFinds spreadsheet finds, compare available QC photos and videos, and verify Taobao, Weidian, 1688 or agent links before opening the matching product page.
+            Browse product finds and learn how to check matching QC photos with our independent UUFinds guides. Start with shoes, hoodies or accessories, then verify the exact listing and selected option.
           </p>
           <form
             className="search-box"
-            action="https://www.cnbuycha.com/AllProducts/"
+            action="https://cnbuycha.com/search.html"
             method="get"
             role="search"
             aria-label="Search live main-site products"
             data-track-event="search_submit"
             data-cta-position="home_search"
           >
+            <input type="hidden" name="channelid" value="2" />
             <span className="search-icon" aria-hidden="true">⌕</span>
             <input
-              name="q"
+              name="keywords"
               required
               placeholder="Search shoes, hoodies, accessories…"
               aria-label="Search main-site products"
@@ -175,15 +176,15 @@ export default function Home() {
       <section className="articles-section" id="articles">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Field notes / August 2026</p>
-            <h2>Useful answers, not link dumps.</h2>
+            <p className="eyebrow">Field notes / October 2026</p>
+            <h2>UUFinds guides for your next step.</h2>
           </div>
           <p>Original guides written around real search questions: QC photos, spreadsheet links, product matching and safer comparison habits.</p>
         </div>
         <div className="article-grid">
           {articleCards.map((article, index) => (
-            <Link href={article.href} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
-              <div className="article-meta"><span>{article.tag}</span><b>0{index + 1}</b></div>
+            <Link href={article.href} data-track-event="guide_click" data-cta-position="home_articles" className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+              <div className="article-meta"><span>{article.tag}</span><b>{String(index + 1).padStart(2, "0")}</b></div>
               <h3>{article.title}</h3>
               <p>{article.summary}</p>
               <div className="article-foot"><span>{article.read}</span><b>Read guide ↗</b></div>

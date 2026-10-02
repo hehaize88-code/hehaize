@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
-import { guides } from "./guides/article-data";
+import { guides, getGuide } from "./guides/article-data";
 import { products } from "./products/product-data";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-23");
-  const articleUpdate = new Date("2026-09-17T12:00:00Z");
+  const productUpdate = new Date("2026-09-17T12:00:00Z");
+  const articleUpdate = new Date("2026-10-02T06:30:00Z");
   const trustPaths = ["about", "contact", "editorial-policy", "privacy", "terms"];
   const localizedPaths = [
     "finds", "products", "how-it-works", "articles", "faq",
@@ -18,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://uufindssheet.com/", lastModified: articleUpdate, changeFrequency: "weekly", priority: 1 },
     ...["finds", "products", "how-it-works", "articles", "faq"].map((path) => ({
       url: `https://uufindssheet.com/${path}/`,
-      lastModified: path === "articles" ? articleUpdate : lastModified,
+      lastModified: path === "articles" || path === "finds" ? articleUpdate : lastModified,
       changeFrequency: "weekly" as const,
       priority: 0.9,
     })),
@@ -37,20 +38,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...["en-gb", "de", "pl", "pt-br"].flatMap((locale) =>
       localizedPaths.map((path) => ({
         url: `https://uufindssheet.com/${locale}/${path}/`,
-        lastModified: path === "articles" || path.startsWith("products/") ? articleUpdate : lastModified,
+        lastModified: path === "articles" ? articleUpdate : path.startsWith("products/") ? productUpdate : lastModified,
         changeFrequency: path.startsWith("guides/") ? "monthly" as const : "weekly" as const,
         priority: path.startsWith("products/") ? 0.8 : 0.75,
       }))
     ),
     ...products.map((product) => ({
       url: `https://uufindssheet.com/products/${product.slug}/`,
-      lastModified: articleUpdate,
+      lastModified: productUpdate,
       changeFrequency: "weekly" as const,
       priority: 0.85,
     })),
     ...guides.map((guide) => ({
       url: `https://uufindssheet.com/guides/${guide.slug}/`,
-      lastModified: new Date(guide.modifiedISO ?? "2026-07-23"),
+      lastModified: new Date(getGuide(guide.slug)?.modifiedISO ?? "2026-07-23"),
       changeFrequency: "monthly" as const,
       priority: 0.75,
     })),

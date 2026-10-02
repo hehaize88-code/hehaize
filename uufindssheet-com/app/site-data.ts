@@ -31,6 +31,23 @@ type ArticleCard = {
 
 export const articleCards: ArticleCard[] = [
   {
+    tag: "QC TOOL COMPARISON",
+    title: "UUFinds vs FinderQC: QC Search, Product Links and Photo Coverage",
+    summary: "Compare documented search inputs and use a repeatable exact-link checklist to evaluate usable photo coverage.",
+    href: "/guides/uufinds-vs-finderqc/",
+    read: "8 min read",
+    englishOnly: true,
+    featured: true,
+  },
+  {
+    tag: "SPREADSHEET SETUP GUIDE",
+    title: "How to Create a UUFinds Spreadsheet: Product Links, QC Notes and Updates",
+    summary: "Build a practical record with a column template, fictional examples, QC notes and a manual link-review routine.",
+    href: "/guides/create-uufinds-spreadsheet/",
+    read: "8 min read",
+    englishOnly: true,
+  },
+  {
     tag: "LISTING COMPARISON GUIDE",
     title: "Compare Multiple UUFinds Listings Without Assuming They Are Identical",
     summary: "Build an identity-first matrix for seller, item, option and QC differences instead of merging similar titles, images or prices.",

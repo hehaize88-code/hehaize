@@ -101,7 +101,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 <h2 id="related-reading-heading">Continue the research</h2>
                 <div className="related-reading-grid">
                   {guide.relatedLinks.map((item) => (
-                    <Link href={item.href} key={item.href}>
+                    <Link href={item.href} key={item.href} data-track-event="guide_click" data-cta-position="related_reading">
                       <strong>{item.label} →</strong>
                       <span>{item.description}</span>
                     </Link>
@@ -149,7 +149,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             dateModified: guide.modifiedISO ?? "2026-07-22",
             datePublished: guide.publishedISO ?? "2026-07-22",
             author: { "@type": "Organization", name: "UUFinds Sheet Editorial" },
-            publisher: { "@type": "Organization", name: "UUFinds Sheet" },
+            publisher: { "@type": "Organization", name: "UUFinds Sheet", logo: { "@type": "ImageObject", url: "https://uufindssheet.com/optimized/uufinds-logo.webp" } },
             wordCount,
             inLanguage: "en",
             mainEntityOfPage: `https://uufindssheet.com/guides/${guide.slug}/`,

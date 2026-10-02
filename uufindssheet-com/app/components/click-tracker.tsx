@@ -12,8 +12,7 @@ declare global {
 
 function sendEvent(payload: Record<string, string>) {
   const body = JSON.stringify(payload);
-  if (navigator.sendBeacon) {
-    navigator.sendBeacon("/__track", new Blob([body], { type: "application/json" }));
+  if (navigator.sendBeacon?.("/__track", new Blob([body], { type: "application/json" }))) {
     return;
   }
   void fetch("/__track", {
@@ -55,7 +54,7 @@ export function ClickTracker() {
       const destination = anchor?.href
         ? safeDestination(anchor.href)
         : (element.getAttribute("type") || element.tagName.toLowerCase()).slice(0, 180);
-      const isOutbound = destinationUrl?.hostname !== window.location.hostname;
+      const isOutbound = Boolean(destinationUrl && destinationUrl.hostname !== window.location.hostname);
       const isMainSite = destinationUrl?.hostname === "cnbuycha.com" || destinationUrl?.hostname === "www.cnbuycha.com";
       const eventName = trackedElement?.dataset.trackEvent
         || (isMainSite ? "main_site_click" : isOutbound ? "outbound_click" : "site_click");

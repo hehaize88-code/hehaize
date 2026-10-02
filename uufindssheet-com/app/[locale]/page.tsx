@@ -187,15 +187,16 @@ export default async function LocalizedHome({ params }: { params: Promise<{ loca
           <p className="hero-intro">{content.intro}</p>
           <form
             className="search-box"
-            action="https://www.cnbuycha.com/AllProducts/"
+            action="https://cnbuycha.com/search.html"
             method="get"
             role="search"
             aria-label={content.search}
             data-track-event="search_submit"
             data-cta-position="localized_home_search"
           >
+            <input type="hidden" name="channelid" value="2" />
             <span className="search-icon" aria-hidden="true">⌕</span>
-            <input name="q" required placeholder={content.search} aria-label={content.search} />
+            <input name="keywords" required placeholder={content.search} aria-label={content.search} />
             <button type="submit">{content.searchButton}</button>
           </form>
           <a className="browse-button" href="#finds">

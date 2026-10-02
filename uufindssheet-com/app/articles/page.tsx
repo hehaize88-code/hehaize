@@ -7,11 +7,11 @@ import { localizedAlternates } from "../seo-alternates";
 import { socialImage } from "../seo-image";
 
 export const metadata: Metadata = {
-  title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
+  title: "UUFinds Guides: QC Search, Spreadsheets & Comparisons",
   description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
   alternates: localizedAlternates("/articles/"),
   openGraph: {
-    title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
+    title: "UUFinds Guides: QC Search, Spreadsheets & Comparisons",
     description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
     url: "/articles/",
     siteName: "UUFinds Sheet",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fact-Checked UUFinds Buying Guides, QC Articles & Comparisons",
+    title: "UUFinds Guides: QC Search, Spreadsheets & Comparisons",
     description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
     images: [socialImage.url],
   },
@@ -31,8 +31,8 @@ export default function ArticlesPage() {
     <main className="hub-page">
       <SiteHeader routePath="/articles/" />
       <section className="hub-hero article-hub-hero">
-        <p className="eyebrow">Articles / Official functions checked July 23, 2026</p>
-        <h1>Search-led guides.<br /><em>Source-led claims.</em></h1>
+        <p className="eyebrow">Articles / New guides added October 2, 2026</p>
+        <h1>UUFinds guides.<br /><em>Links, photos and spreadsheets.</em></h1>
         <p>Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to the main site.</p>
       </section>
       <section className="hub-content">
@@ -43,7 +43,7 @@ export default function ArticlesPage() {
         </div>
         <div className="article-grid article-hub-grid">
           {articleCards.map((article, index) => (
-            <Link href={article.href} className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
+            <Link href={article.href} data-track-event="guide_click" data-cta-position="article_index" className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
               <div className="article-meta"><span>{article.tag}</span><b>{String(index + 1).padStart(2, "0")}</b></div>
               <h2>{article.title}</h2><p>{article.summary}</p>
               <div className="article-foot"><span>{article.read}</span><b>Read article ↗</b></div>

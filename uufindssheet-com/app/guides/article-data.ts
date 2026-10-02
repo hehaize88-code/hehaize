@@ -1,3 +1,5 @@
+import { octoberGuides } from "./october-guides";
+import { englishGuideUpdates } from "./english-guide-updates";
 import { completionGuides } from "./completion-guides";
 
 export type Guide = {
@@ -33,6 +35,7 @@ export type Guide = {
 };
 
 export const guides: Guide[] = [
+  ...octoberGuides,
   ...completionGuides,
   {
     slug: "uufinds-image-search-guide",
@@ -2432,5 +2435,6 @@ export const guides: Guide[] = [
 ];
 
 export function getGuide(slug: string) {
-  return guides.find((guide) => guide.slug === slug);
+  const guide = guides.find((guide) => guide.slug === slug);
+  return guide ? { ...guide, ...englishGuideUpdates[slug] } : undefined;
 }

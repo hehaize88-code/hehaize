@@ -5,12 +5,12 @@ import { categories } from "../site-data";
 import { localizedAlternates } from "../seo-alternates";
 
 export const metadata: Metadata = {
-  title: "UUFinds Finds 2026 | 9 Live Product Categories",
-  description: "Explore 9 live UUFinds product categories, then open the matching main-site section for shoes, clothing, accessories, jerseys and electronics.",
+  title: "UUFinds Finds: Shoes, Hoodies & Product Categories",
+  description: "Browse nine product categories for UUFinds research, including shoes, hoodies, jerseys and accessories. Open the matching shopping category and verify each listing.",
   alternates: localizedAlternates("/finds/"),
   openGraph: {
-    title: "UUFinds Finds 2026 | 9 Live Product Categories",
-    description: "Explore 9 live UUFinds product categories, then open the matching main-site section for shoes, clothing, accessories, jerseys and electronics.",
+    title: "UUFinds Finds: Shoes, Hoodies & Product Categories",
+    description: "Browse nine product categories for UUFinds research, including shoes, hoodies, jerseys and accessories. Open the matching shopping category and verify each listing.",
     url: "/finds/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -23,7 +23,7 @@ export default function FindsPage() {
       <SiteHeader routePath="/finds/" />
       <section className="hub-hero">
         <p className="eyebrow">Finds / UUFinds research + 09 direct routes</p>
-        <h1>Discover broadly.<br /><em>Match precisely.</em></h1>
+        <h1>UUFinds product finds.<br /><em>Choose your category.</em></h1>
         <p>UUFinds publicly describes both QC discovery and personalized pages that combine items, purchasing-agent routes and social content. Use discovery to create a shortlist—then keep the exact source link so a popular image or shared page is never mistaken for proof of one specific listing.</p>
       </section>
       <section className="hub-content">

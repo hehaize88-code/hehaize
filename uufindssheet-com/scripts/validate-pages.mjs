@@ -450,7 +450,8 @@ for (const slug of priorityGuideSlugs) {
   assert.match(guide, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${slug}/"`));
   assert.doesNotMatch(guide, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|hreflang="(?:de-DE|pl-PL|pt-BR|en-GB)"/i, `${slug} must not claim a translated equivalent`);
   assert.match(guide, /"datePublished":"2026-09-09"/);
-  assert.match(guide, /"dateModified":"2026-09-09"/);
+  const modified = ["uufinds-image-search-guide", "uufinds-app-iphone-guide"].includes(slug) ? "2026-10-02" : "2026-09-09";
+  assert.match(guide, new RegExp(`"dateModified":"${modified}"`));
   assert.match(guide, /"@type":"Article"/);
   assert.match(guide, /"@type":"BreadcrumbList"/);
   assert.match(guide, /class="evidence-ledger"/);
@@ -497,10 +498,10 @@ for (const locale of locales) {
 const home = await readPage("");
 const contiguousHome = home.replaceAll("<!-- -->", "");
 assertLocaleCluster(home, "/", "English home");
-assert.match(home, /<title>UUFinds QC Finder &amp; Spreadsheet 2026 \| QC Photos<\/title>/);
-assert.match(home, /<meta name="description" content="Use the UUFinds spreadsheet and QC finder to compare real QC photos, browse current product links, and check Taobao, Weidian and 1688 finds\."/);
-assert.match(contiguousHome, /<h1>UUFinds Spreadsheet &amp; QC Finder\.<br\/?><em>Find products and check QC photos\.<\/em><\/h1>/);
-assert.match(home, /Search UUFinds spreadsheet finds, compare available QC photos and videos, and verify Taobao, Weidian, 1688 or agent links before opening the matching product page\./);
+assert.match(home, /<title>UUFinds Spreadsheet 2026: Product Finds &amp; QC Guides<\/title>/);
+assert.match(home, /<meta name="description" content="Browse an independent UUFinds spreadsheet with shoes, hoodies and product links. Learn to match QC photos, compare listings and check the details before shopping\."/);
+assert.match(contiguousHome, /<h1>UUFinds Spreadsheet 2026\.<br\/?><em>Product finds\. Clear QC guides\.<\/em><\/h1>/);
+assert.match(home, /Browse product finds and learn how to check matching QC photos with our independent UUFinds guides\. Start with shoes, hoodies or accessories, then verify the exact listing and selected option\./);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/shoes\/"/);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/hoodies-sweaters\/"/);
 assert.match(home, /href="https:\/\/cnbuycha\.com\/jersey\/"/);
@@ -542,7 +543,12 @@ const keywordGuideChecks = [
 const assignedGuideTitles = new Set();
 for (const [slug, heading, visiblePhrase] of keywordGuideChecks) {
   const html = await readPage(`guides/${slug}`);
-  const assignedTitle = heading + " | UUFinds Sheet";
+  const seoTitles = {
+    "uufinds-spreadsheet-shopping-guide-2026": "How to Use a UUFinds Spreadsheet",
+    "uufinds-qc-checklist": "UUFinds QC Photos: Practical Checklist",
+    "how-to-use-uufinds": "How to Use UUFinds: Links &amp; QC Photos",
+  };
+  const assignedTitle = seoTitles[slug] + " | UUFinds Sheet";
   assert.ok(html.includes(`<title>${assignedTitle}</title>`), `${slug} must own its assigned title`);
   assert.match(html, new RegExp(`<h1>${heading}</h1>`), `${slug} must own its assigned H1`);
   assert.ok(html.toLowerCase().includes(visiblePhrase.toLowerCase()), `${slug} must reinforce its assigned phrase in visible copy`);
@@ -619,6 +625,29 @@ assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|
 assert.doesNotMatch(sitemap, new RegExp(`https://uufindssheet\\.com/(?:en-gb|de|pl|pt-br)/guides/${comparisonGuideSlug}/`));
 
 const allowedOutboundHosts = new Set(["uufindssheet.com", "cnbuycha.com", "www.cnbuycha.com", "si.geilicdn.com", "www.googletagmanager.com"]);
+for (const slug of ["uufinds-vs-finderqc", "create-uufinds-spreadsheet"]) {
+  const html = await readPage(`guides/${slug}`);
+  const words = Number(html.match(/data-visible-word-count="(\d+)"/)?.[1]);
+  assert.ok(words >= 1200 && words <= 1800, `${slug} must contain 1,200–1,800 body words`);
+  assert.equal(count(html, /<h1>/g), 1, `${slug} must have one main heading`);
+  assert.match(html, new RegExp(`<link rel="canonical" href="https://uufindssheet\\.com/guides/${slug}/"`));
+  assert.doesNotMatch(html, /hrefLang="(?:de-DE|pl-PL|pt-BR|en-GB)"|"@type":"FAQPage"/);
+  assert.doesNotMatch(html.slice(html.indexOf('class="guide-body"'), html.indexOf('class="source-note"')), /<details\b/);
+  assert.match(html, /"datePublished":"2026-10-02"/);
+  assert.match(html, /"dateModified":"2026-10-02"/);
+  assert.match(html, /class="guide-table-wrap"/);
+  assert.match(html, /class="evidence-ledger"/);
+  assert.match(home, new RegExp(`href="/guides/${slug}/"`));
+  assert.match(articleIndex, new RegExp(`href="/guides/${slug}/"`));
+  assert.match(sitemap, new RegExp(`https://uufindssheet\\.com/guides/${slug}/`));
+  for (const locale of locales) await assert.rejects(readPage(`${locale}/guides/${slug}`));
+}
+for (const locale of ["", ...locales]) {
+  const html = await readPage(locale);
+  assert.match(html, /action="https:\/\/cnbuycha\.com\/search\.html"/);
+  assert.match(html, /name="channelid" value="2"/);
+  assert.match(html, /name="keywords"/);
+}
 const publishedHtmlFiles = (await filesUnder(root.pathname)).filter((path) => path.endsWith(".html"));
 for (const file of publishedHtmlFiles) {
   const html = await readFile(file, "utf8");
