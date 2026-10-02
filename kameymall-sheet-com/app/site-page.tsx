@@ -1,20 +1,19 @@
 "use client";
 
-import { FormEvent, ReactNode, useMemo, useState } from "react";
+import { createContext, useContext, FormEvent, ReactNode, useMemo, useState } from "react";
 import {
-  articleRoute,
   articleRoutes,
-  copies,
   guideRoutes,
   isStaticRouteKey,
-  isEnglishOnlyArticleRoute,
+  isRouteKey,
   languages,
   Locale,
   RouteKey,
   routeHref,
   StaticRouteKey,
-} from "./site-content";
-import { additionalArticles, additionalArticleRoutes } from "./site-articles";
+} from "./site-routing";
+import type { SiteCopy } from "./site-content";
+
 import { priorityCategoryEditorial } from "./site-category-editorial";
 import { catalogCopies } from "./site-catalog-copy";
 import {
@@ -33,6 +32,14 @@ import {
 } from "./site-products";
 
 const CNY_TO_USD = 0.1481;
+type PageContent = { copy: SiteCopy; article?: SiteCopy["articlePage"] };
+const PageContentContext = createContext<PageContent | null>(null);
+function usePageContent() {
+  const content = useContext(PageContentContext);
+  if (!content) throw new Error("Missing localized page content");
+  return content;
+}
+
 const SITE_URL = "https://kameymall-sheet.com";
 const articleDates: Partial<Record<StaticRouteKey, string>> = {
   "articles/kameymall-spreadsheet-guide-2026": "2026-08-03",
@@ -155,10 +162,8 @@ function ProductImage({ product, priority = false }: { product: Product; priorit
 }
 
 function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
-  const copy = copies[locale];
-  const routeLanguages = isEnglishOnlyArticleRoute(route)
-    ? languages.filter((language) => language.code === "en")
-    : languages;
+  const copy = usePageContent().copy;
+  const routeLanguages = languages;
   const navItems: Array<[RouteKey, string]> = [
     ["finds", copy.nav.finds],
     ["categories", copy.nav.categories],
@@ -211,7 +216,7 @@ function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
 }
 
 function Footer({ locale }: { locale: Locale }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const links: Array<[RouteKey, string]> = [
     ["finds", copy.nav.finds],
     ["categories", copy.nav.categories],
@@ -238,7 +243,7 @@ function Footer({ locale }: { locale: Locale }) {
 }
 
 function MainSearch({ locale, compact = false }: { locale: Locale; compact?: boolean }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   function submitMainSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
@@ -251,15 +256,15 @@ function MainSearch({ locale, compact = false }: { locale: Locale; compact?: boo
       source_page: window.location.pathname,
     });
     if (!keyword) {
-      window.location.assign("https://www.cnbuycha.com/AllProducts/");
+      window.location.assign("https://cnbuycha.com/AllProducts/");
       return;
     }
     const query = new URLSearchParams({ q: keyword });
-    window.location.assign(`https://www.cnbuycha.com/AllProducts/?${query.toString()}`);
+    window.location.assign(`https://cnbuycha.com/AllProducts/?${query.toString()}`);
   }
   return (
     <form
-      action="https://www.cnbuycha.com/AllProducts/"
+      action="https://cnbuycha.com/AllProducts/"
       className={`hero-search${compact ? " search-compact" : ""}`}
       method="get"
       onSubmit={submitMainSearch}
@@ -277,7 +282,7 @@ function MainSearch({ locale, compact = false }: { locale: Locale; compact?: boo
 }
 
 function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: boolean }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const [tableQuery, setTableQuery] = useState("");
   const [category, setCategory] = useState("all");
   const sourceProducts = featured ? featuredProducts : products;
@@ -354,7 +359,7 @@ function FindBrowser({ locale, featured = false }: { locale: Locale; featured?: 
 }
 
 function HomeHero({ locale }: { locale: Locale }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const chips = ["shoes", "jersey", "sweatshirts", "headwear", "electronics"] as const;
   return (
     <section className="hero">
@@ -391,7 +396,7 @@ function SectionHeading({ kicker, title, intro }: { kicker: string; title: strin
 }
 
 function CategoriesSection({ locale, directToMainSite = false }: { locale: Locale; directToMainSite?: boolean }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   return (
     <section className="category-section page-section">
       <SectionHeading kicker={copy.categories.kicker} title={copy.categories.title} intro={copy.categories.intro} />
@@ -415,7 +420,7 @@ function CategoriesSection({ locale, directToMainSite = false }: { locale: Local
 }
 
 function HowSection({ locale }: { locale: Locale }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   return (
     <section className="how-section page-section">
       <div className="how-intro">
@@ -434,7 +439,7 @@ function HowSection({ locale }: { locale: Locale }) {
 }
 
 function GuidesSection({ locale }: { locale: Locale }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   return (
     <section className="guides-section page-section">
       <SectionHeading kicker={copy.guides.kicker} title={copy.guides.title} intro={copy.guides.intro} />
@@ -453,27 +458,28 @@ function GuidesSection({ locale }: { locale: Locale }) {
 }
 
 function ArticlesSection({ locale }: { locale: Locale }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const targets: RouteKey[] = articleRoutes;
+  const cardOrder = [...targets.map((_, index) => index).filter((index) => index >= 20), ...targets.map((_, index) => index).filter((index) => index < 20)];
   return (
     <section className="articles-section page-section">
       <SectionHeading kicker={copy.articles.kicker} title={copy.articles.title} intro={copy.articles.intro} />
       <div className="article-card-grid">
-        {copy.articles.cards.map((card, index) => (
+        {cardOrder.map((index, position) => { const card = copy.articles.cards[index]; return (
           <article className="article-card" key={card.title}>
-            <div className="article-card-top"><span>{card.label}</span><span>0{index + 1}</span></div>
+            <div className="article-card-top"><span>{card.label}</span><span>{String(position + 1).padStart(2, "0")}</span></div>
             <h3>{card.title}</h3>
             <p>{card.body}</p>
-            <a href={routeHref(isEnglishOnlyArticleRoute(targets[index]) ? "en" : locale, targets[index])}>{card.action} <ArrowIcon /></a>
+            <a href={routeHref(locale, targets[index])}>{card.action} <ArrowIcon /></a>
           </article>
-        ))}
+        ); })}
       </div>
     </section>
   );
 }
 
 function FaqSection({ locale }: { locale: Locale }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   return (
     <section className="faq-section page-section">
       <div className="faq-intro"><p className="section-kicker">{copy.faq.kicker}</p><h2>{copy.faq.title}</h2><p>{copy.faq.intro}</p></div>
@@ -501,7 +507,7 @@ function Breadcrumbs({ locale, items }: { locale: Locale; items: Array<{ label: 
 }
 
 function ProductCard({ locale, product }: { locale: Locale; product: Product }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const catalog = catalogCopies[locale];
   return (
     <article className="catalog-product-card">
@@ -520,7 +526,7 @@ function ProductCard({ locale, product }: { locale: Locale; product: Product }) 
 }
 
 function CategoryCatalogPage({ locale, category }: { locale: Locale; category: CategoryKey }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const catalog = catalogCopies[locale];
   const categoryLabel = copy.categories.items[category].label;
   const categoryProducts = productsForCategory(category);
@@ -576,7 +582,7 @@ function CategoryCatalogPage({ locale, category }: { locale: Locale; category: C
 }
 
 function ProductDetailPage({ locale, product }: { locale: Locale; product: Product }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const catalog = catalogCopies[locale];
   const categoryLabel = copy.categories.items[product.categoryKey].label;
   const related = productsForCategory(product.categoryKey).filter((item) => item.slug !== product.slug);
@@ -638,7 +644,7 @@ function ProductDetailPage({ locale, product }: { locale: Locale; product: Produ
 }
 
 function InnerHero({ locale, route, children }: { locale: Locale; route: Exclude<StaticRouteKey, "home">; children?: ReactNode }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const intro = copy.pageIntros[route];
   return (
     <section className="inner-hero">
@@ -653,11 +659,10 @@ function InnerHero({ locale, route, children }: { locale: Locale; route: Exclude
 }
 
 function ProsePage({ locale, route, article = false }: { locale: Locale; route: StaticRouteKey; article?: boolean }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
+  const activeArticle = usePageContent().article;
   if (article) {
-    const page = route === articleRoute
-      ? copy.articlePage
-      : additionalArticles[locale][route as (typeof additionalArticleRoutes)[number]];
+    const page = activeArticle ?? copy.articlePage;
     return (
       <>
         <InnerHero locale={locale} route={route as Exclude<StaticRouteKey, "home">}>
@@ -672,6 +677,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
           <div className="prose-body">
             <p className="prose-lede">{page.intro}</p>
             {page.sourceNote ? <p className="fact-note">{page.sourceNote}</p> : null}
+            {page.image ? <figure className="article-figure"><img src={page.image.src} alt={page.image.alt} width={640} height={640} loading="lazy" decoding="async" /><figcaption>{page.image.caption}</figcaption></figure> : null}
             {page.sections.map((section) => (
               <section key={section.heading}>
                 <h2>{section.heading}</h2>
@@ -682,7 +688,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
             {page.relatedLinks?.length ? (
               <section>
                 <h2>{page.relatedTitle ?? "Related KameyMall guides"}</h2>
-                <ul>{page.relatedLinks.map((link) => <li key={link.href}><a href={link.href}>{link.label}</a></li>)}</ul>
+                <ul>{page.relatedLinks.map((link) => <li key={link.href}><a href={link.href.startsWith("/") && isRouteKey(link.href.slice(1)) ? routeHref(locale, link.href.slice(1) as RouteKey) : link.href}>{link.label}</a></li>)}</ul>
               </section>
             ) : null}
             <section className="takeaway"><h2>{page.conclusionTitle}</h2><p>{page.conclusion}</p></section>
@@ -717,7 +723,7 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
 }
 
 function RouteContent({ locale, route }: { locale: Locale; route: RouteKey }) {
-  const copy = copies[locale];
+  const copy = usePageContent().copy;
   const product = productFromRoute(route);
   const category = categoryFromRoute(route);
   if (product) return <ProductDetailPage locale={locale} product={product} />;
@@ -734,16 +740,13 @@ function RouteContent({ locale, route }: { locale: Locale; route: RouteKey }) {
   return <ProsePage locale={locale} route={staticRoute} />;
 }
 
-export default function SitePage({ locale, route }: { locale: Locale; route: RouteKey }) {
-  const copy = copies[locale];
+function RenderedSitePage({ locale, route }: { locale: Locale; route: RouteKey }) {
+  const copy = usePageContent().copy;
   const product = productFromRoute(route);
   const category = categoryFromRoute(route);
   const isArticle = isStaticRouteKey(route) && articleRoutes.includes(route);
-  const articlePage = isArticle
-    ? route === articleRoute
-      ? copy.articlePage
-      : additionalArticles[locale][route as (typeof additionalArticleRoutes)[number]]
-    : null;
+  const activeArticle = usePageContent().article;
+  const articlePage = isArticle ? activeArticle ?? copy.articlePage : null;
   const canonicalPath = routeHref(locale, route);
   const canonical = `https://kameymall-sheet.com${canonicalPath === "/" ? "" : canonicalPath}`;
   const categoryLabel = category ? copy.categories.items[category].label : product ? copy.categories.items[product.categoryKey].label : null;
@@ -856,7 +859,8 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
                 inLanguage: locale,
                 keywords: articlePage.primaryKeyword,
                 author: { "@type": "Organization", name: "KameyMall Sheet" },
-                publisher: { "@type": "Organization", name: "KameyMall Sheet" },
+                publisher: { "@type": "Organization", name: "KameyMall Sheet", logo: { "@type": "ImageObject", url: `${SITE_URL}/kameymall-logo.png` } },
+                ...(articlePage.image ? { image: [`${SITE_URL}${articlePage.image.src}`] } : {}),
               },
               breadcrumbSchema,
             ]
@@ -879,4 +883,10 @@ export default function SitePage({ locale, route }: { locale: Locale; route: Rou
       <Footer locale={locale} />
     </main>
   );
+}
+
+// The server sends only the selected locale and current article. The browser
+// does not download all six languages of the entire article library.
+export default function SitePage({ locale, route, copy, article }: PageContent & { locale: Locale; route: RouteKey }) {
+  return <PageContentContext.Provider value={{ copy, article }}><RenderedSitePage locale={locale} route={route} /></PageContentContext.Provider>;
 }

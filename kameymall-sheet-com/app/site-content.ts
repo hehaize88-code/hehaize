@@ -1,109 +1,6 @@
-import { categoryRoutes, productRoutes, type CatalogRoute } from "./site-products";
-
-export type Locale = "en" | "de" | "fr" | "es" | "it" | "pl";
-
-export type StaticRouteKey =
-  | "home"
-  | "finds"
-  | "categories"
-  | "how-to-buy"
-  | "guides"
-  | "faq"
-  | "articles"
-  | "guides/how-to-use-kameymall-spreadsheet"
-  | "guides/cny-price-vs-final-cost"
-  | "guides/what-to-inspect-before-ordering"
-  | "articles/kameymall-spreadsheet-guide-2026"
-  | "articles/how-to-buy-from-kameymall-2026"
-  | "articles/kameymall-shipping-cost-guide-2026"
-  | "articles/how-to-read-kameymall-qc-photos"
-  | "articles/kameymall-warehouse-storage-returns-guide"
-  | "articles/kameymall-payment-methods-fees"
-  | "articles/kameymall-order-status-guide"
-  | "articles/kameymall-consolidation-vs-split-parcels"
-  | "articles/kameymall-shipping-lines-comparison"
-  | "articles/kameymall-tracking-no-update-guide"
-  | "articles/is-kameymall-legit-2026"
-  | "articles/kameymall-shipping-to-usa"
-  | "articles/kameymall-shoes-buying-guide"
-  | "articles/kameymall-volumetric-weight-guide"
-  | "articles/kameymall-customs-declaration-guide"
-  | "articles/kameymall-packaging-options-guide"
-  | "articles/kameymall-insurance-claims-guide"
-  | "articles/kameymall-product-link-not-working"
-  | "articles/kameymall-app-vs-website"
-  | "articles/kameymall-shipping-to-philippines";
-
-export type RouteKey = StaticRouteKey | CatalogRoute;
-
-export const englishOnlyArticleRoutes = [
-  "articles/is-kameymall-legit-2026",
-  "articles/kameymall-shipping-to-usa",
-  "articles/kameymall-shoes-buying-guide",
-  "articles/kameymall-volumetric-weight-guide",
-  "articles/kameymall-customs-declaration-guide",
-  "articles/kameymall-packaging-options-guide",
-  "articles/kameymall-insurance-claims-guide",
-  "articles/kameymall-product-link-not-working",
-  "articles/kameymall-app-vs-website",
-  "articles/kameymall-shipping-to-philippines",
-] as const satisfies readonly StaticRouteKey[];
-
-export function isEnglishOnlyArticleRoute(route: RouteKey): boolean {
-  return englishOnlyArticleRoutes.includes(route as (typeof englishOnlyArticleRoutes)[number]);
-}
-
-export const staticRoutes: StaticRouteKey[] = [
-  "home",
-  "finds",
-  "categories",
-  "how-to-buy",
-  "guides",
-  "faq",
-  "articles",
-  "guides/how-to-use-kameymall-spreadsheet",
-  "guides/cny-price-vs-final-cost",
-  "guides/what-to-inspect-before-ordering",
-  "articles/kameymall-spreadsheet-guide-2026",
-  "articles/how-to-buy-from-kameymall-2026",
-  "articles/kameymall-shipping-cost-guide-2026",
-  "articles/how-to-read-kameymall-qc-photos",
-  "articles/kameymall-warehouse-storage-returns-guide",
-  "articles/kameymall-payment-methods-fees",
-  "articles/kameymall-order-status-guide",
-  "articles/kameymall-consolidation-vs-split-parcels",
-  "articles/kameymall-shipping-lines-comparison",
-  "articles/kameymall-tracking-no-update-guide",
-  ...englishOnlyArticleRoutes,
-];
-
-export const supportedRoutes: RouteKey[] = [
-  ...staticRoutes,
-  ...categoryRoutes,
-  ...productRoutes,
-];
-
-export function isRouteKey(value: string): value is RouteKey {
-  return supportedRoutes.includes(value as RouteKey);
-}
-
-export function isStaticRouteKey(value: string): value is StaticRouteKey {
-  return staticRoutes.includes(value as StaticRouteKey);
-}
-
-export const languages: Array<{ code: Locale; short: string; label: string }> = [
-  { code: "en", short: "EN", label: "English" },
-  { code: "de", short: "DE", label: "Deutsch" },
-  { code: "fr", short: "FR", label: "Français" },
-  { code: "es", short: "ES", label: "Español" },
-  { code: "it", short: "IT", label: "Italiano" },
-  { code: "pl", short: "PL", label: "Polski" },
-];
-
-export function routeHref(locale: Locale, route: RouteKey): string {
-  const prefix = locale === "en" ? "" : `/${locale}`;
-  return route === "home" ? `${prefix || "/"}` : `${prefix}/${route}`;
-}
+import refreshedContent from "./site-article-refresh.json";
+import { languages, staticRoutes, opportunityArticleRoutes, type Locale, type StaticRouteKey } from "./site-routing";
+export * from "./site-routing";
 
 type CategoryCopy = { label: string; description: string };
 type StepCopy = { title: string; body: string };
@@ -195,6 +92,7 @@ export type SiteCopy = {
     seoDescription?: string;
     published?: string;
     modified?: string;
+    image?: { src: string; alt: string; caption: string };
     relatedTitle?: string;
     relatedLinks?: Array<{ label: string; href: string }>;
   };
@@ -1216,7 +1114,7 @@ for (const language of languages) {
   copy.pageIntros["articles/kameymall-tracking-no-update-guide"] = update.intro;
 }
 
-const opportunityArticleUi: Array<{ route: (typeof englishOnlyArticleRoutes)[number]; card: CardCopy; intro: { kicker: string; title: string; intro: string } }> = [
+const opportunityArticleUi: Array<{ route: (typeof opportunityArticleRoutes)[number]; card: CardCopy; intro: { kicker: string; title: string; intro: string } }> = [
   { route: "articles/is-kameymall-legit-2026", card: { label: "Buyer safety", title: "Is KameyMall Legit in 2026?", body: "Use a fact-checked checklist to separate platform evidence, independent reviews and order-level risk.", action: "Read the legitimacy checklist" }, intro: { kicker: "Independent buyer checklist", title: "Is KameyMall Legit in 2026? A Fact-Checked Buyer Checklist", intro: "A cautious review of the evidence you can verify before funding an order, plus the limits of ratings and promotional claims." } },
   { route: "articles/kameymall-shipping-to-usa", card: { label: "United States", title: "KameyMall Shipping to the USA", body: "Plan route eligibility, weight, address checks, customs records and delivery handoffs without relying on a fixed quote.", action: "Read the USA guide" }, intro: { kicker: "Country shipping guide", title: "KameyMall Shipping to the USA: Route, Weight and Customs Checklist", intro: "A practical United States parcel workflow built around live route data, warehouse measurements and verifiable tracking events." } },
   { route: "articles/kameymall-shoes-buying-guide", card: { label: "Shoes", title: "KameyMall Shoes Buying Guide", body: "Check size systems, listing variants, warehouse QC, shoebox choices and chargeable weight before shipping.", action: "Read the shoes guide" }, intro: { kicker: "Footwear buying guide", title: "KameyMall Shoes Buying Guide: Sizing, QC and Shipping", intro: "A shoe-specific method for choosing the exact option, documenting fit evidence and preventing a bulky box from becoming a shipping surprise." } },
@@ -1329,6 +1227,23 @@ export const copies: Record<Locale, SiteCopy> = {
   pl: polish,
 };
 
+// One content source keeps cards, visible headings and metadata in the same language.
+const refreshed = refreshedContent as unknown as Record<Locale, { pages: Record<string, SiteCopy["articlePage"]>; ui: { libraryIntro: string; read: string } }>;
+for (const language of languages) {
+  const copy = copies[language.code];
+  const content = refreshed[language.code];
+  const routes = staticRoutes.filter((route) => route.startsWith("articles/"));
+  for (const [index, route] of routes.entries()) {
+    const page = content.pages[route];
+    if (!page) continue;
+    copy.articles.cards[index] = { label: page.label, title: page.title, body: page.seoDescription ?? page.intro, action: content.ui.read };
+    copy.pageIntros[route as Exclude<StaticRouteKey, "home">] = { kicker: page.label, title: page.title, intro: page.intro };
+  }
+  copy.articlePage = content.pages["articles/kameymall-spreadsheet-guide-2026"];
+  copy.articles.intro = content.ui.libraryIntro;
+  copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: content.ui.libraryIntro };
+}
+
 function proseStructure(sections: ProseSection[]) {
   return sections.map((section) => ({
     paragraphs: section.paragraphs.length,
@@ -1358,23 +1273,3 @@ for (const language of languages) {
     throw new Error(`Incomplete ${language.code} translation: visible content structure must match English`);
   }
 }
-
-export const guideRoutes: StaticRouteKey[] = [
-  "guides/how-to-use-kameymall-spreadsheet",
-  "guides/cny-price-vs-final-cost",
-  "guides/what-to-inspect-before-ordering",
-];
-export const articleRoute: StaticRouteKey = "articles/kameymall-spreadsheet-guide-2026";
-export const articleRoutes: StaticRouteKey[] = [
-  articleRoute,
-  "articles/how-to-buy-from-kameymall-2026",
-  "articles/kameymall-shipping-cost-guide-2026",
-  "articles/how-to-read-kameymall-qc-photos",
-  "articles/kameymall-warehouse-storage-returns-guide",
-  "articles/kameymall-payment-methods-fees",
-  "articles/kameymall-order-status-guide",
-  "articles/kameymall-consolidation-vs-split-parcels",
-  "articles/kameymall-shipping-lines-comparison",
-  "articles/kameymall-tracking-no-update-guide",
-  ...englishOnlyArticleRoutes,
-];

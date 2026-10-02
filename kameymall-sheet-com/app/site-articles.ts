@@ -1,3 +1,5 @@
+import refreshedContent from "./site-article-refresh.json";
+import { newArticleRoutes } from "./site-article-routes";
 import type { Locale } from "./site-content";
 import { warehouseStorageArticles } from "./site-article-storage";
 import { paymentArticles } from "./site-article-payment";
@@ -24,6 +26,7 @@ export type ArticlePageContent = {
   seoDescription: string;
   published?: string;
   modified?: string;
+  image?: { src: string; alt: string; caption: string };
   relatedTitle?: string;
   relatedLinks?: Array<{ label: string; href: string }>;
 };
@@ -34,6 +37,7 @@ type LegacyAdditionalArticleRoute =
   | "articles/how-to-read-kameymall-qc-photos";
 
 export type AdditionalArticleRoute =
+  | (typeof newArticleRoutes)[number]
   | LegacyAdditionalArticleRoute
   | "articles/kameymall-warehouse-storage-returns-guide"
   | "articles/kameymall-payment-methods-fees"
@@ -44,6 +48,7 @@ export type AdditionalArticleRoute =
   | OpportunityArticleRoute;
 
 export const additionalArticleRoutes: AdditionalArticleRoute[] = [
+  ...newArticleRoutes,
   "articles/how-to-buy-from-kameymall-2026",
   "articles/kameymall-shipping-cost-guide-2026",
   "articles/how-to-read-kameymall-qc-photos",
@@ -680,13 +685,15 @@ const polish: Record<LegacyAdditionalArticleRoute, ArticlePageContent> = {
   },
 };
 
+type RefreshedArticleRoute = Extract<AdditionalArticleRoute, keyof typeof refreshedContent.en.pages>;
+
 export const additionalArticles: Record<Locale, Record<AdditionalArticleRoute, ArticlePageContent>> = {
-  en: { ...english, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.en, "articles/kameymall-payment-methods-fees": paymentArticles.en, "articles/kameymall-order-status-guide": orderStatusArticles.en, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.en, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.en, "articles/kameymall-tracking-no-update-guide": trackingArticles.en, ...opportunityArticles },
-  de: { ...german, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.de, "articles/kameymall-payment-methods-fees": paymentArticles.de, "articles/kameymall-order-status-guide": orderStatusArticles.de, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.de, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.de, "articles/kameymall-tracking-no-update-guide": trackingArticles.de, ...opportunityArticles },
-  fr: { ...french, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.fr, "articles/kameymall-payment-methods-fees": paymentArticles.fr, "articles/kameymall-order-status-guide": orderStatusArticles.fr, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.fr, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.fr, "articles/kameymall-tracking-no-update-guide": trackingArticles.fr, ...opportunityArticles },
-  es: { ...spanish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.es, "articles/kameymall-payment-methods-fees": paymentArticles.es, "articles/kameymall-order-status-guide": orderStatusArticles.es, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.es, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.es, "articles/kameymall-tracking-no-update-guide": trackingArticles.es, ...opportunityArticles },
-  it: { ...italian, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.it, "articles/kameymall-payment-methods-fees": paymentArticles.it, "articles/kameymall-order-status-guide": orderStatusArticles.it, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.it, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.it, "articles/kameymall-tracking-no-update-guide": trackingArticles.it, ...opportunityArticles },
-  pl: { ...polish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.pl, "articles/kameymall-payment-methods-fees": paymentArticles.pl, "articles/kameymall-order-status-guide": orderStatusArticles.pl, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.pl, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.pl, "articles/kameymall-tracking-no-update-guide": trackingArticles.pl, ...opportunityArticles },
+  en: { ...english, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.en, "articles/kameymall-payment-methods-fees": paymentArticles.en, "articles/kameymall-order-status-guide": orderStatusArticles.en, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.en, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.en, "articles/kameymall-tracking-no-update-guide": trackingArticles.en, ...opportunityArticles, ...(refreshedContent.en.pages as unknown as Record<RefreshedArticleRoute, ArticlePageContent>) },
+  de: { ...german, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.de, "articles/kameymall-payment-methods-fees": paymentArticles.de, "articles/kameymall-order-status-guide": orderStatusArticles.de, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.de, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.de, "articles/kameymall-tracking-no-update-guide": trackingArticles.de, ...opportunityArticles, ...(refreshedContent.de.pages as unknown as Record<RefreshedArticleRoute, ArticlePageContent>) },
+  fr: { ...french, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.fr, "articles/kameymall-payment-methods-fees": paymentArticles.fr, "articles/kameymall-order-status-guide": orderStatusArticles.fr, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.fr, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.fr, "articles/kameymall-tracking-no-update-guide": trackingArticles.fr, ...opportunityArticles, ...(refreshedContent.fr.pages as unknown as Record<RefreshedArticleRoute, ArticlePageContent>) },
+  es: { ...spanish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.es, "articles/kameymall-payment-methods-fees": paymentArticles.es, "articles/kameymall-order-status-guide": orderStatusArticles.es, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.es, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.es, "articles/kameymall-tracking-no-update-guide": trackingArticles.es, ...opportunityArticles, ...(refreshedContent.es.pages as unknown as Record<RefreshedArticleRoute, ArticlePageContent>) },
+  it: { ...italian, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.it, "articles/kameymall-payment-methods-fees": paymentArticles.it, "articles/kameymall-order-status-guide": orderStatusArticles.it, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.it, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.it, "articles/kameymall-tracking-no-update-guide": trackingArticles.it, ...opportunityArticles, ...(refreshedContent.it.pages as unknown as Record<RefreshedArticleRoute, ArticlePageContent>) },
+  pl: { ...polish, "articles/kameymall-warehouse-storage-returns-guide": warehouseStorageArticles.pl, "articles/kameymall-payment-methods-fees": paymentArticles.pl, "articles/kameymall-order-status-guide": orderStatusArticles.pl, "articles/kameymall-consolidation-vs-split-parcels": consolidationArticles.pl, "articles/kameymall-shipping-lines-comparison": shippingLineArticles.pl, "articles/kameymall-tracking-no-update-guide": trackingArticles.pl, ...opportunityArticles, ...(refreshedContent.pl.pages as unknown as Record<RefreshedArticleRoute, ArticlePageContent>) },
 };
 
 function articleStructure(pages: Record<AdditionalArticleRoute, ArticlePageContent>) {

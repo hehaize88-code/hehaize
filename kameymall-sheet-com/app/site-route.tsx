@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import SitePage from "./site-page";
-import { articleRoute, articleRoutes, copies, isEnglishOnlyArticleRoute, isRouteKey, isStaticRouteKey, languages, Locale, routeHref, RouteKey } from "./site-content";
+import SitePage from "./site-shell";
+import { articleRoute, articleRoutes, copies, isRouteKey, isStaticRouteKey, languages, Locale, routeHref, RouteKey } from "./site-content";
 import { additionalArticles, additionalArticleRoutes } from "./site-articles";
 import { catalogCopies } from "./site-catalog-copy";
 import { priorityCategoryEditorial } from "./site-category-editorial";
@@ -19,8 +19,8 @@ const englishSeoOverrides: Partial<Record<RouteKey, { title: string; description
     description: "Get clear answers about KameyMall buying, payments, QC photos, warehouse storage, returns, packaging, shipping and tracking.",
   },
   articles: {
-    title: "KameyMall Guides 2026: QC, Shipping, Customs & More",
-    description: "Read 20 independent KameyMall guides covering product links, ordering, QC, shipping, customs, insurance, packaging and country-specific planning.",
+    title: "KameyMall Buying Guides: Finds, Sizing, QC & Shipping",
+    description: "Read 24 KameyMall guides on hoodie and jersey finds, size charts, budget picks, ordering, QC and international shipping.",
   },
 };
 
@@ -32,12 +32,10 @@ export function slugToRoute(slug: string[]): RouteKey {
 
 export function renderSiteRoute(locale: Locale, slug: string[]) {
   const route = slugToRoute(slug);
-  if (locale !== "en" && isEnglishOnlyArticleRoute(route)) notFound();
   return <SitePage locale={locale} route={route} />;
 }
 
 export function buildMetadata(locale: Locale, route: RouteKey): Metadata {
-  if (locale !== "en" && isEnglishOnlyArticleRoute(route)) notFound();
   const copy = copies[locale];
   const catalog = catalogCopies[locale];
   const product = productFromRoute(route);
@@ -76,9 +74,7 @@ export function buildMetadata(locale: Locale, route: RouteKey): Metadata {
   const description = override?.description ?? generatedDescription;
   const canonicalPath = routeHref(locale, route);
   const canonical = `${SITE_URL}${canonicalPath === "/" ? "" : canonicalPath}`;
-  const alternateLanguages = isEnglishOnlyArticleRoute(route)
-    ? languages.filter((language) => language.code === "en")
-    : languages;
+  const alternateLanguages = languages;
   const alternates = Object.fromEntries(
     alternateLanguages.map((language) => {
       const path = routeHref(language.code, route);
@@ -97,7 +93,7 @@ export function buildMetadata(locale: Locale, route: RouteKey): Metadata {
       description,
       type: isArticle ? "article" : "website",
       url: canonical,
-      images: product ? [{ url: `${SITE_URL}${product.image}`, alt: product.name }] : undefined,
+      images: product ? [{ url: `${SITE_URL}${product.image}`, alt: product.name }] : articlePage?.image ? [{ url: `${SITE_URL}${articlePage.image.src}`, alt: articlePage.image.alt }] : undefined,
     },
   };
 }

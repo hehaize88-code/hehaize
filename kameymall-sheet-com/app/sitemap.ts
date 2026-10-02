@@ -1,11 +1,12 @@
+import refreshedContent from "./site-article-refresh.json";
 import type { MetadataRoute } from "next";
-import { isEnglishOnlyArticleRoute, languages, routeHref, supportedRoutes, type RouteKey } from "./site-content";
+import { languages, routeHref, supportedRoutes, type RouteKey } from "./site-content";
 
 const SITE_URL = "https://kameymall-sheet.com";
 const DEFAULT_LAST_MODIFIED = "2026-08-03";
 const routeDates: Partial<Record<RouteKey, string>> = {
-  home: "2026-09-10",
-  articles: "2026-09-10",
+  home: "2026-10-02",
+  articles: "2026-10-02",
   "articles/kameymall-warehouse-storage-returns-guide": "2026-08-08",
   "articles/kameymall-payment-methods-fees": "2026-08-09",
   "articles/kameymall-order-status-guide": "2026-08-11",
@@ -27,12 +28,11 @@ const routeDates: Partial<Record<RouteKey, string>> = {
 export default function sitemap(): MetadataRoute.Sitemap {
   return languages.flatMap((language) =>
     supportedRoutes
-      .filter((route) => language.code === "en" || !isEnglishOnlyArticleRoute(route))
       .map((route) => {
       const path = routeHref(language.code, route);
       return {
         url: `${SITE_URL}${path === "/" ? "" : path}`,
-        lastModified: new Date(`${routeDates[route] ?? DEFAULT_LAST_MODIFIED}T00:00:00Z`),
+        lastModified: new Date(`${(route in refreshedContent.en.pages ? "2026-10-02" : routeDates[route]) ?? DEFAULT_LAST_MODIFIED}T00:00:00Z`),
         changeFrequency: route === "home" || route === "finds" || route === "articles" ? "weekly" as const : "monthly" as const,
         priority: route === "home" ? 1 : route === "finds" || route === "articles" ? 0.85 : 0.72,
       };

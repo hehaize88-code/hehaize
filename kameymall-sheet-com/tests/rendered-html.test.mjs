@@ -95,7 +95,7 @@ test("renders every requested independent page", async () => {
   }
 });
 
-test("publishes substantial opportunity articles only on canonical English URLs", async () => {
+test("publishes complete opportunity articles on all six canonical language URLs", async () => {
   const worker = await loadWorker();
   for (const route of opportunityRoutes) {
     const response = await render(worker, route);
@@ -106,9 +106,15 @@ test("publishes substantial opportunity articles only on canonical English URLs"
     assert.ok(words.length >= 1200 && words.length <= 1800, `${route} visible words: ${words.length}`);
     assert.match(html, /"datePublished":"2026-09-10"/);
     assert.match(html, /hreflang="en"/i);
-    assert.doesNotMatch(html, /hreflang="(?:de|fr|es|it|pl)"/i);
+    assert.match(html, /hreflang="(?:de|fr|es|it|pl)"/i);
     for (const locale of ["de", "fr", "es", "it", "pl"]) {
-      assert.equal((await render(worker, `/${locale}${route}`)).status, 404, `/${locale}${route}`);
+      const translated = await render(worker, `/${locale}${route}`);
+      assert.equal(translated.status, 200, `/${locale}${route}`);
+      const localizedHtml = await translated.text();
+      assert.ok(localizedHtml.includes(`https://kameymall-sheet.com/${locale}${route}`));
+      const localizedProse = localizedHtml.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+      assert.equal((localizedProse.match(/<p\b/g) ?? []).length, (prose.match(/<p\b/g) ?? []).length);
+      assert.notEqual(visibleText(localizedProse), visibleText(prose));
     }
   }
 });
@@ -149,7 +155,7 @@ test("keeps every localized content module as complete as English", async () => 
     assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
     assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
     assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
-    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 20, `${prefix || "/"} article cards`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 24, `${prefix || "/"} article cards`);
     assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
 
     const homeImages = (homeHtml.match(/<img\b/g) ?? []).length;
@@ -256,16 +262,16 @@ test("keeps internal SEO planning labels out of every visible language", async (
   }
 });
 
-test("uses accurate route dates and includes English-only opportunity articles", async () => {
+test("uses accurate route dates and includes every translated article", async () => {
   const worker = await loadWorker();
   const response = await render(worker, "/sitemap.xml");
   assert.equal(response.status, 200);
   const sitemap = await response.text();
-  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 370);
-  assert.equal((sitemap.match(/<lastmod>2026-09-10T00:00:00\.000Z<\/lastmod>/g) ?? []).length, 22);
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 444);
+  assert.equal((sitemap.match(/<lastmod>2026-10-02T00:00:00\.000Z<\/lastmod>/g) ?? []).length, 114);
   assert.match(sitemap, /<lastmod>2026-08-03T00:00:00\.000Z<\/lastmod>/);
   assert.match(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/articles\/is-kameymall-legit-2026<\/loc>/);
-  assert.doesNotMatch(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/(?:de|fr|es|it|pl)\/articles\/is-kameymall-legit-2026<\/loc>/);
+  assert.match(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/(?:de|fr|es|it|pl)\/articles\/is-kameymall-legit-2026<\/loc>/);
 });
 
 function imageTags(html) {
@@ -400,7 +406,7 @@ test("keeps the complete homepage in compact no-swipe mobile grids", async () =>
   assert.equal((html.match(/class="category-card"/g) ?? []).length, 10);
   assert.equal((html.match(/<ol class="step-list">[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g) ?? []).length, 6);
   assert.equal((html.match(/class="guide-card(?: |")/g) ?? []).length, 3);
-  assert.equal((html.match(/class="article-card"/g) ?? []).length, 20);
+  assert.equal((html.match(/class="article-card"/g) ?? []).length, 24);
   assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 11);
   assert.doesNotMatch(html, /<details\b[^>]*\bopen\b/i, "homepage FAQs and language menu start collapsed");
 });
@@ -470,6 +476,12 @@ const auditedRoutes = [
   "/articles/kameymall-order-status-guide",
   "/articles/kameymall-consolidation-vs-split-parcels",
   "/articles/kameymall-shipping-lines-comparison",
+  "/articles/kameymall-tracking-no-update-guide",
+  ...opportunityRoutes,
+  "/articles/kameymall-hoodie-finds",
+  "/articles/kameymall-football-jersey-finds",
+  "/articles/kameymall-size-guide",
+  "/articles/kameymall-budget-finds-under-100-cny",
   ...categoryRoutes,
   ...productRoutes,
 ];
@@ -478,7 +490,7 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-test("uses the correct root HTML language on all 354 canonical pages", async () => {
+test("uses the correct root HTML language on all 444 canonical pages", async () => {
   const worker = await loadWorker();
   const englishImageCounts = new Map();
   const englishSectionCounts = new Map();
@@ -621,7 +633,7 @@ test("publishes a complete source-checked QC guide in all six languages", async 
 
     if (!prefix) englishParagraphCount = paragraphCount;
     assert.equal(paragraphCount, englishParagraphCount, `${pathname} paragraph parity`);
-    assert.equal(bulletCount, 6, `${pathname} checklist parity`);
+    assert.equal(bulletCount, 8, `${pathname} checklist and related-guide parity`);
     assert.match(html, /"@type":"Article"/, `${pathname} Article structured data`);
     assert.match(html, /"@type":"BreadcrumbList"/, `${pathname} breadcrumb structured data`);
   }
@@ -816,6 +828,33 @@ test("keeps the main-site brand out of visible copy and blocks third-party traff
           `${pathname} contains disallowed traffic link: ${destination}`,
         );
       }
+    }
+  }
+});
+
+test("new product guides have complete localized bodies, real images and reciprocal internal links", async () => {
+  const worker = await loadWorker();
+  const routes = ["kameymall-hoodie-finds", "kameymall-football-jersey-finds", "kameymall-size-guide", "kameymall-budget-finds-under-100-cny"];
+  for (const route of routes) {
+    let englishParagraphs = 0;
+    for (const prefix of ["", "/de", "/fr", "/es", "/it", "/pl"]) {
+      const path = `${prefix}/articles/${route}`;
+      const response = await render(worker, path);
+      assert.equal(response.status, 200, path);
+      const html = await response.text();
+      const prose = html.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+      const paragraphs = (prose.match(/<p\b/g) ?? []).length;
+      if (!prefix) {
+        englishParagraphs = paragraphs;
+        const words = visibleText(prose).match(/[A-Za-z0-9]+(?:[’'-][A-Za-z0-9]+)*/g) ?? [];
+        assert.ok(words.length >= 1200 && words.length <= 1800, `${route}: ${words.length} words`);
+      }
+      assert.equal(paragraphs, englishParagraphs);
+      assert.match(html, /"datePublished":"2026-10-02"/);
+      assert.match(html, /class="article-figure"/);
+      assert.match(html, /"image":\["https:\/\/kameymall-sheet.com\/product-images\//);
+      assert.ok(html.includes(`href="${prefix}/articles/how-to-read-kameymall-qc-photos"`));
+      assert.ok(html.includes(`href="https://kameymall-sheet.com${path}"`));
     }
   }
 });
