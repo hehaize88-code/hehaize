@@ -12,7 +12,7 @@ export const newArticleSlugs = [
 
 // Only expose complete, reviewed locale payloads. Never use English as a
 // translated page body while a locale is still being prepared.
-export const refreshCopy = { en: english, ...payload } as Partial<Record<Locale, typeof english>>;
+export const refreshCopy = { ...payload, en: english } as Partial<Record<Locale, typeof english>>;
 
 export function applyEditorialRefresh(entries: SeoArticleEntry[], locale: Locale): SeoArticleEntry[] {
   const copy = refreshCopy[locale];
@@ -20,7 +20,7 @@ export function applyEditorialRefresh(entries: SeoArticleEntry[], locale: Locale
   const updates = copy.refresh as Record<string, (typeof copy.refresh)[keyof typeof copy.refresh]>;
   const revised = entries.map((entry) => {
     const update = updates[entry.slug];
-    if (!update) return entry.slug === "joyagoo-shipping-calculator-cost-estimate-guide"
+    if (!update) return ["joyagoo-shipping-calculator-cost-estimate-guide", "joyagoo-shipping-to-uk-cost-planner"].includes(entry.slug)
       ? { ...entry, modifiedAt: "2026-10-02" }
       : entry;
     return {

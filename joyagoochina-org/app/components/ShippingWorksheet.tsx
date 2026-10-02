@@ -33,7 +33,7 @@ export default function ShippingWorksheet({ copy, locale }: { copy: Copy; locale
           </label>
         ))}
         <label className="worksheet-rule"><span>{copy.rule}</span>
-          <select value={rule} onChange={(event) => setRule(event.target.value)}>
+          <select aria-label={copy.rule} value={rule} onChange={(event) => setRule(event.target.value)}>
             <option value="greater">{copy.greater}</option>
             <option value="actual">{copy.actual}</option>
           </select>
