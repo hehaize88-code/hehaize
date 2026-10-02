@@ -6,6 +6,7 @@ import {
   getSeoArticleEntry,
 } from "./seoArticleLibrary";
 import { localizedRoutePath } from "./seoAlternates";
+import { refreshCopy } from "./seoRefresh";
 
 const site = "https://joyagoochina.org";
 const siteTemplateModifiedAt = "2026-09-14";
@@ -117,9 +118,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       return {
         url: `${site}${localizedPath}`,
         lastModified: new Date(
-          page.lastModified > siteTemplateModifiedAt
-            ? page.lastModified
-            : siteTemplateModifiedAt,
+          refreshCopy[language.code] && ["/", "/articles/", "/returns/"].includes(page.path)
+            ? "2026-10-02"
+            : page.lastModified > siteTemplateModifiedAt
+              ? page.lastModified
+              : siteTemplateModifiedAt,
         ),
         changeFrequency: page.changeFrequency,
         priority: page.priority,

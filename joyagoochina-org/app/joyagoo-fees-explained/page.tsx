@@ -1,33 +1,22 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
 import { editorialSocialMetadata } from "../editorialAssets";
+import { languages } from "../i18n";
+import { getSeoArticleEntry } from "../seoArticleLibrary";
 import { languageAlternates } from "../seoAlternates";
 
 const slug = "joyagoo-fees-explained";
-const title = "How Much Is Joyagoo Shipping? Cost & Fees in 2026";
-const description =
-  "See why Joyagoo shipping can be expensive and how product payment, domestic delivery, warehouse choices, billable weight and international freight add up.";
+const entry = getSeoArticleEntry("en", slug)!;
+const title = entry.seoTitle ?? entry.article.title;
 
 export const metadata: Metadata = {
   title: { absolute: title },
-  description,
-  keywords: [
-    "joyagoo fees",
-    "joyagoo service fee",
-    "joyagoo shipping cost",
-    "how much does joyagoo cost",
-    "joyagoo rehearsal packing",
-    "joyagoo volumetric weight",
-  ],
-  alternates: languageAlternates(`/${slug}/`),
-  ...editorialSocialMetadata({
-    slug,
-    title,
-    description,
-    url: `https://joyagoochina.org/${slug}/`,
-  }),
+  description: entry.article.description,
+  keywords: entry.keywords,
+  alternates: languageAlternates(`/${slug}/`, languages.filter((language) => getSeoArticleEntry(language.code, slug)).map((language) => language.code)),
+  ...editorialSocialMetadata({ slug, title, description: entry.article.description, url: `https://joyagoochina.org/${slug}/` }),
 };
 
-export default function JoyagooFeesPage() {
+export default function ArticlePage() {
   return <LocalizedPage locale="en" slug={slug} />;
 }

@@ -4,6 +4,7 @@ import { longEnglishGuides } from "./longEnglishGuides";
 export type ContentSection = {
   heading: string;
   paragraphs: string[];
+  table?: { headers: string[]; rows: string[][] };
   callout?: { title: string; text: string };
 };
 

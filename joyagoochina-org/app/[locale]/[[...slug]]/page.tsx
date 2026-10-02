@@ -20,11 +20,6 @@ import {
 import { languageAlternates, localizedRoutePath } from "../../seoAlternates";
 import { seoArticleCopy } from "../../seoArticles";
 import {
-  priorityArticleLocales,
-  prioritySeoArticleSlugs,
-} from "../../priorityShippingArticles";
-import { additionalPrioritySeoArticleSlugs } from "../../additionalPriorityShippingArticles";
-import {
   getSeoArticleEntry,
   getSeoArticleEntries,
 } from "../../seoArticleLibrary";
@@ -153,16 +148,15 @@ export async function generateMetadata({
   );
   const metadata: Metadata = {
     title: route
-      ? page.title
+      ? (seoArticle?.seoTitle ? { absolute: seoArticle.seoTitle } : page.title)
       : { absolute: localizedHomeMetadataTitles[locale] ?? page.title },
     description: page.intro,
     keywords: seoArticle?.keywords,
     alternates: {
       ...languageAlternates(
         basePath,
-        prioritySeoArticleSlugs.includes(route as never) ||
-          additionalPrioritySeoArticleSlugs.includes(route as never)
-          ? priorityArticleLocales
+        seoArticle
+          ? languages.filter((language) => getSeoArticleEntry(language.code, route)).map((language) => language.code)
           : undefined,
       ),
       canonical: localizedRoutePath(locale, basePath),

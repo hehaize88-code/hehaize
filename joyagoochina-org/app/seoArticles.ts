@@ -3,6 +3,7 @@ import type { Locale } from "./i18n";
 export type SeoArticleSection = {
   heading: string;
   paragraphs: string[];
+  table?: { headers: string[]; rows: string[][] };
   callout?: {
     title: string;
     text: string;

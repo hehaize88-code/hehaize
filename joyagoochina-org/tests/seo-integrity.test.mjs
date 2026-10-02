@@ -282,7 +282,7 @@ test("homepage keeps its English title and H1 while fixing catalogue mappings", 
     html,
     /<h1>Joyagoo Shipping Cost Guide 2026: Plan Fees, Weight and Parcels<\/h1>/,
   );
-  assert.match(html, /Updated September 14, 2026/);
+  assert.match(html, /Updated October 2, 2026/);
   assert.match(html, /G-QY8MM7VZV2/);
   assert.doesNotMatch(html, /"@type":"FAQPage"/);
   assert.match(html, /"@type":"Organization"/);
@@ -310,30 +310,30 @@ test("homepage keeps its English title and H1 while fixing catalogue mappings", 
 test("high-intent research pages use concise search snippets and localized related links", async () => {
   const pages = [
     {
-      slug: "joyagoo-fees-explained",
-      title: "How Much Is Joyagoo Shipping[?] Cost &amp; Fees in 2026",
-      description: "See why Joyagoo shipping can be expensive and how product payment, domestic delivery, warehouse choices, billable weight and international freight add up.",
-      related: "joyagoo-exchange-rate-currency-conversion",
+        "slug": "joyagoo-fees-explained",
+        "title": "Joyagoo Fees Explained: Service, Shipping &amp; Extra Costs",
+        "description": "Separate Joyagoo product payment, domestic shipping, optional services and international freight, then compare estimated and final costs before paying.",
+        "related": "joyagoo-shipping-calculator-cost-estimate-guide"
     },
     {
-      slug: "joyagoo-qc-photo-checklist",
-      title: "Joyagoo QC Photos: 7 Checks Before Accepting an Item",
-      description: "Use this Joyagoo QC photo checklist to verify variants, measurements, defects and packaging before the five-day return window closes.",
-      related: "joyagoo-return-window-warehouse-storage",
+        "slug": "joyagoo-return-window-warehouse-storage",
+        "title": "Joyagoo Storage &amp; Return Deadlines: Keep the Clocks Separate",
+        "description": "Track Joyagoo QC, return eligibility, warehouse storage and parcel payment separately so an item waiting for consolidation does not miss an earlier deadline.",
+        "related": "joyagoo-order-status-stock-arrived-qc-stored"
     },
     {
-      slug: "joyagoo-return-window-warehouse-storage",
-      title: "Joyagoo Returns: 5-Day QC &amp; 90-Day Storage",
-      description: "Understand Joyagoo's five-day QC return window, 90-day item storage and 30-day parcel storage timeline before deadlines expire.",
-      related: "joyagoo-qc-photo-checklist",
+        "slug": "joyagoo-qc-photo-checklist",
+        "title": "Joyagoo QC Photos: Inspection Checklist Before Shipping",
+        "description": "Check Joyagoo QC photos against the paid variation, visible condition, measurements and included parts before accepting an item for international shipment.",
+        "related": "joyagoo-qc-photos-missing-unclear"
     },
     {
-      slug: "joyagoo-volumetric-weight-shipping-cost",
-      title: "Joyagoo Volumetric Weight Guide 2026: Parcel Cost",
-      description: "Estimate Joyagoo shipping cost from actual and volumetric weight, compare live route divisors, and see when rehearsal packing can reduce quote uncertainty.",
-      related: "joyagoo-parcel-consolidation-packaging-guide",
-    },
-  ];
+        "slug": "joyagoo-volumetric-weight-shipping-cost",
+        "title": "Joyagoo Volumetric Weight: Formula, Example &amp; Packing",
+        "description": "Calculate Joyagoo volumetric weight using the route\u2019s divisor, compare it with actual weight and see how packaging changes the billable-weight scenario.",
+        "related": "joyagoo-shipping-calculator-cost-estimate-guide"
+    }
+];
 
   for (const page of pages) {
     const html = await (await request(`/${page.slug}/`)).text();
@@ -424,7 +424,7 @@ test("static Pages worker uses the current cache namespace and store allowlist",
     new URL("../cloudflare/static-worker.js", import.meta.url),
     "utf8",
   );
-  assert.match(source, /search-route-20260915/);
+  assert.match(source, /seo-research-20261002/);
   assert.match(source, /cnbuycha\.com/);
   assert.doesNotMatch(source, /cnfanssp\.com/);
 });
@@ -526,7 +526,7 @@ test("production HTML receives edge caching headers and is stored by pathname", 
     assert.equal(stored.length, 1);
     assert.equal(
       stored[0].key,
-      "https://joyagoochina.org/qc-guide/?__html_cache_version=search-route-20260915",
+      "https://joyagoochina.org/qc-guide/?__html_cache_version=seo-research-20261002",
     );
   } finally {
     if (originalCaches) {
