@@ -169,7 +169,7 @@ for source in sorted((ROOT/'maintenance/articles').glob('*.md')):
     schema(doc,{'@context':'https://schema.org','@type':'BlogPosting','headline':title,'description':description,
       'datePublished':DATE+'T08:00:00Z','dateModified':DATE+'T08:00:00Z','inLanguage':'en',
       'mainEntityOfPage':ORIGIN+route,'keywords':KEYWORDS[slug],
-      'author':{'@type':'Organization','name':'PikoBuy Sheet Research Desk','url':ORIGIN+'/about/'},
+      'author':{'@type':'Organization','name':'PikoBuy Sheet Research Desk','url':ORIGIN+'/about/','logo':{'@type':'ImageObject','url':ORIGIN+'/pikobuy-logo.png'}},
       'publisher':{'@type':'Organization','name':'PikoBuy Sheet','logo':{'@type':'ImageObject','url':ORIGIN+'/pikobuy-logo.png'}},
       'image':ORIGIN+'/article-social.svg','isAccessibleForFree':True},'article-schema')
     schema(doc,{'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[
