@@ -438,7 +438,7 @@ const ROUTES = new Set([
 ]);
 const STATIC_PREFIXES = ["/assets/", "/_next/"];
 const STATIC_FILES = new Set(["/pikobuy-logo.png","/favicon.svg","/article-social.svg","/robots.txt","/sitemap.xml","/sitemap-main.xml","/404.html"]);
-const HTML_CACHE_VERSION = '20261003-articles-27-v1';
+const HTML_CACHE_VERSION = '20261003-articles-27-v2';
 export default {
  async fetch(request, env, ctx) {
   const url=new URL(request.url);

@@ -11,6 +11,7 @@ ORIGIN = 'https://pikobuy-sheet.net'
 DATE = '2026-10-03'
 LANGS = ['en', 'de', 'fr', 'es', 'it', 'pl', 'pt']
 VERSION = '20261003-articles-27-v1'
+HTML_VERSION = '20261003-articles-27-v2'
 
 def read(path):
     return html.fromstring(path.read_text())
@@ -369,7 +370,7 @@ routes=sorted(canonical_path(p) for p in ROOT.rglob('index.html') if 'maintenanc
 worker=re.sub(r'const ROUTES = new Set\(\[[\s\S]*?\]\);','const ROUTES = new Set('+json.dumps(routes,ensure_ascii=False,indent=2)+');',worker,count=1)
 worker=re.sub(r'const GA_SNIPPET = String.raw`[\s\S]*?`;\n','',worker,count=1)
 worker=worker.replace("    .on('head',{element(element){element.append(GA_SNIPPET,{html:true});}})\n",'')
-worker=re.sub(r"const HTML_CACHE_VERSION = '[^']+';",f"const HTML_CACHE_VERSION = '{VERSION}';",worker)
+worker=re.sub(r"const HTML_CACHE_VERSION = '[^']+';",f"const HTML_CACHE_VERSION = '{HTML_VERSION}';",worker)
 if 'const canonicalPage =' not in worker:
     marker='  const destination=productDestination(url.pathname);'
     worker=worker.replace(marker,"""  const canonicalPage = url.pathname.endsWith('/index.html')
@@ -403,7 +404,7 @@ sitemap=etree.tostring(urlset,encoding='UTF-8',xml_declaration=True,pretty_print
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+ORIGIN+'/sitemap.xml\n')
 
 (ROOT/'maintenance/release-20261003.json').write_text(json.dumps({
- 'domain':'pikobuy-sheet.net','release':VERSION,'newArticles':new_articles,'articleCount':27,
+ 'domain':'pikobuy-sheet.net','release':HTML_VERSION,'newArticles':new_articles,'articleCount':27,
  'improvedArticles':list(UPGRADES),'sitemapUrls':len(urlset),
  'productEvidence':'Existing catalogue snapshots dated 2026-07-30; no live product re-verification claimed.',
  'localization':'Existing translations preserved. All indexes include every article; untranslated English originals are explicitly labelled EN.'
