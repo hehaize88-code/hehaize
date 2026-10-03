@@ -3,14 +3,13 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ArticleCard from "./components/article-card";
+import ArticleCard, { type ArticleSummary } from "./components/article-card";
 import ProductImage from "./components/product-image";
 import ProductSearch from "./components/product-search";
 import SiteFooter from "./components/site-footer";
 import SiteHeader from "./components/site-header";
 import { homeCopy, localizedPath, type Locale } from "./i18n";
 import {
-  getLocalizedArticles,
   getLocalizedFaqs,
   getLocalizedProducts,
 } from "./localized-data";
@@ -54,12 +53,11 @@ function BookmarkIcon({ filled = false }: { filled?: boolean }) {
   );
 }
 
-export default function HomeClient({ locale }: { locale: Locale }) {
+export default function HomeClient({ locale, latestArticles }: { locale: Locale; latestArticles: ArticleSummary[] }) {
   const [activeFilter, setActiveFilter] = useState<Filter>("all");
   const [saved, setSaved] = useState<Record<string, boolean>>({});
   const copy = homeCopy[locale];
   const localizedProducts = getLocalizedProducts(locale);
-  const localizedArticles = getLocalizedArticles(locale);
   const localizedFaqs = getLocalizedFaqs(locale);
   const filters: { id: Filter; label: string }[] = [
     { id: "all", label: copy.filters.all },
@@ -274,8 +272,8 @@ export default function HomeClient({ locale }: { locale: Locale }) {
           </Link>
         </div>
         <div className="article-card-grid">
-          {localizedArticles.map((article) => (
-            <ArticleCard article={article} locale={locale} key={article.slug} />
+          {latestArticles.map((article) => (
+            <ArticleCard article={article} locale={locale} key={article.slug} compact />
           ))}
         </div>
       </section>

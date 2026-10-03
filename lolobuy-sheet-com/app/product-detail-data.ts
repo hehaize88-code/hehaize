@@ -161,7 +161,7 @@ export const productEvidence: Record<string, ProductEvidence> = {
       "Follow the sole edge for uneven attachment, excess adhesive, separation or a visibly twisted base.",
     ],
     galleryAlts: [
-      "Primary product view of Numeris high-top shoes",
+      "Primary product view of MM 07 casual shoes",
       "Additional collage showing colour treatments and side views",
     ],
     galleryCaptions: [

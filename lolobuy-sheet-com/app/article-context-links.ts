@@ -1,4 +1,5 @@
 import type { Locale } from "./i18n";
+import { getLocalizedArticles, getLocalizedProducts } from "./localized-data";
 
 type ContextCopy = {
   eyebrow: string;
@@ -9,6 +10,10 @@ type ContextCopy = {
 };
 
 const routesByArticle: Record<string, string[]> = {
+  "lolobuy-winter-finds-2026": ["/categories/hoodies-sweaters", "/finds", "/articles/lolobuy-haul-cost-breakdown", "/guides/qc"],
+  "lolobuy-finds-under-30": ["/finds", "/articles/lolobuy-haul-cost-breakdown", "/articles/lolobuy-spreadsheet-guide", "/guides/qc"],
+  "lolobuy-sneaker-qc-photo-checklist": ["/categories/shoes", "/articles/lolobuy-shoe-size-guide", "/articles/lolobuy-qc-mismatch-evidence-guide", "/guides/qc"],
+  "lolobuy-haul-cost-breakdown": ["/guides/shipping", "/articles/lolobuy-finds-under-30", "/articles/lolobuy-winter-finds-2026", "/finds"],
   "lolobuy-spreadsheet-guide": [
     "/categories/shoes",
     "/products/numeris-high-top-shoes",
@@ -148,11 +153,11 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/how-it-works": "Four-stage buying workflow",
       "/about": "Editorial method and fact policy",
       "/products/off-white-hoodies": "Off-White hoodie evidence page",
-      "/products/hoka-speedgoat-5": "HOKA Speedgoat 5 evidence page",
+      "/products/hoka-speedgoat-5": "Skyline USKYLINE-FLOATX evidence page",
       "/products/numeris-high-top-shoes":
         "Numeris high-top shoe evidence page",
       "/products/nike-elite-backpack":
-        "Nike Elite backpack evidence page",
+        "XJXPCS backpack evidence page",
       "/articles/plan-china-shopping-haul":
         "Haul planning and shipping article",
       "/articles/how-to-read-qc-photos": "How to read QC photos",
@@ -200,7 +205,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/how-it-works": "Flujo de compra en cuatro etapas",
       "/about": "Método editorial y política de datos",
       "/products/off-white-hoodies": "Pruebas de la sudadera Off-White",
-      "/products/hoka-speedgoat-5": "Pruebas de HOKA Speedgoat 5",
+      "/products/hoka-speedgoat-5": "Pruebas de Skyline USKYLINE-FLOATX",
       "/products/numeris-high-top-shoes":
         "Pruebas de las zapatillas altas Numeris",
       "/products/nike-elite-backpack":
@@ -236,7 +241,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/how-it-works": "Vierstufiger Bestellablauf",
       "/about": "Redaktionelle Methode und Faktenregeln",
       "/products/off-white-hoodies": "Belegseite zum Off-White-Hoodie",
-      "/products/hoka-speedgoat-5": "Belegseite zum HOKA Speedgoat 5",
+      "/products/hoka-speedgoat-5": "Belegseite zum Skyline USKYLINE-FLOATX",
       "/products/numeris-high-top-shoes":
         "Belegseite zu den Numeris High-Top-Schuhen",
       "/products/nike-elite-backpack":
@@ -272,7 +277,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/how-it-works": "Parcours d’achat en quatre étapes",
       "/about": "Méthode éditoriale et politique des faits",
       "/products/off-white-hoodies": "Preuves du sweat Off-White",
-      "/products/hoka-speedgoat-5": "Preuves du HOKA Speedgoat 5",
+      "/products/hoka-speedgoat-5": "Preuves du Skyline USKYLINE-FLOATX",
       "/products/numeris-high-top-shoes":
         "Preuves des chaussures montantes Numeris",
       "/products/nike-elite-backpack":
@@ -308,7 +313,7 @@ const contextCopy: Record<Locale, ContextCopy> = {
       "/how-it-works": "Flusso d’acquisto in quattro fasi",
       "/about": "Metodo editoriale e politica dei fatti",
       "/products/off-white-hoodies": "Prove della felpa Off-White",
-      "/products/hoka-speedgoat-5": "Prove della HOKA Speedgoat 5",
+      "/products/hoka-speedgoat-5": "Prove della Skyline USKYLINE-FLOATX",
       "/products/numeris-high-top-shoes":
         "Prove delle scarpe alte Numeris",
       "/products/nike-elite-backpack":
@@ -331,14 +336,25 @@ const contextCopy: Record<Locale, ContextCopy> = {
 };
 
 export function getArticleContext(slug: string, locale: Locale) {
-  const routes = routesByArticle[slug] ?? routesByArticle["lolobuy-spreadsheet-guide"];
+  const discoveryLinks: Record<string, string> = {
+    "lolobuy-spreadsheet-guide": "/articles/lolobuy-finds-under-30",
+    "how-to-read-qc-photos": "/articles/lolobuy-sneaker-qc-photo-checklist",
+    "lolobuy-shoe-size-guide": "/articles/lolobuy-sneaker-qc-photo-checklist",
+    "plan-china-shopping-haul": "/articles/lolobuy-haul-cost-breakdown",
+  };
+  const routes = [...(routesByArticle[slug] ?? routesByArticle["lolobuy-spreadsheet-guide"])];
+  if (discoveryLinks[slug]) routes.push(discoveryLinks[slug]);
   const copy = contextCopy[locale];
+  const articles = getLocalizedArticles(locale);
+  const products = getLocalizedProducts(locale);
 
   return {
     ...copy,
     links: routes.map((path) => ({
       path,
-      label: copy.labels[path],
+      label: path.startsWith("/products/")
+        ? products.find((product) => path === `/products/${product.slug}`)?.name ?? copy.labels[path]
+        : articles.find((article) => path === `/articles/${article.slug}`)?.shortTitle ?? copy.labels[path] ?? path,
     })),
   };
 }

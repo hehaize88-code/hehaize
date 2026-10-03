@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 import { localeOptions, localizedPath } from "./i18n";
 import { languageAlternates } from "./seo";
-import { articles, productFinds } from "./site-data";
+import { articles } from "./site-data";
 import { categoryGuideSlugs } from "./category-guide-data";
 import { englishOnlyArticleSlugs } from "./priority-articles";
 
 const baseUrl = "https://lolobuy-sheet.com";
-const staticLastModified = new Date("2026-08-10");
+const staticLastModified = new Date("2026-10-03");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...articles.map((article) => ({
       path: `/articles/${article.slug}`,
-      lastModified: new Date(article.updated),
+      lastModified: new Date(JSON.stringify(article).includes("180") ? "2026-10-03" : article.updated),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
@@ -43,12 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: staticLastModified,
       changeFrequency: "weekly" as const,
       priority: 0.86,
-    })),
-    ...productFinds.map((product) => ({
-      path: `/products/${product.slug}`,
-      lastModified: staticLastModified,
-      changeFrequency: "weekly" as const,
-      priority: 0.82,
     })),
   ];
 

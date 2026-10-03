@@ -23,6 +23,7 @@ import {
 import { articles } from "../../site-data";
 import { getArticleMedia } from "../../article-media";
 import { englishOnlyArticleSlugs } from "../../priority-articles";
+import { catalogEvidence } from "../../catalog-evidence";
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
@@ -194,7 +195,7 @@ export async function generateMetadata({
   }
 
   const searchTitle =
-    articleSearchTitles[locale][article.slug] ?? article.title;
+    article.searchTitle ?? articleSearchTitles[locale][article.slug] ?? article.title;
   const media = getArticleMedia(article.slug);
   const imageUrl = `${siteUrl}${media.src}`;
 
@@ -304,7 +305,7 @@ export default async function ArticlePage({
         <figure className="article-hero-media">
           <Image
             src={media.src}
-            alt={`${article.shortTitle} — editorial evidence diagram`}
+            alt={article.shortTitle}
             width={media.width}
             height={media.height}
             sizes="(max-width: 780px) 94vw, 86vw"
@@ -334,6 +335,16 @@ export default async function ArticlePage({
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
+            {article.productIds && <div className="article-product-evidence">
+              {article.productIds.map((id) => {
+                const product = catalogEvidence[id as keyof typeof catalogEvidence];
+                return product ? <a key={id} href={product.href} target="_blank" rel="sponsored noopener">
+                  <img src={product.image} alt={product.name} width="320" height="320" loading="lazy" />
+                  <strong>{product.name}</strong>
+                  <span>US${product.priceUsd} · 2026-10-03</span>
+                </a> : null;
+              })}
+            </div>}
             <figure className="article-visual">
               <figcaption>
                 <span>{article.visual.eyebrow}</span>
@@ -360,6 +371,17 @@ export default async function ArticlePage({
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
+                  {section.table && <div className="article-table-scroll" tabIndex={0} role="region" aria-label={section.heading}>
+                    <table>
+                      <thead><tr>{section.table.headers.map((header) => <th key={header} scope="col">{header}</th>)}</tr></thead>
+                      <tbody>{section.table.rows.map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, cellIndex) => <td key={cellIndex}>{cell}</td>)}</tr>)}</tbody>
+                    </table>
+                  </div>}
+                  {section.links && <nav className="article-section-links" aria-label={section.heading}>
+                    {section.links.map((link) => link.href.startsWith("/")
+                      ? <Link key={link.href} href={localizedPath(link.href, locale)}>{link.label} →</Link>
+                      : <a key={link.href} href={link.href} target="_blank" rel="sponsored noopener">{link.label} →</a>)}
+                  </nav>}
                   {section.bullets ? (
                     <ul>
                       {section.bullets.map((bullet) => (

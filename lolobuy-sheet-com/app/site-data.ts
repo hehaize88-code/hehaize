@@ -1,5 +1,6 @@
 import { sellerPageArticle } from "./seller-page-article";
 import { priorityArticles } from "./priority-articles";
+import { octoberArticles } from "./october-articles";
 
 export const destinationBase = "https://www.cnbuycha.com";
 
@@ -26,99 +27,99 @@ export type ProductFind = {
 export const productFinds: ProductFind[] = [
   {
     slug: "snow-ski-goggles",
-    name: "Snow ski goggles",
-    image: "/product-finds/snow-ski-goggles-1-320.webp",
+    name: "Ski goggles · 3359",
+    image: "/product-finds/verified-3359-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3359.html`,
     listingReference: "3359",
     kind: "eyewear",
     category: "Eyewear",
     tags: ["all", "new", "trending"],
     description:
-      "A visual product-directory entry for snow ski goggles. Use the current listing to confirm the selected lens, frame option, included pieces and current availability before ordering.",
+      "Catalog item 3359, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
   {
     slug: "gucci-hat",
-    name: "Gucci hat",
-    image: "/product-finds/gucci-hat-1-320.webp",
+    name: "Casual hat · 3353",
+    image: "/product-finds/verified-3353-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3353.html`,
     listingReference: "3353",
     kind: "headwear",
     category: "Headwear",
     tags: ["all", "new", "essential"],
     description:
-      "A visual product-directory entry for a Gucci-labelled hat. Confirm the exact option, dimensions, construction details and live listing information rather than relying on the directory image alone.",
+      "Catalog item 3353, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
   {
     slug: "off-white-hoodies",
-    name: "Off-White hoodies",
-    image: "/product-finds/off-white-hoodies-1-320.webp",
+    name: "Autumn and winter sweater",
+    image: "/product-finds/verified-3413-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3413.html`,
     listingReference: "3413",
     kind: "hoodie",
     category: "Hoodies & sweaters",
     tags: ["all", "trending", "essential"],
     description:
-      "A visual product-directory entry for Off-White-labelled hoodies. Check the chosen design, garment measurements, print placement and live variant information before making a decision.",
+      "Catalog item 3413, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
   {
     slug: "numeris-high-top-shoes",
-    name: "Numeris high-top shoes",
-    image: "/product-finds/numeris-high-top-shoes-1-320.webp",
+    name: "MM 07 casual shoes",
+    image: "/product-finds/verified-3355-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3355.html`,
     listingReference: "3355",
     kind: "shoes",
     category: "Shoes",
     tags: ["all", "new", "trending"],
     description:
-      "A visual product-directory entry for Numeris high-top shoes. Verify the selected size and color, then use measurements and warehouse photos to check the pair that actually arrives.",
+      "Catalog item 3355, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
   {
     slug: "hoka-speedgoat-5",
-    name: "HOKA Speedgoat 5",
-    image: "/product-finds/hoka-speedgoat-5-1-320.webp",
+    name: "Skyline USKYLINE-FLOATX shoes",
+    image: "/product-finds/verified-3328-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3328.html`,
     listingReference: "3328",
     kind: "shoes",
     category: "Shoes",
     tags: ["all", "new", "trending"],
     description:
-      "A visual product-directory entry for a HOKA Speedgoat 5-labelled shoe. Confirm the current option, size information and listing details, then compare both shoes during warehouse QC.",
+      "Catalog item 3328, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
   {
     slug: "nike-elite-backpack",
-    name: "Nike Elite backpack",
-    image: "/product-finds/nike-elite-backpack-1-320.webp",
+    name: "XJXPCS backpack",
+    image: "/product-finds/verified-3295-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3295.html`,
     listingReference: "3295",
     kind: "bag",
     category: "Bags",
     tags: ["all", "trending", "essential"],
     description:
-      "A visual product-directory entry for a Nike Elite-labelled backpack. Confirm dimensions, compartments, straps, closures and the chosen color on the current listing before ordering.",
+      "Catalog item 3295, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
   {
     slug: "balenciaga-puffer",
-    name: "Balenciaga puffer",
-    image: "/product-finds/balenciaga-puffer-1-320.webp",
+    name: "Classic pattern winter jacket",
+    image: "/product-finds/verified-3312-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3312.html`,
     listingReference: "3312",
     kind: "jacket",
     category: "Outerwear",
     tags: ["all", "trending"],
     description:
-      "A visual product-directory entry for a Balenciaga-labelled puffer jacket. Compare garment measurements, closures, panel alignment and fill distribution before accepting the warehouse arrival.",
+      "Catalog item 3312, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
   {
     slug: "winter-hooded-jacket",
-    name: "Winter hooded jacket",
-    image: "/product-finds/winter-hooded-jacket-1-320.webp",
+    name: "Winter hooded padded coat",
+    image: "/product-finds/verified-3374-320.webp",
     destinationHref: `${destinationBase}/AllProducts/3374.html`,
     listingReference: "3374",
     kind: "jacket",
     category: "Outerwear",
     tags: ["all", "trending", "essential"],
     description:
-      "A visual product-directory entry for a winter hooded jacket. Check the selected size and color, garment measurements, hood, closures, pockets and visible construction before shipping.",
+      "Catalog item 3374, checked October 3, 2026. Open the current listing to compare the exact option, measurements and seller images before ordering.",
   },
 ];
 
@@ -201,6 +202,8 @@ export type ArticleSection = {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  table?: { headers: string[]; rows: string[][] };
+  links?: { label: string; href: string }[];
 };
 
 export type ArticleSource = {
@@ -219,6 +222,7 @@ export type ArticleVisual = {
 };
 
 export type Article = {
+  searchTitle?: string;
   slug: string;
   title: string;
   shortTitle: string;
@@ -232,6 +236,7 @@ export type Article = {
   sources: ArticleSource[];
   intro: string[];
   sections: ArticleSection[];
+  productIds?: string[];
 };
 
 export const articles: Article[] = [
@@ -275,7 +280,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website",
-        note: "Public purchasing, warehouse inspection, photography and 90-day storage statements.",
+        note: "Public purchasing, warehouse inspection, photography and 180-day storage statements.",
       },
       {
         label: "LoloBuy community ordering guide",
@@ -311,7 +316,7 @@ export const articles: Article[] = [
       {
         heading: "Know which parts of the LoloBuy flow are publicly confirmed",
         paragraphs: [
-          "LoloBuy's public homepage says that it assists with purchases from Chinese online and offline channels and that a shopper can begin by pasting a product link. It also says that, after the merchant sends the item to the warehouse, the warehouse conducts a quality inspection, takes photographs and provides 90 days of free storage. Those are useful, specific claims because they describe the hand-off points a shopper should expect.",
+          "LoloBuy's public homepage says that it assists with purchases from Chinese online and offline channels and that a shopper can begin by pasting a product link. It also says that, after the merchant sends the item to the warehouse, the warehouse conducts a quality inspection, takes photographs and provides 180 days of free storage. Those are useful, specific claims because they describe the hand-off points a shopper should expect.",
           "A public ordering guide in LoloBuy's named Reddit community expands that flow into account creation, product selection, order submission, payment, procurement, warehouse arrival, QC photos, consolidation, route selection and tracking. We use that guide as supporting context, not as a substitute for the live account. Payment methods, available carriers, coupons and route names can change more quickly than an educational article.",
           "This distinction matters for search quality. A helpful Lolobuy spreadsheet should explain the process the platform actually describes while refusing to invent a permanent fee table, a guaranteed delivery time or a fixed number of free QC images. When a public source is silent, the honest answer is to check the current order screen or ask support before paying.",
         ],
@@ -528,7 +533,7 @@ export const articles: Article[] = [
     updated: "2026-07-26",
     readingTime: "13 min read",
     factCheckLine:
-      "Fact-checked July 26, 2026. The 90-day storage statement is public; live route prices and eligibility must be checked on the packed parcel.",
+      "Fact-checked July 26, 2026. The 180-day storage statement is public; live route prices and eligibility must be checked on the packed parcel.",
     visual: {
       eyebrow: "LANDED-COST STACK",
       title: "The product price is only the first line.",
@@ -556,7 +561,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website",
-        note: "Public 90-day free-storage and warehouse-service statements.",
+        note: "Public 180-day free-storage and warehouse-service statements.",
       },
       {
         label: "LoloBuy community ordering guide",
@@ -565,15 +570,15 @@ export const articles: Article[] = [
     ],
     intro: [
       "A haul is not cheaper merely because several items travel together. Consolidation can reduce repeated base charges and unused packaging, but parcel size, route restrictions and timing still matter. Good planning begins before the first item reaches the warehouse.",
-      "Lolobuy's public website currently advertises 90 days of free storage and describes consolidation followed by international shipping. Treat that as a planning window rather than a reason to wait until the last day; always confirm the live storage terms and order deadlines in your account.",
+      "Lolobuy's public website currently advertises 180 days of free storage and describes consolidation followed by international shipping. Treat that as a planning window rather than a reason to wait until the last day; always confirm the live storage terms and order deadlines in your account.",
     ],
     sections: [
       {
         heading: "Start with what LoloBuy actually publishes",
         paragraphs: [
-          "LoloBuy's public website says that it assists with purchases from Chinese sales channels, inspects and photographs goods after warehouse arrival, and provides 90 days of free storage. A public ordering guide in its named Reddit community describes storing multiple arrivals, consolidating them, selecting an international route and receiving tracking after dispatch. Together, those sources support the basic warehouse-agent flow.",
+          "LoloBuy's public website says that it assists with purchases from Chinese sales channels, inspects and photographs goods after warehouse arrival, and provides 180 days of free storage. A public ordering guide in its named Reddit community describes storing multiple arrivals, consolidating them, selecting an international route and receiving tracking after dispatch. Together, those sources support the basic warehouse-agent flow.",
           "They do not create a permanent price list for your parcel. The public homepage does not give one universal shipping rate, because a usable quote needs a destination, an eligible line and parcel data. Route names, delivery estimates, restricted-item rules, compensation and promotions can change. A responsible shipping guide therefore teaches the questions to ask instead of copying a price that may already be stale.",
-          "The same caution applies to the 90-day statement. It is a public planning fact as of the date of this guide, not permission to ignore the order clock. Check how the account displays each item's storage start and any exceptional status, then set your own deadline comfortably earlier.",
+          "The same caution applies to the 180-day statement. It is a public planning fact as of the date of this guide, not permission to ignore the order clock. Check how the account displays each item's storage start and any exceptional status, then set your own deadline comfortably earlier.",
         ],
       },
       {
@@ -613,7 +618,7 @@ export const articles: Article[] = [
         heading: "Use warehouse storage as a buffer",
         paragraphs: [
           "Storage allows items from different sellers and arrival dates to wait for consolidation. It also gives you time to review QC photos and resolve a problem before international shipping. Record the warehouse arrival date of each item and set an earlier personal deadline than the platform maximum.",
-          "Do not assume every item shares the same storage clock or status. Cancelled, returned or exceptional orders may follow different rules. Lolobuy's public 90-day statement is helpful context, but the order record and current terms should guide action.",
+          "Do not assume every item shares the same storage clock or status. Cancelled, returned or exceptional orders may follow different rules. Lolobuy's public 180-day statement is helpful context, but the order record and current terms should guide action.",
         ],
       },
       {
@@ -681,7 +686,7 @@ export const articles: Article[] = [
       items: [
         {
           label: "Published service",
-          text: "Link purchasing, warehouse inspection, photos and 90-day storage.",
+          text: "Link purchasing, warehouse inspection, photos and 180-day storage.",
         },
         {
           label: "Observed case",
@@ -839,7 +844,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website",
-        note: "Primary source for public link-ordering, warehouse inspection, photography and 90-day storage claims.",
+        note: "Primary source for public link-ordering, warehouse inspection, photography and 180-day storage claims.",
       },
       {
         label: "Identified LoloBuy community ordering guide",
@@ -905,7 +910,7 @@ export const articles: Article[] = [
       {
         heading: "Use the warehouse arrival as a second comparison point",
         paragraphs: [
-          "LoloBuy's public website states that warehouse arrivals are inspected and photographed, and it advertises 90 days of free storage. When a Weidian order reaches that stage, compare it with the source note you saved: product identity, colour, labelled size, quantity, included pieces and visible condition. The warehouse record should be tied to the original order, not judged from memory.",
+          "LoloBuy's public website states that warehouse arrivals are inspected and photographed, and it advertises 180 days of free storage. When a Weidian order reaches that stage, compare it with the source note you saved: product identity, colour, labelled size, quantity, included pieces and visible condition. The warehouse record should be tied to the original order, not judged from memory.",
           "The public homepage does not publish a universal number of free QC photographs, a permanent extra-photo price, a guaranteed measurement service or one return rule for every seller. Work with the evidence and actions shown for the current order. If one decisive area is missing, request a precise angle or measurement only when that option is available and before any applicable decision window closes.",
         ],
       },
@@ -986,7 +991,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website — checked July 29, 2026",
-        note: "Primary source for the public link-ordering, warehouse quality-inspection, photography and 90-day storage statements.",
+        note: "Primary source for the public link-ordering, warehouse quality-inspection, photography and 180-day storage statements.",
       },
       {
         label: "Identified LoloBuy community ordering guide — checked July 29, 2026",
@@ -1079,7 +1084,7 @@ export const articles: Article[] = [
         heading: "Do not authorise international shipping with an unresolved material mismatch",
         paragraphs: [
           "The practical value of warehouse QC is the chance to compare before parcel submission. If the issue would change whether you want the item, resolve it while the order still shows an available warehouse action. Once an item is packed and dispatched internationally, the evidence trail, costs and responsible parties can become more complicated.",
-          "This is not a claim that every pre-shipment issue is returnable. It is a sequencing rule: investigate before adding another irreversible step. Check the item's current status and any displayed deadline, because the public homepage does not define one universal window. Keep the 90-day storage statement separate from after-sales timing; free storage does not imply a 90-day right to return.",
+          "This is not a claim that every pre-shipment issue is returnable. It is a sequencing rule: investigate before adding another irreversible step. Check the item's current status and any displayed deadline, because the public homepage does not define one universal window. Keep the 180-day storage statement separate from after-sales timing; free storage does not imply a 180-day right to return.",
         ],
       },
       {
@@ -1130,7 +1135,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website and parcel interface — checked August 2, 2026",
-        note: "Primary source for the public order, warehouse inspection, photography and 90-day storage statements, and for the interface instruction to monitor parcels and contact support after an abnormal tracking update.",
+        note: "Primary source for the public order, warehouse inspection, photography and 180-day storage statements, and for the interface instruction to monitor parcels and contact support after an abnormal tracking update.",
       },
       {
         label: "DHL eCommerce tracking FAQ — checked August 2, 2026",
@@ -1273,7 +1278,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website — checked August 10, 2026",
-        note: "Primary source only for LoloBuy's published link-ordering, warehouse quality-inspection, photography, 90-day storage and parcel-consolidation workflow statements. It does not publish a universal shoe-size conversion or fit guarantee.",
+        note: "Primary source only for LoloBuy's published link-ordering, warehouse quality-inspection, photography, 180-day storage and parcel-consolidation workflow statements. It does not publish a universal shoe-size conversion or fit guarantee.",
       },
       {
         label: "Lolobuy Sheet measurement framework",
@@ -1353,7 +1358,7 @@ export const articles: Article[] = [
         heading: "Choose pass, question or action before parcel submission",
         paragraphs: [
           "Pass the pair when identity, selected labels, quantity and decision-changing visible details match the saved record closely enough for your risk threshold. Ask a focused question when one clear label, angle or measurement can resolve the uncertainty. If a documented mismatch changes the purchase decision, preserve the listing, order option and relevant warehouse image, then use the action currently available in the order interface without delay.",
-          "This guide does not promise a return, exchange, refund, deadline or fee because those outcomes can depend on the seller, item, timing and live platform terms. LoloBuy's public page advertises 90 days of free warehouse storage, but storage time is not the same as a seller return window. Record the arrival date and resolve a material shoe-size issue before moving the pair into an international parcel.",
+          "This guide does not promise a return, exchange, refund, deadline or fee because those outcomes can depend on the seller, item, timing and live platform terms. LoloBuy's public page advertises 180 days of free warehouse storage, but storage time is not the same as a seller return window. Record the arrival date and resolve a material shoe-size issue before moving the pair into an international parcel.",
           "After acceptance, consider the shoe box and protective packaging during parcel planning. Keeping a box may protect shape or matter to the buyer, while removing it can change volume; the appropriate choice depends on the item and current packing options. LoloBuy publicly describes consolidating warehouse items, but final weight, dimensions, route eligibility and price remain live parcel data.",
         ],
       },
@@ -1390,7 +1395,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website — checked August 12, 2026",
-        note: "Primary source only for starting an order with a pasted Chinese product link, warehouse inspection and photographs, 90 days of free storage, and parcel consolidation. It does not define a universal search vocabulary or guarantee any listing.",
+        note: "Primary source only for starting an order with a pasted Chinese product link, warehouse inspection and photographs, 180 days of free storage, and parcel consolidation. It does not define a universal search vocabulary or guarantee any listing.",
       },
       {
         label: "Lolobuy Sheet query-and-variant framework",
@@ -1476,7 +1481,7 @@ export const articles: Article[] = [
         heading: "Carry the search record into warehouse review",
         paragraphs: [
           "After an item arrives, compare the warehouse record with the saved source and selected option. Check identity first, then color, labelled size, quantity, visible construction and the one feature that justified the choice. Requesting a more specific view makes sense only when the current account offers it and the result could change the decision. The public homepage does not establish a universal number or price for extra images, videos or measurements.",
-          "LoloBuy currently advertises 90 days of free storage and the ability to combine warehouse items into an international parcel. Those statements provide planning context, not a reason to postpone an item-level problem. Storage time is not a universal seller return window. Resolve a material mismatch using the action and terms shown for that order before authorising international shipment.",
+          "LoloBuy currently advertises 180 days of free storage and the ability to combine warehouse items into an international parcel. Those statements provide planning context, not a reason to postpone an item-level problem. Storage time is not a universal seller return window. Resolve a material mismatch using the action and terms shown for that order before authorising international shipment.",
         ],
       },
       {
@@ -1512,7 +1517,7 @@ export const articles: Article[] = [
     sources: [
       {
         label: "LoloBuy public website — checked August 14, 2026",
-        note: "Primary source only for starting an order with a pasted Chinese product link, warehouse inspection and photographs, 90 days of free storage, and parcel consolidation. It does not verify every Taobao listing or seller.",
+        note: "Primary source only for starting an order with a pasted Chinese product link, warehouse inspection and photographs, 180 days of free storage, and parcel consolidation. It does not verify every Taobao listing or seller.",
       },
       {
         label: "Lolobuy Sheet Taobao option-comparison framework",
@@ -1584,7 +1589,7 @@ export const articles: Article[] = [
         heading: "Plan the warehouse check while comparing candidates",
         paragraphs: [
           "A stronger candidate is not merely easy to order; it is possible to verify later. Decide which visible evidence would confirm identity and the chosen option: size label, color, printed number, included accessory, zipper layout, measurement points or packaging component. Link those checks to the saved listing rather than to memory.",
-          "LoloBuy publicly describes warehouse inspection and photographs and advertises 90 days of free storage. The public page does not establish a universal photo count, extra-image fee, measurement service or seller remedy. Request a focused view only when the live account offers it and the result could change the decision. Storage time is not a universal seller return window.",
+          "LoloBuy publicly describes warehouse inspection and photographs and advertises 180 days of free storage. The public page does not establish a universal photo count, extra-image fee, measurement service or seller remedy. Request a focused view only when the live account offers it and the result could change the decision. Storage time is not a universal seller return window.",
         ],
       },
       {
@@ -1717,6 +1722,7 @@ export const articles: Article[] = [
   },
   ...priorityArticles,
   sellerPageArticle,
+  ...octoberArticles,
 ];
 
 export const faqs = [
@@ -1766,7 +1772,7 @@ export const faqs = [
     question: "What happens after the seller sends an item to the LoloBuy warehouse?",
     basis: "CONFIRMED ON OFFICIAL HOMEPAGE",
     answer:
-      "LoloBuy's official homepage says that after the merchant sends the goods to its warehouse, the service conducts a quality inspection, takes photographs for the user and provides 90 days of free storage. Those are the clearest publicly indexed warehouse facts available on the site. The same homepage does not publish the complete inspection checklist, the photo count, the processing time or the remedy for every defect. When the warehouse record appears, compare it with the saved order details and raise any visible mismatch before arranging international shipment; sending the parcel removes the opportunity to inspect it at the warehouse stage.",
+      "LoloBuy's official homepage says that after the merchant sends the goods to its warehouse, the service conducts a quality inspection, takes photographs for the user and provides 180 days of free storage. Those are the clearest publicly indexed warehouse facts available on the site. The same homepage does not publish the complete inspection checklist, the photo count, the processing time or the remedy for every defect. When the warehouse record appears, compare it with the saved order details and raise any visible mismatch before arranging international shipment; sending the parcel removes the opportunity to inspect it at the warehouse stage.",
   },
   {
     question: "What does QC mean on a LoloBuy order?",
@@ -1790,7 +1796,7 @@ export const faqs = [
     question: "How long is free LoloBuy warehouse storage?",
     basis: "CONFIRMED ON OFFICIAL HOMEPAGE",
     answer:
-      "LoloBuy's official homepage currently advertises 90 days of free storage after goods reach the warehouse stage. The public page does not explain in the indexed text exactly when the 90-day clock begins, how exceptional items are handled or what fee or disposal rule applies after the free period. Record the warehouse-arrival date shown for every item and plan consolidation or shipment well before the final day instead of treating day 90 as a safe target. If items arrive on different dates, track each one separately because the oldest warehouse item can determine how much decision time remains.",
+      "LoloBuy's official homepage currently advertises 180 days of free storage after goods reach the warehouse stage. The public page does not explain in the indexed text exactly when the 180-day clock begins, how exceptional items are handled or what fee or disposal rule applies after the free period. Record the warehouse-arrival date shown for every item and plan consolidation or shipment well before the final day instead of treating day 180 as a safe target. If items arrive on different dates, track each one separately because the oldest warehouse item can determine how much decision time remains.",
   },
   {
     question: "Can several LoloBuy orders be combined into one international parcel?",

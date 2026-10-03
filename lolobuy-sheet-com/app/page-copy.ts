@@ -431,7 +431,7 @@ export const shippingPageCopy = {
     crumb: "Shipping",
     days: "days",
     storage:
-      "LoloBuy's public website currently advertises 90 days of free warehouse storage. Use it as a planning window and confirm the live terms and each order's deadline inside the platform.",
+      "LoloBuy's public website currently advertises 180 days of free warehouse storage. Use it as a planning window and confirm the live terms and each order's deadline inside the platform.",
     stages: [
       ["01 / BEFORE ARRIVAL", "Estimate the parcel mix.", "Record rough weight, dimensions, materials and restrictions for each item. Notice combinations that may create a bulky or fragile parcel."],
       ["02 / IN STORAGE", "Resolve QC issues early.", "Storage creates time to compare arrivals and handle a mismatch before submitting international shipping. Set your own earlier deadline."],
@@ -452,10 +452,10 @@ export const shippingPageCopy = {
       "How will packaging requests change weight and dimensions?",
       "What customs and tax obligations apply at the destination?",
     ],
-    sourceEyebrow: "SOURCE CHECKED · JULY 26, 2026",
+    sourceEyebrow: "SOURCE CHECKED · OCTOBER 3, 2026",
     sourceTitle: "No static page can quote your final shipping cost accurately.",
     sourceText:
-      "Final cost depends on a current, packed parcel and an eligible route. Taxes, declarations and import rules belong to the destination country. LoloBuy's public homepage confirms 90 days of free storage. Use the live account and official customs information for the final decision.",
+      "Final cost depends on a current, packed parcel and an eligible route. Taxes, declarations and import rules belong to the destination country. LoloBuy's public homepage confirms 180 days of free storage. Use the live account and official customs information for the final decision.",
     sourceLink: "Read the detailed source-checked shipping article",
   },
   es: {
@@ -466,7 +466,7 @@ export const shippingPageCopy = {
     crumb: "Envío",
     days: "días",
     storage:
-      "La web pública de LoloBuy anuncia actualmente 90 días de almacenamiento gratuito. Úsalos como margen y confirma los términos y la fecha límite de cada pedido.",
+      "La web pública de LoloBuy anuncia actualmente 180 días de almacenamiento gratuito. Úsalos como margen y confirma los términos y la fecha límite de cada pedido.",
     stages: [
       ["01 / ANTES DE LLEGAR", "Estima la combinación del paquete.", "Anota peso, dimensiones, materiales y restricciones aproximadas. Detecta combinaciones voluminosas o frágiles."],
       ["02 / EN ALMACÉN", "Resuelve pronto los problemas QC.", "El almacenamiento permite comparar llegadas y resolver diferencias antes del envío internacional."],
@@ -481,10 +481,10 @@ export const shippingPageCopy = {
       "Quitar embalaje reduce volumen, pero también protección. Decide por artículo cuando el almacén ofrezca datos mejores.",
     questionsTitle: "Antes de elegir una ruta, pregunta:",
     questions: ["¿Acepta todas las categorías del paquete?", "¿Cobra peso real o volumétrico?", "¿Qué seguimiento y compensación describe?", "¿Cómo cambia el embalaje el peso y el volumen?", "¿Qué aduanas e impuestos exige el destino?"],
-    sourceEyebrow: "FUENTE COMPROBADA · 26 DE JULIO DE 2026",
+    sourceEyebrow: "FUENTE COMPROBADA · 3 DE OCTUBRE DE 2026",
     sourceTitle: "Una página estática no puede cotizar tu coste final.",
     sourceText:
-      "El coste depende del paquete preparado y de una ruta elegible. Impuestos, declaraciones y reglas de importación pertenecen al destino. La página pública confirma 90 días de almacenamiento gratuito; usa la cuenta actual para decidir.",
+      "El coste depende del paquete preparado y de una ruta elegible. Impuestos, declaraciones y reglas de importación pertenecen al destino. La página pública confirma 180 días de almacenamiento gratuito; usa la cuenta actual para decidir.",
     sourceLink: "Leer el artículo de envío verificado",
   },
   de: {
@@ -495,7 +495,7 @@ export const shippingPageCopy = {
     crumb: "Versand",
     days: "Tage",
     storage:
-      "LoloBuy wirbt öffentlich mit 90 Tagen kostenloser Lagerung. Nutze sie als Planungsfenster und prüfe aktuelle Bedingungen sowie die Frist jedes Auftrags.",
+      "LoloBuy wirbt öffentlich mit 180 Tagen kostenloser Lagerung. Nutze sie als Planungsfenster und prüfe aktuelle Bedingungen sowie die Frist jedes Auftrags.",
     stages: [
       ["01 / VOR ANKUNFT", "Paketmix grob schätzen.", "Ungefähres Gewicht, Maße, Material und Einschränkungen notieren. Sperrige oder zerbrechliche Kombinationen erkennen."],
       ["02 / IM LAGER", "QC-Probleme früh klären.", "Lagerzeit schafft Raum zum Vergleichen und zur Klärung von Abweichungen vor dem internationalen Versand."],
@@ -510,10 +510,10 @@ export const shippingPageCopy = {
       "Weniger Verpackung senkt Volumen, kann aber Schutz verringern. Nach besseren Lagerdaten je Artikel entscheiden.",
     questionsTitle: "Vor der Routenwahl fragen:",
     questions: ["Akzeptiert die Route alle Artikelkategorien?", "Gilt Ist- oder Volumengewicht?", "Welche Tracking- und Entschädigungsbedingungen gelten?", "Wie verändern Verpackungswünsche Gewicht und Maße?", "Welche Zoll- und Steuerpflichten gelten am Ziel?"],
-    sourceEyebrow: "QUELLE GEPRÜFT · 26. JULI 2026",
+    sourceEyebrow: "QUELLE GEPRÜFT · 3. OKTOBER 2026",
     sourceTitle: "Keine statische Seite kann den Endpreis genau nennen.",
     sourceText:
-      "Die Kosten hängen vom gepackten Paket und einer zulässigen Route ab. Steuern, Deklarationen und Einfuhrregeln bestimmt das Zielland. LoloBuy bestätigt 90 Tage kostenlose Lagerung; für die Entscheidung gilt das Live-Konto.",
+      "Die Kosten hängen vom gepackten Paket und einer zulässigen Route ab. Steuern, Deklarationen und Einfuhrregeln bestimmt das Zielland. LoloBuy bestätigt 180 Tage kostenlose Lagerung; für die Entscheidung gilt das Live-Konto.",
     sourceLink: "Ausführlichen Versandartikel lesen",
   },
   fr: {
@@ -524,7 +524,7 @@ export const shippingPageCopy = {
     crumb: "Expédition",
     days: "jours",
     storage:
-      "Le site public LoloBuy annonce actuellement 90 jours de stockage gratuit. Utilisez-les comme marge et confirmez les conditions et la date limite de chaque commande.",
+      "Le site public LoloBuy annonce actuellement 180 jours de stockage gratuit. Utilisez-les comme marge et confirmez les conditions et la date limite de chaque commande.",
     stages: [
       ["01 / AVANT L'ARRIVÉE", "Estimer la composition du colis.", "Notez poids, dimensions, matières et restrictions approximatifs. Repérez les associations volumineuses ou fragiles."],
       ["02 / EN STOCKAGE", "Résoudre tôt les problèmes QC.", "Le stockage permet de comparer les arrivées et de traiter un écart avant l'expédition internationale."],
@@ -539,10 +539,10 @@ export const shippingPageCopy = {
       "Retirer un emballage réduit le volume mais aussi la protection. Décidez article par article avec les données d'entrepôt.",
     questionsTitle: "Avant de choisir une route, demandez :",
     questions: ["Accepte-t-elle toutes les catégories du colis ?", "Facture-t-elle le poids réel ou volumétrique ?", "Quelles conditions de suivi et d'indemnisation ?", "Comment l'emballage change-t-il poids et dimensions ?", "Quelles obligations douanières et fiscales au pays de destination ?"],
-    sourceEyebrow: "SOURCE VÉRIFIÉE · 26 JUILLET 2026",
+    sourceEyebrow: "SOURCE VÉRIFIÉE · 3 OCTOBRE 2026",
     sourceTitle: "Une page statique ne peut pas chiffrer votre coût final.",
     sourceText:
-      "Le coût dépend du colis emballé et d'une route admissible. Taxes, déclarations et importation relèvent du pays de destination. LoloBuy confirme 90 jours de stockage gratuit ; utilisez le compte actuel pour décider.",
+      "Le coût dépend du colis emballé et d'une route admissible. Taxes, déclarations et importation relèvent du pays de destination. LoloBuy confirme 180 jours de stockage gratuit ; utilisez le compte actuel pour décider.",
     sourceLink: "Lire l'article détaillé sur l'expédition",
   },
   it: {
@@ -553,7 +553,7 @@ export const shippingPageCopy = {
     crumb: "Spedizione",
     days: "giorni",
     storage:
-      "Il sito pubblico LoloBuy pubblicizza 90 giorni di deposito gratuito. Usali come finestra di pianificazione e verifica termini e scadenza di ogni ordine.",
+      "Il sito pubblico LoloBuy pubblicizza 180 giorni di deposito gratuito. Usali come finestra di pianificazione e verifica termini e scadenza di ogni ordine.",
     stages: [
       ["01 / PRIMA DELL'ARRIVO", "Stima la composizione del pacco.", "Annota peso, dimensioni, materiali e restrizioni indicativi. Individua combinazioni ingombranti o fragili."],
       ["02 / IN MAGAZZINO", "Risolvi presto i problemi QC.", "Il deposito offre tempo per confrontare gli arrivi e gestire differenze prima della spedizione internazionale."],
@@ -568,10 +568,10 @@ export const shippingPageCopy = {
       "Rimuovere imballaggio riduce il volume ma anche la protezione. Decidi articolo per articolo con i dati del magazzino.",
     questionsTitle: "Prima di scegliere una rotta, chiedi:",
     questions: ["Accetta tutte le categorie del pacco?", "Addebita peso reale o volumetrico?", "Quali condizioni di tracking e compensazione?", "Come cambiano peso e dimensioni con l'imballaggio?", "Quali obblighi doganali e fiscali al destino?"],
-    sourceEyebrow: "FONTE VERIFICATA · 26 LUGLIO 2026",
+    sourceEyebrow: "FONTE VERIFICATA · 3 OTTOBRE 2026",
     sourceTitle: "Una pagina statica non può quotare il costo finale.",
     sourceText:
-      "Il costo dipende dal pacco preparato e da una rotta idonea. Tasse, dichiarazioni e regole d'importazione appartengono al paese di destinazione. LoloBuy conferma 90 giorni di deposito gratuito; usa l'account attuale per decidere.",
+      "Il costo dipende dal pacco preparato e da una rotta idonea. Tasse, dichiarazioni e regole d'importazione appartengono al paese di destinazione. LoloBuy conferma 180 giorni di deposito gratuito; usa l'account attuale per decidere.",
     sourceLink: "Leggi l'articolo dettagliato sulla spedizione",
   },
 } as const;

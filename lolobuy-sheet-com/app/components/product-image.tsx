@@ -1,3 +1,5 @@
+import { verifiedProductImages } from "../catalog-evidence";
+
 type ProductImageProps = {
   slug: string;
   alt: string;
@@ -12,7 +14,9 @@ export function productImagePath(
   width: 160 | 320 | 640,
   view: 1 | 2 | 3 = 1,
 ) {
-  return `/product-finds/${slug}-${view}-${width}.webp`;
+  return view === 1 && verifiedProductImages[slug]
+    ? verifiedProductImages[slug].replace("-320.webp", `-${width}.webp`)
+    : `/product-finds/${slug}-${view}-${width}.webp`;
 }
 
 export default function ProductImage({
@@ -30,7 +34,7 @@ export default function ProductImage({
   return (
     <img
       src={src320}
-      srcSet={`${src160} 160w, ${src320} 320w, ${src640} 640w`}
+      srcSet={src160 === src640 ? undefined : `${src160} 160w, ${src320} 320w, ${src640} 640w`}
       sizes={sizes}
       alt={alt}
       width={640}

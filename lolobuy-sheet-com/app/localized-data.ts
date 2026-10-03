@@ -6,6 +6,7 @@ import { taobaoFindsArticleLocales } from "./taobao-finds-article-locales";
 import { finds1688ArticleLocales } from "./1688-finds-article-locales";
 import { sellerPageArticleLocales } from "./seller-page-article-locales";
 import { englishOnlyArticleSlugs } from "./priority-articles";
+import { octoberArticleLocales } from "./october-article-locales";
 import {
   articles,
   categories,
@@ -23,44 +24,44 @@ type ProductText = {
 
 const productText: Record<Exclude<Locale, "en">, ProductText[]> = {
   es: [
-    { name: "Gafas de esquí", category: "Gafas", description: "Entrada visual para unas gafas de esquí. Confirma lente, montura, piezas incluidas y disponibilidad en la ficha actual antes de pedir." },
-    { name: "Sombrero Gucci", category: "Sombreros", description: "Entrada visual para un sombrero con etiqueta Gucci. Confirma opción, medidas, construcción y datos actuales sin depender solo de la imagen." },
-    { name: "Sudaderas con capucha Off-White", category: "Sudaderas", description: "Entrada visual para sudaderas con etiqueta Off-White. Revisa diseño, medidas, posición del estampado y variante actual." },
-    { name: "Zapatillas de caña alta Numeris", category: "Calzado", description: "Entrada visual para zapatillas altas Numeris. Confirma talla y color y usa medidas y fotos QC para revisar el par recibido." },
-    { name: "HOKA Speedgoat 5", category: "Calzado", description: "Entrada visual para calzado con etiqueta HOKA Speedgoat 5. Confirma opción, talla y detalles actuales y compara ambos zapatos durante el QC." },
-    { name: "Mochila Nike Elite", category: "Bolsos", description: "Entrada visual para una mochila con etiqueta Nike Elite. Confirma dimensiones, compartimentos, correas, cierres y color actual." },
-    { name: "Chaqueta acolchada Balenciaga", category: "Abrigos", description: "Entrada visual para una chaqueta acolchada con etiqueta Balenciaga. Compara medidas, cierres, paneles y distribución del relleno." },
-    { name: "Chaqueta de invierno con capucha", category: "Abrigos", description: "Entrada visual para una chaqueta de invierno con capucha. Revisa talla, color, medidas, capucha, cierres, bolsillos y construcción visible." },
+    { name: "Gafas de esquí · 3359", category: "Gafas", description: "Ficha 3359, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
+    { name: "Sombrero casual · 3353", category: "Sombreros", description: "Ficha 3353, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
+    { name: "Sudadera de otoño e invierno", category: "Sudaderas", description: "Ficha 3413, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
+    { name: "Zapatillas casuales MM 07", category: "Calzado", description: "Ficha 3355, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
+    { name: "Calzado Skyline USKYLINE-FLOATX", category: "Calzado", description: "Ficha 3328, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
+    { name: "Mochila XJXPCS", category: "Bolsos", description: "Ficha 3295, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
+    { name: "Chaqueta de invierno estampada", category: "Abrigos", description: "Ficha 3312, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
+    { name: "Abrigo acolchado con capucha", category: "Abrigos", description: "Ficha 3374, comprobada el 3 de octubre de 2026. Verifica variante, medidas e imágenes en la página actual." },
   ],
   de: [
-    { name: "Skibrille", category: "Brillen", description: "Visueller Verzeichniseintrag für eine Skibrille. Linse, Rahmen, Lieferumfang und Verfügbarkeit im aktuellen Angebot prüfen." },
-    { name: "Gucci-Kappe", category: "Kopfbedeckung", description: "Visueller Eintrag für eine Gucci-gekennzeichnete Kappe. Option, Maße, Verarbeitung und aktuelle Angebotsdaten prüfen." },
-    { name: "Off-White-Hoodies", category: "Hoodies", description: "Visueller Eintrag für Off-White-gekennzeichnete Hoodies. Design, Maße, Druckposition und aktuelle Variante prüfen." },
-    { name: "Numeris High-Top-Schuhe", category: "Schuhe", description: "Visueller Eintrag für Numeris-High-Top-Schuhe. Größe und Farbe bestätigen und das eingegangene Paar anhand von Maßen und QC-Fotos prüfen." },
-    { name: "HOKA Speedgoat 5", category: "Schuhe", description: "Visueller Eintrag für einen HOKA-Speedgoat-5-gekennzeichneten Schuh. Option, Größe und Angebot prüfen und beide Schuhe beim QC vergleichen." },
-    { name: "Nike Elite-Rucksack", category: "Taschen", description: "Visueller Eintrag für einen Nike-Elite-gekennzeichneten Rucksack. Maße, Fächer, Gurte, Verschlüsse und Farbe prüfen." },
-    { name: "Balenciaga-Steppjacke", category: "Jacken", description: "Visueller Eintrag für eine Balenciaga-gekennzeichnete Steppjacke. Maße, Verschlüsse, Paneele und Füllverteilung vergleichen." },
-    { name: "Winterjacke mit Kapuze", category: "Jacken", description: "Visueller Eintrag für eine Winterjacke mit Kapuze. Größe, Farbe, Maße, Kapuze, Verschlüsse, Taschen und Verarbeitung prüfen." },
+    { name: "Skibrille · 3359", category: "Brillen", description: "Eintrag 3359, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
+    { name: "Freizeithut · 3353", category: "Kopfbedeckung", description: "Eintrag 3353, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
+    { name: "Herbst- und Winterpullover", category: "Hoodies", description: "Eintrag 3413, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
+    { name: "MM 07 Freizeitschuhe", category: "Schuhe", description: "Eintrag 3355, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
+    { name: "Skyline USKYLINE-FLOATX Schuhe", category: "Schuhe", description: "Eintrag 3328, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
+    { name: "XJXPCS Rucksack", category: "Taschen", description: "Eintrag 3295, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
+    { name: "Gemusterte Winterjacke", category: "Jacken", description: "Eintrag 3312, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
+    { name: "Gefütterter Wintermantel mit Kapuze", category: "Jacken", description: "Eintrag 3374, geprüft am 3. Oktober 2026. Variante, Maße und Bilder auf der aktuellen Produktseite prüfen." },
   ],
   fr: [
-    { name: "Masque de ski", category: "Lunettes", description: "Entrée visuelle pour des lunettes de ski. Confirmez écran, monture, pièces incluses et disponibilité sur la fiche actuelle." },
-    { name: "Chapeau Gucci", category: "Couvre-chefs", description: "Entrée visuelle pour un chapeau étiqueté Gucci. Vérifiez option, mesures, construction et données actuelles sans vous fier uniquement à l'image." },
-    { name: "Sweats à capuche Off-White", category: "Sweats", description: "Entrée visuelle pour des sweats étiquetés Off-White. Vérifiez motif, mesures, placement de l'impression et variante actuelle." },
-    { name: "Chaussures montantes Numeris", category: "Chaussures", description: "Entrée visuelle pour des chaussures montantes Numeris. Confirmez taille et couleur puis contrôlez la paire reçue avec mesures et photos QC." },
-    { name: "HOKA Speedgoat 5", category: "Chaussures", description: "Entrée visuelle pour une chaussure étiquetée HOKA Speedgoat 5. Confirmez option, taille et fiche puis comparez les deux chaussures au QC." },
-    { name: "Sac à dos Nike Elite", category: "Sacs", description: "Entrée visuelle pour un sac à dos étiqueté Nike Elite. Confirmez dimensions, compartiments, sangles, fermetures et couleur." },
-    { name: "Doudoune Balenciaga", category: "Vestes", description: "Entrée visuelle pour une doudoune étiquetée Balenciaga. Comparez mesures, fermetures, panneaux et répartition du rembourrage." },
-    { name: "Veste d’hiver à capuche", category: "Vestes", description: "Entrée visuelle pour une veste d'hiver à capuche. Vérifiez taille, couleur, mesures, capuche, fermetures, poches et construction." },
+    { name: "Lunettes de ski · 3359", category: "Lunettes", description: "Fiche 3359, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
+    { name: "Chapeau décontracté · 3353", category: "Couvre-chefs", description: "Fiche 3353, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
+    { name: "Sweat automne et hiver", category: "Sweats", description: "Fiche 3413, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
+    { name: "Chaussures décontractées MM 07", category: "Chaussures", description: "Fiche 3355, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
+    { name: "Chaussures Skyline USKYLINE-FLOATX", category: "Chaussures", description: "Fiche 3328, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
+    { name: "Sac à dos XJXPCS", category: "Sacs", description: "Fiche 3295, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
+    { name: "Veste d’hiver à motifs", category: "Vestes", description: "Fiche 3312, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
+    { name: "Manteau matelassé à capuche", category: "Vestes", description: "Fiche 3374, vérifiée le 3 octobre 2026. Contrôlez variante, mesures et images sur la page actuelle." },
   ],
   it: [
-    { name: "Maschera da sci", category: "Occhiali", description: "Voce visiva per occhiali da sci. Conferma lente, montatura, pezzi inclusi e disponibilità nella scheda attuale." },
-    { name: "Cappello Gucci", category: "Copricapi", description: "Voce visiva per un cappello con etichetta Gucci. Verifica opzione, misure, costruzione e dati attuali senza basarti solo sull'immagine." },
-    { name: "Felpe con cappuccio Off-White", category: "Felpe", description: "Voce visiva per felpe con etichetta Off-White. Controlla design, misure, posizione della stampa e variante attuale." },
-    { name: "Scarpe alte Numeris", category: "Scarpe", description: "Voce visiva per scarpe alte Numeris. Conferma taglia e colore e usa misure e foto QC per controllare la coppia ricevuta." },
-    { name: "HOKA Speedgoat 5", category: "Scarpe", description: "Voce visiva per una scarpa con etichetta HOKA Speedgoat 5. Conferma opzione, taglia e scheda e confronta entrambe le scarpe nel QC." },
-    { name: "Zaino Nike Elite", category: "Borse", description: "Voce visiva per uno zaino con etichetta Nike Elite. Conferma dimensioni, scomparti, cinturini, chiusure e colore." },
-    { name: "Piumino Balenciaga", category: "Giacche", description: "Voce visiva per un piumino con etichetta Balenciaga. Confronta misure, chiusure, pannelli e distribuzione dell'imbottitura." },
-    { name: "Giacca invernale con cappuccio", category: "Giacche", description: "Voce visiva per una giacca invernale con cappuccio. Verifica taglia, colore, misure, cappuccio, chiusure, tasche e costruzione." },
+    { name: "Maschera da sci · 3359", category: "Occhiali", description: "Scheda 3359, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
+    { name: "Cappello casual · 3353", category: "Copricapi", description: "Scheda 3353, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
+    { name: "Felpa autunno e inverno", category: "Felpe", description: "Scheda 3413, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
+    { name: "Scarpe casual MM 07", category: "Scarpe", description: "Scheda 3355, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
+    { name: "Scarpe Skyline USKYLINE-FLOATX", category: "Scarpe", description: "Scheda 3328, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
+    { name: "Zaino XJXPCS", category: "Borse", description: "Scheda 3295, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
+    { name: "Giacca invernale a motivi", category: "Giacche", description: "Scheda 3312, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
+    { name: "Cappotto imbottito con cappuccio", category: "Giacche", description: "Scheda 3374, verificata il 3 ottobre 2026. Controlla variante, misure e immagini nella pagina attuale." },
   ],
 };
 
@@ -151,11 +152,11 @@ const faqText: Record<Exclude<Locale, "en">, FaqText[]> = {
     { question: "¿Cómo empieza un pedido LoloBuy con un enlace?", basis: "CONFIRMADO EN LA WEB OFICIAL", answer: "La página oficial indica que se pega el enlace del producto. Antes de pagar, confirma opción, talla, color, cantidad, precio y entrega nacional en la ficha y en el pedido generado." },
     { question: "¿Qué enlaces de producto se pueden enviar?", basis: "AFIRMACIÓN OFICIAL CON LÍMITE", answer: "La web usa una descripción amplia de canales chinos, pero no publica una lista completa de marketplaces o categorías garantizadas. Comprueba que el pedido reconoce el enlace y cualquier restricción antes de pagar." },
     { question: "¿Se verifican manualmente todos los enlaces cada día?", basis: "POLÍTICA DEL DIRECTORIO", answer: "No hacemos esa afirmación. Una ficha puede cambiar, agotarse o desaparecer sin aviso; abre la página actual y revisa variante, precio y disponibilidad antes de pedir." },
-    { question: "¿Qué ocurre cuando el vendedor envía el artículo al almacén?", basis: "CONFIRMADO EN LA WEB OFICIAL", answer: "LoloBuy declara que el almacén realiza control de calidad, toma fotografías y ofrece 90 días de almacenamiento gratuito. No publica allí la lista completa de inspección, cantidad de fotos o solución para cada defecto." },
+    { question: "¿Qué ocurre cuando el vendedor envía el artículo al almacén?", basis: "CONFIRMADO EN LA WEB OFICIAL", answer: "LoloBuy declara que el almacén realiza control de calidad, toma fotografías y ofrece 180 días de almacenamiento gratuito. No publica allí la lista completa de inspección, cantidad de fotos o solución para cada defecto." },
     { question: "¿Qué significa QC en un pedido LoloBuy?", basis: "PROCESO DE ALMACÉN EXPLICADO", answer: "QC significa control de calidad. Las fotos permiten comparar el artículo recibido con el pedido: tipo, color, talla, cantidad, daños y detalles visibles. No prueban composición, duración o autenticidad." },
     { question: "¿Cuántas fotos QC gratuitas ofrece LoloBuy?", basis: "NO PUBLICADO EN LA WEB OFICIAL", answer: "La web confirma fotografías, pero no una cantidad universal gratuita. Revisa el conjunto real de imágenes del pedido y solicita un ángulo o medida concreta si la cuenta ofrece esa opción." },
     { question: "¿LoloBuy ofrece fotos extra o vídeo de almacén?", basis: "NO PUBLICADO EN LA WEB OFICIAL", answer: "La página pública revisada no fija ese servicio, cantidad o precio. Comprueba las opciones actuales de la cuenta o pregunta a soporte antes de depender de una foto o vídeo adicional." },
-    { question: "¿Cuánto dura el almacenamiento gratuito de LoloBuy?", basis: "CONFIRMADO EN LA WEB OFICIAL", answer: "La web anuncia 90 días gratuitos. No explica públicamente todos los detalles del inicio del plazo o de lo que ocurre después; registra la fecha de llegada de cada artículo y actúa con margen." },
+    { question: "¿Cuánto dura el almacenamiento gratuito de LoloBuy?", basis: "CONFIRMADO EN LA WEB OFICIAL", answer: "La web anuncia 180 días gratuitos. No explica públicamente todos los detalles del inicio del plazo o de lo que ocurre después; registra la fecha de llegada de cada artículo y actúa con margen." },
     { question: "¿Se pueden combinar varios pedidos en un paquete?", basis: "NO PUBLICADO EN LA WEB OFICIAL", answer: "La página pública confirma almacenamiento, pero no una política completa de consolidación. Comprueba en el flujo actual si los artículos son compatibles y si restricciones, tamaño o protección exigen dividirlos." },
     { question: "¿Cuánto cuesta el envío internacional de LoloBuy?", basis: "SIN PRECIO FIJO PUBLICADO", answer: "No existe un precio único público para todos los pedidos. El coste depende de destino, peso y dimensiones preparados, ruta elegible, restricciones y cargos actuales. Decide con la cotización del paquete real." },
     { question: "¿LoloBuy garantiza plazos, transportistas o seguimiento?", basis: "NO PUBLICADO EN LA WEB OFICIAL", answer: "La página pública no ofrece una tabla permanente completa ni garantías universales. Compara solo las rutas disponibles para tu paquete y distingue una estimación de una garantía." },
@@ -175,11 +176,11 @@ const faqText: Record<Exclude<Locale, "en">, FaqText[]> = {
     { question: "Wie beginnt eine LoloBuy-Bestellung per Link?", basis: "AUF OFFIZIELLER WEBSITE BESTÄTIGT", answer: "Laut Website wird der Produktlink eingefügt. Vor der Zahlung Option, Größe, Farbe, Menge, Preis und Inlandsversand im Angebot und im erzeugten Auftrag vergleichen." },
     { question: "Welche Produktlinks können eingereicht werden?", basis: "OFFIZIELLE AUSSAGE MIT GRENZE", answer: "Die Seite spricht allgemein von chinesischen Kanälen, veröffentlicht aber keine vollständige garantierte Marktplatz- oder Kategorienliste. Erkennung und Einschränkungen vor der Zahlung prüfen." },
     { question: "Werden alle Links täglich manuell geprüft?", basis: "VERZEICHNISRICHTLINIE", answer: "Nein, das behaupten wir nicht. Angebote können sich ändern, ausverkauft sein oder verschwinden. Variante, Preis und Bestand unmittelbar vor der Bestellung prüfen." },
-    { question: "Was geschieht nach dem Versand zum LoloBuy-Lager?", basis: "AUF OFFIZIELLER WEBSITE BESTÄTIGT", answer: "LoloBuy nennt Qualitätsprüfung, Fotos und 90 Tage kostenlose Lagerung. Eine vollständige Prüfliste, Fotozahl oder Lösung für jeden Mangel wird dort nicht veröffentlicht." },
+    { question: "Was geschieht nach dem Versand zum LoloBuy-Lager?", basis: "AUF OFFIZIELLER WEBSITE BESTÄTIGT", answer: "LoloBuy nennt Qualitätsprüfung, Fotos und 180 Tage kostenlose Lagerung. Eine vollständige Prüfliste, Fotozahl oder Lösung für jeden Mangel wird dort nicht veröffentlicht." },
     { question: "Was bedeutet QC bei einer LoloBuy-Bestellung?", basis: "LAGERPROZESS ERKLÄRT", answer: "QC bedeutet Qualitätskontrolle. Fotos helfen beim Abgleich von Artikel, Farbe, Größe, Menge, Schäden und sichtbaren Details. Material, Haltbarkeit oder Echtheit beweisen sie nicht." },
     { question: "Wie viele kostenlose QC-Fotos gibt es?", basis: "NICHT AUF DER OFFIZIELLEN WEBSITE VERÖFFENTLICHT", answer: "Fotos werden bestätigt, eine allgemeine kostenlose Anzahl jedoch nicht. Das tatsächliche Bildset prüfen und bei verfügbarer Option gezielt einen Blickwinkel oder ein Maß anfragen." },
     { question: "Bietet LoloBuy Zusatzfotos oder Lagervideos?", basis: "NICHT AUF DER OFFIZIELLEN WEBSITE VERÖFFENTLICHT", answer: "Die geprüfte öffentliche Seite nennt keinen dauerhaften Dienst, Umfang oder Preis. Aktuelle Kontooptionen oder Support vorab prüfen." },
-    { question: "Wie lange ist die Lagerung kostenlos?", basis: "AUF OFFIZIELLER WEBSITE BESTÄTIGT", answer: "Die Website wirbt mit 90 kostenlosen Tagen. Details zum Fristbeginn und danach sind öffentlich nicht vollständig erklärt; Ankunftsdatum je Artikel notieren und früh handeln." },
+    { question: "Wie lange ist die Lagerung kostenlos?", basis: "AUF OFFIZIELLER WEBSITE BESTÄTIGT", answer: "Die Website wirbt mit 180 kostenlosen Tagen. Details zum Fristbeginn und danach sind öffentlich nicht vollständig erklärt; Ankunftsdatum je Artikel notieren und früh handeln." },
     { question: "Können mehrere Bestellungen gebündelt werden?", basis: "NICHT AUF DER OFFIZIELLEN WEBSITE VERÖFFENTLICHT", answer: "Die öffentliche Seite bestätigt Lagerung, aber keine vollständige Bündelungsrichtlinie. Im aktuellen Paketablauf Kompatibilität, Größe, Schutz und Einschränkungen prüfen." },
     { question: "Was kostet internationaler LoloBuy-Versand?", basis: "KEIN FESTPREIS VERÖFFENTLICHT", answer: "Es gibt keinen öffentlichen Einheitspreis. Ziel, Packgewicht, Maße, zulässige Route, Einschränkungen und aktuelle Gebühren bestimmen den Betrag. Das reale Paketangebot ist maßgeblich." },
     { question: "Garantiert LoloBuy Laufzeit, Frachtführer oder Tracking?", basis: "NICHT AUF DER OFFIZIELLEN WEBSITE VERÖFFENTLICHT", answer: "Die öffentliche Seite bietet keine dauerhafte vollständige Tabelle oder allgemeine Garantie. Nur aktuell angebotene Routen vergleichen und Schätzung von Garantie unterscheiden." },
@@ -199,11 +200,11 @@ const faqText: Record<Exclude<Locale, "en">, FaqText[]> = {
     { question: "Comment une commande LoloBuy commence-t-elle avec un lien ?", basis: "CONFIRMÉ SUR LE SITE OFFICIEL", answer: "Le site indique de coller le lien produit. Avant paiement, comparez option, taille, couleur, quantité, prix et livraison locale entre la fiche et la commande générée." },
     { question: "Quels liens produit peuvent être soumis ?", basis: "AFFIRMATION OFFICIELLE AVEC LIMITE", answer: "Le site parle largement de canaux chinois, sans publier de liste complète de marketplaces ou catégories garanties. Vérifiez la lecture du lien et les restrictions avant de payer." },
     { question: "Tous les liens sont-ils vérifiés manuellement chaque jour ?", basis: "RÈGLE DU CATALOGUE", answer: "Non, nous ne faisons pas cette promesse. Une fiche peut changer, être épuisée ou disparaître ; vérifiez variante, prix et disponibilité juste avant de commander." },
-    { question: "Que se passe-t-il après l'envoi au dépôt LoloBuy ?", basis: "CONFIRMÉ SUR LE SITE OFFICIEL", answer: "LoloBuy annonce contrôle qualité, photos et 90 jours de stockage gratuit. La liste d'inspection, le nombre de photos et le recours pour chaque défaut ne sont pas détaillés publiquement." },
+    { question: "Que se passe-t-il après l'envoi au dépôt LoloBuy ?", basis: "CONFIRMÉ SUR LE SITE OFFICIEL", answer: "LoloBuy annonce contrôle qualité, photos et 180 jours de stockage gratuit. La liste d'inspection, le nombre de photos et le recours pour chaque défaut ne sont pas détaillés publiquement." },
     { question: "Que signifie QC dans une commande LoloBuy ?", basis: "PROCESSUS D'ENTREPÔT EXPLIQUÉ", answer: "QC signifie contrôle qualité. Les photos servent à comparer article, couleur, taille, quantité, dommages et détails visibles. Elles ne prouvent ni composition, ni durabilité, ni authenticité." },
     { question: "Combien de photos QC gratuites LoloBuy fournit-il ?", basis: "NON PUBLIÉ SUR LE SITE OFFICIEL", answer: "Les photos sont confirmées, pas un nombre universel gratuit. Examinez le lot réel et demandez un angle ou une mesure précise si le compte propose cette option." },
     { question: "LoloBuy propose-t-il des photos supplémentaires ou une vidéo ?", basis: "NON PUBLIÉ SUR LE SITE OFFICIEL", answer: "La page publique vérifiée ne fixe ni service permanent, ni quantité, ni tarif. Contrôlez les options actuelles du compte ou demandez au support." },
-    { question: "Combien de temps le stockage LoloBuy est-il gratuit ?", basis: "CONFIRMÉ SUR LE SITE OFFICIEL", answer: "Le site annonce 90 jours gratuits. Le début exact et les suites ne sont pas entièrement détaillés publiquement ; notez la date d'arrivée de chaque article et gardez une marge." },
+    { question: "Combien de temps le stockage LoloBuy est-il gratuit ?", basis: "CONFIRMÉ SUR LE SITE OFFICIEL", answer: "Le site annonce 180 jours gratuits. Le début exact et les suites ne sont pas entièrement détaillés publiquement ; notez la date d'arrivée de chaque article et gardez une marge." },
     { question: "Plusieurs commandes peuvent-elles être regroupées ?", basis: "NON PUBLIÉ SUR LE SITE OFFICIEL", answer: "La page confirme le stockage, mais pas une politique complète de consolidation. Vérifiez dans le flux actuel compatibilité, taille, protection et restrictions." },
     { question: "Combien coûte l'expédition internationale LoloBuy ?", basis: "AUCUN PRIX FIXE PUBLIÉ", answer: "Il n'existe pas de prix public unique. Destination, poids et dimensions emballés, route admissible, restrictions et frais actuels déterminent le coût. Le devis du colis réel fait foi." },
     { question: "LoloBuy garantit-il délais, transporteurs ou suivi ?", basis: "NON PUBLIÉ SUR LE SITE OFFICIEL", answer: "La page publique ne donne pas de tableau permanent complet ni de garantie générale. Comparez les routes réellement proposées et distinguez estimation et garantie." },
@@ -223,11 +224,11 @@ const faqText: Record<Exclude<Locale, "en">, FaqText[]> = {
     { question: "Come inizia un ordine LoloBuy con un link?", basis: "CONFERMATO SUL SITO UFFICIALE", answer: "Il sito indica di incollare il link prodotto. Prima del pagamento confronta opzione, taglia, colore, quantità, prezzo e consegna nazionale tra scheda e ordine generato." },
     { question: "Quali link prodotto si possono inviare?", basis: "AFFERMAZIONE UFFICIALE CON LIMITE", answer: "Il sito parla in modo ampio di canali cinesi ma non pubblica una lista completa garantita di marketplace o categorie. Verifica riconoscimento e restrizioni prima di pagare." },
     { question: "Tutti i link sono verificati manualmente ogni giorno?", basis: "POLITICA DEL CATALOGO", answer: "No, non facciamo questa promessa. Una scheda può cambiare, esaurirsi o scomparire; controlla variante, prezzo e disponibilità subito prima dell'ordine." },
-    { question: "Cosa succede dopo l'invio al magazzino LoloBuy?", basis: "CONFERMATO SUL SITO UFFICIALE", answer: "LoloBuy dichiara controllo qualità, foto e 90 giorni di deposito gratuito. Non pubblica lì lista completa, numero di foto o rimedio per ogni difetto." },
+    { question: "Cosa succede dopo l'invio al magazzino LoloBuy?", basis: "CONFERMATO SUL SITO UFFICIALE", answer: "LoloBuy dichiara controllo qualità, foto e 180 giorni di deposito gratuito. Non pubblica lì lista completa, numero di foto o rimedio per ogni difetto." },
     { question: "Cosa significa QC in un ordine LoloBuy?", basis: "PROCESSO DI MAGAZZINO SPIEGATO", answer: "QC significa controllo qualità. Le foto aiutano a confrontare articolo, colore, taglia, quantità, danni e dettagli visibili. Non provano composizione, durata o autenticità." },
     { question: "Quante foto QC gratuite offre LoloBuy?", basis: "NON PUBBLICATO SUL SITO UFFICIALE", answer: "Le foto sono confermate, non un numero universale gratuito. Controlla il set reale e richiedi un angolo o una misura specifica se l'account lo consente." },
     { question: "LoloBuy offre foto extra o video di magazzino?", basis: "NON PUBBLICATO SUL SITO UFFICIALE", answer: "La pagina pubblica verificata non fissa servizio, quantità o prezzo permanente. Controlla le opzioni attuali o chiedi al supporto." },
-    { question: "Quanto dura il deposito gratuito LoloBuy?", basis: "CONFERMATO SUL SITO UFFICIALE", answer: "Il sito pubblicizza 90 giorni gratuiti. Inizio e conseguenze non sono spiegati completamente; registra la data d'arrivo di ogni articolo e agisci con anticipo." },
+    { question: "Quanto dura il deposito gratuito LoloBuy?", basis: "CONFERMATO SUL SITO UFFICIALE", answer: "Il sito pubblicizza 180 giorni gratuiti. Inizio e conseguenze non sono spiegati completamente; registra la data d'arrivo di ogni articolo e agisci con anticipo." },
     { question: "Si possono unire più ordini in un pacco?", basis: "NON PUBBLICATO SUL SITO UFFICIALE", answer: "La pagina conferma il deposito ma non una politica completa di consolidamento. Verifica nel flusso attuale compatibilità, dimensioni, protezione e restrizioni." },
     { question: "Quanto costa la spedizione internazionale LoloBuy?", basis: "NESSUN PREZZO FISSO PUBBLICATO", answer: "Non esiste un prezzo pubblico unico. Destinazione, peso e dimensioni imballati, rotta idonea, restrizioni e addebiti attuali determinano il costo. Vale il preventivo del pacco reale." },
     { question: "LoloBuy garantisce tempi, vettori o tracking?", basis: "NON PUBBLICATO SUL SITO UFFICIALE", answer: "La pagina pubblica non offre una tabella permanente completa o garanzie universali. Confronta solo le rotte effettivamente disponibili e distingui stima da garanzia." },
@@ -326,7 +327,7 @@ const articleBodyText: Record<
         ],
       },
       sources: [
-        ["Web pública de LoloBuy", "Declaraciones públicas sobre compra, inspección, fotos y 90 días de almacenamiento."],
+        ["Web pública de LoloBuy", "Declaraciones públicas sobre compra, inspección, fotos y 180 días de almacenamiento."],
         ["Guía comunitaria de pedidos LoloBuy", "Resumen público de las etapas del pedido en la comunidad identificada de la plataforma."],
       ],
       intro: [
@@ -336,7 +337,7 @@ const articleBodyText: Record<
       sections: [
         { heading: "Empieza por la intención, no por un feed infinito", paragraphs: ["Define categoría, uso, material, medidas, colores aceptables y presupuesto antes de abrir muchos enlaces. Conserva dos o tres candidatos para comparar en lugar de decidir por la primera imagen."], bullets: ["Define tipo y uso.", "Anota medidas necesarias.", "Separa precio del producto y coste total.", "Compara varios candidatos."] },
         { heading: "Trata cada entrada como una pista", paragraphs: ["El vendedor controla fotos, stock, variantes, precio y descripción. Abre la ficha actual, selecciona la opción correcta y compara las medidas con una prenda propia antes de valorar el producto."] },
-        { heading: "Distingue lo que LoloBuy confirma públicamente", paragraphs: ["La página pública describe compra por enlace, inspección y fotos al llegar al almacén y 90 días de almacenamiento gratuito. No publica una tarifa permanente, un plazo garantizado ni una cantidad universal de fotos; esos datos se revisan en la cuenta actual."] },
+        { heading: "Distingue lo que LoloBuy confirma públicamente", paragraphs: ["La página pública describe compra por enlace, inspección y fotos al llegar al almacén y 180 días de almacenamiento gratuito. No publica una tarifa permanente, un plazo garantizado ni una cantidad universal de fotos; esos datos se revisan en la cuenta actual."] },
         { heading: "Convierte el enlace en una nota de pedido", paragraphs: ["Guarda URL, fecha, color, talla, cantidad, texto original de la opción, tabla de medidas y precio visible. Una nota precisa reduce errores cuando la traducción o las imágenes de variantes son ambiguas."], bullets: ["URL y fecha", "Opción exacta", "Medidas clave", "Precio y entrega nacional", "Detalle no negociable"] },
         { heading: "Desconfía de afirmaciones sin pruebas", paragraphs: ["“Verificado”, “más barato” o “actualizado a diario” necesitan evidencia. Una presencia en el directorio no demuestra fiabilidad, autenticidad o coste final, y una experiencia positiva no representa a toda la plataforma."] },
         { heading: "Separa fotos del vendedor y fotos QC", paragraphs: ["Las fotos del vendedor presentan la oferta; las fotos QC documentan el artículo recibido. Confirma primero identidad y variante, después construcción y daños, y pide una toma específica solo si cambia la decisión."] },
@@ -394,15 +395,15 @@ const articleBodyText: Record<
         ],
       },
       sources: [
-        ["Web pública de LoloBuy", "Declaraciones públicas de 90 días de almacenamiento y servicios de almacén."],
+        ["Web pública de LoloBuy", "Declaraciones públicas de 180 días de almacenamiento y servicios de almacén."],
         ["Guía comunitaria de pedidos", "Describe consolidación, selección de ruta, pago internacional y seguimiento."],
       ],
       intro: [
         "Un haul no es más barato solo por viajar junto. Consolidar puede reducir cajas repetidas, pero volumen, restricciones y calendario siguen importando.",
-        "Los 90 días anunciados son una ventana de planificación, no una razón para esperar al último día. Confirma siempre el plazo de cada artículo.",
+        "Los 180 días anunciados son una ventana de planificación, no una razón para esperar al último día. Confirma siempre el plazo de cada artículo.",
       ],
       sections: [
-        { heading: "Empieza por lo que LoloBuy publica", paragraphs: ["Las fuentes públicas respaldan compra asistida, inspección, fotos, 90 días de almacenamiento y un flujo posterior de consolidación, ruta y seguimiento. No crean una tarifa permanente para tu paquete."] },
+        { heading: "Empieza por lo que LoloBuy publica", paragraphs: ["Las fuentes públicas respaldan compra asistida, inspección, fotos, 180 días de almacenamiento y un flujo posterior de consolidación, ruta y seguimiento. No crean una tarifa permanente para tu paquete."] },
         { heading: "Diseña el paquete primero en papel", paragraphs: ["Lista peso, dimensiones, material y cuidado de cada artículo. Detecta mezclas problemáticas, como prendas voluminosas con calzado pesado o accesorios frágiles, y decide qué puede esperar."] },
         { heading: "Mantén las estimaciones en rangos", paragraphs: ["El peso del vendedor no es el peso embalado. Usa un rango bajo y alto y añade margen para despacho, entrega nacional, entrada, QC, embalaje, exportación y aduanas."], bullets: ["Peso estimado bajo y alto", "Embalaje probable", "Compatibilidad o restricción", "Fecha personal de envío"] },
         { heading: "Entiende peso real y volumétrico", paragraphs: ["El real procede de la báscula; el volumétrico convierte dimensiones con una fórmula de la ruta. Puede cobrarse el mayor. Quitar cajas reduce volumen, pero también protección."], bullets: ["Lo denso suele pagar peso real.", "Lo ligero y voluminoso puede pagar volumen.", "El embalaje cambia ambos.", "Los datos del almacén son mejores que una suposición."] },
@@ -422,7 +423,7 @@ const articleBodyText: Record<
         caption:
           "Las declaraciones de la plataforma explican el servicio previsto; un informe documenta un caso; la cuenta actual controla precios y plazos.",
         items: [
-          ["Servicio publicado", "Compra por enlace, inspección, fotos y 90 días."],
+          ["Servicio publicado", "Compra por enlace, inspección, fotos y 180 días."],
           ["Caso observado", "Un comprador informó de una diferencia de talla detectada y una devolución gestionada."],
           ["Aún desconocido", "Coste final, resultado del paquete y consistencia entre pedidos."],
           ["Tu verificación", "Comprueba cotización, pruebas y recurso actual antes de pagar."],
@@ -454,12 +455,12 @@ const articleBodyText: Record<
   de: [
     {
       visual: { eyebrow: "VIER-QUELLEN-REGEL", title: "Eine Entscheidung, vier verschiedene Quellen.", caption: "Das Verzeichnis startet die Suche; Live-Angebot, QC-Nachweis und Packdaten übernehmen später.", items: [["Verzeichnis", "Produktidee finden und Kategorien vergleichen."], ["Live-Angebot", "Verkäufer, Option, Preis und Beschreibung bestätigen."], ["Lager-QC", "Den tatsächlich eingegangenen Artikel prüfen."], ["Gepacktes Paket", "Versand nach Gewicht, Maßen und Zulässigkeit wählen."]] },
-      sources: [["Öffentliche LoloBuy-Website", "Öffentliche Angaben zu Einkauf, Prüfung, Fotos und 90 Tagen Lagerung."], ["LoloBuy Community-Bestellleitfaden", "Öffentlicher Überblick über die Bestellphasen."]],
+      sources: [["Öffentliche LoloBuy-Website", "Öffentliche Angaben zu Einkauf, Prüfung, Fotos und 180 Tagen Lagerung."], ["LoloBuy Community-Bestellleitfaden", "Öffentlicher Überblick über die Bestellphasen."]],
       intro: ["Ein gutes Spreadsheet verkürzt den Weg von einer Idee zu einem prüfbaren Angebot. Es ersetzt nicht die Kontrolle von Verkäufer, Preis, Optionen und Einschränkungen.", "Dieser Ratgeber trennt Verzeichnis, Live-Angebot, QC-Fotos und endgültige Paketentscheidung."],
       sections: [
         { heading: "Mit Absicht statt Endlos-Feed beginnen", paragraphs: ["Kategorie, Zweck, Material, Maße, Farben und Budget vor der Suche festlegen. Zwei oder drei Kandidaten vergleichen statt die erste Abbildung zu wählen."], bullets: ["Artikeltyp und Zweck", "Wichtige Maße", "Artikel- und Gesamtkosten trennen", "Mehrere Kandidaten"] },
         { heading: "Jeden Eintrag als Hinweis behandeln", paragraphs: ["Der Verkäufer steuert Bilder, Bestand, Varianten, Preis und Text. Aktuelles Angebot öffnen, exakte Option wählen und Maße mit einem passenden eigenen Artikel vergleichen."] },
-        { heading: "Öffentlich bestätigte LoloBuy-Schritte erkennen", paragraphs: ["Öffentlich beschrieben sind Bestellung per Link, Prüfung und Fotos nach Lagereingang sowie 90 Tage kostenlose Lagerung. Festpreise, Garantielaufzeiten und allgemeine Fotozahlen müssen im Live-Konto geprüft werden."] },
+        { heading: "Öffentlich bestätigte LoloBuy-Schritte erkennen", paragraphs: ["Öffentlich beschrieben sind Bestellung per Link, Prüfung und Fotos nach Lagereingang sowie 180 Tage kostenlose Lagerung. Festpreise, Garantielaufzeiten und allgemeine Fotozahlen müssen im Live-Konto geprüft werden."] },
         { heading: "Aus dem Link eine Bestellnotiz machen", paragraphs: ["URL, Datum, Farbe, Größe, Menge, Originaltext der Option, Maßtabelle und Preis speichern. So bleiben mehrdeutige Übersetzungen und Varianten nachvollziehbar."], bullets: ["URL und Datum", "Exakte Option", "Schlüsselmaße", "Preis und China-Versand", "Unverzichtbares Merkmal"] },
         { heading: "Beleglose Spreadsheet-Aussagen hinterfragen", paragraphs: ["„Verifiziert“, „am günstigsten“ oder „täglich aktualisiert“ brauchen Nachweise. Ein Verzeichniseintrag beweist weder Zuverlässigkeit, Echtheit noch Endkosten."] },
         { heading: "Verkäuferbilder von Lager-QC trennen", paragraphs: ["Verkäuferbilder zeigen das Versprechen; QC-Fotos den eingegangenen Artikel. Erst Identität und Variante, dann Verarbeitung und Schäden prüfen."] },
@@ -488,10 +489,10 @@ const articleBodyText: Record<
     },
     {
       visual: { eyebrow: "GESAMTKOSTEN-STAPEL", title: "Der Produktpreis ist nur die erste Zeile.", caption: "Schätzungen und bestätigte Gebühren trennen. Sinnvoll wird die internationale Wahl erst mit Packdaten.", items: [["Produkt", "Gewählte Variante zum aktuellen Preis."], ["China-Kosten", "Inlandsversand und klar ausgewiesene Gebühren."], ["Paket", "Verpackung, Gewicht, Maße und Routenregeln."], ["Ziel", "Internationaler Transport plus Steuern und Zoll."]] },
-      sources: [["Öffentliche LoloBuy-Website", "90 Tage kostenlose Lagerung und Lagerleistungen."], ["Community-Bestellleitfaden", "Bündelung, Routenwahl, internationale Zahlung und Tracking."]],
-      intro: ["Mehrere Artikel zusammen sind nicht automatisch günstiger. Bündelung kann Grundgebühren sparen, doch Volumen, Einschränkungen und Zeit bleiben wichtig.", "Die beworbenen 90 Tage sind ein Planungsfenster, kein Anlass, bis zum letzten Tag zu warten."],
+      sources: [["Öffentliche LoloBuy-Website", "180 Tage kostenlose Lagerung und Lagerleistungen."], ["Community-Bestellleitfaden", "Bündelung, Routenwahl, internationale Zahlung und Tracking."]],
+      intro: ["Mehrere Artikel zusammen sind nicht automatisch günstiger. Bündelung kann Grundgebühren sparen, doch Volumen, Einschränkungen und Zeit bleiben wichtig.", "Die beworbenen 180 Tage sind ein Planungsfenster, kein Anlass, bis zum letzten Tag zu warten."],
       sections: [
-        { heading: "Mit veröffentlichten LoloBuy-Angaben starten", paragraphs: ["Öffentliche Quellen stützen Einkaufshilfe, Prüfung, Fotos, 90 Tage Lagerung und spätere Bündelung. Sie liefern keine dauerhafte Paketpreisliste."] },
+        { heading: "Mit veröffentlichten LoloBuy-Angaben starten", paragraphs: ["Öffentliche Quellen stützen Einkaufshilfe, Prüfung, Fotos, 180 Tage Lagerung und spätere Bündelung. Sie liefern keine dauerhafte Paketpreisliste."] },
         { heading: "Paket zuerst auf Papier bauen", paragraphs: ["Gewicht, Maße, Material und Schutzbedarf je Artikel notieren. Problematische Mischungen und eine persönliche Versandentscheidung vorab erkennen."] },
         { heading: "Schätzungen als Spannen führen", paragraphs: ["Verkäufergewicht ist nicht Packgewicht. Niedrig- und Hochwert plus Zeitpuffer für Versand, Eingang, QC, Packen, Export und Zoll verwenden."], bullets: ["Gewichtsspanne", "Wahrscheinliche Verpackung", "Kompatibilität", "Eigener Versandtermin"] },
         { heading: "Ist- und Volumengewicht verstehen", paragraphs: ["Istgewicht kommt von der Waage, Volumengewicht aus Außenmaßen und Routenformel. Berechnet werden kann der höhere Wert; weniger Verpackung kann Schutz kosten."], bullets: ["Dicht: oft Istgewicht", "Leicht und groß: oft Volumen", "Verpackung ändert beides", "Lagerdaten schlagen Schätzung"] },
@@ -505,7 +506,7 @@ const articleBodyText: Record<
       ],
     },
     {
-      visual: { eyebrow: "BELEGLEITER", title: "Ein nützlicher Bericht zeigt die Quelle jeder Aussage.", caption: "Plattformaussagen beschreiben den Sollprozess, ein Bericht einen Fall, das Konto aktuelle Preise und Fristen.", items: [["Veröffentlichter Service", "Linkkauf, Prüfung, Fotos und 90 Tage."], ["Beobachteter Fall", "Größenabweichung entdeckt und Rückgabe bearbeitet."], ["Noch offen", "Endkosten, Paketergebnis und Wiederholbarkeit."], ["Eigene Prüfung", "Angebot, Belege und Abhilfe vor Zahlung prüfen."]] },
+      visual: { eyebrow: "BELEGLEITER", title: "Ein nützlicher Bericht zeigt die Quelle jeder Aussage.", caption: "Plattformaussagen beschreiben den Sollprozess, ein Bericht einen Fall, das Konto aktuelle Preise und Fristen.", items: [["Veröffentlichter Service", "Linkkauf, Prüfung, Fotos und 180 Tage."], ["Beobachteter Fall", "Größenabweichung entdeckt und Rückgabe bearbeitet."], ["Noch offen", "Endkosten, Paketergebnis und Wiederholbarkeit."], ["Eigene Prüfung", "Angebot, Belege und Abhilfe vor Zahlung prüfen."]] },
       sources: [["Öffentliche LoloBuy-Website", "Primärquelle zu Einkauf, Prüfung, Fotos und Lagerung."], ["Vorläufiger unabhängiger Bericht", "Erfahrung mit Schuhen, Taschen, QC, Support und Größenabweichung."], ["Community-Bestellleitfaden", "Öffentliche Prozessbeschreibung zum Vergleich."]],
       intro: ["Junge Dienste sammeln Werbung früher als vollständige unabhängige Bestellnachweise. Bei LoloBuy ist das Modell sichtbar, die überprüfbare Berichtsbasis aber noch klein.", "Diese Analyse trennt getestete Einkauf- und Lagerphasen von noch nicht abgeschlossenen Versandphasen."],
       sections: [
@@ -525,12 +526,12 @@ const articleBodyText: Record<
   fr: [
     {
       visual: { eyebrow: "RÈGLE DES QUATRE SOURCES", title: "Une décision, quatre sources différentes.", caption: "Le catalogue lance la recherche ; la fiche actuelle, le QC et le colis emballé prennent le relais.", items: [["Catalogue", "Trouver une idée et comparer les catégories."], ["Fiche actuelle", "Confirmer vendeur, option, prix et description."], ["QC d'entrepôt", "Inspecter l'article réellement reçu."], ["Colis emballé", "Choisir selon poids, dimensions et admissibilité."]] },
-      sources: [["Site public LoloBuy", "Déclarations sur achat, inspection, photos et 90 jours de stockage."], ["Guide communautaire LoloBuy", "Aperçu public des étapes de commande."]],
+      sources: [["Site public LoloBuy", "Déclarations sur achat, inspection, photos et 180 jours de stockage."], ["Guide communautaire LoloBuy", "Aperçu public des étapes de commande."]],
       intro: ["Un spreadsheet utile réduit le trajet entre une idée et une fiche évaluable. Il ne remplace pas la vérification du vendeur, du prix, des options et des restrictions.", "Ce guide sépare catalogue, fiche actuelle, preuves QC et décision finale d'expédition."],
       sections: [
         { heading: "Commencer par l'intention, pas par un flux infini", paragraphs: ["Définissez catégorie, usage, matière, mesures, couleurs et budget avant d'ouvrir de nombreux liens. Comparez deux ou trois candidats."], bullets: ["Type et usage", "Mesures nécessaires", "Prix article et coût total séparés", "Plusieurs candidats"] },
         { heading: "Traiter chaque entrée comme une piste", paragraphs: ["Le vendeur contrôle images, stock, variantes, prix et texte. Ouvrez la fiche actuelle, sélectionnez l'option exacte et comparez les mesures."] },
-        { heading: "Connaître les étapes confirmées par LoloBuy", paragraphs: ["La page publique décrit commande par lien, inspection, photos et 90 jours de stockage. Tarifs permanents, délais garantis et nombre universel de photos restent à vérifier dans le compte."] },
+        { heading: "Connaître les étapes confirmées par LoloBuy", paragraphs: ["La page publique décrit commande par lien, inspection, photos et 180 jours de stockage. Tarifs permanents, délais garantis et nombre universel de photos restent à vérifier dans le compte."] },
         { heading: "Transformer le lien en note de commande", paragraphs: ["Conservez URL, date, couleur, taille, quantité, texte original de l'option, tableau et prix. Une note précise réduit l'ambiguïté."], bullets: ["URL et date", "Option exacte", "Mesures clés", "Prix et livraison chinoise", "Détail indispensable"] },
         { heading: "Se méfier des affirmations sans preuve", paragraphs: ["« Vérifié », « moins cher » ou « mis à jour chaque jour » exigent des preuves. Une présence au catalogue ne prouve ni fiabilité, ni authenticité, ni coût final."] },
         { heading: "Séparer photos vendeur et photos QC", paragraphs: ["Les premières présentent l'offre ; les secondes documentent l'article reçu. Vérifiez identité et variante avant construction et dommages."] },
@@ -559,8 +560,8 @@ const articleBodyText: Record<
     },
     {
       visual: { eyebrow: "PILE DU COÛT FINAL", title: "Le prix produit n'est que la première ligne.", caption: "Séparez estimations et frais confirmés. Le choix international devient réel avec les données du colis.", items: [["Produit", "Variante choisie au prix actuel."], ["Coût en Chine", "Livraison locale et frais affichés."], ["Colis", "Emballage, poids, dimensions et règles."], ["Destination", "Fret international, taxes et douane."]] },
-      sources: [["Site public LoloBuy", "90 jours de stockage gratuit et services d'entrepôt."], ["Guide communautaire", "Consolidation, route, paiement international et suivi."]],
-      intro: ["Regrouper plusieurs articles ne garantit pas un coût inférieur. La consolidation peut économiser des frais de base, mais volume, restrictions et calendrier comptent.", "Les 90 jours annoncés sont une marge de planification, pas une invitation à attendre le dernier jour."],
+      sources: [["Site public LoloBuy", "180 jours de stockage gratuit et services d'entrepôt."], ["Guide communautaire", "Consolidation, route, paiement international et suivi."]],
+      intro: ["Regrouper plusieurs articles ne garantit pas un coût inférieur. La consolidation peut économiser des frais de base, mais volume, restrictions et calendrier comptent.", "Les 180 jours annoncés sont une marge de planification, pas une invitation à attendre le dernier jour."],
       sections: [
         { heading: "Partir de ce que LoloBuy publie", paragraphs: ["Les sources publiques soutiennent achat assisté, inspection, photos, stockage et consolidation ultérieure. Elles ne créent pas de tarif permanent pour votre colis."] },
         { heading: "Construire d'abord le colis sur papier", paragraphs: ["Listez poids, dimensions, matière et protection. Repérez les mélanges difficiles et décidez ce qui peut attendre."] },
@@ -576,7 +577,7 @@ const articleBodyText: Record<
       ],
     },
     {
-      visual: { eyebrow: "ÉCHELLE DES PREUVES", title: "Un avis utile montre la source de chaque affirmation.", caption: "La plateforme décrit le service prévu, un témoignage documente un cas et le compte actuel contrôle prix et délais.", items: [["Service publié", "Achat par lien, inspection, photos et 90 jours."], ["Cas observé", "Écart de taille détecté et retour traité."], ["Encore inconnu", "Coût final, résultat du colis et régularité."], ["Votre contrôle", "Vérifier devis, preuves et recours avant paiement."]] },
+      visual: { eyebrow: "ÉCHELLE DES PREUVES", title: "Un avis utile montre la source de chaque affirmation.", caption: "La plateforme décrit le service prévu, un témoignage documente un cas et le compte actuel contrôle prix et délais.", items: [["Service publié", "Achat par lien, inspection, photos et 180 jours."], ["Cas observé", "Écart de taille détecté et retour traité."], ["Encore inconnu", "Coût final, résultat du colis et régularité."], ["Votre contrôle", "Vérifier devis, preuves et recours avant paiement."]] },
       sources: [["Site public LoloBuy", "Source primaire pour achat, inspection, photos et stockage."], ["Témoignage préliminaire indépendant", "Chaussures, sacs, QC, support et écart de taille."], ["Guide communautaire", "Processus public utilisé pour comparer le cas."]],
       intro: ["Les jeunes services accumulent la promotion avant les commandes indépendantes complètes. LoloBuy présente un modèle clair, mais peu de témoignages vérifiables.", "Cette analyse distingue les étapes réellement testées de celles qui restent inachevées."],
       sections: [
@@ -596,12 +597,12 @@ const articleBodyText: Record<
   it: [
     {
       visual: { eyebrow: "REGOLA DELLE QUATTRO FONTI", title: "Una decisione, quattro fonti diverse.", caption: "Il catalogo avvia la ricerca; scheda attuale, QC e pacco preparato controllano le fasi successive.", items: [["Catalogo", "Trova un'idea e confronta categorie."], ["Scheda attuale", "Conferma venditore, opzione, prezzo e descrizione."], ["QC di magazzino", "Controlla l'articolo realmente arrivato."], ["Pacco preparato", "Scegli in base a peso, dimensioni e idoneità."]] },
-      sources: [["Sito pubblico LoloBuy", "Dichiarazioni su acquisto, ispezione, foto e 90 giorni di deposito."], ["Guida community LoloBuy", "Panoramica pubblica delle fasi dell'ordine."]],
+      sources: [["Sito pubblico LoloBuy", "Dichiarazioni su acquisto, ispezione, foto e 180 giorni di deposito."], ["Guida community LoloBuy", "Panoramica pubblica delle fasi dell'ordine."]],
       intro: ["Uno spreadsheet utile accorcia il percorso da un'idea a una scheda valutabile. Non sostituisce controllo di venditore, prezzo, opzioni e restrizioni.", "Questa guida separa catalogo, scheda attuale, prove QC e decisione finale sul pacco."],
       sections: [
         { heading: "Parti dall'intento, non da un feed infinito", paragraphs: ["Definisci categoria, uso, materiale, misure, colori e budget prima di aprire molti link. Confronta due o tre candidati."], bullets: ["Tipo e uso", "Misure necessarie", "Prezzo articolo e costo totale separati", "Più candidati"] },
         { heading: "Tratta ogni voce come una pista", paragraphs: ["Il venditore controlla immagini, stock, varianti, prezzo e testo. Apri la scheda attuale, scegli l'opzione esatta e confronta le misure."] },
-        { heading: "Conosci ciò che LoloBuy conferma pubblicamente", paragraphs: ["La pagina descrive ordine tramite link, ispezione, foto e 90 giorni di deposito. Tariffe permanenti, tempi garantiti e quantità universali vanno verificati nell'account."] },
+        { heading: "Conosci ciò che LoloBuy conferma pubblicamente", paragraphs: ["La pagina descrive ordine tramite link, ispezione, foto e 180 giorni di deposito. Tariffe permanenti, tempi garantiti e quantità universali vanno verificati nell'account."] },
         { heading: "Trasforma il link in una nota d'ordine", paragraphs: ["Salva URL, data, colore, taglia, quantità, testo originale, tabella e prezzo. Una nota precisa riduce ambiguità."], bullets: ["URL e data", "Opzione esatta", "Misure chiave", "Prezzo e consegna cinese", "Dettaglio indispensabile"] },
         { heading: "Diffida delle affermazioni senza prove", paragraphs: ["“Verificato”, “più economico” o “aggiornato ogni giorno” richiedono prove. La presenza nel catalogo non dimostra affidabilità, autenticità o costo finale."] },
         { heading: "Separa foto venditore e foto QC", paragraphs: ["Le prime presentano l'offerta; le seconde documentano l'articolo ricevuto. Controlla identità e variante prima di costruzione e danni."] },
@@ -630,8 +631,8 @@ const articleBodyText: Record<
     },
     {
       visual: { eyebrow: "STRATI DEL COSTO FINALE", title: "Il prezzo prodotto è solo la prima riga.", caption: "Separa stime e costi confermati. La scelta internazionale diventa reale con i dati del pacco.", items: [["Prodotto", "Variante scelta al prezzo attuale."], ["Costo in Cina", "Consegna nazionale e addebiti mostrati."], ["Pacco", "Imballaggio, peso, dimensioni e regole."], ["Destinazione", "Trasporto internazionale, tasse e dogana."]] },
-      sources: [["Sito pubblico LoloBuy", "90 giorni di deposito gratuito e servizi di magazzino."], ["Guida community", "Consolidamento, rotta, pagamento internazionale e tracking."]],
-      intro: ["Raggruppare più articoli non garantisce un costo minore. Il consolidamento può ridurre spese base, ma volume, restrizioni e tempi contano.", "I 90 giorni pubblicizzati sono una finestra di pianificazione, non un invito ad aspettare l'ultimo giorno."],
+      sources: [["Sito pubblico LoloBuy", "180 giorni di deposito gratuito e servizi di magazzino."], ["Guida community", "Consolidamento, rotta, pagamento internazionale e tracking."]],
+      intro: ["Raggruppare più articoli non garantisce un costo minore. Il consolidamento può ridurre spese base, ma volume, restrizioni e tempi contano.", "I 180 giorni pubblicizzati sono una finestra di pianificazione, non un invito ad aspettare l'ultimo giorno."],
       sections: [
         { heading: "Parti da ciò che LoloBuy pubblica", paragraphs: ["Le fonti pubbliche supportano acquisto assistito, ispezione, foto, deposito e successivo consolidamento. Non creano un listino permanente per il tuo pacco."] },
         { heading: "Costruisci prima il pacco su carta", paragraphs: ["Elenca peso, dimensioni, materiale e protezione. Individua combinazioni difficili e decidi cosa può aspettare."] },
@@ -647,7 +648,7 @@ const articleBodyText: Record<
       ],
     },
     {
-      visual: { eyebrow: "SCALA DELLE PROVE", title: "Una recensione utile mostra la fonte di ogni affermazione.", caption: "La piattaforma descrive il servizio previsto, un resoconto documenta un caso e l'account controlla prezzi e scadenze.", items: [["Servizio pubblicato", "Acquisto tramite link, ispezione, foto e 90 giorni."], ["Caso osservato", "Differenza di taglia individuata e reso gestito."], ["Ancora ignoto", "Costo finale, risultato del pacco e coerenza."], ["Tua verifica", "Controlla preventivo, prove e rimedio prima di pagare."]] },
+      visual: { eyebrow: "SCALA DELLE PROVE", title: "Una recensione utile mostra la fonte di ogni affermazione.", caption: "La piattaforma descrive il servizio previsto, un resoconto documenta un caso e l'account controlla prezzi e scadenze.", items: [["Servizio pubblicato", "Acquisto tramite link, ispezione, foto e 180 giorni."], ["Caso osservato", "Differenza di taglia individuata e reso gestito."], ["Ancora ignoto", "Costo finale, risultato del pacco e coerenza."], ["Tua verifica", "Controlla preventivo, prove e rimedio prima di pagare."]] },
       sources: [["Sito pubblico LoloBuy", "Fonte primaria per acquisto, ispezione, foto e deposito."], ["Resoconto preliminare indipendente", "Scarpe, borse, QC, supporto e differenza di taglia."], ["Guida community", "Processo pubblico usato per confrontare il caso."]],
       intro: ["I servizi giovani raccolgono promozione prima di ordini indipendenti completi. LoloBuy mostra un modello chiaro, ma pochi resoconti verificabili.", "Questa analisi separa le fasi realmente testate da quelle ancora incomplete."],
       sections: [
@@ -695,7 +696,7 @@ const weidianArticleText: Record<
         ],
       },
       sources: [
-        ["Web pública de LoloBuy", "Fuente para pedido por enlace, inspección, fotos y 90 días de almacenamiento."],
+        ["Web pública de LoloBuy", "Fuente para pedido por enlace, inspección, fotos y 180 días de almacenamiento."],
         ["Guía comunitaria identificada de LoloBuy", "Indica copiar enlaces de Weidian y especificar talla, color y cantidad."],
         ["Ejemplo documentado Weidian-LoloBuy", "Muestra una URL Weidian junto a su ficha LoloBuy; es un caso, no una regla permanente."],
         ["Web pública de Weidian", "Fuente primaria del marketplace y sus superficies públicas."],
@@ -710,7 +711,7 @@ const weidianArticleText: Record<
         { heading: "Guarda la oferta exacta", paragraphs: ["Anota vendedor, título, color, talla o versión, cantidad, precio visible, entrega nacional y fecha. Guarda tabla e imágenes decisivas; una promoción o precio inicial puede corresponder a otra variante."], bullets: ["URL y fecha", "Vendedor", "Variante y cantidad", "Precio y entrega china", "Tabla e imágenes"] },
         { heading: "Compara el pedido generado", paragraphs: ["Tras pegar el enlace, compara imagen, título, opción, precio, cantidad y entrega con Weidian. Conserva el texto original de la variante si la traducción pierde información."] },
         { heading: "Separa compra y coste entregado", paragraphs: ["Producto y entrega china aparecen antes que almacenamiento, consolidación y envío internacional. El total final depende del paquete preparado, la ruta y el destino."] },
-        { heading: "Usa el almacén como segunda comparación", paragraphs: ["LoloBuy confirma inspección, fotos y 90 días de almacenamiento. Compara artículo, color, talla, cantidad y piezas con tu registro; la web no fija una cantidad universal de fotos o una devolución única."] },
+        { heading: "Usa el almacén como segunda comparación", paragraphs: ["LoloBuy confirma inspección, fotos y 180 días de almacenamiento. Compara artículo, color, talla, cantidad y piezas con tu registro; la web no fija una cantidad universal de fotos o una devolución única."] },
         { heading: "Adapta el QC a la categoría", paragraphs: ["En calzado revisa par y talla; en ropa, medidas, diseño y costuras; en bolsos, dimensiones, forma, correas y cierres. Las fotos no prueban composición, duración o autenticidad."] },
         { heading: "Describe una opción incorrecta con pruebas", paragraphs: ["Indica opción pedida, detalle recibido, foto y resultado solicitado. Revisa pronto y usa la acción actual antes del envío; no prometas una devolución gratuita universal."] },
         { heading: "Conserva pruebas si el enlace cambia", paragraphs: ["Guarda URL, capturas, texto, precio y pedido. Una página nueva del vendedor es otra ficha y debe comprobarse desde cero."] },
@@ -740,7 +741,7 @@ const weidianArticleText: Record<
         ],
       },
       sources: [
-        ["LoloBuy-Website", "Primärquelle für Linkbestellung, Prüfung, Fotos und 90 Tage Lagerung."],
+        ["LoloBuy-Website", "Primärquelle für Linkbestellung, Prüfung, Fotos und 180 Tage Lagerung."],
         ["Identifizierter LoloBuy-Community-Leitfaden", "Nennt Weidian-Links sowie Größe, Farbe und Menge."],
         ["Dokumentiertes Weidian-LoloBuy-Beispiel", "Zeigt Quell- und LoloBuy-Link als Einzelfall, nicht als Dauerregel."],
         ["Weidian-Website", "Primärquelle für Marktplatz und öffentliche Produktseiten."],
@@ -755,7 +756,7 @@ const weidianArticleText: Record<
         { heading: "Genaue Verkäuferauswahl sichern", paragraphs: ["Shop, Titel, Farbe, Größe oder Version, Menge, sichtbaren Preis, China-Versand und Datum notieren. Tabelle und entscheidende Bilder speichern."], bullets: ["URL und Datum", "Verkäufer", "Variante und Menge", "Preis und China-Versand", "Tabelle und Bilder"] },
         { heading: "Erzeugten Auftrag Zeile für Zeile vergleichen", paragraphs: ["Nach dem Einfügen Bild, Titel, Auswahl, Preis, Menge und Versand mit Weidian abgleichen. Originalen Optionstext erhalten, wenn die Übersetzung Details verliert."] },
         { heading: "Erste Zahlung und Lieferkosten trennen", paragraphs: ["Produkt und Inlandsversand liegen vor Lagerung, Bündelung und Auslandsfracht. Der Endbetrag hängt von Paket, Route und Ziel ab."] },
-        { heading: "Lagerankunft als zweite Prüfung nutzen", paragraphs: ["LoloBuy bestätigt Prüfung, Fotos und 90 Tage Lagerung. Artikel, Farbe, Größe, Menge und Teile abgleichen; eine allgemeine Fotozahl oder Rückgaberegel wird öffentlich nicht genannt."] },
+        { heading: "Lagerankunft als zweite Prüfung nutzen", paragraphs: ["LoloBuy bestätigt Prüfung, Fotos und 180 Tage Lagerung. Artikel, Farbe, Größe, Menge und Teile abgleichen; eine allgemeine Fotozahl oder Rückgaberegel wird öffentlich nicht genannt."] },
         { heading: "QC an die Kategorie anpassen", paragraphs: ["Bei Schuhen Paar und Größe, bei Kleidung Maße und Verarbeitung, bei Taschen Form, Gurte und Verschlüsse prüfen. Fotos beweisen keine Zusammensetzung, Haltbarkeit oder Echtheit."] },
         { heading: "Falsche Option konkret belegen", paragraphs: ["Bestellte Option, erhaltenes Detail, Foto und gewünschtes Ergebnis nennen. Schnell und vor Auslandsversand handeln, ohne kostenlose Rückgabe zu versprechen."] },
         { heading: "Belege bei geändertem Link bewahren", paragraphs: ["URL, Screenshots, Option, Preis und Auftrag zusammenhalten. Eine neue Verkäuferseite ist ein neues Angebot und erneut zu prüfen."] },
@@ -785,7 +786,7 @@ const weidianArticleText: Record<
         ],
       },
       sources: [
-        ["Site public LoloBuy", "Source pour commande par lien, inspection, photos et 90 jours de stockage."],
+        ["Site public LoloBuy", "Source pour commande par lien, inspection, photos et 180 jours de stockage."],
         ["Guide communautaire LoloBuy identifié", "Indique les liens Weidian et les détails taille, couleur et quantité."],
         ["Exemple Weidian-LoloBuy documenté", "Montre les deux URL comme un cas observable, pas une règle permanente."],
         ["Site public Weidian", "Source primaire du marketplace et de ses pages publiques."],
@@ -800,7 +801,7 @@ const weidianArticleText: Record<
         { heading: "Sauvegarder l'offre exacte", paragraphs: ["Notez vendeur, titre, couleur, taille ou version, quantité, prix visible, livraison chinoise et date. Gardez tableau et images décisives."], bullets: ["URL et date", "Vendeur", "Variante et quantité", "Prix et livraison chinoise", "Tableau et images"] },
         { heading: "Comparer la commande générée", paragraphs: ["Après collage, comparez image, titre, option, prix, quantité et livraison avec Weidian. Gardez le texte original si la traduction perd un détail."] },
         { heading: "Séparer premier paiement et coût livré", paragraphs: ["Produit et livraison chinoise précèdent entrepôt, consolidation et fret international. Le total dépend du colis, de la route et du pays."] },
-        { heading: "Utiliser l'entrepôt comme second contrôle", paragraphs: ["LoloBuy confirme inspection, photos et 90 jours de stockage. Comparez article, couleur, taille, quantité et pièces ; aucun nombre universel de photos ou retour unique n'est publié."] },
+        { heading: "Utiliser l'entrepôt comme second contrôle", paragraphs: ["LoloBuy confirme inspection, photos et 180 jours de stockage. Comparez article, couleur, taille, quantité et pièces ; aucun nombre universel de photos ou retour unique n'est publié."] },
         { heading: "Adapter le QC à la catégorie", paragraphs: ["Pour chaussures : paire et taille ; vêtements : mesures et coutures ; sacs : forme, sangles et fermetures. Les photos ne prouvent composition, durée ou authenticité."] },
         { heading: "Documenter précisément une mauvaise option", paragraphs: ["Nommez option commandée, détail reçu, photo et résultat souhaité. Agissez vite avant l'expédition sans promettre un retour gratuit général."] },
         { heading: "Conserver les preuves si le lien change", paragraphs: ["Gardez URL, captures, option, prix et commande. Une nouvelle page vendeur constitue une nouvelle offre à vérifier."] },
@@ -830,7 +831,7 @@ const weidianArticleText: Record<
         ],
       },
       sources: [
-        ["Sito pubblico LoloBuy", "Fonte per ordine tramite link, ispezione, foto e 90 giorni di deposito."],
+        ["Sito pubblico LoloBuy", "Fonte per ordine tramite link, ispezione, foto e 180 giorni di deposito."],
         ["Guida community LoloBuy identificata", "Indica link Weidian e dettagli di taglia, colore e quantità."],
         ["Esempio Weidian-LoloBuy documentato", "Mostra le due URL come un caso, non una regola permanente."],
         ["Sito pubblico Weidian", "Fonte primaria del marketplace e delle pagine pubbliche."],
@@ -845,7 +846,7 @@ const weidianArticleText: Record<
         { heading: "Salva l'offerta esatta", paragraphs: ["Annota venditore, titolo, colore, taglia o versione, quantità, prezzo visibile, consegna cinese e data. Conserva tabella e immagini decisive."], bullets: ["URL e data", "Venditore", "Variante e quantità", "Prezzo e consegna cinese", "Tabella e immagini"] },
         { heading: "Confronta l'ordine generato", paragraphs: ["Dopo aver incollato, confronta immagine, titolo, opzione, prezzo, quantità e consegna con Weidian. Mantieni il testo originale se la traduzione perde dettagli."] },
         { heading: "Separa primo pagamento e costo consegnato", paragraphs: ["Prodotto e consegna cinese precedono magazzino, consolidamento e trasporto internazionale. Il totale dipende da pacco, rotta e destinazione."] },
-        { heading: "Usa il magazzino come secondo controllo", paragraphs: ["LoloBuy conferma ispezione, foto e 90 giorni di deposito. Confronta articolo, colore, taglia, quantità e pezzi; non pubblica un numero universale di foto o un reso unico."] },
+        { heading: "Usa il magazzino come secondo controllo", paragraphs: ["LoloBuy conferma ispezione, foto e 180 giorni di deposito. Confronta articolo, colore, taglia, quantità e pezzi; non pubblica un numero universale di foto o un reso unico."] },
         { heading: "Adatta il QC alla categoria", paragraphs: ["Scarpe: coppia e taglia; abbigliamento: misure e cuciture; borse: forma, cinturini e chiusure. Le foto non provano composizione, durata o autenticità."] },
         { heading: "Documenta l'opzione sbagliata", paragraphs: ["Indica opzione ordinata, dettaglio ricevuto, foto e risultato desiderato. Agisci presto prima dell'invio senza promettere un reso gratuito generale."] },
         { heading: "Conserva le prove se il link cambia", paragraphs: ["Tieni insieme URL, screenshot, opzione, prezzo e ordine. Una nuova pagina del venditore è una nuova offerta da verificare."] },
@@ -884,7 +885,7 @@ const qcMismatchArticleText: Record<
         ],
       },
       sources: [
-        ["Web pública de LoloBuy — comprobada el 29 de julio de 2026", "Fuente primaria para pedido por enlace, inspección, fotos y 90 días de almacenamiento."],
+        ["Web pública de LoloBuy — comprobada el 29 de julio de 2026", "Fuente primaria para pedido por enlace, inspección, fotos y 180 días de almacenamiento."],
         ["Guía comunitaria LoloBuy identificada — comprobada el 29 de julio de 2026", "Contexto fechado sobre enlace, opciones y QC; no se trata como política."],
         ["Informe preliminar independiente — comprobado el 29 de julio de 2026", "Un comprador dijo que se detectaron dos tallas distintas y se gestionó una devolución; incluía enlace de referido y no un paquete completo."],
         ["Marco editorial de Lolobuy Sheet", "La tabla y el formato de mensaje son análisis independientes, no política de LoloBuy."],
@@ -902,7 +903,7 @@ const qcMismatchArticleText: Record<
         { heading: "Elige la acción por la prueba, no por el enfado", paragraphs: ["Usa aclaración si el registro puede ser correcto pero confuso; pide una vista si resolverá la duda; considera cambio o devolución si hay una diferencia material y la acción existe.", "Una variación estética menor y una talla incorrecta no tienen el mismo peso. Define tu umbral antes de escribir a soporte."] },
         { heading: "Redacta una solicitud que soporte pueda comprobar", paragraphs: ["Empieza por artículo, prueba y resultado: «El pedido muestra L; la foto 4 parece mostrar M. Confirmen la etiqueta y, si es M, indiquen la acción disponible».", "No prometas una devolución gratuita ni uses un plazo no publicado. Guarda cualquier respuesta sobre fecha, coste o condición del vendedor."] },
         { heading: "Trata el informe público como un caso, no una norma", paragraphs: ["Un informe preliminar de 2026 dijo que LoloBuy detectó dos tallas distintas y gestionó una devolución. Es un caso relevante, no prueba del resultado para todos los vendedores.", "El autor incluyó un enlace de referido y aún no había completado el envío internacional. No extraigas una tasa de éxito o un plazo general."] },
-        { heading: "No envíes internacionalmente con una diferencia material abierta", paragraphs: ["Resuelve un problema que cambiaría tu decisión mientras el pedido conserve una acción de almacén. Añadir el envío complica costes y responsabilidades.", "Los 90 días de almacenamiento no equivalen a 90 días para devolver. Revisa estado y plazo mostrados en ese pedido."] },
+        { heading: "No envíes internacionalmente con una diferencia material abierta", paragraphs: ["Resuelve un problema que cambiaría tu decisión mientras el pedido conserve una acción de almacén. Añadir el envío complica costes y responsabilidades.", "Los 180 días de almacenamiento no equivalen a 180 días para devolver. Revisa estado y plazo mostrados en ese pedido."] },
         { heading: "Cierra el caso con un registro de decisión", paragraphs: ["Anota preocupación, pruebas, comprobación extra, respuesta, coste o condición, acción final y fecha. Si llega un reemplazo, compáralo con la misma opción guardada."] },
       ],
     },
@@ -929,7 +930,7 @@ const qcMismatchArticleText: Record<
         ],
       },
       sources: [
-        ["LoloBuy-Website — geprüft am 29. Juli 2026", "Primärquelle für Linkbestellung, Qualitätsprüfung, Fotos und 90 Tage Lagerung."],
+        ["LoloBuy-Website — geprüft am 29. Juli 2026", "Primärquelle für Linkbestellung, Qualitätsprüfung, Fotos und 180 Tage Lagerung."],
         ["Identifizierter LoloBuy-Community-Leitfaden — geprüft am 29. Juli 2026", "Datierter Kontext zu Link, Auswahl und QC; keine Plattformrichtlinie."],
         ["Unabhängiger vorläufiger Bericht — geprüft am 29. Juli 2026", "Ein Käufer berichtete über verschieden große Schuhe und eine bearbeitete Rückgabe; mit Empfehlungslink und ohne fertiges Paket."],
         ["Redaktioneller Belegrahmen von Lolobuy Sheet", "Vergleich und Nachrichtenformat sind unabhängige Analyse, keine LoloBuy-Regel."],
@@ -947,7 +948,7 @@ const qcMismatchArticleText: Record<
         { heading: "Nächsten Schritt nach Belegen wählen", paragraphs: ["Klärung bei unklarer Oberfläche, gezielte Aufnahme bei einer lösbaren Lücke, Umtausch oder Rückgabeanfrage bei materieller Abweichung und verfügbarer Aktion.", "Kleine kosmetische Abweichung und falsche Größe sind nicht gleich. Eigene Entscheidungsschwelle vor der Nachricht festlegen."] },
         { heading: "Eine prüfbare Supportanfrage schreiben", paragraphs: ["Artikel, Beleg und Wunsch nennen: „Auftrag zeigt L; Bild 4 scheint M zu zeigen. Bitte Etikett bestätigen und verfügbare Aktion nennen.“", "Keine kostenlose Rückgabe oder unbekannte Frist versprechen. Antworten zu Termin, Kosten oder Verkäuferbedingung sichern."] },
         { heading: "Den öffentlichen Bericht als Einzelfall behandeln", paragraphs: ["Ein vorläufiger Bericht von 2026 sagt, LoloBuy habe zwei verschiedene Schuhgrößen erkannt und eine Rückgabe bearbeitet. Das ist relevant, aber keine allgemeine Regel.", "Der Beitrag enthielt einen Empfehlungslink und noch kein abgeschlossenes Auslandspaket. Keine Erfolgsquote oder feste Dauer ableiten."] },
-        { heading: "Bei offener materieller Abweichung nicht international versenden", paragraphs: ["Ein entscheidungsrelevantes Problem klären, solange der Auftrag noch eine Lageraktion zeigt. Versand fügt Kosten und Zuständigkeiten hinzu.", "90 Tage Lagerung bedeuten keine 90 Tage Rückgaberecht. Status und angezeigte Frist dieses Auftrags prüfen."] },
+        { heading: "Bei offener materieller Abweichung nicht international versenden", paragraphs: ["Ein entscheidungsrelevantes Problem klären, solange der Auftrag noch eine Lageraktion zeigt. Versand fügt Kosten und Zuständigkeiten hinzu.", "180 Tage Lagerung bedeuten keine 180 Tage Rückgaberecht. Status und angezeigte Frist dieses Auftrags prüfen."] },
         { heading: "Den Fall mit einem Entscheidungsprotokoll schließen", paragraphs: ["Ausgangsproblem, Belege, Zusatzprüfung, Antwort, Kosten oder Bedingungen, Endaktion und Datum notieren. Ersatz erneut mit derselben Auswahl vergleichen."] },
       ],
     },
@@ -974,7 +975,7 @@ const qcMismatchArticleText: Record<
         ],
       },
       sources: [
-        ["Site public LoloBuy — vérifié le 29 juillet 2026", "Source primaire pour commande par lien, inspection, photos et 90 jours de stockage."],
+        ["Site public LoloBuy — vérifié le 29 juillet 2026", "Source primaire pour commande par lien, inspection, photos et 180 jours de stockage."],
         ["Guide communautaire LoloBuy identifié — vérifié le 29 juillet 2026", "Contexte daté sur le lien, les options et le QC ; pas une politique."],
         ["Témoignage préliminaire indépendant — vérifié le 29 juillet 2026", "Un acheteur rapporte deux pointures différentes et un retour traité ; présence d'un lien de parrainage et absence de colis terminé."],
         ["Cadre éditorial de Lolobuy Sheet", "La comparaison et le format de message sont une analyse indépendante, pas une règle LoloBuy."],
@@ -992,7 +993,7 @@ const qcMismatchArticleText: Record<
         { heading: "Choisir l'action selon les preuves", paragraphs: ["Clarification si l'interface est ambiguë, photo ciblée si elle tranche, échange ou retour si l'écart matériel est démontré et l'action disponible.", "Une variation esthétique mineure et une mauvaise taille ne se valent pas. Définissez votre seuil avant d'écrire."] },
         { heading: "Rédiger une demande vérifiable par le support", paragraphs: ["Commencez par article, preuve et résultat : « La commande indique L ; la photo 4 semble montrer M. Merci de confirmer et d'indiquer l'action disponible. »", "Ne promettez ni retour gratuit ni délai non publié. Gardez la réponse sur date, coût ou condition vendeur."] },
         { heading: "Traiter le témoignage public comme un cas", paragraphs: ["Un témoignage préliminaire de 2026 dit que LoloBuy a détecté deux pointures différentes et traité un retour. C'est pertinent, mais pas une règle pour tous.", "L'auteur avait un lien de parrainage et aucun colis international achevé. N'en déduisez ni taux de réussite ni durée fixe."] },
-        { heading: "Ne pas expédier avec un écart matériel non résolu", paragraphs: ["Résolvez le problème qui changerait votre décision tant qu'une action d'entrepôt reste disponible. L'envoi ajoute coûts et responsabilités.", "Les 90 jours de stockage ne sont pas 90 jours de droit au retour. Vérifiez le statut et le délai affichés."] },
+        { heading: "Ne pas expédier avec un écart matériel non résolu", paragraphs: ["Résolvez le problème qui changerait votre décision tant qu'une action d'entrepôt reste disponible. L'envoi ajoute coûts et responsabilités.", "Les 180 jours de stockage ne sont pas 180 jours de droit au retour. Vérifiez le statut et le délai affichés."] },
         { heading: "Clore le dossier avec un journal de décision", paragraphs: ["Notez problème, preuves, contrôle, réponse, coût ou condition, action finale et date. Comparez tout remplacement à la même option."] },
       ],
     },
@@ -1019,7 +1020,7 @@ const qcMismatchArticleText: Record<
         ],
       },
       sources: [
-        ["Sito pubblico LoloBuy — verificato il 29 luglio 2026", "Fonte primaria per ordine da link, ispezione, foto e 90 giorni di deposito."],
+        ["Sito pubblico LoloBuy — verificato il 29 luglio 2026", "Fonte primaria per ordine da link, ispezione, foto e 180 giorni di deposito."],
         ["Guida community LoloBuy identificata — verificata il 29 luglio 2026", "Contesto datato su link, opzioni e QC; non una politica."],
         ["Resoconto preliminare indipendente — verificato il 29 luglio 2026", "Un acquirente riferisce due taglie diverse e un reso gestito; era presente un referral e mancava il pacco completato."],
         ["Metodo editoriale Lolobuy Sheet", "Confronto e formato del messaggio sono analisi indipendenti, non regole LoloBuy."],
@@ -1037,21 +1038,35 @@ const qcMismatchArticleText: Record<
         { heading: "Scegli l'azione in base alle prove", paragraphs: ["Chiarimento se l'interfaccia è ambigua, foto mirata se risolve, cambio o reso se la differenza materiale è provata e l'azione disponibile.", "Una piccola variazione estetica non equivale a una taglia sbagliata. Definisci la tua soglia prima del messaggio."] },
         { heading: "Scrivi una richiesta verificabile dal supporto", paragraphs: ["Inizia con articolo, prova e risultato: «L'ordine mostra L; la foto 4 sembra M. Confermate l'etichetta e indicate l'azione disponibile».", "Non promettere reso gratuito o scadenze non pubblicate. Salva la risposta su data, costo o condizione del venditore."] },
         { heading: "Tratta il resoconto pubblico come un caso", paragraphs: ["Un resoconto preliminare del 2026 dice che LoloBuy rilevò due taglie diverse e gestì un reso. È rilevante, ma non una regola generale.", "L'autore aveva un link referral e non aveva completato il pacco internazionale. Non dedurre tasso di successo o durata fissa."] },
-        { heading: "Non spedire con una differenza materiale irrisolta", paragraphs: ["Risolvi il problema che cambierebbe la decisione finché l'ordine mostra un'azione di magazzino. La spedizione aggiunge costi e responsabilità.", "I 90 giorni di deposito non sono 90 giorni di diritto al reso. Controlla stato e scadenza mostrati."] },
+        { heading: "Non spedire con una differenza materiale irrisolta", paragraphs: ["Risolvi il problema che cambierebbe la decisione finché l'ordine mostra un'azione di magazzino. La spedizione aggiunge costi e responsabilità.", "I 180 giorni di deposito non sono 180 giorni di diritto al reso. Controlla stato e scadenza mostrati."] },
         { heading: "Chiudi il caso con un registro decisionale", paragraphs: ["Annota problema, prove, controllo extra, risposta, costo o condizione, azione finale e data. Confronta il sostituto con la stessa opzione."] },
       ],
     },
   },
 };
 
+const storageRevision: Record<Locale, string> = {
+  en: "Storage duration rechecked October 3, 2026: the public homepage now advertises 180 days; each order’s current terms apply.",
+  fr: "Durée de stockage revérifiée le 3 octobre 2026 : le site annonce 180 jours ; vérifiez les conditions de chaque commande.",
+  es: "Almacenaje revisado el 3 de octubre de 2026: la web anuncia 180 días; consulta las condiciones de cada pedido.",
+  de: "Lagerdauer am 3. Oktober 2026 erneut geprüft: öffentlich werden 180 Tage genannt; die aktuellen Auftragsbedingungen gelten.",
+  it: "Deposito ricontrollato il 3 ottobre 2026: il sito indica 180 giorni; valgono i termini attuali di ogni ordine.",
+};
+function withStorageRevision(article: Article, locale: Locale): Article {
+  if (article.published === "2026-10-03" || !JSON.stringify(article).includes("180")) return article;
+  return { ...article, updated: "2026-10-03", factCheckLine: `${article.factCheckLine} ${storageRevision[locale]}` };
+}
+
 export function getLocalizedArticles(locale: Locale): Article[] {
   if (locale === "en") {
-    return [...articles].sort((a, b) => b.published.localeCompare(a.published));
+    return [...articles].map((article) => withStorageRevision(article, locale)).sort((a, b) => b.published.localeCompare(a.published));
   }
 
   return articles
     .filter((article) => !englishOnlyArticleSlugs.has(article.slug))
     .map((article, index) => {
+    const octoberEdition = octoberArticleLocales[locale][article.slug];
+    if (octoberEdition) return octoberEdition;
     const translatedWeidian =
       article.slug === "lolobuy-weidian-link-guide"
         ? weidianArticleText[locale]
@@ -1137,5 +1152,6 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       sections: body.sections,
     };
     })
+    .map((article) => withStorageRevision(article, locale))
     .sort((a, b) => b.published.localeCompare(a.published));
 }

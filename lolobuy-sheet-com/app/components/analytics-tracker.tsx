@@ -75,10 +75,11 @@ export default function AnalyticsTracker() {
 
       try {
         const destination = new URL(link.href);
-        if (destination.hostname === "www.cnbuycha.com") {
+        if (["www.cnbuycha.com", "cnbuycha.com"].includes(destination.hostname)) {
           sendEvent("outbound_main_site", {
             destination_path: `${destination.pathname}${destination.search}`.slice(0, 180),
             source_path: window.location.pathname,
+            placement: link.closest(".article-product-evidence, .article-section-links") ? "article" : "directory",
           });
         }
       } catch {}

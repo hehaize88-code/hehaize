@@ -3,6 +3,7 @@ import HomeClient from "./home-client";
 import JsonLd from "./components/json-ld";
 import { homeCopy, normalizeLocale, type Locale } from "./i18n";
 import { absoluteLocalizedUrl, localizedMetadata } from "./seo";
+import { getLocalizedArticles } from "./localized-data";
 
 const homeMetadataCopy: Record<
   Locale,
@@ -57,10 +58,14 @@ export default async function Home({
   const params = await searchParams;
   const locale = normalizeLocale(params.lang);
   const copy = homeCopy[locale];
+  const latestArticles = getLocalizedArticles(locale).slice(0, 4).map(
+    ({ slug, shortTitle, description, eyebrow, updated, readingTime }) =>
+      ({ slug, shortTitle, description, eyebrow, updated, readingTime }),
+  );
 
   return (
     <>
-      <HomeClient locale={locale} />
+      <HomeClient locale={locale} latestArticles={latestArticles} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

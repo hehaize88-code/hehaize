@@ -9,6 +9,11 @@ export type ArticleTopicMapEntry = {
 };
 
 export const articleTopicMap: ArticleTopicMapEntry[] = [
+  { url: "/articles/lolobuy-winter-finds-2026", primaryQuery: "lolobuy winter finds", relatedTerms: ["lolobuy hoodie finds", "lolobuy jacket finds", "winter spreadsheet"], intent: "commercial investigation", angle: "Compare four verified catalog records by purpose, measurement evidence and delivered budget.", evidence: ["CNBuyCha records 3370, 3413, 3374, 3312 checked 2026-10-03"], internalLinkRole: "Seasonal discovery to QC and haul budget." },
+  { url: "/articles/lolobuy-finds-under-30", primaryQuery: "lolobuy finds under 30", relatedTerms: ["cheap lolobuy finds", "budget lolobuy haul", "lolobuy spreadsheet"], intent: "commercial investigation", angle: "Three actual item prices below $30 with shipping explicitly excluded.", evidence: ["CNBuyCha records 3353, 3295, 3370 checked 2026-10-03"], internalLinkRole: "Budget discovery to product records and complete cost calculation." },
+  { url: "/articles/lolobuy-sneaker-qc-photo-checklist", primaryQuery: "lolobuy sneaker qc", relatedTerms: ["lolobuy qc photos", "sneaker qc checklist", "shoe size measurements"], intent: "informational", angle: "Correct listing identity before using a repeatable warehouse photo checklist.", evidence: ["Current records 3328 and 3355", "Seller images explicitly distinguished from warehouse QC"], internalLinkRole: "Shoe discovery to sizing and mismatch evidence." },
+  { url: "/articles/lolobuy-haul-cost-breakdown", primaryQuery: "lolobuy haul cost", relatedTerms: ["lolobuy shipping cost", "lolobuy haul budget", "total parcel cost"], intent: "informational", angle: "A verified $60.56 item basket plus clearly hypothetical non-product costs and sensitivity analysis.", evidence: ["Three current catalog prices", "Reproducible arithmetic, no invented shipping quote"], internalLinkRole: "Product discovery to parcel planning." },
+
   {
     url: "/articles/lolobuy-spreadsheet-guide",
     primaryQuery: "lolobuy spreadsheet guide",

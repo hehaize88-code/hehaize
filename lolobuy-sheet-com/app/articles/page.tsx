@@ -7,6 +7,8 @@ import { localizedPath, normalizeLocale } from "../i18n";
 import { getLocalizedArticles } from "../localized-data";
 import { articlesIndexCopy, commonPageCopy } from "../page-copy";
 import { localizedMetadata } from "../seo";
+import { absoluteLocalizedUrl } from "../seo";
+import JsonLd from "../components/json-ld";
 
 export async function generateMetadata({
   searchParams,
@@ -61,6 +63,22 @@ export default async function ArticlesPage({
         <p>{copy.policyText}</p>
       </section>
       <SiteFooter locale={locale} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: copy.title,
+        url: absoluteLocalizedUrl("/articles", locale),
+        inLanguage: locale,
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: localizedArticles.length,
+          itemListElement: localizedArticles.map((article, index) => ({
+            "@type": "ListItem", position: index + 1,
+            name: article.title,
+            url: absoluteLocalizedUrl(`/articles/${article.slug}`, locale),
+          })),
+        },
+      }} />
     </main>
   );
 }

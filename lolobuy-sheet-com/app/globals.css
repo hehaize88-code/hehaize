@@ -5144,3 +5144,30 @@ img {
     font-size: clamp(2.35rem, 11vw, 3.2rem);
   }
 }
+
+/* Homepage previews: four latest guides, with full articles on separate routes. */
+.home-page .article-card-compact { min-height: 0; }
+.home-page .article-card-compact .article-card-content { padding: 0.8rem; }
+.home-page .article-card-compact .article-card-media { aspect-ratio: 2 / 1; min-height: 0; }
+.home-page .article-card-compact .article-card-media img { width: 100%; height: 100%; object-fit: cover; }
+.home-page .article-card-compact h2 { font-size: 1.1rem; line-height: 1.25; overflow-wrap: anywhere; }
+.home-page .article-card-compact .article-card-content > span { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: 0.875rem; line-height: 1.4; margin-top: 0.45rem; }
+.home-page .article-card-compact .text-link { min-height: 44px; margin-top: 0.25rem; font-size: 0.875rem; }
+.article-table-scroll { overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--line); }
+.article-table-scroll table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.article-table-scroll th, .article-table-scroll td { padding: 0.85rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.article-table-scroll th { background: #eee9df; }
+.article-section-links { display: flex; flex-wrap: wrap; gap: 0.7rem 1.4rem; margin: 1rem 0 2rem; }
+.article-section-links a { text-decoration: underline; text-underline-offset: 0.2em; }
+.article-product-evidence { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin: 1.5rem 0; }
+.article-product-evidence a { display: flex; flex-direction: column; gap: 0.65rem; border: 1px solid var(--line); padding: 0.7rem; }
+.article-product-evidence img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #fff; }
+.article-product-evidence strong { font-size: 0.95rem; line-height: 1.35; }
+.article-product-evidence span { font-size: 0.875rem; color: var(--muted); }
+@media (max-width: 780px) {
+  .home-page .home-articles .article-card-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.6rem; }
+  .home-page .article-card-compact .article-card-content { padding: 0.6rem; }
+  .home-page .article-card-compact h2 { font-size: 1rem; }
+  .home-page .article-card-compact .article-card-content > span { font-size: 0.875rem; }
+  .article-product-evidence { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.6rem; }
+}

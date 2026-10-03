@@ -38,7 +38,7 @@ export const trackingArticleLocales: Record<
       ],
     },
     sources: [
-      { label: "Web e interfaz de paquetes de LoloBuy — comprobadas el 2 de agosto de 2026", note: "Fuente primaria para pedido, QC, fotos, 90 días de almacenamiento y la indicación de vigilar el tracking y contactar ante una actualización anómala." },
+      { label: "Web e interfaz de paquetes de LoloBuy — comprobadas el 2 de agosto de 2026", note: "Fuente primaria para pedido, QC, fotos, 180 días de almacenamiento y la indicación de vigilar el tracking y contactar ante una actualización anómala." },
       { label: "FAQ de tracking de DHL eCommerce — comprobada el 2 de agosto de 2026", note: "Pruebas específicas del transportista sobre hitos, traspasos, aduanas, incidencias y la posible investigación del remitente; no es un plazo de LoloBuy." },
       { label: "USPS Tracking: The Basics — comprobado el 2 de agosto de 2026", note: "Guía estadounidense que explica que las alertas necesitan un evento nuevo; conviene revisar el registro del transportista." },
       { label: "UPS Tracking Support — comprobado el 2 de agosto de 2026", note: "Guía que separa estados, aduanas, cambios de entrega y reclamaciones según el envío." },
@@ -79,7 +79,7 @@ export const trackingArticleLocales: Record<
       ],
     },
     sources: [
-      { label: "LoloBuy-Website und Paketoberfläche — geprüft am 2. August 2026", note: "Primärquelle für Bestellung, QC, Fotos, 90 Tage Lagerung sowie den Hinweis, Tracking zu beobachten und bei Auffälligkeiten Kontakt aufzunehmen." },
+      { label: "LoloBuy-Website und Paketoberfläche — geprüft am 2. August 2026", note: "Primärquelle für Bestellung, QC, Fotos, 180 Tage Lagerung sowie den Hinweis, Tracking zu beobachten und bei Auffälligkeiten Kontakt aufzunehmen." },
       { label: "DHL-eCommerce-Tracking-FAQ — geprüft am 2. August 2026", note: "Carrier-spezifische Hinweise zu Meilensteinen, Übergaben, Zoll, Störungen und Nachforschungen des Absenders; kein LoloBuy-Zeitplan." },
       { label: "USPS Tracking: The Basics — geprüft am 2. August 2026", note: "US-Hinweis, dass Benachrichtigungen ein neues Tracking-Ereignis voraussetzen." },
       { label: "UPS Tracking Support — geprüft am 2. August 2026", note: "Carrier-Hilfe zu Status, Zoll, Zustelländerungen und Ansprüchen." },
@@ -120,7 +120,7 @@ export const trackingArticleLocales: Record<
       ],
     },
     sources: [
-      { label: "Site et interface colis LoloBuy — vérifiés le 2 août 2026", note: "Source primaire pour commande, QC, photos, 90 jours de stockage et consigne de surveiller le suivi puis contacter en cas d'anomalie." },
+      { label: "Site et interface colis LoloBuy — vérifiés le 2 août 2026", note: "Source primaire pour commande, QC, photos, 180 jours de stockage et consigne de surveiller le suivi puis contacter en cas d'anomalie." },
       { label: "FAQ de suivi DHL eCommerce — vérifiée le 2 août 2026", note: "Éléments propres au transporteur sur jalons, relais, douane, perturbations et enquête par l'expéditeur ; ce n'est pas un délai LoloBuy." },
       { label: "USPS Tracking: The Basics — vérifié le 2 août 2026", note: "Guide américain indiquant qu'une notification suppose un nouvel événement de suivi." },
       { label: "UPS Tracking Support — vérifié le 2 août 2026", note: "Guide transporteur distinguant statuts, douane, modification et réclamation." },
@@ -161,7 +161,7 @@ export const trackingArticleLocales: Record<
       ],
     },
     sources: [
-      { label: "Sito e interfaccia pacchi LoloBuy — controllati il 2 agosto 2026", note: "Fonte primaria per ordine, QC, foto, 90 giorni di deposito e indicazione di seguire il pacco e contattare il servizio per aggiornamenti anomali." },
+      { label: "Sito e interfaccia pacchi LoloBuy — controllati il 2 agosto 2026", note: "Fonte primaria per ordine, QC, foto, 180 giorni di deposito e indicazione di seguire il pacco e contattare il servizio per aggiornamenti anomali." },
       { label: "FAQ tracking DHL eCommerce — controllata il 2 agosto 2026", note: "Informazioni del vettore su tappe, passaggi, dogana, disservizi e indagine del mittente; non è una tempistica LoloBuy." },
       { label: "USPS Tracking: The Basics — controllato il 2 agosto 2026", note: "Guida USA secondo cui una notifica richiede un nuovo evento di tracking." },
       { label: "UPS Tracking Support — controllato il 2 agosto 2026", note: "Guida del vettore che separa stati, dogana, modifiche di consegna e reclami." },

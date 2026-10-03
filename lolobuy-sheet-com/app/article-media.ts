@@ -1,4 +1,9 @@
 const articleMedia = {
+  "lolobuy-winter-finds-2026": { src: "/product-finds/verified-3374-1200.webp", width: 1076, height: 1076 },
+  "lolobuy-finds-under-30": { src: "/product-finds/verified-3353-1200.webp", width: 1080, height: 1080 },
+  "lolobuy-sneaker-qc-photo-checklist": { src: "/product-finds/verified-3328-1200.webp", width: 800, height: 800 },
+  "lolobuy-haul-cost-breakdown": { src: "/product-finds/verified-3295-1200.webp", width: 800, height: 800 },
+
   "lolobuy-spreadsheet-guide": {
     src: "/articles/lolobuy-spreadsheet-guide.webp",
     width: 1200,

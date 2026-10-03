@@ -50,7 +50,7 @@ export default async function ShippingGuidePage({
 
       <section className="shipping-fact">
         <div>
-          <span>90</span>
+          <span>180</span>
           <b>{copy.days}</b>
         </div>
         <p>{copy.storage}</p>
@@ -105,7 +105,9 @@ export default async function ShippingGuidePage({
           headline: copy.title,
           description: copy.intro,
           datePublished: "2026-07-26",
-          dateModified: "2026-07-26",
+          dateModified: "2026-10-03",
+          image: "https://lolobuy-sheet.com/articles/plan-china-shopping-haul.webp",
+          mainEntityOfPage: `https://lolobuy-sheet.com${localizedPath("/guides/shipping", locale)}`,
           author: { "@type": "Organization", name: "Lolobuy Sheet" },
         }}
       />
