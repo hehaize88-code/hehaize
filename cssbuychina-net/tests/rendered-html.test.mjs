@@ -86,7 +86,7 @@ test("renders all priority warehouse and shipping articles with article metadata
     assert.ok(tagWith(html, "link", "rel", "canonical").includes(`href="${url}"`));
     assert.ok(tagWith(html, "meta", "property", "og:type").includes('content="article"'));
     assert.ok(html.includes('"datePublished":"2026-09-14"'));
-    assert.match(html, /Research basis · checked[\s\S]{0,40}September 14, 2026/);
+    assert.match(html, /Research basis · checked[\s\S]{0,40}October 3, 2026/);
   }
 });
 
@@ -216,14 +216,14 @@ test("renders localized home pages with consistent canonicals and metadata", asy
 test("search forms submit directly to the matching main-store results", async () => {
   for (const path of ["/", "/pt-br", "/de", "/es", "/products", "/de/products"]) {
     const html = await fetchHtml(path);
-    assert.ok(html.includes('action="https://www.cnbuycha.com/AllProducts/"'));
+    assert.ok(html.includes('action="https://www.cnbuycha.com/search.html"'));
     assert.ok(html.includes('method="get"'));
-    assert.ok(html.includes('name="q"'));
+    assert.ok(html.includes('name="keywords"'));
   }
 
   const homeHtml = await fetchHtml("/");
   assert.ok(homeHtml.includes('"@type":"SearchAction"'));
-  assert.ok(homeHtml.includes('"target":"https://www.cnbuycha.com/AllProducts/?q={search_term_string}"'));
+  assert.ok(homeHtml.includes('"target":"https://www.cnbuycha.com/search.html?channelid=2&keywords={search_term_string}"'));
 });
 
 test("renders all 30 product detail pages with current main-store shopping links", async () => {
@@ -272,17 +272,17 @@ test("publishes CTR-focused catalog metadata and analytics hooks", async () => {
   assert.ok(productsHtml.includes("PRODUCT ROUTES REVIEWED SEPTEMBER 1, 2026"));
   assert.ok(productsHtml.includes('data-track-event="product_outbound_click"'));
   assert.ok(categoriesHtml.includes('data-track-event="category_outbound_click"'));
-  assert.ok(articlesHtml.includes("<title>CSSBuy Guides 2026: Warehouse, QC, Shipping &amp; Tracking</title>"));
+  assert.ok(articlesHtml.includes("<title>CSSBuy Guides: Shipping Costs, QC, Tracking &amp; Fees</title>"));
   assert.ok(articlesHtml.includes("CSSBuy Warehouse Status Explained: Arrived and Undergoing Quality Inspection"));
   assert.ok(!articlesHtml.includes("SEO knowledge library"));
 });
 
-test("publishes an indexable robots file and a 91-URL sitemap", async () => {
+test("publishes an indexable robots file and a 170-URL sitemap", async () => {
   const robots = await readFile(new URL("../public/robots.txt", import.meta.url), "utf8");
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   assert.match(robots, /User-agent: \*\s+Allow: \//);
   assert.match(robots, /Sitemap: https:\/\/cssbuychina\.net\/sitemap\.xml/);
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 91);
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 170);
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-warehouse-status-quality-inspection"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-shipping-calculator-actual-vs-volumetric-weight"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-restrictions-brands-batteries-liquids"));
@@ -295,8 +295,8 @@ test("publishes an indexable robots file and a 91-URL sitemap", async () => {
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-jersey-spreadsheet-sizing-customization-qc"));
   assert.ok(sitemap.includes("https://cssbuychina.net/articles/cssbuy-bag-spreadsheet-dimensions-hardware-shipping"));
   assert.equal((sitemap.match(/\/product\//g) ?? []).length, 30);
-  assert.ok(sitemap.includes("<loc>https://cssbuychina.net/product/3402</loc><lastmod>2026-09-01</lastmod>"));
-  assert.ok(sitemap.includes("<loc>https://cssbuychina.net/articles</loc><lastmod>2026-09-01</lastmod>"));
+  assert.match(sitemap, /<loc>https:\/\/cssbuychina\.net\/product\/3402<\/loc>\s*<lastmod>2026-09-01<\/lastmod>/);
+  assert.match(sitemap, /<loc>https:\/\/cssbuychina\.net\/articles<\/loc>\s*<lastmod>2026-10-03<\/lastmod>/);
   assert.ok(sitemap.includes("<loc>https://cssbuychina.net/pt-br</loc>"));
   assert.ok(!sitemap.includes("<loc>https://cssbuychina.net/pt-br/</loc>"));
 });

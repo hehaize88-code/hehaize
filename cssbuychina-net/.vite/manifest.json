@@ -1,6 +1,6 @@
 {
-  "_LanguageSwitcher-cgPru7nQ.js": {
-    "file": "assets/LanguageSwitcher-cgPru7nQ.js",
+  "_LanguageSwitcher-B14Qp3PD.js": {
+    "file": "assets/LanguageSwitcher-B14Qp3PD.js",
     "name": "LanguageSwitcher",
     "imports": [
       "virtual:vinext-app-browser-entry",
@@ -18,8 +18,8 @@
     "file": "assets/rolldown-runtime-S-ySWqyJ.js",
     "name": "rolldown-runtime"
   },
-  "_site-data-CZrYKmJx.js": {
-    "file": "assets/site-data-CZrYKmJx.js",
+  "_site-data-DUNwEftN.js": {
+    "file": "assets/site-data-DUNwEftN.js",
     "name": "site-data"
   },
   "app/components/AnalyticsEvents.tsx": {
@@ -33,32 +33,43 @@
     ]
   },
   "app/components/InnerShell.tsx": {
-    "file": "assets/InnerShell-DCiYRrLR.js",
+    "file": "assets/InnerShell-Czs87Pmk.js",
     "name": "InnerShell",
     "src": "app/components/InnerShell.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "app/components/AnalyticsEvents.tsx",
-      "_LanguageSwitcher-cgPru7nQ.js",
+      "_LanguageSwitcher-B14Qp3PD.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "app/components/ParcelWeightCalculator.tsx": {
+    "file": "assets/ParcelWeightCalculator-CbjEHz9K.js",
+    "name": "ParcelWeightCalculator",
+    "src": "app/components/ParcelWeightCalculator.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "app/components/AnalyticsEvents.tsx",
       "_framework-CXnKph_e.js"
     ]
   },
   "app/page.tsx": {
-    "file": "assets/page-pU4QZ4X2.js",
+    "file": "assets/page-BJlqtKQE.js",
     "name": "page",
     "src": "app/page.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "app/components/AnalyticsEvents.tsx",
-      "_LanguageSwitcher-cgPru7nQ.js",
-      "_site-data-CZrYKmJx.js",
+      "_LanguageSwitcher-B14Qp3PD.js",
+      "_site-data-DUNwEftN.js",
       "_framework-CXnKph_e.js"
     ]
   },
   "app/products/page.tsx": {
-    "file": "assets/page-BDyGOP6B.js",
+    "file": "assets/page-DQua9jEw.js",
     "name": "page",
     "src": "app/products/page.tsx",
     "isDynamicEntry": true,
@@ -66,13 +77,13 @@
       "_rolldown-runtime-S-ySWqyJ.js",
       "app/components/AnalyticsEvents.tsx",
       "app/components/InnerShell.tsx",
-      "_LanguageSwitcher-cgPru7nQ.js",
-      "_site-data-CZrYKmJx.js",
+      "_LanguageSwitcher-B14Qp3PD.js",
+      "_site-data-DUNwEftN.js",
       "_framework-CXnKph_e.js"
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-JguHHkrD.js",
+    "file": "assets/layout-segment-context-BOOvH3d-.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -83,7 +94,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/script.js": {
-    "file": "assets/script-BiumgJfS.js",
+    "file": "assets/script-CWzCAwPL.js",
     "name": "script",
     "src": "node_modules/vinext/dist/shims/script.js",
     "isDynamicEntry": true,
@@ -93,7 +104,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-Ct1yJ_Rq.js",
+    "file": "assets/index-DeJjdd2h.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -103,6 +114,7 @@
     ],
     "dynamicImports": [
       "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "app/components/ParcelWeightCalculator.tsx",
       "virtual:vinext-app-browser-entry",
       "node_modules/vinext/dist/shims/script.js",
       "app/components/InnerShell.tsx",

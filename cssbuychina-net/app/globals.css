@@ -1477,3 +1477,30 @@ footer { padding: 72px max(5vw, calc((100vw - 1500px) / 2)) 28px; color: white; 
   .home-page .footer-bottom { padding-top: 9px; gap: 8px; font-size: 5.5px; }
   .home-page .footer-bottom div { gap: 5px 9px; }
 }
+
+/* Article tools share the existing editorial palette and remain contained on mobile. */
+.article-layout > *, .article-body { min-width: 0; }
+.article-body .category-comparison { margin: 32px 0; }
+.article-body .comparison-scroll { max-width: 100%; overflow-x: auto; }
+.article-body table { border-collapse: collapse; width: 100%; min-width: 560px; text-align: left; font-size: 14px; line-height: 1.55; }
+.article-body th, .article-body td { padding: 14px; border-bottom: 1px solid #d8ddd9; vertical-align: top; }
+.article-body thead { background: #e9eee9; }
+.article-body .parcel-calculator { border: 1px solid #cdd6cf; background: #f1f6f0; padding: clamp(18px, 3vw, 32px); margin: 32px 0; border-radius: 12px; }
+.calculator-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.calculator-fields label { display: grid; gap: 6px; font-size: 13px; font-weight: 650; }
+.calculator-fields input { min-width: 0; width: 100%; padding: 12px; border: 1px solid #8a9e90; border-radius: 4px; background: white; color: #152a21; font: inherit; }
+.parcel-calculator button { margin-top: 20px; padding: 12px 20px; border: 0; border-radius: 4px; background: #153e2c; color: white; font-weight: 650; cursor: pointer; }
+.calculator-results { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0; }
+.calculator-results dt { font-size: 13px; }.calculator-results dd { margin: 6px 0 0; font-size: 23px; font-weight: 700; }
+.article-body .calculator-note, .article-body .translation-note { font-size: 13px; line-height: 1.6; }
+@media(max-width: 600px) { .calculator-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); } .calculator-results { grid-template-columns: 1fr; gap: 12px; } .article-header h1 { overflow-wrap: anywhere; } }
+.faq-reading { display: inline-block; margin: 0 30px 24px; text-decoration: underline; text-underline-offset: 4px; }
+.article-body h2, .article-body p, .article-end a { overflow-wrap: anywhere; hyphens: auto; }
+.article-end a { margin: 0 18px 12px 0; }
+@media(max-width: 600px) {
+ .article-header { padding: 42px 20px; }
+ .article-header h1 { font-size: clamp(34px, 9.5vw, 44px); line-height: 1.04; margin-top: 28px; letter-spacing: -.045em; }
+ .article-header > p { font-size: 14px; line-height: 1.65; }
+ .article-kicker { flex-wrap: wrap; gap: 12px; line-height: 1.4; }
+ .article-body h2 { font-size: 29px; line-height: 1.12; }
+}

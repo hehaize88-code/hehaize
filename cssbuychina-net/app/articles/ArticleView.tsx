@@ -1,0 +1,163 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { InnerShell } from "../components/InnerShell";
+import { products } from "../site-data";
+import { articles } from "./article-data";
+import { guides } from "../guides/guide-data";
+import { localizedArticle, translated, contentHref } from "./translation";
+import type { SiteLocale } from "../i18n";
+import { ParcelWeightCalculator } from "../components/ParcelWeightCalculator";
+
+const categoryArticleSlug = "cssbuy-spreadsheet-categories-explained";
+const categoryArticleImage = "https://cssbuychina.net/cssbuy-category-checks-article.webp";
+
+function productResource(id: string) {
+  const product = products.find((item) => item.id === id);
+  return { href: `/product/${id}`, label: `Review the ${product?.name ?? "current product"} find` };
+}
+
+const categoryDecisionRows = [
+  { category: "Shoes", before: "Foot or insole length, exact size and color", qc: "Pair alignment, sole, finish, ruler photo", shipping: "Rigid box and crush protection", href: "/category/shoes", anchor: "CSSBuy Shoes Spreadsheet" },
+  { category: "Clothing", before: "Flat garment measurements and exact print", qc: "Size label, seams, hardware, marks", shipping: "Bulky hoodies and jackets add volume", href: "/category/hoodies-sweaters", anchor: "CSSBuy Clothing Spreadsheet" },
+  { category: "Jerseys", before: "Fan or player cut, print and patch options", qc: "Front, back, badge, name and number", shipping: "Protect prints from hard folds and heat", href: "/category/jerseys", anchor: "CSSBuy Jersey Spreadsheet" },
+  { category: "Bags & accessories", before: "Dimensions, included parts and materials listed", qc: "Interior, straps, zips, shape and scratches", shipping: "Support structured shapes; check components", href: "/category/accessories", anchor: "CSSBuy Accessories Spreadsheet" },
+  { category: "Electronics", before: "Model, plug, battery, compatibility and route", qc: "Label, visible condition and included parts", shipping: "Restricted routes, protection and insurance terms", href: "/category/electronics", anchor: "CSSBuy Electronics Spreadsheet" },
+] as const;
+
+function toIsoDate(date: string, fallback: string) {
+  const parsed = new Date(`${date} 00:00:00 UTC`);
+  return Number.isNaN(parsed.getTime()) ? fallback : parsed.toISOString().slice(0, 10);
+}
+
+const categorySectionLinks: Record<string, Array<{ href: string; label: string }>> = {
+  "Shoes: size evidence, pair alignment, and parcel volume": [
+    { href: "/category/shoes", label: "Browse the CSSBuy Shoes Spreadsheet" },
+    productResource("3402"),
+    productResource("3401"),
+    productResource("3388"),
+  ],
+  "Hoodies, T-shirts, and jackets: measurements before labels": [
+    { href: "/category/hoodies-sweaters", label: "Browse the CSSBuy Hoodies Spreadsheet" },
+    { href: "/category/t-shirts", label: "Browse the CSSBuy T-Shirts Spreadsheet" },
+    { href: "/category/jackets", label: "Browse the CSSBuy Jackets Spreadsheet" },
+    productResource("3393"),
+    productResource("3353"),
+    productResource("3356"),
+  ],
+  "Jerseys: version, print, patches, and fit": [
+    { href: "/category/jerseys", label: "Browse the CSSBuy Jersey Spreadsheet" },
+    productResource("3208"),
+    productResource("3206"),
+    productResource("3204"),
+  ],
+  "Accessories and bags: dimensions, hardware, and included parts": [
+    { href: "/category/accessories", label: "Browse the CSSBuy Accessories Spreadsheet" },
+    productResource("3389"),
+    productResource("3365"),
+    productResource("3364"),
+  ],
+  "Electronics: route eligibility and limits of visual QC": [
+    { href: "/category/electronics", label: "Browse the CSSBuy Electronics Spreadsheet" },
+    productResource("3357"),
+    productResource("3235"),
+    productResource("3184"),
+  ],
+};
+
+export function contentMetadata(slug: string, locale: SiteLocale = "en", kind: "articles" | "guides" = "articles"): Metadata {
+  const source = (kind === "guides" ? guides : articles)[slug];
+  if (!source) return {};
+  const article = localizedArticle(source, locale);
+  const path = `/${kind}/${slug}`;
+  const articleUrl = `https://cssbuychina.net${contentHref(path, locale)}`;
+  const isCategoryArticle = slug === categoryArticleSlug;
+  const published = article.published ?? "2026-08-08";
+  const checked = source.checked ?? "August 10, 2026";
+  const modified = toIsoDate(checked, published);
+  const seoTitle = article.seoTitle ?? article.title;
+  return {
+    title: { absolute: seoTitle },
+    description: article.description,
+    alternates: { canonical: articleUrl, languages: { en: path, "pt-BR": `/pt-br${path}`, "de-DE": `/de${path}`, es: `/es${path}`, "x-default": path } },
+    openGraph: {
+      type: "article",
+      url: articleUrl,
+      siteName: "CSSBuy China",
+      title: seoTitle,
+      description: article.description,
+      publishedTime: `${published}T00:00:00Z`,
+      modifiedTime: `${modified}T00:00:00Z`,
+      authors: ["https://cssbuychina.net/about"],
+      images: isCategoryArticle ? [{ url: categoryArticleImage, width: 1536, height: 1024, alt: "Product-category sizing, warehouse QC and parcel-planning checklist" }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: article.description,
+      images: isCategoryArticle ? [categoryArticleImage] : undefined,
+    },
+  };
+}
+
+export function ArticleView({ slug, locale = "en", kind = "articles" }: { slug: string; locale?: SiteLocale; kind?: "articles" | "guides" }) {
+  const source = (kind === "guides" ? guides : articles)[slug];
+  if (!source) notFound();
+  const article = localizedArticle(source, locale);
+  const t = (text: string) => translated(text, locale);
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  const articleUrl = `https://cssbuychina.net${prefix}/${kind}/${slug}`;
+  const isCategoryArticle = slug === categoryArticleSlug;
+  const h1 = article.h1 ?? article.title;
+  const published = article.published ?? "2026-08-08";
+  const checked = source.checked ?? "August 10, 2026";
+  const modified = toIsoDate(checked, published);
+  const jsonLd = {
+    "@context": "https://schema.org", "@type": "Article", headline: h1, description: article.description,
+    datePublished: published, dateModified: modified, inLanguage: locale === "pt-br" ? "pt-BR" : locale === "de" ? "de-DE" : locale,
+    author: { "@type": "Organization", name: "CSSBuy China Editorial", url: "https://cssbuychina.net/about" },
+    publisher: { "@type": "Organization", name: "CSSBuy China Editorial", url: "https://cssbuychina.net/", logo: { "@type": "ImageObject", url: "https://cssbuychina.net/cssbuy-logo.png" } },
+    image: isCategoryArticle ? { "@type": "ImageObject", url: categoryArticleImage, width: 1536, height: 1024 } : undefined,
+    mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },
+  };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: t("Home"), item: `https://cssbuychina.net${prefix || "/"}` },
+      { "@type": "ListItem", position: 2, name: t(kind === "guides" ? "Guides" : "Articles"), item: `https://cssbuychina.net${prefix}/${kind}` },
+      { "@type": "ListItem", position: 3, name: h1, item: articleUrl },
+    ],
+  };
+
+  return (
+    <InnerShell locale={locale}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLd, breadcrumbJsonLd]).replace(/</g, "\\u003c") }} />
+      <article className="article-page">
+        <header className="article-header"><div className="article-kicker"><span>{t("Updated")} {new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(new Date(`${modified}T12:00:00Z`))}</span><span>{article.label}</span></div><h1>{h1}</h1><p>{article.description}</p></header>
+        <div className="article-layout">
+          <aside><span>{t("On this page")}</span>{article.sections.map(([heading], index) => <a href={`#section-${index + 1}`} key={heading}>{heading}</a>)}</aside>
+          <div className="article-body">
+            {isCategoryArticle ? <>
+              <figure className="article-hero-image">
+                <img src="/cssbuy-category-checks-article.webp" width="1536" height="1024" alt={t("Product-category sizing, warehouse QC and parcel-planning checklist")} fetchPriority="high" />
+                <figcaption>{t("Choose the category first, then match the listing, warehouse evidence and parcel decision to that product type.")}</figcaption>
+              </figure>
+              <section className="category-comparison" aria-labelledby="quick-category-comparison">
+                <div className="comparison-heading"><span>{t("Quick answer")}</span><h2 id="quick-category-comparison">{t("CSSBuy category decision table")}</h2><p><a href={`${prefix}/categories`}>{t("CSSBuy spreadsheet category index")}</a></p></div>
+                <div className="comparison-scroll"><table><thead><tr><th>{t("Category")}</th><th>{t("Before ordering")}</th><th>{t("Warehouse QC")}</th><th>{t("Shipping risk")}</th><th>{t("Category entry")}</th></tr></thead><tbody>{categoryDecisionRows.map((row) => <tr key={t(row.category)}><th scope="row">{t(row.category)}</th><td>{t(row.before)}</td><td>{t(row.qc)}</td><td>{t(row.shipping)}</td><td><a href={row.href}>{t(row.anchor)} ↗</a></td></tr>)}</tbody></table></div>
+              </section>
+            </> : null}
+            <div className="article-note"><b>{t("Research basis · checked")} {new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(new Date(`${modified}T12:00:00Z`))}</b><p>{article.research ?? t("This independent article is based on CSSBuy’s public workflow, warehouse information and shipping estimator. Current order conditions, account deadlines and the selected route remain controlling.")}</p></div>
+            {locale !== "en" ? <p className="translation-note">{t("Automatic translation of the complete English article. Check the English text and current service terms if wording is unclear.")} <a href={`/${kind}/${slug}`} lang="en">English ↗</a></p> : null}
+            {article.table ? <section className="category-comparison"><h2>{article.table.title}</h2><p>{article.table.intro}</p><div className="comparison-scroll" role="region" tabIndex={0} aria-label={article.table.title}><table><thead><tr>{article.table.headers.map(header => <th key={header} scope="col">{header}</th>)}</tr></thead><tbody>{article.table.rows.map((row, index) => <tr key={index}>{row.map((cell, column) => column === 0 ? <th key={column} scope="row">{cell}</th> : <td key={column}>{cell}</td>)}</tr>)}</tbody></table></div></section> : null}
+            {slug === "cssbuy-shipping-calculator-actual-vs-volumetric-weight" ? <ParcelWeightCalculator locale={locale} /> : null}
+            {article.sections.map(([heading, paragraphs], index) => {
+              const resources = isCategoryArticle ? categorySectionLinks[source.sections[index][0]] : undefined;
+              return <section id={`section-${index + 1}`} key={heading}><h2>{heading}</h2>{paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{resources ? <div className="article-resource-links"><span>{t("Related category and product pages")}</span><div>{resources.map((resource) => <a href={resource.href} key={resource.href}>{t(locale === "en" ? resource.label : resource.href.startsWith("/product/") ? "Review the current product find" : resource.label)} ↗</a>)}</div></div> : null}</section>;
+            })}
+            {article.related ? <div className="article-end"><span>{t("Related reading")}</span><h2>{t("Continue the same research workflow.")}</h2>{article.related.map(([label, href]) => <a href={contentHref(href, locale)} key={href} data-track-event="article_related_click" data-click-area="related-reading">{label} ↗</a>)}</div> : null}
+            <div className="article-end"><span>{t("More product research")}</span><h2>{t("Continue with the live product index.")}</h2><a href={`${prefix}/products`} data-track-event="article_catalog_click" data-click-area="article-end">{t("Browse product finds")} ↗</a></div>
+          </div>
+        </div>
+      </article>
+    </InnerShell>
+  );
+}

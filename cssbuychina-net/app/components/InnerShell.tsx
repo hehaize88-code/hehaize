@@ -20,7 +20,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
       query_length: value.length,
       site_locale: locale,
     });
-    window.location.href = `https://www.cnbuycha.com/AllProducts/?q=${encodeURIComponent(value)}`;
+    window.location.href = `https://www.cnbuycha.com/search.html?channelid=2&keywords=${encodeURIComponent(value)}`;
   }
 
   return (
@@ -56,13 +56,13 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
           <p>{copy.footer.copy}</p>
           <form
             className="search-box search-box--compact"
-            action="https://www.cnbuycha.com/AllProducts/"
+            action="https://www.cnbuycha.com/search.html"
             method="get"
             onSubmit={submit}
           >
             <label className="sr-only" htmlFor="footer-search">{copy.searchLabel}</label>
             <span className="search-icon" aria-hidden="true">⌕</span>
-            <input id="footer-search" name="q" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.nav.all} />
+            <input type="hidden" name="channelid" value="2" /><input id="footer-search" name="keywords" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.nav.all} />
             <button type="submit">{copy.hero.search} <span aria-hidden="true">↗</span></button>
           </form>
         </div>

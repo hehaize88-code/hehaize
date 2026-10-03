@@ -1,0 +1,45 @@
+import type { Article } from "./article-types";
+const checked = "October 3, 2026";
+const weight = "/articles/cssbuy-shipping-calculator-actual-vs-volumetric-weight";
+const restrictions = "/articles/cssbuy-restrictions-brands-batteries-liquids";
+const warehouse = "/articles/cssbuy-warehouse-status-quality-inspection";
+const tracking = "/articles/cssbuy-parcel-left-warehouse-tracking-status";
+const storage = "/articles/cssbuy-warehouse-storage-returns-consolidation";
+const fees = "/articles/cssbuy-payment-methods-fees";
+const usa = "/articles/cssbuy-shipping-to-usa";
+const germany = "/articles/cssbuy-shipping-to-germany";
+export const articleEnhancements: Record<string, Partial<Article>> = {
+  "cssbuy-warehouse-status-quality-inspection": {
+    checked,
+    research: "Reviewed against CSSBuy’s public Buy For Me workflow and warehouse inspection information. The table is an editorial decision aid; use the current order status and seller conditions for your item.",
+    table: { title: "Warehouse status: what to check next", intro: "A received scan, a completed inspection and a submitted parcel are different stages.", headers: ["What you see", "What it establishes", "Next action"], rows: [
+      ["Arrived / inspection pending", "Receipt is recorded; the item decision is still open", "Match the order and wait for inspection evidence unless an exception is shown"],
+      ["QC photos available", "Visible evidence can be reviewed", "Check option, quantity, condition and measurements"],
+      ["Wrong option or visible defect", "An acceptance decision needs attention", "Send the specific mismatch and image while a remedy may apply"],
+      ["Accepted / stored", "The item can enter parcel planning", "Check the storage deadline, attributes, weight and packing"],
+      ["Parcel submitted", "International shipping is a separate stage", "Confirm packing, route and current charge"]
+    ]}, related: [["Use the six-check QC photo guide", "/guides/read-warehouse-qc-photos"], ["Plan storage, returns and consolidation", storage], ["Check route restrictions", restrictions], ["Read departure and tracking stages", tracking]]
+  },
+  "cssbuy-shipping-calculator-actual-vs-volumetric-weight": {
+    checked,
+    research: "Reviewed against CSSBuy’s public shipping estimator. The interactive worksheet below models weight only; it has no live rate feed and does not quote a shipping price. Use the divisor, rounding and acceptance rules displayed for your selected line.",
+    related: [["Check shipping restrictions first", restrictions], ["Plan shipping to the USA", usa], ["Plan shipping to Germany", germany], ["Separate payments and fees", fees]]
+  },
+  "cssbuy-restrictions-brands-batteries-liquids": {
+    checked,
+    research: "Reviewed against the commodity attributes and route conditions shown in CSSBuy’s public shipping estimator. This screening checklist does not confirm acceptance of an individual product or replace destination rules.",
+    table: { title: "Restrictions checklist before payment", intro: "Disclose the actual contents. A warehouse receipt does not confirm carrier acceptance.", headers: ["Attribute", "Evidence to collect", "Decision before shipping"], rows: [
+      ["Brand or licensed design", "Exact product, markings and seller information", "Confirm purchase, route and destination eligibility"],
+      ["Battery or powered device", "Battery type, capacity and whether installed or loose", "Check the specific configuration against the route rules"],
+      ["Liquid, powder or cosmetic", "Composition, volume and packaging details", "Confirm the contents are accepted and how they must be packed"],
+      ["Food or other regulated item", "Ingredients, origin and required documentation", "Check current destination and carrier requirements"],
+      ["Mixed parcel", "Every item and its relevant attributes", "Compare eligible combined and separate parcel options"]
+    ]}, related: [["Calculate realistic parcel weight", weight], ["Review USA shipping decisions", usa], ["Review Germany shipping decisions", germany], ["Resolve warehouse QC before dispatch", warehouse]]
+  },
+  "cssbuy-parcel-left-warehouse-tracking-status": { checked, research: "Reviewed against CSSBuy’s public Buy For Me tracking workflow. The sequence below separates observed events from assumptions; it does not predict a fixed transit time.", table: { title: "Tracking event and next action", intro: "Use the last confirmed event and its timestamp when asking for help.", headers: ["Event", "What to avoid assuming", "Useful next check"], rows: [["Label created", "That a carrier has physically accepted the parcel", "Look for an acceptance scan"],["Warehouse departure", "That the parcel is on a flight or has cleared customs", "Check the next carrier handoff"],["International transit", "A guaranteed delivery date", "Read the selected service’s current estimate"],["Document or address exception", "That waiting alone will resolve it", "Follow the verified carrier or account instructions"],["Delivered", "That contents were checked by the recipient", "Inspect promptly and retain evidence if needed"]]}, related: [["Plan USA delivery records", usa], ["Plan Germany delivery records", germany], ["Review warehouse stages", warehouse]] },
+  "cssbuy-warehouse-storage-returns-consolidation": { checked, research: "Reviewed against CSSBuy’s public warehouse and buying information. Account deadlines and seller-specific return conditions control each order; storage time is separate from the opportunity to request a return.", related: [["Check arrival and QC status", warehouse], ["Model consolidation weight", weight], ["Track optional services and fees", fees]] },
+  "cssbuy-shipping-to-usa": { table: { title: "USA route comparison: fields to record", intro: "Use the same parcel inputs for every eligible option. Record unknown costs explicitly.", headers: ["Record", "What belongs in the field", "Why it matters"], rows: [["Parcel inputs", "ZIP code, contents, kg and exterior cm", "Makes quotes comparable"],["Billing", "Weight rule, rounding, currency and dated price", "Explains the actual quoted basis"],["Service", "Restrictions, tracking, delivery arrangement and cover", "Screens out unsuitable options"],["Complete cost", "Included, excluded and unresolved charges", "Avoids treating missing amounts as zero"],["Evidence", "Order receipt, packing record and tracking references", "Supports a specific delivery inquiry"]]} },
+  "cssbuy-shipping-to-germany": { table: { title: "Germany shipping: four decisions to confirm", intro: "This worksheet is a planning aid, not a quote or customs calculation.", headers: ["Decision", "Confirm", "Keep"], rows: [["Destination", "German address and supported delivery arrangement", "Confirmed recipient details"],["Packing", "Protection, actual kg and exterior dimensions", "Packing instructions and measurements"],["Route", "Acceptance, billing and included services", "Dated quote and conditions"],["Records", "Accurate item details and charges paid", "Orders, payment and carrier messages"]]} },
+  "cssbuy-vs-superbuy": { table: { title: "CSSBuy vs Superbuy: compare documented details", intro: "Published information checked October 3, 2026. Order-specific conditions and current quotes still need verification.", headers: ["Decision", "CSSBuy", "Superbuy", "Your comparison"], rows: [["Buying stages", "Purchase, warehouse review, international parcel", "Purchase and international-shipping stages", "Use the same seller and variant"],["Purchasing fee", "Read the current selected-order checkout", "Official page lists free standard purchasing on Taobao, Tmall, JD.com and 1688; exceptions apply", "Include any applicable platform-specific charge"],["QC evidence", "Review included inspection and selected extras", "Review included inspection and selected extras", "Ask for identical decision-changing evidence"],["Storage", "Follow the deadline for the specific item", "Official fee page describes 90 free days and later conditions", "Compare against your actual arrival calendar"],["International shipping", "Current eligible parcel quote required", "Current eligible parcel quote required", "Match destination, packed weight, volume and service"]]} },
+  "cssbuy-payment-methods-fees": { table: { title: "Keep funding and spending in separate records", intro: "The examples in this article are fictional. Read the current checkout for actual charges.", headers: ["Stage", "Record", "Avoid"], rows: [["Top-up", "External charge, currency and credited balance", "Adding the top-up twice to the order cost"],["Purchase", "Goods, domestic delivery and shown order fees", "Treating a headline listing price as the whole total"],["Services", "Selected work, scope and actual debit", "Counting a shared charge for every item"],["Shipping", "Deposit, final amount and linked adjustments", "Treating the first estimate as settled"],["Refund or credit", "Amount, destination and status", "Assuming account credit is a bank refund"]]} },
+};

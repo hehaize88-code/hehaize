@@ -11,7 +11,7 @@ function removeLocale(pathname: string) {
 
 function localeHref(pathname: string, target: SiteLocale) {
   const cleanPath = removeLocale(pathname);
-  const safePath = localizedSections.has(cleanPath) ? cleanPath : "/";
+  const safePath = localizedSections.has(cleanPath) || /^\/(articles|guides)\/[^/]+$/.test(cleanPath) ? cleanPath : "/";
   if (target === "en") return safePath;
   return safePath === "/" ? `/${target}` : `/${target}${safePath}`;
 }

@@ -1,3 +1,6 @@
+import growthArticles from "./growth-article-data.json";
+import type { Article } from "./article-types";
+import { articleEnhancements } from "./article-enhancements";
 import { priorityArticles } from "./priority-article-data";
 
 const existingArticles = {
@@ -668,9 +671,7 @@ const existingArticles = {
   },
 } as const;
 
-export const articles = {
-  ...priorityArticles,
-  ...existingArticles,
-} as const;
+const allArticles: Record<string, Article> = { ...(growthArticles as unknown as Record<string, Article>), ...priorityArticles, ...existingArticles };
+export const articles: Record<string, Article> = Object.fromEntries(Object.entries(allArticles).map(([slug, article]) => [slug, { ...article, ...articleEnhancements[slug] }]));
 
 export type ArticleSlug = keyof typeof articles;

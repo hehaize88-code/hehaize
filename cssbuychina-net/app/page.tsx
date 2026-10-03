@@ -6,8 +6,8 @@ import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { localizedCategories, localeCopy, localePrefix, SiteLocale } from "./i18n";
 import { categories, products } from "./site-data";
 
-const STORE_SEARCH_ROOT = "https://www.cnbuycha.com/AllProducts/";
-const STORE_SEARCH = `${STORE_SEARCH_ROOT}?q=`;
+const STORE_SEARCH_ROOT = "https://www.cnbuycha.com/search.html";
+const STORE_SEARCH = `${STORE_SEARCH_ROOT}?channelid=2&keywords=`;
 
 const languageTags: Record<SiteLocale, string> = { en: "en", "pt-br": "pt-BR", de: "de-DE", es: "es" };
 
@@ -27,7 +27,7 @@ function buildHomeJsonLd(locale: SiteLocale) {
       url: "https://cssbuychina.net/",
       potentialAction: {
         "@type": "SearchAction",
-        target: `${STORE_SEARCH_ROOT}?q={search_term_string}`,
+        target: `${STORE_SEARCH_ROOT}?channelid=2&keywords={search_term_string}`,
         "query-input": "required name=search_term_string",
       },
     },
@@ -77,13 +77,13 @@ function SearchBox({ compact = false, locale = "en" }: { compact?: boolean; loca
       <span className="search-icon" aria-hidden="true">⌕</span>
       <input
         id={compact ? "nav-search" : "hero-search"}
-        name="q"
+        name="keywords"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
         placeholder={compact ? copy.nav.all : copy.hero.placeholder}
         autoComplete="off"
       />
-      <button type="submit">{copy.hero.search} <ArrowIcon /></button>
+      <input type="hidden" name="channelid" value="2" /><button type="submit">{copy.hero.search} <ArrowIcon /></button>
     </form>
   );
 }
@@ -271,7 +271,7 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           <p className="eyebrow"><span /> {copy.workflow.eyebrow}</p>
           <h2>{copy.workflow.title}</h2>
           <p>{copy.workflow.description}</p>
-          <a href="/guides/cssbuy-spreadsheet-guide">{copy.workflow.read} <ArrowIcon /></a>
+          <a href={`${prefix}/guides/cssbuy-spreadsheet-guide`}>{copy.workflow.read} <ArrowIcon /></a>
         </div>
         <ol className="workflow-list">
           {copy.workflow.steps.map(([title, description], index) => <li key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><b>{title}</b><p>{description}</p></div></li>)}
@@ -287,26 +287,27 @@ export function HomeView({ locale = "en" }: { locale?: SiteLocale }) {
           <p>{copy.reading.description}</p>
         </div>
         <div className="guide-grid">
-          <a className="guide-card guide-featured" href="/guides/cssbuy-spreadsheet-guide">
+          <a className="guide-card guide-featured" href={`${prefix}/guides/cssbuy-spreadsheet-guide`}>
             <span className="guide-label">{copy.reading.cards[0][0]}</span>
             <h3>{copy.reading.cards[0][1]}</h3>
             <p>{copy.reading.cards[0][2]}</p>
             <b>{copy.reading.read} <ArrowIcon /></b>
           </a>
-          <a className="guide-card" href="/guides/read-warehouse-qc-photos">
+          <a className="guide-card" href={`${prefix}/guides/read-warehouse-qc-photos`}>
             <span className="guide-label">{copy.reading.cards[1][0]}</span>
             <h3>{copy.reading.cards[1][1]}</h3>
             <p>{copy.reading.cards[1][2]}</p>
             <b>{copy.reading.read} <ArrowIcon /></b>
           </a>
-          <a className="guide-card" href="/guides/product-price-vs-parcel-cost">
+          <a className="guide-card" href={`${prefix}/guides/product-price-vs-parcel-cost`}>
             <span className="guide-label">{copy.reading.cards[2][0]}</span>
             <h3>{copy.reading.cards[2][1]}</h3>
             <p>{copy.reading.cards[2][2]}</p>
             <b>{copy.reading.read} <ArrowIcon /></b>
           </a>
         </div>
-        <a className="article-crosslink" href="/articles/cssbuy-spreadsheet-categories-explained"><span>{copy.reading.articleLabel}</span>{copy.reading.categoryArticle} <ArrowIcon /></a>
+        <a className="article-crosslink" href={`${prefix}/articles/cssbuy-spreadsheet-categories-explained`}><span>{copy.reading.articleLabel}</span>{copy.reading.categoryArticle} <ArrowIcon /></a>
+        <div className="growth-reading">{({ en: [["cssbuy-shipping-to-usa", "CSSBuy shipping to the USA: costs, weight and tracking"], ["cssbuy-shipping-to-germany", "CSSBuy shipping to Germany: parcel and route decisions"], ["cssbuy-vs-superbuy", "CSSBuy vs Superbuy: compare the complete cost"], ["cssbuy-payment-methods-fees", "CSSBuy payments and fees: a complete checklist"]], de: [["cssbuy-shipping-to-usa", "CSSBuy-Versand in die USA: Kosten, Gewicht und Tracking"], ["cssbuy-shipping-to-germany", "CSSBuy-Versand nach Deutschland: Pakete und Versandlinien"], ["cssbuy-vs-superbuy", "CSSBuy vs. Superbuy: Gesamtkosten vergleichen"], ["cssbuy-payment-methods-fees", "CSSBuy-Zahlungen und Gebühren: die Checkliste"]], "pt-br": [["cssbuy-shipping-to-usa", "Envio CSSBuy para os EUA: custos, peso e rastreamento"], ["cssbuy-shipping-to-germany", "Envio CSSBuy para a Alemanha: encomendas e rotas"], ["cssbuy-vs-superbuy", "CSSBuy vs Superbuy: compare o custo total"], ["cssbuy-payment-methods-fees", "Pagamentos e taxas CSSBuy: checklist completo"]], es: [["cssbuy-shipping-to-usa", "Envíos CSSBuy a EE. UU.: costes, peso y seguimiento"], ["cssbuy-shipping-to-germany", "Envíos CSSBuy a Alemania: paquetes y rutas"], ["cssbuy-vs-superbuy", "CSSBuy vs Superbuy: compara el coste total"], ["cssbuy-payment-methods-fees", "Pagos y comisiones CSSBuy: lista completa"]] }[locale]).map(([slug, title]) => <a className="article-crosslink" href={`${prefix}/articles/${slug}`} key={slug} data-track-event="article_open" data-click-area="home-reading"><span>{copy.nav.articles}</span>{title} <ArrowIcon /></a>)}</div>
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-warehouse-status-quality-inspection"><span>NEW · WAREHOUSE STATUS</span>Understand “arrived and undergoing quality inspection” <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-shipping-calculator-actual-vs-volumetric-weight"><span>NEW · CALCULATOR</span>Compare actual and volumetric parcel weight <ArrowIcon /></a> : null}
         {locale === "en" ? <a className="article-crosslink" href="/articles/cssbuy-restrictions-brands-batteries-liquids"><span>NEW · RESTRICTIONS</span>Check brands, batteries, liquids and route eligibility <ArrowIcon /></a> : null}

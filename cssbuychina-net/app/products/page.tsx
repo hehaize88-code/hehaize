@@ -51,7 +51,7 @@ export default function ProductsPage() {
         <div>
           <div className="catalog-topline"><span>PRODUCT ROUTES REVIEWED SEPTEMBER 1, 2026</span><span>USD VALUES ARE DISPLAY ESTIMATES</span></div>
           {filtered.length ? <div className="product-grid catalog-grid">{filtered.map((product) => <ProductCard product={product} key={product.id} />)}</div> : (
-            <div className="empty-state"><b>No matching preview find.</b><p>Try another term or open the live store search for a wider selection.</p><a href={`https://www.cnbuycha.com/AllProducts/?q=${encodeURIComponent(query)}`} data-track-event="store_search_submit" data-search-location="product-index-empty" data-click-area="empty-state">Search the full catalog ↗</a></div>
+            <div className="empty-state"><b>No matching preview find.</b><p>Try another term or open the live store search for a wider selection.</p><a href={`https://www.cnbuycha.com/search.html?channelid=2&keywords=${encodeURIComponent(query)}`} data-track-event="store_search_submit" data-search-location="product-index-empty" data-click-area="empty-state">Search the full catalog ↗</a></div>
           )}
         </div>
       </section>

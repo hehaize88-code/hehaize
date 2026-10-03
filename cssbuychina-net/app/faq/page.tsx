@@ -22,6 +22,16 @@ const faqs = [
   ["How can I report a dead or incorrect product link?", "Use the contact page and include the visible product title, product ID or page address, the type of mismatch, and the date you noticed it. Do not send passwords, payment details, identification, or other private account information."],
 ] as const;
 
+const faqReading: Record<number, [string, string]> = {
+ 2: ["Read the payment and fee checklist", "/articles/cssbuy-payment-methods-fees"],
+ 3: ["Understand warehouse inspection status", "/articles/cssbuy-warehouse-status-quality-inspection"],
+ 4: ["Use the QC photo decision checklist", "/guides/read-warehouse-qc-photos"],
+ 6: ["Plan storage and return decisions", "/articles/cssbuy-warehouse-storage-returns-consolidation"],
+ 7: ["Check warehouse deadlines", "/articles/cssbuy-warehouse-storage-returns-consolidation"],
+ 8: ["Model parcel weight and shipping cost", "/articles/cssbuy-shipping-calculator-actual-vs-volumetric-weight"],
+ 10: ["Check restrictions before choosing a route", "/articles/cssbuy-restrictions-brands-batteries-liquids"]
+};
+
 export default function FaqPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -35,7 +45,7 @@ export default function FaqPage() {
       <section className="inner-hero faq-hero"><p className="eyebrow"><span /> Official facts, clear limits</p><h1>CSSBuy warehouse, QC and shipping FAQ.</h1><p>Answers checked against CSSBuy's public workflow and FAQ on September 14, 2026, with changing terms clearly identified.</p></section>
       <section className="faq-page-layout">
         <aside><span>12 FACT-CHECKED QUESTIONS</span><h2>Useful answers without invented promises.</h2><p>Where CSSBuy's public pages differ by product context, this FAQ says so. The current order, account deadline, and selected route remain controlling.</p><a href="/contact">Report an issue ↗</a></aside>
-        <div className="faq-page-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary><span>{String(index + 1).padStart(2, "0")}</span>{question}<b>+</b></summary><p>{answer}</p></details>)}</div>
+        <div className="faq-page-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary><span>{String(index + 1).padStart(2, "0")}</span>{question}<b>+</b></summary><p>{answer}</p>{faqReading[index] ? <a className="faq-reading" href={faqReading[index][1]}>{faqReading[index][0]} ↗</a> : null}</details>)}</div>
       </section>
     </InnerShell>
   );
