@@ -31,3 +31,5 @@ Selon « Order Status Display », l'annulation d'une commande renvoie l'argent a
 La même notice sur les frais mentionne généralement 10 RMB de déclaration en douane selon la méthode. Cette indication ne fixe ni tous les futurs tarifs ni les taxes étrangères. Pour comparer deux avis d'acheteurs, vérifiez qu'ils incluent les mêmes éléments: pays, ligne, poids final, déclaration et facture. Une capture du seul prix de la chemise n'est pas la preuve d'un colis livré à ce prix.
 
 Sources : « Service & Fees », « International Credit Card », « Order Status Display », « Returns and Refunds » et calculateur Hipobuy, consultés le 24 septembre 2026. Vérifiez toute somme à l'écran de votre commande actuelle.
+
+Conservez un justificatif daté pour chaque paiement avec l’article ou le colis correspondant. Notez la devise affichée, le montant autorisé et le montant confirmé, et retirez les données de paiement privées des exemples partagés. Recharger le portefeuille ajoute du solde ; ce montant ne correspond pas automatiquement au coût final des biens et transports sélectionnés ensuite.

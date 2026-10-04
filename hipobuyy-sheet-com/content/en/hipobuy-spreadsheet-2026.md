@@ -61,3 +61,15 @@ For a public directory, date the snapshot and make it clear that prices and inve
 The sequence is discovery, source verification, order selection, warehouse receipt, QC, consolidation, shipping quote and tracking. A strong spreadsheet supports the first two stages and keeps enough reference information for the later stages. It does not replace QC, shipping calculations or the live order interface.
 
 Source note: Hipobuy's public website currently describes purchasing from Chinese channels, warehouse receipt and inspection, and the ability to combine stored products for international delivery. Current product pages also separate seller-to-warehouse shipping from estimated international shipping and state that listed products are supplied by third-party platforms. Reviewed October 2026; verify live terms before ordering.
+
+## Audit a saved row before using it again
+
+A spreadsheet entry should retain a product identity even after a seller edits the title. Keep the product record, destination URL, selected variant and date of your last check together. If the destination changes, compare the original image and option details before treating the replacement as the same item. A search result with a similar name can lead to another seller or version. Mark that as a new research candidate rather than silently replacing the earlier record.
+
+For the dated catalog used by this site, product IDs provide a stable way to refer to the saved examples. Record 3373 identifies the loose printed hooded sweater in the snapshot; it does not establish that every size is still available. A clear research note would record the size you checked, the price shown for that size and any missing measurements. This tells the next reader what was actually inspected instead of relying on a broad quality label.
+
+## Choose the next guide according to the missing evidence
+
+If your uncertainty concerns garment dimensions, move to the size guide or the category-specific hoodie and jersey articles. If you already selected an item but cannot interpret a warehouse image, use the QC checklist. If the products are accepted and the open question is the parcel, use the shipping calculator and rehearsal-packing guide. These are separate decisions, and keeping them separate prevents a good product photo from being mistaken for a complete purchase assessment.
+
+After the order, update the row with the relevant warehouse result and your actual decision. Do not label a directory item as personally tested when you only examined a listing. A useful record distinguishes what the seller stated, what the photograph shows and what remains uncertain. That distinction helps future comparisons even when the original price or availability has changed.

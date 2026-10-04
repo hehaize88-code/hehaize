@@ -31,3 +31,5 @@ Il regolamento «Returns and Refunds» indica per un reso incondizionato iniziat
 «Service & Fees» riporta una tariffa di dichiarazione in genere di 10 RMB, secondo il metodo di trasporto. Non trasformarla in una promessa fissa o nella somma di tutte le imposte all'arrivo. Per confrontare due recensioni, verifica paese, peso conclusivo, linea, costi nazionali e importo finale: uno screenshot del solo prodotto non documenta l'intero acquisto.
 
 Fonti: «Service & Fees», «International Credit Card», «Order Status Display», «Returns and Refunds» e calcolatore di Hipobuy, consultati il 24 settembre 2026. Controlla le cifre nel checkout effettivo.
+
+Conserva una ricevuta datata di ogni pagamento insieme all’articolo o al pacco corrispondente. Annota valuta visualizzata, importo autorizzato e importo confermato, eliminando i dati privati di pagamento da qualsiasi esempio condiviso. Una ricarica del portafoglio aggiunge saldo; non corrisponde automaticamente al costo finale dei beni e dei trasporti che sceglierai in seguito.

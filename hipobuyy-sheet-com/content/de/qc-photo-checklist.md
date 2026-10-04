@@ -1,3 +1,7 @@
+## Bedeutung von QC-Fotos und die erste Entscheidung
+
+QC steht für Qualitätskontrolle. Ein QC-Artikel ist hier das geprüfte Produkt; QC-Fotos sind die Lageraufnahmen seiner sichtbaren Merkmale. Ein Verkäuferbild bewirbt ein Angebot, ein Lagerfoto dokumentiert den eingegangenen Artikel. Gleiche zuerst die genaue bestellte Variante ab. Prüfe anschließend, ob die vorhandenen Ansichten deine konkrete Frage beantworten. Produktspezifische Beispiele findest du im separaten QC-Ratgeber für Schuhe, Kleidung und Zubehör.
+
 ## Zwei Arten von Bildern, zwei verschiedene Aussagen
 
 Das Bild auf einer Produkttabelle stammt aus dem Eintrag. Es zeigt, was angeboten wird, nicht den konkreten Artikel in deinem Auftrag. QC-Fotos entstehen erst, nachdem der Verkäufer die Ware an das Lager des Einkaufsagenten geschickt hat. Die offizielle Hipobuy-Startseite beschreibt eine Prüfung nach der Ankunft. Vergleiche diese Bilder mit der exakt gewählten Größe, Farbe und Version. Auch gute Fotos belegen nur sichtbare Merkmale bei der Aufnahme; Haltbarkeit, Echtheit und Materialzusammensetzung lassen sich daraus allein nicht sicher ableiten.

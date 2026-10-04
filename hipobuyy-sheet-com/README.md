@@ -1,26 +1,30 @@
-# Hipobuyy Sheet — Cloudflare Pages build
+# Hipobuyy Sheet — production static site
 
-This directory contains the source and generated static output for the independent Hipobuyy Sheet website.
+Production: https://hipobuyy-sheet.com/en/
 
-- Current public review URL: https://hipobuyy-sheet-review.hehaize88.chatgpt.site/en/
-- Intended canonical domain: https://hipobuyy-sheet.com/ (Cloudflare binding must be verified separately)
-- Five locales: English, German, Spanish, French, Italian
-- Each locale has 20 FAQ entries and 10 independent articles.
+The source and generated output live in `hehaize88-code/hehaize`, in this `hipobuyy-sheet-com` directory. Publish through the existing GitHub → Cloudflare Pages integration. The separate Sites review copy is not the production deployment target.
 
 ## Build
-
-The generated static website is included in `dist/`. To regenerate it from `content/` and `products.json`:
 
 ```sh
 python3 build.py
 ```
 
-For a static host such as Cloudflare Pages, use this repository's `hipobuyy-sheet-com` directory as the project root, no build command if serving the committed output, and `dist` as the output directory. If regeneration is needed, use `python3 build.py` as the build command. This folder's presence in GitHub does not connect the domain or configure a host by itself.
+The committed `dist/` is ready to serve. Keep the existing project root `hipobuyy-sheet-com` and output directory `dist`. Hosts that regenerate the site require Python 3.12 or later. No external Python packages are needed for the build.
 
-## Search configuration
+`content/editorial.json` is the article catalog and metadata source. Each of its 22 slugs must have an entry and a full Markdown file for EN, DE, ES, FR and IT. `editorial_components.py` supplies related links, dated product examples and the localized calculator. `dist/assets/site.css` and `site.js` are maintained assets and are preserved by the build.
 
-The committed `dist/` includes [sitemap.xml](./dist/sitemap.xml) with 90 localized pages, `robots.txt` with a sitemap directive, reciprocal hreflang, and canonical/Article URLs pointing to `https://hipobuyy-sheet.com/`. The localized pages no longer carry the review-only `noindex`; the root redirect page remains `noindex` and is excluded from the sitemap. Verify that the intended domain is attached and all URLs return successful HTML before submitting the sitemap in Google Search Console. The separate Sites review copy retains `noindex`.
+## Search and measurement
 
-Product links and search target the corresponding pages on `cnbuycha.com`.
+- 150 localized URLs in `dist/sitemap.xml`: 8 route groups plus 22 article groups, each in five languages.
+- Every localized page has a self canonical and reciprocal five-language plus x-default hreflang. The root redirects to `/en/` and is excluded from the sitemap.
+- Language switching preserves the article slug; homepage cards feature the four new topics.
+- Article dates and images come from the editorial catalog; the visible article content matches its JSON-LD.
+- GA4 measurement ID remains `G-F6G27KWPPQ`, active only on the production domain and its www alias. New events: `outbound_product_click`, `outbound_category_click`, `article_open`, `catalog_search_submit`, `shipping_estimate_calculated`. Search text and calculator values are not transmitted by these events.
+- The calculator uses user-entered dimensions, divisor, billing basis, rounding and optional linear USD pricing. It has no live tariff connection and does not replace the actual parcel quote.
 
-The supplied HIPOBUY logo and static images are in `dist/assets/`. Dated catalog images are listing images, not warehouse QC photographs. Research and change notes are in `PROJECT_MEMORY.md`.
+Product data, catalog images and existing `cnbuycha.com` destinations are preserved. Product prices in editorial examples are explicitly dated 23 September 2026. The site does not represent listing images as warehouse QC or claim product tests that have not been performed.
+
+Cloudflare Pages `_redirects` does not support hostname matching. The www alias uses the non-www canonical; a hostname-level 301 requires a separate edge configuration. Do not insert an unsupported absolute-source rule into `_redirects`.
+
+Research, constraints and release notes are recorded in `PROJECT_MEMORY.md`.

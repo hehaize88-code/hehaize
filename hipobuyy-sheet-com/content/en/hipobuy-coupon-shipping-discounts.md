@@ -79,3 +79,21 @@ Check the official source, account eligibility, expiration date, minimum spend, 
 If the amount differs from an article or community screenshot, the live interface should take priority.
 
 Source note: Hipobuy's current registration and login flows can display promotional prompts, while the broader purchase flow separates product ordering from later international parcel shipping. Reviewed October 2026. Promotion availability can change; verify any offer in the live official interface before relying on it.
+
+## Compare the same parcel with and without an offer
+
+Use the same eligible route, destination, contents and billed weight when calculating a promotion's effect. Otherwise a difference may come from a changed service or package rather than from the offer itself. Record the original payable amount, the discount actually applied and the final amount displayed. A coupon's headline value is not necessarily the amount you can use on your parcel, especially when conditions or caps apply.
+
+For an illustrative example, a hypothetical $8 reduction on an otherwise unchanged $80 charge would lower that charge to $72. This is arithmetic, not an available Hipobuy code or current tariff. If another eligible service costs $68 without a coupon, the discounted option is still more expensive on price alone. You would then compare other relevant service conditions instead of assuming that a visible promotion proves the best deal.
+
+## Record the conditions that can change eligibility
+
+Keep the offer's expiry information, applicable account or route conditions, minimum spend and any stated exclusions with the saved promotion. Check which charge the reduction applies to. A shipping discount should not be presented as a reduction in the product price unless the actual offer says so. If the interface rejects an offer, record the exact message and compare it with the conditions before deciding that the code is broken.
+
+Do not publish an untested string as a working code or invent a renewal date to make an article look current. If you are documenting an offer you actually used, retain a dated record showing the qualifying context and deduction while removing personal details. Another reader may have a different account, destination or parcel, so explain the conditions rather than promising that the same result applies to everyone.
+
+## Judge the final amount, not the promotional headline
+
+Include any additional paid service required to qualify for an offer in the comparison. If you add unnecessary items simply to reach a threshold, the larger order may cost more overall even after the discount. Keep those extra product and shipping costs visible. A saving should describe the difference between two realistic choices you would otherwise consider, not an inflated reference total that nobody intended to pay.
+
+Once you submit the parcel, save the final quote and any applied reduction with the route and packing measurements. That record is useful for evaluating the actual transaction. It should not become a permanent claim about the platform's prices. This guide is a method for checking promotions and does not operate a live coupon feed or guarantee that an offer remains available after publication.

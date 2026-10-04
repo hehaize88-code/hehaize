@@ -77,3 +77,17 @@ A responsible Hipobuy size guide does not claim that every Chinese seller runs t
 Use regional tables to navigate. Use the seller chart to choose. Use warehouse evidence to confirm visible details. That is the most defensible sizing workflow for a marketplace-agent purchase.
 
 Source note: Hipobuy's current product pages show seller-defined size and color options for third-party listings, while the service's public site describes warehouse receipt and inspection. Reviewed October 2026. Always use the live seller chart and current warehouse evidence.
+
+## Read a measurement photograph carefully
+
+When a warehouse measurement is available, check that the item is positioned as requested and that both endpoints of the tape are visible. A sleeve measured from the centre of the neck cannot be directly compared with a sleeve measured from the shoulder seam. A waistband pulled tight gives a different answer from the same waistband relaxed. Ask for clarification when the method is unclear instead of treating every photograph containing a tape as precise evidence.
+
+Record whether the value is a body measurement, a finished-garment measurement or a seller recommendation. For an illustrative example, a flat chest width of 54 cm and a listed circumference of 108 cm may describe a similar dimension, while a body chest measurement of 108 cm describes the wearer instead. They are not interchangeable fit promises. Ease, stretch and the intended silhouette still affect the choice.
+
+## Keep units and assumptions visible
+
+Use one unit throughout a comparison sheet and label it beside each number. If you convert inches to centimetres, preserve enough precision for a meaningful comparison without suggesting the original measurement was more accurate than it was. A rough seller measurement should not become a supposedly exact value merely because a calculator displays many decimals. Measurement consistency matters more than an impressive number of digits.
+
+Do not create a platform-wide China-to-EU size table from a few unrelated products. If a particular seller provides a conversion, identify it as that seller's guidance for that listing. For another garment or pair of shoes, repeat the check. The hoodie and jersey guides apply this method to category-specific decisions, while the QC checklist explains how to request missing visual evidence before shipping.
+
+If the available measurement still leaves the decision uncertain, document the uncertainty rather than guessing. You may choose a different listing, request an additional check or decide the remaining risk is acceptable for your purpose. What matters is that the final decision follows the actual product information and current purchase conditions, not a universal conversion that the seller never supplied.

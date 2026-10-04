@@ -45,3 +45,5 @@ If you later compare two agents or read a buyer review, ask whether both figures
 The strongest financial decision here is modest: know which cost belongs to which stage, and pay only after checking the corresponding live record. The official notices give a structure, but your seller, destination, package and payment method determine the actual checkout.
 
 Source note: Hipobuy's official Service & Fees, International Credit Card, Shipping Estimate, Order Status Display and Returns and Refunds pages were reviewed 24 September 2026. No fixed card fee or delivered-price guarantee is asserted here.
+
+Keep a dated payment record with the item or parcel it belongs to. Record the displayed currency, amount authorised and amount confirmed, while removing private payment details from any shared example. A wallet recharge is a funding event; it is not automatically the final cost of the goods and transport you later select.

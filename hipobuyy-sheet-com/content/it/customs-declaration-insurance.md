@@ -27,3 +27,5 @@ Immagina che una giacca abbia già un difetto visibile nelle fotografie di magaz
 Salva numero del pacco, fattura, eventi datati del tracking e comunicazioni. Per una richiesta doganale controlla con vettore e autorità competente; non chiamare un semplice ritardo «perdita definitiva». Nessun catalogo può garantire nello stesso tempo zero tasse, data certa e indennizzo senza condizioni.
 
 Fonti: «International Parcel Delivery Agreement», «Customs and Taxation», «Insurance and compensation», «Service & Fees» e «Shipping Estimate» ufficiali Hipobuy, consultati il 24 settembre 2026. Le obbligazioni individuali dipendono dalla destinazione.
+
+Conserva insieme l’elenco del contenuto del pacco e le ricevute di acquisto quando controlli i requisiti applicabili. Se una condizione è poco chiara, chiedi al servizio responsabile o all’autorità competente informazioni sulla tua spedizione specifica, senza copiare la dichiarazione di un altro acquirente. Questa guida non calcola imposte e non stabilisce un valore universale da dichiarare o un esito garantito dei reclami.

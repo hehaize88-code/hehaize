@@ -72,3 +72,23 @@ This creates a useful record from discovery through shipping.
 A clothing article should answer real buyer questions instead of repeating the phrase "Hipobuy clothing spreadsheet" in every paragraph. Search intent includes size guidance, hoodie finds, T-shirt links, jacket measurements, warehouse QC and shipping. Cover those topics naturally and connect them to dedicated size, QC and shipping pages.
 
 Source note: Hipobuy's public site describes a purchasing-and-warehouse workflow, and current product pages show seller-supplied variants and third-party listing disclaimers. Reviewed October 2026. Always verify the current seller page, warehouse evidence and live parcel quote.
+
+## Create a category-specific comparison sheet
+
+Use different measurement columns for different types of clothing. For a hoodie, chest width, body length, shoulder and sleeve measurements may matter. For trousers, record the seller's waist method, rise, thigh and inseam where provided. For a jersey, include the precise design and any name, number or patch option. Keeping every product under one generic size column hides the information that can change whether the garment is suitable.
+
+Each row should contain the exact destination, selected option, date checked and price currency. Add a separate field for the measurement method rather than assuming every seller measures from the same point. If an image shows a flat width but the chart describes circumference, resolve the difference before comparing numbers. Two matching numeric values do not represent the same fit when they measure different things.
+
+## Use examples without inventing specifications
+
+The site's dated catalog includes a loose printed hooded sweater under record 3373 and a club player-version jersey listing under record 3207. Their snapshot prices are $20.14 and $12.22 respectively. These records illustrate different research tasks rather than a quality ranking. The sweater needs a clear cut and measurement comparison; the jersey needs an exact variant and any custom-detail confirmation. Neither price includes an assumed international shipping charge.
+
+The listing's material or version wording should remain attributed to the seller. A fleece description does not establish a measured fabric density, and a player-version label does not establish a universal size conversion. Open the current listing, inspect the available information and identify the missing evidence. The category guides linked below provide a more detailed method for these comparisons using the same product records and their original listing images.
+
+## Keep a separate warehouse checklist
+
+After purchase, compare each received garment with the saved row. Check its item identity, visible size label, relevant measurements and important construction details. For an order containing several similar colours, avoid matching items by colour alone. A record number or order identifier is more reliable. Request the specific image or measurement that determines your decision rather than collecting extra photographs with no clear purpose.
+
+Do not approve an unresolved item for a consolidated parcel simply because the rest of the order is ready. Keep its status explicit: accepted, awaiting evidence or under a return request. Before packing, verify that the approved list matches the intended contents. This connects clothing research to a practical shipping decision while retaining the evidence about each individual purchase.
+
+After delivery, any fit or wear notes should identify the exact product and selected size. A positive experience with one garment does not confirm the performance of every item in the seller's catalog. The purpose of the spreadsheet is to preserve useful observations and their limits, so another decision can build on evidence rather than on an unsupported label.

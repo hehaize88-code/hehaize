@@ -33,3 +33,5 @@ El documento «Service & Fees» menciona generalmente 10 RMB por declaración ad
 Para una compra razonable, registra la fecha de cada cifra: oferta del vendedor, orden del agente, cálculo de transporte, factura del paquete e importe al llegar. La suma puede cambiar en cada etapa. Ver los componentes permite decidir con información verificable en lugar de confiar en un titular sobre «envío gratis» o «sin costes ocultos».
 
 Fuentes: avisos oficiales de Hipobuy «Service & Fees», «International Credit Card», «Order Status Display», «Returns and Refunds» y su calculadora de transporte; consultados el 24 de septiembre de 2026. Comprueba los importes actuales en tu pedido.
+
+Guarda un comprobante fechado de cada pago junto al artículo o paquete correspondiente. Anota la moneda mostrada, el importe autorizado y el confirmado, y elimina los datos privados de pago de cualquier ejemplo que compartas. Recargar el monedero aporta saldo; no equivale automáticamente al coste final de los productos y transportes que selecciones después.

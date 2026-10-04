@@ -64,3 +64,15 @@ Before shipping, compare the full parcel cost rather than only the item price. P
 - Treat every find as research, not a guarantee.
 
 Source note: Hipobuy's public site describes purchasing from Chinese channels, warehouse receipt and quality inspection, then parcel combination and international delivery. Current product pages show third-party listings, option-specific prices and a disclaimer about quality and authenticity. Reviewed October 2026.
+
+## Compare candidates with a decision matrix
+
+Choose three candidates within the same category and write down the condition each must satisfy. A hoodie might need a certain body length, a jersey might need a confirmed blank or personalised option, and a bag might need a visible interior layout. Put the exact listing, selected option, recorded price and missing evidence beside each requirement. A candidate that fails a necessary requirement should not win merely because its headline price is lower.
+
+Use an explicit unknown marker when the seller provides no usable information. An empty cell can look like a completed check, especially when you return to a shortlist later. If a key measurement is missing, the next action is to request or locate it, not to copy a similar measurement from a different listing. Keep the shortlist small enough that you can verify every row. A compact comparison of real options is more useful than a long collection of unresolved links.
+
+## Move from discovery to a documented choice
+
+The new hoodie and football-jersey guides provide category examples from the same dated catalog as this directory. Their cards retain exact destinations and recorded USD prices. Treat those records as a starting point and check today's selected variant before making a decision. The directory does not operate Hipobuy, and its catalog links should not be mistaken for an official platform checkout or a promise of route eligibility.
+
+Once an item reaches a warehouse, compare the received variant with the saved choice. Record a visible match, a specific mismatch or a request for further evidence. Do not treat an unanswered question as an approval. After you decide to keep an item, assess the parcel and shipping costs separately. A product can be suitable on its own yet unsuitable for a particular combined parcel because of size, protection or available transport choices. “Best finds” should mean a defensible choice for a stated need, not a universal ranking unsupported by testing.

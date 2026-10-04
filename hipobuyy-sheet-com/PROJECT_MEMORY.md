@@ -115,3 +115,33 @@
 - 新建网站数据流：网站 `https://hipobuyy-sheet.com`，数据流名称 `hipobuyy-sheet.com`，数据流 ID `15836169545`，衡量 ID `G-F6G27KWPPQ`；增强型衡量开启，包括站外链接点击。资源时区为中国 GMT+08，币种 USD。
 - 已在 GitHub `main` 的 `hipobuyy-sheet-com/dist/assets/site.js` 加入 GA4 gtag 加载与初始化，提交 `04958f474d9a12d6e939c50cc3777d5cd9ddf1a3`。这份共用脚本由每个本地化页面加载；仅在正式域名 `hipobuyy-sheet.com` 与 `www.hipobuyy-sheet.com` 发送数据，避免公开检查站的访问污染正式资源。
 - 后续重建 `dist/` 时应保留 `dist/assets/site.js` 的 GA4 初始化。页面在部署新提交之后才会有追踪代码。GA4 创建后首页初始显示“尚未从您的网站收到任何数据”；已在正式站点 `https://hipobuyy-sheet.com/en/` 实际检查到 Google 标签脚本加载，且 GA4 实时概览显示 1 位活跃用户、该页浏览 1 次及 `page_view` 事件 1 次，证明当前已开始接收数据。此一次系浏览器核验访问，不代表真实自然流量；普通历史报告仍可能延迟。
+
+## 2026-10-04 SEO research and implementation
+
+This entry supersedes older article counts and deployment assumptions above. Production is the GitHub-backed `hipobuyy-sheet-com` directory in `hehaize88-code/hehaize`, branch `main`. The separate Sites review app is not the production target. The user explicitly requested implementation, four new articles and deployment; retain the GitHub-only publishing preference.
+
+### Evidence and scope
+
+- GSC complete period 2026-09-02 through 2026-09-29: 7 clicks, 443 impressions, 1.5801% CTR, average position 6.7314. Mobile: 6 clicks / 341 impressions. Small samples do not support traffic-growth promises or inferred keyword search volumes.
+- Zero-click opportunities included EN QC checklist (48 impressions), EN order-status workflow (37), IT shipping-cost checklist (40) and IT shipping route (28). Germany tracking terms and Italy shipping intent informed the localized priorities.
+- Six sampled URLs passed Google's indexed URL inspection; the sitemap's aggregate `indexed: 0` field was not treated as evidence that the entire site was unindexed.
+- Bing data was unavailable because the connector had no Webmaster API key. GA4 historical data was unavailable because the connector lacked Analytics scope. The existing production tag remains `G-F6G27KWPPQ`; no claim is made that these inaccessible reports were analyzed.
+- Competitor research covered hipobuy.net, hipobuyspreadsheet.com, hipobuywithqc.com and hipo-sheets.com. Relevant gaps were actionable calculators, shipment gaps, pre-packing and product-category comparison pages. Topic selection does not assert search volume.
+
+### Changes
+
+- Added four English guides, approximately 1,400 words each: `hipobuy-tracking-not-updating`, `hipobuy-rehearsal-packing`, `hipobuy-hoodie-finds`, `hipobuy-football-jersey-finds`. No fabricated customer review, coupon, live price, material test, authenticity claim or fixed delivery promise.
+- Expanded the eight English-only October guides to 1,200+ words and added their missing DE/ES/FR/IT editions. All five locales now have the same 22 article slugs. Existing translated policy guides remain intact with corresponding QC, payment-record and customs-record additions.
+- `content/editorial.json` now owns article titles, descriptions, dates and images. The builder rejects missing metadata or source files. Language options, canonical tags, hreflang, cards and sitemap routes use the same catalog.
+- Shortened English article titles, improved priority QC and Italian shipping snippets, removed the duplicate homepage year, and replaced the obsolete PUBLIC REVIEW banner with localized independent-guide wording.
+- Article directories use small thumbnails, a mobile layout without sideways scrolling, and four latest-topic homepage cards. Articles have a collapsible contents list and topic-related links; product articles show matching existing catalog cards.
+- Added a five-language parcel calculator to the shipping route and calculator article. It compares actual and volumetric weight, rounds upward by a supplied increment and optionally models fixed fee + billed kg × supplied USD/kg. Inputs start with a clearly labeled example; no live rates or taxes are inferred.
+- Added GA4 events for product/category outbound clicks, article navigation, search submission and calculator use. TOC clicks do not count as opening another article. Search text, calculator measurements and private account data are not sent by these events.
+- Product JSON remains byte-for-byte unchanged: 57 records. Images and existing outbound destinations are preserved. Hoodie references: 3373, 3372, 3439. Jersey references: 3407, 3207, 3203, 3202. Price references are dated 23 September 2026, not represented as current quotes.
+- Sitemap expands to 150 localized URLs. A root `/` → `/en/` 302 is emitted. Hostname matching is unsupported in Cloudflare Pages `_redirects`; do not claim a www 301 was implemented. Existing non-www canonicalization remains in place.
+
+### Build and release checks
+
+Run `python3 build.py` using Python 3.12+, retain maintained CSS/JS assets, verify 22 article routes per language, 150 unique sitemap URLs, reciprocal language links, one H1, all local images/internal links and the calculator's weight/cost/rounding cases. Check mobile overflow and same-article language switching. Publish source plus committed `dist/` together through GitHub, then verify actual production HTML before submitting the sitemap again.
+
+Local release validation on 2026-10-04 passed: 150 localized pages plus the root redirect; 22 article routes in each locale; all internal links and image paths resolved; canonical, reciprocal hreflang, JSON-LD and sitemap checks passed. All 22 English article bodies are 1,200–1,800 words. At 390×844, the five homepages are 3,328–3,509 px tall with no horizontal overflow. Real Chromium checks passed for the calculator (blank rate, 6 kg volumetric example, $65 linear example, actual-only billing, upward rounding and negative-input rejection), article language switching, three hoodie/four jersey cards and the contents links. New translations were checked for preserved section/table structure and numerical references; key terminology, introductions, headings and decision tables received editorial corrections.

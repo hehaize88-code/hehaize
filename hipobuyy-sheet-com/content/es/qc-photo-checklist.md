@@ -1,3 +1,7 @@
+## Significado de las fotos QC y primera decisión
+
+QC significa control de calidad. En esta guía, el artículo QC es el producto revisado y las fotos QC son las imágenes del almacén que muestran sus características visibles. La imagen del vendedor anuncia una ficha; la del almacén documenta el artículo recibido. Primero comprueba la variante exacta pedida y después decide si las vistas disponibles resuelven tu duda concreta. La guía específica de QC de zapatillas, ropa y accesorios incluye ejemplos por tipo de producto.
+
 ## La foto del anuncio no es la foto de tu pedido
 
 La imagen que aparece en una hoja procede de la ficha comercial. La fotografía QC se obtiene cuando un artículo concreto llega al almacén del agente. La página oficial de Hipobuy describe una inspección tras la llegada. Compara ese conjunto con la talla, el color y la versión exactos que seleccionaste. Una imagen nítida sigue mostrando solo lo visible en ese momento: no certifica autenticidad, composición del material ni resistencia tras meses de uso.

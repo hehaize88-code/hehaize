@@ -27,3 +27,5 @@ Supposons qu'une veste présente déjà un défaut sur les photos QC. Il faut r�
 Sauvegardez numéro de colis, facture, suivi daté et échanges. Face à une retenue ou à une demande de taxe, demandez des informations au transporteur et à l'autorité locale. Ne qualifiez pas une simple pause de suivi de perte définitive. Aucun tableau de produits ne peut promettre simultanément zéro taxe, date fixe et indemnisation inconditionnelle.
 
 Sources : accord international, pages « Customs and Taxation », « Insurance and compensation », « Service & Fees » et « Shipping Estimate » de Hipobuy, consultées le 24 septembre 2026. Les obligations individuelles dépendent de votre pays.
+
+Conservez ensemble le contenu du colis et les justificatifs d’achat pour vérifier les exigences applicables. Si une condition reste ambiguë, interrogez le service responsable ou l’autorité compétente sur votre envoi précis au lieu de copier la déclaration d’un autre acheteur. Ce guide ne calcule pas les taxes et ne fixe ni valeur universelle de déclaration ni résultat garanti d’une réclamation.

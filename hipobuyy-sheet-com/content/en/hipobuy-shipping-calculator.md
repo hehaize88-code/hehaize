@@ -73,3 +73,17 @@ Stop using an estimate once the warehouse has packed and weighed the parcel. At 
 Save the parcel number, route and final paid amount. That record makes future shipping planning more accurate than relying on community anecdotes.
 
 Source note: Hipobuy's public site describes a warehouse-to-international-delivery workflow, and current product pages separate seller-to-warehouse shipping from estimated international shipping. Reviewed October 2026. Carrier formulas and route prices can change; use the live packed quote for final decisions.
+
+## Use the on-page model transparently
+
+The calculator on this page starts with an illustrative 2 kg parcel measuring 40 × 30 × 30 cm. Replace every value with your own information. The volumetric divisor and weight increment must come from the route you are evaluating. Select actual-weight-only billing only when that is the rule for the available service. Otherwise the comparison mode uses the larger of actual and volumetric weight before rounding upwards to the increment entered.
+
+The optional price model is deliberately simple: fixed fee plus billed kilograms multiplied by a user-entered USD rate. It cannot reproduce every initial-weight tier, minimum, destination surcharge or tax. Leaving the rate blank produces a weight comparison without a fabricated price. A zero rate should be used only if that is genuinely the input you intend to model, not as a substitute for missing information.
+
+## Keep two scenarios comparable
+
+For a box-retained and box-removed comparison, change the measured package inputs while holding destination, contents, currency and rate assumptions constant. Then add any extra service charge separately. If you also change the route, the result measures both packing and service differences, so label it accordingly. A smaller dimensional result is not proof that the warehouse can produce that package or that it provides enough protection for the contents.
+
+Record the model's inputs alongside its result. An isolated screenshot showing only a low total does not allow another reader to reproduce the calculation. Once the packed parcel has a confirmed quote, use that quote as the payment reference and retain the estimate only to understand the difference. If the two disagree, ask which weight, dimension, rounding rule or fee changed. This approach makes the calculator useful without presenting it as a live Hipobuy tariff service.
+
+Check units before changing a budget. This tool takes centimetres for dimensions and kilograms for actual weight. Entering millimetres as centimetres inflates the dimensional result dramatically, while entering grams as kilograms makes the actual-weight result unusable. Convert the measurements first and keep the original warehouse record next to your working estimate.

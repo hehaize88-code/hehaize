@@ -65,3 +65,21 @@ Shoes are a good example of why product research and shipping research cannot be
 Use the spreadsheet to carry the product identity through the process. Discovery should lead to a verified source; warehouse QC should lead to an accept, clarify, exchange or return decision; and only approved items should move into the final parcel.
 
 Source note: Hipobuy's current public site says purchased goods are sent to its warehouse, inspected and then available for parcel selection. Current product pages show size options and third-party listing disclaimers. Reviewed October 2026; verify live product and shipping terms.
+
+## Separate the listing, pair and parcel records
+
+Use one record for the shoe listing and selected size, a second for the actual pair received and a third for the international parcel. The listing record contains the product URL, colourway, seller size label and any measurement guidance. The warehouse record contains the item identifier, visible labels on both shoes and your QC decision. The parcel record contains the contents, box choice, packed measurements and selected transport option. These records connect to each other without pretending to describe the same stage.
+
+A helpful comparison does not infer authenticity or material quality from the number of warehouse photos. Images may show obvious asymmetry, scuffs or a different colourway, but they cannot reproduce a fit test or long-term use. If a seller's description makes a technical material claim, keep that statement attributed to the seller unless you have reliable verification. Product weight or an attractive photograph is not a substitute for the necessary evidence.
+
+## Compare box choices with the same inputs
+
+Before requesting box removal, decide whether the original box matters for your intended use and what protection is still needed. A box-free option can be smaller, but that does not establish that every available shipping line will be cheaper or that the shoes will arrive in the condition you want. Ask for the options actually offered for your item. Keep any concern about return eligibility or packaging condition separate from the shipping calculation.
+
+When comparing quotes, use the same destination, contents and currency. Record the packed dimensions of each available option rather than assuming a fixed number of grams or centimetres will be saved. If one quote uses an estimated weight and another uses a closed-parcel measurement, label the distinction. A rehearsal-packing result can help resolve uncertainty, but its inclusions and price must be checked in the current interface.
+
+## Record a useful final decision
+
+An actionable note might say that both labels match the saved size, the ordered colour is visible and an extra heel photo resolved the remaining concern. It should not say that the pair is guaranteed comfortable or will last a certain number of months when those things were not tested. If a critical fit measurement remains unavailable, decide whether that uncertainty is acceptable before international dispatch.
+
+Retain the original listing record after delivery. If you later describe your experience, include the exact model, selected size, relevant measurements and what you actually observed while wearing it. Do not transfer that result automatically to another seller's similar-looking pair. This evidence-first approach gives a shoe spreadsheet a useful role beyond collecting links and makes the next comparison easier to reproduce.

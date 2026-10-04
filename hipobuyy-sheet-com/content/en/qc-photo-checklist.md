@@ -1,3 +1,7 @@
+## QC photo meaning and the first decision
+
+QC means quality control. In this guide, a QC item is the product being checked and QC photos are the warehouse images used to inspect its visible features. A seller image advertises a listing; a warehouse image records a received item. Start by matching that item to the exact ordered option, then decide whether the available views answer your specific concern. Product-specific examples belong in the separate shoes, clothing and accessories QC guide.
+
 ## The photo set has a specific job
 
 Warehouse QC photographs help you compare the item that arrived with the one you meant to order. They are different from a seller's promotional photographs and from the first image on a spreadsheet card. Hipobuy's official home page says goods are received in its Chinese warehouse, inspected and then made available for parcel selection. The photographs are evidence of visible features at one moment. They do not certify every material, establish durability or guarantee that an item will fit. Their real value is giving you a chance to spot a visible mismatch before you approve international shipping.

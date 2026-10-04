@@ -31,3 +31,5 @@ Conserva la factura, el manifiesto, el número de paquete y capturas del seguimi
 La preparación comienza antes de escoger el método internacional: inspecciona los artículos, confirma el valor real y comprueba categorías aceptadas, condiciones de seguro y riesgos del destino. Ninguna línea garantiza al mismo tiempo cero impuestos, entrega a fecha fija y compensación incondicional. La decisión informada se basa en el paquete concreto y la política vigente, no en promesas generales de una hoja de productos.
 
 Fuentes: Hipobuy «International Parcel Delivery Agreement», «Customs and Taxation», «Insurance and compensation», «Service & Fees» y «Shipping Estimate», consultadas el 24 de septiembre de 2026. Esta guía no determina obligaciones fiscales individuales.
+
+Conserva juntos el contenido del paquete y los justificantes de compra al revisar los requisitos aplicables. Si una condición no está clara, consulta al servicio responsable o a la autoridad competente sobre tu envío concreto, en lugar de copiar la declaración de otro comprador. Esta guía no calcula impuestos ni establece un valor universal de declaración o un resultado garantizado de reclamación.
