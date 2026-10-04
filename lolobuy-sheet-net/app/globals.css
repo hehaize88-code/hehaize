@@ -4075,3 +4075,31 @@ footer > div:not(.footer-brand) a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Compact, directly linked editorial recommendations. */
+.article-recommendations { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.article-recommendations article { min-height: 0; }
+.article-recommendations h3 { margin-top: 24px; }
+.article-recommendations h3 a { display: block; border: 0; padding: 0; margin: 0; color: inherit; font: inherit; }
+.article-recommendations p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.focused-guides { margin-block: 24px; }
+.focused-guides > h2 { margin-bottom: 18px; }
+.article-reading-help { margin-block: 28px; border: 1px solid var(--border, #ddd); border-radius: 12px; padding: 18px; }
+.article-reading-help > summary { cursor: pointer; font-weight: 700; }
+.article-reading-help .section-shell { width: 100%; }
+@media (max-width: 700px) {
+  .article-recommendations { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .article-recommendations article { padding: 16px 12px; min-width: 0; }
+  .article-recommendations h3 { font-size: 17px; overflow-wrap: anywhere; }
+  .article-recommendations p { font-size: 14px; }
+  .article-recommendations .article-type { font-size: 10px; }
+}
+
+.articles-page .subpage-hero { min-height: 0; padding: 44px 40px 30px; }
+.articles-page .subpage-breadcrumb { margin-bottom: 18px; }
+.articles-page .subpage-hero h1 { font-size: clamp(32px, 4vw, 52px); }
+.articles-page .subpage-hero > div > p:last-child { margin-top: 18px; font-size: 16px; }
+@media (max-width: 700px) { .articles-page .subpage-hero { padding: 28px 20px 24px; } }
+
+.article-main { overflow-wrap: anywhere; }
+.article-main h1, .article-main h2, .article-main h3 { hyphens: auto; }

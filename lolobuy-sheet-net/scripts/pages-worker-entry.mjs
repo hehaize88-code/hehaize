@@ -57,7 +57,7 @@ const productLinkRewriter = {
 };
 
 const GA4_SNIPPET =
-  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20260915-seo"></script>';
+  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20261004-articles"></script>';
 
 const GA4_INIT_SCRIPT = String.raw`
 window.dataLayer = window.dataLayer || [];
@@ -75,6 +75,17 @@ document.addEventListener('click', function (event) {
 
   try {
     var url = new URL(link.href, window.location.href);
+    var articleMatch = url.pathname.match(/^\/(?:es\/|de\/|fr\/|it\/)?articles\/([^/]+)\/?$/);
+    if (url.origin === window.location.origin && articleMatch) {
+      window.gtag('event', 'select_content', {
+        content_type: 'article',
+        item_id: articleMatch[1],
+        link_location: window.location.pathname,
+        content_group: 'lolobuy-sheet.net',
+        transport_type: 'beacon'
+      });
+      return;
+    }
     if (url.hostname !== 'cnbuycha.com' && url.hostname !== 'www.cnbuycha.com') return;
 
     var productMatch = url.pathname.match(/^\/AllProducts\/(\d+)\.html$/);

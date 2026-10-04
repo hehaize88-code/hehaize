@@ -28,7 +28,7 @@ function resolve(params: LocalizedParams) {
 
   if (params.slug?.length === 2 && params.slug[0] === "articles") {
     const article = getArticle(params.slug[1]);
-    if (article?.localized !== false) {
+    if (article && article.localized !== false) {
       return { locale: params.locale, kind: "article" as const, article };
     }
   }

@@ -1,3 +1,5 @@
+import { ArticleRecommendations } from "./article-recommendations";
+import { getLocalizedArticle } from "./article-locales";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { articleWordCount, articles } from "./article-data";
@@ -12,7 +14,7 @@ import {
   type NavigationKey,
 } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
-import { localizeReactNode } from "./i18n";
+import { absoluteUrl, localizedPath, localizeReactNode } from "./i18n";
 import {
   guideDepthCopy,
   type SectionCopy,
@@ -675,14 +677,69 @@ function ShippingPage({ locale }: { locale: Locale }) {
 }
 
 function ArticlesPage({ locale }: { locale: Locale }) {
-  const articleSummaries = guideDepthCopy[locale].articleSummaries;
   const depth = guideDepthCopy[locale].articles;
   const visibleArticles = articles.filter(
     (article) => locale === "en" || article.localized !== false,
-  );
+  ).map((article) => getLocalizedArticle(article, locale));
 
   return localizeReactNode(
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "CollectionPage",
+        url: absoluteUrl(localizedPath(locale, "/articles")), inLanguage: locale,
+        mainEntity: { "@type": "ItemList", itemListElement: visibleArticles.map((article, index) => ({
+          "@type": "ListItem", position: index + 1, name: article.title,
+          url: absoluteUrl(localizedPath(locale, `/articles/${article.slug}`)),
+        })) },
+      }) }} />
+      <section className="section-shell article-index" aria-label="Buying guides">
+        {visibleArticles.map((article, index) => (
+          <article key={article.slug}>
+            <div className="article-index-image">
+              <img
+                src={article.image}
+                alt={article.imageAlt}
+                width="1200"
+                height="630"
+                loading={index === 0 ? "eager" : "lazy"}
+              />
+              <span>{String(index + 1).padStart(2, "0")}</span>
+            </div>
+            <div className="article-index-copy">
+              <p className="article-type">{article.eyebrow}</p>
+              <h2>
+                <Link href={`/articles/${article.slug}`}>{article.title}</Link>
+              </h2>
+              <p>{article.description}</p>
+              <dl>
+                <div>
+                  <dt>Primary topic</dt>
+                  <dd>{article.primaryKeyword}</dd>
+                </div>
+                <div>
+                  <dt>Length</dt>
+                  <dd>
+                    {articleWordCount(article).toLocaleString("en-US")} words
+                  </dd>
+                </div>
+                <div>
+                  <dt>Fact checked</dt>
+                  <dd>{article.checkedDate}</dd>
+                </div>
+              </dl>
+              <Link
+                className="button button-secondary"
+                href={`/articles/${article.slug}`}
+              >
+                Read the complete guide <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <details className="section-shell article-reading-help">
+        <summary>{{ en: "How to choose a guide", de: "So wählst du einen Ratgeber", es: "Cómo elegir una guía", fr: "Comment choisir un guide", it: "Come scegliere una guida" }[locale]}</summary>
       <section className="section-shell reading-order">
         <div>
           <p className="eyebrow">Start with the buying journey</p>
@@ -718,51 +775,7 @@ function ArticlesPage({ locale }: { locale: Locale }) {
         ariaLabel="Guide selection by buying stage"
       />
 
-      <section className="section-shell article-index" aria-label="Buying guides">
-        {visibleArticles.map((article, index) => (
-          <article key={article.slug}>
-            <div className="article-index-image">
-              <img
-                src={article.image}
-                alt={article.imageAlt}
-                width="1200"
-                height="630"
-                loading={index === 0 ? "eager" : "lazy"}
-              />
-              <span>{String(index + 1).padStart(2, "0")}</span>
-            </div>
-            <div className="article-index-copy">
-              <p className="article-type">{article.eyebrow}</p>
-              <h2>
-                <Link href={`/articles/${article.slug}`}>{article.title}</Link>
-              </h2>
-              <p>{articleSummaries[article.slug] ?? article.description}</p>
-              <dl>
-                <div>
-                  <dt>Primary topic</dt>
-                  <dd>{article.primaryKeyword}</dd>
-                </div>
-                <div>
-                  <dt>Length</dt>
-                  <dd>
-                    {articleWordCount(article).toLocaleString("en-US")} words
-                  </dd>
-                </div>
-                <div>
-                  <dt>Fact checked</dt>
-                  <dd>{article.checkedDate}</dd>
-                </div>
-              </dl>
-              <Link
-                className="button button-secondary"
-                href={`/articles/${article.slug}`}
-              >
-                Read the complete guide <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </article>
-        ))}
-      </section>
+      </details>
 
       <section className="section-shell editorial-standard">
         <div>
@@ -923,7 +936,7 @@ export function GuidePage({
   return localizeReactNode(
     <>
       <SiteHeader active={active} locale={locale} />
-      <main className="subpage-main">
+      <main className={`subpage-main${kind === "articles" || kind === "learn" ? " articles-page" : ""}`}>
         <section className="subpage-hero">
           <div>
             <p className="subpage-breadcrumb">
@@ -936,8 +949,8 @@ export function GuidePage({
         </section>
         {kind === "products" && <ProductsPage locale={locale} />}
         {kind === "categories" && <CategoriesPage locale={locale} />}
-        {kind === "qc-guide" && <QcPage locale={locale} />}
-        {kind === "shipping" && <ShippingPage locale={locale} />}
+        {kind === "qc-guide" && <><ArticleRecommendations locale={locale} group="qc" heading /><QcPage locale={locale} /></>}
+        {kind === "shipping" && <><ArticleRecommendations locale={locale} group="shipping" heading /><ShippingPage locale={locale} /></>}
         {kind === "learn" && <LearnPage locale={locale} />}
         {kind === "articles" && <ArticlesPage locale={locale} />}
         {kind === "faq" && <FaqPage locale={locale} />}

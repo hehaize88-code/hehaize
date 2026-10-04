@@ -1,3 +1,4 @@
+import { ArticleRecommendations } from "./article-recommendations";
 import Link from "next/link";
 import {
   catalogBase,
@@ -500,44 +501,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
               repeat the phrase “LoloBuy spreadsheet.”
             </p>
           </div>
-          <div className="learn-grid">
-            <article>
-              <span className="article-type">BUYING BASICS · 6 MIN</span>
-              <h3>Why the listing variant matters more than the thumbnail</h3>
-              <p>
-                Marketplace pages can group many colors, batches or versions
-                under one image. Confirm the exact selected option and preserve
-                any useful note for the purchasing agent.
-              </p>
-              <Link href="/how-it-works">
-                Read the buying flow <ArrowIcon />
-              </Link>
-            </article>
-            <article>
-              <span className="article-type">QC NOTES · 7 MIN</span>
-              <h3>A repeatable warehouse-photo checklist</h3>
-              <p>
-                Start with identity and variant, then move to visible condition,
-                labels, symmetry and the specific details that matter for that
-                product type.
-              </p>
-              <Link href="/qc-guide">
-                Use the QC checklist <ArrowIcon />
-              </Link>
-            </article>
-            <article>
-              <span className="article-type">SHIPPING · 8 MIN</span>
-              <h3>How parcel dimensions can change the route decision</h3>
-              <p>
-                Estimate with realistic dimensions, understand chargeable
-                weight and compare route restrictions before adding packaging
-                services.
-              </p>
-              <Link href="/shipping">
-                Review parcel planning <ArrowIcon />
-              </Link>
-            </article>
-          </div>
+          <ArticleRecommendations locale={locale} />
           <div className="section-cta">
             <Link className="button button-secondary" href="/articles">
               View all buying guides <span aria-hidden="true">→</span>

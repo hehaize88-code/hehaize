@@ -29,6 +29,11 @@ export function ArticlePage({
         candidate.slug !== copy.slug &&
         (locale === "en" || candidate.localized !== false),
     )
+    .sort((a, b) => {
+      const topic = /shipping|parcel|fees|box/.test(copy.slug) ? /shipping|parcel|fees|box/ : /qc|size|measurement/;
+      return Number(topic.test(b.slug)) - Number(topic.test(a.slug));
+    })
+    .slice(0, 4)
     .map((candidate) => getLocalizedArticle(candidate, locale));
 
   const articleJsonLd = {
@@ -122,7 +127,7 @@ export function ArticlePage({
                     <Link href="/about">LoloBuy Sheet Editorial</Link>
                   </p>
                   <p>
-                    {articleText(locale, "Fact-checked against public LoloBuy information")}
+                    {articleText(locale, "Independent guide; sources and limits below")}
                   </p>
                   <p>{`${articleText(locale, "Last reviewed")}: ${copy.checkedDate}`}</p>
                 </div>
@@ -147,10 +152,6 @@ export function ArticlePage({
                   <dt>{articleText(locale, "Reading time")}</dt>
                   <dd>{`${readMinutes} ${articleText(locale, "minutes")}`}</dd>
                 </div>
-                <div>
-                  <dt>{articleText(locale, "Main query")}</dt>
-                  <dd>{copy.primaryKeyword}</dd>
-                </div>
               </dl>
             </div>
           </header>
@@ -169,10 +170,6 @@ export function ArticlePage({
                     </li>
                   ))}
                 </ol>
-              </div>
-              <div className="article-sidebar-note">
-                <p className="footer-label">{articleText(locale, "SEARCH INTENT")}</p>
-                <p>{copy.intent}</p>
               </div>
             </aside>
 

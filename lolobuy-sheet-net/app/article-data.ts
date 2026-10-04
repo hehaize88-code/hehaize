@@ -1,5 +1,7 @@
 import contentDates from "./content-dates.json";
 import { priorityArticles } from "./priority-articles";
+import octoberArticles from "./october-articles.json";
+import revisions from "./article-revisions.json";
 
 export type ArticleSection = {
   heading: string;
@@ -257,9 +259,9 @@ const existingArticles: ArticleRecord[] = [
         ],
       },
       {
-        heading: "Use the 90-day storage period as planning space, not a target",
+        heading: "Check storage and seller deadlines separately",
         paragraphs: [
-          "LoloBuy’s public page states that the service provides free storage for 90 days. That window can help when products from different sellers arrive at different times, but it should not be interpreted as a reason to delay every decision until the end. A seller’s return or exchange window may be much shorter than warehouse storage.",
+          "Check the storage allowance and remaining time shown for your item in the current account. Storage can help coordinate arrivals from different sellers, but it should not become a reason to postpone inspection. A seller’s return or exchange deadline is a separate clock and may expire well before warehouse storage ends.",
           "Review each item soon after its photographs are available. Resolve mismatches first, then wait for other planned products only when the timing makes sense. Keep a simple list of arrival dates, QC status and intended parcel group. This avoids discovering an unresolved issue when the parcel is already being assembled.",
           "Policies can change, so verify the current storage counter and any consequences shown in the account. A dated official statement is useful research, but the live order interface should govern an active order.",
         ],
@@ -391,9 +393,9 @@ const existingArticles: ArticleRecord[] = [
         ],
       },
       {
-        heading: "Plan around the 90-day storage statement",
+        heading: "Plan around the current storage deadline",
         paragraphs: [
-          "LoloBuy’s public homepage states that goods receive 90 days of free warehouse storage. That can support consolidation when sellers dispatch at different speeds, but it is not a reason to wait indefinitely. Product return windows, route changes and storage policies are separate clocks.",
+          "Check each item’s current storage allowance and remaining time before planning consolidation. Different arrival dates can create different deadlines. Complete QC while seller action is still available, then choose the parcel arrangement. Product return windows, route availability and warehouse storage are separate planning constraints.",
           "Track each item’s arrival date and QC status. Resolve wrong items or visible problems soon after arrival, then group accepted items by parcel plan. Leave time for a packing adjustment or split if the first estimate produces poor route choices. Do not let the storage deadline become the day you begin shipping research.",
           "Verify the live storage counter and current terms inside the account. Public statements can be updated, and an active order should always follow the conditions actually shown for that item.",
         ],
@@ -1338,10 +1340,26 @@ const existingArticles: ArticleRecord[] = [
   },
 ];
 
+type Revision = Partial<ArticleRecord> & { first?: string };
+
 export const articles: ArticleRecord[] = [
+  ...octoberArticles,
   ...priorityArticles,
   ...existingArticles,
-];
+].map((article) => {
+  const revision = (revisions as Record<string, Revision>)[article.slug];
+  if (!revision) return { ...article, localized: true };
+  const { first, ...copy } = revision;
+  return {
+    ...article,
+    ...copy,
+    localized: true,
+    modifiedDate: "2026-10-04",
+    sections: article.sections.map((section, index) => index === 0 && first
+      ? { ...section, paragraphs: [first, ...section.paragraphs.slice(1)] }
+      : section),
+  };
+});
 
 export function getArticle(slug: string) {
   return articles.find((article) => article.slug === slug);

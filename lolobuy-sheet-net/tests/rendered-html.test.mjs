@@ -118,7 +118,7 @@ test("server-renders localized URLs with reciprocal SEO signals", async () => {
   }
 });
 
-test("publishes 114 final-site sitemap URLs with language alternates", async () => {
+test("publishes 166 final-site sitemap URLs with language alternates", async () => {
   const response = await fetchPage("/sitemap.xml");
   assert.equal(response.status, 200);
   assert.match(
@@ -127,7 +127,7 @@ test("publishes 114 final-site sitemap URLs with language alternates", async () 
   );
 
   const xml = await response.text();
-  assert.equal((xml.match(/<url>/g) ?? []).length, 114);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 166);
   assert.match(xml, /lolobuy-qc-color-lighting-errors/);
   assert.match(xml, /lolobuy-material-texture-qc-photo-limits/);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es<\/loc>/);
@@ -136,14 +136,14 @@ test("publishes 114 final-site sitemap URLs with language alternates", async () 
     /hreflang="de" href="https:\/\/lolobuy-sheet\.net\/de\/qc-guide"/,
   );
   assert.match(xml, /hreflang="x-default"/);
-  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 114);
+  assert.equal((xml.match(/<lastmod>/g) ?? []).length, 166);
   assert.match(xml, /lolobuy-product-links-qc-finder/);
   assert.match(xml, /lolobuy-risk-control-order-status/);
-  assert.doesNotMatch(xml, /\/fr\/articles\/lolobuy-shipping-france-guide/);
+  assert.match(xml, /\/fr\/articles\/lolobuy-shipping-france-guide/);
   assert.doesNotMatch(xml, /<loc>https:\/\/lolobuy-sheet\.net\/products\/\d+<\/loc>/);
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-09-01<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/products<\/loc>[\s\S]*?<lastmod>2026-09-15<\/lastmod>/,
   );
   assert.match(
     xml,
@@ -155,15 +155,15 @@ test("publishes 114 final-site sitemap URLs with language alternates", async () 
   );
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-hoodie-size-guide<\/loc>[\s\S]*?<lastmod>2026-07-30<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-hoodie-size-guide<\/loc>[\s\S]*?<lastmod>2026-10-04<\/lastmod>/,
   );
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/how-to-buy-from-lolobuy<\/loc>[\s\S]*?<lastmod>2026-08-03<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/how-to-buy-from-lolobuy<\/loc>[\s\S]*?<lastmod>2026-10-04<\/lastmod>/,
   );
   assert.match(
     xml,
-    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-bag-qc-guide<\/loc>[\s\S]*?<lastmod>2026-08-10<\/lastmod>/,
+    /<loc>https:\/\/lolobuy-sheet\.net\/articles\/lolobuy-bag-qc-guide<\/loc>[\s\S]*?<lastmod>2026-10-04<\/lastmod>/,
   );
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/es\/articles\/lolobuy-bag-qc-guide<\/loc>/);
   assert.match(xml, /<loc>https:\/\/lolobuy-sheet\.net\/categories\/shoes<\/loc>/);
@@ -192,15 +192,15 @@ test("uses concise standalone SEO titles for all long-form guides", async () => 
   const expectedTitles = new Map([
     [
       "/articles/how-to-use-lolobuy-spreadsheet",
-      "How to Use a LoloBuy Spreadsheet | 2026 Guide",
+      "How to Use a LoloBuy Spreadsheet: Links, Sizes &amp; QC",
     ],
     [
       "/articles/lolobuy-qc-photos-guide",
-      "LoloBuy QC Photos Guide: What to Check",
+      "LoloBuy QC Photos: Size, Condition &amp; Shipping Checklist",
     ],
     [
       "/articles/lolobuy-shipping-cost-guide",
-      "LoloBuy Shipping Cost Guide: Weight &amp; Parcel Size",
+      "LoloBuy Shipping Cost: Weight, Packing &amp; Route Guide",
     ],
     [
       "/articles/lolobuy-hoodie-size-guide",
@@ -250,7 +250,7 @@ test("publishes a distinct evidence-led hoodie sizing article", async () => {
   assert.match(html, /90 days of free storage/);
   assert.match(html, /href="\/categories"/);
   assert.match(html, /href="\/articles\/lolobuy-qc-photos-guide"/);
-  assert.match(html, /href="\/articles\/how-to-use-lolobuy-spreadsheet"/);
+  assert.match(html, /href="\/articles"/);
 
   const lengthMatch = html.match(
     /<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/,
@@ -293,9 +293,9 @@ test("publishes a distinct order-to-warehouse buying guide", async () => {
   assert.match(html, /Evidence ledger and limits/);
   assert.match(html, /Five separate checkpoints/i);
   assert.match(html, /90 days of free storage/);
-  assert.match(html, /href="\/articles\/how-to-use-lolobuy-spreadsheet"/);
+  assert.match(html, /href="\/articles"/);
   assert.match(html, /href="\/articles\/lolobuy-qc-photos-guide"/);
-  assert.match(html, /href="\/articles\/lolobuy-shipping-cost-guide"/);
+  assert.match(html, /href="\/articles"/);
 
   const lengthMatch = html.match(
     /<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/,
@@ -616,10 +616,10 @@ test("publishes every article detail in all five languages with reciprocal hrefl
     "lolobuy-material-texture-qc-photo-limits",
   ];
   const localeMarkers = new Map([
-    ["es", "Qué decisión resuelve esta guía"],
-    ["de", "Welche Entscheidung dieser Ratgeber unterstützt"],
-    ["fr", "La décision traitée par ce guide"],
-    ["it", "La decisione affrontata dalla guida"],
+    ["es", "Cuatro puntos clave"],
+    ["de", "Vier wichtige Punkte"],
+    ["fr", "Quatre points à retenir"],
+    ["it", "Quattro punti chiave"],
   ]);
 
   for (const slug of slugs) {
@@ -640,7 +640,7 @@ test("publishes every article detail in all five languages with reciprocal hrefl
   }
 });
 
-test("publishes eight research-led priority guides only at their English canonicals", async () => {
+test("publishes eight research-led priority guides with complete language versions", async () => {
   const slugs = [
     "lolobuy-product-links-qc-finder",
     "lolobuy-shipping-france-guide",
@@ -665,7 +665,7 @@ test("publishes eight research-led priority guides only at their English canonic
       new RegExp(`rel="canonical" href="https://lolobuy-sheet\\.net${pathname}"`),
       pathname,
     );
-    assert.doesNotMatch(html, /hrefLang="(?:es|de|fr|it)"/, pathname);
+    assert.match(html, /hrefLang="fr"/, pathname);
 
     const lengthMatch = html.match(
       /<dt>Length<\/dt><dd>([\d,]+)(?:<!-- -->)? words<\/dd>/,
@@ -679,7 +679,7 @@ test("publishes eight research-led priority guides only at their English canonic
     );
 
     const localized = await fetchPage(`/fr/articles/${slug}`);
-    assert.equal(localized.status, 404, `/fr/articles/${slug}`);
+    assert.equal(localized.status, 200, `/fr/articles/${slug}`);
   }
 });
 
@@ -693,4 +693,29 @@ test("serves responsive lazy product images and marks commercial links sponsored
   assert.match(html, /loading="lazy"/);
   assert.match(html, /rel="sponsored noopener noreferrer"/);
   assert.doesNotMatch(html, /target="_blank" rel="noopener noreferrer"/);
+});
+
+test("publishes four complete October articles in every language and links them from the index", async () => {
+  const slugs = ["lolobuy-shipping-usa-guide", "lolobuy-shipping-uk-guide", "lolobuy-shoe-qc-checklist", "lolobuy-shoe-box-removal-guide"];
+  for (const locale of ["en", "de", "es", "fr", "it"]) {
+    const prefix = locale === "en" ? "" : `/${locale}`;
+    const index = await (await fetchPage(`${prefix}/articles`)).text();
+    assert.match(index, /"@type":"CollectionPage"/);
+    for (const slug of slugs) {
+      const pathname = `${prefix}/articles/${slug}`;
+      assert.ok(index.includes(`href="${pathname}"`), `Index must link to ${pathname}`);
+      const response = await fetchPage(pathname);
+      assert.equal(response.status, 200, pathname);
+      const html = await response.text();
+      assert.match(html, /"datePublished":"2026-10-04"/);
+      assert.equal((html.match(/class="article-section"/g) ?? []).length, 7, pathname);
+      assert.ok(html.includes(`rel="canonical" href="https://lolobuy-sheet.net${pathname}"`));
+      if (locale === "en") {
+        const words = Number(html.match(/"wordCount":(\d+)/)?.[1]);
+        assert.ok(words >= 1200 && words <= 1800, `${pathname}: ${words} words`);
+      }
+    }
+    const unknown = await fetchPage(`${prefix}/articles/nonexistent-guide`);
+    assert.equal(unknown.status, 404);
+  }
 });

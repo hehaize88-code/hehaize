@@ -123,9 +123,9 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/shipping": {
     en: {
-      title: "LoloBuy Shipping Calculator 2026: Weight & Rates",
+      title: "LoloBuy Shipping Cost: Weight, Packing & Routes",
       description:
-        "Estimate LoloBuy shipping cost using destination, actual and volumetric weight, packed dimensions, live route rates and a pre-payment checklist.",
+        "Compare LoloBuy shipping costs with packed weight, dimensions, route rules and USA/UK planning guides. Check your inputs before paying.",
     },
     es: {
       title: "Coste de envío LoloBuy y planificación del paquete",
