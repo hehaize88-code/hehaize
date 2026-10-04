@@ -1694,62 +1694,83 @@ footer > div:not(.footer-brand) a:hover {
 }
 
 .article-index {
-  padding-top: 0;
-  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding-top: 32px;
+  padding-bottom: 40px;
   background: var(--ink-925);
 }
 
 .article-index > article {
-  max-width: 1360px;
-  margin: 0 auto;
-  padding: 72px 0;
-  display: grid;
-  grid-template-columns: minmax(310px, 0.8fr) minmax(460px, 1.2fr);
-  gap: clamp(42px, 7vw, 100px);
-  border-bottom: 1px solid var(--rule);
+  min-width: 0;
+  margin: 0;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--ink-900);
 }
 
 .article-index-image {
   position: relative;
   align-self: start;
+  width: 112px;
+  max-width: 100%;
+  aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid var(--rule);
-  border-radius: 10px;
-  background: #fff;
+  border-radius: 6px;
+  background: var(--ink-950);
 }
 
 .article-index-image img {
   width: 100%;
-  aspect-ratio: 1.18;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 .article-index-image span {
   position: absolute;
-  top: 14px;
-  left: 14px;
-  width: 42px;
-  height: 42px;
+  top: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
   display: grid;
   place-items: center;
   border-radius: 50%;
   background: var(--ink-950);
   color: var(--mint);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .article-index-copy {
-  align-self: center;
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: anywhere;
+}
+
+.article-index-copy .article-type {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
 }
 
 .article-index-copy h2 {
-  max-width: 760px;
-  margin: 18px 0 0;
+  margin: 8px 0 0;
   font-family: "Arial Narrow", var(--font-geist-sans), sans-serif;
-  font-size: clamp(38px, 4vw, 58px);
-  line-height: 1;
-  letter-spacing: -0.045em;
+  font-size: 21px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .article-index-copy h2 a:hover {
@@ -1757,19 +1778,19 @@ footer > div:not(.footer-brand) a:hover {
 }
 
 .article-index-copy > p:not(.article-type) {
-  max-width: 720px;
-  margin: 24px 0 0;
+  margin: 10px 0 16px;
   color: var(--steel);
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .article-index-copy dl {
-  margin: 28px 0 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  /* Full metadata remains on each complete article page. */
+  display: none;
 }
 
 .article-index-copy dl div {
@@ -1792,8 +1813,20 @@ footer > div:not(.footer-brand) a:hover {
 }
 
 .article-index-copy .button {
-  width: min(100%, 340px);
-  margin-top: 28px;
+  width: 100%;
+  min-height: 44px;
+  margin-top: auto;
+  padding: 10px 12px;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+@media (max-width: 1000px) {
+  .article-index {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .editorial-standard {
@@ -2546,8 +2579,7 @@ footer > div:not(.footer-brand) a:hover {
   .depth-section-heading,
   .calculation-section,
   .reading-order,
-  .editorial-standard,
-  .article-index > article {
+  .editorial-standard {
     grid-template-columns: 1fr;
   }
 
@@ -2731,12 +2763,35 @@ footer > div:not(.footer-brand) a:hover {
     box-shadow: 10px 10px 0 var(--tangerine);
   }
 
-  .article-index > article {
-    padding: 55px 0;
-    gap: 30px;
+  .section-shell.article-index {
+    gap: 12px;
+    padding: 20px 12px 28px;
   }
 
-  .article-index-copy dl,
+  .article-index > article {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .article-index-image {
+    width: 80px;
+  }
+
+  .article-index-copy h2 {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    -webkit-line-clamp: 4;
+  }
+
+  .article-index-copy .button {
+    padding: 10px 8px;
+  }
+
+  .article-index-copy .button span {
+    display: none;
+  }
+
   .article-meta {
     grid-template-columns: 1fr 1fr;
   }
