@@ -9,14 +9,16 @@
     "install:ci": "bash scripts/install-ci.sh",
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vite",
     "build": "bash scripts/build-verified.sh",
-    "build:pages": "CF_PAGES_STATIC_EXPORT=1 next build && cp _worker.js out/_worker.js",
-    "validate:pages": "node scripts/validate-pages.mjs",
+    "build:pages": "node scripts/build-commerce-worker.mjs && CF_PAGES_STATIC_EXPORT=1 next build && cp _worker.js out/_worker.js",
+    "validate:pages": "node scripts/validate-catalog-release.mjs && npm run test:catalog",
     "publish:pages": "npm run build:pages && npm run validate:pages && node scripts/sync-static-export.mjs && node scripts/validate-published.mjs",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "validate:artifact": "bash scripts/validate-artifact.sh",
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern _next --ignore-pattern out",
-    "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate"
+    "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
+    "test:catalog": "node --test tests/catalog.test.mjs",
+    "validate:legacy": "node scripts/validate-pages.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

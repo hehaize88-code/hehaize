@@ -64,7 +64,7 @@ export function SiteHeader({
       <Link className="brand" href={localHref("/")} aria-label="UUFinds Sheet home">
         <SiteImage
           className="brand-logo"
-          src="/optimized/uufinds-logo.webp"
+          src="/uufinds-official-logo.png"
           alt="UUFinds"
           width={1144}
           height={284}
@@ -72,8 +72,8 @@ export function SiteHeader({
         />
       </Link>
       <nav aria-label="Main navigation">
-        <Link href={localHref("/finds/")}>{currentLabels.finds}</Link>
-        <Link href={localHref("/products/")}>{currentLabels.products}</Link>
+        <Link href={localHref("/catalog/")}>{currentLabels.finds}</Link>
+        <Link href={localHref("/catalog/")}>{currentLabels.products}</Link>
         <Link href={localHref("/guides/uufinds-qc-checklist/")}>{currentLabels.qcGuide}</Link>
         <Link href={localHref("/how-it-works/")}>{currentLabels.howItWorks}</Link>
         <Link href={localHref("/articles/")}>{currentLabels.articles}</Link>
@@ -83,8 +83,8 @@ export function SiteHeader({
         <details className="mobile-nav-menu">
           <summary aria-label={currentLabels.menu ?? "Menu"}>{currentLabels.menu ?? "Menu"}</summary>
           <div className="mobile-nav-panel">
-            <Link href={localHref("/finds/")}>{currentLabels.finds}</Link>
-            <Link href={localHref("/products/")}>{currentLabels.products}</Link>
+            <Link href={localHref("/catalog/")}>{currentLabels.finds}</Link>
+            <Link href={localHref("/catalog/")}>{currentLabels.products}</Link>
             <Link href={localHref("/guides/uufinds-qc-checklist/")}>{currentLabels.qcGuide}</Link>
             <Link href={localHref("/how-it-works/")}>{currentLabels.howItWorks}</Link>
             <Link href={localHref("/articles/")}>{currentLabels.articles}</Link>
@@ -118,8 +118,8 @@ export function SiteHeader({
               ))}
           </div>
         </details>
-        <a className="seo-guide-button" href="https://www.cnbuycha.com/" target="_blank" rel="noreferrer" data-track-event="main_site_click" data-cta-position="header">
-          <span className="long-label">{currentLabels.shopMain}</span><span className="short-label">SHOP</span> ↗
+        <a className="seo-guide-button" href="https://www.uufinds.com/register" target="_blank" rel="noreferrer" data-track-event="register_click" data-cta-position="header">
+          <span className="long-label">{({de:"Bei UUFinds registrieren",pl:"Rejestracja UUFinds","pt-br":"Cadastrar no UUFinds"} as Record<string,string>)[language] || "Register on UUFinds"}</span><span className="short-label">REGISTER</span> ↗
         </a>
       </div>
     </header>

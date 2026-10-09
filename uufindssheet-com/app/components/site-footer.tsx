@@ -3,27 +3,27 @@ import { SiteImage } from "./site-image";
 
 const footerCopy = {
   en: {
-    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. All outbound shopping links lead only to the main shopping site.",
+    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. Registration and product links open on UUFinds.",
     link: "Browse product finds →",
     policy: ["About", "Contact", "Editorial Policy", "Privacy", "Terms"],
   },
   "en-gb": {
-    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. All outbound shopping links lead only to the main shopping site.",
+    text: "Independent educational guide. Not affiliated with, endorsed by, or operated by UUFinds. Registration and product links open on UUFinds.",
     link: "Browse product finds →",
     policy: ["About", "Contact", "Editorial Policy", "Privacy", "Terms"],
   },
   de: {
-    text: "Unabhängiger Bildungsratgeber. Nicht mit UUFinds verbunden, von UUFinds empfohlen oder betrieben. Alle externen Shopping-Links führen ausschließlich zur Hauptseite.",
+    text: "Unabhängiger Bildungsratgeber. Nicht mit UUFinds verbunden, von UUFinds empfohlen oder betrieben. Registrierung und Produktlinks öffnen UUFinds.",
     link: "Produktfunde ansehen →",
     policy: ["Über uns", "Kontakt", "Redaktionsrichtlinie", "Datenschutz", "Bedingungen"],
   },
   pl: {
-    text: "Niezależny przewodnik edukacyjny. Strona nie jest powiązana z UUFinds, wspierana ani prowadzona przez UUFinds. Wszystkie zewnętrzne linki zakupowe prowadzą wyłącznie do strony głównej.",
+    text: "Niezależny przewodnik edukacyjny. Strona nie jest powiązana z UUFinds, wspierana ani prowadzona przez UUFinds. Rejestracja i linki produktów otwierają UUFinds.",
     link: "Zobacz znalezione produkty →",
     policy: ["O stronie", "Kontakt", "Polityka redakcyjna", "Prywatność", "Warunki"],
   },
   "pt-br": {
-    text: "Guia educacional independente. Não é afiliado, endossado nem operado pelo UUFinds. Todos os links externos de compras levam somente ao site principal.",
+    text: "Guia educacional independente. Não é afiliado, endossado nem operado pelo UUFinds. Cadastro e links de produtos abrem no UUFinds.",
     link: "Ver produtos encontrados →",
     policy: ["Sobre", "Contato", "Política editorial", "Privacidade", "Termos"],
   },
@@ -38,7 +38,7 @@ export function SiteFooter({ locale = "en" }: { locale?: FooterLocale }) {
   return (
     <footer>
       <div className="footer-brand">
-        <SiteImage className="footer-logo" src="/optimized/uufinds-logo.webp" alt="UUFinds" width={1144} height={284} />
+        <SiteImage className="footer-logo" src="/uufinds-official-logo.png" alt="UUFinds" width={1144} height={284} />
       </div>
       <p>{copy.text}</p>
       <nav className="footer-links" aria-label="Trust and policy links">

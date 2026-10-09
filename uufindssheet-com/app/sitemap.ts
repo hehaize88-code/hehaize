@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-23");
   const productUpdate = new Date("2026-09-17T12:00:00Z");
-  const articleUpdate = new Date("2026-10-02T06:30:00Z");
+  const articleUpdate = new Date("2026-10-09T02:00:00Z");
   const trustPaths = ["about", "contact", "editorial-policy", "privacy", "terms"];
   const localizedPaths = [
     "finds", "products", "how-it-works", "articles", "faq",
@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides.filter((guide) => !guide.englishOnly).map((guide) => `guides/${guide.slug}`),
   ];
   return [
+    ...["", "en-gb/", "de/", "pl/", "pt-br/"].flatMap(locale => ["catalog", "catalog/shoes", "catalog/hoodies-sweaters", "catalog/t-shirts", "catalog/accessories", "catalog/jersey"].map(route => ({url: `https://uufindssheet.com/${locale}${route}/`, lastModified: articleUpdate, changeFrequency: "daily" as const, priority: 0.9}))),
     { url: "https://uufindssheet.com/", lastModified: articleUpdate, changeFrequency: "weekly", priority: 1 },
     ...["finds", "products", "how-it-works", "articles", "faq"].map((path) => ({
       url: `https://uufindssheet.com/${path}/`,

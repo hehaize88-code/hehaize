@@ -253,7 +253,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
               <div className="source-note">
                 <p className="eyebrow">{localizeText(currentLocale, "Primary source notes")}</p>
                 <p>{guide.sourceNote ?? t.check}</p>
-                <div><a href="https://www.cnbuycha.com/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></div>
+                <div><a href="https://uufindssheet.com/catalog/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></div>
               </div>
             </div>
           </div>

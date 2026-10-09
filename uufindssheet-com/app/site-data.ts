@@ -7,15 +7,15 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { code: "01", name: "Shoes", note: "Sneakers & footwear", href: "https://cnbuycha.com/shoes/", color: "blue" },
-  { code: "02", name: "Hoodies", note: "Sweaters & sweatshirts", href: "https://cnbuycha.com/hoodies-sweaters/", color: "lime" },
-  { code: "03", name: "T-Shirts", note: "Tees & tops", href: "https://cnbuycha.com/t-shirts/", color: "ink" },
-  { code: "04", name: "Jackets", note: "Coats & outerwear", href: "https://cnbuycha.com/jackets/", color: "blue" },
-  { code: "05", name: "Pants", note: "Pants & shorts", href: "https://cnbuycha.com/pants-shorts/", color: "lime" },
-  { code: "06", name: "Headwear", note: "Caps & hats", href: "https://cnbuycha.com/headwear/", color: "ink" },
-  { code: "07", name: "Accessories", note: "Bags, wallets & more", href: "https://cnbuycha.com/accessories/", color: "blue" },
-  { code: "08", name: "Jersey", note: "Teamwear finds", href: "https://cnbuycha.com/jersey/", color: "lime" },
-  { code: "09", name: "Electronics", note: "Tech & gadgets", href: "https://cnbuycha.com/electronics/", color: "ink" },
+  { code: "01", name: "Shoes", note: "Sneakers & footwear", href: "https://uufindssheet.com/catalog/shoes/", color: "blue" },
+  { code: "02", name: "Hoodies", note: "Sweaters & sweatshirts", href: "https://uufindssheet.com/catalog/hoodies-sweaters/", color: "lime" },
+  { code: "03", name: "T-Shirts", note: "Tees & tops", href: "https://uufindssheet.com/catalog/t-shirts/", color: "ink" },
+  { code: "04", name: "Jackets", note: "Coats & outerwear", href: "https://uufindssheet.com/catalog/jackets/", color: "blue" },
+  { code: "05", name: "Pants", note: "Pants & shorts", href: "https://uufindssheet.com/catalog/pants-shorts/", color: "lime" },
+  { code: "06", name: "Headwear", note: "Caps & hats", href: "https://uufindssheet.com/catalog/headwear/", color: "ink" },
+  { code: "07", name: "Accessories", note: "Bags, wallets & more", href: "https://uufindssheet.com/catalog/accessories/", color: "blue" },
+  { code: "08", name: "Jersey", note: "Teamwear finds", href: "https://uufindssheet.com/catalog/jersey/", color: "lime" },
+  { code: "09", name: "Electronics", note: "Tech & gadgets", href: "https://uufindssheet.com/catalog/electronics/", color: "ink" },
 ];
 
 type ArticleCard = {

@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uufindssheet.com"),
-  title: "UUFinds Spreadsheet 2026: Product Finds & QC Guides",
-  description: "Browse an independent UUFinds spreadsheet with shoes, hoodies and product links. Learn to match QC photos, compare listings and check the details before shopping.",
+  title: "UUFinds Spreadsheet: Product Finds, Search & QC Photos",
+  description: "Explore the UUFinds spreadsheet with product search, image search, USD prices and product photos. Open the matching products on UUFinds.",
   alternates: {
     canonical: "/",
     languages: { "x-default": "/", en: "/", "en-GB": "/en-gb/", "de-DE": "/de/", "pl-PL": "/pl/", "pt-BR": "/pt-br/" },
   },
   openGraph: {
-    title: "UUFinds Spreadsheet 2026: Product Finds & QC Guides",
-    description: "Browse an independent UUFinds spreadsheet with shoes, hoodies and product links. Learn to match QC photos, compare listings and check the details before shopping.",
+    title: "UUFinds Spreadsheet: Product Finds, Search & QC Photos",
+    description: "Explore the UUFinds spreadsheet with product search, image search, USD prices and product photos. Open the matching products on UUFinds.",
     url: "https://uufindssheet.com/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UUFinds Spreadsheet 2026: Product Finds & QC Guides",
-    description: "Browse an independent UUFinds spreadsheet with shoes, hoodies and product links. Learn to match QC photos, compare listings and check the details before shopping.",
+    title: "UUFinds Spreadsheet: Product Finds, Search & QC Photos",
+    description: "Explore the UUFinds spreadsheet with product search, image search, USD prices and product photos. Open the matching products on UUFinds.",
     images: [socialImage.url],
   },
   robots: {
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     ? {}
     : { other: { "codex-preview": "development" } }),
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
 };
 
