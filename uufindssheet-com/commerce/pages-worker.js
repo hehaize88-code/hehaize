@@ -35,7 +35,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-10-09-catalog-v2";
+const HTML_CACHE_VERSION = "2026-10-09-catalog-v3";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);
@@ -111,7 +111,13 @@ const worker = {
       });
     }
 
-    const response = await env.ASSETS.fetch(request);
+    // Version the underlying document request as well as the Worker cache.
+    // A previously cached document must not retain an older build's CSS links.
+    const assetUrl = new URL(request.url);
+    if ((request.method === "GET" || request.method === "HEAD") && !assetUrl.pathname.split('/').pop().includes('.')) {
+      assetUrl.searchParams.set('__site_release', HTML_CACHE_VERSION);
+    }
+    const response = await env.ASSETS.fetch(new Request(assetUrl, request));
     const contentType = response.headers.get("content-type") || "";
 
     if (request.method !== "GET" || !contentType.toLowerCase().includes("text/html")) {
