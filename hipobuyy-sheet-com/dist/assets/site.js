@@ -15,7 +15,7 @@ document.querySelectorAll('form[data-shop-search]').forEach(form=>form.addEventL
   const value=form.querySelector('input[type=search]').value.trim();
   if(value) {
     editorialEvent('catalog_search_submit');
-    window.location.href='https://cnbuycha.com/AllProducts/?q='+encodeURIComponent(value);
+    window.location.href='/'+document.documentElement.lang+'/catalog/?q='+encodeURIComponent(value);
   }
 }));
 document.querySelectorAll('[data-category-filter]').forEach(button=>button.addEventListener('click',()=>{
@@ -63,3 +63,5 @@ document.querySelectorAll('[data-parcel-calculator]').forEach(form=>{
     editorialEvent('shipping_estimate_calculated',{billing_basis:data.get('basis')});
   });
 });
+
+document.addEventListener('click',event=>{const a=event.target.closest('a[data-track-event]');if(a)editorialEvent(a.dataset.trackEvent)});

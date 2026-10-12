@@ -1,30 +1,41 @@
-# Hipobuyy Sheet — production static site
+# Hipobuy Spreadsheet — production site
 
 Production: https://hipobuyy-sheet.com/en/
+Repository: `hehaize88-code/hehaize`, directory `hipobuyy-sheet-com`.
 
-The source and generated output live in `hehaize88-code/hehaize`, in this `hipobuyy-sheet-com` directory. Publish through the existing GitHub → Cloudflare Pages integration. The separate Sites review copy is not the production deployment target.
+Publish through the existing GitHub integration. Keep the existing root `hipobuyy-sheet-com` and output `dist`; no hosting/dashboard configuration change is required. The generated `dist/_worker.js` uses Pages advanced mode and the existing `ASSETS` binding. This release does not access the Cloudflare account.
 
-## Build
+## Build and validate
 
 ```sh
 python3 build.py
+node tests/release.mjs
 ```
 
-The committed `dist/` is ready to serve. Keep the existing project root `hipobuyy-sheet-com` and output directory `dist`. Hosts that regenerate the site require Python 3.12 or later. No external Python packages are needed for the build.
+Python 3.12 or later is required. The build has no external Python dependencies. It renders the original five-language editorial site and bundles the catalogue module using plain text composition, without a Node dependency install. The committed `dist/` is ready to serve. The catalogue has no private credentials or database bindings.
 
-`content/editorial.json` is the article catalog and metadata source. Each of its 22 slugs must have an entry and a full Markdown file for EN, DE, ES, FR and IT. `editorial_components.py` supplies related links, dated product examples and the localized calculator. `dist/assets/site.css` and `site.js` are maintained assets and are preserved by the build.
+`content/editorial.json` and the five language directories retain all 22 articles per language. The shared header and footer are generated from the same template for editorial and catalogue pages. EN/DE/ES/FR/IT switching preserves the route and catalogue query.
 
-## Search and measurement
+## Catalogue and purchases
 
-- 150 localized URLs in `dist/sitemap.xml`: 8 route groups plus 22 article groups, each in five languages.
-- Every localized page has a self canonical and reciprocal five-language plus x-default hreflang. The root redirects to `/en/` and is excluded from the sitemap.
-- Language switching preserves the article slug; homepage cards feature the four new topics.
-- Article dates and images come from the editorial catalog; the visible article content matches its JSON-LD.
-- GA4 measurement ID remains `G-F6G27KWPPQ`, active only on the production domain and its www alias. New events: `outbound_product_click`, `outbound_category_click`, `article_open`, `catalog_search_submit`, `shipping_estimate_calculated`. Search text and calculator values are not transmitted by these events.
-- The calculator uses user-entered dimensions, divisor, billing basis, rounding and optional linear USD pricing. It has no live tariff connection and does not replace the actual parcel quote.
+- `/en/catalog/` and the equivalent five-language routes load public product data from `https://cnbuycha.com` on request. Categories, search, price, popularity, newest order, pagination and detail photo order come from the same catalogue.
+- `/en/catalog/<category>/<internal-id>.html` uses the original Weidian ID extracted from the source product page for `https://hipobuy.com/product/weidian/{productId}`. Internal catalogue row IDs are never substituted for Weidian IDs.
+- Registration: `https://hipobuy.com/register`. The separate official logo goes to the localized homepage.
+- `/en/catalog/image-search/` uses image descriptors made from the same cnbuycha photos. The cnbuycha project does not expose an image search API; similarity comparison is added here in the browser. The selected image stays on the device. The index identifies its date and coverage; it is a snapshot, not an exact-product guarantee.
+- Refresh the image index with `python scripts/build-image-index.py` (Pillow is needed for this optional maintenance command). The current index covers 3,436 / 3,436 catalogue products on 2026-10-12. It is shared from the sibling catalogue implementation using the same cnbuycha origin and photo descriptors.
+- The gallery preserves all available source product images. Listing pictures are not represented as authenticated warehouse inspection evidence.
+- Catalogue errors return 503/noindex rather than empty indexable pages. Search, alternate sorts, pagination and image search are noindex/follow.
 
-Product data, catalog images and existing `cnbuycha.com` destinations are preserved. Product prices in editorial examples are explicitly dated 23 September 2026. The site does not represent listing images as warehouse QC or claim product tests that have not been performed.
+## SEO and assets
 
-Cloudflare Pages `_redirects` does not support hostname matching. The www alias uses the non-www canonical; a hostname-level 301 requires a separate edge configuration. Do not insert an unsupported absolute-source rule into `_redirects`.
+`/sitemap.xml` is now an index for `/editorial-sitemap.xml` and `/catalog-sitemap.xml`. The editorial sitemap retains five-language self canonicals and reciprocal hreflang; legacy `/spreadsheet/` and `/finds/` paths permanently redirect to the localized live catalogue. Article URLs remain unchanged. Root still redirects to `/en/`.
 
-Research, constraints and release notes are recorded in `PROJECT_MEMORY.md`.
+Homepage targets Hipobuy Spreadsheet with related finds, product-category, QC-photo and ordering intent. The homepage shows four latest article previews, four live product cards and a compact FAQ. Product and article pages share navigation and official Hipobuy artwork. GA4 retains `G-F6G27KWPPQ` and adds registration/purchase click events.
+
+Official artwork was obtained from the public Hipobuy main-page bundle: `src/assets/images/home/logo1.png` (blue) and `logo2.png` (white). Favicon is the exact `https://hipobuy.com/static/favicon/64x64.png` asset. The independent-directory disclosure remains visible.
+
+## Verification
+
+`tests/release.mjs` checks the original-ID purchase mapping, all five locales, article preservation, home sections, image-index coverage, redirects and image-search routes. With `SOURCE_FIXTURES` set to the directory of captured live HTML responses, it also checks source price/search forwarding, full gallery order, the user-supplied ID 7867456361, sitemap mapping and 503 behavior. Release validation passed 563 assertions and an internal-link/asset scan with zero missing targets.
+
+Browser visual QA was unavailable in the managed environment; no browser screenshot or pixel-level verification is claimed.

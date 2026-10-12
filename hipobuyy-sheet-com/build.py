@@ -153,6 +153,17 @@ LOCAL={'en':('INDEPENDENT GUIDE','Independent Hipobuy spreadsheet','Main navigat
        'es':('GUÍA INDEPENDIENTE','Hoja independiente de Hipobuy','Navegación principal','Foto','GUÍA','No hay productos en esta categoría.','Directorio independiente'),
        'fr':('GUIDE INDÉPENDANT','Tableau Hipobuy indépendant','Navigation principale','Photo','GUIDE','Aucun produit dans cette catégorie.','Répertoire indépendant'),
        'it':('GUIDA INDIPENDENTE','Tabella Hipobuy indipendente','Navigazione principale','Foto','GUIDA','Nessun prodotto in questa categoria.','Catalogo indipendente')}
+
+COMMERCE={
+'en': {'register':'Register on Hipobuy','image':'Search by image','hero':'Hipobuy Spreadsheet: Finds & QC Photos','sub':'Search Hipobuy finds, compare USD prices and browse product photos. Explore shoes, hoodies and more, then open the original product on Hipobuy.','aside_title':'Find it. Check it. Open it on Hipobuy.','aside':'Search by name, original product ID or image. Compare the latest arrivals, popular finds and prices in one catalogue.','products_sub':'Recent finds from the live catalogue. Open a product for the full photo gallery and its Hipobuy purchase link.','independent':'Independent Hipobuy finds directory. Registration, purchases, payments and order support are handled on hipobuy.com.','snapshot':'USD item prices exclude international shipping. Review the exact variant and current price on Hipobuy before ordering.'},
+'de': {'register':'Bei Hipobuy registrieren','image':'Bildersuche','hero':'Hipobuy Spreadsheet: Funde & QC-Fotos','sub':'Suche Hipobuy-Funde, vergleiche USD-Preise und Produktbilder. Entdecke Schuhe, Hoodies und mehr und öffne den Originalartikel auf Hipobuy.','aside_title':'Finden. Prüfen. Auf Hipobuy öffnen.','aside':'Suche nach Name, ursprünglicher Artikel-ID oder Bild. Vergleiche Neuheiten, beliebte Funde und Preise im selben Katalog.','products_sub':'Aktuelle Funde aus dem Katalog. Öffne einen Artikel für alle Bilder und den Kauflink zu Hipobuy.','independent':'Unabhängiges Hipobuy-Verzeichnis. Registrierung, Kauf, Zahlung und Bestellhilfe erfolgen auf hipobuy.com.','snapshot':'USD-Artikelpreise enthalten keinen internationalen Versand. Prüfe die genaue Variante und den aktuellen Preis auf Hipobuy.'},
+'es': {'register':'Registrarse en Hipobuy','image':'Buscar por imagen','hero':'Hipobuy Spreadsheet: productos y fotos QC','sub':'Busca productos Hipobuy, compara precios en USD y revisa las fotos. Explora zapatillas, sudaderas y más; abre el producto original en Hipobuy.','aside_title':'Encuentra, revisa y abre en Hipobuy.','aside':'Busca por nombre, ID original o imagen. Compara novedades, productos populares y precios en un mismo catálogo.','products_sub':'Productos recientes del catálogo. Abre una ficha para ver todas las fotos y el enlace de compra en Hipobuy.','independent':'Directorio independiente de Hipobuy. El registro, las compras, los pagos y la asistencia de pedidos se gestionan en hipobuy.com.','snapshot':'Los precios en USD no incluyen envío internacional. Comprueba la variante exacta y el precio actual en Hipobuy.'},
+'fr': {'register':'S’inscrire sur Hipobuy','image':'Recherche par image','hero':'Hipobuy Spreadsheet : trouvailles et photos QC','sub':'Recherchez des produits Hipobuy, comparez les prix en USD et consultez les photos. Explorez chaussures, sweats et autres catégories, puis ouvrez le produit original sur Hipobuy.','aside_title':'Trouvez, vérifiez, ouvrez sur Hipobuy.','aside':'Recherchez par nom, identifiant original ou image. Comparez nouveautés, produits populaires et prix dans un même catalogue.','products_sub':'Produits récents du catalogue. Ouvrez une fiche pour voir toutes les photos et le lien d’achat Hipobuy.','independent':'Répertoire Hipobuy indépendant. Inscription, achats, paiements et suivi des commandes se font sur hipobuy.com.','snapshot':'Les prix en USD excluent la livraison internationale. Vérifiez la variante et le prix actuel sur Hipobuy.'},
+'it': {'register':'Registrati su Hipobuy','image':'Ricerca per immagine','hero':'Hipobuy Spreadsheet: prodotti e foto QC','sub':'Cerca prodotti Hipobuy, confronta prezzi in USD e guarda le foto. Esplora scarpe, felpe e altre categorie, poi apri il prodotto originale su Hipobuy.','aside_title':'Trova, controlla, apri su Hipobuy.','aside':'Cerca per nome, ID originale o immagine. Confronta novità, prodotti popolari e prezzi nello stesso catalogo.','products_sub':'Prodotti recenti dal catalogo. Apri una scheda per tutte le foto e il link di acquisto Hipobuy.','independent':'Catalogo Hipobuy indipendente. Registrazione, acquisti, pagamenti e assistenza ordini avvengono su hipobuy.com.','snapshot':'I prezzi in USD escludono la spedizione internazionale. Controlla variante e prezzo attuale su Hipobuy.'}
+}
+for locale in LANGS: T[locale].update(COMMERCE[locale])
+HOME_PRODUCTS=json.loads((ROOT/'commerce'/'home-products.json').read_text())
+
 def e(v):return html.escape(str(v),quote=True)
 def href(lang,path=''):return f'/{lang}/'+(path.strip('/')+'/' if path else '')
 def meta(lang,path,title,description):
@@ -161,17 +172,17 @@ def meta(lang,path,title,description):
     article=BY_SLUG.get(path.split('/')[-1]) if path.startswith('articles/') else None
     share_image=article['image'] if article else 'article-listing.jpg'
     sharing=f'<meta property="og:type" content="{"article" if article else "website"}"><meta property="og:site_name" content="Hipobuyy Sheet"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}"><meta property="og:url" content="{SITE}{href(lang,path)}"><meta property="og:image" content="{SITE}/assets/{share_image}"><meta name="twitter:card" content="summary_large_image">'
-    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script></head>'
+    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261012"><script defer src="/assets/site.js?v=20261012"></script><script defer src="/assets/catalog.js?v=20261012"></script></head>'
 def shell(lang,path,title,description,body,home=False):
     t=T[lang];nav=''.join(f'<a class="{"active" if path.strip("/")==r else ""}" href="{href(lang,r)}">{e(t["nav"][i])}</a>' for i,r in enumerate(ROUTES))
     opts=''.join(f'<option value="{href(l,path)}" {"selected" if l==lang else ""}>{l.upper()}</option>' for l in LANGS)
-    logo='<span class="logo-image-shell"><img class="logo-image" src="/assets/hipobuy-logo.png" width="244" height="56" alt="HIPOBUY"></span><span class="logo-suffix">SHEET</span>'
-    head=f'<div class="topline"><div class="wrap"><strong>{e(LOCAL[lang][0])}</strong> · {e(LOCAL[lang][1])}</div></div><header><div class="wrap nav"><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a><nav class="navlinks" aria-label="{e(LOCAL[lang][2])}">{nav}</nav><select class="langs" id="language" aria-label="Language">{opts}</select></div></header>'
+    logo='<span class="logo-image-shell"><img class="logo-image" src="/assets/hipobuy-official-logo1.png" width="244" height="56" alt="HIPOBUY"></span>'
+    head=f'<div class="topline"><div class="wrap"><strong>{e(LOCAL[lang][0])}</strong> · {e(LOCAL[lang][1])}</div></div><header><div class="wrap nav"><div class="brand-actions"><a class="register-left" href="https://hipobuy.com/register" target="_blank" rel="noopener noreferrer" data-track-event="hipobuy_register_click">{e(t["register"])} ↗</a><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a></div><nav class="navlinks" aria-label="{e(LOCAL[lang][2])}">{nav}</nav><select class="langs" id="language" aria-label="Language">{opts}</select></div></header>'
     footer=f'<footer class="foot"><div class="wrap"><div class="foot-grid"><div><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a><p>{e(t["independent"])}</p></div><nav>{"".join(f"<a href={chr(34)+href(lang,r)+chr(34)}>{e(t[chr(110)+chr(97)+chr(118)][i])}</a>" for i,r in enumerate(ROUTES[1:],1))}</nav></div><div class="foot-base">© 2026 Hipobuyy Sheet · {e(LOCAL[lang][6])}</div></div></footer>'
     document_head=meta(lang,path,title,description)
     if path.startswith('articles/'):
         record=BY_SLUG[path.rsplit('/',1)[-1]]
-        org={'@type':'Organization','name':'Hipobuyy Sheet','url':SITE,'logo':{'@type':'ImageObject','url':SITE+'/assets/hipobuy-logo.png'}}
+        org={'@type':'Organization','name':'Hipobuyy Sheet','url':SITE,'logo':{'@type':'ImageObject','url':SITE+'/assets/hipobuy-official-logo1.png'}}
         schema={'@context':'https://schema.org','@type':'Article','headline':title,'description':description,'image':SITE+'/assets/'+record['image'],'author':org,'publisher':org,'datePublished':record['published'],'dateModified':record['modified'],'inLanguage':lang,'mainEntityOfPage':SITE+href(lang,path)}
         document_head=document_head.replace('</head>','<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('<','\\u003c')+'</script></head>')
     elif not path:
@@ -180,17 +191,21 @@ def shell(lang,path,title,description,body,home=False):
     elif path=='faq':
         schema={'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':answer}} for q,answer in FAQS[lang]]}
         document_head=document_head.replace('</head>','<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('<','\\u003c')+'</script></head>')
-    main_class=' class="home"' if not path else ''
+    footer=footer.replace('hipobuy-official-logo1.png','hipobuy-official-logo2.png')
+    main_class=f' class="home" data-locale="{lang}"' if not path else ''
+    body=re.sub(r'href="https://(?:www\.)?cnbuycha\.com([^"]*)"',lambda m:'href="/'+lang+'/catalog'+m.group(1)+'"',body)
     return document_head+f'<body>{head}<main{main_class}>{body}</main>{footer}</body></html>'
 def save(lang,path,body,title,desc):
     directory=DIST/lang/path;directory.mkdir(parents=True,exist_ok=True)
     (directory/'index.html').write_text(shell(lang,path,title,desc,body),encoding='utf-8')
 def button_search(lang):
-    t=T[lang];return f'<form class="search" data-shop-search><input required type="search" aria-label="{e(t["search"])}" placeholder="{e(t["search"])}"><button type="submit">{e(t["searchbutton"])} ↗</button></form>'
+    t=T[lang];return f'<form class="search" action="/{lang}/catalog/" method="get" data-shop-search><input name="q" required type="search" aria-label="{e(t["search"])}" placeholder="{e(t["search"])}"><button type="submit">{e(t["searchbutton"])} ↗</button></form>'
 def product(p,lang):
     t=T[lang];cat=CAT_NAMES[lang][CATEGORIES.index(p['category'])]
     return f'<article class="card" data-product-category="{e(p["category"])}"><a class="photo" href="{e(p["detail"])}" rel="noopener"><img src="{e(p["local_image"])}" width="500" height="500" loading="lazy" alt="{e(p["title"])}"></a><div class="card-body"><span class="tag">{e(cat)}</span><h3>{e(p["title"])}</h3><div class="card-bottom"><strong class="price">${p["price"]:.2f}</strong><a href="{e(p["detail"])}" rel="noopener">{e(t["open"])} ↗</a></div></div></article>'
 def product_grid(lang,products):return '<div class="cards">'+''.join(product(p,lang) for p in products)+'</div>'
+def home_card(p,lang):
+    return f'<article class="catalog-card"><a href="/{lang}/catalog{e(p["path"])}"><img src="{e(p["image"])}" alt="{e(p["title"])}" width="400" height="400" loading="lazy"><h2>{e(p["title"])}</h2><div class="card-meta"><strong>${float(p["price"]):.2f}</strong><span>USD · QC ↗</span></div></a></article>'
 def article_cards(lang,limit=None):
     t=T[lang]
     records=sorted(enumerate(EDITORIAL),key=lambda x:(x[1]['published'],x[0]),reverse=True)
@@ -231,13 +246,14 @@ from editorial_components import calculator, editorial_products, related_slugs
 for lang in LANGS:
  t=T[lang]
  cats=''.join(f'<a class="cat" href="{SHOP}/{c}/"><span>{e(CAT_NAMES[lang][i])}</span><span aria-hidden="true">↗</span></a>' for i,c in enumerate(CATEGORIES))
- hero=f'<div class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["hero"])}</h1><p>{e(t["sub"])}</p>{button_search(lang)}<div class="quicklinks">'+''.join(f'<a class="pill" href="{SHOP}/{c}/">{e(CAT_NAMES[lang][i])} ↗</a>' for i,c in enumerate(CATEGORIES[:5]))+f'</div></div><div class="hero-aside"><span class="label">HIPOBUYY / 2026</span><strong>{e(t["aside_title"])}</strong><p>{e(t["aside"])}</p><a href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></div></div></div>'
+ hero=f'<div class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["hero"])}</h1><p>{e(t["sub"])}</p>{button_search(lang)}<a class="image-shortcut" href="/{lang}/catalog/image-search/">▧ {e(t["image"])} →</a><div class="quicklinks">'+''.join(f'<a class="pill" href="{SHOP}/{c}/">{e(CAT_NAMES[lang][i])} ↗</a>' for i,c in enumerate(CATEGORIES[:5]))+f'</div></div><div class="hero-aside"><span class="label">HIPOBUY / SPREADSHEET</span><strong>{e(t["aside_title"])}</strong><p>{e(t["aside"])}</p><a href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></div></div></div>'
  link=f'<a class="text-link" href="{href(lang,"finds")}">{e(t["viewall"])} →</a>'
- home=hero+f'<section><div class="wrap">{section_header(t["products"],t["products_sub"],link)}{product_grid(lang,P[:8])}</div></section>'
+ home=hero+f'<section><div class="wrap">{section_header(t["products"],t["products_sub"],link)}<div id="hipo-live-products" class="catalog-grid">{''.join(home_card(p,lang) for p in HOME_PRODUCTS)}</div></div></section>'
  home+=f'<section style="background:#edf3f8"><div class="wrap">{section_header(t["categories"],t["categories_sub"])}<div class="cat-grid">{cats}</div></div></section>'
  home+=f'<section><div class="wrap"><div class="panel"><div><h2>{e(t["how"])}</h2><p>{e(t["how_sub"])}</p><p style="margin-top:16px"><a class="inline-action" href="{href(lang,"guide")}">{e(t["nav"][3])} →</a></p></div><div class="steps">'+''.join(f'<div class="step"><b>{i+1}</b><span>{e(s)}</span></div>' for i,s in enumerate(t['steps']))+'</div></div></div></section>'
  all_articles=f'<a class="text-link" href="{href(lang,"articles")}">{e(t["nav"][7])} →</a>'
  home+=f'<section style="background:#edf3f8"><div class="wrap">{section_header(t["reading"],t["reading_sub"],all_articles)}{article_cards(lang,4)}</div></section>'
+ home+=f'<section class="home-faq"><div class="wrap"><div class="section-top"><h2>Hipobuy FAQ</h2><a class="text-link" href="/{lang}/faq/">FAQ →</a></div><div class="faq-grid">'+''.join(f'<details class="faq-item"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in FAQS[lang][:4])+'</div></div></section>'
  home+=f'<div class="wrap"><p class="note">{e(t["snapshot"])}</p></div>'
  save(lang,'',home,t['hero'],t['sub'])
  filters=''.join(f'<button type="button" data-category-filter="{c}" class="{"on" if c=="all" else ""}">{e(t["all"] if c=="all" else CAT_NAMES[lang][CATEGORIES.index(c)])}</button>' for c in ['all']+CATEGORIES)
@@ -248,7 +264,7 @@ for lang in LANGS:
  spreadsheet=head(lang,1)+f'<div class="wrap route">{button_search(lang)}<div style="height:21px"></div>{table}<p class="note">{e(t["snapshot"])}</p></div>'
  save(lang,'spreadsheet',spreadsheet,t['page_titles'][1],t['products_sub'])
  for route,idx in [('guide',3),('qc',4),('shipping',5),('faq',6)]:
-  page=head(lang,idx)+f'<div class="wrap route">{calculator(lang) if route=='shipping' else ''}{text_sections(t["body"][route])}{'<nav class="related-guides">'+''.join('<a href="'+href(lang,'articles/'+s)+'">'+e(BY_SLUG[s]['locales'][lang]['title'])+'</a>' for s in related_slugs(route))+'</nav>' if route in ['shipping','qc','guide'] else ''}<p><a class="inline-action" href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></p></div>'
+  page=head(lang,idx)+f'<div class="wrap route">{button_search(lang) if route=='qc' else ''}{calculator(lang) if route=='shipping' else ''}{text_sections(t["body"][route])}{'<nav class="related-guides">'+''.join('<a href="'+href(lang,'articles/'+s)+'">'+e(BY_SLUG[s]['locales'][lang]['title'])+'</a>' for s in related_slugs(route))+'</nav>' if route in ['shipping','qc','guide'] else ''}<p><a class="inline-action" href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></p></div>'
   save(lang,route,page,t['page_titles'][idx],t['page_subs'][idx])
  articles=head(lang,7)+f'<div class="wrap route">{article_cards(lang)}</div>'
  save(lang,'articles',articles,t['page_titles'][7],t['page_subs'][7])
@@ -268,7 +284,7 @@ XHTML_NS='http://www.w3.org/1999/xhtml'
 ET.register_namespace('',SITEMAP_NS)
 ET.register_namespace('xhtml',XHTML_NS)
 sitemap=ET.Element(f'{{{SITEMAP_NS}}}urlset')
-for route in ROUTES+[f'articles/{slug}' for slug in SLUGS]:
+for route in [r for r in ROUTES if r not in ['spreadsheet','finds']]+[f'articles/{slug}' for slug in SLUGS]:
  for lang in LANGS:
   url=ET.SubElement(sitemap,f'{{{SITEMAP_NS}}}url')
   ET.SubElement(url,f'{{{SITEMAP_NS}}}loc').text=SITE+href(lang,route)
@@ -281,3 +297,20 @@ ET.indent(sitemap,space='  ')
 ET.ElementTree(sitemap).write(DIST/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 print('Built',len(list(DIST.rglob('index.html'))),'localized pages and',len(ROUTES+SLUGS),'route groups with a sitemap')
 
+
+# Package the public catalogue adapter as a Pages advanced-mode module. No remote deployment access is needed.
+chrome={}
+for lang in LANGS:
+    doc=shell(lang,'__CATALOG__','', '', '')
+    chrome[lang]={'header':doc.split('<body>',1)[1].split('<main',1)[0], 'footer':'<footer'+doc.split('<footer',1)[1].split('</body>',1)[0]}
+nav_code='const CHROME='+json.dumps(chrome,ensure_ascii=False)+';\n'
+nav_code+="function nav(lang,path,query=''){return CHROME[lang].header.replaceAll('__CATALOG__/',path.replace(/^\\//,'')+query)}\nfunction footer(lang){return CHROME[lang].footer}\n"
+(ROOT/'commerce/chrome.mjs').write_text(nav_code.replace('function nav(', 'export function nav(').replace('function footer(', 'export function footer('))
+source=(ROOT/'commerce/catalog.mjs').read_text().replace("import { nav, footer } from './chrome.mjs';",nav_code)
+source+=(ROOT/'commerce/worker.mjs').read_text()
+(DIST/'_worker.js').write_text(source)
+(DIST/'_routes.json').write_text(json.dumps({'version':1,'include':['/*'],'exclude':['/assets/*','/robots.txt']}))
+(DIST/'editorial-sitemap.xml').write_bytes((DIST/'sitemap.xml').read_bytes())
+(DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>'+SITE+'/editorial-sitemap.xml</loc></sitemap><sitemap><loc>'+SITE+'/catalog-sitemap.xml</loc></sitemap></sitemapindex>')
+
+(DIST/'404.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><title>Page not found | Hipobuy Spreadsheet</title><link rel="icon" href="/assets/hipobuy-favicon.png"></head><body><main><h1>Page not found</h1><p><a href="/en/">Hipobuy Spreadsheet</a></p></main></body></html>')

@@ -145,3 +145,19 @@ This entry supersedes older article counts and deployment assumptions above. Pro
 Run `python3 build.py` using Python 3.12+, retain maintained CSS/JS assets, verify 22 article routes per language, 150 unique sitemap URLs, reciprocal language links, one H1, all local images/internal links and the calculator's weight/cost/rounding cases. Check mobile overflow and same-article language switching. Publish source plus committed `dist/` together through GitHub, then verify actual production HTML before submitting the sitemap again.
 
 Local release validation on 2026-10-04 passed: 150 localized pages plus the root redirect; 22 article routes in each locale; all internal links and image paths resolved; canonical, reciprocal hreflang, JSON-LD and sitemap checks passed. All 22 English article bodies are 1,200–1,800 words. At 390×844, the five homepages are 3,328–3,509 px tall with no horizontal overflow. Real Chromium checks passed for the calculator (blank rate, 6 kg volumetric example, $65 linear example, actual-only billing, upward rounding and negative-input rejection), article language switching, three hoodie/four jersey cards and the contents links. New translations were checked for preserved section/table structure and numerical references; key terminology, introductions, headings and decision tables received editorial corrections.
+
+## 2026-10-12 — live catalogue and official purchase flow
+
+User requested the cnbuycha.com catalogue experience, official Hipobuy logo/favicon, registration at https://hipobuy.com/register, purchase format https://hipobuy.com/product/weidian/{productId}, and an SEO homepage led by “hipobuy spreadsheet”. These destinations supersede the earlier catalogue-only outbound links.
+
+Research consulted on 2026-10-12:
+- https://hipobuy.com/ — official site metadata describes Taobao, Weidian and 1688 shopping-agent intent; public frontend supplied the exact blue/white logos and favicon.
+- https://app.hipobuy.com/ — official app landing page emphasizes product discovery and QC photos.
+- https://hipobuy-spreadsheet.com/ and https://hipobuyspreadsheet.net/ — competing pages organize products by category, searchable finds, price and QC context.
+- https://hipobuywithqc.com/qc — competing QC-finder intent.
+
+Chosen content clusters: hipobuy spreadsheet (home/catalogue), hipobuy finds (catalogue), hipobuy shoes spreadsheet / hoodie finds (categories and retained guides), hipobuy QC photos (QC guide and product galleries), how to buy from Hipobuy (guide). These are intent findings from public pages, not claims of measured search volume, GSC or GA4 performance.
+
+Preserved 22 articles × EN/DE/ES/FR/IT and measurement ID G-F6G27KWPPQ. Home previews four articles and includes compact FAQ. Public catalogue is read live from cnbuycha.com. Image similarity uses an explicitly dated index from its 3,436 product photos because the original project has no image-search endpoint. No third-party catalogue is substituted.
+
+GitHub remains the production delivery route. No Cloudflare account connection or deployment setting changes were made. Build/output paths are unchanged. `dist/_worker.js` handles the dynamic catalogue and serves existing static pages with `ASSETS.fetch`.
