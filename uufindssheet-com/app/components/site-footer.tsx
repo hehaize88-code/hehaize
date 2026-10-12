@@ -48,7 +48,7 @@ export function SiteFooter({ locale = "en" }: { locale?: FooterLocale }) {
         <Link href={`${prefix}/privacy/`}>{copy.policy[3]}</Link>
         <Link href={`${prefix}/terms/`}>{copy.policy[4]}</Link>
       </nav>
-      <Link className="footer-shop-link" href={`${prefix}/products/`}>{copy.link}</Link>
+      <a className="footer-shop-link" href={`${prefix}/catalog/`}>{copy.link}</a>
     </footer>
   );
 }

@@ -85,6 +85,13 @@ export async function catalogueRoute(request,env) {
  }
  if(!match)return null;
  if(!['GET','HEAD'].includes(request.method))return new Response(null,{status:405});
+ // Recover document URLs produced by stale Next static-export navigation.
+ // The catalogue has no RSC index.txt payload; always load its HTML route.
+ if(/\/index\.txt\/?$/.test(url.pathname)) {
+  url.pathname=url.pathname.replace(/\/index\.txt\/?$/,'/');
+  url.searchParams.delete('_rsc');
+  return new Response(null,{status:302,headers:{location:url.href,'cache-control':'no-store'}});
+ }
  const lang=match[1]||'en',tail=match[2]||'',t=labels(lang),path='/catalog/'+tail;
  if(!url.pathname.endsWith('/')&&!tail.endsWith('.html'))return Response.redirect(url.origin+url.pathname+'/'+url.search,308);
  if(tail==='search.html') {
