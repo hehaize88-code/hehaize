@@ -34,7 +34,7 @@ export default function AnalyticsTracker() {
       form.querySelectorAll('input[name="channelid"], input[name="method"]').forEach((input) => {
         input.remove();
       });
-      form.action = "https://cnbuycha.com/AllProducts/";
+      // The form owns its locale-specific catalogue action.
       form.method = "get";
 
       const query = new FormData(form).get("q");
@@ -52,6 +52,7 @@ export default function AnalyticsTracker() {
       if (!(link instanceof HTMLAnchorElement)) return;
 
       const linkPath = cleanPath(link.href);
+      if(link.dataset.trackEvent) sendEvent(link.dataset.trackEvent,{page_path:window.location.pathname,destination_path:linkPath});
       if (link.closest(".article-card")) {
         sendEvent("article_click", {
           article_path: linkPath,

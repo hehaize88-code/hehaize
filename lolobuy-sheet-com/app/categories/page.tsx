@@ -56,7 +56,7 @@ export default async function CategoriesPage({
           <article className="category-page-card" key={category.slug}>
             <a
               className="category-destination-link"
-              href={category.href}
+              href={localizedPath(category.href,locale)}
               target="_blank"
               rel="sponsored noopener"
             >

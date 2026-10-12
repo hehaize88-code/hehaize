@@ -10,7 +10,7 @@ npm run build
 pages_output="${project_root}/dist/client"
 worker_source="${project_root}/dist/server"
 pages_worker_entry="${script_dir}/pages-worker-entry.mjs"
-asset_version="v20261003-1"
+asset_version="v20261012-catalog-1"
 versioned_assets="${pages_output}/assets/${asset_version}"
 esbuild="${project_root}/node_modules/.bin/esbuild"
 async_hooks_polyfill="${project_root}/node_modules/unenv/dist/runtime/node/async_hooks.mjs"
@@ -100,11 +100,11 @@ const productRedirectResponse = await worker.default.fetch(
   {},
 );
 if (
-  productRedirectResponse.status !== 302 ||
+  productRedirectResponse.status !== 301 ||
   productRedirectResponse.headers.get("location") !==
-    "https://www.cnbuycha.com/AllProducts/3359.html"
+    "https://lolobuy-sheet.com/catalog/accessories/3359.html"
 ) {
-  throw new Error("Product detail routes must redirect to the matching main-site product");
+  throw new Error("Product detail routes must redirect to the matching local catalogue product");
 }
 
 const homeResponse = await worker.default.fetch(

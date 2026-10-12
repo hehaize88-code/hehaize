@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     images: ["/social/lolobuy-sheet-share.webp"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/lolobuy-icon.png",
+    shortcut: "/lolobuy-icon.png",
   },
 };
 
@@ -55,6 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head><link rel="stylesheet" href="/site-shell.css?v=20261012" /></head>
       <body>
         <AnalyticsTracker />
         {children}

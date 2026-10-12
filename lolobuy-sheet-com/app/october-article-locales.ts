@@ -55,7 +55,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Ouvrir la fiche produit",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },
@@ -214,7 +214,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Ouvrir la fiche produit",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },
@@ -727,7 +727,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Abrir ficha del producto",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },
@@ -886,7 +886,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Abrir ficha del producto",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },
@@ -1399,7 +1399,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Produktangebot öffnen",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },
@@ -1558,7 +1558,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Produktangebot öffnen",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },
@@ -2071,7 +2071,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Aprire la scheda prodotto",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },
@@ -2230,7 +2230,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
           "links": [
             {
               "label": "Aprire la scheda prodotto",
-              "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+              "href": "/catalog/hoodies-sweaters/3370.html"
             }
           ]
         },

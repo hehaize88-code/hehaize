@@ -1,20 +1,17 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import LiveProducts from "./components/live-products";
+import { commerceCopy } from "./commerce-copy";
 import Image from "next/image";
 import Link from "next/link";
 import ArticleCard, { type ArticleSummary } from "./components/article-card";
-import ProductImage from "./components/product-image";
 import ProductSearch from "./components/product-search";
 import SiteFooter from "./components/site-footer";
 import SiteHeader from "./components/site-header";
 import { homeCopy, localizedPath, type Locale } from "./i18n";
 import {
   getLocalizedFaqs,
-  getLocalizedProducts,
 } from "./localized-data";
-
-type Filter = "all" | "new" | "trending" | "essential";
 
 const categoryEdits = [
   {
@@ -39,40 +36,9 @@ const categoryEdits = [
   },
 ];
 
-function BookmarkIcon({ filled = false }: { filled?: boolean }) {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      fill={filled ? "currentColor" : "none"}
-      stroke="currentColor"
-      strokeWidth="1.8"
-    >
-      <path d="M6.75 4.75a2 2 0 0 1 2-2h6.5a2 2 0 0 1 2 2v16l-5.25-3-5.25 3v-16Z" />
-    </svg>
-  );
-}
-
 export default function HomeClient({ locale, latestArticles }: { locale: Locale; latestArticles: ArticleSummary[] }) {
-  const [activeFilter, setActiveFilter] = useState<Filter>("all");
-  const [saved, setSaved] = useState<Record<string, boolean>>({});
-  const copy = homeCopy[locale];
-  const localizedProducts = getLocalizedProducts(locale);
+  const copy = {...homeCopy[locale],...commerceCopy[locale]};
   const localizedFaqs = getLocalizedFaqs(locale);
-  const filters: { id: Filter; label: string }[] = [
-    { id: "all", label: copy.filters.all },
-    { id: "new", label: copy.filters.new },
-    { id: "trending", label: copy.filters.trending },
-    { id: "essential", label: copy.filters.essential },
-  ];
-
-  const visibleFinds = useMemo(
-    () =>
-      activeFilter === "all"
-        ? localizedProducts
-        : localizedProducts.filter((item) => item.tags.includes(activeFilter)),
-    [activeFilter, localizedProducts],
-  );
 
   return (
     <main className="home-page">
@@ -90,7 +56,7 @@ export default function HomeClient({ locale, latestArticles }: { locale: Locale;
           <div className="hero-actions">
             <Link
               className="button button-primary"
-              href={localizedPath("/finds", locale)}
+              href={localizedPath("/catalog/", locale)}
             >
               {copy.explore}
             </Link>
@@ -103,79 +69,12 @@ export default function HomeClient({ locale, latestArticles }: { locale: Locale;
           </div>
 
           <ProductSearch locale={locale} />
+          <a className="image-search-shortcut" href={localizedPath("/catalog/image-search/",locale)}>{commerceCopy[locale].imageSearch} →</a>
 
           <p className="independent-note">{copy.note}</p>
         </div>
 
-        <div className="curated-card" id="curated">
-          <div className="curated-toolbar">
-            <div>
-              <p className="card-overline">{copy.curatedOverline}</p>
-              <h2>{copy.curatedTitle}</h2>
-            </div>
-            <div className="filter-tabs" role="tablist" aria-label="Find filters">
-              {filters.map((filter) => (
-                <button
-                  key={filter.id}
-                  className={activeFilter === filter.id ? "is-active" : ""}
-                  type="button"
-                  role="tab"
-                  aria-selected={activeFilter === filter.id}
-                  onClick={() => setActiveFilter(filter.id)}
-                >
-                  {filter.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="find-grid" aria-live="polite">
-            {visibleFinds.map((item, index) => (
-              <article className="find-card" key={item.name}>
-                <a
-                  className="find-link"
-                  href={item.destinationHref}
-                  target="_blank"
-                  rel="sponsored noopener"
-                  aria-label={`View ${item.name} on the main site`}
-                >
-                  <ProductImage
-                    slug={item.slug}
-                    alt={item.name}
-                    sizes="(max-width: 620px) 22vw, (max-width: 930px) 23vw, 11vw"
-                    priority={index < 4}
-                  />
-                </a>
-                <button
-                  className={saved[item.name] ? "save-button is-saved" : "save-button"}
-                  type="button"
-                  aria-label={
-                    saved[item.name]
-                      ? `Remove ${item.name} from saved finds`
-                      : `Save ${item.name}`
-                  }
-                  aria-pressed={Boolean(saved[item.name])}
-                  onClick={() =>
-                    setSaved((current) => ({
-                      ...current,
-                      [item.name]: !current[item.name],
-                    }))
-                  }
-                >
-                  <BookmarkIcon filled={Boolean(saved[item.name])} />
-                </button>
-                <span className="find-name">{item.name}</span>
-              </article>
-            ))}
-          </div>
-
-          <Link
-            className="card-footer-link"
-            href={localizedPath("/finds", locale)}
-          >
-            {copy.viewDirectory} <span aria-hidden="true">→</span>
-          </Link>
-        </div>
+        <LiveProducts locale={locale} />
       </section>
 
       <section className="browse-edit" aria-labelledby="browse-edit-title">
@@ -186,9 +85,7 @@ export default function HomeClient({ locale, latestArticles }: { locale: Locale;
         <div className="edit-grid">
           {categoryEdits.map((category, index) => (
             <a
-              href={category.href}
-              target="_blank"
-              rel="sponsored noopener"
+              href={localizedPath(category.href.replace("https://www.cnbuycha.com", "/catalog").replace("/Jersey/","/jersey/"),locale)}
               className="edit-card"
               key={category.label}
             >

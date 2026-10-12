@@ -1,11 +1,11 @@
 const contentSecurityPolicy = [
   "default-src 'self'",
   "base-uri 'self'",
-  "connect-src 'self'",
+  "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com",
   "font-src 'self' data:",
   "form-action 'self' https://cnbuycha.com https://www.cnbuycha.com",
   "frame-ancestors 'none'",
-  "img-src 'self' data: blob:",
+  "img-src 'self' https: data: blob:",
   "object-src 'none'",
   "script-src 'self' 'unsafe-inline'",
   "style-src 'self' 'unsafe-inline'",

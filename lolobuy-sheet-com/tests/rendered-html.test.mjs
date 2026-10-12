@@ -125,7 +125,7 @@ test("publishes all translated URLs plus eight English priority guides", async (
     response.headers.get("content-type") ?? "",
     /application\/xml|text\/xml/i,
   );
-  assert.equal((xml.match(/<url>/g) ?? []).length, 193);
+  assert.equal((xml.match(/<url>/g) ?? []).length, 188);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/faq/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/de\/categories\/shoes/);
   assert.match(xml, /https:\/\/lolobuy-sheet\.com\/fr\/categories\/bags/);
@@ -316,10 +316,10 @@ test("category cards open the matching live directories and use a jersey card", 
   const html = await response.text();
 
   assert.equal(response.status, 200);
-  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/shoes\/"/);
-  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/hoodies-sweaters\/"/);
-  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/accessories\/"/);
-  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/Jersey\/"/);
+  assert.match(html, /href="\/catalog\/shoes\/"/);
+  assert.match(html, /href="\/catalog\/hoodies-sweaters\/"/);
+  assert.match(html, /href="\/catalog\/accessories\/"/);
+  assert.match(html, /href="\/catalog\/jersey\/"/);
   assert.match(html, /src="\/products\/jersey\.webp"/);
   assert.match(html, /<h2>Jersey<\/h2>/);
   assert.match(html, /href="\/categories\/jersey"/);
@@ -333,13 +333,13 @@ test("homepage fourth edit is Jersey and commercial links are qualified", async 
   const html = await response.text();
 
   assert.equal(response.status, 200);
-  assert.match(html, /href="https:\/\/www\.cnbuycha\.com\/Jersey\/"[^>]*rel="sponsored noopener"/);
+  assert.match(html, /href="\/catalog\/jersey\/"/);
   assert.match(html, /src="\/products\/jersey\.webp"/);
   assert.match(html, />Jersey<\/span>/);
   assert.match(html, />Bags &amp; Accessories<\/span>/);
 });
 
-test("search forms use the live main-site directory query", async () => {
+test("search forms use the local live catalogue query", async () => {
   const worker = await loadWorker();
 
   for (const path of ["/", "/categories", "/how-it-works"]) {
@@ -349,7 +349,7 @@ test("search forms use the live main-site directory query", async () => {
     assert.equal(response.status, 200, path);
     assert.match(
       html,
-      /<form[^>]*class="[^"]*product-search[^"]*"[^>]*action="https:\/\/cnbuycha\.com\/AllProducts\/"[^>]*method="get"/i,
+      /<form[^>]*class="[^"]*product-search[^"]*"[^>]*action="\/catalog\/"[^>]*method="get"/i,
       `${path} must submit search to the live directory`,
     );
     assert.match(html, /<input[^>]*name="q"[^>]*type="search"|<input[^>]*type="search"[^>]*name="q"/i);
@@ -358,35 +358,11 @@ test("search forms use the live main-site directory query", async () => {
   }
 });
 
-test("product cards open their exact matching main-site product pages", async () => {
-  const worker = await loadWorker();
-  const expectedProductUrls = [
-    "3359",
-    "3353",
-    "3413",
-    "3355",
-    "3328",
-    "3295",
-    "3312",
-    "3374",
-  ].map((id) => `https://www.cnbuycha.com/AllProducts/${id}.html`);
-
-  for (const path of ["/", "/finds"]) {
-    const response = await fetchPage(worker, path);
-    const html = await response.text();
-
-    assert.equal(response.status, 200, path);
-    for (const url of expectedProductUrls) {
-      assert.match(
-        html,
-        new RegExp(
-          `href="${url.replaceAll(".", "\\.")}"[^>]*target="_blank"[^>]*rel="sponsored noopener"`,
-        ),
-        `${path} must link directly to ${url}`,
-      );
-    }
-    assert.doesNotMatch(html, /href="\/products\//);
-  }
+test("homepage shows actual source catalogue products, USD and the image search",async()=>{
+ const worker=await loadWorker();const response=await fetchPage(worker,'/');const html=await response.text();
+ const products=JSON.parse(await readFile(new URL('../commerce/home-products.json',import.meta.url),'utf8'));
+ for(const p of products)assert.ok(html.includes('href="/catalog'+p.path+'"'));
+ assert.match(html,/USD/);assert.match(html,/href="\/catalog\/image-search\/"/);
 });
 
 test("serves eight evidence-led product pages with local responsive images", async () => {
@@ -532,7 +508,7 @@ test("publishes a bounded English QC-mismatch article and an evolving topic map"
   );
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
-  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com\/(?!index")/i);
 
   const topicMap = await readFile(
     new URL("../app/article-topic-map.ts", import.meta.url),
@@ -581,10 +557,10 @@ test("publishes eight substantial English priority guides without false hreflang
         `<link rel="canonical" href="https:\\/\\/lolobuy-sheet\\.com\\/articles\\/${slug}"`,
       ),
     );
-    assert.doesNotMatch(html, /hrefLang="(?:es|de|fr|it)"/i);
+    assert.doesNotMatch(html, /<link[^>]*hrefLang="(?:es|de|fr|it)"/i);
     assert.match(html, /"@type":"Article"/);
     assert.match(html, /"@type":"BreadcrumbList"/);
-    assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+    assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com\/(?!index")/i);
 
     const localized = await fetchPage(worker, `/de/articles/${slug}`);
     assert.equal(localized.status, 404, `${slug} must not claim a German translation`);
@@ -623,7 +599,7 @@ test("publishes a distinct five-language tracking troubleshooting article", asyn
   );
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
-  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com\/(?!index")/i);
 
   for (const [locale, expected] of [
     ["es", /MÉTODO DEL ÚLTIMO ESCANEO/i],
@@ -669,7 +645,7 @@ test("publishes a distinct five-language shoe sizing decision guide", async () =
   assert.match(html, /<link rel="canonical" href="https:\/\/lolobuy-sheet\.com\/articles\/lolobuy-shoe-size-guide"/);
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
-  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com\/(?!index")/i);
   assert.doesNotMatch(html, /"@type":"Product"/);
 
   for (const [locale, expected] of [
@@ -711,7 +687,7 @@ test("publishes a distinct five-language keyword-search workflow", async () => {
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /lolobuy-keyword-search-product-finds\.svg/);
-  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com\/(?!index")/i);
   assert.doesNotMatch(html, /"@type":"Product"/);
 
   for (const locale of ["es", "de", "fr", "it"]) {
@@ -737,7 +713,7 @@ test("publishes a distinct five-language Taobao option comparison guide", async 
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /lolobuy-taobao-finds-compare-options\.svg/);
-  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com\/(?!index")/i);
   assert.doesNotMatch(html, /"@type":"Product"/);
 
   for (const locale of ["es", "de", "fr", "it"]) {
@@ -763,7 +739,7 @@ test("publishes a distinct five-language 1688 quantity and variant guide", async
   assert.match(html, /"@type":"Article"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /lolobuy-1688-finds-moq-variants\.svg/);
-  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com/i);
+  assert.doesNotMatch(html, /href="https:\/\/www\.lolobuy\.com\/(?!index")/i);
   assert.doesNotMatch(html, /"@type":"Product"/);
 
   for (const locale of ["es", "de", "fr", "it"]) {

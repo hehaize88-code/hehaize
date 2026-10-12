@@ -54,7 +54,7 @@ export const octoberArticles: Article[] = [
         "links": [
           {
             "label": "Open the $15.42 listing",
-            "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+            "href": "/catalog/hoodies-sweaters/3370.html"
           }
         ]
       },
@@ -221,7 +221,7 @@ export const octoberArticles: Article[] = [
         "links": [
           {
             "label": "Open sweatshirt record 3370",
-            "href": "https://cnbuycha.com/hoodies-sweaters/3370.html"
+            "href": "/catalog/hoodies-sweaters/3370.html"
           }
         ]
       },

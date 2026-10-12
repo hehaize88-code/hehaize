@@ -11,7 +11,6 @@ const staticLastModified = new Date("2026-10-03");
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
-    "/finds",
     "/categories",
     "/how-it-works",
     "/guides/qc",

@@ -294,7 +294,7 @@ const seeds: GuideSeed[] = [
   {
     slug: "jackets",
     image: "/products/jacket.webp",
-    directoryHref: "https://www.cnbuycha.com/jackets/",
+    directoryHref: "/catalog/jackets/",
     productKinds: ["jacket"],
     details: {
       en: { name: "Jackets", singular: "jacket", measurements: "chest width, shoulder width, sleeve length and back length", visibleDetails: "closure alignment, seams, lining, fill distribution, pockets and panel shape", packing: "Padded outerwear can add substantial parcel volume. Compression may reduce dimensions but can affect shape or insulation, so compare the actual packing options before shipment." },
@@ -307,7 +307,7 @@ const seeds: GuideSeed[] = [
   {
     slug: "pants-shorts",
     image: "/products/cargo-pants.webp",
-    directoryHref: "https://www.cnbuycha.com/pants-shorts/",
+    directoryHref: "/catalog/pants-shorts/",
     productKinds: [],
     details: {
       en: { name: "Pants & Shorts", singular: "pants or shorts item", measurements: "waist width, front rise, inseam, thigh and leg opening", visibleDetails: "waistband shape, fly, seams, pocket alignment, hems and leg symmetry", packing: "Pants and shorts usually fold compactly, but dense fabric and bundled quantities still affect packed weight. Keep measurements and quantities clear during consolidation." },
@@ -320,7 +320,7 @@ const seeds: GuideSeed[] = [
   {
     slug: "headwear",
     image: "/products/cap.webp",
-    directoryHref: "https://www.cnbuycha.com/headwear/",
+    directoryHref: "/catalog/headwear/",
     productKinds: ["headwear"],
     details: {
       en: { name: "Headwear", singular: "headwear item", measurements: "internal circumference, crown height, brim length and adjustment range", visibleDetails: "crown shape, panel symmetry, brim curve, embroidery, seams and adjustment hardware", packing: "Structured crowns and brims can deform under pressure. A protective pack may preserve shape but increase volume, so choose from the actual packing options." },
@@ -333,7 +333,7 @@ const seeds: GuideSeed[] = [
   {
     slug: "accessories",
     image: "/products/accessories.webp",
-    directoryHref: "https://www.cnbuycha.com/accessories/",
+    directoryHref: "/catalog/accessories/",
     productKinds: ["eyewear"],
     details: {
       en: { name: "Accessories", singular: "accessory", measurements: "overall dimensions, opening or strap range, attachment size and compatibility measurements", visibleDetails: "fasteners, edges, finish, alignment, moving parts and every detachable piece", packing: "Small accessories are easy to omit during consolidation, while rigid or fragile pieces need protection. Confirm the item count and route eligibility for the actual materials." },
@@ -346,7 +346,7 @@ const seeds: GuideSeed[] = [
   {
     slug: "t-shirts",
     image: "/products/sweatshirt.webp",
-    directoryHref: "https://www.cnbuycha.com/t-shirts/",
+    directoryHref: "/catalog/t-shirts/",
     productKinds: [],
     details: {
       en: { name: "T-Shirts", singular: "T-shirt", measurements: "chest width, shoulder width, sleeve length and total length", visibleDetails: "collar shape, print or embroidery scale, placement, seams, hems and panel alignment", packing: "T-shirts usually pack efficiently, but several dense garments can add weight. Keep each size and design identifiable when consolidating similar items." },
@@ -359,7 +359,7 @@ const seeds: GuideSeed[] = [
   {
     slug: "jersey",
     image: "/products/jersey.webp",
-    directoryHref: "https://www.cnbuycha.com/Jersey/",
+    directoryHref: "/catalog/jersey/",
     productKinds: [],
     details: {
       en: { name: "Jersey", singular: "jersey", measurements: "chest width, total length, sleeve length and labelled size", visibleDetails: "team and season details, badges, sponsor marks, name and number placement, seams and collar", packing: "Jerseys are usually light, but heat-applied names, numbers and badges can crease or stick under pressure. Protect printed surfaces and confirm route eligibility." },

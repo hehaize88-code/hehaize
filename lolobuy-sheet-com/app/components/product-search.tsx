@@ -1,4 +1,4 @@
-import { searchCopy, type Locale } from "../i18n";
+import { searchCopy, localizedPath, type Locale } from "../i18n";
 
 export default function ProductSearch({
   compact = false,
@@ -12,9 +12,8 @@ export default function ProductSearch({
   return (
     <form
       className={compact ? "product-search product-search-compact" : "product-search"}
-      action="https://cnbuycha.com/AllProducts/"
+      action={localizedPath("/catalog/",locale)}
       method="get"
-      target="_blank"
       role="search"
     >
       <label className="sr-only" htmlFor={compact ? "product-search-compact" : "product-search"}>

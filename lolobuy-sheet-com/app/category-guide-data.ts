@@ -65,7 +65,7 @@ const categoryGuides: CategoryGuideConfig[] = [
   {
     slug: "shoes",
     image: "/products/sneakers.webp",
-    directoryHref: "https://www.cnbuycha.com/shoes/",
+    directoryHref: "/catalog/shoes/",
     productKinds: ["shoes"],
     copy: {
       en: {
@@ -307,7 +307,7 @@ const categoryGuides: CategoryGuideConfig[] = [
   {
     slug: "hoodies-sweaters",
     image: "/products/hoodie.webp",
-    directoryHref: "https://www.cnbuycha.com/hoodies-sweaters/",
+    directoryHref: "/catalog/hoodies-sweaters/",
     productKinds: ["hoodie"],
     copy: {
       en: {
@@ -545,7 +545,7 @@ const categoryGuides: CategoryGuideConfig[] = [
   {
     slug: "bags",
     image: "/products/bag.webp",
-    directoryHref: "https://www.cnbuycha.com/accessories/",
+    directoryHref: "/catalog/accessories/",
     productKinds: ["bag"],
     copy: {
       en: {

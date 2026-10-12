@@ -2,7 +2,7 @@ import { sellerPageArticle } from "./seller-page-article";
 import { priorityArticles } from "./priority-articles";
 import { octoberArticles } from "./october-articles";
 
-export const destinationBase = "https://www.cnbuycha.com";
+export const destinationBase = "/catalog";
 
 export type ProductKind =
   | "eyewear"
@@ -29,7 +29,7 @@ export const productFinds: ProductFind[] = [
     slug: "snow-ski-goggles",
     name: "Ski goggles · 3359",
     image: "/product-finds/verified-3359-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3359.html`,
+    destinationHref: `${destinationBase}/accessories/3359.html`,
     listingReference: "3359",
     kind: "eyewear",
     category: "Eyewear",
@@ -41,7 +41,7 @@ export const productFinds: ProductFind[] = [
     slug: "gucci-hat",
     name: "Casual hat · 3353",
     image: "/product-finds/verified-3353-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3353.html`,
+    destinationHref: `${destinationBase}/headwear/3353.html`,
     listingReference: "3353",
     kind: "headwear",
     category: "Headwear",
@@ -53,7 +53,7 @@ export const productFinds: ProductFind[] = [
     slug: "off-white-hoodies",
     name: "Autumn and winter sweater",
     image: "/product-finds/verified-3413-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3413.html`,
+    destinationHref: `${destinationBase}/hoodies-sweaters/3413.html`,
     listingReference: "3413",
     kind: "hoodie",
     category: "Hoodies & sweaters",
@@ -65,7 +65,7 @@ export const productFinds: ProductFind[] = [
     slug: "numeris-high-top-shoes",
     name: "MM 07 casual shoes",
     image: "/product-finds/verified-3355-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3355.html`,
+    destinationHref: `${destinationBase}/shoes/3355.html`,
     listingReference: "3355",
     kind: "shoes",
     category: "Shoes",
@@ -77,7 +77,7 @@ export const productFinds: ProductFind[] = [
     slug: "hoka-speedgoat-5",
     name: "Skyline USKYLINE-FLOATX shoes",
     image: "/product-finds/verified-3328-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3328.html`,
+    destinationHref: `${destinationBase}/shoes/3328.html`,
     listingReference: "3328",
     kind: "shoes",
     category: "Shoes",
@@ -89,7 +89,7 @@ export const productFinds: ProductFind[] = [
     slug: "nike-elite-backpack",
     name: "XJXPCS backpack",
     image: "/product-finds/verified-3295-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3295.html`,
+    destinationHref: `${destinationBase}/accessories/3295.html`,
     listingReference: "3295",
     kind: "bag",
     category: "Bags",
@@ -101,7 +101,7 @@ export const productFinds: ProductFind[] = [
     slug: "balenciaga-puffer",
     name: "Classic pattern winter jacket",
     image: "/product-finds/verified-3312-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3312.html`,
+    destinationHref: `${destinationBase}/jackets/3312.html`,
     listingReference: "3312",
     kind: "jacket",
     category: "Outerwear",
@@ -113,7 +113,7 @@ export const productFinds: ProductFind[] = [
     slug: "winter-hooded-jacket",
     name: "Winter hooded padded coat",
     image: "/product-finds/verified-3374-320.webp",
-    destinationHref: `${destinationBase}/AllProducts/3374.html`,
+    destinationHref: `${destinationBase}/jackets/3374.html`,
     listingReference: "3374",
     kind: "jacket",
     category: "Outerwear",
@@ -192,7 +192,7 @@ export const categories = [
     name: "Jersey",
     slug: "jersey",
     image: "/products/jersey.webp",
-    href: `${destinationBase}/Jersey/`,
+    href: `${destinationBase}/jersey/`,
     description:
       "Browse football, basketball and other sports jerseys, then confirm the exact team, season, size and selected version.",
   },
@@ -1742,7 +1742,7 @@ export const faqs = [
     question: "Does this site sell, store or ship products?",
     basis: "INDEPENDENT DIRECTORY",
     answer:
-      "No. This site organizes product finds and explains the buying process; it does not accept payment, purchase from sellers, inspect goods, operate a warehouse or arrange international delivery. Each product card uses its listing reference to open the corresponding product on the main site directly. Any order status, payment, warehouse photograph, return request, parcel quote or tracking update belongs to the service handling that transaction, not to this directory.",
+      "No. This site organizes product finds and explains the buying process; it does not accept payment, purchase from sellers, inspect goods, operate a warehouse or arrange international delivery. Each product card opens its matching catalogue detail page. The purchase button then opens the original Weidian item on LoloBuy. Any order status, payment, warehouse photograph, return request, parcel quote or tracking update belongs to the service handling that transaction, not to this directory.",
   },
   {
     question: "What does LoloBuy officially say its buying service does?",
