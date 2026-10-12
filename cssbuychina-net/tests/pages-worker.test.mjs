@@ -45,6 +45,10 @@ test("serves production pages and crawler directives", async () => {
   assert.match(html, /CSSBuy Spreadsheet/i);
   assert.match(html, /content=["']index, follow["']/i);
   assert.doesNotMatch(html, /codex-preview/i);
+  assert.match(html, /href="\/guides">Guides<\/a>/);
+  assert.match(html, /href="\/guides\/read-warehouse-qc-photos">QC photos<\/a>/);
+  assert.match(html, /<h2>Read before you order<\/h2>/);
+  assert.match(html, /Independent spreadsheet\. Not operated by or affiliated with CSSBuy\./);
   assert.doesNotMatch(html, /\/workspace\//i);
 
   const visibleText = (html.match(/<body[^>]*>([\s\S]*?)<\/body>/i)?.[1] ?? html)
