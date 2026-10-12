@@ -34,6 +34,15 @@ Research sources, reviewed 2026-10-12:
 
 ## Verification
 
-Run `npm ci --ignore-scripts`, `npm run build:pages`, then `npm run test:release`. Public source fixtures are generated using the cnbuycha HTML renderer with test records, not copied private data. Tests check source ID integrity, price/image parsing, forwarding, error states, legacy redirects, all editorial translations and sitemap coverage. No local browser preview is available in this environment; do not report an interactive upload test as performed.
+Run `npm ci --ignore-scripts`, `npm run build:pages`, then `npm run test:release`. Public source fixtures are generated using the cnbuycha HTML renderer with test records, not copied private data. Tests check source ID integrity, price/image parsing, forwarding, error states, legacy redirects, all editorial translations and sitemap coverage. No local browser preview is available in this environment. Public production was inspected after deployment.
 
-Release validation: build and 11 runtime/content checks passed. Standalone TypeScript checking reports pre-existing missing Cloudflare ambient declarations (`cloudflare:workers`, `Fetcher`, `D1Database`); no new application type errors were reported. Production catalogue browsing, keyword search and a five-image detail gallery with the matching CSSBuy purchase ID were inspected after deployment. The cloud browser download/chooser test did not complete a successful image-search match; that interactive upload remains unverified. Files with empty or generic MIME metadata are decoded as images before matching, so a missing extension alone does not reject a valid raster file.
+Release validation: build and 11 runtime/content checks passed. Standalone TypeScript checking reports pre-existing missing Cloudflare ambient declarations (`cloudflare:workers`, `Fetcher`, `D1Database`); no new application type errors were reported. Production catalogue browsing, keyword search and a five-image detail gallery with the matching CSSBuy purchase ID were inspected after deployment. A production PNG upload successfully returned 24 similar products from the 3,435-item image index; this verifies the upload and result flow, not exact-product matching accuracy. Files with empty or generic MIME metadata are decoded as images before matching, so a missing extension alone does not reject a valid raster file.
+
+
+## Shared template and homepage FAQ — October 12, 2026
+
+Homepage, editorial indexes, complete articles, guides, FAQ and live catalogue now share the same blue/white design, navigation, registration action and footer. Shared labels and routes live in `shared/site-chrome.js`; React pages use `SiteChrome.tsx`, while the catalogue renders the same labels and shared CSS. The CSSBuy logo returns to the local language homepage. Only the right-side registration button opens the official CSSBuy entry point.
+
+The homepage includes six expandable questions in all four existing languages, with matching FAQPage structured data and a link to the complete FAQ. Editorial cards use readable sans-serif headings and restrained white/blue surfaces; articles retain their complete text, tables and calculator.
+
+Validation: production build and 11 existing release checks passed. All four localized FAQ/schema counts, top-navigation destinations and logo/registration destinations checked in the bundled worker. Standalone TypeScript checking has only the three pre-existing Cloudflare ambient-type errors.

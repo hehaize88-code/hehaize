@@ -1,16 +1,16 @@
 {
-  "_LanguageSwitcher-BeTHhCdf.js": {
-    "file": "assets/LanguageSwitcher-BeTHhCdf.js",
+  "_LanguageSwitcher-DFwKcQ4F.js": {
+    "file": "assets/LanguageSwitcher-DFwKcQ4F.js",
     "name": "LanguageSwitcher",
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "virtual:vinext-app-browser-entry",
       "_i18n-D-HAF8qh.js",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ]
   },
-  "_framework-CXnKph_e.js": {
-    "file": "assets/framework-CXnKph_e.js",
+  "_framework-DjPHiq1u.js": {
+    "file": "assets/framework-DjPHiq1u.js",
     "name": "framework",
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js"
@@ -25,92 +25,79 @@
     "name": "rolldown-runtime"
   },
   "app/components/AnalyticsEvents.tsx": {
-    "file": "assets/AnalyticsEvents-DeGdWFjW.js",
+    "file": "assets/AnalyticsEvents-ZmaYF2iO.js",
     "name": "AnalyticsEvents",
     "src": "app/components/AnalyticsEvents.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
-      "_framework-CXnKph_e.js"
-    ]
-  },
-  "app/components/InnerShell.tsx": {
-    "file": "assets/InnerShell-B0UY0Fau.js",
-    "name": "InnerShell",
-    "src": "app/components/InnerShell.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "app/components/AnalyticsEvents.tsx",
-      "_LanguageSwitcher-BeTHhCdf.js",
-      "_i18n-D-HAF8qh.js",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ]
   },
   "app/components/LiveFinds.tsx": {
-    "file": "assets/LiveFinds-DZiHQdLv.js",
+    "file": "assets/LiveFinds-U5suIjjz.js",
     "name": "LiveFinds",
     "src": "app/components/LiveFinds.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "_i18n-D-HAF8qh.js",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ]
   },
   "app/components/ParcelWeightCalculator.tsx": {
-    "file": "assets/ParcelWeightCalculator-Ctb9X-k8.js",
+    "file": "assets/ParcelWeightCalculator-8trLtwl3.js",
     "name": "ParcelWeightCalculator",
     "src": "app/components/ParcelWeightCalculator.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "app/components/AnalyticsEvents.tsx",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ]
   },
   "app/products/page.tsx": {
-    "file": "assets/page-BT3OQ7m6.js",
+    "file": "assets/page-Cx6a-TPQ.js",
     "name": "page",
     "src": "app/products/page.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "app/components/AnalyticsEvents.tsx",
-      "app/components/InnerShell.tsx",
+      "_LanguageSwitcher-DFwKcQ4F.js",
       "_i18n-D-HAF8qh.js",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-BfhQDwf1.js",
+    "file": "assets/layout-segment-context-cNrzI7L2.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "virtual:vinext-app-browser-entry",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ]
   },
   "node_modules/vinext/dist/shims/script.js": {
-    "file": "assets/script-CWzCAwPL.js",
+    "file": "assets/script-C-o1ODDo.js",
     "name": "script",
     "src": "node_modules/vinext/dist/shims/script.js",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-Bb1G4g6X.js",
+    "file": "assets/index-tFoSKOOy.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
-      "_framework-CXnKph_e.js"
+      "_framework-DjPHiq1u.js"
     ],
     "dynamicImports": [
       "node_modules/vinext/dist/shims/layout-segment-context.js",
@@ -118,10 +105,9 @@
       "app/components/LiveFinds.tsx",
       "virtual:vinext-app-browser-entry",
       "node_modules/vinext/dist/shims/script.js",
-      "app/components/InnerShell.tsx",
       "app/products/page.tsx",
       "app/components/AnalyticsEvents.tsx",
-      "_LanguageSwitcher-BeTHhCdf.js"
+      "_LanguageSwitcher-DFwKcQ4F.js"
     ]
   }
 }

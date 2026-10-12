@@ -21,11 +21,11 @@ export function LanguageSwitcher({ locale = "en" }: { locale?: SiteLocale }) {
   const current = localeOptions.find((option) => option.code === locale) ?? localeOptions[0];
 
   return (
-    <details className="language-switcher">
+    <details className="unified-language">
       <summary aria-label={`Change language. Current language: ${current.label}`}>
         <span aria-hidden="true">◎</span>{current.short}<b aria-hidden="true">⌄</b>
       </summary>
-      <div className="language-menu">
+      <div className="unified-language-menu">
         <span>Language</span>
         {localeOptions.map((option) => (
           <a
