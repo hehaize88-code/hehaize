@@ -72,8 +72,9 @@ export function SiteHeader({
         />
       </Link>
       <nav aria-label="Main navigation">
-        <Link href={localHref("/catalog/")}>{currentLabels.finds}</Link>
-        <Link href={localHref("/catalog/")}>{currentLabels.products}</Link>
+        {/* The catalogue serves HTML outside Next's exported client router. */}
+        <a href={localHref("/catalog/")}>{currentLabels.finds}</a>
+        <a href={localHref("/catalog/")}>{currentLabels.products}</a>
         <Link href={localHref("/guides/uufinds-qc-checklist/")}>{currentLabels.qcGuide}</Link>
         <Link href={localHref("/how-it-works/")}>{currentLabels.howItWorks}</Link>
         <Link href={localHref("/articles/")}>{currentLabels.articles}</Link>
@@ -83,8 +84,8 @@ export function SiteHeader({
         <details className="mobile-nav-menu">
           <summary aria-label={currentLabels.menu ?? "Menu"}>{currentLabels.menu ?? "Menu"}</summary>
           <div className="mobile-nav-panel">
-            <Link href={localHref("/catalog/")}>{currentLabels.finds}</Link>
-            <Link href={localHref("/catalog/")}>{currentLabels.products}</Link>
+            <a href={localHref("/catalog/")}>{currentLabels.finds}</a>
+            <a href={localHref("/catalog/")}>{currentLabels.products}</a>
             <Link href={localHref("/guides/uufinds-qc-checklist/")}>{currentLabels.qcGuide}</Link>
             <Link href={localHref("/how-it-works/")}>{currentLabels.howItWorks}</Link>
             <Link href={localHref("/articles/")}>{currentLabels.articles}</Link>
