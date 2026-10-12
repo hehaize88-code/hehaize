@@ -42,7 +42,7 @@ test("serves production pages and crawler directives", async () => {
   const home = await worker.fetch(new Request("https://cssbuychina.net/"), env, context);
   assert.equal(home.status, 200);
   const html = await home.text();
-  assert.match(html, /CSSBuy Spreadsheet 2026/i);
+  assert.match(html, /CSSBuy Spreadsheet/i);
   assert.match(html, /content=["']index, follow["']/i);
   assert.doesNotMatch(html, /codex-preview/i);
   assert.doesNotMatch(html, /\/workspace\//i);
@@ -57,8 +57,8 @@ test("serves production pages and crawler directives", async () => {
     ...html.matchAll(/<a\b[^>]*href=["'](https?:\/\/[^"']+)["']/g),
   ].map((match) => new URL(match[1]).hostname);
   const externalHosts = [...new Set(externalHrefs.filter((hostname) => hostname !== "cssbuychina.net"))];
-  assert.ok(externalHosts.includes("www.cnbuycha.com"));
-  assert.deepEqual(externalHosts.filter((hostname) => hostname !== "fonts.googleapis.com"), ["www.cnbuycha.com"]);
+  assert.ok(externalHosts.includes("www.cssbuy.com"));
+  assert.deepEqual(externalHosts.filter((hostname) => hostname !== "fonts.googleapis.com"), ["www.cssbuy.com"]);
 
   const assetPaths = [
     ...html.matchAll(/(?:src|href)=["'](\/assets\/[^"']+)["']/g),

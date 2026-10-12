@@ -1,5 +1,13 @@
 {
   "version": 1,
-  "include": ["/*"],
-  "exclude": ["/sitemap.xml", "/robots.txt"]
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/assets/*",
+    "/robots.txt",
+    "/catalog.css",
+    "/catalog.js",
+    "/catalog-image-index.json"
+  ]
 }

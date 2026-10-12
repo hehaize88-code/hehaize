@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cssbuychina.net"),
   title: {
-    default: "CSSBuy Spreadsheet 2026: Links, Warehouse QC & Shipping",
+    default: "CSSBuy Spreadsheet 2026: Finds, QC Photos & Product Search",
     template: "%s | CSSBuy China",
   },
   description: "Browse a current CSSBuy spreadsheet and research warehouse status, QC photos, shipping costs, restrictions and parcel tracking before ordering.",
@@ -41,17 +41,17 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "CSSBuy China",
-    title: "CSSBuy Spreadsheet 2026: Links, Warehouse QC & Shipping",
+    title: "CSSBuy Spreadsheet 2026: Finds, QC Photos & Product Search",
     description: "Browse current CSSBuy finds and research warehouse status, QC photos, shipping costs, restrictions and parcel tracking.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSSBuy Spreadsheet 2026: Links, Warehouse QC & Shipping",
+    title: "CSSBuy Spreadsheet 2026: Finds, QC Photos & Product Search",
     description: "Browse current CSSBuy finds with warehouse QC, shipping cost, restriction and tracking guidance.",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "https://assets.cssbuy.com/icon/css_192.png",
+    shortcut: "https://assets.cssbuy.com/icon/css_192.png",
   },
 };
 

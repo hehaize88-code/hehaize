@@ -6,11 +6,9 @@ project_root="$(cd "${script_dir}/.." && pwd)"
 
 cd "${project_root}"
 
-# Remove only generated deployment outputs so stale hashed files cannot be
-# committed or served after a source change.
+# Replace build output while retaining old content-hashed assets for cached documents.
 rm -rf \
   "${project_root}/dist" \
-  "${project_root}/assets" \
   "${project_root}/.vite"
 rm -f \
   "${project_root}/_headers" \

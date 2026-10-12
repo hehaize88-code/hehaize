@@ -20,18 +20,18 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
       query_length: value.length,
       site_locale: locale,
     });
-    window.location.href = `https://www.cnbuycha.com/search.html?channelid=2&keywords=${encodeURIComponent(value)}`;
+    window.location.href = `${prefix}/catalog/?q=${encodeURIComponent(value)}`;
   }
 
   return (
     <>
       <header className="site-header inner-header">
-        <a className="brand" href={prefix || "/"} aria-label="CSSBuy China home">
-          <img className="brand-logo" src="/cssbuy-logo.png" alt="CSSBuy" />
+        <a className="brand" href="https://www.cssbuy.com/index" target="_blank" rel="noopener noreferrer" aria-label="Register on CSSBuy">
+          <img className="brand-logo" src="https://assets.cssbuy.com/static/icon/logo.svg" alt="CSSBuy" />
           <span className="brand-tagline">{copy.brandTagline}</span>
         </a>
         <nav className={menuOpen ? "nav-links nav-links--open" : "nav-links"} aria-label="Main navigation">
-          <a href={`${prefix}/products`}>{copy.nav.all}</a>
+          <a href={prefix || "/"}>Spreadsheet</a><a href={`${prefix}/catalog/`}>{copy.nav.all}</a>
           <a href={`${prefix}/categories`}>{copy.nav.categories}</a>
           <a href={`${prefix}/how-it-works`}>{copy.nav.how}</a>
           <a href={`${prefix}/guides`}>{copy.nav.guides}</a>
@@ -40,7 +40,7 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
         </nav>
         <div className="header-actions">
           <LanguageSwitcher locale={locale} />
-          <a className="header-cta" href={`${prefix}/products`}>{copy.nav.browse} <span aria-hidden="true">↗</span></a>
+          <a className="header-cta" href={`${prefix}/catalog/`}>{copy.nav.browse} <span aria-hidden="true">↗</span></a>
           <button className="menu-button" type="button" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen((value) => !value)}>
             {menuOpen ? "Close" : "Menu"}
           </button>
@@ -50,19 +50,19 @@ export function InnerShell({ children, locale = "en" }: { children: ReactNode; l
       <footer>
         <div className="footer-top" data-nosnippet>
           <a className="brand brand--light" href={prefix || "/"}>
-            <img className="brand-logo" src="/cssbuy-logo.png" alt="CSSBuy" />
+            <img className="brand-logo" src="https://assets.cssbuy.com/static/icon/logo.svg" alt="CSSBuy" />
             <span className="brand-tagline">{copy.brandTagline}</span>
           </a>
           <p>{copy.footer.copy}</p>
           <form
             className="search-box search-box--compact"
-            action="https://www.cnbuycha.com/search.html"
+            action={`${prefix}/catalog/`}
             method="get"
             onSubmit={submit}
           >
             <label className="sr-only" htmlFor="footer-search">{copy.searchLabel}</label>
             <span className="search-icon" aria-hidden="true">⌕</span>
-            <input type="hidden" name="channelid" value="2" /><input id="footer-search" name="keywords" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.nav.all} />
+            <input id="footer-search" name="q" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.nav.all} />
             <button type="submit">{copy.hero.search} <span aria-hidden="true">↗</span></button>
           </form>
         </div>

@@ -11,15 +11,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isSiteLocale(locale) || locale === "en") return {};
   const titles = {
-    "pt-br": "Planilha CSSBuy 2026 – Produtos e links verificados",
-    de: "CSSBuy Tabelle 2026 – Geprüfte Produkte und Links",
-    es: "Hoja CSSBuy 2026 – Productos y enlaces revisados",
+    "pt-br": "Planilha CSSBuy 2026 – Busca de produtos e fotos QC",
+    de: "CSSBuy Tabelle 2026 – Produktsuche und QC-Bilder",
+    es: "Hoja CSSBuy 2026 – Búsqueda de productos y fotos QC",
     en: "CSSBuy Spreadsheet 2026",
   };
   const descriptions = {
-    "pt-br": "Explore uma planilha CSSBuy independente com 30 produtos, valores registrados em CNY, categorias, verificações de QC no armazém e planejamento do pacote internacional.",
-    de: "Durchsuche eine unabhängige CSSBuy-Tabelle mit 30 Produkten, erfassten CNY-Werten, Kategorien, Lager-QC-Prüfungen und internationaler Paketplanung.",
-    es: "Explora una hoja CSSBuy independiente con 30 productos, valores registrados en CNY, categorías, controles de QC en almacén y planificación del paquete internacional.",
+    "pt-br": "Explore uma planilha CSSBuy independente com produtos, preços em USD, categorias, verificações de QC no armazém e planejamento do pacote internacional.",
+    de: "Durchsuche eine unabhängige CSSBuy-Tabelle mit Produkten, USD-Preisen, Kategorien, Lager-QC-Prüfungen und internationaler Paketplanung.",
+    es: "Explora una hoja CSSBuy independiente con productos, precios en USD, categorías, controles de QC en almacén y planificación del paquete internacional.",
     en: "Browse an independent CSSBuy spreadsheet with checked product routes and practical warehouse and parcel guidance.",
   };
   const openGraphLocales = { "pt-br": "pt_BR", de: "de_DE", es: "es_ES", en: "en_US" } as const;
