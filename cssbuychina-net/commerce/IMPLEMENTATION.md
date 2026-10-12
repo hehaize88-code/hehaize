@@ -35,3 +35,5 @@ Research sources, reviewed 2026-10-12:
 ## Verification
 
 Run `npm ci --ignore-scripts`, `npm run build:pages`, then `npm run test:release`. Public source fixtures are generated using the cnbuycha HTML renderer with test records, not copied private data. Tests check source ID integrity, price/image parsing, forwarding, error states, legacy redirects, all editorial translations and sitemap coverage. No local browser preview is available in this environment; do not report an interactive upload test as performed.
+
+Release validation: build and 11 runtime/content checks passed. Standalone TypeScript checking reports pre-existing missing Cloudflare ambient declarations (`cloudflare:workers`, `Fetcher`, `D1Database`); no new application type errors were reported. Browser interaction and image-upload QA were not performed.

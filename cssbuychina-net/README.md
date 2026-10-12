@@ -17,9 +17,10 @@ production domain.
 - `npm run test:pages` validates the Pages Worker, canonical-host redirect,
   crawler files, and real 404 handling after `build:pages`.
 
-The website's outbound product, category, and search actions are intentionally
-limited to the owner's store destination. The store domain is not shown as
-visible promotional copy on the website.
+Product data, search, sorting and galleries use the owner's cnbuycha catalogue.
+Visitors browse locally, and the purchase button opens the matching marketplace
+item on CSSBuy. Official registration and branding use CSSBuy's own URLs.
+See `commerce/IMPLEMENTATION.md` for architecture, keyword research and validation.
 
 ## October 3, 2026 content release
 

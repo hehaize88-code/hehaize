@@ -1,4 +1,4 @@
-import re,json,subprocess,concurrent.futures,pathlib,math,io,time,os,warnings
+import re,json,subprocess,concurrent.futures,pathlib,math,io,time,os,warnings,hashlib
 warnings.filterwarnings('ignore',category=DeprecationWarning)
 from html import unescape
 from PIL import Image,ImageOps
@@ -6,7 +6,7 @@ root=pathlib.Path(__file__).resolve().parents[1]
 out=root/'public'
 cache=root/'.cache/image-index';cache.mkdir(parents=True,exist_ok=True)
 def fetch(url,path):
- if path.exists() and path.stat().st_size>100:return path.read_bytes()
+ if path.exists() and path.stat().st_size>100 and (path.suffix!='.html' or os.environ.get('INDEX_CACHED_ONLY')=='1'):return path.read_bytes()
  if os.environ.get('INDEX_CACHED_ONLY')=='1':return None
  r=subprocess.run(['curl','-fLsS','--max-time','35','--retry','1',url,'-o',str(path)],capture_output=True)
  if r.returncode:return None
@@ -18,7 +18,9 @@ def parse(s):
    m=re.search(p,b,re.S);return unescape(m.group(1)) if m else ''
   rows.append(dict(path=find(r'<a href="([^"]+)'),title=find(r'<h3>(.*?)</h3>'),image=find(r'<img src="([^"]+)'),price=find(r'data-currency="USD"[^>]*>([\d.]+)')))
  return rows
-first=fetch('https://cnbuycha.com/AllProducts/',cache/'page-1.html').decode()
+first_bytes=fetch('https://cnbuycha.com/AllProducts/',cache/'page-1.html')
+if not first_bytes:raise RuntimeError('Source catalogue unavailable; existing index was not changed')
+first=first_bytes.decode()
 total=int(re.search(r'<div class="results-summary">([\d,]+) products',first).group(1).replace(',',''));pages=math.ceil(total/60)
 print('pages',pages,flush=True)
 def page(n):
@@ -34,7 +36,7 @@ print('catalog products',len(rows),flush=True)
 def index(r):
  id=re.search(r'(\d+)\.html',r['path']).group(1)
  url=r['image'] if r['image'].startswith('https://') else 'https://cnbuycha.com'+r['image']
- b=fetch(url,cache/(id+'.img'))
+ b=fetch(url,cache/(hashlib.sha256(url.encode()).hexdigest()+'.img'))
  try:
   im=ImageOps.exif_transpose(Image.open(io.BytesIO(b))).convert('RGB')
   rgb=list(im.resize((8,8),Image.Resampling.BILINEAR).getdata());colors=[round(sum(p[c] for p in rgb)/64) for c in range(3)]
@@ -52,5 +54,9 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=16) as ex:
   if i%100==0:print('indexed',i,'/',len(rows),'ok',len(indexed),'seconds',round(time.time()-start),flush=True)
   if i%400==0:(root/'index-checkpoint.json').write_text(json.dumps(indexed))
 payload=dict(source='https://cnbuycha.com',updatedAt=time.strftime('%Y-%m-%d',time.gmtime()),catalogCount=len(rows),indexedCount=len(indexed),products=indexed)
-(out/'catalog-image-index.json').write_text(json.dumps(payload,separators=(',',':')))
+if len(indexed)<len(rows)*.95:raise RuntimeError('Less than 95% image coverage; existing index was not changed')
+target=out/'catalog-image-index.json'
+temporary=target.with_suffix('.tmp')
+temporary.write_text(json.dumps(payload,separators=(',',':')))
+temporary.replace(target)
 (root/'index-failures.json').write_text(json.dumps(failed));print('finished',len(indexed),'failed',len(failed),flush=True)
