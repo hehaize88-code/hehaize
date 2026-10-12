@@ -14,117 +14,189 @@
 
 @media(max-width:380px){.lolo-header{padding:12px;gap:8px}.lolo-brand-actions{gap:8px;min-width:0}.lolo-brand img{width:90px;height:24px}.lolo-header .lolo-register{max-width:125px;font-size:10px;padding:8px}.lolo-language summary{padding:8px 6px}.lolo-header>nav{gap:0 6px;font-size:10px}}
 
-/* Homepage light palette: explicit foregrounds prevent legacy dark-theme inheritance. */
-#top {
+/* Shared editorial light palette: homepage, guides, articles and reference pages.
+   Keep foregrounds explicit because legacy variables mix text and surface colors. */
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) {
   color: #231e1a;
   background: #f8f5ee;
   --rule: #d8cfc1;
   --rule-warm: #b6a795;
 }
-#top > .hero,
-#top > .category-section,
-#top > .steps-section,
-#top > .guide-band,
-#top > .shipping-section,
-#top > .learn-section,
-#top > .faq-section {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .hero,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .category-section,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .steps-section,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .guide-band,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .shipping-section,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .learn-section,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .faq-section {
   color: #231e1a;
   background: #f8f5ee;
   border-color: #d8cfc1;
 }
-#top > .category-section,
-#top > .guide-band,
-#top > .learn-section { background: #f0ebe2; }
-#top :is(h1, h2, h3),
-#top .live-product-grid :is(h3, strong),
-#top .faq-list summary { color: #231e1a; }
-#top p,
-#top .hero-lead,
-#top .section-heading > p,
-#top .category-number,
-#top .category-grid p,
-#top .live-product-grid small,
-#top .faq-list details p { color: #514c46; }
-#top .eyebrow,
-#top .article-type,
-#top .shipping-grid article > span,
-#top .category-arrow { color: #8c321e; }
-#top .hero-copy { border-color: #d8cfc1; }
-#top .product-search {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .category-section,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .guide-band,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) > .learn-section { background: #f0ebe2; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(h1, h2, h3),
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .live-product-grid :is(h3, strong),
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .faq-list summary { color: #231e1a; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) p,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .hero-lead,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .section-heading > p,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-number,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-grid p,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .live-product-grid small,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .faq-list details p { color: #514c46; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .eyebrow,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .article-type,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .shipping-grid article > span,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-arrow { color: #8c321e; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .hero-copy { border-color: #d8cfc1; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-search {
   background: #fff;
   color: #231e1a;
   border-color: #8e7d6b;
 }
-#top .product-search input { color: #231e1a; caret-color: #231e1a; }
-#top .product-search input::placeholder { color: #62584f; opacity: 1; }
-#top .product-search > svg { color: #62584f; }
-#top .product-search button,
-#top .button-primary {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-search input { color: #231e1a; caret-color: #231e1a; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-search input::placeholder { color: #62584f; opacity: 1; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-search > svg { color: #62584f; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-search button,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .button-primary {
   color: #fff;
   background: #b33818;
   border-color: #b33818;
 }
-#top .product-search button:hover,
-#top .button-primary:hover,
-#top .button-primary:focus-visible {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-search button:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .button-primary:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .button-primary:focus-visible {
   color: #fff;
   background: #8c321e;
   border-color: #8c321e;
 }
-#top .button-secondary,
-#top .quick-categories a {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .button-secondary,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .quick-categories a {
   color: #332a23;
   background: #fff;
   border-color: #a99784;
 }
-#top .quick-categories a span { color: #8c321e; }
-#top .button-secondary:hover,
-#top .button-secondary:focus-visible,
-#top .quick-categories a:hover,
-#top .quick-categories a:focus-visible {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .quick-categories a span { color: #8c321e; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .button-secondary:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .button-secondary:focus-visible,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .quick-categories a:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .quick-categories a:focus-visible {
   color: #231e1a;
   background: #eee2d3;
   border-color: #8c321e;
 }
-#top .trust-note,
-#top .trust-note .shield { color: #355e43; border-color: #355e43; }
-#top .image-search-shortcut,
-#top .card-footer-link,
-#top .faq-more,
-#top .text-link,
-#top .learn-grid a {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .trust-note,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .trust-note .shield { color: #355e43; border-color: #355e43; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .image-search-shortcut,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .card-footer-link,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .faq-more,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .text-link,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .learn-grid a {
   color: #8c321e;
   border-color: #b7a18e;
 }
-#top .learn-grid h3 a { color: #231e1a; }
-#top .image-search-shortcut:hover,
-#top .card-footer-link:hover,
-#top .learn-grid a:hover,
-#top .faq-more:hover { color: #6c2515; text-decoration: underline; }
-#top .category-grid > a,
-#top .steps-grid li,
-#top .shipping-grid article,
-#top .learn-grid article {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .learn-grid h3 a { color: #231e1a; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .image-search-shortcut:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .card-footer-link:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .learn-grid a:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .faq-more:hover { color: #6c2515; text-decoration: underline; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-grid > a,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .steps-grid li,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .shipping-grid article,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .learn-grid article {
   color: #231e1a;
   background: #fff;
   border-color: #d8cfc1;
 }
-#top .category-grid > a:hover,
-#top .category-grid > a:focus-visible { color: #231e1a; background: #eee2d3; }
-#top .category-grid > a:hover :is(p, .category-number),
-#top .category-grid > a:focus-visible :is(p, .category-number) { color: #514c46; }
-#top .steps-grid li > span { color: #8c321e; border-color: #8c321e; }
-#top .section-cta { color: #231e1a; background: #eee7dc; border-color: #d8cfc1; }
-#top .guide-visual { color: #231e1a; }
-#top .filter-tabs button { color: #332a23; background: #fff; }
-#top .filter-tabs button.is-active { color: #fff; background: #26221c; }
-#top :is(a, button, summary):focus-visible {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-grid > a:hover,
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-grid > a:focus-visible { color: #231e1a; background: #eee2d3; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-grid > a:hover :is(p, .category-number),
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .category-grid > a:focus-visible :is(p, .category-number) { color: #514c46; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .steps-grid li > span { color: #8c321e; border-color: #8c321e; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .section-cta { color: #231e1a; background: #eee7dc; border-color: #d8cfc1; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .guide-visual { color: #231e1a; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .filter-tabs button { color: #332a23; background: #fff; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .filter-tabs button.is-active { color: #fff; background: #26221c; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(a, button, summary):focus-visible {
   outline: 3px solid #8c321e;
   outline-offset: 3px;
 }
-#top .product-search:focus-within {
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-search:focus-within {
   border-color: #8c321e;
   box-shadow: 0 0 0 3px #8c321e26;
 }
 .lolo-header, .lolo-footer { color: #231e1a; }
 .lolo-footer small { color: #514c46; }
+
+
+/* Independent-page surfaces and text, including expanded FAQ and article details. */
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.subpage-hero, .article-hero, .subpage-search-band,
+  .depth-section-heading, .decision-section, .article-index, .article-end,
+  .editorial-page-layout) {
+  color: #231e1a;
+  background: #f8f5ee;
+  border-color: #d8cfc1;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.research-fact-band, .calculation-section, .reading-order,
+  .editorial-standard, .subpage-note, .article-reading-help, .article-end) {
+  color: #231e1a;
+  background: #f0ebe2;
+  border-color: #d8cfc1;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.subpage-info-card, .decision-grid article,
+  .shipping-check-grid article, .article-index > article, .product-card,
+  .editorial-profile, .related-guides a) {
+  color: #231e1a;
+  background: #fff;
+  border-color: #d8cfc1;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.formula-card, .article-summary, .research-note,
+  .calculation-note, .article-sidebar-note, .editorial-page-content ul) {
+  color: #231e1a;
+  background: #eee7dc;
+  border-color: #b6a795;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(li, dt, dd, small, figcaption, .learning-list,
+  .subpage-breadcrumb, .subpage-breadcrumb span,
+  .product-reference-breadcrumb, .product-copy > div) { color: #514c46; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(h1, h2, h3, strong, .formula-card span,
+  .article-reading-help > summary, .faq-list summary) { color: #231e1a; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.subpage-info-card > span, .decision-grid article > span,
+  .shipping-check-grid article > span, .article-index-image span,
+  .footer-label, .article-section-number, .reading-order li span,
+  .article-sidebar li span, .related-guides span, .related-guides small,
+  .editorial-page-content > section > span,
+  .product-reference-category, .product-reference-editorial article > span,
+  .category-reference-hero > div:last-child > span) { color: #8c321e; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.formula-card b, .formula-card strong,
+  .article-section-number) { color: #355e43; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.subpage-breadcrumb a, .article-byline a,
+  .article-sidebar li a, .editorial-profile nav a,
+  .product-copy > div a, .product-reference-category) {
+  color: #8c321e;
+  text-decoration-color: currentColor;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.article-index-copy h2 a, .product-copy :is(h2, h3) a) {
+  color: #231e1a;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.subpage-breadcrumb a, .article-byline a,
+  .article-sidebar li a, .editorial-profile nav a,
+  .article-index-copy h2 a, .product-copy a,
+  .product-reference-breadcrumb a):is(:hover, :focus-visible) {
+  color: #6c2515;
+  text-decoration: underline;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .article-index-image { background: #eee7dc; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .article-index-image span { background: #fff; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-image { background: #fff; }
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) .product-image > span {
+  color: #fff;
+  background: #332a23;
+  padding: 4px 7px;
+  border-radius: 4px;
+}
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.product-card, .related-guides a):hover { border-color: #8c321e; }
+
+:is(#top, .subpage-main, .article-main, .product-reference-main, .category-reference-main) :is(.article-checklist, .article-summary, .editorial-standard) li::before { color: #355e43; }

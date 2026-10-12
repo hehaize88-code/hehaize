@@ -78,7 +78,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head><link rel="stylesheet" href="/site-shell.css?v=20261012-net-contrast-2" /></head>
+      <head><link rel="stylesheet" href="/site-shell.css?v=20261012-net-pages-contrast-3" /></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
