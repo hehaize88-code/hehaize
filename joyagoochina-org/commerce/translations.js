@@ -29,3 +29,5 @@ const extraRows={
 };
 const keys=['home','articles','photos','independent','title','headline','intro','categories','latest','how','find','findBody','check','checkBody','buy','buyBody','guides','aboutTitle','aboutBody','budgetTitle','budgetBody','snapshot','allArticles'];
 export const EXTRA=Object.fromEntries(Object.entries(extraRows).map(([lang,row])=>[lang,Object.fromEntries(keys.map((key,i)=>[key,row[i]]))]));
+
+export const NAV_LABELS={en:['Guides','FAQ'],zh:['指南','常见问题'],de:['Ratgeber','FAQ'],pl:['Poradniki','FAQ'],es:['Guías','FAQ'],it:['Guide','FAQ'],fr:['Guides','FAQ'],pt:['Guias','FAQ'],ro:['Ghiduri','FAQ'],sv:['Guider','FAQ']};

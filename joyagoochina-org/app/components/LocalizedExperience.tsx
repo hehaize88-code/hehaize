@@ -622,7 +622,7 @@ function LocalizedGuidePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} pagePath={`/${slug}/`} />
       <article>
         <header className="article-hero">
           <nav className="breadcrumb" aria-label={details.article.inGuide}>
@@ -733,7 +733,7 @@ function LocalizedGuideIndex({ locale }: { locale: Locale }) {
 
   return (
     <main className="guide-index-page">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} pagePath={"/guides/"} />
       <section className="index-hero">
         <p className="eyebrow">{copy.pages.guides.eyebrow}</p>
         <h1>{copy.pages.guides.title}</h1>
@@ -765,7 +765,7 @@ function LocalizedSeoArticleIndex({ locale }: { locale: Locale }) {
 
   return (
     <main className="seo-index-page">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} pagePath={"/articles/"} />
       <section className="index-hero seo-index-hero">
         <p className="eyebrow">{seo.indexEyebrow}</p>
         <h1>{seo.indexTitle}</h1>
@@ -779,6 +779,8 @@ function LocalizedSeoArticleIndex({ locale }: { locale: Locale }) {
             key={entry.slug}
           >
             <div>
+              <img className="editorial-card-image" src={getEditorialImage(entry.slug).src}
+                alt={entry.article.title} width={400} height={400} loading="lazy" />
               <p className="eyebrow">
                 {index === 0 ? seo.latestLabel : entry.article.eyebrow}
               </p>
@@ -1007,7 +1009,7 @@ function LocalizedPolicyPage({
 
   return (
     <main className="policy-page">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} pagePath={`/${slug}/`} />
       <article className="policy-content">
         <p className="eyebrow">{page.eyebrow}</p>
         <h1>{page.title}</h1>
@@ -1078,7 +1080,7 @@ export function LocalizedPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} pagePath={`/${slug}/`} />
       <section className="index-hero localized-hero">
         <p className="eyebrow">{page.eyebrow}</p>
         <h1>{page.title}</h1>

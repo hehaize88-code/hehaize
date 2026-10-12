@@ -1,7 +1,7 @@
 import {catalogueRoute,upstream,CATEGORIES,LANGS} from './catalog.js';
 import {homepageRoute} from './home.js';
 import {LEGACY_PRODUCTS} from './content.js';
-export const RELEASE='2026-10-12-joyagoo-catalog-v2';
+export const RELEASE='2026-10-12-joyagoo-editorial-v1';
 export const SITEMAP_INDEX='<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://joyagoochina.org/editorial-sitemap.xml</loc></sitemap><sitemap><loc>https://joyagoochina.org/catalog-sitemap.xml</loc></sitemap></sitemapindex>';
 export async function commerceRoutes(request,env,ctx) {
  const url=new URL(request.url),locale=url.pathname.match(/^\/(zh|de|pl|es|it|fr|pt|ro|sv)(?=\/|$)/)?.[0]||'',bare=url.pathname.slice(locale.length)||'/';

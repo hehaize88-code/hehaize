@@ -14,7 +14,7 @@ Competitor text, quantities, shipping promises, and affiliate links are not copi
 
 ## Official branding and handoff
 
-Official login/registration entry: https://joyagoo.com/login. The top-left logo and register button link there. The actual header SVG was captured from the rendered official page; `public/joyagoo-official-logo.svg` preserves its geometry and colours. `public/joyagoo-official-icon.png` contains the exact PNG bytes downloaded from the official `https://joyagoo.com/site.ico` icon link. Independent-site identification remains visible.
+Official login/registration entry: https://joyagoo.com/login. The register button links there. The top-left logo now returns to the current-language homepage. The actual header SVG was captured from the rendered official page; `public/joyagoo-official-logo.svg` preserves its geometry and colours. `public/joyagoo-official-icon.png` contains the exact PNG bytes downloaded from the official `https://joyagoo.com/site.ico` icon link. Independent-site identification remains visible.
 
 Purchase URL: `https://joyagoo.com/product?id={sourceId}&platform=WEIDIAN`. Source IDs come from the cnbuycha product record, not local URL numbers. Verified example: `/shoes/3459.html` is source ID `7874413518`, USD 22.22, with five gallery images in source order. No account or purchase is created by this integration.
 
@@ -47,3 +47,11 @@ Old spreadsheet/category/search routes redirect into `/catalog/` while preservin
 5. `node scripts/sync-published-commerce.mjs`
 
 The static export step composes the Pages worker and writes the same native homepage renderer into all ten static homepage files. The original Vinext worker also serves the shared catalogue routes, so both existing hosting outputs are covered. The public static files are synced to the current project publish directory without deleting old assets that cached article HTML could reference.
+
+## Editorial template and homepage FAQ correction — 2026-10-12
+
+Article archives, article detail pages, guides and FAQ pages now share the native homepage navigation and footer renderers, official branding, light backgrounds, lime buttons and sans-serif typography. The archive uses compact square-image cards; article content and URLs are preserved. The shared navigation includes Guides and FAQ on desktop and mobile. The logo returns to the current-language homepage; only the separate registration button opens the official login page. Article language menus retain the original available translations to avoid links to missing translations.
+
+All ten homepages show four existing translated FAQ entries, a link to the complete FAQ page and matching FAQPage structured data. Both the commerce cache version and the editorial HTML cache version were advanced, and the CSS URL was versioned to avoid stale mixed templates.
+
+Validation: production build and TypeScript passed; all 12 catalogue tests passed; all 230 existing article/guide bodies were byte-normalized and compared with the previous published export with no text changes; archive counts stayed unchanged per locale; generated homepage/FAQ/archive/guide/detail headers and link targets passed in all ten locales.

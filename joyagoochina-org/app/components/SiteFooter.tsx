@@ -1,58 +1,6 @@
-import { localizePath, translations, type Locale } from "../i18n";
-import { seoArticleCopy } from "../seoArticles";
+import type { Locale } from "../i18n";
+import { footer } from "../../commerce/catalog.js";
 
-export default function SiteFooter({
-  locale = "en",
-}: {
-  locale?: Locale;
-}) {
-  const copy = translations[locale];
-
-  return (
-    <footer>
-      <a
-        className="brand brand-image footer-brand"
-        href={localizePath(locale, "/")}
-      >
-        <img
-          src="/joyagoo-logo.png"
-          alt="JoyaGoo"
-          width={768}
-          height={235}
-          loading="lazy"
-          decoding="async"
-        />
-      </a>
-      <p>{copy.common.footer}</p>
-      <nav aria-label={copy.common.footer}>
-        <a href={localizePath(locale, "/")}>{copy.common.home}</a>
-        <a href={localizePath(locale, "/guides/")}>
-          {copy.common.guides}
-        </a>
-        <a href={localizePath(locale, "/articles/")}>
-          {seoArticleCopy[locale].navLabel}
-        </a>
-        <a href={localizePath(locale, "/qc-guide/")}>{copy.nav.qc}</a>
-        <a href={localizePath(locale, "/shipping-guide/")}>
-          {copy.nav.shipping}
-        </a>
-        <a href={localizePath(locale, "/returns/")}>
-          {copy.common.returns}
-        </a>
-        <a href={localizePath(locale, "/about/")}>
-          {copy.pages.about.title}
-        </a>
-        <a href={localizePath(locale, "/editorial-policy/")}>
-          {copy.pages["editorial-policy"].title}
-        </a>
-        <a href={localizePath(locale, "/privacy/")}>
-          {copy.pages.privacy.title}
-        </a>
-        <a href={localizePath(locale, "/terms/")}>
-          {copy.pages.terms.title}
-        </a>
-      </nav>
-      <small>© 2026 Joyagoo China. {copy.common.disclaimer}</small>
-    </footer>
-  );
+export default function SiteFooter({ locale = "en" }: { locale?: Locale }) {
+  return <div className="site-footer-shell" dangerouslySetInnerHTML={{ __html: footer(locale) }} />;
 }
