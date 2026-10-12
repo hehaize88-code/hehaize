@@ -14,7 +14,7 @@ const localeCodes = new Set([
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "seo-research-20261002";
+const htmlCacheVersion = "2026-10-12-joyagoo-catalog-v1";
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
@@ -81,7 +81,7 @@ async function handleOutboundClick(request, requestUrl) {
   } catch {
     return jsonResponse("Invalid destination.", 400);
   }
-  if (!new Set(["cnbuycha.com", "www.cnbuycha.com"]).has(destination.hostname)) {
+  if (!new Set(["joyagoo.com"]).has(destination.hostname)) {
     return jsonResponse("Destination is not the linked product store.", 400);
   }
 
@@ -173,6 +173,9 @@ const worker = {
     if (url.pathname === outboundEndpoint) {
       return handleOutboundClick(request, url);
     }
+
+    const commerce = await commerceRoutes(request, env, ctx);
+    if (commerce) return commerce;
 
     const cacheableHtml = isCacheableHtmlRequest(request, url);
     const cacheKey = cacheableHtml ? htmlCacheKey(url) : undefined;

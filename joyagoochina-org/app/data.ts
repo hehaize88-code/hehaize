@@ -113,7 +113,7 @@ const productHref = (id: string) => {
   if (!destinationPath) {
     throw new Error(`Missing verified main-site destination for product ${id}`);
   }
-  return `${mainSite}${destinationPath}`;
+  return `https://cnbuycha.com${destinationPath}`;
 };
 
 const product = (

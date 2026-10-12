@@ -65,6 +65,7 @@ const workerModuleUrl = pathToFileURL(serverEntry);
 workerModuleUrl.searchParams.set("static-export", `${Date.now()}`);
 const { default: renderWorker } = await import(workerModuleUrl.href);
 const renderEnv = {
+  COMMERCE_EXPORT: true,
   ASSETS: {
     fetch: async () => new Response("Not found", { status: 404 }),
   },
@@ -181,3 +182,8 @@ console.log(`Prepared Cloudflare Pages output: ${pagesDir}`);
 console.log(
   `Prepared static fallback output: ${staticPagesDir} (${routeUrls.length} routes)`,
 );
+
+// Apply the shared commerce renderer after the editorial export.
+const {execFileSync}=await import("node:child_process");
+execFileSync(process.execPath,["scripts/build-commerce-worker.mjs",staticPagesDir],{stdio:"inherit"});
+await cp(resolve(staticPagesDir,"editorial-sitemap.xml"),resolve(pagesDir,"editorial-sitemap.xml"));

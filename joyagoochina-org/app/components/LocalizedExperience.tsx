@@ -253,7 +253,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
     inLanguage: locale,
     potentialAction: {
       "@type": "SearchAction",
-      target: `${mainSite}/AllProducts/?q={search_term_string}`,
+      target: `https://joyagoochina.org${localizePath(locale, "/catalog/")}?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };
@@ -284,7 +284,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
           <p className="hero-intro">{copy.home.intro}</p>
           <form
             className="search-form"
-            action={`${mainSite}/AllProducts/`}
+            action={localizePath(locale, "/catalog/")}
             method="get"
             target="_blank"
             data-outbound-kind="search"
@@ -356,7 +356,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
       <section className="category-strip" aria-label={copy.nav.categories}>
         {categories.slice(0, 6).map((category, index) => (
           <a
-            href={category.href}
+            href={localizePath(locale, "/catalog" + new URL(category.href).pathname.toLowerCase())}
             target="_blank"
             rel="noopener"
             data-outbound-kind="category"
@@ -452,7 +452,7 @@ function SeoArticleFeature({ locale }: { locale: Locale }) {
           <strong>{seo.readArticle}</strong>
         </a>
         <div className="seo-side-articles" aria-label={seo.indexTitle}>
-          {sideArticles.map((entry, index) => (
+          {sideArticles.slice(0, 3).map((entry, index) => (
             <a
               href={localizePath(locale, `/${entry.slug}/`)}
               key={entry.slug}
@@ -693,7 +693,7 @@ function LocalizedGuidePage({
               </div>
               <a
                 className="button"
-                href={`${mainSite}/AllProducts/`}
+                href={localizePath(locale, "/catalog/")}
                 target="_blank"
                 rel="noopener"
                 data-outbound-kind="all-products"
@@ -978,7 +978,7 @@ function LocalizedSeoArticlePage({
               </div>
               <a
                 className="button"
-                href={`${mainSite}/AllProducts/`}
+                href={localizePath(locale, "/catalog/")}
                 target="_blank"
                 rel="noopener"
                 data-outbound-kind="all-products"
@@ -1090,7 +1090,7 @@ export function LocalizedPage({
           <ProductGrid locale={locale} />
           <a
             className="text-link"
-            href={`${mainSite}/AllProducts/`}
+            href={localizePath(locale, "/catalog/")}
             target="_blank"
             rel="noopener"
             data-outbound-kind="all-products"
@@ -1105,7 +1105,7 @@ export function LocalizedPage({
           <section className="category-strip localized-categories">
             {categories.map((category, index) => (
               <a
-                href={category.href}
+                href={localizePath(locale, "/catalog" + new URL(category.href).pathname.toLowerCase())}
                 target="_blank"
                 rel="noopener"
                 data-outbound-kind="category"

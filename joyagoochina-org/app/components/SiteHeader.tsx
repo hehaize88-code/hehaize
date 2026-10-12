@@ -20,23 +20,25 @@ export default function SiteHeader({
       <div className="header-inner">
         <a
           className="brand brand-image"
-          href={localizePath(locale, "/")}
-          aria-label={`Joyagoo — ${copy.common.home}`}
+          href="https://joyagoo.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Joyagoo — Register / Log in"
         >
           <img
-            src="/joyagoo-logo.png"
+            src="/joyagoo-official-logo.svg"
             alt="JoyaGoo"
-            width={768}
-            height={235}
+            width={170}
+            height={50}
             loading="eager"
             fetchPriority="low"
           />
         </a>
         <nav className="desktop-nav" aria-label={copy.common.guides}>
-          <a href={localizePath(locale, "/spreadsheet/")}>
+          <a href={localizePath(locale, "/catalog/")}>
             {copy.nav.spreadsheet}
           </a>
-          <a href={localizePath(locale, "/categories/")}>
+          <a href={localizePath(locale, "/catalog/")}>
             {copy.nav.categories}
           </a>
           <a
@@ -59,7 +61,7 @@ export default function SiteHeader({
           />
           <a
             className="button button-small"
-            href={localizePath(locale, "/spreadsheet/")}
+            href={localizePath(locale, "/catalog/")}
           >
             {copy.nav.explore}
           </a>

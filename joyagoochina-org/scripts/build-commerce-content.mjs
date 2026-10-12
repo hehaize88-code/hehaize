@@ -1,0 +1,8 @@
+import {build} from 'esbuild';
+import {writeFile,readFile} from 'node:fs/promises';
+const result=await build({stdin:{contents:`import {getSeoArticleEntries} from './app/seoArticleLibrary';import {languages,translations} from './app/i18n';import {getEditorialImage} from './app/editorialAssets';import {products} from './app/data';export const content=Object.fromEntries(languages.map(({code})=>[code,{articles:getSeoArticleEntries(code).slice(0,4).map(e=>({slug:e.slug,title:e.article.title,description:e.article.description,image:getEditorialImage(e.slug)})),guides:['how-to-buy','qc-guide','shipping-guide'].map(slug=>({slug,title:translations[code].pages[slug].title}))}]));export const legacy=Object.fromEntries(products.map(p=>['/product/'+p.slug+'/',new URL(p.href).pathname]));`,resolveDir:process.cwd(),loader:'ts'},bundle:true,write:false,platform:'node',format:'esm'});
+const mod=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
+const index=JSON.parse(await readFile('public/catalog-image-index.json','utf8'));
+const snapshot={date:index.updatedAt,products:index.products.slice(0,8).map(({path,title,image,price})=>({path,title,image:new URL(image,index.source).href,price}))};
+await writeFile('commerce/content.js',`// Generated from existing editorial sources and the cnbuycha image index.\nexport const EDITORIAL=${JSON.stringify(mod.content)};\nexport const LEGACY_PRODUCTS=${JSON.stringify(mod.legacy)};\nexport const SNAPSHOT=${JSON.stringify(snapshot)};\n`);
+console.log('Prepared editorial links for',Object.keys(mod.content).length,'languages and',Object.keys(mod.legacy).length,'legacy product redirects.');

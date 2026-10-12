@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { mainSite } from "../data";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 
@@ -122,7 +121,7 @@ export default function GuidePage({
               </div>
               <a
                 className="button"
-                href={`${mainSite}/AllProducts/`}
+                href="/catalog/"
                 target="_blank"
                 rel="noopener"
                 data-outbound-kind="all-products"

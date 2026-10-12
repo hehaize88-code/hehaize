@@ -58,8 +58,8 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/joyagoo-official-icon.png",
+    shortcut: "/joyagoo-official-icon.png",
   },
 };
 
