@@ -1,150 +1,28 @@
-import applicationWorker from "../dist/server/index.js";
+import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath} from "../commerce/catalog.mjs";
+import {
+  withSearchSafeNotFound,
+  withSecurityHeaders,
+} from "../worker/security-headers.ts";
 
-const PRODUCT_DESTINATIONS = new Map([
-  ["3351", "3307"],
-  ["3353", "3401"],
-  ["3355", "3321"],
-  ["3356", "3402"],
-  ["3357", "3286"],
-  ["3359", "3328"],
-  ["3366", "3354"],
-  ["3367", "3355"],
-  ["3368", "3412"],
-  ["3369", "3413"],
-  ["3371", "3353"],
-  ["3372", "3359"],
-]);
+let applicationWorkerPromise;
 
-function productDestination(pathname) {
-  const match = pathname.match(/^\/products\/(\d+)\/?$/);
-  const destinationId = match && PRODUCT_DESTINATIONS.get(match[1]);
-  return destinationId
-    ? `https://www.cnbuycha.com/AllProducts/${destinationId}.html`
-    : null;
+function loadApplicationWorker() {
+  applicationWorkerPromise ??= import("../dist/server/index.js").then(
+    (module) => module.default,
+  );
+  return applicationWorkerPromise;
 }
 
-const productLinkRewriter = {
-  element(element) {
-    const href = element.getAttribute("href");
-    if (!href) return;
+const legacyProducts = {"3351": "/headwear/3307.html", "3353": "/t-shirts/3401.html", "3355": "/shoes/3321.html", "3356": "/jackets/3402.html", "3357": "/electronics/3286.html", "3359": "/shoes/3328.html", "3366": "/shoes/3354.html", "3367": "/shoes/3355.html", "3368": "/hoodies-sweaters/3412.html", "3369": "/hoodies-sweaters/3413.html", "3371": "/headwear/3353.html", "3372": "/accessories/3359.html"};
+function productDestination(pathname){const match=pathname.match(/^\/(?:(es|de|fr|it)\/)?products\/(\d+)\/?$/);return match&&legacyProducts[match[2]]?localPath(legacyProducts[match[2]],match[1]||'en'):null;}
 
-    try {
-      const resolved = new URL(href, "https://lolobuy-sheet.net");
-      if (
-        resolved.hostname !== "lolobuy-sheet.net" &&
-        resolved.hostname !== "www.lolobuy-sheet.net"
-      ) {
-        return;
-      }
-
-      const destination = productDestination(resolved.pathname);
-      if (destination) {
-        const sourceId = resolved.pathname.match(/^\/products\/(\d+)\/?$/)?.[1];
-        const destinationId = new URL(destination).pathname.match(
-          /^\/AllProducts\/(\d+)\.html$/,
-        )?.[1];
-        element.setAttribute("href", destination);
-        element.setAttribute("target", "_blank");
-        element.setAttribute("rel", "sponsored noopener noreferrer");
-        element.setAttribute("data-product-link", "true");
-        if (sourceId) element.setAttribute("data-product-source-id", sourceId);
-        if (destinationId) {
-          element.setAttribute("data-product-destination-id", destinationId);
-        }
-      }
-    } catch {}
-  },
-};
-
-const GA4_SNIPPET =
-  '<script async src="/ga4-tag.js?v=20260901"></script><script src="/ga4-init.js?v=20261004-articles"></script>';
-
-const GA4_INIT_SCRIPT = String.raw`
-window.dataLayer = window.dataLayer || [];
-window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-window.gtag('js', new Date());
-window.gtag('config', 'G-QY8MM7VZV2', {
-  site_domain: window.location.hostname,
-  content_group: 'lolobuy-sheet.net'
-});
-
-document.addEventListener('click', function (event) {
-  var target = event.target;
-  var link = target && target.closest ? target.closest('a[href]') : null;
-  if (!link) return;
-
-  try {
-    var url = new URL(link.href, window.location.href);
-    var articleMatch = url.pathname.match(/^\/(?:es\/|de\/|fr\/|it\/)?articles\/([^/]+)\/?$/);
-    if (url.origin === window.location.origin && articleMatch) {
-      window.gtag('event', 'select_content', {
-        content_type: 'article',
-        item_id: articleMatch[1],
-        link_location: window.location.pathname,
-        content_group: 'lolobuy-sheet.net',
-        transport_type: 'beacon'
-      });
-      return;
-    }
-    if (url.hostname !== 'cnbuycha.com' && url.hostname !== 'www.cnbuycha.com') return;
-
-    var productMatch = url.pathname.match(/^\/AllProducts\/(\d+)\.html$/);
-    var eventName = productMatch ? 'product_click' : 'catalog_click';
-    var parameters = {
-      link_url: url.href,
-      link_domain: url.hostname,
-      link_text: (link.getAttribute('aria-label') || link.textContent || '').trim().slice(0, 120),
-      link_location: window.location.pathname,
-      site_domain: window.location.hostname,
-      content_group: 'lolobuy-sheet.net',
-      outbound: true,
-      transport_type: 'beacon'
-    };
-
-    if (productMatch) {
-      parameters.product_id = productMatch[1];
-      parameters.source_product_id = link.dataset.productSourceId ||
-        (window.location.pathname.match(/^\/products\/(\d+)\/?$/) || [])[1] || '';
-    }
-
-    window.gtag('event', eventName, parameters);
-  } catch (error) {}
-}, true);
-
-document.addEventListener('submit', function (event) {
-  var form = event.target;
-  if (!form || !form.action) return;
-
-  try {
-    var url = new URL(form.action, window.location.href);
-    if (url.hostname !== 'cnbuycha.com' && url.hostname !== 'www.cnbuycha.com') return;
-    var data = new FormData(form);
-    var searchTerm = String(data.get('q') || data.get('keywords') || '').trim();
-    window.gtag('event', 'search', {
-      search_term: searchTerm,
-      link_url: url.href,
-      link_location: window.location.pathname,
-      site_domain: window.location.hostname,
-      content_group: 'lolobuy-sheet.net',
-      transport_type: 'beacon'
-    });
-
-    if (form.matches && form.matches('form.product-search') && searchTerm) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      window.location.assign(
-        'https://cnbuycha.com/AllProducts/?q=' + encodeURIComponent(searchTerm)
-      );
-    }
-  } catch (error) {}
-}, true);
-`.trim();
+const HEAD_SNIPPET = '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script><script src="/commerce-events.js" defer></script>';
 
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
   if (url.pathname === "/ga4-init.js") {
     return new Response(
-      GA4_INIT_SCRIPT,
+      "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-QY8MM7VZV2');",
       {
         headers: {
           "content-type": "application/javascript; charset=utf-8",
@@ -202,10 +80,9 @@ function withGoogleAnalytics(response, request) {
   return new HTMLRewriter()
     .on("head", {
       element(element) {
-        element.append(GA4_SNIPPET, { html: true });
+        element.append(HEAD_SNIPPET, { html: true });
       },
     })
-    .on("a[href]", productLinkRewriter)
     .transform(htmlResponse);
 }
 
@@ -213,15 +90,24 @@ const versionedAssetsPrefix = `/assets/${PAGES_ASSET_VERSION}/`;
 
 const staticFiles = new Set([
   "/favicon.svg",
+  "/lolobuy-official.svg",
+  "/lolobuy-icon.png",
+  "/catalog.css",
+  "/catalog.js",
+  "/site-shell.css",
+  "/catalog-image-index.json",
+  "/commerce-events.js",
   "/file.svg",
   "/globe.svg",
-  "/lolobuy.png",
+  "/lolobuy-logo.png",
   "/window.svg",
 ]);
 
 function isStaticAsset(pathname) {
   return (
     pathname.startsWith("/assets/") ||
+    pathname.startsWith("/articles/") ||
+    pathname.startsWith("/product-finds/") ||
     pathname.startsWith("/products/") ||
     pathname.startsWith("/products-320/") ||
     pathname.startsWith("/products-480/") ||
@@ -261,34 +147,118 @@ async function versionAssetReferences(response) {
   });
 }
 
+function cacheableHtmlRequest(request, url) {
+  return (
+    request.method === "GET" &&
+    url.search === "" &&
+    (request.headers.get("accept") || "").includes("text/html") &&
+    !url.pathname.startsWith("/signin-with-chatgpt") &&
+    !url.pathname.startsWith("/callback")
+  );
+}
+
+function pageCacheKey(request) {
+  const url = new URL(request.url);
+  url.searchParams.set("__lolobuy_build", PAGES_ASSET_VERSION);
+  return new Request(url, { headers: { accept: "text/html" } });
+}
+
+function withPageCacheHeaders(response, status) {
+  const headers = new Headers(response.headers);
+  headers.set(
+    "cache-control",
+    "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800",
+  );
+  headers.set("x-lolobuy-edge-cache", status);
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
+    if (!['GET','HEAD'].includes(request.method)) return new Response(null,{status:405,headers:{allow:'GET, HEAD'}});
+    if(url.hostname==="www.lolobuy-sheet.net"){url.hostname="lolobuy-sheet.net";return Response.redirect(url,301)}
     const analyticsAsset = await googleAnalyticsAsset(request);
     if (analyticsAsset) {
       return analyticsAsset;
     }
+
+    if (url.hostname === "www.lolobuy-sheet.net") {
+      const destination = new URL(url);
+      destination.protocol = "https:";
+      destination.hostname = "lolobuy-sheet.net";
+      return withSecurityHeaders(Response.redirect(destination, 301));
+    }
+
+    const lang=url.pathname.match(/^\/(es|de|fr|it)(?=\/|$)/)?.[1]||'en';
+    const prefix=lang==='en'?'':'/'+lang;
+    const bare=url.pathname.slice(prefix.length).replace(/\/$/,'')||'/';
+    const category=bare.match(/^\/categories\/(shoes|hoodies|jackets|accessories)$/)?.[1];
+    if(category)return Response.redirect(url.origin+prefix+'/catalog/'+(category==='hoodies'?'hoodies-sweaters':category)+'/'+url.search,301);
+    if(['/products','/finds','/spreadsheet','/AllProducts','/search.html'].includes(bare)){
+      const target=new URL(prefix+'/catalog/',url.origin);target.search=url.search;
+      if(target.searchParams.has('keywords')) {target.searchParams.set('q',target.searchParams.get('keywords'));target.searchParams.delete('keywords');target.searchParams.delete('channelid')}
+      return Response.redirect(target.href,301);
+    }
+    if(url.pathname==='/sitemap.xml')return new Response('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://lolobuy-sheet.net/editorial-sitemap.xml</loc></sitemap><sitemap><loc>https://lolobuy-sheet.net/catalog-sitemap.xml</loc></sitemap></sitemapindex>',{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=300'}});
+    if(url.pathname==='/editorial-sitemap.xml'){
+      const app=await loadApplicationWorker();
+      return app.fetch(new Request(new URL('/sitemap.xml',url),request),env,ctx);
+    }
+    if(url.pathname==='/catalog-sitemap.xml'){
+      try {
+        const xml=await upstream('/sitemap.xml');
+        const paths=[...new Set([...xml.matchAll(/<loc>https:\/\/(?:www\.)?cnbuycha\.com([^<]+)<\/loc>/g)].map(m=>m[1]).filter(p=>/^\/[a-z0-9-]+\/\d+\.html$/i.test(p)||CATEGORIES.some(c=>p==='/'+c+'/')))];
+        if(!paths.length)throw Error('Empty source sitemap');
+        const entries=LANGS.flatMap(l=>paths.map(p=>'<url><loc>https://lolobuy-sheet.net'+localPath(p,l)+'</loc></url>')).join('');
+        return new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+entries+'</urlset>',{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=300'}});
+      }catch{return new Response('Catalogue temporarily unavailable',{status:503,headers:{'retry-after':'60'}})}
+    }
+    const catalog=await catalogueRoute(request,env);
+    if(catalog){const secured=withSecurityHeaders(catalog);return request.method==='HEAD'?new Response(null,{status:secured.status,headers:secured.headers}):secured;}
 
     const destination = productDestination(url.pathname);
     if (
       destination &&
       (request.method === "GET" || request.method === "HEAD")
     ) {
-      return Response.redirect(destination, 302);
+      return withSecurityHeaders(Response.redirect(new URL(destination,url.origin).href, 301));
     }
 
     if (isStaticAsset(url.pathname) && env?.ASSETS?.fetch) {
       const assetResponse = await env.ASSETS.fetch(request);
       if (assetResponse.status !== 404) {
-        return assetResponse;
+        return withSecurityHeaders(assetResponse);
       }
     }
 
+    const canCache = cacheableHtmlRequest(request, url);
+    const cache = canCache && typeof caches !== "undefined" ? caches.default : null;
+    const cacheKey = cache ? pageCacheKey(request) : null;
+    if (cache && cacheKey) {
+      const cached = await cache.match(cacheKey);
+      if (cached) return withPageCacheHeaders(cached, "HIT");
+    }
+
+    const applicationWorker = await loadApplicationWorker();
     const response = await applicationWorker.fetch(request, env, ctx);
-    return withGoogleAnalytics(
-      await versionAssetReferences(response),
+    const versionedResponse = await versionAssetReferences(response);
+    let finalResponse = withGoogleAnalytics(
+      withSecurityHeaders(await withSearchSafeNotFound(versionedResponse)),
       request,
     );
+
+    if (cache && cacheKey && finalResponse.status === 200) {
+      finalResponse = withPageCacheHeaders(finalResponse, "MISS");
+      ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
+    }
+
+    finalResponse.headers.set("x-lolobuy-release","20261012-net-catalog-v1");
+    return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };

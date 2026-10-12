@@ -26,7 +26,7 @@ export function ArticleRecommendations({ locale, group = "featured", heading = f
     <div className={heading ? "section-shell focused-guides" : "focused-guides"} data-i18n-ignore>
       {heading && <h2>{headings[locale]}</h2>}
       <div className="learn-grid article-recommendations">
-        {groups[group].map((slug) => {
+        {(group==="featured"?[...articles].sort((a,b)=>b.publishedDate.localeCompare(a.publishedDate)).slice(0,4).map(a=>a.slug):groups[group]).map((slug) => {
           const article = articles.find((item) => item.slug === slug)!;
           const copy = getLocalizedArticle(article, locale);
           return <article key={slug}>

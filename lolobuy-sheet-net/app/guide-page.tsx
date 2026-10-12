@@ -1,3 +1,5 @@
+import LiveProducts from "./live-products";
+import {CATEGORIES, CATEGORY_LABELS} from "../commerce/catalog.mjs";
 import { ArticleRecommendations } from "./article-recommendations";
 import { getLocalizedArticle } from "./article-locales";
 import type { ReactNode } from "react";
@@ -132,7 +134,7 @@ function CatalogSearch({ locale }: { locale: Locale }) {
   return localizeReactNode(
     <form
       className="product-search subpage-search"
-      action={`${catalogBase}/AllProducts/`}
+      action={localizedPath(locale,"/catalog/")}
       method="get"
     >
       <label className="sr-only" htmlFor="subpage-product-query">
@@ -154,47 +156,7 @@ function CatalogSearch({ locale }: { locale: Locale }) {
   );
 }
 
-function ProductGrid({
-  limit = products.length,
-  locale,
-}: {
-  limit?: number;
-  locale: Locale;
-}) {
-  return localizeReactNode(
-    <div className="product-grid">
-      {products.slice(0, limit).map((product) => (
-        <article className="product-card" key={product.id}>
-          <Link
-            className="product-image"
-            href={productInternalPath(product.id)}
-            aria-label={`Open the guide page for ${product.name}`}
-          >
-            <ProductImage product={product} />
-            <span>
-              Open product <span aria-hidden="true">↗</span>
-            </span>
-          </Link>
-          <div className="product-copy">
-            <p>{product.category}</p>
-            <h3>
-              <Link href={productInternalPath(product.id)}>
-                {product.name}
-              </Link>
-            </h3>
-            <div>
-              <span>¥{product.priceCny} · ${productPriceUsd(product.priceCny)}</span>
-              <Link href={productInternalPath(product.id)}>
-                View <span aria-hidden="true">↗</span>
-              </Link>
-            </div>
-          </div>
-        </article>
-      ))}
-    </div>,
-    locale,
-  );
-}
+function ProductGrid({locale}:{locale:Locale;limit?:number}){return <LiveProducts locale={locale}/>;}
 
 function InfoCard({
   number,
@@ -310,19 +272,7 @@ function CategoriesPage({ locale }: { locale: Locale }) {
     <>
       <section className="section-shell subpage-section">
         <div className="category-grid">
-          {categories.map((category, index) => (
-            <Link
-              key={category.name}
-              href={categoryInternalPath(category.slug)}
-            >
-              <span className="category-number">0{index + 1}</span>
-              <h2>{category.name}</h2>
-              <p>{category.detail}</p>
-              <span className="category-arrow" aria-hidden="true">
-                ↗
-              </span>
-            </Link>
-          ))}
+          {CATEGORIES.slice(1).map((category:string,index:number)=><Link key={category} href={localizedPath(locale,"/catalog/"+category+"/")}><span className="category-number">{String(index+1).padStart(2,'0')}</span><h2>{CATEGORY_LABELS[locale][index+1]}</h2><span className="category-arrow" aria-hidden="true">↗</span></Link>)}
         </div>
       </section>
       <DetailedCardSection

@@ -1,3 +1,4 @@
+import {commerceTranslationRows} from "./commerce-translations";
 import { guideTranslationRows } from "./translations-guides";
 import { homeTranslationRows } from "./translations-home";
 import { sharedTranslationRows } from "./translations-shared";
@@ -16,6 +17,7 @@ const translationRows = [
   ...sharedTranslationRows,
   ...homeTranslationRows,
   ...guideTranslationRows,
+  ...commerceTranslationRows,
 ] as const;
 
 function dictionary(column: 1 | 2 | 3 | 4) {

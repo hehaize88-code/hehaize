@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const trustDates = contentDates.trust as Record<string, string>;
 
   return [
-    ...corePaths.flatMap((path) =>
+    ...corePaths.filter(path=>path!=="/products").flatMap((path) =>
       locales.map((locale) => ({
         url: absoluteUrl(localizedPath(locale, path)),
         lastModified: coreDates[path][locale],
@@ -49,10 +49,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       })),
     ),
-    ...categories.map((category) => ({
-      url: absoluteUrl(categoryInternalPath(category.slug)),
-      lastModified: "2026-08-10",
-    })),
     ...Object.entries(trustDates).map(([path, lastModified]) => ({
       url: absoluteUrl(path),
       lastModified,

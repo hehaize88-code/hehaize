@@ -93,7 +93,7 @@ export function localizedPath(locale: Locale, rawHref: string) {
   const basePath = removeLocalePrefix(url.pathname).replace(/\/+$/, "") || "/";
   const isArticlePath = /^\/articles\/[^/]+$/.test(basePath);
 
-  if (!isCorePath(basePath) && !isArticlePath) {
+  if (!isCorePath(basePath) && !isArticlePath && !basePath.startsWith("/catalog")) {
     return `${basePath}${url.search}${url.hash}`;
   }
 

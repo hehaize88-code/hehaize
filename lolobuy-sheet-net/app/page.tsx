@@ -1,3 +1,5 @@
+import LiveProducts from "./live-products";
+import initial from "../commerce/home-products.json";
 import { ArticleRecommendations } from "./article-recommendations";
 import Link from "next/link";
 import {
@@ -54,13 +56,13 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
     name: translate(locale, "LoloBuy spreadsheet product finds"),
     inLanguage: locale,
     url: homeUrl,
-    numberOfItems: products.length,
-    itemListElement: products.map((product, index) => ({
+    numberOfItems: initial.length,
+    itemListElement: initial.map((product, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: translate(locale, product.name),
-      image: `https://lolobuy-sheet.net${product.image}`,
-      url: absoluteUrl(productInternalPath(product.id)),
+      name: product.title,
+      image: product.image,
+      url: absoluteUrl(localizedPath(locale,"/catalog"+product.path)),
     })),
   };
   const websiteJsonLd = {
@@ -72,7 +74,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
     description: homeSeo.description,
     potentialAction: {
       "@type": "SearchAction",
-      target: `${catalogBase}/AllProducts/?q={search_term_string}`,
+      target: absoluteUrl(localizedPath(locale,"/catalog/"))+"?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -95,16 +97,15 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
           <div className="hero-copy">
             <p className="eyebrow">Independent product-finding guide</p>
             <h1 id="hero-title">
-              LoloBuy Spreadsheet 2026: Matched Product Finds &amp; Buying Guides
+              LoloBuy spreadsheet: finds, photos and direct links
             </h1>
             <p className="hero-lead">
-              Searchable China shopping finds and practical LoloBuy guides,
-              built to help you compare a listing before you order.
+              Search LoloBuy finds, compare USD prices and review product photos before opening the matching Weidian item on LoloBuy.
             </p>
 
             <form
               className="product-search"
-              action={`${catalogBase}/AllProducts/`}
+              action={localizedPath(locale,"/catalog/")}
               method="get"
             >
               <label className="sr-only" htmlFor="product-query">
@@ -123,11 +124,12 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
               </button>
             </form>
 
+            <a className="image-search-shortcut" href={localizedPath(locale,"/catalog/image-search/")}>Search by image →</a>
             <div className="quick-categories" aria-label="Product categories">
               {categories.map((category) => (
                 <Link
                   key={category.name}
-                  href={categoryInternalPath(category.slug)}
+                  href={localizedPath(locale,"/catalog/"+(category.slug==="hoodies"?"hoodies-sweaters":category.slug)+"/")}
                 >
                   <span aria-hidden="true">{category.symbol}</span>
                   {category.name}
@@ -138,7 +140,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
             <div className="hero-actions">
               <a
                 className="button button-primary"
-                href={`${catalogBase}/AllProducts/`}
+                href={localizedPath(locale,"/catalog/")}
                 target="_blank"
                 rel="sponsored noopener noreferrer"
               >
@@ -158,135 +160,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
             </p>
           </div>
 
-          <div className="hero-catalog" aria-label="Featured product finds">
-            <Link
-              className="hero-card hero-card-featured"
-              href={productInternalPath(featured[0].id)}
-            >
-              <span className="status-tag">SOURCE MATCHED</span>
-              <ProductImage product={featured[0]} priority sizes="(max-width: 900px) 100vw, 45vw" />
-              <span className="hero-card-title">{featured[0].name}</span>
-            </Link>
-
-            <Link
-              className="hero-card hero-card-small"
-              href={productInternalPath(featured[1].id)}
-            >
-              <span className="card-label">{featured[1].category}</span>
-              <ProductImage product={featured[1]} />
-              <span className="hero-card-title">{featured[1].name}</span>
-            </Link>
-
-            <Link
-              className="hero-card hero-card-small"
-              href={productInternalPath(featured[2].id)}
-            >
-              <span className="card-label">{featured[2].category}</span>
-              <ProductImage product={featured[2]} />
-              <span className="hero-card-title">{featured[2].name}</span>
-            </Link>
-
-            <Link
-              className="hero-card hero-card-rail"
-              href={productInternalPath(featured[3].id)}
-            >
-              <span className="card-label">{featured[3].category}</span>
-              <ProductImage product={featured[3]} />
-              <span className="hero-card-title">{featured[3].name}</span>
-            </Link>
-
-            <div className="status-panel">
-              <p>PRODUCT SOURCE</p>
-              <strong>Image and page paired</strong>
-              <span>Checked 29 Jul 2026</span>
-            </div>
-            <div className="status-panel">
-              <p>BEFORE ORDERING</p>
-              <strong>Review size and variant</strong>
-              <span>Seller details may change</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="fold-preview" aria-label="More product finds">
-          {products.slice(4, 10).map((product) => (
-            <Link
-              key={product.id}
-              href={productInternalPath(product.id)}
-            >
-              <ProductImage product={product} sizes="(max-width: 620px) 33vw, 16vw" />
-              <span>{product.name}</span>
-            </Link>
-          ))}
-        </section>
-
-        <section className="section-shell product-section" id="products">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">Current catalog sample</p>
-              <h2>Catalog entries, correctly paired</h2>
-            </div>
-            <p>
-              Every card below uses the first product image from its matching
-              destination page. Clicking the image, title or button opens that
-              exact product—not a generic category or duplicated link.
-            </p>
-          </div>
-          <p className="catalog-rights-note">
-            Neutral titles describe the visible item only. Third-party marks in
-            source images belong to their owners and do not imply endorsement,
-            authorization or authenticity.{" "}
-            <Link href="/independent-disclosure">
-              Read the independent disclosure.
-            </Link>
-          </p>
-
-          <div className="product-grid">
-            {products.map((product) => (
-              <article className="product-card" key={product.id}>
-                <Link
-                  className="product-image"
-                  href={productInternalPath(product.id)}
-                  aria-label={`Open ${product.name}`}
-                >
-                  <ProductImage product={product} />
-                  <span>Open product <ArrowIcon /></span>
-                </Link>
-                <div className="product-copy">
-                  <p>{product.category}</p>
-                  <h3>
-                    <Link href={productInternalPath(product.id)}>
-                      {product.name}
-                    </Link>
-                  </h3>
-                  <div>
-                    <span>¥{product.priceCny} · ${productPriceUsd(product.priceCny)}</span>
-                    <Link
-                      href={productInternalPath(product.id)}
-                      aria-label={`View matching page for ${product.name}`}
-                    >
-                      View <ArrowIcon />
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="section-cta">
-            <a
-              className="button button-primary"
-              href={`${catalogBase}/AllProducts/`}
-              target="_blank"
-              rel="sponsored noopener noreferrer"
-            >
-              View the full product catalog <span aria-hidden="true">→</span>
-            </a>
-            <p>
-              Availability, variants and seller details can change. Check the
-              destination page again before ordering.
-            </p>
-          </div>
+          <LiveProducts locale={locale} />
         </section>
 
         <section className="section-shell category-section" id="categories">
@@ -305,7 +179,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
             {categories.map((category, index) => (
               <Link
                 key={category.name}
-                href={categoryInternalPath(category.slug)}
+                href={localizedPath(locale,"/catalog/"+(category.slug==="hoodies"?"hoodies-sweaters":category.slug)+"/")}
               >
                 <span className="category-number">0{index + 1}</span>
                 <h3>{category.name}</h3>
@@ -482,9 +356,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
               <span>STORAGE</span>
               <h3>Use the warehouse window</h3>
               <p>
-                The public page states 90 days of free storage. Review arrivals
-                promptly, resolve QC questions and leave time to compare parcel
-                options.
+                Check the current storage period on LoloBuy. Review arrivals promptly and resolve QC questions before arranging shipping.
               </p>
             </article>
           </div>

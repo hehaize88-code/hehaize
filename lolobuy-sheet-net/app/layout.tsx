@@ -65,12 +65,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/lolobuy-icon.png",
+    shortcut: "/lolobuy-icon.png",
   },
 };
 
@@ -81,6 +78,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><link rel="stylesheet" href="/site-shell.css?v=20261012-net" /></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
