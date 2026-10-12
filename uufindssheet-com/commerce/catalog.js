@@ -52,9 +52,18 @@ const base=lang=>`${prefix(lang)}/catalog`;
 const localPath=(path,lang)=>`${base(lang)}${path==='/AllProducts/'?'/':path}`;
 const money=p=>Number.isFinite(Number(p))&&p!==''?'$'+Number(p).toFixed(2):'—';
 const labels=lang=>COPY[lang]||COPY.en;
+const NAV_LABELS = {
+ en: ['Finds','Products','QC Guide','How It Works','Articles','FAQ'],
+ de: ['Funde','Produkte','QC-Leitfaden','So funktioniert es','Artikel','FAQ'],
+ pl: ['Znaleziska','Produkty','Poradnik QC','Jak to działa','Artykuły','FAQ'],
+ 'pt-br': ['Achados','Produtos','Guia de QC','Como funciona','Artigos','FAQ']
+};
 function nav(lang,path) {
  const t=labels(lang);
- return `<header class="catalog-header"><a class="catalog-brand" href="${prefix(lang)}/"><img class="catalog-wordmark" src="/uufinds-official-logo.png" width="170" height="42" alt="UUFinds"><small>SPREADSHEET</small></a><nav><a href="${base(lang)}/">${t[18]}</a><a href="${prefix(lang)}/articles/">${({de:'Artikel',pl:'Artykuły','pt-br':'Artigos'})[lang]||'Guides'}</a></nav><div class="catalog-actions"><details><summary>${lang.toUpperCase()}</summary><div class="catalog-languages">${LANGS.map(l=>`<a href="${prefix(l)}${path}" hreflang="${l}">${l.toUpperCase()}</a>`).join('')}</div></details><a class="register" href="${REGISTER_URL}" target="_blank" rel="noopener noreferrer" data-track-event="register_click">${t[10]} ↗</a></div></header>`;
+ const names=NAV_LABELS[lang]||NAV_LABELS.en;
+ const paths=['/catalog/','/catalog/','/guides/uufinds-qc-checklist/','/how-it-works/','/articles/','/faq/'];
+ const codes={'en':'EN','en-gb':'UK','de':'DE','pl':'PL','pt-br':'BR'};
+ return `<header class="catalog-header"><a class="catalog-brand" href="${prefix(lang)}/" aria-label="UUFinds Sheet home"><img class="catalog-wordmark" src="/uufinds-official-logo.png" width="208" height="52" alt="UUFinds"></a><nav class="catalog-primary-nav" aria-label="Main navigation">${paths.map((p,i)=>`<a href="${prefix(lang)}${p}">${names[i]}</a>`).join('')}</nav><div class="catalog-actions"><details><summary><span aria-hidden="true">◎</span> ${codes[lang]} <b aria-hidden="true">⌄</b></summary><div class="catalog-languages">${LANGS.map(l=>`<a href="${prefix(l)}${path}" hreflang="${l}"${l===lang?' aria-current="page"':''}>${codes[l]}</a>`).join('')}</div></details><a class="register" href="${REGISTER_URL}" target="_blank" rel="noopener noreferrer" data-track-event="register_click"><span class="register-label">${t[10]}</span><span class="register-short">${({de:'Registrieren',pl:'Rejestracja','pt-br':'Cadastrar'})[lang]||'Register'}</span> ↗</a></div></header>`;
 }
 function shell(lang,path,title,description,body,{noindex=false,status=200}={}) {
  const canonical='https://uufindssheet.com'+prefix(lang)+path;
