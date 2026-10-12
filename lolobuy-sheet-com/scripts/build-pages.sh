@@ -128,4 +128,6 @@ if (
 }
 NODE
 
+cp "${project_root}/.assetsignore" "${pages_output}/.assetsignore"
+
 echo "Prepared Cloudflare Pages artifact in dist/client."
