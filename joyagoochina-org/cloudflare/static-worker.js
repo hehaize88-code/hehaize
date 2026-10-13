@@ -14,8 +14,8 @@ const localeCodes = new Set([
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "2026-10-13-joyagoo-mobile-inner-v1";
-const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v1">';
+const htmlCacheVersion = "2026-10-13-joyagoo-mobile-inner-v2";
+const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v2">';
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
