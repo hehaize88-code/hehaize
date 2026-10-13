@@ -1,3 +1,4 @@
+import { MobileTopic } from "./components/mobile-topic";
 import Link from "next/link";
 import { articles } from "./article-data";
 import { articleText, getLocalizedArticle } from "./article-locales";
@@ -22,7 +23,7 @@ export function ArticleRecommendations({ locale, group = "featured", heading = f
   group?: keyof typeof groups;
   heading?: boolean;
 }) {
-  return (
+  const recommendations = (
     <div className={heading ? "section-shell focused-guides" : "focused-guides"} data-i18n-ignore>
       {heading && <h2>{headings[locale]}</h2>}
       <div className="learn-grid article-recommendations">
@@ -39,4 +40,5 @@ export function ArticleRecommendations({ locale, group = "featured", heading = f
       </div>
     </div>
   );
+  return heading ? <MobileTopic title={articleText(locale, "Related buying guides")}>{recommendations}</MobileTopic> : recommendations;
 }
