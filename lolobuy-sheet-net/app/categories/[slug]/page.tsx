@@ -86,7 +86,7 @@ export default async function CategoryReferencePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <SiteHeader active="categories" />
-      <main className="category-reference-main">
+      <main className="category-reference-main mobile-inner">
         <section className="category-reference-hero">
           <nav className="product-reference-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>/</span>

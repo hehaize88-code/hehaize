@@ -437,7 +437,7 @@ export function EditorialPage({ kind }: { kind: EditorialPageKind }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <SiteHeader />
-      <main className="subpage-main editorial-page" data-i18n-ignore>
+      <main className="subpage-main editorial-page mobile-inner" data-i18n-ignore>
         <section className="subpage-hero editorial-page-hero">
           <div>
             <p className="subpage-breadcrumb">

@@ -94,6 +94,8 @@ const staticFiles = new Set([
   "/lolobuy-icon.png",
   "/catalog.css",
   "/catalog.js",
+  "/mobile-inner.css",
+  "/mobile-catalog.js",
   "/site-shell.css",
   "/catalog-image-index.json",
   "/commerce-events.js",
@@ -258,7 +260,7 @@ export default {
       ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
     }
 
-    finalResponse.headers.set("x-lolobuy-release","20261012-net-pages-contrast-v3");
+    finalResponse.headers.set("x-lolobuy-release","20261013-net-mobile-v1");
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };

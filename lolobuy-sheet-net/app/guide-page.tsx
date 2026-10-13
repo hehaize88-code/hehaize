@@ -1,3 +1,5 @@
+import { MobileChapter, MobileReadingTools } from "./components/mobile-reading";
+import MobileArticleList from "./components/mobile-article-list";
 import LiveProducts from "./live-products";
 import {CATEGORIES, CATEGORY_LABELS} from "../commerce/catalog.mjs";
 import { ArticleRecommendations } from "./article-recommendations";
@@ -170,8 +172,7 @@ function InfoCard({
   return (
     <article className="subpage-info-card">
       <span>{number}</span>
-      <h2>{title}</h2>
-      <div>{children}</div>
+      <MobileChapter title={title}><div>{children}</div></MobileChapter>
     </article>
   );
 }
@@ -642,7 +643,7 @@ function ArticlesPage({ locale }: { locale: Locale }) {
           url: absoluteUrl(localizedPath(locale, `/articles/${article.slug}`)),
         })) },
       }) }} />
-      <section className="section-shell article-index" aria-label="Buying guides">
+      <MobileArticleList locale={locale}>
         {visibleArticles.map((article, index) => (
           <article key={article.slug}>
             <div className="article-index-image">
@@ -686,7 +687,7 @@ function ArticlesPage({ locale }: { locale: Locale }) {
             </div>
           </article>
         ))}
-      </section>
+      </MobileArticleList>
 
       <details className="section-shell article-reading-help">
         <summary>{{ en: "How to choose a guide", de: "So wählst du einen Ratgeber", es: "Cómo elegir una guía", fr: "Comment choisir un guide", it: "Come scegliere una guida" }[locale]}</summary>
@@ -886,7 +887,7 @@ export function GuidePage({
   return localizeReactNode(
     <>
       <SiteHeader active={active} locale={locale} />
-      <main className={`subpage-main${kind === "articles" || kind === "learn" ? " articles-page" : ""}`}>
+      <main className={`subpage-main mobile-inner${kind === "articles" || kind === "learn" ? " articles-page" : ""}`}>
         <section className="subpage-hero">
           <div>
             <p className="subpage-breadcrumb">
@@ -897,6 +898,7 @@ export function GuidePage({
             <p>{intro.intro}</p>
           </div>
         </section>
+        {!["articles", "faq", "learn"].includes(kind) && <div className="section-shell mobile-guide-tools"><MobileReadingTools locale={locale} /></div>}
         {kind === "products" && <ProductsPage locale={locale} />}
         {kind === "categories" && <CategoriesPage locale={locale} />}
         {kind === "qc-guide" && <><ArticleRecommendations locale={locale} group="qc" heading /><QcPage locale={locale} /></>}
