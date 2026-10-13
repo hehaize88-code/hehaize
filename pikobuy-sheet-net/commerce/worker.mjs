@@ -1,4 +1,4 @@
-const RELEASE = '20261012-catalog-v1';
+const RELEASE = '20261013-mobile-v1';
 async function catalogSitemap() {
  try {
   const xml=await upstream('/sitemap.xml');
@@ -39,7 +39,15 @@ const worker = {
   const headers=new Headers(response.headers);headers.set('x-pikobuy-release',RELEASE);headers.set('x-content-type-options','nosniff');
   const status=allowed?response.status:404;
   if(status===404)headers.set('x-robots-tag','noindex');
-  if(headers.get('content-type')?.includes('text/html')){headers.set('content-language',lang);headers.set('cache-control','public, max-age=0, s-maxage=60')}
+  if(headers.get('content-type')?.includes('text/html')){
+   headers.set('content-language',lang);headers.set('cache-control','public, max-age=0, s-maxage=60');
+   // Inject only into successful editorial inner routes. Home HTML stays byte-for-byte unchanged.
+   if(status===200 && ROUTES.has(url.pathname) && bare!=='/' && request.method!=='HEAD') {
+    const html=(await response.text()).replace('</head>','<link rel="stylesheet" href="/assets/piko-mobile-20261013-v1.css"><script src="/assets/piko-mobile-20261013-v1.js" defer></script></head>').replace(/<body([^>]*)>/,(_,attrs)=>'<body'+(/\bclass="/.test(attrs)?attrs.replace(/\bclass="/,'class="piko-compact-page '):attrs+' class="piko-compact-page"')+'>');
+    headers.delete('content-length');headers.delete('etag');
+    return new Response(html,{status,headers});
+   }
+  }
   return new Response(request.method==='HEAD'?null:response.body,{status,headers});
  }
 };

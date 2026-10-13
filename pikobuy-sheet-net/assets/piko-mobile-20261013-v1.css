@@ -1,0 +1,145 @@
+/* Inner pages only. Every rule is scoped; the seven homepages stay unchanged. */
+.piko-compact-page .mobile-reading-controls,
+.piko-compact-page .mobile-list-controls { display: none; }
+.piko-compact-page [hidden] { display: none !important; }
+.piko-compact-page .mobile-chapter > summary { list-style: none; }
+.piko-compact-page .mobile-chapter > summary::-webkit-details-marker { display: none; }
+.piko-compact-page .mobile-chapter > summary h2 { display: block; }
+@media (min-width: 681px) {
+  .piko-compact-page .mobile-chapter > summary { cursor: default; }
+  .piko-compact-page .mobile-toc { display: contents; }
+  .piko-compact-page .mobile-toc > summary { display: none; }
+}
+@media print {
+  .piko-compact-page .mobile-reading-controls,
+  .piko-compact-page .mobile-list-controls { display: none !important; }
+}
+@media (max-width: 680px) {
+  .piko-compact-page .piko-header { padding: 8px 4%; gap: 4px 8px; }
+  .piko-compact-page .piko-brand-actions { min-width: 0; gap: 8px; }
+  .piko-compact-page .piko-brand img { width: 100px; height: 28px; }
+  .piko-compact-page .piko-header .piko-register { font-size: 11px; padding: 9px 8px; max-width: 140px; }
+  .piko-compact-page .piko-language summary { padding: 10px 8px; }
+  .piko-compact-page .piko-header > nav { gap: 0 6px; font-size: 12px; }
+  .piko-compact-page .piko-header > nav a { padding: 8px 0; line-height: 1.35; }
+  .piko-compact-page .piko-footer { padding: 14px 4%; font-size: 12px; line-height: 1.5; }
+  .piko-compact-page .piko-footer p { margin: 0 0 8px; }
+  .piko-compact-page .piko-footer nav { gap: 4px 14px; margin: 8px 0; }
+  .piko-compact-page .piko-footer nav a { padding: 5px 0; }
+  .piko-compact-page .inner-main { min-height: 0; }
+  .piko-compact-page :is(.inner-hero, .inner-section, .longform, .narrow-section) { width: 92%; }
+  .piko-compact-page .inner-hero { padding: 18px 0 10px; }
+  .piko-compact-page .inner-hero::after { display: none; }
+  .piko-compact-page .kicker { font-size: 10px; line-height: 1.4; letter-spacing: .7px; }
+  .piko-compact-page :is(.inner-hero, .longform) h1 { font-size: 27px; line-height: 1.16; letter-spacing: -.7px; margin: 8px 0 10px; overflow-wrap: anywhere; }
+  .piko-compact-page :is(.inner-hero > p, .longform header > p) { font-size: 14px; line-height: 1.55; }
+  .piko-compact-page .inner-section { padding: 12px 0 24px; }
+  .piko-compact-page .snapshot-note { font-size: 12px !important; line-height: 1.5 !important; margin: 8px 0; }
+  .piko-compact-page .guide-grid { grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  .piko-compact-page .guide-card { display: block; min-height: 0; border-radius: 10px; }
+  .piko-compact-page .guide-visual { height: auto; min-height: 0; padding: 8px 12px; align-items: center; }
+  .piko-compact-page .guide-visual span { font-size: 10px; padding: 0; background: none; }
+  .piko-compact-page .guide-visual b { font: 700 17px/1 Arial, sans-serif; transform: none; }
+  .piko-compact-page .guide-card > div:last-child { padding: 10px 12px; }
+  .piko-compact-page .guide-card h3 { margin: 5px 0 6px; font-size: 17px; line-height: 1.3; }
+  .piko-compact-page .guide-card p { min-height: 0; margin: 0 0 7px; font-size: 13px; line-height: 1.5; }
+  .piko-compact-page .guide-card small,
+  .piko-compact-page .guide-card strong { font-size: 11px; }
+  .piko-compact-page .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .piko-compact-page .article-card,
+  .piko-compact-page .article-card:last-child { grid-column: auto; min-height: 0; padding: 11px; border-radius: 9px; }
+  .piko-compact-page .article-top { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .piko-compact-page .article-top span { font-size: 10px; line-height: 1.3; padding: 3px 6px; }
+  .piko-compact-page .article-top time { font-size: 10px; }
+  .piko-compact-page .article-card h3 { font-size: 15px; line-height: 1.3; margin: 9px 0 8px; }
+  .piko-compact-page .article-card p { font-size: 12px; line-height: 1.45; margin: 0 0 10px; }
+  .piko-compact-page .article-card strong { font-size: 11px; line-height: 1.4; }
+  .piko-compact-page .method-panel { padding: 16px; margin-top: 14px; border-radius: 10px; }
+  .piko-compact-page .method-panel h2 { font-size: 22px; line-height: 1.25; margin: 7px 0; }
+  .piko-compact-page .method-panel p { font-size: 14px; line-height: 1.55; }
+  .piko-compact-page .longform { padding: 18px 0 24px; }
+  .piko-compact-page .longform header { padding-bottom: 12px; }
+  .piko-compact-page .article-byline { flex-wrap: wrap; gap: 5px 10px; margin-top: 12px; font-size: 11px; }
+  .piko-compact-page .article-byline span { padding-right: 10px; }
+  .piko-compact-page .fact-box { padding: 10px 12px; margin: 12px 0; font-size: 12px; line-height: 1.5; border-radius: 8px; }
+  .piko-compact-page .article-layout { display: block; }
+  .piko-compact-page .article-toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 10px; position: static; padding: 4px 0 12px; }
+  .piko-compact-page .article-toc strong { grid-column: 1 / -1; font-size: 11px; margin: 0; }
+  .piko-compact-page .article-toc a { padding: 7px 0; font-size: 12px; line-height: 1.4; overflow-wrap: anywhere; }
+  /* Chapter headings become the contents list, so the duplicate contents can collapse. */
+  .piko-compact-page .mobile-toc { margin: 10px 0; border-bottom: 1px solid var(--piko-line); }
+  .piko-compact-page .mobile-toc > summary { padding: 10px 0; cursor: pointer; font-size: 14px; font-weight: 700; }
+  .piko-compact-page .mobile-reading-controls,
+  .piko-compact-page .mobile-list-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0; font: 12px/1.5 Arial, sans-serif; }
+  .piko-compact-page .mobile-reading-controls button,
+  .piko-compact-page .mobile-list-controls button { min-height: 40px; padding: 9px 13px; border: 1px solid #abc2b2; border-radius: 7px; background: #fff; color: #24583f; font: 600 13px/1.4 Arial, sans-serif; cursor: pointer; }
+  .piko-compact-page .mobile-reading-controls button:focus-visible,
+  .piko-compact-page .mobile-list-controls button:focus-visible,
+  .piko-compact-page .mobile-chapter > summary:focus-visible { outline: 3px solid #61966f; outline-offset: 2px; }
+  .piko-compact-page :is(.editorial-body, .article-copy) { min-width: 0; }
+  .piko-compact-page .inner-section.editorial-body { margin-left: 4%; }
+  .piko-compact-page :is(.editorial-body, .article-copy) > section { padding: 14px 0 0; margin: 0 0 12px; scroll-margin-top: 12px; }
+  .piko-compact-page :is(.editorial-body, .article-copy) h2 { font-size: 21px; line-height: 1.3; margin: 0 0 10px; }
+  .piko-compact-page :is(.editorial-body, .article-copy) p,
+  .piko-compact-page :is(.editorial-body, .article-copy) li { font-size: 16px; line-height: 1.6; }
+  .piko-compact-page :is(.editorial-body, .article-copy) p { margin: 0 0 12px; }
+  .piko-compact-page .editorial-body ul { margin: 12px 0; padding: 12px 14px 12px 32px; border-radius: 8px; }
+  .piko-compact-page .editorial-body li { margin: 6px 0; }
+  .piko-compact-page :is(.editorial-body, .article-copy) > section:has(> .mobile-chapter) { padding: 0; margin: 0; border-bottom: 1px solid var(--piko-line); }
+  .piko-compact-page .mobile-chapter > summary { position: relative; padding: 14px 28px 14px 0; cursor: pointer; }
+  .piko-compact-page .mobile-chapter > summary h2 { font-size: 17px; line-height: 1.4; margin: 0; letter-spacing: -.2px; }
+  .piko-compact-page .mobile-chapter > summary::after { content: '+'; position: absolute; right: 5px; top: 12px; font: 24px/1 Arial, sans-serif; color: var(--piko-green); }
+  .piko-compact-page .mobile-chapter[open] > summary::after { content: '−'; }
+  .piko-compact-page .mobile-chapter-content { padding-bottom: 10px; }
+  .piko-compact-page .research-product-grid { gap: 8px; margin: 10px 0 14px; }
+  .piko-compact-page .research-product-grid .product-image { min-height: 0; height: auto; aspect-ratio: 1; }
+  .piko-compact-page .research-product-grid .product-image img { width: 100%; height: 100%; object-fit: contain; }
+  .piko-compact-page .research-product-grid .product-body { padding: 9px; }
+  .piko-compact-page .research-product-grid h3 { font-size: 14px; }
+  .piko-compact-page .research-product-grid p { font-size: 12px; }
+  .piko-compact-page .related-research { padding-top: 14px; margin-top: 14px; }
+  .piko-compact-page .next-step { padding: 16px; margin-top: 18px; border-radius: 10px; }
+  .piko-compact-page .next-step h2 { font-size: 22px; margin: 8px 0 14px; }
+  .piko-compact-page .source-note { width: 100%; display: block; padding: 12px; margin: 12px 0; font-size: 13px; }
+  .piko-compact-page .faq-list summary { padding: 14px 28px 14px 0; font-size: 15px; line-height: 1.4; }
+  .piko-compact-page .faq-list summary::after { font-size: 23px; }
+  .piko-compact-page .faq-list p { font-size: 14px; line-height: 1.6; margin: 0 0 12px; }
+  .piko-compact-page .category-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .piko-compact-page .category-directory > a { grid-template-columns: 22px minmax(0, 1fr); padding: 12px; gap: 8px; min-height: 0; }
+  .piko-compact-page .category-directory > a > span { font-size: 22px; }
+  .piko-compact-page .category-directory h2 { font-size: 18px; overflow-wrap: anywhere; }
+  .piko-compact-page .category-directory b { grid-column: 1 / -1; font-size: 12px; }
+  .piko-compact-page .catalog-main { padding: 14px 4% 24px; }
+  .piko-compact-page .catalog-eyebrow { margin: 0 0 6px; font-size: 10px; }
+  .piko-compact-page .catalog-main > h1,
+  .piko-compact-page .catalog-product-info h1 { font-size: 25px; line-height: 1.2; margin: 6px 0 12px; }
+  .piko-compact-page .catalog-main > p:not(.catalog-eyebrow) { font-size: 14px; line-height: 1.5; }
+  .piko-compact-page .catalog-tools { display: grid; gap: 7px; margin-bottom: 10px; }
+  .piko-compact-page .catalog-search { padding: 4px; }
+  .piko-compact-page .catalog-search input { padding: 8px; font-size: 16px; }
+  .piko-compact-page .catalog-search button { padding: 8px 12px; font-size: 13px; }
+  .piko-compact-page .image-search-link { padding: 9px 12px; font-size: 13px; }
+  .piko-compact-page .category-filters { gap: 5px; flex-wrap: wrap; overflow: visible; }
+  .piko-compact-page .category-filters a { font-size: 12px; line-height: 1.3; padding: 7px 9px; }
+  .piko-compact-page .sort-row { gap: 4px; margin: 10px 0; font-size: 12px; }
+  .piko-compact-page .sort-row a { padding: 8px; }
+  .piko-compact-page .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .piko-compact-page .catalog-card h2 { font-size: 14px; line-height: 1.35; min-height: 0; margin: 8px 9px; }
+  .piko-compact-page .card-meta { margin: 8px 9px 10px; gap: 4px; }
+  .piko-compact-page .card-meta strong { font-size: 18px; }
+  .piko-compact-page .catalog-pagination { flex-wrap: wrap; gap: 12px; margin: 16px 0 0; }
+  .piko-compact-page .catalog-pagination a { padding: 9px 14px; }
+  .piko-compact-page .back { margin-bottom: 12px; font-size: 13px; }
+  .piko-compact-page .catalog-detail { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-bottom: 20px; }
+  .piko-compact-page .gallery-main { max-width: 260px; margin: auto; }
+  .piko-compact-page .gallery-thumbs { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; margin-top: 8px; }
+  .piko-compact-page .gallery-thumbs button { max-width: 64px; justify-self: center; }
+  .piko-compact-page .catalog-product-info > p { margin: 8px 0; }
+  .piko-compact-page .detail-price { font-size: 28px; }
+  .piko-compact-page .buy-button { padding: 12px; }
+  .piko-compact-page .catalog-product-info h2 { font-size: 19px; margin: 16px 0 8px; }
+  .piko-compact-page .catalog-product-info > p:not(.detail-price) { font-size: 14px; line-height: 1.5; }
+  .piko-compact-page .image-search-panel { padding: 12px; margin-bottom: 16px; }
+  .piko-compact-page .image-drop { gap: 10px; padding: 12px; font-size: 14px; }
+  .piko-compact-page #image-preview { width: 96px; height: 96px; margin-top: 12px; }
+}
