@@ -30,12 +30,19 @@
   main.guide-page .worksheet-fields { margin: 14px 0; gap: 12px; }
   main.guide-page .worksheet-results { padding: 8px 12px; }
 
-  main.seo-index-page .seo-index-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 22px; }
-  main.seo-index-page .seo-index-card > div:first-child { padding: 10px; }
-  main.seo-index-page .seo-index-card .editorial-card-image { width: calc(100% + 20px); margin: -10px -10px 10px; aspect-ratio: 1; }
-  main.seo-index-page .seo-index-card h2 { margin: 8px 0; font-size: 16px; line-height: 1.3; }
-  main.seo-index-page .seo-index-card > div:first-child > p:not(.eyebrow) { margin-bottom: 10px; line-height: 1.5; }
-  main.seo-index-page .seo-index-card .seo-feature-meta { margin-bottom: 10px; }
+  /* Article previews use small square thumbnails and a compact text column.
+     Reset the legacy paragraph rule explicitly: it otherwise gives the
+     eyebrow a large font, pale colour and 1.8rem of bottom margin. */
+  main.seo-index-page .seo-index-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 22px; }
+  main.seo-index-page .seo-index-card { border-radius: 10px; }
+  main.seo-index-page .seo-index-card > div:first-child { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-content: start; align-items: start; gap: 5px 12px; padding: 12px; }
+  main.seo-index-page .seo-index-card > div:first-child > :not(img) { grid-column: 2; min-width: 0; }
+  main.seo-index-page .seo-index-card .editorial-card-image { grid-column: 1; grid-row: 1 / span 3; width: 76px; height: 76px; max-width: 100%; margin: 0; aspect-ratio: 1; border: 1px solid #e3e8dd; border-radius: 6px; object-fit: contain; }
+  main.seo-index-page .seo-index-card > div:first-child > p.eyebrow { margin: 0; font: 700 10px/1.3 Arial, sans-serif; letter-spacing: .02em; color: #54644a; }
+  main.seo-index-page .seo-index-card h2 { margin: 0; font-size: 16px; line-height: 1.3; overflow-wrap: anywhere; }
+  main.seo-index-page .seo-index-card > div:first-child > p:not(.eyebrow) { margin: 0; font-size: 13px; line-height: 1.45; -webkit-line-clamp: 2; }
+  main.seo-index-page .seo-index-card .seo-feature-meta { display: flex; flex-wrap: wrap; gap: 3px 10px; margin: 2px 0 0; font-size: 10px; line-height: 1.4; }
+  main.seo-index-page .seo-index-card > div:first-child > strong { margin: 0; font-size: 12px; line-height: 1.4; letter-spacing: 0; }
   main.guide-index-page .guide-index-grid { gap: 10px; margin-bottom: 22px; }
   main.guide-index-page .guide-index-grid .guide-card { min-height: 0; padding: 14px; }
   main.guide-index-page .guide-index-grid .guide-card h2 { margin: 8px 0; font-size: 19px; }
