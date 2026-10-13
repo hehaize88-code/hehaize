@@ -4,6 +4,7 @@ import html, json, re
 import xml.etree.ElementTree as ET
 from urllib.parse import quote
 from datetime import date
+from mobile_layout import assets as mobile_assets, chapters, compact_support
 
 ROOT=Path(__file__).parent; DIST=ROOT/'dist'; SITE='https://hipobuyy-sheet.com'; SHOP='https://cnbuycha.com'
 P=json.loads((ROOT/'products.json').read_text())
@@ -180,6 +181,9 @@ def shell(lang,path,title,description,body,home=False):
     head=f'<div class="topline"><div class="wrap"><strong>{e(LOCAL[lang][0])}</strong> · {e(LOCAL[lang][1])}</div></div><header><div class="wrap nav"><div class="brand-actions"><a class="register-left" href="https://hipobuy.com/register" target="_blank" rel="noopener noreferrer" data-track-event="hipobuy_register_click">{e(t["register"])} ↗</a><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a></div><nav class="navlinks" aria-label="{e(LOCAL[lang][2])}">{nav}</nav><select class="langs" id="language" aria-label="Language">{opts}</select></div></header>'
     footer=f'<footer class="foot"><div class="wrap"><div class="foot-grid"><div><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a><p>{e(t["independent"])}</p></div><nav>{"".join(f"<a href={chr(34)+href(lang,r)+chr(34)}>{e(t[chr(110)+chr(97)+chr(118)][i])}</a>" for i,r in enumerate(ROUTES[1:],1) if r != "finds")}</nav></div><div class="foot-base">© 2026 Hipobuyy Sheet · {e(LOCAL[lang][6])}</div></div></footer>'
     document_head=meta(lang,path,title,description)
+    if path:
+        document_head=document_head.replace('</head>', mobile_assets()+'</head>')
+        body=compact_support(body,lang)
     if path.startswith('articles/'):
         record=BY_SLUG[path.rsplit('/',1)[-1]]
         org={'@type':'Organization','name':'Hipobuyy Sheet','url':SITE,'logo':{'@type':'ImageObject','url':SITE+'/assets/hipobuy-official-logo1.png'}}
@@ -192,7 +196,7 @@ def shell(lang,path,title,description,body,home=False):
         schema={'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':answer}} for q,answer in FAQS[lang]]}
         document_head=document_head.replace('</head>','<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('<','\\u003c')+'</script></head>')
     footer=footer.replace('hipobuy-official-logo1.png','hipobuy-official-logo2.png')
-    main_class=f' class="home" data-locale="{lang}"' if not path else ''
+    main_class=f' class="home" data-locale="{lang}"' if not path else f' class="mobile-inner" data-locale="{lang}"'
     body=re.sub(r'href="https://(?:www\.)?cnbuycha\.com([^"]*)"',lambda m:'href="/'+lang+'/catalog'+m.group(1)+'"',body)
     return document_head+f'<body>{head}<main{main_class}>{body}</main>{footer}</body></html>'
 def save(lang,path,body,title,desc):
@@ -215,7 +219,7 @@ def section_header(title,sub,link=''):
     return f'<div class="section-top"><div><h2>{e(title)}</h2><p>{e(sub)}</p></div>{link}</div>'
 def head(lang,idx):
     t=T[lang];return f'<div class="page-head wrap"><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["page_titles"][idx])}</h1><p>{e(t["page_subs"][idx])}</p></div>'
-def text_sections(sections):return '<div class="prose">'+''.join(f'<h2>{e(title)}</h2><p>{e(copy)}</p>' for title,copy in sections)+'</div>'
+def text_sections(sections):return '<div class="prose">'+chapters([block for title,copy in sections for block in (f'<h2>{e(title)}</h2>',f'<p>{e(copy)}</p>')])+'</div>'
 def article_html(lang,slug):
     """Render our deliberately small, audited editorial Markdown subset."""
     source=(ROOT/'content'/lang/f'{slug}.md').read_text(encoding='utf-8')
@@ -239,7 +243,7 @@ def article_html(lang,slug):
         else: blocks.append('<p>'+e(' '.join(block.splitlines()))+'</p>')
     toc_title={'en':'In this guide','de':'In diesem Ratgeber','es':'En esta guía','fr':'Dans ce guide','it':'In questa guida'}[lang]
     toc='<details class="article-toc"><summary>'+toc_title+'</summary><ol>'+''.join(f'<li><a href="#{anchor}">{e(label)}</a></li>' for anchor,label in headings)+'</ol></details>'
-    return '<article class="prose longread">'+toc+''.join(blocks)+'</article>' 
+    return '<article class="prose longread">'+toc+chapters(blocks)+'</article>'
 
 from editorial_components import calculator, editorial_products, related_slugs
 
