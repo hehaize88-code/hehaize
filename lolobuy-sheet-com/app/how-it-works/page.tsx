@@ -46,7 +46,7 @@ export default async function HowItWorksPage({
   const common = commonPageCopy[locale];
 
   return (
-    <main>
+    <main className="mobile-inner">
       <SiteHeader locale={locale} />
       <PageHero
         eyebrow={copy.eyebrow}

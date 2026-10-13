@@ -1,0 +1,188 @@
+/* Compact inner pages across five locales; no rules target .home-page. */
+.mobile-inner .mobile-reading-tools,
+.mobile-inner .mobile-list-controls { display: none; }
+.mobile-inner .mobile-list-item { display: contents; }
+.mobile-inner [hidden] { display: none !important; }
+.mobile-inner .mobile-chapter > summary,
+.mobile-inner .mobile-contents > summary { list-style: none; }
+.mobile-inner .mobile-chapter > summary::-webkit-details-marker,
+.mobile-inner .mobile-contents > summary::-webkit-details-marker { display: none; }
+@media (min-width: 681px) {
+  .mobile-inner .mobile-chapter > summary { cursor: default; }
+  .mobile-inner .mobile-contents { align-self: start; position: sticky; top: 2rem; }
+  .mobile-inner .mobile-contents > summary { display: none; }
+  .mobile-inner .mobile-contents aside { position: static; }
+}
+@media (max-width: 680px) {
+  .mobile-inner .lolo-header { padding: 8px 4%; gap: 4px 8px; min-height: 0; }
+  .mobile-inner .lolo-brand-actions { min-width: 0; gap: 8px; }
+  .mobile-inner .lolo-brand img { width: 100px; height: 28px; }
+  .mobile-inner .lolo-register { font-size: 11px; padding: 9px 8px; max-width: 142px; }
+  .mobile-inner .lolo-language summary { padding: 10px 8px; }
+  .mobile-inner .lolo-header > nav { gap: 0 5px; font-size: 12px; }
+  .mobile-inner .lolo-header > nav a { padding: 8px 0; line-height: 1.4; }
+  .mobile-inner .lolo-footer { padding: 14px 4%; font-size: 12px; line-height: 1.5; }
+  .mobile-inner .lolo-footer p { margin: 0 0 8px; }
+  .mobile-inner .lolo-footer nav { gap: 4px 14px; margin: 8px 0; }
+  .mobile-inner .lolo-footer nav a { padding: 5px 0; }
+  .mobile-inner .eyebrow { font-size: 11px; line-height: 1.4; letter-spacing: .7px; margin: 0 0 7px; }
+  .mobile-inner .breadcrumbs { margin: 0 0 12px; font-size: 11px; line-height: 1.4; }
+  .mobile-inner .breadcrumbs span { flex-wrap: wrap; min-width: 0; }
+  .mobile-inner .page-hero { padding: 16px 4% 18px; }
+  .mobile-inner .page-hero h1,
+  .mobile-inner .article-header h1 { font-size: 29px; line-height: 1.15; letter-spacing: -.8px; overflow-wrap: anywhere; }
+  .mobile-inner .page-intro,
+  .mobile-inner .article-header > p:not(.eyebrow) { font-size: 14px; line-height: 1.55; margin: 10px 0 0; }
+  .mobile-inner :is(.category-page-grid, .search-panel, .editorial-note-grid, .guide-step-grid, .guide-layout, .inline-cta, .shipping-fact, .shipping-grid, .weight-explainer, .source-note-panel, .workflow-list, .workflow-evidence, .boundary-table, .article-index-grid, .editorial-policy, .related-articles, .full-faq, .about-grid, .editorial-principles, .contact-grid, .policy-content) { padding: 18px 4%; gap: 12px; }
+  .mobile-inner :is(.source-note-panel, .editorial-policy, .search-panel, .workflow-evidence-heading, .boundary-table, .inline-cta, .weight-explainer, .guide-aside, .about-grid, .editorial-principles, .contact-grid, .policy-content) h2 { font-size: 24px; line-height: 1.25; letter-spacing: -.5px; margin: 0 0 10px; }
+  .mobile-inner :is(.source-note-panel, .editorial-policy, .search-panel, .workflow-evidence-heading, .weight-explainer, .guide-aside, .about-grid, .editorial-principles, .contact-grid, .policy-content) p:not(.eyebrow) { font-size: 14px; line-height: 1.6; margin: 8px 0 12px; }
+  .mobile-inner .button { min-height: 42px; padding: 10px 12px; font-size: 13px; }
+  .mobile-inner .text-link { font-size: 13px; line-height: 1.4; padding: 7px 0; }
+  .mobile-inner .product-search { min-height: 44px; }
+  .mobile-inner .product-search input { font-size: 16px; }
+  .mobile-inner .category-page-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .mobile-inner .category-page-card .category-image { min-height: 0; height: auto; aspect-ratio: 1; }
+  .mobile-inner .category-image img { width: 100%; height: 100%; object-fit: contain; }
+  .mobile-inner .category-page-card > a > div:last-child { padding: 10px; }
+  .mobile-inner .category-page-card h2 { font-size: 20px; line-height: 1.2; margin: 4px 0; overflow-wrap: anywhere; }
+  .mobile-inner .category-page-card p,
+  .mobile-inner .category-page-card span { font-size: 12px; line-height: 1.4; }
+  .mobile-inner .category-page-card b { font-size: 12px; }
+  .mobile-inner .category-guide-link { padding: 10px; font-size: 12px; }
+  .mobile-inner :is(.editorial-note-grid, .guide-step-grid, .shipping-grid) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mobile-inner :is(.editorial-note-grid, .guide-step-grid, .shipping-grid) article { min-height: 0; padding: 12px 10px; border: 1px solid var(--line); }
+  .mobile-inner :is(.editorial-note-grid, .guide-step-grid, .shipping-grid) h2 { font-size: 18px; line-height: 1.3; margin: 8px 0; }
+  .mobile-inner :is(.editorial-note-grid, .guide-step-grid, .shipping-grid) p { font-size: 13px; line-height: 1.5; margin: 7px 0 0; }
+  .mobile-inner .workflow-list article { grid-template-columns: 25px minmax(0, 1fr); gap: 7px 10px; min-height: 0; padding: 12px 0; }
+  .mobile-inner .workflow-list > article > span { font-size: 17px; }
+  .mobile-inner .workflow-list h2 { font-size: 23px; line-height: 1.25; margin: 0 0 5px; }
+  .mobile-inner .workflow-list p { font-size: 14px; line-height: 1.5; }
+  .mobile-inner .workflow-list .text-link { grid-column: 2; }
+  .mobile-inner .workflow-evidence .editorial-note-grid { padding: 0; }
+  .mobile-inner .guide-layout { grid-template-columns: minmax(0, 1fr); }
+  .mobile-inner .guide-aside { position: static; padding: 12px; }
+  .mobile-inner .guide-aside ul { margin: 10px 0; }
+  .mobile-inner .guide-aside li { font-size: 14px; line-height: 1.5; margin: 6px 0; }
+  .mobile-inner .guide-prose article { padding: 14px 0; }
+  .mobile-inner .guide-prose h2 { font-size: 23px; line-height: 1.25; margin: 6px 0 10px; }
+  .mobile-inner .guide-prose article > p:not(.eyebrow) { font-size: 16px; line-height: 1.6; margin: 0 0 10px; }
+  .mobile-inner .shipping-fact { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-items: center; }
+  .mobile-inner .shipping-fact > div { gap: 4px; }
+  .mobile-inner .shipping-fact span { font-size: 40px; line-height: 1; }
+  .mobile-inner .shipping-fact b { font-size: 11px; }
+  .mobile-inner .shipping-fact > p { font-size: 14px; line-height: 1.5; margin: 0; }
+  .mobile-inner .route-checklist { padding: 12px; }
+  .mobile-inner .route-checklist ol { margin: 10px 0 0; }
+  .mobile-inner .route-checklist li { min-height: 0; font-size: 14px; line-height: 1.5; padding-block: 9px; }
+  .mobile-inner :is(.table-wrap, .article-table-scroll) { overflow-x: visible; min-width: 0; margin-block: 12px; }
+  .mobile-inner table { width: 100%; min-width: 0; table-layout: fixed; }
+  .mobile-inner :is(th, td) { padding: 8px 6px; font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+  .mobile-inner .full-faq details { padding: 12px 0; }
+  .mobile-inner .full-faq summary { padding-right: 28px; font-size: 16px; line-height: 1.4; }
+  .mobile-inner .full-faq details p { font-size: 15px; line-height: 1.6; margin: 10px 0 0; }
+  .mobile-inner .article-index-grid,
+  .mobile-inner .article-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .mobile-inner .article-card { min-height: 0; }
+  .mobile-inner .article-card-media { min-height: 0; aspect-ratio: 1; }
+  .mobile-inner .article-card-media img { width: 100%; height: 100%; object-fit: cover; }
+  .mobile-inner .article-card-content { padding: 10px; }
+  .mobile-inner .article-card-content > p { font-size: 10px; margin: 0 0 6px; }
+  .mobile-inner .article-card h2 { font-size: 17px; line-height: 1.25; margin: 0 0 8px; }
+  .mobile-inner .article-card-content > span { font-size: 12px; line-height: 1.5; margin-top: 0; }
+  .mobile-inner .article-card-content > div { flex-wrap: wrap; gap: 4px; font-size: 10px; margin-top: 9px; }
+  .mobile-inner .article-card .text-link { font-size: 12px; margin-top: 8px; }
+  .mobile-inner .mobile-reading-tools,
+  .mobile-inner .mobile-list-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
+  .mobile-inner .mobile-list-controls { padding: 0 4% 18px; margin: 0; }
+  .mobile-inner .mobile-list-controls span { margin-right: auto; font-size: 12px; }
+  .mobile-inner :is(.mobile-reading-tools, .mobile-list-controls) button { min-height: 40px; padding: 9px 12px; border: 1px solid #d2b6a5; border-radius: 6px; background: #fff; color: #a5371c; font: 600 13px/1.4 Arial, sans-serif; cursor: pointer; }
+  .mobile-inner :is(.mobile-reading-tools, .mobile-list-controls) button:focus-visible,
+  .mobile-inner :is(.mobile-chapter, .mobile-contents) > summary:focus-visible { outline: 3px solid #df663d; outline-offset: 2px; }
+  .mobile-inner .longform { padding: 16px 4% 22px; }
+  .mobile-inner .article-header > div { gap: 5px 12px; justify-content: flex-start; margin-top: 10px; font-size: 11px; }
+  .mobile-inner .article-header > p.article-fact-check { padding: 9px 11px; font-size: 12px; line-height: 1.5; }
+  .mobile-inner .article-hero-media { max-width: 220px; margin: 14px auto; }
+  .mobile-inner .article-hero-media img { max-height: 220px; object-fit: contain; }
+  .mobile-inner .article-hero-media figcaption { padding: 8px; font-size: 11px; }
+  .mobile-inner .article-body { display: block; margin-top: 16px; }
+  .mobile-inner .mobile-contents { position: static; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+  .mobile-inner .mobile-contents > summary { cursor: pointer; padding: 12px 26px 12px 0; font-size: 14px; font-weight: 700; }
+  .mobile-inner .article-body aside { position: static; padding: 10px 0; }
+  .mobile-inner .article-body aside ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px 15px; margin: 8px 0; }
+  .mobile-inner .article-body aside li { font-size: 12px; line-height: 1.45; }
+  .mobile-inner .article-body aside > span { padding-top: 8px; font-size: 12px; }
+  .mobile-inner .article-intro { padding-bottom: 10px; }
+  .mobile-inner .article-intro p:first-child::first-letter { float: none; margin: 0; font: inherit; }
+  .mobile-inner .article-prose p,
+  .mobile-inner .article-prose li { font-size: 16px; line-height: 1.6; }
+  .mobile-inner .article-prose p { margin: 0 0 12px; }
+  .mobile-inner .article-prose > section { padding: 14px 0; margin: 0; scroll-margin-top: 12px; }
+  .mobile-inner .article-prose h2 { font-size: 23px; line-height: 1.3; margin: 5px 0 10px; }
+  .mobile-inner .article-prose .section-number { font-size: 10px; line-height: 1.3; margin: 0; }
+  .mobile-inner .article-prose > section:has(> .mobile-chapter) { padding: 8px 0 0; }
+  .mobile-inner .mobile-chapter > summary,
+  .mobile-inner .mobile-contents > summary { position: relative; padding-right: 26px; }
+  .mobile-inner .mobile-chapter > summary { padding-block: 10px; cursor: pointer; }
+  .mobile-inner .mobile-chapter > summary h2 { font-size: 18px; line-height: 1.35; margin: 0; }
+  .mobile-inner :is(.mobile-chapter, .mobile-contents) > summary::after { content: '+'; position: absolute; right: 3px; top: 10px; color: #b63f20; font: 24px/1 Arial, sans-serif; }
+  .mobile-inner :is(.mobile-chapter, .mobile-contents)[open] > summary::after { content: '−'; }
+  .mobile-inner .mobile-chapter-content { padding-bottom: 5px; }
+  .mobile-inner .article-visual { margin: 14px 0; }
+  .mobile-inner .article-visual figcaption { padding: 12px; }
+  .mobile-inner .article-visual figcaption h2 { font-size: 21px; }
+  .mobile-inner .article-visual figcaption p { font-size: 13px; line-height: 1.5; }
+  .mobile-inner .article-visual > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mobile-inner .article-visual article { min-height: 0; padding: 10px; }
+  .mobile-inner .article-visual article h3 { margin: 7px 0; font-size: 15px; line-height: 1.3; }
+  .mobile-inner .article-visual article p { font-size: 13px; line-height: 1.5; margin: 0; }
+  .mobile-inner .article-product-evidence { gap: 8px; margin: 12px 0; }
+  .mobile-inner .article-context-links nav { gap: 7px; margin-top: 12px; }
+  .mobile-inner .article-context-links nav a { min-height: 42px; padding: 10px; font-size: 13px; }
+  .mobile-inner .article-sources li { padding-block: 9px; }
+  .mobile-inner .article-sources li span { font-size: 14px; line-height: 1.5; }
+  .mobile-inner .section-heading-row { gap: 10px; margin-bottom: 12px; }
+  .mobile-inner .section-heading-row h2 { font-size: 24px; line-height: 1.25; }
+  .mobile-inner .category-guide { padding: 18px 4%; }
+  .mobile-inner :is(.category-guide-intro, .category-guide-section > header, .category-guide-faq > header) { gap: 10px; }
+  .mobile-inner :is(.category-guide-section, .category-guide-faq, .category-guide-products) { margin-top: 18px; padding-block: 18px; }
+  .mobile-inner :is(.category-guide-section, .category-guide-faq) h2 { font-size: 24px; line-height: 1.3; }
+  .mobile-inner .category-check-grid { gap: 9px; }
+  .mobile-inner .category-check-grid article { min-height: 0; padding: 12px; }
+  .mobile-inner .category-check-grid h3 { font-size: 18px; margin: 8px 0; }
+  .mobile-inner .category-check-grid p { font-size: 14px; line-height: 1.5; }
+  .mobile-inner .catalog-main { padding: 14px 4% 24px; }
+  .mobile-inner .catalog-eyebrow { margin: 0 0 6px; font-size: 10px; }
+  .mobile-inner .catalog-main > h1,
+  .mobile-inner .catalog-product-info h1 { font-size: 25px; line-height: 1.2; margin: 6px 0 12px; }
+  .mobile-inner .catalog-main > p:not(.catalog-eyebrow) { font-size: 14px; line-height: 1.5; }
+  .mobile-inner .catalog-tools { display: grid; gap: 7px; margin-bottom: 10px; }
+  .mobile-inner .catalog-search { padding: 4px; }
+  .mobile-inner .catalog-search input { padding: 8px; font-size: 16px; }
+  .mobile-inner .catalog-search button { padding: 8px 12px; font-size: 13px; }
+  .mobile-inner .image-search-link { padding: 9px 12px; font-size: 13px; }
+  .mobile-inner .category-filters { gap: 5px; flex-wrap: wrap; overflow: visible; }
+  .mobile-inner .category-filters a { font-size: 12px; line-height: 1.3; padding: 7px 9px; }
+  .mobile-inner .sort-row { gap: 4px; margin: 10px 0; font-size: 12px; }
+  .mobile-inner .sort-row a { padding: 8px; }
+  .mobile-inner .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .mobile-inner .catalog-card h2 { font-size: 14px; line-height: 1.35; min-height: 0; margin: 8px 9px; }
+  .mobile-inner .card-meta { margin: 8px 9px 10px; gap: 4px; }
+  .mobile-inner .card-meta strong { font-size: 18px; }
+  .mobile-inner .catalog-pagination { flex-wrap: wrap; gap: 12px; margin: 16px 0 0; }
+  .mobile-inner .catalog-pagination a { padding: 9px 14px; }
+  .mobile-inner .back { margin-bottom: 12px; font-size: 13px; }
+  .mobile-inner .catalog-detail { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-bottom: 20px; }
+  .mobile-inner .gallery-main { max-width: 260px; margin: auto; }
+  .mobile-inner .gallery-thumbs { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; margin-top: 8px; }
+  .mobile-inner .gallery-thumbs button { max-width: 64px; justify-self: center; }
+  .mobile-inner .catalog-product-info > p { margin: 8px 0; }
+  .mobile-inner .detail-price { font-size: 28px; }
+  .mobile-inner .buy-button { padding: 12px; }
+  .mobile-inner .catalog-product-info h2 { font-size: 19px; margin: 16px 0 8px; }
+  .mobile-inner .catalog-product-info > p:not(.detail-price) { font-size: 14px; line-height: 1.5; }
+  .mobile-inner .image-search-panel { padding: 12px; margin-bottom: 16px; }
+  .mobile-inner .image-drop { gap: 10px; padding: 12px; font-size: 14px; }
+  .mobile-inner #image-preview { width: 96px; height: 96px; margin-top: 12px; }
+}
+
+@media print { .mobile-inner .mobile-reading-tools, .mobile-inner .mobile-list-controls { display: none !important; } }

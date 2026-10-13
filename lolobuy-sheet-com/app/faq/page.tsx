@@ -39,7 +39,7 @@ export default async function FaqPage({
   const localizedFaqs = getLocalizedFaqs(locale);
 
   return (
-    <main>
+    <main className="mobile-inner">
       <SiteHeader locale={locale} />
       <PageHero
         eyebrow={copy.eyebrow}

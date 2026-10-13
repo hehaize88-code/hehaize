@@ -710,7 +710,7 @@ export default async function ProductPage({
     locale === "en" ? evidence.qcRisks : copy.checklist[product.kind];
 
   return (
-    <main>
+    <main className="mobile-inner">
       <SiteHeader locale={locale} />
       <article className="product-detail">
         <nav className="breadcrumbs" aria-label="Breadcrumb">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import MobileArticleList from "../components/mobile-article-list";
 import ArticleCard from "../components/article-card";
 import PageHero from "../components/page-hero";
 import SiteFooter from "../components/site-footer";
@@ -41,7 +42,7 @@ export default async function ArticlesPage({
   const localizedArticles = getLocalizedArticles(locale);
 
   return (
-    <main>
+    <main className="mobile-inner">
       <SiteHeader locale={locale} />
       <PageHero
         eyebrow={copy.eyebrow}
@@ -52,11 +53,11 @@ export default async function ArticlesPage({
           { label: copy.crumb },
         ]}
       />
-      <section className="article-index-grid">
+      <MobileArticleList locale={locale}>
         {localizedArticles.map((article) => (
           <ArticleCard article={article} locale={locale} key={article.slug} />
         ))}
-      </section>
+      </MobileArticleList>
       <section className="editorial-policy">
         <p className="eyebrow">{copy.policyEyebrow}</p>
         <h2>{copy.policyTitle}</h2>

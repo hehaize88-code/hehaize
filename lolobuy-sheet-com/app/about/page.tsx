@@ -180,7 +180,7 @@ export default async function AboutPage({
   ];
 
   return (
-    <main>
+    <main className="mobile-inner">
       <SiteHeader locale={locale} />
       <PageHero
         eyebrow={copy.eyebrow}

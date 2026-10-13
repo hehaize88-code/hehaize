@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AnalyticsTracker from "./components/analytics-tracker";
 import "./globals.css";
+import "../public/mobile-inner.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lolobuy-sheet.com"),
