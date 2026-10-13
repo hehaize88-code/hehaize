@@ -30,7 +30,7 @@ export function compactMobileSections(node: ReactNode): ReactNode {
     if (!isValidElement(child)) return child;
     const element = child as ReactElement<{children?: ReactNode; className?: string}>;
     if (element.type === Fragment) return <Fragment key={element.key}>{compactMobileSections(element.props.children)}</Fragment>;
-    if (element.type === "section" && /(?:research-fact-band|decision-section|calculation-section)/.test(element.props.className || "")) {
+    if (element.type === "section" && /(?:research-fact-band|decision-section|calculation-section|editorial-standard)/.test(element.props.className || "")) {
       const title = headingText(element.props.children);
       if (title) return <MobileTopic title={title} key={element.key}>{element}</MobileTopic>;
     }
