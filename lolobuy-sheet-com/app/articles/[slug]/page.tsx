@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import { getArticleContext } from "../../article-context-links";
+import { MobileChapter, MobileReadingTools } from "../../components/mobile-reading";
 import ArticleCard from "../../components/article-card";
 import JsonLd from "../../components/json-ld";
 import SiteFooter from "../../components/site-footer";
@@ -271,7 +272,7 @@ export default async function ArticlePage({
   const imageUrl = `${siteUrl}${media.src}`;
 
   return (
-    <main>
+    <main className="mobile-inner">
       <SiteHeader
         locale={locale}
         languageFallbackPath={
@@ -316,6 +317,7 @@ export default async function ArticlePage({
         </figure>
 
         <div className="article-body">
+          <MobileChapter title={ui.inGuide} contents>
           <aside>
             <p>{ui.inGuide}</p>
             <ol>
@@ -329,7 +331,9 @@ export default async function ArticlePage({
               {ui.changingTerms}
             </span>
           </aside>
+          </MobileChapter>
           <div className="article-prose">
+            <MobileReadingTools locale={locale} />
             <div className="article-intro">
               {article.intro.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
@@ -367,7 +371,7 @@ export default async function ArticlePage({
                   <p className="section-number">
                     {String(index + 1).padStart(2, "0")}
                   </p>
-                  <h2>{section.heading}</h2>
+                  <MobileChapter title={section.heading}>
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
@@ -389,6 +393,7 @@ export default async function ArticlePage({
                       ))}
                     </ul>
                   ) : null}
+                  </MobileChapter>
                 </section>
                 {index === 1 ? (
                   <section

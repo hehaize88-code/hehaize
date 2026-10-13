@@ -113,6 +113,8 @@ const staticFiles = new Set([
   "/catalog.css",
   "/catalog.js",
   "/site-shell.css",
+  "/mobile-inner.css",
+  "/mobile-catalog.js",
   "/catalog-image-index.json",
   "/commerce-events.js",
   "/file.svg",
@@ -271,7 +273,7 @@ export default {
       ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
     }
 
-    finalResponse.headers.set("x-lolobuy-release","20261012-catalog-v1");
+    finalResponse.headers.set("x-lolobuy-release","20261013-mobile-v1");
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };

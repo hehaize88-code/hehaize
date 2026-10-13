@@ -33,7 +33,7 @@ export default async function TermsPage({
   const common = commonPageCopy[locale];
 
   return (
-    <main>
+    <main className="mobile-inner">
       <SiteHeader locale={locale} />
       <PageHero
         eyebrow={copy.eyebrow}
