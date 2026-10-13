@@ -20,7 +20,12 @@ function withGoogleAnalytics(response, request) {
   const csp = headers.get("content-security-policy");
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET, { html: true }); } }).transform(htmlResponse);
+  // Keep the scoped CSS available after client navigation from a homepage.
+  // Every selector targets an inner-page root; .seo-home never matches.
+  const mobileStyles = response.status === 200
+    ? '<style id="uufinds-mobile-inner">' + MOBILE_INNER_CSS + '</style>'
+    : '';
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + mobileStyles, { html: true }); } }).transform(htmlResponse);
 }
 
 const CANONICAL_HOST = "uufindssheet.com";
@@ -35,7 +40,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-10-12-catalog-navigation-v4";
+const HTML_CACHE_VERSION = "2026-10-13-mobile-inner-v1";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);

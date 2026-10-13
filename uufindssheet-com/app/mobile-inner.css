@@ -1,0 +1,142 @@
+/* Mobile inner pages only. Keep homepages and desktop layouts unchanged.
+ * Also embedded by build-commerce-worker.mjs so the existing static export
+ * receives the same styles without regenerating unrelated pages/chunks. */
+@media (max-width: 680px) {
+  :is(main.hub-page, main.guide-page, main.trust-page, main.inner-page) {
+    overflow-wrap: break-word;
+  }
+  :is(main.hub-page, main.guide-page, main.trust-page, main.inner-page) :is(.hub-hero, .guide-hero, .trust-page-hero, .page-hero) {
+    padding: 22px 14px 20px;
+  }
+  :is(main.hub-page, main.guide-page, main.trust-page, main.inner-page) h1 {
+    max-width: 100%;
+    font-size: clamp(28px, 7.6vw, 36px);
+    line-height: 1.12;
+    letter-spacing: -.035em;
+    overflow-wrap: anywhere;
+  }
+  :is(main.hub-page, main.guide-page, main.trust-page, main.inner-page) :is(.hub-hero, .trust-page-hero, .page-hero) > p:not(.eyebrow),
+  main.guide-page .guide-deck {
+    margin: 12px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  :is(main.hub-page, main.inner-page) .hub-content { padding: 20px 14px 30px; }
+  :is(main.hub-page, main.inner-page) .official-fact-strip { margin-bottom: 20px; }
+  :is(main.hub-page, main.inner-page) .official-fact-strip article {
+    min-height: 0; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; padding: 12px;
+  }
+  :is(main.hub-page, main.inner-page) .official-fact-strip article > span { width: 28px; height: 28px; }
+  :is(main.hub-page, main.inner-page) .official-fact-strip strong { margin: 2px 0 5px; font-size: 16px; }
+  :is(main.hub-page, main.inner-page) .official-fact-strip p { font-size: 14px; line-height: 1.45; }
+
+  /* No fixed 470px article cards or forced single-column archive. */
+  :is(main.hub-page, main.inner-page) .article-hub-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  :is(main.hub-page, main.inner-page) .article-hub-grid .article-card { min-height: 0; padding: 12px; }
+  :is(main.hub-page, main.inner-page) .article-hub-grid .article-meta { flex-wrap: wrap; gap: 5px; align-items: start; }
+  :is(main.hub-page, main.inner-page) .article-hub-grid .article-meta span { font-size: 11px; line-height: 1.35; }
+  :is(main.hub-page, main.inner-page) .article-hub-grid .article-card h2 { margin: 12px 0 8px; font-size: 16px; line-height: 1.25; letter-spacing: -.02em; }
+  :is(main.hub-page, main.inner-page) .article-hub-grid .article-card > p { font-size: 13px; line-height: 1.45; }
+  :is(main.hub-page, main.inner-page) .article-hub-grid .article-foot { flex-wrap: wrap; gap: 6px; padding-top: 12px; font-size: 12px; }
+  :is(main.hub-page, main.inner-page) .source-method-note { margin-top: 22px; padding: 14px; }
+  :is(main.hub-page, main.inner-page) .source-method-note > p:last-child { font-size: 14px; line-height: 1.5; }
+
+  /* Full workflow copy stays readable instead of three narrow tall columns. */
+  :is(main.hub-page, main.inner-page) .workflow-grid { grid-template-columns: 1fr; }
+  :is(main.hub-page, main.inner-page) .workflow-grid article { position: relative; min-height: 0; padding: 14px; }
+  :is(main.hub-page, main.inner-page) .workflow-grid article > span { position: absolute; right: 14px; top: 12px; font-size: 24px; }
+  :is(main.hub-page, main.inner-page) .workflow-grid .step-label { margin: 0 40px 8px 0; }
+  :is(main.hub-page, main.inner-page) .workflow-grid h2 { margin: 0 35px 8px 0; font-size: 19px; line-height: 1.2; }
+  :is(main.hub-page, main.inner-page) .workflow-grid article > p:not(.step-label) { margin: 0; font-size: 14px; line-height: 1.5; }
+  :is(main.hub-page, main.inner-page) .workflow-grid a { margin-top: 10px; padding: 6px 0; font-size: 13px; }
+  :is(main.hub-page, main.inner-page) :is(.evidence-matrix, .decision-checklist) { margin-top: 24px; gap: 14px; }
+  :is(main.hub-page, main.inner-page) :is(.section-heading, .decision-checklist, .method-note, .faq-next-step) h2 { font-size: 25px; line-height: 1.15; letter-spacing: -.03em; }
+  :is(main.hub-page, main.inner-page) .evidence-grid article { min-height: 0; padding: 14px; }
+  :is(main.hub-page, main.inner-page) .evidence-grid h3 { margin: 4px 0 8px; font-size: 20px; line-height: 1.2; }
+  :is(main.hub-page, main.inner-page) .evidence-grid article > p:not(.step-label) { font-size: 14px; line-height: 1.5; }
+  :is(main.hub-page, main.inner-page) .evidence-grid strong { padding-top: 10px; font-size: 14px; line-height: 1.45; }
+  :is(main.hub-page, main.inner-page) .decision-checklist li { grid-template-columns: 28px minmax(0, 1fr); gap: 10px; padding: 10px 0; }
+  :is(main.hub-page, main.inner-page) .decision-checklist li > span { width: 28px; height: 28px; }
+  :is(main.hub-page, main.inner-page) .decision-checklist li p { margin: 2px 0; font-size: 14px; line-height: 1.5; }
+  :is(main.hub-page, main.inner-page) .method-note { margin-top: 24px; padding: 18px 14px; }
+  :is(main.hub-page, main.inner-page) .method-note h2 { margin-bottom: 14px; }
+  :is(main.hub-page, main.inner-page) .method-note > p:not(.eyebrow) { margin: 0 0 12px; font-size: 14px; line-height: 1.5; }
+
+  main.faq-page .faq-directory { gap: 20px; }
+  main.faq-page .faq-directory > aside { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; }
+  main.faq-page .faq-directory > aside .eyebrow { grid-column: 1 / -1; padding: 12px 0 4px; }
+  main.faq-page .faq-directory > aside a { min-height: 44px; padding: 10px 0; }
+  main.faq-page .faq-group { padding-bottom: 20px; scroll-margin-top: 75px; }
+  main.faq-page .faq-group + .faq-group { padding-top: 20px; }
+  main.faq-page .faq-group h2 { margin-bottom: 14px; font-size: 26px; line-height: 1.15; letter-spacing: -.03em; }
+  main.faq-page .faq-list summary { min-height: 44px; align-items: center; padding: 10px 0; font-size: 15px; }
+  main.faq-page .faq-list details p { margin: 0 0 12px; font-size: 15px; line-height: 1.55; }
+  main.faq-page .faq-next-step { margin-top: 20px; padding: 18px 14px; gap: 16px; }
+  main.faq-page .faq-next-step > div:last-child { gap: 12px; }
+
+  /* Keep every paragraph, anchor, table and source; reduce empty vertical space. */
+  main.guide-page .guide-subnav { padding: 10px 14px; }
+  main.guide-page .guide-byline { margin-top: 14px; gap: 6px; }
+  main.guide-page .guide-byline span { padding: 5px 7px; font-size: 11px; }
+  main.guide-page .guide-layout { padding: 18px 14px 30px; gap: 20px; min-width: 0; }
+  main.guide-page .guide-layout > aside { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; }
+  main.guide-page .guide-layout > aside > p { grid-column: 1 / -1; margin: 0 0 6px; }
+  main.guide-page .guide-layout > aside > a { padding: 8px 0; min-height: 44px; font-size: 12px; }
+  main.guide-page .guide-body { min-width: 0; }
+  main.guide-page .guide-body > p.lead { margin-bottom: 12px; font-size: 16px; line-height: 1.55; }
+  main.guide-page .guide-body section { padding: 24px 0 18px; scroll-margin-top: 75px; }
+  main.guide-page .guide-body .section-number { margin: 0 0 6px; }
+  main.guide-page .guide-body h2 { margin: 6px 0 12px; font-size: 26px; line-height: 1.2; letter-spacing: -.025em; }
+  main.guide-page .guide-body section > p:not(.section-number) { margin: 10px 0; font-size: 16px; line-height: 1.55; }
+  main.guide-page .guide-body ul { margin: 12px 0 0; padding-top: 0; }
+  main.guide-page .guide-body li { padding: 10px 0 10px 34px; font-size: 15px; line-height: 1.5; }
+  main.guide-page .guide-body li::before { left: 0; top: 10px; width: 23px; height: 23px; }
+  main.guide-page .guide-table-wrap { margin-top: 16px; }
+  main.guide-page .guide-table-wrap caption { padding: 10px; font-size: 14px; }
+  main.guide-page .guide-table-wrap td { grid-template-columns: minmax(72px, 30%) minmax(0, 1fr); padding: 8px; gap: 8px; font-size: 14px; }
+  main.guide-page .related-reading-grid a { min-height: 0; padding: 14px; }
+  main.guide-page .evidence-ledger-grid article { padding: 14px; }
+  main.guide-page .source-note { margin-top: 20px; padding: 14px; }
+  main.guide-page .source-note p { font-size: 14px; line-height: 1.5; }
+
+  main.trust-page .trust-breadcrumb { padding: 10px 14px; flex-wrap: wrap; gap: 6px; }
+  main.trust-page .trust-page-hero small { display: block; margin-top: 12px; }
+  main.trust-page .trust-page-body { padding: 6px 14px 30px; }
+  main.trust-page .trust-page-body > section { grid-template-columns: 28px minmax(0, 1fr); gap: 10px; padding: 22px 0; }
+  main.trust-page .trust-page-body > section > span { width: 28px; height: 28px; }
+  main.trust-page .trust-page-body h2 { margin-bottom: 10px; font-size: 25px; line-height: 1.15; }
+  main.trust-page .trust-page-body section p { margin: 10px 0; font-size: 15px; line-height: 1.55; }
+  main.trust-page .trust-page-body ul { margin-top: 12px; }
+  main.trust-page .trust-page-body li { padding: 10px 0 10px 32px; }
+  main.trust-page .trust-page-body li::before { left: 0; top: 10px; width: 23px; height: 23px; }
+  main.trust-page .trust-contact-card { margin-top: 20px; padding: 16px; overflow-wrap: anywhere; }
+
+  /* Live catalogue, product gallery and image search share the same release. */
+  main.catalog-main { padding: 18px 12px 24px; }
+  main.catalog-main > h1 { margin: 8px 0 14px; font-size: 28px; }
+  main.catalog-main .catalog-eyebrow { margin: 0 0 8px; }
+  main.catalog-main .catalog-tools { margin-bottom: 12px; gap: 8px; }
+  main.catalog-main .category-filters { gap: 6px; }
+  main.catalog-main .sort-row { margin: 14px 0 12px; gap: 6px; }
+  main.catalog-main .catalog-grid { gap: 10px; }
+  main.catalog-main .catalog-card h2 { min-height: 0; margin: 9px 10px; }
+  main.catalog-main .card-meta { margin: 8px 10px 10px; }
+  main.catalog-main .catalog-pagination { margin: 20px 0 0; gap: 12px; flex-wrap: wrap; }
+  main.catalog-main .back { margin-bottom: 12px; }
+  main.catalog-main .catalog-detail { gap: 16px; margin-bottom: 24px; }
+  main.catalog-main .gallery-main > img { max-height: 340px; object-fit: contain; }
+  main.catalog-main .gallery-thumbs { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 5px; margin-top: 7px; }
+  main.catalog-main .catalog-product-info h1 { margin: 0 0 12px; font-size: 26px; line-height: 1.2; }
+  main.catalog-main .catalog-product-info h2 { margin-top: 20px; margin-bottom: 8px; }
+  main.catalog-main .catalog-product-info p { margin: 10px 0; }
+  main.catalog-main .detail-price { font-size: 30px; }
+  main.catalog-main .buy-button { padding: 12px; }
+  main.catalog-main .image-search-panel { padding: 14px; margin-bottom: 16px; }
+  main.catalog-main .image-drop { padding: 14px; gap: 12px; }
+}
+
+/* Preserve a useful reading measure on the smallest phones. */
+@media (max-width: 359px) {
+  :is(main.hub-page, main.inner-page) .article-hub-grid { grid-template-columns: 1fr; }
+  main.guide-page .guide-layout > aside { grid-template-columns: 1fr; }
+}
