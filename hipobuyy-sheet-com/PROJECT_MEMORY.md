@@ -161,3 +161,10 @@ Chosen content clusters: hipobuy spreadsheet (home/catalogue), hipobuy finds (ca
 Preserved 22 articles × EN/DE/ES/FR/IT and measurement ID G-F6G27KWPPQ. Home previews four articles and includes compact FAQ. Public catalogue is read live from cnbuycha.com. Image similarity uses an explicitly dated index from its 3,436 product photos because the original project has no image-search endpoint. No third-party catalogue is substituted.
 
 GitHub remains the production delivery route. No Cloudflare account connection or deployment setting changes were made. Build/output paths are unchanged. `dist/_worker.js` handles the dynamic catalogue and serves existing static pages with `ASSETS.fetch`.
+
+
+## 2026-10-13 — compact mobile inner pages
+
+User reports that inner pages are too long while the homepage is satisfactory. Added mobile-only chapter disclosures for guide/QC/shipping/FAQ and all 110 localized articles; compact six-at-a-time article rows; collapsed supporting tools and related links; twelve-at-a-time catalogue browsing and compact product galleries. Full content remains in static HTML, accessible through native disclosure controls, with desktop/print restoration and anchor handling. Five homepage HTML files are byte-identical to the prior release.
+
+Local validation: 540 existing release checks pass; 150 localized pages preserve headings, paragraphs, links, images and table cells; 35 localized interaction scenarios cover expansion, anchors, pagination, print and desktop. Browser review and production confirmation are required before reporting this release as live. GitHub remains the only publication route.

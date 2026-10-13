@@ -38,4 +38,4 @@ Official artwork was obtained from the public Hipobuy main-page bundle: `src/ass
 
 `tests/release.mjs` checks the original-ID purchase mapping, all five locales, article preservation, home sections, image-index coverage, redirects and image-search routes. With `SOURCE_FIXTURES` set to the directory of captured live HTML responses, it also checks source price/search forwarding, full gallery order, the user-supplied ID 7867456361, sitemap mapping and 503 behavior. Release validation passed 563 assertions and an internal-link/asset scan with zero missing targets.
 
-Browser visual QA was unavailable in the managed environment; no browser screenshot or pixel-level verification is claimed.
+Mobile reading layout (2026-10-13): `mobile_layout.py` groups complete sections into native disclosures. The maintained `dist/assets/mobile-inner.css` and `mobile-inner.js` apply only to inner pages; they keep all content in HTML and support hash links, print, and desktop restoration. Mobile article lists show six compact rows at a time; catalogue lists show twelve products at a time. The homepage is excluded. Build source and committed output together using the commands above.

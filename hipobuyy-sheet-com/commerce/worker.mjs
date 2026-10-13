@@ -1,5 +1,5 @@
 
-const RELEASE='hipobuy-20261012-v2';
+const RELEASE='hipobuy-20261013-mobile-v1';
 function finish(response,request) {
  const headers=new Headers(response.headers);headers.set('x-hipobuy-release',RELEASE);headers.set('x-content-type-options','nosniff');headers.set('referrer-policy','strict-origin-when-cross-origin');
  return new Response(request.method==='HEAD'?null:response.body,{status:response.status,headers});
