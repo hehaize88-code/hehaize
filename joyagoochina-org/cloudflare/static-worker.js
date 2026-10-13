@@ -14,7 +14,8 @@ const localeCodes = new Set([
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "2026-10-12-joyagoo-editorial-v1";
+const htmlCacheVersion = "2026-10-13-joyagoo-mobile-inner-v1";
+const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v1">';
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
@@ -215,6 +216,14 @@ const worker = {
     headers.set("referrer-policy", "strict-origin-when-cross-origin");
     if ((headers.get("content-type") ?? "").includes("text/html")) {
       headers.set("content-language", language);
+      if (request.method === "GET" && response.status === 200) {
+        headers.delete("content-length");
+        headers.delete("content-encoding");
+        headers.delete("etag");
+        response = new HTMLRewriter()
+          .on("head", { element(element) { element.append(mobileInnerStyle, { html: true }); } })
+          .transform(response);
+      }
     }
 
     const shouldStore =
