@@ -100,7 +100,7 @@ function footer(lang) {
 }
 function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://joyagoochina.org'+prefix(lang)+path;
- const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}${title.includes('Joyagoo Spreadsheet')?'':' | Joyagoo Spreadsheet'}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${noindex?'noindex,follow':'index,follow'}"><link rel="canonical" href="${canonical}"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><meta property="og:image" content="https://joyagoochina.org/joyagoo-official-logo.svg">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://joyagoochina.org${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://joyagoochina.org${path}"><link rel="icon" href="/joyagoo-official-icon.png"><link rel="stylesheet" href="/catalog.css?v=20261012-editorial"><script src="/catalog.js?v=20261012" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-QY8MM7VZV2");</script></head><body>${nav(lang,path+query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
+ const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}${title.includes('Joyagoo Spreadsheet')?'':' | Joyagoo Spreadsheet'}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${noindex?'noindex,follow':'index,follow'}"><link rel="canonical" href="${canonical}"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><meta property="og:image" content="https://joyagoochina.org/joyagoo-official-logo.svg">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://joyagoochina.org${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://joyagoochina.org${path}"><link rel="icon" href="/joyagoo-official-icon.png"><link rel="stylesheet" href="/catalog.css?v=20261012-editorial"><link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v1"><script src="/catalog.js?v=20261012" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-QY8MM7VZV2");</script></head><body>${nav(lang,path+query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
  return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-joyagoo-release':'2026-10-12-joyagoo-editorial-v1'}});
 }
 function card(p,lang) {
@@ -172,7 +172,7 @@ async function homepageRoute(request) {
  try {const {products}=parseList(await upstream('/AllProducts/',new URLSearchParams({sort:'new'})));if(!products.length)throw Error('Empty upstream catalogue');return renderHome(lang,products);}catch {return renderHome(lang,SNAPSHOT.products,{snapshot:true});}
 }
 
-const RELEASE='2026-10-12-joyagoo-editorial-v1';
+const RELEASE='2026-10-13-joyagoo-mobile-inner-v1';
 const SITEMAP_INDEX='<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://joyagoochina.org/editorial-sitemap.xml</loc></sitemap><sitemap><loc>https://joyagoochina.org/catalog-sitemap.xml</loc></sitemap></sitemapindex>';
 async function commerceRoutes(request,env,ctx) {
  const url=new URL(request.url),locale=url.pathname.match(/^\/(zh|de|pl|es|it|fr|pt|ro|sv)(?=\/|$)/)?.[0]||'',bare=url.pathname.slice(locale.length)||'/';
@@ -224,7 +224,8 @@ const staticLocaleCodes = new Set([
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "2026-10-12-joyagoo-editorial-v1";
+const htmlCacheVersion = "2026-10-13-joyagoo-mobile-inner-v1";
+const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v1">';
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
@@ -425,6 +426,14 @@ const worker = {
     headers.set("referrer-policy", "strict-origin-when-cross-origin");
     if ((headers.get("content-type") ?? "").includes("text/html")) {
       headers.set("content-language", language);
+      if (request.method === "GET" && response.status === 200) {
+        headers.delete("content-length");
+        headers.delete("content-encoding");
+        headers.delete("etag");
+        response = new HTMLRewriter()
+          .on("head", { element(element) { element.append(mobileInnerStyle, { html: true }); } })
+          .transform(response);
+      }
     }
 
     const shouldStore =
