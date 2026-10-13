@@ -34,7 +34,7 @@ export function MobileChapter({ title, children, contents = false }: { title: st
     };
     const sync = () => { setMobile(media.matches); setOpen(!media.matches || hashTarget()); };
     const hash = () => { if (hashTarget()) { setOpen(true); requestAnimationFrame(() => element.current?.parentElement?.scrollIntoView({ block: "start" })); } };
-    const expand = (event: Event) => { if (media.matches && !contents) setOpen((event as CustomEvent<boolean>).detail); };
+    const expand = (event: Event) => { if (media.matches) setOpen((event as CustomEvent<boolean>).detail); };
     const beforePrint = () => { printState.current = element.current?.open ?? true; setOpen(true); };
     const afterPrint = () => setOpen(printState.current);
     sync(); media.addEventListener("change", sync);
