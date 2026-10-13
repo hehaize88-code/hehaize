@@ -1,3 +1,4 @@
+import { MobileTopic, detailLabels } from "./components/mobile-topic";
 import { MobileChapter, MobileReadingTools } from "./components/mobile-reading";
 import Link from "next/link";
 import {
@@ -121,6 +122,7 @@ export function ArticlePage({
               <p className="eyebrow">{copy.eyebrow}</p>
               <h1>{copy.title}</h1>
               <p className="article-standfirst">{copy.standfirst}</p>
+              <MobileTopic title={detailLabels[locale]}>
               <div className="article-byline">
                 <div>
                   <p>
@@ -154,6 +156,7 @@ export function ArticlePage({
                   <dd>{`${readMinutes} ${articleText(locale, "minutes")}`}</dd>
                 </div>
               </dl>
+              </MobileTopic>
             </div>
           </header>
 
@@ -195,10 +198,10 @@ export function ArticlePage({
                 </ul>
               </section>
 
-              <aside className="research-note">
+              <MobileTopic title={articleText(locale, "FACT-CHECK NOTE")}><aside className="research-note">
                 <p className="footer-label">{articleText(locale, "FACT-CHECK NOTE")}</p>
                 <p>{copy.sourceNote}</p>
-              </aside>
+              </aside></MobileTopic>
 
               <MobileReadingTools locale={locale} />
               {copy.sections.map((section, index) => (
@@ -231,7 +234,7 @@ export function ArticlePage({
                 </section>
               ))}
 
-              <section className="related-guides" aria-labelledby="related-guides">
+              <MobileTopic title={articleText(locale, "Related buying guides")}><section className="related-guides" aria-labelledby="related-guides">
                 <p className="eyebrow">{articleText(locale, "Related buying guides")}</p>
                 <h2 id="related-guides">{articleText(locale, "Continue with the next decision")}</h2>
                 <div>
@@ -251,7 +254,7 @@ export function ArticlePage({
                     </Link>
                   ))}
                 </div>
-              </section>
+              </section></MobileTopic>
 
               <section className="article-end">
                 <p className="eyebrow">{articleText(locale, "Continue your research")}</p>

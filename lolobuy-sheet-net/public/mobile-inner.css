@@ -20,7 +20,7 @@
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-brand img { width: 100px; height: 28px; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-register { font-size: 11px; padding: 9px 8px; max-width: 142px; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-language summary { padding: 10px 8px; }
-  :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-header > nav { gap: 0 5px; font-size: 12px; }
+  :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-header > nav { gap: 0 5px; font-size: 11px; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-header > nav a { padding: 8px 0; line-height: 1.4; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-footer { padding: 14px 4%; font-size: 12px; line-height: 1.5; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-footer p { margin: 0 0 8px; }
@@ -182,3 +182,31 @@
   .mobile-inner .image-drop { gap: 10px; padding: 12px; font-size: 14px; }
   .mobile-inner #image-preview { width: 96px; height: 96px; margin-top: 12px; }
 }
+
+/* Supporting material stays one tap away instead of filling the first screens. */
+.mobile-inner .mobile-topic > .mobile-contents { position: static; }
+@media (max-width: 680px) {
+  .mobile-inner.subpage-main { background: #f8f5ee; color: #231e1a; }
+  .mobile-inner .mobile-topic { margin: 0 4%; border-bottom: 1px solid #d8cfc1; background: #f8f5ee; color: #231e1a; }
+  .mobile-inner .mobile-topic > .mobile-contents { margin: 0; border: 0; }
+  .mobile-inner .mobile-topic > .mobile-contents > summary { min-height: 48px; padding: 14px 28px 14px 0; font: 600 15px/1.45 Arial,sans-serif; color: #231e1a; }
+  .mobile-inner .mobile-topic > .mobile-contents > summary::after { top: 14px; }
+  .mobile-inner .mobile-topic .section-shell { padding: 14px 0; }
+  .mobile-inner .mobile-topic .subpage-card-grid { padding: 12px 0; }
+  .mobile-inner .mobile-topic .article-recommendations { padding: 0; }
+  .mobile-inner .mobile-topic .research-note { margin: 0 0 12px; }
+  .mobile-inner.article-main .mobile-topic { margin-inline: 0; }
+  .mobile-inner .article-hero .mobile-topic { margin-top: 10px; border-top: 1px solid #d8cfc1; }
+  .mobile-inner .article-hero .mobile-topic > .mobile-contents > summary { min-height: 42px; padding-block: 10px; font-size: 13px; }
+  .mobile-inner .article-section { display: grid; grid-template-columns: 20px minmax(0,1fr); column-gap: 7px; padding-block: 3px; }
+  .mobile-inner .article-section-number { padding-top: 13px; }
+  .mobile-inner .article-section .mobile-chapter > summary h2 { font-size: 16px; line-height: 1.4; }
+  .mobile-inner .article-section .mobile-chapter > summary { padding-block: 11px; }
+  .mobile-inner .article-section .mobile-chapter-content { padding-top: 4px; }
+  .mobile-inner .mobile-topic .related-guides { margin: 12px 0; }
+  .mobile-inner .mobile-reading-tools { gap: 6px; }
+  .mobile-inner .mobile-reading-tools button { font-size: 12px; padding-inline: 9px; }
+  .mobile-inner .mobile-guide-tools { background: #f8f5ee; }
+}
+
+@media (max-width: 680px) { .mobile-inner .focused-guides { background: #f8f5ee; color: #231e1a; } }

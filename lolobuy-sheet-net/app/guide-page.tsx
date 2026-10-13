@@ -1,3 +1,4 @@
+import { compactMobileSections, MobileTopic } from "./components/mobile-topic";
 import { MobileChapter, MobileReadingTools } from "./components/mobile-reading";
 import MobileArticleList from "./components/mobile-article-list";
 import LiveProducts from "./live-products";
@@ -185,7 +186,7 @@ function DetailedCardSection({
   ariaLabel: string;
 }) {
   return (
-    <>
+    <MobileTopic title={copy.title}>
       <section className="section-shell depth-section-heading">
         <div>
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -211,14 +212,14 @@ function DetailedCardSection({
           </InfoCard>
         ))}
       </section>
-    </>
+    </MobileTopic>
   );
 }
 
 function ProductsPage({ locale }: { locale: Locale }) {
   const depth = guideDepthCopy[locale].products;
 
-  return localizeReactNode(
+  return compactMobileSections(localizeReactNode(
     <>
       <section className="subpage-search-band">
         <div>
@@ -262,14 +263,14 @@ function ProductsPage({ locale }: { locale: Locale }) {
       </section>
     </>,
     locale,
-  );
+  ));
 }
 
 function CategoriesPage({ locale }: { locale: Locale }) {
   const depth = guideDepthCopy[locale].categories;
   const hoodieCallout = hoodieGuideCallout[locale];
 
-  return localizeReactNode(
+  return compactMobileSections(localizeReactNode(
     <>
       <section className="section-shell subpage-section">
         <div className="category-grid">
@@ -324,13 +325,13 @@ function CategoriesPage({ locale }: { locale: Locale }) {
       </section>
     </>,
     locale,
-  );
+  ));
 }
 
 function QcPage({ locale }: { locale: Locale }) {
   const depth = guideDepthCopy[locale].qc;
 
-  return localizeReactNode(
+  return compactMobileSections(localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -473,13 +474,13 @@ function QcPage({ locale }: { locale: Locale }) {
       </section>
     </>,
     locale,
-  );
+  ));
 }
 
 function ShippingPage({ locale }: { locale: Locale }) {
   const depth = guideDepthCopy[locale].shipping;
 
-  return localizeReactNode(
+  return compactMobileSections(localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -624,7 +625,7 @@ function ShippingPage({ locale }: { locale: Locale }) {
       </section>
     </>,
     locale,
-  );
+  ));
 }
 
 function ArticlesPage({ locale }: { locale: Locale }) {
@@ -633,7 +634,7 @@ function ArticlesPage({ locale }: { locale: Locale }) {
     (article) => locale === "en" || article.localized !== false,
   ).map((article) => getLocalizedArticle(article, locale));
 
-  return localizeReactNode(
+  return compactMobileSections(localizeReactNode(
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "CollectionPage",
@@ -754,7 +755,7 @@ function ArticlesPage({ locale }: { locale: Locale }) {
       </section>
     </>,
     locale,
-  );
+  ));
 }
 
 function LearnPage({ locale }: { locale: Locale }) {
@@ -764,7 +765,7 @@ function LearnPage({ locale }: { locale: Locale }) {
 function FaqPage({ locale }: { locale: Locale }) {
   const depth = guideDepthCopy[locale].faq;
 
-  return localizeReactNode(
+  return compactMobileSections(localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -804,13 +805,13 @@ function FaqPage({ locale }: { locale: Locale }) {
       </section>
     </>,
     locale,
-  );
+  ));
 }
 
 function HowItWorksPage({ locale }: { locale: Locale }) {
   const copy = guideDepthCopy[locale].how;
 
-  return localizeReactNode(
+  return compactMobileSections(localizeReactNode(
     <>
       <section className="section-shell research-fact-band">
         <div>
@@ -870,7 +871,7 @@ function HowItWorksPage({ locale }: { locale: Locale }) {
       </section>
     </>,
     locale,
-  );
+  ));
 }
 
 export function GuidePage({

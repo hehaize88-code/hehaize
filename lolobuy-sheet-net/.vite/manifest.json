@@ -1,4 +1,45 @@
 {
+  "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-CVJw3ZuY.js",
+    "name": "layout-segment-context",
+    "src": "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/link.js": {
+    "file": "assets/link-ByRQR3Ko.js",
+    "name": "link",
+    "src": "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/link.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js",
+      "_query-RNEeZVC5.js"
+    ],
+    "dynamicImports": [
+      "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/router.js"
+    ]
+  },
+  "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/router.js": {
+    "file": "assets/router-B6bZP7p7.js",
+    "name": "router",
+    "src": "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/router.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js",
+      "_query-RNEeZVC5.js"
+    ],
+    "dynamicImports": [
+      "_framework-DjPHiq1u.js"
+    ]
+  },
   "_framework-DjPHiq1u.js": {
     "file": "assets/framework-DjPHiq1u.js",
     "name": "framework",
@@ -23,7 +64,7 @@
     "name": "rolldown-runtime"
   },
   "app/components/mobile-article-list.tsx": {
-    "file": "assets/mobile-article-list-DEemdhv2.js",
+    "file": "assets/mobile-article-list-B68GS_Lz.js",
     "name": "mobile-article-list",
     "src": "app/components/mobile-article-list.tsx",
     "isDynamicEntry": true,
@@ -34,7 +75,7 @@
     ]
   },
   "app/components/mobile-reading.tsx": {
-    "file": "assets/mobile-reading-DTq0Ioab.js",
+    "file": "assets/mobile-reading-shX5q45d.js",
     "name": "mobile-reading",
     "src": "app/components/mobile-reading.tsx",
     "isDynamicEntry": true,
@@ -65,49 +106,8 @@
       "_framework-DjPHiq1u.js"
     ]
   },
-  "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-BtETVSxo.js",
-    "name": "layout-segment-context",
-    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DjPHiq1u.js"
-    ]
-  },
-  "node_modules/vinext/dist/shims/link.js": {
-    "file": "assets/link-8zoRmTOO.js",
-    "name": "link",
-    "src": "node_modules/vinext/dist/shims/link.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DjPHiq1u.js",
-      "_query-RNEeZVC5.js"
-    ],
-    "dynamicImports": [
-      "node_modules/vinext/dist/shims/router.js"
-    ]
-  },
-  "node_modules/vinext/dist/shims/router.js": {
-    "file": "assets/router-Ceftqdqr.js",
-    "name": "router",
-    "src": "node_modules/vinext/dist/shims/router.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-S-ySWqyJ.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DjPHiq1u.js",
-      "_query-RNEeZVC5.js"
-    ],
-    "dynamicImports": [
-      "_framework-DjPHiq1u.js"
-    ]
-  },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-vKOm_OeL.js",
+    "file": "assets/index-TVrltLK5.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -116,13 +116,13 @@
       "_framework-DjPHiq1u.js"
     ],
     "dynamicImports": [
-      "node_modules/vinext/dist/shims/layout-segment-context.js",
-      "app/live-products.tsx",
       "virtual:vinext-app-browser-entry",
+      "app/live-products.tsx",
       "app/components/mobile-article-list.tsx",
       "app/site-header.tsx",
-      "node_modules/vinext/dist/shims/link.js",
-      "app/components/mobile-reading.tsx"
+      "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/link.js",
+      "app/components/mobile-reading.tsx",
+      "../../lolo-net-repo/lolobuy-sheet-net/node_modules/vinext/dist/shims/layout-segment-context.js"
     ]
   }
 }
