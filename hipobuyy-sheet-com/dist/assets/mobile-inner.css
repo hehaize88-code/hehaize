@@ -101,6 +101,9 @@
   body:has(.mobile-inner) .foot p, body.mobile-inner .foot p { font-size: 12px; line-height: 1.5; margin: 8px 0; }
   body:has(.mobile-inner) .foot-base, body.mobile-inner .foot-base { font-size: 11px; margin-top: 12px; padding-top: 10px; }
 }
+@media (max-width: 360px) {
+  body:has(.mobile-inner) .navlinks a, body.mobile-inner .navlinks a { font-size: 11px; }
+}
 @media print {
   .mobile-inner .mobile-reading-tools, .mobile-inner .mobile-list-controls { display: none !important; }
   .mobile-inner .mobile-topic > summary { display: none; }
