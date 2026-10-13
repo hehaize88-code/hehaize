@@ -1,5 +1,6 @@
 import Script from "next/script";
 import "./globals.css";
+import "../public/mobile-inner.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LanguageRuntime from "@/components/LanguageRuntime";
