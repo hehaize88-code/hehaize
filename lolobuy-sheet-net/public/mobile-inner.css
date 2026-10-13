@@ -20,7 +20,7 @@
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-brand img { width: 100px; height: 28px; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-register { font-size: 11px; padding: 9px 8px; max-width: 142px; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-language summary { padding: 10px 8px; }
-  :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-header > nav { gap: 0 5px; font-size: 12px; }
+  :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-header > nav { gap: 0 5px; font-size: 11px; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-header > nav a { padding: 8px 0; line-height: 1.4; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-footer { padding: 14px 4%; font-size: 12px; line-height: 1.5; }
   :is(body.mobile-inner, body:has(.mobile-inner)) .lolo-footer p { margin: 0 0 8px; }
@@ -208,3 +208,5 @@
   .mobile-inner .mobile-reading-tools button { font-size: 12px; padding-inline: 9px; }
   .mobile-inner .mobile-guide-tools { background: #f8f5ee; }
 }
+
+@media (max-width: 680px) { .mobile-inner .focused-guides { background: #f8f5ee; color: #231e1a; } }
