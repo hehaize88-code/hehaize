@@ -2,8 +2,8 @@ import applicationWorker from "../dist/server/index.js";
 import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath} from '../commerce/catalog.js';
 import {products} from '../app/site-data.ts';
 const legacyProducts = new Map(products.map(p=>['/product/'+p.id,p.storeUrl]));
-const catalogAssets = new Set(['/catalog.js','/catalog.css','/catalog-image-index.json','/editorial-sitemap.xml']);
-const RELEASE = '2026-10-12-cssbuy-v1';
+const catalogAssets = new Set(['/catalog.js','/catalog.css','/mobile-inner.css','/catalog-image-index.json','/editorial-sitemap.xml']);
+const RELEASE = '2026-10-13-cssbuy-mobile-inner-v1';
 function catalogAnalytics(response, request) {
  if(request.method==='HEAD')return new Response(null,{status:response.status,headers:response.headers});
  if(!response.headers.get('content-type')?.includes('text/html'))return response;

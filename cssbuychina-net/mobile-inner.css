@@ -1,0 +1,120 @@
+/* Compact mobile inner pages. The four .seo-page homepages are excluded. */
+@media (max-width: 680px) {
+  :is(.unified-inner, .catalog-page) .unified-header { padding: 8px 4%; gap: 4px 8px; }
+  :is(.unified-inner, .catalog-page) .unified-header > nav { flex-wrap: nowrap; justify-content: flex-start; gap: 16px; overflow-x: auto; }
+  :is(.unified-inner, .catalog-page) .unified-header > nav a { flex-shrink: 0; padding: 9px 0; }
+  :is(.unified-inner, .catalog-page) .unified-footer { padding: 14px 0; }
+  :is(.unified-inner, .catalog-page) .unified-footer > div { padding: 0 4%; gap: 8px; }
+  :is(.unified-inner, .catalog-page) .unified-footer nav { gap: 6px 14px; }
+  :is(.unified-inner, .catalog-page) .unified-footer nav a { padding: 5px 0; }
+
+  .unified-inner .inner-hero, .unified-inner .article-header { width: 92%; margin-top: 12px; padding: 14px; border-radius: 9px; }
+  .unified-inner .inner-hero h1, .unified-inner .article-header h1 { font-size: 24px; line-height: 1.2; letter-spacing: -.5px; margin: 7px 0 9px; }
+  .unified-inner .inner-hero > p:not(.eyebrow), .unified-inner .article-header > p { font-size: 13px; line-height: 1.5; margin: 0; }
+  .unified-inner .eyebrow { font-size: 10px; line-height: 1.4; letter-spacing: .7px; margin: 0 0 6px; }
+  .unified-inner .article-kicker { font-size: 10px; gap: 4px 10px; padding-bottom: 7px; }
+  .unified-inner .guides-index, .unified-inner .editorial-policy, .unified-inner .faq-page-layout, .unified-inner .process-checks, .unified-inner .categories-page { padding: 16px 4% 22px; }
+  .unified-inner .guides-index-intro { gap: 6px; margin-bottom: 14px; }
+  .unified-inner .guides-index-intro h2 { font-size: 18px; line-height: 1.3; }
+  .unified-inner .guides-index-intro p { font-size: 13px; line-height: 1.5; margin: 0; }
+
+  /* Number and metadata share the first row; no poster-sized minimum heights. */
+  .unified-inner .editorial-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .unified-inner .editorial-card { display: grid; grid-template-columns: 24px minmax(0, 1fr); align-content: start; align-items: start; gap: 5px 8px; min-height: 0; padding: 12px; border-radius: 8px; }
+  .unified-inner .editorial-number { grid-column: 1; grid-row: 1; font-size: 11px; line-height: 1.4; margin: 0; }
+  .unified-inner .editorial-card > span { grid-column: 2; margin: 0; font-size: 10px; line-height: 1.4; letter-spacing: .2px; }
+  .unified-inner .editorial-card h2 { grid-column: 1 / -1; margin: 0; font-size: 16px; line-height: 1.3; letter-spacing: -.2px; }
+  .unified-inner .editorial-card p { grid-column: 1 / -1; margin: 0; font-size: 12px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .unified-inner .editorial-card b { grid-column: 1 / -1; margin: 0; padding: 0; font-size: 11px; line-height: 1.5; }
+  .unified-inner .editorial-policy { gap: 12px; }
+  .unified-inner .editorial-policy h2, .unified-inner .section-heading h2 { font-size: 21px; line-height: 1.25; margin: 6px 0; }
+  .unified-inner .editorial-policy li { min-height: 0; padding: 12px; }
+
+  .unified-inner .article-layout { width: 92%; padding: 14px 0 24px; }
+  /* Keep every anchor available in a short, horizontally scrollable contents bar. */
+  .unified-inner .article-layout > aside { display: flex; align-items: stretch; gap: 8px; overflow-x: auto; position: static; margin-bottom: 12px; padding: 8px; border-radius: 8px; }
+  .unified-inner .article-layout > aside > span { flex: 0 0 68px; align-self: center; margin: 0; font-size: 10px; }
+  .unified-inner .article-layout > aside a { flex: 0 0 160px; display: flex; align-items: center; padding: 7px 9px; border: 1px solid #dce3ee; border-radius: 5px; font-size: 11px; line-height: 1.4; }
+  .unified-inner .article-body { padding: 14px 12px; border-radius: 9px; }
+  .unified-inner .article-body h2 { font-size: 21px; line-height: 1.3; margin: 0 0 10px; }
+  .unified-inner .article-body p, .unified-inner .prose-wrap p, .unified-inner .prose-wrap li { font-size: 16px; line-height: 1.6; }
+  .unified-inner .article-body p, .unified-inner .prose-wrap p { margin: 0 0 12px; }
+  .unified-inner .article-body section { margin-bottom: 20px; padding-bottom: 16px; }
+  .unified-inner .article-note { padding: 12px; margin-bottom: 16px; }
+  .unified-inner .article-note b { font-size: 12px; }
+  .unified-inner .article-note p, .unified-inner .article-body .translation-note, .unified-inner .article-body .calculator-note { font-size: 13px; line-height: 1.5; }
+  .unified-inner .article-note p { margin: 5px 0 0; }
+  .unified-inner .article-hero-image { margin: 0 0 14px; }
+  .unified-inner .article-hero-image img { display: block; width: 100%; height: auto; max-height: 200px; object-fit: contain; }
+  .unified-inner .article-hero-image figcaption { font-size: 12px; line-height: 1.5; margin-top: 6px; }
+  .unified-inner .article-body .category-comparison { margin: 16px 0; }
+  .unified-inner .comparison-heading { padding: 12px; }
+  .unified-inner .article-body th, .unified-inner .article-body td { padding: 9px; }
+  .unified-inner .article-body .parcel-calculator { padding: 12px; margin: 16px 0; }
+  .unified-inner .calculator-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .unified-inner .calculator-fields input { min-height: 42px; padding: 8px; font-size: 16px; }
+  .unified-inner .parcel-calculator button { margin-top: 12px; }
+  .unified-inner .calculator-results { margin: 14px 0; gap: 10px; }
+  .unified-inner .article-end { padding: 12px; margin-top: 14px; }
+  .unified-inner .article-end h2 { font-size: 19px; margin: 6px 0 10px; }
+  .unified-inner .article-end a { margin: 0 12px 6px 0; padding: 6px 0; }
+  .unified-inner .article-resource-links { margin-top: 12px; padding: 12px; }
+  .unified-inner .prose-wrap { padding: 20px 4% 26px; }
+  .unified-inner .prose-wrap h2 { font-size: 22px; line-height: 1.3; margin: 22px 0 10px; }
+  .unified-inner .prose-wrap h2:first-child { margin-top: 0; }
+  .unified-inner .contact-placeholder { padding: 16px; }
+  .unified-inner .faq-page-layout > aside { margin-bottom: 14px; }
+  .unified-inner .faq-page-layout > aside h2 { font-size: 21px; margin: 6px 0 10px; }
+  .unified-inner .faq-page-list details { padding: 0 12px; }
+  .unified-inner .faq-page-list summary { padding: 12px 0; font-size: 14px; line-height: 1.45; }
+  .unified-inner .faq-page-list details p { font-size: 14px; line-height: 1.55; margin: 0 0 12px 28px; }
+  .unified-inner .faq-reading { margin: 0 0 12px 28px; }
+  .unified-inner .standalone-workflow { width: 92%; margin: 16px auto; }
+  .unified-inner .workflow-intro { padding: 14px; }
+  .unified-inner .workflow-intro h2 { font-size: 22px; margin: 6px 0 10px; }
+  .unified-inner .workflow-intro > p:not(.eyebrow) { font-size: 13px; line-height: 1.5; margin: 8px 0; }
+  .unified-inner .workflow-intro > a { font-size: 12px; }
+  .unified-inner .workflow-list { padding: 12px; gap: 8px; }
+  .unified-inner .workflow-list li { padding: 10px; }
+  .unified-inner .workflow-list b { font-size: 15px; line-height: 1.3; }
+  .unified-inner .workflow-list p { font-size: 13px; line-height: 1.5; }
+  .unified-inner .section-heading { margin-bottom: 12px; }
+  .unified-inner .process-check-grid { gap: 8px; }
+  .unified-inner .process-check-grid article:nth-child(n) { min-height: 0; padding: 14px; }
+  .unified-inner .process-check-grid article h2 { font-size: 18px; margin: 6px 0 8px; }
+  .unified-inner .process-check-grid article p { font-size: 13px; line-height: 1.5; margin: 0; }
+
+  .catalog-page .catalog-main { padding: 14px 4% 24px; }
+  .catalog-page .catalog-eyebrow { margin: 0 0 6px; font-size: 10px; line-height: 1.4; }
+  .catalog-page .catalog-main > h1, .catalog-page .catalog-product-info h1 { font-size: 24px; line-height: 1.2; margin: 6px 0 12px; }
+  .catalog-page .catalog-main > p:not(.catalog-eyebrow) { font-size: 14px; line-height: 1.5; margin: 0 0 12px; }
+  .catalog-page .catalog-tools { display: grid; gap: 7px; margin-bottom: 10px; }
+  .catalog-page .catalog-search { padding: 4px; }
+  .catalog-page .catalog-search input { padding: 8px; font-size: 16px; }
+  .catalog-page .catalog-search button { padding: 8px 12px; font-size: 13px; }
+  .catalog-page .image-search-link { padding: 7px 12px; font-size: 13px; }
+  .catalog-page .category-filters { flex-wrap: nowrap; overflow-x: auto; gap: 6px; padding-bottom: 4px; }
+  .catalog-page .category-filters a { flex-shrink: 0; font-size: 12px; padding: 8px 10px; }
+  .catalog-page .sort-row { gap: 4px; margin: 8px 0 12px; font-size: 12px; }
+  .catalog-page .sort-row a { padding: 8px; font-size: 12px; }
+  .catalog-page .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .catalog-page .catalog-card h2 { font-size: 13px; line-height: 1.35; margin: 8px 9px; min-height: 0; }
+  .catalog-page .card-meta { margin: 8px 9px 10px; gap: 4px; }
+  .catalog-page .card-meta strong { font-size: 17px; }
+  .catalog-page .card-meta span { font-size: 9px; }
+  .catalog-page .catalog-pagination { gap: 12px; margin: 20px 0 0; }
+  .catalog-page .catalog-pagination a { padding: 9px 14px; }
+  .catalog-page .back { margin-bottom: 12px; font-size: 13px; }
+  .catalog-page .catalog-detail { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-bottom: 24px; }
+  .catalog-page .gallery-main { max-width: 280px; margin: 0 auto; }
+  .catalog-page .gallery-thumbs { display: flex; overflow-x: auto; gap: 6px; margin-top: 8px; padding-bottom: 4px; }
+  .catalog-page .gallery-thumbs button { flex: 0 0 52px; }
+  .catalog-page .catalog-product-info > p { margin: 8px 0; }
+  .catalog-page .detail-price { font-size: 28px; }
+  .catalog-page .buy-button { padding: 12px; }
+  .catalog-page .catalog-product-info h2 { font-size: 19px; margin: 18px 0 8px; }
+  .catalog-page .catalog-product-info > p:not(.detail-price):not(.catalog-eyebrow) { font-size: 14px; line-height: 1.5; }
+  .catalog-page .image-search-panel { padding: 12px; margin-bottom: 16px; }
+  .catalog-page .image-drop { gap: 10px; padding: 12px; font-size: 14px; }
+  .catalog-page #image-preview { width: 96px; height: 96px; margin-top: 12px; }
+}

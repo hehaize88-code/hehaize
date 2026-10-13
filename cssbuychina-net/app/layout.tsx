@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { AnalyticsEvents } from "./components/AnalyticsEvents";
 import "./globals.css";
 import "../public/site-shell.css";
+import "../public/mobile-inner.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
