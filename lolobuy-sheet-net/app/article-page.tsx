@@ -1,3 +1,4 @@
+import { MobileChapter, MobileReadingTools } from "./components/mobile-reading";
 import Link from "next/link";
 import {
   articleWordCount,
@@ -106,7 +107,7 @@ export function ArticlePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <SiteHeader active="articles" locale={locale} />
-      <main className="article-main">
+      <main className="article-main mobile-inner">
         <article lang={locale} data-article-locale={locale}>
           <header className="article-hero">
             <div className="article-hero-inner">
@@ -157,7 +158,7 @@ export function ArticlePage({
           </header>
 
           <div className="article-layout">
-            <aside className="article-sidebar" aria-label="Article contents">
+            <MobileChapter title={articleText(locale, "IN THIS GUIDE")} contents><aside className="article-sidebar" aria-label="Article contents">
               <div>
                 <p className="footer-label">{articleText(locale, "IN THIS GUIDE")}</p>
                 <ol>
@@ -171,7 +172,7 @@ export function ArticlePage({
                   ))}
                 </ol>
               </div>
-            </aside>
+            </aside></MobileChapter>
 
             <div className="article-content">
               <figure className="article-figure">
@@ -199,6 +200,7 @@ export function ArticlePage({
                 <p>{copy.sourceNote}</p>
               </aside>
 
+              <MobileReadingTools locale={locale} />
               {copy.sections.map((section, index) => (
                 <section
                   className="article-section"
@@ -208,7 +210,7 @@ export function ArticlePage({
                   <span className="article-section-number">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <h2>{section.heading}</h2>
+                  <MobileChapter title={section.heading}>
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
@@ -225,6 +227,7 @@ export function ArticlePage({
                       <p>{section.note}</p>
                     </aside>
                   )}
+                  </MobileChapter>
                 </section>
               ))}
 

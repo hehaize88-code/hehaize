@@ -89,7 +89,7 @@ export default async function ProductReferencePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemPageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <SiteHeader active="products" />
-      <main className="product-reference-main">
+      <main className="product-reference-main mobile-inner">
         <article className="product-reference-page">
           <nav className="product-reference-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>/</span>
