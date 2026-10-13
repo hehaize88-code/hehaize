@@ -3,6 +3,7 @@
 .mobile-inner .mobile-list-controls,
 .mobile-inner .mobile-guide-tools { display: none; }
 .mobile-inner .mobile-list-item { display: contents; }
+.mobile-inner .article-index article { background: #fff; color: #231e1a; border-color: #d8cfc1; }
 .mobile-inner [hidden] { display: none !important; }
 .mobile-inner :is(.mobile-chapter, .mobile-contents) > summary { list-style: none; }
 .mobile-inner :is(.mobile-chapter, .mobile-contents) > summary::-webkit-details-marker { display: none; }
