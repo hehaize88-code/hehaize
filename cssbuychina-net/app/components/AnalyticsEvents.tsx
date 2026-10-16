@@ -17,6 +17,8 @@ export function trackAnalyticsEvent(eventName: string, parameters: Record<string
   window.gtag("event", eventName, {
     ...parameters,
     page_path: window.location.pathname,
+    page_hostname: window.location.hostname,
+    site_language: window.location.pathname.match(/^\/(pt-br|de|es)(?:\/|$)/)?.[1] ?? "en",
     transport_type: "beacon",
   });
 }
@@ -50,7 +52,15 @@ export function AnalyticsEvents() {
     }
 
     document.addEventListener("click", trackLinkClick, { capture: true });
-    return () => document.removeEventListener("click", trackLinkClick, { capture: true });
+    function trackSearch(event: Event) {
+      if (!(event.target instanceof HTMLFormElement)) return;
+      if (event.target.dataset.trackForm) trackAnalyticsEvent(event.target.dataset.trackForm, { search_location: "homepage" });
+    }
+    document.addEventListener("submit", trackSearch, { capture: true });
+    return () => {
+      document.removeEventListener("click", trackLinkClick, { capture: true });
+      document.removeEventListener("submit", trackSearch, { capture: true });
+    };
   }, []);
 
   return null;

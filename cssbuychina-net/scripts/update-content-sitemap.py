@@ -24,10 +24,12 @@ for kind,items in content.items():
   date=datetime.strptime(item.get('checked','August 10, 2026'),'%B %d, %Y').date().isoformat()
   alternates={'en':path,'pt-BR':'/pt-br'+path,'de-DE':'/de'+path,'es':'/es'+path,'x-default':path}
   for target in dict.fromkeys(alternates.values()):
-   node=entry(target,'2026-10-03' if target!=path else date)
+   node=entry(target,max(date, '2026-10-16') if target!=path else date)
    for old in list(node.findall(f'{{{x}}}link')):node.remove(old)
    for locale,href in alternates.items():ET.SubElement(node,f'{{{x}}}link',{'rel':'alternate','hreflang':locale,'href':base+href})
 for path in ['/','/articles','/faq','/guides','/products','/pt-br','/de','/es','/pt-br/articles','/de/articles','/es/articles','/pt-br/guides','/de/guides','/es/guides']:
- entry(path,'2026-10-03')
+ entry(path,'2026-10-16')
 ET.indent(tree,space='  ');tree.write(root/'public/editorial-sitemap.xml',encoding='utf-8',xml_declaration=True)
 print('Sitemap URLs:',len(entries))
+inventory={kind:{slug:{'sections':len(item['sections']),'paragraphs':sum(len(paragraphs) for _,paragraphs in item['sections']),'title':item.get('h1',item['title'])} for slug,item in items.items()} for kind,items in content.items()}
+(root/'tests/content-inventory.json').write_text(json.dumps(inventory,ensure_ascii=False,indent=2)+'\n')

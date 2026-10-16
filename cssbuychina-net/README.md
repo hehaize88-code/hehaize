@@ -22,21 +22,23 @@ Visitors browse locally, and the purchase button opens the matching marketplace
 item on CSSBuy. Official registration and branding use CSSBuy's own URLs.
 See `commerce/IMPLEMENTATION.md` for architecture, keyword research and validation.
 
-## October 3, 2026 content release
+## October 16, 2026 editorial release
 
-The article library contains 22 articles, including new USA shipping, Germany shipping, CSSBuy vs Superbuy, and payment/fee guides. Five warehouse/shipping articles and the three practical guides have decision tables, contextual reading links or the parcel-weight worksheet. The worksheet models chargeable weight only; it does not fetch live freight quotes.
+The library contains 25 articles and three practical guides in English, Portuguese (Brazil), German and Spanish. Three new articles address QC returns and refunds, original marketplace links, and shipping to Brazil. Existing restrictions, warehouse status, storage, shipping-weight, shipping-budget and product-link articles plus the QC guide have clearer answers and connected next steps. All existing article titles have reviewed localized wording.
 
-All 22 articles and three guides have complete static German, Spanish and Portuguese translations. Dictionaries live in `app/articles/translations/`; the pages identify automatic translations and link to the English source. Keep every heading, paragraph, table cell and related-link label synchronized when editing English content. New localized articles need a complete dictionary before adding reciprocal language links. `tests/content-inventory.json` records section and paragraph counts for route validation.
+Dictionaries live in `app/articles/translations/`. Keep every heading, paragraph, quick answer, table cell, source label and related-link label synchronized. New content is in `app/articles/october-article-data.json`; focused amendments are in the article and guide `october-updates.json` files. `tests/editorial-release.test.mjs` rejects missing or untranslated long strings and verifies discovery and source sections across languages.
 
-Research provenance, the GSC baseline and keyword-to-article mapping are in `editorial/2026-10-03-release.json`. GA4/Bing account data were unavailable for the research; the existing GA4 tag remains, with added article and calculator events.
+The homepage highlights the new articles and restrictions guide in all four languages. Article sources link to the public service or authority. Source provenance and the query-intent mapping are recorded in `editorial/2026-10-16-release.json`. Live route prices, delivery promises and fixed Brazil tax rates are deliberately not asserted.
 
-To refresh the sitemap after a content change:
+The existing GA4 measurement ID is retained. Article-entry, related-reading, source, catalogue and search events carry page context; application and catalogue events include hostname and site language. Marking key events and filtering GA4 reports are separate account-admin tasks. No GA4 property settings are changed by this release.
+
+Refresh content inventory and sitemap, then build the checked-in Pages artifact:
 
 ```sh
 node scripts/export-content.mjs > /tmp/cssbuy-content.json
 python scripts/update-content-sitemap.py /tmp/cssbuy-content.json
 npm run build:pages
-node --test tests/rendered-html.test.mjs tests/pages-worker.test.mjs tests/content-routes.test.mjs
+npm run test:release
 ```
 
-Commit both source and regenerated root Pages artifacts. Production continues to use the existing GitHub/Cloudflare Pages integration.
+`tests/content-inventory.json` is generated from source and validates all 112 article/guide language routes. The public Pages worker, sitemap and hashed assets must be committed with the source. Historical research remains in `editorial/2026-10-03-release.json`.

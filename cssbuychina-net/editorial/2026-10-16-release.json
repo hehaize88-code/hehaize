@@ -1,0 +1,45 @@
+{
+  "release": "2026-10-16-cssbuy-multilingual-seo",
+  "languages": [
+    "en",
+    "pt-br",
+    "de",
+    "es"
+  ],
+  "articleCountPerLanguage": 25,
+  "guideCountPerLanguage": 3,
+  "evidence": "User-supplied GSC, Bing and GA4 screenshots plus public keyword and official-service research; private analytics metrics are not included in this file.",
+  "priorities": [
+    {
+      "intent": "CSSBuy QC returns and refunds",
+      "slug": "cssbuy-returns-refunds-after-qc",
+      "basis": "Warehouse/QC decision queries and missing dedicated return workflow"
+    },
+    {
+      "intent": "How do I find the original link on CSSBuy",
+      "slug": "find-original-product-link-cssbuy",
+      "basis": "Observed Bing query; source identity differs from link validation"
+    },
+    {
+      "intent": "CSSBuy shipping to Brazil / frete CSSBuy Brasil",
+      "slug": "cssbuy-shipping-to-brazil",
+      "basis": "Brazil and Portuguese audience plus freight-planning content gap"
+    }
+  ],
+  "publicSources": [
+    "https://m.cssbuy.com/",
+    "https://m.cssbuy.com/service",
+    "https://m.cssbuy.com/buyforme",
+    "https://m.cssbuy.com/estimates",
+    "https://m.cssbuy.com/help-19-how-to-refund.html",
+    "https://www.correios.com.br/receber/encomenda/internacional",
+    "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/manuais/remessas-postal-e-expressa/preciso-pagar-impostos-nas-compras-internacionais/quanto-pagarei-de-imposto"
+  ],
+  "boundaries": [
+    "Examples are fictional, not quotations.",
+    "Return acceptance and balance withdrawal are distinct.",
+    "No universal reverse-link button is assumed.",
+    "No fixed shipping rates, tax rates, storage promises or delivery guarantees.",
+    "No GA4 admin, key-event configuration or Search Console settings changed."
+  ]
+}

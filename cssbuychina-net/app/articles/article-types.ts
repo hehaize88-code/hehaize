@@ -7,6 +7,8 @@ export type Article = {
   published?: string;
   checked?: string;
   research?: string;
+  quickAnswer?: { title: string; paragraphs: string[] };
+  sources?: readonly (readonly [string, string])[];
   sections: readonly (readonly [string, readonly string[]])[];
   related?: readonly (readonly [string, string])[];
   table?: { title: string; intro: string; headers: string[]; rows: string[][] };

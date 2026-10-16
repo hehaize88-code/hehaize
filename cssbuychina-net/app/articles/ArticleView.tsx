@@ -135,6 +135,7 @@ export function ArticleView({ slug, locale = "en", kind = "articles" }: { slug: 
         <div className="article-layout">
           <aside><span>{t("On this page")}</span>{article.sections.map(([heading], index) => <a href={`#section-${index + 1}`} key={heading}>{heading}</a>)}</aside>
           <div className="article-body">
+            {article.quickAnswer ? <section className="article-note" aria-label={article.quickAnswer.title}><h2>{article.quickAnswer.title}</h2>{article.quickAnswer.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</section> : null}
             {isCategoryArticle ? <>
               <figure className="article-hero-image">
                 <img src="/cssbuy-category-checks-article.webp" width="1536" height="1024" alt={t("Product-category sizing, warehouse QC and parcel-planning checklist")} fetchPriority="high" />
@@ -142,7 +143,7 @@ export function ArticleView({ slug, locale = "en", kind = "articles" }: { slug: 
               </figure>
               <section className="category-comparison" aria-labelledby="quick-category-comparison">
                 <div className="comparison-heading"><span>{t("Quick answer")}</span><h2 id="quick-category-comparison">{t("CSSBuy category decision table")}</h2><p><a href={`${prefix}/categories`}>{t("CSSBuy spreadsheet category index")}</a></p></div>
-                <div className="comparison-scroll"><table><thead><tr><th>{t("Category")}</th><th>{t("Before ordering")}</th><th>{t("Warehouse QC")}</th><th>{t("Shipping risk")}</th><th>{t("Category entry")}</th></tr></thead><tbody>{categoryDecisionRows.map((row) => <tr key={t(row.category)}><th scope="row">{t(row.category)}</th><td>{t(row.before)}</td><td>{t(row.qc)}</td><td>{t(row.shipping)}</td><td><a href={row.href}>{t(row.anchor)} ↗</a></td></tr>)}</tbody></table></div>
+                <div className="comparison-scroll"><table><thead><tr><th>{t("Category")}</th><th>{t("Before ordering")}</th><th>{t("Warehouse QC")}</th><th>{t("Shipping risk")}</th><th>{t("Category entry")}</th></tr></thead><tbody>{categoryDecisionRows.map((row) => <tr key={t(row.category)}><th scope="row">{t(row.category)}</th><td>{t(row.before)}</td><td>{t(row.qc)}</td><td>{t(row.shipping)}</td><td><a href={contentHref(row.href, locale)}>{t(row.anchor)} ↗</a></td></tr>)}</tbody></table></div>
               </section>
             </> : null}
             <div className="article-note"><b>{t("Research basis · checked")} {new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(new Date(`${modified}T12:00:00Z`))}</b><p>{article.research ?? t("This independent article is based on CSSBuy’s public workflow, warehouse information and shipping estimator. Current order conditions, account deadlines and the selected route remain controlling.")}</p></div>
@@ -151,10 +152,11 @@ export function ArticleView({ slug, locale = "en", kind = "articles" }: { slug: 
             {slug === "cssbuy-shipping-calculator-actual-vs-volumetric-weight" ? <ParcelWeightCalculator locale={locale} /> : null}
             {article.sections.map(([heading, paragraphs], index) => {
               const resources = isCategoryArticle ? categorySectionLinks[source.sections[index][0]] : undefined;
-              return <section id={`section-${index + 1}`} key={heading}><h2>{heading}</h2>{paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{resources ? <div className="article-resource-links"><span>{t("Related category and product pages")}</span><div>{resources.map((resource) => <a href={resource.href} key={resource.href}>{t(locale === "en" ? resource.label : resource.href.startsWith("/product/") ? "Review the current product find" : resource.label)} ↗</a>)}</div></div> : null}</section>;
+              return <section id={`section-${index + 1}`} key={heading}><h2>{heading}</h2>{paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{resources ? <div className="article-resource-links"><span>{t("Related category and product pages")}</span><div>{resources.map((resource) => <a href={contentHref(resource.href, locale)} key={resource.href}>{t(locale === "en" ? resource.label : resource.href.startsWith("/product/") ? "Review the current product find" : resource.label)} ↗</a>)}</div></div> : null}</section>;
             })}
+            {article.sources ? <section className="article-sources"><h2>{t("Official sources")}</h2><ul>{article.sources.map(([label, href]) => <li key={href}><a href={href} target="_blank" rel="noopener noreferrer" data-track-event="article_source_click" data-click-area="official-sources">{label} ↗</a></li>)}</ul></section> : null}
             {article.related ? <div className="article-end"><span>{t("Related reading")}</span><h2>{t("Continue the same research workflow.")}</h2>{article.related.map(([label, href]) => <a href={contentHref(href, locale)} key={href} data-track-event="article_related_click" data-click-area="related-reading">{label} ↗</a>)}</div> : null}
-            <div className="article-end"><span>{t("More product research")}</span><h2>{t("Continue with the live product index.")}</h2><a href={`${prefix}/products`} data-track-event="article_catalog_click" data-click-area="article-end">{t("Browse product finds")} ↗</a></div>
+            <div className="article-end"><span>{t("More product research")}</span><h2>{t("Continue with the live product index.")}</h2><a href={`${prefix}/catalog/`} data-track-event="article_catalog_click" data-click-area="article-end">{t("Browse product finds")} ↗</a></div>
           </div>
         </div>
       </article>

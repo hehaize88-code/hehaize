@@ -19,10 +19,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cssbuychina.net"),
   title: {
-    default: "CSSBuy Spreadsheet 2026: Finds, QC Photos & Product Search",
+    default: "CSSBuy Spreadsheet 2026: Finds, Links & Shipping",
     template: "%s | CSSBuy China",
   },
-  description: "Browse a current CSSBuy spreadsheet and research warehouse status, QC photos, shipping costs, restrictions and parcel tracking before ordering.",
+  description: "Browse CSSBuy finds and product links by category. Compare USD prices, review photos and plan warehouse QC, returns and international shipping.",
   applicationName: "CSSBuy China Spreadsheet",
   keywords: ["CSSBuy spreadsheet", "CSSBuy finds", "CSSBuy shoes", "CSSBuy QC", "China shopping spreadsheet"],
   authors: [{ name: "CSSBuy China Editorial" }],
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "CSSBuy China",
-    title: "CSSBuy Spreadsheet 2026: Finds, QC Photos & Product Search",
-    description: "Browse current CSSBuy finds and research warehouse status, QC photos, shipping costs, restrictions and parcel tracking.",
+    title: "CSSBuy Spreadsheet 2026: Finds, Links & Shipping",
+    description: "Explore CSSBuy product links, photos and USD prices with practical QC, return and shipping guides.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSSBuy Spreadsheet 2026: Finds, QC Photos & Product Search",
-    description: "Browse current CSSBuy finds with warehouse QC, shipping cost, restriction and tracking guidance.",
+    title: "CSSBuy Spreadsheet 2026: Finds, Links & Shipping",
+    description: "Explore CSSBuy product links, photos and USD prices with practical QC, return and shipping guides.",
   },
   icons: {
     icon: "https://assets.cssbuy.com/icon/css_192.png",

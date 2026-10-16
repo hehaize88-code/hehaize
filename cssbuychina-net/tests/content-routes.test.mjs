@@ -6,7 +6,7 @@ const inventory=JSON.parse(await readFile(new URL('./content-inventory.json',imp
 const env={ASSETS:{fetch:async()=>new Response('Not found',{status:404})}};
 const ctx={waitUntil(){},passThroughOnException(){}};
 const get=path=>worker.fetch(new Request(`https://cssbuychina.net${path}`),env,ctx);
-test('all 25 articles and guides have complete localized routes and matching metadata',async()=>{
+test('all articles and guides have complete localized routes and matching metadata',async()=>{
  for(const [kind,items] of Object.entries(inventory)) for(const [slug,counts] of Object.entries(items)) for(const [locale,language] of [['en','en'],['de','de-DE'],['es','es'],['pt-br','pt-BR']]){
   const path=`${locale==='en'?'':`/${locale}`}/${kind}/${slug}`;
   const response=await get(path);assert.equal(response.status,200,path);
@@ -23,10 +23,10 @@ test('all 25 articles and guides have complete localized routes and matching met
   if(locale!=='en') assert.ok(!content.includes(counts.title),path+' translated body');
  }
 });
-test('language indexes include all 22 articles and missing content returns a real 404',async()=>{
+test('language indexes include every article and missing content returns a real 404',async()=>{
  for(const locale of ['','/de','/es','/pt-br']){
   const html=await (await get(`${locale}/articles`)).text();
-  assert.equal((html.match(/class="editorial-card /g)||[]).length,22,locale+' article count');
+  assert.equal((html.match(/class="editorial-card /g)||[]).length,Object.keys(inventory.articles).length,locale+' article count');
   for(const slug of Object.keys(inventory.articles))assert.ok(html.includes(`href="${locale}/articles/${slug}"`));
   for(const kind of ['articles','guides'])assert.equal((await get(`${locale}/${kind}/missing-article-check`)).status,404);
  }

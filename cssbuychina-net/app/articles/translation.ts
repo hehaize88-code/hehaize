@@ -10,6 +10,6 @@ export function localizedArticle(article: Article, locale: SiteLocale): Article 
  return visit(article) as Article;
 }
 export function contentHref(href: string, locale: SiteLocale) {
- if (locale === "en" || !/^\/(articles|guides)(\/|$)/.test(href)) return href;
+ if (locale === "en" || !/^\/(articles|guides|catalog|products|product|category|categories)(\/|$)/.test(href)) return href;
  return `/${locale}${href}`;
 }

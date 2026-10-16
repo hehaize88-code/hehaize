@@ -161,7 +161,7 @@ function Guides({ locale }: { locale: SiteLocale }) {
 function Articles({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
   const cards = Object.entries(articles).map(([slug, article]) => ({ slug, ...localizedArticle(article, locale) }));
-  return <><section className="inner-hero articles-hero"><p className="eyebrow"><span /> {sectionLabels[locale].articles}</p><h1>{copy.nav.articles}</h1><p>{copy.reading.description}</p></section><section className="guides-index"><div className="editorial-grid">{cards.map((article, index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index % 3]}`} href={`/${locale}/articles/${article.slug}`} key={article.slug}><div className="editorial-number">{String(index + 1).padStart(2, "0")}</div><span>{article.label}</span><h2>{article.title}</h2><p>{article.description}</p><b>{localizedUi[locale as Exclude<SiteLocale, "en">].read} ↗</b></a>)}</div></section></>;
+  return <><section className="inner-hero articles-hero"><p className="eyebrow"><span /> {sectionLabels[locale].articles}</p><h1>{copy.nav.articles}</h1><p>{copy.reading.description}</p></section><section className="guides-index"><div className="editorial-grid">{cards.map((article, index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index % 3]}`} href={`/${locale}/articles/${article.slug}`} key={article.slug} data-track-event="article_open" data-click-area="article-index"><div className="editorial-number">{String(index + 1).padStart(2, "0")}</div><span>{article.label}</span><h2>{article.title}</h2><p>{article.description}</p><b>{localizedUi[locale as Exclude<SiteLocale, "en">].read} ↗</b></a>)}</div></section></>;
 }
 
 function Faq({ locale }: { locale: SiteLocale }) {

@@ -17,7 +17,7 @@
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern _worker.js --ignore-pattern assets --ignore-pattern .vite",
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
     "test:catalog": "node --test tests/catalog.test.mjs",
-    "test:release": "node --test tests/catalog.test.mjs tests/pages-worker.test.mjs tests/content-routes.test.mjs tests/catalog-release.test.mjs"
+    "test:release": "node --test tests/catalog.test.mjs tests/pages-worker.test.mjs tests/content-routes.test.mjs tests/catalog-release.test.mjs tests/editorial-release.test.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
