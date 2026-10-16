@@ -1,5 +1,6 @@
 const GA4_SNIPPET = "<script async src=\"/ga4-tag.js\"></script><script src=\"/ga4-init.js\"></script>";
-const MOBILE_INNER_STYLE = '<link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v1">';
+const MOBILE_READING_SCRIPT = '<script defer src="/mobile-reading.js?v=20261016-compact-v2"></script>';
+const MOBILE_INNER_STYLE = '<link rel="stylesheet" href="/mobile-inner.css?v=20261016-compact-v2">';
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
   if (url.pathname === "/ga4-init.js") return new Response("window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-QY8MM7VZV2');", { headers: { "content-type": "application/javascript; charset=utf-8", "cache-control": "public, max-age=3600" } });
@@ -20,7 +21,7 @@ function withGoogleAnalytics(response, request) {
   const csp = headers.get("content-security-policy");
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE, { html: true }); } }).transform(htmlResponse);
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE + MOBILE_READING_SCRIPT, { html: true }); } }).transform(htmlResponse);
 }
 
 

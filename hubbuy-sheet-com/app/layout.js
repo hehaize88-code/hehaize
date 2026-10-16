@@ -53,6 +53,8 @@ gtag('config', 'G-QY8MM7VZV2');
 `}
 </Script>
 
+<Script src="/mobile-reading.js?v=20261016-compact-v2" strategy="afterInteractive" />
+
 <LanguageRuntime>
   <a className="skip-link" href="#main-content">
     Skip to content
