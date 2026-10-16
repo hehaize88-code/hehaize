@@ -60,7 +60,7 @@ function injectAnalytics(html) {
     return /^https?:\/\//.test(href) && !/^https:\/\/(?:www\.)?cnbuycha\.com(?:\/|$)/.test(href) && !href.startsWith(siteUrl + "/") ? label : link;
   }));
   if (html.includes("data-static-analytics")) return html;
-  return html.replace("</body>", `${analyticsScript}</body>`);
+  return html.replace("</body>", `${analyticsScript}<script defer src="/mobile-reading.js?v=20261016-compact-v2"></script></body>`);
 }
 
 function escapeHtml(value) {
