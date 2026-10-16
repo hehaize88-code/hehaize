@@ -48,3 +48,25 @@ test('homepage, FAQ, articles and guides all retain shared registration/navigati
 test('image-search data is complete, dated and sourced only from cnbuycha',()=>{
  const data=JSON.parse(fs.readFileSync(root+'/catalog-image-index.json'));assert.equal(data.source,'https://cnbuycha.com');assert.equal(data.catalogCount,data.indexedCount);assert.equal(data.indexedCount,data.products.length);assert.ok(data.products.length>3400);for(const p of data.products){assert.equal(p.hash.length,64);assert.equal(p.cells.length,48);assert.match(p.path,/^\/[a-z0-9-]+\/\d+\.html$/i)}
 });
+test('corrected non-shoe item preserves old links and stays out of shoe listings',async()=>{
+ const saved=fetch;
+ globalThis.fetch=async url=>new Response(new URL(url).pathname.endsWith('.html')?detail:list.replace('</h3>','</h3>').replace('/shoes/42.html','/shoes/3448.html').replace('Shoe &amp; bag','Wedding flower arch'));
+ try {
+  for(const lang of LANGS){const pre=lang==='en'?'':'/'+lang;
+   const old=await worker.fetch(new Request('https://pikobuy-sheet.net'+pre+'/catalog/shoes/3448.html'),env);
+   assert.equal(old.status,301);assert.equal(old.headers.get('location'),'https://pikobuy-sheet.net'+pre+'/catalog/other-stuff/3448.html');
+   const listResponse=await worker.fetch(new Request('https://pikobuy-sheet.net'+pre+'/catalog/shoes/'),env);
+   const markup=await listResponse.text();assert.ok(!markup.includes('Wedding flower arch'));assert.ok(markup.includes(pre+'/articles/pikobuy-fees-product-shipping-extra-costs/'));
+   const corrected=await worker.fetch(new Request(old.headers.get('location')),env);assert.equal(corrected.status,200);
+  }
+ }finally{globalThis.fetch=saved;}
+});
+test('new editorial routes are served indexable in every language with versioned tracking',async()=>{
+ for(const lang of LANGS){const pre=lang==='en'?'':'/'+lang;
+  for(const slug of ['pikobuy-fees-product-shipping-extra-costs','pikobuy-tracking-warehouse-to-delivery','pikobuy-image-search-dead-link-recovery']) {
+   const response=await worker.fetch(new Request('https://pikobuy-sheet.net'+pre+'/articles/'+slug+'/'),env);
+   assert.equal(response.status,200);assert.equal(response.headers.get('content-language'),lang);assert.equal(response.headers.get('x-pikobuy-release'),'20261016-seo-v1');
+   const markup=await response.text();assert.ok(!markup.includes('content="noindex'));assert.ok(markup.includes('/assets/piko-site-20261016-research-v1.js'));
+  }
+ }
+});

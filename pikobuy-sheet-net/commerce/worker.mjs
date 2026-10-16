@@ -1,4 +1,4 @@
-const RELEASE = '20261013-mobile-v1';
+const RELEASE = '20261016-seo-v1';
 async function catalogSitemap() {
  try {
   const xml=await upstream('/sitemap.xml');
@@ -41,9 +41,10 @@ const worker = {
   if(status===404)headers.set('x-robots-tag','noindex');
   if(headers.get('content-type')?.includes('text/html')){
    headers.set('content-language',lang);headers.set('cache-control','public, max-age=0, s-maxage=60');
-   // Inject only into successful editorial inner routes. Home HTML stays byte-for-byte unchanged.
-   if(status===200 && ROUTES.has(url.pathname) && bare!=='/' && request.method!=='HEAD') {
-    const html=(await response.text()).replace('</head>','<link rel="stylesheet" href="/assets/piko-mobile-20261013-v1.css"><script src="/assets/piko-mobile-20261013-v1.js" defer></script></head>').replace(/<body([^>]*)>/,(_,attrs)=>'<body'+(/\bclass="/.test(attrs)?attrs.replace(/\bclass="/,'class="piko-compact-page '):attrs+' class="piko-compact-page"')+'>');
+   // Versioned research assets on all editorial routes; preserve the existing mobile reading behaviour on inner pages.
+   if(status===200 && ROUTES.has(url.pathname) && request.method!=='HEAD') {
+    let html=(await response.text()).replaceAll('/assets/piko-site-20261012-catalog-v1.js','/assets/piko-site-20261016-research-v1.js').replace('</head>','<link rel="stylesheet" href="/assets/piko-seo-20261016-v1.css"></head>');
+    if(bare!=='/') html=html.replace('</head>','<link rel="stylesheet" href="/assets/piko-mobile-20261013-v1.css"><script src="/assets/piko-mobile-20261013-v1.js" defer></script></head>').replace(/<body([^>]*)>/,(_,attrs)=>'<body'+(/\bclass="/.test(attrs)?attrs.replace(/\bclass="/,'class="piko-compact-page '):attrs+' class="piko-compact-page"')+'>');
     headers.delete('content-length');headers.delete('etag');
     return new Response(html,{status,headers});
    }

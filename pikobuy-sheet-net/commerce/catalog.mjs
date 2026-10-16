@@ -1,4 +1,5 @@
 import { nav, footer } from './chrome.mjs';
+import { researchLinks } from './research.mjs';
 // Public catalogue adapter. All catalogue reads come from cnbuycha.com.
 export const DATA_ORIGIN = 'https://cnbuycha.com';
 export const REGISTER_URL = 'https://www.pikobuy.com/?mode=register&redirect=/home';
@@ -53,13 +54,17 @@ export function buyUrl(sourceId) {
 }
 export const prefix=lang=>lang==='en'?'':`/${lang}`;
 const base=lang=>`${prefix(lang)}/catalog`;
-export const localPath=(path,lang)=>`${base(lang)}${path==='/AllProducts/'?'/':path}`;
+// Verified catalogue correction. Keep the source URL for retrieval, and retain old public URLs as redirects.
+const CATEGORY_CORRECTIONS = {'/shoes/3448.html':'/other-stuff/3448.html'};
+export const correctedPath=path=>CATEGORY_CORRECTIONS[path]||path;
+const sourcePath=path=>Object.entries(CATEGORY_CORRECTIONS).find(([,value])=>value===path)?.[0]||path;
+export const localPath=(path,lang)=>`${base(lang)}${path==='/AllProducts/'?'/':correctedPath(path)}`;
 const money=p=>Number.isFinite(Number(p))&&p!==''?'$'+Number(p).toFixed(2):'—';
 const labels=lang=>COPY[lang]||COPY.en;
 function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://pikobuy-sheet.net'+prefix(lang)+path;
- const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | Pikobuy Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://pikobuy-sheet.net${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://pikobuy-sheet.net${path}"><link rel="icon" href="/pikobuy-icon.png"><link rel="stylesheet" href="/catalog.css?v=20261012"><link rel="stylesheet" href="/site-shell.css?v=20261012"><script src="/assets/piko-site-20261012-catalog-v1.js" defer></script><script src="/catalog.js?v=20261012" defer></script><link rel="stylesheet" href="/assets/piko-mobile-20261013-v1.css"><script src="/assets/piko-mobile-20261013-v1.js" defer></script></head><body class="catalog-page piko-compact-page">${nav(lang,path,query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
- return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-pikobuy-release':'20261013-mobile-v1'}});
+ const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}${/pikobuy/i.test(title)?'':' | Pikobuy Spreadsheet'}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://pikobuy-sheet.net${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://pikobuy-sheet.net${path}"><link rel="icon" href="/pikobuy-icon.png"><link rel="stylesheet" href="/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/piko-seo-20261016-v1.css"><link rel="stylesheet" href="/site-shell.css?v=20261012"><script src="/assets/piko-site-20261016-research-v1.js" defer></script><script src="/catalog.js?v=20261012" defer></script><link rel="stylesheet" href="/assets/piko-mobile-20261013-v1.css"><script src="/assets/piko-mobile-20261013-v1.js" defer></script></head><body class="catalog-page piko-compact-page">${nav(lang,path,query)}<main class="catalog-main" data-locale="${lang}">${body}${researchLinks(lang)}</main>${footer(lang)}</body></html>`;
+ return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-pikobuy-release':'20261016-seo-v1'}});
 }
 export function card(p,lang) {
  return `<article class="catalog-card"><a href="${localPath(p.path,lang)}"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" width="400" height="400" loading="lazy"><h2>${escapeHtml(p.title)}</h2><div class="card-meta"><strong>${money(p.price)}</strong><span>USD · QC ↗</span></div></a></article>`;
@@ -98,7 +103,8 @@ export async function catalogueRoute(request,env) {
  }
  try {
   if(/^[a-z0-9-]+\/\d+\.html$/i.test(tail)) {
-   const product=parseDetail(await upstream('/'+tail));if(!product.title)return shell(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
+   if(correctedPath('/'+tail)!=='/'+tail)return Response.redirect(url.origin+localPath('/'+tail,lang)+url.search,301);
+   const product=parseDetail(await upstream(sourcePath('/'+tail)));if(!product.title)return shell(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
    const buy=buyUrl(product.sourceId);
    return shell(lang,path,product.title,`${product.title}. ${t[8]}. ${t[15]}`,`<a class="back" href="${base(lang)}/">← ${t[7]}</a><section class="catalog-detail"><div class="catalog-gallery"><div class="gallery-main"><button type="button" data-gallery-prev aria-label="${t[11]}">‹</button><img id="gallery-main" src="${escapeHtml(product.images[0]||'')}" alt="${escapeHtml(product.title)}" width="800" height="800"><button type="button" data-gallery-next aria-label="${t[12]}">›</button></div><div class="gallery-thumbs">${product.images.map((im,i)=>`<button type="button" data-gallery-index="${i}" aria-label="${t[8]} ${i+1}" aria-current="${i===0}"><img src="${escapeHtml(im)}" alt="${escapeHtml(product.title)} ${i+1}" width="120" height="120" loading="lazy"></button>`).join('')}</div></div><div class="catalog-product-info"><p class="catalog-eyebrow">PIKOBUY SPREADSHEET</p><h1>${escapeHtml(product.title)}</h1><p>${t[14]}: <strong>${escapeHtml(product.sourceId)}</strong></p><p class="detail-price">${money(product.price)} <small>USD</small></p>${buy?`<a class="buy-button" href="${escapeHtml(buy)}" target="_blank" rel="noopener noreferrer" data-track-event="pikobuy_product_click">${t[9]} ↗</a>`:''}<h2>${t[8]}</h2><p>${t[15]}</p></div></section><h2>${t[17]}</h2><div class="catalog-grid">${product.related.slice(0,8).map(p=>card(p,lang)).join('')}</div>`);
   }
@@ -107,9 +113,19 @@ export async function catalogueRoute(request,env) {
   const sort=['new','click','price'].includes(url.searchParams.get('sort'))?url.searchParams.get('sort'):'new';
   const page=Math.min(10000,Math.max(1,Number.parseInt(url.searchParams.get('page')||'1')||1));
   const params=new URLSearchParams({q,sort,page:String(page)}),data=parseList(await upstream('/'+cat+'/',params));
+  if(cat==='shoes') {
+   data.products=data.products.filter(p=>correctedPath(p.path).startsWith('/shoes/'));
+   if(!q)data.total=Math.max(0,data.total-1);
+  }
+  if(cat==='other-stuff'&&!q) {
+   // Fetch the corrected item live so no historical snapshot is represented as a live price.
+   if(page===1&&sort==='new'&&!data.products.some(p=>p.path.endsWith('/3448.html'))) {
+    try {const p=parseDetail(await upstream('/shoes/3448.html'));if(p.title&&p.images.length)data.products.push({path:'/other-stuff/3448.html',title:p.title,image:p.images[0],price:p.price});} catch {}
+   }
+  }
   const route=localPath('/'+cat+'/',lang),link=(s,p=1)=>`${route}?${new URLSearchParams({q,sort:s,page:String(p)})}`;
   const names=CATEGORY_LABELS[lang]||CATEGORY_LABELS.en,categoryTitle=names[CATEGORIES.indexOf(cat)];
-  const title=cat==='AllProducts'?t[0]:`Pikobuy ${categoryTitle} Spreadsheet`;
+  const title=cat==='AllProducts'?`Pikobuy Spreadsheet: ${t[18]}`:`Pikobuy ${categoryTitle} Spreadsheet`;
   return shell(lang,path,title,`${title}. ${t[15]}`,`<p class="catalog-eyebrow">PIKOBUY SPREADSHEET · USD</p><h1>${title}</h1><div class="catalog-tools">${searchForm(lang,q,cat,sort)}<a class="image-search-link" href="${base(lang)}/image-search/">▧ ${t[6]}</a></div><nav class="category-filters">${CATEGORIES.map((c,i)=>`<a href="${localPath('/'+c+'/',lang)}" ${c===cat?'aria-current="page"':''}>${names[i]}</a>`).join('')}</nav><div class="sort-row">${[['new',t[3]],['click',t[4]],['price',t[5]]].map(([s,n])=>`<a href="${link(s)}" ${sort===s?'aria-current="page"':''}>${n}</a>`).join('')}<span>${data.total.toLocaleString()} · ${page} / ${Math.max(page,data.pages)}</span></div><div class="catalog-grid">${data.products.length?data.products.map(p=>card(p,lang)).join(''):`<p class="empty-state">${t[13]}</p>`}</div><nav class="catalog-pagination">${page>1?`<a href="${link(sort,page-1)}">← ${t[11]}</a>`:''}${page<data.pages?`<a href="${link(sort,page+1)}">${t[12]} →</a>`:''}</nav>`,{noindex:!!q||sort!=='new'||page>1,query:url.search});
  } catch(error) { if(error.status===404)return shell(lang,path,'404','',`<h1>404</h1>`,{status:404,noindex:true}); return shell(lang,path,t[20],t[20],`<h1>${t[20]}</h1><a href="${base(lang)}/">${t[7]}</a>`,{status:503,noindex:true}); }
 }
