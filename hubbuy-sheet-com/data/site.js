@@ -1,6 +1,7 @@
 import { categoryPages } from "./categories.js";
 import { mainCatalogBySourceId } from "./main-catalog.js";
 
+export const REGISTER_URL = "https://hubbuy.com/signUp";
 export const MAIN_SITE = "https://www.cnbuycha.com";
 export const SITE_URL = "https://hubbuy-sheet.com";
 export const CNY_PER_USD = 7.20;
@@ -13,7 +14,7 @@ export function usdReference(price) {
 export const categories = categoryPages.map((category) => ({
   ...category,
   href: `/categories/${category.slug}/`,
-  liveHref: `${MAIN_SITE}${category.livePath}`,
+  liveHref: `/catalog${category.livePath}`,
 }));
 
 const checked = "2026-07-22";
@@ -45,6 +46,7 @@ function referenceProduct(id, name, price, category, sourceId, remoteImage) {
     image: liveImage || localImages.get(id) || remoteImage,
     href: liveProduct ? `${MAIN_SITE}${liveProduct.path}` : `${MAIN_SITE}/AllProducts/${id}.html`,
     localHref: `/products/${id}/`,
+    catalogHref: liveProduct ? `/catalog${liveProduct.path}` : `/catalog/?q=${sourceId}`,
   };
 }
 

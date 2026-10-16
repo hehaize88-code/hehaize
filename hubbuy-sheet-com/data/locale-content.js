@@ -6,8 +6,8 @@ export const localePages = {
     path: "/pt-br/",
     short: "PT",
     ogLocale: "pt_BR",
-    title: "Planilha Hubbuy 2026 | Produtos, QC e guia de compras",
-    description: "Explore uma planilha Hubbuy independente com produtos organizados, busca ao vivo, verificações de QC e orientação prática de envio para 2026.",
+    title: "Planilha Hubbuy 2026 | Achados, fotos e busca de produtos",
+    description: "Explore a planilha Hubbuy: encontre tênis e roupas por nome, ID ou imagem, compare fotos de produtos e abra o item exato no Hubbuy.",
   },
   de: {
     code: "de",
@@ -16,8 +16,8 @@ export const localePages = {
     path: "/de/",
     short: "DE",
     ogLocale: "de_DE",
-    title: "Hubbuy Tabelle 2026 | Produkte, QC und Einkaufsleitfaden",
-    description: "Entdecke eine unabhängige Hubbuy-Tabelle mit geordneten Produkten, Live-Suche, QC-Prüfungen und praktischer Versandplanung für 2026.",
+    title: "Hubbuy Spreadsheet 2026 | Funde, Fotos & Produktsuche",
+    description: "Entdecke das Hubbuy Spreadsheet: Suche Schuhe und Kleidung nach Name, ID oder Bild, vergleiche Produktfotos und öffne den genauen Artikel bei Hubbuy.",
   },
 };
 

@@ -4,6 +4,7 @@ import { articles } from "../data/articles.js";
 import { categoryPages } from "../data/categories.js";
 import { getLocalizedPath, translations } from "../data/i18n.js";
 import { localePages } from "../data/locale-content.js";
+import { buildCommerce } from "./build-commerce.mjs";
 import { products } from "../data/site.js";
 
 const outputRoot = resolve(process.argv[2] || "out");
@@ -191,9 +192,9 @@ function updateLanguageMenu(html, route, locale) {
 }
 
 function localizeAnchors(html, locale) {
-  return html.replace(/<a\b[^>]*>/gi, (tag) => {
+  return html.replace(/<(?:a|form)\b[^>]*>/gi, (tag) => {
     if (tag.includes("data-locale-code=")) return tag;
-    return tag.replace(/href="([^"]+)"/, (match, href) => `href="${localizeInternalPath(href, locale)}"`);
+    return tag.replace(/(href|action)="([^"]+)"/, (match, attribute, href) => `${attribute}="${localizeInternalPath(href, locale)}"`);
   });
 }
 
@@ -376,3 +377,5 @@ for (const name of ["sitemap.xml", "sitemap-en.xml", "sitemap-pt-br.xml", "sitem
 }
 writeFileSync(robotsPath, `${robots}\n`);
 copyFileSync(resolve("_worker.js"), resolve(outputRoot, "_worker.js"));
+
+await buildCommerce(outputRoot);

@@ -1,6 +1,7 @@
 import Script from "next/script";
 import "./globals.css";
 import "../public/mobile-inner.css";
+import "../public/assets/commerce-home.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LanguageRuntime from "@/components/LanguageRuntime";
@@ -9,18 +10,19 @@ import { SITE_URL } from "@/data/site";
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Hubbuy Spreadsheet 2026 | Curated Finds & Shopping Guides",
+    default: "Hubbuy Spreadsheet 2026 | Finds, Product Photos & Search",
     template: "%s | Hubbuy Sheet",
   },
-  description: "Browse an independent Hubbuy spreadsheet with organized China shopping finds, live product search, QC checks and practical shipping guidance for 2026.",
-  keywords: ["Hubbuy spreadsheet", "HubbuyCN spreadsheet", "Hubbuy sheet 2026", "Hubbuy finds", "QC photos", "China shopping agent guide"],
+  description: "Explore the Hubbuy spreadsheet: search shoes and clothing by name, product ID or image, compare product photos, and open the exact item on Hubbuy.",
+  keywords: ["Hubbuy spreadsheet", "Hubbuy finds", "Hubbuy shoes spreadsheet", "Hubbuy clothing spreadsheet", "Hubbuy QC photos", "how to buy on Hubbuy"],
+  icons: { icon: [{ url: "/brand/hubbuy-favicon.ico", sizes: "64x64", type: "image/x-icon" }], shortcut: "/brand/hubbuy-favicon.ico" },
   applicationName: "Hubbuy Sheet",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: SITE_URL,
     siteName: "Hubbuy Sheet",
-    title: "Hubbuy Spreadsheet 2026 | Curated Finds & Shopping Guides",
+    title: "Hubbuy Spreadsheet 2026 | Finds, Product Photos & Search",
     description: "A searchable, independent Hubbuy spreadsheet guide with organized finds, QC checks and practical buying steps.",
     images: [{ url: "/brand/og-card.png", width: 1200, height: 630, alt: "Hubbuy Sheet 2026" }],
   },

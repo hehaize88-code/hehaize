@@ -81,13 +81,14 @@ function translateElementAttributes(element, locale) {
 }
 
 function localizeInternalLink(element, locale) {
-  if (element?.tagName !== "A" || element.hasAttribute("data-locale-code")) return;
-  const href = element.getAttribute("href") || "";
+  if (!["A", "FORM"].includes(element?.tagName) || element.hasAttribute("data-locale-code")) return;
+  const attribute = element.tagName === "FORM" ? "action" : "href";
+  const href = element.getAttribute(attribute) || "";
   if (!href.startsWith("/") || href.startsWith("//") || staticAssetPattern.test(href.split(/[?#]/)[0])) return;
 
   const url = new URL(href, window.location.origin);
   const localized = `${getLocalizedPath(url.pathname, locale)}${url.search}${url.hash}`;
-  if (href !== localized) element.setAttribute("href", localized);
+  if (href !== localized) element.setAttribute(attribute, localized);
 }
 
 function translateTree(root, locale) {

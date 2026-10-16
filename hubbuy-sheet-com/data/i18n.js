@@ -1,3 +1,4 @@
+import { commerceTranslations } from "./commerce-translations.js";
 import { octoberTranslations } from "./october-translations.js";
 import { supplementalTranslations } from "./locale-content.js";
 import { generatedTranslations } from "./generated-translations.js";
@@ -16,7 +17,7 @@ export function getBaseLanguagePath(pathname = "/") {
   const cleanPath = pathname.split("?")[0].split("#")[0] || "/";
   const segments = cleanPath.split("/").filter(Boolean);
   if (segments[0] === "pt-br" || segments[0] === "de") segments.shift();
-  return segments.length ? `/${segments.join("/")}/` : "/";
+  return segments.length ? `/${segments.join("/")}${/\.html$/i.test(segments.at(-1)) ? "" : "/"}` : "/";
 }
 
 export function getLocalizedPath(pathname, locale = "en") {
@@ -521,6 +522,8 @@ for (const [locale, additions] of Object.entries(researchTranslations)) {
 for (const [locale, additions] of Object.entries(octoberTranslations)) {
   Object.assign(translations[locale], additions);
 }
+
+for (const [locale, additions] of Object.entries(commerceTranslations)) Object.assign(translations[locale], additions);
 
 export function getLanguage(code) {
   return languages.find((language) => language.code === code) || languages[0];

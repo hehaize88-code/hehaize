@@ -22,7 +22,7 @@ export default function AboutPage() {
       name: "Hubbuy Sheet Editorial",
       alternateName: "Hubbuy Sheet",
       url: `${SITE_URL}/about/`,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/hubbuy.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/hubbuy-official.svg` },
       description: "The independent publishing identity responsible for Hubbuy Sheet research, product-link checks and corrections. It is not Hubbuy and is not affiliated with Hubbuy.",
     },
   };
@@ -53,8 +53,8 @@ export default function AboutPage() {
 
       <section className="section relationship-section" id="cnbuy-relationship">
         <div className="wrap relationship-panel">
-          <div><span className="eyebrow eyebrow-light">Commercial relationship</span><h2>CNBuy Sheet is the catalog destination used by this website.</h2></div>
-          <div><p>Product cards, search forms, category-page catalog buttons and “Live catalog” links on Hubbuy Sheet lead to an external destination catalog. Category hub pages themselves are editorial pages on this website. This website has a commercial interest in that destination and should not be read as a neutral comparison of every shopping service.</p><p>This relationship is separate from Hubbuy. Hubbuy Sheet is not affiliated with Hubbuy and does not speak for it. Hubbuy’s official pages remain the source for current Hubbuy service claims; the linked product or transaction page remains the source for current catalog information.</p><Link href="/contact">Questions or corrections <ArrowIcon /></Link></div>
+          <div><span className="eyebrow eyebrow-light">Commercial relationship</span><h2>CNBuy Sheet supplies the product catalog.</h2></div>
+          <div><p>Product data, search results, prices and photos on this website come from CNBuy Sheet. This website has a commercial interest in that source catalog. Registration and purchase buttons open the official Hubbuy website.</p><p>This relationship is separate from Hubbuy. Hubbuy Sheet is not affiliated with Hubbuy and does not speak for it. Hubbuy’s official pages remain the source for current Hubbuy service claims; the linked product or transaction page remains the source for current catalog information.</p><Link href="/contact">Questions or corrections <ArrowIcon /></Link></div>
         </div>
       </section>
     </>
