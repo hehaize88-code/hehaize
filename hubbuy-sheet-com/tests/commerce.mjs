@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { parseList, parseDetail, buyUrl, catalogueRoute, normalizeQuery, LANGS, CATEGORIES, localPath } from '../commerce/catalog.mjs';
+import { parseList, parseDetail, imageUrl, buyUrl, catalogueRoute, normalizeQuery, LANGS, CATEGORIES, localPath } from '../commerce/catalog.mjs';
 import { getLocalizedPath } from '../data/i18n.js';
 import { configureChrome } from '../commerce/chrome.mjs';
 import { products } from '../data/site.js';
@@ -81,7 +81,7 @@ for (const product of products) {
 }
 const index = JSON.parse(readFileSync('out/assets/catalog-image-index.json'));
 assert.equal(index.source, 'https://cnbuycha.com'); assert.equal(index.products.length, index.indexedCount);
-assert.equal(index.catalogCount, 3446); assert.equal(index.indexedCount, 3445);
+assert.equal(index.catalogCount, 3446); assert.equal(index.indexedCount, 3446);
 assert.ok(index.products.every(product => /^\/[a-z-]+\/\d+\.html$/.test(product.path) && product.hash.length === 64 && product.cells.length === 48));
 const sitemap = readFileSync('out/sitemap-catalog.xml', 'utf8');
 assert.equal([...sitemap.matchAll(/<loc>/g)].length, 3 * (index.catalogCount + CATEGORIES.length));
@@ -89,3 +89,18 @@ assert.ok(sitemap.includes('https://hubbuy-sheet.com/catalog/accessories/3438.ht
 assert.ok(readFileSync('out/robots.txt', 'utf8').includes('sitemap-catalog.xml'));
 assert.ok(readFileSync('out/brand/hubbuy-favicon.ico').equals(Buffer.from(readFileSync('commerce/favicon.base64', 'utf8').trim(), 'base64')));
 console.log(`PASS: commerce routes across 12 categories and 3 locales; live-source fixtures, exact purchase URL, all categories/locales, errors, 192 legacy redirects, image index, sitemap and official favicon.`);
+
+const repaired='https://cnbuycha.com/media/products/3460/59921312-605e-42f7-a647-f3d8a9713fb2.jpg?v=2';
+const missing=readFileSync('tests/fixtures/missing-image.html','utf8');
+const repairedDetail=parseDetail(missing);
+assert.equal(repairedDetail.images.length,4);
+assert.equal(repairedDetail.images[0],repaired);
+assert.equal(repairedDetail.sourceId,'7876894732');
+assert.equal(imageUrl('https://cnbuycha.com/media/products/3460/8f135fa3-3ea9-458d-b81d-b9cc5e44957e.jpg?v=2'),repaired);
+assert.ok(index.products.some(product=>product.path==='/shoes/3460.html'&&product.image===repaired.replace('https://cnbuycha.com','')));
+globalThis.fetch=async url=>{assert.equal(url,'https://cnbuycha.com/shoes/3460.html');return new Response(missing);};
+const photos=await catalogueRoute(new Request('https://hubbuy-sheet.com/api/catalog-photos?path=/shoes/3460.html'));
+assert.equal(photos.status,200);assert.deepEqual((await photos.json()).images,repairedDetail.images);
+for(const invalid of ['https://example.com/image','/shoes/3460.html?redirect=x','/../secrets','/invalid/3460.html'])assert.equal((await catalogueRoute(new Request('https://hubbuy-sheet.com/api/catalog-photos?path='+encodeURIComponent(invalid)))).status,400);
+assert.equal((await catalogueRoute(new Request('https://hubbuy-sheet.com/api/catalog-photos?path=/shoes/3460.html',{method:'POST'}))).status,405);
+console.log('PASS image repair: same-product replacement, four unique gallery photos, complete search index, and constrained recovery endpoint.');
