@@ -2,7 +2,7 @@ import SearchBox from "@/components/SearchBox";
 import LiveProducts from "@/components/LiveProducts";
 import { ArrowIcon } from "@/components/Icons";
 import { REGISTER_URL, SITE_URL } from "@/data/site";
-import { articles } from "@/data/articles";
+import { articles, getArticle } from "@/data/articles";
 import { getLocalizedPath } from "@/data/i18n";
 import { homeCopy } from "@/commerce/home-copy.mjs";
 import snapshot from "@/commerce/home-products.json";
@@ -14,7 +14,7 @@ export const metadata = {
 export default function HomePage({ locale = "en" } = {}) {
   const t = homeCopy[locale] || homeCopy.en;
   const path = value => getLocalizedPath(value, locale);
-  const homeArticles = articles.filter(article => !article.locales || article.locales.includes(locale)).slice(0, 4);
+  const homeArticles = articles.filter(article => !article.locales || article.locales.includes(locale)).slice(0, 4).map(article => getArticle(article.slug, locale));
   const website = { "@context": "https://schema.org", "@type": "WebSite", name: t.title, url: SITE_URL + path('/'), description: t.intro, inLanguage: locale === 'pt-br' ? 'pt-BR' : locale };
   const faq = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: t.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) };
   return <div className="commerce-home" data-locale={locale}>

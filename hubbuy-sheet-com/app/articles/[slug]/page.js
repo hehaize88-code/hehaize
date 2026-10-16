@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PortugueseRelatedArticles, PortugueseShippingUpdate } from "@/components/PortugueseOctoberArticles";
+import GrowthArticleBody from "@/components/GrowthArticleBody";
+import GrowthArticleUpdate from "@/components/GrowthArticleUpdate";
 import AdditionalArticleBody from "@/components/AdditionalArticleBodies";
 import ArticleResearchEnhancements from "@/components/ArticleResearchEnhancements";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
@@ -47,7 +49,7 @@ export async function generateMetadata({ params }) {
 
 export default async function ArticlePage({ params, locale = "en" }) {
   const { slug } = await params;
-  const article = getArticle(slug);
+  const article = getArticle(slug, locale);
   if (!article) notFound();
 
   const articleScopeClass = article.slug === "hubbuy-seller-reliability-dispatch-qc-return-signals"
@@ -103,14 +105,15 @@ export default async function ArticlePage({ params, locale = "en" }) {
             <nav className="breadcrumbs" aria-label="Breadcrumb">
               <Link href={localPath("/")}>Home</Link><span>/</span><Link href={localPath("/articles/")}>Articles</Link><span>/</span><span>Research article</span>
             </nav>
-            <div className="article-card-meta"><span>{article.category}</span><span>{article.languageLabel || "English article"}</span></div>
+            <div className="article-card-meta"><span>{article.category}</span><span>{article.languageLabel || (locale === "pt-br" ? "Artigo em português" : locale === "de" ? "Artikel auf Deutsch" : "English article")}</span></div>
             <h1>{article.title}</h1>
             <p>{article.excerpt}</p>
             <div className="article-byline">
-              <Link href="/about/">Hubbuy Sheet Editorial</Link>
+              <Link href={localPath("/about/")}>Hubbuy Sheet Editorial</Link>
               <span>{locale === "pt-br" ? "Publicado em" : locale === "de" ? "Veröffentlicht am" : "Published"} {article.displayDate}</span>
               <span>{locale === "pt-br" ? "Última verificação em" : locale === "de" ? "Zuletzt geprüft am" : "Last fact-checked"} {article.factCheckedDisplayDate}</span>
               <span>{article.readTime}</span>
+              {article.updated === "2026-10-16" && <span>{locale === "pt-br" ? "Atualizado em 16 de outubro de 2026" : locale === "de" ? "Aktualisiert am 16. Oktober 2026" : "Updated 16 October 2026"}</span>}
             </div>
           </div>
           <img
@@ -133,7 +136,8 @@ export default async function ArticlePage({ params, locale = "en" }) {
           </aside>
 
           <article className="seo-article-body">
-            {article.slug === "how-to-use-a-hubbuy-spreadsheet" ? <>
+            <GrowthArticleUpdate slug={article.slug} locale={locale} />
+            {article.growthContent ? <GrowthArticleBody article={article} locale={locale} /> : article.slug === "how-to-use-a-hubbuy-spreadsheet" ? <>
             <p className="article-deck">A Hubbuy spreadsheet is useful when it gets you to the right product link faster. It becomes risky when the shortcut is mistaken for the source of truth. The practical approach is to treat the spreadsheet as discovery, the live seller page as evidence and Hubbuy as the purchasing, warehouse and parcel layer between China and your address.</p>
 
             <div className="article-disclosure">
@@ -256,7 +260,7 @@ export default async function ArticlePage({ params, locale = "en" }) {
 
             </> : <AdditionalArticleBody article={article} />}
             {!article.hideResearchEvidence && <ArticleResearchEnhancements article={article} />}
-            {locale === "pt-br" && <PortugueseShippingUpdate slug={article.slug} />}
+            {locale === "pt-br" && !article.growthContent && <PortugueseShippingUpdate slug={article.slug} />}
           </article>
         </div>
       </section>

@@ -1,3 +1,5 @@
+import { growthArticles, countEnglishWords } from "./growth-articles.js";
+import { growthUpdates } from "./growth-updates.js";
 import { octoberUpdates } from "./october-updates.js";
 import { portugueseOctoberArticles } from "./portuguese-october.js";
 
@@ -965,6 +967,21 @@ export const articles = [
 
 for (const article of articles) Object.assign(article, octoberUpdates[article.slug] || {});
 
-export function getArticle(slug) {
-  return articles.find((article) => article.slug === slug);
+for (const growth of growthArticles) {
+  const index = articles.findIndex(article => article.slug === growth.slug);
+  if (index >= 0) articles.splice(index, 1);
+}
+articles.unshift(...growthArticles);
+for (const article of articles) {
+  const update = growthUpdates[article.slug];
+  if (!update) continue;
+  article.updated = "2026-10-16";
+  article.wordCount += countEnglishWords(update.en.slice(0, 3).join(" "));
+  article.toc = [["practical-answer", update.en[0]], ...article.toc];
+}
+export function getArticle(slug, locale = "en") {
+  const article = articles.find(article => article.slug === slug);
+  if (article?.variants?.[locale]) return { ...article, ...article.variants[locale] };
+  const update = article && growthUpdates[article.slug]?.[locale];
+  return update ? { ...article, toc: article.toc.map(([id, label]) => [id, id === "practical-answer" ? update[0] : label]) } : article;
 }

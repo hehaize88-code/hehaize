@@ -40,21 +40,6 @@ export default function RootLayout({ children }) {
   <html lang="en">
 <body>
 
-<Script
-  id="google-analytics-loader"
-  src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"
-  strategy="afterInteractive"
-/>
-
-<Script id="google-analytics" strategy="afterInteractive">
-{`
-window.dataLayer = window.dataLayer || [];
-function gtag(){window.dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-QY8MM7VZV2');
-`}
-</Script>
-
 <Script src="/mobile-reading.js?v=20261016-compact-v2" strategy="afterInteractive" />
 
 <LanguageRuntime>

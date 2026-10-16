@@ -1198,3 +1198,6 @@ p { color: var(--muted); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+.article-next-links { display: flex; flex-wrap: wrap; gap: .65rem; padding: 1rem 0; }
+.article-next-links a { display: inline-flex; align-items: center; padding: .7rem 1rem; border: 1px solid currentColor; border-radius: .6rem; font-weight: 650; }
