@@ -4,6 +4,17 @@ import { growthArticles } from '../data/growth-articles.js';
 import { growthUpdates } from '../data/growth-updates.js';
 import { getArticle } from '../data/articles.js';
 const sitemap = readFileSync('out/sitemap.xml', 'utf8');
+const redirects = readFileSync('public/_redirects', 'utf8');
+assert.equal(readFileSync('_redirects', 'utf8'), redirects);
+assert.equal(readFileSync('out/_redirects', 'utf8'), redirects, 'published redirects match source');
+const redirectPatterns = redirects.split('\n').filter(line => line && !line.startsWith('#')).map(line => {
+ const source = line.trim().split(/\s+/)[0];
+ return new RegExp('^' + source.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replaceAll('*', '.*') + '$');
+});
+for (const [, url] of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+ const path = new URL(url).pathname;
+ assert.ok(!redirectPatterns.some(pattern => pattern.test(path)), `Indexed page must not redirect: ${path}`);
+}
 const decode = s => s.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"');
 let pages = 0;
 for (const slug of [...growthArticles.map(a => a.slug), ...Object.keys(growthUpdates)]) {
