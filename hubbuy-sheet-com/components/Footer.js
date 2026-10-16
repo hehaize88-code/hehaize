@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MAIN_SITE } from "@/data/site";
+import { REGISTER_URL } from "@/data/site";
 
 export default function Footer() {
   return (
@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="wrap footer-grid">
         <div className="footer-intro">
           <Link href="/" className="brand brand-invert">
-            <img className="brand-logo" src="/brand/hubbuy.png" alt="Hubbuy" width="963" height="133" loading="lazy" fetchPriority="low" decoding="async" />
+            <img className="brand-logo" src="/brand/hubbuy-official.svg" alt="Hubbuy" width="700" height="133" loading="lazy" fetchPriority="low" decoding="async" />
           </Link>
-          <p>A compact, independent guide for comparing China shopping finds before opening the live catalog.</p>
+          <p>Hubbuy spreadsheet finds, product photos and practical buying guides.</p>
         </div>
         <div className="footer-col">
           <strong>Explore</strong>
-          <Link href="/products">Products</Link>
+          <a href="/catalog/">Products</a>
           <Link href="/guides/how-to-buy">How to buy</Link>
           <Link href="/guides/qc-checks">QC guide</Link>
           <Link href="/guides/shipping">Shipping guide</Link>
@@ -33,12 +33,12 @@ export default function Footer() {
           <Link href="/categories/shoes/">Shoes</Link>
           <Link href="/categories/hoodies/">Hoodies</Link>
           <Link href="/categories/electronics/">Electronics</Link>
-          <a href={`${MAIN_SITE}/AllProducts/`} target="_blank" rel="sponsored noopener">Live catalog ↗</a>
+          <a href={REGISTER_URL} target="_blank" rel="noopener noreferrer">Register on Hubbuy ↗</a>
         </div>
       </div>
       <div className="wrap footer-bottom">
         <p>© 2026 Hubbuy Sheet. Independent editorial discovery guide.</p>
-        <p>Independent from Hubbuy and not an official Hubbuy website. Product, category, search and live-catalog links lead to a destination catalog in which this website has a commercial interest. Transactions occur on the destination site; verify live details before ordering.</p>
+        <p>Independent from Hubbuy. Product data and photos come from CNBuy Sheet; registration and purchase links open the official Hubbuy website. Confirm the item, variant and total cost there.</p>
       </div>
     </footer>
   );

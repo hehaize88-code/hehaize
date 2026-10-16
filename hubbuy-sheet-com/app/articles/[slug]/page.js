@@ -71,7 +71,7 @@ export default async function ArticlePage({ params, locale = "en" }) {
     publisher: {
       "@type": "Organization",
       name: "Hubbuy Sheet",
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/hubbuy.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/hubbuy-official.svg` },
     },
     image: {
       "@type": "ImageObject",

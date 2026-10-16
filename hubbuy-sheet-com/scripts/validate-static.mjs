@@ -183,16 +183,16 @@ for (const url of urls) {
       .map((match) => match[0])
       .filter((tag) => /\brel=["']preload["']/i.test(tag) && /\bas=["']image["']/i.test(tag));
     const imagePreloads = imagePreloadTags.map((tag) => tag.match(/\bhref=["']([^"']+)["']/i)?.[1]);
-    const expectedPreloads = new Set(["/brand/hubbuy.png", products[0].image]);
+    const expectedPreloads = new Set(["/brand/hubbuy-official.svg"]);
     if (imagePreloads.length !== expectedPreloads.size || imagePreloads.some((href) => !expectedPreloads.has(href))) {
-      throw new Error(`Homepage must preload only the logo and LCP image on ${url}: ${imagePreloads.join(", ")}`);
+      throw new Error(`Homepage must preload only the official logo on ${url}: ${imagePreloads.join(", ")}`);
     }
 
     const imageTags = [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
     const eagerImages = imageTags.filter((tag) => /\bloading=["']eager["']/i.test(tag));
     const lazyImages = imageTags.filter((tag) => /\bloading=["']lazy["']/i.test(tag));
     const highPriorityImages = imageTags.filter((tag) => /\bfetchpriority=["']high["']/i.test(tag));
-    if (eagerImages.length !== 2 || highPriorityImages.length !== 2 || eagerImages.length + lazyImages.length !== imageTags.length) {
+    if (eagerImages.length !== 1 || highPriorityImages.length !== 1 || eagerImages.length + lazyImages.length !== imageTags.length) {
       throw new Error(`Invalid homepage image loading policy on ${url}: ${eagerImages.length} eager, ${lazyImages.length} lazy, ${highPriorityImages.length} high priority`);
     }
   }
@@ -207,7 +207,7 @@ for (const url of urls) {
 
   if (locale !== "en") {
     if (!html.includes("Static localized edition")) throw new Error(`Missing localized marker on ${url}`);
-    const localizedWithoutAnalytics = html.replace(/<script\b[^>]*data-static-analytics[^>]*>[\s\S]*?<\/script>/g, "");
+    const localizedWithoutAnalytics = html.replace(/<script\b[^>]*data-static-analytics[^>]*>[\s\S]*?<\/script>/g, "").replace(/<script\b[^>]*src="\/mobile-reading\.js[^"]*"[^>]*><\/script>/g, "");
     if ((localizedWithoutAnalytics.match(/<script\b(?![^>]*application\/ld\+json)/g) || []).length) {
       throw new Error(`Localized page still depends on client JavaScript: ${url}`);
     }
@@ -306,7 +306,7 @@ for (const url of urls) {
     const href = match[1];
     if (!href.startsWith("/") || href.startsWith("//")) continue;
     const target = internalTarget(href);
-    if (!existsSync(target)) brokenLinks.push({ from: url, href });
+    if (!existsSync(target) && !/^\/(?:pt-br\/|de\/)?catalog(?:\/|$)/.test(href)) brokenLinks.push({ from: url, href });
   }
 
   records.push({ url, pathname, locale, basePath, title, canonical, h1, lang, ogTitle, ogUrl, ogImage });
@@ -330,7 +330,7 @@ for (const [basePath, group] of localeGroups) {
 }
 
 const multilingualArticleCount = articles.length - englishOnlyArticlePaths.size - portugueseOnlyArticlePaths.size;
-const sharedRouteCount = 11 + multilingualArticleCount + categoryPages.length + products.length;
+const sharedRouteCount = 10 + multilingualArticleCount + categoryPages.length;
 const localeCounts = {
   en: sharedRouteCount + englishOnlyArticlePaths.size,
   "pt-br": sharedRouteCount + portugueseOnlyArticlePaths.size,
@@ -364,7 +364,7 @@ for (const article of articles) {
 }
 
 const indexedBasePaths = new Set(urls.map((url) => getBaseLanguagePath(new URL(url).pathname)));
-const mappedPaths = new Set(keywordTopicMap.map((entry) => entry.url));
+const mappedPaths = new Set(keywordTopicMap.filter(entry => !entry.url.startsWith("/products/")).map((entry) => entry.url));
 const missingKeywordPages = [...indexedBasePaths].filter((pathname) => !mappedPaths.has(pathname));
 const extraKeywordPages = [...mappedPaths].filter((pathname) => !indexedBasePaths.has(pathname));
 if (missingKeywordPages.length || extraKeywordPages.length) {

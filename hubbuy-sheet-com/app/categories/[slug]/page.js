@@ -35,7 +35,7 @@ export default async function CategoryPage({ params }) {
   const categoryProducts = products.filter((product) => product.category === category.name);
   const pagePath = `/categories/${category.slug}/`;
   const pageUrl = `${SITE_URL}${pagePath}`;
-  const searchUrl = `${MAIN_SITE}/AllProducts/?q=${encodeURIComponent(category.searchTerm)}`;
+  const searchUrl = `/catalog/?q=${encodeURIComponent(category.searchTerm)}`;
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -84,8 +84,8 @@ export default async function CategoryPage({ params }) {
       <section className="section category-products-section">
         <div className="wrap">
           <div className="product-page-header">
-            <div><span className="eyebrow">Current category shortlist</span><h2>{category.name}</h2><p>Every product card opens a local research page before the exact live catalog destination.</p></div>
-            <a href={searchUrl} target="_blank" rel="noopener">Search this category in the live catalog ↗</a>
+            <div><span className="eyebrow">Current category shortlist</span><h2>{category.name}</h2><p>Open a product to see current catalog details, photos and its exact Hubbuy purchase link.</p></div>
+            <a href={searchUrl}>Search this category in the live catalog ↗</a>
           </div>
           <div className="product-grid category-product-grid">
             {categoryProducts.map((product, index) => <ProductCard key={product.id} product={product} priority={index < 4} />)}
