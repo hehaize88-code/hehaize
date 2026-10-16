@@ -26,8 +26,13 @@ export const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c=>({
 const decode = s => String(s||'').replace(/&#(x[\da-f]+|\d+);/gi,(_,x)=>String.fromCodePoint(x[0].toLowerCase()==='x'?parseInt(x.slice(1),16):Number(x))).replace(/&(amp|quot|apos|lt|gt);/g,(_,x)=>({amp:'&',quot:'"',apos:"'",lt:'<',gt:'>'}[x]));
 const textOnly = s => decode(String(s||'').replace(/<[^>]*>/g,''));
 const first = (s,re) => decode(s.match(re)?.[1]||'');
+// Verified source-gallery replacement for an upstream file that returns 404.
+// The replacement is another photo of the same source product, not a placeholder.
+const IMAGE_REPAIRS = {
+ '/media/products/3460/8f135fa3-3ea9-458d-b81d-b9cc5e44957e.jpg': '/media/products/3460/59921312-605e-42f7-a647-f3d8a9713fb2.jpg?v=2'
+};
 export function imageUrl(raw) {
- try { const u=new URL(decode(raw),DATA_ORIGIN); return u.protocol==='https:'?u.href:''; } catch {return '';}
+ try { const u=new URL(decode(raw),DATA_ORIGIN); if(['cnbuycha.com','www.cnbuycha.com'].includes(u.hostname)&&IMAGE_REPAIRS[u.pathname])return DATA_ORIGIN+IMAGE_REPAIRS[u.pathname]; return u.protocol==='https:'?u.href:''; } catch {return '';}
 }
 export function parseList(html) {
  const products=[];
@@ -60,8 +65,8 @@ const labels=lang=>COPY[lang]||COPY.en;
 function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://hubbuy-sheet.com'+prefix(lang)+path;
  const crumbs={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Hubbuy Spreadsheet',item:'https://hubbuy-sheet.com'+prefix(lang)+'/'},{'@type':'ListItem',position:2,name:title,item:canonical}]};
- const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | Hubbuy Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://hubbuy-sheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://hubbuy-sheet.com${path}"><link rel="icon" href="/brand/hubbuy-favicon.ico" sizes="64x64">${styles()}<link rel="stylesheet" href="/assets/catalog.css?v=20261016"><script src="/assets/catalog.js?v=20261016" defer></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main id="main-content" class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
- return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-hubbuy-release':'20261016-hubbuy-catalog-v1'}});
+ const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | Hubbuy Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://hubbuy-sheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://hubbuy-sheet.com${path}"><link rel="icon" href="/brand/hubbuy-favicon.ico" sizes="64x64">${styles()}<link rel="stylesheet" href="/assets/catalog.css?v=20261016"><script src="/assets/catalog.js?v=20261016-images-v1" defer></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main id="main-content" class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
+ return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-hubbuy-release':'20261016-hubbuy-catalog-v2'}});
 }
 export function card(p,lang) {
  return `<article class="catalog-card"><a href="${localPath(p.path,lang)}"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" width="400" height="400" loading="lazy"><h2>${escapeHtml(p.title)}</h2><div class="card-meta"><strong>${money(p.price)}</strong><span>USD · ↗</span></div></a></article>`;
@@ -79,6 +84,15 @@ export async function upstream(path,params) {
 }
 export async function catalogueRoute(request,env) {
  const url=new URL(request.url),match=url.pathname.match(/^\/(?:(en|pt-br|de)\/)?catalog(?:\/(.*))?$/);
+ if(url.pathname==='/api/catalog-photos') {
+  if(request.method!=='GET')return new Response(null,{status:405});
+  const path=url.searchParams.get('path')||'',parts=path.match(/^\/([a-z0-9-]+)\/\d+\.html$/);
+  if(!parts||!CATEGORIES.includes(parts[1]))return Response.json({error:'Invalid product path'},{status:400});
+  try { const product=parseDetail(await upstream(path));
+   if(!product.title)return Response.json({error:'Product unavailable'},{status:404});
+   return Response.json({images:product.images},{headers:{'cache-control':'public, max-age=300'}});
+  } catch { return Response.json({error:'Photos unavailable'},{status:502}); }
+ }
  if(url.pathname==='/api/catalog') {
   if(request.method!=='GET')return new Response(null,{status:405});
   try{const q=new URLSearchParams();for(const k of ['q','sort','page'])if(url.searchParams.has(k))q.set(k,k==='q'?normalizeQuery(url.searchParams.get(k)):url.searchParams.get(k).slice(0,100));

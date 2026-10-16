@@ -23,7 +23,7 @@ function withGoogleAnalytics(response, request) {
   const csp = headers.get("content-security-policy");
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE + MOBILE_READING_SCRIPT + '<script defer src="/assets/catalog.js?v=20261016"></script>', { html: true }); } }).transform(htmlResponse);
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE + MOBILE_READING_SCRIPT + '<script defer src="/assets/catalog.js?v=20261016-images-v1"></script>', { html: true }); } }).transform(htmlResponse);
 }
 
 
