@@ -1,11 +1,11 @@
 import { catalogueRoute } from './commerce/catalog.mjs';
 const LEGACY_PRODUCTS = /*LEGACY_PRODUCTS*/ {};
-const GA4_SNIPPET = "<script async src=\"/ga4-tag.js\"></script><script src=\"/ga4-init.js\"></script>";
+const GA4_SNIPPET = '<script src="/analytics.js?v=20261016-growth-v1"></script><script async src="/ga4-tag.js"></script>';
 const MOBILE_READING_SCRIPT = '<script defer src="/mobile-reading.js?v=20261016-compact-v2"></script>';
 const MOBILE_INNER_STYLE = '<link rel="stylesheet" href="/mobile-inner.css?v=20261016-compact-v2">';
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
-  if (url.pathname === "/ga4-init.js") return new Response("window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-QY8MM7VZV2');", { headers: { "content-type": "application/javascript; charset=utf-8", "cache-control": "public, max-age=3600" } });
+  if (url.pathname === "/ga4-init.js") return new Response("if(!window.__hubbuyMeasurement){var s=document.createElement('script');s.src='/analytics.js?v=20261016-growth-v1';document.head.appendChild(s);}", { headers: { "content-type": "application/javascript; charset=utf-8", "cache-control": "public, max-age=3600" } });
   if (url.pathname === "/ga4-tag.js") {
     const upstream = await fetch("https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2");
     const headers = new Headers(upstream.headers);
@@ -23,7 +23,7 @@ function withGoogleAnalytics(response, request) {
   const csp = headers.get("content-security-policy");
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE + MOBILE_READING_SCRIPT + '<script defer src="/assets/catalog.js?v=20261016-images-v1"></script>', { html: true }); } }).transform(htmlResponse);
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE + MOBILE_READING_SCRIPT + '<script defer src="/assets/catalog.js?v=20261016-growth-v1"></script>', { html: true }); } }).transform(htmlResponse);
 }
 
 

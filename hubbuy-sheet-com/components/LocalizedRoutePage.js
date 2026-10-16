@@ -48,10 +48,10 @@ export function getLocalizedStaticParams(locale) {
   });
 }
 
-function sourceMetadata(route) {
+function sourceMetadata(route, locale) {
   if (staticPages[route]) return staticPages[route].metadata;
   if (route.startsWith("articles/")) {
-    const article = getArticle(route.slice("articles/".length));
+    const article = getArticle(route.slice("articles/".length), locale);
     if (!article) return null;
     return {
       title: { absolute: article.seoTitle },
@@ -84,10 +84,10 @@ export async function getLocalizedMetadata(params, locale) {
   const { segments = [] } = await params;
   const route = segments.join("/");
   if (route.startsWith("articles/")) {
-    const localizedArticle = getArticle(route.slice("articles/".length));
+    const localizedArticle = getArticle(route.slice("articles/".length), locale);
     if (localizedArticle?.locales && !localizedArticle.locales.includes(locale)) return {};
   }
-  const source = await sourceMetadata(route);
+  const source = await sourceMetadata(route, locale);
   if (!source) return {};
 
   const englishPath = `/${route}/`;

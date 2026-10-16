@@ -21,7 +21,7 @@ export default function PortugueseOctoberArticle({ article }) {
     <section className="article-search">
       <h2>Continue a pesquisa do seu produto</h2>
       <p>Encontre uma referência no catálogo e confirme anúncio, variante e preço na página atual.</p>
-      <SearchBox compact />
+      <SearchBox compact locale="pt-br" />
     </section>
   </>;
 }

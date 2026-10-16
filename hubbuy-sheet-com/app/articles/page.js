@@ -2,7 +2,7 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import ArticleCover from "@/components/ArticleCover";
 import { ArrowIcon, CheckIcon } from "@/components/Icons";
-import { articles } from "@/data/articles";
+import { articles, getArticle } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
 import { createPageMetadata } from "@/data/seo";
 import { getLocalizedPath } from "@/data/i18n";
@@ -15,7 +15,7 @@ export const metadata = createPageMetadata({
 });
 
 export default function ArticlesPage({ locale = "en" }) {
-  const visibleArticles = articles.filter((article) => !article.locales || article.locales.includes(locale));
+  const visibleArticles = articles.filter((article) => !article.locales || article.locales.includes(locale)).map(article => getArticle(article.slug, locale));
   const [featuredArticle, ...moreArticles] = visibleArticles;
   const localPath = (path) => getLocalizedPath(path, locale);
   const collectionSchema = {

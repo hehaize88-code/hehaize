@@ -525,6 +525,17 @@ for (const [locale, additions] of Object.entries(octoberTranslations)) {
 
 for (const [locale, additions] of Object.entries(commerceTranslations)) Object.assign(translations[locale], additions);
 
+Object.assign(translations["pt-br"], {
+  "Search products, original ID or link": "Pesquisar produto, ID original ou link",
+  "Search products": "Pesquisar produtos",
+  "Product name, ID or link": "Produto, ID original ou link",
+});
+Object.assign(translations.de, {
+  "Search products, original ID or link": "Produkt, Original-ID oder Link suchen",
+  "Search products": "Produkte suchen",
+  "Product name, ID or link": "Produkt, Original-ID oder Link",
+});
+
 export function getLanguage(code) {
   return languages.find((language) => language.code === code) || languages[0];
 }
