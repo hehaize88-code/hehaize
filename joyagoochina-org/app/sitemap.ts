@@ -118,7 +118,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       return {
         url: `${site}${localizedPath}`,
         lastModified: new Date(
-          refreshCopy[language.code] && ["/", "/articles/", "/returns/"].includes(page.path)
+          ["/", "/articles/"].includes(page.path)
+            ? "2026-10-16"
+            : refreshCopy[language.code] && page.path === "/returns/"
             ? "2026-10-02"
             : page.lastModified > siteTemplateModifiedAt
               ? page.lastModified

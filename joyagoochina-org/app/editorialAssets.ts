@@ -21,6 +21,9 @@ export const defaultEditorialImage: EditorialImage = {
 };
 
 const editorialImages: Record<string, EditorialImage> = {
+  "joyagoo-size-guide-clothing-shoes": { src: "/products/3367.webp", width: 750, height: 750 },
+  "joyagoo-product-link-not-working": defaultEditorialImage,
+  "joyagoo-shoe-qc-checklist": { src: "/products/3376.webp", width: 750, height: 750 },
   "joyagoo-shipping-calculator-cost-estimate-guide": {
     src: "/products/3377.webp",
     width: 750,

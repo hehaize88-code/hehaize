@@ -39,6 +39,7 @@ import {
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 import { newArticleSlugs, refreshCopy } from "../seoRefresh";
+import { growthArticleSlugs } from "../seoGrowth";
 import ShippingWorksheet from "./ShippingWorksheet";
 
 const localizedCategoryNames: Record<Locale, string[]> = {
@@ -224,6 +225,7 @@ function OfficialSourceLinks({
 
 const hidesEditorialSourceLinks = new Set([
   ...newArticleSlugs,
+  ...growthArticleSlugs,
   "joyagoo-shipping-calculator-cost-estimate-guide",
   "why-is-joyagoo-shipping-so-expensive",
   "joyagoo-shipping-cost-per-kg-explained",
@@ -694,9 +696,7 @@ function LocalizedGuidePage({
               <a
                 className="button"
                 href={localizePath(locale, "/catalog/")}
-                target="_blank"
-                rel="noopener"
-                data-outbound-kind="all-products"
+                data-track-event="article_catalog_click"
               >
                 {details.article.explore}
               </a>
@@ -962,7 +962,7 @@ function LocalizedSeoArticlePage({
                     return (
                       <span key={relatedSlug}>
                         {index > 0 ? " · " : ""}
-                        <a href={localizePath(locale, `/${relatedSlug}/`)}>
+                        <a href={localizePath(locale, `/${relatedSlug}/`)} data-track-event="article_related_click">
                           {label}
                         </a>
                       </span>
@@ -981,9 +981,7 @@ function LocalizedSeoArticlePage({
               <a
                 className="button"
                 href={localizePath(locale, "/catalog/")}
-                target="_blank"
-                rel="noopener"
-                data-outbound-kind="all-products"
+                data-track-event="article_catalog_click"
               >
                 {seo.ctaButton}
               </a>

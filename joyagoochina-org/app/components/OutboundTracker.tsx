@@ -23,6 +23,7 @@ const emitOutboundEvent = (
   element: HTMLElement,
   destination: string,
 ) => {
+  if (new URL(destination).origin === window.location.origin) return;
   const payload: OutboundEvent = {
     event: "outbound_click",
     destination,
@@ -68,6 +69,15 @@ export default function OutboundTracker() {
     const handleClick = (event: MouseEvent) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
+      const tracked = target.closest<HTMLAnchorElement>("a[data-track-event]");
+      if (tracked && ["article_related_click", "article_catalog_click"].includes(tracked.dataset.trackEvent || "")) {
+        window.gtag?.("event", tracked.dataset.trackEvent, {
+          source_page: window.location.pathname,
+          language: document.documentElement.lang || "en",
+          destination_path: new URL(tracked.href).pathname,
+        });
+        return;
+      }
       const link = target.closest<HTMLAnchorElement>(
         "a[data-outbound-kind]",
       );

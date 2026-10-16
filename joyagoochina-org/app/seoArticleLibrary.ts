@@ -2,6 +2,7 @@ import {
   localizedContent,
 } from "./localizedContent";
 import { applyEditorialRefresh } from "./seoRefresh";
+import { applyGrowthRefresh } from "./seoGrowth";
 import type { Locale } from "./i18n";
 import {
   seoArticleCopy,
@@ -1000,10 +1001,10 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
       }))
     : [];
 
-  return applyEditorialRefresh(
+  return applyGrowthRefresh(applyEditorialRefresh(
     [...priorityEntries, ...additionalPriorityEntries, ...extraEntries, feeEntry],
     locale,
-  );
+  ), locale);
 }
 
 export function getSeoArticleEntry(

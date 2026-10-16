@@ -17,7 +17,8 @@
     "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern assets --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
     "validate:editorial": "node scripts/validate-editorial-refresh.mjs",
-    "test:catalog": "node --test tests/catalog.test.mjs"
+    "test:catalog": "node --test tests/catalog.test.mjs",
+    "test:seo-growth": "node --test tests/seo-growth.test.mjs tests/analytics-growth.test.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
