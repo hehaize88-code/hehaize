@@ -1,3 +1,8 @@
+import {improveArticle} from "./search-improvements";
+import growthde from "./growth-articles/de.json";
+import growthes from "./growth-articles/es.json";
+import growthfr from "./growth-articles/fr.json";
+import growthit from "./growth-articles/it.json";
 import type { ArticleRecord } from "./article-data";
 import type { LocalizedLocale } from "./i18n";
 import type { Locale } from "./translations";
@@ -79,11 +84,16 @@ export function articleText(locale: Locale, key: string) {
 }
 
 
-const fullArticles: Record<LocalizedLocale, Record<string, Partial<ArticleRecord>>> = { de, es, fr, it };
+const fullArticles: Record<LocalizedLocale, Record<string, Partial<ArticleRecord>>> = {
+ de: {...de, ...Object.fromEntries(growthde.map(a => [a.slug, a]))},
+ es: {...es, ...Object.fromEntries(growthes.map(a => [a.slug, a]))},
+ fr: {...fr, ...Object.fromEntries(growthfr.map(a => [a.slug, a]))},
+ it: {...it, ...Object.fromEntries(growthit.map(a => [a.slug, a]))}
+};
 
 export function getLocalizedArticle(article: ArticleRecord, locale: Locale): ArticleRecord {
   if (locale === "en") return article;
   const copy = fullArticles[locale][article.slug];
   if (!copy) throw new Error(`Missing ${locale} translation for ${article.slug}`);
-  return { ...article, ...copy, modifiedDate: "2026-10-04" };
+  return improveArticle({ ...article, ...copy, modifiedDate: copy.modifiedDate ?? article.modifiedDate }, locale);
 }

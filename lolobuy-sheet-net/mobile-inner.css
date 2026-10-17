@@ -215,3 +215,13 @@
 }
 
 @media (max-width: 680px) { .mobile-inner .focused-guides { background: #f8f5ee; color: #231e1a; } }
+
+/* Matched editorial product examples, 17 October 2026. */
+.article-finds{margin:2rem 0;padding:1.25rem;border:1px solid #d5dfdc;border-radius:16px;background:#f7faf8;color:#172d25}
+.article-finds h2{font-size:1.45rem;margin:0 0 .7rem}.article-finds>p{font-size:.95rem}
+.article-finds-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.article-find-card{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid #d5dfdc;border-radius:10px;padding:10px;color:#173d30;text-decoration:none;min-width:0}
+.article-find-card img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:6px}.article-find-card small{overflow-wrap:anywhere}.article-find-card:hover{border-color:#14704b}.article-find-card:focus-visible{outline:3px solid #14704b;outline-offset:3px}
+@media(max-width:640px){.article-finds-grid{grid-template-columns:1fr}.article-find-card{display:grid;grid-template-columns:88px minmax(0,1fr);gap:5px 12px}.article-find-card img{grid-column:1;grid-row:1/5}.article-find-card strong,.article-find-card span,.article-find-card small{grid-column:2}.article-finds{padding:12px}.article-find-card strong{font-size:1rem}}
+
+.shipping-start{margin:1.5rem auto;padding:1.25rem;border:1px solid #c9dbd1;border-radius:14px;background:#f0f7f2;color:#173b2c}.shipping-start h2{font-size:1.5rem;margin:.4rem 0}.shipping-start ul{padding-left:1.2rem;line-height:1.6}.shipping-start nav{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:1rem}.shipping-start a{color:#135d3e;font-weight:650;text-decoration:underline;text-underline-offset:3px}@media(max-width:640px){.shipping-start{margin:1rem 16px;padding:14px}.shipping-start h2{font-size:1.25rem}.shipping-start p,.shipping-start li,.shipping-start a{font-size:.95rem}}

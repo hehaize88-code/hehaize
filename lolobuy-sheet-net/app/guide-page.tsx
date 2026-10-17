@@ -1,3 +1,4 @@
+import {ShippingStart} from "./shipping-start";
 import { compactMobileSections, MobileTopic } from "./components/mobile-topic";
 import { MobileChapter, MobileReadingTools } from "./components/mobile-reading";
 import MobileArticleList from "./components/mobile-article-list";
@@ -887,7 +888,7 @@ export function GuidePage({
 
   return localizeReactNode(
     <>
-      <SiteHeader active={active} locale={locale} />
+      <SiteHeader active={active} locale={locale} path={`/${kind}`} />
       <main className={`subpage-main mobile-inner${kind === "articles" || kind === "learn" ? " articles-page" : ""}`}>
         <section className="subpage-hero">
           <div>
@@ -903,7 +904,7 @@ export function GuidePage({
         {kind === "products" && <ProductsPage locale={locale} />}
         {kind === "categories" && <CategoriesPage locale={locale} />}
         {kind === "qc-guide" && <><ArticleRecommendations locale={locale} group="qc" heading /><QcPage locale={locale} /></>}
-        {kind === "shipping" && <><ArticleRecommendations locale={locale} group="shipping" heading /><ShippingPage locale={locale} /></>}
+        {kind === "shipping" && <><ShippingStart locale={locale}/><ArticleRecommendations locale={locale} group="shipping" heading /><ShippingPage locale={locale} /></>}
         {kind === "learn" && <LearnPage locale={locale} />}
         {kind === "articles" && <ArticlesPage locale={locale} />}
         {kind === "faq" && <FaqPage locale={locale} />}

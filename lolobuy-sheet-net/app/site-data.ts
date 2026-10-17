@@ -316,8 +316,8 @@ export const faqItems = [
       "No. This is an independent product-discovery and educational site. It does not claim to be LoloBuy and does not sell, inspect, store or ship products.",
   },
   {
-    question: "Does this website send visitors to other directories?",
+    question: "Where do the product and purchase links lead?",
     answer:
-      "No. Educational navigation stays on this website. Product cards, category buttons and catalog search open only the associated main site at cnbuycha.com; there are no clickable links to LoloBuy or competing directories.",
+      "Guides, categories, search and product pages open on lolobuy-sheet.net. Registration and Open in LoloBuy buttons lead to www.lolobuy.com; product links retain the original Weidian item ID. Catalog data comes from cnbuycha.com.",
   },
 ] as const;

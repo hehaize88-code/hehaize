@@ -1,3 +1,4 @@
+import octoberTranslationRows from "./translations-october.json";
 import {commerceTranslationRows} from "./commerce-translations";
 import { guideTranslationRows } from "./translations-guides";
 import { homeTranslationRows } from "./translations-home";
@@ -18,6 +19,7 @@ const translationRows = [
   ...homeTranslationRows,
   ...guideTranslationRows,
   ...commerceTranslationRows,
+  ...octoberTranslationRows,
 ] as const;
 
 function dictionary(column: 1 | 2 | 3 | 4) {

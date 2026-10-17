@@ -1,3 +1,4 @@
+import { ArticleFinds } from "./article-finds";
 import { MobileTopic, detailLabels } from "./components/mobile-topic";
 import { MobileChapter, MobileReadingTools } from "./components/mobile-reading";
 import Link from "next/link";
@@ -21,7 +22,7 @@ export function ArticlePage({
 }) {
   const copy = getLocalizedArticle(article, locale);
   const wordCount = articleWordCount(copy);
-  const readMinutes = Math.max(6, Math.round(wordCount / 220));
+  const readMinutes = Math.max(1, Math.ceil(wordCount / 220));
   const canonicalPath = localizedPath(locale, `/articles/${copy.slug}`);
   const canonical = absoluteUrl(canonicalPath);
   const localPath = (path: string) => localizedPath(locale, path);
@@ -107,7 +108,7 @@ export function ArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <SiteHeader active="articles" locale={locale} />
+      <SiteHeader active="articles" locale={locale} path={`/articles/${copy.slug}`} />
       <main className="article-main mobile-inner">
         <article lang={locale} data-article-locale={locale}>
           <header className="article-hero">
@@ -203,6 +204,7 @@ export function ArticlePage({
                 <p>{copy.sourceNote}</p>
               </aside></MobileTopic>
 
+              <ArticleFinds slug={copy.slug} locale={locale} />
               <MobileReadingTools locale={locale} />
               {copy.sections.map((section, index) => (
                 <section
@@ -224,6 +226,7 @@ export function ArticlePage({
                       ))}
                     </ul>
                   )}
+                  {section.links && <ul className="article-checklist">{section.links.map(link => <li key={link.href}><Link href={localPath(link.href)} data-track-event="article_internal_click">{link.label} →</Link></li>)}</ul>}
                   {section.note && (
                     <aside className="calculation-note">
                       <strong>{articleText(locale, "Worked example")}</strong>
@@ -265,7 +268,8 @@ export function ArticlePage({
                 <div>
                   <a
                     className="button button-primary"
-                    href={`${catalogBase}/AllProducts/`}
+                    href={localPath("/catalog/")}
+                    data-track-event="catalog_click"
                     target="_blank"
                     rel="sponsored noopener noreferrer"
                   >

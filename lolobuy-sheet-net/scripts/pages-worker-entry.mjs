@@ -16,7 +16,7 @@ function loadApplicationWorker() {
 const legacyProducts = {"3351": "/headwear/3307.html", "3353": "/t-shirts/3401.html", "3355": "/shoes/3321.html", "3356": "/jackets/3402.html", "3357": "/electronics/3286.html", "3359": "/shoes/3328.html", "3366": "/shoes/3354.html", "3367": "/shoes/3355.html", "3368": "/hoodies-sweaters/3412.html", "3369": "/hoodies-sweaters/3413.html", "3371": "/headwear/3353.html", "3372": "/accessories/3359.html"};
 function productDestination(pathname){const match=pathname.match(/^\/(?:(es|de|fr|it)\/)?products\/(\d+)\/?$/);return match&&legacyProducts[match[2]]?localPath(legacyProducts[match[2]],match[1]||'en'):null;}
 
-const HEAD_SNIPPET = '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script><script src="/commerce-events.js" defer></script>';
+const HEAD_SNIPPET = '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script><script src="/commerce-events.js?v=20261017" defer></script>';
 
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
@@ -260,7 +260,7 @@ export default {
       ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
     }
 
-    finalResponse.headers.set("x-lolobuy-release","20261013-net-mobile-v3");
+    finalResponse.headers.set("x-lolobuy-release","20261017-net-seo-v1");
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };

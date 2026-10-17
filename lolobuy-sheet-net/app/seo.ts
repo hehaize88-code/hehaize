@@ -231,7 +231,15 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
 };
 
+const shippingSearchCopy:Record<Locale,SeoCopy>={
+ en:{title:'LoloBuy Shipping: Costs, Weight Calculator & Tracking',description:'Prepare a LoloBuy shipping quote with packed weight, dimensions and route checks. Find calculator examples, coupon conditions and parcel tracking help.'},
+ de:{title:'LoloBuy Versand: Kosten, Gewichtsrechner & Tracking',description:'Bereite Versandangebote mit Paketgewicht, Maßen und Linienprüfung vor. Finde Rechenbeispiele, Gutscheinbedingungen und Hilfe zum Tracking.'},
+ es:{title:'Envío LoloBuy: costes, cálculo de peso y seguimiento',description:'Prepara el presupuesto con peso, dimensiones y rutas. Consulta ejemplos de cálculo, condiciones de cupones y seguimiento de paquetes.'},
+ fr:{title:'Livraison LoloBuy : prix, calcul du poids et suivi',description:'Préparez le devis avec poids, dimensions et lignes admissibles. Consultez les exemples de calcul, conditions des coupons et suivi des colis.'},
+ it:{title:'Spedizione LoloBuy: costi, calcolo del peso e tracking',description:'Prepara il preventivo con peso, dimensioni e linee ammesse. Trova esempi di calcolo, condizioni dei coupon e tracking dei pacchi.'}
+};
 export function seoCopy(locale: Locale, path: CorePath) {
+  if(path === "/shipping")return shippingSearchCopy[locale];
   return routeSeo[path][locale];
 }
 

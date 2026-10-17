@@ -1,3 +1,5 @@
+import {improveArticle} from "./search-improvements";
+import growthArticles from "./growth-articles/en.json";
 import contentDates from "./content-dates.json";
 import { priorityArticles } from "./priority-articles";
 import octoberArticles from "./october-articles.json";
@@ -8,6 +10,7 @@ export type ArticleSection = {
   paragraphs: string[];
   bullets?: string[];
   note?: string;
+  links?: { href: string; label: string }[];
 };
 
 export type ArticleRecord = {
@@ -1343,6 +1346,7 @@ const existingArticles: ArticleRecord[] = [
 type Revision = Partial<ArticleRecord> & { first?: string };
 
 export const articles: ArticleRecord[] = [
+  ...growthArticles,
   ...octoberArticles,
   ...priorityArticles,
   ...existingArticles,
@@ -1359,7 +1363,7 @@ export const articles: ArticleRecord[] = [
       ? { ...section, paragraphs: [first, ...section.paragraphs.slice(1)] }
       : section),
   };
-});
+}).map(article => improveArticle(article, "en"));
 
 export function getArticle(slug: string) {
   return articles.find((article) => article.slug === slug);
