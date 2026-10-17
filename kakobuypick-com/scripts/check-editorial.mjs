@@ -51,7 +51,8 @@ for(const lang of locales){
   assert.equal(document.querySelector('link[rel=canonical]').href,url,url);
   assert.equal(document.querySelectorAll('link[hreflang]').length,25,url);
   assert.equal(document.querySelectorAll('main h1').length,1,url);
-  assert.equal(document.querySelector('meta[name=robots]').content,'noindex,nofollow',url);
+  assert.equal(document.querySelector('meta[name=robots]').content,'index,follow,max-image-preview:large',url);
+  assert.equal(response.headers.get('x-robots-tag'),'index,follow,max-image-preview:large',url);
   for(const p of ['/guide/','/faq/','/articles/']) assert.ok(document.querySelector(`header nav a[href="${route(lang,p)}"]`),`${url} missing navigation ${p}`);
   assert.ok(!html.includes('/#guide')&&!html.includes('/#faq'),`${url} old anchors`);
   const schema=JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);

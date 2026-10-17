@@ -15,12 +15,12 @@ const t=translate(lang), c=editorial(lang), names=categoryNames(lang), e=content
 const query=(Astro.url.searchParams.get('q')||'').slice(0,120);
 const sort=['new','click','price'].includes(Astro.url.searchParams.get('sort')||'')?Astro.url.searchParams.get('sort')!:'new';
 const page=Math.max(1,Math.min(500,parseInt(Astro.url.searchParams.get('page')||'1')||1));
-const category=parts[0]==='category'&&slugs.includes(parts[1])?parts[1]:'';
-const isHome=parts.length===0, isProduct=parts[0]==='products', isVisual=parts[0]==='image-search';
+const category=parts.length===2&&parts[0]==='category'&&slugs.includes(parts[1])?parts[1]:'';
+const isHome=parts.length===0, isProduct=parts.length===3&&parts[0]==='products'&&slugs.includes(parts[1])&&/^\d+\.html$/.test(parts[2]), isVisual=parts.length===1&&parts[0]==='image-search';
 const isGuide=parts.length===1&&parts[0]==='guide',isFAQ=parts.length===1&&parts[0]==='faq',isArticles=parts.length===1&&parts[0]==='articles';
 const article=parts.length===2&&parts[0]==='articles'?e.articles.find(a=>a.slug===parts[1]):undefined;
 const isKnowledge=isGuide||isFAQ||isArticles||!!article;
-const isCatalog=isHome||parts[0]==='spreadsheet'||!!category;
+const isCatalog=isHome||(parts.length===1&&parts[0]==='spreadsheet')||!!category;
 const known=isCatalog||isProduct||isVisual||isKnowledge;
 if(!known) Astro.response.status=404;
 let products:any[]=[],categories:any[]=[],total=0,pages=1,product:any=null,error=false,debug='';
@@ -29,7 +29,10 @@ try {
   else if(isProduct) product=await detail('/'+parts.slice(1).join('/'));
   else if(isCatalog){const data=await listing(category,query,sort,page);({products,total,pages}=data);}
 } catch(e){error=true;Astro.response.status=503;debug=e instanceof Error?e.message:'error';console.error('CnBuyCha request unavailable:',debug);}
-Astro.response.headers.set('X-Robots-Tag','noindex, nofollow');
+const filtered=['q','sort','page'].some(key=>Astro.url.searchParams.has(key));
+const indexable=known&&!error&&!isVisual&&!filtered&&Astro.response.status===200;
+const robots=indexable?'index,follow,max-image-preview:large':'noindex,follow';
+Astro.response.headers.set('X-Robots-Tag',robots);
 const title=article?.title||(isGuide?e.ui.guideTitle:isFAQ?e.ui.faqTitle:isArticles?e.ui.articlesTitle:'')||product?.title|| (isVisual?t.visual:category?names[slugs.indexOf(category)]:query?`${t.search}: ${query}`:'Kakobuy Spreadsheet');
 const description=article?.description||(isGuide?e.ui.guideIntro:isFAQ?e.ui.faqIntro:isArticles?e.ui.articlesIntro:c.intro);
 const origin=Astro.site!.origin;
@@ -42,7 +45,7 @@ const icons=['shoe','shirt','shirt','jacket','pants','hat','bag','shirt','device
 ---
 <!doctype html>
 <html lang={lang}>
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{article?article.title.split(':')[0]:title} · Kakobuy Pick</title><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/>{schema&&<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/> }<meta name="robots" content="noindex,nofollow"/><meta name="theme-color" content="#fc3358"/><link rel="icon" href={FAVICON}/><link rel="canonical" href={origin+route(localPath)}/>{languages.map(([code])=><link rel="alternate" hreflang={code} href={origin+localized(code,localPath)}/>)}<link rel="alternate" hreflang="x-default" href={origin+localPath}/><link rel="preconnect" href="https://cnbuycha.com"/><link rel="preconnect" href="https://nstatic.kakobuy.com"/></head>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{article?article.title.split(':')[0]:title} · Kakobuy Pick</title><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/>{schema&&<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/> }<meta name="robots" content={robots}/><meta name="theme-color" content="#fc3358"/><link rel="icon" href={FAVICON}/><link rel="canonical" href={origin+route(localPath)}/>{languages.map(([code])=><link rel="alternate" hreflang={code} href={origin+localized(code,localPath)}/>)}<link rel="alternate" hreflang="x-default" href={origin+localPath}/><link rel="preconnect" href="https://cnbuycha.com"/><link rel="preconnect" href="https://nstatic.kakobuy.com"/></head>
 <body>
 <header class="header"><div class="header-inner">
   <a href={route('/')} class="brand" aria-label={`Kakobuy ${t.home}`}><img src={LOGO} alt="Kakobuy" width="143" height="36"/><span>Spreadsheet</span></a>
@@ -69,7 +72,7 @@ const icons=['shoe','shirt','shirt','jacket','pants','hat','bag','shirt','device
 <section id="faq" class="faq-section wrap"><div><span class="eyebrow muted">KAKOBUY SPREADSHEET</span><h2>{t.faq}</h2><a class="text-link home-faq-link" href={route('/faq/')}>{e.ui.allFaq}<Icon name="arrow" size={17}/></a></div><div class="faq-items">{[e.faq[0],e.faq[6],e.faq[13]].map((f,i)=><details open={i===0}><summary>{f.q}<span aria-hidden="true">+</span></summary><p>{f.a}</p></details>)}</div></section></>}
 
 </main>
-<footer><div class="wrap footer-inner"><div class="footer-brand"><a class="brand" href={route('/')}><img src={LOGO} alt="Kakobuy" width="130" height="33"/><span>Spreadsheet</span></a><p>{c.disclosure}</p></div><div class="footer-links"><a href={route('/spreadsheet/')}>{t.browse}</a><a class:list={{active:isGuide}} href={route('/guide/')}>{t.guide}</a><a class:list={{active:isFAQ}} href={route('/faq/')}>{t.faq}</a><a class:list={{active:isArticles||!!article}} href={route('/articles/')}>{e.ui.articles}</a></div></div><div class="wrap footer-bottom"><span>© 2026 Kakobuy Spreadsheet</span><a href="https://cnbuycha.com/" target="_blank" rel="noopener noreferrer">CnBuyCha <Icon name="external" size={12}/></a><span class="preview-label">{t.preview}</span></div></footer>
+<footer><div class="wrap footer-inner"><div class="footer-brand"><a class="brand" href={route('/')}><img src={LOGO} alt="Kakobuy" width="130" height="33"/><span>Spreadsheet</span></a><p>{c.disclosure}</p></div><div class="footer-links"><a href={route('/spreadsheet/')}>{t.browse}</a><a class:list={{active:isGuide}} href={route('/guide/')}>{t.guide}</a><a class:list={{active:isFAQ}} href={route('/faq/')}>{t.faq}</a><a class:list={{active:isArticles||!!article}} href={route('/articles/')}>{e.ui.articles}</a></div></div><div class="wrap footer-bottom"><span>© 2026 Kakobuy Spreadsheet</span><a href="https://cnbuycha.com/" target="_blank" rel="noopener noreferrer">CnBuyCha <Icon name="external" size={12}/></a></div></footer>
 <script is:inline>
 if(window.matchMedia('(max-width:800px)').matches)document.querySelector('.article-toc')?.removeAttribute('open');
 document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>{const image=document.getElementById('main-photo');image.src=button.dataset.photo;image.style.display='';document.getElementById('photo-link').href=button.dataset.photo;document.getElementById('photo-current').textContent=button.dataset.index;document.querySelectorAll('[data-photo]').forEach(b=>{b.classList.remove('selected');b.setAttribute('aria-pressed','false')});button.classList.add('selected');button.setAttribute('aria-pressed','true')}));

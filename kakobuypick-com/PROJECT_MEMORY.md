@@ -70,3 +70,10 @@
 - 手机窄屏导航可见，无横向溢出（clientWidth/scrollWidth 均 375px），首次加载目录折叠；临时视口已重置。
 - 首页 12 张商品图均加载成功，图片 URL 仍直接来自 cnbuycha.com/media/products。
 - 公开检查地址：https://kakobuypick.com/guide/ 、https://kakobuypick.com/faq/ 、https://kakobuypick.com/articles/ 。仍待用户视觉验收，暂不开放搜索引擎索引。
+
+## 2026-10-17 用户要求收录链接：开放索引
+
+- 用户在验收链接交付后要求“给我需要收录的站点地图和其他链接”，本次据此进入收录准备，取代此前等待验收的全站 noindex 状态。
+- 新增 `/sitemap.xml`：24 语共 624 个稳定 canonical URL，包含每语主页、商品目录、11 分类、指南、FAQ、文章中心及10篇文章。XML只给已知更新时间的编辑内容填写lastmod；不伪造实时商品目录更新时间或完整商品库存。
+- robots.txt 开放抓取并声明地图；成功正常页面的meta和X-Robots-Tag均改为index,follow,max-image-preview:large。q/sort/page参数页、未接通搜图页、404及上游错误页保留noindex,follow；非法目录/商品路径不再渲染重复目录内容。去除页脚Preview标记。
+- 保留全部24语译文、canonical、25项hreflang、原始商品链接及联盟参数。仅提供可提交链接；没有代用户向GSC或Bing发送收录请求。

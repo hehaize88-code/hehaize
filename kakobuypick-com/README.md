@@ -1,10 +1,10 @@
 # Kakobuy Pick — Astro SSR
 
-Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2026-10-17). Repository: **hehaize88-code/hehaize**, directory: **kakobuypick-com/**. This release is still for visual acceptance: `noindex` and a disallow-all robots.txt remain until the user reviews the site.
+Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2026-10-17). Repository: **hehaize88-code/hehaize**, directory: **kakobuypick-com/**. The user requested indexing links on 2026-10-17. Canonical content pages now permit indexing; search/filter results, unavailable image search and errors remain noindex.
 
 ## 已部署状态与 GitHub 配置
 
-2026-10-17 已按用户授权创建独立 Cloudflare Worker，并连接下列 GitHub 目录。**https://kakobuypick.com/** 已在用户连接的 Chrome 中实际打开，`www` 自动跳转到主域名；商品图、德语切换、搜索、价格排序和详情购买 URL 已检查。页面仍处于用户视觉验收阶段。
+2026-10-17 已按用户授权创建独立 Cloudflare Worker，并连接下列 GitHub 目录。**https://kakobuypick.com/** 已在用户连接的 Chrome 中实际打开，`www` 自动跳转到主域名；商品图、德语切换、搜索、价格排序和详情购买 URL 已检查。页面已按用户索取收录链接的要求开放搜索引擎抓取。
 
 在 Cloudflare 创建 **Worker**，选择连接 GitHub 仓库。此项目是 SSR，不使用静态 Pages 输出配置。
 
@@ -25,7 +25,7 @@ Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2
 
 核验页面：首页、`/spreadsheet/?q=adidas&sort=price`、`/de/`、`/fr/category/shoes/`、实际商品详情及购买按钮。首页和分类应呈现主站真实数据；上游故障返回明确不可用状态。
 
-用户验收后，再单独开放正式 SEO 收录并完善 sitemap；目前不要提交本版本 sitemap 给搜索引擎。
+站点地图：https://kakobuypick.com/sitemap.xml 。包含 24 语言共 624 个稳定页面地址：主页、商品目录、11 个分类、指南、FAQ、文章中心及 10 篇文章。商品详情由目录链接发现；站点地图不虚构主站未提供的完整商品清单。
 
 配置依据：https://developers.cloudflare.com/workers/ci-cd/builds/configuration/ （2026-10-17 核对）。
 
@@ -78,3 +78,7 @@ The earlier temporary preview was hosted separately and was blocked for the user
 The original preview passed build and live data checks: 12 home products, 60 filtered/sorted list products, detail photos and seller purchase URLs. All translation keys and 11 category labels exist for all 24 locales. Public-domain desktop verification is now complete in the user's connected Chrome: home images, German navigation, keyword search, price sorting, detail purchase URL, and www redirect passed. See PROJECT_MEMORY.md for deployment IDs and remaining acceptance scope.
 
 The 2026-10-17 editorial release passed all 312 response checks and the Worker deployment dry-run (747.79 KiB gzip, no bindings). Translations were compared with the English baseline and materially corrupted passages were rewritten. Build-time checks prevent incomplete locale sets or changed numeric facts from being deployed.
+
+## Indexing
+
+`robots.txt` permits crawling and declares `/sitemap.xml`. Successful canonical pages emit `index,follow,max-image-preview:large` in both HTML and X-Robots-Tag. Query variants using q/sort/page, unavailable image search, unknown routes and upstream errors remain noindex,follow. Sitemap dates are emitted only for editorial pages with a known revision date; live catalogue dates are not invented. `node scripts/check-indexing.mjs` verifies the map and exclusions after building.
