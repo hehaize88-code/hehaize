@@ -23,7 +23,6 @@ import {
 } from "../../seo";
 import { articles } from "../../site-data";
 import { getArticleMedia } from "../../article-media";
-import { englishOnlyArticleSlugs } from "../../priority-articles";
 import { catalogEvidence } from "../../catalog-evidence";
 
 export function generateStaticParams() {
@@ -207,11 +206,6 @@ export async function generateMetadata({
     description: article.description,
   });
 
-  if (englishOnlyArticleSlugs.has(article.slug)) {
-    metadata.alternates = {
-      canonical: localizedPath(`/articles/${article.slug}`, "en"),
-    };
-  }
 
   return {
     ...metadata,
@@ -263,7 +257,8 @@ export default async function ArticlePage({
     notFound();
   }
 
-  const related = localizedArticles.filter((item) => item.slug !== article.slug).slice(0, 2);
+  const relatedPaths = new Set(context.links.map(link => link.path));
+  const related = localizedArticles.filter(item => item.slug !== article.slug).sort((a,b) => Number(relatedPaths.has(`/articles/${b.slug}`)) - Number(relatedPaths.has(`/articles/${a.slug}`))).slice(0, 2);
   const media = getArticleMedia(article.slug);
   const articleUrl = absoluteLocalizedUrl(
     `/articles/${article.slug}`,
@@ -273,12 +268,7 @@ export default async function ArticlePage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader
-        locale={locale}
-        languageFallbackPath={
-          englishOnlyArticleSlugs.has(article.slug) ? "/articles" : undefined
-        }
-      />
+      <SiteHeader locale={locale} path={`/articles/${article.slug}`} />
       <article className="longform">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <span>
@@ -303,7 +293,7 @@ export default async function ArticlePage({
           <p className="article-fact-check">{article.factCheckLine}</p>
         </header>
 
-        <figure className="article-hero-media">
+        <figure className={`article-hero-media${media.width === media.height ? " is-square" : ""}`}>
           <Image
             src={media.src}
             alt={article.shortTitle}

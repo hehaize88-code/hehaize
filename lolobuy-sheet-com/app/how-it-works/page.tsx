@@ -47,7 +47,7 @@ export default async function HowItWorksPage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/how-it-works" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}

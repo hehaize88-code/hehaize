@@ -1,3 +1,5 @@
+
+import GuideShortcuts from "../components/guide-shortcuts";
 import type { Metadata } from "next";
 import MobileArticleList from "../components/mobile-article-list";
 import ArticleCard from "../components/article-card";
@@ -43,7 +45,7 @@ export default async function ArticlesPage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/articles" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}
@@ -53,6 +55,8 @@ export default async function ArticlesPage({
           { label: copy.crumb },
         ]}
       />
+      <GuideShortcuts locale={locale} />
+
       <MobileArticleList locale={locale}>
         {localizedArticles.map((article) => (
           <ArticleCard article={article} locale={locale} key={article.slug} />

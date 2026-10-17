@@ -34,7 +34,7 @@ export default async function ContactPage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/contact" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}

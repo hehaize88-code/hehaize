@@ -10,6 +10,9 @@ type ContextCopy = {
 };
 
 const routesByArticle: Record<string, string[]> = {
+  "lolobuy-shipping-france-guide": ["/articles/lolobuy-fees-explained", "/articles/lolobuy-shipping-calculator-guide", "/articles/lolobuy-submit-package-guide", "/articles/lolobuy-tracking-not-updating-guide"],
+  "lolobuy-shipping-calculator-guide": ["/articles/lolobuy-fees-explained", "/articles/lolobuy-haul-cost-breakdown", "/articles/lolobuy-submit-package-guide", "/articles/lolobuy-shipping-france-guide"],
+  "lolobuy-submit-package-guide": ["/articles/lolobuy-order-status-guide", "/articles/how-to-read-qc-photos", "/articles/lolobuy-shipping-calculator-guide", "/articles/lolobuy-tracking-not-updating-guide"],
   "lolobuy-winter-finds-2026": ["/categories/hoodies-sweaters", "/finds", "/articles/lolobuy-haul-cost-breakdown", "/guides/qc"],
   "lolobuy-finds-under-30": ["/finds", "/articles/lolobuy-haul-cost-breakdown", "/articles/lolobuy-spreadsheet-guide", "/guides/qc"],
   "lolobuy-sneaker-qc-photo-checklist": ["/categories/shoes", "/articles/lolobuy-shoe-size-guide", "/articles/lolobuy-qc-mismatch-evidence-guide", "/guides/qc"],

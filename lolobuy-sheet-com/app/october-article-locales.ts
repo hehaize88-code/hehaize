@@ -153,7 +153,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Site public LoloBuy — 3 octobre 2026",
-          "note": "Le site décrit commandes par lien, inspection et photos au dépôt, et annonce 180 jours de stockage gratuit. Vérifiez chaque échéance dans le compte ; stockage et délai de retour sont distincts."
+          "note": "Le site décrit commandes par lien, inspection et photos au dépôt. Vérifiez les conditions actuelles de stockage et chaque échéance dans le compte ; stockage et délai de retour sont distincts."
         },
         {
           "label": "Méthode éditoriale Lolobuy Sheet",
@@ -313,7 +313,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Site public LoloBuy — 3 octobre 2026",
-          "note": "Le site décrit commandes par lien, inspection et photos au dépôt, et annonce 180 jours de stockage gratuit. Vérifiez chaque échéance dans le compte ; stockage et délai de retour sont distincts."
+          "note": "Le site décrit commandes par lien, inspection et photos au dépôt. Vérifiez les conditions actuelles de stockage et chaque échéance dans le compte ; stockage et délai de retour sont distincts."
         },
         {
           "label": "Méthode éditoriale Lolobuy Sheet",
@@ -412,7 +412,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         {
           "heading": "Traiter un écart avant l’envoi",
           "paragraphs": [
-            "Réunissez annonce sauvegardée, option, commande et images pertinentes. Résumez l’écart en une phrase factuelle et conservez les originaux. Vérifiez statut et actions disponibles avant l’expédition internationale. Les 180 jours de stockage gratuit annoncés actuellement par LoloBuy ne sont pas 180 jours de droit au retour. Résolvez l’incertitude importante avant d’ajouter transport et nouvelles contraintes."
+            "Réunissez annonce sauvegardée, option, commande et images pertinentes. Résumez l’écart en une phrase factuelle et conservez les originaux. Vérifiez statut et actions disponibles avant l’expédition internationale. Consultez les conditions actuelles de stockage et l'échéance de chaque article dans votre compte ; la durée de stockage n'est pas un délai de retour. Résolvez l’incertitude importante avant d’ajouter transport et nouvelles contraintes."
           ],
           "links": [
             {
@@ -472,7 +472,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Site public LoloBuy — 3 octobre 2026",
-          "note": "Le site décrit commandes par lien, inspection et photos au dépôt, et annonce 180 jours de stockage gratuit. Vérifiez chaque échéance dans le compte ; stockage et délai de retour sont distincts."
+          "note": "Le site décrit commandes par lien, inspection et photos au dépôt. Vérifiez les conditions actuelles de stockage et chaque échéance dans le compte ; stockage et délai de retour sont distincts."
         },
         {
           "label": "Méthode éditoriale Lolobuy Sheet",
@@ -664,7 +664,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Site public LoloBuy — 3 octobre 2026",
-          "note": "Le site décrit commandes par lien, inspection et photos au dépôt, et annonce 180 jours de stockage gratuit. Vérifiez chaque échéance dans le compte ; stockage et délai de retour sont distincts."
+          "note": "Le site décrit commandes par lien, inspection et photos au dépôt. Vérifiez les conditions actuelles de stockage et chaque échéance dans le compte ; stockage et délai de retour sont distincts."
         },
         {
           "label": "Méthode éditoriale Lolobuy Sheet",
@@ -825,7 +825,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Web pública LoloBuy — 3 de octubre de 2026",
-          "note": "Describe pedidos por enlace, inspección y fotos, y anuncia 180 días de almacenaje gratis. Verifica los plazos en la cuenta: almacenaje y devolución son distintos."
+          "note": "Describe pedidos por enlace, inspección y fotos. Verifica las condiciones actuales de almacenamiento y los plazos de cada artículo en la cuenta: almacenaje y devolución son distintos."
         },
         {
           "label": "Método editorial Lolobuy Sheet",
@@ -985,7 +985,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Web pública LoloBuy — 3 de octubre de 2026",
-          "note": "Describe pedidos por enlace, inspección y fotos, y anuncia 180 días de almacenaje gratis. Verifica los plazos en la cuenta: almacenaje y devolución son distintos."
+          "note": "Describe pedidos por enlace, inspección y fotos. Verifica las condiciones actuales de almacenamiento y los plazos de cada artículo en la cuenta: almacenaje y devolución son distintos."
         },
         {
           "label": "Método editorial Lolobuy Sheet",
@@ -1084,7 +1084,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         {
           "heading": "Resolver diferencias antes del envío",
           "paragraphs": [
-            "Reúne anuncio guardado, variante, pedido e imágenes pertinentes. Resume la diferencia en una frase factual y conserva los originales. Comprueba estado y acciones vigentes antes del transporte internacional. Los 180 días de almacenaje gratuito anunciados actualmente por LoloBuy no significan 180 días de derecho a devolución. Resuelve la incertidumbre importante antes de añadir costes y otra etapa."
+            "Reúne anuncio guardado, variante, pedido e imágenes pertinentes. Resume la diferencia en una frase factual y conserva los originales. Comprueba estado y acciones vigentes antes del transporte internacional. Verifica las condiciones actuales de almacenamiento y la fecha límite de cada artículo en tu cuenta; el plazo de almacenamiento no es un plazo de devolución. Resuelve la incertidumbre importante antes de añadir costes y otra etapa."
           ],
           "links": [
             {
@@ -1144,7 +1144,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Web pública LoloBuy — 3 de octubre de 2026",
-          "note": "Describe pedidos por enlace, inspección y fotos, y anuncia 180 días de almacenaje gratis. Verifica los plazos en la cuenta: almacenaje y devolución son distintos."
+          "note": "Describe pedidos por enlace, inspección y fotos. Verifica las condiciones actuales de almacenamiento y los plazos de cada artículo en la cuenta: almacenaje y devolución son distintos."
         },
         {
           "label": "Método editorial Lolobuy Sheet",
@@ -1336,7 +1336,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Web pública LoloBuy — 3 de octubre de 2026",
-          "note": "Describe pedidos por enlace, inspección y fotos, y anuncia 180 días de almacenaje gratis. Verifica los plazos en la cuenta: almacenaje y devolución son distintos."
+          "note": "Describe pedidos por enlace, inspección y fotos. Verifica las condiciones actuales de almacenamiento y los plazos de cada artículo en la cuenta: almacenaje y devolución son distintos."
         },
         {
           "label": "Método editorial Lolobuy Sheet",
@@ -1497,7 +1497,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Öffentliche LoloBuy-Website — 3. Oktober 2026",
-          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos sowie aktuell 180 Tage kostenlose Lagerung. Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
+          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos. Aktuelle Lagerbedingungen und Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
         },
         {
           "label": "Lolobuy Sheet Redaktionsmethode",
@@ -1657,7 +1657,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Öffentliche LoloBuy-Website — 3. Oktober 2026",
-          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos sowie aktuell 180 Tage kostenlose Lagerung. Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
+          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos. Aktuelle Lagerbedingungen und Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
         },
         {
           "label": "Lolobuy Sheet Redaktionsmethode",
@@ -1756,7 +1756,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         {
           "heading": "Abweichungen vor dem Versand klären",
           "paragraphs": [
-            "Führe gespeichertes Angebot, Option, Bestellung und relevante Bilder zusammen. Beschreibe die Abweichung sachlich und bewahre Originale auf. Prüfe Status und verfügbare Schritte vor internationalem Versand. Die aktuell öffentlich genannten 180 Tage kostenlose Lagerung bedeuten kein 180-tägiges Rückgaberecht. Löse ein wesentliches Problem, bevor Fracht und ein zusätzlicher Transaktionsschritt hinzukommen."
+            "Führe gespeichertes Angebot, Option, Bestellung und relevante Bilder zusammen. Beschreibe die Abweichung sachlich und bewahre Originale auf. Prüfe Status und verfügbare Schritte vor internationalem Versand. Prüfe aktuelle Lagerbedingungen und die Frist jedes Artikels im Konto; eine Lagerfrist ist keine Rückgabefrist. Löse ein wesentliches Problem, bevor Fracht und ein zusätzlicher Transaktionsschritt hinzukommen."
           ],
           "links": [
             {
@@ -1816,7 +1816,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Öffentliche LoloBuy-Website — 3. Oktober 2026",
-          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos sowie aktuell 180 Tage kostenlose Lagerung. Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
+          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos. Aktuelle Lagerbedingungen und Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
         },
         {
           "label": "Lolobuy Sheet Redaktionsmethode",
@@ -2008,7 +2008,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Öffentliche LoloBuy-Website — 3. Oktober 2026",
-          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos sowie aktuell 180 Tage kostenlose Lagerung. Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
+          "note": "Beschreibt Linkbestellung, Lagerprüfung und Fotos. Aktuelle Lagerbedingungen und Einzelfristen im Konto prüfen; Lagerung ist keine Rückgabefrist."
         },
         {
           "label": "Lolobuy Sheet Redaktionsmethode",
@@ -2169,7 +2169,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Sito pubblico LoloBuy — 3 ottobre 2026",
-          "note": "Descrive ordini tramite link, ispezione e foto, e pubblicizza 180 giorni di deposito gratuito. Verifica le scadenze nel conto: deposito e termine di reso sono distinti."
+          "note": "Descrive ordini tramite link, ispezione e foto. Verifica le condizioni attuali di deposito e le scadenze di ogni articolo nel conto: deposito e termine di reso sono distinti."
         },
         {
           "label": "Metodo editoriale Lolobuy Sheet",
@@ -2329,7 +2329,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Sito pubblico LoloBuy — 3 ottobre 2026",
-          "note": "Descrive ordini tramite link, ispezione e foto, e pubblicizza 180 giorni di deposito gratuito. Verifica le scadenze nel conto: deposito e termine di reso sono distinti."
+          "note": "Descrive ordini tramite link, ispezione e foto. Verifica le condizioni attuali di deposito e le scadenze di ogni articolo nel conto: deposito e termine di reso sono distinti."
         },
         {
           "label": "Metodo editoriale Lolobuy Sheet",
@@ -2428,7 +2428,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         {
           "heading": "Gestire gli scostamenti prima dell’invio",
           "paragraphs": [
-            "Riunisci annuncio salvato, variante, ordine e foto rilevanti. Riassumi lo scostamento in una frase precisa e conserva gli originali. Controlla stato e azioni disponibili prima della spedizione internazionale. I 180 giorni di deposito gratuito attualmente pubblicizzati da LoloBuy non sono 180 giorni di diritto al reso. Risolvi il problema importante prima di aggiungere costi e una nuova fase."
+            "Riunisci annuncio salvato, variante, ordine e foto rilevanti. Riassumi lo scostamento in una frase precisa e conserva gli originali. Controlla stato e azioni disponibili prima della spedizione internazionale. Verifica le condizioni attuali di deposito e la scadenza di ogni articolo nel tuo account; la durata del deposito non è un termine di reso. Risolvi il problema importante prima di aggiungere costi e una nuova fase."
           ],
           "links": [
             {
@@ -2488,7 +2488,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Sito pubblico LoloBuy — 3 ottobre 2026",
-          "note": "Descrive ordini tramite link, ispezione e foto, e pubblicizza 180 giorni di deposito gratuito. Verifica le scadenze nel conto: deposito e termine di reso sono distinti."
+          "note": "Descrive ordini tramite link, ispezione e foto. Verifica le condizioni attuali di deposito e le scadenze di ogni articolo nel conto: deposito e termine di reso sono distinti."
         },
         {
           "label": "Metodo editoriale Lolobuy Sheet",
@@ -2680,7 +2680,7 @@ export const octoberArticleLocales: Record<Exclude<Locale, "en">, Record<string,
         },
         {
           "label": "Sito pubblico LoloBuy — 3 ottobre 2026",
-          "note": "Descrive ordini tramite link, ispezione e foto, e pubblicizza 180 giorni di deposito gratuito. Verifica le scadenze nel conto: deposito e termine di reso sono distinti."
+          "note": "Descrive ordini tramite link, ispezione e foto. Verifica le condizioni attuali di deposito e le scadenze di ogni articolo nel conto: deposito e termine di reso sono distinti."
         },
         {
           "label": "Metodo editoriale Lolobuy Sheet",

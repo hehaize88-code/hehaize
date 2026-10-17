@@ -1,4 +1,8 @@
 const articleMedia = {
+  "lolobuy-shipping-france-guide": {src: "/articles/lolobuy-shipping-france-guide.svg", width: 1024, height: 1024},
+  "lolobuy-shipping-calculator-guide": {src: "/articles/lolobuy-shipping-calculator-guide.svg", width: 1024, height: 1024},
+  "lolobuy-submit-package-guide": {src: "/articles/lolobuy-submit-package-guide.svg", width: 1024, height: 1024},
+
   "lolobuy-winter-finds-2026": { src: "/product-finds/verified-3374-1200.webp", width: 1076, height: 1076 },
   "lolobuy-finds-under-30": { src: "/product-finds/verified-3353-1200.webp", width: 1080, height: 1080 },
   "lolobuy-sneaker-qc-photo-checklist": { src: "/product-finds/verified-3328-1200.webp", width: 800, height: 800 },

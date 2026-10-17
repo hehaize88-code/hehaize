@@ -431,7 +431,7 @@ export const shippingPageCopy = {
     crumb: "Shipping",
     days: "days",
     storage:
-      "LoloBuy's public website currently advertises 180 days of free warehouse storage. Use it as a planning window and confirm the live terms and each order's deadline inside the platform.",
+      "Check current warehouse storage terms and each item's deadline in your LoloBuy account. Plan consolidation or shipping with a margin before the displayed deadline, and verify any exceptional order status separately.",
     stages: [
       ["01 / BEFORE ARRIVAL", "Estimate the parcel mix.", "Record rough weight, dimensions, materials and restrictions for each item. Notice combinations that may create a bulky or fragile parcel."],
       ["02 / IN STORAGE", "Resolve QC issues early.", "Storage creates time to compare arrivals and handle a mismatch before submitting international shipping. Set your own earlier deadline."],
@@ -455,7 +455,7 @@ export const shippingPageCopy = {
     sourceEyebrow: "SOURCE CHECKED · OCTOBER 3, 2026",
     sourceTitle: "No static page can quote your final shipping cost accurately.",
     sourceText:
-      "Final cost depends on a current, packed parcel and an eligible route. Taxes, declarations and import rules belong to the destination country. LoloBuy's public homepage confirms 180 days of free storage. Use the live account and official customs information for the final decision.",
+      "Final cost depends on a current, packed parcel and an eligible route. Taxes, declarations and import rules belong to the destination country. Verify current storage terms and each item's deadline in your account. Use the live account and official customs information for the final decision.",
     sourceLink: "Read the detailed source-checked shipping article",
   },
   es: {
@@ -466,7 +466,7 @@ export const shippingPageCopy = {
     crumb: "Envío",
     days: "días",
     storage:
-      "La web pública de LoloBuy anuncia actualmente 180 días de almacenamiento gratuito. Úsalos como margen y confirma los términos y la fecha límite de cada pedido.",
+      "Comprueba en tu cuenta de LoloBuy las condiciones actuales de almacenamiento y la fecha límite de cada artículo. Planifica la consolidación o el envío con margen antes de esa fecha y revisa por separado los pedidos con un estado excepcional.",
     stages: [
       ["01 / ANTES DE LLEGAR", "Estima la combinación del paquete.", "Anota peso, dimensiones, materiales y restricciones aproximadas. Detecta combinaciones voluminosas o frágiles."],
       ["02 / EN ALMACÉN", "Resuelve pronto los problemas QC.", "El almacenamiento permite comparar llegadas y resolver diferencias antes del envío internacional."],
@@ -484,7 +484,7 @@ export const shippingPageCopy = {
     sourceEyebrow: "FUENTE COMPROBADA · 3 DE OCTUBRE DE 2026",
     sourceTitle: "Una página estática no puede cotizar tu coste final.",
     sourceText:
-      "El coste depende del paquete preparado y de una ruta elegible. Impuestos, declaraciones y reglas de importación pertenecen al destino. La página pública confirma 180 días de almacenamiento gratuito; usa la cuenta actual para decidir.",
+      "El coste depende del paquete preparado y de una ruta elegible. Impuestos, declaraciones y reglas de importación pertenecen al destino. Verifica las condiciones actuales de almacenamiento y la fecha límite de cada artículo en tu cuenta; consulta también la información aduanera oficial antes de decidir.",
     sourceLink: "Leer el artículo de envío verificado",
   },
   de: {
@@ -495,7 +495,7 @@ export const shippingPageCopy = {
     crumb: "Versand",
     days: "Tage",
     storage:
-      "LoloBuy wirbt öffentlich mit 180 Tagen kostenloser Lagerung. Nutze sie als Planungsfenster und prüfe aktuelle Bedingungen sowie die Frist jedes Auftrags.",
+      "Prüfe in deinem LoloBuy-Konto die aktuellen Lagerbedingungen und die Frist jedes Artikels. Plane Konsolidierung oder Versand mit ausreichendem Vorlauf vor dieser Frist und prüfe außergewöhnliche Auftragsstatus gesondert.",
     stages: [
       ["01 / VOR ANKUNFT", "Paketmix grob schätzen.", "Ungefähres Gewicht, Maße, Material und Einschränkungen notieren. Sperrige oder zerbrechliche Kombinationen erkennen."],
       ["02 / IM LAGER", "QC-Probleme früh klären.", "Lagerzeit schafft Raum zum Vergleichen und zur Klärung von Abweichungen vor dem internationalen Versand."],
@@ -513,7 +513,7 @@ export const shippingPageCopy = {
     sourceEyebrow: "QUELLE GEPRÜFT · 3. OKTOBER 2026",
     sourceTitle: "Keine statische Seite kann den Endpreis genau nennen.",
     sourceText:
-      "Die Kosten hängen vom gepackten Paket und einer zulässigen Route ab. Steuern, Deklarationen und Einfuhrregeln bestimmt das Zielland. LoloBuy bestätigt 180 Tage kostenlose Lagerung; für die Entscheidung gilt das Live-Konto.",
+      "Die Kosten hängen vom gepackten Paket und einer zulässigen Route ab. Steuern, Deklarationen und Einfuhrregeln bestimmt das Zielland. Prüfe aktuelle Lagerbedingungen und die Frist jedes Artikels im Konto; ziehe für die Entscheidung auch die offiziellen Zollinformationen heran.",
     sourceLink: "Ausführlichen Versandartikel lesen",
   },
   fr: {
@@ -524,7 +524,7 @@ export const shippingPageCopy = {
     crumb: "Expédition",
     days: "jours",
     storage:
-      "Le site public LoloBuy annonce actuellement 180 jours de stockage gratuit. Utilisez-les comme marge et confirmez les conditions et la date limite de chaque commande.",
+      "Vérifiez dans votre compte LoloBuy les conditions actuelles de stockage et l'échéance de chaque article. Prévoyez la consolidation ou l'expédition avec une marge avant cette date et vérifiez séparément toute commande au statut exceptionnel.",
     stages: [
       ["01 / AVANT L'ARRIVÉE", "Estimer la composition du colis.", "Notez poids, dimensions, matières et restrictions approximatifs. Repérez les associations volumineuses ou fragiles."],
       ["02 / EN STOCKAGE", "Résoudre tôt les problèmes QC.", "Le stockage permet de comparer les arrivées et de traiter un écart avant l'expédition internationale."],
@@ -542,7 +542,7 @@ export const shippingPageCopy = {
     sourceEyebrow: "SOURCE VÉRIFIÉE · 3 OCTOBRE 2026",
     sourceTitle: "Une page statique ne peut pas chiffrer votre coût final.",
     sourceText:
-      "Le coût dépend du colis emballé et d'une route admissible. Taxes, déclarations et importation relèvent du pays de destination. LoloBuy confirme 180 jours de stockage gratuit ; utilisez le compte actuel pour décider.",
+      "Le coût dépend du colis emballé et d'une route admissible. Taxes, déclarations et importation relèvent du pays de destination. Vérifiez les conditions actuelles de stockage et l'échéance de chaque article dans votre compte ; consultez aussi les informations douanières officielles avant de décider.",
     sourceLink: "Lire l'article détaillé sur l'expédition",
   },
   it: {
@@ -553,7 +553,7 @@ export const shippingPageCopy = {
     crumb: "Spedizione",
     days: "giorni",
     storage:
-      "Il sito pubblico LoloBuy pubblicizza 180 giorni di deposito gratuito. Usali come finestra di pianificazione e verifica termini e scadenza di ogni ordine.",
+      "Controlla nel tuo account LoloBuy le condizioni attuali di deposito e la scadenza di ogni articolo. Pianifica consolidamento o spedizione con un margine prima di quella data e verifica separatamente gli ordini con uno stato eccezionale.",
     stages: [
       ["01 / PRIMA DELL'ARRIVO", "Stima la composizione del pacco.", "Annota peso, dimensioni, materiali e restrizioni indicativi. Individua combinazioni ingombranti o fragili."],
       ["02 / IN MAGAZZINO", "Risolvi presto i problemi QC.", "Il deposito offre tempo per confrontare gli arrivi e gestire differenze prima della spedizione internazionale."],
@@ -571,7 +571,7 @@ export const shippingPageCopy = {
     sourceEyebrow: "FONTE VERIFICATA · 3 OTTOBRE 2026",
     sourceTitle: "Una pagina statica non può quotare il costo finale.",
     sourceText:
-      "Il costo dipende dal pacco preparato e da una rotta idonea. Tasse, dichiarazioni e regole d'importazione appartengono al paese di destinazione. LoloBuy conferma 180 giorni di deposito gratuito; usa l'account attuale per decidere.",
+      "Il costo dipende dal pacco preparato e da una rotta idonea. Tasse, dichiarazioni e regole d'importazione appartengono al paese di destinazione. Verifica le condizioni attuali di deposito e la scadenza di ogni articolo nell'account; consulta anche le informazioni doganali ufficiali prima di decidere.",
     sourceLink: "Leggi l'articolo dettagliato sulla spedizione",
   },
 } as const;
@@ -694,9 +694,9 @@ export const articlesIndexCopy = {
   },
   es: {
     eyebrow: "GUÍAS EDITORIALES",
-    title: "Guías investigadas, no promesas recicladas.",
+    title: "Guías LoloBuy: spreadsheet, QC, envíos y seguimiento",
     intro:
-      "Cada guía separa declaraciones públicas de LoloBuy, consejos prácticos y pruebas de usuarios. Los precios o servicios desconocidos quedan marcados para comprobarlos en la cuenta actual.",
+      "Guías LoloBuy para buscar productos, revisar fotos QC, calcular gastos de envío, preparar paquetes y seguir pedidos. Disponibles en cinco idiomas.",
     crumb: "Artículos",
     policyEyebrow: "POLÍTICA EDITORIAL",
     policyTitle: "Datos, observaciones e incógnitas se mantienen separados.",
@@ -705,9 +705,9 @@ export const articlesIndexCopy = {
   },
   de: {
     eyebrow: "REDAKTIONELLE RATGEBER",
-    title: "Recherchierte Leitfäden statt wiederholter Versprechen.",
+    title: "LoloBuy Ratgeber: Spreadsheet, QC, Versand und Tracking",
     intro:
-      "Jeder Leitfaden trennt öffentliche LoloBuy-Aussagen, praktische Hinweise und unabhängige Nutzerbelege. Unbekannte Preise oder Leistungen bleiben als Live-Prüfung markiert.",
+      "LoloBuy Ratgeber für Produktsuche, QC-Fotos, Versandkosten, Paketanträge und Tracking. Alle Artikel sind in fünf Sprachen verfügbar.",
     crumb: "Artikel",
     policyEyebrow: "REDAKTIONELLE RICHTLINIE",
     policyTitle: "Fakten, Beobachtungen und Unbekanntes bleiben getrennt.",
@@ -716,9 +716,9 @@ export const articlesIndexCopy = {
   },
   fr: {
     eyebrow: "GUIDES ÉDITORIAUX",
-    title: "Des guides documentés, pas des promesses recyclées.",
+    title: "Guides LoloBuy : spreadsheet, QC, livraison et suivi",
     intro:
-      "Chaque guide sépare déclarations publiques de LoloBuy, conseils pratiques et témoignages indépendants. Prix et services inconnus restent signalés pour vérification dans le compte actuel.",
+      "Guides LoloBuy pour trouver des produits, lire les photos QC, estimer les frais de livraison, préparer un colis et suivre une commande. Cinq langues disponibles.",
     crumb: "Articles",
     policyEyebrow: "POLITIQUE ÉDITORIALE",
     policyTitle: "Faits, observations et inconnues restent distincts.",
@@ -727,9 +727,9 @@ export const articlesIndexCopy = {
   },
   it: {
     eyebrow: "GUIDE EDITORIALI",
-    title: "Guide ricercate, non promesse riciclate.",
+    title: "Guide LoloBuy: spreadsheet, QC, spedizioni e tracking",
     intro:
-      "Ogni guida separa dichiarazioni pubbliche di LoloBuy, consigli pratici e prove indipendenti. Prezzi o servizi ignoti restano indicati per la verifica nell'account attuale.",
+      "Guide LoloBuy per trovare prodotti, leggere foto QC, stimare costi di spedizione, preparare pacchi e seguire ordini. Tutti gli articoli in cinque lingue.",
     crumb: "Articoli",
     policyEyebrow: "POLITICA EDITORIALE",
     policyTitle: "Fatti, osservazioni e incognite restano separati.",
@@ -743,7 +743,7 @@ export const articleUiCopy = {
     inGuide: "In this guide",
     changingTerms:
       "Platform services, prices and policies can change. Confirm the current terms before acting.",
-    factChecked: "Fact-checked",
+    factChecked: "Updated",
     readGuide: "Read guide",
     sourceIntro:
       "Platform claims and customer observations are kept separate. The notes below identify the research basis without sending visitors away from this guide. Confirm current account terms before acting.",
@@ -752,7 +752,7 @@ export const articleUiCopy = {
     inGuide: "En esta guía",
     changingTerms:
       "Servicios, precios y políticas pueden cambiar. Confirma los términos actuales antes de actuar.",
-    factChecked: "Verificado",
+    factChecked: "Actualizado",
     readGuide: "Leer guía",
     sourceIntro:
       "Las afirmaciones de plataforma y las observaciones de clientes se mantienen separadas. Las notas explican la base de investigación sin sacar al visitante de esta guía.",
@@ -761,7 +761,7 @@ export const articleUiCopy = {
     inGuide: "In diesem Ratgeber",
     changingTerms:
       "Leistungen, Preise und Regeln können sich ändern. Aktuelle Bedingungen vor dem Handeln prüfen.",
-    factChecked: "Geprüft",
+    factChecked: "Aktualisiert",
     readGuide: "Ratgeber lesen",
     sourceIntro:
       "Plattformaussagen und Kundenbeobachtungen bleiben getrennt. Die Hinweise nennen die Recherchegrundlage, ohne Besucher von dieser Seite wegzuschicken.",
@@ -770,7 +770,7 @@ export const articleUiCopy = {
     inGuide: "Dans ce guide",
     changingTerms:
       "Services, prix et règles peuvent changer. Confirmez les conditions actuelles avant d'agir.",
-    factChecked: "Vérifié",
+    factChecked: "Mis à jour",
     readGuide: "Lire le guide",
     sourceIntro:
       "Les affirmations de plateforme et les observations clients restent séparées. Ces notes indiquent la base de recherche sans faire quitter le guide.",
@@ -779,7 +779,7 @@ export const articleUiCopy = {
     inGuide: "In questa guida",
     changingTerms:
       "Servizi, prezzi e regole possono cambiare. Verifica i termini attuali prima di agire.",
-    factChecked: "Verificato",
+    factChecked: "Aggiornato",
     readGuide: "Leggi la guida",
     sourceIntro:
       "Le affermazioni della piattaforma e le osservazioni dei clienti restano separate. Le note indicano la base di ricerca senza portare il visitatore fuori dalla guida.",

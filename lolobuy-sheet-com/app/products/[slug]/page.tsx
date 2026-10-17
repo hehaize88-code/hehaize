@@ -711,7 +711,7 @@ export default async function ProductPage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path={`/products/${slug}`} />
       <article className="product-detail">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <span>

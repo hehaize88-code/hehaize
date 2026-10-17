@@ -6,7 +6,7 @@ import ProductImage from "../components/product-image";
 import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import { homeCopy, localizedPath, type Locale } from "../i18n";
-import { getLocalizedProducts } from "../localized-data";
+import type { ProductFind } from "../site-data";
 
 type Filter = "all" | "new" | "trending" | "essential";
 
@@ -142,11 +142,10 @@ const directoryCopy = {
   },
 } as const;
 
-export default function FindsClient({ locale }: { locale: Locale }) {
+export default function FindsClient({ locale, localizedProducts }: { locale: Locale; localizedProducts: ProductFind[] }) {
   const [activeFilter, setActiveFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
   const copy = directoryCopy[locale];
-  const localizedProducts = getLocalizedProducts(locale);
   const filters: { id: Filter; label: string }[] = [
     { id: "all", label: homeCopy[locale].filters.all },
     { id: "new", label: homeCopy[locale].filters.new },
@@ -172,7 +171,7 @@ export default function FindsClient({ locale }: { locale: Locale }) {
 
   return (
     <main className="finds-directory-page">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/finds" />
 
       <section className="finds-directory-hero">
         <nav className="breadcrumbs" aria-label="Breadcrumb">

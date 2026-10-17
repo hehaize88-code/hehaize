@@ -159,7 +159,7 @@ export const octoberArticles: Article[] = [
       },
       {
         "label": "LoloBuy public homepage — October 3, 2026",
-        "note": "Publicly describes link-based ordering, warehouse inspection and photographs, and currently advertises 180 days of free storage. The live account controls each item deadline; storage is not a return window."
+        "note": "Publicly describes link-based ordering, warehouse inspection and photographs. Verify current storage terms and each item's deadline in the live account; storage is not a return window."
       },
       {
         "label": "Lolobuy Sheet editorial method",
@@ -327,7 +327,7 @@ export const octoberArticles: Article[] = [
       },
       {
         "label": "LoloBuy public homepage — October 3, 2026",
-        "note": "Publicly describes link-based ordering, warehouse inspection and photographs, and currently advertises 180 days of free storage. The live account controls each item deadline; storage is not a return window."
+        "note": "Publicly describes link-based ordering, warehouse inspection and photographs. Verify current storage terms and each item's deadline in the live account; storage is not a return window."
       },
       {
         "label": "Lolobuy Sheet editorial method",
@@ -433,7 +433,7 @@ export const octoberArticles: Article[] = [
         "heading": "Handle a mismatch while the order can still be reviewed",
         "paragraphs": [
           "Keep the saved listing, chosen option, order details and relevant warehouse images together. Summarise the mismatch in one factual sentence and identify the requested outcome or next check. Do not edit the original photographs in a way that removes context; preserve them and use a separate annotated copy if you need to point at an area. A chronological record is easier to assess than scattered screenshots.",
-          "Check the live order status and available seller or platform action before international shipment. Storage time is not a promise of a return period. LoloBuy currently advertises 180 days of free storage publicly, but that does not establish a 180-day right to return shoes. Resolve a meaningful uncertainty before adding international freight and a new stage to the transaction."
+          "Check the live order status and available seller or platform action before international shipment. Storage time is not a promise of a return period. Verify current storage terms and the deadline for each item in your account, and check any return action separately. Resolve a meaningful uncertainty before adding international freight and a new stage to the transaction."
         ],
         "links": [
           {
@@ -494,7 +494,7 @@ export const octoberArticles: Article[] = [
       },
       {
         "label": "LoloBuy public homepage — October 3, 2026",
-        "note": "Publicly describes link-based ordering, warehouse inspection and photographs, and currently advertises 180 days of free storage. The live account controls each item deadline; storage is not a return window."
+        "note": "Publicly describes link-based ordering, warehouse inspection and photographs. Verify current storage terms and each item's deadline in the live account; storage is not a return window."
       },
       {
         "label": "Lolobuy Sheet editorial method",
@@ -694,7 +694,7 @@ export const octoberArticles: Article[] = [
       },
       {
         "label": "LoloBuy public homepage — October 3, 2026",
-        "note": "Publicly describes link-based ordering, warehouse inspection and photographs, and currently advertises 180 days of free storage. The live account controls each item deadline; storage is not a return window."
+        "note": "Publicly describes link-based ordering, warehouse inspection and photographs. Verify current storage terms and each item's deadline in the live account; storage is not a return window."
       },
       {
         "label": "Lolobuy Sheet editorial method",

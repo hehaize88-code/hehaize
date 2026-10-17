@@ -70,7 +70,7 @@ export default async function FindsPage({
 
   return (
     <>
-      <FindsClient locale={locale} />
+      <FindsClient locale={locale} localizedProducts={localizedProducts} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

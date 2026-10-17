@@ -3,7 +3,7 @@ import HomeClient from "./home-client";
 import JsonLd from "./components/json-ld";
 import { homeCopy, normalizeLocale, type Locale } from "./i18n";
 import { absoluteLocalizedUrl, localizedMetadata } from "./seo";
-import { getLocalizedArticles } from "./localized-data";
+import { getLocalizedArticles, getLocalizedFaqs } from "./localized-data";
 
 const homeMetadataCopy: Record<
   Locale,
@@ -25,9 +25,9 @@ const homeMetadataCopy: Record<
       "Durchsuche ein kuratiertes Lolobuy Spreadsheet, entdecke Kategorien, prüfe Lagerfotos mit einem QC-Leitfaden und öffne aktuelle Angebote.",
   },
   fr: {
-    title: "Spreadsheet Lolobuy 2026 | Produits et guide QC",
+    title: "Spreadsheet LoloBuy 2026 : liens produits, prix et QC",
     description:
-      "Parcourez un spreadsheet Lolobuy sélectionné, explorez les catégories, apprenez à contrôler les photos QC et ouvrez les fiches actuelles.",
+      "Trouvez des produits LoloBuy, comparez les prix en USD et consultez les guides QC, frais et livraison en France avant de préparer votre colis.",
   },
   it: {
     title: "Spreadsheet Lolobuy 2026 | Prodotti e guida QC",
@@ -65,7 +65,7 @@ export default async function Home({
 
   return (
     <>
-      <HomeClient locale={locale} latestArticles={latestArticles} />
+      <HomeClient locale={locale} latestArticles={latestArticles} localizedFaqs={getLocalizedFaqs(locale).slice(0, 5)} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

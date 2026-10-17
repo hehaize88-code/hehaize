@@ -40,7 +40,7 @@ export default async function CategoriesPage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/categories" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}

@@ -37,7 +37,7 @@ export default async function PrivacyPage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/privacy" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}

@@ -52,7 +52,20 @@ export default function AnalyticsTracker() {
       if (!(link instanceof HTMLAnchorElement)) return;
 
       const linkPath = cleanPath(link.href);
+      const language = document.documentElement.lang || "en";
       if(link.dataset.trackEvent) sendEvent(link.dataset.trackEvent,{page_path:window.location.pathname,destination_path:linkPath});
+      if (link.dataset.localeTarget) {
+        sendEvent("language_change", {language: link.dataset.localeTarget, page_path: window.location.pathname});
+      }
+      if (link.closest(".live-product-grid")) {
+        sendEvent("product_detail_click", {destination_path: linkPath, page_path: window.location.pathname, language});
+      }
+      if (!link.closest(".article-card") && /\/(articles|guides)\//.test(linkPath)) {
+        sendEvent("guide_click", {destination_path: linkPath, page_path: window.location.pathname, language});
+      }
+      if (link.closest(".article-context-links, .article-section-links")) {
+        sendEvent("article_internal_click", {destination_path: linkPath, page_path: window.location.pathname, language});
+      }
       if (link.closest(".article-card")) {
         sendEvent("article_click", {
           article_path: linkPath,

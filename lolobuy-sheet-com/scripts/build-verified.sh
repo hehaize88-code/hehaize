@@ -18,6 +18,9 @@ if [[ ! -x "${vinext}" ]]; then
   exit 69
 fi
 
+# The locale wrapper moves the generated entry to application.js. Remove the
+# previous generated tree so the next build cannot reuse a wrapped old entry.
+rm -rf -- "${SITES_PROJECT_ROOT}/dist"
 echo "Running bounded vinext build..."
 timeout \
   --signal=TERM \

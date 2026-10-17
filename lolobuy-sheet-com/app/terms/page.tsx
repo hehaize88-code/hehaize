@@ -34,7 +34,7 @@ export default async function TermsPage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/terms" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}

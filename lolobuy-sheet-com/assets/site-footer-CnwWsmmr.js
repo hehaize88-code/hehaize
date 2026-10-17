@@ -1,0 +1,1 @@
+import{r as e}from"./framework-DjPHiq1u.js";import{i as t}from"./site-header-DH6YxBH5.js";var n=e();function r({locale:e=`en`}){return(0,n.jsx)(`div`,{dangerouslySetInnerHTML:{__html:t(e)}})}export{r as t};

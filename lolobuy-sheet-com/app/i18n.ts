@@ -147,7 +147,7 @@ export const homeCopy = {
     title: "A smarter Lolobuy spreadsheet.",
     titleAccent: "Check QC. Shop with confidence.",
     intro:
-      "Discover product ideas, open current listings, and use fact-checked LoloBuy guides for link ordering, warehouse QC, 180-day storage and parcel planning.",
+      "Discover product ideas, open current listings, and use LoloBuy guides for link ordering, warehouse QC, storage deadlines and parcel planning.",
     explore: "Explore curated finds",
     workflow: "How it works",
     note: "Independent discovery guide · Always verify the live listing",
@@ -171,7 +171,7 @@ export const homeCopy = {
     storyEyebrow: "A USEFUL SHEET HAS LIMITS",
     storyTitle: "The public process is clear. The changing details still need checking.",
     storyOne:
-      "LoloBuy publicly describes link-based purchasing, warehouse inspection, photographs and 180 days of free storage. Its community ordering guide also describes consolidation, route selection and tracking.",
+      "LoloBuy publicly describes link-based purchasing, warehouse inspection and photographs. Its community ordering guide also describes consolidation, route selection and tracking. Verify current storage terms and each item's deadline in your account.",
     storyTwo:
       "It does not give this directory permission to invent a permanent shipping price, free-photo count or coupon value. Those details remain live-account checks.",
     storyLink: "See the complete workflow",
@@ -185,7 +185,7 @@ export const homeCopy = {
       ["Ship", "Choose an eligible route using final dimensions, weight and destination rules."],
     ],
     sourceNote:
-      "Lolobuy’s public flow describes warehouse inspection, photographs, consolidation and international shipping, and currently advertises 180 days of free storage. Confirm current terms on the platform.",
+      "Lolobuy’s public flow describes warehouse inspection, photographs, consolidation and international shipping. Confirm current storage terms and each item's deadline in your account.",
     readingEyebrow: "PRACTICAL READING",
     readingTitle: "Latest LoloBuy guides",
     readingLink: "View all articles",
@@ -240,7 +240,7 @@ export const homeCopy = {
       ["Enviar", "Elige una ruta según medidas, peso y reglas del destino."],
     ],
     sourceNote:
-      "El flujo público de Lolobuy describe inspección, fotos, consolidación y envío internacional, y anuncia 180 días de almacenamiento gratuito. Confirma las condiciones actuales.",
+      "El flujo público de Lolobuy describe inspección, fotos, consolidación y envío internacional. Confirma las condiciones actuales de almacenamiento y la fecha límite de cada artículo en tu cuenta.",
     readingEyebrow: "LECTURA PRÁCTICA",
     readingTitle: "Últimas guías LoloBuy",
     readingLink: "Ver todos los artículos",
@@ -295,7 +295,7 @@ export const homeCopy = {
       ["Versenden", "Wähle eine Route nach Endmaßen, Gewicht und Ziellandregeln."],
     ],
     sourceNote:
-      "Lolobuys öffentlicher Ablauf beschreibt Lagerprüfung, Fotos, Konsolidierung und internationalen Versand und wirbt derzeit mit 180 Tagen kostenloser Lagerung. Prüfe die aktuellen Bedingungen.",
+      "Lolobuys öffentlicher Ablauf beschreibt Lagerprüfung, Fotos, Konsolidierung und internationalen Versand. Prüfe die aktuellen Lagerbedingungen und die Frist jedes Artikels in deinem Konto.",
     readingEyebrow: "PRAKTISCHE RATGEBER",
     readingTitle: "Neueste LoloBuy-Ratgeber",
     readingLink: "Alle Artikel ansehen",
@@ -350,7 +350,7 @@ export const homeCopy = {
       ["Expédier", "Choisissez une route selon dimensions, poids et règles du pays."],
     ],
     sourceNote:
-      "Le parcours public de Lolobuy décrit inspection, photos, consolidation et expédition internationale, avec 180 jours de stockage gratuit annoncés. Confirmez les conditions actuelles.",
+      "Le parcours public de Lolobuy décrit inspection, photos, consolidation et expédition internationale. Confirmez les conditions actuelles de stockage et l'échéance de chaque article dans votre compte.",
     readingEyebrow: "LECTURES PRATIQUES",
     readingTitle: "Derniers guides LoloBuy",
     readingLink: "Voir tous les articles",
@@ -405,7 +405,7 @@ export const homeCopy = {
       ["Spedisci", "Scegli una rotta in base a dimensioni, peso e regole del paese."],
     ],
     sourceNote:
-      "Il flusso pubblico di Lolobuy descrive ispezione, foto, consolidamento e spedizione internazionale e pubblicizza 180 giorni di deposito gratuito. Verifica i termini attuali.",
+      "Il flusso pubblico di Lolobuy descrive ispezione, foto, consolidamento e spedizione internazionale. Verifica le condizioni attuali di deposito e la scadenza di ogni articolo nel tuo account.",
     readingEyebrow: "LETTURE PRATICHE",
     readingTitle: "Ultime guide LoloBuy",
     readingLink: "Vedi tutti gli articoli",
@@ -476,7 +476,7 @@ export const faqPageCopy = {
     crumb: "FAQ",
     panelTitle: "Four facts are public. The gaps are labelled.",
     panelText:
-      "The official English homepage states that LoloBuy assists purchases from online and offline channels in China, lets users begin with a pasted product link, inspects and photographs warehouse arrivals, and advertises 180 days of free storage. It does not publicly specify many fixed fees, photo quantities, return rules or international route terms, so this FAQ tells you exactly what still needs a live-order check.",
+      "The official English homepage states that LoloBuy assists purchases from online and offline channels in China, lets users begin with a pasted product link, and inspects and photographs warehouse arrivals. Storage terms and item-specific deadlines require a current account check. The homepage does not publicly specify many fixed fees, photo quantities, return rules or international route terms, so this FAQ tells you exactly what still needs a live-order check.",
   },
   es: {
     eyebrow: "PREGUNTAS FRECUENTES",
@@ -486,7 +486,7 @@ export const faqPageCopy = {
     crumb: "Preguntas",
     panelTitle: "Hay cuatro datos públicos; los vacíos están señalados.",
     panelText:
-      "La página oficial indica compras en canales chinos online y offline, inicio mediante enlace, inspección y fotos al llegar al almacén y 180 días de almacenamiento gratuito. Los demás precios y reglas deben comprobarse en el pedido actual.",
+      "La página oficial indica compras en canales chinos online y offline, inicio mediante enlace e inspección y fotos al llegar al almacén. Las condiciones de almacenamiento, la fecha límite de cada artículo y los demás precios y reglas deben comprobarse en el pedido actual.",
   },
   de: {
     eyebrow: "HÄUFIGE FRAGEN",
@@ -496,7 +496,7 @@ export const faqPageCopy = {
     crumb: "FAQ",
     panelTitle: "Vier Fakten sind öffentlich; Lücken sind markiert.",
     panelText:
-      "Die offizielle Seite nennt Einkäufe über chinesische Online- und Offline-Kanäle, den Start per Produktlink, Prüfung und Fotos im Lager sowie 180 Tage kostenlose Lagerung. Weitere Preise und Regeln sind im aktuellen Auftrag zu prüfen.",
+      "Die offizielle Seite nennt Einkäufe über chinesische Online- und Offline-Kanäle, den Start per Produktlink sowie Prüfung und Fotos im Lager. Lagerbedingungen, die Frist jedes Artikels sowie weitere Preise und Regeln sind im aktuellen Auftrag zu prüfen.",
   },
   fr: {
     eyebrow: "QUESTIONS FRÉQUENTES",
@@ -506,7 +506,7 @@ export const faqPageCopy = {
     crumb: "FAQ",
     panelTitle: "Quatre faits sont publics ; les lacunes sont signalées.",
     panelText:
-      "La page officielle mentionne les achats via des canaux chinois en ligne et hors ligne, le démarrage par lien produit, l’inspection et les photos en entrepôt, ainsi que 180 jours de stockage gratuit. Les autres prix et règles doivent être vérifiés sur la commande.",
+      "La page officielle mentionne les achats via des canaux chinois en ligne et hors ligne, le démarrage par lien produit, l’inspection et les photos en entrepôt. Les conditions de stockage, l'échéance de chaque article et les autres prix et règles doivent être vérifiés sur la commande actuelle.",
   },
   it: {
     eyebrow: "DOMANDE FREQUENTI",
@@ -516,7 +516,7 @@ export const faqPageCopy = {
     crumb: "FAQ",
     panelTitle: "Quattro fatti sono pubblici; le lacune sono indicate.",
     panelText:
-      "La pagina ufficiale cita acquisti da canali cinesi online e offline, avvio tramite link prodotto, ispezione e foto in magazzino e 180 giorni di deposito gratuito. Altri prezzi e regole vanno verificati nell’ordine attuale.",
+      "La pagina ufficiale cita acquisti da canali cinesi online e offline, avvio tramite link prodotto, ispezione e foto in magazzino. Condizioni di deposito, scadenza di ogni articolo e altri prezzi e regole vanno verificati nell’ordine attuale.",
   },
 } as const;
 
@@ -536,7 +536,7 @@ export const workflowPageCopy = {
     evidenceEyebrow: "PUBLICLY CONFIRMED",
     evidenceTitle: "LoloBuy starts with a product link, then uses the warehouse as a decision point.",
     evidenceIntro:
-      "LoloBuy's public website says it assists with purchases from Chinese online and offline channels. After a merchant sends the item to the warehouse, LoloBuy says it conducts quality inspection, takes photos and provides 180 days of free storage.",
+      "LoloBuy's public website says it assists with purchases from Chinese online and offline channels. After a merchant sends the item to the warehouse, LoloBuy says it conducts quality inspection and takes photos. Check current storage terms and each item's deadline in your account.",
     evidenceFacts: [
       ["Link ordering", "Paste the live source link and keep the exact option, size and color with your order record."],
       ["Warehouse evidence", "Review the physical arrival through the order record and QC photos before international submission."],
@@ -572,7 +572,7 @@ export const workflowPageCopy = {
     evidenceEyebrow: "CONFIRMADO PÚBLICAMENTE",
     evidenceTitle: "LoloBuy empieza con un enlace y usa el almacén como punto de decisión.",
     evidenceIntro:
-      "La web pública de LoloBuy indica que ayuda a comprar en canales chinos. Tras la llegada al almacén, afirma realizar inspección, tomar fotos y ofrecer 180 días de almacenamiento gratuito.",
+      "La web pública de LoloBuy indica que ayuda a comprar en canales chinos. Tras la llegada al almacén, afirma realizar inspección y tomar fotos. Comprueba las condiciones actuales de almacenamiento y la fecha límite de cada artículo en tu cuenta.",
     evidenceFacts: [
       ["Pedido por enlace", "Pega la ficha actual y guarda la opción, talla y color exactos."],
       ["Pruebas del almacén", "Revisa el artículo físico mediante el pedido y las fotos QC antes del envío."],
@@ -608,7 +608,7 @@ export const workflowPageCopy = {
     evidenceEyebrow: "ÖFFENTLICH BESTÄTIGT",
     evidenceTitle: "LoloBuy beginnt mit einem Produktlink und macht das Lager zum Prüfpunkt.",
     evidenceIntro:
-      "Laut öffentlicher Website unterstützt LoloBuy Einkäufe über chinesische Kanäle. Nach Lagereingang werden Qualitätsprüfung und Fotos sowie 180 Tage kostenlose Lagerung beschrieben.",
+      "Laut öffentlicher Website unterstützt LoloBuy Einkäufe über chinesische Kanäle. Nach Lagereingang werden Qualitätsprüfung und Fotos beschrieben. Prüfe aktuelle Lagerbedingungen und die Frist jedes Artikels in deinem Konto.",
     evidenceFacts: [
       ["Bestellung per Link", "Live-Link einfügen und genaue Option, Größe und Farbe dokumentieren."],
       ["Lagernachweis", "Den eingegangenen Artikel vor dem Versand anhand von Bestellung und QC-Fotos prüfen."],
@@ -644,7 +644,7 @@ export const workflowPageCopy = {
     evidenceEyebrow: "CONFIRMÉ PUBLIQUEMENT",
     evidenceTitle: "LoloBuy commence par un lien produit et fait de l’entrepôt un point de décision.",
     evidenceIntro:
-      "Le site public de LoloBuy indique aider aux achats via des canaux chinois. Après réception, il décrit un contrôle qualité, des photos et 180 jours de stockage gratuit.",
+      "Le site public de LoloBuy indique aider aux achats via des canaux chinois. Après réception, il décrit un contrôle qualité et des photos. Vérifiez les conditions actuelles de stockage et l'échéance de chaque article dans votre compte.",
     evidenceFacts: [
       ["Commande par lien", "Collez la fiche actuelle et conservez l’option, la taille et la couleur exactes."],
       ["Preuve d’entrepôt", "Examinez l’article reçu avec la commande et les photos QC avant l’envoi."],
@@ -680,7 +680,7 @@ export const workflowPageCopy = {
     evidenceEyebrow: "CONFERMATO PUBBLICAMENTE",
     evidenceTitle: "LoloBuy parte da un link prodotto e usa il magazzino come punto decisionale.",
     evidenceIntro:
-      "Il sito pubblico di LoloBuy descrive l’assistenza agli acquisti da canali cinesi. Dopo l’arrivo, indica controllo qualità, foto e 180 giorni di deposito gratuito.",
+      "Il sito pubblico di LoloBuy descrive l’assistenza agli acquisti da canali cinesi. Dopo l’arrivo, indica controllo qualità e foto. Verifica le condizioni attuali di deposito e la scadenza di ogni articolo nel tuo account.",
     evidenceFacts: [
       ["Ordine tramite link", "Incolla la scheda attuale e conserva opzione, taglia e colore esatti."],
       ["Prova del magazzino", "Controlla l’articolo ricevuto con ordine e foto QC prima della spedizione."],

@@ -1,3 +1,5 @@
+
+import GuideShortcuts from "../../components/guide-shortcuts";
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "../../components/json-ld";
@@ -36,7 +38,7 @@ export default async function ShippingGuidePage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/guides/shipping" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}
@@ -50,11 +52,13 @@ export default async function ShippingGuidePage({
 
       <section className="shipping-fact">
         <div>
-          <span>180</span>
-          <b>{copy.days}</b>
+          <span aria-hidden="true">◷</span>
+          <b>{({en:"Storage deadline",fr:"Échéance de stockage",de:"Lagerfrist",es:"Plazo de almacenaje",it:"Scadenza del deposito"})[locale]}</b>
         </div>
         <p>{copy.storage}</p>
       </section>
+
+      <GuideShortcuts locale={locale} />
 
       <section className="shipping-grid">
         {copy.stages.map((stage) => (
@@ -105,7 +109,7 @@ export default async function ShippingGuidePage({
           headline: copy.title,
           description: copy.intro,
           datePublished: "2026-07-26",
-          dateModified: "2026-10-03",
+          dateModified: "2026-10-17",
           image: "https://lolobuy-sheet.com/articles/plan-china-shopping-haul.webp",
           mainEntityOfPage: `https://lolobuy-sheet.com${localizedPath("/guides/shipping", locale)}`,
           author: { "@type": "Organization", name: "Lolobuy Sheet" },

@@ -1,16 +1,5 @@
 import type { Article } from "./site-data";
 
-export const englishOnlyArticleSlugs = new Set([
-  "lolobuy-product-link-not-working",
-  "lolobuy-image-search-guide",
-  "lolobuy-order-status-guide",
-  "lolobuy-fees-explained",
-  "lolobuy-payment-guide",
-  "lolobuy-return-refund-guide",
-  "lolobuy-extra-qc-photos-measurements",
-  "lolobuy-restricted-items-shipping-routes",
-]);
-
 export const priorityArticles: Article[] = [
   {
     slug: "lolobuy-product-link-not-working",
@@ -216,13 +205,13 @@ export const priorityArticles: Article[] = [
       ],
     },
     sources: [
-      { label: "LoloBuy public website — checked September 15, 2026", note: "Primary source for the broad purchase, warehouse inspection, photograph, 180-day storage and international-shipping flow." },
+      { label: "LoloBuy public website — checked September 15, 2026", note: "Primary source for the broad purchase, warehouse inspection, photograph and international-shipping flow. Verify current storage terms and each item's deadline in the account." },
       { label: "Current account order and parcel records", note: "The live status label, timestamp, available action and support response control an individual case." },
       { label: "Lolobuy Sheet stage-owner framework", note: "The diagnostic matrix is independent editorial guidance, not a promised service timeline." },
     ],
     intro: [
       "A status label is useful only when it is tied to a stage, timestamp and responsible party. 'Seller sent' does not mean an international parcel has left China; 'stored' does not mean the item has been approved; and a tracking number does not always mean the carrier has completed its first physical scan. Treating the whole journey as one clock creates false alarms and late decisions.",
-      "LoloBuy's public website describes purchasing, warehouse inspection and photographs, 180 days of free storage, and international shipping. It does not publish a universal deadline for every status. This guide therefore focuses on evidence: what each stage normally represents, what to verify, and what information makes a support request actionable.",
+      "LoloBuy's public website describes purchasing, warehouse inspection and photographs, and international shipping. Verify current storage terms and each item's deadline in your account. The public page does not publish a universal deadline for every status. This guide therefore focuses on evidence: what each stage normally represents, what to verify, and what information makes a support request actionable.",
     ],
     sections: [
       {
@@ -257,7 +246,7 @@ export const priorityArticles: Article[] = [
       {
         heading: "Understand stored as availability, not perfection",
         paragraphs: [
-          "Stored means the item has reached the warehouse stage and can usually become part of a later parcel decision; it does not prove that the seller page, size, colour or condition matches your expectation. LoloBuy publicly advertises 180 days of free storage, but that storage statement is not the same as a 180-day return right or a promise that every action remains available for the full period.",
+          "Stored means the item has reached the warehouse stage and can usually become part of a later parcel decision; it does not prove that the seller page, size, colour or condition matches your expectation. Verify current storage terms and the deadline for that item in your account. A storage period is not a return right or a promise that every action remains available for the full period.",
           "Record each item's warehouse date and unresolved issue. In a multi-item haul, the oldest item can shape the practical planning window even if newer items arrived later. Resolve QC questions before focusing on consolidation, because parcel preparation is the point where separate stored items become one shipping decision.",
         ],
       },
@@ -457,7 +446,7 @@ export const priorityArticles: Article[] = [
         heading: "Protect the parcel payment from last-minute assumptions",
         paragraphs: [
           "Check the delivery address in the final parcel record, including recipient, postal code, region and phone format if requested. Compare it with a reliable address source rather than memory. A payment confirmation cannot correct a wrong destination, and a route selected for another country may not remain eligible after an address change.",
-          "Do not pay merely because stored time is passing. LoloBuy publicly advertises 180 days of free storage, but that statement is not a substitute for the live storage date or a reason to rush an unresolved QC issue into a parcel. Resolve material mismatches and verify the oldest item before authorizing shipping.",
+          "Do not pay merely because stored time is passing. Check current storage terms and each item's deadline in your account, but do not use time pressure as a reason to rush an unresolved QC issue into a parcel. Resolve material mismatches and verify the oldest item before authorizing shipping.",
         ],
       },
       {
@@ -497,7 +486,7 @@ export const priorityArticles: Article[] = [
     ],
     intro: [
       "The best time to investigate a wrong item, visible defect or missing piece is before it becomes part of an international parcel. At the warehouse stage, the source order and inspection photographs can still be compared in one record. After dispatch, the problem may involve additional freight, carrier handling and destination evidence, making the remedy more complex.",
-      "LoloBuy publicly confirms that warehouse arrivals are inspected and photographed and advertises 180 days of free storage. Its indexed public homepage does not publish one return window, fee table or refund time for every seller and order. A useful guide must therefore show how to find the current action and build a precise case without promising a result.",
+      "LoloBuy publicly states that warehouse arrivals are inspected and photographed. Verify current storage terms and each item's deadline in your account. Its indexed public homepage does not publish one return window, fee table or refund time for every seller and order. A useful guide must therefore show how to find the current action and build a precise case without promising a result.",
     ],
     sections: [
       {
@@ -525,7 +514,7 @@ export const priorityArticles: Article[] = [
       {
         heading: "Check the live order for the action and deadline",
         paragraphs: [
-          "Open the specific order and inspect the current status, warehouse date, available return or after-sales action, displayed deadline and any seller condition. The public homepage's 180-day storage statement is not a 180-day return right. Storage, seller acceptance and platform processing are separate questions and can run on different clocks.",
+          "Open the specific order and inspect the current status, warehouse date, available return or after-sales action, displayed deadline and any seller condition. Verify current storage terms and the item-specific deadline separately from any return deadline. Storage, seller acceptance and platform processing are separate questions and can run on different clocks.",
           "If the interface is unclear, ask support which action is available now and what evidence or cost it requires. Save the response with its date. Do not borrow a return window, free-return promise or refund timetable from another agent, marketplace or old tutorial; it may not apply to this order.",
         ],
       },

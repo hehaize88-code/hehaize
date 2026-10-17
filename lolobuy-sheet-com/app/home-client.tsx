@@ -1,5 +1,7 @@
 "use client";
 
+import GuideShortcuts from "./components/guide-shortcuts";
+
 import LiveProducts from "./components/live-products";
 import { commerceCopy } from "./commerce-copy";
 import Image from "next/image";
@@ -9,9 +11,6 @@ import ProductSearch from "./components/product-search";
 import SiteFooter from "./components/site-footer";
 import SiteHeader from "./components/site-header";
 import { homeCopy, localizedPath, type Locale } from "./i18n";
-import {
-  getLocalizedFaqs,
-} from "./localized-data";
 
 const categoryEdits = [
   {
@@ -36,9 +35,8 @@ const categoryEdits = [
   },
 ];
 
-export default function HomeClient({ locale, latestArticles }: { locale: Locale; latestArticles: ArticleSummary[] }) {
+export default function HomeClient({ locale, latestArticles, localizedFaqs }: { locale: Locale; latestArticles: ArticleSummary[]; localizedFaqs: { question: string; basis: string; answer: string }[] }) {
   const copy = {...homeCopy[locale],...commerceCopy[locale]};
-  const localizedFaqs = getLocalizedFaqs(locale);
 
   return (
     <main className="home-page">
@@ -76,6 +74,8 @@ export default function HomeClient({ locale, latestArticles }: { locale: Locale;
 
         <LiveProducts locale={locale} />
       </section>
+
+      <GuideShortcuts locale={locale} />
 
       <section className="browse-edit" aria-labelledby="browse-edit-title">
         <div className="section-heading-row">

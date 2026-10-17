@@ -36,7 +36,7 @@ export default async function QcGuidePage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path="/guides/qc" />
       <PageHero
         eyebrow={copy.eyebrow}
         title={copy.title}

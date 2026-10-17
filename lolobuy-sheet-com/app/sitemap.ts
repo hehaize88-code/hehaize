@@ -1,79 +1,24 @@
 import type { MetadataRoute } from "next";
 import { localeOptions, localizedPath } from "./i18n";
 import { languageAlternates } from "./seo";
-import { articles } from "./site-data";
+import { getLocalizedArticles } from "./localized-data";
 import { categoryGuideSlugs } from "./category-guide-data";
-import { englishOnlyArticleSlugs } from "./priority-articles";
 
 const baseUrl = "https://lolobuy-sheet.com";
-const staticLastModified = new Date("2026-10-03");
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [
-    "",
-    "/categories",
-    "/how-it-works",
-    "/guides/qc",
-    "/guides/shipping",
-    "/articles",
-    "/faq",
-    "/about",
-    "/contact",
-    "/privacy",
-    "/terms",
-  ];
-
-  const pages = [
-    ...staticRoutes.map((path) => ({
-      path: path || "/",
-      lastModified: staticLastModified,
-      changeFrequency:
-        path === "" ? ("daily" as const) : ("monthly" as const),
-      priority: path === "" ? 1 : path.startsWith("/guides") ? 0.8 : 0.7,
-    })),
-    ...articles.map((article) => ({
-      path: `/articles/${article.slug}`,
-      lastModified: new Date(JSON.stringify(article).includes("180") ? "2026-10-03" : article.updated),
+  const staticRoutes = ["/", "/categories", "/how-it-works", "/guides/qc", "/guides/shipping", "/articles", "/faq", "/about", "/contact", "/privacy", "/terms"];
+  return localeOptions.flatMap(({code: locale}) => {
+    const pages = [
+      ...staticRoutes.map(path => ({path, updated: "2026-10-17", priority: path === "/" ? 1 : 0.8})),
+      ...getLocalizedArticles(locale).map(article => ({path: `/articles/${article.slug}`, updated: article.updated, priority: 0.8})),
+      ...categoryGuideSlugs.map(slug => ({path: `/categories/${slug}`, updated: "2026-10-17", priority: 0.8})),
+    ];
+    return pages.map(page => ({
+      url: `${baseUrl}${localizedPath(page.path, locale)}`,
+      lastModified: new Date(page.updated),
       changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    ...categoryGuideSlugs.map((slug) => ({
-      path: `/categories/${slug}`,
-      lastModified: staticLastModified,
-      changeFrequency: "weekly" as const,
-      priority: 0.86,
-    })),
-  ];
-
-  return pages.flatMap((page) => {
-    const articleSlug = page.path.startsWith("/articles/")
-      ? page.path.slice("/articles/".length)
-      : null;
-    const locales =
-      articleSlug && englishOnlyArticleSlugs.has(articleSlug)
-        ? localeOptions.filter((option) => option.code === "en")
-        : localeOptions;
-    const alternates =
-      articleSlug && englishOnlyArticleSlugs.has(articleSlug)
-        ? {
-            en: `${baseUrl}${localizedPath(page.path, "en")}`,
-            "x-default": `${baseUrl}${localizedPath(page.path, "en")}`,
-          }
-        : Object.fromEntries(
-            Object.entries(languageAlternates(page.path)).map(([locale, path]) => [
-              locale,
-              `${baseUrl}${path}`,
-            ]),
-          );
-
-    return locales.map((option) => ({
-      url: `${baseUrl}${localizedPath(page.path, option.code)}`,
-      lastModified: page.lastModified,
-      changeFrequency: page.changeFrequency,
       priority: page.priority,
-      alternates: {
-        languages: alternates,
-      },
+      alternates: {languages: Object.fromEntries(Object.entries(languageAlternates(page.path)).map(([lang,path]) => [lang, `${baseUrl}${path}`]))},
     }));
   });
 }

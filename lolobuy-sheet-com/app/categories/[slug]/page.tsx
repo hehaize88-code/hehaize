@@ -67,7 +67,7 @@ export default async function CategoryGuidePage({
 
   return (
     <main className="mobile-inner">
-      <SiteHeader locale={locale} />
+      <SiteHeader locale={locale} path={`/categories/${slug}`} />
       <PageHero
         eyebrow={guide.eyebrow}
         title={guide.title}
