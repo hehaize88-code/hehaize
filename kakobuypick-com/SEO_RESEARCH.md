@@ -52,18 +52,9 @@
 
 ## 内容与本地化
 
-- 10 篇独立原创英文文章，每篇约 527–589 个词（不含表格/来源等辅助内容）；每篇均有五个正文部分、独立表格和行动清单，不为凑字数扩充为重复模板。
+- 10 篇独立原创英文文章，每篇正文约 463–522 个英文词（仅统计正文段落，不含标题、表格、清单和来源）；每篇均有五个正文部分、独立表格和行动清单，不为凑字数扩充为重复模板。
 - 26 条 FAQ，分五组；每条链接相应官网或本站实际数据来源。FAQ 不混入文章正文。
-- 24 语维持同一 slug、章节、条目、表格、来源和内链。英文为事实基准；其余 23 语通过一次性翻译脚本辅助生成，再检查结构、数字与关键限定。页面运行时不调用翻译服务。
+- 24 语维持同一 slug、章节、条目、表格、来源和内链。英文为事实基准；其余 23 语先由翻译工具辅助起草，再逐项对照英文校对；对出现缺句、否定丢失、仓储时限和物流术语错误的稿件重新撰写。发布前检查结构、数字、关键限定及未翻译的整句英文。页面运行时不调用翻译服务。
 - 翻译脚本只发送公开原创文案，不发送账户、订单、密钥或商品数据；不是产品数据库或后台。
 - 官方来源、采编建议和算例在页面上明确区分。作者为站点编辑团队，不虚构个人经历、用户评价、实测购买或专家资质。
 - 上线保留 `noindex,nofollow` 与禁止抓取，直到用户确认视觉与内容验收；不得声称结构化数据保证搜索富结果或排名。
-
-## Localization review and release gate
-
-- English is the authored factual baseline. Editorial content is fully present in all 24 locale JSON files; these contain text, not product records.
-- Initial machine assistance encountered HTTP 429 limits; retries were stopped. Remaining text was translated locally with Helsinki-NLP OPUS models (Apache-2.0 model cards), then reviewed for brand names, numeric examples, omitted qualifications and untranslated sentences. Rejected M2M/low-quality samples were not retained as final content.
-- Storage, processing times, inspection limitations, conditional returns and zero-fee qualifications received explicit wording corrections. Irish and Maltese FAQ answers were rewritten during review.
-- Translation is machine-assisted and has not received independent native-speaker certification. Native-language style polishing remains appropriate before opening SEO indexing.
-- Source labels and short numeric examples are reviewed separately. Model-generated reference numbers, altered units, long numeric placeholders and residual English sentences were corrected.
-- Runtime and build do not contact any translation service or load translation models. Only the reviewed JSON text is deployed.

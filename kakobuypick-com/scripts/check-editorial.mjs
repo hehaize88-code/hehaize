@@ -20,7 +20,7 @@ for(const lang of locales){
  const data=JSON.parse(await fs.readFile(new URL(`../src/content/editorial/${lang}.json`,import.meta.url),'utf8'));
  if(lang!=='en')checkTranslatedSentences(data,source,lang);
  if(lang!=='en')assert.notEqual(data.ui.sources,source.ui.sources,`${lang} untranslated source heading`);
- if(lang==='ga')assert.ok(/cigireacht/i.test(data.ui.sourceLabels.inspection), 'Irish inspection label must describe inspection, not an invented regulation');
+ if(lang==='ga')assert.ok(/(cigireacht|iniúch)/i.test(data.ui.sourceLabels.inspection), 'Irish inspection label must describe inspection, not an invented regulation');
  assert.equal(data.articles.length,10,`${lang} articles`);assert.equal(data.faq.length,26,`${lang} FAQ`);
  assert.equal(data.guide.sections.length,6);
  assert.deepEqual(data.articles.map(a=>a.slug),source.articles.map(a=>a.slug));

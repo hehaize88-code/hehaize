@@ -37,8 +37,9 @@ Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2
 - The same routes and content structure are available in all 24 languages; switching languages preserves the current article and query. Source dates, scope limitations and illustrative calculations remain explicit.
 - Top and footer navigation link to standalone pages. Mobile navigation wraps visibly; the article contents list starts collapsed on narrow screens. Home shows four article cards and a short FAQ introduction.
 - `SEO_RESEARCH.md` records keyword intent and official evidence. `src/content/editorial/en.json` is the factual baseline; the other locale JSON files contain complete, committed text. These are editorial documents, not a product database.
-- `scripts/localize-editorial.py` is an optional one-time authoring aid. It is never run by the build or the live Worker, sends only public editorial copy, and observes upstream rate limits. Do not rerun it over reviewed translations without reviewing the diff.
-- `node scripts/check-editorial.mjs` checks all locale routes, article/FAQ counts, section parity, critical numbers, schemas, canonical/hreflang, navigation and redirects after building.
+- Reviewed translations are committed source content. No translation service runs during builds or page requests. Edit them against the English factual baseline and review the diff before replacing existing text.
+- `npm run check:content` runs before every build. It requires all 24 locale files, exact content structure, stable identifiers, all numeric facts (allowing local separators) and no unchanged English sentences in translated content.
+- `node scripts/check-editorial.mjs` checks 312 editorial responses across all locales, article/FAQ counts, section parity, critical numbers, schemas, canonical/hreflang, navigation and redirects after building.
 
 ## Product data contract
 
@@ -76,4 +77,4 @@ The earlier temporary preview was hosted separately and was blocked for the user
 
 The original preview passed build and live data checks: 12 home products, 60 filtered/sorted list products, detail photos and seller purchase URLs. All translation keys and 11 category labels exist for all 24 locales. Public-domain desktop verification is now complete in the user's connected Chrome: home images, German navigation, keyword search, price sorting, detail purchase URL, and www redirect passed. See PROJECT_MEMORY.md for deployment IDs and remaining acceptance scope.
 
-The 24 editorial locales are checked in as reviewed, machine-assisted text. Native-language style polishing remains a pre-indexing task. One-time translation scripts are authoring utilities only; do not run them during build/deployment or overwrite reviewed content without a new content review. Source labels and numeric examples require separate verification.
+The 2026-10-17 editorial release passed all 312 response checks and the Worker deployment dry-run (747.79 KiB gzip, no bindings). Translations were compared with the English baseline and materially corrupted passages were rewritten. Build-time checks prevent incomplete locale sets or changed numeric facts from being deployed.
