@@ -182,3 +182,9 @@ User explicitly authorized implementation, all-language article additions and pr
 - Added GA4 article_view for direct article landings and guide_to_catalog_click for article-to-catalogue journeys; existing product/register/search/calculator events retained. These are browsing/intention events, not sales. GA4 admin key-event settings not changed.
 - python3 build.py and node tests/release.mjs pass (600 assertions). Static audit checked 125 articles, 2,570 internal links, 155 sitemap URLs, English word ranges and preservation of old bodies. Mocked Worker check confirmed original Weidian ID and correct five-language guides.
 - Managed local preview failed before startup with bwrap /proc permission error; do not change site code or security settings to bypass it. Verify responsive UI on production after GitHub deployment.
+
+### Production verification and language polish
+
+GitHub commit 385a2de deployed successfully through the existing integration. Live product-link guides verified in EN/DE/ES/FR/IT, including same-route language switching and self-canonical URLs. At 390 px and 320 px viewport settings, document width equalled scroll width; mobile chapters collapsed and all 9 jacket chapters expanded correctly. The Italian calculator returned 2 kg actual / 6 kg volumetric / 6 kg billed for its default example.
+
+A follow-up editorial review replaced awkward legacy calculator translations in DE/ES/FR/IT, preserving all 13 topics, examples, units, model limits and workflow guidance. All 25 articles in each language remain. The previous statement about verbatim preservation refers to the first release; these four calculator bodies are now deliberately polished. GSC Wizard IndexNow configuration read was unavailable because its subscription had ended; no IndexNow or manual sitemap submission is claimed. The updated sitemap remains published for the existing search-engine registrations.

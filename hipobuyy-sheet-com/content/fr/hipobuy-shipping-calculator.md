@@ -2,92 +2,92 @@ Ce calculateur modélise poids emballé et tarif facultatif saisi, sans prix Hip
 
 [Comparer l’ensemble des coûts](/fr/articles/shipping-cost-checklist/)
 
-## Une calculatrice d'expédition est une estimation, pas une promesse
+## Un calculateur fournit une estimation
 
-Les personnes qui cherchent une calculatrice d'expédition Hipobuy veulent habituellement un numéro : quel sera le coût du colis pour expédier? La difficulté est que le transport international n'est pas déterminé par le prix du produit seulement. La destination, le contenu du colis, le poids physique, les dimensions emballées, les restrictions de route et la méthode de facturation de la compagnie maritime affectent tous le résultat.
+Une personne qui recherche un calculateur Hipobuy souhaite connaître le coût de livraison de son colis. Le prix du produit ne suffit pas. Destination, contenu, poids réel, dimensions emballées, restrictions de la ligne et méthode de facturation du transporteur influencent le résultat.
 
-Le flux de travail public d'Hipobuy sépare l'achat de produits de la livraison de colis internationaux. Les pages de produits actuelles peuvent afficher une section d'expédition internationale estimée, mais le colis final dépend toujours de ce qui atteint l'entrepôt et de la façon dont le colis est emballé. Utilisez une calculatrice pour comparer les scénarios, et non pour promettre une charge finale avant l'emballage.
+Hipobuy sépare achat du produit et transport international. Les fiches peuvent présenter une estimation de livraison, mais le montant final dépend des articles reçus et de leur emballage. Utilisez le calculateur pour comparer des scénarios sans transformer un résultat préalable à l’emballage en prix garanti.
 
-## Commencez par le poids réel
+## Commencer par le poids réel
 
-Le poids réel est le poids physique du colis emballé. Si les frais de route sont uniquement en poids réel, le calcul est relativement direct: le poids facturable suit les règles d'arrondi et le tableau des prix de la compagnie maritime. Le problème est que de nombreux itinéraires n'utilisent pas le poids physique seul.
+Le poids réel correspond à la mesure sur la balance du colis entièrement emballé. Si la ligne facture uniquement ce poids, ses règles d’arrondi et sa grille tarifaire déterminent le poids facturable. Beaucoup de lignes tiennent toutefois compte du volume.
 
-Le poids d'un produit en entrepôt n'est pas toujours le même que sa contribution finale au poids du colis. Les boîtes, le matériel de protection, le regroupement et le reconditionnement changent le total. Utilisez la figure finale emballée dans la mesure du possible.
+Le poids d’un article enregistré en entrepôt ne correspond pas toujours à sa contribution finale au colis. Cartons, protection, regroupement et reconditionnement modifient le total. Utilisez la mesure finale dès qu’elle existe et ne supposez pas que la somme des produits inclut tous les matériaux d’emballage.
 
 ## Comprendre le poids volumétrique
 
-Le poids volumétrique, dimensionnel ou volumétrique convertit les dimensions de l'emballage en un nombre de poids. Une structure commune est la longueur × largeur × hauteur divisée par un diviseur spécifique à la compagnie maritime. Le diviseur n'est pas universel. Différents transporteurs ou itinéraires peuvent utiliser différentes formules et des incréments d'arrondi.
+Le poids volumétrique, ou dimensionnel, transforme les dimensions en référence de poids. Une formule courante est longueur × largeur × hauteur divisée par le diviseur du transporteur. Ce diviseur n’est pas universel. Formules, unités et paliers d’arrondi peuvent varier selon le service.
 
-Cela signifie qu'une calculatrice publique devrait laisser les utilisateurs entrer dans le diviseur plutôt que de prétendre qu'il existe une formule Hipobuy permanente. Si une route énonce sa règle dimensionnelle, utilisez cette règle exacte. Si ce n'est pas le cas, attendez l'estimation du prix d'expédition en direct.
+Un outil transparent permet donc de saisir le diviseur. Il ne doit pas présenter une formule Hipobuy permanente valable pour toutes les lignes. Appliquez exactement la règle du service choisi lorsqu’elle est publiée. Sinon, attendez le devis actuel plutôt que considérer la valeur initiale du calculateur comme obligatoire.
 
-## Le poids à payer est le nombre qui compte
+## Le poids facturable détermine le devis
 
-De nombreuses méthodes d'expédition comparent le poids réel avec le poids volumétrique et chargent la figure plus grande. Une boîte de chaussures légère mais grande peut donc être plus chère qu'un colis dense du même poids physique. La question clé de la planification n'est pas « Quelle est la charge? » mais "Quel poids va-t-il payer pour cette route?"
+De nombreux services comparent poids réel et volumétrique et facturent le plus élevé. Une boîte à chaussures légère mais encombrante peut coûter davantage qu’un colis compact de même poids physique. La question utile est le poids retenu par la ligne précise.
 
-Pour chaque itinéraire, enregistrer le poids réel, les dimensions emballées, la formule volumétrique, le poids facturable arrondi et le prix indiqué dans l'interface actuelle.
+Pour chaque service, conservez poids réel, dimensions emballées, formule volumétrique, poids facturable arrondi et prix actuel. Vous pourrez ainsi déterminer si une différence vient de l’emballage, du tarif ou d’une autre règle de calcul.
 
-## Exemple de calcul
+## Un exemple de calcul
 
-Supposons qu'un colis emballée mesure 45 × 35 × 25 cm et pèse 4,2 kg. Si une route utilisait un diviseur de 6000, le poids dimensionnel serait d'environ 6,56 kg. Si cette route est plus grande, le poids facturable serait basé sur environ 6,56 kg avant tout arrondi spécifique à la route.
+Supposons un colis de 45 × 35 × 25 cm pesant 4,2 kg. Avec un diviseur illustratif de 6000, son poids volumétrique atteint environ 6,56 kg. Si la ligne facture le maximum, cette valeur sert de base avant son arrondi particulier.
 
-Ne changer qu'une seule hypothèse et le résultat peut changer. Un emballage plus petit après avoir retiré un emballage extérieur inutile peut réduire le poids dimensionnel. Une autre voie peut utiliser une autre règle de division ou de poids réel. C'est pourquoi copier la capture d'écran d'expédition de quelqu'un d'autre n'est pas une estimation fiable du prix d'expédition.
+Modifier une seule hypothèse peut changer le résultat. Retirer un emballage extérieur inutile peut réduire le volume. Une autre ligne peut utiliser un autre diviseur ou seulement le poids réel. La capture du prix payé par une autre personne n’est donc pas un devis fiable pour votre colis.
 
-## Les décisions d'emballage modifient l'estimation
+## L’emballage modifie l’estimation
 
-Les grandes boîtes rigides, en particulier les boîtes à chaussures et les emballages cadeaux, peuvent augmenter le volume. Le retrait de l'emballage peut réduire le poids de charge, mais il peut aussi réduire la protection. Les marchandises fragiles ont besoin d'une protection suffisante pour survivre à la manutention. Faites le choix selon l'article et la route actuelle plutôt que de suivre une règle universelle "supprimer toutes les boîtes".
+Les grands cartons rigides, notamment les boîtes à chaussures et emballages cadeaux, augmentent parfois le volume. Les retirer peut réduire le poids facturable, mais aussi la protection. Les objets fragiles doivent rester suffisamment protégés pendant transport et manutention. Décidez selon l’article et la ligne, sans appliquer une règle générale de suppression de toutes les boîtes.
 
-Si des options de service de reconditionnement ou de préemballage sont disponibles, elles peuvent aider lorsque les dimensions sont la principale incertitude. Vérifiez l'interface de service actuelle pour connaître la disponibilité et les frais éventuels.
+Si reconditionnement ou préparation d’essai sont proposés, ils peuvent aider lorsque les dimensions sont incertaines. Vérifiez disponibilité, prestations et frais actuels. Un résultat mathématique plus bas n’est utile que si l’emballage protège encore correctement le contenu.
 
-## La consolidation peut aider ou blesser
+## Regrouper n’est pas toujours moins cher
 
-La combinaison de plusieurs commandes d'entrepôt peut réduire les emballages en double et le nombre de colis internationaux. Il peut également créer une boîte plus grande qui déplace le colis dans une bande de poids dimensionnel différent ou supprime certaines options de route.
+Réunir plusieurs commandes peut limiter les emballages en double et le nombre de colis internationaux. Cela peut aussi créer une boîte plus grande, changer de tranche volumétrique ou supprimer certaines lignes auparavant disponibles.
 
-Comparer deux scénarios réalistes : des colis séparées par rapport à un colis consolidée. Utiliser les dimensions actuelles emballées ou estimées pour les deux. Ne présumez pas que la consolidation est automatiquement moins chère.
+Comparez deux scénarios réalistes : colis séparés et colis regroupé. Utilisez pour chacun des dimensions actuelles ou des estimations justifiables. Additionnez tous les transports dans le scénario séparé. Le regroupement est avantageux uniquement si le calcul complet le confirme.
 
-## Inclure les coûts à l'extérieur de la ligne de fret
+## Séparer les autres coûts
 
-Une estimation complète du coût livré peut comprendre le prix du produit, l'expédition du vendeur à l'entrepôt, les services optionnels, les effets de paiement ou de change, les taxes ou droits internationaux sur le fret et la destination, le cas échéant. Une calculatrice d'expédition devrait clairement séparer le fret de ces autres couches.
+Le total livré peut comprendre produit, livraison vendeur-entrepôt, services facultatifs, effets du paiement ou du change, transport international et éventuels impôts ou droits à destination. Distinguez le tarif de transport de ces autres postes.
 
-Cela facilite la comparaison des produits et des itinéraires sans cacher les coûts dans un numéro de gros.
+Cette ventilation permet de comparer produits et lignes sans dissimuler des frais derrière un montant mis en avant. Conservez les postes pour expliquer une variation ultérieure du total plutôt que tout attribuer au prix par kilogramme.
 
-## L'éligibilité de l'itinéraire est avant le prix
+## Vérifier l’admissibilité avant le prix
 
-Le tarif le moins cher affiché n'est pas pertinent si l'itinéraire ne peut pas transporter le contenu. Les batteries, les liquides, les aimants, les marchandises fragiles et d'autres catégories restreintes peuvent changer la disponibilité des routes. La destination est également importante.
+Le tarif le plus bas ne sert à rien si la ligne refuse le contenu. Batteries, liquides, aimants, articles fragiles et autres catégories particulières peuvent réduire le choix. La destination influence également les services disponibles.
 
-Filtre pour les routes éligibles en premier. Ensuite, comparez poids facturable, suivi, gamme de services prévue, conditions de rémunération et prix final.
+Sélectionnez d’abord les lignes admissibles pour les produits et le pays. Comparez ensuite poids facturable, suivi, prestations prévues, conditions d’indemnisation et prix final. Un calcul de poids ne confirme ni acceptation des marchandises ni date de livraison.
 
-## Construire une calculatrice transparente
+## Les données d’un calcul transparent
 
-Une calculatrice utile n'a besoin que de quelques champs :
+Pour reproduire correctement la comparaison, préparez ces informations :
 
-- Sélection de destination ou d'itinéraire.
-- Poids réel emballé.
+- Destination ou ligne choisie.
+- Poids réel du colis emballé.
 - Longueur, largeur et hauteur.
-- Diviseur volumétrique de la route.
-- Société d'expédition arrondie incrément.
-- Structure tarifaire ou estimation des prix d'expédition en direct.
-- Scénario d'emballage facultatif.
+- Diviseur volumétrique du service.
+- Palier d’arrondi du transporteur.
+- Structure tarifaire ou devis actuel.
+- Variante d’emballage, si nécessaire.
 
-Affichez le résultat réel du poids, le résultat dimensionnel du poids et le chiffre plus important. Étiquetez chaque sortie comme une estimation, sauf si elle provient directement de l'estimation du prix d'expédition des colis emballés.
+Présentez séparément poids réel, volumétrique et facturable selon la règle sélectionnée. Qualifiez les résultats d’estimations tant qu’ils ne proviennent pas du devis confirmé du colis terminé.
 
-## Quand arrêter d'estimer
+## Quand le devis final devient la référence
 
-Arrêtez d'utiliser une estimation une fois que l'entrepôt a emballé et pesé le colis. À ce moment, l'estimation actuelle du prix du transport par route est plus solide qu'une formule de calcul. Vérifiez à nouveau le montant avant le paiement, surtout si le statut indique qu'une différence de poids ou une confirmation est nécessaire.
+Une fois le colis emballé et pesé, le devis actuel de la ligne constitue une meilleure référence qu’une formule de tableau. Vérifiez le montant avant paiement, surtout si le statut demande une confirmation ou un supplément lié à une différence de poids.
 
-Sauvegardez le numéro de colis, l'itinéraire et le montant final payé. Ce dossier rend la planification future des transports maritimes plus précise que les anecdotes communautaires.
+Conservez numéro de colis, ligne et montant effectivement payé. Ces données améliorent les prochaines estimations davantage que des récits généraux d’autres acheteurs. L’estimation reste utile pour comprendre les écarts, mais ne remplace pas le devis confirmé.
 
-Note de source : Le site public d'Hipobuy décrit un flux de travail entre l'entrepôt et l'international, et les pages de produits actuelles séparent l'expédition entre l'entrepôt et le vendeur de l'expédition internationale estimée. Révisé en octobre 2026. Les formules de la compagnie d'expédition et les prix de l'itinéraire peuvent changer; utiliser l'estimation des prix d'expédition emballés en direct pour les décisions finales.
+## Utiliser correctement le modèle de cette page
 
-## Utiliser le modèle sur page de manière transparente
+Le calculateur commence avec un exemple de 2 kg et 40 × 30 × 30 cm. Remplacez chaque valeur par vos données. Diviseur et palier d’arrondi doivent provenir de la ligne évaluée. Choisissez le poids réel uniquement si telle est la règle du service disponible. L’autre mode retient le poids le plus élevé et l’arrondit au palier supérieur indiqué.
 
-La calculatrice de cette page commence par un colis de 2 kg de 40 × 30 × 30 cm. Remplacez chaque valeur par vos propres informations. Le diviseur volumétrique et l'accroissement de poids doivent provenir de la voie que vous évaluez. Sélectionnez la facturation en poids réel seulement lorsque c'est la règle pour le service disponible. Sinon, le mode de comparaison utilise le poids réel et volumétrique le plus élevé avant d'être arrondi vers le haut jusqu'à l'accroissement entré.
+Le modèle de prix facultatif est : frais fixes plus kilogrammes facturables multipliés par le tarif saisi en USD. Il ne reproduit pas toutes les tranches initiales, minimums, majorations de destination ou taxes. Laissez le tarif vide pour obtenir une comparaison de poids sans prix inventé. Zéro est une vraie valeur de calcul, pas un substitut à un tarif inconnu.
 
-Le modèle de prix optionnel est délibérément simple : frais fixes plus kilogrammes facturés multipliés par un taux USD entré par l'utilisateur. Il ne peut reproduire tous les niveaux de poids initial, minimum, supplément de destination ou taxe. Laisser le taux vide produit une comparaison de poids sans prix fabriqué. Un taux zéro ne devrait être utilisé que si c'est vraiment la valeur que vous avez l'intention de modéliser, et non pas comme un substitut à l'information manquante.
+## Garder les scénarios comparables
 
-## Maintenir deux scénarios comparables
+Pour comparer avec et sans boîte d’origine, modifiez les mesures du colis en conservant destination, contenu, devise et tarif. Ajoutez séparément les services supplémentaires. Si vous changez aussi de ligne, le résultat combine différences d’emballage et de service : précisez-le. Un volume calculé inférieur ne prouve pas que l’entrepôt puisse produire cet emballage ni qu’il protège suffisamment le contenu.
 
-Pour conserver la boîte et supprimer la comparaison de la boîte, modifier les entrées de colis mesurées tout en maintenant constante la destination, le contenu, la monnaie et les hypothèses de taux. Puis ajoutez les frais de service supplémentaires séparément. Si vous changez également l'itinéraire, le résultat mesure les différences d'emballage et de service, alors marquez-le en conséquence. Un résultat dimensionnel plus petit n'est pas la preuve que l'entrepôt peut produire cet emballage ou qu'il assure une protection suffisante pour le contenu.
+Gardez les entrées avec le résultat. Une capture d’un faible total ne permet pas de reproduire l’opération. Dès qu’un devis est confirmé, utilisez-le comme référence de paiement. En cas d’écart, demandez quels poids, dimensions, arrondis ou frais ont changé. Le calculateur reste ainsi un outil de planification, sans prétendre fournir les tarifs Hipobuy en direct.
 
-Enregistrez les entrées du modèle en parallèle de son résultat. Une capture d'écran isolée ne montrant qu'un faible total ne permet pas à un autre lecteur de reproduire le calcul. Une fois que le colis emballé a une estimation confirmée du prix d'expédition, utilisez cette estimation du prix d'expédition comme référence de paiement et conservez l'estimation seulement pour comprendre la différence. Si les deux parties ne sont pas d'accord, demandez quel poids, dimension, règle d'arrondi ou frais a changé. Cette approche rend la calculatrice utile sans la présenter comme un service de tarif Hipobuy en direct.
+Vérifiez les unités : cet outil utilise centimètres et kilogrammes. Saisir des millimètres comme centimètres augmente fortement le volume ; des grammes comme kilogrammes faussent le poids réel. Convertissez d’abord et conservez les données originales de l’entrepôt à côté de votre estimation.
 
-Vérifiez les unités avant de changer de budget. Cet outil prend des centimètres pour les dimensions et des kilogrammes pour le poids réel. En entrant en millimètres comme centimètres gonfle le résultat dimensionnel de façon spectaculaire, tandis que en entrant en grammes comme kilogrammes rend le résultat réel de poids inutilisable. Convertir les mesures d'abord et garder l'enregistrement original de l'entrepôt à côté de votre estimation de travail.
+Sources : parcours officiel Hipobuy et Shipping Estimate, consultés en octobre 2026. Formules, lignes et prix peuvent évoluer. Pour payer, utilisez le devis actuel du colis entièrement emballé.

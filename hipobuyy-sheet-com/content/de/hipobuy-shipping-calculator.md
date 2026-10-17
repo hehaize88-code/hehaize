@@ -2,92 +2,92 @@ Dieser Rechner modelliert Paketgewicht und einen optional eingegebenen Tarif, ke
 
 [Die vollständigen Kosten vergleichen](/de/articles/shipping-cost-checklist/)
 
-## Ein Versandrechner ist eine Schätzung, kein Versprechen
+## Ein Versandrechner liefert eine Schätzung
 
-Menschen, die nach einem Hipobuy Versandrechner suchen, wollen normalerweise eine Nummer: Was kostet das Paket zu versenden? Die Schwierigkeit besteht darin, dass der internationale Versand nicht allein durch den Produktpreis bestimmt wird. Ziel, Paketinhalt, physisches Gewicht, verpackte Abmessungen, Routenbeschränkungen und die Abrechnungsmethode der Reederei beeinflussen das Ergebnis.
+Wer einen Hipobuy-Versandrechner sucht, möchte wissen, wie viel der Versand eines Pakets kostet. Der Warenpreis allein beantwortet diese Frage nicht. Ziel, Inhalt, tatsächliches Gewicht, Verpackungsmaße, Einschränkungen der Route und die Abrechnung des Transportdienstes beeinflussen das Ergebnis.
 
-Der öffentliche Workflow von Hipobuy trennt den Produktkauf von der internationalen Paketzustellung. Aktuelle Produktseiten können einen geschätzten internationalen Versandbereich anzeigen, aber das endgültige Paket hängt immer noch davon ab, was das Lager erreicht und wie das Paket verpackt wird. Verwenden Sie einen Rechner, um Szenarien zu vergleichen, nicht um eine endgültige Ladung vor dem Verpacken zu versprechen.
+Hipobuy trennt den Produktkauf vom internationalen Paketversand. Auf Produktseiten können Schätzungen für den internationalen Versand erscheinen. Der endgültige Betrag hängt jedoch davon ab, welche Waren im Lager eintreffen und wie sie verpackt werden. Nutze den Rechner zum Vergleich von Szenarien; ein endgültiger Preis lässt sich vor dem Verpacken daraus nicht ableiten.
 
-## Starten Sie mit dem tatsächlichen Gewicht
+## Mit dem tatsächlichen Gewicht beginnen
 
-Tatsächliches Gewicht ist das physische Gewicht des verpackten Pakets. Wenn die Strecke nur nach tatsächlichem Gewicht berechnet wird, ist die Berechnung relativ direkt: Das gebührenpflichtige Gewicht folgt den Rundungsregeln und der Preistabelle der Reederei. Das Problem ist, dass viele Routen nicht mit physischen Gewicht allein.
+Das tatsächliche Gewicht ist das auf der Waage gemessene Gewicht des fertig verpackten Pakets. Rechnet eine Route ausschließlich danach ab, bestimmen ihre Rundungsschritte und Preistabelle das Abrechnungsgewicht. Viele Routen berücksichtigen jedoch zusätzlich das Volumen.
 
-Das Lagergewicht eines Produkts ist auch nicht immer der gleiche wie sein letzter Beitrag zum Paketgewicht. Kisten, Schutzmaterial, Konsolidierung und Umverpackung verändern die Gesamtsumme. Verwenden Sie die endgültige verpackte Figur, wenn möglich.
+Das im Lager angegebene Artikelgewicht entspricht nicht immer dem späteren Anteil am Paketgewicht. Kartons, Schutzmaterial, Zusammenlegen und Neuverpacken verändern die Summe. Verwende möglichst das endgültige Gewicht einschließlich Verpackung und addiere nicht einfach alle Artikelgewichte ohne Verpackungszuschlag.
 
 ## Volumengewicht verstehen
 
-Volumen-, Maß- oder Volumengewicht wandelt die Packungsabmessungen in eine gewichtsartige Zahl um. Eine gemeinsame Struktur ist die Länge × Breite × Höhe, geteilt durch einen schiffsbetriebsspezifischen Divisor. Der Divisor ist nicht universell. Verschiedene Transportdienst oder Routen können verschiedene Formeln und Rundungsschritte verwenden.
+Das Volumengewicht übersetzt Paketmaße in eine rechnerische Gewichtsgröße. Häufig lautet die Formel Länge × Breite × Höhe geteilt durch den Divisor des Transportdienstes. Dieser Divisor ist nicht einheitlich. Auch Formel, verwendete Einheiten und Rundungsschritte können zwischen Routen abweichen.
 
-Das bedeutet, ein öffentlicher Rechner sollte Benutzer in den Divisor eingeben lassen, anstatt vorzugeben, es gäbe eine dauerhafte Hipobuy-Formel. Wenn eine Route ihre Dimensionsregel festlegt, dann verwenden Sie diese genaue Regel. Wenn nicht, warten Sie auf die Live-Verschiffungspreisschätzung.
+Ein transparenter Rechner lässt dich den Divisor selbst eingeben. Es gibt keine dauerhaft gültige Formel für jeden Hipobuy-Versand. Übernimm die genaue Regel der gewählten Route. Fehlen diese Angaben, warte auf das aktuelle Angebot, statt einen Standardwert als verbindlich zu behandeln.
 
-## Aufladbares Gewicht ist die Zahl, die zählt
+## Das Abrechnungsgewicht bestimmt die Kosten
 
-Viele Versandmethoden vergleichen das tatsächliche Gewicht mit volumetrischem Gewicht und laden die größere Zahl. Eine leichte, aber große Schuhbox kann daher teurer sein als ein dichtes Paket mit dem gleichen physischen Gewicht. Die zentrale Frage ist nicht "Wie schwer ist es?" aber "Welches Gewicht wird diese Route berechnen?"
+Viele Versandarten vergleichen tatsächliches Gewicht und Volumengewicht und berechnen den höheren Wert. Ein leichter, großer Schuhkarton kann deshalb teurer sein als ein kompaktes Paket mit demselben Waagengewicht. Entscheidend ist, welches Gewicht die konkrete Route abrechnet.
 
-Für jede Route, die tatsächliche Gewicht, verpackte Abmessungen, volumetrische Formel, gerundete aufladbare Gewicht und den Preis in der aktuellen Schnittstelle angezeigt.
+Notiere für jede Route tatsächliches Gewicht, verpackte Maße, Volumenformel, gerundetes Abrechnungsgewicht und den aktuell angezeigten Preis. Nur so lässt sich erkennen, ob ein Unterschied von der Verpackung, dem Tarif oder einer anderen Berechnungsregel stammt.
 
-## Beispielrechnung
+## Eine Beispielrechnung
 
-Angenommen, ein verpacktes Paket misst 45 × 35 × 25 cm und wiegt 4,2 kg. Wenn eine Strecke einen Divisor von 6000 benutzt, würde das Maßgewicht etwa 6.56 kg betragen. Wenn diese Route den größeren Wert berechnet, würde das gebührenpflichtige Gewicht auf etwa 6.56 kg vor jeder streckenspezifischen Rundung basieren.
+Angenommen, ein verpacktes Paket misst 45 × 35 × 25 cm und wiegt 4,2 kg. Mit einem beispielhaften Divisor von 6000 beträgt das Volumengewicht etwa 6,56 kg. Berechnet die Route den höheren Wert, liegt die Grundlage vor ihrer eigenen Rundung bei etwa 6,56 kg.
 
-Ändern Sie nur eine Annahme und das Ergebnis kann sich ändern. Eine kleinere Verpackung nach dem Entfernen unnötiger äußerer Verpackungen kann das Maßgewicht verringern. Eine andere Route kann einen anderen Divisor oder eine andere tatsächliche Gewichtsregel verwenden. Deshalb ist das Kopieren von jemand anderes Versand Screenshot ist nicht eine zuverlässige Versandkostenschätzung.
+Schon eine veränderte Annahme beeinflusst das Ergebnis. Weniger unnötige Außenverpackung kann das Volumen reduzieren. Eine andere Route kann einen anderen Divisor oder nur das tatsächliche Gewicht verwenden. Ein Screenshot der Versandkosten einer anderen Person ist deshalb kein verlässliches Angebot für dein Paket.
 
-## Verpackungsentscheidungen ändern die Schätzung
+## Die Verpackung verändert die Schätzung
 
-Große starre Boxen, vor allem Schuh-Boxen und Geschenkverpackungen, können das Volumen erhöhen. Das Entfernen von Verpackungen kann das aufladbare Gewicht senken, aber auch den Schutz verringern. Fragile Güter brauchen ausreichend Schutz, um den Umgang zu überleben. Treffen Sie die Wahl nach dem Element und der aktuellen Route statt einer universellen "Entfernen Sie alle Felder" Regel.
+Große, feste Kartons wie Schuh- und Geschenkboxen können das Volumen erhöhen. Das Entfernen kann das Abrechnungsgewicht senken, zugleich aber den Schutz verschlechtern. Zerbrechliche Waren benötigen ausreichend Polsterung für Transport und Umschlag. Entscheide nach Artikel und Route, statt grundsätzlich alle Kartons entfernen zu lassen.
 
-Wenn Neupaketierung oder Vorpaketierung von Serviceoptionen verfügbar sind, können sie helfen, wenn die Dimensionen die größte Unsicherheit darstellen. Prüfen Sie die aktuelle Service-Schnittstelle auf Verfügbarkeit und jeglichen Aufpreis.
+Falls Neuverpackung oder Probeverpackung angeboten werden, können sie bei unklaren Maßen helfen. Prüfe Verfügbarkeit, Leistungsumfang und mögliche Gebühren im aktuellen Serviceangebot. Ein günstigeres rechnerisches Ergebnis ist nur sinnvoll, wenn die Verpackung den Inhalt weiterhin angemessen schützt.
 
-## Konsolidierung kann helfen oder schaden
+## Zusammenlegen ist nicht automatisch günstiger
 
-Durch die Kombination mehrerer Lageraufträge können doppelte Verpackungen und die Anzahl internationaler Pakete reduziert werden. Es kann auch eine größere Box erstellen, die das Paket in ein anderes Maß-Gewichts-Band bewegt oder einige Routenoptionen entfernt.
+Mehrere Lagerbestellungen in einem Paket können doppelte Verpackung und die Anzahl internationaler Sendungen reduzieren. Dabei kann aber auch ein größerer Karton entstehen, eine andere Volumengewichtsstufe greifen oder eine bisher mögliche Route entfallen.
 
-Vergleichen Sie zwei realistische Szenarien: getrennte Pakete gegenüber einem konsolidierten Paket. Verwenden Sie die aktuellen verpackten oder geschätzten Abmessungen für beide. Nehmen Sie nicht an, dass Konsolidierung automatisch billiger ist.
+Vergleiche zwei realistische Varianten: getrennte Pakete und ein gemeinsames Paket. Nutze für beide aktuelle oder nachvollziehbar geschätzte Verpackungsmaße. Addiere bei getrennten Paketen alle Versandbeträge. Eine Konsolidierung ist erst dann günstiger, wenn der vollständige Vergleich dies zeigt.
 
-## Kosten außerhalb der Frachtlinie einschließen
+## Weitere Kosten getrennt erfassen
 
-Eine vollständige Kostenvoranschlag kann Produktpreis, Verkäufer-zu-Warenhaus Versand, optionale Dienstleistungen, Zahlung oder Wechseleffekte, internationale Fracht-und Bestimmungsort Steuern oder Zölle, soweit anwendbar. Ein Versandrechner sollte die Fracht deutlich von den anderen Schichten trennen.
+Der Gesamtpreis bis zur Lieferung kann Warenpreis, Verkäufer-Lager-Transport, optionale Leistungen, Zahlungs- oder Währungseffekte, internationalen Versand und gegebenenfalls Steuern oder Abgaben am Ziel umfassen. Trenne den eigentlichen Versandtarif von diesen zusätzlichen Kosten.
 
-Dadurch wird es einfacher, Produkte und Routen zu vergleichen, ohne Kosten in einer Kopfnummer zu verstecken.
+Diese Aufteilung erleichtert den Vergleich verschiedener Artikel und Routen. Eine niedrige auffällige Versandzahl sollte keine anderen notwendigen Kosten verdecken. Bewahre die Einzelpositionen auf, damit du einen später geänderten Gesamtbetrag erklären kannst.
 
-## Die Fahrwegberechtigung kommt vor dem Preis
+## Zuerst die zulässigen Routen auswählen
 
-Die günstigste angezeigte Rate ist irrelevant, wenn die Route den Inhalt nicht tragen kann. Batterien, Flüssigkeiten, Magnete, zerbrechliche Waren und andere eingeschränkte Kategorien können die Verfügbarkeit der Routen ändern. Ziel ist auch wichtig.
+Der günstigste Tarif hilft nicht, wenn die Route den Inhalt nicht transportieren darf. Batterien, Flüssigkeiten, Magnete, zerbrechliche Waren und andere besondere Artikel können die Auswahl einschränken. Auch das Zielland beeinflusst die verfügbaren Dienste.
 
-Filtern Sie zuerst für die förderfähigen Routen. Dann vergleichen Sie gebührenpflichtig Gewicht, Tracking, erwartete Service-Bereich, Vergütungsbedingungen und Endpreis.
+Prüfe zuerst, welche Routen für Inhalt und Ziel zulässig sind. Vergleiche danach Abrechnungsgewicht, Tracking, erwarteten Leistungsumfang, Entschädigungsbedingungen und Endpreis. Eine Gewichtsrechnung allein bestätigt weder die Annahme der Ware noch einen bestimmten Liefertermin.
 
-## Einen transparenten Rechner erstellen
+## Welche Angaben ein transparenter Rechner braucht
 
-Ein nützlicher Rechner benötigt nur wenige Felder:
+Für einen nachvollziehbaren Vergleich brauchst du folgende Angaben:
 
-- Ziel- oder Routenauswahl.
-- Tatsächliches Gewicht.
+- Ziel oder ausgewählte Route.
+- Tatsächliches Gewicht des verpackten Pakets.
 - Länge, Breite und Höhe.
-- Volumenteiler von der Route.
-- Versand Unternehmen Rundung erhöhen.
-- Rate Struktur oder Live-Versand Preisschätzung.
-- Optionales Verpackungsszenario.
+- Volumendivisor der Route.
+- Rundungsschritt des Transportdienstes.
+- Tarifstruktur oder aktuelles Angebot.
+- Gegebenenfalls eine andere Verpackungsvariante.
 
-Zeigt das tatsächliche Gewicht, das Maßgewicht und die größere aufladbare Zahl. Beschriften Sie jede Ausgabe als Schätzung, es sei denn, es kommt direkt aus der verpackten Paketversandpreisschätzung.
+Zeige tatsächliches Gewicht, Volumengewicht und das nach der gewählten Regel berechnete Abrechnungsgewicht getrennt. Bezeichne Ergebnisse als Schätzungen, solange sie nicht unmittelbar aus dem bestätigten Angebot für das fertig verpackte Paket stammen.
 
-## Wann die Schätzung beendet werden soll
+## Wann das endgültige Angebot maßgeblich ist
 
-Nach der Verpackung des Lagers und der gewogenen Verpackung wird keine Schätzung mehr verwendet. An diesem Punkt ist die aktuelle Schätzmethode für die Streckenverschiffung stärker als eine Tabellenformel. Überprüfen Sie den Betrag vor der Zahlung, insbesondere wenn der Status anzeigt, dass eine Gewichtsdifferenz oder Bestätigung erforderlich ist.
+Sobald das Lager das Paket verpackt und gewogen hat, ist das aktuelle Routenangebot die bessere Entscheidungsgrundlage als eine Tabellenformel. Kontrolliere den Betrag vor der Zahlung, besonders wenn der Status eine Bestätigung oder Nachzahlung wegen einer Gewichtsdifferenz verlangt.
 
-Speichern Sie die Paketnummer, Route und den endgültigen bezahlten Betrag. Dieser Datensatz macht die künftige Planung des Schiffsverkehrs genauer als die Abhängigkeit von Anekdoten.
+Speichere Paketnummer, Route und tatsächlich bezahlten Betrag. Diese Daten helfen bei späteren Planungen mehr als allgemeine Erfahrungsberichte. Eine frühere Schätzung bleibt nützlich, um Unterschiede zu verstehen; sie ersetzt nicht das bestätigte Angebot.
 
-Quelle: Hipobuys öffentliche Website beschreibt einen Workflow für die Warenlieferung ins Lager und die aktuellen Produktseiten trennen den Versand von Verkäufern ins Lager von geschätzten internationalen Versand. Oktober 2026. Formeln und Routenpreise des Reedereiunternehmens können sich ändern; verwenden Sie die live verpackten Versandkostenschätzungen für endgültige Entscheidungen.
+## Das Modell auf dieser Seite richtig verwenden
 
-## Das On-page-Modell transparent nutzen
+Der Rechner startet mit einem Beispiel von 2 kg und 40 × 30 × 30 cm. Ersetze alle Werte durch eigene Daten. Divisor und Rundungsschritt müssen von der geprüften Route stammen. Wähle die Abrechnung nur nach Realgewicht ausschließlich dann, wenn die verfügbare Versandart diese Regel verwendet. Der Vergleichsmodus nimmt sonst den höheren Gewichtswert und rundet auf den eingegebenen Schritt auf.
 
-Der Rechner auf dieser Seite beginnt mit einem 2 kg großen Paket mit 40 × 30 × 30 cm. Ersetzen Sie jeden Wert durch Ihre eigenen Informationen. Der volumetrische Teiler und Gewichtszunahme müssen von der Route kommen, die Sie bewerten. Wählen Sie die tatsächliche Gewicht-nur-Rechnung nur, wenn dies die Regel für den verfügbaren Service ist. Ansonsten verwendet der Vergleichsmodus das größere tatsächliche und volumetrische Gewicht, bevor er auf den eingegebenen Schritt aufgerundet wird.
+Das optionale Preismodell lautet: Grundgebühr plus abgerechnete Kilogramm mal eingegebener USD-Tarif. Es bildet nicht jede Anfangsgewichtsstufe, Mindestgebühr, Zielzulage oder Steuer ab. Bleibt das Tariffeld leer, erhältst du einen Gewichtsvergleich ohne erfundenen Preis. Null ist ein tatsächlicher Rechenwert und sollte nicht als Ersatz für eine unbekannte Gebühr verwendet werden.
 
-Das optionale Preismodell ist bewusst einfach: Festgebühr plus in Rechnung gestellte Kilogramm multipliziert mit einem in USD eingegebenen Nutzerpreis. Sie kann nicht jede Stufe, jeden Mindestbetrag, jede Zielzulage oder jede Steuer nach dem ersten Gewicht reproduzieren. Die Leerlaufquote erzeugt einen Gewichtsvergleich ohne einen fabrizierten Preis. Eine Nullrate sollte nur verwendet werden, wenn das wirklich der Input ist, den Sie modellieren wollen, nicht als Ersatz für fehlende Informationen.
+## Zwei Szenarien vergleichbar halten
 
-## Halten Sie zwei Szenarien vergleichbar
+Vergleichst du Verpackung mit und ohne Originalkarton, ändere die gemessenen Paketdaten und halte Ziel, Inhalt, Währung und Tarifannahmen gleich. Rechne zusätzliche Servicegebühren separat hinzu. Änderst du zugleich die Route, zeigt das Ergebnis Verpackungs- und Leistungsunterschiede; kennzeichne das entsprechend. Weniger berechnetes Volumen beweist nicht, dass das Lager diese Verpackung herstellen kann oder dass der Inhalt ausreichend geschützt bleibt.
 
-Um den Box-Box- und den Box-Vergleich zu entfernen, ändern Sie die gemessenen Paketeingaben, während Ziel, Inhalt, Währung und Kursannahmen konstant gehalten werden. Dann fügen Sie zusätzliche Servicekosten separat hinzu. Wenn Sie auch die Route ändern, misst das Ergebnis sowohl die Verpackungs- als auch die Serviceunterschiede, so dass es entsprechend markiert wird. Ein kleineres Maßergebnis ist kein Beweis dafür, dass das Lager diese Verpackung herstellen kann oder dass es ausreichend Schutz für den Inhalt bietet.
+Bewahre Eingaben und Ergebnis zusammen auf. Ein Screenshot mit einer niedrigen Endsumme allein macht die Rechnung nicht nachvollziehbar. Liegt ein bestätigtes Paketangebot vor, verwende es als Zahlungsgrundlage. Bei einer Abweichung frage nach geändertem Gewicht, Maßen, Rundung oder Gebühren. Der Rechner bleibt damit eine Planungshilfe und wird nicht als Hipobuy-Livetarif dargestellt.
 
-Die Eingaben des Modells werden neben dem Ergebnis aufgezeichnet. Ein isolierter Screenshot mit nur einem geringen Gesamtwert erlaubt es keinem anderen Leser, die Berechnung zu reproduzieren. Sobald das verpackte Paket eine bestätigte Versandpreisschätzung hat, verwenden Sie diesen Versandpreisschätzung als Zahlungsreferenz und behalten Sie die Schätzung nur, um den Unterschied zu verstehen. Wenn die beiden nicht übereinstimmen, fragen Sie, welches Gewicht, Dimension, Rundungsregel oder Gebühr geändert. Dieser Ansatz macht den Rechner nützlich, ohne ihn als Live-Hipobui-Tarifdienst darzustellen.
+Prüfe die Einheiten: Dieses Werkzeug verwendet Zentimeter und Kilogramm. Millimeter als Zentimeter vergrößern das berechnete Volumen massiv; Gramm als Kilogramm verfälschen das Realgewicht. Rechne zuerst um und behalte die ursprünglichen Lagerangaben neben deiner Schätzung.
 
-Kontrolliere Einheiten, bevor du ein Budget änderst. Dieses Werkzeug benötigt Zentimeter für Abmessungen und Kilogramm für tatsächliches Gewicht. Die Eingabe von Millimetern als Zentimeter erhöht das Maßergebnis dramatisch, während die Eingabe von Gramm als Kilogramm das tatsächliche Gewichtergebnis unbrauchbar macht. Konvertieren Sie die Messungen zuerst und halten Sie die Original-Lageraufzeichnung neben Ihrer Arbeitsschätzung.
+Quellen: offizieller Hipobuy-Ablauf und Shipping Estimate, geprüft im Oktober 2026. Formeln, Routen und Preise können sich ändern. Für die Zahlung zählt das aktuelle Angebot des fertig verpackten Pakets.

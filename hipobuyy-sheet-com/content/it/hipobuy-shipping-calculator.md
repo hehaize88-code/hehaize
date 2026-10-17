@@ -2,92 +2,92 @@ Il calcolatore modella peso imballato e tariffa opzionale inserita, senza prezzi
 
 [Confronta tutti i costi](/it/articles/shipping-cost-checklist/)
 
-## Una calcolatrice di spedizione è una stima, non una promessa
+## Il calcolatore fornisce una stima
 
-Persone alla ricerca di un Hipobuy calcolatore di spedizione di solito vogliono un numero: quanto costerà il pacco per la spedizione? La difficoltà è che la spedizione internazionale non è determinata dal solo prezzo del prodotto. Destinazione, contenuto dei pacchi, peso fisico, dimensioni impacchettate, restrizioni di rotta e il metodo di fatturazione della compagnia di navigazione influenzano il risultato.
+Chi cerca un calcolatore di spedizione Hipobuy vuole sapere quanto costerà inviare il pacco. Il prezzo del prodotto da solo non basta. Destinazione, contenuto, peso reale, dimensioni imballate, restrizioni della rotta e metodo di fatturazione del corriere influenzano il risultato.
 
-Il flusso di lavoro pubblico di Hipobuy separa l'acquisto del prodotto dalla consegna internazionale dei pacchi. Le attuali pagine dei prodotti possono mostrare una sezione di spedizione internazionale stimata, ma l'ultimo pacco dipende ancora da cosa raggiunge il magazzino e come il pacco è imballato. Utilizzare una calcolatrice per confrontare gli scenari, non per promettere una carica finale prima di imballaggio.
+Hipobuy separa acquisto del prodotto e trasporto internazionale. Le schede possono mostrare una stima della spedizione, ma l’importo finale dipende da ciò che arriva al magazzino e da come viene imballato. Usa il calcolatore per confrontare scenari, senza trasformare un risultato precedente all’imballaggio in un prezzo garantito.
 
-## Iniziare con il peso reale
+## Parti dal peso reale
 
-Il peso effettivo è il peso fisico del pacchetto confezionato. Se la rotta è soggetta a oneri solo in base al peso effettivo, il calcolo è relativamente diretto: il peso a carico segue le regole di arrotondamento della compagnia di navigazione e la tabella dei prezzi. Il problema è che molte vie non usano il peso fisico da sole.
+Il peso reale è quello misurato sulla bilancia per il pacco completamente imballato. Se la rotta fattura solo quel peso, regole di arrotondamento e tabella prezzi determinano il peso fatturabile. Molte rotte, però, considerano anche il volume.
 
-Il peso del magazzino di un prodotto non è sempre lo stesso del suo contributo finale al peso del pacco. Le scatole, il materiale protettivo, il consolidamento e il riimballaggio cambiano il totale. Utilizzare la figura finale imballata quando possibile.
+Il peso di un articolo registrato in magazzino non coincide sempre con il contributo finale al pacco. Scatole, protezioni, consolidamento e nuovo imballaggio modificano il totale. Usa il dato finale quando disponibile e non presumere che sommare i prodotti includa tutti i materiali di confezionamento.
 
-## Comprendere il peso volumetrico
+## Comprendi il peso volumetrico
 
-Il peso volumetrico, dimensionale o volumetrico converte le dimensioni delle confezioni in un numero simile al peso. Una struttura comune è la lunghezza × larghezza × altezza divisa da un divisore specifico della compagnia di navigazione. Il divisore non è universale. I diversi vettori o percorsi possono utilizzare formule e incrementi di arrotondamento diversi.
+Il peso volumetrico, o dimensionale, trasforma le dimensioni in un valore di riferimento per il peso. Una formula comune è lunghezza × larghezza × altezza diviso per il divisore del corriere. Il divisore non è universale. Formule, unità e scatti di arrotondamento possono cambiare fra servizi.
 
-Ciò significa che una calcolatrice pubblica dovrebbe permettere agli utenti di entrare nel divisore piuttosto che fingere che ci sia una formula permanente Hipobuy. Se un percorso indica la sua regola dimensionale, usa quella regola esatta. Se non lo fa, attendere il preventivo di prezzo di spedizione live.
+Uno strumento trasparente permette quindi di inserire il divisore. Non dovrebbe presentare una formula Hipobuy permanente valida per ogni rotta. Se il servizio pubblica la propria regola, applicala esattamente. Altrimenti aspetta il preventivo corrente, senza considerare vincolante il valore iniziale del calcolatore.
 
-## Il peso di carica è il numero che conta
+## Il peso fatturabile determina il preventivo
 
-Molti metodi di spedizione confrontare il peso effettivo con il peso volumetrico e caricare la figura più grande. Una scatola di scarpe leggera ma grande può quindi essere più costosa di un pacco denso dello stesso peso fisico. La questione chiave della pianificazione non è "Quanto è pesante?" ma "Che peso farà questa strada?"
+Molti servizi confrontano peso reale e volumetrico e addebitano il maggiore. Una scatola da scarpe leggera ma ingombrante può costare più di un pacco compatto dello stesso peso fisico. La domanda utile è quale peso fatturerà la rotta specifica.
 
-Per ogni percorso registrare il peso effettivo, le dimensioni imballate, la formula volumetrica, il peso arrotondato a carico e il prezzo indicato nell'interfaccia corrente.
+Per ogni servizio conserva peso reale, dimensioni imballate, formula volumetrica, peso fatturabile arrotondato e prezzo attuale. Potrai così capire se una differenza deriva da imballaggio, tariffa o altra regola di calcolo.
 
-## Calcolo dell'esempio
+## Un esempio di calcolo
 
-Supponiamo che un pacchetto confezionato misura 45 × 35 × 25 cm e pesa 4,2 kg. Se un percorso utilizzasse un divisore di 6000, il peso dimensionale sarebbe di circa 6,56 kg. Se tale percorso fattura il valore più elevato, il peso a carico sarebbe basato su circa 6,56 kg prima di qualsiasi arrotondamento specifico della rotta.
+Supponiamo che un pacco misuri 45 × 35 × 25 cm e pesi 4,2 kg. Con un divisore illustrativo di 6000, il peso volumetrico è circa 6,56 kg. Se la rotta addebita il maggiore, questo valore è la base prima dell’arrotondamento specifico.
 
-Cambiare solo un'ipotesi e il risultato può cambiare. Una confezione più piccola dopo aver rimosso l'imballaggio esterno inutile può ridurre il peso dimensionale. Un percorso diverso può utilizzare un altro divisore o regola peso reale. Ecco perché copiare lo screenshot di spedizione di qualcun altro non è una stima affidabile del prezzo di spedizione.
+Cambiare una sola ipotesi può modificare il risultato. Togliere un imballaggio esterno inutile può ridurre il volume. Un’altra rotta può usare un divisore diverso o solo il peso reale. Perciò lo screenshot della spedizione di un’altra persona non è un preventivo affidabile per il tuo pacco.
 
-## Le decisioni di imballaggio modificano la stima
+## L’imballaggio cambia la stima
 
-Grandi scatole rigide, soprattutto scatole di scarpe e confezione regalo, possono aumentare il volume. Rimuovere l'imballaggio può ridurre il peso a carico, ma può anche ridurre la protezione. Le merci fragili hanno bisogno di una protezione sufficiente per sopravvivere alla manipolazione. Fate la scelta in base all'elemento e alla rotta corrente piuttosto che seguire una regola universale "rimuovi tutte le caselle."
+Scatole rigide grandi, soprattutto per scarpe o regali, possono aumentare il volume. Rimuoverle può ridurre il peso fatturabile ma anche la protezione. Gli oggetti fragili devono restare protetti durante trasporto e movimentazione. Decidi secondo articolo e servizio, senza seguire una regola generale di eliminare ogni scatola.
 
-Se sono disponibili opzioni di servizio di riimballaggio o pre-imballo, possono aiutare quando le dimensioni sono l'incertezza principale. Controlla l'interfaccia di servizio corrente per la disponibilità e qualsiasi carica.
+Se sono disponibili nuovo imballaggio o preparazione di prova, possono aiutare quando le dimensioni sono incerte. Controlla disponibilità, servizi inclusi e costi attuali. Un risultato matematico inferiore è utile soltanto se l’imballaggio protegge ancora adeguatamente il contenuto.
 
-## Consolidamento può aiutare o male
+## Consolidare non è sempre più conveniente
 
-La combinazione di diversi ordini di magazzino può ridurre l'imballaggio duplicato e il numero di pacchi internazionali. Può anche creare una scatola più grande che sposta il pacco in una banda di diverso peso dimensionale o rimuove alcune opzioni di percorso.
+Riunire più ordini può ridurre imballaggi duplicati e numero di pacchi internazionali. Può anche produrre una scatola maggiore, cambiare fascia volumetrica o escludere rotte prima disponibili.
 
-Confrontare due scenari realistici: pacchi separati rispetto a un pacchetto consolidato. Utilizzare le dimensioni attuali imballate o stimate per entrambi. Non assumere che il consolidamento sia automaticamente più economico.
+Confronta due scenari realistici: pacchi separati e uno consolidato. Usa misure attuali o stime motivate per entrambi. Nello scenario separato somma tutte le spedizioni. Il consolidamento conviene solo quando lo dimostra il confronto completo.
 
-## Includere i costi al di fuori della linea di trasporto
+## Separa gli altri costi
 
-Una stima completa dei costi consegnati può includere il prezzo del prodotto, il venditore-a-casa di spedizione, servizi opzionali, pagamenti o effetti di cambio, tasse internazionali di trasporto e di destinazione o dazi, se del caso. Una calcolatrice di spedizione dovrebbe separare chiaramente il trasporto da quegli altri strati.
+Il totale consegnato può comprendere prodotto, trasporto venditore-magazzino, servizi opzionali, effetti di pagamento o cambio, spedizione internazionale ed eventuali imposte o dazi a destinazione. Distingui la tariffa di trasporto da queste altre voci.
 
-Ciò rende più facile confrontare prodotti e percorsi senza nascondere i costi in un numero principale.
+La suddivisione permette di confrontare articoli e rotte senza nascondere costi dietro un importo evidenziato. Conserva le singole voci per spiegare una modifica successiva del totale, anziché attribuire tutto al prezzo per chilogrammo.
 
-## L'ammissibilità alla rotta è prima del prezzo
+## Verifica l’ammissibilità prima del prezzo
 
-La tariffa più economica visualizzata è irrilevante se il percorso non può trasportare il contenuto. Batterie, liquidi, magneti, merci fragili e altre categorie limitate possono cambiare la disponibilità del percorso. Anche la destinazione conta.
+La tariffa più bassa non serve se il servizio non accetta il contenuto. Batterie, liquidi, magneti, oggetti fragili e altre categorie particolari possono limitare le rotte. Anche il paese di destinazione influenza i servizi disponibili.
 
-Filtro per le rotte ammissibili prima. Poi confrontare peso a pagamento, monitoraggio, gamma di servizi previsti, termini di compensazione e prezzo finale.
+Seleziona prima le rotte ammissibili per prodotti e destinazione. Poi confronta peso fatturabile, tracking, servizio previsto, condizioni di indennizzo e prezzo finale. Un calcolo del peso non conferma accettazione della merce né una data di consegna.
 
-## Costruisci una calcolatrice trasparente
+## Dati necessari per un calcolo trasparente
 
-Una calcolatrice utile ha bisogno solo di pochi campi:
+Per rendere riproducibile il confronto, prepara queste informazioni:
 
-- Destinazione o selezione del percorso.
-- - Un vero peso.
+- Destinazione o rotta scelta.
+- Peso reale del pacco imballato.
 - Lunghezza, larghezza e altezza.
-- Divisore volumetrico dal percorso.
-- Società di trasporto di arrotondamento incremento.
-- Struttura tariffa o preventivo prezzi di spedizione.
-- Scenario di imballaggio facoltativo.
+- Divisore volumetrico del servizio.
+- Scatto di arrotondamento del corriere.
+- Struttura tariffaria o preventivo attuale.
+- Variante di imballaggio, se necessaria.
 
-Mostra il risultato effettivo-peso, il risultato dimensionale-peso e la figura a pagamento più grande. Etichetta ogni uscita come preventivo a meno che non venga direttamente dalla stima del prezzo di spedizione del pacchetto imballato.
+Mostra separatamente peso reale, volumetrico e fatturabile secondo la regola selezionata. Indica i risultati come stime finché non derivano dal preventivo confermato del pacco completato.
 
-## Quando smettere di stimare
+## Quando prevale il preventivo finale
 
-Smettila di usare un preventivo una volta che il magazzino ha imballato e pesato il pacco. A quel punto, l'attuale stima del prezzo di spedizione della rotta è più forte di una formula di fogli di calcolo. Ricontrollare l'importo prima del pagamento, soprattutto se lo stato indica che è richiesta una differenza di peso o conferma.
+Dopo che il magazzino ha imballato e pesato il pacco, il preventivo corrente della rotta è un riferimento migliore di una formula del foglio di calcolo. Verifica l’importo prima del pagamento, soprattutto se lo stato richiede conferma o supplemento per una differenza di peso.
 
-Salvare il numero del pacco, la rotta e l'importo pagato finale. Quel record rende la pianificazione futura della spedizione più accurata che affidarsi agli aneddoti della comunità.
+Salva numero del pacco, rotta e importo realmente pagato. Questi dati migliorano le pianificazioni future più dei racconti generici di altri acquirenti. Conserva la stima per capire gli scostamenti, senza usarla al posto del preventivo confermato.
 
-Nota di fonte: il sito pubblico di Hipobuy descrive un flusso di lavoro da magazzino a consegna internazionale, e le pagine dei prodotti attuali separano la spedizione tra venditore e magazzino da una spedizione internazionale stimata. Recensione di ottobre 2026. Le formule della compagnia di navigazione e i prezzi di rotta possono cambiare; utilizzare il preventivo di prezzo di spedizione live imballato per le decisioni finali.
+## Usa correttamente il modello della pagina
 
-## Utilizzare il modello in pagina in modo trasparente
+Il calcolatore parte da un esempio di 2 kg e 40 × 30 × 30 cm. Sostituisci ogni valore con i tuoi dati. Divisore e arrotondamento devono provenire dalla rotta valutata. Scegli «Solo peso reale» soltanto quando il servizio disponibile applica quella regola. L’altra modalità prende il peso maggiore e lo arrotonda per eccesso allo scatto indicato.
 
-La calcolatrice di questa pagina inizia con un'illustrazione di 2 kg di pacchi di 40 × 30 × 30 cm. Sostituire ogni valore con le proprie informazioni. Il divisore volumetrico e l'incremento di peso devono provenire dalla via che state valutando. Selezionare solo la fatturazione dei pesi effettivi solo quando questa è la regola per il servizio disponibile. In caso contrario, la modalità di confronto utilizza il peso maggiore del peso effettivo e volumetrico prima di arrotondarlo verso l'alto fino all'incremento inserito.
+Il modello di prezzo opzionale è costo fisso più chilogrammi fatturabili moltiplicati per la tariffa in USD inserita. Non riproduce tutti gli scaglioni iniziali, minimi, supplementi di destinazione o imposte. Lascia la tariffa vuota per un confronto di peso senza un prezzo inventato. Zero è un vero valore di calcolo, non un sostituto di una tariffa sconosciuta.
 
-Il modello opzionale di prezzo è volutamente semplice: quota fissa più chilogrammi fatturati moltiplicati per una tariffa di USD inserita dall'utente. Non può riprodurre ogni livello di peso iniziale, minimo, supplemento di destinazione o tassa. Lasciare il tasso in bianco produce un confronto di peso senza un prezzo fabbricato. Un tasso zero dovrebbe essere utilizzato solo se questo è veramente l'input che si intende modellare, non come sostituto per le informazioni mancanti.
+## Mantieni confrontabili gli scenari
 
-## Mantenere due scenari comparabili
+Per confrontare con e senza scatola originale, cambia le misure del pacco mantenendo destinazione, contenuto, valuta e tariffa. Aggiungi separatamente i servizi extra. Se cambi anche rotta, il risultato combina differenze di imballaggio e servizio: dichiaralo. Un volume calcolato inferiore non dimostra che il magazzino possa ottenerlo né che protegga abbastanza il contenuto.
 
-Per mantenere la casella e rimuovere il confronto della casella, cambiare i fattori di input del pacchetto misurati tenendo costante la destinazione, il contenuto, le ipotesi di valuta e tasso. Poi aggiungere qualsiasi supplemento di servizio separatamente. Se si cambia anche il percorso, il risultato misura sia le differenze di imballaggio e servizio, quindi etichettarlo di conseguenza. Un risultato dimensionale più piccolo non è la prova che il magazzino può produrre tale imballaggio o che fornisce una protezione sufficiente per il contenuto.
+Conserva dati inseriti e risultato insieme. Uno screenshot con un totale basso non permette di riprodurre l’operazione. Quando esiste un preventivo confermato, usalo come riferimento di pagamento. Se differisce dalla stima, chiedi quale peso, dimensione, arrotondamento o costo sia cambiato. Il calcolatore resta così uno strumento di pianificazione, non un servizio di tariffe Hipobuy in tempo reale.
 
-Registrare gli input del modello insieme al risultato. Una schermata isolata che mostra solo un totale basso non permette ad un altro lettore di riprodurre il calcolo. Una volta che il pacco imballato ha una stima confermata del prezzo di spedizione, utilizzare quella stima del prezzo di spedizione come riferimento di pagamento e mantenere la stima solo per capire la differenza. Se i due non sono d'accordo, chiedere quale peso, dimensione, regola arrotondamento o tassa è cambiato. Questo approccio rende la calcolatrice utile senza presentarlo come un servizio di Hipobuy live tariffa.
+Controlla le unità: qui si usano centimetri e chilogrammi. Inserire millimetri come centimetri gonfia il volume; grammi come chilogrammi falsano il peso reale. Converti prima e conserva i dati originali del magazzino accanto alla stima.
 
-Controllare le unità prima di cambiare un budget. Questo utensile impiega centimetri per dimensioni e chilogrammi per peso effettivo. Entrare millimetri come centimetri gonfia il risultato dimensionale in modo drammatico, mentre entrare grammi come chilogrammi rende il risultato effettivo-peso inutilizzabile. Convertire le misure prima e mantenere il record magazzino originale accanto al preventivo di lavoro.
+Fonti: processo ufficiale Hipobuy e Shipping Estimate, consultati nell’ottobre 2026. Formule, rotte e prezzi possono cambiare. Per pagare, utilizza il preventivo corrente del pacco completamente imballato.

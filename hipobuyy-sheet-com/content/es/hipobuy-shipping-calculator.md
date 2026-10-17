@@ -2,92 +2,92 @@ Esta calculadora modela peso embalado y una tarifa opcional introducida; no carg
 
 [Compara todos los costes](/es/articles/shipping-cost-checklist/)
 
-## Una calculadora de envío es un cálculo, no una promesa
+## Una calculadora ofrece una estimación
 
-La gente que busca una calculadora de envío Hipobuy normalmente quiere un número: ¿cuánto costará el paquete enviar? La dificultad es que el transporte internacional no está determinado únicamente por el precio del producto. Destino, contenido de paquetes, peso físico, dimensiones empaquetadas, restricciones de ruta y el método de facturación del transportista afectan al resultado.
+Quien busca una calculadora de envío Hipobuy quiere saber cuánto costará enviar el paquete. El precio del producto no basta para responder. Destino, contenido, peso real, dimensiones embaladas, restricciones y método de facturación del transportista influyen en el resultado.
 
-El flujo de trabajo público de Hipobuy separa la compra del producto de la entrega internacional de paquetes. Las páginas actuales de los productos pueden mostrar una sección de envío internacional estimada, pero el paquete final depende aún de lo que llegue al almacén y cómo se empaqueta el paquete. Usa una calculadora para comparar escenarios, no para prometer una carga final antes de empacar.
+Hipobuy separa la compra del producto de la entrega internacional. Las fichas pueden mostrar una estimación de transporte, pero el importe final depende de qué llega al almacén y cómo se prepara el paquete. Usa la calculadora para comparar escenarios, sin convertir una estimación previa al embalaje en un precio garantizado.
 
-## Comience con el peso real
+## Empieza por el peso real
 
-El peso real es el peso físico del paquete empaquetado. Si los gastos de ruta sólo se realizan por peso real, el cálculo es relativamente directo: el peso de carga se ajusta a las normas de redondeo y a la tabla de precios del transportista. El problema es que muchas rutas no usan solo el peso físico.
+El peso real es el que marca la báscula para el paquete ya embalado. Si la ruta factura únicamente ese peso, sus reglas de redondeo y tabla de precios determinan el peso facturable. Muchas rutas, sin embargo, también tienen en cuenta el volumen.
 
-El peso del almacén de un producto no siempre es el mismo que su contribución final al peso de la paquetería. Las cajas, el material protector, la consolidación y el reenvasado cambian el total. Utilice la cifra final empaquetada siempre que sea posible.
+El peso de un artículo en el almacén no siempre coincide con su aportación final al paquete. Cajas, protección, consolidación y reembalaje cambian la suma. Utiliza el dato final cuando exista y no presupongas que sumar los productos incluye todos los materiales de embalaje.
 
-## Comprender el peso volumétrico
+## Comprende el peso volumétrico
 
-El peso volumétrico, dimensional o volumétrico convierte las dimensiones del paquete en un número similar al peso. Una estructura común es longitud × anchura × altura dividida por un divisor específico del transportista. El divisor no es universal. Diferentes transportistas o rutas pueden utilizar diferentes fórmulas e incrementos de redondeo.
+El peso volumétrico o dimensional transforma las dimensiones en una referencia de peso. Una fórmula habitual es largo × ancho × alto dividido por el divisor del transportista. No existe un divisor universal. Las fórmulas, unidades y escalones de redondeo pueden variar entre servicios.
 
-Eso significa que una calculadora pública debe permitir que los usuarios entren en el divisor en lugar de fingir que hay una fórmula permanente Hipobuy. Si una ruta indica su regla dimensional, use esa regla exacta. Si no lo hace, espere a que el precio de envío en vivo estimado.
+Por eso una herramienta transparente permite introducir el divisor. No debe presentar una fórmula Hipobuy permanente para cualquier ruta. Si el servicio publica su regla dimensional, aplica exactamente esa regla. Si falta, espera al presupuesto actual en lugar de asumir que el valor inicial de la calculadora es vinculante.
 
-## Peso cargado es el número que importa
+## El peso facturable determina el presupuesto
 
-Muchos métodos de envío comparan el peso real con el peso volumétrico y cargan la cifra más grande. Una caja de zapatos ligera pero grande puede ser por lo tanto más costosa que una parcela densa del mismo peso físico. La pregunta clave de planificación no es "¿Qué tan pesado es?" pero "¿Qué peso cobrará esta ruta?"
+Muchos métodos comparan peso real y volumétrico y cobran el mayor. Una caja de zapatos ligera pero grande puede costar más que un paquete compacto del mismo peso físico. Lo decisivo es qué peso facturará la ruta concreta.
 
-Para cada ruta, registrar el peso real, las dimensiones empaquetadas, la fórmula volumétrica, el peso cargable redondeado y el precio mostrado en la interfaz actual.
+Para cada servicio, guarda peso real, dimensiones embaladas, fórmula volumétrica, peso facturable redondeado y precio actual. Así podrás distinguir si una diferencia procede del embalaje, de la tarifa o de otra regla de cálculo.
 
-## Cálculo de ejemplo
+## Un ejemplo de cálculo
 
-Supongamos que una paqueteta envasada mide 45 × 35 × 25 cm y pesa 4,2 kg. Si una ruta utiliza un divisor de 6000, el peso dimensional sería de aproximadamente 6,56 kg. Si esa ruta factura el valor más grande, el peso cargable se basaría en aproximadamente 6,56 kg antes de cualquier redondeo específico de la ruta.
+Supongamos que un paquete mide 45 × 35 × 25 cm y pesa 4,2 kg. Con un divisor ilustrativo de 6000, el peso volumétrico es aproximadamente 6,56 kg. Si la ruta cobra el mayor valor, esa sería la base antes de aplicar su redondeo específico.
 
-Cambiar sólo una suposición y el resultado puede cambiar. Un envase más pequeño después de eliminar el embalaje exterior innecesario puede reducir el peso dimensional. Una ruta diferente puede utilizar otra regla del divisor o del peso real. Es por esto que copiar la captura de pantalla de otro envío no es un estimado de precio de envío confiable.
+Cambiar una sola hipótesis puede alterar el resultado. Retirar embalaje exterior innecesario puede reducir el volumen. Otra ruta puede usar otro divisor o cobrar únicamente peso real. Por eso una captura del envío de otra persona no constituye un presupuesto fiable para tu paquete.
 
-## Las decisiones de empaquetado cambian la estimación
+## El embalaje modifica la estimación
 
-Las grandes cajas rígidas, especialmente las cajas de zapatos y los envases de regalo, pueden aumentar el volumen. La eliminación de envases puede reducir el peso cargable, pero también puede reducir la protección. Los bienes frágiles necesitan suficiente protección para sobrevivir a la manipulación. Elija según el artículo y la ruta actual en lugar de seguir una regla universal de "eliminar todas las casillas".
+Las cajas rígidas grandes, especialmente de zapatos o regalo, pueden aumentar el volumen. Quitarlas puede reducir el peso facturable y también la protección. Los objetos frágiles necesitan protección suficiente durante transporte y manipulación. Decide según artículo y servicio, sin aplicar una norma general de eliminar todas las cajas.
 
-Si se dispone de opciones de reenvasado o preenvasado, pueden ayudar cuando las dimensiones son la principal incertidumbre. Compruebe la interfaz de servicio actual para ver si hay disponibilidad y cualquier cargo.
+Si se ofrecen reembalaje o preparación de prueba, pueden ayudar cuando las dimensiones son inciertas. Comprueba disponibilidad, servicios incluidos y cargos actuales. Una reducción matemática solo es útil si el embalaje sigue protegiendo el contenido de manera adecuada.
 
-## La consolidación puede ayudar o perjudicar
+## Consolidar no siempre abarata el envío
 
-Combinar varios pedidos de almacén puede reducir el embalaje duplicado y el número de paquetes internacionales. También puede crear una caja más grande que mueve el paquete a una banda de peso dimensional diferente o elimina algunas opciones de ruta.
+Agrupar pedidos almacenados puede reducir embalajes duplicados y número de paquetes internacionales. También puede crear una caja mayor, cambiar el tramo volumétrico o dejar fuera algunas rutas antes disponibles.
 
-Comparar dos escenarios realistas: parcelas separadas frente a una parcela consolidada. Use las dimensiones actuales empaquetadas o estimadas para ambos. No asuma que la consolidación es automáticamente más barata.
+Compara dos escenarios realistas: paquetes separados y uno consolidado. Utiliza dimensiones actuales o estimaciones razonadas para ambos. En la opción separada suma todos los envíos. La consolidación resulta más barata únicamente si lo confirma la comparación completa.
 
-## Incluir los costes fuera de la línea de flete
+## Separa los costes adicionales
 
-Una estimación completa del costo de entrega puede incluir el precio del producto, el envío del vendedor al almacén, los servicios opcionales, los efectos de pago o cambio, los impuestos o derechos internacionales sobre el flete y el destino, cuando proceda. Una calculadora de envío debe separar claramente la carga de esas otras capas.
+El coste total entregado puede incluir producto, transporte del vendedor al almacén, servicios opcionales, efectos de pago o cambio, envío internacional y posibles impuestos o derechos en destino. Distingue el transporte principal de esas otras partidas.
 
-Esto hace que sea más fácil comparar productos y rutas sin ocultar costos en un número de titular.
+La separación permite comparar productos y rutas sin esconder gastos detrás de un importe destacado. Conserva las partidas para poder explicar cualquier cambio posterior en el total, en lugar de atribuirlo todo al precio por kilogramo.
 
-## La elegibilidad de la ruta viene antes del precio
+## Comprueba la admisibilidad antes del precio
 
-La tarifa más barata mostrada es irrelevante si la ruta no puede llevar el contenido. Las pilas, líquidos, imanes, mercancías frágiles y otras categorías restringidas pueden cambiar la disponibilidad de la ruta. El destino también importa.
+La tarifa más barata no sirve si el servicio no acepta el contenido. Baterías, líquidos, imanes, objetos frágiles y otras categorías especiales pueden limitar las rutas. El destino también influye en los servicios disponibles.
 
-Filtrar para las rutas elegibles primero. A continuación, comparar el peso cargable, seguimiento, rango de servicio esperado, términos de compensación y precio final.
+Filtra primero las opciones admisibles para producto y país. Después compara peso facturable, seguimiento, servicio previsto, condiciones de compensación y precio final. Una operación de peso no confirma aceptación de la mercancía ni una fecha de entrega.
 
-## Construir una calculadora transparente
+## Datos necesarios para un cálculo transparente
 
-Una calculadora útil necesita sólo unos pocos campos:
+Para que la comparación pueda reproducirse, prepara estos datos:
 
-- Destino o selección de ruta.
-- Peso real.
-- Longitud, anchura y altura.
-- Divisor volumétrico de la ruta.
-- Compañía naviera redondeando incremento.
-- Estructura de tarifa o estimación de precio de envío en vivo.
-- Escenario de embalaje opcional.
+- Destino o ruta seleccionada.
+- Peso real del paquete embalado.
+- Largo, ancho y alto.
+- Divisor volumétrico del servicio.
+- Escalón de redondeo del transportista.
+- Estructura tarifaria o presupuesto actual.
+- Variante de embalaje, si procede.
 
-Mostrar el resultado de peso real, el resultado de peso dimensional y la cifra más grande cargable. Etiquetar cada salida como una estimación a menos que proceda directamente de la estimación del precio de envío de paquetes empaquetados.
+Muestra por separado peso real, volumétrico y facturable según la regla seleccionada. Identifica los resultados como estimaciones mientras no procedan del presupuesto confirmado del paquete terminado.
 
-## Cuándo dejar de estimar
+## Cuándo prevalece el presupuesto final
 
-Deje de usar un cálculo una vez que el almacén haya embalado y pesado el paquete. En ese momento, la estimación actual del precio del envío de rutas es más fuerte que una fórmula de hoja de cálculo. Vuelve a comprobar la cantidad antes del pago, especialmente si el estado indica que se requiere una diferencia de peso o confirmación.
+Una vez embalado y pesado el paquete, el presupuesto actual de la ruta es una referencia mejor que una fórmula de hoja de cálculo. Revisa el importe antes del pago, especialmente si el estado exige confirmar una diferencia de peso o abonar un suplemento.
 
-Guarde el número de paquete, la ruta y la cantidad final pagada. Ese registro hace que la planificación del futuro envío sea más precisa que depender de anécdotas comunitarias.
+Guarda número del paquete, ruta e importe realmente pagado. Estos datos mejoran la planificación futura más que los relatos generales de otros compradores. Mantén la estimación para entender diferencias, sin usarla en lugar del presupuesto confirmado.
 
-Nota fuente: El sitio público de Hipobuy describe un flujo de trabajo de entrega de almacén a internacional, y las páginas actuales de productos separan el envío de vendedor a almacén de los envíos internacionales estimados. Revisado en octubre de 2026. Las fórmulas del transportista y los precios de ruta pueden cambiar; utilice la estimación del precio del envío en vivo para las decisiones finales.
+## Usa correctamente el modelo de esta página
 
-## Utilice el modelo en página de forma transparente
+La calculadora empieza con un ejemplo de 2 kg y 40 × 30 × 30 cm. Sustituye todos los valores por los tuyos. Divisor y redondeo deben proceder de la ruta evaluada. Selecciona «Solo peso real» únicamente cuando esa sea la regla del servicio disponible. El otro modo toma el mayor peso y lo redondea hacia arriba al escalón indicado.
 
-La calculadora de esta página comienza con una parcela ilustrativa de 2 kg de 40 × 30 × 30 cm. Reemplaza cada valor con tu propia información. El divisor volumétrico y el incremento de peso deben venir de la ruta que está evaluando. Seleccione la facturación de peso real sólo cuando esa sea la regla para el servicio disponible. De lo contrario, el modo de comparación utiliza el mayor peso real y volumétrico antes de redondear hacia arriba al incremento introducido.
+El modelo de precio opcional es cargo fijo más kilogramos facturables por tarifa introducida en USD. No reproduce todos los tramos iniciales, mínimos, recargos de destino o impuestos. Si dejas la tarifa vacía, obtienes una comparación de peso sin precio inventado. Cero es un valor de cálculo y no debe sustituir una tarifa desconocida.
 
-El modelo opcional de precio es deliberadamente simple: tarifa fija más kilogramos facturados multiplicados por una tasa de USD ingresada por el usuario. No puede reproducir todos los niveles de peso inicial, mínimo, recargo de destino o impuesto. Dejar la tasa en blanco produce una comparación de peso sin un precio fabricado. Una tasa de cero debe ser utilizada sólo si es realmente la entrada que pretende modelar, no como un sustituto de la información faltante.
+## Mantén comparables los escenarios
 
-## Mantener dos escenarios comparables
+Para comparar con y sin caja original, cambia las medidas del paquete y conserva destino, contenido, moneda y tarifa. Añade los servicios extra por separado. Si cambias también la ruta, el resultado mezcla diferencias de embalaje y servicio: indícalo. Un volumen calculado menor no prueba que el almacén pueda conseguirlo ni que proteja suficientemente el contenido.
 
-Para mantener la caja y eliminar la comparación de la caja, cambie las entradas de paquetes medidas mientras mantiene constantes las suposiciones de destino, contenido, moneda y tasa. A continuación, agregue cualquier cargo adicional por servicio por separado. Si también cambia la ruta, el resultado mide tanto las diferencias de embalaje como las de servicio, por lo que escríbala en consecuencia. Un resultado dimensional más pequeño no es prueba de que el almacén pueda producir ese paquete o que proporcione suficiente protección para el contenido.
+Guarda entradas y resultado juntos. Una captura con un total bajo no permite reproducir la operación. Cuando exista presupuesto confirmado, úsalo para pagar. Si difiere de la estimación, pregunta qué peso, dimensión, redondeo o cargo cambió. La calculadora es así una herramienta de planificación, no una fuente de tarifas Hipobuy en directo.
 
-Grabar las entradas del modelo junto con su resultado. Una captura de pantalla aislada que muestra sólo un bajo total no permite a otro lector reproducir el cálculo. Una vez que el paquete envasado tenga un precio de envío confirmado estimado, utilice ese precio de envío estimado como referencia de pago y retenga el estimado sólo para entender la diferencia. Si los dos no están de acuerdo, pregunte qué peso, dimensión, redondeo o tarifa cambió. Este enfoque hace que la calculadora sea útil sin presentarla como un servicio de tarifas Hipobuy en vivo.
+Comprueba las unidades: aquí se utilizan centímetros y kilogramos. Introducir milímetros como centímetros aumenta enormemente el volumen, y gramos como kilogramos distorsionan el peso real. Convierte primero y conserva las medidas originales del almacén junto a tu estimación.
 
-Compruebe las unidades antes de cambiar un presupuesto. Esta herramienta toma centímetros para las dimensiones y kilogramos para el peso real. Entrar en milímetros como centímetros infla el resultado dimensional dramáticamente, mientras que entrar en gramos como kilogramos hace que el resultado de peso real no se puede utilizar. Convierte primero las medidas y mantén el registro original del almacén junto a tu estimación de trabajo.
+Fuentes: proceso oficial de Hipobuy y Shipping Estimate, revisados en octubre de 2026. Fórmulas, rutas y precios pueden cambiar. Para pagar, utiliza el presupuesto vigente del paquete ya embalado.
