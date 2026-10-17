@@ -1,0 +1,50 @@
+---
+import Icon from './Icon.astro';
+import ArticleCard from './ArticleCard.astro';
+import {sourceURLs,reviewed} from '../lib/editorial';
+const {kind,e,article,route,lang,t}=Astro.props;
+const checkedDate=new Intl.DateTimeFormat(lang,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(reviewed));
+const sourceIds=article?.sources ?? (kind==='guide'?['buying','fees','inspection','storage','returns','estimate','receipt']:[]);
+const mins=article?Math.max(1,Math.ceil(article.sections.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length/180)):0;
+const heading=kind==='guide'?e.ui.guideTitle:kind==='faq'?e.ui.faqTitle:article?article.title:e.ui.articlesTitle;
+const description=kind==='guide'?e.ui.guideIntro:kind==='faq'?e.ui.faqIntro:article?article.description:e.ui.articlesIntro;
+const relatedBySlug={
+ 'kakobuy-spreadsheet-guide':['kakobuy-product-links','kakobuy-qc-photos','kakobuy-sizing-guide'],
+ 'kakobuy-product-links':['kakobuy-spreadsheet-guide','kakobuy-fees-payment','kakobuy-qc-photos'],
+ 'kakobuy-qc-photos':['kakobuy-sizing-guide','kakobuy-returns-refunds','kakobuy-warehouse-storage'],
+ 'kakobuy-sizing-guide':['kakobuy-qc-photos','kakobuy-returns-refunds','kakobuy-product-links'],
+ 'kakobuy-shipping-calculator':['kakobuy-fees-payment','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
+ 'kakobuy-fees-payment':['kakobuy-shipping-calculator','kakobuy-consolidation-packaging','kakobuy-returns-refunds'],
+ 'kakobuy-warehouse-storage':['kakobuy-returns-refunds','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
+ 'kakobuy-consolidation-packaging':['kakobuy-shipping-calculator','kakobuy-warehouse-storage','kakobuy-qc-photos'],
+ 'kakobuy-shipping-time-tracking':['kakobuy-warehouse-storage','kakobuy-shipping-calculator','kakobuy-returns-refunds'],
+ 'kakobuy-returns-refunds':['kakobuy-qc-photos','kakobuy-warehouse-storage','kakobuy-shipping-time-tracking']
+};
+const relatedArticles=article?(relatedBySlug[article.slug]||[]).map(slug=>e.articles.find(a=>a.slug===slug)).filter(Boolean):[e.articles[0],e.articles[2],e.articles[4]];
+---
+<section class:list={['knowledge-page','wrap',{'reading-page':kind==='article'}]}>
+ <nav class="knowledge-breadcrumb" aria-label={t.home}>
+  <a href={route('/')}>{t.home}</a><span>/</span>
+  {article?<><a href={route('/articles/')}>{e.ui.articles}</a><span>/</span><span>{article.title}</span></>:<span>{heading}</span>}
+ </nav>
+ <header class="knowledge-heading"><span class="eyebrow muted">KAKOBUY PICK</span><h1>{heading}</h1><p>{description}</p>
+  <div class="reading-meta"><span>{e.ui.author}</span><span>{e.ui.checked}: <time datetime={reviewed}>{checkedDate}</time></span>{article&&<span>{mins} {e.ui.readTime}</span>}</div>
+ </header>
+ {kind==='articles'&&<div class="articles-grid">{e.articles.map((a,index)=><ArticleCard article={a} e={e} route={route} index={index}/>)}</div>}
+ {kind==='guide'&&<div class="guide-layout"><aside class="knowledge-side"><h2>{e.ui.guideSteps}</h2><ol>{e.guide.sections.map((s,i)=><li><a href={`#step-${i+1}`}>{s.heading.replace(/^\d+\.\s*/, '')}</a></li>)}</ol><a class="button primary" href={route('/spreadsheet/')}>{e.ui.browse}<Icon name="arrow" size={17}/></a></aside><div class="reading-body">{e.guide.sections.map((s,i)=><section id={`step-${i+1}`}><h2>{s.heading}</h2>{s.paragraphs.map(p=><p>{p}</p>)}</section>)}</div></div>}
+ {kind==='faq'&&<>
+  <div class="faq-tools"><label class="faq-search"><span>{e.ui.faqSearch}</span><input id="faq-search" type="search" placeholder={e.ui.faqPlaceholder}/></label><p class="faq-counter" aria-live="polite"><strong id="faq-count">{e.faq.length}</strong> {e.ui.faqCount}</p></div>
+  <nav class="faq-group-links" aria-label={e.ui.contents}>{e.ui.faqGroups.map((g,i)=><a href={`#faq-group-${i}`}>{g}</a>)}</nav>
+  <p id="faq-no-results" class="faq-no-results" hidden>{e.ui.faqNoResults}</p>
+  <div class="faq-full">{e.ui.faqGroups.map((group,index)=><section class="faq-group" id={`faq-group-${index}`}><h2>{group}</h2><div class="faq-items">{e.faq.filter(f=>f.group===index).map(f=><details class="faq-answer" id={f.id}><summary>{f.q}<span aria-hidden="true">+</span></summary><div class="faq-answer-body"><p>{f.a}</p><div class="source-links">{f.sources.map(id=><a href={sourceURLs[id]} target="_blank" rel="noopener noreferrer">{e.ui.sourceLabels[id]} <Icon name="external" size={12}/></a>)}</div></div></details>)}</div></section>)}</div>
+ </>}
+ {kind==='article'&&article&&<>
+  <div class="article-layout"><aside class="knowledge-side"><details class="article-toc" open><summary>{e.ui.contents}</summary><ol>{article.sections.map((s,i)=><li><a href={`#section-${i+1}`}>{s.heading}</a></li>)}<li><a href="#checklist">{e.ui.practical}</a></li></ol></details><a class="button outline" href={route('/spreadsheet/')}>{e.ui.browse}<Icon name="arrow" size={17}/></a></aside>
+  <article class="reading-body">{article.sections.map((s,i)=><section id={`section-${i+1}`}><h2>{s.heading}</h2>{s.paragraphs.map(p=><p>{p}</p>)}</section>)}
+   {article.table&&<div class="article-table"><table><caption>{article.table.caption}</caption><thead><tr>{article.table.headers.map(h=><th scope="col">{h}</th>)}</tr></thead><tbody>{article.table.rows.map(row=><tr>{row.map((cell,i)=>i===0?<th scope="row">{cell}</th>:<td>{cell}</td>)}</tr>)}</tbody></table></div>}
+   <section class="takeaways" id="checklist"><h2>{e.ui.practical}</h2><ul>{article.checklist.map(item=><li>{item}</li>)}</ul></section>
+  </article></div>
+ </>}
+ {sourceIds.length>0&&<section class="source-panel"><h2>{e.ui.sources}</h2><p>{e.ui.editorialNote}</p><ul>{sourceIds.map(id=><li><a href={sourceURLs[id]} target="_blank" rel="noopener noreferrer">{e.ui.sourceLabels[id]} <Icon name="external" size={12}/></a></li>)}</ul></section>}
+ {(kind==='article'||kind==='guide')&&<section class="related-reading"><div class="section-heading"><h2>{e.ui.related}</h2><a class="text-link" href={route('/articles/')}>{e.ui.allArticles}<Icon name="arrow" size={17}/></a></div><div class="articles-grid compact">{relatedArticles.map((a,index)=><ArticleCard article={a} e={e} route={route} index={index}/>)}</div></section>}
+</section>

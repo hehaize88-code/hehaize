@@ -1,0 +1,11 @@
+---
+import Icon from './Icon.astro';
+const { article, e, route, index=0 }=Astro.props;
+const group={research:0,inspection:2,costs:1,shipping:3,warehouse:3,'after-sales':4}[article.category]??0;
+---
+<article class="article-card">
+  <div class="article-card-top"><span>{e.ui.faqGroups[group]}</span><span class="article-number">{String(index+1).padStart(2,'0')}</span></div>
+  <h3><a href={route(`/articles/${article.slug}/`)}>{article.title}</a></h3>
+  <p>{article.description}</p>
+  <a class="text-link article-read" href={route(`/articles/${article.slug}/`)} aria-label={`${e.ui.read}: ${article.title}`}>{e.ui.read}<Icon name="arrow" size={16}/></a>
+</article>
