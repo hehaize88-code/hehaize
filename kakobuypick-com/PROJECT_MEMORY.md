@@ -60,3 +60,13 @@
 - `npm run validate:deploy` 通过：Worker 2981.58 KiB，gzip 747.79 KiB，无数据库或其他绑定。
 - 构建先执行完整性检查：缺语言、缺段落、数字与英文基准不一致、翻译正文残留整句英文均阻止构建。一次性翻译生成脚本不作为发布源码保留，避免覆盖校订稿。
 - 商品数据、图片、注册链接、原始卖家 URL 与 affcode=rf8x8 未改。发布沿用现有 GitHub main → Cloudflare Worker；最终公开验收结果另记录于总项目记忆。继续保留 noindex/nofollow、X-Robots-Tag 和 robots Disallow: /，等待用户验收。
+
+
+### 独立页面公开浏览器检查
+
+- 首轮内容提交 `bf318c1fba58d9cf29b7b33a7636eca50e6e4d3a` 的 Worker Build `3f5195c4-8b59-487d-9ae4-b37f15331dc0` 已确认成功。下列交互与排版检查在该部署后完成；后续译文校订提交保留相同页面组件、样式和路由。
+- 用户连接 Chrome 实际点击验证 `/guide/`、`/faq/`、`/articles/` 及文章详情；文章中心显示 10 篇，FAQ 显示 26 条。搜索 storage 筛选到 4 条答案并显示官网出处，清空恢复 26 条。
+- 语言菜单显示 24 语，切换 Deutsch 保留 `kakobuy-spreadsheet-guide` 文章路径；德语 canonical 正确，robots meta 保留 noindex,nofollow。
+- 手机窄屏导航可见，无横向溢出（clientWidth/scrollWidth 均 375px），首次加载目录折叠；临时视口已重置。
+- 首页 12 张商品图均加载成功，图片 URL 仍直接来自 cnbuycha.com/media/products。
+- 公开检查地址：https://kakobuypick.com/guide/ 、https://kakobuypick.com/faq/ 、https://kakobuypick.com/articles/ 。仍待用户视觉验收，暂不开放搜索引擎索引。
