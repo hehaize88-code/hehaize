@@ -1,3 +1,7 @@
+Arrived signifie arrivée à l’entrepôt avant inspection ; Stored indique le stockage. Aucun ne signifie départ international. Consultez la commande pour achat et réception, puis le colis pour emballage, supplément et collecte. Waiting for Confirmation peut nécessiter un complément lié au poids réel.
+
+[Vérifier le bon suivi](/fr/articles/parcel-tracking-delivery/)
+
 ## La fiche, la commande et le colis désignent trois choses
 
 Une fiche de vendeur montre une offre et ses variantes. La commande Hipobuy suit l'achat puis le transport intérieur jusqu'à l'entrepôt. Le colis international est créé plus tard, après sélection des articles stockés. La notice officielle « Order Status Display » sépare ces étapes. Un statut « Shipped (Local) » concerne le trajet du vendeur à l'entrepôt, sans annoncer un départ vers votre pays.

@@ -1,3 +1,7 @@
+Esta calculadora modela peso embalado y una tarifa opcional introducida; no carga precios Hipobuy en directo. Ejemplo: 40 × 30 × 30 cm ÷ 6000 = 6 kg volumétricos. Frente a 2 kg reales hipotéticos, una ruta que cobre el mayor parte de 6 kg antes del redondeo. Sustituye los supuestos por las reglas actuales.
+
+[Compara todos los costes](/es/articles/shipping-cost-checklist/)
+
 ## Una calculadora de envío es un cálculo, no una promesa
 
 La gente que busca una calculadora de envío Hipobuy normalmente quiere un número: ¿cuánto costará el paquete enviar? La dificultad es que el transporte internacional no está determinado únicamente por el precio del producto. Destino, contenido de paquetes, peso físico, dimensiones empaquetadas, restricciones de ruta y el método de facturación del transportista afectan al resultado.

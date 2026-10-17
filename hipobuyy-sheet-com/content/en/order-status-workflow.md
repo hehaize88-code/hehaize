@@ -1,3 +1,7 @@
+Arrived means the item reached the warehouse and awaits inspection; Stored means it is in warehouse storage. Neither means your international parcel has shipped. Check the order record for purchasing and warehouse progress, then the parcel record for packing, additional shipping payment and carrier collection. Waiting for Confirmation on a parcel can require a weight-related payment difference.
+
+[Check the correct tracking record](/en/articles/parcel-tracking-delivery/)
+
 ## An order and a parcel are different records
 
 A product link, a shopping-agent order and an international parcel may all appear in the same buying journey, but they answer different questions. The seller listing identifies an offer. The Hipobuy order records a purchase request and the item's progress toward its Chinese warehouse. A parcel record begins when you select warehoused items for international delivery. If you look at the wrong record, an ordinary handoff can look like a delay or a completed inspection can look like a shipment. Hipobuy's official Order Status Display separates order statuses from submitted-parcel statuses for this reason.

@@ -35,6 +35,10 @@ const language=document.getElementById('language');if(language)language.addEvent
 function editorialEvent(name,params={}){
   if(typeof window.gtag==='function')window.gtag('event',name,{page_language:document.documentElement.lang,...params});
 }
+// Direct search landings are distinct from clicks between guides.
+if (/^\/(en|de|es|fr|it)\/articles\/[^/]+\/$/.test(location.pathname)) {
+  editorialEvent('article_view',{article_path:location.pathname});
+}
 document.addEventListener('click',event=>{
   const a=event.target.closest('a[href]');if(!a)return;
   const u=new URL(a.href,window.location.href);
@@ -42,6 +46,9 @@ document.addEventListener('click',event=>{
     const match=u.pathname.match(/\/(\d+)\.html$/);
     editorialEvent(match?'outbound_product_click':'outbound_category_click',{link_path:u.pathname,...(match?{item_id:match[1]}:{})});
   }else if(u.origin===location.origin&&u.pathname!==location.pathname&&/\/articles\/[^/]+\/$/.test(u.pathname))editorialEvent('article_open',{article_path:u.pathname});
+  if (/\/articles\/[^/]+\/$/.test(location.pathname)&&u.origin===location.origin&&/^\/(en|de|es|fr|it)\/catalog\//.test(u.pathname)) {
+    editorialEvent('guide_to_catalog_click',{article_path:location.pathname,link_path:u.pathname});
+  }
 });
 document.querySelectorAll('[data-parcel-calculator]').forEach(form=>{
   form.addEventListener('submit',event=>{

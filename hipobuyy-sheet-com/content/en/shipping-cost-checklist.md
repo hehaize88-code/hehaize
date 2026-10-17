@@ -1,3 +1,7 @@
+There is no single Hipobuy shipping cost for every parcel. Destination, eligible route, packed weight, dimensions and service options change the quote. Add goods, domestic delivery, optional services, international shipping and possible destination charges separately. Compare the same parcel assumptions, then use the final packed quote before paying.
+
+[Calculate packed and volumetric weight](/en/articles/hipobuy-shipping-calculator/)
+
 ## The item price is only the first number
 
 A product card is useful for discovering an item. It is a poor estimate of what the package will cost at your door. Hipobuy's official Service & Fees notice describes a free shopping-agent service and separates the item cost, international shipping and customs-related charges. It defines item cost as the product price plus domestic shipping from the seller to its warehouse. Optional value-added services can add cost. The exact route, destination, parcel size and current terms determine what you will actually pay. Start with the entire basket, not a headline discount or an isolated spreadsheet price.

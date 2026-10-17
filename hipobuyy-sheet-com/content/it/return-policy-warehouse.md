@@ -1,3 +1,7 @@
+L’avviso attuale Hipobuy consente la richiesta per articoli idonei entro cinque giorni da Warehoused: 120 ore dall’ora successiva. Contano accordo del venditore e stato del prodotto. Un reso incondizionato del cliente può costare entrambi i trasporti nazionali più 5 RMB. I 90 giorni di deposito non sono il termine di reso.
+
+[Documenta la differenza con la checklist QC](/it/articles/qc-photo-checklist/)
+
 ## Controlla l'articolo appena arriva in magazzino
 
 La scelta tra conservare e restituire un oggetto spesso va fatta prima dell'invio internazionale. Conserva la variante ordinata, il prezzo e la scheda del venditore; poi confrontali con le foto dell'esemplare arrivato. Nella guida «Order Status Display», Arrived significa ricezione in attesa d'ispezione e Stored indica deposito. Il tempo di deposito non equivale al periodo disponibile per richiedere un reso.

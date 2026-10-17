@@ -1,3 +1,7 @@
+Der aktuelle Hipobuy-Hinweis nennt für geeignete Artikel fünf Tage ab Warehoused, berechnet als 120 Stunden ab der nächsten Stunde. Verkäuferzustimmung und Zustand bleiben entscheidend. Bei kundenveranlasster Rückgabe können beide Inlandstransporte und 5 RMB Servicegebühr anfallen. 90 Tage Lagerung sind keine Rückgabefrist.
+
+[Abweichung mit der QC-Checkliste festhalten](/de/articles/qc-photo-checklist/)
+
 ## Die Fünf-Tage-Angabe hat Voraussetzungen
 
 Die offizielle Hipobuy-Seite „Returns and Refunds“ beschreibt eine Rückgabeleistung teilnehmender Verkäufer auf Drittplattformen. Eine Ware muss dafür nach dem Angebot des Verkäufers geeignet, in einem wiederverkaufsfähigen Zustand und innerhalb der Antragsfrist sein. Diese drei Voraussetzungen sind getrennt zu prüfen. Ein Produkt in einer Tabelle zu finden bedeutet nicht, dass jeder Verkäufer es ohne Bedingungen zurücknimmt.

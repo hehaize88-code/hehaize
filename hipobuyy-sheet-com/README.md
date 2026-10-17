@@ -14,7 +14,7 @@ node tests/release.mjs
 
 Python 3.12 or later is required. The build has no external Python dependencies. It renders the original five-language editorial site and bundles the catalogue module using plain text composition, without a Node dependency install. The committed `dist/` is ready to serve. The catalogue has no private credentials or database bindings.
 
-`content/editorial.json` and the five language directories retain all 22 articles per language. The shared header and footer are generated from the same template for editorial and catalogue pages. EN/DE/ES/FR/IT switching preserves the route and catalogue query.
+`content/editorial.json` and the five language directories retain all 25 articles per language. The shared header and footer are generated from the same template for editorial and catalogue pages. EN/DE/ES/FR/IT switching preserves the route and catalogue query.
 
 ## Catalogue and purchases
 

@@ -1,3 +1,7 @@
+Arrived significa llegada al almacén pendiente de inspección; Stored indica almacenamiento. Ninguno significa envío internacional. Consulta el pedido para compra y recepción, y el paquete para embalaje, diferencias de transporte y recogida. Waiting for Confirmation puede requerir pagar una diferencia por el peso real.
+
+[Consulta el seguimiento correcto](/es/articles/parcel-tracking-delivery/)
+
 ## Ficha, pedido y paquete son registros distintos
 
 La ficha del vendedor identifica una oferta. El pedido del agente sigue la compra y su llegada al almacén chino. Cuando eliges artículos almacenados para enviarlos al extranjero, se crea otro registro: el paquete internacional. La guía oficial de estados de Hipobuy separa ambas secuencias. Leer «Shipped» sin saber a qué registro pertenece puede llevarte a confundir el transporte local del vendedor con una entrega ya iniciada hacia tu país.

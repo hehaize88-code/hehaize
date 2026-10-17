@@ -1,3 +1,7 @@
+Ce calculateur modélise poids emballé et tarif facultatif saisi, sans prix Hipobuy en direct. Exemple : 40 × 30 × 30 cm ÷ 6000 = 6 kg volumétriques. Face à 2 kg réels hypothétiques, une ligne retenant le maximum part de 6 kg avant arrondi. Remplacez les hypothèses par les règles actuelles.
+
+[Comparer l’ensemble des coûts](/fr/articles/shipping-cost-checklist/)
+
 ## Une calculatrice d'expédition est une estimation, pas une promesse
 
 Les personnes qui cherchent une calculatrice d'expédition Hipobuy veulent habituellement un numéro : quel sera le coût du colis pour expédier? La difficulté est que le transport international n'est pas déterminé par le prix du produit seulement. La destination, le contenu du colis, le poids physique, les dimensions emballées, les restrictions de route et la méthode de facturation de la compagnie maritime affectent tous le résultat.

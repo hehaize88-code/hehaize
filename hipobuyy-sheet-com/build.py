@@ -167,13 +167,37 @@ HOME_PRODUCTS=json.loads((ROOT/'commerce'/'home-products.json').read_text())
 
 def e(v):return html.escape(str(v),quote=True)
 def href(lang,path=''):return f'/{lang}/'+(path.strip('/')+'/' if path else '')
+def article_inline(value):
+    """Render audited links; escape all other editorial text and reject unsafe destinations."""
+    output=[];end=0
+    for match in re.finditer(r'\[([^\]\n]+)\]\(([^\s)]+)\)',value):
+        label,url=match.groups()
+        if not (re.fullmatch(r'/(?:en|de|es|fr|it)/[a-z0-9/_.#?-]*',url) or re.fullmatch(r'https://hipobuy\.com/[a-zA-Z0-9/_.?=&%-]*',url)):
+            raise ValueError(f'Unapproved editorial link: {url}')
+        output.extend([e(value[end:match.start()]),f'<a href="{e(url)}">{e(label)}</a>']);end=match.end()
+    return ''.join(output)+e(value[end:])
+
+def reader_paths(lang):
+    labels={
+        'en':['Choose your next step','Check a product link','Check QC photos','Estimate shipping'],
+        'de':['Dein nächster Schritt','Produktlink prüfen','QC-Fotos prüfen','Versand berechnen'],
+        'es':['Elige el siguiente paso','Revisa un enlace','Revisa las fotos QC','Estima el envío'],
+        'fr':['Votre prochaine étape','Vérifier un lien','Contrôler les photos QC','Estimer la livraison'],
+        'it':['Scegli il prossimo passo','Controlla un link','Controlla le foto QC','Stima la spedizione']}[lang]
+    slugs=['hipobuy-product-links','qc-photo-checklist','hipobuy-shipping-calculator']
+    return '<nav class="reader-paths" aria-label="'+e(labels[0])+'">'+''.join(f'<a href="{href(lang,"articles/"+slug)}">{e(label)} →</a>' for slug,label in zip(slugs,labels[1:]))+'</nav>'
+
+def source_links(lang,record):
+    if not record.get('sources'):return ''
+    label={'en':'Sources checked for this update','de':'Für diese Aktualisierung geprüfte Quellen','es':'Fuentes revisadas para esta actualización','fr':'Sources consultées pour cette mise à jour','it':'Fonti verificate per questo aggiornamento'}[lang]
+    return '<aside class="article-sources"><strong>'+e(label)+' · '+e(record['modified'])+'</strong><ul>'+''.join('<li><a href="'+e(s['url'])+'">'+e(s['label'])+' ↗</a></li>' for s in record['sources'])+'</ul></aside>'
 def meta(lang,path,title,description):
     alts=''.join(f'<link rel="alternate" hreflang="{l}" href="{SITE}{href(l,path)}">' for l in LANGS)+f'<link rel="alternate" hreflang="x-default" href="{SITE}{href("en",path)}">'
     page_title=title if path.startswith('articles/') else title+' | Hipobuyy Sheet'
     article=BY_SLUG.get(path.split('/')[-1]) if path.startswith('articles/') else None
     share_image=article['image'] if article else 'article-listing.jpg'
     sharing=f'<meta property="og:type" content="{"article" if article else "website"}"><meta property="og:site_name" content="Hipobuyy Sheet"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}"><meta property="og:url" content="{SITE}{href(lang,path)}"><meta property="og:image" content="{SITE}/assets/{share_image}"><meta name="twitter:card" content="summary_large_image">'
-    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261012"><script defer src="/assets/site.js?v=20261012"></script><script defer src="/assets/catalog.js?v=20261012"></script></head>'
+    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261017-seo"><script defer src="/assets/site.js?v=20261017-seo"></script><script defer src="/assets/catalog.js?v=20261012"></script></head>'
 def shell(lang,path,title,description,body,home=False):
     t=T[lang];nav=''.join(f'<a class="{"active" if path.strip("/")==r else ""}" href="{href(lang,r)}">{e(t["nav"][i])}</a>' for i,r in enumerate(ROUTES) if r != "finds")
     opts=''.join(f'<option value="{href(l,path)}" {"selected" if l==lang else ""}>{l.upper()}</option>' for l in LANGS)
@@ -239,11 +263,11 @@ def article_html(lang,slug):
             if len(rows)<3 or not all(len(row)==len(rows[0]) for row in rows[1:]) or not all(re.fullmatch(r':?-{3,}:?',cell) for cell in rows[1]):
                 raise ValueError(f'Unsupported article table in {lang}/{slug}')
             blocks.append('<div class="article-tablewrap"><table><thead><tr>'+''.join('<th>'+e(cell)+'</th>' for cell in rows[0])+'</tr></thead><tbody>'+''.join('<tr>'+''.join(f'<td data-label="{e(rows[0][j])}">'+e(cell)+'</td>' for j,cell in enumerate(row))+'</tr>' for row in rows[2:])+'</tbody></table></div>')
-        elif block.startswith('- '): blocks.append('<ul>'+''.join(f'<li>{e(line[2:])}</li>' for line in block.splitlines())+'</ul>')
-        else: blocks.append('<p>'+e(' '.join(block.splitlines()))+'</p>')
+        elif block.startswith('- '): blocks.append('<ul>'+''.join(f'<li>{article_inline(line[2:])}</li>' for line in block.splitlines())+'</ul>')
+        else: blocks.append('<p>'+article_inline(' '.join(block.splitlines()))+'</p>')
     toc_title={'en':'In this guide','de':'In diesem Ratgeber','es':'En esta guía','fr':'Dans ce guide','it':'In questa guida'}[lang]
     toc='<details class="article-toc"><summary>'+toc_title+'</summary><ol>'+''.join(f'<li><a href="#{anchor}">{e(label)}</a></li>' for anchor,label in headings)+'</ol></details>'
-    return '<article class="prose longread">'+toc+chapters(blocks)+'</article>'
+    return '<article class="prose longread">'+toc+chapters(blocks)+source_links(lang,BY_SLUG[slug])+'</article>'
 
 from editorial_components import calculator, editorial_products, related_slugs
 
@@ -252,7 +276,7 @@ for lang in LANGS:
  cats=''.join(f'<a class="cat" href="{SHOP}/{c}/"><span>{e(CAT_NAMES[lang][i])}</span><span aria-hidden="true">↗</span></a>' for i,c in enumerate(CATEGORIES))
  hero=f'<div class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["hero"])}</h1><p>{e(t["sub"])}</p>{button_search(lang)}<a class="image-shortcut" href="/{lang}/catalog/image-search/">▧ {e(t["image"])} →</a><div class="quicklinks">'+''.join(f'<a class="pill" href="{SHOP}/{c}/">{e(CAT_NAMES[lang][i])} ↗</a>' for i,c in enumerate(CATEGORIES[:5]))+f'</div></div><div class="hero-aside"><span class="label">HIPOBUY / SPREADSHEET</span><strong>{e(t["aside_title"])}</strong><p>{e(t["aside"])}</p><a href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></div></div></div>'
  link=f'<a class="text-link" href="{href(lang,"spreadsheet")}">{e(t["viewall"])} →</a>'
- home=hero+f'<section><div class="wrap">{section_header(t["products"],t["products_sub"],link)}<div id="hipo-live-products" class="catalog-grid">{''.join(home_card(p,lang) for p in HOME_PRODUCTS)}</div></div></section>'
+ home=hero+f'<div class="wrap">{reader_paths(lang)}</div>'+f'<section><div class="wrap">{section_header(t["products"],t["products_sub"],link)}<div id="hipo-live-products" class="catalog-grid">{''.join(home_card(p,lang) for p in HOME_PRODUCTS)}</div></div></section>'
  home+=f'<section style="background:#edf3f8"><div class="wrap">{section_header(t["categories"],t["categories_sub"])}<div class="cat-grid">{cats}</div></div></section>'
  home+=f'<section><div class="wrap"><div class="panel"><div><h2>{e(t["how"])}</h2><p>{e(t["how_sub"])}</p><p style="margin-top:16px"><a class="inline-action" href="{href(lang,"guide")}">{e(t["nav"][3])} →</a></p></div><div class="steps">'+''.join(f'<div class="step"><b>{i+1}</b><span>{e(s)}</span></div>' for i,s in enumerate(t['steps']))+'</div></div></div></section>'
  all_articles=f'<a class="text-link" href="{href(lang,"articles")}">{e(t["nav"][7])} →</a>'
@@ -270,12 +294,12 @@ for lang in LANGS:
  for route,idx in [('guide',3),('qc',4),('shipping',5),('faq',6)]:
   page=head(lang,idx)+f'<div class="wrap route">{button_search(lang) if route=='qc' else ''}{calculator(lang) if route=='shipping' else ''}{text_sections(t["body"][route])}{'<nav class="related-guides">'+''.join('<a href="'+href(lang,'articles/'+s)+'">'+e(BY_SLUG[s]['locales'][lang]['title'])+'</a>' for s in related_slugs(route))+'</nav>' if route in ['shipping','qc','guide'] else ''}<p><a class="inline-action" href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></p></div>'
   save(lang,route,page,t['page_titles'][idx],t['page_subs'][idx])
- articles=head(lang,7)+f'<div class="wrap route">{article_cards(lang)}</div>'
+ articles=head(lang,7)+f'<div class="wrap route">{reader_paths(lang)}{article_cards(lang)}</div>'
  save(lang,'articles',articles,t['page_titles'][7],t['page_subs'][7])
  for i,slug in enumerate(SLUGS):
   path='articles/'+slug
   related_idxs=[SLUGS.index(s) for s in related_slugs(slug) if s in SLUGS and s!=slug]
-  related='<nav class="related-guides" aria-label="Related guides"><strong>'+e(t['reading'])+'</strong>'+''.join(f'<a href="{href(lang,"articles/"+SLUGS[j])}">{e(t["article_titles"][j])} →</a>' for j in related_idxs if j!=i)+'</nav>'
+  related='<nav class="related-guides" aria-label="'+e(t['reading'])+'"><strong>'+e(t['reading'])+'</strong>'+''.join(f'<a href="{href(lang,"articles/"+SLUGS[j])}">{e(t["article_titles"][j])} →</a>' for j in related_idxs if j!=i)+'</nav>'
   article=f'<div class="page-head wrap"><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["article_titles"][i])}</h1><p>{e(t["article_descriptions"][i])}</p></div><div class="wrap route">{editorial_products(lang,slug,P,product_grid)}{calculator(lang) if slug=='hipobuy-shipping-calculator' else ''}{article_html(lang,slug)}{related}<p><a class="inline-action" href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></p></div>'
   save(lang,path,article,t['article_titles'][i],t['article_descriptions'][i])
 
@@ -311,6 +335,7 @@ nav_code='const CHROME='+json.dumps(chrome,ensure_ascii=False)+';\n'
 nav_code+="function nav(lang,path,query=''){return CHROME[lang].header.replaceAll('__CATALOG__/',path.replace(/^\\//,'')+query)}\nfunction footer(lang){return CHROME[lang].footer}\n"
 (ROOT/'commerce/chrome.mjs').write_text(nav_code.replace('function nav(', 'export function nav(').replace('function footer(', 'export function footer('))
 source=(ROOT/'commerce/catalog.mjs').read_text().replace("import { nav, footer } from './chrome.mjs';",nav_code)
+source=source.replace("import { productHelp } from './product-guides.mjs';",(ROOT/'commerce/product-guides.mjs').read_text().replace('export function productHelp','function productHelp'))
 source+=(ROOT/'commerce/worker.mjs').read_text()
 (DIST/'_worker.js').write_text(source)
 (DIST/'_routes.json').write_text(json.dumps({'version':1,'include':['/*'],'exclude':['/assets/*','/robots.txt']}))

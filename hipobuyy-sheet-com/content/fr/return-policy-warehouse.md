@@ -1,3 +1,7 @@
+L’avis actuel Hipobuy prévoit une demande pour les articles admissibles dans les cinq jours après Warehoused : 120 heures à partir de l’heure suivante. Accord du vendeur et état restent déterminants. Un retour sans motif du client peut coûter les deux transports intérieurs et 5 RMB de service. Les 90 jours de stockage ne prolongent pas ce délai.
+
+[Documenter l’écart avec la liste QC](/fr/articles/qc-photo-checklist/)
+
 ## Inspecter dès l'arrivée à l'entrepôt
 
 Le moment utile pour décider d'un retour se situe souvent avant l'expédition internationale. Conservez la fiche du vendeur, la taille, la couleur et le prix choisis; comparez-les aux photos de la marchandise reçue. Dans « Order Status Display », Arrived désigne une réception en attente d'inspection, puis Stored un article stocké. Ce dernier statut ne veut pas dire que la durée de retour s'étend pendant toute la durée de stockage gratuit.

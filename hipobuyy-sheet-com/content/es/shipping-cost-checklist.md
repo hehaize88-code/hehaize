@@ -1,3 +1,7 @@
+No existe un coste de envío Hipobuy único para todos los paquetes. Destino, ruta admisible, peso embalado, dimensiones y opciones cambian el presupuesto. Separa mercancía, entrega nacional, servicios, envío internacional y posibles cargos de destino. Compara el mismo paquete y revisa el importe final antes de pagar.
+
+[Calcula peso real y volumétrico](/es/articles/hipobuy-shipping-calculator/)
+
 ## Precio del artículo y coste de entrega son cifras distintas
 
 Una hoja suele mostrar el precio de venta, pero en una compra mediante agente hay otras partidas: transporte local del vendedor al almacén chino, envío internacional, servicios opcionales y posibles impuestos del destino. El aviso oficial «Service & Fees» de Hipobuy describe como gratuito el servicio del agente de compras. No dice que todo el transporte sea gratis. Separa los componentes para evitar comparar una etiqueta de precio con un presupuesto de entrega.

@@ -1,3 +1,7 @@
+Dieser Rechner modelliert Paketgewicht und einen optional eingegebenen Tarif, keine Hipobuy-Livepreise. Beispiel: 40 × 30 × 30 cm ÷ 6000 = 6 kg Volumengewicht. Gegenüber angenommenen 2 kg Realgewicht ergibt eine Route mit höherer Abrechnungsbasis 6 kg vor Rundung. Ersetze alle Annahmen durch aktuelle Routenregeln.
+
+[Die vollständigen Kosten vergleichen](/de/articles/shipping-cost-checklist/)
+
 ## Ein Versandrechner ist eine Schätzung, kein Versprechen
 
 Menschen, die nach einem Hipobuy Versandrechner suchen, wollen normalerweise eine Nummer: Was kostet das Paket zu versenden? Die Schwierigkeit besteht darin, dass der internationale Versand nicht allein durch den Produktpreis bestimmt wird. Ziel, Paketinhalt, physisches Gewicht, verpackte Abmessungen, Routenbeschränkungen und die Abrechnungsmethode der Reederei beeinflussen das Ergebnis.

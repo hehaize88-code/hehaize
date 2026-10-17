@@ -1,3 +1,7 @@
+For Hipobuy tracking, first identify whether the number covers seller-to-warehouse delivery or the international parcel. Use the matching carrier and record its latest dated event. A created label, warehouse arrival and international dispatch are different stages. If tracking stops, keep the parcel ID, route and last event together before asking official support for clarification.
+
+[Work through a tracking gap](/en/articles/hipobuy-tracking-not-updating/)
+
 ## Choose the correct record to track
 
 A China shopping-agent purchase crosses at least two delivery stages. The seller sends an item to the agent's warehouse, and the agent later sends a selected parcel internationally. Tracking one does not tell you the state of the other. Hipobuy's official Order Status Display makes this distinction: Shipped (Local) is the seller's domestic movement, while Shipped (International) belongs to a parcel submitted for overseas delivery. Save both the item order number and the parcel number, and do not treat an old local scan as the latest event for the international package.

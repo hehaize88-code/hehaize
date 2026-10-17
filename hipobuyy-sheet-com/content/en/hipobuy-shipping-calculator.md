@@ -1,3 +1,7 @@
+This calculator models packed weight and an optional entered rate; it does not load live Hipobuy prices. Example: 40 × 30 × 30 cm ÷ 6000 = 6 kg volumetric weight. Against an illustrative 2 kg scale weight, a route charging the greater value starts at 6 kg before rounding. Replace every assumption with your route’s current rules.
+
+[Compare the complete cost checklist](/en/articles/shipping-cost-checklist/)
+
 ## A shipping calculator is an estimate, not a promise
 
 People searching for a Hipobuy shipping calculator usually want one number: what will the parcel cost to ship? The difficulty is that international shipping is not determined by product price alone. Destination, parcel contents, physical weight, packed dimensions, route restrictions and the carrier's billing method all affect the result.

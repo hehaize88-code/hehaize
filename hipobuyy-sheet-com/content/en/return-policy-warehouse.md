@@ -1,3 +1,7 @@
+Hipobuy’s current notice allows a return request for eligible items within five days after Warehoused, calculated as 120 hours beginning with the next hour. Seller agreement and product condition still matter. Buyer-initiated unconditional returns may involve both domestic shipping directions plus a RMB 5 service fee. The 90-day storage period is not the return window.
+
+[Record the mismatch with the QC checklist](/en/articles/qc-photo-checklist/)
+
 ## The five-day headline needs three qualifications
 
 “Five-day return” sounds like a blanket right until you read the conditions. Hipobuy's official Returns and Refunds notice describes a service offered by participating sellers on third-party platforms. The article must be eligible, remain in a marketable condition and be within the warehouse request window. Those are three separate checks. A buyer who sees the item in a spreadsheet and assumes that every seller will take it back is skipping the part that determines the result.

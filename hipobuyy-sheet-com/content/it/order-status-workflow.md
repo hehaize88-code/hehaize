@@ -1,3 +1,7 @@
+Arrived significa arrivo al magazzino in attesa di controllo; Stored indica deposito. Nessuno significa spedizione internazionale. Controlla l’ordine per acquisto e ricezione, il pacco per imballaggio, differenze di trasporto e ritiro. Waiting for Confirmation può richiedere un pagamento aggiuntivo legato al peso.
+
+[Controlla il tracking corretto](/it/articles/parcel-tracking-delivery/)
+
 ## Scheda del venditore, ordine e pacco sono tre registri
 
 La scheda di un venditore descrive una proposta con varianti. L'ordine Hipobuy registra l'acquisto e la consegna domestica al magazzino. Il pacco internazionale nasce dopo, quando scegli gli articoli immagazzinati da spedire. La guida ufficiale «Order Status Display» distingue i due percorsi. «Shipped (Local)» indica che il venditore ha spedito verso il magazzino, non che la merce viaggi già verso il tuo paese.

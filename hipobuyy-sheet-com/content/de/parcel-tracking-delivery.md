@@ -1,3 +1,7 @@
+Kläre bei der Hipobuy-Sendungsverfolgung zuerst, ob die Nummer Inlandslieferung zum Lager oder das internationale Paket betrifft. Nutze den passenden Transportdienst und notiere sein letztes datiertes Ereignis. Etiketterstellung, Lagerankunft und Auslandsversand sind verschiedene Phasen. Halte Paket-ID, Route und letzten Scan für den offiziellen Support bereit.
+
+[Tracking-Lücke gezielt prüfen](/de/articles/hipobuy-tracking-not-updating/)
+
 ## Die richtige Sendung verfolgen
 
 Ein Einkauf über einen China-Agenten umfasst mindestens zwei Transportwege. Zuerst schickt der Verkäufer den Artikel zum Lager; später sendet der Agent ein ausgewähltes Paket international. Ein Tracking-Eintrag für die erste Strecke sagt nichts über die zweite. Hipobuys offizielle Statusübersicht unterscheidet Shipped (Local) beim Verkäufer von Shipped (International) beim eingereichten Auslandspaket. Bewahre sowohl die Artikelauftragsnummer als auch die Paketnummer auf.

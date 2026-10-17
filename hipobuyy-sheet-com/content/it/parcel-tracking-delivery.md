@@ -1,3 +1,7 @@
+Per il tracking Hipobuy, identifica se il numero riguarda consegna al magazzino o pacco internazionale. Usa il corriere giusto e conserva l’ultimo evento datato. Etichetta creata, arrivo in magazzino e partenza internazionale sono fasi diverse. Se non cambia, prepara ID del pacco, rotta e ultimo evento per l’assistenza ufficiale.
+
+[Verifica un tracking fermo](/it/articles/hipobuy-tracking-not-updating/)
+
 ## Il tracciamento comincia prima del numero internazionale
 
 Nella guida ufficiale degli stati, Shipped (Local) significa che il venditore spedisce al magazzino in Cina. Arrived indica ricezione in attesa di controllo e Stored merce depositata. Dopo aver scelto gli articoli nasce il pacco internazionale, con stati propri: Waiting for Packing, Waiting for Confirmation, Waiting for Delivery e Shipped (International). Una dicitura «spedito» senza indicazione del registro può far confondere il viaggio domestico con quello verso il tuo paese.

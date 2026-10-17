@@ -1,3 +1,7 @@
+Arrived bedeutet Ankunft im Lager vor der Prüfung, Stored bezeichnet Lagerung. Beides bedeutet keinen internationalen Versand. Prüfe den Bestelldatensatz für Einkauf und Wareneingang, den Paketdatensatz für Verpackung, Nachzahlung und Abholung. Waiting for Confirmation kann eine gewichtsbedingte Versandnachzahlung erfordern.
+
+[Die passende Sendungsverfolgung prüfen](/de/articles/parcel-tracking-delivery/)
+
 ## Produktlink, Bestellung und Paket sind drei verschiedene Dinge
 
 Eine Verkäuferanzeige bezeichnet ein Angebot. Die Agentenbestellung verfolgt den Kauf und den Weg zum chinesischen Lager. Erst wenn du eingelagerte Artikel für den internationalen Versand auswählst, entsteht ein separater Paketvorgang. Die offizielle Hipobuy-Statusübersicht trennt diese beiden Abläufe. Wer nur das Wort „Shipped“ liest, ohne den Datensatz anzusehen, verwechselt leicht den Inlandstransport des Verkäufers mit einer bereits begonnenen Auslandsreise.

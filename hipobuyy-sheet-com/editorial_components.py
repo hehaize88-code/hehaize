@@ -2,6 +2,15 @@
 import html
 
 def related_slugs(slug):
+    specific={
+        'hipobuy-product-links':['hipobuy-custom-order-forwarding','qc-photo-checklist','hipobuy-shipping-calculator'],
+        'hipobuy-custom-order-forwarding':['hipobuy-product-links','order-status-workflow','shipping-cost-checklist'],
+        'hipobuy-jacket-finds':['hipobuy-size-guide','qc-photo-checklist','hipobuy-shipping-calculator'],
+        'qc-photo-checklist':['return-policy-warehouse','hipobuy-size-guide','hipobuy-qc-photos-2026'],
+        'spreadsheet-first':['hipobuy-product-links','hipobuy-custom-order-forwarding','qc-photo-checklist'],
+        'hipobuy-clothing-spreadsheet':['hipobuy-jacket-finds','hipobuy-hoodie-finds','hipobuy-size-guide'],
+        'guide':['hipobuy-product-links','hipobuy-custom-order-forwarding','order-status-workflow']}
+    if slug in specific:return specific[slug]
     groups=[
         ['hipobuy-tracking-not-updating','order-status-workflow','parcel-tracking-delivery','return-policy-warehouse'],
         ['hipobuy-rehearsal-packing','hipobuy-shipping-calculator','shipping-cost-checklist','warehouse-storage-consolidation','fees-wallet-payment','customs-declaration-insurance','hipobuy-coupon-shipping-discounts'],
@@ -15,7 +24,7 @@ def related_slugs(slug):
     return [s for s in group if s!=slug][:3]
 
 def editorial_products(lang,slug,products,render):
-    ids={'hipobuy-hoodie-finds':['3373','3372','3439'],'hipobuy-football-jersey-finds':['3407','3207','3203','3202']}.get(slug)
+    ids={'hipobuy-jacket-finds':['3403','3391','3388'],'hipobuy-hoodie-finds':['3373','3372','3439'],'hipobuy-football-jersey-finds':['3407','3207','3203','3202']}.get(slug)
     if not ids:return ''
     title={'en':'Catalog examples to compare','de':'Katalogbeispiele zum Vergleichen','es':'Ejemplos del catálogo para comparar','fr':'Exemples du catalogue à comparer','it':'Esempi del catalogo da confrontare'}[lang]
     note={'en':'USD item-price snapshot: 23 September 2026. Listing images, not warehouse QC. Open the exact listing to confirm current options and price.',

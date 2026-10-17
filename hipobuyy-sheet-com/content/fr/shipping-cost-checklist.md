@@ -1,3 +1,7 @@
+Il n’existe pas un prix de livraison Hipobuy unique. Destination, ligne admissible, poids emballé, dimensions et options modifient le devis. Séparez produits, livraison intérieure, services, transport international et éventuels frais à destination. Comparez le même colis puis vérifiez le devis final avant paiement.
+
+[Calculer les poids réel et volumétrique](/fr/articles/hipobuy-shipping-calculator/)
+
 ## Le prix de l’article ne représente pas le total livré
 
 Un tableau affiche généralement le prix du produit. Une commande par agent implique aussi le transport national du vendeur à l’entrepôt chinois, l’expédition internationale, d’éventuels services facultatifs et des prélèvements à destination. La notice officielle « Service & Fees » de Hipobuy présente le service d’agent d’achat comme gratuit. Cela ne rend pas les transports gratuits. Il faut séparer les postes pour comparer des coûts portant sur la même chose.

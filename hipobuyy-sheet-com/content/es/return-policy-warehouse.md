@@ -1,3 +1,7 @@
+El aviso actual de Hipobuy permite solicitar devolución de artículos elegibles durante cinco días tras Warehoused: 120 horas desde la hora siguiente. Importan aceptación del vendedor y estado. Una devolución incondicional del comprador puede incluir ambos transportes nacionales y 5 RMB de servicio. Los 90 días de almacenamiento no amplían ese plazo.
+
+[Documenta la diferencia con la lista QC](/es/articles/qc-photo-checklist/)
+
 ## Cinco días no significan devolución automática
 
 La página oficial «Returns and Refunds» de Hipobuy describe un servicio ofrecido por vendedores participantes de plataformas externas. Para solicitarlo, el producto debe ser elegible según el vendedor, conservar un estado apto para reventa y encontrarse dentro del plazo de almacén. Son condiciones distintas. Encontrar un artículo en una hoja no demuestra que todos los vendedores acepten devolverlo.

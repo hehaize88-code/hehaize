@@ -1,3 +1,7 @@
+Es gibt keinen einheitlichen Hipobuy-Versandpreis für jedes Paket. Ziel, verfügbare Route, verpacktes Gewicht, Maße und Leistungen beeinflussen das Angebot. Addiere Ware, Inlandstransport, Optionen, Auslandsversand und mögliche Zielkosten getrennt. Vergleiche dieselben Paketannahmen und prüfe vor Zahlung das endgültige Angebot.
+
+[Paket- und Volumengewicht berechnen](/de/articles/hipobuy-shipping-calculator/)
+
 ## Der Produktpreis ist nicht der Lieferpreis
 
 Eine Tabelle zeigt meist den Warenpreis. Für eine Bestellung über einen Einkaufsagenten kommen weitere Entscheidungen hinzu: Inlandstransport vom Verkäufer zum chinesischen Lager, internationaler Versand, mögliche optionale Leistungen und mögliche Abgaben am Zielort. Laut offizieller Hipobuy-Mitteilung „Service & Fees“ ist der Einkaufsagentenservice selbst kostenlos. Daraus folgt kein kostenloser Versand. Die Mitteilung trennt Warenkosten, nationalen Transport und internationale Fracht; zollbezogene Kosten können ebenfalls relevant sein.

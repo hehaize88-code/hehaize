@@ -1,3 +1,7 @@
+Quanto costa la spedizione su Hipobuy dipende da destinazione, rotta disponibile, peso imballato, dimensioni e servizi. Separa merce, consegna nazionale, opzioni, trasporto internazionale e possibili costi a destinazione. Confronta lo stesso pacco e controlla il preventivo finale prima del pagamento.
+
+[Calcola peso reale e volumetrico](/it/articles/hipobuy-shipping-calculator/)
+
 ## Il prezzo dell’articolo non è il totale consegnato
 
 Una tabella mostra di solito il prezzo della merce. Acquistando tramite agente vanno considerati anche il trasporto nazionale del venditore al magazzino cinese, la spedizione internazionale, eventuali servizi opzionali e possibili imposte a destinazione. Nell’avviso ufficiale «Service & Fees» Hipobuy descrive come gratuito il servizio dell’agente d’acquisto. Questo non rende gratuito il trasporto. Tieni separate le voci per confrontare somme che rappresentino lo stesso processo.

@@ -1,3 +1,7 @@
+Pour le suivi Hipobuy, identifiez si le numéro concerne la livraison à l’entrepôt ou le colis international. Utilisez le bon transporteur et gardez le dernier événement daté. Création d’étiquette, arrivée en entrepôt et départ international sont distincts. En cas de blocage, réunissez identifiant, ligne et dernier événement pour l’assistance officielle.
+
+[Examiner un suivi sans mise à jour](/fr/articles/hipobuy-tracking-not-updating/)
+
 ## Suivre la commande, puis le colis
 
 Une commande d'article et son futur colis international n'ont pas la même chronologie. « Shipped (Local) » signifie que le vendeur envoie à l'entrepôt en Chine. « Arrived » indique réception en attente d'inspection; « Stored » confirme que l'article est rangé. Après sélection des articles pour un colis, la notice « Order Status Display » emploie « Waiting for Packing », « Waiting for Confirmation », « Waiting for Delivery » et « Shipped (International) ». Il faut identifier à quel objet chaque étiquette se rapporte avant de conclure qu'un envoi est bloqué.

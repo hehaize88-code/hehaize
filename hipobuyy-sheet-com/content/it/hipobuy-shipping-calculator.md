@@ -1,3 +1,7 @@
+Il calcolatore modella peso imballato e tariffa opzionale inserita, senza prezzi Hipobuy live. Esempio: 40 × 30 × 30 cm ÷ 6000 = 6 kg volumetrici. Rispetto a 2 kg reali ipotetici, una rotta che addebita il maggiore parte da 6 kg prima degli arrotondamenti. Usa le regole correnti della tua rotta.
+
+[Confronta tutti i costi](/it/articles/shipping-cost-checklist/)
+
 ## Una calcolatrice di spedizione è una stima, non una promessa
 
 Persone alla ricerca di un Hipobuy calcolatore di spedizione di solito vogliono un numero: quanto costerà il pacco per la spedizione? La difficoltà è che la spedizione internazionale non è determinata dal solo prezzo del prodotto. Destinazione, contenuto dei pacchi, peso fisico, dimensioni impacchettate, restrizioni di rotta e il metodo di fatturazione della compagnia di navigazione influenzano il risultato.

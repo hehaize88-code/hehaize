@@ -1,3 +1,7 @@
+Para el seguimiento Hipobuy, identifica si el número corresponde a entrega al almacén o paquete internacional. Usa el transportista correcto y guarda el último evento fechado. Etiqueta creada, llegada al almacén y salida internacional son etapas distintas. Si no cambia, reúne ID del paquete, ruta y último evento para soporte oficial.
+
+[Revisa un seguimiento sin cambios](/es/articles/hipobuy-tracking-not-updating/)
+
 ## Un seguimiento empieza antes del número internacional
 
 Para entender dónde se encuentra una compra, distingue la orden al vendedor del paquete internacional. «Shipped (Local)» en la guía oficial de estados significa que el vendedor mandó el artículo al almacén; no significa que ya viaje a tu país. «Arrived» indica llegada al almacén a la espera de inspección y «Stored» confirma almacenamiento. Solo después de seleccionar artículos para un paquete internacional aparecen las etapas de embalaje, confirmación y entrega a la línea de transporte.
