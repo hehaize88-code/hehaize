@@ -2,7 +2,9 @@
 
 Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2026-10-17). Repository: **hehaize88-code/hehaize**, directory: **kakobuypick-com/**. This release is still for visual acceptance: `noindex` and a disallow-all robots.txt remain until the user reviews the site.
 
-## 从 GitHub 部署
+## 已部署状态与 GitHub 配置
+
+2026-10-17 已按用户授权创建独立 Cloudflare Worker，并连接下列 GitHub 目录。**https://kakobuypick.com/** 已在用户连接的 Chrome 中实际打开，`www` 自动跳转到主域名；商品图、德语切换、搜索、价格排序和详情购买 URL 已检查。页面仍处于用户视觉验收阶段。
 
 在 Cloudflare 创建 **Worker**，选择连接 GitHub 仓库。此项目是 SSR，不使用静态 Pages 输出配置。
 
@@ -17,7 +19,7 @@ Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2
 | Node 版本（如需设置 NODE_VERSION） | `24` |
 | 构建路径筛选（可选，仅本目录触发） | `kakobuypick-com/**` |
 
-构建成功后，在该 Worker 的 Settings → Domains & Routes 添加 `kakobuypick.com`，再添加 `www.kakobuypick.com`。www 请求会由本项目 308 跳转到非 www，并保留路径和查询参数。自定义域名绑定由用户在自己的 Cloudflare 中完成；无需手工填写未知 IP，也无需转发到临时预览站。
+两个域名已在该 Worker 的 Domains 页绑定到 Production。www 请求由本项目 308 跳转到非 www，并保留路径和查询参数。Include build watch paths 已保存为 `kakobuypick-com/**`。无需重复创建 Worker 或域名记录。
 
 代码在自己的 Worker 中直接运行并读取 cnbuycha；运行时不依赖 chatgpt.site。无需数据库、存储桶或商品服务凭据。GitHub 源码推送本身不等于域名已经上线。
 
@@ -61,4 +63,4 @@ The earlier temporary preview was hosted separately and was blocked for the user
 
 ## Verification
 
-The original preview passed build and live data checks: 12 home products, 60 filtered/sorted list products, detail photos and seller purchase URLs. All translation keys and 11 category labels exist for all 24 locales. See PROJECT_MEMORY.md for this standalone package's validation. Public domain behavior must be checked after Cloudflare deployment and domain binding; a local build does not prove the user's browser can access it.
+The original preview passed build and live data checks: 12 home products, 60 filtered/sorted list products, detail photos and seller purchase URLs. All translation keys and 11 category labels exist for all 24 locales. Public-domain desktop verification is now complete in the user's connected Chrome: home images, German navigation, keyword search, price sorting, detail purchase URL, and www redirect passed. See PROJECT_MEMORY.md for deployment IDs and remaining acceptance scope.
