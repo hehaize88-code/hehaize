@@ -77,3 +77,10 @@
 - 新增 `/sitemap.xml`：24 语共 624 个稳定 canonical URL，包含每语主页、商品目录、11 分类、指南、FAQ、文章中心及10篇文章。XML只给已知更新时间的编辑内容填写lastmod；不伪造实时商品目录更新时间或完整商品库存。
 - robots.txt 开放抓取并声明地图；成功正常页面的meta和X-Robots-Tag均改为index,follow,max-image-preview:large。q/sort/page参数页、未接通搜图页、404及上游错误页保留noindex,follow；非法目录/商品路径不再渲染重复目录内容。去除页脚Preview标记。
 - 保留全部24语译文、canonical、25项hreflang、原始商品链接及联盟参数。仅提供可提交链接；没有代用户向GSC或Bing发送收录请求。
+
+## 2026-10-17 Google Analytics 4
+
+- 按用户要求，在现有 Analytics 账号 `405518068` 下新建独立媒体资源 `kakobuypick.com`（`559298131`），网站数据流 `16146809592`，URL `https://kakobuypick.com`。
+- 测量 ID：`G-6WXLRRCDS3`。报告时区为中国时间（UTC+08:00），币种 USD；业务目标为流量与互动度，开启默认增强型衡量。
+- 通过公共页面模板的 `Analytics.astro` 组件添加一份官方 gtag.js 代码，覆盖全部24语页面。无自定义购买/收入事件，未关联广告账号或开启额外广告功能。
+- 后台入口：https://analytics.google.com/analytics/web/#/a405518068p559298131/reports/intelligenthome 。是否已收到生产访问数据，以后续公开部署和 Analytics 实时报告检查为准。

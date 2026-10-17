@@ -1,5 +1,6 @@
 ---
 import Icon from '../components/Icon.astro';
+import Analytics from '../components/Analytics.astro';
 import Card from '../components/Card.astro';
 import Knowledge from '../components/Knowledge.astro';
 import ArticleCard from '../components/ArticleCard.astro';
@@ -45,7 +46,7 @@ const icons=['shoe','shirt','shirt','jacket','pants','hat','bag','shirt','device
 ---
 <!doctype html>
 <html lang={lang}>
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{article?article.title.split(':')[0]:title} · Kakobuy Pick</title><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/>{schema&&<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/> }<meta name="robots" content={robots}/><meta name="theme-color" content="#fc3358"/><link rel="icon" href={FAVICON}/><link rel="canonical" href={origin+route(localPath)}/>{languages.map(([code])=><link rel="alternate" hreflang={code} href={origin+localized(code,localPath)}/>)}<link rel="alternate" hreflang="x-default" href={origin+localPath}/><link rel="preconnect" href="https://cnbuycha.com"/><link rel="preconnect" href="https://nstatic.kakobuy.com"/></head>
+<head><Analytics/><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{article?article.title.split(':')[0]:title} · Kakobuy Pick</title><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/>{schema&&<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/> }<meta name="robots" content={robots}/><meta name="theme-color" content="#fc3358"/><link rel="icon" href={FAVICON}/><link rel="canonical" href={origin+route(localPath)}/>{languages.map(([code])=><link rel="alternate" hreflang={code} href={origin+localized(code,localPath)}/>)}<link rel="alternate" hreflang="x-default" href={origin+localPath}/><link rel="preconnect" href="https://cnbuycha.com"/><link rel="preconnect" href="https://nstatic.kakobuy.com"/></head>
 <body>
 <header class="header"><div class="header-inner">
   <a href={route('/')} class="brand" aria-label={`Kakobuy ${t.home}`}><img src={LOGO} alt="Kakobuy" width="143" height="36"/><span>Spreadsheet</span></a>
