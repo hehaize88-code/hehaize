@@ -127,13 +127,13 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
             <a className="image-search-shortcut" href={localizedPath(locale,"/catalog/image-search/")}>Search by image →</a>
             <div className="quick-categories" aria-label="Product categories">
               {categories.map((category) => (
-                <Link
+                <a
                   key={category.name}
                   href={localizedPath(locale,"/catalog/"+(category.slug==="hoodies"?"hoodies-sweaters":category.slug)+"/")}
                 >
                   <span aria-hidden="true">{category.symbol}</span>
                   {category.name}
-                </Link>
+                </a>
               ))}
             </div>
 
@@ -177,7 +177,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
 
           <div className="category-grid">
             {categories.map((category, index) => (
-              <Link
+              <a
                 key={category.name}
                 href={localizedPath(locale,"/catalog/"+(category.slug==="hoodies"?"hoodies-sweaters":category.slug)+"/")}
               >
@@ -187,7 +187,7 @@ export function HomePage({ locale = "en" }: { locale?: Locale }) {
                 <span className="category-arrow" aria-hidden="true">
                   ↗
                 </span>
-              </Link>
+              </a>
             ))}
           </div>
         </section>

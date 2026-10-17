@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import finds from './article-finds.json';
 import {localizedPath} from './i18n';
 import type {Locale} from './translations';
@@ -20,5 +19,5 @@ export function ArticleFinds({slug,locale}:{slug:string;locale:Locale}){
  const indexes=slug==='lolobuy-women-spreadsheet-finds'?[0,1,2]:slug==='lolobuy-long-sleeve-finds'?[3,4,5]:[];
  if(!indexes.length)return null;
  const t=copy[locale];
- return <section className="article-finds" aria-labelledby="matched-finds"><h2 id="matched-finds">{t[0]}</h2><p>{t[1]}</p><div className="article-finds-grid">{indexes.map(i=>{const p=finds[i];return <Link key={p.path} href={localizedPath(locale,'/catalog'+p.path)} className="article-find-card" data-track-event="product_detail_click"><img src={p.images[0]} alt={names[locale][i]} width={320} height={320} loading="lazy"/><strong>{names[locale][i]}</strong><span>{Number(p.price).toLocaleString(locale,{style:'currency',currency:'USD',currencyDisplay:'code'})}</span><small>{t[3]}: {p.sourceId}</small><span>{t[2]} →</span></Link>})}</div></section>
+ return <section className="article-finds" aria-labelledby="matched-finds"><h2 id="matched-finds">{t[0]}</h2><p>{t[1]}</p><div className="article-finds-grid">{indexes.map(i=>{const p=finds[i];return <a key={p.path} href={localizedPath(locale,'/catalog'+p.path)} className="article-find-card" data-track-event="product_detail_click"><img src={p.images[0]} alt={names[locale][i]} width={320} height={320} loading="lazy"/><strong>{names[locale][i]}</strong><span>{Number(p.price).toLocaleString(locale,{style:'currency',currency:'USD',currencyDisplay:'code'})}</span><small>{t[3]}: {p.sourceId}</small><span>{t[2]} →</span></a>})}</div></section>
 }

@@ -260,7 +260,7 @@ export default {
       ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
     }
 
-    finalResponse.headers.set("x-lolobuy-release","20261017-net-seo-v1");
+    finalResponse.headers.set("x-lolobuy-release","20261017-net-seo-v2");
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };

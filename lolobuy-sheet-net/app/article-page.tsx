@@ -7,7 +7,6 @@ import {
   articles,
   type ArticleRecord,
 } from "./article-data";
-import { catalogBase } from "./site-data";
 import { SiteFooter, SiteHeader } from "./site-shell";
 import { absoluteUrl, localizedPath } from "./i18n";
 import { articleText, getLocalizedArticle } from "./article-locales";
@@ -226,7 +225,7 @@ export function ArticlePage({
                       ))}
                     </ul>
                   )}
-                  {section.links && <ul className="article-checklist">{section.links.map(link => <li key={link.href}><Link href={localPath(link.href)} data-track-event="article_internal_click">{link.label} →</Link></li>)}</ul>}
+                  {section.links && <ul className="article-checklist">{section.links.map(link => <li key={link.href}><a href={localPath(link.href)} data-track-event="article_internal_click">{link.label} →</a></li>)}</ul>}
                   {section.note && (
                     <aside className="calculation-note">
                       <strong>{articleText(locale, "Worked example")}</strong>

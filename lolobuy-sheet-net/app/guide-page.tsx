@@ -253,7 +253,7 @@ function ProductsPage({ locale }: { locale: Locale }) {
         <div className="section-cta">
           <a
             className="button button-primary"
-            href={`${catalogBase}/AllProducts/`}
+            href={localizedPath(locale,"/catalog/")}
             target="_blank"
             rel="sponsored noopener noreferrer"
           >
@@ -275,7 +275,7 @@ function CategoriesPage({ locale }: { locale: Locale }) {
     <>
       <section className="section-shell subpage-section">
         <div className="category-grid">
-          {CATEGORIES.slice(1).map((category:string,index:number)=><Link key={category} href={localizedPath(locale,"/catalog/"+category+"/")}><span className="category-number">{String(index+1).padStart(2,'0')}</span><h2>{CATEGORY_LABELS[locale][index+1]}</h2><span className="category-arrow" aria-hidden="true">↗</span></Link>)}
+          {CATEGORIES.slice(1).map((category:string,index:number)=><a key={category} href={localizedPath(locale,"/catalog/"+category+"/")}><span className="category-number">{String(index+1).padStart(2,'0')}</span><h2>{CATEGORY_LABELS[locale][index+1]}</h2><span className="category-arrow" aria-hidden="true">↗</span></a>)}
         </div>
       </section>
       <DetailedCardSection
