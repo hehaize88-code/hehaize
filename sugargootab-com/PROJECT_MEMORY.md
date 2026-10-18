@@ -1,58 +1,64 @@
-# SugargooTab production project
+# SugargooTab project memory
 
 Updated: 2026-10-18 (Asia/Shanghai)
-Status: V2 preview live. Production source is prepared and validated for GitHub. Cloudflare deployment awaits restored authorization.
-Runtime checks: home/listing/guide/visual routes return 200; real product /products/shoes/3470.html returns 200, four source images, correct encoded purchase URL and memberId. Unknown routes return 404.
-Visual QA: desktop and 390px mobile inspected with transient HTML rendered by the same Worker from live CNBUYCHA data; QA files removed before packaging. Managed dev fetch failed while Node built Worker fetched successfully; verify deployed runtime.
-Astro 7 catch-all params strip .html: route using Astro.url.pathname to preserve source product paths.
-Preview source is saved to the Sites Git repo. Formal GitHub target is hehaize88-code/hehaize/sugargootab-com; production DNS and runtime binding remain pending.
-Site ID: appgprj_6ad471356180819186ecfb7a32434231
-Expected preview origin: https://sugargoo-spreadsheet-preview.hehaize88.chatgpt.site
-Framework: Astro 7.4.0 (registry latest checked today), SSR fetch Worker.
-User requested a publicly accessible temporary preview; formal domain and GitHub deployment follow review.
-Future production source: hehaize88-code/hehaize, one domain per top-level folder.
-Registration: https://www.sugargoo.com/register?redirect=/order/manual
-Purchase: https://www.sugargoo.com/products?productLink={encodedSourceUrl}&memberId=1771881989097259278
-Source product ID is distinct from internal catalogue ID. Member ID is a string.
-Only source: https://cnbuycha.com public catalogue. No new database, product JSON snapshot, photo store, image index or admin.
-24 locales retained. Product titles remain source originals when translations are unavailable.
-Image search endpoint and QC provenance remain unverified; no fake search or QC images.
-Noindex preview. Production domain purchased by user: sugargootab.com, Cloudflare registration screenshot shows Active. Target GitHub directory: sugargootab-com. DNS/runtime binding has not yet been performed in this turn.
-Domain RDAP 2026-10-18: sugargoopick/sugargoosheet/sugargoolist/sugargootable/sugargoopicks.com registered (200); sugargootab/sugargoogrid/sugargoodeck.com no record (404). Registrar pricing and purchase availability not verified.
+Status: Production deployed successfully; GitHub integration and both custom domains verified.
 
+## Live deployment
+- Canonical website: https://sugargootab.com/
+- Alias: https://www.sugargootab.com/ permanently redirects (308) to the apex, preserving path and query.
+- Source: https://github.com/hehaize88-code/hehaize/tree/main/sugargootab-com
+- Branch: main. One domain per top-level folder; do not edit other domain projects.
+- Initial source commit: 3a0f3357f3b90f80d5474ecb74cde1712f4b7a4e.
+- Deployed application commit: 454df18c067f29b39f5594f4cf6495faec76082c.
+- Cloudflare Worker: sugargootab-com.
+- Successful build: e18fb9fd-418e-405e-b9e7-d790aa7b5989.
+- Worker version: e12b4eda-612e-464a-b270-1d6152f3593a; deployed 2026-10-18T08:54:54Z.
+- Diagnostic workers.dev host: https://sugargootab-com.hehaize88.workers.dev/ (noindex).
+- Public preview remains separate: https://sugargoo-spreadsheet-preview.hehaize88.chatgpt.site/ (noindex).
 
-## FAQ and editorial expansion — 2026-10-18
-- User requested top FAQ and SEO article entry points,20+ official-source FAQs and10 substantial articles; all24 languages retained.
-- Official source ledger and qualitative keyword briefs are in research/. Official blog indexed content was available; several direct opens returned403. Policies are conditional, no universal storage/refund/insurance guarantees.
--30FAQ in6 groups;10English original articles (~950–1100words each) with7 sections, checklists, sources and related links. All 24 complete translations pass scripts/check-editorial.mjs; every locale has 30 FAQ and 10 full articles. No untranslated English body fallback.
-- Added /faq/,/articles/,/articles/{slug}/; header/footer entry links and4home article cards. FAQ has local search and accordions. Articles have mobile-collapsed TOC.
-- Domain target stored in site-targets.mjs; preview remains noindex. Do not treat buying the domain as proof DNS/production binding is complete.
+## Deployment configuration
+- Astro 7.4.0 SSR with a custom fetch Worker adapter. Entrypoint dist/server/index.js; public assets dist/client via ASSETS.
+- Wrangler 4.151.1. Cloudflare build uses Node 22.22.0 and npm 10.9.2.
+- Repository hehaize88-code/hehaize; production branch main; root sugargootab-com.
+- Build: npm run check:content && npm run build && npm run check:routes.
+- Deploy: npm run deploy. Build variable NODE_VERSION=22.22.0.
+- Include watch path sugargootab-com/**. Non-production preview builds disabled.
+- Existing GitHub integration and existing Workers Builds token reused. No account token is stored in this repository.
+- Cloudflare API connector required reauthentication. Deployment was completed through the user's connected Chrome session using the existing Cloudflare account and UI; no new credentials or wider permissions were created.
 
-## Expansion validation and remaining production work
-- Astro build succeeds; scripts/check-editorial-routes.mjs verifies all 288 editorial routes, matching language/canonical/hreflang, 30 FAQ or 10 index cards, full article paragraphs/checklists, schema and same-article language links. Unknown article returns404.
-- Browser QA: desktop FAQ filtering/expansion, desktop articles, 390px mobile English article and French FAQ, French-to-English switch retaining article. TOC removes redundant numbering and collapses on mobile. Temporary QA files removed.
-- Product data adapter unchanged; only cnbuycha public reads. Image search remains unconnected; reference photos are not personal warehouse QC.
-- Cloudflare connector read attempt on 2026-10-18 returned UNAUTHORIZED: reauthentication required. No Cloudflare DNS changes were made. Restore connection before production domain setup.
-- Research documents describe qualitative search intent and official-source limits; no invented volume/rankings, purchases or performance results.
+## Data and referral rules
+- Sole product source: https://cnbuycha.com public catalogue. No database, product snapshot, image store, local search index, or admin backend.
+- Keyword search and new/click/price sorting are passed through to the source catalogue. Product titles remain source originals when source translations are unavailable.
+- Source product ID is distinct from the internal catalogue ID. Sample catalogue path /products/shoes/3470.html resolves to Weidian itemID 7876894732.
+- Registration: https://www.sugargoo.com/register?redirect=/order/manual
+- Buying: https://www.sugargoo.com/products?productLink={encodedSourceUrl}&memberId=1771881989097259278
+- Keep memberId a string and encode the original source URL. Verified converter currently handles Weidian source links only.
+- Official logo/favicon provenance in ASSET_SOURCES.md. No generated or placeholder product images.
+- Image search remains unconnected until the CNBUYCHA endpoint is verified. Reference photos are not a user's personal Sugargoo warehouse QC.
+- Independent recommendation site with affiliate disclosure; not an official Sugargoo service.
 
-## Production migration — 2026-10-18
-- User authorized deployment to GitHub, then Cloudflare and domain binding.
-- Repository: hehaize88-code/hehaize, branch main, folder sugargootab-com. Scope only this folder; preserve all other domain projects.
-- Source copied from validated preview commit a91c7d3e06feff2700570f976754b72869899916, excluding Site identity and Git metadata. Preview remains separate and unchanged.
-- Runtime: Cloudflare Worker sugargootab-com, dist/server/index.js, static ASSETS dist/client. Wrangler 4.151.1, Node 22.22.0+, Astro 7.4.0. No database binding or product storage.
-- Canonical origin https://sugargootab.com; www permanently redirects to apex, retaining path/query. Both domains declared in wrangler.jsonc.
-- Production 200 content is indexable; failed responses, search/sort/pagination, visual-search unavailable page and non-production hosts remain noindex. Sitemap includes 672 localized content/category URLs; product URLs are discovered through live catalogue navigation.
-- Cloudflare Git integration settings are documented in README.md. GitHub source publication does not itself create the Worker or connect builds.
-- Cloudflare connector again returned UNAUTHORIZED / reauthentication required. No production Worker, Git integration, DNS or certificate binding has been changed or verified yet.
-- Image search remains unconnected pending the source endpoint. Product photos are source reference images, not personal warehouse QC.
-- Production validation: 24 locales retain 30 FAQ and 10 articles; all 288 editorial routes pass. Canonical, index/noindex, 308 www redirect preserving query, 404 and static binding checks pass. Sitemap has 672 unique URLs.
-- Cloudflare Wrangler dry-run succeeds: Worker upload 4152.42 KiB, gzip 1029.52 KiB, only ASSETS binding. A dry-run is not a live deployment.
-- Built production SSR verified against live CNBUYCHA: home 200 with six product cards; keyword+price search 200 with 60 real cards and noindex; product /products/shoes/3470.html 200 with four source photos and the verified Sugargoo affiliate link.
-- Local Wrangler emulator could not start in this container: uv_interface_addresses system error. Built Worker route tests and Wrangler deployment dry-run passed; this is an environment verification limitation, not proof of a deployed Cloudflare runtime.
-- No Cloudflare changes have been made: connector authorization must be restored, or explicit browser-fallback consent obtained, before connecting GitHub builds and binding domains.
+## Editorial and SEO
+- 24 locales: en de es fr it pl pt ro sv nl da fi el cs hu bg sk hr sl lt lv et ga mt.
+- 30 FAQ answers in 6 groups, with filter and accordions. 28 cite official sources; 2 describe verified site behavior.
+- 10 complete articles per locale, each with 7 sections, checklist, sources and related links. Header/footer links and 4 homepage article cards.
+- No English body fallback. Product titles are not fabricated translations.
+- Official-source ledger and qualitative keyword research in research/. No invented search volumes or rankings; changing policies remain qualified.
+- Canonical and hreflang point to the production origin. Normal successful production pages are indexable; errors, search, alternate sorting, pagination, unavailable visual search and non-production hosts are noindex.
+- /robots.txt advertises /sitemap.xml. Sitemap contains 672 unique localized content/category URLs. Product URLs are discovered through live catalogue navigation; no fabricated inventory sitemap.
 
-### Cloudflare initial deployment follow-up
-- The user's connected Chrome session reached the correct Cloudflare account and active domain; initial DNS record count was zero. Existing GitHub integration and existing Workers Builds token reused.
-- Created Worker sugargootab-com connected to hehaize88-code/hehaize, main, root sugargootab-com. Production build watch path restricted to sugargootab-com/**; non-production preview builds disabled.
-- Initial build 2d798c3e-fcfe-4cf2-ae32-fa751b92e5b3 failed during npm ci: npm10.9.2 required nested esbuild0.28.2 entries missing from the npm11-generated lockfile.
-- Regenerated the lockfile using npm10.9.2 and verified npm ci. Build, route checks and Wrangler dry-run are rerun before the corrective commit. Application and domain binding remain pending until a successful live deployment is verified.
+## Validation
+- Content checks: all 24 locales have 30 FAQ and 10 articles; structure and source checks pass.
+- Built SSR checks: 288 editorial routes pass, including locale, canonical/hreflang, navigation, full article content and schemas. Unknown article is 404.
+- Production configuration checks: www 308 retaining query, non-production noindex, 404 noindex, static binding and 672 unique sitemap URLs pass.
+- Cloudflare build performed clean npm ci, content validation, Astro build and all route checks successfully. Worker startup 23 ms; gzip bundle 1029.39 KiB; only ASSETS binding.
+- Anonymous HTTPS checks on the production domain: home, FAQ, article index, French guide, real product, keyword+price search, robots, sitemap, logo and favicon all returned 200.
+- Homepage showed 6 real product cards and 4 article cards; FAQ had 30 entries; article index had 10 cards; product detail had 4 source photos and the exact expected affiliate link. Search returned 60 real product cards and noindex.
+- https://www.sugargootab.com/fr/faq/?q=shipping returned 308 to the identical apex path/query. workers.dev FAQ returned 200 with noindex.
+- User-browser inspection: production homepage rendered correctly, official logo and the CNBUYCHA hero image loaded successfully.
+
+## History and implementation notes
+- Preview source commit a91c7d3e06feff2700570f976754b72869899916 supplied the validated base. Production copy excludes preview Site identity and Git metadata.
+- Astro 7 catch-all params strip .html; route via Astro.url.pathname to preserve source product paths.
+- First cloud build 2d798c3e-fcfe-4cf2-ae32-fa751b92e5b3 failed during npm ci because npm 10 needed nested esbuild 0.28.2 entries missing from the npm 11-generated lockfile. Regenerated with npm 10.9.2 and verified clean install before successful deployment. Maintain npm 10 lockfile compatibility when changing dependencies.
+- This container's local Wrangler emulator could not start because uv_interface_addresses returned a system error. This local limitation was superseded by successful actual Cloudflare deployment and HTTPS checks.
+- Future updates belong in this directory and deploy through the connected GitHub production branch. Preserve the live source-only data architecture and user-provided referral links.

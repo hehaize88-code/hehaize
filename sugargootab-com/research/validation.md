@@ -24,3 +24,14 @@ Count includes introductions, headings, body paragraphs and checklist; tables an
 - sugargoo-warehouse-storage: 1018
 - sugargoo-returns-refunds: 1027
 - weidian-taobao-links-sugargoo: 1032
+
+
+## Production deployment — 2026-10-18
+
+Cloudflare build e18fb9fd-418e-405e-b9e7-d790aa7b5989 succeeded for Git commit 454df18c067f29b39f5594f4cf6495faec76082c. Worker version e12b4eda-612e-464a-b270-1d6152f3593a serves both sugargootab.com and www.sugargootab.com.
+
+Production anonymous HTTPS checks returned 200 for home, FAQ (30 entries), article index (10 cards), French guide, live product /products/shoes/3470.html (4 photos and correct buying link), keyword+price search (60 cards), robots, sitemap, logo and favicon. The www alias returned 308 preserving /fr/faq/?q=shipping. Diagnostic workers.dev returned noindex. User-browser homepage visual inspection and logo/hero image load checks passed.
+
+The production sitemap has 672 unique content/category URLs. Existing 288 localized editorial route checks and all 24 content checks passed in Cloudflare's clean build. Native Worker startup was 23ms; gzip bundle 1029.39KiB.
+
+Initial npm11 lockfile failed on Cloudflare npm10.9.2. Regeneration using npm10.9.2 plus clean npm ci fixed it. Local Wrangler emulation was unavailable because of the container interface-address system error; real Cloudflare deployment and HTTPS checks were used for runtime verification.
