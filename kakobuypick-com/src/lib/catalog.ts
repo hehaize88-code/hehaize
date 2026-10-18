@@ -9,8 +9,15 @@ const txt = (el: any) => (el?.textContent || '').trim();
 const attr = (el: any, key: string) => el?.getAttribute(key) || '';
 function imageURL(raw: string) {
   if (!raw || /placeholder/i.test(raw)) return '';
-  const url = new URL(raw, ORIGIN);
-  return url.origin === ORIGIN && /^\/(media|uploads|template)\//.test(url.pathname) ? url.href : '';
+  try {
+    const url = new URL(raw, ORIGIN);
+    if (url.protocol !== 'https:' || url.username || url.password || url.port) return '';
+    const localImage = url.origin === ORIGIN && /^\/(media|uploads|template)\//.test(url.pathname);
+    // CnBuyCha's catalogue also returns original Weidian CDN photos.
+    // Keep the exact source URL; never infer a photo from a product ID.
+    const sourceImage = url.hostname === 'si.geilicdn.com';
+    return localImage || sourceImage ? url.href : '';
+  } catch { return ''; }
 }
 export async function source(path: string) {
   const url = new URL(path, ORIGIN);
