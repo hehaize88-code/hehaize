@@ -7,10 +7,18 @@ export const slugs = ['shoes','hoodies-sweaters','t-shirts','jackets','pants-sho
 export type Product = { path: string; title: string; image: string; price: string; category: string };
 const txt = (el: any) => (el?.textContent || '').trim();
 const attr = (el: any, key: string) => el?.getAttribute(key) || '';
-function imageURL(raw: string) {
+// CNBUYCHA returns both its own media and original Weidian CDN images.
+// Only accept the HTTPS origins verified in its catalogue; never rewrite or
+// manufacture an image URL when the source does not supply one.
+export function imageURL(raw: string) {
   if (!raw || /placeholder/i.test(raw)) return '';
-  const url = new URL(raw, ORIGIN);
-  return url.origin === ORIGIN && /^\/(media|uploads|template)\//.test(url.pathname) ? url.href : '';
+  try {
+    const url = new URL(raw, ORIGIN);
+    if (url.protocol !== 'https:' || url.username || url.password || url.port) return '';
+    if (url.origin === ORIGIN && /^\/(media|uploads|template)\//.test(url.pathname)) return url.href;
+    if (url.hostname === 'si.geilicdn.com') return url.href;
+  } catch { /* Invalid upstream image: use the localized unavailable state. */ }
+  return '';
 }
 export async function source(path: string) {
   const url = new URL(path, ORIGIN);

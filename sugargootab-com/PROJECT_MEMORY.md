@@ -62,3 +62,10 @@ Status: Production deployed successfully; GitHub integration and both custom dom
 - First cloud build 2d798c3e-fcfe-4cf2-ae32-fa751b92e5b3 failed during npm ci because npm 10 needed nested esbuild 0.28.2 entries missing from the npm 11-generated lockfile. Regenerated with npm 10.9.2 and verified clean install before successful deployment. Maintain npm 10 lockfile compatibility when changing dependencies.
 - This container's local Wrangler emulator could not start because uv_interface_addresses returned a system error. This local limitation was superseded by successful actual Cloudflare deployment and HTTPS checks.
 - Future updates belong in this directory and deploy through the connected GitHub production branch. Preserve the live source-only data architecture and user-provided referral links.
+
+## 2026-10-18 image correction
+- User screenshot exposed missing photos from Loro Piana Hat onward in the first catalogue page.
+- Root cause: imageURL only admitted CNBUYCHA-hosted paths, while CNBUYCHA supplies verified HTTPS si.geilicdn.com URLs for many original photos. These were removed before rendering, not a domain/DNS outage.
+- Added exact-host si.geilicdn.com support for source-supplied image URLs in both cards and galleries. Invalid, HTTP, credential-bearing and unverified-host URLs stay rejected. No image storage/proxy or product database added.
+- Live source verification: first-page 60/60 product URLs retained; /headwear/3436.html gallery retains the source CDN image. Representative CDN request returns 200 image/webp.
+- User requested stronger visual differentiation from kakobuypick.com. A separate directory-style redesign is being prepared on the existing preview; this production correction does not change the layout.
