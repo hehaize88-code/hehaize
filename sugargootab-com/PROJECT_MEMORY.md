@@ -1,16 +1,19 @@
 # SugargooTab project memory
 
 Updated: 2026-10-18 (Asia/Shanghai)
-Status: V2 and compact mobile articles are live; catalogue/search/category pages now show 16 products per page. Mobile and desktop pagination verified on sugargootab.com.
+Status: V2, compact mobile articles and 16-product catalogue pages are live. Dedicated GA4 analytics is deployed; Google's installation test succeeded and live page_view events were received.
 
 ## Google Analytics 4 — 2026-10-18
 - User requested adding sugargootab.com to their existing Google Analytics account.
-- Created dedicated property sugargootab.com (559468530) under existing account 405518068; reporting timezone Asia/Shanghai (UTC+8), currency USD. Objectives: website traffic and engagement/retention.
+- Created dedicated property sugargootab.com (559469132) under existing account 405518068; reporting timezone Asia/Shanghai (UTC+8), currency USD. Objectives: website traffic and engagement/retention. Property ID verified from the fully loaded property home URL after setup; the wizard URL briefly retains the previous property's ID.
 - Web stream SugargooTab Web (16152247002), URL https://sugargootab.com, measurement ID G-SDSLG4QJR3. Enhanced measurement enabled; email redaction enabled by the stream's default settings.
 - Shared GoogleAnalytics.astro component installs the async Google tag once on each production-origin HTML page, including all 24 languages, catalogue, searches, pagination, FAQ and articles. No SPA/router double page-view hooks. Preview/workers.dev/local origins do not load Analytics.
 - Google Signals and advertising personalization signals disabled in tag configuration; no advertising-account links or fictitious purchase conversions. Source catalogue/referral behavior unchanged.
 - Validation before release: 24 content bundles, Astro build, 288 editorial routes each with one matching loader/config, preview tag exclusion, search/pagination tag presence, 26 pagination scenarios and 672 sitemap URLs all pass.
-- Deployment and live collection verification pending the GitHub/Cloudflare release of this change; append confirmed results after inspecting the actual site and GA UI.
+- Application commit 5996e412bd22c09a4f047b3b1705c3ce133c2cb9 deployed successfully: Cloudflare build a3c0855b-af31-4e06-a1cd-70247d694220, Worker version 0623e1f5-a67c-4ae9-bd13-e53a37cd6c14, completed 2026-10-18T10:12:03Z.
+- Live production DOM contains exactly one async G-SDSLG4QJR3 loader and its configuration. Google's Test installation reported that the Google tag was correctly detected.
+- Actual GA realtime report received the homepage title plus page_view, session_start and first_visit events (2 each at verification). Counts include setup/testing activity and are not an assertion of organic visitors. Standard aggregate reports may populate later.
+- Direct realtime URL: https://analytics.google.com/analytics/web/#/a405518068p559469132/realtime/overview?params=_u..nav%3Dmaui
 
 ## Live deployment
 - Canonical website: https://sugargootab.com/
@@ -18,10 +21,10 @@ Status: V2 and compact mobile articles are live; catalogue/search/category pages
 - Source: https://github.com/hehaize88-code/hehaize/tree/main/sugargootab-com
 - Branch: main. One domain per top-level folder; do not edit other domain projects.
 - Initial source commit: 3a0f3357f3b90f80d5474ecb74cde1712f4b7a4e.
-- Deployed application commit: 2f2f46b3795b7ed6bd09a4bdf92359691da18628 (16-product catalogue pages).
+- Deployed application commit: 5996e412bd22c09a4f047b3b1705c3ce133c2cb9 (dedicated production GA4 analytics).
 - Cloudflare Worker: sugargootab-com.
-- Verified application release build: 47767d3d-c1ff-46ce-9849-ff1164c6ebe2 (Cloudflare Workers check success).
-- Application release Worker version: b738e6a5-1ba3-4ddb-9e49-0c4bb50f3ca7; completed 2026-10-18T09:50:01Z.
+- Verified application release build: a3c0855b-af31-4e06-a1cd-70247d694220 (Cloudflare Workers check success).
+- Application release Worker version: 0623e1f5-a67c-4ae9-bd13-e53a37cd6c14; completed 2026-10-18T10:12:03Z.
 - Diagnostic workers.dev host: https://sugargootab-com.hehaize88.workers.dev/ (noindex).
 - Public preview remains separate: https://sugargoo-spreadsheet-preview.hehaize88.chatgpt.site/ (noindex).
 
