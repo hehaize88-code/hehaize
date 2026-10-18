@@ -1,0 +1,151 @@
+/* Shared mobile layout: all routes and locales, without changing desktop sizes. */
+.category-menu > summary { display: none; }
+.guide-toc > summary { font-size: 15px; font-weight: 650; line-height: 1.45; cursor: pointer; }
+.source-panel > summary { cursor: pointer; }
+.source-panel > summary h2 { display: inline; }
+
+@media (max-width: 800px) {
+  html { scroll-padding-top: 110px; }
+  .wrap, .header-inner { width: calc(100% - 28px); }
+  .header-inner { min-height: 0; padding-top: 6px; gap: 0 10px; }
+  .header-actions { gap: 10px; }
+  .brand img { width: 108px; height: auto; }
+  .join { min-height: 40px; max-width: 145px; padding: 7px 10px; font-size: 11px; }
+  .language-menu summary { min-height: 44px; }
+  .language-panel { top: 58px; max-height: calc(100dvh - 76px); }
+  .nav { display: flex; justify-content: space-between; gap: 0 12px; font-size: 12px; }
+  .nav a { display: flex; align-items: center; justify-content: center; text-align: center; padding: 7px 0; min-height: 40px; max-width: none; white-space: normal; overflow-wrap: normal; line-height: 1.25; }
+  .hero { padding: 17px 0; gap: 13px; }
+  .hero .eyebrow, .section-heading .eyebrow, .knowledge-heading > .eyebrow,
+  .guide-inner > div > .eyebrow, .faq-section > div > .eyebrow { display: none; }
+  .hero h1 { font-size: clamp(26px, 7.3vw, 34px); margin: 0 0 8px; line-height: 1.15; max-width: none; white-space: normal; }
+  .hero h1 em { display: inline; }
+  .hero p { font-size: 13px; line-height: 1.55; max-width: none; }
+  .hero-search { padding: 10px; border-radius: 12px; }
+  .search-form { padding: 3px 3px 3px 10px; gap: 7px; }
+  .search-form input, .faq-search input { font-size: 16px; min-height: 42px; }
+  .search-form input::placeholder { font-size: 12px; }
+  .search-submit { width: 44px; height: 44px; }
+  .search-subline { margin-top: 8px; gap: 6px; font-size: 11px; }
+  .category-menu { border-block: 1px solid var(--line); }
+  .category-menu > summary { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 0; cursor: pointer; list-style: none; font-size: 13px; font-weight: 600; }
+  .category-menu > summary::-webkit-details-marker { display: none; }
+  .category-menu > summary::after { content: '+'; font-size: 19px; font-weight: 400; }
+  .category-menu[open] > summary::after { content: '−'; }
+  .current-category { margin-left: auto; font-size: 12px; font-weight: 400; color: var(--muted); text-align: right; }
+  .category-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; overflow: visible; padding: 0 0 10px; border: 0; }
+  .category-strip a { min-height: 44px; padding: 6px; font-size: 11px; line-height: 1.3; white-space: normal; overflow-wrap: anywhere; gap: 5px; }
+  .category-strip svg { width: 15px; height: 15px; }
+  .section-heading { margin: 16px 0 12px; align-items: center; gap: 10px; }
+  .section-heading h2 { margin-top: 0; font-size: 22px; }
+  .section-heading > div, .sort-form { min-width: 0; }
+  .text-link { font-size: 12px; line-height: 1.4; }
+  .section-heading > .text-link { max-width: 42%; }
+  .product-grid { gap: 16px 10px; }
+  .card-image { border-radius: 8px; }
+  .card-info { padding-top: 7px; }
+  .card-info h3 { margin-top: 3px; font-size: 13px; line-height: 1.4; }
+  .card-category { font-size: 10px; }
+  .card-bottom { margin-top: 4px; min-height: 28px; }
+  .card-price { font-size: 15px; }
+  .more { margin: 18px 0 22px; }
+  .list-intro { padding: 15px 0 14px; }
+  .breadcrumb { margin-bottom: 10px; font-size: 11px; }
+  .list-intro h1 { font-size: 27px; margin-bottom: 12px; }
+  .sort-form { gap: 8px; }
+  .sort-form select { max-width: 165px; min-height: 44px; padding: 8px; font-size: 12px; }
+  .pagination { margin: 22px 0 28px; }
+  .pagination .button { min-height: 44px; }
+  .guide-section { margin-top: 12px; padding: 22px 0; }
+  .guide-inner { gap: 12px; }
+  .guide-inner h2 { font-size: 24px; margin: 0 0 10px; }
+  .guide-content p { font-size: 13px; line-height: 1.6; }
+  .steps { margin-top: 12px; gap: 10px; }
+  .steps span { font-size: 11px; gap: 5px; }
+  .faq-section { padding: 24px 0; gap: 13px; }
+  .faq-section h2 { font-size: 25px; margin: 0; }
+  .home-faq-link { margin-top: 8px; }
+  .faq-items details { padding: 12px 0; }
+  .faq-items summary { min-height: 32px; align-items: center; line-height: 1.5; }
+  .faq-items p { padding: 8px 0 0; font-size: 13px; line-height: 1.65; }
+  .footer-inner { padding: 19px 0 14px; gap: 10px; }
+  .footer-brand p { margin-top: 9px; font-size: 11px; line-height: 1.55; }
+  .footer-links { padding-top: 0; gap: 4px 18px; font-size: 12px; }
+  .footer-links a { display: inline-flex; align-items: center; min-height: 36px; }
+  .footer-bottom { padding: 12px 0; font-size: 10px; gap: 10px; }
+  .knowledge-page { padding: 15px 0 25px; }
+  .knowledge-breadcrumb { margin-bottom: 11px; font-size: 11px; }
+  .knowledge-heading { margin-bottom: 16px; }
+  .knowledge-heading h1, .reading-page .knowledge-heading h1 { font-size: 26px; line-height: 1.23; margin: 0 0 9px; }
+  .knowledge-heading > p { font-size: 14px; line-height: 1.6; }
+  .reading-meta { margin-top: 9px; font-size: 11px; gap: 3px 12px; line-height: 1.5; }
+  .articles-grid, .home-articles { gap: 10px; }
+  .article-card, .home-articles .article-card { padding: 12px; }
+  .article-card-top { margin-bottom: 7px; font-size: 10px; gap: 5px; }
+  .article-number { font-size: 16px; }
+  .article-card h3, .home-articles .article-card h3 { font-size: 14px; line-height: 1.4; }
+  /* Full summaries remain on the linked article; titles are never truncated. */
+  .article-card > p, .home-articles .article-card > p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; margin-top: 7px; font-size: 12px; line-height: 1.5; }
+  .article-read { padding-top: 9px; min-height: 38px; font-size: 12px; }
+  .home-reading { padding-bottom: 12px; }
+  .guide-layout, .article-layout { gap: 17px; }
+  .knowledge-side { padding: 0; }
+  .mobile-disclosure > summary { min-height: 44px; font-size: 14px; line-height: 1.5; }
+  .knowledge-side .mobile-disclosure > summary { padding: 11px 12px; }
+  .knowledge-side ol { padding: 0 16px 0 32px; margin: 0 0 10px; gap: 4px; }
+  .knowledge-side li { font-size: 13px; line-height: 1.5; }
+  .knowledge-side li a { display: block; padding: 7px 0; }
+  .knowledge-side .button { margin: 0 12px 12px; }
+  .reading-body section, .faq-group { scroll-margin-top: 120px; }
+  .reading-body section { margin-bottom: 20px; }
+  .reading-body h2 { font-size: 21px; line-height: 1.35; margin-bottom: 10px; }
+  .reading-body p { font-size: 14px; line-height: 1.7; margin: 9px 0; }
+  .reading-body ul { margin: 9px 0; padding-left: 20px; }
+  .reading-body li { font-size: 14px; line-height: 1.65; margin: 5px 0; }
+  .article-table { margin: 18px 0; }
+  .article-table th, .article-table td { padding: 9px 8px; font-size: 12px; line-height: 1.5; }
+  .takeaways { padding: 14px; }
+  .source-panel { padding: 0 13px; margin-top: 16px; }
+  .source-panel > summary { padding: 11px 0; }
+  .source-panel h2 { font-size: 16px; }
+  .source-panel p { margin-top: 0; font-size: 12px; line-height: 1.6; }
+  .source-panel ul { margin: 10px 0 13px; gap: 8px 16px; }
+  .source-panel a { font-size: 12px; }
+  .related-reading { margin-top: 22px; }
+  .faq-tools { gap: 10px; margin-bottom: 12px; }
+  .faq-search { gap: 6px; }
+  .faq-search input { padding: 9px 11px; }
+  .faq-counter { font-size: 11px; }
+  .faq-group-links { gap: 6px; margin-bottom: 16px; }
+  .faq-group-links a { display: flex; align-items: center; min-height: 40px; padding: 7px 9px; font-size: 12px; line-height: 1.4; }
+  .faq-group { margin: 20px 0; }
+  .faq-group h2 { font-size: 20px; margin-bottom: 8px; }
+  .faq-full .faq-items details { padding: 10px 0; }
+  .faq-full .faq-items summary { font-size: 14px; line-height: 1.5; }
+  .faq-full .faq-items p { font-size: 14px; line-height: 1.7; }
+  .product-page { padding: 15px 0 28px; }
+  .product-detail { gap: 14px; margin-bottom: 24px; }
+  .detail-info { padding: 0; }
+  .detail-info h1 { font-size: 26px; margin: 10px 0; }
+  .detail-price { margin-top: 14px; padding-top: 12px; gap: 6px; }
+  .detail-price strong { font-size: 28px; }
+  .price-note { font-size: 12px; line-height: 1.6; margin: 10px 0 13px; }
+  .purchase { min-height: 46px; margin-bottom: 9px; padding: 10px 15px; }
+  .detail-note { margin-top: 14px; padding-top: 14px; gap: 10px; }
+  .detail-note p, .source-description { font-size: 12px; line-height: 1.65; }
+  .source-description { margin-top: 12px; }
+  .thumbnails { gap: 6px; margin-top: 8px; flex-wrap: wrap; overflow: visible; padding: 0; }
+  .thumbnails button { width: 52px; height: 52px; }
+  .visual-page { min-height: 0; padding: 15px 0 28px; }
+  .visual-box { margin: 18px auto 0; }
+  .icon-disc { width: 54px; height: 54px; margin-bottom: 12px; }
+  .visual-box h1 { font-size: 27px; margin: 12px 0; }
+  .visual-box p { margin-bottom: 16px; font-size: 14px; line-height: 1.6; }
+  .empty-state { min-height: 200px; padding: 25px 16px; gap: 14px; }
+}
+
+@media (max-width: 550px) {
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .main-photo { max-width: 280px; margin-inline: auto; }
+  .thumbnails { justify-content: center; }
+}
