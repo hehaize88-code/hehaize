@@ -1,7 +1,7 @@
 # SugargooTab project memory
 
 Updated: 2026-10-18 (Asia/Shanghai)
-Status: Approved V2 directory design, compact mobile articles and numbered pagination are live at sugargootab.com; verified in the user's Chrome at 320px, 390px and desktop widths.
+Status: V2 and compact mobile articles are live; catalogue/search/category pages now show 16 products per page. Mobile and desktop pagination verified on sugargootab.com.
 
 ## Live deployment
 - Canonical website: https://sugargootab.com/
@@ -9,10 +9,10 @@ Status: Approved V2 directory design, compact mobile articles and numbered pagin
 - Source: https://github.com/hehaize88-code/hehaize/tree/main/sugargootab-com
 - Branch: main. One domain per top-level folder; do not edit other domain projects.
 - Initial source commit: 3a0f3357f3b90f80d5474ecb74cde1712f4b7a4e.
-- Deployed application commit: bf093766164c5fa025b46397d656f7ebd5be1844 (approved V2 and compact mobile release).
+- Deployed application commit: 2f2f46b3795b7ed6bd09a4bdf92359691da18628 (16-product catalogue pages).
 - Cloudflare Worker: sugargootab-com.
-- Successful build: e18fb9fd-418e-405e-b9e7-d790aa7b5989.
-- Worker version: e12b4eda-612e-464a-b270-1d6152f3593a; deployed 2026-10-18T08:54:54Z.
+- Verified application release build: 47767d3d-c1ff-46ce-9849-ff1164c6ebe2 (Cloudflare Workers check success).
+- Application release Worker version: b738e6a5-1ba3-4ddb-9e49-0c4bb50f3ca7; completed 2026-10-18T09:50:01Z.
 - Diagnostic workers.dev host: https://sugargootab-com.hehaize88.workers.dev/ (noindex).
 - Public preview remains separate: https://sugargoo-spreadsheet-preview.hehaize88.chatgpt.site/ (noindex).
 
@@ -106,3 +106,8 @@ Status: Approved V2 directory design, compact mobile articles and numbered pagin
 - Home remains a curated 12-item preview; product details and full galleries remain intact. No new products, images, storage, source mutation or database. This applies to all 24 language catalogue, category and search routes.
 - Validation passed: production build, 24 language content bundles, 288 editorial routes, 672 sitemap URLs, 26 catalogue scenarios, source-boundary ordering, every item reachable across small catalogues (0/1/16/17/60/61/71 items), end-page controls, range text, out-of-range redirect and upstream-error handling.
 - Browser baseline before release at 390x844: 60 product cards, grid height 8111px, total document height 8977px. Live production verification follows the automatic GitHub/Cloudflare build.
+- Release confirmed: application commit 2f2f46b3795b7ed6bd09a4bdf92359691da18628, Workers Build 47767d3d-c1ff-46ce-9849-ff1164c6ebe2 succeeded; version b738e6a5-1ba3-4ddb-9e49-0c4bb50f3ca7.
+- Live Chrome at 390x844: 16 cards, two columns/eight rows, product grid 2149px, full page 3015px (about 3.6 viewports versus 10.6 before). No horizontal overflow; range shows 1–16 / 3446 products at the time of inspection.
+- Browser Next clicks: page 2 shows 17–32, page 3 shows 33–48, page 4 shows 49–64; the first four pages contain 64 unique product paths. The cross-source page 4 contains the expected 16 cards.
+- French hat + price search: page 4 shows 49–64 / 71, Next retains /fr/, q=hat and sort=price; page 5 shows 65–71, 7 cards and disabled Suivant.
+- Desktop viewport restored: 16 cards in four columns, no overflow. Production Spreadsheet page kept open. Screenshot sugargootab-16-products-mobile.jpg is verification only, not a product asset.
