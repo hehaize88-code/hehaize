@@ -5,6 +5,13 @@ export default {
   async fetch(request,env,ctx){
     const url = new URL(request.url);
     const production = new URL(targets.production);
+    // The approved design is now live. Preserve links shared during review.
+    if (url.pathname === '/design-preview' || url.pathname.startsWith('/design-preview/')) {
+      url.pathname = url.pathname.slice('/design-preview'.length) || '/';
+      url.protocol = production.protocol;
+      url.host = production.host;
+      return Response.redirect(url.href, 308);
+    }
     if (url.hostname === `www.${production.hostname}` || (url.hostname === production.hostname && url.protocol !== 'https:')) {
       url.protocol = 'https:';
       url.host = production.host;

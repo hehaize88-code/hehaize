@@ -1,7 +1,7 @@
 # SugargooTab project memory
 
 Updated: 2026-10-18 (Asia/Shanghai)
-Status: Production deployed successfully; GitHub integration and both custom domains verified.
+Status: V2 directory design approved by the user; compact mobile layout and numbered pagination prepared for production deployment.
 
 ## Live deployment
 - Canonical website: https://sugargootab.com/
@@ -77,3 +77,15 @@ Status: Production deployed successfully; GitHub integration and both custom dom
 - Preview pages explicitly noindex and canonical to the equivalent normal production URL; preview URLs are absent from the sitemap. A localized preview bar links back to the corresponding normal page.
 - src/styles/directory.css is injected only for designPreview. Shared Card/ArticleCard/Editorial components accept an optional basePath, defaulting to an empty string so regular production links remain unchanged.
 - If the user approves V2, promote it while preserving production SEO and referral configuration, then remove or redirect this temporary preview prefix.
+
+
+## 2026-10-18 — Approved V2 production release and mobile compression
+- User approved the directory preview and explicitly requested deploying it after compressing mobile pages, particularly article indexes and individual articles, plus pagination matching the supplied Previous / 1 / 2 / 3 / Next screenshot.
+- Promote V2 to normal production paths. Remove the review banner and V1 home/listing markup. /design-preview and its descendants permanently redirect (308) to corresponding canonical production paths, retaining locale and query.
+- Mobile article cards use two columns, compact excerpts, smaller headings and margins. Full article bodies are unchanged and fully server-rendered; on small screens, chapter/checklist/source disclosures initially show the first chapter, with localized Expand all / Collapse all controls in all 24 locales. Desktop stays fully expanded. TOC/hash links open their target chapter; printing temporarily expands all sections.
+- Mobile home, category menu, product spacing, FAQ, guide, detail and footer are tightened. Category links wrap into a three-column menu rather than requiring horizontal scrolling.
+- Pagination now has Previous, a moving three-number window and Next. Current number is dark with aria-current; first/last controls are disabled. Locale, category, keyword and sort are preserved in every link.
+- No article text, language, product source, image URL or referral configuration was removed or replaced. CDN image fix remains in place.
+- Browser baseline at 390px: article index 3947px high; first complete article 6899px high. Compare the deployed compact version at the same viewport before reporting reductions.
+- Added rendered pagination checks for first, middle, last, zero/single/two-page cases; all 24 locale article routes verify complete disclosures and localized controls. Production sitemap/canonical/indexing gates remain active.
+- Pre-deployment checks passed: all 24 content bundles (30 FAQs and 10 full articles each), Astro production build, 288 editorial routes, 8 rendered pagination scenarios, 672 sitemap URLs, canonical/indexability, static assets, www and legacy preview redirects. Live mobile interaction and image verification follow the automatic Cloudflare deployment.

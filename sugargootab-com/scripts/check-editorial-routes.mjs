@@ -33,6 +33,9 @@ for(const lang of locales){
    const a=data.articles.find(a=>path==='/articles/'+a.slug+'/');
    assert.equal(d.querySelector('h1')?.textContent,a.title,url+' translated title');
    assert.equal(d.querySelectorAll('.article-section').length,a.sections.length,url+' sections');
+   assert.equal(d.querySelectorAll('[data-reading-section]').length,a.sections.length+2,url+' reading disclosures');
+   assert(d.querySelector('[data-expand-reading]')?.textContent.trim(),url+' localized expand control');
+   assert(d.querySelector('[data-collapse-reading]')?.textContent.trim(),url+' localized collapse control');
    assert.equal(d.querySelectorAll('.article-section p').length,a.sections.reduce((n,s)=>n+s.paragraphs.length,0),url+' paragraphs');
    assert.equal(d.querySelectorAll('.article-checklist li').length,a.checklist.length,url+' checklist');
    assert.equal(d.querySelectorAll('.article-related .article-card').length,2,url+' related links');

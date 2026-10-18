@@ -1,0 +1,11 @@
+---
+const {page,pages,t,urlFor}=Astro.props;
+const count=Math.min(3,pages);
+const first=Math.max(1,Math.min(page-1,pages-count+1));
+const numbers=Array.from({length:count},(_,i)=>first+i);
+---
+<nav class="pagination numbered-pagination" aria-label={t.browse}>
+ {page>1?<a class="page-control" href={urlFor(page-1)} rel="prev">{t.previous}</a>:<span class="page-control is-disabled" aria-disabled="true">{t.previous}</span>}
+ {numbers.map(n=>n===page?<span class="page-number is-current" aria-current="page">{n}</span>:<a class="page-number" href={urlFor(n)}>{n}</a>)}
+ {page<pages?<a class="page-control" href={urlFor(page+1)} rel="next">{t.next}</a>:<span class="page-control is-disabled" aria-disabled="true">{t.next}</span>}
+</nav>

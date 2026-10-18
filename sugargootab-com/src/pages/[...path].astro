@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import directoryCss from '../styles/directory.css?inline';
+import '../styles/directory.css';
+import Pagination from '../components/Pagination.astro';
 import {SITE_ORIGIN,isProductionOrigin} from '../lib/site';
 import Card from '../components/Card.astro';
 import Icon from '../components/Icon.astro';
@@ -11,9 +12,7 @@ import {languages,translate,categoryNames,localized} from '../lib/i18n';
 import {editorial} from '../lib/copy';
 import {home,listing,detail,slugs,LOGO,FAVICON,REGISTER} from '../lib/catalog';
 const bits=Astro.url.pathname.split('/').filter(Boolean);
-const designPreview=bits[0]==='design-preview';
-if(designPreview) bits.shift();
-const basePath=designPreview?'/design-preview':'';
+const basePath='';
 let lang='en';
 if(languages.some(l=>l[0]===bits[0])) lang=bits.shift()!;
 const path='/'+bits.join('/')+(bits.length&&!bits.at(-1)?.includes('.')?'/':'');
@@ -33,14 +32,13 @@ try {
  if(type==='detail')data=await detail(path.slice('/products'.length));
 } catch(e:any){error=c.error;status=e.status===404?404:503;console.error('Catalogue read failed',e.message);}
 Astro.response.status=status;
-const indexable=!designPreview&&isProductionOrigin(Astro.url)&&status===200&&!q&&!(type==='listing'&&(page>1||sort!=='new'))&&type!=='visual';
+const indexable=isProductionOrigin(Astro.url)&&status===200&&!q&&!(type==='listing'&&(page>1||sort!=='new'))&&type!=='visual';
 const robots=indexable?'index,follow,max-image-preview:large':'noindex,follow';
 Astro.response.headers.set('X-Robots-Tag',robots);
 Astro.response.headers.set('Cache-Control','no-store');
 const activeCategory=category?names[slugs.indexOf(category)]:'';
 const title=type==='faq'?ed.ui.faqTitle:type==='articles'?ed.ui.articleTitle:type==='article'?article!.title:type==='home'?'Sugargoo Spreadsheet — Finds, Photos & Product Links':type==='detail'&&data?data.title:type==='listing'?activeCategory||t.browse:type==='categories'?t.categories:type==='guide'?t.guide:type==='qc'?t.photos:type==='visual'?t.visual:'404';
 const canonical=new URL(localized(lang,path),SITE_ORIGIN).href;
-const heroProduct=data?.products?.[0];
 const description=type==='article'?article!.description:type==='articles'?ed.ui.articleIntro:type==='faq'?ed.ui.faqIntro:c.intro;
 const entity=type==='article'?{'@context':'https://schema.org','@type':'Article',headline:article!.title,description:article!.description,datePublished:ed.reviewed,dateModified:ed.reviewed,inLanguage:lang,mainEntityOfPage:canonical,author:{'@type':'Organization',name:ed.ui.author},publisher:{'@type':'Organization',name:'SugargooTab'},citation:article!.sources.map(s=>s.url)}:type==='faq'?{'@context':'https://schema.org','@type':'FAQPage',inLanguage:lang,mainEntity:ed.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.answer}}))}:null;
 function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if(q)p.set('q',q);return link(path)+'?'+p.toString();}
@@ -60,11 +58,9 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
   {entity&&<script type="application/ld+json" set:html={JSON.stringify(entity).replace(/</g,String.fromCharCode(92)+'u003c')}/>}
  </head>
  <body>
-  {designPreview&&<style is:inline set:html={directoryCss}/> }
-  {designPreview&&<div class="design-preview-bar"><div class="container"><span>SugargooTab / {t.preview}</span><a href={localized(lang,path)}>{t.home}<Icon name="external" size={12}/></a></div></div>}
   <header class="site-header">
    <div class="header-inner">
-    <a href={link()} class="brand" aria-label="Sugargoo Spreadsheet"><img src={LOGO} alt="SUGARGOO" width="170" height="40"/><span class:list={{'brand-tab':designPreview}}>{designPreview?'TAB':'SPREADSHEET'}</span></a>
+    <a href={link()} class="brand" aria-label="Sugargoo Spreadsheet"><img src={LOGO} alt="SUGARGOO" width="170" height="40"/><span class="brand-tab">TAB</span></a>
     <nav aria-label={t.browse}>
      <a class:list={{active:type==='listing'}} href={link('/spreadsheet/')}>{t.browse}</a>
      <a class:list={{active:type==='categories'}} href={link('/categories/')}>{t.categories}</a>
@@ -79,7 +75,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
    </div>
   </header>
   <main>
-   {type==='home'&&designPreview&&<>
+   {type==='home'&&<>
     <section class="directory-hero"><div class="container">
      <div class="directory-kicker"><span><span class="orange-dot"></span>SUGARGOOTAB</span><span>{t.browse} / 2026</span></div>
      <h1>Sugargoo <em>Spreadsheet.</em></h1>
@@ -101,32 +97,9 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
     <section class="guide-band"><div class="container guide-grid"><div><span class="eyebrow">SUGARGOO / {t.guide}</span><h2>{c.howTitle}</h2></div><div><p>{c.how}</p><a class="text-link" href={link('/guide/')}>{t.guide}<Icon name="arrow"/></a></div></div></section>
     <EditorialLanding {ed} {lang} {basePath}/>
    </>}
-   {type==='home'&&!designPreview&&<><section class="hero container">
-    <div class="hero-copy">
-     <div class="eyebrow"><span class="orange-dot"></span>SugargooTab / SUGARGOO FINDS</div>
-     <h1>Sugargoo<br/><span>Spreadsheet.</span></h1>
-     <p class="hero-intro">{c.intro}</p>
-     <form class="search-form" action={link('/spreadsheet/')} method="get"><Icon name="search"/><input name="q" aria-label={t.search} placeholder={t.placeholder}/><button type="submit" aria-label={t.search}><Icon name="arrow"/></button></form>
-     <div class="hero-links"><a href={link('/spreadsheet/')}>{t.all}<Icon name="arrow" size={16}/></a><a class="muted" href={link('/search/visual/')}><Icon name="image" size={16}/>{t.visual}</a></div>
-     <div class="hero-foot"><span>01 / {t.search}</span><span>02 / {t.photos}</span><span>03 / Sugargoo</span></div>
-    </div>
-    <div class="hero-feature">
-     <div class="feature-top"><span>{t.latest}</span><span class="feature-number">01</span></div>
-     {heroProduct?<a class="featured-product" href={link('/products'+heroProduct.path)}>
-      <div class="featured-image">{heroProduct.image&&<img src={heroProduct.image} alt={heroProduct.title} width="600" height="600" fetchpriority="high" referrerpolicy="no-referrer"/>}</div>
-      <div class="featured-caption"><div><span>{names[slugs.indexOf(heroProduct.category)]}</span><h2>{heroProduct.title}</h2></div><div class="featured-price">${heroProduct.price}<small>USD</small></div></div>
-      <span class="feature-cta"><Icon name="arrow" size={24}/></span>
-     </a>:<div class="catalog-error"><Icon name="image" size={32}/><p>{error||t.unavailable}</p><a class="text-link" href={Astro.url.href}>{t.retry}<Icon name="arrow"/></a></div>}
-    </div>
-   </section>
-   <section class="category-strip"><div class="container"><span class="strip-label">{t.categories}</span><div class="category-chips">{slugs.slice(0,6).map((slug,i)=><a href={link('/category/'+slug+'/')}>{names[i]}<Icon name="arrow" size={14}/></a>)}<a class="chip-all" href={link('/categories/')}>{t.all}<Icon name="plus" size={14}/></a></div></div></section>
-   <section class="container product-section"><div class="section-heading"><div><span class="eyebrow">SUGARGOO / {t.catalog}</span><h2>{t.latest}<span class="heading-dot">.</span></h2></div><a class="text-link" href={link('/spreadsheet/')}>{t.browse}<Icon name="arrow"/></a></div>
-    {data?<div class="product-grid home-grid">{data.products.slice(1,7).map((p:any)=><Card {basePath} product={p} t={t} names={names} lang={lang}/>)}</div>:<p class="notice">{error}</p>}
-   </section>
-   <section class="guide-band"><div class="container guide-grid"><div><span class="eyebrow">SUGARGOO / {t.guide}</span><h2>{c.howTitle}</h2></div><div><p>{c.how}</p><a class="text-link" href={link('/guide/')}>{t.guide}<Icon name="arrow"/></a></div></div></section><EditorialLanding {ed} {lang} {basePath}/></>}
    {type!=='home'&&<div class="container inner-page">
     <div class="breadcrumb"><a href={link()}>{t.home}</a><span>/</span>{type==='article'&&<><a href={link('/articles/')}>{ed.ui.articles}</a><span>/</span></>}<span>{type==='detail'?t.view:title}</span></div>
-    {type==='listing'&&designPreview&&<>
+    {type==='listing'&&<>
      <div class="catalog-heading"><div><span class="eyebrow">SUGARGOOTAB / {t.browse}</span><h1>{activeCategory||t.catalog}</h1></div><a class="text-link" href={link('/guide/')}>{t.guide}<Icon name="external" size={17}/></a></div>
      <div class="catalog-workspace">
       <aside class="directory-sidebar catalog-sidebar"><div class="sidebar-heading"><span>{t.categories}</span><span>{slugs.length}</span></div><nav class="directory-categories" aria-label={t.categories}><a class:list={{current:!category}} href={link('/spreadsheet/')+(q?'?q='+encodeURIComponent(q):'')}><span class="category-no">↗</span><span>{t.all}</span></a>{slugs.map((s,i)=><a class:list={{current:s===category}} href={link('/category/'+s+'/')+(q?'?q='+encodeURIComponent(q):'')}><span class="category-no">{String(i+1).padStart(2,'0')}</span><span>{names[i]}</span></a>)}</nav></aside>
@@ -136,18 +109,9 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
         <select name="sort" aria-label={t.popular}><option value="new" selected={sort==='new'}>{t.latest}</option><option value="click" selected={sort==='click'}>{t.popular}</option><option value="price" selected={sort==='price'}>{t.priceSort}</option></select>
         <button class="button" type="submit">{t.search}<Icon name="arrow" size={18}/></button>
        </form>
-       {data&&<><div class="results-line"><span>{data.total} {t.results}{q&&` · “${q}”`}</span>{q&&<a href={link(path)}>{t.clear} ×</a>}</div><div class="product-grid">{data.products.map((p:any,i:number)=><Card {basePath} product={p} t={t} names={names} lang={lang} eager={i<4}/>)}</div>{data.products.length===0&&<div class="empty-state"><Icon name="search" size={36}/><p>{t.empty}</p></div>}<nav class="pagination" aria-label={t.browse}>{page>1&&<a href={pageURL(page-1)}>← {t.previous}</a>}<span>{page} / {data.pages}</span>{page<data.pages&&<a href={pageURL(page+1)}>{t.next} →</a>}</nav></>}
+       {data&&<><div class="results-line"><span>{data.total} {t.results}{q&&` · “${q}”`}</span>{q&&<a href={link(path)}>{t.clear} ×</a>}</div><div class="product-grid">{data.products.map((p:any,i:number)=><Card {basePath} product={p} t={t} names={names} lang={lang} eager={i<4}/>)}</div>{data.products.length===0&&<div class="empty-state"><Icon name="search" size={36}/><p>{t.empty}</p></div>}<Pagination {page} pages={data.pages} {t} urlFor={pageURL}/></>}
       </section>
      </div>
-    </>}
-    {type==='listing'&&!designPreview&&<><div class="page-heading"><span class="eyebrow">SUGARGOO SPREADSHEET</span><h1>{activeCategory||t.catalog}<span class="heading-dot">.</span></h1></div>
-     <form class="catalog-toolbar" action={link(path)} method="get">
-      <div class="input-wrap"><Icon name="search"/><input type="search" name="q" value={q} placeholder={t.placeholder} aria-label={t.search}/></div>
-      <select name="sort" aria-label={t.popular}><option value="new" selected={sort==='new'}>{t.latest}</option><option value="click" selected={sort==='click'}>{t.popular}</option><option value="price" selected={sort==='price'}>{t.priceSort}</option></select>
-      <button class="button" type="submit">{t.search}<Icon name="arrow" size={18}/></button>
-     </form>
-     <div class="filter-row"><a class:list={{current:!category}} href={link('/spreadsheet/')}>{t.all}</a>{slugs.map((s,i)=><a class:list={{current:s===category}} href={link('/category/'+s+'/')}>{names[i]}</a>)}</div>
-     {data&&<><div class="results-line"><span>{data.total} {t.results}{q&&` · “${q}”`}</span>{q&&<a href={link(path)}>{t.clear} ×</a>}</div><div class="product-grid">{data.products.map((p:any,i:number)=><Card {basePath} product={p} t={t} names={names} lang={lang} eager={i<4}/>)}</div>{data.products.length===0&&<div class="empty-state"><Icon name="search" size={36}/><p>{t.empty}</p></div>}<nav class="pagination" aria-label={t.browse}>{page>1&&<a href={pageURL(page-1)}>← {t.previous}</a>}<span>{page} / {data.pages}</span>{page<data.pages&&<a href={pageURL(page+1)}>{t.next} →</a>}</nav></>}
     </>}
     {type==='categories'&&<><div class="page-heading"><span class="eyebrow">SUGARGOO SPREADSHEET</span><h1>{t.categories}<span class="heading-dot">.</span></h1></div><div class="category-grid">{(data?.categories||[]).map((cat:any,i:number)=><a href={link('/category/'+cat.slug+'/')}><span class="category-index">{String(i+1).padStart(2,'0')}</span><h2>{names[slugs.indexOf(cat.slug)]}</h2><span>{cat.count} {t.results}</span><Icon name="arrow"/></a>)}</div></>}
     {type==='detail'&&data&&<><div class="detail-grid"><div class="gallery">
@@ -166,13 +130,13 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
     {type==='404'&&<section class="empty-state"><span class="error-number">404</span><h1>{t.unavailable}</h1><a class="button" href={link()}>{t.home}<Icon name="arrow"/></a></section>}
    </div>}
   </main>
-  <footer class="site-footer"><div class="container footer-top"><a href={link()} class="brand"><img src={LOGO} alt="SUGARGOO" width="150" height="35"/><span class:list={{'brand-tab':designPreview}}>{designPreview?'TAB':'SPREADSHEET'}</span></a><p>{c.disclosure}</p><div><a href={link('/spreadsheet/')}>{t.browse}</a><a href={link('/guide/')}>{t.guide}</a><a href={link('/qc/')}>{t.photos}</a><a href={link('/faq/')}>{t.faq}</a><a href={link('/articles/')}>{ed.ui.articles}</a></div></div><div class="container footer-bottom"><span>© 2026 Sugargoo Spreadsheet</span><span>SugargooTab · USD</span></div></footer>
+  <footer class="site-footer"><div class="container footer-top"><a href={link()} class="brand"><img src={LOGO} alt="SUGARGOO" width="150" height="35"/><span class="brand-tab">TAB</span></a><p>{c.disclosure}</p><div><a href={link('/spreadsheet/')}>{t.browse}</a><a href={link('/guide/')}>{t.guide}</a><a href={link('/qc/')}>{t.photos}</a><a href={link('/faq/')}>{t.faq}</a><a href={link('/articles/')}>{ed.ui.articles}</a></div></div><div class="container footer-bottom"><span>© 2026 Sugargoo Spreadsheet</span><span>SugargooTab · USD</span></div></footer>
   <script>
    const main=document.querySelector<HTMLImageElement>('#main-image');
    const thumbnails=document.querySelectorAll<HTMLButtonElement>('.thumbnails button');
    thumbnails.forEach(b=>b.addEventListener('click',()=>{if(main&&b.dataset.image){main.src=b.dataset.image;thumbnails.forEach(x=>x.classList.toggle('chosen',x===b));}}));
    document.addEventListener('click',e=>{document.querySelectorAll<HTMLDetailsElement>('.language-select[open]').forEach(d=>{if(!d.contains(e.target as Node))d.open=false;});});
-   document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll<HTMLDetailsElement>('details[open]').forEach(d=>d.open=false);});
+   document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll<HTMLDetailsElement>('.language-select[open]').forEach(d=>d.open=false);});
   </script>
  </body>
 </html>
