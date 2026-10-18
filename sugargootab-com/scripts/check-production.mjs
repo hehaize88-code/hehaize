@@ -12,6 +12,8 @@ assert.equal(http.headers.get('Location'),targets.production+'/faq/');
 const preview = await request('/faq/','https://sugargootab-com.example.workers.dev');
 assert.match(preview.headers.get('X-Robots-Tag'),/noindex/);
 const previewDoc = parseHTML(await preview.text()).document;
+assert.equal(previewDoc.querySelectorAll('script[src*="googletagmanager.com"]').length,0,'Preview visits must not enter production Analytics');
+assert(![...previewDoc.querySelectorAll('script')].some(s=>s.textContent.includes("gtag('config'")),'Preview Analytics configuration absent');
 assert.equal(previewDoc.querySelector('link[rel=canonical]').getAttribute('href'),targets.production+'/faq/');
 const robots = await request('/robots.txt');
 assert.equal(robots.status,200);
@@ -75,6 +77,7 @@ try {
   const response=await request('/fr/category/headwear/?q=hat&sort=price&page='+page);
   assert.equal(response.status,200);
   const doc=parseHTML(await response.text()).document;
+  assert.equal(doc.querySelectorAll('script[src="https://www.googletagmanager.com/gtag/js?id=G-SDSLG4QJR3"]').length,1,'Search and pagination visits still measured');
   const nav=doc.querySelector('.numbered-pagination');
   assert.deepEqual([...nav.querySelectorAll('.page-number')].map(n=>Number(n.textContent)),numbers);
   assert.equal(nav.querySelector('[aria-current=page]').textContent,String(page));

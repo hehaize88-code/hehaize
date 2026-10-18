@@ -3,6 +3,15 @@
 Updated: 2026-10-18 (Asia/Shanghai)
 Status: V2 and compact mobile articles are live; catalogue/search/category pages now show 16 products per page. Mobile and desktop pagination verified on sugargootab.com.
 
+## Google Analytics 4 — 2026-10-18
+- User requested adding sugargootab.com to their existing Google Analytics account.
+- Created dedicated property sugargootab.com (559468530) under existing account 405518068; reporting timezone Asia/Shanghai (UTC+8), currency USD. Objectives: website traffic and engagement/retention.
+- Web stream SugargooTab Web (16152247002), URL https://sugargootab.com, measurement ID G-SDSLG4QJR3. Enhanced measurement enabled; email redaction enabled by the stream's default settings.
+- Shared GoogleAnalytics.astro component installs the async Google tag once on each production-origin HTML page, including all 24 languages, catalogue, searches, pagination, FAQ and articles. No SPA/router double page-view hooks. Preview/workers.dev/local origins do not load Analytics.
+- Google Signals and advertising personalization signals disabled in tag configuration; no advertising-account links or fictitious purchase conversions. Source catalogue/referral behavior unchanged.
+- Validation before release: 24 content bundles, Astro build, 288 editorial routes each with one matching loader/config, preview tag exclusion, search/pagination tag presence, 26 pagination scenarios and 672 sitemap URLs all pass.
+- Deployment and live collection verification pending the GitHub/Cloudflare release of this change; append confirmed results after inspecting the actual site and GA UI.
+
 ## Live deployment
 - Canonical website: https://sugargootab.com/
 - Alias: https://www.sugargootab.com/ permanently redirects (308) to the apex, preserving path and query.

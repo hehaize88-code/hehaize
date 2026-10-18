@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import '../styles/directory.css';
 import Pagination from '../components/Pagination.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import {SITE_ORIGIN,isProductionOrigin} from '../lib/site';
 import Card from '../components/Card.astro';
 import Icon from '../components/Icon.astro';
@@ -50,6 +51,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
 <html lang={lang}>
  <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <GoogleAnalytics />
   <title>{type==='home'||type==='article'?title:`${title} | Sugargoo Spreadsheet`}</title>
   <meta name="description" content={description}/><meta name="robots" content={robots}/>
   <link rel="canonical" href={canonical}/><link rel="icon" href={FAVICON}/>

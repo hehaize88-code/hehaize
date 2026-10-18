@@ -15,6 +15,11 @@ for(const lang of locales){
   const response=await worker.fetch(new Request(url),{}, {waitUntil(){}});
   assert.equal(response.status,200,url);
   const {document:d}=parseHTML(await response.text());
+  const analytics=d.querySelectorAll('script[src^="https://www.googletagmanager.com/gtag/js"]');
+  assert.equal(analytics.length,1,url+' one Analytics loader');
+  assert.equal(analytics[0].getAttribute('src'),'https://www.googletagmanager.com/gtag/js?id=G-SDSLG4QJR3',url+' dedicated Analytics stream');
+  assert(analytics[0].hasAttribute('async'),url+' nonblocking Analytics');
+  assert.equal([...d.querySelectorAll('script:not([src])')].filter(s=>s.textContent.includes("gtag('config', 'G-SDSLG4QJR3'")).length,1,url+' one page-view configuration');
   assert.equal(d.documentElement.lang,lang,url+' language');
   assert.equal(d.querySelector('link[rel=canonical]')?.getAttribute('href'),url,url+' canonical');
   assert.equal(d.querySelectorAll('link[rel=alternate][hreflang]').length,25,url+' alternates');

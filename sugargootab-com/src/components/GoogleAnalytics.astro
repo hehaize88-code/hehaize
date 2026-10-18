@@ -1,0 +1,16 @@
+---
+import { isProductionOrigin } from '../lib/site';
+const enabled = isProductionOrigin(Astro.url);
+---
+{enabled && <>
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-SDSLG4QJR3"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SDSLG4QJR3', {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+  </script>
+</>}
