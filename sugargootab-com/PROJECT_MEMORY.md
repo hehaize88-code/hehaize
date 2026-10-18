@@ -50,3 +50,9 @@ Domain RDAP 2026-10-18: sugargoopick/sugargoosheet/sugargoolist/sugargootable/su
 - Built production SSR verified against live CNBUYCHA: home 200 with six product cards; keyword+price search 200 with 60 real cards and noindex; product /products/shoes/3470.html 200 with four source photos and the verified Sugargoo affiliate link.
 - Local Wrangler emulator could not start in this container: uv_interface_addresses system error. Built Worker route tests and Wrangler deployment dry-run passed; this is an environment verification limitation, not proof of a deployed Cloudflare runtime.
 - No Cloudflare changes have been made: connector authorization must be restored, or explicit browser-fallback consent obtained, before connecting GitHub builds and binding domains.
+
+### Cloudflare initial deployment follow-up
+- The user's connected Chrome session reached the correct Cloudflare account and active domain; initial DNS record count was zero. Existing GitHub integration and existing Workers Builds token reused.
+- Created Worker sugargootab-com connected to hehaize88-code/hehaize, main, root sugargootab-com. Production build watch path restricted to sugargootab-com/**; non-production preview builds disabled.
+- Initial build 2d798c3e-fcfe-4cf2-ae32-fa751b92e5b3 failed during npm ci: npm10.9.2 required nested esbuild0.28.2 entries missing from the npm11-generated lockfile.
+- Regenerated the lockfile using npm10.9.2 and verified npm ci. Build, route checks and Wrangler dry-run are rerun before the corrective commit. Application and domain binding remain pending until a successful live deployment is verified.

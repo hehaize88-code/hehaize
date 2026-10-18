@@ -13,7 +13,7 @@ Astro 7.4.0 SSR website for `https://sugargootab.com`, maintained as one indepen
 
 ## Development
 
-Use Node 22.22.0 or newer.
+Use Node 22.22.0 or newer. Keep the lockfile compatible with the Cloudflare build image (npm 10.9.2); regenerate it with that version and verify a clean `npm ci` when dependencies change.
 
 ```sh
 npm ci
