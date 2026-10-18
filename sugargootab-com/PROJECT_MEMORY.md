@@ -1,7 +1,7 @@
 # SugargooTab project memory
 
 Updated: 2026-10-18 (Asia/Shanghai)
-Status: V2 directory design approved by the user; compact mobile layout and numbered pagination prepared for production deployment.
+Status: Approved V2 directory design, compact mobile articles and numbered pagination are live at sugargootab.com; verified in the user's Chrome at 320px, 390px and desktop widths.
 
 ## Live deployment
 - Canonical website: https://sugargootab.com/
@@ -9,7 +9,7 @@ Status: V2 directory design approved by the user; compact mobile layout and numb
 - Source: https://github.com/hehaize88-code/hehaize/tree/main/sugargootab-com
 - Branch: main. One domain per top-level folder; do not edit other domain projects.
 - Initial source commit: 3a0f3357f3b90f80d5474ecb74cde1712f4b7a4e.
-- Deployed application commit: 454df18c067f29b39f5594f4cf6495faec76082c.
+- Deployed application commit: bf093766164c5fa025b46397d656f7ebd5be1844 (approved V2 and compact mobile release).
 - Cloudflare Worker: sugargootab-com.
 - Successful build: e18fb9fd-418e-405e-b9e7-d790aa7b5989.
 - Worker version: e12b4eda-612e-464a-b270-1d6152f3593a; deployed 2026-10-18T08:54:54Z.
@@ -89,3 +89,12 @@ Status: V2 directory design approved by the user; compact mobile layout and numb
 - Browser baseline at 390px: article index 3947px high; first complete article 6899px high. Compare the deployed compact version at the same viewport before reporting reductions.
 - Added rendered pagination checks for first, middle, last, zero/single/two-page cases; all 24 locale article routes verify complete disclosures and localized controls. Production sitemap/canonical/indexing gates remain active.
 - Pre-deployment checks passed: all 24 content bundles (30 FAQs and 10 full articles each), Astro production build, 288 editorial routes, 8 rendered pagination scenarios, 672 sitemap URLs, canonical/indexability, static assets, www and legacy preview redirects. Live mobile interaction and image verification follow the automatic Cloudflare deployment.
+
+### Production verification complete
+- Application commit bf093766164c5fa025b46397d656f7ebd5be1844 was pushed to GitHub main and automatically deployed by the existing Cloudflare build connection. User Chrome confirms the new theme and interactions on normal production URLs. Reloading the old design-preview article redirects to its equivalent normal production URL.
+- At 390x844: article index is now 1631px high (previously 3947), 10 cards in two columns. First article is 2411px initially (previously 6899), or 5173px with every section expanded; heading height is 90px. The initial reduction includes collapsed chapters, not removal of content.
+- Expand all opens all 9 sections; Collapse all closes them. Clicking a TOC link opens the correct chapter, closes the mobile TOC and scrolls to the heading. French controls display Tout déplier / Tout replier.
+- At 320px: article cards retain two columns, catalogue and article index have no horizontal page overflow. At 390px: numbered Previous / 1 / 2 / 3 / Next matches the supplied reference, with current background rgb(35,38,36).
+- Clicking page 2 changes the catalogue correctly (60 cards). French hat + price search retains /fr/, q=hat and sort=price after Next; page 2 has 11 cards and disabled Suivant, with valid Previous back to page 1.
+- Restoring the desktop viewport (1920px) expands all 9 article sections and hides the compact reading controls. Production homepage shows the approved directory theme, no review banner, 12/12 loaded source product images and no horizontal overflow. Temporary viewport override was reset; the formal homepage was left open for the user.
+- Product source, official assets, referral configuration, editorial text, all 24 locales and the source CDN image fix remain intact. No database, image proxy or backend was added.
