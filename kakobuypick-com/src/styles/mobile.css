@@ -145,7 +145,15 @@
 }
 
 @media (max-width: 550px) {
+  .header .brand img { width: 96px; }
+  .header-actions { gap: 6px; }
+  .join { max-width: 110px; }
   .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .main-photo { max-width: 280px; margin-inline: auto; }
   .thumbnails { justify-content: center; }
+}
+
+@media (max-width: 380px) {
+  .nav { gap: 0 6px; font-size: 11px; }
+  .nav a { max-width: 80px; }
 }
