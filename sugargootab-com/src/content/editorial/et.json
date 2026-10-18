@@ -1,0 +1,1448 @@
+{
+  "locale": "et",
+  "reviewed": "2026-10-18",
+  "ui": {
+    "articles": "Artiklid",
+    "articleTitle": "Sugargoo ostujuhendid",
+    "articleIntro": "Kümme praktilist juhendit toote valimiseks, üksikasjade kontrollimiseks ning teekonna kavandamiseks müüjast kättetoimetamiseni.",
+    "faqTitle": "Sugargoo korduma kippuvad küsimused",
+    "faqIntro": "Selged vastused tellimuse iga etapi kohta, ametlikud allikad platvormi reeglitele ning selle sõltumatu kataloogi ausalt selgitatud piirangud.",
+    "readArticle": "Loe juhendit",
+    "allArticles": "Kõik artiklid",
+    "allFaq": "Kõik küsimused",
+    "faqSearch": "Otsi küsimusi…",
+    "noFaq": "Sobivaid küsimusi ei leitud. Proovi lühemat otsingut.",
+    "sources": "Ametlikud allikad",
+    "reviewed": "Kontrollitud",
+    "contents": "Sellel lehel",
+    "checklist": "Enne jätkamist",
+    "related": "Loe edasi",
+    "backArticles": "Tagasi artiklite juurde",
+    "minutes": "min lugemist",
+    "allTopics": "Kõik teemad",
+    "sourceNote": "Põhineb allpool lingitud ametlikel juhistel. Teenuste või eeskirjade muutumisel kehtivad eelkõige konto, müüja ja tarneviisi ajakohased tingimused.",
+    "faqNote": "Ametlikud juhised võivad eri lehtedel või tellimuste liikide puhul erineda. Enne maksmist või saatmist kontrolli just sinu tellimusele kuvatud tingimusi.",
+    "homeTitle": "Veidi lugemist. Paremad otsused.",
+    "homeIntro": "Liigu salvestatud tootelingist selge kvaliteedikontrolli, kulude ja saatmise plaanini.",
+    "homeFaq": "Küsimusi enne esimest tellimust?",
+    "homeFaqIntro": "Vaata ühest kohast maksete, laofotode, hoiutähtaegade ja tagastuste teavet.",
+    "articlesCount": "juhendit",
+    "questionsCount": "küsimust",
+    "categoryGetting": "Alustamine",
+    "categoryQuality": "Fotod ja kvaliteet",
+    "categoryShipping": "Saatmine ja hoiustamine",
+    "categoryAccount": "Maksed ja müügijärgne teenindus",
+    "author": "SugargooTabi toimetus",
+    "siteEvidence": "Sellest sõltumatust kataloogist"
+  },
+  "groups": {
+    "basics": "Alustamine",
+    "payments": "Maksed ja kulud",
+    "quality": "Fotod ja kvaliteedikontroll",
+    "warehouse": "Ladu ja hoiustamine",
+    "shipping": "Saatmine ja jälgimine",
+    "aftersales": "Tagastused ja tagasimaksed"
+  },
+  "faqs": [
+    {
+      "id": "agent",
+      "group": "basics",
+      "question": "Millega Sugargoo tegeleb?",
+      "answer": "Sugargoo on ostuvahendaja: see aitab osta lubatud kaupu Hiina müüjatelt, võtab need oma lattu vastu ning korraldab rahvusvahelise saatmise pärast seda, kui esitad paki saatmistaotluse. Müüja, ladu ja rahvusvaheline vedaja on eri etapid, seega ostukinnitus ei ole kinnitus välismaale lähetamise kohta.",
+      "sources": [
+        {
+          "title": "How ordering with Sugargoo works",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ]
+    },
+    {
+      "id": "independent",
+      "group": "basics",
+      "question": "Kas see on Sugargoo ametlik veebisait?",
+      "answer": "Ei. SugargooTab on sõltumatu toodete leidmise ja juhendite sait. Tooted ja näidispildid loetakse CNBUYCHA kataloogist. Kontole juurdepääs, maksmine, sinu kaupade laokontrolli fotod, pakkide saatmistaotlused ja klienditeenindus toimuvad Sugargoo ametlikul platvormil. Mõned ostulingid on partnerlingid.",
+      "sources": []
+    },
+    {
+      "id": "variants",
+      "group": "basics",
+      "question": "Kas peaksin suuruse ja värvi enne maksmist uuesti üle kontrollima?",
+      "answer": "Jah. Kinnita praegusel tellimislehel täpne variant, suurus, värv ja kogus. Kataloogi pealkiri või põhipilt võib esindada mitut valikut, kuid kuvatud alghind võib kuuluda mõnele teisele variandile. Lisa selged nõuded enne tellimuse esitamist.",
+      "sources": [
+        {
+          "title": "How to read Taobao listings",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-listings/"
+        }
+      ]
+    },
+    {
+      "id": "product-links",
+      "group": "basics",
+      "question": "Millist tootelinki peaksin kasutama?",
+      "answer": "Kasuta toetatud kauplemiskeskkonna algset üksiktoote lehte, mitte poe avalehte, otsingutulemust või puudulikku jagamiskoodi. Kontrolli, et laaditud pealkiri, müüja ja valikud vastaksid soovitud tootele. See kataloog pakub praegu kontrollitud ostulinke Weidianist Sugargoosse; see ei ole universaalne linkide teisendamise tööriist.",
+      "sources": [
+        {
+          "title": "Using a Taobao product link",
+          "url": "https://blog.sugargoo.com/how-to-use-taobao-product-link-with-sugargoo/"
+        }
+      ]
+    },
+    {
+      "id": "diy",
+      "group": "basics",
+      "question": "Mida teha, kui tootelink ei laadi?",
+      "answer": "Kontrolli esmalt, kas algne kuulutus on endiselt saadaval ja kas URL viitab üksikule tootele. Sugargoo kirjeldab DIY Orderi võimalust andmete käsitsi sisestamiseks, kui automaatne töötlemine ebaõnnestub. Käsitsi esitamine ei tühista ostupiiranguid ega taga tellimuse vastuvõtmist.",
+      "sources": [
+        {
+          "title": "Using a Taobao product link",
+          "url": "https://blog.sugargoo.com/how-to-use-taobao-product-link-with-sugargoo/"
+        },
+        {
+          "title": "Using DIY Order",
+          "url": "https://blog.sugargoo.com/how-to-use-diy-order-on-sugargoo/"
+        }
+      ]
+    },
+    {
+      "id": "two-payments",
+      "group": "payments",
+      "question": "Kas esimene makse sisaldab rahvusvahelist tarnet?",
+      "answer": "Tavaliselt mitte. Esimeses etapis tasutakse kauba ja vajaduse korral Hiina-sisese tarne eest lattu. Rahvusvaheline veotasu makstakse hiljem, kui esitad hoiustatud kaubad pakina saatmiseks. Valitud teenuste ja maksetega võivad kaasneda lisatasud, seega jäta saatmiseks eraldi eelarve.",
+      "sources": [
+        {
+          "title": "Payment stages and methods",
+          "url": "https://blog.sugargoo.com/how-do-i-pay-for-goods-from-china-on-sugargoo-payment-methods-explained/"
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "group": "payments",
+      "question": "Millised makseviisid on saadaval?",
+      "answer": "Kasuta makseviise, mida sinu kontole kassas tegelikult kuvatakse. Ametlikud juhendid käsitlevad kaarte, digirahakotte, piirkondlikke võimalusi ja kontojääki, kuid saadavus ning tasud võivad erineda. Ära eelda, et vanemas juhendis mainitud makseviis on praegu sinu riigis saadaval.",
+      "sources": [
+        {
+          "title": "Sugargoo payment methods",
+          "url": "https://blog.sugargoo.com/sugargoo-payment-methods/"
+        }
+      ]
+    },
+    {
+      "id": "currency",
+      "group": "payments",
+      "question": "Miks võib panga võetud summa erineda?",
+      "answer": "Kataloog kuvab hinnangulise tootehinna USA dollarites; see ei ole lõpliku debiteeritava summa garantii. Kassas tehtav valuutavahetus, maksevaluuta ning panga või makseteenuse pakkuja tasud võivad lõppsummat mõjutada. Enne makse kinnitamist võrdle valuutat ja kogusummat ning säilita kviitung.",
+      "sources": [
+        {
+          "title": "Sugargoo payment methods",
+          "url": "https://blog.sugargoo.com/sugargoo-payment-methods/"
+        }
+      ]
+    },
+    {
+      "id": "service-fees",
+      "group": "payments",
+      "question": "Kas tasuta ostuteenus tähendab, et muid kulusid ei ole?",
+      "answer": "Ei. Ametlik Taobao juhend kirjeldab tasuta tavapärast ostuteenust, kuid kaup, Hiina-sisene vedu, rahvusvaheline vedu ja valikulised teenused maksavad endiselt. Lisanduda võivad ka makse- või valuutavahetuskulud. Võrdle kogu kassas kuvatavat kulude jaotust, selle asemel et pidada teenustasu käsitlevat väidet koos tarnega lõpphinna pakkumiseks.",
+      "sources": [
+        {
+          "title": "Buying with a Sugargoo agent",
+          "url": "https://blog.sugargoo.com/understanding-how-to-buy-from-taobao-using-a-sugargoo-agent/"
+        },
+        {
+          "title": "Sugargoo payment methods",
+          "url": "https://blog.sugargoo.com/sugargoo-payment-methods/"
+        }
+      ]
+    },
+    {
+      "id": "coupons",
+      "group": "payments",
+      "question": "Miks kupong minu maksele ei rakendu?",
+      "answer": "Loe oma kontol kupongi tingimusi: tähtsad on aegumine, minimaalne ostusumma, sobiv kuluartikkel, tarneviis, uue kasutaja tingimused ja soodustuste kombineerimise võimalus. Vanemal lehel avaldatud kampaaniasumma ei anna püsivat õigust soodustusele. Kinnita, et allahindlus kajastub lõplikus tasumisele kuuluvas summas.",
+      "sources": [
+        {
+          "title": "Coupon conditions",
+          "url": "https://blog.sugargoo.com/sugargoo-coupon-not-working/"
+        }
+      ]
+    },
+    {
+      "id": "qc-ready",
+      "group": "quality",
+      "question": "Millal saan vaadata enda kaupade laokontrolli fotosid?",
+      "answer": "Laos kogutud tõendusmaterjal muutub kättesaadavaks saabunud kauba töötlemise käigus. Vaata tellimust oma ametlikul kontol ning kontrolli pilte enne rahvusvahelise saatmistaotluse esitamist. Müüja pildid või selle kataloogi fotod ei näita, mis saabus just sinu tellimuse jaoks.",
+      "sources": [
+        {
+          "title": "How ordering with Sugargoo works",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo QC service guide",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        }
+      ]
+    },
+    {
+      "id": "qc-count",
+      "group": "quality",
+      "question": "Mitu tavapärast kvaliteedikontrolli fotot sisaldub teenuses?",
+      "answer": "Ametlik juhend kirjeldab tavaliste ostutellimuste puhul viit põhilist tootefotot. Edasisaadetud kaupade, suletud pakendite ja teiste tellimuseliikide kontrollitingimused võivad erineda. Kontrolli tellimusega kaasnevat teenust; konkreetne lähivõte või mõõtmine võib nõuda eraldi tasulist taotlust.",
+      "sources": [
+        {
+          "title": "Sugargoo QC service guide",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        }
+      ]
+    },
+    {
+      "id": "qc-limits",
+      "group": "quality",
+      "question": "Kas kvaliteedikontrolli fotod tõendavad ehtsust või elektroonika toimimist?",
+      "answer": "Ei. Ametliku kontrolli ulatus ei taga kaubamärgi ehtsuse tõendamist ega tavapärast elektroonika toimimise katsetamist. Fotod aitavad kontrollida nähtavat seisukorda ning vastavust tellitud mudelile, suurusele, värvile ja kogusele. Need ei saa tõendada varjatud vastupidavust, materjalide koostist ega seadme kõiki funktsioone.",
+      "sources": [
+        {
+          "title": "Scope of the quality-check service",
+          "url": "https://blog.sugargoo.com/sugargoo-quality-check-service-the-ultimate-qc-guide-for-overseas-buyers/"
+        }
+      ]
+    },
+    {
+      "id": "sealed",
+      "group": "quality",
+      "question": "Kas Sugargoo avab tehases suletud pakendi?",
+      "answer": "Suletud kaupade tavapärane kontroll keskendub välisküljele, seega ära oota automaatselt pilte sisust. Ametlik juhend lubab pakendi avada ka siis, kui kahtlustatakse tundlikku või keelatud sisu. Kinnita eraldi kontrollinõuded enne sellise toote tellimist, mille suletud pakend on sulle oluline.",
+      "sources": [
+        {
+          "title": "Scope of the quality-check service",
+          "url": "https://blog.sugargoo.com/sugargoo-quality-check-service-the-ultimate-qc-guide-for-overseas-buyers/"
+        }
+      ]
+    },
+    {
+      "id": "extra-photos",
+      "group": "quality",
+      "question": "Kas saan paluda lähivõtet või mõõtmist?",
+      "answer": "Lisafotod ja muud teenused võivad olla saadaval tasu eest. Kirjelda täpselt vajalikku vaatenurka, etiketti või mõõtu ning kinnita teenuse ulatus. Näiteks palve mõõta tasapinnale asetatud rõiva rinnalaiust on kasulikum kui paluda töötajatel kõik uuesti üle kontrollida.",
+      "sources": [
+        {
+          "title": "Photography and packaging services",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        }
+      ]
+    },
+    {
+      "id": "unclear-photo",
+      "group": "quality",
+      "question": "Mida teha, kui kvaliteedikontrolli foto on ebaselge?",
+      "answer": "Saada ametlikule klienditoele tellimuse viide ja täpsusta, milline pilt on ebaselge. Kvaliteedikontrolli juhend kirjeldab teenuses sisalduvate ebaselgete fotode tasuta uuesti tegemist; uus vaatenurk või mõõtmine võib aga kuuluda lisateenuse alla. Selgita, kas vajad kordusfotot või infot, mida varem ei pildistatud.",
+      "sources": [
+        {
+          "title": "Sugargoo QC service guide",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        }
+      ]
+    },
+    {
+      "id": "catalog-photos",
+      "group": "quality",
+      "question": "Kas selle saidi fotod on minu Sugargoo kvaliteedikontrolli fotod?",
+      "answer": "Ei. Need on CNBUYCHA kataloogi tootepildid, mis on mõeldud võrdluseks. Nende päritolu ei ole kinnitatud sinu isikliku tellimuse laokontrollina. Kasuta oma ametlikku Sugargoo kontot tellimuspõhiseks kvaliteedikontrolliks, enne kui otsustad kauba alles jätta, tagastada või välja saata.",
+      "sources": []
+    },
+    {
+      "id": "storage-days",
+      "group": "warehouse",
+      "question": "Kas tasuta laos hoidmine kestab alati 100 päeva?",
+      "answer": "Ära eelda kõigi kaupade puhul sama perioodi. Sugargoo ametlik avaleht ja eraldi hoiustamist käsitlev artikkel avaldavad erinevaid arve ning ostu- ja edasisaatmistellimused võivad erineda. Vaata iga kauba järelejäänud hoiuaega Packing Centeris ja küsi klienditoelt, kui kuupäev on ebaselge.",
+      "sources": [
+        {
+          "title": "Sugargoo official introduction",
+          "url": "https://blog.sugargoo.com/"
+        },
+        {
+          "title": "Warehouse storage guidance",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        }
+      ]
+    },
+    {
+      "id": "expiry",
+      "group": "warehouse",
+      "question": "Mida teha enne kauba hoiutähtaja saabumist?",
+      "answer": "Korralda saatmine või saadaolev tähtajapikendus enne selle kauba juures näidatud tähtaega. Kontrolli, et pikendus on registreeritud lõppkuupäeva tegelikult muutnud. Ametlik juhend hoiatab tähtaja ületanud ja pikenduseta kaupade kõrvaldamise eest; ära käsitle klienditoele saadetud ootel sõnumit kinnitatud pikendusena.",
+      "sources": [
+        {
+          "title": "Warehouse storage guidance",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        }
+      ]
+    },
+    {
+      "id": "consolidation",
+      "group": "warehouse",
+      "question": "Kas saan ühendada mitu tellimust ühte pakki?",
+      "answer": "Sugargoo kirjeldab sobivate laokaupade valimist Packing Centeris ja nende koos saatmiseks esitamist. Enne veotasu maksmist kinnita sisu, aadress, pakkimine ja tarneviis. Ühispakk ei ole alati odavam: mõõtmed, kaal, kaupade kokkusobivus ja veopiirangud võivad muuta eraldi saatmise võrdlemise mõistlikuks.",
+      "sources": [
+        {
+          "title": "Combining multiple orders",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        }
+      ]
+    },
+    {
+      "id": "estimator",
+      "group": "shipping",
+      "question": "Milliseid andmeid vajab saatmiskulude kalkulaator?",
+      "answer": "Sisesta sihtkoht ja piirkond, tootekategooria ning kaal tööriista nõutud ühikutes. Lisa võimaluse korral paki mõõtmed, eriti mahukate kaupade puhul. Vaata pakutud tarneviisi hinnastamisreegleid ja piiranguid; oletatud kaalul põhinev hinnang on planeerimisnumber, mitte lõplik arve.",
+      "sources": [
+        {
+          "title": "Estimating international shipping",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        }
+      ]
+    },
+    {
+      "id": "volumetric",
+      "group": "shipping",
+      "question": "Kuidas mõjutab mahukaal saatmiskulu?",
+      "answer": "Mõni tarneviis arvestab lisaks kaalul mõõdetud massile ka paki suurust. Mõõtmed teisendatakse vastava tarneviisi määratud jagaja abil ning olulised on ka ümardamis- ja arveldusreeglid. Ära rakenda kõigile teenustele sama jagajat ega eelda, et esemete kaalude summa võrdub pakitud saadetise arvestusliku kaaluga.",
+      "sources": [
+        {
+          "title": "Pre-shipment package simulation",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        }
+      ]
+    },
+    {
+      "id": "rehearsal",
+      "group": "shipping",
+      "question": "Milleks kasutatakse saatmiseelset proovipakkimist?",
+      "answer": "Proovipakkimine on enne saatmist osutatav pakkimisteenus, mis annab valitud kaupade ja pakendi kohta kasutuskõlblikuma pakitud kaalu ning mõõtmed. Enne kinnitamist kontrolli selle praegust tasu. See võib vähendada ebakindlust tarneviiside võrdlemisel, kuid ei taga odavamat saatmist ega kindlat kättetoimetamiskuupäeva.",
+      "sources": [
+        {
+          "title": "Pre-shipment package simulation",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        }
+      ]
+    },
+    {
+      "id": "restricted",
+      "group": "shipping",
+      "question": "Kas akusid, vedelikke või muid tundlikke kaupu võib saata iga tarneviisiga?",
+      "answer": "Ei. Tundlikud tooted vajavad sobivat käsitlemist ja lubatud tarneviisi, keelatud kaupu aga ei saa lihtsalt ümber märgistada ega tavalise kaubana saata. Enne ostmist kinnita toote omadused, sihtkoht ja teenuse praegused piirangud; kataloogis nähtav toode ei tõenda saatmiskõlblikkust.",
+      "sources": [
+        {
+          "title": "Sensitive and prohibited items",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "group": "shipping",
+      "question": "Miks võib jälgimisinfo uuenemine peatuda?",
+      "answer": "Vedajatevahelised üleandmised, dokumentide kontroll, tollivormistus ja hilinenud skaneeringud võivad tekitada pause. Tee kindlaks, kas vaatad müüja Hiina-sisest saadetist või oma rahvusvahelist pakki, seejärel kontrolli viimast sündmust täpselt. Lahendamata erandite korral küsi ametlikult klienditoelt; üksik skaneering või selle puudumine ei tõenda iseenesest kättetoimetamist ega kaotsiminekut.",
+      "sources": [
+        {
+          "title": "Tracking issues and updates",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ]
+    },
+    {
+      "id": "insurance",
+      "group": "shipping",
+      "question": "Kas transpordikindlustus katab kõik probleemid?",
+      "answer": "Ei. Kaitse sõltub tarneviisist ja kehtivast poliisist ning sisaldab välistusi. Üksikasjalik ametlik juhend välistab tootekahjustused, seega ära eelda koguriskikaitset. Enne saatmist loe, mida kaetakse, milline on kindlustussumma, milliseid tõendeid nõutakse ja mis on teatamise tähtajad; säilita poliis ning paki andmed.",
+      "sources": [
+        {
+          "title": "Shipping insurance terms and exclusions",
+          "url": "https://blog.sugargoo.com/how-sugargoo-shipping-insurance-protects-your-global-orders/"
+        }
+      ]
+    },
+    {
+      "id": "cancellation",
+      "group": "aftersales",
+      "question": "Kas saan tellimuse pärast maksmist tühistada?",
+      "answer": "Järgmine samm sõltub tellimuse etapist. Tasumata tellimuse saab kontol tühistada; pärast ostmist või müüjapoolset lähetamist võib tagasimakse või müügijärgne teenindus nõuda müüjaga kooskõlastamist. Võta Sugargooga tellimuse kaudu kiiresti ühendust, selle asemel et eeldada tühistamise kohest tagasipööravat mõju igas etapis.",
+      "sources": [
+        {
+          "title": "Canceling an order",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        }
+      ]
+    },
+    {
+      "id": "return-window",
+      "group": "aftersales",
+      "question": "Kui kiiresti peaksin pärast kauba lattu saabumist tagastust taotlema?",
+      "answer": "Tegutse kiiresti. Ametlik juhend kirjeldab sobivate kaupade taotlusi viie päeva jooksul lattu kandmisest, tingimusel et müüja seda toetab ning kaup, pakend ja sildid on terved. See ei ole tingimusteta heakskiidu lubadus. Enne tagastuse või edasise pakkimise lubamist kontrolli tellimuse praegust tagastuskõlblikkust ja tähtaega.",
+      "sources": [
+        {
+          "title": "Returns and refunds",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ]
+    },
+    {
+      "id": "return-cost",
+      "group": "aftersales",
+      "question": "Kes maksab kauba müüjale tagasisaatmise eest?",
+      "answer": "See sõltub põhjusest ja heakskiidetud kokkuleppest. Ostja eelistusest tuleneva tagastuse korral võivad Hiina-sisene tagastusvedu ja muud tagastamatud kulud jääda sinu kanda; müüja eksimusest tingitud juhtumeid võidakse käsitleda teisiti. Enne kinnitamist küsi kavandatavat tagasimaksesummat ja mahaarvamisi. Eritellimusel valmistatud, avatud või muul põhjusel välistatud kaubad ei pruugi tagastuseks sobida.",
+      "sources": [
+        {
+          "title": "Returns and refunds",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ]
+    },
+    {
+      "id": "refund",
+      "group": "aftersales",
+      "question": "Kas tagasimakse Sugargoo kontojäägile tähendab sama mis raha tagasilaekumine panka?",
+      "answer": "Ei. Ametlik tagastusjuhend kirjeldab heakskiidetud tagasimaksete jõudmist Sugargoo kontojäägile. Võimalik väljamakse makseviisile on eraldi samm oma menetlusega. Jälgi heakskiidetud summat, kontojäägi krediteerimist ja makseteenuse pakkuja lõplikku arveldust eraldi, selle asemel et pidada taotlust lõpetatud makseks.",
+      "sources": [
+        {
+          "title": "Returns and refunds",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "sugargoo-spreadsheet-guide",
+      "slug": "sugargoo-spreadsheet-guide",
+      "title": "Sugargoo Spreadsheeti juhend: muuda tootelingid kasulikuks valiknimekirjaks",
+      "description": "Kasuta Sugargoo tabelit täpsete kuulutuste võrdlemiseks, variantide kontrollimiseks ja kogu tellimuse kavandamiseks enne ostmist.",
+      "keyword": "sugargoo tabel",
+      "category": "getting-started",
+      "intro": [
+        "Sugargoo tabel on kasulik siis, kui see aitab koostada lühema ja paremini põhjendatud valiknimekirja. Pikk lehekülg tootepilte ei ütle, kas konkreetne suurus on saadaval, kui palju pakk maksab või kas müüja praegune kuulutus vastab endiselt vanemale soovitusele. Käsitle tabelit uurimise algusena ning seo lõplik ostuotsus täpse kuulutusega.",
+        "See sõltumatu kataloog loeb tooteteabe ja võrdluspildid cnbuychast. Tellimine ja maksmine toimuvad Sugargoos. Alljärgnev meetod seob need kaks etappi, käsitlemata kataloogikirjet isikliku soovituse, laoseisu garantii ega laokontrolli tõendina. See toimib ka siis, kui hoiad valiknimekirja lihtsas märkmerakenduses."
+      ],
+      "sections": [
+        {
+          "id": "define-the-purchase",
+          "title": "Alusta sellest, milleks toodet vajad",
+          "paragraphs": [
+            "Kirjuta enne otsimist üks lause selle kohta, mida vajad. Jope puhul võib see tähendada kerget kapuutsiga kihti, piisavalt ruumi dressipluusi peal kandmiseks ning jõukohast koguhinda koos kohaletoimetamisega. Nii saad kriteeriumid, mis ulatuvad kaugemale esimese foto atraktiivsusest. Erista nõuded eelistustest, et üks meeldiv detail ei varjaks olulise omaduse puudumist.",
+            "Vali ka otsimise lõpetamise reegel. Kolme usutava kuulutuse põhjalik võrdlemine on sageli kasulikum kui kolmekümne peaaegu ühesuguse pildi kogumine. Kui ükski ei anna vajalikke mõõte või valikuid, muuda otsingusõnu. Sobimatu alternatiivi ostmine pelgalt sellepärast, et seda on lihtne leida, ei lahenda algset vajadust."
+          ]
+        },
+        {
+          "id": "search-and-sort",
+          "title": "Piira kataloogi otsingu ja sortimise abil",
+          "paragraphs": [
+            "Alusta tooteliigist ja ühest eristavast sõnast, seejärel vaata sobivat kategooriat. Kui kitsas otsingufraas tulemusi ei anna, eemalda üks omadussõna enne, kui eeldad toote puudumist. Tootenimetustes võidakse kasutada erinevaid sõnastusi ning tühi otsing näitab üksnes selle päringu tulemust. Hoia toimiv otsingufraas valiknimekirja juures, et saaksid seda hiljem korrata.",
+            "Kasuta hinna järgi sortimist esialgsesse eelarvesse sobivate kandidaatide leidmiseks, kuid võrdle müüja kuulutuses tegelikult pakutavaid valikuid. Madal esile tõstetud hind võib käia teise variandi kohta kui see, mida soovid valida. Uudsus ja populaarsus on leidmisvahendid; kumbki ei tõenda sobivust, seisukorda ega müüja usaldusväärsust. Ava paljulubavad tulemused uuesti ning hinda neid küsimusi eraldi."
+          ]
+        },
+        {
+          "id": "preserve-listing-identity",
+          "title": "Hoia algne link ja toote ID koos",
+          "paragraphs": [
+            "Pealkirju saab lühendada, tõlkida ja uuesti kasutada, seega on need nõrgad tunnused. Salvesta iga kandidaadi juurde algne kauplemiskeskkonna URL ja toote ID. Selle saidi tootelehe sisemine number tähistab kataloogikirjet; see ei ole automaatselt müüja toote ID. Kaks sarnaste fotodega kaarti võivad viidata eri müüjatele või erinevatele kuulutustele.",
+            "Ostulingi avamisel veendu enne valikute tegemist, et Sugargoo näitab soovitud toodet. Hoia algne URL võrdluseks alles, kui tõlgitud pealkiri tundub võõras. Kui sihtleht pole saadaval või paistab mitteseotud, peatu ning uuri erinevust. Ära asenda seda visuaalselt sarnase kuulutusega, kordamata kontrolle, mis põhjendasid algset valikut."
+          ]
+        },
+        {
+          "id": "compare-exact-variants",
+          "title": "Võrdle varianti, mille päriselt telliksid",
+          "paragraphs": [
+            "Sugargoo ametlik kuulutuste juhend kirjeldab värvi, suuruse ja koguse valimist pärast kauplemiskeskkonna lingi laadimist. Ehita võrdlus nende täpsete valikute ümber. Kirjuta müüja suurusetähis ja selle mõõdud eraldi üles. Tuttav täht või number aitab valiku üles leida, kuid võrdlus hästi sobiva esemega peaks lähtuma asjakohastest mõõtudest.",
+            "Siin on väljamõeldud võrdlus: mõlemad särgid näivad maksvat 20 dollarit, kuid ainult üks kuulutus annab soovitud värvi rinnamõõdu. Puuduv teave on küsimus, mis tuleb lahendada, mitte põhjus arvamiseks. Küsi enne maksmist selgitust ning salvesta vastus lingi juurde, et see jääks õige kandidaadiga seotuks."
+          ]
+        },
+        {
+          "id": "read-photos-correctly",
+          "title": "Tea, mida pildid võivad tõendada",
+          "paragraphs": [
+            "Kataloogifotod aitavad näha reklaamitud disaini, kaasasolevaid tarvikuid ja nähtavaid detaile. Need ei näita täpselt seda eksemplari, mis sinu tellimusse saabub. Selle saidi võrdluspildid pärinevad cnbuychast ega ole märgistatud kontrollitud Sugargoo lao kvaliteedikontrolli fotodena. Teine foto, üksikasjalikum vaatenurk või suur piltide arv ei muuda seda eristust.",
+            "Koosta lühike loend detailidest, mida tahad jätkamisel kontrollida: kindel tasku, mõõt, tarvikute arv või nähtav kinnitus. Kui sinu enda toode jõuab lattu, võrdle tellimuse fotosid selle loendiga. Nii muutub fotode ülevaatus sihipäraseks ning sa ei otsusta sobivuse üle pelgalt tuttava üldkuju põhjal."
+          ]
+        },
+        {
+          "id": "budget-the-whole-order",
+          "title": "Jäta raha ka ostujärgseks etapiks",
+          "paragraphs": [
+            "Sugargoo kirjeldab kaupa ja Hiina-sisest tarnet esimese makseetapina, rahvusvaheline saatmine korraldatakse hiljem. Hoia need etapid eelarves eraldi. Kataloogihind ei ole kohaletoimetatud kauba hind ning avastuslehel kuvatav valuuta ei asenda kassas näidatavat summat. Lisa kuupäevaga veokulu hinnang enne tellimust, mille mõistlikkus sõltub soodsast tarnest.",
+            "Väljamõeldud 100-dollarise kogueelarve puhul jätab 95 dollari kulutamine kaupadele enne transpordi arvestamist ülejäänud sammudeks peaaegu olematu varu. Arvuta hoopis tagurpidi kogusummast, mida saad kulutada. Kui pakitud mõõtmed on teadmata, märgi tarnehinnang ebakindlaks ning võrdle ettevaatlikumat stsenaariumi. Ahvatlev toode võib kogukulu arvestades siiski osutuda valeks ostuks."
+          ]
+        },
+        {
+          "id": "maintain-a-decision-record",
+          "title": "Hoia valiknimekiri kasulik ka järgmisel külastusel",
+          "paragraphs": [
+            "Anna igale kandidaadile lihtne staatus: uurimisel, tellimiseks valmis, tellitud või kõrvale jäetud. Lisa üks põhjendus ja kuupäev. Nii ei kaalu sa kõrvale jäetud valikut uuesti algset probleemi unustades ning eristad vastuseta küsimust kinnitatud veast. Hoia isiklikke konto- ja makseandmeid mujal; uurimisnimekiri vajab ainult otsuse jaoks olulist teavet.",
+            "Enne maksmist vaata uuesti üle laoseis, valitud variant, hind ja vastuseta müüjaküsimused. Pärast tellimist lisa samale kirjele Sugargoo tellimuse viide. Nüüd seob nimekiri toote leidmise laokontrolli ja pakiplaneerimisega. See on valmis siis, kui suudad selgitada, miks toote valisid, mida on veel vaja kontrollida ning kui palju raha jääb kulutamiseks."
+          ]
+        }
+      ],
+      "checklist": [
+        "Määra kasutusotstarve, vajalikud mõõdud ja kogueelarve.",
+        "Salvesta algne kauplemiskeskkonna link ja toote ID.",
+        "Võrdle täpset värvi, suurust, kogust ja praegust hinda.",
+        "Erista kataloogi võrdluspildid enda laofotodest.",
+        "Hinda rahvusvahelist veokulu enne kaupade eest maksmist.",
+        "Pane vastuseta küsimused kirja ning kontrolli neid enne maksmist uuesti."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: How to find products from Taobao and 1688",
+          "url": "https://blog.sugargoo.com/how-to-find-products-from-taobao-and-1688-using-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: How to read Taobao product listings",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-listings/"
+        },
+        {
+          "title": "Sugargoo: Freight calculator",
+          "url": "https://blog.sugargoo.com/sugargoo-freight-calculator/"
+        }
+      ],
+      "related": [
+        "how-to-buy-on-sugargoo",
+        "sugargoo-qc-photos"
+      ]
+    },
+    {
+      "id": "how-to-buy-on-sugargoo",
+      "slug": "how-to-buy-on-sugargoo",
+      "title": "Kuidas Sugargoost osta: esimene tellimus kuulutusest pakini",
+      "description": "Järgi kaht makseetappi, kontrolli tootevalikuid ning vaata oma laotellimus üle enne rahvusvahelise tarne korraldamist.",
+      "keyword": "kuidas sugargoost osta",
+      "category": "getting-started",
+      "intro": [
+        "Sugargoo kaudu ostmine hõlmab mitut otsust, mitte ühte kassatoimingut. Valid müüja toote, korraldad ostu, vaatad üle lattu jõudnud kauba ning korraldad seejärel rahvusvahelise kohaletoimetamise. Nende etappide mõistmine aitab vältida kaupade eest maksmist ilma veoeelarveta või oletust, et müüja lähetusteade tähendab paki juba sinu koju teel olemist.",
+        "See juhend järgib Sugargoo avaldatud tellimisprotsessi ning lisab praktilise kirjapanekumeetodi esimeseks ostuks. Nuppude nimetused võivad platvormi uuendamisel muutuda. Kasuta kontol nähtavat ajakohast teavet teenuste, tasude ja tellimuse staatuse kohta ning lahenda vastuolu enne järgmisesse etappi liikumist."
+      ],
+      "sections": [
+        {
+          "id": "prepare-before-ordering",
+          "title": "Valmista ette sihtkoht, eelarve ja tooteandmed",
+          "paragraphs": [
+            "Alusta tarneriigist, realistlikust kululaest ning täpsest tootest, mida tahad osta. Vaata veohinnanguid enne tellimist, eriti mahukate või erikäitlemist vajavate kaupade puhul. Müüja avaldatud kuulutus ei tõenda, et toodet saab vahendaja kaudu osta või soovitud tarneviisiga transportida.",
+            "Hoia algne toote URL, valitud variant ning müüja võimalikud täpsustused ühes kohas. Loo konto Sugargoo ametlikul saidil ja kontrolli aadressiandmeid hoolikalt. Esimest tellimust on lihtsam hallata, kui suudad iga toote tuvastada ning selle järgmisi samme mõista ilma paljudele brauserikaartidele toetumata."
+          ]
+        },
+        {
+          "id": "load-and-verify",
+          "title": "Ava toode ja kontrolli allikat",
+          "paragraphs": [
+            "Sugargoo ametlik ostujuhend kirjeldab kauplemiskeskkonna tootelingi laadimist, saadud tootelehe kontrollimist ja soovitud valikute tegemist. Kui saabud sellest kataloogist, võrdle sihtlehte algse kuulutusega. Kinnita toode, müüjaviide ja reklaamitud sisu, selle asemel et pidada lehe edukat laadimist lingi õigsuse tõendiks.",
+            "Puudulik või ebaõnnestunud import vajab tähelepanu enne maksmist. Säilita algne URL ning küsi Sugargoolt, kuidas just selle kuulutusega jätkata. Kui käsitsi tellimine on võimalik, nõuab see endiselt täpseid tooteandmeid ja lubatud kaupa. Ära kasuta piirangu vältimiseks teistsugust kirjeldust ega teist linki."
+          ]
+        },
+        {
+          "id": "choose-the-variant",
+          "title": "Muuda tellimisjuhised üheselt mõistetavaks",
+          "paragraphs": [
+            "Kontrolli suurust, värvi, mudelit, kogust ja pakendi sisu. Rõivaste puhul võrdle kuulutuse mõõte sobiva esemega, mis sul juba olemas on. Mitmes komplektis müüdava tarviku puhul kinnita, kas hind käib ühe ühiku, paari või komplekti kohta. Ahvatlev põhipilt võib sisaldada valikuid, mis kõik valitud ostuga kaasa ei tule.",
+            "Väljamõeldud kasulik juhis oleks: vali sinine variant, suurus M, kogus üks ning kinnita enne ostu märgitud rinnamõõt. Ebamäärane juhis nagu vali parim suurus jätab olulise otsuse lahendamata. Salvesta kinnitatud valikud koos tellimuse viitega, et saaksid hiljem laotõendeid võrrelda sellega, mida tegelikult küsisid."
+          ]
+        },
+        {
+          "id": "first-payment",
+          "title": "Vaata esimest makset eraldi tehinguna",
+          "paragraphs": [
+            "Esimene etapp katab toote ja kohaldatava Hiina-sisese tarne ning tellimisprotsessis näidatavad valitud teenused ja maksetasud. Rahvusvaheline tarne korraldatakse hiljem. Loe enne kinnitamist tegelikku tellimuse kogusummat ja valuutat. Makseviisid, teisendatud summad ja teenusevalikud võivad sõltuda kontost ning sihtkohast; kasuta praegust kassavaadet, mitte vana kuvatõmmist.",
+            "Pane kirja makstud summa, makseviide ja tootetellimuse number. Jäta varu hilisema paki jaoks, selle asemel et pidada järelejäänud kontojääki vabaks osturahaks. Kui makse tundub lõpetamata, kontrolli enne uut katset staatust, et hilinenud kinnitus ei põhjustaks tahtmatut teist tellimust."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "Oota vastuvõttu ja kontrolli seejärel oma tellimust",
+          "paragraphs": [
+            "Sugargoo protsessis eelnevad müüja tarne ja lao vastuvõtt rahvusvahelisele saatmisele. Vaata tellimuse laoteave ja fotod üle, kui need muutuvad kättesaadavaks. Võrdle saabunud toodet salvestatud valikutega, pöörates tähelepanu sildile, kogusele, nähtavale seisukorrale ja kaasasolevatele tarvikutele. Müüja algne reklaamfoto ei tõenda, et sinu konkreetne eksemplar saabus õigesti.",
+            "Kui oluline detail jääb ebaselgeks, küsi vajalikku täpsustust enne kauba saatmiseks esitamist. Näiteks loetav suurusesilt võib tõendada saabunud märgistust, kuid sobivuse hindamiseks võib vaja minna mõõtu. Kirjelda erinevusi täpselt ja kiiresti. Tagastuse või vahetuse võimalus sõltub müüjast, tellimusest ning kohaldatavast tähtajast."
+          ]
+        },
+        {
+          "id": "plan-the-parcel",
+          "title": "Vali kaubad, pakend ja tarneviis koos",
+          "paragraphs": [
+            "Ametlikus töövoos valitakse laokaubad ja esitatakse pakk Packing Centeri kaudu. Vaata üle, millised tooted on valmis ning millistel on veel lahendamata küsimusi. Tellimuste ühendamine võib olla mugav, kuid ära lisa sobimatut toodet üksnes suurema paki nimel. Arvesta saadaolevate tarneviisidega sobivust ja iga kauba kaitsevajadust.",
+            "Kontrolli sihtaadressi uuesti, võrdle tarneviiside tingimusi ning vaata üle praegune veosumma. Proovipakkimine võib aidata, kui pakitud suurus on ebaselge, kuid see on lisavalik, mitte iga tellimuse nõue. Hilisemaid oste oodates on olulised ka hoiutähtajad; kontrolli iga kauba järelejäänud aega, mitte ära eelda, et üks ühine periood katab kõike."
+          ]
+        },
+        {
+          "id": "follow-through",
+          "title": "Säilita pakikirje kuni tarne kontrollimiseni",
+          "paragraphs": [
+            "Pärast rahvusvahelise saatmise korraldamist hoia pakinumber eraldi varasematest tootetellimuste numbritest. Tellimuskirjed selgitavad, mida ostsid; pakikirje selgitab, mis pakiti ja saadeti koos. Kasuta selle pakiga seotud jälgimisteavet ning loe uuendusi järjest. Skaneeringute vaheline paus ei tõenda iseenesest, mis pakiga juhtus.",
+            "Kui saadetis saabub, võrdle sisu salvestatud kaubanimekirjaga ja kontrolli pakendit enne äraviskamist. Kui midagi puudub või on kahjustatud, säilita kasulikud fotod ning pöördu asjakohase toe poole pakiviite ja selge kirjeldusega. Nende kontrollide lõpetamine seob algselt valitud toote tegelikult kätte saadud kaubaga."
+          ]
+        }
+      ],
+      "checklist": [
+        "Hinda transporti oma sihtkohta enne ostmist.",
+        "Kontrolli algset kuulutust ja kõiki valitud variante.",
+        "Salvesta esimese makse ja tootetellimuse viited.",
+        "Vaata enda laofotod üle enne paki esitamist.",
+        "Kontrolli aadressi, pakendivalikuid ja tarneviisi tingimusi.",
+        "Hoia pakikirjeid ja tarne tõendeid kuni tellimuse lahendamiseni alles."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Ordering from China step by step",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: DIY order guide",
+          "url": "https://blog.sugargoo.com/how-to-use-diy-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: International order tracking",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shipping-calculator"
+      ]
+    },
+    {
+      "id": "sugargoo-qc-photos",
+      "slug": "sugargoo-qc-photos",
+      "title": "Sugargoo kvaliteedikontrolli fotod: mida enne saatmist kontrollida",
+      "description": "Vaata laofotosid süsteemselt, küsi vajalikke mõõte ning mõista, mida visuaalne kvaliteedikontroll ei saa tõendada.",
+      "keyword": "sugargoo kvaliteedikontrolli fotod",
+      "category": "quality",
+      "intro": [
+        "Laofotod on kõige kasulikumad siis, kui sul on konkreetne otsus teha: kas saabunud toode vastab tellimusele, kas oluline detail on ebaselge või kas nähtav kahjustus vajab tähelepanu? Kõigi piltide vaatamine ilma kontrollnimekirjata võib ikkagi jätta tähtsaima küsimuse vastuseta. Selge ülevaatusmeetod muudab fotode kasutamise lihtsamaks.",
+        "Sugargoo kirjeldab tavaliselt viit standardset kvaliteedikontrolli fotot ning kontrolli ulatus sõltub tootest ja tellimuse liigist. Fotode arv ei taga, mida saab kinnitada. Selle saidi cnbuycha võrdluspildid on kataloogimaterjal, mitte sinu isikliku Sugargoo tellimuse kontrollitud laokontroll; vaata enne rahvusvahelise saatmise korraldamist üle enda laokirje."
+      ],
+      "sections": [
+        {
+          "id": "match-the-order",
+          "title": "Tee kindlaks, millise toote juurde fotod kuuluvad",
+          "paragraphs": [
+            "Ava õige tellimuskirje ning võrdle seda algse URL-i ja kassas salvestatud valikutega. Kontrolli, et fotod käiksid soovitud värvi, suuruse, mudeli ja koguse kohta. Sarnased tooted võivad kergesti segi minna, kui mitu ostu saabuvad korraga. Vaata korraga üle üks tellimus ning pane tulemus kirja enne järgmise juurde liikumist.",
+            "Erista kinnitatud mittevastavus ebaselgest vaatest. Loetav silt, mis näitab valituga võrreldes vale suurust, on teistsugune tõend kui foto, millel silti üldse ei näe. Esimene nõuab erinevuse selgitust, teine paremat vaadet. Selle vahe väljatoomine aitab klienditoel mõista, mida vajad."
+          ]
+        },
+        {
+          "id": "inspect-in-a-sequence",
+          "title": "Liigu tervikust oluliste detailideni",
+          "paragraphs": [
+            "Alusta tervest esemest ning uuri seejärel omadusi, mis mõjutasid ostu. Koti puhul võivad need olla rihm, kinnitus, vooder ja reklaamitud tarvikud. Rõiva puhul võivad need olla esi- ja tagakülg, õmblused ning suurusesilt. Kasuta müüja kirjeldust võrdlusalusena, pidades meeles, et selle fotod võivad kasutada teistsugust valgustust ja esitlust.",
+            "Suurenda pilti, kui eraldusvõime seda võimaldab, kuid ära käsitle udust ala kinnitatud veana. Vaata, kas teine nurk selgitab nähtut. Volditud serv, peegeldus või tihendatud pilt võib muuta väikese detaili mitmetähenduslikuks. Kui ebakindlus mõjutab ostuotsust, küsi sellele detailile keskenduvat tõendit, mitte ära suurenda sama ebaselget pilti korduvalt."
+          ]
+        },
+        {
+          "id": "request-useful-measurements",
+          "title": "Küsi mõõtu, mis vastab sinu küsimusele",
+          "paragraphs": [
+            "Mõõtmistaotlus peaks määrama toote, mõõdetava suuruse ja mõõtmisviisi. Särgi puhul võid vajada näiteks rinnalaiust rõiva tasasel pinnal lamades, mitte täpsustamata suurusekontrolli. Küsi enne töö tellimist, milline mõõtmisteenus on saadaval ning kui palju see maksab. Ära eelda, et igat tüüpi kontroll sisaldub standardfotodes.",
+            "Väljamõeldud sobivuskontrollis on sinu mugava särgi rinnalaius 54 sentimeetrit, kuid saabunud rõiva mõõt paistab olevat 50. Erinevus annab konkreetse asja, mida soovitud istuvuse suhtes hinnata. See ei kehtesta universaalset suuruste teisendust. Kasuta mõlema eseme jaoks sama mõõtmismeetodit ning arvesta kanga venivuse ja kavandatud lõike mõju võrdlusele."
+          ]
+        },
+        {
+          "id": "recognize-the-limits",
+          "title": "Hoia visuaalne ülevaatus katsetamisest eraldi",
+          "paragraphs": [
+            "Sugargoo avaldatud kvaliteedikontrolli selgitus eristab visuaalset kontrolli ehtsuse tõendamisest, sisemise kvaliteedi testimisest ja elektroonika tavalisest funktsioonitestist. Puhas välispind ei tõenda aku võimekust, materjali koostist, vastupidavust ega ohutust. Suletud tooteid võidakse kontrollida väljast pakendit avamata, mistõttu sisefoto puudumine võib tuleneda kontrolli piiridest.",
+            "Kui ost sõltub omadusest, mida ei saa visuaalselt kindlaks teha, tuvasta see lünk enne saatmist. Küsi, kas sobiv teenus või müüja dokument on olemas ning mida see tegelikult hõlmab. Kui vastus jääb ebakindlaks, otsusta, kas see ebakindlus on vastuvõetav. Fotode arvu suurendamine ei lahenda küsimust, mis vajab teist liiki tõendit."
+          ]
+        },
+        {
+          "id": "write-a-clear-request",
+          "title": "Muuda mure sõnumiks, mille põhjal saab tegutseda",
+          "paragraphs": [
+            "Lisa tellimuse viide, konkreetne mure, tõend ning tegevus, mille hindamist soovid. Väljamõeldud sõnum võiks öelda, et valitud variant oli must, nähtav silt paistab osutavat sinisele ning soovid enne saatmist kinnitust. Keskendu taotluses erinevusele, mitte väidetele müüja kavatsuste kohta.",
+            "Nähtava kahjustuse korral märgi selle asukoht ning küsi selget lähivõtet, kui olemasolev foto ei piisa. Säilita nii algne pilt kui ka märkustega koopia, et kontekst jääks alles. Küsi kiiresti selgitust, kuni toode on veel laos, ning kontrolli tellimuse kehtivaid tagastus- või vahetustingimusi, mitte ära eelda, et mure tagab automaatselt tagasimakse."
+          ]
+        },
+        {
+          "id": "decide-with-evidence",
+          "title": "Kasuta kolme tulemust: valmis, täpsustada või lahendada",
+          "paragraphs": [
+            "Märgi toode valmis alles siis, kui olulised kontrollid on täidetud. Kasuta märget täpsustada, kui vajad paremat fotot, mõõtu või selgitust. Kasuta märget lahendada, kui olemasolev tõend näitab mittevastavust või kahjustust, mille käsitlemist soovid. Need sildid hoiavad ebakindluse nähtavana ning vähendavad ohtu lisada lahendamata tellimus kogemata teiste kaupadega samasse pakki.",
+            "Iga väike välimusega seotud mure ei ole sama oluline. Otsusta kasutusotstarbe, müüja kirjelduse ning enda taluvuse järgi täheldatud probleemi suhtes. Väldi otsustamist pelgalt juba uurimisele kulunud aja surve tõttu. Selgelt dokumenteeritud mure on kasulikum kui kiirustades antud nõusolek, mida hiljem pärast rahvusvahelist lähetamist kahetsed."
+          ]
+        },
+        {
+          "id": "preserve-the-record",
+          "title": "Salvesta ülevaatus enne, kui pakkimine muudab tõendeid",
+          "paragraphs": [
+            "Hoia tellimuse viide, asjakohased fotod, mõõdud, toe vastused ja otsus koos. Kui palud hiljem pakendi eemaldamist või muud pakkimisteenust, kontrolli, kas see muudab võrdluseks või võimalikuks tagastuseks alles jäävat materjali. Lõpeta toote ülevaatus enne raskesti tagasipööratavate muudatuste kinnitamist ning küsi selgitusi, kui tagajärjed on ebaselged.",
+            "Korda ülevaatust iga toote puhul, ka siis, kui mitu pärinevad samalt müüjalt. Varasem rahuldav ost on kasulik taust, kuid ei kinnita järgmist eksemplari. Kui pakk saabub, võrdle saadud sisu salvestatud laokirjega. See aitab eristada tellimuse mittevastavust probleemist, mis avastati pärast pakkimist või transporti."
+          ]
+        }
+      ],
+      "checklist": [
+        "Seo fotod täpse tellimuse ja valitud variandiga.",
+        "Kontrolli tervikeset, silti, kogust ja olulisi tarvikuid.",
+        "Küsi täpset mõõtu või vaatenurka, kui see mõjutab otsust.",
+        "Ära käsitle visuaalset kontrolli ehtsuse tõendamise või toimivustestina.",
+        "Lahenda olulised mured enne kauba saatmiseks esitamist.",
+        "Salvesta tõendid ja toe vastused koos tellimuse viitega."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC inspection scope and photo comparison",
+          "url": "https://blog.sugargoo.com/sugargoo-superbuy-mulebuy-kakobuy-check-qc-photos/"
+        },
+        {
+          "title": "Sugargoo: Quality checks, photos and measurements",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: Taobao proxy quality checks",
+          "url": "https://blog.sugargoo.com/taobao-proxy-quality-check-qc-photos/"
+        }
+      ],
+      "related": [
+        "sugargoo-returns-refunds",
+        "sugargoo-rehearsal-shipping"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-calculator",
+      "slug": "sugargoo-shipping-calculator",
+      "title": "Sugargoo veokalkulaator: koosta realistlik pakieelarve",
+      "description": "Hinda saatmist õige sihtkoha, tootekategooria, kaalu ja mõõtmetega ning võrdle seejärel tarneviiside kogukulusid.",
+      "keyword": "sugargoo veokalkulaator",
+      "category": "shipping",
+      "intro": [
+        "Veokulu hinnang muutub kasulikuks siis, kui tead, millest see koosneb. Kaks inimest võivad sisestada sama esemekaalu ja saada erineva tulemuse, sest sihtkohad, tootekategooriad, paki mõõtmed või tarneviisid erinevad. Kellegi teise veosumma kopeerimine annab seetõttu sinu tellimusele nõrga eelarvealuse.",
+        "Sugargoo ametlik kalkulaatorijuhend kasutab saadaolevate tarneviiside võrdlemiseks sihtkohta, kaubakategooriat, kaalu ja mõõte. Käsitle tulemust kuupäevaga stsenaariumina ning uuenda seda, kui saad pakitud saadetise kohta rohkem teada. Juhend näitab, kuidas selliseid stsenaariume koostada ja ebakindlus tuvastada enne, kui see kassas probleemiks muutub."
+      ],
+      "sections": [
+        {
+          "id": "collect-the-inputs",
+          "title": "Kogu sisendid enne hindade võrdlemist",
+          "paragraphs": [
+            "Alusta tegelikust sihtriigist ja piirkonnast ning vali täpne tootekategooria. Lisa hinnanguline kaal ja võimaluse korral pakitud pikkus, laius ning kõrgus nõutud ühikutes. Loe väljade silte, mitte ära eelda, et iga tööriist kasutab kilogramme või sama mõõtühikut. Valesti paigutatud komakoht või ühik võib anda usutava tulemuse, mis tegelikult kirjeldab teistsugust pakki.",
+            "Erista märkmetes mõõdetud teave oletustest. Võid teada sihtkohta täpselt, kuid eseme kaalu ainult hinnata. Märgi need erinevused selgelt. Kui ühtegi tarneviisi ei ilmu, vaata üle sisestatud andmed ja praegused veotingimused. Ära muuda kategooriat ebatäpseks üksnes selleks, et mõni valik tulemuste hulka tekiks."
+          ]
+        },
+        {
+          "id": "account-for-packaging",
+          "title": "Hinda pakki, mitte ainult kaupa",
+          "paragraphs": [
+            "Saadetis sisaldab toodete ümber alles jäävat pakendit ning ühise paki kaitsmiseks kasutatud materjale. Kuulutusest võetud esemekaal ei pruugi kirjeldada lõplikku pakki. Arvesta jaepakendeid, õrnu pindu ning esemete ühist kuju. Ebakorrapäraste esemete kogum võib vajada rohkem ruumi, kui nende üksikmõõdud vihjavad.",
+            "Tee pakkimise eeldused nähtavaks. Väljamõeldud hinnang võib eeldada ühe kauba jaekarbi säilitamist õrna detaili kaitseks, samal ajal kui teiselt eemaldatakse tarbetu välisümbris. Eesmärk on kirjeldada realistlikku pakkeplaani. Ära eelda väikseima võimaliku kasti sobivust enne, kui ladu on kinnitanud, kuidas kaupa turvaliselt pakkida saab."
+          ]
+        },
+        {
+          "id": "understand-chargeable-weight",
+          "title": "Erista kaalutud massi mahupõhisest kaalust",
+          "paragraphs": [
+            "Sugargoo juhend selgitab, et osa tarneviise arvestab mahukaalu, mis seostab paki mõõtmed konkreetse veoviisi jagajaga. Arveldusreegel ja ümardamine võivad teenuseti erineda. Loe valitud tarneviisi praegust selgitust, selle asemel et kasutada kõigi puhul üht valemit. Mõõtude tühjaks jätmine võib varjata kulutegurit, kui kaubad on kerged, kuid võtavad palju ruumi.",
+            "Ainult näitena on 40 × 30 × 25 sentimeetri suuruse kasti ruumala 30 000 kuupsentimeetrit. Kui väljamõeldud tarneviis jagab selle väärtuse 6000-ga, saadakse mahukaaluks 5 kilogrammi. Kaalutud 3 kilogrammi puhul kasutaks kahest suurema valimise reegel enne võimalikku ümardamist väärtust 5. See on näide, mitte Sugargoo tarneviisi hinnapakkumine."
+          ]
+        },
+        {
+          "id": "run-multiple-scenarios",
+          "title": "Katseta, mis juhtub eelduse muutumisel",
+          "paragraphs": [
+            "Loo tõenäoline ja ettevaatlikum stsenaarium sama sihtkoha ja õige kaubakategooriaga. Muuda ainult ebakindlaid sisendeid, näiteks pakitud kõrgust või pakendi kaalu. Nii näed, kas väike erinevus viiks paki teise hinnavahemikku või välistaks mõne tarneviisi. Hoia iga tulemuse juures arvutuskuupäeva, sest teenused ja hinnad võivad muutuda.",
+            "Mõtle väljamõeldud mahukale rõivale, mille pakitud kõrgus võib olla 20 või 30 sentimeetrit. Mõlema variandi arvutamine teeb tundmatu mõõdu tähtsuse nähtavaks. Kui hinnavahe määraks, kas ostad toote, lahenda pakkimisküsimus enne siduva otsuse tegemist. Kui erinevus on eelarve piires väike, saad otsustada selgema arusaamaga allesjäänud ebakindlusest."
+          ]
+        },
+        {
+          "id": "compare-whole-routes",
+          "title": "Võrdle tingimusi koos hinnasummaga",
+          "paragraphs": [
+            "Pane iga sobiva tarneviisi kohta kirja hinnang, asjakohased suurus- ja kaalupiirid, märgitud transiidivahemik ning kaubale olulised tingimused. Kasuta eri valikute puhul samu pakiandmeid. Madalam number ei ole sisukas, kui veoviis ei saa kirjeldatud pakki vedada või tähtis lisatasu arvestatakse eraldi. Loe praegusi üksikasju enne odavaima tulemuse valimist.",
+            "Käsitle transiidihinnangut planeerimisinfona, mitte lubadusena, et iga pakk saabub kindlal kuupäeval. Kui ajastus on tähtis, arvesta ka vedaja transiidile eelnevaid etappe, sealhulgas müüja lähetamist ja lao töötlemist. Väldi eelarvet, mis toimib ainult siis, kui iga etapp toimub lühima reklaamitud aja jooksul."
+          ]
+        },
+        {
+          "id": "build-the-total-budget",
+          "title": "Aseta saatmine kogu ostueelarve sisse",
+          "paragraphs": [
+            "Hoia kaup, Hiina-sisene tarne, rahvusvaheline transport, valitud teenused ja maksetega seotud tasud eraldi ridadel. See väldib veohinnangu pidamist kogu tellimuse summaks. Kui sihtkohatasu või maksukohustus on asjakohane, kontrolli seda kehtivate ametlike juhiste ja tarneviisi tingimuste alusel, mitte ära eelda, et üks nimetus tähendab kõige sisaldumist hinnas.",
+            "Kasulik kulutamisotsus võrdleb terviklikku usutavat kulu eelarvega. Väljamõeldud näites on 25-dollarine toode koos 30-dollarise transpordivaruga teistsugune ost kui 25-dollarine toode juba kohaliku tarnega. Võid selle siiski valida, kuid võrdlus peaks kajastama tegelikku eesmärki ja lahendamata kulusid, mitte ainult ahvatlevat kataloogihinda."
+          ]
+        },
+        {
+          "id": "refresh-before-paying",
+          "title": "Arvuta uuesti, kui laol on parem teave",
+          "paragraphs": [
+            "Asenda oletused lao mõõtudega niipea, kui need on kättesaadavad. Kui mõõtmed või pakkimisvalikud jäävad otsustavaks, hinda, kas proovipakkimine annaks oma teenustasu väärtuses infot. Kontrolli tarneviiside loendit ja praeguseid tingimusi enne paki eest maksmist. Toote uurimise ajal salvestatud hinnang on planeerimiskirje, mitte veohinna broneering.",
+            "Säilita nii varasem hinnang kui ka lõplik summa koos lühikese selgitusega tuvastatavate muutuste kohta. Võib-olla lisasid toote, jätsid rohkem pakendit alles või valisid teise tarneviisi. Võrdlus parandab järgmist eelarvet, väitmata, et ühe paki tulemus ennustab kõiki tulevasi saadetisi. Eesmärk on parem sisend ja selgemad otsused, mitte väidetavalt universaalne kilohind."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kasuta tegelikku sihtkohta ja täpset tootekategooriat.",
+        "Kontrolli ühikuid ning erista oletused mõõtmistest.",
+        "Kaasa realistlik pakendikaal ja mõõtmed.",
+        "Loe iga tarneviisi hinnastamisreeglit, piire ja tingimusi.",
+        "Võrdle tõenäolist ja ettevaatlikumat stsenaariumi kogu eelarve raames.",
+        "Uuenda hinnangut enne rahvusvahelise tarne eest maksmist."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Estimate international shipping costs",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Shipping calculator input guidance",
+          "url": "https://blog.sugargoo.com/sugargoo-superbuy-mulebuy-kakobuy-shipping-calculator/"
+        },
+        {
+          "title": "Sugargoo: Pre-shipment package simulation",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-fees-payment"
+      ]
+    },
+    {
+      "id": "sugargoo-rehearsal-shipping",
+      "slug": "sugargoo-rehearsal-shipping",
+      "title": "Sugargoo proovipakkimine: millal täpsemad mõõdud aitavad",
+      "description": "Otsusta, kas proovipakkimisest on kasu, koosta selged pakkimisjuhised ja kasuta tulemust sobivate tarneviiside võrdlemiseks.",
+      "keyword": "sugargoo proovipakkimine",
+      "category": "shipping",
+      "intro": [
+        "Proovipakkimine on kõige kasulikum siis, kui pakitud saadetise ebakindlus mõjutab veel tegemata otsust. Võid valida tarneviiside vahel, kaaluda mahuka pakendi allesjätmist või kontrollida, kas kavandatud kombinatsioon mahub teenuse piiridesse. Täpsemad mõõdud aitavad neile küsimustele vastata, kuid ei taga väiksemat veokulu.",
+        "Sugargoo kirjeldab proovipakkimist saatmiseelse pakisimulatsioonina, mis annab enne saatmist täpsemat kaalu- ja mahuteavet. Käsitle seda mõõtmise ja pakkimise otsusena ning kontrolli kontol selle praeguseid teenusetingimusi ja hinda. Praktiline väärtus tuleb teadmisest, milleks kavatsed tulemust kasutada."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-decision",
+          "title": "Määra ebakindlus, mille proovipakkimine peab lahendama",
+          "paragraphs": [
+            "Kirjuta esmalt otsus üles. Kasulik küsimus on, kas pakitud kõrgus muudab saadaolevaid tarneviise või kas kahe jaekarbi säilitamine teeb paki eelarve jaoks liiga mahukaks. Ebamäärast lootust, et proovipakkimine muudab saatmise odavamaks, on keerulisem hinnata. Teenus võib näidata nii ebasoodsamat kui ka soodsamat tulemust.",
+            "Mõtle, kui palju vastus loeb. Kui esemed on juba hästi mõõdetud ning saadaolevad tarneviisid sobivad mõistlike pakkimisvariantide korral, võib lisamõõtmise väärtus olla piiratud. Kui väike suurusevahe võiks valikut muuta, võib usaldusväärsem teave olla vajalik. Võrdle seda väärtust praeguse teenusehinna ja ajaga, mis jääb soovitud saatmiseni."
+          ]
+        },
+        {
+          "id": "finish-product-checks",
+          "title": "Lahenda toodetega seotud küsimused enne lõpliku pakendi kavandamist",
+          "paragraphs": [
+            "Vaata valitud kaupade laofotod, kogused ja variandid üle enne pakkimissimulatsiooni tellimist. Lahendamata suuruse- või kahjustusküsimus võib muuta, millised esemed peaksid kaasa minema. Hoia selgitust ootavad kaubad väidetavalt lõplikust pakkeplaanist väljas, kuni tead nende edasist käiku. Nii ei tee sa pakiotsust sisu alusel, mis võib hiljem muutuda.",
+            "Kontrolli ka järelejäänud hoiuaega ja ootel müüjavastuseid. Ära eelda, et proovipakkimistaotlus peatab teise tähtaja. Kui kaalud tagastust, küsi enne lubamist, kuidas pakendi muutmine või eemaldamine seda võimalust mõjutada võib. Kasuliku mõõdu hinnaks ei tohiks olla vajalike tõendite või valikuvõimaluste kaotamine."
+          ]
+        },
+        {
+          "id": "choose-the-contents",
+          "title": "Vali konkreetne kaubarühm ja sihtkoht",
+          "paragraphs": [
+            "Sugargoo avaldatud juhistes toimub proovipakkimine Packing Centeris pärast kaupade ja sihtkoha valimist. Kasuta täpselt seda rühma, mida plaanid koos saata. Kolme eseme tulemus ei kehti automaatselt pärast neljanda saabumist, isegi kui see tundub väike. Uus ese võib muuta nii paki kuju kui ka asjakohaseid tarneviisi tingimusi.",
+            "Hoia lihtsat sisunimekirja koguste ja tellimuseviidetega. Märgi üles habras, jäik või ebatavalise kujuga ese, mis võib määrata kasti mõõtmed. Kui hindad eraldi pakke, käsitle iga kavandatud rühma omaette stsenaariumina ja võrdle kõigi pakkide kogukulu. Jagamine või ühendamine peaks olema kaalutletud otsus, mitte automaatne reegel."
+          ]
+        },
+        {
+          "id": "specify-packing-needs",
+          "title": "Anna selged kaitse- ja pakkimisjuhised",
+          "paragraphs": [
+            "Kirjelda, mis peab jääma kaitstuks ja millise pakendi oled valmis eemaldama teenuse saadaolevate valikute piires. Erista ühekordne välisümbris jaekarbist, mida tahad säilitada või mis kaitseb toodet. Kui sa ei tea, kuidas eemaldamine kaitset mõjutab, küsi enne selle valimist. Väiksem maht on vähe väärt, kui saadud pakend kaupadele ei sobi.",
+            "Väljamõeldud juhis võib paluda jätta õrna detaili kaitsvasse sisusse, eemaldades võimaluse korral tarbetu välispapi. Teise kauba originaalkarp võib vajada tervena säilitamist, sest tahad selle kinkida. Need nõuded teevad kompromissi selgeks. Ära telli automaatselt kõiki lisateenuseid; vali kaitse tegeliku eseme ja pakutud teenuse kirjelduse järgi."
+          ]
+        },
+        {
+          "id": "read-the-result",
+          "title": "Loe kaalu, mõõtmeid ja sisu koos",
+          "paragraphs": [
+            "Kui tulemus on valmis, kontrolli selle vastavust kavandatud kaupadele ja pakkimisjuhistele. Pane mõõdetud kaal ning iga mõõde koos ühikuga kirja. Sugargoo selgitab, et kaalutud mass sisaldab pakendit ja mahupõhine arvestus sõltub vedaja reeglist. Konkreetse tarneviisi jaoks oluline number võib seetõttu erineda paki kaalutud massist.",
+            "Ära võrdle varasema hinnanguga ainult esile tõstetud kogusummat. Tuvasta, mis muutus: pakkimisplaan, tegelikud mõõtmed, esemete arv või tarneviisi arvestusalus. Kui tulemus paistab küsitud sisuga vastuolus, selgita see enne saatmisvaliku tegemist. Täpne mõõt on kasulik ainult siis, kui see kirjeldab pakki, mida tahad saata."
+          ]
+        },
+        {
+          "id": "compare-the-options",
+          "title": "Kasuta mõõte tarneviisi otsustamiseks",
+          "paragraphs": [
+            "Sisesta parandatud andmed praegusesse veovõrdlusse ja loe sobivate tarneviiside tingimusi. Kontrolli kaalu- ja suuruspiire, lubatud sisu, hinnasummat ning olulisi teenusetingimusi. Ligikaudse oletuse põhjal sobinud variant võib nüüd ära langeda või teine muutuda ahvatlevamaks. See on kasulik teave ka siis, kui säästu ei teki.",
+            "Väljamõeldud näites võib suure kasti säilitamine kasvatada mahtu piisavalt, et üks veoviis muutub kalliks, samal ajal kui teine arvestab teisiti. Võrdle terviklikke praeguseid valikuid enne karbi eemaldamise otsust. Lisa proovipakkimise hind ja pakkimisteenused kogu kulude arvestusse. Hinda valikut kogukulu ja piisava kaitse põhjal, mitte ainult veorea järgi."
+          ]
+        },
+        {
+          "id": "confirm-before-shipping",
+          "title": "Hoia lõplik pakk plaaniga kooskõlas",
+          "paragraphs": [
+            "Enne saatmist kinnita uuesti sisu, tarneaadress, pakendivalikud ja valitud tarneviis. Kui lisad või eemaldad kaupa, küsid muud kaitset või muudad sihtkohta, hinda uuesti varasema mõõtmise kehtivust. Ära eelda, et proovipakkimise tulemus broneerib hinna tähtajatult. Kasuta tegeliku pakitaotluse juures näidatud summat ja tingimusi.",
+            "Salvesta tulemus pakikirje juurde ning võrdle seda hilisema saatmisteabega, kui see muutub kättesaadavaks. Nii tekib kasulik võrdlusalus sarnasteks tulevasteks ostudeks, tunnistades samas, et erinev sisu pakitakse erinevalt. Proovipakkimine on oma töö teinud siis, kui aitab teha paki kohta selgema ja teadlikuma otsuse, olgu lõppkulu esialgsest oletusest väiksem, sarnane või suurem."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tuvasta pakkimis- või tarneviisi otsus, mille täpsemad mõõdud lahendaksid.",
+        "Lõpeta esmalt tähtsad kvaliteedikontrollid ja vaata üle hoiutähtajad.",
+        "Vali täpsed kaubad, kogused ja sihtkoht.",
+        "Määra säilitatav pakend ja vajalik kaitse.",
+        "Võrdle praeguseid tarneviise mõõdetud kaalu ja mõõtmetega.",
+        "Arvesta teenustasusid ning kontrolli plaani sisu muutumisel uuesti."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Pre-shipment package simulation guide",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: Delivery add-on services",
+          "url": "https://blog.sugargoo.com/sugargoo-add-on-services-the-key-to-safer-smarter-cross-border-shopping/"
+        },
+        {
+          "title": "Sugargoo: Freight calculator",
+          "url": "https://blog.sugargoo.com/sugargoo-freight-calculator/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-warehouse-storage"
+      ]
+    },
+    {
+      "id": "sugargoo-tracking",
+      "slug": "sugargoo-tracking",
+      "title": "Sugargoo jälgimine: mõista etappe ja lahenda puuduvad uuendused",
+      "description": "Jälgi Hiina-sisest tarnet, lao töötlemist ja rahvusvahelist vedu eraldi ning valmista ette kasulikud tõendid, kui Sugargoo pakk vajab uurimist.",
+      "keyword": "sugargoo jälgimine",
+      "category": "shipping",
+      "intro": [
+        "Jälgimisvaade on kasulik ainult siis, kui tead, millist teekonda see kirjeldab. Müüja kaubasaadetis lattu, laos paki ettevalmistamine ja vedaja rahvusvaheline tarne on eri etapid. Nende käsitlemine ühe pideva saadetisena võib panna tavalise üleandmise paistma kadunud pakina.",
+        "See Sugargoo jälgimisjuhend selgitab praktilist viisi etappide lugemiseks, väikese tarnekirje pidamiseks ja täpse küsimuse esitamiseks, kui edenemine on ebaselge. See ei luba kindlat tarnekuupäeva. Sinu valitud tarneviis, tegelikud skaneeringud ja kontoteated on kasulikumad kui teise ostja tarneaeg."
+      ],
+      "sections": [
+        {
+          "id": "identify-stage",
+          "title": "1. Tuvasta teekond enne staatuse tõlgendamist",
+          "paragraphs": [
+            "Alusta tellimuse- või pakikirjest, millelt uuendus pärineb. Enne kauba lattu jõudmist jälgid müüja Hiina-sisest tarnet. Laos saabumise märge ei tähenda rahvusvahelise saadetise väljumist. Kui oled valinud kaubad ja korraldanud välismaise tarne, kasuta järgmiseks teekonnaks vastavat pakikirjet.",
+            "Hoia tootetellimuse number ja rahvusvahelise paki number eraldi veergudes. Kui mitmest tellimusest saab üks pakk, pane kirja, millised esemed sinna kuuluvad. See lihtne eristus väldib teise ostu tunnuse saatmist klienditoele või rahvusvahelise jälgimisnumbri ootamist enne paki esitamist."
+          ]
+        },
+        {
+          "id": "open-official-record",
+          "title": "2. Loe esmalt ametlikku pakikirjet",
+          "paragraphs": [
+            "Sugargoo ametlik töövoog suunab ostja pärast lähetamist jaotistesse My Parcel ja Check Logistics. Ava kirje kontol ja kopeeri jälgimisnumber täpselt. Kui vedaja on nimetatud, võrdle selle enda jälgimisandmeid konto omadega. Kolmanda osapoole jälgija võib olla mugav lisavaade, kuid ei tohiks asendada algseid saadetiseandmeid.",
+            "Kirjuta üles viimane sündmus, selle kuupäev ja kellaaeg, vedaja nimi ning kontrollimise kuupäev. Erista skaneeringu toimumisaega ajast, mil veebisait seda näitas. Need võivad olla erinevad. Kui üleandmisel tekib lisajälgimisviide, hoia mõlemad sama paki juures, mitte ära kirjuta esimest üle."
+          ]
+        },
+        {
+          "id": "interpret-events",
+          "title": "3. Seo sündmus järgmise kasuliku tegevusega",
+          "paragraphs": [
+            "Jälgimissõnastus varieerub vedajate ja tõlgete vahel. Loe tervet sündmust, mitte üht hirmutavat sõna. Elektroonilise teabe sündmus ütleb midagi muud kui füüsiline vastuvõtuskaneering. Saajaandmete taotlus nõuab teistsugust vastust kui tavapärane transiidisündmus. Ära käsitle iga silti lõpliku tarneotsusena.",
+            "Kasuta järgnevat lugemisabina, mitte garanteeritud Sugargoo staatuste sõnastikuna. Tegelikud sündmuse üksikasjad ja vedaja juhised on ülimuslikud."
+          ],
+          "table": {
+            "headers": [
+              "Millele kirje viitab",
+              "Mida järgmisena kontrollida"
+            ],
+            "rows": [
+              [
+                "Saadetiseandmed loodud",
+                "Otsi tõendit vedaja füüsilise vastuvõtu kohta."
+              ],
+              [
+                "Transiit või üleandmine",
+                "Kontrolli sündmuse asukohta ja tarneviisi avaldatud jälgimismustrit."
+              ],
+              [
+                "Vajatakse teavet või tarnetoimingut",
+                "Ava ametlik teade ja tuvasta palutud tegevus."
+              ],
+              [
+                "Kätte toimetatud, kuid mitte saadud",
+                "Kontrolli tarneandmeid ja teata erinevusest kiiresti."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "quiet-tracking",
+          "title": "4. Hinda vaikset jälgimisperioodi oletusteta",
+          "paragraphs": [
+            "Sugargoo tõrkeotsingu juhend selgitab, et mõni säästu- või eriteenus võib näidata vähe uuendusi enne paki sihtriiki jõudmist. Vaikne periood üksi ei ole seega piisav tõend saadetise kadumisest. Samas ei tohiks konkreetset erandit või tegevustaotlust ignoreerida vaid sellepärast, et teised ostjad kirjeldavad pikki pause tavalisena.",
+            "Võrdle viimast füüsilist skaneeringut maksmisel salvestatud tarneviisi teabega. Kontrolli ametlikke teenuseteateid ja seda, kas praegune hinnanguline aeg on ületatud. Kui eeldatav muster on ebaselge, küsi toelt, milline verstapost peaks järgmisena ilmuma ja millal uuesti ühendust võtta. Ära muuda hinnangut tähtajagarantiiks ega osta korduvalt mitteseotud teenuseid, et püüda juba teel olevat pakki kiirendada."
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "5. Saada lühike tõendipakett",
+          "paragraphs": [
+            "Kasulik tugipäring sisaldab pakinumbrit, jälgimisnumbrit, valitud tarneviisi, lähetuskuupäeva, viimast nähtavat sündmust ja probleemi, mille lahendamist vajad. Lisa sündmust ja kuupäeva näitav kuvatõmmis. Küsi konkreetselt näiteks seda, kas pakk on füüsiliselt järgmisele vedajale üle antud, mitte üksnes seda, kus see on.",
+            "Näiteks võiks väljamõeldud ostja kirjutada: Minu pakikirjes on üleandmise sündmus, kuid nimetatud vedajal puudub vastuvõtuskaneering. Palun kinnitage üleandmise staatus ja järgmine kontrollikuupäev. See on selgem kui mitme tunnusteta kuvatõmmise saatmine. Kasuta ametlikku kontopõhist tugikanalit ning peida aadressid või makseteave enne millegi avalikku postitamist."
+          ]
+        },
+        {
+          "id": "delivery-problems",
+          "title": "6. Säilita tarneerinevuse tõendid",
+          "paragraphs": [
+            "Kui jälgimine ütleb, et pakk on kohale toimetatud, kuid sa ei leia seda, vaata esmalt üle tarnekoht ja saadaolev tõend. Kontrolli asjakohaseid koduseid, vastuvõtu- või väljastuskorraldusi ning võta seejärel ametlike kanalite kaudu ühendust vedaja ja Sugargooga. Pane kirja, kellega ja millal ühendust võtsid. Tarnemärge peaks käivitama uurimise, mitte oletuse, et iga puuduv pakk annab õiguse hüvitisele.",
+            "Kui pakk saabub kahjustatult, pildista selle seisukorda, saatesilti ja sisu enne pakendi äraviskamist. Hoia kirjed selle pakiga seotud. Iga nõue sõltub kehtivast teenusest ja tõendamisnõuetest. Valikuline kaitsetoode ei ole lubadus, et kõik viivitused, kahjustused või saaja vead on kaetud."
+          ]
+        },
+        {
+          "id": "tracking-example",
+          "title": "7. Kasuta kogu tellimuse jaoks üht ajajoont",
+          "paragraphs": [
+            "Mõtle väljamõeldud tellimusele, kus on jope ja kaks T-särki eri müüjatelt. Jope jõuab lattu esimesena. Selle Hiina-sisene tarne on lõpetatud, samal ajal kui teise müüja saadetis alles liigub. Ühispaki ajajoon peaks muutuma peamiseks jälgimiskirjeks alles siis, kui kõik valitud esemed on valmis ja ostja esitab rahvusvahelise tarne taotluse.",
+            "Lühike ajajoon võib sisaldada ostu kinnitamist, Hiina-sisese saadetise vastuvõttu, kontrolli ülevaatust, paki esitamist, vedaja vastuvõttu ja lõplikku tarnet. Lisa tegelikud kuupäevad sündmuste toimumisel; jäta tulevased kuupäevad tühjaks. Nii muutuvad viivitused nähtavaks õiges etapis ning saad otsustada, kas pöörduda ostutiimi, laotoe või viimase vedaja poole nende vastutust segamini ajamata."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tuvasta, kas jälgid tootetellimust või rahvusvahelist pakki.",
+        "Kopeeri täpne pakinumber, jälgimisnumber ja tarneviisi nimi.",
+        "Pane kirja viimane füüsiline sündmus ja kontrollimise aeg.",
+        "Vasta kiiresti ametlikele saajaandmete taotlustele.",
+        "Saada toele üks selge küsimus koos asjakohaste tõenditega.",
+        "Hoia pakend ja kirjed alles, kuni tarneprobleemid on lahendatud."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo official buying and shipping workflow",
+          "url": "https://blog.sugargoo.com/homepage-2/"
+        },
+        {
+          "title": "Sugargoo Tracking Guide",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        },
+        {
+          "title": "Why Is My Sugargoo Tracking Not Updating?",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        },
+        {
+          "title": "What to Do If Your Package Is Lost, Damaged, or Delayed",
+          "url": "https://blog.sugargoo.com/what-to-do-if-your-package-is-lost-damaged-or-delayed/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-warehouse-storage"
+      ]
+    },
+    {
+      "id": "sugargoo-fees-payment",
+      "slug": "sugargoo-fees-payment",
+      "title": "Sugargoo tasud ja maksmine: koosta terviklik tellimuseelarve",
+      "description": "Erista tootehind, Hiina-sisene tarne, rahvusvaheline vedu ja maksetasud ning võrdle kassasummasid kindla tasu väitele toetumata.",
+      "keyword": "sugargoo tasud",
+      "category": "account",
+      "intro": [
+        "Odav toode ei tähenda tingimata odavat tellimust koos kohaletoimetamisega. Kasulik Sugargoo eelarve jälgib raha algsest kuulutusest läbi laoteenuste kuni välismaise tarneni. Samuti eristab see hinnangulist hinda summast, mille oled tegelikult maksnud, et muutuv vahetuskurss või hilisem veotasu ei tunduks seletamatu lisana.",
+        "See juhend pakub toimivat kuluregistrit ja makseviiside võrdlemise meetodit. Näite arvud on illustratsiooniks välja mõeldud. Oma tellimuse puhul kasuta Sugargoo kontol näidatavat praegust kassavaluutat, tasusid ja saadaolevaid makseviise koos makseteenuse pakkuja kinnitatud kuludega."
+      ],
+      "sections": [
+        {
+          "id": "separate-stages",
+          "title": "1. Kavanda eelarve kahe makseetapi jaoks",
+          "paragraphs": [
+            "Sugargoo ametlik ostujuhend kirjeldab algset makset kauba ja Hiina-sisese tarne eest, millele järgneb eraldi rahvusvahelise saatmise etapp pärast kauba lattu jõudmist. Esimene edukas makse ei tähenda seega, et tellimus on koduni ära makstud. Jäta teisele etapile eelarves ruumi enne toodetele pühendumist.",
+            "Loo kaks vahesummat: kaupade lattu toomine ja valitud paki sinuni toimetamine. Hoia valikulised teenused selle etapi kõrval, kus need ostad. Kahe toote võrdlemisel kasuta mõlema jaoks samu eeldusi. Sarnase kuulutusehinnaga kerge ja mahukas ese võivad anda väga erinevad kohaletoimetatud kogusummad."
+          ]
+        },
+        {
+          "id": "cost-ledger",
+          "title": "2. Pea registrit nii staatuse kui ka hinnaga",
+          "paragraphs": [
+            "Register vajab enamat kui summat. Märgi iga rida hinnanguliseks, pakutuks, makstuks või tagastatuks. Hoia valuuta nähtavana ning märgi, kas summa sisaldab mõnda muud tasu. See väldib kassasummas juba oleva kulu topeltarvestust ning varajase veohinnangu pidamist lõpetatud makseks.",
+            "Järgmised kategooriad on kavandamise raamistik, mitte väide, et iga tellimus toob kaasa kõik tasud. Lisa kategooria ainult siis, kui see sinu tellimusele kehtib."
+          ],
+          "table": {
+            "headers": [
+              "Kulukategooria",
+              "Säilitatavad tõendid"
+            ],
+            "rows": [
+              [
+                "Kaup ja Hiina-sisene tarne",
+                "Tellimuse kulude jaotus ja valitud variant."
+              ],
+              [
+                "Valikuline kontroll või pakkimine",
+                "Teenuse kirjeldus ja kinnitatud tasu."
+              ],
+              [
+                "Rahvusvaheline vedu",
+                "Valitud tarneviis ja lõplik pakihinnapakkumine."
+              ],
+              [
+                "Maksmine ja valuutavahetus",
+                "Kassa kogusumma ja teenusepakkuja tehingukirje."
+              ],
+              [
+                "Sihtkohatasud, kui need kohalduvad",
+                "Kehtivad ametlikud reeglid ja tegelikud teated."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "payment-methods",
+          "title": "3. Võrdle makseviise lõpliku summa põhjal",
+          "paragraphs": [
+            "Sugargoo maksedokumentatsioon loetleb kaarte, digirahakotte ja ülekandevõimalusi mitme maksekanali kaudu. Nende saadavus ja tasud ei ole ühesugused. Ära eelda, et üldises artiklis kirjeldatud meetod ilmub igale kontole, sihtkohale või valuutale. Ava sulle saadaolevad maksevalikud ning loe enne tasu kinnitamist kogu kinnitusvaade läbi.",
+            "Võrdle kontolt lahkuvat summat, debiteeritavat valuutat, kuvatavat töötlemistasu ning panga või teenusepakkuja lisanduvat valuutavahetust. Madalam reklaamitud protsent ei pruugi tähendada madalamat lõppkulu, kui lisandub fikseeritud tasu või teisendus. Salvesta tegelikult aktsepteeritud pakkumine; teise ostja vana kuvatõmmis ei tõenda sinu tehingutingimusi."
+          ]
+        },
+        {
+          "id": "currency-and-balance",
+          "title": "4. Hoia kataloogi valuuta arveldusvaluutast eraldi",
+          "paragraphs": [
+            "Selles kataloogis kuvatud USA dollari hind aitab tooteid võrrelda. See ei fikseeri vahetuskurssi ega summat, mille Sugargoo konkreetse variandi eest küsib. Kontrolli valitud toodet, kogust, Hiina-sisest tarnet ja kassavaluutat ametlikul platvormil uuesti. Kuvamiseks tehtud teisendus ja arveldatud makse on erinevad kirjed.",
+            "Kui lisad kontojäägile raha, otsusta kinnitatud kulutusteks vajalik summa, mitte ära käsitle kontojääki allahindlusena. Kontrolli praeguseid väljamaksetingimusi enne suurema summa lisamist, kui eeldad kasutavat. Märgi sissemakse registrisse üks kord ning seejärel see, kuidas jääk tellimuste vahel jaguneb; muidu võib eelarve samu vahendeid ekslikult kaks korda lugeda."
+          ]
+        },
+        {
+          "id": "optional-charges",
+          "title": "5. Hinda iga lisateenust selle toetatud otsuse järgi",
+          "paragraphs": [
+            "Lisafoto võib olla kasulik, kui see lahendab konkreetse mõõtude või seisukorra ebakindluse. Lisapakkimine võib aidata, kui see käsitleb kindlat haavatavust. Kumbagi ei peaks lisama lihtsalt seepärast, et see ilmub kassa kõrvale. Tuvasta esmalt küsimus või risk, seejärel loe teenuse kirjeldust ja hinda.",
+            "Hoia kampaaniapakkumised vajalikest kulutustest eraldi. Kontrolli sobivust, aegumist, kehtivaid tarneviise ja miinimumsummasid enne soodustuse eelarvesse lisamist. Ära lisa soovimatuid kaupu üksnes piirmäära saavutamiseks kogu pakikulu uuesti arvutamata. Kupong vähendab nimetatud sobivat tasu; see ei tõenda, et lõpptellimus on odavam kui kõik alternatiivid."
+          ]
+        },
+        {
+          "id": "worked-budget",
+          "title": "6. Katseta eelarvet selgelt väljamõeldud näitega",
+          "paragraphs": [
+            "Kujutle kahte lubatud toodet, mille ühine kaubahind on 48 dollarit. Hiina-sisene tarne on 4 dollarit, tellitud kontrolliteenus 2 dollarit ning praegune rahvusvahelise veo hinnang 29 dollarit. Planeerimise vahesumma on enne võimalikke makse- või sihtkohatasusid 83 dollarit. Kui lõplik veopakkumine on 33 dollarit, uuenda vahesumma 87 dollarini, mitte ära jäta algset hinnangut alles.",
+            "Oletame nüüd, et lõplik maksevaade lisab töötlemistasu. Kirjuta üles tegelikult kuvatud tasu, mitte ära kasuta juhendist kopeeritud määra. Kui ühe toote eest hiljem raha tagastatakse, märgi krediteeritud summa ja kuupäev algsest maksest eraldi. Need väljamõeldud arvud illustreerivad ainult arvestust; need ei ole Sugargoo hinnad, tasumäärad ega veopakkumine."
+          ]
+        },
+        {
+          "id": "payment-problems",
+          "title": "7. Kontrolli makse vastavust enne uut katset",
+          "paragraphs": [
+            "Kui maksevaade sulgub ootamatult või tellimus paistab endiselt tasumata, võrdle tellimuse staatust teenusepakkuja tehingukirjega. Ootel autoriseering, lõpetatud debiteerimine ja kasutatav kontojääk on eri seisundid. Talleta tellimuse number, summa, valuuta, aeg ja teenusepakkuja viide enne toe poole pöördumist nende kooskõlastamiseks.",
+            "Ära korda makset pelgalt sellepärast, et leht pole uuenenud. Kontrolli esmalt, kas raha võeti ja kas eelmist katset alles töödeldakse. Jaga makseviiteid ainult ametliku tugikanali kaudu; ära saada kunagi kaardi turvakoodi ega kontoparooli. Pärast lahendamist uuenda registrit nii, et tellimussumma kajastaks lõpetatud makseid ja tegelikke krediteeringuid, mitte kõiki proovitud tehinguid."
+          ]
+        }
+      ],
+      "checklist": [
+        "Sea toodetele ja rahvusvahelisele tarnele eraldi eelarved.",
+        "Märgi iga summa hinnanguks, pakkumiseks, makseks või tagasimakseks.",
+        "Võrdle lõplikke kassasummasid teadaolevas valuutas.",
+        "Lisa valikulisi teenuseid ainult selge eesmärgiga.",
+        "Kinnita kampaania sobivus enne selle väärtuse arvestamist.",
+        "Kontrolli ebakindlaid tehinguid enne uuesti maksmist."
+      ],
+      "sources": [
+        {
+          "title": "How to Read Product Listings on Taobao",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-listings/"
+        },
+        {
+          "title": "How to Complete Your Payment on Sugargoo",
+          "url": "https://blog.sugargoo.com/how-to-complete-your-payment-on-sugargoo-a-complete-guide-for-international-shoppers/"
+        },
+        {
+          "title": "Sugargoo Payment Methods",
+          "url": "https://blog.sugargoo.com/sugargoo-payment-methods/"
+        },
+        {
+          "title": "How to Find Products from Taobao and 1688 Using Sugargoo",
+          "url": "https://blog.sugargoo.com/how-to-find-products-from-taobao-and-1688-using-sugargoo/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-returns-refunds"
+      ]
+    },
+    {
+      "id": "sugargoo-warehouse-storage",
+      "slug": "sugargoo-warehouse-storage",
+      "title": "Sugargoo laos hoiustamine: kavanda tähtajad ja pakkide ühendamine",
+      "description": "Jälgi iga toote hoiutähtaega, lahenda kontrolliküsimused varakult ning võrdle kohe saatmist ootamisega, eeldamata üht universaalset hoiuaega.",
+      "keyword": "sugargoo laos hoiustamine",
+      "category": "shipping",
+      "intro": [
+        "Laos hoiustamine annab aega ostud üle vaadata ja otsustada, millised kaubad koos saata. Sellest paindlikkusest on kasu ainult siis, kui jälgid iga toote tähtaega. Tellimuste kogum ei ole üks broneering ühe ühise loenduriga ning uus ost ei tohiks kunagi olla põhjus vanemate esemete kontrollimise lõpetamiseks.",
+        "See juhend keskendub praktilisele hoiustamisplaanile: tuvasta varaseim tähtaeg, lahenda kontrolliküsimused kohe ning võrdle ootamist saatmisega. Kasuta oma kaupade juures kuvatavat järelejäänud aega ja palu Sugargool vastuolud enne tähtaega selgitada. Ära kavanda tellimust mitteseotud lehelt leitud ühe arvu põhjal."
+      ],
+      "sections": [
+        {
+          "id": "verify-deadline",
+          "title": "1. Kontrolli tegeliku tellimuse lubatud perioodi",
+          "paragraphs": [
+            "Selle juhendi jaoks vaadatud ametlik materjal ei ole täielikult kooskõlaline: Sugargoo turundusavaleht reklaamib 90 päeva, samal ajal kui üksikasjalik hoiustamisartikkel kirjeldab ostutellimustele 100 päeva ning teatud edasisaatmis- või edasimüügitellimustele 30 päeva. Neid väiteid ei tohiks ühendada universaalseks lubaduseks. Üksikasjalik juhend suunab ostjad Packing Centeri järelejäänud päevade näiduni.",
+            "Ava kaubakirje, märgi tellimuse liik ning loe kuvatavat tähtaega või järelejäänud aega. Kui see on vastuolus pakkumisega, millele toetusid, võta ühendust toega, lisades pakkumise ja tellimuse numbri. Hangi selgitus ajal, mil jõuad veel tegutseda. Üldine artikkel on kasulik taust, kuid ei saa määrata ühe tellimuse täpset lubatud aega."
+          ]
+        },
+        {
+          "id": "item-register",
+          "title": "2. Koosta laokaupade jaoks väike register",
+          "paragraphs": [
+            "Loo iga kauba või tellimuskirje kohta rida tunnuse, lattu saabumise kuupäeva, järelejäänud aja, kontrolliotsuse ja kavandatud pakiga. Kasuta järjepidevat kuupäevavormingut ning hoia võimalik platvormi ajavöönd nähtavana. Sordi varaseima tähtaja järgi, et tähelepanu vajav ese ilmuks esimesena, isegi kui see on väikseim või odavaim ost.",
+            "Kasulik otsuseveerg sisaldab tegevusi nagu kontrollida, küsida mõõtu, taotleda tagastust, saatmiseks valmis või kinnitada pikendus. Väldi ebamäärast silti ootel, täpsustamata, mida ootad. Register peaks ütlema, milline otsus tuleb järgmisena, mitte ainult kopeerima iga kontol juba nähtavat detaili."
+          ]
+        },
+        {
+          "id": "inspect-early",
+          "title": "3. Vaata kontrollitõendid üle enne pika ootamise kavandamist",
+          "paragraphs": [
+            "Kontrolli laofotosid ja tellimuse andmeid peagi pärast nende kättesaadavaks muutumist. Kinnita valitud värv, suurusetähis, kogus ja nähtav seisukord. Kui foto jätab tähtsa ebakindluse, küsi täpne järelküsimus, kuni esemele veel ligi pääseb. Hoia kontrolliotsused saatmisplaanidest eraldi: otsus teist ostu oodata ei lahenda selle kauba probleemi.",
+            "Selle sõltumatu kataloogi võrdluspildid ei ole sinu tellimuse kontrollitud laokvaliteedikontroll. Ava enda Sugargoo kaubakirjele lisatud fotod. Hoiuaega ei tohiks samuti segi ajada tagastuskõlblikkusega. Ese võib jääda lattu pärast selle perioodi lõppu, mil müüja on nõus tagastust vastu võtma."
+          ]
+        },
+        {
+          "id": "consolidation-decision",
+          "title": "4. Võrdle ühendamist lisaooteaja kuluga",
+          "paragraphs": [
+            "Sugargoo ametlik ühendamisprotsess lubab ostjatel valida Packing Centerist kaubad rahvusvaheliseks pakiks. Konkreetsete esemete ühendamise mõistlikkus sõltub saadaolevast tarneviisist, lõplikust suurusest, kaalust ja vajalikust pakkimisest. Suurem pakk ei ole automaatselt odavaim võimalus ning väiksem kilohind ei tõenda väiksemat koguarvet.",
+            "Võrdle sama sihtkoha jaoks vähemalt kaht plaani: saada valmis kaubad kohe või oota ja ühenda need puuduva tellimusega. Arvesta võimalikku pikendustasu, pakkimisvajadusi ning ootamise mõju enda tarnevajadusele. Kui uus ese muudab tarneviisiga sobivust, võrdle teostatavaid võimalusi uuesti, mitte ära toetu teise paki pakkumisele."
+          ]
+        },
+        {
+          "id": "waiting-example",
+          "title": "5. Sea otsustamise päev enne varaseimat aegumist",
+          "paragraphs": [
+            "Mõtle väljamõeldud kolme tellimuse rühmale. Kaks on valmis ning üks müüja pole lähetamist kinnitanud. Vanim laokaup näitab kahtteist järelejäänud päeva. Selle asemel et lubada oodata kõige saabumist, valib ostja kontrollipäeva mitu päeva varem ning küsib müüjaga suhtlevalt ostukontaktilt uuendatud lähetusseisu.",
+            "Kontrollipäeval võrdleb ostja kinnitatud pikendusvõimalust valmis kaupade saatmisega. Kui puuduval tellimusel pole endiselt usaldusväärset ajakava, jääb see pakiplaanist välja. Täpne ajavaru on isiklik planeerimisvalik, mitte Sugargoo töötlemisgarantii. Eesmärk on jätta aega toe vastustele, maksmisele ja pakkimisotsustele enne, kui tähtaeg muutub kiireloomuliseks."
+          ]
+        },
+        {
+          "id": "extension",
+          "title": "6. Kinnita, mida pikendus tegelikult muudab",
+          "paragraphs": [
+            "Sugargoo üksikasjalik hoiustamisjuhend kirjeldab tasulist pikendusteenust ning hoiatab, et aegunud kaubad võidakse hoiureeglite alusel kõrvaldada. Ära eelda automaatset pikendust ega seda, et päringu alustamine peatab loenduri. Kontrolli kohaldatavat teenust, sobivat eset ja kinnitatud hinda kontol või klienditoelt.",
+            "Pärast pikenduse korraldamist kontrolli vastava kirje uuendatud tähtaega ja salvesta kinnitus. Kui pikendasid mitme eseme aega, kontrolli igaüht. Kirjuta registrisse uus kuupäev, mitte ära lisa ise mälus olevat päevade arvu. Kui kuvatav tähtaeg ei muutu, teata vastuolust kiiresti; ära oota algse kuupäeva möödumiseni."
+          ]
+        },
+        {
+          "id": "release-parcel",
+          "title": "7. Lõpeta hoiustamisülesanne, kui pakk on valmis",
+          "paragraphs": [
+            "Enne paki esitamist võrdle valitud laokaupu kavandatud pakkimisnimekirjaga. Veendu, et lahendamata tagastustaotlused, soovimatud duplikaadid või kontrolli ootavad esemed pole kogemata kaasa arvatud. Loe pakkimisjuhiseid hoolikalt, eriti kui originaalpakend on sulle oluline. Hoia lõplik pakitunnus kaasatud tellimuste kõrval, et kirjed jääksid seotuks.",
+            "Kui pakk liigub järgmisesse etappi, järgi konto staatust, mitte ära eelda, et esitatud taotlus võrdub kohe lähetamisega. Säilita hoiustamismärkmed, kuni kaubad on õigesti määratud ja allesjäänud esemete tähtajad selged. See viimane kontroll hoiab ära tavalise korraldusvea: tähelepanu läheb uuele saadetisele, samal ajal kui unustatud kauba aeg laos edasi tiksub."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kontrolli iga üksiku kauba järelejäänud hoiuaega.",
+        "Lahenda vastuolulised hoiuperioodi andmed ametliku toega.",
+        "Vaata tegelikud laofotod kiiresti üle.",
+        "Võrdle ootamist ja saatmist realistlike pakki puudutavate eelduste põhjal.",
+        "Kinnita pikendused ja nende uuendatud tähtajad.",
+        "Kontrolli pärast paki esitamist üle lattu jäänud kaubad."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo official homepage storage overview",
+          "url": "https://blog.sugargoo.com/"
+        },
+        {
+          "title": "How Long Does Sugargoo Keep Items in the Warehouse?",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "How to Combine Multiple Orders on Sugargoo",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo Returns and Refunds Guide",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ]
+    },
+    {
+      "id": "sugargoo-returns-refunds",
+      "slug": "sugargoo-returns-refunds",
+      "title": "Sugargoo tagastused ja tagasimaksed: tõendid, tingimused ja järgmised sammud",
+      "description": "Käsitle vale toodet või muutunud tellimust selgete tõendite, tagastustingimuste kontrolli ja arvestusega, mis eristab heakskiitu raha kättesaamisest.",
+      "keyword": "sugargoo tagasimakse",
+      "category": "account",
+      "intro": [
+        "Tagastust on lihtsam hallata, kui tuvastad probleemi täpselt ja tegutsed ajal, mil vajalikud võimalused on veel avatud. Kasulikud küsimused on, kas müüja toetab taotlust, millises seisus kaup on, milline tähtaeg kehtib ja millised kulud jäävad alles. Üldine lubadus lihtsatest tagasimaksetest ei vasta neile küsimustele konkreetse tellimuse puhul.",
+        "See Sugargoo tagastusjuhend selgitab tõendite korrastamist, konkreetse lahenduse küsimist ja raha jälgimist protsessi jooksul. See põhineb allpool lingitud ametlikel juhistel ning praktilisel lähenemisel ebakindlatele juhtumitele. See ei taga iga ostu vastuvõtmist, täielikku tagasimakset ega kindlat töötlemisaega."
+      ],
+      "sections": [
+        {
+          "id": "order-stage",
+          "title": "1. Alusta tellimuse praegusest etapist",
+          "paragraphs": [
+            "Enne toega ühendust võtmist tee kindlaks, kas tellimus ootab ostmist, on juba ostetud, müüja poolt lähetatud, lattu jõudnud või rahvusvaheliselt välja saadetud. Lõpetamata ostu tühistamise taotlus on erinev füüsilise kauba tagastamisest. Kasuta tegelikku tellimuse staatust ja kuupäeva, mitte ära eelda, et nupuvajutus on tehingu tagasi pööranud.",
+            "Sugargoo ametlik tühistamisjuhend kirjeldab kontopõhist tühistamisprotsessi, samal ajal kui tagastusjuhend eristab hilisemaid tagastuse ja tagasimakse etappe. Ava vastav tellimus ja kasuta saadaolevat ametlikku toimingut. Kui valik puudub või staatus on ebaselge, küsi toelt, mida saab just selle tellimusega teha, enne kui ise midagi korraldad."
+          ]
+        },
+        {
+          "id": "conditional-eligibility",
+          "title": "2. Kontrolli tingimusi koos, mitte ainult esiletõstetud tähtaega",
+          "paragraphs": [
+            "Vaadatud Sugargoo tagastusjuhend kirjeldab sobivust viie päeva jooksul lattu kandmisest koos müüja nõusolekuga põhjuseta tagastuseks ning terve pakendi, siltide, tarvikute ja kingitustega. Need on ühised tingimused, mitte tingimusteta viiepäevane tagasimakselubadus. Juhend nimetab ka välistusi. Kontrolli konkreetse kauba ja müüja praeguseid tingimusi enne sellele ajavahemikule toetumist.",
+            "Tegutse kohe probleemi märkamisel. Viimase päevani ootamine lisab välditavat ebakindlust, kui on vaja müüjavastust, lisafotot või toe ülevaatust. Ära eemalda pakendit ega palu muudatusi, mis võiksid tagastuskõlblikkust mõjutada, kuni otsus on ootel. Lao hoiupikendust ei tohiks pidada müüja tagastusakna pikenduseks."
+          ]
+        },
+        {
+          "id": "evidence",
+          "title": "3. Kirjelda mittevastavust omavahel seotud tõenditega",
+          "paragraphs": [
+            "Kasuta lihtsat võrdlust: mida tellisid, mida tõendid näitavad ning millist lahendust küsid. Lisa vastav tellimusvariant ja erinevust näitav laofoto. Koguseprobleemi korral määra oodatud arv. Suuruseerinevuse korral erista suurusesilti tegelikust mõõdust; need vastavad eri küsimustele.",
+            "Väljamõeldud näide on tumesinise M-suuruses kauba tellimus, mille laofoto näitab musta L-sildiga toodet. Nimeta mõlemad erinevused selgelt ning palu võrrelda neid tasutud tellimusega. Ära väida, et foto tõendab kangakoostist, ehtsust või toimivust, kui see seda teha ei saa. Kui pilt on mitmetähenduslik, küsi paremat vaadet enne kindla süüdistuse esitamist."
+          ]
+        },
+        {
+          "id": "choose-remedy",
+          "title": "4. Võrdle tagastust, vahetust ja kauba allesjätmist",
+          "paragraphs": [
+            "Küsi, milliseid tulemusi müüja ja platvorm juhtumi puhul tegelikult pakkuda saavad. Tagastus võib osa rahast tagasi tuua, kuid sellega võivad kaasneda veokulud või muud mahaarvamised. Vahetus võib luua uue ostu- ja kontrollitsükli. Vastuvõetava eseme allesjätmine võib vältida lisakäsitlemist, kuid peaks olema teadlik valik, mitte reaktsioon ebaselgetele juhistele.",
+            "Võrdle kinnitatud netotulemust ja lisaooteaega. Näiteks võib väljamõeldud ostja eelistada toetatud vahetust õige suuruse vastu, kui laoseis on olemas, kuid tagastust, kui saadavus pole kinnitatud. Pane kokkulepitud variant ja võimalik lisatasu kirja enne asenduse heakskiitmist. Ära eelda, et vahetus säilitab algse hoiutähtaja või tagab järgmise eseme sobivuse."
+          ]
+        },
+        {
+          "id": "refund-ledger",
+          "title": "5. Erista tagastuse heakskiit raha kättesaamisest",
+          "paragraphs": [
+            "Müüja nõustumine kauba vastuvõtmisega ei ole sama sündmus kui tagasimakse lõpetamine. Ametlik juhend kirjeldab tagastuse käsitlemist, müüja kinnitust ja kontojäägi krediteerimist eraldi etappidena. Jälgi neid verstaposte ükshaaval. Märgi taotletud summa, kokkulepitud mahaarvamine, kinnitatud summa ja tegelikult krediteeritud summa.",
+            "Kasuta tulemuse vastavuse kontrollimiseks konto tehingukirjet. Kui taotled hiljem kontojäägi väljamakset, käsitle seda eraldi toiminguna oma praeguste tingimuste ja teenusepakkuja töötlemisega. Ära nimeta raha pangas tagasilaekunuks ainult seetõttu, et tagastustaotlus võeti vastu. See eristus muudab tugipäringud selgemaks ning väldib sama oodatud tagasimakse kahekordset eelarvestamist."
+          ]
+        },
+        {
+          "id": "fees-and-time",
+          "title": "6. Küsi selget mahaarvamiste ja ajastuse jaotust",
+          "paragraphs": [
+            "Kui pakutud tagasimakse erineb tootehinnast, küsi selgitust, mis nimetab iga mahaarvamise ja selle põhjuse. Hoia märkmetes eraldi tootehind, algne Hiina-sisene tarne, tagastusvedu ja valikulised teenused. Vastutus sõltub asjaoludest ja kohaldatavatest tingimustest; üldartikkel ei saa määrata, kes tasub sinu juhtumis iga kulu.",
+            "Väljamõeldud 30-dollarise ostu puhul tuleks 25-dollarine kinnitatud krediteering kirja panna 25 dollarina koos erinevuse põhjusega, mitte 30 dollari täieliku tagasisaamisena. Küsi, milline sündmus käivitab järgmise töötlemisetapi ja millist järelkontrolli kuupäeva tugi soovitab. Hinnangulised töötlemisajad peaksid suunama järgmist kontrolli, mitte esinema universaalse väljamaksetähtajana."
+          ]
+        },
+        {
+          "id": "after-dispatch",
+          "title": "7. Säilita võimalused pärast rahvusvahelist lähetamist",
+          "paragraphs": [
+            "Kui kaup on laost lahkunud, selgita ametlikule toele tegelikku probleemi ja asukohta enne millegi tagasisaatmist. Kui tagastus on võimalik, hangi heakskiidetud tagastusjuhised, aadress, sobivustingimused ja eeldatavad kulud. Kauba saatmine vanast sõnumist leitud aadressile võib tekitada veel ühe lahendamata saadetise ilma tagasimakset kindlustamata.",
+            "Kahjustuse või puuduva eseme korral saabumisel säilita välispakend, silt ja sisufotod. Hoia tarne- ja pakikirjed koos. Tootetagastus, logistiline uurimine ja kindlustusnõue on eri protsessid ning üks ei anna automaatselt õigust teisele. Küsi, milline protsess kehtib ja milliseid tõendeid vajatakse, ning pea kuupäevadega arvestust kuni kokkulepitud tulemus on täidetud."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kinnita tellimuse etapp enne tühistuse või tagastuse valimist.",
+        "Kontrolli müüja tingimusi ja praegust kohaldatavat tähtaega.",
+        "Säilita sildid, pakend ja mittevastavuse tõendid.",
+        "Küsi konkreetset lahendust ning mahaarvamiste jaotust.",
+        "Jälgi heakskiitu, tagastusvedu ja krediteeritud raha eraldi.",
+        "Hangi ametlikud juhised enne kaupade tagasisaatmist."
+      ],
+      "sources": [
+        {
+          "title": "How to Cancel an Order on Sugargoo",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo Returns and Refunds Guide",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        },
+        {
+          "title": "Sugargoo Refund Policy and Compensation Explained",
+          "url": "https://blog.sugargoo.com/sugargoo-refund-policy-2025-how-cross-border-shopping-refunds-work/"
+        },
+        {
+          "title": "Can You Return Products in China?",
+          "url": "https://blog.sugargoo.com/can-you-return-products-in-china/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-fees-payment"
+      ]
+    },
+    {
+      "id": "weidian-taobao-links-sugargoo",
+      "slug": "weidian-taobao-links-sugargoo",
+      "title": "Weidiani ja Taobao lingid Sugargoos: kontrolli täpset toodet",
+      "description": "Kopeeri õige lähte-URL, säilita toote identiteet ja kontrolli variante Sugargoos; automaatse laadimise tõrke korral kasuta toetatud käsitsi tellimise võimalust.",
+      "keyword": "weidianist sugargoosse",
+      "category": "getting-started",
+      "intro": [
+        "Tootelink seob soovituse konkreetse müüja kuulutusega. See ei kinnita iseenesest suurust, värvi, laoseisu ega lõplikku hinda koos kohaletoimetamisega. Kõige kindlam viis Weidiani või Taobao lingi kasutamiseks Sugargoos on säilitada see tooteidentiteet ja kontrollida valikuid enne maksmist ametlikul tellimislehel.",
+        "See juhend selgitab, mida kopeerida, kuidas ära tunda vale kuulutus ja mida teha automaatse laadimise ebaõnnestumisel. Samuti eristab see algse kauplemiskeskkonna toote ID-d kataloogi sisemisest leheidentifikaatorist, et mugav ostunupp ei muutuks põhjuseks viimaseid kontrolle vahele jätta."
+      ],
+      "sections": [
+        {
+          "id": "source-identity",
+          "title": "1. Alusta üksiktoote kuulutusest, mitte otsingutulemusest",
+          "paragraphs": [
+            "Ava konkreetse toote leht ning kopeeri selle täielik aadress. Müüja avaleht, kategoorialeht, otsingutulemus või kampaanialeht võib näida asjakohane, ilma et see määraks ostetavat eset. Hoia URL-i kõrval nähtava tootenime ja müüja märget, eriti siis, kui valiknimekirjas on mitu visuaalselt sarnast kuulutust.",
+            "Sugargoo ametlikud juhendid kirjeldavad kauplemiskeskkonna lingi kleepimist otsinguribale ning seejärel laaditud toote kontrollimist. Eesmärk on määrata kuulutus, mitte järeldada üksikasju ainult pildi põhjal. Kui lähteleht on kadunud või kirjeldab nüüd teist toodet, peatu ja uuri olukorda, mitte ära eelda, et tuttav pisipilt tõendab algse pakkumise püsimist."
+          ]
+        },
+        {
+          "id": "ids-and-options",
+          "title": "2. Erista toote ID valitud variandist",
+          "paragraphs": [
+            "Tootetunnus määrab tavaliselt kuulutuse, mitte iga selle sees olevat suuruse ja värvi kombinatsiooni. Kirjuta täpne variant eraldi üles. Kataloogil võib olla ka oma sisemine number tootelehe aadressis; see ei ole tingimata ostmiseks kasutatav turuplatsi tunnus. Ära asenda kunagi üht numbrit teisega pelgalt seetõttu, et mõlemad ilmuvad sama toote kõrval.",
+            "Näiteks lähteaadress https://weidian.com/item.html?itemID=7876894732 määrab selle projekti jaoks antud Weidiani kuulutuse. Number 7876894732 on algallika toote ID, mitte suurusevalik ega tõend laoseisu kohta. Kasuta kuulutust praeguse toote ja variantide kinnitamiseks. Näide selgitab URL-i ülesehitust; see ei ole soovitus ega saadavusgarantii."
+          ]
+        },
+        {
+          "id": "buying-button",
+          "title": "3. Kontrolli sihtlehte pärast ostunupu kasutamist",
+          "paragraphs": [
+            "Selle sõltumatu saidi kontrollitud Weidiani ostuvoog edastab algse lähte-URL-i Sugargoo tootelehele. Lingiga võib kaasneda soovitusparameeter. Link ei esita tellimust, vali tasulist teenust ega kinnita makset. Need valikud jäävad ametlikule platvormile, kus peaksid laaditud üksikasjad üle vaatama.",
+            "Pärast sihtlehe avamist kontrolli domeeni, toote identiteeti, müüjat selle kuvamisel, varianti, kogust ja Hiina-sisese tarne hinda. Kui tulemus on tühi, erineb allikast või ei sisalda olulisi valikuid, ära jätka kataloogifoto põhjal. Hoia lähte-URL käepärast, et saaksid seda lehega võrrelda või paluda ametlikul toel seda kontrollida."
+          ]
+        },
+        {
+          "id": "taobao-and-weidian",
+          "title": "4. Kasuta iga kauplemiskeskkonna jaoks ametlikku lingiotsingut",
+          "paragraphs": [
+            "Sugargoo avaldab juhiseid Weidiani linkide kopeerimiseks ja Taobao tootelinkide kasutamiseks. Tavaline protsess on toote URL-i kopeerimine, ametlikku otsinguvälja kleepimine ja saadud kuulutuse kontrollimine. Rakendusest kopeeritud link võib sisaldada ümbritsevat jagamisteksti või läbida lühiaadressi, seega veendu enne esitamist, et see avab soovitud toote.",
+            "Selle veebisaidi automaatne ostulingi teisendus piirdub kontrollitud Weidiani lähteviidetega. See ei väida, et iga Taobao linki saab siin teisendada. Taobao toote puhul kasuta Sugargoo enda toetatud lingiotsingu protsessi. Väldi kauplemiskeskkonna nime käsitsi asendamist mitteseotud vahendaja URL-is; nii võivad jääda valed parameetrid ilma algse toote identiteedi säilimiseta."
+          ]
+        },
+        {
+          "id": "manual-order",
+          "title": "5. Kasuta käsitsi tellimist ainult toetatud ostu jaoks",
+          "paragraphs": [
+            "Sugargoo ametlik DIY Orderi juhend kirjeldab käsitsi täidetavat vormi juhuks, kui automaatne toote laadimine ei toimi. See küsib identifitseerivaid andmeid, spetsifikatsiooni, kogust, hinda ja Hiina-sisese tarne üksikasju. See on viis selgema teabe esitamiseks ülevaatusele, mitte garantii, et iga soovitud eset saab osta või saata.",
+            "Esita täielik lähteviide, täpne variant, müüjaandmed, praegune kuulutusehind ning võimaluse korral asjakohased kuvatõmmised. Märgi tundmatud kulud tundmatuks, mitte ära mõtle numbrit välja. Kui platvorm lükkab toote piirangute tõttu tagasi, küsi lubatud alternatiivi olemasolu; ära varja toodet ega kasuta käsitsi vormi piirangu vältimiseks. Oota kinnitust enne pakutud kogusummale toetumist."
+          ]
+        },
+        {
+          "id": "variant-example",
+          "title": "6. Kontrolli ebaselget valikut enne maksmist",
+          "paragraphs": [
+            "Kujutle väljamõeldud Taobao kuulutust madala esiletõstetud hinnaga ja mitme valikuga: üks tarvik, põhikomplekt ning suurem komplekt. Tõlgitud pealkiri võib kirjeldada kogu valikut, samal ajal kui valitud variant viitab ainult tarvikule. Õige URL-i kopeerimine viiks ikkagi vale ostuni, kui ostja jätaks selle vaikevariandi valituks.",
+            "Võrdle pärast valimist variandi teksti, seotud pilti, kogust ja hinda. Kui tähendus on ebaselge, saada toele täpne valikunimi koos kuvatõmmisega ning küsi, mis on kaasas. Rõivaste puhul kinnita müüja mõõdutabel, mitte ära toetu ainult tuttavale suurusetähele. Salvesta heakskiidetud spetsifikatsioon, et sul oleks laofotode saabumisel selge võrdlusalus."
+          ]
+        },
+        {
+          "id": "shortlist-record",
+          "title": "7. Säilita link kogu ostuprotsessi jooksul",
+          "paragraphs": [
+            "Hoia iga valiknimekirja toote kohta alles lähte-URL, turuplatsi tunnus, valitud variant, kogus ning valimise põhjus. Lisa ametlik tellimuse number alles pärast tellimuse esitamist. Hiljem lisa kontrolliotsus ja pakiviide. Nii ühendad soovituse, ostu ja saadetise sõltumata tootenimest, mis võib muutuda.",
+            "Vanale valiknimekirjale naastes kontrolli allikat ja tellimuse üksikasju uuesti. Hinnad, variandid ja müüja laoseis võivad leidmise ning maksmise vahel muutuda. Kui algset kuulutust ei saa enam kinnitada, eemalda see aktiivsest nimekirjast, kuni sul on kontrollitud asendus. Korrastatud hulk kinnitatud linke on kasulikum kui suur kogum, mille toodete identiteet on ebakindel."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kopeeri üksiku kauplemiskeskkonna toote täielik URL.",
+        "Hoia algallika toote ID kataloogitunnustest eraldi.",
+        "Kontrolli ametlikku domeeni ja laaditud toodet enne variantide valimist.",
+        "Kinnita variant, kogus ja praegune Hiina-sisese tarne kulu.",
+        "Kasuta DIY Orderit toetatud ülevaatuseks, mitte kunagi piirangute vältimiseks.",
+        "Salvesta lähteviide ja heakskiidetud spetsifikatsioon tellimuse juurde."
+      ],
+      "sources": [
+        {
+          "title": "How to Use Weidian Links with Sugargoo",
+          "url": "https://blog.sugargoo.com/how-to-use-weidian-link-sugargoo-superbuy-acbuy-mulebuy-oopbuy/"
+        },
+        {
+          "title": "How to Copy Taobao Links Properly",
+          "url": "https://blog.sugargoo.com/how-to-copy-taobao-links-properly/"
+        },
+        {
+          "title": "How to Find Products from Taobao and 1688 Using Sugargoo",
+          "url": "https://blog.sugargoo.com/how-to-find-products-from-taobao-and-1688-using-sugargoo/"
+        },
+        {
+          "title": "How to Use DIY Order on Sugargoo",
+          "url": "https://blog.sugargoo.com/how-to-use-diy-order-on-sugargoo/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "how-to-buy-on-sugargoo"
+      ]
+    }
+  ]
+}
