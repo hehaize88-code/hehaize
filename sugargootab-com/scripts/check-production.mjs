@@ -34,3 +34,18 @@ const asset = await request('/brand/favicon.ico',targets.production,{ASSETS:{fet
 assert.equal(assetPath,'/brand/favicon.ico');
 assert.equal(await asset.text(),'asset');
 console.log(JSON.stringify({production:'pass',wwwRedirect:308,sitemapUrls:locations.length,previewIndexing:'blocked',missingStatus:404,assetRouting:'pass'}));
+
+// The temporary design review stays noindex and keeps navigation in its prefix.
+for (const [locale,path] of [['en','/faq/'],['fr','/articles/'],['mt','/articles/']]) {
+  const prefix=locale==='en'?'':'/'+locale;
+  const response=await request('/design-preview'+prefix+path);
+  assert.equal(response.status,200);
+  assert.match(response.headers.get('X-Robots-Tag'),/noindex/);
+  const doc=parseHTML(await response.text()).document;
+  assert.equal(doc.documentElement.lang,locale);
+  assert.equal(doc.querySelector('link[rel=canonical]').getAttribute('href'),targets.production+prefix+path);
+  const links=[...doc.querySelectorAll('.site-header nav a,.article-card')].map(a=>a.getAttribute('href'));
+  assert(links.every(h=>h.startsWith('/design-preview'+prefix+'/')));
+  assert(doc.querySelector('.design-preview-bar'));
+}
+console.log(JSON.stringify({designPreview:'pass',indexing:'blocked',navigation:'prefixed',locales:3}));

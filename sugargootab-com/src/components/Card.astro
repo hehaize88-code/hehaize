@@ -2,8 +2,8 @@
 import Icon from './Icon.astro';
 import {localized} from '../lib/i18n';
 import {slugs} from '../lib/catalog';
-const {product:p,t,names,lang,eager=false}=Astro.props;
-const href=localized(lang,`/products${p.path}`);
+const {product:p,t,names,lang,eager=false,basePath=''}=Astro.props;
+const href=basePath+localized(lang,`/products${p.path}`);
 ---
 <article class="product-card">
  <a class="product-image" href={href} aria-label={`${t.view}: ${p.title}`}>

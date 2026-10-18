@@ -69,3 +69,11 @@ Status: Production deployed successfully; GitHub integration and both custom dom
 - Added exact-host si.geilicdn.com support for source-supplied image URLs in both cards and galleries. Invalid, HTTP, credential-bearing and unverified-host URLs stay rejected. No image storage/proxy or product database added.
 - Live source verification: first-page 60/60 product URLs retained; /headwear/3436.html gallery retains the source CDN image. Representative CDN request returns 200 image/webp.
 - User requested stronger visual differentiation from kakobuypick.com. A separate directory-style redesign is being prepared on the existing preview; this production correction does not change the layout.
+
+
+## 2026-10-18 — Same-domain design preview
+- The new directory design was published to the existing Sites preview (source 86f44b208e428256fe9f81921c635d70fa2f2540, version 3). User Chrome received a Cloudflare security block for chatgpt.site. No protection was disabled or bypassed.
+- Serve the same authored design at https://sugargootab.com/design-preview/ for review. Regular production URLs keep V1. The prefix works across all existing languages and routes; category/product/article/navigation links preserve it.
+- Preview pages explicitly noindex and canonical to the equivalent normal production URL; preview URLs are absent from the sitemap. A localized preview bar links back to the corresponding normal page.
+- src/styles/directory.css is injected only for designPreview. Shared Card/ArticleCard/Editorial components accept an optional basePath, defaulting to an empty string so regular production links remain unchanged.
+- If the user approves V2, promote it while preserving production SEO and referral configuration, then remove or redirect this temporary preview prefix.

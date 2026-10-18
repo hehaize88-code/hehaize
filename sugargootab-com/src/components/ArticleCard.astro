@@ -2,9 +2,9 @@
 import Icon from './Icon.astro';
 import {localized} from '../lib/i18n';
 import {minutes,topic} from '../lib/editorial';
-const {article,ui,lang,index=0}=Astro.props;
+const {article,ui,lang,index=0,basePath=''}=Astro.props;
 ---
-<a class="article-card" href={localized(lang,'/articles/'+article.slug+'/')}>
+<a class="article-card" href={basePath+localized(lang,'/articles/'+article.slug+'/')}>
  <div class="article-card-top"><span>{topic(article.category,ui)}</span><span>{String(index+1).padStart(2,'0')}</span></div>
  <h3>{article.title}</h3><p>{article.description}</p>
  <div class="article-card-bottom"><span>{minutes(article)} {ui.minutes}</span><span>{ui.readArticle}<Icon name="arrow" size={17}/></span></div>
