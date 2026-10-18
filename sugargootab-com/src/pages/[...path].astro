@@ -28,7 +28,10 @@ let type=path==='/faq/'?'faq':path==='/articles/'?'articles':article?'article':p
 let data:any=null,error='',status=type==='404'?404:200;
 try {
  if(type==='home'||type==='categories')data=await home();
- if(type==='listing')data=await listing(category,q,sort,page);
+ if(type==='listing'){
+  data=await listing(category,q,sort,page);
+  if(page>data.pages)return Astro.redirect(pageURL(data.pages),302);
+ }
  if(type==='detail')data=await detail(path.slice('/products'.length));
 } catch(e:any){error=c.error;status=e.status===404?404:503;console.error('Catalogue read failed',e.message);}
 Astro.response.status=status;
@@ -109,7 +112,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
         <select name="sort" aria-label={t.popular}><option value="new" selected={sort==='new'}>{t.latest}</option><option value="click" selected={sort==='click'}>{t.popular}</option><option value="price" selected={sort==='price'}>{t.priceSort}</option></select>
         <button class="button" type="submit">{t.search}<Icon name="arrow" size={18}/></button>
        </form>
-       {data&&<><div class="results-line"><span>{data.total} {t.results}{q&&` · “${q}”`}</span>{q&&<a href={link(path)}>{t.clear} ×</a>}</div><div class="product-grid">{data.products.map((p:any,i:number)=><Card {basePath} product={p} t={t} names={names} lang={lang} eager={i<4}/>)}</div>{data.products.length===0&&<div class="empty-state"><Icon name="search" size={36}/><p>{t.empty}</p></div>}<Pagination {page} pages={data.pages} {t} urlFor={pageURL}/></>}
+       {data&&<><div class="results-line"><span>{data.total>0&&`${data.start}–${data.end} / `}{data.total} {t.results}{q&&` · “${q}”`}</span>{q&&<a href={link(path)}>{t.clear} ×</a>}</div><div class="product-grid">{data.products.map((p:any,i:number)=><Card {basePath} product={p} t={t} names={names} lang={lang} eager={i<4}/>)}</div>{data.products.length===0&&<div class="empty-state"><Icon name="search" size={36}/><p>{t.empty}</p></div>}<Pagination {page} pages={data.pages} {t} urlFor={pageURL}/></>}
       </section>
      </div>
     </>}

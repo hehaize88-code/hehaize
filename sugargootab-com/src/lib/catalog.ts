@@ -3,6 +3,10 @@ export const ORIGIN = 'https://cnbuycha.com';
 export const LOGO = '/brand/sugargoo-logo.png';
 export const FAVICON = '/brand/favicon.ico';
 export const REGISTER = 'https://www.sugargoo.com/register?redirect=/order/manual';
+// Keep a shared page size across viewport widths, so copied links and language
+// switches identify the same products. CNBUYCHA's upstream pages contain 60.
+export const LISTING_PAGE_SIZE = 16;
+const SOURCE_PAGE_SIZE = 60;
 export const slugs = ['shoes','hoodies-sweaters','t-shirts','jackets','pants-shorts','headwear','accessories','short-sets','electronics','other-stuff','jersey'];
 export type Product = { path: string; title: string; image: string; price: string; category: string };
 const txt = (el: any) => (el?.textContent || '').trim();
@@ -43,14 +47,27 @@ export async function home() {
   return {categories, products};
 }
 export async function listing(category: string, query: string, sort: string, page: number) {
-  const params = new URLSearchParams({sort, page: String(page)});
+  const offset = (page - 1) * LISTING_PAGE_SIZE;
+  const sourcePage = Math.floor(offset / SOURCE_PAGE_SIZE) + 1;
+  const withinPage = offset % SOURCE_PAGE_SIZE;
+  const params = new URLSearchParams({sort, page: String(sourcePage)});
   if (query) params.set('q',query.slice(0,120));
   const path = slugs.includes(category) ? `/${category}/` : '/AllProducts/';
   const doc = await source(`${path}?${params}`);
   const summary = txt(doc.querySelector('.results-summary'));
   if (!summary) throw new Error('Catalog markup changed');
   const total = Number(summary.replace(/\D/g,''));
-  return {products: cards(doc), total, pages: Math.max(1,Math.ceil(total/60))};
+  let products = cards(doc).slice(withinPage, withinPage + LISTING_PAGE_SIZE);
+  // A 16-item window may straddle two source pages (e.g. items 49–64).
+  // Read the next original page only when the requested window needs it.
+  if (Math.min(offset + LISTING_PAGE_SIZE, total) > sourcePage * SOURCE_PAGE_SIZE) {
+    params.set('page', String(sourcePage + 1));
+    const next = await source(`${path}?${params}`);
+    if (!txt(next.querySelector('.results-summary'))) throw new Error('Catalog markup changed');
+    const remaining = LISTING_PAGE_SIZE - (SOURCE_PAGE_SIZE - withinPage);
+    products = products.concat(cards(next).slice(0, remaining));
+  }
+  return {products, total, pages: Math.max(1,Math.ceil(total/LISTING_PAGE_SIZE)), start: Math.min(offset+1,total), end: Math.min(offset+products.length,total)};
 }
 export function purchase(sourceUrl: string) {
   try {

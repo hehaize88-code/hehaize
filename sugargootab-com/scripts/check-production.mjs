@@ -51,36 +51,69 @@ assert.equal(articleDoc.querySelectorAll('[data-reading-section]').length,9);
 assert.equal(articleDoc.querySelectorAll('[data-reading-section][open]').length,9,'Full article present without JS');
 assert(articleDoc.querySelector('[data-expand-reading]'));
 
-// Exercise rendered pagination, including boundary and filtered localized links.
+// The public 16-item pages must preserve the source's 60-item sequence.
 const originalFetch=globalThis.fetch;
-let sourceTotal=3427;
+let sourceTotal=3427, failSourcePage=0, paginationCases=0;
+let sourceRequests=[];
 globalThis.fetch=async input=>{
  const url=new URL(input instanceof Request?input.url:String(input));
  assert.equal(url.origin,'https://cnbuycha.com');
- return new Response('<div class="results-summary">'+sourceTotal+' products</div>');
+ sourceRequests.push(url);
+ const sourcePage=Number(url.searchParams.get('page'));
+ if(sourcePage===failSourcePage)return new Response('Source unavailable',{status:503});
+ const first=(sourcePage-1)*60+1,last=Math.min(sourcePage*60,sourceTotal);
+ const cards=Array.from({length:Math.max(0,last-first+1)},(_,i)=>{
+  const id=first+i;
+  return `<article class="product-card"><a class="product-title" href="/headwear/${id}.html"><h3>Product ${id}</h3></a><img src="https://cnbuycha.com/media/${id}.jpg"><span class="product-price">${id}.00</span></article>`;
+ }).join('');
+ return new Response('<div class="results-summary">'+sourceTotal+' products</div>'+cards);
 };
+const productIds=doc=>[...doc.querySelectorAll('.product-card h3')].map(n=>Number(n.textContent.replace('Product ','')));
 try {
- for(const [page,numbers] of [[1,[1,2,3]],[2,[1,2,3]],[29,[28,29,30]],[58,[56,57,58]]]){
+ for(const [page,numbers] of [[1,[1,2,3]],[2,[1,2,3]],[4,[3,4,5]],[8,[7,8,9]],[15,[14,15,16]],[16,[15,16,17]],[29,[28,29,30]],[215,[213,214,215]]]){
+  sourceRequests=[];
   const response=await request('/fr/category/headwear/?q=hat&sort=price&page='+page);
   assert.equal(response.status,200);
   const doc=parseHTML(await response.text()).document;
   const nav=doc.querySelector('.numbered-pagination');
   assert.deepEqual([...nav.querySelectorAll('.page-number')].map(n=>Number(n.textContent)),numbers);
   assert.equal(nav.querySelector('[aria-current=page]').textContent,String(page));
-  assert.equal(nav.querySelectorAll('[aria-disabled=true]').length,page===1||page===58?1:0);
+  assert.equal(nav.querySelectorAll('[aria-disabled=true]').length,page===1||page===215?1:0);
+  const start=(page-1)*16+1,end=Math.min(page*16,sourceTotal);
+  assert.deepEqual(productIds(doc),Array.from({length:end-start+1},(_,i)=>start+i),'No missing or repeated products across source boundaries');
+  assert(doc.querySelector('.results-line').textContent.startsWith(`${start}–${end} / ${sourceTotal}`));
+  assert.equal(sourceRequests.length,Math.floor((end-1)/60)-Math.floor((start-1)/60)+1);
+  for(const url of sourceRequests){assert.equal(url.pathname,'/headwear/');assert.equal(url.searchParams.get('q'),'hat');assert.equal(url.searchParams.get('sort'),'price');}
   for(const link of nav.querySelectorAll('a')){
    const url=new URL(link.getAttribute('href'),targets.production);
    assert.equal(url.pathname,'/fr/category/headwear/');assert.equal(url.searchParams.get('q'),'hat');assert.equal(url.searchParams.get('sort'),'price');
-   assert(Number(url.searchParams.get('page'))>=1&&Number(url.searchParams.get('page'))<=58);
+   assert(Number(url.searchParams.get('page'))>=1&&Number(url.searchParams.get('page'))<=215);
   }
   if(page>1)assert.equal(new URL(nav.querySelector('[rel=prev]').getAttribute('href'),targets.production).searchParams.get('page'),String(page-1));
-  if(page<58)assert.equal(new URL(nav.querySelector('[rel=next]').getAttribute('href'),targets.production).searchParams.get('page'),String(page+1));
+  if(page<215)assert.equal(new URL(nav.querySelector('[rel=next]').getAttribute('href'),targets.production).searchParams.get('page'),String(page+1));
+  paginationCases++;
  }
- for(const total of [0,1,60,61]){
-  sourceTotal=total;const response=await request('/spreadsheet/');
-  const doc=parseHTML(await response.text()).document;const nav=doc.querySelector('.numbered-pagination');
-  assert.equal(nav.querySelectorAll('.page-number').length,total>60?2:1);
-  assert.equal(nav.querySelectorAll('[aria-disabled=true]').length,total>60?1:2);
+ for(const total of [0,1,16,17,60,61,71]){
+  sourceTotal=total;const pageCount=Math.max(1,Math.ceil(total/16)),allIds=[];
+  for(let page=1;page<=pageCount;page++){
+   sourceRequests=[];
+   const response=await request('/spreadsheet/?page='+page);
+   assert.equal(response.status,200);
+   const doc=parseHTML(await response.text()).document,nav=doc.querySelector('.numbered-pagination');
+   const ids=productIds(doc);allIds.push(...ids);
+   assert(ids.length<=16);assert(sourceRequests.length<=2);
+   assert.equal(nav.querySelectorAll('.page-number').length,Math.min(3,pageCount));
+   assert.equal(nav.querySelectorAll('[aria-disabled=true]').length,Number(page===1)+Number(page===pageCount));
+   paginationCases++;
+  }
+  assert.deepEqual(allIds,Array.from({length:total},(_,i)=>i+1),'Every source product remains reachable');
  }
+ const beyond=await request('/fr/category/headwear/?q=hat&sort=price&page=99');
+ assert.equal(beyond.status,302);
+ assert.equal(beyond.headers.get('Location'),'/fr/category/headwear/?sort=price&page=5&q=hat');
+ sourceTotal=71;failSourcePage=2;
+ const failed=await request('/spreadsheet/?page=4');
+ assert.equal(failed.status,503,'A failed second source page must not produce a partial successful page');
+ assert.match(failed.headers.get('X-Robots-Tag'),/noindex/);
 }finally{globalThis.fetch=originalFetch;}
-console.log(JSON.stringify({approvedDesign:'pass',legacyPreviewRedirect:308,paginationCases:8,articleSections:'9 complete disclosures'}));
+console.log(JSON.stringify({approvedDesign:'pass',legacyPreviewRedirect:308,pageSize:16,paginationCases,upstreamBoundaryChecks:'pass',completeCatalogueSequence:'pass',outOfRangeRedirect:302,upstreamFailure:503,articleSections:'9 complete disclosures'}));
