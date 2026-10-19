@@ -1,0 +1,13 @@
+---
+import Icon from './Icon.astro';
+import {localized} from '../lib/i18n';
+import {contentUI} from '../lib/content-ui';
+const {article,lang='en'}=Astro.props;
+const ui=contentUI(lang);
+---
+<a class="article-card" href={localized(lang,article.path)}>
+ <div class="article-card-top"><span lang="en">{article.topic}</span><span class="article-number">{String(article.order).padStart(2,'0')}</span></div>
+ <h3 lang="en">{article.title}</h3>
+ <p lang="en">{article.description}</p>
+ <div class="article-card-bottom"><span>{ui.read}<Icon name="arrow" size={17}/></span><small lang="en">{article.minutes} min · English</small></div>
+</a>

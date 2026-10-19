@@ -43,7 +43,7 @@ const unknown=await render('/does-not-exist/');assert.equal(unknown.r.status,404
 const visual=await render('/search/visual/');assert.equal(visual.d.querySelectorAll('input[type=file]').length,0);
 const www=await worker.fetch(new Request('https://www.superbuytab.com/de/spreadsheet/?q=Adidas&page=2'),{},{});
 assert.equal(www.status,308);assert.equal(www.headers.get('Location'),'https://superbuytab.com/de/spreadsheet/?q=Adidas&page=2');
-const sitemap=await worker.fetch(new Request(origin+'/sitemap.xml'),{},{});const xml=await sitemap.text();assert.equal(sitemap.status,200);assert.equal((xml.match(/<loc>/g)||[]).length,96);assert(!xml.includes('chatgpt.site'));
+const sitemap=await worker.fetch(new Request(origin+'/sitemap.xml'),{},{});const xml=await sitemap.text();assert.equal(sitemap.status,200);assert.equal((xml.match(/<loc>/g)||[]).length,107);assert(!xml.includes('chatgpt.site'));assert(!xml.includes('/de/articles/'));
 const robots=await worker.fetch(new Request(origin+'/robots.txt'),{},{});assert.match(await robots.text(),/Allow: \/\nSitemap: https:\/\/superbuytab\.com\/sitemap\.xml/);
 const preview=await worker.fetch(new Request('https://superbuytab-com.example.workers.dev/guide/'),{},{});assert.match(preview.headers.get('X-Robots-Tag'),/noindex/);
 assert.match(detail.r.headers.get('X-Robots-Tag'),/noindex/);assert.match(switched.r.headers.get('X-Robots-Tag'),/noindex/);
