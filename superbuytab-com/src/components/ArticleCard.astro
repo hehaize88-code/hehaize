@@ -6,8 +6,8 @@ const {article,lang='en'}=Astro.props;
 const ui=contentUI(lang);
 ---
 <a class="article-card" href={localized(lang,article.path)}>
- <div class="article-card-top"><span lang="en">{article.topic}</span><span class="article-number">{String(article.order).padStart(2,'0')}</span></div>
- <h3 lang="en">{article.title}</h3>
- <p lang="en">{article.description}</p>
- <div class="article-card-bottom"><span>{ui.read}<Icon name="arrow" size={17}/></span><small lang="en">{article.minutes} min · English</small></div>
+ <div class="article-card-top"><span>{article.topic}</span><span class="article-number">{String(article.order).padStart(2,'0')}</span></div>
+ <h3>{article.title}</h3>
+ <p>{article.description}</p>
+ <div class="article-card-bottom"><span>{ui.read}<Icon name="arrow" size={17}/></span><small>{article.minutes} {ui.minutes}</small></div>
 </a>

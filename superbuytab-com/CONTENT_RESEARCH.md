@@ -59,3 +59,8 @@ These are observed editorial targets, not evidence of rankings, measured demand 
 - Article interfaces retain locale navigation; English content is visibly labelled, has `lang=en`, and canonical points to English. Non-English article wrappers are noindex and have no false translation hreflang entries.
 - Sitemap: 96 existing localized core pages + 11 English editorial URLs = 107. Preview remains noindex; formal domain still unbound.
 - Full article translations are pending. They must preserve complete paragraphs, tables and factual scope before locale indexing is enabled. The 24 FAQ translations received structural and numerical checks, not independent native-speaker review.
+
+
+## 2026-10-19 翻译更新
+
+用户要求补齐后，首批10篇长文现已提供23个其他语言的完整译文，合计240篇。此结果取代此前英文先行的临时发布范围。各语言段落、表格、数字及链接对齐；正式语言SEO可用，预览仍noindex。正文机器辅助翻译与审校边界记录在TRANSLATION_NOTES.md。翻译没有增加政策断言，官方核对日期不变。

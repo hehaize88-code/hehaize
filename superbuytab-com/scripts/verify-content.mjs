@@ -46,17 +46,54 @@ for(const code of locales){
  assert(!doc.body.textContent.includes('undefined'));
  if(code!=='en')assert.notEqual(schema.mainEntity[0].name,'What does Superbuy do?',code+' English FAQ fallback');
  const hub=await render(prefix+'/articles/');assert.equal(hub.doc.querySelectorAll('.article-card').length,10);
- assert.equal(hub.doc.querySelector('link[rel=canonical]').href,origin+'/articles/');
+ assert.equal(hub.doc.querySelector('link[rel=canonical]').href,origin+prefix+'/articles/');
+ assert.equal(hub.doc.querySelectorAll('link[hreflang]').length,25);
+ assert.equal(hub.response.headers.get('X-Robots-Tag'),'index, follow');
  if(code!=='en'){
-  assert.match(hub.response.headers.get('X-Robots-Tag'),/noindex/);
-  assert(hub.doc.querySelector('.language-note'));
-  assert.equal(hub.doc.querySelectorAll('link[hreflang]').length,0);
+  assert(!hub.doc.querySelector('.language-note'));
+  assert(!hub.doc.body.textContent.includes('min · English'));
+  assert.notEqual(hub.doc.querySelector('.article-card h3').textContent,(await render('/articles/')).doc.querySelector('.article-card h3').textContent);
  }
 }
 const localizedArticle=await render('/de/articles/superbuy-fees/');
-assert.equal(localizedArticle.doc.querySelector('article').lang,'en');
+assert.equal(localizedArticle.doc.querySelector('article').lang,'de');
 assert.equal(localizedArticle.doc.querySelector('.language-menu a[lang="fr"]').getAttribute('href'),'/fr/articles/superbuy-fees/');
-assert.match(localizedArticle.response.headers.get('X-Robots-Tag'),/noindex/);
+assert.equal(localizedArticle.response.headers.get('X-Robots-Tag'),'index, follow');
+
+for(const code of locales.filter(c=>c!=='en')){
+ for(const file of files){
+  const slug=file.replace(/\.md$/,'');
+  const enRaw=(await readFile('src/content/articles/'+file,'utf8')).split('---').slice(2).join('---').trim().split('\n');
+  const localRaw=(await readFile(`src/content/articles/${code}/${file}`,'utf8')).split('---').slice(2).join('---').trim().split('\n');
+  assert.equal(localRaw.length,enRaw.length,`${code}/${slug} source block count`);
+  const numberTokens=text=>(text.replace(/\]\([^)]*\)/g,'').replace(/(?<=\d)[, .\u00a0](?=\d{3}\b)/g,'').match(/\d+/g)||[]).sort();
+  enRaw.forEach((line,i)=>{
+   let expected=numberTokens(line),actual=numberTokens(localRaw[i]);
+   if(line.includes('twenty tabs'))actual=actual.filter(n=>n!=='20');
+   assert.deepEqual(actual,expected,`${code}/${slug} numerical facts line ${i+1}`);
+  });
+  const en=(await render(`/articles/${slug}/`)).doc;
+  const {response,doc}=await render(`/${code}/articles/${slug}/`);
+  assert.equal(response.status,200,`${code}/${slug}`);
+  assert.equal(doc.querySelector('article').lang,code);
+  assert.equal(doc.querySelector('link[rel=canonical]').href,`${origin}/${code}/articles/${slug}/`);
+  assert.equal(doc.querySelectorAll('link[hreflang]').length,25);
+  for(const selector of ['.article-prose>p','.article-prose h2','.article-prose th','.article-prose td','.article-prose li','.article-prose a']){
+   assert.equal(doc.querySelectorAll(selector).length,en.querySelectorAll(selector).length,`${code}/${slug} ${selector}`);
+  }
+  const schema=JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent);
+  assert.equal(schema.inLanguage,code);assert.equal(schema.headline,doc.querySelector('h1').textContent);
+  assert(!doc.body.textContent.includes('undefined'));
+  assert(!/ZXQ\d|<unk>|>>[a-z]+<</.test(doc.querySelector('.article-prose').textContent));
+  const englishParagraphs=[...en.querySelectorAll('.article-prose>p')].map(p=>p.textContent);
+  for(const p of doc.querySelectorAll('.article-prose>p'))assert(!englishParagraphs.includes(p.textContent),`${code}/${slug} English paragraph`);
+  for(const a of doc.querySelectorAll('.article-prose a')){
+   const href=a.getAttribute('href');if(href.startsWith('/'))assert(href.startsWith('/'+code+'/'),`${code}/${slug} untranslated internal link`);
+  }
+  assert(!doc.querySelector('[data-article-contents]').hasAttribute('open'),'Mobile TOC must start collapsed');
+ }
+}
+
 const unknown=await render('/articles/not-a-real-guide/');assert.equal(unknown.response.status,404);
 const filtered=await render('/spreadsheet/?q=nike&category=jersey&sort=price');assert.equal(filtered.response.status,200);
 for(const link of filtered.doc.querySelectorAll('.catalog-sidebar a')){
@@ -80,4 +117,4 @@ const second=await render(nextLink);assert.equal(second.response.status,200);
 assert.equal(second.doc.querySelector('.pagination [aria-current=page]').textContent,'2');
 const firstProducts=[...jersey.doc.querySelectorAll('.product-card')].map(a=>a.getAttribute('href'));
 assert([...second.doc.querySelectorAll('.product-card')].every(a=>!firstProducts.includes(a.getAttribute('href'))));
-console.log(JSON.stringify({passed:true,articles:10,wordRange:[Math.min(...minimums),Math.max(...minimums)],faqPerLanguage:26,languages:24,categoryReset:'passed',paginationFirstMiddleLast:'passed',sourceCategoryTotal:total,englishEditorialCanonical:'passed'}));
+console.log(JSON.stringify({passed:true,articles:240,wordRange:[Math.min(...minimums),Math.max(...minimums)],faqPerLanguage:26,languages:24,categoryReset:'passed',paginationFirstMiddleLast:'passed',sourceCategoryTotal:total,localizedEditorialCanonical:'passed'}));
