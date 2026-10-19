@@ -102,3 +102,9 @@
  .footer-grid>div>a:not(.brand){margin-top:3px;padding:5px 0;line-height:1.4}.footer-bottom{padding-block:12px;gap:6px;line-height:1.5}
  .empty-state{min-height:220px;padding:30px 15px}
 }
+/* Anchor the mobile language panel to the full header, including narrow screens. */
+@media(max-width:560px){
+ .header-inner{position:relative}
+ .language-picker{position:static}
+ .language-menu{left:0;right:0;top:52px;width:100%;max-width:100%;max-height:60vh}
+}
