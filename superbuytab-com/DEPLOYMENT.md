@@ -1,6 +1,6 @@
 # SuperbuyTab 部署参数
 
-本文件是具体部署配置，**不是已上线证明**。配置准备和 dry-run 不连接 Cloudflare，也不修改域名 DNS。
+正式站已于2026-10-19上线：**https://superbuytab.com**。独立正式Worker为superbuytab-com；superbuytab.com和www.superbuytab.com均已绑定，HTTPS与308跳转已实际验收。正式部署记录见文末；下方保留预览阶段历史。
 
 ## 先发布独立预览
 
@@ -42,7 +42,7 @@
 | Worker 名称 | `superbuytab-com` |
 | 根目录 / Root directory | `superbuytab-com` |
 | 构建命令 / Build command | `npm run build` |
-| 部署命令 / Deploy command | `npx wrangler deploy` |
+| 部署命令 / Deploy command | `npm run deploy` |
 | Node 版本 | `24`（项目已提供 `.node-version`） |
 | 构建关注路径 | `superbuytab-com/**` |
 
@@ -50,7 +50,7 @@
 
 `wrangler.jsonc` 已包含：入口 `dist/server/index.js`；静态资源 `dist/client`，绑定名 `ASSETS`；自定义域名 `superbuytab.com` 和 `www.superbuytab.com`；`nodejs_compat`，无 D1、R2、KV 或后台服务。
 
-Cloudflare 需要有该域名的有效 zone 和部署权限，实际部署时才会应用这些域名。没有在本轮验证用户购买渠道、账户zone、DNS或证书状态。
+Cloudflare账户内superbuytab.com的zone已Active；正式部署前无DNS记录。Wrangler已自动绑定apex和www自定义域名；公开HTTPS访问有效。仅沿用既有GitHub连接与构建凭据，没有创建新令牌。
 
 这是 SSR Worker，不能用 GitHub Pages 静态目录或传统 Pages 输出目录部署。也不需要反向代理此前的 ChatGPT 预览站。
 
@@ -66,7 +66,7 @@ Cloudflare 需要有该域名的有效 zone 和部署权限，实际部署时才
 2. 目录搜索、价格排序、第3/4页跨上游页边界均正常。
 3. 不同详情购买 URL 解码后为各自原始商品 URL，含 ES7pVI。
 4. `www`保留路径和查询跳转，官方logo/favicon与静态脚本返回200。
-5. `sitemap.xml`含96个正式域名语言入口，首页`index, follow`，搜索和错误页`noindex`。
+5. `sitemap.xml`含360个正式域名语言入口，首页`index, follow`，搜索和错误页`noindex`。
 6. 记录成功部署标识和实际公网验证结果，之后再进行GSC/Bing/GA4接入。
 
 本轮测试命令：`npm run build`、`npm run check`、`npx wrangler deploy --dry-run`。dry-run不会发布网站。
@@ -77,3 +77,15 @@ Cloudflare 需要有该域名的有效 zone 和部署权限，实际部署时才
 ## 2026-10-19 完整翻译与手机布局更新
 
 运行源码：5555a3eca18a0c2a540d2273554518c125872b91。自动构建53f36350-8cef-42f6-86c8-a470da84b1bb成功，59秒，活动版本前缀233b625a。公开地址继续为https://superbuytab-preview.hehaize88.workers.dev/；240篇文章与24语言结构/数字验证通过，390px全类页面与320px语言菜单在用户Chrome实测。正式域名未绑定，预览noindex，部署绑定仍只有ASSETS。
+
+
+## 2026-10-19 正式域名上线完成
+
+- 用户认可预览后授权部署和域名绑定。正式地址：https://superbuytab.com/；www.superbuytab.com为308跳转入口。
+- 正式Worker：superbuytab-com。GitHub main，根目录superbuytab-com，build npm run build，deploy npm run deploy，NODE_VERSION=24。
+- Build：4364bca6-48df-446d-a189-11491b2de1af，Ready，40秒，100%流量，活动版本前缀f9ea8a79。部署时GitHub main为be0bd722e14b545b9b6b44de1bb8693696cec162；运行源码仍5555a3eca18a0c2a540d2273554518c125872b91。
+- 正式构建关注路径include superbuytab-com/**，exclude superbuytab-com/*.md，额外分支预览关闭；预览Worker继续独立运行。
+- Cloudflare Domains表已列出apex和www两个Production域名。公开HTTPS正常；HTTP/www保留路径与参数308到主站。
+- 用户Chrome首页所有商品图片正常。首页、文章、FAQ、搜索、详情、品牌资源200；首页/文章index，搜索/详情noindex，预览noindex。
+- robots允许抓取，sitemap含360个正式URL；24语言自引用canonical与25个hreflang。搜索结果20项，原始商品ID与ES7pVI购买参数正常。
+- 本轮仅部署和同步文档；不修改运行代码。GSC/Bing提交、GA4接入尚未执行。

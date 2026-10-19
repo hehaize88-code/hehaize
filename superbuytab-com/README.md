@@ -4,7 +4,7 @@
 
 源码目录：`hehaize88-code/hehaize/superbuytab-com/`。此目录独立构建、独立部署。
 
-当前状态：独立公开预览已上线：https://superbuytab-preview.hehaize88.workers.dev 。已在用户Chrome确认真实商品与图片正常。正式superbuytab.com尚未绑定；原chatgpt.site地址已停止作为预览交付。
+当前状态：正式站已上线：https://superbuytab.com 。www和HTTP保留路径、参数308跳转至HTTPS主域名，用户Chrome真实商品与图片正常。独立预览 https://superbuytab-preview.hehaize88.workers.dev 保留并继续noindex。原chatgpt.site地址已停止作为预览交付。
 
 ## 本地运行
 
@@ -17,7 +17,7 @@ npm run build
 npm run check
 ```
 
-`npm run deploy` 会实际部署到已认证的 Cloudflare 账户，只有完成托管配置后才执行。独立预览已通过Cloudflare GitHub构建发布；正式域名部署尚未执行。
+`npm run deploy` 会实际部署到已认证的 Cloudflare 账户。正式Worker `superbuytab-com` 和预览Worker `superbuytab-preview` 已分别连接同一仓库main分支、根目录superbuytab-com；二者使用各自部署命令。构建关注路径include `superbuytab-com/**`、exclude `superbuytab-com/*.md`，其他站目录变更不触发本项目构建。
 
 ## 数据和链接
 
@@ -44,3 +44,4 @@ Logo/favicon 使用 Superbuy 官网原始 SVG，见 [ASSET_SOURCES.md](ASSET_SOU
 非正式来源域名保持 noindex。已发布的临时 Sites 预览独立保留，正式项目不包含它的 `.openai/hosting.json`。
 
 见 [DEPLOYMENT.md](DEPLOYMENT.md) 进行部署，见 [PROJECT_MEMORY.md](PROJECT_MEMORY.md) 了解已确认需求和限制。
+

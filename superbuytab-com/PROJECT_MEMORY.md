@@ -1,7 +1,7 @@
 # Superbuy 独立推荐站：项目记忆与实施规划
 
-更新日期：2026-10-19（Asia/Shanghai），已通过用户 Chrome 完成独立公开预览部署与验收
-当前阶段：独立公开预览 https://superbuytab-preview.hehaize88.workers.dev 已上线，用户 Chrome 中正常显示真实商品图片；原 chatgpt.site 链接不再作为交付地址。superbuytab.com 已购买、尚未绑定正式站；未修改 cnbuycha。
+更新日期：2026-10-19（Asia/Shanghai），正式域名部署与公网验收完成
+当前阶段：正式站 https://superbuytab.com 已上线，www与HTTP保留路径/参数308跳转至HTTPS主域名。用户Chrome真实商品与图片正常；GitHub main的superbuytab-com/自动部署到独立正式Worker。预览 https://superbuytab-preview.hehaize88.workers.dev 保留且noindex。未修改cnbuycha；正式上线细节见第18节。
 本文件是后续开发的连续记录。已确认要求、事实、建议和未解决事项必须分别维护，不能把建议写成用户已批准的决定。
 
 ## 1. 用户已确定的要求
@@ -475,3 +475,26 @@ GitHub提交完成：c3d2fb75635131a921456adad4349a9a7b922851，基于11b55e573c
 - 正式域名仍未绑定；当前预览无需新链接。译文内容完整，但没有声明每种语言逐句母语审校。商品名称继续保留主站提供的原文。
 
 - 最终运行源码5555a3eca18a0c2a540d2273554518c125872b91已自动部署；Cloudflare构建53f36350-8cef-42f6-86c8-a470da84b1bb显示Ready，59秒，活动版本前缀233b625a。本轮仅文档收尾不再触发构建。
+
+## 18. 正式上线与域名绑定（2026-10-19，已完成）
+
+- 用户认可完整翻译与手机布局预览，明确同意接下来部署并绑定域名。此授权取代此前等待预览确认的限制。
+- 核对GitHub main为be0bd722e14b545b9b6b44de1bb8693696cec162，运行源码仍5555a3eca18a0c2a540d2273554518c125872b91。
+- Cloudflare浏览器当前账户中superbuytab.com为Active；沿用已授权的GitHub连接与构建凭据，创建独立正式Worker superbuytab-com，保留superbuytab-preview。
+- 正式主地址https://superbuytab.com；www与HTTP归一到HTTPS主域名，并保留路径和参数。源码继续只位于superbuytab-com/，商品数据实时来自cnbuycha，无新数据库。
+- 绑定与公网验收尚在进行；以下追加实际结果。
+
+### 正式部署与验收结果（约14:30–14:36 Asia/Shanghai）
+
+- 正式Worker superbuytab-com已创建，GitHub main、根目录superbuytab-com、build=npm run build、deploy=npm run deploy、NODE_VERSION=24。沿用现有构建凭据，没有创建新令牌或扩大GitHub权限。
+- 构建4364bca6-48df-446d-a189-11491b2de1af成功，40秒，部署表Ready、100%流量，活动版本前缀f9ea8a79。部署时main为be0bd722e14b545b9b6b44de1bb8693696cec162（运行源码5555a3eca18a0c2a540d2273554518c125872b91）。没有从旧日志推断完整Version ID。
+- 部署前DNS为0条记录；部署配置已自动建立superbuytab.com与www.superbuytab.com两个Production自定义域名。公开HTTPS均可用；无需域名转移、购买或续费。
+- 已保存生产构建关注路径include superbuytab-com/**、exclude superbuytab-com/*.md；保持main生产分支、关闭额外分支预览。根目录文档提交不触发本项目，嵌套的文章Markdown变更仍正常触发。
+- 浏览器实际访问https://superbuytab.com成功，主页所有13个img元素加载成功，商品图片来自cnbuycha；正式站标签已保留给用户。截图仅为公开首页验收，无账户信息。
+- HTTP与HTTPS的www样本、HTTP的apex样本均308至https://superbuytab.com/de/guide/?x=1，路径和参数保留；用户Chrome验证最终URL和德语指南标题正常。
+- 公开HTTP验收：首页、Articles集合、德语费用文章、FAQ、搜索、商品详情、logo/favicon均200。首页与编辑页面index, follow；搜索和商品详情noindex, follow；完整文章自引用canonical、25个hreflang。
+- /robots.txt允许抓取并声明https://superbuytab.com/sitemap.xml；sitemap返回200、360个URL，全部指向正式域名。
+- 搜索adidas返回20项；实际有效价格排序参数sort=price返回200、20项。示例详情3470购买链接解码为Weidian原ID7876894732，含partnercode=ES7pVI。
+- 独立预览仍200、noindex。正式Worker自带workers.dev入口也保留，非正式域名由代码保持noindex。
+- Python urllib默认客户端曾返回1010；curl与用户Chrome均正常，没有关闭Cloudflare安全保护或伪造浏览器凭据。验收结果采用后两者实际成功响应。
+- 数据、24语言240篇文章、26条FAQ和移动布局沿用已验收源码，本轮无运行代码修改、无新数据库。GSC/Bing提交与GA4接入留待后续任务，本轮没有宣称已收录。
