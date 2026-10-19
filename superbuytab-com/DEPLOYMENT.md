@@ -89,3 +89,7 @@ Cloudflare账户内superbuytab.com的zone已Active；正式部署前无DNS记录
 - 用户Chrome首页所有商品图片正常。首页、文章、FAQ、搜索、详情、品牌资源200；首页/文章index，搜索/详情noindex，预览noindex。
 - robots允许抓取，sitemap含360个正式URL；24语言自引用canonical与25个hreflang。搜索结果20项，原始商品ID与ES7pVI购买参数正常。
 - 本轮仅部署和同步文档；不修改运行代码。GSC/Bing提交、GA4接入尚未执行。
+
+## GA4接入 — 2026-10-19
+
+运行提交`dcd9530248bf3da0bfba7b11a08493fe9d34b321`已通过构建`72112fe4-254b-4bb5-90b1-d2a5663c6f35`上线，51秒、Ready、100%流量，活动版本前缀`a4143e81`。正式首页和德语文章各输出一次GA标签与config，预览均不输出。GA4资源559470846、数据流16156808279、衡量ID G-4DQX9MML4J，实时报告已收到page_view等事件。本节更新此前GA4尚未执行的历史记录。

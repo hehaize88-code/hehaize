@@ -1,7 +1,7 @@
 # Superbuy 独立推荐站：项目记忆与实施规划
 
 更新日期：2026-10-19（Asia/Shanghai），正式域名部署与公网验收完成
-当前阶段：正式站 https://superbuytab.com 已上线，www与HTTP保留路径/参数308跳转至HTTPS主域名。用户Chrome真实商品与图片正常；GitHub main的superbuytab-com/自动部署到独立正式Worker。预览 https://superbuytab-preview.hehaize88.workers.dev 保留且noindex。未修改cnbuycha；正式上线细节见第18节。
+当前阶段：正式站 https://superbuytab.com 已上线，www与HTTP保留路径/参数308跳转至HTTPS主域名。用户Chrome真实商品与图片正常；GitHub main的superbuytab-com/自动部署到独立正式Worker。预览 https://superbuytab-preview.hehaize88.workers.dev 保留且noindex。GA4已接入且收到实时page_view，资源559470846、衡量ID G-4DQX9MML4J；未修改cnbuycha。正式上线细节见第18节，统计接入见第19节。
 本文件是后续开发的连续记录。已确认要求、事实、建议和未解决事项必须分别维护，不能把建议写成用户已批准的决定。
 
 ## 1. 用户已确定的要求
@@ -498,3 +498,22 @@ GitHub提交完成：c3d2fb75635131a921456adad4349a9a7b922851，基于11b55e573c
 - 独立预览仍200、noindex。正式Worker自带workers.dev入口也保留，非正式域名由代码保持noindex。
 - Python urllib默认客户端曾返回1010；curl与用户Chrome均正常，没有关闭Cloudflare安全保护或伪造浏览器凭据。验收结果采用后两者实际成功响应。
 - 数据、24语言240篇文章、26条FAQ和移动布局沿用已验收源码，本轮无运行代码修改、无新数据库。GSC/Bing提交与GA4接入留待后续任务，本轮没有宣称已收录。
+
+## 19. Google Analytics 接入（2026-10-19，已完成）
+
+- 用户要求把当前域名superbuytab.com添加到analytics.google.com；授权包含创建独立GA4资源、网站统计代码部署和接收验证。
+- 在现有Analytics账户405518068内搜索superbuytab.com无结果后创建资源；名称superbuytab.com、报告时区中国GMT+8、币种USD；行业购物、业务规模暂选小型（可修改）；目标流量与互动。
+- 仅接入当前正式域名所有语言页面，不混入独立预览流量，不改其他网站的统计配置。
+
+### 配置、部署与验证
+
+- 独立GA4资源ID：559470846；数据流superbuytab.com Web，网址https://superbuytab.com，数据流ID 16156808279，衡量ID G-4DQX9MML4J。
+- 管理入口：https://analytics.google.com/analytics/web/#/a405518068p559470846/reports/intelligenthome 。原先打开的559298131属于其他网站，不是本项目资源。
+- 增强型衡量保持开启，包含网页浏览、滚动、出站点击等默认事件；未创建Measurement Protocol密钥、未修改其他网站资源。
+- src/pages/[...path].astro的公共head内使用Google官方gtag.js标准异步代码，并用现有production判定仅在https://superbuytab.com输出；所有语言和独立HTML页面覆盖，预览与workers.dev入口不输出。
+- npm ci及npm run build成功；本地构建Worker验证正式域名德语文章200、外部tag和config各一次；预览域名同路径200、tag/config均为零。
+- 运行代码提交dcd9530248bf3da0bfba7b11a08493fe9d34b321，基于2adbf4fb2ca1f210d4d26b30642e2e00087ee966，仅修改superbuytab-com/src/pages/[...path].astro。
+- 正式Cloudflare构建72112fe4-254b-4bb5-90b1-d2a5663c6f35成功，51秒，Ready、100%流量；活动版本前缀a4143e81。
+- 公开curl验证正式首页及/de/articles/superbuy-fees/均恰好一个gtag加载与一次config；独立预览首页均为零。Google代码安装界面显示已添加到https://superbuytab.com。
+- 使用实际Chrome访问正式首页，GA4首页过去30分钟活跃用户显示2，证明数据已经开始接收；此时首页历史统计和数据流状态仍可能显示未收到数据，为不同面板更新延迟，不能据此宣称安装失败。
+- 最终实时概览验证：过去30分钟和5分钟活跃用户均2；首页标题对应浏览次数2；first_visit、page_view、session_start各2。证据来自GA4资源559470846的真实实时报告，不是手工伪造事件。报告链接：https://analytics.google.com/analytics/web/#/a405518068p559470846/realtime/overview 。

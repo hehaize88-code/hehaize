@@ -45,3 +45,7 @@ Logo/favicon 使用 Superbuy 官网原始 SVG，见 [ASSET_SOURCES.md](ASSET_SOU
 
 见 [DEPLOYMENT.md](DEPLOYMENT.md) 进行部署，见 [PROJECT_MEMORY.md](PROJECT_MEMORY.md) 了解已确认需求和限制。
 
+
+## Google Analytics
+
+GA4资源559470846，数据流16156808279，衡量ID `G-4DQX9MML4J`。正式域名所有HTML页面加载标准异步gtag；预览域名不加载。2026-10-19已通过Google代码检测，并在实时报告确认page_view、first_visit、session_start。详情见PROJECT_MEMORY.md第19节。
