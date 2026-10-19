@@ -4,7 +4,7 @@
 
 源码目录：`hehaize88-code/hehaize/superbuytab-com/`。此目录独立构建、独立部署。
 
-当前状态：正式部署包准备完成；GitHub 提交不等于正式域名已经上线。原 chatgpt.site 预览被用户浏览器所遇到的 Cloudflare 安全规则拦截，不能视为用户可用。已新增独立 Worker 预览配置，实际部署及新链接尚待完成，见 DEPLOYMENT.md。
+当前状态：独立公开预览已上线：https://superbuytab-preview.hehaize88.workers.dev 。已在用户Chrome确认真实商品与图片正常。正式superbuytab.com尚未绑定；原chatgpt.site地址已停止作为预览交付。
 
 ## 本地运行
 
@@ -17,7 +17,7 @@ npm run build
 npm run check
 ```
 
-`npm run deploy` 会实际部署到已认证的 Cloudflare 账户，只有完成托管配置后才执行。本轮仅构建和 dry-run，不访问或修改 Cloudflare。
+`npm run deploy` 会实际部署到已认证的 Cloudflare 账户，只有完成托管配置后才执行。独立预览已通过Cloudflare GitHub构建发布；正式域名部署尚未执行。
 
 ## 数据和链接
 

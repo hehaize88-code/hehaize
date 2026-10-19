@@ -1,7 +1,7 @@
 # Superbuy 独立推荐站：项目记忆与实施规划
 
-更新日期：2026-10-19（Asia/Shanghai），已纳入10:48用户反馈公开预览被拦截
-当前阶段：原 chatgpt.site 预览对用户不可访问（Cloudflare 拦截页）；独立 Worker 预览配置已准备、尚未发布。正式域名 superbuytab.com 已购买；superbuytab-com 已提交 GitHub main；正式域名未绑定；未修改 cnbuycha。
+更新日期：2026-10-19（Asia/Shanghai），已通过用户 Chrome 完成独立公开预览部署与验收
+当前阶段：独立公开预览 https://superbuytab-preview.hehaize88.workers.dev 已上线，用户 Chrome 中正常显示真实商品图片；原 chatgpt.site 链接不再作为交付地址。superbuytab.com 已购买、尚未绑定正式站；未修改 cnbuycha。
 本文件是后续开发的连续记录。已确认要求、事实、建议和未解决事项必须分别维护，不能把建议写成用户已批准的决定。
 
 ## 1. 用户已确定的要求
@@ -380,3 +380,27 @@ https://www.superbuy.com/en/page/register/?ref=https%3A%2F%2Fwww.superbuy.com%2F
 - 正式域名上线仍需用户看过预览后的决定；独立预览配置不会自动占用superbuytab.com。
 
 官方配置参考：https://developers.cloudflare.com/workers/configuration/routing/workers-dev/ （本轮核实workers.dev可不接入自定义域名而发布Worker；不保证所有地区网络可达）。
+
+GitHub提交完成：c3d2fb75635131a921456adad4349a9a7b922851，基于11b55e573ce781436d22dbebda0fe0395f52059c，expected_sha保护、未强推；仅改superbuytab-com/内5个文件。新预览未发布，旧URL用户访问故障尚未解除。
+
+## 15. 浏览器接手与独立预览成功（2026-10-19 11:06–11:15 Asia/Shanghai）
+
+用户明确要求“你直接自己操作不行吗”，随后反馈“连不了”。本次直接完成操作，不再要求用户填写部署参数。
+
+- Cloudflare API工具返回UNAUTHORIZED，提示需要重新认证；不再重复尝试该接口。
+- Browser成功连接用户Chrome，领取用户已打开的superbuytab.com注册管理页。确认域名Active，属于当前账户；不操作续费或其他域名。
+- 当前Cloudflare账户ID为9010cea800ac2a140509889d88fe612e，workers.dev子域为hehaize88.workers.dev。与失效API默认账户不同，操作均在浏览器可见的当前账户内。
+- 搜索superbuytab时没有现有应用，创建superbuytab-preview Worker；沿用已授权的hehaize88-code GitHub连接和已存在的Workers Builds凭据。没有创建或提取新令牌，没有扩大GitHub应用权限。
+- 仓库hehaize88-code/hehaize、main、根目录superbuytab-com，build=npm run build，deploy=npm run deploy:preview，NODE_VERSION=24。未开启额外分支预览；未新增Access登录要求。
+- Build ID：f8b50f65-c0e6-459b-97b5-5da3749fa400。日志显示Node24.22.0，Astro构建成功，Wrangler4.151.1上传成功，仅ASSETS绑定。
+- 2026-10-19T03:10:42.960Z正式返回公开URL：https://superbuytab-preview.hehaize88.workers.dev 。Version ID：800fec19-e02f-4c0a-a145-fcb3f1ebe4b7。03:10:48.234Z构建最终Success。
+- 运行源码为c3d2fb75635131a921456adad4349a9a7b922851；随后仅同步文档与项目记忆，不改变已验收运行代码。
+- 保存构建关注路径：include=superbuytab-com/**，exclude=superbuytab-com/*.md，避免其他域名和本目录记录文件变更触发此预览。
+- 仪表盘按默认wrangler.jsonc显示名称不一致提示，因为实际部署显式使用wrangler.preview.jsonc；真实构建成功。未按提示修改正式Worker名；本轮检查GitHub没有打开的自动PR。后续不要把正式域名配置误改为预览名。
+
+### 实际访问验收
+
+- 用户Chrome新标签实际打开公开URL成功，标题和完整首页正常；截图可见官方Logo、3张首屏商品图、实时价格及3446项计数。当前document.images均complete且naturalWidth>0。该结果补足此前只有服务端HTTP200的局限。
+- 公开HTTP：首页200且8张商品卡；Adidas搜索+价格排序200且20项；样本详情200，Superbuy链接使用原始Weidian ID7876894732与ES7pVI；德语指南200且lang=de；Logo与favicon200image/svg+xml。
+- 预览HTML保持noindex, follow。没有通过购买或注册实际提交订单；商品质量/QC来源及搜图能力的此前限制不变。
+- 已将新预览标签保留给用户直接查看。正式superbuytab.com和www仍未绑定，等用户看设计后继续。

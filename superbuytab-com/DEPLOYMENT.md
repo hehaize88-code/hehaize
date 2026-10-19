@@ -23,7 +23,11 @@
 
 已经认证的 CLI 也可依次运行 `npm ci`、`npm run build`、`npm run deploy:preview`。最后一步会实际创建/更新该账户下同名 Worker；执行前确认账户和同名应用归属。新公开 URL 必须采用部署结果返回值，不猜测账户子域名。部署后检查真实商品、搜索、购买链接，并请用户验证浏览器能否打开。
 
-当前只准备配置，尚未发布此 Worker，没有可交付的新公开 URL。
+已于2026-10-19 11:10（Asia/Shanghai）通过用户Chrome完成发布：**https://superbuytab-preview.hehaize88.workers.dev**。Build ID：f8b50f65-c0e6-459b-97b5-5da3749fa400，Version ID：800fec19-e02f-4c0a-a145-fcb3f1ebe4b7。用户Chrome首页与商品图片正常；公开HTTP搜索、详情、德语指南和品牌资源检查通过。
+
+构建关注路径已保存为include `superbuytab-com/**`，exclude `superbuytab-com/*.md`。使用现有GitHub连接与构建凭据，无新令牌、数据库或正式域名绑定。
+
+仪表盘可能按默认wrangler.jsonc提示名称不一致；预览部署命令明确选择wrangler.preview.jsonc，已成功。不要为消除此提示改动正式Worker名或域名路由。
 
 参考：https://developers.cloudflare.com/workers/configuration/routing/workers-dev/
 
