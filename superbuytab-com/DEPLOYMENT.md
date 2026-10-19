@@ -72,3 +72,8 @@ Cloudflare 需要有该域名的有效 zone 和部署权限，实际部署时才
 本轮测试命令：`npm run build`、`npm run check`、`npx wrangler deploy --dry-run`。dry-run不会发布网站。
 
 参考：https://developers.cloudflare.com/workers/ci-cd/builds/configuration/
+
+
+## 2026-10-19 完整翻译与手机布局更新
+
+运行源码：5555a3eca18a0c2a540d2273554518c125872b91。自动构建53f36350-8cef-42f6-86c8-a470da84b1bb成功，59秒，活动版本前缀233b625a。公开地址继续为https://superbuytab-preview.hehaize88.workers.dev/；240篇文章与24语言结构/数字验证通过，390px全类页面与320px语言菜单在用户Chrome实测。正式域名未绑定，预览noindex，部署绑定仍只有ASSETS。
