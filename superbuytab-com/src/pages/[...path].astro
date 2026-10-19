@@ -65,6 +65,15 @@ const heroProducts=data?.products?.filter((p:any)=>p.image).slice(0,3)||[];
 <html lang={lang}>
 <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  {production && <Fragment>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-4DQX9MML4J"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4DQX9MML4J');
+    </script>
+  </Fragment>}
   <title>{title}{isHome?' · '+t.catalog+' · '+t.guide:' · Superbuy Spreadsheet'}</title>
   <meta name="description" content={description}/><meta name="robots" content={robots}/>
   <link rel="canonical" href={canonical.href}/><link rel="icon" type="image/svg+xml" href={FAVICON}/>
