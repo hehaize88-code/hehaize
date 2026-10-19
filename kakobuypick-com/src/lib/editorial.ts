@@ -17,7 +17,11 @@ export const sourceURLs: Record<string,string> = {
   estimate:'https://kakobuy.com/tools/estimate',
   manual:'https://kakobuy.com/item/notfound',
   help:'https://kakobuy.com/service/help/question',
-  catalog:'https://cnbuycha.com/'
+  catalog:'https://cnbuycha.com/',
+  withdrawal:'https://www.kakobuy.com/service/help/question?id=104',
+  forwardingInspection:'https://www.kakobuy.com/service/help/question?id=95',
+  euJune:'https://www.kakobuy.com/tipdetail?id=51',
+  euRoutes:'https://item2.kakobuy.com/tipdetail?id=52'
 };
 export function contentFor(lang: string): EditorialContent {
   const content=modules[`../content/editorial/${lang}.json`];

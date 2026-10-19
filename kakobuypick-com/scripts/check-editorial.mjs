@@ -21,15 +21,15 @@ for(const lang of locales){
  if(lang!=='en')checkTranslatedSentences(data,source,lang);
  if(lang!=='en')assert.notEqual(data.ui.sources,source.ui.sources,`${lang} untranslated source heading`);
  if(lang==='ga')assert.ok(/(cigireacht|iniúch)/i.test(data.ui.sourceLabels.inspection), 'Irish inspection label must describe inspection, not an invented regulation');
- assert.equal(data.articles.length,10,`${lang} articles`);assert.equal(data.faq.length,26,`${lang} FAQ`);
+ assert.equal(data.articles.length,13,`${lang} articles`);assert.equal(data.faq.length,26,`${lang} FAQ`);
  assert.equal(data.guide.sections.length,6);
  assert.deepEqual(data.articles.map(a=>a.slug),source.articles.map(a=>a.slug));
- for(let i=0;i<10;i++){
+ for(let i=0;i<source.articles.length;i++){
   assert.deepEqual(data.articles[i].sources,source.articles[i].sources);
-  assert.equal(data.articles[i].sections.length,5);
+  assert.equal(data.articles[i].sections.length,source.articles[i].sections.length);
   assert.equal(data.articles[i].checklist.length,4);
   assert.equal(data.articles[i].table.rows.length,source.articles[i].table.rows.length);
-  for(let j=0;j<5;j++){
+  for(let j=0;j<source.articles[i].sections.length;j++){
    const actual=data.articles[i].sections[j],original=source.articles[i].sections[j];
    assert.equal(actual.paragraphs.length,original.paragraphs.length);
    if(lang!=='en')assert.notEqual(actual.paragraphs.join(''),original.paragraphs.join(''),`${lang} untranslated article ${i} section ${j}`);
@@ -58,17 +58,23 @@ for(const lang of locales){
   const schema=JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);
   assert.ok(schema['@graph'].find(x=>x['@type']==='BreadcrumbList'));
   if(path==='/faq/'){assert.equal(document.querySelectorAll('.faq-answer').length,26);assert.equal(schema['@graph'].find(x=>x['@type']==='FAQPage').mainEntity.length,26);}
-  if(path==='/articles/')assert.equal(document.querySelectorAll('main .article-card').length,10);
+  if(path==='/articles/')assert.equal(document.querySelectorAll('main .article-card').length,13);
   if(path.startsWith('/articles/')&&path!=='/articles/'){
    const article=data.articles.find(a=>path.includes(a.slug));assert.equal(document.querySelector('.knowledge-heading h1').textContent,article.title);
    assert.equal(schema['@graph'].find(x=>x['@type']==='Article').inLanguage,lang);
-   assert.equal(document.querySelectorAll('.reading-body section').length,6);
+   assert.equal(document.querySelectorAll('.reading-body section').length,article.sections.length+1);
+   const articleSchema=schema['@graph'].find(x=>x['@type']==='Article');
+   assert.equal(articleSchema.datePublished,article.publishedOn);assert.equal(articleSchema.dateModified,article.updatedOn);
+   assert.equal(document.querySelector('title').textContent,`${article.seoTitle} · Kakobuy Pick`);
+   assert.equal(document.querySelectorAll('.article-section').length,article.sections.length);
+   const sections=[...document.querySelectorAll('.article-section')];
+   article.sections.forEach((section,index)=>assert.deepEqual([...sections[index].querySelectorAll('p')].map(p=>p.textContent),section.paragraphs));
   }
   for(const code of locales){assert.ok(document.querySelector(`.language-grid a[href="${route(code,path)}"]`),`${url} wrong language destination ${code}`);}
   assert.ok(document.querySelector('a[href="https://kakobuy.com/register"]'));
   checks++;
  }
- console.log(`PASS ${lang}: 10 articles, 26 FAQs, 6 guide steps, localized routes/schema/links`);
+ console.log(`PASS ${lang}: 13 articles, 26 FAQs, 6 guide steps, localized routes/schema/links`);
 }
 const missing=await worker.fetch(new Request('https://kakobuypick.com/articles/not-an-article/'),{},{});assert.equal(missing.status,404);
 const redirect=await worker.fetch(new Request('https://www.kakobuypick.com/de/articles/kakobuy-qc-photos/?ref=check'),{},{});assert.equal(redirect.status,308);assert.equal(redirect.headers.get('location'),'https://kakobuypick.com/de/articles/kakobuy-qc-photos/?ref=check');

@@ -51,8 +51,14 @@
       "estimate": "Kalkulator wysyłki",
       "manual": "Ręczny formularz zakupu",
       "help": "Centrum pomocy Kakobuy",
-      "catalog": "Katalog produktów CnBuyCha"
-    }
+      "catalog": "Katalog produktów CnBuyCha",
+      "withdrawal": "Wypłata salda i zwroty doładowań",
+      "forwardingInspection": "Zakres i ograniczenia kontroli",
+      "euJune": "Komunikat o taryfach UE, czerwiec 2026",
+      "euRoutes": "Aktualizacja tras EU Duty-Free, czerwiec 2026"
+    },
+    "updated": "Zaktualizowano",
+    "categoryBrowse": "Zobacz powiązane znaleziska"
   },
   "guide": {
     "sections": [
@@ -352,6 +358,326 @@
   ],
   "articles": [
     {
+      "slug": "choose-kakobuy-spreadsheet",
+      "category": "research",
+      "title": "Jak wybrać arkusz Kakobuy: linki, zdjęcia i aktualizacje",
+      "description": "Porównuj arkusze Kakobuy na podstawie aktywnych linków sprzedawców, jasnych oznaczeń zdjęć, przydatnych kategorii i przejrzystych kosztów. Stwórz listę, którą sprawdzisz przed zamówieniem.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "fees",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Zacznij od decyzji, którą musisz podjąć",
+          "paragraphs": [
+            "Przydatny arkusz Kakobuy pomaga przejść od ogólnego pomysłu do konkretnej oferty sprzedawcy. Powinien ułatwiać zrozumienie produktu, wybranego wariantu i kolejnego kroku weryfikacji. Duża liczba pozycji ani stanowcza rekomendacja nie powiedzą, czy kurtka będzie pasować, czy sprzedawca nadal ma towar i ile kosztuje dostawa do Twojego kraju. Zacznij od celu: znalezienia kategorii, porównania kilku kandydatów lub sprawdzenia produktu, który już wybrano.",
+            "Słowo arkusz odnosi się zarówno do współdzielonych tabel, jak i do stron katalogowych z wyszukiwarką. Oba formaty mogą być pomocne, jeśli ich linki działają, a ograniczenia są jasne. Kakobuy Pick jest niezależnym katalogiem i źródłem poradników; zamówienia, płatności, kontrola w magazynie i wysyłka międzynarodowa odbywają się na oficjalnym koncie Kakobuy. Pamiętaj o tym rozróżnieniu, porównując rekomendacje lub prosząc o pomoc przy zamówieniu."
+          ]
+        },
+        {
+          "heading": "Sprawdź, co rzeczywiście identyfikuje link do produktu",
+          "paragraphs": [
+            "Otwórz oryginalną ofertę sprzedawcy, zanim dodasz produkt do swojej listy. Porównaj zdjęcia, tytuł, dostępne kolory, rozmiary i dołączone elementy. Niektóre oferty łączą kilka produktów pod jednym linkiem, a najniższa wyświetlana cena może dotyczyć innego wariantu. Wiersz arkusza nie zachowa każdej późniejszej zmiany dokonanej przez sprzedawcę. Potwierdzaj zakup w aktualnej ofercie i końcowym formularzu zamówienia.",
+            "Odróżniaj również numer strony w katalogu od numeru produktu sprzedawcy. Przydatny link badawczy powinien prowadzić do właściwego źródła, a nie tylko do podobnej fotografii. Jeśli formularz Kakobuy nie potrafi przetworzyć adresu URL, skorzystaj z oficjalnego procesu zakupu ręcznego lub poproś obsługę o potwierdzenie produktu. Nie zastępuj niedziałającego linku ofertą innego sprzedawcy bez sprawdzenia, zakładając, że produkt, rozmiarówka i warunki zwrotu pozostają takie same."
+          ]
+        },
+        {
+          "heading": "Oddziel zdjęcia oferty od kontroli konkretnego zamówienia",
+          "paragraphs": [
+            "Wyraźne zdjęcie pomaga poznać kształt, kolor i widoczne szczegóły projektu, lecz jego pochodzenie ma znaczenie. Zdjęcia sprzedawcy, obrazy katalogowe i fotografie z kontroli magazynowej służą różnym celom. Jeśli zdjęcie nie jest wyraźnie powiązane ze skontrolowanym zamówieniem, nie należy uznawać go za dowód stanu przyszłego egzemplarza. Na tej stronie zdjęcia katalogowe pochodzą z ofert źródłowych; nie są automatycznie oznaczane jako magazynowe QC.",
+            "Po dotarciu produktu do magazynu porównaj zdjęcia konkretnego zamówienia z wybranym kolorem, rozmiarem i ilością. Jeśli brakuje istotnego szczegółu, zapytaj o możliwość wykonania konkretnego zdjęcia lub pomiaru oraz o koszt. Fotografia może pomóc dostrzec oczywistą niezgodność; sama nie potwierdza autentyczności, składu tkaniny, trwałości ani wygody. Dobry arkusz wyjaśnia te ograniczenia zamiast traktować każde atrakcyjne zdjęcie jako dowód jakości."
+          ]
+        },
+        {
+          "heading": "Wybieraj przydatne kategorie i wymiary zamiast niekończących się list",
+          "paragraphs": [
+            "Kategorie powinny pomagać porównywać podobne produkty. Kurtka, lekka koszula i dopasowany komplet wymagają innych kontroli, nawet jeśli wszystkie należą do odzieży. Używaj stron kategorii, aby zawęzić poszukiwania, a następnie otwieraj tylko kandydatów pasujących do planowanego zastosowania. W przypadku ubrań metoda pomiaru sprzedawcy jest zwykle bardziej użyteczna niż znajoma litera rozmiaru. W przypadku butów tabela dokładnego modelu jest ważniejsza niż ogólny przelicznik.",
+            "Prowadź krótką notatkę porównawczą zawierającą źródłowy adres URL, wariant, istotne wymiary, cenę produktu i nierozstrzygnięte pytanie. Ogranicza to wielokrotne przeglądanie i ułatwia późniejsze wyjaśnienie problemu obsłudze. Jeśli pozycja nie ma tabeli rozmiarów, materiały są niepewne lub zawartość niejasna, zaznacz brak informacji zamiast zastępować go założeniem. Najlepsza lista to taka, której kluczowe niepewności można wyjaśnić przed płatnością."
+          ]
+        },
+        {
+          "heading": "Szukaj znaczących aktualizacji, nie tylko świeżej daty",
+          "paragraphs": [
+            "Strona z niedawną datą nadal może zawierać niedziałające linki, niedostępne warianty lub nieaktualne ceny. Sprawdź, czy aktualizacja oznacza coś użytecznego: działający link sprzedawcy, poprawiony opis lub odniesienie do zasad nadal zgodne z oficjalną pomocą. Żaden niezależny katalog nie może obiecać, że każda oferta pozostanie niezmieniona między Twoją wizytą a zamówieniem. Ponownie sprawdź szczegóły w chwili podjęcia decyzji o zakupie.",
+            "Gdy poradnik wspomina opłaty, przechowywanie lub zwroty, poszukaj oficjalnego źródła i warunków towarzyszących stwierdzeniu. Limit przechowywania w magazynie nie jest tym samym co termin zwrotu u sprzedawcy. Szacowany czas dostawy nie oznacza gwarantowanej daty doręczenia. Wybieraj wyjaśnienia wskazujące, jaki status zamówienia lub wycenę wysyłki sprawdzić, zamiast ogólnych obietnic nieuwzględniających produktu, miejsca docelowego czy metody płatności."
+          ]
+        },
+        {
+          "heading": "Porównuj pełny koszt swojej listy",
+          "paragraphs": [
+            "Widoczna cena produktu to dopiero początek decyzji zakupowej. Zapisz koszt towaru i dostawy krajowej, a następnie oszacuj wysyłkę międzynarodową dla planowanego miejsca docelowego, wagi i wymiarów paczki. Dodaj opakowanie, usługi opcjonalne oraz odpowiednie podatki lub opłaty zależne od trasy. Tańszy przedmiot może wymagać większej lub cięższej paczki, natomiast kompaktowa alternatywa może lepiej zmieścić się w budżecie po uzyskaniu pełnej wyceny transportu.",
+            "Użyj oficjalnego kalkulatora wysyłki do porównywania prawdopodobnych scenariuszy zamiast wymyślać dokładną sumę na podstawie zdjęcia katalogowego. Przed przyjęciem do magazynu wymiary po spakowaniu mogą być niepewne. Po przyjęciu sprawdź rzeczywiste pomiary i ograniczenia wybranej linii. Porównując arkusze, oceniaj też przejrzystość informacji o kosztach, nie tylko prezentowane produkty. Niska cena początkowa nie dowodzi, która opcja będzie najtańsza z dostawą."
+          ]
+        },
+        {
+          "heading": "Rozumiej rekomendacje i linki komercyjne",
+          "paragraphs": [
+            "Rekomendacja powinna wyjaśniać swoją podstawę i cel. Zestawienie kategorii może pomóc znaleźć odpowiednie oferty bez twierdzenia, że każdy produkt został osobiście przetestowany. Link afiliacyjny może wspierać stronę, ale nie dowodzi jakości produktu ani nie czyni strony sprzedawcą. Przeczytaj informację o tej relacji i sprawdź oficjalny adres docelowy przed podaniem danych konta lub zapłatą. Linki zakupowe Kakobuy Pick otwierają oficjalny proces zakupu produktu.",
+            "Zachowaj ostrożność wobec niepopartych twierdzeń o gwarantowanym dopasowaniu, zweryfikowanej autentyczności czy najlepszym sprzedawcy dla wszystkich. Użyteczne wskazówki redakcyjne mówią, co zmierzyć, co skontrolować i co pozostaje nieznane. Twoje priorytety mogą różnić się od priorytetów innych kupujących: miejsce na warstwy, konkretne zapięcie, wyjmowana wkładka lub mniejsza paczka mogą być ważniejsze niż popularność. Miej je przed oczami podczas porównywania listy.",
+            "Prosty schemat porównania pomaga utrzymać skupienie poszukiwań. Otwórz tę samą kategorię w każdym katalogu, wybierz kandydata i przejdź do strony sprzedawcy. Zanotuj, czy można zidentyfikować wybrany wariant, znaleźć użyteczną tabelę pomiarów i oddzielić cenę towaru od kosztów dostawy. Następnie przeczytaj jeden odpowiedni poradnik i sprawdź, czy jego źródła rzeczywiście wspierają podane wskazówki. Nie musisz przyznawać punktów ani ogłaszać uniwersalnego zwycięzcy. To ćwiczenie pokazuje, które źródło dostarcza wystarczających informacji do następnego działania, a które pozostawia luki do wyjaśnienia gdzie indziej. Powtórz kontrolę, gdy stara zakładka przestanie działać lub zmienią się wymagania. Arkusz pomocny przy poprzednim zamówieniu może wymagać ponownej weryfikacji przy nowym sprzedawcy, rodzaju produktu lub miejscu docelowym wysyłki."
+          ]
+        },
+        {
+          "heading": "Zamień badanie ofert w uporządkowane zamówienie",
+          "paragraphs": [
+            "Przed zamówieniem wróć do każdego wybranego źródła i potwierdź stan magazynowy, wariant i ilość. Zapisz informacje, które trudno byłoby odtworzyć po edycji oferty przez sprzedawcę. Gdy zamówienie dotrze do magazynu, szybko przejrzyj dostępne zdjęcia kontroli i wyjaśnij istotne rozbieżności, dopóki obowiązujący termin zwrotu jest otwarty. Nie odkładaj decyzji o zwrocie tylko dlatego, że później planujesz połączyć kilka produktów.",
+            "Korzystaj z arkusza do odkrywania produktów, z poradników o rozmiarach i QC do kontroli, a z oficjalnego konta do sprawdzania statusu transakcji. Na pierwszą listę wybierz kilka rzeczy, których specyfikację rzeczywiście potrafisz zweryfikować, zamiast gromadzić dziesiątki niepewnych linków. Praktyczna wartość arkusza Kakobuy polega na jakości decyzji, które pomaga podejmować: od identyfikacji oferty po zrozumienie końcowej wyceny paczki."
+          ]
+        }
+      ],
+      "checklist": [
+        "Otwórz aktualną ofertę sprzedawcy i sprawdź dokładny wariant.",
+        "Ustal, czy każde zdjęcie pochodzi z oferty, czy z kontroli konkretnego zamówienia.",
+        "Zapisz wymiary i wszystkie kategorie kosztów przed płatnością.",
+        "Szybko przejrzyj zdjęcia magazynowe i oddziel terminy zwrotu od przechowywania."
+      ],
+      "table": {
+        "caption": "Praktyczne porównanie arkuszy",
+        "headers": [
+          "Kontrola",
+          "Przydatny dowód"
+        ],
+        "rows": [
+          [
+            "Tożsamość produktu",
+            "Działająca oryginalna oferta, wybrany kolor i rozmiar, dołączone elementy"
+          ],
+          [
+            "Dowody fotograficzne",
+            "Jasne oznaczenia źródła i kontrola konkretnego zamówienia, gdy jest dostępna"
+          ],
+          [
+            "Przejrzystość kosztów",
+            "Cena produktu oddzielona od wysyłki i usług opcjonalnych"
+          ],
+          [
+            "Przydatność redakcyjna",
+            "Konkretne kontrole, oficjalne źródła i wyraźnie wskazane niepewności"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-19",
+      "updatedOn": "2026-10-19",
+      "seoTitle": "Jak wybrać arkusz Kakobuy: linki, zdjęcia i aktualizacje"
+    },
+    {
+      "slug": "kakobuy-jacket-finds",
+      "category": "research",
+      "title": "Kurtki Kakobuy: wymiary, materiały i linki do produktów",
+      "description": "Znajdź linki do kurtek dzięki praktycznej metodzie porównania: wymiary klatki piersiowej i rękawów, podszewka, zapięcia, zdjęcia kontroli i objętość przesyłki.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "volume",
+        "estimate",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Określ, do czego ma służyć kurtka",
+          "paragraphs": [
+            "Poszukiwanie kurtki staje się łatwiejsze, gdy zaczniesz od tego, jak zamierzasz ją nosić. Lekka warstwa na dojazdy, luźna warstwa zewnętrzna na bluzę i kurtka o wyraźnej konstrukcji do okazjonalnego noszenia wymagają innych proporcji i szczegółów. Przed przeglądaniem zapisz priorytety: miejsce na warstwy, długość osłony rękawów, kieszenie, rodzaj zapięcia i warunki użytkowania. Samo zdjęcie nie odpowie na wszystkie te pytania.",
+            "Kategoria kurtek Kakobuy Pick służy do odkrywania linków źródłowych i porównywania zdjęć ofert. Ten poradnik przedstawia metodę wyboru, a nie twierdzenie, że wymienione kurtki zostały kupione, przetestowane lub uwierzytelnione przez redakcję. Otwórz oryginalną stronę sprzedawcy dla każdego kandydata i sprawdź dokładny wariant. Dostępność, specyfikacje i ceny mogą zmieniać się niezależnie od wpisu w katalogu."
+          ]
+        },
+        {
+          "heading": "Zmierz podobną kurtkę, którą już posiadasz",
+          "paragraphs": [
+            "Rozłóż dobrze dopasowaną kurtkę na płasko, stosując spójną metodę. Zapisz szerokość klatki piersiowej, szerokość ramion, długość rękawa i pleców oraz zaznacz początek i koniec każdego pomiaru. Wybierz odzież odniesienia o podobnej konstrukcji i wystarczającej przestrzeni na planowane warstwy. Dopasowana marynarka jest słabym punktem odniesienia dla luźnej kurtki ocieplanej, ponieważ zamierzony kształt i przestrzeń wewnętrzna są inne.",
+            "Porównaj te wartości z tabelą sprzedawcy dla dokładnej oferty. Sprawdź, czy tabela opisuje wymiary odzieży czy ciała oraz czy klatka piersiowa jest podana jako szerokość na płasko czy obwód. Nie podwajaj liczby, jeśli metoda tego nie wymaga. Jeżeli sprzedawca nie wyjaśnia tabeli, poproś o doprecyzowanie przed wybraniem wariantu. Znana etykieta rozmiaru nie dowodzi, że proporcje odpowiadają Twojej odzieży odniesienia."
+          ]
+        },
+        {
+          "heading": "Uważnie czytaj informacje o konstrukcji i materiałach",
+          "paragraphs": [
+            "Spójrz poza zdjęcie zewnętrznej strony: na podszewkę, mankiety, dół, kaptur i system zapięcia. Podszewka może wpływać na przesuwanie się kurtki po innej warstwie, a ciasny mankiet lub dół może zmienić praktyczne dopasowanie, nawet gdy klatka piersiowa wydaje się obszerna. Sprawdź, czy kaptur jest stały czy odpinany, czy kieszenie mają zapięcia i czy akcesoria pokazane na zdjęciu są dołączone do wybranego produktu.",
+            "Traktuj opisy materiałów jako deklaracje sprzedawcy, chyba że dostępne są niezależne dowody. Zbliżenie może pokazywać fakturę, ale nie potwierdza składu włókien, izolacji ani wodoodporności. Określenia takie jak techniczny, premium lub zimowy nie zastępują szczegółowych informacji o produkcie. Jeśli deklaracja właściwości jest niezbędna do decyzji, zapytaj o jej podstawę zamiast wywodzić ją z wyglądu tkaniny lub wzornictwa przypominającego markę."
+          ]
+        },
+        {
+          "heading": "Porównaj kolory, warianty i dołączone elementy",
+          "paragraphs": [
+            "Oferty sprzedawców czasem umieszczają kilka fasonów kurtek lub opcji materiału na jednej stronie. Potwierdź, że cena i tabela rozmiarów dotyczą koloru i konstrukcji, które chcesz zamówić. Miniatura wybrana podczas przeglądania nie musi być wariantem przeniesionym do formularza zamówienia. Ponownie sprawdź tekst wariantu, zdjęcie i ilość przed płatnością, zwłaszcza gdy oferta obejmuje komplet lub odpinany element.",
+            "Zapisz oryginalny adres URL sprzedawcy i wybrane specyfikacje w krótkiej notatce. Będzie to punkt odniesienia, jeśli oferta się zmieni lub zdjęcie magazynowe wyda się niezgodne. Identyfikator katalogu pomaga poruszać się po tej stronie, lecz nie musi być oryginalnym identyfikatorem produktu sprzedawcy. Wyjaśniając rozbieżność obsłudze, używaj źródła sprzedawcy i oficjalnego numeru zamówienia."
+          ]
+        },
+        {
+          "heading": "Zadawaj pytania kontrolne, na które zdjęcia mogą odpowiedzieć",
+          "paragraphs": [
+            "Kiedy kurtka trafi do magazynu, najpierw porównaj produkt z zamówieniem: kolor, etykietę rozmiaru, widoczną konstrukcję i dołączone elementy. Obejrzyj przód i tył, zapięcia, szwy oraz każdą część istotną dla zakupu. Jeżeli zamek, mankiet lub nadrukowany szczegół jest ukryty, zapytaj o możliwość wykonania zbliżenia. Konkretne pytanie jest bardziej użyteczne niż ogólna prośba o potwierdzenie, że wszystko jest dobrze.",
+            "Jeżeli dopasowanie nadal jest niepewne, poproś o pomiar z jasno określonymi punktami końcowymi i sprawdź opłatę przed zamówieniem usługi. Zwykła kontrola nie jest oceną krawiecką. Oficjalne wskazówki ograniczają to, co można ustalić ze zdjęć i oględzin powierzchni; różnice kolorystyczne, odchylenia pomiaru i właściwości podczas rzeczywistego użytkowania pozostają ważnymi niepewnościami. Nie traktuj zdjęcia magazynowego jako gwarancji autentyczności, ciepła, wodoodporności ani wygody."
+          ]
+        },
+        {
+          "heading": "Uwzględnij objętość po spakowaniu w szacunku wysyłki",
+          "paragraphs": [
+            "Kurtki mogą zajmować dużo miejsca, nawet gdy cena produktu wydaje się niewielka. Wybrana linia wysyłkowa może uwzględniać zarówno wagę rzeczywistą, jak i objętościową, dlatego wymiary paczki są ważne. Używaj oficjalnego kalkulatora z realistycznymi danymi i sprawdzaj aktualne zasady naliczania opłat. Przed pomiarem magazynowym traktuj liczby jako scenariusz planowania. Po przyjęciu porównaj zmierzony produkt i proponowane opakowanie z wyceną.",
+            "Pytaj o zmiany opakowania tylko wtedy, gdy rozumiesz ich kompromisy. Usunięcie zbędnego opakowania zewnętrznego może oszczędzić miejsce, lecz ochrona może mieć znaczenie dla konstrukcji, delikatnego wykończenia lub akcesoriów. Kompresja nie jest automatycznie odpowiednia dla każdego materiału czy konstrukcji. Ustal potrzebną ochronę, a następnie porównaj wynikające z niej warianty paczki. Nie zakładaj, że kurtka najtańsza w ofercie będzie też najtańsza po dostarczeniu."
+          ]
+        },
+        {
+          "heading": "Stwórz użyteczną listę zamiast gonić za rankingiem",
+          "paragraphs": [
+            "Porównuj kandydatów w tej samej kolejności: planowane użycie, wymiary, konstrukcja, wybrany wariant i pełny koszt. Na przykład jedna kurtka może mieć jasną tabelę, lecz niepewny opis podszewki, a druga szczegółowe informacje o materiale bez wymiaru ramion. Zapisz brakujące dowody i zapytaj, czy można je uzyskać. Jest to redakcyjne ćwiczenie porównawcze, a nie relacja z przetestowanego zakupu.",
+            "Przydatne znalezisko to kurtka odpowiadająca wymaganiom przy możliwym do zaakceptowania poziomie niepewności. Popularność lub atrakcyjne zdjęcie nie usuwają potrzeby sprawdzenia proporcji i warunków sprzedawcy. Jeśli żaden kandydat nie zapewnia potrzebnych danych, szukaj dalej zamiast wybierać najbardziej stanowczy opis. Możesz wrócić do kategorii kurtek z węższym zapytaniem, gdy ustalisz, który szczegół blokuje decyzję.",
+            "Porównując dwa rozmiary, opisz praktyczną różnicę zamiast pytać, jaka etykieta jest zwykle prawidłowa. Jedna opcja może dawać więcej miejsca w klatce piersiowej, ale również dłuższy rękaw lub niższy dół. Porównaj te zmiany z zachowaniem kurtki odniesienia podczas wyciągania rąk do przodu, siadania lub noszenia planowanej warstwy pod spodem. Takie obserwacje pomagają ustalić najważniejsze pomiary; nie zamieniają płaskiej tabeli w gwarancję ruchu czy wygody. Jeśli tabela sprzedawcy nie wyjaśnia kluczowego wymiaru, przerwij porównanie do czasu ustalenia metody. Wyjaśnienie jednego brakującego wymiaru ramion lub rękawa często jest bardziej użyteczne niż gromadzenie wielu niepowiązanych zdjęć. Zachowaj wynik na swojej liście, aby późniejsza kontrola magazynowa odpowiadała na to samo pytanie, które pojawiło się przed zamówieniem."
+          ]
+        },
+        {
+          "heading": "Rozwiąż problemy w magazynie przed planowaniem końcowej paczki",
+          "paragraphs": [
+            "Przejrzyj zdjęcia konkretnego zamówienia możliwie szybko po przyjęciu do przechowywania. Jeśli odzież różni się od zamówienia lub ważny wymiar jest nieodpowiedni, sprawdź warunki kwalifikacji sprzedawcy i skontaktuj się z obsługą w obowiązującym terminie zwrotu. Zachowaj metki i opakowanie w stanie umożliwiającym odsprzedaż, dopóki sprawa jest rozpatrywana. Dłuższy okres magazynowania nie wydłuża krótszego terminu zgłoszenia zwrotu.",
+            "Gdy zdecydujesz się zachować kurtkę, połącz jej zmierzone wymiary i wagę z innymi produktami do wysyłki. Potwierdź ograniczenia miejsca docelowego, wybór opakowania i aktualną wycenę trasy na oficjalnym koncie. Zachowaj końcowe dane produktu i paczki na przyszłość. Taka kolejność łączy początkowy link do kurtki ze sprawdzonym wariantem i świadomą decyzją wysyłkową, bez udawania, że katalog może zagwarantować wynik."
+          ]
+        }
+      ],
+      "checklist": [
+        "Zmierz podobną kurtkę mieszczącą planowane warstwy.",
+        "Potwierdź tabelę, konstrukcję i cenę wybranego wariantu.",
+        "Używaj zdjęć kontroli do oceny widocznych szczegółów i proś o konkretne brakujące informacje.",
+        "Porównaj wymiary po spakowaniu i możliwość zwrotu przed zgłoszeniem paczki."
+      ],
+      "table": {
+        "caption": "Kontrola kurtek przed zamówieniem",
+        "headers": [
+          "Kontrola",
+          "Przydatny dowód"
+        ],
+        "rows": [
+          [
+            "Dopasowanie",
+            "Wymiary klatki piersiowej, ramion, rękawów i pleców z jasnymi punktami pomiaru"
+          ],
+          [
+            "Konstrukcja",
+            "Podszewka, zapięcia, mankiety, kaptur i dołączone elementy"
+          ],
+          [
+            "Kontrola",
+            "Zgodność z zamówieniem, widoczny stan i ewentualne zamówione pomiary"
+          ],
+          [
+            "Wysyłka",
+            "Zmierzona waga, wymiary opakowania i warunki wybranej trasy"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-19",
+      "updatedOn": "2026-10-19",
+      "seoTitle": "Kurtki Kakobuy: wymiary, materiały i linki do produktów"
+    },
+    {
+      "slug": "kakobuy-sneaker-finds",
+      "category": "research",
+      "title": "Sneakersy Kakobuy: tabele rozmiarów, zdjęcia QC i linki źródłowe",
+      "description": "Porównuj linki do sneakersów za pomocą tabeli dokładnego modelu, konkretnych kontroli zdjęć i wyborów opakowania. Dowiedz się, co magazynowe QC może, a czego nie może potwierdzić.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "volume",
+        "estimate",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Zacznij od wymagań dotyczących użycia i dopasowania",
+          "paragraphs": [
+            "Lista sneakersów powinna zaczynać się od tego, czego potrzebujesz od butów: codziennego noszenia, określonej sylwetki, miejsca na zwykłe skarpety lub zgodności z używaną wkładką. Zapisz problemy dopasowania, których chcesz uniknąć, takie jak ucisk przodostopia czy zbyt mało miejsca na palce. Podobnie wyglądający but może mieć inne kopyto lub konstrukcję, więc sam wygląd słabo wskazuje, jak będzie się go nosić.",
+            "Kategoria butów Kakobuy Pick udostępnia linki do produktów i zdjęcia ofert do samodzielnej analizy. Ten poradnik nie opisuje zestawu butów zakupionych lub przetestowanych przez redakcję, a obecność w katalogu nie jest certyfikatem autentyczności. Otwórz oryginalną ofertę sprzedawcy, sprawdź dokładny model i wariant oraz zweryfikuj informacje ważne dla własnego zakupu przed skorzystaniem z oficjalnego procesu zamówienia Kakobuy."
+          ]
+        },
+        {
+          "heading": "Oddziel długość stopy od wymiarów buta",
+          "paragraphs": [
+            "Zmierz stopy powtarzalną metodą, w skarpetach, które planujesz nosić, stosując metodę określoną przez sprzedawcę, jeśli ją podano. Zapisz dłuższą stopę i kwestie dopasowania, których sam pomiar długości nie ujmuje. Porównaj wynik z tabelą dokładnego modelu. Ogólne przeliczenie regionalnych rozmiarów może być pomocnym tłem, ale nie zastąpi informacji sprzedawcy o konkretnym modelu ani nie wyjaśni różnic szerokości i kształtu.",
+            "Długość stopy, wkładki i podeszwy zewnętrznej opisują różne rzeczy. Zdjęcie podeszwy nie potwierdza przestrzeni wewnątrz buta, a pomiar wkładki może zależeć od kształtu lub techniki mierzenia. Jeśli tabela używa niejasnego terminu, zapytaj, co zmierzono. Nie zamieniaj niepewnej liczby w stanowczą rekomendację rozmiaru. Para odniesienia pomoże tylko wtedy, gdy porównujesz odpowiadające sobie pomiary i uwzględniasz różnice konstrukcyjne."
+          ]
+        },
+        {
+          "heading": "Sprawdź dokładny link sprzedawcy i wybraną opcję",
+          "paragraphs": [
+            "Sprawdź w oryginalnej ofercie model, kolor, zakres rozmiarów i dołączone akcesoria. Niektóre strony łączą kilka wersji pod jednym linkiem lub pokazują cenę początkową dotyczącą konkretnej opcji. Potwierdź, że wariant wybrany w formularzu Kakobuy odpowiada planowanemu zakupowi. Zwróć też uwagę na ilość: zamówienie powinno jasno opisywać parę lub inną jednostkę dostarczaną przez sprzedawcę.",
+            "Przed płatnością zachowaj źródłowy adres URL i tekst wybranego wariantu. Lokalny numer katalogowy nie musi być numerem produktu sprzedawcy, a podobna miniatura nie dowodzi, że dwa linki prowadzą do tej samej oferty. Jeśli link nie daje się przetworzyć, skorzystaj z oficjalnego zakupu ręcznego lub poproś obsługę o potwierdzenie dokładnego źródła. Nie zakładaj, że zastępczy link oznacza tę samą rozmiarówkę, stan magazynowy czy warunki zwrotu."
+          ]
+        },
+        {
+          "heading": "Przeglądaj zdjęcia magazynowe według ustalonego schematu",
+          "paragraphs": [
+            "Gdy buty dotrą do magazynu, zacznij od tożsamości zamówienia: modelu, koloru, etykiet rozmiaru i dołączonych elementów. Następnie porównaj widoczny stan obu butów. Obejrzyj okolice palców, boki, pięty, krawędzie podeszwy, szwy i zapięcia na dostępnych fotografiach. Światło i kąt aparatu wpływają na wygląd kolorów i kształtów, dlatego poproś o konkretne dodatkowe ujęcie, jeśli ważny punkt pozostaje niejasny.",
+            "Wiąż pytania z widocznymi dowodami. Zdjęcie może pomóc zidentyfikować niezgodną etykietę, wyraźny ślad lub brak akcesorium, ale nie potwierdza długotrwałej wytrzymałości, konstrukcji wewnętrznej ani komfortu noszenia. Oficjalne wskazówki opisują ograniczenia oględzin powierzchni i dokładności pomiarów. Zwykłe magazynowe QC nie powinno być przedstawiane jako uwierzytelnienie ani gwarancja działania butów zgodnie z opisem sprzedawcy."
+          ]
+        },
+        {
+          "heading": "Zamawiaj pomiary tylko wtedy, gdy pomagają podjąć decyzję",
+          "paragraphs": [
+            "Przed zamówieniem dodatkowej usługi wyjaśnij niepewność, którą chcesz rozstrzygnąć. Jeśli wkładka jest wyjmowana i dostępna jest usługa pomiaru, zapytaj, jak pomiar zostanie wykonany i ile kosztuje. Zdjęcie powinno pokazywać odpowiednie punkty końcowe na tyle jasno, by dało się je zinterpretować. Nie porównuj pomiaru po zakrzywionej powierzchni z wartością w linii prostej bez zrozumienia różnicy.",
+            "Dodatkowy pomiar jest użyteczny, gdy zmienia decyzję o zatrzymaniu produktu; nie zastępuje odpowiedniej tabeli rozmiarów przed zakupem. Szerokość, kształt cholewki i objętość wewnętrzna nadal mogą wpływać na dopasowanie, nawet gdy długość wydaje się właściwa. Nie zbieraj kolejnych zdjęć tylko po to, by odsunąć niepewną decyzję o zwrocie. Jeśli pozostałej kwestii nie można wyjaśnić dostępną kontrolą, rozważ warunki sprzedawcy i własną tolerancję tej niepewności."
+          ]
+        },
+        {
+          "heading": "Porównaj ochronę pudełka z rozmiarem paczki",
+          "paragraphs": [
+            "Pudełko na buty może chronić kształt i pomagać zachować akcesoria, lecz dodaje też materiał i objętość do paczki. Ustal, czy jego zachowanie ma znaczenie dla zakupu, zanim poprosisz o zmianę opakowania. Usunięcie pudełka może oszczędzić miejsce, ale buty nadal wymagają odpowiedniej ochrony przed zgnieceniem i otarciami. Zapytaj o dostępne opcje pakowania i opłaty zamiast zakładać, że każda usługa lub zmiana jest wliczona w cenę.",
+            "Porównując opcje, korzystaj z rzeczywistych pomiarów magazynowych i zasad naliczania opłat wybranej linii. Linia może rozliczać wagę objętościową obok rzeczywistej. Usunięcie pudełka nie daje więc przewidywalnej oszczędności w każdym przypadku. Porównaj pełną wycenę, łącznie z nadal potrzebną ochroną, i sprawdź ograniczenia miejsca docelowego oraz trasy na oficjalnym koncie przed zgłoszeniem paczki."
+          ]
+        },
+        {
+          "heading": "Prowadź notatkę porównawczą z widocznymi dowodami",
+          "paragraphs": [
+            "Dla każdego kandydata zapisz źródłowy adres URL, wybrany rozmiar, metodę tabeli, cenę oferty i nierozstrzygnięte pytanie o dopasowanie. Dodaj informację, czy oferta wyjaśnia materiały i zawartość. Gdy dostępna będzie kontrola magazynowa, zanotuj, co potwierdzono i co pozostaje niepewne. Oddzielenie informacji sprzedawcy od obserwacji konkretnego zamówienia zapobiega zamianie opisu promocyjnego w domniemany fakt we własnych notatkach.",
+            "Na przykład kandydat z jasną tabelą i zgodną etykietą może być łatwiejszy do oceny niż model ze zdjęciami wyłącznie w stylizacjach, ale nadal nie dowodzi to wygody ani autentyczności. Jest to metoda porównywania dowodów, nie ranking oparty na testach. Jeśli wymagania zależą od twierdzenia, którego nie da się sprawdzić w ofercie lub dostępnej kontroli, nie pozwól, by popularność lub pozornie niska cena zastąpiła brakującą informację.",
+            "Pomaga również oddzielenie preferencji wizualnych od wymagań wpływających na codzienne użytkowanie. Kolor lub profil mogą być jasne w ofercie, podczas gdy trzymanie pięty, miejsce na przodostopie i zginanie cholewki pozostają niepewne do czasu noszenia. Zapisz te ograniczenia zamiast opisywać kandydata jako potwierdzone dopasowanie. Jeśli używasz buta odniesienia, zanotuj model i metodę pomiaru, nie opierając się wyłącznie na regionalnym rozmiarze etykiety. Różne tabele mogą przypisywać podobne oznaczenia różnym wymiarom, a podobne wymiary nadal mogą dawać inne odczucia z powodu kształtu i materiałów. Takie porównanie daje bardziej konkretne pytanie do sprzedawcy lub obsługi. Nie uzasadnia uniwersalnej rady, by każdy kupujący lub każda oferta wymagały większego bądź mniejszego rozmiaru."
+          ]
+        },
+        {
+          "heading": "Reaguj na rozbieżności przed zamknięciem terminu zwrotu",
+          "paragraphs": [
+            "Szybko przejrzyj zdjęcia magazynowe, zwłaszcza gdy etykieta rozmiaru, kolor lub dołączone elementy wyglądają inaczej niż w zamówieniu. Zachowaj właściwe zdjęcie i wyjaśnij rozbieżność, podając numer zamówienia i oryginalne szczegóły wariantu. Zapytaj obsługę o możliwość zwrotu, koszty i następny krok zgodnie z aktualnymi warunkami sprzedawcy. Zachowaj metki, akcesoria i opakowanie podczas rozważania zwrotu.",
+            "Dozwolony okres przechowywania w magazynie jest oddzielny od krótszego terminu zgłoszenia kwalifikującego się zwrotu. Oczekiwanie na inny produkt nie musi zachować możliwości odesłania tych butów. Po decyzji o zatrzymaniu pary dopracuj opakowanie i wycenę trasy na podstawie rzeczywistych pomiarów. Dobre znalezisko sneakersów to link źródłowy prowadzący do świadomej decyzji zakupowej, nie obietnica zniknięcia każdej niepewności."
+          ]
+        }
+      ],
+      "checklist": [
+        "Korzystaj z tabeli dokładnego modelu i rozdzielaj rodzaje pomiarów.",
+        "Porównaj ofertę sprzedawcy, wybrany rozmiar i oficjalne dane zamówienia.",
+        "Sprawdzaj widoczny stan bez traktowania QC jako uwierzytelnienia lub gwarancji dopasowania.",
+        "Przejrzyj opakowanie, koszty wysyłki i warunki zwrotu przed końcowym zgłoszeniem."
+      ],
+      "table": {
+        "caption": "Kontrola sneakersów od oferty do paczki",
+        "headers": [
+          "Kontrola",
+          "Przydatny dowód"
+        ],
+        "rows": [
+          [
+            "Przed zamówieniem",
+            "Dokładny model, wariant, tabela rozmiarów i warunki sprzedawcy"
+          ],
+          [
+            "W magazynie",
+            "Zgodne etykiety, widoczny stan i dołączone akcesoria"
+          ],
+          [
+            "Przed pakowaniem",
+            "Decyzja o zachowaniu pudełka i odpowiednia ochrona"
+          ],
+          [
+            "Przed wysyłką",
+            "Zmierzona paczka, wybrana trasa i pełna aktualna wycena"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-19",
+      "updatedOn": "2026-10-19",
+      "seoTitle": "Sneakersy Kakobuy: tabele rozmiarów, zdjęcia QC i linki źródłowe"
+    },
+    {
       "slug": "kakobuy-spreadsheet-guide",
       "category": "research",
       "title": "Jak korzystać z arkusza kalkulacyjnego Kakobuy bez utraty szczegółów",
@@ -428,18 +754,28 @@
             "Źródło zdjęcia, sprawdzona data i uwagi do zamówienia"
           ]
         ]
-      }
+      },
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-17",
+      "seoTitle": "Jak korzystać z arkusza kalkulacyjnego Kakobuy bez utraty szczegółów"
     },
     {
       "slug": "kakobuy-product-links",
       "category": "research",
-      "title": "Linki do produktów Kakobuy: Weidian, Taobao, 1688 i zamówienia ręczne",
-      "description": "Sprawdź adres URL oryginalnego sprzedawcy, zidentyfikuj problemy z importem i przygotuj dokładne zamówienie ręczne, gdy wymaga tego aktywna strona.",
+      "title": "Linki Kakobuy: otwieranie ofert, kontrola wariantów i zamawianie",
+      "description": "Dowiedz się, jak linki produktów Kakobuy łączą się z ofertami sprzedawców, sprawdzaj kolor i rozmiar oraz obsługuj nieprzetwarzalne linki przez zakup ręczny.",
       "sources": [
         "buying",
         "manual"
       ],
       "sections": [
+        {
+          "heading": "Użyj oryginalnej oferty do ostatecznej kontroli tożsamości",
+          "paragraphs": [
+            "Link w arkuszu jest skrótem do badania oferty. Przed płatnością porównaj oryginalną ofertę sprzedawcy z formularzem Kakobuy: produkt sprzedawcy, kolor, rozmiar, ilość i dołączone elementy powinny opisywać ten sam zakup. Lokalny numer katalogowy nie musi być numerem produktu sprzedawcy. Zachowaj oryginalną ofertę i wybrany wariant, aby późniejsze zdjęcia można było porównać z zamówieniem.",
+            "Oficjalny poradnik zakupowy obsługuje wklejanie linków produktów i zapewnia ręczny zakup, gdy link nie może zostać przetworzony. Dostępność zależy od źródła i konkretnego adresu URL, więc sam błąd importu nie dowodzi, że produktu nie można kupić. Unikaj wielokrotnego zastępowania go podobnie wyglądającymi rzeczami. Poproś obsługę o potwierdzenie dokładnego źródła, zapasów i specyfikacji, szczególnie przy mieszanych ofertach lub minimalnych ilościach zamówienia."
+          ]
+        },
         {
           "heading": "Śledź tożsamość przedmiotu",
           "paragraphs": [
@@ -502,7 +838,10 @@
             "Przejrzyj import i złóż zamówienie zakupu"
           ]
         ]
-      }
+      },
+      "seoTitle": "Linki Kakobuy: otwieranie ofert, kontrola wariantów i zamawianie",
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-19"
     },
     {
       "slug": "kakobuy-qc-photos",
@@ -581,19 +920,29 @@
             "Autentyczność, bezpieczeństwo czy pełna funkcjonalność"
           ]
         ]
-      }
+      },
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-17",
+      "seoTitle": "Zdjęcia Kakobuy QC: praktyczna lista kontrolna inspekcji i jej ograniczenia"
     },
     {
       "slug": "kakobuy-sizing-guide",
       "category": "inspection",
-      "title": "Przewodnik po rozmiarach Kakobuy: porównaj wymiary przed wybraniem metki",
-      "description": "Korzystaj z tabeli sprzedawcy, spójnej metody pomiaru i konkretnych uwag do zamówień dotyczących odzieży, obuwia i akcesoriów.",
+      "title": "Rozmiary Kakobuy: pomiary ubrań i tabele obuwia",
+      "description": "Porównuj tabele rozmiarów sprzedawców z własną odzieżą, odróżniaj szerokość na płasko od obwodu i sprawdzaj wymiary obuwia przed zamówieniem Kakobuy.",
       "sources": [
         "buying",
         "inspection",
         "returns"
       ],
       "sections": [
+        {
+          "heading": "Przygotuj notatkę z pomiarami przed wybraniem wariantu",
+          "paragraphs": [
+            "Dla kurtki zapisz wymiary klatki piersiowej, ramion, rękawów i długość pleców podobnej odzieży, która już pasuje na planowane warstwy. Dla spodni użyj pasa, wysokości stanu i długości wewnętrznej nogawki. Zapisz, czy wartości opisują odzież na płasko, czy wymiary ciała. Tabela sprzedawcy bez metody pomiaru jest niepełnym dowodem; poproś o wyjaśnienie przed wyborem rozmiaru zamiast zgadywać na podstawie znajomej litery.",
+            "W przypadku butów oddziel długość stopy, wkładki i podeszwy zewnętrznej. Zdjęcie etykiety rozmiaru potwierdza etykietę, nie użyteczną przestrzeń wewnętrzną ani wygodę. Porównaj tabelę dokładnego modelu i wybranego wariantu, a następnie oceń, czy konkretne zlecenie pomiaru rozwiąże pozostałą niepewność. Zwykłe zdjęcia kontroli nie potwierdzają autentyczności, składu materiałów ani gwarantowanego dopasowania."
+          ]
+        },
         {
           "heading": "Nie ma uniwersalnej tabeli rozmiarów Kakobuy",
           "paragraphs": [
@@ -660,7 +1009,10 @@
             "Szerokość, wysokość, głębokość, otwór i długość paska"
           ]
         ]
-      }
+      },
+      "seoTitle": "Rozmiary Kakobuy: pomiary ubrań i tabele obuwia",
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-19"
     },
     {
       "slug": "kakobuy-shipping-calculator",
@@ -739,20 +1091,32 @@
             "6 kg lub 7,2 kg, w zależności od dzielnika"
           ]
         ]
-      }
+      },
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-17",
+      "seoTitle": "Kalkulator wysyłki Kakobuy: waga, wymiary i przydatne porównanie"
     },
     {
       "slug": "kakobuy-fees-payment",
       "category": "costs",
-      "title": "Opłaty i płatności Kakobuy: zbuduj budżet wykraczający poza cenę przedmiotu",
-      "description": "Oddzielny koszt zakupu, dostawa międzynarodowa, usługi opcjonalne i konwersja płatności przed podjęciem decyzji, ile wydać.",
+      "title": "Opłaty Kakobuy: produkt, wysyłka, opakowanie i płatność",
+      "description": "Stwórz listę kosztów Kakobuy obejmującą produkt, wysyłkę krajową i międzynarodową, opakowanie oraz płatność. Sprawdź podatki wybranej trasy przed zapłatą.",
       "sources": [
         "fees",
         "cost",
         "payment",
-        "buying"
+        "estimate",
+        "euJune",
+        "euRoutes"
       ],
       "sections": [
+        {
+          "heading": "Oddziel podstawowe opłaty usługowe od opłat konkretnej trasy",
+          "paragraphs": [
+            "Oficjalna strona usług opisuje podstawowy zakup bez opłaty manipulacyjnej. Nie usuwa to kosztów produktu, transportu krajowego, dostawy międzynarodowej, opakowania ani usług opcjonalnych. Inna strona kosztów podaje ¥8 za materiały opakowaniowe. Ponieważ oficjalne strony stosują różne określenia tej kwoty, nie dodawaj automatycznie tych samych ¥8 dwukrotnie. Dopasuj każdą pozycję do aktualnego rozliczenia zamówienia lub paczki i pytaj obsługę o niejasne opłaty.",
+            "Komunikat z czerwca 2026 opisywał unijne rozwiązanie taryfowe w wysokości €3 za paczkę uwzględnione w wysyłce; nie była to ogólna opłata za usługę agenta zakupowego. Późniejszy komunikat z czerwca 2026 informował, że linie EU Duty-Free Shipping Lines obejmują odpowiednie cła i podatki, a dodatkowe taryfy ponosi Kakobuy. Te komunikaty dotyczą konkretnych tras i okoliczności. Korzystaj z aktualnej wyceny i warunków rzeczywiście wybranej trasy; nie stosuj komunikatu dotyczącego UE do każdego kraju lub linii wysyłkowej."
+          ]
+        },
         {
           "heading": "Oddziel zakup od przesyłki",
           "paragraphs": [
@@ -819,19 +1183,29 @@
             "51 USD"
           ]
         ]
-      }
+      },
+      "seoTitle": "Opłaty Kakobuy: produkt, wysyłka, opakowanie i płatność",
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-19"
     },
     {
       "slug": "kakobuy-warehouse-storage",
       "category": "warehouse",
-      "title": "Magazyn Kakobuy: terminy, niedopasowane przesyłki i terminy zwrotów",
-      "description": "Zapoznaj się z oficjalnymi okresami przechowywania i oddzielaj termin magazynowania każdego artykułu od możliwości zwrotu.",
+      "title": "Magazyn Kakobuy: 100 dni przechowywania i terminy zwrotu",
+      "description": "Sprawdź początek 100-dniowego przechowywania Kakobuy, przypomnienie po 90 dniach, zasadę 60 dni dla nietypowych paczek i oddzielny termin zwrotu.",
       "sources": [
         "storage",
         "returns",
         "buying"
       ],
       "sections": [
+        {
+          "heading": "Zapisz termin każdego produktu osobno",
+          "paragraphs": [
+            "Utwórz prostą listę magazynową z numerem zamówienia, datą statusu przechowywania, decyzją o zwrocie i planowaną paczką. Zwykłe przechowywanie opisano jako 100 dni od statusu w magazynie, z przypomnieniem po 90 dniach. Nieprzypisana lub niekompletna paczka przekazywana do dalszej wysyłki ma inny okres: 60 dni od potwierdzonego odbioru. Produkty docierające w różne dni mają więc różne terminy, nawet jeśli zamierzasz wysłać je razem.",
+            "Nie czekaj na przypomnienie, zanim obejrzysz zdjęcia lub zaplanujesz wysyłkę. Oficjalna strona ostrzega, że towary po przekroczeniu limitu przechowywania mogą zostać uznane za porzucone, jeżeli nie zgłoszono paczki i nie otrzymano odpowiedzi. Magazynowanie nie zachowuje prawa do zwrotu u sprzedawcy: kwalifikujący się zwrot magazynowy zwykle wymaga zgłoszenia w oddzielnym terminie 5 dni. Najpierw rozwiąż pilny zwrot, a potem porównaj opcje wysyłki zatrzymanych towarów."
+          ]
+        },
         {
           "heading": "Śledź każdy przedmiot, a nie tylko najnowszy produkt",
           "paragraphs": [
@@ -898,7 +1272,10 @@
             "Czy oczekiwana oszczędność uzasadnia opóźnienie"
           ]
         ]
-      }
+      },
+      "seoTitle": "Magazyn Kakobuy: 100 dni przechowywania i terminy zwrotu",
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-19"
     },
     {
       "slug": "kakobuy-consolidation-packaging",
@@ -974,7 +1351,10 @@
             "Rzeczywista wycena, bezpieczeństwo lub gwarantowana oszczędność"
           ]
         ]
-      }
+      },
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-17",
+      "seoTitle": "Konsolidacja i pakowanie Kakobuy: porównaj ochronę z wielkością paczki"
     },
     {
       "slug": "kakobuy-shipping-time-tracking",
@@ -1053,20 +1433,31 @@
             "Wydarzenie związane z dostawą, zdjęcia, opakowanie i skrzynka pomocnicza"
           ]
         ]
-      }
+      },
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-17",
+      "seoTitle": "Czas wysyłki i śledzenie Kakobuy: podążaj za właściwym etapem"
     },
     {
       "slug": "kakobuy-returns-refunds",
       "category": "after-sales",
-      "title": "Zwroty towarów i pieniędzy w Kakobuy: warunki, dowody i zasada pięciu dni",
-      "description": "Sprawdź wcześniej warunki sprzedawcy, zachowaj opakowanie i poznaj różnicę między prośbą o zwrot, zatwierdzeniem a dokonanym zwrotem pieniędzy.",
+      "title": "Czas zwrotu pieniędzy Kakobuy: zwrot, zgoda sprzedawcy i saldo",
+      "description": "Ile trwa zwrot pieniędzy Kakobuy? Poznaj warunkowy okres 7–15 dni, termin 5 dni na zgłoszenie zwrotu i wypłaty salda.",
       "sources": [
         "returns",
         "storage",
-        "receipt",
-        "inspection"
+        "withdrawal",
+        "receipt"
       ],
       "sections": [
+        {
+          "heading": "Ile trwa zwrot pieniędzy Kakobuy?",
+          "paragraphs": [
+            "Strona pomocy Kakobuy dotycząca zwrotów podaje typowy orientacyjny okres 7–15 dni dla niektórych zwrotów magazynowych, zależnie od potwierdzenia sprzedawcy. Sprzedawca musi zaakceptować zwrot, otrzymać towar i oddać płatność, zanim środki trafią na dostępne saldo Kakobuy. Traktuj to jako warunkową wskazówkę, a nie obiecaną datę pojawienia się pieniędzy na rachunku bankowym lub płatniczym. Anulowanie przed zakupem, zwrot magazynowy i wypłata salda to różne przypadki.",
+            "Dla kwalifikujących się zwrotów ta sama strona opisuje termin zgłoszenia wynoszący 5 dni, czyli 120 godzin, po statusie przyjęcia do magazynu, liczony od następnej godziny po zmianie statusu. Sprawdź dokładny status zamówienia i szybko skontaktuj się z obsługą. Zachowaj produkt, metki i opakowanie w stanie umożliwiającym odsprzedaż. Okres przechowywania 100 dni nie wydłuża tego terminu zwrotu. Przy opóźnieniu zapytaj, który etap oczekuje: zgoda sprzedawcy, krajowa dostawa zwrotna, zwrot pieniędzy sprzedawcy czy zaksięgowanie na koncie.",
+            "Wypłata dostępnego salda jest oddzielnym procesem płatniczym. Oficjalna strona wypłat opisuje zwroty oryginalnym kanałem płatności i możliwe opłaty, lecz nie określa jednego czasu wpływu dla wszystkich banków lub dostawców płatności. Zachowaj numer zamówienia i identyfikator transakcji, sprawdź aktualny status zwrotu i pytaj obsługę o konkretny nierozstrzygnięty etap zamiast wielokrotnie wysyłać zgłoszenia."
+          ]
+        },
         {
           "heading": "Zidentyfikuj problem i obecny etap",
           "paragraphs": [
@@ -1133,7 +1524,29 @@
             "Kwota kredytu, miejsce przeznaczenia i wszelkie potrącenia"
           ]
         ]
-      }
+      },
+      "seoTitle": "Czas zwrotu pieniędzy Kakobuy: zwrot, zgoda sprzedawcy i saldo",
+      "publishedOn": "2026-10-17",
+      "updatedOn": "2026-10-19"
     }
-  ]
+  ],
+  "seo": {
+    "homeTitle": "Arkusz Kakobuy: linki do produktów, znaleziska i poradniki zakupowe",
+    "homeDescription": "Przeglądaj linki do produktów Kakobuy według kategorii, porównuj zdjęcia ofert i ceny oraz czytaj praktyczne poradniki o rozmiarach, QC, wysyłce i zwrotach pieniędzy.",
+    "spreadsheetTitle": "Arkusz Kakobuy i linki do produktów według kategorii",
+    "spreadsheetDescription": "Odkrywaj znaleziska Kakobuy: buty, kurtki, bluzy i inne produkty. Otwórz oryginalną ofertę, sprawdź wybrany wariant i zaplanuj pełny koszt przed zamówieniem.",
+    "categoryDescriptions": {
+      "shoes": "Przeglądaj linki do butów i sneakersów. Porównaj właściwą tabelę rozmiarów, wymiary wkładek, zdjęcia oferty i opakowanie przed zaplanowaniem zamówienia.",
+      "hoodies-sweaters": "Przeglądaj bluzy i swetry. Porównaj szerokość klatki piersiowej, długość, informacje o tkaninie i miejsce na dodatkowe warstwy z posiadaną odzieżą.",
+      "t-shirts": "Przeglądaj linki do koszulek. Porównaj wymiary na płasko, opisy tkaniny i położenie nadruku dla dokładnie wybranego koloru i rozmiaru.",
+      "jackets": "Odkrywaj kurtki i linki do ofert źródłowych. Przed zamówieniem porównaj wymiary klatki piersiowej i ramion, podszewkę, zapięcia oraz rozmiar po spakowaniu.",
+      "pants-shorts": "Znajdź spodnie i szorty przez oferty źródłowe. Sprawdź pas, wysokość stanu, długość wewnętrzną nogawki i rozciągliwość tkaniny, zamiast polegać wyłącznie na etykiecie rozmiaru.",
+      "headwear": "Przeglądaj czapki i inne nakrycia głowy. Sprawdź obwód głowy, regulowane zapięcia, materiały i opakowanie chroniące kształt.",
+      "accessories": "Przeglądaj linki do akcesoriów i zdjęcia ofert. Sprawdź wymiary, materiały, dołączone elementy oraz ograniczenia planowanej trasy wysyłki.",
+      "short-sets": "Przeglądaj dopasowane komplety. Osobno sprawdź wymiary górnej i dolnej części oraz potwierdź, które elementy zawiera wybrana oferta.",
+      "electronics": "Przeglądaj oferty elektroniki. Przed zapłatą potwierdź model, dołączone akcesoria, wymagania dotyczące zasilania i ograniczenia związane z bateriami.",
+      "other-stuff": "Przeglądaj pozostałe znaleziska i oryginalne linki sprzedawców. Potwierdź zawartość, wymiary produktu oraz wszelkie szczególne wymagania wysyłkowe.",
+      "jersey": "Przeglądaj linki do koszulek sportowych. Przed zamówieniem porównaj wymiary, informacje o tkaninie, nadruki i dokładnie wybrany wariant."
+    }
+  }
 }

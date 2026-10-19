@@ -17,8 +17,9 @@ const escapeXML = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, 
 export const GET: APIRoute = ({ site }) => {
   const origin = site!.origin;
   const urls = languages.flatMap(([lang]) => pages.map(path => {
-    const editorial = path === '/guide/' || path === '/faq/' || path.startsWith('/articles/');
-    return `  <url><loc>${escapeXML(origin + localized(lang, path))}</loc>${editorial ? `<lastmod>${reviewed}</lastmod>` : ''}</url>`;
+    const article=en.articles.find(item=>path===`/articles/${item.slug}/`);
+    const lastmod=article?.updatedOn||(path==='/articles/'?'2026-10-19':path==='/guide/'||path==='/faq/'?reviewed:'');
+    return `  <url><loc>${escapeXML(origin + localized(lang, path))}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`;
   }));
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
   return new Response(xml, { headers: { 'Content-Type': 'application/xml; charset=utf-8', 'Cache-Control': 'public, max-age=300' } });

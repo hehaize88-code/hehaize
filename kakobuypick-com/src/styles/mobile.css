@@ -157,3 +157,27 @@
   .nav { gap: 0 6px; font-size: 11px; }
   .nav a { max-width: 80px; }
 }
+
+/* Localized category context and a clear path between research and products. */
+.catalog-intro { max-width: 850px; color: var(--muted); font-size: 15px; line-height: 1.7; margin: -2px 0 16px; }
+.context-links { display: flex; flex-wrap: wrap; gap: 9px 20px; margin: 0 0 18px; }
+.context-links a { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; line-height: 1.5; text-decoration: underline; text-underline-offset: 3px; }
+.context-links svg { flex-shrink: 0; }
+.article-categories { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 28px; }
+.article-section > summary { cursor: pointer; }
+.article-section > summary h2 { display: inline; }
+.article-section > summary::marker { color: var(--muted); }
+@media (min-width: 801px) {
+ .article-section > summary { list-style: none; }
+ .article-section > summary::-webkit-details-marker { display: none; }
+}
+@media (max-width: 800px) {
+ .catalog-intro { font-size: 13px; line-height: 1.6; margin-bottom: 10px; }
+ .context-links { gap: 6px 14px; margin-bottom: 12px; }
+ .context-links a { font-size: 12px; min-height: 36px; }
+ .article-section { border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+ .article-section > summary { padding: 8px 0; min-height: 44px; line-height: 1.5; }
+ .article-section > summary h2 { font-size: 18px; line-height: 1.45; }
+ .reading-body section:has(.article-section) { margin-bottom: 10px; }
+ .article-categories { margin-top: 18px; padding-top: 15px; }
+}

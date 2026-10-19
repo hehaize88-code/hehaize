@@ -2,17 +2,25 @@
 import Icon from './Icon.astro';
 import ArticleCard from './ArticleCard.astro';
 import {sourceURLs,reviewed} from '../lib/editorial';
+import {categoryNames} from '../lib/i18n';
+import {slugs} from '../lib/catalog';
 const {kind,e,article,route,lang,t}=Astro.props;
-const checkedDate=new Intl.DateTimeFormat(lang,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(reviewed));
+const articleDate=article?.updatedOn||reviewed;
+const names=categoryNames(lang);
+const articleCategories=article?(article.slug==='kakobuy-jacket-finds'?['jackets']:article.slug==='kakobuy-sneaker-finds'?['shoes']:article.slug==='kakobuy-sizing-guide'?['jackets','shoes','pants-shorts']:['choose-kakobuy-spreadsheet','kakobuy-spreadsheet-guide','kakobuy-product-links'].includes(article.slug)?['jackets','shoes','hoodies-sweaters']:[]):[];
+const checkedDate=new Intl.DateTimeFormat(lang,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(articleDate));
 const sourceIds=article?.sources ?? (kind==='guide'?['buying','fees','inspection','storage','returns','estimate','receipt']:[]);
 const mins=article?Math.max(1,Math.ceil(article.sections.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length/180)):0;
 const heading=kind==='guide'?e.ui.guideTitle:kind==='faq'?e.ui.faqTitle:article?article.title:e.ui.articlesTitle;
 const description=kind==='guide'?e.ui.guideIntro:kind==='faq'?e.ui.faqIntro:article?article.description:e.ui.articlesIntro;
 const relatedBySlug={
- 'kakobuy-spreadsheet-guide':['kakobuy-product-links','kakobuy-qc-photos','kakobuy-sizing-guide'],
+ 'choose-kakobuy-spreadsheet':['kakobuy-spreadsheet-guide','kakobuy-jacket-finds','kakobuy-sneaker-finds'],
+ 'kakobuy-jacket-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-shipping-calculator'],
+ 'kakobuy-sneaker-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-returns-refunds'],
+ 'kakobuy-spreadsheet-guide':['choose-kakobuy-spreadsheet','kakobuy-product-links','kakobuy-qc-photos'],
  'kakobuy-product-links':['kakobuy-spreadsheet-guide','kakobuy-fees-payment','kakobuy-qc-photos'],
  'kakobuy-qc-photos':['kakobuy-sizing-guide','kakobuy-returns-refunds','kakobuy-warehouse-storage'],
- 'kakobuy-sizing-guide':['kakobuy-qc-photos','kakobuy-returns-refunds','kakobuy-product-links'],
+ 'kakobuy-sizing-guide':['kakobuy-jacket-finds','kakobuy-sneaker-finds','kakobuy-returns-refunds'],
  'kakobuy-shipping-calculator':['kakobuy-fees-payment','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
  'kakobuy-fees-payment':['kakobuy-shipping-calculator','kakobuy-consolidation-packaging','kakobuy-returns-refunds'],
  'kakobuy-warehouse-storage':['kakobuy-returns-refunds','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
@@ -28,7 +36,7 @@ const relatedArticles=article?(relatedBySlug[article.slug]||[]).map(slug=>e.arti
   {article?<><a href={route('/articles/')}>{e.ui.articles}</a><span>/</span><span>{article.title}</span></>:<span>{heading}</span>}
  </nav>
  <header class="knowledge-heading"><span class="eyebrow muted">KAKOBUY PICK</span><h1>{heading}</h1><p>{description}</p>
-  <div class="reading-meta"><span>{e.ui.author}</span><span>{e.ui.checked}: <time datetime={reviewed}>{checkedDate}</time></span>{article&&<span>{mins} {e.ui.readTime}</span>}</div>
+  <div class="reading-meta"><span>{e.ui.author}</span><span>{article?e.ui.updated:e.ui.checked}: <time datetime={articleDate}>{checkedDate}</time></span>{article&&<span>{mins} {e.ui.readTime}</span>}</div>
  </header>
  {kind==='articles'&&<div class="articles-grid">{e.articles.map((a,index)=><ArticleCard article={a} e={e} route={route} index={index}/>)}</div>}
  {kind==='guide'&&<div class="guide-layout"><aside class="knowledge-side"><details class="guide-toc mobile-disclosure" data-mobile-collapse open><summary>{e.ui.guideSteps}</summary><ol>{e.guide.sections.map((s,i)=><li><a href={`#step-${i+1}`}>{s.heading.replace(/^\d+\.\s*/, '')}</a></li>)}</ol><a class="button primary" href={route('/spreadsheet/')}>{e.ui.browse}<Icon name="arrow" size={17}/></a></details></aside><div class="reading-body">{e.guide.sections.map((s,i)=><section id={`step-${i+1}`}><h2>{s.heading}</h2>{s.paragraphs.map(p=><p>{p}</p>)}</section>)}</div></div>}
@@ -40,9 +48,10 @@ const relatedArticles=article?(relatedBySlug[article.slug]||[]).map(slug=>e.arti
  </>}
  {kind==='article'&&article&&<>
   <div class="article-layout"><aside class="knowledge-side"><details class="article-toc mobile-disclosure" data-mobile-collapse open><summary>{e.ui.contents}</summary><ol>{article.sections.map((s,i)=><li><a href={`#section-${i+1}`}>{s.heading}</a></li>)}<li><a href="#checklist">{e.ui.practical}</a></li></ol></details><a class="button outline" href={route('/spreadsheet/')}>{e.ui.browse}<Icon name="arrow" size={17}/></a></aside>
-  <article class="reading-body">{article.sections.map((s,i)=><section id={`section-${i+1}`}><h2>{s.heading}</h2>{s.paragraphs.map(p=><p>{p}</p>)}</section>)}
+  <article class="reading-body">{article.sections.map((s,i)=><section id={`section-${i+1}`}><details class="article-section" data-mobile-collapse={i>0?true:undefined} open><summary><h2>{s.heading}</h2></summary>{s.paragraphs.map(p=><p>{p}</p>)}</details></section>)}
    {article.table&&<div class="article-table"><table><caption>{article.table.caption}</caption><thead><tr>{article.table.headers.map(h=><th scope="col">{h}</th>)}</tr></thead><tbody>{article.table.rows.map(row=><tr>{row.map((cell,i)=>i===0?<th scope="row">{cell}</th>:<td>{cell}</td>)}</tr>)}</tbody></table></div>}
    <section class="takeaways" id="checklist"><h2>{e.ui.practical}</h2><ul>{article.checklist.map(item=><li>{item}</li>)}</ul></section>
+  {articleCategories.length>0&&<nav class="article-categories" aria-label={e.ui.categoryBrowse}><h2>{e.ui.categoryBrowse}</h2><div class="context-links">{articleCategories.map(slug=><a href={route(`/category/${slug}/`)}>{names[slugs.indexOf(slug)]}<Icon name="arrow" size={16}/></a>)}</div></nav>}
   </article></div>
  </>}
  {sourceIds.length>0&&<details class="source-panel mobile-disclosure" data-mobile-collapse open><summary><h2>{e.ui.sources}</h2></summary><p>{e.ui.editorialNote}</p><ul>{sourceIds.map(id=><li><a href={sourceURLs[id]} target="_blank" rel="noopener noreferrer">{e.ui.sourceLabels[id]} <Icon name="external" size={12}/></a></li>)}</ul></details>}

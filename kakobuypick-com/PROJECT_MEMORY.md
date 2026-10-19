@@ -84,3 +84,14 @@
 - 测量 ID：`G-6WXLRRCDS3`。报告时区为中国时间（UTC+08:00），币种 USD；业务目标为流量与互动度，开启默认增强型衡量。
 - 通过公共页面模板的 `Analytics.astro` 组件添加一份官方 gtag.js 代码，覆盖全部24语页面。无自定义购买/收入事件，未关联广告账号或开启额外广告功能。
 - 后台入口：https://analytics.google.com/analytics/web/#/a405518068p559298131/reports/intelligenthome 。是否已收到生产访问数据，以后续公开部署和 Analytics 实时报告检查为准。
+
+## Multilingual search and editorial improvement — 2026-10-19
+
+- User requested research-led improvements and publication across every language. Retained the existing GitHub → Workers Builds deployment and all catalogue/source-image/purchase-link behavior.
+- All 24 locales now have 13 full articles. Added `choose-kakobuy-spreadsheet`, `kakobuy-jacket-finds`, and `kakobuy-sneaker-finds` (English bodies 1238, 1203, 1214 words; every section/paragraph translated).
+- Expanded returns/refunds, fees/payment, warehouse storage, sizing and product-link articles. Refund timing is conditional and separate from withdrawals; EU tariff announcements are not described as a universal purchasing fee. Official source URLs are included with the articles.
+- Added localized homepage/spreadsheet SEO text and distinct descriptions for all 11 categories. Category pages link to relevant guides; new guides link to product categories. Homepage features the three new articles plus the refund guide.
+- Fixed article title truncation at colons. Existing publication dates remain 2026-10-17; modified and new articles use 2026-10-19 as appropriate. Sitemap uses individual article update dates and now contains 696 canonical URLs.
+- Article sections remain in server-rendered HTML. On narrow screens, the first section stays open and other sections collapse; table-of-contents links open the selected section. Confirmed no horizontal overflow in the 375px content viewport.
+- GA4 remains G-6WXLRRCDS3. Added `select_item`, `article_open`, `category_click`, `outbound_product_click`, `registration_click`, and `catalog_search`. These measure intent, not completed purchases or signups. Search event sends length/scope, not free-form query text. Local/preview origins no longer load the Google tag.
+- Validation: all 24 content bundles; 384 editorial HTTP responses; canonical/hreflang/schema/date/body checks; 696 sitemap URLs; analytics intent checks; Astro production build; Wrangler dry run (gzip approximately 1.03 MiB). Production release must be verified after the GitHub commit deploys.

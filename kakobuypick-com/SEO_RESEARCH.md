@@ -62,3 +62,18 @@
 ## 索引状态更新
 
 2026-10-17 用户要求提供收录地图和链接，现开放正常 canonical 内容页索引。`/sitemap.xml` 收录24语共624个稳定页面；语言对应关系仍由HTML hreflang与x-default声明。搜索/排序/分页变体、未接通搜图和错误页保持noindex，不列入地图。以上最新状态取代本文件先前的验收期全站禁止抓取决定。
+
+## Research-led release — 2026-10-19
+
+Implemented topic separation: spreadsheet selection versus spreadsheet use; jacket measurements/materials; sneaker sizing/inspection; refund timing; warehouse deadlines; cost breakdowns and reliable product links. Added reciprocal links between relevant guides and category pages. Avoided unsupported product-testing, authenticity and shipping-price claims.
+
+Policy references rechecked for this release:
+- Return eligibility, 5-day/120-hour request window and conditional 7–15-day refund reference: https://item.kakobuy.com/service/help/question?id=51
+- Balance withdrawals are a separate process: https://www.kakobuy.com/service/help/question?id=104
+- Normal 100-day storage, 90-day reminder and abnormal-parcel 60-day period: https://www.kakobuy.com/service/help/question?id=1
+- Basic purchasing fees and cost labels: https://item.kakobuy.com/service/help/question?id=63 and https://kakobuy.com/service/help/question?id=74
+- EU route announcements, read together rather than generalized: https://www.kakobuy.com/tipdetail?id=51 and https://item2.kakobuy.com/tipdetail?id=52
+- Inspection scope and limitations: https://www.kakobuy.com/service/help/question?id=95
+- Purchase workflow and manual-link fallback: https://item2.kakobuy.com/index/information?information_id=3
+
+Private analytics report contents and traffic metrics are not included in this public repository.

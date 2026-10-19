@@ -19,7 +19,7 @@ function compare(value, source, path, locale) {
   } else if (typeof source === 'string') {
     assert.ok(value.trim(), `${locale}: empty ${path}`);
     assert.deepEqual(numericTokens(value), numericTokens(source), `${locale}: changed numeric facts at ${path}`);
-    if (/\.(slug|id|category)$/.test(path) || /\.sources\.\d+$/.test(path)) {
+    if (/\.(slug|id|category|publishedOn|updatedOn)$/.test(path) || /\.sources\.\d+$/.test(path)) {
       assert.equal(value, source, `${locale}: changed identifier at ${path}`);
     } else if (locale !== 'en') {
       for (const sentence of source.split(/(?<=[.!?])\s+/)) {
@@ -34,7 +34,12 @@ function compare(value, source, path, locale) {
 for (const locale of locales) {
   const data = JSON.parse(fs.readFileSync(new URL(`${locale}.json`, root), 'utf8'));
   compare(data, base, '', locale);
-  assert.equal(data.articles.length, 10);
+  assert.equal(data.articles.length, 13);
+  assert.equal(new Set(data.articles.map(a=>a.slug)).size,13,`${locale}: duplicate article slug`);
+  for(const article of data.articles) {
+    assert.ok(article.updatedOn>=article.publishedOn,`${locale}: invalid article dates`);
+    assert.equal(article.seoTitle,article.title,`${locale}: localized search title`);
+  }
   assert.equal(data.faq.length, 26);
   assert.equal(data.guide.sections.length, 6);
   if (locale !== 'en') assert.notEqual(data.ui.sources, base.ui.sources, `${locale}: source heading`);
