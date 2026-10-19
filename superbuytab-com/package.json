@@ -1,0 +1,22 @@
+{
+  "name": "superbuytab-com",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0 --port 4173",
+    "build": "astro build && node scripts/finalize.mjs",
+    "check": "node scripts/verify.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "astro": "7.4.0",
+    "linkedom": "0.18.12"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "wrangler": "4.151.1"
+  }
+}

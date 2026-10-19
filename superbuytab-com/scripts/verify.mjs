@@ -1,0 +1,51 @@
+import assert from 'node:assert/strict';
+import {parseHTML} from 'linkedom';
+import worker from '../dist/server/index.js';
+const origin='https://superbuytab.com';
+const locales=['en','de','es','fr','it','pl','pt','ro','sv','nl','da','fi','el','cs','hu','bg','sk','hr','sl','lt','lv','et','ga','mt'];
+const render=async(path)=>{const r=await worker.fetch(new Request(origin+path),{},{});return{r,d:parseHTML(await r.text()).document};};
+const [home,first,second,third,fourth,detail,empty]=await Promise.all([
+  render('/'),render('/spreadsheet/'),render('/spreadsheet/?page=2'),render('/spreadsheet/?page=3'),render('/spreadsheet/?page=4'),render('/products/shoes/3470/'),render('/spreadsheet/?q=superbuy-no-match-836417')
+]);
+for(const result of [home,first,second,third,fourth,detail,empty])assert.equal(result.r.status,200);
+assert.equal(home.d.querySelectorAll('.product-card').length,8);
+const products=d=>[...d.querySelectorAll('.product-card')].map(a=>a.getAttribute('href'));
+const all=[...products(first.d),...products(second.d),...products(third.d),...products(fourth.d)];
+assert.equal(all.length,80);assert.equal(new Set(all).size,80,'Pagination overlaps');
+assert.equal(empty.d.querySelectorAll('.product-card').length,0,'Empty results must not contain invented products');
+assert(empty.d.querySelector('.empty-state'));
+const source=parseHTML(await(await fetch('https://cnbuycha.com/AllProducts/?sort=new&page=2')).text()).document;
+const expected=source.querySelector('a.product-title').getAttribute('href').replace(/^\/([^/]+)\/(\d+)\.html$/,'/products/$1/$2/');
+assert.equal(products(fourth.d)[0],expected,'Page 4 must start at main-site page 2');
+const buy=new URL(detail.d.querySelector('.buy-button').getAttribute('href'));
+assert.equal(buy.origin,'https://www.superbuy.com');assert.equal(buy.searchParams.get('partnercode'),'ES7pVI');
+const sourceLink=new URL(detail.d.querySelector('.original-link').getAttribute('href'));
+assert.equal(buy.searchParams.get('url'),sourceLink.href);
+assert.notEqual(sourceLink.searchParams.get('itemID'),'3470','Main-site internal ID used as marketplace ID');
+const register=new URL(home.d.querySelector('.register').getAttribute('href'));
+const registeredBuy=new URL(register.searchParams.get('ref'));
+assert.equal(registeredBuy.searchParams.get('partnercode'),'ES7pVI');
+assert.equal(new URL(registeredBuy.searchParams.get('url')).searchParams.get('itemID'),'7831516792');
+for(const code of locales){
+ const prefix=code==='en'?'':'/'+code;
+ const {r,d}=await render(prefix+'/guide/');
+ assert.equal(r.status,200);assert.equal(d.documentElement.lang,code);
+ assert.equal(d.querySelector('link[rel=canonical]').getAttribute('href'),origin+prefix+'/guide/');
+ assert.equal(d.querySelectorAll('link[hreflang]').length,25);
+ assert.equal(d.querySelectorAll('.language-menu a').length,24);
+ assert.equal(d.querySelector('.language-menu a[lang="de"]').getAttribute('href'),'/de/guide/');
+ assert.equal(d.querySelector('meta[name=robots]').getAttribute('content'),'index, follow');
+ assert(!d.body.textContent.includes('undefined'));assert(!d.body.textContent.includes('Sugargoo'));
+}
+const switched=await render('/de/spreadsheet/?q=Adidas&sort=price&page=2');
+assert.equal(switched.d.querySelector('.language-menu a[lang="fr"]').getAttribute('href'),'/fr/spreadsheet/?q=Adidas&sort=price&page=2');
+const unknown=await render('/does-not-exist/');assert.equal(unknown.r.status,404);
+const visual=await render('/search/visual/');assert.equal(visual.d.querySelectorAll('input[type=file]').length,0);
+const www=await worker.fetch(new Request('https://www.superbuytab.com/de/spreadsheet/?q=Adidas&page=2'),{},{});
+assert.equal(www.status,308);assert.equal(www.headers.get('Location'),'https://superbuytab.com/de/spreadsheet/?q=Adidas&page=2');
+const sitemap=await worker.fetch(new Request(origin+'/sitemap.xml'),{},{});const xml=await sitemap.text();assert.equal(sitemap.status,200);assert.equal((xml.match(/<loc>/g)||[]).length,96);assert(!xml.includes('chatgpt.site'));
+const robots=await worker.fetch(new Request(origin+'/robots.txt'),{},{});assert.match(await robots.text(),/Allow: \/\nSitemap: https:\/\/superbuytab\.com\/sitemap\.xml/);
+const preview=await worker.fetch(new Request('https://superbuytab-com.example.workers.dev/guide/'),{},{});assert.match(preview.headers.get('X-Robots-Tag'),/noindex/);
+assert.match(detail.r.headers.get('X-Robots-Tag'),/noindex/);assert.match(switched.r.headers.get('X-Robots-Tag'),/noindex/);
+let assetCalled=false;const asset=await worker.fetch(new Request(origin+'/brand/favicon.svg'),{ASSETS:{fetch:async()=>{assetCalled=true;return new Response('asset')}}},{});assert.equal(asset.status,200);assert(assetCalled);
+console.log(JSON.stringify({passed:true,liveProducts:80,locales:24,paginationBoundary:'passed',affiliateAndRegistration:'passed',sameRouteLanguageSwitch:'passed',emptyAnd404:'passed'}));

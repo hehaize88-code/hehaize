@@ -1,0 +1,126 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import ProductCard from '../components/ProductCard.astro';
+import Search from '../components/Search.astro';
+import {languages,translate,categoryNames,localized} from '../lib/i18n';
+import {editorial} from '../lib/copy';
+import {isProductionRequest} from '../../site-targets.mjs';
+import {home,listing,detail,slugs,productPath,REGISTER,LOGO,FAVICON} from '../lib/catalog';
+
+const segments=(Astro.params.path||'').split('/').filter(Boolean);
+let lang='en';
+if(languages.some(([code])=>code===segments[0])) lang=segments.shift()!;
+const route='/' + segments.join('/') + (segments.length ? '/' : '');
+const t=translate(lang),c=editorial(lang),names=categoryNames(lang);
+const href=(path:string='/')=>localized(lang,path);
+const params=Astro.url.searchParams;
+const query=(params.get('q')||'').slice(0,120);
+const category=slugs.includes(params.get('category')||'')?params.get('category')!:'';
+const sort=['new','click','price'].includes(params.get('sort')||'')?params.get('sort')!:'new';
+const page=Math.min(10000,Math.max(1,Math.floor(Number(params.get('page'))||1)));
+const isHome=route==='/',isList=route==='/spreadsheet/',isVisual=route==='/search/visual/',isGuide=route==='/guide/',isQC=route==='/qc/',isFAQ=route==='/faq/';
+const match=route.match(/^\/products\/([a-z-]+)\/(\d+)\/$/);
+const isProduct=!!match && slugs.includes(match[1]);
+const isKnown=isHome||isList||isVisual||isGuide||isQC||isFAQ||isProduct;
+let data:any=null,product:any=null,error='';
+try {
+ if(isHome) data=await home();
+ if(isList) data=await listing(category,query,sort,page);
+ if(isProduct) product=await detail(`/${match![1]}/${match![2]}.html`);
+} catch(e) {error=c.error; console.error('CnBuyCha request failed:',e instanceof Error?e.message:'unknown'); Astro.response.status=503;}
+if(!isKnown) Astro.response.status=404;
+if(isList && !error && page>data.pages) Astro.response.status=404;
+const production=isProductionRequest(Astro.url);
+const indexable=production && Astro.response.status===200 && (isHome || isGuide || isFAQ || (isList && !query && !category && sort==='new' && page===1));
+const robots=indexable?'index, follow':'noindex, follow';
+Astro.response.headers.set('X-Robots-Tag',robots);
+Astro.response.headers.set('Referrer-Policy','strict-origin-when-cross-origin');
+Astro.response.headers.set('X-Content-Type-Options','nosniff');
+const title=product?.title||(isList?(query?`${t.search}: ${query}`:category?names[slugs.indexOf(category)]:t.catalog):isGuide?t.guide:isQC?t.photos:isFAQ?t.faq:isVisual?t.visual:'Superbuy Spreadsheet');
+const canonical=new URL(href(route),Astro.site);
+if(isList) for(const [key,value] of [['category',category],['q',query],['sort',sort==='new'?'':sort],['page',page>1?String(page):'']]) if(value)canonical.searchParams.set(key,value);
+const listURL=(change:Record<string,string|number>)=>{const p=new URLSearchParams();const values={q:query,category,sort,page,...change};for(const [k,v]of Object.entries(values)){if(v&&!(k==='sort'&&v==='new')&&!(k==='page'&&v===1))p.set(k,String(v));}return href('/spreadsheet/')+(p.size?'?'+p:'');};
+const total=isHome&&data?data.categories.reduce((n:number,v:any)=>n+v.count,0):data?.total;
+const categoryName=(slug:string)=>names[slugs.indexOf(slug)]||t.all;
+const faq=[{q:t.guide,a:c.how},{q:t.price,a:c.priceNote},{q:t.photos,a:c.qcNote},{q:t.visual,a:c.visualNote}];
+const heroProducts=data?.products?.filter((p:any)=>p.image).slice(0,3)||[];
+---
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>{title}{isHome?' · '+t.catalog+' · '+t.guide:' · Superbuy Spreadsheet'}</title>
+  <meta name="description" content={c.intro}/><meta name="robots" content={robots}/>
+  <link rel="canonical" href={canonical.href}/><link rel="icon" type="image/svg+xml" href={FAVICON}/>
+  {languages.map(([code])=><link rel="alternate" hreflang={code} href={new URL(localized(code,route)+canonical.search,Astro.site).href}/>)}
+  <link rel="alternate" hreflang="x-default" href={new URL(route+canonical.search,Astro.site).href}/>
+  <meta property="og:type" content="website"/><meta property="og:title" content={title+' · Superbuy Spreadsheet'}/><meta property="og:description" content={c.intro}/><meta property="og:url" content={canonical.href}/>
+  {product?.images?.[0]&&<meta property="og:image" content={product.images[0]}/>}
+  <meta name="theme-color" content="#ed432f"/>
+</head>
+<body>
+  <div class="topline"><div class="container"><span>SUPERBUY <span class="top-divider">/</span> SPREADSHEET</span><span><span class="status-dot"></span>{production?`24 ${t.language}`:t.preview}</span></div></div>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href={href('/')} aria-label="Superbuy Spreadsheet"><img src={LOGO} width="152" height="40" alt="Superbuy"/><span>spreadsheet</span></a>
+    <nav aria-label={t.home}><a class:list={{active:isHome}} href={href('/')}>{t.home}</a><a class:list={{active:isList}} href={href('/spreadsheet/')}>{t.browse}</a><a class:list={{active:isGuide}} href={href('/guide/')}>{t.guide}</a><a class:list={{active:isFAQ}} href={href('/faq/')}>{t.faq}</a></nav>
+    <div class="header-actions">
+      <details class="language-picker"><summary><Icon name="globe" size={17}/><span>{lang.toUpperCase()}</span><Icon name="chevron" size={12}/></summary><div class="language-menu">{languages.map(([code,label])=><a href={localized(code,route)+Astro.url.search} lang={code} hreflang={code} class:list={{selected:code===lang}}>{label}{code===lang&&<Icon name="check" size={14}/>}</a>)}</div></details>
+      <a class="button primary register" href={REGISTER} target="_blank" rel="sponsored noopener noreferrer">{t.register}<Icon name="external" size={15}/></a>
+    </div>
+  </div></header>
+
+  <main>
+    {isHome&&<>
+      <section class="hero"><div class="container hero-grid"><div class="hero-copy">
+        <p class="eyebrow"><span class="line"></span>{c.tagline}</p>
+        <h1>Superbuy<br/><span>spreadsheet.</span></h1>
+        <p class="hero-description">{c.intro}</p>
+        <div class="hero-buttons"><a class="button primary" href={href('/spreadsheet/')}>{t.catalog}<Icon name="arrow"/></a><a class="text-link" href={href('/guide/')}>{t.guide}<Icon name="arrow" size={18}/></a></div>
+        <div class="hero-facts">{total&&<span><strong>{total.toLocaleString(lang)}</strong> {t.results}</span>}<span><strong>{data?.categories?.length||slugs.length}</strong> {t.categories}</span></div>
+      </div><div class="hero-gallery" aria-label={t.latest}>
+        <div class="gallery-caption"><span class="status-dot"></span>{t.latest}<span>01 — 03</span></div>
+        {heroProducts.map((p:any,i:number)=><a href={href(productPath(p.path))} class={`hero-product hero-product-${i}`}><div class="hero-product-top"><span>{categoryName(p.category)}</span><Icon name="external" size={16}/></div><img src={p.image} alt={p.title} width="400" height="400" loading="eager" referrerpolicy="no-referrer"/><div class="hero-product-bottom"><span>{p.title}</span><strong>${p.price.replace(/[^0-9.,]/g,'')}</strong></div></a>)}
+        {!heroProducts.length&&<div class="hero-no-data">{c.error}</div>}
+        <span class="hero-decor" aria-hidden="true">+</span>
+      </div></div></section>
+      <div class="container discovery-bar"><Search lang={lang} large/><div class="discovery-hint"><Icon name="check" size={16}/><span>{t.source} · CnBuyCha</span></div></div>
+      <section class="section container" id="categories"><div class="section-header"><div><p class="eyebrow">01 / {t.categories}</p><h2>{t.catalog}</h2></div><a class="text-link" href={href('/spreadsheet/')}>{t.all}<Icon name="arrow" size={18}/></a></div><div class="category-pills">{slugs.map((slug,i)=><a href={href('/spreadsheet/')+'?category='+slug}><span>{names[i]}</span>{data?.categories?.find((v:any)=>v.slug===slug)&&<small>{data.categories.find((v:any)=>v.slug===slug).count}</small>}</a>)}</div></section>
+      <section class="section container latest-section"><div class="section-header"><div><p class="eyebrow">02 / SUPERBUY FINDS</p><h2>{t.latest}<span class="red-dot">.</span></h2></div><a class="text-link" href={href('/spreadsheet/')}>{t.all}<Icon name="arrow" size={18}/></a></div>{error?<div class="empty-state"><p>{error}</p><a class="button secondary" href={href('/')}>{t.retry}</a></div>:<div class="product-grid">{data?.products?.slice(0,8).map((p:any)=><ProductCard product={p} lang={lang}/>)}</div>}<div class="section-cta"><a class="button secondary" href={href('/spreadsheet/')}>{t.browse}<Icon name="arrow"/></a></div></section>
+      <section class="guide-band"><div class="container guide-grid"><div><p class="eyebrow">03 / {t.guide}</p><h2>{c.howTitle}</h2><a class="button dark" href={href('/guide/')}>{t.guide}<Icon name="arrow"/></a></div><div class="guide-steps">{[t.search,t.photos,t.buy].map((label,i)=><a href={href(i===0?'/spreadsheet/':i===1?'/qc/':'/guide/')}><span class="step-num">0{i+1}</span><h3>{label}</h3><Icon name="arrow"/></a>)}<p>{c.how}</p></div></div></section>
+      <section class="section container faq-section"><div><p class="eyebrow">04 / {t.faq}</p><h2>{t.faq}<span class="red-dot">.</span></h2><p class="muted">Superbuy spreadsheet</p></div><div class="faq-list">{faq.map(f=><details><summary>{f.q}<Icon name="plus" size={18}/></summary><p>{f.a}</p></details>)}</div></section>
+    </>}
+
+    {isList&&<section class="container catalog-section"><div class="breadcrumbs"><a href={href('/')}>{t.home}</a><span>/</span><span>{t.browse}</span></div><div class="catalog-heading"><div><p class="eyebrow">SUPERBUY SPREADSHEET</p><h1>{query?`${t.search}: “${query}”`:category?categoryName(category):t.catalog}<span class="red-dot">.</span></h1></div><span class="result-count">{!error&&<><strong>{data?.total?.toLocaleString(lang)}</strong> {t.results}</>}</span></div><Search lang={lang} query={query} category={category} sort={sort}/>
+    <div class="catalog-layout"><aside class="catalog-sidebar"><h2>{t.categories}</h2><a class:list={{selected:!category}} href={listURL({category:'',page:1})}>{t.all}<Icon name="arrow" size={16}/></a>{slugs.map((slug,i)=><a class:list={{selected:category===slug}} href={listURL({category:slug,page:1})}>{names[i]}</a>)}</aside><div class="catalog-results">
+      <div class="catalog-toolbar"><span>{query||category?<a class="text-link" href={href('/spreadsheet/')}>{t.clear} ×</a>:t.all}</span><form method="get" action={href('/spreadsheet/')} class="sort-form">{query&&<input type="hidden" name="q" value={query}/>} {category&&<input type="hidden" name="category" value={category}/>}<select name="sort" aria-label={t.priceSort} data-sort><option value="new" selected={sort==='new'}>{t.latest}</option><option value="click" selected={sort==='click'}>{t.popular}</option><option value="price" selected={sort==='price'}>{t.priceSort}</option></select><noscript><button type="submit">{t.search}</button></noscript></form></div>
+      {error?<div class="empty-state"><h2>{t.unavailable}</h2><p>{error}</p><a class="button secondary" href={Astro.url.pathname+Astro.url.search}>{t.retry}</a></div>:data?.products?.length?<><div class="product-grid catalog-grid">{data.products.map((p:any,i:number)=><ProductCard product={p} lang={lang} eager={i<4}/>)}</div><nav class="pagination" aria-label={t.browse}>{page>1?<a href={listURL({page:page-1})}>← {t.previous}</a>:<span/>}<span class="page-count">{page} / {data.pages}</span>{page<data.pages?<a href={listURL({page:page+1})}>{t.next} →</a>:<span/>}</nav></>:<div class="empty-state"><Icon name="search" size={40}/><h2>{t.empty}</h2><a class="button secondary" href={href('/spreadsheet/')}>{t.clear}</a></div>}
+      <p class="price-note">{c.priceNote}</p>
+    </div></div></section>}
+
+    {isProduct&&<section class="container product-section"><div class="breadcrumbs"><a href={href('/spreadsheet/')}>{t.browse}</a><span>/</span><a href={href('/spreadsheet/')+'?category='+match![1]}>{categoryName(match![1])}</a></div>
+      {error?<div class="empty-state"><h1>{t.unavailable}</h1><p>{error}</p><a href={Astro.url.pathname} class="button secondary">{t.retry}</a></div>:product&&<><div class="product-detail"><div class="detail-gallery"><div class="main-photo">{product.images[0]?<a href={product.images[0]} target="_blank" rel="noopener noreferrer" data-full-image><img data-main-image src={product.images[0]} alt={product.title} width="800" height="800" referrerpolicy="no-referrer"/><span><Icon name="external"/></span></a>:<span>{t.photoMissing}</span>}</div><div class="photo-thumbs">{product.images.map((src:string,i:number)=><button type="button" data-image={src} class:list={{selected:i===0}} aria-label={`${t.photos} ${i+1}`} aria-pressed={i===0}><img src={src} alt={`${product.title} ${i+1}`} width="100" height="100" loading="lazy" referrerpolicy="no-referrer"/></button>)}</div></div><div class="detail-copy"><p class="eyebrow">{categoryName(product.category)}</p><h1>{product.title}</h1><div class="detail-price">${product.price.replace(/[^0-9.,]/g,'')}<span>USD</span></div><p class="price-note">{c.priceNote}</p>{product.buy&&<a class="button primary buy-button" href={product.buy} target="_blank" rel="sponsored noopener noreferrer">{t.buy}<Icon name="external"/></a>}{product.sourceUrl&&product.buy&&<a class="original-link" href={product.sourceUrl} target="_blank" rel="noopener noreferrer nofollow">{t.source}<Icon name="external" size={15}/></a>}<div class="product-id">ID <span>{product.sourceId||'—'}</span></div><details class="detail-info" open><summary>{t.photos}<Icon name="plus" size={16}/></summary><p>{c.qcNote}</p></details><details class="detail-info"><summary>{t.guide}<Icon name="plus" size={16}/></summary><p>{c.how}</p></details></div></div>{product.related.length>0&&<section class="related-section"><div class="section-header"><h2>{t.related}<span class="red-dot">.</span></h2><a class="text-link" href={href('/spreadsheet/')}>{t.all}<Icon name="arrow" size={18}/></a></div><div class="product-grid">{product.related.map((p:any)=><ProductCard product={p} lang={lang}/>)}</div></section>}</>}
+    </section>}
+
+    {(isGuide||isQC||isFAQ||isVisual)&&<section class="container information-page"><div class="breadcrumbs"><a href={href('/')}>{t.home}</a><span>/</span><span>{title}</span></div><p class="eyebrow">SUPERBUY SPREADSHEET</p><h1>{title}<span class="red-dot">.</span></h1>
+      {isGuide&&<><p class="lead">{c.howTitle}</p><p>{c.how}</p><div class="information-steps">{[t.search,t.photos,t.buy].map((label,i)=><a href={i===2?REGISTER:href(i===0?'/spreadsheet/':'/qc/')} rel={i===2?'sponsored noopener noreferrer':undefined} target={i===2?'_blank':undefined}><span>0{i+1}</span><h2>{label}</h2><Icon name="arrow"/></a>)}</div><h2>{t.price}</h2><p>{c.priceNote}</p><h2>{t.photos}</h2><p>{c.qcNote}</p></>}
+      {isQC&&<><div class="info-icon"><Icon name="image" size={36}/></div><p class="lead">{c.qcNote}</p><p>{c.how}</p><a class="button primary" href={href('/spreadsheet/')}>{t.browse}<Icon name="arrow"/></a></>}
+      {isFAQ&&<div class="faq-list">{faq.map(f=><details open><summary>{f.q}<Icon name="plus" size={18}/></summary><p>{f.a}</p></details>)}</div>}
+      {isVisual&&<div class="visual-empty"><div class="info-icon"><Icon name="image" size={36}/></div><h2>{t.unavailable}</h2><p>{c.visualNote}</p><Search lang={lang}/></div>}
+    </section>}
+    {!isKnown&&<section class="container empty-state"><p class="eyebrow">404</p><h1>{t.unavailable}</h1><a class="button primary" href={href('/')}>{t.home}<Icon name="arrow"/></a></section>}
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href={href('/')}><img src={LOGO} alt="Superbuy" width="152" height="40"/><span>spreadsheet</span></a><p>{c.disclosure}</p></div><div><h3>{t.browse}</h3><a href={href('/spreadsheet/')}>{t.all}</a><a href={href('/spreadsheet/')+'?category=shoes'}>{names[0]}</a><a href={href('/spreadsheet/')+'?category=hoodies-sweaters'}>{names[1]}</a><a href={href('/spreadsheet/')+'?category=accessories'}>{names[6]}</a></div><div><h3>{t.guide}</h3><a href={href('/guide/')}>{t.guide}</a><a href={href('/qc/')}>{t.photos}</a><a href={href('/faq/')}>{t.faq}</a><a href={REGISTER} target="_blank" rel="sponsored noopener noreferrer">{t.register} ↗</a></div></div><div class="container footer-bottom"><span>© 2026 Superbuy Spreadsheet</span><span>{t.source}: <a href="https://cnbuycha.com" target="_blank" rel="noopener noreferrer">CnBuyCha</a><span class="top-divider">/</span> {production?`24 ${t.language}`:t.preview}</span></div></footer>
+  <script>
+    document.querySelectorAll<HTMLSelectElement>('[data-sort]').forEach(s=>s.addEventListener('change',()=>s.form?.requestSubmit()));
+    document.querySelectorAll<HTMLButtonElement>('[data-image]').forEach(button=>button.addEventListener('click',()=>{
+      const src=button.dataset.image;const image=document.querySelector<HTMLImageElement>('[data-main-image]');const link=document.querySelector<HTMLAnchorElement>('[data-full-image]');
+      if(!src||!image)return;image.src=src;if(link)link.href=src;
+      document.querySelectorAll('[data-image]').forEach(b=>{b.classList.remove('selected');b.setAttribute('aria-pressed','false');});button.classList.add('selected');button.setAttribute('aria-pressed','true');
+    }));
+    document.addEventListener('click',event=>{const picker=document.querySelector<HTMLDetailsElement>('.language-picker');if(picker&&event.target instanceof Node&&!picker.contains(event.target))picker.open=false;});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'){const picker=document.querySelector<HTMLDetailsElement>('.language-picker');if(picker)picker.open=false;}});
+    document.querySelectorAll<HTMLImageElement>('.product-image img,.hero-product img').forEach(img=>img.addEventListener('error',()=>{img.style.visibility='hidden';img.parentElement?.classList.add('photo-failed');}));
+  </script>
+</body>
+</html>

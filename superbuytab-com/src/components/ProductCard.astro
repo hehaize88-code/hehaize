@@ -1,0 +1,14 @@
+---
+import {localized, translate, categoryNames} from '../lib/i18n';
+import {slugs, productPath} from '../lib/catalog';
+import Icon from './Icon.astro';
+const {product:p,lang='en',eager=false}=Astro.props;
+const t=translate(lang),category=categoryNames(lang)[slugs.indexOf(p.category)] || t.all;
+---
+<a class="product-card" href={localized(lang,productPath(p.path))}>
+  <div class="product-image">
+    {p.image ? <img src={p.image} alt={p.title} loading={eager?'eager':'lazy'} decoding="async" width="440" height="440" referrerpolicy="no-referrer" /> : <span class="image-missing">{t.photoMissing}</span>}
+    <span class="card-arrow"><Icon name="arrow" size={18}/></span>
+  </div>
+  <div class="product-info"><span class="product-category">{category}</span><h3>{p.title}</h3><div class="product-bottom"><strong>{p.price ? `$${p.price.replace(/[^0-9.,]/g,'')}` : '—'}</strong><span>USD</span></div></div>
+</a>
