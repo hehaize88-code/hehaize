@@ -1,7 +1,7 @@
 # Superbuy 独立推荐站：项目记忆与实施规划
 
-更新日期：2026-10-19（Asia/Shanghai），已纳入10:39用户确认 superbuytab.com 已购买
-当前阶段：公开预览保持可用；用户已购买并确定正式域名 superbuytab.com；正式目录 superbuytab-com 已整理，正在验证并提交 GitHub；正式域名托管绑定待进行；未修改 cnbuycha。
+更新日期：2026-10-19（Asia/Shanghai），已纳入10:48用户反馈公开预览被拦截
+当前阶段：原 chatgpt.site 预览对用户不可访问（Cloudflare 拦截页）；独立 Worker 预览配置已准备、尚未发布。正式域名 superbuytab.com 已购买；superbuytab-com 已提交 GitHub main；正式域名未绑定；未修改 cnbuycha。
 本文件是后续开发的连续记录。已确认要求、事实、建议和未解决事项必须分别维护，不能把建议写成用户已批准的决定。
 
 ## 1. 用户已确定的要求
@@ -348,3 +348,35 @@ https://www.superbuy.com/en/page/register/?ref=https%3A%2F%2Fwww.superbuy.com%2F
 ### 正式目录发布前验证
 
 2026-10-19：npm run build成功；npm run check验证实时80项无重叠、24语言metadata、www保留路径查询308、robots与96条sitemap、临时主机noindex及资源绑定；Wrangler4.151.1 dry-run成功，只包含ASSETS绑定，未发布到Cloudflare。共27个源码/配置/文档/官方品牌文件，不含node_modules、dist、Sites身份、产品数据或产品图片。
+
+### GitHub 提交完成
+
+- 仓库目录：https://github.com/hehaize88-code/hehaize/tree/main/superbuytab-com
+- main已更新提交：11b55e573ce781436d22dbebda0fe0395f52059c。
+- 提交基于最新读取的efcea6671dc37ff5794af102bd763a56d15ba4c2，带expected_sha保护更新，未强推。
+- 27个新增文件全部位于superbuytab-com/，未改动其他平台目录或仓库根文件。
+- 正式域名仍未进行托管绑定；本轮未连接Cloudflare或操作DNS。当时直接 HTTP 检查通过；后续用户浏览器访问失败，见第14节。
+- GitHub项目记忆记录发布前状态；本文件追加准确提交标识，后续修改时同步。
+
+
+## 14. 用户公开预览被拦截及独立预览准备（2026-10-19 10:48–10:54）
+
+### 事实与诊断
+
+- 用户反馈“公开预览看不了”。已查看其截图：地址为 superbuy-spreadsheet-preview.hehaize88.chatgpt.site，页面写明“Sorry, you have been blocked / You are unable to access chatgpt.site”。
+- 本轮原 Site 查询返回 active、access_mode=public、disabled_by=null，当前版本仍为1；没有把访问模式反复切换。
+- 最近180分钟的 Worker 错误日志返回空数组。此结果不能排除边缘网络故障，也不能证明用户请求已到达 Worker。
+- 本轮直接 HTTP 请求原预览返回200、正常首页标题和真实商品HTML。与用户截图合并判断，故障表现为 chatgpt.site 访问层拦截；无法从现有证据确认具体触发规则、IP或浏览器因素。
+- 不能再用“发布成功”或本环境200宣称用户可用。现有 Sites 管理能力没有提供该平台的 WAF 放行设置；未尝试绕过拦截、修改安全规则或重复发布相同代码。
+
+### 已准备的替代部署
+
+- 当前 GitHub 域名目录新增 wrangler.preview.jsonc；Worker名 superbuytab-preview，workers_dev=true，routes=[]，只绑定ASSETS。
+- package.json新增 deploy:preview：wrangler deploy --config wrangler.preview.jsonc。
+- DEPLOYMENT.md提供独立预览的完整GitHub构建参数；README修正可达性状态。
+- 同一份Astro SSR实时读取cnbuycha，无商品快照或新数据库；不代理chatgpt.site。预览主机保持noindex。
+- Wrangler4.151.1 dry-run成功，输出787.80 KiB、仅ASSETS绑定。没有再次重跑与本次配置无关的完整目录测试。
+- 本轮只准备并提交代码，没有连接Cloudflare、创建账户Worker、修改DNS、绑定正式域名。独立预览尚未发布，没有新的公开URL。实际部署后才能记录账户返回的workers.dev链接并验收用户浏览器可达性。
+- 正式域名上线仍需用户看过预览后的决定；独立预览配置不会自动占用superbuytab.com。
+
+官方配置参考：https://developers.cloudflare.com/workers/configuration/routing/workers-dev/ （本轮核实workers.dev可不接入自定义域名而发布Worker；不保证所有地区网络可达）。

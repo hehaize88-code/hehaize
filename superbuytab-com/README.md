@@ -4,7 +4,7 @@
 
 源码目录：`hehaize88-code/hehaize/superbuytab-com/`。此目录独立构建、独立部署。
 
-当前状态：正式部署包准备完成；GitHub 提交不等于正式域名已经上线。公开预览继续使用 https://superbuy-spreadsheet-preview.hehaize88.chatgpt.site 。
+当前状态：正式部署包准备完成；GitHub 提交不等于正式域名已经上线。原 chatgpt.site 预览被用户浏览器所遇到的 Cloudflare 安全规则拦截，不能视为用户可用。已新增独立 Worker 预览配置，实际部署及新链接尚待完成，见 DEPLOYMENT.md。
 
 ## 本地运行
 

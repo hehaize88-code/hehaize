@@ -1,6 +1,31 @@
 # SuperbuyTab 部署参数
 
-本文件是具体部署配置，**不是已上线证明**。本轮不连接 Cloudflare，也不修改域名 DNS。
+本文件是具体部署配置，**不是已上线证明**。配置准备和 dry-run 不连接 Cloudflare，也不修改域名 DNS。
+
+## 先发布独立预览
+
+2026-10-19 用户截图显示 chatgpt.site 的 Cloudflare 拦截页。原 Site 访问模式为 public、状态 active；直接 HTTP 请求返回200，但用户浏览器可达性仍失败。没有通过重复发布相同代码将其标记为修复。
+
+`wrangler.preview.jsonc` 用同一套 Astro SSR 源码发布独立 Worker，名称 `superbuytab-preview`，仅启用账户的 workers.dev 地址，`routes: []`，不绑定 superbuytab.com，也不代理原预览。数据仍实时读取 cnbuycha，预览主机保持 noindex。
+
+在 Cloudflare Workers 的 GitHub 构建设置中填写：
+
+| 字段 | 填写值 |
+| --- | --- |
+| 仓库 | `hehaize88-code/hehaize` |
+| 分支 | `main` |
+| Worker 名称 | `superbuytab-preview` |
+| 根目录 | `superbuytab-com` |
+| 构建命令 | `npm run build` |
+| 部署命令 | `npm run deploy:preview` |
+| Node 版本 | `24` |
+| 构建关注路径 | `superbuytab-com/**` |
+
+已经认证的 CLI 也可依次运行 `npm ci`、`npm run build`、`npm run deploy:preview`。最后一步会实际创建/更新该账户下同名 Worker；执行前确认账户和同名应用归属。新公开 URL 必须采用部署结果返回值，不猜测账户子域名。部署后检查真实商品、搜索、购买链接，并请用户验证浏览器能否打开。
+
+当前只准备配置，尚未发布此 Worker，没有可交付的新公开 URL。
+
+参考：https://developers.cloudflare.com/workers/configuration/routing/workers-dev/
 
 ## GitHub → Cloudflare Workers Builds
 
