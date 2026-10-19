@@ -1,7 +1,7 @@
 ---
 slug: superbuy-fees
 title: Superbuy-Gebühren verstehen und das Budget mit den Zahlungen abgleichen
-description: Separate Produktkosten, inländische Lieferung, optionale Dienstleistungen und internationaler Versand, dann überprüfen Sie Schätzungen mit Ihren Superbuy Auftragsaufzeichnungen.
+description: Trenne Warenpreis, Inlandsversand, Zusatzleistungen und internationalen Versand. Gleiche die Schätzungen anschließend mit deinen Superbuy-Zahlungsbelegen ab.
 topic: Kosten & Budgetierung
 keyword: superbuy fees
 order: 3
@@ -10,7 +10,7 @@ lang: de
 ---
 
 
-Ein nützliches Superbuy-Budget beantwortet zwei Fragen: Was haben Sie bereits bezahlt, und was kann sich noch ändern? Jede Zahl in eine Summe zu früh zu addieren, verbirgt diese Unterscheidung. Es kann einen geschätzten Versand Budget Betrag so sicher wie eine bezahlte Artikel Rechnung aussehen.
+Ein nützliches Superbuy-Budget beantwortet zwei Fragen: Zu welchen Ausgaben haben Sie sich bereits verpflichtet, und welche Beträge können sich noch ändern? Wer alle Beträge zu früh zu einer Gesamtsumme addiert, verliert diesen Unterschied aus dem Blick. Dadurch kann eine vorläufige Versandkostenschätzung genauso verbindlich wirken wie eine bereits bezahlte Warenrechnung.
 
 Dieser Leitfaden verwendet eine einfache Kostenliste, um diese Entscheidungen sichtbar zu halten. Es ist eine Planungsmethode, keine aktuelle Preisschätzung. Ihre ausgewählten Artikel, Service-Optionen, Zahlungsmethode, Paket und Ziel bestimmen die Kosten, die in Ihrem Konto überprüft werden müssen.
 
@@ -22,7 +22,7 @@ Erstellen Sie eine Kaufsumme und eine Lieferungssumme. Halten Sie sie getrennt, 
 
 Wenn Sie mehrere Artikel zu verschiedenen Zeiten kaufen, geben Sie jedem seine eigene Reihe. Eine kombinierte Summe ohne Artikelreferenzen macht es schwierig, eine Stornierung, eine Inlandslieferung oder eine optionale Dienstleistung, die nur zu einem Auftrag hinzugefügt wird, zu identifizieren.
 
-## Verwenden Sie einen Kostenrekord mit Vertrauensniveau
+## Verwenden Sie einen Kostenübersicht mit Vertrauensniveau
 
 Die nützlichste zusätzliche Spalte ist keine andere Währungsumrechnung. Es ist der Status jedes Betrags: bestätigt, geschätzt oder geschätzt. Ein bestätigter Betrag hat eine Transaktion oder Rechnung dahinter. Eine Preisschätzung bezieht sich auf eine bestimmte Reihe von eingegebenen Informationen. Ein Schätzwert ist Ihr Budgetbetrag für etwas noch nicht bekannt.
 
@@ -78,7 +78,7 @@ Wenn Sie den Zweck nicht erklären können, Pause vor der Zahlung. Wenn Sie es e
 
 Betrachten Sie auch das Timing. Eine sinnvolle Kontrolle vor dem Versand kann verhindern, dass ein ungeeigneter Gegenstand in ein internationales Paket gelangt. Die gleichen Informationen, nachdem das Paket das Lager verlassen hat, können weniger praktische Möglichkeiten bieten. Der Wert kommt von der Entscheidung, die der Service unterstützt, nicht nur von seinem notierten Preis
 
-## Schließen Sie den Kostenrekord nach der Lieferung
+## Schließen Sie den Kostenübersicht nach der Lieferung
 
 Überprüfen Sie jede Zahlung, Erstattung und letzte Versandkostenanpassung auf ihre Referenz. Behalten Sie geschätzte Zahlen als historische Anmerkungen, wenn nützlich, aber markieren Sie sie als ersetzt. Ihre abgeschlossene Gesamtsumme sollte die endgültigen gezahlten Beträge verwenden, wenn verfügbar, und alles noch ausstehende identifizieren.
 
