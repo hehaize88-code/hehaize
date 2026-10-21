@@ -1,11 +1,11 @@
 {
   "ui": {
     "finds": "Leiud",
-    "articles": "Ajakiri",
+    "articles": "Artiklid",
     "qc": "QC juhend",
     "shipping": "Tarne",
     "read": "Loe juhendit",
-    "allArticles": "Sirvi ajakirja",
+    "allArticles": "Kõik OOPBuy artiklid",
     "latestReading": "Väike eeltöö tasub ära.",
     "browseAll": "Sirvi spreadsheet’i",
     "heroLabel": "SINU JÄRGMINE LEID ALGAB SIIT",
@@ -15,18 +15,18 @@
     "featured": "Värskelt spreadsheet’ist",
     "featuredIntro": "Uued tooted, mida lähemalt vaadata.",
     "categoryTitle": "Leia oma nurgake.",
-    "guideTitle": "Esimesest leiust viimase kontrollini.",
-    "guideIntro": "Lihtne viis tootega tutvumiseks enne OOPBuyst tellimist.",
-    "faqTitle": "Mõned asjad, mida tasub teada.",
-    "faqIntro": "Selged vastused spreadsheet’i, tootefotode ja ostulinkide kohta.",
-    "articlesTitle": "OOPBuy märkmed",
-    "articlesIntro": "Lühikesed praktilised juhendid läbimõeldumate leidude jaoks.",
+    "guideTitle": "Kuidas OOPBuyd kasutada",
+    "guideIntro": "Liigu kasulikust tootelingist läbimõeldud laokontrolli ja paki saatmise otsuseni.",
+    "faqTitle": "OOPBuy korduma kippuvad küsimused",
+    "faqIntro": "Lühikesed vastused tellimise, kontrolli, laos tehtavate otsuste, saatmise ja müügijärgse teeninduse kohta koos ametlike reeglite viidetega.",
+    "articlesTitle": "OOPBuy ostujuhendid",
+    "articlesIntro": "Praktilised juhendid tootenimekirja kasutamiseks, QC-fotode hindamiseks, tarne kavandamiseks ja tellimisele järgnevate otsuste tegemiseks.",
     "findsTitle": "OOPBuy leiud",
     "findsIntro": "Sirvi CNBuyCha kataloogi populaarseid tooteid. Enne järgmise leiu valimist võrdle kuulutust, fotosid ja hinda.",
-    "qcTitle": "OOPBuy QC: vaata veidi lähemalt",
-    "qcIntro": "Kasuta tootefotosid eeltööks ning kontrolli enne saatmist oma tellimuse fotosid.",
-    "shippingTitle": "Arvesta enama kui tootehinnaga",
-    "shippingIntro": "Tootehind on alles algus. Vaata oma OOPBuy kontolt praeguseid tarnevõimalusi ja kogusummat.",
+    "qcTitle": "OOPBuy QC-fotode juhend",
+    "qcIntro": "Vaata oma tellimusega seotud tõendeid, selgita välja lisapilti vajavad küsimused ja lahenda mured enne paki esitamist.",
+    "shippingTitle": "OOPBuy saatmiskulud ja hinnangud",
+    "shippingIntro": "Kogu tarnehinnangu jaoks vajalikud andmed, võrdle sobivaid veoliine ning kontrolli pakki uuesti, kui selle pakitud mõõdud on teada.",
     "checklist": "Enne jätkamist",
     "related": "Avasta edasi",
     "independent": "Sõltumatu tooteotsing",
@@ -40,7 +40,20 @@
     "productDetails": "Üksikasjad",
     "readMore": "Avasta rohkem",
     "searchHelp": "Proovi tootenime, kaubamärki või müüja toote ID-d.",
-    "allCategories": "Kõik kategooriad ühes kohas."
+    "allCategories": "Kõik kategooriad ühes kohas.",
+    "contents": "Sellel lehel",
+    "expandAll": "Ava kõik peatükid",
+    "collapseAll": "Sulge kõik peatükid",
+    "sources": "Ametlikud allikad",
+    "lastReviewed": "Viimati kontrollitud",
+    "quickChecks": "Kiirkontroll",
+    "moreDetails": "Loe täielikku juhendit",
+    "jumpToPage": "Mine lehele",
+    "goToPage": "Mine",
+    "loading": "Toodete laadimine…",
+    "loadError": "Tooteid ei saanud laadida. Proovi uuesti.",
+    "pageLabel": "Lehekülg",
+    "previewNotice": "Eelvaade · CNBuyCha tooted uuendatud {date}. Otsing avaneb CNBuyChas."
   },
   "steps": [
     {
@@ -58,150 +71,1367 @@
   ],
   "faq": [
     {
-      "q": "Kas OOPBuy Tab on OOPBuy ametlik veebisait?",
-      "a": "OOPBuy Tab on sõltumatu toodete avastamise sait. Registreerimine, tellimused ja maksed toimuvad oopbuy.com-is. Ostulinkides on partneri kutsekood; allahindlust ei lubata."
+      "q": "Mis on OOPBuy ja kas see müüb tooteid ise?",
+      "a": "OOPBuy kirjeldab end ostu- ja logistikavahendajana. See aitab korraldada tellimusi kolmandatest osapooltest müüjatelt, ajutist hoiustamist, pakkimist ja saatmist. See roll erineb tootja või kaubamärgi volitatud edasimüüja omast. Enne tellimist kontrolli algset müüjat, tootekirjeldust ja kehtivaid piiranguid; vahendaja tooteleht ega laofoto ei tõenda toote ehtsust.",
+      "sources": [
+        {
+          "label": "OOPBuy kasutaja registreerimisleping",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Kust pärinevad tooted ja hinnad?",
-      "a": "Tootekuulutused, pildid, otsingutulemused ja sortimine pärinevad CNBuyChast. Hinnad kuvatakse kõigis keeltes USD-des. Kinnita OOPBuys praegune hind, saadavus ja valitud variant."
+      "q": "Kuidas esimest OOPBuy tellimust teha?",
+      "a": "Ametlik juhend alustab tootelingi või tootenime otsinguga. Vaata avanenud toodet, vali vajalik värv, suurus ja kogus ning tasu toote hind koos võimaliku Hiina-sisese tarnega. Pärast ostmist ja laokontrolli vaata ladustatud kaup üle, enne kui esitad rahvusvahelise paki. Kinnita iga etapp oma ametlikul kontol; tootenimekirja kaart ise ei ole tellimus.",
+      "sources": [
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Kas tootefotod on lao QC-fotod?",
-      "a": "Kuvatavad pildid pärinevad CNBuyChast. Nende päritolu lao QC-fotodena pole kinnitatud. Enne saatmisotsust kontrolli OOPBuys oma tellimuse fotosid."
+      "q": "Milliseid ostulinke ametlik algaja juhend käsitleb?",
+      "a": "Algaja juhend kirjeldab konkreetselt Taobao, Tmalli ja 1688 linkide sisestamist OOPBuysse. Iga lingi puhul kontrolli, et ametlik tooteleht avab just soovitud müüja kauba ning variandi andmed on täielikud. Kui link ei tööta või kuvatud kaup erineb oodatust, küsi enne maksmist OOPBuy toest abi, selle asemel et eeldada iga turuplatsi aadressi tuge.",
+      "sources": [
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Kas tootehind sisaldab tarnet?",
-      "a": "Käsitle kuvatavat summat hinnangulise tootehinnana. Vaata praeguses kassas ja pakipakkumises üle riigisisene postikulu, rahvusvaheline tarne, lisateenused ning kõik kohaldatavad tasud."
+      "q": "Miks tasutakse toote ja rahvusvahelise saatmise eest eraldi?",
+      "a": "OOPBuy selgitab ostuprotsessi kahe etapina. Esimene makse katab toote ja võimaliku Hiina-sisese veo lattu. Hiljem valid ladustatud kaubad, esitad paki ja maksad rahvusvahelise tarne eest. Hinda seda teist kulu juba enne ostmist, sest ainuüksi kauba hind ei näita kogu summat, mis tellimuse kättesaamiseks kulub.",
+      "sources": [
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Kuidas ostulingid töötavad?",
-      "a": "Tootelehe nupp avab OOPBuys selle algse Weidiani toote ID. CNBuyCha katalooginumber on eraldi ID. Enne tellimist kontrolli sihtlehel olevat kuulutust."
+      "q": "Kas kuvatud tootehind USA dollarites on lõplik kogusumma?",
+      "a": "Ei. Tootehind ei hõlma iseenesest kõiki ostu ja rahvusvahelise pakiga seotud võimalikke kulusid. Kogusummat võivad muuta kohalik vedu, rahvusvaheline tarne, lisateenused ja makse valuutavahetus. OOPBuy konto täiendamise juhised kirjeldavad samuti valuuta ümberarvestust ja maksetasusid. Vaata oma makse- ja pakivormil kuvatud summasid, mitte ära käsitle teisendatud kataloogihinda lõpliku hinnapakkumisena.",
+      "sources": [
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Konto saldo täiendamine",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
     },
     {
-      "q": "Kas saan otsida pildi järgi?",
-      "a": "Selles eelvaates pole pildiotsing saadaval. Saad otsida nime järgi või sirvida kategooriaid. Me ei asenda üleslaaditud fotot seosetute tulemustega."
+      "q": "Milliseid makseviise saan kasutada?",
+      "a": "Algaja juhend nimetab krediitkaarti, PayPali ja konto saldot; saldo täiendamise abi kirjeldab ka täiendavaid võimalusi. Saadavust ja võetavat summat tuleb kontrollida oma praegusel kontol ning maksevormil. Loe enne makse kinnitamist valuutavahetuse ja tasude infot. Abitekstis nimetatud makseviis ei pruugi olla saadaval igas riigis või iga tehingu puhul.",
+      "sources": [
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Konto saldo täiendamine",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
+    },
+    {
+      "q": "Kas tavalised OOPBuy QC-fotod on tasuta?",
+      "a": "Kohandatud teenuste teate järgi on kontrollijuhiste alusel tehtavad tavalised lao QC-fotod tasuta. Need pildid antakse pärast kauba lattu saabumist ja töötlemist. Need erinevad müüja kataloogifotodest ning sõltumatus tootenimekirjas kuvatud piltidest. Enne saatmise üle otsustamist vaata fotosid, mis on seotud just sinu ladustatud tellimusega.",
+      "sources": [
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Mida tavaline QC-kontroll ja fotod tegelikult kinnitada saavad?",
+      "a": "Ametlik kontrollijuhend käsitleb nähtavat teavet, näiteks kogust, tellitud omadusi ja välist seisukorda, ning nimetab selgeid piiranguid. Kontroll ei tõenda ideaalset istuvust, elektroonika professionaalset toimivust ega kaubamärgi ehtsust. Suletud toodetel võidakse kontrollida ainult välispinda. Käsitle pilte nähtavate asjaolude tõendina ja küsi olulise detaili kohta selgitust, eeldamata nähtamatu omaduse testimist.",
+      "sources": [
+        {
+          "label": "OOPBuy kontrolliinfo",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy kasutaja registreerimisleping",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Kas saan tellida mõõtmisi või QC-lähifotosid?",
+      "a": "OOPBuy kirjeldab kohandatud QC-teenust kindlate mõõtmiste või detailide jaoks, näiteks kinga või sisetalla pikkus ja rõiva mõõdud. Teenuse saadavust ning kehtivat tasu kontrolli ametlikul kontol või klienditoest; teates ei ole kõigile erifotodele ühtset hinda. Kirjelda täpset mõõtu või vaadet, mida vajad, et päring aitaks sinu küsimuse lahendada.",
+      "sources": [
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Kas 1688 kaudu ostetud kaupu kontrollitakse alati samamoodi nagu teisi?",
+      "a": "Mitte tingimata. Algaja juhend märgib 1688 ostude erinevaid QC-standardeid ning kasutajaleping kirjeldab piiratud valikkontrolli, mitte üldist täielikku kontrolli. Ära järelda, et mitme ühikuga tellimuse iga ese on eraldi üle vaadatud. Enne suurema koguse tellimist täpsusta kontrolli ulatus ja lisateenused, mida sinu jaoks tähtsate omaduste kontrollimiseks vaja võib minna.",
+      "sources": [
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy kasutaja registreerimisleping",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Kui pikk on tavaline tasuta laos hoiustamise aeg?",
+      "a": "Ametlik kohandatud teenuste teade määrab tavaliseks tasuta hoiustamise ajaks 90 päeva alates lattu paigutamisest. Üldine hoiustamise leht kasutab alguspunktina tellimuse olekut „received”. Kontrolli iga ladustatud tellimuse juures kuvatud tegelikku tähtaega, eriti kui esemed saabusid eri päevadel, ning korralda saatmine või sobiv pikendus enne tasuta perioodi lõppu.",
+      "sources": [
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy hoiustamisreeglid",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        }
+      ]
+    },
+    {
+      "q": "Kas saan hoiustamist tasuta perioodist kauem pikendada?",
+      "a": "Kohandatud teenuste teade lubab ühe tasulise pikenduse: 10 CNY eest kuni 30 lisapäeva, kokku selle reegli järgi maksimaalselt 120 päeva. See ei tähenda 120 tasuta päeva ega piiramatut pikendamist. Enne sellele lootmist kontrolli ametlikul kontol kehtivat pikendamisvõimalust ja oma kauba tähtaega, sest tähtaja ületanud kaubad võidakse kõrvaldada.",
+      "sources": [
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Kas peaksin enne saatmist hoiustamise meeldetuletust ootama?",
+      "a": "Ei. Jälgi ise iga tellimuse kuvatud tähtaega ja hoia kontaktandmed ajakohased. Ametlikes teadetes käsitletakse meeldetuletusi, kuid hoiatatakse ka, et tähtaja ületanud esemeid võidakse lugeda hüljatuks. Tuvastamata või probleemsetele saabuvatele pakkidele võivad kehtida teised käsitlusreeglid. Kui kauba hoiustamisolek on ebaselge, pöördu kiiresti toe poole, eeldamata tavapärase tasuta perioodi tingimusteta kehtimist.",
+      "sources": [
+        {
+          "label": "OOPBuy hoiustamisreeglid",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuy kasutaja registreerimisleping",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Millal pärast lattu saabumist tagastamist või vahetamist taotleda?",
+      "a": "Tagastamiste teade kirjeldab tingimuslikku viiepäevast ehk 120-tunnist taotlusperioodi pärast olekut „Stocked in” koos selles nimetatud ajaarvestusreeglitega. Vaata fotosid ja ametlikku müügijärgse teeninduse vaadet kohe. Sobivus sõltub endiselt müüja toetusest ja kauba seisukorrast; periood ei taga iga avalduse vastuvõtmist. Kontrolli oma konkreetse tellimuse kehtivat tähtaega.",
+      "sources": [
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kas iga toodet saab tagastada või vahetada?",
+      "a": "Ei. Tagastuspoliitika loetleb tingimusi ja välistusi, sealhulgas müüja reeglid, edasimüügikõlbliku seisukorra, eritellimusel valmistatud või kasutatud kaubad ning teatud suletud või isikliku kasutuse kategooriad. Siltide, tarvikute või nõutud pakendi eemaldamine võib õigust mõjutada. OOPBuy saab müüjaga suhelda, kuid teade nõuab siiski müüja nõusolekut. Kontrolli toote tingimusi enne tellimist või pakkimise muutmist.",
+      "sources": [
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kas esimene tasuta tagastus või vahetus hõlmab kõiki veokulusid?",
+      "a": "Ei. Tagastamiste teade kirjeldab kalendrikuu esimese tagastus- või vahetustoimingu teenustasu vabastust. See ei tähenda tasuta tagastuspostikulu ega kõigi Hiina-siseste veokulude hüvitamist. Kulud sõltuvad põhjusest, müüja otsusest ja tellimuse asjaoludest. Enne tagastuse kinnitamist loe tegelikku müügijärgse teeninduse hinnapakkumist, selle asemel et eeldada kogu protsessi tasuta olemist.",
+      "sources": [
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kas saan tellimuse tühistada enne müüja väljasaatmist?",
+      "a": "Tagastamise abi järgi ei rakendu selle tagastusteenuse tasu, kui toodet pole veel välja saadetud. Seda ei tohiks lugeda tingimusteta tühistamisgarantiiks igas etapis. Kontrolli tellimuse praegust olekut ja esita saadaval olev tühistamis- või müügijärgse teeninduse taotlus kiiresti. Kui müüja on kauba juba teele pannud, võivad rakenduda teistsugune käsitlus ja saatmiskulud.",
+      "sources": [
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy tellimuse ja paki olekute juhend",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Kui kaua tagasimakse võtab ja kust seda kontrollida?",
+      "a": "Tagasimakse heakskiitmine, OOPBuy saldole kandmine ja pangakaardile laekumine on erinevad etapid. Tagastamiste teade ütleb, et kaarditagastust mõjutab panga töötlemine, ning annab hinnangulise ajavahemiku, mitte garanteeritud kuupäeva. Vaata kontol tagasimakse kirjet ja sihtkohta. Kui edenemine on ebaselge, anna toele asjakohane tellimuse ja tagasimakse viide, mitte ära tee kordusmakseid.",
+      "sources": [
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy tellimuse ja paki olekute juhend",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Kas toodet saab tagastada pärast rahvusvahelist väljasaatmist?",
+      "a": "Tagastamiste teade kirjeldab rahvusvahelisi tagastusi tingimuslikena ning võimalikult kliendi kulul, sealhulgas tagasivedu ja lisatasud, näiteks tollimaksud. Algne seisukord ja nõutav pakend on endiselt tähtsad. Enne millegi tagasisaatmist võta ühendust OOPBuy müügijärgse teenindusega ja küsi kehtivaid juhiseid. Välismaalt tagastamine ei võrdu lihtsa laotellimuse tühistamise ega garanteeritud täieliku hüvitamisega.",
+      "sources": [
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kuidas OOPBuy rahvusvahelise saatmise hinda hinnata?",
+      "a": "Kasuta ametlikku tarnekalkulaatorit, sisestades sihtkoha ja nõutud pakiandmed, ning vaata saadaval olevaid veoliine ja piiranguid. Algaja juhend selgitab, et lõplik hind sõltub mõõdetud mõõtmetest ja kaalust ning tarnekorraldusest. Esialgne hinnang aitab eelarvet koostada, kuid ei asenda lõplikku pakipakkumist ega hõlma automaatselt kõiki sihtkohapõhiseid tasusid.",
+      "sources": [
+        {
+          "label": "OOPBuy tarnehinnang",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Kas üks veoliin on alati kõige odavam või kiirem?",
+      "a": "Ametlike juhiste põhjal ei saa määrata üht universaalset veoliini. Saadaval teenused sõltuvad sihtkohast, sisust, kaalust, mõõtudest ja kehtivatest tingimustest. Enne valimist võrdle oma pakile näidatud võimalusi, sealhulgas piiranguid ja võimalikke hüvitamistingimusi. Avaldatud tarnehinnangud ei ole garantiid: vedaja töökorraldus, ilm ja toll võivad teekonda pärast laost väljasaatmist mõjutada.",
+      "sources": [
+        {
+          "label": "OOPBuy tarneteade",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Kindlustus ja hüvitamine",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Mida Parcel Rehearsal ehk proovipakkimine teeb?",
+      "a": "Proovipakkimise teade kirjeldab lao pakkimisteenust, mis aitab enne rahvusvahelise veo eest tasumist paki mõõtmisandmed kindlaks teha. Seal on teenustasuks 20 CNY ning selgitatakse, et hinnastamine sõltub sama veoliini ja pakkimislahenduse säilitamisest. Nende valikute muutmine võib lõpptasu muuta. Enne proovipakkimise taotlemist vaata üle teenuse kehtivad tingimused ja tühistamisreeglid.",
+      "sources": [
+        {
+          "label": "OOPBuy proovipakkimise juhised",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ]
+    },
+    {
+      "q": "Kas peaksin kingakarbid eemaldama või rõivad vaakumpakkima?",
+      "a": "Pakkimisjuhend kirjeldab neid võimalike valikutena, millest osa on piiratud kindlate veoliinidega. Otsusta kauba kaitsevajaduse, oma eelistuse ja tagastuspiirangute põhjal. Pakendi eemaldamine või eseme kokkusurumine ei sobi iga ostu puhul ning väiksem pakk ei taga madalamat lõpphinda. Enne kinnitamist kontrolli pakkimisvõimalusi ja veoliini hinnastusarvutust.",
+      "sources": [
+        {
+          "label": "OOPBuy pakkimisjuhend",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kas kõik laos olevad tooted saab ühte pakki ühendada?",
+      "a": "Ostuprotsess võimaldab kaupade ühendamist, kuid iga kombinatsioon ei pruugi olla lubatud või soodne. Kauba omadused, veoliini piirangud ja eraldi pakkimise märgised võivad nõuda erinevaid pakke. Ametlik eraldi saatmise teade annab ülemõõdulise eseme reegli ning pakkimisjuhend käsitleb akuga kaupade piiranguid. Järgi ladustatud esemete juhiseid ja võrdle enne esitamist sobivaid pakivalikuid.",
+      "sources": [
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy pakkimisjuhend",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy eraldi saatmise juhend",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        }
+      ]
+    },
+    {
+      "q": "Miks on tellimus „Shipped”, kuigi rahvusvahelist jälgimisnumbrit veel pole?",
+      "a": "Olekute juhend kasutab saatmise termineid kahes kontekstis. Ostutellimusel võib „Shipped” tähendada, et müüja saadab toodet OOPBuy lattu. Rahvusvahelisel pakil viitab see hilisemale vedaja etapile. Kontrolli, kas vaatad kauba tellimust või pakki, ning ava vastavad logistikaandmed, eeldamata mõlemal etapil sama jälgimisnumbrit.",
+      "sources": [
+        {
+          "label": "OOPBuy tellimuse ja paki olekute juhend",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Mida teha, kui saabunud pakk on kahjustatud või mõni ese puudub?",
+      "a": "Hoia alles väline pakend, saatesilt ja asjakohased tõendid ning võta OOPBuy müügijärgse teenindusega kiiresti ühendust. Ametlik juhend küsib selgeid fotosid ja andmeid, näiteks tellimusnumbreid, ning sisaldab lühikesi teatamise ja tõendite esitamise tähtaegu. Ära viska pakendit ära ega oota mujalt nähtud üldise tähtajani. Järgi oma konkreetse paki ja nõude juhiseid.",
+      "sources": [
+        {
+          "label": "OOPBuy juhised kättesaamisjärgsete probleemide korral",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ]
+    },
+    {
+      "q": "Kas kindlustus katab automaatselt iga pakiprobleemi?",
+      "a": "Ei. Ametlik hüvitamisteade ütleb, et käsitlus sõltub veoliini tingimustest ja toetavatest tõenditest, ning loetleb välistusi. Ära eelda, et viivitus, kahjustus, tolli sekkumine või kadumine toob alati täieliku väljamakse. Loe valitud veoliini katet, piirmäärasid ja nõude esitamise korda ning säilita probleemi korral vajalikud tellimuse ja paki kirjed.",
+      "sources": [
+        {
+          "label": "Kindlustus ja hüvitamine",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Kas saan tellida iga tootenimekirjas leiduva kauba?",
+      "a": "Ei. Veebis nähtav pakkumine ei tõenda kauba seaduslikkust, ehtsust ega sobivust sinu veoliinile. OOPBuy ostujuhised keelavad teatud kaubad ja nimetavad piiratud kategooriaid, mille puhul tuleb toega nõu pidada. Tingimused keelavad ka võltsingud ja õigusi rikkuvad tooted. Enne ostmist kinnita müüja andmed, platvormi reeglid ja sihtkoha nõuded, eriti akude, vedelike või muu piiratud sisu puhul.",
+      "sources": [
+        {
+          "label": "OOPBuy ostupiirangud",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuy kasutaja registreerimisleping",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
     }
   ],
   "articles": [
     {
       "slug": "oopbuy-spreadsheet-guide",
-      "tag": "ALUSTAMINE",
-      "title": "Sinu esimene OOPBuy leid samm-sammult",
-      "description": "Muuda paljulubav kuulutus läbimõeldud valikuks.",
+      "tag": "Alustamine",
+      "title": "OOPBuy tootenimekirja juhend: koosta valik, mida saad päriselt kontrollida",
+      "description": "Õpi kasutama OOPBuy tootenimekirja, kontrollima linke, võrdlema variante ja kavandama realistlikku eelarvet, et teha kataloogileiust läbimõeldud tellimus.",
+      "primaryKeyword": "OOPBuy tootenimekiri",
+      "secondaryKeywords": [
+        "OOPBuy tootenimekirja juhend",
+        "OOPBuy toodete loend",
+        "OOPBuy leiud",
+        "OOPBuy ostujuhend"
+      ],
+      "takeaways": [
+        "Käsitle iga kataloogirida lähtepunktina, mille toode vajab kehtiva pakkumise kontrolli.",
+        "Pane kirja täpne algne link, variant, mõõdud ja hinnanguline kättetoimetamise kogukulu.",
+        "Hoia kataloogipildid oma tellimuse lao QC-fotodest eraldi."
+      ],
       "sections": [
         {
-          "title": "Alusta oma vajadustest",
-          "text": "Vali kategooria või otsi mudelit. Võrdle tootenime, olemasolevaid pilte ja hinnangulist hinda. Ainuüksi madal hind ei näita, kas kuulutus vastab sinu vajadustele."
+          "title": "Milleks OOPBuy tootenimekiri kasulik on",
+          "text": "OOPBuy tootenimekiri ehk spreadsheet on avastamisvahend: võimalus koguda tootelinke, võrrelda ideid ja vältida iga kord nullist otsimist. Selle tegelik väärtus seisneb valiku kontrollimise lihtsustamises. Suur ridade arv ei ütle, kas esemed on endiselt saadaval, kas suurus sobib või mida valmis paki saatmine maksab.\n\nOOPBuy Tab on sõltumatu kataloog, mitte ametlik OOPBuy teenus. Selle tooteandmed pärinevad CNBuyChast. See eristus on tähtis, sest kataloogikirje ja tegelik ostuleht võivad muutuda erineval ajal. Käsitle USA dollarites hinda hinnanguna ja fotosid kataloogiviidetena, kui nende päritolu pole selgesõnaliselt kinnitatud.\n\nKasuta nimekirja konkreetsele küsimusele vastamiseks, näiteks milline kolmest jakist sobib sinu mõõtude ja eelarvega. Kui valikud on kõrvuti nähtavad, on puuduvat infot palju lihtsam märgata enne, kui sellest saab kulukas oletus."
         },
         {
-          "title": "Ava algne kuulutus",
-          "text": "Kontrolli müüjat ja saadaolevaid valikuid. Märgi üles soovitud suurus, värv ja kogus, seejärel ava toode OOPBuys. Enne maksmist kinnita need üksikasjad uuesti."
+          "title": "Pane vajadused enne sirvimist kirja",
+          "text": "Kirjuta üles, mis muudaks eseme sinu jaoks kasulikuks. Rõiva puhul võivad need olla mõõdud, kangasoov, kavandatud hooaeg ja vastuvõetavad hooldusjuhised. Koti puhul näiteks sülearvuti mõõtmed, kinnituse tüüp ja soovitud suurim tühikaal. Selged nõuded vähendavad võimalust, et kena foto juhib tähelepanu tegelikust ostueesmärgist eemale.\n\nMäära kaks eelarvet: eseme sihthind ning selle kättesaamise ülempiir. Need on erinevad summad. Madal tootehind jätab vastamata küsimused kohaliku ja rahvusvahelise tarne, makse valuutavahetuse ning võimalike sihtkohatasude kohta.\n\nVali väike hulk kandidaate, selle asemel et kohe kümneid ridu täita. Kolm võrreldavat eset õpetavad sageli rohkem kui kolmkümmend seosetut leidu. Lisa iga kandidaadi juurde üks kaalumise põhjus ja üks lahendamata küsimus. Kui sa ei oska selgitada, miks ese valikusse kuulub, ei vaja see tõenäoliselt veel sinu tähelepanu."
         },
         {
-          "title": "Pea meeles järgmist etappi",
-          "text": "Jäta eelarvesse ruumi tarne ja muude tasude jaoks. Enne paki esitamist vaata üle oma tellimuse fotod ja saadaolev tarnepakkumine."
+          "title": "Loo otsust toetavad veerud",
+          "text": "Kasulik rida sisaldab tootenime, lähteturgu, algset tooteaadressi, täpset varianti, kuvatud hinda ja valuutat, kontrollimise kuupäeva ning järgmist sammu. Lisa kategooriale olulised mõõdud või tehnilised andmed. Hoia oma märkmed müüja kirjeldusest eraldi, et tabeli juurde naastes oleks tõend ja tõlgendus eristatavad.\n\nNäiteks jakirea juurde sobivad rinna laius, õlgade laius, seljapikkus, valitud suurus ning märge, kas mõõdud kirjeldavad rõivast või kandjat. Jalatsirida võiks talletada müüja suurustabeli ja võimaliku sisepikkuse mõõdu. Ära pane kontrollimata suurusesilti veergu „sobivus kinnitatud”.\n\nKasuta lihtsaid olekuid, näiteks „algallikas kontrollida”, „mõõdud puuduvad”, „valmis kaalumiseks”, „tellitud” ja „üle vaadatud”. Olek peaks kirjeldama päriselt tehtud tööd. Jäta eraldi väli eseme kõrvalejätmise põhjusele; see hoiab ära sama uurimistöö kordamise järgmisel nädalal."
+        },
+        {
+          "title": "Kontrolli rea taga olevat tegelikku toodet",
+          "text": "Enne pakkumisele toetumist ava algne tootelink ja OOPBuy ostuleht. Võrdle toodet, pilte, valikuid ja valitud hinda. Edukalt avanev link võib siiski viia muudetud pakkumise, teise variandi või leheni, mille odavaim kuvatud valik ei ole kataloogis kujutatud ese.\n\nHoia identifikaatorid eraldi. Meie linginäites on 3470 CNBuyCha kataloogi viide, samas kui 7876894732 on Weidiani tootetees kasutatav algne identifikaator. Katalooginumbri kopeerimine ostuaadressi ei tuvasta sama toodet. Võimaluse korral säilita täielik algne aadress, selle asemel et see lühisildi järgi uuesti kokku panna.\n\nKui leht pole saadaval, märgi rida kontrollimata kirjena. Otsi täpset eset uuesti ja võrdle iga asendust hoolikalt. Ära asenda algset linki märkamatult visuaalselt sarnase tootega: sarnasus ei tõenda sama müüjat, omadusi ega ostutingimusi."
+        },
+        {
+          "title": "Võrdle varianti, mille tegelikult telliksid",
+          "text": "Kaks rida on võrreldavad ainult siis, kui need esindavad päriselt ostetavaid valikuid. Kontrolli värvi, suurust, kogust, materjali ja kaasasolevaid tarvikuid. Pakkumine võib näidata hinnavahemikku, sest variandid erinevad. Madalaima nähtava hinna kirjapanek teise variandi ostuplaani juures loob eksitava võrdluse ka siis, kui mõlemad arvud on ehtsad.\n\nKujutle kahte reisikotti. Üks kuvatud hind võib tähistada kõige väiksemat suurust, teine aga vajalikku suuremat kotti. Pane nõutud mõõtmed iga valitud variandi kõrvale ja võrdle just neid valikuid. Kui vajalik mõõt puudub, märgi puudujääk, mitte ära hinda seda modelli foto järgi.\n\nMitmikpakendi puhul pane kirja tükkide arv ning arvuta ühikuhind ainult siis, kui esemed on sisuliselt võrreldavad. Rõivakomplekti korral kinnita, millised rõivad kaasas on. Need väikesed kontrollid muudavad tabeli ostuotsuste abivahendiks, mitte pelgalt meeldivate piltide korrastajaks."
+        },
+        {
+          "title": "Lisa realistlik kulude tööleht",
+          "text": "Erista kinnitatud summad hinnangutest. Töölehel võivad olla väljad valitud toote, kuvatud kohaliku veo, rahvusvahelise tarnehinnangu, kavandatud lisateenuste ja lahendamata kulude varu jaoks. Märgi iga sisendi valuuta. Hinnangulist USA dollarites kuvamist ei tohi pidada fikseeritud maksesummaks.\n\nKasuta OOPBuy ametlikku tarnehinnangu lehte, et uurida kontrollimise hetkel saadaval olevaid sihtkoha- ja pakieeldusi. Pane kirja kasutatud kaal ning mõõtmed, sest ilma nendeta on sama hinnangut raske tõlgendada. Kui need andmed on teadmata, võrdle üht usutavat väiksema ja teist suurema paki stsenaariumi, mitte ära esita üht näiliselt täpset kogusummat.\n\nMäära enne tellimist otsustusreegel. Näiteks võid jätkata ainult siis, kui kallim stsenaarium mahub kättetoimetamise eelarvesse. See on isiklik eelarvestamisviis, mitte OOPBuy hinnapakkumine. Uuenda töölehte, kui laoandmed või kehtiv tarnepakkumine asendavad varasema eelduse."
+        },
+        {
+          "title": "Hoia kataloogipildid ja tellimuse QC eraldi",
+          "text": "Kataloogifoto aitab ära tunda stiili, värvi või kujundusdetaili. See ei tõenda sinu jaoks ostetava üksiku eseme seisukorda. OOPBuy Tabi imporditud kataloogipildid ei ole sinu enda tellimuse kinnitatud lao QC-fotod, seega ei tohiks rida märkida „kvaliteet heaks kiidetud” üksnes puhaste piltide põhjal.\n\nKui eseme hiljem tellid, loo selle tellimusega seotud piltidele ja sõnumitele eraldi tõendite ala. Pane kirja tellimuse viide, valitud variant ning küsimused, millele laofotod vastust ei anna. Nii ei lähe viimistletud algpilt segamini sellega, mis tegelikult vastu võeti.\n\nOOPBuy kontrolliinfo kirjeldab koguse ja tellitud omaduste kontrollimist, kuid seab ka piirid. See on põhjus esitada täpseid küsimusi, mitte eeldada, et iga kvaliteedimure on läbi uuritud. Otsustava mõõdu või detaili puhul määra vajalik täpne vaade või mõõtmine enne järgmise sammu valimist."
+        },
+        {
+          "title": "Muuda valik hallatavaks esimeseks tellimuseks",
+          "text": "Enne tasumist vaata valiku lahendamata küsimused üle. Eseme algallikas peaks olema teada, variant teadlikult valitud, suurusinfo sinu otsuseks piisav ning kättetoimetamise eelarve vastuvõetav. Kui mitu välja ütlevad endiselt „teadmata”, on järgmine samm lisauuring, ka siis, kui hind tundub ebatavaliselt ahvatlev.\n\nVäiksem esimene tellimus võib enda arvepidamist lihtsustada. Saad õppida praeguste tellimuslehtede, laoandmete ja pakivalikute toimimist, ilma et peaksid korraga paljude eranditega tegelema. See on korralduslik soovitus, mitte lubadus, et väike saadetis maksab ühe eseme kohta vähem.\n\nKui oled valmis kontot kasutama, ava ametlik OOPBuy sisselogimisleht. Hoia makseotsused ja kontoandmed ametlikus teenuses. Pärast tellimist kopeeri selle viide oma privaatsesse tabelisse ning märgi kuupäev. Ära pane isiklikke tellimusandmeid avalikult jagatud tootenimekirja."
+        },
+        {
+          "title": "Täienda tabelit ka pärast esimest ostu",
+          "text": "Hea tabel muutub eseme kättesaamise järel kasulikumaks. Lisa tegelikud saabunud mõõdud, tähelepanekud istuvuse kohta, lõplik tasutud summa ja erinevused pakkumisest. Kirjelda asjaolusid: paksu kampsuni peal kantav jakk võib tunduda teistsugune kui sama jakk T-särgi peal.\n\nMärgi subjektiivsed muljed selgelt. „Mugav minu igapäevasel töölesõidul” on kasulikum kui „täiuslik kvaliteet”, sest see selgitab kasutust. Pane kirja leitud piirangud, näiteks telefoni jaoks liiga kitsas tasku. Nendest märkmetest saab tulevaste valikute võrdlusmaterjal, väitmata, et teise ostja kogemus on samasugune.\n\nLõpuks lisa hinnangule kuupäev ja arhiveeri surnud lingid, selle asemel et jätta need ajakohastena paistma. Kontrolli hindu ning saadavust enne iga uut ostu uuesti. Usaldusväärne OOPBuy tootenimekiri ei ole muutumatu lubadus, vaid töökirje kontrollitud asjaoludest, allesjäänud ebakindlusest ja õpitust."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy ametlik veebisait",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuy tarnehinnang",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy kontrolliinfo",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy sisselogimine",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-product-links",
+        "oopbuy-price-check",
+        "oopbuy-qc-photos"
       ]
     },
     {
       "slug": "oopbuy-qc-photos",
-      "tag": "FOTODE KONTROLL",
-      "title": "Mida toote- ja QC-fotodel vaadata",
-      "description": "Erista kataloogi uurimist oma tellimuse kontrollimisest.",
+      "tag": "Kvaliteedikontroll",
+      "title": "OOPBuy QC-fotod: mida enne tellimuse saatmist kontrollida",
+      "description": "Praktiline juhend OOPBuy QC-fotode vaatamiseks, õige variandi kontrollimiseks ja kasulike mõõtmiste küsimiseks ning mõistmiseks, mida laopildid tõendada ei saa.",
+      "primaryKeyword": "OOPBuy QC-fotod",
+      "secondaryKeywords": [
+        "OOPBuy kvaliteedikontroll",
+        "OOPBuy laofotod",
+        "OOPBuy QC-juhend",
+        "OOPBuy kontroll"
+      ],
+      "takeaways": [
+        "Vaata oma tellimusele lisatud laofotosid ja vii need valitud variandiga kokku.",
+        "Kasuta korduvat kontrollijärjestust ja küsi olulise tõendi puudumisel üht täpset vaadet.",
+        "Fotod ei tõenda ehtsust, pikaajalist vastupidavust, täpset värvi ega kõiki funktsionaalseid omadusi."
+      ],
       "sections": [
         {
-          "title": "Tea, milliseid fotosid vaatad",
-          "text": "Kataloogipildid näitavad kuulutust, kuid ei tõenda, millise toote saad. OOPBuy Tabi fotod pärinevad CNBuyChast ning need pole kinnitatud lao QC-fotodena."
+          "title": "Kasuta QC-fotosid konkreetsetele küsimustele vastamiseks",
+          "text": "OOPBuy QC-fotodest on kõige rohkem kasu, kui tead, mida kontrollida tahad. Alusta lühikesest nimekirjast: kas oodatud ese saabus, kas valitud variant vastab, kas on nähtavaid kahjustusi ning kas olemasolevad mõõdud toetavad suuruseotsust? Nii saad praktilise hindamisviisi, mitte lõputu täiuslikkuse otsingu.\n\nFoto salvestab ühe vaate kindlas valguses. See võib näidata puuduvat nööpi või silmanähtavalt erinevat värvisilti, kuid mitte tasku sisse või eemaldatava osa alla peituvat probleemi. Käsitle iga pilti piiratud vaateväljaga tõendina.\n\nEesmärk on enne rahvusvahelise saatmise korraldamist lahendada küsimused, mis muudaksid sinu otsust. Näiteks varrukamõõdu kinnitamine või selgitamine, kas jälg on eemaldatav pakendijääk. See ei tähenda, et ilusate fotode kogum tagab eseme toimivuse pärast kuudepikkust kasutust."
         },
         {
-          "title": "Võrdle konkreetseid üksikasju",
-          "text": "Võrdle oma tellimuse mudelit, värvi, nähtavat suurusesilti ja kogust tehtud valikutega. Otsi ilmseid kahjustusi ning küsi enne saatmist ebaselgete üksikasjade kohta."
+          "title": "Erista kolme liiki tootefotosid",
+          "text": "Müüja pildid kirjeldavad pakkumist. Kataloogipildid aitavad seda avastada ja ära tunda. Laopildid dokumenteerivad konkreetse tellimusega seotud kaupa. Need rollid on erinevad ka siis, kui fotod asuvad sama tootenime kõrval või näevad visuaalselt sarnased välja.\n\nOOPBuy Tab on sõltumatu kataloog, mis kasutab CNBuyCha tooteandmeid. Selle imporditud pildid ei ole kinnitatud sinu enda tellimuse QC-fotodena. Need võivad olla võrdlusviiteks, kuid ei näita, kas sinu ostetud üksikul esemel on sama õmblus, silt, mõõdud või seisukord.\n\nPilte salvestades kasuta eraldi kaustu või selgeid silte, näiteks „algne võrdluspilt” ja „minu tellimus”. Lisa privaatsetesse märkmetesse tellimuse viide ning kuupäev. See lihtne eristus väldib olukorda, kus kena müüja lähifoto muutub kogemata tõendiks, mille põhjal otsustad, kas laos olev ese vastab ootustele."
         },
         {
-          "title": "Mõista piiranguid",
-          "text": "Ainult fotod ei kinnita autentsust, vastupidavust ega täielikku töökorras olekut. Kui vajad mõõtmist või lisakontrolli, küsi OOPBuylt, mis on saadaval ja mida see maksab."
+          "title": "Kinnita, et vaatad õiget eset",
+          "text": "Enne detailide uurimist vii laokirje oma tellimusega kokku. Võrdle tootenime, algset linki, valitud värvi, suurust ja kogust. Kui tellisid kaks sarnast eset, ära eelda, et nende fotod ilmuvad samas järjekorras nagu tooted algses valikus.\n\nOtsi piltidelt tuvastavaid detaile: suurusesilt, eriline paneelide paigutus, kinnituse tüüp või pakendisilt. Võrdle neid oma tellimisvaliku, mitte pakkumise üldise esimese pildiga. Müüjad kasutavad vahel mitme variandi jaoks üht esindusfotot.\n\nKui kirje ja pildid ei näi kokku sobivat, küsi tellimuse viitega selgitust. Kirjelda erinevust otse, näiteks „tellisin tumesinise, silt paistab must” või „tellisin kaks tükki, näha on üks”. Ära otsusta, et ese on vale, üksnes seetõttu, et kõik osad pole ühel fotol näha; tee esmalt kindlaks, mida pilt tegelikult hõlmab."
+        },
+        {
+          "title": "Vaata rõivaid üle kindlas järjekorras",
+          "text": "Rõivastel vaata kõigepealt tervet eset. Kontrolli, kas siluett, suuremad paneelid, kaelus, varrukad ja kinnitused vastavad valitud kaubale. Seejärel vaata esi- ja tagakülge eraldi. Üldvaade aitab märgata puuduvat omadust enne, kui süvened imeväikestesse õmbluserinevustesse.\n\nLiigu nähtavate ehitusdetailide juurde: õmbluste joondus, palistused, varrukaotsad, nööbid, lukud, trükid ja vajaduse korral tikandid. Otsi ilmseid rebendeid, lahtisi osi, plekke või ebavõrdseid detaile. Pea meeles, et voldid ja rõiva asend pinnal võivad sirged jooned ebaühtlasena näidata; selgem nurk võib mure lahendada.\n\nLõpeta sinu jaoks oluliste siltide ja mõõtudega. Suurusesilt kinnitab esemele trükitud märget, mõõtmine aitab aga sobivust hinnata. Need on erinevad kontrollid. Kui peamine ebakindlus on varruka pikkus, küsi konkreetselt seda mõõtu, mitte seda, kas rõivas „vastab suurusele” — see väljend sõltub palju isiklikest ootustest."
+        },
+        {
+          "title": "Kontrolli jalatseid ja kotte kasutuse järgi",
+          "text": "Jalatsite puhul võrdle mõlemat kinga koos ja eraldi. Vaata suurusemärgiseid, üldkuju, pealse nähtavat seisukorda, kinnitusi ja talla servi. Küsi, kas olemasolevad vaated hõlmavad sinu kavandatud kasutuse jaoks tähtsaid piirkondi. Ainult pealt tehtud pilt ei pruugi näidata talla küljes olevat eraldumist.\n\nKottide puhul alusta mõõtudest ja paigutusest. Tuvasta oodatud põhisahtel, rihmad, käepidemed ja kinnitused. Kontrolli, kas fotodel on valitud suurus ja ülesehitus. Kui kott peab mahutama konkreetset sülearvutit, ei tõenda modelli käes olev sarnane kott piisavat siseruumi.\n\nÄra muuda neid visuaalseid kontrolle väideteks kandevõime, veekindluse, mugavuse või erialase toimivuse kohta. Need omadused vajavad teistsuguseid tõendeid. Kui omadus on hädavajalik ja seda ei saa tooteinfo või sobiva kontrolliga kindlaks teha, jäta see ostu sobivuse otsustamisel lahendamata küsimuseks."
+        },
+        {
+          "title": "Küsi tõlgendatavaid mõõtmisi",
+          "text": "Kasulik mõõtefoto näitab selgelt eset, mõõtevahendit ja mõlemat mõõtmise otspunkti. Küsi nimetatud mõõtu määratletud meetodiga. Särgi puhul on „lamavalt rinna laius ühest kaenlaõmblusest teiseni” täpsem kui „rinna suurus”. Pükste korral täpsusta, kas värvel peab olema lõdvestatud või venitatud.\n\nVõrdle sama meetodiga saadud mõõte. Lamedalt asetatud rõiva laius ei ole keha ümbermõõt ning välistalla pikkus ei ole jalatsi sisepikkus. Enda hästi sobiva eseme mõõtmine annab praktilise võrdluse ainult siis, kui laomõõtmine järgib sama meetodit.\n\nOle madala eraldusvõimega või nurga alt tehtud pildilt väikeste erinevuste lugemisel ettevaatlik. Perspektiiv, kangavoldid ja lindi asend võivad tõlgendust muuta. Kui väike erinevus otsustab, kas jätad eseme alles, küsi selgemat mõõtmist, mitte ära suumi pilti näiliselt täpsemaks, kui see tegelikult on."
+        },
+        {
+          "title": "Mõista laokontrolli piire",
+          "text": "OOPBuy ametlik kontrolliinfo kirjeldab tellitud koguste ja omaduste kontrollimist. Samuti jätab see kontrolliulatusest välja mitu probleemi, sealhulgas teatud värvi-, suuruse- ja kasutusmõjud, erialased tootehinnangud ning mõne suletud kauba sisekontrolli. Loe kehtivast ametlikust teatest täpset ulatust, mis sinu esemele rakendub.\n\nPraktiline õppetund on mitte pidada kontrolli täielikuks tootesertifikaadiks. Pildistatud silt ei tõenda kaubamärgi ehtsust. Terve laadijakorpus ei kinnita elektriohutust. Avamata pakend ei näita kõiki sees olevaid komponente. Kui ost sõltub erialasest omadusest, otsi asjakohast dokumentatsiooni, mitte ära oota vastust üldiselt laofotolt.\n\nSamuti piiravad värvide võrdlust ekraanisätted ja valgus. Kasuta fotosid suurte erinevuste leidmiseks ja nende kohta küsimiseks, kuid ära eelda, et eri tingimustes tehtud kaks pilti lahendavad peene toonierinevuse. Otsusta ette, kui palju ebakindlust oled valmis aktsepteerima."
+        },
+        {
+          "title": "Kirjuta päring, mille järgi on lihtne tegutseda",
+          "text": "Seo iga küsimus vaadeldava probleemiga. Kasulik päring määratleb tellimuse, vastava foto ja täpse kontrollitava detaili. Näiteks: „Palun näidake eesmist lukku täielikult suletuna ning jätke kaadrisse alumise palistuse mõlemad küljed.” See on paremini teostatav kui „Palun kontrollige kvaliteeti uuesti”.\n\nMõõtu küsides nimeta otspunktid ja oluline tingimus, näiteks „lamavalt, venitamata”. OOPBuy kirjeldab tavalisi QC-fotosid oma kontrollijuhiste järgi tasuta teenusena ning pakub kohandatud detaili- või mõõtmispäringuid. Kohandatud teenuste teade ei anna eraldi QC-hinda, seega kontrolli kehtivat tasu enne lisatöö küsimist.\n\nÄra koonda pikka loendit seosetuid muresid ühte ebamäärasesse sõnumisse. Eelista detaile, mis võivad otsust muuta, ja võrdle saabunud vastust nende küsimustega. Salvesta vastus asjakohase pildi kõrvale, et eristada otseselt kinnitatut sellest, mille sa ise fotot vaadates järeldasid."
+        },
+        {
+          "title": "Tee enne väljasaatmist dokumenteeritud otsus",
+          "text": "Pärast tõendite vaatamist vali selge järgmine samm: aktsepteeri olemasolevat infot, küsi kindlat selgitust või uuri kehtivaid tagastusvõimalusi. Probleemi korral vaata kiiresti ametlikku tagastamisteadet ja tellimuse praegust olekut. Ära eelda, et ootamine säilitab kõik võimalused lõputult.\n\nHoia probleemist ja tõenditest lühike kirje. Salvesta valitud variant, asjakohased pildid, mõõdud ning saadud täpne vastus. Kui hiljem tuge vajad, on seda lihtsam selgitada kui üldist väidet, et toode tundus vale. See aitab vältida ka sama küsimuse teistkordset esitamist.\n\nEnne paki esitamist vaata uuesti üle iga lahendamata märgisega ese. Selle saatmine ei vasta vastuseta küsimusele. Lõppotsus peaks lähtuma tegelikult lattu saabunud esemest, tõendite piirangutest ja sellest, kas allesjäänud ebakindlus on sinu kasutuse ning eelarve jaoks vastuvõetav."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy kontrolliinfo",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy ametlik veebisait",
+          "url": "https://oopbuy.com/"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-returns-refunds"
       ]
     },
     {
       "slug": "oopbuy-shipping-guide",
-      "tag": "TARNEMÄRKMED",
-      "title": "Tootehind on alles algus",
-      "description": "Selgem viis pakieelarve planeerimiseks.",
+      "tag": "Saatmine",
+      "title": "OOPBuy tarnejuhend: hinda kulusid ja vali sobiv veoliin",
+      "description": "Mõista OOPBuy tarneetappe, paki kaalu ja mahtu, veoliinide võrdlemist, pakkimisvalikuid ning kontrolle enne rahvusvahelise veo eest tasumist.",
+      "primaryKeyword": "OOPBuy saatmine",
+      "secondaryKeywords": [
+        "OOPBuy saatmiskulu",
+        "OOPBuy tarnekalkulaator",
+        "OOPBuy tarnehinnang",
+        "OOPBuy tarneaeg"
+      ],
+      "takeaways": [
+        "Arvesta eelarves müüja tarnega lattu ja eraldi rahvusvahelise paki maksega.",
+        "Hinda kulu sihtkoha, sisu, kaalu ja mõõtudega ning kinnita valitud veoliini reeglid.",
+        "Võrdle sobivaid liine kõigi tingimuste põhjal ja käsitle tarneaegu hinnangutena."
+      ],
       "sections": [
         {
-          "title": "Eralda kulud",
-          "text": "Hoia eelarves eraldi tootehind, saatmine müüjalt lattu ja rahvusvaheline tarne. Kontrolli praegusest pakkumisest lisateenuseid ning maksega seotud tasusid."
+          "title": "Mõista kahte tarneetappi",
+          "text": "OOPBuy tellimus läbib kaks eraldi tarneetappi. Kõigepealt saadab müüja ostetud kaubad Hiinas asuvasse lattu. Hiljem saadetakse pakk laost sinu sihtkohta. Nende etappide segiajamine on sage põhjus, miks saatmise uuendus või maksetaotlus tundub ootamatu.\n\nOOPBuy esmaostu selgitus eristab algset kaupade ja Hiina-sisese veo makset hilisemast rahvusvahelise veo maksest. Sõltumatu kataloogi tootehind ei näita seetõttu kogu kättesaamiskulu. OOPBuy Tabi dollarites summad on avastamist toetavad hinnangud, mitte lõplik rahvusvahelise saatmise pakkumine.\n\nKoosta eelarve enne toote tellimist. Mõtle, kui palju saad mugavalt kulutada, kui pakitud saadetis osutub esialgu arvatust suuremaks või raskemaks. Rahvusvahelise veo kaalumise edasilükkamine kõigi esemete lattu saabumiseni võib sundida valima suurema kogukulu ja planeerimata müügijärgse protsessi vahel."
         },
         {
-          "title": "Kasuta tegelikke pakiandmeid",
-          "text": "Sisesta ametlikku kalkulaatorisse sihtkoht, kaal, mõõtmed ja kaubaliik. Võrdle sobivate marsruutide piiranguid ja hinnastamisreegleid. Hinnang ei ole lõplik arve."
+          "title": "Anna tarnekalkulaatorile kasulikud sisendid",
+          "text": "Alusta OOPBuy ametlikust tarnehinnangu lehest. Sisesta sihtkoht ja nõutud pakiandmed. Kasuta parimat olemasolevat kaalu- ja mõõduinfot ning pane antud sisendid kirja. Ilma eeldusteta hinnapakkumist on raske hilisema tulemusega võrrelda.\n\nEnne kauba saabumist võivad mõned sisendid olla ebakindlad. Hoia see ebakindlus nähtaval. Rõivaostu korral kasuta usaldusväärsete mõõtude puudumisel kergema ja raskema kaalu stsenaariumi. Jäiga või mahuka toote puhul uuri pakitud mõõtmeid, mitte ära eelda, et üksnes kaal selgitab saatmiskulu.\n\nKui laoandmed ilmuvad, uuenda hinnangut. Suure erinevuse korral leia muutunud sisend enne veoliini valimist. Lisakast, suurem valitud suurus või kaitsepakend võib muuta hinnastatavat pakki. Kasuta kalkulaatorit kavandamise abina ja kinnita tegelik makstav summa kehtivas paki esitamise vormis."
         },
         {
-          "title": "Vali pakend teadlikult",
-          "text": "Pakend mõjutab kaitset ja paki suurust. Enne kinnitamist küsi, kuidas pakendi eemaldamine või tugevdamine muudab pakkumist ja kaitset. Jälgi kontolt iga toote ladustamise tähtaega."
+          "title": "Võrdle tegelikku kaalu ja paki mahtu",
+          "text": "Tegelik kaal kirjeldab pakitud saadetise raskust. Mõõtme- ehk mahukaal on viis, kuidas mõned veoteenused võtavad arvesse paki hõivatud ruumi. Valitud liini hinnastamisreeglid määravad nende näitajate kasutamise, seega ära rakenda jagajat, mille leidsid seosetust tarnejuhendist.\n\nVaatame näitlikku pakkimisvõrdlust. Kast mõõtmetega 40 × 30 × 25 sentimeetrit võtab 30 000 kuupsentimeetrit. Kast mõõtmetega 35 × 25 × 20 sentimeetrit võtab 17 500 kuupsentimeetrit. Teine kast kasutab vähem ruumi, kuid see erinevus üksi ei tõenda kindlat hinnavõitu. Endiselt loevad veoliin, tegelik kaal ja rakendatavad arvestussammud.\n\nKüsi, kas vaadeldavad arvud kirjeldavad üksikut eset, selle müüjapakendit või valmis rahvusvahelist pakki. Need on erinevad asjad. OOPBuy algaja juhendi järgi sõltub lõplik tarne mõõdetud pakimõõtudest ja kaalust, mistõttu valmis pakkimise andmed on eelarve kinnitamisel eriti tähtsad."
+        },
+        {
+          "title": "Võrdle sobivaid veoliine samadel alustel",
+          "text": "Kasulik veoliinivõrdlus algab sobivusest. Kontrolli, kas liin teenindab sinu sihtkohta ning lubab tootekategooriaid, pakimõõtmeid ja kaalu. Madal reklaamsumma on ebaoluline, kui teenus ei saa kavandatud kaupu vedada. Eelmise tellimuse saadavus ei kinnita saadavust teistsugusele pakile.\n\nPane iga sobiva variandi puhul kirja pakutud koguhind, hinnanguline tarnevahemik, jälgimiskorraldus, nimetatud piirangud ning kaasasolev või valikuline kaitse. Loe tingimusi piisavalt täpselt, et mõista lisakaitse tasuga kaetut. Ära eelda kõigile kadumistele, viivitustele, kahjustustele või tollitulemustele sama käsitlust.\n\nKasuta valikute võrdlemisel samu pakieeldusi. Kui üks hinnang kasutab kergemat kaalu või jätab välja mujal valitud teenuse, paranda esmalt erinevus. Üht universaalselt parimat OOPBuy veoliini pole: praktiline valik sõltub pakist, sihtkohast, eelarvest, ajavajadusest ning parasjagu pakutavatest tingimustest."
+        },
+        {
+          "title": "Kontrolli toote piiranguid enne ostmist",
+          "text": "Toote leidmine nimekirjast ei tõenda, et seda saab osta või sulle saata. OOPBuy avaldab ostu- ja veopiiranguid ning veoliini sobivus võib sõltuda sisust. Kontrolli ebaselgeid kategooriaid enne tellimist, mitte ära eelda, et lattu saabumine tagab rahvusvahelise tarnevõimaluse.\n\nAbi küsides kirjelda toodet täpselt. Paigaldatud akuga seade, vedelikuga pudel ja tühi plastpudel on erinevad veoküsimused. Lisa algne link ning asjakohased tehnilised andmed, et tugi saaks hinnata tegelikku eset, mitte oletada lühikese tootenime põhjal.\n\nKui liin eset ei luba, uuri seaduslikku sobivat alternatiivi või kaalu ost ümber. Ära nimeta sisu ümber selleks, et valikuvorm selle vastu võtaks. Hoia kinnitus tellimusmärkmete juures ning kontrolli seda pakkimisel uuesti, kui ese, sihtkoht või valitud liin on muutunud."
+        },
+        {
+          "title": "Vali pakkimine sisu järgi",
+          "text": "Pakkimisotsustes tuleb tasakaalustada paki hõivatud ruumi ja kaupade kaitsevajadust. Jäik kott, õrn aksessuaar ja kokkusurutav dressipluus ei reageeri samale käsitlusele ühtemoodi. Kõigi karpide eemaldamine või kõige kokkusurumine võib tekitada välditavat kahju, kuigi pakk muutub väiksemaks.\n\nOOPBuy pakkimisteade kirjeldab valikuid, mille hulka kuuluvad kastid, teatud kingakarbi muudatused, vaakumkotid ja kaitsematerjalid; saadavus sõltub asjaoludest. Vaata, mida sinu tellimusele ja veoliinile tegelikult pakutakse. Kui vajad algset pakendit hoiustamiseks, esitlemiseks või võimalikuks tagastamiseks, lahenda see küsimus enne eemaldamise palumist.\n\nSegapaki puhul selgita, millised esemed peavad kuju säilitama või olema raskema sisu eest kaitstud. Küsi kehtivate proovipakkimisteenuste kohta, kui täpsemad pakkimisandmed muudaksid otsust. Loe esmalt teenustasu ja tühistamistingimusi. Ümberpakkimisest on kasu vaid siis, kui tulemus vastab konkreetsele lahendamist vajavale ebakindlusele."
+        },
+        {
+          "title": "Arvesta enamat kui rahvusvahelise veo number",
+          "text": "Üldine kulukirje peaks hõlmama kaupu, kohalikku ja rahvusvahelist vedu, valitud teenuseid ning maksmisel näidatud makse- või valuutavahetuskulusid. Sihtkohast ja veoliini tingimustest sõltuvalt võivad uurimist vajada ka imporditasud. Hoia hinnangud juba tasutud summadest lahus.\n\nÄra käsitle veoliini hüüdnime ega mitteametlikku soovitust maksukäsitluse täieliku selgitusena. Loe tegelikku liinikirjeldust ja küsi, mis kuvatud summas sisaldub. Kui tasu jääb ebaselgeks, märgi küsimus eelarvesse lahendamata punktina, mitte ära eelda vaikimisi nulli.\n\nKasuta küsitud andmetes täpseid tootekirjeldusi ja väärtusi. See juhend ei määra sihtkoha tollireegleid ega ennusta tollivormistuse tulemust. Kasulik ostuotsus seisneb selles, kas kogusumma koos mõistliku varuga lahtiste kulude jaoks on sulle vastuvõetav. Odav toode võib siiski olla halb valik, kui tarne sööb säästu ära."
+        },
+        {
+          "title": "Loe tarnehinnanguid etappide, mitte lubadustena",
+          "text": "Tarnehinnang vajab alguspunkti. Müüja väljasaatmine, lao vastuvõtt, lõpetatud kontroll, paki esitamine ja vedaja pealevõtt on erinevad hetked. Edenemist vaadates tuvasta enne eeldatava rahvusvahelise veoajaga võrdlemist, millisele etapile praegune olek kuulub.\n\nOOPBuy ametlik tarneinfo eristab kohalikku ja rahvusvahelist liikumist ning tunnistab viivituste võimalust. Kasuta valitud liini kehtivat hinnangut planeerimisinfona, mitte garanteeritud saabumiskuupäevana. Kui vajad eset kindlaks sündmuseks, arvesta vedaja teekonna kõrval ka ostu- ja laoetappe.\n\nPärast väljasaatmist jälgi paki jälgimiskirjet ja säilita selle viide. Ostutellimuse „shipped” võib tähendada liikumist Hiina lao suunas, mitte tingimata rahvusvahelise paki teelolekut. Kui edenemine tundub vastuoluline, anna toele asjakohane tellimuse või paki viide ning võrreldavate sündmuste kuupäevad."
+        },
+        {
+          "title": "Tee enne veo eest tasumist viimane kontroll",
+          "text": "Vaata tegelikku pakki tervikliku ostuotsusena. Kinnita sisu, saaja andmed, sihtkoht, pakkimisjuhised, veoliini sobivus, pakutud summa ja valitud teenused. Veendu, et oled iga kaasatud eseme ise üle vaadanud ning saatmise ettevalmistus ei ole peitnud lahendamata suuruse- või seisukorraküsimust.\n\nVõrdle kinnitatud pakkumist varasemate stsenaariumidega. Kui see ületab eelarvet, peatu ja uuri, millised valikud võivad tulemust õiguspäraselt muuta. Kaaluda võib teist sobivat veoliini, muudetud pakkimispäringut või teistsugust esemete kombinatsiooni. Ühegi puhul ei tohiks enne kehtivat võrdlust eeldada hinna vähenemist.\n\nSalvesta valitud veoliini tingimused ja lõplik maksekirje. Need aitavad hilisemaid jälgimisküsimusi või toetaotlusi selgitada. Hea tarneplaan tähendab saadetava paki ja aktsepteeritud tingimuste mõistmist, mitte liini valimist üksnes seetõttu, et kellegi teise teistsugune pakk kiiresti saabus."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy tarnehinnang",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy tarneteade",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy pakkimisjuhend",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy ostupiirangud",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuy proovipakkimise juhised",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-haul-packing",
+        "oopbuy-tracking-guide"
       ]
     },
     {
       "slug": "oopbuy-sizing-guide",
-      "tag": "SUURUS JA SOBIVUS",
-      "title": "Parem suurusekontroll algab kodus",
-      "description": "Võrdle mõõte, selle asemel et usaldada tuttavat silti.",
+      "tag": "Suuruse valimine",
+      "title": "OOPBuy suurusejuhend: loe suurustabeleid ja kontrolli tegelikke mõõte",
+      "description": "Vali rõivaid ja jalatseid selgema mõõtmismeetodiga: võrdle müüjate tabeleid, mõõda endale sobivat eset ning küsi sihipäraseid laomõõtmisi.",
+      "primaryKeyword": "OOPBuy suurusejuhend",
+      "secondaryKeywords": [
+        "OOPBuy suurustabel",
+        "OOPBuy suurused",
+        "OOPBuy rõivasuurus",
+        "OOPBuy jalatsisuurus"
+      ],
+      "takeaways": [
+        "Kasuta täpse pakkumise tabelit ja tuvasta, kas see kirjeldab keha või rõivast.",
+        "Võrdle samu mõõte esemega, mis sul juba olemas on ja mida meeldib kanda.",
+        "Õige suurusesilt ei taga istuvust; lahenda olulised mõõtmisküsimused enne saatmist."
+      ],
       "sections": [
         {
-          "title": "Mõõda midagi, mis sobib",
-          "text": "Vali sarnane toode, mis sul juba olemas on. Rõivaste puhul pane kirja sobivad tasapinnal võetud mõõdud; jalatsite puhul kasuta müüja mõõtmismeetodit. Kasuta samu mõõtühikuid."
+          "title": "Alusta pakkumisest, mitte universaalsest teisendusest",
+          "text": "Kõige kasulikum OOPBuy suurusejuhend algab piirangust: ära eelda, et kõik müüjad kasutavad üht suurustabelit. Keskmise suuruse tähis, numbriline jalatsisuurus või pikkusesoovitus võib eri pakkumistes erinevat tähendada. Võrdlust tuleb alustada täpse toote juurde kuuluvast tabelist.\n\nOOPBuy on ostu- ja logistikavahendaja, toote omadused tulevad aga algsest pakkumisest. Tavapärase suuruse valimine ei kinnita, et tellitud rõival on samad mõõtmed nagu teise müüja omal. Käsitle tuttavaid silte identifikaatoritena seni, kuni mõõdud neile tähenduse annavad.\n\nSalvesta tellimisel tabel ja valitud variant. Kui pakkumine hiljem muutub, tead endiselt, milline info sinu otsuse aluseks oli. Ekraanipildil peaks olema toote identiteet ning mõõtmismeetodi selgitus, mitte ainult eelistatud suuruse rida."
         },
         {
-          "title": "Loe täpselt selle toote kuulutust",
-          "text": "Suurusetähised võivad müüjate ja mudelite vahel erineda. Võrdle oma mõõte konkreetse toote tabeliga. Kontrolli, kas number tähendab tasapinnal mõõdetud laiust, ümbermõõtu või pikkust."
+          "title": "Mõõda midagi, mis sulle juba sobib",
+          "text": "Praktiline võrdlusalus on ese, mis sul olemas on, mida kannad ja mis on sama kasutuse jaoks mugav. Aseta see tasasele pinnale, kangast välja venitamata. Mõõda uue ostu jaoks vajalikud mõõtmed ning pane kirja nii arv kui ka selle saamiseks kasutatud meetod.\n\nSärgi kasulikud võrdluspunktid võivad olla kaenlaalune laius, õlgade laius, seljapikkus ja varruka pikkus. Pükstel kaalu värvli laiust, esiosa värvlikõrgust, reie laiust ja siseõmblust. Kõiki võimalikke mõõte pole vaja; eelista neid, millest selle kategooria sobivus sinu jaoks tavaliselt sõltub.\n\nVali päriselt võrreldav ese. Lai dressipluus on halb juhis liibuva särgi istuvusele ning venivad püksid käituvad jäigast kangast erinevalt. Kirjelda, kuidas võrdluseset kandes tunned ja mida muudaksid. Nii muutuvad mõõdud sisukaks isiklikuks sihiks, mitte seletamata arvude kogumiks."
         },
         {
-          "title": "Lahenda ebaselgused varakult",
-          "text": "Küsi enne tellimist ebaselgete mõõtude kohta. Kui vajad tellimuse lisamõõtmisi, kinnita teenuse saadavus ja hind. Ükski suurustabel ei taga sobivust."
+          "title": "Selgita välja, mida suurustabel mõõdab",
+          "text": "Enne arvude võrdlemist tuvasta, kas tabel annab kehamõõdud, valmis rõiva mõõdud või soovituslikud kandja vahemikud. Need vastavad erinevatele küsimustele. Rõiva rinnamõõt sisaldab rõivasse kavandatud ruumi, keha rinnamõõt kirjeldab aga inimest. Nende segiajamine võib põhjustada suure suurusevea.\n\nKontrolli ühikuid ning seda, kas väärtus tähistab laiust või ümbermõõtu. Lamavalt mõõdetud rinna laius 54 sentimeetrit ei ole sama mis 54-sentimeetrine rinnaümbermõõt. Lameda laiuse kahekordistamine võib mõnel juhul anda ligikaudse võrdluse, kuid ei taasta rõiva kuju kõiki aspekte.\n\nKui tabel kasutab tolle, teisenda järjekindlalt: üks toll võrdub 2,54 sentimeetriga. Säilita teisenduse kõrval algne arv, et vigu oleks lihtsam leida. Ebaselgete pealkirjade või tõlke tõttu mitmetähendusliku meetodi korral küsi selgitust enne rea tõlgendamist tõendina, et suurus sobib."
+        },
+        {
+          "title": "Vali ülaosi oluliste mõõtude järgi",
+          "text": "Ülaosade puhul alusta mõõdust, mis sulle kõige sagedamini probleeme põhjustab. Kui särgid on tavaliselt rinnust kitsad, võrdle esmalt rinna laiust. Kui varrukad jäävad tihti lühikeseks, muuda nende pikkus otsustavaks väljaks. Seejärel kontrolli, et ülejäänud mõõdud sobivad soovitud istuvusega.\n\nVaata rõiva konstruktsiooni. Langetatud õlg või raglaanvarrukas võib muuta tuttava õla- või varrukamõõdu tavapärase sisseõmmeldud varrukaga vähem otse võrreldavaks. Küsi, kust mõõtmine algab ja kus lõpeb, ning kasuta olemasolu korral müüja joonist.\n\nNäiteks võib võrdlusjakil olla lamav rinna laius 56 sentimeetrit ja seljapikkus 67 sentimeetrit. Sarnase rinnamõõdu, kuid palju lühema kehaosaga kandidaat võib seljas väga erinev olla. Võrdle kõiki olulisi mõõte koos, selle asemel et valida suurus ühe eriti hästi sobiva arvu järgi."
+        },
+        {
+          "title": "Kontrolli pükstel enamat kui värvel",
+          "text": "Pükste suuruse valimine muutub sageli selgemaks, kui vaatad vöökohta, värvli kõrgust, reit ja siseõmblust koos. Näiliselt õige värvel ei taga mugavat liikumist ega soovitud siluetti. Erinev värvlikõrgus võib muuta ka värvli asukohta, mis mõjutab sama mõõdu tunnet sinu kehal.\n\nElastse värvli puhul selgita välja, kas tabel annab lõdvestatud või venitatud mõõdu. Ära võrdle müüja venitatud mõõtmist enda pükste lõdvestatud mõõduga. Sama eristus on tähtis laost saadud mõõdulindifotot hinnates.\n\nPööra tähelepanu soovitud pikkusele ja lõikele. Kaks sama siseõmblusega paari võivad erineda värvlikõrguse, säärekuju ja sääreava tõttu. Kasuta võrdlusrõivast täpse soovitud muudatuse määramiseks, näiteks rohkem reieruumi või kitsam ava. See on sisukam kui küsimus, kas müüja püksid on üldiselt tavalisest suured või väikesed."
+        },
+        {
+          "title": "Kasuta jalatsitabeleid hoolikalt",
+          "text": "Jalatsite puhul pane kirja müüja suurussüsteem ja loe jala pikkuse kaasnevat juhist. Tuttavat ELi, UK või USA tähist ei tohiks teisendada seosetu tabeliga, kontrollimata, kas pakkumine kasutab sama tava. Kui tabel puudub, jääb ebakindlus lahendamata.\n\nKui küsitakse kehamõõte, mõõda mõlemad jalad müüja määratud meetodiga. Hoia märkmetes jala pikkus, sisetalla pikkus, jalatsi sisepikkus ja välistalla pikkus eraldi. Need ei ole vahetatavad. Välistald võib ulatuda jala jaoks saadaval olevast ruumist kaugemale ning sisetalla kuju võib sirge pikkuse võrdlust keerulisemaks muuta.\n\nPikkus on ainult osa istuvusest. Mugavust mõjutavad ka laius, nina kuju, jalapealse ruum, sokid ja kasutus. Võrdle sarnase paariga, mida juba kannad, ning küsi konkreetne küsimus, kui üks mõõt on hädavajalik. Ära toetu universaalsele soovitusele võtta alati üks suurus suurem või lisada igale jalatsile kindel varu."
+        },
+        {
+          "title": "Arvesta kanga ja soovitud istuvusega",
+          "text": "Mõõdud aitavad valikut kitsendada, kuid ei kirjelda eseme kandmise kõiki külgi. Kanga struktuur, venivus, vooder ja kavandatud lõige mõjutavad rõiva liikumist. Kasuta olemasolu korral pakkumise tegelikku infot; ära järelda täpset kangakoostist või venivust üksnes foto järgi.\n\nEnne lähestikuste suuruste vahel otsustamist kirjelda enda kasutust. Paksude kihtide peal kantav mantel võib vajada teistsugust istuvust kui otse keha vastas kantav särk. Lai siluett võib olla tahtlik, kuid kontrollida tuleb endiselt, kas õlad, varrukad ja üldpikkus sobivad soovitud kandmisviisiga.\n\nKui pakkumine kirjeldab võimalikku mõõtmishälvet, arvesta sellega otsuses. Ära raja kogu valikut pisikesele arvulisele erinevusele, mida meetod usaldusväärselt eristada ei suuda. Kui kaks suurust näivad võrdselt usutavad, määra enda jaoks tähtsaim kompromiss, mitte ära teeskle, et tabel annab täiusliku vastuse."
+        },
+        {
+          "title": "Küsi sihipärast laomõõtmist",
+          "text": "OOPBuy kohandatud logistikateenuste teade kirjeldab lisadetailide ja mõõtmiste päringuid, sealhulgas rõivamõõte ning kinga või sisetalla pikkust. Kontrolli oma kontol kehtivaid teenusevalikuid ja võimalikke tasusid. Täpne päring on kasulik siis, kui see vastab olulisele küsimusele, mille müüja tabel lahti jättis.\n\nKirjelda meetodit selgelt. Näiteks palu särk asetada tasapinnale ning mõõta rinna laius ühest kaenlaõmblusest teiseni, kangast venitamata. Siseõmbluse jaoks nimeta otspunktideks hargivahe õmblus ja palistus. Palu foto, millel on koos näha lint ning mõlemad otspunktid.\n\nSeejärel võrdle tulemust enda võrdlusesemega sama meetodi alusel. Pildistatud suurusesilt ja mõõdetud rõivas annavad erinevaid tõendeid. OOPBuy kontrolliteade piirab tavakontrolli järeldusi, seega ära eelda, et sobiv silt tähendab juba sinu jaoks kinnitatud tegelikku istuvust."
+        },
+        {
+          "title": "Otsusta sobivus enne rahvusvahelist saatmist",
+          "text": "Vaata mõõdud ja kavandatud kasutus üle enne eseme rahvusvahelisse pakki lisamist. Kui oluline mõõt puudub, küsi seda seni, kuni saad laos oleva kauba kohta veel teadliku otsuse teha. Kui tõendid näitavad suurt erinevust, uuri kehtivaid müügijärgseid võimalusi kiiresti, mitte ära looda, et sobivus teel kuidagi muutub.\n\nHoia tabel, valitud suurus, mõõtefotod ja toe vastused koos. Nii on suurusemuret lihtsam selgitada ning eristada valesti tellitud varianti õige sildiga esemest, mille lõige sulle ei sobi. Need on erinevad olukorrad, millel võivad olla erinevad lahendused.\n\nPärast kättesaamist mõõda eset sama meetodiga uuesti ja märgi, kuidas see seljas on. Loo tegelikul kogemusel põhinev privaatne võrdlusmaterjal koos istuvuse eelistuste ja piirangutega. Aja jooksul on neist tähelepanekutest rohkem kasu kui kasvavast seletamata suurusesiltide loendist või seosetutelt ostudelt kopeeritud üldnõuannetest."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy kasutaja registreerimisleping",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuy kontrolliinfo",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-spreadsheet-guide"
       ]
     },
     {
       "slug": "oopbuy-product-links",
-      "tag": "LINKIDE SELGITUS",
-      "title": "Üks toode, kaks erinevat ID-d",
-      "description": "Miks müüja toote ID on leiu avamisel tähtis.",
+      "tag": "Tootelingid",
+      "title": "OOPBuy tootelingid: leia õige ese ja kontrolli iga varianti",
+      "description": "Õpi kontrollima OOPBuy ja Weidiani tootelinke, eristama algseid toote-ID-sid katalooginumbritest, lahendama katkisi linke ning mõistma partnerlusparameetreid.",
+      "primaryKeyword": "OOPBuy tootelingid",
+      "secondaryKeywords": [
+        "OOPBuy Weidiani lingid",
+        "OOPBuy lingiteisendaja",
+        "OOPBuy tooteaadress",
+        "OOPBuy tootenimekirja lingid"
+      ],
+      "takeaways": [
+        "Säilita algse turuplatsi tootelink ja kontrolli avanevat lehte.",
+        "Hoia kataloogiviide ostuaadressis kasutatavast algsest toote-ID-st eraldi.",
+        "Kontrolli täpset varianti ja kehtivaid makseandmeid; partnerluskood ei taga soodustust."
+      ],
       "sections": [
         {
-          "title": "Katalooginumber määrab lehe",
-          "text": "CNBuyCha annab igale tootelehele oma katalooginumbri. See number on kataloogis kasulik, kuid pole tingimata müüja toote ID."
+          "title": "Töötav link on alles esimene kontroll",
+          "text": "OOPBuy tootelink peaks aitama jõuda uuritava esemeni. Lehe avanemine on alles algus. Pead ikkagi kinnitama, et toode, müüja pakkumine, valitud variandid ja praegune hind vastavad ootustele, mis tekkisid selle leidmise kataloogis või tabelis.\n\nOOPBuy algaja juhend kirjeldab kauba leidmist tootelingi või nime abil enne omaduste ja koguse valimist. Protsess sõltub konkreetse pakkumise olemasolevast infost. Ära eelda, et iga sotsiaalmeediapostitusest või turuplatsi lehelt kopeeritud aadressi saab õigesti importida või täiendava kontrollita osta.\n\nHoia OOPBuy aadressi kõrval algne tootelink alles. Kui pealkiri tõlgitakse teisiti, pilt muutub või salvestatud leht ei avane enam, annab algkirje tugevama aluse eseme tuvastamiseks. Lühinimest nagu „must igapäevakott” ei piisa mitme sarnase pakkumise eristamiseks."
         },
         {
-          "title": "Müüja link määrab toote",
-          "text": "Weidiani kuulutuse puhul kasutab ostunupp algses müüja URL-is olevat toote ID-d. See avab toote OOPBuys koos selle saidi partneri kutsekoodiga."
+          "title": "Erista kataloogiviidet toote-ID-st",
+          "text": "Sõltumatud kataloogid annavad sageli igale kirjele oma viitenumbri. Algne turuplats kasutab pakkumise jaoks eraldi identifikaatorit. Numbrid täidavad eri eesmärke ning neid ei tohiks ostulingi avamisel või koostamisel teineteise asemele panna.\n\nOOPBuy Tabi näites on 3470 CNBuyCha kataloogi viide. Number 7876894732 on Weidiani tootetees kasutatav algne identifikaator. Kataloogileht numbriga 3470 ei tähenda, et vastav OOPBuy ostuaadress peaks lõppema numbriga 3470.\n\nLeidu talletades nimeta väljad selgelt: kataloogiviide, algne turuplats, algne tootelink ja OOPBuy tootelink. Säilita täisaadressid, mitte ainult numbrid. See on eriti kasulik eri aadressivormingutega turuplatside puhul või siis, kui keegi jagab kataloogi ekraanipilti ilma toodet tegelikult tuvastava lingita."
         },
         {
-          "title": "Kontrolli lehte pärast avamist",
-          "text": "Võrdle pealkirja, müüjat ja varianti uuritud kuulutusega. Kui leht on muutunud või pole saadaval, naase kataloogi ja vali teadlikult teine kuulutus."
+          "title": "Loe OOPBuy näidislinki õigesti",
+          "text": "Üks ostutee näide on https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5. Domeen tuvastab OOPBuy, toote tee määrab Weidiani algpakkumise ja viimane parameeter kannab kutsekoodi. Tees olev number kuulub algse toote näitele, mitte kataloogi enda kirjete numeratsioonile.\n\nKasuta seda aadressi ülesehituse mõistmiseks, mitte praeguse laoseisu, hinna, müüja usaldusväärsuse või sobivuse tõendina. Ava tegelik leht ja vaata selle sisu. Kehtivana näiv aadress võib viidata muutunud või kättesaamatule pakkumisele ning tootetee üksi ei kinnita tellitavaid valikuid.\n\nKutseparameeter on partnerluslingi osa. OOPBuy Tab võib saada kasu oma partnerluslinkide tingimustele vastavast kasutusest. Parameetri olemasolu ei kinnita sulle allahindlust, kupongi ega erilist tarnehinda. Toetu ainult pakkumisele, mis on praeguses ametlikus makseprotsessis selgelt kuvatud ja sinu puhul rakenduv."
+        },
+        {
+          "title": "Kontrolli avaneva lehe toote vastavust",
+          "text": "Võrdle avanenud lehte algse pakkumisega mitme detaili abil korraga. Vaata tootepilte, peamisi kujundusomadusi, valikuid, kogust ning kuvatud müüjainfot. Pealkirju võidakse lühendada või tõlkida, seega on üksnes sama pealkiri nõrk kontroll.\n\nNäiteks võivad kahel seljakotil olla sarnased eestvaatefotod, kuid erinevad sisetaskud, mõõtmed või kaasasolevad tarvikud. Kinnita omadus, mis ostusoovi tekitas. Kui vajad kindlat sülearvutitaskut või kinnitust, leia see tegelikust pakkumisest, mitte ära eelda sarnase pildi põhjal sama ehitust.\n\nPane tähele lehti, mis näitavad pärast algse pakkumise kadumist seotud toodet. Kui vastavus on ebaselge, peata ost ja säilita selgituse küsimiseks mõlemad lingid. Ära aktsepteeri asendust vaikimisi sarnase pisipildi tõttu. Hilisem suuruse-, kulu- ja QC-kontroll sõltub õigest lähte-esemest."
+        },
+        {
+          "title": "Vali variant enne hindade võrdlemist",
+          "text": "Kui õige pakkumine on leitud, vali tegelik värv, suurus, ülesehitus ja kogus, mida hinnata tahad. Näidatud alghind võib kuuluda teistsugusele variandile kui esimene foto. Mõni pakkumine koondab samale tootelehele ka tarvikuid, üksikesemeid või erineva suurusega pakendeid.\n\nKirjuta valik märkmetesse lihtsas keeles. „Suur, süsihall, üks tükk” on kasulikum kui „kolmas valik”, eriti kui valikute järjekord muutub. Salvesta valikut selgitav suurustabel või tehniliste andmete pilt. Nii on hiljem lihtsam tellimust kavandatud ostuga võrrelda.\n\nKäsitle OOPBuy Tabi dollarites kataloogihindu hinnangutena. Kontrolli ametlikus teenuses kehtivat valitud summat, kuvatud kohalikku tarnet ja makseandmeid. Rahvusvaheline vedu on eraldi eelarveküsimus. Õiget toodet avav link ei lukusta kataloogihinda ega muuda seda kättetoimetamise kogusummaks."
+        },
+        {
+          "title": "Lahenda katkine või puudulik link",
+          "text": "Kui toode ei lae ootuspäraselt, mine tagasi algsele turuplatsi lehele ja kopeeri tooteaadress uuesti. Kontrolli, kas kopeerisid esemelingi, poe avalehe, otsingutulemuse või jagamislehe. Lühendatult võivad need sarnased paista, kuid ei pruugi tuvastada sama asja.\n\nProovi täielikku algset linki OOPBuy ametliku otsingu või lingisisestuse kaudu ja vaata tulemust. Kui see ikkagi ei toimi, pane kirja täpne aadress ning kuvatud viga või puuduv info. Küsi ametlikust toest, kas konkreetset pakkumist saab töödelda, selle asemel et eeldada korduskatsete abil toetamata või eemaldatud toote parandamist.\n\nÄra muuda juhuslikke numbrijuppe seni, kuni midagi avaneb. Nii võid jõuda seosetu pakkumiseni, kuigi jääb mulje algse lingi parandamisest. Kui leiad alternatiivse toote, käsitle seda uue kandidaadina ja korda vastavuse, suuruse, variandi ning kulude kontrolle algusest peale."
+        },
+        {
+          "title": "Jaga linki koos kasuliku taustaga",
+          "text": "Kasulik jagatud tootelink sisaldab eseme nime, lähteturgu, soovitud varianti, kontrollimise kuupäeva ja olulisi ebakindlusi. Kui jagad kataloogikirjet, ütle seda. Kui jagad tegelikku ostulehte, erista seda selgelt. Nii mõistab järgmine inimene, milline info vajab veel kinnitamist.\n\nÄra esita kataloogipilte tellimuse laoseisukorra tõendina. OOPBuy Tab kasutab CNBuyCha algandmeid ning imporditud pildid ei ole sinu enda kauba kinnitatud QC-fotod. Oma tellimusest rääkides hoia need tõendid eraldi ja eemalda enne avalikku jagamist privaatsed konto-, aadressi- ning tellimusandmed.\n\nAvalda partnerluslink selgelt. Kutsekoodi ei tohiks kujutada garanteeritud säästuna, kui rakenduvat pakkumist pole kontrollitud. Vastutustundlik jagamine tähendab abistamist toote ja selle ebakindluste tuvastamisel, mitte vihjamist, et sinu kogemus lahendab kõik teise inimese tulevase tellimuse küsimused."
+        },
+        {
+          "title": "Tee kontotoimingud ametlikus teenuses",
+          "text": "Kui oled valmis kontot kasutama, ava https://oopbuy.com/login ja kontrolli brauseris näidatud sihtkohta. Tootekataloog võib aidata eset leida, kuid kehtivat konto-, tellimuse- ja makseinfot tuleb vaadata ametlikus teenuses.\n\nLoe lingi sihtaadressi enne sisselogimisandmete sisestamist või tasumist. Tuttav nimi lehe pealkirjas, pildil või kutsesõnumis ei kinnita iseenesest saidi identiteeti. Kui ümbersuunamine tekitab kahtluse, ava ametlik veebisait otse ning kasuta seal algset tootelinki.\n\nÄra hoia oma võrdlustabelis paroole ega makseandmeid. Tabel vajab ainult toote tuvastamiseks ja otsuse jälgimiseks piisavat infot. Avalikust valikust eemalda ka isiklikud tellimusviited. Need harjumused aitavad jagada kasulikke leide ilma tooteavastamist tundlike kontoandmetega segamata."
+        },
+        {
+          "title": "Kasuta korduvat teed lingist tellimuseni",
+          "text": "Järgi iga kandidaadi puhul sama järjestust: säilita algne tootelink, ava OOPBuy tulemus, kinnita eseme vastavus, vali variant, kontrolli suurust või tehnilisi andmeid ning hinda kogukulu. Seejärel otsusta, kas tellimiseks on piisavalt infot. Järjekindlus on väärtuslikum kui tuttavana näivast lehest kiiruga läbijooksmine.\n\nPärast tellimist salvesta viide privaatselt ning võrdle laoandmeid sama variandikirjega. Õige link ei asenda saabunud kauba kontrolli. Kui ese erineb, aitavad salvestatud valik ja algandmed probleemi täpselt selgitada.\n\nLõpuks kontrolli enne uut ostu uuesti. Kuude eest edukalt tellitud toote saadavus, variandid, hind või kirjeldus võivad muutuda. Hoia varasemad tähelepanekud kasuliku ajaloona, käsitledes praegust lehte uue ostuotsusena. Nii muutuvad tabelilingid hallatavaks uurimisprotsessiks, mitte oletuste kogumiks."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy ametlik veebisait",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuy sisselogimine",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-spreadsheet-guide",
+        "oopbuy-price-check",
+        "oopbuy-sizing-guide"
       ]
     },
     {
       "slug": "oopbuy-price-check",
-      "tag": "TARGEM VÕRDLEMINE",
-      "title": "Võrdle sama asja, mitte ainult hinda",
-      "description": "Lühike kontrollnimekiri kahe paljulubava leiu võrdlemiseks.",
+      "tag": "Eelarve",
+      "title": "OOPBuy hinnakontroll: arvuta kogukulu enne ostmist",
+      "description": "Kontrolli OOPBuy toote hinda ja täpset varianti ning koosta realistlik eelarve müüja tarne, rahvusvahelise veo ja muude kulude jaoks.",
+      "primaryKeyword": "OOPBuy hinnakontroll",
+      "secondaryKeywords": [
+        "OOPBuy kogukulu",
+        "OOPBuy tarnehinnang",
+        "OOPBuy toote hind"
+      ],
+      "takeaways": [
+        "Võrdle hindu alles siis, kui variant ja kogus on samad.",
+        "Käsitle kuvatud dollarhinda hinnanguna, eraldi kogu tellimuse kättesaamise kulust.",
+        "Kontrolli eelarvet pärast laomõõtmisi ja enne rahvusvahelise tarne eest maksmist."
+      ],
       "sections": [
         {
-          "title": "Võrdle samu valikuid",
-          "text": "Võrdle sama suurust, värvi, kogust ja kaasasolevaid tarvikuid. Madalaim kuvatav hind võib käia muu variandi kohta kui see, mida soovid."
+          "title": "Alusta hinnast, mida tegelikult teada vajad",
+          "text": "OOPBuy hinnakontroll peaks vastama praktilisele küsimusele: kas saad endale lubada selle eseme koju kättetoimetamist? Madal tootehind vastab ainult osale küsimusest. Otsus sõltub ka täpsest variandist, kogusest, müüja tarnekulust, rahvusvahelisest veost ning muudest summadest, mida näidatakse maksmisel või nõutakse sihtriigis.\n\nOOPBuy Tab on sõltumatu toodete avastamise leht, mitte ametlik ostuplatvorm. Kataloogiandmed pärinevad CNBuyChast ja kuvatud dollarhinnad on hinnangud, mitte täielikud tarnepakkumised. Leia kataloogist sobivad kandidaadid ning kinnita enne maksmist kehtiv pakkumine OOPBuy ametlikul tootelehel.\n\nMäära kõigepealt suurim summa, mida oled valmis kogu ostule kulutama. Kui eelarve on $80, ära eralda kõiki $80 kaubale lootuses, et saatmiskulu osutub tühiseks. Jäta ruumi kuludele, mille suurust sa veel kindlaks pole teinud."
         },
         {
-          "title": "Arvesta järgmiste kuludega",
-          "text": "Võrdle tootehinna kõrval riigisisest postikulu ja tõenäolisi pakinõudeid. Kinnita lõplik maksete jaotus OOPBuys, selle asemel et pidada kataloogi hinnangut pakkumiseks."
+          "title": "Kontrolli valitud varianti, mitte esimest numbrit",
+          "text": "Ava kehtiv tooteleht ja vali soovitud värv, suurus, omadused ning kogus. Mõned pakkumised sisaldavad ühe aadressi all mitut toodet või komplekti. Madalaim kuvatud hind võib käia teise valiku kohta kui tähelepanu köitnud pilt. Väike tarvik ja terve komplekt võivad paikneda kõrvuti, maksmata sama palju.\n\nKirjuta valitud variant üles täpselt kuvatud kujul. Salvesta tooteaadress, nähtav müüjanimi, kogus ja kauba praegune vahesumma. Kui tellimuse vaade näitab hinnavahemikku, ära kanna eelarvesse selle alumist piiri enne, kui tead, et see kehtib sinu valikule.\n\nVaata, kas koguse muutmine mõjutab ühikuhinda või minimaalset tellimust. Kaks sarnast pakkumist ei ole vahetult võrreldavad, kui ühe hind eeldab mitme ühiku ostmist. Kui tõlgitud valik on mitmetähenduslik, selgita see enne maksmist välja: odav vale variant on endiselt vale ost."
         },
         {
-          "title": "Säilita andmed",
-          "text": "Salvesta algne müüjalink ja valitud variandid. Need üksikasjad aitavad võrrelda tellimuse fotosid ning selgitada erinevusi, kui vajad tuge."
+          "title": "Koosta eraldi ridadega kuluarvestus",
+          "text": "OOPBuy esmaostu juhend eristab algset kauba ja kohaliku tarne makset hilisemast rahvusvahelise veo maksest. Kasuta sama eristust oma arvestuses. Anna kaubale, müüjalt lattu saatmisele, rahvusvahelisele veole ja lisateenustele eraldi read. Lisa makse- või valuutatasu ainult siis, kui seda näitab tegelik maksevaade või teenusepakkuja. Hoia sihtriigi maksud ja käsitlustasud eraldi, kuni sul on sihtkoha ning valitud teenuse kohta usaldusväärne teave.\n\nMärgi iga rida kinnitatud summaks, hinnanguks või teadmata kuluks. See on kasulikum kui eeldada, et kõik numbrid on võrdselt kindlad. Kinnitatud kauba vahesumma võib olla kõrvuti hinnangulise tarnekuluga, samal ajal kui teenustasu ootab tegelikku pakkumist.\n\nMitme toote puhul jälgi nii eseme kui ka kogu paki kulusid. Kauba hind kuulub esemele, ühine pakkimisteenus võib kuuluda pakile. Kui jagad ühiskulu esemete vahel, nimeta seda oma eelarvemeetodiks. See ei pruugi olla viis, kuidas OOPBuy või vedaja tasu arvutab."
+        },
+        {
+          "title": "Hoia valuutavahetus ja maksekulud nähtaval",
+          "text": "Dollaritesse teisendatud hind aitab tooteid võrrelda, kuid ei taga summat, mille maksevahend lõpuks arvestab. Vaata tegelikul kinnitusekraanil valuutat ja tasumisele kuuluvat summat. Kui makseteenuse pakkuja näitab teisendust, võrdle seda oma eelarvega, eeldamata, et kataloogi vahetuskurss jääb muutumatuks.\n\nKasuta arvestuses ühte põhivaluutat ja märgi, kuidas teised summad teisendasid. Näiteks säilita müüja hind ühes väljas algses valuutas ja teises hinnanguline dollarväärtus. Nii jääb alles algne võrdluspunkt, kui hiljem arvutuse juurde naased.\n\nÄra lisa väljamõeldud universaalset OOPBuy vahetustasu või makseprotsenti. Kohaldatavad tasud võivad sõltuda tegelikust makseviisist ja konto valikutest. Kasulik kontroll on konkreetne: millist summat see makse nõuab, mis valuutas ning millise lisatasu teenusepakkuja tegelikult avaldab?"
+        },
+        {
+          "title": "Hinda tarnet realistliku paki järgi",
+          "text": "OOPBuy pakub ametlikku tarnehinnangu lehte. Kasuta seda oma sihtkoha ja kavandatava paki kohta mõistlikult tuvastatava teabega. Loe teenuste kirjeldusi, mitte ära vali liini üksnes kõige väiksema numbri järgi. Kauba sobivus, paki mõõtmed, kaal ja sihtkoht mõjutavad valikute mõistlikkust.\n\nEnne lattu jõudmist on kaal ja mõõtmed oletused. Rõiva esitatud kaal ei pruugi sisaldada jaepakendit, samal ajal võib kerge, kuid mahukas ese võtta palju ruumi. Vaata, milliseid sisendeid kalkulaator vajab, ja säilita need tulemuse kõrval, et saaksid võrdlust korrata.\n\nKui oluline sisend on ebakindel, arvuta ka teine stsenaarium. Võrdle näiteks oodatavat pakki mahukama variandiga, milles säilib vajalik kaitsepakend. See näitab tulemuse tundlikkust, mitte ei ennusta tulevikku. Kui ost mahub eelarvesse ainult kõige optimistlikuma variandi korral, vajab plaan suuremat varu."
+        },
+        {
+          "title": "Arvuta läbi terviklik näide",
+          "text": "Oletame, et esialgses ostukorvis on särk hinnanguga $22 ja kott hinnanguga $31. Kauba hinnang on seega $53. Märgid tellimuse vaate põhjal müüja tarneks $5 ning näitliku rahvusvahelise veo stsenaariumi jaoks $24. Vahesumma on $82 enne kohaldatavaid lisateenuseid, maksekulusid või sihtriigi tasusid.\n\nNeed summad on väljamõeldud näited ega kirjelda OOPBuy tariife. Need näitavad, miks $53 ostukorvi ei saa automaatselt nimetada $53 ostuks. Kui eelarve ülempiir on $90, on allesjäänud $8 varu lahendamata kuludeks, mitte ootel allahindlus.\n\nMuuda nüüd stsenaariumi: mahukama paki näitlik tarnehind tõuseb $34-ni. Vahesummaks saab $92 enne teadmata kulusid. Enne kohustuse võtmist on otsus selge: eemalda ese, suurenda teadlikult eelarvet või loobu ostust. Arvestus muudab ebakindluse võrdluseks, mille põhjal saab tegutseda."
+        },
+        {
+          "title": "Võrdle alternatiive samadel alustel",
+          "text": "Kahe müüja vahel valides võrdle sama tootevarianti ja sama oodatavat tulemust. Pane kirja suurus, materjalikirjeldus, kaasasolevad tarvikud, kogus ning müüja tarnekulu. Madalama esemehinnaga pakkumine võib sisaldada vähem osi või anda vajalike omaduste kohta vähem teavet.\n\nArvesta võrdluses tõendusmaterjali kvaliteeti, andmata sellele väljamõeldud rahalist väärtust. Selge suurustabel ja hästi kirjeldatud toode lihtsustavad otsust, ebaselge pakkumine võib vajada lisaküsimusi. Kataloogipildid aitavad toodet leida; neid ei ole kontrollitud sinu enda laotellimuse fotodena.\n\nNäiteks $20 toode koos $6 müüjatarnega ning $24 toode koos $2 müüjatarnega annavad mõlemad $26 esialgse vahesumma. See ei tõesta sama kvaliteeti ega lõplikku tarnekulu. See lihtsalt kõrvaldab eksitava erinevuse pealkirjahindades ja aitab ülejäänud asjaolusid hinnata."
+        },
+        {
+          "title": "Hinda kuponge ilma eelarvet nende järgi seadmata",
+          "text": "Kampaania on kasulik vaid siis, kui see kehtib ostule, mida kavatsesid teha. Loe konkreetse kupongi kehtivaid tingimusi, sealhulgas kasutuskohta, miinimumkulu, sobivaid tarneteenuseid, aegumist ja teiste pakkumistega ühendamist. Vana ekraanipildi reklaamteksti ei saa käsitleda aktiivse õigusena soodustusele.\n\nArvuta allahindlus pärast ostukorvi paika panemist. Kui tarbetu eseme lisamine avab kupongi, võrdle kogu uut summat algse summaga. Lisaost võib kasvatada kaubakulu, paki kaalu ja mahtu isegi siis, kui kupong vähendab arve ühte rida.\n\nMärgi üles, kas soodustus on hinnangus juba arvestatud. Sama säästu lugemine esmalt kalkulaatoris ja seejärel uuesti oma tabelis tekitab väljamõeldud eelarve. Kui lõplik maksevaade ei näita oodatud mahaarvamist, lahenda erinevus enne maksmist."
+        },
+        {
+          "title": "Kontrolli uuesti iga makseotsuse juures",
+          "text": "Korda hinnakontrolli siis, kui teave paraneb: tegeliku variandi valimisel, ostu maksmiseks valmis saamisel ja siis, kui laomõõtmised võimaldavad rahvusvahelise paki pakkumist. Hinnang on kasulik otsuse toetamiseks, mitte lubadus, et hilisem info tulemust muuta ei saa.\n\nEnne maksmist kinnita valitud esemed, kogused, valuuta, tarneaadress, teenusevalikud, tegelikult rakendatud soodustused ja praegu tasutav kogusumma. Säilita tellimuse identifikaatorid ning asjakohased kviitungid, et siduda hilisemad muudatused õige ostuga. Ära toetu tootekaardilt meelde jäänud numbrile.\n\nHea peatumisreegel on lihtne: jätka ainult siis, kui tasutav summa ja allesjäänud ebakindlus mahuvad eelarvesse. Kui teadmata kulu võiks otsust muuta, uuri seda enne. Järgmise sammuna kasuta tarnejuhendit pakivalikute võrdlemiseks ning laojuhendit, et mõista, millal täpsemad mõõtmised kättesaadavaks saavad."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy tarnehinnang",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-spreadsheet-guide"
+      ]
+    },
+    {
+      "slug": "oopbuy-warehouse-guide",
+      "tag": "Ladu",
+      "title": "OOPBuy laojuhend: saabumisest paki saatmisse andmiseni",
+      "description": "Vaata, mida kontrollida OOPBuy tellimuse lattu jõudmisel, kuidas jälgida hoiutähtaegu ning millal teha tagastamise või saatmise otsus.",
+      "primaryKeyword": "OOPBuy laojuhend",
+      "secondaryKeywords": [
+        "OOPBuy laos hoiustamine",
+        "OOPBuy tellimus vastu võetud",
+        "OOPBuy laokontroll"
+      ],
+      "takeaways": [
+        "Jälgi iga eseme vastuvõtukuupäeva eraldi ja kontrolli kehtivaid hoiureegleid.",
+        "Vaata oma tellimuse fotosid ja mõõtmeid enne esemete üheks pakiks ühendamist.",
+        "Lahenda tootega seotud küsimused ning tagastuskõlblikkus enne rahvusvahelise saatmise lubamist."
+      ],
+      "sections": [
+        {
+          "title": "Käsitle ladu otsustamise etapina",
+          "text": "Laoetapis muutub kaugelt tehtud ost paremini hinnatavaks. Saad võrrelda tellimusega seotud eset soovitud variandiga, vaadata olemasolevat kontrolliteavet ja otsustada, kas jätad kauba alles, küsid täpsustust või taotled lubatud juhul tagastamist. Samuti muutub paki kavandamine siin konkreetsemaks.\n\nÄra koonda kõiki samme sõnasse „saabunud”. Müüja tarne, lao vastuvõtt, kontroll, hoiustamine, paki ettevalmistus ja rahvusvaheline väljasaatmine kirjeldavad erinevaid sündmusi. Loe konto tegelikku olekut ning vaata, millise eseme või paki identifikaatoriga see seotud on.\n\nKõige kasulikum on valmistada kontrollid ette enne kauba sellesse etappi jõudmist. Salvesta valitud variant ja sinu jaoks olulised mõõtmed. Laokirje ilmumisel saad võrrelda seda kindla ootusega, selle asemel et proovida algset ostuvalikut mälu järgi taastada."
+        },
+        {
+          "title": "Loo igale esemele eraldi kirje",
+          "text": "Koosta esemenimekiri tellimuse identifikaatori, tootelingi, valitud värvi ja suuruse, koguse, vastuvõtukuupäeva, kontrollioleku ning lahtiste küsimustega. Anna igale esemele oma rida ka siis, kui ostsid mitu toodet korraga. Üks ostukord võib tekitada eraldi müüjasaadetised ja erinevad lattu saabumise kuupäevad.\n\nErista tellimuse identifikaatorit müüja jälgimisnumbrist ja hilisemast rahvusvahelise paki numbrist. Need vastavad erinevatele küsimustele. Kui klienditugi peab uurima puuduvat eset, aitab täpne tellimusviide rohkem kui kogu ostukorvi ekraanipilt.\n\nKasuta oma arvestuses lihtsaid otsusesilte, näiteks „vajab ülevaatust”, „küsimus saadetud”, „jätan alles” või „tagastust taotletud”. Need on sinu korralduslikud märked, mitte OOPBuy ametlikud olekud. Nende eesmärk on lõpetamata tegevused nähtavaks teha. Mitme päeva pärast kontole naastes peaksid kohe teadma, milline ese veel tähelepanu vajab ja miks."
+        },
+        {
+          "title": "Mõista hoiutähtaega ilma oletusteta",
+          "text": "OOPBuy ametlik hoiustamisteade ütleb, et tasuta hoiuperiood on 90 päeva alates tellimuse jõudmisest olekusse Received. Märgi üles iga eseme kuupäev, mitte ainult ostukogumi uusima kauba oma. Enne hoiuvõimalusele tuginemist vaata kehtivat teadet ja oma konto andmeid.\n\nTäpsem kohandatud logistikateenuste teade lubab ühe tasulise pikenduse hinnaga 10 CNY, mis lisab kuni 30 päeva ja teeb kogukestuseks maksimaalselt 120 päeva. Teate järgi võidakse seda aega ületanud kaup lugeda hüljatuks ja kõrvaldada. See ei tähenda 120 tasuta hoiupäeva ega piiramatut uuendamisvõimalust.\n\nSea endale meeldetuletus piisavalt enne tavalise tasuta perioodi lõppu, jättes aega küsimuste lahendamiseks ja saatmise ettevalmistamiseks. Kui vajad pikendust, kontrolli selle praegust saadavust konkreetsele esemele ning saa uus tähtaeg kinnitatud. Ära eelda, et kauba lihtsalt lattu jätmine ostab automaatselt lisaaega."
+        },
+        {
+          "title": "Vaata oma tellimusega seotud tõendusmaterjali",
+          "text": "Ava kontol täpse esemega seotud kontrolliteave. Võrdle nähtavat värvi, silte, suuruse märgistust, kogust ja kaasasolevaid osi salvestatud tellimisandmetega. Otsi olemasolevatel fotodel ilmseid seisukorraprobleeme. Kui detail on peidus või udune, loe see lahendamata küsimuseks, mitte läbitud kontrolliks.\n\nOOPBuy Tabi kataloogipilt ei tõenda sinu laoeseme seisukorda. Sõltumatu kataloog kasutab CNBuyCha andmeid ning selle pilte pole kinnitatud tellimusepõhiste QC-fotodena. Hoia toodete leidmise pildid oma tellimuse tõendusmaterjalist eraldi.\n\nVaata korraga üht eset ja pane küsimus kirja siis, kui vastav pilt on avatud. Täpne märkus, näiteks „vasaku varruka õmblust pole näha”, aitab tegutseda rohkem kui „kvaliteet on kahtlane”. Eesmärk on eristada seda, mida saad kinnitada, sellest, mis vajab lisakontrolli."
+        },
+        {
+          "title": "Küsi mõõtmist, mis aitab otsustada",
+          "text": "Kui eseme allesjätmise määrab istuvus või mõõt, otsusta täpselt, millist mõõtmist vajad. Rõiva puhul võib see olla tasapinnal rinna laius või kindlate punktide vaheline pikkus. Hoiutarviku puhul võib oluline olla kasutatava siseava suurus, mitte välislaius.\n\nKontrolli enne taotlemist, milliseid lisakontrolle või mõõtmisteenuseid sinu tellimusele praegu pakutakse ja mis need maksavad. Ära eelda, et üldine kontroll sisaldab iga võimalikku mõõtu, toimivuskatset või materjali tõendamist. Küsi, kas ladu saab kirjeldatud konkreetse kontrolli teha.\n\nKasulik taotlus määrab eseme, mõõtmispunktid ja vajaliku tõendi. Näiteks palu näidata mõõdulinti ülemisest õlaõmblusest alumise ääreni, rõivas tasapinnal. Võrdle tulemust sarnase olemasoleva esemega sama meetodi järgi; erinev mõõtmisviis võib tekitada näilise lahknevuse."
+        },
+        {
+          "title": "Otsusta tagastamine enne paki kavandamist",
+          "text": "Kui kaup erineb tellimusest või sa ei soovi seda enam, vaata kohe kohaldatavaid tagastusreegleid. Selle tellimuse puhul tuleb kontrollida sobivust, tähtaega, müüja koostööd, eseme seisukorda ning võimalikke tagasiveokulusid. Lao hoiuaeg ei anna automaatselt sama pikka tagastusakent.\n\nJäta uurimise ajaks ese praegusesse olekusse. Pakendi, siltide või muude osade eemaldamise soov võib kohaldatavatest nõuetest sõltuvalt tagastusvõimalust mõjutada. Kui sa pole kindel, küsi klienditoelt enne muudatuste lubamist. Ära anna lahendamata probleemiga eset rahvusvahelisse saatmisse ainult ostukogumi lõpetamise pärast.\n\nSaada lühike taotlus tellimuse identifikaatori, täpse probleemi ja tõendusmaterjaliga. Ütle, millist tulemust soovid, näiteks tagastusvõimaluse hindamist või puuduva eseme kontrolli. Seejärel jälgi vastust ja enda järgmisi tegevusi, eeldamata, et taotluse saatmine ise tagastuse lõpetab."
+        },
+        {
+          "title": "Vali, millised esemed on koos saatmiseks valmis",
+          "text": "Ühendamine algab esemetest, mille oled otsustanud alles jätta. Võrdle nende valmisolekut, füüsilisi omadusi ja sobivust sinu sihtkohta praegu pakutavate tarneteenustega. Väike pehme rõivas ja habras vormi hoidev ese võivad vajada erinevat kaitset ka siis, kui mõlemad mahuvad ühte kasti.\n\nVaata, kas hilisema ostu ootamine on vanima laoeseme suhtes mõistlik. Väiksem teoreetiline kulu eseme kohta ei aita, kui viivitus tekitab hoiuprobleeme või ületab sinu tähtaega. Sea ostukogumisse toodete lisamise piir ning planeeri tegelikult valmis kauba järgi.\n\nKasuta olemasolevaid kaale ja mõõtmeid tarnehinnangu uuendamiseks. Küsi täpsustust, kui pole selge, kas näidatud kaal käib eseme, jaepakendi või valmis paki kohta. Otsus peab põhinema võrreldavatel sisenditel. Odavaim esialgne pakkumine ei pruugi olla pakitud saadetise lõplik hind."
+        },
+        {
+          "title": "Kirjuta pakkimisjuhised selgete eelistustega",
+          "text": "Määra, milline pakend peab säilima ja miks. Kui algne karp kuulub kingituse juurde või kaitseb õrna kuju, ütle seda. Kui kaalud tarbetu välispakendi eemaldamist, kinnita teenuse olemasolu ja mõista, millisest kaitsest võid loobuda. Väldi juhist, mis ütleb ainult „tee võimalikult väikeseks”.\n\nSeo iga juhis eseme identifikaatoriga. Mitmest kaubast koosnev kogum vajab piisavat täpsust, et ühe kingapaari kohta käivat soovi ei rakendataks kogemata kõigile. Kontrolli, kas valikulisel pakkimisel on lisatasu ja kas teenus muudab lõplikku kaalu või mõõtmeid.\n\nEnne esitamist vaata üle esemete nimekiri, tarneaadress, teenus, deklareerimisandmed ja praegu tasutavad summad. Esita tõene tooteteave ning järgi sihtkoha ja liini kehtivaid kuvatud nõudeid. Kui kaup laoetapist edasi liigub, on märkamata suuruse- või pakkimisvea parandamine palju keerulisem."
+        },
+        {
+          "title": "Lõpeta arvestus pärast laost saatmisse andmist",
+          "text": "Hoia paki viide koos sellesse pandud esemete kirjetega. Nii tekib selge seos toote tellimuse ja rahvusvahelise saadetise vahel. Salvesta lõplik esemeloend ning kinnitatud pakkimisvalikud, et saaksid paki saabumisel sisu kontrollida.\n\nKui mõni ese jääb maha, hoia selle hoiutähtaeg ja järgmine tegevus nähtaval. Ühe paki esitamine ei tähenda, et ülejäänud konto oleks lahendatud. Vaata pärast saadetise ettevalmistamist laonimekirja ja tuvasta kõik, mis ootab veel otsust, müüja vastust või eraldi pakki.\n\nLao töövoog on lõpetatud siis, kui igal esemel on teadlik tulemus: välja saadetud, ootab dokumenteeritud tegevust või liigub kinnitatud tagastusprotsessis. Tõendite lähemaks hindamiseks jätka QC-fotode juhendiga. Järgmise logistikasammu jaoks kasuta pakkimise ja jälgimise juhendeid, säilitades samad esemepõhised kirjed."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy hoiustamisreeglid",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuy kontrolliinfo",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-returns-refunds",
+      "tag": "Müügijärgne abi",
+      "title": "OOPBuy tagastused ja tagasimaksed: tingimused, tõendid ja järgmised sammud",
+      "description": "Vaata, mida kontrollida enne OOPBuy tagastuse taotlemist, kuidas probleemi dokumenteerida ning miks tagasimakse kinnitamine ja raha laekumine on eri etapid.",
+      "primaryKeyword": "OOPBuy tagastused ja tagasimaksed",
+      "secondaryKeywords": [
+        "OOPBuy tagasimakse",
+        "OOPBuy tagastustingimused",
+        "OOPBuy tagasisaatmine"
+      ],
+      "takeaways": [
+        "Vaata tagastustingimused üle kohe pärast lattu arvelevõttu; hoiuaeg ei ole tagastusaken.",
+        "Hoia alles sildid, pakend ja tellimuse tõendusmaterjal, kuni tagastust hinnatakse.",
+        "Küsi tegelikke tagastuskulusid ning erista kinnitatud tagasimakset laekunud rahast."
+      ],
+      "sections": [
+        {
+          "title": "Tuvasta etapp enne tagasimakse taotlemist",
+          "text": "OOPBuy tagasimakse küsimus võib puudutada mitut olukorda: müüja pole ostu veel välja saatnud, ese on juba laos, tagastatav kaup liigub müüjale tagasi või pakk on rahvusvaheliselt kohale jõudnud. Alusta täpse eseme ja selle praeguse etapi tuvastamisest. Järgmine tegevus sõltub juba toimunust.\n\nAva ametlik tellimuse kirje, märgi tellimuse identifikaator ja viimane olek ning selgita, kas soov puudutab tühistamist, vahetust, tagastamist või kättesaamisjärgset probleemi. Õige tegevuse küsimine vähendab riski, et üldsõnalisele sõnumile vastatakse teise küsimuse kohta.\n\nOOPBuy Tab on sõltumatu juhendi- ja avastamisleht ega saa tagastusi kinnitada või sinu kontole ligi pääseda. Esita taotlus OOPBuy ametliku tellimuse või müügijärgse abi kanali kaudu. Hoia vestlus võimalusel seotud mõjutatud tellimusega, et tõendid ja otsus püsiksid koos."
+        },
+        {
+          "title": "Kontrolli tähtaega ja tingimusi kohe",
+          "text": "Ametlik tagastuste ja tagasimaksete teade kirjeldab tingimuslikku viiepäevast ehk 120-tunnist taotlusakent pärast olekut Stocked in, arvestusega järgmisest tunnist pärast olekumuutust. See viitab ka seitsmele päevale pärast allkirjastatud vastuvõttu. Müüja peab tagastusi toetama ja kaup peab sobima uuesti müümiseks; tähtajast kinnipidamine ei muuda iga eset tagastatavaks.\n\nLoe kehtivat reeglistikku ja kontrolli oma tellimuse ajastust viivitamata. Ära oota lao hoiuperioodi lõppu. Hoiustamine ja tagastusõigus on eri asjad ning nende tähtajad tuleb tellimuse märkmetes eraldi registreerida.\n\nMõned kategooriad ja seisukorrad on välistatud, sealhulgas teatud eritellimustooted ning kaubad, mille vajalik pakend või sildid on eemaldatud. Kui tellimus ei vasta enam esitatud tingimustele, küsi, kas müüja on valmis soovi kaaluma, selle asemel et eeldada tavapärast õigust. Avaldatud teate järgi on müüja nõusolek endiselt vajalik."
+        },
+        {
+          "title": "Koonda tõendid ühe selge probleemi ümber",
+          "text": "Salvesta ostu kinnitavad tellimisandmed: tootelink, valitud suurus või värv, kogus ja asjakohane kirjeldus. Seejärel kogu tegeliku mure tõendid. Sildifoto võib toetada vale suuruse väidet; selge lähivõte ja laiem pilt võivad näidata plekki ning selle asukohta rõival.\n\nKirjelda erinevust täpselt. „Tellisin tumesinise, saabunud sildil on must” on kasulikum kui „ese on halb”. Kui mõõt on oluline, näita mõõtmisviisi ja võrdluspunkti. Ebamäärast ootust istuvusele on raskem hinnata kui dokumenteeritud lahknevust valitud omadusest.\n\nKasuta oma tellimusega seotud fotosid või kättesaadud esemest tehtud pilte. Tabeli või kataloogi avastamispildid ei tõenda sinu paki seisukorda. Võimalusel säilita originaalfailid ja väldi töötlust, mis peidab ümbritsevat konteksti, eseme identifikaatorit, silti või probleemi täielikku ulatust."
+        },
+        {
+          "title": "Erista teenustasu tagasiveost",
+          "text": "Ametlik teade vabastab kalendrikuu esimese tagastuse või vahetuse toimingu teenustasust. See vabastus ei luba tasuta postikulu. Järgmised isiklikul põhjusel esitatud soovid võivad sisaldada 5 RMB teenustasu ning lisanduda võivad kohalikud veokulud.\n\nKüsi enda taotlusele kulude kaupa pakkumist. Avaldatud teates kirjeldatakse algse müüjatarne tasu käsitlust erinevalt, mistõttu ei tohiks ühe eraldiseisva lause põhjal arvutada universaalset tagastushinda. Kinnita tagastatav kaubasumma, veokulud, võimalik teenustasu ja iga osa maksja.\n\nSeejärel võrdle netotulemust. Näitlik $18 kauba tagasimakse koos $7 kinnitatud tagastuskuluga jätaks alles $11 enne muid kohaldatavaid korrigeerimisi. Need on näitenumbrid, mitte OOPBuy hinnad. Tegeliku pakkumise läbivaatamine aitab otsustada, kas jätkata vabatahtlikku tagastust või jätta muidu sobiv ese alles."
+        },
+        {
+          "title": "Kirjuta taotlus, mille põhjal saab tegutseda",
+          "text": "Hoia esimene taotlus ülevaatamiseks piisavalt lühike, kaotamata olulisi detaile. Lisa tellimuse identifikaator, ese ja valitud variant, asjakohased kuupäevad, probleem ning soovitud tulemus. Lisa tugevaim tõendusmaterjal kümnete kõrvaliste ekraanipiltide asemel. Kui eri esemetel on eri probleemid, erista need selgelt.\n\nNäiteks selgita, et laos nähtav suurusesilt erineb tasutud tellimusest, nimeta mõlemad suurused ning küsi tagastusvõimaluse hinnangut või õiget asendust. Kui lihtsalt muutsid meelt, ütle seda ausalt. Ebatäpse defektipõhjuse valimine võib tõendite hindamist keerulisemaks muuta.\n\nKüsi järgmist tegevust, võimalikku tasutavat summat ja seda, kas ese peab jääma puutumata. Kui kinnitatud tagastustasu on vajalik, järgi konto juhiseid piisava saldo või makse kohta. Märgi vastus ja tähtaeg üles ning kontrolli edaspidi küsimusi, mis vajavad sinu vastust."
+        },
+        {
+          "title": "Jälgi tagastust protsessi, mitte ühe nupuna",
+          "text": "Esitatud taotlus, kinnitatud tagastus, teele saatmine tagasi müüjale, müüja vastuvõtt ja lõpetatud tagasimakse on eraldi verstapostid. Salvesta kinnitus, mis näitab toimunud etappi. Teade, et klienditugi sai sõnumi kätte, ei ole sama mis kinnitus, et müüja võttis kauba vastu.\n\nLaotagastuse hindamise ajal väldi eseme lisamist rahvusvahelisse pakki või selle seisukorda mõjutavate muudatuste lubamist. Hoia ese tuvastatavana ning säilita tagastamiseks vajalik pakend ja osad. Kui plaan muutub, kinnita praegune olek enne vastuolulise juhise andmist.\n\nVahetuse korral küsi, mis saab asenduse puudumisel ja kas lisandub veokulu. Kui asenduskaup saabub, kontrolli seda uue otsusena, eeldamata varasema probleemi automaatset lahenemist. Uuenda eseme arvestust, et mitte saata kogemata algset kaupa ega kaotada järge asenduse üle."
+        },
+        {
+          "title": "Erista tagasimakse kinnitust raha laekumisest",
+          "text": "Tagasimakse kinnitamisel märgi summa, valuuta, sihtkoht ja viide. Kontrolli, kas kirje tähendab OOPBuy saldo korrigeerimist või maksevahendile tagastamist. Need on erinevad tulemused ning kontokrediiti ei tohi segi ajada juba pangakontol kasutatava rahaga.\n\nAmetlik tagasimaksete teade kirjeldab pangakaardi arvelduse eeldatava ajana 7–15 päeva pärast kinnitamist, sõltuvalt pangast. Käsitle seda teate hinnanguna, mitte garantii või iga makseviisi universaalse ajakavaga. Küsi klienditoelt, milline etapp kehtib sinu konkreetsele tagasimaksele.\n\nKui oodatud aeg on möödas, esita jälje uurimiseks tagasimakse viide ja kinnitamise kuupäev. Võrdle algse makse ja tagasimakse valuutasid enne, kui pead erinevust veaks. Küsi seletust põhjendamata mahaarvamisele, selle asemel et mõelda tasu ise välja või eeldada kogu ostukulu tagastatavust."
+        },
+        {
+          "title": "Tegutse rahvusvahelise kättesaamise probleemidega kiiresti",
+          "text": "Rahvusvaheline tagastus on suurem otsus kui laost tagastamine. Ametliku reeglistiku järgi kannab klient Hiinasse tagastamise veokulu ja täiendavad tagastusega seotud tasud, kusjuures kohaldatavad tingimused peavad endiselt täidetud olema. Enne tagasi postitamist hangi kirjalikud juhised ja selge kuluhinnang.\n\nKui saabunud pakk on kahjustatud, puudulik või vale, säilita välispakend, saatesilt, esemete loend ja asjakohased fotod. OOPBuy kättesaamisjärgne teade sisaldab lühikesi teatamise ning tõendamise tähtaegu, seega võta ametliku toega kohe ühendust, mitte ära oota probleemi piisava tõsiduse üle arutledes.\n\nNäilise pakikaalu probleemi puhul küsib teade konkreetselt kaalumistõendit enne avamist. Üldiselt dokumenteeri saadu niipea kui võimalik ja järgi vedaja kättetoimetamisprotseduure. Ära viska pakendit ära ega proovi parandamist, kui tõendeid on veel vaja. Murest teatamine käivitab hindamise, kuid ei taga nõude rahuldamist."
+        },
+        {
+          "title": "Väldi järgmise tellimuse ennetatavaid tagastusi",
+          "text": "Suurem osa tagastuseks valmistumisest toimub enne selle vajadust. Kontrolli tegelikku varianti, võrdle asjakohaseid mõõtmeid, hinda rahvusvahelist tarnet ja säilita algne pakkumise teave enne maksmist. Need sammud vähendavad vale valiku või eelarvet ületava tarne tõttu tekkinud probleeme.\n\nLaos vaata enda kontrollitõendid kiiresti üle ning küsi vajalikud mõõtmised ajal, mil saad veel otsustada. Kui kahtled esemes, lükka pakendi eemaldamine ja paki esitamine edasi kuni küsimuse lahendamiseni. Selge allesjätmise või tagastamise otsus on väärtuslikum kui laos ootav lõpetamata ostukogum.\n\nLõplik kirje peaks näitama tulemust: ese jäetud alles, asendus vastu võetud, tagastus lõpetatud või tagasimakse ettenähtud kohta laekunud. Kui midagi on lahtine, pane kirja järgmine tegevus ja selle tegija. Kasuta lao- ja QC-juhendeid, et lisada need kontrollpunktid tulevastesse ostudesse algusest peale."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy tellimuse ja paki olekute juhend",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy juhised kättesaamisjärgsete probleemide korral",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-warehouse-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-price-check"
+      ]
+    },
+    {
+      "slug": "oopbuy-tracking-guide",
+      "tag": "Kättetoimetamine",
+      "title": "OOPBuy jälgimisjuhend: loe tellimuse ja paki uuendusi õigesti",
+      "description": "Mõista OOPBuy tellimuse jälgimist, erista müüja tarnet rahvusvahelisest veost ning tea, milliseid tõendeid koguda, kui pakk vajab abi.",
+      "primaryKeyword": "OOPBuy jälgimisjuhend",
+      "secondaryKeywords": [
+        "OOPBuy jälgimine",
+        "OOPBuy tellimuse olek",
+        "OOPBuy paki jälgimine"
+      ],
+      "takeaways": [
+        "Kontrolli, kas vaatad ostutellimust või rahvusvahelist pakki.",
+        "Järgi täpset pakiviidet ja vedaja sündmusi, eeldamata kõigi olekute sama tähendust.",
+        "Uurimisvajaduse korral saada lühike ajajoon ja viimane kinnitatud sündmus."
+      ],
+      "sections": [
+        {
+          "title": "Tuvasta kõigepealt, millist teekonda jälgid",
+          "text": "OOPBuy ostmisel on kaks tarneetappi: müüja saadab kauba Hiina lattu ja seejärel liigub esitatud rahvusvaheline pakk sinu sihtkoha poole. Olek, mille järgi tellimus on välja saadetud, võib seega kirjeldada müüja lähetust, mitte juba sinu kodu poole liikuvat pakki.\n\nAmetlik olekujuhend eristab ostutellimusi ja pakitellimusi. Sõna Shipped tähendab ostu töövoos müüja väljasaatmist ning paki töövoos vedajale üleandmist. Kontrolli enne sõna tõlgendamist alati lehe konteksti ja identifikaatorit. See üks eristus lahendab paljud näiliselt vastuolulised jälgimisuuendused.\n\nKüsi konkreetselt: kas ootan toote lattu jõudmist, lao paki ettevalmistust või vedaja kohaletoimetamist? Kirjuta vastus sobiva viite juurde. Nii uurid õiget etappi, mitte ei otsi rahvusvahelise jälgimise lehelt kohalikku ostu, millest pole veel rahvusvahelist pakki saanud."
+        },
+        {
+          "title": "Hoia õiged identifikaatorid koos",
+          "text": "Loo kirje, mis seob ostutellimuse seda hiljem sisaldava pakiga. Salvesta tellimuse identifikaator, olemasolev müüjatarne viide, rahvusvahelise paki või saatelehe number, valitud teenus ning väljasaatmise kuupäev. Mitme ühendatud tellimuse puhul loetle need paki all, et hiljem sisu kontrollida.\n\nAmetlik algaja juhend suunab saadetise jälgimiseks jaotistesse My Waybill ja Waybill Details. Kasuta konto praegust navigeerimist ning just sinu pakile lisatud andmeid. Ilma identifikaatorita ekraanipilti on keeruline tõlgendada, kui korraga on liikumas mitu saadetist.\n\nKopeeri jälgimisnumbrid hoolikalt ja säilita kõrval näidatud vedajanimi. Ära eelda, et ühe vaate pakinumber asendab kõiki vedajaviiteid. Kui üleandmisel tekib täiendav jälgimisnumber, lisa see olemasolevasse kirjesse, mitte eraldi märkmesse, mis kaotab seose algse tellimusega."
+        },
+        {
+          "title": "Loe lao olekuid tegevussammudena",
+          "text": "Müüja tarnekinnitus võib eelneda laokontrollile ja hoiustamisele. Ametlik tellimuse olekujuhend eristab allkirjastatud vastuvõttu hilisematest kontrolli- ja hoiustamissammudest. Saabumisskanne ei tähenda seetõttu tingimata, et ese on juba rahvusvahelisse pakki ühendamiseks valmis.\n\nOtsi kontolt sõnumeid, mis nõuavad tegevust. Lisamakse või kinnituse küsimine võib ostu edenemise peatada kuni sinu vastuseni. Vaata tegelikku soovi ja selle selgitust, selle asemel et pidada iga muutumatut olekut veoviivituseks. Kui sa nõutud sammu ei mõista, küsi just selle tellimuse kohta.\n\nKasuta laoetappi eseme enda ülevaatamiseks. Kinnita enne esitamist variant, olemasolevad kontrollifotod ja kõik lahtised mured. Jälgimise edenemine ei kinnita istuvust, toimivust ega autentsust. Toode võib logistikaprotsessis õigesti liikuda, vajades sinult ikkagi eraldi ostuotsust."
+        },
+        {
+          "title": "Erista paki ettevalmistust vedaja liikumisest",
+          "text": "Pärast rahvusvahelise paki esitamist võib enne veo algust olla vaja teha veel mitu laotoimingut. Maksmine, ülevaatus, sortimine, pakkimine ja järeletulek ei ole samad sündmused. Ametlik juhend eristab pakkimise lõpetamist vedaja vastuvõtust, selgitades, miks ettevalmistus on nähtav enne transpordiskannet.\n\nLoe viimast sündmust ja selle ajatemplit. Jälgimisviite olemasolu üksi ei kinnita, et sõiduk või lennuk oleks väljunud. Võta konkreetset sündmuse kirjeldust teadaoleva tõendina ning väldi lünga täitmist oletatud asukohaga.\n\nKui kontol on makse- või aadressiprobleem, lahenda see kõigepealt ametlikus kanalis. Kui ettevalmistus on lõpetatud, aga vedaja vastuvõttu ei saa tuvastada, küsi üleandmise toimumise kohta. Sellele saab vastata palju täpsemalt kui küsimusele „miks pakk hilineb”, kui etappi pole määratud."
+        },
+        {
+          "title": "Tõlgenda jälgimislünka ajakava välja mõtlemata",
+          "text": "Vedaja uuendused salvestavad sündmusi, mitte pidevat reaalajas asukohta. Aeg ilma uue skanneta ei ütle täpselt, kus pakk asub või miks uut infot pole. Võrdle viimast kinnitatud sündmust konkreetse liini teenuseteabega enne järelduse tegemist.\n\nPole üht usaldusväärset päevade arvu, mille järel iga OOPBuy pakk oleks hilinenud. Lähtekoha käitlus, valitud marsruut, sihtkoha menetlus, pühad ja kohalikud tarneolud varieeruvad. Kasuta saadetise kehtivat hinnangut ning tingimusi, mõistes, et hinnang ei ole garanteeritud saabumiskuupäev.\n\nHoia lühikest ajajoont selle asemel, et mitut lehte pidevalt värskendada. Märgi lähetuskirje, viimane vedajasündmus, kontrollimise kuupäev ja asjakohane marsruudi teenuseteade. Kui lünk ületab selle teenuse juhiseid või lubatud järelvastus jääb tulemata, on sihipäraseks klienditoe päringuks faktid valmis."
+        },
+        {
+          "title": "Vasta tolli- või dokumendipäringutele hoolikalt",
+          "text": "Kui jälgimine mainib tolli või dokumendipäringut, loe täpset sõnumit ja tuvasta teabe küsija. Kasuta ametliku konto kontaktiteed või tuvastatud vedaja ametlikku teenust. Ära tegutse ootamatu makselingi järgi ainult sellepärast, et ootad parasjagu pakki.\n\nKogu ostu selgitavad ehtsad tellimisdokumendid: esemete kirjeldused, kogused, maksekviitungid ja asjakohane pakiviide. Esita nõuetekohases menetluses vajalik teave täpselt. Ära muuda kirjeldust või väärtust soovitud tulemuse saavutamiseks ning ära eelda, et tootenimekirja hind on arve.\n\nKui jälgimise sõnastus on ebaselge, küsi toelt, milline tegevus tegelikult vajalik on. Üldine tollisündmus ei tõesta tasukohustust, paki konfiskeerimist ega võimatut kohaletoimetamist. Need on eraldi järeldused, mis vajavad tõendeid. Säilita saadetud vastuste koopiad ja saatmise kuupäevad."
+        },
+        {
+          "title": "Jälgi üleandmist kohalikule tarnijale",
+          "text": "Rahvusvahelise saadetise kohalikku tarneetappi jõudmisel kontrolli, kas pakiandmed nimetavad sihtkoha vedaja või lisaviite. Võimalusel järgi kinnitatud saadetisekirjes antud linki. Säilita ka algne viide, sest tugi võib vajada seda kohaliku sündmuse ühendamiseks rahvusvahelise saadetisega.\n\nVaata pakile märgitud aadress üle koos korteri või üksuse andmete ja sihtnumbriga. Tarnekatse või väljastusteate ilmumisel loe tegeliku vedaja esitatud võimalusi ning tähtaega. Ära eelda, et kordustarne, ümbersuunamine või hoiuaeg on kõigis riikides ja teenustes sama.\n\nKui vedaja vajab aadressitäpsustust, vasta tema kinnitatud protsessis ja teavita vajadusel OOPBuyd. Pane muudatus või järeletuleku kokkulepe kirja. Praktiline lõpliku üleandmise plaan on sama tähtis kui pika rahvusvahelise teekonna jälgimine, eriti siis, kui kedagi pole pakki vastu võtmas."
+        },
+        {
+          "title": "Tea, mida teha ebaõige tarne korral",
+          "text": "Kui jälgimine näitab kohaletoimetamist, aga pakki ei leia, otsi sündmuse andmetest tarnefotot, vastuvõtupunkti, pakiautomaati või muud nimetatud kohta. Kinnita saadetise aadress ja võta sihtkoha vedajaga ametlikus kanalis ühendust. Küsi tarnekirjet, mitte ära eelda kindlat põhjust.\n\nTeavita OOPBuyd probleemist pakitunnuse ja vedaja vastusega. Kui pakk on olemas, kuid kahjustatud või puudulik, säilita silt, pakend, esemete loend ja fotod. Ametlikes kättesaamisjärgsetes juhistes on lühikesed tähtajad, seega teata kiiresti ja järgi oma olukorra tõendamisjuhiseid.\n\nHoia kohaletoimetamise ja eseme tõendid lahus. Vedaja skanne võib näidata, kuhu pakk jäeti, kuid ei tõesta selles olnud üksiktooteid. Mõlema tasandi selged kirjed aitavad asjaosalistel probleemi hinnata ilma spekulatsioonide ja kõrvaliste tootepiltideta."
+        },
+        {
+          "title": "Saada klienditoele uuritav ajajoon",
+          "text": "Kasulik jälgimispäring määrab paki, teenuse, sihtriigi, lähetuskuupäeva, viimase kinnitatud sündmuse ja küsimuse, millele vastust vajad. Lisa vedajalt juba saadud päring ning märgi, kas oled sellele vastanud. Väldi täieliku aadressi ja isiklike identifikaatorite postitamist avalikesse arutelurühmadesse.\n\nNäiteks selgita, et konto näitab vedaja vastuvõttu, nimeta viimase sündmuse kuupäev ja küsi, kas valitud teenuse alusel saab vedaja uurimise algatada. Kui sulle lubati uuendust, lisa viide ja lubatud kuupäev. Küsi, mida peaksid järgmiseks tegema ja millal uuesti ühendust võtma.\n\nHoia uut teavet samas kirjes kuni kohaletoimetamise või dokumenteeritud lahenduseni. Jälgimine on kõige kasulikum otsuse toena: vasta päringule, tule pakile järele, säilita tõendeid või küsi uurimist. Tulevase saadetise kavandamisel naase enne marsruudi valimist tarne- ja pakkimisjuhendite juurde."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy tellimuse ja paki olekute juhend",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy tarneteade",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy juhised kättesaamisjärgsete probleemide korral",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-haul-packing",
+      "tag": "Pakkimine",
+      "title": "OOPBuy ostukogumi pakkimine: kaitse kaupa ja kontrolli lõppkulu",
+      "description": "Kavanda OOPBuy ostukogum praktiliste pakkimisvalikute, marsruudikontrolli ja proovipakkimise juhistega enne rahvusvahelise veo tellimist.",
+      "primaryKeyword": "OOPBuy ostukogumi pakkimine",
+      "secondaryKeywords": [
+        "OOPBuy proovipakkimine",
+        "OOPBuy pakendamine",
+        "OOPBuy ostukogumi saatmine"
+      ],
+      "takeaways": [
+        "Vali pakend kaitstava kauba ja seda vedada lubava marsruudi järgi.",
+        "Karpide eemaldamine ja kokkusurumine on kompromissid, mitte automaatne sääst ega üldsoovitus.",
+        "Proovipakkimise tulemus eeldab marsruudi ning pakkimisvalikute muutumatuna hoidmist."
+      ],
+      "sections": [
+        {
+          "title": "Sea ostukogumile selge pakkimiseesmärk",
+          "text": "Hea OOPBuy pakkimisplaan tasakaalustab kaitset, pakisuurust, kulu ja seisukorda, milles soovid esemed kätte saada. Need eesmärgid võivad omavahel vastuollu minna. Jaekarbi säilitamine võib hoida esitlust, kuid võtta rohkem ruumi; eemaldamine võib mahtu vähendada, jättes toote teistsugust kaitset vajama.\n\nAlusta sellest, mis on iga eseme puhul oluline. Kingitus võib vajada algset karpi. Kindla kujuga kott võib vajada vormi toetust. Pestaval pehmel rõival on teistsugune pakkimisvajadus kui hapral tarvikul. Ära rakenda kogu ostukogumile üht üldjuhist sellepärast, et kellegi teise ostude videos see toimis.\n\nEesmärk on sobiv, selgelt kirjeldatud pakk, mille kulust saad aru. Kõige väiksem kast ei ole automaatselt parim tulemus ning kõikide lisakaitsete ostmine võib samuti olla tarbetu. Iga valik peaks vastama konkreetsele küsimusele eseme, selle kasutuse või veonõuete kohta."
+        },
+        {
+          "title": "Lisa ainult kaubad, mille jätad alles",
+          "text": "Lõpeta tooteotsus enne pakkimisotsust. Vaata valitud variant ja oma lao kontrollitõendid üle ning lahenda suuruse, koguse või nähtava seisukorra küsimused. Kui vajad lisamõõtmist, küsi seda enne eseme rahvusvahelisse saadetisse andmist.\n\nPakendimuudatusi kaaludes pea silmas tagastuskõlblikkust. Nõutud siltide, plommide, tarvikute või pakendi eemaldamine võib mõjutada vastavust tagastustingimustele. Küsi lahendamata eseme kohta kõigepealt nõu. Ruumi säästmiseks pakkimine on halb vahetus, kui alles otsustad, kas kaup tagastada.\n\nKoosta lõplik sisuloend, kus iga eseme kõrval on tellimusviide. Märgi lattu jääv kaup ning sea uute ostude lisamise piir. See väldib lõputult kasvavat ostukogumit ja annab püsiva kaubavaliku marsruutide võrdlemiseks, pakkimisteenuste taotlemiseks ning valmis paki kontrollimiseks."
+        },
+        {
+          "title": "Mõista nii kaalu kui ka mõõtmete tähtsust",
+          "text": "Pakil on lisaks kaalule ka füüsiline ruumivajadus. Tarneteenused võivad kasutada eri hinnastamisreegleid, seega loe tegeliku marsruudi tingimust. Ära võta mahukaalu jagajat teisest agendist, vedajast või foorumist ja eelda, et see määrab sinu pakkumise.\n\nOOPBuy ametliku algaja juhendi järgi sõltub lõplik tarnehind mõõdetud paki mõõtmetest ning kaalust. Varane hinnang peab seetõttu jääma esialgseks, kuni vastavad pakitud mõõdud on teada. Lahtiste toodete kaal ei pruugi võrduda neid ning kaitsematerjali sisaldava kasti kaaluga.\n\nNäiteks kerge ese jäigas mahukas pakendis võib sõltuda pakisuurusest rohkem kui kompaktne tihe ese. See selgitab pakkimisvalikute tähtsust, kuid ei ennusta kindlat säästu. Võrdle sobiva ülesehituse tegelikke pakkumisi ja hoia numbri kõrval teenusereeglit, et teaksid, mida võrdled."
+        },
+        {
+          "title": "Vali kaitse toote, mitte foto järgi",
+          "text": "OOPBuy ametlik pakkimisteade kirjeldab muu hulgas kaste, lihtpakendit, vaakumkotte, mullikaitset ja venivat kilet. Saadavus sõltub teenusest ning pakist. Käsitle menüüd hinnatavate võimalustena, mitte uuenduste nimekirjana, mida iga saadetis vajab.\n\nMõtle, millist kahjustust püüad vältida. Pehme kott rõiva ümber lahendab teise probleemi kui habrast eset ümbritsev pehmendus. Kast üksi ei ütle, kuidas kaup selle sees toetatud on, ning mitu kihti ümbrist ei asenda selget juhist haavatava osa kaitseks.\n\nKui materjal või ehitus on ebaselge, küsi olemasoleva teenuse sobivust. Kokkusurumine ei pruugi sobida esemetele, mis peavad kuju hoidma või sisaldavad õrnu detaile. Ära otsusta pakkimisviisi ainult kataloogi pisipildi järgi, sest see ei pruugi näidata tegeliku kauba jäikust, haprust või mahukust."
+        },
+        {
+          "title": "Otsusta selgelt kinga- ja jaekarpide saatus",
+          "text": "Kui soovid kingakarbi või muu jaepakendi säilitamist, ütle seda vastava eseme juures. Kui kaalud eemaldamist või voltimist, kontrolli võimaluse olemasolu ja mõista, mis jääb toodet ümbritsema. Algpakend võib olla kasulik esitlemiseks, hoidmiseks või kaitseks ka siis, kui sa midagi edasi müüa ei kavatse.\n\nVõrdle oodatud kasu tagajärjega. Karbi eemaldamine võib vähendada mahtu, aga ka eemaldada toe või eraldada osad, mis peaksid koos püsima. Asendav väliskast võib ikkagi vajalik olla. Pole universaalset reeglit, et karbi eemaldamine teeb kõikide pakkimisvalikute järel iga saadetise odavamaks.\n\nSegasaadetise puhul pane otsus kirja esemeti: säilita kinkekarp, eemalda ainult üleliigne tarnekast või küsi enne konkreetse pakendi muutmist. Väldi ebaselget juhist „eemalda kõik karbid”, kui mõtled tegelikult ainult üht äravisatavat väliskihti."
+        },
+        {
+          "title": "Kontrolli marsruudi sobivust enne kõige ühendamist",
+          "text": "Toote olemasolu kataloogis ei tõenda, et seda saab saata sinu eelistatud teenusega. OOPBuy pakkimisjuhend märgib akudega seotud marsruudipiiranguid ning eraldi saatmise teade kirjeldab ülemõõduliste esemete eraldi pakkimise juhtumeid. Järgi oma tegeliku kauba kehtivaid laomärgiseid ja marsruuditingimusi.\n\nVaata kogu sisuloend olemasoleva teenuse suhtes üle. Kui üks ese muudab sobivust, võrdle ühendatud pakki eraldi saadetisega tegelike pakkumiste ja sama vajaliku kaitse abil. Ära eelda, et ühendamine alati võidab, sest lisapakid ja erinevad marsruudid võivad arvutust vastassuundades muuta.\n\nKirjelda tooteid täpselt ja kontrolli ebakindlaid kategooriaid enne ostmist. Pakkimine ei muuda keelatud kaupa lubatuks ega möödu sihtkoha nõuetest. Kui teenus eset ei vea, küsi seaduslikku sobivat võimalust või asjakohast järgmist sammu ajal, mil kaup on veel laos."
+        },
+        {
+          "title": "Kasuta proovipakkimist tegeliku ebakindluse lahendamiseks",
+          "text": "Ametlik proovipakkimise juhend kirjeldab sobivate lao alamtellimuste valimist ning taotluse esitamist koos saaja- ja pakkimisandmetega. Avaldatud teenustasu on 20 CNY. Kontrolli enne maksmist praegust konto töövoogu ja tasu, eriti kui sinu valikud erinevad juhendist.\n\nProovipakkimine on kasulik siis, kui pakitud mõõt võib tarneotsust muuta. Otsusta kõigepealt soovitud pakkimisviis. Ametlik teade seob saadud tarnearvutuse marsruudi, pakkimismeetodi ja üksikasjade muutumatusega; hilisemad muudatused võivad mõõdetud tulemust ning lõplikku tasu muuta.\n\nVaata tühistamistingimused üle enne esitamist. Teade lubab tühistada enne kauba riiulilt võtmist ja kirjeldab hilisemaid piiranguid, seega ära eelda tasu tagastatavust pärast töö algust. Kui praegune olek pole selge, küsi täpsustust. Proovipakkimine on tasuline ettevalmistusotsus, mitte tarnekiiruse garantii ega kogu veoebakindluse kõrvaldamine."
+        },
+        {
+          "title": "Kirjuta juhised, mida teine inimene saab järgida",
+          "text": "Kasuta lühikesi esemepõhiseid juhiseid selge prioriteediga. Tuvasta toode tellimusviite abil, ütle, mida säilitada või eemaldada, ja selgita kaitsevajadust. Kui juhis sõltub teostatavusest, palu laol seda kinnitada, mitte ära jäta töötajat kahe vastuolulise eesmärgi vahel arvama.\n\nNäiteks palu säilitada märgitud kinkekarp, hoida selle sisu koos ning kinnitada sobiv väline kaitse. Teise eseme puhul võid küsida, kas liigse müüjapakendi eemaldamine on võimalik vajalikku tootepakendit muutmata. Need on kontrollimiseks esitatud soovid, mitte eeldused, et mingi teenus on juba hinna sees.\n\nVõrdle liideses valitud võimalusi oma kirjaliku märkusega. Karbi säilitamise märkus võib minna vastuollu mujal valitud eemaldamisega. Kontrolli enne esitamist lisatasu ja salvesta kinnitatud valikud. Selged juhised vähendavad ebakindlust paremini kui pikk lõik, milles segunevad eelistused, naljad ning mitu erinevat pakiplaani."
+        },
+        {
+          "title": "Vaata valmis pakk üle ja kavanda vastuvõtt",
+          "text": "Enne lõplikku tarneotsust võrdle sisuloendit, saajaandmeid, valitud marsruuti, pakkimisviisi, mõõtmeid ning tasutavat summat. Kinnita tegelikult rakendatud soodustus ja kontrolli uuesti kogueelarvet. Avastamislehtedel dollarites näidatud tootehinnad on hinnangud ega sisalda kogu ostukogumi kättesaamise kulu.\n\nHoia pakiviidet koos esemete viidete ja pakkimiskinnitustega. Saadetise saabumisel saad kontrollida kõigi oodatud osade olemasolu ning nõutud jaepakendi säilimist. Probleemi korral säilita tarne tõendusmaterjal kiiresti, mitte ära viska välismaterjale kohe ära.\n\nEdukas pakkimisplaan lõpeb vastuvõetavas seisukorras saabunud kaubaga kulul, mille teadlikult heaks kiitsid. Väljasaatmisjärgseks teekonnaks kasuta jälgimisjuhendit ning enne saatmist leitud probleemi korral tagastusjuhendit. Märgi järgmise ostukogumi jaoks üles kasulikuks osutunud pakkimisvalikud, et järgmine otsus algaks tõenditest."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy pakkimisjuhend",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy proovipakkimise juhised",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        },
+        {
+          "label": "OOPBuy eraldi saatmise juhend",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        },
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-returns-refunds"
+      ]
+    }
+  ],
+  "guides": {
+    "guide": {
+      "sections": [
+        {
+          "title": "Alusta selgest valikust",
+          "text": "Vali tootekategooria ning võrdle mõnda sobivat pakkumist. Pane kirja toote nimi, algne link, valitud värv, suurus ja kogus. Kataloogihind on kasulik lähtepunkt; kontrolli kehtivat varianti ja summat, kui avad toote OOPBuy kaudu. Säilita eseme juures küsimused mõõtude, materjalide või kaasasolevate tarvikute kohta. Väikese valiku puhul on lihtsam märgata, kui kaks sarnast pilti tähistavad tegelikult erinevaid versioone või müüja valikuid."
+        },
+        {
+          "title": "Vaata tellimus enne maksmist üle",
+          "text": "OOPBuy algaja juhend kirjeldab ostmist platvormi kaudu ja kauba saabumist selle Hiina lattu. Kõigepealt tasutakse toote ning Hiina-sisese tarne eest; rahvusvahelise paki saatmise eest makstakse hiljem eraldi. Enne tellimist vaata avanenud tootelehte ja võrdle valikuid oma märkmetega. Kontrolli selle eseme juures näidatud summat ja tingimusi. Selgita ebaselge suurus, kogus või tootepiirang enne maksmist. Salvesta tellimuse viide, et hiljem laoandmed õige ostuga kokku viia."
+        },
+        {
+          "title": "Kontrolli eset, kui laoandmed ilmuvad",
+          "text": "Müüja väljasaatmine ja lao töötlemine on erinevad etapid. Kui tellimuse juurde tekivad laoandmed, loe kehtivat olekut ja vaata olemasolevaid fotosid. Võrdle saabunud värvi, suurusesilti, kogust ja nähtavat seisukorda tellitud variandiga. Kui oluline detail ei ole näha, küsi lisafoto või mõõtmise saadavust ja hinda. Probleemi korral kontrolli kiiresti kehtivaid müügijärgse teeninduse võimalusi, sest sobivus sõltub esemest ning selle asjaoludest."
+        },
+        {
+          "title": "Otsusta paki saatmine viimasena",
+          "text": "Enne paki esitamist vaata üle iga kaasatud ese, tarneaadress, valitud veoliin ja selle tingimused. Kasuta ametlikku tarnehinnangut sobivate võimaluste uurimiseks, seejärel kontrolli tegeliku paki juures näidatud teavet. Pakkimine, mõõdetud mõõtmed ja sisu võivad valikuid mõjutada. Hoia tellimuse ning paki viited koos ja kasuta toe ning jälgimise jaoks ametlikku kontot. Meie põhjalikud juhendid selgitavad selle teekonna jooksul vajalikke suuruse, QC, kulude ja pakkimise otsuseid."
+        }
+      ],
+      "checks": [
+        "Võrdle avanenud toodet, varianti ja kogust algse pakkumisega.",
+        "Vaata lao tõendid ning võimalikud müügijärgsed toimingud kiiresti üle.",
+        "Kontrolli enne esitamist aadressi, paki sisu ja veoliini tingimusi."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy algaja juhend",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy tarnehinnang",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ]
+    },
+    "qc": {
+      "sections": [
+        {
+          "title": "Tuvasta, milliseid fotosid sa vaatad",
+          "text": "Alusta piltide päritolust. Kataloogi- või müüjafoto näitab pakkumist; sinu enda tellimusega seotud kontrollipildid käsitlevad selle tellimuse jaoks saabunud eset. Enne otsustamist vii kokku tellimuse viide ja valitud variant. Sellel saidil kuvatud pildid pärinevad kataloogist ning on märgitud tootefotodeks. Kui soovid hinnata enda saabunud kaupa, kasuta ametlikul OOPBuy kontol olevaid tõendeid."
+        },
+        {
+          "title": "Kontrolli vastavust, kogust ja nähtavat seisukorda",
+          "text": "Vaata tellitud värvi, suurust, versiooni ja kogust koos olemasolevate piltidega. Kõigepealt vaata tervet eset, seejärel sellele tootele olulisi piirkondi. Jalatsitel võrdle mõlemat kinga ja nähtavaid suurusesilte. Rõivastel vaata lõiget, õmblusi ja trükidetaile. Kottidel ning tarvikutel kontrolli kinnitusi, rihmu ja kaasasolevaid osi. Pane kirja täpne erinevus ning seda näitav foto, selle asemel et piirduda üldise tundega, et midagi paistab valesti."
+        },
+        {
+          "title": "Esita küsimus, millele lisapilt saab vastata",
+          "text": "Kasulik päring määratleb ühe otsuse ja selle tegemiseks vajaliku tõendi. Võid paluda loetavat silti, varjatud kinnituse vaadet või mõõtu, mille puhul mõõdulindi otsad on näha. Kinnita teenuse saadavus ning vaata enne jätkamist kuvatud tasu. Fotodel on piirid: valgus mõjutab värvi, perspektiiv moonutab proportsioone ning pilt ei tõenda sisemist toimivust, pikaajalist vastupidavust ega materjali koostist. Jäta lahendamata küsimused lahtiseks, mitte ära arva vastust."
+        },
+        {
+          "title": "Lahenda mured enne paki esitamist",
+          "text": "Võrdle nähtavat pakkumisega ja otsusta, kas jätkata, küsida selgitust või pöörduda müügijärgse teeninduse poole. Säilita valitud variant, asjakohased pildid ning probleemi lühikirjeldus. OOPBuy avaldab kontrolli- ja tagastusinfot; enne kindla tulemuse eeldamist vaata kehtivat poliitikat ja sinu tellimusele kuvatud võimalusi. Täielik QC-artikkel annab kategooriapõhise kontrollnimekirja, suuruse- ja tagastusjuhendid selgitavad aga, millal lisamõõt või kiire pöördumine otsust muuta võib."
+        }
+      ],
+      "checks": [
+        "Kasuta õige tellimuse ja valitud variandi kontrollitõendeid.",
+        "Palu konkreetse lahendamata küsimuse jaoks selget vaadet või mõõtu.",
+        "Pane nähtavad probleemid kirja ja kontrolli enne saatmist müügijärgseid võimalusi."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy kontrolliinfo",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy kohandatud logistikateenused",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy tagastused ja tagasimaksed",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    "shipping": {
+      "sections": [
+        {
+          "title": "Valmista hinnangu lähteandmed ette",
+          "text": "Alusta sihtkohast ja toodetest, mida kavatsed saata. Kogu teadaolev kaal ja mõõtmed ning tuvasta sisu, mis vajab erilist käsitlust või veoliini kontrolli. Sisesta asjakohased andmed OOPBuy ametlikku tarnekalkulaatorisse ja vaata pakutavaid liine. Enne laomõõtmisi on sisendid eeldused. Hoia need eeldused nähtaval, et saaksid need hiljem tegelike andmetega asendada. Kasulik hinnang kirjeldab kaalutavat pakki, mitte ei käsitle üht kuvatud hinda universaalsena."
+        },
+        {
+          "title": "Loe veoliini tingimusi koos hinnaga",
+          "text": "Võrdle sobivaid veoliine samade pakiandmetega. Vaata platvormi näidatud arvestusmeetodit, lubatud sisu, mõõdupiiranguid ja muid tingimusi. Tegelik kaal kirjeldab massi; mahupõhine arvestus kasutab paki hõivatud ruumi vastavalt veoliini reeglile. Suurem kast võib seetõttu võrdlust muuta ka siis, kui esemed jäävad samaks. Kasuta valitud liini juures näidatud tegurit ja ümardamisviisi ning ära võta valemit seosetu vedaja või hinnangu juurest."
+        },
+        {
+          "title": "Vaata üle kogu eelarve ja pakkimine",
+          "text": "Hoia rahvusvahelise veo hinnangut koos teiste tellimusega seotud summadega. Tootehind, müüjalt lattu vedu, valitud teenused ning võimalikud makse- või sihtkohatasud võivad ilmuda eri etappides. Kontrolli iga summat seal, kus see tegelikult esitatakse. Pakkimisel tuleb tasakaalustada kaitset ja suurust: haprad või kergesti muljutavad kaubad võivad vajada teistsugust lahendust kui pehmed rõivad. Küsi teenuste saadavust ning võrdle kavandatud pakki enne, kui eeldad pakendi eemaldamisest või ühendamisest säästu."
+        },
+        {
+          "title": "Kontrolli tegelikku pakki enne saatmist uuesti",
+          "text": "Kui pakitud mõõtmed ja kehtivad tarnevalikud on teada, korda võrdlust nende andmetega. Kinnita saaja andmed, sisu, veoliini tingimused ja esitamisel küsitud summa. Käsitle tarnehinnanguid planeerimisinfona ning jäta aega tellimuse ja paki kirjetes näidatud etappidele. Salvesta paki viide ja jälgi selle uuendusi ametlikul kontol. Põhjalikud tarne-, kogukulu-, pakkimis- ja jälgimisjuhendid selgitavad selle viimase kontrolli taga olevaid otsuseid."
+        }
+      ],
+      "checks": [
+        "Võrdle liine sama sihtkoha, sisu, kaalu ja mõõtmetega.",
+        "Kasuta valitud liini juures kuvatud arvestusreeglit ja piiranguid.",
+        "Arvuta tegelike pakiandmetega uuesti enne saatmise kinnitamist."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy tarnehinnang",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy tarneteade",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy esmaostu selgitus",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
         }
       ]
     }
-  ]
+  },
+  "categoryIntros": {
+    "shoes": {
+      "title": "OOPBuy jalatsite tootenimekiri",
+      "intro": "Uuri jalatseid mudeli, kasutuse ja istuvuse jaoks oluliste detailide järgi. Võrdle täpset müüja varianti, enne kui usaldad tuttavat suurusesilti. Tootefotod aitavad paari valikusse võtta; järgmise otsuse aluseks on müüja mõõdud ja sinu saabunud tellimuse tõendid. Kaasa kontrolli nii vasak kui ka parem jalats.",
+      "checks": [
+        "Võrdle müüja suurusinfot sobiva paariga, mida juba kannad.",
+        "Kontrolli mudelit, värvi, suurusesilti ja mõlemat jalatsit, kui tellimuse fotod on olemas.",
+        "Arvesta paari ja karbi jaoks vajaliku kaitse ning pakiruumiga."
+      ]
+    },
+    "hoodies-sweaters": {
+      "title": "OOPBuy pusad ja kampsunid",
+      "intro": "Sirvi pusasid ja kampsuneid, lähtudes soovitud istuvusest. Rinna laius, rõiva pikkus ja õlgade kuju annavad kasulikuma võrdluse kui üks suurusetäht. Võrdle iga müüja mõõte enda mugava rõivaga ning kontrolli valitud värvi ja versiooni. Pildid näitavad välimust; kanga koostis ja kaal vajavad usaldusväärset tooteinfot või kinnitust.",
+      "checks": [
+        "Pane võrdlemiseks kirja rinna laius, rõiva pikkus ja õlamõõdud.",
+        "Kontrolli olemasolevatelt vaadetelt valitud värvi, varrukaotsi, kapuutsi või kaelust.",
+        "Kinnita materjali või kanga kaalu väited tooteinfo põhjal, enne kui neile toetuda."
+      ]
+    },
+    "t-shirts": {
+      "title": "OOPBuy T-särkide tootenimekiri",
+      "intro": "Leia T-särke lõike, varruka ja täpse soovitud kujunduse järgi. Võrdle rõiva mõõte ja valitud varianti enne suuruse valimist. Väikesed erinevused trüki asukohas, kaeluse ehituses või värvis võivad eristada sarnaseid pakkumisi. Kasuta fotosid küsimuste leidmiseks, seejärel kinnita detailid müüja info ja oma tellimuse olemasolevate laotõendite abil.",
+      "checks": [
+        "Võrdle rõiva pikkust ja rinna laiust hästi istuva T-särgiga.",
+        "Vii trükk, värv ja valitud versioon salvestatud pakkumisega kokku.",
+        "Vaata tellimuse fotodel kaelust, õmblusi ja trüki asukohta."
+      ]
+    },
+    "jackets": {
+      "title": "OOPBuy jakkide tootenimekiri",
+      "intro": "Sirvi jakke, arvestades nende all kantavate kihtide ja vajalike ehitusdetailidega. Võrdle valitud suurust sarnase jakiga, jättes enda kihilise riietuse eelistusele ruumi. Kontrolli kinnitusi, taskuid ja voodri infot. Fotod võivad näidata nähtavaid detaile, kuid soojuse, veekindluse ja materjalide väited vajavad enamat kui toote välisilme.",
+      "checks": [
+        "Võrdle mõõte jakiga, mida kannad kavandatud riidekihtidega.",
+        "Kontrolli olemasolevatel tõenditel lukke, nööpe, taskuid ja nähtavat voodrit.",
+        "Arvesta konstruktsiooni ja polsterduse mõjuga kaitsele ning pakitud mahule."
+      ]
+    },
+    "pants-shorts": {
+      "title": "OOPBuy püksid ja lühikesed püksid",
+      "intro": "Uuri pükse ja lühikesi pükse värvli ehituse, värvli kõrguse, pikkuse ning säärekuju järgi. Sama silt võib tähendada väga erinevat istuvust, seega võrdle müüja mõõtmismeetodit endale meeldiva paariga. Kontrolli, kas variant sisaldab üht eset või komplekti, ning kinnita värv ja pikkus enne sarnaste pakkumiste võrdseks pidamist.",
+      "checks": [
+        "Võrdle vöökohta, värvli kõrgust ja siseõmblust sobiva võrdlusrõivaga.",
+        "Kontrolli enne suuruse tõlgendamist, kas värvel on jäik, elastne või reguleeritav.",
+        "Vii valitud pikkus, värv ja kogus tellimuse variandiga kokku."
+      ]
+    },
+    "headwear": {
+      "title": "OOPBuy mütsid ja nokamütsid",
+      "intro": "Sirvi mütse ümbermõõdu, sügavuse ja kuju järgi. Reguleeritav kinnitus annab paindlikkust, kuid selle vahemik peab kandjale sobima. Võrdle pakkumises täpset stiili ja valitud värvi. Mõtle, kuidas mütsi pealisosa või nokka kaitsta, kui valid hiljem saabunud esemele pakkimist.",
+      "checks": [
+        "Kontrolli märgitud ümbermõõtu või reguleerimisvahemikku ja mütsi sügavust.",
+        "Vaata piltidelt valitud värvi, kinnitust ja nähtavat kuju.",
+        "Kaalu jäiga mütsiosa või noka kaitset enne paki esitamist."
+      ]
+    },
+    "accessories": {
+      "title": "OOPBuy kotid ja aksessuaarid",
+      "intro": "Uuri kotte ja aksessuaare praktiliste mõõtude, sobivuse ning kaasasolevate osade järgi. Tootepilt ei anna enamasti üksi mõõtkava edasi, seega kontrolli näiteks rihma pikkust, vöö ulatust või sahtli suurust. Vii valitud variant kokku ning vaata nähtavaid kinnitusi ja metallosi. Kinnita materjaliväited usaldusväärse tooteinfo abil, mitte üksnes värvi põhjal.",
+      "checks": [
+        "Võrdle mõõte, rihma pikkust või sobivusvahemikku kavandatud kasutusega.",
+        "Kontrolli kinnitusi, ühenduskohti ja valitud variandiga kaasnevaid tarvikuid.",
+        "Vaata üle jäikade, õrnade või kergesti kriimustuvate osade kaitsevajadus."
+      ]
+    },
+    "short-sets": {
+      "title": "OOPBuy sobitatud komplektid",
+      "intro": "Sirvi komplekte nii, et kontrollid iga osa eraldi. Pakkumise pilt võib näidata tervet riietust, kuigi valitud variant sisaldab ainult üht osa. Kinnita kogus ja pakendi sisu, seejärel võrdle ülemise ning alumise osa mõõte enda võrdlusrõivastega. Kontrolli, et valitud värvid ja versioonid kuuluvad samasse komplekti.",
+      "checks": [
+        "Kinnita täpselt, millised osad ja kogused valitud variandis sisalduvad.",
+        "Võrdle ülemise ja alumise osa mõõte enne suuruse valimist eraldi.",
+        "Kontrolli iga saabunud osa värvi, kujundust ja suurusesilti."
+      ]
+    },
+    "electronics": {
+      "title": "OOPBuy elektroonikaleiud",
+      "intro": "Uuri elektroonikat tegelikult vajaliku mudeli ja ühilduvuse järgi. Kontrolli ühendusi, toetatud seadmeid, toitenõudeid ja valitud pakendi sisu. Tuvasta enne veoliini kavandamist akud või muud veotundlikud osad. Tootefotod aitavad hinnata nähtavat seisukorda ja vastavust; toimivuse ning ohutuse küsimused nõuavad sobivaid tehnilisi andmeid, kinnitust või pildist põhjalikumat testimist.",
+      "checks": [
+        "Kinnita mudel, seadmeühilduvus, ühendus ja toiteandmed.",
+        "Kontrolli, kas akud või muu sisu mõjutavad saadaval olevaid veoliine.",
+        "Täpsusta pakendi sisu ja küsi, kuidas otsustavat funktsiooni kontrollida saab."
+      ]
+    },
+    "other-stuff": {
+      "title": "Veel OOPBuy tooteleide",
+      "intro": "Sirvi erinevaid leide, alustades eseme otstarbest, suurusest ja sisust. Sarnased pildid võivad varjata erinevusi koguses, materjaliväidetes või ühilduvuses, seega võrdle valitud varianti hoolikalt. Tuvasta enne pakki lisamist haprad osad või erilised veokaalutlused. Lähtu asjakohastest tooteandmetest, et otsustada, millised kontrollid on kõige olulisemad.",
+      "checks": [
+        "Kinnita eseme kavandatud kasutus, mõõtmed ja kaasasolev kogus.",
+        "Tuvasta haprad osad, ühilduvusvajadused või veoliini kontrolli nõudev sisu.",
+        "Küsi täpselt, kui pakkumine või olemasolevad fotod jätavad tähtsa detaili ebaselgeks."
+      ]
+    },
+    "jersey": {
+      "title": "OOPBuy spordisärkide tootenimekiri",
+      "intro": "Uuri spordisärke meeskonna, hooaja, versiooni ja tegelikult kaasatud valikute järgi. Võrdle müüja mõõte, sest erinevad lõiked võivad sama sildi korral erinevalt istuda. Kontrolli vajaduse korral valitud nime, numbrit, embleeme ja värvi. Kohandamise valimisel kinnita enne tellimist täpne kirjapilt ning kehtivad müügijärgsed tingimused.",
+      "checks": [
+        "Vii meeskond, hooaeg, versioon ja värv valitud tootevariandiga kokku.",
+        "Kontrolli rõiva mõõte ning iga valitud nime, numbri või embleemi detaili.",
+        "Kinnita kohandatud kaupade kehtivad tingimused enne maksmist."
+      ]
+    }
+  }
 }

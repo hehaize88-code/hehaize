@@ -1,11 +1,11 @@
 {
   "ui": {
     "finds": "Descoperiri",
-    "articles": "Jurnal",
+    "articles": "Articole",
     "qc": "Ghid QC",
     "shipping": "Livrare",
     "read": "Citește ghidul",
-    "allArticles": "Explorează jurnalul",
+    "allArticles": "Toate articolele OOPBuy",
     "latestReading": "Puțină documentare face diferența.",
     "browseAll": "Explorează spreadsheet-ul",
     "heroLabel": "URMĂTOAREA TA DESCOPERIRE ÎNCEPE AICI",
@@ -15,18 +15,18 @@
     "featured": "Noutăți din spreadsheet",
     "featuredIntro": "Produse noi, gata să fie privite mai atent.",
     "categoryTitle": "Găsește-ți locul.",
-    "guideTitle": "De la prima descoperire la ultima verificare.",
-    "guideIntro": "Un mod simplu de a te documenta despre un produs înainte să comanzi pe OOPBuy.",
-    "faqTitle": "Câteva lucruri pe care merită să le știi.",
-    "faqIntro": "Răspunsuri clare despre spreadsheet, fotografiile produselor și linkurile de cumpărare.",
-    "articlesTitle": "Însemnările OOPBuy",
-    "articlesIntro": "Ghiduri scurte și practice pentru alegeri mai bine gândite.",
+    "guideTitle": "Cum folosești OOPBuy",
+    "guideIntro": "Urmărește procesul de cumpărare de la un link util până la verificarea informată în depozit și o decizie atentă privind coletul.",
+    "faqTitle": "Întrebări frecvente despre OOPBuy",
+    "faqIntro": "Răspunsuri concise despre comenzi, inspecție, decizii în depozit, livrare și servicii postvânzare, cu surse oficiale pentru politicile platformei.",
+    "articlesTitle": "Ghiduri de cumpărare OOPBuy",
+    "articlesIntro": "Ghiduri practice pentru folosirea listei, analizarea fotografiilor QC, planificarea transportului și gestionarea deciziilor de după comandă.",
     "findsTitle": "Descoperiri OOPBuy",
     "findsIntro": "Explorează produse populare din catalogul CNBuyCha. Compară anunțul, fotografiile și prețul înainte să alegi următoarea descoperire.",
-    "qcTitle": "OOPBuy QC: privește mai atent",
-    "qcIntro": "Folosește fotografiile produselor pentru documentare, apoi verifică fotografiile propriei comenzi înainte de expediere.",
-    "shippingTitle": "Planifică dincolo de prețul articolului",
-    "shippingIntro": "Prețul produsului este doar punctul de plecare. Verifică opțiunile actuale de livrare și totalul în contul tău OOPBuy.",
+    "qcTitle": "Ghidul fotografiilor QC OOPBuy",
+    "qcIntro": "Verifică dovezile comenzii, identifică întrebările care necesită o altă imagine și clarifică problemele înainte să trimiți coletul.",
+    "shippingTitle": "Costuri și estimări de transport OOPBuy",
+    "shippingIntro": "Pregătește datele necesare estimării, compară rutele potrivite și reevaluează coletul când sunt disponibile dimensiunile după ambalare.",
     "checklist": "Înainte să continui",
     "related": "Continuă să explorezi",
     "independent": "Descoperire independentă de produse",
@@ -40,7 +40,20 @@
     "productDetails": "Detaliile",
     "readMore": "Descoperă mai mult",
     "searchHelp": "Încearcă un nume de produs, o marcă sau ID-ul articolului vânzătorului.",
-    "allCategories": "Toate categoriile, într-un singur loc."
+    "allCategories": "Toate categoriile, într-un singur loc.",
+    "contents": "Pe această pagină",
+    "expandAll": "Extinde toate secțiunile",
+    "collapseAll": "Restrânge toate secțiunile",
+    "sources": "Surse oficiale",
+    "lastReviewed": "Ultima verificare",
+    "quickChecks": "Verificări rapide",
+    "moreDetails": "Citește ghidul complet",
+    "jumpToPage": "Mergi la pagina",
+    "goToPage": "Mergi",
+    "loading": "Se încarcă produsele…",
+    "loadError": "Produsele nu au putut fi încărcate. Încearcă din nou.",
+    "pageLabel": "Pagina",
+    "previewNotice": "Previzualizare · Anunțurile CNBuyCha au fost actualizate la {date}. Căutarea deschide CNBuyCha."
   },
   "steps": [
     {
@@ -58,150 +71,1367 @@
   ],
   "faq": [
     {
-      "q": "OOPBuy Tab este site-ul oficial OOPBuy?",
-      "a": "OOPBuy Tab este un site independent de descoperire a produselor. Înregistrarea, comenzile și plățile se fac pe oopbuy.com. Linkurile de cumpărare includ un cod de invitație afiliat; nu se promite nicio reducere."
+      "q": "Ce este OOPBuy și vinde el însuși produsele?",
+      "a": "OOPBuy își descrie rolul ca agent de cumpărare și logistică. Ajută la organizarea comenzilor de la vânzători terți, depozitării temporare, ambalării și transportului. Rolul diferă de cel al producătorului sau al unui comerciant autorizat de marcă. Verifică vânzătorul original, descrierea și restricțiile aplicabile înainte de comandă; un anunț al agentului sau o fotografie din depozit nu dovedește autenticitatea.",
+      "sources": [
+        {
+          "label": "Acordul utilizatorului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "De unde provin produsele și prețurile?",
-      "a": "Anunțurile de produse, imaginile, rezultatele căutării și sortarea provin de la CNBuyCha. Prețurile sunt afișate în USD în toate limbile. Confirmă prețul actual, disponibilitatea și varianta aleasă în OOPBuy."
+      "q": "Cum plasez prima comandă OOPBuy?",
+      "a": "Ghidul oficial începe cu un link de produs sau o căutare după nume. Verifică articolul încărcat, alege culoarea, mărimea și cantitatea necesare și achită produsul plus transportul intern aplicabil. După cumpărare și inspecția în depozit, analizează articolul stocat înainte să creezi un colet internațional. Confirmă fiecare etapă în contul oficial, în loc să tratezi un card din listă drept comandă efectuată.",
+      "sources": [
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Fotografiile produselor sunt fotografii QC din depozit?",
-      "a": "Imaginile afișate provin de la CNBuyCha. Nu s-a verificat dacă sunt fotografii QC din depozit. Verifică fotografiile propriei comenzi în OOPBuy înainte să decizi expedierea."
+      "q": "Ce linkuri de magazine descrie ghidul oficial pentru începători?",
+      "a": "Ghidul descrie explicit introducerea linkurilor Taobao, Tmall și 1688 în OOPBuy. Pentru orice link, verifică dacă pagina oficială afișează articolul dorit al vânzătorului și dacă informațiile despre variante sunt complete. Dacă linkul nu funcționează sau apare alt articol, cere ajutor OOPBuy înainte de plată, fără să presupui că orice adresă de pe o platformă comercială este acceptată.",
+      "sources": [
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Prețul articolului include livrarea?",
-      "a": "Consideră suma afișată drept un preț estimat al articolului. Verifică transportul intern, livrarea internațională, serviciile opționale și orice costuri aplicabile în plata și oferta de colet actuale."
+      "q": "De ce se plătesc separat produsul și transportul internațional?",
+      "a": "OOPBuy explică procesul în două etape. Prima plată acoperă produsul și transportul aplicabil în China până la depozit. Ulterior alegi articolele stocate, creezi coletul și achiți transportul internațional. Estimează acest al doilea cost înainte de cumpărare, deoarece prețul articolului nu reprezintă singur costul complet al primirii comenzii.",
+      "sources": [
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Cum funcționează linkurile de cumpărare?",
-      "a": "Butonul de pe pagina unui produs deschide ID-ul său original de articol Weidian în OOPBuy. Numărul din catalogul CNBuyCha este un ID separat. Verifică anunțul de destinație înainte să comanzi."
+      "q": "Prețul produsului afișat în USD va fi totalul final?",
+      "a": "Nu. Prețul unui produs nu include singur toate costurile posibile ale cumpărării și coletului internațional. Transportul intern și internațional, serviciile opționale și conversia valutară pot influența totalul. Instrucțiunile OOPBuy despre alimentarea soldului descriu și conversii și comisioane. Verifică sumele din propria plată și din crearea coletului, fără să consideri prețul convertit din catalog o ofertă finală.",
+      "sources": [
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Alimentarea soldului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
     },
     {
-      "q": "Pot căuta cu o imagine?",
-      "a": "Căutarea după imagine nu este disponibilă în această previzualizare. Poți căuta după nume sau explora categoriile. Nu înlocuim o fotografie încărcată cu rezultate fără legătură."
+      "q": "Ce metode de plată pot folosi?",
+      "a": "Ghidul pentru începători enumeră cardul de credit, PayPal și soldul contului, iar ajutorul privind alimentarea descrie și alte variante. Disponibilitatea și suma percepută trebuie verificate în contul și plata actuale. Citește informațiile despre conversie și comisioane înainte de confirmare; menționarea unei metode într-un articol de ajutor nu garantează disponibilitatea pentru orice țară sau tranzacție.",
+      "sources": [
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Alimentarea soldului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
+    },
+    {
+      "q": "Fotografiile QC standard OOPBuy sunt gratuite?",
+      "a": "Anunțul despre servicii personalizate precizează că fotografiile QC standard realizate în depozit conform regulilor de inspecție sunt gratuite. Sunt furnizate după primirea și procesarea articolului. Ele diferă de fotografiile de catalog ale vânzătorului sau imaginile dintr-o listă independentă. Verifică fotografiile propriei comenzi stocate înainte de decizia privind transportul.",
+      "sources": [
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Ce pot confirma efectiv fotografiile QC și inspecția standard?",
+      "a": "Instrucțiunile oficiale acoperă informații vizibile, precum cantitatea, specificațiile comandate și starea aparentă, cu limite explicite. Nu confirmă o potrivire perfectă, performanță electronică verificată profesional sau autenticitatea mărcii. Produsele sigilate pot fi controlate doar la exterior. Tratează fotografiile ca dovezi despre ceea ce se vede și cere clarificări pentru detaliile importante, fără să presupui că o caracteristică ascunsă a fost testată.",
+      "sources": [
+        {
+          "label": "Informații despre inspecția OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Acordul utilizatorului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Pot solicita măsurători sau fotografii QC de detaliu?",
+      "a": "OOPBuy descrie un serviciu QC personalizat pentru măsurători și detalii specifice, inclusiv lungimea pantofului ori branțului și dimensiunile hainelor. Verifică disponibilitatea și prețul actual în contul oficial sau la asistență; anunțul nu publică un tarif universal pentru fotografii suplimentare. Specifică exact măsurătoarea sau unghiul necesar, astfel încât cererea să răspundă problemei tale.",
+      "sources": [
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Articolele cumpărate de pe 1688 primesc aceeași inspecție ca toate celelalte?",
+      "a": "Nu neapărat. Ghidul menționează standarde QC diferite pentru 1688, iar acordul utilizatorului descrie eșantionare limitată, nu inspecție integrală universală. Nu deduce că fiecare unitate dintr-o comandă multiplă a fost examinată individual. Înainte să cumperi în cantitate, clarifică amploarea inspecției și serviciile suplimentare necesare verificărilor importante pentru tine.",
+      "sources": [
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Acordul utilizatorului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Cât durează perioada normală de depozitare gratuită?",
+      "a": "Anunțul oficial despre servicii personalizate stabilește în mod normal 90 de zile gratuite de la intrarea în depozit. Pagina generală folosește starea comenzii „received” ca punct de pornire. Verifică termenul efectiv al fiecărei comenzi stocate, mai ales dacă articolele au sosit în zile diferite, și organizează expedierea sau o prelungire eligibilă înainte de expirare.",
+      "sources": [
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Politica de depozitare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        }
+      ]
+    },
+    {
+      "q": "Pot prelungi depozitarea după perioada gratuită?",
+      "a": "Anunțul permite o singură prelungire plătită: 10 CNY pentru cel mult 30 de zile suplimentare, adică maximum 120 de zile conform politicii. Nu înseamnă 120 de zile gratuite sau prelungiri nelimitate. Verifică opțiunea actuală și termenul articolului în contul oficial înainte să te bazezi pe ele, deoarece bunurile cu termen depășit pot fi eliminate.",
+      "sources": [
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Ar trebui să aștept un memento înainte să organizez expedierea?",
+      "a": "Nu. Urmărește personal termenul afișat pentru fiecare comandă și menține datele de contact actuale. Anunțurile oficiale discută mementouri, dar avertizează și că articolele expirate pot fi considerate abandonate. Coletele primite neidentificate sau cu anomalii pot avea reguli diferite. Dacă starea depozitării este neclară, contactează rapid asistența, fără să presupui aplicarea necondiționată a perioadei normale gratuite.",
+      "sources": [
+        {
+          "label": "Politica de depozitare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "Acordul utilizatorului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Când solicit retur sau schimb după sosirea în depozit?",
+      "a": "Anunțul de retur descrie un interval condiționat de cinci zile, 120 de ore, după trecerea comenzii la „Stocked in”, conform regulilor de calcul indicate. Verifică rapid fotografiile și ecranul oficial de postvânzare. Eligibilitatea depinde în continuare de vânzător și de starea articolului; intervalul nu promite acceptarea fiecărei cereri. Verifică termenul actual al comenzii tale.",
+      "sources": [
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Orice produs poate fi returnat sau schimbat?",
+      "a": "Nu. Politica enumeră condiții și excluderi, inclusiv regulile vânzătorului, starea potrivită pentru revânzare, produse personalizate sau folosite și anumite categorii sigilate ori de uz personal. Îndepărtarea etichetelor, accesoriilor sau ambalajului necesar poate afecta eligibilitatea. OOPBuy poate discuta cu vânzătorul, dar acordul acestuia rămâne obligatoriu. Verifică condițiile produsului înainte de cumpărare sau modificarea ambalajului.",
+      "sources": [
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Primul retur sau schimb gratuit include toate costurile de transport?",
+      "a": "Nu. Anunțul descrie scutirea de taxa de serviciu pentru prima operațiune de retur ori schimb dintr-o lună calendaristică. Nu înseamnă transport gratuit de retur sau rambursarea tuturor costurilor interne. Costurile depind de motiv, decizia vânzătorului și circumstanțele comenzii. Citește oferta efectivă a serviciului postvânzare înainte să confirmi, în loc să presupui că întregul proces este gratuit.",
+      "sources": [
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Pot anula comanda înainte ca vânzătorul să o expedieze?",
+      "a": "Ajutorul pentru retur spune că taxa serviciului de retur nu se aplică atunci când produsul nu a fost încă expediat. Nu interpreta afirmația ca o garanție necondiționată de anulare în orice etapă. Verifică starea actuală și trimite prompt cererea disponibilă de anulare sau postvânzare. Dacă vânzătorul a expediat deja, se pot aplica alte proceduri și costuri de transport.",
+      "sources": [
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Stările comenzilor și coletelor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Cât durează rambursarea și unde o verific?",
+      "a": "Aprobarea rambursării, creditarea soldului OOPBuy și decontarea pe card sunt etape diferite. Anunțul precizează că procesarea bancară influențează rambursările pe card și oferă o estimare, nu o dată garantată. Verifică înregistrarea și destinația rambursării în cont. Dacă evoluția este neclară, oferă asistenței referințele comenzii și rambursării, în loc să repeți plăți.",
+      "sources": [
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Stările comenzilor și coletelor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Pot returna un articol după expedierea internațională?",
+      "a": "Anunțul descrie retururile internaționale ca fiind condiționate și potențial pe cheltuiala clientului, inclusiv transportul înapoi și costuri suplimentare precum taxe vamale. Starea originală și ambalajul necesar rămân importante. Contactează serviciul postvânzare înainte să trimiți ceva înapoi și obține instrucțiunile actuale. Un retur din străinătate nu echivalează cu anularea simplă în depozit sau cu rambursare integrală garantată.",
+      "sources": [
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Cum estimez transportul internațional OOPBuy?",
+      "a": "Folosește calculatorul oficial cu destinația și datele solicitate despre colet, apoi verifică rutele și restricțiile. Ghidul explică faptul că sumele finale depind de dimensiunile și greutatea măsurate, precum și de modalitatea de transport. Estimarea preliminară ajută bugetul, dar nu înlocuiește oferta finală și nu include automat toate taxele specifice destinației.",
+      "sources": [
+        {
+          "label": "Calculatorul de transport OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Există o rută mereu mai ieftină sau mai rapidă?",
+      "a": "Instrucțiunile oficiale nu identifică o rută universală. Serviciile depind de destinație, conținut, greutate, dimensiuni și condițiile actuale. Compară opțiunile afișate pentru colet, inclusiv restricții și eventuale condiții de despăgubire. Estimările de livrare nu sunt garanții: activitatea transportatorului, vremea și vama pot influența traseul după ieșirea din depozit.",
+      "sources": [
+        {
+          "label": "Informații de livrare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Asigurări și despăgubiri OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Ce face Parcel Rehearsal?",
+      "a": "Anunțul descrie un serviciu de ambalare preliminară în depozit care ajută la stabilirea măsurătorilor înaintea plății transportului internațional. Menționează taxa de 20 CNY și explică dependența prețului de păstrarea aceleiași rute și configurații. Schimbarea acestor alegeri poate modifica suma finală. Verifică serviciul și condițiile actuale de anulare înainte să soliciți ambalarea preliminară.",
+      "sources": [
+        {
+          "label": "Instrucțiuni OOPBuy pentru ambalarea preliminară",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ]
+    },
+    {
+      "q": "Ar trebui să scot cutiile de pantofi sau să videz hainele?",
+      "a": "Ghidul le descrie ca opțiuni posibile, unele limitate la anumite rute. Decide după nevoile de protecție, preferințe și eventualele restricții de retur. Îndepărtarea ambalajului sau comprimarea nu este potrivită pentru orice produs, iar un colet mai mic nu garantează un cost final redus. Verifică opțiunile și calculul rutei înainte de confirmare.",
+      "sources": [
+        {
+          "label": "Instrucțiuni de ambalare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Toate produsele depozitate pot fi reunite într-un singur colet?",
+      "a": "Consolidarea este disponibilă, însă nu orice combinație este eligibilă sau economică. Caracteristicile articolelor, restricțiile rutei și marcajele de ambalare separată pot impune colete distincte. Anunțul oficial de expediere separată include o regulă pentru articole mari, iar ghidul de ambalare discută bunuri cu baterii. Urmează instrucțiunile articolelor stocate și compară variantele eligibile înainte să trimiți cererea.",
+      "sources": [
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Instrucțiuni de ambalare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Reguli de expediere separată OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        }
+      ]
+    },
+    {
+      "q": "De ce apare „Shipped” înainte să am un număr internațional de urmărire?",
+      "a": "Ghidul folosește termenii de expediere în două contexte. La o comandă de cumpărare, „Shipped” poate descrie trimiterea produsului de la vânzător la depozitul OOPBuy. La un colet internațional, privește etapa ulterioară a transportatorului. Verifică dacă privești comanda articolului sau coletul și deschide detaliile logistice potrivite, fără să presupui că ambele etape au același număr.",
+      "sources": [
+        {
+          "label": "Stările comenzilor și coletelor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Ce fac dacă pachetul livrat este deteriorat sau lipsesc articole?",
+      "a": "Păstrează ambalajul exterior, eticheta de transport și dovezile relevante ale articolelor și contactează prompt serviciul postvânzare. Instrucțiunile cer fotografii clare și detalii precum numerele comenzilor și includ termene scurte de raportare și prezentare a dovezilor. Nu arunca ambalajul și nu aștepta un termen generic văzut în altă parte. Urmează instrucțiunile pentru coletul și solicitarea ta.",
+      "sources": [
+        {
+          "label": "Probleme după livrarea OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ]
+    },
+    {
+      "q": "Asigurarea acoperă automat orice problemă a coletului?",
+      "a": "Nu. Anunțul oficial spune că soluționarea depinde de condițiile liniei de transport și de dovezi și enumeră excluderi. Nu presupune că întârzierea, deteriorarea, acțiunea vamală sau pierderea duc întotdeauna la despăgubire integrală. Citește acoperirea, limitele și procedura rutei alese efectiv și păstrează înregistrările necesare dacă apare o problemă.",
+      "sources": [
+        {
+          "label": "Asigurări și despăgubiri OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Pot comanda orice produs care apare într-o listă?",
+      "a": "Nu. Prezența online nu dovedește că produsul este legal, autentic sau eligibil pentru ruta ta. Instrucțiunile OOPBuy interzic anumite bunuri și indică categorii restricționate care necesită verificare cu asistența. Condițiile interzic și produsele contrafăcute sau care încalcă drepturi. Confirmă datele vânzătorului, politica platformei și cerințele destinației înainte de cumpărare, mai ales pentru baterii, lichide ori alte conținuturi restricționate.",
+      "sources": [
+        {
+          "label": "Restricții de cumpărare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "Acordul utilizatorului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
     }
   ],
   "articles": [
     {
       "slug": "oopbuy-spreadsheet-guide",
-      "tag": "PRIMII PAȘI",
-      "title": "Prima ta descoperire OOPBuy, pas cu pas",
-      "description": "Transformă un anunț promițător într-o alegere bine gândită.",
+      "tag": "Primii pași",
+      "title": "Ghidul listei OOPBuy: creează o selecție pe care o poți verifica",
+      "description": "Învață să folosești o listă OOPBuy, să verifici linkuri, să compari variante, să estimezi un buget realist și să transformi o descoperire într-o comandă informată.",
+      "primaryKeyword": "listă OOPBuy",
+      "secondaryKeywords": [
+        "ghidul listei OOPBuy",
+        "listă de produse OOPBuy",
+        "descoperiri OOPBuy",
+        "ghid de cumpărături OOPBuy"
+      ],
+      "takeaways": [
+        "Tratează fiecare rând din catalog ca punct de plecare ce necesită verificarea produsului actual.",
+        "Notează linkul exact, varianta, măsurătorile și costul estimat cu livrare.",
+        "Separă imaginile de catalog de fotografiile QC din depozit ale propriei comenzi."
+      ],
       "sections": [
         {
-          "title": "Începe cu ceea ce îți trebuie",
-          "text": "Alege o categorie sau caută un model. Compară numele produsului, imaginile disponibile și prețul estimat. Un preț mic nu spune, de unul singur, dacă un anunț răspunde nevoilor tale."
+          "title": "La ce ajută o listă OOPBuy",
+          "text": "O listă OOPBuy este un instrument de descoperire: adună linkuri, permite compararea ideilor și evită reluarea căutării de la zero. Valoarea reală vine din ușurința verificării unei selecții. Multe rânduri nu îți spun dacă produsele sunt disponibile, dacă o mărime se potrivește sau cât va costa coletul final.\n\nOOPBuy Tab este un catalog independent, nu serviciul oficial OOPBuy. Catalogul folosește date-sursă CNBuyCha. Distincția contează fiindcă o intrare în catalog și pagina actuală de cumpărare se pot modifica în momente diferite. Consideră prețul în USD o estimare și fotografiile referințe de catalog, dacă originea lor nu este verificată explicit.\n\nFolosește tabelul pentru o întrebare precisă, de exemplu care dintre trei jachete corespunde măsurilor și bugetului. Când opțiunile sunt vizibile împreună, informațiile lipsă devin mai ușor de observat înainte să se transforme într-o presupunere costisitoare."
         },
         {
-          "title": "Deschide anunțul original",
-          "text": "Verifică vânzătorul și opțiunile disponibile. Notează mărimea, culoarea și cantitatea dorite, apoi deschide produsul în OOPBuy. Confirmă din nou aceste detalii înainte de plată."
+          "title": "Stabilește cerințele înainte să navighezi",
+          "text": "Scrie ce ar face articolul util pentru tine. Pentru haine pot conta măsurile, materialul preferat, sezonul și instrucțiunile acceptabile de îngrijire. Pentru o geantă, dimensiunile laptopului, închiderea și greutatea maximă goală. Cerințele reduc riscul ca o fotografie atrăgătoare să te distragă de la cumpărătura reală.\n\nStabilește două bugete: o țintă pentru produs și un plafon cu livrare. Sunt sume diferite. Un preț mic lasă întrebări despre transport intern, internațional, conversie la plată și eventualele costuri ale destinației.\n\nAlege puțini candidați, fără să umpli imediat zeci de rânduri. Trei articole comparabile te învață adesea mai mult decât treizeci fără legătură. Adaugă un motiv pentru fiecare și o întrebare nerezolvată. Dacă nu poți explica de ce un articol este în selecție, probabil nu are încă nevoie de atenția ta."
         },
         {
-          "title": "Gândește-te la etapa următoare",
-          "text": "Lasă loc în buget pentru livrare și alte costuri. Verifică fotografiile propriei comenzi și oferta de transport disponibilă înainte de a solicita expedierea unui colet."
+          "title": "Creează coloane care susțin o decizie",
+          "text": "Un rând util cuprinde numele produsului, platforma sursă, URL-ul original, varianta exactă, prețul și moneda, data verificării și următoarea acțiune. Adaugă măsuri ori specificații relevante categoriei. Păstrează notițele proprii separat de descrierea vânzătorului pentru a distinge dovada de interpretare când revii.\n\nDe exemplu, la o jachetă poți nota lățimea pieptului, umerii, lungimea spatelui, mărimea și dacă cifrele descriu haina sau purtătorul. La încălțăminte poți înregistra tabelul vânzătorului și o lungime interioară disponibilă. Nu pune o etichetă neconfirmată într-o coloană numită potrivire confirmată.\n\nFolosește stări simple precum verifică sursa, lipsesc măsuri, gata de analizat, comandat și evaluat. Starea trebuie să descrie munca efectiv terminată. Rezervă un câmp pentru motivul respingerii; acesta previne repetarea aceleiași documentări săptămâna viitoare."
+        },
+        {
+          "title": "Verifică produsul actual din spatele rândului",
+          "text": "Deschide linkul original și pagina OOPBuy înainte să te bazezi pe anunț. Compară identitatea produsului, imaginile, opțiunile și prețul selectat. Un link care se încarcă poate duce totuși la un anunț schimbat, altă variantă sau o pagină unde cea mai ieftină opțiune nu este cea ilustrată în catalog.\n\nȚine identificatorii separați. În exemplul nostru, 3470 este referința catalogului CNBuyCha, iar 7876894732 identificatorul sursă folosit în ruta produsului Weidian. Copierea numărului de catalog într-un URL de cumpărare nu identifică același produs. Păstrează adresa completă când poți, fără să o reconstruiești dintr-o denumire scurtă.\n\nDacă pagina nu este disponibilă, marchează rândul neverificat. Caută din nou articolul exact și compară atent orice înlocuitor. Nu substitui discret linkul cu un produs asemănător vizual: asemănarea nu dovedește același vânzător, aceeași specificație sau aceleași condiții."
+        },
+        {
+          "title": "Compară varianta pe care ai comanda-o",
+          "text": "Două rânduri sunt comparabile doar dacă reprezintă opțiunile pe care le-ai cumpăra. Verifică nuanța, mărimea, cantitatea, materialul și accesoriile. Anunțul poate afișa un interval deoarece variantele diferă. Notarea celui mai mic preț când vrei altă opțiune creează o comparație înșelătoare chiar dacă ambele numere sunt reale.\n\nImaginează-ți două genți de călătorie. Un preț poate fi pentru cea mai mică dimensiune, celălalt pentru geanta mai mare de care ai nevoie. Pune dimensiunile necesare lângă fiecare variantă și compară acele alegeri exacte. Dacă lipsește o măsură esențială, marchează lipsa în loc să o estimezi din fotografia unui model.\n\nLa pachete multiple, notează numărul de bucăți și calculează prețul unitar numai dacă articolele sunt realmente echivalente. La seturi de haine, confirmă ce piese sunt incluse. Aceste verificări fac tabelul util deciziilor, nu doar organizării unor imagini atractive."
+        },
+        {
+          "title": "Adaugă un calcul realist al costurilor",
+          "text": "Separă sumele confirmate de estimări. Tabelul poate avea câmpuri pentru produs, transport intern afișat, estimare internațională, servicii opționale prevăzute și rezervă pentru costuri neclare. Etichetează moneda fiecărui număr. Un USD estimat nu trebuie confundat cu o sumă fixată la plată.\n\nFolosește calculatorul oficial pentru destinația și presupunerile de colet disponibile la momentul verificării. Notează greutatea și dimensiunile introduse, altfel estimarea este greu de interpretat ulterior. Când datele nu sunt cunoscute, compară un scenariu plauzibil mai mic și unul mai mare, în locul unui singur total aparent precis.\n\nStabilește o regulă înainte să comanzi. De exemplu, mergi mai departe numai dacă și scenariul mai scump rămâne în bugetul de livrare. Este o metodă personală, nu o ofertă OOPBuy. Actualizează tabelul când informațiile depozitului sau o ofertă curentă înlocuiesc o presupunere."
+        },
+        {
+          "title": "Separă catalogul de QC-ul comenzii",
+          "text": "O fotografie de catalog ajută să identifici stilul, culoarea sau un detaliu de design. Nu dovedește starea exemplarului cumpărat pentru tine. Imaginile importate OOPBuy Tab nu sunt fotografii QC verificate ale propriei comenzi, deci nu marca un rând calitate aprobată doar pentru că arată bine.\n\nDacă ulterior comanzi, creează o zonă separată pentru imaginile și mesajele acelei comenzi. Notează referința, varianta și întrebările lăsate deschise de fotografiile depozitului. Astfel, imaginea bine prezentată a sursei nu este confundată cu ceea ce a fost primit efectiv.\n\nInformațiile OOPBuy descriu verificarea cantității și specificațiilor, dar stabilesc și limite. Este un motiv pentru întrebări precise, nu pentru a presupune că orice problemă de calitate a fost cercetată. Pentru o măsură ori un detaliu decisiv, identifică exact vederea sau măsurătoarea necesară înainte de pasul următor."
+        },
+        {
+          "title": "Transformă selecția într-o primă comandă ușor de gestionat",
+          "text": "Revezi întrebările rămase înainte să plătești. Fiecare articol ar trebui să aibă sursă cunoscută, variantă aleasă deliberat, suficiente date despre mărime și un buget confortabil de livrare. Dacă mai multe câmpuri spun necunoscut, următorul pas este documentarea, chiar la un preț neobișnuit de atractiv.\n\nO primă comandă mai mică poate simplifica evidența. Înveți paginile actuale, informațiile depozitului și opțiunile coletului fără multe excepții simultan. Este o sugestie organizatorică, nu o promisiune că expedierea mică va costa mai puțin per articol.\n\nFolosește pagina oficială de autentificare când intri în cont. Păstrează deciziile de plată și datele contului în serviciul oficial. După comandă, copiază referința în tabelul privat și notează data. Nu publica informații personale despre comenzi într-un tabel partajat public."
+        },
+        {
+          "title": "Întreține tabelul după prima achiziție",
+          "text": "Un tabel bun devine mai util după primire. Adaugă dimensiunile reale, observațiile despre potrivire, suma finală plătită și diferențele față de anunț. Descrie împrejurările: aceeași jachetă peste un pulover gros poate fi diferită de purtarea peste tricou.\n\nMarchează clar impresiile subiective. Confortabil pentru naveta mea zilnică este mai util decât calitate perfectă, deoarece explică utilizarea. Notează limitări descoperite, precum un buzunar prea îngust pentru telefon. Aceste informații devin referințe viitoare fără a afirma că alt cumpărător va avea aceeași experiență.\n\nLa final, datează evaluarea și arhivează linkurile inactive în loc să pară actuale. Verifică prețurile și disponibilitatea înaintea fiecărei noi cumpărături. O listă OOPBuy de încredere nu este o promisiune statică, ci o evidență a lucrurilor verificate, incertitudinilor și lecțiilor învățate."
         }
+      ],
+      "sources": [
+        {
+          "label": "Site-ul oficial OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "Calculatorul de transport OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Informații despre inspecția OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Autentificare OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-product-links",
+        "oopbuy-price-check",
+        "oopbuy-qc-photos"
       ]
     },
     {
       "slug": "oopbuy-qc-photos",
-      "tag": "VERIFICAREA FOTOGRAFIILOR",
-      "title": "Ce să urmărești în fotografiile produselor și QC",
-      "description": "Separă documentarea în catalog de verificările propriei comenzi.",
+      "tag": "Verificarea calității",
+      "title": "Fotografii QC OOPBuy: ce verifici înainte de expedierea comenzii",
+      "description": "Un ghid practic pentru analizarea fotografiilor QC OOPBuy, verificarea variantei, solicitarea măsurătorilor utile și înțelegerea limitelor imaginilor din depozit.",
+      "primaryKeyword": "fotografii QC OOPBuy",
+      "secondaryKeywords": [
+        "verificare calitate OOPBuy",
+        "fotografii depozit OOPBuy",
+        "ghid QC OOPBuy",
+        "inspecție OOPBuy"
+      ],
+      "takeaways": [
+        "Analizează imaginile depozitului pentru propria comandă și compară-le cu varianta aleasă.",
+        "Urmează o ordine repetabilă și cere un unghi exact când lipsesc dovezi importante.",
+        "Imaginile nu dovedesc autenticitatea, durabilitatea îndelungată, culoarea exactă sau toate proprietățile funcționale."
+      ],
       "sections": [
         {
-          "title": "Identifică fotografiile pe care le vezi",
-          "text": "Fotografiile din catalog arată un anunț; nu dovedesc ce articol vei primi. Fotografiile de pe OOPBuy Tab sunt furnizate de CNBuyCha și nu sunt verificate ca QC din depozit."
+          "title": "Folosește QC pentru întrebări concrete",
+          "text": "Fotografiile QC OOPBuy sunt cele mai utile când știi ce vrei să verifici. Începe cu o listă scurtă: a sosit articolul așteptat, se potrivește varianta, există deteriorări vizibile și susțin măsurile decizia privind potrivirea? Astfel ai un proces practic, nu o căutare nesfârșită a perfecțiunii.\n\nO fotografie arată un anumit unghi într-o anumită lumină. Poate evidenția un nasture lipsă ori o etichetă de culoare diferită, dar poate ascunde o problemă într-un buzunar sau sub o piesă detașabilă. Tratează fiecare imagine ca dovadă cu un câmp limitat.\n\nScopul este să clarifici înaintea transportului internațional ceea ce ți-ar schimba decizia. Poate însemna confirmarea unei mâneci sau clarificarea unei urme de ambalaj care se poate îndepărta. Nu înseamnă că fotografii frumoase garantează comportamentul produsului după luni de utilizare."
         },
         {
-          "title": "Compară detalii concrete",
-          "text": "Pentru propria comandă, compară modelul, culoarea, eticheta vizibilă de mărime și cantitatea cu ce ai selectat. Caută deteriorări evidente și întreabă despre detaliile neclare înainte de expediere."
+          "title": "Separă trei tipuri de fotografii",
+          "text": "Imaginile vânzătorului descriu oferta. Cele din catalog ajută să o descoperi și recunoști. Imaginile depozitului documentează bunurile specifice unei comenzi. Rolurile diferă chiar când fotografiile apar lângă același nume sau seamănă vizual.\n\nOOPBuy Tab este un catalog independent bazat pe CNBuyCha. Imaginile importate nu au fost verificate ca fotografii QC ale comenzii tale. Pot servi drept referință, dar nu spun dacă exemplarul cumpărat are aceleași cusături, etichete, dimensiuni sau stare.\n\nSalvează imaginile în dosare diferite ori cu etichete clare, precum referință sursă și comanda mea. Include referința și data în notițele private. Separarea previne transformarea accidentală a unui prim-plan atractiv al vânzătorului în dovada pe care te bazezi la acceptarea articolului."
         },
         {
-          "title": "Înțelege limitele",
-          "text": "Fotografiile singure nu pot stabili autenticitatea, durabilitatea sau funcționarea completă. Dacă ai nevoie de o măsurătoare sau de o inspecție suplimentară, întreabă OOPBuy ce este disponibil și cât costă."
+          "title": "Confirmă că analizezi articolul corect",
+          "text": "Înaintea detaliilor, asociază înregistrarea depozitului cu comanda. Compară numele, linkul sursă, culoarea, mărimea și cantitatea. Dacă ai comandat două articole similare, nu presupune că fotografiile apar în ordinea selecției inițiale.\n\nCaută detalii identificabile: eticheta mărimii, dispunerea distinctă a panourilor, închiderea sau eticheta ambalajului. Compară-le cu opțiunea comandată, nu cu prima imagine generică. Vânzătorii folosesc uneori aceeași imagine principală pentru mai multe variante.\n\nDacă datele și imaginile par inconsecvente, cere clarificări cu referința comenzii. Spune direct diferența: bleumarin comandat, etichetă aparent neagră, ori două bucăți comandate, una vizibilă. Nu concluziona că produsul este greșit doar fiindcă nu se vede tot într-o imagine; stabilește întâi ce acoperă fotografia."
+        },
+        {
+          "title": "Verifică hainele într-o ordine consecventă",
+          "text": "Privește mai întâi haina completă. Confirmă silueta, panourile principale, decolteul, mânecile și închiderile față de articolul ales. Apoi analizează separat fața și spatele. Imaginea generală ajută la observarea unui element lipsă înainte să te concentrezi pe mici diferențe de cusătură.\n\nContinuă cu detalii vizibile: alinierea cusăturilor, tivuri, manșete, nasturi, fermoare, imprimeuri și broderii unde contează. Caută rupturi clare, componente desprinse, pete ori părți inegale. Cutele și așezarea pot face linii drepte să pară neuniforme; un unghi mai bun poate clarifica.\n\nÎncheie cu etichetele și măsurile importante. Eticheta confirmă ce este imprimat, în timp ce măsurătoarea ajută potrivirea. Sunt verificări separate. Dacă mâneca este incertitudinea principală, cere acea dimensiune, nu dacă mărimea este normală, expresie puternic dependentă de așteptările personale."
+        },
+        {
+          "title": "Verifică pantofii și gențile după funcție",
+          "text": "La pantofi, compară perechea împreună și fiecare bucată separat. Privește mărimile, forma, starea vizibilă a feței, închiderile și marginile tălpii. Întreabă dacă imaginile acoperă zonele relevante utilizării. O vedere de sus nu dezvăluie neapărat o desprindere laterală a tălpii.\n\nLa genți, începe cu dimensiunile și compartimentarea. Identifică compartimentul principal, curelele, mânerele și închiderile așteptate. Confirmă că imaginile reprezintă dimensiunea și configurația alese. Pentru un laptop anume, o geantă similară pe un model nu dovedește suficient spațiu interior.\n\nNu transforma controalele vizuale în afirmații despre sarcina suportată, impermeabilitate, confort sau performanță specializată. Acestea cer alte dovezi. Dacă o funcție esențială nu poate fi stabilită din anunț sau printr-un control adecvat, păstreaz-o ca întrebare deschisă când decizi dacă produsul îți mai convine."
+        },
+        {
+          "title": "Cere măsurători care pot fi interpretate",
+          "text": "O fotografie utilă arată clar articolul, instrumentul și ambele capete ale măsurării. Solicită o dimensiune numită și o metodă precisă. La cămașă, lățimea pieptului întinsă între cusăturile axilelor este mai exactă decât mărimea pieptului. La pantaloni, precizează talie relaxată sau întinsă.\n\nCompară date echivalente. Lățimea unei haine întinse nu este circumferința corpului, iar talpa exterioară nu este lungimea interioară. Măsurarea unei piese proprii care vine bine oferă o comparație practică numai dacă depozitul urmează aceeași metodă.\n\nAi grijă la diferențe minuscule pe imagini înclinate sau cu rezoluție mică. Perspectiva, cutele și poziția benzii schimbă interpretarea. Dacă o mică diferență decide păstrarea, cere o măsurătoare mai clară în loc să mărești imaginea până pare mai precisă decât este."
+        },
+        {
+          "title": "Înțelege limitele inspecției din depozit",
+          "text": "Informațiile oficiale descriu verificarea cantităților și specificațiilor comandate. Exclud și anumite probleme de culoare, mărime și efect al utilizării, evaluări specializate și controale interne ale unor produse sigilate. Citește anunțul actual pentru domeniul exact aplicabil articolului.\n\nLecția practică este să nu tratezi inspecția ca certificare completă. O etichetă fotografiată nu autentifică marca. Carcasa intactă a încărcătorului nu dovedește siguranța electrică. Un ambalaj nedeschis nu arată toate componentele. Dacă achiziția depinde de o proprietate specializată, caută documente potrivite, nu răspunsul într-o imagine generală.\n\nSetările ecranului și lumina limitează și comparația culorilor. Folosește imaginile pentru discrepanțe importante și întrebări, dar nu presupune că două fotografii în condiții diferite stabilesc o nuanță subtilă. Decide anticipat câtă incertitudine accepți."
+        },
+        {
+          "title": "Scrie o cerere ușor de executat",
+          "text": "Leagă fiecare întrebare de un aspect observabil. O cerere utilă identifică comanda, fotografia și detaliul exact. De exemplu: arată fermoarul frontal complet închis și include ambele părți ale tivului inferior în cadru. Este mai concret decât verifică din nou calitatea.\n\nLa măsurători, indică punctele și condițiile importante, precum așezare plană fără întindere. OOPBuy descrie fotografiile standard ca gratuite conform regulilor și oferă cereri personalizate de detalii ori măsurători. Anunțul nu stabilește un preț QC personalizat, deci verifică tariful înainte de lucru suplimentar.\n\nNu combina multe îngrijorări fără legătură într-un mesaj vag. Prioritizează detaliile care pot schimba decizia, apoi compară răspunsul cu întrebările. Păstrează răspunsul lângă imagine pentru a distinge confirmarea directă de concluzia dedusă personal din fotografie."
+        },
+        {
+          "title": "Documentează decizia înainte de expediere",
+          "text": "După dovezi, alege clar următorul pas: accepți informațiile, ceri o clarificare specifică sau investighezi returul actual. La o problemă, consultă prompt anunțul oficial și starea live a comenzii. Nu presupune că așteptarea păstrează opțiunile la nesfârșit.\n\nȚine un registru compact al problemei și dovezilor. Salvează varianta, imaginile, măsurile și răspunsul exact. Dacă ai nevoie ulterior de ajutor, aceste date sunt mai ușor de explicat decât afirmația generică că produsul arăta greșit. Te ajută și să nu repeți aceeași întrebare.\n\nÎnainte să creezi coletul, revino la articolele marcate nerezolvate. Expedierea nu răspunde întrebării. Decizia finală trebuie să reflecte produsul primit efectiv, limitele dovezilor și acceptabilitatea incertitudinii pentru utilizarea și bugetul tău."
         }
+      ],
+      "sources": [
+        {
+          "label": "Informații despre inspecția OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Site-ul oficial OOPBuy",
+          "url": "https://oopbuy.com/"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-returns-refunds"
       ]
     },
     {
       "slug": "oopbuy-shipping-guide",
-      "tag": "NOTE DESPRE LIVRARE",
-      "title": "Prețul articolului este doar începutul",
-      "description": "Un mod mai clar de a planifica bugetul coletului.",
+      "tag": "Transport",
+      "title": "Ghidul transportului OOPBuy: estimează costurile și alege ruta potrivită",
+      "description": "Înțelege etapele transportului OOPBuy, greutatea și volumul, compararea rutelor, ambalarea și verificările înainte de plata transportului internațional.",
+      "primaryKeyword": "transport OOPBuy",
+      "secondaryKeywords": [
+        "cost transport OOPBuy",
+        "calculator transport OOPBuy",
+        "estimare transport OOPBuy",
+        "termen livrare OOPBuy"
+      ],
+      "takeaways": [
+        "Bugetează livrarea vânzătorului la depozit și o plată internațională separată.",
+        "Estimează cu destinație, conținut, greutate și dimensiuni și confirmă regulile rutei.",
+        "Compară rutele potrivite prin toate condițiile și tratează termenele ca estimări."
+      ],
       "sections": [
         {
-          "title": "Separă costurile",
-          "text": "Păstrează separate în buget prețul produsului, transportul de la vânzător la depozit și livrarea internațională. Verifică serviciile opționale și costurile legate de plată în oferta actuală."
+          "title": "Înțelege cele două etape de transport",
+          "text": "Comanda OOPBuy trece prin două etape distincte. Mai întâi vânzătorul trimite bunurile la depozitul din China. Ulterior, un colet pleacă din depozit spre destinația ta. Confuzia dintre ele explică adesea o actualizare sau cerere de plată neașteptată.\n\nExplicația pentru prima cumpărătură separă plata inițială a produselor și transportului intern de plata internațională ulterioară. Prin urmare, prețul dintr-un catalog independent nu reprezintă costul complet cu livrare. Sumele USD OOPBuy Tab sunt estimări pentru descoperire, nu ofertă finală de transport internațional.\n\nConstruiește bugetul înainte să comanzi. Gândește-te cât poți cheltui confortabil dacă pachetul ambalat este mai mare sau mai greu decât ai crezut. Dacă te gândești la transport doar când toate articolele sunt în depozit, poți ajunge între un total mai mare și un proces postvânzare neplanificat."
         },
         {
-          "title": "Folosește datele reale ale coletului",
-          "text": "Introdu destinația, greutatea, dimensiunile și tipul mărfii în estimatorul oficial. Compară restricțiile și regulile de facturare ale rutelor disponibile. O estimare nu este o factură finală."
+          "title": "Oferă calculatorului date utile",
+          "text": "Începe cu pagina oficială de estimare OOPBuy. Introdu destinația și datele cerute. Folosește cele mai bune informații de greutate și dimensiuni disponibile și notează-le. O ofertă fără presupunerile din spate este greu de comparat cu o valoare ulterioară.\n\nÎnainte de sosire, unele date pot fi incerte. Păstrează incertitudinea vizibilă. La haine, folosește un scenariu de greutate mică și unul mare dacă lipsesc măsuri fiabile. La produse rigide sau voluminoase, investighează dimensiunile ambalate, fără să presupui că greutatea explică singură costul.\n\nActualizează estimarea când apar informațiile depozitului. Dacă diferența este semnificativă, identifică datele schimbate înainte de rută. O cutie suplimentară, o mărime mai mare sau protecția pot modifica pachetul tarifat. Consideră calculatorul instrument de planificare și confirmă suma reală în fluxul actual de creare a coletului."
         },
         {
-          "title": "Alege ambalajul cu atenție",
-          "text": "Ambalajul influențează protecția și dimensiunea coletului. Înainte de confirmare, întreabă cum eliminarea sau întărirea ambalajului schimbă oferta și protecția. Urmărește în cont termenul de depozitare al fiecărui articol."
+          "title": "Compară greutatea reală și volumul",
+          "text": "Greutatea reală descrie cât cântărește coletul ambalat. Greutatea dimensională sau volumetrică este modul unor servicii de a considera spațiul ocupat. Regulile rutei determină folosirea acestor valori; nu aplica un divizor găsit într-un ghid fără legătură.\n\nIa un exemplu ilustrativ. O cutie de 40 pe 30 pe 25 de centimetri ocupă 30.000 de centimetri cubi. O cutie de 35 pe 25 pe 20 ocupă 17.500 de centimetri cubi. A doua folosește mai puțin spațiu, dar diferența nu dovedește singură o anumită economie. Ruta, greutatea reală și treptele de tarifare contează încă.\n\nÎntreabă dacă cifrele descriu articolul, ambalajul vânzătorului sau coletul internațional complet. Sunt lucruri diferite. Ghidul OOPBuy precizează dependența costului final de măsurătorile și greutatea coletului, astfel că datele ambalării complete sunt esențiale la confirmarea bugetului."
+        },
+        {
+          "title": "Compară rutele pe aceeași bază",
+          "text": "O comparație utilă începe cu eligibilitatea. Verifică dacă ruta acceptă destinația, categoriile, dimensiunile și greutatea. Un tarif publicitar mic este irelevant dacă linia nu poate transporta bunurile. Disponibilitatea la o comandă trecută nu garantează alta pentru un colet diferit.\n\nPentru fiecare opțiune potrivită, notează totalul, intervalul estimat, urmărirea, restricțiile și protecția inclusă ori opțională. Citește condițiile suficient pentru a înțelege ce acoperă taxa suplimentară de protecție. Nu presupune tratament identic pentru orice pierdere, întârziere, daună sau rezultat vamal.\n\nFolosește aceleași presupuneri în comparații. Dacă o estimare utilizează greutate mai mică sau exclude un serviciu ales în altă parte, corectează diferența întâi. Nu există o linie universal optimă: alegerea depinde de colet, destinație, buget, termenele tale și condițiile oferite acum."
+        },
+        {
+          "title": "Verifică restricțiile înainte de cumpărare",
+          "text": "Un produs găsit într-o listă nu dovedește că poate fi cumpărat sau trimis la tine. OOPBuy publică restricții de cumpărare și transport, iar eligibilitatea poate depinde de conținut. Verifică dinainte categoriile incerte, fără să presupui că sosirea în depozit garantează expedierea internațională.\n\nDescrie corect produsul când ceri ajutor. Un aparat cu baterie montată, o sticlă cu lichid și una goală din plastic sunt întrebări diferite. Include linkul sursă și specificațiile relevante pentru ca asistența să evalueze articolul real, nu să ghicească dintr-un nume scurt.\n\nDacă ruta nu acceptă articolul, caută o alternativă legitimă potrivită sau reconsideră achiziția. Nu redenumi conținutul pentru a-l face acceptat de ecran. Păstrează confirmarea cu notițele și verific-o din nou dacă se schimbă produsul, destinația ori ruta la pregătirea coletului."
+        },
+        {
+          "title": "Alege ambalajul în jurul conținutului",
+          "text": "Ambalarea trebuie să echilibreze spațiul și protecția. O geantă rigidă, un accesoriu delicat și un hanorac compresibil nu răspund la fel. Eliminarea tuturor cutiilor sau comprimarea întregului conținut poate produce daune evitabile, chiar dacă micșorează coletul.\n\nAnunțul OOPBuy descrie cutii, modificări ale cutiilor de pantofi, pungi de vid și materiale protectoare, disponibile în funcție de situație. Verifică oferta reală pentru comandă și rută. Dacă ai nevoie de ambalajul original pentru depozitare, prezentare sau retur, clarifică înainte să ceri îndepărtarea.\n\nLa un colet mixt, explică ce articole trebuie să-și păstreze forma sau să fie protejate de cele grele. Întreabă despre ambalarea preliminară dacă date mai precise ar schimba decizia. Citește întâi taxa și anularea. Reambalarea ajută numai dacă rezultatul rezolvă o incertitudine concretă."
+        },
+        {
+          "title": "Bugetează dincolo de transportul internațional",
+          "text": "Registrul total ar trebui să includă bunurile, transportul intern și internațional, serviciile și costurile de plată sau conversie afișate la achitare. În funcție de destinație și rută, pot exista și taxe de import de investigat. Separă estimările de sumele deja plătite.\n\nNu trata o poreclă de rută sau o recomandare informală ca explicație completă a taxelor. Citește descrierea efectivă și întreabă ce este inclus. Dacă un cost rămâne neclar, notează întrebarea în buget în loc să presupui discret zero.\n\nOferă descrieri și valori corecte când se cer. Acest ghid nu stabilește regulile vamale ale unei țări și nu prezice vămuirea. Decizia utilă este dacă totalul, cu o rezervă rezonabilă pentru costuri neclare, rămâne acceptabil. Un produs ieftin poate fi o alegere slabă dacă livrarea anulează economia."
+        },
+        {
+          "title": "Citește estimările ca etape, nu promisiuni",
+          "text": "O estimare de livrare are nevoie de punct de pornire. Expedierea vânzătorului, recepția în depozit, inspecția finalizată, crearea coletului și preluarea transportatorului sunt momente diferite. Identifică faza stării actuale înainte să o compari cu un timp internațional așteptat.\n\nInformațiile oficiale separă deplasarea internă de cea internațională și recunosc întârzieri posibile. Folosește estimarea actuală ca informație de planificare, nu dată garantată. Dacă ai o ocazie fixă, include cumpărarea și pașii depozitului, nu numai traseul transportatorului.\n\nDupă expediere, urmărește înregistrarea coletului și păstrează referința. O comandă marcată expediată se poate deplasa spre depozitul chinez; nu înseamnă neapărat că pleacă deja internațional. Dacă progresul pare inconsistent, oferă asistenței referința potrivită și datele evenimentelor comparate."
+        },
+        {
+          "title": "Verifică încă o dată înainte să plătești transportul",
+          "text": "Privește coletul real ca o decizie completă. Confirmă conținutul, destinatarul, destinația, ambalarea, eligibilitatea, oferta și serviciile. Asigură-te că ai analizat fiecare articol și că pregătirea expedierii nu a ascuns întrebări nerezolvate despre mărime sau stare.\n\nCompară oferta confirmată cu scenariile inițiale. Dacă depășește bugetul, oprește-te și investighează ce alegeri pot schimba legitim rezultatul. Altă rută potrivită, ambalaj revizuit sau altă combinație pot merita evaluate. Nu presupune o reducere până nu ai comparația actuală.\n\nSalvează condițiile rutei și plata finală. Aceste detalii ușurează explicarea întrebărilor de urmărire sau a solicitărilor de ajutor. Planificarea bună înseamnă înțelegerea coletului și condițiilor acceptate, nu alegerea unei linii doar pentru că altcineva a primit repede o expediție diferită."
         }
+      ],
+      "sources": [
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Calculatorul de transport OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Informații de livrare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Instrucțiuni de ambalare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Restricții de cumpărare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "Instrucțiuni OOPBuy pentru ambalarea preliminară",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-haul-packing",
+        "oopbuy-tracking-guide"
       ]
     },
     {
       "slug": "oopbuy-sizing-guide",
-      "tag": "MĂRIME ȘI POTRIVIRE",
-      "title": "O verificare mai bună a mărimii începe acasă",
-      "description": "Compară măsurători în loc să te bazezi pe o etichetă familiară.",
+      "tag": "Mărimi",
+      "title": "Ghid de mărimi OOPBuy: citește tabelele și verifică dimensiunile reale",
+      "description": "Alege haine și încălțăminte printr-o metodă mai clară: compară tabelele vânzătorilor, măsoară o piesă potrivită și cere măsurători țintite în depozit.",
+      "primaryKeyword": "ghid mărimi OOPBuy",
+      "secondaryKeywords": [
+        "tabel mărimi OOPBuy",
+        "mărimi OOPBuy",
+        "mărime haine OOPBuy",
+        "mărime pantofi OOPBuy"
+      ],
+      "takeaways": [
+        "Folosește tabelul anunțului exact și stabilește dacă descrie corpul ori haina.",
+        "Compară aceleași măsurători pe o piesă pe care o ai și o porți cu plăcere.",
+        "Eticheta corectă nu garantează potrivirea; clarifică dimensiunile importante înainte de expediere."
+      ],
       "sections": [
         {
-          "title": "Măsoară ceva care îți vine bine",
-          "text": "Alege un articol similar pe care îl ai deja. Pentru îmbrăcăminte, notează măsurătorile relevante cu articolul întins; pentru încălțăminte, folosește metoda vânzătorului. Păstrează aceleași unități."
+          "title": "Începe cu anunțul, nu cu o conversie universală",
+          "text": "Cel mai util ghid de mărimi OOPBuy începe cu o limitare: nu presupune că toți vânzătorii folosesc același tabel. Eticheta medium, un număr de pantof sau recomandarea de înălțime pot însemna lucruri diferite. Tabelul produsului exact este locul de unde începi comparația.\n\nOOPBuy este agent de cumpărare și logistică, iar specificațiile provin din anunțul original. Alegerea mărimii obișnuite nu dovedește că haina comandată va avea dimensiunile uneia de la alt vânzător. Tratează etichetele familiare ca identificatori până când măsurile le dau sens.\n\nSalvează tabelul și varianta la comandă. Dacă anunțul se schimbă, vei ști încă ce informație ți-a ghidat alegerea. Captura trebuie să includă identitatea produsului și explicația metodei de măsurare, nu doar rândul mărimii preferate."
         },
         {
-          "title": "Citește anunțul exact",
-          "text": "Etichetele de mărime pot diferi între vânzători și modele. Compară măsurătorile tale cu tabelul articolului exact. Verifică dacă o valoare este o lățime măsurată întins, o circumferință sau o lungime."
+          "title": "Măsoară ceva care îți vine deja bine",
+          "text": "O referință practică este o piesă pe care o ai, o porți și o găsești confortabilă pentru același scop. Așaz-o pe o suprafață plană fără să deformezi materialul. Măsoară dimensiunile relevante noii cumpărături și notează atât cifra, cât și metoda.\n\nLa o cămașă pot conta lățimea între axile, umerii, lungimea spatelui și mâneca. La pantaloni, lățimea taliei, înălțimea frontală a șezutului, coapsa și lungimea interioară. Nu ai nevoie de orice măsură posibilă; prioritizează ceea ce decide de obicei dacă această categorie funcționează pentru tine.\n\nAlege o referință cu adevărat comparabilă. Un hanorac larg nu indică bine cum vrei să stea o cămașă mulată, iar pantalonii elastici se comportă diferit de țesătura rigidă. Scrie cum se simte piesa și ce ai schimba. Astfel măsurile devin o țintă personală utilă, nu o listă inexplicabilă de numere."
         },
         {
-          "title": "Clarifică din timp nelămuririle",
-          "text": "Întreabă despre măsurătorile neclare înainte de a comanda. Dacă ai nevoie de măsurători suplimentare ale comenzii, confirmă disponibilitatea și costul serviciului. Niciun tabel de mărimi nu poate garanta singur potrivirea."
+          "title": "Află ce măsoară tabelul",
+          "text": "Înainte să compari, stabilește dacă tabelul arată măsuri ale corpului, ale hainei finite sau intervale recomandate purtătorului. Sunt întrebări diferite. Dimensiunea pieptului hainei include spațiul proiectat în ea, în timp ce măsura corpului descrie persoana. Confuzia poate provoca o eroare majoră.\n\nVerifică unitățile și dacă cifra este lățime ori circumferință. O lățime plană a pieptului de 54 de centimetri nu este aceeași dimensiune ca o circumferință de 54. Dublarea lățimii poate oferi în unele situații o aproximație, dar nu reproduce toate aspectele formei.\n\nDacă tabelul folosește inci, convertește consecvent: un inch este egal cu 2,54 centimetri. Păstrează cifra originală lângă conversie pentru a observa erorile. Când titlurile sunt neclare sau traducerea lasă metoda ambiguă, cere lămuriri înainte să consideri rândul dovadă că mărimea va veni bine."
+        },
+        {
+          "title": "Alege partea de sus după dimensiunile importante",
+          "text": "Începe cu dimensiunea care îți creează cel mai des probleme. Dacă de obicei cămășile strâng la piept, compară întâi lățimea pieptului. Dacă mânecile sunt scurte, fă lungimea lor decisivă. Apoi verifică dacă celelalte dimensiuni rămân compatibile cu potrivirea preferată.\n\nPrivește construcția. Un umăr căzut sau o mânecă raglan poate face o măsură familiară mai greu de comparat direct cu o mânecă montată convențional. Întreabă unde începe și se termină măsurarea și folosește desenul vânzătorului dacă există.\n\nDe exemplu, jacheta de referință poate avea 56 de centimetri lățime plană a pieptului și 67 lungime pe spate. Un candidat cu piept similar, dar corp mult mai scurt poate sta foarte diferit. Compară toate dimensiunile importante, nu alege doar fiindcă un număr coincide bine."
+        },
+        {
+          "title": "Verifică pantalonii dincolo de talie",
+          "text": "Mărimile pantalonilor devin mai clare când analizezi împreună talia, înălțimea șezutului, coapsa și lungimea interioară. O talie aparent corectă nu garantează mișcare confortabilă sau silueta dorită. O înălțime diferită poate schimba și locul unde stă betelia, influențând cum se simte o măsură pe corp.\n\nDacă talia este elastică, stabilește dacă tabelul indică valoarea relaxată ori întinsă. Nu compara o măsură întinsă a vânzătorului cu una relaxată a pantalonilor tăi. Distincția contează și când analizezi o fotografie cu bandă de măsurat din depozit.\n\nObservă lungimea și croiala dorite. Două perechi cu aceeași lungime interioară pot arăta diferit prin șezut, forma cracului și deschidere. Folosește referința pentru a identifica schimbarea dorită, precum mai mult spațiu la coapsă sau o deschidere îngustă. Este mai util decât să întrebi dacă pantalonii vânzătorului sunt în general mari ori mici."
+        },
+        {
+          "title": "Folosește cu grijă tabelele de încălțăminte",
+          "text": "Notează sistemul de mărimi al vânzătorului și citește indicațiile despre lungimea piciorului. Nu converti o etichetă EU, UK ori US familiară cu un tabel fără legătură fără să verifici aceeași convenție. Dacă tabelul lipsește, incertitudinea rămâne.\n\nMăsoară ambele picioare conform metodei vânzătorului când se cer măsuri corporale. Ține separat lungimea piciorului, branțului, interiorului pantofului și tălpii exterioare. Nu sunt interschimbabile. Talpa poate depăși spațiul disponibil piciorului, iar forma branțului poate complica o comparație dreaptă.\n\nLungimea este doar o parte a potrivirii. Lățimea, forma vârfului, spațiul de deasupra piciorului, șosetele și utilizarea afectează confortul. Compară cu o pereche asemănătoare și pune o întrebare precisă dacă o măsură este esențială. Evită reguli universale de a lua mereu o mărime mai mare sau de a adăuga aceeași marjă fiecărui pantof."
+        },
+        {
+          "title": "Ia în calcul materialul și potrivirea dorită",
+          "text": "Măsurile restrâng opțiunile, dar nu descriu toate aspectele purtării. Structura, elasticitatea, căptușeala și croiala influențează mișcarea hainei. Folosește informația reală din anunț când există; nu deduce compoziția exactă ori gradul de întindere numai dintr-o fotografie.\n\nExplică-ți utilizarea înainte să alegi între mărimi apropiate. O haină peste straturi groase poate necesita altă potrivire decât o cămașă direct pe corp. O siluetă largă poate fi intenționată, dar verifică în continuare umerii, mâneca și lungimea totală față de cum vrei s-o porți.\n\nDacă anunțul menționează variații de măsurare, include incertitudinea. Nu construi alegerea pe o diferență minusculă pe care metoda nu o distinge fiabil. Dacă două mărimi par la fel de plauzibile, identifică compromisul important pentru tine, fără să pretinzi că tabelul oferă un răspuns perfect."
+        },
+        {
+          "title": "Cere o măsurătoare țintită în depozit",
+          "text": "Anunțul OOPBuy despre servicii personalizate descrie cereri de detalii și măsurători, inclusiv dimensiunile hainelor și lungimea pantofului ori branțului. Verifică opțiunile și eventualele costuri actuale. O cerere țintită este utilă dacă răspunde unei întrebări importante lăsate de tabelul vânzătorului.\n\nPrecizează metoda. De exemplu, cere cămașa întinsă și măsurată între cusăturile axilelor fără întindere. Pentru lungimea interioară, indică cusătura dintre picioare și tivul drept puncte finale. Solicită o fotografie care arată banda și ambele capete împreună.\n\nCompară rezultatul cu referința prin aceeași metodă. O etichetă fotografiată și o haină măsurată oferă dovezi diferite. Anunțul de inspecție limitează ce stabilește controlul standard; o etichetă corectă nu înseamnă că potrivirea reală a fost deja verificată pentru tine."
+        },
+        {
+          "title": "Decide potrivirea înainte de transportul internațional",
+          "text": "Revezi măsurile și scopul înainte să incluzi articolul în colet. Dacă lipsește o dimensiune esențială, cere-o cât încă poți decide informat asupra produsului din depozit. Dacă dovezile arată o diferență mare, investighează rapid opțiunile postvânzare, fără să speri că potrivirea se schimbă în tranzit.\n\nPăstrează tabelul, mărimea, fotografiile și răspunsul asistenței împreună. Evidența face problema ușor de explicat și deosebește varianta greșită de un articol corect etichetat a cărui croială nu îți vine. Situațiile diferă și pot avea soluții diferite.\n\nDupă livrare, măsoară din nou la fel și notează comportamentul la purtare. Construiește o referință privată din experiența reală, cu preferințe și limite. În timp, este mai utilă decât etichete fără explicații sau recomandări generale copiate de la cumpărături fără legătură."
         }
+      ],
+      "sources": [
+        {
+          "label": "Acordul utilizatorului OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "Informații despre inspecția OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-spreadsheet-guide"
       ]
     },
     {
       "slug": "oopbuy-product-links",
-      "tag": "LINKURI EXPLICATE",
-      "title": "Un produs, două ID-uri diferite",
-      "description": "De ce contează ID-ul articolului vânzătorului când deschizi o descoperire.",
+      "tag": "Linkuri de produse",
+      "title": "Linkuri OOPBuy: găsește articolul corect și verifică fiecare variantă",
+      "description": "Învață să verifici linkuri OOPBuy și Weidian, să separi ID-urile sursă de numerele de catalog, să rezolvi linkuri nefuncționale și să înțelegi afilierea.",
+      "primaryKeyword": "linkuri produse OOPBuy",
+      "secondaryKeywords": [
+        "linkuri Weidian OOPBuy",
+        "convertor linkuri OOPBuy",
+        "URL produs OOPBuy",
+        "linkuri listă OOPBuy"
+      ],
+      "takeaways": [
+        "Păstrează linkul original al platformei și verifică pagina deschisă.",
+        "Separă referința catalogului de identificatorul sursă din URL-ul de cumpărare.",
+        "Verifică varianta exactă și plata actuală; un cod de afiliere nu garantează reducere."
+      ],
       "sections": [
         {
-          "title": "Un număr de catalog identifică pagina",
-          "text": "CNBuyCha atribuie fiecărei pagini de produs propriul număr de catalog. Acel număr este util în catalog, dar nu este neapărat ID-ul articolului vânzătorului."
+          "title": "Un link funcțional este doar primul control",
+          "text": "Un link OOPBuy trebuie să te conducă la articolul pe care vrei să-l investighezi. Deschiderea paginii este doar începutul. Trebuie să confirmi produsul, anunțul vânzătorului, opțiunile și prețul actual față de așteptările create de catalogul sau lista unde l-ai găsit.\n\nGhidul descrie folosirea linkurilor sau numelor pentru găsirea bunurilor înainte de specificații și cantitate. Procesul depinde de informațiile anunțului particular. Nu presupune că orice adresă dintr-o postare sau platformă poate fi importată corect ori cumpărată fără alte verificări.\n\nPăstrează sursa originală lângă adresa OOPBuy. Dacă titlul este tradus diferit, imaginea se schimbă sau pagina nu se încarcă, sursa oferă o bază mai bună pentru identificare. O poreclă precum geantă neagră de zi cu zi nu distinge mai multe anunțuri similare."
         },
         {
-          "title": "Linkul vânzătorului identifică articolul",
-          "text": "Pentru un anunț Weidian, butonul de cumpărare folosește ID-ul articolului din URL-ul original al vânzătorului. Deschide acel articol în OOPBuy cu codul de invitație afiliat al acestui site."
+          "title": "Deosebește referința catalogului de ID-ul produsului",
+          "text": "Cataloagele independente atribuie frecvent numere proprii intrărilor. Platforma de origine folosește alt identificator pentru anunț. Numerele au scopuri diferite și nu trebuie înlocuite unul cu altul la deschiderea sau construirea unui link de cumpărare.\n\nÎn exemplul OOPBuy Tab, 3470 este referința CNBuyCha. Numărul 7876894732 este identificatorul sursă din calea produsului Weidian. O pagină de catalog numerotată 3470 nu înseamnă că adresa OOPBuy corespunzătoare trebuie să se termine în 3470.\n\nEtichetează clar câmpurile: referință catalog, platformă sursă, link original și link OOPBuy. Păstrează adrese complete, nu doar cifre. Ajută mai ales când platformele au formate diferite sau cineva distribuie o captură de catalog fără linkul care identifică efectiv produsul."
         },
         {
-          "title": "Verifică pagina după deschidere",
-          "text": "Compară titlul, vânzătorul și varianta cu anunțul pe care l-ai analizat. Dacă pagina s-a schimbat sau nu este disponibilă, revino în catalog și alege în mod deliberat un alt anunț."
+          "title": "Citește corect linkul OOPBuy din exemplu",
+          "text": "O rută de cumpărare exemplificativă este https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5. Domeniul identifică OOPBuy, calea produsului un anunț sursă Weidian, iar parametrul final conține un cod de invitație. Numărul din cale aparține produsului sursă, nu numerotării proprii catalogului.\n\nFolosește adresa pentru înțelegerea structurii, nu ca dovadă de stoc, preț, fiabilitate sau adecvare actuale. Deschide pagina și verifică ce conține. Un URL aparent valid poate indica un anunț modificat ori indisponibil, iar ruta singură nu confirmă opțiunile dorite.\n\nParametrul de invitație face parte din linkul afiliat. OOPBuy Tab poate beneficia de utilizarea eligibilă a linkurilor sale. Prezența lui nu dovedește o reducere, un cupon sau transport special pentru tine. Bazează-te doar pe oferta explicit afișată și aplicabilă în plata oficială actuală."
+        },
+        {
+          "title": "Verifică identitatea paginii care se deschide",
+          "text": "Compară pagina încărcată cu sursa folosind mai multe detalii împreună. Privește imaginile, caracteristicile principale, opțiunile, cantitatea și informația vânzătorului unde există. Titlurile pot fi scurtate ori traduse, deci concordanța lor singură este un test slab.\n\nDe exemplu, două rucsacuri pot avea o vedere frontală similară, dar alte compartimente, dimensiuni sau accesorii. Confirmă specificația care te-a motivat. Dacă ai nevoie de un anumit compartiment de laptop sau închidere, găsește-o în anunțul real, fără să deduci aceeași construcție din imagine.\n\nObservă paginile care afișează articole înrudite când originalul dispare. Dacă identitatea nu este clară, oprește cumpărarea și păstrează ambele linkuri când ceri lămuriri. Nu accepta discret un înlocuitor fiindcă miniatura seamănă. Controalele ulterioare de mărime, cost și QC depind de articolul inițial corect."
+        },
+        {
+          "title": "Selectează varianta înainte de compararea prețurilor",
+          "text": "După identificarea anunțului, alege culoarea, mărimea, configurația și cantitatea reale. Prețul de pornire poate aparține altei variante decât prima imagine. Unele pagini combină accesorii, piese individuale ori pachete de dimensiuni diferite.\n\nScrie selecția în cuvinte clare. Mare, gri-antracit, o bucată este mai util decât opțiunea trei, mai ales dacă ordinea se schimbă. Salvează tabelul ori imaginea de specificații care explică alegerea. Vei putea compara mai ușor comanda finală cu intenția.\n\nTratează prețurile USD OOPBuy Tab ca estimări. Verifică suma actuală a opțiunii, livrarea internă afișată și detaliile plății oficiale. Transportul internațional este o întrebare separată de buget. Deschiderea produsului corect nu fixează prețul catalogului și nu îl face total cu livrare."
+        },
+        {
+          "title": "Depanează un link incomplet ori nefuncțional",
+          "text": "Dacă produsul nu se încarcă așa cum te aștepți, revino la pagina originală și copiază adresa din nou. Verifică dacă ai copiat un articol, pagina magazinului, un rezultat de căutare sau o pagină de distribuire. Scurtate pot părea similare, dar nu identifică neapărat același lucru.\n\nÎncearcă sursa completă în căutarea ori introducerea oficială OOPBuy și analizează rezultatul. Dacă tot nu funcționează, notează adresa exactă și eroarea ori informația lipsă. Întreabă asistența dacă anunțul poate fi procesat, fără să presupui că repetarea repară un produs nesuportat sau eliminat.\n\nNu modifica segmente numerice aleatoriu până se încarcă ceva. Poți ajunge la alt anunț cu impresia că ai reparat originalul. Dacă găsești un produs alternativ, tratează-l ca nou candidat și repetă identitatea, mărimea, varianta și costul de la început."
+        },
+        {
+          "title": "Distribuie linkuri cu suficient context",
+          "text": "Un link util distribuit include numele, platforma, varianta intenționată, data verificării și incertitudini importante. Spune dacă distribui o intrare de catalog. Dacă este pagina actuală de cumpărare, precizează diferența. Astfel, următoarea persoană știe ce mai trebuie verificat.\n\nNu prezenta fotografiile catalogului ca dovadă a stării comenzii în depozit. OOPBuy Tab folosește CNBuyCha, iar imaginile importate nu sunt QC verificat al bunurilor tale. Dacă vorbești despre propria comandă, păstrează dovezile separat și elimină date private de cont, adresă și comandă înainte de publicare.\n\nDeclară clar afilierea. Un cod de invitație nu trebuie prezentat ca economie garantată fără verificarea unei oferte aplicabile. Distribuirea responsabilă ajută identificarea produsului și incertitudinilor, fără să sugereze că experiența ta rezolvă toate întrebările comenzii viitoare a altcuiva."
+        },
+        {
+          "title": "Păstrează operațiunile contului în serviciul oficial",
+          "text": "Când intri în cont, folosește https://oopbuy.com/login și verifică destinația din browser. Catalogul te ajută să descoperi, însă serviciul oficial este locul pentru date actuale de cont, comandă și plată.\n\nCitește destinația înainte să introduci credențiale sau să plătești. Un nume cunoscut în titlu, imagine ori invitație nu dovedește singur identitatea site-ului. Dacă o redirecționare te face nesigur, navighează direct la site-ul oficial și folosește acolo linkul sursă.\n\nNu păstra parole sau date de plată în tabelul de referință. Are nevoie doar de suficiente informații pentru produs și decizie. Dintr-o selecție publică elimină și referințele personale ale comenzilor. Aceste obiceiuri permit distribuirea descoperirilor fără amestecarea cercetării cu informații sensibile."
+        },
+        {
+          "title": "Urmează un proces repetabil de la link la comandă",
+          "text": "Folosește aceeași succesiune pentru fiecare candidat: păstrează sursa, deschide rezultatul OOPBuy, confirmă identitatea, selectează varianta, verifică mărimile ori specificațiile și estimează costul complet. Decide apoi dacă informația este suficientă. Consecvența este mai valoroasă decât graba pe o pagină familiară.\n\nDupă comandă, salvează referința privat și compară informația depozitului cu aceeași variantă înregistrată. Linkul corect nu înlocuiește inspecția bunurilor primite. Dacă articolul diferă, selecția și sursa salvate ajută explicarea exactă a problemei.\n\nVerifică din nou înainte de o cumpărare repetată. Un produs comandat cu succes acum câteva luni poate avea altă disponibilitate, variante, preț ori descriere. Păstrează observațiile ca istoric util, dar tratează pagina actuală ca o nouă decizie. Astfel linkurile devin un proces de cercetare gestionabil, nu o colecție de presupuneri."
         }
+      ],
+      "sources": [
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Site-ul oficial OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "Autentificare OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-spreadsheet-guide",
+        "oopbuy-price-check",
+        "oopbuy-sizing-guide"
       ]
     },
     {
       "slug": "oopbuy-price-check",
-      "tag": "COMPARAȚII MAI BUNE",
-      "title": "Compară același lucru, nu doar prețul",
-      "description": "O listă scurtă pentru compararea a două descoperiri promițătoare.",
+      "tag": "Buget",
+      "title": "Verificarea prețurilor OOPBuy: calculează costul înainte să cumperi",
+      "description": "Verifică prețul OOPBuy, compară varianta exactă și pregătește un buget realist pentru transport intern, livrare internațională și alte costuri.",
+      "primaryKeyword": "verificare preț OOPBuy",
+      "secondaryKeywords": [
+        "cost total OOPBuy",
+        "estimare transport OOPBuy",
+        "preț produs OOPBuy"
+      ],
+      "takeaways": [
+        "Compară aceeași variantă și cantitate înaintea prețurilor.",
+        "Consideră prețurile USD estimări, separate de costul complet al primirii comenzii.",
+        "Reverifică bugetul după măsurătorile depozitului și înainte de transportul internațional."
+      ],
       "sections": [
         {
-          "title": "Potrivește opțiunile",
-          "text": "Compară aceeași mărime, culoare, cantitate și aceleași accesorii incluse. Cel mai mic preț afișat se poate referi la o opțiune diferită de cea dorită."
+          "title": "Începe cu prețul de care ai realmente nevoie",
+          "text": "Verificarea prețului OOPBuy trebuie să răspundă practic: îți permiți articolul livrat la adresa ta? Un preț mic răspunde numai parțial. Decizia depinde și de variantă, cantitate, livrarea vânzătorului, transport internațional și alte sume afișate la plată sau cerute la destinație.\n\nOOPBuy Tab este un site independent de descoperire, nu platforma oficială de cumpărare. Datele provin din CNBuyCha, iar prețurile în USD sunt estimări, nu oferte complete de livrare. Găsește candidați în catalog și verifică apoi anunțul actual pe pagina oficială înainte să plătești.\n\nÎncepe cu suma maximă pe care o accepți pentru întreaga achiziție. Dacă bugetul este $80, nu aloca toți cei $80 produselor sperând că transportul va fi neglijabil. Rezervă spațiu pentru costurile încă nestabilite."
         },
         {
-          "title": "Include costurile următoare",
-          "text": "Compară transportul intern și cerințele probabile ale coletului alături de prețul articolului. Confirmă defalcarea finală a plății în OOPBuy în loc să tratezi o estimare de catalog ca pe o ofertă."
+          "title": "Verifică varianta selectată, nu primul număr",
+          "text": "Deschide anunțul actual și selectează culoarea, mărimea, specificația și cantitatea dorite. Unele pagini conțin mai multe produse sau configurații sub același URL. Cel mai mic preț poate corespunde altei opțiuni decât fotografia remarcată. Un accesoriu mic și un set complet pot apărea împreună fără să coste la fel.\n\nNotează opțiunea exact cum apare. Salvează URL-ul, vânzătorul dacă este vizibil, cantitatea și subtotalul curent. Dacă ecranul arată un interval, nu introduce limita inferioară în buget până nu știi că se aplică alegerii tale.\n\nVerifică dacă selectorul cantității schimbă prețul unitar sau comanda minimă. Două anunțuri identice vizual nu sunt direct comparabile dacă unul presupune mai multe bucăți. Clarifică opțiunile traduse ambiguu înainte de plată; o variantă greșită ieftină rămâne greșită."
         },
         {
-          "title": "Păstrează o evidență",
-          "text": "Salvează linkul original al vânzătorului și opțiunile selectate. Aceste detalii te ajută să compari fotografiile comenzii și să explici o nepotrivire dacă ai nevoie de asistență."
+          "title": "Construiește un registru cu linii separate",
+          "text": "Ghidul primei cumpărături separă plata produselor și transportului intern de transportul internațional ulterior. Reflectă separarea în registru. Alocă linii distincte bunurilor, livrării la depozit, transportului internațional și serviciilor opționale. Adaugă comisioane de plată ori valutare doar unde ecranul sau furnizorul le afișează efectiv. Ține taxele destinației și manipularea separat până ai informații fiabile pentru țara și serviciul alese.\n\nMarchează fiecare linie confirmată, estimată sau necunoscută. Este mai util decât să pretinzi aceeași certitudine pentru orice cifră. Subtotalul confirmat poate sta lângă transport estimat, iar un serviciu poate rămâne necunoscut până la ofertă.\n\nPentru mai multe produse, urmărește costurile pe articol și pe colet. Bunurile aparțin articolului; ambalarea comună poate aparține coletului. Dacă distribui costurile comune, etichetează metoda drept calculul tău de buget. Nu este neapărat formula OOPBuy sau a transportatorului."
+        },
+        {
+          "title": "Ține conversia și plata vizibile",
+          "text": "Afișarea convertită în USD ajută comparația, dar nu garantează suma percepută de metoda ta de plată. Privește moneda și totalul de pe ecranul real de confirmare. Dacă furnizorul arată o conversie, compar-o cu bugetul înregistrat în loc să presupui păstrarea cursului din catalog.\n\nFolosește o monedă de lucru și notează cum ai convertit celelalte sume. De exemplu, ține prețul vânzătorului în moneda originală într-un câmp și estimarea USD în altul. Astfel păstrezi reperul inițial când revii la calcul.\n\nNu adăuga un comision universal OOPBuy sau procent de plată inventat. Costurile depind de ruta actuală de plată și opțiunile contului. Controlul util este concret: ce sumă cere plata, în ce monedă și ce cost suplimentar declară efectiv furnizorul?"
+        },
+        {
+          "title": "Estimează transportul cu un colet realist",
+          "text": "OOPBuy oferă o pagină oficială de estimare. Folosește destinația și datele pe care le poți stabili rezonabil despre colet. Citește descrierile serviciilor în loc să alegi exclusiv cea mai mică cifră. Eligibilitatea produselor, dimensiunile, greutatea și destinația influențează alegerile potrivite.\n\nÎnainte de depozit, tratează greutățile și dimensiunile ca presupuneri. Greutatea unei haine poate exclude ambalajul comercial, iar un articol ușor dar voluminos poate ocupa mult spațiu. Verifică datele cerute de calculator și păstrează-le lângă rezultat pentru a reproduce comparația.\n\nRulează și un al doilea scenariu dacă o informație majoră este incertă. Compară coletul așteptat cu unul mai voluminos care păstrează protecția necesară. Este o verificare a sensibilității, nu o predicție. Dacă achiziția încape numai în scenariul optimist, planul necesită mai multă marjă."
+        },
+        {
+          "title": "Parcurge un exemplu complet",
+          "text": "Presupune un coș provizoriu cu o cămașă estimată la $22 și o geantă la $31. Bunurile însumează $53. Notezi $5 pentru livrarea vânzătorului pe baza ecranului și $24 pentru un scenariu ilustrativ internațional. Subtotalul este $82 înainte de servicii, costuri de plată ori taxe ale destinației aplicabile.\n\nAceste numere sunt ipotetice, nu tarife OOPBuy. Arată de ce un coș de $53 nu poate fi numit automat o achiziție de $53. Dacă maximul este $90, restul de $8 este marja pentru costuri nerezolvate, nu o reducere care urmează să apară.\n\nSchimbă scenariul: un colet mai mare crește transportul ipotetic la $34. Subtotalul devine $92 înaintea necunoscutelor. Ai o decizie clară înainte să te angajezi: scoți un articol, mărești bugetul deliberat sau oprești achiziția. Registrul transformă incertitudinea într-o comparație pe baza căreia poți acționa."
+        },
+        {
+          "title": "Compară alternativele pe aceeași bază",
+          "text": "Între doi vânzători, compară aceeași configurație și același rezultat așteptat. Notează mărime, descrierea materialului, accesorii, cantitate și transport. Un preț mai mic poate include mai puține piese sau informații mai slabe despre specificația necesară.\n\nInclude calitatea dovezilor fără o valoare monetară fictivă. Tabelul clar și descrierea bună facilitează decizia; anunțul ambiguu cere întrebări. Imaginile de catalog sunt pentru descoperire și nu sunt verificate ca fotografii ale comenzii tale din depozit.\n\nDe exemplu, $20 plus $6 livrare și $24 plus $2 dau ambele un subtotal de $26. Nu dovedește calitate egală ori același transport final. Elimină doar diferența înșelătoare a prețului principal și îți permite evaluarea celorlalte fapte."
+        },
+        {
+          "title": "Evaluează cupoanele fără să le lași să stabilească bugetul",
+          "text": "O promoție este utilă numai dacă se aplică achiziției intenționate. Citește condițiile actuale ale cuponului: unde se folosește, minimul, serviciile eligibile, expirarea și combinarea. Nu considera textul promoțional dintr-o captură veche un drept activ.\n\nCalculează reducerea după stabilirea coșului. Dacă un articol inutil deblochează un cupon, compară întregul total nou cu cel original. Cumpărarea suplimentară poate crește bunurile, greutatea și volumul chiar dacă reduce o linie a facturii.\n\nȚine evidența reducerii deja incluse în estimare. Numărarea aceleiași economii în calculator și din nou în tabel produce un buget fictiv. Dacă plata finală nu afișează deducerea așteptată, clarifică diferența înainte să finalizezi."
+        },
+        {
+          "title": "Reverifică la fiecare decizie de plată",
+          "text": "Repetă controlul când informația se îmbunătățește: la selectarea variantei actuale, când achiziția este gata de plată și când măsurile depozitului permit oferta internațională. Estimarea ajută la decizie; nu promite că informațiile ulterioare nu o pot modifica.\n\nÎnainte de plată, confirmă articole, cantități, monedă, adresă, servicii, reduceri aplicate efectiv și totalul datorat. Păstrează identificatorii și chitanțele relevante pentru a lega ajustările de cumpărătura corectă. Nu te baza pe o cifră memorată de pe cardul produsului.\n\nO regulă bună este să continui numai dacă suma și incertitudinile rămase se potrivesc bugetului. Dacă un cost necunoscut îți poate schimba decizia, investighează întâi. Folosește apoi ghidul de transport pentru opțiuni și ghidul depozitului pentru momentul când apar măsurători mai bune."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Calculatorul de transport OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-spreadsheet-guide"
+      ]
+    },
+    {
+      "slug": "oopbuy-warehouse-guide",
+      "tag": "Depozit",
+      "title": "Ghidul depozitului OOPBuy: de la sosire la crearea coletului",
+      "description": "Află ce verifici când comanda OOPBuy ajunge în depozit, cum urmărești termenele de stocare și când decizi între retur și expediere.",
+      "primaryKeyword": "ghid depozit OOPBuy",
+      "secondaryKeywords": [
+        "depozitare OOPBuy",
+        "comandă OOPBuy primită",
+        "inspecție depozit OOPBuy"
+      ],
+      "takeaways": [
+        "Urmărește separat data primirii fiecărui articol și verifică politica actuală.",
+        "Analizează fotografiile și măsurătorile propriei comenzi înainte de reunirea articolelor.",
+        "Rezolvă întrebările și eligibilitatea returului înainte de autorizarea expedierii internaționale."
+      ],
+      "sections": [
+        {
+          "title": "Tratează depozitul ca etapă de decizie",
+          "text": "În depozit, cumpărătura la distanță devine mai ușor de evaluat. Compari articolul înregistrat cu opțiunea intenționată, analizezi informațiile inspecției și decizi dacă îl păstrezi, întrebi ceva sau soliciți retur unde este permis. Tot aici planificarea coletului devine concretă.\n\nNu comprima toate etapele în cuvântul sosit. Livrarea vânzătorului, recepția, inspecția, stocarea, pregătirea coletului și expedierea internațională sunt evenimente diferite. Citește starea efectivă din cont și identificatorul articolului sau coletului asociat.\n\nCel mai util este să pregătești verificările înainte de sosire. Salvează varianta și măsurile importante. Când apare înregistrarea depozitului, vei compara cu o așteptare precisă, nu vei încerca să reconstruiești alegerea originală."
+        },
+        {
+          "title": "Creează o evidență separată pentru fiecare articol",
+          "text": "Fă un registru cu referința comenzii, link, culoare și mărime, cantitate, data primirii, starea inspecției și întrebări deschise. Alocă fiecărui articol un rând chiar dacă produsele au fost cumpărate împreună. O singură sesiune poate genera expedieri și date de sosire diferite.\n\nDeosebește numărul comenzii de urmărirea vânzătorului și de numărul internațional ulterior. Ele răspund altor întrebări. Pentru un articol lipsă, referința exactă ajută asistența mai mult decât captura întregului coș.\n\nFolosește etichete personale simple, precum de analizat, întrebare trimisă, păstrez sau retur cerut. Sunt etichete de organizare, nu stări oficiale OOPBuy. Fac vizibilă munca neterminată. Când revii după câteva zile, ar trebui să vezi imediat ce necesită atenție și din ce motiv."
+        },
+        {
+          "title": "Înțelege termenul de depozitare fără presupuneri",
+          "text": "Anunțul oficial stabilește 90 de zile gratuite de la starea Received. Înregistrează data fiecărui articol, nu numai a celei mai noi achiziții din grup. Verifică anunțul actual și contul înainte să te bazezi pe o perioadă de stocare.\n\nInformația mai specifică despre servicii logistice personalizate permite o singură prelungire de 10 CNY pentru până la 30 de zile suplimentare, maximum 120 în total. După acest total, bunurile pot fi considerate abandonate și eliminate. Nu sunt 120 de zile gratuite și nu există prelungire nelimitată conform acelei reguli.\n\nSetează un memento cu suficient timp înainte de expirarea gratuită, pentru lămuriri și pregătire. Dacă ai nevoie de prelungire, verifică disponibilitatea pentru articolul exact și obține confirmarea noii date. Nu presupune că simpla păstrare în depozit cumpără automat timp suplimentar."
+        },
+        {
+          "title": "Analizează dovezile comenzii tale",
+          "text": "Deschide inspecția asociată exact articolului din cont. Compară culoarea, etichetele, mărimea, cantitatea și componentele cu datele salvate. Caută probleme vizibile în imaginile disponibile efectiv. Un detaliu ascuns sau neclar rămâne nerezolvat, nu implicit aprobat.\n\nImaginea de catalog OOPBuy Tab nu dovedește starea articolului din depozit. Catalogul independent folosește CNBuyCha și fotografiile nu sunt verificate ca QC specific comenzii. Separă imaginile pentru descoperire de dovezile propriei achiziții.\n\nAnalizează câte un articol și notează întrebarea cu fotografia deschisă. O notă ca nu se vede cusătura mânecii stângi este mai executabilă decât calitatea pare incertă. Scopul este identificarea a ceea ce poți verifica și a ceea ce cere alt control."
+        },
+        {
+          "title": "Cere măsurătoarea care rezolvă decizia",
+          "text": "Dacă potrivirea sau dimensiunile decid păstrarea, stabilește exact ce trebuie măsurat. La haine poate fi lățimea plană a pieptului ori lungimea între puncte definite. La un accesoriu de depozitare poate conta deschiderea interioară utilă, nu lățimea externă.\n\nVerifică serviciile suplimentare de inspecție sau măsurare disponibile și prețurile înainte de solicitare. Nu presupune că inspecția generală include orice măsură, test funcțional sau verificare de material dorită. Întreabă dacă depozitul poate face exact controlul descris.\n\nO cerere utilă precizează articolul, punctele și dovada. De exemplu: arată banda de la cusătura superioară a umărului până la tiv, cu haina întinsă. Compară rezultatul cu o piesă proprie similară, folosind aceeași metodă; metodele diferite pot crea o discrepanță falsă."
+        },
+        {
+          "title": "Decide returul înainte să planifici coletul",
+          "text": "Dacă articolul diferă de comandă ori nu-l mai vrei, citește imediat politica aplicabilă. Eligibilitatea, timpul, acordul vânzătorului, starea și costurile returului trebuie verificate pentru comanda respectivă. Durata stocării nu creează automat un interval de retur egal.\n\nPăstrează articolul în starea actuală cât investighezi. Cererea de eliminare a ambalajului, etichetelor sau componentelor poate influența returul, în funcție de cerințe. Dacă nu știi, întreabă înainte să autorizezi schimbări. Nu expedia un articol nerezolvat doar ca să termini coletul comun.\n\nTrimite o cerere concisă cu referință, problema exactă și dovezi. Spune rezultatul dorit, precum evaluarea returului sau verificarea unei lipse. Urmărește răspunsul și acțiunea necesară, fără să presupui că depunerea cererii finalizează returul."
+        },
+        {
+          "title": "Alege articolele pregătite să plece împreună",
+          "text": "Consolidarea începe cu ceea ce ai decis să păstrezi. Compară pregătirea, caracteristicile și compatibilitatea cu serviciile disponibile destinației. O haină mică și moale și un obiect fragil structurat pot necesita protecție diferită chiar dacă încap în aceeași cutie.\n\nVerifică dacă așteptarea unei cumpărături ulterioare are sens pentru articolul cel mai vechi. Un cost teoretic mic pe bucată nu ajută dacă întârzierea creează probleme de stocare sau ratează termenul tău. Stabilește limita adăugării produselor și planifică după cele efectiv gata.\n\nFolosește greutățile și dimensiunile disponibile pentru a revedea estimarea. Cere lămuriri dacă nu știi dacă greutatea afișată este a articolului, a ambalajului comercial sau a coletului pregătit. Decizia necesită date comparabile. Cea mai ieftină ofertă provizorie nu este neapărat prețul final ambalat."
+        },
+        {
+          "title": "Scrie instrucțiuni cu priorități clare",
+          "text": "Spune ce ambalaj vrei păstrat și de ce. Dacă originalul este parte din cadou ori protejează o formă delicată, precizează. Dacă vrei să elimini ambalaj exterior inutil, confirmă serviciul și înțelege protecția pierdută. Evită instrucțiuni care spun doar fă-l cât mai mic.\n\nLeagă fiecare cerință de un identificator. Coletul mixt are nevoie de detalii pentru ca instrucțiunea despre o pereche de pantofi să nu fie aplicată tuturor. Verifică tarifele opționale și efectul asupra greutății sau dimensiunilor finale.\n\nÎnainte de creare, revezi lista, adresa, serviciul, declarațiile și sumele datorate. Oferă date adevărate și urmează cerințele curente ale destinației și liniei. Odată depășită faza de depozit, o mărime sau ambalare omisă este mult mai greu de corectat."
+        },
+        {
+          "title": "Închide evidența după trimiterea cererii",
+          "text": "Păstrează referința coletului lângă articolele incluse. Astfel legi clar comanda produsului de expedierea internațională. Salvează lista finală și ambalarea confirmată pentru a verifica conținutul la sosire.\n\nDacă un articol rămâne, ține vizibile data stocării și următoarea acțiune. Crearea unui colet nu rezolvă restul contului. Verifică lista depozitului după pregătire pentru lucruri care așteaptă decizie, răspuns de la vânzător ori colet separat.\n\nProcesul este complet când fiecare articol are un rezultat deliberat: expediat, în așteptarea unei acțiuni documentate sau într-un retur confirmat. Pentru dovezi, continuă cu ghidul QC. Pentru pasul logistic următor, ghidurile de ambalare și urmărire te ajută să păstrezi aceleași evidențe individuale."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Politica de depozitare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "Informații despre inspecția OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-returns-refunds",
+      "tag": "Postvânzare",
+      "title": "Retururi și rambursări OOPBuy: eligibilitate, dovezi și pași următori",
+      "description": "Află ce verifici înainte de returul OOPBuy, cum documentezi problema și de ce aprobarea returului și încasarea rambursării sunt etape separate.",
+      "primaryKeyword": "retururi și rambursări OOPBuy",
+      "secondaryKeywords": [
+        "rambursare OOPBuy",
+        "politică retur OOPBuy",
+        "transport retur OOPBuy"
+      ],
+      "takeaways": [
+        "Verifică termenii imediat după intrarea în stoc; depozitarea nu este interval de retur.",
+        "Păstrează etichetele, ambalajul și dovezile specifice cât se evaluează cererea.",
+        "Cere costurile efective și distinge rambursarea aprobată de banii primiți."
+      ],
+      "sections": [
+        {
+          "title": "Identifică etapa înainte să ceri rambursare",
+          "text": "O întrebare despre rambursarea OOPBuy poate privi cumpărarea încă neexpediată, articolul aflat în depozit, returul spre vânzător sau coletul livrat internațional. Identifică întâi articolul exact și stadiul actual. Următoarea acțiune depinde de ce s-a întâmplat deja.\n\nDeschide comanda oficială, notează referința și ultima stare și stabilește dacă vrei anulare, schimb, retur ori rezolvarea unei probleme după livrare. Cererea acțiunii potrivite reduce riscul unui răspuns la altă întrebare.\n\nOOPBuy Tab este ghid și site independent și nu poate aproba retururi ori accesa contul. Folosește canalul oficial al comenzii sau postvânzării. Ține discuția asociată comenzii afectate când este posibil, astfel încât dovezile și decizia să rămână împreună."
+        },
+        {
+          "title": "Verifică imediat intervalul și condițiile",
+          "text": "Anunțul oficial descrie un interval condiționat de cinci zile, 120 de ore, după Stocked in, începând la ora următoare schimbării stării. Menționează și șapte zile după primirea semnată. Este nevoie de acceptarea returului de către vânzător și de stare revandabilă; cererea la timp nu face orice articol eligibil.\n\nCitește politica actuală și verifică rapid timpul propriei comenzi. Nu aștepta sfârșitul perioadei de depozitare. Stocarea și eligibilitatea returului sunt lucruri diferite, iar termenele trebuie notate separat.\n\nUnele categorii și situații sunt excluse, inclusiv anumite produse personalizate și cele cu ambalaj ori etichete necesare îndepărtate. Dacă situația depășește condițiile, întreabă dacă vânzătorul o poate analiza, fără să presupui un drept standard. Acordul lui rămâne necesar conform anunțului."
+        },
+        {
+          "title": "Construiește dovezile în jurul unei probleme clare",
+          "text": "Salvează informațiile care stabilesc cumpărătura: link, culoare sau mărime, cantitate și descriere relevantă. Adună apoi dovada problemei. Fotografia etichetei poate susține mărimea greșită; un prim-plan clar și o imagine largă arată pata și locul ei pe haină.\n\nDescrie precis diferența. Bleumarin comandat, etichetă neagră este mai util decât produs prost. Dacă o măsură contează, arată metoda și reperul. Așteptarea vagă despre potrivire este mai greu de evaluat decât diferența documentată față de specificația aleasă.\n\nFolosește fotografiile comenzii tale sau ale produsului primit. Imaginile din catalog nu dovedesc starea coletului. Păstrează originalele unde poți și evită editări care ascund contextul, identificatorul, eticheta sau amploarea problemei."
+        },
+        {
+          "title": "Separă serviciul de transportul returului",
+          "text": "Anunțul scutește de taxa de serviciu prima operațiune de retur sau schimb din luna calendaristică. Nu promite transport gratuit. Cererile suplimentare din motive personale pot include 5 RMB de serviciu și costuri de transport intern.\n\nCere o ofertă detaliată pentru situația reală. Anunțul descrie diferit tratamentul transportului inițial al vânzătorului; nu calcula un total universal dintr-o singură frază. Confirmă valoarea bunurilor recuperate, transportul, serviciul și cine plătește fiecare parte.\n\nCompară rezultatul net. O rambursare ipotetică de $18 cu $7 costuri confirmate lasă $11 înaintea altor ajustări. Numerele sunt ilustrative, nu tarife OOPBuy. Calculul ofertei reale ajută să decizi între retur voluntar și păstrarea unui articol altfel acceptabil."
+        },
+        {
+          "title": "Scrie o cerere care permite acțiune",
+          "text": "Păstrează mesajul inițial suficient de scurt pentru analiză, dar cu detaliile esențiale. Include referința, articolul și varianta, datele relevante, problema și rezultatul dorit. Atașează dovezile cele mai puternice, nu zeci de capturi fără legătură. Separă clar problemele mai multor articole.\n\nDe exemplu, explică faptul că eticheta depozitului arată altă mărime decât comanda plătită, numește ambele și cere evaluarea returului ori înlocuirea corectă. Dacă te-ai răzgândit, spune sincer. Alegerea unui motiv fals de defect poate complica verificarea.\n\nCere lămuriri despre următoarea acțiune, sumele necesare și păstrarea articolului intact. Urmează instrucțiunile privind soldul sau plata pentru costuri confirmate. Notează răspunsul și termenul și urmărește întrebările care necesită reacția ta."
+        },
+        {
+          "title": "Urmărește returul ca proces, nu ca buton",
+          "text": "Cererea trimisă, aprobarea, expedierea înapoi, primirea vânzătorului și rambursarea completă sunt repere distincte. Păstrează confirmarea care arată ce reper a fost atins. Confirmarea primirii mesajului de către asistență nu este acceptarea articolului de către vânzător.\n\nCât este analizat returul din depozit, nu pune articolul într-un colet internațional și nu autoriza modificări care afectează starea. Păstrează-l identificabil, cu ambalajul și componentele necesare. Dacă îți schimbi planul, confirmă starea înainte de instrucțiuni contradictorii.\n\nPentru schimb, întreabă ce se întâmplă dacă înlocuitorul lipsește și dacă vor exista transporturi suplimentare. Analizează înlocuitorul sosit ca nouă decizie, fără să presupui rezolvarea automată. Actualizează registrul ca să nu expediezi originalul din greșeală sau să pierzi evidența celui nou."
+        },
+        {
+          "title": "Deosebește aprobarea de banii primiți",
+          "text": "La confirmare, notează suma, moneda, destinația și referința rambursării. Verifică dacă se referă la soldul OOPBuy sau la întoarcerea pe metoda de plată. Sunt rezultate diferite; creditul contului nu este bani deja disponibili în bancă.\n\nAnunțul oficial descrie un interval așteptat de 7–15 zile pentru card după confirmare, dependent de bancă. Consideră-l estimarea anunțului, nu garanție ori termen universal pentru orice rută de plată. Întreabă asistența ce etapă se aplică exact.\n\nDacă perioada a trecut, oferă referința și data confirmării când ceri investigare. Compară monedele plății și rambursării înainte să declari o eroare. Cere explicații pentru deduceri neclare, fără să inventezi comisioane sau să presupui că întregul cost era rambursabil."
+        },
+        {
+          "title": "Raportează prompt după livrarea internațională",
+          "text": "Returul internațional este o decizie mai mare decât returul din depozit. Politica spune că transportul înapoi în China și costurile suplimentare sunt ale clientului, cu păstrarea condițiilor aplicabile. Obține instrucțiuni scrise și evaluare clară a costurilor înainte să trimiți ceva.\n\nDacă pachetul livrat este deteriorat, incomplet sau greșit, păstrează ambalajul exterior, eticheta, lista și fotografiile. Instrucțiunile de după livrare au termene scurte de raportare și dovezi; contactează oficial imediat, fără să aștepți în timp ce decizi dacă problema este suficient de gravă.\n\nLa o posibilă problemă de greutate, anunțul cere cântărire înainte de deschidere. În general, documentează primirea cât de repede este practic și respectă procedurile transportatorului. Nu arunca ambalajul și nu repara cât dovezile sunt necesare. Raportarea începe evaluarea, nu garantează succesul reclamației."
+        },
+        {
+          "title": "Previno retururile evitabile la următoarea comandă",
+          "text": "Pregătirea începe înainte să ai nevoie de retur. Verifică varianta actuală, compară măsurile, estimează transportul și păstrează anunțul original înainte să plătești. Reduci problemele de opțiune greșită sau descoperirea unui cost de livrare peste buget.\n\nÎn depozit, verifică rapid dovezile proprii și cere măsurătorile cât încă poți decide. Dacă nu ești sigur, amână îndepărtarea ambalajului și crearea coletului până la răspuns. O decizie clară de păstrare ori retur este mai utilă decât un grup neterminat de produse în stoc.\n\nÎnregistrarea finală trebuie să arate rezolvarea: păstrat, înlocuitor acceptat, retur complet sau rambursare primită la destinația indicată. Pentru lucruri deschise, scrie următoarea acțiune și responsabilul. Folosește ghidurile depozitului și QC pentru aceste verificări de la începutul viitoarelor cumpărături."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Stările comenzilor și coletelor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Probleme după livrarea OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-warehouse-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-price-check"
+      ]
+    },
+    {
+      "slug": "oopbuy-tracking-guide",
+      "tag": "Livrare",
+      "title": "Ghid de urmărire OOPBuy: citește corect actualizările comenzilor și coletelor",
+      "description": "Înțelege urmărirea OOPBuy, separă livrarea vânzătorului de transportul internațional și află ce dovezi colectezi când un colet necesită ajutor.",
+      "primaryKeyword": "ghid urmărire OOPBuy",
+      "secondaryKeywords": [
+        "urmărire OOPBuy",
+        "stare comandă OOPBuy",
+        "urmărire colet OOPBuy"
+      ],
+      "takeaways": [
+        "Verifică dacă privești o comandă de cumpărare sau un colet internațional.",
+        "Urmărește referința exactă și evenimentele transportatorului fără să echivalezi toate stările.",
+        "Pentru investigare, oferă o cronologie concisă și ultimul eveniment confirmat."
+      ],
+      "sections": [
+        {
+          "title": "Identifică mai întâi traseul urmărit",
+          "text": "Cumpărarea OOPBuy implică două etape: vânzătorul trimite bunurile în depozitul chinez, apoi coletul internațional creat merge spre destinația ta. O stare de comandă expediată poate descrie trimiterea vânzătorului, nu un colet deja în drum spre casă.\n\nGhidul oficial deosebește comenzile de cumpărare de comenzile de colet. Folosește Shipped pentru expedierea vânzătorului în primul proces și preluarea de transportator în celălalt. Verifică întotdeauna contextul paginii și identificatorul înainte să interpretezi cuvântul. Distincția explică multe actualizări aparent contradictorii.\n\nÎntreabă-te concret: aștept produsul în depozit, pregătirea coletului sau livrarea transportatorului? Scrie răspunsul lângă referința potrivită. Astfel investighezi etapa corectă în loc să cauți internațional o cumpărătură internă care nu a devenit încă un colet internațional."
+        },
+        {
+          "title": "Ține identificatorii potriviți împreună",
+          "text": "Creează o evidență care leagă achiziția de coletul ulterior. Păstrează referința comenzii, livrarea vânzătorului unde există, numărul internațional sau al documentului de transport, serviciul și data expedierii. Dacă unești comenzi, listează-le sub acel colet pentru verificarea ulterioară a conținutului.\n\nGhidul pentru începători îndrumă spre My Waybill și Waybill Details pentru urmărire. Folosește navigarea actuală și detaliile coletului real. O captură fără identificator poate fi greu de interpretat când ai mai multe expedieri simultane.\n\nCopiază numerele atent și păstrează transportatorul afișat alături. Nu presupune că numărul dintr-un ecran este interschimbabil cu orice referință de transportator. Dacă transferul produce alt număr, adaugă-l evidenței existente, nu unei note separate care pierde legătura cu originalul."
+        },
+        {
+          "title": "Citește stările depozitului ca pași operaționali",
+          "text": "Confirmarea livrării vânzătorului poate preceda inspecția și stocarea. Ghidul oficial separă primirea semnată de verificările și pașii ulteriori. O scanare de sosire nu înseamnă neapărat că articolul este gata de inclus în coletul internațional.\n\nCaută mesaje care cer acțiune. Plata suplimentară sau confirmarea poate opri progresul până răspunzi. Citește cererea și explicația reale în loc să tratezi orice stare neschimbată ca întârziere de transport. Dacă nu înțelegi acțiunea, întreabă despre comanda respectivă.\n\nFolosește depozitul pentru evaluarea produsului. Confirmă varianta, fotografiile și întrebările înainte de creare. Progresul logistic nu aprobă potrivirea, performanța ori autenticitatea. Produsul se poate deplasa corect și tot poate necesita o decizie separată din partea ta."
+        },
+        {
+          "title": "Separă pregătirea de deplasarea transportatorului",
+          "text": "După crearea coletului internațional pot rămâne sarcini de depozit înainte de transport. Plata, verificarea, sortarea, ambalarea și preluarea nu sunt evenimente echivalente. Ghidul separă ambalarea terminată de preluare, explicând de ce pregătirea apare înaintea unei scanări de tranzit.\n\nCitește ultimul eveniment și ora. Existența referinței singură nu stabilește că un vehicul sau avion a plecat. Folosește descrierea concretă drept dovadă a ceea ce se știe și nu umple lipsa cu o locație ghicită.\n\nDacă apare o problemă de plată ori adresă, rezolv-o întâi oficial. Dacă pregătirea este finalizată, dar preluarea nu poate fi stabilită, întreabă dacă a avut loc predarea. Este mai ușor de răspuns decât la întrebarea de ce întârzie, fără identificarea fazei."
+        },
+        {
+          "title": "Interpretează pauza fără să inventezi termene",
+          "text": "Actualizările înregistrează evenimente, nu poziția continuă în timp real. O perioadă fără scanare nu îți spune exact unde se află coletul sau de ce lipsesc noutățile. Compară ultimul eveniment confirmat cu informația serviciului tău înainte de concluzii.\n\nNu există un număr unic fiabil de zile care face orice colet OOPBuy întârziat. Procesarea la origine, ruta, destinația, sărbătorile și condițiile locale variază. Folosește estimarea și condițiile actuale, știind că estimarea nu garantează data sosirii.\n\nȚine o cronologie scurtă în loc să reîmprospătezi repetat pagini. Notează expedierea, ultimul eveniment, data verificării și anunțurile relevante rutei. Dacă pauza depășește orientările serviciului sau o revenire promisă lipsește, ai faptele pregătite pentru o întrebare precisă."
+        },
+        {
+          "title": "Răspunde atent cererilor vamale sau de documente",
+          "text": "Dacă urmărirea menționează vama ori documente, citește mesajul exact și stabilește solicitantul. Folosește contactul contului oficial sau serviciul oficial al transportatorului identificat. Nu acționa pe un link de plată nesolicitat doar fiindcă aștepți un colet.\n\nAdună actele reale ale achiziției: descrieri, cantități, chitanțe și referință. Furnizează date corecte când un proces legitim le cere. Nu modifica descrierea ori valoarea pentru un rezultat dorit și nu considera prețul dintr-un tabel drept factură.\n\nÎntreabă asistența ce acțiune este necesară dacă limbajul nu este clar. Un eveniment vamal generic nu stabilește o taxă, confiscarea sau imposibilitatea livrării. Sunt concluzii distincte ce necesită dovezi. Păstrează răspunsurile trimise și datele expedierii lor."
+        },
+        {
+          "title": "Urmărește transferul către livrarea locală",
+          "text": "În etapa locală, verifică dacă detaliile identifică un transportator de destinație ori alt număr. Urmează linkul din înregistrarea verificată când există. Păstrează și referința inițială: asistența o poate folosi pentru a lega evenimentul local de expedierea internațională.\n\nVerifică adresa coletului, inclusiv apartamentul și codul poștal. Dacă apare o tentativă sau un aviz de ridicare, citește opțiunile și termenul transportatorului efectiv. Nu presupune că a doua încercare, redirecționarea sau perioada de ridicare sunt identice între țări și servicii.\n\nLa o cerere de clarificare a adresei, răspunde prin procesul verificat și informează OOPBuy dacă este necesar. Notează modificările ori aranjamentele de ridicare. Planul practic al ultimei predări contează la fel de mult ca urmărirea traseului lung, mai ales dacă nu va fi nimeni acasă."
+        },
+        {
+          "title": "Știi ce faci când livrarea pare greșită",
+          "text": "Dacă apare livrat, dar nu găsești coletul, caută în detalii fotografia, recepția, dulapul de colete ori alt loc indicat. Confirmă adresa asociată și contactează transportatorul local oficial. Cere înregistrarea livrării, fără să presupui o anumită cauză.\n\nInformează OOPBuy cu numărul coletului și răspunsul transportatorului. Dacă pachetul există, dar este deteriorat ori incomplet, păstrează eticheta, ambalajul, lista și fotografiile. Ghidul de după livrare conține termene scurte, deci raportează prompt și urmează instrucțiunile pentru situația ta.\n\nSepară dovada livrării de dovada articolelor. O scanare poate arăta unde a fost lăsat coletul, nu ce produse conținea. Date clare despre ambele niveluri ajută părțile să evalueze fără speculații sau imagini de produse fără legătură."
+        },
+        {
+          "title": "Trimite asistenței o cronologie investigabilă",
+          "text": "O întrebare utilă precizează coletul, serviciul, țara, data expedierii, ultimul eveniment și întrebarea concretă. Include cererile primite de la transportator și dacă ai răspuns. Evită publicarea adresei complete ori a identificatorilor personali în grupuri publice.\n\nDe exemplu, explică faptul că apare preluarea, indică data ultimului eveniment și întreabă dacă serviciul permite investigație la transportator. Dacă s-a promis o actualizare, include referința și data promisă. Întreabă ce faci în continuare și când revii.\n\nPăstrează noile informații în aceeași evidență până la livrare ori rezolvare documentată. Urmărirea ajută cel mai mult când susține o decizie: răspuns, ridicare, păstrarea dovezilor sau investigație. Pentru următorul colet, revino la ghidurile de transport și ambalare înainte să alegi ruta."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Stările comenzilor și coletelor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Informații de livrare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Probleme după livrarea OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-haul-packing",
+      "tag": "Ambalare",
+      "title": "Ambalarea cumpărăturilor OOPBuy: protejează articolele și verifică totalul",
+      "description": "Planifică un colet OOPBuy cu alegeri practice de ambalare, verificarea rutelor și ambalare preliminară înainte să confirmi transportul internațional.",
+      "primaryKeyword": "ambalare cumpărături OOPBuy",
+      "secondaryKeywords": [
+        "ambalare preliminară OOPBuy",
+        "ambalaj OOPBuy",
+        "expediere cumpărături OOPBuy"
+      ],
+      "takeaways": [
+        "Alege ambalajul după protecția necesară și ruta care poate transporta articolele.",
+        "Eliminarea cutiilor și comprimarea sunt compromisuri, nu economii automate sau recomandări universale.",
+        "Rezultatul ambalării preliminare depinde de păstrarea rutei și configurației."
+      ],
+      "sections": [
+        {
+          "title": "Stabilește un scop clar al ambalării",
+          "text": "Un plan bun OOPBuy echilibrează protecția, mărimea, costul și starea în care vrei articolele. Obiectivele se pot contrazice. Cutia comercială poate păstra prezentarea, dar ocupă spațiu; scoaterea ei reduce volumul, însă produsul poate necesita altă protecție.\n\nDecide ce contează la fiecare articol. Un cadou poate avea nevoie de cutia originală. O geantă structurată poate cere suport pentru formă. O haină moale lavabilă are altă problemă decât un accesoriu fragil. Nu aplica aceeași instrucțiune tuturor fiindcă un videoclip a arătat că funcționează pentru alte cumpărături.\n\nScopul este un colet potrivit, clar specificat, cu cost înțeles. Cea mai mică cutie nu este automat cea mai bună, iar toate opțiunile de protecție pot fi inutile. Fiecare alegere trebuie să răspundă unei întrebări concrete despre produs, utilizare sau transport."
+        },
+        {
+          "title": "Include doar articolele decise pentru păstrare",
+          "text": "Termină decizia despre produs înaintea ambalării. Analizează varianta și dovezile depozitului, apoi clarifică mărimea, cantitatea ori starea vizibilă. Dacă lipsește o măsură, solicit-o înainte să angajezi articolul în transport internațional.\n\nȚine cont de retur când schimbi ambalajul. Îndepărtarea etichetelor, sigiliilor, accesoriilor ori ambalajului obligatoriu poate afecta îndeplinirea condițiilor. Întreabă întâi despre articolul neclar. Economisirea spațiului este o afacere slabă dacă încă te gândești să-l returnezi.\n\nCreează lista finală cu referință lângă fiecare produs. Marchează ce rămâne în depozit și o limită pentru achiziții noi. Previne extinderea continuă și oferă un set stabil pentru compararea rutelor, cererea serviciilor și verificarea coletului pregătit."
+        },
+        {
+          "title": "Înțelege rolul greutății și dimensiunilor",
+          "text": "Coletul ocupă spațiu și are greutate pe cântar. Serviciile pot folosi reguli tarifare diferite; citește regula rutei reale. Nu prelua un divizor volumetric de la alt agent, transportator ori forum ca și cum ar controla oferta ta.\n\nGhidul oficial spune că suma finală depinde de dimensiunile și greutatea măsurate. Estimarea inițială rămâne provizorie până cunoști măsurile ambalate relevante. Greutatea produselor separate nu este neapărat cea a cutiei cu produse și protecție.\n\nDe exemplu, un articol ușor în ambalaj rigid voluminos poate fi mai sensibil la dimensiune decât unul dens compact. Explică de ce ambalarea contează, nu prezice economie fixă. Compară ofertele reale pentru configurația eligibilă și păstrează regula serviciului lângă cifră."
+        },
+        {
+          "title": "Alege protecția pentru produs, nu pentru fotografie",
+          "text": "Anunțul OOPBuy descrie cutii, ambalare simplă, pungi de vid, protecție cu bule și folie extensibilă. Disponibilitatea depinde de serviciu și colet. Tratează meniul ca opțiuni de evaluat, nu o listă de îmbunătățiri necesare oricărei expedieri.\n\nGândește-te ce daună previi. O pungă moale pentru haină rezolvă altceva decât amortizarea unui obiect fragil. Cutia singură nu explică sprijinirea articolului în interior, iar mai multe straturi de folie nu înlocuiesc instrucțiunea clară pentru o parte vulnerabilă.\n\nÎntreabă dacă serviciul este potrivit când nu cunoști materialul ori construcția. Compresia poate fi nepotrivită obiectelor dependente de formă sau cu detalii delicate. Nu decide numai după miniatura catalogului, care poate ascunde rigiditatea, fragilitatea sau volumul real."
+        },
+        {
+          "title": "Decide explicit soarta cutiilor comerciale",
+          "text": "Dacă vrei păstrarea cutiei de pantofi sau a altui ambalaj, spune pentru articolul respectiv. Dacă te gândești la scoatere ori pliere, verifică opțiunea și înțelege ce rămâne în jurul produsului. Originalul poate ajuta prezentarea, stocarea ori protecția chiar dacă nu intenționezi revânzarea.\n\nCompară beneficiul cu urmarea. Scoaterea cutiei reduce volumul, dar poate elimina sprijinul sau separa componente care trebuie ținute împreună. O cutie exterioară înlocuitoare poate fi încă necesară. Nu există o regulă universală că eliminarea cutiilor ieftinește orice colet după toate alegerile.\n\nLa o expediere mixtă, notează individual: păstrează cutia cadoului, scoate numai cartonul inutil de transport sau întreabă înainte de schimbare. Evită formulări ca elimină toate cutiile când de fapt te referi la un singur strat exterior de unică folosință."
+        },
+        {
+          "title": "Verifică ruta înainte să combini totul",
+          "text": "Prezența în catalog nu dovedește transportul prin serviciul preferat. Ghidul OOPBuy menționează restricții pentru baterii, iar anunțul separat identifică articole mari care cer ambalare proprie. Urmează marcajele actuale ale depozitului și condițiile pentru bunurile reale.\n\nCompară lista completă cu serviciul disponibil. Dacă un produs schimbă eligibilitatea, compară coletul comun cu expedierea separată folosind oferte reale și aceeași protecție. Nu presupune că reunirea câștigă întotdeauna: coletele suplimentare și rutele diferite pot schimba calculul în direcții opuse.\n\nDescrie corect produsele și verifică categoriile incerte înainte de cumpărare. Ambalarea nu face bunurile interzise acceptabile și nu ocolește cerințele destinației. Dacă serviciul nu le transportă, întreabă despre o alternativă legală eligibilă sau pasul potrivit cât sunt încă în depozit."
+        },
+        {
+          "title": "Folosește ambalarea preliminară pentru incertitudini reale",
+          "text": "Instrucțiunile Parcel Rehearsal descriu alegerea subcomenzilor eligibile și trimiterea unei cereri cu destinatar și ambalaj. Taxa publicată este 20 CNY. Verifică fluxul și prețul curente înainte să plătești, mai ales dacă opțiunile diferă de ghid.\n\nServiciul ajută când măsurile ambalate pot modifica decizia de transport. Stabilește întâi configurația. Anunțul condiționează calculul de păstrarea rutei, metodei și detaliilor de ambalare; modificările ulterioare pot schimba rezultatul și taxa finală.\n\nVerifică anularea înainte de cerere. Anunțul o permite înainte de scoaterea bunurilor de pe raft și descrie restricții ulterior; nu presupune rambursare după începutul lucrului. Cere lămuriri dacă starea este neclară. Este pregătire plătită, nu garanție de rapiditate sau eliminare a tuturor incertitudinilor transportului."
+        },
+        {
+          "title": "Scrie instrucțiuni pe care altcineva le poate urma",
+          "text": "Folosește cerințe scurte pe articol, cu prioritate clară. Identifică produsul prin referință, spune ce păstrezi ori elimini și explică protecția. Dacă depinde de posibilități, cere confirmare, nu lăsa depozitul să ghicească între două scopuri incompatibile.\n\nDe exemplu, cere păstrarea cutiei marcate pentru cadou, menținerea conținutului împreună și confirmarea protecției exterioare. Pentru alt articol, întreabă dacă poate fi scoasă ambalarea redundantă a vânzătorului fără schimbarea ambalajului necesar. Sunt cereri de verificare, nu presupuneri că serviciul este inclus.\n\nCompară opțiunile selectate în interfață cu nota scrisă. Cererea de păstrare a cutiei poate contrazice o opțiune de eliminare bifată în alt loc. Verifică taxele înainte și salvează alegerile confirmate. Instrucțiunile clare reduc incertitudinea mai bine decât un paragraf lung cu preferințe, glume și planuri diferite."
+        },
+        {
+          "title": "Verifică pachetul și pregătește primirea",
+          "text": "Înaintea deciziei finale, compară lista, destinatarul, ruta, configurația, măsurile și suma. Confirmă reducerea efectiv aplicată și bugetul total. Prețurile USD de pe paginile de descoperire sunt estimări și nu includ costul complet al primirii cumpărăturilor.\n\nPăstrează referința coletului cu cele ale produselor și confirmările ambalării. La sosire poți verifica piesele și păstrarea ambalajului comercial necesar. Dacă apare o problemă, păstrează rapid dovezile, fără să arunci imediat materialele exterioare.\n\nUn plan reușit înseamnă bunuri sosite acceptabil la costul aprobat conștient. Folosește ghidul de urmărire după expediere și ghidul de retur dacă inspecția arată o problemă înainte. Notează alegerile utile pentru ca următorul plan să pornească de la dovezi."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Instrucțiuni de ambalare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Instrucțiuni OOPBuy pentru ambalarea preliminară",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        },
+        {
+          "label": "Reguli de expediere separată OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        },
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-returns-refunds"
+      ]
+    }
+  ],
+  "guides": {
+    "guide": {
+      "sections": [
+        {
+          "title": "Începe cu o selecție clară",
+          "text": "Alege o categorie și compară câteva anunțuri relevante. Notează numele produsului, linkul sursă, culoarea, mărimea și cantitatea. Prețul din catalog este o referință inițială utilă; verifică opțiunea și suma actuale când deschizi produsul prin OOPBuy. Păstrează întrebările despre dimensiuni, materiale sau accesorii lângă articol. O selecție mică te ajută să observi când două imagini similare reprezintă versiuni sau opțiuni diferite ale vânzătorului."
+        },
+        {
+          "title": "Verifică comanda înainte de plată",
+          "text": "Ghidul OOPBuy descrie cumpărarea prin platformă și primirea bunurilor în depozitul din China. Produsul și livrarea internă se plătesc întâi; transportul internațional se achită separat ulterior. Înainte să comanzi, analizează anunțul încărcat și compară opțiunile cu notițele. Verifică suma și condițiile articolului. Clarifică mărimea, cantitatea sau restricțiile înainte de plată. Păstrează referința comenzii pentru a lega informațiile ulterioare din depozit de cumpărătura corectă."
+        },
+        {
+          "title": "Controlează articolul când apar datele din depozit",
+          "text": "Expedierea vânzătorului și procesarea în depozit sunt etape separate. Când apar datele depozitului, citește starea actuală și analizează fotografiile disponibile. Compară culoarea primită, eticheta mărimii, cantitatea și starea vizibilă cu opțiunea comandată. Dacă un detaliu util nu se vede, întreabă despre disponibilitatea și costul unei fotografii sau măsurători suplimentare. În caz de problemă, verifică rapid opțiunile postvânzare actuale, deoarece eligibilitatea depinde de articol și circumstanțe."
+        },
+        {
+          "title": "Ia decizia privind coletul la final",
+          "text": "Înainte să creezi coletul, verifică fiecare articol inclus, adresa, ruta și condițiile. Folosește estimarea oficială pentru opțiuni potrivite, apoi verifică informațiile coletului real. Ambalajul, dimensiunile măsurate și conținutul pot influența alegerile disponibile. Păstrează împreună referințele comenzii și coletului și folosește contul oficial pentru asistență și urmărire. Ghidurile detaliate explică deciziile despre mărimi, QC, costuri și ambalare de-a lungul procesului."
+        }
+      ],
+      "checks": [
+        "Compară produsul încărcat, varianta și cantitatea cu anunțul sursă.",
+        "Analizează prompt dovezile din depozit și eventualele acțiuni postvânzare.",
+        "Verifică adresa, conținutul și condițiile rutei înainte de trimiterea cererii."
+      ],
+      "sources": [
+        {
+          "label": "Ghidul OOPBuy pentru începători",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Calculatorul de transport OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ]
+    },
+    "qc": {
+      "sections": [
+        {
+          "title": "Identifică fotografiile pe care le analizezi",
+          "text": "Începe cu sursa imaginilor. O fotografie de catalog sau a vânzătorului arată un anunț; imaginile de inspecție ale comenzii tale se referă la articolul primit pentru acea comandă. Verifică referința și opțiunea înainte de decizie. Imaginile de pe acest site provin din catalog și sunt etichetate ca fotografii de produs. Pentru evaluarea articolului primit, folosește dovezile din contul oficial OOPBuy."
+        },
+        {
+          "title": "Verifică identitatea, cantitatea și starea vizibilă",
+          "text": "Citește culoarea, mărimea, versiunea și cantitatea comandate alături de imagini. Privește întâi articolul complet, apoi zonele importante. La pantofi, compară ambele bucăți și etichetele vizibile. La haine, verifică silueta, cusăturile și imprimeul. La genți și accesorii, controlează închiderile, curelele și piesele incluse. Notează diferența exactă și fotografia care o arată, în locul unei impresii generale că ceva nu este în regulă."
+        },
+        {
+          "title": "Pune o întrebare la care poate răspunde altă imagine",
+          "text": "O cerere utilă identifică o decizie și dovada necesară. Poți cere o etichetă lizibilă, vederea unei închideri ascunse sau o măsurătoare cu ambele capete ale benzii vizibile. Confirmă disponibilitatea serviciului și costul afișat înainte să continui. Fotografiile au limite: lumina schimbă culoarea, perspectiva deformează proporțiile, iar imaginea nu dovedește funcționarea internă, durabilitatea sau compoziția materialului. Lasă întrebările neclarificate deschise, fără să ghicești."
+        },
+        {
+          "title": "Rezolvă problemele înainte de crearea coletului",
+          "text": "Compară ceea ce observi cu anunțul și decide dacă mergi mai departe, ceri lămuriri sau contactezi postvânzarea. Păstrează opțiunea aleasă, imaginile și o scurtă explicație. OOPBuy publică informații de inspecție și retur; consultă politica actuală și opțiunile comenzii înainte să presupui un rezultat. Articolul QC complet oferă verificări pe categorii, iar ghidurile de mărimi și retur arată când o altă măsurătoare sau o solicitare rapidă poate schimba decizia."
+        }
+      ],
+      "checks": [
+        "Folosește dovezile inspecției pentru comanda și opțiunea corecte.",
+        "Cere un unghi clar sau o măsurătoare pentru o întrebare concretă rămasă deschisă.",
+        "Documentează problemele vizibile și verifică postvânzarea actuală înainte de expediere."
+      ],
+      "sources": [
+        {
+          "label": "Informații despre inspecția OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Servicii logistice personalizate OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Retururi și rambursări OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    "shipping": {
+      "sections": [
+        {
+          "title": "Pregătește datele estimării",
+          "text": "Începe cu destinația și produsele pe care vrei să le trimiți. Adună greutatea și dimensiunile disponibile și identifică elementele care cer manipulare specială ori verificarea rutei. Introdu datele relevante în calculatorul oficial și analizează rutele rezultate. Înaintea măsurătorilor din depozit, datele sunt presupuneri. Păstrează-le vizibile pentru a le înlocui ulterior. O estimare utilă explică ce colet este analizat, fără să trateze un preț afișat drept universal."
+        },
+        {
+          "title": "Citește condițiile rutei împreună cu prețul",
+          "text": "Compară rute potrivite folosind aceleași date. Verifică metoda de tarifare, conținutul acceptat, limitele de dimensiuni și celelalte condiții. Greutatea reală descrie masa; tarifarea volumetrică folosește spațiul ocupat conform regulii rutei. O cutie mai mare poate schimba comparația chiar cu aceleași articole. Folosește factorul și rotunjirea afișate și nu importa formule de la alt transportator sau estimare fără legătură."
+        },
+        {
+          "title": "Revezi întregul buget și ambalajul",
+          "text": "Păstrează estimarea internațională lângă celelalte sume ale comenzii. Prețul articolului, livrarea la depozit, serviciile alese și eventualele costuri de plată ori destinație pot apărea în etape diferite. Verifică fiecare sumă acolo unde este prezentată. Ambalarea trebuie să echilibreze protecția și mărimea: bunurile fragile sau ușor de strivit pot necesita altă abordare decât hainele moi. Întreabă despre serviciile disponibile și compară coletul propus înainte să presupui că eliminarea ambalajului sau reunirea articolelor reduce totalul."
+        },
+        {
+          "title": "Verifică din nou coletul real înainte de trimitere",
+          "text": "Când apar măsurătorile după ambalare și opțiunile actuale, repetă comparația folosind aceste informații. Confirmă destinatarul, conținutul, condițiile și suma cerută. Consideră termenele estimate drept informații de planificare și rezervă timp pentru etapele din înregistrări. Păstrează referința coletului și urmărește actualizările în contul oficial. Ghidurile complete de transport, cost total, ambalare și urmărire explică deciziile din spatele acestei ultime verificări."
+        }
+      ],
+      "checks": [
+        "Compară rutele cu aceeași destinație, conținut, greutate și dimensiuni.",
+        "Folosește regulile de tarifare și restricțiile rutei selectate.",
+        "Recalculează pe baza datelor reale înainte de confirmarea expedierii."
+      ],
+      "sources": [
+        {
+          "label": "Calculatorul de transport OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Informații de livrare OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Explicații OOPBuy pentru prima cumpărătură",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
         }
       ]
     }
-  ]
+  },
+  "categoryIntros": {
+    "shoes": {
+      "title": "Lista OOPBuy de încălțăminte",
+      "intro": "Explorează pantofi după model, utilizare și detaliile importante pentru potrivire. Compară opțiunea exactă a vânzătorului înainte să te bazezi pe o mărime familiară. Fotografiile ajută selecția; măsurătorile vânzătorului și dovezile propriei comenzi susțin următoarea decizie. Include pantoful stâng și drept în verificări.",
+      "checks": [
+        "Compară datele vânzătorului cu o pereche potrivită pe care o porți deja.",
+        "Verifică modelul, culoarea, eticheta mărimii și ambii pantofi în fotografiile comenzii.",
+        "Ia în calcul protecția și spațiul pentru pereche și cutia acesteia."
+      ]
+    },
+    "hoodies-sweaters": {
+      "title": "Hanorace și pulovere OOPBuy",
+      "intro": "Explorează hanorace și pulovere ținând cont de potrivirea preferată. Lățimea pieptului, lungimea și forma umerilor permit comparații mai utile decât o singură literă. Compară măsurătorile fiecărui vânzător cu o haină confortabilă și verifică varianta și culoarea. Imaginile arată aspectul; compoziția și gramajul necesită informații fiabile sau confirmare.",
+      "checks": [
+        "Notează lățimea pieptului, lungimea și măsurile umerilor pentru comparație.",
+        "Verifică nuanța aleasă, manșetele, gluga sau decolteul în imaginile disponibile.",
+        "Confirmă în anunț afirmațiile despre material ori gramaj înainte să te bazezi pe ele."
+      ]
+    },
+    "t-shirts": {
+      "title": "Lista OOPBuy de tricouri",
+      "intro": "Găsește tricouri după formă, stilul mânecilor și desenul dorit. Compară măsurătorile și opțiunea selectată înainte de mărime. Diferențe mici de poziționare a imprimeului, construcție a gulerului sau culoare pot separa anunțuri similare. Identifică întrebări prin fotografii, apoi confirmă detaliile prin informațiile vânzătorului și dovezile comenzii din depozit.",
+      "checks": [
+        "Compară lungimea și lățimea pieptului cu un tricou care îți vine bine.",
+        "Potrivește imprimeul, culoarea și versiunea cu anunțul salvat.",
+        "Privește gulerul, cusăturile și poziția imprimeului în fotografiile comenzii."
+      ]
+    },
+    "jackets": {
+      "title": "Lista OOPBuy de jachete",
+      "intro": "Explorează jachete în funcție de straturile purtate dedesubt și construcția necesară. Compară mărimea cu o jachetă similară, ținând cont de propriile preferințe. Verifică închiderile, buzunarele și căptușeala. Fotografiile arată detalii vizibile, în timp ce căldura, impermeabilitatea și materialele necesită dovezi dincolo de aspect.",
+      "checks": [
+        "Compară măsurile cu o jachetă purtată peste straturile intenționate.",
+        "Verifică fermoare, nasturi, buzunare și căptușeala vizibilă în dovezi.",
+        "Ia în calcul efectul structurii și umpluturii asupra protecției și volumului ambalat."
+      ]
+    },
+    "pants-shorts": {
+      "title": "Pantaloni și pantaloni scurți OOPBuy",
+      "intro": "Explorează pantalonii după construcția taliei, înălțimea șezutului, lungime și forma cracului. Aceeași etichetă poate indica potriviri foarte diferite; compară metoda vânzătorului cu o pereche care îți place. Verifică dacă opțiunea este o piesă sau un set și confirmă culoarea și lungimea înainte să tratezi anunțurile similare drept echivalente.",
+      "checks": [
+        "Compară talia, înălțimea șezutului și lungimea interioară cu o piesă potrivită.",
+        "Verifică dacă talia este fixă, elastică ori reglabilă înainte să interpretezi mărimea.",
+        "Potrivește lungimea, culoarea și cantitatea cu opțiunea comenzii."
+      ]
+    },
+    "headwear": {
+      "title": "Pălării și șepci OOPBuy",
+      "intro": "Explorează pălării și șepci ținând cont de circumferință, adâncime și formă. O închidere reglabilă oferă flexibilitate, dar intervalul trebuie să se potrivească purtătorului. Compară stilul exact și culoarea din anunț. Gândește-te la protecția calotei sau cozorocului când alegi ambalarea articolului primit.",
+      "checks": [
+        "Verifică circumferința ori intervalul de ajustare și adâncimea.",
+        "Analizează culoarea aleasă, închiderea și forma vizibilă din imagini.",
+        "Ia în calcul protecția unei calote sau a unui cozoroc rigid înainte de expediere."
+      ]
+    },
+    "accessories": {
+      "title": "Genți și accesorii OOPBuy",
+      "intro": "Explorează genți și accesorii după dimensiunile practice, potrivire și piesele incluse. O imagine rareori comunică singură scara; verifică lungimea curelei, intervalul centurii sau mărimea compartimentului. Confirmă opțiunea și controlează închiderile ori piesele metalice vizibile. Verifică materialele prin informații fiabile, fără să deduci compoziția doar din culoare.",
+      "checks": [
+        "Compară dimensiunile, lungimea curelei sau reglajul cu utilizarea planificată.",
+        "Verifică închiderile, punctele de fixare și accesoriile opțiunii alese.",
+        "Analizează protecția necesară pieselor rigide, delicate sau ușor de zgâriat."
+      ]
+    },
+    "short-sets": {
+      "title": "Seturi asortate OOPBuy",
+      "intro": "Explorează seturi verificând separat fiecare piesă. Imaginea poate arăta o ținută completă deși opțiunea selectată include un singur element. Confirmă cantitatea și conținutul, apoi compară măsurile părții de sus și de jos cu hainele tale de referință. Verifică dacă nuanțele și versiunile alese aparțin aceluiași set.",
+      "checks": [
+        "Confirmă exact piesele și cantitățile incluse în opțiune.",
+        "Compară separat măsurile părții de sus și de jos înainte de alegerea mărimii.",
+        "Verifică nuanța, desenul și eticheta fiecărei componente primite."
+      ]
+    },
+    "electronics": {
+      "title": "Electronice descoperite pe OOPBuy",
+      "intro": "Explorează electronice după modelul și compatibilitatea necesare. Verifică mufele, dispozitivele acceptate, alimentarea și conținutul pachetului ales. Identifică bateriile sau componentele sensibile la transport înainte de rută. Fotografiile ajută identificarea și evaluarea vizibilă; performanța și siguranța cer specificații, confirmări ori teste adecvate, dincolo de imagine.",
+      "checks": [
+        "Confirmă modelul, compatibilitatea, conectorul și specificațiile alimentării.",
+        "Verifică dacă bateriile sau alt conținut influențează rutele disponibile.",
+        "Confirmă ce este inclus și întreabă cum poate fi verificată o funcție decisivă."
+      ]
+    },
+    "other-stuff": {
+      "title": "Mai multe descoperiri OOPBuy",
+      "intro": "Explorează articole variate pornind de la scop, dimensiuni și conținut. Imagini similare pot ascunde diferențe de cantitate, materiale sau compatibilitate; compară atent opțiunea. Identifică piese fragile și cerințe speciale înainte să adaugi articolul într-un colet. Folosește detaliile relevante pentru a decide verificările prioritare.",
+      "checks": [
+        "Confirmă scopul, dimensiunile și cantitatea inclusă.",
+        "Identifică piese fragile, cerințe de compatibilitate sau conținut ce necesită verificarea rutei.",
+        "Pune o întrebare concretă când anunțul ori fotografiile lasă neclar un detaliu important."
+      ]
+    },
+    "jersey": {
+      "title": "Lista OOPBuy de tricouri sportive",
+      "intro": "Explorează tricouri sportive după echipă, sezon, versiune și opțiunile incluse efectiv. Compară măsurile vânzătorului, deoarece croielile diferite pot sta altfel chiar cu aceeași etichetă. Verifică numele, numărul, emblemele și culoarea unde se aplică. La personalizare, confirmă scrierea exactă și condițiile postvânzare actuale înainte de comandă.",
+      "checks": [
+        "Potrivește echipa, sezonul, versiunea și culoarea cu opțiunea aleasă.",
+        "Verifică măsurile și toate detaliile de nume, număr sau emblemă selectate.",
+        "Confirmă condițiile actuale pentru produse personalizate înainte de plată."
+      ]
+    }
+  }
 }

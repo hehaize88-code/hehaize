@@ -1,11 +1,11 @@
 {
   "ui": {
     "finds": "Nálezy",
-    "articles": "Magazín",
+    "articles": "Články",
     "qc": "Průvodce QC",
     "shipping": "Doprava",
     "read": "Přečíst průvodce",
-    "allArticles": "Prozkoumat magazín",
+    "allArticles": "Všechny články o OOPBuy",
     "latestReading": "Trocha průzkumu udělá velký rozdíl.",
     "browseAll": "Prozkoumat přehled",
     "heroLabel": "VÁŠ DALŠÍ NÁLEZ ZAČÍNÁ TADY",
@@ -15,18 +15,18 @@
     "featured": "Čerstvě z přehledu",
     "featuredIntro": "Novinky připravené k bližšímu prohlédnutí.",
     "categoryTitle": "Najděte si svůj koutek.",
-    "guideTitle": "Od prvního nálezu po poslední kontrolu.",
-    "guideIntro": "Jednoduchý způsob, jak prozkoumat produkt před objednáním na OOPBuy.",
-    "faqTitle": "Pár věcí, které se hodí vědět.",
-    "faqIntro": "Jasné odpovědi o přehledu, fotografiích produktů a nákupních odkazech.",
-    "articlesTitle": "Poznámky OOPBuy",
-    "articlesIntro": "Krátké praktické průvodce pro promyšlenější výběr.",
+    "guideTitle": "Jak používat OOPBuy",
+    "guideIntro": "Projděte nákup od užitečného produktového odkazu přes informovanou kontrolu ve skladu až po promyšlené rozhodnutí o zásilce.",
+    "faqTitle": "Časté otázky o OOPBuy",
+    "faqIntro": "Stručné odpovědi na objednávání, kontrolu, skladová rozhodnutí, dopravu a poprodejní podporu s oficiálními odkazy k pravidlům platformy.",
+    "articlesTitle": "Nákupní průvodci OOPBuy",
+    "articlesIntro": "Praktické průvodce katalogem, QC fotografiemi, plánováním dopravy a rozhodnutími následujícími po objednávce.",
     "findsTitle": "OOPBuy nálezy",
     "findsIntro": "Prozkoumejte oblíbené produkty z katalogu CNBuyCha. Před výběrem dalšího nálezu porovnejte nabídku, fotografie a cenu.",
-    "qcTitle": "OOPBuy QC: podívejte se blíž",
-    "qcIntro": "Fotografie produktů využijte k průzkumu a před odesláním zkontrolujte fotografie vlastní objednávky.",
-    "shippingTitle": "Plánujte i nad rámec ceny zboží",
-    "shippingIntro": "Cena produktu je jen výchozí bod. Ve svém účtu OOPBuy zkontrolujte aktuální možnosti doručení a celkovou částku.",
+    "qcTitle": "Průvodce QC fotografiemi OOPBuy",
+    "qcIntro": "Prověřte důkazy vlastní objednávky, určete otázky vyžadující další pohled a pochybnosti vyřešte před zadáním balíku.",
+    "shippingTitle": "Náklady a odhady dopravy OOPBuy",
+    "shippingIntro": "Připravte údaje pro odhad dopravy, porovnejte vhodné trasy a balík znovu posuďte, až budou známé jeho zabalené rozměry.",
     "checklist": "Než budete pokračovat",
     "related": "Pokračovat v objevování",
     "independent": "Nezávislé objevování produktů",
@@ -40,7 +40,20 @@
     "productDetails": "Podrobnosti",
     "readMore": "Objevit více",
     "searchHelp": "Zkuste název produktu, značku nebo ID položky prodejce.",
-    "allCategories": "Všechny kategorie na jednom místě."
+    "allCategories": "Všechny kategorie na jednom místě.",
+    "contents": "Na této stránce",
+    "expandAll": "Rozbalit všechny části",
+    "collapseAll": "Sbalit všechny části",
+    "sources": "Oficiální zdroje",
+    "lastReviewed": "Poslední kontrola",
+    "quickChecks": "Rychlá kontrola",
+    "moreDetails": "Přečíst celý průvodce",
+    "jumpToPage": "Přejít na stránku",
+    "goToPage": "Přejít",
+    "loading": "Načítání produktů…",
+    "loadError": "Produkty se nepodařilo načíst. Zkuste to znovu.",
+    "pageLabel": "Stránka",
+    "previewNotice": "Náhled · Nabídky CNBuyCha aktualizovány {date}. Vyhledávání otevře CNBuyCha."
   },
   "steps": [
     {
@@ -58,150 +71,1367 @@
   ],
   "faq": [
     {
-      "q": "Je OOPBuy Tab oficiálním webem OOPBuy?",
-      "a": "OOPBuy Tab je nezávislý web pro objevování produktů. Registrace, objednávky a platby probíhají na oopbuy.com. Nákupní odkazy obsahují partnerský zvací kód; sleva není slibována."
+      "q": "Co je OOPBuy a prodává zboží přímo?",
+      "a": "OOPBuy popisuje svou roli jako nákupní a logistické zastoupení. Pomáhá zajistit objednávky u externích prodejců, dočasné uskladnění, balení a dopravu. To není totéž jako výrobce nebo autorizovaný značkový obchod. Před objednáním prověřte původního prodejce, popis a omezení; nabídka zprostředkovatele ani skladová fotografie neprokazují pravost výrobku.",
+      "sources": [
+        {
+          "label": "OOPBuy: uživatelská registrační smlouva",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Odkud pocházejí produkty a ceny?",
-      "a": "Nabídky produktů, obrázky, výsledky vyhledávání a řazení pocházejí z CNBuyCha. Ceny se ve všech jazycích zobrazují v USD. Aktuální cenu, dostupnost a vybranou variantu potvrďte v OOPBuy."
+      "q": "Jak vytvořím první objednávku OOPBuy?",
+      "a": "Oficiální průvodce začíná produktovým odkazem nebo hledáním názvu. Zkontrolujte načtený výrobek, zvolte barvu, velikost a množství a zaplaťte zboží s příslušnou domácí dopravou. Po nákupu a skladové kontrole posuďte uskladněnou položku před zadáním mezinárodního balíku. Každou etapu potvrďte v oficiálním účtu; produktová karta katalogu sama není objednávka.",
+      "sources": [
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Jsou fotografie produktů skladové QC fotografie?",
-      "a": "Zobrazené obrázky pocházejí z CNBuyCha. Jejich původ jako skladové QC není ověřen. Před rozhodnutím o odeslání zkontrolujte fotografie vlastní objednávky v OOPBuy."
+      "q": "Které nákupní odkazy popisuje oficiální průvodce?",
+      "a": "Průvodce pro začátečníky výslovně popisuje vložení odkazů Taobao, Tmall a 1688 do OOPBuy. U každého odkazu ověřte, že oficiální produktová stránka načítá zamýšlenou položku prodejce a úplné varianty. Nefunguje-li odkaz nebo zobrazuje jinou věc, před placením se zeptejte podpory. Nepředpokládejte podporu každé URL tržiště.",
+      "sources": [
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Zahrnuje cena zboží doručení?",
-      "a": "Zobrazenou částku berte jako odhad ceny zboží. V aktuální pokladně a nabídce balíku zkontrolujte vnitrostátní poštovné, mezinárodní dopravu, volitelné služby a případné poplatky."
+      "q": "Proč se zboží a mezinárodní doprava platí zvlášť?",
+      "a": "OOPBuy vysvětluje nákup ve dvou fázích. První platba pokrývá výrobek a příslušnou dopravu po Číně do skladu. Později vyberete uskladněné věci, zadáte balík a zaplatíte mezinárodní dopravu. Druhý náklad odhadněte před nákupem, protože samotná cena výrobku nepředstavuje úplné náklady na přijetí objednávky.",
+      "sources": [
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Jak fungují nákupní odkazy?",
-      "a": "Tlačítko na stránce produktu otevře jeho původní Weidian ID v OOPBuy. Katalogové číslo CNBuyCha je samostatné ID. Před objednáním zkontrolujte cílovou nabídku."
+      "q": "Je zobrazená cena v USD konečným součtem?",
+      "a": "Ne. Produktová cena sama nezahrnuje všechny možné výdaje nákupu a mezinárodního balíku. Součet ovlivní domácí doprava, mezinárodní přeprava, volitelné služby i měnový převod. Pokyny OOPBuy k dobíjení popisují také převody a platební poplatky. Kontrolujte skutečné částky při placení a zadávání zásilky; přepočtená katalogová cena není konečná nabídka.",
+      "sources": [
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy: dobíjení účtu",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
     },
     {
-      "q": "Mohu hledat pomocí obrázku?",
-      "a": "Vyhledávání podle obrázku není v tomto náhledu dostupné. Můžete hledat podle názvu nebo procházet kategorie. Nahranou fotografii nenahrazujeme nesouvisejícími výsledky."
+      "q": "Jaké platební metody mohu použít?",
+      "a": "Průvodce uvádí kreditní kartu, PayPal a zůstatek účtu; nápověda k dobíjení popisuje další možnosti doplnění prostředků. Dostupnost a účtovanou částku ověřte v aktuálním účtu a při placení. Před potvrzením čtěte převod měny a poplatky. Zmínka metody v nápovědě nezaručuje její dostupnost pro každou zemi nebo transakci.",
+      "sources": [
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: dobíjení účtu",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
+    },
+    {
+      "q": "Jsou standardní QC fotografie OOPBuy zdarma?",
+      "a": "Oznámení o doplňkových službách uvádí standardní skladové QC snímky podle pravidel kontroly zdarma. Vznikají po přijetí a zpracování výrobku skladem. Liší se od katalogových obrázků prodejce nebo fotografií v nezávislé tabulce. Před rozhodnutím o dopravě kontrolujte snímky připojené k vlastní uskladněné objednávce.",
+      "sources": [
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Co standardní QC a kontrola skutečně potvrzují?",
+      "a": "Oficiální pokyny pokrývají viditelné údaje, například množství, objednané parametry a zjevný stav, s výslovnými omezeními. Nepotvrzují dokonalé padnutí, odbornou funkčnost elektroniky ani pravost značky. Zapečetěné výrobky mohou projít jen vnější kontrolou. Fotografie berte jako důkaz viditelného a důležité nejasnosti si nechte vysvětlit, místo předpokladu otestování skryté vlastnosti.",
+      "sources": [
+        {
+          "label": "OOPBuy: informace o kontrole",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy: uživatelská registrační smlouva",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Mohu požadovat měření nebo detailní QC snímky?",
+      "a": "OOPBuy popisuje vlastní QC službu pro konkrétní rozměry a detaily, například délku bot či stélek a rozměry oděvů. Dostupnost i aktuální cenu ověřte v oficiálním účtu nebo u podpory; oznámení nepublikuje univerzální cenu detailního snímku. Určete přesné měření nebo pohled, aby požadavek vyřešil vaši pochybnost.",
+      "sources": [
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Dostávají výrobky z 1688 stejnou kontrolu jako ostatní?",
+      "a": "Ne nutně. Průvodce zmiňuje odlišné QC standardy pro nákupy z 1688 a uživatelská smlouva popisuje omezenou namátkovou kontrolu místo úplné kontroly všeho. Nepředpokládejte individuální prověření každého kusu vícepoložkové objednávky. Před množstevním nákupem upřesněte rozsah kontroly a doplňkové služby potřebné pro vaše důležité požadavky.",
+      "sources": [
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: uživatelská registrační smlouva",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Jak dlouho trvá běžné bezplatné uskladnění?",
+      "a": "Oficiální oznámení doplňkových služeb uvádí běžné bezplatné uskladnění 90 dní od naskladnění. Obecná stránka skladu používá jako počátek stav received, tedy přijato. U každé položky ověřte skutečný zobrazený termín, zvláště při různých datech příjmu, a před koncem bezplatného období zařiďte odeslání nebo přípustné prodloužení.",
+      "sources": [
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy: pravidla uskladnění",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        }
+      ]
+    },
+    {
+      "q": "Lze uskladnění prodloužit po bezplatné době?",
+      "a": "Oznámení doplňkových služeb dovoluje jedno placené prodloužení: 10 CNY za nejvýše dalších 30 dní, tedy podle těchto pravidel celkem maximálně 120 dní. Nejde o 120 bezplatných dní ani neomezené obnovování. Před spoléháním na tuto možnost ověřte aktuální prodloužení a termín konkrétní položky v účtu; zboží po lhůtě může být zlikvidováno.",
+      "sources": [
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Mám před odesláním čekat na připomínku uskladnění?",
+      "a": "Ne. Termíny každé objednávky sledujte sami a udržujte aktuální kontaktní údaje. Oficiální oznámení popisují připomínky, ale také varují před považováním opožděných položek za opuštěné. Nepřiřazené či nestandardní příchozí balíky mohou mít jiná pravidla. Nejasný skladový stav rychle řešte s podporou místo předpokladu bezvýhradné platnosti běžné bezplatné doby.",
+      "sources": [
+        {
+          "label": "OOPBuy: pravidla uskladnění",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuy: uživatelská registrační smlouva",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Kdy požádat o vrácení nebo výměnu po příjmu do skladu?",
+      "a": "Oznámení popisuje podmíněné pětidenní, 120hodinové období po přechodu do Stocked in s vlastními pravidly počítání času. Fotografie a oficiální poprodejní obrazovku kontrolujte rychle. Způsobilost stále závisí na prodejci a stavu výrobku; lhůta neslibuje přijetí každé žádosti. Zkontrolujte aktuální termín přesné objednávky.",
+      "sources": [
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Lze vrátit nebo vyměnit každý výrobek?",
+      "a": "Ne. Pravidla obsahují podmínky a výjimky týkající se prodejce, další prodejnosti, zakázkového či použitého zboží a některých zapečetěných nebo osobních kategorií. Odstranění štítků, příslušenství či nutného obalu může vratnost ovlivnit. OOPBuy může komunikovat s prodejcem, ale oznámení vyžaduje jeho souhlas. Podmínky zjistěte před nákupem nebo úpravou obalu.",
+      "sources": [
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Zahrnuje první bezplatné vrácení veškerou dopravu?",
+      "a": "Ne. Oznámení odpouští servisní poplatek za první vrácení nebo výměnu v kalendářním měsíci. To není bezplatné zpáteční poštovné ani náhrada všech domácích přepravních poplatků. Náklady závisí na důvodu, rozhodnutí prodejce a okolnostech objednávky. Před potvrzením čtěte skutečnou poprodejní nabídku; nepředpokládejte, že je celý postup zdarma.",
+      "sources": [
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Mohu objednávku zrušit před odesláním prodejcem?",
+      "a": "Nápověda uvádí, že servisní poplatek za vrácení neplatí u dosud neodeslaného výrobku. To není bezpodmínečná záruka zrušení v každé etapě. Zkontrolujte aktuální stav a rychle podejte dostupnou žádost o zrušení nebo poprodejní pomoc. Pokud už prodejce odeslal, mohou se lišit postup i přepravní náklady.",
+      "sources": [
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy: stavy objednávek a balíků",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Jak dlouho trvá refundace a kde ji kontrolovat?",
+      "a": "Schválení refundace, připsání na zůstatek OOPBuy a vypořádání na bankovní kartu jsou různé kroky. Oznámení uvádí vliv bankovního zpracování a odhad, nikoli zaručené datum. V účtu zkontrolujte záznam a cíl refundace. Při nejasném postupu dejte podpoře číslo objednávky a refundace místo opakovaných plateb.",
+      "sources": [
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy: stavy objednávek a balíků",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Lze vrátit položku po mezinárodním odeslání?",
+      "a": "Oznámení popisuje mezinárodní vrácení jako podmíněné a případně hrazené zákazníkem, včetně zpáteční dopravy a dalších nákladů, například cla. Původní stav a požadované obaly stále záleží. Před odesláním zpět kontaktujte poprodejní podporu a získejte aktuální instrukce. Zahraniční vrácení není jednoduché skladové zrušení ani zaručená úplná náhrada.",
+      "sources": [
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Jak odhadnout mezinárodní dopravu OOPBuy?",
+      "a": "Použijte oficiální kalkulačku s cílem a požadovanými údaji balíku, potom prohlédněte trasy a omezení. Průvodce vysvětluje, že konečné poplatky závisejí na změřených rozměrech, hmotnosti a způsobu přepravy. Předběžný odhad pomáhá rozpočtu, ale nenahrazuje konečnou nabídku balíku ani automaticky nezahrnuje všechny poplatky konkrétní cílové země.",
+      "sources": [
+        {
+          "label": "OOPBuy: odhad dopravy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Je některá trasa vždy nejlevnější nebo nejrychlejší?",
+      "a": "Z oficiálních pokynů nelze určit univerzální trasu. Dostupnost závisí na cíli, obsahu, hmotnosti, rozměrech a aktuálních podmínkách. Před výběrem porovnejte možnosti vlastního balíku včetně omezení a náhrad. Zveřejněné doby nejsou záruky: po skladovém odeslání může cestu ovlivnit provoz dopravce, počasí a celní řízení.",
+      "sources": [
+        {
+          "label": "OOPBuy: informace o doručení",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy: pojištění a náhrady",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "K čemu slouží Parcel Rehearsal?",
+      "a": "Oznámení popisuje skladové zkušební balení, které pomáhá určit změřené údaje před platbou mezinárodní dopravy. Uvádí servisní poplatek 20 CNY a závislost výpočtu na zachování stejné trasy a balení. Změna těchto voleb může změnit konečnou cenu. Před žádostí přečtěte aktuální službu a podmínky zrušení.",
+      "sources": [
+        {
+          "label": "OOPBuy: pokyny ke zkušebnímu balení",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ]
+    },
+    {
+      "q": "Mám odstranit krabice od bot nebo vakuovat oblečení?",
+      "a": "Průvodce je popisuje jako možné volby, některé omezené na určité trasy. Rozhodujte podle ochrany výrobku, preference a podmínek vrácení. Odstranění obalu nebo stlačení není vhodné pro každý nákup a menší balík nezaručuje nižší konečný poplatek. Před potvrzením ověřte možnosti balení a výpočet zvolené trasy.",
+      "sources": [
+        {
+          "label": "OOPBuy: pokyny k balení",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Lze sloučit všechny skladové výrobky do jednoho balíku?",
+      "a": "Slučování je součástí nákupního postupu, ale každá kombinace nemusí být způsobilá nebo výhodná. Vlastnosti zboží, omezení tras a označení samostatného balení mohou vyžadovat více zásilek. Oficiální oznámení stanoví pravidlo nadrozměrných položek a balicí průvodce omezení bateriových výrobků. Řiďte se pokyny konkrétních položek a porovnejte přípustné možnosti před zadáním.",
+      "sources": [
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy: pokyny k balení",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy: pravidla samostatného odeslání",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        }
+      ]
+    },
+    {
+      "q": "Proč je objednávka odeslaná, ale nemám mezinárodní sledovací číslo?",
+      "a": "Průvodce používá přepravní výrazy ve dvou souvislostech. U nákupní objednávky může Shipped označovat odeslání výrobku prodejcem do skladu OOPBuy. U mezinárodního balíku jde o pozdější fázi dopravce. Ověřte, zda sledujete položku nebo balík, a otevřete správné logistické podrobnosti místo předpokladu stejného čísla pro obě etapy.",
+      "sources": [
+        {
+          "label": "OOPBuy: stavy objednávek a balíků",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Co dělat při poškozeném balíku nebo chybějících položkách?",
+      "a": "Uchovejte vnější obal, přepravní štítek a důkazy o výrobcích a rychle kontaktujte poprodejní podporu. Oficiální pokyny žádají jasné fotografie a například čísla objednávek; obsahují také krátké lhůty hlášení a doložení. Obaly nevyhazujte a nečekejte podle obecné lhůty nalezené jinde. Dodržte instrukce pro konkrétní balík a nárok.",
+      "sources": [
+        {
+          "label": "OOPBuy: problémy po doručení",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ]
+    },
+    {
+      "q": "Kryje pojištění automaticky každý problém balíku?",
+      "a": "Ne. Oficiální oznámení o náhradách váže postup na podmínky linky a důkazy a uvádí výjimky. Nepředpokládejte plnou výplatu při každém zpoždění, poškození, celním zásahu či ztrátě. Přečtěte krytí, limity a postup nároku skutečně vybrané trasy a uchovejte potřebné záznamy objednávky i balíku pro případ problému.",
+      "sources": [
+        {
+          "label": "OOPBuy: pojištění a náhrady",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Mohu objednat jakýkoli produkt z tabulky?",
+      "a": "Ne. Online záznam nedokládá zákonnost, pravost ani přípustnost vaší trasy. Nákupní pokyny OOPBuy zakazují některé výrobky a uvádějí omezené kategorie k ověření podporou. Podmínky také zakazují padělky a porušování práv. Před nákupem ověřte prodejce, pravidla platformy a cíle, zvláště u baterií, kapalin či jiného omezeného obsahu.",
+      "sources": [
+        {
+          "label": "OOPBuy: omezení a poznámky před nákupem",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuy: uživatelská registrační smlouva",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
     }
   ],
   "articles": [
     {
       "slug": "oopbuy-spreadsheet-guide",
-      "tag": "ZAČÍNÁME",
-      "title": "Váš první OOPBuy nález krok za krokem",
-      "description": "Proměňte slibnou nabídku v promyšlenou volbu.",
+      "tag": "Začínáme",
+      "title": "Průvodce OOPBuy spreadsheet: sestavte výběr, který opravdu prověříte",
+      "description": "Naučte se používat katalog OOPBuy, ověřovat odkazy, porovnávat varianty, odhadovat skutečný rozpočet a proměnit nalezený výrobek v promyšlenou objednávku.",
+      "primaryKeyword": "OOPBuy spreadsheet",
+      "secondaryKeywords": [
+        "průvodce OOPBuy spreadsheet",
+        "seznam produktů OOPBuy",
+        "tipy na produkty OOPBuy",
+        "průvodce nákupem OOPBuy"
+      ],
+      "takeaways": [
+        "Každý řádek katalogu berte jako výchozí bod a ověřte aktuální produkt.",
+        "Zaznamenejte původní odkaz, přesnou variantu, rozměry a odhad ceny včetně doručení.",
+        "Oddělujte katalogové obrázky od skladových QC fotografií vlastní objednávky."
+      ],
       "sections": [
         {
-          "title": "Začněte tím, co potřebujete",
-          "text": "Vyberte kategorii nebo vyhledejte model. Porovnejte název produktu, dostupné obrázky a odhadovanou cenu. Samotná nízká cena neřekne, zda nabídka odpovídá vašim potřebám."
+          "title": "K čemu je OOPBuy spreadsheet užitečný",
+          "text": "OOPBuy spreadsheet je nástroj pro objevování produktů: shromažďuje odkazy, umožňuje porovnávat nápady a šetří opakované hledání od začátku. Jeho skutečnou hodnotou je snadnější prověření užšího výběru. Velký počet řádků neříká, zda je zboží stále dostupné, zda vám padne velikost ani kolik bude stát hotový balík.\n\nOOPBuy Tab je nezávislý katalog, nikoli oficiální služba OOPBuy. Čerpá z dat CNBuyCha. Na tomto rozlišení záleží, protože záznam katalogu a aktuální nákupní stránka se mohou měnit v různou dobu. Cenu v USD považujte za odhad a fotografie za katalogové podklady, pokud není jejich původ výslovně ověřen.\n\nTabulku používejte k řešení konkrétní otázky, například která ze tří bund odpovídá vašim rozměrům a rozpočtu. Když možnosti vidíte vedle sebe, snáze odhalíte chybějící údaje dříve, než se z nich stane drahý předpoklad."
         },
         {
-          "title": "Otevřete původní nabídku",
-          "text": "Zkontrolujte prodejce a dostupné možnosti. Poznamenejte si požadovanou velikost, barvu a množství a pak otevřete produkt v OOPBuy. Před zaplacením tyto údaje znovu potvrďte."
+          "title": "Před procházením si určete požadavky",
+          "text": "Napište si, čím vám má výrobek sloužit. U oblečení to mohou být rozměry oděvu, preferovaný materiál, roční období a přijatelné pokyny k údržbě. U tašky rozměry notebooku, způsob zapínání a nejvyšší přijatelná hmotnost prázdné tašky. Jasné požadavky pomohou, aby vás lákavý obrázek neodvedl od podstaty nákupu.\n\nStanovte dva rozpočty: cílovou cenu výrobku a celkový strop včetně doručení. Jsou to různé částky. Nízká cena produktu ještě neřeší dopravu po Číně, mezinárodní přepravu, převod měny při platbě ani případné poplatky v cílové zemi.\n\nVyberte několik kandidátů místo okamžitého vyplňování desítek řádků. Tři srovnatelné výrobky často řeknou více než třicet nesouvisejících tipů. Ke každému přidejte důvod zájmu a jednu nevyřešenou otázku. Pokud neumíte vysvětlit, proč do výběru patří, nejspíš zatím nepotřebuje vaši pozornost."
         },
         {
-          "title": "Myslete na další fázi",
-          "text": "Nechte v rozpočtu prostor na dopravu a další poplatky. Před podáním balíku prohlédněte fotografie vlastní objednávky a dostupnou nabídku dopravy."
+          "title": "Vytvořte sloupce, které pomáhají rozhodnout",
+          "text": "Užitečný řádek obsahuje název, zdrojové tržiště, původní URL, přesnou variantu, zobrazenou cenu s měnou, datum kontroly a další krok. Přidejte rozměry či parametry podstatné pro kategorii. Vlastní poznámky oddělte od popisu prodejce, abyste později rozlišili doložený údaj od svého výkladu.\n\nU bundy lze sledovat šířku přes hrudník, ramena, délku zad, vybranou velikost a to, zda čísla popisují oděv, nebo tělo. U obuvi zaznamenejte tabulku velikostí prodejce a případné měření vnitřní délky. Samotné označení velikosti nepatří bez vysvětlení do sloupce označeného jako ověřené padnutí.\n\nPoužívejte prosté stavy: ověřit zdroj, doplnit rozměry, připraveno ke zvážení, objednáno, zkontrolováno. Stav má vyjadřovat skutečně dokončenou práci. Samostatně ukládejte důvod vyřazení výrobku; zabrání to opakování stejného průzkumu příští týden."
+        },
+        {
+          "title": "Ověřte aktuální produkt za řádkem",
+          "text": "Než na záznam spoléháte, otevřete původní odkaz i nákupní stránku OOPBuy. Porovnejte identitu výrobku, obrázky, nabídnuté možnosti a cenu zvolené varianty. Funkční odkaz může stále vést ke změněné nabídce, jiné variantě nebo stránce, jejíž nejlevnější možnost neodpovídá obrázku v katalogu.\n\nRozlišujte identifikátory. V našem příkladu odkazu je 3470 katalogové číslo CNBuyCha, zatímco 7876894732 je zdrojový identifikátor v produktové cestě Weidian. Vložením katalogového čísla do nákupní URL nezískáte tentýž produkt. Kdykoli lze, uchovejte celou zdrojovou adresu místo jejího sestavování podle krátkého názvu.\n\nNedostupnou stránku označte jako neověřenou. Vyhledejte přesný výrobek znovu a případnou náhradu pečlivě porovnejte. Původní odkaz tiše nenahrazujte podobně vypadajícím produktem: podobnost nedokládá stejného prodejce, parametry ani nákupní podmínky."
+        },
+        {
+          "title": "Porovnávejte variantu, kterou skutečně objednáte",
+          "text": "Dva řádky lze porovnat jen tehdy, když představují možnosti, které byste opravdu koupili. Prověřte barvu, velikost, množství, materiál a příslušenství. Cenové rozpětí může odrážet různé varianty. Zápis nejnižší viditelné ceny při plánovaném nákupu jiné možnosti vytváří zavádějící srovnání, i když jsou obě ceny skutečné.\n\nPředstavte si dvě cestovní tašky. První uvedená cena může platit pro nejmenší rozměr, zatímco druhá zahrnuje potřebnou větší tašku. Ke zvoleným možnostem napište požadované rozměry a porovnejte přesně tyto volby. Chybějící zásadní rozměr označte; neodhadujte ho z fotografie na modelu.\n\nU balení více kusů zaznamenejte počet a jednotkovou cenu počítejte pouze u skutečně srovnatelných položek. U oděvních souprav ověřte, které části obsahují. Díky těmto drobným kontrolám tabulka pomáhá s nákupem a neslouží jen k uspořádání pěkných obrázků."
+        },
+        {
+          "title": "Přidejte realistický přehled nákladů",
+          "text": "Oddělte potvrzené částky od odhadů. Přehled může obsahovat vybraný výrobek, uvedenou domácí dopravu, odhad mezinárodního poštovného, plánované doplňkové služby a rezervu na nevyjasněné náklady. U každé částky uveďte měnu. Odhad v USD nikdy nezaměňujte za pevnou cenu při placení.\n\nNa oficiální stránce odhadu dopravy OOPBuy prověřte cílovou zemi a dostupné předpoklady zásilky. Zapište použitou hmotnost a rozměry, bez nichž pozdější srovnání nedává smysl. Pokud je neznáte, porovnejte rozumný scénář menšího a většího balíku místo jediného zdánlivě přesného součtu.\n\nJeště před nákupem určete rozhodovací pravidlo. Můžete například pokračovat jen tehdy, když se i dražší scénář vejde do rozpočtu na doručení. Jde o osobní metodu plánování, ne cenovou nabídku OOPBuy. Přehled aktualizujte, jakmile skladové údaje nebo aktuální nabídka nahradí původní předpoklady."
+        },
+        {
+          "title": "Oddělte katalogové obrázky od QC objednávky",
+          "text": "Fotografie v katalogu pomáhá poznat styl, barvu nebo konstrukční prvek. Nedokládá stav kusu, který bude zakoupen pro vás. Importované obrázky OOPBuy Tab nejsou ověřené skladové QC fotografie vaší objednávky. Řádek proto neoznačujte jako kvalitativně schválený jen proto, že fotografie vypadají dobře.\n\nPo objednání vytvořte oddělené místo pro obrázky a zprávy vztahující se k dané objednávce. Zaznamenejte číslo objednávky, zvolenou variantu a otázky, které skladové snímky nevyřešily. Vyleštěný zdrojový obrázek se tak nebude plést se skutečně přijatým zbožím.\n\nInformace OOPBuy o kontrole popisují ověřování množství a objednaných parametrů a zároveň stanovují omezení. To je důvod klást konkrétní otázky, nikoli předpokládat prověření všech kvalitativních problémů. Před dalším rozhodnutím určete přesný pohled nebo měření, které potřebujete pro zásadní detail."
+        },
+        {
+          "title": "Proměňte výběr ve zvládnutelnou první objednávku",
+          "text": "Před zaplacením projděte nevyřešené otázky u celého výběru. Každá položka má mít známý zdroj, vědomě vybranou variantu, dostatek velikostních údajů a přijatelný rozpočet doručení. Pokud několik polí stále uvádí neznámé, dalším krokem je ověřování, i když cena působí výjimečně lákavě.\n\nMenší první objednávka může usnadnit vlastní evidenci. Seznámíte se s aktuálními stránkami objednávek, skladovými informacemi a možnostmi zásilky, aniž byste současně řešili mnoho výjimek. Jde o organizační doporučení, nikoli slib, že malá zásilka bude levnější na kus.\n\nDo účtu vstupujte přes oficiální přihlašovací stránku OOPBuy. Platební rozhodování i údaje účtu ponechte na oficiální službě. Po objednání zapište číslo a datum do soukromé tabulky. Osobní údaje objednávek neumisťujte do veřejně sdíleného přehledu."
+        },
+        {
+          "title": "Udržujte tabulku i po prvním nákupu",
+          "text": "Dobrá tabulka získává hodnotu po doručení výrobku. Přidejte skutečné rozměry, zkušenosti s padnutím, konečnou zaplacenou částku a rozdíly proti nabídce. Popište okolnosti: bunda přes silný svetr se může nosit jinak než stejná bunda přes tričko.\n\nSubjektivní dojmy zřetelně označte. Poznámka pohodlné na každodenní dojíždění je užitečnější než dokonalá kvalita, protože vysvětluje způsob použití. Zapište zjištěná omezení, třeba příliš úzkou kapsu na telefon. Tím vzniká podklad pro další volby bez tvrzení, že jiný zákazník zažije totéž.\n\nNakonec přidejte datum hodnocení a nefunkční odkazy archivujte, aby nevypadaly aktuálně. Před každým dalším nákupem znovu prověřte cenu a dostupnost. Důvěryhodný OOPBuy spreadsheet není neměnný příslib, ale pracovní záznam toho, co jste ověřili, co zůstává nejisté a co jste zjistili."
         }
+      ],
+      "sources": [
+        {
+          "label": "Oficiální web OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuy: odhad dopravy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy: informace o kontrole",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Přihlášení OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-product-links",
+        "oopbuy-price-check",
+        "oopbuy-qc-photos"
       ]
     },
     {
       "slug": "oopbuy-qc-photos",
-      "tag": "KONTROLA FOTOGRAFIÍ",
-      "title": "Čeho si všímat na produktových a QC fotografiích",
-      "description": "Oddělte průzkum katalogu od kontrol vlastní objednávky.",
+      "tag": "Kontrola kvality",
+      "title": "QC fotografie OOPBuy: co prověřit před odesláním objednávky",
+      "description": "Praktický průvodce QC fotografiemi OOPBuy: správná varianta, užitečná měření a meze toho, co skladové snímky mohou prokázat.",
+      "primaryKeyword": "QC fotografie OOPBuy",
+      "secondaryKeywords": [
+        "kontrola kvality OOPBuy",
+        "skladové fotografie OOPBuy",
+        "průvodce QC OOPBuy",
+        "kontrola OOPBuy"
+      ],
+      "takeaways": [
+        "Prohlížejte skladové snímky vlastní objednávky a porovnejte je se zvolenou variantou.",
+        "Používejte stálý postup kontroly a při chybějícím důkazu žádejte jeden přesný pohled.",
+        "Fotografie neprokazují pravost, dlouhodobou odolnost, přesnou barvu ani všechny funkční vlastnosti."
+      ],
       "sections": [
         {
-          "title": "Vězte, jaké fotografie prohlížíte",
-          "text": "Katalogové obrázky ukazují nabídku; nedokazují, jaký kus obdržíte. Fotografie na OOPBuy Tab dodává CNBuyCha a nejsou ověřeny jako skladové QC."
+          "title": "Používejte QC k zodpovězení konkrétních otázek",
+          "text": "QC fotografie OOPBuy jsou nejpřínosnější, když víte, co chcete ověřit. Začněte krátkým seznamem: dorazil očekávaný výrobek, odpovídá varianta, je vidět poškození a podporují dostupné rozměry rozhodnutí o velikosti? Vznikne praktický postup místo nekonečného hledání dokonalosti.\n\nFotografie zaznamenává konkrétní pohled v konkrétním světle. Může ukázat chybějící knoflík nebo očividně jinou barevnou etiketu, ale problém uvnitř kapsy či pod odnímatelnou částí vidět nemusí. Každý obrázek berte jako důkaz s omezeným záběrem.\n\nCílem je před mezinárodní přepravou vyřešit pochybnosti, které mohou změnit vaše rozhodnutí. Třeba potvrdit délku rukávu nebo objasnit, zda skvrna není odstranitelný zbytek obalu. Hezky vypadající soubor fotografií však nezaručuje vlastnosti výrobku po měsících používání."
         },
         {
-          "title": "Porovnejte konkrétní detaily",
-          "text": "U vlastní objednávky porovnejte model, barvu, viditelný štítek velikosti a množství s tím, co jste vybrali. Hledejte zjevné poškození a na nejasnosti se zeptejte před odesláním."
+          "title": "Rozlišujte tři druhy produktových fotografií",
+          "text": "Obrázky prodejce představují nabízený výrobek. Katalogové obrázky pomáhají nabídku objevit a poznat. Skladové fotografie dokumentují konkrétní zboží spojené s objednávkou. Jde o různé role, i když snímky stojí vedle stejného názvu nebo vypadají podobně.\n\nOOPBuy Tab je nezávislý katalog využívající data CNBuyCha. U importovaných obrázků nebylo ověřeno, že jde o QC vaší vlastní objednávky. Poslouží jako srovnávací podklad, ale neřeknou, zda zakoupený kus má stejné šití, štítek, rozměry či stav.\n\nPři ukládání používejte oddělené složky nebo jasné štítky, například zdrojový podklad a moje objednávka. Do soukromých poznámek přidejte číslo a datum objednávky. Toto jednoduché oddělení zabrání tomu, aby se atraktivní detail od prodejce omylem stal důkazem pro schválení zboží ve skladu."
         },
         {
-          "title": "Pochopte omezení",
-          "text": "Samotné fotografie nemohou potvrdit pravost, odolnost ani plnou funkčnost. Pokud potřebujete měření nebo další kontrolu, zeptejte se OOPBuy, co je dostupné a kolik to stojí."
+          "title": "Ověřte, že kontrolujete správnou položku",
+          "text": "Před podrobnou kontrolou přiřaďte skladový záznam ke své objednávce. Porovnejte název, zdrojový odkaz, vybranou barvu, velikost a množství. U dvou podobných výrobků nepředpokládejte, že snímky jsou ve stejném pořadí jako položky původního výběru.\n\nHledejte viditelné rozpoznávací znaky: velikostní štítek, charakteristické členění dílů, typ zapínání nebo označení obalu. Porovnávejte je s objednanou variantou, ne s univerzálním prvním obrázkem nabídky. Prodejce může použít jednu hlavní fotografii pro několik možností.\n\nPři nesouladu záznamu a obrázků požádejte o vysvětlení s číslem objednávky. Rozdíl popište jednoduše: objednána tmavě modrá, štítek vypadá černý; objednány dva kusy, vidět je jeden. Nepovažujte výrobek hned za chybný jen proto, že na jednom snímku nejsou všechny části; nejprve určete rozsah záběru."
+        },
+        {
+          "title": "Oblečení kontrolujte ve stálém pořadí",
+          "text": "Nejprve se podívejte na celý oděv. Ověřte siluetu, hlavní díly, výstřih, rukávy a zapínání proti vybranému produktu. Potom zvlášť přední a zadní stranu. Celkový pohled pomůže odhalit chybějící prvek, než vás pohltí drobné rozdíly ve švech.\n\nPokračujte viditelným zpracováním: návazností švů, lemy, manžetami, knoflíky, zipy, potiskem či výšivkou. Hledejte zjevná natržení, uvolněné části, skvrny a nesouměrnost. Záhyby a položení oděvu mohou rovné linie zdánlivě zkřivit; jasnější úhel může pochybnost vyřešit.\n\nNakonec zkontrolujte důležité štítky a rozměry. Štítek potvrzuje natištěnou velikost, zatímco měření pomáhá posoudit padnutí. To jsou dvě různé kontroly. Pokud vás zajímá délka rukávu, žádejte konkrétní údaj, ne obecnou odpověď, zda velikost odpovídá běžným zvyklostem; ty závisí na osobním očekávání."
+        },
+        {
+          "title": "Obuv a tašky kontrolujte podle funkce",
+          "text": "Boty porovnejte spolu i jednotlivě. Zkontrolujte značení velikosti, celkový tvar, viditelný stav svršku, zapínání a okraje podrážky. Ptejte se, zda dostupné pohledy pokrývají části podstatné pro zamýšlené použití. Samotný snímek shora nemusí ukázat odlepení podél boku podrážky.\n\nU tašek začněte rozměry a uspořádáním. Najděte očekávanou hlavní přihrádku, popruhy, držadla a zapínání. Ověřte, že snímky zobrazují vybranou velikost a provedení. Pokud má taška pojmout určitý notebook, podobná taška na modelu není důkazem dostatečného vnitřního prostoru.\n\nVizuální kontroly nepřevádějte na tvrzení o nosnosti, nepromokavosti, pohodlí či odborných funkčních vlastnostech. Ty vyžadují jiné podklady. Jestliže je vlastnost zásadní a nelze ji doložit nabídkou nebo vhodnou kontrolou, ponechte ji při rozhodování o vhodnosti nákupu jako nevyřešenou."
+        },
+        {
+          "title": "Žádejte měření, která lze správně vyložit",
+          "text": "Užitečná fotografie měření jasně ukazuje výrobek, měřidlo a oba koncové body. Požadujte pojmenovaný rozměr s určeným postupem. U košile je šířka naplocho mezi podpažními švy přesnější než velikost hrudníku. U kalhot uveďte, zda má být pas volný, nebo natažený.\n\nPorovnávejte stejné údaje. Šířka položeného oděvu není obvod těla a délka podešve není vnitřní délka boty. Měření vlastního dobře padnoucího kusu je praktickým podkladem jen tehdy, když sklad měří stejným způsobem.\n\nDrobné rozdíly ze šikmého nebo nekvalitního snímku vykládejte opatrně. Perspektiva, záhyby a poloha metru mohou změnit dojem. Pokud malý rozdíl rozhoduje o ponechání výrobku, požádejte o jasnější měření místo přibližování obrázku tak dlouho, až začne působit přesněji, než ve skutečnosti je."
+        },
+        {
+          "title": "Rozumějte omezením skladové kontroly",
+          "text": "Oficiální informace OOPBuy popisují kontrolu množství a objednaných parametrů. Ze svého rozsahu zároveň vylučují některé barevné, velikostní a užitné odchylky, odborné posuzování výrobků a vnitřní kontrolu některého zapečetěného zboží. Přesný rozsah pro daný výrobek ověřte v aktuálním oznámení.\n\nPrakticky to znamená nezaměňovat kontrolu za úplnou certifikaci. Vyfocený štítek neověřuje pravost značky. Nepoškozený kryt nabíječky nepotvrzuje elektrickou bezpečnost. Neotevřený obal neukazuje všechny součásti. Závisí-li nákup na odborné vlastnosti, vyžadujte příslušnou dokumentaci místo očekávání, že odpoví obecný skladový snímek.\n\nTaké nastavení obrazovky a světlo omezují srovnání barev. Fotografie pomáhají odhalit výrazné nesrovnalosti a položit dotaz, ale dva obrázky pořízené za různých podmínek nemusí rozhodnout jemný rozdíl odstínu. Předem si určete přijatelnou míru nejistoty."
+        },
+        {
+          "title": "Napište požadavek, podle kterého lze jednat",
+          "text": "Každý dotaz spojte s pozorovatelným problémem. Uveďte objednávku, příslušný snímek a přesný detail ke kontrole. Například: ukažte prosím přední zip zcela zapnutý a do záběru zahrňte obě strany dolního lemu. Takový požadavek je proveditelnější než obecné zkontrolujte znovu kvalitu.\n\nU měření přidejte koncové body a důležité podmínky, třeba položení naplocho bez natahování. OOPBuy uvádí standardní QC podle kontrolních pravidel zdarma a nabízí vlastní požadavky na detaily či rozměry. Oznámení o doplňkových službách neurčuje jednotnou cenu vlastního QC; před zadáním další práce ji ověřte.\n\nNeslučujte dlouhý seznam nesouvisejících obav do jediné neurčité zprávy. Upřednostněte detaily, které mohou změnit rozhodnutí, a odpověď vůči nim vyhodnoťte. Uložte ji vedle obrázku, abyste odlišili přímo potvrzené údaje od toho, co jste ze snímku pouze usoudili."
+        },
+        {
+          "title": "Před odesláním rozhodnutí doložte",
+          "text": "Po kontrole zvolte jasný krok: přijmout dostupné informace, vyžádat konkrétní doplnění nebo prověřit aktuální možnosti vrácení. Při problému rychle zkontrolujte oficiální podmínky a živý stav objednávky. Nepředpokládejte, že čekání zachová možnosti neomezeně.\n\nUchovejte stručný záznam problému a důkazů. Uložte variantu, důležité snímky, rozměry i přesnou odpověď. Při pozdější žádosti o podporu se vysvětlují lépe než obecné tvrzení, že produkt vypadal špatně. Záznam také pomůže neopakovat stejné otázky.\n\nPřed zadáním zásilky se vraťte ke všem nevyřešeným položkám. Jejich odeslání neodpoví na nezodpovězenou otázku. Konečné rozhodnutí má vycházet ze skutečně přijatého zboží, omezení podkladů a toho, zda je zbývající nejistota přijatelná pro váš účel a rozpočet."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: informace o kontrole",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Oficiální web OOPBuy",
+          "url": "https://oopbuy.com/"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-returns-refunds"
       ]
     },
     {
       "slug": "oopbuy-shipping-guide",
-      "tag": "POZNÁMKY K DOPRAVĚ",
-      "title": "Cena zboží je jen začátek",
-      "description": "Jasnější způsob plánování rozpočtu na balík.",
+      "tag": "Doprava",
+      "title": "Průvodce dopravou OOPBuy: odhad nákladů a výběr vhodné trasy",
+      "description": "Pochopte přepravní fáze OOPBuy, hmotnost a objem balíku, srovnání tras, balení i kontroly před zaplacením mezinárodní dopravy.",
+      "primaryKeyword": "doprava OOPBuy",
+      "secondaryKeywords": [
+        "cena dopravy OOPBuy",
+        "kalkulačka dopravy OOPBuy",
+        "odhad dopravy OOPBuy",
+        "doba doručení OOPBuy"
+      ],
+      "takeaways": [
+        "Počítejte s dopravou prodejce do skladu a samostatnou platbou za mezinárodní zásilku.",
+        "Odhadujte podle cíle, obsahu, hmotnosti a rozměrů a ověřte pravidla zvolené trasy.",
+        "Vhodné trasy porovnávejte podle úplných podmínek; dodací lhůty jsou odhady."
+      ],
       "sections": [
         {
-          "title": "Oddělte náklady",
-          "text": "Ve svém rozpočtu oddělte cenu produktu, poštovné od prodejce do skladu a mezinárodní doručení. V aktuální nabídce zkontrolujte volitelné služby a poplatky spojené s platbou."
+          "title": "Rozlišujte dvě přepravní fáze",
+          "text": "Objednávka OOPBuy prochází dvěma odlišnými přepravními etapami. Prodejce nejprve odešle zakoupené zboží do skladu v Číně. Později se balík ze skladu posílá do cílové země. Záměna těchto etap často způsobuje, že aktualizace dopravy nebo žádost o platbu působí nečekaně.\n\nVysvětlení pro první nákup OOPBuy odděluje počáteční platbu za zboží a domácí dopravu od pozdějšího mezinárodního poštovného. Produktová cena v nezávislém katalogu proto není celkovou cenou doručení. Částky OOPBuy Tab v USD jsou orientační údaje pro výběr, ne konečná nabídka mezinárodní přepravy.\n\nRozpočet připravte před objednáním. Zvažte přijatelnou útratu i v případě, že zabalená zásilka bude větší či těžší, než jste čekali. Pokud mezinárodní dopravu začnete řešit teprve po příjmu všech věcí do skladu, můžete volit mezi vyšší celkovou cenou a neplánovaným poprodejním postupem."
         },
         {
-          "title": "Použijte skutečné údaje o balíku",
-          "text": "Do oficiální kalkulačky zadejte destinaci, hmotnost, rozměry a druh zboží. Porovnejte omezení a pravidla účtování vhodných tras. Odhad není konečná faktura."
+          "title": "Zadejte do kalkulačky užitečné podklady",
+          "text": "Začněte na oficiální stránce odhadu dopravy OOPBuy. Zadejte cílové místo a požadované údaje o zásilce. Použijte nejlepší dostupné informace o hmotnosti a rozměrech a zapište si vstupy. Nabídku bez jejích předpokladů lze jen těžko porovnat s pozdějším výsledkem.\n\nPřed doručením do skladu mohou být některé vstupy nejisté. Nejistotu nezakrývejte. U oblečení bez spolehlivého měření uvažujte lehčí a těžší scénář. U pevného či objemného produktu zjišťujte rozměry po zabalení místo předpokladu, že poštovné vysvětluje samotná hmotnost.\n\nPo získání skladových údajů odhad aktualizujte. Při výrazném rozdílu před volbou trasy zjistěte změněný vstup. Další krabice, větší zvolená velikost nebo ochranný obal mění oceňovaný balík. Kalkulačku berte jako plánovací pomůcku a skutečně splatnou částku potvrďte v aktuálním zadání zásilky."
         },
         {
-          "title": "Obal vybírejte uvážlivě",
-          "text": "Obal ovlivňuje ochranu a velikost balíku. Před potvrzením se zeptejte, jak odstranění nebo zesílení obalu změní cenu a ochranu. Ve svém účtu sledujte konec skladovací lhůty každé položky."
+          "title": "Porovnejte skutečnou hmotnost a objem",
+          "text": "Skutečná hmotnost udává, kolik zabalený balík váží. Objemová hmotnost je způsob, jak některé služby účtují prostor, který zabírá. Použití těchto hodnot stanoví pravidla zvolené trasy; nepřebírejte proto dělitel z nesouvisejícího přepravního průvodce.\n\nIlustrační srovnání: krabice 40 × 30 × 25 centimetrů má objem 30 000 krychlových centimetrů. Krabice 35 × 25 × 20 centimetrů zabírá 17 500 krychlových centimetrů. Druhá zabírá méně místa, samotný rozdíl ale neurčuje konkrétní úsporu. Záleží také na trase, skutečné hmotnosti a účtovacích krocích.\n\nOvěřte, zda prohlížená čísla popisují samotný výrobek, obal prodejce, nebo dokončenou mezinárodní zásilku. Nejde o totéž. Průvodce pro začátečníky OOPBuy uvádí závislost konečné dopravy na změřených rozměrech a hmotnosti balíku; právě hotové balení je proto při potvrzení rozpočtu zvlášť důležité."
+        },
+        {
+          "title": "Srovnávejte vhodné trasy za stejných podmínek",
+          "text": "Užitečné srovnání začíná způsobilostí. Prověřte, zda trasa přijímá cílovou zemi, kategorie výrobků, rozměry a hmotnost. Nízká inzerovaná cena nic neřeší, pokud linka dané zboží nepřepraví. Dostupnost u předchozí objednávky nedokládá dostupnost pro jinou zásilku.\n\nU každé vhodné možnosti zaznamenejte celkovou cenu, odhad lhůty, způsob sledování, omezení a zahrnutou či volitelnou ochranu. Podmínky prostudujte tak, abyste rozuměli případnému příplatku za ochranu. Nepředpokládejte stejné zacházení s každou ztrátou, zpožděním, poškozením nebo celním výsledkem.\n\nPři srovnání používejte stejné předpoklady balíku. Pokud jedna nabídka vychází z nižší hmotnosti nebo vynechává jinde zvolenou službu, nejprve rozdíl opravte. Univerzálně nejlepší přepravní linka OOPBuy neexistuje: praktická volba závisí na obsahu, cíli, rozpočtu, časových potřebách a aktuálních podmínkách."
+        },
+        {
+          "title": "Omezení výrobku prověřte před nákupem",
+          "text": "Přítomnost produktu v tabulce neprokazuje, že ho lze zakoupit nebo vám doručit. OOPBuy zveřejňuje nákupní a přepravní omezení a přípustnost trasy může záviset na obsahu. Nejasné kategorie ověřte před objednáním; příjem do skladu nezaručuje možnost mezinárodní přepravy.\n\nPři žádosti o radu popište zboží přesně. Zařízení s vestavěnou baterií, láhev s tekutinou a prázdná plastová láhev jsou různé přepravní případy. Přiložte odkaz a potřebné parametry, aby podpora posuzovala skutečný výrobek místo odhadu podle stručného názvu.\n\nPokud trasa výrobek nepřijímá, prověřte legitimní vhodnou alternativu nebo nákup přehodnoťte. Nepřeznačujte obsah jen proto, aby ho formulář přijal. Potvrzení uchovejte v poznámkách a při přípravě zásilky je znovu ověřte, pokud se změnilo zboží, cíl nebo trasa."
+        },
+        {
+          "title": "Balení přizpůsobte obsahu",
+          "text": "Při balení vyvažujte zabraný prostor a potřebnou ochranu. Pevná taška, jemný doplněk a stlačitelná mikina nesnášejí stejné zacházení. Odstranění všech krabic nebo stlačení všeho může způsobit zbytečné poškození, i když je výsledný balík menší.\n\nOznámení OOPBuy popisuje krabice, některé úpravy krabic od bot, vakuové sáčky a ochranné materiály; dostupnost závisí na okolnostech. Zkontrolujte nabídku pro vlastní objednávku a trasu. Potřebujete-li původní obal pro uložení, prezentaci či možné vrácení, rozhodněte to před požadavkem na jeho odstranění.\n\nU smíšené zásilky vysvětlete, které věci musí zachovat tvar nebo být chráněny před těžším obsahem. Pokud přesnější údaje o balení mohou změnit rozhodnutí, zeptejte se na aktuální zkušební balení. Nejdříve přečtěte cenu a podmínky zrušení. Přebalení má smysl, když řeší konkrétní potřebnou nejasnost."
+        },
+        {
+          "title": "Rozpočet není jen mezinárodní poštovné",
+          "text": "Celková evidence výdajů má zahrnovat zboží, domácí a mezinárodní dopravu, vybrané služby i platební či měnové náklady zobrazené při placení. Podle cíle a podmínek trasy mohou existovat další dovozní poplatky k prověření. Odhady oddělujte od již zaplacených částek.\n\nPřezdívku přepravní linky nebo neformální doporučení neberte jako úplné vysvětlení daní. Čtěte skutečný popis trasy a ptejte se, co zobrazená cena zahrnuje. Nejasný poplatek zapište do rozpočtu jako otevřenou otázku, místo abyste ho mlčky považovali za nulový.\n\nPři požadavku na údaje používejte přesné popisy a hodnoty výrobků. Tento průvodce neurčuje celní pravidla země ani nepředpovídá odbavení. Podstatné je, zda je pro vás přijatelný celek včetně rozumné rezervy na nejasné náklady. Levný produkt může být špatná volba, když doprava převýší úsporu."
+        },
+        {
+          "title": "Odhady doručení čtěte podle etap",
+          "text": "Každý odhad potřebuje počáteční okamžik. Odeslání prodejcem, příjem do skladu, dokončená kontrola, zadání balíku a převzetí dopravcem jsou různé momenty. Než postup srovnáte s očekávanou mezinárodní dobou přepravy, určete etapu aktuálního stavu.\n\nOficiální informace OOPBuy rozlišují domácí a mezinárodní pohyb a připouštějí zpoždění. Živý odhad zvolené trasy používejte k plánování, nikoli jako zaručené datum. Potřebujete-li zboží na pevný termín, počítejte vedle cesty dopravce i s nákupem a skladovými kroky.\n\nPo odeslání sledujte záznam zásilky a uchovejte její číslo. Stav odesláno u nákupní objednávky může označovat cestu do čínského skladu, nikoli mezinárodní přepravu. Zdá-li se postup rozporný, dejte podpoře správné číslo objednávky či balíku a data porovnávaných událostí."
+        },
+        {
+          "title": "Před zaplacením dopravy proveďte závěrečnou kontrolu",
+          "text": "Skutečný balík posuďte jako celek. Potvrďte obsah, údaje příjemce, cíl, balicí pokyny, způsobilost trasy, nabídnutou cenu a služby. Každá přiložená položka má projít vaším posouzením; příprava dopravy nesmí zakrýt nevyřešenou velikost nebo stav.\n\nPotvrzenou nabídku porovnejte s dřívějšími scénáři. Překračuje-li rozpočet, zastavte se a zjistěte legitimní možnosti změny výsledku. Stojí za posouzení jiná vhodná trasa, upravené balení či jiná kombinace věcí. Žádnou však nepovažujte za levnější bez aktuálního srovnání.\n\nUložte podmínky vybrané trasy a záznam konečné platby. Pozdější dotazy ke sledování či podpoře se pak vysvětlují snáze. Dobré plánování znamená znát vlastní balík a přijaté podmínky, nikoli vybrat linku jen proto, že někomu jinému jiná zásilka dorazila rychle."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy: odhad dopravy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: informace o doručení",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy: pokyny k balení",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy: omezení a poznámky před nákupem",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuy: pokyny ke zkušebnímu balení",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-haul-packing",
+        "oopbuy-tracking-guide"
       ]
     },
     {
       "slug": "oopbuy-sizing-guide",
-      "tag": "VELIKOST A STŘIH",
-      "title": "Lepší kontrola velikosti začíná doma",
-      "description": "Porovnávejte rozměry místo spoléhání na známý štítek.",
+      "tag": "Velikosti",
+      "title": "Průvodce velikostmi OOPBuy: čtení tabulek a ověření skutečných rozměrů",
+      "description": "Vybírejte oblečení a obuv s jasným postupem: porovnejte tabulku prodejce, změřte padnoucí kus a vyžádejte cílené skladové měření.",
+      "primaryKeyword": "průvodce velikostmi OOPBuy",
+      "secondaryKeywords": [
+        "tabulka velikostí OOPBuy",
+        "velikosti OOPBuy",
+        "velikost oblečení OOPBuy",
+        "velikost bot OOPBuy"
+      ],
+      "takeaways": [
+        "Používejte tabulku přesné nabídky a rozlište, zda popisuje tělo, nebo oděv.",
+        "Srovnejte stejné rozměry s vlastním kusem, který rádi nosíte.",
+        "Správný štítek nezaručuje padnutí; zásadní rozměry vyřešte před odesláním."
+      ],
       "sections": [
         {
-          "title": "Změřte něco, co vám sedí",
-          "text": "Vyberte podobný kus, který už vlastníte. U oblečení zaznamenejte příslušné rozměry měřené naplocho; u bot použijte metodu měření prodejce. Zachovejte stejné jednotky."
+          "title": "Začněte nabídkou, ne univerzálním převodem",
+          "text": "Nejužitečnější průvodce velikostmi OOPBuy začíná omezením: nepředpokládejte jednu společnou tabulku všech prodejců. Označení M, číselná velikost bot či doporučená výška mohou u různých nabídek znamenat různé věci. Srovnání začněte tabulkou připojenou k přesnému produktu.\n\nOOPBuy je nákupní a logistický zprostředkovatel; parametry výrobku pocházejí z původní nabídky. Objednání běžně používané velikosti nedokládá stejné rozměry jako u jiného prodejce. Známé štítky berte jako identifikátory, dokud jim měření nedá význam.\n\nPři objednání uložte tabulku i variantu. Změní-li se nabídka, budete vědět, podle čeho jste rozhodli. Snímek obrazovky má obsahovat identitu produktu a vysvětlení metody měření, nejen řádek s preferovanou velikostí."
         },
         {
-          "title": "Přečtěte si přesnou nabídku",
-          "text": "Velikostní štítky se mohou mezi prodejci a modely lišit. Porovnejte své rozměry s tabulkou konkrétní položky. Ověřte, zda údaj znamená šířku naplocho, obvod nebo délku."
+          "title": "Změřte něco, co vám už dobře sedí",
+          "text": "Praktickým vzorem je vlastní kus, který nosíte a považujete za pohodlný pro stejný účel. Položte ho na rovnou plochu bez vytahování látky. Změřte údaje podstatné pro nový nákup a zapište čísla i použitý postup.\n\nU košile mohou být užitečné šířka mezi podpažími, ramena, délka zad a rukávu. U kalhot šířka pasu, přední sed, stehno a vnitřní nohavice. Nemusíte měřit všechno; upřednostněte rozměry, které obvykle rozhodují o vhodnosti dané kategorie.\n\nZvolte skutečně srovnatelný vzor. Volná mikina špatně napoví padnutí přiléhavé košile a pružné kalhoty se chovají jinak než pevná látka. Napište, jak se vzor nosí a co byste změnili. Rozměry se tak stanou smysluplným osobním cílem místo nevysvětlených čísel."
         },
         {
-          "title": "Nejistotu vyřešte včas",
-          "text": "Na nejasné rozměry se zeptejte před objednáním. Pokud potřebujete další měření své objednávky, potvrďte dostupnost a cenu služby. Žádná jediná velikostní tabulka nemůže zaručit, že vám věc padne."
+          "title": "Zjistěte, co tabulka velikostí měří",
+          "text": "Před srovnáním určete, zda tabulka uvádí rozměry těla, hotového oděvu, nebo doporučené rozmezí postavy. Každé odpovídá na jinou otázku. Obvod oděvu zahrnuje navrženou volnost, zatímco tělesný obvod popisuje člověka. Záměna může způsobit zásadní chybu ve velikosti.\n\nPrověřte jednotky a to, zda údaj představuje šířku, nebo obvod. Šířka hrudníku naplocho 54 centimetrů není obvod hrudníku 54 centimetrů. Zdvojení šířky může v některých situacích pomoci k přibližnému srovnání, ale nezachytí všechny vlastnosti tvaru oděvu.\n\nPalce převádějte důsledně: jeden palec je 2,54 centimetru. Vedle přepočtu uchovejte původní číslo, aby byly chyby vidět. Nejasné nadpisy nebo překlad metody si nechte vysvětlit dříve, než řádek vyložíte jako důkaz, že velikost padne."
+        },
+        {
+          "title": "Vršky vybírejte podle rozhodujících rozměrů",
+          "text": "Začněte údajem, který vám obvykle působí problém. Těsné košile přes hrudník znamenají nejprve srovnat jeho šířku. U krátkých rukávů dejte rozhodující roli jejich délce. Potom ověřte soulad ostatních rozměrů s preferovaným střihem.\n\nZohledněte konstrukci. Spuštěné rameno nebo raglán mohou omezit přímé porovnání známé šířky ramen a délky rukávu s běžně vsazeným rukávem. Zjistěte začátek a konec měření a využijte schéma prodejce, pokud existuje.\n\nNapříklad referenční bunda může mít šířku hrudníku naplocho 56 centimetrů a délku zad 67 centimetrů. Kandidát s podobným hrudníkem, ale výrazně kratším tělem může sedět velmi odlišně. Porovnávejte celý soubor důležitých rozměrů, nevybírejte velikost kvůli jediné obzvlášť shodné hodnotě."
+        },
+        {
+          "title": "U kalhot nekončete u pasu",
+          "text": "Velikost kalhot je jasnější, když společně posoudíte pas, sed, stehno a vnitřní nohavici. Zdánlivě správný pas nezaručuje pohodlný pohyb ani požadovanou siluetu. Jiná výška sedu navíc mění místo, kde pas leží, a tím pocit ze stejného rozměru.\n\nU pružného pasu zjistěte, zda tabulka uvádí volný, nebo natažený rozměr. Natažené měření prodejce nesrovnávejte s volným pasem vlastních kalhot. Stejný rozdíl je důležitý při prohlížení skladové fotografie s metrem.\n\nVšímejte si zamýšlené délky a střihu. Dvě kalhoty se stejnou vnitřní nohavicí mohou vypadat jinak kvůli sedu, tvaru nohavic a jejich otvoru. Podle vlastního vzoru určete požadovanou změnu, třeba více místa pro stehna či užší otvor. To je výstižnější než obecný dotaz, zda výrobce šije velké nebo malé velikosti."
+        },
+        {
+          "title": "Tabulky obuvi používejte opatrně",
+          "text": "Zaznamenejte velikostní systém prodejce a přečtěte připojené pokyny k délce chodidla. Známé označení EU, UK či US nepřevádějte podle nesouvisející tabulky, dokud neověříte stejnou konvenci nabídky. Chybí-li tabulka, nejistota zůstává nevyřešená.\n\nPokud se požadují tělesné míry, změřte obě nohy podle uvedeného postupu. Délku chodidla, stélky, vnitřního prostoru a podešve evidujte zvlášť; nejsou zaměnitelné. Podešev může přesahovat prostor pro nohu a tvar stélky může komplikovat jednoduché podélné srovnání.\n\nDélka je navíc jen část padnutí. Pohodlí ovlivní šířka, tvar špičky, prostor nártu, ponožky a účel. Porovnávejte podobný vlastní pár a na zásadní rozměr se ptejte konkrétně. Nespoléhejte na univerzální radu vzít vždy o číslo větší nebo přičíst stejnou rezervu ke každé botě."
+        },
+        {
+          "title": "Zohledněte látku a zamýšlený střih",
+          "text": "Měření zužuje výběr, ale nepopisuje všechny vlastnosti při nošení. Struktura látky, pružnost, podšívka a navržený střih ovlivňují pohyb oděvu. Používejte skutečné informace nabídky, pokud jsou dostupné; přesné složení ani pružnost neodvozujte pouze z fotografie.\n\nPřed volbou mezi blízkými velikostmi si ujasněte použití. Kabát přes silné vrstvy může potřebovat jiné padnutí než košile přímo na těle. Volná silueta může být záměr, přesto ověřte, zda ramena, rukávy a celková délka odpovídají vašemu způsobu nošení.\n\nPokud nabídka zmiňuje možné odchylky měření, zahrňte je do rozhodnutí. Nestavte celou volbu na drobném číselném rozdílu, který metoda spolehlivě nerozliší. Vypadají-li dvě velikosti stejně možné, určete podstatný kompromis místo předstírání, že tabulka nabízí dokonalou odpověď."
+        },
+        {
+          "title": "Požádejte o cílené měření ve skladu",
+          "text": "Oznámení OOPBuy o doplňkových logistických službách uvádí dodatečné detaily a měření včetně rozměrů oděvů a délky bot či stélek. V účtu ověřte aktuální možnosti a ceny. Cílený požadavek pomáhá, když řeší důležitou otázku nezodpovězenou tabulkou prodejce.\n\nPostup popište jasně. Například košile naplocho, měřit přes hrudník mezi podpažními švy bez natahování. U vnitřní nohavice určete jako konce rozkrokový šev a lem. Žádejte snímek, na němž jsou metr a oba koncové body vidět společně.\n\nVýsledek potom srovnejte s vlastním vzorem stejnou metodou. Vyfocený štítek velikosti a změřený oděv poskytují různé důkazy. Oznámení o kontrole omezuje význam standardního prověření; shodný štítek proto neznamená, že už někdo ověřil skutečné padnutí právě pro vás."
+        },
+        {
+          "title": "O padnutí rozhodněte před mezinárodní přepravou",
+          "text": "Před přidáním výrobku do mezinárodní zásilky posuďte rozměry a svůj účel. Chybějící zásadní údaj si vyžádejte v době, kdy lze o skladové položce ještě informovaně rozhodnout. Při zřetelném nesouladu rychle prověřte poprodejní možnosti místo naděje, že se padnutí během přepravy změní.\n\nUchovávejte pohromadě tabulku, vybranou velikost, fotografie měření a odpovědi podpory. Usnadní to vysvětlení problému a rozlišení chybně dodané varianty od správně označeného kusu, jehož střih vám nevyhovuje. Jde o různé situace s možnými odlišnými řešeními.\n\nPo doručení výrobek znovu změřte stejným postupem a poznamenejte zkušenost s nošením. Vytvářejte soukromý přehled skutečných zkušeností včetně preferencí a omezení. Časem poslouží lépe než rostoucí seznam nevysvětlených velikostních značek nebo obecné rady z nesouvisejících nákupů."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: uživatelská registrační smlouva",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuy: informace o kontrole",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-spreadsheet-guide"
       ]
     },
     {
       "slug": "oopbuy-product-links",
-      "tag": "ODKAZY VYSVĚTLENÉ",
-      "title": "Jeden produkt, dvě různá ID",
-      "description": "Proč při otevírání nálezu záleží na ID položky prodejce.",
+      "tag": "Odkazy na produkty",
+      "title": "Produktové odkazy OOPBuy: najděte správnou položku a ověřte každou variantu",
+      "description": "Naučte se kontrolovat odkazy OOPBuy a Weidian, rozlišovat zdrojová ID od katalogových čísel, řešit nefunkční odkazy a chápat partnerské parametry.",
+      "primaryKeyword": "produktové odkazy OOPBuy",
+      "secondaryKeywords": [
+        "odkazy OOPBuy Weidian",
+        "převodník odkazů OOPBuy",
+        "produktová URL OOPBuy",
+        "odkazy OOPBuy spreadsheet"
+      ],
+      "takeaways": [
+        "Uchovejte původní produktový odkaz tržiště a ověřte otevřenou stránku.",
+        "Rozlišujte katalogové číslo a zdrojový identifikátor produktu používaný v nákupní URL.",
+        "Prověřte přesnou variantu a aktuální platební údaje; partnerský kód nezaručuje slevu."
+      ],
       "sections": [
         {
-          "title": "Katalogové číslo určuje stránku",
-          "text": "CNBuyCha přiděluje každé stránce produktu vlastní katalogové číslo. To je užitečné uvnitř katalogu, ale nemusí to být ID položky prodejce."
+          "title": "Funkční odkaz je jen první kontrola",
+          "text": "Produktový odkaz OOPBuy vás má přivést k položce, kterou chcete prozkoumat. Otevření stránky je pouze začátek. Stále musíte ověřit výrobek, nabídku prodejce, vybrané možnosti a aktuální cenu proti očekávání vytvořenému katalogem nebo tabulkou, kde jste odkaz našli.\n\nPrůvodce OOPBuy pro začátečníky popisuje hledání pomocí odkazů nebo názvů a následný výběr parametrů a množství. Postup závisí na dostupných informacích konkrétní nabídky. Nepředpokládejte, že každou adresu ze sociálního příspěvku či tržiště lze správně načíst nebo bez další kontroly zakoupit.\n\nVedle adresy OOPBuy uchovejte původní zdrojový odkaz. Při jiném překladu názvu, změně obrázku nebo nefunkční uložené stránce vám zdroj pomůže položku určit. Stručná přezdívka typu černá každodenní taška nestačí k rozlišení několika podobných nabídek."
         },
         {
-          "title": "Odkaz prodejce určuje položku",
-          "text": "U nabídky Weidian používá nákupní tlačítko ID položky z původní URL prodejce. Otevře položku v OOPBuy s partnerským zvacím kódem tohoto webu."
+          "title": "Rozlišujte katalogové číslo a ID produktu",
+          "text": "Nezávislé katalogy často přidělují každému záznamu vlastní číslo. Zdrojové tržiště má samostatný identifikátor nabídky. Tato čísla plní různé funkce a při otevírání či sestavování nákupního odkazu je nelze vzájemně zaměňovat.\n\nV příkladu OOPBuy Tab je 3470 katalogové číslo CNBuyCha. Číslo 7876894732 je zdrojový identifikátor v produktové cestě Weidian. Katalogová stránka číslo 3470 neznamená, že odpovídající nákupní URL OOPBuy má končit číslem 3470.\n\nPři ukládání tipu jasně pojmenujte pole: katalogové číslo, zdrojové tržiště, původní produktový odkaz a produktový odkaz OOPBuy. Uchovejte celé adresy, ne pouze čísla. Pomáhá to zvláště u různých formátů URL tržišť nebo při sdílení snímku katalogu bez odkazu, který produkt skutečně identifikuje."
         },
         {
-          "title": "Po otevření stránku zkontrolujte",
-          "text": "Porovnejte název, prodejce a variantu s prozkoumanou nabídkou. Pokud se stránka změnila nebo není dostupná, vraťte se do katalogu a uvážlivě vyberte jinou nabídku."
+          "title": "Správně čtěte ukázkový odkaz OOPBuy",
+          "text": "Příkladem nákupní adresy je https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5. Doména označuje OOPBuy, produktová cesta zdrojovou nabídku Weidian a poslední parametr obsahuje zvací kód. Číslo v cestě patří zdrojovému produktu, nikoli vlastnímu číslování katalogu.\n\nAdresa slouží k pochopení struktury, ne jako důkaz aktuálních zásob, ceny, spolehlivosti prodejce nebo vhodnosti. Otevřete aktuální stránku a zkontrolujte obsah. Platně vypadající URL může odkazovat na změněnou či nedostupnou nabídku a samotná cesta nepotvrzuje možnosti, které chcete objednat.\n\nZvací parametr je součástí partnerského odkazu. OOPBuy Tab může získat výhodu z jeho kvalifikovaného použití. Přítomnost kódu pro vás nedokládá slevu, kupon ani zvláštní poštovné. Spoléhejte pouze na nabídku výslovně zobrazenou a použitelnou v aktuálním oficiálním platebním procesu."
+        },
+        {
+          "title": "Ověřte identitu otevřené stránky",
+          "text": "Načtenou stránku porovnejte se zdrojem podle více znaků současně. Sledujte obrázky, hlavní konstrukční prvky, dostupné varianty, množství a uvedené údaje prodejce. Názvy mohou být zkrácené či přeložené, takže samotná shoda názvu je slabá kontrola.\n\nDva batohy mohou například sdílet podobnou přední fotografii, ale lišit se vnitřními přihrádkami, rozměry nebo příslušenstvím. Potvrďte parametr, který vás k nákupu vedl. Potřebujete-li určitou kapsu na notebook nebo zapínání, najděte je ve skutečné nabídce místo domněnky, že podobný obrázek znamená stejnou konstrukci.\n\nPozor na stránky zobrazující související produkt po zániku původní nabídky. Je-li identita nejasná, nákup přerušte a při žádosti o vysvětlení uchovejte oba odkazy. Nepřijímejte náhradu bez povšimnutí kvůli podobnému náhledu. Pozdější kontrola velikosti, nákladů a QC závisí na správném výchozím výrobku."
+        },
+        {
+          "title": "Před porovnáním cen vyberte variantu",
+          "text": "Po určení správné nabídky zvolte konkrétní barvu, velikost, provedení a množství k posouzení. Výchozí cena může patřit jiné variantě než první fotografie. Některé stránky spojují příslušenství, jednotlivé kusy a různé velikosti balení pod jeden produkt.\n\nVolbu napište srozumitelně do poznámek. Velká, antracitová, jeden kus je užitečnější než možnost tři, zvlášť když se pořadí voleb změní. Uložte tabulku velikostí nebo obrázek parametrů vysvětlující výběr. Později snáze porovnáte objednávku se záměrem.\n\nKatalogové ceny OOPBuy Tab v USD berte jako odhady. Na oficiální službě ověřte aktuální částku zvolené možnosti, uvedenou domácí dopravu a platební podrobnosti. Mezinárodní přeprava je samostatná rozpočtová otázka. Správný produktový odkaz nezafixuje katalogovou cenu ani z ní neudělá celkovou cenu doručení."
+        },
+        {
+          "title": "Řešte nefunkční nebo neúplný odkaz",
+          "text": "Pokud se produkt nenačte správně, vraťte se na původní tržiště a znovu zkopírujte jeho adresu. Ověřte, zda jde o odkaz na položku, úvod obchodu, výsledky hledání nebo stránku pro sdílení. Zkrácené adresy mohou vypadat podobně, ale nemusejí určovat totéž.\n\nCelý zdrojový odkaz zkuste v oficiálním vyhledávání či vstupu OOPBuy a výsledek prohlédněte. Pokud stále nefunguje, zapište přesnou adresu, chybu nebo chybějící informace. Podpory se zeptejte, zda lze konkrétní nabídku zpracovat, místo očekávání, že opakování opraví nepodporovaný nebo odstraněný produkt.\n\nNeměňte náhodné číselné části, dokud se něco neotevře. Můžete skončit u nesouvisející nabídky s dojmem opraveného původního odkazu. Alternativní výrobek považujte za nového kandidáta a od začátku zopakujte kontrolu identity, velikosti, varianty a nákladů."
+        },
+        {
+          "title": "Sdílejte odkazy s užitečným kontextem",
+          "text": "Užitečně sdílený odkaz obsahuje název, zdrojové tržiště, zamýšlenou variantu, datum ověření a důležité nejistoty. U katalogového záznamu řekněte, že jde o katalog. U živé nákupní stránky tento rozdíl vysvětlete. Další člověk tak pozná, co ještě vyžaduje ověření.\n\nKatalogové obrázky nevydávejte za doklad stavu objednávky ve skladu. OOPBuy Tab využívá data CNBuyCha a importované snímky nejsou ověřené QC vašeho zboží. Při popisu vlastní objednávky důkazy oddělte a před veřejným sdílením odstraňte soukromé údaje účtu, adresy a objednávky.\n\nPartnerské odkazy označujte otevřeně. Zvací kód nevydávejte za zaručenou úsporu, když jste neověřili použitelnou nabídku. Zodpovědné sdílení pomáhá určit výrobek i nejistoty, místo dojmu, že vaše zkušenost vyřešila každou otázku o budoucí objednávce druhého člověka."
+        },
+        {
+          "title": "Účet spravujte na oficiální službě",
+          "text": "Pro přístup do účtu použijte https://oopbuy.com/login a ověřte cíl zobrazený v prohlížeči. Produktový katalog pomáhá s objevováním, ale aktuální údaje účtu, objednávek a plateb kontrolujte na oficiální službě.\n\nPřed zadáním přihlašovacích údajů či platbou čtěte cílovou adresu. Známý název v titulku, obrázku nebo pozvánce sám nedokládá identitu webu. Pokud vás přesměrování znejistí, otevřete oficiální web přímo a původní produktový odkaz použijte tam.\n\nDo vlastní tabulky neukládejte hesla ani platební přihlašovací údaje. Stačí informace pro určení produktu a sledování rozhodnutí. Z veřejného výběru odstraňte také osobní čísla objednávek. Tak lze sdílet užitečné tipy bez směšování objevování výrobků s citlivými informacemi účtu."
+        },
+        {
+          "title": "Používejte opakovatelný postup od odkazu k objednávce",
+          "text": "U každého kandidáta dodržujte stejné pořadí: uložit zdroj, otevřít výsledek OOPBuy, potvrdit identitu, zvolit variantu, prověřit velikost či parametry a odhadnout úplné náklady. Potom rozhodněte, zda máte dost informací k objednání. Důslednost je cennější než rychlé proklikání známě vypadající stránky.\n\nPo objednání soukromě uložte její číslo a skladové údaje porovnejte se stejným záznamem varianty. Správný odkaz nenahrazuje kontrolu přijatého zboží. Pokud se liší, uložená volba a zdroj pomohou problém přesně vysvětlit.\n\nPřed opětovným nákupem vše zkontrolujte znovu. Dříve úspěšně objednaný výrobek může změnit dostupnost, možnosti, cenu či popis. Staré poznatky uchovejte jako historii, ale aktuální stránku posuzujte jako nové nákupní rozhodnutí. Odkazy se tak stávají zvládnutelným výzkumným postupem, ne sbírkou předpokladů."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Oficiální web OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "Přihlášení OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-spreadsheet-guide",
+        "oopbuy-price-check",
+        "oopbuy-sizing-guide"
       ]
     },
     {
       "slug": "oopbuy-price-check",
-      "tag": "CHYTŘEJŠÍ POROVNÁVÁNÍ",
-      "title": "Porovnávejte stejnou věc, nejen cenu",
-      "description": "Krátký kontrolní seznam pro porovnání dvou slibných nálezů.",
+      "tag": "Rozpočet",
+      "title": "Kontrola ceny OOPBuy: spočítejte náklady před nákupem",
+      "description": "Ověřte cenu produktu OOPBuy, porovnejte přesnou variantu a připravte realistický rozpočet domácí dopravy, mezinárodního doručení a dalších nákladů.",
+      "primaryKeyword": "kontrola ceny OOPBuy",
+      "secondaryKeywords": [
+        "celkové náklady OOPBuy",
+        "odhad dopravy OOPBuy",
+        "cena produktu OOPBuy"
+      ],
+      "takeaways": [
+        "Než porovnáte ceny, srovnejte stejnou variantu a množství.",
+        "Ceny v USD berte jako odhady oddělené od celkových nákladů doručení objednávky.",
+        "Rozpočet znovu ověřte po skladovém měření a před platbou mezinárodní dopravy."
+      ],
       "sections": [
         {
-          "title": "Srovnejte stejné možnosti",
-          "text": "Porovnejte stejnou velikost, barvu, množství a přiložené příslušenství. Nejnižší zobrazená cena se může vztahovat k jiné možnosti, než kterou chcete."
+          "title": "Začněte cenou, kterou skutečně potřebujete znát",
+          "text": "Kontrola ceny OOPBuy má odpovědět na praktickou otázku: můžete si dovolit výrobek doručený na svou adresu? Nízká cena produktu řeší jen část. Rozhoduje také přesná varianta, množství, doprava prodejce, mezinárodní přeprava a další částky uvedené při placení nebo požadované v cílové zemi.\n\nOOPBuy Tab je nezávislý web pro objevování, nikoli oficiální nákupní platforma. Katalog vychází z CNBuyCha a ceny v USD jsou odhady, ne úplné nabídky doručení. Najděte zde kandidáty a před platbou aktuální nabídku ověřte na oficiální produktové stránce OOPBuy.\n\nZačněte nejvyšší přijatelnou částkou pro celý nákup. Máte-li rozpočet $80, nevěnujte všech $80 zboží s nadějí, že poštovné bude zanedbatelné. Ponechte prostor pro dosud nezjištěné náklady."
         },
         {
-          "title": "Zahrňte další náklady",
-          "text": "Spolu s cenou položky porovnejte vnitrostátní poštovné a pravděpodobné požadavky na balík. Konečný rozpis platby potvrďte v OOPBuy; katalogový odhad nepovažujte za cenovou nabídku."
+          "title": "Kontrolujte zvolenou variantu, ne první číslo",
+          "text": "Otevřete aktuální nabídku a zvolte barvu, velikost, parametry a množství. Některé URL obsahují několik produktů či provedení. Nejnižší cena může patřit jiné možnosti než obrázek, který vás zaujal. Drobný doplněk a kompletní sada mohou být vedle sebe, aniž stojí stejně.\n\nZapište volbu přesně podle zobrazení. Uložte URL, viditelné jméno prodejce, množství a aktuální mezisoučet zboží. Pokud objednávka ukazuje rozpětí, do rozpočtu nevkládejte jeho spodní hranici, dokud nevíte, že platí pro vaši variantu.\n\nOvěřte, zda volič množství mění jednotkovou cenu nebo minimální odběr. Dvě stejně vypadající nabídky nejsou přímo srovnatelné, pokud jedna cena předpokládá více kusů. Nejasně přeloženou variantu vyřešte před placením; levná nesprávná varianta je pořád nesprávný nákup."
         },
         {
-          "title": "Uchovejte si záznam",
-          "text": "Uložte původní odkaz prodejce a vybrané možnosti. Tyto údaje vám pomohou porovnat fotografie objednávky a vysvětlit nesoulad, pokud budete potřebovat podporu."
+          "title": "Veďte náklady na oddělených řádcích",
+          "text": "Pokyny OOPBuy pro první nákup oddělují počáteční zboží a domácí poštovné od pozdější mezinárodní dopravy. Stejně uspořádejte svůj přehled. Samostatně veďte zboží, dopravu prodejce do skladu, mezinárodní přepravu a volitelné služby. Platební či měnové náklady přidávejte podle skutečné platební obrazovky nebo poskytovatele. Daně a manipulační poplatky cílové země ponechte zvlášť, dokud nemáte spolehlivé údaje pro zemi a službu.\n\nKaždý řádek označte jako potvrzený, odhadnutý nebo neznámý. To je užitečnější než předstírat stejnou jistotu všech čísel. Potvrzený součet zboží může stát vedle odhadu poštovného, zatímco služba zůstává neznámá do aktuální nabídky.\n\nU více výrobků sledujte náklady jednotlivých položek i celého balíku. Zboží patří k položce, společné balení může patřit k zásilce. Rozdělení společných nákladů mezi věci označte jako vlastní rozpočtovou metodu. Nemusí odpovídat způsobu účtování OOPBuy nebo dopravce."
+        },
+        {
+          "title": "Zviditelněte převod měny a náklady platby",
+          "text": "Přepočet do USD pomáhá srovnávat výrobky, ale nezaručuje konečnou částku účtovanou platební metodou. Na potvrzení kontrolujte měnu a splatnou částku. Pokud poskytovatel nabízí převod, porovnejte jej s rozpočtem; nepředpokládejte nezměněné převzetí katalogového přepočtu.\n\nV přehledu používejte jednu pracovní měnu a zaznamenejte způsob převodu ostatních částek. Například cenu prodejce ponechte v původní měně v jednom poli a odhad USD v druhém. Při pozdější kontrole výpočtu tak zůstane zachován původní podklad.\n\nNevymýšlejte univerzální směnný poplatek nebo platební procento OOPBuy. Náklady mohou záviset na aktuální platební cestě a možnostech účtu. Užitečná kontrola je konkrétní: kolik tato platba vyžaduje, v jaké měně a jaký další poplatek poskytovatel skutečně uvádí?"
+        },
+        {
+          "title": "Dopravu odhadujte s realistickým balíkem",
+          "text": "OOPBuy nabízí oficiální kalkulačku dopravy. Zadejte cílovou zemi a rozumně zjistitelné údaje plánované zásilky. Čtěte popisy služeb místo výběru pouze podle nejnižšího čísla. Vhodnost výrobku, rozměry, hmotnost a cíl ovlivňují smysluplné možnosti.\n\nPřed příjmem do skladu považujte hmotnost a rozměry za předpoklady. Uvedená váha oděvu nemusí zahrnovat prodejní obal; lehký objemný výrobek může zabrat značný prostor. Zjistěte potřebné vstupy a uchovejte je vedle výsledku, aby šlo srovnání zopakovat.\n\nPři zásadní nejistotě proveďte druhý scénář. Třeba očekávaný balík porovnejte s objemnější verzí zachovávající nutnou ochranu. Jde o zkoušku citlivosti, ne předpověď. Vychází-li rozpočet jen v nejoptimističtější variantě, plán potřebuje větší rezervu."
+        },
+        {
+          "title": "Projděte úplný příklad",
+          "text": "Předpokládejme košík s košilí odhadnutou na $22 a taškou na $31. Odhad zboží je $53. Podle objednávkové obrazovky zapíšete $5 za dopravu prodejce a $24 za ilustrační mezinárodní scénář. Mezisoučet je $82 před dalšími službami, platebními náklady a případnými cílovými poplatky.\n\nČísla jsou hypotetická a nepředstavují sazby OOPBuy. Ukazují, proč košík za $53 nelze automaticky nazvat nákupem za $53. Při maximálním rozpočtu $90 je zbývajících $8 dostupná rezerva na nevyjasněné výdaje, nikoli sleva, která teprve nastane.\n\nZměňme scénář: objemnější balík zvýší hypotetické poštovné na $34. Mezisoučet je nyní $92 ještě před nejasnými náklady. Před závazkem máte jasnou volbu: odebrat položku, vědomě zvýšit rozpočet, nebo nákup zastavit. Přehled mění nejistotu na použitelné srovnání."
+        },
+        {
+          "title": "Alternativy srovnávejte na stejném základě",
+          "text": "Mezi dvěma prodejci porovnávejte stejnou konfiguraci a očekávaný výsledek. Zaznamenejte velikost, popis materiálu, příslušenství, množství a domácí dopravu. Levnější produkt může obsahovat méně částí nebo poskytovat méně údajů o požadovaném parametru.\n\nZohledněte kvalitu podkladů, ale nepřiřazujte jí smyšlenou finanční hodnotu. Jasná tabulka velikostí a přesný popis usnadní volbu, nejasná nabídka může potřebovat další dotazy. Katalogové snímky slouží k hledání; nejsou ověřené fotografie vlastní skladové objednávky.\n\nNapříklad produkt za $20 s dopravou $6 a produkt za $24 s dopravou $2 dávají stejný předběžný součet $26. To nedokládá stejnou kvalitu ani konečnou mezinárodní cenu. Jen odstraní zavádějící rozdíl hlavních cen a umožní posoudit zbývající fakta."
+        },
+        {
+          "title": "Kupony posuzujte, ale nenechte je určovat rozpočet",
+          "text": "Akce je užitečná, jen když se vztahuje na zamýšlený nákup. Čtěte živé podmínky konkrétního kuponu: místo použití, minimální útratu, způsobilé služby, platnost a kombinování s jinými nabídkami. Propagační text starého snímku není aktuální nárok.\n\nSlevu počítejte až po sestavení košíku. Pokud zbytečná položka odemkne kupon, srovnejte celý nový součet s původním. Další nákup může zvýšit cenu zboží, hmotnost a objem, přestože kupon sníží jeden řádek účtu.\n\nZaznamenejte, zda už je sleva zahrnutá v odhadu. Započítat stejnou úsporu jednou v kalkulačce a podruhé v tabulce vytváří fiktivní rozpočet. Nezobrazuje-li konečné placení očekávané odečtení, vyřešte nesoulad před dokončením platby."
+        },
+        {
+          "title": "Kontrolu opakujte při každém platebním rozhodnutí",
+          "text": "Cenu znovu ověřte, když se informace zlepší: po výběru aktuální varianty, před zaplacením nákupu a při skladovém měření pro nabídku mezinárodní zásilky. Odhad pomáhá rozhodnout; neslibuje, že pozdější údaje nemohou výsledek změnit.\n\nPřed platbou potvrďte položky, množství, měnu, adresu, služby, skutečně uplatněné slevy a aktuální splatný součet. Uchovejte čísla objednávek a účtenky, aby šly úpravy přiřadit ke správnému nákupu. Nespoléhejte na zapamatované číslo z produktové karty.\n\nJednoduché pravidlo zastavení: pokračujte jen tehdy, když splatná částka a zbývající nejistoty odpovídají rozpočtu. Může-li neznámý náklad změnit rozhodnutí, nejprve ho zjistěte. Dále využijte průvodce dopravou pro srovnání zásilek a skladový průvodce pro pochopení, kdy získáte přesnější rozměry."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: odhad dopravy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-spreadsheet-guide"
+      ]
+    },
+    {
+      "slug": "oopbuy-warehouse-guide",
+      "tag": "Sklad",
+      "title": "Průvodce skladem OOPBuy: od příjmu po zadání zásilky",
+      "description": "Zjistěte, co ověřit po příchodu objednávky OOPBuy do skladu, jak sledovat lhůty uskladnění a kdy rozhodnout o vrácení nebo odeslání.",
+      "primaryKeyword": "průvodce skladem OOPBuy",
+      "secondaryKeywords": [
+        "uskladnění OOPBuy",
+        "přijatá objednávka OOPBuy",
+        "skladová kontrola OOPBuy"
+      ],
+      "takeaways": [
+        "Datum příjmu sledujte u každé položky zvlášť a ověřte aktuální pravidla uskladnění.",
+        "Před sloučením do balíku posuďte fotografie a rozměry své objednávky.",
+        "Pochybnosti o výrobku a možnosti vrácení vyřešte před schválením mezinárodního odeslání."
+      ],
+      "sections": [
+        {
+          "title": "Sklad berte jako rozhodovací etapu",
+          "text": "Ve skladu se nákup na dálku snáze posuzuje. Položku evidovanou k objednávce můžete srovnat se zamýšlenou variantou, prohlédnout dostupnou kontrolu a rozhodnout o ponechání, dotazu nebo povoleném vrácení. Také plánování balíku získává konkrétnější základ.\n\nNeslučujte každý krok pod slovo dorazilo. Doručení prodejcem, příjem do skladu, kontrola, uskladnění, příprava zásilky a mezinárodní odeslání jsou různé události. Čtěte skutečný stav v účtu a hledejte identifikátor položky nebo balíku, ke kterému patří.\n\nNejužitečnější je připravit kontroly předem. Uložte vybranou variantu a důležité rozměry. Jakmile se objeví skladový záznam, budete ho srovnávat s konkrétním očekáváním místo zpětného rekonstruování původní volby."
+        },
+        {
+          "title": "Každé položce vytvořte samostatný záznam",
+          "text": "Veďte seznam s číslem objednávky, odkazem, barvou, velikostí, množstvím, datem příjmu, stavem kontroly a otevřenými otázkami. Každá položka má vlastní řádek i při společném nákupu. Jedno nakupování může vést k několika zásilkám prodejců a rozdílným datům příjmu.\n\nRozlišujte číslo objednávky, sledovací číslo prodejce a pozdější mezinárodní číslo balíku. Odpovídají na různé otázky. Při pátrání po chybějícím výrobku je přesná objednávka užitečnější než snímek celého košíku.\n\nV osobní evidenci používejte jednoduché značky: čeká na kontrolu, dotaz odeslán, ponechat, požádáno o vrácení. Jsou to vaše organizační štítky, nikoli oficiální stavy OOPBuy. Mají zviditelnit nedokončené úkoly. Po návratu do účtu za několik dní má být ihned jasné, která položka potřebuje pozornost a proč."
+        },
+        {
+          "title": "Lhůtu uskladnění určujte podle podkladů",
+          "text": "Oficiální pravidla OOPBuy uvádějí 90 dní bezplatného uskladnění od přechodu objednávky do stavu Received, tedy přijato. Datum evidujte pro každý kus, nikoli jen poslední nákup celé zásilky. Než se na dobu uskladnění spolehnete, pročtěte aktuální oznámení a účet.\n\nKonkrétnější oznámení o doplňkových logistických službách umožňuje jedno placené prodloužení za 10 CNY, nejvýše o 30 dní, tedy celkem maximálně 120 dní. Po překročení tohoto celku může být zboží považováno za opuštěné a zlikvidováno. Nejde o 120 bezplatných dní ani neomezené obnovování.\n\nVlastní připomínku nastavte s rezervou před běžnou bezplatnou lhůtou, aby zbyl čas na otázky a přípravu odeslání. Potřebujete-li prodloužení, ověřte dostupnost pro přesnou položku a potvrzení nového data. Samotné ponechání ve skladu automaticky nenakupuje další uskladnění."
+        },
+        {
+          "title": "Prohlédněte podklady své objednávky",
+          "text": "V účtu otevřete kontrolní informace přesné položky. Porovnejte viditelnou barvu, štítky, velikost, množství a přiložené části s uloženou objednávkou. Na dostupných snímcích hledejte zjevné problémy stavu. Skrytý nebo rozmazaný detail ponechte nevyřešený místo předpokladu, že prošel.\n\nKatalogový obrázek OOPBuy Tab nedokládá stav vašeho skladového kusu. Nezávislý katalog používá zdrojová data CNBuyCha a jeho snímky nebyly ověřeny jako QC konkrétní objednávky. Obrázky pro hledání oddělujte od důkazů vlastní objednávky.\n\nKontrolujte jednu položku po druhé a otázku zapište, dokud máte příslušný obrázek otevřený. Přesná poznámka šev levého rukávu není vidět je použitelnější než nejistá kvalita. Cílem je určit, co lze ověřit a co potřebuje další kontrolu."
+        },
+        {
+          "title": "Žádejte měření, které vyřeší rozhodnutí",
+          "text": "Pokud o ponechání rozhoduje padnutí či rozměr, určete přesně potřebné měření. U oblečení může jít o šířku hrudníku naplocho nebo délku mezi určenými body. U úložného doplňku může být podstatný využitelný vnitřní otvor, nikoli vnější šířka.\n\nPřed zadáním zjistěte dostupné dodatečné kontroly a měření i jejich ceny. Nepředpokládejte, že běžná kontrola zahrnuje všechny rozměry, funkční zkoušky nebo ověření materiálu. Zeptejte se, zda sklad zvládne konkrétní popsaný úkon.\n\nUžitečný požadavek určuje položku, body měření a potřebný důkaz. Například: ukažte metr od horního ramenního švu ke spodnímu lemu při položení naplocho. Výsledek porovnejte s podobným vlastním kusem stejnou metodou; odlišný postup může vytvořit falešný nesoulad."
+        },
+        {
+          "title": "O vrácení rozhodněte před plánováním balíku",
+          "text": "Liší-li se výrobek od objednávky nebo ho už nechcete, ihned prověřte použitelná pravidla vrácení. Pro danou objednávku je nutné zjistit způsobilost, lhůtu, spolupráci prodejce, stav a případné náklady zpáteční dopravy. Doba uskladnění automaticky nevytváří stejně dlouhé právo na vrácení.\n\nBěhem prověřování ponechte výrobek v současném stavu. Odstranění obalu, štítků nebo součástí může podle příslušných požadavků ovlivnit vratnost. Při nejistotě se před úpravami zeptejte podpory. Neodesílejte nevyřešenou položku mezinárodně jen kvůli dokončení společného nákupu.\n\nPošlete stručný požadavek s číslem objednávky, konkrétním problémem a podklady. Uveďte požadovaný výsledek, třeba posouzení vrácení nebo kontrolu chybějícího kusu. Potom sledujte odpověď a vlastní nutné kroky místo předpokladu, že samotná žádost vrácení dokončila."
+        },
+        {
+          "title": "Rozhodněte, co je připraveno poslat společně",
+          "text": "Slučování začíná výrobky, které jste se rozhodli ponechat. Porovnejte jejich připravenost, fyzické vlastnosti a vhodnost aktuálních služeb pro cílovou zemi. Měkký malý oděv a křehký tvarovaný předmět mohou potřebovat různou ochranu, i když se vejdou do jedné krabice.\n\nZvažte, zda čekání na pozdější nákup dává smysl vzhledem k nejstarší skladové položce. Nižší teoretická cena na kus nepomůže, když čekání způsobí problém s uskladněním nebo vaším termínem. Stanovte uzávěrku přidávání produktů a plánujte podle skutečně připraveného zboží.\n\nDostupné hmotnosti a rozměry použijte k novému odhadu dopravy. Nevíte-li, zda hmotnost popisuje výrobek, prodejní obal nebo hotový balík, požádejte o vysvětlení. Rozhodnutí má vycházet ze srovnatelných vstupů. Nejlevnější předběžná nabídka nemusí být konečnou cenou zabalené zásilky."
+        },
+        {
+          "title": "Balicí pokyny pište s jasnými prioritami",
+          "text": "Určete obaly, které chcete zachovat, a důvod. Pokud původní krabice patří k dárku nebo chrání jemný tvar, uveďte to. U odstranění zbytečného vnějšího obalu potvrďte dostupnost a pochopte ztrátu ochrany. Vyhněte se pokynům typu udělejte to co nejmenší.\n\nKaždý pokyn spojte s identifikátorem položky. U smíšené zásilky musí být zřejmé, že požadavek na jeden pár bot neplatí omylem pro všechno. Ověřte příplatky za volitelné balení a změnu konečné hmotnosti či rozměrů.\n\nPřed zadáním projděte seznam položek, adresu, službu, deklarované údaje a splatné částky. Poskytujte pravdivé informace a dodržujte aktuálně zobrazené požadavky cíle a linky. Po opuštění skladu se přehlédnutá velikost nebo balení opravují mnohem obtížněji."
+        },
+        {
+          "title": "Po zadání zásilky uzavřete návazné kroky",
+          "text": "Číslo balíku uchovejte vedle záznamů přiložených výrobků. Vznikne jasné spojení nákupní objednávky a mezinárodní přepravy. Uložte konečný seznam i potvrzené balení pro kontrolu po doručení.\n\nZůstane-li položka ve skladu, ponechte viditelné její datum a další krok. Zadání jednoho balíku neznamená vyřešení zbytku účtu. Po přípravě přepravy znovu projděte sklad a najděte vše čekající na rozhodnutí, prodejce nebo samostatnou zásilku.\n\nSkladový postup je hotový, když má každá položka vědomý výsledek: odeslána, čeká na doložený krok nebo probíhá potvrzené vrácení. Podrobnější práci s důkazy najdete v průvodci QC. Pro další logistiku pokračujte balením a sledováním a přeneste si stejnou evidenci jednotlivých položek."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: pravidla uskladnění",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuy: informace o kontrole",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-returns-refunds",
+      "tag": "Poprodejní podpora",
+      "title": "Vrácení a refundace OOPBuy: podmínky, důkazy a další kroky",
+      "description": "Zjistěte, co ověřit před žádostí o vrácení OOPBuy, jak doložit problém a proč jsou schválení refundace a připsání peněz oddělené etapy.",
+      "primaryKeyword": "vrácení a refundace OOPBuy",
+      "secondaryKeywords": [
+        "refundace OOPBuy",
+        "podmínky vrácení OOPBuy",
+        "zpáteční doprava OOPBuy"
+      ],
+      "takeaways": [
+        "Podmínky vrácení prověřte ihned po naskladnění; doba uskladnění není lhůtou k vrácení.",
+        "Při posuzování vrácení uchovejte štítky, obaly a podklady konkrétní objednávky.",
+        "Zjistěte skutečné náklady vrácení a rozlišujte schválenou refundaci od přijatých peněz."
+      ],
+      "sections": [
+        {
+          "title": "Před žádostí o refundaci určete etapu",
+          "text": "Dotaz na refundaci OOPBuy může znamenat různé situace: nákup ještě neodeslaný prodejcem, položku ve skladu, vrácení na cestě k prodejci nebo balík doručený do zahraničí. Začněte určením přesné položky a její etapy. Další krok závisí na tom, co už proběhlo.\n\nOtevřete oficiální záznam objednávky, zapište identifikátor a poslední stav a určete, zda žádáte zrušení, výměnu, vrácení nebo řešení problému po doručení. Správně pojmenovaný požadavek sníží riziko, že obecná zpráva dostane odpověď na jinou otázku.\n\nOOPBuy Tab je nezávislý průvodce a katalog, nemůže schválit vrácení ani přistupovat k účtu. Žádost podávejte přes oficiální objednávkový nebo poprodejní kanál OOPBuy. Pokud lze, veďte diskusi u dotčené objednávky, aby důkazy a rozhodnutí zůstaly pohromadě."
+        },
+        {
+          "title": "Lhůtu a podmínky prověřte okamžitě",
+          "text": "Oficiální oznámení popisuje podmíněnou lhůtu pěti dní, tedy 120 hodin, po stavu Stocked in, počítanou od následující hodiny po změně stavu. Zmiňuje také sedm dní od potvrzeného převzetí. Je nutná podpora vrácení prodejcem a stav vhodný pro další prodej; včasná žádost nedělá každý výrobek způsobilým.\n\nAktuální pravidla a načasování vlastní objednávky prověřte bez odkladu. Nečekejte na konec bezplatného skladování. Uskladnění a způsobilost k vrácení jsou různé věci a jejich lhůty evidujte samostatně.\n\nNěkteré kategorie či stavy jsou vyloučeny, včetně určitých výrobků na zakázku nebo kusů s odstraněnými požadovanými obaly a štítky. Je-li objednávka mimo stanovené podmínky, zeptejte se na ochotu prodejce místo předpokladu standardního nároku. Zveřejněné oznámení nadále vyžaduje souhlas prodejce."
+        },
+        {
+          "title": "Důkazy sestavte kolem jednoho jasného problému",
+          "text": "Uložte údaje dokládající nákup: odkaz, zvolenou velikost či barvu, množství a důležitý popis. Potom shromážděte důkazy konkrétního problému. Fotografie štítku může doložit nesprávnou velikost; jasný detail a širší záběr ukážou skvrnu i její místo na oděvu.\n\nRozdíl popište přesně. Objednána tmavě modrá, dorazil štítek černá je užitečnější než výrobek je špatný. Je-li podstatný rozměr, ukažte postup a srovnávací bod. Neurčité očekávání padnutí se posuzuje obtížněji než doložený nesoulad se zvoleným parametrem.\n\nPoužívejte snímky vlastní objednávky nebo skutečně přijatého výrobku. Obrázky z tabulky či katalogu nedokládají stav vašeho balíku. Pokud lze, uchovejte původní soubory a neupravujte je tak, aby zmizel kontext, identifikátor, štítek nebo celý rozsah vady."
+        },
+        {
+          "title": "Oddělte servisní poplatky od zpáteční dopravy",
+          "text": "Oficiální oznámení odpouští servisní poplatek za první vrácení či výměnu v kalendářním měsíci. Nejde o slib bezplatného poštovného. Další žádosti z osobních důvodů mohou obsahovat servisní poplatek 5 RMB a mohou se přidat domácí přepravní náklady.\n\nVyžádejte si rozpis konkrétní žádosti. Oznámení různě popisuje zacházení s původní dopravou prodejce; univerzální součet proto nepočítejte z izolované věty. Potvrďte očekávanou vracenou cenu zboží, dopravu, případný servisní poplatek a plátce jednotlivých částí.\n\nPotom porovnejte čistý výsledek. Hypotetická refundace zboží $18 s potvrzenými náklady vrácení $7 znamená $11 před dalšími případnými úpravami. Jde o ilustraci, ne sazby OOPBuy. Skutečná nabídka pomůže rozhodnout mezi dobrovolným vrácením a ponecháním jinak přijatelného výrobku."
+        },
+        {
+          "title": "Napište proveditelnou žádost",
+          "text": "Úvodní žádost má být dost krátká pro rychlé posouzení, ale obsahovat podstatné údaje. Uveďte objednávku, výrobek a variantu, důležitá data, problém a požadovaný výsledek. Přiložte nejsilnější důkazy místo desítek nesouvisejících snímků. Různé problémy více výrobků jasně oddělte.\n\nNapříklad vysvětlete, že skladový štítek uvádí jinou velikost než zaplacená objednávka, pojmenujte obě a žádejte posouzení vrácení či správnou náhradu. Jestliže jste jen změnili názor, přiznejte to. Nepřesný důvod vady může zkomplikovat hodnocení důkazů.\n\nZeptejte se na další krok, částku k úhradě a to, zda má výrobek zůstat nedotčený. U potvrzeného poplatku postupujte podle pokynů účtu k zůstatku či platbě. Zapište odpověď a termín a dál kontrolujte otázky čekající na vaši reakci."
+        },
+        {
+          "title": "Vrácení sledujte jako proces, ne jedno tlačítko",
+          "text": "Podaná žádost, schválení, odeslání zpět, příjem prodejcem a dokončení refundace jsou samostatné milníky. Ukládejte potvrzení jasně určující dosažený krok. Potvrzení přijetí zprávy podporou není totéž jako souhlas prodejce s vráceným kusem.\n\nBěhem posuzování skladového vrácení nepřidávejte položku do mezinárodního balíku ani neschvalujte změny stavu. Zachovejte snadnou identifikaci a požadované obaly i součásti. Změníte-li plán, před protichůdným pokynem potvrďte aktuální stav.\n\nU výměny se ptejte, co nastane při nedostupné náhradě a zda přibude doprava. Nově přijatou náhradu zkontrolujte jako nové rozhodnutí; nepředpokládejte automatické odstranění původního problému. Aktualizujte evidenci, abyste omylem neodeslali původní kus nebo neztratili přehled o náhradním."
+        },
+        {
+          "title": "Rozlišujte schválení refundace a připsané peníze",
+          "text": "Po potvrzení refundace zapište částku, měnu, cíl a identifikátor. Ověřte, zda jde o úpravu zůstatku OOPBuy, nebo návrat na platební metodu. Jsou to různé výsledky; kredit účtu nezaměňujte s penězi už dostupnými v bance.\n\nOficiální oznámení uvádí očekávané vypořádání na kartu 7–15 dní po potvrzení s časem závislým na bance. Jde o odhad oznámení, ne záruku ani univerzální harmonogram každé platební cesty. Podpory se zeptejte na etapu vlastní refundace.\n\nPo překročení očekávané doby uveďte při dohledání číslo refundace a datum potvrzení. Před označením rozdílu za chybu porovnejte měny původní platby a vrácení. Neobjasněné srážky si nechte vysvětlit; nevymýšlejte poplatek ani nepředpokládejte vratnost všech nákladů nákupu."
+        },
+        {
+          "title": "Problémy po mezinárodním doručení řešte rychle",
+          "text": "Mezinárodní vrácení je větší rozhodnutí než vrácení ze skladu. Oficiální pravidla uvádějí, že zpáteční dopravu do Číny a další související náklady nese zákazník a stále musí splnit použitelné podmínky. Před odesláním čehokoli zpět získejte písemné instrukce a jasný odhad nákladů.\n\nU poškozeného, neúplného nebo nesprávného doručeného balíku uchovejte vnější obal, přepravní štítek, seznam a fotografie. Oznámení OOPBuy obsahuje krátké lhůty pro hlášení a důkazy; podporu kontaktujte ihned místo dlouhého zvažování, zda je problém dost vážný.\n\nPři zjevném problému s hmotností oznámení výslovně žádá důkaz vážení před otevřením. Obecně zdokumentujte doručené věci co nejdříve a dodržte postup dopravce. Nevyhazujte obaly ani neopravujte výrobek, dokud jsou nutné důkazy. Nahlášení zahajuje posouzení, nezaručuje úspěch nároku."
+        },
+        {
+          "title": "Příštímu zbytečnému vrácení předcházejte",
+          "text": "Většina přípravy na vrácení se odehrává před vznikem problému. Před platbou ověřte variantu, srovnejte rozměry, odhadněte mezinárodní dopravu a uchovejte nabídku. Tím omezíte chybnou volbu i pozdní zjištění, že doručení překračuje rozpočet.\n\nVe skladu prohlédněte vlastní kontrolní důkazy rychle a potřebné měření požadujte včas pro rozhodnutí. Při nejistotě odložte odstranění obalu i zadání balíku do vyřešení otázky. Jasné ponechat nebo vrátit je hodnotnější než nedokončený nákup čekající ve skladu.\n\nKonečný záznam má ukazovat řešení: ponecháno, přijata náhrada, vrácení dokončeno nebo refundace dorazila na určené místo. Zůstává-li něco otevřené, napište další krok a odpovědnou stranu. Skladový a QC průvodce pomohou začlenit tyto kontroly do budoucího nákupu od začátku."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy: stavy objednávek a balíků",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy: problémy po doručení",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-warehouse-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-price-check"
+      ]
+    },
+    {
+      "slug": "oopbuy-tracking-guide",
+      "tag": "Doručení",
+      "title": "Průvodce sledováním OOPBuy: správný výklad stavů objednávek a balíků",
+      "description": "Pochopte sledování OOPBuy, rozlišujte doručení prodejce a mezinárodní přepravu a zjistěte, jaké důkazy shromáždit při problému zásilky.",
+      "primaryKeyword": "průvodce sledováním OOPBuy",
+      "secondaryKeywords": [
+        "sledování OOPBuy",
+        "stav objednávky OOPBuy",
+        "sledování balíku OOPBuy"
+      ],
+      "takeaways": [
+        "Ověřte, zda sledujete nákupní objednávku, nebo mezinárodní balík.",
+        "Řiďte se přesným číslem a událostmi dopravce; nepředpokládejte stejný význam všech stavů.",
+        "Pro šetření postupu pošlete stručnou časovou osu a poslední potvrzenou událost."
+      ],
+      "sections": [
+        {
+          "title": "Nejprve určete, kterou cestu sledujete",
+          "text": "Nákup OOPBuy zahrnuje dvě etapy: prodejce posílá zboží do čínského skladu, poté zadaný mezinárodní balík putuje k cíli. Stav odeslaná objednávka tedy může znamenat odeslání prodejcem, nikoli zásilku už směřující k vám domů.\n\nOficiální průvodce rozlišuje nákupní a balíkové objednávky. Shipped používá u nákupu pro odeslání prodejcem a u balíku pro převzetí dopravcem. Před výkladem slova vždy zkontrolujte kontext stránky a identifikátor. Toto rozlišení vysvětluje mnoho zdánlivě protichůdných aktualizací.\n\nPoložte si konkrétní otázku: čekám na příjem výrobku do skladu, přípravu balíku, nebo doručení dopravcem? Odpověď napište k příslušnému číslu. Potom prověřujete správnou etapu místo hledání domácího nákupu na mezinárodním sledovacím webu, když se z něj ještě mezinárodní balík nestal."
+        },
+        {
+          "title": "Udržujte správné identifikátory pohromadě",
+          "text": "Propojte nákupní objednávku s pozdějším balíkem, který ji obsahuje. Uložte číslo objednávky, dostupné číslo doručení prodejce, mezinárodní balík či nákladní list, vybranou službu a datum odeslání. U sloučených objednávek je sepište pod balík pro pozdější kontrolu obsahu.\n\nOficiální průvodce pro začátečníky odkazuje pro sledování na My Waybill a Waybill Details. Používejte aktuální navigaci účtu a údaje skutečné zásilky. Snímek bez identifikátoru lze těžko vyložit, pokud čekáte na více balíků.\n\nSledovací čísla kopírujte pečlivě a zachovejte uvedeného dopravce. Nepředpokládejte, že číslo z jedné obrazovky je zaměnitelné za každý referenční údaj dopravce. Vytvoří-li předání další číslo, doplňte ho do původního záznamu; nezakládejte nesouvisející poznámku ztrácející vazbu na objednávku."
+        },
+        {
+          "title": "Skladové stavy čtěte jako provozní kroky",
+          "text": "Potvrzené doručení prodejce může předcházet kontrole a uskladnění. Oficiální průvodce odděluje podepsané převzetí od pozdějšího prověření a skladových kroků. Příjezdový záznam proto nemusí znamenat, že je položka připravena ke sloučení do mezinárodního balíku.\n\nHledejte zprávy účtu vyžadující akci. Doplatek či požadavek na potvrzení může zastavit nákup do vaší reakce. Čtěte skutečný požadavek a vysvětlení místo chápání každého nezměněného stavu jako přepravního zpoždění. Nejasnou akci řešte dotazem ke konkrétní objednávce.\n\nSkladovou etapu využijte k posouzení samotného výrobku. Před zadáním balíku potvrďte variantu, dostupné kontrolní fotografie a otevřené otázky. Postup sledování neschvaluje padnutí, funkčnost ani pravost. Logistika může běžet správně, zatímco výrobek stále potřebuje samostatné rozhodnutí zákazníka."
+        },
+        {
+          "title": "Oddělte přípravu balíku od pohybu dopravce",
+          "text": "Po zadání mezinárodního balíku mohou před cestou zbývat skladové úkoly. Platba, kontrola, třídění, balení a převzetí nejsou zaměnitelné události. Oficiální průvodce odděluje dokončené balení od vyzvednutí dopravcem; příprava proto může být vidět před prvním přepravním skenem.\n\nČtěte poslední událost a čas. Samotná existence sledovacího čísla nedokládá odjezd vozidla či odlet letadla. Konkrétní popis použijte jako důkaz známých skutečností a mezeru nevyplňujte vymyšlenou polohou.\n\nUkazuje-li účet problém s platbou nebo adresou, nejprve ho řešte oficiálním kanálem. Při hotové přípravě bez doloženého převzetí se zeptejte, zda k předání dopravci došlo. To je zodpověditelnější než obecný dotaz na zpoždění bez určení etapy."
+        },
+        {
+          "title": "Mezeru ve sledování vykládejte bez smyšlené lhůty",
+          "text": "Aktualizace dopravce zaznamenávají události, nikoli nepřetržitou živou polohu. Období bez skenu neříká přesně, kde balík je nebo proč aktualizace chybí. Před závěrem porovnejte poslední potvrzenou událost s informacemi konkrétní linky.\n\nNeexistuje jediné spolehlivé číslo dní, po kterém je každý balík OOPBuy opožděný. Liší se původní zpracování, trasa, cílové odbavení, svátky i místní podmínky. Používejte aktuální odhad a podmínky zásilky s vědomím, že odhad není zaručené datum.\n\nMísto opakovaného obnovování několika stránek veďte krátkou časovou osu. Zapište odeslání, poslední událost dopravce, datum kontroly a relevantní oznámení služby. Pokud mezera překročí doporučení služby nebo slíbená odpověď nepřijde, budete mít fakta připravena pro cílený dotaz."
+        },
+        {
+          "title": "Na celní a dokumentové požadavky reagujte pečlivě",
+          "text": "Zmiňuje-li sledování clo nebo žádost o dokument, přečtěte přesnou zprávu a zjistěte žadatele. Používejte kontakt v oficiálním účtu nebo oficiální službu určeného dopravce. Nejednejte podle nevyžádaného platebního odkazu jen proto, že právě očekáváte balík.\n\nShromážděte skutečné nákupní záznamy: popisy, množství, účtenky a číslo zásilky. V legitimním řízení poskytujte přesné informace. Neměňte popis či hodnotu k vynucení žádoucího výsledku a nepovažujte cenu v tabulce za fakturu.\n\nPři nejasném textu sledování se zeptejte podpory na skutečně nutnou akci. Obecná celní událost neprokazuje splatný poplatek, zabavení ani nemožnost doručení. To jsou samostatné závěry vyžadující důkaz. Uchovejte kopie odeslaných odpovědí a jejich data."
+        },
+        {
+          "title": "Sledujte předání místnímu doručování",
+          "text": "Po vstupu do místní etapy ověřte, zda podrobnosti určují cílového dopravce nebo další číslo. Je-li dostupný, použijte odkaz z ověřeného přepravního záznamu. Původní číslo zachovejte, aby podpora spojila místní událost s mezinárodní zásilkou.\n\nZkontrolujte adresu včetně čísla bytu a PSČ. Při oznámení pokusu o doručení či vyzvednutí čtěte skutečné možnosti a lhůtu dopravce. Nepředpokládejte stejný druhý pokus, přesměrování nebo dobu vyzvednutí napříč zeměmi a službami.\n\nPokud dopravce žádá upřesnění adresy, odpovězte ověřeným postupem a podle potřeby informujte OOPBuy. Zapište změnu či dohodnuté vyzvednutí. Praktický plán konečného předání je stejně důležitý jako sledování dlouhé mezinárodní cesty, zvláště nebude-li nikdo doma."
+        },
+        {
+          "title": "Vězte, co dělat při chybném doručení",
+          "text": "Když sledování hlásí doručeno, ale balík nenacházíte, zkontrolujte fotografii, recepci, box nebo jiné uvedené místo. Potvrďte adresu zásilky a oficiálně kontaktujte cílového dopravce. Žádejte doručovací záznam místo předpokládání konkrétní příčiny.\n\nOOPBuy sdělte problém, číslo balíku a odpověď dopravce. Pokud balík máte, ale je poškozený či neúplný, uchovejte štítek, obal, seznam a fotografie. Oficiální pokyny obsahují krátké lhůty; problém nahlaste rychle a dodržte důkazní postup pro svou situaci.\n\nRozlišujte důkaz doručení a důkaz výrobku. Sken dopravce může ukázat místo odložení balíku, ne jednotlivé produkty uvnitř. Jasná evidence obou vrstev pomáhá příslušným stranám posoudit problém bez spekulací a nesouvisejících produktových obrázků."
+        },
+        {
+          "title": "Podpoře pošlete prošetřitelnou časovou osu",
+          "text": "Užitečný dotaz určuje balík, službu, cílovou zemi, datum odeslání, poslední potvrzenou událost a otázku. Připojte případný požadavek dopravce a informaci, zda jste reagovali. Ve veřejných diskusích nezveřejňujte celou adresu ani osobní identifikátory.\n\nNapříklad vysvětlete, že účet uvádí převzetí dopravcem, přidejte datum poslední události a zeptejte se na dostupné šetření podle služby. Byl-li slíben další kontakt, uveďte číslo případu a datum. Zeptejte se na vlastní další krok i čas následného dotazu.\n\nNové údaje ponechte ve stejném záznamu do doručení nebo doloženého řešení. Sledování je nejužitečnější, když podporuje rozhodnutí: odpovědět, vyzvednout, uchovat důkaz nebo žádat šetření. Pro příští zásilku se před volbou trasy vraťte k průvodcům dopravou a balením."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: stavy objednávek a balíků",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: informace o doručení",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy: problémy po doručení",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-haul-packing",
+      "tag": "Balení",
+      "title": "Balení nákupu OOPBuy: ochraňte výrobky a ověřte konečné náklady",
+      "description": "Naplánujte společnou zásilku OOPBuy pomocí praktického balení, kontroly tras a zkušebního balení před závaznou mezinárodní přepravou.",
+      "primaryKeyword": "balení nákupu OOPBuy",
+      "secondaryKeywords": [
+        "zkušební balení OOPBuy",
+        "balení OOPBuy",
+        "doprava společné zásilky OOPBuy"
+      ],
+      "takeaways": [
+        "Balení vybírejte podle chráněných věcí a trasy, která je přijme.",
+        "Odstranění krabic a stlačení jsou kompromisy, nikoli automatické úspory či univerzální rady.",
+        "Výsledky zkušebního balení závisejí na zachování trasy a konfigurace obalu."
+      ],
+      "sections": [
+        {
+          "title": "Určete jasný cíl balení společného nákupu",
+          "text": "Dobrý plán OOPBuy vyvažuje ochranu, velikost, náklady a požadovaný stav při doručení. Tyto cíle se mohou střetávat. Prodejní krabice zachová vzhled, ale zabere místo; odstranění může snížit objem a zároveň vyžadovat jinou ochranu výrobku.\n\nU každé položky určete, na čem záleží. Dárek může potřebovat původní krabici. Tvarovaná taška oporu. Pratelný měkký oděv řeší jiné balení než křehký doplněk. Nepoužívejte jeden plošný pokyn na celý nákup jen proto, že ve videu fungoval pro cizí zboží.\n\nCílem je vhodný, jasně určený balík s pochopenou cenou. Nejmenší krabice není automaticky nejlepší a všechny volitelné ochranné služby mohou být zbytečné. Každou volbou řešte konkrétní otázku výrobku, jeho použití nebo přepravních požadavků."
+        },
+        {
+          "title": "Zahrňte jen položky, které chcete ponechat",
+          "text": "Rozhodnutí o výrobku dokončete před rozhodnutím o balení. Porovnejte variantu s vlastními skladovými důkazy a vyřešte velikost, množství nebo viditelný stav. Potřebné dodatečné měření žádejte před závazným zařazením do mezinárodní zásilky.\n\nPři úpravách balení myslete na vratnost. Odstranění požadovaných štítků, pečetí, příslušenství či obalů může ovlivnit splnění podmínek. Na nevyřešený výrobek se nejdříve zeptejte. Úsporné balení je špatný kompromis, pokud stále zvažujete vrácení.\n\nSestavte konečný seznam obsahu s číslem objednávky u každé položky. Označte věci zůstávající ve skladu a uzávěrku dalších nákupů. Zabráníte nekonečnému rozšiřování a získáte stabilní obsah pro porovnání tras, objednání balení i kontrolu připraveného balíku."
+        },
+        {
+          "title": "Pochopte význam hmotnosti i rozměrů",
+          "text": "Balík má hmotnost a zároveň zabírá prostor. Služby používají různá účtovací pravidla, proto čtěte pravidlo skutečné trasy. Nepřebírejte dělitel objemové hmotnosti jiného zprostředkovatele, dopravce nebo fóra jako určující pro svou nabídku.\n\nOficiální průvodce OOPBuy říká, že konečná doprava závisí na změřených rozměrech a hmotnosti balíku. První odhad proto zůstává předběžný, dokud nejsou známé údaje po zabalení. Hmotnost volných výrobků nemusí být hmotností krabice s výrobky a ochranným materiálem.\n\nNapříklad lehká věc v pevném objemném obalu může být citlivější na velikost balíku než kompaktní těžší předmět. To vysvětluje význam balení, ale nepředpovídá pevnou úsporu. Srovnávejte skutečné nabídky přípustného provedení a u ceny uchovejte pravidlo služby, abyste věděli, co porovnáváte."
+        },
+        {
+          "title": "Ochranu vybírejte pro výrobek, ne fotografii",
+          "text": "Oficiální oznámení OOPBuy popisuje kartony, jednoduché balení, vakuové sáčky, bublinkovou ochranu a strečovou fólii. Dostupnost závisí na službě a balíku. Nabídku berte jako možnosti k posouzení, ne seznam vylepšení nutných pro každou zásilku.\n\nPřemýšlejte, jakému poškození bráníte. Měkký sáček kolem oděvu řeší jiný problém než výplň kolem křehké věci. Samotný karton neříká, jak je výrobek uvnitř podepřen, a několik vrstev obalu nenahrazuje jasný pokyn k citlivému místu.\n\nPři nejistotě o materiálu nebo konstrukci se ptejte na vhodnost služby. Stlačení může být nevhodné pro tvarované věci či jemné detaily. Správné balení neposuzujte pouze podle katalogového náhledu, který nemusí ukazovat skutečnou pevnost, křehkost či objem."
+        },
+        {
+          "title": "Výslovně rozhodněte o krabicích od bot a prodejních obalech",
+          "text": "Chcete-li zachovat krabici od bot nebo jiný prodejní obal, uveďte to u konkrétní položky. U odstranění či složení ověřte dostupnost a zjistěte, co zůstane kolem výrobku. Původní obal může pomoci prezentaci, uložení i ochraně, i když neplánujete další prodej.\n\nSrovnejte očekávaný přínos a důsledek. Odstranění krabice snižuje objem, ale může odstranit oporu nebo oddělit součásti, které mají zůstat spolu. Náhradní vnější karton může být stále nutný. Neexistuje univerzální pravidlo, že odstranění krabic zlevní každý nákup po zohlednění všech obalových voleb.\n\nU smíšené zásilky napište rozhodnutí po položkách: zachovat dárkovou krabici, odstranit jen nadbytečný přepravní karton nebo se před úpravou daného obalu zeptat. Nejasný pokyn odstranit všechny krabice nepoužívejte, myslíte-li jen jednu jednorázovou vnější vrstvu."
+        },
+        {
+          "title": "Před sloučením prověřte kompatibilitu trasy",
+          "text": "Přítomnost výrobku v katalogu nedokládá možnost přepravy preferovanou službou. Pokyny OOPBuy uvádějí omezení bateriových tras a samostatné odesílání případů, kdy nadrozměrné věci potřebují vlastní balení. Řiďte se aktuálními skladovými štítky a podmínkami pro skutečné zboží.\n\nCelý seznam porovnejte s dostupnou službou. Změní-li jedna položka způsobilost, srovnejte společný a samostatný balík pomocí skutečných nabídek a stejné nutné ochrany. Slučování nemusí vždy zvítězit; další balíky a odlišné trasy mohou výsledek měnit opačnými směry.\n\nVýrobky popisujte pravdivě a nejasné kategorie prověřujte před nákupem. Balení nezpřístupňuje zakázané zboží ani neobchází požadavky cíle. Pokud služba věc nepřepraví, ptejte se na legální způsobilou možnost nebo vhodný další krok, dokud je ve skladu."
+        },
+        {
+          "title": "Zkušební balení použijte při skutečné nejistotě",
+          "text": "Oficiální pokyny Parcel Rehearsal popisují výběr způsobilých skladových podobjednávek a zadání zkoušky s údaji příjemce a balení. Zveřejněná cena služby je 20 CNY. Před platbou zkontrolujte aktuální postup a poplatek, zvláště liší-li se vaše možnosti od průvodce.\n\nZkouška pomáhá, když měření hotového balíku může změnit výběr dopravy. Nejprve určete zamýšlené balení. Oznámení podmiňuje výsledný výpočet zachováním trasy, metody a podrobností balení; pozdější změny mohou upravit měření i konečnou cenu.\n\nPodmínky zrušení přečtěte před zadáním. Oznámení dovoluje zrušení před sejmutím zboží z police a popisuje následná omezení; po zahájení práce nepředpokládejte vratnost poplatku. Při nejasném stavu se zeptejte. Zkouška je placená příprava, ne záruka rychlosti doručení ani odstranění veškeré přepravní nejistoty."
+        },
+        {
+          "title": "Pište pokyny, podle kterých může jiný člověk postupovat",
+          "text": "Používejte krátké pokyny ke konkrétním věcem s jasnou prioritou. Výrobek určete číslem objednávky, napište, co ponechat nebo odstranit, a vysvětlete ochranu. Závisí-li pokyn na proveditelnosti, žádejte potvrzení místo odhadování mezi neslučitelnými cíli.\n\nNapříklad požádejte zachovat označenou dárkovou krabici, ponechat obsah spolu a potvrdit vhodnou vnější ochranu. U jiné věci se zeptejte na odstranění nadbytečného obalu prodejce bez zásahu do nutného produktového obalu. Jde o požadavky k ověření, ne předpoklady zahrnuté služby.\n\nVolby v rozhraní porovnejte s písemnou poznámkou. Požadavek zachovat krabici může odporovat jinde vybranému odstranění. Před zadáním ověřte příplatky a uložte potvrzené možnosti. Jasné pokyny omezí nejistotu lépe než dlouhý odstavec mísící preference, žerty a několik plánů zásilky."
+        },
+        {
+          "title": "Zkontrolujte hotový balík a plán převzetí",
+          "text": "Před konečnou volbou přepravy porovnejte obsah, příjemce, trasu, balení, rozměry a splatnou částku. Potvrďte skutečně uplatněnou slevu a vraťte se k celkovému rozpočtu. Ceny produktů v USD na katalogových stránkách jsou odhady a nezahrnují úplné náklady přijetí nákupu.\n\nČíslo balíku uchovejte s čísly položek a potvrzením balení. Při doručení ověříte přítomnost všech částí a zachování požadovaných prodejních obalů. Při problému rychle zajistěte důkazy doručení místo okamžitého vyhození vnějších materiálů.\n\nÚspěšný plán končí výrobky v přijatelném stavu za vědomě schválenou cenu. Po odeslání použijte průvodce sledováním; při problému zjištěném před přepravou průvodce vrácením. Pro příští společný nákup zapište osvědčené volby balení, aby další rozhodnutí vycházelo ze zkušeností."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: pokyny k balení",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy: pokyny ke zkušebnímu balení",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        },
+        {
+          "label": "OOPBuy: pravidla samostatného odeslání",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        },
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-returns-refunds"
+      ]
+    }
+  ],
+  "guides": {
+    "guide": {
+      "sections": [
+        {
+          "title": "Začněte jasným užším výběrem",
+          "text": "Vyberte kategorii a porovnejte několik relevantních nabídek. Zaznamenejte název, zdrojový odkaz, vybranou barvu, velikost a množství. Katalogová cena je užitečný počáteční údaj; při otevření přes OOPBuy ověřte aktuální možnost a částku. Otázky k rozměrům, materiálu či příslušenství držte u položky. Malý výběr usnadní rozpoznat, kdy podobné obrázky ve skutečnosti představují různé verze nebo nabídky prodejce."
+        },
+        {
+          "title": "Před placením objednávku zkontrolujte",
+          "text": "Průvodce pro začátečníky popisuje nákup přes platformu a příjem zboží do jejího čínského skladu. Nejprve se platí produkt a domácí doprava; mezinárodní balík později samostatně. Před objednáním prohlédněte načtenou nabídku a porovnejte možnosti s poznámkami. Zkontrolujte částku a podmínky položky. Nejasnou velikost, množství či omezení vyřešte před platbou. Uložte číslo objednávky pro přiřazení pozdějších skladových údajů ke správnému nákupu."
+        },
+        {
+          "title": "Po zveřejnění skladových údajů zkontrolujte výrobek",
+          "text": "Odeslání prodejce a skladové zpracování jsou různé etapy. Jakmile objednávka dostane skladové údaje, čtěte aktuální stav a fotografie. Porovnejte přijatou barvu, velikostní štítek, množství a viditelný stav s objednanou variantou. Chybí-li důležitý pohled, zeptejte se na dodatečnou fotografii či měření a cenu. Při problému rychle prověřte poprodejní možnosti, protože způsobilost závisí na výrobku a okolnostech."
+        },
+        {
+          "title": "O balíku rozhodujte nakonec",
+          "text": "Před zadáním balíku posuďte každou položku, adresu, trasu a podmínky. Oficiálním odhadem prozkoumejte vhodné možnosti, potom ověřte údaje skutečné zásilky. Balení, změřené rozměry a obsah mohou nabídku ovlivnit. Čísla objednávek a balíku uchovejte spolu a podporu i sledování řešte oficiálním účtem. Podrobné průvodce vysvětlují rozhodování o velikosti, QC, nákladech a balení v tomto pořadí."
+        }
+      ],
+      "checks": [
+        "Porovnejte načtený výrobek, variantu a množství se zdrojovou nabídkou.",
+        "Skladové důkazy a dostupné poprodejní kroky prověřte rychle.",
+        "Před zadáním zkontrolujte adresu, obsah balíku a podmínky trasy."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: průvodce pro začátečníky",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy: odhad dopravy",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ]
+    },
+    "qc": {
+      "sections": [
+        {
+          "title": "Určete, které fotografie prohlížíte",
+          "text": "Začněte původem obrázků. Katalogový či prodejcův snímek představuje nabídku; kontrolní obrázky vlastní objednávky se vztahují k pro ni přijatému výrobku. Před rozhodnutím porovnejte číslo objednávky a variantu. Obrázky na tomto webu pocházejí z katalogu a jsou označeny jako produktové fotografie. Pro posouzení skutečně přijaté věci používejte důkazy v oficiálním účtu OOPBuy."
+        },
+        {
+          "title": "Ověřte identitu, množství a viditelný stav",
+          "text": "Vedle obrázků čtěte objednanou barvu, velikost, verzi a množství. Nejprve celý výrobek, pak důležité oblasti. U bot porovnejte oba kusy a viditelné velikostní štítky. U oblečení prohlédněte siluetu, švy a potisk. U tašek a doplňků zapínání, popruhy a přiložené části. Zapište přesný nesoulad a snímek, který ho ukazuje, místo obecného dojmu, že něco nevypadá správně."
+        },
+        {
+          "title": "Položte otázku řešitelnou dalším obrázkem",
+          "text": "Užitečný dotaz určuje jedno rozhodnutí a potřebný důkaz. Můžete žádat čitelný štítek, skryté zapínání nebo měření s viditelnými konci metru. Potvrďte dostupnost a zobrazenou cenu služby. Fotografie mají omezení: světlo ovlivňuje barvu, perspektiva proporce a obrázek neprokáže vnitřní výkon, dlouhodobou odolnost ani složení materiálu. Nevyřešené otázky ponechte otevřené místo hádání."
+        },
+        {
+          "title": "Pochybnosti vyřešte před zadáním zásilky",
+          "text": "Pozorované skutečnosti porovnejte s nabídkou a rozhodněte o pokračování, upřesnění či poprodejním kontaktu. Uchovejte variantu, důležité obrázky a krátké vysvětlení problému. OOPBuy zveřejňuje pravidla kontroly a vrácení; než předpokládáte konkrétní výsledek, ověřte aktuální pravidla a volby své objednávky. Úplný článek QC přináší kontroly podle kategorií, průvodce velikostmi a vrácením vysvětlují, kdy může další měření nebo rychlý kontakt změnit rozhodnutí."
+        }
+      ],
+      "checks": [
+        "Používejte kontrolní důkazy správné objednávky a varianty.",
+        "Pro konkrétní otevřenou otázku požadujte jasný pohled nebo měření.",
+        "Před přepravou zaznamenejte viditelné problémy a ověřte aktuální poprodejní možnosti."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: informace o kontrole",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy: doplňkové logistické služby",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy: vrácení, výměny a refundace",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    "shipping": {
+      "sections": [
+        {
+          "title": "Připravte vstupy pro odhad",
+          "text": "Začněte cílem a plánovaným obsahem. Shromážděte dostupnou hmotnost a rozměry a určete věci vyžadující zvláštní zacházení či kontrolu trasy. Údaje zadejte do oficiální kalkulačky OOPBuy a prohlédněte výsledné trasy. Před skladovým měřením jde o předpoklady. Udržujte je viditelné pro pozdější nahrazení. Užitečný odhad vysvětluje posuzovaný balík místo vydávání jedné ceny za univerzální."
+        },
+        {
+          "title": "S cenou čtěte podmínky trasy",
+          "text": "Vhodné trasy porovnávejte se stejnými údaji balíku. Čtěte způsob účtování, přijatelný obsah, rozměrové limity a další podmínky platformy. Skutečná hmotnost je váha; objemové účtování vychází z prostoru podle pravidla trasy. Větší krabice tedy může změnit srovnání i u stejných výrobků. Používejte uvedený koeficient a zaokrouhlování místo vzorce jiného dopravce či odhadu."
+        },
+        {
+          "title": "Posuďte celý rozpočet a balení",
+          "text": "Mezinárodní odhad držte vedle ostatních nákladů objednávky. Cena zboží, doprava do skladu, služby a případné platební či cílové poplatky se mohou objevovat v různých fázích. Každý ověřte tam, kde je skutečně uveden. Balení má vyvážit ochranu a rozměry: křehké či snadno deformované věci potřebují jiný přístup než měkké oblečení. Zjistěte dostupné služby a porovnejte navržený balík, než předpokládáte úsporu odstraněním obalů či sloučením."
+        },
+        {
+          "title": "Před odesláním znovu ověřte skutečný balík",
+          "text": "Po získání zabalených rozměrů a aktuálních možností dopravy srovnání zopakujte. Potvrďte příjemce, obsah, podmínky trasy a požadovanou částku. Dodací odhady berte jako plánovací údaje a ponechte čas na etapy objednávky i balíku. Uložte číslo zásilky a sledujte aktualizace oficiálním účtem. Podrobné průvodce dopravou, celkovými náklady, balením a sledováním vysvětlují rozhodnutí za touto závěrečnou kontrolou."
+        }
+      ],
+      "checks": [
+        "Trasy srovnávejte se stejným cílem, obsahem, hmotností a rozměry.",
+        "Používejte účtovací pravidlo a omezení vybrané trasy.",
+        "Před potvrzením dopravy přepočítejte skutečné údaje balíku."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy: odhad dopravy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy: informace o doručení",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy: vysvětlení prvního nákupu",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
         }
       ]
     }
-  ]
+  },
+  "categoryIntros": {
+    "shoes": {
+      "title": "Katalog bot OOPBuy",
+      "intro": "Obuv procházejte podle modelu, účelu a detailů důležitých pro padnutí. Než spolehnete na známé velikostní označení, porovnejte přesnou možnost prodejce. Fotografie pomáhají vybrat pár do užšího seznamu; rozměry prodejce a důkazy přijaté objednávky podporují další rozhodnutí. Kontrolujte levou i pravou botu.",
+      "checks": [
+        "Údaje prodejce porovnejte s vhodným párem, který už nosíte.",
+        "Po zveřejnění snímků objednávky ověřte model, barvu, velikostní štítek a obě boty.",
+        "Zvažte ochranu a prostor potřebný pro pár i jeho krabici."
+      ]
+    },
+    "hoodies-sweaters": {
+      "title": "Mikiny a svetry OOPBuy",
+      "intro": "Mikiny a svetry vybírejte podle preferovaného střihu. Šířka hrudníku, délka a tvar ramen pomohou více než samotné písmeno velikosti. Rozměry každého prodejce porovnejte s pohodlným vlastním oděvem a ověřte barvu i verzi. Obrázky ukazují vzhled; složení a gramáž vyžadují spolehlivé údaje nabídky nebo potvrzení.",
+      "checks": [
+        "Zaznamenejte šířku hrudníku, délku oděvu a ramena ke srovnání.",
+        "V dostupných pohledech ověřte barvu, manžety, kapuci či výstřih.",
+        "Materiálová tvrzení a gramáž ověřte v nabídce, než na ně spolehnete."
+      ]
+    },
+    "t-shirts": {
+      "title": "Katalog triček OOPBuy",
+      "intro": "Trička hledejte podle tvaru, rukávů a přesného motivu. Před volbou velikosti porovnejte rozměry a variantu. Podobné nabídky může odlišovat umístění potisku, konstrukce límce či barva. Fotografie použijte k určení otázek a detaily potvrďte údaji prodejce i dostupnými skladovými důkazy objednávky.",
+      "checks": [
+        "Délku a šířku hrudníku porovnejte s dobře padnoucím tričkem.",
+        "Potisk, barvu a variantu srovnejte s uloženou nabídkou.",
+        "Na snímcích objednávky sledujte výstřih, švy a umístění potisku."
+      ]
+    },
+    "jackets": {
+      "title": "Katalog bund OOPBuy",
+      "intro": "Bundy vybírejte podle plánovaných vrstev a potřebné konstrukce. Zvolenou velikost porovnejte s podobnou bundou a vlastní preferencí vrstvení. Ověřte zapínání, kapsy a podšívku. Snímky odhalí viditelné detaily; hřejivost, nepromokavost a materiálová tvrzení potřebují podklady přesahující vzhled výrobku.",
+      "checks": [
+        "Rozměry srovnejte s bundou nošenou přes zamýšlené vrstvy.",
+        "V dostupných podkladech prověřte zipy, knoflíky, kapsy a viditelnou podšívku.",
+        "Zvažte vliv konstrukce a výplně na ochranu a zabalený objem."
+      ]
+    },
+    "pants-shorts": {
+      "title": "Kalhoty a kraťasy OOPBuy",
+      "intro": "Kalhoty a kraťasy procházejte podle pasu, sedu, délky a tvaru nohavic. Stejný štítek může znamenat velmi odlišné padnutí; metodu měření prodejce porovnejte s oblíbeným vlastním kusem. Zjistěte, zda varianta znamená jeden výrobek nebo sadu, a před považováním nabídek za stejné potvrďte barvu a délku.",
+      "checks": [
+        "Pas, sed a vnitřní nohavici porovnejte s vhodným referenčním kusem.",
+        "Před výkladem velikosti zjistěte, zda je pas pevný, pružný nebo nastavitelný.",
+        "Délku, barvu a množství přiřaďte ke zvolené možnosti objednávky."
+      ]
+    },
+    "headwear": {
+      "title": "Čepice a klobouky OOPBuy",
+      "intro": "Pokrývky hlavy procházejte s ohledem na obvod, hloubku a tvar. Nastavitelné zapínání poskytuje pružnost, ale jeho rozsah musí nositeli vyhovovat. Porovnejte přesný styl a barvu nabídky. Při pozdějším výběru balení zvažte ochranu koruny nebo kšiltu skutečně přijatého výrobku.",
+      "checks": [
+        "Zkontrolujte obvod či rozsah nastavení a hloubku čepice.",
+        "V dostupných snímcích prověřte barvu, zapínání a viditelný tvar.",
+        "Před zadáním balíku zvažte ochranu pevné koruny či kšiltu."
+      ]
+    },
+    "accessories": {
+      "title": "Tašky a doplňky OOPBuy",
+      "intro": "Tašky a doplňky procházejte podle praktických rozměrů, padnutí a přiložených částí. Samotný obrázek zřídka ukazuje měřítko; ověřte délku popruhu, rozsah pásku nebo rozměr přihrádek. Porovnejte variantu a viditelné zapínání či kování. Materiál potvrďte spolehlivým popisem, ne odhadem složení podle barvy.",
+      "checks": [
+        "Rozměry, délku popruhu či rozsah přizpůsobení porovnejte s plánovaným využitím.",
+        "Ověřte zapínání, úchyty a příslušenství zvolené možnosti.",
+        "Zhodnoťte ochranu pevných, jemných a snadno poškrábatelných částí."
+      ]
+    },
+    "short-sets": {
+      "title": "Sladěné soupravy OOPBuy",
+      "intro": "Sladěné soupravy procházejte s kontrolou každého dílu zvlášť. Obrázek může ukazovat celý komplet, i když varianta obsahuje jen jednu část. Potvrďte množství a obsah, pak rozměry vršku a spodního dílu porovnejte s vlastními oděvy. Ověřte, že vybrané barvy a verze patří ke stejné sadě.",
+      "checks": [
+        "Přesně potvrďte části a množství zahrnuté ve variantě.",
+        "Před výběrem velikosti srovnejte vršek a spodní díl samostatně.",
+        "U každé přijaté části ověřte barvu, provedení a velikostní štítek."
+      ]
+    },
+    "electronics": {
+      "title": "Elektronika OOPBuy",
+      "intro": "Elektroniku vybírejte podle potřebného modelu a kompatibility. Prověřte konektory, podporovaná zařízení, napájení a obsah balení. Před plánováním trasy určete baterie či další přepravně citlivé součásti. Fotografie pomohou s viditelným stavem a identifikací; výkon a bezpečnost vyžadují vhodné parametry, potvrzení nebo zkoušky nad rámec obrázku.",
+      "checks": [
+        "Potvrďte model, kompatibilitu, konektor a napájecí parametry.",
+        "Ověřte vliv baterií či jiného obsahu na dostupné přepravní trasy.",
+        "Zjistěte obsah balení a způsob ověření rozhodující funkce."
+      ]
+    },
+    "other-stuff": {
+      "title": "Další produkty OOPBuy",
+      "intro": "U různorodých tipů začněte účelem, rozměry a obsahem. Podobné fotografie mohou skrývat rozdílné množství, materiálová tvrzení nebo kompatibilitu, proto variantu pečlivě porovnejte. Před přidáním do balíku určete křehké části a zvláštní přepravní požadavky. Z relevantních detailů vyvoďte nejdůležitější kontroly.",
+      "checks": [
+        "Potvrďte účel, rozměry a zahrnuté množství.",
+        "Určete křehké části, kompatibilitu a obsah vyžadující kontrolu trasy.",
+        "Pokud nabídka nebo snímky nechávají důležitý detail nejasný, položte konkrétní otázku."
+      ]
+    },
+    "jersey": {
+      "title": "Katalog dresů OOPBuy",
+      "intro": "Dresy procházejte podle týmu, sezony, verze a skutečně zahrnutých voleb. Porovnejte rozměry prodejce, protože různé střihy sedí jinak i při shodném štítku. Ověřte vybrané jméno, číslo, nášivky a barvu. U personalizace potvrďte přesný pravopis a aktuální poprodejní podmínky před objednáním.",
+      "checks": [
+        "Tým, sezonu, verzi a barvu srovnejte se zvolenou variantou nabídky.",
+        "Ověřte rozměry oděvu a každé jméno, číslo či nášivku.",
+        "Před platbou potvrďte aktuální podmínky zakázkových výrobků."
+      ]
+    }
+  }
 }

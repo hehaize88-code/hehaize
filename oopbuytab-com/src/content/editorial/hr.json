@@ -1,11 +1,11 @@
 {
   "ui": {
     "finds": "Pronalašci",
-    "articles": "Dnevnik",
+    "articles": "Članci",
     "qc": "Vodič za QC",
     "shipping": "Dostava",
     "read": "Pročitajte vodič",
-    "allArticles": "Istražite dnevnik",
+    "allArticles": "Svi članci o OOPBuyu",
     "latestReading": "Malo istraživanja puno znači.",
     "browseAll": "Istražite spreadsheet",
     "heroLabel": "VAŠ SLJEDEĆI PRONALAZAK POČINJE OVDJE",
@@ -15,18 +15,18 @@
     "featured": "Svježe iz spreadsheeta",
     "featuredIntro": "Novi proizvodi, spremni za detaljniji pogled.",
     "categoryTitle": "Pronađite svoj kutak.",
-    "guideTitle": "Od prvog pronalaska do završne provjere.",
-    "guideIntro": "Jednostavan način istraživanja proizvoda prije narudžbe na OOPBuyu.",
-    "faqTitle": "Nekoliko stvari koje vrijedi znati.",
-    "faqIntro": "Jasni odgovori o spreadsheetu, fotografijama proizvoda i poveznicama za kupnju.",
-    "articlesTitle": "OOPBuy bilješke",
-    "articlesIntro": "Kratki, praktični vodiči za promišljeniji izbor.",
+    "guideTitle": "Kako koristiti OOPBuy",
+    "guideIntro": "Prati kupnju od korisne poveznice na proizvod preko informirane provjere u skladištu do promišljene odluke o paketu.",
+    "faqTitle": "Česta pitanja o OOPBuyu",
+    "faqIntro": "Sažeti odgovori o naručivanju, provjeri, skladištenju, dostavi i podršci nakon kupnje, uz službene izvore pravila platforme.",
+    "articlesTitle": "Vodiči za kupnju na OOPBuyu",
+    "articlesIntro": "Praktični vodiči za pregled proizvoda, provjeru QC fotografija, planiranje dostave i odluke nakon narudžbe.",
     "findsTitle": "OOPBuy pronalasci",
     "findsIntro": "Istražite popularne proizvode iz kataloga CNBuyCha. Usporedite oglas, fotografije i cijenu prije odabira sljedećeg pronalaska.",
-    "qcTitle": "OOPBuy QC: pogledajte malo pobliže",
-    "qcIntro": "Fotografije proizvoda koristite za istraživanje, a prije dostave provjerite fotografije vlastite narudžbe.",
-    "shippingTitle": "Planirajte više od cijene proizvoda",
-    "shippingIntro": "Cijena proizvoda tek je polazište. Provjerite aktualne mogućnosti dostave i ukupan iznos na svom OOPBuy računu.",
+    "qcTitle": "Vodič za OOPBuy QC fotografije",
+    "qcIntro": "Provjeri dokaze povezane sa svojom narudžbom, prepoznaj pitanja za dodatni pogled i riješi nedoumice prije predaje paketa.",
+    "shippingTitle": "Troškovi i procjene dostave OOPBuy",
+    "shippingIntro": "Pripremi podatke potrebne za procjenu dostave, usporedi prikladne rute i ponovno provjeri paket kada budu poznate zapakirane mjere.",
     "checklist": "Prije nego nastavite",
     "related": "Nastavite istraživati",
     "independent": "Neovisno otkrivanje proizvoda",
@@ -40,7 +40,20 @@
     "productDetails": "Pojedinosti",
     "readMore": "Otkrijte više",
     "searchHelp": "Pokušajte s nazivom proizvoda, markom ili prodavateljevim ID-om artikla.",
-    "allCategories": "Sve kategorije na jednom mjestu."
+    "allCategories": "Sve kategorije na jednom mjestu.",
+    "contents": "Na ovoj stranici",
+    "expandAll": "Proširi sve odjeljke",
+    "collapseAll": "Sažmi sve odjeljke",
+    "sources": "Službeni izvori",
+    "lastReviewed": "Posljednja provjera",
+    "quickChecks": "Brze provjere",
+    "moreDetails": "Pročitaj cijeli vodič",
+    "jumpToPage": "Idi na stranicu",
+    "goToPage": "Idi",
+    "loading": "Učitavanje proizvoda…",
+    "loadError": "Proizvode nije moguće učitati. Pokušaj ponovno.",
+    "pageLabel": "Stranica",
+    "previewNotice": "Pregled · Ponude CNBuyCha ažurirane {date}. Pretraživanje otvara CNBuyCha."
   },
   "steps": [
     {
@@ -58,150 +71,1367 @@
   ],
   "faq": [
     {
-      "q": "Je li OOPBuy Tab službena stranica OOPBuya?",
-      "a": "OOPBuy Tab neovisna je stranica za otkrivanje proizvoda. Registracija, narudžbe i plaćanja odvijaju se na oopbuy.com. Poveznice za kupnju sadrže partnerski pozivni kod; popust nije obećan."
+      "q": "Što je OOPBuy i prodaje li sam proizvode?",
+      "a": "OOPBuy se opisuje kao kupovni i logistički agent. Pomaže naručivati od drugih prodavatelja, privremeno skladištiti, pakirati i slati. To nije ista uloga kao proizvođač ili ovlašteni trgovac markom. Prije naručivanja provjeri izvornog prodavatelja, opis i ograničenja; ponuda agenta ni skladišna fotografija ne potvrđuju autentičnost.",
+      "sources": [
+        {
+          "label": "Korisnički registracijski ugovor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Odakle dolaze proizvodi i cijene?",
-      "a": "Oglasi proizvoda, slike, rezultati pretraživanja i sortiranje dolaze iz CNBuyCha. Cijene su prikazane u USD na svim jezicima. U OOPBuyu potvrdite aktualnu cijenu, dostupnost i odabranu varijantu."
+      "q": "Kako napraviti prvu OOPBuy narudžbu?",
+      "a": "Službeni vodič počinje poveznicom ili pretragom naziva. Pregledaj učitani proizvod, odaberi boju, veličinu i količinu te plati robu i primjenjivu domaću dostavu. Nakon nabave i skladišne provjere pregledaj pohranjeno prije međunarodnog paketa. Svaku fazu potvrdi u službenom računu, ne smatraj karticu tablice narudžbom.",
+      "sources": [
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Jesu li fotografije proizvoda skladišne QC fotografije?",
-      "a": "Prikazane slike dolaze iz CNBuyCha. Njihovo podrijetlo kao skladišnih QC fotografija nije potvrđeno. Prije odluke o slanju provjerite fotografije vlastite narudžbe u OOPBuyu."
+      "q": "Koje poveznice opisuje službeni početnički vodič?",
+      "a": "Vodič izričito opisuje umetanje Taobao, Tmall i 1688 poveznica u OOPBuy. Kod svake provjeri otvara li službena stranica namjeravani proizvod prodavatelja i potpune varijante. Ako ne radi ili pokazuje drugo, prije plaćanja pitaj podršku umjesto pretpostavljanja podrške svakom URL-u tržišta.",
+      "sources": [
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Uključuje li cijena artikla dostavu?",
-      "a": "Prikazani iznos smatrajte procijenjenom cijenom artikla. Provjerite domaću poštarinu, međunarodnu dostavu, dodatne usluge i sve primjenjive naknade pri aktualnom plaćanju i u ponudi za paket."
+      "q": "Zašto se proizvod i međunarodna dostava plaćaju zasebno?",
+      "a": "OOPBuy objašnjava kupnju u dvije faze. Prva plaća proizvod i primjenjivu dostavu unutar Kine do skladišta. Poslije biraš pohranjenu robu, predaješ paket i plaćaš međunarodni prijevoz. Taj drugi trošak procijeni prije kupnje jer sama cijena proizvoda nije potpuni trošak primitka.",
+      "sources": [
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Kako funkcioniraju poveznice za kupnju?",
-      "a": "Gumb na stranici proizvoda otvara izvorni Weidian ID artikla u OOPBuyu. Kataloški broj CNBuyCha zaseban je ID. Prije narudžbe provjerite oglas na odredišnoj stranici."
+      "q": "Hoće li prikazana USD cijena biti konačan iznos?",
+      "a": "Ne. Cijena proizvoda ne uključuje sama svaki mogući trošak kupnje i međunarodnog paketa. Domaći i međunarodni prijevoz, opcionalne usluge i konverzija plaćanja mogu promijeniti ukupno. Obavijesti o nadoplati opisuju valutne i platne naknade. Provjeri vlastitu naplatu i predaju paketa umjesto smatranja kataloške konverzije konačnom ponudom.",
+      "sources": [
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Nadoplata računa OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
     },
     {
-      "q": "Mogu li pretraživati slikom?",
-      "a": "Pretraga slikom nije dostupna u ovom pregledu. Možete pretraživati po nazivu ili pregledavati kategorije. Ne zamjenjujemo učitanu fotografiju nepovezanim rezultatima."
+      "q": "Koje metode plaćanja mogu koristiti?",
+      "a": "Početnički vodič navodi kreditnu karticu, PayPal i saldo, a pomoć nadoplate dodatne mogućnosti. Dostupnost i terećenje provjeri u aktualnom računu i naplati. Prije potvrde pročitaj konverziju i naknade; spominjanje metode u pomoći ne jamči njezinu dostupnost za svaku državu ili transakciju.",
+      "sources": [
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Nadoplata računa OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
+    },
+    {
+      "q": "Jesu li standardne QC fotografije besplatne?",
+      "a": "Obavijest prilagođenih usluga kaže da su standardne skladišne QC fotografije prema smjernicama besplatne. Dostupne su nakon primitka i obrade robe. Razlikuju se od kataloških slika prodavatelja ili neovisnog pregleda. Prije odluke o slanju provjeri fotografije povezane s vlastitom pohranjenom narudžbom.",
+      "sources": [
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Što standardni QC i pregled stvarno potvrđuju?",
+      "a": "Službene smjernice obuhvaćaju vidljive podatke poput količine, naručenih specifikacija i očitog stanja, uz izričita ograničenja. Ne utvrđuju savršeno pristajanje, profesionalni učinak elektronike ili autentičnost marke. Zapečaćena roba može dobiti samo vanjsku kontrolu. Slike smatraj dokazom vidljivog i pitaj za važno umjesto pretpostavljanja testa nevidljivog.",
+      "sources": [
+        {
+          "label": "Informacije o pregledu OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Korisnički registracijski ugovor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Mogu li zatražiti mjerenje ili detaljnije QC fotografije?",
+      "a": "OOPBuy opisuje prilagođeni QC za određene mjere ili detalje, uključujući duljinu cipele, uloška i dimenzije odjeće. Dostupnost i aktualnu naknadu provjeri u službenom računu ili podršci; obavijest nema univerzalnu cijenu posebne fotografije. Točno navedi mjeru ili pogled kako bi zahtjev riješio nedoumicu.",
+      "sources": [
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Dobiva li roba s 1688 jednaku kontrolu kao ostala?",
+      "a": "Ne nužno. Vodič navodi drukčije QC standarde za 1688, a korisnički ugovor ograničeno uzorkovanje umjesto potpune kontrole svega. Ne zaključuj da je svaki komad višestruke narudžbe pojedinačno pregledan. Prije većeg broja razjasni opseg i dodatnu uslugu za provjere koje su ti važne.",
+      "sources": [
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Korisnički registracijski ugovor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Koliko traje uobičajeno besplatno skladištenje?",
+      "a": "Službena obavijest prilagođenih usluga navodi redovnih 90 dana od skladištenja. Opća stranica početkom smatra status „received“. Provjeri stvarni prikazani rok svake narudžbe, osobito kod različitih dolazaka, i organiziraj slanje ili prihvatljivo produljenje prije isteka besplatnog razdoblja.",
+      "sources": [
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Pravila skladištenja OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        }
+      ]
+    },
+    {
+      "q": "Mogu li produljiti skladištenje?",
+      "a": "Obavijest dopušta jedno plaćeno produljenje: 10 CNY za najviše dodatnih 30 dana, ukupno najviše 120 prema pravilima. To nije 120 besplatnih dana ni neograničeno obnavljanje. Provjeri aktualnu opciju i rok predmeta u računu prije oslanjanja na nju jer se prekoračena roba može zbrinuti.",
+      "sources": [
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Trebam li čekati podsjetnik prije slanja?",
+      "a": "Ne. Sam prati rokove i održavaj kontakte aktualnima. Obavijesti spominju podsjetnike, ali i napuštenu robu nakon isteka. Nepovezani ili neuobičajeni ulazni paketi mogu imati druga pravila. Ako je status nejasan, brzo pitaj podršku umjesto bezuvjetne pretpostavke redovnog besplatnog vremena.",
+      "sources": [
+        {
+          "label": "Pravila skladištenja OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "Korisnički registracijski ugovor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Kada zatražiti povrat ili zamjenu nakon skladišta?",
+      "a": "Obavijest opisuje uvjetni prozor od pet dana, odnosno 120 sati nakon „Stocked in“, prema navedenim vremenskim pravilima. Odmah pregledaj fotografije i službenu podršku. Prihvatljivost ovisi o prodavatelju i stanju; rok ne obećava prihvaćanje svakog zahtjeva. Provjeri aktualan završetak za svoju narudžbu.",
+      "sources": [
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Može li se svaki proizvod vratiti ili zamijeniti?",
+      "a": "Ne. Pravila navode uvjete i iznimke, uključujući prodavatelja, ponovnu prodajnost, prilagođenu ili rabljenu robu te određene zapečaćene i osobne kategorije. Uklanjanje etiketa, pribora ili potrebnog obala može utjecati na prihvatljivost. OOPBuy može kontaktirati prodavatelja, ali njegov pristanak ostaje potreban. Uvjete provjeri prije kupnje ili promjene pakiranja.",
+      "sources": [
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Uključuje li prvi besplatan povrat sve dostavne troškove?",
+      "a": "Ne. Obavijest oslobađa naknade usluge za prvu operaciju u kalendarskom mjesecu. To nije besplatna povratna poštarina ili povrat svakog domaćeg troška. Iznosi ovise o razlogu, prodavateljevoj odluci i okolnostima. Prije potvrde pročitaj stvarnu ponudu umjesto pretpostavljanja besplatnosti cijelog postupka.",
+      "sources": [
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Mogu li otkazati prije prodavateljeve otpreme?",
+      "a": "Pomoć kaže da naknada povratne usluge ne vrijedi ako roba još nije poslana. To ne znači bezuvjetno jamstvo otkazivanja u svakoj fazi. Provjeri status i odmah podnesi dostupno otkazivanje ili zahtjev podrške. Ako je već otpremljeno, mogu vrijediti drugi postupci i prijevozni troškovi.",
+      "sources": [
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Statusi narudžbi i paketa OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Koliko traje refundacija i gdje je provjeriti?",
+      "a": "Odobrenje, pripisivanje OOPBuy salda i bankovna kartica odvojeni su koraci. Obavijest kaže da bankovna obrada utječe na kartice i daje procjenu, ne zajamčen datum. U računu provjeri zapis i odredište. Ako napredak nije jasan, daj podršci reference narudžbe i refundacije umjesto ponovljenih uplata.",
+      "sources": [
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Statusi narudžbi i paketa OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Može li se roba vratiti nakon međunarodnog slanja?",
+      "a": "Obavijest opisuje uvjetan međunarodni povrat, moguće o trošku kupca, uključujući transport i dodatke poput carine. Izvorno stanje i potreban obal i dalje su važni. Prije slanja natrag kontaktiraj podršku OOPBuy i pribavi aktualne upute. To nije jednostavno skladišno otkazivanje ni jamstvo pune naknade.",
+      "sources": [
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kako procijeniti međunarodnu dostavu OOPBuy?",
+      "a": "Koristi službeni kalkulator s odredištem i traženim podacima, zatim pregledaj rute i ograničenja. Vodič objašnjava konačne naknade prema izmjerenim dimenzijama, težini i usluzi. Rana procjena koristi proračunu, ali ne zamjenjuje završnu ponudu niti automatski uključuje svaki trošak odredišta.",
+      "sources": [
+        {
+          "label": "Službena procjena dostave OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Je li jedna ruta uvijek najjeftinija ili najbrža?",
+      "a": "Službene smjernice ne određuju univerzalnu rutu. Usluge ovise o odredištu, sadržaju, težini, dimenzijama i aktualnim uvjetima. Usporedi opcije paketa, ograničenja i naknadu štete prije izbora. Rokovi su procjene, ne jamstva: prijevoznik, vrijeme i carina mogu utjecati nakon skladišne otpreme.",
+      "sources": [
+        {
+          "label": "Obavijest o dostavi OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Osiguranje i naknada OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Čemu služi Parcel Rehearsal?",
+      "a": "Obavijest opisuje skladišno pakiranje za utvrđivanje mjera prije međunarodnog plaćanja. Navodi naknadu 20 CNY i ovisnost izračuna o zadržavanju iste rute i konfiguracije. Promjene mogu promijeniti konačnu cijenu. Prije zahtjeva pročitaj aktualnu uslugu i uvjete otkazivanja.",
+      "sources": [
+        {
+          "label": "Upute za probno pakiranje OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ]
+    },
+    {
+      "q": "Trebam li ukloniti kutije za obuću ili vakuumirati odjeću?",
+      "a": "Vodič ih opisuje kao moguće izbore, neke ograničene na određene rute. Odluči prema zaštiti, preferenciji i uvjetima povrata. Uklanjanje ili kompresija nisu prikladni za sve, a manji paket ne jamči nižu završnu naknadu. Prije potvrde provjeri dostupne opcije i obračun rute.",
+      "sources": [
+        {
+          "label": "Smjernice pakiranja OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Mogu li sve stvari iz skladišta u jedan paket?",
+      "a": "Spajanje postoji, ali svaka kombinacija nije nužno prihvatljiva ili isplativa. Osobine robe, ograničenja rute i oznake zasebnog pakiranja mogu tražiti više paketa. Službena obavijest navodi pravilo prevelikih predmeta, a vodič pakiranja ograničenja baterija. Slijedi upute robe i usporedi prihvatljive mogućnosti prije predaje.",
+      "sources": [
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Smjernice pakiranja OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Pravila zasebnih pošiljki OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        }
+      ]
+    },
+    {
+      "q": "Zašto piše „Shipped“ bez međunarodnog broja?",
+      "a": "Vodič koristi dostavne izraze u dva konteksta. Kupovna narudžba može biti „Shipped“ kada prodavatelj šalje u skladište OOPBuy. Međunarodni paket istim izrazom označava kasniju prijevozničku fazu. Provjeri gledaš li predmet ili paket i otvori odgovarajuće detalje umjesto očekivanja jednog broja za obje faze.",
+      "sources": [
+        {
+          "label": "Statusi narudžbi i paketa OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Što ako je dostavljen paket oštećen ili nepotpun?",
+      "a": "Sačuvaj vanjsko pakiranje, naljepnicu i dokaze robe te brzo kontaktiraj OOPBuy podršku. Smjernice traže jasne slike i podatke poput brojeva narudžbi te sadrže kratke rokove prijave i dokaza. Ne bacaj ambalažu niti čekaj opći rok pročitan drugdje. Slijedi postupak konkretnog paketa i zahtjeva.",
+      "sources": [
+        {
+          "label": "Problemi nakon dostave OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ]
+    },
+    {
+      "q": "Pokriva li osiguranje automatski svaki problem?",
+      "a": "Ne. Službena obavijest naknade navodi uvjete linije, dokaze i iznimke. Ne pretpostavljaj punu isplatu za svako kašnjenje, oštećenje, carinsku radnju ili gubitak. Pročitaj pokriće, ograničenja i postupak stvarno odabrane rute te čuvaj potrebne zapise narudžbi i paketa.",
+      "sources": [
+        {
+          "label": "Osiguranje i naknada OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Mogu li naručiti sve iz tablice?",
+      "a": "Ne. Internetska ponuda ne dokazuje zakonitost, autentičnost ili prihvatljivost rute. OOPBuy kupovne smjernice zabranjuju određenu robu i ograničavaju kategorije za provjeru s podrškom. Uvjeti zabranjuju krivotvorine i povredu prava. Prije kupnje potvrdi prodavatelja, platformu i odredišne zahtjeve, osobito baterije, tekućine i drugi ograničen sadržaj.",
+      "sources": [
+        {
+          "label": "Napomene prije kupnje OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "Korisnički registracijski ugovor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
     }
   ],
   "articles": [
     {
       "slug": "oopbuy-spreadsheet-guide",
-      "tag": "PRVI KORACI",
-      "title": "Vaš prvi OOPBuy pronalazak, korak po korak",
-      "description": "Pretvorite obećavajući oglas u promišljen odabir.",
+      "tag": "Prvi koraci",
+      "title": "Vodič za OOPBuy spreadsheet: sastavi izbor koji možeš provjeriti",
+      "description": "Nauči koristiti OOPBuy spreadsheet, provjeriti poveznice, usporediti varijante, procijeniti realan proračun i pretvoriti kataloško otkriće u informiranu narudžbu.",
+      "primaryKeyword": "OOPBuy spreadsheet",
+      "secondaryKeywords": [
+        "vodič OOPBuy spreadsheet",
+        "popis proizvoda OOPBuy",
+        "OOPBuy otkrića",
+        "vodič za kupnju OOPBuy"
+      ],
+      "takeaways": [
+        "Svaki redak direktorija smatraj početkom koji traži provjeru aktualnog proizvoda.",
+        "Zabilježi točnu izvornu poveznicu, varijantu, mjere i procijenjeni trošak s dostavom.",
+        "Odvoji kataloške slike od skladišnih QC fotografija vlastite narudžbe."
+      ],
       "sections": [
         {
-          "title": "Počnite od onoga što trebate",
-          "text": "Odaberite kategoriju ili potražite model. Usporedite naziv proizvoda, dostupne slike i procijenjenu cijenu. Sama niska cijena ne govori odgovara li oglas vašim potrebama."
+          "title": "Za što je koristan OOPBuy spreadsheet",
+          "text": "OOPBuy spreadsheet služi otkrivanju: prikupljanju poveznica, uspoređivanju ideja i izbjegavanju ponovnog pretraživanja od početka. Vrijednost mu je u lakšoj provjeri užeg izbora. Velik broj redaka ne pokazuje jesu li proizvodi dostupni, odgovara li veličina ili koliko će stajati dovršen paket.\n\nOOPBuy Tab neovisan je direktorij, a ne službena usluga OOPBuy. Katalog koristi izvorne podatke CNBuyCha. Razlika je važna jer se kataloški zapis i aktualna stranica kupnje mogu mijenjati u različito vrijeme. Cijenu u USD smatraj procjenom, a fotografije kataloškim referencama osim ako im je podrijetlo izričito provjereno.\n\nPregled koristi za određeno pitanje, primjerice koja od tri jakne odgovara tvojim mjerama i proračunu. Kada opcije vidiš zajedno, nedostajuće informacije lakše primijetiš prije nego postanu skupa pretpostavka."
         },
         {
-          "title": "Otvorite izvorni oglas",
-          "text": "Provjerite prodavatelja i dostupne opcije. Zabilježite željenu veličinu, boju i količinu pa otvorite proizvod u OOPBuyu. Prije plaćanja ponovno potvrdite te pojedinosti."
+          "title": "Prije pregledavanja odredi zahtjeve",
+          "text": "Zapiši što proizvod čini korisnim. Za odjeću to mogu biti mjere, željena tkanina, sezona i prihvatljiva njega. Za torbu dimenzije prijenosnika, zatvaranje i najveća prihvatljiva prazna težina. Zahtjevi smanjuju mogućnost da privlačna fotografija odvrati pažnju od stvarne kupnje.\n\nPostavi dva proračuna: cilj za proizvod i gornju granicu primitka s dostavom. To su različiti iznosi. Niska cijena ostavlja pitanja domaće dostave, međunarodnog prijevoza, konverzije plaćanja i mogućih odredišnih troškova.\n\nOdaberi nekoliko kandidata umjesto odmah desetaka redaka. Tri usporediva proizvoda često poučavaju više od trideset nepovezanih otkrića. Svakome dodaj razlog razmatranja i otvoreno pitanje. Ako ne možeš objasniti zašto pripada izboru, vjerojatno još ne treba tvoju pažnju."
         },
         {
-          "title": "Imajte na umu sljedeću fazu",
-          "text": "U proračunu ostavite prostora za dostavu i druge naknade. Prije predaje paketa provjerite fotografije vlastite narudžbe i dostupnu ponudu za dostavu."
+          "title": "Sastavi stupce koji podržavaju odluku",
+          "text": "Koristan redak treba naziv, izvorno tržište, originalni URL, točnu varijantu, prikazanu cijenu i valutu, datum provjere i sljedeću radnju. Dodaj mjere ili specifikacije kategorije. Vlastite bilješke odvoji od opisa prodavatelja kako bi razlikovao dokaz i tumačenje pri povratku tablici.\n\nRedak jakne može sadržavati širinu prsa i ramena, duljinu leđa, odabranu veličinu te odnose li se brojevi na odjevni predmet ili tijelo. Za obuću zabilježi tablicu prodavatelja i dostupnu unutarnju duljinu. Ne stavljaj neobjašnjenu oznaku veličine u stupac „pristajanje potvrđeno“.\n\nKoristi jasne statuse poput „provjeriti izvor“, „potrebne mjere“, „spremno za razmatranje“, „naručeno“ i „pregledano“. Status mora opisivati stvarno završen posao. Posebno zapiši razlog odbijanja proizvoda; tako sljedeći tjedan nećeš ponavljati isti pregled."
+        },
+        {
+          "title": "Provjeri aktualni proizvod iza retka",
+          "text": "Prije oslanjanja na ponudu otvori izvornu poveznicu i OOPBuy stranicu kupnje. Usporedi identitet, slike, opcije i odabranu cijenu. Uspješno otvorena poveznica može voditi na promijenjenu ponudu, drugu varijantu ili stranicu čija najjeftinija opcija nije ona na kataloškoj slici.\n\nIdentifikatore odvajaj. U našem primjeru 3470 je referenca kataloga CNBuyCha, dok je 7876894732 izvorni identifikator proizvoda u putanji Weidian. Kopiranje kataloškog broja u kupovni URL neće označiti isti proizvod. Kad možeš, sačuvaj punu izvornu adresu umjesto ponovnog sastavljanja iz kratke oznake.\n\nNedostupnu stranicu označi kao neprovjerenu. Ponovno potraži točan proizvod i pažljivo usporedi zamjenu. Ne mijenjaj tiho izvornu poveznicu vizualno sličnim proizvodom: sličnost ne dokazuje istog prodavatelja, specifikacije ili uvjete kupnje."
+        },
+        {
+          "title": "Uspoređuj varijantu koju bi stvarno naručio",
+          "text": "Dva retka usporediva su samo kada predstavljaju stvarne željene opcije. Provjeri boju, veličinu, količinu, materijal i pribor. Raspon cijena može odražavati različite varijante. Bilježenje najniže cijene uz plan kupnje druge opcije stvara zavaravajuću usporedbu i kada su oba broja stvarna.\n\nZamisli dvije putne torbe. Jedna cijena može pripadati najmanjoj, a druga uključivati veću koju trebaš. Uz odabrane opcije napiši potrebne dimenzije pa usporedi upravo njih. Nedostajuću dimenziju označi umjesto procjene iz fotografije modela.\n\nZa višestruka pakiranja zapiši broj komada i cijenu po komadu računaj samo kada su proizvodi usporedivi. Kod kompleta potvrdi uključene odjevne predmete. Male provjere pretvaraju tablicu u pomoć pri kupnji, a ne samo organizaciju privlačnih slika."
+        },
+        {
+          "title": "Dodaj realan pregled troškova",
+          "text": "Odvoji potvrđene iznose od procjena. Pregled može imati proizvod, prikazanu domaću dostavu, procjenu međunarodne, očekivane dodatne usluge i rezervu za otvorene troškove. Označi valutu svakog unosa. Procijenjeni prikaz u USD nije zaključan iznos plaćanja.\n\nNa službenoj OOPBuy procjeni dostave istraži odredište i dostupne pretpostavke paketa. Zapiši upotrijebljenu težinu i dimenzije jer je bez njih teško razumjeti rezultat. Ako ih ne znaš, usporedi razuman manji i veći scenarij umjesto jednog naizgled preciznog ukupnog iznosa.\n\nPrije narudžbe odredi pravilo odluke. Primjerice, nastavi samo ako se skuplji scenarij uklapa u proračun dostave. To je osobna metoda planiranja, ne OOPBuy ponuda. Pregled ažuriraj kada skladišne informacije ili aktualna ponuda zamijene raniju pretpostavku."
+        },
+        {
+          "title": "Odvoji kataloške slike i QC narudžbe",
+          "text": "Kataloška fotografija pomaže prepoznati stil, boju ili detalj. Ne potvrđuje stanje primjerka koji će biti kupljen za tebe. Uvezene slike OOPBuy Taba nisu provjerene skladišne QC fotografije tvoje narudžbe, pa redak ne označuj „kvaliteta odobrena“ samo zato što izgleda uredno.\n\nAko naručiš proizvod, stvori posebno mjesto za slike i poruke te narudžbe. Zapiši referencu, varijantu i pitanja koja skladišne fotografije nisu riješile. Tako dotjerana izvorna slika neće biti zamijenjena onim što je stvarno primljeno.\n\nInformacije OOPBuya opisuju provjeru količine i naručenih specifikacija, ali i ograničenja. To je razlog za konkretna pitanja, ne pretpostavku da je pregledana svaka kvalitativna briga. Za presudnu mjeru ili detalj odredi točan pogled ili mjerenje prije sljedeće odluke."
+        },
+        {
+          "title": "Pretvori izbor u prvu narudžbu kojom možeš upravljati",
+          "text": "Prije plaćanja prođi otvorena pitanja izbora. Proizvod treba imati poznat izvor, svjesno odabranu varijantu, dovoljno podataka o veličini i prihvatljiv proračun dostave. Ako nekoliko polja još kaže „nepoznato“, sljedeći korak je istraživanje i uz vrlo privlačnu cijenu.\n\nManja prva narudžba može olakšati osobnu evidenciju. Naučit ćeš aktualne stranice narudžbi, skladišne podatke i opcije paketa bez mnogo iznimaka odjednom. To je organizacijski prijedlog, ne obećanje niže cijene po komadu u maloj pošiljci.\n\nZa pristup računu koristi službenu prijavu OOPBuy. Plaćanje i račun vodi u službenoj usluzi. Nakon kupnje referencu prepiši u privatnu tablicu i dodaj datum. Osobne podatke narudžbe ne stavljaj u javno dijeljeni pregled."
+        },
+        {
+          "title": "Održavaj pregled nakon prve kupnje",
+          "text": "Dobra tablica postaje korisnija nakon primitka. Dodaj stvarne dimenzije, opažanja o pristajanju, konačno plaćen iznos i razlike prema ponudi. Opiši okolnosti: jakna preko debelog džempera može se osjećati drukčije nego preko majice.\n\nSubjektivne dojmove jasno označi. „Udobno za moj svakodnevni put“ korisnije je od „savršena kvaliteta“ jer objašnjava uporabu. Zapiši ograničenje, poput preuskog džepa za telefon. Bilješke pomažu budućim izborima bez tvrdnje da će drugi kupac imati isto iskustvo.\n\nNa kraju datiraj pregled i arhiviraj mrtve poveznice da ne izgledaju aktualno. Prije nove kupnje provjeri cijene i dostupnost. Pouzdan OOPBuy spreadsheet nije statično obećanje, nego radni zapis provjerenog, neizvjesnog i naučenog."
         }
+      ],
+      "sources": [
+        {
+          "label": "Službena stranica OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "Službena procjena dostave OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Informacije o pregledu OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Prijava OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-product-links",
+        "oopbuy-price-check",
+        "oopbuy-qc-photos"
       ]
     },
     {
       "slug": "oopbuy-qc-photos",
-      "tag": "PROVJERA FOTOGRAFIJA",
-      "title": "Što tražiti na fotografijama proizvoda i QC fotografijama",
-      "description": "Odvojite istraživanje kataloga od provjera vlastite narudžbe.",
+      "tag": "Provjere kvalitete",
+      "title": "OOPBuy QC fotografije: što provjeriti prije slanja narudžbe",
+      "description": "Praktičan vodič za čitanje QC fotografija, provjeru varijante, traženje korisnih mjera i razumijevanje onoga što skladišne slike ne dokazuju.",
+      "primaryKeyword": "OOPBuy QC fotografije",
+      "secondaryKeywords": [
+        "OOPBuy provjera kvalitete",
+        "OOPBuy skladišne fotografije",
+        "OOPBuy QC vodič",
+        "OOPBuy pregled"
+      ],
+      "takeaways": [
+        "Pregledaj skladišne fotografije vlastite narudžbe i poveži ih s odabranom varijantom.",
+        "Koristi ponovljiv postupak i traži precizan pogled kada važan dokaz nedostaje.",
+        "Fotografije ne dokazuju autentičnost, dugotrajnost, točnu boju ni svako funkcionalno svojstvo."
+      ],
       "sections": [
         {
-          "title": "Znajte koje fotografije gledate",
-          "text": "Kataloške slike prikazuju oglas; nisu dokaz artikla koji ćete primiti. Fotografije na OOPBuy Tabu pruža CNBuyCha i nisu potvrđene kao skladišne QC fotografije."
+          "title": "QC fotografijama odgovori na konkretna pitanja",
+          "text": "QC fotografije najkorisnije su kada znaš što želiš provjeriti. Počni popisom: je li stigao očekivani proizvod, odgovara li varijanta, postoji li vidljivo oštećenje i podupiru li mjere odluku o pristajanju? Dobivaš praktičan postupak umjesto beskrajnog traženja savršenstva.\n\nFotografija bilježi određen pogled pri određenom svjetlu. Može pokazati gumb koji nedostaje ili drukčiju oznaku boje, ali ne nužno problem u džepu ili ispod odvojivog dijela. Svaku sliku smatraj dokazom ograničenog vidnog polja.\n\nCilj je prije međunarodnog slanja riješiti brige koje mijenjaju odluku. To može biti duljina rukava ili provjera je li mrlja uklonjiv ostatak pakiranja. Dobro izgledajuće fotografije ne jamče ponašanje proizvoda nakon mjeseci uporabe."
         },
         {
-          "title": "Usporedite konkretne pojedinosti",
-          "text": "Za vlastitu narudžbu usporedite model, boju, vidljivu oznaku veličine i količinu s odabranim opcijama. Potražite očita oštećenja i raspitajte se o nejasnim pojedinostima prije slanja."
+          "title": "Razlikuj tri vrste fotografija proizvoda",
+          "text": "Slike prodavatelja opisuju ponudu. Slike direktorija pomažu otkriti i prepoznati ponudu. Skladišne fotografije dokumentiraju određenu robu narudžbe. Uloge se razlikuju čak i kada slike stoje uz isti naziv ili izgledaju slično.\n\nOOPBuy Tab neovisan je direktorij s podacima kataloga CNBuyCha. Uvezene slike nisu provjerene kao QC fotografije tvoje narudžbe. Mogu služiti usporedbi, ali ne pokazuju ima li kupljeni primjerak isto šivanje, etiketu, dimenzije ili stanje.\n\nPri spremanju koristi zasebne mape ili oznake „izvorna referenca“ i „moja narudžba“. U privatne bilješke dodaj referencu i datum. Tako atraktivan detalj prodavatelja neće slučajno postati dokaz pri odluci zadovoljava li skladišni primjerak očekivanja."
         },
         {
-          "title": "Razumijte ograničenja",
-          "text": "Same fotografije ne mogu potvrditi autentičnost, trajnost ni potpunu funkcionalnost. Trebate li mjerenje ili dodatnu provjeru, pitajte OOPBuy što je dostupno i koliko košta."
+          "title": "Potvrdi da pregledavaš pravi proizvod",
+          "text": "Prije detalja poveži skladišni zapis s narudžbom. Usporedi naziv, izvor, boju, veličinu i količinu. Kod dvaju sličnih proizvoda nemoj pretpostaviti isti redoslijed fotografija kao u početnom izboru.\n\nTraži vidljive oznake identiteta: etiketu veličine, poseban raspored dijelova, zatvarač ili naljepnicu pakiranja. Uspoređuj s odabranom opcijom, ne s općom prvom slikom. Prodavatelji ponekad koriste jednu glavnu fotografiju za više varijanti.\n\nAko zapis i slike nisu usklađeni, zatraži objašnjenje s referencom narudžbe. Jasno opiši razliku: „naručena tamnoplava, etiketa izgleda crna“ ili „naručena dva, vidljiv jedan komad“. Ne zaključi pogrešan proizvod samo jer sve ne vidiš na jednoj slici; prvo utvrdi njezin obuhvat."
+        },
+        {
+          "title": "Odjeću pregledavaj dosljednim redoslijedom",
+          "text": "Najprije pogledaj cijeli odjevni predmet. Provjeri siluetu, glavne dijelove, izrez, rukave i zatvaranje prema odabiru. Zatim zasebno prednju i stražnju stranu. Cjelina pomaže uočiti nedostajući element prije zaokupljanja sitnim razlikama šavova.\n\nPrijeđi na vidljivu izradu: poravnanje šavova, rubove, manžete, gumbe, patentne zatvarače, tisak i vez. Traži očite poderotine, labave dijelove, mrlje ili nejednakost. Nabori i položaj mogu ravne crte prikazati krivo; jasniji kut može riješiti pitanje.\n\nZavrši važnim etiketama i mjerama. Oznaka potvrđuje što je otisnuto, a mjerenje pomaže procijeniti pristajanje. To su odvojene provjere. Ako je upitna duljina rukava, traži nju umjesto pitanja odgovara li veličina „uobičajenoj“, što ovisi o očekivanjima."
+        },
+        {
+          "title": "Obuću i torbe provjeravaj prema funkciji",
+          "text": "Kod cipela usporedi oba komada zajedno i pojedinačno. Pogledaj veličinu, oblik, gornjište, zatvaranje i rubove potplata. Provjeri obuhvaćaju li slike važne dijelove za tvoju uporabu. Sam pogled odozgo možda neće pokazati odvajanje bočne strane potplata.\n\nKod torbi počni dimenzijama i rasporedom. Prepoznaj očekivani glavni pretinac, remene, ručke i kopče. Potvrdi odabranu veličinu i konfiguraciju. Ako trebaš prostor za određeno prijenosno računalo, slična torba na modelu nije dovoljan dokaz unutarnjeg prostora.\n\nVizualne provjere ne pretvaraj u tvrdnje o nosivosti, vodonepropusnosti, udobnosti ili specijalističkom učinku. Za njih trebaju drugi dokazi. Presudno svojstvo koje ponuda ili prikladna provjera ne mogu utvrditi ostavi otvorenim pri odluci o kupnji."
+        },
+        {
+          "title": "Traži mjere koje se mogu protumačiti",
+          "text": "Korisna mjerna fotografija jasno pokazuje predmet, alat i oba kraja mjerenja. Imenuj dimenziju i metodu. „Širina ravno položene majice od jednog pazušnog šava do drugoga“ preciznija je od „veličina prsa“. Za hlače odredi opušten ili rastegnut pojas.\n\nUspoređuj istovrsno. Ravna širina nije opseg tijela, a duljina potplata nije unutarnja duljina cipele. Mjerenje udobnog vlastitog predmeta korisno je samo ako skladište slijedi istu metodu.\n\nSitne razlike na slaboj ili nakošenoj slici čitaj oprezno. Perspektiva, nabori i položaj trake mijenjaju tumačenje. Ako mala razlika odlučuje zadržavanje, traži jasnije mjerenje umjesto povećavanja do lažnog dojma preciznosti."
+        },
+        {
+          "title": "Razumij ograničenja skladišne kontrole",
+          "text": "Službene informacije OOPBuya opisuju provjeru naručenih količina i specifikacija. Isključuju i određene razlike boje, veličine i uporabe, specijalističku procjenu te unutarnje preglede nekih zapečaćenih proizvoda. Točan primjenjivi opseg pročitaj u aktualnoj obavijesti.\n\nKontrolu ne smatraj potpunom certifikacijom. Fotografirana etiketa ne autentificira marku. Neoštećeno kućište punjača ne dokazuje električnu sigurnost. Zatvoreni paket ne pokazuje sve komponente. Za specijalističko svojstvo traži prikladnu dokumentaciju umjesto odgovora u općoj skladišnoj slici.\n\nPostavke zaslona i osvjetljenje ograničavaju boju. Slikama prepoznaj značajne razlike i pitaj o njima, ali ne očekuj da dvije fotografije u različitim uvjetima odluče o suptilnoj nijansi. Unaprijed odredi prihvatljivu neizvjesnost."
+        },
+        {
+          "title": "Napiši zahtjev prema kojem se može postupiti",
+          "text": "Svako pitanje poveži s vidljivom nedoumicom. Koristan zahtjev navodi narudžbu, fotografiju i točan detalj. Primjerice: „Pokažite potpuno zatvoren prednji patent i oba kraja donjeg ruba.“ To je provedivije od „ponovno provjerite kvalitetu“.\n\nZa mjerenje navedi krajeve i uvjet, poput ravnog polaganja bez rastezanja. OOPBuy standardne QC fotografije prema smjernicama opisuje kao besplatne i nudi posebne detalje ili mjere. Obavijest ne navodi cijenu prilagođenog QC-a, pa prije dodatnog rada provjeri aktualnu naknadu.\n\nDugačak popis nepovezanih briga ne spajaj u nejasnu poruku. Prednost daj detaljima koji mijenjaju odluku, zatim usporedi odgovor s pitanjima. Spremi ga uz sliku kako bi razlikovao izravnu potvrdu i vlastiti vizualni zaključak."
+        },
+        {
+          "title": "Prije otpreme zabilježi odluku",
+          "text": "Nakon dokaza odaberi jasan korak: prihvatiti informacije, zatražiti određeno pojašnjenje ili istražiti povrat. Kod problema odmah pregledaj službenu obavijest i aktualni status. Ne pretpostavljaj da čekanje beskonačno čuva opcije.\n\nSačuvaj sažet zapis problema i dokaza: varijantu, slike, mjere i točan odgovor. Kasniju podršku lakše je uputiti na to nego reći da je proizvod izgledao pogrešno. Zapis sprečava i ponavljanje istog pitanja.\n\nPrije predaje paketa vrati se svim otvorenim stavkama. Slanje ne odgovara na neodgovoreno pitanje. Konačna odluka treba odražavati stvarno primljen predmet, granice dokaza i prihvatljivost preostale neizvjesnosti za uporabu i proračun."
         }
+      ],
+      "sources": [
+        {
+          "label": "Informacije o pregledu OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Službena stranica OOPBuy",
+          "url": "https://oopbuy.com/"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-returns-refunds"
       ]
     },
     {
       "slug": "oopbuy-shipping-guide",
-      "tag": "BILJEŠKE O DOSTAVI",
-      "title": "Cijena artikla tek je početak",
-      "description": "Jasniji način planiranja proračuna za paket.",
+      "tag": "Dostava",
+      "title": "Vodič za dostavu OOPBuy: procijeni troškove i odaberi prikladnu rutu",
+      "description": "Razumij faze dostave, težinu i volumen paketa, uspoređivanje ruta, izbore pakiranja i provjere prije plaćanja međunarodnog prijevoza.",
+      "primaryKeyword": "OOPBuy dostava",
+      "secondaryKeywords": [
+        "trošak dostave OOPBuy",
+        "kalkulator dostave OOPBuy",
+        "procjena dostave OOPBuy",
+        "vrijeme dostave OOPBuy"
+      ],
+      "takeaways": [
+        "Planiraj dostavu prodavatelja do skladišta i zasebno plaćanje međunarodnog paketa.",
+        "Procjenjuj prema odredištu, sadržaju, težini i dimenzijama te potvrdi pravila rute.",
+        "Prikladne rute uspoređuj prema potpunim uvjetima, a rokove smatraj procjenama."
+      ],
       "sections": [
         {
-          "title": "Odvojite troškove",
-          "text": "U proračunu odvojite cijenu proizvoda, poštarinu od prodavatelja do skladišta i međunarodnu dostavu. U aktualnoj ponudi provjerite dodatne usluge i naknade povezane s plaćanjem."
+          "title": "Razumij dvije faze dostave",
+          "text": "Narudžba prolazi dvije odvojene faze. Prodavatelj prvo šalje kupljenu robu u skladište u Kini. Poslije paket ide iz skladišta na tvoje odredište. Njihovo miješanje često čini obavijest ili zahtjev za plaćanje neočekivanim.\n\nOOPBuy objašnjenje prve kupnje razdvaja početno plaćanje robe i domaćeg prijevoza od kasnijeg međunarodnog. Cijena u neovisnom direktoriju zato nije cijeli trošak primitka. Iznosi OOPBuy Taba u USD služe orijentaciji, ne konačnoj međunarodnoj ponudi.\n\nProračun pripremi prije naručivanja. Razmisli koliko prihvaćaš potrošiti ako paket bude veći ili teži od očekivanog. Razmišljanje o međunarodnom prijevozu tek nakon dolaska svih stvari može ostaviti izbor između većeg troška i neplaniranog povrata."
         },
         {
-          "title": "Upotrijebite stvarne podatke o paketu",
-          "text": "U službeni kalkulator unesite odredište, težinu, dimenzije i vrstu robe. Usporedite ograničenja i pravila obračuna dostupnih ruta. Procjena nije konačni račun."
+          "title": "Kalkulatoru daj korisne ulazne podatke",
+          "text": "Počni službenom OOPBuy procjenom dostave. Unesi odredište i tražene podatke paketa. Koristi najbolje dostupne težine i dimenzije te zapiši unose. Ponudu bez pretpostavki teško je usporediti s kasnijim rezultatom.\n\nPrije dolaska robe neki su unosi nesigurni. Označi to. Za odjeću koristi lakši i teži scenarij ako nema pouzdanih mjera. Za krut ili glomazan proizvod istraži zapakirane dimenzije umjesto oslanjanja samo na težinu.\n\nKad stignu skladišni podaci, ažuriraj procjenu. Značajnu razliku objasni promijenjenim unosom prije odabira rute. Dodatna kutija, veća veličina ili zaštita mijenjaju paket. Kalkulator je planska pomoć; stvarno plativ iznos potvrdi u aktualnom postupku predaje."
         },
         {
-          "title": "Promišljeno odaberite pakiranje",
-          "text": "Pakiranje utječe na zaštitu i veličinu paketa. Prije potvrde pitajte kako uklanjanje ili pojačavanje pakiranja mijenja ponudu i zaštitu. Na svom računu pratite rok skladištenja svakog artikla."
+          "title": "Usporedi stvarnu težinu i volumen",
+          "text": "Stvarna težina pokazuje masu zapakiranog paketa. Dimenzijska ili volumetrijska težina nekim uslugama predstavlja zauzeti prostor. Pravila odabrane rute određuju primjenu, pa ne koristi djelitelj iz nepovezanog vodiča.\n\nIlustracija pakiranja: kutija 40 × 30 × 25 centimetara zauzima 30.000 kubičnih centimetara, a 35 × 25 × 20 zauzima 17.500. Druga je manja, ali razlika sama ne utvrđuje određenu uštedu. Važni su ruta, stvarna težina i obračunski koraci.\n\nUtvrdi odnose li se brojevi na predmet, prodajno pakiranje ili dovršen međunarodni paket. To nisu iste stvari. Početnički vodič OOPBuy navodi završni obračun prema izmjerenim dimenzijama i težini, pa su konačni podaci pakiranja osobito važni."
+        },
+        {
+          "title": "Prikladne rute uspoređuj pod jednakim uvjetima",
+          "text": "Kreni od prihvatljivosti. Provjeri prihvaća li ruta odredište, kategorije, dimenzije i težinu. Niska oglašena cijena ne vrijedi ako ne može prevesti sadržaj. Dostupnost kod prethodne narudžbe ne dokazuje dostupnost za drugi paket.\n\nZa svaku prikladnu opciju zabilježi ukupnu ponudu, raspon dostave, praćenje, ograničenja te uključenu ili dodatnu zaštitu. Pročitaj dovoljno da razumiješ što pokriva dodatna naknada. Ne pretpostavljaj jednak tretman svakog gubitka, kašnjenja, oštećenja ili carinskog ishoda.\n\nUspoređuj iste pretpostavke. Ako jedna procjena koristi manju težinu ili izostavlja odabranu uslugu, prvo ispravi razliku. Ne postoji univerzalno najbolja OOPBuy linija: izbor ovisi o paketu, odredištu, proračunu, rokovima i aktualnim uvjetima."
+        },
+        {
+          "title": "Ograničenja proizvoda provjeri prije kupnje",
+          "text": "Pronalazak u tablici ne dokazuje mogućnost kupnje ili dostave tebi. OOPBuy objavljuje kupovna i transportna ograničenja, a prikladnost rute ovisi o sadržaju. Nejasne kategorije provjeri prije kupnje; dolazak u skladište ne jamči međunarodnu opciju.\n\nPri traženju pomoći točno opiši proizvod. Uređaj s baterijom, boca tekućine i prazna plastična boca predstavljaju različita pitanja. Dodaj izvor i specifikacije da podrška procijeni stvarnu robu umjesto nagađanja iz kratkog naziva.\n\nAko ruta ne prihvaća predmet, istraži zakonitu prikladnu alternativu ili preispitaj kupnju. Ne mijenjaj oznaku sadržaja kako bi je obrazac prihvatio. Potvrdu čuvaj uz narudžbu i ponovno provjeri ako se promijene proizvod, odredište ili ruta."
+        },
+        {
+          "title": "Pakiranje prilagodi sadržaju",
+          "text": "Pakiranje treba uravnotežiti prostor i potrebnu zaštitu. Kruta torba, osjetljiv dodatak i kompresibilna majica ne podnose isti tretman. Uklanjanje svake kutije ili stiskanje svega može izazvati izbježivo oštećenje i uz manji paket.\n\nOOPBuy obavijest opisuje kartone, određene promjene kutija za obuću, vakuumske vreće i zaštitne materijale prema okolnostima. Provjeri stvarnu ponudu za narudžbu i rutu. Trebaš li original za pohranu, prezentaciju ili mogući povrat, riješi to prije uklanjanja.\n\nU mješovitom paketu objasni što mora zadržati oblik ili biti zaštićeno od težih stvari. Ako bi preciznije pakiranje promijenilo odluku, pitaj o probnom pakiranju. Prvo pročitaj cijenu i otkazivanje. Prepakiranje koristi samo ako rješava konkretnu nedoumicu."
+        },
+        {
+          "title": "Planiraj više od međunarodne vozarine",
+          "text": "Evidencija ukupne potrošnje treba uključiti robu, domaći i međunarodni prijevoz, odabrane usluge te prikazane troškove plaćanja i konverzije. Prema odredištu i uvjetima mogu postojati uvozni troškovi za provjeru. Procjene odvoji od već plaćenog.\n\nNadimak rute ili neformalnu preporuku ne smatraj potpunim objašnjenjem poreza. Pročitaj stvarni opis i pitaj što prikazana cijena uključuje. Nejasnu naknadu ostavi kao otvorenu stavku umjesto tihog pretpostavljanja nule.\n\nNa zahtjev navedi točne opise i vrijednosti. Ovaj vodič ne određuje carinske propise odredišta ni ishod postupka. Korisna odluka je prihvaćaš li ukupno s razumnom rezervom. Jeftin predmet može biti loš izbor ako dostava nadmaši uštedu."
+        },
+        {
+          "title": "Procjene čitaj kroz faze, ne obećanja",
+          "text": "Procjena treba početnu točku. Otprema prodavatelja, prijam u skladište, završena kontrola, predaja paketa i preuzimanje prijevoznika različiti su trenuci. Prije usporedbe s međunarodnim tranzitom utvrdi kojoj fazi pripada status.\n\nSlužbene informacije razlikuju domaći i međunarodni put te priznaju moguća kašnjenja. Aktualni rok odabrane rute koristi za planiranje, ne kao jamstvo datuma. Za fiksnu prigodu uračunaj kupnju i skladišne korake uz put prijevoznika.\n\nNakon slanja prati zapis i čuvaj referencu. Kupovna narudžba označena „poslano“ može putovati prema kineskom skladištu, a ne prema tebi. Kod nesklada daj podršci odgovarajuću narudžbu ili paket i datume uspoređivanih događaja."
+        },
+        {
+          "title": "Napravi završnu provjeru prije plaćanja prijevoza",
+          "text": "Stvarni paket promatraj kao cjelovitu odluku. Potvrdi sadržaj, primatelja, odredište, upute, prihvatljivost rute, ponudu i usluge. Sve stvari moraju proći tvoj pregled; priprema prijevoza ne smije sakriti otvoreno pitanje veličine ili stanja.\n\nKonačnu ponudu usporedi s ranijim scenarijima. Prelazi li proračun, zastani i istraži legitimne promjene. Druga prikladna ruta, promijenjen zahtjev pakiranja ili kombinacija predmeta mogu vrijediti provjere. Bez aktualne usporedbe ne pretpostavljaj nižu cijenu.\n\nSpremi uvjete odabrane rute i konačno plaćanje. Kasnija pitanja praćenja ili podrške bit će jasnija. Dobro planiranje znači razumjeti paket i prihvaćene uvjete, a ne birati liniju samo jer je tuđa drukčija pošiljka brzo stigla."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Službena procjena dostave OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Obavijest o dostavi OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Smjernice pakiranja OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Napomene prije kupnje OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "Upute za probno pakiranje OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-haul-packing",
+        "oopbuy-tracking-guide"
       ]
     },
     {
       "slug": "oopbuy-sizing-guide",
-      "tag": "VELIČINA I PRISTAJANJE",
-      "title": "Bolja provjera veličine počinje kod kuće",
-      "description": "Usporedite mjere umjesto da se oslanjate na poznatu oznaku.",
+      "tag": "Veličine",
+      "title": "Veličine OOPBuy: čitaj tablice i provjeri stvarne mjere",
+      "description": "Odaberi odjeću i obuću jasnijom metodom: usporedi tablice prodavatelja, izmjeri predmet koji pristaje i zatraži ciljano skladišno mjerenje.",
+      "primaryKeyword": "vodič veličina OOPBuy",
+      "secondaryKeywords": [
+        "tablica veličina OOPBuy",
+        "OOPBuy veličine",
+        "veličina odjeće OOPBuy",
+        "veličina obuće OOPBuy"
+      ],
+      "takeaways": [
+        "Koristi tablicu točne ponude i utvrdi opisuje li tijelo ili odjeću.",
+        "Iste mjere usporedi s predmetom koji već imaš i voliš nositi.",
+        "Ispravna etiketa ne jamči pristajanje; važne mjere razjasni prije slanja."
+      ],
       "sections": [
         {
-          "title": "Izmjerite nešto što vam odgovara",
-          "text": "Odaberite sličan artikl koji već imate. Za odjeću zabilježite odgovarajuće mjere položene na ravnu površinu; za obuću koristite prodavateljevu metodu mjerenja. Koristite iste mjerne jedinice."
+          "title": "Počni ponudom, ne univerzalnom konverzijom",
+          "text": "Najkorisniji vodič počinje ograničenjem: ne pretpostavljaj zajedničku tablicu svih prodavatelja. Oznaka M, broj obuće ili preporučena visina mogu značiti različito u različitim ponudama. Usporedbu započni tablicom konkretnog proizvoda.\n\nOOPBuy je kupovni i logistički agent, dok specifikacije dolaze iz izvorne ponude. Uobičajena veličina ne potvrđuje jednake dimenzije kao kod drugog prodavatelja. Poznate oznake smatraj identifikatorima dok ih mjere ne objasne.\n\nPrilikom narudžbe spremi tablicu i varijantu. Ako se ponuda promijeni, znat ćeš na čemu se odluka temeljila. Snimka treba sadržavati identitet proizvoda i objašnjenje metode, ne samo redak željene veličine."
         },
         {
-          "title": "Pročitajte točan oglas",
-          "text": "Oznake veličina mogu se razlikovati između prodavatelja i modela. Usporedite svoje mjere s tablicom za točan artikl. Provjerite označava li broj širinu položenu na ravno, opseg ili duljinu."
+          "title": "Izmjeri nešto što ti već pristaje",
+          "text": "Praktična referenca je vlastiti predmet koji nosiš i smatraš udobnim za istu svrhu. Položi ga ravno bez razvlačenja tkanine. Izmjeri relevantne dimenzije te zapiši broj i metodu.\n\nZa majicu mogu koristiti širina ispod pazuha, ramena, duljina leđa i rukava. Za hlače širina pojasa, prednja visina sjedala, bedro i unutarnja duljina. Ne trebaš sve moguće mjere; prednost daj onima koje obično odlučuju odgovara li ti kategorija.\n\nOdaberi usporediv uzorak. Široka trenirka slabo objašnjava željeno pristajanje uske košulje, a rastezljive hlače ponašaju se drukčije od krutih. Zapiši osjećaj pri nošenju i željene promjene. Brojevi tako postaju osobni cilj, a ne neobjašnjen niz."
         },
         {
-          "title": "Riješite nejasnoće na vrijeme",
-          "text": "Prije narudžbe pitajte o nejasnim mjerama. Trebate li dodatna mjerenja svoje narudžbe, provjerite dostupnost usluge i cijenu. Nijedna tablica veličina ne može jamčiti pristajanje."
+          "title": "Utvrdi što tablica mjeri",
+          "text": "Prije usporedbe razlikuj tjelesne mjere, mjere gotovog odjevnog predmeta i preporučeni raspon nositelja. Odgovaraju na različita pitanja. Prsa odjeće uključuju projektirani dodatni prostor, a tjelesna prsa opisuju osobu. Zamjena može izazvati veliku pogrešku.\n\nProvjeri jedinice te širinu nasuprot opsegu. Ravna širina prsa 54 centimetra nije opseg prsa 54 centimetra. Udvostručavanje širine može dati približnu usporedbu, ali ne opisuje cijeli oblik predmeta.\n\nInče pretvaraj dosljedno: jedan inč iznosi 2,54 centimetra. Sačuvaj izvorni broj uz pretvorbu radi lakšeg otkrivanja pogreške. Ako su naslovi nejasni ili prijevod ne objašnjava metodu, traži pojašnjenje prije tumačenja retka kao dokaza pristajanja."
+        },
+        {
+          "title": "Gornje dijelove biraj po važnim dimenzijama",
+          "text": "Počni dimenzijom koja ti najčešće stvara problem. Ako su košulje uske na prsima, prvo usporedi širinu. Kod kratkih rukava njihova duljina treba biti odlučujuća. Zatim provjeri ostatak prema željenom pristajanju.\n\nPogledaj konstrukciju. Spuštena ramena ili raglan mogu učiniti poznatu mjeru manje izravno usporedivom s klasično umetnutim rukavom. Pitaj gdje mjerenje počinje i završava i koristi dijagram prodavatelja ako postoji.\n\nReferentna jakna može imati širinu prsa 56 i duljinu leđa 67 centimetara. Slična prsa uz znatno kraći trup mogu pristajati posve drukčije. Usporedi sve važne dimenzije, ne biraj samo zato što jedan broj dobro odgovara."
+        },
+        {
+          "title": "Kod hlača provjeri više od pojasa",
+          "text": "Veličina je jasnija kada zajedno razmotriš struk, visinu sjedala, bedro i unutarnju duljinu. Ispravan pojas ne jamči udobno kretanje ili siluetu. Drukčija visina mijenja položaj pojasa i osjećaj iste mjere na tijelu.\n\nKod elastike utvrdi navodi li tablica opuštenu ili rastegnutu mjeru. Ne uspoređuj rastegnuti podatak s opuštenim vlastitim hlačama. Razlika je važna i pri čitanju fotografije mjerne trake iz skladišta.\n\nPazi na namijenjenu duljinu i kroj. Jednaka unutarnja duljina može izgledati drukčije zbog sjedala, nogavice i otvora. Referencom odredi željenu promjenu, poput više prostora za bedro ili užeg otvora. To je korisnije od pitanja jesu li hlače općenito velike ili male."
+        },
+        {
+          "title": "Tablice obuće koristi pažljivo",
+          "text": "Zapiši sustav veličina prodavatelja i upute za duljinu stopala. Poznatu EU, UK ili US oznaku ne pretvaraj nepovezanom tablicom bez provjere iste konvencije. Nedostaje li tablica, neizvjesnost ostaje.\n\nAko se traže tjelesne mjere, izmjeri oba stopala prema navedenoj metodi. U bilješkama odvoji stopalo, uložak, unutrašnjost cipele i potplat. Nisu zamjenjivi. Potplat može prelaziti unutarnji prostor, a oblik uloška otežati usporedbu ravne duljine.\n\nDuljina je samo dio pristajanja. Širina, oblik prstiju, rist, čarape i uporaba utječu na udobnost. Usporedi sličan vlastiti par i postavi određeno pitanje za presudnu dimenziju. Ne oslanjaj se na univerzalno povećanje za jedan broj ili fiksni dodatak za svaku cipelu."
+        },
+        {
+          "title": "Razmotri tkaninu i željeni kroj",
+          "text": "Mjere sužavaju izbor, ali ne opisuju sve pri nošenju. Struktura, rastezljivost, podstava i kroj utječu na kretanje odjeće. Koristi stvarne podatke ponude; precizan sastav ili elastičnost ne zaključuj samo iz fotografije.\n\nPrije izbora susjednih veličina objasni vlastitu uporabu. Kaput preko debelih slojeva može trebati drukčije pristajanje od košulje na tijelu. Široka silueta može biti namjerna, ali provjeri ramena, rukave i ukupnu duljinu prema namjeri.\n\nAko ponuda spominje odstupanje mjerenja, uključi ga u odluku. Ne temelji izbor na sitnoj razlici koju metoda ne može pouzdano razlikovati. Kada su dvije veličine jednako uvjerljive, odredi najvažniji kompromis umjesto pretvaranja tablice u savršen odgovor."
+        },
+        {
+          "title": "Zatraži ciljano skladišno mjerenje",
+          "text": "OOPBuy obavijest o prilagođenim uslugama opisuje dodatne detalje i mjere, uključujući dimenzije odjeće i duljinu cipele ili uloška. Provjeri aktualne opcije i naknade u računu. Zahtjev vrijedi kada rješava važno pitanje otvoreno u tablici.\n\nJasno odredi metodu. Primjerice traži ravno položenu košulju, mjerenje prsa od pazušnog šava do drugoga bez rastezanja. Za unutarnju duljinu navedi šav međunožja i rub. Fotografija treba zajedno pokazati traku i oba kraja.\n\nRezultat usporedi s vlastitim uzorkom istom metodom. Fotografirana etiketa i izmjerena odjeća različiti su dokazi. Obavijest ograničava standardni pregled, pa podudarna oznaka ne znači da je osobno pristajanje već provjereno."
+        },
+        {
+          "title": "O pristajanju odluči prije međunarodnog slanja",
+          "text": "Prije dodavanja paketu pregledaj mjere i uporabu. Presudnu nedostajuću dimenziju zatraži dok još možeš informirano odlučiti o skladišnoj robi. Kod velikog nesklada odmah istraži podršku umjesto nade da će se pristajanje promijeniti tijekom puta.\n\nTablicu, veličinu, fotografije mjerenja i odgovor podrške drži zajedno. To olakšava objašnjenje i razlikuje pogrešno poslanu varijantu od ispravno označenog kroja koji ti ne odgovara. Različite situacije mogu imati različita rješenja.\n\nNakon dostave ponovno izmjeri istom metodom i zapiši nošenje. Gradi privatnu referencu stvarnih iskustava, preferencija i ograničenja. S vremenom je korisnija od niza neobjašnjenih veličina ili općih savjeta iz nepovezanih kupnji."
         }
+      ],
+      "sources": [
+        {
+          "label": "Korisnički registracijski ugovor OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "Informacije o pregledu OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-spreadsheet-guide"
       ]
     },
     {
       "slug": "oopbuy-product-links",
-      "tag": "POVEZNICE OBJAŠNJENE",
-      "title": "Jedan proizvod, dva različita ID-a",
-      "description": "Zašto je prodavateljev ID artikla važan pri otvaranju pronalaska.",
+      "tag": "Poveznice proizvoda",
+      "title": "Poveznice OOPBuy: pronađi pravi proizvod i provjeri svaku varijantu",
+      "description": "Nauči provjeriti OOPBuy i Weidian poveznice, razlikovati izvorne ID-jeve i kataloške brojeve, riješiti pokvarene poveznice i razumjeti partnerske parametre.",
+      "primaryKeyword": "poveznice proizvoda OOPBuy",
+      "secondaryKeywords": [
+        "OOPBuy Weidian poveznice",
+        "pretvarač poveznica OOPBuy",
+        "URL proizvoda OOPBuy",
+        "poveznice OOPBuy spreadsheet"
+      ],
+      "takeaways": [
+        "Sačuvaj izvornu poveznicu tržišta i provjeri otvorenu stranicu.",
+        "Katalošku referencu odvoji od izvornog ID-ja u kupovnom URL-u.",
+        "Provjeri varijantu i aktualnu naplatu; partnerski kod ne jamči popust."
+      ],
       "sections": [
         {
-          "title": "Kataloški broj označava stranicu",
-          "text": "CNBuyCha svakoj stranici proizvoda dodjeljuje vlastiti kataloški broj. Taj je broj koristan unutar kataloga, ali nije nužno prodavateljev ID artikla."
+          "title": "Ispravna poveznica tek je prva provjera",
+          "text": "Poveznica OOPBuy treba dovesti do proizvoda koji želiš istražiti. Otvaranje stranice samo je početak. Još potvrdi proizvod, ponudu prodavatelja, opcije i aktualnu cijenu prema očekivanju iz direktorija ili tablice.\n\nPočetnički vodič opisuje traženje putem poveznica ili naziva prije odabira specifikacija i količine. Postupak ovisi o dostupnim podacima određene ponude. Ne pretpostavljaj da se svaka adresa iz društvene objave ili tržišta može pravilno uvesti i kupiti bez provjere.\n\nUz OOPBuy adresu čuvaj izvor. Drukčiji prijevod naslova, promjena slike ili nedostupna spremljena stranica lakše se razjašnjavaju izvornim zapisom. Nadimak „crna svakodnevna torba“ ne razlikuje nekoliko sličnih ponuda."
         },
         {
-          "title": "Prodavateljeva poveznica označava artikl",
-          "text": "Za Weidian oglas gumb za kupnju koristi ID artikla iz izvornog prodavateljeva URL-a. Otvara taj artikl u OOPBuyu s partnerskim pozivnim kodom ove stranice."
+          "title": "Razlikuj katalošku referencu i ID proizvoda",
+          "text": "Neovisni direktoriji često dodjeljuju vlastiti broj svakom zapisu. Izvorno tržište koristi zaseban identifikator ponude. Brojevi imaju različitu svrhu i ne smiju se zamijeniti pri otvaranju ili sastavljanju kupovne poveznice.\n\nU primjeru OOPBuy Taba 3470 je kataloška referenca CNBuyCha. Broj 7876894732 izvorni je identifikator u putanji Weidian. Stranica direktorija 3470 ne znači da odgovarajući OOPBuy URL treba završavati s 3470.\n\nJasno označi polja: referenca direktorija, izvorno tržište, originalna poveznica i OOPBuy poveznica. Sačuvaj pune adrese, ne samo brojeve. To pomaže kod različitih formata tržišta ili snimke kataloga bez stvarne poveznice."
         },
         {
-          "title": "Provjerite stranicu nakon otvaranja",
-          "text": "Usporedite naslov, prodavatelja i varijantu s oglasom koji ste istražili. Ako se stranica promijenila ili nije dostupna, vratite se u katalog i promišljeno odaberite drugi oglas."
+          "title": "Pravilno pročitaj primjer adrese",
+          "text": "Jedan primjer kupovnog puta je https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5. Domena označava OOPBuy, putanja izvornu ponudu Weidian, a završni parametar pozivni kod. Broj pripada izvornom proizvodu, ne numeraciji direktorija.\n\nAdresom razumij strukturu, ne dokazuj zalihe, cijenu, pouzdanost ili prikladnost. Otvori aktualnu stranicu i provjeri sadržaj. Valjano izgledajući URL može voditi na promijenjenu ili nedostupnu ponudu, a putanja sama ne potvrđuje željene opcije.\n\nPozivni parametar dio je partnerske poveznice. OOPBuy Tab može imati korist od kvalificirane uporabe. Parametar ne potvrđuje popust, kupon ili posebnu dostavu. Osloni se samo na ponudu izričito prikazanu i primjenjivu u aktualnoj službenoj naplati."
+        },
+        {
+          "title": "Provjeri identitet otvorene stranice",
+          "text": "Učitanu stranicu usporedi s izvorom kroz više detalja: slike, glavni dizajn, opcije, količinu i vidljivog prodavatelja. Naslovi mogu biti skraćeni ili prevedeni, pa samo podudaranje naslova nije snažan dokaz.\n\nDva ruksaka mogu dijeliti sličnu prednju fotografiju, ali različite pretince, dimenzije ili pribor. Potvrdi specifikaciju koja je motivirala kupnju. Trebaš li određeni pretinac za prijenosnik ili zatvaranje, pronađi ga u stvarnoj ponudi, ne pretpostavi prema sličnoj slici.\n\nPazi na prikaz srodne robe nakon nestanka izvorne ponude. Kod nejasnog identiteta zaustavi kupnju i čuvaj obje poveznice dok pitaš. Ne prihvaćaj tiho zamjenu zbog slične sličice. Kasnije provjere veličine, cijene i QC-a ovise o pravom početnom predmetu."
+        },
+        {
+          "title": "Prije usporedbe cijene odaberi varijantu",
+          "text": "Nakon identifikacije ponude odaberi stvarnu boju, veličinu, konfiguraciju i količinu. Početna cijena može pripadati drugoj opciji od prve slike. Stranica može kombinirati dodatke, pojedinačne komade ili različita pakiranja.\n\nOdabir zapiši običnim riječima. „Veliko, tamnosivo, jedan komad“ korisnije je od „opcija tri“, osobito ako se redoslijed promijeni. Spremi tablicu ili specifikacijsku sliku koja objašnjava izbor. Lakše ćeš usporediti narudžbu s namjerom.\n\nCijene kataloga u USD smatraj procjenama. Provjeri aktualan iznos opcije, prikazanu domaću dostavu i naplatu službene usluge. Međunarodni prijevoz zasebna je stavka. Točna poveznica ne zaključava katalošku cijenu niti je pretvara u ukupni trošak primitka."
+        },
+        {
+          "title": "Riješi neispravnu ili nepotpunu poveznicu",
+          "text": "Ako se proizvod ne učita, vrati se izvornom tržištu i ponovno kopiraj adresu predmeta. Provjeri nije li riječ o početnoj stranici trgovine, rezultatima ili stranici dijeljenja. Skraćene adrese mogu izgledati slično, a označavati drugo.\n\nPunu izvornu poveznicu pokušaj službenim OOPBuy pretraživanjem ili unosom i pregledaj rezultat. Ako ne radi, zapiši točnu adresu i pogrešku ili nedostajući podatak. Pitaj podršku može li se konkretna ponuda obraditi, umjesto očekivanja da ponavljanje popravlja nepodržan ili uklonjen predmet.\n\nNe uređuj nasumične brojeve dok se nešto ne otvori. To može dovesti do druge ponude uz lažan dojam popravka. Alternativni proizvod smatraj novim kandidatom i ponovno provjeri identitet, veličinu, varijantu i trošak."
+        },
+        {
+          "title": "Dijeli poveznice uz koristan kontekst",
+          "text": "Korisna podjela uključuje naziv, tržište, namijenjenu varijantu, datum provjere i važnu neizvjesnost. Jasno reci dijeliš li kataloški zapis ili aktualnu kupovnu stranicu. Druga osoba tako razumije što još treba provjeriti.\n\nKataloške slike ne predstavljaj kao dokaz stanja vlastite narudžbe. OOPBuy Tab koristi CNBuyCha podatke, a uvezene slike nisu provjerene QC fotografije tvoje robe. Osobne dokaze drži zasebno i prije javnog dijeljenja ukloni račun, adresu i podatke narudžbe.\n\nPartnerske poveznice otvoreno označi. Pozivni kod ne prikazuj kao zajamčenu uštedu bez provjerene primjenjive ponude. Odgovorno dijeljenje pomaže prepoznati proizvod i neizvjesnosti, ne sugerira da tvoje iskustvo rješava sva pitanja buduće tuđe narudžbe."
+        },
+        {
+          "title": "Radnje računa obavljaj na službenoj usluzi",
+          "text": "Za pristup koristi https://oopbuy.com/login i provjeri odredište preglednika. Direktorij pomaže otkrivanju, a službena usluga služi aktualnom računu, narudžbi i plaćanju.\n\nPrije vjerodajnica ili plaćanja pročitaj odredište poveznice. Poznato ime u naslovu, slici ili pozivu ne potvrđuje identitet stranice. Kod nejasnog preusmjeravanja otvori službeni web izravno i ondje koristi izvornu poveznicu.\n\nU vlastitu tablicu ne stavljaj lozinke ili platne vjerodajnice. Trebaju joj samo podaci za identifikaciju i odluku. Iz javnog izbora ukloni osobne reference narudžbi. Tako dijeliš korisna otkrića bez miješanja s osjetljivim podacima računa."
+        },
+        {
+          "title": "Ponavljaj isti put od poveznice do narudžbe",
+          "text": "Za svakog kandidata sačuvaj izvor, otvori OOPBuy rezultat, potvrdi identitet, izaberi varijantu, provjeri mjere ili specifikacije i procijeni punu cijenu. Zatim odluči imaš li dovoljno podataka. Dosljednost vrijedi više od brzog prolaska poznatom stranicom.\n\nNakon kupnje privatno spremi referencu i skladišne podatke usporedi s istim zapisom varijante. Ispravna poveznica ne zamjenjuje pregled primljene robe. Kod razlike spremljeni izbor i izvor pomažu točno objasniti problem.\n\nPrije ponovnog kupovanja opet provjeri. Uspješan proizvod od prije mjeseci može promijeniti dostupnost, opcije, cijenu ili opis. Stara opažanja čuvaj kao povijest, aktualnu stranicu tretiraj novom odlukom. Poveznice tako postaju upravljiv postupak istraživanja, ne zbirka pretpostavki."
         }
+      ],
+      "sources": [
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Službena stranica OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "Prijava OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-spreadsheet-guide",
+        "oopbuy-price-check",
+        "oopbuy-sizing-guide"
       ]
     },
     {
       "slug": "oopbuy-price-check",
-      "tag": "PAMETNIJE USPOREDBE",
-      "title": "Uspoređujte istu stvar, a ne samo cijenu",
-      "description": "Kratak popis provjera za usporedbu dvaju obećavajućih pronalazaka.",
+      "tag": "Proračun",
+      "title": "Provjera cijene OOPBuy: izračunaj trošak prije kupnje",
+      "description": "Provjeri cijenu proizvoda, usporedi točnu varijantu i sastavi realan proračun domaće dostave, međunarodnog prijevoza i ostalih troškova.",
+      "primaryKeyword": "provjera cijene OOPBuy",
+      "secondaryKeywords": [
+        "ukupan trošak OOPBuy",
+        "procjena dostave OOPBuy",
+        "cijena proizvoda OOPBuy"
+      ],
+      "takeaways": [
+        "Usporedi istu varijantu i količinu prije cijena.",
+        "Prikazane USD cijene smatraj procjenama odvojenim od ukupnog primitka narudžbe.",
+        "Proračun ponovno provjeri nakon skladišnih mjera i prije međunarodnog plaćanja."
+      ],
       "sections": [
         {
-          "title": "Uskladite opcije",
-          "text": "Usporedite istu veličinu, boju, količinu i uključene dodatke. Najniža prikazana cijena može se odnositi na drukčiju opciju od one koju želite."
+          "title": "Počni cijenom koja ti stvarno treba",
+          "text": "Provjera treba odgovoriti možeš li si priuštiti proizvod dostavljen na adresu. Niska cijena odgovara samo dijelom. Odluka ovisi o varijanti, količini, dostavi prodavatelja, međunarodnom prijevozu i drugim iznosima naplate ili odredišta.\n\nOOPBuy Tab neovisna je stranica otkrivanja, ne službena kupovna platforma. Katalog dolazi iz CNBuyCha, a USD cijene su procjene umjesto potpunih dostavnih ponuda. Katalogom pronađi kandidate, zatim prije plaćanja provjeri aktualnu službenu ponudu.\n\nPočni najvećim prihvatljivim iznosom cijele kupnje. Ako raspolažeš s 80 USD, ne dodijeli svih 80 robi uz nadu u zanemarivu dostavu. Ostavi prostor troškovima koje još nisi utvrdio."
         },
         {
-          "title": "Uključite sljedeće troškove",
-          "text": "Uz cijenu artikla usporedite domaću poštarinu i očekivane zahtjeve paketa. Potvrdite konačni pregled plaćanja u OOPBuyu umjesto da katalošku procjenu smatrate ponudom."
+          "title": "Provjeri odabranu varijantu, ne prvi broj",
+          "text": "Otvori aktualnu ponudu i odaberi boju, veličinu, specifikaciju i količinu. Jedan URL može sadržavati više proizvoda ili konfiguracija. Najniži iznos može pripadati drugoj opciji od privlačne slike. Mali dodatak i cijeli komplet mogu biti susjedne opcije različitih cijena.\n\nTočno zapiši prikazani odabir. Spremi URL, vidljivo ime prodavatelja, količinu i trenutni međuzbroj. Kod raspona cijena ne unosi donju granicu dok ne znaš vrijedi li za tvoj izbor.\n\nProvjeri mijenja li količina jediničnu cijenu ili minimalnu narudžbu. Jednake slike nisu izravno usporedive ako jedna cijena pretpostavlja više komada. Nejasan prijevod opcije riješi prije naplate; jeftina pogrešna varijanta ostaje pogrešna kupnja."
         },
         {
-          "title": "Sačuvajte zapis",
-          "text": "Spremite izvornu poveznicu prodavatelja i odabrane opcije. Te pojedinosti pomažu pri usporedbi fotografija narudžbe i objašnjavanju nepodudarnosti ako trebate podršku."
+          "title": "Troškove vodi u odvojenim redcima",
+          "text": "Prvi OOPBuy koraci odvajaju početnu robu i domaći prijevoz od kasnijeg međunarodnog. Odvoji ih i u evidenciji: roba, prodavatelj do skladišta, međunarodna dostava i dodatne usluge. Platne ili valutne troškove dodaj samo prema stvarnom zaslonu ili pružatelju. Odredišne poreze i obradu drži zasebno do pouzdanih podataka.\n\nSvaki redak označi potvrđenim, procijenjenim ili nepoznatim. To je korisnije od pretpostavke jednake sigurnosti brojeva. Potvrđena roba može stajati uz procjenu dostave i nepoznatu naknadu koja čeka ponudu.\n\nKod više proizvoda prati troškove predmeta i paketa. Roba pripada predmetu, zajedničko pakiranje može pripadati pošiljci. Podjelu zajedničkog troška označi kao osobnu metodu proračuna, ne nužno obračun OOPBuya ili prijevoznika."
+        },
+        {
+          "title": "Konverziju i plaćanje drži vidljivima",
+          "text": "USD prikaz pomaže usporedbi, ali ne jamči konačno terećenje platne metode. Pogledaj valutu i plativ iznos na stvarnom zaslonu potvrde. Konverziju pružatelja usporedi s proračunom umjesto pretpostavljanja nepromijenjenog kataloškog preračuna.\n\nKoristi jednu radnu valutu i zapiši pretvorbu drugih. Izvornu prodajnu cijenu možeš držati u jednom polju, procjenu USD u drugom. Tako izvor ostaje dostupan pri ponovnom računanju.\n\nNe dodaj izmišljenu univerzalnu OOPBuy tečajnu naknadu ili postotak plaćanja. Troškovi ovise o aktualnom putu i opcijama računa. Konkretno provjeri iznos, valutu i dodatnu naknadu koju pružatelj stvarno otkriva."
+        },
+        {
+          "title": "Procijeni dostavu realnim paketom",
+          "text": "OOPBuy ima službenu procjenu dostave. Koristi odredište i razumno utvrdive podatke planiranog paketa. Čitaj opise usluga, ne biraj samo najniži broj. Prihvatljivost robe, dimenzije, težina i odredište utječu na smislen izbor.\n\nPrije skladišta težine i mjere su pretpostavke. Navedena težina odjeće može isključivati prodajni obal, a lagana glomazna stvar zauzimati mnogo prostora. Utvrdi potrebne unose i drži ih uz rezultat radi ponovljive usporedbe.\n\nKod značajne neizvjesnosti pokreni drugi scenarij. Usporedi očekivani paket s većim koji zadržava potrebnu zaštitu. To je provjera osjetljivosti, ne predviđanje. Kupnja koja stane u proračun samo pod najoptimističnijim uvjetima treba veću rezervu."
+        },
+        {
+          "title": "Prođi cijeli primjer",
+          "text": "Pretpostavi majicu procijenjenu na 22 USD i torbu na 31 USD. Roba ukupno iznosi 53 USD. Prema narudžbi bilježiš 5 USD dostave prodavatelja te ilustrativnih 24 USD međunarodne. Međuzbroj je 82 USD prije dodatnih usluga, plaćanja i odredišnih troškova.\n\nBrojevi su hipotetski, nisu OOPBuy tarife. Pokazuju zašto košarica od 53 USD nije automatski kupnja od 53 USD. Kod maksimalnih 90 USD preostalih 8 USD predstavlja rezervu za otvorene troškove, ne budući popust.\n\nPromijeni scenarij: veći paket povisi hipotetsku dostavu na 34 USD. Međuzbroj postaje 92 USD prije nepoznatog. Prije obveze jasno odluči ukloniti predmet, namjerno povećati proračun ili odustati. Evidencija pretvara neizvjesnost u upotrebljivu usporedbu."
+        },
+        {
+          "title": "Alternative uspoređuj na istoj osnovi",
+          "text": "Kod dvaju prodavatelja usporedi istu konfiguraciju i očekivani ishod. Zapiši veličinu, materijalni opis, pribor, količinu i domaću dostavu. Niža cijena može značiti manje dijelova ili manje podataka o važnoj specifikaciji.\n\nUključi kvalitetu dokaza bez izmišljene novčane vrijednosti. Jasna tablica i opis olakšavaju odluku, a nejasna ponuda traži dodatna pitanja. Kataloške slike služe otkrivanju, nisu provjerene fotografije tvoje skladišne narudžbe.\n\nOpcija 20 USD uz 6 USD dostave i opcija 24 USD uz 2 USD daju isti početni zbroj 26 USD. To ne dokazuje jednaku kvalitetu ni završno prevozninu. Samo uklanja zavaravajuću razliku glavne cijene za procjenu ostalih činjenica."
+        },
+        {
+          "title": "Procijeni kupone bez podređivanja proračuna",
+          "text": "Promocija koristi samo ako vrijedi za namjeravanu kupnju. Pročitaj aktualna pravila kupona: područje uporabe, minimum, prihvatljive dostavne usluge, rok i kombiniranje. Stara promotivna snimka nije aktivno pravo.\n\nPopust računaj nakon sastavljanja košarice. Ako nepotrebni predmet otključava kupon, usporedi cijeli novi iznos s izvornim. Dodatna kupnja povećava robu, težinu i volumen iako kupon smanjuje jednu stavku.\n\nZapiši je li popust već uračunat. Ista ušteda jednom u kalkulatoru i ponovno u tablici stvara izmišljeni proračun. Ako završna naplata ne pokazuje odbitak, razjasni nesklad prije plaćanja."
+        },
+        {
+          "title": "Ponovno provjeri svaku odluku plaćanja",
+          "text": "Provjeru ponovi kada se informacije poboljšaju: pri aktualnoj varijanti, spremnosti za plaćanje i skladišnim mjerama za međunarodnu ponudu. Procjena pomaže odlučiti, ne obećava nepromjenjiv rezultat.\n\nPrije plaćanja potvrdi predmete, količine, valutu, adresu, usluge, stvarno primijenjene popuste i trenutačno dugovanje. Čuvaj identifikatore i potvrde radi kasnijih prilagodbi. Ne oslanjaj se na zapamćeni iznos s kartice proizvoda.\n\nJednostavno pravilo: nastavi kada se iznos i preostale neizvjesnosti uklapaju. Ako nepoznat trošak može promijeniti odluku, prvo ga istraži. Vodič dostave pomaže usporediti opcije, a skladišni vodič objašnjava kada su dostupne bolje mjere."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Službena procjena dostave OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-spreadsheet-guide"
+      ]
+    },
+    {
+      "slug": "oopbuy-warehouse-guide",
+      "tag": "Skladište",
+      "title": "Skladište OOPBuy: od dolaska do predaje paketa",
+      "description": "Saznaj što provjeriti pri dolasku narudžbe, kako pratiti rokove skladištenja i kada odlučiti o povratu ili slanju.",
+      "primaryKeyword": "vodič skladišta OOPBuy",
+      "secondaryKeywords": [
+        "skladištenje OOPBuy",
+        "primljena narudžba OOPBuy",
+        "skladišna kontrola OOPBuy"
+      ],
+      "takeaways": [
+        "Datum primitka prati zasebno za svaki predmet i provjeri aktualna pravila.",
+        "Prije spajanja u paket pregledaj fotografije i mjere vlastite narudžbe.",
+        "Pitanja proizvoda i prihvatljivost povrata riješi prije međunarodne otpreme."
+      ],
+      "sections": [
+        {
+          "title": "Skladište smatraj fazom odluke",
+          "text": "U skladištu se udaljena kupnja lakše procjenjuje. Primljen predmet uspoređuješ s namjeravanom opcijom, pregledavaš kontrolne informacije i odlučuješ zadržati, pitati ili zatražiti dopušten povrat. Planiranje paketa postaje konkretnije.\n\nNemoj sve svesti na „stiglo“. Dostava prodavatelja, primitak, kontrola, pohrana, priprema i međunarodna otprema različiti su događaji. Pročitaj aktualni status računa i pripadajući identifikator predmeta ili paketa.\n\nProvjere pripremi prije dolaska. Sačuvaj varijantu i važne mjere. Kada skladišni zapis postane dostupan, uspoređivat ćeš s određenim očekivanjem umjesto rekonstruiranja izvornog izbora."
+        },
+        {
+          "title": "Za svaki predmet stvori zaseban zapis",
+          "text": "Zapiši ID narudžbe, poveznicu, boju, veličinu, količinu, datum primitka, status kontrole i pitanja. Svaki proizvod zaslužuje redak i kada su kupljeni zajedno. Jedna kupnja može proizvesti odvojene prodavateljeve pošiljke i različite datume dolaska.\n\nRazlikuj ID narudžbe, domaće praćenje i kasniji međunarodni broj. Odgovaraju na različita pitanja. Za istragu nedostajućeg predmeta točna referenca korisnija je od snimke cijele košarice.\n\nKoristi osobne oznake „pregled potreban“, „pitanje poslano“, „zadržati“ ili „povrat zatražen“. Nisu službeni OOPBuy statusi, nego organizacija nedovršenog. Nakon nekoliko dana odmah treba biti jasno što treba pažnju i zašto."
+        },
+        {
+          "title": "Rok skladištenja razumij bez nagađanja",
+          "text": "Službena obavijest navodi 90 besplatnih dana od statusa Received. Zapiši datum svakog predmeta, ne samo najnovije kupnje. Prije oslanjanja na dopušteno vrijeme pregledaj aktualna pravila i račun.\n\nPosebnija obavijest prilagođenih usluga dopušta jedno produljenje od 10 CNY za najviše dodatnih 30 dana, ukupno najviše 120. Nakon toga roba može biti smatrana napuštenom i zbrinuta. To nije 120 besplatnih dana niti neograničeno obnavljanje.\n\nVlastiti podsjetnik postavi dovoljno prije redovnog kraja za pitanja i pripremu. Trebaš li produljenje, provjeri dostupnost baš za taj predmet i potvrdi novi datum. Ostavljanje u skladištu ne kupuje automatski dodatno vrijeme."
+        },
+        {
+          "title": "Pregledaj dokaze svoje narudžbe",
+          "text": "Otvori kontrolu točnog predmeta u računu. Usporedi boju, etikete, veličinu, količinu i komponente sa spremljenim odabirom. Na dostupnim slikama traži očite probleme. Skriven ili mutan detalj ostavi otvorenim, ne automatski odobrenim.\n\nKataloška slika OOPBuy Taba nije dokaz stanja skladišne robe. Neovisni katalog koristi CNBuyCha, a slike nisu provjerene kao QC konkretne narudžbe. Slike otkrivanja i vlastite dokaze drži odvojeno.\n\nPregledavaj po jedan predmet i zapiši pitanje dok je slika otvorena. „Ne vidi se šav lijevog rukava“ provedivije je od „kvaliteta je nesigurna“. Cilj je razlikovati provjerljivo od onoga što traži dodatnu kontrolu."
+        },
+        {
+          "title": "Traži mjeru koja rješava odluku",
+          "text": "Kada zadržavanje ovisi o pristajanju ili dimenziji, odredi točan podatak. Za odjeću možda treba ravna širina prsa ili duljina između navedenih točaka. Za spremišni dodatak možda je važan korisni unutarnji otvor, ne vanjska širina.\n\nPrije zahtjeva provjeri aktualne dodatne preglede ili mjerenja i cijenu. Opća kontrola ne uključuje nužno svaku mjeru, funkcionalni test ili potvrdu materijala. Pitaj može li skladište provesti baš opisanu radnju.\n\nKoristan zahtjev navodi predmet, točke i dokaz. Primjerice traku od gornjeg ramenog šava do donjeg ruba ravno položene odjeće. Rezultat usporedi sa sličnim vlastitim predmetom istom metodom; drukčije mjerenje može stvoriti lažan nesklad."
+        },
+        {
+          "title": "O povratu odluči prije planiranja paketa",
+          "text": "Ako roba odstupa ili je više ne želiš, odmah provjeri pravila. Prihvatljivost, rok, suradnja prodavatelja, stanje i transportni troškovi moraju se utvrditi za tu narudžbu. Skladišni rok automatski ne stvara jednako dug rok povrata.\n\nTijekom provjere očuvaj postojeće stanje. Uklanjanje pakiranja, etiketa ili dijelova može utjecati na prihvatljivost. Ako nisi siguran, pitaj podršku prije promjena. Neriješen predmet ne šalji međunarodno samo radi dovršavanja skupne kupnje.\n\nPošalji kratak zahtjev s ID-jem, konkretnim problemom i dokazima. Navedi željeni ishod, poput procjene povrata ili provjere nedostajućeg komada. Prati odgovor i svoje obveze; samo slanje zahtjeva ne dovršava povrat."
+        },
+        {
+          "title": "Odredi što je spremno za zajedničko slanje",
+          "text": "Spajanje počinje robom koju zadržavaš. Usporedi spremnost, fizičke osobine i prikladnost aktualnih usluga za odredište. Mekana odjeća i krhak strukturiran predmet mogu trebati različitu zaštitu iako stanu u jednu kutiju.\n\nProcijeni čekanje novog proizvoda prema najstarijoj robi. Niži teorijski trošak po komadu ne pomaže ako čekanje stvara skladišni problem ili propušta tvoj rok. Postavi završetak dodavanja i planiraj prema stvarno spremnom.\n\nDostupnim težinama i mjerama obnovi procjenu. Ako nije jasno odnosi li se težina na predmet, prodajno pakiranje ili gotov paket, pitaj. Odluka treba usporedive ulaze. Najjeftinija početna ponuda nije nužno konačna zapakirana cijena."
+        },
+        {
+          "title": "Upute pakiranja piši s jasnim prioritetima",
+          "text": "Navedi što zadržati i zašto. Ako je kutija dio poklona ili štiti osjetljiv oblik, reci to. Za uklanjanje nepotrebnog vanjskog pakiranja potvrdi dostupnost i zaštitu koje se odričeš. Izbjegni samo „što manje“.\n\nSvaku uputu poveži s predmetom. Mješovit paket treba detalje da se zahtjev za jedne cipele ne primijeni na sve. Provjeri dodatnu cijenu i utjecaj usluge na konačnu težinu ili dimenzije.\n\nPrije predaje pregledaj sadržaj, adresu, uslugu, deklaraciju i trenutačno dugovanje. Daj istinite podatke i slijedi aktualne zahtjeve odredišta i linije. Nakon skladišta ispravak previđene veličine ili pakiranja znatno je teži."
+        },
+        {
+          "title": "Nakon predaje zatvori evidenciju",
+          "text": "Referencu paketa čuvaj uz uključene predmete. Tako povezuješ narudžbu s međunarodnom pošiljkom. Sačuvaj konačni popis i potvrđeno pakiranje za kontrolu pri dolasku.\n\nAko nešto ostaje, datum skladištenja i sljedeću radnju ostavi vidljivima. Jedan predan paket ne znači da je ostatak računa riješen. Pregledaj skladište za robu koja čeka odluku, odgovor prodavatelja ili zasebno slanje.\n\nPostupak je dovršen kada svaki predmet ima namjeran ishod: otpremljen, čeka dokumentiranu radnju ili potvrđeni povrat. QC vodič produbljuje dokaznu provjeru, a vodiči pakiranja i praćenja prenose iste zapise u sljedeći korak."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Pravila skladištenja OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "Informacije o pregledu OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-returns-refunds",
+      "tag": "Podrška nakon kupnje",
+      "title": "Povrati OOPBuy: uvjeti, dokazi i sljedeći koraci",
+      "description": "Saznaj što provjeriti prije zahtjeva za povrat, kako dokumentirati problem i zašto odobrenje povrata i primitak novca nisu ista faza.",
+      "primaryKeyword": "povrati i refundacije OOPBuy",
+      "secondaryKeywords": [
+        "povrat novca OOPBuy",
+        "pravila povrata OOPBuy",
+        "povratna dostava OOPBuy"
+      ],
+      "takeaways": [
+        "Uvjet povrata provjeri odmah nakon skladišnog zaprimanja; skladištenje nije rok povrata.",
+        "Sačuvaj etikete, pakiranje i dokaze narudžbe dok se zahtjev razmatra.",
+        "Traži stvarne troškove i razlikuj odobrenu refundaciju od primljenog novca."
+      ],
+      "sections": [
+        {
+          "title": "Prije refundacije odredi fazu",
+          "text": "Pitanje povrata može se odnositi na neotpremljenu kupnju, skladišni predmet, robu koja se vraća prodavatelju ili međunarodno dostavljen paket. Počni točnim predmetom i trenutnom fazom. Sljedeća radnja ovisi o već završenom.\n\nOtvori službeni zapis, zapiši ID i najnoviji status te razlikuj otkazivanje, zamjenu, povrat ili problem nakon dostave. Ispravan zahtjev smanjuje mogućnost odgovora na drugo pitanje zbog preopćenite poruke.\n\nOOPBuy Tab neovisan je vodič i direktorij; ne može odobriti povrat ili pristupiti računu. Zahtjev pošalji službenom narudžbenom ili poslijekupovnom kanalu. Raspravu po mogućnosti drži uz narudžbu kako bi dokazi i odluka ostali zajedno."
+        },
+        {
+          "title": "Rok i uvjete provjeri odmah",
+          "text": "Službena obavijest opisuje uvjetni rok pet dana, odnosno 120 sati nakon Stocked in, od sljedećeg sata nakon promjene statusa. Spominje i sedam dana nakon potpisanog primitka. Potrebni su podrška prodavatelja i stanje za ponovnu prodaju; pravodobni zahtjev ne čini sve proizvode prihvatljivima.\n\nAktualna pravila i vrijeme svoje narudžbe provjeri bez odgode. Ne čekaj kraj skladišne pohrane. Skladištenje i pravo na povrat različite su stvari, a rokove vodi zasebno.\n\nNeke kategorije i stanja isključeni su, uključujući određene prilagođene proizvode i robu bez potrebnih etiketa ili pakiranja. Izvan uvjeta pitaj hoće li prodavatelj razmotriti zahtjev umjesto pretpostavke standardnog prava. Prema obavijesti njegov je pristanak i dalje potreban."
+        },
+        {
+          "title": "Dokaze organiziraj oko jednog jasnog problema",
+          "text": "Spremi dokaz kupnje: poveznicu, odabranu veličinu ili boju, količinu i relevantan opis. Zatim prikupi dokaz problema. Etiketa može potvrditi pogrešnu veličinu; detalj i širi kadar mogu pokazati mrlju i mjesto na odjeći.\n\nRazliku opiši precizno. „Naručeno tamnoplavo, primljena etiketa crno“ korisnije je od „predmet je loš“. Kod mjere pokaži metodu i usporednu točku. Nejasno očekivanje pristajanja teže se procjenjuje od dokumentiranog odstupanja specifikacije.\n\nKoristi fotografije vlastite narudžbe ili primljene robe. Kataloške slike nisu dokaz stanja paketa. Sačuvaj izvorne datoteke i izbjegni uređivanje koje skriva kontekst, identifikator, etiketu ili puni problem."
+        },
+        {
+          "title": "Odvoji naknadu usluge od povratnog prijevoza",
+          "text": "Obavijest oslobađa naknade za prvu operaciju povrata ili zamjene u kalendarskom mjesecu. To nije obećanje besplatne poštarine. Dodatni osobni zahtjevi mogu uključivati 5 RMB naknade te domaće transportne troškove.\n\nZatraži stavkovnu ponudu za svoj slučaj. Obavijest različito opisuje tretman izvornog prodavateljeva prijevoza, pa ne računaj univerzalan povrat iz izdvojene rečenice. Potvrdi povrat robe, prijevoz, naknadu i tko plaća svaki dio.\n\nUsporedi neto ishod. Hipotetskih 18 USD refundacije uz 7 USD potvrđenih povratnih troškova ostavlja 11 USD prije drugih prilagodbi. To je primjer, ne tarifa OOPBuya. Stvarna ponuda pomaže odlučiti vratiti ili zadržati inače prihvatljiv predmet."
+        },
+        {
+          "title": "Napiši zahtjev koji se može obraditi",
+          "text": "Početna poruka treba biti kratka, ali potpuna. Uključi ID, predmet i varijantu, datume, problem i željeni rezultat. Priloži najjače dokaze umjesto desetaka nepovezanih snimki. Različite probleme više predmeta jasno razdvoji.\n\nPrimjerice navedi da skladišna etiketa pokazuje drugu veličinu od plaćene, identificiraj obje i traži procjenu povrata ili ispravnu zamjenu. Ako si promijenio mišljenje, reci istinu. Netočan razlog nedostatka otežava procjenu dokaza.\n\nPitaj za sljedeću radnju, potreban iznos i treba li predmet ostati netaknut. Kod potvrđene naknade slijedi upute računa o stanju ili plaćanju. Zapiši odgovor i rok te prati pitanja koja zahtijevaju tvoju reakciju."
+        },
+        {
+          "title": "Povrat prati kao postupak, ne gumb",
+          "text": "Podnesen zahtjev, odobrenje, povratna otprema, prodavateljev primitak i dovršena refundacija odvojeni su koraci. Sačuvaj potvrdu stvarno postignutog koraka. Podrška koja potvrdi primitak poruke nije isto što i prodavatelj koji prihvati robu.\n\nTijekom procjene ne dodaj predmet međunarodnom paketu i ne odobravaj promjene stanja. Sačuvaj prepoznatljivost, potrebne obale i dijelove. Ako promijeniš plan, provjeri status prije proturječne upute.\n\nZa zamjenu pitaj što ako nema zamjenskog proizvoda i postoje li dodatni prijevozi. Zamjenu po dolasku ponovno pregledaj; raniji problem nije automatski riješen. Ažuriraj evidenciju kako ne bi poslao izvornu robu ili izgubio trag zamjeni."
+        },
+        {
+          "title": "Razlikuj odobrenje i primitak novca",
+          "text": "Po potvrdi zapiši iznos, valutu, odredište i referencu. Utvrdi radi li se o OOPBuy saldu ili povratu na platnu metodu. Kredit računa ne znači novac već dostupan u banci.\n\nSlužbena obavijest opisuje očekivanih 7–15 dana za bankovnu karticu nakon potvrde, ovisno o banci. To je procjena obavijesti, ne jamstvo niti univerzalni rok svih metoda. Pitaj podršku kojoj fazi pripada tvoj slučaj.\n\nNakon očekivanog vremena pri provjeri navedi referencu i datum potvrde. Usporedi valute originala i refundacije prije zaključka da je razlika pogreška. Zatraži objašnjenje nejasnog odbitka umjesto izmišljanja naknade ili pretpostavke punog povrata svih troškova."
+        },
+        {
+          "title": "Probleme nakon međunarodne dostave rješavaj brzo",
+          "text": "Međunarodni povrat veća je odluka od skladišnog. Pravila navode da kupac snosi slanje u Kinu i dodatne povezane troškove uz ispunjene uvjete. Prije slanja pribavi pisane upute i jasnu procjenu.\n\nZa oštećen, nepotpun ili pogrešan paket sačuvaj vanjsku ambalažu, naljepnicu, popis i fotografije. OOPBuy obavijest ima kratke rokove prijave i dokaza, zato odmah kontaktiraj podršku umjesto raspravljanja je li problem dovoljno ozbiljan.\n\nKod očitog problema težine obavijest posebno traži dokaz vaganja prije otvaranja. Općenito dokumentiraj primitak čim je praktično i slijedi prijevoznika. Ne bacaj pakiranje niti popravljaj dok su dokazi potrebni. Prijava započinje procjenu, ne jamči uspješan zahtjev."
+        },
+        {
+          "title": "Spriječi izbježive povrate sljedeće kupnje",
+          "text": "Priprema se uglavnom događa prije potrebe za povratom. Prije plaćanja provjeri varijantu, relevantne mjere, međunarodnu procjenu i spremi originalnu ponudu. Time smanjuješ pogrešan izbor i kasno otkrivanje preskupe dostave.\n\nU skladištu odmah pregledaj vlastite dokaze i traži potrebnu mjeru dok ima vremena. Ako nisi siguran, odgodi uklanjanje pakiranja i predaju paketa do odgovora. Jasno zadržavanje ili povrat korisniji su od nedovršenog skupa u pohrani.\n\nKonačni zapis treba pokazati rješenje: zadržano, prihvaćena zamjena, dovršen povrat ili primljen novac na navedeno odredište. Za otvoreno pitanje napiši sljedeću radnju i odgovornu stranu. Skladišni i QC vodiči pomažu ugraditi provjere od početka."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Statusi narudžbi i paketa OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Problemi nakon dostave OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-warehouse-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-price-check"
+      ]
+    },
+    {
+      "slug": "oopbuy-tracking-guide",
+      "tag": "Praćenje",
+      "title": "Praćenje OOPBuy: pravilno čitaj narudžbe i događaje paketa",
+      "description": "Razumij praćenje narudžbi, odvoji prodavateljevu dostavu od međunarodne i saznaj koje dokaze prikupiti kada paket treba pomoć.",
+      "primaryKeyword": "vodič praćenja OOPBuy",
+      "secondaryKeywords": [
+        "praćenje OOPBuy",
+        "status narudžbe OOPBuy",
+        "praćenje paketa OOPBuy"
+      ],
+      "takeaways": [
+        "Provjeri gledaš li kupovnu narudžbu ili međunarodni paket.",
+        "Prati točnu referencu i događaje prijevoznika umjesto poistovjećivanja statusa.",
+        "Za istragu pošalji kratku kronologiju i posljednji potvrđen događaj."
+      ],
+      "sections": [
+        {
+          "title": "Najprije odredi koje putovanje pratiš",
+          "text": "Kupnja uključuje dvije faze: prodavatelj šalje u kinesko skladište, zatim međunarodni paket putuje prema tebi. „Narudžba poslana“ može zato značiti prodavateljevu otpremu, ne paket već na putu do kuće.\n\nSlužbeni vodič razlikuje kupovne narudžbe i narudžbe paketa. Shipped kod kupnje označava otpremu prodavatelja, a kod paketa preuzimanje prijevoznika. Prije tumačenja provjeri kontekst stranice i identifikator. Ta razlika rješava mnoge prividne proturječnosti.\n\nZapitaj se čekaš li dolazak proizvoda u skladište, pripremu paketa ili prijevoznika. Odgovor zapiši uz referencu. Tako istražuješ pravu fazu umjesto međunarodnog praćenja domaće kupnje koja još nije postala međunarodni paket."
+        },
+        {
+          "title": "Prave identifikatore drži zajedno",
+          "text": "Poveži kupovnu narudžbu s kasnijim paketom. Sačuvaj ID, dostupnu domaću referencu, međunarodni broj ili teretni list, uslugu i datum slanja. Spojene narudžbe popiši pod paketom radi kasnije provjere sadržaja.\n\nPočetnički vodič upućuje na My Waybill i Waybill Details. Koristi aktualnu navigaciju i podatke vlastitog paketa. Snimka bez ID-ja može biti nejasna kada pratiš više pošiljki.\n\nBrojeve pažljivo kopiraj i sačuvaj ime prijevoznika. Ne pretpostavljaj zamjenjivost broja s jednog zaslona sa svim prijevozničkim referencama. Novi broj nakon predaje dodaj postojećem zapisu umjesto nepovezanoj bilješci koja gubi izvornu narudžbu."
+        },
+        {
+          "title": "Skladišne statuse čitaj kao operativne korake",
+          "text": "Potvrda prodavateljeve dostave može prethoditi kontroli i pohrani. Službeni vodič odvaja potpisani primitak od kasnijih koraka. Sken dolaska zato ne znači nužno spremnost za spajanje u međunarodni paket.\n\nTraži poruke računa koje zahtijevaju akciju. Dopunsko plaćanje ili potvrda mogu zaustaviti napredak do odgovora. Pročitaj zahtjev i razlog umjesto poistovjećivanja svakog nepromijenjenog statusa s kašnjenjem. Nejasnu radnju pitaj za konkretnu narudžbu.\n\nSkladišnu fazu iskoristi za predmet: varijantu, fotografije i otvorene brige prije predaje. Logistički napredak nije odobrenje pristajanja, učinka ili autentičnosti. Proizvod može uredno putovati i još trebati tvoju kupovnu odluku."
+        },
+        {
+          "title": "Odvoji pripremu paketa od kretanja prijevoznika",
+          "text": "Nakon predaje međunarodnog paketa mogu ostati skladišni poslovi. Plaćanje, pregled, razvrstavanje, pakiranje i preuzimanje nisu ista stvar. Vodič odvojeno opisuje završeno pakiranje i prijevoznikovo preuzimanje, pa priprema može biti vidljiva prije transportnog skena.\n\nČitaj posljednji događaj i vrijeme. Sam broj praćenja ne dokazuje polazak vozila ili zrakoplova. Konkretan opis koristi kao dokaz poznatog, bez nagađanja lokacije.\n\nAko račun pokazuje problem plaćanja ili adrese, riješi njega službeno. Ako je priprema završena, a preuzimanje nejasno, pitaj je li predaja provedena. To je preciznije od pitanja zašto kasni bez identifikacije faze."
+        },
+        {
+          "title": "Prazninu praćenja tumači bez izmišljenog rasporeda",
+          "text": "Ažuriranja bilježe događaje, ne stalnu živu lokaciju. Razdoblje bez skena ne govori gdje je paket ni zašto nema novosti. Posljednji potvrđeni događaj usporedi s informacijama konkretne usluge prije zaključka.\n\nNe postoji jedan broj dana koji svaki OOPBuy paket čini zakašnjelim. Izvorna obrada, ruta, odredište, blagdani i lokalna dostava variraju. Koristi aktualnu procjenu i uvjete uz razumijevanje da procjena nije jamstvo datuma.\n\nVodi kratku kronologiju umjesto stalnog osvježavanja. Zapiši otpremu, posljednji događaj, datum provjere i relevantnu obavijest usluge. Premaši li praznina smjernice ili izostane obećana povratna informacija, imaš činjenice za ciljanu podršku."
+        },
+        {
+          "title": "Na carinske i dokumentacijske zahtjeve reagiraj pažljivo",
+          "text": "Ako praćenje spominje carinu ili dokumente, pročitaj točnu poruku i utvrdi tko traži podatke. Koristi kanal službenog računa ili potvrđenog prijevoznika. Ne postupaj po neželjenoj platnoj poveznici samo jer očekuješ paket.\n\nPrikupi stvarne zapise: opise, količine, potvrde plaćanja i referencu paketa. Legitimnom postupku daj točne informacije. Ne mijenjaj opis ili vrijednost radi željenog ishoda i ne smatraj katalošku cijenu računom.\n\nKod nejasnog jezika pitaj podršku koja radnja treba. Opći carinski događaj ne dokazuje dospjeli trošak, zapljenu ili nemoguću dostavu. To su različiti zaključci za zasebne dokaze. Čuvaj odgovore i datume slanja."
+        },
+        {
+          "title": "Prati predaju lokalnoj dostavi",
+          "text": "U lokalnoj fazi provjeri identificiraju li podaci odredišnog prijevoznika ili dodatni broj. Koristi poveznicu provjerenog zapisa ako postoji. Sačuvaj izvorni broj kako bi podrška povezala lokalni događaj s međunarodnim putem.\n\nPregledaj adresu, broj stana i poštanski broj. Kod pokušaja dostave ili preuzimanja pročitaj stvarne opcije i rok prijevoznika. Drugi pokušaj, preusmjeravanje i vrijeme čuvanja nisu isti u svim državama i uslugama.\n\nAdresu pojasni potvrđenim postupkom i po potrebi obavijesti OOPBuy. Zapiši promjenu ili dogovor preuzimanja. Praktičan plan završne predaje važan je kao praćenje dugog puta, osobito kada nitko neće biti kod kuće."
+        },
+        {
+          "title": "Znaj što učiniti kad dostava izgleda pogrešno",
+          "text": "Ako piše dostavljeno, a paketa nema, provjeri fotografiju, recepciju, paketomat ili navedeno mjesto. Potvrdi adresu i službeno kontaktiraj lokalnog prijevoznika. Zatraži dostavni zapis umjesto pretpostavljanja uzroka.\n\nOOPBuyu javi problem s ID-jem i odgovorom prijevoznika. Ako je paket prisutan, ali oštećen ili nepotpun, čuvaj etiketu, pakiranje, popis i slike. Službeni rokovi nakon dostave kratki su, pa prijavi odmah i slijedi dokazne upute.\n\nRazlikuj dokaz dostave i dokaz predmeta. Sken može pokazati gdje je paket ostavljen, ali ne koji su proizvodi bili unutra. Obje jasne evidencije pomažu procjeni bez špekuliranja ili nepovezanih slika."
+        },
+        {
+          "title": "Podršci pošalji provjerljivu kronologiju",
+          "text": "Koristan upit navodi paket, uslugu, zemlju, datum otpreme, posljednji potvrđen događaj i pitanje. Dodaj primljene zahtjeve prijevoznika i svoju reakciju. Punu adresu i osobne ID-jeve ne objavljuj javno.\n\nPrimjerice objasni potvrđeno preuzimanje, navedi datum zadnjeg događaja i pitaj postoji li istraga prema odabranoj usluzi. Za obećanu obavijest dodaj referencu i datum obećanja. Pitaj što dalje i kada ponovno kontaktirati.\n\nNovosti čuvaj u istom zapisu do dostave ili dokumentiranog rješenja. Praćenje je najkorisnije kada podržava odluku: odgovoriti, preuzeti, sačuvati dokaze ili tražiti istragu. Buduću pošiljku planiraj uz vodiče dostave i pakiranja prije odabira rute."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Statusi narudžbi i paketa OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Obavijest o dostavi OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Problemi nakon dostave OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-haul-packing",
+      "tag": "Pakiranje",
+      "title": "Pakiranje OOPBuy kupnje: zaštiti robu i provjeri konačnu cijenu",
+      "description": "Planiraj zajedničku kupnju praktičnim pakiranjem, provjerom ruta i probnim pakiranjem prije međunarodnog slanja.",
+      "primaryKeyword": "pakiranje OOPBuy kupnje",
+      "secondaryKeywords": [
+        "probno pakiranje OOPBuy",
+        "pakiranje OOPBuy",
+        "dostava skupne kupnje OOPBuy"
+      ],
+      "takeaways": [
+        "Pakiranje biraj prema robi koju štitiš i ruti koja je prihvaća.",
+        "Uklanjanje kutija i kompresija kompromisi su, ne automatske uštede ni opća preporuka.",
+        "Rezultat probnog pakiranja ovisi o nepromijenjenoj ruti i konfiguraciji."
+      ],
+      "sections": [
+        {
+          "title": "Odredi jasan cilj pakiranja",
+          "text": "Dobar plan uravnotežuje zaštitu, veličinu, cijenu i stanje u kojem želiš primiti stvari. Ciljevi mogu biti suprotni. Prodajna kutija čuva prezentaciju, ali zauzima prostor; uklanjanje smanjuje volumen, no može tražiti drugu zaštitu.\n\nZa svaki predmet odredi važnost. Poklon može trebati original, strukturirana torba potporu, a meka periva odjeća drukčiji pristup od krhkog dodatka. Ne primjenjuj jednu uputu na sve jer je video pokazao uspjeh tuđe kupnje.\n\nCilj je prikladan, jasno određen paket razumljive cijene. Najmanja kutija nije nužno najbolja, a sve opcionalne zaštite mogu biti nepotrebne. Svaki izbor neka odgovara konkretnoj potrebi predmeta, uporabe ili prijevoza."
+        },
+        {
+          "title": "Uključi samo predmete koje zadržavaš",
+          "text": "O proizvodu odluči prije pakiranja. Pregledaj varijantu i vlastite skladišne dokaze, riješi veličinu, količinu i vidljivo stanje. Potrebno mjerenje zatraži prije obveze međunarodnog slanja.\n\nKod promjene pakiranja misli na povrat. Uklanjanje potrebnih etiketa, pečata, pribora ili obala može utjecati na uvjete. Neriješeni predmet prvo razjasni. Pakiranje za uštedu prostora loš je kompromis dok još odlučuješ o povratu.\n\nSastavi završni popis s referencom svakog predmeta. Označi što ostaje u skladištu i postavi kraj dodavanja kupnji. Time zaustavljaš beskrajno povećavanje i dobivaš stabilan skup za rute, usluge i provjeru paketa."
+        },
+        {
+          "title": "Razumij važnost težine i dimenzija",
+          "text": "Paket ima masu i zauzima prostor. Usluge koriste različita pravila, zato pročitaj stvarnu rutu. Ne preuzimaj volumetrijski djelitelj drugog agenta, prijevoznika ili foruma kao pravilo vlastite cijene.\n\nSlužbeni početnički vodič navodi konačnu dostavu prema izmjerenim dimenzijama i težini. Rana procjena ostaje privremena do zapakiranih mjera. Masa slobodnih proizvoda ne mora odgovarati kutiji s proizvodima i zaštitom.\n\nLagan predmet u krutom velikom obalu može biti osjetljiviji na veličinu od kompaktnog teškog. To objašnjava važnost pakiranja, ne predviđa fiksnu uštedu. Usporedi stvarne prihvatljive konfiguracije, uz broj zadrži obračunsko pravilo."
+        },
+        {
+          "title": "Zaštitu biraj za predmet, ne fotografiju",
+          "text": "Službena obavijest opisuje kartone, jednostavno pakiranje, vakuumske vreće, mjehurićastu zaštitu i rastezljivu foliju. Dostupnost ovisi o usluzi i paketu. Ponudu smatraj mogućnostima procjene, ne obveznim popisom nadogradnji.\n\nRazmisli koje oštećenje sprečavaš. Meka vreća za odjeću rješava drugo od ublažavanja oko krhkog predmeta. Karton sam ne objašnjava unutarnju potporu, a slojevi omota nisu zamjena za jasnu uputu o ranjivom dijelu.\n\nAko materijal ili konstrukcija nisu jasni, pitaj prikladnost usluge. Kompresija može štetiti obliku ili osjetljivim detaljima. Metodu ne određuj samo iz kataloškog prikaza koji ne otkriva stvarnu krutost, krhkost ili glomaznost."
+        },
+        {
+          "title": "Izričito odluči o kutijama obuće i prodajnim obalima",
+          "text": "Ako želiš zadržati kutiju, reci za koji predmet. Kod uklanjanja ili presavijanja provjeri opciju i što će ostati kao zaštita. Original može koristiti prezentaciji, pohrani i zaštiti i bez planirane preprodaje.\n\nUsporedi korist i posljedicu. Uklanjanje smanjuje obujam, ali može ukloniti potporu ili odvojiti dijelove koji trebaju ostati zajedno. Zamjenski vanjski karton i dalje može trebati. Ne postoji univerzalno pravilo jeftinijeg paketa nakon svih izbora.\n\nZa mješovitu pošiljku odredi pojedinačno: zadržati poklon-kutiju, ukloniti samo suvišni transportni karton ili pitati prije promjene. Izbjegni „uklonite sve kutije“ kada misliš samo jednu jednokratnu vanjsku ovojnicu."
+        },
+        {
+          "title": "Prije spajanja provjeri kompatibilnost rute",
+          "text": "Kataloška prisutnost ne potvrđuje prijevoz željenom uslugom. OOPBuy smjernice spominju ograničenja baterijskih ruta, a zasebno slanje slučajeve prevelikih predmeta s vlastitim pakiranjem. Prati aktualne skladišne oznake i uvjete stvarne robe.\n\nCijeli sadržaj usporedi s uslugom. Ako jedna stvar mijenja prihvatljivost, usporedi zajednički i zasebni paket stvarnim ponudama uz jednaku zaštitu. Spajanje ne pobjeđuje uvijek; dodatni paketi i druge rute mogu suprotno mijenjati račun.\n\nRobu opiši točno i nejasne kategorije provjeri prije kupnje. Pakiranje ne čini zabranjenu robu dopuštenom niti zaobilazi odredišna pravila. Ako usluga ne prihvaća predmet, pitaj zakonitu opciju ili prikladan korak dok je u skladištu."
+        },
+        {
+          "title": "Probno pakiranje koristi za stvarnu nedoumicu",
+          "text": "Službene upute Parcel Rehearsal opisuju odabir prihvatljivih skladišnih podnarudžbi i unos primatelja te pakiranja. Objavljena naknada je 20 CNY. Provjeri aktualan postupak i iznos prije plaćanja, osobito ako opcije odstupaju od vodiča.\n\nProba koristi kada zapakirana mjera mijenja odluku. Najprije odredi konfiguraciju. Obavijest uvjetuje izračun nepromijenjenom rutom, metodom i detaljima pakiranja; kasnije promjene mogu promijeniti mjere i konačnu naknadu.\n\nPrije predaje pregledaj otkazivanje. Obavijest dopušta otkaz prije uzimanja robe s police, a poslije navodi ograničenja. Ne pretpostavljaj povrat naknade nakon početka rada. Nejasan status razjasni. Proba je plaćena priprema, ne jamstvo brzine ili uklanjanja sve transportne neizvjesnosti."
+        },
+        {
+          "title": "Napiši upute koje druga osoba može slijediti",
+          "text": "Koristi kratke upute po predmetu s jasnim prioritetom. Navedi referencu, što zadržati ili ukloniti i potrebnu zaštitu. Ako izvedivost nije jasna, traži potvrdu umjesto prepuštanja pogađanja između suprotnih ciljeva.\n\nPrimjerice zatraži očuvanje označene poklon-kutije, sadržaja zajedno i potvrdu vanjske zaštite. Za drugi predmet pitaj može li se ukloniti suvišna ambalaža prodavatelja bez promjene potrebnog proizvodnog obala. To su zahtjevi za provjeru, ne pretpostavke uključene usluge.\n\nOpcije sučelja usporedi s bilješkom. Tekst o zadržavanju kutije može proturječiti drugdje odabranom uklanjanju. Provjeri dodatnu cijenu i spremi potvrđene izbore. Jasnoća bolje smanjuje neizvjesnost od dugog odlomka s preferencijama, šalama i više planova."
+        },
+        {
+          "title": "Pregledaj gotov paket i planiraj primitak",
+          "text": "Prije konačne odluke usporedi sadržaj, primatelja, rutu, konfiguraciju, mjere i dugovanje. Potvrdi stvaran popust i cjelokupan proračun. USD cijene stranica otkrivanja su procjene i ne uključuju puni primitak kupnje.\n\nReferencu paketa čuvaj uz predmete i potvrde pakiranja. Pri dostavi možeš provjeriti očekivane dijelove i zadržan prodajni obal. Kod problema odmah očuvaj dokaze umjesto bacanja vanjskog materijala.\n\nUspješan plan završava robom prihvatljivog stanja uz svjesno odobren trošak. Za put nakon otpreme koristi vodič praćenja, a za problem prije slanja vodič povrata. Zapiši korisne izbore za iduću kupnju kako bi odluka počela dokazima."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Smjernice pakiranja OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Upute za probno pakiranje OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        },
+        {
+          "label": "Pravila zasebnih pošiljki OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        },
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-returns-refunds"
+      ]
+    }
+  ],
+  "guides": {
+    "guide": {
+      "sections": [
+        {
+          "title": "Počni jasnim užim izborom",
+          "text": "Odaberi kategoriju pa usporedi nekoliko relevantnih ponuda. Zabilježi naziv, izvor, boju, veličinu i količinu. Kataloška cijena početna je referenca; pri otvaranju kroz OOPBuy provjeri aktualnu opciju i iznos. Pitanja mjera, materijala i pribora drži uz predmet. Mali izbor olakšava uočavanje kada slične slike predstavljaju različite verzije ili prodavateljeve opcije."
+        },
+        {
+          "title": "Pregledaj narudžbu prije plaćanja",
+          "text": "Početnički vodič opisuje kupnju platformom i primitak u kineskom skladištu. Proizvod i domaća dostava plaćaju se prvo, međunarodna poslije zasebno. Prije kupnje pregledaj učitanu ponudu i usporedi opcije s bilješkama. Provjeri iznos i uvjete konkretnog predmeta. Nejasnu veličinu, količinu ili ograničenje riješi prije plaćanja. Sačuvaj referencu radi povezivanja budućih skladišnih podataka."
+        },
+        {
+          "title": "Pregledaj predmet kada se pojave skladišni podaci",
+          "text": "Prodavateljeva otprema i skladišna obrada zasebne su faze. Kada se podaci pojave, pročitaj status i fotografije. Boju, etiketu veličine, količinu i vidljivo stanje usporedi s odabirom. Ako važan detalj nije vidljiv, pitaj za dodatnu fotografiju ili mjerenje i cijenu. Kod problema brzo provjeri aktualne mogućnosti podrške jer prihvatljivost ovisi o robi i okolnostima."
+        },
+        {
+          "title": "O paketu odluči na kraju",
+          "text": "Prije predaje provjeri sve predmete, adresu, rutu i uvjete. Službenom procjenom istraži opcije pa provjeri stvarni paket. Pakiranje, izmjerene dimenzije i sadržaj utječu na izbor. Reference narudžbi i paketa drži zajedno, a podršku i praćenje vodi službenim računom. Detaljni vodiči objašnjavaju odluke o veličini, QC-u, cijeni i pakiranju tijekom postupka."
+        }
+      ],
+      "checks": [
+        "Učitani proizvod, varijantu i količinu usporedi s izvornom ponudom.",
+        "Skladišne dokaze i dostupnu podršku pregledaj odmah.",
+        "Prije predaje provjeri adresu, sadržaj i uvjete rute."
+      ],
+      "sources": [
+        {
+          "label": "Početnički vodič OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Službena procjena dostave OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ]
+    },
+    "qc": {
+      "sections": [
+        {
+          "title": "Utvrdi koje fotografije pregledavaš",
+          "text": "Počni podrijetlom. Kataloška ili prodavateljeva fotografija pokazuje ponudu, a kontrolne slike vlastite narudžbe primljen predmet. Prije odluke poveži referencu i odabranu opciju. Slike na ovoj stranici dolaze iz kataloga i označene su fotografijama proizvoda. Za procjenu vlastite robe koristi dokaze službenog OOPBuy računa."
+        },
+        {
+          "title": "Provjeri identitet, količinu i vidljivo stanje",
+          "text": "Uz slike pročitaj boju, veličinu, verziju i količinu. Prvo cijeli predmet, potom važne dijelove. Za obuću usporedi oba komada i etikete. Za odjeću siluetu, šavove i tiskane detalje. Za torbe i dodatke zatvarače, remene i dijelove. Zapiši precizno odstupanje i fotografiju koja ga pokazuje umjesto općeg dojma da nešto nije u redu."
+        },
+        {
+          "title": "Postavi pitanje na koje druga slika odgovara",
+          "text": "Koristan zahtjev utvrđuje jednu odluku i potreban dokaz. Možeš tražiti čitljivu etiketu, zakriveno pričvršćenje ili mjeru s vidljivim krajevima trake. Potvrdi dostupnost i naknadu prije nastavka. Fotografije imaju granice: svjetlo mijenja boju, perspektiva proporcije, a slika ne utvrđuje unutarnji učinak, dugotrajnost ili sastav. Neodgovoreno ostavi otvoreno umjesto nagađanja."
+        },
+        {
+          "title": "Riješi nedoumice prije predaje paketa",
+          "text": "Vidljivo usporedi s ponudom i odluči nastaviti, pitati ili kontaktirati podršku. Sačuvaj opciju, relevantne slike i kratak opis. OOPBuy objavljuje pregled i povrat; provjeri aktualna pravila i opcije narudžbe prije očekivanja ishoda. Cijeli QC članak donosi kategorijske provjere, dok veličine i povrat objašnjavaju kada dodatna mjera ili brz upit mijenjaju odluku."
+        }
+      ],
+      "checks": [
+        "Koristi dokaze ispravne narudžbe i odabrane opcije.",
+        "Za određeno otvoreno pitanje traži jasan pogled ili mjeru.",
+        "Zabilježi vidljive probleme i aktualne opcije podrške prije slanja."
+      ],
+      "sources": [
+        {
+          "label": "Informacije o pregledu OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Prilagođene logističke usluge OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Povrati i refundacije OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    "shipping": {
+      "sections": [
+        {
+          "title": "Pripremi ulaze procjene",
+          "text": "Počni odredištem i proizvodima koje želiš poslati. Prikupi dostupne težine i dimenzije te prepoznaj sadržaj koji traži posebno rukovanje ili provjeru rute. Unesi podatke u službeni kalkulator i pregledaj ponuđene rute. Prije skladišnog mjerenja unosi su pretpostavke. Drži ih vidljivima radi kasnije zamjene. Korisna procjena opisuje paket, ne univerzalnu cijenu."
+        },
+        {
+          "title": "Uz cijenu pročitaj uvjete rute",
+          "text": "Prikladne rute usporedi istim podacima. Pregledaj način obračuna, prihvaćeni sadržaj, dimenzijske limite i ostale uvjete. Stvarna težina opisuje masu, volumetrijski obračun prostor prema pravilu rute. Veća kutija mijenja usporedbu i uz iste stvari. Koristi prikazani faktor i zaokruživanje, ne formulu nepovezanog prijevoznika ili procjene."
+        },
+        {
+          "title": "Pregledaj cijeli proračun i pakiranje",
+          "text": "Međunarodnu procjenu vodi uz ostale iznose. Proizvod, prodavatelj do skladišta, usluge i platni ili odredišni troškovi mogu se pojaviti u različitim fazama. Svaki provjeri tamo gdje je stvarno prikazan. Pakiranje uravnotežuje zaštitu i veličinu: krhko ili lako zgnječeno može tražiti drugo od meke odjeće. Pitaj dostupne usluge i usporedi prijedlog prije pretpostavke uštede uklanjanjem ili spajanjem."
+        },
+        {
+          "title": "Ponovno provjeri stvarni paket prije slanja",
+          "text": "Kad postoje zapakirane mjere i aktualne opcije, ponovi usporedbu tim podacima. Potvrdi primatelja, sadržaj, uvjete i traženi iznos. Rokove koristi za planiranje i ostavi vrijeme za faze narudžbe i paketa. Spremi referencu i prati službeni račun. Detaljni vodiči dostave, ukupne cijene, pakiranja i praćenja objašnjavaju odluke završnog pregleda."
+        }
+      ],
+      "checks": [
+        "Rute uspoređuj istim odredištem, sadržajem, težinom i dimenzijama.",
+        "Koristi obračun i ograničenja odabrane rute.",
+        "Prije potvrde ponovi izračun sa stvarnim podacima paketa."
+      ],
+      "sources": [
+        {
+          "label": "Službena procjena dostave OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Obavijest o dostavi OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy objašnjenje prve kupnje",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
         }
       ]
     }
-  ]
+  },
+  "categoryIntros": {
+    "shoes": {
+      "title": "OOPBuy pregled obuće",
+      "intro": "Istraži obuću prema modelu, uporabi i detaljima pristajanja. Usporedi točnu opciju prije oslanjanja na poznatu oznaku veličine. Slike pomažu užem izboru; prodavateljeve mjere i dokazi primljene narudžbe podupiru sljedeću odluku. U provjeru uključi lijevu i desnu cipelu.",
+      "checks": [
+        "Tablicu prodavatelja usporedi s prikladnim parom koji već nosiš.",
+        "Na fotografijama narudžbe provjeri model, boju, etiketu i oba komada.",
+        "Razmotri zaštitu i prostor za par i njegovu kutiju."
+      ]
+    },
+    "hoodies-sweaters": {
+      "title": "OOPBuy majice s kapuljačom i džemperi",
+      "intro": "Pregledavaj uz željeno pristajanje. Širina prsa, duljina i oblik ramena korisniji su od samog slova veličine. Mjere svakog prodavatelja usporedi s udobnim vlastitim predmetom i potvrdi boju i verziju. Slike pokazuju izgled; sastav i gramatura traže pouzdanu ponudu ili potvrdu.",
+      "checks": [
+        "Zapiši širinu prsa, duljinu i ramena.",
+        "Provjeri boju, manžete, kapuljaču ili izrez na dostupnim slikama.",
+        "Materijalne tvrdnje ili gramaturu potvrdi u ponudi prije oslanjanja."
+      ]
+    },
+    "t-shirts": {
+      "title": "OOPBuy pregled majica",
+      "intro": "Pronađi majice prema obliku, rukavu i točnom dizajnu. Prije veličine usporedi mjere i varijantu. Sitne promjene položaja tiska, ovratnika ili boje razlikuju slične ponude. Slikama prepoznaj pitanja pa detalje potvrdi podacima prodavatelja i skladišnim dokazima vlastite narudžbe.",
+      "checks": [
+        "Duljinu i širinu prsa usporedi s majicom koja dobro pristaje.",
+        "Tisak, boju i verziju poveži sa spremljenom ponudom.",
+        "Na fotografijama narudžbe pogledaj izrez, šavove i položaj tiska."
+      ]
+    },
+    "jackets": {
+      "title": "OOPBuy pregled jakni",
+      "intro": "Jakne biraj prema planiranim slojevima i konstrukciji. Veličinu usporedi sa sličnom jaknom uz vlastitu sklonost slojevima. Provjeri zatvaranje, džepove i podstavu. Fotografije otkrivaju vidljivo, ali toplina, vodootpornost i materijalne tvrdnje trebaju dokaze izvan izgleda.",
+      "checks": [
+        "Mjere usporedi s jaknom nošenom preko namjeravanih slojeva.",
+        "Provjeri zatvarače, gumbe, džepove i vidljivu podstavu.",
+        "Razmotri utjecaj konstrukcije i punjenja na zaštitu i zapakirani volumen."
+      ]
+    },
+    "pants-shorts": {
+      "title": "OOPBuy hlače i kratke hlače",
+      "intro": "Istražuj prema pojasu, visini sjedala, duljini i nogavicama. Ista etiketa može opisivati različito pristajanje, pa usporedi metodu mjerenja s vlastitim omiljenim parom. Potvrdi radi li se o jednom predmetu ili kompletu te boju i duljinu prije izjednačavanja sličnih ponuda.",
+      "checks": [
+        "Struk, visinu sjedala i unutarnju duljinu usporedi s prikladnim uzorkom.",
+        "Utvrdi je li pojas fiksan, elastičan ili prilagodljiv.",
+        "Odabranu duljinu, boju i količinu poveži s narudžbom."
+      ]
+    },
+    "headwear": {
+      "title": "OOPBuy kape i šeširi",
+      "intro": "Biraj prema opsegu, dubini i obliku. Podesivo zatvaranje daje fleksibilnost, ali raspon mora odgovarati nositelju. Usporedi točan stil i boju ponude. Pri kasnijem pakiranju razmotri zaštitu krune ili šilta primljenog proizvoda.",
+      "checks": [
+        "Provjeri navedeni opseg ili raspon prilagodbe i dubinu.",
+        "Na slikama pregledaj boju, zatvaranje i vidljiv oblik.",
+        "Prije predaje razmotri zaštitu čvrste krune ili šilta."
+      ]
+    },
+    "accessories": {
+      "title": "OOPBuy torbe i dodaci",
+      "intro": "Istraži torbe i dodatke prema praktičnim dimenzijama, pristajanju i sadržaju. Slika rijetko daje mjerilo, pa provjeri remen, raspon pojasa ili pretinac. Poveži varijantu i pregledaj zatvaranje ili metalne dijelove. Materijal potvrdi pouzdanim opisom, ne procjenom iz boje.",
+      "checks": [
+        "Dimenzije, remen ili raspon usporedi s planiranom uporabom.",
+        "Provjeri zatvaranje, spojeve i pribor odabrane opcije.",
+        "Razmotri zaštitu krutih, osjetljivih i lako ogrebanih dijelova."
+      ]
+    },
+    "short-sets": {
+      "title": "OOPBuy usklađeni kompleti",
+      "intro": "Komplete pregledavaj po dijelovima. Slika može pokazivati cijelu kombinaciju iako opcija sadrži samo jednu komponentu. Potvrdi količinu i sadržaj pa gornje i donje mjere usporedi s vlastitom odjećom. Provjeri pripadaju li boje i verzije istom kompletu.",
+      "checks": [
+        "Potvrdi točne komponente i količine opcije.",
+        "Prije odabira veličine zasebno usporedi gornji i donji dio.",
+        "Provjeri boju, dizajn i etiketu svakog primljenog dijela."
+      ]
+    },
+    "electronics": {
+      "title": "OOPBuy elektronička otkrića",
+      "intro": "Elektroniku istražuj prema modelu i potrebnoj kompatibilnosti. Provjeri priključke, uređaje, napajanje i sadržaj odabranog paketa. Prije rute identificiraj baterije i transportno osjetljive dijelove. Fotografije pomažu vidljivom stanju i identitetu; učinak i sigurnost traže specifikacije, potvrdu ili test izvan slike.",
+      "checks": [
+        "Potvrdi model, kompatibilnost, konektor i napajanje.",
+        "Provjeri utjecaj baterija i sadržaja na rute.",
+        "Utvrdi sadržaj i pitaj kako provjeriti presudnu funkciju."
+      ]
+    },
+    "other-stuff": {
+      "title": "Dodatna OOPBuy otkrića",
+      "intro": "Mješovite proizvode pregledavaj od svrhe, veličine i sadržaja. Slične slike mogu skrivati količinu, materijalne tvrdnje ili kompatibilnost, zato pažljivo usporedi opciju. Prije dodavanja paketu prepoznaj krhke dijelove i transportne okolnosti. Relevantnim detaljima odredi najvažnije provjere.",
+      "checks": [
+        "Potvrdi uporabu, dimenzije i uključenu količinu.",
+        "Prepoznaj krhkost, kompatibilnost ili sadržaj za provjeru rute.",
+        "Postavi konkretno pitanje kada ponuda ili slike ne razjašnjavaju važan detalj."
+      ]
+    },
+    "jersey": {
+      "title": "OOPBuy pregled dresova",
+      "intro": "Dresove istraži prema klubu, sezoni, verziji i stvarno uključenim opcijama. Usporedi mjere jer različiti krojevi mogu pristajati različito uz istu etiketu. Provjeri ime, broj, oznake i boju. Kod personalizacije prije narudžbe potvrdi točan zapis i aktualne uvjete podrške.",
+      "checks": [
+        "Tim, sezonu, verziju i boju poveži s odabranom ponudom.",
+        "Provjeri mjere i svaki detalj imena, broja ili oznake.",
+        "Prije plaćanja potvrdi uvjete personaliziranog proizvoda."
+      ]
+    }
+  }
 }

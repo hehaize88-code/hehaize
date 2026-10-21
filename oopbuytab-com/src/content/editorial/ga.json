@@ -1,11 +1,11 @@
 {
   "ui": {
     "finds": "Fionnachtana",
-    "articles": "Iris",
+    "articles": "Ailt",
     "qc": "Treoir QC",
     "shipping": "Loingseoireacht",
     "read": "Léigh an treoir",
-    "allArticles": "Fiosraigh an iris",
+    "allArticles": "Gach alt OOPBuy",
     "latestReading": "Is fiú beagán taighde a dhéanamh.",
     "browseAll": "Fiosraigh an spreadsheet",
     "heroLabel": "TOSAÍONN DO CHÉAD FHIONNACHTAIN EILE ANSEO",
@@ -15,18 +15,18 @@
     "featured": "Úr ón spreadsheet",
     "featuredIntro": "Táirgí nua, réidh le breathnú níos géire orthu.",
     "categoryTitle": "Aimsigh do chúinne féin.",
-    "guideTitle": "Ón gcéad fhionnachtain go dtí an tseiceáil dheireanach.",
-    "guideIntro": "Bealach simplí le taighde a dhéanamh ar tháirge sula n-ordaíonn tú ar OOPBuy.",
-    "faqTitle": "Cúpla rud is fiú a bheith ar eolas agat.",
-    "faqIntro": "Freagraí soiléire faoin spreadsheet, grianghraif táirgí agus naisc cheannaigh.",
-    "articlesTitle": "Nótaí OOPBuy",
-    "articlesIntro": "Treoracha gearra praiticiúla le haghaidh roghanna níos machnamhaí.",
+    "guideTitle": "Conas OOPBuy a úsáid",
+    "guideIntro": "Lean an próiseas ceannaigh ó nasc úsáideach táirge go seiceáil eolasach sa stóras agus cinneadh cúramach faoin mbeartán.",
+    "faqTitle": "Ceisteanna coitianta faoi OOPBuy",
+    "faqIntro": "Freagraí gonta faoi ordú, iniúchadh, cinntí stórála, seoladh agus seirbhís iar-dhíolacháin, le tagairtí oifigiúla do bheartais an ardáin.",
+    "articlesTitle": "Treoracha ceannaigh OOPBuy",
+    "articlesIntro": "Treoracha praiticiúla chun an scarbhileog a úsáid, grianghraif QC a sheiceáil, seoladh a phleanáil agus na cinntí tar éis ordaithe a bhainistiú.",
     "findsTitle": "Fionnachtana OOPBuy",
     "findsIntro": "Fiosraigh táirgí coitianta ó chatalóg CNBuyCha. Déan comparáid idir an liostú, na grianghraif agus an praghas sula roghnaíonn tú do chéad fhionnachtain eile.",
-    "qcTitle": "OOPBuy QC: breathnaigh beagán níos géire",
-    "qcIntro": "Úsáid grianghraif táirgí le haghaidh taighde, ansin seiceáil grianghraif d’ordaithe féin roimh sheoladh.",
-    "shippingTitle": "Pleanáil níos faide ná praghas an earra",
-    "shippingIntro": "Níl i bpraghas táirge ach an tús. Seiceáil na roghanna seachadta reatha agus an t-iomlán i do chuntas OOPBuy.",
+    "qcTitle": "Treoir grianghraf QC OOPBuy",
+    "qcIntro": "Seiceáil an fhianaise a bhaineann le d’ordú, aithin ceisteanna a dteastaíonn radharc eile uathu agus réitigh ábhair imní roimh bheartán a chur isteach.",
+    "shippingTitle": "Costais seolta agus meastacháin OOPBuy",
+    "shippingIntro": "Ullmhaigh sonraí an mheastacháin, cuir bealaí oiriúnacha i gcomparáid agus seiceáil an beartán arís nuair a bhíonn a thomhais phacáilte ar fáil.",
     "checklist": "Sula leanann tú ar aghaidh",
     "related": "Lean ort ag fiosrú",
     "independent": "Fionnachtain neamhspleách táirgí",
@@ -40,7 +40,20 @@
     "productDetails": "Na sonraí",
     "readMore": "Faigh amach tuilleadh",
     "searchHelp": "Bain triail as ainm táirge, branda nó ID earra an díoltóra.",
-    "allCategories": "Gach catagóir in aon áit amháin."
+    "allCategories": "Gach catagóir in aon áit amháin.",
+    "contents": "Ar an leathanach seo",
+    "expandAll": "Oscail gach rannán",
+    "collapseAll": "Dún gach rannán",
+    "sources": "Foinsí oifigiúla",
+    "lastReviewed": "Seiceáilte go deireanach",
+    "quickChecks": "Seiceálacha tapa",
+    "moreDetails": "Léigh an treoir iomlán",
+    "jumpToPage": "Téigh go leathanach",
+    "goToPage": "Téigh",
+    "loading": "Táirgí á lódáil…",
+    "loadError": "Níorbh fhéidir na táirgí a lódáil. Bain triail eile as.",
+    "pageLabel": "Leathanach",
+    "previewNotice": "Réamhamharc · Liostuithe CNBuyCha nuashonraithe {date}. Osclaíonn cuardach CNBuyCha."
   },
   "steps": [
     {
@@ -58,150 +71,1367 @@
   ],
   "faq": [
     {
-      "q": "An é OOPBuy Tab suíomh oifigiúil OOPBuy?",
-      "a": "Is suíomh neamhspleách fionnachtana táirgí é OOPBuy Tab. Déantar clárú, orduithe agus íocaíochtaí ar oopbuy.com. Tá cód cuireadh cleamhnaithe sna naisc cheannaigh; ní ghealltar lascaine."
+      "q": "Cad é OOPBuy, agus an ndíolann sé na táirgí féin?",
+      "a": "Déanann OOPBuy cur síos air féin mar ghníomhaire ceannaigh agus lóistíochta. Cabhraíonn sé le horduithe ó dhíoltóirí tríú páirtí, stóráil shealadach, pacáil agus seoladh. Ní hionann an ról sin agus monaróir nó miondíoltóir údaraithe branda. Seiceáil an díoltóir bunaidh, cur síos an táirge agus na srianta roimh ordú; ní chruthaíonn liostú gníomhaire ná grianghraf stórais barántúlacht.",
+      "sources": [
+        {
+          "label": "Comhaontú cláraithe úsáideora OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Cad as a dtagann na táirgí agus na praghsanna?",
-      "a": "Tagann liostuithe táirgí, íomhánna, torthaí cuardaigh agus sórtáil ó CNBuyCha. Taispeántar praghsanna in USD i ngach teanga. Deimhnigh an praghas reatha, an infhaighteacht agus an leagan roghnaithe in OOPBuy."
+      "q": "Conas a chuirim mo chéad ordú OOPBuy isteach?",
+      "a": "Tosaíonn an treoir oifigiúil le nasc táirge nó cuardach de réir ainm. Seiceáil an t-earra lódáilte, roghnaigh dath, méid agus cainníocht, agus íoc costas an táirge móide an seachadadh intíre is infheidhme. Tar éis ceannaigh agus iniúchta sa stóras, seiceáil an t-earra stóráilte sula gcuireann tú beartán idirnáisiúnta isteach. Deimhnigh gach céim sa chuntas oifigiúil; ní ordú í cárta scarbhileoige.",
+      "sources": [
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "An grianghraif QC stórais iad grianghraif na dtáirgí?",
-      "a": "Tagann na híomhánna a thaispeántar ó CNBuyCha. Níor fíoraíodh gur grianghraif QC stórais iad. Seiceáil grianghraif d’ordaithe féin in OOPBuy sula gcinneann tú iad a sheoladh."
+      "q": "Cé na naisc siopadóireachta a luaitear sa treoir oifigiúil do thosaitheoirí?",
+      "a": "Déanann an treoir cur síos ar naisc Taobao, Tmall agus 1688 a ghreamú in OOPBuy. Le haon nasc, seiceáil go n-osclaíonn an leathanach oifigiúil an t-earra ceart agus go bhfuil sonraí an leagain iomlán. Má theipeann ar nasc nó má thaispeántar earra eile, fiafraigh de thacaíocht OOPBuy roimh íoc; ná glac leis go dtacaítear le gach URL margaidh.",
+      "sources": [
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "An bhfuil seachadadh san áireamh i bpraghas an earra?",
-      "a": "Caith leis an méid a thaispeántar mar phraghas measta earra. Déan athbhreithniú ar phostas intíre, seachadadh idirnáisiúnta, seirbhísí roghnacha agus aon mhuirir is infheidhme ag an gcéim íocaíochta reatha agus sa luachan pacáiste."
+      "q": "Cén fáth a n-íoctar as an táirge agus as seoladh idirnáisiúnta ar leithligh?",
+      "a": "Míníonn OOPBuy an ceannach in dhá chéim. Clúdaíonn an chéad íocaíocht an táirge agus an seachadadh ábhartha laistigh den tSín chuig an stóras. Níos déanaí roghnaíonn tú earraí stóráilte, cuireann tú beartán isteach agus íocann tú as seoladh idirnáisiúnta. Meas an dara costas roimh cheannach, mar ní léiríonn praghas an earra amháin costas iomlán an ordaithe a fháil.",
+      "sources": [
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Conas a oibríonn na naisc cheannaigh?",
-      "a": "Osclaíonn an cnaipe ar leathanach táirge a ID earra bunaidh Weidian in OOPBuy. Is ID ar leith é uimhir chatalóige CNBuyCha. Seiceáil an liostú ar an spriocleathanach sula n-ordaíonn tú."
+      "q": "An é praghas an táirge in USD an méid deiridh a íocfaidh mé?",
+      "a": "Ní hea. Ní chuimsíonn praghas táirge gach costas féideartha den cheannach agus den bheartán idirnáisiúnta. Féadfaidh lastas intíre, seoladh idirnáisiúnta, seirbhísí roghnacha agus comhshó íocaíochta cur leis an iomlán. Déanann fógraí breisithe OOPBuy cur síos ar chomhshó airgeadra agus táillí freisin. Seiceáil na méideanna i do sheiceáil amach agus i d’iarratas beartáin féin; ní luachan deiridh praghas catalóige tiontaithe.",
+      "sources": [
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Breisiú iarmhéid",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
     },
     {
-      "q": "An féidir liom cuardach le híomhá?",
-      "a": "Níl cuardach íomhá ar fáil sa réamhamharc seo. Is féidir cuardach de réir ainm nó na catagóirí a bhrabhsáil. Ní chuirimid torthaí neamhghaolmhara in áit grianghraif a uaslódáladh."
+      "q": "Cé na modhanna íocaíochta is féidir liom a úsáid?",
+      "a": "Liostaíonn an treoir do thosaitheoirí cárta creidmheasa, PayPal agus iarmhéid cuntais, agus míníonn an chabhair bhreisithe socruithe eile. Seiceáil infhaighteacht agus an méid a ghearrfar sa chuntas agus sa tseiceáil amach reatha. Léigh sonraí comhshó agus táillí sula ndeimhníonn tú; ní ráthaíonn lua modha in alt cabhrach go bhfuil sé ar fáil do gach tír nó idirbheart.",
+      "sources": [
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Breisiú iarmhéid",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
+    },
+    {
+      "q": "An bhfuil grianghraif chaighdeánacha QC OOPBuy saor in aisce?",
+      "a": "Deir fógra na seirbhísí saincheaptha go bhfuil grianghraif chaighdeánacha QC stórais, arna dtógáil de réir treoirlínte iniúchta, saor in aisce. Cuirtear ar fáil iad tar éis don stóras earra a fháil agus a phróiseáil. Tá siad difriúil ó íomhánna catalóige díoltóra nó scarbhileoige neamhspleáiche. Seiceáil na grianghraif a bhaineann le d’ordú stóráilte féin sula ndéanann tú cinneadh seolta.",
+      "sources": [
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Cad is féidir le grianghraif chaighdeánacha QC agus iniúchadh a dheimhniú?",
+      "a": "Clúdaíonn treoir oifigiúil faisnéis infheicthe amhail cainníocht, sonraíochtaí ordaithe agus riocht dealraitheach, le teorainneacha soiléire. Ní dheimhníonn sí oiriúnacht fhoirfe, feidhmíocht leictreonach ghairmiúil ná barántúlacht branda. Seans nach ndéanfar ach seiceáil sheachtrach ar tháirgí séalaithe. Glac le grianghraif mar fhianaise ar a bhfuil le feiceáil agus iarr soiléiriú nuair atá sonra tábhachtach; ná glac leis gur tástáladh gné fholaithe.",
+      "sources": [
+        {
+          "label": "Faisnéis iniúchta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Comhaontú cláraithe úsáideora OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "An féidir tomhais nó grianghraif QC gar-amhairc a iarraidh?",
+      "a": "Déanann OOPBuy cur síos ar sheirbhís QC saincheaptha do thomhais nó sonraí ar leith, lena n-áirítear fad bróige nó boinn istigh agus toisí éadaigh. Seiceáil infhaighteacht agus an táille reatha sa chuntas oifigiúil nó leis an tacaíocht; níl praghas uilíoch do ghrianghraif saincheaptha san fhógra. Sonraigh an tomhas nó an radharc beacht atá uait ionas go bhfreagraíonn an t-iarratas do d’imní.",
+      "sources": [
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "An ndéantar an t-iniúchadh céanna ar earraí 1688 agus ar gach earra eile?",
+      "a": "Ní gá. Luann an treoir do thosaitheoirí caighdeáin QC éagsúla do cheannacháin 1688, agus míníonn an comhaontú úsáideora sampláil theoranta seachas iniúchadh iomlán ar gach aonad. Ná glac leis gur scrúdaíodh gach píosa in ordú il-earra ina aonar. Roimh ordú cainníochta, soiléirigh raon an iniúchta agus aon seirbhís bhreise atá riachtanach do na seiceálacha is tábhachtaí duit.",
+      "sources": [
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Comhaontú cláraithe úsáideora OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Cá fhad a mhaireann gnáthstóráil saor in aisce?",
+      "a": "Sonraíonn an fógra oifigiúil seirbhísí saincheaptha gnáth-thréimhse saor in aisce de 90 lá ó stóráil. Úsáideann an leathanach ginearálta stórála stádas “received” mar phointe tosaigh. Seiceáil an spriocdháta iarbhír do gach ordú stóráilte, go háirithe má tháinig earraí ar dhátaí éagsúla, agus eagraigh seoladh nó síneadh incháilithe roimh dheireadh na tréimhse saor in aisce.",
+      "sources": [
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Beartas stórála OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        }
+      ]
+    },
+    {
+      "q": "An féidir stóráil a shíneadh thar an tréimhse saor in aisce?",
+      "a": "Ceadaíonn fógra na seirbhísí saincheaptha síneadh íoctha amháin: 10 CNY ar suas le 30 lá breise, uasmhéid iomlán 120 lá faoin mbeartas sin. Ní 120 lá saor in aisce ná athnuachan gan teorainn é. Deimhnigh an rogha reatha agus spriocdháta d’earra sa chuntas oifigiúil sula mbraitheann tú air, mar is féidir earraí thar téarma a dhiúscairt.",
+      "sources": [
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Ar cheart dom fanacht le meabhrúchán stórála roimh sheoladh a eagrú?",
+      "a": "Níor cheart. Lean spriocdháta gach ordaithe tú féin agus coinnigh sonraí teagmhála cothrom le dáta. Luaitear meabhrúcháin sna fógraí oifigiúla, ach tugtar rabhadh freisin go bhféadfaí earraí thar téarma a mheas tréigthe. D’fhéadfadh rialacha eile a bheith ag pacáistí neamh-mheaitseáilte nó neamhghnácha. Má tá stádas stórála doiléir, déan teagmháil go pras; ná glac leis go mbaineann an gnáth-thréimhse gan choinníoll.",
+      "sources": [
+        {
+          "label": "Beartas stórála OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "Comhaontú cláraithe úsáideora OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Cathain ba cheart aischur nó malartú a iarraidh tar éis teacht chuig an stóras?",
+      "a": "Míníonn fógra na n-aischur fuinneog choinníollach cúig lá, 120 uair, tar éis “Stocked in”, de réir a rialacha ama. Athbhreithnigh grianghraif agus an scáileán iar-dhíolacháin go pras. Braitheann incháilitheacht fós ar thacaíocht an díoltóra agus riocht an earra; ní gealltanas glacadh le gach iarratas an fhuinneog. Seiceáil spriocdháta beo d’ordaithe féin.",
+      "sources": [
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "An féidir gach táirge a chur ar ais nó a mhalartú?",
+      "a": "Ní féidir. Liostaíonn an beartas coinníollacha agus eisceachtaí, lena n-áirítear rialacha an díoltóra, riocht athdhíola, earraí saincheaptha nó úsáidte, agus catagóirí séalaithe nó pearsanta áirithe. D’fhéadfadh baint lipéad, gabhálas nó pacáistithe riachtanaigh cur isteach ar incháilitheacht. Is féidir le OOPBuy cumarsáid leis an díoltóir, ach teastaíonn a chomhaontú fós. Seiceáil coinníollacha roimh ordú nó athrú pacáistithe.",
+      "sources": [
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "An gclúdaíonn an chéad aischur nó malartú saor in aisce gach costas seolta?",
+      "a": "Ní chlúdaíonn. Míníonn an fógra tarscaoileadh táille seirbhíse don chéad oibríocht aischuir nó malartaithe i mí féilire. Ní hionann sin agus postas aischuir saor in aisce nó aisíoc gach táille intíre. Braitheann costais ar an gcúis, cinneadh an díoltóra agus cúinsí an ordaithe. Léigh an luachan iar-dhíolacháin iarbhír roimh dheimhniú seachas glacadh leis go bhfuil an próiseas ar fad saor.",
+      "sources": [
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "An féidir ordú a chealú sula seolann an díoltóir é?",
+      "a": "Deir cabhair na n-aischur nach mbaineann táille na seirbhíse aischuir nuair nach bhfuil an táirge seolta fós. Ní ráthaíocht neamhchoinníollach cealaithe ag gach céim an ráiteas sin. Seiceáil an stádas reatha agus cuir an t-iarratas cealaithe nó iar-dhíolacháin atá ar fáil isteach go pras. Má sheol an díoltóir cheana é, d’fhéadfadh láimhseáil agus costais seolta eile a bheith i gceist.",
+      "sources": [
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Stádais ordaithe agus beartáin OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Cá fhad a thógann aisíocaíocht, agus cá seiceálaim í?",
+      "a": "Is céimeanna éagsúla iad ceadú aisíocaíochta, creidiúint d’iarmhéid OOPBuy agus socraíocht ar chárta bainc. Deir an fógra go mbíonn tionchar ag próiseáil bainc agus tugann sé tréimhse mheasta, ní dáta ráthaithe. Seiceáil taifead agus ceann scríbe na haisíocaíochta i do chuntas. Má tá an dul chun cinn doiléir, tabhair tagairtí an ordaithe agus na haisíocaíochta don tacaíocht seachas íoc arís.",
+      "sources": [
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Stádais ordaithe agus beartáin OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "An féidir earra a chur ar ais tar éis seolta idirnáisiúnta?",
+      "a": "Déanann an fógra cur síos ar aischur idirnáisiúnta mar phróiseas coinníollach a d’fhéadfadh a bheith ar chostas an chustaiméara, lena n-áirítear iompar ar ais agus táillí breise amhail dleachtanna. Tá an riocht bunaidh agus an pacáistiú riachtanach tábhachtach fós. Faigh treoracha reatha ó iar-dhíolachán OOPBuy roimh aon rud a sheoladh. Ní hionann aischur thar lear agus cealú simplí stórais nó aisíocaíocht iomlán ráthaithe.",
+      "sources": [
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Conas a mheasaim seoladh idirnáisiúnta OOPBuy?",
+      "a": "Úsáid an meastóir oifigiúil leis an gceann scríbe agus sonraí an bheartáin a iarrtar, ansin seiceáil bealaí agus srianta. Míníonn an treoir do thosaitheoirí go mbraitheann táillí deiridh ar thoisí agus meáchan tomhaiste agus ar an socrú seolta. Cabhraíonn réamh-mheastachán le buiséad, ach ní hionann é agus luachan deiridh ná clúdach uathoibríoch ar gach táille sa cheann scríbe.",
+      "sources": [
+        {
+          "label": "Meastóir seolta OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "An bhfuil bealach amháin i gcónaí is saoire nó is tapúla?",
+      "a": "Ní shainaithníonn an treoir oifigiúil bealach uilíoch. Braitheann seirbhísí ar an gceann scríbe, ábhar, meáchan, toisí agus coinníollacha reatha. Cuir roghanna do bheartáin i gcomparáid, lena n-áirítear srianta agus téarmaí cúitimh, roimh roghnú. Ní ráthaíochtaí iad amanna foilsithe: féadfaidh oibríochtaí iompróra, aimsir agus custaim tionchar a imirt ar an turas tar éis imeachta ón stóras.",
+      "sources": [
+        {
+          "label": "Fógra seachadta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Árachas agus cúiteamh OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Cad a dhéanann Parcel Rehearsal?",
+      "a": "Míníonn an fógra seirbhís phacála stórais a chabhraíonn le tomhais an bheartáin a fháil roimh íocaíocht seolta idirnáisiúnta. Liostaíonn sé táille 20 CNY agus míníonn sé go mbraitheann an praghas ar an mbealach agus an chumraíocht phacála chéanna a choinneáil. Féadfaidh athruithe an táille dheiridh a athrú. Athbhreithnigh coinníollacha reatha na seirbhíse agus cealaithe roimh iarratas.",
+      "sources": [
+        {
+          "label": "Treoracha cleachta pacála OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ]
+    },
+    {
+      "q": "Ar cheart boscaí bróg a bhaint nó éadaí a fholúsphacáil?",
+      "a": "Míníonn an treoir phacála iad mar roghanna féideartha, cuid acu teoranta do bhealaí ar leith. Roghnaigh de réir riachtanas cosanta an earra, do rogha féin agus srianta aischuir. Ní oireann baint pacáistithe nó comhbhrú do gach ceannach, agus ní ráthaíonn beartán níos lú táille dheiridh níos ísle. Seiceáil roghanna pacála agus ríomh an bhealaigh roimh dheimhniú.",
+      "sources": [
+        {
+          "label": "Treoir phacáistithe OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "An féidir gach táirge stóráilte a chur le chéile in aon bheartán?",
+      "a": "Tá comhdhlúthú ar fáil, ach ní gá go mbeadh gach teaglaim incháilithe nó eacnamaíoch. D’fhéadfadh tréithe earraí, srianta bealaigh agus lipéid phacála ar leith beartáin éagsúla a éileamh. Tugann an fógra seolta ar leith riail d’earraí rómhóra, agus pléann an treoir phacála srianta ceallraí. Lean treoracha d’earraí stóráilte agus cuir roghanna incháilithe i gcomparáid roimh chur isteach.",
+      "sources": [
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Treoir phacáistithe OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Treoir seolta ar leith OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        }
+      ]
+    },
+    {
+      "q": "Cén fáth a bhfuil “Shipped” ar m’ordú gan uimhir rianaithe idirnáisiúnta?",
+      "a": "Úsáideann an treoir stádais téarmaí seolta in dhá chomhthéacs. Ar ordú ceannaigh, is féidir le “Shipped” an díoltóir ag seoladh chuig stóras OOPBuy a chiallaíonn. Ar bheartán idirnáisiúnta, tagraíonn sé don chéim iompróra níos déanaí. Seiceáil an ordú earra nó beartán atá á fheiceáil agat, ansin oscail na sonraí lóistíochta cuí; ná glac leis go roinneann an dá chéim uimhir amháin.",
+      "sources": [
+        {
+          "label": "Stádais ordaithe agus beartáin OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Cad a dhéanfaidh mé má tá an beartán seachadta damáistithe nó earraí ar iarraidh?",
+      "a": "Coinnigh an pacáistiú seachtrach, lipéad seolta agus fianaise na n-earraí agus déan teagmháil le hiar-dhíolachán OOPBuy go pras. Iarrann an treoir oifigiúil grianghraif shoiléire agus sonraí amhail uimhreacha ordaithe; tá spriocdhátaí gearra tuairiscithe agus fianaise inti freisin. Ná caith pacáistiú amach ná fan le spriocdháta ginearálta ó áit eile. Lean treoracha do bheartáin agus d’éilimh féin.",
+      "sources": [
+        {
+          "label": "Fadhbanna tar éis seachadta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ]
+    },
+    {
+      "q": "An gclúdaíonn árachas gach fadhb beartáin go huathoibríoch?",
+      "a": "Ní chlúdaíonn. Deir an fógra cúitimh go mbraitheann láimhseáil ar théarmaí na líne seolta agus ar fhianaise, agus liostaíonn sé eisceachtaí. Ná glac leis go dtabharfaidh moill, damáiste, gníomh custaim nó caillteanas íocaíocht iomlán i gcónaí. Léigh clúdach, teorainneacha agus próiseas éilimh an bhealaigh a roghnaíonn tú agus coinnigh na taifid ordaithe agus beartáin a theastaíonn má tharlaíonn fadhb.",
+      "sources": [
+        {
+          "label": "Árachas agus cúiteamh OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "An féidir aon táirge i scarbhileog a ordú?",
+      "a": "Ní féidir. Ní chruthaíonn liostú ar líne dlíthiúlacht, barántúlacht ná incháilitheacht do bhealach seolta. Toirmisceann treoir OOPBuy earraí áirithe agus sainaithníonn sí catagóirí srianta a chaithfear a sheiceáil leis an tacaíocht. Toirmisceann a théarmaí earraí góchumtha nó sáraitheacha freisin. Deimhnigh faisnéis an díoltóra, beartas an ardáin agus riachtanais an cheann scríbe roimh cheannach, go háirithe do cheallraí, leachtanna nó ábhar srianta eile.",
+      "sources": [
+        {
+          "label": "Srianta ceannaigh OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "Comhaontú cláraithe úsáideora OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
     }
   ],
   "articles": [
     {
       "slug": "oopbuy-spreadsheet-guide",
-      "tag": "AG TOSÚ",
-      "title": "Do chéad fhionnachtain OOPBuy, céim ar chéim",
-      "description": "Déan rogha mhachnamhach de liostú a bhfuil cuma mhaith air.",
+      "tag": "Ag tosú",
+      "title": "Treoir Scarbhileoige OOPBuy: Gearrliosta Is Féidir a Sheiceáil",
+      "description": "Foghlaim conas scarbhileog OOPBuy a úsáid, naisc agus leaganacha a sheiceáil, buiséad réadúil a mheas agus fionnachtain a iompú ina hordú eolasach.",
+      "primaryKeyword": "scarbhileog OOPBuy",
+      "secondaryKeywords": [
+        "treoir scarbhileoige OOPBuy",
+        "liosta táirgí OOPBuy",
+        "fionnachtana OOPBuy",
+        "treoir siopadóireachta OOPBuy"
+      ],
+      "takeaways": [
+        "Is pointe tosaigh gach ró catalóige agus teastaíonn seiceáil ar an táirge beo.",
+        "Taifead an nasc foinseach, leagan, tomhais agus costas measta seachadta beacht.",
+        "Scar íomhánna catalóige ó ghrianghraif QC stórais d’ordaithe féin."
+      ],
       "sections": [
         {
-          "title": "Tosaigh leis an rud atá uait",
-          "text": "Roghnaigh catagóir nó cuardaigh samhail. Déan comparáid idir ainm an táirge, na pictiúir atá ar fáil agus an praghas measta. Ní insíonn praghas íseal amháin duit an oireann liostú do do riachtanais."
+          "title": "Cad chuige a bhfuil scarbhileog OOPBuy úsáideach",
+          "text": "Is uirlis aimsithe í scarbhileog OOPBuy: áit chun naisc táirgí a bhailiú, smaointe a chur i gcomparáid agus gan cuardach úr a dhéanamh gach uair. Is é a fíorluach gearrliosta níos éasca a sheiceáil. Ní insíonn líon mór rónna duit an bhfuil earraí ar fáil fós, an n-oirfidh méid nó cad a chosnóidh an beartán críochnaithe.\n\nIs eolaire neamhspleách é OOPBuy Tab, ní seirbhís oifigiúil OOPBuy. Tagann sonraí a chatalóige ó CNBuyCha. Tá an difríocht tábhachtach mar d’fhéadfadh iontráil eolaire agus leathanach ceannaigh beo athrú ag amanna éagsúla. Glac le praghas USD mar mheastachán agus le grianghraif mar thagairtí catalóige mura ndeimhnítear a mbunús go soiléir.\n\nÚsáid scarbhileog do cheist shonrach, amhail cé acu de thrí sheaicéad a oireann do do thomhais agus do bhuiséad. Nuair a fheiceann tú na roghanna le chéile, is fusa faisnéis ar iarraidh a aithint sula n-éiríonn sí ina toimhde chostasach."
         },
         {
-          "title": "Oscail an liostú bunaidh",
-          "text": "Seiceáil an díoltóir agus na roghanna atá ar fáil. Déan nóta den mhéid, den dath agus den chainníocht atá uait, ansin oscail an táirge in OOPBuy. Deimhnigh na sonraí sin arís roimh íocaíocht."
+          "title": "Socraigh do riachtanais roimh bhrabhsáil",
+          "text": "Scríobh síos cad a dhéanfadh earra úsáideach duit. D’éadaí, d’fhéadfadh tomhais, rogha fabraice, séasúr agus treoracha cúraim inghlactha a bheith i gceist. Do mhála, toisí ríomhaire glúine, cineál dúnta agus uasmheáchan folamh. Laghdaíonn riachtanais an seans go dtarraingeoidh grianghraf tarraingteach d’aird ón gceannach féin.\n\nSocraigh dhá bhuiséad: sprioc don earra agus uasteorainn chun é a fháil seachadta. Is dhá uimhir iad. Fágann praghas íseal ceisteanna oscailte faoi sheachadadh intíre, seoladh idirnáisiúnta, comhshó íocaíochta agus táillí féideartha sa cheann scríbe.\n\nRoghnaigh líon beag iarrthóirí seachas mórán rónna a líonadh láithreach. Is minic a fhoghlaimítear níos mó ó thrí earra inchomparáide ná ó thríocha fionnachtain neamhghaolmhar. Cuir cúis roghnaithe agus ceist gan réiteach le gach ceann. Mura féidir leat a rá cén fáth a bhfuil earra ar an ngearrliosta, b’fhéidir nach dteastaíonn d’aird uaidh fós."
         },
         {
-          "title": "Coinnigh an chéad chéim eile i gcuimhne",
-          "text": "Fág spás i do bhuiséad le haghaidh seachadta agus muirear eile. Déan athbhreithniú ar ghrianghraif d’ordaithe féin agus ar an luachan loingseoireachta atá ar fáil sula gcuireann tú pacáiste isteach."
+          "title": "Cruthaigh colúin a thacaíonn le cinneadh",
+          "text": "Teastaíonn ainm an táirge, margadh foinseach, URL bunaidh, leagan beacht, praghas agus airgeadra, dáta seiceála agus an chéad ghníomh eile ó ró úsáideach. Cuir tomhais nó sonraíochtaí cuí leis. Coinnigh do nótaí ar leith ó chur síos an díoltóra chun fianaise agus léirmhíniú a aithint nuair a fhilleann tú.\n\nD’fhéadfadh leithead cliabhraigh agus guaillí, fad droma, méid roghnaithe agus nóta faoi thomhais éadaigh nó coirp a bheith i ró seaicéid. D’fhéadfadh cairt mhéide agus fad inmheánach atá ar fáil a bheith i ró bróige. Ná cuir lipéad méide gan cháilíocht i gcolún darb ainm oiriúnacht deimhnithe.\n\nÚsáid stádais shimplí amhail foinse le seiceáil, tomhais ag teastáil, réidh le breithniú, ordaithe agus athbhreithnithe. Ba cheart go léireodh stádas obair atá déanta agat i ndáiríre. Coinnigh réimse ar leith don chúis ar diúltaíodh d’earra; seachnaíonn sé sin an taighde céanna a dhéanamh arís an tseachtain seo chugainn."
+        },
+        {
+          "title": "Deimhnigh an táirge beo taobh thiar den ró",
+          "text": "Oscail an nasc bunaidh agus leathanach ceannaigh OOPBuy sula mbraitheann tú ar liostú. Cuir aitheantas an táirge, pictiúir, roghanna agus praghas roghnaithe i gcomparáid. Is féidir le nasc a lódálann dul chuig liostú athraithe, leagan eile nó leathanach nach mbaineann a phraghas is ísle leis an earra sa chatalóg.\n\nCoinnigh aitheantóirí ar leith. Sa sampla againn, is tagairt chatalóige CNBuyCha é 3470, agus is aitheantóir foinseach sa bhealach Weidian é 7876894732. Ní aithneoidh uimhir na catalóige sa URL ceannaigh an táirge céanna. Coinnigh an seoladh foinseach iomlán nuair is féidir seachas é a atógáil ó lipéad gearr.\n\nMá tá leathanach as fáil, marcáil an ró neamhfhíoraithe. Cuardaigh an t-earra beacht arís agus cuir aon ionadaí i gcomparáid go cúramach. Ná hathraigh an nasc go ciúin go táirge cosúil leis: ní chruthaíonn cosúlacht an díoltóir, sonraíocht ná coinníollacha ceannaigh céanna."
+        },
+        {
+          "title": "Cuir an leagan a cheannófá i gcomparáid",
+          "text": "Ní bhíonn dhá ró inchomparáide ach nuair a léiríonn siad na roghanna a cheannófá. Seiceáil dath, méid, cainníocht, ábhar agus gabhálais. D’fhéadfadh raon praghsanna a bheith ann mar gheall ar leaganacha éagsúla. Má thaifeadann tú an praghas is ísle agus rogha eile á pleanáil agat, bíonn an chomparáid míthreorach fiú nuair atá an dá uimhir fíor.\n\nSamhlaigh dhá mhála taistil. D’fhéadfadh praghas amháin a bheith don mhéid is lú agus an ceann eile don mhála mór atá uait. Cuir na toisí riachtanacha le gach rogha agus déan comparáid eatarthu sin. Má tá toisí ar iarraidh, marcáil an bhearna seachas iad a mheas ó ghrianghraf samhla.\n\nDo phacáistí ilphíosa, taifead líon na bpíosaí agus ríomh praghas in aghaidh an phíosa ach nuair atá siad coibhéiseach go ciallmhar. Deimhnigh na baill éadaigh i dtacar. Déanann na seiceálacha beaga seo an scarbhileog úsáideach do cheannach seachas do phictiúir dheasa a eagrú amháin."
+        },
+        {
+          "title": "Cuir bileog chostais réadúil leis",
+          "text": "Scar méideanna deimhnithe ó mheastacháin. Is féidir réimsí a bheith ann don táirge roghnaithe, seachadadh intíre nuair a thaispeántar é, meastachán idirnáisiúnta, seirbhísí roghnacha agus cúlchiste do chostais gan réiteach. Lipéadaigh airgeadra gach ionchuir. Ní ceart taispeáint mheasta USD a mheascadh le méid íocaíochta faoi ghlas.\n\nÚsáid meastóir seolta oifigiúil OOPBuy chun an ceann scríbe agus toimhdí beartáin atá ar fáil a fhiosrú. Taifead an meáchan agus na toisí a d’úsáid tú; tá sé deacair meastachán a thuiscint gan iad. Nuair nach bhfuil siad ar eolas, cuir cás níos lú agus níos mó inchreidte i gcomparáid seachas iomlán beacht amháin a thabhairt.\n\nSocraigh riail chinnidh roimh ordú. Mar shampla, ní leanfaidh tú ar aghaidh ach má fhanann an cás costasach laistigh den bhuiséad seachadta. Is modh pearsanta buiséadaithe é, ní luachan OOPBuy. Nuashonraigh an bhileog nuair a thagann faisnéis stórais nó luachan beo in áit toimhde."
+        },
+        {
+          "title": "Scar íomhánna catalóige agus QC an ordaithe",
+          "text": "Cabhraíonn grianghraf eolaire le stíl, dath nó gné dearaidh a aithint. Ní dheimhníonn sé riocht an aonaid a cheannófar duit. Níor fíoraíodh pictiúir iompórtáilte OOPBuy Tab mar QC stórais d’ordaithe féin, mar sin ná marcáil cáilíocht ceadaithe de bharr íomhánna glana amháin.\n\nMá ordaíonn tú an t-earra, cruthaigh áit fhianaise ar leith do ghrianghraif agus teachtaireachtaí an ordaithe sin. Taifead tagairt an ordaithe, leagan agus ceisteanna a fhágann na grianghraif oscailte. Scarann sé sin íomhá fhoinseach snasta ón méid a fuarthas i ndáiríre.\n\nMíníonn faisnéis iniúchta OOPBuy seiceálacha cainníochta agus sonraíochtaí ordaithe, ach leagann sí teorainneacha amach freisin. Is cúis í ceisteanna dírithe a chur, ní glacadh leis gur scrúdaíodh gach imní cáilíochta. Do thoise nó sonra ríthábhachtach, aithin an radharc nó tomhas beacht atá uait roimh an gcéad chinneadh eile."
+        },
+        {
+          "title": "Déan céad ordú inbhainistithe den ghearrliosta",
+          "text": "Athbhreithnigh ceisteanna gan réiteach ar an ngearrliosta roimh íoc. Ba cheart foinse aitheanta, leagan roghnaithe d’aon ghnó, dóthain faisnéise méide agus buiséad seachadta compordach a bheith ag earra. Má deir roinnt réimsí anaithnid fós, is tuilleadh taighde an chéad chéim fiú nuair atá an praghas an-tarraingteach.\n\nFéadfaidh céad ordú níos lú do thaifid a dhéanamh níos éasca. Foghlaimíonn tú conas a oibríonn leathanaigh ordaithe, faisnéis stórais agus roghanna beartáin gan mórán eisceachtaí a bhainistiú le chéile. Is moladh eagrúcháin é, ní gealltanas go mbeidh costas in aghaidh an earra níos ísle i mbeartán beag.\n\nÚsáid leathanach logála isteach oifigiúil OOPBuy nuair atá tú réidh le do chuntas. Coinnigh cinntí íocaíochta agus faisnéis chuntais ar an tseirbhís oifigiúil. Tar éis ordú, cóipeáil a thagairt chuig do bhileog phríobháideach agus nótaigh an dáta. Ná cuir sonraí pearsanta ordaithe i scarbhileog phoiblí."
+        },
+        {
+          "title": "Coinnigh an bhileog suas tar éis an chéad cheannacháin",
+          "text": "Éiríonn scarbhileog mhaith níos úsáideach tar éis earra a fháil. Cuir na tomhais iarbhír, tuairimí oiriúnachta, an méid deiridh a íocadh agus difríochtaí ón liostú leis. Mínigh na cúinsí: mothaíonn seaicéad thar gheansaí trom difriúil ón seaicéad céanna thar T-léine.\n\nLipéadaigh imprisean suibiachtúla. Tá compordach ar mo chomaitéireacht laethúil níos úsáideach ná cáilíocht fhoirfe, mar míníonn sé an úsáid. Taifead teorainn, amhail póca róchúng don fhón. Cruthaíonn nótaí tagairt do roghanna amach anseo gan a mhaíomh go mbeidh an taithí chéanna ag ceannaitheoir eile.\n\nAr deireadh, dátaigh an t-athbhreithniú agus cartlannaigh naisc mharbha seachas iad a fhágáil mar fhaisnéis reatha. Athsheiceáil praghsanna agus infhaighteacht roimh gach ceannach. Ní gealltanas statach scarbhileog iontaofa OOPBuy; is taifead oibre í den mhéid a fíoraíodh, den mhéid éiginnte agus den mhéid a foghlaimíodh."
         }
+      ],
+      "sources": [
+        {
+          "label": "Suíomh oifigiúil OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "Meastóir seolta OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Faisnéis iniúchta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Logáil isteach OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-product-links",
+        "oopbuy-price-check",
+        "oopbuy-qc-photos"
       ]
     },
     {
       "slug": "oopbuy-qc-photos",
-      "tag": "SEICEÁIL GRIANGHRAF",
-      "title": "Cad ba cheart a lorg i ngrianghraif táirgí agus QC",
-      "description": "Déan idirdhealú idir taighde catalóige agus seiceáil d’ordaithe féin.",
+      "tag": "Seiceálacha cáilíochta",
+      "title": "Grianghraif QC OOPBuy: Cad le Seiceáil Roimh Sheoladh",
+      "description": "Treoir phraiticiúil chun QC OOPBuy a léamh, an leagan ceart a sheiceáil, tomhais úsáideacha a iarraidh agus teorainneacha íomhánna stórais a thuiscint.",
+      "primaryKeyword": "grianghraif QC OOPBuy",
+      "secondaryKeywords": [
+        "seiceáil cáilíochta OOPBuy",
+        "grianghraif stórais OOPBuy",
+        "treoir QC OOPBuy",
+        "iniúchadh OOPBuy"
+      ],
+      "takeaways": [
+        "Seiceáil grianghraif stórais d’ordaithe féin agus meaitseáil iad leis an leagan roghnaithe.",
+        "Úsáid seicheamh iniúchta in-athdhéanta agus iarr radharc beacht nuair a bhíonn fianaise thábhachtach ar iarraidh.",
+        "Ní chruthaíonn grianghraif barántúlacht, marthanacht fhadtéarmach, dath beacht ná gach feidhm."
+      ],
       "sections": [
         {
-          "title": "Bíodh a fhios agat cé na grianghraif atá á bhféachaint agat",
-          "text": "Taispeánann pictiúir chatalóige liostú; ní cruthúnas iad ar an earra a gheobhaidh tú. Soláthraíonn CNBuyCha na grianghraif ar OOPBuy Tab agus níor fíoraíodh gur grianghraif QC stórais iad."
+          "title": "Úsáid QC chun ceisteanna sonracha a fhreagairt",
+          "text": "Is úsáideach grianghraif QC OOPBuy nuair atá a fhios agat cad le deimhniú. Tosaigh le seicliosta: ar tháinig an t-earra ceart, an ionann an leagan, an bhfuil damáiste infheicthe agus an dtacaíonn tomhais le do chinneadh oiriúnachta? Tugann sé próiseas praiticiúil seachas cuardach gan deireadh ar fhoirfeacht.\n\nTaifeadann grianghraf radharc ar leith faoi sholas ar leith. Is féidir cnaipe ar iarraidh nó lipéad datha eile a fheiceáil, ach b’fhéidir nach bhfeictear fadhb i bpóca nó faoi chuid inbhainte. Glac le gach íomhá mar fhianaise le réimse radhairc teoranta.\n\nIs é an sprioc ábhair imní a d’athródh do chinneadh a réiteach roimh sheoladh idirnáisiúnta. D’fhéadfadh fad muinchille nó marc ó iarmhar pacáistithe a bheith i gceist. Ní chiallaíonn sé go ráthaíonn grianghraif dheasa feidhmíocht an earra tar éis míonna úsáide."
         },
         {
-          "title": "Déan comparáid idir sonraí ar leith",
-          "text": "I gcás d’ordaithe féin, déan comparáid idir an tsamhail, an dath, an lipéad méide infheicthe agus an chainníocht agus an méid a roghnaigh tú. Cuardaigh damáiste follasach agus fiafraigh faoi shonraí doiléire roimh sheoladh."
+          "title": "Scar trí chineál grianghraif táirge",
+          "text": "Míníonn íomhánna díoltóra tairiscint an liostaithe. Cabhraíonn íomhánna eolaire leis a aimsiú agus a aithint. Déanann íomhánna stórais doiciméadú ar earraí ordaithe ar leith. Tá na róil éagsúil fiú nuair atá pictiúir in aice leis an ainm céanna nó cuma chomhchosúil orthu.\n\nIs eolaire neamhspleách é OOPBuy Tab le sonraí CNBuyCha. Níor fíoraíodh a phictiúir iompórtáilte mar QC d’ordaithe féin. Is tagairt chomparáide iad, ach ní insíonn siad duit an bhfuil fuáil, lipéad, toisí nó riocht céanna ar d’aonad ceannaithe.\n\nAg sábháil íomhánna, úsáid fillteáin nó lipéid ar leith amhail tagairt fhoinseach agus m’ordú. Cuir tagairt agus dáta i nótaí príobháideacha. Seachnaíonn an scaradh simplí seo gar-amharc deas an díoltóra a úsáid de thaisme mar fhianaise don earra a fuarthas sa stóras."
         },
         {
-          "title": "Tuig na teorainneacha",
-          "text": "Ní féidir le grianghraif amháin barántúlacht, marthanacht ná lánfheidhmiú a dheimhniú. Má theastaíonn tomhas nó iniúchadh breise uait, fiafraigh de OOPBuy cad atá ar fáil agus cé mhéad a chosnaíonn sé."
+          "title": "Deimhnigh gurb é an t-earra ceart atá á scrúdú",
+          "text": "Roimh shonraí, meaitseáil an taifead stórais le d’ordú. Cuir ainm, nasc foinseach, dath, méid agus cainníocht i gcomparáid. Má d’ordaigh tú dhá earra cosúil, ná glac leis go bhfuil a ngrianghraif san ord céanna leis an ngearrliosta bunaidh.\n\nLorg sonraí aitheantais sna híomhánna: lipéad méide, leagan amach painéal, cineál dúnta nó lipéad pacáistithe. Cuir iad i gcomparáid leis an rogha ordaithe, ní leis an gcéad íomhá ghinearálta. Úsáideann díoltóirí príomhghrianghraf amháin do roinnt roghanna uaireanta.\n\nMá tá an taifead agus na híomhánna neamhréireach, iarr soiléiriú leis an tagairt ordaithe. Luaigh an difríocht go simplí: dúghorm ordaithe, lipéad dubh le feiceáil, nó dhá phíosa ordaithe ach ceann amháin infheicthe. Ná cinn go bhfuil an t-earra mícheart díreach mar nach bhfeiceann tú gach cuid; soiléirigh raon an phictiúir ar dtús."
+        },
+        {
+          "title": "Seiceáil éadaí i seicheamh comhsheasmhach",
+          "text": "Féach ar an mball éadaigh iomlán ar dtús. Seiceáil cruth, príomhphainéil, muineál, muinchillí agus dúnta in aghaidh an earra roghnaithe. Ansin scrúdaigh tosaigh agus cúl ar leith. Cabhraíonn radharc iomlán le gné ar iarraidh a aithint sula ndírítear ar mhiondifríochtaí fuála.\n\nBog chuig sonraí tógála: ailíniú seams, imill, cufaí, cnaipí, zipí, priontaí agus bróidnéireacht nuair is cuí. Lorg stróiceadh, codanna scaoilte, smál nó codanna neamhchothroma. Cuimhnigh gur féidir fillteacha agus leagan ar dhromchla línte díreacha a dhéanamh míchothrom; b’fhéidir go réiteodh uillinn níos soiléire an cheist.\n\nCríochnaigh le lipéid agus tomhais atá tábhachtach duit. Deimhníonn lipéad an méid clóite; cuidíonn tomhas le hoiriúnacht. Is seiceálacha ar leith iad. Má tá fad muinchille éiginnte, iarr é sin go beacht seachas fíor don mhéid a fhiafraí, frása atá ag brath ar ionchais phearsanta."
+        },
+        {
+          "title": "Seiceáil bróga agus málaí de réir feidhme",
+          "text": "Do bhróga, cuir an dá aonad i gcomparáid le chéile agus ina n-aonar. Scrúdaigh méideanna, cruth, riocht infheicthe na n-uachtar, dúnta agus imill boinn. An gclúdaíonn na radhairc na réimsí tábhachtacha don úsáid? B’fhéidir nach léireoidh grianghraf ón mbarr scoilt ar thaobh an bhoinn.\n\nDo mhálaí, tosaigh le toisí agus leagan amach. Aithin an príomhurrann, strapaí, lámha agus ceanglóirí atá súil agat leo. Seiceáil go léirítear an méid agus an chumraíocht roghnaithe. Má theastaíonn ríomhaire glúine ar leith istigh, ní leor mála cosúil ar shamhal mar fhianaise spáis inmheánaigh.\n\nNá hathraigh seiceálacha amhairc ina maímh faoi acmhainn ualaigh, uiscedhíonacht, compord nó feidhmíocht speisialta. Teastaíonn fianaise eile uathu. Má tá gné riachtanach nach féidir a dheimhniú trí liostú nó seiceáil chuí, fág gan réiteach í agus tú ag cinneadh an oireann an ceannach fós."
+        },
+        {
+          "title": "Iarr tomhais ar féidir iad a léirmhíniú",
+          "text": "Taispeánann grianghraf tomhais úsáideach an t-earra, an uirlis agus an dá cheannphointe go soiléir. Iarr toise ainmnithe le modh sainithe. Tá leithead cliabhraigh léine cothrom ó seam ascaill go seam eile níos cruinne ná méid cliabhraigh. Do bhrístí, sonraigh banda coime scaoilte nó sínte.\n\nCuir comhchosúil le comhchosúil. Ní hionann leithead éadaigh cothrom agus imlíne coirp; ní hionann fad boinn sheachtraigh agus fad inmheánach bróige. Ní chuidíonn earra atá agat a thomhas ach nuair a leanann tomhas an stórais an modh céanna.\n\nBí cúramach le difríochtaí beaga ó íomhá íseal-réitigh nó chlaonta. Athraíonn peirspictíocht, fillteacha agus suíomh téipe an léirmhíniú. Má chinnfeadh difríocht bheag an earra a choinneáil, iarr tomhas níos soiléire seachas súmáil go dtí go bhfuil cuma níos cruinne ar an íomhá ná mar atá sí."
+        },
+        {
+          "title": "Tuig teorainneacha iniúchta stórais",
+          "text": "Míníonn faisnéis oifigiúil OOPBuy seiceáil cainníochtaí agus sonraíochtaí ordaithe. Eisiann sí roinnt saincheisteanna, lena n-áirítear éifeachtaí áirithe datha, méide agus úsáide, measúnuithe speisialaithe agus seiceálacha inmheánacha earraí séalaithe áirithe. Léigh an fógra reatha don raon beacht a bhaineann le d’earra.\n\nIs é an ceacht praiticiúil gan iniúchadh a mheas mar dheimhniú iomlán táirge. Ní fhíoraíonn grianghraf lipéid branda. Ní chruthaíonn cás slán luchtaire sábháilteacht leictreach. Ní thaispeánann pacáiste gan bhriseadh gach cuid istigh. Má bhraitheann ceannach ar airí speisialta, faigh doiciméid chuí seachas freagra ó ghnáthghrianghraf stórais.\n\nCuireann socruithe scáileáin agus soilsiú teorainn le dathanna freisin. Aithin difríochtaí móra agus fiafraigh fúthu, ach ná glac leis go socróidh dhá íomhá faoi choinníollacha éagsúla difríocht mhín scátha. Socraigh roimh ré cé mhéad éiginnteachta atá inghlactha duit."
+        },
+        {
+          "title": "Scríobh iarratas ar féidir gníomhú air",
+          "text": "Ceangail gach ceist le saincheist infheicthe. Ainmníonn iarratas úsáideach an t-ordú, grianghraf agus sonra beacht. Mar shampla: taispeáin an zip tosaigh dúnta go hiomlán agus an dá thaobh den imeall íochtair sa fhráma. Is soiléire é ná seiceáil an cháilíocht arís.\n\nLe tomhas, tabhair ceannphointí agus coinníollacha, amhail cothrom gan síneadh. Deir OOPBuy go bhfuil QC caighdeánach saor faoi threoirlínte iniúchta agus tairgeann sé iarratais sonra nó tomhais saincheaptha. Ní shonraíonn fógra na seirbhísí praghas QC saincheaptha; seiceáil an táille reatha roimh obair bhreise.\n\nNá cuir liosta fada ábhar neamhghaolmhar i dteachtaireacht doiléir amháin. Tabhair tús áite do shonraí a d’athródh do chinneadh agus seiceáil an freagra ina gcoinne. Sábháil an freagra leis an íomhá chun deimhniú díreach a scaradh ó do thátal féin."
+        },
+        {
+          "title": "Déan cinneadh doiciméadaithe roimh imeacht",
+          "text": "Tar éis fianaise, roghnaigh gníomh soiléir: glac leis an bhfaisnéis, iarr soiléiriú sonrach nó scrúdaigh roghanna reatha aischuir. Má tá fadhb ann, léigh an fógra oifigiúil agus stádas beo an ordaithe go pras. Ná glac leis go gcoinníonn fanacht do roghanna oscailte go deo.\n\nCoinnigh taifead gonta den tsaincheist agus den fhianaise. Sábháil an leagan, íomhánna, tomhais agus an freagra beacht. Más gá tacaíocht níos déanaí, is fusa é a mhíniú ná ráiteas ginearálta go raibh cuma mhícheart ar an táirge. Cabhraíonn sé freisin gan an cheist chéanna a chur faoi dhó.\n\nRoimh bheartán a chur isteach, filleadh ar gach earra gan réiteach. Ní fhreagraíonn a sheoladh an cheist oscailte. Ba cheart go léireodh do chinneadh an t-earra a fuarthas sa stóras, teorainneacha na fianaise agus an bhfuil an éiginnteacht inghlactha don úsáid agus don bhuiséad atá agat."
         }
+      ],
+      "sources": [
+        {
+          "label": "Faisnéis iniúchta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Suíomh oifigiúil OOPBuy",
+          "url": "https://oopbuy.com/"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-returns-refunds"
       ]
     },
     {
       "slug": "oopbuy-shipping-guide",
-      "tag": "NÓTAÍ LOINGSEOIREACHTA",
-      "title": "Níl i bpraghas an earra ach an tús",
-      "description": "Bealach níos soiléire chun buiséad do phacáiste a phleanáil.",
+      "tag": "Seoladh",
+      "title": "Treoir Seolta OOPBuy: Meas Costais agus Roghnaigh Bealach Oiriúnach",
+      "description": "Tuig céimeanna seolta OOPBuy, meáchan agus toirt, comparáid bealaí, pacáil agus seiceálacha roimh lastas idirnáisiúnta a íoc.",
+      "primaryKeyword": "seoladh OOPBuy",
+      "secondaryKeywords": [
+        "costas seolta OOPBuy",
+        "áireamhán seolta OOPBuy",
+        "meastachán seolta OOPBuy",
+        "am seachadta OOPBuy"
+      ],
+      "takeaways": [
+        "Buiséadaigh seachadadh ón díoltóir chuig an stóras agus íocaíocht idirnáisiúnta ar leith.",
+        "Úsáid ceann scríbe, ábhar, meáchan agus toisí agus deimhnigh rialacha an bhealaigh.",
+        "Cuir téarmaí iomlána bealaí oiriúnacha i gcomparáid agus glac le hamanna mar mheastacháin."
+      ],
       "sections": [
         {
-          "title": "Scar na costais",
-          "text": "Coinnigh praghas an táirge, costas poist ón díoltóir chuig an stóras agus seachadadh idirnáisiúnta ar leithligh i do bhuiséad. Seiceáil seirbhísí roghnacha agus muirir a bhaineann le híocaíocht sa luachan reatha."
+          "title": "Tuig an dá chéim seolta",
+          "text": "Téann ordú OOPBuy trí dhá chéim ar leith. Ar dtús seolann an díoltóir na hearraí chuig stóras sa tSín. Níos déanaí seoltar beartán ón stóras chuig do cheann scríbe. Is minic a bhíonn nuashonrú nó iarratas íocaíochta gan choinne mar gheall ar an dá chéim seo a mheascadh.\n\nScarann míniú céadsiopadóireachta OOPBuy an chéad íocaíocht earraí agus lastais intíre ón íocaíocht idirnáisiúnta níos déanaí. Mar sin ní costas iomlán seachadta praghas táirge in eolaire neamhspleách. Is meastacháin aimsithe iad méideanna USD OOPBuy Tab, ní luachan deiridh idirnáisiúnta.\n\nCruthaigh buiséad roimh ordú an táirge. Smaoinigh ar an méid atá compordach má bhíonn an beartán pacáilte níos mó nó níos troime ná mar a cheap tú. Má fhanann tú go dtí go bhfuil gach earra sa stóras, seans go mbeidh ort costas iomlán níos airde nó próiseas iar-dhíolacháin neamhphleanáilte a roghnú."
         },
         {
-          "title": "Úsáid fíorshonraí do phacáiste",
-          "text": "Cuir an ceann scríbe, an meáchan, na toisí agus an cineál earraí isteach sa mheastóir oifigiúil. Déan comparáid idir srianta agus rialacha billeála na mbealaí incháilithe. Ní sonrasc deiridh é meastachán."
+          "title": "Tabhair ionchuir úsáideacha don mheastóir",
+          "text": "Tosaigh le leathanach oifigiúil meastacháin OOPBuy. Iontráil do cheann scríbe agus na sonraí beartáin a iarrtar. Úsáid an meáchan agus na toisí is fearr atá ar fáil agus taifead na hionchuir. Tá luachan gan toimhdí deacair a chur i gcomparáid le toradh níos déanaí.\n\nRoimh theacht na n-earraí, d’fhéadfadh ionchuir a bheith éiginnte. Coinnigh an éiginnteacht infheicthe. D’éadaí, úsáid cás meáchain níos ísle agus níos airde mura bhfuil tomhais iontaofa agat. Do tháirge righin nó toirtiúil, fiosraigh toisí pacáilte seachas glacadh leis gurb é meáchan amháin a mhíníonn an costas.\n\nNuair a bhíonn faisnéis stórais ar fáil, nuashonraigh an meastachán. Má tá difríocht mhór ann, aithin an t-ionchur athraithe roimh roghnú. Is féidir le bosca breise, méid roghnaithe níos mó nó pacáil chosanta an beartán a athrú. Úsáid an meastóir mar chabhair phleanála agus deimhnigh an méid iníoctha sa phróiseas reatha beartáin."
         },
         {
-          "title": "Roghnaigh pacáistiú go machnamhach",
-          "text": "Bíonn tionchar ag pacáistiú ar chosaint agus ar mhéid an phacáiste. Sula ndeimhníonn tú, fiafraigh conas a athraíonn baint nó treisiú pacáistithe an luachan agus an chosaint. Coinnigh súil ar spriocdháta stórála gach earra i do chuntas."
+          "title": "Cuir fíormheáchan agus toirt i gcomparáid",
+          "text": "Insíonn fíormheáchan cé chomh trom is atá an beartán pacáilte. Is bealach é meáchan toiseach nó toirtmhéadrach a úsáideann roinnt seirbhísí chun spás a chur san áireamh. Cinneann rialacha an bhealaigh conas iad a úsáid; ná cuir roinnteoir ó threoir neamhghaolmhar i bhfeidhm.\n\nMar shampla pacála, tógann cartán 40 faoi 30 faoi 25 ceintiméadar 30,000 ceintiméadar ciúbach. Tógann cartán 35 faoi 25 faoi 20 ceintiméadar 17,500. Úsáideann an dara ceann níos lú spáis, ach ní chruthaíonn sé sin coigilteas sonrach. Tá an bealach, fíormheáchan agus incrimintí billeála tábhachtach fós.\n\nFiafraigh an mbaineann na huimhreacha leis an earra, pacáistiú an díoltóra nó an beartán idirnáisiúnta críochnaithe. Is rudaí éagsúla iad. Deir treoir OOPBuy go mbraitheann seoladh deiridh ar thoisí agus meáchan tomhaiste, rud a fhágann faisnéis na pacála críochnaithe an-tábhachtach don bhuiséad."
+        },
+        {
+          "title": "Cuir bealaí oiriúnacha i gcomparáid ar an mbonn céanna",
+          "text": "Tosaíonn comparáid úsáideach le hincháilitheacht. Seiceáil an nglacann bealach le do cheann scríbe, catagóirí, toisí agus meáchan. Níl praghas íseal fógartha ábhartha mura féidir leis na hearraí a iompar. Ní chruthaíonn infhaighteacht in ordú roimhe seo infhaighteacht do bheartán eile.\n\nDo gach rogha oiriúnach, taifead an t-iomlán, raon seachadta measta, rianú, srianta agus cosaint atá san áireamh nó roghnach. Léigh na téarmaí chun a thuiscint cad a chlúdaíonn táille chosanta bhreise. Ná glac leis go gcaitear mar an gcéanna le caillteanas, moill, damáiste agus toradh custaim.\n\nÚsáid na toimhdí céanna i ngach comparáid. Má úsáideann meastachán meáchan níos éadroime nó má fhágann sé seirbhís roghnaithe ar lár, ceartaigh sin ar dtús. Níl líne OOPBuy is fearr do chách: braitheann an rogha ar do bheartán, ceann scríbe, buiséad, am agus téarmaí reatha."
+        },
+        {
+          "title": "Seiceáil srianta earraí roimh cheannach",
+          "text": "Ní chruthaíonn táirge i scarbhileog gur féidir é a cheannach nó a sheoladh chugat. Foilsíonn OOPBuy srianta ceannaigh agus iompair, agus braitheann incháilitheacht bealaigh ar an ábhar. Seiceáil catagóirí éiginnte roimh ordú seachas glacadh leis go ráthaíonn teacht sa stóras rogha idirnáisiúnta.\n\nDéan cur síos cruinn ar an táirge agus cabhair á hiarraidh. Is ceisteanna éagsúla iad gléas le ceallra suite, buidéal le leacht agus buidéal plaisteach folamh. Cuir nasc agus sonraíochtaí ábhartha leis ionas gur féidir leis an tacaíocht an t-earra féin a mheas seachas buille faoi thuairim ó ainm gairid.\n\nMura nglacann bealach leis, fiosraigh rogha dhleathach oiriúnach nó athsmaoinigh ar an gceannach. Ná hathlipéadaigh ábhar chun an scáileán roghnaithe a shásamh. Coinnigh deimhniú le nótaí an ordaithe agus seiceáil arís nuair a athraíonn earra, ceann scríbe nó bealach."
+        },
+        {
+          "title": "Roghnaigh pacáil de réir an ábhair",
+          "text": "Ba cheart spás agus riachtanas cosanta a chothromú. Ní fhreagraíonn mála righin, gabhálas íogair agus geansaí comhbhrúite don chóireáil chéanna. D’fhéadfadh baint gach bosca nó comhbhrú gach rud damáiste inseachanta a chruthú fiú má éiríonn an beartán níos lú.\n\nMíníonn fógra pacáistithe OOPBuy cartáin, athruithe áirithe boscaí bróg, málaí folúis agus ábhair chosanta, le hinfhaighteacht ag brath ar chúinsí. Seiceáil an tairiscint iarbhír don ordú agus don bhealach. Má theastaíonn pacáistiú bunaidh do stóráil, cur i láthair nó aischur, socraigh sin roimh bhaint a iarraidh.\n\nI mbeartán measctha, mínigh cé na hearraí a chaithfidh cruth a choinneáil nó cosaint ó ábhar trom. Fiafraigh faoi sheirbhísí cleachta pacála má athródh tomhais níos cruinne do chinneadh. Léigh an táille agus coinníollacha cealaithe ar dtús. Ní bhíonn athphacáil úsáideach ach nuair a réitíonn sí éiginnteacht shonrach."
+        },
+        {
+          "title": "Buiséadaigh níos mó ná lastas idirnáisiúnta",
+          "text": "Ba cheart earraí, lastas intíre agus idirnáisiúnta, seirbhísí roghnaithe agus costais íocaíochta nó comhshó sa tseiceáil amach a bheith i do thaifead iomlán. Ag brath ar an gceann scríbe agus téarmaí, d’fhéadfadh táillí allmhairithe a bheith le fiosrú. Scar meastacháin ó mhéideanna íoctha cheana.\n\nNá glac le leasainm bealaigh ná moladh neamhfhoirmiúil mar mhíniú iomlán ar cháin. Léigh cur síos na líne agus fiafraigh cad atá san áireamh. Má tá táille doiléir, nótaigh an cheist sa bhuiséad seachas glacadh go ciúin gur nialas í.\n\nTabhair tuairiscí agus luachanna cruinne nuair a iarrtar iad. Ní leagann an treoir seo rialacha custaim síos ná ní thuarann sí toradh imréitigh. Is é an cinneadh úsáideach an bhfuil an t-iomlán, le cúlchiste ciallmhar d’éiginnteacht, inghlactha duit. Is drochrogha táirge saor má sháraíonn seachadadh an coigilteas."
+        },
+        {
+          "title": "Léigh amanna seachadta mar chéimeanna, ní gealltanais",
+          "text": "Teastaíonn pointe tosaigh ó mheastachán. Is tráthanna éagsúla iad seoladh díoltóra, fáil stórais, iniúchadh críochnaithe, cur isteach beartáin agus bailiú iompróra. Aithin céim an stádais roimh í a chur i gcomparáid le ham idirthurais idirnáisiúnta.\n\nScarann faisnéis oifigiúil OOPBuy gluaiseacht intíre agus idirnáisiúnta agus admhaíonn sí moilleanna féideartha. Úsáid meastachán beo do líne mar fhaisnéis phleanála seachas dáta ráthaithe. Má theastaíonn earra d’ócáid sheasta, cuir ceannach agus obair stórais san áireamh chomh maith le turas an iompróra.\n\nTar éis imeachta, lean rianú agus coinnigh tagairt an bheartáin. D’fhéadfadh “shipped” ar ordú ceannaigh tagairt do ghluaiseacht chuig stóras na Síne, ní don bheartán idirnáisiúnta. Má tá dul chun cinn neamhréireach, tabhair tagairt chuí agus dátaí na n-imeachtaí atá á gcur i gcomparáid don tacaíocht."
+        },
+        {
+          "title": "Déan seiceáil dheiridh roimh lastas a íoc",
+          "text": "Athbhreithnigh an beartán mar chinneadh ceannaigh iomlán. Deimhnigh ábhar, faighteoir, ceann scríbe, treoracha pacála, incháilitheacht, luachan agus seirbhísí. Bí cinnte go ndearna tú athbhreithniú ar gach earra agus nár folaíodh ceist méide nó riocht sa phróiseas ullmhúcháin.\n\nCuir an luachan deimhnithe i gcomparáid leis na cásanna roimhe. Má sháraíonn sé an buiséad, stad agus fiosraigh roghanna a d’athródh an toradh go dlisteanach. B’fhéidir gur fiú bealach oiriúnach eile, pacáil leasaithe nó teaglaim eile earraí a mheas. Ná glac le laghdú praghais gan chomparáid reatha.\n\nSábháil téarmaí na líne agus an taifead deiridh íocaíochta. Déanann siad ceisteanna rianaithe agus tacaíochta níos éasca. Ciallaíonn pleanáil mhaith tuiscint ar an mbeartán agus na coinníollacha a ghlac tú, seachas líne a roghnú toisc gur tháinig beartán difriúil duine eile go tapa."
         }
+      ],
+      "sources": [
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Meastóir seolta OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Fógra seachadta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Treoir phacáistithe OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Srianta ceannaigh OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "Treoracha cleachta pacála OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-haul-packing",
+        "oopbuy-tracking-guide"
       ]
     },
     {
       "slug": "oopbuy-sizing-guide",
-      "tag": "MÉID AGUS OIRIÚINT",
-      "title": "Tosaíonn seiceáil méide níos fearr sa bhaile",
-      "description": "Déan comparáid idir tomhais seachas brath ar lipéad aitheanta.",
+      "tag": "Méideanna",
+      "title": "Treoir Méide OOPBuy: Léigh Cairteacha agus Seiceáil Tomhais Iarbhír",
+      "description": "Roghnaigh éadaí agus bróga le modh níos soiléire: comparáid cairteacha, tomhas earra a oireann agus iarratais spriocdhírithe sa stóras.",
+      "primaryKeyword": "treoir méide OOPBuy",
+      "secondaryKeywords": [
+        "cairt mhéide OOPBuy",
+        "méideanna OOPBuy",
+        "méid éadaigh OOPBuy",
+        "méid bróige OOPBuy"
+      ],
+      "takeaways": [
+        "Úsáid cairt an liostaithe bheacht agus aithin an mbaineann sí le corp nó éadaí.",
+        "Cuir na tomhais chéanna i gcomparáid le hearra atá agat agus is maith leat a chaitheamh.",
+        "Ní ráthaíonn lipéad ceart oiriúnacht; réitigh ceisteanna tomhais roimh sheoladh."
+      ],
       "sections": [
         {
-          "title": "Tomhais rud éigin a oireann duit",
-          "text": "Roghnaigh earra cosúil leis atá agat cheana. I gcás éadaí, scríobh síos na tomhais ábhartha agus iad leagtha cothrom; i gcás bróg, úsáid modh tomhais an díoltóra. Coinnigh na haonaid comhsheasmhach."
+          "title": "Tosaigh leis an liostú, ní comhshó uilíoch",
+          "text": "Tosaíonn treoir úsáideach méide OOPBuy le teorainn: ná glac leis go n-úsáideann gach díoltóir cairt chomhroinnte. D’fhéadfadh meánmhéid, uimhir bróige nó moladh airde rudaí éagsúla a chiallaíonn i liostuithe éagsúla. Tosaigh leis an gcairt a bhaineann leis an táirge beacht.\n\nIs gníomhaire ceannaigh agus lóistíochta OOPBuy, agus tagann sonraíochtaí ón liostú bunaidh. Ní chruthaíonn roghnú do ghnáthmhéid na toisí céanna le hearra ó dhíoltóir eile. Glac le lipéid eolacha mar aitheantóirí go dtí go dtugann tomhais brí dóibh.\n\nSábháil an chairt agus an leagan nuair a ordaíonn tú. Má athraíonn an liostú, beidh a fhios agat cén fhaisnéis a bhunaigh an cinneadh. Ba cheart aitheantas an táirge agus míniú an mhodha tomhais a bheith sa ghabháil scáileáin, ní an ró is fearr leat amháin."
         },
         {
-          "title": "Léigh an liostú cruinn",
-          "text": "Is féidir le lipéid mhéide a bheith éagsúil idir díoltóirí agus samhlacha. Déan comparáid idir do thomhais agus an chairt don earra cruinn. Seiceáil an leithead cothrom, imlíne nó fad atá i gceist le figiúr."
+          "title": "Tomhais rud a oireann duit cheana",
+          "text": "Is tagairt phraiticiúil earra atá agat, a chaitheann tú agus atá compordach don úsáid chéanna. Leag ar dhromchla cothrom é gan an fabraic a shaobhadh. Tomhais na toisí ábhartha agus taifead an uimhir agus an modh.\n\nDo léine, d’fhéadfadh leithead faoi na hascaillí, leithead guaillí, fad droma agus muinchille a bheith úsáideach. Do bhrístí, smaoinigh ar leithead coime, ardú tosaigh, leithead ceathar agus inseam. Ní theastaíonn gach tomhas; tabhair tús áite dóibh siúd a chinneann oiriúnacht na catagóire duit de ghnáth.\n\nRoghnaigh tagairt inchomparáide i ndáiríre. Ní treoir mhaith do léine fheistithe geansaí scaoilte, agus iompraíonn brístí sínte difriúil ó fhabraic righin. Scríobh conas a mhothaíonn an tagairt agus cad a d’athrófá. Tugann sé sprioc phearsanta do na tomhais seachas uimhreacha gan mhíniú."
         },
         {
-          "title": "Réitigh éiginnteacht go luath",
-          "text": "Fiafraigh faoi thomhais dhoiléire sula n-ordaíonn tú. Má theastaíonn tomhais bhreise ar d’ordú uait, deimhnigh infhaighteacht agus costas na seirbhíse. Ní féidir le cairt mhéide ar bith oiriúint a ráthú."
+          "title": "Faigh amach cad a thomhaiseann an chairt",
+          "text": "Roimh uimhreacha a chur i gcomparáid, aithin tomhais coirp, éadaigh chríochnaithe nó raonta molta don té a chaitheann é. Freagraíonn siad ceisteanna éagsúla. Cuimsíonn tomhas cliabhraigh éadaigh an spás deartha, ach déanann tomhas coirp cur síos ar an duine. Is féidir botún mór méide a dhéanamh trína meascadh.\n\nSeiceáil aonaid agus an leithead nó imlíne atá i gceist. Ní hionann leithead cothrom 54 ceintiméadar agus imlíne cliabhraigh 54 ceintiméadar. Féadfaidh dúbailt leithid comparáid neasach a thabhairt i gcomhthéacs áirithe, ach ní atáirgeann sé gach gné den chruth.\n\nMá úsáidtear orlaí, tiontaigh go comhsheasmhach: is ionann orlach amháin agus 2.54 ceintiméadar. Coinnigh an uimhir bhunaidh leis an gcomhshó chun earráidí a aithint. Má tá ceannteidil nó aistriúchán doiléir, iarr soiléiriú roimh ró a mheas mar chruthúnas oiriúnachta."
+        },
+        {
+          "title": "Roghnaigh bairr de réir na dtoisí tábhachtacha",
+          "text": "Tosaigh leis an toise is minice a chruthaíonn fadhb duit. Má bhíonn léinte teann sa chliabhrach, cuir an leithead sin i gcomparáid ar dtús. Má bhíonn muinchillí gearr, déan cinneadh de réir a bhfad. Ansin seiceáil go bhfuil na tomhais eile comhoiriúnach leis an oiriúnacht atá uait.\n\nFéach ar an tógáil. Féadfaidh gualainn íslithe nó muinchille raglan tomhas guaillí nó muinchille a dhéanamh níos deacra a chur i gcomparáid le muinchille ghnáthshuite. Fiafraigh cá dtosaíonn agus cá gcríochnaíonn an tomhas agus úsáid léaráid an díoltóra má tá sí ann.\n\nMar shampla, d’fhéadfadh leithead cliabhraigh cothrom 56 ceintiméadar agus fad droma 67 a bheith ar do sheaicéad tagartha. D’fhéadfadh earra le cliabhrach cosúil ach corp i bhfad níos giorra luí an-difriúil. Cuir na toisí tábhachtacha ar fad i gcomparáid seachas méid a roghnú de bharr uimhir amháin."
+        },
+        {
+          "title": "Seiceáil níos mó ná an choim ar bhrístí",
+          "text": "Bíonn méid brístí níos soiléire nuair a mheasann tú coim, ardú, ceathar agus inseam le chéile. Ní ráthaíonn coim cheart gluaiseacht chompordach nó an cruth inmhianaithe. Athraíonn ardú difriúil áit an bhanda coime agus conas a mhothaíonn an tomhas ar do chorp.\n\nMá tá an banda leaisteach, socraigh an tomhas scaoilte nó sínte atá sa chairt. Ná cuir tomhas sínte díoltóra i gcomparáid le tomhas scaoilte do bhrístí. Tá an difríocht chéanna tábhachtach i ngrianghraf téipe stórais.\n\nTabhair aird ar fhad agus ar ghearradh. Is féidir dhá phéire leis an inseam céanna breathnú difriúil mar gheall ar ardú, cruth coise agus oscailt. Úsáid do thagairt chun an t-athrú atá uait a aithint, amhail spás ceathar nó oscailt níos cúinge. Is fearr é ná fiafraí an ritheann brístí an díoltóra mór nó beag go ginearálta."
+        },
+        {
+          "title": "Úsáid cairteacha bróg go cúramach",
+          "text": "Taifead córas méide an díoltóra agus léigh treoir fhad coise. Ná tiontaigh lipéad EU, UK nó US le cairt neamhghaolmhar gan a dheimhniú go n-úsáideann an liostú an coinbhinsiún céanna. Má tá an chairt ar iarraidh, fanann an éiginnteacht oscailte.\n\nTomhais an dá chos de réir mhodh an díoltóra nuair a iarrtar tomhais coirp. Coinnigh fad coise, boinn istigh, taobh istigh bróige agus boinn sheachtraigh ar leith. Ní hionann iad. Is féidir leis an mbonn seachtrach síneadh thar an spás atá don chos, agus déanann cruth boinn istigh comparáid dhíreach casta.\n\nNíl fad ach cuid d’oiriúnacht. Bíonn tionchar ag leithead, cruth ladhrach, spás instep, stocaí agus úsáid ar chompord. Cuir le péire cosúil atá á chaitheamh agat agus fiafraigh go beacht faoi thoise riachtanach. Ná bí ag brath ar threoir uilíoch méid amháin níos mó nó breisiú seasta do gach bróg."
+        },
+        {
+          "title": "Smaoinigh ar fhabraic agus ar an oiriúnacht atá beartaithe",
+          "text": "Cuidíonn tomhais leis an rogha, ach ní mhíníonn siad gach gné den chaitheamh. Bíonn tionchar ag struchtúr, síneadh, líneáil agus gearradh ar ghluaiseacht. Úsáid faisnéis iarbhír an liostaithe; ná tátal comhdhéanamh beacht ná leibhéal sínte ó ghrianghraf amháin.\n\nMínigh d’úsáid féin roimh roghnú idir méideanna cóngaracha. Teastaíonn oiriúnacht eile ó chóta thar shraitheanna tiubha ná ó léine ar an gcraiceann. D’fhéadfadh cruth scaoilte a bheith d’aon ghnó, ach seiceáil guaillí, muinchillí agus fad iomlán de réir do rogha caitheamh.\n\nMá luaitear éagsúlacht tomhais, cuir an éiginnteacht san áireamh. Ná bunaigh an rogha ar dhifríocht bheag nach féidir leis an modh a dhealú go hiontaofa. Má tá dhá mhéid chomh dóchúil, aithin an comhréiteach is tábhachtaí duit seachas a ligean ort go socraíonn an chairt freagra foirfe."
+        },
+        {
+          "title": "Iarr tomhas spriocdhírithe sa stóras",
+          "text": "Míníonn fógra lóistíochta saincheaptha OOPBuy iarratais bhreise sonraí agus tomhais, lena n-áirítear éadaí agus fad bróige nó boinn istigh. Seiceáil na roghanna agus táillí reatha sa chuntas. Bíonn iarratas dírithe úsáideach má fhreagraíonn sé ceist thábhachtach a d’fhág cairt an díoltóra oscailte.\n\nSonraigh an modh. Mar shampla, léine cothrom, leithead cliabhraigh ó seam ascaill go seam eile, gan síneadh. D’inseam, tabhair seam crotch agus imeall mar cheannphointí. Iarr grianghraf a thaispeánann an téip agus an dá phointe le chéile.\n\nCuir an toradh le do thagairt leis an modh céanna. Tugann lipéad grianghraftha agus éadach tomhaiste fianaise éagsúil. Cuireann fógra iniúchta OOPBuy teorainn leis an seiceáil chaighdeánach; ná glac leis go ndeimhníonn lipéad meaitseála oiriúnacht iarbhír duit."
+        },
+        {
+          "title": "Socraigh oiriúnacht roimh sheoladh idirnáisiúnta",
+          "text": "Athbhreithnigh tomhais agus úsáid roimh an earra a chur i mbeartán idirnáisiúnta. Má tá toise riachtanach ar iarraidh, iarr í fad is féidir cinneadh eolasach a dhéanamh faoin earra sa stóras. Má léirítear neamhréir mhór, fiosraigh iar-dhíolachán go pras seachas súil go n-athróidh oiriúnacht ar an turas.\n\nCoinnigh cairt, méid roghnaithe, grianghraif tomhais agus freagra tacaíochta le chéile. Cabhraíonn sé imní a mhíniú agus leagan mícheart a scaradh ó earra lipéadaithe i gceart nach n-oireann a ghearradh duit. Is cásanna éagsúla iad le réitigh fhéideartha éagsúla.\n\nTar éis seachadta, tomhais arís leis an modh céanna agus nótaigh conas a chaitheann sé. Cruthaigh tagairt phríobháideach ó d’eispéireas féin, le roghanna agus teorainneacha. Le himeacht ama, is úsáidí na nótaí seo ná liosta lipéad gan mhíniú nó comhairle ghinearálta ó cheannacháin neamhghaolmhara."
         }
+      ],
+      "sources": [
+        {
+          "label": "Comhaontú cláraithe úsáideora OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "Faisnéis iniúchta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-spreadsheet-guide"
       ]
     },
     {
       "slug": "oopbuy-product-links",
-      "tag": "NAISC MÍNITHE",
-      "title": "Táirge amháin, dhá ID dhifriúla",
-      "description": "Cén fáth a bhfuil ID earra an díoltóra tábhachtach agus fionnachtain á hoscailt.",
+      "tag": "Naisc táirgí",
+      "title": "Naisc Táirgí OOPBuy: Aimsigh an tEarra Ceart agus Seiceáil Gach Leagan",
+      "description": "Foghlaim conas naisc OOPBuy agus Weidian a sheiceáil, aitheantóirí foinsí a scaradh ó uimhreacha eolaire, naisc bhriste a réiteach agus paraiméadair chleamhnaithe a thuiscint.",
+      "primaryKeyword": "naisc táirgí OOPBuy",
+      "secondaryKeywords": [
+        "naisc Weidian OOPBuy",
+        "tiontaire naisc OOPBuy",
+        "URL táirge OOPBuy",
+        "naisc scarbhileoige OOPBuy"
+      ],
+      "takeaways": [
+        "Coinnigh an nasc bunaidh margaidh agus deimhnigh an leathanach a osclaíonn.",
+        "Scar tagairt eolaire ón aitheantóir táirge sa URL ceannaigh.",
+        "Seiceáil an leagan agus an íocaíocht bheo; ní ráthaíonn cód cleamhnaithe lascaine."
+      ],
       "sections": [
         {
-          "title": "Aithníonn uimhir chatalóige an leathanach",
-          "text": "Tugann CNBuyCha a uimhir chatalóige féin do gach leathanach táirge. Tá an uimhir sin úsáideach laistigh den chatalóg, ach ní gá gurb í ID earra an díoltóra í."
+          "title": "Níl nasc oibre ach an chéad seiceáil",
+          "text": "Ba cheart nasc táirge OOPBuy an t-earra atá uait a fhiosrú a oscailt. Níl oscailt leathanaigh ach an tús. Caithfidh tú a dheimhniú go meaitseálann an táirge, liostú díoltóra, roghanna agus praghas reatha d’ionchas ón eolaire nó scarbhileog.\n\nMíníonn treoir OOPBuy cuardach le naisc nó ainmneacha roimh shonraíochtaí agus cainníocht a roghnú. Braitheann sé sin ar fhaisnéis an liostaithe ar leith. Ná glac leis gur féidir gach seoladh ó phostáil shóisialta nó ó mhargadh a iompórtáil i gceart agus a cheannach gan seiceáil.\n\nCoinnigh an nasc foinseach bunaidh leis an seoladh OOPBuy. Má aistrítear teideal go difriúil, má athraíonn íomhá nó má stopann leathanach ag lódáil, tugann an fhoinse bunús níos láidre d’aitheantas. Ní leor leasainm gearr amhail mála laethúil dubh chun roinnt liostuithe cosúla a dhealú."
         },
         {
-          "title": "Aithníonn nasc an díoltóra an t-earra",
-          "text": "I gcás liostú Weidian, úsáideann an cnaipe ceannaigh ID an earra ó URL bunaidh an díoltóra. Osclaíonn sé an t-earra sin in OOPBuy le cód cuireadh cleamhnaithe an tsuímh seo."
+          "title": "Scar tagairt chatalóige ó aitheantóir táirge",
+          "text": "Is minic a thugann eolairí neamhspleácha a n-uimhir féin do gach iontráil. Úsáideann an margadh bunaidh aitheantóir eile don liostú. Tá cuspóirí difriúla acu agus níor cheart ceann a úsáid in áit an chinn eile agus nasc ceannaigh á oscailt nó á chruthú.\n\nSa sampla OOPBuy Tab, is tagairt CNBuyCha é 3470. Is é 7876894732 an t-aitheantóir foinseach i gcosán táirge Weidian. Ní chiallaíonn leathanach catalóige 3470 gur cheart URL OOPBuy gaolmhar críochnú le 3470.\n\nLipéadaigh réimsí go soiléir: tagairt eolaire, margadh foinseach, nasc bunaidh agus nasc OOPBuy. Coinnigh seoltaí iomlána, ní uimhreacha amháin. Cabhraíonn sé nuair a bhíonn formáidí URL éagsúla ag margaí nó nuair a roinntear gabháil scáileáin catalóige gan an nasc a aithníonn an táirge."
         },
         {
-          "title": "Seiceáil an leathanach tar éis é a oscailt",
-          "text": "Déan comparáid idir an teideal, an díoltóir agus an leagan agus an liostú a ndearna tú taighde air. Má tá an leathanach athraithe nó mura bhfuil sé ar fáil, fill ar an gcatalóg agus roghnaigh liostú eile go machnamhach."
+          "title": "Léigh an nasc samplach i gceart",
+          "text": "Is sampla de bhealach ceannaigh https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5. Aithníonn an fearann OOPBuy, an cosán liostú Weidian, agus an paraiméadar deiridh cód cuiridh. Baineann an uimhir sa chosán leis an táirge foinseach, ní le huimhriú an eolaire.\n\nÚsáid an seoladh chun an struchtúr a thuiscint, ní mar chruthúnas stoic, praghais, iontaofachta díoltóra nó oiriúnachta. Oscail an leathanach beo agus seiceáil ábhar. Is féidir le URL bailí liostú athraithe nó as fáil a aithint, agus ní dheimhníonn cosán táirge na roghanna atá beartaithe agat.\n\nTá an paraiméadar cuiridh mar chuid den nasc cleamhnaithe. D’fhéadfadh OOPBuy Tab tairbhe a fháil ó úsáid cháilithe na nasc. Ní chruthaíonn sé lascaine, cúpón ná praghas seolta speisialta duit. Ná braith ach ar thairiscint atá léirithe go soiléir agus infheidhme sa tseiceáil amach oifigiúil reatha."
+        },
+        {
+          "title": "Seiceáil aitheantas an leathanaigh a osclaíonn",
+          "text": "Cuir an leathanach leis an bhfoinse trí roinnt sonraí le chéile. Féach ar íomhánna, gnéithe móra dearaidh, roghanna, cainníocht agus faisnéis díoltóra. D’fhéadfadh teidil a bheith giorraithe nó aistrithe, mar sin is tástáil lag meaitseáil teidil amháin.\n\nMar shampla, d’fhéadfadh grianghraf tosaigh cosúil a bheith ag dhá mhála droma ach urranna, toisí nó gabhálais éagsúla. Deimhnigh an tsonraíocht a spreag an ceannach. Má theastaíonn urrann ríomhaire nó dúntóir ar leith, aimsigh sa liostú féin é seachas tógáil chéanna a thoimhdiú ó phictiúr cosúil.\n\nBí ag faire ar leathanaigh a thaispeánann earra gaolmhar nuair a théann an bunliostú as fáil. Má tá aitheantas doiléir, stad agus coinneáil an dá nasc agus soiléiriú á iarraidh. Ná glac go ciúin le hionadaí mar gheall ar mhionsamhail cosúil. Braitheann seiceálacha méide, costais agus QC ar an earra ceart ón tús."
+        },
+        {
+          "title": "Roghnaigh an leagan roimh phraghsanna a chur i gcomparáid",
+          "text": "Tar éis an liostú ceart a aithint, roghnaigh an dath, méid, cumraíocht agus cainníocht atá uait. D’fhéadfadh praghas tosaigh a bheith do leagan eile seachas an chéad ghrianghraf. Comhcheanglaíonn roinnt leathanaigh gabhálais, píosaí aonair agus pacáistí éagsúla.\n\nScríobh an rogha go simplí i nótaí. Tá mór, liath dhorcha, píosa amháin níos úsáidí ná rogha a trí, go háirithe má athraíonn ord na roghanna. Sábháil cairt nó íomhá sonraíochtaí a mhíníonn í. Déanann sé an t-ordú deiridh níos éasca a sheiceáil in aghaidh na hintinne.\n\nGlac le praghsanna USD OOPBuy Tab mar mheastacháin. Seiceáil an méid beo roghnaithe, seachadadh intíre agus sonraí íocaíochta ar an tseirbhís oifigiúil. Is ceist bhuiséadaithe ar leith lastas idirnáisiúnta. Ní ghlasálann nasc ceart praghas na catalóige ná ní dhéanann sé iomlán seachadta de."
+        },
+        {
+          "title": "Réitigh nasc briste nó neamhiomlán",
+          "text": "Mura lódálann táirge mar a bhíothas ag súil, fill ar an leathanach bunaidh agus cóipeáil a sheoladh arís. Seiceáil an nasc earra, leathanach siopa, toradh cuardaigh nó leathanach roinnte a chóipeáil tú. D’fhéadfadh cuma cosúil a bheith ar naisc ghiorraithe gan an rud céanna a aithint.\n\nBain triail as an nasc iomlán i gcuardach nó iontráil naisc oifigiúil OOPBuy agus seiceáil an toradh. Má theipeann fós, taifead an seoladh beacht agus an earráid nó an t-eolas ar iarraidh. Fiafraigh den tacaíocht an féidir an liostú sonrach a phróiseáil; ní leigheasann iarrachtaí athfhillte táirge bainte nó gan tacaíocht.\n\nNá hathraigh codanna uimhriúla randamacha go dtí go lódálann rud éigin. D’fhéadfadh liostú neamhghaolmhar oscailt agus cuma dheisithe a chur ar an nasc. Má aimsítear táirge eile, caith leis mar iarrthóir nua agus athdhéan seiceálacha aitheantais, méide, leagain agus costais."
+        },
+        {
+          "title": "Roinn naisc le comhthéacs úsáideach",
+          "text": "Áirítear ainm, margadh foinseach, leagan beartaithe, dáta seiceála agus éiginnteacht thábhachtach i nasc úsáideach roinnte. Má roinneann tú iontráil eolaire, abair sin. Déan an difríocht soiléir má roinneann tú an leathanach ceannaigh beo. Cabhraíonn sé leis an gcéad duine eile an méid atá le deimhniú a thuiscint.\n\nNá tabhair íomhánna catalóige mar chruthúnas riocht ordaithe sa stóras. Úsáideann OOPBuy Tab sonraí CNBuyCha agus níor fíoraíodh na híomhánna mar QC d’earraí féin. Má phléann tú ordú pearsanta, scar a fhianaise agus bain sonraí cuntais, seolta agus ordaithe roimh fhoilsiú.\n\nNocht naisc chleamhnaithe go soiléir. Ní ceart cód cuiridh a mhaisiú mar choigilteas ráthaithe gan tairiscint infheidhme a sheiceáil. Ciallaíonn roinnt fhreagrach cuidiú le táirge agus éiginnteacht a aithint, ní a thabhairt le tuiscint go bhfreagraíonn do thaithí gach ceist faoi ordú duine eile."
+        },
+        {
+          "title": "Coinnigh gníomhartha cuntais ar an tseirbhís oifigiúil",
+          "text": "Nuair atá tú réidh le rochtain cuntais, úsáid https://oopbuy.com/login agus seiceáil ceann scríbe an bhrabhsálaí. Cabhraíonn eolaire le táirge a aimsiú, ach ar an tseirbhís oifigiúil a athbhreithnítear faisnéis bheo chuntais, ordaithe agus íocaíochta.\n\nLéigh ceann scríbe an naisc roimh dhintiúir nó íocaíocht. Ní chruthaíonn ainm eolach i dteideal, pictiúr nó teachtaireacht cuiridh aitheantas na suíomh. Má chuireann atreorú amhras ort, oscail an suíomh oifigiúil go díreach agus úsáid an nasc foinseach ann.\n\nNá cuir pasfhocail ná dintiúir íocaíochta i mbileog tagartha. Ní theastaíonn uaithi ach faisnéis chun an táirge agus do chinneadh a leanúint. Bain tagairtí pearsanta ordaithe de ghearrliosta poiblí freisin. Ligeann na nósanna seo fionnachtana a roinnt gan sonraí íogaire cuntais a mheascadh leis an taighde."
+        },
+        {
+          "title": "Lean próiseas in-athdhéanta ó nasc go hordú",
+          "text": "Úsáid an seicheamh céanna: sábháil foinse, oscail toradh OOPBuy, deimhnigh aitheantas, roghnaigh leagan, seiceáil méid nó sonraíochtaí agus meas costas iomlán. Ansin cinn an bhfuil dóthain faisnéise agat le hordú. Is luachmhaire comhsheasmhacht ná deifir trí leathanach eolach.\n\nTar éis ordú, sábháil a thagairt go príobháideach agus cuir faisnéis stórais leis an taifead leagain céanna. Ní ionad iniúchta earraí é nasc ceart. Má tá difríocht ann, cuidíonn an rogha agus na sonraí foinseacha sábháilte leis an gceist a mhíniú go cruinn.\n\nAthsheiceáil roimh cheannach arís. Is féidir le hinfhaighteacht, roghanna, praghas nó cur síos athrú ó cheannach rathúil míonna ó shin. Coinnigh breathnuithe roimhe mar stair úsáideach, ach meas an leathanach reatha mar chinneadh úr. Déanann sé próiseas taighde inbhainistithe de naisc seachas bailiúchán toimhdí."
         }
+      ],
+      "sources": [
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Suíomh oifigiúil OOPBuy",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "Logáil isteach OOPBuy",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-spreadsheet-guide",
+        "oopbuy-price-check",
+        "oopbuy-sizing-guide"
       ]
     },
     {
       "slug": "oopbuy-price-check",
-      "tag": "COMPARÁIDÍ NÍOS CLISTE",
-      "title": "Cuir an rud céanna i gcomparáid, ní an praghas amháin",
-      "description": "Seicliosta gearr chun dhá fhionnachtain a bhfuil cuma mhaith orthu a chur i gcomparáid.",
+      "tag": "Buiséadú",
+      "title": "Seiceáil Praghais OOPBuy: Ríomh an Costas Roimh Cheannach",
+      "description": "Seiceáil praghas táirge OOPBuy, cuir an leagan beacht i gcomparáid agus cruthaigh buiséad réadúil do lastas intíre, idirnáisiúnta agus costais eile.",
+      "primaryKeyword": "seiceáil praghais OOPBuy",
+      "secondaryKeywords": [
+        "costas iomlán OOPBuy",
+        "meastachán seolta OOPBuy",
+        "praghas táirge OOPBuy"
+      ],
+      "takeaways": [
+        "Cuir an leagan agus an chainníocht chéanna i gcomparáid roimh phraghsanna.",
+        "Is meastacháin iad praghsanna USD, ar leith ó chostas iomlán an ordaithe a fháil.",
+        "Athsheiceáil buiséad tar éis tomhais stórais agus roimh lastas idirnáisiúnta a íoc."
+      ],
       "sections": [
         {
-          "title": "Meaitseáil na roghanna",
-          "text": "Déan comparáid idir an méid, an dath, an chainníocht agus na hoiriúintí céanna atá san áireamh. D’fhéadfadh an praghas is ísle a thaispeántar baint le rogha eile seachas an ceann atá uait."
+          "title": "Tosaigh leis an bpraghas atá de dhíth i ndáiríre",
+          "text": "Ba cheart do sheiceáil praghais OOPBuy ceist phraiticiúil a fhreagairt: an féidir leat an t-earra seachadta chuig do sheoladh a íoc? Níl praghas íseal táirge ach cuid den fhreagra. Braitheann an cinneadh ar leagan, cainníocht, seachadadh díoltóra, iompar idirnáisiúnta agus méideanna eile sa tseiceáil amach nó sa cheann scríbe.\n\nIs suíomh aimsithe neamhspleách é OOPBuy Tab, ní an t-ardán ceannaigh oifigiúil. Tagann sonraí ó CNBuyCha agus is meastacháin praghsanna USD, ní luachana iomlána seachadta. Aimsigh iarrthóirí sa chatalóg, ansin deimhnigh an liostú reatha tríd an leathanach oifigiúil roimh íoc.\n\nTosaigh le huasmhéid compordach don cheannach iomlán. Más $80 do bhuiséad, ná tabhair an $80 ar fad d’earraí agus súil go mbeidh seoladh neamhshuntasach. Fág spás do chostais nach bhfuil socraithe agat fós."
         },
         {
-          "title": "Cuir na chéad chostais eile san áireamh",
-          "text": "Déan comparáid idir postas intíre agus riachtanais dhóchúla an phacáiste taobh le praghas an earra. Deimhnigh an miondealú íocaíochta deiridh in OOPBuy seachas glacadh le meastachán catalóige mar luachan."
+          "title": "Seiceáil an leagan roghnaithe, ní an chéad uimhir",
+          "text": "Oscail an liostú beo agus roghnaigh dath, méid, sonraíocht agus cainníocht. Bíonn roinnt táirgí nó cumraíochtaí faoi URL amháin uaireanta. D’fhéadfadh an praghas is ísle a bheith do rogha eile seachas an íomhá a mheall tú. D’fhéadfadh gabhálas beag agus tacar iomlán a bheith taobh le taobh ar phraghsanna éagsúla.\n\nScríobh an rogha díreach mar a thaispeántar. Sábháil URL, ainm díoltóra más infheicthe, cainníocht agus fo-iomlán reatha earraí. Má thaispeántar raon praghsanna, ná hiontráil an bun sa bhuiséad go dtí go bhfuil a fhios agat go mbaineann sé le do rogha.\n\nSeiceáil an athraíonn roghnóir cainníochta praghas aonaid nó íosordú. Ní inchomparáide dhá liostú cosúla má ghlacann praghas amháin le roinnt aonad. Réitigh rogha aistrithe dhoiléir roimh íoc; is ceannach mícheart fós leagan mícheart saor."
         },
         {
-          "title": "Coinnigh taifead",
-          "text": "Sábháil nasc bunaidh an díoltóra agus na roghanna a roghnaigh tú. Cabhraíonn na sonraí sin leat grianghraif d’ordaithe a chur i gcomparáid agus neamhréir a mhíniú má theastaíonn tacaíocht uait."
+          "title": "Cruthaigh mórleabhar costais le línte ar leith",
+          "text": "Scarann treoir chéadsiopadóireachta OOPBuy íocaíocht earraí agus lastais intíre ón lastas idirnáisiúnta níos déanaí. Léirigh sin sa mhórleabhar: línte do tháirgí, seachadadh go stóras, seoladh idirnáisiúnta agus seirbhísí roghnacha. Cuir táillí íocaíochta nó airgeadra leis ach nuair a thaispeánann an scáileán nó an soláthraí iad. Coinnigh cánacha agus láimhseáil ceann scríbe ar leith go dtí go bhfuil faisnéis iontaofa agat don tír agus don tseirbhís.\n\nMarcáil gach líne deimhnithe, measta nó anaithnid. Tá sé níos úsáidí ná ligean ort go bhfuil an chinnteacht chéanna ag gach uimhir. Féadfaidh fo-iomlán earraí deimhnithe suí le meastachán lastais agus táille seirbhíse anaithnid ag fanacht le luachan beo.\n\nI gcás roinnt táirgí, lean costais earra agus beartáin araon. Baineann praghas táirge leis an earra; b’fhéidir go mbaineann pacáil chomhroinnte leis an mbeartán. Má roinneann tú costais choiteanna, lipéadaigh mar do mhodh buiséadaithe iad. Ní gá gurb é sin ríomh OOPBuy ná an iompróra."
+        },
+        {
+          "title": "Coinnigh comhshó agus costais íocaíochta infheicthe",
+          "text": "Cabhraíonn praghas USD tiontaithe le comparáid, ach ní ráthaíonn sé an méid a ghearrfaidh do mhodh íocaíochta. Féach ar an airgeadra agus méid iníoctha sa scáileán deimhnithe iarbhír. Má thairgtear comhshó, cuir é le do bhuiséad seachas glacadh go bhfanfaidh tiontú na catalóige gan athrú.\n\nÚsáid airgeadra oibre amháin agus taifead conas a tiontaíodh méideanna eile. Mar shampla, coinnigh praghas bunaidh an díoltóra i réimse amháin agus meastachán USD i gceann eile. Caomhnaíonn sé an tagairt bhunaidh agus tú ag filleadh ar an ríomh.\n\nNá cuir táille malairte uilíoch ná céatadán íocaíochta cumtha leis. D’fhéadfadh costais brath ar an mbealach íocaíochta agus roghanna cuntais reatha. Is seiceáil nithiúil í: cén méid a éilíonn an íocaíocht, cén airgeadra, agus cén táille bhreise a nochtann an soláthraí i ndáiríre?"
+        },
+        {
+          "title": "Meas seoladh le beartán réadúil",
+          "text": "Soláthraíonn OOPBuy leathanach oifigiúil meastacháin. Úsáid ceann scríbe agus faisnéis is féidir a dheimhniú go réasúnta faoin mbeartán. Léigh cur síos na seirbhísí seachas an líne leis an uimhir is lú amháin a roghnú. Bíonn tionchar ag incháilitheacht táirge, toisí, meáchan agus ceann scríbe.\n\nRoimh theacht sa stóras, meas meáchain agus toisí mar thoimhdí. D’fhéadfadh meáchan éadaigh pacáistiú miondíola a fhágáil ar lár, agus d’fhéadfadh earra éadrom toirtiúil spás mór a úsáid. Faigh amach ionchuir an mheastóra agus coinneáil leis an toradh iad chun an chomparáid a athdhéanamh.\n\nRith dara cás má tá ionchur mór éiginnte. Mar shampla, cuir pacáiste ionchais le leagan níos toirtiúla a choinníonn cosaint riachtanach. Is seiceáil íogaireachta é, ní tuar. Mura n-oireann an ceannach ach sa chás is dóchasaí, teastaíonn corrlach breise."
+        },
+        {
+          "title": "Oibrigh trí shampla iomlán",
+          "text": "Samhlaigh ciseán sealadach le léine mheasta $22 agus mála $31. Is $53 meastachán earraí. Taifeadann tú $5 seachadadh díoltóra ón scáileán ordaithe agus $24 do chás samplach idirnáisiúnta. Is $82 an fo-iomlán roimh sheirbhísí breise, íocaíocht agus táillí ceann scríbe ábhartha.\n\nTá na huimhreacha hipitéiseach agus ní rátaí OOPBuy iad. Léiríonn siad cén fáth nach ceannach $53 go huathoibríoch ciseán $53. Más $90 d’uasmhéid, is corrlach do chostais oscailte an $8 atá fágtha, ní lascaine ag fanacht.\n\nAthraigh an cás: ardaíonn beartán níos toirtiúla an lastas hipitéiseach go $34. Is $92 an fo-iomlán roimh chostais gan réiteach. Tá cinneadh soiléir roimh ghealltanas: bain earra, ardaigh buiséad d’aon ghnó nó stop. Déanann an mórleabhar comparáid inghníomhaithe den éiginnteacht."
+        },
+        {
+          "title": "Cuir roghanna eile i gcomparáid go cothrom",
+          "text": "Idir dhá dhíoltóir, cuir cumraíocht agus toradh céanna i gcomparáid. Taifead méid, cur síos ábhair, gabhálais, cainníocht agus seachadadh. D’fhéadfadh níos lú píosaí nó níos lú faisnéise faoin sonraíocht a bheith sa rogha le praghas earra níos ísle.\n\nCuir cáilíocht fianaise san áireamh gan luach airgid bréige a thabhairt di. Éascaíonn cairt shoiléir agus cur síos maith cinneadh; éilíonn liostú doiléir ceisteanna breise. Is íomhánna aimsithe iad pictiúir catalóige, nach bhfuil fíoraithe mar ghrianghraif d’ordú stórais féin.\n\nMar shampla, tugann rogha $20 le seachadadh $6 agus rogha $24 le seachadadh $2 fo-iomlán $26 araon. Ní chruthaíonn sé cáilíocht nó lastas deiridh comhionann. Baineann sé difríocht mhíthreorach sna príomhphraghsanna ionas gur féidir na fíricí eile a mheas."
+        },
+        {
+          "title": "Meas cúpóin gan ligean dóibh an buiséad a shocrú",
+          "text": "Ní bhíonn tairiscint úsáideach ach má bhaineann sí leis an gceannach beartaithe. Léigh téarmaí beo an chúpóin: úsáid, íoschaiteachas, línte incháilithe, dul in éag agus comhcheangal le tairiscintí. Ní teidlíocht ghníomhach foclaíocht ar sheanghabháil scáileáin.\n\nRíomh an lascaine tar éis do chiseán a shocrú. Má dhíghlasálann earra nach dteastaíonn cúpón, cuir an t-iomlán nua leis an mbun-iomlán. Féadfaidh ceannach breise costais, meáchan agus toirt a ardú fiú nuair a laghdaíonn cúpón líne amháin.\n\nTaifead an bhfuil lascaine san áireamh cheana. Cruthaíonn an coigilteas céanna a chomhaireamh sa mheastóir agus arís sa scarbhileog buiséad ficseanúil. Mura dtaispeánann an tseiceáil amach an asbhaint ionchais, réitigh an difríocht roimh íocaíocht."
+        },
+        {
+          "title": "Athsheiceáil ag gach cinneadh íocaíochta",
+          "text": "Déan seiceáil arís nuair a fheabhsaíonn faisnéis: leagan beo roghnaithe, ceannach réidh le híoc agus tomhais stórais do luachan idirnáisiúnta. Tá meastachán úsáideach mar chuid den chinneadh, ní gealltanas nach n-athróidh faisnéis níos déanaí an toradh.\n\nRoimh íoc, deimhnigh earraí, cainníochtaí, airgeadra, seoladh, roghanna seirbhíse, lascainí iarbhír agus an t-iomlán dlite. Coinnigh aitheantóirí agus admhálacha chun coigeartuithe a mheaitseáil leis an gceannach ceart. Ná braith ar uimhir a chuimhin leat ó chárta táirge.\n\nTá riail stad simplí ann: lean ar aghaidh ach nuair a oireann an méid dlite agus an éiginnteacht don bhuiséad. Má d’athródh costas anaithnid do chinneadh, fiosraigh é ar dtús. Úsáid an treoir seolta do roghanna beartáin agus treoir an stórais don am a mbeidh tomhais níos fearr ar fáil."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Meastóir seolta OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-spreadsheet-guide"
+      ]
+    },
+    {
+      "slug": "oopbuy-warehouse-guide",
+      "tag": "Stóras",
+      "title": "Treoir Stórais OOPBuy: Ó Theacht go Cur Isteach Beartáin",
+      "description": "Tuig cad le seiceáil nuair a shroicheann ordú OOPBuy an stóras, conas dátaí stórála a leanúint agus cathain cinneadh aischuir nó seolta a dhéanamh.",
+      "primaryKeyword": "treoir stórais OOPBuy",
+      "secondaryKeywords": [
+        "stóráil OOPBuy",
+        "ordú OOPBuy faighte",
+        "iniúchadh stórais OOPBuy"
+      ],
+      "takeaways": [
+        "Lean dáta faighte gach earra ar leith agus seiceáil an beartas reatha.",
+        "Athbhreithnigh grianghraif agus tomhais d’ordaithe féin roimh chomhdhlúthú.",
+        "Réitigh ábhair imní táirge agus incháilitheacht aischuir roimh imeacht idirnáisiúnta."
+      ],
+      "sections": [
+        {
+          "title": "Meas an stóras mar chéim chinnidh",
+          "text": "Sa stóras bíonn sé níos éasca ceannach iargúlta a mheas. Is féidir an t-earra taifeadta a chur leis an rogha a bhí beartaithe agat, faisnéis iniúchta a léamh agus cinneadh é a choinneáil, ceist a chur nó aischur a iarraidh nuair a cheadaítear. Éiríonn pleanáil beartáin níos nithiúla freisin.\n\nNá cuir gach céim faoin bhfocal tagtha. Is imeachtaí éagsúla iad seachadadh díoltóra, fáil stórais, iniúchadh, stóráil, ullmhú agus imeacht idirnáisiúnta. Léigh an stádas iarbhír sa chuntas agus lorg an t-aitheantóir earra nó beartáin a bhaineann leis.\n\nIs fearr seiceálacha a ullmhú roimh theacht. Sábháil an leagan agus na tomhais atá tábhachtach duit. Nuair a bhíonn taifead stórais ar fáil, beidh ionchas sonrach agat le comparáid seachas iarracht do rogha bhunaidh a athchruthú."
+        },
+        {
+          "title": "Cruthaigh taifead ar leith do gach earra",
+          "text": "Déan loga le haitheantóir ordaithe, nasc, dath agus méid roghnaithe, cainníocht, dáta faighte, stádas iniúchta agus ceisteanna oscailte. Tabhair ró dá chuid féin do gach earra fiú má ceannaíodh le chéile iad. Is féidir le seisiún siopadóireachta amháin seoltaí díoltóra agus dátaí éagsúla stórais a chruthú.\n\nScar aitheantóir ordaithe ó uimhir rianaithe díoltóra agus ó uimhir idirnáisiúnta níos déanaí. Freagraíonn siad ceisteanna éagsúla. Má tá tacaíocht ag fiosrú earra ar iarraidh, tá tagairt bheacht níos úsáidí ná gabháil scáileáin an chiseáin iomláin.\n\nÚsáid lipéid chinnidh shimplí amhail athbhreithniú ag teastáil, ceist seolta, coinnigh nó aischur iarrtha. Is lipéid phearsanta iad, ní stádais oifigiúla OOPBuy. Déanann siad obair neamhchríochnaithe infheicthe. Nuair a fhilleann tú tar éis cúpla lá, ba cheart go mbeadh a fhios agat láithreach cén earra agus cén fáth a dteastaíonn d’aird."
+        },
+        {
+          "title": "Tuig clog na stórála gan buille faoi thuairim",
+          "text": "Deir fógra oifigiúil Stórála OOPBuy go bhfuil 90 lá saor ón stádas “Received”. Taifead dáta gach earra, ní an ceannach is nua amháin. Léigh an fógra reatha agus do chuntas roimh bhraith ar liúntas stórála.\n\nCeadaíonn fógra níos sonraí na seirbhísí lóistíochta saincheaptha síneadh íoctha amháin, 10 CNY ar suas le 30 lá, uasmhéid iomlán 120 lá. Deir sé gur féidir earraí thar an iomlán a mheas tréigthe agus a dhiúscairt. Ní 120 lá saor ná athnuachan gan teorainn é.\n\nSocraigh do mheabhrúchán féin go maith roimh an spriocdháta saor, le ham do cheisteanna agus ullmhú seolta. Má theastaíonn síneadh, seiceáil an infhaighteacht do d’earra beacht agus faigh deimhniú an dáta nua. Ná glac leis go gceannaíonn earra fágtha sa stóras am breise go huathoibríoch."
+        },
+        {
+          "title": "Athbhreithnigh fianaise d’ordaithe féin",
+          "text": "Oscail faisnéis iniúchta an earra bheacht sa chuntas. Cuir dath infheicthe, lipéid, méid, cainníocht agus comhpháirteanna leis na sonraí sábháilte. Seiceáil fadhbanna follasacha sna híomhánna atá ar fáil. Má tá sonra folaithe nó doiléir, fág gan réiteach é seachas glacadh gur éirigh leis.\n\nNí fianaise ar riocht d’earra sa stóras í íomhá chatalóige OOPBuy Tab. Úsáideann an suíomh neamhspleách sonraí CNBuyCha agus níor fíoraíodh íomhánna mar QC an ordaithe. Coinnigh pictiúir aimsithe agus d’fhianaise féin ar leith.\n\nAthbhreithnigh earra amháin ag an am agus nótaigh ceist agus an íomhá oscailte. Tá seam muinchille clé as radharc níos inghníomhaithe ná cáilíocht éiginnte. Is é an sprioc a aithint cad is féidir a fhíorú agus cad a theastaíonn seiceáil eile uaidh."
+        },
+        {
+          "title": "Iarr tomhas a réitíonn cinneadh",
+          "text": "Má chinneann oiriúnacht nó toisí an gcoinneoidh tú earra, socraigh an tomhas beacht. D’éadaí, leithead cliabhraigh cothrom nó fad idir pointí sonraithe; do ghabhálas stórála, oscailt inmheánach inúsáidte seachas leithead seachtrach.\n\nSeiceáil na seirbhísí breise iniúchta nó tomhais don ordú agus a gcostas roimh iarratas. Ná glac leis go n-áirítear gach tomhas, tástáil feidhme nó fíorú ábhair i ngnáth-iniúchadh. Fiafraigh an féidir leis an stóras an seiceáil a thuairiscíonn tú a dhéanamh.\n\nAithníonn iarratas úsáideach an t-earra, na pointí agus an fhianaise. Mar shampla: taispeáin an téip ón seam gualainne uachtarach go dtí an t-imeall íochtair, an t-éadach cothrom. Cuir an toradh le hearra cosúil atá agat leis an modh céanna; cruthaíonn modh eile neamhréir bhréagach."
+        },
+        {
+          "title": "Socraigh aischur roimh phleanáil beartáin",
+          "text": "Má tá difríocht ón ordú nó mura dteastaíonn an t-earra níos mó, scrúdaigh an beartas aischuir láithreach. Seiceáil incháilitheacht, am, comhoibriú díoltóra, riocht agus costais iompair don ordú. Ní chruthaíonn liúntas stórála fuinneog aischuir chomh fada go huathoibríoch.\n\nCoinnigh an t-earra sa riocht reatha agus tú ag fiosrú. Féadfaidh baint pacáistithe, lipéad nó comhpháirteanna cur isteach ar aischur de réir na riachtanas. Má tá amhras ort, fiafraigh roimh athruithe a údarú. Ná seol earra gan réiteach go hidirnáisiúnta chun an bailiúchán a chríochnú amháin.\n\nSeol iarratas gonta le tagairt, fadhb shonrach agus fianaise. Luaigh an toradh atá uait, amhail measúnú aischuir nó seiceáil earra ar iarraidh. Lean an freagra agus na gníomhartha riachtanacha; ní chríochnaíonn cur isteach an iarratais féin an t-aischur."
+        },
+        {
+          "title": "Socraigh cé na hearraí atá réidh le seoladh le chéile",
+          "text": "Tosaíonn comhdhlúthú leis na hearraí atá le coinneáil. Cuir a n-ullmhacht, tréithe fisiciúla agus oiriúnacht do sheirbhísí reatha do cheann scríbe i gcomparáid. D’fhéadfadh éadach bog beag agus rud struchtúrtha leochaileach cosaint éagsúil a éileamh fiú má oireann an dá cheann i mbosca.\n\nSeiceáil an bhfuil ciall le fanacht le ceannach níos déanaí don earra is sine. Ní chuidíonn costas teoiriciúil níos ísle in aghaidh an earra má chruthaíonn moill fadhb stórála nó má chailleann tú do spriocdháta féin. Socraigh teorainn do chur leis an mbailiúchán agus pleanáil leis na hearraí réidh.\n\nÚsáid meáchain agus tomhais chun an meastachán a athbhreithniú. Iarr soiléiriú mura bhfuil sé soiléir an earra, pacáistiú miondíola nó beartán ullmhaithe atá sa mheáchan. Úsáid ionchuir inchomparáide. Ní gá gurb é an luachan sealadach is saoire praghas deiridh an bheartáin phacáilte."
+        },
+        {
+          "title": "Scríobh treoracha pacála le tosaíochtaí soiléire",
+          "text": "Sonraigh pacáistiú le coinneáil agus an chúis. Má tá bosca mar chuid de bhronntanas nó má chosnaíonn sé cruth íogair, abair sin. Má smaoiníonn tú ar phacáistiú seachtrach gan ghá a bhaint, deimhnigh an tseirbhís agus an chosaint a chaillfeá. Seachain treoir nach ndeir ach déan chomh beag agus is féidir é.\n\nCeangail gach treoir le haitheantóir earra. Teastaíonn sonraí i mbeartán measctha ionas nach gcuirfear iarratas ar phéire bróg amháin i bhfeidhm ar gach rud. Seiceáil táillí roghnacha agus an athraíonn seirbhís meáchan nó toisí deiridh.\n\nRoimh chur isteach, seiceáil liosta earraí, seoladh, seirbhís, dearbhú agus méideanna dlite. Tabhair faisnéis fhírinneach agus lean riachtanais reatha na tíre agus na líne. Tar éis chéim an stórais, bíonn sé i bhfad níos deacra botún méide nó pacála a cheartú."
+        },
+        {
+          "title": "Dún an lúb tar éis chur isteach",
+          "text": "Coinnigh tagairt an bheartáin leis na taifid earra istigh ann. Cruthaíonn sé nasc soiléir idir ordú táirge agus seoladh idirnáisiúnta. Sábháil an liosta deiridh agus roghanna pacála deimhnithe chun an t-ábhar a sheiceáil nuair a thagann sé.\n\nMá fhanann earra taobh thiar, coinnigh a dháta stórála agus an chéad ghníomh infheicthe. Ní chiallaíonn beartán amháin curtha isteach go bhfuil an cuntas ar fad réitithe. Seiceáil an liosta stórais tar éis ullmhaithe le haghaidh earra ag fanacht le cinneadh, freagra díoltóra nó beartán ar leith.\n\nTá an próiseas críochnaithe nuair atá toradh d’aon ghnó ag gach earra: seolta, ag fanacht le gníomh doiciméadaithe nó i bpróiseas aischuir deimhnithe. Úsáid an treoir QC do fhianaise níos mine. Don chéad chéim lóistíochta eile, lean treoracha pacála agus rianaithe leis na taifid earra céanna."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Beartas stórála OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "Faisnéis iniúchta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-returns-refunds",
+      "tag": "Iar-dhíolachán",
+      "title": "Aischuir agus Aisíocaíochtaí OOPBuy: Incháilitheacht, Fianaise agus Céimeanna",
+      "description": "Foghlaim cad le seiceáil roimh aischur OOPBuy, conas fadhb a dhoiciméadú agus cén fáth gur céimeanna éagsúla iad ceadú agus socraíocht airgid.",
+      "primaryKeyword": "aischuir agus aisíocaíochtaí OOPBuy",
+      "secondaryKeywords": [
+        "aisíocaíocht OOPBuy",
+        "beartas aischuir OOPBuy",
+        "seoladh aischuir OOPBuy"
+      ],
+      "takeaways": [
+        "Seiceáil coinníollacha láithreach tar éis stórála; ní fuinneog aischuir an tréimhse stórála.",
+        "Coinnigh lipéid, pacáistiú agus fianaise ordaithe agus aischur á mheas.",
+        "Iarr fíorchostais agus scar aisíocaíocht cheadaithe ó airgead faighte."
+      ],
+      "sections": [
+        {
+          "title": "Aithin an chéim roimh aisíocaíocht a iarraidh",
+          "text": "D’fhéadfadh ceist aisíocaíochta OOPBuy tagairt do cheannach nár sheol an díoltóir, earra sa stóras, aischur ag dul ar ais nó beartán seachadta thar lear. Aithin an t-earra beacht agus a chéim reatha. Braitheann an chéad ghníomh ar an méid atá tarlaithe.\n\nOscail an taifead oifigiúil, nótaigh aitheantóir agus stádas is déanaí agus seiceáil an cealú, malartú, aischur nó fadhb iar-sheachadta atá i gceist. Laghdaíonn an gníomh ceart an seans go bhfreagróidh teachtaireacht ghinearálta ceist eile.\n\nIs treoir agus suíomh aimsithe neamhspleách OOPBuy Tab; ní féidir leis aischuir a cheadú ná rochtain ar do chuntas. Cuir iarratas tríd an ordú nó cainéal iar-dhíolacháin oifigiúil. Coinnigh an plé leis an ordú ábhartha nuair is féidir chun fianaise agus cinneadh a choinneáil le chéile."
+        },
+        {
+          "title": "Seiceáil an fhuinneog agus coinníollacha láithreach",
+          "text": "Míníonn an fógra oifigiúil fuinneog choinníollach cúig lá, 120 uair, tar éis “Stocked in”, ag tosú san uair ina dhiaidh. Tagraíonn sé freisin do sheacht lá tar éis fáil shínithe. Teastaíonn tacaíocht díoltóra agus riocht inghlactha athdhíola; ní dhéanann cur isteach in am gach earra incháilithe.\n\nLéigh an beartas beo agus amanna d’ordaithe go pras. Ná fan le deireadh na stórála. Is ceisteanna éagsúla stóráil agus incháilitheacht aischuir, agus ba cheart a gcloig a thaifeadadh ar leith i nótaí.\n\nTá catagóirí agus coinníollacha eisiata, lena n-áirítear earraí saincheaptha áirithe agus earraí a bhfuil pacáistiú nó lipéid riachtanacha bainte. Má tá an t-ordú lasmuigh de na coinníollacha, fiafraigh an mbreithneoidh an díoltóir é seachas teidlíocht chaighdeánach a thoimhdiú. Teastaíonn a chomhaontú fós faoin bhfógra."
+        },
+        {
+          "title": "Bailigh fianaise timpeall ar cheist shoiléir amháin",
+          "text": "Sábháil sonraí a dheimhníonn an ceannach: nasc, méid nó dath roghnaithe, cainníocht agus cur síos ábhartha. Ansin bailigh fianaise na himní féin. Tacaíonn grianghraf lipéid le méid mícheart; taispeánann gar-amharc soiléir agus radharc níos leithne smál agus a áit.\n\nDéan cur síos beacht ar an difríocht. Tá dúghorm ordaithe, lipéad dubh faighte níos úsáidí ná tá an t-earra go dona. Má tá tomhas tábhachtach, taispeáin an modh agus an pointe comparáide. Tá ionchas doiléir oiriúnachta níos deacra a mheas ná neamhréir dhoiciméadaithe le sonraíocht roghnaithe.\n\nÚsáid grianghraif d’ordaithe nó den earra a fuair tú. Ní fianaise riocht do bheartáin í íomhá aimsithe catalóige. Coinnigh comhaid bhunaidh nuair is féidir agus seachain eagarthóireacht a cheileann comhthéacs, aitheantóir, lipéad nó méid iomlán na faidhbe."
+        },
+        {
+          "title": "Scar táille seirbhíse ó iompar aischuir",
+          "text": "Tarscaoileann an fógra oifigiúil táille aischuir nó malartaithe don chéad oibríocht i mí féilire. Ní gealltanas postais saor é. D’fhéadfadh táille seirbhíse 5 RMB a bheith ar iarratais bhreise ar chúiseanna pearsanta, agus d’fhéadfadh iompar intíre a bheith le híoc freisin.\n\nIarr luachan mionsonraithe do d’iarratas féin. Tá cur síos éagsúil san fhógra ar láimhseáil táille seolta bhunaidh an díoltóra, mar sin ná ríomh iomlán uilíoch ó abairt aonair. Deimhnigh méid earraí le haisíoc, iompar, táille seirbhíse agus cé a íocann gach cuid.\n\nCuir an toradh glan i gcomparáid. D’fhágfadh aisíocaíocht hipitéiseach $18 le costais aischuir deimhnithe $7 méid $11 roimh choigeartuithe eile. Is samplaí iad, ní rátaí OOPBuy. Cuidíonn an fíorluachan leat cinneadh idir aischur deonach agus earra atá inghlactha ar shlí eile a choinneáil."
+        },
+        {
+          "title": "Scríobh iarratas inghníomhaithe",
+          "text": "Coinnigh an chéad iarratas gearr go leor le hathbhreithniú gan sonraí riachtanacha a chailleadh. Cuir aitheantóir, earra agus leagan, dátaí, fadhb agus toradh inmhianaithe ann. Ceangail an fhianaise is láidre seachas mórán gabhálacha neamhghaolmhara. Scar fadhbanna éagsúla earraí go soiléir.\n\nMar shampla, mínigh go dtaispeánann lipéad stórais méid eile ón ordú íoctha, ainmníonn an dá mhéid agus iarr measúnú aischuir nó ionadaí ceart. Má d’athraigh tú d’intinn amháin, abair go hionraic é. D’fhéadfadh cúis lochtach mhíchruinn an t-athbhreithniú a chasta.\n\nFiafraigh faoin gcéad ghníomh, méideanna le híoc agus an gá an t-earra a fhágáil gan teagmháil. Lean treoracha cuntais d’iarmhéid nó íocaíocht má tá táille dheimhnithe ann. Taifead freagra agus spriocdháta agus lean ort ag seiceáil ceisteanna a dteastaíonn do fhreagra uathu."
+        },
+        {
+          "title": "Lean aischur mar phróiseas, ní cnaipe amháin",
+          "text": "Is garspriocanna éagsúla iad iarratas, ceadú, imeacht ar ais, fáil díoltóra agus aisíocaíocht chríochnaithe. Sábháil deimhniú a shonraíonn cén ceann a tharla. Ní hionann admháil teachtaireachta tacaíochta agus deimhniú gur ghlac an díoltóir leis an earra.\n\nAgus aischur stórais á mheas, ná cuir an t-earra i mbeartán idirnáisiúnta ná ná húdaraigh athruithe a d’fhéadfadh a riocht a athrú. Coinnigh inaitheanta é agus coinnigh pacáistiú agus comhpháirteanna riachtanacha. Má athraíonn do phlean, deimhnigh stádas roimh threoir chontrártha.\n\nDo mhalartú, fiafraigh cad a tharlaíonn mura bhfuil ionadaí ar fáil agus an mbeidh táillí breise iompair. Nuair a thagann ionadaí, scrúdaigh mar chinneadh nua é seachas glacadh go bhfuil an fhadhb réitithe. Nuashonraigh an loga ionas nach seolfá an bun-earra de thaisme ná nach gcaillfeá rian an ionadaí."
+        },
+        {
+          "title": "Scar ceadú aisíocaíochta ó airgead faighte",
+          "text": "Nuair a dheimhnítear aisíocaíocht, taifead méid, airgeadra, ceann scríbe agus tagairt. Seiceáil an coigeartú iarmhéid OOPBuy nó aisíoc chuig modh íocaíochta atá ann. Is torthaí éagsúla iad; ní airgead sa bhanc cheana é creidmheas cuntais.\n\nTugann an fógra oifigiúil tréimhse mheasta socraíochta cárta bainc 7–15 lá tar éis deimhnithe, ag brath ar an mbanc. Glac leis mar mheastachán an fhógra, ní ráthaíocht ná amchlár uilíoch do gach bealach íocaíochta. Fiafraigh den tacaíocht cén chéim a bhaineann le d’aisíocaíocht.\n\nMá tá an tréimhse caite, tabhair tagairt agus dáta deimhnithe le hiarratas rianaithe. Cuir airgeadraí na buníocaíochta agus na haisíocaíochta i gcomparáid roimh earráid a chinneadh. Iarr míniú ar asbhaint doiléir seachas táille a chumadh nó glacadh gur inaisíoctha an costas iomlán."
+        },
+        {
+          "title": "Réitigh fadhbanna iar-sheachadta go pras",
+          "text": "Is cinneadh níos mó aischur idirnáisiúnta ná aischur ón stóras. Deir an beartas go n-íocann an custaiméir iompar ar ais go dtí an tSín agus táillí gaolmhara, agus na coinníollacha fós le comhlíonadh. Faigh treoracha scríofa agus measúnú soiléir costais roimh aon rud a phostáil.\n\nMá tá beartán damáistithe, neamhiomlán nó mícheart, coinnigh pacáistiú seachtrach, lipéad seolta, liosta earraí agus grianghraif. Tá spriocdhátaí gearra tuairiscithe agus fianaise san fhógra iar-sheachadta; déan teagmháil láithreach seachas fanacht agus tromchúis na faidhbe á phlé agat.\n\nI gcás fadhb dealraitheach meáchain, iarrann an fógra fianaise mheáite roimh oscailt. Go ginearálta, doiciméadaigh an méid a fhaigheann tú chomh luath agus is praiticiúil agus lean nósanna seachadta an iompróra. Ná caith pacáistiú amach ná deisigh agus fianaise ag teastáil. Tosaíonn tuairisciú measúnú, ní ráthaíonn sé éileamh rathúil."
+        },
+        {
+          "title": "Seachain cinntí aischuir inseachanta an chéad uair eile",
+          "text": "Tarlaíonn cuid mhór den ullmhú roimh aischur a bheith ag teastáil. Deimhnigh leagan beo, cuir tomhais i gcomparáid, meas seoladh idirnáisiúnta agus caomhnaigh an liostú roimh íoc. Laghdaíonn sé fadhbanna ó rogha mhícheart nó seachadadh a sháraíonn buiséad.\n\nSa stóras, athbhreithnigh d’fhianaise féin go pras agus iarr tomhas fad atá am cinnidh ann. Mura bhfuil tú cinnte faoin earra, cuir baint pacáistithe agus cur isteach beartáin siar go dtí freagra. Is luachmhaire cinneadh soiléir coinnigh nó cuir ar ais ná bailiúchán neamhchríochnaithe sa stóras.\n\nBa cheart go dtaispeánfadh an taifead deiridh an réiteach: earra coinnithe, ionadaí glactha, aischur críochnaithe nó airgead faighte sa cheann scríbe sonraithe. Má tá rud oscailte, scríobh an chéad ghníomh agus cé a dhéanfaidh é. Úsáid treoracha stórais agus QC chun na pointí seo a chur isteach i gceannacháin amach anseo ón tús."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Stádais ordaithe agus beartáin OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Fadhbanna tar éis seachadta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-warehouse-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-price-check"
+      ]
+    },
+    {
+      "slug": "oopbuy-tracking-guide",
+      "tag": "Seachadadh",
+      "title": "Treoir Rianaithe OOPBuy: Léigh Nuashonruithe Ordaithe agus Beartáin i gceart",
+      "description": "Tuig rianú OOPBuy, scar seachadadh díoltóra ó sheoladh idirnáisiúnta agus aithin an fhianaise le bailiú nuair a theastaíonn cabhair.",
+      "primaryKeyword": "treoir rianaithe OOPBuy",
+      "secondaryKeywords": [
+        "rianú OOPBuy",
+        "stádas ordaithe OOPBuy",
+        "rianú beartáin OOPBuy"
+      ],
+      "takeaways": [
+        "Seiceáil an ordú ceannaigh nó beartán idirnáisiúnta atá á fheiceáil agat.",
+        "Lean an tagairt bheacht agus imeachtaí iompróra seachas brí chéanna a thabhairt do gach stádas.",
+        "Seol amlíne ghonta agus an t-imeacht deimhnithe is déanaí nuair a theastaíonn fiosrú."
+      ],
+      "sections": [
+        {
+          "title": "Aithin ar dtús cén turas atá á rianú",
+          "text": "Baineann dhá chéim le siopadóireacht OOPBuy: seolann an díoltóir chuig stóras na Síne, ansin taistealaíonn beartán idirnáisiúnta chuig do cheann scríbe. Mar sin d’fhéadfadh stádas seolta imeacht ón díoltóir a chiallaíonn seachas beartán ar a bhealach chuig do theach.\n\nScarann an treoir oifigiúil orduithe ceannaigh agus orduithe beartáin. Úsáideann sí “Shipped” d’imeacht díoltóra sa chéad phróiseas agus do bhailiú iompróra sa dara ceann. Seiceáil comhthéacs agus aitheantóir an leathanaigh roimh léirmhíniú. Réitíonn an difríocht seo mórán nuashonruithe a bhfuil cuma chontrártha orthu.\n\nCuir ceist nithiúil: an bhfuilim ag fanacht le táirge sa stóras, leis an stóras beartán a ullmhú nó leis an iompróir é a sheachadadh? Scríobh an freagra leis an tagairt chuí. Ansin fiosróidh tú an chéim cheart seachas ordú intíre nach beartán idirnáisiúnta fós é a chuardach ar shuíomh rianaithe idirnáisiúnta."
+        },
+        {
+          "title": "Coinnigh na haitheantóirí cearta le chéile",
+          "text": "Cruthaigh taifead a nascann an t-ordú leis an mbeartán níos déanaí. Sábháil aitheantóir ordaithe, tagairt seachadta díoltóra má tá sí ann, uimhir beartáin nó bealaigh idirnáisiúnta, seirbhís agus dáta imeachta. Má chuirtear roinnt orduithe le chéile, liostaigh faoin mbeartán iad chun ábhar a dheimhniú níos déanaí.\n\nTreoraíonn an treoir do thosaitheoirí úsáideoirí chuig “My Waybill” agus “Waybill Details”. Úsáid nascleanúint reatha an chuntais agus sonraí do bheartáin féin. D’fhéadfadh gabháil scáileáin gan aitheantóir a bheith deacair nuair atá roinnt seoltaí ar siúl.\n\nCóipeáil uimhreacha go cúramach agus coinnigh ainm an iompróra leo. Ná glac leis go n-oireann uimhir ó scáileán amháin in áit gach tagartha iompróra. Má chruthaíonn aistriú uimhir nua, cuir leis an taifead céanna í seachas nóta neamhghaolmhar a chailleann an nasc leis an ordú."
+        },
+        {
+          "title": "Léigh stádais stórais mar chéimeanna oibríochta",
+          "text": "D’fhéadfadh deimhniú seachadta an díoltóra teacht roimh iniúchadh agus stóráil. Scarann an treoir stádais fáil shínithe ó na seiceálacha agus stóráil níos déanaí. Ní gá go gciallaíonn scanadh tagtha go bhfuil an t-earra réidh le comhdhlúthú idirnáisiúnta.\n\nLorg teachtaireachtaí a éilíonn gníomh. Féadfaidh íocaíocht bhreise nó iarratas deimhnithe dul chun cinn a stopadh go dtí freagra. Léigh an t-iarratas agus an míniú iarbhír seachas gach stádas gan athrú a mheas mar mhoill iompair. Mura dtuigeann tú an gníomh, fiafraigh faoin ordú sonrach.\n\nÚsáid an chéim stórais chun an t-earra a mheas. Deimhnigh leagan, grianghraif agus aon imní roimh chur isteach. Ní ceadú oiriúnachta, feidhmíochta ná barántúlachta é dul chun cinn rianaithe. Is féidir leis an lóistíocht dul i gceart agus cinneadh ceannaigh ar leith a bheith fós uait."
+        },
+        {
+          "title": "Scar ullmhú beartáin ó ghluaiseacht iompróra",
+          "text": "Tar éis beartán idirnáisiúnta a chur isteach, d’fhéadfadh cúraimí stórais a bheith le déanamh roimh iompar. Ní himeachtaí inmhalartaithe iad íocaíocht, athbhreithniú, sórtáil, pacáil agus bailiú. Aithníonn an treoir pacáil chríochnaithe ar leith ó bhailiú, rud a mhíníonn ullmhú infheicthe roimh scanadh iompair.\n\nLéigh an t-imeacht is déanaí agus a stampa ama. Ní chruthaíonn tagairt rianaithe ann féin go bhfuil feithicil nó eitleán imithe. Úsáid cur síos sonrach mar fhianaise ar a bhfuil ar eolas agus ná líon an bhearna le suíomh samhlaithe.\n\nMá léiríonn an cuntas ceist íocaíochta nó seolta, réitigh í ar dtús go hoifigiúil. Má tá ullmhú críochnaithe ach bailiú doiléir, fiafraigh an ndearnadh an t-aistriú. Is fusa sin a fhreagairt ná cén fáth atá sé déanach gan an chéim a aithint."
+        },
+        {
+          "title": "Tuig bearna rianaithe gan amchlár a chumadh",
+          "text": "Taifeadann nuashonruithe iompróra imeachtaí, ní suíomh beo leanúnach. Ní insíonn tréimhse gan scanadh duit cá bhfuil an beartán go beacht ná cén fáth nach bhfuil nuashonrú ann. Cuir an t-imeacht deimhnithe deireanach le faisnéis do líne roimh chonclúid.\n\nNíl líon iontaofa aonair laethanta a dhéanann gach beartán OOPBuy déanach. Athraíonn láimhseáil tionscnaimh, bealach, próiseáil ceann scríbe, laethanta saoire agus coinníollacha áitiúla. Úsáid an meastachán beo agus téarmaí an tseolta, ag aithint nach dáta ráthaithe é.\n\nCoinnigh amlíne ghairid seachas roinnt leathanaigh a athnuachan i gcónaí. Nótaigh imeacht, an t-imeacht iompróra deireanach, dáta seiceála agus fógraí seirbhíse ábhartha. Má sháraíonn an bhearna treoir na seirbhíse nó má chailltear freagra geallta, beidh fíricí réidh d’fhiosrú dírithe agat."
+        },
+        {
+          "title": "Freagair iarratais chustaim nó doiciméad go cúramach",
+          "text": "Má luaitear custaim nó doiciméid, léigh an teachtaireacht bheacht agus aithin cé atá á iarraidh. Úsáid teagmháil sa chuntas oifigiúil nó seirbhís oifigiúil an iompróra aitheanta. Ná gníomhaigh ar nasc íocaíochta gan iarraidh díreach mar go bhfuil tú ag fanacht le beartán.\n\nBailigh fíorthaifid an cheannaigh: tuairiscí, cainníochtaí, admhálacha agus tagairt beartáin. Tabhair faisnéis chruinn nuair a éilíonn próiseas dlisteanach í. Ná hathraigh cur síos nó luach chun toradh a chur i bhfeidhm agus ná glac le praghas scarbhileoige mar shonrasc.\n\nMá tá teanga rianaithe doiléir, fiafraigh den tacaíocht cén gníomh atá de dhíth. Ní chruthaíonn imeacht ginearálta custaim táille dlite, urghabháil ná dodhéantacht seachadta. Is conclúidí ar leith iad a dteastaíonn fianaise uathu. Coinnigh cóipeanna freagraí agus dátaí seolta."
+        },
+        {
+          "title": "Lean an t-aistriú chuig seachadadh áitiúil",
+          "text": "Nuair a théann seoladh idirnáisiúnta isteach sa chéim áitiúil, seiceáil an aithníonn sonraí iompróir ceann scríbe nó tagairt bhreise. Lean nasc sa taifead fíoraithe nuair atá sé ann. Coinnigh an tagairt bhunaidh freisin, mar b’fhéidir go mbeidh gá léi chun imeacht áitiúil a nascadh leis an turas idirnáisiúnta.\n\nSeiceáil an seoladh, lena n-áirítear árasán agus cód poist. Má fheictear iarracht seachadta nó fógra bailithe, léigh roghanna agus spriocdháta an iompróra iarbhír. Ná glac leis go bhfuil dara hiarracht, atreorú nó tréimhse bailithe mar an gcéanna i ngach tír agus seirbhís.\n\nMá theastaíonn soiléiriú seolta, freagair trí phróiseas fíoraithe an iompróra agus cuir OOPBuy ar an eolas nuair is cuí. Taifead athrú nó socrú bailithe. Tá plean praiticiúil don chéim dheiridh chomh tábhachtach le faire ar an turas fada, go háirithe mura mbeidh duine ann chun an pacáiste a ghlacadh."
+        },
+        {
+          "title": "Bíodh a fhios agat cad le déanamh má tá seachadadh mícheart",
+          "text": "Má deir rianú seachadta ach ní fhaigheann tú an beartán, lorg grianghraf, pointe fáiltithe, taisceadán nó suíomh eile sna sonraí. Deimhnigh seoladh an tseolta agus déan teagmháil leis an iompróir áitiúil go hoifigiúil. Iarr taifead seachadta seachas cúis ar leith a thoimhdiú.\n\nInis do OOPBuy leis an aitheantóir agus freagra an iompróra. Má tá an pacáiste ann ach damáistithe nó neamhiomlán, coinnigh lipéad, pacáistiú, liosta agus grianghraif. Tá spriocdhátaí gearra sa treoir iar-sheachadta, mar sin tuairiscigh go pras agus lean na treoracha fianaise do do chás.\n\nScar fianaise seachadta ó fhianaise earraí. Féadfaidh scanadh áit fágála a thaispeáint, ach ní chruthaíonn sé na táirgí aonair istigh. Cabhraíonn taifid shoiléire ag an dá leibhéal leis na páirtithe measúnú a dhéanamh gan tuairimíocht ná pictiúir neamhghaolmhara."
+        },
+        {
+          "title": "Seol amlíne ar féidir le tacaíocht a fhiosrú",
+          "text": "Aithníonn fiosrú úsáideach beartán, seirbhís, tír cheann scríbe, dáta imeachta, imeacht deireanach deimhnithe agus do cheist. Cuir iarratais ón iompróir agus an ndearna tú gníomh orthu leis. Ná postáil do sheoladh iomlán nó aitheantóirí pearsanta i ngrúpaí poiblí.\n\nMar shampla, mínigh go léiríonn an cuntas bailiú iompróra, tabhair dáta an imeachta deireanaigh agus fiafraigh an féidir fiosrú iompróra faoin tseirbhís roghnaithe. Má gealladh nuashonrú, tabhair tagairt agus dáta geallta. Fiafraigh cad ba cheart a dhéanamh agus cathain teagmháil arís.\n\nCoinnigh faisnéis nua sa taifead céanna go dtí seachadadh nó réiteach doiciméadaithe. Is úsáideach rianú nuair a thacaíonn sé le cinneadh: freagairt, bailiú, fianaise a chaomhnú nó fiosrú a iarraidh. Do sheoladh amach anseo, fill ar threoracha seolta agus pacála roimh bhealach a roghnú."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Stádais ordaithe agus beartáin OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Fógra seachadta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Fadhbanna tar éis seachadta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-haul-packing",
+      "tag": "Pacáil",
+      "title": "Pacáil Bhailiúchán OOPBuy: Cosain Earraí agus Seiceáil an Costas Deiridh",
+      "description": "Pleanáil beartán OOPBuy le roghanna praiticiúla pacáistithe, seiceálacha bealaigh agus cleachtadh pacála roimh sheoladh idirnáisiúnta.",
+      "primaryKeyword": "pacáil bhailiúchán OOPBuy",
+      "secondaryKeywords": [
+        "cleachtadh beartáin OOPBuy",
+        "pacáistiú OOPBuy",
+        "seoladh bailiúcháin OOPBuy"
+      ],
+      "takeaways": [
+        "Roghnaigh pacáil de réir na n-earraí atá le cosaint agus an bhealaigh a iompróidh iad.",
+        "Is comhréitigh iad baint boscaí agus comhbhrú, ní coigilteas uathoibríoch ná moltaí do chách.",
+        "Braitheann toradh cleachta ar an mbealach agus cumraíocht phacála a choinneáil gan athrú."
+      ],
+      "sections": [
+        {
+          "title": "Tabhair sprioc shoiléir don phacáil",
+          "text": "Cothromaíonn plean maith OOPBuy cosaint, méid, costas agus an riocht ina dteastaíonn na hearraí uait. Is féidir coinbhleacht a bheith eatarthu. Caomhnaíonn bosca miondíola cur i láthair ach úsáideann sé spás; laghdaíonn baint toirtiúlacht ach d’fhéadfadh cosaint eile a bheith ag teastáil.\n\nSocraigh cad atá tábhachtach do gach earra. D’fhéadfadh bronntanas a bhosca bunaidh a éileamh, mála struchtúrtha tacaíocht crutha, agus éadach bog in-nite pacáil eile ó ghabhálas leochaileach. Ná cuir treoir ghinearálta i bhfeidhm ar gach rud toisc gur oibrigh sí i bhfíseán do dhuine eile.\n\nIs é an sprioc beartán oiriúnach sainithe le costas a thuigeann tú. Ní hé an bosca is lú an toradh is fearr go huathoibríoch; d’fhéadfadh gach seirbhís chosanta roghnach a chur leis a bheith neamhriachtanach freisin. Ceangail gach rogha le ceist nithiúil faoi earra, úsáid nó iompar."
+        },
+        {
+          "title": "Cuir isteach ach earraí atá roghnaithe le coinneáil",
+          "text": "Críochnaigh cinneadh an táirge roimh chinneadh pacála. Seiceáil leagan agus d’fhianaise stórais féin, ansin réitigh imní faoi mhéid, cainníocht nó riocht infheicthe. Má theastaíonn tomhas eile, iarr é roimh an earra a ghealladh do sheoladh idirnáisiúnta.\n\nCuimhnigh ar incháilitheacht aischuir le hathruithe pacáistithe. Féadfaidh baint clibeanna, séalaí, gabhálas nó pacáistithe riachtanaigh cur isteach ar chomhlíonadh na gcoinníollacha. Fiafraigh faoin earra gan réiteach ar dtús. Is drochmhalartú pacáil spárála spáis má tá aischur á bhreithniú fós.\n\nCruthaigh liosta deiridh le tagairt ordaithe ag gach earra. Marcáil earraí le fanacht sa stóras agus teorainn do cheannacháin bhreise. Seachnaíonn sé bailiúchán atá ag fás gan deireadh agus tugann sé ábhar cobhsaí do chomparáid bealaí, iarratais seirbhíse agus seiceáil an bheartáin ullmhaithe."
+        },
+        {
+          "title": "Tuig cén fáth a bhfuil meáchan agus toisí tábhachtach",
+          "text": "Tá spás fisiciúil agus meáchan scála ag beartán. Is féidir rialacha billeála éagsúla a bheith ag seirbhísí, mar sin léigh riail an bhealaigh iarbhír. Ná hiompórtáil roinnteoir toirtmheáchain ó ghníomhaire, iompróir nó fóram eile ag glacadh go rialaíonn sé do luachan.\n\nDeir treoir oifigiúil OOPBuy go mbraitheann seoladh deiridh ar thoisí agus meáchan tomhaiste. Mar sin ba cheart an réamh-mheastachán fanacht sealadach go dtí na tomhais phacáilte. Ní gá gurb é meáchan earraí scaoilte meáchan bosca leo agus ábhar cosanta.\n\nMar shampla, d’fhéadfadh earra éadrom i bpacáistiú mór righin a bheith níos íogaire do mhéid ná earra dlúth trom. Míníonn sé tábhacht roghanna pacála, ní coigilteas seasta. Cuir fíorluachana na cumraíochta incháilithe i gcomparáid agus coinnigh riail na seirbhíse leis an uimhir."
+        },
+        {
+          "title": "Roghnaigh cosaint don táirge, ní don ghrianghraf",
+          "text": "Míníonn fógra pacáistithe OOPBuy cartáin, pacáil shimplí, málaí folúis, cosaint mboilgeog agus scannán sínte. Braitheann infhaighteacht ar sheirbhís agus beartán. Meas an roghchlár mar roghanna le breithniú, ní seicliosta uasghráduithe do gach seoladh.\n\nSmaoinigh ar an damáiste atá le cosc. Réitíonn mála bog timpeall éadaigh fadhb eile ó mhaolú timpeall réad leochaileach. Ní mhíníonn cartán amháin tacaíocht istigh, agus ní ionad treorach soiléire faoi chuid leochaileach roinnt sraitheanna fillte.\n\nFiafraigh an bhfuil seirbhís oiriúnach má tá tú éiginnte faoin ábhar nó tógáil. D’fhéadfadh comhbhrú a bheith míchuí d’earraí a bhraitheann ar chruth nó a bhfuil sonraí íogaire orthu. Ná roghnaigh modh ó mhionsamhail catalóige amháin; b’fhéidir nach nochtann sí righneas, leochaileacht ná toirtiúlacht an earra féin."
+        },
+        {
+          "title": "Socraigh go sainráite cad a tharlóidh do bhoscaí",
+          "text": "Más mian leat bosca bróg nó pacáistiú miondíola a choinneáil, luaigh an t-earra. Má tá baint nó fillte á mheas agat, seiceáil infhaighteacht agus cad a fhanfaidh timpeall an táirge. Is féidir le bunphacáistiú cabhrú le cur i láthair, stóráil nó cosaint gan athdhíol a bheith beartaithe.\n\nCuir tairbhe leis an iarmhairt. Laghdaíonn baint bosca toirt ach d’fhéadfadh sí tacaíocht a bhaint nó codanna a chaithfidh fanacht le chéile a scaradh. B’fhéidir go mbeidh cartán seachtrach eile riachtanach. Níl riail uilíoch ann go ndéanann baint bosca gach bailiúchán níos saoire tar éis gach rogha.\n\nDo sheoladh measctha, liostaigh cinneadh gach earra: coinnigh bosca bronntanais, bain cartán iompair iomarcach amháin, nó fiafraigh roimh phacáiste ar leith a athrú. Seachain bain gach bosca má chiallaíonn tú ciseal seachtrach indiúscartha amháin."
+        },
+        {
+          "title": "Seiceáil comhoiriúnacht bealaigh roimh chomhdhlúthú",
+          "text": "Ní chruthaíonn táirge sa chatalóg gur féidir leis taisteal ar do sheirbhís roghnaithe. Luann treoir phacála OOPBuy srianta línte ceallraí agus fógra seolta ar leith cásanna ina dteastaíonn pacáil aonair d’earraí rómhóra. Lean lipéid stórais agus coinníollacha reatha do d’earraí féin.\n\nSeiceáil an liosta iomlán in aghaidh na seirbhíse. Má athraíonn earra incháilitheacht, cuir beartán comhcheangailte le seoladh ar leith trí luachana fíora agus an chosaint chéanna. Ná glac go mbíonn comhdhlúthú níos fearr i gcónaí: athraíonn beartáin bhreise agus línte éagsúla an ríomh i dtreonna contrártha.\n\nDéan cur síos cruinn agus seiceáil catagóirí éiginnte roimh cheannach. Ní modh é pacáil chun earraí toirmiscthe a cheadú nó riachtanais cinn scríbe a sheachaint. Mura n-iompraíonn seirbhís earra, fiafraigh faoi rogha dhleathach incháilithe nó chéad chéim oiriúnach fad atá sé sa stóras."
+        },
+        {
+          "title": "Úsáid cleachtadh pacála chun fíor-éiginnteacht a réiteach",
+          "text": "Míníonn treoracha oifigiúla Parcel Rehearsal roghnú fo-orduithe incháilithe agus iarratas le sonraí faighteora agus pacála. Is 20 CNY an táille fhoilsithe. Seiceáil an próiseas cuntais agus táille reatha roimh íoc, go háirithe má tá do roghanna éagsúil ón treoir.\n\nBíonn cleachtadh úsáideach má d’athródh tomhas pacáilte do rogha seolta. Socraigh an chumraíocht ar dtús. Braitheann an ríomh, de réir an fhógra, ar an mbealach, modh pacála agus sonraí a choinneáil gan athrú; is féidir athruithe níos déanaí an toradh agus an táille a athrú.\n\nLéigh coinníollacha cealaithe roimh chur isteach. Ceadaítear cealú roimh na hearraí a bhaint den tseilf, le srianta ina dhiaidh, mar sin ná glac le táille inaisíoctha tar éis tosú oibre. Iarr soiléiriú má tá stádas doiléir. Is cinneadh ullmhúcháin íoctha é, ní ráthaíocht luas seachadta ná deireadh le gach éiginnteacht iompair."
+        },
+        {
+          "title": "Scríobh treoracha ar féidir le duine eile a leanúint",
+          "text": "Úsáid treoracha gearra sonracha le tosaíocht shoiléir. Aithin an táirge leis an tagairt ordaithe, luaigh coinneáil nó baint agus riachtanas cosanta. Má bhraitheann treoir ar indéantacht, iarr deimhniú seachas roghnú idir spriocanna neamhoiriúnacha a fhágáil faoi thuairim.\n\nMar shampla, iarr an bosca bronntanais marcáilte a choinneáil, a ábhar le chéile agus cosaint sheachtrach oiriúnach a dheimhniú. D’earra eile, fiafraigh an féidir pacáistiú díoltóra iomarcach a bhaint gan pacáistiú riachtanach an táirge a athrú. Is iarratais le fíorú iad, ní toimhdí faoi sheirbhís san áireamh.\n\nCuir roghanna an chomhéadain le do nóta scríofa. D’fhéadfadh iarratas bosca a choinneáil teacht salach ar rogha bainte in áit eile. Seiceáil táille bhreise agus sábháil roghanna deimhnithe. Laghdaíonn soiléireacht éiginnteacht níos fearr ná mír fhada le roghanna, scéalta grinn agus roinnt pleananna éagsúla."
+        },
+        {
+          "title": "Seiceáil an beartán ullmhaithe agus pleanáil fáil",
+          "text": "Roimh an gcinneadh deiridh, cuir liosta ábhair, faighteoir, bealach, pacáil, tomhais agus méid dlite i gcomparáid. Deimhnigh lascaine iarbhír agus athbhreithnigh an buiséad iomlán. Is meastacháin iad praghsanna USD ar leathanaigh aimsithe agus ní chuimsíonn siad costas iomlán an bhailiúcháin a fháil.\n\nCoinnigh tagairt an bheartáin le tagairtí earraí agus deimhnithe pacála. Nuair a thagann sé, beidh tú in ann gach píosa agus pacáistiú riachtanach a sheiceáil. Caomhnaigh fianaise seachadta go pras má tá fadhb ann seachas ábhair sheachtracha a chaitheamh amach láithreach.\n\nCríochnaíonn plean rathúil le hearraí i riocht inghlactha ar chostas a cheadaigh tú go feasach. Úsáid an treoir rianaithe tar éis imeachta agus treoir aischuir má thaispeánann iniúchadh fadhb roimh sheoladh. Don chéad bhailiúchán eile, taifead roghanna pacála úsáideacha ionas go dtosaíonn an cinneadh le fianaise."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Treoir phacáistithe OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Treoracha cleachta pacála OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        },
+        {
+          "label": "Treoir seolta ar leith OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        },
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-returns-refunds"
+      ]
+    }
+  ],
+  "guides": {
+    "guide": {
+      "sections": [
+        {
+          "title": "Tosaigh le gearrliosta soiléir",
+          "text": "Roghnaigh catagóir agus cuir cúpla liostú ábhartha i gcomparáid. Taifead ainm, nasc foinseach, dath, méid agus cainníocht. Is tagairt tosaigh praghas an eolaire; seiceáil an rogha agus an méid reatha in OOPBuy. Coinnigh ceisteanna faoi thomhais, ábhair nó gabhálais leis an earra. Déanann gearrliosta beag níos éasca a aithint nuair a léiríonn pictiúir chosúla leaganacha nó roghanna díoltóra éagsúla."
+        },
+        {
+          "title": "Athbhreithnigh an t-ordú roimh íoc",
+          "text": "Míníonn treoir OOPBuy ceannach tríd an ardán agus fáil sa stóras sa tSín. Íoctar earraí agus seachadadh intíre ar dtús; íoctar seoladh idirnáisiúnta níos déanaí ar leith. Roimh ordú, seiceáil an liostú agus meaitseáil roghanna le do nótaí. Léigh an méid agus coinníollacha an earra. Réitigh méid, cainníocht nó srian doiléir roimh íocaíocht. Sábháil tagairt an ordaithe chun faisnéis stórais níos déanaí a nascadh leis an gceannach ceart."
+        },
+        {
+          "title": "Seiceáil an t-earra nuair a fheictear faisnéis stórais",
+          "text": "Is céimeanna ar leith iad seoladh díoltóra agus próiseáil stórais. Nuair a bhíonn faisnéis stórais ann, léigh an stádas agus seiceáil grianghraif. Cuir dath, lipéad méide, cainníocht agus riocht infheicthe leis an rogha ordaithe. Mura bhfeictear sonra úsáideach, fiafraigh an bhfuil pictiúr nó tomhas breise ar fáil agus cén costas. Seiceáil roghanna iar-dhíolacháin go pras má tá fadhb, mar braitheann incháilitheacht ar an earra agus cúinsí."
+        },
+        {
+          "title": "Fág cinneadh an bheartáin go deireanach",
+          "text": "Roimh chur isteach, seiceáil gach earra, seoladh, bealach agus coinníollacha. Úsáid an meastóir oifigiúil do roghanna oiriúnacha, ansin seiceáil faisnéis an bheartáin iarbhír. Féadfaidh pacáil, toisí tomhaiste agus ábhar roghanna a athrú. Coinnigh tagairtí ordaithe agus beartáin le chéile agus lean an cuntas oifigiúil do thacaíocht agus rianú. Míníonn ár dtreoracha mionsonraithe cinntí méide, QC, costais agus pacála sa seicheamh seo."
+        }
+      ],
+      "checks": [
+        "Meaitseáil an táirge, leagan agus cainníocht lódáilte leis an bhfoinse.",
+        "Athbhreithnigh fianaise stórais agus gníomhartha iar-dhíolacháin go pras.",
+        "Seiceáil seoladh, ábhar agus coinníollacha bealaigh roimh chur isteach."
+      ],
+      "sources": [
+        {
+          "label": "Treoir OOPBuy do thosaitheoirí",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Meastóir seolta OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ]
+    },
+    "qc": {
+      "sections": [
+        {
+          "title": "Aithin cé na grianghraif atá á seiceáil",
+          "text": "Tosaigh le foinse na n-íomhánna. Taispeánann grianghraf catalóige nó díoltóra liostú; baineann grianghraif iniúchta d’ordaithe leis an earra a fuarthas dó. Meaitseáil tagairt agus rogha roimh chinneadh. Tagann pictiúir an tsuímh seo ón gcatalóg agus lipéadaítear mar ghrianghraif táirge iad. Chun an t-earra faighte a mheas, úsáid fianaise i do chuntas oifigiúil OOPBuy."
+        },
+        {
+          "title": "Seiceáil aitheantas, cainníocht agus riocht infheicthe",
+          "text": "Léigh dath, méid, leagan agus cainníocht ordaithe leis na híomhánna. Féach ar an earra iomlán ar dtús agus ansin ar na réimsí tábhachtacha. Do bhróga, cuir an dá phíosa agus lipéid i gcomparáid. D’éadaí, scrúdaigh cruth, seams agus priontaí. Do mhálaí agus gabhálais, seiceáil dúnta, strapaí agus píosaí san áireamh. Nótaigh an difríocht bheacht agus an grianghraf a thaispeánann í seachas imprisean ginearálta mícheart."
+        },
+        {
+          "title": "Cuir ceist ar féidir íomhá eile a fhreagairt",
+          "text": "Aithníonn iarratas úsáideach cinneadh amháin agus an fhianaise riachtanach. D’fhéadfá lipéad inléite, ceanglóir folaithe nó tomhas le ceannphointí téipe a iarraidh. Deimhnigh infhaighteacht agus táille roimh dul ar aghaidh. Tá teorainneacha ag grianghraif: athraíonn solas dath, saobhann peirspictíocht comhréir agus ní chruthaíonn pictiúr feidhmíocht inmheánach, marthanacht ná comhdhéanamh. Fág ceisteanna oscailte seachas buille faoi thuairim."
+        },
+        {
+          "title": "Réitigh imní roimh chur isteach beartáin",
+          "text": "Cuir an méid infheicthe leis an liostú agus roghnaigh leanúint, soiléiriú nó iar-dhíolachán. Caomhnaigh rogha, íomhánna agus míniú gairid. Foilsíonn OOPBuy faisnéis iniúchta agus aischuir; seiceáil an beartas reatha agus roghanna d’ordaithe roimh thoradh a thoimhdiú. Tugann an t-alt QC iomlán seicliosta de réir catagóire; míníonn treoracha méide agus aischuir cathain a athraíonn tomhas eile nó iarratas pras an cinneadh."
+        }
+      ],
+      "checks": [
+        "Úsáid fianaise iniúchta don ordú agus rogha cheart.",
+        "Iarr radharc nó tomhas soiléir do cheist shonrach gan réiteach.",
+        "Taifead fadhbanna infheicthe agus seiceáil iar-dhíolachán roimh sheoladh."
+      ],
+      "sources": [
+        {
+          "label": "Faisnéis iniúchta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Seirbhísí lóistíochta saincheaptha OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "Aischuir agus aisíocaíochtaí OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    "shipping": {
+      "sections": [
+        {
+          "title": "Ullmhaigh ionchuir an mheastacháin",
+          "text": "Tosaigh leis an gceann scríbe agus táirgí le seoladh. Bailigh meáchan agus toisí atá ar fáil agus aithin ábhar a dteastaíonn láimhseáil speisialta nó seiceáil bealaigh uaidh. Iontráil sonraí sa mheastóir oifigiúil OOPBuy agus léigh na bealaí a thugtar. Roimh thomhais stórais, is toimhdí iad ionchuir. Coinnigh infheicthe iad le hathsholáthar níos déanaí. Míníonn meastachán úsáideach an beartán, ní praghas amháin mar luach uilíoch."
+        },
+        {
+          "title": "Léigh coinníollacha leis an bpraghas",
+          "text": "Cuir bealaí oiriúnacha i gcomparáid leis na sonraí céanna. Seiceáil modh billeála, ábhar ceadaithe, teorainneacha méide agus coinníollacha eile. Léiríonn fíormheáchan mais; úsáideann billeáil toirtmhéadrach spás de réir riail na líne. Is féidir le bosca níos mó an chomparáid a athrú fiú leis na hearraí céanna. Úsáid an fachtóir agus slánú don bhealach, ní foirmle ó iompróir nó meastachán neamhghaolmhar."
+        },
+        {
+          "title": "Athbhreithnigh an buiséad iomlán agus pacáil",
+          "text": "Coinnigh meastachán lastais idirnáisiúnta le méideanna eile an ordaithe. Féadfaidh praghas earra, seachadadh go stóras, seirbhísí agus táillí íocaíochta nó ceann scríbe teacht ag céimeanna éagsúla. Seiceáil gach ceann san áit a thaispeántar i ndáiríre é. Cothromaigh cosaint agus méid: d’fhéadfadh earraí leochaileacha nó brúite go héasca pacáil éagsúil ó éadaí boga a éileamh. Fiafraigh faoi sheirbhísí agus cuir an pacáiste beartaithe i gcomparáid roimh choigilteas ó bhaint nó comhdhlúthú a thoimhdiú."
+        },
+        {
+          "title": "Athsheiceáil an beartán iarbhír roimh sheoladh",
+          "text": "Nuair atá tomhais phacáilte agus roghanna reatha ar fáil, déan an chomparáid leis an bhfaisnéis sin arís. Deimhnigh faighteoir, ábhar, coinníollacha agus méid dlite ag cur isteach. Glac le hamanna mar fhaisnéis phleanála agus fág am do chéimeanna sna taifid. Sábháil tagairt agus lean nuashonruithe sa chuntas oifigiúil. Míníonn treoracha mionsonraithe seolta, costais, pacála agus rianaithe na cinntí sa tseiceáil dheiridh."
+        }
+      ],
+      "checks": [
+        "Cuir bealaí i gcomparáid leis an gceann scríbe, ábhar, meáchan agus toisí céanna.",
+        "Úsáid riail billeála agus srianta na líne roghnaithe.",
+        "Athríomh le sonraí iarbhír an bheartáin roimh sheoladh a dheimhniú."
+      ],
+      "sources": [
+        {
+          "label": "Meastóir seolta OOPBuy",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "Fógra seachadta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Míniú céadsiopadóireachta OOPBuy",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
         }
       ]
     }
-  ]
+  },
+  "categoryIntros": {
+    "shoes": {
+      "title": "Scarbhileog bróg OOPBuy",
+      "intro": "Fiosraigh bróga de réir samhla, úsáide agus sonraí oiriúnachta. Cuir rogha bheacht an díoltóra i gcomparáid roimh lipéad méide eolach a úsáid. Cabhraíonn pictiúir le gearrliosta; tacaíonn tomhais díoltóra agus fianaise d’ordaithe leis an gcéad chinneadh eile. Coinnigh an bhróg chlé agus dheas i do sheiceálacha.",
+      "checks": [
+        "Cuir faisnéis méide an díoltóra le péire oiriúnach atá á chaitheamh agat.",
+        "Seiceáil samhail, dath, lipéad méide agus an dá bhróg nuair atá grianghraif ordaithe ar fáil.",
+        "Smaoinigh ar chosaint agus spás don phéire agus dá bhosca."
+      ]
+    },
+    "hoodies-sweaters": {
+      "title": "Húdaí agus geansaithe OOPBuy",
+      "intro": "Brabhsáil húdaí agus geansaithe leis an oiriúnacht is fearr leat. Is úsáidí leithead cliabhraigh, fad agus cruth guaillí ná litir méide amháin. Cuir tomhais gach díoltóra le héadach compordach atá agat agus seiceáil dath agus leagan. Taispeánann pictiúir cuma; teastaíonn faisnéis iontaofa nó deimhniú do chomhdhéanamh agus meáchan fabraice.",
+      "checks": [
+        "Taifead leithead cliabhraigh, fad agus tomhais guaillí don chomparáid.",
+        "Seiceáil dath, cufaí, cochall nó muineál sna radhairc atá ann.",
+        "Deimhnigh maímh ábhair nó meáchain fabraice tríd an liostú roimh bhraith orthu."
+      ]
+    },
+    "t-shirts": {
+      "title": "Scarbhileog T-léinte OOPBuy",
+      "intro": "Aimsigh T-léinte de réir crutha, stíl muinchille agus dearadh beacht. Cuir tomhais agus rogha i gcomparáid roimh mhéid. Is féidir athruithe beaga suímh prionta, coiléir nó datha liostuithe cosúla a scaradh. Úsáid grianghraif chun ceisteanna a aithint, ansin deimhnigh le faisnéis díoltóra agus fianaise stórais d’ordaithe.",
+      "checks": [
+        "Cuir fad agus leithead cliabhraigh le T-léine a oireann go maith.",
+        "Meaitseáil prionta, dath agus leagan leis an liostú sábháilte.",
+        "Féach ar mhuineál, seams agus suíomh prionta sna grianghraif ordaithe."
+      ]
+    },
+    "jackets": {
+      "title": "Scarbhileog seaicéad OOPBuy",
+      "intro": "Brabhsáil seaicéid de réir na sraitheanna a chaithfidh tú agus na sonraí tógála atá uait. Cuir méid roghnaithe le seaicéad cosúil, ag ceadú do rogha sraitheanna. Seiceáil dúnta, pócaí agus líneáil. Nochtann grianghraif sonraí infheicthe; teastaíonn fianaise thar chuma do theas, uiscedhíonacht agus maímh ábhair.",
+      "checks": [
+        "Cuir tomhais le seaicéad a chaitear leis na sraitheanna beartaithe.",
+        "Seiceáil zipí, cnaipí, pócaí agus líneáil infheicthe sa fhianaise.",
+        "Smaoinigh ar thionchar struchtúir agus stuála ar chosaint agus toirt phacáilte."
+      ]
+    },
+    "pants-shorts": {
+      "title": "Brístí agus brístí gearra OOPBuy",
+      "intro": "Fiosraigh de réir tógála coime, ardaithe, faid agus crutha coise. Is féidir leis an lipéad céanna oiriúnachtaí éagsúla a chiallaíonn, mar sin cuir modh tomhais an díoltóra le péire is maith leat. Seiceáil an earra amháin nó tacar atá san rogha agus deimhnigh dath agus fad roimh choibhéis a ghlacadh.",
+      "checks": [
+        "Cuir coim, ardú agus inseam le ball éadaigh tagartha oiriúnach.",
+        "Seiceáil coim sheasta, leaisteach nó inchoigeartaithe roimh mhéid a léirmhíniú.",
+        "Meaitseáil fad, dath agus cainníocht leis an rogha san ordú."
+      ]
+    },
+    "headwear": {
+      "title": "Hataí agus caipíní OOPBuy",
+      "intro": "Brabhsáil de réir imlíne, doimhneachta agus crutha. Tugann dúnadh inchoigeartaithe solúbthacht ach caithfidh an raon oiriúnú don duine fós. Cuir stíl bheacht agus dath i gcomparáid sa liostú. Smaoinigh ar chosaint choróin nó scáthbhiorra agus pacáil an earra faighte á roghnú agat.",
+      "checks": [
+        "Seiceáil imlíne nó raon coigeartaithe agus doimhneacht an hata.",
+        "Scrúdaigh dath, dúnadh agus cruth infheicthe sna híomhánna.",
+        "Smaoinigh ar chosaint coróin struchtúrtha nó scáthbhiorra roimh chur isteach."
+      ]
+    },
+    "accessories": {
+      "title": "Málaí agus gabhálais OOPBuy",
+      "intro": "Fiosraigh de réir toisí praiticiúla, oiriúnachta agus píosaí san áireamh. Is annamh a léiríonn pictiúr scála leis féin; seiceáil fad strapa, raon crios nó méid urrainne. Meaitseáil rogha agus scrúdaigh dúnta nó crua-earraí. Deimhnigh maímh ábhair le sonraí iontaofa seachas comhdhéanamh a mheas ó dhath.",
+      "checks": [
+        "Cuir toisí, fad strapa nó raon oiriúnachta leis an úsáid atá beartaithe agat.",
+        "Seiceáil dúnta, pointí ceangail agus gabhálais sa rogha.",
+        "Athbhreithnigh cosaint do chodanna righne, íogaire nó so-ghrioblaithe."
+      ]
+    },
+    "short-sets": {
+      "title": "Tacair mheaitseála OOPBuy",
+      "intro": "Brabhsáil tacair agus seiceáil gach píosa ar leith. D’fhéadfadh íomhá feisteas iomlán a thaispeáint agus rogha ina cuid amháin. Deimhnigh cainníocht agus ábhar, ansin cuir tomhais bairr agus íochtair le do chuid éadaí tagartha. Seiceáil go mbaineann dathanna agus leaganacha leis an tacar céanna.",
+      "checks": [
+        "Deimhnigh go beacht na píosaí agus cainníochtaí san rogha.",
+        "Cuir tomhais bairr agus íochtair i gcomparáid ar leith roimh mhéid.",
+        "Seiceáil dath, dearadh agus lipéid gach comhpháirte faighte."
+      ]
+    },
+    "electronics": {
+      "title": "Fionnachtana leictreonaice OOPBuy",
+      "intro": "Fiosraigh leictreonaic de réir samhla agus comhoiriúnachta atá uait. Seiceáil nascóirí, gléasanna tacaithe, cumhacht agus ábhar an phacáiste roghnaithe. Aithin ceallraí nó comhpháirteanna íogaire iompair roimh bhealach. Cabhraíonn pictiúir le riocht agus aitheantas; teastaíonn sonraíochtaí, deimhniú nó tástáil thar íomhá do cheisteanna feidhmíochta agus sábháilteachta.",
+      "checks": [
+        "Deimhnigh samhail, comhoiriúnacht gléis, nascóir agus sonraíocht chumhachta.",
+        "Seiceáil tionchar ceallraí nó ábhair eile ar bhealaí seolta.",
+        "Deimhnigh ábhar agus fiafraigh conas feidhm ríthábhachtach don chinneadh a sheiceáil."
+      ]
+    },
+    "other-stuff": {
+      "title": "Tuilleadh fionnachtana OOPBuy",
+      "intro": "Tosaigh le cuspóir, méid agus ábhar na bhfionnachtana measctha. Is féidir le pictiúir chosúla difríochtaí cainníochta, maímh ábhair nó comhoiriúnachta a cheilt; cuir rogha i gcomparáid go cúramach. Aithin codanna leochaileacha nó cúinsí iompair speisialta roimh chur i mbeartán. Úsáid sonraí ábhartha chun na seiceálacha is tábhachtaí a roghnú.",
+      "checks": [
+        "Deimhnigh úsáid bheartaithe, toisí agus cainníocht san áireamh.",
+        "Aithin codanna leochaileacha, riachtanais chomhoiriúnachta nó ábhar le seiceáil bealaigh.",
+        "Cuir ceist shonrach má fhágann liostú nó pictiúir sonra tábhachtach doiléir."
+      ]
+    },
+    "jersey": {
+      "title": "Scarbhileog geansaithe spóirt OOPBuy",
+      "intro": "Fiosraigh de réir foirne, séasúir, leagain agus roghanna san áireamh. Cuir tomhais díoltóra i gcomparáid mar oireann gearrtha éagsúla go difriúil le lipéid chéanna. Seiceáil ainm, uimhir, paistí agus dath roghnaithe nuair is cuí. Le saincheapadh, deimhnigh litriú beacht agus coinníollacha iar-dhíolacháin reatha roimh ordú.",
+      "checks": [
+        "Meaitseáil foireann, séasúr, leagan agus dath leis an rogha liostaithe.",
+        "Seiceáil tomhais agus gach ainm, uimhir nó paiste roghnaithe.",
+        "Deimhnigh coinníollacha reatha earraí saincheaptha roimh íoc."
+      ]
+    }
+  }
 }

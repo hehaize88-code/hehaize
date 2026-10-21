@@ -1,11 +1,11 @@
 {
   "ui": {
     "finds": "Fynd",
-    "articles": "Journal",
+    "articles": "Artiklar",
     "qc": "QC-guide",
     "shipping": "Frakt",
     "read": "Läs guiden",
-    "allArticles": "Utforska journalen",
+    "allArticles": "Alla artiklar om OOPBuy",
     "latestReading": "Lite efterforskning gör stor skillnad.",
     "browseAll": "Utforska kalkylbladet",
     "heroLabel": "DITT NÄSTA FYND BÖRJAR HÄR",
@@ -15,18 +15,18 @@
     "featured": "Nytt i kalkylbladet",
     "featuredIntro": "Nyheter som är värda en närmare titt.",
     "categoryTitle": "Hitta din del.",
-    "guideTitle": "Från första fyndet till sista kontrollen.",
-    "guideIntro": "Ett enkelt sätt att undersöka en produkt innan du beställer på OOPBuy.",
-    "faqTitle": "Några saker som är bra att veta.",
-    "faqIntro": "Tydliga svar om kalkylbladet, produktbilder och köplänkar.",
-    "articlesTitle": "OOPBuys fältanteckningar",
-    "articlesIntro": "Korta, praktiska guider för mer genomtänkta fynd.",
+    "guideTitle": "Så använder du OOPBuy",
+    "guideIntro": "Följ köpet från en användbar produktlänk till en genomtänkt lagerkontroll och ett välgrundat beslut om paketet.",
+    "faqTitle": "Vanliga frågor om OOPBuy",
+    "faqIntro": "Korta svar om beställningar, inspektion, lager, frakt och efterservice, med officiella hänvisningar för plattformens regler.",
+    "articlesTitle": "Köpguider för OOPBuy",
+    "articlesIntro": "Praktiska guider till produktlistan, QC-bilder, fraktplanering och de beslut som följer efter en beställning.",
     "findsTitle": "OOPBuy-fynd",
     "findsIntro": "Utforska populära produkter i CNBuyChas katalog. Jämför annonsen, bilderna och priset innan du väljer nästa fynd.",
-    "qcTitle": "OOPBuy QC: titta lite närmare",
-    "qcIntro": "Använd produktbilder för efterforskning och kontrollera sedan bilderna av din egen beställning före frakt.",
-    "shippingTitle": "Planera bortom varupriset",
-    "shippingIntro": "Produktpriset är bara början. Kontrollera aktuella leveransalternativ och totalsumman i ditt OOPBuy-konto.",
+    "qcTitle": "Guide till OOPBuy QC-bilder",
+    "qcIntro": "Granska underlaget för din beställning, se vilka frågor som kräver en annan bild och reda ut tveksamheter innan du skickar paketet.",
+    "shippingTitle": "OOPBuy: fraktkostnader och uppskattningar",
+    "shippingIntro": "Samla uppgifterna som fraktberäkningen behöver, jämför lämpliga transportalternativ och kontrollera paketet igen när måtten efter packning finns.",
     "checklist": "Innan du fortsätter",
     "related": "Fortsätt utforska",
     "independent": "Oberoende produktupptäckt",
@@ -40,7 +40,20 @@
     "productDetails": "Detaljerna",
     "readMore": "Upptäck mer",
     "searchHelp": "Prova ett produktnamn, ett varumärke eller säljarens artikel-ID.",
-    "allCategories": "Alla kategorier på samma plats."
+    "allCategories": "Alla kategorier på samma plats.",
+    "contents": "På den här sidan",
+    "expandAll": "Öppna alla avsnitt",
+    "collapseAll": "Stäng alla avsnitt",
+    "sources": "Officiella källor",
+    "lastReviewed": "Senast granskad",
+    "quickChecks": "Snabbkontroll",
+    "moreDetails": "Läs hela guiden",
+    "jumpToPage": "Gå till sida",
+    "goToPage": "Gå",
+    "loading": "Laddar produkter…",
+    "loadError": "Produkterna kunde inte laddas. Försök igen.",
+    "pageLabel": "Sida",
+    "previewNotice": "Förhandsvisning · CNBuyCha-listningar uppdaterade {date}. Sökning öppnar CNBuyCha."
   },
   "steps": [
     {
@@ -58,150 +71,1367 @@
   ],
   "faq": [
     {
-      "q": "Är OOPBuy Tab OOPBuys officiella webbplats?",
-      "a": "OOPBuy Tab är en oberoende webbplats för att hitta produkter. Registrering, beställningar och betalningar sker på oopbuy.com. Köplänkar innehåller en affiliate-inbjudningskod; ingen rabatt utlovas."
+      "q": "Vad är OOPBuy, och säljer företaget produkterna självt?",
+      "a": "OOPBuy beskriver sin roll som inköps- och logistikagent. Tjänsten hjälper till med beställningar hos externa säljare, tillfällig lagring, packning och frakt. Det är en annan roll än tillverkarens eller en auktoriserad märkesåterförsäljares. Kontrollera ursprungssäljaren, produktbeskrivningen och tillämpliga begränsningar före beställning; en agentlistning eller lagerbild styrker inte äkthet.",
+      "sources": [
+        {
+          "label": "OOPBuys användaravtal vid registrering",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Varifrån kommer produkterna och priserna?",
-      "a": "Produktannonser, bilder, sökresultat och sortering kommer från CNBuyCha. Priser visas i USD på alla språk. Bekräfta det aktuella priset, tillgängligheten och den valda varianten i OOPBuy."
+      "q": "Hur gör jag min första beställning hos OOPBuy?",
+      "a": "Den officiella guiden börjar med en produktlänk eller sökning efter produktnamn. Granska produkten som öppnas, välj färg, storlek och antal och betala produktkostnaden samt eventuell inrikesfrakt. Efter inköp och lagerinspektion granskar du den lagrade varan innan du skapar ett internationellt paket. Bekräfta varje steg i ditt officiella konto; ett produktkort i en lista är ingen beställning.",
+      "sources": [
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Är produktbilderna QC-bilder från lagret?",
-      "a": "Bilderna som visas kommer från CNBuyCha. Deras ursprung som lager-QC är inte verifierat. Kontrollera bilderna av din egen beställning i OOPBuy innan du beslutar om frakt."
+      "q": "Vilka shoppinglänkar beskriver den officiella nybörjarguiden?",
+      "a": "Nybörjarguiden beskriver uttryckligen hur Taobao-, Tmall- och 1688-länkar klistras in i OOPBuy. Kontrollera för varje länk att den officiella produktsidan visar rätt säljarprodukt och fullständiga variantuppgifter. Om länken inte fungerar eller produkten skiljer sig, fråga OOPBuys support före betalning i stället för att anta att alla marknadsplatsadresser stöds.",
+      "sources": [
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Ingår leverans i varupriset?",
-      "a": "Se det visade beloppet som ett uppskattat varupris. Granska inrikes frakt, internationell leverans, valfria tjänster och eventuella avgifter i den aktuella kassan och paketofferten."
+      "q": "Varför betalas produkten och den internationella frakten separat?",
+      "a": "OOPBuy beskriver inköpsprocessen i två steg. Första betalningen omfattar produkten och eventuell frakt inom Kina till lagret. Senare väljer du lagrade varor, skapar ett paket och betalar internationell frakt. Uppskatta den andra kostnaden innan du köper, eftersom enbart produktpriset inte motsvarar hela kostnaden för att få beställningen levererad.",
+      "sources": [
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Hur fungerar köplänkarna?",
-      "a": "Knappen på en produktsida öppnar dess ursprungliga Weidian-artikel-ID i OOPBuy. CNBuyChas katalognummer är ett separat ID. Kontrollera annonsen du kommer till innan du beställer."
+      "q": "Är produktpriset i USD mitt slutliga totalbelopp?",
+      "a": "Nej. Ett produktpris omfattar inte i sig alla möjliga kostnader för inköpet och det internationella paketet. Inrikesfrakt, internationell frakt, tillval och valutaomräkning vid betalning kan påverka summan. OOPBuys information om saldopåfyllning beskriver också valutaomräkning och betalningsavgifter. Kontrollera beloppen i din egen kassa och paketbeställning; ett omräknat katalogpris är inte en slutlig offert.",
+      "sources": [
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Påfyllning av saldo",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
     },
     {
-      "q": "Kan jag söka med en bild?",
-      "a": "Bildsökning är inte tillgänglig i denna förhandsvisning. Du kan söka på namn eller bläddra i kategorierna. Vi ersätter inte ett uppladdat foto med orelaterade resultat."
+      "q": "Vilka betalningsmetoder kan jag använda?",
+      "a": "Nybörjarguiden nämner kreditkort, PayPal och kontosaldo, medan hjälpen om saldopåfyllning beskriver ytterligare möjligheter. Kontrollera tillgänglighet och debiterat belopp i ditt aktuella konto och i kassan. Läs informationen om valutaomräkning och avgifter före bekräftelse; att en metod nämns i en hjälpartikel innebär inte att den finns för varje land eller transaktion.",
+      "sources": [
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Påfyllning av saldo",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
+    },
+    {
+      "q": "Är vanliga QC-bilder hos OOPBuy gratis?",
+      "a": "Meddelandet om anpassade tjänster säger att vanliga QC-bilder från lagret, tagna enligt inspektionsriktlinjerna, är kostnadsfria. Bilderna tillhandahålls efter att lagret tagit emot och behandlat varan. De skiljer sig från säljarens katalogbilder eller bilder i en oberoende produktlista. Kontrollera bilderna som hör till din egen lagrade beställning innan du beslutar om frakt.",
+      "sources": [
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Vad kan vanliga QC-bilder och inspektion faktiskt bekräfta?",
+      "a": "De officiella inspektionsriktlinjerna omfattar synliga uppgifter som antal, beställda specifikationer och synligt skick, med uttryckliga begränsningar. De fastställer inte perfekt passform, professionellt testad elektronikprestanda eller märkesäkthet. Förseglade produkter kan bara kontrolleras utvändigt. Använd bilderna som belägg för det som syns och be om förtydligande när en detalj är viktig, i stället för att anta att en osynlig egenskap testats.",
+      "sources": [
+        {
+          "label": "OOPBuys inspektionsinformation",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuys användaravtal vid registrering",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Kan jag be om mått eller QC-närbilder?",
+      "a": "OOPBuy beskriver en anpassad QC-tjänst för särskilda mått och detaljer, exempelvis sko- eller innersulelängd och plaggets mått. Kontrollera tillgänglighet och aktuell avgift i det officiella kontot eller med supporten; meddelandet anger inget allmänt pris för specialbilder. Beskriv exakt vilket mått eller bildutsnitt du behöver så att begäran besvarar din fråga.",
+      "sources": [
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Får varor från 1688 samma inspektion som alla andra varor?",
+      "a": "Inte nödvändigtvis. Nybörjarguiden nämner andra QC-standarder för 1688-köp, och användaravtalet beskriver begränsade stickprov i stället för fullständig inspektion av allt. Utgå inte från att varje exemplar i en större beställning undersökts separat. Klargör före ett mängdköp inspektionens omfattning och vilka extratjänster som behövs för dina viktiga kontroller.",
+      "sources": [
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuys användaravtal vid registrering",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Hur lång är den normala kostnadsfria lagringstiden?",
+      "a": "Det officiella meddelandet om anpassade tjänster anger normalt 90 dagars kostnadsfri lagring från inlagringen. Den allmänna lagringssidan använder beställningsstatusen ”received” som startpunkt. Kontrollera den faktiska slutdagen för varje lagrad beställning, särskilt när varor kommit olika dagar, och ordna frakt eller en tillåten förlängning innan gratisperioden löper ut.",
+      "sources": [
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuys lagringsvillkor",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        }
+      ]
+    },
+    {
+      "q": "Kan jag förlänga lagringen efter gratisperioden?",
+      "a": "Meddelandet om anpassade tjänster tillåter en betald förlängning: 10 CNY för upp till ytterligare 30 dagar, alltså högst 120 dagar enligt den policyn. Det betyder inte 120 gratisdagar eller obegränsade förlängningar. Kontrollera den aktuella förlängningsmöjligheten och varans slutdatum i det officiella kontot innan du förlitar dig på den; försenade varor kan avyttras.",
+      "sources": [
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Ska jag vänta på en lagringspåminnelse innan jag ordnar frakt?",
+      "a": "Nej. Bevaka själv den slutdag som visas för varje beställning och håll kontaktuppgifterna uppdaterade. Officiella meddelanden beskriver påminnelser men varnar också för att försenade varor kan betraktas som övergivna. Oidentifierade eller avvikande inkommande paket kan hanteras enligt andra regler. Kontakta supporten snarast om lagringsstatusen är oklar, i stället för att anta att normal gratislagring gäller utan villkor.",
+      "sources": [
+        {
+          "label": "OOPBuys lagringsvillkor",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuys användaravtal vid registrering",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "När ska jag begära retur eller byte efter ankomst till lagret?",
+      "a": "Returmeddelandet beskriver en villkorad begärandefrist på fem dagar, 120 timmar, efter att beställningen får status ”Stocked in”, enligt meddelandets tidsregler. Granska bilderna och den officiella efterservicesidan snarast. Behörigheten beror fortfarande på säljarens stöd och varans skick; fristen lovar inte att varje begäran godkänns. Kontrollera den aktuella tidsgränsen för just din beställning.",
+      "sources": [
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kan alla produkter returneras eller bytas?",
+      "a": "Nej. Returpolicyn innehåller villkor och undantag, bland annat säljarens regler, återförsäljningsbart skick, specialtillverkade eller använda varor och vissa förseglade eller personliga produkter. Borttagna etiketter, tillbehör eller nödvändig förpackning kan påverka möjligheten. OOPBuy kan kommunicera med säljaren, men meddelandet kräver fortfarande säljarens godkännande. Kontrollera produktvillkoren före beställning eller ändrad förpackning.",
+      "sources": [
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Ingår alla fraktkostnader i den första kostnadsfria returen eller bytet?",
+      "a": "Nej. Returmeddelandet beskriver befrielse från serviceavgiften för den första retur- eller bytesåtgärden under en kalendermånad. Det är inte samma sak som gratis returporto eller ersättning för alla inrikesfraktkostnader. Kostnaderna beror på orsaken, säljarens beslut och beställningens omständigheter. Läs den faktiska efterserviceofferten före bekräftelse i stället för att anta att hela processen är gratis.",
+      "sources": [
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kan jag avbryta en beställning innan säljaren skickar den?",
+      "a": "Returhjälpen säger att returserviceavgiften inte gäller när produkten ännu inte skickats. Det ska inte tolkas som en ovillkorlig rätt att avbryta i alla skeden. Kontrollera aktuell orderstatus och lämna tillgänglig begäran om annullering eller efterservice snarast. Om säljaren redan skickat varan kan andra rutiner och fraktkostnader gälla.",
+      "sources": [
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuys guide till order- och paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Hur lång tid tar en återbetalning, och var kontrollerar jag den?",
+      "a": "Godkänd återbetalning, kreditering av OOPBuy-saldo och betalning tillbaka till bankkort är olika steg. Returmeddelandet säger att bankens handläggning påverkar kortåterbetalningar och ger en uppskattad tidsram, ingen garanterad ankomstdag. Kontrollera återbetalningsposten och mottagarkontot i ditt konto. Om utvecklingen är oklar, ge supporten order- och återbetalningsreferensen i stället för att göra upprepade betalningar.",
+      "sources": [
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuys guide till order- och paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Kan en vara returneras efter att den skickats internationellt?",
+      "a": "Returmeddelandet beskriver internationella returer som villkorade och eventuellt på kundens bekostnad, inklusive returtransport och extra avgifter som tull. Ursprungligt skick och nödvändig förpackning spelar fortfarande roll. Kontakta OOPBuys efterservice innan du skickar tillbaka något och begär aktuella anvisningar. En retur från utlandet är inte samma sak som enkel lagerannullering eller en garanterad full återbetalning.",
+      "sources": [
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Hur uppskattar jag OOPBuys internationella frakt?",
+      "a": "Använd den officiella fraktberäknaren med destinationen och de paketuppgifter som efterfrågas och granska sedan transportalternativ och begränsningar. Nybörjarguiden förklarar att slutliga avgifter beror på uppmätta mått och vikt samt transportupplägg. En preliminär uppskattning hjälper budgeteringen men ersätter inte den slutliga paketofferten och omfattar inte automatiskt varje destinationsspecifik avgift.",
+      "sources": [
+        {
+          "label": "OOPBuys fraktberäkning",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Är en transportväg alltid billigast eller snabbast?",
+      "a": "De officiella riktlinjerna pekar inte ut något universellt alternativ. Tillgängliga tjänster beror på destination, innehåll, vikt, mått och aktuella transportvillkor. Jämför alternativen för ditt paket, inklusive begränsningar och eventuella ersättningsvillkor, innan du väljer. Angivna leveranstider är inte garantier: transportörens verksamhet, väder och tull kan påverka resan efter lageravsändning.",
+      "sources": [
+        {
+          "label": "OOPBuys leveransinformation",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Försäkring och ersättning",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Vad gör tjänsten Parcel Rehearsal?",
+      "a": "Meddelandet om provpackning beskriver en lagertjänst som hjälper till att fastställa paketets uppmätta uppgifter före betalning av internationell frakt. Där anges en serviceavgift på 20 CNY och förklaras att priset bygger på oförändrad transportväg och packning. Ändringar kan påverka slutavgiften. Läs tjänstens aktuella villkor och avbeställningsregler innan du beställer provpackning.",
+      "sources": [
+        {
+          "label": "OOPBuys instruktioner för provpackning",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ]
+    },
+    {
+      "q": "Ska jag ta bort skokartonger eller vakuumpacka kläder?",
+      "a": "Packningsguiden beskriver detta som möjliga val, varav vissa bara gäller vissa transportvägar. Avgör utifrån varans skyddsbehov, dina önskemål och eventuella returbegränsningar. Att ta bort förpackning eller komprimera en vara passar inte alla köp, och ett mindre paket garanterar inte lägre slutavgift. Kontrollera packningsval och transportberäkning före bekräftelse.",
+      "sources": [
+        {
+          "label": "OOPBuys packningsvägledning",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kan alla lagrade produkter samlas i ett paket?",
+      "a": "Samfrakt finns i inköpsprocessen, men varje kombination är inte nödvändigtvis tillåten eller ekonomisk. Varornas egenskaper, transportbegränsningar och märkning för separat packning kan kräva flera paket. Det officiella meddelandet om separata försändelser innehåller en regel för överdimensionerade varor, och packningsguiden tar upp batteriprodukter. Följ anvisningarna för dina lagrade varor och jämför tillåtna alternativ innan du skickar.",
+      "sources": [
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuys packningsvägledning",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuys vägledning för separata försändelser",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        }
+      ]
+    },
+    {
+      "q": "Varför står det ”Shipped” innan jag har ett internationellt spårningsnummer?",
+      "a": "Statusguiden använder fraktuttryck i två sammanhang. I en inköpsbeställning kan ”Shipped” betyda att säljaren skickat produkten till OOPBuys lager. På ett internationellt paket avses det senare transportörssteget. Kontrollera om du tittar på en varubeställning eller ett paket och öppna dess logistikinformation i stället för att anta att båda stegen har samma spårningsnummer.",
+      "sources": [
+        {
+          "label": "OOPBuys guide till order- och paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Vad gör jag om ett levererat paket är skadat eller saknar varor?",
+      "a": "Behåll ytterförpackningen, fraktetiketten och relevant produktunderlag och kontakta OOPBuys efterservice snarast. Officiella riktlinjer efterfrågar tydliga bilder och uppgifter som ordernummer; de innehåller också korta tidsfrister för anmälan och bevis. Kasta inte förpackningen och vänta inte på någon allmän tidsgräns du sett någon annanstans. Följ anvisningarna för just ditt paket och ersättningsärende.",
+      "sources": [
+        {
+          "label": "OOPBuys vägledning om problem efter leverans",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ]
+    },
+    {
+      "q": "Täcker försäkringen automatiskt alla paketproblem?",
+      "a": "Nej. Det officiella ersättningsmeddelandet säger att handläggning beror på transportlinjens villkor och bevisunderlag och listar undantag. Anta inte att försening, skada, tullingripande eller förlust alltid ger full ersättning. Läs skydd, gränser och anmälningsförfarande för det alternativ du faktiskt väljer, och behåll order- och paketunderlag om ett problem skulle uppstå.",
+      "sources": [
+        {
+          "label": "Försäkring och ersättning",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Kan jag beställa alla produkter som visas i en produktlista?",
+      "a": "Nej. En listning på nätet visar inte att varan är laglig, äkta eller tillåten på din transportväg. OOPBuys inköpsriktlinjer förbjuder vissa varor och pekar ut begränsade kategorier som måste kontrolleras med supporten. Villkoren förbjuder också förfalskade produkter och rättighetsintrång. Kontrollera säljaruppgifter, plattformens policy och destinationens krav före köp, särskilt för batterier, vätskor och annat begränsat innehåll.",
+      "sources": [
+        {
+          "label": "OOPBuys inköpsbegränsningar",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuys användaravtal vid registrering",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
     }
   ],
   "articles": [
     {
       "slug": "oopbuy-spreadsheet-guide",
-      "tag": "KOM IGÅNG",
-      "title": "Ditt första OOPBuy-fynd, steg för steg",
-      "description": "Gör en lovande annons till ett genomtänkt val.",
+      "tag": "Kom igång",
+      "title": "Guide till OOPBuy-listor: skapa en kortlista som går att kontrollera",
+      "description": "Lär dig använda en OOPBuy-produktlista, verifiera länkar, jämföra varianter, planera en realistisk budget och göra ett välgrundat köp av ditt katalogfynd.",
+      "primaryKeyword": "OOPBuy produktlista",
+      "secondaryKeywords": [
+        "guide till OOPBuy-listor",
+        "OOPBuy produktkatalog",
+        "OOPBuy fynd",
+        "OOPBuy köpguide"
+      ],
+      "takeaways": [
+        "Se varje katalograd som en utgångspunkt som kräver kontroll av den aktuella produkten.",
+        "Anteckna den exakta ursprungslänken, varianten, måtten och uppskattad kostnad inklusive leverans.",
+        "Skilj katalogbilder från lagerbilder för din egen beställning."
+      ],
       "sections": [
         {
-          "title": "Börja med det du behöver",
-          "text": "Välj en kategori eller sök efter en modell. Jämför produktnamnet, tillgängliga bilder och det uppskattade priset. Ett lågt pris säger inte i sig om annonsen motsvarar dina behov."
+          "title": "Vad en OOPBuy-produktlista hjälper dig med",
+          "text": "En OOPBuy-produktlista är ett verktyg för att upptäcka varor: ett sätt att samla länkar, jämföra idéer och slippa börja söka från början varje gång. Det verkliga värdet ligger i att göra en kortlista enklare att kontrollera. Ett stort antal rader säger inte om varorna fortfarande finns, om en storlek passar eller vad det färdiga paketet kommer att kosta.\n\nOOPBuy Tab är en oberoende katalog och inte den officiella OOPBuy-tjänsten. Katalogen använder källdata från CNBuyCha. Skillnaden är viktig eftersom katalogposten och den aktuella inköpssidan kan ändras vid olika tidpunkter. Behandla ett angivet USD-pris som en uppskattning och bilderna som katalogreferenser om ursprunget inte uttryckligen verifierats.\n\nAnvänd listan för en avgränsad fråga, exempelvis vilken av tre jackor som passar dina mått och din budget. När alternativen syns tillsammans blir det mycket lättare att upptäcka saknade uppgifter innan de blir ett dyrt antagande."
         },
         {
-          "title": "Öppna originalannonsen",
-          "text": "Kontrollera säljaren och tillgängliga alternativ. Anteckna önskad storlek, färg och antal och öppna sedan produkten i OOPBuy. Bekräfta uppgifterna igen innan du betalar."
+          "title": "Börja med dina krav innan du bläddrar",
+          "text": "Skriv ned vad som skulle göra en vara användbar för dig. För kläder kan det vara plaggmått, önskat material, tänkt säsong och skötselråd du kan acceptera. För en väska kan det vara datorns mått, typ av stängning och den högsta tomvikt du vill bära. Tydliga krav minskar risken att en attraktiv bild distraherar från själva köpet.\n\nSätt två budgetar: ett målpris för varan och ett tak för att få den levererad. Det är olika belopp. Ett lågt produktpris lämnar frågor om inrikesfrakt, internationell transport, valutaomräkning vid betalning och eventuella avgifter på destinationen obesvarade.\n\nVälj ett litet antal kandidater i stället för att omedelbart fylla dussintals rader. Tre jämförbara varor lär dig ofta mer än trettio orelaterade fynd. Lägg till ett skäl att överväga varje kandidat och en obesvarad fråga. Om du inte kan förklara varför en vara hör hemma på kortlistan behöver den förmodligen inte din uppmärksamhet ännu."
         },
         {
-          "title": "Tänk på nästa steg",
-          "text": "Lämna utrymme i budgeten för leverans och andra avgifter. Granska dina egna orderbilder och den tillgängliga fraktofferten innan du skickar in ett paket."
+          "title": "Skapa kolumner som hjälper dig fatta beslut",
+          "text": "En användbar rad behöver produktnamn, ursprunglig marknadsplats, fullständig produktadress, exakt variant, visat pris och valuta, kontrollens datum och nästa åtgärd. Lägg till mått eller specifikationer som är relevanta för kategorin. Håll egna anteckningar skilda från säljarens beskrivning så att du kan skilja belägg från tolkningar när du återvänder till listan.\n\nEn jackrad kan exempelvis innehålla bröstvidd, axelbredd, rygglängd, vald storlek och om uppgifterna avser plagget eller personen. En skorad kan ange säljarens storlekstabell och ett eventuellt tillgängligt invändigt längdmått. Skriv inte en okvalificerad storleksbeteckning i en kolumn som heter ”passform bekräftad”.\n\nAnvänd enkla statusetiketter som ”kontrollera källa”, ”mått behövs”, ”kan övervägas”, ”beställd” och ”granskad”. Statusen ska beskriva sådant du faktiskt har gjort. Ha ett separat fält för varför en vara valdes bort; den uppgiften hjälper dig slippa upprepa samma efterforskning nästa vecka."
+        },
+        {
+          "title": "Kontrollera den aktuella produkten bakom raden",
+          "text": "Öppna både ursprungslänken och inköpssidan hos OOPBuy innan du förlitar dig på en listning. Jämför produktens identitet, bilder, alternativ och valt pris. En länk som öppnas utan fel kan ändå visa en ändrad listning, en annan variant eller en sida där det billigaste alternativet inte motsvarar katalogbilden.\n\nHåll olika identifierare åtskilda. I vårt exempel är 3470 en katalogreferens hos CNBuyCha, medan 7876894732 är ursprungsnumret i Weidian-produktens adress. Att kopiera katalognumret till en inköpsadress identifierar inte samma produkt. Spara om möjligt hela ursprungsadressen i stället för att försöka återskapa den från en kort etikett.\n\nOm en sida inte är tillgänglig markerar du raden som ej verifierad. Sök efter den exakta varan igen och jämför en eventuell ersättare noggrant. Byt inte tyst ut ursprungslänken mot en visuellt liknande produkt: likhet visar inte att säljare, specifikation eller köpvillkor är desamma."
+        },
+        {
+          "title": "Jämför den variant du verkligen tänker köpa",
+          "text": "Två rader är jämförbara först när de avser alternativen du faktiskt skulle köpa. Kontrollera färg, storlek, antal, material och tillbehör som ingår. En listning kan visa ett prisintervall eftersom varianterna skiljer sig. Om du registrerar det lägsta synliga priset men tänker välja ett annat alternativ blir jämförelsen missvisande även om båda beloppen är verkliga.\n\nTänk dig två resväskor. Det ena visade priset kan avse minsta storleken, medan det andra gäller den större väska du behöver. Anteckna dina nödvändiga mått bredvid varje valt alternativ och jämför just dessa val. Om ett viktigt mått saknas markerar du luckan i stället för att uppskatta det från ett modellfoto.\n\nFör flerpack antecknar du antal delar och beräknar ett styckpris endast när innehållet verkligen är jämförbart. För klädset kontrollerar du vilka plagg som ingår. Dessa små kontroller gör listan till ett verktyg för köpbeslut och inte bara ett sätt att ordna tilltalande bilder."
+        },
+        {
+          "title": "Lägg till en realistisk kostnadsberäkning",
+          "text": "Skilj bekräftade belopp från uppskattningar. Kalkylen kan innehålla fält för den valda produkten, inrikesleverans där den anges, uppskattad internationell frakt, tillval du väntar dig att använda och en reserv för oklara kostnader. Ange valutan för varje inmatning. Ett uppskattat USD-belopp ska aldrig uppfattas som ett låst kassapris.\n\nAnvänd OOPBuys officiella fraktberäkningssida för att undersöka destinationen och de paketantaganden som är tillgängliga när du kontrollerar. Anteckna vikten och måtten du använde; samma uppskattning är svår att tolka utan dem. När indata är okända jämför du ett rimligt mindre och större paketscenario i stället för att presentera ett enda exakt totalbelopp.\n\nBestäm en beslutsregel före beställning. Du kan exempelvis gå vidare först om även det dyrare scenariot ryms inom leveransbudgeten. Det är en personlig budgetmetod och ingen offert från OOPBuy. Uppdatera kalkylen när lageruppgifter eller ett aktuellt fraktpris ersätter tidigare antaganden."
+        },
+        {
+          "title": "Håll katalogbilder och orderns QC åtskilda",
+          "text": "Ett katalogfoto kan hjälpa dig identifiera stil, färg eller ett designdrag. Det visar inte skicket på exemplaret som kommer att köpas åt dig. OOPBuy Tabs importerade katalogbilder är inte verifierade lagerbilder för din egen beställning. Markera därför inte en rad ”kvalitet godkänd” bara för att bilderna ser fina ut.\n\nOm du senare beställer varan skapar du en separat plats för bilder och meddelanden som hör till den ordern. Anteckna orderreferens, vald variant och frågor som lagerbilderna lämnar obesvarade. På så sätt blandas inte en välpolerad ursprungsbild ihop med det som faktiskt togs emot.\n\nOOPBuys inspektionsinformation beskriver kontroller av antal och beställda specifikationer men också inspektionens begränsningar. Det är skäl att ställa riktade frågor, inte att anta att alla kvalitetsfrågor redan undersökts. För ett viktigt mått eller en detalj identifierar du exakt den vy eller mätning du behöver innan du beslutar om nästa steg."
+        },
+        {
+          "title": "Gör kortlistan till en hanterbar första beställning",
+          "text": "Gå igenom de obesvarade frågorna på kortlistan innan du betalar. En vara ska ha en känd källa, ett medvetet variantval, tillräcklig storleksinformation för ditt beslut och en leveransbudget du känner dig bekväm med. Om flera fält fortfarande säger ”okänt” behövs mer efterforskning, även när priset verkar ovanligt lockande.\n\nEn mindre första beställning kan göra din egen dokumentation enklare. Du kan lära dig hur de aktuella ordersidorna, lageruppgifterna och paketalternativen fungerar utan att hantera många undantag samtidigt. Det är ett organisatoriskt förslag och inget löfte om lägre fraktkostnad per vara för en liten försändelse.\n\nAnvänd den officiella OOPBuy-inloggningssidan när du vill öppna ditt konto. Håll betalningsbeslut och kontouppgifter på den officiella tjänsten. Efter beställningen kopierar du referensen till din privata lista och antecknar datumet. Lägg inte personliga orderuppgifter i ett offentligt delat kalkylblad."
+        },
+        {
+          "title": "Underhåll listan efter det första köpet",
+          "text": "En bra lista blir mer användbar när du har fått en vara. Lägg till de faktiska levererade måtten, dina observationer om passform, slutbeloppet du betalade och eventuella avvikelser från listningen. Beskriv omständigheterna: en jacka över en tjock tröja kan kännas annorlunda än samma jacka över en T-shirt.\n\nMärk subjektiva intryck tydligt. ”Bekväm för min dagliga pendling” är mer användbart än ”perfekt kvalitet” eftersom användningen framgår. Anteckna begränsningar du upptäckt, exempelvis en ficka som är för smal för telefonen. Sådana noteringar ger ett underlag för framtida val utan att påstå att någon annan får samma upplevelse.\n\nDatera slutligen din granskning och arkivera döda länkar i stället för att låta dem se aktuella ut. Kontrollera priser och tillgänglighet på nytt före varje nytt köp. En trovärdig OOPBuy-lista är inget oföränderligt löfte; den dokumenterar vad du verifierat, vad som är osäkert och vad du har lärt dig."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys officiella webbplats",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuys fraktberäkning",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuys inspektionsinformation",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy inloggning",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-product-links",
+        "oopbuy-price-check",
+        "oopbuy-qc-photos"
       ]
     },
     {
       "slug": "oopbuy-qc-photos",
-      "tag": "BILDKONTROLL",
-      "title": "Vad du ska titta efter i produkt- och QC-bilder",
-      "description": "Skilj katalogundersökning från kontroller av din egen beställning.",
+      "tag": "Kvalitetskontroll",
+      "title": "OOPBuy QC-bilder: vad du bör kontrollera innan beställningen skickas",
+      "description": "En praktisk guide till att granska OOPBuy QC-bilder, kontrollera rätt variant, begära användbara mått och förstå vad lagerbilder inte kan bevisa.",
+      "primaryKeyword": "OOPBuy QC-bilder",
+      "secondaryKeywords": [
+        "OOPBuy kvalitetskontroll",
+        "OOPBuy lagerbilder",
+        "OOPBuy QC-guide",
+        "OOPBuy inspektion"
+      ],
+      "takeaways": [
+        "Granska lagerbilderna som hör till din egen beställning och jämför dem med den valda varianten.",
+        "Följ samma kontrollordning och be om en exakt bild när viktigt underlag saknas.",
+        "Bilder kan inte fastställa äkthet, långsiktig hållbarhet, exakt färg eller alla funktionsegenskaper."
+      ],
       "sections": [
         {
-          "title": "Ta reda på vilka bilder du ser",
-          "text": "Katalogbilder visar en annons; de bevisar inte vilken vara du får. Bilderna på OOPBuy Tab tillhandahålls av CNBuyCha och är inte verifierade som lager-QC."
+          "title": "Använd QC-bilder för att besvara konkreta frågor",
+          "text": "OOPBuy QC-bilder är mest användbara när du vet vad du vill kontrollera. Börja med en kort checklista: kom rätt vara, stämmer den valda varianten, finns synliga skador och stöder de tillgängliga måtten ditt beslut om passformen? Då får du en praktisk granskningsmetod i stället för ett ändlöst sökande efter perfektion.\n\nEtt fotografi visar en viss vinkel i en viss belysning. Det kan visa en saknad knapp eller en tydligt avvikande färgbeteckning, men kanske inte ett problem dolt i en ficka eller under en löstagbar del. Se varje bild som underlag med ett begränsat synfält.\n\nMålet är att reda ut sådant som skulle påverka ditt beslut innan du ordnar internationell frakt. Det kan handla om att bekräfta ett ärmmått eller få veta om ett märke är förpackningsrester som går att ta bort. Det betyder inte att en uppsättning fina bilder garanterar hur varan fungerar efter flera månaders användning."
         },
         {
-          "title": "Jämför konkreta detaljer",
-          "text": "För din egen beställning jämför du modell, färg, synlig storleksetikett och antal med dina val. Leta efter tydliga skador och fråga om oklara detaljer före frakt."
+          "title": "Skilj på tre sorters produktbilder",
+          "text": "Säljarbilder beskriver vad en annons erbjuder. Bilder i en produktkatalog hjälper dig att upptäcka och känna igen annonsen. Lagerbilder dokumenterar de specifika varor som hör till en beställning. Roller som dessa skiljer sig åt även om bilderna visas intill samma produktnamn eller ser likadana ut.\n\nOOPBuy Tab är en oberoende katalog som använder produktdata från CNBuyCha. De importerade bilderna är inte verifierade som QC-bilder av just din beställning. De kan användas som jämförelse, men visar inte om ditt köpta exemplar har samma sömmar, etikett, mått eller skick.\n\nSpara bilder i separata mappar eller märk dem tydligt, exempelvis källreferens och min beställning. Anteckna orderreferens och datum privat. Den enkla uppdelningen förhindrar att en tilltalande närbild från säljaren av misstag blir underlaget du förlitar dig på när du bedömer om lagervaran motsvarar dina förväntningar."
         },
         {
-          "title": "Förstå begränsningarna",
-          "text": "Enbart bilder kan inte fastställa äkthet, hållbarhet eller full funktion. Om du behöver ett mått eller en extra kontroll, fråga OOPBuy vad som finns tillgängligt och vad det kostar."
+          "title": "Bekräfta att du granskar rätt vara",
+          "text": "Matcha först lagerposten med beställningen innan du granskar detaljer. Jämför produktnamn, ursprungslänk, vald färg, vald storlek och antal. Om du har beställt två liknande varor ska du inte utgå från att bilderna visas i samma ordning som produkterna i din ursprungliga urvalslista.\n\nLeta efter kännetecken i bilderna: en storleksetikett, ett särskilt mönster av paneler, typen av stängning eller en förpackningsetikett. Jämför med ditt beställningsval i stället för annonsens generella huvudbild. Säljare använder ibland samma huvudbild för flera alternativ.\n\nOm posten och bilderna verkar motsäga varandra, be om ett förtydligande och ange orderreferensen. Beskriv avvikelsen tydligt, till exempel beställde marinblått men etiketten verkar ange svart, eller beställde två delar men bara en syns. Avgör inte att varan är fel enbart för att alla delar inte syns i en bild; fastställ först vad bilden faktiskt visar."
+        },
+        {
+          "title": "Granska kläder i samma ordning varje gång",
+          "text": "Börja med hela plagget. Kontrollera att silhuett, stora paneler, halsringning, ärmar och stängningar motsvarar den valda varan. Granska sedan fram- och baksidan var för sig. En översiktsbild hjälper dig att upptäcka en saknad detalj innan du fastnar i små skillnader i sömmarna.\n\nFortsätt med synliga konstruktionsdetaljer: sömmarnas placering, fållar, muddar, knappar, dragkedjor, tryck och broderier där det är relevant. Leta efter tydliga revor, lösa delar, fläckar eller osymmetriska partier. Kom ihåg att veck och hur plagget ligger kan få raka linjer att se ojämna ut; en tydligare vinkel kan reda ut frågan.\n\nAvsluta med etiketter och de mått som är viktiga för dig. Storleksetiketten bekräftar vad som står på plagget, medan ett mått kan hjälpa dig bedöma passformen. Det är två olika kontroller. Om ärmlängden är din främsta osäkerhet ska du fråga efter just det måttet i stället för om plagget är normalt i storleken, något som i hög grad beror på personliga förväntningar."
+        },
+        {
+          "title": "Kontrollera skor och väskor utifrån användningen",
+          "text": "Jämför skorna både tillsammans och var för sig. Granska storleksmärkning, övergripande form, ovandelens synliga skick, stängningar och sulkanter. Fråga dig om bilderna täcker de områden som är viktiga för din användning. Enbart en bild ovanifrån kanske inte visar en glipa längs sulans sida.\n\nFör väskor börjar du med mått och utformning. Identifiera huvudfack, remmar, handtag och fästen som du förväntar dig. Kontrollera att bilderna visar vald storlek och konfiguration. Om väskan måste rymma en viss bärbar dator räcker inte en liknande väska på en modell som bevis för det invändiga utrymmet.\n\nGör inte om dessa visuella kontroller till påståenden om bärförmåga, vattentäthet, bekvämlighet eller specialprestanda. Sådana egenskaper kräver annat underlag. Om en egenskap är avgörande och inte går att fastställa genom annonsen eller en lämplig kontroll, ska du betrakta den som en öppen fråga när du avgör om köpet fortfarande passar dig."
+        },
+        {
+          "title": "Be om mått som går att tolka",
+          "text": "En användbar måttbild visar varan, mätverktyget och båda ändpunkterna tydligt. Be om ett namngivet mått med en bestämd metod. För en skjorta är bröstbredd plant från den ena armhålssömmen till den andra mer precist än bröststorlek. För byxor behöver du ange om midjan ska vara avslappnad eller utsträckt.\n\nJämför samma slags mått. Ett plant plaggs bredd är inte samma sak som kroppens omkrets, och yttersulans längd är inte skons invändiga längd. Att mäta en vara som redan passar ger en praktisk jämförelse bara om lagret mäter på samma sätt.\n\nVar försiktig med att tolka små skillnader i en lågupplöst bild eller en bild tagen snett. Perspektiv, tygveck och måttbandets placering kan påverka tolkningen. Om en liten skillnad avgör om du behåller varan, be om ett tydligare mått i stället för att zooma tills bilden verkar mer exakt än den är."
+        },
+        {
+          "title": "Förstå lagerinspektionens begränsningar",
+          "text": "OOPBuys officiella inspektionsinformation beskriver kontroller av beställt antal och specifikationer. Den undantar också flera frågor från inspektionen, bland annat vissa färg-, storleks- och användningseffekter, specialbedömningar av produkter samt invändig kontroll av vissa förseglade varor. Läs den aktuella officiella informationen för det exakta omfång som gäller din vara.\n\nDet praktiska är att inte behandla inspektionen som en fullständig produktcertifiering. En fotograferad etikett bevisar inte ett varumärkes äkthet. Ett oskadat laddarhölje fastställer inte elsäkerheten. En obruten förpackning visar inte varje del inuti. Om köpet beror på en specialistbedömd egenskap behöver du lämplig dokumentation i stället för att förvänta dig svar från en allmän lagerbild.\n\nSkärminställningar och belysning begränsar också färgjämförelser. Använd bilder för att upptäcka och fråga om tydliga avvikelser, men anta inte att två bilder tagna under olika förhållanden kan avgöra en subtil nyansskillnad. Bestäm i förväg hur mycket osäkerhet du är bekväm med att acceptera."
+        },
+        {
+          "title": "Skriv en begäran som är enkel att följa",
+          "text": "Knyt varje fråga till något som går att observera. En användbar begäran anger beställningen, relevant bild och exakt vilken detalj som behöver kontrolleras. Till exempel: visa dragkedjan framtill helt stängd och låt båda sidor av den nedre fållen synas. Det går lättare att agera på än kontrollera kvaliteten igen.\n\nNär du ber om ett mått ska du ange ändpunkter och viktiga förutsättningar, till exempel plant utan att sträckas. OOPBuy beskriver standardbilder för QC som kostnadsfria enligt inspektionsriktlinjerna och erbjuder önskemål om särskilda detaljer eller mått. Informationen om anpassade tjänster anger inget pris för anpassad QC, så kontrollera aktuell avgift innan du beställer mer arbete.\n\nSamla inte en lång rad orelaterade problem i ett vagt meddelande. Prioritera detaljer som kan påverka beslutet och jämför sedan svaret med frågorna. Spara svaret tillsammans med relevant bild så att du kan skilja det som uttryckligen bekräftats från det du själv har tolkat genom att titta på fotografiet."
+        },
+        {
+          "title": "Dokumentera beslutet före avsändning",
+          "text": "När du har granskat underlaget väljer du nästa steg: acceptera informationen, begär ett specifikt förtydligande eller undersök aktuella returmöjligheter. Läs den officiella returinformationen och beställningens aktuella status omgående om något är fel. Utgå inte från att dina möjligheter finns kvar hur länge som helst medan du väntar.\n\nSpara en kort sammanställning av problemet och underlaget. Behåll vald variant, relevanta bilder, mått och det exakta svar du fick. Om du behöver hjälp senare är det lättare att förklara än att bara säga att produkten såg fel ut. Det hjälper dig också att undvika att fråga om samma sak två gånger.\n\nGå igenom alla varor markerade som olösta innan du lämnar in paketet. Att skicka dem besvarar inte obesvarade frågor. Ditt slutliga beslut bör utgå från den vara som faktiskt kom till lagret, underlagets begränsningar och om återstående osäkerhet är acceptabel för din användning och budget."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys inspektionsinformation",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuys officiella webbplats",
+          "url": "https://oopbuy.com/"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-returns-refunds"
       ]
     },
     {
       "slug": "oopbuy-shipping-guide",
-      "tag": "FRAKTANTECKNINGAR",
-      "title": "Varupriset är bara början",
-      "description": "Ett tydligare sätt att planera paketbudgeten.",
+      "tag": "Frakt",
+      "title": "OOPBuy fraktguide: beräkna kostnader och välj ett lämpligt transportalternativ",
+      "description": "Förstå OOPBuys fraktsteg, paketvikt och volym, jämförelser mellan transportalternativ, packningsval och vad du ska kontrollera innan du betalar internationell frakt.",
+      "primaryKeyword": "OOPBuy frakt",
+      "secondaryKeywords": [
+        "OOPBuy fraktkostnad",
+        "OOPBuy fraktkalkylator",
+        "OOPBuy fraktberäkning",
+        "OOPBuy leveranstid"
+      ],
+      "takeaways": [
+        "Budgetera för säljarens leverans till lagret och en separat betalning för internationell paketfrakt.",
+        "Beräkna utifrån destination, innehåll, vikt och mått, och bekräfta reglerna för det valda transportalternativet.",
+        "Jämför lämpliga alternativ utifrån deras fullständiga villkor och betrakta leveranstider som uppskattningar."
+      ],
       "sections": [
         {
-          "title": "Dela upp kostnaderna",
-          "text": "Håll produktpris, frakt från säljaren till lagret och internationell leverans åtskilda i budgeten. Kontrollera valfria tjänster och betalningsrelaterade avgifter i den aktuella offerten."
+          "title": "Förstå de två fraktstegen",
+          "text": "En OOPBuy-beställning går igenom två separata fraktsteg. Först skickar säljaren de köpta varorna till lagret i Kina. Senare skickas ett paket från lagret till din destination. Att blanda ihop stegen är en vanlig orsak till att en leveransuppdatering eller betalningsbegäran verkar oväntad.\n\nOOPBuys förklaring för förstagångsköpare skiljer den första betalningen för varor och inrikesfrakt från den senare betalningen för internationell frakt. Ett produktpris i en oberoende katalog är därför inte den fullständiga kostnaden för en levererad vara. Beloppen i USD på OOPBuy Tab är uppskattningar för att upptäcka produkter, inte slutliga offerter för internationell frakt.\n\nGör budgeten innan du beställer produkten. Fundera på vad du har råd med om det färdigpackade paketet blir större eller tyngre än du först räknade med. Att vänta tills allt finns på lagret innan du tänker på internationell frakt kan innebära ett val mellan en högre totalkostnad och en efterserviceprocess du inte hade planerat för."
         },
         {
-          "title": "Använd paketets faktiska uppgifter",
-          "text": "Ange destination, vikt, mått och varutyp i den officiella kalkylatorn. Jämför begränsningar och debiteringsregler för tillgängliga rutter. En uppskattning är inte en slutlig faktura."
+          "title": "Ge fraktberäkningen användbara uppgifter",
+          "text": "Börja på OOPBuys officiella sida för fraktberäkning. Ange destinationen och de paketuppgifter som efterfrågas. Använd bästa tillgängliga information om vikt och mått och anteckna vilka uppgifter du har angett. En offert utan sina antaganden är svår att jämföra med ett senare resultat.\n\nInnan varorna kommer kan vissa uppgifter vara osäkra. Gör osäkerheten synlig. Vid klädköp kan du räkna med både ett lägre och ett högre viktscenario om tillförlitliga mått saknas. För en stel eller skrymmande produkt behöver du undersöka förpackningsmåtten i stället för att anta att vikten ensam förklarar fraktkostnaden.\n\nUppdatera beräkningen när lageruppgifter finns. Om skillnaden är stor, ta reda på vilken uppgift som ändrades innan du väljer transportalternativ. En extra låda, en större vald storlek eller skyddande packning kan förändra paketet du prissätter. Använd kalkylatorn som planeringshjälp och bekräfta det verkliga beloppet i den aktuella processen för att lämna in paket."
         },
         {
-          "title": "Välj förpackning med omsorg",
-          "text": "Förpackningen påverkar skydd och paketstorlek. Fråga hur borttagning eller förstärkning av emballage ändrar offerten och skyddet innan du bekräftar. Håll reda på varje varas sista lagringsdag i ditt konto."
+          "title": "Jämför faktisk vikt och paketvolym",
+          "text": "Faktisk vikt beskriver hur tungt det packade paketet är. Dimensionsvikt eller volymvikt är ett sätt för vissa frakttjänster att ta hänsyn till utrymmet paketet upptar. Det valda transportalternativets debiteringsregler avgör hur dessa mått används, så använd inte en omräkningsfaktor från en fraktguide som gäller något annat.\n\nTänk på ett exempel med två packningar. En kartong som mäter 40 gånger 30 gånger 25 centimeter upptar 30 000 kubikcentimeter. En kartong på 35 gånger 25 gånger 20 centimeter upptar 17 500 kubikcentimeter. Den andra tar mindre plats, men skillnaden bevisar inte i sig en viss prisbesparing. Transportalternativ, faktisk vikt och tillämpliga viktsteg vid debitering spelar fortfarande roll.\n\nFråga om uppgifterna du granskar avser själva varan, säljarens förpackning eller det färdiga internationella paketet. Det är olika saker. OOPBuys nybörjarguide säger att den slutliga frakten beror på uppmätta paketmått och vikt, vilket gör informationen efter färdig packning särskilt viktig när du bekräftar budgeten."
+        },
+        {
+          "title": "Jämför lämpliga transportalternativ på samma grund",
+          "text": "En användbar jämförelse börjar med vad som är tillåtet. Kontrollera om alternativet accepterar din destination, produktkategorier, paketmått och vikt. Ett lågt annonserat belopp saknar betydelse om tjänsten inte kan transportera det du vill skicka. Att den fanns för en tidigare beställning innebär inte att den finns för ett annat paket.\n\nAnteckna för varje lämpligt alternativ offererat totalbelopp, uppskattat leveransintervall, spårning, angivna begränsningar och eventuellt inkluderat eller valfritt skydd. Läs villkoren tillräckligt noggrant för att förstå vad en extra skyddsavgift omfattar. Anta inte att förlust, försening, skador och olika tullutfall behandlas likadant.\n\nAnvänd samma paketantaganden när du jämför. Om en uppskattning använder lägre vikt eller saknar en tjänst du har valt på annat håll behöver du först rätta till skillnaden. Det finns inget OOPBuy-transportalternativ som alltid är bäst: det praktiska valet beror på paketet, destinationen, budgeten, dina tidsbehov och aktuella villkor."
+        },
+        {
+          "title": "Kontrollera varubegränsningar innan köp",
+          "text": "Att en produkt finns i en produktlista bevisar inte att den kan köpas eller skickas till dig. OOPBuy publicerar begränsningar för inköp och transport, och vilka alternativ som är möjliga kan bero på innehållet. Kontrollera osäkra kategorier innan du beställer i stället för att anta att ankomst till lagret garanterar internationell frakt.\n\nBeskriv produkten korrekt när du ber om hjälp. En apparat med inbyggt batteri, en flaska med vätska och en tom plastflaska är olika fraktfrågor. Bifoga ursprungslänk och relevanta specifikationer så att supporten kan bedöma den faktiska varan i stället för att gissa utifrån ett kort produktnamn.\n\nOm ett transportalternativ inte accepterar varan, undersök ett annat tillåtet alternativ eller ompröva köpet. Ändra inte beskrivningen av innehållet för att få urvalssidan att acceptera det. Spara eventuell bekräftelse med orderanteckningarna och kontrollera igen vid packning om varan, destinationen eller transportalternativet har ändrats."
+        },
+        {
+          "title": "Anpassa packningen efter innehållet",
+          "text": "Packningsbeslut behöver balansera hur mycket plats paketet tar mot det skydd varorna behöver. En styv väska, en ömtålig accessoar och en komprimerbar tröja tål inte samma behandling. Att ta bort varje låda eller komprimera allt kan orsaka onödiga skador även om paketet blir mindre.\n\nOOPBuys förpackningsinformation beskriver bland annat kartonger, vissa ändringar av skokartonger, vakuumpåsar och skyddsmaterial, med tillgänglighet beroende på omständigheterna. Kontrollera vad som faktiskt erbjuds för din beställning och transport. Om du behöver originalförpackningen för förvaring, presentation eller en möjlig retur, avgör det innan du ber att få den borttagen.\n\nFör ett blandat paket bör du förklara vilka varor som måste behålla formen eller skyddas från tyngre innehåll. Fråga om aktuella provpackningstjänster om mer exakt packningsinformation skulle ändra ditt beslut. Läs först tjänstens avgift och avbokningsvillkor. Ompackning är användbar först när resultatet besvarar en specifik osäkerhet som du behöver reda ut."
+        },
+        {
+          "title": "Budgetera för mer än internationell frakt",
+          "text": "Din totala utgiftssammanställning bör innehålla varor, inrikesfrakt, internationell frakt, valda tjänster och eventuella betalnings- eller valutaväxlingskostnader som visas i kassan. Beroende på destination och transportvillkor kan även importrelaterade avgifter behöva undersökas. Skilj uppskattningar från belopp som redan betalats.\n\nBehandla inte ett transportalternativs smeknamn eller en informell rekommendation som en fullständig förklaring av skattehanteringen. Läs den faktiska beskrivningen och fråga vad det visade beloppet inkluderar. Om en avgift är oklar, notera frågan i budgeten i stället för att tyst anta att den är noll.\n\nAnge korrekta produktbeskrivningar och värden när information efterfrågas. Den här guiden fastställer inte tullreglerna på din destination och förutsäger inget tullutfall. Det användbara köpbeslutet är om totalen, med ett rimligt utrymme för olösta kostnader, fortfarande är acceptabel. En billig produkt kan bli ett dåligt köp om leveranskostnaden äter upp besparingen."
+        },
+        {
+          "title": "Läs leveransuppskattningar som etapper, inte löften",
+          "text": "En leveransuppskattning behöver en startpunkt. Säljarens avsändning, lagermottagning, färdig inspektion, paketinlämning och transportörens hämtning är olika tidpunkter. När du kontrollerar förloppet behöver du identifiera vilket steg den aktuella statusen tillhör innan du jämför med en förväntad internationell transporttid.\n\nOOPBuys officiella leveransinformation skiljer inrikes och internationell transport åt och nämner att förseningar kan uppstå. Använd den aktuella uppskattningen för valt alternativ som planeringsinformation i stället för ett garanterat ankomstdatum. Om du behöver varan till ett bestämt tillfälle måste du räkna med inköps- och lagerstegen utöver transportörens resa.\n\nEfter avsändning följer du paketets spårning och sparar referensen. En inköpsorder märkt som skickad kan avse resan till lagret i Kina; det betyder inte nödvändigtvis att det internationella paketet är på väg. Om förloppet verkar motsägelsefullt, ge supporten relevant order- eller paketreferens och datumen för händelserna du jämför."
+        },
+        {
+          "title": "Gör en sista kontroll innan du betalar frakten",
+          "text": "Granska det faktiska paketet som ett samlat köpbeslut. Bekräfta innehåll, mottagaruppgifter, destination, packningsinstruktioner, att transportalternativet är tillåtet, offererat belopp och valda tjänster. Säkerställ att du har granskat varje vara och att ingen olöst fråga om storlek eller skick har försvunnit ur fokus under fraktförberedelserna.\n\nJämför den bekräftade offerten med tidigare scenarier. Om den överskrider budgeten, pausa och undersök vilka tillåtna val som kan ändra resultatet. Ett annat lämpligt transportalternativ, en ändrad packningsbegäran eller en annan kombination av varor kan vara värda att utvärdera. Anta inte att något sänker priset utan en aktuell jämförelse.\n\nSpara villkoren för valt transportalternativ och den slutliga betalningsposten. Det gör senare frågor om spårning eller support lättare att förklara. God fraktplanering innebär att förstå paketet du skickar och villkoren du accepterat, i stället för att välja en tjänst enbart för att någon annans annorlunda försändelse kom fram snabbt."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuys fraktberäkning",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuys leveransinformation",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuys packningsvägledning",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuys inköpsbegränsningar",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuys instruktioner för provpackning",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-haul-packing",
+        "oopbuy-tracking-guide"
       ]
     },
     {
       "slug": "oopbuy-sizing-guide",
-      "tag": "STORLEK OCH PASSFORM",
-      "title": "En bättre storlekskontroll börjar hemma",
-      "description": "Jämför mått i stället för att lita på en välbekant etikett.",
+      "tag": "Storlekar",
+      "title": "OOPBuy storleksguide: läs storlekstabeller och kontrollera faktiska mått",
+      "description": "Välj kläder och skor med en tydligare storleksmetod: jämför säljarens tabeller, mät en vara som passar och be om riktade mått från lagret.",
+      "primaryKeyword": "OOPBuy storleksguide",
+      "secondaryKeywords": [
+        "OOPBuy storlekstabell",
+        "OOPBuy storlekar",
+        "OOPBuy klädstorlek",
+        "OOPBuy skostorlek"
+      ],
+      "takeaways": [
+        "Använd tabellen för den exakta annonsen och kontrollera om den beskriver kroppsmått eller plaggmått.",
+        "Jämför samma mått på en vara som du redan äger och tycker om att använda.",
+        "En korrekt storleksetikett garanterar inte passformen; reda ut viktiga måttfrågor före frakt."
+      ],
       "sections": [
         {
-          "title": "Mät något som passar",
-          "text": "Välj en liknande vara som du redan äger. För kläder antecknar du relevanta mått när plagget ligger plant; för skor använder du säljarens mätmetod. Använd samma enheter."
+          "title": "Börja med annonsen, inte en universell omvandling",
+          "text": "Den mest användbara storleksguiden för OOPBuy börjar med en begränsning: anta inte att alla säljare använder samma storlekstabell. En M-etikett, en numerisk skostorlek eller en rekommendation utifrån längd kan betyda olika saker i olika annonser. Tabellen som hör till den exakta produkten är utgångspunkten för jämförelsen.\n\nOOPBuy är en inköps- och logistikagent, medan produktspecifikationerna kommer från den underliggande annonsen. Att välja den storlek du brukar köpa fastställer inte att plagget kommer att ha samma mått som ett från en annan säljare. Betrakta välkända storleksnamn som beteckningar tills måtten ger dem betydelse.\n\nSpara tabellen och vald variant när du beställer. Om annonsen ändras senare vet du ändå vilken information beslutet byggde på. En skärmbild bör innehålla produktens identitet och eventuella förklaringar av mätmetoden, inte bara raden med din önskade storlek."
         },
         {
-          "title": "Läs den exakta annonsen",
-          "text": "Storleksbeteckningar kan skilja sig mellan säljare och modeller. Jämför dina mått med tabellen för just den varan. Kontrollera om en siffra är en plan bredd, en omkrets eller en längd."
+          "title": "Mät något som redan passar dig",
+          "text": "En praktisk referens är en vara som du äger, använder och tycker är bekväm för samma ändamål. Lägg den på ett plant underlag utan att dra tyget ur form. Mät de dimensioner som är relevanta för det nya köpet och anteckna både talet och hur du fick fram det.\n\nFör en skjorta kan användbara referenspunkter vara bredd mellan armhålorna, axelbredd, rygglängd och ärmlängd. För byxor kan du använda midjebredd, grenlängd fram, lårbredd och innerbenslängd. Du behöver inte alla tänkbara mått; prioritera dem som brukar avgöra om kategorin fungerar för dig.\n\nVälj en verkligt jämförbar referens. En lös sweatshirt säger lite om hur du vill att en figurnära skjorta ska sitta, och stretchbyxor beter sig annorlunda än stelt tyg. Anteckna hur referensen känns när du använder den och vad du skulle vilja ändra. Då blir måtten ett meningsfullt personligt mål i stället för en oförklarad siffersamling."
         },
         {
-          "title": "Red ut osäkerheter tidigt",
-          "text": "Fråga om oklara mått innan du beställer. Om du behöver ytterligare mått på din beställning, bekräfta tjänstens tillgänglighet och kostnad. Ingen enskild storlekstabell kan garantera passformen."
+          "title": "Ta reda på vad storlekstabellen mäter",
+          "text": "Innan du jämför tal ska du avgöra om tabellen anger kroppsmått, mått på färdiga plagg eller rekommenderade användarintervall. De besvarar olika frågor. Ett plaggs bröstmått omfattar utrymmet som konstruerats in i kläderna, medan kroppens bröstmått beskriver personen. Att blanda ihop dem kan leda till ett stort storleksfel.\n\nKontrollera enheterna och om ett värde är en bredd eller en omkrets. En plan bröstbredd på 54 centimeter är inte samma mått som en bröstomkrets på 54 centimeter. Att dubbla en plan bredd kan ge en ungefärlig jämförelse i vissa sammanhang, men återger inte alla delar av plaggets form.\n\nOm tabellen använder tum, omvandla konsekvent: en tum är 2,54 centimeter. Behåll ursprungstalet intill omvandlingen så blir fel lättare att upptäcka. Om rubriker är otydliga eller översättningen gör metoden tvetydig behöver du be om förtydligande innan du tolkar en rad som bevis för att storleken passar."
+        },
+        {
+          "title": "Välj överdelar utifrån de viktigaste måtten",
+          "text": "Börja med det mått som oftast skapar problem för dig. Om skjortor vanligtvis sitter trångt över bröstet jämför du bröstbredden först. Om ärmar ofta är korta gör du ärmlängden avgörande. Kontrollera sedan att övriga mått fortfarande stämmer med passformen du föredrar.\n\nTitta på plaggets konstruktion. En nedhasad axel eller raglanärm kan göra ett vanligt axel- eller ärmmått mindre direkt jämförbart med en traditionellt isydd ärm. Fråga var mätningen börjar och slutar och använd säljarens diagram om det finns.\n\nDin referensjacka kan exempelvis ha en plan bröstbredd på 56 centimeter och en rygglängd på 67 centimeter. Ett alternativ med liknande bröstbredd men mycket kortare bål kan ändå sitta helt annorlunda. Jämför hela uppsättningen viktiga mått i stället för att välja storlek för att ett enda tal passar särskilt väl."
+        },
+        {
+          "title": "Kontrollera mer än byxornas midja",
+          "text": "Byxstorleken blir ofta tydligare när du bedömer midja, grenlängd, lår och innerben tillsammans. En midja som verkar rätt garanterar inte bekväm rörelse eller önskad silhuett. Olika grenlängd kan också ändra var linningen sitter, vilket påverkar hur ett visst mått känns på kroppen.\n\nOm midjan är elastisk behöver du veta om tabellen anger avslappnat eller utsträckt mått. Jämför inte ett utsträckt säljarmått med ett avslappnat mått från dina egna byxor. Samma skillnad är viktig när du granskar en måttbandsbild från lagret.\n\nVar uppmärksam på tänkt längd och skärning. Två par med samma innerbenslängd kan se olika ut eftersom grenlängd, benform och benslut skiljer sig. Använd referensplagget för att identifiera den specifika förändring du vill ha, till exempel mer utrymme runt låren eller smalare benslut. Det säger mer än att fråga om säljarens byxor generellt är stora eller små i storleken."
+        },
+        {
+          "title": "Använd skotabeller med försiktighet",
+          "text": "Anteckna vilket storlekssystem säljaren visar för skorna och läs eventuell vägledning om fotlängd. En välbekant EU-, UK- eller US-beteckning bör inte omvandlas med en annan tabell utan att du kontrollerar att annonsen använder samma konvention. Saknas tabellen är osäkerheten fortfarande olöst.\n\nMät båda fötterna enligt säljarens metod när kroppsmått efterfrågas. Håll fotlängd, innersulelängd, invändig skolängd och yttersulelängd åtskilda i anteckningarna. De är inte utbytbara. En yttersula kan sticka ut längre än utrymmet för foten, medan innersulans form kan försvåra en rak längdjämförelse.\n\nLängden är dessutom bara en del av passformen. Bredd, tåform, utrymme över vristen, strumpor och tänkt användning kan påverka bekvämligheten. Jämför med ett liknande par du redan använder och ställ en riktad fråga om ett mått är avgörande. Undvik att lita på ett generellt råd att gå upp en storlek eller lägga till samma fasta mått för alla skor."
+        },
+        {
+          "title": "Ta hänsyn till tyg och önskad passform",
+          "text": "Mått hjälper dig att begränsa valet, men beskriver inte alla aspekter av hur en vara känns att bära. Tygets struktur, stretch, foder och avsedda skärning påverkar hur plagget rör sig. Använd annonsens faktiska information där den finns; dra inte slutsatser om exakt fibersammansättning eller stretch enbart från ett fotografi.\n\nFörklara din egen användning innan du väljer mellan närliggande storlekar. En kappa som bärs över tjocka lager kan behöva en annan passform än en skjorta direkt mot kroppen. En lös silhuett kan vara avsiktlig, men du bör ändå kontrollera att axlar, ärmar och total längd stämmer med hur du vill bära plagget.\n\nOm annonsen beskriver möjlig måttavvikelse ska du ta med osäkerheten i beslutet. Bygg inte hela valet på en liten sifferskillnad som mätmetoden inte tillförlitligt kan skilja ut. Om två storlekar verkar lika rimliga, identifiera den avvägning som är viktigast för dig i stället för att låtsas att tabellen ger ett perfekt svar."
+        },
+        {
+          "title": "Be om en riktad lagermätning",
+          "text": "OOPBuys information om anpassad logistik beskriver önskemål om extra detaljer och mått, bland annat plaggmått och sko- eller innersulelängd. Kontrollera aktuella tjänstealternativ och avgifter i ditt konto. En riktad begäran är användbar när den besvarar en viktig fråga som säljarens tabell lämnade öppen.\n\nAnge metoden tydligt. Be exempelvis att skjortan läggs plant och mäts över bröstet från ena armhålssömmen till den andra utan att sträckas. För innerben anger du grensömmen och fållen som ändpunkter. Be om ett fotografi som visar måttbandet och båda ändpunkterna samtidigt.\n\nJämför sedan resultatet med referensen enligt samma metod. En fotograferad storleksetikett och ett uppmätt plagg ger olika underlag. OOPBuys inspektionsinformation begränsar vad standardinspektionen fastställer, så utgå inte från att en matchande etikett betyder att den faktiska passformen redan har verifierats åt dig."
+        },
+        {
+          "title": "Avgör passformen före internationell frakt",
+          "text": "Granska måtten och din tänkta användning innan du lägger varan i ett internationellt paket. Om ett avgörande mått saknas, begär det medan du fortfarande kan fatta ett informerat beslut om lagervaran. Om underlaget visar en stor avvikelse, undersök aktuella efterservicealternativ snabbt i stället för att hoppas att passformen förändras under transporten.\n\nHåll tabell, vald storlek, måttbilder och eventuella supportsvar samlade. Det gör storleksfrågan lättare att förklara och hjälper dig skilja en felaktigt levererad variant från en korrekt märkt vara vars skärning inte passar dig. Det är olika situationer som kan kräva olika lösningar.\n\nEfter leverans mäter du varan igen med samma metod och antecknar hur den sitter. Bygg en privat referens utifrån din faktiska erfarenhet, med passformspreferenser och begränsningar. Med tiden är sådana observationer mer användbara än en växande lista oförklarade storleksbeteckningar eller generella råd kopierade från orelaterade köp."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys användaravtal vid registrering",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuys inspektionsinformation",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-spreadsheet-guide"
       ]
     },
     {
       "slug": "oopbuy-product-links",
-      "tag": "LÄNKAR FÖRKLARADE",
-      "title": "En produkt, två olika ID:n",
-      "description": "Varför säljarens artikel-ID är viktigt när du öppnar ett fynd.",
+      "tag": "Produktlänkar",
+      "title": "OOPBuy produktlänkar: hitta rätt vara och kontrollera varje variant",
+      "description": "Lär dig kontrollera produktlänkar för OOPBuy och Weidian, skilja käll-ID från katalognummer, lösa trasiga länkar och förstå affiliateparametrar.",
+      "primaryKeyword": "OOPBuy produktlänkar",
+      "secondaryKeywords": [
+        "OOPBuy Weidian-länkar",
+        "OOPBuy länkomvandlare",
+        "OOPBuy produktadress",
+        "OOPBuy spreadsheet-länkar"
+      ],
+      "takeaways": [
+        "Spara den ursprungliga produktlänken från marknadsplatsen och verifiera sidan som öppnas.",
+        "Håll katalogreferensen åtskild från produktidentifieraren som används i köplänken.",
+        "Kontrollera exakt variant och aktuell kassainformation; en affiliatekod garanterar ingen rabatt."
+      ],
       "sections": [
         {
-          "title": "Ett katalognummer identifierar sidan",
-          "text": "CNBuyCha ger varje produktsida ett eget katalognummer. Numret är användbart i katalogen, men är inte nödvändigtvis säljarens artikel-ID."
+          "title": "En fungerande länk är bara den första kontrollen",
+          "text": "En OOPBuy-produktlänk ska hjälpa dig att nå varan du vill undersöka. Att öppna en sida är bara början. Du behöver fortfarande bekräfta att produkt, säljarannons, valda alternativ och aktuellt pris motsvarar förväntningarna från katalogen eller produktlistan där du hittade den.\n\nOOPBuys nybörjarguide beskriver hur produktlänkar eller namn används för att hitta varor innan specifikationer och antal väljs. Processen beror på vilken information som finns för den enskilda annonsen. Anta inte att varje adress från ett socialt inlägg eller en marknadsplatssida kan importeras korrekt eller användas för köp utan fler kontroller.\n\nSpara ursprungslänken tillsammans med OOPBuy-adressen. Om en titel översätts annorlunda, en bild ändras eller en sparad sida slutar laddas ger källposten ett bättre underlag för att identifiera varan. Ett kort smeknamn som svart vardagsväska räcker inte för att skilja flera liknande annonser åt."
         },
         {
-          "title": "Säljarens länk identifierar varan",
-          "text": "För en Weidian-annons använder köpknappen artikel-ID:t i säljarens ursprungliga URL. Den öppnar varan i OOPBuy med den här webbplatsens affiliate-inbjudningskod."
+          "title": "Skilj en katalogreferens från ett produkt-ID",
+          "text": "Oberoende kataloger ger ofta varje post ett eget referensnummer. Den bakomliggande marknadsplatsen använder en separat identifierare för ursprungsannonsen. Numren har olika syften och bör inte ersätta varandra när du öppnar eller bygger en köplänk.\n\nI exemplet som OOPBuy Tab använder är 3470 en katalogreferens hos CNBuyCha. Numret 7876894732 är källidentifieraren som används i sökvägen för Weidian-produkten. Att katalogsidan har nummer 3470 betyder inte att den motsvarande OOPBuy-köplänken ska sluta på 3470.\n\nMärk fälten tydligt när du sparar ett fynd: katalogreferens, ursprungsmarknadsplats, ursprunglig produktlänk och OOPBuy-produktlänk. Spara hela adresser, inte bara numren. Det är särskilt användbart när olika marknadsplatser har olika adressformat eller någon delar en katalogskärmbild utan länken som faktiskt identifierar produkten."
         },
         {
-          "title": "Kontrollera sidan när den öppnats",
-          "text": "Jämför titel, säljare och variant med annonsen du undersökte. Om sidan har ändrats eller inte är tillgänglig, gå tillbaka till katalogen och välj medvetet en annan annons."
+          "title": "Läs OOPBuy-exempellänken korrekt",
+          "text": "Ett exempel på köplänk är https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5. Domänen identifierar OOPBuy, produktsökvägen identifierar en Weidian-annons och den sista parametern innehåller en inbjudningskod. Numret i sökvägen hör till källprodukten i exemplet, inte katalogens egen numrering.\n\nAnvänd adressen för att förstå strukturen, inte som bevis för aktuellt lager, pris, säljarens pålitlighet eller varans lämplighet. Öppna den aktuella sidan och kontrollera innehållet. En adress som ser giltig ut kan ändå leda till en ändrad eller otillgänglig annons, och en produktsökväg bekräftar inte vilka alternativ du tänker beställa.\n\nInbjudningsparametern ingår i affiliatelänken. OOPBuy Tab kan gynnas av kvalificerad användning av sina affiliatelänkar. Kodens närvaro fastställer inte att du får rabatt, kupong eller särskilt fraktpris. Förlita dig bara på erbjudanden som uttryckligen visas och är tillämpliga i den aktuella officiella kassan."
+        },
+        {
+          "title": "Kontrollera identiteten på sidan som öppnas",
+          "text": "Jämför den inlästa sidan med ursprungsannonsen utifrån flera detaljer tillsammans. Titta på produktbilder, viktiga designdrag, tillgängliga alternativ, antal och säljarinformation där den visas. Titlar kan förkortas eller översättas, så enbart en matchande titel är ett svagt test.\n\nTvå ryggsäckar kan exempelvis ha en liknande bild framifrån men olika invändiga fack, mått eller medföljande tillbehör. Bekräfta egenskapen som motiverade köpet. Behöver du ett visst datorfack eller en viss stängning ska du hitta det i den faktiska annonsen i stället för att anta att en liknande bild betyder samma konstruktion.\n\nVar uppmärksam på sidor som visar en relaterad vara när originalannonsen blivit otillgänglig. Om identiteten är oklar, pausa köpet och behåll båda länkarna medan du ber om förtydligande. Acceptera inte tyst en ersättningsprodukt för att miniatyrbilden liknar originalet. Senare kontroller av storlek, kostnad och QC förutsätter att du börjar med rätt vara."
+        },
+        {
+          "title": "Välj variant innan du jämför priser",
+          "text": "När du har identifierat rätt annons väljer du den faktiska färg, storlek, konfiguration och mängd som du vill bedöma. Ett visat frånpris kan gälla en annan variant än den första bilden. Vissa annonser samlar också tillbehör, enstaka delar eller olika förpackningsstorlekar på samma produktsida.\n\nSkriv valet med vanliga ord i anteckningarna. Large, mörkgrå, en styck är mer användbart än alternativ tre, särskilt om valens ordning ändras. Spara storlekstabeller eller specifikationsbilder som förklarar valet. Det gör det lättare att jämföra den kommande beställningen med det du avsåg att köpa.\n\nBetrakta katalogpriserna i USD på OOPBuy Tab som uppskattningar. Kontrollera aktuellt belopp för den valda varianten, inrikes leverans där den visas och betalningsuppgifter hos den officiella tjänsten. Internationell frakt är en separat budgetfråga. En länk som öppnar rätt produkt låser inte katalogpriset och gör inte beloppet till en totalsumma för leverans."
+        },
+        {
+          "title": "Felsök en trasig eller ofullständig länk",
+          "text": "Om en produkt inte laddas som väntat, gå tillbaka till den ursprungliga marknadsplatssidan och kopiera produktadressen igen. Kontrollera om du kopierade en varulänk, en butiksstartsida, ett sökresultat eller en delningssida. Förkortade kan de se likadana ut, men behöver inte identifiera samma sak.\n\nProva den fullständiga ursprungslänken via OOPBuys officiella sökning eller länkinmatning och granska resultatet. Om det fortfarande misslyckas, anteckna den exakta adressen och felet eller informationen som saknas. Fråga officiell support om just annonsen kan hanteras i stället för att anta att upprepade försök löser en produkt som inte stöds eller har tagits bort.\n\nUndvik att ändra slumpmässiga sifferdelar tills något laddas. Det kan leda till en orelaterad annons samtidigt som det verkar som om ursprungslänken reparerats. Hittar du en alternativ produkt ska den behandlas som en ny kandidat, och kontrollerna av identitet, storlek, variant och kostnad ska göras om från början."
+        },
+        {
+          "title": "Dela länkar med tillräckligt sammanhang",
+          "text": "En användbar delad produktlänk innehåller varunamn, ursprungsmarknadsplats, tänkt variant, kontrolldatum och viktiga osäkerheter. Säg till om du delar en katalogpost. Om du delar den aktuella köpsidan ska skillnaden vara tydlig. Då förstår nästa person vilken information som fortfarande måste verifieras.\n\nPresentera inte katalogbilder som bevis för en beställnings skick på lagret. OOPBuy Tab använder källdata från CNBuyCha och de importerade bilderna är inte verifierade QC-bilder av dina egna varor. När du diskuterar en personlig beställning ska det underlaget hållas separat, och privat konto-, adress- och orderinformation ska tas bort före offentlig delning.\n\nVar tydlig med affiliatelänkar. En inbjudningskod ska inte framställas som en garanterad besparing när inget tillämpligt erbjudande har kontrollerats. Ansvarsfull länkdelning hjälper någon att identifiera en produkt och dess osäkerheter, i stället för att antyda att din erfarenhet besvarar alla frågor om deras framtida beställning."
+        },
+        {
+          "title": "Gör kontoåtgärder hos den officiella tjänsten",
+          "text": "När du vill komma åt kontot använder du https://oopbuy.com/login och kontrollerar destinationen som visas i webbläsaren. En produktkatalog kan hjälpa dig upptäcka en vara, men den officiella tjänsten är platsen för aktuell information om konto, beställning och betalning.\n\nLäs länkens destination innan du anger inloggningsuppgifter eller betalar. Ett välbekant namn i sidtitel, bild eller inbjudningsmeddelande fastställer inte webbplatsens identitet. Om en omdirigering gör dig osäker, gå direkt till den officiella webbplatsen och använd ursprungslänken där.\n\nHåll ditt eget referensblad fritt från lösenord och betalningsuppgifter. Det behöver bara innehålla tillräckligt för att identifiera produkten och följa beslutet. Ta även bort personliga orderreferenser från offentliga urvalslistor. Sådana vanor gör det lättare att dela användbara fynd utan att blanda produktupptäckt med känslig kontoinformation."
+        },
+        {
+          "title": "Följ samma arbetsgång från länk till beställning",
+          "text": "Använd samma ordning för varje kandidat: spara ursprungslänken, öppna OOPBuy-resultatet, bekräfta produktens identitet, välj variant, kontrollera storlek eller specifikationer och uppskatta hela kostnaden. Avgör sedan om du har tillräcklig information för att beställa. Konsekvens är mer värdefull än att skynda igenom en sida som verkar bekant.\n\nSpara orderreferensen privat efter köpet och jämför lagerinformationen med samma variantanteckningar. En korrekt länk ersätter inte kontroll av de mottagna varorna. Om varan avviker hjälper sparat val och källuppgifter dig att beskriva problemet korrekt.\n\nKontrollera slutligen igen före återköp. En produkt som du framgångsrikt beställde för månader sedan kan ha ändrad tillgänglighet, andra alternativ, nytt pris eller annan beskrivning. Behåll tidigare observationer som användbar historik, men behandla den aktuella sidan som ett nytt köpbeslut. Då blir produktlistans länkar en hanterbar undersökningsprocess i stället för en samling antaganden."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuys officiella webbplats",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuy inloggning",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-spreadsheet-guide",
+        "oopbuy-price-check",
+        "oopbuy-sizing-guide"
       ]
     },
     {
       "slug": "oopbuy-price-check",
-      "tag": "SMARTARE JÄMFÖRELSER",
-      "title": "Jämför samma sak, inte bara priset",
-      "description": "En kort checklista för att jämföra två lovande fynd.",
+      "tag": "Budget",
+      "title": "OOPBuy priskontroll: beräkna kostnaden innan du köper",
+      "description": "Kontrollera produktpriset på OOPBuy, jämför exakt variant och gör en realistisk budget för inrikesfrakt, internationell leverans och andra kostnader.",
+      "primaryKeyword": "OOPBuy priskontroll",
+      "secondaryKeywords": [
+        "OOPBuy totalkostnad",
+        "OOPBuy fraktberäkning",
+        "OOPBuy produktpris"
+      ],
+      "takeaways": [
+        "Jämför samma variant och antal innan du jämför priser.",
+        "Betrakta visade USD-priser som uppskattningar, skilda från hela kostnaden för att få beställningen levererad.",
+        "Kontrollera budgeten igen efter lagermätningar och innan du betalar internationell frakt."
+      ],
       "sections": [
         {
-          "title": "Matcha alternativen",
-          "text": "Jämför samma storlek, färg, antal och medföljande tillbehör. Det lägsta visade priset kan gälla ett annat alternativ än det du vill ha."
+          "title": "Börja med priset du faktiskt behöver veta",
+          "text": "En priskontroll för OOPBuy bör besvara en praktisk fråga: har du råd med varan levererad till din adress? Ett lågt produktpris besvarar bara en del av frågan. Beslutet beror även på exakt variant, antal, säljarens leveransavgifter, internationell transport och andra belopp som visas i kassan eller krävs på din destination.\n\nOOPBuy Tab är en oberoende upptäcktssida, inte den officiella inköpsplattformen. Katalogdata kommer från CNBuyCha och visade produktpriser i USD är uppskattningar, inte fullständiga leveransofferter. Använd katalogen för att hitta kandidater och verifiera sedan den aktuella annonsen på OOPBuys officiella produktsida före betalning.\n\nBörja med ett högsta belopp som du är bekväm med att lägga på hela köpet. Om budgeten är 80 USD ska du inte lägga alla 80 USD på varor och hoppas att frakten blir försumbar. Reservera utrymme för kostnader som ännu inte är fastställda."
         },
         {
-          "title": "Ta med kommande kostnader",
-          "text": "Jämför inrikes frakt och sannolika paketkrav tillsammans med varupriset. Bekräfta den slutliga betalningsspecifikationen i OOPBuy i stället för att behandla katalogens uppskattning som en offert."
+          "title": "Kontrollera vald variant, inte första siffran",
+          "text": "Öppna den aktuella annonsen och välj avsedd färg, storlek, specifikation och mängd. Vissa annonser innehåller flera produkter eller konfigurationer under samma adress. Det lägsta visade priset kan avse ett annat alternativ än bilden som fångade din uppmärksamhet. En liten accessoar och ett komplett set kan stå intill varandra utan att kosta lika mycket.\n\nAnteckna det valda alternativet exakt som det visas. Spara produktadressen, säljarens namn om det syns, antal och aktuell delsumma för varorna. Om ordersidan visar ett prisintervall ska du inte föra in intervallets lägsta belopp i budgeten förrän du vet att det gäller ditt val.\n\nKontrollera om mängdvalet ändrar styckepriset eller minsta beställningsmängd. Två annonser som ser likadana ut är inte direkt jämförbara om det ena priset förutsätter flera enheter. Om ett översatt alternativ är tvetydigt behöver du reda ut det före betalning; en billig felaktig variant är fortfarande fel köp."
         },
         {
-          "title": "Spara uppgifterna",
-          "text": "Spara säljarens ursprungliga länk och dina valda alternativ. Uppgifterna hjälper dig att jämföra orderbilder och förklara en avvikelse om du behöver support."
+          "title": "Gör en kostnadssammanställning med separata rader",
+          "text": "OOPBuys vägledning för förstagångsköp skiljer den första betalningen för varor och inrikesfrakt från den senare internationella frakten. Låt sammanställningen återspegla detta. Ge varor, leverans från säljare till lager, internationell frakt och valfria tjänster egna rader. Lägg bara till betalnings- eller valutaavgifter där den faktiska betalningssidan eller betalningsleverantören visar dem. Håll destinationsskatter och hanteringsavgifter separata tills du har tillförlitlig information för destination och vald tjänst.\n\nMarkera varje rad som bekräftad, uppskattad eller okänd. Det är mer användbart än att låtsas att alla belopp är lika säkra. En bekräftad varudelsumma kan stå bredvid en uppskattad fraktkostnad medan en tjänsteavgift förblir okänd i väntan på en aktuell offert.\n\nFör flera produkter behöver du följa både varu- och paketkostnader. Varupriset hör till en vara; en gemensam packningstjänst kan höra till paketet. Om du fördelar gemensamma kostnader mellan varorna ska det märkas som din budgetmetod. Det är inte nödvändigtvis så OOPBuy eller transportören beräknar avgiften."
+        },
+        {
+          "title": "Synliggör valutaväxling och betalningskostnader",
+          "text": "Ett omräknat USD-belopp hjälper dig jämföra produkter, men garanterar inte den summa som ditt betalningssätt slutligen debiterar. Titta på valutan och beloppet på den faktiska bekräftelsesidan. Om betalningsleverantören visar en växling, jämför den summan med budgeten i stället för att anta att katalogens omräkning förblir oförändrad.\n\nAnvänd en arbetsvaluta i sammanställningen och anteckna hur du räknade om andra belopp. Behåll exempelvis säljarpriset i originalvaluta i ett fält och uppskattat USD-belopp i ett annat. Då finns ursprungsreferensen kvar när du återvänder till beräkningen.\n\nLägg inte till en påhittad universell växlingsavgift eller betalningsprocent för OOPBuy. Tillämpliga avgifter kan bero på aktuell betalningsväg och kontots alternativ. Den användbara kontrollen är konkret: vilket belopp kräver betalningen, i vilken valuta och vilken ytterligare avgift uppger leverantören faktiskt?"
+        },
+        {
+          "title": "Beräkna frakt för ett realistiskt paket",
+          "text": "OOPBuy har en officiell sida för fraktberäkning. Använd den med din destination och de uppgifter du rimligen kan fastställa om det planerade paketet. Läs beskrivningarna av tillgängliga tjänster i stället för att välja en enbart för att den visar lägst belopp. Tillåtet innehåll, paketmått, vikt och destination kan påverka vilka val som är rimliga.\n\nFöre lagerankomst ska vikter och mått betraktas som antaganden. Ett plaggs angivna vikt kan utesluta butiksförpackningen, medan en lätt men skrymmande vara kan ta mycket plats. Ta reda på vilka uppgifter kalkylatorn behöver och behåll dem tillsammans med resultatet så att jämförelsen kan upprepas.\n\nRäkna på ett andra scenario när en viktig uppgift är osäker. Jämför till exempel det förväntade paketet med en större version som behåller nödvändig skyddsförpackning. Det är en känslighetskontroll, inte en prognos. Om köpet bara ryms i budgeten under det mest optimistiska scenariot behöver planen större marginal."
+        },
+        {
+          "title": "Gå igenom ett fullständigt exempel",
+          "text": "Anta att din preliminära korg innehåller en skjorta uppskattad till 22 USD och en väska till 31 USD. Varuuppskattningen blir 53 USD. Du antecknar 5 USD för säljarleverans utifrån ordersidan och 24 USD för ett illustrativt internationellt fraktscenario. Delsumman är 82 USD före eventuella extra tjänster, betalningskostnader eller destinationsavgifter.\n\nBeloppen är hypotetiska och beskriver inte OOPBuys priser. De visar varför en varukorg på 53 USD inte automatiskt kan kallas ett köp på 53 USD. Om din maxbudget är 90 USD är återstående 8 USD din marginal för olösta kostnader, inte en kommande rabatt.\n\nÄndra nu scenariot: ett större paket höjer det hypotetiska fraktbeloppet till 34 USD. Delsumman blir 92 USD före olösta kostnader. Då har du ett tydligt beslut före åtagandet: ta bort en vara, höj budgeten medvetet eller avstå från köpet. Sammanställningen gör osäkerheten till en jämförelse som går att agera på."
+        },
+        {
+          "title": "Jämför alternativ på samma grund",
+          "text": "När du väljer mellan två säljare ska samma produktkonfiguration och förväntade resultat jämföras. Anteckna storlek, materialbeskrivning, medföljande tillbehör, antal och säljarens leveransavgift. En annons med lägre varupris kan innehålla färre delar eller ge mindre information om specifikationen du behöver.\n\nTa med underlagets kvalitet i jämförelsen utan att ge det ett påhittat penningvärde. En tydlig storlekstabell och välbeskriven produkt kan göra beslutet enklare, medan en tvetydig annons kan kräva fler frågor. Katalogbilder är upptäcktsbilder; de är inte verifierade fotografier av din egen lagerbeställning.\n\nEtt alternativ för 20 USD plus 6 USD i säljarleverans och ett för 24 USD plus 2 USD i säljarleverans ger exempelvis båda en preliminär delsumma på 26 USD. Det bevisar inte samma kvalitet eller slutlig fraktkostnad. Det tar bara bort en missvisande skillnad mellan huvudpriserna och låter dig bedöma övriga fakta."
+        },
+        {
+          "title": "Bedöm kuponger utan att låta dem styra budgeten",
+          "text": "En kampanj är bara användbar om den gäller köpet du tänkte göra. Läs den specifika kupongens aktuella villkor, bland annat var den kan användas, eventuell minsta köpsumma, tillåtna frakttjänster, sista giltighetsdag och om den kan kombineras med andra erbjudanden. Behandla inte kampanjtext i en gammal skärmbild som en aktiv rättighet.\n\nBeräkna rabatten efter att korgen är bestämd. Om en onödig extra vara öppnar en kupong, jämför hela den nya totalen med den ursprungliga. Ett extra köp kan höja varukostnad, paketvikt och volym även om kupongen sänker en rad på fakturan.\n\nAnteckna om rabatten redan ingår i uppskattningen. Att räkna samma besparing en gång i kalkylatorn och en gång i kalkylbladet skapar en fiktiv budget. Om slutkassan inte visar det förväntade avdraget ska skillnaden redas ut innan betalningen slutförs."
+        },
+        {
+          "title": "Kontrollera igen vid varje betalningsbeslut",
+          "text": "Upprepa priskontrollen när informationen förbättras: när du väljer aktuell variant, när köpet är klart för betalning och när lagermått kan användas för en internationell paketoffert. En uppskattning är användbar för att den hjälper dig besluta; den lovar inte att senare information inte kan ändra resultatet.\n\nBekräfta före betalning valda varor, antal, valuta, leveransadress, tjänstealternativ, faktiskt tillämpade rabatter och det belopp som nu ska betalas. Spara orderidentifierare och relevanta kvitton så att senare justeringar kan kopplas till rätt köp. Förlita dig inte på ett belopp du minns från ett produktkort.\n\nEn bra stoppregel är enkel: gå vidare först när beloppet och återstående osäkerheter ryms i budgeten. Om en okänd kostnad kan ändra beslutet, undersök den först. Använd sedan fraktguiden för att jämföra paketalternativ och lagerguiden för att förstå när bättre mått blir tillgängliga."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys fraktberäkning",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-spreadsheet-guide"
+      ]
+    },
+    {
+      "slug": "oopbuy-warehouse-guide",
+      "tag": "Lager",
+      "title": "OOPBuy lagerguide: från ankomst till paketinlämning",
+      "description": "Förstå vad du ska kontrollera när en OOPBuy-beställning når lagret, hur lagringsdatum följs och när du bör besluta om retur eller frakt.",
+      "primaryKeyword": "OOPBuy lagerguide",
+      "secondaryKeywords": [
+        "OOPBuy lagerförvaring",
+        "OOPBuy beställning mottagen",
+        "OOPBuy lagerinspektion"
+      ],
+      "takeaways": [
+        "Följ mottagningsdatum separat för varje vara och kontrollera aktuella lagringsvillkor.",
+        "Granska bilder och mått från din egen beställning innan varor samlas i ett paket.",
+        "Red ut produktfrågor och returmöjligheter innan du godkänner internationell avsändning."
+      ],
+      "sections": [
+        {
+          "title": "Se lagret som ett beslutssteg",
+          "text": "I lagersteget blir ett distansköp lättare att bedöma. Du kan jämföra varan som registrerats mot beställningen med alternativet du avsåg att köpa, granska tillgänglig inspektionsinformation och avgöra om du vill behålla den, ställa en fråga eller begära retur där det är tillåtet. Det är också här paketplaneringen blir mer konkret.\n\nSammanfatta inte alla steg med ordet anlänt. Säljarleverans, lagermottagning, inspektion, förvaring, paketförberedelse och internationell avsändning är olika händelser. Läs den faktiska statusen i ditt konto och leta efter varu- eller paketidentifieraren som hör till den.\n\nDet mest användbara är att förbereda kontrollerna innan varan når detta steg. Spara vald variant och måtten som är viktiga för dig. När lagerposten blir tillgänglig kan du jämföra med en specifik förväntan i stället för att försöka återskapa ditt ursprungliga val."
+        },
+        {
+          "title": "Skapa en separat post för varje vara",
+          "text": "Gör en varulogg med orderidentifierare, produktlänk, vald färg och storlek, antal, mottagningsdatum, inspektionsstatus och olösta frågor. Ge varje vara en egen rad även när flera produkter köptes tillsammans. En enda shoppingomgång kan ge separata säljarförsändelser och olika ankomstdatum till lagret.\n\nSkilj orderidentifieraren från säljarens spårningsnummer och det senare internationella paketnumret. De besvarar olika frågor. Om supporten ska undersöka en saknad vara är en exakt orderreferens mer användbar än en skärmbild av hela varukorgen.\n\nAnvänd enkla beslutsmarkeringar som behöver granskas, fråga skickad, behåll eller retur begärd i din egen logg. Det är dina organisationsetiketter, inte officiella OOPBuy-statusar. Syftet är att synliggöra ofärdigt arbete. När du återvänder till kontot efter några dagar bör du direkt se vilken vara som fortfarande behöver uppmärksamhet och varför."
+        },
+        {
+          "title": "Förstå lagringstiden utan att gissa",
+          "text": "OOPBuys officiella lagringsinformation anger att den kostnadsfria förvaringen är 90 dagar från att beställningen får status Received. Anteckna datumet för varje vara, inte bara det senaste köpet i en samlad beställning. Läs aktuell information och kontrollera kontot innan du förlitar dig på någon lagringstid.\n\nDen mer specifika informationen om anpassade logistiktjänster tillåter en betald förlängning för 10 CNY med upp till 30 ytterligare dagar, vilket ger högst 120 dagar totalt. Där står att varor efter den totala tiden kan behandlas som övergivna och omhändertas. Det betyder inte 120 kostnadsfria dagar eller obegränsade förlängningar.\n\nSätt en egen påminnelse med god marginal före den ordinarie kostnadsfria tidsgränsen så att du hinner reda ut frågor och förbereda frakt. Om du behöver en förlängning, kontrollera att den finns för just din vara och få det nya datumet bekräftat. Anta inte att extra förvaring köps automatiskt bara för att varan ligger kvar."
+        },
+        {
+          "title": "Granska underlaget som hör till din beställning",
+          "text": "Öppna inspektionsinformationen för exakt rätt vara i kontot. Jämför synlig färg, etiketter, storleksmärkning, antal och medföljande delar med dina sparade orderuppgifter. Leta efter tydliga problem med skicket i de bilder som faktiskt finns. Om en detalj är dold eller suddig ska den betraktas som olöst, inte automatiskt godkänd.\n\nEn katalogbild från OOPBuy Tab är inte bevis för skicket på din lagervara. Den oberoende katalogen använder källdata från CNBuyCha och bilderna är inte verifierade som orderspecifika QC-fotografier. Håll upptäcktsbilder och underlag för din egen beställning åtskilda.\n\nGranska en vara i taget och skriv ned frågor medan relevant bild är öppen. En precis anteckning som vänster ärmsöm syns inte är lättare att agera på än kvaliteten verkar osäker. Målet är att identifiera vad som går att verifiera och vad som behöver ytterligare kontroll."
+        },
+        {
+          "title": "Be om ett mått som avgör ett beslut",
+          "text": "När passform eller mått avgör om du behåller en vara ska du bestämma exakt vilket mått du behöver. För kläder kan det vara plan bröstbredd eller plagglängd mellan angivna punkter. För ett förvaringstillbehör kan det vara den användbara inre öppningen i stället för ytterbredden.\n\nKontrollera vilka extra inspektions- eller mättjänster som erbjuds för beställningen och vad de kostar innan du begär dem. Anta inte att en allmän inspektion omfattar varje mått, funktionstest eller materialkontroll du kan önska. Fråga om lagret kan utföra just den kontroll du beskriver.\n\nEn användbar begäran identifierar varan, mätpunkterna och det underlag som behövs. Exempelvis: visa måttbandet från den övre axelsömmen till nederfållen medan plagget ligger plant. Jämför med en liknande vara du redan äger med samma metod; olika mätmetoder kan skapa en falsk avvikelse."
+        },
+        {
+          "title": "Avgör returfrågan före paketplaneringen",
+          "text": "Om varan avviker från beställningen eller du inte längre vill ha den ska du genast granska tillämpliga returvillkor. Möjlighet till retur, tidsgräns, säljarens medverkan, varans skick och eventuella returfraktkostnader behöver kontrolleras för beställningen. En tillåten lagringstid skapar inte automatiskt en lika lång returfrist.\n\nBehåll varan i befintligt skick medan du undersöker frågan. Begäran att ta bort förpackning, etiketter eller andra delar kan påverka vad som går att returnera beroende på tillämpliga krav. Fråga supporten innan du godkänner ändringar om du är osäker. Skicka inte en olöst vara internationellt bara för att avsluta en samlad beställning.\n\nSkicka en kort begäran med orderidentifierare, det konkreta problemet och stödjande underlag. Beskriv önskat resultat, exempelvis returbedömning eller kontroll av en saknad del. Följ sedan svaret och eventuella åtgärder du behöver göra i stället för att anta att själva begäran slutför returen."
+        },
+        {
+          "title": "Avgör vilka varor som kan skickas tillsammans",
+          "text": "Samfrakt börjar med varorna du har beslutat att behålla. Jämför deras färdigstatus, fysiska egenskaper och lämplighet för frakttjänsterna som nu finns till din destination. Ett litet mjukt plagg och ett ömtåligt formfast föremål kan behöva olika skydd även om båda får plats i samma låda.\n\nKontrollera om det är rimligt att vänta på ett senare köp med hänsyn till den äldsta lagervaran. En teoretiskt lägre kostnad per vara hjälper inte om förseningen orsakar lagringsproblem eller missar din egen tidsgräns. Sätt ett sista datum för att lägga till produkter och planera sedan kring de varor som faktiskt är klara.\n\nAnvänd tillgängliga vikter och mått för att uppdatera fraktberäkningen. Be om förtydligande om du inte kan avgöra om en visad vikt gäller själva varan, butiksförpackningen eller ett färdigt paket. Beslutet bör bygga på jämförbara uppgifter. Den billigaste preliminära offerten är inte nödvändigtvis slutpriset för den packade försändelsen."
+        },
+        {
+          "title": "Skriv packningsinstruktioner med tydliga prioriteringar",
+          "text": "Ange vilken förpackning du vill behålla och varför. Säg till om originallådan ingår i en present eller skyddar en känslig form. Om du överväger att ta bort onödigt ytteremballage ska du bekräfta att tjänsten finns och förstå vilket skydd du kan förlora. Undvik instruktioner som bara säger gör det så litet som möjligt.\n\nKnyt varje instruktion till en varuidentifierare. En blandad samleverans behöver tillräckliga detaljer för att ett önskemål om ett par skor inte av misstag ska gälla allt. Kontrollera om valfri packning kostar extra och om tjänsten ändrar slutlig vikt eller mått.\n\nGranska före inlämning varulista, leveransadress, vald tjänst, deklarationsuppgifter och belopp som ska betalas. Ange sanningsenliga produktuppgifter och följ aktuella krav för destination och transportalternativ. När varorna har lämnat lagersteget blir det mycket svårare att rätta till en förbisedd storleks- eller packningsfråga."
+        },
+        {
+          "title": "Följ upp efter paketinlämningen",
+          "text": "Spara paketreferensen tillsammans med posterna för varorna som ingick. Då skapas en tydlig koppling mellan produktbeställning och internationell försändelse. Behåll den slutliga varulistan och bekräftade packningsval så att innehållet kan kontrolleras när paketet anländer.\n\nOm en vara ligger kvar ska dess lagringsdatum och nästa åtgärd fortsätta vara synliga. Att lämna in ett paket betyder inte att resten av kontot är färdighanterat. Granska lagerlistan efter fraktförberedelsen för att hitta sådant som fortfarande väntar på beslut, säljarens svar eller ett separat paket.\n\nLagerarbetet är klart när varje vara har ett medvetet utfall: skickad, väntar på en dokumenterad åtgärd eller går genom en bekräftad returprocess. Läs QC-bildguiden för en närmare granskning av underlaget. Använd sedan guiderna om samlad packning och spårning för att föra samma varuposter vidare till nästa logistiksteg."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys lagringsvillkor",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuys inspektionsinformation",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-returns-refunds",
+      "tag": "Efterservice",
+      "title": "OOPBuy returer och återbetalningar: villkor, underlag och nästa steg",
+      "description": "Lär dig vad du ska kontrollera före en OOPBuy-retur, hur ett problem dokumenteras och varför returgodkännande och utbetald återbetalning är separata steg.",
+      "primaryKeyword": "OOPBuy returer och återbetalningar",
+      "secondaryKeywords": [
+        "OOPBuy återbetalning",
+        "OOPBuy returvillkor",
+        "OOPBuy returfrakt"
+      ],
+      "takeaways": [
+        "Granska returvillkoren direkt efter inlagring; lagringstiden är inte en returfrist.",
+        "Behåll etiketter, förpackning och orderspecifikt underlag medan en retur bedöms.",
+        "Fråga efter faktiska returkostnader och skilj en godkänd återbetalning från mottagna pengar."
+      ],
+      "sections": [
+        {
+          "title": "Identifiera steget innan du begär återbetalning",
+          "text": "En återbetalningsfråga hos OOPBuy kan gälla flera situationer: ett köp som säljaren ännu inte skickat, en vara som redan finns på lagret, en retur på väg tillbaka till säljaren eller ett paket som levererats internationellt. Börja med att identifiera exakt vara och aktuellt steg. Nästa åtgärd beror på vad som redan har hänt.\n\nÖppna den officiella orderposten, anteckna orderidentifierare och senaste status och kontrollera om begäran gäller avbeställning, byte, retur eller ett problem efter leverans. Att be om rätt åtgärd minskar risken att ett allmänt meddelande ger svar på en annan fråga.\n\nOOPBuy Tab är en oberoende guide- och upptäcktssida och kan därför inte godkänna returer eller komma åt ditt konto. Skicka begäran via OOPBuys officiella order- eller efterservicekanal. Håll om möjligt diskussionen knuten till den berörda beställningen så att underlag och beslut finns tillsammans."
+        },
+        {
+          "title": "Kontrollera tidsgräns och villkor omedelbart",
+          "text": "Den officiella informationen om returer och återbetalningar beskriver en villkorad begäran inom fem dagar, 120 timmar, efter Stocked in, med start nästa timme efter statusändringen. Den hänvisar också till sju dagar efter kvitterad mottagning. Säljaren måste stödja retur och varan måste vara i godtagbart skick för återförsäljning; en begäran inom tidsgränsen gör inte alla varor berättigade.\n\nLäs den aktuella policyn och kontrollera tiderna för din egen beställning snabbt. Vänta inte till slutet av lagrets förvaringstid. Förvaring och returrätt är olika frågor och deras tidsgränser bör antecknas separat i ordernoteringarna.\n\nVissa kategorier och skick undantas, bland annat vissa specialanpassade produkter och varor där nödvändig förpackning eller etiketter tagits bort. Om beställningen redan ligger utanför angivna villkor, fråga om säljaren kan överväga begäran i stället för att anta en standardrättighet. Säljarens samtycke krävs fortfarande enligt den publicerade informationen."
+        },
+        {
+          "title": "Samla underlag kring ett tydligt problem",
+          "text": "Spara orderuppgifter som visar vad du köpte: produktlänk, vald storlek eller färg, antal och relevant beskrivning. Samla sedan underlag för det faktiska problemet. En etikettbild kan stödja en uppgift om fel storlek; en tydlig närbild tillsammans med en översiktsbild kan visa en fläck och var den sitter på plagget.\n\nBeskriv skillnaden exakt. Beställde marinblått, fick en etikett märkt svart är mer användbart än varan är dålig. Om ett mått spelar roll, visa mätmetod och jämförelsepunkt. En vag förväntan om passform är svårare att bedöma än en dokumenterad avvikelse från vald specifikation.\n\nAnvänd fotografier som hör till din egen beställning eller som tagits av den mottagna varan. Upptäcktsbilder i en produktlista eller katalog bevisar inte paketets skick. Bevara originalfiler om möjligt och undvik redigering som döljer sammanhang, varuidentifierare, etikett eller problemets fulla omfattning."
+        },
+        {
+          "title": "Skilj serviceavgifter från returtransport",
+          "text": "Den officiella informationen befriar den första retur- eller bytesåtgärden under en kalendermånad från serviceavgiften. Befrielsen är inget löfte om gratis porto. Ytterligare begäranden av personliga skäl kan medföra en serviceavgift på 5 RMB, och inrikes transportkostnader kan också tillkomma.\n\nBe om en specificerad offert för just din begäran. Den publicerade informationen beskriver på olika sätt hur säljarens ursprungliga fraktavgift behandlas, så beräkna inte en universell returtotal utifrån en lösryckt mening. Bekräfta förväntat återbetalat varubelopp, transportavgifter, eventuell serviceavgift och vem som betalar varje del.\n\nJämför sedan nettoutfallet. En hypotetisk varuåterbetalning på 18 USD med 7 USD i bekräftade returkostnader lämnar 11 USD före andra tillämpliga justeringar. Det är exempelbelopp, inte OOPBuy-priser. Att gå igenom den faktiska offerten hjälper dig avgöra om en frivillig retur är värd att genomföra eller om en annars acceptabel vara bör behållas."
+        },
+        {
+          "title": "Skriv en begäran som går att agera på",
+          "text": "Håll den första begäran tillräckligt kort för att granskas utan att viktiga detaljer försvinner. Ta med orderidentifierare, vara och vald variant, relevanta datum, problemet och önskat resultat. Bifoga det starkaste underlaget i stället för dussintals orelaterade skärmbilder. Skilj tydligt på separata problem med flera varor.\n\nFörklara exempelvis att lageretiketten visar en annan storlek än den betalda beställningen, ange båda storlekarna och be om en returbedömning eller rätt ersättningsvara. Om du bara har ändrat dig ska du säga det ärligt. Ett felaktigt angivet fel kan försvåra granskningen av underlaget.\n\nBe om förtydligande om nästa steg, eventuellt belopp du ska betala och om varan bör lämnas orörd. Följ kontots instruktioner för tillräckligt saldo eller betalning om en bekräftad returavgift krävs. Anteckna svar och tidsgräns och fortsätt kontrollera om frågor behöver besvaras."
+        },
+        {
+          "title": "Följ en retur som en process, inte en knapp",
+          "text": "En inskickad begäran, godkänd retur, avsändning tillbaka till säljaren, säljarens mottagning och slutförd återbetalning är separata milstolpar. Spara bekräftelsen som visar vilken milstolpe som nåtts. Att supporten bekräftar ditt meddelande är inte samma sak som att säljaren har accepterat varan.\n\nMedan en lagerretur bedöms bör du undvika att lägga varan i ett internationellt paket eller godkänna ändringar som påverkar skicket. Håll den lätt att identifiera och bevara förpackningar och delar som krävs för returen. Om planen ändras, bekräfta status innan du ger en motsägande instruktion.\n\nVid byte bör du fråga vad som händer om ersättningsvaran inte finns och om extra transportavgifter tillkommer. När ersättningen anländer ska den granskas som ett nytt beslut i stället för att du antar att det tidigare problemet automatiskt är löst. Uppdatera varuloggen så att du inte av misstag skickar originalvaran eller tappar bort ersättningen."
+        },
+        {
+          "title": "Skilj återbetalningsgodkännande från mottagna pengar",
+          "text": "När återbetalningen bekräftas, anteckna belopp, valuta, destination och referens. Kontrollera om posten avser en justering av OOPBuy-saldot eller en återföring till betalningsmetoden. Det är olika utfall, och en kontokreditering ska inte förväxlas med pengar som redan finns på bankkontot.\n\nDen officiella återbetalningsinformationen beskriver en förväntad avräkningstid för bankkort på 7–15 dagar efter bekräftelse, beroende på banken. Betrakta det som informationens uppskattning, inte en garanti eller en gemensam tidsplan för alla betalningsvägar. Fråga supporten vilket steg som gäller just din återbetalning.\n\nOm den förväntade tiden har passerat ska du ange återbetalningsreferens och bekräftelsedatum när du begär spårning. Jämför ursprungsbetalningens och återbetalningens valutor innan du drar slutsatsen att en skillnad är ett fel. Be om förklaring till oförklarade avdrag i stället för att hitta på en avgift eller anta att hela köpkostnaden var återbetalningsbar."
+        },
+        {
+          "title": "Hantera problem efter internationell leverans snabbt",
+          "text": "En internationell retur är ett större beslut än en retur från lagret. Den officiella policyn säger att kunden betalar returfrakten till Kina och ytterligare returrelaterade avgifter, samtidigt som tillämpliga villkor måste vara uppfyllda. Skaffa skriftliga instruktioner och en tydlig kostnadsbedömning innan du skickar något tillbaka.\n\nOm ett levererat paket är skadat, ofullständigt eller felaktigt ska du behålla ytterförpackning, fraktetikett, varulista och relevanta bilder. OOPBuys information om problem efter leverans innehåller korta tidsgränser för rapportering och underlag, så kontakta officiell support direkt i stället för att vänta medan du funderar på om problemet är allvarligt nog.\n\nVid ett uppenbart viktproblem efterfrågar informationen särskilt vägningsunderlag före öppning. Mer allmänt bör du dokumentera det du får så snart det är praktiskt möjligt och följa transportörens leveransrutiner. Släng inte förpackningen och försök inte reparera medan underlag fortfarande behövs. En rapport startar en bedömning; den garanterar inte en godkänd ersättning."
+        },
+        {
+          "title": "Förebygg undvikbara returbeslut vid nästa beställning",
+          "text": "Det mesta av returförberedelsen sker innan du behöver en retur. Verifiera aktuell variant, jämför relevanta mått, uppskatta internationell frakt och spara originalannonsens information före betalning. Det minskar problem som uppstår genom fel alternativ eller genom att leveransen visar sig överskrida budgeten.\n\nPå lagret ska du snabbt granska eget inspektionsunderlag och begära nödvändiga mått medan det fortfarande finns tid att besluta. Om du är osäker på varan, vänta med borttagning av förpackning och paketinlämning tills frågan besvarats. Ett tydligt behåll- eller returbeslut är mer värdefullt än en ofärdig samleverans som väntar i förvaring.\n\nDen slutliga posten bör visa lösningen: vara behållen, ersättning accepterad, retur slutförd eller återbetalning mottagen på angiven destination. Om något återstår ska nästa åtgärd och vem som behöver göra den antecknas. Använd lager- och QC-guiderna för att bygga in dessa kontrollpunkter från början vid framtida köp."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuys guide till order- och paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuys vägledning om problem efter leverans",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-warehouse-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-price-check"
+      ]
+    },
+    {
+      "slug": "oopbuy-tracking-guide",
+      "tag": "Leverans",
+      "title": "OOPBuy spårningsguide: tolka order- och paketuppdateringar korrekt",
+      "description": "Förstå OOPBuy-spårning, skilj säljarleverans från internationell frakt och lär dig vilket underlag du ska samla när ett paket behöver hjälp.",
+      "primaryKeyword": "OOPBuy spårningsguide",
+      "secondaryKeywords": [
+        "OOPBuy spårning",
+        "OOPBuy orderstatus",
+        "OOPBuy paketspårning"
+      ],
+      "takeaways": [
+        "Kontrollera om du tittar på en inköpsorder eller ett internationellt paket.",
+        "Följ exakt paketreferens och transportörens händelser i stället för att anta att varje status betyder samma sak.",
+        "När förloppet behöver undersökas skickar du en kort tidslinje och den senaste bekräftade händelsen."
+      ],
+      "sections": [
+        {
+          "title": "Identifiera först vilken resa du spårar",
+          "text": "Ett OOPBuy-köp har två leveranssteg: säljaren skickar varor till lagret i Kina, sedan färdas ett inlämnat internationellt paket mot din destination. En status som säger att en beställning skickats kan därför avse säljarens avsändning och inte ett paket som redan är på väg hem till dig.\n\nDen officiella statusguiden skiljer inköpsorder från paketorder. Den använder Shipped för säljarens avsändning i inköpsflödet och transportörens hämtning i paketflödet. Kontrollera alltid sidans sammanhang och identifierare innan du tolkar ordet. Den skillnaden löser många till synes motsägelsefulla spårningsuppdateringar.\n\nStäll en konkret fråga: väntar jag på att en produkt ska nå lagret, på att lagret ska förbereda ett paket eller på att en transportör ska leverera det? Skriv svaret intill relevant referens. Då kan du undersöka rätt steg i stället för att söka på en internationell spårningssida efter ett inrikesköp som ännu inte blivit ett internationellt paket."
+        },
+        {
+          "title": "Håll rätt identifierare samlade",
+          "text": "Skapa en post som kopplar inköpsordern till det senare paketet som innehåller den. Spara orderidentifierare, säljarens leveransreferens där den finns, internationellt paket- eller fraktsedelsnummer, vald tjänst och avsändningsdatum. Om flera order samlas ska de listas under paketet så att innehållet kan verifieras senare.\n\nDen officiella nybörjarguiden hänvisar användare till My Waybill och Waybill Details för försändelsespårning. Använd kontots aktuella navigering och uppgifterna som hör till ditt faktiska paket. En skärmbild utan identifierare kan vara svår att tolka när flera försändelser är på väg.\n\nKopiera spårningsnummer noggrant och behåll transportörsnamn som visas intill dem. Anta inte att ett paketnummer från en skärm är utbytbart mot varje transportörsreferens. Om en överlämning ger ett extra spårningsnummer, lägg till det i den befintliga posten i stället för att börja en lös anteckning som tappar kopplingen till ursprungsordern."
+        },
+        {
+          "title": "Läs lagerstatusar som arbetssteg",
+          "text": "Säljarens leveransbekräftelse kan komma före lagerinspektion och förvaring. Den officiella orderstatusguiden skiljer kvitterad leverans från senare kontroller och lagringssteg. En ankomstskanning betyder därför inte nödvändigtvis att varan redan är klar att läggas i ett internationellt paket.\n\nLeta efter kontomeddelanden som kräver åtgärd. En begäran om tilläggsbetalning eller bekräftelse kan hindra köpet från att gå vidare tills du svarar. Kontrollera den faktiska begäran och förklaringen i stället för att betrakta varje oförändrad status som en transportförsening. Om åtgärden är oklar ska du fråga om just den beställningen.\n\nAnvänd lagersteget för att granska själva varan. Bekräfta variant, tillgängliga inspektionsbilder och öppna frågor före inlämning. Framsteg i spårningen är inget godkännande av passform, funktion eller äkthet. En produkt kan gå korrekt genom logistiken och ändå behöva ett separat köpbeslut från dig."
+        },
+        {
+          "title": "Skilj paketförberedelse från transport",
+          "text": "Efter att du lämnat in ett internationellt paket kan flera lageruppgifter återstå innan transporten börjar. Betalning, granskning, sortering, packning och hämtning är inte utbytbara händelser. Den officiella guiden skiljer färdig packning från transportörens hämtning, vilket förklarar varför paketförberedelse kan synas före en transportskanning.\n\nLäs senaste händelse och tidsstämpel. Att en spårningsreferens finns fastställer inte i sig att ett fordon eller flygplan har avgått. Använd den specifika händelsebeskrivningen som underlag för vad som är känt och fyll inte luckan med en gissad plats.\n\nOm kontot visar ett betalnings- eller adressproblem behöver du lösa det först via officiell kanal. Om det visar färdig förberedelse men transportörens hämtning inte går att fastställa, fråga om överlämningen har skett. Det är en mycket lättare fråga att besvara än varför paketet är försenat utan att steget identifieras."
+        },
+        {
+          "title": "Tolka spårningsuppehåll utan att hitta på en tidsplan",
+          "text": "Transportörens uppdateringar registrerar händelser, inte en kontinuerlig direktposition. En period utan ny skanning säger inte exakt var paketet är eller varför ingen uppdatering kommit. Jämför senaste bekräftade händelse med tjänsteinformationen för just ditt transportalternativ innan du drar slutsatser.\n\nDet finns inget enda tillförlitligt antal dagar som gör alla OOPBuy-paket försenade. Hantering vid ursprung, valt transportalternativ, destinationshantering, helgdagar och lokal leverans kan variera. Använd den aktuella uppskattningen och villkoren för försändelsen, med förståelsen att uppskattningen inte är ett garanterat ankomstdatum.\n\nHåll en kort tidslinje i stället för att uppdatera flera sidor om och om igen. Anteckna avsändningspost, senaste transportörshändelse, kontrolldatum och publicerade meddelanden som gäller din transport. Om uppehållet överskrider tjänstens vägledning eller en utlovad uppföljning uteblir har du fakta redo för en fokuserad supportfråga."
+        },
+        {
+          "title": "Svara varsamt på tull- eller dokumentförfrågningar",
+          "text": "Om spårningen nämner tull eller en dokumentförfrågan ska du läsa exakt meddelande och fastställa vem som efterfrågar information. Använd kontaktvägen i ditt officiella konto eller den identifierade transportörens officiella tjänst. Följ inte en oväntad betalningslänk bara för att du råkar vänta på ett paket.\n\nSamla verkliga orderhandlingar som förklarar köpet: varubeskrivningar, antal, betalningskvitton och relevant paketreferens. Lämna korrekta uppgifter när en legitim process kräver det. Ändra inte beskrivning eller värde för att framtvinga önskat utfall och anta inte att ett pris i en produktlista är en faktura.\n\nFråga supporten vilken åtgärd som faktiskt behövs om spårningstexten är oklar. En allmän tullhändelse fastställer inte att en avgift ska betalas, att paketet har beslagtagits eller att leverans är omöjlig. Det är separata slutsatser som kräver underlag. Spara kopior av svar du lämnar och datumet då de skickades."
+        },
+        {
+          "title": "Följ överlämningen till lokal leverans",
+          "text": "När en internationell försändelse går in i lokal leverans ska du kontrollera om paketuppgifterna anger en destinationstransportör eller extra referens. Följ länken i den verifierade försändelseposten där den finns. Behåll ursprungsreferensen eftersom supporten kan behöva den för att koppla den lokala händelsen till den internationella försändelsen.\n\nGranska adressen på paketet, inklusive lägenhetsuppgifter och postnummer. Om ett leveransförsök eller hämtningsmeddelande visas ska du läsa den faktiska transportörens alternativ och tidsgräns. Anta inte att andra leveransförsök, omdirigering eller uthämtningsperiod är lika i alla länder och tjänster.\n\nOm transportören behöver adressförtydligande, svara via dess verifierade process och informera OOPBuy när det är lämpligt. Anteckna ändringar eller hämtningsarrangemang. En praktisk plan för den sista överlämningen är lika viktig som att följa den långa internationella sträckan, särskilt när ingen kommer att vara på plats för att ta emot paketet."
+        },
+        {
+          "title": "Vet vad du gör när leveransen verkar fel",
+          "text": "Om spårningen säger levererat men du inte hittar paketet, granska händelsen efter leveransbild, reception, paketskåp eller annan angiven plats. Bekräfta försändelsens adress och kontakta destinationstransportören via officiell kanal. Be om leveransunderlaget i stället för att anta en viss orsak.\n\nInformera OOPBuy om problemet med paketidentifierare och transportörens svar. Om paketet finns men är skadat eller ofullständigt ska du spara etikett, förpackning, varulista och bilder. Den officiella informationen om problem efter leverans innehåller korta tidsfrister, så rapportera snabbt och följ instruktionerna för underlag i din situation.\n\nSkilj leveransunderlag från varuunderlag. En transportörsskanning kan visa var ett paket lämnades; den bevisar inte vilka enskilda produkter som fanns inuti. Tydliga uppgifter på båda nivåerna hjälper berörda parter att bedöma frågan utan att förlita sig på spekulation eller orelaterade produktbilder."
+        },
+        {
+          "title": "Skicka supporten en tidslinje som går att undersöka",
+          "text": "En användbar spårningsfråga identifierar paket, tjänst, destinationsland, avsändningsdatum, senaste bekräftade händelse och frågan du vill ha besvarad. Ta med eventuella förfrågningar du redan fått från transportören och om du har agerat på dem. Lägg inte ut fullständig adress eller personliga identifierare i offentliga diskussionsgrupper.\n\nFörklara till exempel att kontot visar transportörens hämtning, ange datum för senaste händelse och fråga om en transportörsutredning är möjlig enligt vald tjänst. Om du blivit lovad en uppdatering, ta med referens och utlovat datum. Fråga vad du ska göra härnäst och när du bör följa upp.\n\nHåll ny information i samma post tills försändelsen levererats eller en dokumenterad lösning nåtts. Spårning är mest användbar när den stöder ett beslut: besvara en begäran, hämta ett paket, bevara underlag eller begära utredning. Vid planering av nästa försändelse kan du återvända till frakt- och packningsguiderna innan transportalternativ väljs."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys guide till order- och paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuys leveransinformation",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuys vägledning om problem efter leverans",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-haul-packing",
+      "tag": "Packning",
+      "title": "Packa en OOPBuy-samleverans: skydda varorna och kontrollera slutkostnaden",
+      "description": "Planera en samleverans från OOPBuy med praktiska packningsval, kontroll av transportalternativ och vägledning om provpackning före internationell frakt.",
+      "primaryKeyword": "OOPBuy packning av samleverans",
+      "secondaryKeywords": [
+        "OOPBuy provpackning",
+        "OOPBuy förpackning",
+        "OOPBuy frakt av samleverans"
+      ],
+      "takeaways": [
+        "Välj packning utifrån varorna som behöver skydd och transportalternativet som kan ta dem.",
+        "Borttagning av lådor och komprimering innebär avvägningar, inte automatiska besparingar eller allmänna rekommendationer.",
+        "Provpackningens resultat förutsätter oförändrat transportalternativ och oförändrad packningskonfiguration."
+      ],
+      "sections": [
+        {
+          "title": "Ge samleveransen ett tydligt packningsmål",
+          "text": "En bra plan för en OOPBuy-samleverans balanserar skydd, paketstorlek, kostnad och skicket som du vill att varorna ska anlända i. Målen kan stå i konflikt. Att behålla en butiksförpackning kan bevara presentationen men ta mer plats; att ta bort den kan minska volymen men göra annat skydd nödvändigt.\n\nBörja med att avgöra vad som är viktigt för varje vara. En present kan behöva originallådan. En formfast väska kan behöva stöd för att behålla formen. Ett tvättbart mjukt plagg har andra packningsbehov än en ömtålig accessoar. Ge inte hela samleveransen samma standardinstruktion bara för att en video visade att det fungerade för någon annans köp.\n\nMålet är ett lämpligt, tydligt specificerat paket med en kostnad du förstår. Den minsta lådan är inte automatiskt bäst, och alla valfria skyddstjänster kan också vara onödiga. Låt varje val besvara en konkret fråga om en vara, dess användning eller transportkrav."
+        },
+        {
+          "title": "Ta bara med varor du har beslutat att behålla",
+          "text": "Slutför produktbeslutet före packningsbeslutet. Granska vald variant och ditt eget lagerunderlag och reda sedan ut frågor om storlek, antal eller synligt skick. Behöver du ytterligare mått ska de begäras innan varan binds till en internationell försändelse.\n\nTänk på returvillkoren när du överväger förpackningsändringar. Att ta bort nödvändiga etiketter, förseglingar, tillbehör eller förpackningar kan påverka om varan uppfyller villkoren. Fråga först om en olöst vara. Att packa en produkt för att spara plats är en dålig avvägning om du fortfarande funderar på att returnera den.\n\nSkapa en slutlig innehållslista med orderreferens vid varje vara. Markera sådant som ska stanna på lagret och sätt en gräns för nya inköp. Det förhindrar en ständigt växande samleverans och ger en stabil varugrupp för jämförelse av transportalternativ, beställning av packningstjänster och kontroll av färdigt paket."
+        },
+        {
+          "title": "Förstå varför både vikt och mått spelar roll",
+          "text": "Ett paket tar fysisk plats och har dessutom en vikt på vågen. Frakttjänster kan ha olika debiteringsregler, så läs regeln för det faktiska transportalternativet. Hämta inte en volymviktsfaktor från en annan agent, transportör eller ett forum och anta att den styr din offert.\n\nOOPBuys officiella nybörjarguide säger att slutlig frakt beror på uppmätta paketmått och vikt. Den tidiga beräkningen bör därför förbli preliminär tills relevanta mått efter packning är kända. Vikten av lösa produkter är inte nödvändigtvis vikten av en låda med samma produkter och skyddsmaterial.\n\nEn lätt vara med stel, skrymmande förpackning kan exempelvis påverkas mer av paketstorlek än en kompakt och tung vara. Det förklarar varför packningsval spelar roll; det förutsäger ingen fast besparing. Jämför faktiska offerter för en tillåten konfiguration och spara tjänstens regel intill beloppet så att du vet vad som jämförs."
+        },
+        {
+          "title": "Välj skydd för produkten, inte fotografiet",
+          "text": "OOPBuys officiella packningsinformation beskriver alternativ som kartonger, enkel förpackning, vakuumpåsar, bubbelskydd och sträckfilm. Tillgängligheten beror på tjänst och paket. Se menyn som val att bedöma, inte en lista med uppgraderingar som varje försändelse behöver.\n\nTänk på vilken skada du försöker förhindra. En mjuk påse runt ett plagg hanterar ett annat problem än stötdämpning runt ett ömtåligt föremål. En kartong i sig förklarar inte hur varan stöds inuti, och flera lager emballage ersätter inte en tydlig instruktion om en känslig del.\n\nFråga om en tillgänglig tjänst är lämplig när du är osäker på material eller konstruktion. Komprimering kan vara olämplig för formberoende varor eller känsliga detaljer. Bedöm inte rätt packningsmetod enbart från en katalogminiatyr eftersom den kanske inte visar hur stel, ömtålig eller skrymmande den faktiska varan är."
+        },
+        {
+          "title": "Bestäm uttryckligen vad som händer med sko- och butikslådor",
+          "text": "Säg till för relevant vara om du vill behålla en skokartong eller annan butiksförpackning. Om du överväger borttagning eller vikning ska du kontrollera att alternativet finns och förstå vilket skydd som blir kvar runt produkten. Originalförpackningen kan vara användbar för presentation, förvaring eller skydd även om du inte tänker sälja något vidare.\n\nJämför förväntad nytta med konsekvensen. Att ta bort en låda kan minska volymen men även ta bort stöd eller skilja delar som måste hållas tillsammans. En ersättande ytterkartong kan fortfarande behövas. Det finns ingen allmän regel att borttagna lådor gör varje samleverans billigare när alla packningsval räknats in.\n\nFör en blandad försändelse skriver du beslut vara för vara: behåll presentlådan, ta bara bort den överflödiga fraktkartongen eller fråga innan en viss förpackning ändras. Undvik en tvetydig instruktion som ta bort alla lådor när du egentligen menar ett enda förbrukat yttre lager."
+        },
+        {
+          "title": "Kontrollera transportkompatibilitet innan allt samlas",
+          "text": "Att en produkt visas i en katalog fastställer inte att den får skickas med ditt önskade transportalternativ. OOPBuys packningsvägledning nämner begränsningar för batteritransport och informationen om separata försändelser anger fall där överdimensionerade varor behöver egen packning. Följ aktuella lagermärkningar och transportvillkor för de varor du faktiskt har.\n\nGranska hela innehållslistan mot tillgänglig tjänst. Om en vara förändrar behörigheten, jämför ett gemensamt paket med separat försändelse genom verkliga offerter och samma nödvändiga skydd. Anta inte att samfrakt alltid vinner, eftersom fler paket och olika transportalternativ kan förändra beräkningen i motsatta riktningar.\n\nBeskriv produkter korrekt och kontrollera osäkra kategorier före inköp. Packning gör inte förbjudna varor tillåtna och kringgår inte destinationskrav. Om en tjänst inte kan transportera en vara ska du fråga om ett lagligt tillåtet alternativ eller lämpligt nästa steg medan varan fortfarande finns på lagret."
+        },
+        {
+          "title": "Använd provpackning när den löser en verklig osäkerhet",
+          "text": "De officiella instruktionerna för Parcel Rehearsal beskriver hur lämpliga underorder på lagret väljs och provpackning lämnas in med mottagar- och packningsuppgifter. Den publicerade serviceavgiften är 20 CNY. Kontrollera aktuell kontoprocess och avgift före betalning, särskilt om dina alternativ skiljer sig från guiden.\n\nProvpackning är användbar när ett packat mått kan ändra fraktbeslutet. Bestäm tänkt packningskonfiguration först. Den officiella informationen gör den resulterande fraktberäkningen beroende av oförändrat transportalternativ, packningssätt och detaljer; senare ändringar kan ändra mätresultat och slutavgift.\n\nGranska avbokningsvillkor före inlämning. Informationen tillåter avbokning innan varorna tagits från hyllan och beskriver begränsningar därefter, så anta inte att avgiften återbetalas när arbetet börjat. Be om förtydligande om aktuell status är oklar. Provpackning är ett betalt förberedelsebeslut, inte ett sätt att garantera leveranshastighet eller undanröja all transportosäkerhet."
+        },
+        {
+          "title": "Skriv instruktioner som någon annan kan följa",
+          "text": "Använd korta instruktioner för specifika varor med tydlig prioritet. Identifiera produkten med orderreferens, ange vad som ska behållas eller tas bort och förklara eventuella skyddskrav. Om en instruktion beror på genomförbarheten ska lagret bekräfta i stället för att behöva gissa mellan oförenliga mål.\n\nBe exempelvis lagret att behålla den märkta presentlådan, hålla innehållet tillsammans och bekräfta lämpligt yttre skydd. För en annan vara kan du fråga om överflödig säljarförpackning kan tas bort utan att nödvändig produktförpackning ändras. Det är önskemål att verifiera, inte antaganden om att en viss tjänst ingår.\n\nJämför alternativen du valt i gränssnittet med den skrivna anteckningen. En notering om att behålla en låda kan strida mot ett borttagningsval någon annanstans. Granska extra avgifter före inlämning och spara bekräftade val. Tydliga instruktioner minskar osäkerhet bättre än ett långt stycke som blandar preferenser, skämt och flera paketplaner."
+        },
+        {
+          "title": "Granska färdigt paket och planera mottagningen",
+          "text": "Jämför inför det slutliga fraktbeslutet innehållslista, mottagaruppgifter, valt transportalternativ, packningskonfiguration, mått och belopp att betala. Bekräfta faktiskt tillämpad rabatt och se över totalbudgeten. Produktpriser i USD på upptäcktssidor är uppskattningar och inkluderar inte hela kostnaden för att få samleveransen.\n\nSpara paketreferensen med varureferenser och packningsbekräftelser. När försändelsen kommer kan du kontrollera om alla förväntade delar finns och om nödvändig butiksförpackning behölls. Bevara leveransunderlag snabbt om ett problem uppstår i stället för att genast kasta ytteremballaget.\n\nEn lyckad packningsplan slutar med varor som kommer i acceptabelt skick till en kostnad du medvetet godkänt. Använd spårningsguiden för resan efter avsändning och returguiden om inspektionen visar ett problem före frakt. Anteckna inför nästa samleverans vilka packningsval som var användbara så att nästa beslut börjar med underlag."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys packningsvägledning",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuys instruktioner för provpackning",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        },
+        {
+          "label": "OOPBuys vägledning för separata försändelser",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        },
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-returns-refunds"
+      ]
+    }
+  ],
+  "guides": {
+    "guide": {
+      "sections": [
+        {
+          "title": "Börja med en tydlig urvalslista",
+          "text": "Välj en produktkategori och jämför sedan några relevanta annonser. Anteckna produktnamn, ursprungslänk, vald färg, storlek och antal. Katalogpriset är en användbar första referens; kontrollera aktuellt alternativ och belopp när produkten öppnas via OOPBuy. Håll frågor om mått, material och medföljande tillbehör tillsammans med varan. En kort urvalslista gör det lättare att upptäcka när två liknande bilder faktiskt visar olika versioner eller olika säljaralternativ."
+        },
+        {
+          "title": "Granska beställningen före betalning",
+          "text": "OOPBuys nybörjarguide beskriver köp via plattformen och mottagning av varor på dess lager i Kina. Produkten och kinesisk inrikes leverans betalas först; internationell paketfrakt betalas separat senare. Granska den inlästa annonsen före beställning och matcha alternativen mot dina anteckningar. Kontrollera belopp och villkor för varan. Red ut oklar storlek, mängd eller produktbegränsning före betalning. Spara orderreferensen så att senare lagerinformation kan kopplas till rätt köp."
+        },
+        {
+          "title": "Kontrollera varan när lagerinformation visas",
+          "text": "Säljarens avsändning och lagerhanteringen är separata steg. När beställningen fått lagerinformation läser du aktuell status och granskar tillgängliga bilder. Jämför mottagen färg, storleksetikett, antal och synligt skick med det beställda alternativet. Om en användbar detalj inte syns, fråga om extra bild eller mätning finns och vad den kostar. Kontrollera aktuella efterservicealternativ snabbt vid problem eftersom möjligheterna beror på varan och omständigheterna."
+        },
+        {
+          "title": "Fatta paketbeslutet sist",
+          "text": "Granska varje ingående vara, leveransadress, valt transportalternativ och dess villkor innan paketet lämnas in. Använd den officiella fraktberäkningen för att utforska lämpliga alternativ och kontrollera sedan uppgifterna för ditt faktiska paket. Packning, uppmätta mått och innehåll kan påverka valmöjligheterna. Håll order- och paketreferenser samlade och använd det officiella kontot för support och spårning. Våra fördjupade guider förklarar beslut om storlek, QC, kostnad och packning längs vägen."
+        }
+      ],
+      "checks": [
+        "Matcha inläst produkt, variant och antal med ursprungsannonsen.",
+        "Granska lagerunderlag och möjliga efterserviceåtgärder snabbt.",
+        "Kontrollera adress, paketinnehåll och transportvillkor före inlämning."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys nybörjarguide",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuys fraktberäkning",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ]
+    },
+    "qc": {
+      "sections": [
+        {
+          "title": "Identifiera vilka bilder du granskar",
+          "text": "Börja med bildernas källa. En katalog- eller säljarbild visar en annons; inspektionsbilderna som hör till din egen beställning gäller varan som togs emot för den. Matcha orderreferens och valt alternativ innan du beslutar. Produktbilderna på den här sidan kommer från katalogen och är märkta som produktbilder. När du behöver bedöma din mottagna vara använder du underlaget i ditt officiella OOPBuy-konto."
+        },
+        {
+          "title": "Kontrollera identitet, antal och synligt skick",
+          "text": "Läs beställd färg, storlek, version och antal tillsammans med bilderna. Titta först på hela varan och granska sedan områden som är viktiga för produkten. För skor jämför du båda skorna och synliga storleksetiketter. För kläder granskar du silhuett, sömmar och tryckta detaljer. För väskor och accessoarer kontrollerar du stängningar, remmar och medföljande delar. Anteckna exakt avvikelse och bilden som visar den i stället för att förlita dig på en allmän känsla av att något är fel."
+        },
+        {
+          "title": "Ställ en fråga som en annan bild kan besvara",
+          "text": "En användbar begäran identifierar ett beslut och underlaget som krävs. Du kan be om en läsbar etikett, en vy av ett dolt fäste eller ett mått där måttbandets ändpunkter syns. Bekräfta att tjänsten finns och granska visad avgift innan du fortsätter. Fotografier har begränsningar: ljus påverkar färg, perspektiv kan förvränga proportioner och en bild fastställer inte invändig funktion, långsiktig hållbarhet eller materialsammansättning. Lämna olösta frågor öppna i stället för att gissa."
+        },
+        {
+          "title": "Red ut frågor före paketinlämning",
+          "text": "Jämför det du kan se med annonsen och avgör om du ska fortsätta, be om förtydligande eller kontakta efterservice. Spara valt alternativ, relevanta bilder och en kort problemförklaring. OOPBuy publicerar inspektions- och returinformation; granska aktuell policy och alternativen för din order innan du antar ett visst utfall. Den fullständiga QC-artikeln ger en kategoribaserad checklista, medan storleks- och returguiderna förklarar när ytterligare mått eller snabb supportkontakt kan ändra beslutet."
+        }
+      ],
+      "checks": [
+        "Använd inspektionsunderlag för rätt beställning och valt alternativ.",
+        "Begär en tydlig bild eller mätning för en specifik olöst fråga.",
+        "Dokumentera synliga problem och kontrollera aktuella efterservicealternativ före frakt."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys inspektionsinformation",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuys anpassade logistiktjänster",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuys returer och återbetalningar",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    "shipping": {
+      "sections": [
+        {
+          "title": "Förbered beräkningsuppgifterna",
+          "text": "Börja med destinationen och produkterna du tänker skicka. Samla tillgänglig vikt och mått och identifiera innehåll som kan kräva särskild hantering eller kontroll av transportalternativ. Ange relevanta uppgifter i OOPBuys officiella fraktkalkylator och granska alternativen den visar. Innan lagermått finns är uppgifterna antaganden. Håll dem synliga så att de kan ersättas senare. En användbar beräkning förklarar paketet som bedöms i stället för att behandla ett visat pris som allmängiltigt."
+        },
+        {
+          "title": "Läs transportvillkoren tillsammans med priset",
+          "text": "Jämför lämpliga transportalternativ med samma paketuppgifter. Granska angiven debiteringsmetod, tillåtet innehåll, storleksgränser och andra villkor på plattformen. Faktisk vikt beskriver massa; volymdebitering använder paketets utrymme enligt transportalternativets regel. En större låda kan därför förändra jämförelsen även med samma varor. Använd faktorn och avrundningsmetoden som visas för alternativet och hämta inte en formel från en orelaterad transportör eller beräkning."
+        },
+        {
+          "title": "Granska hela budgeten och packningen",
+          "text": "Håll uppskattad internationell frakt tillsammans med övriga belopp för beställningen. Varupris, leverans från säljare till lager, valda tjänster och tillämpliga betalnings- eller destinationsavgifter kan visas i olika steg. Kontrollera varje belopp där det faktiskt presenteras. Packningsval bör balansera skydd och paketstorlek: ömtåliga eller lätt krossade varor kan behöva annat skydd än mjuka kläder. Fråga vilka tjänster som finns och jämför det föreslagna paketet innan du antar att borttagen förpackning eller samfrakt sänker totalen."
+        },
+        {
+          "title": "Kontrollera det faktiska paketet före avsändning",
+          "text": "När packade mått och aktuella fraktalternativ finns upprepar du jämförelsen med den informationen. Bekräfta mottagaruppgifter, innehåll, transportvillkor och beloppet som begärs vid inlämning. Betrakta leveransuppskattningar som planeringsinformation och lämna tid för stegen i order- och paketposterna. Spara paketreferensen och följ uppdateringarna via det officiella kontot. De fördjupade guiderna om frakt, totalkostnad, packning och spårning förklarar besluten bakom denna slutkontroll."
+        }
+      ],
+      "checks": [
+        "Jämför transportalternativ med samma destination, innehåll, vikt och mått.",
+        "Använd debiteringsreglerna och begränsningarna för det valda alternativet.",
+        "Räkna om med faktiska paketuppgifter innan du bekräftar försändelsen."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuys fraktberäkning",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuys leveransinformation",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuys förklaring för förstagångsköpare",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
         }
       ]
     }
-  ]
+  },
+  "categoryIntros": {
+    "shoes": {
+      "title": "OOPBuy spreadsheet för skor",
+      "intro": "Utforska skor utifrån modell, tänkt användning och detaljer som avgör passformen. Jämför exakt säljaralternativ innan du förlitar dig på en bekant storleksmärkning. Produktbilder hjälper dig välja kandidater; säljarens mått och underlaget för din mottagna beställning stöder nästa beslut. Låt både vänster och höger sko ingå i kontrollerna.",
+      "checks": [
+        "Jämför säljarens storleksinformation med ett lämpligt par du redan använder.",
+        "Kontrollera modell, färg, storleksetikett och båda skorna när orderbilder finns.",
+        "Tänk på skydd och paketutrymme för skorna och deras låda."
+      ]
+    },
+    "hoodies-sweaters": {
+      "title": "OOPBuy huvtröjor och tröjor",
+      "intro": "Bläddra bland huvtröjor och tröjor med din önskade passform i åtanke. Bröstbredd, plagglängd och axelform ger mer användbara jämförelser än en storleksbokstav ensam. Jämför varje säljares mått med ett bekvämt plagg du äger och kontrollera vald färg och version. Bilder visar utseende; fibersammansättning och tygvikt kräver tillförlitlig annonsinformation eller bekräftelse.",
+      "checks": [
+        "Anteckna bröstbredd, plagglängd och axelmått för jämförelse.",
+        "Kontrollera vald färg, muddar, huva eller halsringning i tillgängliga bilder.",
+        "Bekräfta material- eller tygviktsuppgifter i annonsen innan du förlitar dig på dem."
+      ]
+    },
+    "t-shirts": {
+      "title": "OOPBuy spreadsheet för T-shirts",
+      "intro": "Hitta T-shirts utifrån form, ärmstil och exakt design du vill ha. Jämför plaggmått och valt alternativ innan du bestämmer storlek. Små skillnader i tryckplacering, kragkonstruktion eller färg kan skilja liknande annonser åt. Använd bilder för att identifiera frågor och bekräfta sedan detaljer genom säljarinformation och tillgängligt lagerunderlag för din beställning.",
+      "checks": [
+        "Jämför plagglängd och bröstbredd med en T-shirt som passar bra.",
+        "Matcha tryck, färg och vald version med annonsen du sparade.",
+        "Granska halsringning, sömmar och tryckplacering i orderbilderna."
+      ]
+    },
+    "jackets": {
+      "title": "OOPBuy spreadsheet för jackor",
+      "intro": "Välj jackor utifrån lagren du tänker bära och konstruktionsdetaljerna du behöver. Jämför vald storlek med en liknande jacka och ta hänsyn till dina egna lagerpreferenser. Kontrollera stängningar, fickor och foderinformation. Bilder kan visa synliga detaljer, medan värme, vattentät prestanda och materialpåståenden behöver underlag utöver hur produkten ser ut.",
+      "checks": [
+        "Jämför mått med en jacka som bärs över dina tänkta lager.",
+        "Kontrollera dragkedjor, knappar, fickor och synligt foder i underlaget.",
+        "Tänk på hur konstruktion och vaddering påverkar skydd och packad volym."
+      ]
+    },
+    "pants-shorts": {
+      "title": "OOPBuy byxor och shorts",
+      "intro": "Utforska byxor och shorts utifrån midjekonstruktion, grenlängd, längd och benform. Samma märkning kan beskriva helt olika passformer, så jämför säljarens mätmetod med ett par du redan tycker om. Kontrollera om alternativet är en enskild vara eller ett set och bekräfta vald färg och längd innan liknande annonser behandlas som likvärdiga.",
+      "checks": [
+        "Jämför midja, grenlängd och innerben med ett lämpligt referensplagg.",
+        "Kontrollera om midjan är fast, elastisk eller justerbar innan storleken tolkas.",
+        "Matcha vald längd, färg och mängd med alternativet i beställningen."
+      ]
+    },
+    "headwear": {
+      "title": "OOPBuy hattar och kepsar",
+      "intro": "Bläddra bland hattar och kepsar med omkrets, djup och form i åtanke. En justerbar stängning kan ge flexibilitet, men dess omfång måste ändå passa bäraren. Jämför exakt stil och vald färg i annonsen. Fundera på hur krona eller skärm ska skyddas när du senare väljer packning för den mottagna varan.",
+      "checks": [
+        "Kontrollera angiven omkrets eller justeringsintervall och hattens djup.",
+        "Granska vald färg, stängning och synlig form i tillgängliga bilder.",
+        "Överväg skydd för en formfast krona eller skärm före paketinlämning."
+      ]
+    },
+    "accessories": {
+      "title": "OOPBuy väskor och accessoarer",
+      "intro": "Utforska väskor och accessoarer utifrån praktiska mått, passform och medföljande delar. En produktbild förmedlar sällan storlek ensam, så kontrollera remlängd, bältesintervall eller fackmått. Matcha valt alternativ och granska synliga stängningar och beslag. Bekräfta materialpåståenden genom tillförlitliga annonsuppgifter i stället för att bedöma sammansättningen enbart utifrån färg.",
+      "checks": [
+        "Jämför mått, remlängd eller passformsintervall med den tänkta användningen.",
+        "Kontrollera stängningar, fästpunkter och tillbehör i valt alternativ.",
+        "Granska skyddsbehov för stela, ömtåliga eller lättrepade delar."
+      ]
+    },
+    "short-sets": {
+      "title": "OOPBuy matchande set",
+      "intro": "Bläddra bland matchande set och kontrollera varje del separat. En annonsbild kan visa en hel outfit även när valt alternativ bara innehåller en del. Bekräfta antal och innehåll och jämför sedan över- och underdelens mått med egna referensplagg. Kontrollera att valda färger och versioner faktiskt hör till samma set.",
+      "checks": [
+        "Bekräfta exakt vilka delar och mängder som ingår i valt alternativ.",
+        "Jämför över- och underdelens mått separat före storleksval.",
+        "Kontrollera färg, design och storleksetiketter på varje mottagen del."
+      ]
+    },
+    "electronics": {
+      "title": "OOPBuy elektronikfynd",
+      "intro": "Utforska elektronik utifrån modellen och kompatibiliteten du faktiskt behöver. Kontrollera kontakter, enheter som stöds, strömkrav och innehållet i valt paket. Identifiera batterier och andra transportkänsliga delar innan transportalternativ planeras. Produktbilder hjälper med synligt skick och identifiering, medan funktion och säkerhet kräver lämpliga specifikationer, bekräftelse eller tester utöver en bild.",
+      "checks": [
+        "Bekräfta modell, enhetskompatibilitet, kontakt och strömspecifikation.",
+        "Kontrollera om batterier eller annat innehåll påverkar tillgängliga transportalternativ.",
+        "Verifiera vad som ingår och fråga hur en avgörande funktion kan kontrolleras."
+      ]
+    },
+    "other-stuff": {
+      "title": "Fler produktfynd från OOPBuy",
+      "intro": "Utforska blandade fynd med varans syfte, storlek och innehåll som utgångspunkt. Liknande bilder kan dölja skillnader i mängd, materialpåståenden eller kompatibilitet, så jämför valt alternativ noga. Identifiera ömtåliga delar och särskilda transporthänsyn innan varan läggs i ett paket. Låt relevanta produktuppgifter avgöra vilka kontroller som är viktigast.",
+      "checks": [
+        "Bekräfta varans tänkta användning, mått och inkluderat antal.",
+        "Identifiera ömtåliga delar, kompatibilitetsbehov eller innehåll som kräver transportkontroll.",
+        "Ställ en specifik fråga när annonsen eller bilderna lämnar en viktig detalj oklar."
+      ]
+    },
+    "jersey": {
+      "title": "OOPBuy spreadsheet för matchtröjor",
+      "intro": "Utforska matchtröjor utifrån lag, säsong, version och de alternativ som faktiskt ingår. Jämför säljarens mått eftersom olika skärningar kan sitta olika även med samma märkning. Kontrollera valt namn, nummer, märken och färg där det gäller. Vid personlig anpassning bekräftar du exakt stavning och aktuella efterservicevillkor innan beställningen läggs.",
+      "checks": [
+        "Matcha lag, säsong, version och färg med valt annonsalternativ.",
+        "Kontrollera plaggmått och varje valt namn, nummer eller märke.",
+        "Bekräfta aktuella villkor för personligt anpassade varor före betalning."
+      ]
+    }
+  }
 }

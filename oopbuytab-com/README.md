@@ -1,77 +1,56 @@
 # OOPBuy Tab
 
-Public design preview for **oopbuytab.com**, built with Astro 7.4.1 SSR.
+Astro 7.4.1 source for **oopbuytab.com**. Current public review site:
+https://hehaize88-code.github.io/hehaize/oopbuytab-com/
 
-## Source of truth
+## Repository and hosting
 
-All product records, prices, images, category results, text searches and sorting are fetched from https://cnbuycha.com/ at request time. There is no product database, stored catalogue export, or admin interface. Source-returned images use CNBuyCha or its Weidian CDN URLs.
+The dedicated source folder is `oopbuytab-com/` in `hehaize88-code/hehaize`, branch `oopbuytab-preview`. GitHub Pages publishes `/docs`; generated pages live in `docs/oopbuytab-com/`. Other platform folders and `main` remain unchanged. The purchased domain is not bound. Preview pages remain noindex/nofollow, with robots Disallow.
 
-CNBuyCha currently serves 60 records per source page. The adapter maps these into 20 records per display page and computes the full pagination from the returned total. If the source markup changes, update `src/lib/catalog.ts`. Failed requests render an unavailable state.
+## CNBuyCha is the only product source
 
-Product photos have not been verified as warehouse QC. The QC page is educational guidance. Image search has no verified source endpoint and is explicitly unavailable.
+The SSR adapter reads https://cnbuycha.com at request time. For the GitHub Pages review, the build reads the same source and renders static HTML: full catalog pagination, categories, new/popular/price ordering, and shared 20-item HTML fragments. There is no product database, product JSON index, or admin interface. Images use exact source-returned CNBuyCha/Weidian CDN URLs. No invented product images or records are used.
 
-## Links and branding
+Static preview search opens the live CNBuyCha search, and unexported product details open the source. The sample detail `/products/shoes/3470.html` is included in every locale. Source catalog ID 3470 and seller item ID 7876894732 are distinct.
 
-- Register: https://oopbuy.com/login
-- Purchase: https://oopbuy.com/product/weidian/{sellerItemId}?inviteCode=U68CWQBN5
-- The item ID comes from the original seller URL, never the CNBuyCha page number.
-- Official OOPBuy logo and favicon are extracted unmodified from its publicly served frontend assets. `public/oopbuy-logo.svg` and `public/favicon.png` are active assets.
+Product photos are not verified order QC. Image search has no verified source endpoint and is explicitly unavailable.
 
-## Development
+## Branding and links
 
-Use Node >=22.22.0 and npm >=9.6.5.
+- Official OOPBuy logo and favicon are used unmodified.
+- Registration: https://oopbuy.com/login
+- Weidian purchase pattern: `https://oopbuy.com/product/weidian/{sellerItemId}?inviteCode=U68CWQBN5`
+- The seller item ID is read from the original seller URL, never inferred from the catalog ID.
+
+## Editorial and localization
+
+24 locales share stable paths; English is at root. Language switching preserves the current route and valid page/sort parameters. Each locale has 28 sourced FAQs, 10 complete long-form articles, 3 focused guide overviews and 11 category introductions. Policy facts derive from official OOPBuy help; keyword intent and competing pages are documented in `docs/KEYWORD_RESEARCH.md` and `docs/OFFICIAL_SOURCES.md`. No unverified search volume or service guarantee is claimed.
+
+Mobile layouts preserve the full content using expandable article sections, a compact contents list and FAQ search.
+
+## Build
+
+Use Node 24 (catalog builder imports TypeScript using Node type stripping).
 
 ```sh
 npm ci
 npm run dev
-npm run build
+npm run check:content
+npm run preview:pages
 ```
 
-The custom Astro adapter emits a Worker default fetch export in `dist/server/index.js`; static assets are under `dist/client`. There are no runtime secrets or database bindings.
+`preview:pages` validates all language content, fetches the catalog, builds Astro, exports the Pages output and checks all rendered routes and catalog pages. The catalog must be regenerated when updating source listings. The visible review notice shows its actual build date. No automatic refresh job is enabled.
 
-24 locale routes share stable product and article paths. English is the root, others have language prefixes. Locale switching preserves route and valid search/sort/page parameters. Editorial JSON files contain equal-length complete translated content; product names and USD prices stay identical to the source.
-
-## Preview and production
-
-The user requested a temporary public preview. The purchased domain has not been connected. The preview sends noindex/nofollow and robots Disallow. Canonical/hreflang origins are configured for the purchased domain; remove preview indexing restrictions only when launching the reviewed production site.
-
-Final GitHub target is https://github.com/hehaize88-code/hehaize in its own root folder **oopbuytab-com/**. Copy application files without Sites project identity or Git metadata when preparing that independently deployed project. No existing platform folder should be changed. See PROJECT_MEMORY.md for requirements and current verification limits.
-
-## Standalone preview package
-
-The chatgpt.site preview is blocked by its edge security for the user's browser. A separate temporary Worker package can be prepared without changing application behavior:
+For a layout-only rebuild after a successful, current catalog fetch:
 
 ```sh
 npm run build
-node scripts/package-cloudflare-preview.mjs
+node scripts/export-pages-preview.mjs
+npm run check:preview
 ```
 
-Upload `dist/cloudflare-preview/worker.js` as an ES module Worker, or use `wrangler.preview.jsonc` with an authenticated Cloudflare deployment. The output includes only official logo/favicon assets and the SSR app; all catalogue data remains live. Create the temporary `oopbuytab-preview` Worker in the confirmed user account, use its returned workers.dev URL, and do not bind the purchased domain until the user approves the design.
+`PREVIEW_LOCALES=en` limits a local QA export; omit it for publication. All 24 locales are required before publishing.
 
-Cloudflare API currently requires reauthentication. Browser fallback has not been authorized in this task yet.
+The custom Astro adapter still emits a Worker default fetch export at `dist/server/index.js`, with assets in `dist/client`. No runtime secrets or database bindings are needed. Production host and domain activation will follow the user's review; Cloudflare is not part of this preview workflow.
 
-
-## GitHub Pages 视觉预览（2026-10-21）
-
-用户无法访问 chatgpt.site，且明确表示无法连接 Cloudflare；本轮停止 CF 路径。
-独立分支 `oopbuytab-preview` 保留本目录 Astro SSR 源码；`docs/oopbuytab-com/` 为只用于审阅的静态 HTML。主分支和正式域名未改动。
-
-- 使用 Node 24，在本目录运行 `npm ci && npm run preview:pages` 可重新生成。
-- 构建时读取 CNBuyCha，图片直接使用源站返回的 URL；不建立数据库或商品 JSON。
-- 首页、目录首屏、分类、指南、FAQ、文章及样本商品有 24 种语言。
-- 静态预览的搜索、排序、更多商品及未导出的商品详情明确进入 CNBuyCha；完整 SSR 源码保留原功能。
-- 样本详情 `/products/shoes/3470.html` 保留正确 OOPBuy 购买链接（卖家商品 ID 7876894732）。
-- 预览 noindex，不绑定 CNAME，不启动定时任务。
-
-启用预览：仓库 Settings → Pages → Deploy from a branch → `oopbuytab-preview` → `/docs` → Save。
-发布成功后预期路径是 `https://hehaize88-code.github.io/hehaize/oopbuytab-com/`；在 Pages 发布完成前，这只是预期地址，不是已可访问的交付。
-
-GitHub 连接支持读写源码，但当前没有 Pages 设置接口；需在 GitHub 设置中完成这一步。
-
-
-### 发布状态（已完成）
-
-已在用户连接的 Chrome 中开启 GitHub Pages：`oopbuytab-preview` 分支的 `/docs`。
-公开预览：https://hehaize88-code.github.io/hehaize/oopbuytab-com/
-部署运行 39571120527 成功；公开首页 HTTP200，用户浏览器成功显示首页，首页全部13个图片元素已加载。无需用户再手动开启 Pages。
-正式域名尚未绑定。
+See `PROJECT_MEMORY.md` for decisions, constraints, and deployment evidence.

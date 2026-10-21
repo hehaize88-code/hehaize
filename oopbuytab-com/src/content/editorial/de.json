@@ -1,11 +1,11 @@
 {
   "ui": {
     "finds": "Entdeckungen",
-    "articles": "Journal",
+    "articles": "Artikel",
     "qc": "QC-Leitfaden",
     "shipping": "Versand",
     "read": "Leitfaden lesen",
-    "allArticles": "Das Journal entdecken",
+    "allArticles": "Alle Artikel zu OOPBuy",
     "latestReading": "Ein wenig Recherche macht viel aus.",
     "browseAll": "Das Spreadsheet entdecken",
     "heroLabel": "DEINE NÄCHSTE ENTDECKUNG BEGINNT HIER",
@@ -15,18 +15,18 @@
     "featured": "Frisch aus dem Spreadsheet",
     "featuredIntro": "Neu eingetroffen und bereit für einen genaueren Blick.",
     "categoryTitle": "Finde deinen Bereich.",
-    "guideTitle": "Vom ersten Fund bis zur letzten Prüfung.",
-    "guideIntro": "So recherchierst du ein Produkt, bevor du auf OOPBuy bestellst.",
-    "faqTitle": "Ein paar Dinge, die du wissen solltest.",
-    "faqIntro": "Klare Antworten zum Spreadsheet, zu Produktfotos und zu Kauflinks.",
-    "articlesTitle": "Die OOPBuy-Notizen",
-    "articlesIntro": "Kurze, praktische Leitfäden für durchdachte Entdeckungen.",
+    "guideTitle": "So nutzt du OOPBuy",
+    "guideIntro": "Verfolge den Kaufablauf vom hilfreichen Produktlink über die fundierte Lagerprüfung bis zur durchdachten Paketentscheidung.",
+    "faqTitle": "Häufig gestellte Fragen zu OOPBuy",
+    "faqIntro": "Knappe Antworten zu Bestellung, Prüfung, Lagerentscheidungen, Versand und Kundendienst – mit offiziellen Quellen zu den Plattformregeln.",
+    "articlesTitle": "OOPBuy-Kaufratgeber",
+    "articlesIntro": "Praktische Leitfäden zum Spreadsheet, zur Prüfung von QC-Fotos, zur Versandplanung und zu den Entscheidungen nach einer Bestellung.",
     "findsTitle": "OOPBuy-Entdeckungen",
     "findsIntro": "Entdecke beliebte Produkte aus dem CNBuyCha-Katalog. Vergleiche Angebot, Fotos und Preis, bevor du deinen nächsten Fund auswählst.",
-    "qcTitle": "OOPBuy QC: Schau genauer hin",
-    "qcIntro": "Nutze Produktfotos zur Recherche und prüfe vor dem Versand die Fotos deiner eigenen Bestellung.",
-    "shippingTitle": "Plane über den Artikelpreis hinaus",
-    "shippingIntro": "Der Produktpreis ist nur der Anfang. Prüfe die aktuellen Versandoptionen und den Gesamtbetrag in deinem OOPBuy-Konto.",
+    "qcTitle": "Leitfaden für OOPBuy-QC-Fotos",
+    "qcIntro": "Prüfe die Nachweise zu deiner Bestellung, erkenne Fragen, die eine weitere Ansicht erfordern, und kläre Bedenken vor dem Paketauftrag.",
+    "shippingTitle": "OOPBuy-Versandkosten und Schätzungen",
+    "shippingIntro": "Bereite die Angaben für eine Versandschätzung vor, vergleiche geeignete Versandwege und prüfe das Paket erneut, sobald seine verpackten Maße vorliegen.",
     "checklist": "Bevor du fortfährst",
     "related": "Weiter entdecken",
     "independent": "Unabhängige Produktsuche",
@@ -40,7 +40,20 @@
     "productDetails": "Die Details",
     "readMore": "Mehr entdecken",
     "searchHelp": "Versuche einen Produktnamen, eine Marke oder die Artikel-ID des Verkäufers.",
-    "allCategories": "Alle Kategorien an einem Ort."
+    "allCategories": "Alle Kategorien an einem Ort.",
+    "contents": "Auf dieser Seite",
+    "expandAll": "Alle Abschnitte öffnen",
+    "collapseAll": "Alle Abschnitte schließen",
+    "sources": "Offizielle Quellen",
+    "lastReviewed": "Zuletzt geprüft",
+    "quickChecks": "Schnelle Prüfungen",
+    "moreDetails": "Vollständigen Leitfaden lesen",
+    "jumpToPage": "Zur Seite springen",
+    "goToPage": "Los",
+    "loading": "Produkte werden geladen…",
+    "loadError": "Die Produkte konnten nicht geladen werden. Bitte versuche es erneut.",
+    "pageLabel": "Seite",
+    "previewNotice": "Vorschau · CNBuyCha-Angebote aktualisiert am {date}. Die Suche öffnet CNBuyCha."
   },
   "steps": [
     {
@@ -58,150 +71,1367 @@
   ],
   "faq": [
     {
-      "q": "Ist OOPBuy Tab die offizielle OOPBuy-Website?",
-      "a": "OOPBuy Tab ist eine unabhängige Website zur Produktsuche. Registrierung, Bestellungen und Zahlungen erfolgen auf oopbuy.com. Kauflinks enthalten einen Affiliate-Einladungscode; ein Rabatt wird nicht versprochen."
+      "q": "Was ist OOPBuy, und verkauft die Plattform die Produkte selbst?",
+      "a": "OOPBuy beschreibt sich als Einkaufs- und Logistikagent. Der Dienst hilft bei Bestellungen bei Drittanbietern, vorübergehender Lagerung, Verpackung und Versand. Diese Rolle unterscheidet sich von der eines Herstellers oder autorisierten Markenhändlers. Prüfe vor der Bestellung den ursprünglichen Verkäufer, die Produktbeschreibung und geltende Beschränkungen; ein Angebot beim Agenten oder ein Lagerfoto belegt keine Echtheit.",
+      "sources": [
+        {
+          "label": "OOPBuy-Nutzungsvereinbarung",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Woher stammen die Produkte und Preise?",
-      "a": "Produktangebote, Bilder, Suchergebnisse und Sortierung stammen von CNBuyCha. Die Preise werden in allen Sprachen in USD angezeigt. Bestätige den aktuellen Preis, die Verfügbarkeit und die ausgewählte Variante in OOPBuy."
+      "q": "Wie gebe ich meine erste OOPBuy-Bestellung auf?",
+      "a": "Der offizielle Leitfaden beginnt mit einem Produktlink oder einer Suche nach dem Produktnamen. Prüfe den geladenen Artikel, wähle Farbe, Größe und Menge und bezahle den Produktpreis sowie gegebenenfalls den Inlandsversand. Prüfe nach Beschaffung und Lagerkontrolle den eingelagerten Artikel, bevor du ein internationales Paket beauftragst. Bestätige jeden Schritt im offiziellen Konto; eine Karte im Spreadsheet ist noch keine Bestellung.",
+      "sources": [
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Sind die Produktfotos QC-Fotos aus dem Lager?",
-      "a": "Die angezeigten Bilder stammen von CNBuyCha. Ihre Herkunft als Lager-QC-Fotos ist nicht bestätigt. Prüfe die Fotos deiner eigenen Bestellung in OOPBuy, bevor du den Versand entscheidest."
+      "q": "Welche Einkaufslinks nennt der offizielle Einsteigerleitfaden?",
+      "a": "Der Einsteigerleitfaden beschreibt ausdrücklich das Einfügen von Taobao-, Tmall- und 1688-Links in OOPBuy. Prüfe bei jedem Link, ob die offizielle Produktseite zum gewünschten Verkäuferartikel führt und die Variantenangaben vollständig sind. Funktioniert ein Link nicht oder erscheint ein anderer Artikel, frage vor dem Bezahlen beim OOPBuy-Support nach. Gehe nicht davon aus, dass jede Marktplatzadresse unterstützt wird.",
+      "sources": [
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ]
     },
     {
-      "q": "Enthält der Artikelpreis den Versand?",
-      "a": "Betrachte den angezeigten Betrag als geschätzten Artikelpreis. Prüfe Inlandspostgebühren, internationalen Versand, optionale Leistungen und alle anfallenden Kosten im aktuellen Checkout und Paketangebot."
+      "q": "Warum werden Produkt und internationaler Versand getrennt bezahlt?",
+      "a": "OOPBuy erklärt den Einkauf in zwei Stufen. Die erste Zahlung umfasst das Produkt und gegebenenfalls den Versand innerhalb Chinas zum Lager. Später wählst du eingelagerte Waren aus, beauftragst ein Paket und bezahlst den internationalen Versand. Schätze diese zweiten Kosten bereits vor dem Kauf, denn der Artikelpreis allein entspricht nicht den gesamten Kosten bis zum Erhalt deiner Bestellung.",
+      "sources": [
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
     },
     {
-      "q": "Wie funktionieren die Kauflinks?",
-      "a": "Die Schaltfläche auf einer Produktseite öffnet deren ursprüngliche Weidian-Artikel-ID in OOPBuy. Die CNBuyCha-Katalognummer ist eine eigene ID. Prüfe das Zielangebot, bevor du bestellst."
+      "q": "Ist der angezeigte Produktpreis in USD mein endgültiger Gesamtbetrag?",
+      "a": "Nein. Ein Produktpreis enthält nicht automatisch sämtliche möglichen Kosten des Einkaufs und des internationalen Pakets. Inlandsfracht, internationaler Versand, Zusatzleistungen und Währungsumrechnung können den Gesamtbetrag verändern. Auch OOPBuys Hinweise zum Aufladen beschreiben Umrechnung und Zahlungsgebühren. Prüfe die Beträge in deinem eigenen Zahlungsvorgang und Paketauftrag, statt einen umgerechneten Katalogpreis als endgültiges Angebot zu betrachten.",
+      "sources": [
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Guthaben aufladen",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
     },
     {
-      "q": "Kann ich mit einem Bild suchen?",
-      "a": "Die Bildersuche ist in dieser Vorschau nicht verfügbar. Du kannst nach Namen suchen oder die Kategorien durchstöbern. Wir ersetzen ein hochgeladenes Foto nicht durch unpassende Ergebnisse."
+      "q": "Welche Zahlungsmethoden kann ich verwenden?",
+      "a": "Der Einsteigerleitfaden nennt Kreditkarte, PayPal und Kontoguthaben; die Hilfe zum Aufladen beschreibt weitere Möglichkeiten. Prüfe die Verfügbarkeit und den berechneten Betrag im aktuellen Konto und Zahlungsvorgang. Lies vor der Zahlungsbestätigung die Angaben zu Währungsumrechnung und Gebühren. Dass eine Methode in einem Hilfeartikel erscheint, garantiert nicht ihre Verfügbarkeit in jedem Land oder für jede Transaktion.",
+      "sources": [
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "Guthaben aufladen",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        }
+      ]
+    },
+    {
+      "q": "Sind normale OOPBuy-QC-Fotos kostenlos?",
+      "a": "Laut Hinweis zu individuellen Leistungen sind standardmäßige Lager-QC-Fotos nach den Prüfrichtlinien kostenlos. Sie werden bereitgestellt, nachdem das Lager einen Artikel erhalten und bearbeitet hat. Sie unterscheiden sich von Katalogfotos eines Verkäufers oder Bildern in einem unabhängigen Spreadsheet. Prüfe vor deiner Versandentscheidung die Fotos, die deiner eigenen eingelagerten Bestellung zugeordnet sind.",
+      "sources": [
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Was können normale QC-Fotos und Prüfungen tatsächlich bestätigen?",
+      "a": "Die offiziellen Prüfrichtlinien behandeln sichtbare Angaben wie Menge, bestellte Spezifikationen und erkennbaren Zustand, mit ausdrücklichen Grenzen. Sie belegen weder perfekte Passform noch professionelle Elektronikleistung oder Markenechtheit. Versiegelte Produkte werden gegebenenfalls nur äußerlich geprüft. Betrachte Fotos als Nachweis des Sichtbaren und frage bei wichtigen Details nach, statt anzunehmen, dass eine unsichtbare Eigenschaft getestet wurde.",
+      "sources": [
+        {
+          "label": "OOPBuy-Prüfinformationen",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy-Nutzungsvereinbarung",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Kann ich Maße oder QC-Nahaufnahmen anfordern?",
+      "a": "OOPBuy beschreibt einen individuellen QC-Service für bestimmte Maße oder Details, etwa Schuh- oder Einlegesohlenlänge und Kleidungsmaße. Prüfe Verfügbarkeit und aktuelle Kosten im offiziellen Konto oder beim Support; der Hinweis nennt keinen allgemeingültigen Preis für Sonderfotos. Gib genau an, welche Messung oder Ansicht du brauchst, damit die Anfrage deine konkrete Frage beantwortet.",
+      "sources": [
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Werden Artikel von 1688 genauso geprüft wie alle anderen?",
+      "a": "Nicht unbedingt. Der Einsteigerleitfaden nennt andere QC-Standards für Einkäufe bei 1688, und die Nutzungsvereinbarung beschreibt begrenzte Stichproben statt einer vollständigen Prüfung aller Einheiten. Nimm deshalb nicht an, dass jedes Stück einer Mehrfachbestellung einzeln untersucht wurde. Kläre vor einer größeren Bestellung den Prüfumfang und zusätzliche Leistungen, die für deine wichtigen Kontrollen erforderlich sind.",
+      "sources": [
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy-Nutzungsvereinbarung",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Wie lange dauert die übliche kostenlose Lagerung?",
+      "a": "Der offizielle Hinweis zu individuellen Leistungen nennt eine reguläre kostenlose Lagerdauer von 90 Tagen ab Einlagerung. Die allgemeine Lagerseite bezieht sich für den Beginn auf den Bestellstatus „received“ (erhalten). Prüfe die tatsächliche Frist jeder eingelagerten Bestellung, besonders bei unterschiedlichen Ankunftsdaten, und veranlasse Versand oder eine zulässige Verlängerung vor Ablauf der kostenlosen Zeit.",
+      "sources": [
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy-Lagerregeln",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        }
+      ]
+    },
+    {
+      "q": "Kann ich die Lagerung nach dem kostenlosen Zeitraum verlängern?",
+      "a": "Der Hinweis zu individuellen Leistungen erlaubt eine kostenpflichtige Verlängerung: 10 CNY für höchstens 30 zusätzliche Tage, insgesamt maximal 120 Tage nach dieser Regel. Das bedeutet weder 120 kostenlose Lagertage noch unbegrenzte Verlängerungen. Prüfe die aktuelle Verlängerungsoption und die Frist deines Artikels im offiziellen Konto, bevor du dich darauf verlässt, denn überfällige Waren können entsorgt werden.",
+      "sources": [
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ]
+    },
+    {
+      "q": "Soll ich mit dem Versand auf eine Lagererinnerung warten?",
+      "a": "Nein. Verfolge die angezeigte Frist jeder Bestellung selbst und halte deine Kontaktdaten aktuell. Die offiziellen Hinweise erwähnen Erinnerungen, warnen aber auch, dass überfällige Artikel als aufgegeben gelten können. Für nicht zugeordnete oder ungewöhnliche Eingangspakete können andere Regeln gelten. Ist der Lagerstatus unklar, kontaktiere den Support zeitnah, statt die normale kostenlose Frist uneingeschränkt vorauszusetzen.",
+      "sources": [
+        {
+          "label": "OOPBuy-Lagerregeln",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuy-Nutzungsvereinbarung",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
+    },
+    {
+      "q": "Wann sollte ich nach der Lagerankunft eine Rückgabe oder einen Umtausch beantragen?",
+      "a": "Der Rückgabehinweis beschreibt unter bestimmten Voraussetzungen ein Antragsfenster von fünf Tagen beziehungsweise 120 Stunden nach dem Status „Stocked in“ (eingelagert), nach den dort genannten Berechnungsregeln. Prüfe Fotos und Kundendienstansicht zeitnah. Die Berechtigung hängt weiterhin von Verkäuferunterstützung und Artikelzustand ab; die Frist garantiert keine Annahme jedes Antrags. Prüfe den aktuellen Termin deiner konkreten Bestellung.",
+      "sources": [
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kann jedes Produkt zurückgegeben oder umgetauscht werden?",
+      "a": "Nein. Die Rückgaberegeln nennen Bedingungen und Ausnahmen, darunter Verkäuferregeln, Wiederverkaufszustand, maßgefertigte oder gebrauchte Waren sowie bestimmte versiegelte oder persönlich genutzte Kategorien. Entfernte Etiketten, Zubehörteile oder vorgeschriebene Verpackungen können die Berechtigung beeinträchtigen. OOPBuy kann mit dem Verkäufer kommunizieren, aber dessen Zustimmung bleibt erforderlich. Prüfe die Produktbedingungen vor dem Kauf oder einer Verpackungsänderung.",
+      "sources": [
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Umfasst die erste kostenlose Rückgabe oder der erste Umtausch alle Versandkosten?",
+      "a": "Nein. Der Rückgabehinweis beschreibt den Erlass der Servicegebühr für den ersten Rückgabe- oder Umtauschvorgang eines Kalendermonats. Das bedeutet weder kostenloses Rückporto noch Erstattung sämtlicher Inlandsversandkosten. Die Kosten hängen vom Grund, der Verkäuferentscheidung und den Bestellumständen ab. Lies vor der Bestätigung das konkrete Kundendienstangebot, statt den gesamten Vorgang für kostenlos zu halten.",
+      "sources": [
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Kann ich eine Bestellung vor dem Versand durch den Verkäufer stornieren?",
+      "a": "Laut Rückgabehilfe fällt die Rückgabeservicegebühr nicht an, wenn das Produkt noch nicht versandt wurde. Daraus folgt jedoch keine bedingungslose Stornierungsgarantie in jeder Phase. Prüfe den aktuellen Bestellstatus und stelle den verfügbaren Stornierungs- oder Kundendienstantrag zeitnah. Hat der Verkäufer bereits versandt, können andere Abläufe und Versandkosten gelten.",
+      "sources": [
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy-Bestell- und Paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Wie lange dauert eine Erstattung, und wo prüfe ich sie?",
+      "a": "Erstattungsfreigabe, Gutschrift auf das OOPBuy-Guthaben und Abrechnung auf eine Bankkarte sind unterschiedliche Schritte. Laut Rückgabehinweis beeinflusst die Bankbearbeitung Kartenerstattungen; genannt wird eine geschätzte Dauer, kein garantierter Eingangstag. Prüfe Erstattungsdatensatz und Ziel im Konto. Ist der Fortschritt unklar, nenne dem Support Bestell- und Erstattungsreferenz, statt wiederholt Zahlungen auszulösen.",
+      "sources": [
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy-Bestell- und Paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ]
+    },
+    {
+      "q": "Kann ein Artikel nach internationalem Versand noch zurückgegeben werden?",
+      "a": "Der Rückgabehinweis beschreibt internationale Rücksendungen als an Bedingungen geknüpft und möglicherweise vom Kunden zu bezahlen, einschließlich Rücktransport und Zusatzkosten wie Abgaben. Originalzustand und erforderliche Verpackung bleiben wichtig. Kontaktiere vor jeder Rücksendung den OOPBuy-Kundendienst und hole aktuelle Anweisungen ein. Eine Rücksendung aus dem Ausland entspricht weder einer einfachen Lagerstornierung noch einer garantierten vollständigen Erstattung.",
+      "sources": [
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Wie schätze ich den internationalen OOPBuy-Versand?",
+      "a": "Nutze den offiziellen Versandrechner mit dem Ziel und den angeforderten Paketangaben und prüfe anschließend verfügbare Wege und Beschränkungen. Der Einsteigerleitfaden erklärt, dass die Endkosten von gemessenen Abmessungen und Gewicht sowie der Versandgestaltung abhängen. Eine vorläufige Schätzung hilft beim Budget, ersetzt aber weder das endgültige Paketangebot noch enthält sie automatisch jede zielabhängige Gebühr.",
+      "sources": [
+        {
+          "label": "OOPBuy-Versandrechner",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Ist ein Versandweg immer am günstigsten oder schnellsten?",
+      "a": "Aus den offiziellen Hinweisen ergibt sich kein universell bester Versandweg. Verfügbare Dienste hängen von Ziel, Inhalt, Gewicht, Maßen und aktuellen Bedingungen ab. Vergleiche die Optionen für dein Paket einschließlich Beschränkungen und Entschädigungsregeln, bevor du auswählst. Veröffentlichte Laufzeiten sind Schätzungen: Beförderungsabläufe, Wetter und Zoll können die Reise nach dem Lagerversand beeinflussen.",
+      "sources": [
+        {
+          "label": "OOPBuy-Lieferhinweis",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "Versicherung und Entschädigung",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Was bewirkt eine Paketprobeverpackung?",
+      "a": "Der Hinweis zur Probeverpackung beschreibt einen Lagerservice, der vor der Zahlung des internationalen Versands die gemessenen Paketdaten ermittelt. Er nennt 20 CNY Servicegebühr und erklärt, dass die Preisberechnung nur bei unverändertem Versandweg und Verpackungsaufbau verlässlich bleibt. Änderungen können die Endkosten verändern. Prüfe vor dem Antrag die aktuellen Leistungs- und Stornierungsbedingungen.",
+      "sources": [
+        {
+          "label": "OOPBuy-Paketprobeverpackung",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ]
+    },
+    {
+      "q": "Soll ich Schuhkartons entfernen oder Kleidung vakuumverpacken lassen?",
+      "a": "Der Verpackungsleitfaden beschreibt diese Möglichkeiten als Optionen, teilweise auf bestimmte Versandwege beschränkt. Entscheide nach Schutzbedarf, eigenen Wünschen und Rückgabebeschränkungen. Verpackungsentfernung oder Komprimierung eignet sich nicht für jeden Kauf, und ein kleineres Paket garantiert keine niedrigeren Endkosten. Prüfe Verpackungsoptionen und Berechnung des Versandwegs vor der Bestätigung.",
+      "sources": [
+        {
+          "label": "OOPBuy-Verpackungshinweise",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    {
+      "q": "Können alle eingelagerten Produkte in einem Paket zusammengefasst werden?",
+      "a": "Zusammenfassung ist im Einkaufsablauf möglich, doch nicht jede Kombination ist zulässig oder wirtschaftlich. Artikeleigenschaften, Versandbeschränkungen und Hinweise auf getrennte Verpackung können mehrere Pakete erfordern. Der offizielle Hinweis zum Einzelversand nennt eine Regel für übergroße Artikel; der Verpackungsleitfaden behandelt Beschränkungen für Batteriewaren. Beachte die Hinweise deiner eingelagerten Artikel und vergleiche zulässige Paketoptionen vor dem Auftrag.",
+      "sources": [
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy-Verpackungshinweise",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Regeln zum getrennten Versand",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        }
+      ]
+    },
+    {
+      "q": "Warum steht meine Bestellung auf „Shipped“, obwohl ich noch keine internationale Sendungsnummer habe?",
+      "a": "Der Statusleitfaden verwendet Versandbegriffe in zwei Zusammenhängen. Bei einer Einkaufsbestellung kann „Shipped“ bedeuten, dass der Verkäufer das Produkt zum OOPBuy-Lager geschickt hat. Bei einem internationalen Paket bezeichnet es die spätere Beförderungsphase. Prüfe, ob du einen Artikelauftrag oder ein Paket ansiehst, und öffne die zugehörigen Logistikdetails. Beide Phasen haben nicht zwangsläufig dieselbe Sendungsnummer.",
+      "sources": [
+        {
+          "label": "OOPBuy-Bestell- und Paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ]
+    },
+    {
+      "q": "Was mache ich, wenn das zugestellte Paket beschädigt ist oder Artikel fehlen?",
+      "a": "Bewahre Außenverpackung, Versandetikett und relevante Artikelnachweise auf und kontaktiere den OOPBuy-Kundendienst zeitnah. Die offiziellen Hinweise verlangen klare Fotos und Angaben wie Bestellnummern; außerdem enthalten sie kurze Melde- und Nachweisfristen. Entsorge die Verpackung nicht und warte nicht auf eine allgemeine Frist aus einer anderen Quelle. Befolge die Anweisungen für dein konkretes Paket und Anliegen.",
+      "sources": [
+        {
+          "label": "OOPBuy-Probleme nach der Zustellung",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ]
+    },
+    {
+      "q": "Deckt eine Versicherung automatisch jedes Paketproblem ab?",
+      "a": "Nein. Laut offiziellem Entschädigungshinweis hängt die Bearbeitung von den Bedingungen des Versandwegs und den Nachweisen ab; außerdem gelten Ausschlüsse. Gehe nicht davon aus, dass Verzögerung, Schaden, Zollmaßnahmen oder Verlust immer vollständig entschädigt werden. Lies Deckung, Grenzen und Antragsverfahren des tatsächlich gewählten Wegs und bewahre die nötigen Bestell- und Paketunterlagen auf.",
+      "sources": [
+        {
+          "label": "Versicherung und Entschädigung",
+          "url": "https://oopbuy.com/notice/details?id=1740665065227522050"
+        }
+      ]
+    },
+    {
+      "q": "Kann ich jedes Produkt bestellen, das in einem Spreadsheet erscheint?",
+      "a": "Nein. Ein Onlineangebot belegt weder Rechtmäßigkeit noch Echtheit oder Eignung für deinen Versandweg. OOPBuys Einkaufsregeln verbieten bestimmte Waren und nennen beschränkte Kategorien, die mit dem Support geprüft werden müssen. Auch Fälschungen und rechtsverletzende Produkte sind laut Bedingungen verboten. Prüfe Verkäuferangaben, Plattformregeln und Anforderungen am Ziel vor dem Kauf, besonders bei Batterien, Flüssigkeiten oder anderen beschränkten Inhalten.",
+      "sources": [
+        {
+          "label": "Hinweise vor dem Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuy-Nutzungsvereinbarung",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        }
+      ]
     }
   ],
   "articles": [
     {
       "slug": "oopbuy-spreadsheet-guide",
-      "tag": "ERSTE SCHRITTE",
-      "title": "Dein erster OOPBuy-Fund, Schritt für Schritt",
-      "description": "Mach aus einem vielversprechenden Angebot eine durchdachte Wahl.",
+      "tag": "Erste Schritte",
+      "title": "OOPBuy-Spreadsheet-Leitfaden: Eine Auswahlliste erstellen, die du wirklich prüfen kannst",
+      "description": "So nutzt du ein OOPBuy-Spreadsheet, prüfst Produktlinks, vergleichst Varianten, planst ein realistisches Budget und machst aus einem Katalogfund eine fundierte Bestellung.",
+      "primaryKeyword": "OOPBuy Spreadsheet",
+      "secondaryKeywords": [
+        "OOPBuy-Spreadsheet-Leitfaden",
+        "OOPBuy-Produktliste",
+        "OOPBuy-Funde",
+        "OOPBuy-Einkaufsleitfaden"
+      ],
+      "takeaways": [
+        "Betrachte jede Katalogzeile als Ausgangspunkt für eine Prüfung des aktuellen Produktangebots.",
+        "Notiere den genauen Quelllink, die Variante, Maße und die geschätzten Gesamtkosten bis zur Lieferung.",
+        "Trenne Katalogbilder von Lager-QC-Fotos deiner eigenen Bestellung."
+      ],
       "sections": [
         {
-          "title": "Beginne mit deinem Bedarf",
-          "text": "Wähle eine Kategorie oder suche nach einem Modell. Vergleiche Produktname, verfügbare Bilder und geschätzten Preis. Ein niedriger Preis allein sagt nicht, ob ein Angebot zu deinen Bedürfnissen passt."
+          "title": "Wofür ein OOPBuy-Spreadsheet nützlich ist",
+          "text": "Ein OOPBuy-Spreadsheet ist ein Recherchewerkzeug: Es sammelt Produktlinks, hilft beim Vergleich und erspart dir, bei jeder Suche von vorn anzufangen. Sein wirklicher Wert liegt darin, eine Auswahlliste leichter prüfbar zu machen. Viele Zeilen sagen nichts darüber aus, ob Artikel noch verfügbar sind, eine Größe passt oder was das fertige Paket kosten wird.\n\nOOPBuy Tab ist ein unabhängiger Katalog und nicht der offizielle OOPBuy-Dienst. Seine Produktdaten stammen aus CNBuyCha. Diese Unterscheidung ist wichtig, weil sich ein Katalogeintrag und die aktuelle Kaufseite zu unterschiedlichen Zeitpunkten ändern können. Betrachte einen angegebenen USD-Preis als Schätzung und Fotos als Katalogreferenzen, sofern ihre Herkunft nicht ausdrücklich bestätigt ist.\n\nNutze das Spreadsheet für eine konkrete Frage, etwa welche von drei Jacken zu deinen Maßen und deinem Budget passt. Wenn die Optionen nebeneinanderstehen, fallen fehlende Informationen leichter auf, bevor daraus eine teure Annahme wird."
         },
         {
-          "title": "Öffne das ursprüngliche Angebot",
-          "text": "Prüfe den Verkäufer und die verfügbaren Optionen. Notiere gewünschte Größe, Farbe und Stückzahl und öffne das Produkt anschließend in OOPBuy. Bestätige diese Angaben vor der Zahlung erneut."
+          "title": "Lege deine Anforderungen vor dem Stöbern fest",
+          "text": "Notiere, was einen Artikel für dich nützlich macht. Bei Kleidung können das Kleidungsmaße, bevorzugter Stoff, Jahreszeit und akzeptable Pflegehinweise sein. Bei einer Tasche vielleicht die Laptopmaße, der Verschluss und das gewünschte maximale Leergewicht. Anforderungen verhindern, dass ein attraktives Foto vom eigentlichen Kaufzweck ablenkt.\n\nLege zwei Budgets fest: einen Zielbetrag für den Artikel und eine Obergrenze einschließlich Lieferung. Das sind unterschiedliche Zahlen. Ein niedriger Produktpreis beantwortet noch keine Fragen zu Inlandsversand, internationalem Versand, Zahlungsumrechnung und möglichen Gebühren am Ziel.\n\nWähle zunächst wenige Kandidaten, statt sofort Dutzende Zeilen zu füllen. Drei vergleichbare Artikel bringen oft mehr Erkenntnisse als dreißig zusammenhanglose Funde. Notiere für jeden Kandidaten einen Auswahlgrund und eine offene Frage. Kannst du nicht erklären, warum ein Artikel auf die Liste gehört, verdient er vermutlich noch nicht deine Aufmerksamkeit."
         },
         {
-          "title": "Denke an den nächsten Schritt",
-          "text": "Plane im Budget Platz für Versand und weitere Kosten ein. Prüfe deine eigenen Bestellfotos und das verfügbare Versandangebot, bevor du ein Paket einreichst."
+          "title": "Lege Spalten an, die Entscheidungen unterstützen",
+          "text": "Eine nützliche Zeile enthält Produktname, Quellmarktplatz, ursprüngliche Produktadresse, genaue Variante, angezeigten Preis samt Währung, Prüfdatum und nächsten Schritt. Ergänze relevante Maße oder technische Angaben. Trenne eigene Notizen von der Verkäuferbeschreibung, damit du beim späteren Lesen Nachweise und Interpretation auseinanderhalten kannst.\n\nEine Jackenzeile könnte Brustbreite, Schulterbreite, Rückenlänge, ausgewählte Größe und die Angabe enthalten, ob die Maße das Kleidungsstück oder den Träger beschreiben. Bei Schuhen kannst du die Größentabelle und eine verfügbare Innenlängenmessung festhalten. Ein bloßes Größenetikett gehört nicht ohne Einschränkung in eine Spalte namens Passform bestätigt.\n\nVerwende klare Statusangaben wie Quelle prüfen, Maße fehlen, bereit zur Entscheidung, bestellt und geprüft. Ein Status sollte tatsächlich erledigte Arbeit beschreiben. Halte den Ablehnungsgrund eines Artikels gesondert fest; so wiederholst du dieselbe Recherche nicht in der nächsten Woche."
+        },
+        {
+          "title": "Prüfe das aktuelle Produkt hinter der Zeile",
+          "text": "Öffne den ursprünglichen Produktlink und die OOPBuy-Kaufseite, bevor du dich auf ein Angebot verlässt. Vergleiche Produktidentität, Bilder, Optionen und den Preis der ausgewählten Variante. Auch ein funktionierender Link kann zu einem geänderten Angebot, einer anderen Variante oder einer Seite führen, deren günstigste Option nicht dem Katalogbild entspricht.\n\nHalte Kennungen auseinander. Im Linkbeispiel ist 3470 eine CNBuyCha-Katalogreferenz, während 7876894732 die Quellkennung im Weidian-Produktpfad ist. Die Katalognummer in eine Kaufadresse zu kopieren identifiziert nicht dasselbe Produkt. Bewahre möglichst die vollständige Quelladresse auf, statt sie aus einer kurzen Bezeichnung zu rekonstruieren.\n\nIst eine Seite nicht verfügbar, markiere die Zeile als ungeprüft. Suche erneut nach dem genauen Artikel und vergleiche Ersatzangebote sorgfältig. Ersetze den ursprünglichen Link nicht stillschweigend durch ein ähnlich aussehendes Produkt: Ähnlichkeit belegt weder denselben Verkäufer noch dieselben Spezifikationen oder Kaufbedingungen."
+        },
+        {
+          "title": "Vergleiche die Variante, die du tatsächlich bestellen würdest",
+          "text": "Zwei Zeilen sind nur vergleichbar, wenn sie die Optionen darstellen, die du wirklich kaufen würdest. Prüfe Farbe, Größe, Menge, Material und enthaltenes Zubehör. Ein Angebot kann eine Preisspanne zeigen, weil sich seine Varianten unterscheiden. Den niedrigsten sichtbaren Preis zu notieren, obwohl du eine andere Option planst, verfälscht den Vergleich, selbst wenn beide Zahlen stimmen.\n\nStell dir zwei Reisetaschen vor. Der eine angezeigte Preis könnte zur kleinsten Ausführung gehören, während der andere die benötigte größere Tasche enthält. Trage die erforderlichen Maße neben jeder ausgewählten Option ein und vergleiche genau diese. Fehlt ein wichtiges Maß, kennzeichne die Lücke, statt es aus einem Modellfoto zu schätzen.\n\nBei Mehrfachpackungen notierst du die Stückzahl und berechnest einen Stückpreis nur bei sinnvoll gleichwertigen Artikeln. Prüfe bei Kleidungssets, welche Teile enthalten sind. Solche kleinen Kontrollen machen aus einer Bildersammlung eine Tabelle, die Kaufentscheidungen unterstützt."
+        },
+        {
+          "title": "Ergänze eine realistische Kostenübersicht",
+          "text": "Trenne bestätigte Beträge von Schätzungen. Deine Übersicht kann den ausgewählten Artikel, angezeigte Inlandszustellung, geschätzten internationalen Versand, geplante Zusatzleistungen und eine Reserve für ungeklärte Kosten enthalten. Kennzeichne bei jeder Eingabe die Währung. Eine geschätzte USD-Anzeige ist kein festgeschriebener Zahlungsbetrag.\n\nUntersuche auf OOPBuys offizieller Versandschätzungsseite die verfügbaren Optionen für dein Ziel und deine Paketannahmen. Notiere Gewicht und Maße, die du verwendet hast; ohne diese Eingaben lässt sich die Schätzung später schwer einordnen. Sind sie unbekannt, vergleiche ein plausibles kleineres und größeres Paketszenario, statt eine scheinbar genaue Gesamtsumme anzugeben.\n\nLege vor der Bestellung eine Entscheidungsregel fest. Du könntest beispielsweise nur kaufen, wenn auch das höhere Kostenszenario innerhalb deines Lieferbudgets liegt. Das ist eine persönliche Budgetmethode und kein OOPBuy-Angebot. Aktualisiere die Übersicht, sobald Lagerinformationen oder ein aktuelles Versandangebot frühere Annahmen ersetzen."
+        },
+        {
+          "title": "Trenne Katalogbilder von Bestell-QC",
+          "text": "Ein Katalogfoto hilft, Stil, Farbe oder Gestaltungsmerkmale zu erkennen. Es belegt nicht den Zustand des Exemplars, das für dich gekauft wird. Die importierten Katalogbilder von OOPBuy Tab sind keine bestätigten Lager-QC-Fotos deiner eigenen Bestellung. Markiere eine Zeile deshalb nicht als qualitativ freigegeben, nur weil ihre Bilder ordentlich aussehen.\n\nBestellst du den Artikel später, lege einen separaten Nachweisbereich für die Bilder und Nachrichten dieser Bestellung an. Notiere Bestellreferenz, gewählte Variante und offene Fragen aus den Lagerfotos. So wird ein ansprechendes Quellbild nicht mit dem tatsächlich eingegangenen Artikel verwechselt.\n\nOOPBuys Prüfinformationen beschreiben Kontrollen von Menge und bestellten Spezifikationen, nennen aber auch Grenzen. Das ist ein Anlass für gezielte Fragen und kein Grund anzunehmen, jeder Qualitätsaspekt sei geprüft. Benenne bei einem entscheidenden Maß oder Detail die benötigte Ansicht beziehungsweise Messung, bevor du den nächsten Schritt wählst."
+        },
+        {
+          "title": "Mache aus der Auswahl eine überschaubare erste Bestellung",
+          "text": "Gehe vor der Zahlung die offenen Fragen deiner Auswahlliste durch. Für einen Artikel sollten Quelle, bewusste Variantenwahl, ausreichende Größeninformationen und ein akzeptables Lieferbudget feststehen. Steht in mehreren Feldern noch unbekannt, ist weitere Recherche der nächste Schritt, auch wenn der Preis ungewöhnlich attraktiv erscheint.\n\nEine kleinere erste Bestellung kann die eigene Dokumentation erleichtern. Du lernst aktuelle Bestellseiten, Lagerinformationen und Paketoptionen kennen, ohne gleichzeitig zahlreiche Sonderfälle zu verwalten. Das ist ein organisatorischer Vorschlag und kein Versprechen, dass eine kleine Sendung pro Artikel weniger kostet.\n\nNutze die offizielle OOPBuy-Anmeldeseite, wenn du auf dein Konto zugreifen möchtest. Zahlungsentscheidungen und Kontodaten gehören zum offiziellen Dienst. Übertrage nach der Bestellung die Referenz und das Datum in deine private Tabelle. Persönliche Bestelldaten sollten nicht in einem öffentlich geteilten Spreadsheet stehen."
+        },
+        {
+          "title": "Pflege die Tabelle nach dem ersten Kauf weiter",
+          "text": "Ein gutes Spreadsheet wird nach Erhalt eines Artikels wertvoller. Ergänze tatsächlich gemessene Maße, Beobachtungen zur Passform, den endgültig bezahlten Betrag und Abweichungen vom Angebot. Beschreibe die Umstände: Eine Jacke über einem dicken Pullover kann anders sitzen als dieselbe Jacke über einem T-Shirt.\n\nKennzeichne subjektive Eindrücke klar. Bequem für meinen täglichen Arbeitsweg ist hilfreicher als perfekte Qualität, weil die Nutzung erklärt wird. Notiere erkannte Grenzen, etwa eine für dein Telefon zu schmale Tasche. Solche Hinweise unterstützen spätere Entscheidungen, ohne dieselbe Erfahrung für andere Käufer zu behaupten.\n\nDatiere abschließend deine Bewertung und archiviere tote Links, statt sie aktuell wirken zu lassen. Prüfe Preise und Verfügbarkeit vor jedem neuen Kauf erneut. Ein vertrauenswürdiges OOPBuy-Spreadsheet ist kein unveränderliches Versprechen, sondern ein Arbeitsprotokoll darüber, was du geprüft hast, was ungewiss bleibt und was du gelernt hast."
         }
+      ],
+      "sources": [
+        {
+          "label": "Offizielle OOPBuy-Website",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuy-Versandrechner",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy-Prüfinformationen",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy-Anmeldung",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-product-links",
+        "oopbuy-price-check",
+        "oopbuy-qc-photos"
       ]
     },
     {
       "slug": "oopbuy-qc-photos",
-      "tag": "FOTOPRÜFUNG",
-      "title": "Worauf du bei Produkt- und QC-Fotos achten solltest",
-      "description": "Trenne Katalogrecherche von der Prüfung deiner eigenen Bestellung.",
+      "tag": "Qualitätsprüfung",
+      "title": "OOPBuy-QC-Fotos: Was du vor dem Versand deiner Bestellung prüfen solltest",
+      "description": "Ein praktischer Leitfaden zum Lesen von OOPBuy-QC-Fotos, zur Variantenprüfung, zu hilfreichen Messanfragen und zu den Grenzen von Lagerbildern.",
+      "primaryKeyword": "OOPBuy QC-Fotos",
+      "secondaryKeywords": [
+        "OOPBuy-Qualitätsprüfung",
+        "OOPBuy-Lagerfotos",
+        "OOPBuy-QC-Leitfaden",
+        "OOPBuy-Prüfung"
+      ],
+      "takeaways": [
+        "Prüfe die Lagerfotos deiner eigenen Bestellung und gleiche sie mit der gewählten Variante ab.",
+        "Nutze eine feste Prüfreihenfolge und fordere bei wichtigen Lücken eine präzise zusätzliche Ansicht an.",
+        "Fotos belegen weder Echtheit noch dauerhafte Haltbarkeit, exakte Farbe oder sämtliche Funktionen."
+      ],
       "sections": [
         {
-          "title": "Wisse, welche Fotos du ansiehst",
-          "text": "Katalogbilder zeigen ein Angebot; sie beweisen nicht, welchen Artikel du erhältst. Die Fotos auf OOPBuy Tab werden von CNBuyCha bereitgestellt und sind nicht als Lager-QC verifiziert."
+          "title": "Nutze QC-Fotos für konkrete Fragen",
+          "text": "OOPBuy-QC-Fotos helfen am meisten, wenn du weißt, was du prüfen möchtest. Beginne mit einer kurzen Liste: Ist der erwartete Artikel angekommen, stimmt die Variante, gibt es sichtbare Schäden und stützen verfügbare Maße deine Passformentscheidung? So entsteht ein praktischer Prüfablauf statt einer grenzenlosen Suche nach Perfektion.\n\nEin Foto zeigt eine bestimmte Ansicht unter einer bestimmten Beleuchtung. Es kann einen fehlenden Knopf oder ein sichtbar anderes Farbetikett zeigen, aber möglicherweise kein Problem in einer Tasche oder unter einem abnehmbaren Teil. Betrachte jedes Bild als Nachweis mit begrenztem Sichtfeld.\n\nKläre vor dem internationalen Versand die Fragen, die deine Entscheidung verändern würden. Vielleicht brauchst du eine Ärmellänge oder die Auskunft, ob ein Fleck entfernbarer Verpackungsrückstand ist. Gut aussehende Fotos garantieren nicht, wie ein Artikel nach monatelanger Nutzung funktioniert."
         },
         {
-          "title": "Vergleiche konkrete Details",
-          "text": "Vergleiche bei deiner eigenen Bestellung Modell, Farbe, sichtbares Größenetikett und Stückzahl mit deiner Auswahl. Achte auf offensichtliche Schäden und frage vor dem Versand nach unklaren Details."
+          "title": "Unterscheide drei Arten von Produktfotos",
+          "text": "Verkäuferbilder beschreiben das angebotene Produkt. Katalogbilder helfen, das Angebot zu entdecken und wiederzuerkennen. Lagerbilder dokumentieren die konkreten Waren einer Bestellung. Diese Rollen unterscheiden sich, selbst wenn die Fotos neben demselben Produktnamen stehen oder ähnlich aussehen.\n\nOOPBuy Tab ist ein unabhängiger Katalog mit CNBuyCha-Produktdaten. Seine importierten Bilder sind keine bestätigten QC-Fotos deiner eigenen Bestellung. Du kannst sie zum Vergleich nutzen, aber sie zeigen nicht, ob dein gekauftes Exemplar dieselben Nähte, Etiketten, Maße oder denselben Zustand besitzt.\n\nSpeichere Bilder in getrennten Ordnern oder mit eindeutigen Bezeichnungen wie Quellreferenz und meine Bestellung. Ergänze in privaten Notizen Bestellreferenz und Datum. Diese einfache Trennung verhindert, dass eine attraktive Verkäufernahaufnahme versehentlich zum maßgeblichen Nachweis für deinen eingelagerten Artikel wird."
         },
         {
-          "title": "Kenne die Grenzen",
-          "text": "Fotos allein belegen weder Echtheit noch Haltbarkeit oder vollständige Funktionsfähigkeit. Wenn du Maße oder eine zusätzliche Prüfung benötigst, frage OOPBuy nach Verfügbarkeit und Kosten."
+          "title": "Stelle sicher, dass du den richtigen Artikel prüfst",
+          "text": "Ordne vor der Detailprüfung den Lagereintrag deiner Bestellung zu. Vergleiche Produktname, Quelllink, gewählte Farbe, Größe und Menge. Hast du zwei ähnliche Artikel bestellt, gehe nicht davon aus, dass ihre Fotos in derselben Reihenfolge wie die Produkte auf deiner ursprünglichen Liste erscheinen.\n\nSuche in den verfügbaren Bildern nach Erkennungsmerkmalen: Größenetikett, auffällige Teilanordnung, Verschlussart oder Verpackungskennzeichnung. Vergleiche sie mit deiner Bestellauswahl statt mit dem allgemeinen ersten Angebotsbild. Verkäufer verwenden gelegentlich dasselbe Hauptfoto für mehrere Optionen.\n\nPassen Eintrag und Bilder scheinbar nicht zusammen, bitte unter Angabe der Bestellreferenz um Klärung. Benenne die Abweichung konkret, etwa Marineblau bestellt, Etikett wirkt schwarz, oder zwei Stück bestellt, nur eines sichtbar. Erkläre den Artikel nicht allein deshalb für falsch, weil ein Foto nicht alle Teile zeigt; kläre zunächst seinen tatsächlichen Bildausschnitt."
+        },
+        {
+          "title": "Prüfe Kleidung in einer festen Reihenfolge",
+          "text": "Betrachte bei Kleidung zuerst das vollständige Stück. Prüfe, ob Silhouette, große Stoffteile, Ausschnitt, Ärmel und Verschlüsse zum ausgewählten Artikel passen. Sieh dir dann Vorder- und Rückseite einzeln an. Der Gesamtblick hilft, ein fehlendes Merkmal zu entdecken, bevor du dich in winzigen Nahtunterschieden verlierst.\n\nPrüfe anschließend sichtbare Verarbeitung: Nahtausrichtung, Säume, Bündchen, Knöpfe, Reißverschlüsse, Aufdrucke und gegebenenfalls Stickereien. Achte auf offensichtliche Risse, lose Teile, Flecken oder ungleiche Elemente. Falten und die Lage auf der Unterlage können gerade Linien schief wirken lassen; ein klarerer Winkel kann den Zweifel auflösen.\n\nZum Schluss folgen wichtige Etiketten und Maße. Ein Größenetikett bestätigt den Aufdruck, eine Messung hilft bei der Passform. Das sind unterschiedliche Kontrollen. Ist vor allem die Ärmellänge unklar, frage gezielt danach statt nach einer normalen Passform, deren Bedeutung stark von persönlichen Erwartungen abhängt."
+        },
+        {
+          "title": "Prüfe Schuhe und Taschen nach ihrer Funktion",
+          "text": "Vergleiche bei Schuhen beide Exemplare gemeinsam und einzeln. Betrachte Größenangaben, Gesamtform, sichtbaren Obermaterialzustand, Verschlüsse und Sohlenränder. Überlege, ob die verfügbaren Ansichten die für deine Nutzung wichtigen Bereiche abdecken. Ein Foto von oben zeigt möglicherweise keine seitliche Ablösung an der Sohle.\n\nBeginne bei Taschen mit Maßen und Aufbau. Identifiziere Hauptfach, Riemen, Griffe und erwartete Verschlüsse. Prüfe, ob die Fotos die ausgewählte Größe und Ausführung zeigen. Soll ein bestimmter Laptop hineinpassen, reicht ein optisch ähnliches Modellfoto nicht als Nachweis des Innenraums.\n\nLeite aus diesen Sichtprüfungen keine Aussagen über Tragfähigkeit, Wasserdichtigkeit, Komfort oder Spezialleistung ab. Solche Eigenschaften erfordern andere Nachweise. Ist ein Merkmal wesentlich und lässt es sich weder durch das Angebot noch durch eine geeignete Prüfung klären, bleibt es bei deiner Kaufentscheidung offen."
+        },
+        {
+          "title": "Fordere verständlich auswertbare Messungen an",
+          "text": "Ein hilfreiches Messfoto zeigt den Artikel, das Messwerkzeug und beide Messendpunkte deutlich. Bitte um ein benanntes Maß nach einer definierten Methode. Bei einem Hemd ist flach gemessene Brustbreite von einer Achselnaht zur anderen präziser als Brustgröße. Bei Hosen solltest du angeben, ob der Bund entspannt oder gedehnt sein soll.\n\nVergleiche Gleiches mit Gleichem. Eine flache Kleidungsbreite ist kein Körperumfang, und eine Außensohlenlänge ist keine Schuhinnenlänge. Ein gut passendes eigenes Stück ist nur dann eine praktische Referenz, wenn die Lagermessung nach derselben Methode erfolgt.\n\nSei vorsichtig mit winzigen Unterschieden auf unscharfen oder schrägen Bildern. Perspektive, Stofffalten und Bandposition können die Auswertung verändern. Würde ein kleiner Unterschied darüber entscheiden, ob du den Artikel behältst, fordere eine klarere Messung an, statt durch starkes Vergrößern eine Genauigkeit vorzutäuschen, die das Bild nicht bietet."
+        },
+        {
+          "title": "Verstehe die Grenzen der Lagerprüfung",
+          "text": "OOPBuys offizielle Prüfinformationen beschreiben Kontrollen bestellter Mengen und Spezifikationen. Sie schließen außerdem bestimmte Farb-, Größen- und Nutzungseffekte, fachliche Produktbeurteilungen und innere Kontrollen mancher versiegelter Waren aus. Lies den aktuellen offiziellen Hinweis zum genauen Umfang für deinen Artikel.\n\nBetrachte die Prüfung deshalb nicht als umfassende Produktzertifizierung. Ein fotografiertes Etikett authentifiziert keine Marke. Ein unbeschädigtes Ladegerätegehäuse belegt keine elektrische Sicherheit. Eine intakte Verpackung zeigt nicht jede enthaltene Komponente. Hängt dein Kauf von einer Facheigenschaft ab, suche geeignete Unterlagen, statt die Antwort von einem allgemeinen Lagerbild zu erwarten.\n\nAuch Bildschirmdarstellung und Beleuchtung begrenzen Farbvergleiche. Nutze Fotos, um deutliche Abweichungen zu erkennen und nachzufragen; Bilder unter unterschiedlichen Bedingungen klären aber nicht zwangsläufig einen feinen Farbtonunterschied. Entscheide im Voraus, wie viel Unsicherheit du akzeptieren möchtest."
+        },
+        {
+          "title": "Formuliere eine leicht umsetzbare Anfrage",
+          "text": "Verknüpfe jede Frage mit einem beobachtbaren Punkt. Eine hilfreiche Anfrage nennt Bestellung, relevantes Foto und das genaue zu prüfende Detail. Beispielsweise: Bitte den vorderen Reißverschluss vollständig schließen und beide Seiten des unteren Saums im Bild zeigen. Das ist konkreter als bitte die Qualität noch einmal prüfen.\n\nNenne bei Messungen die Endpunkte und wichtige Bedingungen, etwa flach liegend ohne Dehnung. OOPBuy beschreibt Standard-QC-Fotos nach den Prüfrichtlinien als kostenlos und bietet individuelle Detail- oder Messanfragen an. Der Hinweis zu individuellen Leistungen nennt keinen Preis für Sonder-QC; prüfe deshalb die aktuelle Gebühr vor dem Zusatzauftrag.\n\nVerbinde nicht viele unzusammenhängende Bedenken zu einer vagen Nachricht. Priorisiere die Details, die deine Entscheidung verändern könnten, und prüfe die Antwort anhand dieser Fragen. Speichere sie beim zugehörigen Bild, damit du direkt bestätigte Tatsachen von eigenen Bildinterpretationen unterscheiden kannst."
+        },
+        {
+          "title": "Entscheide dokumentiert vor dem Versand",
+          "text": "Wähle nach der Sichtung einen klaren nächsten Schritt: vorhandene Informationen akzeptieren, eine konkrete Klärung anfordern oder aktuelle Rückgabeoptionen prüfen. Lies bei Problemen zeitnah den offiziellen Rückgabehinweis und den aktuellen Bestellstatus. Gehe nicht davon aus, dass Abwarten deine Möglichkeiten unbegrenzt erhält.\n\nDokumentiere Problem und Nachweise kompakt. Bewahre gewählte Variante, relevante Bilder, Maße und die genaue Antwort auf. Dieser Datensatz lässt sich dem Support später leichter erklären als eine allgemeine Aussage, das Produkt habe falsch ausgesehen. Außerdem verhindert er doppelte Fragen.\n\nPrüfe vor dem Paketauftrag alle als ungeklärt markierten Artikel erneut. Versand beantwortet keine offene Frage. Deine abschließende Entscheidung sollte auf dem tatsächlich im Lager eingegangenen Artikel, den Grenzen der Nachweise und der für Nutzung und Budget akzeptablen Restunsicherheit beruhen."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Prüfinformationen",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Offizielle OOPBuy-Website",
+          "url": "https://oopbuy.com/"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-returns-refunds"
       ]
     },
     {
       "slug": "oopbuy-shipping-guide",
-      "tag": "VERSANDNOTIZEN",
-      "title": "Der Artikelpreis ist erst der Anfang",
-      "description": "So planst du dein Paketbudget übersichtlicher.",
+      "tag": "Versand",
+      "title": "OOPBuy-Versandleitfaden: Kosten schätzen und einen geeigneten Versandweg wählen",
+      "description": "Verstehe die OOPBuy-Versandphasen, Gewicht und Volumen, Versandwegvergleiche, Verpackungsoptionen und die Prüfungen vor der Zahlung internationaler Fracht.",
+      "primaryKeyword": "OOPBuy Versand",
+      "secondaryKeywords": [
+        "OOPBuy-Versandkosten",
+        "OOPBuy-Versandrechner",
+        "OOPBuy-Versandschätzung",
+        "OOPBuy-Lieferzeit"
+      ],
+      "takeaways": [
+        "Plane den Versand vom Verkäufer zum Lager und eine separate Zahlung für das internationale Paket ein.",
+        "Schätze anhand von Ziel, Inhalt, Gewicht und Maßen; bestätige die Regeln des gewählten Versandwegs.",
+        "Vergleiche geeignete Wege anhand ihrer vollständigen Bedingungen und betrachte Laufzeiten als Schätzungen."
+      ],
       "sections": [
         {
-          "title": "Trenne die Kosten",
-          "text": "Führe Produktpreis, Versand vom Verkäufer zum Lager und internationalen Versand im Budget getrennt auf. Prüfe optionale Leistungen und zahlungsbezogene Gebühren im aktuellen Angebot."
+          "title": "Verstehe die beiden Versandphasen",
+          "text": "Eine OOPBuy-Bestellung durchläuft zwei getrennte Versandphasen. Zuerst schickt der Verkäufer die gekauften Waren zum Lager in China. Später geht ein Paket vom Lager an dein Ziel. Wer diese Phasen verwechselt, wird von Statusmeldungen oder Zahlungsaufforderungen leicht überrascht.\n\nOOPBuys Erklärung für Erstkäufer trennt die erste Zahlung für Waren und Inlandsfracht von der späteren internationalen Frachtzahlung. Der Produktpreis in einem unabhängigen Katalog entspricht daher nicht den vollständigen Lieferkosten. Die USD-Angaben von OOPBuy Tab sind Schätzungen für die Produktsuche, kein endgültiges internationales Versandangebot.\n\nPlane dein Budget vor der Produktbestellung. Überlege, welchen Betrag du akzeptieren kannst, wenn das verpackte Paket größer oder schwerer als erwartet wird. Denkst du erst über internationale Fracht nach, wenn alle Artikel im Lager liegen, musst du möglicherweise zwischen höheren Gesamtkosten und einem ungeplanten Kundendienstverfahren wählen."
         },
         {
-          "title": "Nutze die tatsächlichen Paketdaten",
-          "text": "Gib Zielort, Gewicht, Maße und Warenart im offiziellen Rechner ein. Vergleiche Einschränkungen und Abrechnungsregeln der verfügbaren Versandwege. Eine Schätzung ist keine endgültige Rechnung."
+          "title": "Gib dem Versandrechner brauchbare Eingaben",
+          "text": "Beginne auf OOPBuys offizieller Versandschätzungsseite. Gib dein Ziel und die angeforderten Paketdaten ein. Nutze die besten verfügbaren Gewichts- und Maßangaben und notiere deine Eingaben. Ein Angebot ohne seine Annahmen lässt sich mit einem späteren Ergebnis schwer vergleichen.\n\nVor Ankunft der Waren bleiben manche Werte unsicher. Halte diese Unsicherheit sichtbar. Prüfe bei Kleidung ein leichteres und schwereres Szenario, falls verlässliche Messwerte fehlen. Untersuche bei starren oder sperrigen Produkten die Verpackungsmaße, statt anzunehmen, allein das Gewicht erkläre die Versandkosten.\n\nAktualisiere deine Schätzung, sobald Lagerdaten vorliegen. Bei großen Abweichungen identifiziere vor der Versandwegwahl den veränderten Wert. Eine zusätzliche Schachtel, eine größere Variante oder Schutzverpackung können das berechnete Paket verändern. Nutze den Rechner zur Planung und bestätige den tatsächlich zu zahlenden Betrag im aktuellen Paketauftrag."
         },
         {
-          "title": "Wähle die Verpackung bewusst",
-          "text": "Die Verpackung beeinflusst Schutz und Paketgröße. Frage vor der Bestätigung, wie das Entfernen oder Verstärken der Verpackung Angebot und Schutz verändert. Behalte die Lagerfrist jedes Artikels in deinem Konto im Blick."
+          "title": "Vergleiche tatsächliches Gewicht und Paketvolumen",
+          "text": "Das tatsächliche Gewicht beschreibt, wie schwer das verpackte Paket ist. Volumengewicht berücksichtigt bei manchen Versanddiensten den Platzbedarf. Die Abrechnungsregeln des gewählten Versandwegs bestimmen, wie diese Größen verwendet werden. Übernimm deshalb keinen Divisor aus einem fremden Versandleitfaden.\n\nEin Beispiel verdeutlicht den Verpackungsvergleich: Ein Karton mit 40 mal 30 mal 25 Zentimetern hat 30.000 Kubikzentimeter Volumen. Bei 35 mal 25 mal 20 Zentimetern sind es 17.500 Kubikzentimeter. Der zweite Karton braucht weniger Platz, doch daraus allein folgt keine bestimmte Preisersparnis. Versandweg, tatsächliches Gewicht und Abrechnungsstufen bleiben entscheidend.\n\nKläre, ob die betrachteten Angaben den einzelnen Artikel, seine Verkäuferverpackung oder das fertige internationale Paket beschreiben. Das sind unterschiedliche Größen. Laut OOPBuys Einsteigerleitfaden richtet sich die endgültige Fracht nach gemessenen Paketmaßen und Gewicht. Die fertige Verpackung ist deshalb für die Budgetbestätigung besonders wichtig."
+        },
+        {
+          "title": "Vergleiche geeignete Versandwege auf derselben Grundlage",
+          "text": "Ein sinnvoller Vergleich beginnt mit der Zulässigkeit. Prüfe, ob ein Versandweg Ziel, Produktkategorien, Paketmaße und Gewicht akzeptiert. Ein niedriger Werbepreis ist bedeutungslos, wenn der Dienst deine Waren nicht befördern kann. Verfügbarkeit bei einer früheren Bestellung belegt sie nicht für ein anderes Paket.\n\nNotiere für jede geeignete Option Gesamtpreis, geschätzten Lieferzeitraum, Sendungsverfolgung, Beschränkungen sowie enthaltenen oder optionalen Schutz. Lies die Bedingungen genau genug, um den Umfang einer zusätzlichen Schutzgebühr zu verstehen. Nimm nicht an, dass Verlust, Verzögerung, Schaden und Zollergebnis immer gleich behandelt werden.\n\nVergleiche mit denselben Paketannahmen. Rechnet eine Schätzung mit geringerem Gewicht oder ohne eine anderswo gewählte Leistung, korrigiere zuerst diesen Unterschied. Es gibt keinen universell besten OOPBuy-Versandweg: Die praktische Wahl hängt von Paket, Ziel, Budget, Zeitbedarf und den aktuell angebotenen Bedingungen ab."
+        },
+        {
+          "title": "Prüfe Artikelbeschränkungen vor dem Kauf",
+          "text": "Ein Produktfund im Spreadsheet belegt nicht, dass der Artikel gekauft oder zu dir versandt werden darf. OOPBuy veröffentlicht Einkaufs- und Transportbeschränkungen, und die Versandzulässigkeit kann vom Inhalt abhängen. Kläre unsichere Kategorien vor der Bestellung, statt aus der Lagerankunft auf eine internationale Versandmöglichkeit zu schließen.\n\nBeschreibe das Produkt bei einer Anfrage genau. Ein Gerät mit eingebautem Akku, eine gefüllte Flüssigkeitsflasche und eine leere Kunststoffflasche sind unterschiedliche Versandfragen. Nenne Quelllink und relevante Spezifikationen, damit der Support den tatsächlichen Artikel beurteilen kann und nicht aus einem kurzen Namen raten muss.\n\nAkzeptiert ein Versandweg den Artikel nicht, suche eine zulässige geeignete Alternative oder überdenke den Kauf. Bezeichne den Inhalt nicht falsch, damit die Auswahlmaske ihn annimmt. Bewahre Bestätigungen bei den Bestellnotizen auf und prüfe sie bei der Paketvorbereitung erneut, wenn Artikel, Ziel oder Versandweg geändert wurden."
+        },
+        {
+          "title": "Wähle die Verpackung passend zum Inhalt",
+          "text": "Verpackungsentscheidungen sollten Platzbedarf und erforderlichen Schutz abwägen. Eine formstabile Tasche, ein empfindliches Accessoire und ein zusammendrückbares Sweatshirt vertragen nicht dieselbe Behandlung. Alle Schachteln zu entfernen oder alles zu komprimieren kann vermeidbare Schäden verursachen, selbst wenn das Paket kleiner wird.\n\nOOPBuys Verpackungshinweis beschreibt unter anderem Kartons, bestimmte Änderungen an Schuhkartons, Vakuumbeutel und Schutzmaterialien; die Verfügbarkeit hängt von den Umständen ab. Prüfe die tatsächlichen Angebote für Bestellung und Versandweg. Brauchst du Originalverpackungen zur Aufbewahrung, Präsentation oder möglichen Rückgabe, kläre das vor ihrer Entfernung.\n\nErkläre bei gemischten Paketen, welche Artikel ihre Form behalten oder vor schwereren Inhalten geschützt werden müssen. Frage nach aktuellen Probeverpackungsleistungen, wenn genauere Paketdaten deine Entscheidung verändern würden. Lies zuerst Gebühren und Stornierungsbedingungen. Eine Neuverpackung hilft nur, wenn sie eine konkrete entscheidungsrelevante Unsicherheit klärt."
+        },
+        {
+          "title": "Plane mehr als nur die internationale Fracht ein",
+          "text": "Deine Gesamtkostenübersicht sollte Waren, Inlandsfracht, internationale Fracht, gewählte Leistungen und angezeigte Zahlungs- oder Umrechnungskosten enthalten. Je nach Ziel und Versandbedingungen können außerdem importbezogene Gebühren zu prüfen sein. Trenne Schätzungen von bereits bezahlten Beträgen.\n\nBetrachte einen informellen Versandwegnamen oder eine persönliche Empfehlung nicht als vollständige Erklärung der Steuerbehandlung. Lies die tatsächliche Beschreibung und frage, was der angezeigte Betrag umfasst. Bleibt eine Gebühr unklar, halte die Frage im Budget fest, statt stillschweigend null anzusetzen.\n\nGib auf Anfrage korrekte Produktbeschreibungen und Werte an. Dieser Leitfaden legt weder Zollregeln eines Ziellands fest noch sagt er eine Abfertigung voraus. Entscheidend ist, ob der Gesamtbetrag einschließlich angemessener Reserve für ungeklärte Kosten für dich akzeptabel bleibt. Ein günstiges Produkt kann ungeeignet sein, wenn die Lieferung seine Ersparnis aufzehrt."
+        },
+        {
+          "title": "Lies Lieferzeitschätzungen als Phasen, nicht als Versprechen",
+          "text": "Eine Lieferzeitschätzung braucht einen Ausgangspunkt. Verkäuferversand, Lagereingang, abgeschlossene Prüfung, Paketauftrag und Übernahme durch den Beförderer sind verschiedene Zeitpunkte. Ordne den aktuellen Status einer Phase zu, bevor du ihn mit einer erwarteten internationalen Laufzeit vergleichst.\n\nOOPBuys offizielle Lieferinformationen unterscheiden Inlands- und internationale Bewegung und weisen auf mögliche Verzögerungen hin. Nutze die aktuelle Schätzung deines Versandwegs als Planungshilfe, nicht als garantierten Ankunftstag. Brauchst du einen Artikel zu einem festen Anlass, berücksichtige neben der Beförderung auch Einkauf und Lagerbearbeitung.\n\nVerfolge nach dem Versand die Paketdaten und bewahre die Referenz auf. Eine Einkaufsbestellung mit dem Status versandt kann unterwegs zum chinesischen Lager sein; das internationale Paket muss noch nicht auf dem Weg sein. Bei widersprüchlichem Fortschritt nenne dem Support die passende Bestell- oder Paketreferenz und die Daten der verglichenen Ereignisse."
+        },
+        {
+          "title": "Prüfe ein letztes Mal vor der Frachtzahlung",
+          "text": "Betrachte das tatsächliche Paket als vollständige Kaufentscheidung. Bestätige Inhalt, Empfängerdaten, Ziel, Verpackungsanweisungen, Versandzulässigkeit, Angebotspreis und Zusatzleistungen. Jeder enthaltene Artikel sollte deine eigene Prüfung bestanden haben; offene Größen- oder Zustandsfragen dürfen nicht in der Versandvorbereitung untergehen.\n\nVergleiche das bestätigte Angebot mit den früheren Szenarien. Liegt es über deinem Budget, halte inne und prüfe legitime Änderungsmöglichkeiten. Ein anderer geeigneter Versandweg, eine angepasste Verpackung oder eine andere Artikelkombination können einen Vergleich lohnen. Gehe bei keiner davon ohne aktuelle Berechnung von einer Ersparnis aus.\n\nSpeichere die Bedingungen des gewählten Versandwegs und den endgültigen Zahlungsbeleg. Diese Angaben erleichtern spätere Sendungsfragen oder Supportanliegen. Gute Versandplanung bedeutet, das eigene Paket und die akzeptierten Bedingungen zu verstehen, statt allein deshalb einen Dienst zu wählen, weil eine andere, unterschiedliche Sendung schnell ankam."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy-Versandrechner",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy-Lieferhinweis",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy-Verpackungshinweise",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "Hinweise vor dem Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+        },
+        {
+          "label": "OOPBuy-Paketprobeverpackung",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-haul-packing",
+        "oopbuy-tracking-guide"
       ]
     },
     {
       "slug": "oopbuy-sizing-guide",
-      "tag": "GRÖSSE UND PASSFORM",
-      "title": "Eine bessere Größenprüfung beginnt zu Hause",
-      "description": "Vergleiche Maße, statt dich auf ein vertrautes Größenetikett zu verlassen.",
+      "tag": "Größenwahl",
+      "title": "OOPBuy-Größenleitfaden: Größentabellen lesen und tatsächliche Maße prüfen",
+      "description": "Wähle Kleidung und Schuhe mit einer klaren Methode: Verkäufertabellen vergleichen, ein gut passendes eigenes Stück messen und gezielte Lagermaße anfordern.",
+      "primaryKeyword": "OOPBuy Größenleitfaden",
+      "secondaryKeywords": [
+        "OOPBuy-Größentabelle",
+        "OOPBuy-Größenwahl",
+        "OOPBuy-Kleidergröße",
+        "OOPBuy-Schuhgröße"
+      ],
+      "takeaways": [
+        "Nutze die Tabelle des konkreten Angebots und kläre, ob sie Körper- oder Kleidungsmaße beschreibt.",
+        "Vergleiche dieselben Maße an einem eigenen Kleidungsstück, das du gern trägst.",
+        "Ein korrektes Größenetikett garantiert keine Passform; kläre wichtige Maßfragen vor dem Versand."
+      ],
       "sections": [
         {
-          "title": "Miss einen passenden Artikel",
-          "text": "Wähle einen ähnlichen Artikel, den du bereits besitzt. Notiere bei Kleidung die relevanten flach gemessenen Maße; nutze bei Schuhen die Messmethode des Verkäufers. Verwende einheitliche Einheiten."
+          "title": "Beginne beim Angebot statt bei einer universellen Umrechnung",
+          "text": "Der hilfreichste OOPBuy-Größenleitfaden beginnt mit einer Einschränkung: Gehe nicht davon aus, dass alle Verkäufer dieselbe Größentabelle verwenden. Eine M-Kennzeichnung, eine Schuhnummer oder eine Körpergrößenempfehlung kann je nach Angebot etwas anderes bedeuten. Beginne den Vergleich mit der Tabelle des konkreten Produkts.\n\nOOPBuy ist ein Einkaufs- und Logistikagent; die Produktspezifikationen stammen aus dem zugrunde liegenden Angebot. Die Wahl deiner üblichen Größe belegt nicht, dass das bestellte Kleidungsstück dieselben Maße wie eines von einem anderen Verkäufer hat. Betrachte vertraute Größen zunächst als Kennzeichnungen, bis Maße sie einordnen.\n\nSpeichere Tabelle und Variante bei der Bestellung. Ändert sich das Angebot später, weißt du weiterhin, welche Angaben deiner Entscheidung zugrunde lagen. Ein Bildschirmfoto sollte Produktidentität und Erklärungen zur Messmethode enthalten, nicht nur die Zeile mit der bevorzugten Größe."
         },
         {
-          "title": "Lies das genaue Angebot",
-          "text": "Größenbezeichnungen können sich je nach Verkäufer und Modell unterscheiden. Vergleiche deine Maße mit der Tabelle für genau diesen Artikel. Prüfe, ob eine Angabe eine flache Breite, einen Umfang oder eine Länge bezeichnet."
+          "title": "Miss etwas, das dir bereits passt",
+          "text": "Eine praktische Referenz ist ein eigenes Kleidungsstück, das du für denselben Zweck trägst und bequem findest. Lege es flach hin, ohne den Stoff zu verziehen. Miss die für den neuen Kauf wichtigen Abmessungen und notiere sowohl Zahl als auch verwendete Methode.\n\nBei einem Hemd können Achselbreite, Schulterbreite, Rückenlänge und Ärmellänge helfen. Bei Hosen kommen Bundbreite, vordere Leibhöhe, Oberschenkelweite und Innenbeinlänge infrage. Du brauchst nicht jedes denkbare Maß; priorisiere diejenigen, die bei dieser Kategorie gewöhnlich über deine Passform entscheiden.\n\nWähle eine wirklich vergleichbare Referenz. Ein weites Sweatshirt sagt wenig über die gewünschte Passform eines körpernahen Hemds aus, und Stretchhosen verhalten sich anders als feste Stoffe. Notiere das Tragegefühl der Referenz und gewünschte Änderungen. So werden ihre Maße zu einem sinnvollen persönlichen Ziel statt zu einer unerklärten Zahlenreihe."
         },
         {
-          "title": "Kläre Unsicherheiten früh",
-          "text": "Frage vor der Bestellung nach unklaren Maßen. Wenn du zusätzliche Maße deiner Bestellung benötigst, bestätige Verfügbarkeit und Kosten des Dienstes. Keine einzelne Größentabelle garantiert die Passform."
+          "title": "Kläre, was die Größentabelle misst",
+          "text": "Bestimme vor dem Zahlenvergleich, ob die Tabelle Körpermaße, fertige Kleidungsmaße oder empfohlene Trägerbereiche nennt. Diese Angaben beantworten unterschiedliche Fragen. Ein Kleidungsbrustmaß enthält vorgesehenen Bewegungsraum, während ein Körperbrustmaß die Person beschreibt. Wer beides verwechselt, kann bei der Größe deutlich danebenliegen.\n\nPrüfe Einheiten und ob ein Wert eine Breite oder einen Umfang bezeichnet. Eine flache Brustbreite von 54 Zentimetern ist nicht dasselbe wie 54 Zentimeter Brustumfang. Das Verdoppeln einer flachen Breite ermöglicht manchmal einen ungefähren Vergleich, bildet aber nicht jede Formeigenschaft des Kleidungsstücks ab.\n\nRechne Zollangaben einheitlich um: Ein Zoll entspricht 2,54 Zentimetern. Bewahre den Originalwert neben der Umrechnung auf, damit Fehler auffallen. Sind Überschriften oder übersetzte Messmethoden unklar, frage nach, bevor du eine Tabellenzeile als Beweis für eine passende Größe wertest."
+        },
+        {
+          "title": "Wähle Oberteile nach den entscheidenden Maßen",
+          "text": "Beginne bei Oberteilen mit dem Maß, das dir am häufigsten Probleme bereitet. Sind Hemden meist an der Brust eng, vergleiche zuerst die Brustbreite. Sind Ärmel oft kurz, mache ihre Länge zum Entscheidungskriterium. Prüfe danach, ob die übrigen Maße noch zur gewünschten Passform passen.\n\nBeachte die Konstruktion. Überschnittene Schultern oder Raglanärmel können vertraute Schulter- oder Ärmelmaße weniger direkt mit einem klassischen eingesetzten Ärmel vergleichbar machen. Kläre Anfang und Ende der Messung und nutze eine Verkäuferzeichnung, falls vorhanden.\n\nDeine Referenzjacke könnte beispielsweise 56 Zentimeter flache Brustbreite und 67 Zentimeter Rückenlänge haben. Ein Kandidat mit ähnlicher Brust, aber deutlich kürzerem Körper kann trotzdem ganz anders sitzen. Vergleiche die gesamte Gruppe wichtiger Maße, statt eine Größe auszuwählen, weil eine einzelne Zahl besonders gut passt."
+        },
+        {
+          "title": "Prüfe Hosen über den Bund hinaus",
+          "text": "Hosengrößen werden oft klarer, wenn du Taille, Leibhöhe, Oberschenkel und Innenbeinlänge gemeinsam betrachtest. Ein scheinbar passender Bund garantiert weder Bewegungsfreiheit noch die gewünschte Silhouette. Eine andere Leibhöhe verändert möglicherweise die Bundposition und damit das Tragegefühl eines bestimmten Maßes.\n\nBei elastischem Bund musst du klären, ob die Tabelle das entspannte oder gedehnte Maß nennt. Vergleiche kein gedehntes Verkäufermaß mit dem entspannt gemessenen Bund deiner eigenen Hose. Diese Unterscheidung gilt auch für ein Messbandfoto aus dem Lager.\n\nBeachte gewünschte Länge und Schnitt. Zwei Hosen mit derselben Innenbeinlänge können durch Leibhöhe, Beinform und Saumweite unterschiedlich aussehen. Bestimme anhand der Referenz die konkrete gewünschte Veränderung, etwa mehr Oberschenkelraum oder einen schmaleren Saum. Das sagt mehr aus als die allgemeine Frage, ob die Verkäuferhosen groß oder klein ausfallen."
+        },
+        {
+          "title": "Nutze Schuhgrößentabellen sorgfältig",
+          "text": "Notiere bei Schuhen das Größensystem des Verkäufers und lies zugehörige Hinweise zur Fußlänge. Rechne eine vertraute EU-, UK- oder US-Kennzeichnung nicht anhand einer fremden Tabelle um, ohne dieselbe Konvention im Angebot zu prüfen. Fehlt die Tabelle, bleibt die Unsicherheit bestehen.\n\nMiss beide Füße nach der angegebenen Methode, wenn Körpermaße verlangt werden. Halte Fußlänge, Einlegesohlenlänge, Schuhinnenlänge und Außensohlenlänge getrennt fest. Sie sind nicht austauschbar. Eine Außensohle kann über den für den Fuß verfügbaren Raum hinausreichen; die Form einer Einlegesohle kann einen geraden Längenvergleich erschweren.\n\nLänge ist außerdem nur ein Teil der Passform. Breite, Zehenform, Risthöhe, Socken und Verwendungszweck beeinflussen den Komfort. Vergleiche mit einem ähnlichen getragenen Paar und frage gezielt nach einem entscheidenden Maß. Verlasse dich nicht auf die pauschale Regel, immer eine Größe größer zu wählen oder bei jedem Schuh denselben Zuschlag zu addieren."
+        },
+        {
+          "title": "Berücksichtige Stoff und gewünschte Passform",
+          "text": "Maße grenzen die Auswahl ein, beschreiben aber nicht das gesamte Trageerlebnis. Stoffstruktur, Dehnbarkeit, Futter und Schnitt beeinflussen Beweglichkeit. Nutze konkrete Angebotsinformationen, sofern vorhanden. Leite eine genaue Stoffzusammensetzung oder Dehnbarkeit nicht allein aus einem Foto ab.\n\nKläre deinen Einsatzzweck, bevor du zwischen benachbarten Größen entscheidest. Ein Mantel über dicken Schichten kann eine andere Passform benötigen als ein Hemd direkt auf dem Körper. Eine weite Silhouette kann beabsichtigt sein; trotzdem sollten Schulter, Ärmel und Gesamtlänge zu deiner Trageweise passen.\n\nNennt das Angebot mögliche Messabweichungen, berücksichtige diese Unsicherheit. Stütze die gesamte Entscheidung nicht auf einen winzigen Zahlenunterschied, den die Methode nicht zuverlässig unterscheiden kann. Wirken zwei Größen gleichermaßen plausibel, bestimme den für dich wichtigsten Kompromiss, statt der Tabelle eine perfekte Antwort zuzuschreiben."
+        },
+        {
+          "title": "Fordere eine gezielte Lagermessung an",
+          "text": "OOPBuys Hinweis zu individuellen Logistikleistungen beschreibt zusätzliche Details und Messungen, darunter Kleidungsmaße sowie Schuh- oder Einlegesohlenlänge. Prüfe aktuelle Optionen und mögliche Gebühren im Konto. Eine gezielte Anfrage hilft, wenn sie eine wichtige offene Frage der Verkäufertabelle beantwortet.\n\nBeschreibe die Methode klar. Bitte etwa darum, das Hemd flach hinzulegen und ohne Dehnung von einer Achselnaht zur anderen zu messen. Bei der Innenbeinlänge nenne Schrittnaht und Saum als Endpunkte. Fordere ein Bild an, das Band und beide Endpunkte gemeinsam zeigt.\n\nVergleiche das Ergebnis anschließend nach derselben Methode mit deiner Referenz. Ein fotografiertes Größenetikett und ein vermessenes Kleidungsstück liefern unterschiedliche Nachweise. OOPBuys Prüfinformationen begrenzen den Umfang der Standardkontrolle; ein passendes Etikett bedeutet deshalb nicht, dass die reale Passform für dich bereits bestätigt wurde."
+        },
+        {
+          "title": "Entscheide über die Passform vor dem internationalen Versand",
+          "text": "Prüfe Maße und Einsatzzweck, bevor du den Artikel einem internationalen Paket hinzufügst. Fehlt ein wesentliches Maß, fordere es an, solange du noch fundiert über den Lagerartikel entscheiden kannst. Zeigen die Nachweise eine erhebliche Abweichung, untersuche zeitnah aktuelle Kundendienstoptionen, statt auf eine Veränderung der Passform unterwegs zu hoffen.\n\nBewahre Tabelle, gewählte Größe, Messfotos und Supportantwort gemeinsam auf. So lässt sich ein Größenproblem besser erklären und eine falsch bestellte Variante von einem korrekt etikettierten, aber unpassenden Schnitt unterscheiden. Das sind unterschiedliche Situationen mit möglicherweise unterschiedlichen Lösungen.\n\nMiss den Artikel nach der Lieferung erneut auf dieselbe Weise und notiere sein Trageverhalten. Erstelle eine private Referenz aus eigenen Erfahrungen, einschließlich Passformwünschen und Grenzen. Diese Beobachtungen sind langfristig hilfreicher als eine wachsende Liste unerklärter Größenetiketten oder pauschale Ratschläge aus unzusammenhängenden Käufen."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Nutzungsvereinbarung",
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+        },
+        {
+          "label": "OOPBuy-Prüfinformationen",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-spreadsheet-guide"
       ]
     },
     {
       "slug": "oopbuy-product-links",
-      "tag": "LINKS ERKLÄRT",
-      "title": "Ein Produkt, zwei unterschiedliche IDs",
-      "description": "Warum die Artikel-ID des Verkäufers beim Öffnen eines Fundes wichtig ist.",
+      "tag": "Produktlinks",
+      "title": "OOPBuy-Produktlinks: Den richtigen Artikel finden und jede Variante prüfen",
+      "description": "So prüfst du OOPBuy- und Weidian-Produktlinks, unterscheidest Quellkennungen von Katalognummern, klärst defekte Links und verstehst Affiliate-Parameter.",
+      "primaryKeyword": "OOPBuy Produktlinks",
+      "secondaryKeywords": [
+        "OOPBuy-Weidian-Links",
+        "OOPBuy-Linkumwandlung",
+        "OOPBuy-Produktadresse",
+        "OOPBuy-Spreadsheet-Links"
+      ],
+      "takeaways": [
+        "Bewahre den ursprünglichen Marktplatzlink auf und prüfe die tatsächlich geöffnete Seite.",
+        "Trenne eine Katalogreferenz von der Quellproduktkennung einer Kaufadresse.",
+        "Prüfe genaue Variante und aktuelle Zahlungsangaben; ein Affiliate-Code garantiert keinen Rabatt."
+      ],
       "sections": [
         {
-          "title": "Eine Katalognummer kennzeichnet die Seite",
-          "text": "CNBuyCha gibt jeder Produktseite eine eigene Katalognummer. Diese Nummer ist im Katalog nützlich, entspricht aber nicht unbedingt der Artikel-ID des Verkäufers."
+          "title": "Ein funktionierender Link ist erst die erste Prüfung",
+          "text": "Ein OOPBuy-Produktlink soll dich zum gewünschten Artikel führen. Die geöffnete Seite ist erst der Anfang. Du musst weiterhin prüfen, ob Produkt, Verkäuferangebot, ausgewählte Optionen und aktueller Preis zu den Erwartungen aus dem Katalog oder Spreadsheet passen, in dem du den Fund entdeckt hast.\n\nOOPBuys Einsteigerleitfaden beschreibt die Produktsuche über Links oder Namen vor der Auswahl von Spezifikationen und Menge. Dieser Ablauf hängt von den verfügbaren Angaben des jeweiligen Angebots ab. Gehe nicht davon aus, dass jede Adresse aus einem Social-Media-Beitrag oder einer Marktplatzseite korrekt importiert oder ohne weitere Prüfung gekauft werden kann.\n\nBewahre den ursprünglichen Quelllink neben der OOPBuy-Adresse auf. Wird ein Titel anders übersetzt, ein Bild geändert oder eine gespeicherte Seite nicht mehr geladen, hilft die Quelle bei der Identifizierung. Eine kurze Bezeichnung wie schwarze Alltagstasche reicht nicht, um mehrere ähnliche Angebote auseinanderzuhalten."
         },
         {
-          "title": "Der Verkäuferlink kennzeichnet den Artikel",
-          "text": "Bei einem Weidian-Angebot verwendet die Kaufschaltfläche die Artikel-ID aus der ursprünglichen Verkäufer-URL. Sie öffnet diesen Artikel in OOPBuy mit dem Affiliate-Einladungscode dieser Website."
+          "title": "Unterscheide Katalogreferenz und Produktkennung",
+          "text": "Unabhängige Kataloge vergeben häufig eigene Referenznummern für ihre Einträge. Der zugrunde liegende Marktplatz nutzt eine andere Kennung für das Quellangebot. Diese Zahlen erfüllen unterschiedliche Aufgaben und dürfen beim Öffnen oder Erstellen eines Kauflinks nicht vertauscht werden.\n\nIm Beispiel von OOPBuy Tab ist 3470 eine CNBuyCha-Katalogreferenz. Die Zahl 7876894732 ist die im Weidian-Produktpfad verwendete Quellkennung. Eine Katalogseite mit der Nummer 3470 bedeutet nicht, dass die zugehörige OOPBuy-Kaufadresse auf 3470 enden sollte.\n\nBeschrifte beim Speichern eines Funds die Felder eindeutig: Katalogreferenz, Quellmarktplatz, ursprünglicher Produktlink und OOPBuy-Produktlink. Bewahre vollständige Adressen statt bloßer Zahlen auf. Das hilft besonders bei unterschiedlichen URL-Formaten der Marktplätze oder wenn jemand einen Katalogbildschirm ohne den eigentlichen Produktlink teilt."
         },
         {
-          "title": "Prüfe die Seite nach dem Öffnen",
-          "text": "Vergleiche Titel, Verkäufer und Variante mit dem recherchierten Angebot. Wenn die Seite geändert wurde oder nicht verfügbar ist, kehre zum Katalog zurück und wähle bewusst ein anderes Angebot."
+          "title": "Lies den OOPBuy-Beispiellink richtig",
+          "text": "Ein beispielhafter Kaufpfad lautet https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5. Die Domain bezeichnet OOPBuy, der Produktpfad ein Weidian-Quellangebot und der abschließende Parameter einen Einladungscode. Die Zahl im Pfad gehört zum Quellproduktbeispiel und nicht zur eigenen Nummerierung des Katalogs.\n\nNutze die Adresse zum Verständnis des Aufbaus, nicht als Beweis für aktuellen Bestand, Preis, Verkäuferzuverlässigkeit oder Eignung. Öffne die aktuelle Seite und prüfe ihren Inhalt. Auch eine plausibel aussehende Adresse kann ein geändertes oder nicht verfügbares Angebot betreffen; der Produktpfad allein bestätigt nicht die gewünschten Bestelloptionen.\n\nDer Einladungsparameter gehört zum Affiliate-Link. OOPBuy Tab kann von einer entsprechenden Nutzung seiner Affiliate-Links profitieren. Seine Anwesenheit begründet keinen Rabatt, Gutschein oder besonderen Versandpreis für dich. Verlasse dich nur auf Angebote, die im aktuellen offiziellen Zahlungsvorgang ausdrücklich angezeigt werden und tatsächlich gelten."
+        },
+        {
+          "title": "Prüfe die Identität der geöffneten Seite",
+          "text": "Vergleiche die geladene Seite anhand mehrerer Merkmale mit dem Quellangebot. Sieh dir Produktbilder, wesentliche Gestaltungsdetails, verfügbare Optionen, Menge und gegebenenfalls Verkäuferangaben an. Titel können gekürzt oder übersetzt sein; ein gleicher Titel ist allein ein schwacher Nachweis.\n\nZwei Rucksäcke können beispielsweise ein ähnliches Frontfoto zeigen und sich dennoch in Innenfächern, Maßen oder Zubehör unterscheiden. Bestätige die Spezifikation, die deinen Kauf motiviert. Brauchst du ein bestimmtes Laptopfach oder einen Verschluss, suche ihn im tatsächlichen Angebot, statt aus ähnlichen Bildern auf denselben Aufbau zu schließen.\n\nAchte auf Seiten, die nach dem Verschwinden des ursprünglichen Angebots einen verwandten Artikel zeigen. Ist die Identität unklar, pausiere den Kauf, bewahre beide Links auf und frage nach. Akzeptiere einen Ersatz nicht stillschweigend wegen eines ähnlichen Vorschaubilds. Spätere Größen-, Kosten- und QC-Prüfungen setzen den richtigen Ausgangsartikel voraus."
+        },
+        {
+          "title": "Wähle vor dem Preisvergleich die Variante",
+          "text": "Wähle nach der Identifizierung des richtigen Angebots die tatsächliche Farbe, Größe, Ausführung und Menge, die du beurteilen möchtest. Ein angezeigter Einstiegspreis kann zu einer anderen Variante als dem ersten Bild gehören. Manche Angebote bündeln außerdem Zubehör, Einzelstücke oder unterschiedliche Packungsgrößen auf einer Seite.\n\nNotiere deine Auswahl in klaren Worten. Groß, Anthrazit, ein Stück ist hilfreicher als Option drei, besonders wenn die Reihenfolge der Auswahlfelder später geändert wird. Speichere Größentabellen oder Spezifikationsbilder, die deine Wahl erklären. Das erleichtert später den Vergleich zwischen Bestellung und Kaufabsicht.\n\nBetrachte OOPBuy Tabs USD-Katalogpreise als Schätzungen. Prüfe den aktuellen Variantenbetrag, angezeigte Inlandszustellung und Zahlungsdetails beim offiziellen Dienst. Internationale Fracht ist eine separate Budgetfrage. Ein Link zum richtigen Produkt schreibt weder den Katalogpreis fest noch macht er ihn zum Gesamtbetrag einschließlich Lieferung."
+        },
+        {
+          "title": "Kläre einen defekten oder unvollständigen Link",
+          "text": "Lädt ein Produkt nicht wie erwartet, gehe zur ursprünglichen Marktplatzseite zurück und kopiere seine Adresse erneut. Prüfe, ob du einen Artikellink, eine Shopstartseite, ein Suchergebnis oder eine Freigabeseite kopiert hast. Verkürzte Links können ähnlich wirken, ohne dasselbe zu bezeichnen.\n\nVersuche die vollständige Quelladresse über die offizielle OOPBuy-Suche oder Linkeingabe und prüfe das Ergebnis. Scheitert das weiterhin, notiere genaue Adresse, Fehlermeldung oder fehlende Angaben. Frage beim offiziellen Support, ob das konkrete Angebot verarbeitet werden kann, statt bei einem nicht unterstützten oder entfernten Produkt auf wiederholte Versuche zu setzen.\n\nÄndere nicht wahllos Zahlensegmente, bis irgendeine Seite lädt. Dadurch kannst du bei einem anderen Angebot landen und fälschlich glauben, den ursprünglichen Link repariert zu haben. Findest du ein alternatives Produkt, behandle es als neuen Kandidaten und wiederhole Identitäts-, Größen-, Varianten- und Kostenprüfung vollständig."
+        },
+        {
+          "title": "Teile Links mit hilfreichem Kontext",
+          "text": "Ein hilfreicher geteilter Produktlink enthält Artikelname, Quellmarktplatz, beabsichtigte Variante, Prüfdatum und wichtige Unsicherheiten. Sage dazu, wenn du einen Katalogeintrag teilst. Teile ebenso klar mit, wenn es sich um die aktuelle Kaufseite handelt. So weiß die nächste Person, welche Angaben noch geprüft werden müssen.\n\nPräsentiere Katalogbilder nicht als Nachweis des Lagerzustands einer Bestellung. OOPBuy Tab nutzt CNBuyCha-Quelldaten; seine importierten Bilder sind keine bestätigten QC-Fotos deiner eigenen Waren. Besprichst du eine persönliche Bestellung, halte diese Nachweise getrennt und entferne private Konto-, Adress- und Bestelldaten vor einer öffentlichen Veröffentlichung.\n\nKennzeichne Affiliate-Links offen. Ein Einladungscode darf nicht als garantierte Ersparnis dargestellt werden, wenn kein gültiges Angebot geprüft wurde. Verantwortungsvolles Teilen hilft, Produkt und Unsicherheiten zu erkennen, statt zu suggerieren, deine Erfahrung beantworte jede Frage zur künftigen Bestellung einer anderen Person."
+        },
+        {
+          "title": "Führe Kontoaktionen beim offiziellen Dienst aus",
+          "text": "Nutze https://oopbuy.com/login, wenn du auf dein Konto zugreifen möchtest, und prüfe die im Browser angezeigte Zieladresse. Ein Produktkatalog unterstützt die Suche; aktuelle Konto-, Bestell- und Zahlungsdaten prüfst du beim offiziellen Dienst.\n\nLies vor Eingabe von Zugangsdaten oder einer Zahlung die Linkadresse. Ein vertrauter Name in Seitentitel, Bild oder Einladungsnachricht belegt für sich allein nicht die Identität der Website. Bist du nach einer Weiterleitung unsicher, öffne die offizielle Website direkt und verwende dort den ursprünglichen Produktlink.\n\nSpeichere keine Passwörter oder Zahlungszugangsdaten in deiner Referenztabelle. Sie braucht nur Angaben zur Produktidentifizierung und zu deinem Entscheidungsstand. Entferne bei öffentlichen Auswahllisten auch persönliche Bestellreferenzen. So lassen sich nützliche Funde teilen, ohne Produktsuche und sensible Kontoinformationen zu vermischen."
+        },
+        {
+          "title": "Nutze einen wiederholbaren Ablauf vom Link zur Bestellung",
+          "text": "Verwende für jeden Kandidaten dieselbe Reihenfolge: Quelllink sichern, OOPBuy-Ergebnis öffnen, Produktidentität bestätigen, Variante wählen, Größe oder Spezifikationen prüfen und Gesamtkosten schätzen. Entscheide dann, ob genügend Informationen für eine Bestellung vorliegen. Konsequenz ist wertvoller als ein eiliger Durchlauf durch eine vertraut wirkende Seite.\n\nSpeichere nach dem Kauf die Bestellreferenz privat und vergleiche Lagerinformationen mit derselben Variantenaufzeichnung. Ein korrekter Link ersetzt keine Kontrolle der eingegangenen Waren. Weicht der Artikel ab, helfen gespeicherte Auswahl und Quelldaten, das Problem präzise zu erklären.\n\nPrüfe schließlich vor einem erneuten Kauf alles nochmals. Ein vor Monaten erfolgreich bestelltes Produkt kann sich bei Verfügbarkeit, Optionen, Preis oder Beschreibung ändern. Bewahre frühere Beobachtungen als hilfreiche Geschichte auf, behandle die aktuelle Seite aber als neue Kaufentscheidung. So werden Spreadsheet-Links zu einem überschaubaren Rechercheablauf statt zu einer Sammlung von Annahmen."
         }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "Offizielle OOPBuy-Website",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuy-Anmeldung",
+          "url": "https://oopbuy.com/login"
+        }
+      ],
+      "related": [
+        "oopbuy-spreadsheet-guide",
+        "oopbuy-price-check",
+        "oopbuy-sizing-guide"
       ]
     },
     {
       "slug": "oopbuy-price-check",
-      "tag": "BESSER VERGLEICHEN",
-      "title": "Vergleiche dasselbe Produkt, nicht nur den Preis",
-      "description": "Eine kurze Checkliste zum Vergleich zweier vielversprechender Funde.",
+      "tag": "Budgetplanung",
+      "title": "OOPBuy-Preisprüfung: Berechne die Kosten vor dem Kauf",
+      "description": "Prüfe einen OOPBuy-Produktpreis, vergleiche die genaue Variante und plane ein realistisches Budget für Inlandsversand, internationale Lieferung und weitere Kosten.",
+      "primaryKeyword": "OOPBuy Preisprüfung",
+      "secondaryKeywords": [
+        "OOPBuy-Gesamtkosten",
+        "OOPBuy-Versandschätzung",
+        "OOPBuy-Produktpreis"
+      ],
+      "takeaways": [
+        "Vergleiche vor den Preisen dieselbe Variante und Stückzahl.",
+        "Betrachte angezeigte USD-Preise als Schätzungen, getrennt von den vollständigen Kosten bis zum Erhalt der Bestellung.",
+        "Prüfe dein Budget nach den Lagermessungen und vor der internationalen Versandzahlung erneut."
+      ],
       "sections": [
         {
-          "title": "Gleiche die Optionen ab",
-          "text": "Vergleiche dieselbe Größe, Farbe, Stückzahl und enthaltenes Zubehör. Der niedrigste angezeigte Preis kann sich auf eine andere Option als deine gewünschte beziehen."
+          "title": "Beginne mit dem Preis, den du tatsächlich brauchst",
+          "text": "Eine OOPBuy-Preisprüfung sollte eine praktische Frage beantworten: Kannst du dir diesen Artikel einschließlich Lieferung an deine Adresse leisten? Ein niedriger Produktpreis beantwortet nur einen Teil davon. Deine Entscheidung hängt auch von genauer Variante, Menge, Verkäuferzustellung, internationalem Transport und weiteren beim Bezahlen oder am Ziel verlangten Beträgen ab.\n\nOOPBuy Tab ist eine unabhängige Entdeckungsseite, nicht die offizielle Einkaufsplattform. Die Katalogdaten stammen aus CNBuyCha, und angezeigte USD-Produktpreise sind Schätzungen statt vollständiger Lieferangebote. Suche im Katalog nach Kandidaten und prüfe vor dem Bezahlen das aktuelle Angebot auf der offiziellen OOPBuy-Produktseite.\n\nBeginne mit einem maximalen Betrag, den du für den gesamten Kauf ausgeben möchtest. Bei einem Budget von $80 solltest du nicht alle $80 für Waren verplanen und auf unbedeutende Versandkosten hoffen. Halte Spielraum für noch nicht festgestellte Kosten frei."
         },
         {
-          "title": "Beziehe weitere Kosten ein",
-          "text": "Vergleiche neben dem Artikelpreis auch den Inlandsversand und die voraussichtlichen Paketanforderungen. Bestätige die endgültige Zahlungsaufstellung in OOPBuy, statt eine Katalogschätzung als Angebot zu behandeln."
+          "title": "Prüfe die gewählte Variante statt der ersten Zahl",
+          "text": "Öffne das aktuelle Produktangebot und wähle die gewünschte Farbe, Größe, Spezifikation und Menge. Manche Seiten enthalten mehrere Produkte oder Ausführungen unter einer Adresse. Der niedrigste angezeigte Preis kann zu einer anderen Option als dem auffälligen Bild gehören. Ein kleines Zubehörteil und ein komplettes Set können nebeneinanderstehen, ohne gleich viel zu kosten.\n\nNotiere die gewählte Option genau wie angezeigt. Sichere Produktadresse, sichtbaren Verkäufernamen, Menge und aktuellen Warenzwischenbetrag. Zeigt die Bestellansicht eine Preisspanne, übertrage deren Untergrenze erst dann ins Budget, wenn sie nachweislich für deine Wahl gilt.\n\nPrüfe, ob der Mengenwähler Stückpreis oder Mindestbestellmenge verändert. Zwei gleich aussehende Angebote sind nicht direkt vergleichbar, wenn ein Preis mehrere Einheiten voraussetzt. Kläre mehrdeutige übersetzte Optionen vor dem Bezahlen; auch eine günstige falsche Variante bleibt der falsche Kauf."
         },
         {
-          "title": "Halte die Angaben fest",
-          "text": "Speichere den ursprünglichen Verkäuferlink und die ausgewählten Optionen. Diese Angaben helfen dir, Bestellfotos zu vergleichen und bei einer Supportanfrage eine Abweichung zu erklären."
+          "title": "Führe eine Kostenübersicht mit getrennten Positionen",
+          "text": "OOPBuys Hinweise für Erstkäufer trennen die erste Zahlung für Waren und Inlandsfracht von der späteren internationalen Fracht. Bilde diese Trennung in deiner Übersicht ab. Gib Waren, Zustellung vom Verkäufer zum Lager, internationalem Versand und Zusatzleistungen eigene Zeilen. Ergänze Zahlungs- oder Währungsgebühren nur, wenn sie tatsächlich im Zahlungsvorgang oder beim Anbieter erscheinen. Halte Zielsteuern und Bearbeitungsgebühren getrennt, bis verlässliche Informationen für Ziel und Dienst vorliegen.\n\nMarkiere jede Position als bestätigt, geschätzt oder unbekannt. Das ist hilfreicher, als allen Zahlen dieselbe Sicherheit zuzuschreiben. Ein bestätigter Warenzwischenbetrag kann neben geschätzter Fracht stehen, während eine Servicegebühr bis zum aktuellen Angebot unbekannt bleibt.\n\nVerfolge bei mehreren Produkten sowohl Artikel- als auch Paketkosten. Warenkosten gehören zum Artikel, gemeinsame Verpackungsleistungen möglicherweise zum Paket. Verteilte Gemeinschaftskosten solltest du als eigene Budgetmethode kennzeichnen. Sie entsprechen nicht zwangsläufig der Berechnung von OOPBuy oder dem Beförderer."
+        },
+        {
+          "title": "Halte Währungsumrechnung und Zahlungskosten sichtbar",
+          "text": "Eine umgerechnete USD-Anzeige erleichtert Produktvergleiche, garantiert aber nicht den endgültigen Betrag deiner Zahlungsmethode. Prüfe Währung und Zahlbetrag auf der tatsächlichen Bestätigungsseite. Bietet der Zahlungsanbieter eine Umrechnung an, vergleiche sie mit deinem aufgezeichneten Budget, statt eine unveränderte Übernahme der Katalogumrechnung anzunehmen.\n\nVerwende in der Übersicht eine Arbeitswährung und dokumentiere die Umrechnung anderer Beträge. Bewahre beispielsweise den Verkäuferpreis in Originalwährung in einem Feld und die USD-Schätzung in einem zweiten auf. So bleibt die ursprüngliche Referenz für eine spätere Nachrechnung erhalten.\n\nErfinde keine allgemeine OOPBuy-Wechselgebühr oder feste Zahlungsquote. Gebühren können vom aktuellen Zahlungsweg und den Kontooptionen abhängen. Die hilfreiche Prüfung ist konkret: Welcher Betrag wird für diese Zahlung in welcher Währung verlangt, und welche zusätzliche Gebühr legt der Anbieter tatsächlich offen?"
+        },
+        {
+          "title": "Schätze den Versand anhand eines realistischen Pakets",
+          "text": "OOPBuy stellt eine offizielle Versandschätzungsseite bereit. Nutze sie mit deinem Ziel und den vernünftig bestimmbaren Angaben zum geplanten Paket. Lies verfügbare Leistungsbeschreibungen, statt allein die niedrigste Zahl auszuwählen. Produktzulässigkeit, Paketmaße, Gewicht und Ziel beeinflussen, welche Optionen sinnvoll sind.\n\nBetrachte Gewicht und Maße vor der Lagerankunft als Annahmen. Das angegebene Kleidungsgewicht kann die Verkaufsverpackung ausschließen, während ein leichter, sperriger Artikel viel Raum beansprucht. Kläre die benötigten Rechnereingaben und bewahre sie neben dem Ergebnis auf, damit sich der Vergleich wiederholen lässt.\n\nBerechne ein zweites Szenario, wenn ein wichtiger Wert ungewiss ist. Vergleiche beispielsweise das erwartete Paket mit einer größeren Ausführung, die notwendige Schutzverpackung behält. Das prüft die Empfindlichkeit deiner Planung und ist keine Vorhersage. Passt der Kauf nur im optimistischsten Szenario ins Budget, brauchst du mehr Spielraum."
+        },
+        {
+          "title": "Rechne ein vollständiges Beispiel durch",
+          "text": "Angenommen, dein vorläufiger Warenkorb enthält ein Hemd für geschätzte $22 und eine Tasche für geschätzte $31. Die Warenschätzung beträgt $53. Du notierst anhand der Bestellansicht $5 Verkäuferzustellung und für ein beispielhaftes internationales Versandszenario $24. Der Zwischenbetrag liegt bei $82, noch vor möglichen Zusatzleistungen, Zahlungskosten und Zielgebühren.\n\nDiese Zahlen sind hypothetisch und beschreiben keine OOPBuy-Tarife. Sie zeigen, warum ein Warenkorb für $53 nicht automatisch ein Gesamtkauf für $53 ist. Bei einer Budgetobergrenze von $90 sind die verbleibenden $8 dein Spielraum für offene Kosten und kein bevorstehender Rabatt.\n\nÄndere nun das Szenario: Ein sperrigeres Paket erhöht die angenommene Fracht auf $34. Der Zwischenbetrag steigt vor offenen Kosten auf $92. Vor der Verpflichtung steht eine klare Entscheidung an: einen Artikel entfernen, das Budget bewusst erhöhen oder den Kauf stoppen. Die Übersicht macht Unsicherheit zu einem handlungsfähigen Vergleich."
+        },
+        {
+          "title": "Vergleiche Alternativen auf derselben Grundlage",
+          "text": "Vergleiche zwischen zwei Verkäufern dieselbe Produktkonfiguration und dasselbe erwartete Ergebnis. Notiere Größe, Materialbeschreibung, enthaltenes Zubehör, Menge und Verkäuferzustellung. Ein niedrigerer Artikelpreis kann weniger Teile oder weniger Angaben zu einer entscheidenden Spezifikation bedeuten.\n\nBerücksichtige die Qualität der Nachweise, ohne ihr einen erfundenen Geldwert zu geben. Eine klare Größentabelle und eine gute Produktbeschreibung erleichtern die Entscheidung; ein unklarer Eintrag erfordert zusätzliche Fragen. Katalogbilder dienen der Entdeckung und sind keine bestätigten Fotos deiner eigenen Lagerbestellung.\n\nBeispielsweise ergeben eine Option für $20 plus $6 Verkäuferzustellung und eine für $24 plus $2 Zustellung beide einen vorläufigen Zwischenbetrag von $26. Das belegt weder gleiche Qualität noch gleiche endgültige Versandkosten. Es beseitigt lediglich einen irreführenden Unterschied der beworbenen Preise und lässt die übrigen Fakten klarer beurteilen."
+        },
+        {
+          "title": "Bewerte Gutscheine, ohne das Budget von ihnen bestimmen zu lassen",
+          "text": "Eine Aktion hilft nur, wenn sie für deinen beabsichtigten Kauf gilt. Lies die aktuellen Bedingungen des konkreten Gutscheins: Einsatzbereich, Mindestbetrag, zulässige Versanddienste, Ablaufdatum und Kombinierbarkeit. Alte Werbetexte auf einem Bildschirmfoto begründen keinen aktiven Anspruch.\n\nBerechne den Rabatt erst nach Festlegung des Warenkorbs. Schaltet ein unnötiger Zusatzartikel einen Gutschein frei, vergleiche den gesamten neuen Betrag mit dem ursprünglichen. Ein zusätzlicher Kauf kann Warenkosten, Paketgewicht und Volumen erhöhen, auch wenn der Gutschein eine Rechnungsposition senkt.\n\nNotiere, ob ein Rabatt bereits in der Schätzung steckt. Dieselbe Ersparnis einmal im Rechner und ein zweites Mal im Spreadsheet abzuziehen erzeugt ein fiktives Budget. Zeigt der abschließende Zahlungsvorgang den erwarteten Abzug nicht, kläre die Abweichung vor der Zahlung."
+        },
+        {
+          "title": "Prüfe vor jeder Zahlungsentscheidung erneut",
+          "text": "Wiederhole die Preisprüfung, wenn bessere Informationen vorliegen: bei Auswahl der aktuellen Variante, vor der Kaufzahlung und sobald Lagermaße ein internationales Paketangebot ermöglichen. Eine Schätzung hilft bei Entscheidungen; sie verspricht nicht, dass spätere Informationen das Ergebnis unverändert lassen.\n\nBestätige vor dem Bezahlen ausgewählte Artikel, Mengen, Währung, Lieferadresse, Leistungen, tatsächlich angewandte Rabatte und aktuell fälligen Gesamtbetrag. Bewahre Bestellkennungen und relevante Belege auf, damit spätere Anpassungen dem richtigen Kauf zugeordnet werden können. Verlasse dich nicht auf einen erinnerten Wert von einer Produktkarte.\n\nEine einfache Entscheidungsgrenze lautet: Fahre nur fort, wenn Zahlbetrag und verbleibende Unsicherheiten zu deinem Budget passen. Könnte ein unbekannter Kostenpunkt die Entscheidung verändern, untersuche ihn zuerst. Nutze anschließend den Versandleitfaden zum Paketvergleich und den Lagerleitfaden, um zu verstehen, wann bessere Messwerte verfügbar werden."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Versandrechner",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-spreadsheet-guide"
+      ]
+    },
+    {
+      "slug": "oopbuy-warehouse-guide",
+      "tag": "Lager",
+      "title": "OOPBuy-Lagerleitfaden: Von der Ankunft bis zum Paketauftrag",
+      "description": "Erfahre, was du bei der Lagerankunft einer OOPBuy-Bestellung prüfen solltest, wie du Lagerfristen verfolgst und wann du über Rückgabe oder Versand entscheidest.",
+      "primaryKeyword": "OOPBuy Lagerleitfaden",
+      "secondaryKeywords": [
+        "OOPBuy-Lagerung",
+        "OOPBuy-Bestellung erhalten",
+        "OOPBuy-Lagerprüfung"
+      ],
+      "takeaways": [
+        "Verfolge das Eingangsdatum jedes Artikels separat und prüfe die aktuellen Lagerregeln.",
+        "Prüfe Fotos und Maße deiner eigenen Bestellung, bevor du Artikel zu einem Paket zusammenfasst.",
+        "Kläre Produktbedenken und Rückgabeberechtigung, bevor du den internationalen Versand freigibst."
+      ],
+      "sections": [
+        {
+          "title": "Betrachte das Lager als Entscheidungsphase",
+          "text": "In der Lagerphase lässt sich ein Fernkauf besser beurteilen. Du kannst den zu deiner Bestellung erfassten Artikel mit der beabsichtigten Option vergleichen, verfügbare Prüfinformationen ansehen und entscheiden, ob du ihn behältst, nachfragst oder gegebenenfalls eine Rückgabe beantragst. Auch die Paketplanung wird hier konkreter.\n\nFasse nicht alle Schritte im Wort angekommen zusammen. Verkäuferzustellung, Lagereingang, Prüfung, Einlagerung, Paketvorbereitung und internationaler Versand sind unterschiedliche Ereignisse. Lies den tatsächlichen Status im Konto und suche die zugeordnete Artikel- oder Paketkennung.\n\nBereite die Kontrollen am besten vor dieser Phase vor. Speichere ausgewählte Variante und wichtige Maße. Sobald der Lagereintrag verfügbar ist, vergleichst du ihn dann mit einer konkreten Erwartung, statt deine ursprüngliche Wahl mühsam zu rekonstruieren."
+        },
+        {
+          "title": "Führe für jeden Artikel einen eigenen Datensatz",
+          "text": "Lege ein Artikelprotokoll mit Bestellkennung, Produktlink, gewählter Farbe und Größe, Menge, Eingangsdatum, Prüfstatus und offenen Fragen an. Gib jedem Artikel eine eigene Zeile, auch wenn mehrere Produkte zusammen gekauft wurden. Ein einziger Einkauf kann zu getrennten Verkäuferpaketen und verschiedenen Lagerankunftsdaten führen.\n\nUnterscheide Bestellkennung, Verkäufer-Sendungsnummer und spätere internationale Paketnummer. Sie beantworten unterschiedliche Fragen. Soll der Support einen fehlenden Artikel untersuchen, hilft eine genaue Bestellreferenz mehr als ein Bildschirmfoto des gesamten Warenkorbs.\n\nNutze in deinem privaten Protokoll einfache Entscheidungsmarkierungen wie Prüfung nötig, Frage gesendet, behalten oder Rückgabe beantragt. Das sind eigene Organisationshilfen, keine offiziellen OOPBuy-Statusangaben. Sie machen offene Arbeit sichtbar. Auch nach mehreren Tagen solltest du sofort erkennen, welcher Artikel noch Aufmerksamkeit braucht und warum."
+        },
+        {
+          "title": "Verstehe die Lagerfrist ohne zu raten",
+          "text": "Der offizielle OOPBuy-Lagerhinweis nennt 90 kostenlose Tage ab dem Bestellstatus Received (erhalten). Notiere das Datum jedes Artikels, nicht nur das des neuesten Einkaufs einer Sammelbestellung. Prüfe aktuellen Hinweis und Konto, bevor du dich auf eine Lagerdauer verlässt.\n\nDer speziellere Hinweis zu individuellen Logistikleistungen erlaubt eine kostenpflichtige Verlängerung für 10 CNY um höchstens 30 weitere Tage, insgesamt maximal 120 Tage. Danach können Waren als aufgegeben gelten und entsorgt werden. Das sind weder 120 kostenlose Tage noch unbegrenzt verlängerbare Fristen.\n\nSetze dir rechtzeitig vor der normalen kostenlosen Frist eine Erinnerung, damit Zeit für Fragen und Versandvorbereitung bleibt. Brauchst du eine Verlängerung, prüfe die aktuelle Verfügbarkeit für genau deinen Artikel und lass dir das neue Datum bestätigen. Bloßes Liegenlassen im Lager kauft nicht automatisch zusätzliche Lagerzeit."
+        },
+        {
+          "title": "Prüfe die Nachweise deiner Bestellung",
+          "text": "Öffne die Prüfinformationen des genauen Artikels im Konto. Vergleiche sichtbare Farbe, Etiketten, Größenmarkierung, Menge und enthaltene Komponenten mit deinen gespeicherten Bestelldaten. Suche in den tatsächlich verfügbaren Bildern nach offensichtlichen Zustandsproblemen. Verdeckte oder unscharfe Details bleiben ungeklärt und sind nicht automatisch bestanden.\n\nEin OOPBuy-Tab-Katalogbild belegt nicht den Zustand deines Lagerartikels. Der unabhängige Katalog verwendet CNBuyCha-Quelldaten, und seine Bilder sind keine bestätigten bestellspezifischen QC-Fotos. Halte Entdeckungsbilder und eigene Bestellnachweise getrennt.\n\nPrüfe jeweils einen Artikel und notiere Fragen bei geöffnetem Bild. Eine konkrete Notiz wie linke Ärmelnaht nicht sichtbar lässt sich leichter bearbeiten als Qualität ungewiss. Ziel ist zu erkennen, was du prüfen kannst und was eine weitere Kontrolle braucht."
+        },
+        {
+          "title": "Fordere ein entscheidungsrelevantes Maß an",
+          "text": "Entscheiden Passform oder Abmessungen darüber, ob du einen Artikel behältst, bestimme genau die benötigte Messung. Bei Kleidung kann das flache Brustbreite oder Kleidungsstücklänge zwischen definierten Punkten sein. Bei einem Aufbewahrungszubehör vielleicht die nutzbare Innenöffnung statt der Außenbreite.\n\nPrüfe vor der Anfrage, welche zusätzlichen Prüf- oder Messleistungen für deine Bestellung aktuell angeboten werden und was sie kosten. Eine allgemeine Prüfung umfasst nicht automatisch jede gewünschte Messung, Funktionsprüfung oder Materialbestätigung. Frage, ob das Lager die konkret beschriebene Kontrolle ausführen kann.\n\nEine hilfreiche Anfrage nennt Artikel, Messpunkte und benötigten Nachweis. Beispielsweise: Bitte das Band von der oberen Schulternaht bis zum unteren Saum zeigen, während das Kleidungsstück flach liegt. Vergleiche das Ergebnis nach derselben Methode mit einem ähnlichen eigenen Stück; unterschiedliche Methoden können eine scheinbare Abweichung erzeugen."
+        },
+        {
+          "title": "Entscheide über Rückgaben vor der Paketplanung",
+          "text": "Weicht der Artikel von der Bestellung ab oder möchtest du ihn nicht mehr, prüfe sofort die geltenden Rückgaberegeln. Berechtigung, Zeitfenster, Verkäufermitwirkung, Artikelzustand und Rücktransportkosten müssen für diese Bestellung geklärt werden. Eine Lagerfrist schafft nicht automatisch ein ebenso langes Rückgabefenster.\n\nLass den Artikel während der Klärung unverändert. Das Entfernen von Verpackung, Etiketten oder anderen Teilen kann je nach Anforderungen die Rückgabe beeinträchtigen. Frage bei Unsicherheit vor einer Freigabe den Support. Gib einen ungeklärten Artikel nicht nur deshalb international zum Versand, um die Sammelbestellung abzuschließen.\n\nSende eine knappe Anfrage mit Bestellkennung, konkretem Problem und Nachweisen. Nenne das gewünschte Ergebnis, etwa eine Rückgabeprüfung oder die Suche nach einem fehlenden Teil. Verfolge anschließend Antwort und eigene nötige Schritte, statt den Antrag selbst mit einer abgeschlossenen Rückgabe gleichzusetzen."
+        },
+        {
+          "title": "Entscheide, welche Artikel gemeinsam versandbereit sind",
+          "text": "Die Zusammenfassung beginnt mit den Artikeln, die du behalten möchtest. Vergleiche Bereitschaft, physische Eigenschaften und Eignung für aktuell verfügbare Versanddienste an dein Ziel. Ein kleines weiches Kleidungsstück und ein zerbrechlicher formstabiler Gegenstand können unterschiedlichen Schutz benötigen, auch wenn beide in denselben Karton passen.\n\nPrüfe, ob Warten auf einen späteren Einkauf für den ältesten Lagerartikel sinnvoll ist. Ein theoretisch niedrigerer Stückpreis hilft nicht, wenn die Verzögerung Lagerprobleme erzeugt oder deinen Termin verfehlt. Setze einen Stichtag für weitere Käufe und plane mit den tatsächlich fertigen Waren.\n\nAktualisiere die Versandschätzung anhand verfügbarer Gewichte und Maße. Frage nach, wenn unklar ist, ob ein Gewicht Artikel, Verkaufsverpackung oder vorbereitetes Paket beschreibt. Deine Entscheidung braucht vergleichbare Eingaben. Das günstigste vorläufige Angebot ist nicht zwangsläufig der Endpreis der verpackten Sendung."
+        },
+        {
+          "title": "Schreibe Verpackungsanweisungen mit klaren Prioritäten",
+          "text": "Benenne, welche Verpackung du behalten möchtest und warum. Gehört der Originalkarton zum Geschenk oder schützt er eine empfindliche Form, sage das ausdrücklich. Überlegst du, unnötige Außenverpackung entfernen zu lassen, bestätige die Verfügbarkeit und verstehe den möglichen Schutzverlust. Vermeide bloße Anweisungen wie so klein wie möglich machen.\n\nOrdne jede Anweisung einer Artikelkennung zu. Eine gemischte Sammelbestellung braucht genug Details, damit eine Bitte zu einem Paar Schuhe nicht versehentlich auf alles angewendet wird. Prüfe Zusatzkosten optionaler Verpackungsleistungen sowie ihren Einfluss auf Endgewicht und Maße.\n\nKontrolliere vor dem Auftrag Artikelliste, Lieferadresse, gewählten Dienst, Deklarationsdaten und fällige Beträge. Gib wahrheitsgemäße Produktinformationen an und befolge die aktuellen Anforderungen für Ziel und Versandweg. Nach Verlassen der Lagerphase wird es erheblich schwieriger, übersehene Größen- oder Verpackungsprobleme zu korrigieren."
+        },
+        {
+          "title": "Schließe den Ablauf nach dem Lagerauftrag ab",
+          "text": "Bewahre die Paketreferenz bei den enthaltenen Artikeldatensätzen auf. So entsteht eine klare Verbindung zwischen Produktbestellung und internationaler Sendung. Speichere endgültige Artikelliste und bestätigte Verpackungsentscheidungen, damit du den Inhalt bei Ankunft prüfen kannst.\n\nBleibt ein Artikel zurück, halte Lagerdatum und nächsten Schritt sichtbar. Ein eingereichtes Paket bedeutet nicht, dass das restliche Konto erledigt ist. Prüfe nach der Versandvorbereitung die Lagerliste auf Artikel, die noch auf eine Entscheidung, Verkäuferantwort oder ein separates Paket warten.\n\nDer Lagerablauf ist abgeschlossen, wenn jeder Artikel ein bewusstes Ergebnis hat: versandt, auf einen dokumentierten Schritt wartend oder in einem bestätigten Rückgabeprozess. Für die nähere Beurteilung von Nachweisen nutze den QC-Fotoleitfaden. Die Leitfäden zu Sammelbestellungsverpackung und Verfolgung helfen, dieselben Artikeldaten im nächsten Logistikschritt weiterzuführen."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Lagerregeln",
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+        },
+        {
+          "label": "OOPBuy-Prüfinformationen",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        }
+      ],
+      "related": [
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-returns-refunds",
+      "tag": "Kundendienst",
+      "title": "OOPBuy-Rückgaben und Erstattungen: Voraussetzungen, Nachweise und nächste Schritte",
+      "description": "Erfahre, was du vor einer OOPBuy-Rückgabe prüfen solltest, wie du Probleme dokumentierst und warum Rückgabefreigabe und Erstattung getrennte Phasen sind.",
+      "primaryKeyword": "OOPBuy Rückgaben und Erstattungen",
+      "secondaryKeywords": [
+        "OOPBuy-Erstattung",
+        "OOPBuy-Rückgaberegeln",
+        "OOPBuy-Rückversand"
+      ],
+      "takeaways": [
+        "Prüfe die Rückgabebedingungen sofort nach der Einlagerung; Lagerzeit ist kein Rückgabefenster.",
+        "Bewahre während der Rückgabeprüfung Etiketten, Verpackung und bestellspezifische Nachweise auf.",
+        "Erfrage die tatsächlichen Rückgabekosten und unterscheide freigegebene Erstattung und eingegangenes Geld."
+      ],
+      "sections": [
+        {
+          "title": "Bestimme vor dem Erstattungsantrag die Phase",
+          "text": "Eine Frage zur OOPBuy-Erstattung kann verschiedene Situationen betreffen: einen noch nicht vom Verkäufer versandten Kauf, einen Lagerartikel, eine Rücksendung zum Verkäufer oder ein international zugestelltes Paket. Identifiziere zuerst den genauen Artikel und seine aktuelle Phase. Der nächste Schritt hängt vom bereits Geschehenen ab.\n\nÖffne den offiziellen Bestelldatensatz, notiere Kennung und letzten Status und kläre, ob es um Stornierung, Umtausch, Rückgabe oder ein Problem nach der Zustellung geht. Eine passende Anfrage verringert das Risiko, dass eine allgemeine Nachricht eine Antwort auf eine andere Frage auslöst.\n\nOOPBuy Tab ist eine unabhängige Ratgeber- und Entdeckungsseite und kann weder Rückgaben freigeben noch auf dein Konto zugreifen. Stelle den Antrag über den offiziellen OOPBuy-Bestell- oder Kundendienstkanal. Halte die Kommunikation möglichst bei der betroffenen Bestellung, damit Nachweise und Entscheidung zusammenbleiben."
+        },
+        {
+          "title": "Prüfe Zeitfenster und Bedingungen sofort",
+          "text": "Der offizielle Hinweis zu Rückgaben und Erstattungen beschreibt unter Bedingungen ein Antragsfenster von fünf Tagen beziehungsweise 120 Stunden nach Stocked in, beginnend mit der nächsten Stunde nach dem Statuswechsel. Er verweist außerdem auf sieben Tage nach bestätigter Annahme. Verkäuferunterstützung und ein wiederverkaufsfähiger Zustand sind erforderlich; ein fristgerechter Antrag macht nicht jeden Artikel berechtigt.\n\nLies die aktuellen Regeln und prüfe zeitnah die Fristen deiner Bestellung. Warte nicht auf das Ende der Lagerdauer. Lagerung und Rückgabeberechtigung sind unterschiedliche Angelegenheiten und ihre Zeitläufe gehören getrennt in deine Notizen.\n\nEinige Kategorien und Zustände sind ausgeschlossen, darunter bestimmte Sonderanfertigungen und Artikel ohne erforderliche Verpackung oder Etiketten. Liegt die Bestellung bereits außerhalb der Bedingungen, frage nach einer freiwilligen Prüfung durch den Verkäufer, statt einen Standardanspruch anzunehmen. Nach dem veröffentlichten Hinweis bleibt seine Zustimmung notwendig."
+        },
+        {
+          "title": "Bündele Nachweise zu einem klaren Problem",
+          "text": "Speichere Bestelldetails, die deinen Kauf belegen: Produktlink, gewählte Größe oder Farbe, Menge und relevante Beschreibung. Sammle anschließend Nachweise des konkreten Problems. Ein Etikettenfoto kann eine falsche Größe stützen; eine klare Nahaufnahme und eine Übersicht zeigen einen Fleck und seine Position am Kleidungsstück.\n\nBeschreibe den Unterschied präzise. Marineblau bestellt, Etikett mit Schwarz erhalten ist hilfreicher als Artikel schlecht. Ist ein Maß wichtig, zeige Messmethode und Vergleichspunkt. Eine vage Passformerwartung lässt sich schwerer beurteilen als eine dokumentierte Abweichung von der gewählten Spezifikation.\n\nNutze Fotos deiner eigenen Bestellung oder des tatsächlich erhaltenen Artikels. Entdeckungsbilder aus Spreadsheet oder Katalog belegen keinen Paketzustand. Bewahre möglichst Originaldateien auf und vermeide Bearbeitungen, die Umfeld, Artikelkennung, Etikett oder vollständiges Problemausmaß verdecken."
+        },
+        {
+          "title": "Trenne Servicegebühren vom Rücktransport",
+          "text": "Der offizielle Hinweis erlässt die Rückgabe- oder Umtauschservicegebühr für den ersten Vorgang eines Kalendermonats. Das verspricht kein kostenloses Porto. Weitere Anträge aus persönlichen Gründen können eine Servicegebühr von 5 RMB und zusätzliche Inlandstransportkosten verursachen.\n\nBitte für deinen konkreten Antrag um ein aufgeschlüsseltes Angebot. Der veröffentlichte Hinweis beschreibt die Behandlung ursprünglicher Verkäuferfracht unterschiedlich; berechne deshalb keinen allgemeingültigen Rückgabebetrag aus einem isolierten Satz. Bestätige erwartete Warenrückzahlung, Transportkosten, mögliche Servicegebühr und die jeweils zahlende Partei.\n\nVergleiche anschließend das Nettoergebnis. Eine hypothetische Warenrückzahlung von $18 mit bestätigten Rückgabekosten von $7 lässt vor weiteren Anpassungen $11 übrig. Das sind Beispielzahlen, keine OOPBuy-Tarife. Die tatsächliche Rechnung hilft zu entscheiden, ob du eine freiwillige Rückgabe fortsetzt oder einen ansonsten akzeptablen Artikel behältst."
+        },
+        {
+          "title": "Formuliere einen umsetzbaren Antrag",
+          "text": "Halte die erste Anfrage kurz genug für eine zügige Prüfung, ohne Wesentliches wegzulassen. Nenne Bestellkennung, Artikel, Variante, relevante Daten, Problem und gewünschtes Ergebnis. Füge die stärksten Nachweise statt Dutzender unzusammenhängender Bildschirmfotos bei. Unterscheide getrennte Probleme mehrerer Artikel eindeutig.\n\nErkläre beispielsweise, dass das Lageretikett eine andere Größe als die bezahlte Bestellung zeigt, nenne beide Größen und bitte um Rückgabeprüfung oder korrekten Ersatz. Hast du nur deine Meinung geändert, sage das ehrlich. Ein unzutreffender Mangelgrund kann die Nachweisprüfung erschweren.\n\nKläre nächsten Schritt, gegebenenfalls erforderliche Zahlung und ob der Artikel unverändert bleiben soll. Befolge Kontoanweisungen zu ausreichendem Guthaben oder Zahlung, wenn bestätigte Rückgabekosten anfallen. Notiere Antwort und Frist und kontrolliere weiterhin, ob Fragen deine Reaktion erfordern."
+        },
+        {
+          "title": "Verfolge die Rückgabe als Ablauf statt als einzelnen Knopf",
+          "text": "Eingereichter Antrag, genehmigte Rückgabe, Rückversand zum Verkäufer, Verkäufereingang und abgeschlossene Erstattung sind getrennte Meilensteine. Speichere die Bestätigung des jeweils erreichten Schritts. Der Eingang deiner Nachricht beim Support bedeutet nicht, dass der Verkäufer den Artikel angenommen hat.\n\nFüge einen Artikel während der Lager-Rückgabeprüfung keinem internationalen Paket hinzu und erlaube keine zustandsrelevanten Änderungen. Halte ihn eindeutig identifizierbar und bewahre erforderliche Verpackung und Komponenten. Ändert sich dein Plan, bestätige zuerst den Status, bevor du widersprüchliche Anweisungen gibst.\n\nFrage beim Umtausch, was bei Nichtverfügbarkeit des Ersatzes passiert und ob weitere Transportkosten anfallen. Prüfe einen eingetroffenen Ersatz als neue Entscheidung, statt das frühere Problem automatisch als erledigt anzusehen. Aktualisiere das Protokoll, damit du nicht versehentlich den ursprünglichen Artikel versendest oder den Ersatz aus den Augen verlierst."
+        },
+        {
+          "title": "Unterscheide Erstattungsfreigabe und Geldeingang",
+          "text": "Notiere bei bestätigter Erstattung Betrag, Währung, Ziel und Referenz. Prüfe, ob der Datensatz eine OOPBuy-Guthabenanpassung oder eine Rückzahlung auf eine Zahlungsmethode betrifft. Das sind verschiedene Ergebnisse; Kontoguthaben ist nicht gleich bereits verfügbares Geld auf deinem Bankkonto.\n\nDer offizielle Erstattungshinweis nennt für Bankkarten einen erwarteten Abrechnungszeitraum von 7–15 Tagen nach Bestätigung, abhängig von der Bank. Betrachte das als Schätzung dieses Hinweises, nicht als Garantie oder universellen Zeitplan für jede Zahlungsart. Frage beim Support, welche Phase für deine konkrete Erstattung gilt.\n\nIst der erwartete Zeitraum verstrichen, nenne bei einer Nachverfolgungsanfrage Erstattungsreferenz und Bestätigungsdatum. Vergleiche ursprüngliche Zahlungs- und Erstattungswährung, bevor du eine Differenz zum Fehler erklärst. Lass unerklärte Abzüge erläutern, statt Gebühren zu erfinden oder die vollständigen Kaufkosten als erstattungsfähig anzunehmen."
+        },
+        {
+          "title": "Handle nach internationaler Zustellung zeitnah",
+          "text": "Eine internationale Rückgabe ist aufwendiger als eine Rückgabe aus dem Lager. Laut offizieller Regel trägt der Kunde den Rückversand nach China und zusätzliche rückgabebezogene Kosten; zugleich müssen die geltenden Bedingungen erfüllt sein. Hole vor jeder Rücksendung schriftliche Anweisungen und eine klare Kostenbewertung ein.\n\nIst ein zugestelltes Paket beschädigt, unvollständig oder falsch, bewahre Außenverpackung, Versandetikett, Artikelliste und relevante Fotos auf. OOPBuys Hinweis zu Problemen nach der Zustellung enthält kurze Melde- und Nachweisfristen. Kontaktiere deshalb sofort den offiziellen Support, statt lange zu überlegen, ob das Problem schwer genug wiegt.\n\nBei einem vermuteten Paketgewichtsproblem verlangt der Hinweis ausdrücklich Wiegenachweise vor dem Öffnen. Dokumentiere allgemein den Erhalt möglichst zeitnah und befolge die Zustellverfahren des Beförderers. Entsorge keine Verpackung und versuche keine Reparatur, solange Nachweise gebraucht werden. Eine Meldung startet eine Prüfung und garantiert keine erfolgreiche Entschädigung."
+        },
+        {
+          "title": "Vermeide unnötige Rückgabeentscheidungen beim nächsten Kauf",
+          "text": "Ein Großteil der Rückgabevorbereitung geschieht vor dem Bedarf. Prüfe aktuelle Variante, relevante Maße und internationale Fracht und sichere die ursprünglichen Angebotsdaten vor der Zahlung. Diese Schritte verringern Probleme durch falsche Optionen oder erst später erkannte Budgetüberschreitungen beim Versand.\n\nPrüfe im Lager eigene Nachweise zeitnah und fordere nötige Messungen an, solange Entscheidungszeit bleibt. Bist du unsicher, verschiebe Verpackungsentfernung und Paketauftrag bis zur Klärung. Eine klare Behalten- oder Rückgabeentscheidung ist wertvoller als eine unvollendete Sammelbestellung im Lager.\n\nDer abschließende Datensatz sollte das Ergebnis zeigen: Artikel behalten, Ersatz akzeptiert, Rückgabe abgeschlossen oder Erstattung am angegebenen Ziel erhalten. Bleibt etwas offen, notiere nächsten Schritt und verantwortliche Partei. Baue diese Prüfpunkte mithilfe der Lager- und QC-Leitfäden von Anfang an in künftige Käufe ein."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        },
+        {
+          "label": "OOPBuy-Bestell- und Paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy-Probleme nach der Zustellung",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-warehouse-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-price-check"
+      ]
+    },
+    {
+      "slug": "oopbuy-tracking-guide",
+      "tag": "Lieferung",
+      "title": "OOPBuy-Sendungsverfolgung: Bestell- und Paketmeldungen richtig lesen",
+      "description": "Verstehe die OOPBuy-Verfolgung, unterscheide Verkäuferzustellung und internationalen Versand und sammle die richtigen Nachweise, wenn ein Paket Hilfe braucht.",
+      "primaryKeyword": "OOPBuy Sendungsverfolgungsleitfaden",
+      "secondaryKeywords": [
+        "OOPBuy-Sendungsverfolgung",
+        "OOPBuy-Bestellstatus",
+        "OOPBuy-Paketverfolgung"
+      ],
+      "takeaways": [
+        "Prüfe, ob du eine Einkaufsbestellung oder ein internationales Paket ansiehst.",
+        "Verfolge die genaue Paketreferenz und Beförderungsereignisse, statt jedem Status dieselbe Bedeutung zuzuschreiben.",
+        "Sende bei nötiger Klärung einen knappen Zeitverlauf und das letzte bestätigte Ereignis."
+      ],
+      "sections": [
+        {
+          "title": "Bestimme zuerst, welchen Weg du verfolgst",
+          "text": "OOPBuy-Einkäufe haben zwei Lieferphasen: Der Verkäufer schickt Waren zum Lager in China, anschließend reist ein beauftragtes internationales Paket an dein Ziel. Der Status einer versandten Bestellung kann daher Verkäuferversand beschreiben und nicht ein bereits zu dir nach Hause fahrendes Paket.\n\nDer offizielle Statusleitfaden unterscheidet Einkaufs- und Paketaufträge. Shipped bezeichnet im Einkaufsablauf den Verkäuferversand und im Paketablauf die Übernahme durch den Beförderer. Prüfe vor der Interpretation immer Seitenkontext und Kennung. Diese eine Unterscheidung erklärt viele scheinbar widersprüchliche Verfolgungsmeldungen.\n\nStelle dir eine konkrete Frage: Warte ich auf die Ankunft eines Produkts im Lager, auf die Paketvorbereitung dort oder auf die Zustellung durch einen Beförderer? Notiere die Antwort bei der passenden Referenz. So untersuchst du die richtige Phase, statt auf einer internationalen Verfolgungsseite nach einem Inlandskauf zu suchen, der noch kein internationales Paket ist."
+        },
+        {
+          "title": "Bewahre die richtigen Kennungen zusammen auf",
+          "text": "Verknüpfe in einem Datensatz die Einkaufsbestellung mit dem späteren Paket, das sie enthält. Speichere Bestellkennung, verfügbare Verkäuferzustellreferenz, internationale Paket- oder Frachtbriefnummer, gewählten Dienst und Versanddatum. Werden mehrere Bestellungen kombiniert, liste sie unter diesem Paket für die spätere Inhaltsprüfung auf.\n\nDer offizielle Einsteigerleitfaden verweist zur Verfolgung auf My Waybill und Waybill Details. Nutze die aktuelle Kontonavigation und die Informationen deines tatsächlichen Pakets. Ein Bildschirmfoto ohne Kennung lässt sich schwer einordnen, wenn mehrere Sendungen unterwegs sind.\n\nKopiere Sendungsnummern sorgfältig und bewahre den daneben genannten Beförderer auf. Eine Paketnummer aus einer Ansicht ist nicht zwangsläufig mit jeder Beförderungsreferenz austauschbar. Entsteht bei einer Übergabe eine weitere Nummer, ergänze den bestehenden Datensatz, statt die Verbindung zur ursprünglichen Bestellung durch eine isolierte neue Notiz zu verlieren."
+        },
+        {
+          "title": "Lies Lagerstatus als Arbeitsschritte",
+          "text": "Die Zustellbestätigung des Verkäufers kann vor Lagerprüfung und Einlagerung eintreffen. Der offizielle Bestellstatusleitfaden trennt bestätigte Annahme von späteren Prüf- und Lagerschritten. Ein Ankunftsscan bedeutet daher nicht zwangsläufig, dass der Artikel schon einem internationalen Paket hinzugefügt werden kann.\n\nSuche nach Kontonachrichten, die Handeln erfordern. Eine Nachzahlung oder Bestätigungsanfrage kann den Einkauf bis zu deiner Antwort aufhalten. Prüfe Anfrage und Erklärung, statt jeden unveränderten Status als Transportverzögerung zu behandeln. Verstehst du die verlangte Handlung nicht, frage zu genau dieser Bestellung nach.\n\nNutze die Lagerphase auch für die Artikelprüfung. Bestätige Variante, verfügbare Prüffotos und offene Bedenken vor dem Auftrag. Logistischer Fortschritt bestätigt weder Passform noch Leistung oder Echtheit. Ein Produkt kann korrekt durch den Transportprozess laufen und trotzdem eine separate Kaufentscheidung von dir benötigen."
+        },
+        {
+          "title": "Trenne Paketvorbereitung und Beförderung",
+          "text": "Nach einem internationalen Paketauftrag können noch mehrere Lagerarbeiten vor dem Transport nötig sein. Zahlung, Prüfung, Sortierung, Verpackung und Abholung sind nicht austauschbar. Der offizielle Leitfaden trennt fertige Verpackung von der Übernahme durch den Beförderer. Deshalb kann Vorbereitung sichtbar sein, bevor ein Transportscan erscheint.\n\nLies das neueste Ereignis und seinen Zeitstempel. Eine vorhandene Sendungsreferenz belegt allein nicht, dass ein Fahrzeug oder Flugzeug abgefahren ist. Nutze die konkrete Ereignisbeschreibung als Nachweis des Bekannten und fülle die Lücke nicht mit einem geratenen Standort.\n\nZeigt das Konto ein Zahlungs- oder Adressproblem, kläre das zuerst offiziell. Ist die Vorbereitung abgeschlossen, aber die Übernahme unbestätigt, frage, ob die Übergabe erfolgt ist. Diese Frage lässt sich deutlich besser beantworten als ein allgemeines Warum ist das Paket verspätet ohne Phasenangabe."
+        },
+        {
+          "title": "Deute Verfolgungslücken ohne erfundenen Zeitplan",
+          "text": "Beförderungsmeldungen erfassen Ereignisse, keine kontinuierliche Liveposition. Ein Zeitraum ohne neuen Scan verrät weder den genauen Paketstandort noch den Grund der fehlenden Aktualisierung. Vergleiche das letzte bestätigte Ereignis mit den Informationen des konkreten Versandwegs, bevor du Schlussfolgerungen ziehst.\n\nEs gibt keine einzelne verlässliche Tageszahl, ab der jedes OOPBuy-Paket verspätet ist. Ursprungsbearbeitung, gewählter Weg, Zielabwicklung, Feiertage und örtliche Zustellbedingungen variieren. Nutze aktuelle Schätzung und Bedingungen der Sendung und beachte, dass eine Schätzung kein garantierter Ankunftstag ist.\n\nFühre einen kurzen Zeitverlauf, statt ständig mehrere Seiten neu zu laden. Notiere Versanddatensatz, letztes Beförderungsereignis, Prüfdatum und relevante veröffentlichte Diensthinweise. Überschreitet die Lücke die Anleitung dieses Dienstes oder bleibt eine zugesagte Rückmeldung aus, hast du die Fakten für eine gezielte Supportanfrage bereit."
+        },
+        {
+          "title": "Reagiere sorgfältig auf Zoll- oder Dokumentenanfragen",
+          "text": "Erwähnt die Verfolgung Zoll oder Dokumente, lies die genaue Nachricht und kläre, wer Angaben verlangt. Nutze den Kontaktweg im offiziellen Konto oder den offiziellen Dienst des benannten Beförderers. Folge nicht allein deshalb einem unaufgefordert zugesandten Zahlungslink, weil du gerade ein Paket erwartest.\n\nSammle echte Kaufunterlagen: Artikelbeschreibungen, Mengen, Zahlungsbelege und relevante Paketreferenz. Gib korrekte Informationen an, wenn ein legitimes Verfahren sie verlangt. Ändere keine Beschreibung oder Werte, um ein gewünschtes Ergebnis zu erzwingen, und betrachte einen Spreadsheet-Preis nicht als Rechnung.\n\nFrage den Support bei unklarer Statussprache nach dem tatsächlich erforderlichen Schritt. Ein allgemeines Zollereignis belegt weder eine fällige Gebühr noch Beschlagnahme oder unmögliche Zustellung. Das sind getrennte Schlussfolgerungen, die Nachweise benötigen. Bewahre Kopien eingereichter Antworten und ihr Versanddatum auf."
+        },
+        {
+          "title": "Verfolge die Übergabe zur örtlichen Zustellung",
+          "text": "Prüfe beim Übergang in die örtliche Zustellung, ob die Paketdetails einen Zielbeförderer oder eine weitere Referenz nennen. Folge gegebenenfalls dem Link im verifizierten Sendungsdatensatz. Bewahre die ursprüngliche Referenz weiterhin auf, damit der Support lokale Ereignisse mit der internationalen Sendung verbinden kann.\n\nPrüfe die Paketadresse einschließlich Wohnungsangabe und Postleitzahl. Bei Zustellversuch oder Abholhinweis lies Optionen und Frist direkt beim tatsächlichen Beförderer. Zweiter Zustellversuch, Umleitung und Abholzeitraum sind nicht in allen Ländern und Diensten gleich.\n\nBenötigt der Beförderer eine Adressklärung, antworte über sein verifiziertes Verfahren und informiere gegebenenfalls OOPBuy. Dokumentiere Änderungen und Abholabsprachen. Ein praktischer Plan für die letzte Übergabe ist ebenso wichtig wie die Beobachtung der langen internationalen Strecke, besonders wenn niemand das Paket entgegennehmen kann."
+        },
+        {
+          "title": "Handle, wenn die Zustellung nicht stimmt",
+          "text": "Steht die Verfolgung auf zugestellt, aber du findest das Paket nicht, prüfe die Ereignisdetails auf Zustellfoto, Empfangsstelle, Paketfach oder anderen Ablageort. Bestätige die Sendungsadresse und kontaktiere den Zielbeförderer offiziell. Bitte um den Zustellnachweis, statt eine bestimmte Ursache anzunehmen.\n\nInformiere OOPBuy mit Paketkennung und Befördererantwort. Ist das Paket vorhanden, aber beschädigt oder unvollständig, bewahre Etikett, Verpackung, Artikelliste und Fotos auf. Die offiziellen Nachzustellungshinweise enthalten kurze Fristen; melde das Problem deshalb zeitnah und befolge die passenden Nachweisanweisungen.\n\nUnterscheide Zustell- und Artikelnachweise. Ein Befördererscan kann zeigen, wo das Paket abgelegt wurde; er beweist nicht, welche Einzelprodukte darin waren. Klare Unterlagen zu beiden Ebenen erleichtern die Prüfung ohne Spekulationen oder unpassende Produktbilder."
+        },
+        {
+          "title": "Sende dem Support einen prüfbaren Zeitverlauf",
+          "text": "Eine hilfreiche Verfolgungsanfrage nennt Paket, Dienst, Zielland, Versanddatum, letztes bestätigtes Ereignis und die offene Frage. Ergänze bereits erhaltene Befördereranfragen und ob du darauf reagiert hast. Veröffentliche vollständige Adresse oder persönliche Kennungen nicht in öffentlichen Gruppen.\n\nErkläre beispielsweise, dass das Konto die Übernahme durch den Beförderer zeigt, nenne das Datum des letzten Ereignisses und frage, ob der gewählte Dienst eine Nachforschung erlaubt. Wurde eine Aktualisierung zugesagt, ergänze Referenz und zugesagtes Datum. Frage nach deinem nächsten Schritt und einem sinnvollen Nachfasszeitpunkt.\n\nHalte neue Informationen bis zur Zustellung oder dokumentierten Lösung im selben Datensatz. Verfolgung ist am nützlichsten, wenn sie Entscheidungen unterstützt: auf eine Anfrage antworten, ein Paket abholen, Nachweise sichern oder Nachforschung beantragen. Nutze für künftige Sendungen vor der Wegwahl erneut die Versand- und Verpackungsleitfäden."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Bestell- und Paketstatus",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy-Lieferhinweis",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy-Probleme nach der Zustellung",
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-haul-packing"
+      ]
+    },
+    {
+      "slug": "oopbuy-haul-packing",
+      "tag": "Verpackung",
+      "title": "OOPBuy-Sammelbestellungen verpacken: Artikel schützen und Endkosten prüfen",
+      "description": "Plane eine OOPBuy-Sammelbestellung mit sinnvollen Verpackungsoptionen, Versandwegprüfungen und Probeverpackung, bevor du internationalen Versand beauftragst.",
+      "primaryKeyword": "OOPBuy Sammelbestellung verpacken",
+      "secondaryKeywords": [
+        "OOPBuy-Paketprobeverpackung",
+        "OOPBuy-Verpackung",
+        "OOPBuy-Sammelversand"
+      ],
+      "takeaways": [
+        "Wähle die Verpackung nach den zu schützenden Artikeln und einem geeigneten Versandweg.",
+        "Kartonentfernung und Komprimierung sind Abwägungen, keine automatischen Ersparnisse oder universellen Empfehlungen.",
+        "Probeverpackungsergebnisse setzen einen unveränderten Versandweg und Verpackungsaufbau voraus."
+      ],
+      "sections": [
+        {
+          "title": "Gib deiner Sammelbestellung ein klares Verpackungsziel",
+          "text": "Eine gute OOPBuy-Sammelplanung wägt Schutz, Paketgröße, Kosten und gewünschten Ankunftszustand ab. Diese Ziele können sich widersprechen. Ein Verkaufskarton erhält möglicherweise die Präsentation, braucht aber mehr Platz; seine Entfernung verringert vielleicht das Volumen, während das Produkt anderen Schutz benötigt.\n\nEntscheide zuerst, was bei jedem Artikel zählt. Ein Geschenk braucht vielleicht den Originalkarton, eine formstabile Tasche Unterstützung ihrer Form. Ein waschbares weiches Kleidungsstück hat andere Verpackungsanforderungen als ein empfindliches Accessoire. Übertrage keine pauschale Anweisung auf alles, nur weil sie in einem Video für fremde Einkäufe funktioniert hat.\n\nZiel ist ein geeignetes, klar beschriebenes Paket mit verständlichen Kosten. Der kleinste Karton ist nicht automatisch das beste Ergebnis; auch jede optionale Schutzleistung hinzuzufügen kann unnötig sein. Jede Wahl sollte eine konkrete Frage zu Artikel, Nutzung oder Transportbedarf beantworten."
+        },
+        {
+          "title": "Packe nur Artikel ein, die du behalten möchtest",
+          "text": "Schließe die Produktentscheidung vor der Verpackungsentscheidung ab. Prüfe Variante und eigene Lagerprüfnachweise und kläre Fragen zu Größe, Menge oder sichtbarem Zustand. Brauchst du ein zusätzliches Maß, fordere es vor der Freigabe des internationalen Versands an.\n\nDenke bei Verpackungsänderungen an die Rückgabeberechtigung. Das Entfernen erforderlicher Etiketten, Siegel, Zubehörteile oder Verpackung kann die geltenden Rückgabebedingungen beeinträchtigen. Frage zuerst zu einem ungeklärten Artikel nach. Platzsparendes Verpacken ist ein schlechter Tausch, solange du noch über seine Rückgabe entscheidest.\n\nErstelle eine endgültige Inhaltsliste mit Bestellreferenz bei jedem Artikel. Markiere, was im Lager bleiben soll, und setze einen Stichtag für zusätzliche Käufe. Das verhindert endloses Anwachsen und schafft eine feste Warengruppe für Versandvergleiche, Verpackungsaufträge und die Prüfung des fertigen Pakets."
+        },
+        {
+          "title": "Verstehe die Bedeutung von Gewicht und Maßen",
+          "text": "Ein Paket beansprucht Raum und hat ein Waagengewicht. Versanddienste können unterschiedliche Abrechnungsregeln verwenden; lies daher die Regel des tatsächlichen Versandwegs. Übernimm keinen Volumengewichtsdivisor von einem anderen Agenten, Beförderer oder Forum als maßgeblich für dein Angebot.\n\nLaut offiziellem OOPBuy-Einsteigerleitfaden hängt die endgültige Fracht von gemessenen Paketmaßen und Gewicht ab. Deine frühe Schätzung bleibt deshalb vorläufig, bis die relevanten verpackten Maße vorliegen. Lose Produktgewichte entsprechen nicht zwangsläufig dem Gewicht eines Kartons mit denselben Produkten und Schutzmaterial.\n\nEin leichter Artikel mit starrer, sperriger Verpackung kann beispielsweise stärker auf Paketgröße reagieren als ein kompakter, dichter Gegenstand. Das erklärt die Bedeutung der Verpackungswahl, sagt aber keine feste Ersparnis voraus. Vergleiche tatsächliche Angebote für zulässige Zusammenstellungen und bewahre die Berechnungsregel bei der Zahl auf."
+        },
+        {
+          "title": "Wähle Schutz für das Produkt statt für das Foto",
+          "text": "OOPBuys offizieller Verpackungshinweis beschreibt unter anderem Kartons, einfache Verpackung, Vakuumbeutel, Luftpolsterschutz und Stretchfolie. Die Verfügbarkeit hängt von Dienst und Paket ab. Betrachte das Menü als abzuwägende Auswahl, nicht als Liste von Aufrüstungen, die jede Sendung braucht.\n\nÜberlege, welchen Schaden du vermeiden möchtest. Ein weicher Beutel um Kleidung löst ein anderes Problem als Polsterung um einen zerbrechlichen Gegenstand. Ein Karton allein erklärt nicht die innere Abstützung; mehrere Wickelschichten ersetzen keine klare Anweisung zu einem empfindlichen Teil.\n\nFrage bei Unsicherheit über Material oder Konstruktion nach der Eignung einer verfügbaren Leistung. Komprimierung kann bei formabhängigen Artikeln oder empfindlichen Details ungeeignet sein. Wähle die Methode nicht allein anhand eines Katalogvorschaubilds, denn es zeigt möglicherweise nicht, wie starr, zerbrechlich oder sperrig der echte Artikel ist."
+        },
+        {
+          "title": "Entscheide ausdrücklich über Schuh- und Verkaufskartons",
+          "text": "Soll ein Schuhkarton oder eine andere Verkaufsverpackung bleiben, sage das beim betreffenden Artikel. Erwägst du Entfernung oder Faltung, prüfe die Verfügbarkeit und kläre, welche Hülle um das Produkt verbleibt. Originalverpackung kann für Präsentation, Aufbewahrung oder Schutz sinnvoll sein, auch ohne Wiederverkaufsabsicht.\n\nVergleiche erwarteten Vorteil und Folge. Eine entfernte Schachtel kann Volumen sparen, aber auch Unterstützung oder die gemeinsame Aufbewahrung zusammengehöriger Komponenten beseitigen. Ein Ersatzaußenkarton kann weiterhin nötig sein. Nach Berücksichtigung aller Verpackungsentscheidungen macht Kartonentfernung nicht jede Sammelbestellung günstiger.\n\nListe bei gemischten Sendungen die Entscheidung je Artikel auf: Geschenkkarton behalten, nur überflüssigen Versandkarton entfernen oder vor einer bestimmten Veränderung nachfragen. Vermeide die missverständliche Anweisung alle Kartons entfernen, wenn du tatsächlich nur eine entbehrliche Außenschicht meinst."
+        },
+        {
+          "title": "Prüfe die Versandverträglichkeit vor dem Zusammenfassen",
+          "text": "Ein Katalogeintrag belegt nicht die Beförderbarkeit auf deinem bevorzugten Versandweg. OOPBuys Verpackungshinweise nennen Beschränkungen für Batteriewege, und der Hinweis zum Einzelversand beschreibt Fälle, in denen Übergrößen separat verpackt werden müssen. Befolge die aktuellen Lagerkennzeichnungen und Bedingungen für deine tatsächlichen Waren.\n\nPrüfe die vollständige Inhaltsliste gegen den verfügbaren Dienst. Verändert ein Artikel die Zulässigkeit, vergleiche ein gemeinsames Paket mit separatem Versand anhand echter Angebote und desselben erforderlichen Schutzes. Zusammenfassung gewinnt nicht immer, denn zusätzliche Pakete und andere Wege können die Rechnung in entgegengesetzte Richtungen verändern.\n\nBeschreibe Produkte korrekt und prüfe unsichere Kategorien vor dem Kauf. Verpackung macht verbotene Waren nicht zulässig und umgeht keine Zielanforderungen. Kann ein Dienst einen Artikel nicht befördern, frage nach einer rechtmäßigen geeigneten Option oder einem passenden nächsten Schritt, solange er noch im Lager ist."
+        },
+        {
+          "title": "Nutze Probeverpackung für eine echte Unsicherheit",
+          "text": "Die offiziellen Anweisungen zur Paketprobeverpackung beschreiben die Auswahl geeigneter Lagerunteraufträge und die Übermittlung von Empfänger- und Verpackungsdaten. Die veröffentlichte Servicegebühr beträgt 20 CNY. Prüfe den aktuellen Kontoablauf und Betrag vor der Zahlung, besonders wenn deine Optionen vom Leitfaden abweichen.\n\nProbeverpackung hilft, wenn ein verpacktes Maß deine Versandentscheidung ändern könnte. Lege zuerst den gewünschten Aufbau fest. Laut offiziellem Hinweis hängt die daraus berechnete Fracht von unverändertem Versandweg, Verpackungsverfahren und unveränderten Details ab. Spätere Änderungen können Messergebnis und Endkosten verändern.\n\nLies vor dem Auftrag die Stornierungsbedingungen. Der Hinweis erlaubt Stornierung vor Entnahme aus dem Regal und beschreibt Einschränkungen danach; gehe daher nach Arbeitsbeginn nicht von erstattungsfähigen Gebühren aus. Frage bei unklarem Status nach. Probeverpackung ist eine bezahlte Vorbereitung, keine Garantie für Liefergeschwindigkeit oder völlige Transportsicherheit."
+        },
+        {
+          "title": "Schreibe Anweisungen, die jemand anderes umsetzen kann",
+          "text": "Verwende kurze artikelbezogene Anweisungen mit klarer Priorität. Identifiziere das Produkt über die Bestellreferenz, nenne zu behaltende oder zu entfernende Teile und erkläre Schutzbedarf. Hängt eine Anweisung von der Machbarkeit ab, bitte um Bestätigung, statt das Lager zwischen widersprüchlichen Zielen raten zu lassen.\n\nBitte beispielsweise, den gekennzeichneten Geschenkkarton zu erhalten, seinen Inhalt zusammenzulassen und geeigneten Außenschutz zu bestätigen. Bei einem anderen Artikel kannst du fragen, ob überflüssige Verkäuferverpackung ohne Änderung erforderlicher Produktverpackung entfernt werden kann. Das sind zu prüfende Anfragen, keine Annahmen über enthaltene Leistungen.\n\nGleiche die gewählten Oberflächenoptionen mit deiner schriftlichen Notiz ab. Eine Bitte um Kartonerhalt kann einer anderswo ausgewählten Entfernungsoption widersprechen. Prüfe Zusatzgebühren vor dem Auftrag und speichere bestätigte Entscheidungen. Klare Anweisungen verringern Unsicherheit besser als lange Absätze mit gemischten Vorlieben, Scherzen und mehreren Paketplänen."
+        },
+        {
+          "title": "Prüfe das fertige Paket und plane den Empfang",
+          "text": "Vergleiche vor der abschließenden Versandentscheidung Inhaltsliste, Empfängerdaten, Versandweg, Verpackungsaufbau, Maße und fälligen Betrag. Bestätige tatsächlich angewandte Rabatte und prüfe das Gesamtbudget erneut. USD-Produktpreise auf Entdeckungsseiten sind Schätzungen und enthalten nicht die vollständigen Kosten bis zum Erhalt der Sammelbestellung.\n\nBewahre Paketreferenz, Artikelreferenzen und Verpackungsbestätigungen gemeinsam auf. Bei Ankunft kannst du damit prüfen, ob alle erwarteten Teile und erforderlichen Verkaufsverpackungen vorhanden sind. Sichere bei Problemen zeitnah Zustellnachweise, statt Außenmaterialien sofort zu entsorgen.\n\nEin erfolgreicher Verpackungsplan endet mit Waren in akzeptablem Zustand zu bewusst freigegebenen Kosten. Nutze nach dem Versand den Verfolgungsleitfaden und bei Problemen vor dem Versand den Rückgabeleitfaden. Notiere für die nächste Sammelbestellung, welche Verpackungsentscheidungen hilfreich waren, damit die nächste Wahl auf Nachweisen aufbaut."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Verpackungshinweise",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy-Paketprobeverpackung",
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+        },
+        {
+          "label": "Regeln zum getrennten Versand",
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+        },
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-returns-refunds"
+      ]
+    }
+  ],
+  "guides": {
+    "guide": {
+      "sections": [
+        {
+          "title": "Beginne mit einer klaren Auswahlliste",
+          "text": "Wähle eine Produktkategorie und vergleiche einige passende Angebote. Notiere Produktname, Quelllink, ausgewählte Farbe, Größe und Menge. Der Katalogpreis ist eine hilfreiche erste Referenz; prüfe aktuelle Option und Betrag, sobald du das Produkt über OOPBuy öffnest. Halte Fragen zu Maßen, Materialien und enthaltenem Zubehör beim Artikel fest. Eine kleine Auswahl macht leichter erkennbar, wenn zwei ähnliche Bilder tatsächlich unterschiedliche Versionen oder Verkäuferoptionen zeigen."
+        },
+        {
+          "title": "Prüfe die Bestellung vor der Zahlung",
+          "text": "OOPBuys Einsteigerleitfaden beschreibt den Einkauf über die Plattform und den Wareneingang im chinesischen Lager. Produkt und chinesische Inlandszustellung werden zuerst bezahlt; internationaler Paketversand folgt später separat. Prüfe vor der Bestellung das geladene Angebot und gleiche Optionen mit deinen Notizen ab. Lies Betrag und Bedingungen dieses Artikels. Kläre ungewisse Größe, Menge oder Produktbeschränkung vor der Zahlung. Speichere die Bestellreferenz, damit spätere Lagerinformationen dem richtigen Kauf zugeordnet werden können."
+        },
+        {
+          "title": "Prüfe den Artikel, sobald Lagerinformationen vorliegen",
+          "text": "Verkäuferversand und Lagerbearbeitung sind getrennte Phasen. Lies bei verfügbaren Lagerinformationen den aktuellen Status deiner Bestellung und prüfe die Fotos. Vergleiche erhaltene Farbe, Größenetikett, Menge und sichtbaren Zustand mit deiner bestellten Option. Ist ein hilfreiches Detail nicht erkennbar, frage nach zusätzlichem Foto oder Messung und deren Kosten. Prüfe bei Problemen zeitnah die aktuellen Kundendienstmöglichkeiten, denn die Berechtigung hängt vom Artikel und seinen Umständen ab."
+        },
+        {
+          "title": "Entscheide zuletzt über das Paket",
+          "text": "Prüfe vor dem Paketauftrag jeden enthaltenen Artikel, Lieferadresse, Versandweg und Bedingungen. Erkunde mit der offiziellen Versandschätzung geeignete Optionen und prüfe anschließend die Angaben deines tatsächlichen Pakets. Verpackung, gemessene Maße und Inhalt können die Auswahl beeinflussen. Bewahre Bestell- und Paketreferenzen gemeinsam auf und nutze das offizielle Konto für Support und Verfolgung. Unsere ausführlichen Leitfäden erklären die Größen-, QC-, Kosten- und Verpackungsentscheidungen entlang dieses Ablaufs."
+        }
+      ],
+      "checks": [
+        "Gleiche geladenes Produkt, Variante und Menge mit dem Quellangebot ab.",
+        "Prüfe Lagernachweise und verfügbare Kundendienstschritte zeitnah.",
+        "Kontrolliere Adresse, Paketinhalt und Versandbedingungen vor dem Auftrag."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Einsteigerleitfaden",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy-Versandrechner",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ]
+    },
+    "qc": {
+      "sections": [
+        {
+          "title": "Kläre, welche Fotos du betrachtest",
+          "text": "Beginne bei der Bildquelle. Ein Katalog- oder Verkäuferfoto zeigt ein Angebot; Prüfbilder deiner eigenen Bestellung beziehen sich auf den dafür erhaltenen Artikel. Gleiche vor einer Entscheidung Bestellreferenz und Option ab. Die Produktbilder dieser Website stammen aus dem Katalog und sind als Produktfotos gekennzeichnet. Möchtest du deinen eingegangenen Artikel beurteilen, nutze die Nachweise im offiziellen OOPBuy-Konto."
+        },
+        {
+          "title": "Prüfe Identität, Menge und sichtbaren Zustand",
+          "text": "Lies bestellte Farbe, Größe, Version und Menge neben den Bildern. Betrachte zuerst den vollständigen Artikel und dann produktspezifisch wichtige Bereiche. Vergleiche bei Schuhen beide Exemplare und sichtbare Größenetiketten. Prüfe bei Kleidung Silhouette, Nähte und Aufdrucke. Kontrolliere bei Taschen und Accessoires Verschlüsse, Riemen und enthaltene Teile. Notiere die genaue Abweichung und das entsprechende Foto, statt dich auf einen allgemeinen Eindruck zu verlassen."
+        },
+        {
+          "title": "Stelle eine Frage, die ein weiteres Bild beantworten kann",
+          "text": "Eine hilfreiche Anfrage benennt eine Entscheidung und den nötigen Nachweis. Du könntest um ein lesbares Etikett, einen Blick auf einen verdeckten Verschluss oder eine Messung mit sichtbaren Bandendpunkten bitten. Bestätige Verfügbarkeit und angezeigte Gebühr vor dem Auftrag. Fotos haben Grenzen: Licht beeinflusst Farben, Perspektive verzerrt Proportionen, und Bilder belegen weder innere Funktion noch dauerhafte Haltbarkeit oder Materialzusammensetzung. Lass ungeklärte Fragen offen, statt zu raten."
+        },
+        {
+          "title": "Kläre Bedenken vor dem Paketauftrag",
+          "text": "Vergleiche Beobachtungen mit dem Angebot und entscheide zwischen Fortfahren, Rückfrage und Kundendienstkontakt. Bewahre gewählte Option, relevante Bilder und eine kurze Problembeschreibung auf. OOPBuy veröffentlicht Prüf- und Rückgabeinformationen; lies aktuelle Regeln und Bestelloptionen, bevor du ein bestimmtes Ergebnis annimmst. Der ausführliche QC-Artikel bietet eine Prüfliste nach Kategorien. Größen- und Rückgabeleitfaden erklären, wann eine weitere Messung oder zeitnahe Supportanfrage die Entscheidung verändern kann."
+        }
+      ],
+      "checks": [
+        "Nutze die Prüfnachweise der richtigen Bestellung und Variante.",
+        "Fordere zu einer konkreten offenen Frage eine klare Ansicht oder Messung an.",
+        "Dokumentiere sichtbare Probleme und prüfe vor dem Versand aktuelle Kundendienstoptionen."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Prüfinformationen",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "Individuelle OOPBuy-Logistikleistungen",
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+        },
+        {
+          "label": "OOPBuy-Rückgaben und Erstattungen",
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+        }
+      ]
+    },
+    "shipping": {
+      "sections": [
+        {
+          "title": "Bereite die Eingaben für die Schätzung vor",
+          "text": "Beginne mit Ziel und geplanten Produkten. Sammle verfügbare Gewichte und Maße und identifiziere Inhalte mit besonderem Handhabungs- oder Prüfbedarf. Gib die Angaben in OOPBuys offiziellen Versandrechner ein und prüfe die angebotenen Wege. Vor den Lagermessungen sind Eingaben Annahmen. Halte sie sichtbar, damit du sie später ersetzen kannst. Eine hilfreiche Schätzung erklärt das betrachtete Paket, statt einen angezeigten Preis als allgemeingültig zu behandeln."
+        },
+        {
+          "title": "Lies Versandbedingungen zusammen mit dem Preis",
+          "text": "Vergleiche geeignete Wege mit denselben Paketdaten. Prüfe angegebene Abrechnung, zulässige Inhalte, Größenlimits und weitere Plattformbedingungen. Tatsächliches Gewicht beschreibt Masse; Volumenabrechnung berücksichtigt den Paketraum nach der Regel des Versandwegs. Ein größerer Karton kann daher den Vergleich verändern, obwohl die Artikel gleich bleiben. Nutze den angezeigten Faktor und die Rundungsmethode des Dienstes und übernimm keine Formel eines fremden Beförderers oder Angebots."
+        },
+        {
+          "title": "Prüfe Gesamtbudget und Verpackung",
+          "text": "Führe internationale Fracht neben den übrigen Bestellbeträgen. Artikelpreis, Zustellung zum Lager, Zusatzleistungen und anwendbare Zahlungs- oder Zielgebühren können in verschiedenen Phasen erscheinen. Prüfe jeden Betrag dort, wo er tatsächlich angezeigt wird. Verpackung sollte Schutz und Paketgröße abwägen: Zerbrechliche oder leicht zerdrückbare Waren brauchen möglicherweise einen anderen Ansatz als weiche Kleidung. Frage nach verfügbaren Leistungen und vergleiche den geplanten Aufbau, bevor du aus Verpackungsentfernung oder Zusammenfassung niedrigere Gesamtkosten ableitest."
+        },
+        {
+          "title": "Prüfe das tatsächliche Paket vor dem Versand erneut",
+          "text": "Wiederhole den Vergleich, sobald verpackte Maße und aktuelle Versandoptionen vorliegen. Bestätige Empfängerdaten, Inhalt, Bedingungen und verlangten Betrag beim Auftrag. Betrachte Lieferzeitschätzungen als Planungshilfe und halte Zeit für die Phasen deiner Bestell- und Paketdatensätze frei. Speichere die Paketreferenz und verfolge Aktualisierungen im offiziellen Konto. Die ausführlichen Leitfäden zu Versand, Gesamtkosten, Verpackung und Verfolgung erklären die Entscheidungen hinter dieser Schlussprüfung."
+        }
+      ],
+      "checks": [
+        "Vergleiche Versandwege mit demselben Ziel, Inhalt, Gewicht und denselben Maßen.",
+        "Nutze Abrechnungsregel und Beschränkungen des ausgewählten Versandwegs.",
+        "Berechne mit den tatsächlichen Paketdaten erneut, bevor du den Versand bestätigst."
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy-Versandrechner",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy-Lieferhinweis",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy-Hinweise für den ersten Einkauf",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
         }
       ]
     }
-  ]
+  },
+  "categoryIntros": {
+    "shoes": {
+      "title": "OOPBuy-Schuh-Spreadsheet",
+      "intro": "Entdecke Schuhe nach Modell, Einsatzzweck und passformrelevanten Details. Vergleiche die genaue Verkäuferoption, bevor du dich auf eine vertraute Größenkennzeichnung verlässt. Produktfotos helfen bei der Vorauswahl; Verkäufermaße und Nachweise deiner erhaltenen Bestellung stützen den nächsten Schritt. Beziehe linken und rechten Schuh in deine Prüfung ein.",
+      "checks": [
+        "Vergleiche die Verkäufergrößen mit einem passenden Paar, das du bereits trägst.",
+        "Prüfe Modell, Farbe, Größenetikett und beide Schuhe anhand verfügbarer Bestellfotos.",
+        "Berücksichtige Schutz und Paketraum für Schuhe und Karton."
+      ]
+    },
+    "hoodies-sweaters": {
+      "title": "OOPBuy-Hoodies und Pullover",
+      "intro": "Stöbere nach Hoodies und Pullovern mit deiner bevorzugten Passform im Blick. Brustbreite, Kleidungsstücklänge und Schulterform ermöglichen bessere Vergleiche als ein Größenbuchstabe allein. Vergleiche Verkäufermaße mit einem bequemen eigenen Stück und prüfe Farbe und Version. Bilder zeigen das Aussehen; Stoffzusammensetzung und Gewicht benötigen verlässliche Angebotsangaben oder Bestätigung.",
+      "checks": [
+        "Notiere Brustbreite, Kleidungsstücklänge und Schultermaße zum Vergleich.",
+        "Prüfe gewählte Farbe, Bündchen, Kapuze oder Ausschnitt in den verfügbaren Ansichten.",
+        "Bestätige Material- oder Stoffgewichtsangaben anhand des Angebots, bevor du dich darauf verlässt."
+      ]
+    },
+    "t-shirts": {
+      "title": "OOPBuy-T-Shirt-Spreadsheet",
+      "intro": "Finde T-Shirts nach Form, Ärmelstil und gewünschtem Design. Vergleiche Kleidungsmaße und genaue Option vor der Größenwahl. Kleine Unterschiede bei Druckposition, Kragenkonstruktion oder Farbe können ähnliche Angebote unterscheiden. Nutze Bilder, um Fragen zu erkennen, und bestätige Details anschließend über Verkäuferangaben und verfügbare Lagernachweise deiner Bestellung.",
+      "checks": [
+        "Vergleiche Länge und Brustbreite mit einem gut passenden T-Shirt.",
+        "Gleiche Aufdruck, Farbe und Version mit dem gespeicherten Angebot ab.",
+        "Betrachte Ausschnitt, Nähte und Druckposition bei der Prüfung der Bestellfotos."
+      ]
+    },
+    "jackets": {
+      "title": "OOPBuy-Jacken-Spreadsheet",
+      "intro": "Suche Jacken nach deinen geplanten Kleidungsschichten und benötigten Konstruktionsdetails. Vergleiche die gewählte Größe mit einer ähnlichen Jacke und berücksichtige deine Vorlieben beim Daruntertragen. Prüfe Verschlüsse, Taschen und Futterangaben. Fotos können sichtbare Details zeigen; Wärme, Wasserdichtigkeit und Materialversprechen benötigen Nachweise über das Aussehen hinaus.",
+      "checks": [
+        "Vergleiche Maße mit einer Jacke, die du über den vorgesehenen Schichten trägst.",
+        "Prüfe Reißverschlüsse, Knöpfe, Taschen und sichtbares Futter anhand verfügbarer Nachweise.",
+        "Berücksichtige den Einfluss von Form und Polsterung auf Schutz und Packvolumen."
+      ]
+    },
+    "pants-shorts": {
+      "title": "OOPBuy-Hosen und Shorts",
+      "intro": "Entdecke Hosen und Shorts nach Bundkonstruktion, Leibhöhe, Länge und Beinform. Dieselbe Kennzeichnung kann sehr verschiedene Passformen beschreiben. Vergleiche deshalb die Messmethode des Verkäufers mit einer gut passenden eigenen Hose. Prüfe Einzelartikel oder Set sowie gewählte Farbe und Länge, bevor du ähnliche Angebote gleichsetzt.",
+      "checks": [
+        "Vergleiche Bund, Leibhöhe und Innenbeinlänge mit einer passenden Referenzhose.",
+        "Kläre vor der Größeninterpretation, ob der Bund fest, elastisch oder verstellbar ist.",
+        "Gleiche Länge, Farbe und Menge mit der Bestelloption ab."
+      ]
+    },
+    "headwear": {
+      "title": "OOPBuy-Hüte und Caps",
+      "intro": "Stöbere bei Hüten und Caps mit Umfang, Tiefe und Form im Blick. Ein verstellbarer Verschluss bietet Spielraum, doch sein Bereich muss zum Träger passen. Vergleiche Stil und Farbe im Angebot. Berücksichtige bei der späteren Verpackungswahl, wie Kopfteil und Schirm des erhaltenen Artikels geschützt werden sollen.",
+      "checks": [
+        "Prüfe angegebenen Umfang oder Verstellbereich und die Huttiefe.",
+        "Betrachte gewählte Farbe, Verschluss und sichtbare Form in den Bildern.",
+        "Plane vor dem Paketauftrag Schutz für formstabiles Kopfteil oder Schirm."
+      ]
+    },
+    "accessories": {
+      "title": "OOPBuy-Taschen und Accessoires",
+      "intro": "Entdecke Taschen und Accessoires nach praktischen Maßen, Passform und enthaltenen Teilen. Ein Foto vermittelt allein selten die Größe. Prüfe deshalb Riemenlänge, Gürtelbereich oder Fachmaße. Gleiche die Variante ab und betrachte sichtbare Verschlüsse und Beschläge. Bestätige Materialangaben durch verlässliche Angebotsdetails, statt die Zusammensetzung aus der Farbe abzuleiten.",
+      "checks": [
+        "Vergleiche Maße, Riemenlänge oder Anpassungsbereich mit deiner geplanten Nutzung.",
+        "Prüfe Verschlüsse, Befestigungspunkte und enthaltenes Zubehör der Variante.",
+        "Beurteile den Schutzbedarf starrer, empfindlicher oder leicht zerkratzbarer Teile."
+      ]
+    },
+    "short-sets": {
+      "title": "OOPBuy-Kombisets",
+      "intro": "Prüfe bei passenden Sets jedes Teil separat. Ein Angebotsbild kann ein vollständiges Outfit zeigen, obwohl die Variante nur eine Komponente enthält. Bestätige Menge und Lieferumfang und vergleiche Ober- und Unterteilmaße mit eigenen Referenzen. Prüfe, ob ausgewählte Farben und Versionen zum selben Set gehören.",
+      "checks": [
+        "Bestätige genau, welche Teile und Stückzahlen die gewählte Option enthält.",
+        "Vergleiche Ober- und Unterteilmaße vor der Größenwahl getrennt.",
+        "Prüfe Farbe, Design und Größenetikett jeder erhaltenen Komponente."
+      ]
+    },
+    "electronics": {
+      "title": "OOPBuy-Elektronikfunde",
+      "intro": "Entdecke Elektronik nach benötigtem Modell und tatsächlicher Kompatibilität. Prüfe Anschlüsse, unterstützte Geräte, Stromanforderungen und Lieferumfang. Identifiziere Batterien oder andere transportempfindliche Komponenten vor der Versandplanung. Produktfotos helfen bei sichtbarem Zustand und Identifizierung; Leistung und Sicherheit erfordern geeignete Spezifikationen, Bestätigungen oder Prüfungen über ein Bild hinaus.",
+      "checks": [
+        "Bestätige Modell, Gerätekompatibilität, Anschluss und Stromspezifikation.",
+        "Prüfe den Einfluss von Batterien oder anderen Inhalten auf verfügbare Versandwege.",
+        "Bestätige den Lieferumfang und frage nach der Prüfung einer entscheidungswichtigen Funktion."
+      ]
+    },
+    "other-stuff": {
+      "title": "Weitere OOPBuy-Produktfunde",
+      "intro": "Beginne bei gemischten Funden mit Zweck, Größe und Inhalt. Ähnliche Bilder können unterschiedliche Mengen, Materialangaben oder Kompatibilität verbergen; vergleiche deshalb die genaue Variante. Identifiziere zerbrechliche Teile und besondere Transportfragen vor dem Hinzufügen zum Paket. Entscheide anhand der relevanten Produktdetails, welche Kontrollen am wichtigsten sind.",
+      "checks": [
+        "Bestätige Einsatzzweck, Maße und enthaltene Menge.",
+        "Identifiziere empfindliche Teile, Kompatibilitätsbedarf oder Inhalte mit Versandprüfbedarf.",
+        "Stelle eine konkrete Frage, wenn Angebot oder Bilder ein wichtiges Detail offenlassen."
+      ]
+    },
+    "jersey": {
+      "title": "OOPBuy-Trikot-Spreadsheet",
+      "intro": "Entdecke Trikots nach Team, Saison, Version und tatsächlich enthaltenen Optionen. Vergleiche Verkäufermaße, denn unterschiedliche Schnitte können bei gleicher Kennzeichnung anders passen. Prüfe gegebenenfalls gewählten Namen, Nummer, Aufnäher und Farbe. Bei Personalisierung bestätige vor der Bestellung die genaue Schreibweise und aktuellen Kundendienstbedingungen.",
+      "checks": [
+        "Gleiche Team, Saison, Version und Farbe mit der gewählten Angebotsoption ab.",
+        "Prüfe Kleidungsmaße und alle gewählten Namen, Nummern und Aufnäherdetails.",
+        "Bestätige vor der Zahlung die aktuellen Bedingungen für personalisierte Artikel."
+      ]
+    }
+  }
 }
