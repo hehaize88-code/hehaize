@@ -9,6 +9,14 @@ assert.equal(www.status,308);
 assert.equal(www.headers.get('Location'),targets.production+'/fr/articles/?q=shoes');
 const http = await request('/faq/','http://sugargootab.com');
 assert.equal(http.headers.get('Location'),targets.production+'/faq/');
+for (const [path, origin, expected] of [
+ ['/nl/category/other-stuff/&source=alertsmail&hl=nl',targets.production,'/nl/category/other-stuff/'],
+ ['/nl/category/other-stuff/&ss=fb&rt=private?q=hat&sort=price',targets.production,'/nl/category/other-stuff/?q=hat&sort=price'],
+ ['/nl/category/other-stuff/&ct=ga&cd=private','https://www.sugargootab.com','/nl/category/other-stuff/']
+]) {
+ const fixed=await request(path,origin);assert.equal(fixed.status,308);assert.equal(fixed.headers.get('Location'),targets.production+expected);
+}
+const unrelated=await request('/nl/category/nonexistent/&source=alertsmail');assert.equal(unrelated.status,404,'Unknown routes must not redirect to a category');
 const preview = await request('/faq/','https://sugargootab-com.example.workers.dev');
 assert.match(preview.headers.get('X-Robots-Tag'),/noindex/);
 const previewDoc = parseHTML(await preview.text()).document;
@@ -23,8 +31,9 @@ const sitemap = await request('/sitemap.xml');
 assert.equal(sitemap.status,200);
 const xml = new DOMParser().parseFromString(await sitemap.text(),'text/xml');
 const locations = [...xml.querySelectorAll('loc')].map(el=>el.textContent);
-assert.equal(locations.length,672);
+assert.equal(locations.length,744);
 assert.equal(new Set(locations).size,locations.length);
+assert.equal(xml.querySelectorAll('lastmod').length,336,'All article and article-index URLs carry maintained dates');
 assert(locations.every(url=>url.startsWith(targets.production+'/')&&!url.includes('?')));
 assert(locations.includes(targets.production+'/mt/faq/'));
 assert(locations.includes(targets.production+'/category/shoes/'));
@@ -49,8 +58,8 @@ const articleHtml=await articleResponse.text();
 assert(articleHtml.indexOf('--paper:#fff')>articleHtml.indexOf('--paper:#fafaf7'),'Approved theme follows base styles');
 const articleDoc=parseHTML(articleHtml).document;
 assert(!articleDoc.querySelector('.design-preview-bar'),'Review banner removed from live pages');
-assert.equal(articleDoc.querySelectorAll('[data-reading-section]').length,9);
-assert.equal(articleDoc.querySelectorAll('[data-reading-section][open]').length,9,'Full article present without JS');
+assert.equal(articleDoc.querySelectorAll('[data-reading-section]').length,10);
+assert.equal(articleDoc.querySelectorAll('[data-reading-section][open]').length,10,'Full article present without JS');
 assert(articleDoc.querySelector('[data-expand-reading]'));
 
 // The public 16-item pages must preserve the source's 60-item sequence.
@@ -61,17 +70,27 @@ globalThis.fetch=async input=>{
  const url=new URL(input instanceof Request?input.url:String(input));
  assert.equal(url.origin,'https://cnbuycha.com');
  sourceRequests.push(url);
- const sourcePage=Number(url.searchParams.get('page'));
+ const sourcePage=Number(url.searchParams.get('page')||'1');
  if(sourcePage===failSourcePage)return new Response('Source unavailable',{status:503});
  const first=(sourcePage-1)*60+1,last=Math.min(sourcePage*60,sourceTotal);
  const cards=Array.from({length:Math.max(0,last-first+1)},(_,i)=>{
   const id=first+i;
   return `<article class="product-card"><a class="product-title" href="/headwear/${id}.html"><h3>Product ${id}</h3></a><img src="https://cnbuycha.com/media/${id}.jpg"><span class="product-price">${id}.00</span></article>`;
  }).join('');
- return new Response('<div class="results-summary">'+sourceTotal+' products</div>'+cards);
+ return new Response('<a class="category-item" href="/headwear/"><h3>Headwear</h3><span class="category-count">'+sourceTotal+'</span></a><div class="results-summary">'+sourceTotal+' products</div>'+cards);
 };
 const productIds=doc=>[...doc.querySelectorAll('.product-card h3')].map(n=>Number(n.textContent.replace('Product ','')));
 try {
+ const localizedData=await import('node:fs');
+ for (const lang of ['en','de','es','fr','it','pl','pt','ro','sv','nl','da','fi','el','cs','hu','bg','sk','hr','sl','lt','lv','et','ga','mt']) {
+  const content=JSON.parse(localizedData.readFileSync(new URL('../src/content/editorial/'+lang+'.json',import.meta.url),'utf8'));
+  const response=await request(lang==='en'?'/':'/'+lang+'/');
+  assert.equal(response.status,200,lang+' homepage');
+  const doc=parseHTML(await response.text()).document;
+  assert.equal(doc.querySelector('title').textContent,content.ui.seoHomeTitle);
+  assert.equal(doc.querySelectorAll('.home-articles .article-card').length,4);
+  assert(doc.querySelector('.home-articles a[href$="/articles/sugargoo-shipping-to-usa/"]'));
+ }
  for(const [page,numbers] of [[1,[1,2,3]],[2,[1,2,3]],[4,[3,4,5]],[8,[7,8,9]],[15,[14,15,16]],[16,[15,16,17]],[29,[28,29,30]],[215,[213,214,215]]]){
   sourceRequests=[];
   const response=await request('/fr/category/headwear/?q=hat&sort=price&page='+page);
@@ -119,4 +138,4 @@ try {
  assert.equal(failed.status,503,'A failed second source page must not produce a partial successful page');
  assert.match(failed.headers.get('X-Robots-Tag'),/noindex/);
 }finally{globalThis.fetch=originalFetch;}
-console.log(JSON.stringify({approvedDesign:'pass',legacyPreviewRedirect:308,pageSize:16,paginationCases,upstreamBoundaryChecks:'pass',completeCatalogueSequence:'pass',outOfRangeRedirect:302,upstreamFailure:503,articleSections:'9 complete disclosures'}));
+console.log(JSON.stringify({approvedDesign:'pass',legacyPreviewRedirect:308,pageSize:16,paginationCases,upstreamBoundaryChecks:'pass',completeCatalogueSequence:'pass',outOfRangeRedirect:302,upstreamFailure:503,articleSections:'10 complete disclosures'}));

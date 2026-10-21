@@ -1,0 +1,528 @@
+{
+  "ui": {
+    "articleIntro": "Practical guides to product links, QC photos, order stages and shipping decisions, with official sources and clear next steps.",
+    "seoHomeTitle": "Sugargoo Spreadsheet: Product Links, Photos & Buying Guides",
+    "catalogCtaTitle": "Put the checklist to work",
+    "catalogCtaBody": "Compare product links in the catalogue, then verify the exact listing and your own order details before buying or shipping.",
+    "catalogCtaButton": "Browse product links",
+    "categoryCtaButton": "Explore product categories"
+  },
+  "updates": {
+    "sugargoo-spreadsheet-guide": {
+      "title": "Sugargoo Spreadsheet Guide: Find & Verify Product Links",
+      "description": "Find products in a Sugargoo spreadsheet, verify live listings and variants, and separate reference images from your own warehouse QC photos.",
+      "section": {
+        "id": "live-listing-check",
+        "title": "How to verify a live listing before buying",
+        "paragraphs": [
+          "Open the catalogue product, then follow its original listing link. Match the marketplace product ID, seller and selected variant with the item shown in Sugargoo. The catalogue's internal page number is a separate identifier. Check the live price, available options and quantity again immediately before payment; a saved card cannot establish current stock.",
+          "If the original listing is missing, the product cannot be loaded, or the variant differs, stop at that step. Return to the spreadsheet and compare another candidate. Record why the first one failed so you do not repeat the same check later. Reference pictures remain discovery evidence, even when they resemble warehouse photos."
+        ],
+        "table": {
+          "headers": [
+            "Check",
+            "Evidence to use"
+          ],
+          "rows": [
+            [
+              "Product identity",
+              "Original marketplace URL and product ID"
+            ],
+            [
+              "Live availability",
+              "The current seller listing and selected option"
+            ],
+            [
+              "Price",
+              "Exact variant and checkout amount"
+            ],
+            [
+              "Condition",
+              "Your own order photos after warehouse arrival"
+            ]
+          ]
+        }
+      }
+    },
+    "sugargoo-qc-photos": {
+      "title": "Sugargoo QC Photos: Product Checks Before Shipping",
+      "description": "Use a practical Sugargoo QC photo checklist for shoes, clothing and bags. Check labels, measurements, stitching and missing details before shipping.",
+      "section": {
+        "id": "product-qc-checklist",
+        "title": "QC photo checks for shoes, clothing and bags",
+        "paragraphs": [
+          "Start by matching the order, colour, size and quantity. Then inspect the details that could change your decision to keep the item. The following checklist is a practical photo-review aid, not a guarantee that ordinary QC includes every angle or measurement. Request the particular missing evidence and check any service charge before proceeding.",
+          "For example, a bag photographed only from the front does not establish its strap attachment or interior condition. Ask for the relevant angle if that detail matters to you. If a measurement is needed, specify its endpoints and ask for a visible tape. Photographs cannot establish every functional property, and they do not prove authenticity."
+        ],
+        "table": {
+          "headers": [
+            "Product",
+            "Check in your order photos",
+            "If unclear, request"
+          ],
+          "rows": [
+            [
+              "Shoes",
+              "Pair, size labels, soles and visible seams",
+              "Both size labels and the relevant sole or seam angle"
+            ],
+            [
+              "Clothing",
+              "Size label, fabric appearance and stitching",
+              "A flat measurement with clear starting and ending points"
+            ],
+            [
+              "Bags",
+              "Straps, fastenings, lining and accessories",
+              "Interior and attachment-point close-ups"
+            ],
+            [
+              "Any item",
+              "Correct variant, quantity and visible damage",
+              "A clear image of the specific discrepancy"
+            ]
+          ]
+        }
+      }
+    },
+    "sugargoo-shipping-calculator": {
+      "title": "Sugargoo Shipping Calculator: Weight, Size & Total Cost",
+      "description": "Use the Sugargoo shipping calculator with realistic weight and dimensions. Compare eligible routes and understand what an estimate leaves uncertain.",
+      "section": {
+        "id": "quote-comparison",
+        "title": "Make two estimates before committing to goods",
+        "paragraphs": [
+          "Build an initial scenario with your best available weight and dimensions, then a conservative scenario that allows for uncertain packaging. Keep the destination, contents and other settings consistent. If the order only fits your budget under the most optimistic assumptions, resolve the uncertainty before paying for the goods.",
+          "Record the quote date, route, units, estimated dimensions and selected extras. Replace assumptions with measured parcel information when available. For a US destination, use the separate USA guide for the comparison process; for multiple stored orders, compare complete combined and split costs using the consolidation guide."
+        ]
+      }
+    },
+    "sugargoo-rehearsal-shipping": {
+      "title": "Sugargoo Rehearsal Shipping: Weight, Size & When to Use It",
+      "description": "Decide when Sugargoo rehearsal shipping is useful, specify packing choices and compare the measured parcel with your original freight estimate.",
+      "section": {
+        "id": "rehearsal-decision",
+        "title": "When is a packing rehearsal worth considering?",
+        "paragraphs": [
+          "Consider a rehearsal when unknown packed dimensions could change your route or budget: a bulky lightweight item, several retail boxes, or a parcel near a route limit. Write down the uncertainty you want resolved and check the current service fee. If your decision would be the same across reasonable estimates, the extra measurement may have less value.",
+          "Compare the result with your original inputs: actual weight, outer dimensions, retained packaging and selected services. Recalculate under the route's current billing rule. A smaller measurement does not guarantee a lower final bill because minimum charges, weight increments and other options can still matter."
+        ]
+      }
+    },
+    "weidian-taobao-links-sugargoo": {
+      "title": "Weidian & Taobao Links on Sugargoo: Verify and Fix Errors",
+      "description": "Check Weidian and Taobao product links before buying on Sugargoo. Resolve missing listings, wrong variants and parsing failures without guessing.",
+      "section": {
+        "id": "link-error-check",
+        "title": "What to check when a product link does not load",
+        "paragraphs": [
+          "First open the original product page and confirm that it still identifies the intended item. A shop homepage, shortened sharing text or removed listing is not equivalent to a complete product URL. Compare the marketplace product ID before trying again. Remove unrelated sharing text rather than changing the item's identity.",
+          "If the original item exists but automatic parsing fails, check official manual-order options and acceptance conditions. Keep the seller, exact variant, quantity, product URL and price information together. A manual form does not override product restrictions or guarantee availability. If the live listing cannot be verified, choose another candidate instead of guessing from its picture."
+        ]
+      }
+    }
+  },
+  "articles": [
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Sugargoo Shipping to the USA: Costs, Weight & Delivery",
+      "description": "Plan Sugargoo shipping to the USA: compare parcel weight, dimensions, route terms and delivery stages before paying international freight.",
+      "keyword": "sugargoo shipping to usa",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoo shipping to the USA is a separate decision from buying the goods. Start with your delivery address, the products you intend to send and an estimate of their packed weight and size. Then compare the routes actually offered in your account. A price from somebody else's parcel is only a reference: its destination, date, dimensions and contents may differ from yours.",
+        "This guide gives you a comparison method rather than a fixed price or delivery promise. SugargooTab is an independent catalogue, and it cannot quote, dispatch or track your parcel on Sugargoo's behalf. Use the official estimator for planning and the final parcel screen for the decision to pay. Keep a record of what the quote includes so later changes are understandable."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Separate product spending from the US parcel budget",
+          "paragraphs": [
+            "Write the budget in two stages. The first covers the selected goods and Chinese domestic delivery, plus any checkout or payment costs shown. The second covers international freight and the services chosen for the parcel. Destination-related charges may also need consideration. Do not assume that a product price in this catalogue includes either stage of delivery.",
+            "Use an illustrative budget to test the decision, not to predict a quote. If your personal spending limit is $150 and your goods already cost $110, the remaining $40 must cover everything you have not yet paid. If the current shipping estimate exceeds that remainder, revise the order before adding more products. Borrowing a cheaper number from an old post does not close the gap.",
+            "Keep the estimate's date and input values beside the amount. Record whether packaging services and any optional protection have been included, and whether additional destination charges are explained in the route terms. Mark an unknown cost as unknown. This is more useful than displaying a precise total assembled from incomplete assumptions."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Enter destination, contents, weight and dimensions",
+          "paragraphs": [
+            "Use the actual US destination and region fields requested by the estimator. Do not substitute a different address simply to obtain more attractive routes. Describe the product category accurately, including features that may affect carriage. A route accepting ordinary clothing does not automatically accept batteries, liquids or every other item sold by a marketplace.",
+            "Before the goods reach the warehouse, weight and dimensions are planning assumptions. Give bulky items particular attention: a light jacket in a large box can create a different parcel from a tightly packed shirt. Once your own items are available, replace guesses with the available warehouse information and, where useful, the results of a packing rehearsal.",
+            "Record units alongside numbers. Grams and kilograms are not interchangeable inputs, and centimetres should not be entered into an inches field. A misplaced unit can make an apparently competitive quote meaningless. If an estimate looks unexpectedly cheap or expensive, first check the address, units, quantities and product category before drawing conclusions about the route."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Understand the weight used for billing",
+          "paragraphs": [
+            "Actual weight measures mass; volumetric weight converts the parcel's dimensions into a billing figure under the selected route's rules. The divisor, rounding and minimum charge can differ. Read the route description rather than applying one formula to every option. The greater figure may matter on a volumetric route even when the goods themselves are light.",
+            "For illustration only, a 40 × 30 × 25 cm box has a volume of 30,000 cubic centimetres. A hypothetical divisor of 6,000 would produce 5 kg of volumetric weight. That is not a statement that your chosen route uses 6,000. If the actual weight were 3 kg, a route charging the larger figure could still assess this box at 5 kg before its rounding rules.",
+            "Ask whether changing packaging would alter the packed dimensions enough to change the quote. Removing an unnecessary retail box may help in some cases, while fragile products may need that protection. Recheck the final measurements after the agreed packing choices; do not assume every removed box yields a saving or every reinforcement is worth its added weight."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Compare routes using the same parcel assumptions",
+          "paragraphs": [
+            "Build a small comparison using only routes that accept your parcel. Quote each one against the same destination, contents, weight and dimensions. Otherwise a difference in price may be caused by different inputs rather than a better service. Read size and weight limits before spending time on an option that your finished parcel cannot use.",
+            "Review what the displayed delivery estimate measures and which tracking stages are visible. The seller's dispatch to the Chinese warehouse is separate from the international journey, and preparation before carrier handover can add another stage. Treat an estimated range as planning information. Avoid buying for an immovable deadline unless you can accept the consequences of a delay.",
+            "Read the selected route's current explanation of included charges, extra charges, restrictions and optional insurance. Save that wording with the quote. If an important point is unclear, ask official support before payment and retain the answer. A route label or another buyer's screenshot is not a substitute for the terms attached to your parcel."
+          ],
+          "table": {
+            "headers": [
+              "Compare",
+              "Record before payment"
+            ],
+            "rows": [
+              [
+                "Eligibility",
+                "Allowed contents, destination coverage and parcel limits"
+              ],
+              [
+                "Billable weight",
+                "Actual or volumetric rule, divisor and rounding"
+              ],
+              [
+                "Total shown",
+                "Freight, selected extras and clearly stated exclusions"
+              ],
+              [
+                "Delivery information",
+                "Estimated range, handover stage and tracking coverage"
+              ],
+              [
+                "Protection",
+                "Current coverage, exclusions and claim requirements"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Keep product and recipient information consistent",
+          "paragraphs": [
+            "Use accurate product descriptions and the actual information requested for the shipment. Keep order evidence and the payment record available in case clarification is required. Do not copy a declaration from an unrelated parcel or choose a misleading description to force a route to appear. The contents of your own shipment determine which checks are relevant.",
+            "US import rules and carrier arrangements can change. This guide deliberately does not provide a permanent tax threshold or promise that a route is free of additional charges. Check current destination guidance and the selected service terms when arranging shipment. If information conflicts, obtain clarification before paying rather than treating a promotional phrase as a complete explanation.",
+            "Check the recipient name, address and contact information inside the official account. Correcting an error before dispatch is easier than resolving a delivery exception later. Keep private addresses and order identifiers out of public reviews or shared research sheets. A useful public comparison can describe the route and approximate parcel type without exposing the recipient."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Track each delivery stage and act on exceptions",
+          "paragraphs": [
+            "Distinguish the seller's domestic tracking from the international parcel reference. Warehouse arrival does not mean that the package has left China, and a created tracking number does not by itself establish carrier possession. Follow the logistics record attached to the submitted parcel and note the most recent dated event.",
+            "If tracking pauses, look for a handover, information request or exception before assuming the parcel is lost. Save the last update and ask support a specific question about the next expected step. Provide the parcel reference through the official private channel. Repeating the same public tracking search does not resolve missing paperwork or a recipient-address problem.",
+            "When delivery occurs, check the package and contents promptly and preserve relevant packaging and evidence if something is wrong. Any claim depends on the applicable service and its requirements; a shipping purchase is not a blanket guarantee. Record the actual stages and costs in your own notes so your next estimate can use comparable evidence rather than memory. Before checkout, make one final pass through your comparison and remove any route whose eligibility remains unresolved. A usable budget needs an available service, accurate inputs and understandable conditions, not just the lowest displayed number."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirm the actual US destination and permitted contents.",
+        "Separate the goods budget from international freight and extras.",
+        "Use consistent units and record packed dimensions.",
+        "Compare eligible routes against identical inputs.",
+        "Check current route terms and accurate shipment information.",
+        "Save the final quote and follow the parcel-specific tracking record."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Estimate international shipping costs",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Pre-shipment package simulation",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: Shipping restrictions",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo: Tracking issues",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Sugargoo Order Status Explained: Payment to Warehouse",
+      "description": "Understand Sugargoo order stages, seller dispatch, warehouse arrival and parcel tracking. Learn what to check when an order appears stuck.",
+      "keyword": "sugargoo order status",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "A Sugargoo order status describes one stage of the buying process, not the whole journey to your door. Payment, agent purchasing, seller dispatch, warehouse processing and international parcel shipment are separate steps. First identify whether you are looking at an item order or a submitted parcel; they answer different questions and may have different tracking references.",
+        "The wording in the website or app can vary with language and interface changes. The stage descriptions below explain what to investigate rather than claiming to reproduce every current button label. Open your own order details for messages, actions and timestamps. Those details are more useful than comparing a short status label with a stranger's order."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "Start with the right item or parcel record",
+          "paragraphs": [
+            "Keep the original product link, selected variant and Sugargoo order reference together. If you bought several similar items, verify the seller, colour, size and quantity before contacting support. An update on one item does not establish the progress of another, even if the two were paid for during the same visit.",
+            "Use a separate record for the international parcel created from stored goods. One parcel may contain multiple orders, while an order issue may need handling before a parcel is submitted. Write down which item references belong to which parcel. This simple distinction prevents a domestic seller tracking number from being mistaken for the shipment to your country.",
+            "When a status looks unexpected, read the order's messages and latest timestamp before taking action. A request for missing options or a payment adjustment can explain why purchasing has not progressed. Capture the relevant wording for your own notes, but send private references and screenshots only through the official support channel."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "Payment and purchasing are different stages",
+          "paragraphs": [
+            "At a pending-payment stage, check whether you actually completed checkout. An item in a cart or an unpaid order is not evidence that a seller has received a purchase request. If you decided against buying, use the available cancellation action for that stage rather than assuming that leaving the screen removes the order.",
+            "After paying, confirm the transaction in your account and inspect any purchasing message. Payment completion does not prove that the seller has dispatched the item. The purchasing step may still depend on stock, the selected variant, domestic freight or information needed to place the order correctly. Respond to a specific request instead of repeatedly paying for a duplicate order.",
+            "If your bank shows a charge but the order still appears unpaid, compare the references and payment status with official support before trying again. A bank entry and an order update can describe different parts of the payment process. Preserve evidence without posting card information, login details or verification codes. Ask which transaction is attached to the order and what action is actually required."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "Purchased and seller-shipped do not mean warehouse-ready",
+          "paragraphs": [
+            "At the purchased stage, check whether the seller has provided domestic shipment information. A purchase confirmation concerns the goods order; it is not an international dispatch confirmation. If you need a seller update, ask through the order conversation so the request remains linked to the correct item and selected options.",
+            "When the seller ships, follow the domestic tracking associated with that order. Delivery to the warehouse is a separate event from warehouse checking and storage. A carrier scan showing delivery may precede the account's completed warehouse record. Do not treat that gap alone as proof of missing goods; check the order messages and processing information.",
+            "If a seller sends only part of an order or the quantity looks wrong, list the missing units explicitly. Include the original quantity and the current evidence. A message such as “one of two shirts is missing from this order” is more actionable than “my package is wrong.” Let support determine whether the issue is seller dispatch, a split delivery or warehouse processing."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "Warehouse arrival is your inspection checkpoint",
+          "paragraphs": [
+            "Once your own order's warehouse photos and details are available, compare them with the purchased variant. Look at labels, colour, quantity, visible condition and any measurements you requested. Catalogue reference pictures cannot replace this review: they were used for discovery and do not establish the condition of the unit received for you.",
+            "If an image is unclear, describe exactly what needs to be visible. For example, ask for the size label or a measurement with the tape starting at the correct seam. Additional services and their availability should be checked in the account. Ordinary visual inspection is not proof of authenticity or a functional test of every product.",
+            "Resolve a potential return or seller issue before including the item in an international parcel. Check the applicable eligibility and timing promptly instead of assuming storage time is also a return window. Keep the packaging and evidence needed for the request. Approval, return postage and refund handling depend on the order and the current after-sales terms."
+          ],
+          "table": {
+            "headers": [
+              "Stage you are investigating",
+              "Useful check",
+              "Next action"
+            ],
+            "rows": [
+              [
+                "Awaiting payment",
+                "Order and payment references",
+                "Complete or cancel the intended order"
+              ],
+              [
+                "Purchasing",
+                "Variant, stock and order messages",
+                "Answer the specific information request"
+              ],
+              [
+                "Seller dispatch",
+                "Domestic tracking and quantity",
+                "Check seller progress through the order"
+              ],
+              [
+                "Warehouse processing",
+                "Arrival record and uploaded photos",
+                "Review the received item and resolve issues"
+              ],
+              [
+                "Stored item",
+                "Remaining storage time and QC decision",
+                "Plan an eligible parcel before the deadline"
+              ],
+              [
+                "Submitted parcel",
+                "Parcel reference and logistics record",
+                "Follow international shipment updates"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "Stored goods still need a parcel decision",
+          "paragraphs": [
+            "A stored item is not automatically on its way to your address. Review which goods are ready, whether they can travel together and how much storage time remains for each one. Follow the countdown and terms shown for the actual item. Do not rely on one storage number copied from an older article or a different order type.",
+            "Select eligible goods for the parcel, confirm the recipient details and consider packing services where they solve a specific problem. Compare the available shipping routes using the resulting weight and dimensions. The international freight payment is a separate decision from the earlier goods payment, and the estimate can change when packing assumptions change.",
+            "After submission, use the parcel record for dispatch and international tracking. Keep the item records for evidence about what should be inside. If the parcel has not progressed, ask about its own latest stage rather than reopening a general question about whether the seller shipped. This keeps the support request aligned with the team and process that can answer it."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Turn a stuck-status question into a clear request",
+          "paragraphs": [
+            "There is no single waiting period that makes every order late. Seller stock, domestic carriage, warehouse work and international handover involve different processes. Read any estimate or requested response shown for your case, then compare the latest dated event with that information. An unchanged label without context is not enough to identify the cause.",
+            "Write a concise support request containing the order or parcel reference, the last dated event, the specific discrepancy and the action you need clarified. For example: “The domestic carrier shows delivery, but this item has no warehouse photos yet. Can you confirm receipt and the next processing step?” This asks a question that can be checked against records.",
+            "If you want to cancel, say so before further processing advances. Available actions change after purchase, seller dispatch and international shipment. Do not assume a request guarantees approval or an immediate refund to your original payment method. Save the official response, any agreed next step and the expected follow-up so you can continue the same case without losing context. Keep a dated note of any answer that changes your next step. When you return to the account later, that note helps you distinguish a newly requested action from a question that support has already resolved."
+          ]
+        }
+      ],
+      "checklist": [
+        "Identify whether the problem concerns an item or an international parcel.",
+        "Verify the variant, quantity and matching order reference.",
+        "Read messages and timestamps before making another payment.",
+        "Distinguish domestic delivery from warehouse processing.",
+        "Review your own QC evidence and storage countdown.",
+        "Ask support one specific question with the relevant private reference."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Ordering workflow",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: Order cancellation",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Warehouse storage",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo: Tracking an international order",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Sugargoo Parcel Consolidation: Packing & Shipping Costs",
+      "description": "Learn how to combine Sugargoo orders, compare combined and split parcels, choose packaging and check the final shipping quote.",
+      "keyword": "sugargoo parcel consolidation",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoo parcel consolidation means selecting eligible warehouse items to send together. It can simplify parcel management and may reduce repeated initial shipping charges, but a bigger parcel is not automatically cheaper. Packed dimensions, billable weight, product restrictions and the routes available to your destination can change the result.",
+        "Begin with goods that have passed your own review, then compare a combined option with sensible split options. This guide provides a packing decision process and a reusable comparison checklist. It does not promise a particular saving, route or service fee. The current Packing Center options and final parcel quote determine what is available for your order."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Combine only items that are ready to travel",
+          "paragraphs": [
+            "Make a short inventory of the items you want to send. Include the order reference, quantity, inspection decision, available weight information and remaining storage time. Mark anything with an unresolved size, condition or seller issue. A parcel should not be submitted simply because most of its contents are ready while one important item still needs a decision.",
+            "Check compatibility before grouping everything together. A product with a battery, liquid or other restricted feature can affect which routes accept the parcel. The fact that two goods can be purchased does not establish that they can share any international route. Confirm acceptance for the actual combination and destination before treating the combined option as feasible.",
+            "Use storage deadlines to make an explicit waiting decision. If you are waiting for one seller, compare the cost and risk of waiting with sending the ready goods separately. Follow each item's account countdown and available extension terms. Avoid using an assumed universal storage period to justify leaving goods unattended."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "Compare the complete combined and split costs",
+          "paragraphs": [
+            "Create two or three realistic options: one combined parcel, a split that separates a bulky item, and a split required by incompatible contents if relevant. Use the same delivery destination and the same total set of goods. An option that quietly omits an item cannot be fairly compared with one that ships everything.",
+            "For each option, record the number of parcels, estimated packed dimensions and weight, eligible route, shipping amount and selected packing extras. Add the cost of every parcel in a split option. Comparing the combined price with only the cheaper half of a split shipment gives the wrong answer. Keep uncertain measurements visible rather than hiding them inside a precise-looking total.",
+            "Use a hypothetical example to understand the decision. If a combined quote were $70 while two separate quotes were $38 and $42, the split freight would total $80 before any different extras. That illustration does not predict your prices or prove that combination is preferable. A size limit, protection requirement or route restriction could make the combined option unsuitable."
+          ],
+          "table": {
+            "headers": [
+              "Decision",
+              "Combined parcel",
+              "Split parcels"
+            ],
+            "rows": [
+              [
+                "Freight comparison",
+                "Quote the full group of goods",
+                "Add the quote for every parcel"
+              ],
+              [
+                "Dimensions",
+                "Check the final outer box",
+                "Check each outer box separately"
+              ],
+              [
+                "Contents",
+                "All items must fit the selected service",
+                "Each group needs an eligible service"
+              ],
+              [
+                "Protection",
+                "Check contact between different items",
+                "Account for repeated packing materials"
+              ],
+              [
+                "Timing",
+                "May wait for the last selected item",
+                "Ready goods may be submitted separately"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "Choose packaging for the item, then check its cost",
+          "paragraphs": [
+            "Ask what each packing choice is meant to solve. Reinforcement may address crushing risk; internal separation may reduce contact between items; retaining a fitted retail box may help preserve shape or keep small accessories together. Choose an available service for a concrete reason rather than adding every option because its name sounds reassuring.",
+            "Removing a box can change both weight and volume, but it can also remove protection or packaging needed for a pending return. Resolve the item decision first and specify what may be removed. “Remove the outer shipping carton but retain the product box and accessories” is clearer than a broad instruction to discard all packaging, provided the service can support that request.",
+            "For clothing or other compressible goods, confirm whether the offered packing method suits the material and shape. Do not assume a compression option is harmless for every item. For rigid or fragile goods, reducing the box too aggressively can leave inadequate protection. Ask about the actual service scope, then assess its added cost and packed dimensions together."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "Recheck dimensions after packing choices",
+          "paragraphs": [
+            "The sum of individual item weights is not necessarily the final parcel weight. Boxes, cushioning and reinforcement contribute to the finished package, while removing permitted packaging may reduce it. Dimensions also depend on how the contents fit together. Treat a rough sum as a planning input rather than a confirmed freight bill.",
+            "A packing rehearsal can be useful when a decision depends on dimensions or a route limit. Review the current service fee and what information will be supplied before requesting it. Write down the packing assumptions you want assessed. Better measurements are valuable when they resolve a real choice; ordering a service without a question to answer adds cost without improving the plan.",
+            "Once measurements are available, rerun the comparison using the selected route's billing rule. Check actual versus volumetric weight, the divisor where relevant, rounding and size limits. A small reduction in centimetres may change nothing on one route and matter on another. Use the actual recalculated quote instead of assuming that every reduction translates directly into savings."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Review the parcel before paying freight",
+          "paragraphs": [
+            "In Packing Center, select the intended eligible items and check their quantities. Confirm the recipient information, available services and chosen route in the submission flow. Interface wording can change, so review the complete summary rather than following a remembered button sequence. Ensure that an item you meant to hold for after-sales handling is not included by mistake.",
+            "Keep instructions short and specific. Identify which product or order an instruction concerns and what should be retained, removed or protected. If an instruction depends on a paid service, confirm availability and the charge rather than assuming a free-text note purchases it. Resolve contradictory requests before packing starts, such as asking to discard a box while also asking to keep it intact.",
+            "Save the completed parcel summary, selected services and quoted amount. If a revised amount appears, compare the weight, dimensions and options with your earlier estimate. Ask about the source of a material difference before confirming a step you do not understand. Clear records make it easier to distinguish a changed assumption from a billing question."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Keep parcel evidence and improve the next comparison",
+          "paragraphs": [
+            "After submission, track the international parcel rather than the individual seller shipments. Keep the inventory of included orders with the parcel reference. If goods were split, maintain separate records so an update on one package is not mistaken for progress on all of them. A delivery notification should be matched to the correct contents.",
+            "Review optional protection through its actual policy. Packaging services and insurance solve different problems, and neither should be treated as an unconditional promise. Check current coverage, exclusions and claim requirements before relying on a service. Preserve relevant evidence and act promptly if the received package or contents differ from the confirmed record.",
+            "For your next order, save a private comparison of planned and final weight, dimensions, packing choices and shipping cost. Note which assumption changed and why. Over several comparable parcels this can improve budgeting, but it still does not create a universal price list. A different product mix, destination or route requires a fresh eligibility and cost check. A useful consolidation decision ends with a named option and a reason: suitable contents, acceptable protection, an eligible route and an affordable complete quote. If one of those is unresolved, keep the comparison open until you can verify it."
+          ]
+        }
+      ],
+      "checklist": [
+        "Review QC and resolve after-sales questions before grouping goods.",
+        "Check contents compatibility and each storage countdown.",
+        "Compare all costs for the same goods in combined and split options.",
+        "Choose packing services for specific protection needs.",
+        "Use final dimensions and the selected route billing rules.",
+        "Confirm the inventory, address, services and quote before payment."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Combine multiple orders",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Pre-shipment package simulation",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: Packaging and protection options",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo: Shipping restrictions",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
+      ]
+    }
+  ]
+}

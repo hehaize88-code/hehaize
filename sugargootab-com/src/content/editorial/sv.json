@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Artiklar",
     "articleTitle": "Köpguider för Sugargoo",
-    "articleIntro": "Tio praktiska guider för att välja en produkt, kontrollera detaljerna och planera resan från säljare till leverans.",
+    "articleIntro": "Praktiska guider om produktlänkar, QC-bilder, ordersteg och fraktval, med officiella källor och tydliga nästa steg.",
     "faqTitle": "Vanliga frågor om Sugargoo",
     "faqIntro": "Tydliga svar för varje steg i din beställning, med officiella källor för plattformens regler och ärliga begränsningar för den här oberoende katalogen.",
     "readArticle": "Läs guiden",
@@ -33,7 +33,12 @@
     "categoryShipping": "Frakt och lagring",
     "categoryAccount": "Betalningar och efterköpsservice",
     "author": "SugargooTabs redaktion",
-    "siteEvidence": "Om den här oberoende katalogen"
+    "siteEvidence": "Om den här oberoende katalogen",
+    "seoHomeTitle": "Sugargoo Spreadsheet: produktlänkar, bilder och köpguider",
+    "catalogCtaTitle": "Använd checklistan i praktiken",
+    "catalogCtaBody": "Jämför produktlänkar i katalogen och kontrollera sedan den exakta annonsen och dina egna orderuppgifter innan du köper eller skickar.",
+    "catalogCtaButton": "Bläddra bland produktlänkar",
+    "categoryCtaButton": "Utforska produktkategorier"
   },
   "groups": {
     "basics": "Kom igång",
@@ -415,8 +420,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Guide till Sugargoo Spreadsheet: gör produktlänkar till ett användbart urval",
-      "description": "Använd ett Sugargoo-kalkylblad för att jämföra exakta annonser, kontrollera varianter och planera hela beställningen före köp.",
+      "title": "Sugargoo Spreadsheet-guide: hitta och kontrollera produktlänkar",
+      "description": "Hitta produkter i ett Sugargoo-spreadsheet, kontrollera aktuella annonser och varianter och skilj referensbilder från dina egna QC-bilder från lagret.",
       "keyword": "Sugargoo kalkylblad",
       "category": "getting-started",
       "intro": [
@@ -424,6 +429,38 @@
         "Den här oberoende katalogen hämtar produktinformation och referensbilder från cnbuycha. Beställning och betalning sker på Sugargoo. Följande metod kopplar ihop de två stegen utan att behandla en katalogpost som en personlig rekommendation, lagergaranti eller bevis på lagerinspektion. Den fungerar även om du har ditt urval i en enkel anteckningsapp."
       ],
       "sections": [
+        {
+          "id": "live-listing-check",
+          "title": "Så kontrollerar du en aktuell annons före köp",
+          "paragraphs": [
+            "Öppna katalogprodukten och följ länken till originalannonsen. Jämför marknadsplatsens produkt-ID, säljaren och den valda varianten med varan som visas i Sugargoo. Katalogens interna sidnummer är en separat identifierare. Kontrollera aktuellt pris, tillgängliga alternativ och antal igen precis före betalning; ett sparat produktkort bevisar inte dagens lagersaldo.",
+            "Stanna om originalannonsen saknas, produkten inte kan laddas eller varianten skiljer sig. Gå tillbaka till listan och jämför en annan kandidat. Anteckna varför den första inte fungerade så att du slipper upprepa samma kontroll senare. Referensbilder är fortfarande underlag för att upptäcka produkter, även när de liknar lagerbilder."
+          ],
+          "table": {
+            "headers": [
+              "Kontrollpunkt",
+              "Underlag att använda"
+            ],
+            "rows": [
+              [
+                "Produktens identitet",
+                "Originaladressen på marknadsplatsen och produkt-ID"
+              ],
+              [
+                "Aktuell tillgänglighet",
+                "Säljarens nuvarande annons och valt alternativ"
+              ],
+              [
+                "Prisuppgift",
+                "Exakt variant och belopp i kassan"
+              ],
+              [
+                "Varans skick",
+                "Dina egna orderbilder efter ankomst till lagret"
+              ]
+            ]
+          }
+        },
         {
           "id": "define-the-purchase",
           "title": "Börja med uppgiften som artikeln ska fylla",
@@ -506,7 +543,9 @@
       "related": [
         "how-to-buy-on-sugargoo",
         "sugargoo-qc-photos"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -600,15 +639,17 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-shipping-calculator"
-      ]
+        "sugargoo-order-status",
+        "sugargoo-spreadsheet-guide"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC-bilder: vad du ska kontrollera före frakt",
-      "description": "Granska lagerbilder systematiskt, begär användbara mått och förstå vad visuell QC inte kan bevisa.",
+      "title": "Sugargoo QC-bilder: kontrollera produkter före frakt",
+      "description": "Använd en praktisk checklista för Sugargoo QC-bilder av skor, kläder och väskor. Kontrollera etiketter, mått, sömmar och saknade detaljer före frakt.",
       "keyword": "Sugargoo QC-bilder",
       "category": "quality",
       "intro": [
@@ -616,6 +657,43 @@
         "Sugargoo beskriver att de vanligtvis tillhandahåller fem standardbilder för QC, med ett inspektionsomfång som beror på artikel och beställningstyp. Antalet bilder garanterar inte vad som kan verifieras. Den här webbplatsens cnbuycha-referensbilder är katalogmaterial, inte verifierad QC av din personliga Sugargoo-order; granska ditt eget lagerunderlag innan du ordnar internationell frakt."
       ],
       "sections": [
+        {
+          "id": "product-qc-checklist",
+          "title": "QC-kontroller på bilder av skor, kläder och väskor",
+          "paragraphs": [
+            "Börja med att jämföra order, färg, storlek och antal. Granska därefter detaljer som kan påverka om du vill behålla varan. Checklistan är ett praktiskt stöd för bildgranskning, inte en garanti för att vanlig QC omfattar varje vinkel eller mätning. Be om det specifika underlag som saknas och kontrollera eventuell serviceavgift innan du går vidare.",
+            "En väska som bara fotograferats framifrån visar exempelvis inte remmens fäste eller insidans skick. Be om relevant vinkel om detaljen är viktig för dig. Behövs ett mått, ange mätningens ändpunkter och be att måttbandet syns. Bilder kan inte fastställa varje funktionell egenskap och bevisar inte äkthet."
+          ],
+          "table": {
+            "headers": [
+              "Produkttyp",
+              "Kontrollera på dina orderbilder",
+              "Be om detta vid oklarhet"
+            ],
+            "rows": [
+              [
+                "Skor",
+                "Par, storleksetiketter, sulor och synliga sömmar",
+                "Båda storleksetiketterna och relevant vinkel på sula eller söm"
+              ],
+              [
+                "Kläder",
+                "Storleksetikett, tygets utseende och sömmar",
+                "Ett plant mått med tydlig start- och slutpunkt"
+              ],
+              [
+                "Väskor",
+                "Remmar, fästen, foder och tillbehör",
+                "Närbilder på insida och fästpunkter"
+              ],
+              [
+                "Alla varor",
+                "Rätt variant, antal och synliga skador",
+                "En tydlig bild av den specifika avvikelsen"
+              ]
+            ]
+          }
+        },
         {
           "id": "match-the-order",
           "title": "Fastställ vilken artikel bilderna hör till",
@@ -698,13 +776,15 @@
       "related": [
         "sugargoo-returns-refunds",
         "sugargoo-rehearsal-shipping"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoos fraktkalkylator: bygg en realistisk paketbudget",
-      "description": "Uppskatta frakten med rätt destination, produktkategori, vikt och mått och jämför sedan rutternas fullständiga kostnader.",
+      "title": "Sugargoo fraktkalkylator: vikt, mått och totalkostnad",
+      "description": "Använd Sugargoos fraktkalkylator med realistisk vikt och realistiska mått. Jämför godkända fraktalternativ och förstå vad uppskattningen lämnar osäkert.",
       "keyword": "Sugargoo fraktkalkylator",
       "category": "shipping",
       "intro": [
@@ -712,6 +792,14 @@
         "Sugargoos officiella kalkylatorvägledning använder destination, artikelkategori, vikt och mått för att jämföra tillgängliga fraktalternativ. Se resultatet som ett daterat scenario och uppdatera det när du lär dig mer om det packade paketet. Den här guiden visar hur du bygger sådana scenarier och identifierar osäkerhet innan den blir ett problem vid betalningen."
       ],
       "sections": [
+        {
+          "id": "quote-comparison",
+          "title": "Gör två uppskattningar innan du köper varorna",
+          "paragraphs": [
+            "Gör först ett scenario med bästa tillgängliga vikt och mått och sedan ett försiktigare scenario som tar höjd för osäker förpackning. Behåll samma destination, innehåll och övriga inställningar. Om ordern bara ryms i budgeten med de mest optimistiska antagandena behöver du lösa osäkerheten innan du betalar varorna.",
+            "Anteckna offertdatum, fraktalternativ, enheter, uppskattade mått och valda tillägg. Ersätt antaganden med uppmätta paketuppgifter när de finns. För USA använder du den separata USA-guidens jämförelsemetod; för flera lagrade order jämför du fullständiga samlade och uppdelade kostnader med konsolideringsguiden."
+          ]
+        },
         {
           "id": "collect-the-inputs",
           "title": "Samla uppgifter innan du jämför priser",
@@ -792,15 +880,17 @@
         }
       ],
       "related": [
-        "sugargoo-rehearsal-shipping",
-        "sugargoo-fees-payment"
-      ]
+        "sugargoo-shipping-to-usa",
+        "sugargoo-parcel-consolidation"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo Rehearsal Shipping: när bättre mått hjälper",
-      "description": "Avgör om provpackning är användbar, förbered tydliga packningsinstruktioner och använd resultatet för att jämföra tillåtna fraktrutter.",
+      "title": "Sugargoo provpackning: vikt, mått och när tjänsten hjälper",
+      "description": "Avgör när Sugargoo provpackning är användbar, ange förpackningsval och jämför det uppmätta paketet med din ursprungliga fraktuppskattning.",
       "keyword": "Sugargoo provpackning",
       "category": "shipping",
       "intro": [
@@ -808,6 +898,14 @@
         "Sugargoo beskriver rehearsal som en paketsimulering före frakt som ger mer noggrann vikt- och volyminformation. Se det som ett beslut om mätning och packning och kontrollera aktuella tjänstevillkor och kostnad i ditt konto. Den praktiska nyttan uppstår när du vet vad du tänker göra med resultatet."
       ],
       "sections": [
+        {
+          "id": "rehearsal-decision",
+          "title": "När är en provpackning värd att överväga?",
+          "paragraphs": [
+            "Överväg provpackning när okända yttermått kan förändra ditt fraktval eller din budget: en skrymmande lätt vara, flera butikskartonger eller ett paket nära en tjänsts gräns. Skriv ned vilken osäkerhet du vill lösa och kontrollera aktuell avgift. Om beslutet skulle bli samma vid rimliga uppskattningar kan den extra mätningen ge mindre värde.",
+            "Jämför resultatet med dina ursprungliga uppgifter: faktisk vikt, yttermått, sparad förpackning och valda tjänster. Räkna om enligt fraktalternativets aktuella debiteringsregel. Mindre mått garanterar inte en lägre sluträkning eftersom minimiavgifter, viktsteg och andra alternativ fortfarande kan spela in."
+          ]
+        },
         {
           "id": "identify-the-decision",
           "title": "Definiera osäkerheten du vill lösa med provpackning",
@@ -888,9 +986,11 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-calculator",
-        "sugargoo-warehouse-storage"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-shipping-calculator"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-tracking",
@@ -1014,7 +1114,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-warehouse-storage"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-fees-payment",
@@ -1142,7 +1244,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-returns-refunds"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-warehouse-storage",
@@ -1240,9 +1344,11 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-rehearsal-shipping"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-order-status"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-returns-refunds",
@@ -1342,13 +1448,15 @@
       "related": [
         "sugargoo-qc-photos",
         "sugargoo-fees-payment"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian- och Taobao-länkar på Sugargoo: verifiera den exakta produkten",
-      "description": "Kopiera rätt källadress, behåll produktidentiteten och kontrollera varianter på Sugargoo, med en stödd manuell beställningsväg när automatisk inläsning misslyckas.",
+      "title": "Weidian- och Taobao-länkar i Sugargoo: kontrollera och rätta fel",
+      "description": "Kontrollera produktlänkar från Weidian och Taobao före köp på Sugargoo. Lös saknade annonser, fel varianter och tolkningsfel utan att gissa.",
       "keyword": "Weidian till Sugargoo",
       "category": "getting-started",
       "intro": [
@@ -1356,6 +1464,14 @@
         "Den här guiden förklarar vad du ska kopiera, hur du känner igen en felmatchad annons och vad du kan göra om automatisk inläsning misslyckas. Den skiljer också källmarknadsplatsens produkt-ID från katalogens interna sididentifierare, så att en bekväm köpknapp inte blir ett skäl att hoppa över slutkontrollerna."
       ],
       "sections": [
+        {
+          "id": "link-error-check",
+          "title": "Vad kontrollerar du när en produktlänk inte laddas?",
+          "paragraphs": [
+            "Öppna först originalets produktsida och kontrollera att den fortfarande avser rätt vara. En butiks startsida, förkortad delningstext eller borttagen annons motsvarar inte en fullständig produktadress. Jämför marknadsplatsens produkt-ID innan du försöker igen. Ta bort ovidkommande delningstext utan att ändra varans identitet.",
+            "Om originalvaran finns men automatisk tolkning misslyckas, kontrollera officiella alternativ för manuella order och deras acceptansvillkor. Håll säljare, exakt variant, antal, produktadress och prisinformation tillsammans. Ett manuellt formulär upphäver inte produktbegränsningar och garanterar inte tillgänglighet. Välj en annan kandidat om den aktuella annonsen inte kan verifieras, i stället för att gissa från bilden."
+          ]
+        },
         {
           "id": "source-identity",
           "title": "1. Börja med artikelannonsen, inte ett sökresultat",
@@ -1442,6 +1558,409 @@
       "related": [
         "sugargoo-spreadsheet-guide",
         "how-to-buy-on-sugargoo"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Sugargoo-frakt till USA: kostnader, vikt och leverans",
+      "description": "Planera Sugargoo-frakt till USA: jämför paketvikt, mått, fraktvillkor och leveranssteg innan du betalar internationell frakt.",
+      "keyword": "sugargoo frakt till USA",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoo-frakt till USA är ett separat beslut från köpet av varorna. Börja med din leveransadress, produkterna du vill skicka och en uppskattning av deras packade vikt och storlek. Jämför sedan de fraktalternativ som faktiskt erbjuds i ditt konto. Priset för någon annans paket är bara en referens: dess destination, datum, mått och innehåll kan skilja sig från dina.",
+        "Den här guiden ger en jämförelsemetod, inte ett fast pris eller leveranslöfte. SugargooTab är en oberoende katalog och kan inte lämna offert, skicka eller spåra paketet för Sugargoos räkning. Använd den officiella kalkylatorn för planering och den slutliga paketvyn för betalningsbeslutet. Spara vad offerten omfattar så att senare ändringar går att förstå."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Skilj varuinköp från budgeten för USA-paketet",
+          "paragraphs": [
+            "Dela budgeten i två steg. Det första omfattar valda varor och inrikes leverans i Kina, samt eventuella avgifter i kassan eller för betalning. Det andra omfattar internationell frakt och tjänster som valts för paketet. Destinationsrelaterade avgifter kan också behöva räknas med. Anta inte att produktpriset i katalogen inkluderar något av leveransstegen.",
+            "Använd en exempelbudget för att pröva beslutet, inte för att förutsäga en offert. Om din utgiftsgräns är 150 dollar och varorna redan kostar 110 dollar måste återstående 40 dollar täcka allt som ännu inte betalats. Överstiger aktuell fraktuppskattning den summan, ändra ordern innan du lägger till fler produkter. Att låna en lägre siffra från ett gammalt inlägg fyller inte luckan.",
+            "Spara uppskattningens datum och inmatade värden intill beloppet. Notera om packningstjänster och eventuellt extra skydd ingår och om destinationsavgifter förklaras i fraktvillkoren. Markera okända kostnader som okända. Det är mer användbart än att visa en exakt totalsumma byggd på ofullständiga antaganden."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Ange destination, innehåll, vikt och mått",
+          "paragraphs": [
+            "Använd den verkliga destinationen i USA och de regionfält som kalkylatorn begär. Byt inte till en annan adress bara för att få attraktivare fraktalternativ. Beskriv produktkategorin korrekt, inklusive egenskaper som kan påverka transporten. En tjänst som accepterar vanliga kläder accepterar inte automatiskt batterier, vätskor eller alla andra varor som en marknadsplats säljer.",
+            "Innan varorna når lagret är vikt och mått planeringsantaganden. Var särskilt uppmärksam på skrymmande varor: en lätt jacka i en stor låda kan ge ett annat paket än en tätt packad tröja. När dina egna varor finns tillgängliga ersätter du gissningar med lageruppgifterna och, när det är användbart, resultaten från en provpackning.",
+            "Skriv enheter tillsammans med siffrorna. Gram och kilogram är inte utbytbara inmatningsvärden, och centimeter ska inte anges i ett fält för tum. Fel enhet kan göra en till synes konkurrenskraftig offert meningslös. Om uppskattningen verkar oväntat billig eller dyr kontrollerar du först adress, enheter, antal och produktkategori innan du drar slutsatser om fraktalternativet."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Förstå vilken vikt som används vid debitering",
+          "paragraphs": [
+            "Faktisk vikt mäter massa; volymvikt omvandlar paketets mått till ett debiteringsvärde enligt reglerna för valt fraktalternativ. Divisor, avrundning och minimiavgift kan variera. Läs tjänstens beskrivning i stället för att tillämpa samma formel på alla alternativ. Det högre värdet kan styra på en volymbaserad tjänst även när själva varorna är lätta.",
+            "Som enbart illustration har en låda på 40 × 30 × 25 cm en volym på 30 000 kubikcentimeter. En hypotetisk divisor på 6 000 skulle ge 5 kg volymvikt. Det betyder inte att din valda tjänst använder 6 000. Om den faktiska vikten var 3 kg skulle en tjänst som debiterar det högre värdet ändå kunna bedöma lådan som 5 kg innan avrundningsreglerna tillämpas.",
+            "Fråga om en ändrad förpackning skulle förändra yttermåtten tillräckligt för att påverka offerten. Att ta bort en onödig butikskartong kan hjälpa ibland, medan ömtåliga produkter kan behöva skyddet. Kontrollera slutmåtten igen efter överenskomna förpackningsval; anta inte att varje borttagen låda sparar pengar eller att varje förstärkning är värd sin extra vikt."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Jämför fraktalternativ med samma paketantaganden",
+          "paragraphs": [
+            "Gör en liten jämförelse med enbart tjänster som accepterar ditt paket. Beräkna varje alternativ med samma destination, innehåll, vikt och mått. Annars kan prisskillnaden bero på olika indata i stället för bättre service. Läs storleks- och viktgränser innan du lägger tid på ett alternativ som det färdiga paketet inte kan använda.",
+            "Granska vad den visade leveransuppskattningen mäter och vilka spårningssteg som syns. Säljarens försändelse till lagret i Kina är skild från den internationella resan, och förberedelse före överlämning till transportören kan lägga till ett steg. Behandla ett uppskattat intervall som planeringsinformation. Undvik köp för en orubblig deadline om du inte kan acceptera följderna av en försening.",
+            "Läs den valda tjänstens aktuella förklaring av inkluderade avgifter, tillägg, begränsningar och valfri försäkring. Spara formuleringen tillsammans med offerten. Om en viktig punkt är oklar, fråga officiell support före betalning och behåll svaret. Ett tjänstenamn eller en annan köpares skärmbild ersätter inte villkoren som gäller ditt paket."
+          ],
+          "table": {
+            "headers": [
+              "Jämförelsepunkt",
+              "Anteckna före betalning"
+            ],
+            "rows": [
+              [
+                "Godkänd användning",
+                "Tillåtet innehåll, destinationsområde och paketgränser"
+              ],
+              [
+                "Debiterbar vikt",
+                "Regel för faktisk vikt eller volymvikt, divisor och avrundning"
+              ],
+              [
+                "Visad totalsumma",
+                "Frakt, valda tillägg och tydligt angivna undantag"
+              ],
+              [
+                "Leveransinformation",
+                "Uppskattat intervall, överlämningssteg och spårningens omfattning"
+              ],
+              [
+                "Skydd",
+                "Aktuell omfattning, undantag och krav för skadeanmälan"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Håll produkt- och mottagaruppgifter konsekventa",
+          "paragraphs": [
+            "Använd korrekta produktbeskrivningar och de verkliga uppgifter som efterfrågas för försändelsen. Ha orderunderlag och betalningsbevis tillgängliga om förtydligande behövs. Kopiera inte en deklaration från ett orelaterat paket och välj inte en vilseledande beskrivning för att få ett alternativ att visas. Innehållet i din egen försändelse avgör vilka kontroller som är relevanta.",
+            "USA:s importregler och transportörernas upplägg kan förändras. Guiden ger därför ingen permanent skattegräns och lovar inte att en tjänst saknar tillkommande avgifter. Kontrollera aktuell destinationsinformation och valda tjänstevillkor när du ordnar frakten. Vid motstridiga uppgifter, be om förtydligande före betalning i stället för att behandla en reklamslogan som en fullständig förklaring.",
+            "Kontrollera mottagarens namn, adress och kontaktuppgifter i det officiella kontot. Att rätta ett fel före avsändning är enklare än att lösa en leveransavvikelse senare. Håll privata adresser och orderidentifierare borta från offentliga recensioner eller delade researchblad. En användbar offentlig jämförelse kan beskriva tjänsten och ungefärlig pakettyp utan att avslöja mottagaren."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Följ varje leveranssteg och agera på avvikelser",
+          "paragraphs": [
+            "Skilj säljarens inrikesspårning från den internationella paketreferensen. Ankomst till lagret betyder inte att paketet har lämnat Kina, och ett skapat spårningsnummer visar inte i sig att transportören har tagit emot det. Följ logistikposten för det inskickade paketet och notera den senaste daterade händelsen.",
+            "Om spårningen stannar, leta efter överlämning, informationsbegäran eller avvikelse innan du antar att paketet är förlorat. Spara senaste uppdateringen och ställ en specifik fråga till support om nästa förväntade steg. Lämna paketreferensen via den officiella privata kanalen. Upprepade sökningar på samma offentliga spårningssida löser inte saknade handlingar eller ett problem med mottagaradressen.",
+            "Kontrollera paket och innehåll omgående vid leverans och spara relevant emballage och bevis om något är fel. Varje anspråk beror på tjänsten och dess krav; köpt frakt är ingen heltäckande garanti. Anteckna faktiska steg och kostnader så att nästa uppskattning kan bygga på jämförbara underlag i stället för minnet. Gå igenom jämförelsen en sista gång före betalning och ta bort alternativ vars godkännande fortfarande är oklart. En användbar budget kräver en tillgänglig tjänst, korrekta uppgifter och begripliga villkor, inte bara den lägsta visade siffran."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bekräfta verklig destination i USA och tillåtet innehåll.",
+        "Skilj varubudgeten från internationell frakt och tillägg.",
+        "Använd konsekventa enheter och anteckna packade mått.",
+        "Jämför godkända tjänster med identiska indata.",
+        "Kontrollera aktuella fraktvillkor och korrekta försändelseuppgifter.",
+        "Spara slutofferten och följ spårningen för just detta paket."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: uppskatta internationella fraktkostnader",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: paketsimulering före avsändning",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: fraktbegränsningar",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo: problem med spårning",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Sugargoo orderstatus förklarad: från betalning till lager",
+      "description": "Förstå Sugargoos ordersteg, säljarens avsändning, lagerankomst och paketspårning. Lär dig vad du ska kontrollera när en order verkar ha fastnat.",
+      "keyword": "sugargoo orderstatus",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "En orderstatus hos Sugargoo beskriver ett steg i köpprocessen, inte hela resan hem till dig. Betalning, agentens inköp, säljarens avsändning, lagerhantering och internationell paketfrakt är separata steg. Börja med att identifiera om du tittar på en varuorder eller ett inskickat paket; de svarar på olika frågor och kan ha olika spårningsreferenser.",
+        "Formuleringarna på webbplatsen eller i appen kan variera mellan språk och gränssnittsversioner. Stegbeskrivningarna nedan förklarar vad du ska undersöka, utan att påstå att de återger varje aktuellt knappnamn. Öppna dina egna orderdetaljer för meddelanden, åtgärder och tidsstämplar. De uppgifterna är mer användbara än att jämföra en kort statusetikett med en främlings order."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "Börja med rätt varu- eller paketpost",
+          "paragraphs": [
+            "Spara originalets produktlänk, vald variant och Sugargoos orderreferens tillsammans. Har du köpt flera liknande varor, kontrollera säljare, färg, storlek och antal innan du kontaktar support. En uppdatering för en vara fastställer inte framstegen för en annan, även om båda betalades vid samma besök.",
+            "Använd en separat post för det internationella paket som skapas av lagrade varor. Ett paket kan innehålla flera order, medan ett orderproblem kan behöva hanteras innan ett paket skickas in. Skriv ned vilka varureferenser som hör till vilket paket. Den enkla skillnaden hindrar att säljarens inrikesnummer förväxlas med försändelsen till ditt land.",
+            "När en status ser oväntad ut, läs ordermeddelandena och senaste tidsstämpeln innan du agerar. En begäran om saknade val eller en betalningsjustering kan förklara varför inköpet inte går vidare. Spara relevant formulering i egna anteckningar, men skicka privata referenser och skärmbilder endast via den officiella supportkanalen."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "Betalning och inköp är olika steg",
+          "paragraphs": [
+            "Vid väntan på betalning ska du kontrollera att kassan faktiskt slutfördes. En vara i varukorgen eller en obetald order är inget bevis för att säljaren fått en köpbeställning. Har du ångrat köpet använder du avbokningsfunktionen för det steget i stället för att anta att ordern tas bort när du lämnar sidan.",
+            "Efter betalning bekräftar du transaktionen i kontot och granskar eventuella inköpsmeddelanden. Genomförd betalning bevisar inte att säljaren har skickat varan. Inköpssteget kan fortfarande bero på lagerstatus, vald variant, inrikesfrakt eller uppgifter som behövs för att beställa rätt. Svara på en specifik begäran i stället för att upprepade gånger betala en dubblettorder.",
+            "Om banken visar en debitering men ordern fortfarande verkar obetald, jämför referenser och betalningsstatus med officiell support innan du försöker igen. En bankpost och en orderuppdatering kan beskriva olika delar av betalningsprocessen. Spara underlag utan att publicera kortuppgifter, inloggningsuppgifter eller verifieringskoder. Fråga vilken transaktion som är kopplad till ordern och vilken åtgärd som faktiskt krävs."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "Köpt och skickad av säljaren betyder inte lagerklar",
+          "paragraphs": [
+            "I steget köpt kontrollerar du om säljaren lämnat inrikes fraktinformation. En köpbekräftelse gäller varuordern; den bekräftar inte internationell avsändning. Behöver du en säljaruppdatering, fråga i orderkonversationen så att begäran förblir kopplad till rätt vara och valda alternativ.",
+            "När säljaren skickar följer du inrikesspårningen för den ordern. Leverans till lagret är en annan händelse än lagerkontroll och lagring. En transportörsskanning som visar leverans kan komma före den färdiga lagerposten i kontot. Tolka inte den skillnaden ensam som bevis på saknade varor; kontrollera ordermeddelanden och hanteringsinformation.",
+            "Om säljaren bara skickar en del av ordern eller antalet verkar fel, ange uttryckligen vilka enheter som saknas. Ta med ursprungligt antal och aktuellt underlag. Ett meddelande som ”en av två skjortor saknas i den här ordern” är mer handlingsbart än ”mitt paket är fel”. Låt support avgöra om problemet gäller säljarens avsändning, en delad leverans eller lagerhantering."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "Ankomst till lagret är din kontrollpunkt",
+          "paragraphs": [
+            "När lagerbilder och detaljer för din egen order finns tillgängliga jämför du dem med den köpta varianten. Titta på etiketter, färg, antal, synligt skick och eventuella mått du har begärt. Katalogens referensbilder kan inte ersätta granskningen: de användes för att hitta produkter och visar inte skicket på exemplaret som mottagits åt dig.",
+            "Om en bild är otydlig, beskriv exakt vad som behöver synas. Be exempelvis om storleksetiketten eller ett mått där bandet börjar vid rätt söm. Ytterligare tjänster och deras tillgänglighet behöver kontrolleras i kontot. Vanlig visuell kontroll är inte ett äkthetsbevis eller funktionstest av varje produkt.",
+            "Lös en eventuell retur eller säljarfråga innan varan tas med i ett internationellt paket. Kontrollera villkor och tidsfrister snabbt i stället för att anta att lagringstiden också är en returfrist. Spara emballaget och underlagen som behövs för begäran. Godkännande, returporto och återbetalningshantering beror på ordern och aktuella efterköpsvillkor."
+          ],
+          "table": {
+            "headers": [
+              "Steg som du undersöker",
+              "Användbar kontroll",
+              "Nästa åtgärd"
+            ],
+            "rows": [
+              [
+                "Väntar på betalning",
+                "Order- och betalningsreferenser",
+                "Slutför eller avboka den avsedda ordern"
+              ],
+              [
+                "Inköp pågår",
+                "Variant, lagerstatus och ordermeddelanden",
+                "Besvara den specifika informationsbegäran"
+              ],
+              [
+                "Avsänt av säljaren",
+                "Inrikesspårning och antal",
+                "Kontrollera säljarens framsteg via ordern"
+              ],
+              [
+                "Lagerhantering",
+                "Ankomstpost och uppladdade bilder",
+                "Granska mottagen vara och lös problem"
+              ],
+              [
+                "Lagrad vara",
+                "Återstående lagringstid och QC-beslut",
+                "Planera ett godkänt paket före tidsfristen"
+              ],
+              [
+                "Inskickat paket",
+                "Paketreferens och logistikpost",
+                "Följ internationella fraktuppdateringar"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "Lagrade varor behöver fortfarande ett paketbeslut",
+          "paragraphs": [
+            "En lagrad vara är inte automatiskt på väg till din adress. Granska vilka varor som är klara, om de kan skickas tillsammans och hur mycket lagringstid varje vara har kvar. Följ nedräkningen och villkoren för den faktiska varan. Förlita dig inte på en enda lagringssiffra från en äldre artikel eller annan ordertyp.",
+            "Välj godkända varor till paketet, bekräfta mottagaruppgifterna och överväg packningstjänster som löser ett konkret problem. Jämför tillgängliga fraktalternativ med den resulterande vikten och måtten. Betalning av internationell frakt är ett separat beslut från den tidigare varubetalningen, och uppskattningen kan ändras när packningsantaganden ändras.",
+            "Efter inskickning använder du paketposten för avsändning och internationell spårning. Behåll varuposterna som underlag för vad paketet ska innehålla. Om paketet inte går vidare, fråga om dess senaste steg i stället för att åter öppna en allmän fråga om säljaren har skickat. Då riktas supportfrågan mot teamet och processen som kan besvara den."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Gör en fråga om fastnad status till en tydlig begäran",
+          "paragraphs": [
+            "Det finns ingen enda väntetid som gör alla order försenade. Säljarens lager, inrikes transport, lagerarbete och internationell överlämning följer olika processer. Läs den uppskattning eller begärda respons som visas för ditt ärende och jämför den senaste daterade händelsen med uppgifterna. En oförändrad etikett utan sammanhang räcker inte för att identifiera orsaken.",
+            "Skriv en kort supportbegäran med order- eller paketreferens, senaste daterade händelse, specifik avvikelse och den åtgärd du vill få förklarad. Exempel: ”Inrikestransportören visar leverans, men den här varan har ännu inga lagerbilder. Kan ni bekräfta mottagandet och nästa hanteringssteg?” Det är en fråga som kan kontrolleras mot dokumentationen.",
+            "Om du vill avboka, säg det innan hanteringen går längre. Tillgängliga åtgärder ändras efter inköp, säljarens avsändning och internationell frakt. Anta inte att en begäran garanterar godkännande eller omedelbar återbetalning till din ursprungliga betalningsmetod. Spara det officiella svaret, överenskommet nästa steg och förväntad uppföljning så att samma ärende kan fortsätta utan att sammanhang går förlorat. Anteckna datum för svar som ändrar nästa steg. När du återvänder till kontot hjälper det dig att skilja en ny begärd åtgärd från en fråga som support redan har löst."
+          ]
+        }
+      ],
+      "checklist": [
+        "Identifiera om problemet gäller en vara eller ett internationellt paket.",
+        "Kontrollera variant, antal och tillhörande orderreferens.",
+        "Läs meddelanden och tidsstämplar före en ny betalning.",
+        "Skilj inrikes leverans från lagerhantering.",
+        "Granska ditt eget QC-underlag och lagringens nedräkning.",
+        "Ställ en specifik fråga till support med relevant privat referens."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: beställningsflöde",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: avboka en order",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: lagring i lagret",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo: spåra en internationell order",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Sugargoo paketkonsolidering: packning och fraktkostnader",
+      "description": "Lär dig kombinera Sugargoo-order, jämföra samlade och delade paket, välja emballage och kontrollera den slutliga fraktofferten.",
+      "keyword": "sugargoo paketkonsolidering",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Paketkonsolidering hos Sugargoo innebär att välja godkända lagervaror för gemensam försändelse. Det kan förenkla pakethanteringen och minska upprepade grundavgifter, men ett större paket är inte automatiskt billigare. Packade mått, debiterbar vikt, produktbegränsningar och tillgängliga tjänster till din destination kan förändra resultatet.",
+        "Börja med varor som klarat din egen granskning och jämför sedan ett samlat alternativ med rimliga uppdelningar. Guiden ger en beslutsprocess för packning och en återanvändbar jämförelsechecklista. Den lovar ingen viss besparing, tjänst eller serviceavgift. Aktuella alternativ i Packing Center och den slutliga pakettofferten avgör vad som är tillgängligt för din order."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Kombinera bara varor som är redo att skickas",
+          "paragraphs": [
+            "Gör en kort inventering av varorna du vill skicka. Ta med orderreferens, antal, granskningsbeslut, tillgänglig viktinformation och återstående lagringstid. Markera allt med olösta frågor om storlek, skick eller säljare. Skicka inte in ett paket bara för att det mesta är klart när en viktig vara fortfarande behöver ett beslut.",
+            "Kontrollera kompatibilitet innan du grupperar allt. En produkt med batteri, vätska eller annan begränsad egenskap kan påverka vilka tjänster som accepterar paketet. Att två varor kan köpas visar inte att de kan dela vilken internationell frakt som helst. Bekräfta godkännandet för den verkliga kombinationen och destinationen innan du betraktar det samlade alternativet som möjligt.",
+            "Använd lagringsfrister för att fatta ett tydligt beslut om väntan. Väntar du på en säljare, jämför kostnaden och risken med väntan mot att skicka klara varor separat. Följ varje varas nedräkning i kontot och tillgängliga förlängningsvillkor. Använd inte en antagen universell lagringstid som skäl att lämna varor utan uppsikt."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "Jämför hela kostnaden för samlade och delade paket",
+          "paragraphs": [
+            "Skapa två eller tre realistiska alternativ: ett gemensamt paket, en uppdelning där en skrymmande vara skickas separat och, vid behov, en uppdelning på grund av oförenligt innehåll. Använd samma destination och samma totala mängd varor. Ett alternativ som tyst utelämnar en vara kan inte jämföras rättvist med ett som skickar allt.",
+            "Anteckna för varje alternativ antal paket, uppskattade packade mått och vikt, godkänd tjänst, fraktbelopp och valda packningstillägg. Summera kostnaden för varje paket i ett delat alternativ. Att jämföra den samlade kostnaden med bara den billigaste halvan av en uppdelning ger fel svar. Visa osäkra mått öppet i stället för att dölja dem i en exakt verkande totalsumma.",
+            "Använd ett hypotetiskt exempel för att förstå beslutet. Om en gemensam offert var 70 dollar och två separata var 38 och 42 dollar skulle uppdelad frakt kosta totalt 80 dollar före eventuella olika tillägg. Exemplet förutsäger inte dina priser och bevisar inte att samfrakt är bättre. En storleksgräns, ett skyddsbehov eller en tjänstebegränsning kan göra det samlade alternativet olämpligt."
+          ],
+          "table": {
+            "headers": [
+              "Beslutspunkt",
+              "Samlat paket",
+              "Delade paket"
+            ],
+            "rows": [
+              [
+                "Fraktjämförelse",
+                "Begär offert för hela varugruppen",
+                "Summera offerten för varje paket"
+              ],
+              [
+                "Mått",
+                "Kontrollera den slutliga ytterkartongen",
+                "Kontrollera varje ytterkartong separat"
+              ],
+              [
+                "Innehåll",
+                "Alla varor måste passa vald tjänst",
+                "Varje grupp behöver en godkänd tjänst"
+              ],
+              [
+                "Skydd",
+                "Kontrollera kontakt mellan olika varor",
+                "Räkna med upprepat emballage"
+              ],
+              [
+                "Tidsplanering",
+                "Kan vänta på den sista valda varan",
+                "Klara varor kan skickas in separat"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "Välj emballage för varan och kontrollera sedan kostnaden",
+          "paragraphs": [
+            "Fråga vilket problem varje packningsval ska lösa. Förstärkning kan minska klämrisk; invändig avdelning kan minska kontakt mellan varor; att behålla en passande butikskartong kan bevara formen eller hålla små tillbehör tillsammans. Välj en tillgänglig tjänst av konkret anledning, inte alla alternativ bara för att deras namn låter lugnande.",
+            "Att ta bort en kartong kan ändra både vikt och volym, men också avlägsna skydd eller förpackning som krävs för en pågående retur. Avgör varufrågan först och ange vad som får tas bort. ”Ta bort den yttre fraktkartongen men behåll produktlådan och tillbehören” är tydligare än en allmän instruktion att kasta allt emballage, förutsatt att tjänsten kan uppfylla önskemålet.",
+            "För kläder eller andra komprimerbara varor, kontrollera att packningsmetoden passar materialet och formen. Anta inte att komprimering är ofarlig för varje vara. För styva eller ömtåliga varor kan en alltför kraftigt minskad låda ge otillräckligt skydd. Fråga om tjänstens faktiska omfattning och bedöm sedan tilläggskostnad och packade mått tillsammans."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "Kontrollera måtten igen efter packningsvalen",
+          "paragraphs": [
+            "Summan av enskilda varuvikter är inte nödvändigtvis den slutliga paketvikten. Kartonger, stötdämpning och förstärkning bidrar till paketet, medan borttagning av tillåtet emballage kan minska vikten. Måtten beror också på hur innehållet passar ihop. Behandla en grov summa som planeringsunderlag, inte som en bekräftad frakträkning.",
+            "Provpackning kan vara användbar när ett beslut beror på mått eller en fraktgräns. Granska aktuell serviceavgift och vilken information som levereras innan du beställer. Skriv ned vilka packningsantaganden du vill få bedömda. Bättre mått är värdefulla när de avgör ett verkligt val; att köpa en tjänst utan en fråga att besvara ökar kostnaden utan att förbättra planen.",
+            "När måtten finns, gör om jämförelsen med den valda tjänstens debiteringsregel. Kontrollera faktisk vikt mot volymvikt, divisor där relevant, avrundning och storleksgränser. En liten minskning i centimeter kan vara betydelselös för en tjänst och viktig för en annan. Använd den verkliga omräknade offerten i stället för att anta att varje minskning direkt ger besparing."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Granska paketet innan du betalar frakten",
+          "paragraphs": [
+            "Välj de avsedda godkända varorna i Packing Center och kontrollera antalen. Bekräfta mottagaruppgifter, tillgängliga tjänster och vald frakt i inskickningsflödet. Gränssnittets formuleringar kan ändras, så läs hela sammanfattningen i stället för att följa en ihågkommen knappsekvens. Kontrollera att en vara som skulle hållas kvar för efterköpshantering inte har lagts till av misstag.",
+            "Håll instruktioner korta och specifika. Ange vilken produkt eller order instruktionen gäller och vad som ska sparas, tas bort eller skyddas. Om en instruktion kräver en betaltjänst, bekräfta tillgänglighet och avgift i stället för att anta att en fritextnotering beställer den. Lös motstridiga önskemål före packning, exempelvis att kasta en låda samtidigt som den ska bevaras oskadd.",
+            "Spara den färdiga paketsammanfattningen, valda tjänster och offertbeloppet. Om ett reviderat belopp visas, jämför vikt, mått och val med den tidigare uppskattningen. Fråga varför en väsentlig skillnad uppstått innan du bekräftar ett steg du inte förstår. Tydliga underlag gör det lättare att skilja ett ändrat antagande från en debiteringsfråga."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Spara paketunderlag och förbättra nästa jämförelse",
+          "paragraphs": [
+            "Efter inskickning följer du det internationella paketet i stället för de enskilda säljarförsändelserna. Spara inventeringen av ingående order tillsammans med paketreferensen. Har varor delats upp, håll separata poster så att en uppdatering om ett paket inte misstas för framsteg för alla. Matcha en leveransavisering med rätt innehåll.",
+            "Granska valfritt skydd genom dess faktiska villkor. Packningstjänster och försäkring löser olika problem och ingen av dem ska ses som ett villkorslöst löfte. Kontrollera aktuell omfattning, undantag och krav för anspråk innan du förlitar dig på tjänsten. Spara relevanta bevis och agera snabbt om mottaget paket eller innehåll skiljer sig från den bekräftade dokumentationen.",
+            "Spara till nästa order en privat jämförelse av planerad och slutlig vikt, mått, packningsval och fraktkostnad. Anteckna vilket antagande som ändrades och varför. Flera jämförbara paket kan förbättra budgeteringen, men skapar ändå ingen universell prislista. En annan produktmix, destination eller tjänst kräver en ny kontroll av godkännande och kostnad. Ett användbart konsolideringsbeslut slutar med ett namngivet alternativ och en anledning: lämpligt innehåll, acceptabelt skydd, en godkänd tjänst och en överkomlig fullständig offert. Om något är olöst, håll jämförelsen öppen tills du kan verifiera det."
+          ]
+        }
+      ],
+      "checklist": [
+        "Granska QC och lös efterköpsfrågor innan varor grupperas.",
+        "Kontrollera innehållets kompatibilitet och varje lagringsnedräkning.",
+        "Jämför alla kostnader för samma varor i samlade och delade alternativ.",
+        "Välj packningstjänster för specifika skyddsbehov.",
+        "Använd slutmått och den valda tjänstens debiteringsregler.",
+        "Bekräfta inventering, adress, tjänster och offert före betalning."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: kombinera flera order",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: paketsimulering före avsändning",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: packnings- och skyddsalternativ",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo: fraktbegränsningar",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ]
     }
   ]

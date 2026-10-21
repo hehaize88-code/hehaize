@@ -1,6 +1,6 @@
 export type Source = {title:string;url:string};
 export type Section = {id:string;title:string;paragraphs:string[];bullets?:string[];table?:{headers:string[];rows:string[][]}};
-export type Article = {id:string;slug:string;title:string;description:string;keyword:string;category:string;intro:string[];sections:Section[];checklist:string[];sources:Source[];related:string[]};
+export type Article = {id:string;slug:string;title:string;description:string;keyword:string;category:string;published:string;updated:string;intro:string[];sections:Section[];checklist:string[];sources:Source[];related:string[]};
 export type FAQ = {id:string;group:string;question:string;answer:string;sources:Source[]};
 export type Editorial = {locale:string;reviewed:string;ui:Record<string,string>;groups:Record<string,string>;faqs:FAQ[];articles:Article[]};
 const files=import.meta.glob('../content/editorial/??.json',{eager:true,import:'default'}) as Record<string,Editorial>;

@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Cikkek",
     "articleTitle": "Sugargoo vásárlási útmutatók",
-    "articleIntro": "Tíz gyakorlati útmutató a termékválasztáshoz, a részletek ellenőrzéséhez és az eladótól a kézbesítésig tartó út megtervezéséhez.",
+    "articleIntro": "Gyakorlati útmutatók termékhivatkozásokhoz, QC-fotókhoz, rendelési szakaszokhoz és szállítási döntésekhez, hivatalos forrásokkal és egyértelmű következő lépésekkel.",
     "faqTitle": "Sugargoo gyakori kérdések",
     "faqIntro": "Világos válaszok a rendelés minden szakaszához, hivatalos forrásokkal a platform szabályairól és az önálló katalógus korlátainak őszinte bemutatásával.",
     "readArticle": "Útmutató olvasása",
@@ -33,7 +33,12 @@
     "categoryShipping": "Szállítás és tárolás",
     "categoryAccount": "Fizetés és vásárlás utáni ügyintézés",
     "author": "A SugargooTab szerkesztősége",
-    "siteEvidence": "Erről a független katalógusról"
+    "siteEvidence": "Erről a független katalógusról",
+    "seoHomeTitle": "Sugargoo Spreadsheet: termékhivatkozások, fotók és vásárlási útmutatók",
+    "catalogCtaTitle": "Használja az ellenőrzőlistát a gyakorlatban",
+    "catalogCtaBody": "Hasonlítsa össze a katalógus termékhivatkozásait, majd vásárlás vagy feladás előtt ellenőrizze a pontos hirdetést és saját rendelésének adatait.",
+    "catalogCtaButton": "Termékhivatkozások böngészése",
+    "categoryCtaButton": "Termékkategóriák felfedezése"
   },
   "groups": {
     "basics": "Kezdő lépések",
@@ -415,8 +420,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo spreadsheet útmutató: terméklinkekből használható válogatás",
-      "description": "Hasonlítson össze konkrét ajánlatokat, ellenőrizze a változatokat, és tervezze meg a teljes rendelést a Sugargoo spreadsheet segítségével vásárlás előtt.",
+      "title": "Sugargoo Spreadsheet útmutató: termékhivatkozások ellenőrzése",
+      "description": "Keressen termékeket a Sugargoo Spreadsheetben, ellenőrizze az aktuális hirdetéseket és változatokat, és különítse el a mintaképeket saját raktári QC-fotóitól.",
       "keyword": "Sugargoo terméktáblázat",
       "category": "getting-started",
       "intro": [
@@ -424,6 +429,38 @@
         "Ez a független katalógus a termékadatokat és referenciafotókat a cnbuycha oldalról olvassa be. A rendelés és a fizetés a Sugargoon történik. Az alábbi módszer összeköti a két szakaszt anélkül, hogy a katalógusbejegyzést személyes ajánlásnak, készletgaranciának vagy raktári ellenőrzés bizonyítékának tekintené. Akkor is működik, ha a válogatását egyszerű jegyzetalkalmazásban vezeti."
       ],
       "sections": [
+        {
+          "id": "live-listing-check",
+          "title": "Az aktuális hirdetés ellenőrzése vásárlás előtt",
+          "paragraphs": [
+            "Nyissa meg a katalógus termékét, majd kövesse az eredeti hirdetés hivatkozását. Vesse össze a piactéri termékazonosítót, az eladót és a kiválasztott változatot a Sugargoo felületén látható termékkel. A katalógus belső oldalszáma külön azonosító. Közvetlenül fizetés előtt ellenőrizze újra az aktuális árat, az elérhető lehetőségeket és a mennyiséget; egy elmentett kártya nem igazolja a jelenlegi készletet.",
+            "Ha az eredeti hirdetés hiányzik, a termék nem tölthető be, vagy a változat eltér, ezen a ponton álljon meg. Térjen vissza a katalógushoz, és hasonlítson össze másik jelöltet. Jegyezze fel, miért nem felelt meg az első, hogy később ne ismételje ugyanazt az ellenőrzést. A mintaképek továbbra is a keresést segítő információk, még ha raktári fotókra hasonlítanak is."
+          ],
+          "table": {
+            "headers": [
+              "Ellenőrzés",
+              "Felhasználható bizonyíték"
+            ],
+            "rows": [
+              [
+                "A termék azonossága",
+                "Az eredeti piactéri URL és a termékazonosító"
+              ],
+              [
+                "Aktuális elérhetőség",
+                "Az eladó jelenlegi hirdetése és a kiválasztott lehetőség"
+              ],
+              [
+                "Ár",
+                "A pontos változat és a fizetéskor megjelenő összeg"
+              ],
+              [
+                "Állapot",
+                "Saját rendelésének fotói a raktári beérkezés után"
+              ]
+            ]
+          }
+        },
         {
           "id": "define-the-purchase",
           "title": "Először határozza meg, mire kell a termék",
@@ -506,7 +543,9 @@
       "related": [
         "how-to-buy-on-sugargoo",
         "sugargoo-qc-photos"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -600,15 +639,17 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-shipping-calculator"
-      ]
+        "sugargoo-order-status",
+        "sugargoo-spreadsheet-guide"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC-fotók: mit ellenőrizzen feladás előtt?",
-      "description": "Nézze át módszeresen a raktári képeket, kérjen hasznos méréseket, és ismerje meg a szemrevételezés bizonyító erejének korlátait.",
+      "title": "Sugargoo QC-fotók: termékellenőrzés feladás előtt",
+      "description": "Használjon gyakorlati Sugargoo QC-fotólistát cipőkhöz, ruhákhoz és táskákhoz. Feladás előtt ellenőrizze a címkéket, méreteket, varrásokat és hiányzó részleteket.",
       "keyword": "Sugargoo QC-fotók",
       "category": "quality",
       "intro": [
@@ -616,6 +657,43 @@
         "A Sugargoo általában öt alap QC-fotót említ; az ellenőrzés köre a terméktől és rendeléstípustól függ. A képek száma nem garantálja, mit lehet ellenőrizni. Az oldal cnbuycha referenciafotói katalógusanyagok, nem az Ön személyes Sugargoo rendelésének igazolt QC-képei; nemzetközi feladás előtt a saját raktári rekordját vizsgálja."
       ],
       "sections": [
+        {
+          "id": "product-qc-checklist",
+          "title": "Cipők, ruhák és táskák ellenőrzése QC-fotókon",
+          "paragraphs": [
+            "Kezdje a rendelés, a szín, a méret és a mennyiség egyeztetésével. Ezután vizsgálja meg azokat a részleteket, amelyek módosíthatják a termék megtartásáról szóló döntést. Az alábbi lista gyakorlati segítség a fotók áttekintéséhez; nem garantálja, hogy a szokásos QC minden nézetet vagy mérést tartalmaz. Kérje a konkrét hiányzó bizonyítékot, és továbblépés előtt ellenőrizze az esetleges szolgáltatási díjat.",
+            "Például egy csak elölről fényképezett táska nem mutatja meg a pánt rögzítését vagy a belső állapotot. Ha ez fontos, kérje a megfelelő nézetet. Ha mérés szükséges, adja meg a végpontokat, és kérjen jól látható mérőszalagot. A fotók nem bizonyítanak minden működési tulajdonságot, és nem igazolják az eredetiséget."
+          ],
+          "table": {
+            "headers": [
+              "Termék",
+              "Mit nézzen meg a rendelés fotóin",
+              "Ha nem egyértelmű, ezt kérje"
+            ],
+            "rows": [
+              [
+                "Cipők",
+                "A pár, a méretcímkék, a talpak és a látható varrások",
+                "Mindkét méretcímke és a megfelelő talp- vagy varrásnézet"
+              ],
+              [
+                "Ruházat",
+                "Méretcímke, az anyag megjelenése és a varrások",
+                "Síkban végzett mérés egyértelmű kezdő- és végponttal"
+              ],
+              [
+                "Táskák",
+                "Pántok, záródások, bélés és tartozékok",
+                "Közeli képek a belsőről és a rögzítési pontokról"
+              ],
+              [
+                "Bármely termék",
+                "A helyes változat, mennyiség és látható sérülés",
+                "A konkrét eltérés jól látható képe"
+              ]
+            ]
+          }
+        },
         {
           "id": "match-the-order",
           "title": "Állapítsa meg, melyik termékhez tartoznak a képek",
@@ -698,13 +776,15 @@
       "related": [
         "sugargoo-returns-refunds",
         "sugargoo-rehearsal-shipping"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo szállítási kalkulátor: készítsen reális csomagkeretet",
-      "description": "Becsülje a szállítást helyes célországgal, termékkategóriával, súllyal és méretekkel, majd hasonlítsa össze az útvonalak teljes költségét.",
+      "title": "Sugargoo szállítási kalkulátor: súly, méret és teljes költség",
+      "description": "Használja a Sugargoo szállítási kalkulátort reális súllyal és méretekkel. Hasonlítsa össze az engedélyezett útvonalakat és a becslés bizonytalanságait.",
       "keyword": "Sugargoo szállítási kalkulátor",
       "category": "shipping",
       "intro": [
@@ -712,6 +792,14 @@
         "A Sugargoo hivatalos kalkulátorútmutatója célország, termékkategória, súly és méretek alapján hasonlítja össze a szállítási lehetőségeket. Az eredményt dátumozott forgatókönyvként kezelje, majd frissítse, amikor többet tud a becsomagolt küldeményről. Ez az útmutató megmutatja, hogyan készítsen ilyen forgatókönyveket és ismerje fel a bizonytalanságot, mielőtt a fizetésnél gondot okozna."
       ],
       "sections": [
+        {
+          "id": "quote-comparison",
+          "title": "Készítsen két becslést a termékek megvásárlása előtt",
+          "paragraphs": [
+            "Állítson össze egy kiinduló változatot a legjobb rendelkezésre álló súly- és méretadatokkal, majd egy óvatosabb változatot, amely a csomagolás bizonytalanságával is számol. A célállomás, a tartalom és a többi beállítás maradjon azonos. Ha a rendelés csak a legoptimistább feltételezésekkel fér a keretbe, a termékek kifizetése előtt tisztázza a bizonytalanságot.",
+            "Jegyezze fel az ajánlat dátumát, az útvonalat, a mértékegységeket, a becsült méreteket és a kiválasztott kiegészítőket. Amint rendelkezésre állnak a csomag mért adatai, ezekkel váltsa fel a feltételezéseket. Amerikai célállomásnál használja a külön USA-útmutatót az összehasonlításhoz; több raktári rendelésnél az összevonási útmutató alapján vesse össze az egyesített és külön csomagok teljes költségét."
+          ]
+        },
         {
           "id": "collect-the-inputs",
           "title": "Árak összehasonlítása előtt gyűjtse össze a bemenő adatokat",
@@ -792,15 +880,17 @@
         }
       ],
       "related": [
-        "sugargoo-rehearsal-shipping",
-        "sugargoo-fees-payment"
-      ]
+        "sugargoo-shipping-to-usa",
+        "sugargoo-parcel-consolidation"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo próbacsomagolás: mikor segítenek a pontosabb mérések?",
-      "description": "Döntse el, hasznos-e a próbacsomagolás, adjon világos utasításokat, majd a mérési eredménnyel hasonlítsa össze a megfelelő szállítási útvonalakat.",
+      "title": "Sugargoo próbacsomagolás: súly, méret és mikor érdemes kérni",
+      "description": "Döntse el, mikor hasznos a Sugargoo próbacsomagolás, adja meg a csomagolási választásokat, és vesse össze a mért csomagot az eredeti fuvardíjbecsléssel.",
       "keyword": "Sugargoo próbacsomagolás",
       "category": "shipping",
       "intro": [
@@ -808,6 +898,14 @@
         "A Sugargoo a próbát feladás előtti csomagszimulációként írja le, amely pontosabb súly- és térfogatadatot ad. Mérési és csomagolási döntésként kezelje, az aktuális szolgáltatási feltételeket és árat pedig a fiókjában ellenőrizze. A gyakorlati értéket az adja, ha tudja, mire használja majd az eredményt."
       ],
       "sections": [
+        {
+          "id": "rehearsal-decision",
+          "title": "Mikor érdemes próbacsomagolást mérlegelni?",
+          "paragraphs": [
+            "Akkor mérlegelje a próbacsomagolást, ha az ismeretlen csomagméret megváltoztathatja az útvonalat vagy a költségkeretet: nagy térfogatú, könnyű tárgynál, több bolti doboznál vagy az útvonal határértékéhez közeli csomagnál. Írja le a tisztázandó bizonytalanságot, és ellenőrizze az aktuális szolgáltatási díjat. Ha ésszerű becslések mellett ugyanazt választaná, a további mérés kevésbé lehet értékes.",
+            "Vesse össze az eredményt az eredeti adatokkal: tényleges súly, külső méretek, megőrzött csomagolás és választott szolgáltatások. Számoljon újra az útvonal aktuális díjszabási szabálya szerint. A kisebb méret nem garantál alacsonyabb végösszeget, mert a minimumdíjak, a súlylépcsők és más lehetőségek továbbra is számíthatnak."
+          ]
+        },
         {
           "id": "identify-the-decision",
           "title": "Határozza meg, milyen bizonytalanságot kell feloldani",
@@ -888,9 +986,11 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-calculator",
-        "sugargoo-warehouse-storage"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-shipping-calculator"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-tracking",
@@ -1014,7 +1114,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-warehouse-storage"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-fees-payment",
@@ -1142,7 +1244,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-returns-refunds"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-warehouse-storage",
@@ -1240,9 +1344,11 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-rehearsal-shipping"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-order-status"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-returns-refunds",
@@ -1342,13 +1448,15 @@
       "related": [
         "sugargoo-qc-photos",
         "sugargoo-fees-payment"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian- és Taobao-linkek a Sugargoon: ellenőrizze a pontos terméket",
-      "description": "Másolja a megfelelő forrás-URL-t, őrizze meg a termékazonosságot, és ellenőrizze a változatokat; sikertelen automatikus betöltésnél használjon támogatott kézi rendelési folyamatot.",
+      "title": "Weidian- és Taobao-linkek a Sugargoo felületén: ellenőrzés és hibák",
+      "description": "Vásárlás előtt ellenőrizze a Weidian- és Taobao-termékhivatkozásokat a Sugargoo használatához. Találgatás nélkül tisztázza a hiányzó hirdetést, eltérő változatot és betöltési hibát.",
       "keyword": "Weidian link Sugargoohoz",
       "category": "getting-started",
       "intro": [
@@ -1356,6 +1464,14 @@
         "Ez az útmutató elmagyarázza, mit másoljon, hogyan ismerjen fel eltérő ajánlatot, és mit tegyen sikertelen automatikus betöltéskor. A forráspiactér termékazonosítóját is elkülöníti a katalógus belső oldalazonosítójától, hogy a kényelmes vásárlási gomb ne váljon a végső ellenőrzések kihagyásának indokává."
       ],
       "sections": [
+        {
+          "id": "link-error-check",
+          "title": "Mit ellenőrizzen, ha a termékhivatkozás nem töltődik be",
+          "paragraphs": [
+            "Először nyissa meg az eredeti termékoldalt, és győződjön meg arról, hogy továbbra is a kívánt terméket azonosítja. Egy üzlet főoldala, rövidített megosztási szöveg vagy eltávolított hirdetés nem helyettesíti a teljes termék-URL-t. Újabb próbálkozás előtt hasonlítsa össze a piactéri termékazonosítót. A nem kapcsolódó megosztási szöveget távolítsa el, ne a termék azonosságát változtassa meg.",
+            "Ha az eredeti termék létezik, de az automatikus betöltés nem működik, ellenőrizze a hivatalos kézi rendelési lehetőségeket és az elfogadás feltételeit. Tartsa együtt az eladót, a pontos változatot, a mennyiséget, a termék címét és az árat. A kézi űrlap nem írja felül a termékkorlátozásokat, és nem garantál elérhetőséget. Ha az aktuális hirdetés nem ellenőrizhető, válasszon másik jelöltet a kép alapján való találgatás helyett."
+          ]
+        },
         {
           "id": "source-identity",
           "title": "1. A konkrét termékoldalról induljon, ne keresési találatról",
@@ -1442,6 +1558,409 @@
       "related": [
         "sugargoo-spreadsheet-guide",
         "how-to-buy-on-sugargoo"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Sugargoo szállítás az USA-ba: költségek, súly és kézbesítés",
+      "description": "Tervezze meg a Sugargoo szállítást az USA-ba: fizetés előtt hasonlítsa össze a csomagsúlyt, méreteket, útvonalfeltételeket és kézbesítési szakaszokat.",
+      "keyword": "sugargoo szállítás usa",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "A Sugargoo szállítás az USA-ba a termékvásárlástól különálló döntés. Induljon ki a kézbesítési címből, a feladni kívánt termékekből, valamint csomagolt súlyuk és méretük becsléséből. Ezután hasonlítsa össze a fiókjában ténylegesen elérhető útvonalakat. Más csomagjának ára csak támpont: annak célállomása, dátuma, méretei és tartalma eltérhetnek az Önétől.",
+        "Ez az útmutató összehasonlítási módszert ad, nem rögzített árat vagy kézbesítési ígéretet. A SugargooTab független katalógus, és nem tud a Sugargoo nevében árajánlatot adni, csomagot feladni vagy követni. A tervezéshez használja a hivatalos kalkulátort, a fizetési döntéshez pedig a csomag végleges összesítőjét. Rögzítse, mit tartalmaz az ajánlat, így a későbbi változások érthetők maradnak."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Válassza külön a termékek és az amerikai csomag költségkeretét",
+          "paragraphs": [
+            "Két szakaszban írja össze a költségeket. Az első a kiválasztott árukat és a kínai belföldi kézbesítést, valamint a megjelenő vásárlási vagy fizetési díjakat tartalmazza. A második a nemzetközi fuvardíjat és a csomaghoz választott szolgáltatásokat. A célországhoz kapcsolódó díjakat is figyelembe kellhet venni. Ne feltételezze, hogy a katalógusban szereplő termékár bármelyik szállítási szakaszt tartalmazza.",
+            "Egy szemléltető keret a döntés ellenőrzésére szolgál, nem az ajánlat megjóslására. Ha saját költési határa 150 dollár, és a termékek már 110 dollárba kerülnek, a maradék 40 dollárnak kell fedeznie minden még ki nem fizetett tételt. Ha a jelenlegi szállítási becslés ezt meghaladja, további termékek hozzáadása előtt módosítsa a rendelést. Egy régi bejegyzés olcsóbb száma nem szünteti meg a hiányt.",
+            "Az összeg mellett őrizze meg a becslés dátumát és bemeneti adatait. Jegyezze fel, benne vannak-e a csomagolási szolgáltatások és az esetleges külön védelem, illetve az útvonalfeltételek tisztázzák-e a célállomási pótdíjakat. Az ismeretlen költséget jelölje ismeretlennek. Ez hasznosabb a hiányos feltételezésekből összeállított, pontosnak tűnő végösszegnél."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Adja meg a célállomást, tartalmat, súlyt és méreteket",
+          "paragraphs": [
+            "A kalkulátor által kért tényleges amerikai célállomást és régiót adja meg. Ne használjon más címet pusztán kedvezőbb útvonalak megjelenítéséhez. Pontosan írja le a termékkategóriát, beleértve a fuvarozást befolyásoló tulajdonságokat. A hétköznapi ruházatot fogadó útvonal nem feltétlenül fogad akkumulátort, folyadékot vagy minden más piactéri terméket.",
+            "A raktári beérkezés előtt a súly és a méret tervezési feltételezés. Külön figyeljen a nagy térfogatú tárgyakra: egy könnyű kabát nagy dobozban más csomagot adhat, mint egy szorosan csomagolt ing. Ha saját termékei már rendelkezésre állnak, a találgatásokat váltsa fel raktári adatokkal, és ahol hasznos, próbacsomagolási eredményekkel.",
+            "A számok mellett rögzítse a mértékegységeket. A gramm és kilogramm nem felcserélhető, és a centiméter nem írható a hüvelyk mezőjébe. Hibás egységgel egy versenyképesnek tűnő ajánlat értelmét vesztheti. Ha a becslés váratlanul olcsó vagy drága, először a címet, egységeket, mennyiséget és termékkategóriát ellenőrizze, csak utána vonjon le következtetést az útvonalról."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Értse meg a díjszámításnál használt súlyt",
+          "paragraphs": [
+            "A tényleges súly a tömeget méri; a térfogatsúly a csomag méreteit alakítja át díjszámítási értékké a választott útvonal szabályai alapján. Az osztó, a kerekítés és a minimumdíj eltérhet. Olvassa el az útvonal leírását, ne egyetlen képletet alkalmazzon minden lehetőségre. Térfogatalapú elszámolásnál a nagyobb érték akkor is számíthat, ha maga az áru könnyű.",
+            "Kizárólag szemléltetésként egy 40 × 30 × 25 cm-es doboz térfogata 30 000 köbcentiméter. Egy feltételezett 6000-es osztó 5 kg térfogatsúlyt eredményezne. Ez nem jelenti azt, hogy az Ön útvonala 6000-et használ. Ha a tényleges súly 3 kg lenne, a nagyobb értékkel számoló útvonal a kerekítési szabályok előtt is 5 kg-nak tekinthetné ezt a dobozt.",
+            "Kérdezze meg, hogy a csomagolás módosítása eléggé megváltoztatná-e a méreteket az ár változásához. Egy felesleges bolti doboz eltávolítása néha segít, törékeny terméknek viszont szüksége lehet erre a védelemre. A megbeszélt csomagolás után újra ellenőrizze a végleges méréseket; ne tekintsen minden eltávolított dobozt megtakarításnak, vagy minden megerősítést a pluszsúlyával arányosan hasznosnak."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Azonos csomagfeltételekkel hasonlítsa össze az útvonalakat",
+          "paragraphs": [
+            "Készítsen rövid összehasonlítást kizárólag a csomagot elfogadó útvonalakról. Mindegyiket azonos célállomásra, tartalomra, súlyra és méretre árazza be. Ellenkező esetben az árkülönbség oka eltérő adat lehet, nem jobb szolgáltatás. Olvassa el a méret- és súlykorlátokat, mielőtt egy kész csomagjához nem használható lehetőségre időt szánna.",
+            "Ellenőrizze, mire vonatkozik a megjelenő kézbesítési becslés, és mely követési szakaszok láthatók. Az eladó kínai raktárba történő feladása különbözik a nemzetközi úttól, és a fuvarozói átadás előtti előkészítés további szakaszt jelenthet. A becsült időtartományt tervezési információként kezelje. Ne vásároljon elmozdíthatatlan határidőre, ha nem tudja vállalni a késés következményeit.",
+            "Olvassa el a választott útvonal aktuális tájékoztatását a benne foglalt díjakról, pótdíjakról, korlátozásokról és választható biztosításról. Mentse el a szöveget az ajánlattal együtt. Ha fontos pont nem világos, fizetés előtt kérdezze meg a hivatalos ügyfélszolgálatot, és őrizze meg a választ. Az útvonal neve vagy más vásárló képernyőképe nem helyettesíti saját csomagja feltételeit."
+          ],
+          "table": {
+            "headers": [
+              "Összehasonlítás",
+              "Fizetés előtt rögzítendő"
+            ],
+            "rows": [
+              [
+                "Igénybe vehetőség",
+                "Engedélyezett tartalom, célterület és csomagkorlátok"
+              ],
+              [
+                "Számlázási súly",
+                "Tényleges vagy térfogati szabály, osztó és kerekítés"
+              ],
+              [
+                "Megjelenő végösszeg",
+                "Fuvardíj, választott kiegészítők és egyértelmű kizárások"
+              ],
+              [
+                "Kézbesítési információ",
+                "Becsült időtartomány, átadási szakasz és követési lefedettség"
+              ],
+              [
+                "Védelem",
+                "Aktuális fedezet, kizárások és igényérvényesítési követelmények"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Tartsa összhangban a termék- és címzettadatokat",
+          "paragraphs": [
+            "Pontos termékleírásokat és a küldeményhez kért tényleges adatokat használja. Tartsa kéznél a rendelés és a fizetés bizonyítékát, ha tisztázásra lenne szükség. Ne másolja át egy másik csomag nyilatkozatát, és ne válasszon félrevezető leírást egy útvonal megjelenítéséhez. Saját küldeményének tartalma határozza meg a szükséges ellenőrzéseket.",
+            "Az amerikai importszabályok és a fuvarozói feltételek változhatnak. Ez az útmutató szándékosan nem ad állandó adómentességi határt, és nem ígéri, hogy egy útvonalon nincsenek további díjak. Feladáskor ellenőrizze a célország aktuális útmutatását és a választott szolgáltatás feltételeit. Ellentmondás esetén fizetés előtt kérjen tisztázást, ne tekintsen egy reklámmondatot teljes magyarázatnak.",
+            "A hivatalos fiókban ellenőrizze a címzett nevét, címét és kapcsolattartási adatait. Feladás előtt könnyebb hibát javítani, mint később kézbesítési problémát megoldani. A magáncímeket és rendelési azonosítókat ne tegye közzé értékelésekben vagy megosztott kutatási táblákban. Hasznos nyilvános összehasonlítás a címzett felfedése nélkül is leírhatja az útvonalat és a hozzávetőleges csomagtípust."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Kövesse a kézbesítés szakaszait, és reagáljon az eltérésekre",
+          "paragraphs": [
+            "Különböztesse meg az eladó belföldi követését a nemzetközi csomag azonosítójától. A raktári beérkezés nem jelenti Kína elhagyását, és egy létrehozott követési szám önmagában nem igazolja a fuvarozói átvételt. Kövesse a feladott csomaghoz tartozó logisztikai bejegyzéseket, és jegyezze fel a legutóbbi dátumozott eseményt.",
+            "Ha a követés szünetel, előbb keressen átadást, adatkérést vagy rendkívüli eseményt, és csak utána feltételezzen elvesztést. Mentse el az utolsó frissítést, és konkrétan kérdezzen rá a következő várható lépésre. A csomagazonosítót hivatalos, privát csatornán adja meg. Ugyanazon nyilvános követési keresés ismétlése nem oldja meg a hiányzó iratokat vagy a címzettcím hibáját.",
+            "Kézbesítéskor hamar vizsgálja meg a csomagot és tartalmát; probléma esetén őrizze meg a releváns csomagolást és bizonyítékokat. Az igényérvényesítés az adott szolgáltatástól és követelményeitől függ; a szállítás megvásárlása nem általános garancia. Jegyezze fel a tényleges szakaszokat és költségeket, hogy a következő becslés emlékezet helyett összehasonlítható adatokból induljon ki. Fizetés előtt még egyszer nézze át az összehasonlítást, és zárja ki a tisztázatlanul igénybe vehető útvonalakat. Használható költségkerethez elérhető szolgáltatás, pontos adatok és érthető feltételek kellenek, nem pusztán a legalacsonyabb szám."
+          ]
+        }
+      ],
+      "checklist": [
+        "Erősítse meg a tényleges amerikai célállomást és az engedélyezett tartalmat.",
+        "Válassza külön a termékkeretet a nemzetközi fuvardíjtól és kiegészítőktől.",
+        "Használjon következetes egységeket, és rögzítse a csomagolt méreteket.",
+        "Az engedélyezett útvonalakat azonos adatokkal hasonlítsa össze.",
+        "Ellenőrizze az aktuális útvonalfeltételeket és a helyes küldeményadatokat.",
+        "Mentse el a végső ajánlatot, és kövesse az adott csomag bejegyzéseit."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: A nemzetközi szállítás költségének becslése",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Feladás előtti csomagolási szimuláció",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: Szállítási korlátozások",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo: Követési problémák",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Sugargoo rendelési állapotok: fizetéstől a raktárig",
+      "description": "Ismerje meg a Sugargoo rendelési szakaszait, az eladói feladást, a raktári érkezést és a csomagkövetést. Tudja meg, mit ellenőrizzen elakadásnál.",
+      "keyword": "sugargoo rendelési állapot",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "A Sugargoo rendelési állapota a vásárlás egy szakaszát írja le, nem a teljes utat az ajtajáig. A fizetés, a közvetítő vásárlása, az eladói feladás, a raktári feldolgozás és a nemzetközi csomagfeladás külön lépések. Először döntse el, hogy termékrendelést vagy feladott csomagot néz; ezek eltérő kérdésekre válaszolnak és külön követési azonosítójuk lehet.",
+        "A weboldal vagy alkalmazás megnevezései nyelv és felületmódosítás szerint változhatnak. Az alábbi szakaszleírások azt magyarázzák el, mit érdemes vizsgálni, nem állítják, hogy minden aktuális gombfeliratot visszaadnak. Saját rendelésében nézze meg az üzeneteket, elérhető műveleteket és időpontokat. Ezek hasznosabbak annál, mint egy rövid állapotot egy idegen rendelésével összevetni."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "A megfelelő termék- vagy csomagbejegyzésből induljon ki",
+          "paragraphs": [
+            "Tartsa együtt az eredeti termékhivatkozást, a kiválasztott változatot és a Sugargoo rendelési azonosítót. Több hasonló termék vásárlásakor az ügyfélszolgálat megkeresése előtt ellenőrizze az eladót, a színt, a méretet és a mennyiséget. Az egyik termék frissítése nem mutatja a másik előrehaladását akkor sem, ha mindkettőt egy látogatáskor fizette ki.",
+            "A raktározott termékekből létrehozott nemzetközi csomaghoz vezessen külön nyilvántartást. Egy csomag több rendelést tartalmazhat, míg egy rendelési problémát még a csomag benyújtása előtt rendezni kellhet. Írja fel, mely rendelési azonosítók mely csomaghoz tartoznak. Ez az egyszerű különbségtétel megakadályozza, hogy az eladó belföldi követési számát a saját országába tartó küldeménnyel tévessze össze.",
+            "Ha egy állapot váratlan, cselekvés előtt olvassa el a rendelés üzeneteit és a legutóbbi időpontot. Hiányzó változat vagy fizetési korrekció kérése magyarázhatja, miért nem haladt a vásárlás. A lényeges szöveget őrizze meg saját jegyzeteiben, de privát azonosítót és képernyőképet kizárólag hivatalos ügyfélszolgálati csatornán küldjön."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "A fizetés és a vásárlás külön szakasz",
+          "paragraphs": [
+            "Fizetésre váró állapotnál ellenőrizze, hogy valóban befejezte-e a fizetést. A kosárban lévő tétel vagy ki nem fizetett rendelés nem bizonyítja, hogy az eladó megkapta a vásárlási kérést. Ha meggondolta magát, használja az adott szakaszban elérhető lemondási műveletet, ne feltételezze, hogy a képernyő elhagyása törli a rendelést.",
+            "Fizetés után igazolja vissza a tranzakciót a fiókban, és tekintse át a vásárlási üzeneteket. A befejezett fizetés nem igazolja, hogy az eladó feladta az árut. A vásárlási lépés még függhet készlettől, választott változattól, belföldi díjtól vagy a helyes rendeléshez szükséges információtól. A konkrét kérésre válaszoljon, ne egy második rendelést fizessen ki ismételten.",
+            "Ha a bank terhelést mutat, de a rendelés még fizetetlennek látszik, új próbálkozás előtt a hivatalos ügyfélszolgálattal vesse össze az azonosítókat és fizetési állapotot. A banki bejegyzés és a rendelés frissítése a folyamat eltérő részeit írhatja le. Őrizze meg a bizonyítékot kártyaadatok, belépési adatok és ellenőrzőkódok közzététele nélkül. Kérdezze meg, mely tranzakció kapcsolódik a rendeléshez, és mi a ténylegesen szükséges teendő."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "A megvásárolt vagy eladó által feladott áru még nem raktárkész",
+          "paragraphs": [
+            "Megvásárolt állapotnál ellenőrizze, hogy az eladó adott-e belföldi szállítási adatot. A vásárlási visszaigazolás a termékrendelésre vonatkozik, nem nemzetközi feladási igazolás. Ha eladói frissítést kér, a rendelés beszélgetésében tegye, hogy a kérés a megfelelő termékhez és változathoz kapcsolódjon.",
+            "Az eladó feladása után kövesse az adott rendelés belföldi szállítását. A raktárba kézbesítés külön esemény a raktári ellenőrzéstől és betárolástól. A fuvarozó kézbesítési bejegyzése megelőzheti a fiókban elkészült raktári rekordot. Ez az eltérés önmagában nem bizonyít áruhiányt; ellenőrizze az üzeneteket és feldolgozási információkat.",
+            "Ha az eladó csak a rendelés egy részét küldi, vagy a mennyiség hibásnak tűnik, pontosan sorolja fel a hiányzó darabokat. Adja meg az eredeti mennyiséget és az aktuális bizonyítékot. Az „ebből a rendelésből a két ing egyike hiányzik” üzenet jobban kezelhető, mint a „rossz a csomagom”. Az ügyfélszolgálat állapítsa meg, hogy eladói feladásról, megosztott kézbesítésről vagy raktári feldolgozásról van-e szó."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "A raktári érkezés az Ön ellenőrzési pontja",
+          "paragraphs": [
+            "Amint saját rendelésének raktári képei és adatai elérhetők, vesse össze őket a megvásárolt változattal. Nézze meg a címkéket, a színt, a mennyiséget, a látható állapotot és a kért méréseket. A katalógus mintaképei ezt nem helyettesítik: keresésre szolgáltak, és nem igazolják az Ön számára átvett példány állapotát.",
+            "Ha egy kép nem egyértelmű, pontosan írja le, minek kell látszania. Kérheti például a méretcímkét vagy a helyes varrásnál kezdődő mérőszalaggal készült mérést. A további szolgáltatásokat és elérhetőségüket a fiókban ellenőrizze. A szokásos szemrevételezés nem eredetiségigazolás és nem minden termék működési tesztje.",
+            "A lehetséges visszaküldést vagy eladói problémát még a nemzetközi csomagba helyezés előtt rendezze. Időben ellenőrizze az alkalmazható feltételeket és határidőket; ne feltételezze, hogy a raktározási idő egyben visszaküldési határidő is. Őrizze meg a kéréshez szükséges csomagolást és bizonyítékot. A jóváhagyás, visszapostázás és visszatérítés a rendeléstől és az aktuális értékesítés utáni feltételektől függ."
+          ],
+          "table": {
+            "headers": [
+              "Vizsgált szakasz",
+              "Hasznos ellenőrzés",
+              "Következő teendő"
+            ],
+            "rows": [
+              [
+                "Fizetésre vár",
+                "Rendelési és fizetési azonosítók",
+                "Fejezze be vagy mondja le a kívánt rendelést"
+              ],
+              [
+                "Vásárlás folyamatban",
+                "Változat, készlet és rendelési üzenetek",
+                "Válaszoljon a konkrét adatkérésre"
+              ],
+              [
+                "Eladói feladás",
+                "Belföldi követés és mennyiség",
+                "A rendelésen keresztül ellenőrizze az eladó előrehaladását"
+              ],
+              [
+                "Raktári feldolgozás",
+                "Érkezési bejegyzés és feltöltött fotók",
+                "Vizsgálja meg a kapott terméket és rendezze a problémákat"
+              ],
+              [
+                "Raktározott termék",
+                "Hátralévő tárolási idő és QC-döntés",
+                "A határidő előtt tervezzen megfelelő csomagot"
+              ],
+              [
+                "Benyújtott csomag",
+                "Csomagazonosító és logisztikai bejegyzések",
+                "Kövesse a nemzetközi szállítás frissítéseit"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "A raktározott termékhez még csomagdöntés szükséges",
+          "paragraphs": [
+            "A raktározott termék nincs automatikusan úton az Ön címére. Nézze át, mely áruk készek, utazhatnak-e együtt, és mennyi tárolási idő maradt mindegyiknek. Az adott termékhez látható visszaszámlálást és feltételeket kövesse. Ne támaszkodjon egy régi cikkből vagy más rendeléstípusból átvett egyetlen tárolási számra.",
+            "Válassza ki a csomagba tehető árukat, erősítse meg a címzett adatait, és ott mérlegeljen csomagolási szolgáltatást, ahol konkrét problémát old meg. A létrejövő súly és méret alapján hasonlítsa össze az elérhető útvonalakat. A nemzetközi fuvardíj fizetése külön döntés a korábbi termékfizetéstől, és a becslés változhat a csomagolási feltételek módosulásakor.",
+            "Benyújtás után a csomag rekordját használja a feladás és nemzetközi követés ellenőrzésére. A termékrekordokat őrizze meg a várt tartalom bizonyítékaként. Ha a csomag nem halad, annak legutóbbi szakaszáról kérdezzen, ne nyissa újra az általános kérdést, hogy az eladó feladta-e az árut. Így a megkeresés a válaszolni képes csapathoz és folyamathoz igazodik."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Az elakadt állapot kérdéséből legyen egyértelmű megkeresés",
+          "paragraphs": [
+            "Nincs egyetlen várakozási idő, amely után minden rendelés késésben lenne. Az eladói készlet, a belföldi szállítás, a raktári munka és a nemzetközi átadás külön folyamat. Olvassa el az ügyéhez megjelenő becslést vagy kért választ, majd vesse össze a legutóbbi dátumozott eseménnyel. Egy változatlan felirat háttérinformáció nélkül nem azonosítja az okot.",
+            "Írjon rövid megkeresést a rendelési vagy csomagazonosítóval, az utolsó dátumozott eseménnyel, a konkrét eltéréssel és a tisztázandó lépéssel. Például: „A belföldi fuvarozó kézbesítést mutat, de ehhez a termékhez még nincs raktári fotó. Megerősítenék az átvételt és a következő feldolgozási lépést?” Ez nyilvántartás alapján ellenőrizhető kérdés.",
+            "Ha lemondást szeretne, jelezze a további feldolgozás előtt. Az elérhető lépések vásárlás, eladói feladás és nemzetközi küldés után változnak. Ne feltételezze, hogy a kérés jóváhagyást vagy azonnali visszatérítést garantál az eredeti fizetési módra. Mentse el a hivatalos választ, az egyeztetett következő lépést és a várható folytatást, hogy ugyanazt az ügyet előzményvesztés nélkül vihesse tovább. Dátummal jegyezzen fel minden választ, amely megváltoztatja a következő teendőt. Későbbi visszatéréskor így megkülönböztetheti az újonnan kért műveletet egy már rendezett kérdéstől."
+          ]
+        }
+      ],
+      "checklist": [
+        "Állapítsa meg, hogy termékről vagy nemzetközi csomagról van-e szó.",
+        "Ellenőrizze a változatot, mennyiséget és a megfelelő rendelési azonosítót.",
+        "Újabb fizetés előtt olvassa el az üzeneteket és időpontokat.",
+        "Különítse el a belföldi kézbesítést a raktári feldolgozástól.",
+        "Vizsgálja meg saját QC-bizonyítékait és a tárolási visszaszámlálást.",
+        "A megfelelő privát azonosítóval tegyen fel egy konkrét kérdést az ügyfélszolgálatnak."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: A rendelés menete",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: Rendelés lemondása",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Raktári tárolás",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo: Nemzetközi rendelés követése",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Sugargoo csomagösszevonás: csomagolás és szállítási költség",
+      "description": "Ismerje meg a Sugargoo rendelések összevonását, az egyesített és külön csomagok összehasonlítását, a csomagolást és a végső szállítási ajánlat ellenőrzését.",
+      "keyword": "sugargoo csomagösszevonás",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "A Sugargoo csomagösszevonás a megfelelő raktári termékek közös feladásra történő kiválasztását jelenti. Egyszerűsítheti a csomagkezelést, és csökkentheti az ismétlődő induló szállítási díjakat, de a nagyobb csomag nem automatikusan olcsóbb. A csomagolt méretek, a számlázási súly, a termékkorlátozások és a célállomásra elérhető útvonalak módosíthatják az eredményt.",
+        "Saját ellenőrzésén már átesett termékekből induljon ki, majd az összevont lehetőséget hasonlítsa össze ésszerű különcsomagos változatokkal. Ez az útmutató csomagolási döntési folyamatot és újra használható ellenőrzőlistát ad. Nem ígér konkrét megtakarítást, útvonalat vagy szolgáltatási díjat. Az aktuális Packing Center-lehetőségek és a végleges csomagajánlat határozzák meg, mi érhető el az Ön rendeléséhez."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Csak útra kész termékeket vonjon össze",
+          "paragraphs": [
+            "Készítsen rövid leltárt a feladni kívánt termékekről. Adja meg a rendelési azonosítót, mennyiséget, ellenőrzési döntést, rendelkezésre álló súlyadatot és hátralévő tárolási időt. Jelölje a tisztázatlan méret-, állapot- vagy eladói problémákat. Ne nyújtson be csomagot csak azért, mert tartalmának nagy része kész, miközben egy fontos tétel még döntést igényel.",
+            "Az összevonás előtt ellenőrizze a termékek összeférhetőségét. Akkumulátor, folyadék vagy más korlátozott tulajdonság befolyásolhatja, mely útvonalak fogadják a csomagot. Két termék megvásárolhatósága nem bizonyítja, hogy együtt bármely nemzetközi útvonalon küldhetők. A közös lehetőség megvalósíthatónak tekintése előtt igazolja a tényleges kombináció és célállomás elfogadását.",
+            "A tárolási határidők alapján hozzon tudatos döntést a várakozásról. Ha egy eladóra vár, hasonlítsa össze a várakozás költségét és kockázatát a kész áruk külön feladásával. Kövesse minden termék fiókbeli visszaszámlálását és az elérhető hosszabbítás feltételeit. Feltételezett általános tárolási idővel ne indokolja az áruk felügyelet nélkül hagyását."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "A teljes összevont és külön költséget hasonlítsa össze",
+          "paragraphs": [
+            "Készítsen két-három reális változatot: egy közös csomagot, egy terjedelmes tárgyat különválasztó felosztást, és szükség esetén az összeférhetetlen tartalom miatti felosztást. Azonos célállomást és teljes termékkészletet használjon. Egy terméket észrevétlenül kihagyó változat nem hasonlítható méltányosan a mindent elszállító lehetőséghez.",
+            "Minden változatnál rögzítse a csomagszámot, becsült csomagolt méreteket és súlyt, megfelelő útvonalat, fuvardíjat és csomagolási kiegészítőket. A különcsomagos változatban minden csomag költségét adja össze. Az összevont ár összevetése csupán a külön szállítás olcsóbb felével hibás eredményt ad. A bizonytalan mérések maradjanak láthatók, ne rejtse őket pontosnak tűnő végösszegbe.",
+            "A döntés megértéséhez használjon feltételezett példát. Ha az összevont ajánlat 70 dollár, a két külön ajánlat pedig 38 és 42 dollár lenne, a külön fuvardíj összesen 80 dollár volna az eltérő kiegészítők előtt. Ez nem jósolja meg az Ön árait, és nem bizonyítja az összevonás előnyét. Méretkorlát, védelmi igény vagy útvonalkorlátozás alkalmatlanná teheti a közös változatot."
+          ],
+          "table": {
+            "headers": [
+              "Döntés",
+              "Összevont csomag",
+              "Külön csomagok"
+            ],
+            "rows": [
+              [
+                "Fuvardíj összevetése",
+                "Árazza be a teljes termékcsoportot",
+                "Adja össze minden csomag ajánlatát"
+              ],
+              [
+                "Méretek",
+                "Ellenőrizze a végleges külső dobozt",
+                "Minden külső dobozt külön ellenőrizzen"
+              ],
+              [
+                "Tartalom",
+                "Minden tételnek meg kell felelnie a választott szolgáltatásnak",
+                "Minden csoporthoz megfelelő szolgáltatás kell"
+              ],
+              [
+                "Védelem",
+                "Vizsgálja a különböző termékek érintkezését",
+                "Számoljon az ismétlődő csomagolóanyaggal"
+              ],
+              [
+                "Időzítés",
+                "Várhat az utolsó kiválasztott termékre",
+                "A kész áruk külön is benyújthatók"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "A termékhez válasszon csomagolást, majd ellenőrizze az árát",
+          "paragraphs": [
+            "Kérdezze meg, mit old meg az egyes csomagolási lehetőség. A megerősítés az összenyomódás veszélyét, a belső elválasztás a termékek érintkezését csökkentheti; a mérethez illő bolti doboz megőrizheti az alakot vagy együtt tarthatja a kis tartozékokat. Konkrét okból válasszon elérhető szolgáltatást, ne azért adjon hozzá minden lehetőséget, mert megnyugtató a neve.",
+            "A doboz eltávolítása a súlyt és térfogatot is megváltoztathatja, de védelmet vagy függőben lévő visszaküldéshez szükséges csomagolást is elvehet. Először döntsön a termékről, és határozza meg, mi távolítható el. „A külső szállítási kartont távolítsák el, de a termékdoboz és tartozékok maradjanak meg” egyértelműbb minden csomagolás kidobásának általános kérésénél, ha ezt a szolgáltatás támogatja.",
+            "Ruháknál vagy más összenyomható áruknál erősítse meg, hogy az ajánlott csomagolás megfelel az anyagnak és formának. Ne feltételezze, hogy a tömörítés minden terméknek ártalmatlan. Merev vagy törékeny tárgyaknál a doboz túlzott csökkentése elégtelen védelmet hagyhat. Kérdezzen rá a szolgáltatás tényleges tartalmára, majd a pluszköltséget a csomagolt méretekkel együtt értékelje."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "A csomagolás kiválasztása után mérjen újra",
+          "paragraphs": [
+            "A termékek egyedi súlyának összege nem feltétlenül azonos a kész csomag súlyával. A dobozok, párnázás és megerősítés hozzáadnak, az engedélyezett csomagolás eltávolítása csökkenthet rajta. A méretek a tartalom elrendezésétől is függnek. A durva összeget tervezési adatként kezelje, ne visszaigazolt fuvardíjként.",
+            "Próbacsomagolás akkor lehet hasznos, ha a döntés méretektől vagy útvonallimittől függ. Megrendelés előtt ellenőrizze az aktuális díjat és az átadott információk körét. Írja le az értékelni kívánt csomagolási feltételezéseket. A jobb mérés akkor értékes, ha valódi választást tisztáz; megválaszolandó kérdés nélküli szolgáltatás növeli a költséget a terv javítása nélkül.",
+            "A mérések birtokában ismételje meg az összehasonlítást a választott útvonal díjszámítása alapján. Ellenőrizze a tényleges és térfogatsúlyt, az alkalmazható osztót, a kerekítést és a méretkorlátokat. Néhány centiméter csökkentés az egyik útvonalon semmit, a másikon sokat változtathat. A ténylegesen újraszámolt ajánlatot használja, ne feltételezze, hogy minden csökkenés közvetlen megtakarítás."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Fuvardíjfizetés előtt nézze át a csomagot",
+          "paragraphs": [
+            "A Packing Centerben válassza ki a kívánt, megfelelő termékeket, és ellenőrizze mennyiségüket. A benyújtási folyamatban erősítse meg a címzett adatait, az elérhető szolgáltatásokat és az útvonalat. A felület szövege változhat, ezért a teljes összesítőt olvassa, ne emlékezetből kövesse a gombokat. Győződjön meg arról, hogy nem került bele véletlenül utólagos ügyintézésre visszatartani kívánt termék.",
+            "Az utasítás legyen rövid és konkrét. Azonosítsa az érintett terméket vagy rendelést, és mondja meg, mit kell megőrizni, eltávolítani vagy védeni. Ha az utasítás fizetős szolgáltatást igényel, igazolja annak elérhetőségét és díját; ne tekintse a szabad szöveges megjegyzést szolgáltatásvásárlásnak. Csomagolás előtt rendezze az ellentmondásokat, például egy doboz egyszerre kért kidobását és sértetlen megőrzését.",
+            "Mentse el az elkészült csomagösszesítőt, a kiválasztott szolgáltatásokat és ajánlati összeget. Módosított összegnél vesse össze a súlyt, méreteket és lehetőségeket a korábbi becsléssel. Kérdezzen rá a lényeges eltérés okára, mielőtt nem értett lépést hagy jóvá. Világos nyilvántartással könnyebb megkülönböztetni a módosult feltételezést a számlázási kérdéstől."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Őrizze meg a bizonyítékot, és javítsa a következő összehasonlítást",
+          "paragraphs": [
+            "Benyújtás után a nemzetközi csomagot kövesse, ne az egyedi eladói küldeményeket. A benne lévő rendelések leltárát tartsa a csomagazonosító mellett. Különválasztásnál külön nyilvántartás kell, hogy az egyik frissítését ne tekintse mindegyik előrehaladásának. A kézbesítési értesítést a megfelelő tartalomhoz társítsa.",
+            "A választható védelmet a tényleges szabályzata alapján vizsgálja. A csomagolás és biztosítás külön problémákat old meg, és egyik sem feltétel nélküli ígéret. Mielőtt szolgáltatásra támaszkodik, ellenőrizze az aktuális fedezetet, kizárásokat és igényérvényesítési követelményeket. Őrizze meg a megfelelő bizonyítékokat, és cselekedjen gyorsan, ha a kapott csomag vagy tartalom eltér a visszaigazolt adatoktól.",
+            "A következő rendeléshez magáncélra mentse el a tervezett és végleges súly, méret, csomagolás és szállítási költség összevetését. Jegyezze fel, mely feltételezés változott és miért. Több hasonló csomag javíthatja a költségtervezést, de nem hoz létre általános árlistát. Más termékösszetétel, célállomás vagy útvonal új jogosultsági és költségellenőrzést igényel. A használható összevonási döntés egy megnevezett lehetőséggel és indokkal zárul: megfelelő tartalom, elfogadható védelem, igénybe vehető útvonal és megfizethető teljes ajánlat. Ha valamelyik tisztázatlan, tartsa nyitva az összehasonlítást, amíg ellenőrizhetővé nem válik."
+          ]
+        }
+      ],
+      "checklist": [
+        "Csoportosítás előtt nézze át a QC-t és rendezze az utólagos ügyintézési kérdéseket.",
+        "Ellenőrizze a tartalom összeférhetőségét és minden tárolási visszaszámlálást.",
+        "Ugyanazon áruk összes költségét hasonlítsa össze együtt és külön.",
+        "Konkrét védelmi igényhez válasszon csomagolási szolgáltatást.",
+        "A végleges méreteket és a választott útvonal díjszámítását használja.",
+        "Fizetés előtt erősítse meg a leltárt, címet, szolgáltatásokat és ajánlatot."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Több rendelés egyesítése",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Feladás előtti csomagolási szimuláció",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: Csomagolási és védelmi lehetőségek",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo: Szállítási korlátozások",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ]
     }
   ]

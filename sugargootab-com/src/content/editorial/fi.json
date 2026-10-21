@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Artikkelit",
     "articleTitle": "Sugargoon osto-oppaat",
-    "articleIntro": "Kymmenen käytännön opasta tuotteen valintaan, tietojen tarkistamiseen ja matkan suunnitteluun myyjältä toimitukseen.",
+    "articleIntro": "Käytännön oppaita tuotelinkeistä, QC-kuvista, tilauksen vaiheista ja toimitusvalinnoista. Mukana viralliset lähteet ja selkeät seuraavat vaiheet.",
     "faqTitle": "Usein kysyttyä Sugargoosta",
     "faqIntro": "Selkeät vastaukset tilauksesi jokaiseen vaiheeseen, viralliset lähteet alustan säännöille ja avoimesti kerrotut rajoitukset tälle riippumattomalle tuoteluettelolle.",
     "readArticle": "Lue opas",
@@ -33,7 +33,12 @@
     "categoryShipping": "Kuljetus ja säilytys",
     "categoryAccount": "Maksut ja jälkipalvelut",
     "author": "SugargooTabin toimitus",
-    "siteEvidence": "Tietoa tästä riippumattomasta tuoteluettelosta"
+    "siteEvidence": "Tietoa tästä riippumattomasta tuoteluettelosta",
+    "seoHomeTitle": "Sugargoo Spreadsheet: tuotelinkit, kuvat ja osto-oppaat",
+    "catalogCtaTitle": "Ota tarkistuslista käyttöön",
+    "catalogCtaBody": "Vertaa luettelon tuotelinkkejä ja tarkista sitten täsmällinen ilmoitus sekä oman tilauksesi tiedot ennen ostamista tai lähettämistä.",
+    "catalogCtaButton": "Selaa tuotelinkkejä",
+    "categoryCtaButton": "Tutustu tuoteryhmiin"
   },
   "groups": {
     "basics": "Alkuun pääseminen",
@@ -415,8 +420,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo Spreadsheet -opas: Tee tuotelinkeistä hyödyllinen ehdokaslista",
-      "description": "Vertaa Sugargoo-taulukon avulla täsmällisiä myynti-ilmoituksia, tarkista tuotevaihtoehdot ja suunnittele koko tilaus ennen ostamista.",
+      "title": "Sugargoo Spreadsheet -opas: löydä ja tarkista tuotelinkit",
+      "description": "Löydä tuotteita Sugargoo-taulukosta, tarkista ajantasaiset ilmoitukset ja vaihtoehdot sekä erota viitekuvat oman tilauksesi varaston QC-kuvista.",
       "keyword": "sugargoo taulukko",
       "category": "getting-started",
       "intro": [
@@ -424,6 +429,38 @@
         "Tämä riippumaton luettelo lukee tuotetietonsa ja viitekuvansa cnbuychasta. Tilaaminen ja maksaminen tapahtuvat Sugargoossa. Seuraava menetelmä yhdistää nämä kaksi vaihetta käsittelemättä luettelomerkintää henkilökohtaisena suosituksena, varastosaatavuuden takuuna tai todisteena varastotarkastuksesta. Se toimii myös silloin, kun säilytät ehdokaslistaa yksinkertaisessa muistiinpanosovelluksessa."
       ],
       "sections": [
+        {
+          "id": "live-listing-check",
+          "title": "Näin tarkistat ajantasaisen ilmoituksen ennen ostamista",
+          "paragraphs": [
+            "Avaa luettelon tuote ja seuraa linkkiä alkuperäiseen ilmoitukseen. Vertaa kauppapaikan tuotetunnusta, myyjää ja valittua vaihtoehtoa Sugargoossa näkyvään tuotteeseen. Luettelon sisäinen sivunumero on erillinen tunniste. Tarkista ajantasainen hinta, saatavilla olevat vaihtoehdot ja määrä uudelleen juuri ennen maksamista; tallennettu tuotekortti ei todista tämänhetkistä varastotilannetta.",
+            "Keskeytä tässä vaiheessa, jos alkuperäinen ilmoitus puuttuu, tuote ei lataudu tai vaihtoehto poikkeaa haluamastasi. Palaa taulukkoon ja vertaa toista ehdokasta. Kirjaa, miksi ensimmäinen ei sopinut, jotta et toista samaa tarkistusta myöhemmin. Viitekuvat ovat edelleen tuotteiden löytämisen apuvälineitä, vaikka ne näyttäisivät varastokuvilta."
+          ],
+          "table": {
+            "headers": [
+              "Tarkistettava asia",
+              "Käytettävä näyttö"
+            ],
+            "rows": [
+              [
+                "Tuotteen tunnistetiedot",
+                "Alkuperäinen kauppapaikan URL ja tuotetunnus"
+              ],
+              [
+                "Ajantasainen saatavuus",
+                "Myyjän nykyinen ilmoitus ja valittu vaihtoehto"
+              ],
+              [
+                "Hintatieto",
+                "Täsmällinen vaihtoehto ja kassalla näkyvä summa"
+              ],
+              [
+                "Tuotteen kunto",
+                "Oman tilauksesi kuvat varastoon saapumisen jälkeen"
+              ]
+            ]
+          }
+        },
         {
           "id": "define-the-purchase",
           "title": "Aloita siitä, mihin tuotetta tarvitaan",
@@ -506,7 +543,9 @@
       "related": [
         "how-to-buy-on-sugargoo",
         "sugargoo-qc-photos"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -600,15 +639,17 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-shipping-calculator"
-      ]
+        "sugargoo-order-status",
+        "sugargoo-spreadsheet-guide"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoon laaduntarkastuskuvat: Mitä tarkistaa ennen lähettämistä",
-      "description": "Käy varastokuvat läpi järjestelmällisesti, pyydä hyödyllisiä mittoja ja ymmärrä, mitä silmämääräinen laaduntarkastus ei voi todistaa.",
+      "title": "Sugargoo QC-kuvat: tuotteen tarkistus ennen lähettämistä",
+      "description": "Käytä käytännöllistä Sugargoo QC-kuvien tarkistuslistaa kengille, vaatteille ja laukuille. Tarkista merkinnät, mitat, ompeleet ja puuttuvat yksityiskohdat ennen lähetystä.",
       "keyword": "sugargoo laaduntarkastuskuvat",
       "category": "quality",
       "intro": [
@@ -616,6 +657,43 @@
         "Sugargoo kuvaa tarjoavansa yleensä viisi tavanomaista laaduntarkastuskuvaa, ja tarkastuksen laajuus riippuu tuotteesta ja tilaustyypistä. Kuvien määrä ei takaa sitä, mitä voidaan varmistaa. Tämän sivuston cnbuycha-viitekuvat ovat luettelomateriaalia eivätkä vahvistettua laaduntarkastusta henkilökohtaisesta Sugargoo-tilauksestasi; tarkista oma varastotietueesi ennen kansainvälisen lähetyksen järjestämistä."
       ],
       "sections": [
+        {
+          "id": "product-qc-checklist",
+          "title": "Kenkien, vaatteiden ja laukkujen QC-kuvien tarkistus",
+          "paragraphs": [
+            "Vertaa ensin tilausta, väriä, kokoa ja määrää. Tutki sitten yksityiskohdat, jotka voivat muuttaa päätöstäsi pitää tuote. Tarkistuslista auttaa kuvien käytännön arvioinnissa; se ei takaa, että tavallinen QC sisältää jokaisen kuvakulman tai mittauksen. Pyydä juuri puuttuva näyttö ja tarkista mahdollinen palvelumaksu ennen jatkamista.",
+            "Esimerkiksi vain edestä kuvattu laukku ei osoita hihnan kiinnitystä tai sisäpuolen kuntoa. Pyydä tarvittava kuvakulma, jos yksityiskohta on sinulle tärkeä. Jos tarvitset mitan, määritä mittauksen alku- ja loppupiste ja pyydä näkyvää mittanauhaa. Valokuvat eivät osoita kaikkia toiminnallisia ominaisuuksia eivätkä todista aitoutta."
+          ],
+          "table": {
+            "headers": [
+              "Tuoteryhmä",
+              "Tarkista oman tilauksesi kuvista",
+              "Pyydä epäselvässä tapauksessa"
+            ],
+            "rows": [
+              [
+                "Kengät",
+                "Pari, kokomerkinnät, pohjat ja näkyvät saumat",
+                "Molemmat kokomerkinnät ja tarvittava pohjan tai sauman kuvakulma"
+              ],
+              [
+                "Vaatteet",
+                "Kokomerkintä, kankaan ulkonäkö ja ompeleet",
+                "Tasossa tehty mittaus, jossa alku- ja loppupiste näkyvät selvästi"
+              ],
+              [
+                "Laukut",
+                "Hihnat, kiinnikkeet, vuori ja tarvikkeet",
+                "Lähikuvat sisäpuolesta ja kiinnityspisteistä"
+              ],
+              [
+                "Kaikki tuotteet",
+                "Oikea vaihtoehto, määrä ja näkyvät vauriot",
+                "Selkeä kuva nimenomaisesta poikkeamasta"
+              ]
+            ]
+          }
+        },
         {
           "id": "match-the-order",
           "title": "Selvitä, mihin tuotteeseen kuvat kuuluvat",
@@ -698,13 +776,15 @@
       "related": [
         "sugargoo-returns-refunds",
         "sugargoo-rehearsal-shipping"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoon toimituslaskuri: Laadi realistinen pakettibudjetti",
-      "description": "Arvioi toimitus oikean kohteen, tuotekategorian, painon ja mittojen avulla ja vertaa sitten reittien kokonaiskustannuksia.",
+      "title": "Sugargoo-rahtilaskuri: paino, mitat ja kokonaiskustannukset",
+      "description": "Käytä Sugargoo-rahtilaskuria realistisella painolla ja mitoilla. Vertaa soveltuvia kuljetusvaihtoehtoja ja ymmärrä, mikä arviossa jää epävarmaksi.",
       "keyword": "sugargoo toimituslaskuri",
       "category": "shipping",
       "intro": [
@@ -712,6 +792,14 @@
         "Sugargoon virallisessa laskuriohjeessa käytetään kohdetta, tuotekategoriaa, painoa ja mittoja saatavilla olevien toimitusvaihtoehtojen vertailuun. Käsittele tulosta päivättyyn tilanteeseen perustuvana arviona ja päivitä sitä, kun opit lisää pakatusta lähetyksestä. Tämä opas näyttää, miten rakennat tällaiset vaihtoehdot ja tunnistat epävarmuuden ennen kuin se muodostuu ongelmaksi kassalla."
       ],
       "sections": [
+        {
+          "id": "quote-comparison",
+          "title": "Tee kaksi arviota ennen tuotteiden ostamista",
+          "paragraphs": [
+            "Laadi ensin vaihtoehto parhaan saatavilla olevan paino- ja mittatiedon perusteella ja sitten varovaisempi vaihtoehto, joka huomioi pakkauksen epävarmuuden. Pidä kohde, sisältö ja muut asetukset samoina. Jos tilaus sopii budjettiin vain kaikkein optimistisimmilla oletuksilla, selvitä epävarmuus ennen tuotteiden maksamista.",
+            "Kirjaa tarjouksen päivämäärä, kuljetusvaihtoehto, yksiköt, arvioidut mitat ja valitut lisäpalvelut. Korvaa oletukset mitatuilla pakettitiedoilla, kun niitä on saatavilla. Käytä Yhdysvaltain kohteeseen erillisen USA-oppaan vertailumenetelmää; useiden varastoitujen tilausten täydet yhdistetyt ja jaetut kustannukset vertailet yhdistämisoppaan avulla."
+          ]
+        },
         {
           "id": "collect-the-inputs",
           "title": "Kerää lähtötiedot ennen hintavertailua",
@@ -792,15 +880,17 @@
         }
       ],
       "related": [
-        "sugargoo-rehearsal-shipping",
-        "sugargoo-fees-payment"
-      ]
+        "sugargoo-shipping-to-usa",
+        "sugargoo-parcel-consolidation"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoon koepakkaus: Milloin tarkemmista mitoista on apua",
-      "description": "Arvioi koepakkauksen hyöty, valmistele selkeät pakkausohjeet ja käytä tulosta sopivien toimitusreittien vertailuun.",
+      "title": "Sugargoo-koepakkaus: paino, mitat ja milloin palvelu auttaa",
+      "description": "Päätä, milloin Sugargoo-koepakkaus on hyödyllinen, määritä pakkausvalinnat ja vertaa mitattua pakettia alkuperäiseen rahtiarvioosi.",
       "keyword": "sugargoo koepakkaus",
       "category": "shipping",
       "intro": [
@@ -808,6 +898,14 @@
         "Sugargoo kuvaa koepakkauksen ennen lähetystä tehtäväksi pakettisimulaatioksi, joka tuottaa tarkempaa paino- ja tilavuustietoa. Käsittele sitä mittaus- ja pakkauspäätöksenä ja tarkista ajantasaiset palveluehdot sekä hinta tililtäsi. Käytännön arvo syntyy siitä, että tiedät, mihin aiot tulosta käyttää."
       ],
       "sections": [
+        {
+          "id": "rehearsal-decision",
+          "title": "Milloin koepakkausta kannattaa harkita?",
+          "paragraphs": [
+            "Harkitse koepakkausta, jos tuntemattomat pakatun lähetyksen mitat voivat muuttaa kuljetusvalintaa tai budjettia: suuri mutta kevyt tuote, useita myyntipakkauksia tai palvelun rajaa lähestyvä paketti. Kirjaa, minkä epävarmuuden haluat ratkaista, ja tarkista nykyinen palvelumaksu. Jos päätös pysyisi samana kohtuullisten arvioiden välillä, lisämittauksesta voi olla vähemmän hyötyä.",
+            "Vertaa tulosta alkuperäisiin tietoihin: todellinen paino, ulkomitat, säilytetyt pakkaukset ja valitut palvelut. Laske uudelleen kuljetusvaihtoehdon nykyisellä laskutussäännöllä. Pienemmät mitat eivät takaa pienempää loppulaskua, koska vähimmäismaksut, painoportaat ja muut valinnat voivat yhä vaikuttaa."
+          ]
+        },
         {
           "id": "identify-the-decision",
           "title": "Määritä epävarmuus, jonka haluat koepakkauksen ratkaisevan",
@@ -888,9 +986,11 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-calculator",
-        "sugargoo-warehouse-storage"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-shipping-calculator"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-tracking",
@@ -1014,7 +1114,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-warehouse-storage"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-fees-payment",
@@ -1142,7 +1244,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-returns-refunds"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-warehouse-storage",
@@ -1240,9 +1344,11 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-rehearsal-shipping"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-order-status"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-returns-refunds",
@@ -1342,13 +1448,15 @@
       "related": [
         "sugargoo-qc-photos",
         "sugargoo-fees-payment"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian- ja Taobao-linkit Sugargoossa: Varmista täsmällinen tuote",
-      "description": "Kopioi oikea lähdeosoite, säilytä tuotteen tunnistetiedot ja tarkista vaihtoehdot Sugargoossa; käytä tuettua manuaalista tilausta automaattisen latauksen epäonnistuessa.",
+      "title": "Weidian- ja Taobao-linkit Sugargoossa: tarkista ja korjaa virheet",
+      "description": "Tarkista Weidian- ja Taobao-tuotelinkit ennen ostamista Sugargoossa. Selvitä puuttuvat ilmoitukset, väärät vaihtoehdot ja tulkintavirheet arvaamatta.",
       "keyword": "weidian sugargoohon",
       "category": "getting-started",
       "intro": [
@@ -1356,6 +1464,14 @@
         "Tämä opas selittää, mitä kopioida, miten tunnistaa väärä ilmoitus ja mitä tehdä automaattisen latauksen epäonnistuessa. Se erottaa myös alkuperäisen markkinapaikan tuotetunnuksen tämän luettelon sisäisestä sivutunnisteesta, jotta kätevä ostopainike ei muutu syyksi jättää viimeisiä tarkistuksia väliin."
       ],
       "sections": [
+        {
+          "id": "link-error-check",
+          "title": "Mitä tarkistaa, kun tuotelinkki ei lataudu?",
+          "paragraphs": [
+            "Avaa ensin alkuperäinen tuotesivu ja varmista, että se edelleen yksilöi tarkoitetun tuotteen. Kaupan etusivu, lyhennetty jakoteksti tai poistettu ilmoitus ei vastaa täydellistä tuoteosoitetta. Vertaa kauppapaikan tuotetunnusta ennen uutta yritystä. Poista asiaan kuulumaton jakoteksti muuttamatta tuotteen tunnistetietoja.",
+            "Jos alkuperäinen tuote on olemassa mutta automaattinen tulkinta epäonnistuu, tarkista viralliset manuaalisen tilauksen mahdollisuudet ja hyväksymisehdot. Säilytä myyjä, täsmällinen vaihtoehto, määrä, tuoteosoite ja hintatiedot yhdessä. Manuaalinen lomake ei poista tuoterajoituksia eikä takaa saatavuutta. Valitse toinen ehdokas, jos ajantasaista ilmoitusta ei voi varmistaa, sen sijaan että arvaat kuvan perusteella."
+          ]
+        },
         {
           "id": "source-identity",
           "title": "1. Aloita tuotteen ilmoituksesta, älä hakutuloksesta",
@@ -1442,6 +1558,409 @@
       "related": [
         "sugargoo-spreadsheet-guide",
         "how-to-buy-on-sugargoo"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Sugargoo-toimitus Yhdysvaltoihin: kustannukset, paino ja toimitus",
+      "description": "Suunnittele Sugargoo-toimitus Yhdysvaltoihin: vertaa paketin painoa, mittoja, kuljetusehtoja ja toimitusvaiheita ennen kansainvälisen rahdin maksamista.",
+      "keyword": "sugargoo toimitus Yhdysvaltoihin",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoo-toimitus Yhdysvaltoihin on erillinen päätös tuotteiden ostamisesta. Aloita toimitusosoitteesta, lähetettävistä tuotteista sekä arviosta niiden pakatusta painosta ja koosta. Vertaa sitten tililläsi todellisuudessa tarjottuja kuljetusvaihtoehtoja. Toisen henkilön paketin hinta on vain viite: sen kohde, päivämäärä, mitat ja sisältö voivat poiketa omistasi.",
+        "Tämä opas antaa vertailumenetelmän kiinteän hinnan tai toimituslupauksen sijaan. SugargooTab on riippumaton luettelo eikä voi tarjota hintaa, lähettää tai seurata pakettiasi Sugargoon puolesta. Käytä virallista laskuria suunnitteluun ja lopullista pakettinäkymää maksupäätökseen. Säilytä tieto tarjouksen sisällöstä, jotta myöhemmät muutokset ovat ymmärrettäviä."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Erota tuoteostokset USA-paketin budjetista",
+          "paragraphs": [
+            "Jaa budjetti kahteen vaiheeseen. Ensimmäinen sisältää valitut tuotteet ja Kiinan sisäisen toimituksen sekä kassalla näkyvät mahdolliset maksu- ja asiointikulut. Toinen kattaa kansainvälisen rahdin ja paketille valitut palvelut. Myös kohteeseen liittyvät maksut voivat vaatia huomioimista. Älä oleta, että tämän luettelon tuotehinta sisältää kummankaan toimitusvaiheen.",
+            "Käytä esimerkkibudjettia päätöksen arviointiin, älä tarjouksen ennustamiseen. Jos oma kulutusrajasi on 150 dollaria ja tuotteet maksavat jo 110 dollaria, jäljellä olevien 40 dollarin on katettava kaikki vielä maksamaton. Jos nykyinen rahtiarvio ylittää tämän summan, muuta tilausta ennen uusien tuotteiden lisäämistä. Halvemman luvun lainaaminen vanhasta kirjoituksesta ei poista vajetta.",
+            "Säilytä arvion päivämäärä ja syötetyt arvot summan vieressä. Kirjaa, sisältyvätkö pakkauspalvelut ja mahdollinen valinnainen suoja sekä selitetäänkö lisäkohdemaksut kuljetusehdoissa. Merkitse tuntematon kustannus tuntemattomaksi. Se on hyödyllisempää kuin puutteellisista oletuksista kootun tarkan loppusumman esittäminen."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Syötä kohde, sisältö, paino ja mitat",
+          "paragraphs": [
+            "Käytä todellista kohdetta Yhdysvalloissa ja laskurin pyytämiä aluetietoja. Älä vaihda osoitetta vain saadaksesi houkuttelevampia kuljetusvaihtoehtoja. Kuvaile tuoteryhmä oikein, mukaan lukien kuljetukseen mahdollisesti vaikuttavat ominaisuudet. Tavallisia vaatteita hyväksyvä palvelu ei automaattisesti hyväksy akkuja, nesteitä tai kaikkia muita kauppapaikalla myytäviä tuotteita.",
+            "Ennen tuotteiden saapumista varastoon paino ja mitat ovat suunnitteluoletuksia. Kiinnitä erityistä huomiota tilaa vieviin tuotteisiin: kevyt takki suuressa laatikossa voi muodostaa erilaisen paketin kuin tiiviisti pakattu paita. Kun omat tuotteesi ovat saatavilla, korvaa arvaukset varaston tiedoilla ja tarvittaessa koepakkauksen tuloksilla.",
+            "Kirjaa yksiköt lukujen yhteyteen. Grammoja ja kilogrammoja ei voi vaihtaa keskenään syötteissä, eikä senttimetrejä tule kirjoittaa tuumille tarkoitettuun kenttään. Väärä yksikkö voi tehdä näennäisesti kilpailukykyisestä tarjouksesta merkityksettömän. Jos arvio vaikuttaa odottamattoman halvalta tai kalliilta, tarkista ensin osoite, yksiköt, määrät ja tuoteryhmä ennen kuljetusvaihtoehtoa koskevia johtopäätöksiä."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Ymmärrä laskutuksessa käytettävä paino",
+          "paragraphs": [
+            "Todellinen paino mittaa massaa; tilavuuspaino muuntaa paketin mitat laskutettavaksi arvoksi valitun kuljetusvaihtoehdon sääntöjen mukaan. Jakaja, pyöristys ja vähimmäismaksu voivat vaihdella. Lue palvelun kuvaus sen sijaan, että soveltaisit yhtä kaavaa kaikkiin vaihtoehtoihin. Tilavuuspainoa käyttävässä palvelussa suurempi luku voi ratkaista, vaikka tuotteet itsessään olisivat kevyitä.",
+            "Vain havainnollistavana esimerkkinä 40 × 30 × 25 cm:n laatikon tilavuus on 30 000 kuutiosenttimetriä. Oletettu jakaja 6 000 tuottaisi 5 kg:n tilavuuspainon. Tämä ei tarkoita, että valitsemasi palvelu käyttää jakajaa 6 000. Jos todellinen paino olisi 3 kg, suurempaa lukua laskuttava palvelu voisi silti arvioida laatikon 5 kg:n painoiseksi ennen pyöristyssääntöjä.",
+            "Kysy, muuttaisiko pakkauksen vaihtaminen pakatun lähetyksen mittoja riittävästi tarjouksen muuttamiseen. Tarpeettoman myyntilaatikon poistaminen voi joissakin tapauksissa auttaa, mutta särkyvät tuotteet voivat tarvita sen suojaa. Tarkista lopulliset mitat uudelleen sovittujen pakkausvalintojen jälkeen; älä oleta, että jokainen poistettu laatikko säästää rahaa tai jokainen vahvistus on lisäpainonsa arvoinen."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Vertaa kuljetuksia samoilla pakettioletuksilla",
+          "paragraphs": [
+            "Laadi pieni vertailu vain palveluista, jotka hyväksyvät pakettisi. Laske jokainen samalla kohteella, sisällöllä, painolla ja mitoilla. Muuten hintaero voi johtua erilaisista syötteistä eikä paremmasta palvelusta. Lue koko- ja painorajat ennen kuin käytät aikaa vaihtoehtoon, jota valmis pakettisi ei voi käyttää.",
+            "Tarkista, mitä näytetty toimitusaika-arvio mittaa ja mitkä seurantavaiheet näkyvät. Myyjän lähetys Kiinan varastoon on erillinen kansainvälisestä matkasta, ja valmistelu ennen luovutusta kuljetusliikkeelle voi lisätä yhden vaiheen. Käsittele arvioitua aikaväliä suunnittelutietona. Vältä ostamista ehdottomaan määräpäivään, ellet voi hyväksyä viivästyksen seurauksia.",
+            "Lue valitun kuljetusvaihtoehdon nykyinen selitys sisältyvistä maksuista, lisämaksuista, rajoituksista ja valinnaisesta vakuutuksesta. Tallenna sanamuoto tarjouksen yhteyteen. Jos tärkeä kohta on epäselvä, kysy viralliselta tuelta ennen maksua ja säilytä vastaus. Palvelun nimi tai toisen ostajan kuvakaappaus ei korvaa omaan pakettiisi liittyviä ehtoja."
+          ],
+          "table": {
+            "headers": [
+              "Vertailukohta",
+              "Kirjaa ennen maksamista"
+            ],
+            "rows": [
+              [
+                "Soveltuvuus",
+                "Sallittu sisältö, kohdealue ja pakettirajat"
+              ],
+              [
+                "Laskutettava paino",
+                "Todellisen painon tai tilavuuspainon sääntö, jakaja ja pyöristys"
+              ],
+              [
+                "Näytetty kokonaissumma",
+                "Rahti, valitut lisäpalvelut ja selkeästi ilmoitetut poissulut"
+              ],
+              [
+                "Toimitustiedot",
+                "Arvioitu aikaväli, luovutusvaihe ja seurannan kattavuus"
+              ],
+              [
+                "Suoja",
+                "Nykyinen kattavuus, poissulut ja korvausvaatimukset"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Pidä tuote- ja vastaanottajatiedot johdonmukaisina",
+          "paragraphs": [
+            "Käytä tarkkoja tuotekuvauksia ja lähetykselle pyydettyjä todellisia tietoja. Pidä tilaus- ja maksutositteet saatavilla mahdollisten selvitysten varalta. Älä kopioi ilmoitusta asiaan kuulumattomasta paketista tai valitse harhaanjohtavaa kuvausta saadaksesi kuljetusvaihtoehdon näkyviin. Oman lähetyksesi sisältö määrää, mitkä tarkistukset ovat olennaisia.",
+            "Yhdysvaltain tuontisäännöt ja kuljetusliikkeiden järjestelyt voivat muuttua. Tämä opas ei siksi anna pysyvää verorajaa tai lupaa lisämaksutonta kuljetusvaihtoehtoa. Tarkista kohteen ajantasaiset ohjeet ja valitun palvelun ehdot järjestäessäsi lähetystä. Jos tiedot ovat ristiriitaisia, hanki selvennys ennen maksamista sen sijaan, että pitäisit markkinointilausetta täydellisenä selityksenä.",
+            "Tarkista vastaanottajan nimi, osoite ja yhteystiedot virallisella tilillä. Virheen korjaaminen ennen lähetystä on helpompaa kuin toimituspoikkeaman selvittäminen myöhemmin. Pidä yksityiset osoitteet ja tilaustunnisteet poissa julkisista arvioista ja jaetuista tutkimustaulukoista. Hyödyllinen julkinen vertailu voi kuvailla kuljetuksen ja karkean pakettityypin paljastamatta vastaanottajaa."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Seuraa jokaista toimitusvaihetta ja reagoi poikkeamiin",
+          "paragraphs": [
+            "Erota myyjän Kiinan sisäinen seuranta kansainvälisestä pakettiviitteestä. Varastoon saapuminen ei tarkoita, että paketti olisi lähtenyt Kiinasta, eikä luotu seurantatunnus yksin osoita kuljetusliikkeen vastaanottaneen pakettia. Seuraa lähetettäväksi jätettyyn pakettiin liittyvää logistiikkatietoa ja kirjaa viimeisin päivätty tapahtuma.",
+            "Jos seuranta pysähtyy, etsi ensin luovutusta, tietopyyntöä tai poikkeamaa ennen kuin oletat paketin kadonneen. Tallenna viimeisin päivitys ja kysy tuelta täsmällisesti seuraavaa odotettua vaihetta. Anna pakettiviite virallisen yksityisen kanavan kautta. Saman julkisen seurannan toistuva haku ei ratkaise puuttuvia asiakirjoja tai vastaanottajan osoiteongelmaa.",
+            "Tarkista paketti ja sisältö nopeasti toimituksen jälkeen ja säilytä asianmukainen pakkaus sekä näyttö, jos jokin on pielessä. Korvaus riippuu sovellettavasta palvelusta ja sen vaatimuksista; rahdin ostaminen ei ole yleinen takuu. Kirjaa todelliset vaiheet ja kustannukset, jotta seuraava arvio voi käyttää vertailukelpoista näyttöä muistin sijaan. Käy vertailu vielä kerran läpi ennen maksamista ja poista vaihtoehdot, joiden soveltuvuus on yhä ratkaisematta. Käyttökelpoinen budjetti tarvitsee saatavilla olevan palvelun, oikeat tiedot ja ymmärrettävät ehdot, ei vain pienintä näkyvää lukua."
+          ]
+        }
+      ],
+      "checklist": [
+        "Varmista todellinen kohde Yhdysvalloissa ja sallittu sisältö.",
+        "Erota tuotebudjetti kansainvälisestä rahdista ja lisäpalveluista.",
+        "Käytä johdonmukaisia yksiköitä ja kirjaa pakatut mitat.",
+        "Vertaa soveltuvia kuljetuksia samoilla lähtötiedoilla.",
+        "Tarkista nykyiset kuljetusehdot ja oikeat lähetystiedot.",
+        "Tallenna lopullinen tarjous ja seuraa juuri tämän paketin tapahtumia."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: kansainvälisten toimituskulujen arviointi",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: paketin simulointi ennen lähetystä",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: lähetysrajoitukset",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo: seurantaongelmat",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Sugargoo-tilauksen tila: maksusta varastoon",
+      "description": "Ymmärrä Sugargoon tilausvaiheet, myyjän lähetys, varastoon saapuminen ja pakettiseuranta. Opi, mitä tarkistaa, kun tilaus näyttää pysähtyneen.",
+      "keyword": "sugargoo tilauksen tila",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoo-tilauksen tila kuvaa yhtä ostoprosessin vaihetta, ei koko matkaa kotiovellesi. Maksu, agentin tekemä osto, myyjän lähetys, varaston käsittely ja kansainvälinen pakettikuljetus ovat erillisiä vaiheita. Selvitä ensin, katsotko tuotetilausta vai lähetettäväksi jätettyä pakettia; ne vastaavat eri kysymyksiin ja niillä voi olla eri seurantaviitteet.",
+        "Sivuston tai sovelluksen sanamuodot voivat vaihdella kielen ja käyttöliittymämuutosten mukaan. Alla olevat vaihekuvaukset selittävät, mitä tutkia, eivätkä väitä toistavansa kaikkia nykyisiä painiketekstejä. Avaa oman tilauksesi tiedot nähdäksesi viestit, toiminnot ja aikaleimat. Ne ovat hyödyllisempiä kuin lyhyen tilatekstin vertaaminen tuntemattoman henkilön tilaukseen."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "Aloita oikeasta tuote- tai pakettitietueesta",
+          "paragraphs": [
+            "Pidä alkuperäinen tuotelinkki, valittu vaihtoehto ja Sugargoon tilausviite yhdessä. Jos ostit useita samankaltaisia tuotteita, tarkista myyjä, väri, koko ja määrä ennen tukeen yhteyden ottamista. Yhden tuotteen päivitys ei todista toisen etenemistä, vaikka molemmat maksettiin samalla käynnillä.",
+            "Pidä erillinen tietue varastoiduista tuotteista muodostetulle kansainväliselle paketille. Yksi paketti voi sisältää monta tilausta, kun taas tilausongelma on ehkä käsiteltävä ennen paketin jättämistä lähetettäväksi. Kirjaa, mitkä tuoteviitteet kuuluvat mihinkin pakettiin. Tämä yksinkertainen ero estää sekoittamasta myyjän Kiinan sisäistä seurantatunnusta omaan maahasi tulevaan lähetykseen.",
+            "Jos tila näyttää odottamattomalta, lue tilauksen viestit ja viimeisin aikaleima ennen toimintaa. Pyyntö puuttuvista vaihtoehdoista tai maksun tarkistuksesta voi selittää, miksi ostaminen ei ole edennyt. Tallenna olennainen sanamuoto omiin muistiinpanoihisi, mutta lähetä yksityiset viitteet ja kuvakaappaukset vain virallisen tukikanavan kautta."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "Maksaminen ja ostaminen ovat eri vaiheita",
+          "paragraphs": [
+            "Jos tila odottaa maksua, tarkista, suorititko maksamisen todella loppuun. Tuote ostoskorissa tai maksamaton tilaus ei osoita, että myyjä olisi saanut ostopyynnön. Jos päätit olla ostamatta, käytä kyseisessä vaiheessa saatavilla olevaa peruutustoimintoa sen sijaan, että olettaisit tilauksen poistuvan näkymästä lähtemällä.",
+            "Vahvista maksun jälkeen tapahtuma tililläsi ja lue mahdolliset ostamiseen liittyvät viestit. Valmis maksu ei todista, että myyjä on lähettänyt tuotteen. Ostovaihe voi yhä riippua varastotilanteesta, valitusta vaihtoehdosta, kotimaan rahdista tai oikean tilauksen tekemiseen tarvittavista tiedoista. Vastaa täsmälliseen pyyntöön sen sijaan, että maksaisit toistuvasti päällekkäisen tilauksen.",
+            "Jos pankki näyttää veloituksen mutta tilaus vaikuttaa maksamattomalta, vertaa viitteitä ja maksutilaa virallisen tuen kanssa ennen uutta yritystä. Pankkimerkintä ja tilauspäivitys voivat kuvata maksuprosessin eri osia. Säilytä näyttö julkaisematta korttitietoja, kirjautumistietoja tai vahvistuskoodeja. Kysy, mikä maksutapahtuma liittyy tilaukseen ja mitä toimintaa todella tarvitaan."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "Ostettu tai myyjän lähettämä ei tarkoita varastossa valmista",
+          "paragraphs": [
+            "Tarkista ostettu-vaiheessa, onko myyjä antanut Kiinan sisäisen lähetyksen tiedot. Ostovahvistus koskee tuotetilausta; se ei vahvista kansainvälistä lähetystä. Jos tarvitset myyjän päivityksen, kysy tilauksen keskustelussa, jotta pyyntö pysyy oikean tuotteen ja valittujen vaihtoehtojen yhteydessä.",
+            "Kun myyjä lähettää, seuraa kyseiseen tilaukseen liitettyä kotimaan seurantaa. Toimitus varastolle on eri tapahtuma kuin varaston tarkistus ja varastointi. Kuljetusliikkeen toimitusmerkintä voi näkyä ennen tilin valmista varastotietuetta. Älä pidä tätä eroa yksin todisteena puuttuvista tuotteista; tarkista tilausviestit ja käsittelytiedot.",
+            "Jos myyjä lähettää vain osan tilauksesta tai määrä vaikuttaa väärältä, luettele puuttuvat kappaleet täsmällisesti. Ilmoita alkuperäinen määrä ja nykyinen näyttö. Viesti kuten ”tästä tilauksesta puuttuu toinen kahdesta paidasta” on helpommin käsiteltävä kuin ”pakettini on väärin”. Anna tuen selvittää, koskeeko asia myyjän lähetystä, jaettua toimitusta vai varaston käsittelyä."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "Varastoon saapuminen on tarkistuspisteesi",
+          "paragraphs": [
+            "Kun oman tilauksesi varastokuvat ja tiedot ovat saatavilla, vertaa niitä ostettuun vaihtoehtoon. Katso merkinnät, väri, määrä, näkyvä kunto ja pyytämäsi mitat. Luettelon viitekuvat eivät voi korvata tätä tarkistusta: niitä käytettiin löytämiseen eivätkä ne osoita sinulle vastaanotetun kappaleen kuntoa.",
+            "Jos kuva on epäselvä, kuvaile täsmälleen, minkä pitää näkyä. Pyydä esimerkiksi kokomerkintää tai mittausta, jossa nauha alkaa oikeasta saumasta. Lisäpalvelut ja niiden saatavuus on tarkistettava tililtä. Tavallinen silmämääräinen tarkastus ei todista aitoutta eikä ole jokaisen tuotteen toimintatesti.",
+            "Selvitä mahdollinen palautus tai myyjäongelma ennen tuotteen lisäämistä kansainväliseen pakettiin. Tarkista sovellettavat ehdot ja määräajat nopeasti sen sijaan, että olettaisit varastointiajan olevan myös palautusaika. Säilytä pyyntöön tarvittava pakkaus ja näyttö. Hyväksyntä, palautuspostikulut ja hyvityksen käsittely riippuvat tilauksesta ja nykyisistä jälkipalveluehdoista."
+          ],
+          "table": {
+            "headers": [
+              "Tutkittava vaihe",
+              "Hyödyllinen tarkistus",
+              "Seuraava toimenpide"
+            ],
+            "rows": [
+              [
+                "Odottaa maksua",
+                "Tilaus- ja maksuviitteet",
+                "Viimeistele tai peru tarkoittamasi tilaus"
+              ],
+              [
+                "Ostaminen kesken",
+                "Vaihtoehto, varastotilanne ja tilausviestit",
+                "Vastaa täsmälliseen tietopyyntöön"
+              ],
+              [
+                "Myyjän lähetys",
+                "Kiinan sisäinen seuranta ja määrä",
+                "Tarkista myyjän eteneminen tilauksen kautta"
+              ],
+              [
+                "Varaston käsittely",
+                "Saapumistieto ja ladatut kuvat",
+                "Tarkista vastaanotettu tuote ja selvitä ongelmat"
+              ],
+              [
+                "Varastoitu tuote",
+                "Jäljellä oleva varastointiaika ja QC-päätös",
+                "Suunnittele soveltuva paketti ennen määräaikaa"
+              ],
+              [
+                "Lähetettäväksi jätetty paketti",
+                "Pakettiviite ja logistiikkatiedot",
+                "Seuraa kansainvälisen lähetyksen päivityksiä"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "Varastoidut tuotteet tarvitsevat vielä pakettipäätöksen",
+          "paragraphs": [
+            "Varastoitu tuote ei ole automaattisesti matkalla osoitteeseesi. Tarkista, mitkä tuotteet ovat valmiita, voiko ne lähettää yhdessä ja paljonko varastointiaikaa kullakin on jäljellä. Seuraa kyseisen tuotteen ajastinta ja ehtoja. Älä luota yhteen varastointia kuvaavaan lukuun, joka on kopioitu vanhemmasta artikkelista tai eri tilaustyypistä.",
+            "Valitse pakettiin soveltuvat tuotteet, vahvista vastaanottajan tiedot ja harkitse pakkauspalveluja, kun ne ratkaisevat tietyn ongelman. Vertaa käytettävissä olevia kuljetuksia muodostuvan painon ja mittojen avulla. Kansainvälisen rahdin maksu on erillinen päätös aiemmasta tuotemaksusta, ja arvio voi muuttua pakkausoletusten muuttuessa.",
+            "Käytä paketin jättämisen jälkeen pakettitietuetta lähetykseen ja kansainväliseen seurantaan. Säilytä tuotetiedot näyttönä siitä, mitä sisällä pitäisi olla. Jos paketti ei etene, kysy sen omasta viimeisimmästä vaiheesta sen sijaan, että avaat uudelleen yleisen kysymyksen myyjän lähettämisestä. Näin tukipyyntö kohdistuu tiimiin ja prosessiin, joka voi vastata siihen."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Muuta pysähtynyttä tilaa koskeva kysymys selkeäksi pyynnöksi",
+          "paragraphs": [
+            "Yhtä odotusaikaa, joka tekisi jokaisesta tilauksesta myöhästyneen, ei ole. Myyjän varastotilanne, kotimaan kuljetus, varastotyö ja kansainvälinen luovutus ovat eri prosesseja. Lue omaa tapaustasi koskeva arvio tai pyydetty vastaus ja vertaa viimeisintä päivättyä tapahtumaa näihin tietoihin. Muuttumaton tilateksti ilman asiayhteyttä ei riitä syyn tunnistamiseen.",
+            "Kirjoita tiivis tukipyyntö, jossa on tilaus- tai pakettiviite, viimeisin päivätty tapahtuma, täsmällinen poikkeama ja toimenpide, jonka haluat selvittää. Esimerkiksi: ”Kiinan sisäinen kuljetusliike näyttää toimituksen, mutta tästä tuotteesta ei vielä ole varastokuvia. Voitteko vahvistaa vastaanoton ja seuraavan käsittelyvaiheen?” Tähän kysymykseen voidaan vastata tietueita tarkistamalla.",
+            "Jos haluat peruuttaa, kerro siitä ennen käsittelyn etenemistä. Saatavilla olevat toiminnot muuttuvat oston, myyjän lähetyksen ja kansainvälisen lähetyksen jälkeen. Älä oleta pyynnön takaavan hyväksyntää tai välitöntä palautusta alkuperäiselle maksutavalle. Säilytä virallinen vastaus, sovittu seuraava vaihe ja odotettu jatkotoimi, jotta voit jatkaa samaa tapausta kadottamatta asiayhteyttä. Tee päivätty muistiinpano vastauksesta, joka muuttaa seuraavaa vaihettasi. Palatessasi tilille se auttaa erottamaan uuden toimintapyynnön kysymyksestä, jonka tuki on jo ratkaissut."
+          ]
+        }
+      ],
+      "checklist": [
+        "Selvitä, koskeeko ongelma tuotetta vai kansainvälistä pakettia.",
+        "Tarkista vaihtoehto, määrä ja vastaava tilausviite.",
+        "Lue viestit ja aikaleimat ennen uutta maksua.",
+        "Erota kotimaan toimitus varaston käsittelystä.",
+        "Tarkista oma QC-näyttösi ja varastoinnin ajastin.",
+        "Kysy tuelta yksi täsmällinen kysymys oikealla yksityisellä viitteellä."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: tilausprosessi",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: tilauksen peruutus",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: tuotteiden säilytys varastossa",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo: kansainvälisen tilauksen seuranta",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Sugargoo-pakettien yhdistäminen: pakkaus ja rahtikulut",
+      "description": "Opi yhdistämään Sugargoo-tilauksia, vertaamaan yhteisiä ja jaettuja paketteja, valitsemaan pakkaus ja tarkistamaan lopullinen rahtitarjous.",
+      "keyword": "sugargoo pakettien yhdistäminen",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoon pakettien yhdistäminen tarkoittaa soveltuvien varastotuotteiden valitsemista lähetettäväksi yhdessä. Se voi yksinkertaistaa pakettien hallintaa ja vähentää toistuvia aloitusmaksuja, mutta suurempi paketti ei ole automaattisesti halvempi. Pakatut mitat, laskutettava paino, tuoterajoitukset ja kohteeseesi saatavilla olevat kuljetusvaihtoehdot voivat muuttaa tuloksen.",
+        "Aloita tuotteista, jotka ovat läpäisseet oman tarkistuksesi, ja vertaa sitten yhdistettyä vaihtoehtoa järkeviin jakoihin. Tämä opas tarjoaa pakkauspäätöksen prosessin ja uudelleenkäytettävän vertailulistan. Se ei lupaa tiettyä säästöä, kuljetusta tai palvelumaksua. Nykyiset Packing Centerin vaihtoehdot ja lopullinen pakettitarjous määräävät, mitä tilauksellesi on saatavilla."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Yhdistä vain lähetysvalmiit tuotteet",
+          "paragraphs": [
+            "Tee lyhyt luettelo tuotteista, jotka haluat lähettää. Sisällytä tilausviite, määrä, tarkistuspäätös, saatavilla oleva painotieto ja jäljellä oleva varastointiaika. Merkitse kaikki, joissa koko, kunto tai myyjäasia on ratkaisematta. Pakettia ei pidä jättää lähetettäväksi vain siksi, että suurin osa sisällöstä on valmis, jos yksi tärkeä tuote tarvitsee vielä päätöksen.",
+            "Tarkista yhteensopivuus ennen kaiken ryhmittelyä. Akku, neste tai muu rajoitettu ominaisuus voi vaikuttaa siihen, mitkä kuljetukset hyväksyvät paketin. Kahden tuotteen ostettavuus ei osoita, että ne voivat käyttää yhdessä mitä tahansa kansainvälistä kuljetusta. Varmista todellisen yhdistelmän ja kohteen hyväksyntä ennen kuin pidät yhteistä vaihtoehtoa toteuttamiskelpoisena.",
+            "Käytä varastointimääräaikoja tietoiseen odotuspäätökseen. Jos odotat yhtä myyjää, vertaa odottamisen kustannusta ja riskiä valmiiden tuotteiden lähettämiseen erikseen. Seuraa kunkin tuotteen tilillä näkyvää ajastinta ja saatavilla olevia jatkoehtoja. Älä käytä oletettua yleistä varastointiaikaa syynä jättää tuotteita valvomatta."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "Vertaa yhdistämisen ja jakamisen kaikkia kustannuksia",
+          "paragraphs": [
+            "Laadi kaksi tai kolme realistista vaihtoehtoa: yksi yhteinen paketti, jako jossa tilaa vievä tuote erotetaan sekä tarvittaessa sisällön yhteensopimattomuuden vaatima jako. Käytä samaa toimituskohdetta ja samaa koko tuotejoukkoa. Vaihtoehtoa, joka huomaamatta jättää tuotteen pois, ei voi verrata reilusti kaiken lähettävään vaihtoehtoon.",
+            "Kirjaa kullekin vaihtoehdolle pakettien määrä, arvioidut pakatut mitat ja paino, soveltuva kuljetus, rahtisumma ja valitut pakkauslisät. Laske jaetussa vaihtoehdossa jokaisen paketin kustannus yhteen. Yhteisen hinnan vertaaminen vain jaetun lähetyksen halvempaan puolikkaaseen antaa väärän vastauksen. Pidä epävarmat mitat näkyvissä sen sijaan, että piilottaisit ne tarkan näköiseen loppusummaan.",
+            "Käytä kuvitteellista esimerkkiä päätöksen ymmärtämiseen. Jos yhteinen tarjous olisi 70 dollaria ja kaksi erillistä tarjousta 38 ja 42 dollaria, jaetun rahdin summa olisi 80 dollaria ennen mahdollisesti erilaisia lisäpalveluja. Esimerkki ei ennusta hintojasi eikä todista yhdistämistä paremmaksi. Kokoraja, suojaustarve tai kuljetusrajoitus voi tehdä yhteisestä vaihtoehdosta sopimattoman."
+          ],
+          "table": {
+            "headers": [
+              "Päätöskohta",
+              "Yhdistetty paketti",
+              "Jaetut paketit"
+            ],
+            "rows": [
+              [
+                "Rahtivertailu",
+                "Pyydä tarjous koko tuoteryhmälle",
+                "Laske jokaisen paketin tarjous yhteen"
+              ],
+              [
+                "Mitat",
+                "Tarkista lopullinen ulkolaatikko",
+                "Tarkista jokainen ulkolaatikko erikseen"
+              ],
+              [
+                "Sisältö",
+                "Kaikkien tuotteiden on sovittava valittuun palveluun",
+                "Jokainen ryhmä tarvitsee soveltuvan palvelun"
+              ],
+              [
+                "Suojaus",
+                "Tarkista eri tuotteiden välinen kosketus",
+                "Huomioi toistuvat pakkausmateriaalit"
+              ],
+              [
+                "Ajoitus",
+                "Voi odottaa viimeistä valittua tuotetta",
+                "Valmiit tuotteet voi jättää lähetettäväksi erikseen"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "Valitse tuotteelle pakkaus ja tarkista sitten sen hinta",
+          "paragraphs": [
+            "Kysy, minkä ongelman kukin pakkausvalinta ratkaisee. Vahvistus voi vähentää puristumisriskiä, sisäinen erottelu tuotteiden kosketusta ja sopivan myyntilaatikon säilyttäminen auttaa muodon säilymisessä tai pienten tarvikkeiden koossa pitämisessä. Valitse saatavilla oleva palvelu konkreettisesta syystä sen sijaan, että lisäisit kaikki vaihtoehdot rauhoittavan nimen vuoksi.",
+            "Laatikon poistaminen voi muuttaa sekä painoa että tilavuutta, mutta myös poistaa suojaa tai kesken olevaan palautukseen tarvittavan pakkauksen. Ratkaise ensin tuotetta koskeva päätös ja määritä, mitä saa poistaa. ”Poista ulompi kuljetuslaatikko mutta säilytä tuotelaatikko ja tarvikkeet” on selkeämpi kuin yleinen ohje hävittää kaikki pakkaukset, jos palvelu pystyy toteuttamaan pyynnön.",
+            "Vaatteille ja muille kokoon puristuville tuotteille varmista, sopiiko tarjottu pakkaustapa materiaalille ja muodolle. Älä oleta, että puristaminen on kaikille tuotteille vaaratonta. Jäykille tai särkyville tuotteille laatikon liiallinen pienentäminen voi jättää liian vähän suojaa. Kysy palvelun todellisesta sisällöstä ja arvioi sitten lisähinta ja pakatut mitat yhdessä."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "Tarkista mitat uudelleen pakkausvalintojen jälkeen",
+          "paragraphs": [
+            "Yksittäisten tuotteiden painojen summa ei välttämättä ole lopullinen pakettipaino. Laatikot, pehmusteet ja vahvistukset lisäävät valmiin pakkauksen painoa, kun taas sallittujen pakkausten poistaminen voi vähentää sitä. Mitat riippuvat myös siitä, miten sisältö sopii yhteen. Käsittele karkeaa summaa suunnittelutietona, älä vahvistettuna rahtilaskuna.",
+            "Koepakkaus voi auttaa, kun päätös riippuu mitoista tai kuljetuksen rajasta. Tarkista nykyinen palvelumaksu ja toimitettavat tiedot ennen pyytämistä. Kirjaa pakkausoletukset, jotka haluat arvioitaviksi. Paremmat mitat ovat arvokkaita, kun ne ratkaisevat todellisen valinnan; palvelun tilaaminen ilman vastattavaa kysymystä lisää kustannusta parantamatta suunnitelmaa.",
+            "Kun mitat ovat saatavilla, toista vertailu valitun kuljetuksen laskutussäännöllä. Tarkista todellinen paino suhteessa tilavuuspainoon, tarvittaessa jakaja, pyöristys ja kokorajat. Pieni senttimetrivähennys ei ehkä muuta mitään yhdessä palvelussa mutta voi vaikuttaa toiseen. Käytä oikeasti uudelleen laskettua tarjousta sen sijaan, että olettaisit jokaisen vähennyksen muuttuvan suoraan säästöksi."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Tarkista paketti ennen rahdin maksamista",
+          "paragraphs": [
+            "Valitse Packing Centerissä tarkoitetut soveltuvat tuotteet ja tarkista määrät. Vahvista vastaanottajan tiedot, saatavilla olevat palvelut ja valittu kuljetus jättämisen aikana. Käyttöliittymän sanamuodot voivat muuttua, joten lue koko yhteenveto muistamasi painikejärjestyksen seuraamisen sijaan. Varmista, ettei jälkipalvelua varten pidettäväksi tarkoitettua tuotetta ole lisätty vahingossa.",
+            "Pidä ohjeet lyhyinä ja täsmällisinä. Yksilöi tuote tai tilaus, jota ohje koskee, ja mitä säilytetään, poistetaan tai suojataan. Jos ohje edellyttää maksullista palvelua, varmista saatavuus ja maksu sen sijaan, että olettaisit vapaatekstimerkinnän tilaavan palvelun. Selvitä ristiriitaiset pyynnöt ennen pakkaamista, kuten laatikon hävittäminen samalla kun sen pyydetään säilyvän ehjänä.",
+            "Tallenna valmis pakettiyhteenveto, valitut palvelut ja tarjottu summa. Jos näkyviin tulee tarkistettu summa, vertaa painoa, mittoja ja valintoja aiempaan arvioon. Kysy olennaisen eron syy ennen sellaisen vaiheen vahvistamista, jota et ymmärrä. Selkeät tiedot auttavat erottamaan muuttuneen oletuksen laskutusta koskevasta kysymyksestä."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Säilytä pakettinäyttö ja paranna seuraavaa vertailua",
+          "paragraphs": [
+            "Seuraa jättämisen jälkeen kansainvälistä pakettia yksittäisten myyjän lähetysten sijaan. Säilytä luettelo mukana olevista tilauksista pakettiviitteen kanssa. Jos tuotteet jaettiin, pidä erilliset tietueet, jotta yhden paketin päivitystä ei tulkita kaikkien etenemiseksi. Yhdistä toimitusilmoitus oikeaan sisältöön.",
+            "Arvioi valinnainen suoja sen todellisten ehtojen kautta. Pakkauspalvelut ja vakuutus ratkaisevat eri ongelmia, eikä kumpaakaan pidä käsitellä ehdottomana lupauksena. Tarkista nykyinen kattavuus, poissulut ja korvausvaatimukset ennen palveluun luottamista. Säilytä olennainen näyttö ja toimi nopeasti, jos vastaanotettu paketti tai sisältö poikkeaa vahvistetusta tietueesta.",
+            "Tallenna seuraavaa tilausta varten yksityinen vertailu suunnitellusta ja lopullisesta painosta, mitoista, pakkausvalinnoista ja rahtikustannuksesta. Kirjaa, mikä oletus muuttui ja miksi. Useat vertailukelpoiset paketit voivat parantaa budjetointia, mutta eivät silti muodosta yleistä hinnastoa. Eri tuotevalikoima, kohde tai kuljetus vaatii uuden soveltuvuus- ja kustannustarkistuksen. Hyödyllinen yhdistämispäätös päättyy nimettyyn vaihtoehtoon ja perusteluun: soveltuva sisältö, riittävä suoja, hyväksytty kuljetus ja kohtuuhintainen täysi tarjous. Jos jokin jää ratkaisematta, pidä vertailu avoinna, kunnes voit varmistaa asian."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tarkista QC ja selvitä jälkipalvelukysymykset ennen tuotteiden ryhmittelyä.",
+        "Tarkista sisällön yhteensopivuus ja jokainen varastointiajastin.",
+        "Vertaa kaikkia kustannuksia samoille tuotteille yhdistetyissä ja jaetuissa vaihtoehdoissa.",
+        "Valitse pakkauspalvelut tiettyihin suojaustarpeisiin.",
+        "Käytä lopullisia mittoja ja valitun kuljetuksen laskutussääntöjä.",
+        "Vahvista tuoteluettelo, osoite, palvelut ja tarjous ennen maksamista."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: useiden tilausten yhdistäminen",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: paketin simulointi ennen lähetystä",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: pakkaus- ja suojausvaihtoehdot",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo: lähetysrajoitukset",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ]
     }
   ]

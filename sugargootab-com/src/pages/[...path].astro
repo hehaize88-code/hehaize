@@ -41,10 +41,10 @@ const robots=indexable?'index,follow,max-image-preview:large':'noindex,follow';
 Astro.response.headers.set('X-Robots-Tag',robots);
 Astro.response.headers.set('Cache-Control','no-store');
 const activeCategory=category?names[slugs.indexOf(category)]:'';
-const title=type==='faq'?ed.ui.faqTitle:type==='articles'?ed.ui.articleTitle:type==='article'?article!.title:type==='home'?'Sugargoo Spreadsheet — Finds, Photos & Product Links':type==='detail'&&data?data.title:type==='listing'?activeCategory||t.browse:type==='categories'?t.categories:type==='guide'?t.guide:type==='qc'?t.photos:type==='visual'?t.visual:'404';
+const title=type==='faq'?ed.ui.faqTitle:type==='articles'?ed.ui.articleTitle:type==='article'?article!.title:type==='home'?ed.ui.seoHomeTitle:type==='detail'&&data?data.title:type==='listing'?activeCategory||t.browse:type==='categories'?t.categories:type==='guide'?t.guide:type==='qc'?t.photos:type==='visual'?t.visual:'404';
 const canonical=new URL(localized(lang,path),SITE_ORIGIN).href;
 const description=type==='article'?article!.description:type==='articles'?ed.ui.articleIntro:type==='faq'?ed.ui.faqIntro:c.intro;
-const entity=type==='article'?{'@context':'https://schema.org','@type':'Article',headline:article!.title,description:article!.description,datePublished:ed.reviewed,dateModified:ed.reviewed,inLanguage:lang,mainEntityOfPage:canonical,author:{'@type':'Organization',name:ed.ui.author},publisher:{'@type':'Organization',name:'SugargooTab'},citation:article!.sources.map(s=>s.url)}:type==='faq'?{'@context':'https://schema.org','@type':'FAQPage',inLanguage:lang,mainEntity:ed.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.answer}}))}:null;
+const entity=type==='article'?{'@context':'https://schema.org','@type':'Article',headline:article!.title,description:article!.description,datePublished:article!.published,dateModified:article!.updated,inLanguage:lang,mainEntityOfPage:canonical,author:{'@type':'Organization',name:ed.ui.author},publisher:{'@type':'Organization',name:'SugargooTab'},citation:article!.sources.map(s=>s.url)}:type==='faq'?{'@context':'https://schema.org','@type':'FAQPage',inLanguage:lang,mainEntity:ed.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.answer}}))}:null;
 function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if(q)p.set('q',q);return link(path)+'?'+p.toString();}
 ---
 <!doctype html>
@@ -62,7 +62,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
   <meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:type" content={type==='article'?'article':'website'}/>
   {entity&&<script type="application/ld+json" set:html={JSON.stringify(entity).replace(/</g,String.fromCharCode(92)+'u003c')}/>}
  </head>
- <body>
+ <body data-page-type={type} data-locale={lang} data-article={article?.slug} data-search-active={Boolean(q)} data-result-count={data?.total ?? undefined}>
   <header class="site-header">
    <div class="header-inner">
     <a href={link()} class="brand" aria-label="Sugargoo Spreadsheet"><img src={LOGO} alt="SUGARGOO" width="170" height="40"/><span class="brand-tab">TAB</span></a>
@@ -75,7 +75,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
     </nav>
     <div class="header-actions">
      <details class="language-select"><summary aria-label={t.language}><Icon name="globe" size={18}/><span>{lang.toUpperCase()}</span><Icon name="chevron" size={14}/></summary><div class="language-menu"><p>{t.language}</p>{languages.map(([code,label])=><a class:list={{selected:lang===code}} lang={code} href={basePath+localized(code,path)+Astro.url.search}>{label}<span>{code.toUpperCase()}</span></a>)}</div></details>
-     <a class="button button-small join" href={REGISTER} target="_blank" rel="noopener noreferrer">{t.register}<Icon name="external" size={15}/></a>
+     <a class="button button-small join" data-track="outbound_register_click" data-destination="sugargoo" href={REGISTER} target="_blank" rel="noopener noreferrer">{t.register}<Icon name="external" size={15}/></a>
     </div>
    </div>
   </header>
@@ -122,7 +122,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
     {type==='detail'&&data&&<><div class="detail-grid"><div class="gallery">
      <div class="gallery-main"><span class="missing-image">{t.photoMissing}</span>{data.images[0]&&<img id="main-image" src={data.images[0]} alt={data.title} width="700" height="700" referrerpolicy="no-referrer"/>}</div>
      <div class="thumbnails">{data.images.map((img:string,i:number)=><button type="button" class:list={{chosen:i===0}} data-image={img} aria-label={`${t.photos} ${i+1}`}><img src={img} alt={`${data.title} ${i+1}`} width="90" height="90" referrerpolicy="no-referrer"/></button>)}</div>
-    </div><div class="detail-copy"><span class="eyebrow">{names[slugs.indexOf(data.category)]}</span><h1>{data.title}</h1><p class="detail-price">${data.price}<small>USD</small></p><p class="price-label">{t.price}</p><p class="source-id">ID / {data.sourceId}</p>{data.buy?<a class="button buy-button" href={data.buy} target="_blank" rel="sponsored noopener noreferrer">{t.buy}<Icon name="external"/></a>:<p class="notice">{t.unavailable}</p>}<p class="fine-print">{c.priceNote}</p><div class="detail-note"><Icon name="image"/><div><strong>{t.photos}</strong><p>{c.qcNote}</p></div></div><a class="text-link" href={link('/spreadsheet/')}><span>←</span>{t.back}</a></div></div>
+    </div><div class="detail-copy"><span class="eyebrow">{names[slugs.indexOf(data.category)]}</span><h1>{data.title}</h1><p class="detail-price">${data.price}<small>USD</small></p><p class="price-label">{t.price}</p><p class="source-id">ID / {data.sourceId}</p>{data.buy?<a class="button buy-button" data-track="outbound_purchase_click" data-destination="sugargoo" data-product-id={data.path} href={data.buy} target="_blank" rel="sponsored noopener noreferrer">{t.buy}<Icon name="external"/></a>:<p class="notice">{t.unavailable}</p>}<p class="fine-print">{c.priceNote}</p><div class="detail-note"><Icon name="image"/><div><strong>{t.photos}</strong><p>{c.qcNote}</p></div></div><a class="text-link" href={link('/spreadsheet/')}><span>←</span>{t.back}</a></div></div>
      {data.related.length>0&&<section class="product-section"><div class="section-heading"><h2>{t.related}</h2></div><div class="product-grid">{data.related.map((p:any)=><Card {basePath} product={p} t={t} names={names} lang={lang}/>)}</div></section>}
     </>}
     {['faq','articles','article'].includes(type)&&<EditorialPage {ed} {lang} {basePath} {type} {article}/>}

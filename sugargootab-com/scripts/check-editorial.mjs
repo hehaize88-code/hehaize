@@ -11,12 +11,12 @@ for(const lang of locales){
  if(d.locale!==lang)fail(lang,'wrong locale');
  if(d.reviewed!==base.reviewed)fail(lang,'review date differs');
  for(const group of ['ui','groups'])if(JSON.stringify(Object.keys(d[group]||{}).sort())!==JSON.stringify(Object.keys(base[group]).sort()))fail(lang,group+' keys differ');
- if(d.faqs.length!==30||d.articles.length!==10)fail(lang,'expected 30 FAQ / 10 articles, got '+d.faqs.length+'/'+d.articles.length);
+ if(d.faqs.length!==30||d.articles.length!==13)fail(lang,'expected 30 FAQ / 13 articles, got '+d.faqs.length+'/'+d.articles.length);
  for(const [i,f]of d.faqs.entries()){let b=base.faqs[i];if(!b||f.id!==b.id||f.group!==b.group)fail(lang,'FAQ ID/group mismatch '+i);if(!f.question||!f.answer)fail(lang,'empty FAQ '+i);if(b&&JSON.stringify(f.sources.map(x=>x.url))!==JSON.stringify(b.sources.map(x=>x.url)))fail(lang,'FAQ source mismatch '+i);if(lang!=='en'&&b&&f.answer===b.answer)fail(lang,'untranslated FAQ '+f.id);}
  const ratios=[];
  for(const [i,a]of d.articles.entries()){
   const b=base.articles[i];if(!b){fail(lang,'extra article');continue;}
-  for(const k of ['id','slug','category'])if(a[k]!==b[k])fail(lang,`${a.slug}: ${k} differs`);
+  for(const k of ['id','slug','category','published','updated'])if(a[k]!==b[k])fail(lang,`${a.slug}: ${k} differs`);
   if(JSON.stringify(a.related)!==JSON.stringify(b.related))fail(lang,`${a.slug}: related differs`);
   if(a.intro.length!==b.intro.length||a.checklist.length!==b.checklist.length||a.sections.length!==b.sections.length)fail(lang,`${a.slug}: section/intro/checklist counts differ`);
   if(JSON.stringify(a.sources.map(s=>s.url))!==JSON.stringify(b.sources.map(s=>s.url)))fail(lang,`${a.slug}: sources differ`);

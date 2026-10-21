@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Články",
     "articleTitle": "Nákupní sprievodcovia Sugargoo",
-    "articleIntro": "Desať praktických sprievodcov výberom produktu, kontrolou podrobností a plánovaním cesty od predajcu až po doručenie.",
+    "articleIntro": "Praktické návody na produktové odkazy, fotografie QC, fázy objednávky a prepravu, s oficiálnymi zdrojmi a jasnými ďalšími krokmi.",
     "faqTitle": "Sugargoo — časté otázky",
     "faqIntro": "Zrozumiteľné odpovede pre každú fázu objednávky, s oficiálnymi zdrojmi pravidiel platformy a poctivým opisom obmedzení tohto nezávislého katalógu.",
     "readArticle": "Prečítať sprievodcu",
@@ -33,7 +33,12 @@
     "categoryShipping": "Doprava a skladovanie",
     "categoryAccount": "Platby a popredajné služby",
     "author": "Redakčný tím SugargooTab",
-    "siteEvidence": "O tomto nezávislom katalógu"
+    "siteEvidence": "O tomto nezávislom katalógu",
+    "seoHomeTitle": "Sugargoo Spreadsheet: odkazy na produkty, fotografie a nákupné návody",
+    "catalogCtaTitle": "Využite kontrolný zoznam v praxi",
+    "catalogCtaBody": "Porovnajte produktové odkazy v katalógu a pred nákupom alebo odoslaním overte presnú ponuku aj údaje vlastnej objednávky.",
+    "catalogCtaButton": "Prehliadať produktové odkazy",
+    "categoryCtaButton": "Preskúmať kategórie produktov"
   },
   "groups": {
     "basics": "Začíname",
@@ -415,8 +420,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sprievodca Sugargoo Spreadsheet: od odkazov k užitočnému výberu produktov",
-      "description": "Pomocou tabuľky Sugargoo porovnávajte konkrétne ponuky, overujte varianty a naplánujte celú objednávku pred nákupom.",
+      "title": "Sprievodca Sugargoo Spreadsheet: hľadanie a overenie odkazov",
+      "description": "Hľadajte produkty v Sugargoo Spreadsheet, overujte aktuálne ponuky a varianty a rozlišujte referenčné snímky od vlastných skladových fotografií QC.",
       "keyword": "tabuľka Sugargoo",
       "category": "getting-started",
       "intro": [
@@ -424,6 +429,38 @@
         "Tento nezávislý katalóg načítava informácie o produktoch a referenčné obrázky z cnbuycha. Objednávanie a platba prebiehajú na Sugargoo. Nasledujúci postup prepája tieto dve fázy bez toho, aby katalógový záznam považoval za osobné odporúčanie, záruku dostupnosti alebo dôkaz skladovej kontroly. Funguje aj vtedy, keď si výber vediete v jednoduchej aplikácii na poznámky."
       ],
       "sections": [
+        {
+          "id": "live-listing-check",
+          "title": "Ako overiť aktuálnu ponuku pred nákupom",
+          "paragraphs": [
+            "Otvorte produkt v katalógu a potom jeho pôvodnú ponuku. Porovnajte identifikátor produktu na trhovisku, predajcu a zvolený variant s položkou zobrazenou v Sugargoo. Interné číslo stránky katalógu je samostatný identifikátor. Tesne pred platbou znovu overte aktuálnu cenu, dostupné možnosti a množstvo; uložená karta nepotvrdzuje súčasné zásoby.",
+            "Ak pôvodná ponuka chýba, produkt sa nedá načítať alebo sa variant líši, v tomto kroku zastavte. Vráťte sa do prehľadu a porovnajte iného kandidáta. Zapíšte si, prečo prvý nevyhovel, aby ste neskôr neopakovali rovnakú kontrolu. Referenčné fotografie zostávajú podkladom na vyhľadávanie, aj keď pripomínajú skladové snímky."
+          ],
+          "table": {
+            "headers": [
+              "Kontrola",
+              "Použite tieto podklady"
+            ],
+            "rows": [
+              [
+                "Totožnosť produktu",
+                "Pôvodná adresa ponuky a identifikátor produktu"
+              ],
+              [
+                "Aktuálna dostupnosť",
+                "Súčasná ponuka predajcu a vybraná možnosť"
+              ],
+              [
+                "Cena",
+                "Presný variant a suma pri platbe"
+              ],
+              [
+                "Stav",
+                "Fotografie vlastnej objednávky po prijatí do skladu"
+              ]
+            ]
+          }
+        },
         {
           "id": "define-the-purchase",
           "title": "Začnite účelom, ktorý má produkt splniť",
@@ -506,7 +543,9 @@
       "related": [
         "how-to-buy-on-sugargoo",
         "sugargoo-qc-photos"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -600,15 +639,17 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-shipping-calculator"
-      ]
+        "sugargoo-order-status",
+        "sugargoo-spreadsheet-guide"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Fotografie QC Sugargoo: čo skontrolovať pred odoslaním",
-      "description": "Prezerajte si skladové fotografie systematicky, žiadajte užitočné merania a rozumejte tomu, čo vizuálne QC nemôže preukázať.",
+      "title": "Fotografie QC Sugargoo: kontrola produktov pred odoslaním",
+      "description": "Použite praktický zoznam na kontrolu fotografií QC Sugargoo pri topánkach, oblečení a taškách. Pred odoslaním overte štítky, rozmery, švy a chýbajúce detaily.",
       "keyword": "fotografie QC Sugargoo",
       "category": "quality",
       "intro": [
@@ -616,6 +657,43 @@
         "Sugargoo uvádza, že zvyčajne poskytuje päť štandardných fotografií QC, pričom rozsah kontroly závisí od produktu a typu objednávky. Počet fotografií nezaručuje, čo možno overiť. Referenčné obrázky cnbuycha na tomto webe sú katalógovým materiálom, nie overeným QC vašej osobnej objednávky Sugargoo; pred zabezpečením medzinárodnej prepravy skontrolujte vlastný skladový záznam."
       ],
       "sections": [
+        {
+          "id": "product-qc-checklist",
+          "title": "Kontrola fotografií QC topánok, oblečenia a tašiek",
+          "paragraphs": [
+            "Začnite porovnaním objednávky, farby, veľkosti a množstva. Potom preskúmajte detaily, ktoré môžu zmeniť rozhodnutie ponechať si produkt. Nasledujúci zoznam pomáha pri kontrole snímok; nezaručuje, že bežné QC zahŕňa každý uhol alebo meranie. Vyžiadajte si konkrétny chýbajúci podklad a pred pokračovaním overte prípadný poplatok za službu.",
+            "Napríklad fotografia tašky iba spredu neukazuje upevnenie popruhu ani stav vnútra. Ak vám na tomto detaile záleží, požiadajte o príslušný záber. Ak potrebujete meranie, určte začiatočný a koncový bod a požiadajte o viditeľný meter. Fotografie nepotvrdzujú všetky funkčné vlastnosti ani pravosť."
+          ],
+          "table": {
+            "headers": [
+              "Produkt",
+              "Čo skontrolovať na fotografiách objednávky",
+              "Pri nejasnosti požiadajte o"
+            ],
+            "rows": [
+              [
+                "Topánky",
+                "Pár, veľkostné štítky, podrážky a viditeľné švy",
+                "Oba štítky a príslušný záber podrážky alebo švu"
+              ],
+              [
+                "Oblečenie",
+                "Veľkostný štítok, vzhľad látky a prešitie",
+                "Meranie naplocho s jasným začiatkom a koncom"
+              ],
+              [
+                "Tašky",
+                "Popruhy, zapínanie, podšívku a príslušenstvo",
+                "Detailné snímky vnútra a upevňovacích bodov"
+              ],
+              [
+                "Ľubovoľný predmet",
+                "Správny variant, množstvo a viditeľné poškodenie",
+                "Jasnú fotografiu konkrétneho nesúladu"
+              ]
+            ]
+          }
+        },
         {
           "id": "match-the-order",
           "title": "Určte, ku ktorému produktu fotografie patria",
@@ -698,13 +776,15 @@
       "related": [
         "sugargoo-returns-refunds",
         "sugargoo-rehearsal-shipping"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Kalkulačka prepravy Sugargoo: realistický rozpočet zásielky",
-      "description": "Odhadnite dopravu pomocou správneho cieľa, kategórie produktu, hmotnosti a rozmerov a porovnajte úplné náklady jednotlivých trás.",
+      "title": "Kalkulačka dopravy Sugargoo: hmotnosť, rozmery a celková cena",
+      "description": "Používajte kalkulačku dopravy Sugargoo s realistickou hmotnosťou a rozmermi. Porovnajte vhodné trasy a zistite, čo v odhade zostáva neisté.",
       "keyword": "kalkulačka prepravy Sugargoo",
       "category": "shipping",
       "intro": [
@@ -712,6 +792,14 @@
         "Oficiálne pokyny ku kalkulačke Sugargoo používajú cieľ, kategóriu produktu, hmotnosť a rozmery na porovnanie dostupných možností dopravy. Výsledok berte ako scenár s dátumom a aktualizujte ho, keď získate viac informácií o zabalenej zásielke. Tento sprievodca ukazuje, ako takéto scenáre zostaviť a rozpoznať neistotu skôr, než spôsobí problém pri platbe."
       ],
       "sections": [
+        {
+          "id": "quote-comparison",
+          "title": "Pred nákupom pripravte dva odhady",
+          "paragraphs": [
+            "Pripravte úvodný scenár s najlepšími dostupnými údajmi o hmotnosti a rozmeroch a potom opatrnejší scenár zohľadňujúci neisté balenie. Zachovajte rovnaké miesto doručenia, obsah a ostatné nastavenia. Ak sa objednávka zmestí do rozpočtu iba pri najoptimistickejších predpokladoch, neistotu vyriešte pred platbou za tovar.",
+            "Zaznamenajte dátum ponuky, trasu, jednotky, odhadované rozmery a vybrané doplnky. Keď získate údaje o zmeranej zásielke, nahraďte nimi predpoklady. Pre americkú adresu použite samostatný návod na porovnávanie dopravy do USA; pri viacerých skladovaných objednávkach porovnajte úplné náklady spojených a rozdelených zásielok podľa sprievodcu konsolidáciou."
+          ]
+        },
         {
           "id": "collect-the-inputs",
           "title": "Zhromaždite údaje pred porovnávaním cien",
@@ -792,15 +880,17 @@
         }
       ],
       "related": [
-        "sugargoo-rehearsal-shipping",
-        "sugargoo-fees-payment"
-      ]
+        "sugargoo-shipping-to-usa",
+        "sugargoo-parcel-consolidation"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Skúšobné balenie Sugargoo: kedy pomôžu presnejšie rozmery",
-      "description": "Rozhodnite, či má skúšobné balenie zmysel, pripravte jasné pokyny a využite výsledok na porovnanie oprávnených prepravných trás.",
+      "title": "Skúšobné balenie Sugargoo: hmotnosť, rozmery a kedy ho využiť",
+      "description": "Zistite, kedy má skúšobné balenie Sugargoo význam, určte spôsob balenia a porovnajte zmeranú zásielku s pôvodným odhadom prepravného.",
       "keyword": "skúšobné balenie Sugargoo",
       "category": "shipping",
       "intro": [
@@ -808,6 +898,14 @@
         "Sugargoo opisuje skúšobné balenie ako simuláciu zásielky pred odoslaním, ktorá poskytuje presnejšie informácie o hmotnosti a objeme. Berte ho ako rozhodnutie o meraní a balení a aktuálne podmienky služby aj cenu overte vo svojom účte. Praktická hodnota vychádza z toho, že viete, na čo výsledok použijete."
       ],
       "sections": [
+        {
+          "id": "rehearsal-decision",
+          "title": "Kedy sa oplatí zvážiť skúšobné balenie?",
+          "paragraphs": [
+            "Zvážte skúšobné balenie, keď neznáme zabalené rozmery môžu zmeniť trasu alebo rozpočet: pri objemnom ľahkom predmete, viacerých predajných škatuliach alebo zásielke blízko limitu trasy. Zapíšte neistotu, ktorú chcete vyriešiť, a overte aktuálny poplatok. Ak by vaše rozhodnutie zostalo rovnaké v rozumnom rozpätí odhadov, dodatočné meranie môže mať menšiu hodnotu.",
+            "Výsledok porovnajte s pôvodnými vstupmi: skutočnou hmotnosťou, vonkajšími rozmermi, ponechaným obalom a vybranými službami. Prepočítajte cenu podľa súčasných pravidiel trasy. Menší rozmer nezaručuje nižší konečný účet, pretože stále môžu rozhodovať minimálne poplatky, hmotnostné pásma a iné možnosti."
+          ]
+        },
         {
           "id": "identify-the-decision",
           "title": "Vymedzte neistotu, ktorú má skúšobné balenie vyriešiť",
@@ -888,9 +986,11 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-calculator",
-        "sugargoo-warehouse-storage"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-shipping-calculator"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-tracking",
@@ -1014,7 +1114,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-warehouse-storage"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-fees-payment",
@@ -1142,7 +1244,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-returns-refunds"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-warehouse-storage",
@@ -1240,9 +1344,11 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-rehearsal-shipping"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-order-status"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-returns-refunds",
@@ -1342,13 +1448,15 @@
       "related": [
         "sugargoo-qc-photos",
         "sugargoo-fees-payment"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Odkazy Weidian a Taobao na Sugargoo: overte presný produkt",
-      "description": "Skopírujte správnu zdrojovú URL, zachovajte identitu produktu a overte varianty na Sugargoo s podporovaným ručným postupom pri zlyhaní automatického načítania.",
+      "title": "Odkazy Weidian a Taobao v Sugargoo: overenie a oprava chýb",
+      "description": "Pred nákupom v Sugargoo overte odkazy Weidian a Taobao. Riešte chýbajúce ponuky, nesprávne varianty a chyby načítania bez hádania.",
       "keyword": "Weidian do Sugargoo",
       "category": "getting-started",
       "intro": [
@@ -1356,6 +1464,14 @@
         "Tento sprievodca vysvetľuje, čo kopírovať, ako rozpoznať nezodpovedajúcu ponuku a čo robiť pri zlyhaní automatického načítania. Rozlišuje aj ID produktu zdrojového trhoviska od interného identifikátora stránky tohto katalógu, aby sa pohodlné nákupné tlačidlo nestalo dôvodom preskočiť záverečné kontroly."
       ],
       "sections": [
+        {
+          "id": "link-error-check",
+          "title": "Čo overiť, keď sa produktový odkaz nenačíta",
+          "paragraphs": [
+            "Najprv otvorte pôvodnú stránku produktu a potvrďte, že stále označuje zamýšľanú položku. Domovská stránka obchodu, skrátený text zdieľania ani odstránená ponuka nenahrádzajú úplnú adresu produktu. Pred ďalším pokusom porovnajte identifikátor na trhovisku. Odstráňte nesúvisiaci text zdieľania, nie údaje určujúce totožnosť predmetu.",
+            "Ak pôvodný produkt existuje, ale automatické načítanie zlyhá, overte oficiálne možnosti ručnej objednávky a podmienky prijatia. Uchovávajte spolu predajcu, presný variant, množstvo, adresu produktu a cenu. Ručný formulár neruší obmedzenia produktov ani nezaručuje dostupnosť. Ak aktuálnu ponuku nemožno overiť, vyberte iného kandidáta namiesto hádania podľa obrázka."
+          ]
+        },
         {
           "id": "source-identity",
           "title": "1. Začnite ponukou produktu, nie výsledkom vyhľadávania",
@@ -1442,6 +1558,409 @@
       "related": [
         "sugargoo-spreadsheet-guide",
         "how-to-buy-on-sugargoo"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Doprava Sugargoo do USA: náklady, hmotnosť a doručenie",
+      "description": "Naplánujte dopravu Sugargoo do USA: pred platbou za medzinárodnú prepravu porovnajte hmotnosť, rozmery, podmienky trás a fázy doručenia.",
+      "keyword": "doprava sugargoo do usa",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Doprava Sugargoo do USA je samostatné rozhodnutie oddelené od nákupu tovaru. Začnite doručovacou adresou, produktmi, ktoré chcete poslať, a odhadom ich hmotnosti a rozmerov po zabalení. Potom porovnajte trasy skutočne dostupné na vašom účte. Cena cudzej zásielky je iba orientačná: cieľ, dátum, rozmery aj obsah sa môžu od vašich líšiť.",
+        "Tento návod ponúka metódu porovnania, nie pevnú cenu alebo prísľub doručenia. SugargooTab je nezávislý katalóg a nemôže v mene Sugargoo zásielku naceniť, odoslať ani sledovať. Na plánovanie použite oficiálnu kalkulačku a o platbe rozhodnite podľa konečného prehľadu zásielky. Zaznamenajte, čo cena zahŕňa, aby boli neskoršie zmeny zrozumiteľné."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Oddeľte výdavky na produkty od rozpočtu zásielky do USA",
+          "paragraphs": [
+            "Rozdeľte rozpočet na dve fázy. Prvá zahŕňa vybraný tovar, vnútroštátnu dopravu v Číne a zobrazené náklady pri nákupe alebo platbe. Druhá zahŕňa medzinárodné prepravné a služby vybrané pre zásielku. Zohľadniť môže byť potrebné aj poplatky spojené s cieľovou krajinou. Nepredpokladajte, že cena produktu v tomto katalógu obsahuje niektorú fázu doručenia.",
+            "Ilustračný rozpočet použite na preverenie rozhodnutia, nie na predpovedanie ponuky. Ak je váš limit 150 USD a tovar už stojí 110 USD, zvyšných 40 USD musí pokryť všetko, čo ste ešte nezaplatili. Ak aktuálny odhad dopravy prekračuje zvyšok, upravte objednávku pred pridaním ďalších produktov. Lacnejšie číslo zo starého príspevku rozdiel nevyrovná.",
+            "Vedľa sumy uchovajte dátum odhadu a vstupné hodnoty. Zaznamenajte, či sú zahrnuté baliace služby a prípadná voliteľná ochrana a či podmienky trasy vysvetľujú dodatočné poplatky v cieli. Neznámu cenu označte ako neznámu. Je to užitočnejšie než presný súčet zostavený z neúplných predpokladov."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Zadajte cieľ, obsah, hmotnosť a rozmery",
+          "paragraphs": [
+            "Použite skutočné americké miesto doručenia a regionálne polia požadované kalkulačkou. Nenahrádzajte adresu inou iba kvôli lákavejším trasám. Presne opíšte kategóriu produktu vrátane vlastností ovplyvňujúcich prepravu. Trasa prijímajúca bežné oblečenie nemusí automaticky prijímať batérie, tekutiny ani každý iný produkt trhoviska.",
+            "Kým tovar príde do skladu, hmotnosť a rozmery sú plánovacie predpoklady. Venujte pozornosť objemným veciam: ľahká bunda vo veľkej škatuli môže tvoriť inú zásielku ako tesne zabalená košeľa. Keď sú vaše položky dostupné, nahraďte odhady skladovými údajmi a tam, kde to pomôže, výsledkami skúšobného balenia.",
+            "Zapisujte jednotky spolu s číslami. Gramy a kilogramy nie sú zameniteľné vstupy a centimetre nepatria do poľa pre palce. Nesprávna jednotka môže znehodnotiť zdanlivo výhodnú ponuku. Ak je odhad prekvapivo lacný alebo drahý, najskôr overte adresu, jednotky, množstvo a kategóriu produktu, až potom posudzujte trasu."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Pochopte hmotnosť používanú pri účtovaní",
+          "paragraphs": [
+            "Skutočná hmotnosť vyjadruje váhu; objemová hmotnosť prevádza rozmery zásielky na účtovanú hodnotu podľa pravidiel vybranej trasy. Deliteľ, zaokrúhľovanie a minimálny poplatok sa môžu líšiť. Prečítajte si popis trasy namiesto používania jedného vzorca na všetky možnosti. Pri objemovom účtovaní môže rozhodovať vyššie číslo, aj keď samotný tovar váži málo.",
+            "Iba na ilustráciu: škatuľa 40 × 30 × 25 cm má objem 30 000 kubických centimetrov. Hypotetický deliteľ 6000 by znamenal 5 kg objemovej hmotnosti. To nehovorí, že vaša trasa používa deliteľ 6000. Pri skutočnej hmotnosti 3 kg by trasa účtujúca vyššiu hodnotu mohla škatuľu posúdiť ako 5 kg ešte pred zaokrúhlením.",
+            "Spýtajte sa, či zmena balenia upraví rozmery natoľko, aby sa zmenila cena. Odstránenie zbytočnej predajnej škatule môže niekedy pomôcť, kým krehký produkt môže jej ochranu potrebovať. Po dohodnutom balení znovu overte konečné merania; nepredpokladajte úsporu za každú odstránenú škatuľu ani to, že každé vystuženie stojí za pridanú hmotnosť."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Porovnávajte trasy s rovnakými predpokladmi zásielky",
+          "paragraphs": [
+            "Pripravte krátke porovnanie len trás, ktoré prijímajú vašu zásielku. Každú naceňte pre rovnaký cieľ, obsah, hmotnosť a rozmery. Inak môže cenový rozdiel vyplývať z iných vstupov, nie z lepšej služby. Limity rozmerov a hmotnosti si prečítajte skôr, než venujete čas možnosti nevhodnej pre hotovú zásielku.",
+            "Overte, čo zobrazený odhad doručenia meria a ktoré fázy sledovania vidíte. Odoslanie predajcom do čínskeho skladu je oddelené od medzinárodnej cesty a príprava pred odovzdaním dopravcovi môže tvoriť ďalšiu fázu. Časové rozpätie berte ako plánovaciu informáciu. Nenakupujte na pevný termín, pokiaľ neprijímate dôsledky oneskorenia.",
+            "Prečítajte aktuálne vysvetlenie zahrnutých nákladov, príplatkov, obmedzení a voliteľného poistenia vybranej trasy. Text uložte s ponukou. Ak je dôležitý bod nejasný, pred platbou sa spýtajte oficiálnej podpory a odpoveď si ponechajte. Názov trasy ani snímka iného kupujúceho nenahrádzajú podmienky vašej zásielky."
+          ],
+          "table": {
+            "headers": [
+              "Porovnanie",
+              "Čo zaznamenať pred platbou"
+            ],
+            "rows": [
+              [
+                "Prípustnosť",
+                "Povolený obsah, pokrytie cieľa a limity zásielky"
+              ],
+              [
+                "Účtovaná hmotnosť",
+                "Pravidlo skutočnej alebo objemovej hmotnosti, deliteľ a zaokrúhlenie"
+              ],
+              [
+                "Zobrazený súčet",
+                "Prepravné, zvolené doplnky a jasne uvedené výnimky"
+              ],
+              [
+                "Údaje o doručení",
+                "Odhadované rozpätie, fáza odovzdania a rozsah sledovania"
+              ],
+              [
+                "Ochrana",
+                "Aktuálne krytie, výluky a požiadavky na nárok"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Udržujte správne údaje o produkte a príjemcovi",
+          "paragraphs": [
+            "Používajte presné opisy produktov a skutočné údaje požadované pre zásielku. Uchovajte doklady objednávky a platby pre prípad potreby vysvetlenia. Nekopírujte deklaráciu nesúvisiaceho balíka ani nevoľte zavádzajúci opis, aby sa zobrazila požadovaná trasa. Relevantné kontroly určuje obsah vašej vlastnej zásielky.",
+            "Americké dovozné pravidlá a podmienky dopravcov sa môžu meniť. Tento návod zámerne neuvádza trvalý daňový limit ani nesľubuje trasu bez ďalších poplatkov. Pri objednávaní prepravy overte aktuálne pokyny cieľovej krajiny a podmienky služby. Ak si informácie odporujú, vyžiadajte si vysvetlenie pred platbou a nepovažujte reklamnú vetu za úplný výklad.",
+            "V oficiálnom účte skontrolujte meno príjemcu, adresu a kontaktné údaje. Opraviť chybu pred odoslaním je jednoduchšie než riešiť neskorší problém s doručením. Súkromné adresy a čísla objednávok nepatria do verejných recenzií alebo zdieľaných prehľadov. Užitočné verejné porovnanie môže opísať trasu a približný typ balíka bez odhalenia príjemcu."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Sledujte jednotlivé fázy a reagujte na výnimky",
+          "paragraphs": [
+            "Rozlišujte vnútroštátne sledovanie predajcu od čísla medzinárodnej zásielky. Príchod do skladu neznamená opustenie Číny a vytvorené sledovacie číslo samo nepotvrdzuje prevzatie dopravcom. Sledujte logistický záznam pripojený k podanej zásielke a zapíšte poslednú udalosť s dátumom.",
+            "Ak sa sledovanie zastaví, hľadajte odovzdanie, žiadosť o informácie alebo výnimku, než zásielku považujete za stratenú. Uchovajte poslednú aktualizáciu a položte podpore konkrétnu otázku o ďalšom očakávanom kroku. Číslo balíka poskytnite oficiálnym súkromným kanálom. Opakované verejné vyhľadávanie nevyrieši chýbajúce dokumenty ani chybu adresy príjemcu.",
+            "Po doručení balík a obsah rýchlo skontrolujte; pri probléme uchovajte príslušné obaly a dôkazy. Nárok závisí od danej služby a jej požiadaviek, zakúpená preprava nie je všeobecná záruka. Skutočné fázy a náklady si zapíšte, aby ďalší odhad využil porovnateľné podklady namiesto pamäti. Pred platením ešte raz prejdite porovnanie a vyraďte trasy s nevyriešenou prípustnosťou. Použiteľný rozpočet vyžaduje dostupnú službu, správne vstupy a zrozumiteľné podmienky, nie iba najnižšie zobrazené číslo."
+          ]
+        }
+      ],
+      "checklist": [
+        "Potvrďte skutočný cieľ v USA a povolený obsah.",
+        "Oddeľte rozpočet tovaru od medzinárodného prepravného a doplnkov.",
+        "Používajte rovnaké jednotky a zaznamenajte zabalené rozmery.",
+        "Porovnávajte prípustné trasy s totožnými vstupmi.",
+        "Overte aktuálne podmienky trasy a správne údaje zásielky.",
+        "Uložte konečnú ponuku a sledujte konkrétnu zásielku."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Odhad medzinárodného prepravného",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Simulácia balenia pred odoslaním",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: Prepravné obmedzenia",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo: Problémy so sledovaním",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Stav objednávky Sugargoo: od platby do skladu",
+      "description": "Pochopte fázy objednávky Sugargoo, odoslanie predajcom, príjem do skladu a sledovanie balíka. Zistite, čo overiť pri nemennom stave.",
+      "keyword": "stav objednávky sugargoo",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Stav objednávky Sugargoo opisuje jednu fázu nákupu, nie celú cestu k vašim dverám. Platba, nákup sprostredkovateľom, odoslanie predajcom, skladové spracovanie a medzinárodné odoslanie sú samostatné kroky. Najprv určte, či sledujete objednávku položky alebo podaný balík; odpovedajú na iné otázky a môžu mať iné sledovacie čísla.",
+        "Názvy na webe alebo v aplikácii sa môžu meniť podľa jazyka a úprav rozhrania. Nasledujúce opisy fáz vysvetľujú, čo zisťovať, namiesto tvrdenia, že reprodukujú každý aktuálny názov tlačidla. Vlastnú objednávku otvorte kvôli správam, dostupným krokom a časovým údajom. Tie sú užitočnejšie než porovnávanie krátkeho stavu s cudzou objednávkou."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "Začnite správnym záznamom položky alebo zásielky",
+          "paragraphs": [
+            "Uchovávajte pôvodný produktový odkaz, zvolený variant a číslo objednávky Sugargoo spolu. Ak ste kúpili viac podobných vecí, pred kontaktovaním podpory overte predajcu, farbu, veľkosť a množstvo. Aktualizácia jednej položky nedokazuje postup druhej, aj keď boli obe zaplatené počas tej istej návštevy.",
+            "Pre medzinárodný balík vytvorený zo skladovaných vecí veďte samostatný záznam. Jeden balík môže obsahovať viac objednávok, zatiaľ čo problém jednotlivej objednávky môže vyžadovať vyriešenie pred podaním balíka. Zapíšte, ktoré čísla položiek patria do ktorého balíka. Toto jednoduché rozlíšenie zabraňuje zámene domáceho čísla predajcu s prepravou do vašej krajiny.",
+            "Ak vás stav prekvapí, pred konaním si prečítajte správy objednávky a posledný časový údaj. Žiadosť o chýbajúce možnosti alebo úpravu platby môže vysvetliť, prečo nákup nepokročil. Dôležité znenie si poznačte, ale súkromné čísla a snímky posielajte len oficiálnym kanálom podpory."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "Platba a nákup sú odlišné fázy",
+          "paragraphs": [
+            "Pri čakaní na platbu overte, či ste skutočne dokončili platenie. Položka v košíku alebo nezaplatená objednávka nedokazuje, že predajca dostal požiadavku na nákup. Ak ste si nákup rozmysleli, použite dostupné zrušenie pre túto fázu a nepredpokladajte, že opustenie obrazovky odstráni objednávku.",
+            "Po zaplatení potvrďte transakciu na účte a prezrite správy k nákupu. Dokončená platba nedokazuje odoslanie predajcom. Nákup môže stále závisieť od zásob, vybraného variantu, vnútroštátneho prepravného alebo údajov potrebných na správne objednanie. Odpovedzte na konkrétnu požiadavku namiesto opakovaného platenia duplicitnej objednávky.",
+            "Ak banka ukazuje strhnutú sumu, ale objednávka vyzerá nezaplatená, pred ďalším pokusom porovnajte čísla a stav platby s oficiálnou podporou. Bankový záznam a aktualizácia objednávky môžu opisovať odlišné časti procesu. Uchovajte dôkazy bez zverejnenia karty, prihlasovacích údajov alebo overovacích kódov. Spýtajte sa, ktorá transakcia je priradená k objednávke a aký krok je skutočne potrebný."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "Zakúpené a odoslané predajcom neznamená pripravené v sklade",
+          "paragraphs": [
+            "Vo fáze zakúpenia overte, či predajca poskytol informácie o vnútroštátnej zásielke. Potvrdenie nákupu sa týka tovaru; nejde o potvrdenie medzinárodného odoslania. Ak potrebujete aktualizáciu od predajcu, pýtajte sa v konverzácii objednávky, aby otázka zostala pri správnej položke a možnostiach.",
+            "Po odoslaní predajcom sledujte domáce číslo priradené k tejto objednávke. Doručenie do skladu je oddelené od kontroly a uskladnenia. Sken dopravcu potvrdzujúci doručenie môže predchádzať dokončenému skladovému záznamu na účte. Samotná prestávka nedokazuje chýbajúci tovar; overte správy a informácie o spracovaní.",
+            "Ak predajca odoslal len časť objednávky alebo množstvo nesedí, výslovne vymenujte chýbajúce kusy. Pridajte pôvodné množstvo a súčasné dôkazy. Správa „z tejto objednávky chýba jedna z dvoch košieľ“ je konkrétnejšia než „môj balík je nesprávny“. Nechajte podporu určiť, či ide o odoslanie predajcu, rozdelenú dodávku alebo skladové spracovanie."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "Príchod do skladu je bod vašej kontroly",
+          "paragraphs": [
+            "Keď sú dostupné skladové fotografie a údaje vlastnej objednávky, porovnajte ich so zakúpeným variantom. Pozrite štítky, farbu, množstvo, viditeľný stav a vyžiadané merania. Referenčné snímky katalógu túto kontrolu nenahrádzajú: slúžili na vyhľadanie a neurčujú stav kusu prijatého pre vás.",
+            "Ak je obrázok nejasný, presne opíšte, čo má byť viditeľné. Napríklad požiadajte o veľkostný štítok alebo meranie s metrom začínajúcim pri správnom šve. Doplnkové služby a ich dostupnosť overujte na účte. Bežná vizuálna kontrola nie je dôkazom pravosti ani funkčným testom všetkých produktov.",
+            "Možné vrátenie alebo problém s predajcom vyriešte pred zaradením do medzinárodnej zásielky. Včas overte príslušné podmienky a lehoty; nepredpokladajte, že doba skladovania je aj lehotou na vrátenie. Uchovajte obaly a dôkazy potrebné k žiadosti. Schválenie, spätné poštovné a vybavenie refundácie závisia od objednávky a aktuálnych popredajných podmienok."
+          ],
+          "table": {
+            "headers": [
+              "Posudzovaná fáza",
+              "Užitočná kontrola",
+              "Ďalší krok"
+            ],
+            "rows": [
+              [
+                "Čakanie na platbu",
+                "Čísla objednávky a platby",
+                "Dokončite alebo zrušte zamýšľanú objednávku"
+              ],
+              [
+                "Nákup",
+                "Variant, zásoby a správy objednávky",
+                "Odpovedzte na konkrétnu žiadosť o informácie"
+              ],
+              [
+                "Odoslanie predajcom",
+                "Domáce sledovanie a množstvo",
+                "Overte postup predajcu cez objednávku"
+              ],
+              [
+                "Skladové spracovanie",
+                "Záznam prijatia a nahrané fotografie",
+                "Skontrolujte produkt a vyriešte problémy"
+              ],
+              [
+                "Uskladnená položka",
+                "Zostávajúca doba a rozhodnutie po QC",
+                "Naplánujte prípustnú zásielku pred termínom"
+              ],
+              [
+                "Podaná zásielka",
+                "Číslo zásielky a logistický záznam",
+                "Sledujte medzinárodné aktualizácie"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "Uskladnený tovar stále potrebuje rozhodnutie o zásielke",
+          "paragraphs": [
+            "Uskladnená položka nie je automaticky na ceste na vašu adresu. Overte, ktorý tovar je pripravený, či môže cestovať spolu a koľko času skladovania každej veci zostáva. Riaďte sa odpočtom a podmienkami konkrétnej položky. Nespoliehajte sa na jediné číslo prevzaté zo staršieho článku alebo iného typu objednávky.",
+            "Vyberte prípustný tovar do balíka, potvrďte príjemcu a zvážte baliace služby tam, kde riešia konkrétny problém. Porovnajte dostupné trasy podľa výslednej hmotnosti a rozmerov. Platba medzinárodného prepravného je oddelená od predchádzajúcej platby za tovar a odhad sa môže meniť so zmenami predpokladov balenia.",
+            "Po podaní používajte záznam balíka na overenie odoslania a medzinárodné sledovanie. Záznamy položiek uchovajte ako doklad očakávaného obsahu. Ak zásielka nepokročila, pýtajte sa na jej poslednú fázu namiesto opätovného otvárania všeobecnej otázky, či predajca tovar odoslal. Takto sa otázka týka procesu a tímu, ktorý na ňu môže odpovedať."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Z otázky o nemennom stave urobte jasnú žiadosť",
+          "paragraphs": [
+            "Neexistuje jediná čakacia doba, po ktorej je každá objednávka oneskorená. Zásoby predajcu, domáca doprava, práca skladu a medzinárodné odovzdanie majú rôzne postupy. Prečítajte odhad alebo požadovanú reakciu vo svojom prípade a porovnajte s nimi poslednú datovanú udalosť. Nemenný názov bez kontextu nestačí na určenie príčiny.",
+            "Napíšte stručnú žiadosť s číslom objednávky alebo balíka, poslednou udalosťou a dátumom, konkrétnou odchýlkou a krokom, ktorý potrebujete vysvetliť. Napríklad: „Domáci dopravca uvádza doručenie, ale táto položka ešte nemá skladové fotografie. Môžete potvrdiť prijatie a ďalší krok spracovania?“ Takáto otázka sa dá overiť v záznamoch.",
+            "Ak chcete zrušenie, oznámte to pred pokračovaním spracovania. Dostupné kroky sa menia po nákupe, odoslaní predajcom a medzinárodnej expedícii. Nepredpokladajte, že žiadosť zaručuje schválenie alebo okamžitú refundáciu pôvodnou platobnou metódou. Uchovajte oficiálnu odpoveď, dohodnutý ďalší krok a očakávané nadviazanie, aby ste mohli pokračovať bez straty kontextu. Pri odpovedi meniacej váš ďalší krok si zapíšte dátum. Keď sa neskôr vrátite na účet, rozlíšite novú požadovanú akciu od otázky, ktorú už podpora vyriešila."
+          ]
+        }
+      ],
+      "checklist": [
+        "Určte, či ide o položku alebo medzinárodnú zásielku.",
+        "Overte variant, množstvo a zodpovedajúce číslo objednávky.",
+        "Pred ďalšou platbou čítajte správy a časové údaje.",
+        "Rozlišujte domáce doručenie a skladové spracovanie.",
+        "Prezrite vlastné podklady QC a odpočet skladovania.",
+        "Položte podpore jednu konkrétnu otázku s príslušným súkromným číslom."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Priebeh objednávania",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: Zrušenie objednávky",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Skladovanie v sklade",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo: Sledovanie medzinárodnej objednávky",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Konsolidácia zásielok Sugargoo: balenie a prepravné náklady",
+      "description": "Zistite, ako spojiť objednávky Sugargoo, porovnať spojené a rozdelené balíky, vybrať obal a overiť konečnú ponuku prepravy.",
+      "keyword": "konsolidácia zásielok sugargoo",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Konsolidácia zásielok Sugargoo znamená výber prípustných skladových položiek na spoločné odoslanie. Môže uľahčiť správu balíkov a znížiť opakované počiatočné poplatky, ale väčší balík nie je automaticky lacnejší. Výsledok ovplyvňujú zabalené rozmery, účtovaná hmotnosť, obmedzenia produktov a trasy dostupné do vášho cieľa.",
+        "Začnite tovarom, ktorý prešiel vašou kontrolou, a potom porovnajte spoločnú zásielku s rozumnými možnosťami rozdelenia. Tento návod ponúka rozhodovací postup a opakovane použiteľný kontrolný zoznam. Nesľubuje konkrétnu úsporu, trasu ani poplatok. Dostupné možnosti určujú aktuálne služby Packing Center a konečná cena balíka."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Spájajte len položky pripravené na cestu",
+          "paragraphs": [
+            "Pripravte krátky zoznam vecí na odoslanie. Uveďte číslo objednávky, množstvo, výsledok kontroly, dostupné údaje o hmotnosti a zostávajúcu dobu skladovania. Označte nevyriešené otázky veľkosti, stavu alebo predajcu. Balík nepodávajte len preto, že väčšina obsahu je pripravená, zatiaľ čo dôležitá položka stále vyžaduje rozhodnutie.",
+            "Pred spojením všetkého overte zlučiteľnosť. Batéria, tekutina alebo iná obmedzená vlastnosť môže ovplyvniť, ktoré trasy balík prijmú. Možnosť kúpiť dve veci nepotvrdzuje, že môžu spolu využiť ľubovoľnú medzinárodnú trasu. Pred označením spoločnej možnosti za uskutočniteľnú potvrďte prijatie skutočnej kombinácie a cieľa.",
+            "O čakaní rozhodnite s ohľadom na skladovacie lehoty. Ak čakáte na jedného predajcu, porovnajte cenu a riziko čakania so samostatným odoslaním pripraveného tovaru. Sledujte odpočet každej položky a dostupné podmienky predĺženia. Nepoužívajte predpokladanú univerzálnu dobu skladovania ako dôvod ponechať tovar bez kontroly."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "Porovnajte úplné náklady spojenia a rozdelenia",
+          "paragraphs": [
+            "Vytvorte dve alebo tri realistické možnosti: jeden spoločný balík, oddelenie objemného predmetu a prípadne rozdelenie vynútené nezlučiteľným obsahom. Použite rovnaký cieľ doručenia a rovnaký úplný súbor tovaru. Možnosť, ktorá nenápadne vynechá predmet, nemožno spravodlivo porovnať s odoslaním všetkého.",
+            "Pri každej možnosti zaznamenajte počet balíkov, odhadované zabalené rozmery a hmotnosť, prípustnú trasu, prepravné a zvolené baliace doplnky. Pri rozdelení sčítajte cenu každého balíka. Porovnanie spoločnej ceny len s lacnejšou polovicou rozdelenej zásielky vedie k nesprávnemu výsledku. Neisté merania nechajte viditeľné namiesto ich ukrytia v presne vyzerajúcej sume.",
+            "Na pochopenie použite hypotetický príklad. Ak by spoločná ponuka bola 70 USD a dve oddelené 38 a 42 USD, rozdelené prepravné by spolu stálo 80 USD pred rozdielmi v doplnkoch. Príklad nepredpovedá vaše ceny ani nedokazuje výhodnosť spojenia. Rozmerový limit, požiadavka ochrany alebo obmedzenie trasy môžu spoločnú možnosť vylúčiť."
+          ],
+          "table": {
+            "headers": [
+              "Rozhodnutie",
+              "Spoločný balík",
+              "Rozdelené balíky"
+            ],
+            "rows": [
+              [
+                "Porovnanie prepravného",
+                "Naceňte celú skupinu tovaru",
+                "Sčítajte ponuku každého balíka"
+              ],
+              [
+                "Rozmery",
+                "Overte konečnú vonkajšiu škatuľu",
+                "Overte každú vonkajšiu škatuľu zvlášť"
+              ],
+              [
+                "Obsah",
+                "Všetky položky musia vyhovovať zvolenej službe",
+                "Každá skupina potrebuje vhodnú službu"
+              ],
+              [
+                "Ochrana",
+                "Overte kontakt medzi rôznymi predmetmi",
+                "Zohľadnite opakované baliace materiály"
+              ],
+              [
+                "Načasovanie",
+                "Môže čakať na posledný vybraný predmet",
+                "Pripravený tovar možno podať samostatne"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "Vyberte obal podľa produktu a potom overte cenu",
+          "paragraphs": [
+            "Pýtajte sa, aký problém má vyriešiť každá možnosť balenia. Vystuženie môže obmedzovať rozdrvenie, vnútorné oddelenie kontakt medzi vecami a zachovaná vhodná predajná škatuľa udržať tvar alebo drobné príslušenstvo spolu. Dostupnú službu vyberajte z konkrétneho dôvodu namiesto pridávania všetkých možností s upokojujúcim názvom.",
+            "Odstránenie škatule môže zmeniť hmotnosť aj objem, ale tiež odobrať ochranu či obal potrebný na plánované vrátenie. Najprv rozhodnite o položke a určte, čo sa smie odstrániť. „Odstráňte vonkajší prepravný kartón, ale ponechajte škatuľu produktu a príslušenstvo“ je jasnejšie než všeobecný pokyn vyhodiť všetky obaly, ak služba takú požiadavku podporuje.",
+            "Pri oblečení alebo stlačiteľnom tovare potvrďte, či ponúkané balenie vyhovuje materiálu a tvaru. Nepredpokladajte, že kompresia neškodí žiadnemu predmetu. Pri pevných alebo krehkých veciach môže priveľké zmenšenie škatule oslabiť ochranu. Zistite skutočný rozsah služby a jej dodatočnú cenu posúďte spolu so zabalenými rozmermi."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "Po výbere balenia znovu overte rozmery",
+          "paragraphs": [
+            "Súčet hmotností jednotlivých položiek nemusí byť konečnou hmotnosťou balíka. Škatule, výplň a vystuženie hmotnosť pridávajú, zatiaľ čo odstránenie povolených obalov ju môže znížiť. Rozmery závisia aj od usporiadania obsahu. Hrubý súčet berte ako plánovací vstup, nie potvrdený účet za prepravu.",
+            "Skúšobné balenie môže pomôcť, ak rozhodnutie závisí od rozmerov alebo limitu trasy. Pred objednaním overte aktuálny poplatok a poskytované informácie. Zapíšte predpoklady balenia, ktoré chcete posúdiť. Lepšie meranie má hodnotu, ak rieši skutočnú voľbu; služba bez otázky na zodpovedanie zvyšuje náklady bez zlepšenia plánu.",
+            "Po získaní meraní zopakujte porovnanie podľa pravidiel účtovania vybranej trasy. Overte skutočnú a objemovú hmotnosť, príslušný deliteľ, zaokrúhľovanie a rozmerové limity. Malé zmenšenie v centimetroch nemusí na jednej trase zmeniť nič a na inej môže rozhodovať. Použite skutočnú prepočítanú ponuku, nie predpoklad, že každé zmenšenie priamo prináša úsporu."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Pred platbou prepravného skontrolujte zásielku",
+          "paragraphs": [
+            "V Packing Center vyberte zamýšľané prípustné položky a overte množstvá. Pri podávaní potvrďte príjemcu, dostupné služby a vybranú trasu. Názvy v rozhraní sa môžu meniť, preto čítajte celý súhrn namiesto zapamätaného poradia tlačidiel. Uistite sa, že nie je omylom zahrnutá položka, ktorú ste chceli ponechať na popredajné riešenie.",
+            "Pokyny píšte stručne a konkrétne. Určte produkt či objednávku, ktorých sa týkajú, a čo sa má zachovať, odstrániť alebo chrániť. Ak pokyn vyžaduje platenú službu, potvrďte dostupnosť a cenu; nepredpokladajte, že voľná textová poznámka ju kupuje. Pred balením odstráňte rozporné požiadavky, napríklad súčasné vyhodenie a zachovanie neporušenej škatule.",
+            "Uchovajte dokončený súhrn balíka, zvolené služby a ponúknutú sumu. Ak sa objaví upravená cena, porovnajte hmotnosť, rozmery a možnosti s predchádzajúcim odhadom. Pred potvrdením nezrozumiteľného kroku sa spýtajte na pôvod významného rozdielu. Jasné záznamy uľahčujú rozlíšenie zmeneného predpokladu od otázky účtovania."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Uchovajte doklady a zlepšite ďalšie porovnanie",
+          "paragraphs": [
+            "Po podaní sledujte medzinárodný balík, nie jednotlivé zásielky predajcov. Zoznam zahrnutých objednávok uchovajte pri čísle balíka. Pri rozdelení veďte samostatné záznamy, aby aktualizácia jedného balíka nebola považovaná za postup všetkých. Oznámenie o doručení priraďte k správnemu obsahu.",
+            "Voliteľnú ochranu posudzujte podľa skutočných podmienok. Balenie a poistenie riešia rozdielne problémy a ani jedno nie je bezpodmienečný prísľub. Pred spoľahnutím sa na službu overte aktuálne krytie, výluky a požiadavky na nárok. Uchovajte príslušné dôkazy a reagujte včas, ak prijatý balík alebo obsah nezodpovedajú potvrdenému záznamu.",
+            "Pre ďalšiu objednávku si súkromne uložte porovnanie plánovanej a konečnej hmotnosti, rozmerov, balenia a prepravného. Poznačte, ktorý predpoklad sa zmenil a prečo. Viac porovnateľných zásielok môže zlepšiť rozpočet, ale nevytvára univerzálny cenník. Iná skladba produktov, cieľ či trasa vyžadujú nové overenie prípustnosti a ceny. Užitočné rozhodnutie končí konkrétnou možnosťou a dôvodom: vhodný obsah, prijateľná ochrana, prípustná trasa a dostupná úplná ponuka. Ak niečo zostáva nevyriešené, ponechajte porovnanie otvorené, kým to neoveríte."
+          ]
+        }
+      ],
+      "checklist": [
+        "Pred spojením tovaru prezrite QC a vyriešte popredajné otázky.",
+        "Overte zlučiteľnosť obsahu a každý odpočet skladovania.",
+        "Porovnajte všetky náklady rovnakého tovaru v spojenej a rozdelenej možnosti.",
+        "Vyberte baliace služby pre konkrétne potreby ochrany.",
+        "Použite konečné rozmery a účtovacie pravidlá vybranej trasy.",
+        "Pred platbou potvrďte zoznam, adresu, služby a ponuku."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Spojenie viacerých objednávok",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: Simulácia balenia pred odoslaním",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: Možnosti balenia a ochrany",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo: Prepravné obmedzenia",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ]
     }
   ]

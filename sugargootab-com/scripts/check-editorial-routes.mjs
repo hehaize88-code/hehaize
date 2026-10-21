@@ -33,7 +33,7 @@ for(const lang of locales){
    assert.equal(schemas.find(s=>s['@type']==='FAQPage')?.mainEntity.length,30,url+' FAQ schema');
    assert.equal(d.querySelector('h1')?.textContent,data.ui.faqTitle+'.');
   }else if(path==='/articles/'){
-   assert.equal(d.querySelectorAll('.article-card').length,10,url+' article index');
+   assert.equal(d.querySelectorAll('.article-card').length,13,url+' article index');
   }else{
    const a=data.articles.find(a=>path==='/articles/'+a.slug+'/');
    assert.equal(d.querySelector('h1')?.textContent,a.title,url+' translated title');
@@ -47,6 +47,10 @@ for(const lang of locales){
    const schema=schemas.find(s=>s['@type']==='Article');
    assert.equal(schema?.headline,a.title,url+' article schema');
    assert.equal(schema?.inLanguage,lang,url+' schema language');
+   assert.equal(schema?.datePublished,a.published,url+' original publication date');
+   assert.equal(schema?.dateModified,a.updated,url+' modification date');
+   assert.equal(d.querySelector('.article-catalog-cta a')?.getAttribute('href'),prefix+'/spreadsheet/',url+' localized catalogue action');
+   assert.equal(d.querySelectorAll('.article-catalog-cta [data-track]').length,2,url+' tracked actions');
    assert.deepEqual(schema?.citation,a.sources.map(s=>s.url),url+' citations');
    for(const code of locales){
     const expected=(code==='en'?'':'/'+code)+path;

@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Straipsniai",
     "articleTitle": "Sugargoo pirkimo vadovai",
-    "articleIntro": "Dešimt praktinių vadovų, padėsiančių pasirinkti prekę, patikrinti jos informaciją ir suplanuoti kelią nuo pardavėjo iki pristatymo.",
+    "articleIntro": "Praktiniai produktų nuorodų, QC nuotraukų, užsakymo etapų ir siuntimo sprendimų vadovai su oficialiais šaltiniais ir aiškiais tolesniais veiksmais.",
     "faqTitle": "DUK apie Sugargoo",
     "faqIntro": "Aiškūs atsakymai kiekvienam užsakymo etapui, oficialūs platformos taisyklių šaltiniai ir sąžiningai nurodytos šio nepriklausomo katalogo galimybių ribos.",
     "readArticle": "Skaityti vadovą",
@@ -33,7 +33,12 @@
     "categoryShipping": "Siuntimas ir saugojimas",
     "categoryAccount": "Mokėjimai ir aptarnavimas po pirkimo",
     "author": "SugargooTab redakcija",
-    "siteEvidence": "Apie šį nepriklausomą katalogą"
+    "siteEvidence": "Apie šį nepriklausomą katalogą",
+    "seoHomeTitle": "Sugargoo Spreadsheet: produktų nuorodos, nuotraukos ir pirkimo vadovai",
+    "catalogCtaTitle": "Pritaikykite kontrolinį sąrašą",
+    "catalogCtaBody": "Palyginkite produktų nuorodas kataloge, tada prieš pirkdami ar siųsdami patikrinkite tikslų skelbimą ir savo užsakymo duomenis.",
+    "catalogCtaButton": "Naršyti produktų nuorodas",
+    "categoryCtaButton": "Peržiūrėti produktų kategorijas"
   },
   "groups": {
     "basics": "Pradžia",
@@ -415,8 +420,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo prekių lentelės vadovas: paverskite nuorodas naudingu atrinktų prekių sąrašu",
-      "description": "Naudokite Sugargoo prekių lentelę tiksliems skelbimams palyginti, variantams patikrinti ir visam užsakymui suplanuoti prieš perkant.",
+      "title": "Sugargoo Spreadsheet vadovas: raskite ir patikrinkite produktų nuorodas",
+      "description": "Raskite prekes Sugargoo lentelėje, patikrinkite galiojančius skelbimus ir variantus bei atskirkite pavyzdines nuotraukas nuo savo užsakymo sandėlio QC nuotraukų.",
       "keyword": "Sugargoo prekių lentelė",
       "category": "getting-started",
       "intro": [
@@ -424,6 +429,38 @@
         "Šis nepriklausomas katalogas prekių informaciją ir informacines nuotraukas skaito iš cnbuycha. Užsakymas ir mokėjimas vyksta Sugargoo. Toliau pateiktas metodas susieja abu etapus, tačiau katalogo įrašo nelaiko asmenine rekomendacija, atsargų garantija ar patikros sandėlyje įrodymu. Jis tinka ir tada, kai atrinktų prekių sąrašą laikote paprastoje užrašų programėlėje."
       ],
       "sections": [
+        {
+          "id": "live-listing-check",
+          "title": "Kaip prieš perkant patikrinti galiojantį skelbimą",
+          "paragraphs": [
+            "Atidarykite katalogo prekę, tada sekite jos pirminio skelbimo nuorodą. Palyginkite prekyvietės prekės ID, pardavėją ir pasirinktą variantą su Sugargoo rodoma preke. Vidinis katalogo puslapio numeris yra atskiras identifikatorius. Prieš pat mokėdami dar kartą patikrinkite dabartinę kainą, galimus variantus ir kiekį: išsaugota kortelė nepatvirtina esamų atsargų.",
+            "Jei pirminio skelbimo nebėra, prekė neįkeliama arba variantas skiriasi, šiame etape sustokite. Grįžkite į lentelę ir palyginkite kitą kandidatą. Užrašykite, kodėl pirmasis netiko, kad vėliau nekartotumėte tos pačios patikros. Pavyzdinės nuotraukos lieka paieškos medžiaga, net jei primena sandėlio nuotraukas."
+          ],
+          "table": {
+            "headers": [
+              "Patikra",
+              "Naudotini įrodymai"
+            ],
+            "rows": [
+              [
+                "Prekės tapatybė",
+                "Pirminis prekyvietės URL ir prekės ID"
+              ],
+              [
+                "Dabartinis prieinamumas",
+                "Esamas pardavėjo skelbimas ir pasirinktas variantas"
+              ],
+              [
+                "Kaina",
+                "Tikslus variantas ir mokėjimo suma"
+              ],
+              [
+                "Būklė",
+                "Jūsų užsakymo nuotraukos po atvykimo į sandėlį"
+              ]
+            ]
+          }
+        },
         {
           "id": "define-the-purchase",
           "title": "Pradėkite nuo paskirties, kurią prekė turi atlikti",
@@ -506,7 +543,9 @@
       "related": [
         "how-to-buy-on-sugargoo",
         "sugargoo-qc-photos"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -600,15 +639,17 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-shipping-calculator"
-      ]
+        "sugargoo-order-status",
+        "sugargoo-spreadsheet-guide"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo kokybės patikros nuotraukos: ką tikrinti prieš siunčiant",
-      "description": "Sistemingai peržiūrėkite sandėlio nuotraukas, paprašykite naudingų matavimų ir supraskite, ko vizuali kokybės patikra negali įrodyti.",
+      "title": "Sugargoo QC nuotraukos: prekių patikra prieš siunčiant",
+      "description": "Naudokite praktinį Sugargoo QC nuotraukų sąrašą batams, drabužiams ir rankinėms. Prieš siųsdami patikrinkite etiketes, matmenis, siūles ir trūkstamas detales.",
       "keyword": "Sugargoo kokybės patikros nuotraukos",
       "category": "quality",
       "intro": [
@@ -616,6 +657,43 @@
         "Sugargoo nurodo, kad paprastai pateikia penkias standartines kokybės patikros nuotraukas, o patikros apimtis priklauso nuo prekės ir užsakymo tipo. Nuotraukų kiekis negarantuoja, ką galima patikrinti. Šios svetainės cnbuycha informacinės nuotraukos yra katalogo medžiaga, o ne patvirtinta jūsų asmeninio Sugargoo užsakymo kokybės patikra; prieš organizuodami tarptautinį siuntimą peržiūrėkite savo sandėlio įrašą."
       ],
       "sections": [
+        {
+          "id": "product-qc-checklist",
+          "title": "Batų, drabužių ir rankinių QC nuotraukų patikra",
+          "paragraphs": [
+            "Pirmiausia sutikrinkite užsakymą, spalvą, dydį ir kiekį. Tada apžiūrėkite detales, kurios galėtų pakeisti sprendimą pasilikti prekę. Šis sąrašas yra praktinė nuotraukų peržiūros priemonė, o ne garantija, kad įprasta QC apima visus kampus ar matavimus. Paprašykite konkrečių trūkstamų įrodymų ir prieš tęsdami patikrinkite paslaugos mokestį.",
+            "Pavyzdžiui, tik iš priekio nufotografuota rankinė neparodo dirželio tvirtinimo ar vidaus būklės. Jei ši detalė jums svarbi, paprašykite tinkamo kampo. Jei reikia matavimo, nurodykite jo pradžią ir pabaigą bei paprašykite matomos matavimo juostos. Nuotraukos nepatvirtina visų funkcinių savybių ir neįrodo autentiškumo."
+          ],
+          "table": {
+            "headers": [
+              "Prekė",
+              "Tikrinkite savo užsakymo nuotraukose",
+              "Jei neaišku, paprašykite"
+            ],
+            "rows": [
+              [
+                "Batai",
+                "Pora, dydžio etiketės, padai ir matomos siūlės",
+                "Abiejų dydžio etikečių ir reikiamo pado arba siūlės kampo"
+              ],
+              [
+                "Drabužiai",
+                "Dydžio etiketė, audinio išvaizda ir susiuvimas",
+                "Matavimo ant lygaus paviršiaus su aiškia pradžia ir pabaiga"
+              ],
+              [
+                "Rankinės",
+                "Dirželiai, užsegimai, pamušalas ir priedai",
+                "Vidaus ir tvirtinimo vietų nuotraukų iš arti"
+              ],
+              [
+                "Bet kuri prekė",
+                "Tinkamas variantas, kiekis ir matomi pažeidimai",
+                "Aiškios konkretaus neatitikimo nuotraukos"
+              ]
+            ]
+          }
+        },
         {
           "id": "match-the-order",
           "title": "Nustatykite, kuriai prekei priklauso nuotraukos",
@@ -698,13 +776,15 @@
       "related": [
         "sugargoo-returns-refunds",
         "sugargoo-rehearsal-shipping"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo siuntimo skaičiuoklė: realistiško siuntos biudžeto sudarymas",
-      "description": "Įvertinkite siuntimą pagal teisingą paskirties vietą, prekės kategoriją, svorį ir matmenis, tada palyginkite visas maršrutų išlaidas.",
+      "title": "Sugargoo siuntimo skaičiuoklė: svoris, matmenys ir visa kaina",
+      "description": "Sugargoo siuntimo skaičiuoklėje naudokite realistišką svorį ir matmenis. Palyginkite tinkamus maršrutus ir supraskite, kas sąmatoje dar neaišku.",
       "keyword": "Sugargoo siuntimo skaičiuoklė",
       "category": "shipping",
       "intro": [
@@ -712,6 +792,14 @@
         "Oficialios Sugargoo skaičiuoklės gairės naudoja paskirties vietą, prekės kategoriją, svorį ir matmenis galimiems siuntimo variantams palyginti. Rezultatą laikykite scenarijumi su data, tada jį atnaujinkite, kai sužinosite daugiau apie supakuotą siuntą. Šis vadovas parodo, kaip sudaryti tokius scenarijus ir atpažinti neapibrėžtumą prieš jam tampant problema atsiskaitant."
       ],
       "sections": [
+        {
+          "id": "quote-comparison",
+          "title": "Prieš įsipareigodami pirkti parenkite dvi sąmatas",
+          "paragraphs": [
+            "Sudarykite pradinį scenarijų pagal geriausią turimą svorio ir matmenų informaciją, tada atsargesnį scenarijų, numatantį neaiškią pakuotę. Abiem atvejais išlaikykite tą pačią paskirties vietą, turinį ir kitus nustatymus. Jei užsakymas telpa į biudžetą tik pagal optimistiškiausias prielaidas, neaiškumą išspręskite prieš mokėdami už prekes.",
+            "Užrašykite pasiūlymo datą, maršrutą, vienetus, numatomus matmenis ir pasirinktus priedus. Kai bus išmatuota siunta, pakeiskite prielaidas tikrais duomenimis. Siunčiant į JAV, palyginimui naudokite atskirą JAV vadovą; keliems sandėlyje esantiems užsakymams pagal sujungimo vadovą palyginkite visas bendros ir atskirų siuntų išlaidas."
+          ]
+        },
         {
           "id": "collect-the-inputs",
           "title": "Prieš lygindami kainas surinkite pradinius duomenis",
@@ -792,15 +880,17 @@
         }
       ],
       "related": [
-        "sugargoo-rehearsal-shipping",
-        "sugargoo-fees-payment"
-      ]
+        "sugargoo-shipping-to-usa",
+        "sugargoo-parcel-consolidation"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo bandomasis pakavimas: kada padeda tikslesni matmenys",
-      "description": "Nuspręskite, ar bandomasis pakavimas naudingas, paruoškite aiškius pakavimo nurodymus ir rezultatą naudokite tinkamiems siuntimo maršrutams palyginti.",
+      "title": "Sugargoo bandomasis pakavimas: svoris, matmenys ir kada jį rinktis",
+      "description": "Nuspręskite, kada naudingas Sugargoo bandomasis pakavimas, nurodykite pakavimo pasirinkimus ir palyginkite išmatuotą siuntą su pradine siuntimo sąmata.",
       "keyword": "Sugargoo bandomasis pakavimas",
       "category": "shipping",
       "intro": [
@@ -808,6 +898,14 @@
         "Sugargoo aprašo bandomąjį pakavimą kaip siuntos modeliavimą prieš išsiuntimą, suteikiantį tikslesnę svorio ir tūrio informaciją. Vertinkite tai kaip matavimo ir pakavimo sprendimą, dabartines paslaugos sąlygas bei kainą patikrinę paskyroje. Praktinė vertė atsiranda tada, kai žinote, ką ketinate daryti su rezultatu."
       ],
       "sections": [
+        {
+          "id": "rehearsal-decision",
+          "title": "Kada verta apsvarstyti bandomąjį pakavimą?",
+          "paragraphs": [
+            "Apsvarstykite bandymą, kai nežinomi supakuotos siuntos matmenys gali pakeisti maršrutą ar biudžetą: didelė lengva prekė, kelios mažmeninės dėžės arba siunta arti maršruto ribos. Užrašykite, kokį neaiškumą norite išspręsti, ir patikrinkite dabartinį mokestį. Jei pagal visas pagrįstas sąmatas sprendimas būtų toks pats, papildomas matavimas gali būti mažiau vertingas.",
+            "Palyginkite rezultatą su pradiniais duomenimis: tikruoju svoriu, išoriniais matmenimis, palikta pakuote ir pasirinktomis paslaugomis. Perskaičiuokite pagal dabartinę maršruto kainodaros taisyklę. Mažesnis matmuo negarantuoja mažesnės galutinės sąskaitos, nes vis tiek gali būti svarbūs minimalūs mokesčiai, svorio intervalai ir kitos parinktys."
+          ]
+        },
         {
           "id": "identify-the-decision",
           "title": "Apibrėžkite neaiškumą, kurį turėtų išspręsti bandomasis pakavimas",
@@ -888,9 +986,11 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-calculator",
-        "sugargoo-warehouse-storage"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-shipping-calculator"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-tracking",
@@ -1014,7 +1114,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-warehouse-storage"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-fees-payment",
@@ -1142,7 +1244,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-returns-refunds"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-warehouse-storage",
@@ -1240,9 +1344,11 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-rehearsal-shipping"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-order-status"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-returns-refunds",
@@ -1342,13 +1448,15 @@
       "related": [
         "sugargoo-qc-photos",
         "sugargoo-fees-payment"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian ir Taobao nuorodos Sugargoo: patikrinkite tikslią prekę",
-      "description": "Nukopijuokite teisingą šaltinio URL, išsaugokite prekės tapatybę ir patikrinkite variantus Sugargoo, o automatiniam įkėlimui nepavykus naudokite palaikomą rankinį užsakymą.",
+      "title": "Weidian ir Taobao nuorodos Sugargoo: patikra ir klaidų taisymas",
+      "description": "Prieš pirkdami Sugargoo patikrinkite Weidian ir Taobao prekių nuorodas. Išspręskite dingusių skelbimų, klaidingų variantų ir įkėlimo problemas nespėliodami.",
       "keyword": "iš Weidian į Sugargoo",
       "category": "getting-started",
       "intro": [
@@ -1356,6 +1464,14 @@
         "Šis vadovas paaiškina, ką kopijuoti, kaip atpažinti neatitinkantį skelbimą ir ką daryti, jei automatinis įkėlimas nepavyksta. Jis taip pat atskiria šaltinio prekyvietės prekės ID nuo šio katalogo vidinio puslapio identifikatoriaus, kad patogus pirkimo mygtukas netaptų priežastimi praleisti galutines patikras."
       ],
       "sections": [
+        {
+          "id": "link-error-check",
+          "title": "Ką tikrinti, kai prekės nuoroda neįkeliama",
+          "paragraphs": [
+            "Pirmiausia atidarykite pirminį prekės puslapį ir įsitikinkite, kad jame vis dar rodoma norima prekė. Parduotuvės pradinis puslapis, sutrumpintas dalijimosi tekstas ar pašalintas skelbimas neatstoja pilno prekės URL. Prieš bandydami vėl palyginkite prekyvietės prekės ID. Pašalinkite nereikalingą dalijimosi tekstą, nekeisdami pačios prekės tapatybės.",
+            "Jei pirminė prekė yra, tačiau automatinis nuskaitymas nepavyksta, patikrinkite oficialias rankinio užsakymo galimybes ir priėmimo sąlygas. Kartu laikykite pardavėją, tikslų variantą, kiekį, prekės URL ir kainą. Rankinė forma nepanaikina prekių apribojimų ir negarantuoja prieinamumo. Jei galiojančio skelbimo patikrinti nepavyksta, rinkitės kitą kandidatą, o ne spėliokite iš nuotraukos."
+          ]
+        },
         {
           "id": "source-identity",
           "title": "1. Pradėkite nuo prekės skelbimo, o ne paieškos rezultato",
@@ -1442,6 +1558,409 @@
       "related": [
         "sugargoo-spreadsheet-guide",
         "how-to-buy-on-sugargoo"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Sugargoo siuntimas į JAV: kaina, svoris ir pristatymas",
+      "description": "Planuokite Sugargoo siuntimą į JAV: prieš mokėdami už tarptautinį gabenimą palyginkite siuntos svorį, matmenis, maršruto sąlygas ir pristatymo etapus.",
+      "keyword": "sugargoo shipping to usa",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sprendimas siųsti Sugargoo siuntą į JAV yra atskiras nuo prekių pirkimo. Pradėkite nuo pristatymo adreso, numatytų siųsti prekių ir apytikslio supakuoto svorio bei dydžio. Tada palyginkite paskyroje iš tiesų siūlomus maršrutus. Kito žmogaus siuntos kaina tėra orientyras: jos paskirties vieta, data, matmenys ir turinys gali skirtis nuo jūsų.",
+        "Šis vadovas pateikia palyginimo būdą, o ne fiksuotą kainą ar pristatymo pažadą. SugargooTab yra nepriklausomas katalogas ir negali Sugargoo vardu įkainoti, išsiųsti ar sekti jūsų siuntos. Planuokite oficialia skaičiuokle, o dėl mokėjimo spręskite galutiniame siuntos lange. Išsaugokite, kas įtraukta į pasiūlymą, kad vėlesni pakeitimai būtų suprantami."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Atskirkite prekių išlaidas nuo siuntos į JAV biudžeto",
+          "paragraphs": [
+            "Biudžetą išskaidykite į du etapus. Pirmasis apima pasirinktas prekes, pristatymą Kinijoje ir rodomas atsiskaitymo ar mokėjimo išlaidas. Antrasis apima tarptautinį gabenimą ir siuntai pasirinktas paslaugas. Gali reikėti įvertinti ir paskirties vietos mokesčius. Nemanykite, kad prekės kaina šiame kataloge apima kurį nors pristatymo etapą.",
+            "Sprendimą tikrinkite pavyzdiniu biudžetu, tačiau nelaikykite jo kainos prognoze. Jei jūsų išlaidų riba yra 150 USD, o prekės jau kainuoja 110 USD, likę 40 USD turi padengti viską, kas dar neapmokėta. Jei dabartinė siuntimo sąmata didesnė už likutį, prieš pridėdami daugiau prekių persvarstykite užsakymą. Mažesnis skaičius iš seno įrašo šio skirtumo nepašalina.",
+            "Prie sumos išsaugokite sąmatos datą ir įvestus duomenis. Užrašykite, ar įtrauktos pakavimo paslaugos ir papildoma apsauga bei ar maršruto sąlygose paaiškinti papildomi paskirties mokesčiai. Nežinomas išlaidas pažymėkite kaip nežinomas. Tai naudingiau nei rodyti tiksliai atrodančią bendrą sumą, sudarytą iš nepilnų prielaidų."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Įveskite paskirties vietą, turinį, svorį ir matmenis",
+          "paragraphs": [
+            "Skaičiuoklės prašomuose JAV paskirties ir regiono laukuose naudokite tikrus duomenis. Nekeiskite adreso vien tam, kad gautumėte patrauklesnių maršrutų. Tiksliai apibūdinkite prekės kategoriją, įskaitant gabenimui svarbias savybes. Maršrutas, kuriuo priimami įprasti drabužiai, nebūtinai priima baterijas, skysčius ar visas kitas prekyvietėje parduodamas prekes.",
+            "Kol prekės nepasiekė sandėlio, svoris ir matmenys yra planavimo prielaidos. Ypač atkreipkite dėmesį į stambias prekes: lengva striukė didelėje dėžėje sudarys kitokią siuntą nei glaudžiai supakuoti marškiniai. Kai jūsų prekės bus prieinamos, spėjimus pakeiskite turima sandėlio informacija ir, kai naudinga, bandomojo pakavimo rezultatais.",
+            "Prie skaičių nurodykite vienetus. Gramai ir kilogramai nėra sukeičiami įvesties duomenys, o centimetrų negalima įrašyti į coliams skirtą lauką. Netinkamas vienetas gali paversti iš pažiūros konkurencingą kainą beprasme. Jei sąmata atrodo netikėtai maža ar didelė, prieš vertindami maršrutą patikrinkite adresą, vienetus, kiekius ir prekės kategoriją."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Supraskite, pagal kokį svorį skaičiuojama kaina",
+          "paragraphs": [
+            "Faktinis svoris matuoja masę; tūrinis svoris pagal pasirinkto maršruto taisykles paverčia siuntos matmenis kainodaros dydžiu. Daliklis, apvalinimas ir minimalus mokestis gali skirtis. Skaitykite maršruto aprašymą, o ne taikykite vieną formulę visiems variantams. Tūriu grindžiamame maršrute didesnis dydis gali būti svarbus net tada, kai pačios prekės lengvos.",
+            "Tik iliustracijai: 40 × 30 × 25 cm dėžės tūris yra 30 000 kubinių centimetrų. Hipotetinis daliklis 6 000 duotų 5 kg tūrinį svorį. Tai nereiškia, kad jūsų pasirinktas maršrutas naudoja 6 000. Jei faktinis svoris būtų 3 kg, didesnį dydį taikantis maršrutas galėtų šią dėžę įvertinti 5 kg dar prieš apvalinimą.",
+            "Pasiteiraukite, ar pakeitus pakuotę matmenys sumažėtų tiek, kad pasikeistų kaina. Kai kada gali padėti nereikalingos mažmeninės dėžės pašalinimas, tačiau trapioms prekėms ši apsauga gali būti reikalinga. Po sutartų pakavimo pasirinkimų vėl patikrinkite galutinius matmenis; nemanykite, kad kiekviena išimta dėžė sutaupo arba kiekvienas sutvirtinimas vertas papildomo svorio."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Maršrutus lyginkite pagal tas pačias siuntos prielaidas",
+          "paragraphs": [
+            "Sudarykite nedidelį palyginimą tik iš jūsų siuntą priimančių maršrutų. Kiekvienam naudokite tą pačią paskirties vietą, turinį, svorį ir matmenis. Antraip kainos skirtumas gali kilti dėl skirtingų duomenų, o ne geresnės paslaugos. Prieš gaišdami laiką netinkamam variantui perskaitykite dydžio ir svorio ribas.",
+            "Peržiūrėkite, ką apima rodomas pristatymo terminas ir kokie sekimo etapai matomi. Pardavėjo siuntimas į Kinijos sandėlį yra atskiras nuo tarptautinės kelionės, o paruošimas prieš perdavimą vežėjui gali pridėti dar vieną etapą. Numatytą intervalą laikykite planavimo informacija. Nepirkite nekeičiama galutine data, jei negalite priimti vėlavimo pasekmių.",
+            "Perskaitykite dabartinį pasirinkto maršruto įtrauktų ir papildomų mokesčių, apribojimų bei pasirenkamo draudimo paaiškinimą. Išsaugokite šį tekstą kartu su pasiūlymu. Jei svarbus punktas neaiškus, prieš mokėdami kreipkitės į oficialią pagalbą ir išsaugokite atsakymą. Maršruto pavadinimas ar kito pirkėjo ekrano nuotrauka neatstoja jūsų siuntai taikomų sąlygų."
+          ],
+          "table": {
+            "headers": [
+              "Palyginkite",
+              "Užrašykite prieš mokėdami"
+            ],
+            "rows": [
+              [
+                "Tinkamumas",
+                "Leidžiamas turinys, aptarnaujamos vietos ir siuntos ribos"
+              ],
+              [
+                "Apmokestinamasis svoris",
+                "Faktinio ar tūrinio svorio taisyklė, daliklis ir apvalinimas"
+              ],
+              [
+                "Rodoma bendra suma",
+                "Gabenimas, pasirinkti priedai ir aiškios išimtys"
+              ],
+              [
+                "Pristatymo informacija",
+                "Numatomas intervalas, perdavimo etapas ir sekimo aprėptis"
+              ],
+              [
+                "Apsauga",
+                "Dabartinė apsauga, išimtys ir reikalavimai pretenzijai"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Išlaikykite nuoseklius prekių ir gavėjo duomenis",
+          "paragraphs": [
+            "Naudokite tikslius prekių aprašymus ir tikrus siuntai prašomus duomenis. Laikykite prieinamus užsakymo įrodymus bei mokėjimo įrašą, jei reikėtų paaiškinimo. Nekopijuokite deklaracijos iš nesusijusios siuntos ir nenaudokite klaidinančio aprašymo, kad būtų parodytas maršrutas. Jūsų siuntos turinys lemia, kurios patikros svarbios.",
+            "JAV importo taisyklės ir vežėjų tvarka gali keistis. Šiame vadove sąmoningai nenurodoma nuolatinė mokesčių riba ir nežadama, kad maršrutas neturės papildomų mokesčių. Organizuodami siuntimą tikrinkite dabartines paskirties gaires ir pasirinktos paslaugos sąlygas. Jei informacija prieštaringa, prieš mokėdami gaukite paaiškinimą, o reklaminės frazės nelaikykite išsamiomis sąlygomis.",
+            "Oficialioje paskyroje patikrinkite gavėjo vardą, adresą ir kontaktus. Ištaisyti klaidą prieš išsiuntimą lengviau nei vėliau spręsti pristatymo problemą. Privačių adresų ir užsakymų identifikatorių nedėkite į viešus atsiliepimus ar bendrinamas tyrimo lenteles. Naudingas viešas palyginimas gali apibūdinti maršrutą ir apytikslį siuntos tipą neatskleisdamas gavėjo."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Sekite kiekvieną pristatymo etapą ir reaguokite į išimtis",
+          "paragraphs": [
+            "Atskirkite pardavėjo vidaus siuntos sekimą nuo tarptautinės siuntos numerio. Atvykimas į sandėlį nereiškia, kad siunta paliko Kiniją, o vien sukurtas sekimo numeris nepatvirtina, kad ją turi vežėjas. Sekite pateiktos siuntos logistikos įrašą ir pasižymėkite naujausią datuotą įvykį.",
+            "Jei sekimas sustoja, prieš manydami, kad siunta prarasta, ieškokite perdavimo, informacijos prašymo ar išimties. Išsaugokite paskutinį atnaujinimą ir pagalbos tarnybai užduokite konkretų klausimą apie kitą numatomą žingsnį. Siuntos numerį pateikite oficialiu privačiu kanalu. Tos pačios viešos paieškos kartojimas neišsprendžia trūkstamų dokumentų ar gavėjo adreso problemos.",
+            "Gavę siuntą nedelsdami patikrinkite pakuotę ir turinį; jei kas nors negerai, išsaugokite susijusią pakuotę ir įrodymus. Pretenzijai taikoma konkreti paslauga ir jos reikalavimai; siuntimo pirkimas nėra visuotinė garantija. Užrašuose fiksuokite tikrus etapus ir išlaidas, kad kitai sąmatai naudotumėte palyginamus įrodymus, o ne atmintį. Prieš mokėdami dar kartą peržiūrėkite palyginimą ir pašalinkite maršrutus, kurių tinkamumas nepatvirtintas. Naudingam biudžetui reikia prieinamos paslaugos, tikslių duomenų ir suprantamų sąlygų, ne vien mažiausio rodomo skaičiaus."
+          ]
+        }
+      ],
+      "checklist": [
+        "Patvirtinkite tikrąją JAV paskirties vietą ir leidžiamą turinį.",
+        "Prekių biudžetą atskirkite nuo tarptautinio gabenimo ir priedų.",
+        "Naudokite nuoseklius vienetus ir užrašykite supakuotus matmenis.",
+        "Tinkamus maršrutus lyginkite pagal vienodus duomenis.",
+        "Patikrinkite dabartines maršruto sąlygas ir siuntos duomenų tikslumą.",
+        "Išsaugokite galutinį pasiūlymą ir sekite konkrečios siuntos įrašą."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: tarptautinio siuntimo išlaidų apskaičiavimas",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: siuntos pakavimo bandymas prieš išsiunčiant",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: siuntimo apribojimai",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo: sekimo problemos",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Sugargoo užsakymo būsenos: nuo mokėjimo iki sandėlio",
+      "description": "Supraskite Sugargoo užsakymo etapus, pardavėjo išsiuntimą, atvykimą į sandėlį ir siuntos sekimą. Sužinokite, ką tikrinti, jei užsakymas atrodo įstrigęs.",
+      "keyword": "sugargoo order status",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoo užsakymo būsena apibūdina vieną pirkimo proceso etapą, o ne visą kelionę iki jūsų durų. Mokėjimas, tarpininko pirkimas, pardavėjo išsiuntimas, sandėlio apdorojimas ir tarptautinis siuntimas yra atskiri žingsniai. Pirmiausia nustatykite, ar žiūrite prekės užsakymą, ar pateiktą siuntą: jie atsako į skirtingus klausimus ir gali turėti skirtingus sekimo numerius.",
+        "Svetainės ar programėlės formuluotės gali skirtis dėl kalbos ir sąsajos pakeitimų. Toliau pateikti etapų aprašymai paaiškina, ką tirti, o ne žada atkartoti visus dabartinius mygtukų pavadinimus. Savo užsakymo informacijoje atidarykite pranešimus, veiksmus ir laiko žymas. Šie duomenys naudingesni nei trumpos būsenos lyginimas su svetimo žmogaus užsakymu."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "Pradėkite nuo tinkamo prekės ar siuntos įrašo",
+          "paragraphs": [
+            "Kartu laikykite pirminę prekės nuorodą, pasirinktą variantą ir Sugargoo užsakymo numerį. Jei pirkote kelias panašias prekes, prieš kreipdamiesi į pagalbą patikrinkite pardavėją, spalvą, dydį ir kiekį. Vienos prekės atnaujinimas neparodo kitos progreso, net jei už abi mokėta to paties apsilankymo metu.",
+            "Iš sandėlyje laikomų prekių sukurtai tarptautinei siuntai turėkite atskirą įrašą. Vienoje siuntoje gali būti keli užsakymai, o užsakymo problemą gali tekti išspręsti prieš pateikiant siuntą. Užrašykite, kurių prekių numeriai priklauso kuriai siuntai. Šis paprastas skirtumas neleidžia supainioti pardavėjo vidaus sekimo numerio su siunta į jūsų šalį.",
+            "Jei būsena netikėta, prieš veikdami perskaitykite užsakymo pranešimus ir naujausią laiko žymą. Prašymas patikslinti variantus ar mokėjimą gali paaiškinti, kodėl pirkimas nejuda. Svarbią formuluotę išsaugokite savo užrašuose, tačiau privačius numerius ir ekrano nuotraukas siųskite tik oficialiu pagalbos kanalu."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "Mokėjimas ir pirkimas yra skirtingi etapai",
+          "paragraphs": [
+            "Laukiant mokėjimo patikrinkite, ar iš tikrųjų baigėte atsiskaitymą. Prekė krepšelyje ar neapmokėtas užsakymas neįrodo, kad pardavėjas gavo pirkimo prašymą. Jei nusprendėte nepirkti, naudokite tame etape prieinamą atšaukimo veiksmą, užuot manę, kad išėjus iš lango užsakymas pašalinamas.",
+            "Sumokėję patvirtinkite operaciją paskyroje ir perskaitykite pirkimo pranešimus. Užbaigtas mokėjimas neįrodo, kad pardavėjas prekę išsiuntė. Pirkimas dar gali priklausyti nuo atsargų, pasirinkto varianto, vietinio pristatymo ar teisingam užsakymui reikalingų duomenų. Atsakykite į konkretų prašymą, o ne vėl mokėkite už pasikartojantį užsakymą.",
+            "Jei bankas rodo nurašymą, o užsakymas vis dar neapmokėtas, prieš bandydami vėl su oficialia pagalba palyginkite numerius ir mokėjimo būseną. Banko įrašas ir užsakymo atnaujinimas gali apibūdinti skirtingas mokėjimo proceso dalis. Išsaugokite įrodymus, bet neskelbkite kortelės, prisijungimo duomenų ar patvirtinimo kodų. Paklauskite, kuri operacija susieta su užsakymu ir kokio veiksmo iš tiesų reikia."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "Nupirkta ir pardavėjo išsiųsta dar nereiškia paruošta sandėlyje",
+          "paragraphs": [
+            "Nupirkimo etape patikrinkite, ar pardavėjas pateikė vidaus siuntimo informaciją. Pirkimo patvirtinimas susijęs su prekių užsakymu, o ne tarptautiniu išsiuntimu. Jei reikia pardavėjo naujienų, klauskite užsakymo pokalbyje, kad prašymas liktų susietas su tinkama preke ir pasirinktais variantais.",
+            "Kai pardavėjas išsiunčia, sekite su tuo užsakymu susietą vidaus siuntą. Pristatymas į sandėlį yra atskiras nuo sandėlio patikros ir saugojimo. Vežėjo pristatymo nuskaitymas gali pasirodyti anksčiau už užbaigtą sandėlio įrašą paskyroje. Vien šios spragos nelaikykite dingusių prekių įrodymu: tikrinkite užsakymo pranešimus ir apdorojimo informaciją.",
+            "Jei pardavėjas išsiuntė tik dalį užsakymo ar kiekis atrodo netinkamas, tiksliai išvardykite trūkstamus vienetus. Nurodykite pradinį kiekį ir esamus įrodymus. Žinutė „šiame užsakyme trūksta vienų iš dvejų marškinių“ naudingesnė nei „mano siunta neteisinga“. Leiskite pagalbai nustatyti, ar problema yra pardavėjo išsiuntimas, padalytas pristatymas ar sandėlio apdorojimas."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "Atvykimas į sandėlį yra jūsų patikros vieta",
+          "paragraphs": [
+            "Kai pasiekiamos jūsų užsakymo sandėlio nuotraukos ir duomenys, palyginkite juos su pirktu variantu. Apžiūrėkite etiketes, spalvą, kiekį, matomą būklę ir prašytus matmenis. Katalogo pavyzdinės nuotraukos šios peržiūros neatstoja: jos skirtos paieškai ir nepatvirtina jums gauto vieneto būklės.",
+            "Jei vaizdas neaiškus, tiksliai aprašykite, kas turi matytis. Pavyzdžiui, paprašykite dydžio etiketės ar matavimo, kurio juosta prasideda ties tinkama siūle. Papildomas paslaugas ir jų prieinamumą tikrinkite paskyroje. Įprasta vizualinė patikra nėra autentiškumo įrodymas ar kiekvienos prekės veikimo bandymas.",
+            "Galimą grąžinimą ar problemą su pardavėju išspręskite prieš įtraukdami prekę į tarptautinę siuntą. Nedelsdami patikrinkite tinkamumą ir terminus, užuot manę, kad saugojimo laikas kartu yra grąžinimo laikotarpis. Išsaugokite prašymui reikalingą pakuotę ir įrodymus. Patvirtinimas, grąžinimo pašto išlaidos ir pinigų grąžinimas priklauso nuo užsakymo bei dabartinių aptarnavimo sąlygų."
+          ],
+          "table": {
+            "headers": [
+              "Tiriamas etapas",
+              "Naudinga patikra",
+              "Kitas veiksmas"
+            ],
+            "rows": [
+              [
+                "Laukiama mokėjimo",
+                "Užsakymo ir mokėjimo numeriai",
+                "Užbaikite arba atšaukite norimą užsakymą"
+              ],
+              [
+                "Pirkimas",
+                "Variantas, atsargos ir užsakymo pranešimai",
+                "Atsakykite į konkretų informacijos prašymą"
+              ],
+              [
+                "Pardavėjo išsiuntimas",
+                "Vidaus sekimas ir kiekis",
+                "Tikrinkite pardavėjo progresą per užsakymą"
+              ],
+              [
+                "Sandėlio apdorojimas",
+                "Atvykimo įrašas ir įkeltos nuotraukos",
+                "Peržiūrėkite gautą prekę ir išspręskite problemas"
+              ],
+              [
+                "Sandėliuojama prekė",
+                "Likęs saugojimo laikas ir QC sprendimas",
+                "Iki termino suplanuokite tinkamą siuntą"
+              ],
+              [
+                "Pateikta siunta",
+                "Siuntos numeris ir logistikos įrašas",
+                "Sekite tarptautinės siuntos atnaujinimus"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "Sandėliuojamoms prekėms dar reikia siuntimo sprendimo",
+          "paragraphs": [
+            "Sandėlyje laikoma prekė automatiškai nekeliauja jūsų adresu. Peržiūrėkite, kurios prekės paruoštos, ar jos gali keliauti kartu ir kiek saugojimo laiko liko kiekvienai. Laikykitės konkrečiai prekei rodomo atgalinio skaičiavimo ir sąlygų. Nesiremkite vienu saugojimo dienų skaičiumi iš seno straipsnio ar kito užsakymo tipo.",
+            "Pasirinkite siuntai tinkamas prekes, patvirtinkite gavėjo duomenis ir apsvarstykite pakavimo paslaugas, jei jos sprendžia konkrečią problemą. Pagal gautą svorį ir matmenis palyginkite galimus maršrutus. Tarptautinio gabenimo mokėjimas yra atskiras sprendimas nuo ankstesnio mokėjimo už prekes, o pasikeitus pakavimo prielaidoms gali keistis sąmata.",
+            "Pateikę siuntą jos įrašą naudokite išsiuntimui ir tarptautiniam sekimui. Prekių įrašus pasilikite kaip įrodymą, kas turi būti viduje. Jei siunta nejuda, klauskite apie naujausią jos etapą, o ne vėl kelkite bendrą klausimą, ar pardavėjas išsiuntė. Taip prašymas atitiks komandą ir procesą, kurie gali atsakyti."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Klausimą apie įstrigusią būseną paverskite aiškiu prašymu",
+          "paragraphs": [
+            "Nėra vieno laukimo laikotarpio, po kurio visi užsakymai laikomi vėluojančiais. Pardavėjo atsargos, vidaus gabenimas, sandėlio darbai ir tarptautinis perdavimas yra skirtingi procesai. Perskaitykite jūsų atvejui rodomą terminą ar prašomą atsakymą, tada palyginkite su naujausiu datuotu įvykiu. Nekintantis užrašas be konteksto nepakankamas priežasčiai nustatyti.",
+            "Parašykite glaustą pagalbos prašymą: užsakymo ar siuntos numeris, paskutinis datuotas įvykis, konkretus neatitikimas ir veiksmas, kurį norite išsiaiškinti. Pavyzdžiui: „Vidaus vežėjas rodo pristatymą, tačiau ši prekė dar neturi sandėlio nuotraukų. Ar galite patvirtinti gavimą ir kitą apdorojimo etapą?“ Į tokį klausimą galima atsakyti patikrinus įrašus.",
+            "Jei norite atšaukti, pasakykite prieš apdorojimui pajudant toliau. Prieinami veiksmai pasikeičia po pirkimo, pardavėjo išsiuntimo ir tarptautinio gabenimo. Nemanykite, kad prašymas garantuoja patvirtinimą ar momentinį grąžinimą į pirminį mokėjimo būdą. Išsaugokite oficialų atsakymą, sutartą kitą veiksmą ir numatomą tolesnį kontaktą, kad tęsdami neprarastumėte konteksto. Užrašykite datą prie kiekvieno atsakymo, kuris pakeičia jūsų kitą žingsnį. Grįžus į paskyrą šis užrašas padės atskirti naują prašymą nuo jau pagalbos išspręsto klausimo."
+          ]
+        }
+      ],
+      "checklist": [
+        "Nustatykite, ar problema susijusi su preke, ar tarptautine siunta.",
+        "Patikrinkite variantą, kiekį ir atitinkamą užsakymo numerį.",
+        "Prieš vėl mokėdami perskaitykite pranešimus ir laiko žymas.",
+        "Atskirkite vidaus pristatymą nuo sandėlio apdorojimo.",
+        "Peržiūrėkite savo QC įrodymus ir saugojimo atgalinį skaičiavimą.",
+        "Pagalbai užduokite vieną konkretų klausimą su atitinkamu privačiu numeriu."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: užsakymo eiga",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: užsakymo atšaukimas",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: saugojimas sandėlyje",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo: tarptautinio užsakymo sekimas",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Sugargoo siuntų sujungimas: pakavimas ir siuntimo išlaidos",
+      "description": "Sužinokite, kaip sujungti Sugargoo užsakymus, palyginti bendras ir atskiras siuntas, pasirinkti pakuotę ir patikrinti galutinę siuntimo kainą.",
+      "keyword": "sugargoo parcel consolidation",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Sugargoo siuntų sujungimas reiškia tinkamų sandėlio prekių pasirinkimą siųsti kartu. Tai gali supaprastinti siuntų valdymą ir sumažinti kartotinius pradinius siuntimo mokesčius, tačiau didesnė siunta automatiškai nėra pigesnė. Supakuoti matmenys, apmokestinamasis svoris, prekių apribojimai ir paskirties vietai galimi maršrutai gali pakeisti rezultatą.",
+        "Pradėkite nuo prekių, kurias jau patys peržiūrėjote, tada palyginkite bendrą variantą su pagrįstais atskirų siuntų variantais. Šis vadovas pateikia pakavimo sprendimų procesą ir pakartotinai naudojamą palyginimo sąrašą. Jis nežada konkretaus sutaupymo, maršruto ar paslaugos mokesčio. Dabartinės Packing Center parinktys ir galutinis pasiūlymas lemia, kas prieinama jūsų užsakymui."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Sujunkite tik kelionei paruoštas prekes",
+          "paragraphs": [
+            "Sudarykite trumpą norimų siųsti prekių sąrašą. Įtraukite užsakymo numerį, kiekį, patikros sprendimą, turimą svorio informaciją ir likusį saugojimo laiką. Pažymėkite prekes, kurių dydžio, būklės ar pardavėjo klausimai neišspręsti. Nereikia pateikti siuntos vien todėl, kad dauguma turinio paruošta, jei dėl vienos svarbios prekės dar neapsispręsta.",
+            "Prieš viską sujungdami patikrinkite suderinamumą. Baterija, skystis ar kita ribojama savybė gali paveikti, kurie maršrutai priims siuntą. Galimybė nusipirkti dvi prekes neįrodo, kad jos gali keliauti kartu bet kuriuo tarptautiniu maršrutu. Prieš laikydami bendrą variantą įmanomu patvirtinkite konkretaus derinio ir paskirties vietos priimtinumą.",
+            "Pagal saugojimo terminus priimkite aiškų sprendimą dėl laukimo. Jei laukiate vieno pardavėjo, palyginkite laukimo kainą ir riziką su paruoštų prekių siuntimu atskirai. Laikykitės kiekvienos prekės atgalinio skaičiavimo paskyroje ir galimų pratęsimo sąlygų. Nenaudokite numanomo visuotinio saugojimo termino kaip priežasties palikti prekes be priežiūros."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "Palyginkite visas bendros ir atskirų siuntų išlaidas",
+          "paragraphs": [
+            "Sudarykite du ar tris realius variantus: vieną bendrą siuntą, variantą atskyrus stambią prekę ir, jei reikia, skaidymą dėl nesuderinamo turinio. Naudokite tą pačią pristatymo vietą ir tą patį bendrą prekių rinkinį. Varianto, kuriame nepastebimai praleidžiama prekė, negalima sąžiningai lyginti su viską siunčiančiu variantu.",
+            "Kiekvienam variantui užrašykite siuntų skaičių, numatomus supakuotus matmenis ir svorį, tinkamą maršrutą, siuntimo sumą ir pasirinktus pakavimo priedus. Skaidymo variante sudėkite kiekvienos siuntos kainą. Bendros kainos lyginimas tik su pigesne atskiro siuntimo puse duoda neteisingą atsakymą. Neaiškius matmenis palikite matomus, neslėpkite jų tiksliai atrodančioje bendroje sumoje.",
+            "Sprendimą paaiškina hipotetinis pavyzdys. Jei bendras pasiūlymas būtų 70 USD, o du atskiri – 38 ir 42 USD, atskiras gabenimas kainuotų 80 USD dar prieš skirtingus priedus. Pavyzdys neprognozuoja jūsų kainų ir neįrodo, kad sujungimas geresnis. Dydžio riba, apsaugos poreikis ar maršruto apribojimas gali padaryti bendrą variantą netinkamą."
+          ],
+          "table": {
+            "headers": [
+              "Sprendimas",
+              "Bendra siunta",
+              "Atskiros siuntos"
+            ],
+            "rows": [
+              [
+                "Gabenimo palyginimas",
+                "Įkainokite visą prekių grupę",
+                "Sudėkite kiekvienos siuntos pasiūlymą"
+              ],
+              [
+                "Matmenys",
+                "Patikrinkite galutinę išorinę dėžę",
+                "Kiekvieną išorinę dėžę tikrinkite atskirai"
+              ],
+              [
+                "Turinys",
+                "Visos prekės turi tikti pasirinktai paslaugai",
+                "Kiekvienai grupei reikia tinkamos paslaugos"
+              ],
+              [
+                "Apsauga",
+                "Patikrinkite skirtingų prekių tarpusavio kontaktą",
+                "Įvertinkite pasikartojančias pakavimo medžiagas"
+              ],
+              [
+                "Laikas",
+                "Gali tekti laukti paskutinės pasirinktos prekės",
+                "Paruoštas prekes galima pateikti atskirai"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "Parinkite pakuotę prekei, tada patikrinkite kainą",
+          "paragraphs": [
+            "Paklauskite, kokią problemą sprendžia kiekvienas pakavimo pasirinkimas. Sutvirtinimas gali mažinti suspaudimo riziką; vidinis atskyrimas – prekių kontaktą; tinkamos mažmeninės dėžės palikimas gali saugoti formą ar laikyti mažus priedus kartu. Prieinamą paslaugą pasirinkite dėl konkrečios priežasties, o ne pridėkite visas parinktis vien todėl, kad jų pavadinimai ramina.",
+            "Dėžės pašalinimas gali pakeisti svorį ir tūrį, bet taip pat panaikinti apsaugą ar pakuotę, reikalingą laukiančiam grąžinimui. Pirmiausia nuspręskite dėl prekės ir nurodykite, ką galima pašalinti. „Pašalinkite išorinę transportavimo dėžę, bet palikite prekės dėžę ir priedus“ yra aiškiau nei bendras prašymas išmesti visą pakuotę, jei paslauga tokį prašymą gali įvykdyti.",
+            "Drabužiams ir kitoms suspaudžiamoms prekėms patvirtinkite, ar siūlomas būdas tinka medžiagai ir formai. Nemanykite, kad suspaudimas nekenksmingas visoms prekėms. Standžioms ar trapioms prekėms pernelyg maža dėžė gali neužtikrinti apsaugos. Pasiteiraukite tikrosios paslaugos apimties, tada kartu įvertinkite papildomą kainą ir supakuotus matmenis."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "Po pakavimo pasirinkimų dar kartą patikrinkite matmenis",
+          "paragraphs": [
+            "Atskirų prekių svorių suma nebūtinai yra galutinis siuntos svoris. Dėžės, paminkštinimas ir sutvirtinimas prisideda prie pakuotės, o leidžiamos pašalinti pakuotės atsisakymas gali ją palengvinti. Matmenys priklauso ir nuo to, kaip turinys dera tarpusavyje. Apytikslę sumą laikykite planavimo duomenimis, o ne patvirtinta siuntimo sąskaita.",
+            "Bandomasis pakavimas gali būti naudingas, kai sprendimas priklauso nuo matmenų ar maršruto ribos. Prieš užsakydami peržiūrėkite dabartinį mokestį ir kokia informacija bus pateikta. Užrašykite pakavimo prielaidas, kurias norite patikrinti. Tikslesni matavimai vertingi, kai išsprendžia tikrą pasirinkimą; paslauga be aiškaus klausimo didina išlaidas, bet nepagerina plano.",
+            "Gavę matmenis vėl atlikite palyginimą pagal pasirinkto maršruto kainodaros taisyklę. Patikrinkite faktinį ir tūrinį svorį, prireikus daliklį, apvalinimą ir dydžio ribas. Kelių centimetrų sumažėjimas viename maršrute gali nieko nekeisti, o kitame būti svarbus. Naudokite tikrą perskaičiuotą pasiūlymą, nemanydami, kad kiekvienas sumažėjimas tiesiogiai taupo pinigus."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Prieš mokėdami už gabenimą peržiūrėkite siuntą",
+          "paragraphs": [
+            "Packing Center pasirinkite numatytas tinkamas prekes ir patikrinkite jų kiekius. Pateikimo metu patvirtinkite gavėjo informaciją, galimas paslaugas ir pasirinktą maršrutą. Sąsajos tekstas gali keistis, todėl skaitykite visą santrauką, o ne sekite įsimintą mygtukų seką. Įsitikinkite, kad per klaidą neįtraukta prekė, kurią norėjote palikti aptarnavimui po pirkimo.",
+            "Instrukcijas rašykite trumpai ir konkrečiai. Nurodykite, kuriai prekei ar užsakymui jos skirtos ir ką reikia palikti, pašalinti ar apsaugoti. Jei instrukcijai reikia mokamos paslaugos, patvirtinkite prieinamumą ir mokestį, o ne manykite, kad laisvas tekstas ją užsako. Prieš pakavimą išspręskite prieštaringus prašymus, pavyzdžiui, išmesti dėžę ir kartu išsaugoti ją nepažeistą.",
+            "Išsaugokite užbaigtos siuntos santrauką, pasirinktas paslaugas ir pasiūlytą sumą. Jei suma pasikeitė, palyginkite svorį, matmenis ir parinktis su ankstesne sąmata. Prieš patvirtindami nesuprantamą žingsnį paklauskite, iš kur atsirado reikšmingas skirtumas. Aiškūs įrašai padeda atskirti pasikeitusią prielaidą nuo sąskaitos klausimo."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Išsaugokite siuntos įrodymus ir pagerinkite kitą palyginimą",
+          "paragraphs": [
+            "Pateikę siuntą sekite tarptautinį paketą, o ne atskiras pardavėjų siuntas. Įtrauktų užsakymų sąrašą laikykite su siuntos numeriu. Jei prekės išskaidytos, turėkite atskirus įrašus, kad vieno paketo atnaujinimas nebūtų palaikytas visų progresu. Pristatymo pranešimą reikia susieti su tinkamu turiniu.",
+            "Pasirenkamą apsaugą vertinkite pagal jos tikrąją politiką. Pakavimo paslaugos ir draudimas sprendžia skirtingas problemas, ir nei vienas nėra besąlyginis pažadas. Prieš pasikliaudami paslauga tikrinkite dabartinę aprėptį, išimtis ir pretenzijų reikalavimus. Išsaugokite susijusius įrodymus ir veikite nedelsdami, jei gauta siunta ar turinys neatitinka patvirtinto įrašo.",
+            "Kitam užsakymui privačiai išsaugokite planuoto ir galutinio svorio, matmenų, pakavimo pasirinkimų bei siuntimo kainos palyginimą. Pažymėkite, kuri prielaida pasikeitė ir kodėl. Kelios palyginamos siuntos gali pagerinti biudžeto planavimą, tačiau nesukuria universalaus kainoraščio. Kitam prekių deriniui, paskirties vietai ar maršrutui reikia naujos tinkamumo ir kainos patikros. Naudingas sujungimo sprendimas baigiasi konkrečiu variantu ir priežastimi: tinkamu turiniu, priimtina apsauga, tinkamu maršrutu ir įperkamu visu pasiūlymu. Jei kuris nors dalykas neaiškus, tęskite palyginimą, kol galėsite jį patvirtinti."
+          ]
+        }
+      ],
+      "checklist": [
+        "Prieš sujungdami prekes peržiūrėkite QC ir išspręskite aptarnavimo klausimus.",
+        "Patikrinkite turinio suderinamumą ir kiekvienos prekės saugojimo laiką.",
+        "Toms pačioms prekėms palyginkite visas bendro ir atskiro siuntimo išlaidas.",
+        "Pakavimo paslaugas rinkitės pagal konkrečius apsaugos poreikius.",
+        "Naudokite galutinius matmenis ir pasirinkto maršruto kainodaros taisykles.",
+        "Prieš mokėdami patvirtinkite prekių sąrašą, adresą, paslaugas ir pasiūlymą."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: kelių užsakymų sujungimas",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: bandomasis siuntos pakavimas",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: pakavimo ir apsaugos parinktys",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo: siuntimo apribojimai",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ]
     }
   ]

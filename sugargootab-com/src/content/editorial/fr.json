@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Articles",
     "articleTitle": "Guides d’achat Sugargoo",
-    "articleIntro": "Dix guides pratiques pour choisir un produit, vérifier ses détails et préparer son parcours du vendeur jusqu’à la livraison.",
+    "articleIntro": "Des guides pratiques sur les liens produits, les photos QC, les étapes de commande et les choix d’expédition, avec des sources officielles et des prochaines étapes claires.",
     "faqTitle": "FAQ Sugargoo",
     "faqIntro": "Des réponses claires à chaque étape de votre commande, avec des sources officielles pour les règles de la plateforme et des limites transparentes pour ce catalogue indépendant.",
     "readArticle": "Lire le guide",
@@ -33,7 +33,12 @@
     "categoryShipping": "Expédition et stockage",
     "categoryAccount": "Paiements et après-vente",
     "author": "Équipe éditoriale de SugargooTab",
-    "siteEvidence": "À propos de ce catalogue indépendant"
+    "siteEvidence": "À propos de ce catalogue indépendant",
+    "seoHomeTitle": "Sugargoo Spreadsheet : liens produits, photos et guides d’achat",
+    "catalogCtaTitle": "Mettez la checklist en pratique",
+    "catalogCtaBody": "Comparez les liens produits du catalogue, puis vérifiez l’annonce exacte et les détails de votre propre commande avant d’acheter ou d’expédier.",
+    "catalogCtaButton": "Parcourir les liens produits",
+    "categoryCtaButton": "Explorer les catégories de produits"
   },
   "groups": {
     "basics": "Premiers pas",
@@ -415,8 +420,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Guide du Sugargoo spreadsheet : transformer des liens en sélection utile",
-      "description": "Utilisez un Sugargoo spreadsheet pour comparer les annonces exactes, vérifier les variantes et préparer toute la commande avant l’achat.",
+      "title": "Sugargoo Spreadsheet : trouver et vérifier les liens produits",
+      "description": "Trouvez des produits dans un Sugargoo Spreadsheet, vérifiez les annonces et variantes actuelles, et distinguez les images de référence de vos propres photos QC d’entrepôt.",
       "keyword": "sugargoo spreadsheet",
       "category": "getting-started",
       "intro": [
@@ -424,6 +429,38 @@
         "Ce catalogue indépendant reprend les informations produit et les images de référence de cnbuycha. La commande et le paiement s’effectuent sur Sugargoo. La méthode suivante relie ces deux étapes sans présenter une fiche comme une recommandation personnelle, une garantie de stock ou une preuve d’inspection en entrepôt. Elle fonctionne aussi avec une simple application de notes."
       ],
       "sections": [
+        {
+          "id": "live-listing-check",
+          "title": "Comment vérifier une annonce actuelle avant d’acheter",
+          "paragraphs": [
+            "Ouvrez le produit du catalogue, puis son lien vers l’annonce originale. Comparez l’identifiant produit de la place de marché, le vendeur et la variante sélectionnée avec l’article affiché sur Sugargoo. Le numéro de page interne du catalogue est un identifiant distinct. Revérifiez le prix actuel, les options disponibles et la quantité juste avant le paiement ; une fiche enregistrée ne prouve pas le stock actuel.",
+            "Si l’annonce originale a disparu, si le produit ne se charge pas ou si la variante diffère, arrêtez-vous à cette étape. Revenez au Spreadsheet et comparez un autre candidat. Notez pourquoi le premier a échoué pour ne pas répéter la même vérification plus tard. Les images de référence restent des éléments de découverte, même lorsqu’elles ressemblent à des photos d’entrepôt."
+          ],
+          "table": {
+            "headers": [
+              "Point à vérifier",
+              "Justificatif à utiliser"
+            ],
+            "rows": [
+              [
+                "Identité du produit",
+                "URL originale de la place de marché et identifiant produit"
+              ],
+              [
+                "Disponibilité actuelle",
+                "Annonce actuelle du vendeur et option choisie"
+              ],
+              [
+                "Prix",
+                "Variante exacte et montant au paiement"
+              ],
+              [
+                "État de l’article",
+                "Photos de votre propre commande après réception à l’entrepôt"
+              ]
+            ]
+          }
+        },
         {
           "id": "define-the-purchase",
           "title": "Commencez par définir l’usage de l’article",
@@ -506,7 +543,9 @@
       "related": [
         "how-to-buy-on-sugargoo",
         "sugargoo-qc-photos"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -600,15 +639,17 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-shipping-calculator"
-      ]
+        "sugargoo-order-status",
+        "sugargoo-spreadsheet-guide"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Photos QC Sugargoo : que vérifier avant l’expédition ?",
-      "description": "Examinez méthodiquement les photos d’entrepôt, demandez des mesures utiles et comprenez les limites d’un contrôle visuel.",
+      "title": "Photos QC Sugargoo : vérifier les produits avant l’expédition",
+      "description": "Utilisez une checklist QC Sugargoo pratique pour chaussures, vêtements et sacs. Vérifiez étiquettes, mesures, coutures et détails manquants avant l’envoi.",
       "keyword": "photos qc sugargoo",
       "category": "quality",
       "intro": [
@@ -616,6 +657,43 @@
         "Sugargoo indique fournir généralement cinq photos QC standard, le périmètre du contrôle dépendant de l’article et du type de commande. Leur nombre ne garantit pas ce qu’elles permettent de vérifier. Les images de référence cnbuycha de ce site appartiennent au catalogue ; ce ne sont pas des photos QC vérifiées de votre commande Sugargoo. Consultez votre propre dossier d’entrepôt avant l’expédition internationale."
       ],
       "sections": [
+        {
+          "id": "product-qc-checklist",
+          "title": "Vérifications QC pour chaussures, vêtements et sacs",
+          "paragraphs": [
+            "Commencez par faire correspondre commande, couleur, taille et quantité. Examinez ensuite les détails susceptibles de changer votre décision de conserver l’article. La checklist suivante facilite l’examen des photos ; elle ne garantit pas que le QC ordinaire couvre chaque angle ou mesure. Demandez le justificatif précis qui manque et vérifiez les éventuels frais avant de poursuivre.",
+            "Par exemple, une photo de sac prise uniquement de face ne montre ni la fixation de la bandoulière ni l’état intérieur. Demandez l’angle pertinent si ce détail compte pour vous. Si une mesure est nécessaire, indiquez ses extrémités et demandez un mètre visible. Les photos ne permettent pas d’établir toutes les propriétés fonctionnelles et ne prouvent pas l’authenticité."
+          ],
+          "table": {
+            "headers": [
+              "Type de produit",
+              "À vérifier sur vos photos de commande",
+              "En cas de doute, demander"
+            ],
+            "rows": [
+              [
+                "Chaussures",
+                "Paire, étiquettes de taille, semelles et coutures visibles",
+                "Les deux étiquettes de taille et l’angle pertinent de semelle ou couture"
+              ],
+              [
+                "Vêtements",
+                "Étiquette de taille, aspect du tissu et coutures",
+                "Une mesure à plat avec des points de départ et d’arrivée clairs"
+              ],
+              [
+                "Sacs",
+                "Bandoulières, fermetures, doublure et accessoires",
+                "Des gros plans de l’intérieur et des points de fixation"
+              ],
+              [
+                "Tout article",
+                "Bonne variante, quantité et dommages visibles",
+                "Une image nette de l’écart précis"
+              ]
+            ]
+          }
+        },
         {
           "id": "match-the-order",
           "title": "Identifiez l’article auquel les photos se rapportent",
@@ -698,13 +776,15 @@
       "related": [
         "sugargoo-returns-refunds",
         "sugargoo-rehearsal-shipping"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Calculateur de livraison Sugargoo : construire un budget réaliste",
-      "description": "Estimez le transport avec la bonne destination, la catégorie, le poids et les dimensions, puis comparez le coût complet des lignes.",
+      "title": "Calculateur d’expédition Sugargoo : poids, dimensions et coût total",
+      "description": "Utilisez le calculateur Sugargoo avec un poids et des dimensions réalistes. Comparez les lignes admissibles et comprenez les incertitudes de l’estimation.",
       "keyword": "calculateur livraison sugargoo",
       "category": "shipping",
       "intro": [
@@ -712,6 +792,14 @@
         "Le guide officiel du calculateur Sugargoo utilise la destination, la catégorie de l’article, le poids et les dimensions pour comparer les options disponibles. Considérez le résultat comme un scénario daté, puis actualisez-le à mesure que vous connaissez mieux le colis emballé. Ce guide explique comment bâtir ces scénarios et repérer les incertitudes avant qu’elles ne posent problème au paiement."
       ],
       "sections": [
+        {
+          "id": "quote-comparison",
+          "title": "Faites deux estimations avant de vous engager sur les produits",
+          "paragraphs": [
+            "Construisez un premier scénario avec les meilleures données de poids et de dimensions disponibles, puis un scénario prudent tenant compte des incertitudes d’emballage. Gardez les mêmes destination, contenu et autres paramètres. Si la commande ne respecte votre budget qu’avec les hypothèses les plus optimistes, levez l’incertitude avant de payer les marchandises.",
+            "Notez la date du devis, la ligne, les unités, les dimensions estimées et les suppléments choisis. Remplacez les hypothèses par les mesures du colis dès qu’elles sont disponibles. Pour les États-Unis, le guide dédié explique la comparaison ; pour plusieurs commandes stockées, utilisez le guide de regroupement afin de comparer les coûts complets des colis réunis et séparés."
+          ]
+        },
         {
           "id": "collect-the-inputs",
           "title": "Rassemblez les données avant de comparer les prix",
@@ -792,15 +880,17 @@
         }
       ],
       "related": [
-        "sugargoo-rehearsal-shipping",
-        "sugargoo-fees-payment"
-      ]
+        "sugargoo-shipping-to-usa",
+        "sugargoo-parcel-consolidation"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Répétition d’expédition Sugargoo : quand des mesures précises sont utiles",
-      "description": "Évaluez l’utilité d’une répétition d’emballage, préparez des instructions claires et comparez les lignes admissibles avec les résultats.",
+      "title": "Simulation d’emballage Sugargoo : poids, dimensions et utilité",
+      "description": "Déterminez quand la simulation d’emballage Sugargoo est utile, précisez vos choix d’emballage et comparez le colis mesuré à votre estimation initiale de transport.",
       "keyword": "rehearsal shipping sugargoo",
       "category": "shipping",
       "intro": [
@@ -808,6 +898,14 @@
         "Sugargoo décrit cette prestation comme une simulation de colis avant expédition, donnant des informations plus précises sur le poids et le volume. Considérez-la comme une décision de mesure et d’emballage, dont vous vérifiez les conditions et le prix actuels dans votre compte. Sa valeur pratique dépend de l’usage que vous prévoyez de faire du résultat."
       ],
       "sections": [
+        {
+          "id": "rehearsal-decision",
+          "title": "Quand envisager une simulation d’emballage ?",
+          "paragraphs": [
+            "Envisagez cette prestation lorsque des dimensions emballées inconnues peuvent changer votre ligne ou votre budget : article léger et volumineux, plusieurs boîtes de vente ou colis proche d’une limite. Notez l’incertitude à résoudre et vérifiez le tarif actuel du service. Si votre décision reste identique avec des estimations raisonnables, une mesure supplémentaire peut être moins utile.",
+            "Comparez le résultat à vos données initiales : poids réel, dimensions extérieures, emballages conservés et services choisis. Recalculez selon la règle de facturation actuelle de la ligne. Des dimensions plus petites ne garantissent pas une facture finale inférieure, car minimums de facturation, paliers de poids et autres options peuvent encore intervenir."
+          ]
+        },
         {
           "id": "identify-the-decision",
           "title": "Définissez l’incertitude que la simulation doit résoudre",
@@ -888,9 +986,11 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-calculator",
-        "sugargoo-warehouse-storage"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-shipping-calculator"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-tracking",
@@ -1014,7 +1114,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-warehouse-storage"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-fees-payment",
@@ -1142,7 +1244,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-returns-refunds"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-warehouse-storage",
@@ -1240,9 +1344,11 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-rehearsal-shipping"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-order-status"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-returns-refunds",
@@ -1342,13 +1448,15 @@
       "related": [
         "sugargoo-qc-photos",
         "sugargoo-fees-payment"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Liens Weidian et Taobao sur Sugargoo : vérifier le produit exact",
-      "description": "Copiez la bonne URL source, conservez l’identité du produit et vérifiez les variantes ; utilisez la commande manuelle prise en charge si le chargement échoue.",
+      "title": "Liens Weidian et Taobao sur Sugargoo : vérifier et corriger les erreurs",
+      "description": "Vérifiez les liens produits Weidian et Taobao avant d’acheter sur Sugargoo. Résolvez annonces absentes, mauvaises variantes et échecs de lecture sans deviner.",
       "keyword": "weidian vers sugargoo",
       "category": "getting-started",
       "intro": [
@@ -1356,6 +1464,14 @@
         "Ce guide explique quoi copier, comment reconnaître une annonce qui ne correspond pas et que faire si le chargement automatique échoue. Il distingue aussi l’identifiant produit de la place de marché du numéro de page interne de ce catalogue, afin qu’un bouton d’achat pratique ne devienne pas une raison de négliger les vérifications finales."
       ],
       "sections": [
+        {
+          "id": "link-error-check",
+          "title": "Que vérifier lorsqu’un lien produit ne se charge pas ?",
+          "paragraphs": [
+            "Ouvrez d’abord la page produit originale et confirmez qu’elle identifie toujours l’article souhaité. Une page d’accueil de boutique, un texte de partage abrégé ou une annonce supprimée n’équivaut pas à une URL produit complète. Comparez l’identifiant produit de la place de marché avant de réessayer. Retirez le texte de partage inutile sans changer l’identité de l’article.",
+            "Si l’article original existe mais que la lecture automatique échoue, vérifiez les options officielles de commande manuelle et leurs conditions d’acceptation. Conservez ensemble vendeur, variante exacte, quantité, URL et prix. Un formulaire manuel ne contourne pas les restrictions produit et ne garantit pas la disponibilité. Si l’annonce actuelle ne peut être vérifiée, choisissez un autre candidat plutôt que de deviner à partir de sa photo."
+          ]
+        },
         {
           "id": "source-identity",
           "title": "1. Partez de l’annonce de l’article, pas d’un résultat de recherche",
@@ -1442,6 +1558,409 @@
       "related": [
         "sugargoo-spreadsheet-guide",
         "how-to-buy-on-sugargoo"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Expédition Sugargoo vers les États-Unis : coûts, poids et livraison",
+      "description": "Préparez l’expédition Sugargoo vers les États-Unis : comparez poids, dimensions, conditions des lignes et étapes de livraison avant de payer le transport international.",
+      "keyword": "Expédition Sugargoo vers les États-Unis ",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "L’expédition Sugargoo vers les États-Unis est une décision distincte de l’achat des marchandises. Partez de votre adresse de livraison, des produits à envoyer et d’une estimation de leur poids et de leurs dimensions emballés. Comparez ensuite les lignes réellement proposées dans votre compte. Le prix du colis d’une autre personne n’est qu’un repère : destination, date, dimensions et contenu peuvent différer des vôtres.",
+        "Ce guide propose une méthode de comparaison, pas un prix fixe ni une promesse de livraison. SugargooTab est un catalogue indépendant qui ne peut établir un devis, expédier ou suivre votre colis au nom de Sugargoo. Utilisez l’estimateur officiel pour planifier et le récapitulatif final du colis pour décider du paiement. Conservez le détail des éléments inclus afin de comprendre les changements ultérieurs."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Séparez les dépenses produits du budget du colis vers les États-Unis",
+          "paragraphs": [
+            "Divisez le budget en deux étapes. La première couvre les marchandises choisies et la livraison intérieure chinoise, ainsi que les frais de paiement affichés. La seconde couvre le transport international et les services sélectionnés pour le colis. Des frais liés à la destination peuvent aussi devoir être pris en compte. Ne supposez pas qu’un prix produit du catalogue inclut l’une ou l’autre étape de livraison.",
+            "Utilisez un budget illustratif pour éprouver la décision, pas pour prédire un devis. Si votre plafond personnel est de 150 dollars et que les marchandises coûtent déjà 110 dollars, les 40 dollars restants doivent couvrir tout ce qui reste à payer. Si l’estimation actuelle d’expédition dépasse ce solde, revoyez la commande avant d’ajouter des produits. Reprendre un chiffre moins cher dans un ancien message ne comble pas l’écart.",
+            "Gardez la date et les données de l’estimation à côté du montant. Notez si les prestations d’emballage et la protection optionnelle sont incluses, et si les conditions de la ligne expliquent d’éventuels frais supplémentaires à destination. Marquez un coût inconnu comme tel. Cela vaut mieux qu’un total précis composé d’hypothèses incomplètes."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Saisissez destination, contenu, poids et dimensions",
+          "paragraphs": [
+            "Utilisez la véritable destination américaine et les champs de région demandés par l’estimateur. Ne remplacez pas l’adresse simplement pour obtenir des lignes plus attrayantes. Décrivez correctement la catégorie de produit, y compris les caractéristiques influençant le transport. Une ligne acceptant les vêtements ordinaires n’accepte pas automatiquement batteries, liquides ou tout autre produit vendu sur une place de marché.",
+            "Avant l’arrivée à l’entrepôt, poids et dimensions sont des hypothèses de planification. Surveillez particulièrement les articles volumineux : une veste légère dans une grande boîte peut produire un colis différent d’une chemise bien compactée. Une fois vos articles disponibles, remplacez les suppositions par les informations de l’entrepôt et, si utile, les résultats d’une simulation d’emballage.",
+            "Notez les unités avec les nombres. Grammes et kilogrammes ne sont pas interchangeables, et des centimètres ne doivent pas être saisis dans un champ en pouces. Une erreur d’unité peut rendre un devis apparemment compétitif sans valeur. Si une estimation semble étonnamment basse ou élevée, vérifiez d’abord adresse, unités, quantités et catégorie avant de juger la ligne."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Comprenez le poids retenu pour la facturation",
+          "paragraphs": [
+            "Le poids réel mesure la masse ; le poids volumétrique transforme les dimensions du colis en valeur de facturation selon les règles de la ligne choisie. Diviseur, arrondis et minimum facturé peuvent varier. Lisez la description de la ligne au lieu d’appliquer une formule unique à toutes les options. La valeur la plus élevée peut compter sur une ligne volumétrique même si les marchandises sont légères.",
+            "À titre d’illustration uniquement, une boîte de 40 × 30 × 25 cm représente 30 000 centimètres cubes. Un diviseur hypothétique de 6 000 donnerait un poids volumétrique de 5 kg. Cela ne signifie pas que votre ligne utilise 6 000. Avec un poids réel de 3 kg, une ligne facturant la valeur la plus élevée pourrait tout de même retenir 5 kg avant application de ses arrondis.",
+            "Demandez si un changement d’emballage modifierait suffisamment les dimensions pour changer le devis. Retirer une boîte de vente inutile peut aider dans certains cas, alors que des produits fragiles peuvent avoir besoin de cette protection. Revérifiez les mesures finales après les choix convenus ; chaque boîte retirée ne crée pas forcément une économie et chaque renfort ne justifie pas nécessairement son poids supplémentaire."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Comparez les lignes avec les mêmes hypothèses de colis",
+          "paragraphs": [
+            "Préparez une courte comparaison ne comprenant que des lignes acceptant votre colis. Calculez chacune avec les mêmes destination, contenu, poids et dimensions. Sinon, l’écart de prix peut provenir des données plutôt que d’un meilleur service. Lisez les limites de taille et de poids avant de consacrer du temps à une option inutilisable par votre colis final.",
+            "Vérifiez ce que mesure le délai affiché et quelles étapes de suivi sont visibles. L’envoi du vendeur vers l’entrepôt chinois est distinct du trajet international, et la préparation avant remise au transporteur peut constituer une autre étape. Traitez une fourchette estimée comme une information de planification. Évitez un achat lié à une échéance immuable si vous ne pouvez pas accepter les conséquences d’un retard.",
+            "Lisez les explications actuelles de la ligne sur frais inclus, suppléments, restrictions et assurance facultative. Sauvegardez ce texte avec le devis. Si un point essentiel est ambigu, demandez au support officiel avant le paiement et conservez la réponse. Un nom de ligne ou la capture d’un autre acheteur ne remplace pas les conditions attachées à votre colis."
+          ],
+          "table": {
+            "headers": [
+              "Élément à comparer",
+              "À noter avant paiement"
+            ],
+            "rows": [
+              [
+                "Admissibilité",
+                "Contenus autorisés, destinations couvertes et limites du colis"
+              ],
+              [
+                "Poids facturable",
+                "Règle réelle ou volumétrique, diviseur et arrondis"
+              ],
+              [
+                "Total affiché",
+                "Transport, suppléments choisis et exclusions explicites"
+              ],
+              [
+                "Informations de livraison",
+                "Fourchette estimée, étape de remise et étendue du suivi"
+              ],
+              [
+                "Couverture",
+                "Garanties actuelles, exclusions et conditions de réclamation"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Gardez des informations cohérentes sur produits et destinataire",
+          "paragraphs": [
+            "Utilisez des descriptions précises et les informations réellement demandées pour l’envoi. Gardez les justificatifs de commande et de paiement disponibles en cas de clarification. Ne copiez pas la déclaration d’un autre colis et ne choisissez pas une description trompeuse pour faire apparaître une ligne. Le contenu de votre propre envoi détermine les vérifications pertinentes.",
+            "Les règles d’importation américaines et les modalités des transporteurs peuvent évoluer. Ce guide ne fournit donc pas de seuil fiscal permanent ni de promesse d’absence de frais supplémentaires. Vérifiez les consignes actuelles de destination et les conditions du service choisi au moment de l’envoi. En cas de contradiction, obtenez une clarification avant de payer au lieu de considérer une formule promotionnelle comme une explication complète.",
+            "Contrôlez le nom du destinataire, l’adresse et les coordonnées dans le compte officiel. Corriger une erreur avant l’expédition est plus simple que résoudre ensuite une anomalie de livraison. Ne publiez pas d’adresses privées ni d’identifiants de commande dans des avis ou tableaux partagés. Une comparaison publique utile peut décrire la ligne et le type approximatif de colis sans exposer le destinataire."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Suivez chaque étape et réagissez aux anomalies",
+          "paragraphs": [
+            "Distinguez le suivi intérieur du vendeur de la référence du colis international. L’arrivée à l’entrepôt ne signifie pas que le colis a quitté la Chine, et la création d’un numéro de suivi ne prouve pas à elle seule sa prise en charge. Consultez l’historique logistique du colis soumis et notez l’événement daté le plus récent.",
+            "Si le suivi s’interrompt, recherchez une remise, une demande d’information ou une anomalie avant de supposer une perte. Enregistrez la dernière mise à jour et posez au support une question précise sur la prochaine étape attendue. Transmettez la référence du colis par le canal privé officiel. Répéter la même recherche publique ne résout ni un document manquant ni un problème d’adresse.",
+            "À la livraison, vérifiez rapidement emballage et contenu et conservez les preuves et emballages pertinents en cas de problème. Toute réclamation dépend du service applicable et de ses exigences ; acheter un transport ne constitue pas une garantie générale. Notez les étapes et coûts réels pour que votre prochaine estimation repose sur des éléments comparables plutôt que sur la mémoire. Avant de payer, relisez une dernière fois la comparaison et écartez toute ligne dont l’admissibilité reste incertaine. Un budget utilisable exige un service disponible, des données exactes et des conditions compréhensibles, pas simplement le chiffre affiché le plus bas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirmez la véritable destination américaine et les contenus autorisés.",
+        "Séparez le budget des marchandises du transport international et des suppléments.",
+        "Utilisez des unités cohérentes et notez les dimensions emballées.",
+        "Comparez les lignes admissibles avec des données identiques.",
+        "Vérifiez les conditions actuelles et l’exactitude des informations d’envoi.",
+        "Enregistrez le devis final et suivez l’historique propre au colis."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo : estimer le coût du transport international",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo : simulation d’emballage avant expédition",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo : restrictions d’expédition",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo : problèmes de suivi",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Statuts de commande Sugargoo : du paiement à l’entrepôt",
+      "description": "Comprenez les étapes Sugargoo, l’envoi du vendeur, l’arrivée à l’entrepôt et le suivi du colis. Découvrez quoi vérifier lorsqu’une commande semble bloquée.",
+      "keyword": "Statuts de commande Sugargoo ",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Un statut Sugargoo décrit une étape de l’achat, pas tout le trajet jusqu’à votre porte. Paiement, achat par l’agent, envoi du vendeur, traitement à l’entrepôt et expédition internationale sont distincts. Identifiez d’abord si vous regardez une commande d’article ou un colis soumis : ces fiches répondent à des questions différentes et peuvent posséder des références de suivi différentes.",
+        "Les formulations du site ou de l’application peuvent varier selon la langue et les évolutions de l’interface. Les descriptions ci-dessous indiquent quoi examiner sans prétendre reproduire chaque bouton actuel. Ouvrez votre commande pour voir messages, actions et horodatages. Ces détails sont plus utiles que comparer un libellé court avec la commande d’un inconnu."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "Commencez par la bonne fiche d’article ou de colis",
+          "paragraphs": [
+            "Conservez ensemble le lien produit original, la variante choisie et la référence Sugargoo. Si vous avez acheté plusieurs articles similaires, vérifiez vendeur, couleur, taille et quantité avant de contacter le support. Une mise à jour d’un article n’établit pas l’avancement d’un autre, même s’ils ont été payés durant la même visite.",
+            "Tenez une fiche distincte pour le colis international créé à partir des marchandises stockées. Un colis peut contenir plusieurs commandes, tandis qu’un problème de commande peut devoir être résolu avant sa soumission. Notez quelles références d’articles appartiennent à chaque colis. Cette distinction évite de confondre le numéro intérieur du vendeur avec celui de l’envoi vers votre pays.",
+            "Lorsqu’un statut paraît inattendu, lisez les messages et le dernier horodatage avant d’agir. Une demande d’options manquantes ou d’ajustement du paiement peut expliquer l’absence de progression. Conservez le texte utile dans vos notes, mais transmettez références privées et captures uniquement par le canal officiel du support."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "Paiement et achat sont deux étapes distinctes",
+          "paragraphs": [
+            "Au stade du paiement en attente, vérifiez que vous avez réellement terminé le règlement. Un article dans le panier ou une commande impayée ne prouve pas qu’un vendeur a reçu une demande d’achat. Si vous renoncez, utilisez l’action d’annulation disponible à cette étape au lieu de supposer que quitter l’écran supprime la commande.",
+            "Après paiement, confirmez la transaction dans le compte et examinez les messages d’achat. Un paiement terminé ne prouve pas l’expédition par le vendeur. L’achat peut encore dépendre du stock, de la variante choisie, du port intérieur ou d’informations nécessaires pour commander correctement. Répondez à une demande précise plutôt que de payer plusieurs fois une commande en double.",
+            "Si votre banque affiche un débit mais que la commande paraît impayée, comparez références et statut avec le support officiel avant de réessayer. Une écriture bancaire et une mise à jour de commande peuvent décrire des parties différentes du paiement. Conservez les preuves sans publier de données de carte, d’identifiants de connexion ou de codes de vérification. Demandez quelle transaction est rattachée à la commande et quelle action est réellement nécessaire."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "Acheté ou expédié par le vendeur ne signifie pas prêt à l’entrepôt",
+          "paragraphs": [
+            "Au stade acheté, vérifiez si le vendeur a fourni des informations d’expédition intérieure. La confirmation d’achat concerne les marchandises ; ce n’est pas une confirmation d’envoi international. Pour obtenir une mise à jour du vendeur, utilisez la conversation de commande afin de garder la demande liée au bon article et aux bonnes options.",
+            "Lorsque le vendeur expédie, suivez le transport intérieur associé à la commande. La livraison à l’entrepôt est distincte de sa vérification et de sa mise en stock. Un scan de livraison peut précéder l’enregistrement complet dans votre compte. Cet intervalle seul ne prouve pas une disparition ; vérifiez messages et informations de traitement.",
+            "Si le vendeur n’envoie qu’une partie de la commande ou si la quantité semble incorrecte, listez explicitement les unités manquantes. Indiquez la quantité initiale et les preuves actuelles. « Il manque une des deux chemises de cette commande » est plus exploitable que « Mon colis est incorrect ». Laissez le support déterminer s’il s’agit de l’envoi du vendeur, d’une livraison fractionnée ou du traitement à l’entrepôt."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "L’arrivée à l’entrepôt est votre point de contrôle",
+          "paragraphs": [
+            "Dès que les photos et détails de votre propre commande sont disponibles, comparez-les à la variante achetée. Examinez étiquettes, couleur, quantité, état visible et mesures demandées. Les images de référence du catalogue ne remplacent pas cet examen : elles servaient à découvrir le produit et ne prouvent pas l’état de l’exemplaire reçu pour vous.",
+            "Si une image est peu claire, décrivez précisément ce qui doit apparaître. Demandez par exemple l’étiquette de taille ou une mesure dont le mètre commence à la bonne couture. Vérifiez dans le compte les services supplémentaires et leur disponibilité. Une inspection visuelle ordinaire ne constitue ni une preuve d’authenticité ni un test fonctionnel de chaque produit.",
+            "Résolvez une éventuelle question de retour ou de vendeur avant d’inclure l’article dans un colis international. Vérifiez rapidement admissibilité et délais au lieu de supposer que le stockage correspond aussi à une période de retour. Gardez emballage et preuves nécessaires. Acceptation, port de retour et remboursement dépendent de la commande et des conditions après-vente actuelles."
+          ],
+          "table": {
+            "headers": [
+              "Étape examinée",
+              "Vérification utile",
+              "Action suivante"
+            ],
+            "rows": [
+              [
+                "Paiement en attente",
+                "Références de commande et de paiement",
+                "Terminer ou annuler la commande souhaitée"
+              ],
+              [
+                "Achat en cours",
+                "Variante, stock et messages de commande",
+                "Répondre à la demande d’information précise"
+              ],
+              [
+                "Envoi du vendeur",
+                "Suivi intérieur et quantité",
+                "Vérifier l’avancement vendeur dans la commande"
+              ],
+              [
+                "Traitement à l’entrepôt",
+                "Enregistrement d’arrivée et photos téléchargées",
+                "Examiner l’article reçu et résoudre les problèmes"
+              ],
+              [
+                "Article stocké",
+                "Durée de stockage restante et décision QC",
+                "Préparer un colis admissible avant l’échéance"
+              ],
+              [
+                "Colis soumis",
+                "Référence du colis et historique logistique",
+                "Suivre les mises à jour internationales"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "Les marchandises stockées nécessitent encore un choix d’expédition",
+          "paragraphs": [
+            "Un article stocké n’est pas automatiquement en route vers votre adresse. Vérifiez quelles marchandises sont prêtes, si elles peuvent voyager ensemble et le temps restant pour chacune. Suivez le compte à rebours et les conditions de l’article réel. Ne vous fiez pas à une durée copiée d’un ancien article ou d’un autre type de commande.",
+            "Sélectionnez des marchandises admissibles, confirmez les coordonnées du destinataire et envisagez les services d’emballage lorsqu’ils résolvent un problème précis. Comparez les lignes disponibles avec le poids et les dimensions obtenus. Le paiement du transport international est distinct du paiement initial des produits ; l’estimation peut changer lorsque les hypothèses d’emballage évoluent.",
+            "Après soumission, utilisez la fiche du colis pour l’expédition et le suivi international. Conservez les fiches d’articles comme preuves du contenu attendu. Si le colis n’avance pas, interrogez son étape actuelle plutôt que de relancer une question générale sur l’envoi du vendeur. Cela dirige la demande vers l’équipe et le processus capables de répondre."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Transformez un statut bloqué en demande claire",
+          "paragraphs": [
+            "Aucun délai d’attente unique ne rend toutes les commandes en retard. Stock vendeur, transport intérieur, travail d’entrepôt et remise internationale relèvent de processus différents. Lisez l’estimation ou la réponse demandée pour votre cas, puis comparez-la au dernier événement daté. Un libellé inchangé sans contexte ne suffit pas à identifier la cause.",
+            "Rédigez une demande concise avec référence de commande ou de colis, dernier événement daté, écart précis et action à clarifier. Par exemple : « Le transporteur intérieur indique une livraison, mais cet article n’a pas encore de photos d’entrepôt. Pouvez-vous confirmer sa réception et la prochaine étape ? » Cette question peut être vérifiée dans les dossiers.",
+            "Si vous souhaitez annuler, dites-le avant que le traitement avance. Les actions disponibles changent après achat, expédition vendeur et envoi international. Ne supposez pas qu’une demande garantit une acceptation ou un remboursement immédiat sur le moyen de paiement initial. Conservez réponse officielle, prochaine étape convenue et suivi attendu pour poursuivre le même dossier sans perdre son contexte. Datez toute réponse qui modifie votre prochaine action. À votre retour dans le compte, cette note aidera à distinguer une nouvelle demande d’une question déjà résolue."
+          ]
+        }
+      ],
+      "checklist": [
+        "Identifiez si le problème concerne un article ou un colis international.",
+        "Vérifiez variante, quantité et référence de commande correspondante.",
+        "Lisez messages et horodatages avant un nouveau paiement.",
+        "Distinguez livraison intérieure et traitement à l’entrepôt.",
+        "Examinez vos preuves QC et le compte à rebours du stockage.",
+        "Posez une question précise au support avec la référence privée pertinente."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo : déroulement d’une commande",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo : annulation de commande",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo : stockage en entrepôt",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo : suivi d’une commande internationale",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Regroupement de colis Sugargoo : emballage et frais d’envoi",
+      "description": "Découvrez comment regrouper des commandes Sugargoo, comparer colis réunis et séparés, choisir l’emballage et vérifier le devis final d’expédition.",
+      "keyword": "Regroupement de colis Sugargoo ",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Regrouper des colis Sugargoo consiste à sélectionner des articles admissibles de l’entrepôt pour les envoyer ensemble. Cela peut simplifier la gestion et réduire les frais initiaux répétés, mais un gros colis n’est pas automatiquement moins cher. Dimensions emballées, poids facturable, restrictions produits et lignes disponibles vers la destination peuvent changer le résultat.",
+        "Commencez par les marchandises ayant passé votre propre contrôle, puis comparez un regroupement à des séparations raisonnables. Ce guide propose une méthode de décision sur l’emballage et une checklist réutilisable. Il ne promet ni économie particulière, ni ligne, ni tarif de service. Les options actuelles du Packing Center et le devis final déterminent ce qui est disponible pour votre commande."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Regroupez uniquement les articles prêts à voyager",
+          "paragraphs": [
+            "Faites un inventaire bref des articles à envoyer. Incluez référence de commande, quantité, décision d’inspection, informations de poids disponibles et durée de stockage restante. Signalez tout problème non résolu de taille, d’état ou de vendeur. Ne soumettez pas un colis simplement parce que la majorité est prête alors qu’un article important exige encore une décision.",
+            "Vérifiez la compatibilité avant de tout réunir. Un produit avec batterie, liquide ou autre caractéristique restreinte peut modifier les lignes acceptant le colis. Pouvoir acheter deux marchandises ne prouve pas qu’elles peuvent emprunter ensemble n’importe quelle ligne internationale. Confirmez l’acceptation de la combinaison réelle et de la destination avant de juger le regroupement possible.",
+            "Utilisez les échéances de stockage pour décider explicitement d’attendre. Si vous attendez un vendeur, comparez coût et risque de l’attente avec l’expédition séparée des marchandises prêtes. Respectez le compte à rebours de chaque article et les conditions de prolongation disponibles. N’invoquez pas une durée de stockage supposée universelle pour laisser des biens sans surveillance."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "Comparez les coûts complets du regroupement et de la séparation",
+          "paragraphs": [
+            "Créez deux ou trois options réalistes : un colis regroupé, une séparation isolant un article encombrant et, si nécessaire, une séparation imposée par des contenus incompatibles. Gardez la même destination et l’ensemble identique des marchandises. Une option omettant discrètement un article ne se compare pas équitablement à une option qui expédie tout.",
+            "Pour chaque option, notez nombre de colis, dimensions et poids emballés estimés, ligne admissible, montant du transport et suppléments d’emballage. Additionnez le coût de chaque colis séparé. Comparer le prix regroupé seulement à la moitié la moins chère d’une expédition fractionnée donne une mauvaise réponse. Gardez les mesures incertaines visibles plutôt que de les cacher dans un total d’apparence précise.",
+            "Un exemple hypothétique aide à comprendre : si le devis regroupé était de 70 dollars et les deux devis séparés de 38 et 42 dollars, le transport séparé totaliserait 80 dollars avant d’éventuels suppléments différents. Cette illustration ne prédit pas vos prix et ne prouve pas que regrouper est préférable. Une limite de taille, un besoin de protection ou une restriction de ligne peut rendre cette option inadaptée."
+          ],
+          "table": {
+            "headers": [
+              "Choix à examiner",
+              "Colis regroupé",
+              "Colis séparés"
+            ],
+            "rows": [
+              [
+                "Comparaison du transport",
+                "Chiffrer l’ensemble des marchandises",
+                "Additionner le devis de chaque colis"
+              ],
+              [
+                "Dimensions extérieures",
+                "Vérifier la boîte extérieure finale",
+                "Vérifier chaque boîte extérieure séparément"
+              ],
+              [
+                "Contenu des colis",
+                "Tous les articles doivent convenir au service choisi",
+                "Chaque groupe exige un service admissible"
+              ],
+              [
+                "Protection requise",
+                "Vérifier les contacts entre articles différents",
+                "Compter les matériaux d’emballage répétés"
+              ],
+              [
+                "Délais de préparation",
+                "Peut attendre le dernier article sélectionné",
+                "Les marchandises prêtes peuvent être soumises séparément"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "Choisissez l’emballage pour l’article, puis vérifiez son coût",
+          "paragraphs": [
+            "Demandez quel problème chaque choix d’emballage doit résoudre. Un renfort peut limiter l’écrasement ; une séparation intérieure peut réduire les contacts ; une boîte de vente adaptée peut préserver la forme ou réunir de petits accessoires. Choisissez une prestation disponible pour une raison concrète plutôt que d’ajouter toutes les options au nom rassurant.",
+            "Retirer une boîte peut modifier poids et volume, mais aussi supprimer une protection ou un emballage nécessaire à un retour en attente. Décidez d’abord du sort de l’article et précisez ce qui peut être retiré. « Retirer le carton d’expédition extérieur mais conserver la boîte produit et les accessoires » est plus clair qu’une instruction générale de jeter tous les emballages, si le service peut respecter cette demande.",
+            "Pour vêtements et autres biens compressibles, confirmez que la méthode proposée convient au matériau et à la forme. Ne supposez pas que la compression est sans risque pour chaque article. Pour des biens rigides ou fragiles, réduire excessivement la boîte peut laisser une protection insuffisante. Demandez le périmètre réel du service, puis évaluez ensemble coût supplémentaire et dimensions emballées."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "Revérifiez les dimensions après les choix d’emballage",
+          "paragraphs": [
+            "La somme des poids des articles n’est pas forcément le poids final du colis. Boîtes, calage et renforts contribuent au paquet terminé, tandis que le retrait autorisé d’emballages peut l’alléger. Les dimensions dépendent aussi de l’agencement du contenu. Considérez une somme approximative comme une donnée de planification, pas comme une facture de transport confirmée.",
+            "Une simulation d’emballage peut aider lorsqu’une décision dépend des dimensions ou d’une limite de ligne. Consultez le tarif actuel et les informations qui seront fournies avant de la demander. Notez les hypothèses d’emballage à évaluer. De meilleures mesures ont de la valeur lorsqu’elles résolvent un véritable choix ; commander un service sans question à résoudre ajoute un coût sans améliorer le plan.",
+            "Lorsque les mesures sont disponibles, refaites la comparaison selon la facturation de la ligne choisie. Vérifiez poids réel contre volumétrique, diviseur s’il y a lieu, arrondis et limites de taille. Quelques centimètres de moins peuvent ne rien changer sur une ligne et compter sur une autre. Utilisez le devis recalculé au lieu de supposer que chaque réduction devient directement une économie."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Vérifiez le colis avant de payer le transport",
+          "paragraphs": [
+            "Dans Packing Center, sélectionnez les articles admissibles prévus et contrôlez leurs quantités. Confirmez les coordonnées du destinataire, les services disponibles et la ligne choisie pendant la soumission. Les libellés peuvent changer : examinez le récapitulatif complet plutôt que suivre une suite de boutons mémorisée. Assurez-vous qu’un article réservé au traitement après-vente n’a pas été inclus par erreur.",
+            "Gardez des instructions courtes et précises. Identifiez le produit ou la commande concernée et ce qui doit être conservé, retiré ou protégé. Si une instruction dépend d’une prestation payante, confirmez disponibilité et tarif au lieu de supposer qu’une note libre l’achète. Résolvez les demandes contradictoires avant l’emballage, comme jeter une boîte tout en demandant de la conserver intacte.",
+            "Enregistrez le récapitulatif final, les services choisis et le montant annoncé. Si un montant révisé apparaît, comparez poids, dimensions et options à votre estimation précédente. Demandez l’origine d’un écart important avant de confirmer une étape incomprise. Des dossiers clairs permettent de distinguer une hypothèse modifiée d’une question de facturation."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Conservez les preuves et améliorez la prochaine comparaison",
+          "paragraphs": [
+            "Après soumission, suivez le colis international plutôt que les envois individuels des vendeurs. Gardez l’inventaire des commandes incluses avec la référence du colis. En cas de séparation, tenez des fiches distinctes pour ne pas confondre l’évolution d’un paquet avec celle de tous. Associez une notification de livraison au bon contenu.",
+            "Examinez la protection facultative à travers sa véritable police. Prestations d’emballage et assurance répondent à des problèmes différents et ne constituent pas des promesses inconditionnelles. Vérifiez garanties actuelles, exclusions et exigences de réclamation avant de compter sur un service. Conservez les preuves pertinentes et réagissez rapidement si le colis ou son contenu diffèrent du dossier confirmé.",
+            "Pour votre prochaine commande, gardez une comparaison privée du poids prévu et final, des dimensions, des choix d’emballage et du coût d’envoi. Notez quelle hypothèse a changé et pourquoi. Sur plusieurs colis comparables, cela améliore le budget sans créer un tarif universel. Un autre assortiment, une autre destination ou ligne impose une nouvelle vérification d’admissibilité et de coût. Une décision de regroupement utile se termine par une option nommée et une raison : contenu adapté, protection acceptable, ligne admissible et devis complet abordable. Si un point reste incertain, gardez la comparaison ouverte jusqu’à vérification."
+          ]
+        }
+      ],
+      "checklist": [
+        "Examinez le QC et résolvez l’après-vente avant de regrouper les marchandises.",
+        "Vérifiez la compatibilité des contenus et chaque compte à rebours de stockage.",
+        "Comparez tous les coûts pour les mêmes marchandises réunies ou séparées.",
+        "Choisissez l’emballage pour des besoins de protection précis.",
+        "Utilisez les dimensions finales et les règles de facturation de la ligne choisie.",
+        "Confirmez inventaire, adresse, services et devis avant paiement."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo : regrouper plusieurs commandes",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo : simulation d’emballage avant expédition",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo : options d’emballage et de protection",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo : restrictions d’expédition",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ]
     }
   ]

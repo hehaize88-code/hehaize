@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Articole",
     "articleTitle": "Ghiduri de cumpărături Sugargoo",
-    "articleIntro": "Zece ghiduri practice pentru a alege un produs, a verifica detaliile și a planifica drumul de la vânzător până la livrare.",
+    "articleIntro": "Ghiduri practice despre linkuri de produse, fotografii QC, etapele comenzii și deciziile de expediere, cu surse oficiale și pași următori clari.",
     "faqTitle": "Întrebări frecvente despre Sugargoo",
     "faqIntro": "Răspunsuri clare pentru fiecare etapă a comenzii, cu surse oficiale pentru regulile platformei și limite prezentate sincer pentru acest catalog independent.",
     "readArticle": "Citește ghidul",
@@ -33,7 +33,12 @@
     "categoryShipping": "Expediere și depozitare",
     "categoryAccount": "Plăți și servicii postvânzare",
     "author": "Echipa editorială SugargooTab",
-    "siteEvidence": "Despre acest catalog independent"
+    "siteEvidence": "Despre acest catalog independent",
+    "seoHomeTitle": "Sugargoo Spreadsheet: linkuri, fotografii și ghiduri de cumpărare",
+    "catalogCtaTitle": "Pune lista de verificare în practică",
+    "catalogCtaBody": "Compară linkurile produselor din catalog, apoi verifică anunțul exact și detaliile propriei comenzi înainte de cumpărare sau expediere.",
+    "catalogCtaButton": "Răsfoiește linkurile produselor",
+    "categoryCtaButton": "Explorează categoriile de produse"
   },
   "groups": {
     "basics": "Primii pași",
@@ -415,8 +420,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Ghid Sugargoo spreadsheet: transformă linkurile într-o selecție utilă",
-      "description": "Folosește un Sugargoo spreadsheet pentru a compara anunțurile exacte, a verifica variantele și a planifica întreaga comandă înainte de cumpărare.",
+      "title": "Ghid Sugargoo Spreadsheet: găsește și verifică linkuri",
+      "description": "Găsește produse într-un Sugargoo spreadsheet, verifică anunțurile și variantele actuale și deosebește imaginile de referință de fotografiile QC ale comenzii tale.",
       "keyword": "sugargoo spreadsheet",
       "category": "getting-started",
       "intro": [
@@ -424,6 +429,38 @@
         "Acest catalog independent preia informațiile despre produse și imaginile de referință de la cnbuycha. Comanda și plata au loc pe Sugargoo. Metoda următoare leagă aceste două etape fără a prezenta o fișă drept recomandare personală, garanție de stoc sau dovadă a inspecției în depozit. Funcționează și dacă îți păstrezi selecția într-o aplicație simplă de notițe."
       ],
       "sections": [
+        {
+          "id": "live-listing-check",
+          "title": "Cum verifici un anunț actual înainte de cumpărare",
+          "paragraphs": [
+            "Deschide produsul din catalog, apoi urmează linkul către anunțul original. Compară ID-ul produsului de pe marketplace, vânzătorul și varianta aleasă cu articolul afișat în Sugargoo. Numărul intern al paginii din catalog este un identificator separat. Verifică din nou prețul actual, opțiunile și cantitatea chiar înainte de plată; un card salvat nu confirmă stocul actual.",
+            "Dacă anunțul original lipsește, produsul nu se încarcă sau varianta diferă, oprește-te în acel punct. Revino la spreadsheet și compară alt candidat. Notează de ce primul nu a trecut verificarea, ca să nu repeți ulterior același demers. Imaginile de referință rămân materiale pentru descoperirea produselor, chiar când seamănă cu fotografii din depozit."
+          ],
+          "table": {
+            "headers": [
+              "Verificare",
+              "Dovada de folosit"
+            ],
+            "rows": [
+              [
+                "Identitatea produsului",
+                "URL-ul original de pe marketplace și ID-ul produsului"
+              ],
+              [
+                "Disponibilitatea actuală",
+                "Anunțul actual al vânzătorului și opțiunea selectată"
+              ],
+              [
+                "Prețul",
+                "Varianta exactă și suma de la plată"
+              ],
+              [
+                "Starea",
+                "Fotografiile comenzii tale după sosirea în depozit"
+              ]
+            ]
+          }
+        },
         {
           "id": "define-the-purchase",
           "title": "Începe cu rolul pe care trebuie să îl îndeplinească produsul",
@@ -506,7 +543,9 @@
       "related": [
         "how-to-buy-on-sugargoo",
         "sugargoo-qc-photos"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -600,15 +639,17 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-shipping-calculator"
-      ]
+        "sugargoo-order-status",
+        "sugargoo-spreadsheet-guide"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Fotografii QC Sugargoo: ce verifici înainte de expediere",
-      "description": "Examinează sistematic fotografiile din depozit, cere măsurători utile și înțelege ce nu poate demonstra un control vizual.",
+      "title": "Fotografii QC Sugargoo: verificări înainte de expediere",
+      "description": "Folosește o listă practică pentru fotografiile QC Sugargoo ale pantofilor, hainelor și genților. Verifică etichete, măsurători, cusături și detalii lipsă înainte de expediere.",
       "keyword": "fotografii qc sugargoo",
       "category": "quality",
       "intro": [
@@ -616,6 +657,43 @@
         "Sugargoo descrie furnizarea obișnuită a cinci fotografii QC standard, aria inspecției depinzând de produs și tipul comenzii. Numărul imaginilor nu garantează ce se poate verifica. Imaginile de referință cnbuycha de pe acest site sunt materiale de catalog, nu QC verificat pentru comanda ta Sugargoo; consultă propriul dosar de depozit înainte de transportul internațional."
       ],
       "sections": [
+        {
+          "id": "product-qc-checklist",
+          "title": "Verificări QC pentru pantofi, haine și genți",
+          "paragraphs": [
+            "Începe prin a confirma comanda, culoarea, mărimea și cantitatea. Examinează apoi detaliile care ar putea schimba decizia de a păstra articolul. Lista următoare ajută la analizarea fotografiilor, fără să garanteze că QC obișnuit include fiecare unghi sau măsurătoare. Cere dovada specifică lipsă și verifică eventualul tarif înainte să continui.",
+            "De exemplu, o geantă fotografiată numai din față nu dovedește starea prinderii curelei sau a interiorului. Cere unghiul relevant dacă acel detaliu contează. Dacă ai nevoie de o măsurătoare, precizează capetele măsurate și cere o ruletă vizibilă. Fotografiile nu pot demonstra fiecare proprietate funcțională și nu dovedesc autenticitatea."
+          ],
+          "table": {
+            "headers": [
+              "Produs",
+              "Verifică în fotografiile comenzii",
+              "Dacă nu este clar, cere"
+            ],
+            "rows": [
+              [
+                "Pantofi",
+                "Perechea, etichetele de mărime, tălpile și cusăturile vizibile",
+                "Ambele etichete și unghiul relevant al tălpii sau cusăturii"
+              ],
+              [
+                "Haine",
+                "Eticheta de mărime, aspectul materialului și cusăturile",
+                "O măsurătoare întinsă cu început și sfârșit clare"
+              ],
+              [
+                "Genți",
+                "Curele, închideri, căptușeală și accesorii",
+                "Prim-planuri ale interiorului și punctelor de prindere"
+              ],
+              [
+                "Orice articol",
+                "Varianta corectă, cantitatea și deteriorările vizibile",
+                "O imagine clară a diferenței specifice"
+              ]
+            ]
+          }
+        },
         {
           "id": "match-the-order",
           "title": "Stabilește cărui articol îi aparțin fotografiile",
@@ -698,13 +776,15 @@
       "related": [
         "sugargoo-returns-refunds",
         "sugargoo-rehearsal-shipping"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Calculatorul de transport Sugargoo: un buget realist pentru colet",
-      "description": "Estimează transportul cu destinația, categoria, greutatea și dimensiunile corecte, apoi compară costurile complete ale rutelor.",
+      "title": "Calculator de transport Sugargoo: greutate, dimensiuni și cost",
+      "description": "Folosește calculatorul Sugargoo cu greutăți și dimensiuni realiste. Compară rutele eligibile și înțelege ce rămâne incert într-o estimare.",
       "keyword": "calculator transport sugargoo",
       "category": "shipping",
       "intro": [
@@ -712,6 +792,14 @@
         "Instrucțiunile oficiale ale calculatorului Sugargoo folosesc destinația, categoria articolului, greutatea și dimensiunile pentru compararea opțiunilor. Tratează rezultatul drept scenariu datat, apoi actualizează-l când afli mai multe despre coletul ambalat. Ghidul arată cum construiești aceste scenarii și identifici incertitudinea înainte să devină o problemă la plată."
       ],
       "sections": [
+        {
+          "id": "quote-comparison",
+          "title": "Fă două estimări înainte să cumperi produsele",
+          "paragraphs": [
+            "Construiește un scenariu inițial cu cele mai bune informații disponibile despre greutate și dimensiuni, apoi unul prudent care ține cont de ambalarea incertă. Păstrează aceleași destinație, conținut și setări. Dacă doar ipotezele cele mai optimiste fac comanda accesibilă, clarifică incertitudinea înainte să plătești produsele.",
+            "Notează data ofertei, ruta, unitățile, dimensiunile estimate și serviciile suplimentare alese. Înlocuiește presupunerile cu măsurătorile coletului când devin disponibile. Pentru SUA, consultă ghidul separat despre procesul de comparare; pentru mai multe comenzi depozitate, compară costurile complete ale expedierii împreună și separat folosind ghidul de consolidare."
+          ]
+        },
         {
           "id": "collect-the-inputs",
           "title": "Adună datele înainte să compari prețurile",
@@ -792,15 +880,17 @@
         }
       ],
       "related": [
-        "sugargoo-rehearsal-shipping",
-        "sugargoo-fees-payment"
-      ]
+        "sugargoo-shipping-to-usa",
+        "sugargoo-parcel-consolidation"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Simularea expedierii Sugargoo: când ajută măsurătorile mai precise",
-      "description": "Decide dacă simularea este utilă, pregătește instrucțiuni clare de ambalare și folosește rezultatul pentru compararea rutelor eligibile.",
+      "title": "Simulare de expediere Sugargoo: greutate, dimensiuni și utilitate",
+      "description": "Află când este utilă simularea de expediere Sugargoo, precizează ambalarea și compară coletul măsurat cu estimarea inițială de transport.",
       "keyword": "sugargoo rehearsal shipping",
       "category": "shipping",
       "intro": [
@@ -808,6 +898,14 @@
         "Sugargoo descrie serviciul ca o simulare a pachetului înainte de expediere, care oferă informații mai exacte despre greutate și volum. Tratează-l ca pe o decizie de măsurare și ambalare, verificând costul și condițiile actuale în cont. Valoarea practică vine din faptul că știi ce vei face cu rezultatul."
       ],
       "sections": [
+        {
+          "id": "rehearsal-decision",
+          "title": "Când merită luată în calcul o simulare de ambalare?",
+          "paragraphs": [
+            "Ia în calcul o simulare când dimensiunile ambalate necunoscute pot schimba ruta sau bugetul: un articol voluminos și ușor, mai multe cutii comerciale sau un colet aproape de limita unei rute. Notează incertitudinea pe care vrei să o clarifici și verifică tariful actual. Dacă decizia ar fi aceeași pentru estimări rezonabile diferite, măsurarea suplimentară poate avea o valoare mai mică.",
+            "Compară rezultatul cu datele inițiale: greutate reală, dimensiuni exterioare, ambalaje păstrate și servicii selectate. Recalculează după regula actuală de tarifare a rutei. O măsurătoare mai mică nu garantează o factură finală redusă, deoarece taxele minime, treptele de greutate și alte opțiuni pot conta în continuare."
+          ]
+        },
         {
           "id": "identify-the-decision",
           "title": "Definește incertitudinea pe care vrei să o rezolvi",
@@ -888,9 +986,11 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-calculator",
-        "sugargoo-warehouse-storage"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-shipping-calculator"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
     },
     {
       "id": "sugargoo-tracking",
@@ -1014,7 +1114,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-warehouse-storage"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-fees-payment",
@@ -1142,7 +1244,9 @@
       "related": [
         "sugargoo-shipping-calculator",
         "sugargoo-returns-refunds"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-warehouse-storage",
@@ -1240,9 +1344,11 @@
         }
       ],
       "related": [
-        "sugargoo-qc-photos",
-        "sugargoo-rehearsal-shipping"
-      ]
+        "sugargoo-parcel-consolidation",
+        "sugargoo-order-status"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "sugargoo-returns-refunds",
@@ -1342,13 +1448,15 @@
       "related": [
         "sugargoo-qc-photos",
         "sugargoo-fees-payment"
-      ]
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-18"
     },
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Linkuri Weidian și Taobao pe Sugargoo: verifică produsul exact",
-      "description": "Copiază URL-ul corect, păstrează identitatea produsului și verifică variantele; folosește comanda manuală acceptată când încărcarea automată eșuează.",
+      "title": "Linkuri Weidian și Taobao în Sugargoo: verificare și erori",
+      "description": "Verifică linkurile Weidian și Taobao înainte să cumperi pe Sugargoo. Rezolvă anunțurile lipsă, variantele greșite și erorile de citire fără presupuneri.",
       "keyword": "weidian către sugargoo",
       "category": "getting-started",
       "intro": [
@@ -1356,6 +1464,14 @@
         "Ghidul explică ce copiezi, cum recunoști un anunț nepotrivit și ce faci când încărcarea automată nu reușește. Distingem și ID-ul marketplace-ului de identificatorul paginii interne a catalogului, astfel încât un buton comod de cumpărare să nu devină un motiv să sari peste verificările finale."
       ],
       "sections": [
+        {
+          "id": "link-error-check",
+          "title": "Ce verifici când un link de produs nu se încarcă",
+          "paragraphs": [
+            "Deschide întâi pagina originală și confirmă că identifică încă articolul dorit. Pagina unui magazin, un text de distribuire prescurtat sau un anunț eliminat nu echivalează cu URL-ul complet al produsului. Compară ID-ul de pe marketplace înainte să încerci iar. Elimină textul de distribuire fără legătură, fără să schimbi identitatea articolului.",
+            "Dacă articolul original există, dar citirea automată eșuează, verifică opțiunile oficiale de comandă manuală și condițiile de acceptare. Păstrează împreună vânzătorul, varianta exactă, cantitatea, URL-ul și prețul. Un formular manual nu anulează restricțiile și nu garantează disponibilitatea. Dacă anunțul actual nu poate fi verificat, alege alt candidat în loc să presupui după fotografie."
+          ]
+        },
         {
           "id": "source-identity",
           "title": "1. Pornește din anunțul articolului, nu din rezultatul căutării",
@@ -1442,6 +1558,409 @@
       "related": [
         "sugargoo-spreadsheet-guide",
         "how-to-buy-on-sugargoo"
+      ],
+      "published": "2026-10-18",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "sugargoo-shipping-to-usa",
+      "slug": "sugargoo-shipping-to-usa",
+      "title": "Transport Sugargoo către SUA: costuri, greutate și livrare",
+      "description": "Planifică transportul Sugargoo către SUA: compară greutatea, dimensiunile, condițiile rutelor și etapele livrării înainte de plata transportului internațional.",
+      "keyword": "transport sugargoo către SUA",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Expedierea Sugargoo către SUA este o decizie separată de cumpărarea produselor. Începe cu adresa de livrare, articolele pe care vrei să le trimiți și o estimare a greutății și dimensiunilor după ambalare. Compară apoi rutele oferite efectiv în cont. Prețul coletului altei persoane este doar un reper: destinația, data, dimensiunile și conținutul pot fi diferite de ale tale.",
+        "Acest ghid oferă o metodă de comparație, nu un preț fix sau o promisiune de livrare. SugargooTab este un catalog independent și nu poate cota, expedia sau urmări coletul în numele Sugargoo. Folosește calculatorul oficial pentru planificare și ecranul final al coletului pentru decizia de plată. Păstrează o evidență a ceea ce include oferta, pentru a înțelege modificările ulterioare."
+      ],
+      "sections": [
+        {
+          "id": "build-a-complete-budget",
+          "title": "Separă costul produselor de bugetul coletului către SUA",
+          "paragraphs": [
+            "Împarte bugetul în două etape. Prima include produsele alese și livrarea internă din China, plus orice costuri afișate la finalizarea sau efectuarea plății. A doua acoperă transportul internațional și serviciile alese pentru colet. Poate fi necesar să consideri și taxele de la destinație. Nu presupune că prețul unui produs din catalog include vreuna dintre etapele livrării.",
+            "Folosește un buget ilustrativ pentru a testa decizia, nu pentru a prezice o ofertă. Dacă limita ta personală este de 150 de dolari și produsele costă deja 110, cei 40 rămași trebuie să acopere tot ce nu ai plătit încă. Dacă estimarea curentă de transport depășește restul, revizuiește comanda înainte să adaugi produse. O sumă mai mică împrumutată dintr-o postare veche nu elimină diferența.",
+            "Păstrează lângă sumă data estimării și valorile introduse. Notează dacă sunt incluse ambalarea și protecția opțională și dacă termenii rutei explică taxele suplimentare la destinație. Marchează drept necunoscut un cost necunoscut. Este mai util decât un total aparent precis construit din ipoteze incomplete."
+          ]
+        },
+        {
+          "id": "use-real-parcel-inputs",
+          "title": "Introdu destinația, conținutul, greutatea și dimensiunile",
+          "paragraphs": [
+            "Folosește destinația reală din SUA și câmpurile regionale cerute de calculator. Nu înlocui adresa doar pentru a obține rute mai atrăgătoare. Descrie corect categoria produsului, inclusiv caracteristicile care pot influența transportul. O rută care acceptă îmbrăcăminte obișnuită nu acceptă automat baterii, lichide sau orice alt articol vândut pe un marketplace.",
+            "Înainte ca produsele să ajungă în depozit, greutatea și dimensiunile sunt presupuneri de planificare. Acordă atenție articolelor voluminoase: o jachetă ușoară într-o cutie mare poate forma un colet diferit de o cămașă ambalată compact. Când articolele tale sunt disponibile, înlocuiește presupunerile cu informațiile depozitului și, unde este util, cu rezultatele simulării de ambalare.",
+            "Notează unitățile lângă numere. Gramele și kilogramele nu sunt valori interschimbabile, iar centimetrii nu trebuie introduși într-un câmp pentru inci. O unitate greșită poate face inutilă o ofertă aparent competitivă. Dacă estimarea pare neașteptat de ieftină sau scumpă, verifică întâi adresa, unitățile, cantitățile și categoria înainte să tragi concluzii despre rută."
+          ]
+        },
+        {
+          "id": "actual-and-volumetric-weight",
+          "title": "Înțelege greutatea folosită la tarifare",
+          "paragraphs": [
+            "Greutatea reală măsoară masa; greutatea volumetrică transformă dimensiunile coletului într-o valoare de tarifare după regulile rutei alese. Divizorul, rotunjirea și taxa minimă pot diferi. Citește descrierea rutei în loc să aplici aceeași formulă tuturor opțiunilor. Valoarea mai mare poate conta pe o rută volumetrică chiar dacă produsele sunt ușoare.",
+            "Doar ca exemplu, o cutie de 40 × 30 × 25 cm are un volum de 30.000 de centimetri cubi. Un divizor ipotetic de 6.000 ar produce o greutate volumetrică de 5 kg. Aceasta nu înseamnă că ruta ta folosește 6.000. Dacă greutatea reală ar fi 3 kg, o rută care taxează valoarea mai mare ar putea evalua cutia la 5 kg înainte de rotunjire.",
+            "Întreabă dacă schimbarea ambalării ar modifica suficient dimensiunile pentru a schimba oferta. Eliminarea unei cutii comerciale inutile poate ajuta uneori, în timp ce produsele fragile pot necesita protecția ei. Verifică din nou măsurătorile finale după alegerile convenite; nu presupune că fiecare cutie eliminată economisește bani sau că orice întărire justifică greutatea adăugată."
+          ]
+        },
+        {
+          "id": "compare-eligible-routes",
+          "title": "Compară rutele cu aceleași ipoteze pentru colet",
+          "paragraphs": [
+            "Construiește o comparație mică folosind doar rute care acceptă coletul. Cere fiecare ofertă pentru aceeași destinație, același conținut, greutate și dimensiuni. Altfel, diferența de preț poate proveni din date diferite, nu dintr-un serviciu mai bun. Citește limitele de dimensiune și greutate înainte să investești timp într-o opțiune imposibilă pentru coletul final.",
+            "Verifică ce măsoară estimarea de livrare afișată și ce etape de urmărire sunt vizibile. Expedierea vânzătorului către depozitul din China este separată de călătoria internațională, iar pregătirea înaintea predării transportatorului poate adăuga o etapă. Tratează intervalul estimat ca informație de planificare. Evită cumpărăturile pentru un termen inflexibil dacă nu poți accepta consecințele întârzierii.",
+            "Citește explicația actuală a rutei despre costuri incluse, suplimente, restricții și asigurarea opțională. Păstrează formularea împreună cu oferta. Dacă un punct important este neclar, întreabă suportul oficial înainte de plată și salvează răspunsul. Numele rutei sau captura altui cumpărător nu înlocuiește condițiile aplicabile coletului tău."
+          ],
+          "table": {
+            "headers": [
+              "Compară",
+              "Notează înainte de plată"
+            ],
+            "rows": [
+              [
+                "Eligibilitate",
+                "Conținut permis, destinații acoperite și limite ale coletului"
+              ],
+              [
+                "Greutate tarifabilă",
+                "Regulă reală sau volumetrică, divizor și rotunjire"
+              ],
+              [
+                "Total afișat",
+                "Transport, extraopțiuni alese și excluderi explicite"
+              ],
+              [
+                "Informații despre livrare",
+                "Interval estimat, predare și acoperire a urmăririi"
+              ],
+              [
+                "Protecție",
+                "Acoperire actuală, excluderi și cerințe de despăgubire"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "customs-and-order-details",
+          "title": "Păstrează consecvente datele produselor și destinatarului",
+          "paragraphs": [
+            "Folosește descrieri corecte ale produselor și informațiile efectiv cerute pentru expediere. Păstrează dovezile comenzii și plății pentru eventuale clarificări. Nu copia o declarație de la un colet fără legătură și nu alege o descriere înșelătoare pentru a forța apariția unei rute. Conținutul expedierii tale determină verificările relevante.",
+            "Regulile de import din SUA și aranjamentele transportatorilor se pot schimba. Acest ghid nu oferă intenționat un prag fiscal permanent și nu promite o rută fără taxe suplimentare. Verifică instrucțiunile actuale pentru destinație și condițiile serviciului când pregătești expedierea. Dacă informațiile se contrazic, cere clarificări înainte de plată, fără a trata o frază promoțională drept explicație completă.",
+            "Verifică numele, adresa și datele de contact ale destinatarului în contul oficial. Este mai ușor să corectezi o eroare înainte de expediere decât să rezolvi ulterior o excepție de livrare. Nu include adrese private și identificatori de comandă în recenzii publice sau fișe de cercetare partajate. O comparație publică utilă poate descrie ruta și tipul aproximativ de colet fără a expune destinatarul."
+          ]
+        },
+        {
+          "id": "follow-the-shipment",
+          "title": "Urmărește fiecare etapă și reacționează la excepții",
+          "paragraphs": [
+            "Deosebește urmărirea internă a vânzătorului de referința coletului internațional. Sosirea în depozit nu înseamnă că pachetul a părăsit China, iar un număr de urmărire creat nu dovedește singur preluarea de către transportator. Urmărește istoricul logistic al coletului depus și notează cel mai recent eveniment datat.",
+            "Dacă urmărirea se oprește, caută o predare, o solicitare de informații sau o excepție înainte să presupui că s-a pierdut coletul. Salvează ultima actualizare și întreabă suportul concret despre pasul următor așteptat. Furnizează referința prin canalul oficial privat. Repetarea aceleiași căutări publice nu rezolvă documentele lipsă sau problema adresei destinatarului.",
+            "La livrare, verifică prompt coletul și conținutul și păstrează ambalajele și dovezile relevante dacă ceva nu este în regulă. Orice reclamație depinde de serviciul aplicabil și cerințele lui; cumpărarea transportului nu este o garanție generală. Notează etapele și costurile reale, ca următoarea estimare să folosească dovezi comparabile, nu memoria. Înainte de plată, revizuiește încă o dată comparația și elimină rutele cu eligibilitate neclară. Un buget utilizabil necesită un serviciu disponibil, date corecte și condiții inteligibile, nu doar cea mai mică cifră afișată."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirmă destinația reală din SUA și conținutul permis.",
+        "Separă bugetul produselor de transportul internațional și extraopțiuni.",
+        "Folosește unități consecvente și notează dimensiunile după ambalare.",
+        "Compară rute eligibile folosind date identice.",
+        "Verifică termenii actuali ai rutei și informațiile corecte ale expedierii.",
+        "Salvează oferta finală și urmărește istoricul coletului respectiv."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: estimarea costurilor internaționale",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simularea coletului înainte de expediere",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: restricții de expediere",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        },
+        {
+          "title": "Sugargoo: probleme de urmărire",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-issues/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
+      ]
+    },
+    {
+      "id": "sugargoo-order-status",
+      "slug": "sugargoo-order-status",
+      "title": "Starea comenzii Sugargoo: de la plată la depozit",
+      "description": "Înțelege etapele comenzii Sugargoo, expedierea vânzătorului, sosirea în depozit și urmărirea coletului. Află ce verifici când comanda pare blocată.",
+      "keyword": "starea comenzii sugargoo",
+      "category": "account",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Starea unei comenzi Sugargoo descrie o etapă a cumpărării, nu întreaga călătorie până la ușa ta. Plata, cumpărarea prin agent, expedierea vânzătorului, procesarea în depozit și transportul internațional sunt pași separați. Identifică întâi dacă privești o comandă de produs sau un colet depus; acestea răspund unor întrebări diferite și pot avea referințe de urmărire diferite.",
+        "Formulările din site sau aplicație pot varia în funcție de limbă și schimbările interfeței. Descrierile de mai jos explică ce trebuie investigat, fără să pretindă că reproduc toate etichetele actuale ale butoanelor. Deschide detaliile propriei comenzi pentru mesaje, acțiuni și date. Aceste informații sunt mai utile decât compararea unei etichete scurte cu comanda unui necunoscut."
+      ],
+      "sections": [
+        {
+          "id": "identify-the-record",
+          "title": "Începe cu înregistrarea corectă a articolului sau coletului",
+          "paragraphs": [
+            "Păstrează împreună linkul original, varianta selectată și referința comenzii Sugargoo. Dacă ai cumpărat articole similare, verifică vânzătorul, culoarea, mărimea și cantitatea înainte să contactezi suportul. O actualizare pentru un articol nu dovedește progresul altuia, chiar dacă ambele au fost plătite în aceeași vizită.",
+            "Ține o înregistrare separată pentru coletul internațional creat din produse depozitate. Un colet poate conține mai multe comenzi, iar o problemă de comandă poate necesita rezolvare înainte de depunerea coletului. Notează ce referințe de articole aparțin fiecărui colet. Această distincție simplă previne confundarea numărului intern al vânzătorului cu expedierea către țara ta.",
+            "Când o stare pare neașteptată, citește mesajele și cea mai recentă dată înainte să acționezi. O solicitare pentru opțiuni lipsă sau o ajustare a plății poate explica de ce achiziția nu a avansat. Păstrează formularea relevantă în notițe, dar trimite referințe private și capturi numai prin canalul oficial de suport."
+          ]
+        },
+        {
+          "id": "payment-and-purchasing",
+          "title": "Plata și cumpărarea sunt etape diferite",
+          "paragraphs": [
+            "La etapa de plată în așteptare, verifică dacă ai finalizat efectiv tranzacția. Un articol în coș sau o comandă neplătită nu dovedește că vânzătorul a primit o cerere de cumpărare. Dacă ai renunțat, folosește acțiunea de anulare disponibilă în acea etapă, fără să presupui că ieșirea din ecran elimină comanda.",
+            "După plată, confirmă tranzacția în cont și verifică mesajele despre cumpărare. Plata finalizată nu dovedește că vânzătorul a expediat articolul. Achiziția poate depinde încă de stoc, varianta aleasă, transportul intern sau informații necesare pentru plasarea corectă. Răspunde solicitării specifice în loc să plătești repetat o comandă duplicată.",
+            "Dacă banca arată o debitare, dar comanda pare neplătită, compară referințele și starea cu suportul oficial înainte să încerci din nou. Un extras bancar și o actualizare a comenzii pot descrie părți diferite ale procesului. Păstrează dovezi fără să publici date de card, autentificare sau coduri de verificare. Întreabă ce tranzacție este legată de comandă și ce acțiune este realmente necesară."
+          ]
+        },
+        {
+          "id": "seller-dispatch",
+          "title": "Cumpărat și expediat de vânzător nu înseamnă pregătit în depozit",
+          "paragraphs": [
+            "În etapa de produs cumpărat, verifică dacă vânzătorul a furnizat informații despre expedierea internă. Confirmarea cumpărării privește comanda produselor, nu confirmă transportul internațional. Dacă ai nevoie de o actualizare, cere-o în conversația comenzii, astfel încât solicitarea să rămână legată de articolul și opțiunile corecte.",
+            "Când vânzătorul expediază, urmărește transportul intern asociat comenzii. Livrarea la depozit este diferită de verificarea și depozitarea mărfii. O scanare de livrare poate preceda înregistrarea completă în cont. Nu considera doar acest decalaj drept dovadă că lipsesc bunuri; verifică mesajele și informațiile de procesare.",
+            "Dacă vânzătorul trimite doar o parte sau cantitatea pare greșită, enumeră explicit unitățile lipsă. Include cantitatea inițială și dovezile actuale. Un mesaj precum „lipsește una dintre cele două cămăși din această comandă” este mai ușor de rezolvat decât „coletul meu este greșit”. Lasă suportul să determine dacă problema ține de expediere, livrare împărțită sau procesarea în depozit."
+          ]
+        },
+        {
+          "id": "warehouse-review",
+          "title": "Sosirea în depozit este punctul tău de inspecție",
+          "paragraphs": [
+            "Când sunt disponibile fotografiile și detaliile propriei comenzi, compară-le cu varianta cumpărată. Examinează etichetele, culoarea, cantitatea, starea vizibilă și măsurătorile cerute. Imaginile de referință din catalog nu înlocuiesc această verificare: au servit la descoperirea produsului și nu stabilesc starea exemplarului primit pentru tine.",
+            "Dacă o imagine este neclară, descrie exact ce trebuie să se vadă. Cere, de exemplu, eticheta de mărime sau o măsurătoare cu ruleta pornind de la cusătura corectă. Verifică în cont serviciile suplimentare și disponibilitatea lor. Inspecția vizuală obișnuită nu dovedește autenticitatea și nu este un test funcțional pentru fiecare produs.",
+            "Rezolvă o posibilă returnare sau problemă cu vânzătorul înainte să incluzi articolul în coletul internațional. Verifică rapid eligibilitatea și termenele aplicabile, fără să presupui că perioada de depozitare este și fereastra de retur. Păstrează ambalajele și dovezile necesare. Aprobarea, transportul returului și rambursarea depind de comandă și condițiile postvânzare actuale."
+          ],
+          "table": {
+            "headers": [
+              "Etapa investigată",
+              "Verificare utilă",
+              "Acțiunea următoare"
+            ],
+            "rows": [
+              [
+                "În așteptarea plății",
+                "Referințele comenzii și plății",
+                "Finalizează sau anulează comanda dorită"
+              ],
+              [
+                "În curs de cumpărare",
+                "Varianta, stocul și mesajele comenzii",
+                "Răspunde cererii specifice de informații"
+              ],
+              [
+                "Expedierea vânzătorului",
+                "Urmărirea internă și cantitatea",
+                "Verifică progresul prin comandă"
+              ],
+              [
+                "Procesare în depozit",
+                "Înregistrarea sosirii și fotografiile încărcate",
+                "Examinează articolul primit și rezolvă problemele"
+              ],
+              [
+                "Articol depozitat",
+                "Timpul rămas și decizia QC",
+                "Planifică un colet eligibil înainte de termen"
+              ],
+              [
+                "Colet depus",
+                "Referința coletului și istoricul logistic",
+                "Urmărește actualizările internaționale"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stored-versus-shipped",
+          "title": "Produsele depozitate necesită încă o decizie de expediere",
+          "paragraphs": [
+            "Un articol depozitat nu este automat în drum spre adresa ta. Verifică ce bunuri sunt pregătite, dacă pot călători împreună și cât timp de depozitare mai are fiecare. Respectă numărătoarea și termenii afișați pentru articolul concret. Nu te baza pe un singur termen copiat dintr-un articol vechi sau de la alt tip de comandă.",
+            "Selectează produsele eligibile, confirmă datele destinatarului și ia în calcul ambalarea atunci când rezolvă o problemă specifică. Compară rutele disponibile folosind greutatea și dimensiunile rezultate. Plata transportului internațional este separată de plata anterioară a bunurilor, iar estimarea se poate schimba când se modifică ipotezele de ambalare.",
+            "După depunere, folosește înregistrarea coletului pentru expediere și urmărire internațională. Păstrează înregistrările articolelor ca dovadă a conținutului așteptat. Dacă pachetul nu a progresat, întreabă despre ultima sa etapă, în loc să redeschizi o întrebare generală despre expedierea vânzătorului. Astfel, solicitarea se adresează echipei și procesului care pot răspunde."
+          ]
+        },
+        {
+          "id": "resolve-a-stuck-status",
+          "title": "Transformă întrebarea despre un status blocat într-o cerere clară",
+          "paragraphs": [
+            "Nu există o singură perioadă de așteptare după care orice comandă devine întârziată. Stocul vânzătorului, transportul intern, munca depozitului și predarea internațională implică procese diferite. Citește estimarea sau răspunsul cerut în cazul tău, apoi compară ultimul eveniment datat cu acea informație. O etichetă neschimbată fără context nu identifică suficient cauza.",
+            "Scrie o solicitare concisă cu referința comenzii sau coletului, ultimul eveniment datat, diferența specifică și acțiunea de clarificat. De exemplu: „Transportatorul intern indică livrarea, dar articolul nu are încă fotografii din depozit. Puteți confirma recepția și următorul pas de procesare?” Aceasta este o întrebare ce poate fi verificată în evidențe.",
+            "Dacă vrei anularea, spune înainte să avanseze procesarea. Acțiunile disponibile se schimbă după cumpărare, expedierea vânzătorului și transportul internațional. Nu presupune că solicitarea garantează aprobare sau rambursare imediată către metoda inițială. Salvează răspunsul oficial, pasul convenit și urmărirea așteptată, pentru a continua același caz fără să pierzi contextul. Păstrează o notă datată pentru orice răspuns care schimbă pasul următor. La revenirea în cont, aceasta distinge o acțiune nou cerută de o problemă deja rezolvată de suport."
+          ]
+        }
+      ],
+      "checklist": [
+        "Identifică dacă problema privește un articol sau un colet internațional.",
+        "Verifică varianta, cantitatea și referința corespunzătoare.",
+        "Citește mesajele și datele înainte de altă plată.",
+        "Deosebește livrarea internă de procesarea în depozit.",
+        "Verifică propriile dovezi QC și numărătoarea depozitării.",
+        "Adresează suportului o întrebare concretă cu referința privată relevantă."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: fluxul comenzii",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: anularea comenzii",
+          "url": "https://blog.sugargoo.com/how-to-cancel-order-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: depozitarea produselor",
+          "url": "https://blog.sugargoo.com/how-long-does-sugargoo-keep-items-in-the-warehouse/"
+        },
+        {
+          "title": "Sugargoo: urmărirea unei comenzi internaționale",
+          "url": "https://blog.sugargoo.com/how-to-track-your-international-order-in-real-time/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-tracking"
+      ]
+    },
+    {
+      "id": "sugargoo-parcel-consolidation",
+      "slug": "sugargoo-parcel-consolidation",
+      "title": "Consolidarea coletelor Sugargoo: ambalare și costuri",
+      "description": "Află cum combini comenzile Sugargoo, compari coletele comune și separate, alegi ambalarea și verifici oferta finală de transport.",
+      "keyword": "consolidarea coletelor sugargoo",
+      "category": "shipping",
+      "published": "2026-10-21",
+      "updated": "2026-10-21",
+      "intro": [
+        "Consolidarea Sugargoo înseamnă selectarea articolelor eligibile din depozit pentru a fi trimise împreună. Poate simplifica gestionarea și reduce repetarea taxelor inițiale de transport, dar un colet mai mare nu este automat mai ieftin. Dimensiunile ambalate, greutatea tarifabilă, restricțiile produselor și rutele disponibile pentru destinație pot schimba rezultatul.",
+        "Începe cu produsele care au trecut propria verificare, apoi compară o variantă comună cu opțiuni separate rezonabile. Ghidul oferă un proces de decizie privind ambalarea și o listă reutilizabilă de comparație. Nu promite o anumită economie, rută sau taxă. Opțiunile actuale din Packing Center și oferta finală determină ce este disponibil pentru comanda ta."
+      ],
+      "sections": [
+        {
+          "id": "choose-ready-items",
+          "title": "Combină numai articole pregătite de drum",
+          "paragraphs": [
+            "Fă un inventar scurt al produselor de trimis. Include referința comenzii, cantitatea, decizia inspecției, informațiile de greutate și timpul rămas de depozitare. Marchează orice problemă nerezolvată de mărime, stare sau vânzător. Nu depune coletul doar fiindcă majoritatea conținutului este pregătită dacă un articol important mai necesită o decizie.",
+            "Verifică compatibilitatea înainte să grupezi totul. Un produs cu baterie, lichid sau altă caracteristică restricționată poate afecta rutele care acceptă coletul. Faptul că două produse pot fi cumpărate nu dovedește că pot împărți orice rută internațională. Confirmă acceptarea combinației și destinației reale înainte să consideri opțiunea comună fezabilă.",
+            "Folosește termenele de depozitare pentru o decizie explicită privind așteptarea. Dacă aștepți un vânzător, compară costul și riscul așteptării cu expedierea separată a produselor pregătite. Urmărește numărătoarea fiecărui articol și condițiile disponibile de prelungire. Nu justifica lăsarea produselor nesupravegheate printr-un termen universal presupus."
+          ]
+        },
+        {
+          "id": "compare-combined-and-split",
+          "title": "Compară costurile complete ale coletelor comune și separate",
+          "paragraphs": [
+            "Creează două sau trei opțiuni realiste: un colet comun, o împărțire care separă un articol voluminos și, dacă e cazul, una impusă de conținuturi incompatibile. Folosește aceeași destinație și același set total de produse. O opțiune care omite discret un articol nu poate fi comparată corect cu una care expediază tot.",
+            "Pentru fiecare opțiune, notează numărul coletelor, dimensiunile și greutatea estimate după ambalare, ruta eligibilă, costul transportului și extraopțiunile. Adună costul fiecărui colet separat. Compararea prețului comun numai cu jumătatea mai ieftină a expedierii împărțite produce un rezultat greșit. Păstrează vizibile măsurătorile incerte în loc să le ascunzi într-un total aparent exact.",
+            "Folosește un exemplu ipotetic pentru a înțelege decizia. Dacă oferta comună ar fi 70 de dolari, iar cele separate 38 și 42, transportul separat ar totaliza 80 înaintea extraopțiunilor diferite. Exemplul nu prezice prețurile tale și nu dovedește că unirea este preferabilă. O limită de dimensiune, o nevoie de protecție sau o restricție de rută poate face nepotrivită opțiunea comună."
+          ],
+          "table": {
+            "headers": [
+              "Decizie",
+              "Colet comun",
+              "Colete separate"
+            ],
+            "rows": [
+              [
+                "Compararea transportului",
+                "Cere ofertă pentru întregul grup",
+                "Adună oferta pentru fiecare colet"
+              ],
+              [
+                "Dimensiuni",
+                "Verifică ambalajul exterior final",
+                "Verifică separat fiecare cutie exterioară"
+              ],
+              [
+                "Conținut",
+                "Toate articolele trebuie acceptate de serviciu",
+                "Fiecare grup necesită un serviciu eligibil"
+              ],
+              [
+                "Protecție",
+                "Verifică contactul dintre articole diferite",
+                "Include ambalajele repetate"
+              ],
+              [
+                "Calendar",
+                "Poate aștepta ultimul articol selectat",
+                "Produsele pregătite pot fi depuse separat"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "choose-packaging",
+          "title": "Alege ambalarea pentru articol, apoi verifică prețul",
+          "paragraphs": [
+            "Întreabă ce problemă rezolvă fiecare opțiune. Întărirea poate reduce riscul strivirii; separarea internă poate diminua contactul dintre articole; păstrarea unei cutii comerciale potrivite poate menține forma sau accesoriile mici împreună. Alege un serviciu disponibil pentru un motiv concret, nu adăuga toate opțiunile doar fiindcă numele sună liniștitor.",
+            "Eliminarea unei cutii poate schimba greutatea și volumul, dar poate îndepărta protecția sau ambalajul necesar unui retur în așteptare. Decide întâi asupra articolului și precizează ce poate fi scos. „Eliminați cartonul exterior de transport, dar păstrați cutia produsului și accesoriile” este mai clar decât eliminarea generică a tuturor ambalajelor, dacă serviciul poate respecta cererea.",
+            "Pentru haine sau alte bunuri compresibile, confirmă că metoda oferită se potrivește materialului și formei. Nu presupune că o opțiune de comprimare este inofensivă pentru orice articol. La produse rigide sau fragile, reducerea excesivă a cutiei poate lăsa protecție insuficientă. Întreabă ce include efectiv serviciul, apoi evaluează împreună costul adăugat și dimensiunile ambalate."
+          ]
+        },
+        {
+          "id": "measure-the-finished-parcel",
+          "title": "Verifică din nou dimensiunile după alegerea ambalării",
+          "paragraphs": [
+            "Suma greutăților articolelor nu este neapărat greutatea finală a coletului. Cutiile, amortizarea și întăririle contribuie la pachet, în timp ce eliminarea ambalajelor permise îl poate ușura. Dimensiunile depind și de felul în care se așază produsele. Tratează suma aproximativă ca dată de planificare, nu ca factură confirmată de transport.",
+            "O simulare de ambalare poate ajuta când decizia depinde de dimensiuni sau limita rutei. Verifică tariful actual și informațiile oferite înainte să o soliciți. Notează ipotezele de ambalare pe care vrei să le evaluezi. Măsurătorile mai bune au valoare când rezolvă o alegere reală; un serviciu fără o întrebare de clarificat adaugă cost fără să îmbunătățească planul.",
+            "Când măsurătorile sunt disponibile, repetă comparația după regula de tarifare a rutei alese. Verifică greutatea reală față de cea volumetrică, divizorul unde este relevant, rotunjirea și limitele. O reducere mică în centimetri poate să nu conteze pe o rută, dar să conteze pe alta. Folosește oferta recalculată efectiv, fără să presupui că orice reducere înseamnă direct economii."
+          ]
+        },
+        {
+          "id": "submit-with-clear-instructions",
+          "title": "Verifică coletul înainte de plata transportului",
+          "paragraphs": [
+            "În Packing Center, selectează articolele eligibile dorite și verifică numărul lor. Confirmă destinatarul, serviciile disponibile și ruta în procesul de depunere. Formulările interfeței se pot schimba, așa că examinează întregul rezumat în loc să urmezi o succesiune memorată de butoane. Asigură-te că nu ai inclus din greșeală un articol rezervat pentru postvânzare.",
+            "Păstrează instrucțiunile scurte și specifice. Identifică produsul sau comanda vizată și ce trebuie păstrat, eliminat ori protejat. Dacă instrucțiunea depinde de un serviciu plătit, confirmă disponibilitatea și taxa, fără să presupui că o notă liberă cumpără serviciul. Rezolvă contradicțiile înainte de ambalare, precum cererea de a arunca o cutie și simultan de a o păstra intactă.",
+            "Salvează rezumatul final al coletului, serviciile alese și suma cotată. Dacă apare o sumă revizuită, compară greutatea, dimensiunile și opțiunile cu estimarea anterioară. Întreabă cauza unei diferențe importante înainte să confirmi un pas neînțeles. Evidențele clare ajută să deosebești o ipoteză schimbată de o problemă de facturare."
+          ]
+        },
+        {
+          "id": "after-submission",
+          "title": "Păstrează dovezi și îmbunătățește comparația următoare",
+          "paragraphs": [
+            "După depunere, urmărește coletul internațional, nu expedierile individuale ale vânzătorilor. Păstrează inventarul comenzilor incluse împreună cu referința coletului. Dacă produsele au fost împărțite, ține evidențe separate, ca actualizarea unui pachet să nu fie confundată cu progresul tuturor. Asociază notificarea de livrare cu conținutul corect.",
+            "Evaluează protecția opțională pe baza poliței reale. Ambalarea și asigurarea rezolvă probleme diferite și niciuna nu este o promisiune necondiționată. Verifică acoperirea, excluderile și cerințele actuale înainte să te bazezi pe serviciu. Păstrează dovezile relevante și reacționează prompt dacă pachetul ori conținutul diferă de evidența confirmată.",
+            "Pentru următoarea comandă, păstrează privat o comparație între greutatea, dimensiunile, ambalarea și costul planificate și finale. Notează ce ipoteză s-a schimbat și de ce. Mai multe colete comparabile pot îmbunătăți bugetarea, dar nu creează o listă universală de prețuri. Altă combinație de produse, destinație sau rută necesită verificări noi. O decizie utilă de consolidare se încheie cu o opțiune numită și un motiv: conținut potrivit, protecție acceptabilă, rută eligibilă și ofertă completă accesibilă. Dacă ceva rămâne neclar, păstrează comparația deschisă până poți verifica."
+          ]
+        }
+      ],
+      "checklist": [
+        "Verifică QC și rezolvă întrebările postvânzare înainte de grupare.",
+        "Verifică compatibilitatea conținutului și fiecare termen de depozitare.",
+        "Compară toate costurile pentru aceleași bunuri împreună și separat.",
+        "Alege ambalarea pentru nevoi specifice de protecție.",
+        "Folosește dimensiunile finale și regulile rutei selectate.",
+        "Confirmă inventarul, adresa, serviciile și oferta înainte de plată."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: combinarea mai multor comenzi",
+          "url": "https://blog.sugargoo.com/how-to-combine-multiple-orders-on-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simularea coletului înainte de expediere",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: opțiuni de ambalare și protecție",
+          "url": "https://blog.sugargoo.com/add-on-services-for-cross-border-orders-packaging-photography-protection-options/"
+        },
+        {
+          "title": "Sugargoo: restricții de expediere",
+          "url": "https://blog.sugargoo.com/shipping-restrictions-sensitive-prohibited-items/"
+        }
+      ],
+      "related": [
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ]
     }
   ]

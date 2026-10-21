@@ -1,5 +1,6 @@
 ---
 import { isProductionOrigin } from '../lib/site';
+import analyticsClient from '../lib/analytics-client.js?raw';
 const enabled = isProductionOrigin(Astro.url);
 ---
 {enabled && <>
@@ -10,7 +11,9 @@ const enabled = isProductionOrigin(Astro.url);
     gtag('js', new Date());
     gtag('config', 'G-SDSLG4QJR3', {
       allow_google_signals: false,
-      allow_ad_personalization_signals: false
+      allow_ad_personalization_signals: false,
+      page_location: location.origin + location.pathname
     });
   </script>
+  <script is:inline set:html={analyticsClient}></script>
 </>}
