@@ -517,3 +517,17 @@ GitHub提交完成：c3d2fb75635131a921456adad4349a9a7b922851，基于11b55e573c
 - 公开curl验证正式首页及/de/articles/superbuy-fees/均恰好一个gtag加载与一次config；独立预览首页均为零。Google代码安装界面显示已添加到https://superbuytab.com。
 - 使用实际Chrome访问正式首页，GA4首页过去30分钟活跃用户显示2，证明数据已经开始接收；此时首页历史统计和数据流状态仍可能显示未收到数据，为不同面板更新延迟，不能据此宣称安装失败。
 - 最终实时概览验证：过去30分钟和5分钟活跃用户均2；首页标题对应浏览次数2；first_visit、page_view、session_start各2。证据来自GA4资源559470846的真实实时报告，不是手工伪造事件。报告链接：https://analytics.google.com/analytics/web/#/a405518068p559470846/realtime/overview 。
+
+## 2026-10-21：全语言 SEO 内容与点击路径改进
+
+用户明确授权依据 GSC / Bing / GA4 调研改进并部署，要求所有语言同步。保留现有 Astro / GitHub / Cloudflare Worker 架构、CnBuyCha 实时商品来源和 ES7pVI 联盟参数。
+
+- 四篇新文章：superbuy-sneakers-spreadsheet、superbuy-hoodies-spreadsheet、superbuy-shipping-to-usa、superbuy-shipping-to-uk。每篇完整覆盖现有 24 种语言；总文章数由 240 变为 336（14 个主题）。
+- 更新已有运费计算、打包 / Shipping Expert、费用三篇，增加可操作清单、费用拆分和相关链接；全部语言同步。
+- 新增 /categories/shoes/ 与 /categories/hoodies-sweaters/ 的 24 语言独立专题入口，共 48 页，沿用真实商品。筛选 / 搜索参数页仍 noindex。
+- 首页与目录使用不同标题和描述；首页展示四篇最新文章；文章计数动态显示；保留同路径语言切换、自引用 canonical、24 语言加 x-default 的 hreflang。站点地图由 360 变为 504 个 URL。
+- 新文章 published / checked 日期为 2026-10-21；已有文章 datePublished 保留 2026-10-19，更新日期才变更。
+- 新增 GA4 自定义事件 article_to_catalog、product_click、outbound_superbuy、catalogue_search。自定义搜索事件仅记录查询长度，不传原始搜索词。代码安装不等于已将事件设为 key event，也不等于注册了 GA4 自定义维度。
+- 本地 npm run build、npm run check 通过：80 个真实商品分页、24 语言、336 篇文章结构 / 数字 / 内链、48 个专题页、4 类点击事件测试。英文文章词数范围 1219–1459。Wrangler dry-run 通过，只有 ASSETS 绑定，gzip 约 2.8 MiB。
+- 多语言稿采用机器辅助翻译并做标题、术语、数字、链接、结构校对，不应宣称经过全部语言的母语审稿。
+- 研究依据和统计窗口记录在 CONTENT_RESEARCH.md。低样本基线不能用于承诺点击增幅。发布后的实际公开页面验收另行记录。

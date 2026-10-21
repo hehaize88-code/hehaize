@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuy piegādes kalkulators: salīdziniet aplēses ar pareiziem datiem'
-description: Izmantojiet galamērķi, paku svaru, izmērus un produktu kategorijas, lai salīdzinātu Superbuy nosūtīšanas aplēses bez mulsina faktisko un tilpuma svaru.
+title: 'Superbuy piegādes kalkulators: svars un izmaksas'
+description: Salīdzināt Superbuy kuģniecības aplēses ar pareizo svaru, izmēriem un galamērķi. Izmantojiet paku kontrolsarakstu, pirms izvēlēties maršrutu vai maksājumu.
 topic: Piegāde
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: lv
 ---
-
 
 Kuģošanas aplēse apraksta paku saskaņā ar vairākiem pieņēmumiem. Mainīt galamērķi, preces kategoriju, izmērus vai maršrutu, un jūs varat būt uzdodot citu cenu jautājumu. Noderīgs ieradums ir saglabāt šos pieņēmumus līdztekus rezultātam, nevis iekasēt vienotu cenu bez konteksta.
 
 Superbuy oficiālais kalkulators pieprasa galamērķi, noliktavu, svaru, izmērus un preces kategoriju. Šajā rokasgrāmatā paskaidrots, kā sagatavot šo ievadīto informāciju un salīdzināt rezultātus. Tā nepublicē universālu cenu par kilogramu un neiesaka maršrutu, nezinot jūsu faktisko sūtījumu.
+
+## Ātrs kontrolsaraksts pirms cita piedāvājuma pieprasīšanas
+
+Glabāt galamērķi, noliktavu, preču kategorijas, fizisko svaru un ārējo paku izmēri kopā. Atzīmējiet katru neapstiprināto mērījumu kā aplēsi. Saglabāt maršruta nosaukumu, rēķinu noteikums, parādītā maksa un datums ar katru rezultātu, lai jūs varētu atveidot salīdzinājumu vēlāk.
+
+| Pirms salīdzināšanas | Pirms iesniegšanas | Pēc galīgā maksājuma |
+| --- | --- | --- |
+| Pārbaudes vienības un faktiskais saturs | Apstipriniet iepakotus mērījumus un atbilstību maršrutam | Salikt maksājumu ar galīgo rēķinu |
+| Reģistrēt nepieciešamo iepakojumu | Ietvertie pakalpojumi un izņēmumi | Saglabāt zemes gabalu un maksājuma atsauces |
+
+Lai veiktu galamērķa pārbaudes, izmantojiet: [ASV kuģniecības rokasgrāmata](/lv/articles/superbuy-shipping-to-usa/) vai [Apvienotās Karalistes kuģniecības rokasgrāmata](/lv/articles/superbuy-shipping-to-uk/). Šajās pamatnostādnēs paskaidrots, kā nošķirt pārvadājumus no galamērķa maksām. Aprēķina rezultāts vien nenosaka piemērojamo importa režīmu.
 
 ## Sākt ar zemes gabala aprakstu
 
@@ -88,4 +98,4 @@ Atver [oficiālais Superbuy kuģniecības kalkulators](https://www.superbuy.com/
 - [Superbuy kuģniecības kalkulators](https://www.superbuy.com/en/page/query/freight/) — ievades iekārtas, maršruta ierobežojumi un tilpuma-masas skaidrojums.
 - [Superbuy maksas sastāvs](https://www.superbuy.com/en/page/guide/feecomposition/) — starptautiskais kuģniecības maksājums un galīgo izmaksu pārbaude.
 
-Oficiālās lapas tika pārskatītas. 19 Oktobris. 2026. Apstrādātie mērījumi ir neatkarīgi aritmētiski piemēri, nevis pašreizējie pārvadātāja tarifi vai solījumi par atbilstību maršrutam.
+Oficiālās lapas tika pārskatītas 2026. gada 21. oktobrī. Apstrādātie mērījumi ir neatkarīgi aritmētiski piemēri, nevis pašreizējie pārvadātāja tarifi vai solījumi par atbilstību maršrutam.

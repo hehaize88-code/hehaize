@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuyn toimituskululaskuri: vertaile arvioita oikeilla tiedoilla'
-description: Käytä kohde-, pakettipaino-, koko- ja kohdeluokkia Superbuy-lähetysarvioiden vertailuun sekoittamatta todellista ja tilavuutta.
+title: 'Superbuyn toimituslaskuri: paino ja kulut'
+description: Vertaa Superbuy-toimituksen arvioita oikeaan painoon, mittoihin ja kohteeseen. Käytä pakettilistaa ennen reitin valintaa tai maksamista.
 topic: Lähetys
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: fi
 ---
-
 
 Toimitusarviossa kuvataan pakettia olettamusten perusteella. Muuta määränpäätä, kohdeluokkaa, mittoja tai reittiä, niin saatat kysyä toisenlaista hinnoittelukysymystä. Hyödyllinen tapa on tallentaa nämä oletukset tuloksen rinnalle eikä kerätä yhtä ainoaa hintaa ilman kontekstia.
 
 Superbuy:n virallinen laskin kysyy määränpäätä, varastoa, painoa, mittoja ja tuoteluokkaa. Tässä oppaassa kerrotaan, kuinka syötetyt tiedot valmistetaan ja tuloksia verrataan. Se ei julkaise yleishintaa kilogrammalta tai suosittele reittiä tietämättä varsinaista pakettia.
+
+## Nopea tarkistuslista ennen tarjouspyynnön esittämistä
+
+Pidä määränpää, varasto, tavaraluokat, fyysinen paino ja ulkopaketin mitat yhdessä. Merkitse jokainen vahvistamaton mittaus arvioksi. Tallenna reitin nimi, laskutussääntö, näytä maksu ja päiväys jokaiseen tulokseen, jotta voit toistaa vertailun myöhemmin.
+
+| Ennen vertailua | Ennen lähettämistä | Viimeisen latauksen jälkeen |
+| --- | --- | --- |
+| Tarkastusyksiköt ja varsinainen sisältö | Vahvista pakatut mittaukset ja reittikelpoisuus | Palauta maksu lopullisella laskulla |
+| Vaaditut pakkaustiedot | Lue mukaan lukien palvelut ja poissulkemiset | Säilytä paketti- ja maksuviitteet |
+
+Määräpaikkakohtaisissa tarkastuksissa: [USA:n merenkulkuopas](/fi/articles/superbuy-shipping-to-usa/) tai [Iso-Britannian merenkulkuopas](/fi/articles/superbuy-shipping-to-uk/). Nämä selittävät, miten kuljetukset voidaan erottaa kohdemaksuista. Laskintulos ei yksin määritä sovellettavaa tuontikohtelua.
 
 ## Aloita pakettikuvauksella
 
@@ -88,4 +98,4 @@ Avaa se [virallinen Superbuy-toimituslaskuri](https://www.superbuy.com/en/page/q
 - [Superbuy-toimituslaskuri](https://www.superbuy.com/en/page/query/freight/) — syöttöyksiköt, reittirajat ja tilavuuspainon selitys.
 - [Superbuy-maksun koostumus](https://www.superbuy.com/en/page/guide/feecomposition/) — kansainvälinen lähetysmaksu ja lopullisten kustannusten tarkastaminen.
 
-Viralliset sivut tarkistettiin. 19 Lokakuussa. 2026. Työstetyt mittaukset ovat itsenäisiä aritmeettisia esimerkkejä, eivät nykyisiä kantajien hintoja tai lupauksia reittikelpoisuudesta.
+Viralliset sivut tarkistettiin 21. lokakuuta 2026. Tehdyt mittaukset ovat itsenäisiä aritmeettisia esimerkkejä, eivät nykyisiä kantajien hintoja tai lupauksia reittikelpoisuudesta.

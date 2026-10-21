@@ -1,18 +1,25 @@
 ---
 slug: superbuy-fees
-title: 'Táillí Superbuy: buiséad is féidir a chur i gcomparáid leis na híocaíochtaí iarbhír'
-description: Costas táirgí ar leithligh, seachadadh tí, seirbhísí roghnacha agus loingseoireachta idirnáisiúnta, ansin seiceáil meastacháin i gcoinne do thaifid ordú Superbuy.
+title: 'Táillí Superbuy: táirgí, seirbhísí agus seachadadh'
+description: Féach a bhaineann costais Superbuy i do bhuiséad, cad is féidir athrú roimh loingseoireachta agus conas íocaíochtaí a réiteach gan comhaireamh an muirear céanna faoi dhó.
 topic: Costais agus buiséadú
 keyword: superbuy fees
 order: 3
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: ga
 ---
-
 
 Freagraíonn buiséid Superbuy úsáideach dhá cheist: cad a d'aontaigh tú cheana féin a íoc, agus cad is féidir a athrú go fóill? Ag cur gach uimhir i iomlán amháin seithí ró-luath go idirdhealú. Is féidir é a dhéanamh measta méid buiséid loingseoireachta cuma chomh cinnte mar sonrasc mír íoctha.
 
 Úsáideann an treoir seo taifead costas simplí chun na cinntí sin a choinneáil le feiceáil. Is modh pleanála, ní meastachán praghsanna reatha. Do mhír roghnaithe, roghanna seirbhíse, modh íocaíochta, dáileacht agus ceann scríbe a chinneadh na muirir is gá a sheiceáil i do chuntas.
+
+## Seiceáil an t-iomlán roimh táirgí comparáide
+
+An mhír roghnaithe agus seachadadh intíre a scaradh ó sheirbhísí roghnacha, muirir iompair idirnáisiúnta agus ceann scríbe. Taifead an t-airgeadra agus cibé acu a íoctar, a luaitear gach méid nó fós meastachán. Coinnigh lascainí sealadacha go dtí go nglactar leo sa sreabhadh íocaíochta iarbhír.
+
+Iarrann comparáid úsáideach cad athruithe nuair a roghnaíonn tú mír eile. Is féidir le praghas ceannaigh níos ísle teacht le pacáistiú bulkier; d'fhéadfadh iniúchadh breise ceist a fhreagairt roimh loingsiú daor. Déan an plean iomlán agus a neamhchinnteachtaí a chur i gcomparáid, ansin na muirir ábhartha a dheimhniú i do chuntas.
+
+I gcás seiceálacha cinn scríbe-shonracha, léigh [loingseoireachta chuig na Stáit Aontaithe](/ga/articles/superbuy-shipping-to-usa/) nó [loingseoireachta chuig an Ríocht Aontaithe](/ga/articles/superbuy-shipping-to-uk/). Coinnigh muirir iompair agus allmhairithe ar leithligh mura míníonn na téarmaí seirbhíse reatha go sainráite cad atá san áireamh. Ná caitheamh le méid anaithnid mar nialas.
 
 ## Ceannach ar leithligh ó sheachadadh dáileachta
 
@@ -91,4 +98,4 @@ Déanann an taifead mar thoradh ar do cheannach eile níos éasca a phleanáil. 
 - [Comhdhéanamh táille Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — céimeanna costais, catagóirí seirbhíse agus socrú deiridh na gcostas loingseoireachta.
 - [Áireamhán loingseoireachta Superbuy](https://www.superbuy.com/en/page/query/freight/) — iontráil faisnéis reatha meastacháin ar an mbealach.
 
-Rinneadh athbhreithniú ar leathanaigh oifigiúla. 19 Deireadh Fómhair. 2026. Nílimid ag atáirgeadh samplaí uimhríochtúla neamhréire le fáil ar an leathanach táille; tá an sampla thuas ficseanúil go follasach. Deimhnigh an miondealú táille iarbhír roimh íocaíocht.
+Rinneadh athbhreithniú ar leathanaigh oifigiúla ar 21 Deireadh Fómhair 2026. Ní atáirgeann muid samplaí uimhríochtúla neamhsheasmhacha a fhaightear ar an leathanach táille; is ficseanúil an sampla thuas. Deimhnigh an miondealú táille iarbhír roimh íocaíocht.

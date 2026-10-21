@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Calculadora de envío de Superbuy: compara estimaciones con los datos adecuados'
-description: Utilizar destino, peso del paquete, dimensiones y categorías de artículos para comparar las estimaciones de envío Superbuy sin confundir peso real y volumétrico.
+title: 'Calculadora de envíos Superbuy: peso y costes'
+description: Compare las estimaciones de envío Superbuy con el peso, las dimensiones y el destino correctos. Utilice la lista de verificación de paquetes antes de elegir una ruta o pagar.
 topic: Envío
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: es
 ---
-
 
 Una estimación de envío describe un paquete bajo un conjunto de supuestos. Cambiar el destino, categoría de artículo, dimensiones o ruta y usted puede estar haciendo una pregunta de precios diferente. El hábito útil es guardar esas hipótesis junto con el resultado, en lugar de recaudar un solo precio sin contexto.
 
 La calculadora oficial de Superbuy solicita destino, almacén, peso, dimensiones y categoría de artículo. Esta guía explica cómo preparar la información introducida y comparar los resultados. No publica un precio universal por kilogramo ni recomienda una ruta sin conocer su paquete real.
+
+## Lista de verificación rápida antes de solicitar una estimación
+
+Mantener juntos el destino, el almacén, las categorías de artículos, el peso físico y las dimensiones exteriores del paquete. Marcar cada medición no confirmada como una estimación. Guarde el nombre de la ruta, la regla de facturación, la carga mostrada y la fecha con cada resultado para que pueda reproducir la comparación más tarde.
+
+| Antes de comparar | Antes de presentar | Después de la carga final |
+| --- | --- | --- |
+| Unidades de comprobación y contenido real | Confirmar las medidas embaladas y la elegibilidad de la ruta | Reconciliar el pago con la factura final |
+| Registro del embalaje requerido | Lea servicios incluidos y exclusiones | Conservar las referencias de paquete y pago |
+
+Para los controles específicos del destino, utilizar el [EE.UU. guía de envío](/es/articles/superbuy-shipping-to-usa/) o bien [Guía de envío del Reino Unido](/es/articles/superbuy-shipping-to-uk/)- ¿Por qué? Estos explican cómo separar el transporte de los gastos de destino. Un resultado calculador por sí solo no establece el tratamiento de importación aplicable.
 
 ## Comience con una descripción de paquetes
 
@@ -88,4 +98,4 @@ Abre el [calculadora oficial de envío Superbuy](https://www.superbuy.com/en/pag
 - [Calculadora de envío Superbuy](https://www.superbuy.com/en/page/query/freight/) — unidades de entrada, límites de ruta y explicación del peso volumétrico.
 - [Composición de la tarifa Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — pago de envío internacional y control de los costes finales.
 
-Se revisaron las páginas oficiales. 19 Octubre. 2026. Las mediciones realizadas son ejemplos aritméticos independientes, no tasas de transporte actuales o promesas de elegibilidad de ruta.
+Las páginas oficiales fueron revisadas el 21 de octubre de 2026. Las mediciones realizadas son ejemplos aritméticos independientes, no tasas de transporte actuales o promesas de elegibilidad de ruta.

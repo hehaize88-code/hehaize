@@ -1,18 +1,32 @@
 ---
 slug: superbuy-packing
-title: 'Embalagem e Shipping Expert do Superbuy: instruções claras para a encomenda'
-description: Escolha as embalagens em torno do conteúdo, necessidades de proteção e medidas de pacotes, e prepare um relatório preciso ao solicitar ajuda para a embalagem do Superbuy.
+title: 'Superbuy Shipping Expert: lista de embalagem'
+description: 'Prepare um pedido de embalagem Superbuy claro: o que guardar, remover e proteger, quais cargas confirmar e como comparar o pacote acabado.'
 topic: Planejamento de uma parquilha
 keyword: superbuy shipping expert
 order: 7
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: pt
 ---
-
 
 Boa embalagem começa com uma descrição clara do que você quer protegido. "Faça-o barato e seguro" expressa uma preferência, mas não diz a um armazém se você se importa com uma caixa de varejo intacta, uma forma rígida, superfícies delicadas ou dimensões mínimas de parcelas.
 
 Este guia ajuda você a transformar essas prioridades em um relatório de embalagem prático. A Superbuy oferece serviços de embalagem e links para a Shipping Expert a partir da sua calculadora. A disponibilidade, o alcance do serviço e os encargos devem ser verificados no fluxo oficial atual; não assumimos que um serviço de aconselhamento inclui todas as ações de embalagem ou o próprio frete internacional.
+
+## Um pedido de embalagem que você pode adaptar
+
+Use esta lista de verificação para preparar um pedido específico. Substituir cada descrição com as referências e prioridades reais do item, depois confirmar o serviço disponível e cobrar antes de autorizar o trabalho.
+
+| Incluir no pedido | A sua decisão |
+| --- | --- |
+| Itens aceites | Listar apenas os itens cuja inspecção é resolvida |
+| Embalagem a conservar | Identificar caixas, etiquetas ou proteção que devem permanecer |
+| Alterações permitidas | Especificar o que pode ser removido ou dobrado |
+| Necessidades de protecção | Identificar superfícies e formas frágeis que não devem ser comprimidos |
+| Aprovação dos custos | Peça o alcance do serviço e o custo antes da confirmação |
+| Comparação final | Solicitar o peso embalado resultante e as dimensões externas |
+
+Para sapatos, use o [Lista de verificação para tênis](/pt/articles/superbuy-sneakers-spreadsheet/) antes de decidir se conservar a caixa. Para roupas, utilize o [Lista de verificação de ajuste de capuz](/pt/articles/superbuy-hoodies-spreadsheet/) antes de aprovar a compressão ou remoção da embalagem. Resolver um ajuste ou condição incerta antes de fazer uma mudança irreversível de embalagem.
 
 ## Descreva o conteúdo antes de escolher um serviço
 
@@ -90,4 +104,4 @@ No recibo, compare o arranjo real com o seu breve e registre o que funcionou. Is
 - [Calculadora de envio Superbuy](https://www.superbuy.com/en/page/query/freight/) — estimação da rota e entrada Shipping Expert.
 - [Inscrição oficial Shipping Expert](https://www.superbuy.com/en/page/customization/expert-service/?isNeedParams=1) — confirmar o escopo atual dentro do fluxo de serviço.
 
-As páginas oficiais foram revistas. 19 Outubro. 2026. Não se afirma aqui qualquer preço fixo de serviço de peritos ou poupança garantida; o quadro breve e de comparação são orientações independentes.
+As páginas oficiais foram revistas em 21 de outubro de 2026. Não se afirma aqui o preço fixo do serviço de peritos ou a poupança garantida; o breve e o quadro de comparação são orientações independentes.

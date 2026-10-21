@@ -30,3 +30,11 @@ Models: opus-mt-en-de, en-ROMANCE (Spanish/Portuguese), en-fr, en-it, en-zlw (Po
 ## Mobile layout
 
 Shared small-screen styles reduce header, hero, section, card, information-page and footer spacing. The homepage retains all products. Article cards use two columns; the article contents panel starts collapsed on phones and opens on desktop. Full article paragraphs remain available. Product details, all category links, pagination, FAQ and source links are preserved.
+
+## 2026-10-21 multilingual editorial release
+
+Four original English articles were added (sneakers, hoodies, USA shipping, UK shipping), with complete translations for every existing locale. Shipping-calculator, packing and fees guides gained matching new sections in all 24 languages. The new category and SEO copy also has 24 independent locale files. No English article-body fallback is used.
+
+Draft translations used the same offline OPUS-MT / CTranslate2 workflow described above. Multilingual models require their target-language token, including `>>bul<<` for en-bg, `>>hrv<<` / `>>slv<<` for en-zls, `>>pol<<` for en-zlw, `>>lit<<` / `>>lav<<` for en-bat, `>>ga<<` for en-CELTIC and the appropriate Romance token. The en-zls vocabulary contains consecutive escaped bytes; these were normalized without changing vocabulary indices before conversion. Model weights are temporary authoring dependencies and are not deployed.
+
+Search titles were edited separately in each language. Translation review included recurring delivery/package terminology, reference labels, source-block parity, internal link localization, and all numeric facts. The UK threshold was checked against the English source in every translation. Avoid claiming native-speaker review: these are machine-assisted translations with editorial checks.

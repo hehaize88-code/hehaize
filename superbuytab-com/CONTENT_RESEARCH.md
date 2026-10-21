@@ -64,3 +64,15 @@ These are observed editorial targets, not evidence of rankings, measured demand 
 ## 2026-10-19 翻译更新
 
 用户要求补齐后，首批10篇长文现已提供23个其他语言的完整译文，合计240篇。此结果取代此前英文先行的临时发布范围。各语言段落、表格、数字及链接对齐；正式语言SEO可用，预览仍noindex。正文机器辅助翻译与审校边界记录在TRANSLATION_NOTES.md。翻译没有增加政策断言，官方核对日期不变。
+
+## 2026-10-21 search-led improvements
+
+Observed GSC window: 21 impressions, 0 clicks, average position 6.6 in the last 24 hours. Shipping calculator (4 impressions), packing (3) and fees (2) were the leading visible page opportunities. This is a small initial sample, not a stable CTR benchmark. The visible query table did not account for every impression.
+
+Bing keyword research for 2026-07-21 to 2026-10-18, all countries/devices/languages, showed approximately 23K for Superbuy and 1.3K for Superbuy spreadsheet; these are Bing tool values, not Google search-volume estimates. USA and UK were useful destination candidates. Shipping-specific terms without sufficient Bing data were not interpreted as zero demand. Competitor research found dedicated shoe/sneaker content and destination shipping pages; topic selection uses those intent gaps without copying competitor text.
+
+Priority changes: improve the existing three pages with impressions; add original sneakers, hoodies, USA-shipping and UK-shipping guides; provide indexable shoes and hoodies category landing pages while keeping query/filter combinations noindex. Product data remains sourced from CnBuyCha.
+
+Official references checked: https://www.superbuy.com/en/page/query/freight/ ; https://www.superbuy.com/en/page/guide/feecomposition/ ; https://www.gov.uk/goods-sent-from-abroad/tax-and-duty . The USA guide links CBP official import guidance but asserts no universal current exemption or tariff. It explicitly distinguishes transport estimates from import treatment.
+
+GA4 baseline observed: 12 users / 12 views / 40 events in the available recent period; the traffic acquisition report showed 12 Direct sessions and 1 engaged session in its displayed window. These windows are different and must not be combined into a conversion claim. Add article_to_catalog, product_click, outbound_superbuy and catalogue_search custom events to distinguish reading from catalogue and affiliate intent. No key-event setting or GA4 custom dimension registration is implied by code installation.

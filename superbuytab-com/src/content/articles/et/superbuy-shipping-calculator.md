@@ -1,22 +1,32 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuy saatmiskulude kalkulaator: võrdle hinnanguid õigete andmetega'
-description: Kasutage sihtkoha, paki kaalu, mõõtmed ja kaubaartiklite kategooriad võrrelda Superbuy kohaletoimetamise hinnanguid segadusse ajamata tegelik ja mahukaal.
+title: 'Superbuy tarnekalkulaator: kaal ja kulud'
+description: Võrdle Superbuy tarne hinnangud õige kaal, mõõtmed ja sihtkoht. Kasutage enne marsruudi valimist või maksmist paki kontrollnimekirja.
 topic: Saatmine
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: et
 ---
-
 
 Laevanduse hinnangus kirjeldatakse postipakki mitmete eelduste alusel. Muuda sihtpunkti, eseme kategooriat, mõõtmeid või marsruuti ja võite küsida teistsuguse hinnakujunduse küsimuse. Kasulik harjumus on säästa neid eeldusi koos tulemusega, selle asemel, et koguda ühtne hind ilma kontekstita.
 
 Superbuy ametlik kalkulaator küsib sihtkoha, lao, kaalu, mõõtmete ja eseme kategooria. Käesolevas juhendis selgitatakse, kuidas neid andmeid sisestada ja tulemusi võrrelda. See ei avalda universaalset hinda kilogrammi kohta ega soovita marsruuti ilma tegelikku pakki teadmata.
 
+## Kiirkontroll enne tsitaadi küsimist
+
+Hoidke sihtkoht, ladu, kaubaartiklite kategooriad, füüsiline kaal ja välispaki mõõtmed koos. Märgige kõik kinnitamata mõõtmised hinnanguliseks. Salvestage marsruudi nimi, arve reegel, kuvatakse laadimine ja kuupäev iga tulemusega, et saate korrata võrdlus hiljem.
+
+| Enne võrdlemist | Enne esitamist | Pärast lõplikku laadimist |
+| --- | --- | --- |
+| Kontrolli ühikuid ja tegelikku sisu | Pakitud mõõtmiste ja marsruudi abikõlblikkuse kinnitamine | Reconcile makse koos lõpliku arve |
+| Nõutav pakend | Loe lisatud teenuseid ja väljaarvamisi | Paki- ja makseviited jäetakse alles |
+
+Sihtkohaspetsiifiliste kontrollide puhul kasutage [USA tarnee juhend](/et/articles/superbuy-shipping-to-usa/) või [Ühendkuningriigi laevajuhis](/et/articles/superbuy-shipping-to-uk/). Need selgitavad, kuidas eristada vedu sihtkohamaksudest. Kalkulaatoriga saadud tulemus üksi ei määra kohaldatavat impordirežiimi.
+
 ## Alustage paki kirjeldusega
 
-Kirjutage üles, mida te loodate saata, kuhu see peab minema ja millist pakendit tuleb säilitada. Kaasa arvatud laevanduse nõuetele vastavusega seotud funktsioonid, näiteks patareid või vedelikud, kui need on olemas. Täpne teave kategooria kohta on osa kasuliku hinnangu saamisest; see ei ole vabatahtlik detail, mida muuta enne, kui ilmub odavam marsruut.
+Kirjutage üles, mida te loodate saata, kuhu see peab minema ja millist pakendit tuleb säilitada. Kaasa arvatud tarnee nõuetele vastavusega seotud funktsioonid, näiteks patareid või vedelikud, kui need on olemas. Täpne teave kategooria kohta on osa kasuliku hinnangu saamisest; see ei ole vabatahtlik detail, mida muuta enne, kui ilmub odavam marsruut.
 
 Eraldi teadaolevad mõõtmised oletustest. Kui tooted ei ole lattu jõudnud, märkida ajutiselt kaal ja mõõtmed. Müüja toote mõõtmed võivad kirjeldada objekti, mitte pakendatud pakki. Samuti võib eseme kaal välistada veoks vajaliku kaitse ja välispakendi.
 
@@ -34,7 +44,7 @@ Enne otsimist loe lausena iga väli: "See saadetis läheb sellesse sihtkohta, se
 
 Füüsiline kaal tuleb skaalast. Mahukaal tähistab ruumi, mida pakett kasutab vastavalt marsruudi arvutusreeglile. Kalkulaatori selgitus annab lennukaubale 6 000 näite; seda näidet ei tohiks eeldada, et seda kohaldatakse muutmata kujul igale olemasolevale marsruudile.
 
-Üksnes arvutusnäitena on 40 × 30 × 20 cm paki ruumala 24 000 cm³. Koos divisoriga. 6 000, mis toodab mahuline näitaja. 4 kg. See ei ole laevanduse hinnahinnang ega määra, milline on konkreetse marsruudi kaal.
+Üksnes arvutusnäitena on 40 × 30 × 20 cm paki ruumala 24 000 cm³. Koos divisoriga. 6 000, mis toodab mahuline näitaja. 4 kg. See ei ole tarnee hinnahinnang ega määra, milline on konkreetse marsruudi kaal.
 
 Loe marsruudi enda arvete reeglid, sealhulgas selle jagaja, ümardamine ja kõik suuruspiirangud. Sisestatud kalkulaatorandmed kirjeldavad postipakki; marsruudi tingimused selgitavad, kuidas see kirjeldus muutub tasuks.
 
@@ -69,7 +79,7 @@ Kasuta meie oma [pakendi juhend](/et/articles/superbuy-packing/) koostada selges
 
 ## Mõista erinevust hinnangu ja lõpliku arve vahel
 
-Superbuy tasu selgitus kirjeldab esialgset rahvusvahelist laevandusmakset, mis põhineb hinnangulisel pakiteabel, millele järgneb lõplike kulude kontrollimine logistikateenuse osutaja arvel. Seetõttu peaks kalkulaatori tulemus jääma teie eelarves kalkulatsiooniks.
+Superbuy tasu selgitus kirjeldab esialgset rahvusvahelist tarnemakset, mis põhineb hinnangulisel pakiteabel, millele järgneb lõplike kulude kontrollimine logistikateenuse osutaja arvel. Seetõttu peaks kalkulaatori tulemus jääma teie eelarves kalkulatsiooniks.
 
 Kui esitad paki, jäta endale esitatud marsruut, pakkimisvalikud ja makseviide. Kui ilmneb hilisem korrigeerimine, võrdlege seda postipakki käsitleva lõpliku teabe ja asjakohase arvega, mitte sõltumatu hinnanguga, mis salvestati nädalaid varem.
 
@@ -81,11 +91,11 @@ Valige variante, mis kehtivad teie pakile. Võrdle kõiki kuvatud tasusid ja tee
 
 Hoidke varuplaani alles, kui lõplikud mõõtmised muudavad eelistatud marsruudi kättesaamatuks. See võib tähendada huvigrupi muutmist, mitteolulise teema edasilükkamist või nõu küsimist mõne muu abikõlbliku teenuse kohta. Otsustage kinnitatud teabe põhjal, selle asemel et sundida pakki teie esimese hinnanguga sarnanema.
 
-Tee lahti [ametlik Superbuy laevanduse kalkulaator](https://www.superbuy.com/en/page/query/freight/) kui oled valmis oma sisestatud andmeid võrdlema. Kasuta meie oma [Tasude juhend](/et/articles/superbuy-fees/) panna tulemus kogu ostueelarvesse.
+Tee lahti [ametlik Superbuy tarnee kalkulaator](https://www.superbuy.com/en/page/query/freight/) kui oled valmis oma sisestatud andmeid võrdlema. Kasuta meie oma [Tasude juhend](/et/articles/superbuy-fees/) panna tulemus kogu ostueelarvesse.
 
 ## Ametlikud viited
 
-- [Superbuy laevanduse kalkulaator](https://www.superbuy.com/en/page/query/freight/) — sisendühikud, marsruudi piirangud ja mahukaalu selgitus.
+- [Superbuy tarnee kalkulaator](https://www.superbuy.com/en/page/query/freight/) — sisendühikud, marsruudi piirangud ja mahukaalu selgitus.
 - [Superbuy tasu koosseisu](https://www.superbuy.com/en/page/guide/feecomposition/) — rahvusvaheline laevamakse ja lõplike kulude kontrollimine.
 
-Ametlikud leheküljed vaadati üle. 19 Oktoober. 2026. Töötatud mõõtmised on sõltumatud aritmeetilised näited, mitte praegused kandjamäärad või marsruudi abikõlblikkuse lubadused.
+Ametlikud leheküljed vaadati läbi 21. oktoobril 2026. Töötatud mõõtmised on sõltumatud aritmeetilised näited, mitte praegused kandjamäärad või marsruudi abikõlblikkuse lubadused.

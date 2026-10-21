@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Kalkolatur tat-tbaħħir ta’ Superbuy: qabbel l-istimi bid-data t-tajba'
-description: Uża d-destinazzjoni, il-piż tal-pakketti, id-dimensjonijiet u l-kategoriji tal-oġġetti biex tqabbel l-istimi tat-trasport bil-baħar Superbuy mingħajr ma tħawwad il-piż attwali u volumetriku.
+title: 'Kalkulatur tal-kunsinna Superbuy: piż u spejjeż'
+description: Qabbel estimi tbaħħir Superbuy mal-piż dritt, dimensjonijiet u destinazzjoni. Uża l-lista ta' kontroll tal-pakketti qabel ma tagħżel rotta jew tħallas.
 topic: Trasport bil-baħar
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: mt
 ---
-
 
 Stima tat-tbaħħir tiddeskrivi pakkett taħt sett ta' suppożizzjonijiet. Ibdel id-destinazzjoni, il-kategorija tal-oġġett, id-dimensjonijiet jew ir-rotta u tista' tkun qed tistaqsi mistoqsija differenti dwar l-ipprezzar. Il-vizzju utli huwa li jiġu ffrankati dawk is-suppożizzjonijiet flimkien mar-riżultat, minflok ma jinġabar prezz uniku mingħajr ebda kuntest.
 
 Il-kalkolatur uffiċjali ta' Superbuy jitlob id-destinazzjoni, il-maħżen, il-piż, id-dimensjonijiet u l-kategorija tal-oġġett. Din il-gwida tispjega kif tħejji din l-informazzjoni mdaħħla u tqabbel ir-riżultati. Hija ma tippubblikax prezz universali għal kull kilogramm jew tirrakkomanda rotta mingħajr ma tkun taf il-pakkett attwali tiegħek.
+
+## Lista ta' kontroll rapida qabel ma tintalab kwotazzjoni
+
+Żomm id-destinazzjoni, il-maħżen, il-kategoriji tal-oġġetti, il-piż fiżiku u d-dimensjonijiet tal-pakketti ta' barra flimkien. Immarka kull kejl mhux ikkonfermat bħala stima. Ħlief l-isem tar-rotta, ir-regola kontijiet, ħlas murija u d-data ma 'kull riżultat sabiex inti tista' tirriproduċi l-paragun aktar tard.
+
+| Qabel tqabbel | Qabel is-sottomissjoni | Wara l-aħħar ħlas |
+| --- | --- | --- |
+| Unitajiet ta' kontroll u l-kontenuti attwali | Il-kejl ippakkjat u l-eliġibbiltà tar-rotta | Ir-rikonċiljazzjoni tal-ħlas mal-kont finali |
+| Irrekordja l-imballaġġ meħtieġ | Aqra inklużi servizzi u esklużjonijiet | Żomm il-pakkett u r-referenzi għall-pagament |
+
+Għal kontrolli speċifiċi għad-destinazzjoni, uża [Gwida dwar it-trasport bil-baħar fl-Istati Uniti](/mt/articles/superbuy-shipping-to-usa/) jew [Gwida dwar it-tbaħħir fir-Renju Unit](/mt/articles/superbuy-shipping-to-uk/). Dawn jispjegaw kif it-trasport għandu jiġi sseparat mit-tariffi tad-destinazzjoni. Riżultat kalkulatur waħdu ma jistabbilixxix it-trattament tal-importazzjoni applikabbli.
 
 ## Ibda b'deskrizzjoni tal-pakkett
 
@@ -88,4 +98,4 @@ Iftaħ il - fuljett [il-kalkolatur uffiċjali tat-tbaħħir Superbuy](https://ww
 - [Il-kalkolatur tat-tbaħħir Superbuy](https://www.superbuy.com/en/page/query/freight/) — unitajiet ta' input, limiti tar-rotta u spjegazzjoni tal-piż volumetriku.
 - [Il-kompożizzjoni tat-tariffi Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — il-ħlas internazzjonali bil-baħar u l-kontroll tal-ispejjeż finali.
 
-Il-paġni uffiċjali ġew riveduti fiż-19 Ottubru 2026. Il-kejl li jsir huwa eżempju aritmetiku indipendenti, mhux ir-rati attwali tal-ġarr jew il-wegħdiet tal-eliġibbiltà tar-rotta.
+Il-paġni uffiċjali ġew riveduti fil-21 ta' Ottubru 2026. Il-kejl li jsir huwa eżempju aritmetiku indipendenti, mhux ir-rati attwali tal-ġarr jew il-wegħdiet ta' eliġibbiltà tar-rotta.

@@ -1,7 +1,8 @@
 import {languages,localized} from '../lib/i18n';
 import { targets } from '../../site-targets.mjs';
 import {articles} from '../lib/articles';
-const paths=['/','/spreadsheet/','/guide/','/faq/','/articles/',...articles.map(a=>a.path)];
+import {categoryPaths} from '../lib/seo';
+const paths=['/','/spreadsheet/','/guide/','/faq/','/articles/',...articles.map(a=>a.path),...categoryPaths];
 export const GET=()=>{
   const localizedEntries=languages.flatMap(([lang])=>paths.map(path=>{
     const alternate=languages.map(([code])=>`<xhtml:link rel="alternate" hreflang="${code}" href="${targets.production}${localized(code,path)}"/>`).join('');

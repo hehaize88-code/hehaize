@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Calculateur de livraison Superbuy : comparer les estimations avec les bonnes données'
-description: Utilisez la destination, le poids du colis, les dimensions et les catégories d'articles pour comparer les estimations d'expédition Superbuy sans confondre le poids réel et le poids volumétrique.
+title: 'Calculateur de livraison Superbuy : poids et frais'
+description: Comparez les estimations d'expédition Superbuy avec le bon poids, dimensions et destination. Utilisez la liste de contrôle du colis avant de choisir un itinéraire ou de payer.
 topic: Expédition
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: fr
 ---
-
 
 Une estimation d'expédition décrit un colis selon un ensemble d'hypothèses. Changez la destination, la catégorie d'articles, les dimensions ou l'itinéraire et vous pouvez poser une question de prix différente. L'habitude utile est d'épargner ces hypothèses en même temps que le résultat, plutôt que de percevoir un prix unique sans contexte.
 
 La calculatrice officielle de Superbuy demande la destination, l'entrepôt, le poids, les dimensions et la catégorie d'articles. Ce guide explique comment préparer ces informations saisies et comparer les résultats. Il ne publie pas un prix universel par kilogramme ou recommande un itinéraire sans connaître votre colis réel.
+
+## Liste de contrôle rapide avant de demander un devis
+
+Conservez ensemble la destination, l'entrepôt, les catégories d'articles, le poids physique et les dimensions extérieures des colis. Marquez chaque mesure non confirmée comme une estimation. Enregistrer le nom de l'itinéraire, la règle de facturation, les frais affichés et la date avec chaque résultat afin que vous puissiez reproduire la comparaison plus tard.
+
+| Avant de comparer | Avant de soumettre | Après la charge finale |
+| --- | --- | --- |
+| Vérifier les unités et le contenu réel | Confirmer les mesures emballées et l'admissibilité à l'itinéraire | Réconcilier le paiement avec la facture finale |
+| Enregistrement de l'emballage requis | Services inclus et exclusions | Conserver les références de colis et de paiement |
+
+Pour les contrôles spécifiques à la destination, utilisez le [Guide d'expédition des États-Unis](/fr/articles/superbuy-shipping-to-usa/) ou [Guide des transports maritimes du Royaume-Uni](/fr/articles/superbuy-shipping-to-uk/)C'est vrai. Elles expliquent comment séparer le transport des redevances de destination. Le seul résultat d'une calculatrice n'établit pas le traitement d'importation applicable.
 
 ## Commencez par une description du colis
 
@@ -88,4 +98,4 @@ Ouvrez la [calculateur d'expédition officiel Superbuy](https://www.superbuy.com
 - [Calculateur d'expédition Superbuy](https://www.superbuy.com/en/page/query/freight/) — unités d'entrée, limites de route et explication du poids volumétrique.
 - [Composition des frais de Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — le paiement du transport international et la vérification des coûts finals.
 
-Les pages officielles ont été examinées. 19 Octobre. 2026. Les mesures effectuées sont des exemples arithmétiques indépendants, et non les taux actuels des transporteurs ou les promesses d'admissibilité à la route.
+Les pages officielles ont été examinées le 21 octobre 2026. Les mesures effectuées sont des exemples arithmétiques indépendants, et non des taux de transporteur actuels ou des promesses d'admissibilité à la route.

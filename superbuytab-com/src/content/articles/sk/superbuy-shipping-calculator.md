@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Kalkulačka dopravy Superbuy: porovnávajte odhady so správnymi údajmi'
-description: Použite cieľové miesto, hmotnosť zásielky, rozmery a kategórie položiek na porovnanie odhadov prepravy Superbuy bez mätúcej skutočnej a objemovej hmotnosti.
+title: 'Kalkulačka dopravy Superbuy: hmotnosť a náklady'
+description: Porovnajte odhady Superbuy lodnej dopravy so správnou hmotnosťou, rozmermi a destináciou. Pred výberom trasy alebo platby použite kontrolný zoznam parciel.
 topic: Lodná doprava
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: sk
 ---
-
 
 Odhad prepravy opisuje parcelu podľa súboru predpokladov. Zmeňte miesto určenia, kategóriu položiek, rozmery alebo trasu a môžete sa pýtať na inú cenovú otázku. Užitočným zvykom je ušetriť tieto predpoklady spolu s výsledkom, a nie zbierať jednu cenu bez kontextu.
 
 Oficiálna kalkulačka Superbuy požaduje miesto určenia, sklad, hmotnosť, rozmery a kategóriu položiek. Táto príručka vysvetľuje, ako pripraviť zadané informácie a porovnať výsledky. Neuverejňuje univerzálnu cenu za kilogram ani neodporúča trasu bez toho, aby poznala vašu skutočnú parcelu.
+
+## Rýchly kontrolný zoznam pred vyžiadaním cenovej ponuky
+
+Udržujte miesto určenia, sklad, kategórie položiek, fyzickú hmotnosť a vonkajšie rozmery parciel spolu. Označte každý nepotvrdené meranie ako odhad. Uložiť názov trasy, fakturačné pravidlo, zobrazené nabíjanie a dátum s každým výsledkom, takže môžete reprodukovať porovnanie neskôr.
+
+| Pred porovnaním | Pred predložením | Po konečnom nabití |
+| --- | --- | --- |
+| Skontrolujte jednotky a skutočný obsah | Potvrdiť balené merania a oprávnenosť trasy | Vyrovnať platbu s konečným účtom |
+| Zaznamenávanie požadovaného obalu | Čítanie zahŕňa služby a vylúčenia | Zachovanie odkazov na parcelu a platby |
+
+Pre kontroly špecifické pre miesto určenia použite: [Sprievodca po mori USA](/sk/articles/superbuy-shipping-to-usa/) alebo [Sprievodca po UK lodnej doprave](/sk/articles/superbuy-shipping-to-uk/). Vysvetľujú, ako oddeliť dopravu od cieľových poplatkov. Samotný výsledok kalkulačky nestanovuje uplatniteľné dovozné zaobchádzanie.
 
 ## Začnite opisom parcely
 
@@ -88,4 +98,4 @@ Otvor [oficiálna kalkulačka prepravy Superbuy](https://www.superbuy.com/en/pag
 - [Prepravná kalkulačka Superbuy](https://www.superbuy.com/en/page/query/freight/) — vstupné jednotky, traťové limity a vysvetlenie objemovej hmotnosti.
 - [Zloženie poplatku Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — medzinárodné prepravné platby a kontrola konečných nákladov.
 
-Oficiálne stránky boli preskúmané. 19 Október. 2026. Vykonané merania sú nezávislými aritmetickými príkladmi, nie súčasnými prepravnými sadzbami alebo prísľubmi oprávnenosti trasy.
+Oficiálne strany boli preskúmané 21. októbra 2026. Vykonané merania sú nezávislými aritmetickými príkladmi, nie sú to súčasné prepravné sadzby alebo prísľuby oprávnenosti trasy.

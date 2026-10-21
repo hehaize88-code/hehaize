@@ -1,18 +1,25 @@
 ---
 slug: superbuy-fees
-title: 'Superbuyn maksut: laadi budjetti, jota voit verrata toteutuneisiin maksuihin'
-description: Erilliset tuotekustannukset, kotimainen toimitus, valinnaiset palvelut ja kansainvälinen lähetys, tarkista sitten arviot Superbuy-tilaustietojen perusteella.
+title: 'Superbuy-maksut: tuotteet, palvelut ja toimitus'
+description: Katso, mitkä Superbuy-kulut kuuluvat budjettiisi, mitä voi tapahtua ennen lähetystä ja miten maksut sovitetaan yhteen ilman, että samaa maksua lasketaan kahteen kertaan.
 topic: Kustannukset ja budjetointi
 keyword: superbuy fees
 order: 3
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: fi
 ---
-
 
 Hyödyllinen Superbuy-budjetti vastaa kahteen kysymykseen: mitä olet jo suostunut maksamaan ja mikä voi vielä muuttua? Se, että jokainen numero lisätään yhteen kokonaisuuteen liian aikaisin, kätkee tämän eron. Se voi saada arvioidun toimitusbudjetin näyttämään yhtä varmalta kuin maksettu erälasku.
 
 Tässä oppaassa käytetään yksinkertaista kustannusrekisteriä, jolla nämä päätökset pidetään näkyvillä. Se on suunnittelumenetelmä, ei nykyinen hinta-arvio. Valitsemasi kohde, palveluvaihtoehdot, maksutapa, paketti ja kohde määrittävät maksut, jotka pitää tarkistaa tililtäsi.
+
+## Tarkista kokonaisarvo ennen tuotteiden vertailua
+
+Erota valittu tuote ja kotitoimitus valinnaisista palveluista, kansainvälisistä kuljetus- ja kohdemaksuista. Kirjaa valuutta ja se, maksetaanko kukin summa, noteerataanko se vai onko se vielä arvio. Pidä alennukset alustavina, kunnes ne hyväksytään varsinaisessa maksuvirrassa.
+
+Hyödyllinen vertailu kysyy, mitä muutoksia tapahtuu, kun valitset toisen kohteen. Alempaan ostohintaan voi tulla isompi pakkaus; lisätarkastus voi vastata kysymykseen ennen kallista lähetystä. Vertaa kokonaista suunnitelmaa ja sen epävarmuustekijöitä ja vahvista sitten tililläsi olevat syytteet.
+
+Määräpaikkakohtaiset tarkastukset, lue [laivaus Yhdysvaltoihin](/fi/articles/superbuy-shipping-to-usa/) tai [laivaliikenne Isoon-Britanniaan](/fi/articles/superbuy-shipping-to-uk/). Pidä kuljetus- ja tuontimaksut erillään, ellei nykyisissä palveluehdoissa nimenomaisesti selitetä, mitä niihin sisältyy. Älä käsittele tuntematonta määrää nollana.
 
 ## Erillinen ostos pakettitoimituksesta
 
@@ -91,4 +98,4 @@ Tuloksena oleva levy helpottaa seuraavan ostoksen suunnittelua. Se osoittaa, mis
 - [Superbuy-maksun koostumus](https://www.superbuy.com/en/page/guide/feecomposition/) — Kustannukset, palveluluokat ja postin loppulaskutus.
 - [Superbuy-toimituslaskuri](https://www.superbuy.com/en/page/query/freight/) — tämänhetkiset reittiarviotiedot syötetty.
 
-Viralliset sivut tarkistettiin. 19 Lokakuussa. 2026. Emme lisää maksusivulla olevia epäjohdonmukaisia aritmeettisia esimerkkejä, vaan yllä oleva esimerkki on nimenomaan kuvitteellinen. Vahvista todellinen maksuerittely ennen maksua.
+Viralliset sivut tarkistettiin 21. lokakuuta 2026. Emme lisää maksusivulla olevia epäjohdonmukaisia aritmeettisia esimerkkejä, vaan yllä oleva esimerkki on nimenomaan kuvitteellinen. Vahvista todellinen maksuerittely ennen maksua.

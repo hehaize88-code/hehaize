@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuy siuntimo skaičiuoklė: palyginkite įverčius pagal tinkamus duomenis'
-description: Naudojimas paskirties vieta, sklypo svoris, matmenys ir produktų kategorijos palyginti Superbuy laivybos vertinimus neklaidinant faktinis ir tūrio svoris.
+title: 'Superbuy siuntimo skaičiuoklė: svoris ir išlaidos'
+description: Superbuy laivybos vertinimus palyginti su tinkamu svoriu, matmenimis ir paskirties vieta. Naudokite siuntinių kontrolinį sąrašą prieš pasirinkdami maršrutą arba mokėjimo.
 topic: Pristatymas
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: lt
 ---
-
 
 Laivybos sąmata apibūdina sklypą pagal kelias prielaidas. Pakeisti paskirties vietą, prekių kategoriją, matmenis ar maršrutą ir jums gali būti užduodamas kitoks kainodaros klausimas. Naudinga išsaugoti šias prielaidas kartu su rezultatu, užuot rinkus vienintelę kainą be konteksto.
 
 Oficialus Superbuy skaičiuotuvas prašo paskirties, sandėlio, svorio, matmenų ir produkto kategorijos. Šiame vadove paaiškinama, kaip parengti įvestą informaciją ir palyginti rezultatus. Ji neskelbia universalios kainos už kilogramą ar nerekomenduoja maršruto nežinodama jūsų faktinio siuntinio.
+
+## Greitas kontrolinis sąrašas prieš prašant pateikti citatą
+
+Laikyti paskirties vietą, sandėlį, prekių kategorijas, fizinį svorį ir išorinio sklypo matmenis kartu. Pažymėkite kiekvieną nepatvirtintą matavimą kaip įvertį. Išsaugokite maršruto pavadinimą, sąskaitos pateikimo taisyklę, rodomą mokestį ir datą su kiekvienu rezultatu, kad vėliau galėtumėte atkurti palyginimą.
+
+| Prieš lyginant | Prieš pateikiant | Po galutinio mokesčio |
+| --- | --- | --- |
+| Tikrinamieji vienetai ir faktinis turinys | Patvirtinti kompleksinius matavimus ir maršruto tinkamumą | Suderinti mokėjimą su galutine sąskaita |
+| Įrašoma reikalinga pakuotė | Įtrauktos paslaugos ir išimtys | Siųstą ir mokėjimo nuorodas saugoti |
+
+Atliekant su paskirties vieta susijusius patikrinimus, naudokite: [JAV laivybos vadovas](/lt/articles/superbuy-shipping-to-usa/) arba [JK laivybos vadovas](/lt/articles/superbuy-shipping-to-uk/). Jose paaiškinama, kaip atskirti transportą nuo paskirties mokesčių. Vien tik skaičiavimo rezultatas nenustato taikomo importo režimo.
 
 ## Pradėti su sklypo aprašymas
 
@@ -88,4 +98,4 @@ Atidaryk [Oficialus Superbuy laivybos skaičiuotuvas](https://www.superbuy.com/e
 - [Superbuy laivybos skaičiuoklė](https://www.superbuy.com/en/page/query/freight/) — įvesties vienetai, maršruto ribos ir tūrinio svorio paaiškinimas.
 - [Superbuy mokesčių sudėtis](https://www.superbuy.com/en/page/guide/feecomposition/) — tarptautinių laivų apmokėjimas ir galutinių išlaidų tikrinimas.
 
-Oficialūs puslapiai buvo peržiūrėti. 19 Spalio mėn. 2026. Apdoroti matavimai yra nepriklausomi aritmetiniai pavyzdžiai, o ne dabartiniai vežėjų tarifai arba pažadai, kad maršrutas atitinka reikalavimus.
+Oficialūs puslapiai buvo peržiūrėti 2026 m. spalio 21 d. Apdoroti matavimai – tai nepriklausomi aritmetiniai pavyzdžiai, o ne dabartiniai vežėjų tarifai arba pažadai dėl maršruto tinkamumo.

@@ -6,7 +6,7 @@ const origin='https://superbuytab.com';
 const locales=['en','de','es','fr','it','pl','pt','ro','sv','nl','da','fi','el','cs','hu','bg','sk','hr','sl','lt','lv','et','ga','mt'];
 const render=async(path)=>{const response=await worker.fetch(new Request(origin+path),{},{});return {response,doc:parseHTML(await response.text()).document};};
 const files=(await readdir('src/content/articles')).filter(f=>f.endsWith('.md'));
-assert.equal(files.length,10);
+assert.equal(files.length,14);
 const minimums=[];
 for(const file of files){
  const raw=await readFile('src/content/articles/'+file,'utf8');
@@ -27,7 +27,7 @@ for(const file of files){
  for(const link of doc.querySelectorAll('.article-prose a')){
    const href=link.getAttribute('href');
    if(href.startsWith('/articles/'))assert(files.includes(href.split('/')[2]+'.md'),'Broken article link '+href);
-   if(href.startsWith('http'))assert.equal(new URL(href).hostname,'www.superbuy.com');
+   if(href.startsWith('http'))assert(['www.superbuy.com','www.gov.uk','www.cbp.gov'].includes(new URL(href).hostname),'Unexpected source '+href);
  }
 }
 for(const code of locales){
@@ -45,7 +45,7 @@ for(const code of locales){
  assert(doc.querySelector(`.site-header nav a[href="${prefix}/articles/"]`));
  assert(!doc.body.textContent.includes('undefined'));
  if(code!=='en')assert.notEqual(schema.mainEntity[0].name,'What does Superbuy do?',code+' English FAQ fallback');
- const hub=await render(prefix+'/articles/');assert.equal(hub.doc.querySelectorAll('.article-card').length,10);
+ const hub=await render(prefix+'/articles/');assert.equal(hub.doc.querySelectorAll('.article-card').length,14);
  assert.equal(hub.doc.querySelector('link[rel=canonical]').href,origin+prefix+'/articles/');
  assert.equal(hub.doc.querySelectorAll('link[hreflang]').length,25);
  assert.equal(hub.response.headers.get('X-Robots-Tag'),'index, follow');
@@ -117,4 +117,4 @@ const second=await render(nextLink);assert.equal(second.response.status,200);
 assert.equal(second.doc.querySelector('.pagination [aria-current=page]').textContent,'2');
 const firstProducts=[...jersey.doc.querySelectorAll('.product-card')].map(a=>a.getAttribute('href'));
 assert([...second.doc.querySelectorAll('.product-card')].every(a=>!firstProducts.includes(a.getAttribute('href'))));
-console.log(JSON.stringify({passed:true,articles:240,wordRange:[Math.min(...minimums),Math.max(...minimums)],faqPerLanguage:26,languages:24,categoryReset:'passed',paginationFirstMiddleLast:'passed',sourceCategoryTotal:total,localizedEditorialCanonical:'passed'}));
+console.log(JSON.stringify({passed:true,articles:336,wordRange:[Math.min(...minimums),Math.max(...minimums)],faqPerLanguage:26,languages:24,categoryReset:'passed',paginationFirstMiddleLast:'passed',sourceCategoryTotal:total,localizedEditorialCanonical:'passed'}));

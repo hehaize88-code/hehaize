@@ -1,18 +1,25 @@
 ---
 slug: superbuy-fees
-title: 'Poplatky Superbuy: sestavte rozpočet, který lze porovnat se skutečnými platbami'
-description: Samostatné náklady na výrobky, domácí dodávky, volitelné služby a mezinárodní dopravu, pak zkontrolujte odhady podle vašich Superbuy objednávkových záznamů.
+title: 'Poplatky Superbuy: zboží, služby a doprava'
+description: Podívejte se, které náklady Superbuy patří do vašeho rozpočtu, co se může změnit před odesláním a jak sladit platby bez počítání stejný poplatek dvakrát.
 topic: Náklady a rozpočet
 keyword: superbuy fees
 order: 3
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: cs
 ---
-
 
 Užitečný rozpočet Superbuy odpovídá na dvě otázky: co jste již souhlasili s platem a co se ještě může změnit? Přidání každého čísla do jednoho celkem příliš brzy skrývá tento rozdíl. To může učinit odhadovanou částku lodního rozpočtu vypadat tak jistý jako placenou fakturu položky.
 
 Tato příručka používá jednoduchý záznam nákladů, aby tato rozhodnutí byla viditelná. Jedná se o plánovací metodu, nikoli o aktuální odhad ceny. Vaše vybraná položka, možnosti služby, způsob platby, balík a cíl určují poplatky, které je třeba zkontrolovat na vašem účtu.
+
+## Zkontrolujte celkový počet před porovnáním produktů
+
+Oddělte vybranou položku a vnitrostátní dodávku od volitelných služeb, mezinárodní dopravy a cílových poplatků. Zaznamenejte měnu a to, zda je každá částka zaplacena, kótována nebo stále stanovena. Udržujte slevy prozatímní, dokud nebudou přijaty ve skutečném platebním toku.
+
+Užitečné srovnání se ptá, co se změní, když si vyberete jinou položku. Nižší kupní cena může přijít s objemnějším balením; dodatečná kontrola může odpovědět na otázku před nákladnou přepravou. Porovnejte kompletní plán a jeho nejistoty, pak potvrďte příslušné poplatky na vašem účtu.
+
+Pokud jde o kontroly specifické pro místo určení, má být uvedeno: [přeprava do USA](/cs/articles/superbuy-shipping-to-usa/) nebo [přeprava do Spojeného království](/cs/articles/superbuy-shipping-to-uk/). Udržujte poplatky za dopravu a dovoz odděleně, pokud současné servisní podmínky výslovně nevysvětlují, co je zahrnuto. Neberte neznámé množství jako nulu.
 
 ## Oddělený nákup od dodání balíku
 
@@ -91,4 +98,4 @@ Výsledný záznam usnadňuje plánování dalšího nákupu. Ukazuje, kde byly 
 - [Složení poplatku Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — fáze nákladů, kategorie služeb a konečná fakturace.
 - [Superbuy přepravní kalkulačka](https://www.superbuy.com/en/page/query/freight/) — aktuální údaje o odhadu trasy zadané.
 
-Oficiální stránky byly přezkoumány. 19 Říjen. 2026. Nereprodukujeme nekonzistentní aritmetické příklady nalezené na stránce poplatku; výše uvedený příklad je explicitně fiktivní. Potvrďte skutečné členění poplatků před platbou.
+Oficiální stránky byly přezkoumány 21. října 2026. Nereprodukujeme nekonzistentní aritmetické příklady nalezené na stránce poplatku; výše uvedený příklad je explicitně fiktivní. Potvrďte skutečné členění poplatků před platbou.

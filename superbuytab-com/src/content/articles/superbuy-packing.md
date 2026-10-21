@@ -1,16 +1,31 @@
 ---
 slug: superbuy-packing
-title: "Superbuy Packing and Shipping Expert: Write a Clear Parcel Brief"
-description: "Choose packaging around the contents, protection needs and parcel measurements, and prepare a precise brief when asking Superbuy for packing help."
+title: 'Superbuy Shipping Expert & Packing: Parcel Checklist'
+description: 'Prepare a clear Superbuy packing request: what to keep, remove and protect, which charges to confirm, and how to compare the finished parcel.'
 topic: Parcel planning
 keyword: superbuy shipping expert
 order: 7
-checked: "2026-10-19"
+checked: '2026-10-21'
 ---
 
 Good packing begins with a clear description of what you want protected. “Make it cheap and safe” expresses a preference, but it does not tell a warehouse whether you care about an intact retail box, a rigid shape, delicate surfaces or minimum parcel dimensions.
 
 This guide helps you turn those priorities into a practical packing brief. Superbuy offers packaging services and links to Shipping Expert from its calculator. Availability, service scope and charges must be checked in the current official flow; we do not assume that an advisory service includes every packing action or the international freight itself.
+
+## A packing request you can adapt
+
+Use this checklist to prepare an order-specific request. Replace each description with your actual item references and priorities, then confirm the available service and charge before authorising work.
+
+| Include in the request | Your decision |
+| --- | --- |
+| Accepted items | List only items whose inspection is resolved |
+| Packaging to keep | Identify boxes, tags or protection that must remain |
+| Permitted changes | Specify what may be removed or folded |
+| Protection needs | Identify fragile surfaces and shapes that must not be compressed |
+| Cost approval | Ask for the service scope and charge before confirmation |
+| Final comparison | Request the resulting packed weight and outer dimensions |
+
+For shoes, use the [sneakers checklist](/articles/superbuy-sneakers-spreadsheet/) before deciding whether to keep the box. For clothing, use the [hoodie fit checklist](/articles/superbuy-hoodies-spreadsheet/) before approving compression or packaging removal. Resolve an uncertain fit or condition before making an irreversible packing change.
 
 ## Describe the contents before choosing a service
 
@@ -88,4 +103,4 @@ On receipt, compare the actual arrangement with your brief and record what worke
 - [Superbuy shipping calculator](https://www.superbuy.com/en/page/query/freight/) — route estimation and the Shipping Expert entry.
 - [Official Shipping Expert entry](https://www.superbuy.com/en/page/customization/expert-service/?isNeedParams=1) — confirm current scope within the service flow.
 
-Official pages were reviewed on 19 October 2026. No fixed expert-service price or guaranteed saving is asserted here; the brief and comparison framework are independent guidance.
+Official pages were reviewed on 21 October 2026. No fixed expert-service price or guaranteed saving is asserted here; the brief and comparison framework are independent guidance.

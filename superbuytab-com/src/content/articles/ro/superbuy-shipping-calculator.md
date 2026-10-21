@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Calculatorul de transport Superbuy: compară estimările folosind datele corecte'
-description: Utilizați destinația, greutatea parcelei, dimensiuni și categorii de produse pentru a compara estimările Superbuy de transport fără confuzie greutate reală și volumetrică.
+title: 'Calculator de livrare Superbuy: greutate și costuri'
+description: Comparați Superbuy de transport maritim estimeaza cu greutatea, dimensiunile și destinația potrivită. Utilizați lista de verificare a coletelor înainte de a alege o rută sau de plată.
 topic: Livrare
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: ro
 ---
-
 
 O estimare a transportului maritim descrie un colet sub un set de ipoteze. Schimbați destinația, categoria de elemente, dimensiunile sau ruta și puteți pune o altă întrebare de stabilire a prețurilor. Obiceiul util este de a salva aceste ipoteze alături de rezultat, mai degrabă decât colectarea unui singur preț, fără context.
 
 Calculatorul oficial al Superbuy cere destinaţia, depozitul, greutatea, dimensiunile şi categoria de produse. Acest ghid explică modul de pregătire a acestor informații introduse și de comparare a rezultatelor. Ea nu publică un preț universal pe kilogram sau recomandă o rută fără a cunoaște pachetul propriu-zis.
+
+## Lista de verificare rapidă înainte de a solicita un citat
+
+Păstraţi destinaţia, depozitul, categoriile de produse, greutatea fizică şi dimensiunile exterioare ale parcelei împreună. Marcați fiecare măsurătoare neconfirmată ca o estimare. Salvați numele rutei, regula de facturare, taxa afișată și data cu fiecare rezultat astfel încât să puteți reproduce comparație mai târziu.
+
+| Înainte de comparare | Înainte de depunere | După taxa finală |
+| --- | --- | --- |
+| Verificați unitățile și conținutul real | Confirmă măsurătorile ambalate și eligibilitatea traseului | Reconcilierea plății cu proiectul de lege final |
+| Înregistrează ambalajul necesar | Citește serviciile și excluderile incluse | Păstrați referințele de parcelă și plată |
+
+Pentru controale specifice destinaţiei, utilizaţi [SUA ghid de transport maritim](/ro/articles/superbuy-shipping-to-usa/) sau [Ghid maritim din Marea Britanie](/ro/articles/superbuy-shipping-to-uk/). Acestea explică modul în care se separă transportul de tarifele de destinație. Un rezultat numai pe calculator nu stabilește tratamentul aplicabil la import.
 
 ## Începe cu o descriere a parcelei
 
@@ -88,4 +98,4 @@ Deschide [Calculator oficial Superbuy de transport](https://www.superbuy.com/en/
 - [Calculator de transport Superbuy](https://www.superbuy.com/en/page/query/freight/) — unități de intrare, limite de traseu și explicații privind greutatea volumetrică.
 - [Compoziţia taxei Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — plata internaţională a transportului maritim şi verificarea costurilor finale.
 
-Paginile oficiale au fost revizuite. 19 Octombrie. 2026. Măsurătorile efectuate sunt exemple aritmetice independente, nu ratele actuale de transport sau promisiunile de eligibilitate a rutelor.
+Paginile oficiale au fost revizuite la 21 octombrie 2026. Măsurătorile efectuate sunt exemple aritmetice independente, nu ratele actuale de transport sau promisiunile de eligibilitate a rutelor.

@@ -1,22 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy tasud: koosta tegelike maksetega võrreldav eelarve'
-description: Eraldi toote maksumus, kodumaise kohaletoimetamise, vabatahtlikke teenuseid ja rahvusvahelise laevanduse, siis kontrollige hinnanguid võrreldes oma Superbuy tellimuse arvestust.
+title: 'Superbuy tasud: tooted, teenused ja tarne'
+description: Vaadake, millised Superbuy kulud kuuluvad oma eelarve, mis võib muutuda enne tarnee ja kuidas sobitada maksed lugemata sama tasu kaks korda.
 topic: Kulud ja eelarvestamine
 keyword: superbuy fees
 order: 3
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: et
 ---
 
-
-Kasulik Superbuy eelarve vastab kahele küsimusele: mida olete juba nõus maksma ja mida saab veel muuta? Iga numbri lisamine ühte kokku liiga vara peidab selle erinevuse. See võib teha hinnangulise laevanduse eelarve summa tunduda sama kindel kui makstud kaubaartikli arve.
+Kasulik Superbuy eelarve vastab kahele küsimusele: mida olete juba nõus maksma ja mida saab veel muuta? Iga numbri lisamine ühte kokku liiga vara peidab selle erinevuse. See võib teha hinnangulise tarnee eelarve summa tunduda sama kindel kui makstud kaubaartikli arve.
 
 Käesolevas juhendis kasutatakse lihtsaid kuluandmeid, et need otsused oleksid nähtavad. See on planeerimismeetod, mitte praegune hinnahinnang. Teie valitud objekt, teenusevalikud, makseviis, pakid ja sihtkoht määravad kindlaks tasud, mida teie kontol tuleb kontrollida.
 
+## Kontrollige kokku enne toodete võrdlemist
+
+Eraldada valitud ese ja riigisisesed tarned vabatahtlikest teenustest, rahvusvahelistest transpordi- ja sihtkohatasudest. Märkige valuuta ja kas iga summa on makstud, noteeritud või ikka hinnanguline. Hoidke allahindlusi kuni tegeliku maksevoo aktsepteerimiseni.
+
+Kasulik võrdlus küsib, mis muutub, kui valid mõne muu elemendi. Madalam ostuhind võib tulla lahtisema pakendiga; täiendav kontroll võib vastata küsimusele enne kallist vedu. Võrrelge täielikku plaani ja selle ebakindlust, seejärel kinnitage asjakohased tasud oma konto.
+
+Sihtkohaspetsiifiliste kontrollide puhul lugeda [tarne USA-sse](/et/articles/superbuy-shipping-to-usa/) või [tarne Ühendkuningriiki](/et/articles/superbuy-shipping-to-uk/). Hoidke transpordi- ja impordimaksud eraldi, välja arvatud juhul, kui praegused teenusetingimused selgitavad selgelt, mis on hõlmatud. Ärge kasutage tundmatut kogust nullina.
+
 ## Eraldi ostmine pakiveost
 
-Superbuy ametlik tasu leht kirjeldab ostmist ja rahvusvahelist laevandust eraldi etappidena. Samuti eristatakse standardostmist lisateenustest. Praktiliselt viitab see sellele, et kauba ostmiseks vajalik summa iseenesest ei ütle teile, mis on valmispaki saamine kulukas.
+Superbuy ametlik tasu leht kirjeldab ostmist ja rahvusvahelist tarnet eraldi etappidena. Samuti eristatakse standardostmist lisateenustest. Praktiliselt viitab see sellele, et kauba ostmiseks vajalik summa iseenesest ei ütle teile, mis on valmispaki saamine kulukas.
 
 Luua ostu vahesumma ja tarne vahesumma. Hoidke neid lahus, kuni teil on igaühele vajalik teave. See võimaldab muuta tarneplaani, segamata seda juba makstud müüja arvega.
 
@@ -66,9 +73,9 @@ Viimase kirje jaoks kasutage seda, mida teie maksetehing tegelikult näitab. Pla
 
 Enne lao saabumist võib kaal ja mõõtmed olla ebaselged. Kui kaup on kätte saadud, on teil kauba kohta paremat teavet. Pärast pakkimisotsuseid on sul pakist palju tähendusrikkam pilt. Iga etapp on võimalus asendada oletus tõenditega.
 
-Kasuta seda [laevandus kalkulaatori juhend](/et/articles/superbuy-shipping-calculator/) salvestada andmed, mis on sisestatud hinnangu taha. Võrdle vastavat teavet: sama sihtkoht ja kaubaartiklite kategooriad koos kavandatud pakendiga. Teise maatüki hinnaprognoos ei ole usaldusväärne võrdlusalus lihtsalt seetõttu, et selle kaal on sarnane.
+Kasuta seda [tarne kalkulaatori juhend](/et/articles/superbuy-shipping-calculator/) salvestada andmed, mis on sisestatud hinnangu taha. Võrdle vastavat teavet: sama sihtkoht ja kaubaartiklite kategooriad koos kavandatud pakendiga. Teise maatüki hinnaprognoos ei ole usaldusväärne võrdlusalus lihtsalt seetõttu, et selle kaal on sarnane.
 
-Ametlik tasuleht selgitab, et rahvusvahelist laevandust kogutakse esialgu hinnangu alusel ja hiljem kontrollitakse logistikateenuse osutaja arve alusel. Hoidke see lõplik arve lahus algsest maksest oma dokumentides, nii et hilisem kohandamine on arusaadav.
+Ametlik tasuleht selgitab, et rahvusvahelist tarnet kogutakse esialgu hinnangu alusel ja hiljem kontrollitakse logistikateenuse osutaja arve alusel. Hoidke see lõplik arve lahus algsest maksest oma dokumentides, nii et hilisem kohandamine on arusaadav.
 
 ## Hinnata valikulisi teenuseid kui otsuseid
 
@@ -80,7 +87,7 @@ Kaalu ka ajastust. Kasulik kontroll enne lähetamist võib takistada sobimatu es
 
 ## Sulgege kulurekord pärast kohaletoimetamist
 
-Kontrollige iga makset, tagasimakset ja lõplikku laevanduskulude korrigeerimist selle viite alusel. Kui see on kasulik, siis hoida hinnangulised arvud ajalooliste märkustena, kuid märkida need asendusena. Teie täidetud kogusumma peaks võimaluse korral kasutama lõplikke makstud summasid ja tuvastama kõik veel tasumata summad.
+Kontrollige iga makset, tagasimakset ja lõplikku tarnekulude korrigeerimist selle viite alusel. Kui see on kasulik, siis hoida hinnangulised arvud ajalooliste märkustena, kuid märkida need asendusena. Teie täidetud kogusumma peaks võimaluse korral kasutama lõplikke makstud summasid ja tuvastama kõik veel tasumata summad.
 
 Mitut eset sisaldava paki puhul võite jagada oma veokulud enda võrdluseks. Märkida meetod, mida te kasutate: võrdsed kulueraldised, kulude jaotamine kaalu või muu läbipaistva lähenemisviisi alusel. Ükski neist isiklikest eraldistest ei muuda tegelikku arvet ja igaüks vastab veidi erinevale eelarveküsimusele.
 
@@ -88,7 +95,7 @@ Tulemuseks rekord teeb teie järgmise ostu lihtsam planeerida. See näitab, kus 
 
 ## Ametlikud viited
 
-- [Superbuy tasu koosseisu](https://www.superbuy.com/en/page/guide/feecomposition/) — kuluetapid, teenusekategooriad ja laevanduse lõplik arve.
-- [Superbuy laevanduse kalkulaator](https://www.superbuy.com/en/page/query/freight/) — sisestatud praegune marsruudi hindamise teave.
+- [Superbuy tasu koosseisu](https://www.superbuy.com/en/page/guide/feecomposition/) — kuluetapid, teenusekategooriad ja tarnee lõplik arve.
+- [Superbuy tarnee kalkulaator](https://www.superbuy.com/en/page/query/freight/) — sisestatud praegune marsruudi hindamise teave.
 
-Ametlikud leheküljed vaadati üle. 19 Oktoober. 2026. Me ei paljunda ebajärjekindlaid aritmeetilisi näiteid, mis on toodud tasu leheküljel; eespool toodud näide on selgelt väljamõeldis. Kinnitage tegelik tasu jaotus enne maksmist.
+Ametlikud leheküljed vaadati läbi 21. oktoobril 2026. Me ei paljunda ebajärjekindlaid aritmeetilisi näiteid, mis on toodud tasu leheküljel; eespool toodud näide on selgelt väljamõeldis. Kinnitage tegelik tasu jaotus enne maksmist.

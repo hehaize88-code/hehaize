@@ -1,18 +1,25 @@
 ---
 slug: superbuy-fees
-title: 'Taxas do Superbuy: preparar um orçamento que possa comparar com os pagamentos'
-description: Custo do produto separado, entrega nacional, serviços opcionais e transporte internacional, em seguida, verifique estimativas com seus registros de pedidos Superbuy.
+title: 'Taxas Superbuy: produtos, serviços e envios'
+description: Veja quais os custos do Superbuy pertencem ao seu orçamento, o que pode mudar antes do envio e como conciliar pagamentos sem contar a mesma carga duas vezes.
 topic: Custos e orçamento
 keyword: superbuy fees
 order: 3
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: pt
 ---
-
 
 Um orçamento útil do Superbuy responde a duas perguntas: o que você já concordou em pagar, e o que ainda pode mudar? Adicionar cada número em um total muito cedo esconde essa distinção. Pode fazer com que um montante estimado do orçamento de transporte pareça tão certo como uma fatura do item pago.
 
 Este guia usa um simples registro de custos para manter essas decisões visíveis. É um método de planejamento, não uma estimativa de preço atual. O item selecionado, opções de serviço, método de pagamento, pacote e destino determinam as cargas que precisam ser verificadas na sua conta.
+
+## Verifique o total antes de comparar os produtos
+
+Separar o item selecionado e a entrega nacional de serviços opcionais, transportes internacionais e taxas de destino. Registrar a moeda e se cada montante é pago, cotado ou ainda uma estimativa. Mantenha os descontos provisórios até serem aceites no fluxo de pagamento real.
+
+Uma comparação útil pergunta o que muda quando você escolhe outro item. Um preço de compra mais baixo pode vir com embalagens mais voluminosas; inspeção extra pode responder a uma pergunta antes de um carregamento caro. Compare o plano completo e suas incertezas, depois confirme os custos relevantes em sua conta.
+
+Para os controlos específicos do destino, leia-se: [transporte para os EUA](/pt/articles/superbuy-shipping-to-usa/) ou [transporte para o Reino Unido](/pt/articles/superbuy-shipping-to-uk/)- Sim. Manter separadas as taxas de transporte e importação, a menos que os termos de serviço atuais expliquem explicitamente o que está incluído. Não trate uma quantidade desconhecida como zero.
 
 ## Compra separada da entrega de pacotes
 
@@ -91,4 +98,4 @@ O registro resultante torna sua próxima compra mais fácil de planejar. Mostra 
 - [Composição da taxa Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — estágios de custo, categorias de serviço e faturamento final de transporte.
 - [Calculadora de envio Superbuy](https://www.superbuy.com/en/page/query/freight/) — informação atual de estimativa de rota introduzida.
 
-As páginas oficiais foram revistas. 19 Outubro. 2026. Não reproduzimos exemplos aritméticos inconsistentes encontrados na página de taxas; o exemplo acima é explicitamente fictício. Confirme a desagregação real da taxa antes do pagamento.
+As páginas oficiais foram revistas em 21 de outubro de 2026. Não reproduzimos exemplos aritméticos inconsistentes encontrados na página de taxas; o exemplo acima é explicitamente fictício. Confirme a desagregação real da taxa antes do pagamento.

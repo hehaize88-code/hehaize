@@ -1,18 +1,25 @@
 ---
 slug: superbuy-fees
-title: 'Tariffi ta’ Superbuy: baġit li tista’ tqabbel mal-ħlasijiet reali'
-description: Spiża tal-prodott separat, kunsinna domestika, servizzi fakultattivi u trasport bil-baħar internazzjonali, imbagħad iċċekkja l-istimi kontra rekords tiegħek Superbuy.
+title: 'Tariffi Superbuy: prodotti, servizzi u kunsinna'
+description: Ara liema spejjeż Superbuy jappartjenu fil-baġit tiegħek, dak li jista 'jinbidel qabel it-tbaħħir u kif tirrikonċilja l-pagamenti mingħajr ma jgħoddu l-istess ħlas darbtejn.
 topic: Spejjeż u bbaġitjar
 keyword: superbuy fees
 order: 3
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: mt
 ---
-
 
 Baġit utli Superbuy iwieġeb żewġ mistoqsijiet: dak li diġà qbilt li tħallas, u dak li għadu jista' jinbidel? Iżżid kull numru f'total wieħed ġlud kmieni wisq dik id-distinzjoni. Tista' tagħmel stima tal-ammont tal-baġit tat-trasport marittimu tidher bħala ċerta bħala fattura mħallsa tal-oġġett.
 
 Din il-gwida tuża rekord sempliċi tal-ispejjeż biex iżżomm dawk id-deċiżjonijiet viżibbli. Huwa metodu ta' ppjanar, mhux stima attwali tal-prezz. Oġġetti magħżula tiegħek, għażliet ta 'servizz, metodu ta' ħlas, pakkett u destinazzjoni jiddeterminaw l-imposti li jeħtieġ li jiġu vverifikati fil-kont tiegħek.
+
+## Iċċekkja t-total qabel tqabbel il-prodotti
+
+Issepara l-oġġett magħżul u l-konsenja domestika minn servizzi fakultattivi, tariffi internazzjonali tat-trasport u tad-destinazzjoni. Irreġistra l-munita u jekk kull ammont hux imħallas, ikkwotat jew għadu stima. Żomm l-iskontijiet provviżorji sakemm jiġu aċċettati fil-fluss attwali tal-pagament.
+
+Paragun utli jistaqsi liema bidliet meta tagħżel oġġett ieħor. Prezz tax-xiri aktar baxx jista' jiġi ma' imballaġġ iktar goff; spezzjoni żejda tista' twieġeb mistoqsija qabel vjeġġ għali. Qabbel il-pjan sħiħ u l-inċertezzi tiegħu, imbagħad ikkonferma l-imposti rilevanti fil-kont tiegħek.
+
+Għall-kontrolli speċifiċi għad-destinazzjoni, aqra [it-tbaħħir lejn l-Istati Uniti](/mt/articles/superbuy-shipping-to-usa/) jew [tbaħħir lejn ir-Renju Unit](/mt/articles/superbuy-shipping-to-uk/). Iż-żamma tat-tariffi tat-trasport u tal-importazzjoni separata sakemm it-termini tas-servizz attwali ma jispjegawx b'mod espliċitu x'inhu inkluż. Tikkurax ammont mhux magħruf bħala żero.
 
 ## Xiri separat mill-konsenja tal-pakketti
 
@@ -91,4 +98,4 @@ Ir-rekord li jirriżulta jagħmel ix-xiri li jmiss tiegħek aktar faċli biex ti
 - [Il-kompożizzjoni tat-tariffi Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — l-istadji tal-ispejjeż, il-kategoriji tas-servizzi u l-kontijiet finali tat-tbaħħir.
 - [Il-kalkolatur tat-tbaħħir Superbuy](https://www.superbuy.com/en/page/query/freight/) — l-informazzjoni attwali dwar l-istima tar-rotta mdaħħla.
 
-Il-paġni uffiċjali ġew riveduti fiż-19 Ottubru 2026. Aħna ma jirriproduċux eżempji aritmetiċi inkonsistenti misjuba fuq il-paġna miżata; l-eżempju hawn fuq huwa espliċitament fittizju. Ikkonferma t-tqassim effettiv tat-tariffi qabel il-ħlas.
+Il-paġni uffiċjali ġew riveduti fil-21 ta' Ottubru 2026. Aħna ma jirriproduċux eżempji aritmetiċi inkonsistenti misjuba fuq il-paġna miżata; l-eżempju hawn fuq huwa espliċitament fittizju. Il-kodiċi tal-munita tal-emittent.

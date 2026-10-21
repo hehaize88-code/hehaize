@@ -1,18 +1,32 @@
 ---
 slug: superbuy-packing
-title: 'Emballage et Shipping Expert Superbuy : donner des consignes claires pour le colis'
-description: Choisissez l'emballage autour du contenu, les besoins de protection et les mesures de colis, et préparez un bref précis quand vous demandez de l'aide à l'emballage Superbuy.
-topic: Planification des parcelles
+title: 'Superbuy Shipping Expert : préparer l’emballage'
+description: 'Préparez une demande d''emballage de Superbuy claire : que conserver, retirer et protéger, quels frais confirmer, et comment comparer le colis fini.'
+topic: Planification des colis
 keyword: superbuy shipping expert
 order: 7
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: fr
 ---
-
 
 Un bon emballage commence par une description claire de ce que vous voulez protéger. "Faites-le bon marché et sûr" exprime une préférence, mais il ne dit pas à un entrepôt si vous vous souciez d'une boîte de détail intacte, d'un format rigide, de surfaces délicates ou de dimensions minimales de colis.
 
 Ce guide vous aide à transformer ces priorités en un dossier d'emballage pratique. Superbuy offre des services d'emballage et des liens vers Shipping Expert à partir de sa calculatrice. La disponibilité, la portée du service et les frais doivent être vérifiés dans le flux officiel actuel; nous ne supposons pas qu'un service consultatif inclut toutes les mesures d'emballage ou le fret international lui-même.
+
+## Une demande d'emballage que vous pouvez adapter
+
+Utilisez cette liste de contrôle pour préparer une demande spécifique à une commande. Remplacer chaque description par vos références et priorités réelles, puis confirmer le service disponible et les frais avant d'autoriser les travaux.
+
+| Inclure dans la demande | Votre décision |
+| --- | --- |
+| Points acceptés | N'énumérez que les articles dont l'inspection est résolue |
+| Emballage à conserver | Identifier les boîtes, étiquettes ou protection qui doivent rester |
+| Changements autorisés | Préciser ce qui peut être enlevé ou replié |
+| Besoins de protection | Identifier les surfaces et formes fragiles qui ne doivent pas être comprimées |
+| Approbation des coûts | Demander la portée du service et les frais avant la confirmation |
+| Comparaison finale | Demander le poids emballé et les dimensions extérieures qui en résultent |
+
+Pour les chaussures, utilisez la [Liste de contrôle des baskets](/fr/articles/superbuy-sneakers-spreadsheet/) avant de décider s'il faut conserver la boîte. Pour l'habillement, utilisez le [Liste de contrôle de la forme de capuche](/fr/articles/superbuy-hoodies-spreadsheet/) avant d'approuver la compression ou le retrait de l'emballage. Résoudre un ajustement ou une condition incertain avant de procéder à un changement irréversible d'emballage.
 
 ## Décrivez le contenu avant de choisir un service
 
@@ -90,4 +104,4 @@ Sur réception, comparez l'arrangement réel avec votre mémoire et notez ce qui
 - [Calculateur d'expédition Superbuy](https://www.superbuy.com/en/page/query/freight/) — l'estimation de la route et l'entrée Shipping Expert.
 - [Entrée officielle de Shipping Expert](https://www.superbuy.com/en/page/customization/expert-service/?isNeedParams=1) — confirmer la portée actuelle du flux de service.
 
-Les pages officielles ont été examinées. 19 Octobre. 2026. Il n'y a pas de prix fixe pour les services d'experts ou d'économie garantie; le cadre de comparaison et de brèves lignes directrices est indépendant.
+Les pages officielles ont été examinées le 21 octobre 2026. Il n'y a pas de prix fixe pour les services d'experts ou d'économie garantie; le cadre de comparaison et de brèves lignes directrices est indépendant.

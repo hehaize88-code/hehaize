@@ -66,7 +66,7 @@ Cloudflare账户内superbuytab.com的zone已Active；正式部署前无DNS记录
 2. 目录搜索、价格排序、第3/4页跨上游页边界均正常。
 3. 不同详情购买 URL 解码后为各自原始商品 URL，含 ES7pVI。
 4. `www`保留路径和查询跳转，官方logo/favicon与静态脚本返回200。
-5. `sitemap.xml`含360个正式域名语言入口，首页`index, follow`，搜索和错误页`noindex`。
+5. `sitemap.xml`含504个正式域名语言入口，首页`index, follow`，搜索和错误页`noindex`。
 6. 记录成功部署标识和实际公网验证结果，之后再进行GSC/Bing/GA4接入。
 
 本轮测试命令：`npm run build`、`npm run check`、`npx wrangler deploy --dry-run`。dry-run不会发布网站。
@@ -93,3 +93,7 @@ Cloudflare账户内superbuytab.com的zone已Active；正式部署前无DNS记录
 ## GA4接入 — 2026-10-19
 
 运行提交`dcd9530248bf3da0bfba7b11a08493fe9d34b321`已通过构建`72112fe4-254b-4bb5-90b1-d2a5663c6f35`上线，51秒、Ready、100%流量，活动版本前缀`a4143e81`。正式首页和德语文章各输出一次GA标签与config，预览均不输出。GA4资源559470846、数据流16156808279、衡量ID G-4DQX9MML4J，实时报告已收到page_view等事件。本节更新此前GA4尚未执行的历史记录。
+
+## 2026-10-21 SEO 内容发布候选
+
+本次更新包含 336 篇语言文章、48 个专题页和 504 个 sitemap URL。构建、全套检查与 Wrangler dry-run 均已通过；部署仍沿用 GitHub main 的 superbuytab-com/** 自动构建，无新增凭据、绑定或数据库。最终公开验收以本节后续记录为准。

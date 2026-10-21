@@ -1,18 +1,25 @@
 ---
 slug: superbuy-fees
-title: 'Stroški Superbuya: pripravite proračun za primerjavo z dejanskimi plačili'
-description: Ločeni stroški izdelka, domača dostava, neobvezne storitve in mednarodna poštnina, nato preverite ocene glede na vaše Superbuy naročilne evidence.
+title: 'Pristojbine Superbuy: izdelki, storitve in dostava'
+description: Poglejte, kateri stroški Superbuy spadajo v vaš proračun, kaj se lahko spremeni pred poštnico in kako uskladiti plačila brez štetje enako pristojbino dvakrat.
 topic: Stroški in proračuni
 keyword: superbuy fees
 order: 3
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: sl
 ---
-
 
 Uporaben proračun Superbuy odgovarja na dve vprašanji: kaj ste se že dogovorili plačati in kaj se lahko še vedno spremeni? Z dodajanjem vseh številk v eno skupno prezgodaj skriva to razliko. Ocenjeni proračun za poštni prevoz je lahko tako določen kot račun na plačani postavki.
 
 Ta vodnik uporablja enostavno stroškovno evidenco, da bi te odločitve ohranili vidne. To je metoda načrtovanja, ne tekoča ocena cene. Vaš izbrani predmet, možnosti storitev, način plačila, paket in namembni kraj določajo pristojbine, ki jih je treba preveriti na vašem računu.
+
+## Pred primerjavo izdelkov preverite celotno vrednost
+
+Ločiti izbrano postavko in domačo dostavo od neobveznih storitev, mednarodnih prevozov ter namembnih stroškov. Vpišite valuto in ali je vsak znesek plačan, citiran ali še vedno ocenjen. Naj bodo popusti začasni, dokler se ne sprejmejo v dejanskem plačilnem toku.
+
+Uporabna primerjava sprašuje, kakšne spremembe se spremenijo pri izbiri drugega predmeta. Nižja nabavna cena lahko pride z razkošnejšo embalažo; dodatni inšpekcijski pregled se lahko na vprašanje odzove pred drago pošiljko. Primerjajte celoten načrt in njegove negotovosti, nato pa potrdite ustrezne pristojbine na vašem računu.
+
+Za preglede, specifične za namembni kraj, se preberi [poštnino v ZDA](/sl/articles/superbuy-shipping-to-usa/) ali [odprema v Združeno kraljestvo](/sl/articles/superbuy-shipping-to-uk/). Imejte ločene prevozne in uvozne pristojbine, razen če veljavni pogoji storitev izrecno pojasnijo, kaj je vključeno. Ne obravnavajte neznane količine kot nič.
 
 ## Ločeno nakupovanje od dostave paketov
 
@@ -91,4 +98,4 @@ Z rezultatom rekord naredi vaš naslednji nakup lažje načrtovati. To kaže, kj
 - [Superbuy sestava pristojbin](https://www.superbuy.com/en/page/guide/feecomposition/) — stroškovne faze, kategorije storitev in končno obračunavanje.
 - [Superbuy kalkulator](https://www.superbuy.com/en/page/query/freight/) — vnesene trenutne informacije o oceni poti.
 
-Uradne strani so bile pregledane. 19 Oktober. 2026. Ne razmnožujemo neskladnih aritmetičnih primerov, ki jih najdemo na strani provizije; zgoraj navedeni primer je izrecno izmišljen. Potrditev dejanske razčlenitve pristojbin pred plačilom.
+Uradne strani so bile pregledane 21. oktobra 2026. Ne razmnožujemo neskladnih aritmetičnih primerov, ki jih najdemo na strani provizije; zgoraj navedeni primer je izrecno izmišljen. Potrditev dejanske razčlenitve pristojbin pred plačilom.

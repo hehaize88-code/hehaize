@@ -1,18 +1,28 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Kalkulator dostave Superbuya: primerjajte ocene s pravimi podatki'
-description: Uporabite namembni kraj, težo paketov, dimenzije in kategorije izdelkov za primerjavo Superbuy ocen ladijskih prevozov brez zmenjave dejanske in volumnske teže.
+title: 'Kalkulator dostave Superbuy: teža in stroški'
+description: Primerjava Ocene ladijskega prevoza Superbuy s pravo težo, dimenzijami in namembnostjo. Pred izbiro poti ali plačila uporabite kontrolni seznam paketov.
 topic: Dostava
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-19'
+checked: '2026-10-21'
 lang: sl
 ---
-
 
 Ocena prevoza opisuje paket v okviru sklopa predpostavk. Spremenite namembni kraj, kategorijo postavk, dimenzije ali pot in morda postavljate drugačno vprašanje cen. Uporabna navada je, da se te predpostavke shranijo skupaj z rezultatom, namesto da se pobere enotna cena brez konteksta.
 
 Uradni kalkulator Superbuy zahteva namembnost, skladišče, težo, dimenzije in kategorijo blaga. Ta vodnik pojasnjuje, kako pripraviti navedene informacije, vnesene in primerjati rezultate. Ne objavi univerzalne cene na kilogram ali priporoèite poti, ne da bi vedeli svoj dejanski paket.
+
+## Hiter kontrolni seznam pred zahtevo za ponudbo
+
+Namembno mesto, skladišče in kategorije predmetov, telesna teža ter mere zunanjih parcel. Vsako nepotrjeno merjenje označite kot oceno. Shranite ime poti, pravilo obračunavanja, prikazano polnjenje in datum z vsakim rezultatom, tako da lahko primerjavo ponovimo kasneje.
+
+| Pred primerjavo | Pred predložitvijo | Po končni obremenitvi |
+| --- | --- | --- |
+| Preveri enote in dejansko vsebino | Potrdite pakirane meritve in upravičenost poti | Popravite plačilo s končnim računom |
+| Zapis zahtevane embalaže | Preberite vključene storitve in izključitve | Obdržite reference paketa in plačila |
+
+Za preglede, specifične za namembni kraj, uporabite [Vodnik za ladijski prevoz ZDA](/sl/articles/superbuy-shipping-to-usa/) ali [Vodnik za ladijski prevoz v Združenem kraljestvu](/sl/articles/superbuy-shipping-to-uk/). To pojasnjuje, kako ločiti prevoz od namembnih pristojbin. Samo kalkulatorski rezultat ne določa veljavne uvozne obravnave.
 
 ## Začnite z opisom paketa
 
@@ -88,4 +98,4 @@ Odpri [uradni Superbuy poštni kalkulator](https://www.superbuy.com/en/page/quer
 - [Superbuy kalkulator](https://www.superbuy.com/en/page/query/freight/) — vhodne enote, omejitve poti in razlaga prostorninske teže.
 - [Superbuy sestava pristojbin](https://www.superbuy.com/en/page/guide/feecomposition/) — mednarodno plačilo ladijskega prometa in preverjanje končnih stroškov.
 
-Uradne strani so bile pregledane. 19 Oktober. 2026. Delovne meritve so neodvisni aritmetični primeri, ne sedanje stopnje prevoza ali obljube o upravičenosti poti.
+Uradne strani so bile pregledane 21. oktobra 2026. Delovne meritve so neodvisni aritmetični primeri, niso sedanje stopnje prevoza ali obljube o upravičenosti poti.
