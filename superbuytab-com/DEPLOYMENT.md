@@ -97,3 +97,9 @@ Cloudflare账户内superbuytab.com的zone已Active；正式部署前无DNS记录
 ## 2026-10-21 SEO 内容发布候选
 
 本次更新包含 336 篇语言文章、48 个专题页和 504 个 sitemap URL。构建、全套检查与 Wrangler dry-run 均已通过；部署仍沿用 GitHub main 的 superbuytab-com/** 自动构建，无新增凭据、绑定或数据库。最终公开验收以本节后续记录为准。
+
+### 首次发布与公开验收
+
+发布提交：fdf35410e8d38325b56587f71d1af6db6a5d62b6。Cloudflare 正式构建 d28a062b-df7e-461a-bfdb-7fae2fd40b5a 成功，版本 eb3f523d-f5db-4d3b-947d-8b8b34634133。预览构建也成功。用户 Chrome 已确认正式文章目录显示 14 个主题；鞋类专题加载 8 张真实商品图；英国运输新文章的 canonical、25 个 hreflang 和移动端折叠目录正确。390px 页面无横向溢出。
+
+验收发现 CnBuyCha 鞋类目录含一条 Wedding flower arch。仅从专题推荐区排除此明确无关条目，再取足 8 项；原始商品目录、详情和搜索保持源数据行为。该修正已通过构建与全部 48 个专题页面检查。

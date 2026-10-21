@@ -531,3 +531,5 @@ GitHub提交完成：c3d2fb75635131a921456adad4349a9a7b922851，基于11b55e573c
 - 本地 npm run build、npm run check 通过：80 个真实商品分页、24 语言、336 篇文章结构 / 数字 / 内链、48 个专题页、4 类点击事件测试。英文文章词数范围 1219–1459。Wrangler dry-run 通过，只有 ASSETS 绑定，gzip 约 2.8 MiB。
 - 多语言稿采用机器辅助翻译并做标题、术语、数字、链接、结构校对，不应宣称经过全部语言的母语审稿。
 - 研究依据和统计窗口记录在 CONTENT_RESEARCH.md。低样本基线不能用于承诺点击增幅。发布后的实际公开页面验收另行记录。
+
+正式发布确认：提交 fdf35410e8d38325b56587f71d1af6db6a5d62b6，Cloudflare 构建 d28a062b-df7e-461a-bfdb-7fae2fd40b5a / 版本 eb3f523d-f5db-4d3b-947d-8b8b34634133 成功。Chrome 正式站显示新内容，390px 手机布局、真实商品图片、canonical / hreflang 与新文章目录折叠正常。仅在专题推荐区排除上游误放入鞋类的 Wedding flower arch，不修改源商品库。
