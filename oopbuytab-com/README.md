@@ -67,3 +67,11 @@ Cloudflare API currently requires reauthentication. Browser fallback has not bee
 发布成功后预期路径是 `https://hehaize88-code.github.io/hehaize/oopbuytab-com/`；在 Pages 发布完成前，这只是预期地址，不是已可访问的交付。
 
 GitHub 连接支持读写源码，但当前没有 Pages 设置接口；需在 GitHub 设置中完成这一步。
+
+
+### 发布状态（已完成）
+
+已在用户连接的 Chrome 中开启 GitHub Pages：`oopbuytab-preview` 分支的 `/docs`。
+公开预览：https://hehaize88-code.github.io/hehaize/oopbuytab-com/
+部署运行 39571120527 成功；公开首页 HTTP200，用户浏览器成功显示首页，首页全部13个图片元素已加载。无需用户再手动开启 Pages。
+正式域名尚未绑定。

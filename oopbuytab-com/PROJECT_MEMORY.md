@@ -369,3 +369,15 @@
 - 另有根入口跳转页；649个HTML共41257个站内链接/静态资源引用完成存在性核验。
 - 样本详情的购买链接仍为 https://oopbuy.com/product/weidian/7876894732?inviteCode=U68CWQBN5。
 - 本轮没有改变正式域名，也没有把预期 GitHub Pages URL 当作已发布成功。后续开启 Pages 后，必须核验真实公开HTTP和用户访问。
+
+
+### 本轮最终结果：GitHub Pages 公开预览已发布
+
+- GitHub 预览源提交：087949919c484c71e00ea169e03fa5043b174854；分支 oopbuytab-preview。
+- GitHub 连接缺少 Pages 配置能力，因此依据 browser:control-browser 使用已连接 Chrome，打开用户原有 GitHub 仓库页，设置 Deploy from a branch → oopbuytab-preview → /docs。界面明确确认 GitHub Pages source saved。没有使用 Cloudflare 浏览器标签页或修改 CF 设置。
+- 发布运行：https://github.com/hehaize88-code/hehaize/actions/runs/39571120527 ，completed / success。
+- 可访问公开预览：https://hehaize88-code.github.io/hehaize/oopbuytab-com/ 。首页独立HTTP200，用户Chrome已成功打开；13个首页图片元素均complete且naturalWidth>0。
+- 浏览器首页预览标签页已保留交付。截图存入本源码 docs/preview-home.png 作为视觉验收证据。
+- 不再需要用户手动开启 Pages。此前“等待启用”的记录已被本次成功发布覆盖。
+- 当前新预览用于看外观：构建时CNBuyCha数据，24语言、27种路由；搜索、排序、更多目录及未导出的商品详情进入源站。SSR完整版本源码仍在 oopbuytab-com，不要误将静态跳转方案当作已完成全部实时功能。
+- oopbuytab.com 未绑定；main 分支保持 f077069a1caa329940ec6c67869381498d2f5f5f。后续评审修改请继续使用 GitHub 的 oopbuytab-preview 分支及本项目记忆，不要新建重复站点。
