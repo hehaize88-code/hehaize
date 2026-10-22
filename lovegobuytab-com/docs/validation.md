@@ -30,3 +30,11 @@ Build and publication succeeded for version 1, source commit `5591ed3f65e1f2f30d
 The public-browser check was blocked by the host's Cloudflare security page (Ray ID `a4e5d4291e937eb7`). It was not bypassed. Actual published-host catalog/image loading and mobile interaction therefore remain unverified. The live-source integration results above are from the bundled Worker in the execution environment, not a claim about public browser loading.
 
 The purchased production domain is not bound. Preview remains noindex.
+
+## Replacement preview verified (2026-10-22)
+
+https://lovegobuytab-preview.hehaize88.workers.dev was deployed successfully by Cloudflare Workers Builds at 14:29 Asia/Shanghai. Build `afc17753-f5d1-4055-960c-905646821461`, commit `fa55b89d0876e2d9dcaad7d3cd20ab034d9fbcff`, Worker version `0ef30292-e643-412d-8d60-363e41032d55`.
+
+Actual Chrome checks: homepage rendered with all 15 image elements loaded and no horizontal overflow at 1920px; search 7876894732 returned one expected product; detail loaded its four original source photos and correct purchase URL with invite code 161CPG; FAQ displayed 36 questions; article index displayed 10 cards; shipping article displayed its full 7,494-character main content and its language menu preserved the article route. Preview robots/canonical checks passed in the bundled Worker and the public homepage contained noindex.
+
+The execution environment's direct HTTP check returned 403, so it was stopped. Browser checks above used the user's actual Chrome session, where the replacement preview loaded successfully. No custom domain, DNS, product database or source data was changed. The GitHub preview branch remains isolated from main.

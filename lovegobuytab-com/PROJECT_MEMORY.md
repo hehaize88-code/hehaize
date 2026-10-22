@@ -1,7 +1,7 @@
 # CNBuyCha 子站项目记忆：LoveGoBuy
 
 更新时间：2026-10-22（Asia/Shanghai）
-阶段：用户已购买 lovegobuytab.com；Astro SSR 公开预览已成功发布，24 语言内容检查通过。公开浏览器验证遇到托管平台 Cloudflare 拦截，不能宣称公开页面已完成浏览器验收。正式域名尚未绑定。历史调研记录保留，当前状态以第 16 节及之后为准。
+阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式域名尚未绑定。当前状态以第 19 节为准。
 本文件是本项目的持续交接记录。后续每次执行先读当前版本，再追加真实进展，不把提案写成已完成事实。
 
 ## 1. 用户已确定的要求
@@ -479,3 +479,20 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - 公开站自动浏览器遇到 Cloudflare “Sorry, you have been blocked”，Ray ID a4e5d4291e937eb7。未绕过拦截；公开环境商品加载和移动端交互仍需用户打开链接或平台解除拦截后复核。不能将本地真实数据检查写成公开站点加载验收。
 - GitHub 已保存于 preview/lovegobuytab-com 分支下 lovegobuytab-com/，独立草稿 PR：https://github.com/hehaize88-code/hehaize/pull/25。实现提交 c352ce83af0972be9066dde8e8ef8d6c7cc1e488；共新增 100 个文件。不合并主分支，不绑定正式域名，不修改其他站点。
 - 已知范围：搜图与订单 QC 的公开接口尚未核实；照片只标为商品照片。暂不提供虚构功能。生产上线前补齐源站接口或保持明确可用范围，并实现源站驱动的商品 sitemap 分片。
+
+
+## 19. 公开预览访问修复（2026-10-22，Asia/Shanghai）
+
+- 用户上传截图确认原 chatgpt.site 预览被 Cloudflare 安全层拦截。Sites 元数据仍 active/public，日志未发现主页面应用崩溃；未修改或绕过原托管平台安全规则。
+- Cloudflare 连接器返回需要重新认证；改用现有 Chrome 登录会话成功进入用户的 Cloudflare 账户。
+- 在账户 9010cea800ac2a140509889d88fe612e 创建独立临时 Worker `lovegobuytab-preview`，复用已连接 GitHub 仓库和已有构建令牌，不创建新令牌。正式域名和 DNS 未改动。
+- 新公开预览：https://lovegobuytab-preview.hehaize88.workers.dev
+- GitHub 分支：preview/lovegobuytab-com；根目录 lovegobuytab-com；只监听 lovegobuytab-com/**。主分支未合并；非生产分支构建关闭。
+- 配置 wrangler.preview.jsonc；Node 24.19.0；构建命令 `SITE_URL=https://lovegobuytab-preview.hehaize88.workers.dev npm run build`；发布命令 `npx --yes wrangler@4.151.3 deploy --config wrangler.preview.jsonc`。
+- 所有非正式域名保持 noindex，robots.txt Disallow: /。正式域名上线仍需用户确认。
+- Cloudflare 构建 afc17753-f5d1-4055-960c-905646821461 成功；源码提交 fa55b89d0876e2d9dcaad7d3cd20ab034d9fbcff；Worker 版本 0ef30292-e643-412d-8d60-363e41032d55。
+- 14:29（北京时间）发布完成；真实浏览器验证：首页正常、全部 15 个图片元素加载成功、1920px 下无横向溢出；搜索 7876894732 返回 Adidas XLG Runner Deluxe；详情 4 张源站照片及购买链接正确，邀请码 161CPG 保留；FAQ 36 条、Articles 10 个入口均正常。
+- 执行环境直接 HTTP 请求新预览返回 403，未继续重试；用户的 Chrome 会话正常加载。此次可访问性验收以真实浏览器观察为依据。
+- 未增加数据库、后台、代理旧受阻地址或其他商品来源。搜图与真实订单 QC 仍按第 18 节的范围如实说明。
+
+补充：运费独立文章在新公开预览正常展开，main 正文长度 7,494 字符；语言菜单保留当前文章 slug。文章标题为换行内联链接，自动点击矩形中心落到行间空白时可能不导航；点击文章封面可以正常进入，未发现路由错误。
