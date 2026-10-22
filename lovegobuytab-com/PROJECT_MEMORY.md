@@ -1,7 +1,7 @@
 # CNBuyCha 子站项目记忆：LoveGoBuy
 
 更新时间：2026-10-22（Asia/Shanghai）
-阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式站已部署至 GitHub main 与 Cloudflare Worker，lovegobuytab.com 和 www 已绑定；正式域名首页、搜索、详情、FAQ、文章列表与 robots/sitemap 已实测。当前状态以第 20 节为准。
+阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式站已部署至 GitHub main 与 Cloudflare Worker，lovegobuytab.com 和 www 已绑定；正式域名首页、搜索、详情、FAQ、文章列表与 robots/sitemap 已实测。Google Analytics 4 已接入并收到实时访问事件，当前状态以第 21 节为准。
 本文件是本项目的持续交接记录。后续每次执行先读当前版本，再追加真实进展，不把提案写成已完成事实。
 
 ## 1. 用户已确定的要求
@@ -534,5 +534,9 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - 共用 Layout.astro 加入一次官方 gtag.js 与默认 config，覆盖所有语言、目录、文章、FAQ、商品页面；只在实际请求主机 lovegobuytab.com 输出，所有预览与 workers.dev 地址不加载。www 已 301 至主域名。
 - 不额外手动触发 page_view，避免与 gtag config 默认事件重复。
 - 本地构建通过，24 语言/240 文章/864 FAQ 门禁通过；英文和德语 FAQ 各一份标签、预览域名零标签，SSR 返回 200。
-- 当前状态：资源和数据流已创建，网站代码已完成；等待 GitHub 自动部署与实时数据验证。
+- GitHub 应用代码提交：544528448373ae84b067f69392567a70fafbad67；Cloudflare 自动构建 9730e306-7c56-41ca-b677-9d2949f341bc 成功，耗时 34 秒，Worker 版本短 ID de5cea57。
+- 正式首页与 FAQ 在真实 Chrome 中确认仅输出一个 G-W9KK0L385M 外部标签和一份 config。
+- Analytics 实时概览已收到正式首页和 FAQ 两次访问：活跃用户 1，page_view 2、session_start 1、first_visit 1；标题列表分别显示 LoveGoBuy spreadsheet 和 LoveGoBuy FAQ，证明浏览器到 GA4 的收集链路正常。
+- 没有伪造统计请求；验证使用正常浏览器访问。未创建付费订阅或更改其他网站的统计资源。
 - 统计入口：https://analytics.google.com/analytics/web/#/a405518068p560083558/reports/intelligenthome
+- 实时报告：https://analytics.google.com/analytics/web/#/a405518068p560083558/realtime/overview
