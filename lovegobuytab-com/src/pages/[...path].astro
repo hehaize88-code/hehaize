@@ -1,0 +1,999 @@
+---
+import Layout from "../components/Layout.astro";
+import Icon from "../components/Icon.astro";
+import Card from "../components/Card.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import Sources from "../components/Sources.astro";
+import { translate, localized, categoryNames } from "../lib/i18n";
+import { content, route, productRoute } from "../lib/content";
+import {
+  home,
+  listing,
+  detail,
+  CatalogError,
+  ORIGIN,
+  formatPrice,
+} from "../lib/catalog";
+const { lang, path } = route(Astro.url.pathname);
+const { copy: c, faq, articles, sources } = content(lang);
+const t = translate(lang);
+const isHome = path === "/",
+  isCatalog =
+    path === "/spreadsheet/" || /^\/spreadsheet\/[a-z0-9-]+\/$/.test(path),
+  isFaq = path === "/faq/",
+  isArticles = path === "/articles/";
+const article = path.startsWith("/articles/")
+  ? articles.find((a: any) => path === `/articles/${a.slug}/`)
+  : undefined;
+const productMatch = path.match(/^\/products\/([a-z0-9-]+)\/(\d+)\/$/);
+let product: any = null,
+  feed: any = null,
+  result: any = null,
+  error = false;
+const category =
+  isCatalog && path !== "/spreadsheet/" ? path.split("/")[2] : "";
+const q = (Astro.url.searchParams.get("q") || "").slice(0, 120);
+const sort = ["new", "click", "price"].includes(
+  Astro.url.searchParams.get("sort") || "",
+)
+  ? Astro.url.searchParams.get("sort")!
+  : "new";
+const page = Math.max(
+  1,
+  Math.min(10000, Math.floor(Number(Astro.url.searchParams.get("page")) || 1)),
+);
+const knownCategorySlugs = [
+  "shoes",
+  "hoodies-sweaters",
+  "t-shirts",
+  "jackets",
+  "pants-shorts",
+  "headwear",
+  "accessories",
+  "short-sets",
+  "electronics",
+  "other-stuff",
+  "jersey",
+];
+const categoryLabels = categoryNames(lang);
+const categoryLabel = (slug: string, name?: string) =>
+  categoryLabels[knownCategorySlugs.indexOf(slug)] || name || slug;
+if (isHome || isCatalog || productMatch) {
+  try {
+    feed = await home();
+    if (isCatalog) {
+      if (category && !feed.categories.some((a: any) => a.slug === category)) {
+        Astro.response.status = 404;
+      } else result = await listing(category, q, sort, page);
+    }
+    if (productMatch)
+      product = await detail(`/${productMatch[1]}/${productMatch[2]}.html`);
+  } catch (e) {
+    error = true;
+    if (!isHome)
+      Astro.response.status = e instanceof CatalogError ? e.status : 503;
+  }
+}
+const is404 =
+  (!isHome &&
+    !isCatalog &&
+    !isFaq &&
+    !isArticles &&
+    !article &&
+    !productMatch) ||
+  Astro.response.status === 404;
+if (is404) Astro.response.status = 404;
+let title = c.heroTitle + " | LoveGoBuy Tab",
+  description = c.heroDescription;
+if (isCatalog) {
+  title =
+    (q
+      ? `${c.searchResults}: ${q}`
+      : category
+        ? `${categoryLabel(category)} — LoveGoBuy Finds`
+        : `LoveGoBuy ${t.browse}`) + " | LoveGoBuy Tab";
+  description = c.browseDescription;
+}
+if (isFaq) {
+  title = `LoveGoBuy ${t.faq} | LoveGoBuy Tab`;
+  description = c.faqPageDescription;
+}
+if (isArticles) {
+  title = `LoveGoBuy ${c.articles} | LoveGoBuy Tab`;
+  description = c.articleIndexDescription;
+}
+if (article) {
+  title = article.title + " | LoveGoBuy Tab";
+  description = article.description;
+}
+if (product) {
+  title = product.title + " | LoveGoBuy Tab";
+  description = `${product.title}. ${c.beforeOrderText}`;
+}
+if (is404) {
+  title = c.notFoundTitle + " | LoveGoBuy Tab";
+  description = c.notFoundText;
+}
+const origin = Astro.site?.origin || Astro.url.origin;
+const jsonLd = article
+  ? {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: article.title,
+      description: article.description,
+      inLanguage: lang,
+      mainEntityOfPage: origin + localized(lang, path),
+      author: { "@type": "Organization", name: "LoveGoBuy Tab" },
+      datePublished: "2026-10-22",
+      dateModified: "2026-10-22",
+    }
+  : isFaq
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        inLanguage: lang,
+        mainEntity: faq.map((f: any) => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: { "@type": "Answer", text: f.answer },
+        })),
+      }
+    : isHome
+      ? {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "LoveGoBuy Tab",
+          url: origin,
+          inLanguage: lang,
+          description,
+        }
+      : undefined;
+const catalogURL = (p = 1, s = sort) => {
+  const query = new URLSearchParams();
+  if (q) query.set("q", q);
+  if (s !== "new") query.set("sort", s);
+  if (p > 1) query.set("page", String(p));
+  return (
+    localized(lang, category ? `/spreadsheet/${category}/` : "/spreadsheet/") +
+    (query.size ? "?" + query : "")
+  );
+};
+const total =
+  feed?.categories.reduce((n: number, a: any) => n + a.count, 0) || 0;
+---
+
+<Layout
+  lang={lang}
+  path={path}
+  title={title}
+  description={description}
+  copy={c}
+  t={t}
+  jsonLd={jsonLd}
+>
+  {is404 ? (
+    <section class="wrap empty-state">
+      <span class="eyebrow">404</span>
+      <h1>{c.notFoundTitle}</h1>
+      <p>{c.notFoundText}</p>
+      <a class="button" href={localized(lang, "/spreadsheet/")}>
+        {t.browse}
+        <Icon name="right" />
+      </a>
+    </section>
+  ) : isHome ? (
+    <>
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="live-dot"></span>
+            {c.heroEyebrow}
+          </p>
+          <h1>
+            {c.heroTitle}
+            <br />
+            <em>{c.heroAccent}</em>
+          </h1>
+          <p class="hero-description">{c.heroDescription}</p>
+          <form
+            class="search-form hero-search"
+            action={localized(lang, "/spreadsheet/")}
+          >
+            <Icon name="search" />
+            <input
+              type="search"
+              name="q"
+              placeholder={t.placeholder}
+              aria-label={t.search}
+              maxlength="120"
+            />
+            <button type="submit" aria-label={t.search}>
+              <Icon name="right" />
+            </button>
+          </form>
+          <a
+            class="text-link"
+            href={localized(
+              lang,
+              "/articles/how-to-order-weidian-with-lovegobuy/",
+            )}
+          >
+            {c.startGuide}
+            <Icon size={17} />
+          </a>
+          <div class="hero-footnote">
+            <span>
+              <Icon name="check" size={15} />
+              {c.sourceData}
+            </span>
+            <span>
+              <Icon name="globe" size={15} />
+              {c.languageCount}
+            </span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-orbit"></div>
+          {feed?.products.slice(0, 3).map((p: any, i: number) => (
+            <a
+              href={localized(lang, productRoute(p.path))}
+              class:list={["hero-product", `hero-product-${i}`]}
+              aria-label={p.title}
+            >
+              <div class="hero-product-image">
+                {p.image && (
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    fetchpriority={i === 0 ? "high" : "auto"}
+                    loading="eager"
+                    referrerpolicy="no-referrer"
+                  />
+                )}
+              </div>
+              <div class="hero-product-caption">
+                <span>{categoryLabel(p.category)}</span>
+                <b>{formatPrice(p.price, lang)}</b>
+                <Icon size={16} />
+              </div>
+            </a>
+          ))}
+          <div class="hero-stamp">
+            <Icon name="arrow" size={25} />
+            <span>
+              LoveGoBuy
+              <br />
+              tab
+            </span>
+          </div>
+          {!feed && (
+            <div class="hero-fallback">
+              <Icon name="bag" size={64} />
+              <p>{c.sourceUnavailable}</p>
+            </div>
+          )}
+        </div>
+      </section>
+      <div class="catalog-banner">
+        <div class="wrap">
+          <span>LoveGoBuy {t.all}</span>
+          <span class="banner-star">✳</span>
+          <span>{t.categories}</span>
+          <span class="banner-star">✳</span>
+          <span>{c.sourceData}</span>
+          <span class="banner-star">✳</span>
+          <span>{c.qcNav}</span>
+          <span class="banner-star">✳</span>
+          <span>{c.shippingNav}</span>
+        </div>
+      </div>
+      <section class="wrap section categories-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">01 / {t.categories}</span>
+            <h2>{c.categoriesTitle}</h2>
+            <p>{c.categoriesDescription}</p>
+          </div>
+          <a class="text-link" href={localized(lang, "/spreadsheet/")}>
+            {c.viewAll}
+            <Icon name="right" />
+          </a>
+        </div>
+        <div class="category-grid">
+          {feed?.categories.map((cat: any, i: number) => (
+            <a href={localized(lang, `/spreadsheet/${cat.slug}/`)}>
+              <span class="category-index">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span>
+                {categoryLabel(cat.slug, cat.name)}
+                <small>
+                  {cat.count.toLocaleString(lang)} {t.results}
+                </small>
+              </span>
+              <Icon name="arrow" size={19} />
+            </a>
+          ))}
+        </div>
+      </section>
+      <section class="wrap section latest-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">02 / {c.newArrivals}</span>
+            <h2>{c.latestTitle}</h2>
+            <p>{c.latestDescription}</p>
+          </div>
+          <a class="text-link" href={localized(lang, "/spreadsheet/")}>
+            {c.viewAll}
+            <Icon name="right" />
+          </a>
+        </div>
+        {feed ? (
+          <div class="product-grid">
+            {feed.products.slice(0, 10).map((p: any) => (
+              <Card
+                product={{ ...p, categoryLabel: categoryLabel(p.category) }}
+                lang={lang}
+                t={t}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="error-state">
+            <p>{c.sourceUnavailable}</p>
+            <a href={localized(lang, "/")}>{t.retry}</a>
+          </div>
+        )}
+        <div class="section-bottom">
+          <a
+            class="button button-outline"
+            href={localized(lang, "/spreadsheet/")}
+          >
+            {c.explore}
+            <Icon name="right" />
+          </a>
+        </div>
+      </section>
+      <section class="how-section">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">{t.guide}</span>
+              <h2>{c.stepsTitle}</h2>
+              <p>{c.stepsDescription}</p>
+            </div>
+            <a
+              class="text-link"
+              href={localized(
+                lang,
+                "/articles/how-to-order-weidian-with-lovegobuy/",
+              )}
+            >
+              {c.guideNav}
+              <Icon name="right" />
+            </a>
+          </div>
+          <div class="steps">
+            {[1, 2, 3].map((n: number) => (
+              <div>
+                <div class="step-top">
+                  <span>0{n}</span>
+                  <Icon
+                    name={n === 1 ? "search" : n === 2 ? "bag" : "box"}
+                    size={28}
+                  />
+                </div>
+                <h3>{c[`step${n}Title`]}</h3>
+                <p>{c[`step${n}Text`]}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">03 / {c.readBefore}</span>
+            <h2>{c.guidesTitle}</h2>
+            <p>{c.guidesDescription}</p>
+          </div>
+          <a class="text-link" href={localized(lang, "/articles/")}>
+            {c.allArticles}
+            <Icon name="right" />
+          </a>
+        </div>
+        <div class="article-grid">
+          {articles.slice(0, 4).map((a: any, i: number) => (
+            <ArticleCard article={a} index={i} lang={lang} copy={c} />
+          ))}
+        </div>
+      </section>
+      <section class="wrap section home-faq">
+        <div>
+          <span class="eyebrow">04 / FAQ</span>
+          <h2>{c.faqTitle}</h2>
+          <p>{c.faqDescription}</p>
+          <a class="text-link" href={localized(lang, "/faq/")}>
+            {c.allFaq}
+            <Icon name="right" />
+          </a>
+        </div>
+        <div class="faq-list">
+          {faq.slice(0, 5).map((f: any) => (
+            <details>
+              <summary>
+                {f.question}
+                <Icon name="plus" size={18} />
+              </summary>
+              <div>
+                <p>{f.answer}</p>
+                <a
+                  href={sources.find((s: any) => s.id === f.sourceIds[0])?.url}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {c.sourceHeading} ↗
+                </a>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+      <section class="wrap seo-section">
+        <h2>{c.homeSeoTitle}</h2>
+        <div>
+          <p>{c.homeSeoText}</p>
+          <p>{c.homeSeoSecond}</p>
+        </div>
+      </section>
+    </>
+  ) : isCatalog ? (
+    <>
+      <section class="page-hero wrap">
+        <div class="breadcrumbs">
+          <a href={localized(lang, "/")}>{t.home}</a>
+          <span>/</span>
+          <span>{t.browse}</span>
+          {category && (
+            <>
+              <span>/</span>
+              <span>{categoryLabel(category)}</span>
+            </>
+          )}
+        </div>
+        <span class="eyebrow">LOVEGOBUY SPREADSHEET</span>
+        <h1>
+          {category
+            ? categoryLabel(category)
+            : q
+              ? c.searchResults
+              : c.browseTitle}
+        </h1>
+        <p>{c.browseDescription}</p>
+        <form
+          class="search-form catalog-search"
+          action={localized(
+            lang,
+            category ? `/spreadsheet/${category}/` : "/spreadsheet/",
+          )}
+        >
+          <Icon name="search" />
+          <input
+            type="search"
+            name="q"
+            value={q}
+            placeholder={t.placeholder}
+            aria-label={t.search}
+            maxlength="120"
+          />
+          {sort !== "new" && <input type="hidden" name="sort" value={sort} />}
+          <button type="submit" aria-label={t.search}>
+            <Icon name="right" />
+          </button>
+        </form>
+      </section>
+      <section class="wrap catalog-section">
+        <div class="category-tabs">
+          <a
+            class:list={{ active: !category }}
+            href={localized(lang, "/spreadsheet/")}
+          >
+            {t.all}
+          </a>
+          {feed?.categories.map((cat: any) => (
+            <a
+              class:list={{ active: category === cat.slug }}
+              href={localized(lang, `/spreadsheet/${cat.slug}/`)}
+            >
+              {categoryLabel(cat.slug, cat.name)}
+            </a>
+          ))}
+        </div>
+        <div class="catalog-toolbar">
+          <p>
+            {result && (
+              <>
+                <strong>{result.total.toLocaleString(lang)}</strong> {t.results}
+                {q && (
+                  <>
+                    {" "}
+                    · “{q}”{" "}
+                    <a
+                      href={localized(
+                        lang,
+                        category
+                          ? `/spreadsheet/${category}/`
+                          : "/spreadsheet/",
+                      )}
+                    >
+                      {t.clear}
+                    </a>
+                  </>
+                )}
+              </>
+            )}
+          </p>
+          <form
+            action={localized(
+              lang,
+              category ? `/spreadsheet/${category}/` : "/spreadsheet/",
+            )}
+            class="sort-form"
+          >
+            {q && <input type="hidden" name="q" value={q} />}
+            <label for="sort">
+              <Icon name="filter" size={16} />
+              {c.sortBy}
+            </label>
+            <select name="sort" id="sort" aria-label={c.sortBy}>
+              <option value="new" selected={sort === "new"}>
+                {t.latest}
+              </option>
+              <option value="click" selected={sort === "click"}>
+                {t.popular}
+              </option>
+              <option value="price" selected={sort === "price"}>
+                {t.priceSort}
+              </option>
+            </select>
+            <noscript>
+              <button type="submit">{t.view}</button>
+            </noscript>
+          </form>
+        </div>
+        {error ? (
+          <div class="empty-state">
+            <Icon name="info" size={36} />
+            <h2>{c.sourceUnavailable}</h2>
+            <p>{c.sourceUnavailableDetail}</p>
+            <a
+              class="button button-outline"
+              href={Astro.url.pathname + Astro.url.search}
+            >
+              {t.retry}
+            </a>
+          </div>
+        ) : result?.products.length ? (
+          <>
+            <div class="product-grid">
+              {result.products.map((p: any, i: number) => (
+                <Card
+                  product={{ ...p, categoryLabel: categoryLabel(p.category) }}
+                  lang={lang}
+                  t={t}
+                  priority={i < 5}
+                />
+              ))}
+            </div>
+            <nav class="pagination" aria-label={c.page}>
+              {page > 1 && (
+                <a class="pagination-previous" href={catalogURL(page - 1)}>
+                  ← {t.previous}
+                </a>
+              )}
+              {[
+                ...new Set([
+                  1,
+                  ...Array.from({ length: 5 }, (_, i) => page + i - 2).filter(
+                    (n) => n >= 1 && n <= result.pages,
+                  ),
+                  result.pages,
+                ]),
+              ]
+                .sort((a, b) => a - b)
+                .map((n, i, arr) => (
+                  <>
+                    {i > 0 && n - arr[i - 1] > 1 && <span>…</span>}
+                    <a
+                      class:list={{ current: n === page }}
+                      href={catalogURL(n)}
+                      aria-current={n === page ? "page" : undefined}
+                    >
+                      {n}
+                    </a>
+                  </>
+                ))}
+              {page < result.pages && (
+                <a class="pagination-next" href={catalogURL(page + 1)}>
+                  {t.next} →
+                </a>
+              )}
+            </nav>
+            <p class="page-count">
+              {c.page} {page} {c.of} {result.pages}
+            </p>
+          </>
+        ) : (
+          <div class="empty-state">
+            <Icon name="search" size={40} />
+            <h2>{t.empty}</h2>
+            <a
+              class="button button-outline"
+              href={localized(lang, "/spreadsheet/")}
+            >
+              {t.clear}
+            </a>
+          </div>
+        )}
+        <details class="image-search-note">
+          <summary>
+            <Icon name="camera" size={17} />
+            {t.visual}
+            <Icon name="plus" size={16} />
+          </summary>
+          <p>{c.imageSearchNote}</p>
+        </details>
+      </section>
+    </>
+  ) : productMatch ? (
+    <section class="wrap section">
+      {product ? (
+        <>
+          <div class="breadcrumbs">
+            <a href={localized(lang, "/")}>{t.home}</a>
+            <span>/</span>
+            <a href={localized(lang, "/spreadsheet/")}>{t.browse}</a>
+            <span>/</span>
+            <a href={localized(lang, `/spreadsheet/${product.category}/`)}>
+              {categoryLabel(product.category)}
+            </a>
+          </div>
+          <div class="product-detail">
+            <div class="gallery">
+              <div class="gallery-main">
+                {product.images[0] ? (
+                  <img
+                    id="product-main-image"
+                    src={product.images[0]}
+                    alt={product.title}
+                    referrerpolicy="no-referrer"
+                    fetchpriority="high"
+                  />
+                ) : (
+                  <span>{t.photoMissing}</span>
+                )}
+              </div>
+              {product.images.length > 1 && (
+                <div class="gallery-thumbnails">
+                  {product.images.map((image: string, i: number) => (
+                    <button
+                      data-gallery-src={image}
+                      class:list={{ selected: i === 0 }}
+                      aria-label={`${t.photos} ${i + 1}`}
+                      aria-pressed={i === 0 ? "true" : "false"}
+                    >
+                      <img
+                        src={image}
+                        alt={`${product.title} — ${i + 1}`}
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+              <p class="photo-caption">
+                <Icon name="info" size={16} />
+                {c.photoNote}
+              </p>
+            </div>
+            <div class="product-information">
+              <span class="eyebrow">{categoryLabel(product.category)}</span>
+              <h1>{product.title}</h1>
+              <div class="detail-price">
+                {formatPrice(product.price, lang)}
+                <small>USD</small>
+              </div>
+              <p class="price-note">{c.itemPriceNote}</p>
+              <dl>
+                <div>
+                  <dt>{c.sourceId}</dt>
+                  <dd>{product.sourceId || "—"}</dd>
+                </div>
+                <div>
+                  <dt>{c.catalogRef}</dt>
+                  <dd>{productMatch[2]}</dd>
+                </div>
+                <div>
+                  <dt>{t.source}</dt>
+                  <dd>CNBuyCha</dd>
+                </div>
+              </dl>
+              {product.buy ? (
+                <a
+                  class="button full-width"
+                  href={product.buy}
+                  target="_blank"
+                  rel="sponsored noopener"
+                >
+                  {t.buy}
+                  <Icon name="arrow" />
+                </a>
+              ) : (
+                <p>{c.noPurchaseLink}</p>
+              )}
+              <a
+                class="source-link"
+                href={ORIGIN + product.path}
+                target="_blank"
+                rel="noopener"
+              >
+                {c.viewOnSource}
+                <Icon name="arrow" size={15} />
+              </a>
+              <div class="before-order">
+                <Icon name="check" />
+                <div>
+                  <h2>{c.beforeOrder}</h2>
+                  <p>{c.beforeOrderText}</p>
+                  <a
+                    href={localized(
+                      lang,
+                      "/articles/lovegobuy-qc-photo-checklist/",
+                    )}
+                  >
+                    {c.qcNav} ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {product.related.length > 0 && (
+            <section class="section">
+              <div class="section-heading">
+                <h2>{t.related}</h2>
+                <a
+                  class="text-link"
+                  href={localized(lang, `/spreadsheet/${product.category}/`)}
+                >
+                  {c.viewAll}
+                  <Icon name="right" />
+                </a>
+              </div>
+              <div class="product-grid related-grid">
+                {product.related.map((p: any) => (
+                  <Card
+                    product={{ ...p, categoryLabel: categoryLabel(p.category) }}
+                    lang={lang}
+                    t={t}
+                  />
+                ))}
+              </div>
+            </section>
+          )}
+        </>
+      ) : (
+        <div class="empty-state">
+          <h1>{c.sourceUnavailable}</h1>
+          <p>{c.sourceUnavailableDetail}</p>
+          <a class="button" href={Astro.url.pathname}>
+            {t.retry}
+          </a>
+        </div>
+      )}
+    </section>
+  ) : isFaq ? (
+    <>
+      <section class="page-hero wrap narrow">
+        <span class="eyebrow">LOVEGOBUY FAQ · {faq.length}</span>
+        <h1>{c.faqPageTitle}</h1>
+        <p>{c.faqPageDescription}</p>
+        <div class="search-form faq-search">
+          <Icon name="search" />
+          <input
+            id="faq-search"
+            type="search"
+            placeholder={c.faqSearch}
+            aria-label={c.faqSearch}
+          />
+        </div>
+      </section>
+      <section class="wrap narrow section faq-page">
+        <div class="faq-list">
+          {faq.map((f: any, i: number) => (
+            <details id={f.id} data-faq={f.question + " " + f.answer}>
+              <summary>
+                <span class="faq-index">{String(i + 1).padStart(2, "0")}</span>
+                {f.question}
+                <Icon name="plus" size={18} />
+              </summary>
+              <div>
+                <p>{f.answer}</p>
+                <div class="faq-sources">
+                  {f.sourceIds.map((id: string) => {
+                    const source = sources.find((s: any) => s.id === id);
+                    return (
+                      source && (
+                        <a href={source.url} target="_blank" rel="noopener">
+                          {source.title} ↗
+                        </a>
+                      )
+                    );
+                  })}
+                </div>
+              </div>
+            </details>
+          ))}
+        </div>
+        <p class="no-faq" hidden>
+          {c.noFaq}
+        </p>
+        <aside class="content-note">
+          <Icon name="info" />
+          <p>
+            {c.sourceHelp}
+            <br />
+            <small>{c.checked}: 2026-10-22</small>
+          </p>
+        </aside>
+      </section>
+    </>
+  ) : isArticles ? (
+    <>
+      <section class="page-hero wrap">
+        <span class="eyebrow">LoveGoBuy {c.articles} / 10</span>
+        <h1>{c.articleIndexTitle}</h1>
+        <p>{c.articleIndexDescription}</p>
+      </section>
+      <section class="wrap section articles-index">
+        <div class="article-grid">
+          {articles.map((a: any, i: number) => (
+            <ArticleCard article={a} index={i} lang={lang} copy={c} />
+          ))}
+        </div>
+      </section>
+    </>
+  ) : article ? (
+    <>
+      <section class="article-heading wrap">
+        <div class="breadcrumbs">
+          <a href={localized(lang, "/")}>{t.home}</a>
+          <span>/</span>
+          <a href={localized(lang, "/articles/")}>{c.articles}</a>
+        </div>
+        <div class="article-meta">
+          <span>{article.category}</span>
+          <span>
+            {article.readingMinutes} {c.minutes}
+          </span>
+        </div>
+        <h1>{article.title}</h1>
+        <p>{article.description}</p>
+        <div class="article-byline">
+          <span class="author-mark">
+            L<span>tab</span>
+          </span>
+          <span>
+            LoveGoBuy Tab
+            <br />
+            <small>{c.checked}: 2026-10-22</small>
+          </span>
+        </div>
+      </section>
+      <section class="article-layout wrap">
+        <aside class="article-toc">
+          <p>{c.onThisPage}</p>
+          <nav>
+            {article.sections.map((s: any, i: number) => (
+              <a href={"#section-" + i}>{s.heading}</a>
+            ))}
+            <a href="#official-sources">{c.sourceHeading}</a>
+          </nav>
+          <a
+            class="button button-outline"
+            href={localized(lang, "/spreadsheet/")}
+          >
+            {t.browse}
+            <Icon name="arrow" size={17} />
+          </a>
+        </aside>
+        <article class="article-body">
+          <div class="article-intro">
+            {article.intro.map((p: string) => (
+              <p>{p}</p>
+            ))}
+          </div>
+          {article.sections.map((s: any, i: number) => (
+            <section id={"section-" + i}>
+              <h2>{s.heading}</h2>
+              {s.paragraphs.map((p: string) => (
+                <p>{p}</p>
+              ))}
+              {s.bullets?.length > 0 && (
+                <ul>
+                  {s.bullets.map((b: string) => (
+                    <li>{b}</li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          ))}
+          <aside class="takeaways">
+            <h2>{c.takeaways}</h2>
+            <ul>
+              {article.takeaways.map((text: string) => (
+                <li>
+                  <Icon name="check" size={18} />
+                  {text}
+                </li>
+              ))}
+            </ul>
+          </aside>
+          <div id="official-sources">
+            <Sources ids={article.sourceIds} sources={sources} copy={c} />
+          </div>
+          <p class="editorial-note">{c.articleAdvice}</p>
+        </article>
+      </section>
+      <section class="wrap section">
+        <div class="section-heading">
+          <h2>{c.relatedArticles}</h2>
+          <a class="text-link" href={localized(lang, "/articles/")}>
+            {c.allArticles}
+            <Icon name="right" />
+          </a>
+        </div>
+        <div class="article-grid">
+          {articles
+            .filter((a: any) => a.slug !== article.slug)
+            .slice(0, 4)
+            .map((a: any, i: number) => (
+              <ArticleCard article={a} index={i} lang={lang} copy={c} />
+            ))}
+        </div>
+      </section>
+    </>
+  ) : null}
+</Layout>
+<script>
+  document
+    .querySelector("#sort")
+    ?.addEventListener("change", (e) =>
+      (e.target as HTMLSelectElement).form?.requestSubmit(),
+    );
+  document.querySelector("#faq-search")?.addEventListener("input", (e) => {
+    const q = (e.target as HTMLInputElement).value.toLocaleLowerCase().trim();
+    let count = 0;
+    document.querySelectorAll<HTMLDetailsElement>("[data-faq]").forEach((d) => {
+      d.hidden = !d.dataset.faq?.toLocaleLowerCase().includes(q);
+      if (!d.hidden) count++;
+    });
+    const empty = document.querySelector<HTMLElement>(".no-faq");
+    if (empty) empty.hidden = count > 0;
+  });
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-gallery-src]")
+    .forEach((button) =>
+      button.addEventListener("click", () => {
+        const main = document.querySelector<HTMLImageElement>(
+          "#product-main-image",
+        );
+        if (main && button.dataset.gallerySrc)
+          main.src = button.dataset.gallerySrc;
+        document.querySelectorAll("[data-gallery-src]").forEach((b) => {
+          b.classList.toggle("selected", b === button);
+          b.setAttribute("aria-pressed", String(b === button));
+        });
+      }),
+    );
+</script>

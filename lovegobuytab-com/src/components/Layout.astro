@@ -1,0 +1,309 @@
+---
+import Icon from "./Icon.astro";
+import { languages, localized } from "../lib/i18n";
+import { REGISTER } from "../lib/catalog";
+import "../styles/global.css";
+const { lang, path, title, description, copy: c, t, jsonLd } = Astro.props;
+const origin = Astro.site?.origin || Astro.url.origin;
+const pageNumber = Math.max(
+  1,
+  Math.floor(Number(Astro.url.searchParams.get("page")) || 1),
+);
+const canonicalQuery =
+  path.startsWith("/spreadsheet/") && pageNumber > 1
+    ? "?page=" + pageNumber
+    : "";
+const canonical = origin + localized(lang, path) + canonicalQuery;
+const articlePath = "/articles/how-to-order-weidian-with-lovegobuy/";
+const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
+  Astro.url.hostname,
+);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f56a27" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href={canonical} />
+    {languages.map(([code]) => (
+      <link
+        rel="alternate"
+        hreflang={code}
+        href={origin + localized(code, path) + canonicalQuery}
+      />
+    ))}
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={origin + path + canonicalQuery}
+    />
+    {(isPreview ||
+      Astro.response.status >= 400 ||
+      Astro.url.searchParams.has("q") ||
+      Astro.url.searchParams.has("sort")) && (
+      <meta name="robots" content="noindex,follow" />
+    )}
+    <meta
+      property="og:type"
+      content={
+        path.startsWith("/articles/") && path !== "/articles/"
+          ? "article"
+          : "website"
+      }
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="LoveGoBuy Tab" />
+    {jsonLd && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(jsonLd).replace(/</g, "\\u003c")}
+      />
+    )}
+  </head>
+  <body>
+    <div class="announcement">
+      <span>{c.independent}</span>
+      <span class="announcement-sep">/</span>
+      <span>{c.sourceNote}</span>
+    </div>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href={localized(lang, "/")} aria-label="LoveGoBuy Tab">
+          <img
+            src="/lovegobuy-logo.png"
+            alt={c.officialLogoAlt}
+            width="156"
+            height="36"
+          />
+          <span class="brand-tab">tab</span>
+        </a>
+        <nav class="desktop-nav" aria-label={t.browse}>
+          <a
+            class:list={{ active: path.startsWith("/spreadsheet") }}
+            href={localized(lang, "/spreadsheet/")}
+          >
+            {t.browse}
+          </a>
+          <a
+            class:list={{ active: path === articlePath }}
+            href={localized(lang, articlePath)}
+          >
+            {c.guideNav}
+          </a>
+          <a
+            class:list={{ active: path === "/faq/" }}
+            href={localized(lang, "/faq/")}
+          >
+            {t.faq}
+          </a>
+          <a
+            class:list={{
+              active: path.startsWith("/articles/") && path !== articlePath,
+            }}
+            href={localized(lang, "/articles/")}
+          >
+            {c.articles}
+          </a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="language-trigger"
+            data-language-open
+            aria-label={t.language}
+          >
+            <Icon name="globe" size={18} />
+            <span>{lang.toUpperCase()}</span>
+            <Icon name="chevron" size={13} />
+          </button>
+          <a
+            class="button button-small join-button"
+            href={REGISTER}
+            target="_blank"
+            rel="noopener"
+          >
+            {t.register}
+            <Icon name="arrow" size={16} />
+          </a>
+          <button
+            class="icon-button mobile-toggle"
+            aria-label={c.menu}
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <Icon name="menu" />
+          </button>
+        </div>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" hidden>
+        <a href={localized(lang, "/spreadsheet/")}>{t.browse}</a>
+        <a href={localized(lang, articlePath)}>{c.guideNav}</a>
+        <a href={localized(lang, "/faq/")}>{t.faq}</a>
+        <a href={localized(lang, "/articles/")}>{c.articles}</a>
+        <a href={REGISTER} target="_blank" rel="noopener">
+          {t.register}
+          <Icon size={16} />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <section class="join-strip wrap">
+      <div>
+        <h2>{c.ctaTitle}</h2>
+        <p>{c.ctaText}</p>
+      </div>
+      <a
+        class="button button-dark"
+        href={REGISTER}
+        target="_blank"
+        rel="noopener"
+      >
+        {t.register}
+        <Icon name="arrow" />
+      </a>
+    </section>
+    <footer class="site-footer">
+      <div class="wrap footer-top">
+        <div class="footer-about">
+          <a class="brand" href={localized(lang, "/")}>
+            <img
+              src="/lovegobuy-logo.png"
+              width="156"
+              height="36"
+              alt="LoveGoBuy"
+            />
+            <span class="brand-tab">tab</span>
+          </a>
+          <p>{c.footerDescription}</p>
+        </div>
+        <div class="footer-column">
+          <h3>{c.directory}</h3>
+          <a href={localized(lang, "/spreadsheet/")}>{t.browse}</a>
+          <a href={localized(lang, "/spreadsheet/?sort=new")}>
+            {c.newArrivals}
+          </a>
+          <a href="https://cnbuycha.com/" target="_blank" rel="noopener">
+            CNBuyCha <Icon size={12} />
+          </a>
+        </div>
+        <div class="footer-column">
+          <h3>{c.learn}</h3>
+          <a href={localized(lang, "/articles/")}>{c.articles}</a>
+          <a href={localized(lang, "/faq/")}>{t.faq}</a>
+          <a href={localized(lang, "/articles/lovegobuy-qc-photo-checklist/")}>
+            {c.qcNav}
+          </a>
+          <a
+            href={localized(
+              lang,
+              "/articles/lovegobuy-shipping-estimate-guide/",
+            )}
+          >
+            {c.shippingNav}
+          </a>
+        </div>
+        <div class="footer-column">
+          <h3>LoveGoBuy</h3>
+          <a href="https://www.lovegobuy.com/" target="_blank" rel="noopener">
+            {c.officialWebsite}
+            <Icon size={12} />
+          </a>
+          <a
+            href="https://www.lovegobuy.com/help-center/index"
+            target="_blank"
+            rel="noopener"
+          >
+            {c.officialHelp}
+            <Icon size={12} />
+          </a>
+          <a
+            href="https://m.lovegobuy.com/shipping/estimation/index"
+            target="_blank"
+            rel="noopener"
+          >
+            {c.shippingEstimator}
+            <Icon size={12} />
+          </a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>{c.disclosure}</p>
+        <span>© 2026 LoveGoBuy Tab</span>
+      </div>
+    </footer>
+    <dialog class="language-dialog" aria-label={t.language}>
+      <div class="dialog-heading">
+        <h2>
+          <Icon name="globe" />
+          {t.language}
+        </h2>
+        <button class="icon-button" data-language-close aria-label={c.close}>
+          <Icon name="close" />
+        </button>
+      </div>
+      <input
+        id="language-search"
+        type="search"
+        placeholder={t.search}
+        aria-label={t.search}
+      />
+      <div class="language-grid">
+        {languages.map(([code, name]) => (
+          <a
+            href={localized(code, path) + Astro.url.search}
+            lang={code}
+            hreflang={code}
+            data-language={name + " " + code}
+            class:list={{ selected: code === lang }}
+          >
+            <span>{name}</span>
+            <small>{code.toUpperCase()}</small>
+            {code === lang && <Icon name="check" size={16} />}
+          </a>
+        ))}
+      </div>
+    </dialog>
+    <script>
+      const dialog =
+        document.querySelector<HTMLDialogElement>(".language-dialog");
+      document
+        .querySelector("[data-language-open]")
+        ?.addEventListener("click", () => dialog?.showModal());
+      document
+        .querySelector("[data-language-close]")
+        ?.addEventListener("click", () => dialog?.close());
+      dialog?.addEventListener("click", (e) => {
+        if (e.target === dialog) dialog.close();
+      });
+      document
+        .querySelector("#language-search")
+        ?.addEventListener("input", (e) => {
+          const q = (e.target as HTMLInputElement).value.toLocaleLowerCase();
+          document
+            .querySelectorAll<HTMLElement>("[data-language]")
+            .forEach(
+              (a) =>
+                (a.hidden = !a.dataset.language
+                  ?.toLocaleLowerCase()
+                  .includes(q)),
+            );
+        });
+      const toggle = document.querySelector(".mobile-toggle"),
+        menu = document.querySelector<HTMLElement>("#mobile-nav");
+      toggle?.addEventListener("click", () => {
+        if (menu) {
+          menu.hidden = !menu.hidden;
+          toggle.setAttribute("aria-expanded", String(!menu.hidden));
+        }
+      });
+    </script>
+  </body>
+</html>
