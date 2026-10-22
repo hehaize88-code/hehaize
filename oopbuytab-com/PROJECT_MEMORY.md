@@ -452,3 +452,13 @@
 - 独立HTTP验证通过：首页、目录、第二页、商品详情、英德文章、马耳他FAQ、robots及两个sitemap均200；常规页可收录、参数分页noindex；XML清单696网址；www/HTTP均301保留路径和参数。数据见docs/PRODUCTION_VERIFICATION.json。
 - 默认Python urllib客户端被Cloudflare Browser Integrity检查以1010拒绝；使用普通浏览器User-Agent的独立HTTP核验与真实Chrome均正常。未降低或关闭安全设置。
 - 目前未进行GSC/Bing/GA4新增配置或提交；本次任务仅完成GitHub正式源码、Cloudflare发布、域名绑定及功能核验。
+
+
+### 2026-10-22 Google Analytics 4 接入完成
+
+- 用户请求将oopbuytab.com添加到analytics.google.com；在既有Analytics账号405518068中创建独立媒体资源oopbuytab.com（560097708），时区Asia/Shanghai，币种USD。
+- 网站数据流oopbuytab.com Web，网址https://oopbuytab.com，数据流ID 16178545357，衡量ID G-CC6HPXJJN7，启用默认增强型衡量。
+- 在统一页面模板添加生产环境Google tag，覆盖全部24语言及所有页面类型；预览构建不加载统计。源码提交db9e1057c3b0db0b98a89e1e117999e60eae851f。
+- Cloudflare构建c0bffd6c-2f36-4ef2-aa0a-cc5d38eda62f成功，版本8e842198，100%流量。英文FAQ与德语文章线上200，每页一个加载脚本和一次配置。
+- GA4实时报告确认收到首页、FAQ和文章3条page_view，含本次浏览器测试访问；同时显示first_visit、session_start、user_engagement。统计接入已生效。
+- 统计后台：https://analytics.google.com/analytics/web/#/a405518068p560097708/realtime/overview
