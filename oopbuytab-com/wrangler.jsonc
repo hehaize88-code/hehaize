@@ -1,0 +1,11 @@
+{
+  "name": "oopbuytab-com",
+  "main": "dist/cloudflare/worker.js",
+  "compatibility_date": "2026-10-21",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "oopbuytab.com", "custom_domain": true },
+    { "pattern": "www.oopbuytab.com", "custom_domain": true }
+  ]
+}
