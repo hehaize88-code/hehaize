@@ -11,7 +11,8 @@
     "check:content": "node scripts/validate-editorial.mjs",
     "preview:catalog": "node scripts/build-catalog-preview.mjs",
     "preview:pages": "npm run check:content && npm run preview:catalog && npm run build && node scripts/export-pages-preview.mjs && npm run check:preview",
-    "check:preview": "node scripts/validate-preview.mjs"
+    "check:preview": "node scripts/validate-preview.mjs",
+    "build:production": "OOPBUY_PRODUCTION=true npm run build && node scripts/package-cloudflare.mjs"
   },
   "dependencies": {
     "astro": "7.4.1",

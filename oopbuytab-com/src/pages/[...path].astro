@@ -31,7 +31,9 @@ try{
  if(isProduct)product=await detail('/'+parts.slice(1).join('/'));
 }catch(err){error=true;console.error('CNBuyCha:',err instanceof Error?err.message:'request failed');if(!isHome)Astro.response.status=503;}
 if(!known)Astro.response.status=404;
-Astro.response.headers.set('X-Robots-Tag','noindex, nofollow');
+const preview=import.meta.env.OOPBUY_PRODUCTION!=='true';
+const robots=preview?'noindex,nofollow':(!known||error||isVisual||query||page>1||Astro.url.searchParams.has('sort'))?'noindex,follow':'index,follow,max-image-preview:large';
+Astro.response.headers.set('X-Robots-Tag',robots);
 const state=(changes:Record<string,string|number>)=>{const p=new URLSearchParams();if(query)p.set('q',query);if(sort!=='new'||isFinds)p.set('sort',sort);if(page>1)p.set('page',String(page));for(const[k,v]of Object.entries(changes)){if(v==='')p.delete(k);else p.set(k,String(v));}return p.size?'?'+p.toString():'';};
 const categoryCopy=(e as any).categoryIntros?.[category];
 const guideContent=(e as any).guides?.[isGuide?'guide':isQC?'qc':isShipping?'shipping':''];
@@ -52,7 +54,7 @@ const pagination=[...new Set([1,page-1,page,page+1,pages].filter(n=>n>=1&&n<=pag
 <html lang={lang}>
 <head>
  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
- <title>{pageTitle} · OOPBuy Tab</title><meta name="description" content={intro}/><meta name="robots" content="noindex,nofollow"/>
+ <title>{pageTitle} · OOPBuy Tab</title><meta name="description" content={intro}/><meta name="robots" content={robots}/>
  <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/>
  {faqSchema&&<script type="application/ld+json" set:html={JSON.stringify(faqSchema).replace(/</g,'\\u003c')}/>}
  <meta name="theme-color" content="#ff186b"/><link rel="icon" type="image/png" href={FAVICON}/><link rel="canonical" href={canonical}/>
@@ -67,7 +69,7 @@ const pagination=[...new Set([1,page-1,page,page+1,pages].filter(n=>n>=1&&n<=pag
   <form class="header-search" action={route('/spreadsheet/')} role="search"><Icon name="search" size={17}/><input name="q" type="search" value={query} placeholder={t.placeholder} aria-label={t.search}/><button type="submit" aria-label={t.search}><Icon name="arrow" size={17}/></button></form>
   <div class="header-actions"><details class="language-menu"><summary aria-label={t.language}><Icon name="globe" size={17}/>{lang.toUpperCase()}<Icon name="chevron" size={12}/></summary><div class="language-panel"><div class="language-title">{t.language}<span>24</span></div><input class="language-filter" type="search" placeholder={t.search} aria-label={t.language}/><div class="language-grid">{languages.map(([code,name])=><a lang={code} hreflang={code} class:list={{selected:code===lang}} href={localized(code,localPath)+state({})}>{name}<small>{code.toUpperCase()}</small></a>)}</div></div></details><a class="button primary join" href={REGISTER} target="_blank" rel="noopener noreferrer">{t.register}<Icon name="external" size={14}/></a></div>
  </div>
- <div class="nav-row"><div class="wrap nav-inner"><nav class="desktop-nav" aria-label={t.browse}>{nav.map(([path,label])=><a class:list={{active:localPath===path||(path==='/spreadsheet/'&&(isProduct||category))||(path==='/articles/'&&article)}} href={route(path)}>{label}</a>)}</nav><details class="mobile-nav"><summary><Icon name="grid" size={17}/>{t.browse}<Icon name="chevron" size={14}/></summary><nav aria-label={t.browse}>{nav.map(([path,label])=><a href={route(path)} class:list={{active:localPath===path}}>{label}<Icon name="arrow" size={14}/></a>)}</nav></details><span class="preview"><span></span>{u.previewLabel}</span></div></div>
+ <div class="nav-row"><div class="wrap nav-inner"><nav class="desktop-nav" aria-label={t.browse}>{nav.map(([path,label])=><a class:list={{active:localPath===path||(path==='/spreadsheet/'&&(isProduct||category))||(path==='/articles/'&&article)}} href={route(path)}>{label}</a>)}</nav><details class="mobile-nav"><summary><Icon name="grid" size={17}/>{t.browse}<Icon name="chevron" size={14}/></summary><nav aria-label={t.browse}>{nav.map(([path,label])=><a href={route(path)} class:list={{active:localPath===path}}>{label}<Icon name="arrow" size={14}/></a>)}</nav></details>{preview&&<span class="preview"><span></span>{u.previewLabel}</span>}</div></div>
 </header>
 <main>
 {isHome&&<>

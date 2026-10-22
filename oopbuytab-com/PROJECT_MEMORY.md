@@ -1,6 +1,6 @@
 # CNBuyCha 子站项目记忆 — OOPBuy
 
-更新日期：2026-10-21（Asia/Shanghai），第三轮。当前阶段：域名与架构规划；目标 GitHub 仓库已由用户确认，域名尚未选定，未开发或部署 OOPBuy 站。
+更新日期：2026-10-22（Asia/Shanghai）。当前阶段：用户已确认预览并授权 Cloudflare 部署及域名绑定；正式部署包已准备，实际上线状态见文末记录。历史章节保留原时点状态。
 
 ## 用户已确认的规则
 
@@ -420,3 +420,16 @@
 - 浏览器验证目录分页、跳页、价格排序、返回恢复页码、切换德语保留页码；FAQ筛选、全文展开与折叠。手机375–390px覆盖所有页面类型，另检查GA长文、BG FAQ、EL首页、MT文章目录，无横向溢出。
 - 分页布局截图为本地相同英文页面的视觉验收，保存docs/preview-pagination-v7.jpg；线上内容另通过公开HTTP核对。最后阶段用户Chrome上下文不可用，因此未将HTTP核验描述为用户Chrome线上交互验收。
 - 本次验收资料提交仅修改项目记忆与截图，不改变已发布页面、正式域名、Cloudflare或main。
+
+
+## 2026-10-22 正式域名部署准备
+
+- 用户明确请求绑定并部署 Cloudflare，目标 oopbuytab.com 和 www.oopbuytab.com。
+- 基线为预览分支 ba87c35f3b35e4abb78b542d2bdd58bdfaa9a9a5；独立生产分支 oopbuytab-production，项目目录仍为 oopbuytab-com。
+- 新增 wrangler.jsonc：Worker oopbuytab-com、两个自定义域名、关闭 workers.dev/预览URL。正式构建 npm run build:production，单文件 dist/cloudflare/worker.js。
+- 正式构建移除预览标记；常规内容允许收录，搜索、排序/分页参数、未知和错误页不索引。原 GitHub Pages 预览不变。
+- www 与 HTTP 正式域名301到 https://oopbuytab.com，保留路径与参数；/en/ 别名301到英文根路径。
+- robots.txt与sitemap不请求商品源，覆盖24语×29个目录/分类/内容页=696URL，含24语及x-default互链。
+- 正式Worker继续实时读取CNBuyCha，不打包预览商品快照，不新增数据库。
+- 本地生产包验证：FAQ28问、马耳他语文章、robots、sitemap索引及696URL清单、favicon均200；目录第2页20件、样例商品购买ID正确；www重定向正确。打包gzip大小1325810字节。
+- Cloudflare API返回UNAUTHORIZED/需要重新授权；当前已找到Chrome中正确账号的oopbuytab.com注册页，按Browser技能继续检查现有登录。尚未记录成功部署或域名绑定。
