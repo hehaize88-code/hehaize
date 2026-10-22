@@ -15,7 +15,9 @@ const canonicalQuery =
     : "";
 const canonical = origin + localized(lang, path) + canonicalQuery;
 const articlePath = "/articles/how-to-order-weidian-with-lovegobuy/";
-const isPreview = origin.includes("chatgpt.site");
+const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
+  new URL(origin).hostname,
+);
 ---
 
 <!doctype html>

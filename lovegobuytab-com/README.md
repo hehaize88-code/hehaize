@@ -37,6 +37,8 @@ The keyword research is qualitative search-intent research; no invented search-v
 
 Public review URL: https://lovegobuytab-preview.hehaize88.chatgpt.site
 
+The initial preview host is blocked by its security layer for the user. A separate Cloudflare Workers preview is being prepared from the existing `preview/lovegobuytab-com` branch, without custom-domain routes. Build with `SITE_URL=https://lovegobuytab-preview.hehaize88.workers.dev npm run build`, then deploy with `npx --yes wrangler@4.151.3 deploy --config wrangler.preview.jsonc`. The root directory in Workers Builds is `lovegobuytab-com`. All non-production origins remain noindex and blocked in robots.txt. This preview does not bind the purchased domain.
+
 The purchased domain has **not** been bound. Preview metadata uses the preview origin and all preview pages are noindex. Before production, set `SITE_URL=https://lovegobuytab.com` at build time, configure the chosen Worker runtime and custom-domain DNS, then validate live source fetches, source image access and indexing rules again. Do not point production DNS before the user approves this preview.
 
 The `.openai/hosting.json` identity belongs to the isolated public preview. No database or storage bindings are required. Do not create another preview project when this ID exists.
