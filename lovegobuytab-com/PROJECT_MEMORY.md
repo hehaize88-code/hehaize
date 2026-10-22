@@ -477,5 +477,5 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - deployment ID：appgdep_6ad993c0f0088191b1a0e1b73b81977e。
 - build 完整通过：24 种语言、240 个完整文章页、864 条 FAQ；页面使用真实源站商品数据，未建立商品数据库。
 - 公开站自动浏览器遇到 Cloudflare “Sorry, you have been blocked”，Ray ID a4e5d4291e937eb7。未绕过拦截；公开环境商品加载和移动端交互仍需用户打开链接或平台解除拦截后复核。不能将本地真实数据检查写成公开站点加载验收。
-- GitHub 保存于 preview/lovegobuytab-com 分支下 lovegobuytab-com/，准备独立草稿 PR；不合并主分支，不绑定正式域名，不修改其他站点。
+- GitHub 已保存于 preview/lovegobuytab-com 分支下 lovegobuytab-com/，独立草稿 PR：https://github.com/hehaize88-code/hehaize/pull/25。实现提交 c352ce83af0972be9066dde8e8ef8d6c7cc1e488；共新增 100 个文件。不合并主分支，不绑定正式域名，不修改其他站点。
 - 已知范围：搜图与订单 QC 的公开接口尚未核实；照片只标为商品照片。暂不提供虚构功能。生产上线前补齐源站接口或保持明确可用范围，并实现源站驱动的商品 sitemap 分片。
