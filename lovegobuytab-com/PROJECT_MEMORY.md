@@ -1,7 +1,7 @@
 # CNBuyCha 子站项目记忆：LoveGoBuy
 
 更新时间：2026-10-22（Asia/Shanghai）
-阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。用户现已授权部署到 GitHub 和 Cloudflare，正式上线进行中。当前状态以第 20 节为准。
+阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式站已部署至 GitHub main 与 Cloudflare Worker，lovegobuytab.com 和 www 已绑定；正式域名首页、搜索、详情、FAQ、文章列表与 robots/sitemap 已实测。当前状态以第 20 节为准。
 本文件是本项目的持续交接记录。后续每次执行先读当前版本，再追加真实进展，不把提案写成已完成事实。
 
 ## 1. 用户已确定的要求
@@ -507,3 +507,14 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - noindex/robots 依据实际请求域名，避免生产构建的 workers.dev 地址被索引。
 - 新增动态 sitemap 索引、编辑页/分类页子图、商品分页子图。每个商品子图读取 CNBuyCha 原有一页最多 60 条，生成对应 24 语言 URL 和 hreflang；不建立商品索引或数据库，上游异常返回 503。
 - 本地构建与 24 语言完整性门禁通过；robots、编辑页 sitemap（336 URL）、非法商品子图 404、未知路由 404、www 跳转和预览 noindex 检查通过。正式部署、DNS 与 HTTPS 状态待后续实测更新。
+
+- PR #25 已成功 squash 合并到 main，提交 1feb51fb68757d0e456e31b1b4f54fed1f74557c。正式 Worker 正在从该提交构建。
+- 真实源站 sitemap 检查通过：首页商品分片 1,440 个语言 URL、末页分片 864 个、分类页 264 个。XML 结构和唯一性通过。
+
+- Cloudflare 正式构建 fb3c6b32-e8e9-4d27-a472-22bcb148a7e4 成功，Worker 版本短 ID eb52d09f。设置：main 分支、根目录 lovegobuytab-com、监听 lovegobuytab-com/**；复用已有 GitHub 连接和构建令牌。
+- Cloudflare Domains 已显示 lovegobuytab.com 与 www.lovegobuytab.com 均连接到 production。
+- Chrome 在正式 HTTPS 域名验证：首页正常、canonical 指向 https://lovegobuytab.com/ 且无 noindex；搜索 7876894732 返回一件商品、搜索页 noindex；商品 3470 的照片加载正常，购买 URL 使用卖家 ID 7876894732 和邀请码 161CPG。
+- FAQ 36 条、文章列表 10 篇、正式 robots Allow: / 并引用主域名 sitemap。正式 sitemap 索引包含编辑页、分类页及 58 个商品分片。
+
+- 正式域名商品子图 products-1.xml 已在 Chrome 验证输出 1,440 个 URL；www.lovegobuytab.com/de/faq/?q=test 自动跳转到 https://lovegobuytab.com/de/faq/?q=test，德语 FAQ 36 条正常。
+- wrangler.jsonc 同步声明 apex/www 的 Custom Domain 路由，后续 GitHub 自动部署不会丢失域名绑定。

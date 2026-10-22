@@ -38,3 +38,16 @@ https://lovegobuytab-preview.hehaize88.workers.dev was deployed successfully by 
 Actual Chrome checks: homepage rendered with all 15 image elements loaded and no horizontal overflow at 1920px; search 7876894732 returned one expected product; detail loaded its four original source photos and correct purchase URL with invite code 161CPG; FAQ displayed 36 questions; article index displayed 10 cards; shipping article displayed its full 7,494-character main content and its language menu preserved the article route. Preview robots/canonical checks passed in the bundled Worker and the public homepage contained noindex.
 
 The execution environment's direct HTTP check returned 403, so it was stopped. Browser checks above used the user's actual Chrome session, where the replacement preview loaded successfully. No custom domain, DNS, product database or source data was changed. The GitHub preview branch remains isolated from main.
+
+
+## Production deployment — 2026-10-22
+
+- User authorized GitHub and Cloudflare deployment; PR #25 squash merged to main at 1feb51fb68757d0e456e31b1b4f54fed1f74557c.
+- New production Worker `lovegobuytab-com` build fb3c6b32-e8e9-4d27-a472-22bcb148a7e4 completed. Root `lovegobuytab-com`; main branch; watch only `lovegobuytab-com/**`; existing build token reused.
+- Dashboard confirms production custom domains `lovegobuytab.com` and `www.lovegobuytab.com`.
+- Live Chrome: HTTPS homepage loads with production canonical and no noindex; source-backed search for 7876894732 returns the correct listing; product detail images load and purchase ID / invite code match the supplied template. FAQ has 36 entries; article index has 10 entries.
+- Live robots allows indexing and references https://lovegobuytab.com/sitemap.xml. Live sitemap index lists 58 product shards plus editorial and category sitemaps.
+- Bundled Worker checks passed: www redirect preserving path/query; request-host preview noindex; search noindex; unknown route/invalid sitemap 404; editorial XML 336 locale URLs. Real source-backed first and last product shards produced 1,440 and 864 locale URLs; category XML produced 264. XML structure and unique URL checks passed.
+- Executor DNS resolution for the new custom domain was unavailable at verification time; live-domain verification used the user's connected Chrome, not an assumed executor HTTP result.
+
+- Live first product sitemap contains 1,440 URLs. Live www → apex redirect preserves /de/faq/?q=test; German FAQ renders 36 entries.
