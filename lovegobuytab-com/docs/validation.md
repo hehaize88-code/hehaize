@@ -51,3 +51,5 @@ The execution environment's direct HTTP check returned 403, so it was stopped. B
 - Executor DNS resolution for the new custom domain was unavailable at verification time; live-domain verification used the user's connected Chrome, not an assumed executor HTTP result.
 
 - Live first product sitemap contains 1,440 URLs. Live www → apex redirect preserves /de/faq/?q=test; German FAQ renders 36 entries.
+
+- End-to-end GitHub auto-deploy verified: commit b3205df890851a34485f8d619faba487202955c9 triggered build 21047122-962a-4808-99c3-fd49cbdbfa38; Ready in 43 seconds, Worker version 41c2a22b. Homepage reload retains production canonical and indexability.

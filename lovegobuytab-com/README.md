@@ -41,7 +41,7 @@ The initial chatgpt.site preview host is blocked by its security layer for the u
 
 ## Production deployment
 
-Production was authorized on 2026-10-22. Deploy the `main` branch of `hehaize88-code/hehaize` with root directory `lovegobuytab-com`. Build command: `SITE_URL=https://lovegobuytab.com npm run build`. Deploy command: `npx --yes wrangler@4.151.3 deploy --config wrangler.jsonc`. The production Worker is `lovegobuytab-com`; only changes to `lovegobuytab-com/**` should trigger builds. Preview branch builds are disabled for this production Worker.
+Production was authorized and successfully deployed on 2026-10-22 at https://lovegobuytab.com/. Both apex and www custom domains are connected; the GitHub-to-Cloudflare automatic build was verified. Deploy the `main` branch of `hehaize88-code/hehaize` with root directory `lovegobuytab-com`. Build command: `SITE_URL=https://lovegobuytab.com npm run build`. Deploy command: `npx --yes wrangler@4.151.3 deploy --config wrangler.jsonc`. The production Worker is `lovegobuytab-com`; only changes to `lovegobuytab-com/**` should trigger builds. Preview branch builds are disabled for this production Worker.
 
 Use Cloudflare Worker Custom Domains for `lovegobuytab.com` and `www.lovegobuytab.com`; preserve other zone records. The application permanently redirects www to the HTTPS apex, retaining the path and query. Canonical and hreflang use the production origin. Indexing is determined by the request hostname: workers.dev and other preview hosts stay noindex even when they serve a production build. Search and sort variants also stay noindex. See PROJECT_MEMORY.md for the actual deployment and domain verification status.
 

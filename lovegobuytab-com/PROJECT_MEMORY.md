@@ -518,3 +518,7 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 
 - 正式域名商品子图 products-1.xml 已在 Chrome 验证输出 1,440 个 URL；www.lovegobuytab.com/de/faq/?q=test 自动跳转到 https://lovegobuytab.com/de/faq/?q=test，德语 FAQ 36 条正常。
 - wrangler.jsonc 同步声明 apex/www 的 Custom Domain 路由，后续 GitHub 自动部署不会丢失域名绑定。
+
+- GitHub→Cloudflare 自动部署已实测成功：提交 b3205df890851a34485f8d619faba487202955c9 触发构建 21047122-962a-4808-99c3-fd49cbdbfa38，43 秒完成，Worker 版本短 ID 41c2a22b，状态 Ready。正式域名刷新仍正常。
+- 正式入口：https://lovegobuytab.com/；仓库入口：https://github.com/hehaize88-code/hehaize/tree/main/lovegobuytab-com 。以后修改该目录并推送 main 会自动构建发布。
+- 本轮完成 GitHub、Cloudflare、双域名 HTTPS、canonical/robots/hreflang、源站商品 sitemap 和项目记录；无新增数据库、后台或商品数据源。搜图及真实订单 QC 仍待 CNBuyCha 可用接口核实。
