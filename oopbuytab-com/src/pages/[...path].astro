@@ -53,6 +53,15 @@ const pagination=[...new Set([1,page-1,page,page+1,pages].filter(n=>n>=1&&n<=pag
 <!doctype html>
 <html lang={lang}>
 <head>
+ {!preview&&<>
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-CC6HPXJJN7"></script>
+  <script is:inline>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+   gtag('config', 'G-CC6HPXJJN7');
+  </script>
+ </>}
  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
  <title>{pageTitle} · OOPBuy Tab</title><meta name="description" content={intro}/><meta name="robots" content={robots}/>
  <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/>
