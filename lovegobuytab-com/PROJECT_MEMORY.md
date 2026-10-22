@@ -1,7 +1,7 @@
 # CNBuyCha 子站项目记忆：LoveGoBuy
 
 更新时间：2026-10-22（Asia/Shanghai）
-阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式域名尚未绑定。当前状态以第 19 节为准。
+阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。用户现已授权部署到 GitHub 和 Cloudflare，正式上线进行中。当前状态以第 20 节为准。
 本文件是本项目的持续交接记录。后续每次执行先读当前版本，再追加真实进展，不把提案写成已完成事实。
 
 ## 1. 用户已确定的要求
@@ -496,3 +496,14 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - 未增加数据库、后台、代理旧受阻地址或其他商品来源。搜图与真实订单 QC 仍按第 18 节的范围如实说明。
 
 补充：运费独立文章在新公开预览正常展开，main 正文长度 7,494 字符；语言菜单保留当前文章 slug。文章标题为换行内联链接，自动点击矩形中心落到行间空白时可能不导航；点击文章封面可以正常进入，未发现路由错误。
+
+
+## 20. 正式上线授权与准备（2026-10-22）
+
+- 用户明确要求“帮我部署到github和cf吧”，授权合并当前预览至 main 并部署 lovegobuytab.com。
+- GitHub 目录继续为 lovegobuytab-com/；准备合并 PR #25，不改其他域名目录。
+- 正式 Worker 采用 lovegobuytab-com，保留 lovegobuytab-preview 供后续验收。
+- 生产 SITE_URL=https://lovegobuytab.com；新增 www→HTTPS 主域名 301，保留路径与查询。
+- noindex/robots 依据实际请求域名，避免生产构建的 workers.dev 地址被索引。
+- 新增动态 sitemap 索引、编辑页/分类页子图、商品分页子图。每个商品子图读取 CNBuyCha 原有一页最多 60 条，生成对应 24 语言 URL 和 hreflang；不建立商品索引或数据库，上游异常返回 503。
+- 本地构建与 24 语言完整性门禁通过；robots、编辑页 sitemap（336 URL）、非法商品子图 404、未知路由 404、www 跳转和预览 noindex 检查通过。正式部署、DNS 与 HTTPS 状态待后续实测更新。

@@ -16,7 +16,7 @@ const canonicalQuery =
 const canonical = origin + localized(lang, path) + canonicalQuery;
 const articlePath = "/articles/how-to-order-weidian-with-lovegobuy/";
 const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
-  new URL(origin).hostname,
+  Astro.url.hostname,
 );
 ---
 
@@ -43,6 +43,7 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
       href={origin + path + canonicalQuery}
     />
     {(isPreview ||
+      Astro.response.status >= 400 ||
       Astro.url.searchParams.has("q") ||
       Astro.url.searchParams.has("sort")) && (
       <meta name="robots" content="noindex,follow" />

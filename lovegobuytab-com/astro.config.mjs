@@ -1,9 +1,7 @@
 import { defineConfig } from "astro/config";
 import adapter from "./scripts/adapter.mjs";
 export default defineConfig({
-  site:
-    process.env.SITE_URL ||
-    "https://lovegobuytab-preview.hehaize88.chatgpt.site",
+  site: process.env.SITE_URL || "https://lovegobuytab.com",
   output: "server",
   adapter: adapter(),
   devToolbar: { enabled: false },

@@ -1,6 +1,6 @@
 # lovegobuytab.com
 
-Independent LoveGoBuy product directory. Preview project, built with Astro 7.4.2 SSR and a standard Fetch Worker adapter. Source is intended for `hehaize88-code/hehaize/lovegobuytab-com/`. GitHub stores source; the SSR build needs a Worker-compatible runtime, not plain GitHub Pages.
+Independent LoveGoBuy product directory. Built with Astro 7.4.2 SSR and a standard Fetch Worker adapter. Source is intended for `hehaize88-code/hehaize/lovegobuytab-com/`. GitHub stores source; the SSR build needs a Worker-compatible runtime, not plain GitHub Pages.
 
 ## Development
 
@@ -31,7 +31,7 @@ The keyword research is qualitative search-intent research; no invented search-v
 - `/faq/`: searchable 36-question source-linked FAQ
 - `/articles/`: 10-article index
 - `/articles/{slug}/`: complete editorial page with contents and sources
-- `/sitemap.xml`: editorial routes and hreflang; a source-driven split product sitemap remains a production follow-up
+- `/sitemap.xml`: live index of editorial, category and product sitemaps. Each product shard reads one real CNBuyCha listing page (60 products), then emits 24 locale URLs with hreflang. No product index/database is stored. Upstream failures return 503 rather than an empty success response.
 
 ## Preview and production boundary
 
@@ -39,7 +39,11 @@ Public review URL: https://lovegobuytab-preview.hehaize88.workers.dev
 
 The initial chatgpt.site preview host is blocked by its security layer for the user. The replacement Cloudflare Workers preview has been published from the existing `preview/lovegobuytab-com` branch, without custom-domain routes. Build with `SITE_URL=https://lovegobuytab-preview.hehaize88.workers.dev npm run build`, then deploy with `npx --yes wrangler@4.151.3 deploy --config wrangler.preview.jsonc`. The root directory in Workers Builds is `lovegobuytab-com`, with watch paths limited to `lovegobuytab-com/**`. Node is pinned in `.node-version`. All non-production origins remain noindex and blocked in robots.txt. This preview does not bind the purchased domain. See `docs/validation.md` for actual public-browser results.
 
-The purchased domain has **not** been bound. Preview metadata uses the preview origin and all preview pages are noindex. Before production, set `SITE_URL=https://lovegobuytab.com` at build time, configure the chosen Worker runtime and custom-domain DNS, then validate live source fetches, source image access and indexing rules again. Do not point production DNS before the user approves this preview.
+## Production deployment
+
+Production was authorized on 2026-10-22. Deploy the `main` branch of `hehaize88-code/hehaize` with root directory `lovegobuytab-com`. Build command: `SITE_URL=https://lovegobuytab.com npm run build`. Deploy command: `npx --yes wrangler@4.151.3 deploy --config wrangler.jsonc`. The production Worker is `lovegobuytab-com`; only changes to `lovegobuytab-com/**` should trigger builds. Preview branch builds are disabled for this production Worker.
+
+Use Cloudflare Worker Custom Domains for `lovegobuytab.com` and `www.lovegobuytab.com`; preserve other zone records. The application permanently redirects www to the HTTPS apex, retaining the path and query. Canonical and hreflang use the production origin. Indexing is determined by the request hostname: workers.dev and other preview hosts stay noindex even when they serve a production build. Search and sort variants also stay noindex. See PROJECT_MEMORY.md for the actual deployment and domain verification status.
 
 The `.openai/hosting.json` identity belongs to the isolated public preview. No database or storage bindings are required. Do not create another preview project when this ID exists.
 
