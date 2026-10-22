@@ -24,6 +24,23 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
+    {Astro.url.hostname === "lovegobuytab.com" && (
+      <>
+        <script
+          is:inline
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-W9KK0L385M"
+        />
+        <script is:inline>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "G-W9KK0L385M");
+        </script>
+      </>
+    )}
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />

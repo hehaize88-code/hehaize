@@ -522,3 +522,17 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - GitHub→Cloudflare 自动部署已实测成功：提交 b3205df890851a34485f8d619faba487202955c9 触发构建 21047122-962a-4808-99c3-fd49cbdbfa38，43 秒完成，Worker 版本短 ID 41c2a22b，状态 Ready。正式域名刷新仍正常。
 - 正式入口：https://lovegobuytab.com/；仓库入口：https://github.com/hehaize88-code/hehaize/tree/main/lovegobuytab-com 。以后修改该目录并推送 main 会自动构建发布。
 - 本轮完成 GitHub、Cloudflare、双域名 HTTPS、canonical/robots/hreflang、源站商品 sitemap 和项目记录；无新增数据库、后台或商品数据源。搜图及真实订单 QC 仍待 CNBuyCha 可用接口核实。
+
+
+## 21. Google Analytics 4 接入（2026-10-22）
+
+- 用户明确授权将 lovegobuytab.com 添加到 Google Analytics，并接入正式网站。
+- 已在现有 Analytics 账号 405518068 下创建独立媒体资源 lovegobuytab.com，媒体资源 ID 560083558。
+- 网站数据流 LoveGoBuy Tab - Web，网址 https://lovegobuytab.com，数据流 ID 16179505610，衡量 ID G-W9KK0L385M。此衡量 ID 是公开标签标识，不是密钥。
+- 报告时区：中国时间 GMT+08:00；币种 USD，与站点商品价格一致；行业购物，初始业务规模按小型设置；目标为流量与用户互动。
+- 保留标准增强型衡量；未创建 API 密钥、关联广告账号或开启 Google Signals。
+- 共用 Layout.astro 加入一次官方 gtag.js 与默认 config，覆盖所有语言、目录、文章、FAQ、商品页面；只在实际请求主机 lovegobuytab.com 输出，所有预览与 workers.dev 地址不加载。www 已 301 至主域名。
+- 不额外手动触发 page_view，避免与 gtag config 默认事件重复。
+- 本地构建通过，24 语言/240 文章/864 FAQ 门禁通过；英文和德语 FAQ 各一份标签、预览域名零标签，SSR 返回 200。
+- 当前状态：资源和数据流已创建，网站代码已完成；等待 GitHub 自动部署与实时数据验证。
+- 统计入口：https://analytics.google.com/analytics/web/#/a405518068p560083558/reports/intelligenthome
