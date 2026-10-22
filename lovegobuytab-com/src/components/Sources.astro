@@ -1,0 +1,22 @@
+---
+const { ids, sources, copy } = Astro.props;
+const selected = ids
+  .map((id: string) => sources.find((s: any) => s.id === id))
+  .filter(Boolean);
+---
+
+<div class="sources">
+  <h2>{copy.sourceHeading}</h2>
+  <ul>
+    {selected.map((s: any) => (
+      <li>
+        <a href={s.url} target="_blank" rel="noopener">
+          {s.title}
+          <span aria-hidden="true"> ↗</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p>{copy.sourceHelp}</p>
+  <small>{copy.checked}: 2026-10-22</small>
+</div>

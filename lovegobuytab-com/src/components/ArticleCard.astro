@@ -1,0 +1,33 @@
+---
+import Icon from "./Icon.astro";
+import { localized } from "../lib/i18n";
+const { article: a, lang, copy, index = 0, image } = Astro.props;
+---
+
+<article class="article-card">
+  <a
+    class:list={["article-cover", `cover-${index % 4}`]}
+    href={localized(lang, `/articles/${a.slug}/`)}
+    aria-label={a.title}
+  >
+    {image ? (
+      <img src={image} alt="" loading="lazy" referrerpolicy="no-referrer" />
+    ) : (
+      <span class="article-number">{String(index + 1).padStart(2, "0")}</span>
+    )}
+    <span class="cover-label">{a.category}</span>
+    <span class="article-arrow">
+      <Icon />
+    </span>
+  </a>
+  <div class="article-meta">
+    <span>{a.category}</span>
+    <span>
+      {a.readingMinutes} {copy.minutes}
+    </span>
+  </div>
+  <h3>
+    <a href={localized(lang, `/articles/${a.slug}/`)}>{a.title}</a>
+  </h3>
+  <p>{a.description}</p>
+</article>
