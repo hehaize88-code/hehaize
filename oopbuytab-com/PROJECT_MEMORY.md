@@ -440,3 +440,15 @@
 - 为使用现有GitHub连接默认分支部署，将已确认预览目录及正式配置同步到main的oopbuytab-com/，仅新增此目录；预览分支及其他域名目录保持原内容。
 - 构建使用npm run build:production，根目录oopbuytab-com，Node.js固定22.22.0；复用已有Workers Builds凭据，不创建新凭据。
 - 当前处于发布准备阶段，最终成功状态另附实际Cloudflare回执。
+
+### 2026-10-22 正式发布与线上核验完成
+
+- 源码已发布至 main/oopbuytab-com：首次同步提交3cc1b462078c256dd2a008b8ffea463bb57be3c7；最终可部署提交19eea951261e4de6ac98e6f4e06b6146dce96081。其他站点目录未改。GitHub Pages仍使用oopbuytab-preview。
+- 解决Cloudflare npm10安装失败：原锁文件含27个错误标记为extraneous的嵌套esbuild包；最终使用npm10.9.2重生成正确optional/peer元数据，通过npm10干净安装及正式构建。不要再次用npm11生成的旧锁文件覆盖。
+- Cloudflare Worker oopbuytab-com；账号9010cea800ac2a140509889d88fe612e；构建cfbc90da-c5ca-49e9-8272-226eba413e06于2026-10-22 10:41（Asia/Shanghai）成功完成。Worker版本4b3ce8d3-53ae-4bed-82c0-a86b75d12180。
+- 构建连接hehaize88-code/hehaize main；根目录oopbuytab-com；npm run build:production；npx wrangler deploy；NODE_VERSION=22.22.0；监听oopbuytab-com/**；关闭预览构建；复用既有构建凭据。
+- 两个Custom Domains已绑定：oopbuytab.com及www.oopbuytab.com。生产workers.dev和预览地址均关闭。无需用户重连Cloudflare API。
+- 用户Chrome已打开正式首页，13张图片全部加载。目录第2页点击Next进入第3页且显示20件；实时目录3456件、173页。FAQ结构化28问，文章索引10篇，德语文章lang/canonical正确。
+- 独立HTTP验证通过：首页、目录、第二页、商品详情、英德文章、马耳他FAQ、robots及两个sitemap均200；常规页可收录、参数分页noindex；XML清单696网址；www/HTTP均301保留路径和参数。数据见docs/PRODUCTION_VERIFICATION.json。
+- 默认Python urllib客户端被Cloudflare Browser Integrity检查以1010拒绝；使用普通浏览器User-Agent的独立HTTP核验与真实Chrome均正常。未降低或关闭安全设置。
+- 目前未进行GSC/Bing/GA4新增配置或提交；本次任务仅完成GitHub正式源码、Cloudflare发布、域名绑定及功能核验。
