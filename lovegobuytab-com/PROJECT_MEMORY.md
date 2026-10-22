@@ -1,7 +1,7 @@
 # CNBuyCha 子站项目记忆：LoveGoBuy
 
 更新时间：2026-10-22（Asia/Shanghai）
-阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式站已部署至 GitHub main 与 Cloudflare Worker，lovegobuytab.com 和 www 已绑定；正式域名首页、搜索、详情、FAQ、文章列表与 robots/sitemap 已实测。Google Analytics 4 已接入并收到实时访问事件，当前状态以第 21 节为准。
+阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式站已部署至 GitHub main 与 Cloudflare Worker，lovegobuytab.com 和 www 已绑定；正式域名首页、搜索、详情、FAQ、文章列表与 robots/sitemap 已实测。Google Analytics 4 已接入并收到实时访问事件，Google Search Console 已成功处理全部 60 个子地图、发现 83,544 个网址；当前状态以第 22 节为准。
 本文件是本项目的持续交接记录。后续每次执行先读当前版本，再追加真实进展，不把提案写成已完成事实。
 
 ## 1. 用户已确定的要求
@@ -540,3 +540,16 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - 没有伪造统计请求；验证使用正常浏览器访问。未创建付费订阅或更改其他网站的统计资源。
 - 统计入口：https://analytics.google.com/analytics/web/#/a405518068p560083558/reports/intelligenthome
 - 实时报告：https://analytics.google.com/analytics/web/#/a405518068p560083558/realtime/overview
+
+
+## 22. Google Search Console 站点地图状态核验（2026-10-22，Asia/Shanghai）
+
+- 用户截图：总地图显示“成功”但发现 0，子地图显示“无法抓取”；用户要求处理。
+- 进入现有已登录 Chrome 的 lovegobuytab.com 域名资源；初始列表仍显示旧状态。点击 pages.xml 详情即显示“已成功处理站点地图”，发现 336 个网址。
+- 返回总地图并刷新，Google 报告更新为“已成功处理站点地图索引”，已发现网页总数 83,544。
+- 将子地图表格设置每页 100 行，读取全部 60 条：60/60 均成功，0 条失败；categories.xml 264，pages.xml 336，products-1 至 products-57 各 1,440，products-58 为 864，合计 83,544。
+- 结论：截图是 Google 子地图处理完成前的旧状态；当前官方报告已经处理成功，无需改代码、改 DNS、安全规则、删除或重复提交站点地图。未把刷新页面说成代码修复，也未伪称触发了 Google 重抓。
+- 终端直连此域名的 4 次只读检查均返回 HTTP 403，停止该访问路径；Google 自身已成功抓取全部子地图，故不能把执行环境 403 当作 Google 抓取失败证据。
+- 保留提交入口 https://lovegobuytab.com/sitemap.xml；已发现网址包括 24 语言版本，不代表独立商品数量，也不等于已被 Google 索引。
+- 此轮仅更新项目记忆；应用部署保持 GA4 已验证版本，不触发不必要的发布。
+- Google 官方说明：https://support.google.com/webmasters/answer/7451001?hl=en；“Discovered pages”表示已从地图解析的网址，并不保证抓取或索引。
