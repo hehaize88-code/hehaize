@@ -60,7 +60,7 @@ for (const lang of langs) {
       path,
     );
     assert.equal(
-      doc.querySelectorAll('script[src="/interaction-events.js"]').length,
+      doc.querySelectorAll("script[data-interaction-events]").length,
       1,
       path,
     );
@@ -140,7 +140,7 @@ const preview = await get(
 assert.equal(preview.response.status, 200);
 assert.match(preview.response.headers.get("x-robots-tag"), /noindex/);
 assert.ok(!preview.html.includes("G-W9KK0L385M"));
-assert.ok(!preview.html.includes("/interaction-events.js"));
+assert.ok(!preview.html.includes("data-interaction-events"));
 const missing = await get("/articles/does-not-exist/");
 assert.equal(missing.response.status, 404);
 assert.match(missing.html, /noindex,follow/);

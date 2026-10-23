@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
-const source = fs.readFileSync("public/interaction-events.js", "utf8");
+const source = fs.readFileSync("src/lib/interaction-events.js", "utf8");
 function environment(hostname = "lovegobuytab.com") {
   const events = [],
     listeners = {};

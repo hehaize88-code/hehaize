@@ -1,5 +1,6 @@
 ---
 import Icon from "./Icon.astro";
+import interactionEvents from "../lib/interaction-events.js?raw";
 import { languages, localized } from "../lib/i18n";
 import { REGISTER } from "../lib/catalog";
 import "../styles/global.css";
@@ -39,7 +40,11 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
           gtag("js", new Date());
           gtag("config", "G-W9KK0L385M");
         </script>
-        <script is:inline defer src="/interaction-events.js" />
+        <script
+          is:inline
+          data-interaction-events
+          set:html={interactionEvents}
+        />
       </>
     )}
     <meta name="viewport" content="width=device-width,initial-scale=1" />
