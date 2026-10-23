@@ -52,3 +52,7 @@ Production keeps one GA4 installation and adds intent events: `product_outbound_
 ## Release gates
 
 `npm run build:production` runs content parity, analytics behavior, the production build, packaging and rendered release checks. The rendered check covers every article and language index, full paragraphs, canonical/hreflang, structured dates, analytics loading, internal calls to action, all sitemap counts, 404s and www redirects. Manual browser QA also checks compact mobile article/list rendering and disclosure expansion. Catalog smoke checks cover all 11 categories, source images, purchase links and 20-item pagination.
+
+## Published verification
+
+Production commit `cdc43b36929d48b11e63e86cb7c987cc11ae9348` passed the GitHub Workers Builds check and deployed successfully at 2026-10-23T08:45:31Z (build `15a3945e-39c1-4f44-b0a6-8b47033ccd77`). All 96 new localized article URLs passed live checks, together with the homepage, article index, four revised existing article titles, analytics asset, sitemap index/core and EN/DE/MT product maps. Final revised paragraphs in MT/GA/LT were matched against the live HTML after deployment. Browser checks confirmed English and German article rendering and localized related links. Full local checks still cover all 336 articles and all 25 sitemap files. This verifies publication, not increased clicks or search-engine indexing.
