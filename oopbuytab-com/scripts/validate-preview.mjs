@@ -22,10 +22,10 @@ for(const lang of locales)for(const route of routes){
  assert.equal(document.querySelectorAll('h1').length,1,current+' heading');
  assert(!document.body.textContent.includes('Continue on CNBuyCha'),current+' removed CTA');
  if(route==='/faq/')assert.equal(document.querySelectorAll('.faq-answer').length,28,current+' FAQs');
- if(route==='/articles/')assert.equal(document.querySelectorAll('.article-card').length,10,current+' articles');
+ if(route==='/articles/')assert.equal(document.querySelectorAll('.article-card').length,reference.articles.length,current+' articles');
  if(reference.articles.some(a=>route==='/articles/'+a.slug+'/')){
-  assert.equal(document.querySelectorAll('.reading-section').length,9,current+' article sections');
-  assert.equal(document.querySelectorAll('.section-prose>p').length,27,current+' full paragraphs');
+  assert.equal(document.querySelectorAll('.reading-section').length,reference.articles.find(a=>route==='/articles/'+a.slug+'/').sections.length,current+' article sections');
+  assert.equal(document.querySelectorAll('.section-prose>p').length,reference.articles.find(a=>route==='/articles/'+a.slug+'/').sections.length*3,current+' full paragraphs');
  }
  const catalog=document.querySelector('.catalog-results');
  if(catalog){assert.equal(catalog.querySelectorAll('.product-card').length,20,current+' first page');assert(catalog.querySelector('.pagination-jump'),current+' jump');}

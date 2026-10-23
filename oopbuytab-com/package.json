@@ -12,7 +12,9 @@
     "preview:catalog": "node scripts/build-catalog-preview.mjs",
     "preview:pages": "npm run check:content && npm run preview:catalog && npm run build && node scripts/export-pages-preview.mjs && npm run check:preview",
     "check:preview": "node scripts/validate-preview.mjs",
-    "build:production": "OOPBUY_PRODUCTION=true npm run build && node scripts/package-cloudflare.mjs"
+    "build:production": "npm run check:content && npm run check:analytics && OOPBUY_PRODUCTION=true npm run build && node scripts/package-cloudflare.mjs && npm run check:release",
+    "check:release": "node scripts/validate-release.mjs",
+    "check:analytics": "node scripts/validate-analytics.mjs"
   },
   "dependencies": {
     "astro": "7.4.1",

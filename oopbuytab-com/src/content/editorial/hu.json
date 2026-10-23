@@ -429,16 +429,293 @@
   ],
   "articles": [
     {
+      "slug": "oopbuy-payment-methods",
+      "title": "OOPBuy fizetési módok: feltöltés, díjak és fizetési problémák",
+      "description": "Hasonlítsd össze az OOPBuy dokumentált fizetési módjait, ellenőrizd a feltöltési díjakat és a devizaátváltást, és tisztázd a levont, de jóvá nem írt fizetést.",
+      "tag": "Fizetés",
+      "primaryKeyword": "OOPBuy payment methods",
+      "secondaryKeywords": [
+        "OOPBuy top up",
+        "OOPBuy PayPal",
+        "OOPBuy payment failed"
+      ],
+      "takeaways": [
+        "Jóváhagyás előtt ellenőrizd a saját fizetésednél megjelenő módokat, pénznemet, díjat és végösszeget.",
+        "Az egyenlegfeltöltés, a kifizetett termékrendelés és a kifizetett nemzetközi csomag külön nyilvántartás.",
+        "Ha a pénzt levonták, de nem írták jóvá, újabb fizetés előtt tisztázd a meglévő tranzakciót."
+      ],
+      "sections": [
+        {
+          "title": "Mely OOPBuy fizetési módokat ismertetik a dokumentumok?",
+          "text": "A hivatalos kezdő útmutató hitelkártyát, PayPal-t és számlaegyenleget nevez meg. A feltöltési útmutató a Wise-átutalásokat is ismerteti. Ezek dokumentált lehetőségek, de nem ígérik, hogy minden mód minden fióknál, országban, pénznemben vagy tranzakciónál elérhető. Nyisd meg az aktuális fizetési képernyőt, és nézd meg, mit kínál a saját rendelésedhez.\n\nKülönítsd el a fizetési módot a fizetés céljától. A pénz hozzáadása a fiókodhoz nem feltétlenül ad le rendelést, és az áru kifizetése nem rendezi annak későbbi nemzetközi csomagját. Külön ellenőrizd az egyenleg nyilvántartását, a termékrendelést és a csomagfizetést ahelyett, hogy egyetlen sikeres tranzakciót a teljes folyamat lezárásának tekintenél.\n\nMielőtt az OOPBuy oldaláról egy fizetési szolgáltatóhoz lépsz, ellenőrizd az összeget és a pénznemet. Őrizd meg a kapott bizonylatot és a hozzá tartozó rendelési vagy feltöltési azonosítót. Ezek az adatok segítenek megkülönböztetni a befejezett vásárlást attól a befizetéstől, amelyet még hozzá kell rendelni egy rendeléshez."
+        },
+        {
+          "title": "Hogyan töltsd fel az egyenleget úgy, hogy követhesd a végösszeget?",
+          "text": "Indulj a hivatalos OOPBuy-fiókod feltöltési lehetőségéből. Válassz egy aktuálisan felkínált módot, add meg az összeget, és véglegesítés előtt nézd át a jóváhagyási képernyőt. Jegyezd fel a kifizetett pénzt, a terhelés pénznemét, a várható egyenleget és a megjelenő díjakat. A táblázatban átváltott termékár nem ez a végleges fizetési ajánlat.\n\nA Wise esetében a közzétett útmutató USD, GBP, EUR, NZD és AUD pénznemeket említ. Azt is kifejti, hogy a kedvezményezett adatai a pénznemtől függnek. A saját feltöltésednél megjelenő kedvezményezetti adatokat használd, ne egy képernyőképről, korábbi átutalásból vagy más útmutatójából másold ki a bankadatokat.\n\nMiután a szolgáltató sikeresnek jelzi a fizetést, ellenőrizd az OOPBuy tranzakciós nyilvántartását és az elérhető egyenleget. Ha eltérnek, mentsd el a bizonyítékokat. Ne indíts újabb átutalást pusztán azért, mert az első még nem jelent meg: előbb állapítsd meg, hogy a szolgáltató függő fizetést, befejezett fizetést vagy sikertelen engedélyezést mutat-e."
+        },
+        {
+          "title": "PayPal-díjak és árfolyamok: mit ellenőrizz?",
+          "text": "A hivatalos feltöltési tájékoztató és a feltöltési GYIK eltérő százalékos PayPal-díjakat mutatott az útmutatóhoz végzett ellenőrzéskor. Egyik oldal sem adott meg egyértelmű hatálybalépési dátumot. Ezért hamis bizonyosságot keltene, ha egyetlen százalékot másolnánk egy blogba. Gyakorlati viszonyítási alapként az aktuális fizetési jóváhagyásnál megjelenő díjat és végösszeget használd.\n\nA PayPal-feltöltési útmutató USD-re történő átváltást ír le, de ez nem jelenti azt, hogy a bankod vagy a kártyakibocsátód nem számít fel külön átváltási költséget. Hasonlítsd össze a fizetési számládról távozó összeget az OOPBuy rendszerében jóváírt összeggel. Jegyezd fel az árfolyamot és a díjat ott, ahol megjelennek, és minden pénznemet egyértelműen jelölj.\n\nA PayPal-útmutató azt is előírja, hogy a fizetési oldalon szereplő szállítási cím egyezzen az OOPBuy-csomag feladásakor használt címmel. Fizetés előtt ellenőrizd ezt, különösen, ha a megszokott címedtől eltérő helyre tervezed a kézbesítést. Eltérés esetén kérdezd meg a hivatalos ügyfélszolgálatot, mielőtt erre a fizetésre alapoznád a szállítást."
+        },
+        {
+          "title": "Sikertelen, függő, vagy levont, de jóvá nem írt fizetés?",
+          "text": "Először határozd meg a pontos állapotot. A sikertelen engedélyezés, a szolgáltatónál függő tranzakció és az elszámolt terhelés hiányzó OOPBuy-egyenleggel különböző problémák. Olvasd el a szolgáltató és az OOPBuy nyilvántartását is. A sikerjelzés hiánya önmagában nem bizonyítja, hogy nem távozott pénz a számládról.\n\nHa a szolgáltató befejezett terhelést mutat, gyűjtsd össze a feltöltési azonosítót, a tranzakcióazonosítót, az összeget, a pénznemet és a fizetés időpontját. Küldd el ezeket a hivatalos ügyfélszolgálaton keresztül, és kérd a meglévő tranzakció egyeztetését. Az érzékeny kártyaadatokat és a fiókjelszavakat hagyd le a képernyőképekről. Az ügyfélszolgálatnak a fizetést azonosító bizonyítékra van szüksége, nem a teljes kártyaadataidra.\n\nHa elutasították a fizetést, ellenőrizd a látható hibát és a mód aktuális elérhetőségét, mielőtt másik felkínált lehetőséggel próbálkozol. Ez az útmutató nem tudja megállapítani egy adott banki döntés okát, és nem ígér elszámolási határidőt. Kerüld a gyors, ismételt próbálkozásokat, amíg egy korábbi terhelés állapota tisztázatlan; különben több sikeres fizetést is vissza kell keresni."
+        },
+        {
+          "title": "A nemzetközi csomagra külön tervezz költségkeretet",
+          "text": "Az OOPBuy vásárlási tájékoztatója külön kezeli az áru és a belföldi kézbesítés kifizetését a későbbi nemzetközi szállítás fizetésétől. Rendelés előtt mindkettőt becsüld meg. Amikor a termékek beérkeznek a raktárba, vizsgáld át őket, majd válassz csomagolást és megfelelő útvonalat, mielőtt jóváhagyod a csomag összegét. A feltöltött fiók csak akkor hasznos, ha a teljes kereted ezt a későbbi döntést is fedezi.\n\nA költségkeretbe számítsd bele a választott szolgáltatásokat és minden megjelenő fizetési vagy devizaköltséget. A korai szállítási becslést kezeld egy lehetséges változatként, majd ha elérhető, cseréld le a lemért csomagra adott ajánlatra. Ne feltételezd, hogy egy kupon vagy kedvezményes becslés érvényes a fiókodra, amíg ezt az aktuális fizetési folyamat nem erősíti meg.\n\nHa a végösszeg már nem fér bele, újabb fizetés előtt nézd át a rendelés vagy a csomag lehetőségeit. A csomagolás eltávolítása, az útvonal vagy a tartalom módosítása változtathat az ajánlaton, de egyik sem garantál megtakarítást. Ellenőrizd az alkalmasságot, és az új végösszeget azonos pénznemben, egyértelműen rögzített feltételezésekkel hasonlítsd össze."
+        },
+        {
+          "title": "Mit őrizz meg visszatérítéshez vagy ügyfélszolgálati megkereséshez?",
+          "text": "Vezess rövid nyilvántartást, amely összeköti a termékrendelést, a feltöltést és a nemzetközi csomagot. Mentsd el a fizetés dátumát, pénznemét, bizonylatát és aktuális állapotát. Segítségkéréskor pontosítsd, melyik bejegyzés hibás: hiányzó egyenleg, fizetetlen rendelés, sikertelen csomagfizetés vagy a visszatérítés folyamata. Ez könnyebben kivizsgálható, mint az általános kijelentés, hogy nem működik a fizetés.\n\nA visszatérítés jóváhagyása, az OOPBuy-egyenleg jóváírása és a pénz visszaérkezése a fizetési szolgáltatóhoz külön események. Ellenőrizd a visszatérítés célját, mielőtt feltételeznéd, hogy az összeg ugyanoda érkezik, ahonnan eredetileg fizettél. Olvasd el az adott rendelésre és módra vonatkozó aktuális utókezelési utasításokat; ez a cikk nem keletkeztet visszatérítési jogosultságot.\n\nMiután az ügyfélszolgálat megoldotta a problémát, ellenőrizd, hogy a rendelés és az egyenleg egyezik-e a magyarázattal. A végső választ a bizonylatokkal együtt őrizd meg a vásárlás lezárásáig. Egy későbbi csomagnál ismét ellenőrizd a pénznemet, a díjat és a címet, ne feltételezd, hogy egy korábbi tranzakció meghatározza a mai fizetési feltételeket."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy kezdő útmutató",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy egyenlegfeltöltési útmutató",
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394"
+        },
+        {
+          "label": "OOPBuy gyakori kérdések az egyenlegfeltöltésről",
+          "url": "https://oopbuy.com/notice/details?id=1775419828091813890"
+        },
+        {
+          "label": "OOPBuy PayPal-fizetési útmutató",
+          "url": "https://oopbuy.com/notice/details?id=1740660571185975297"
+        },
+        {
+          "label": "OOPBuy: az első vásárlás magyarázata",
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-returns-refunds",
+        "oopbuy-shipping-guide"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
+      "slug": "oopbuy-shipping-germany",
+      "title": "OOPBuy szállítás Németországba: költségek, útvonalak és kézbesítés",
+      "description": "Becsüld meg az OOPBuy németországi szállítását dátummal ellátott csomagpéldával, hasonlítsd össze az útvonalkorlátokat és távoli címeket, és ismerd meg a követés és kézbesítés szakaszait.",
+      "tag": "Németország",
+      "primaryKeyword": "OOPBuy shipping to Germany",
+      "secondaryKeywords": [
+        "OOPBuy Germany shipping cost",
+        "OOPBuy Deutschland Versand",
+        "OOPBuy Germany delivery time"
+      ],
+      "takeaways": [
+        "A hivatalos becslőben Németországot, a helyes tartalmat és a becsomagolt küldemény méreteit válaszd.",
+        "Az útvonalleírásban ellenőrizd a kizárt címeket, a tartalmat és a díjszámítás feltételeit.",
+        "A dátummal ellátott példa az összehasonlítást segíti; fizetés előtt ellenőrizd újra az árakat, kedvezményeket és az elérhetőséget."
+      ],
+      "sections": [
+        {
+          "title": "Helyes adatokkal kezdd a németországi szállítás becslését",
+          "text": "A hivatalos OOPBuy szállításbecslőben Németországot válaszd célországnak. Válaszd ki a pontos termékkategóriát, add meg a csomag súlyát és méreteit, és jegyezd fel a pénznemet. A hasznos becslés azt a csomagot írja le, amelyet el akarsz küldeni. A kizárólag ruházatot tartalmazó példát nem szabad változtatás nélkül márkás árukra, elektronikára, folyadékokra vagy vegyes csomagra alkalmazni.\n\nAz ellenőrzött példánk hétköznapi, márkajelzés nélküli ruházattal, 2000 g súllyal és 30 × 20 × 15 cm méretekkel számol. A megjelenő pénznem EUR volt. Ezek szemléltető adatok, nem javasolják, hogy minden rendelést így csomagolj. A tényleges áruk, az eladói csomagolás és a védelem eltérő mérési eredményt adhatnak.\n\nKészíts új becslést, amikor a raktári mérési adatok rendelkezésre állnak. Ha az összeg változik, előbb hasonlítsd össze a bemeneti adatokat, mielőtt megmagyarázatlan díjnak tulajdonítod. A súly, a karton mérete, a kategória és a választott szolgáltatások külön-külön is módosíthatják a lehetőségeket. Őrizd meg az eredeti becslést a frissített mellett, hogy a különbségnek világos magyarázata legyen."
+        },
+        {
+          "title": "Dátummal ellátott németországi ajánlat: az ár mellett a feltételeket is hasonlítsd össze",
+          "text": "A hivatalos becslőt 2026-10-23 napján ellenőriztük a fenti példával. A BTF-DHL-DE-1 EUR 36.93 összeget mutatott a megjelenített kedvezmény előtt és EUR 28.33 összeget utána, 10–18 munkanapos becsléssel. A BSF-DHL-DE-1 EUR 37.17 és EUR 28.56 összegeket jelzett, 7–14 munkanappal. Ezek egy adott napi állapotot rögzítenek, nem aktuális fizetési ajánlatok.\n\nAz alacsonyabb megjelenő összeg nem bizonyítja, hogy a kedvezmény minden ügyfélnek elérhető. Egyik érték sem az áru megvásárlásának és átvételének teljes költsége: a termékfizetést, a belföldi szállítást, az opcionális szolgáltatásokat és minden egyéb alkalmazandó díjat külön kell átnézni. Ne mutass be egy régi példát a mai legolcsóbb útvonalként.\n\nAz időtartományok összehasonlítása előtt hasonlítsd össze az útvonalleírásokat. Ebben a pillanatfelvételben az egyik leírás kizárta a távoli vagy szigeti helyszíneket, egy másik pedig az elektromos vagy mágneses termékeket, folyadékokat, porokat és pasztákat. A hétköznapi ruházathoz megfelelő útvonal ezért alkalmatlan lehet egy azonos súlyú másik csomaghoz."
+        },
+        {
+          "title": "Ellenőrizd a német címet és a tényleges tartalmat",
+          "text": "Az útmutatóhoz ellenőrzött, ország szerinti becslő nem kért irányítószámot. Németország kiválasztása ezért nem bizonyítja, hogy minden német cím kiszolgálható. Olvasd el a címkizárásokat, és távoli helyszínről vagy szigetről kérdezd meg a hivatalos ügyfélszolgálatot, mielőtt egy adott vonalra támaszkodsz. A csomag benyújtásakor ismét erősítsd meg a címzett adatait.\n\nHa a kategória nem egyértelmű, add meg az ügyfélszolgálatnak a tényleges terméklinkeket és specifikációkat. Egy elemmel működő kiegészítő a ruharendelésben akkor is módosítja a tartalmat, ha alig növeli a súlyt. Ne válassz hétköznapi ruházatot pusztán azért, mert alacsonyabb ajánlatot ad. A pontos besorolás szükséges annak megítéléséhez, hogy az útvonal elfogadja-e a csomagot.\n\nHa nem jelenik meg megfelelő vonal, állj meg további termékek megvásárlása előtt. Az, hogy az eladó el tudja küldeni az árut a raktárba, eltér attól, hogy a nemzetközi fuvarozó elfogadja-e. Kérdezd meg, létezik-e szabályos, megfelelő útvonal a tartalmadhoz és címedhez, és őrizd meg a választ a rendelési adatokkal."
+        },
+        {
+          "title": "Válaszd külön a raktári időt a németországi kézbesítéstől",
+          "text": "Az útvonal becsült szállítási időtartománya csak része a vásárlás idővonalának. Az eladónak először fel kell adnia az árut, a raktárnak át kell vennie és fel kell dolgoznia, neked pedig át kell nézned a termékeket és be kell nyújtanod a csomagot. A másik termék beérkezésére fordított várakozás is elkülönül a nemzetközi fuvarozástól.\n\nA kiválasztott útvonal becslésének aktuális meghatározását használd. A munkanapok nem azonosak a naptári napokkal, és egy tartomány nem garantálja az érkezést egy adott alkalomra. Útvonalak összehasonlításakor azonos kezdőeseménnyel számolj, és vedd figyelembe az előkészítés azon szakaszait, amelyeken a rendelésed még nem ment át.\n\nA nemzetközi mozgáshoz nyisd meg a csomag fuvarlevéladatait. A feladottnak jelölt termékrendelés utalhat csupán arra, hogy az eladó a kínai raktár felé küldte. Ha a követés megakadni látszik, az ügyfélszolgálat megkeresése előtt jegyezd fel az utolsó eseményt, annak dátumát és a megfelelő csomagazonosítót. Ne kezeld a belföldi nyomkövetési számot a német kézbesítés nyilvántartásaként."
+        },
+        {
+          "title": "Ismerd meg a végösszeget és az esetleges importtal kapcsolatos kéréseket",
+          "text": "Hasonlítsd össze a teljes csomagajánlatot, a választott csomagolást és az opcionális védelmet. Olvasd el, mit tartalmaz az útvonal, és mi marad feltételes. Egy adókezelésre utaló rövid címke nem elég annak megállapításához, hogy minden termék mentes a célországi díjaktól, vagy minden lehetséges költséget már kifizettek.\n\nŐrizd meg a valós vásárlási bizonylatokat és a benyújtott csomagadatokat. Az OOPBuy vámügyi tájékoztatója kifejti, hogy a vámkezelés során további dokumentumokat kérhetnek. Kövesd a fuvarozó vagy a hatóság jogszerű utasításait, és kérj pontosítást, ha a kérés nem világos. Ez az útmutató nem ad meg adóhatárt, és nem ígér vámkezelési eredményt.\n\nRendelés előtt döntsd el, hogy a keret a tisztázatlan költségekkel együtt is elfogadható-e. A szállítás kifizetése előtt cseréld le a becsléseket az elérhető, megerősített összegekre. Ha a termékárat, a belföldi kézbesítést, a nemzetközi szállítást és az egyéb díjakat külön sorokon vezeted, könnyebb látni, hogy az útvonalak összehasonlítása valóban módosítja-e a teljes kiadásodat."
+        },
+        {
+          "title": "Végső ellenőrzőlista a németországi csomaghoz",
+          "text": "Erősítsd meg Németországot és a teljes kézbesítési címet, beleértve az irányítószámot és a kiválasztott útvonal által kért címzettadatokat. Ellenőrizd minden termék kategóriáját, raktári állapotát és vizsgálati eredményeit. A mérettel vagy állapottal kapcsolatos kérdéseket még azelőtt tisztázd, hogy a termékeket nemzetközi csomaggá egyesíted, amikor a visszaküldés és a csomagolás módosítása bonyolultabbá válhat.\n\nEllenőrizd a becsomagolt súlyt és méreteket, a megtartott dobozokat és a választott védelmet. Együtt vizsgáld az aktuális árat, a kedvezményre való jogosultságot, a becsült szállítást és az útvonal kizárásait. Ha a becslés után módosítod a csomagolást vagy a tartalmat, kérj megfelelően frissített összeget, ne feltételezd, hogy a korábbi ajánlat változatlanul érvényes.\n\nMentsd el a végleges útvonalleírást és a fizetési nyilvántartást. Feladás után a hivatalos fuvarlevélkövetésen haladj tovább, és tartsd elérhetően a vásárlási bizonylatokat az ügyfélszolgálati vagy vámkezelési kérdésekhez. Az általános számítási módszerhez használd a szállítási költségek útmutatóját; érzékeny tartalomnál vásárlás előtt nézd meg az elemekről, folyadékokról és parfümökről szóló külön útmutatót."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy szállításbecslő",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy kézbesítési közlemény",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy kezdő útmutató",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy vámvizsgálati tájékoztató",
+          "url": "https://oopbuy.com/notice/details?id=1775430227893747714"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-shipping-restrictions",
+        "oopbuy-tracking-guide"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
+      "slug": "oopbuy-shipping-usa",
+      "title": "OOPBuy szállítás az USA-ba: költség, ZIP-kódok és nyomkövetés",
+      "description": "Tervezd meg az OOPBuy USA-ba szállítását dátumozott költségpéldával, ZIP-kódok ellenőrzésével, csomagméretekkel, valamint a raktári és fuvarozói követés világos elkülönítésével.",
+      "tag": "USA",
+      "primaryKeyword": "OOPBuy shipping to USA",
+      "secondaryKeywords": [
+        "OOPBuy shipping cost USA",
+        "OOPBuy USA delivery time",
+        "OOPBuy tracking USA"
+      ],
+      "takeaways": [
+        "Az amerikai csomag becslésénél a tényleges termékkategóriát és a becsomagolt méreteket használd.",
+        "Olvasd el a ZIP-kódokra vonatkozó kizárásokat akkor is, ha az ország szerinti eredmény elérhetőnek jelzi az útvonalat.",
+        "Az érkezés becslésekor válaszd külön a vásárlást, a raktári feldolgozást és a nemzetközi szállítást."
+      ],
+      "sections": [
+        {
+          "title": "Az USA-ajánlatot arra a csomagra építsd, amelyet ténylegesen elküldesz",
+          "text": "A hivatalos szállításbecslőben válaszd az Egyesült Államokat és a megfelelő termékkategóriát. Add meg a súlyt, hosszúságot, szélességet és magasságot a kért mértékegységekben. Az ajánlat pénzneme maradjon látható. Egy USD-ajánlat összevetése más ország vagy fiók jelöletlen összegével megtévesztően olcsónak mutathat egy drága útvonalat.\n\nEhhez az útmutatóhoz az ellenőrzött példa hétköznapi, márkajelzés nélküli ruházatot használt 2000 g súllyal, 30 × 20 × 15 cm méretű csomagban. A kiválasztott pénznem USD volt. Nem tartalmazott elemet, folyadékot vagy más érzékeny tartalmat. A saját termékeid más kategóriát igényelhetnek, és más elfogadható útvonalakat eredményezhetnek.\n\nA raktári csomagolás előtt a méreteket kezeld feltételezésként. Számolj újra, ha rendelkezésre állnak az ellenőrzési és csomagolási adatok, különösen dobozos cipőknél vagy vegyes rendeléseknél. Egy nagyobb karton módosíthatja a számlázott összeget akkor is, ha maguk a termékek ugyanannyit nyomnak. A kiválasztott útvonal szabályait olvasd el egy általános térfogatsúly-képlet alkalmazása helyett."
+        },
+        {
+          "title": "Dátummal ellátott példa az USA-ba szállítás költségére",
+          "text": "2026-10-23 napján a hivatalos becslő a fenti példához a DDF-GOFO-US-1 útvonalat USD 60.27 összeggel adta meg a megjelenő kedvezmény előtt és USD 44.80 összeggel utána. Ez rögzített összehasonlítási pont, nem ígéret arra, hogy a saját csomagod benyújtásakor ugyanaz az ár vagy kedvezmény elérhető lesz.\n\nAz eredmény azt is megmutatta, miért kell ellenőrizni a kézbesítési becsléseket: a strukturált időmező 15–20 munkanapot mutatott, miközben az útvonalleírás továbbra is 8–16 napot említett. Mivel a mezők eltértek, ez az útmutató egyiket sem választja garantált érkezési tartománynak. Nézd át a vonal aktuális részleteit, és kérd az ügyfélszolgálattól az ellentmondó adatok tisztázását, mielőtt rájuk támaszkodsz.\n\nA leírás kizárta a folyadékokat, porokat és pasztákat, valamint figyelmeztetett a távoli területek esetleges felárára. A találati listában szereplő alacsony szám ezért nem dönti el az alkalmasságot vagy a teljes költséget. Együtt hasonlítsd össze az elfogadott tartalmat, a célcímet, az opcionális szolgáltatásokat és a végső fizetendő összeget."
+        },
+        {
+          "title": "Miért számít a ZIP-kód az Egyesült Államok kiválasztása után is?",
+          "text": "Az ellenőrzött, ország szerinti becslés nem kért ZIP-kódot. Az egyik kapott útvonal, a ZD-UPS-US-HK, elérhetőnek volt jelölve az általános amerikai példához, miközben a leírása kizárta a 8 vagy 9 számjeggyel kezdődő irányítószámokat. Ez egy konkrét megfigyelt útvonalkorlátozás, nem az OOPBuy összes amerikai szállítására érvényes szabály.\n\nA vonal kiválasztása előtt olvasd el a teljes útvonalleírást, és ellenőrizd a saját ZIP-kódodat. Nézd meg a ténylegesen használt címre vonatkozó távolicím-korlátozásokat vagy felárakat is. Ne következtess arra, hogy az ország szerinti elérhetőségi jelzés minden államot, területet, szigetet vagy címtípust megerősít.\n\nHa a cím kizárt, hasonlíts össze szabályos alternatívákat, amelyek elfogadják. Ne módosítsd a ZIP-kódot azért, hogy átjuss a kiválasztási képernyőn. Kérdezd meg a hivatalos ügyfélszolgálatot a helyes céladatok és termékspecifikációk megadásával, majd a csomag benyújtásakor erősítsd meg az elérhető választást. Egy korábbi ügyfél másik címre történt sikeres kézbesítése nem elég bizonyíték a tiédhez."
+        },
+        {
+          "title": "Mennyi idő alatt érkezik meg az OOPBuy az USA-ba?",
+          "text": "Nincs egyetlen, minden amerikai rendelésre hasznosan alkalmazható szállítási idő. A vásárlás, az eladói feladás, a raktári átvétel, az ellenőrzés, a csomag benyújtása és a fuvarozói szállítás külön szakaszok. Az eladónál feladottnak jelölt tétel még Kínán belül utazhat. Először állapítsd meg, melyik szakaszig jutott a saját rendelésed.\n\nA nemzetközi csomag feladása után használd annak fuvarlevéladatait és a kiválasztott vonal aktuális követési információit. Az utolsó esemény dátumát és jelentését ellenőrizd, ne egymástól független követési képernyőképeket hasonlíts össze. A becsült tartomány munkanapokra és meghatározott kezdőeseményre épülhet, ezért tervezés előtt olvasd el ezeket a feltételeket.\n\nHa az állapot továbbra sem világos, add meg a hivatalos ügyfélszolgálatnak a rendelés- vagy csomagazonosítót és az utolsó frissítés dátumát. Magyarázd el, hogy a probléma a raktári beérkezést, a fuvarozói átvételt vagy a későbbi kézbesítést érinti-e. A fenti dátumozott példa ellentmondó időmezőket tartalmaz, ami megerősíti, miért kevésbé hasznos egy régi útmutató rögzített ígérete, mint a tényleges útvonalad feltételei."
+        },
+        {
+          "title": "Hasonlítsd össze a teljes költséget, és őrizd meg a pontos vásárlási bizonylatokat",
+          "text": "Az amerikai szállítási ajánlat nem a termékvásárlás teljes ára. Add hozzá az árut, az eladó raktárig történő kézbesítését, a választott szolgáltatásokat és minden megjelenő fizetési vagy átváltási díjat. Kérdezd meg, mit tartalmaz a kiválasztott útvonal, és mit kell külön megfizetni. A kedvezményes szállítási összeg nem helyettesítheti észrevétlenül a költségkeret többi részét.\n\nNe tekints egy útvonalbecenevet vagy adóra utaló címkét minden importtal kapcsolatos díjra vonatkozó garanciának. Ez az útmutató nem közöl vámhatárt, és nem jósolja meg a vámkezelést. Kérés esetén pontos leírásokat és vásárlási értékeket adj meg, és őrizd meg a csomag tételeivel egyező bizonylatokat.\n\nAz OOPBuy vámügyi tájékoztatója kifejti, hogy a vámkezeléshez további dokumentumok lehetnek szükségesek. A fuvarozó vagy hatóság jogszerű csatornáin válaszolj, és kérdezd meg a hivatalos ügyfélszolgálatot, ha a kérés nem világos. Hasznosabb úgy tervezni, hogy a tisztázatlan költségek láthatók, mint feltételezni, hogy egy kicsi vagy olcsó csomag nem kaphat további ellenőrzést vagy díjakat."
+        },
+        {
+          "title": "Fizetés jóváhagyása előtt ellenőrizd az amerikai csomagot",
+          "text": "Nézd át a címzettet, az utcai címet, a ZIP-kódot és minden más, a választott útvonal által kért adatot. Erősítsd meg, hogy minden csomagolt tételt elfogadnak, és mindegyik átment a saját raktári ellenőrzéseden. Az, hogy egy termék szerepel egy táblázatban, önmagában nem bizonyítja, hogy elszállítható a címedre.\n\nHasonlítsd össze a végleges, lemért csomagot a becsléssel: a súlynak, méreteknek, tartalomnak, csomagolásnak és opcionális szolgáltatásoknak egyezniük kell. Ha eltávolítasz dobozokat vagy megváltoztatod a tételek kombinációját, kérj frissített ajánlatot. Egy kisebb csomag továbbra is ugyanabba a díjsávba eshet, ezért összehasonlítás nélkül ne feltételezz konkrét megtakarítást.\n\nMentsd el az aktuális útvonalfeltételeket, a végleges fizetési nyilvántartást és a fuvarlevélazonosítót. Feladás után a nemzetközi nyilvántartásán keresztül kövesd a csomagot. A számítási kérdésekhez használd az általános szállítási útmutatót, az elemekhez, folyadékokhoz vagy parfümhöz pedig a korlátozási útmutatót; ezek a kategóriák vásárlás előtt saját alkalmassági ellenőrzést igényelnek."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy szállításbecslő",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuy kézbesítési közlemény",
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+        },
+        {
+          "label": "OOPBuy kezdő útmutató",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuy vámvizsgálati tájékoztató",
+          "url": "https://oopbuy.com/notice/details?id=1775430227893747714"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-shipping-restrictions"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
+      "slug": "oopbuy-shipping-restrictions",
+      "title": "OOPBuy szállítási korlátozások: elemek, folyadékok és parfümök",
+      "description": "Elem, elektronika, folyadék vagy parfüm vásárlása előtt ellenőrizd az OOPBuy korlátozásait. Ismerd meg a termékkategóriákat, útvonalhatárokat és az ügyfélszolgálatnak szükséges adatokat.",
+      "tag": "Korlátozások",
+      "primaryKeyword": "OOPBuy prohibited items",
+      "secondaryKeywords": [
+        "OOPBuy shipping restrictions",
+        "OOPBuy batteries",
+        "OOPBuy liquids",
+        "OOPBuy perfume"
+      ],
+      "takeaways": [
+        "Egy termékhirdetés és a becslőben választható kategória nem bizonyítja, hogy az útvonal elfogadja a terméket.",
+        "Rendelés előtt pontosan írd le az elemeket, a folyékony tartalmat és a tároló térfogatát.",
+        "Ha az alkalmasság nem világos, a hivatalos ügyfélszolgálattal ellenőrizd a célállomás és az útvonal szabályait."
+      ],
+      "sections": [
+        {
+          "title": "Kezdd a vásárlási szabályokkal, majd ellenőrizd a szállíthatóságot",
+          "text": "Az eladói hirdetés, a raktári befogadás és a nemzetközi szállíthatóság eltérő kérdésekre válaszol. Az OOPBuy vásárlási irányelvei bizonyos vásárlásokat tiltanak, és érzékeny kategóriáknál előzetes megerősítést követelnek. Egy termék megtalálása a táblázatban nem írja felül ezeket a szabályokat, és nem bizonyítja, hogy egy nemzetközi útvonal elviszi a célállomásodra.\n\nA látható vásárlási irányelvek elfogadhatatlannak minősítik a dohányt, az alkoholt és a tiltott árukat, és tiltják a hamisított vagy szellemi tulajdont sértő termékeket. A gyógyszereket, folyadékokat, pasztákat és kozmetikai porokat is megjelölik olyan kategóriaként, amelyhez vásárlás előtt ügyfélszolgálati megerősítés kell. Az adott termékre vonatkozó aktuális hivatalos útmutatást használd egy másik vásárló általános ajánlása helyett.\n\nA vásárlás engedélyezettségének ellenőrzése után külön vizsgáld az útvonalat. Írd le, mit tartalmaz ténylegesen a termék, a vele csomagolt tartozékokkal együtt. A hétköznapi ruházathoz megfelelő vonal kizárhatja az ugyanabban a csomagban lévő elemet, folyékony utántöltőt vagy mágneses alkatrészt. A bizonytalan termék kifizetése előtt kérj tisztázást, amikor még könnyebb módosítani a tervet."
+        },
+        {
+          "title": "Elemek és elektronika: a beépített nem ugyanaz, mint a különálló",
+          "text": "Az élő becslő megkülönbözteti a beépített elemet vagy mágnesességet tartalmazó termékcsoportokat a kiegészítő elemekkel rendelkező csoportoktól. Ezek a besorolások hasznos támpontok, nem általános elemengedélyek. Egy beépített akkumulátoros eszköz, egy különálló csereakkumulátor és egy áramellátás nélküli kiegészítő eltérő alkalmassági ellenőrzést igényelhet.\n\nAdd meg a hivatalos ügyfélszolgálatnak az eladó terméklinkjét, az eszköz típusát, az elem vagy akkumulátor specifikációját és a mennyiséget. Magyarázd el, hogy be van-e építve, külön csomagolták-e, vagy tartalékként mellékelik. Ha a hirdetés nem ad meg egy fontos adatot, kérj tisztázást az eladótól vagy az ügyfélszolgálattól a kapacitás kitalálása vagy pontatlan kategória kiválasztása helyett.\n\nA csomagolási tájékoztató szerint az elemeket elfogadó útvonalak költségei és korlátozásai eltérhetnek. Ez nem állapít meg rögzített felárat vagy minden célállomásra egységes kapacitáshatárt. Ellenőrizd a tényleges vonalat és a csomagolási utasításokat. Ha nem megfelelő, gondold át a vásárlást, vagy kérdezz rá egy szabályos, elfogadható szolgáltatásra; ne rejtsd el és ne címkézd tévesen az elemet."
+        },
+        {
+          "title": "Folyadékok, kozmetikumok, paszták és porok",
+          "text": "A kozmetikai termék nem egyetlen egységes szállítási kategória. A becslő külön kezeli a folyadékokat, pasztákat és porokat, és több térfogati kategóriát tartalmaz. A csomagoláson belüli anyag számít: az üres palack eltér a megtöltöttől, az aeroszol vagy nyomás alatt álló tartály pedig újabb külön kérdést vet fel.\n\nAz alkalmasságra vonatkozó kérdésnél add meg a pontos tartalmat, a tároló térfogatát, a darabszámot és a csomagolási adatokat. Mellékelj minden releváns eladói specifikációt, ne csak a márkanévre vagy egy rövid termékcímre támaszkodj. A teljes csomagkombinációt is ellenőrizd: egy különálló tétel elfogadása nem bizonyítja, hogy minden vegyes csomag vagy útvonal megfelelő.\n\nA hivatalos becslőben a pontos kategóriát használd, és olvasd el minden útvonal kizárásait. Az, hogy egy kategória megjelenik a menüben, azt jelenti, hogy megadható, nem azt, hogy minden fuvarozó elfogadja. Ha a találati lista vagy a súgószöveg bizonytalanságot hagy, rendelés vagy nemzetközi csomag előkészítése előtt kérj hivatalos megerősítést."
+        },
+        {
+          "title": "Tud az OOPBuy parfümöt szállítani?",
+          "text": "Az ellenőrzött becslő külön parfümkategóriákat tartalmazott 100 ml alatt és felett. Ez a különbségtétel nem hoz létre általános szabályt, amely szerint minden 100 ml alatti üveg szállítható. Nem támasztja alá azt az általános kijelentést sem, hogy minden parfüm tiltott. Az alkalmasság a tényleges terméktől, célállomástól és útvonaltól függ.\n\nAzonosítsd a pontos parfümöt vagy folyékony illatdiffúzort, az egyes tárolók térfogatát, a tárolók számát és az eladó által közölt minden lényeges tartalmi információt. Kérdezd meg a hivatalos ügyfélszolgálatot, mely besorolás és útvonal alkalmazandó. Ne helyettesítsd hétköznapi ruházati kategóriával azért, mert a parfüm kicsi vagy ruhák mellé csomagolták.\n\nNézd át a vonalleírást a folyadékokra és más érzékeny tartalomra vonatkozóan, és a csomag benyújtása előtt erősítsd meg a csomagolási követelményeket. Egy másik üvegre vagy országra vonatkozó kedvező példa nem elég. Ha nem erősítettek meg elfogadható lehetőséget, halaszd el a vásárlást ahelyett, hogy a raktári beérkezést nemzetközi szállítási megoldás garanciájának tekintenéd."
+        },
+        {
+          "title": "Mi a teendő, ha nem jelenik meg megfelelő útvonal?",
+          "text": "Először ellenőrizd, hogy helyesen adtad-e meg a célállomást, tartalmat, méreteket és súlyt. Javítsd ki a tényleges adatbeviteli hibát, de ne változtasd meg a termék valós tulajdonságát pusztán azért, hogy ajánlatot kapj. Az ország szerinti elérhetőség a címhez kötött korlátozásokat is kihagyhatja, ezért segítségkéréskor add meg a helyes irányítószámot.\n\nKüldd el az ügyfélszolgálatnak a terméklinkeket, specifikációkat, a tervezett célállomást és a becslő releváns eredményeit. Tegyél fel konkrét kérdést: elfogadható-e pontosan az a termék, mely kategória vonatkozik rá, kell-e külön csomagolás, és mit ír elő a jelenleg megfelelő útvonal. Őrizd meg a választ a rendelési jegyzetekkel, és ellenőrizd újra, ha a tartalom vagy a célállomás megváltozik.\n\nHa a termék már a raktárban van, haladéktalanul nézd át az elérhető utókezelési lehetőségeket és határidőket. A visszaküldésre való jogosultság a rendeléstől és az eladótól függ; egy szállítási probléma nem garantálja. Ne adj hozzá további vásárlásokat abban a hitben, hogy egy meg nem erősített útvonal idővel biztosan elérhetővé válik a korlátozott termékhez."
+        },
+        {
+          "title": "Korlátozásellenőrzés minden új vásárlás előtt",
+          "text": "Használj ismételhető sorrendet: azonosítsd a terméket, olvasd el az aktuális vásárlási útmutatást, erősítsd meg az érzékeny jellemzőket, becsülj a megfelelő kategóriával, és vizsgáld meg az útvonalfeltételeket. Ez megbízhatóbb, mint egy rövid tiltólista megjegyzése, amely kihagyhat egy célállomási vagy fuvarozói kivételt.\n\nA nemzetközi csomag kifizetése előtt nézz át újra minden belekerülő tételt. Erősítsd meg az elemadatokat, a folyadék térfogatát, a csomagolást, a cím lefedettségét és az ügyfélszolgálat minden utasítását. Ne feltételezd, hogy egy korábban elfogadott rendelés meghatározza a mai szabályokat, különösen, ha a termékváltozat, mennyiség, célállomás vagy kiválasztott vonal megváltozott.\n\nŐrizd meg a valós termékleírásokat és az alkalmasság megerősítéséhez használt bizonyítékokat. A sikeres becslés tervezési információ; a végleges csomagbenyújtás és az útvonalfeltételek továbbra is számítanak. A költség-összehasonlításhoz használd a szállítási útmutatót, a csomagolási döntésekhez pedig az alkalmasság megállapítása után olvasd el a rendeléscsomagolási útmutatót."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuy vásárlási irányelvek",
+          "url": "https://oopbuy.com/notice/details?id=1772880724846247937"
+        },
+        {
+          "label": "OOPBuy csomagolási útmutatás",
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+        },
+        {
+          "label": "OOPBuy szállításbecslő",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-haul-packing",
+        "oopbuy-returns-refunds"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
       "slug": "oopbuy-spreadsheet-guide",
       "tag": "Első lépések",
       "title": "OOPBuy spreadsheet útmutató: állíts össze valóban ellenőrizhető válogatást",
       "description": "Ismerd meg az OOPBuy terméktáblázat használatát, a linkek ellenőrzését, a változatok összehasonlítását és a reális költségtervezést a megalapozott rendeléshez.",
       "primaryKeyword": "OOPBuy spreadsheet",
       "secondaryKeywords": [
-        "OOPBuy spreadsheet útmutató",
-        "OOPBuy terméklista",
-        "OOPBuy terméktippek",
-        "OOPBuy vásárlási útmutató"
+        "OOPBuy spreadsheet guide",
+        "OOPBuy product list",
+        "OOPBuy finds",
+        "OOPBuy shopping guide"
       ],
       "takeaways": [
         "A katalógus minden sora kiindulópont; ellenőrizd mögötte az aktuális terméket.",
@@ -505,19 +782,22 @@
         "oopbuy-product-links",
         "oopbuy-price-check",
         "oopbuy-qc-photos"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-qc-photos",
       "tag": "Minőségellenőrzés",
-      "title": "OOPBuy QC-fotók: mit ellenőrizz a rendelés elküldése előtt?",
-      "description": "Gyakorlati útmutató az OOPBuy QC-képeihez, a megfelelő változat ellenőrzéséhez, értelmezhető mérések kéréséhez és a raktári képek bizonyítási korlátaihoz.",
-      "primaryKeyword": "OOPBuy QC-fotók",
+      "title": "OOPBuy QC-fotók: hogyan találd meg és ellenőrizd a rendelésedet?",
+      "description": "Keresd meg saját OOPBuy raktári QC-fotóidat, ellenőrizd a méretet és látható állapotot, és tudd, mikor kérj mérést vagy további részletet szállítás előtt.",
+      "primaryKeyword": "OOPBuy QC photos",
       "secondaryKeywords": [
-        "OOPBuy minőségellenőrzés",
-        "OOPBuy raktári fotók",
-        "OOPBuy QC-útmutató",
-        "OOPBuy ellenőrzés"
+        "OOPBuy quality check",
+        "OOPBuy warehouse photos",
+        "OOPBuy QC guide",
+        "OOPBuy inspection"
       ],
       "takeaways": [
         "A saját rendelésed raktári képeit vizsgáld, és vesd össze a kiválasztott változattal.",
@@ -526,8 +806,8 @@
       ],
       "sections": [
         {
-          "title": "Konkrét kérdéseket válaszolj meg a QC-képekkel",
-          "text": "Az OOPBuy QC-fotói akkor a leghasznosabbak, ha tudod, mit ellenőriznél. Rövid listával kezdj: a várt termék érkezett, egyezik a változat, látható sérülés, és a rendelkezésre álló méretek segítik az illeszkedési döntést? Így gyakorlati folyamatod lesz a tökéletesség végtelen keresése helyett.\n\nA fénykép adott nézetet és fényviszonyokat rögzít. Megmutathat hiányzó gombot vagy eltérő színcímkét, de nem feltétlenül látható rajta a zseb belsejében vagy levehető alkatrész alatt rejtőző gond. Minden képet korlátozott látómezejű bizonyítékként kezelj.\n\nCélod a döntést befolyásoló kétségek feloldása a nemzetközi fuvar előtt. Ez lehet ujjhossz megerősítése vagy annak tisztázása, hogy egy folt eltávolítható csomagolási maradvány-e. A szép fotósorozat nem garantálja, hogyan viselkedik a termék hónapok használata után."
+          "title": "Hol találod a saját OOPBuy QC-fotóidat?",
+          "text": "A raktári átvétel és ellenőrzés után a megvásárolt termékből indulj ki a hivatalos OOPBuy-fiókodban. Nézd át az adott rendeléshez csatolt fotókat, és ellenőrizd a terméket, a változatot és az azonosítót. A hivatalos kezdő útmutató az ellenőrzést a beérkezés utánra teszi; az eladói feladás frissítése önmagában nem jelenti, hogy a raktári QC-fotók elkészültek. Ha a nyilvántartás nem világos, a rendelésazonosítóval kérdezd meg az ügyfélszolgálatot.\n\nEgy független táblázat képe, az eladó fotója és a saját raktári fotód különböző célt szolgál. Az OOPBuy Tab a termékforrásából származó katalógusképeket jeleníti meg, és nem kínál ellenőrzött, nyilvános QC-kereső adatbázist. A katalógusképekkel szűkítsd a választékot, majd szállítási döntés előtt vizsgáld meg a saját rendelésed bizonyítékait. Az egyező termékcímet ne tekintsd annak bizonyítékának, hogy egy nyilvános fotó a megvásárolt példányodat mutatja.\n\nHa hiányzik egy részlet, kérd azt a pontos nézetet vagy mérést, amely tisztázza. Például add meg a ruhaméretet és a mérési pontokat, vagy kérd a cipő címkéjét és a talpbetét nézetét. A szabványos ellenőrzésnek vannak korlátai: a fotók nem igazolják az eredetiséget, a tökéletes illeszkedést vagy a szakszerű működési tesztelést. A döntést ahhoz kösd, ami ténylegesen látható, és a csomag benyújtása előtt kérj tisztázást."
         },
         {
           "title": "Háromféle termékfotót különböztess meg",
@@ -584,19 +864,22 @@
         "oopbuy-sizing-guide",
         "oopbuy-warehouse-guide",
         "oopbuy-returns-refunds"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-shipping-guide",
       "tag": "Szállítás",
-      "title": "OOPBuy szállítási útmutató: költségbecslés és megfelelő útvonal",
-      "description": "Értsd meg az OOPBuy szállítási szakaszait, a csomagtömeg és térfogat szerepét, az útvonalválasztást és a nemzetközi díjfizetés előtti ellenőrzéseket.",
-      "primaryKeyword": "OOPBuy szállítás",
+      "title": "OOPBuy szállítási költség: kalkulátor, súly és díjak",
+      "description": "Használd a hivatalos OOPBuy szállítási kalkulátort, hasonlítsd össze a becsomagolt súlyt és méreteket, és feladás előtt tervezz a fuvar-, szolgáltatási és fizetési költségekkel.",
+      "primaryKeyword": "OOPBuy shipping",
       "secondaryKeywords": [
-        "OOPBuy szállítási költség",
-        "OOPBuy szállítási kalkulátor",
-        "OOPBuy szállításbecslés",
-        "OOPBuy kézbesítési idő"
+        "OOPBuy shipping cost",
+        "OOPBuy shipping calculator",
+        "OOPBuy shipping estimate",
+        "OOPBuy delivery time"
       ],
       "takeaways": [
         "Külön tervezz az eladó raktárig tartó fuvarával és a nemzetközi csomag díjával.",
@@ -663,8 +946,8 @@
           "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
         },
         {
-          "label": "OOPBuy vásárlás előtti korlátozások",
-          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+          "label": "OOPBuy vásárlási irányelvek",
+          "url": "https://oopbuy.com/notice/details?id=1772880724846247937"
         },
         {
           "label": "OOPBuy próbacsomagolási utasítások",
@@ -672,22 +955,25 @@
         }
       ],
       "related": [
-        "oopbuy-price-check",
-        "oopbuy-haul-packing",
-        "oopbuy-tracking-guide"
-      ]
+        "oopbuy-shipping-germany",
+        "oopbuy-shipping-usa",
+        "oopbuy-shipping-restrictions"
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-sizing-guide",
       "tag": "Méretválasztás",
       "title": "OOPBuy méretútmutató: mérettáblázatok és tényleges mérések",
       "description": "Válassz ruhát és cipőt világos módszerrel: hasonlíts eladói táblázatot, mérj jól illeszkedő saját darabot, és kérj célzott raktári mérést.",
-      "primaryKeyword": "OOPBuy méretútmutató",
+      "primaryKeyword": "OOPBuy sizing guide",
       "secondaryKeywords": [
-        "OOPBuy mérettáblázat",
-        "OOPBuy méretezés",
-        "OOPBuy ruhaméret",
-        "OOPBuy cipőméret"
+        "OOPBuy size chart",
+        "OOPBuy sizing",
+        "OOPBuy clothing size",
+        "OOPBuy shoe size"
       ],
       "takeaways": [
         "A pontos hirdetés táblázatát használd, és tisztázd, testet vagy ruhát mér-e.",
@@ -754,19 +1040,22 @@
         "oopbuy-qc-photos",
         "oopbuy-returns-refunds",
         "oopbuy-spreadsheet-guide"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-product-links",
       "tag": "Terméklinkek",
       "title": "OOPBuy terméklinkek: a helyes termék és minden változat ellenőrzése",
       "description": "Ellenőrizd az OOPBuy- és Weidian-linkeket, különítsd el a forrásazonosítót a katalógusszámtól, kezeld a hibás linkeket és értsd meg a partnerparamétereket.",
-      "primaryKeyword": "OOPBuy terméklinkek",
+      "primaryKeyword": "OOPBuy product links",
       "secondaryKeywords": [
-        "OOPBuy Weidian-linkek",
-        "OOPBuy linkátalakító",
-        "OOPBuy termék-URL",
-        "OOPBuy spreadsheet linkek"
+        "OOPBuy Weidian links",
+        "OOPBuy link converter",
+        "OOPBuy product URL",
+        "OOPBuy spreadsheet links"
       ],
       "takeaways": [
         "Őrizd meg az eredeti piactéri terméklinket, és ellenőrizd a megnyíló oldalt.",
@@ -833,18 +1122,21 @@
         "oopbuy-spreadsheet-guide",
         "oopbuy-price-check",
         "oopbuy-sizing-guide"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-price-check",
       "tag": "Költségtervezés",
-      "title": "OOPBuy árellenőrzés: számold ki a költséget vásárlás előtt",
-      "description": "Ellenőrizd az OOPBuy termékárát, a pontos változatot, és tervezz reális keretet a belföldi fuvarra, nemzetközi kézbesítésre és egyéb díjakra.",
-      "primaryKeyword": "OOPBuy árellenőrzés",
+      "title": "OOPBuy díjak és teljes költség: termékár, szállítás és devizaátváltás",
+      "description": "Számold ki az OOPBuy végösszegét a termékárral, belföldi kézbesítéssel, nemzetközi szállítással, szolgáltatásokkal és devizaköltségekkel. A becsléseket különítsd el a kifizetett összegektől.",
+      "primaryKeyword": "OOPBuy price check",
       "secondaryKeywords": [
-        "OOPBuy teljes költség",
-        "OOPBuy szállításbecslés",
-        "OOPBuy termékár"
+        "OOPBuy total cost",
+        "OOPBuy shipping estimate",
+        "OOPBuy product price"
       ],
       "takeaways": [
         "Árak előtt azonos változatot és mennyiséget hasonlíts.",
@@ -865,8 +1157,8 @@
           "text": "Az első vásárlás útmutatója külön kezeli a kezdeti áru- és belföldi fuvardíjat, valamint a későbbi nemzetközi díjat. Ezt tükrözze a nyilvántartásod. Külön sorra kerüljön áru, eladótól raktárig fuvar, nemzetközi szállítás és extra szolgáltatás. Fizetési és átváltási díjat a tényleges fizetési képernyő vagy szolgáltató alapján adj hozzá. Célországi adót és kezelési díjat külön tarts, amíg megbízható adatod nincs a célról és szolgáltatásról.\n\nJelöld a sorokat megerősítettnek, becsültnek vagy ismeretlennek. Ez hasznosabb azonos bizonyosság színlelésénél. Megerősített áruösszeg állhat becsült fuvar mellett, miközben egy szolgáltatási díj az élő ajánlatig ismeretlen.\n\nTöbb terméknél külön kövesd a tétel- és csomagszintű költséget. Az áru tételhez, a közös csomagolás csomaghoz tartozhat. Ha a közös költséget darabokra osztod, ezt saját tervezési módszerként jelöld. Nem feltétlenül így számol az OOPBuy vagy a fuvarozó."
         },
         {
-          "title": "Látható legyen az átváltás és fizetési díj",
-          "text": "A USD-ra váltott kijelzés segít összehasonlítani, de nem garantálja a fizetési móddal végül terhelt összeget. A tényleges megerősítő képernyőn ellenőrizd a pénznemet és fizetendőt. Szolgáltatói átváltást a saját kereteddel vess össze; a katalógus átváltása nem feltétlenül marad változatlan.\n\nEgy munkapénznemet használj, és rögzítsd, hogyan váltottál át más összegeket. Az eladói árat például eredeti pénznemben hagyd az egyik mezőben, becsült USD-értékét másikban. Így később is megmarad az eredeti viszonyítás.\n\nNe találj ki általános OOPBuy-átváltási díjat vagy fizetési százalékot. Az érvényes költség az aktuális fizetési útvonaltól és fióklehetőségtől függhet. A konkrét ellenőrzés: mennyit kíván ez a fizetés, milyen pénznemben, és milyen további díjat közöl valóban a szolgáltató?"
+          "title": "Fizetési díjak és devizaátváltás: kerüld a téves, rögzített mértéket",
+          "text": "A költségnyilvántartásban legyen látható a termék, a fizetés és a szállítási ajánlat pénzneme. Az USD-re átváltott katalógusár segít a böngészésben, de nem határozza meg a fizetési szolgáltató által levont összeget vagy az OOPBuy rendszerében jóváírt egyenleget. Ezeket a tényleges összegeket külön rögzítsd, amint a jóváhagyási képernyő megadja őket, és ne vonj össze eltérő pénznemű számokat az alkalmazott átváltás feljegyzése nélkül.\n\nA hivatalos feltöltési tájékoztató és a feltöltési GYIK eltérő százalékos PayPal-díjakat mutatott a frissítéshez végzett ellenőrzéskor. Egyik sem adott meg egyértelmű hatálybalépési dátumot. Ezért félrevezető lenne bármelyik százalékot általános, aktuális díjként közzétenni. A saját tranzakciódnál ellenőrizd a díjat, az átváltási számítást és a végső fizetendő összeget, és számítsd bele a ténylegesen feltüntetett további szolgáltatói vagy kártyakibocsátói díjakat.\n\nA sikeres feltöltés, a kifizetett termékrendelés és a kifizetett nemzetközi csomag külön nyilvántartás. Egyeztesd őket, mielőtt feltételezed, hogy minden szakasz fedezve van. Ha a pénzt levonták, de az egyenleg nem jelent meg, őrizd meg a bizonylatot, és ismétlés előtt kérd a hivatalos ügyfélszolgálattól a meglévő tranzakció visszakeresését. A fizetési módok útmutatója elmagyarázza, mely nyilvántartásokat hasonlítsd össze, és milyen adatok segítik az ügyfélszolgálati vizsgálatot."
         },
         {
           "title": "Reális csomaggal becsülj szállítást",
@@ -901,24 +1193,31 @@
         {
           "label": "OOPBuy: az első vásárlás magyarázata",
           "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+        },
+        {
+          "label": "OOPBuy gyakori kérdések az egyenlegfeltöltésről",
+          "url": "https://oopbuy.com/notice/details?id=1775419828091813890"
         }
       ],
       "related": [
+        "oopbuy-payment-methods",
         "oopbuy-shipping-guide",
-        "oopbuy-warehouse-guide",
-        "oopbuy-spreadsheet-guide"
-      ]
+        "oopbuy-returns-refunds"
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-warehouse-guide",
       "tag": "Raktár",
       "title": "OOPBuy raktári útmutató: érkezéstől a csomag beküldéséig",
       "description": "Tudd meg, mit ellenőrizz a raktárba érkező OOPBuy rendelésnél, hogyan kövesd a tárolási időt, és mikor dönts visszaküldésről vagy szállításról.",
-      "primaryKeyword": "OOPBuy raktári útmutató",
+      "primaryKeyword": "OOPBuy warehouse guide",
       "secondaryKeywords": [
-        "OOPBuy raktári tárolás",
-        "OOPBuy rendelés átvéve",
-        "OOPBuy raktári ellenőrzés"
+        "OOPBuy warehouse storage",
+        "OOPBuy order received",
+        "OOPBuy warehouse inspection"
       ],
       "takeaways": [
         "Minden tétel átvételi dátumát külön kövesd, és ellenőrizd az aktuális tárolási szabályt.",
@@ -985,18 +1284,21 @@
         "oopbuy-qc-photos",
         "oopbuy-returns-refunds",
         "oopbuy-haul-packing"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-returns-refunds",
       "tag": "Vásárlás utáni ügyek",
       "title": "OOPBuy visszaküldés és visszatérítés: feltételek, bizonyítékok, lépések",
       "description": "Tudd meg, mit vizsgálj visszaküldés kérése előtt, hogyan dokumentálj problémát, és miért külön lépés a refund jóváhagyása és megérkezése.",
-      "primaryKeyword": "OOPBuy visszaküldés és visszatérítés",
+      "primaryKeyword": "OOPBuy returns and refunds",
       "secondaryKeywords": [
-        "OOPBuy visszatérítés",
-        "OOPBuy visszaküldési szabályzat",
-        "OOPBuy visszafuvar"
+        "OOPBuy refund",
+        "OOPBuy return policy",
+        "OOPBuy return shipping"
       ],
       "takeaways": [
         "Raktári bevételezés után azonnal nézd a visszaküldési feltételeket; tárolási idő nem visszaküldési ablak.",
@@ -1059,18 +1361,21 @@
         "oopbuy-warehouse-guide",
         "oopbuy-qc-photos",
         "oopbuy-price-check"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-tracking-guide",
       "tag": "Kézbesítés",
-      "title": "OOPBuy nyomkövetési útmutató: rendelések és csomagok helyes értelmezése",
-      "description": "Ismerd meg az OOPBuy követését, az eladói és nemzetközi fuvar különbségét, valamint a problémás csomagnál szükséges bizonyítékokat.",
-      "primaryKeyword": "OOPBuy nyomkövetési útmutató",
+      "title": "Nem frissül az OOPBuy nyomkövetés? Rendelési és csomagállapotok útmutatója",
+      "description": "Ismerd meg az OOPBuy követési állapotait, különböztesd meg az eladói kézbesítést a nemzetközi szállítástól, és gyűjtsd össze a helyes adatokat, ha megszűnnek a frissítések.",
+      "primaryKeyword": "OOPBuy tracking guide",
       "secondaryKeywords": [
-        "OOPBuy nyomkövetés",
-        "OOPBuy rendelési állapot",
-        "OOPBuy csomagkövetés"
+        "OOPBuy tracking",
+        "OOPBuy order status",
+        "OOPBuy parcel tracking"
       ],
       "takeaways": [
         "Ellenőrizd, vásárlási rendelést vagy nemzetközi csomagot nézel-e.",
@@ -1095,8 +1400,8 @@
           "text": "Nemzetközi csomag beküldése után szállítás előtt még raktári feladatok maradhatnak. Fizetés, felülvizsgálat, válogatás, csomagolás és átvétel nem ugyanaz. A hivatalos útmutató külön jelöli a kész csomagolást és fuvarozói felvételt; ezért előkészítés látható lehet az első fuvarozói szkennelés előtt.\n\nNézd a legújabb eseményt és időbélyeget. A követési szám megléte önmagában nem jelzi jármű vagy repülő indulását. A konkrét eseményszöveg legyen a tudható tény bizonyítéka; ne töltsd ki a rést kitalált helyzettel.\n\nHa a fiók fizetési vagy címhibát mutat, előbb azt oldd meg hivatalosan. Kész előkészítés, de nem igazolt átvétel esetén kérdezd meg, megtörtént-e az átadás. Ez megválaszolhatóbb, mint szakaszmegjelölés nélkül azt kérdezni, miért késik a csomag."
         },
         {
-          "title": "Követési szünetből ne találj ki menetrendet",
-          "text": "A fuvarozói frissítés eseményt rögzít, nem folyamatos élő helyzetet. Új szkennelés nélküli időszakból nem derül ki pontosan a hely vagy a frissítés hiányának oka. Következtetés előtt az utolsó igazolt eseményt saját vonalad szolgáltatási adataihoz vesd.\n\nNincs minden OOPBuy-csomagra megbízható egységes késési napküszöb. Eredeti kezelés, útvonal, célországi feldolgozás, ünnep és helyi viszony változhat. A küldemény élő becslését és feltételeit használd, tudva, hogy az előrejelzés nem garantált érkezési dátum.\n\nTöbb oldal állandó frissítése helyett vezess rövid idővonalat. Írd a feladást, utolsó fuvarozói eseményt, ellenőrzési dátumot és releváns szolgáltatási közleményt. Ha a szünet meghaladja az adott szolgáltatás útmutatását vagy elmarad az ígért válasz, készen állnak a tények célzott érdeklődéshez."
+          "title": "Nem frissül a követés: azonosítsd az utolsó megerősített szakaszt",
+          "text": "Nyisd meg a megfelelő nyilvántartást, és jegyezd fel az utolsó eseményt és dátumát. Ha termékrendelést nézel, a küldemény még az eladótól a kínai raktár felé haladhat. Ha nemzetközi csomagot nézel, ellenőrizd, hogy a bejegyzés a fuvarozói átvételt vagy csak a csomag előkészítését erősíti-e meg. A létrehozott címke és az átvett csomag eltérő mérföldkövek; egyikre sem szabad egy független rendelési állapotból következtetni.\n\nHasonlítsd össze a hivatalos fuvarlevéladatokat az adott csomaghoz kapcsolt fuvarozói információval. Ellenőrizd, hogy az azonosító a nemzetközi úthoz tartozik-e, és nem az eladó belföldi kézbesítéséhez. Olvasd el a választott útvonal aktuális időadatait és a munkanap meghatározását, de ne találj ki általános napszámot, amely után minden csomag elveszettnek számít. A frissítés nélküli időszak értelmezéséhez a tényleges vonal és az utolsó megerősített esemény körülményei szükségesek.\n\nTisztázatlan szünet esetén küldd el az ügyfélszolgálatnak a csomagazonosítót, az utolsó látható eseményt, annak dátumát, a kiválasztott útvonalat és a várt állapotot. Kérdezd meg, hogy az ügy átvételt, szállítást, átadást vagy célországi kézbesítést érint-e. Őrizd meg a választ a követési előzményekkel. Ha dokumentumokat vagy címpontosítást kérnek, hivatalos csatornákon ellenőrizd a kérést, és pontosan válaszolj ahelyett, hogy új követési beolvasást próbálnál kikényszeríteni."
         },
         {
           "title": "Vám- vagy dokumentumkérésre megfontoltan válaszolj",
@@ -1137,18 +1442,21 @@
         "oopbuy-shipping-guide",
         "oopbuy-warehouse-guide",
         "oopbuy-haul-packing"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-haul-packing",
       "tag": "Csomagolás",
       "title": "OOPBuy közös csomag: védd a termékeket és ellenőrizd a végső árat",
       "description": "Tervezz OOPBuy csomagot gyakorlati csomagolási döntésekkel, útvonalellenőrzéssel és próbacsomagolással a nemzetközi feladás előtt.",
-      "primaryKeyword": "OOPBuy csomagolás",
+      "primaryKeyword": "OOPBuy haul packing",
       "secondaryKeywords": [
-        "OOPBuy próbacsomagolás",
-        "OOPBuy csomagoló szolgáltatás",
-        "OOPBuy közös csomag szállítása"
+        "OOPBuy parcel rehearsal",
+        "OOPBuy packaging",
+        "OOPBuy haul shipping"
       ],
       "takeaways": [
         "A védeni kívánt termékhez és azt elfogadó útvonalhoz válassz csomagolást.",
@@ -1215,7 +1523,10 @@
         "oopbuy-shipping-guide",
         "oopbuy-tracking-guide",
         "oopbuy-returns-refunds"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     }
   ],
   "guides": {

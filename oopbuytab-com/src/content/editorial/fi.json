@@ -429,6 +429,283 @@
   ],
   "articles": [
     {
+      "slug": "oopbuy-payment-methods",
+      "title": "OOPBuy-maksutavat: saldon lataus, kulut ja maksuongelmat",
+      "description": "Vertaa OOPBuyn dokumentoituja maksutapoja, tarkista saldon latauskulut ja valuutanvaihto sekä selvitä veloitettu maksu, joka ei näy saldossa.",
+      "tag": "Maksaminen",
+      "primaryKeyword": "OOPBuy payment methods",
+      "secondaryKeywords": [
+        "OOPBuy top up",
+        "OOPBuy PayPal",
+        "OOPBuy payment failed"
+      ],
+      "takeaways": [
+        "Tarkista oman maksusi maksutavat, valuutta, kulu ja loppusumma ennen vahvistamista.",
+        "Saldon lataus, maksettu tuotetilaus ja maksettu kansainvälinen paketti ovat erillisiä tapahtumia.",
+        "Jos raha on veloitettu mutta sitä ei ole hyvitetty, selvitä olemassa oleva maksu ennen uutta maksua."
+      ],
+      "sections": [
+        {
+          "title": "Mitä OOPBuy-maksutapoja ohjeissa mainitaan?",
+          "text": "Virallinen aloittelijan opas mainitsee luottokortit, PayPalin ja tilin saldon. Saldon latausohjeissa kuvataan myös Wise-siirrot. Nämä ovat dokumentoituja vaihtoehtoja, eivät lupaus siitä, että jokainen tapa olisi käytettävissä kaikilla tileillä, kaikissa maissa, valuutoissa tai tapahtumissa. Avaa nykyinen maksunäkymä ja tarkista oman tilauksesi vaihtoehdot.\n\nPidä maksutapa ja maksun tarkoitus erillään. Rahan lisääminen tilille ei välttämättä tee tilausta, eikä tavaroiden maksaminen maksa niiden myöhempää kansainvälistä pakettia. Tarkista saldotapahtuma, tuotetilaus ja paketin maksu erikseen sen sijaan, että olettaisit yhden onnistuneen tapahtuman kattavan koko ostoprosessin.\n\nTarkista summa ja valuutta ennen kuin siirryt OOPBuysta maksupalveluun. Säilytä kuitti ja sitä vastaava tilaus- tai latausviite. Niiden avulla erotat valmiin ostoksen talletuksesta, joka on vielä kohdistettava tilaukseen."
+        },
+        {
+          "title": "Näin lataat saldoa ja pysyt selvillä loppusummasta",
+          "text": "Aloita virallisen OOPBuy-tilisi saldon lataustoiminnosta. Valitse tarjolla oleva maksutapa, syötä summa ja tarkista vahvistusnäkymä ennen hyväksymistä. Kirjaa maksettava summa, veloitusvaluutta, odotettu saldo ja mahdollinen ilmoitettu kulu. Taulukossa näkyvä muunnettu tuotehinta ei ole tämä lopullinen maksutarjous.\n\nWisen julkaistuissa ohjeissa mainitaan USD, GBP, EUR, NZD ja AUD. Niissä kerrotaan myös, että vastaanottajatiedot riippuvat valuutasta. Käytä oman latauksesi yhteydessä näkyviä vastaanottajatietoja äläkä kopioi pankkitietoja kuvakaappauksesta, vanhasta siirrosta tai jonkun toisen oppaasta.\n\nKun maksupalvelu ilmoittaa onnistumisesta, tarkista OOPBuyn tapahtumatieto ja käytettävissä oleva saldo. Tallenna todisteet, jos ne eivät täsmää. Älä tee uutta siirtoa vain siksi, ettei ensimmäinen vielä näy: selvitä ensin, näyttääkö palvelu maksun odottavana, suoritettuna vai epäonnistuneena varmennuksena."
+        },
+        {
+          "title": "PayPal-kulut ja vaihtokurssit: mitä on tarkistettava",
+          "text": "Virallisessa saldon latausilmoituksessa ja latauksen usein kysytyissä kysymyksissä näkyi tätä opasta tarkistettaessa erilaiset PayPal-prosenttimaksut. Kummallakaan sivulla ei ollut selkeää voimaantulopäivää. Yhden prosenttiluvun kopioiminen blogiin loisi siksi perusteetonta varmuutta. Käytä käytännön vertailukohtana nykyisessä maksuvahvistuksessasi näkyvää kulua ja loppusummaa.\n\nPayPal-latausohje kuvaa muunnon USD-valuuttaan, mutta tämä ei osoita, ettei pankkisi tai kortinmyöntäjäsi veloittaisi erillisiä valuutanvaihtokuluja. Vertaa maksutililtä poistuvaa summaa OOPBuyhin hyvitettyyn summaan. Kirjaa vaihtokurssi ja kulu siellä, missä ne näytetään, ja merkitse jokainen valuutta selvästi.\n\nPayPal-ohje edellyttää myös, että maksusivun toimitusosoite vastaa OOPBuy-paketin lähetyspyynnössä käytettävää osoitetta. Tarkista vaatimus ennen maksamista, erityisesti jos aiot tilata tavallista osoitettasi muualle. Kysy osoitteiden erosta viralliselta tuelta ennen kuin luotat maksun kelpaavan lähetykseen."
+        },
+        {
+          "title": "Epäonnistunut, odottava tai veloitettu mutta hyvittämätön maksu?",
+          "text": "Selvitä ensin tarkka tila. Epäonnistunut varmennus, maksupalvelussa odottava tapahtuma ja lopullinen veloitus ilman OOPBuy-saldoa ovat eri ongelmia. Lue sekä maksupalvelun että OOPBuyn tiedot. Pelkkä onnistumisilmoituksen puuttuminen ei todista, ettei tililtäsi lähtenyt rahaa.\n\nJos maksupalvelu näyttää suoritetun veloituksen, kerää latausviite, tapahtumaviite, summa, valuutta ja maksuaika. Lähetä ne virallisen tuen kautta ja pyydä selvittämään olemassa oleva tapahtuma. Jätä arkaluonteiset korttitiedot ja tilin salasanat pois kuvakaappauksista. Tuki tarvitsee maksun tunnistavat todisteet, ei korttisi täydellisiä maksutietoja.\n\nJos maksu hylättiin, tarkista näkyvä virhe ja maksutavan tämänhetkinen saatavuus ennen toisen tarjolla olevan vaihtoehdon kokeilemista. Tämä opas ei voi selvittää yksittäistä pankin päätöstä eikä luvata maksun käsittelyaikaa. Vältä nopeita toistuvia yrityksiä, kun aiemman veloituksen tila on vielä avoin; muuten useita onnistuneita maksuja voidaan joutua jäljittämään."
+        },
+        {
+          "title": "Budjetoi kansainvälinen paketti erikseen",
+          "text": "OOPBuyn ostamista koskeva selostus erottaa tavaroiden ja kotimaan toimituksen maksun myöhemmästä kansainvälisen kuljetuksen maksusta. Arvioi molemmat ennen tilaamista. Kun tuotteet saapuvat varastoon, tarkasta ne ja valitse pakkaus sekä sopiva kuljetusreitti ennen paketin summan vahvistamista. Tilille ladatusta rahasta on hyötyä vain, jos kokonaisbudjettisi kattaa myös tämän myöhemmän päätöksen.\n\nSisällytä budjettiin valitut palvelut ja kaikki näytetyt maksu- tai valuuttakulut. Käsittele varhaista toimitusarviota yhtenä vaihtoehtona ja korvaa se mitatun paketin tarjouksella, kun sellainen on saatavilla. Älä oleta kupongin tai alennetun arvion koskevan tiliäsi ennen kuin nykyinen maksuprosessi vahvistaa sen.\n\nJos kokonaissumma ylittää maksukykysi, tarkista tilauksen tai paketin vaihtoehdot ennen lisämaksuja. Pakkauksen poistaminen, reitin vaihtaminen tai paketin sisällön muuttaminen voi muuttaa tarjousta, mutta mikään niistä ei takaa säästöä. Tarkista soveltuvuus ja vertaa uutta loppusummaa samassa valuutassa sekä selvästi kirjatuilla oletuksilla."
+        },
+        {
+          "title": "Mitä säilyttää hyvitystä tai tukipyyntöä varten",
+          "text": "Pidä lyhyt kirjanpito, joka yhdistää tuotetilauksen, saldon latauksen ja kansainvälisen paketin. Tallenna maksupäivä, valuutta, kuitti ja nykyinen tila. Kerro apua pyytäessäsi, missä tiedossa on virhe: puuttuvassa saldossa, maksamattomassa tilauksessa, epäonnistuneessa pakettimaksussa vai hyvityksen etenemisessä. Näin asiaa on helpompi selvittää kuin yleistä ilmoitusta maksamisen toimimattomuudesta.\n\nHyvityksen hyväksyminen, hyvitys OOPBuy-saldoon ja rahan palautuminen maksupalveluun ovat erillisiä tapahtumia. Tarkista hyvityksen kohde ennen kuin oletat rahojen palaavan samaan paikkaan, josta alun perin maksoit. Lue kyseisen tilauksen ja maksutavan ajantasaiset jälkipalveluohjeet; tämä artikkeli ei luo oikeutta hyvitykseen.\n\nKun tuki ratkaisee ongelman, tarkista, että tilaus ja saldo vastaavat selitystä. Säilytä lopullinen vastaus kuittien kanssa ostoksen valmistumiseen asti. Tarkista myöhemmän paketin yhteydessä valuutta, kulut ja osoite uudelleen sen sijaan, että pitäisit aiempaa tapahtumaa nykyisten maksuehtojen takeena."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1740660085586235394",
+          "label": "OOPBuyn saldon latausohjeet"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1775419828091813890",
+          "label": "OOPBuyn saldon latauksen usein kysytyt kysymykset"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1740660571185975297",
+          "label": "OOPBuyn PayPal-ohjeet"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658",
+          "label": "OOPBuyn ensitilaajan ohjeistus"
+        }
+      ],
+      "related": [
+        "oopbuy-price-check",
+        "oopbuy-returns-refunds",
+        "oopbuy-shipping-guide"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
+      "slug": "oopbuy-shipping-germany",
+      "title": "OOPBuy-toimitus Saksaan: hinnat, reitit ja toimitus",
+      "description": "Arvioi OOPBuy-toimitus Saksaan päivätyn pakettiesimerkin avulla, vertaa reittirajoituksia ja syrjäisiä osoitteita sekä ymmärrä seurannan ja toimituksen vaiheet.",
+      "tag": "Saksa",
+      "primaryKeyword": "OOPBuy shipping to Germany",
+      "secondaryKeywords": [
+        "OOPBuy Germany shipping cost",
+        "OOPBuy Deutschland Versand",
+        "OOPBuy Germany delivery time"
+      ],
+      "takeaways": [
+        "Valitse virallisessa laskurissa Saksa, oikea sisältö ja pakatun lähetyksen mitat.",
+        "Tarkista reittikuvauksesta osoiterajaukset, sisältörajoitukset ja laskutusehdot.",
+        "Päivätty esimerkki auttaa vertailussa; tarkista hinnat, alennukset ja saatavuus uudelleen ennen maksamista."
+      ],
+      "sections": [
+        {
+          "title": "Aloita Saksan toimitusarvio oikeilla lähtötiedoilla",
+          "text": "Valitse virallisessa OOPBuy-toimituslaskurissa kohdemaaksi Saksa. Valitse oikea tuoteluokka, syötä paketin paino ja mitat sekä kirjaa valuutta. Hyödyllinen arvio kuvaa pakettia, jonka aiot lähettää. Pelkkien vaatteiden esimerkkiä ei pidä käyttää sellaisenaan merkkituotteille, elektroniikalle, nesteille tai eri tuoteryhmiä sisältävälle paketille.\n\nTarkistetussa esimerkissämme on tavallisia merkkittömiä vaatteita, paino 2000 g ja mitat 30 × 20 × 15 cm. Näytetty valuutta oli EUR. Tiedot ovat havainnollistavia, eivät suositus pakata jokainen tilaus näin. Todelliset tavarat, myyjän pakkaukset ja suojaus voivat tuottaa erilaisen mitatun paketin.\n\nTee uusi arvio, kun varaston mittaustiedot ovat saatavilla. Jos summa muuttuu, vertaa lähtötietoja ennen kuin epäilet selittämätöntä kulua. Paino, laatikon koko, tuoteluokka ja valitut palvelut voivat kukin muuttaa vaihtoehtoja. Säilytä alkuperäinen arvio uuden rinnalla, jotta erolle on selkeä selitys."
+        },
+        {
+          "title": "Päivätty Saksan tarjous: vertaa myös ehtoja",
+          "text": "Virallinen laskuri tarkistettiin 2026-10-23 yllä olevan esimerkin tiedoilla. BTF-DHL-DE-1 näytti EUR 36.93 ennen ilmoitettua alennusta ja EUR 28.33 sen jälkeen sekä arvioksi 10–18 työpäivää. BSF-DHL-DE-1 näytti EUR 37.17 ja EUR 28.56 sekä 7–14 työpäivää. Luvut ovat päivätty tilannekuva, eivät nykyisiä kassatarjouksia.\n\nPienempi näytetty summa ei osoita alennuksen olevan kaikkien asiakkaiden käytettävissä. Kumpikaan luku ei kata tavaroiden ostamisen ja vastaanottamisen koko hintaa: tuotemaksu, kotimaan rahti, lisäpalvelut ja muut mahdolliset maksut on tarkistettava erikseen. Älä esitä vanhaa esimerkkiä tämän päivän halvimpana reittinä.\n\nVertaa reittikuvauksia ennen toimitusaikavälien vertaamista. Tässä tilannekuvassa yksi kuvaus sulki pois syrjäiset alueet tai saaret, kun toinen sulki pois sähköiset tai magneettiset tuotteet, nesteet, jauheet ja tahnat. Tavallisille vaatteille sopiva reitti voi siis olla sopimaton toiselle samanpainoiselle paketille."
+        },
+        {
+          "title": "Tarkista saksalainen osoite ja todellinen sisältö",
+          "text": "Tätä opasta varten tarkistettu maakohtainen laskuri ei pyytänyt postinumeroa. Saksan valitseminen ei siis osoita palvelun kattavan jokaista saksalaista osoitetta. Lue osoiterajaukset ja kysy syrjäisestä paikasta tai saaresta viralliselta tuelta ennen tiettyyn reittiin luottamista. Vahvista vastaanottajan tiedot uudelleen pakettia lähettäessäsi.\n\nAnna tuelle todelliset tuotelinkit ja tekniset tiedot, jos luokka on epäselvä. Vaatetilauksen mukana oleva akkukäyttöinen lisävaruste muuttaa sisältöä, vaikka se lisäisi vain vähän painoa. Älä valitse tavallisia vaatteita vain halvemman tarjouksen vuoksi. Tarkka luokittelu on tarpeen, jotta reitin soveltuvuus paketille voidaan arvioida.\n\nJos sopivaa reittiä ei näy, pysähdy ennen uusien tuotteiden ostamista. Myyjän mahdollisuus lähettää tavarat varastoon ei ole sama asia kuin kansainvälisen kuljetusyhtiön hyväksyntä. Kysy, onko sisällöllesi ja osoitteellesi olemassa sallittu sopiva reitti, ja säilytä vastaus tilaustietojen kanssa."
+        },
+        {
+          "title": "Erota varastoaika Saksan toimitusajasta",
+          "text": "Reitin arvioitu kuljetusaikaväli on vain osa ostoksen aikajanaa. Myyjän on ensin lähetettävä tavarat, varaston vastaanotettava ja käsiteltävä ne, ja sinun on tarkastettava tuotteet sekä tehtävä paketin lähetyspyyntö. Myös toisen tuotteen saapumisen odottaminen on erillään kansainvälisen kuljetusyhtiön kuljetusajasta.\n\nKäytä valitun reitin nykyistä arviomääritelmää. Työpäivät eivät ole kalenteripäiviä, eikä aikaväli takaa saapumista tiettyyn tilaisuuteen. Käytä reittejä vertaillessasi samaa alkutapahtumaa ja huomioi valmisteluvaiheet, joita tilauksesi ei ole vielä suorittanut.\n\nAvaa kansainvälistä kuljetusta varten paketin rahtikirjan tiedot. Lähetetyksi merkitty tuotetilaus voi tarkoittaa vain, että myyjä on lähettänyt sen kohti Kiinan varastoa. Jos seuranta näyttää pysähtyneen, kirjaa viimeisin tapahtuma, sen päivämäärä ja kyseinen pakettiviite ennen yhteydenottoa tukeen. Älä käsittele kotimaan seurantanumeroa Saksan toimituksen seurantatietona."
+        },
+        {
+          "title": "Ymmärrä kokonaissumma ja mahdolliset tuontipyynnöt",
+          "text": "Vertaa paketin koko tarjoussummaa, valittua pakkausta ja valinnaista suojausta. Lue, mitä reitti ilmoittaa sisältävänsä ja mikä on ehdollista. Lyhyt verojen käsittelyyn viittaava nimike ei riitä osoittamaan, että jokainen tuote olisi vapaa kohdemaan maksuista tai että kaikki mahdolliset kulut olisi jo maksettu.\n\nSäilytä totuudenmukaiset ostotositteet ja lähettämäsi pakettitiedot. OOPBuyn tullitarkastuksia koskeva ilmoitus kertoo, että tullauksessa voidaan pyytää lisäasiakirjoja. Noudata asianmukaisia kuljetusyhtiön tai viranomaisen ohjeita ja pyydä selvennystä epäselvään pyyntöön. Tämä opas ei anna verorajaa eikä lupaa tullauksen lopputulosta.\n\nArvioi ennen tilaamista, pysyykö budjetti hyväksyttävänä, kun myös avoimet kulut huomioidaan. Korvaa arviot saatavilla olevilla vahvistetuilla summilla ennen rahdin maksamista. Kun tuotteen hinta, kotimaan toimitus, kansainvälinen rahti ja muut kulut ovat omilla riveillään, näet helpommin, muuttaako reittivertailu todella kokonaiskulutustasi."
+        },
+        {
+          "title": "Viimeinen tarkistuslista Saksan paketille",
+          "text": "Vahvista Saksa ja täydellinen toimitusosoite, mukaan lukien postinumero sekä valitun reitin edellyttämät vastaanottajatiedot. Tarkista jokaisen tuotteen luokka, varastotila ja tarkastustulokset. Selvitä koko- tai kuntokysymykset ennen tuotteiden yhdistämistä kansainväliseksi paketiksi, jolloin palautukset ja pakkausmuutokset voivat vaikeutua.\n\nTarkista pakattu paino ja mitat, säilytettävät laatikot sekä suojausvalinnat. Arvioi nykyinen hinta, alennuskelpoisuus, arvioitu kuljetusaika ja reittirajaukset yhdessä. Jos muutat pakkausta tai sisältöä arvion saamisen jälkeen, hanki vastaava päivitetty summa äläkä oleta aiemman tarjouksen pätevän edelleen.\n\nTallenna lopullinen reittikuvaus ja maksutieto. Jatka lähetyksen jälkeen viralliseen rahtikirjaseurantaan ja pidä ostotositteet saatavilla tuki- tai tullauskysymyksiä varten. Yleinen laskentatapa on toimituskuluoppaassa; herkkää sisältöä varten lue akkuja, nesteitä ja hajuvesiä käsittelevä erillinen opas ennen ostamista."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://oopbuy.com/estimation",
+          "label": "Virallinen OOPBuy-toimituslaskuri"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977",
+          "label": "OOPBuyn toimitusilmoitus"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1775430227893747714",
+          "label": "OOPBuyn tullitarkastuksen selostus"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-shipping-restrictions",
+        "oopbuy-tracking-guide"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
+      "slug": "oopbuy-shipping-usa",
+      "title": "OOPBuy-toimitus Yhdysvaltoihin: hinta, ZIP-koodit ja seuranta",
+      "description": "Suunnittele OOPBuy-toimitus Yhdysvaltoihin päivätyn hintaesimerkin, ZIP-koodin tarkistusten ja pakettimittojen avulla sekä erota varasto- ja kuljetusseuranta.",
+      "tag": "Yhdysvallat",
+      "primaryKeyword": "OOPBuy shipping to USA",
+      "secondaryKeywords": [
+        "OOPBuy shipping cost USA",
+        "OOPBuy USA delivery time",
+        "OOPBuy tracking USA"
+      ],
+      "takeaways": [
+        "Käytä todellista tuoteluokkaa ja pakattuja mittoja Yhdysvaltain pakettia arvioitaessa.",
+        "Lue ZIP-koodirajaukset, vaikka maakohtainen tulos näyttäisi reitin saatavilla olevaksi.",
+        "Erota ostaminen, varastokäsittely ja kansainvälinen kuljetus saapumisaikaa arvioitaessa."
+      ],
+      "sections": [
+        {
+          "title": "Laadi Yhdysvaltain tarjous todellisen pakettisi perusteella",
+          "text": "Valitse virallisessa toimituslaskurissa United States ja käytä oikeaa tuoteluokkaa. Syötä paino, pituus, leveys ja korkeus pyydetyissä yksiköissä. Pidä tarjouksen valuutta näkyvillä. USD-tarjouksen vertaaminen toisen maan tai tilin valuutattomaan summaan voi saada kalliin reitin näyttämään harhaanjohtavan halvalta.\n\nTämän oppaan tarkistetussa esimerkissä oli tavallisia merkkittömiä vaatteita, paino 2000 g ja paketin mitat 30 × 20 × 15 cm. Valittu valuutta oli USD. Mukana ei ollut akkuja, nesteitä eikä muuta herkkää sisältöä. Omat tuotteesi voivat vaatia toisen luokan, jolloin myös sopivat reitit voivat muuttua.\n\nKäsittele mittoja oletuksina ennen varastopakkausta. Laske uudelleen, kun tarkastus- ja pakkaustiedot ovat saatavilla, etenkin laatikollisten kenkien tai eri tuotteita sisältävien tilausten kohdalla. Suurempi laatikko voi muuttaa laskutettavaa summaa, vaikka tuotteiden oma paino pysyisi samana. Lue valitun reitin säännöt yleispätevän tilavuuspainokaavan käyttämisen sijaan."
+        },
+        {
+          "title": "Päivätty esimerkki Yhdysvaltain toimituskuluista",
+          "text": "Virallinen laskuri antoi 2026-10-23 yllä olevalle esimerkille DDF-GOFO-US-1-reitin hinnaksi USD 60.27 ennen näytettyä alennusta ja USD 44.80 sen jälkeen. Tämä on tallennettu vertailupiste, ei lupaus saman hinnan tai alennuksen saatavuudesta oman pakettisi lähetyshetkellä.\n\nTulos osoitti myös, miksi toimitusarviot on tarkistettava: erillinen aikatietokenttä näytti 15–20 työpäivää, mutta reittikuvaus mainitsi yhä 8–16. Koska tiedot olivat ristiriidassa, tämä opas ei valitse kumpaakaan taatuksi saapumisaikaväliksi. Tarkista nykyiset reittitiedot ja pyydä tukea selventämään ristiriita ennen niihin luottamista.\n\nKuvaus sulki pois nesteet, jauheet ja tahnat sekä varoitti mahdollisesta syrjäseutulisästä. Tuloslistan pieni numero ei siis ratkaise soveltuvuutta tai kokonaiskuluja. Vertaa hyväksyttyä sisältöä, omaa kohdeosoitettasi, lisäpalveluja ja lopullista maksettavaa summaa yhdessä."
+        },
+        {
+          "title": "Miksi ZIP-koodi on tärkeä United States -valinnan jälkeenkin",
+          "text": "Tarkistettu maakohtainen arvio ei pyytänyt ZIP-koodia. Yksi palautunut reitti, ZD-UPS-US-HK, oli merkitty saatavilla olevaksi yleiselle Yhdysvaltain esimerkille, mutta sen kuvaus sulki pois postinumerot, jotka alkavat numerolla 8 tai 9. Tämä on nimenomainen havaittu reittirajoitus, ei kaikkia OOPBuyn Yhdysvaltain toimituksia koskeva sääntö.\n\nLue koko reittikuvaus ja varmista oma ZIP-koodisi ennen reitin valintaa. Tarkista myös todellista osoitettasi koskevat syrjäisten osoitteiden rajoitukset ja lisämaksut. Älä päättele maakohtaisen saatavuusmerkinnän vahvistavan jokaista osavaltiota, territoriota, saarta tai osoitetyyppiä.\n\nJos osoite on rajattu pois, vertaa sallittuja vaihtoehtoja, jotka hyväksyvät sen. Älä muuta ZIP-koodia päästäksesi valintanäkymästä eteenpäin. Kysy viralliselta tuelta käyttäen oikeita kohdetietoja ja tuotetietoja, ja vahvista saatavilla oleva vaihtoehto paketin lähetyspyynnössä. Toisen asiakkaan onnistunut toimitus eri osoitteeseen ei riitä todisteeksi oman osoitteesi osalta."
+        },
+        {
+          "title": "Kuinka kauan OOPBuy-toimitus Yhdysvaltoihin kestää?",
+          "text": "Kaikille Yhdysvaltain tilauksille ei ole yhtä hyödyllistä toimitusaikaa. Ostaminen, myyjän lähetys, varaston vastaanotto, tarkastus, paketin lähetyspyyntö ja kuljetusyhtiön kuljetus ovat erillisiä vaiheita. Myyjän lähetetyksi merkitsemä tuote voi yhä olla matkalla Kiinan sisällä. Selvitä ensin oman tilauksesi nykyinen vaihe.\n\nKun kansainvälinen paketti on lähetetty, käytä sen rahtikirjatietoja ja valitun reitin ajantasaista seurantaa. Tarkista viimeisimmän tapahtuman päiväys ja merkitys sen sijaan, että vertaisit asiaankuulumattomia seurantakuvakaappauksia. Arvioitu aikaväli voi perustua työpäiviin ja tiettyyn alkutapahtumaan, joten lue ehdot ennen aikataulusuunnittelua.\n\nJos tila on epäselvä, anna viralliselle tuelle tilaus- tai pakettiviite ja viimeisimmän päivityksen päivämäärä. Kerro, koskeeko ongelma varastoon saapumista, kuljetusyhtiön noutoa vai myöhempää toimitusta. Yllä olevan päivätyn esimerkin ristiriitaiset aikakentät korostavat, miksi vanhan oppaan kiinteä lupaus on vähemmän hyödyllinen kuin oman reittisi ehdot."
+        },
+        {
+          "title": "Vertaa kokonaiskuluja ja säilytä tarkat ostotositteet",
+          "text": "Yhdysvaltain toimitustarjous ei ole tuotteen koko ostohinta. Lisää tavarat, myyjän toimitus varastoon, valitut palvelut ja näkyvät maksu- tai valuutanvaihtokulut. Kysy, mitä valittu reitti sisältää ja mitä maksetaan erikseen. Alennettu rahtihinta ei saa huomaamatta korvata muuta budjettiasi.\n\nÄlä pidä reitin lempinimeä tai veroihin liittyvää nimikettä takeena kaikista tuontimaksuista. Tämä opas ei julkaise tullirajaa eikä ennusta tullauksen tulosta. Käytä pyydettäessä tarkkoja kuvauksia ja ostoarvoja sekä säilytä paketin tuotteita vastaavat kuitit.\n\nOOPBuyn tulli-ilmoitus kertoo, että tullaus voi edellyttää lisäasiakirjoja. Vastaa asianmukaisten kuljetusyhtiön tai viranomaisen kanavien kautta ja kysy viralliselta tuelta, jos pyyntö on epäselvä. Avoimet kulut näkyviksi tekevä budjetointi on hyödyllisempää kuin oletus, ettei pieni tai edullinen paketti voisi joutua lisätarkastuksiin tai maksujen kohteeksi."
+        },
+        {
+          "title": "Tarkista Yhdysvaltain paketti ennen maksun vahvistamista",
+          "text": "Tarkista vastaanottaja, katuosoite, ZIP-koodi ja muut valitun reitin vaatimat tiedot. Varmista, että jokainen mukana oleva tuote hyväksytään ja on läpäissyt oman varastotarkastuksesi. Tuotteen näkyminen taulukossa ei itsessään osoita, että sen voi kuljettaa osoitteeseesi.\n\nVertaa lopullista mitattua pakettia arvioon: painon, mittojen, sisällön, pakkauksen ja lisäpalvelujen tulee täsmätä. Jos poistat laatikoita tai muutat tuotteiden yhdistelmää, hanki päivitetty tarjous. Pienempi paketti voi silti jäädä samaan laskutusluokkaan, joten älä oleta tiettyä säästöä ilman vertailua.\n\nTallenna nykyiset reittiehdot, lopullinen maksutieto ja rahtikirjaviite. Seuraa pakettia lähetyksen jälkeen sen kansainvälisistä tiedoista. Käytä yleistä toimitusopasta laskentakysymyksiin ja rajoitusopasta akkujen, nesteiden tai hajuvesien kohdalla; niiden soveltuvuus on tarkistettava erikseen ennen ostamista."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://oopbuy.com/estimation",
+          "label": "Virallinen OOPBuy-toimituslaskuri"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977",
+          "label": "OOPBuyn toimitusilmoitus"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1775430227893747714",
+          "label": "OOPBuyn tullitarkastuksen selostus"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-tracking-guide",
+        "oopbuy-shipping-restrictions"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
+      "slug": "oopbuy-shipping-restrictions",
+      "title": "OOPBuyn toimitusrajoitukset: akut, nesteet ja hajuvedet",
+      "description": "Tarkista OOPBuyn rajoitukset ennen akkujen, elektroniikan, nesteiden tai hajuvesien ostamista. Ymmärrä tuoteluokat, reittirajat ja tuelle annettavat tiedot.",
+      "tag": "Rajoitukset",
+      "primaryKeyword": "OOPBuy prohibited items",
+      "secondaryKeywords": [
+        "OOPBuy shipping restrictions",
+        "OOPBuy batteries",
+        "OOPBuy liquids",
+        "OOPBuy perfume"
+      ],
+      "takeaways": [
+        "Tuotelistaus ja valittavissa oleva laskuriluokka eivät todista, että reitti hyväksyy tuotteen.",
+        "Kuvaile akut, nestesisältö ja astian tilavuus tarkasti ennen tilaamista.",
+        "Tarkista kohteen ja reitin säännöt viralliselta tuelta, kun soveltuvuus on epäselvä."
+      ],
+      "sections": [
+        {
+          "title": "Aloita ostosäännöistä ja tarkista sitten kuljetuskelpoisuus",
+          "text": "Myyjän listaus, varaston hyväksyntä ja kansainvälinen kuljetuskelpoisuus vastaavat eri kysymyksiin. OOPBuyn ostosäännöt kieltävät tietyt ostokset ja edellyttävät herkkien tuoteluokkien ennakkovahvistusta. Tuotteen löytyminen taulukosta ei kumoa sääntöjä eikä osoita kansainvälisen reitin kuljettavan sitä kohteeseesi.\n\nNäkyvissä olevissa ostosäännöissä tupakka, alkoholi ja salakuljetustavarat määritellään kielletyiksi, samoin väärennökset ja immateriaalioikeuksia loukkaavat tuotteet. Lääkkeille, nesteille, tahnoille ja kosmeettisille jauheille edellytetään asiakaspalvelun vahvistusta ennen ostoa. Käytä täsmällistä tuotetta koskevaa ajantasaista virallista ohjetta toisen ostajan yleisen suosituksen sijaan.\n\nTarkista ostokelpoisuuden jälkeen reitti erikseen. Kuvaile tuotteen todellinen sisältö ja mukaan pakatut lisävarusteet. Tavallisille vaatteille sopiva reitti voi sulkea pois samassa paketissa olevan akun, nestetäytön tai magneettisen osan. Hanki selvennys ennen epävarman tuotteen maksamista, kun suunnitelman muuttaminen on helpompaa."
+        },
+        {
+          "title": "Akut ja elektroniikka: asennettu ja erillinen ovat eri asioita",
+          "text": "Ajantasainen laskuri erottaa tuoteryhmät, joissa on sisäänrakennettu akku tai magneettisuutta, tuoteryhmistä, joissa on mukana toimitettava akku. Luokittelu auttaa kysymään oikeat kysymykset, mutta ei anna yleistä akkulupaa. Laite asennetulla akulla, irrallinen vaihtoakku ja virraton lisävaruste voivat vaatia erilaiset soveltuvuustarkistukset.\n\nAnna viralliselle tuelle myyjän tuotelinkki, laitetyyppi, akun tekniset tiedot ja määrä. Kerro, onko akku asennettu, pakattu erikseen vai toimitettu varaosana. Jos listauksesta puuttuu olennainen tekninen tieto, pyydä myyjää tai tukea selvittämään se sen sijaan, että keksisit kapasiteetin tai valitsisit epätarkan luokan.\n\nPakkausilmoitus kertoo, että akkuja hyväksyvien reittien hinnoissa ja rajoituksissa voi olla eroja. Se ei osoita kiinteää lisämaksua tai yhtä kapasiteettirajaa kaikille kohteille. Tarkista todellinen reitti ja pakkausohjeet. Jos se ei sovellu, harkitse ostosta uudelleen tai kysy sallitusta sopivasta palvelusta; älä piilota akkua tai ilmoita sitä väärin."
+        },
+        {
+          "title": "Nesteet, kosmetiikka, tahnat ja jauheet",
+          "text": "Kosmetiikka ei muodosta yhtä yhtenäistä kuljetusluokkaa. Laskuri erottaa nesteet, tahnat ja jauheet sekä sisältää useita tilavuusluokkia. Pakkauksen sisältö ratkaisee: tyhjä pullo on eri asia kuin täysi, ja aerosoli tai paineistettu astia herättää vielä eri kysymyksen.\n\nIlmoita soveltuvuutta kysyessäsi tarkka sisältö, astian tilavuus, määrä ja pakkaustiedot. Liitä mukaan olennaiset myyjän tekniset tiedot sen sijaan, että luottaisit pelkkään tuotemerkkiin tai lyhyeen tuotenimeen. Tarkista myös koko paketin yhdistelmä: yksittäisen tuotteen hyväksyntä ei tarkoita, että jokainen sekalainen paketti tai reitti sopisi.\n\nKäytä virallisessa laskurissa tarkkaa luokkaa ja lue jokaisen reitin rajaukset. Luokan näkyminen valikossa tarkoittaa, että sisältö voidaan kuvata, ei sitä, että jokainen kuljetusyhtiö hyväksyisi sen. Jos tuloslista tai ohjeteksti jättää epäselvyyttä, hanki virallinen vahvistus ennen tilaamista tai kansainvälisen paketin valmistelua."
+        },
+        {
+          "title": "Voiko OOPBuy lähettää hajuvettä?",
+          "text": "Tarkistetussa laskurissa oli erillisiä hajuvesiin liittyviä luokkia alle ja yli 100 ml:n määrille. Erottelu ei luo yleissääntöä, jonka mukaan jokainen alle 100 ml:n pullo voidaan lähettää. Se ei myöskään tue yleistä väitettä kaikkien hajuvesien kiellosta. Soveltuvuus riippuu todellisesta tuotteesta, kohteesta ja reitistä.\n\nYksilöi tarkka hajuvesi tai nestemäinen huonetuoksu, kunkin astian tilavuus, astioiden määrä ja myyjän antamat olennaiset sisältötiedot. Kysy viralliselta tuelta soveltuva luokitus ja reitti. Älä korvaa luokkaa tavallisilla vaatteilla siksi, että hajuvesi on pieni tai vaatteiden vieressä.\n\nTarkista reittikuvauksesta nesteet ja muu herkkä sisältö sekä vahvista pakkausvaatimukset ennen paketin lähetyspyyntöä. Myönteinen esimerkki eri pullosta tai maasta ei riitä. Jos sopivaa vaihtoehtoa ei vahvisteta, siirrä ostosta äläkä oleta varastoon saapumisen takaavan kansainvälistä kuljetusratkaisua."
+        },
+        {
+          "title": "Mitä tehdä, jos sopivaa reittiä ei näy",
+          "text": "Tarkista ensin kohteen, sisällön, mittojen ja painon oikeellisuus. Korjaa todellinen syöttövirhe, mutta älä muuta tuotteen todellista ominaisuutta vain tarjouksen saamiseksi. Maakohtainen saatavuus voi myös jättää osoitekohtaiset rajoitukset huomioimatta, joten anna oikea postinumero apua pyytäessäsi.\n\nLähetä tuelle tuotelinkit, tekniset tiedot, aiottu kohde ja olennaiset laskuritulokset. Kysy konkreettisesti, kelpaako juuri kyseinen tuote, mikä luokka siihen soveltuu, tarvitseeko se erillisen pakkauksen ja mitä tällä hetkellä sopiva reitti edellyttää. Säilytä vastaus tilausmuistiinpanoissa ja tarkista uudelleen sisällön tai kohteen muuttuessa.\n\nJos tuote on jo varastossa, tarkista käytettävissä olevat jälkipalveluvaihtoehdot ja määräajat viipymättä. Palautuskelpoisuus riippuu tilauksesta ja myyjästä; kuljetusongelma ei takaa palautusta. Vältä lisäostoksia, jos oletat vahvistamattoman reitin tulevan myöhemmin saataville rajoitetulle tuotteelle."
+        },
+        {
+          "title": "Tarkista rajoitukset ennen jokaista uutta ostosta",
+          "text": "Käytä toistettavaa järjestystä: tunnista tuote, lue nykyiset osto-ohjeet, varmista herkät ominaisuudet, arvioi oikealla luokalla ja tutki reittiehdot. Järjestys on luotettavampi kuin lyhyen kieltolistan muistaminen, sillä listasta voi puuttua kohde- tai kuljetusyhtiökohtainen poikkeus.\n\nTarkista jokainen mukana oleva tuote uudelleen ennen kansainvälisen paketin maksamista. Vahvista akkutiedot, nestemäärä, pakkaus, osoitekattavuus ja tuen ohjeet. Älä oleta aiemman hyväksytyn tilauksen osoittavan nykyistä käytäntöä, etenkin jos tuoteversio, määrä, kohde tai valittu reitti on muuttunut.\n\nSäilytä totuudenmukaiset tuotekuvaukset ja soveltuvuuden vahvistamiseen käytetyt todisteet. Onnistunut arvio on suunnittelutietoa; lopullinen paketin lähetyspyyntö ja reittiehdot ovat edelleen tärkeitä. Käytä hintavertailuun toimitusopasta ja pakkauspäätöksiin ostoserän pakkausopasta sen jälkeen, kun soveltuvuus on varmistettu."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://oopbuy.com/notice/details?id=1772880724846247937",
+          "label": "OOPBuyn ostosäännöt"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866",
+          "label": "OOPBuyn pakkaustiedot"
+        },
+        {
+          "url": "https://oopbuy.com/estimation",
+          "label": "Virallinen OOPBuy-toimituslaskuri"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-haul-packing",
+        "oopbuy-returns-refunds"
+      ],
+      "format": "focused",
+      "published": "2026-10-23",
+      "modified": "2026-10-23"
+    },
+    {
       "slug": "oopbuy-spreadsheet-guide",
       "tag": "Aloittaminen",
       "title": "OOPBuy spreadsheet -opas: kokoa valikoima, jonka voit tarkistaa",
@@ -485,33 +762,36 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn virallinen verkkosivusto",
-          "url": "https://oopbuy.com/"
+          "url": "https://oopbuy.com/",
+          "label": "OOPBuyn virallinen verkkosivusto"
         },
         {
-          "label": "OOPBuyn toimituslaskuri",
-          "url": "https://oopbuy.com/estimation"
+          "url": "https://oopbuy.com/estimation",
+          "label": "OOPBuyn toimituslaskuri"
         },
         {
-          "label": "OOPBuyn tarkastusohje",
-          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738",
+          "label": "OOPBuyn tarkastusohje"
         },
         {
-          "label": "OOPBuy-kirjautuminen",
-          "url": "https://oopbuy.com/login"
+          "url": "https://oopbuy.com/login",
+          "label": "OOPBuy-kirjautuminen"
         }
       ],
       "related": [
         "oopbuy-product-links",
         "oopbuy-price-check",
         "oopbuy-qc-photos"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-qc-photos",
       "tag": "Laaduntarkastus",
-      "title": "OOPBuy QC-kuvat: mitä tarkistaa ennen tilauksen lähettämistä",
-      "description": "Käytännön opas OOPBuy QC-kuvien tulkintaan, oikean vaihtoehdon tarkistamiseen, hyödyllisten mittojen pyytämiseen ja kuvien rajoitusten ymmärtämiseen.",
+      "title": "OOPBuy QC-kuvat: löydä ja tarkista oma tilauksesi",
+      "description": "Löydä oman tilauksesi OOPBuy-varaston QC-kuvat, tarkista koko ja näkyvä kunto sekä selvitä, milloin pyytää mittoja tai lisätietoja ennen lähetystä.",
       "primaryKeyword": "OOPBuy QC-kuvat",
       "secondaryKeywords": [
         "OOPBuy-laaduntarkastus",
@@ -526,8 +806,8 @@
       ],
       "sections": [
         {
-          "title": "Käytä QC-kuvia täsmällisiin kysymyksiin",
-          "text": "OOPBuy QC-kuvat ovat hyödyllisimmillään, kun tiedät mitä haluat varmistaa. Aloita lyhyestä listasta: saapuiko odotettu tuote, vastaako vaihtoehto tilausta, näkyykö vaurioita ja tukevatko mitat istuvuuspäätöstä? Näin saat käytännöllisen tarkastusprosessin rajattoman täydellisyyden tavoittelun sijaan.\n\nValokuva tallentaa tietyn näkymän tietyssä valaistuksessa. Se voi näyttää puuttuvan napin tai selvästi poikkeavan värimerkinnän mutta ei taskun sisälle tai irrotettavan osan alle piiloutuvaa ongelmaa. Käsittele jokaista kuvaa näyttönä, jonka näkökenttä on rajallinen.\n\nTavoitteena on selvittää päätökseen vaikuttavat huolet ennen kansainvälisen lähetyksen järjestämistä. Se voi tarkoittaa hihan mitan vahvistamista tai sen selvittämistä, onko jälki poistettavaa pakkausjäämää. Hyvännäköiset kuvat eivät takaa tuotteen toimintaa kuukausien käytön jälkeen."
+          "title": "Mistä löydät oman tilauksesi OOPBuy QC-kuvat",
+          "text": "Aloita ostetusta tuotteesta virallisella OOPBuy-tililläsi varaston vastaanoton ja tarkastuksen jälkeen. Katso juuri kyseiseen tilaukseen liitetyt kuvat ja tarkista tuote, vaihtoehto ja viite. Virallinen aloittelijan opas sijoittaa tarkastuksen saapumisen jälkeen; pelkkä myyjän lähetyspäivitys ei tarkoita varaston QC-kuvien olevan valmiita. Jos tieto on epäselvä, kysy tuelta tilausviitteen avulla.\n\nRiippumattoman taulukon kuva, myyjän kuva ja oma varastokuvasi palvelevat eri tarkoituksia. OOPBuy Tab näyttää tuotelähteensä luettelokuvia eikä tarjoa varmennettua julkista QC-kuvahakutietokantaa. Käytä luettelokuvia tuotteiden esivalintaan ja tarkista sitten oman tilauksesi todisteet ennen lähetyspäätöstä. Älä pidä samaa tuotenimeä todisteena siitä, että julkinen valokuva näyttää juuri ostamasi yksilön.\n\nJos yksityiskohta puuttuu, pyydä sen ratkaisemiseksi täsmällinen kuvakulma tai mitta. Määrittele esimerkiksi vaatteen mitta ja mittauspisteet tai kengän etiketti ja pohjallisen kuva. Vakiotarkastuksella on rajansa: kuvat eivät vahvista aitoutta, täydellistä istuvuutta tai ammattimaista toimintatestausta. Perusta päätöksesi siihen, mikä todella näkyy, ja pyydä selvennystä ennen paketin lähetyspyyntöä."
         },
         {
           "title": "Erota kolme tuotokuvan tyyppiä",
@@ -564,33 +844,36 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn tarkastusohje",
-          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738",
+          "label": "OOPBuyn tarkastusohje"
         },
         {
-          "label": "OOPBuyn mukautetut logistiikkapalvelut",
-          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010",
+          "label": "OOPBuyn mukautetut logistiikkapalvelut"
         },
         {
-          "label": "OOPBuyn palautukset ja hyvitykset",
-          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801",
+          "label": "OOPBuyn palautukset ja hyvitykset"
         },
         {
-          "label": "OOPBuyn virallinen verkkosivusto",
-          "url": "https://oopbuy.com/"
+          "url": "https://oopbuy.com/",
+          "label": "OOPBuyn virallinen verkkosivusto"
         }
       ],
       "related": [
         "oopbuy-sizing-guide",
         "oopbuy-warehouse-guide",
         "oopbuy-returns-refunds"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-shipping-guide",
       "tag": "Toimitus",
-      "title": "OOPBuy-toimitusopas: arvioi kustannukset ja valitse sopiva kuljetus",
-      "description": "Ymmärrä OOPBuyn toimitusvaiheet, paketin paino ja tilavuus, kuljetusvaihtoehdot, pakkausvalinnat ja tarkistukset ennen kansainvälisen rahdin maksamista.",
+      "title": "OOPBuyn toimituskulut: laskuri, paino ja maksut",
+      "description": "Käytä virallista OOPBuy-toimituslaskuria, vertaa pakattua painoa ja mittoja sekä budjetoi rahti, palvelut ja maksukulut ennen lähettämistä.",
       "primaryKeyword": "OOPBuy-toimitus",
       "secondaryKeywords": [
         "OOPBuy-toimituskulut",
@@ -643,39 +926,42 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn ensikertalaisen osto-ohje",
-          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658",
+          "label": "OOPBuyn ensikertalaisen osto-ohje"
         },
         {
-          "label": "OOPBuyn toimituslaskuri",
-          "url": "https://oopbuy.com/estimation"
+          "url": "https://oopbuy.com/estimation",
+          "label": "OOPBuyn toimituslaskuri"
         },
         {
-          "label": "OOPBuyn aloittelijan opas",
-          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
         },
         {
-          "label": "OOPBuyn toimitustiedote",
-          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977",
+          "label": "OOPBuyn toimitustiedote"
         },
         {
-          "label": "OOPBuyn pakkausohje",
-          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866",
+          "label": "OOPBuyn pakkausohje"
         },
         {
-          "label": "OOPBuyn ostorajoitukset",
-          "url": "https://oopbuy.com/notice/details?id=1772882548114391041"
+          "url": "https://oopbuy.com/notice/details?id=1772880724846247937",
+          "label": "OOPBuyn ostosäännöt"
         },
         {
-          "label": "OOPBuyn koepakkausohje",
-          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377",
+          "label": "OOPBuyn koepakkausohje"
         }
       ],
       "related": [
-        "oopbuy-price-check",
-        "oopbuy-haul-packing",
-        "oopbuy-tracking-guide"
-      ]
+        "oopbuy-shipping-germany",
+        "oopbuy-shipping-usa",
+        "oopbuy-shipping-restrictions"
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-sizing-guide",
@@ -734,27 +1020,30 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn käyttäjäsopimus",
-          "url": "https://oopbuy.com/notice/details?id=1772892211576897537"
+          "url": "https://oopbuy.com/notice/details?id=1772892211576897537",
+          "label": "OOPBuyn käyttäjäsopimus"
         },
         {
-          "label": "OOPBuyn tarkastusohje",
-          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738",
+          "label": "OOPBuyn tarkastusohje"
         },
         {
-          "label": "OOPBuyn mukautetut logistiikkapalvelut",
-          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010",
+          "label": "OOPBuyn mukautetut logistiikkapalvelut"
         },
         {
-          "label": "OOPBuyn palautukset ja hyvitykset",
-          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801",
+          "label": "OOPBuyn palautukset ja hyvitykset"
         }
       ],
       "related": [
         "oopbuy-qc-photos",
         "oopbuy-returns-refunds",
         "oopbuy-spreadsheet-guide"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-product-links",
@@ -813,33 +1102,36 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn aloittelijan opas",
-          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
         },
         {
-          "label": "OOPBuyn ensikertalaisen osto-ohje",
-          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658",
+          "label": "OOPBuyn ensikertalaisen osto-ohje"
         },
         {
-          "label": "OOPBuyn virallinen verkkosivusto",
-          "url": "https://oopbuy.com/"
+          "url": "https://oopbuy.com/",
+          "label": "OOPBuyn virallinen verkkosivusto"
         },
         {
-          "label": "OOPBuy-kirjautuminen",
-          "url": "https://oopbuy.com/login"
+          "url": "https://oopbuy.com/login",
+          "label": "OOPBuy-kirjautuminen"
         }
       ],
       "related": [
         "oopbuy-spreadsheet-guide",
         "oopbuy-price-check",
         "oopbuy-sizing-guide"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-price-check",
       "tag": "Budjetointi",
-      "title": "OOPBuy-hintatarkistus: laske kustannukset ennen ostoa",
-      "description": "Tarkista OOPBuy-tuotehinta ja tarkka vaihtoehto sekä laadi realistinen budjetti sisäiselle ja kansainväliselle toimitukselle ja muille kuluille.",
+      "title": "OOPBuyn maksut ja kokonaiskulut: tuotehinta, toimitus ja valuutanvaihto",
+      "description": "Laske OOPBuyn kokonaishinta tuotteesta, kotimaan toimituksesta, kansainvälisestä kuljetuksesta, palveluista ja valuuttakuluista. Erota arviot maksetuista summista.",
       "primaryKeyword": "OOPBuy-hintatarkistus",
       "secondaryKeywords": [
         "OOPBuy-kokonaiskustannus",
@@ -865,8 +1157,8 @@
           "text": "OOPBuyn ensikertalaisohje erottaa tuotteiden ja sisäisen rahdin maksun myöhemmästä kansainvälisestä rahdista. Tee sama laskelmassasi. Anna tavaralle, myyjästä varastoon toimitukselle, kansainväliselle kuljetukselle ja lisäpalveluille omat rivit. Lisää maksu- ja valuuttakulut vain, kun todellinen maksunäkymä tai palveluntarjoaja näyttää ne. Pidä kohdemaan verot ja käsittelykulut erillään luotettavan kohde- ja palvelutiedon saamiseen asti.\n\nMerkitse kukin rivi vahvistetuksi, arvioiduksi tai tuntemattomaksi. Se on hyödyllisempää kuin kaikkien lukujen esittäminen yhtä varmoina. Vahvistettu tavarasumma voi olla arvioidun rahdin rinnalla, kun palvelumaksu odottaa nykyistä tarjousta.\n\nUsean tuotteen ostossa seuraa sekä tuote- että pakettitason kuluja. Tavaran hinta kuuluu tuotteelle, yhteinen pakkauspalvelu voi kuulua paketille. Jos jaat yhteiskulut tuotteille, nimeä se omaksi budjetointitavaksesi. Se ei välttämättä ole OOPBuyn tai kuljetusyhtiön laskutustapa."
         },
         {
-          "title": "Pidä valuutanvaihto ja maksukulut näkyvillä",
-          "text": "Muunnettu dollarinäyttö helpottaa vertailua, mutta ei takaa maksutavan lopullista veloitusta. Katso todellisen vahvistusnäkymän valuuttaa ja maksettavaa summaa. Jos maksupalvelu tarjoaa muunnoksen, vertaa sitä kirjattuun budjettiin äläkä oleta luettelon vaihtolaskelman säilyvän.\n\nKäytä laskelmassa yhtä työvaluuttaa ja kirjaa muut summat muunnostapoineen. Pidä esimerkiksi alkuperäinen myyjän hinta yhdessä kentässä ja arvioitu dollarisumma toisessa. Näin alkuperäinen viite säilyy myöhempää laskentaa varten.\n\nÄlä lisää keksittyä yleistä OOPBuy-vaihtomaksua tai maksuprosenttia. Kulut voivat riippua nykyisestä maksureitistä ja tilin vaihtoehdoista. Hyödyllinen tarkistus on konkreettinen: mitä summa on, missä valuutassa ja mitä lisämaksua palveluntarjoaja todella ilmoittaa?"
+          "title": "Maksukulut ja valuutanvaihto: vältä perusteetonta kiinteää kurssia",
+          "text": "Pidä tuotteen valuutta, maksuvaluutta ja toimitustarjouksen valuutta näkyvissä kulukirjanpidossasi. USD-valuutaksi muunnettu hakemistohinta helpottaa selaamista, mutta ei vahvista maksupalvelusi veloittamaa summaa tai OOPBuyhin hyvitettyä saldoa. Kirjaa toteutuneet summat erikseen, kun vahvistusnäkymä näyttää ne, äläkä yhdistä eri valuuttojen lukuja kirjaamatta käytettyä muunnosta.\n\nVirallisessa saldon latausilmoituksessa ja latauksen usein kysytyissä kysymyksissä näkyi tätä päivitystä tarkistettaessa erilaiset PayPal-prosenttimaksut. Kummassakaan ei ollut selkeää voimaantulopäivää. Kummankaan prosentin julkaiseminen yleisenä nykyisenä kuluna olisi siis harhaanjohtavaa. Tarkista oman tapahtumasi kulu, valuuttalaskenta ja lopullinen maksettava summa sekä huomioi todellisuudessa ilmoitetut maksupalvelun tai kortinmyöntäjän lisämaksut.\n\nOnnistunut saldon lataus, maksettu tuotetilaus ja maksettu kansainvälinen paketti ovat erillisiä tapahtumia. Täsmäytä ne ennen kuin oletat kaikkien vaiheiden olevan rahoitettuja. Jos raha veloitettiin mutta saldo ei näy, säilytä kuitti ja pyydä virallista tukea jäljittämään olemassa oleva tapahtuma ennen sen toistamista. Maksutapaopas kertoo, mitä tietoja vertailla ja mikä auttaa tukea selvityksessä."
         },
         {
           "title": "Arvioi toimitus realistiselle paketille",
@@ -891,23 +1183,30 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn toimituslaskuri",
-          "url": "https://oopbuy.com/estimation"
+          "url": "https://oopbuy.com/estimation",
+          "label": "OOPBuyn toimituslaskuri"
         },
         {
-          "label": "OOPBuyn aloittelijan opas",
-          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
         },
         {
-          "label": "OOPBuyn ensikertalaisen osto-ohje",
-          "url": "https://oopbuy.com/notice/details?id=1775413984553926658"
+          "url": "https://oopbuy.com/notice/details?id=1775413984553926658",
+          "label": "OOPBuyn ensikertalaisen osto-ohje"
+        },
+        {
+          "url": "https://oopbuy.com/notice/details?id=1775419828091813890",
+          "label": "OOPBuyn saldon latauksen usein kysytyt kysymykset"
         }
       ],
       "related": [
+        "oopbuy-payment-methods",
         "oopbuy-shipping-guide",
-        "oopbuy-warehouse-guide",
-        "oopbuy-spreadsheet-guide"
-      ]
+        "oopbuy-returns-refunds"
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-warehouse-guide",
@@ -965,27 +1264,30 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn varastointikäytäntö",
-          "url": "https://oopbuy.com/notice/details?id=1740664252140720130"
+          "url": "https://oopbuy.com/notice/details?id=1740664252140720130",
+          "label": "OOPBuyn varastointikäytäntö"
         },
         {
-          "label": "OOPBuyn tarkastusohje",
-          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738",
+          "label": "OOPBuyn tarkastusohje"
         },
         {
-          "label": "OOPBuyn palautukset ja hyvitykset",
-          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801",
+          "label": "OOPBuyn palautukset ja hyvitykset"
         },
         {
-          "label": "OOPBuyn mukautetut logistiikkapalvelut",
-          "url": "https://oopbuy.com/notice/details?id=2062456211424555010"
+          "url": "https://oopbuy.com/notice/details?id=2062456211424555010",
+          "label": "OOPBuyn mukautetut logistiikkapalvelut"
         }
       ],
       "related": [
         "oopbuy-qc-photos",
         "oopbuy-returns-refunds",
         "oopbuy-haul-packing"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-returns-refunds",
@@ -1043,29 +1345,32 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn palautukset ja hyvitykset",
-          "url": "https://oopbuy.com/notice/details?id=1740656181012172801"
+          "url": "https://oopbuy.com/notice/details?id=1740656181012172801",
+          "label": "OOPBuyn palautukset ja hyvitykset"
         },
         {
-          "label": "OOPBuyn tilaus- ja pakettitilojen opas",
-          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393",
+          "label": "OOPBuyn tilaus- ja pakettitilojen opas"
         },
         {
-          "label": "OOPBuyn ohje ongelmiin vastaanoton jälkeen",
-          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322",
+          "label": "OOPBuyn ohje ongelmiin vastaanoton jälkeen"
         }
       ],
       "related": [
         "oopbuy-warehouse-guide",
         "oopbuy-qc-photos",
         "oopbuy-price-check"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     },
     {
       "slug": "oopbuy-tracking-guide",
       "tag": "Toimituksen seuranta",
-      "title": "OOPBuy-seurantaopas: tulkitse tilauksen ja paketin päivitykset oikein",
-      "description": "Ymmärrä OOPBuy-seuranta, erota myyjän toimitus kansainvälisestä kuljetuksesta ja kerää oikea näyttö paketin tarvitessa selvitystä.",
+      "title": "Eikö OOPBuy-seuranta päivity? Tilausten ja pakettien tilaopas",
+      "description": "Ymmärrä OOPBuy-seurantatilat, erota myyjän toimitus kansainvälisestä kuljetuksesta ja kerää oikeat tiedot päivitysten pysähtyessä.",
       "primaryKeyword": "OOPBuy-seurantaopas",
       "secondaryKeywords": [
         "OOPBuy-seuranta",
@@ -1095,8 +1400,8 @@
           "text": "Kansainvälisen paketin lähetyspyynnön jälkeen varastolla voi olla useita tehtäviä ennen kuljetusta. Maksu, tarkistus, lajittelu, pakkaus ja nouto eivät ole sama tapahtuma. Virallinen opas erottaa valmiin pakkauksen noudosta, mikä selittää valmistelutiedon ennen kuljetusskannausta.\n\nLue viimeisin tapahtuma aikaleimoineen. Seurantaviite ei yksin osoita ajoneuvon tai lentokoneen lähteneen. Käytä täsmällistä tapahtumatekstiä näyttönä tunnetusta äläkä täytä puutetta arvauksella sijainnista.\n\nJos tili näyttää maksu- tai osoiteongelman, ratkaise se ensin virallisessa kanavassa. Jos valmistelu on valmis mutta nouto epäselvä, kysy luovutuksen tapahtumisesta. Siihen voi vastata paremmin kuin yleiseen myöhästymiskysymykseen ilman vaiheen tunnistamista."
         },
         {
-          "title": "Tulkitse seurantatauko keksimättä aikataulua",
-          "text": "Kuljetuspäivitykset kirjaavat tapahtumia, eivät jatkuvaa sijaintia. Tauko uusissa skannauksissa ei kerro tarkasti paketin paikkaa tai syytä päivityksen puuttumiseen. Vertaa viimeistä vahvistettua tapahtumaa oman palvelusi tietoihin ennen johtopäätöstä.\n\nEi ole yhtä luotettavaa päivämäärää, jonka jälkeen jokainen OOPBuy-paketti olisi myöhässä. Lähtökäsittely, kuljetusvaihtoehto, kohdekäsittely, juhlapäivät ja paikallinen jakelu vaihtelevat. Käytä lähetyksen nykyistä arviota ja ehtoja, mutta muista arvion ero taattuun saapumispäivään.\n\nPidä lyhyt aikajana usean sivun jatkuvan päivittämisen sijaan. Kirjaa lähetys, viimeisin kuljetustapahtuma, tarkistuspäivä ja reitille olennaiset palvelutiedotteet. Jos tauko ylittää ohjeen tai luvattu seuranta jää tulematta, sinulla on tosiasiat täsmälliseen tukipyyntöön."
+          "title": "Seuranta ei päivity: tunnista viimeinen vahvistettu vaihe",
+          "text": "Avaa kyseinen tietue ja kirjaa sen viimeinen tapahtuma sekä päivämäärä. Jos katsot tuotetilausta, lähetys voi vielä kulkea myyjältä Kiinan varastoon. Jos katsot kansainvälistä pakettia, tarkista, vahvistaako tieto kuljetusyhtiön noudon vai ainoastaan paketin valmistelun. Luotu osoitelappu ja noudettu paketti ovat eri etappeja; kumpaakaan ei pidä päätellä erillisen tilauksen tilasta.\n\nVertaa virallisia rahtikirjatietoja kyseiseen pakettiin linkitettyihin kuljetusyhtiön tietoihin. Tarkista, että viite kuuluu kansainväliseen matkaan eikä myyjän kotimaan toimitukseen. Lue valitun reitin nykyinen aikataulu ja työpäivämääritelmä, mutta älä keksi yleistä päivämäärärajaa, jonka jälkeen jokainen paketti olisi kadonnut. Hiljainen seurantajakso tarvitsee todellisen reitin ja viimeisen vahvistetun tapahtuman taustatiedot.\n\nLähetä selvittämättömästä katkosta tuelle pakettiviite, viimeinen näkyvä tapahtuma, sen päivämäärä, valittu reitti ja tila, jota odotit. Kysy, koskeeko asia noutoa, kuljetusta, luovutusta seuraavalle toimijalle vai kohdemaan toimitusta. Säilytä vastaus seurantahistorian kanssa. Jos pyydetään asiakirjoja tai osoiteselvennystä, varmista pyyntö virallisia kanavia pitkin ja vastaa tarkasti sen sijaan, että yrittäisit pakottaa uuden seurantaskannauksen."
         },
         {
           "title": "Vastaa tulli- ja asiakirjapyyntöihin huolellisesti",
@@ -1117,27 +1422,30 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn tilaus- ja pakettitilojen opas",
-          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393",
+          "label": "OOPBuyn tilaus- ja pakettitilojen opas"
         },
         {
-          "label": "OOPBuyn aloittelijan opas",
-          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
         },
         {
-          "label": "OOPBuyn toimitustiedote",
-          "url": "https://oopbuy.com/notice/details?id=1772881180494462977"
+          "url": "https://oopbuy.com/notice/details?id=1772881180494462977",
+          "label": "OOPBuyn toimitustiedote"
         },
         {
-          "label": "OOPBuyn ohje ongelmiin vastaanoton jälkeen",
-          "url": "https://oopbuy.com/notice/details?id=1772884100300472322"
+          "url": "https://oopbuy.com/notice/details?id=1772884100300472322",
+          "label": "OOPBuyn ohje ongelmiin vastaanoton jälkeen"
         }
       ],
       "related": [
         "oopbuy-shipping-guide",
         "oopbuy-warehouse-guide",
         "oopbuy-haul-packing"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-23"
     },
     {
       "slug": "oopbuy-haul-packing",
@@ -1195,27 +1503,30 @@
       ],
       "sources": [
         {
-          "label": "OOPBuyn pakkausohje",
-          "url": "https://oopbuy.com/notice/details?id=1740661986205732866"
+          "url": "https://oopbuy.com/notice/details?id=1740661986205732866",
+          "label": "OOPBuyn pakkausohje"
         },
         {
-          "label": "OOPBuyn koepakkausohje",
-          "url": "https://oopbuy.com/notice/details?id=1958798026895589377"
+          "url": "https://oopbuy.com/notice/details?id=1958798026895589377",
+          "label": "OOPBuyn koepakkausohje"
         },
         {
-          "label": "OOPBuyn erillislähetysohje",
-          "url": "https://oopbuy.com/notice/details?id=1775425543221084162"
+          "url": "https://oopbuy.com/notice/details?id=1775425543221084162",
+          "label": "OOPBuyn erillislähetysohje"
         },
         {
-          "label": "OOPBuyn aloittelijan opas",
-          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985",
+          "label": "OOPBuyn aloittelijan opas"
         }
       ],
       "related": [
         "oopbuy-shipping-guide",
         "oopbuy-tracking-guide",
         "oopbuy-returns-refunds"
-      ]
+      ],
+      "format": "long",
+      "published": "2026-10-21",
+      "modified": "2026-10-21"
     }
   ],
   "guides": {

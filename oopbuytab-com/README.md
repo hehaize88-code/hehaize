@@ -1,56 +1,41 @@
 # OOPBuy Tab
 
-Astro 7.4.1 source for **oopbuytab.com**. Current public review site:
-https://hehaize88-code.github.io/hehaize/oopbuytab-com/
+Source for https://oopbuytab.com, in `hehaize88-code/hehaize/main/oopbuytab-com/`.
 
-## Repository and hosting
+## Production
 
-The dedicated source folder is `oopbuytab-com/` in `hehaize88-code/hehaize`, branch `oopbuytab-preview`. GitHub Pages publishes `/docs`; generated pages live in `docs/oopbuytab-com/`. Other platform folders and `main` remain unchanged. The purchased domain is not bound. Preview pages remain noindex/nofollow, with robots Disallow.
+The existing Cloudflare Workers Builds integration watches `oopbuytab-com/**` on `main`. Its root is `oopbuytab-com`, build command is `npm run build:production`, deploy command is `npx wrangler deploy`, and Node version is 22.22.0. The Worker is `oopbuytab-com` and serves the apex and `www`; the latter redirects to the apex while preserving path and query.
 
-## CNBuyCha is the only product source
+Keep the existing npm 10-compatible lockfile. No new database, runtime secrets or DNS changes are required for an editorial update. Do not confuse the separate `oopbuytab-preview` GitHub Pages branch with production.
 
-The SSR adapter reads https://cnbuycha.com at request time. For the GitHub Pages review, the build reads the same source and renders static HTML: full catalog pagination, categories, new/popular/price ordering, and shared 20-item HTML fragments. There is no product database, product JSON index, or admin interface. Images use exact source-returned CNBuyCha/Weidian CDN URLs. No invented product images or records are used.
+## Data and localization
 
-Static preview search opens the live CNBuyCha search, and unexported product details open the source. The sample detail `/products/shoes/3470.html` is included in every locale. Source catalog ID 3470 and seller item ID 7876894732 are distinct.
+CNBuyCha is the only product-data source. The runtime adapter reads the public catalog and detail pages. Images retain the exact source-returned URLs; prices are displayed in USD. The URL-only product-sitemap manifest is crawl-discovery metadata, not a product database or content snapshot. Product titles, prices and photos are not copied into it.
 
-Product photos are not verified order QC. Image search has no verified source endpoint and is explicitly unavailable.
+Twenty-four locales share stable paths: English is at the root, and other locales use `/<locale>/`. Locale switching retains the route and valid listing parameters. Every locale contains 28 sourced FAQs, 14 complete articles, 3 guide overviews and 11 category introductions. The existing 10 long-form guides are preserved; four focused guides cover payment, Germany, the USA and restricted goods. All changes must pass locale, paragraph, numeric and reference parity checks before publication.
 
-## Branding and links
+Article pages include summaries, contents, contextual reading links and catalog actions. The mobile view preserves all paragraphs with expandable sections. The homepage shows four recent article cards.
 
-- Official OOPBuy logo and favicon are used unmodified.
-- Registration: https://oopbuy.com/login
-- Weidian purchase pattern: `https://oopbuy.com/product/weidian/{sellerItemId}?inviteCode=U68CWQBN5`
-- The seller item ID is read from the original seller URL, never inferred from the catalog ID.
-
-## Editorial and localization
-
-24 locales share stable paths; English is at root. Language switching preserves the current route and valid page/sort parameters. Each locale has 28 sourced FAQs, 10 complete long-form articles, 3 focused guide overviews and 11 category introductions. Policy facts derive from official OOPBuy help; keyword intent and competing pages are documented in `docs/KEYWORD_RESEARCH.md` and `docs/OFFICIAL_SOURCES.md`. No unverified search volume or service guarantee is claimed.
-
-Mobile layouts preserve the full content using expandable article sections, a compact contents list and FAQ search.
-
-## Build
-
-Use Node 24 (catalog builder imports TypeScript using Node type stripping).
+## Build and validation
 
 ```sh
 npm ci
-npm run dev
-npm run check:content
-npm run preview:pages
+npm run build:production
+npm run check:release
 ```
 
-`preview:pages` validates all language content, fetches the catalog, builds Astro, exports the Pages output and checks all rendered routes and catalog pages. The catalog must be regenerated when updating source listings. The visible review notice shows its actual build date. No automatic refresh job is enabled.
+`build:production` validates content and analytics events, builds Astro, packages a single Worker at `dist/cloudflare/worker.js`, then runs `check:release`. That final check renders all localized articles and indexes, checks canonical/hreflang/schema and paragraph coverage, parses every sitemap, and verifies redirects and missing routes.
 
-For a layout-only rebuild after a successful, current catalog fetch:
+For local preview, `npm run dev` serves a noindex development build. Legacy static Pages export scripts remain available for the existing review workflow; they are not the production publishing path.
 
-```sh
-npm run build
-node scripts/export-pages-preview.mjs
-npm run check:preview
-```
+## Sitemaps and analytics
 
-`PREVIEW_LOCALES=en` limits a local QA export; omit it for publication. All 24 locales are required before publishing.
+- https://oopbuytab.com/sitemap.xml — index
+- https://oopbuytab.com/sitemap-pages.xml — core and article pages
+- https://oopbuytab.com/sitemap-products/en.xml — English product URLs; other locales use their language code
 
-The custom Astro adapter still emits a Worker default fetch export at `dist/server/index.js`, with assets in `dist/client`. No runtime secrets or database bindings are needed. Production host and domain activation will follow the user's review; Cloudflare is not part of this preview workflow.
+The sitemap endpoints do not call the source site at request time. Refresh the URL manifest deliberately with `node scripts/refresh-product-sitemap.mjs`, review its diff, verify product samples and rebuild.
 
-See `PROJECT_MEMORY.md` for decisions, constraints, and deployment evidence.
+Production uses the existing GA4 measurement ID `G-CC6HPXJJN7`. Custom events measure product/registration/estimator clicks, article navigation and searches. They do not report purchases. `catalog_search` reports only query length in its custom parameters. Preview builds do not load the analytics scripts.
+
+Research and release rationale: `docs/SEO_RELEASE_2026-10-23.md`. Deployment records: `docs/PRODUCTION_DEPLOYMENT.md` and `PROJECT_MEMORY.md`.

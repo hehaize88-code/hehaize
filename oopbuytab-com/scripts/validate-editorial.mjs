@@ -4,10 +4,12 @@ const directory='src/content/editorial';
 const files=(await fs.readdir(directory)).filter(file=>file.endsWith('.json'));
 const reference=JSON.parse(await fs.readFile(directory+'/en.json','utf8'));
 const slugs=reference.articles.map(article=>article.slug);
+assert.equal(slugs.length,14,'expected article count');
+assert.equal(new Set(slugs).size,slugs.length,'unique article slugs');
 const words=text=>text.trim().split(/\s+/).length;
 const sources=value=>value.sources.map(source=>source.url).sort();
 function localizedText(value,english,key=''){
- if(['slug','related','url','primaryKeyword','secondaryKeywords'].includes(key))return;
+ if(['slug','related','url','primaryKeyword','secondaryKeywords','format','published','modified'].includes(key))return;
  if(Array.isArray(value)&&Array.isArray(english)){value.forEach((item,i)=>localizedText(item,english[i],key));return;}
  if(value&&english&&typeof value==='object'&&typeof english==='object'){
   for(const name of Object.keys(english))if(name in value)localizedText(value[name],english[name],name);
@@ -33,10 +35,14 @@ for(const file of files){
   }
   content.articles.forEach((article,i)=>{
    const english=reference.articles[i];
-   assert.equal(article.sections.length,9,'sections '+article.slug);
+   assert.equal(article.sections.length,article.format==='focused'?6:9,'sections '+article.slug);
+   assert.equal(article.published,english.published,'published date parity');
+   assert.equal(article.modified,english.modified,'modified date parity');
+   assert(article.modified>=article.published,'date order');
    assert.equal(article.takeaways.length,3,'takeaways');
    assert.deepEqual(sources(article),sources(english),'article sources');
    assert.deepEqual(article.related,english.related,'related slugs');
+   assert(article.related.every(slug=>slugs.includes(slug)&&slug!==article.slug),'valid related routes');
    article.sections.forEach((section,j)=>{
     assert.equal(section.text.split(/\n\s*\n/).length,3,'paragraphs '+article.slug+' #'+j);
     assert(!section.text.includes('\\n'),'literal escaped newline');
@@ -45,7 +51,7 @@ for(const file of files){
     if(file!=='en.json')assert.notEqual(section.text,english.sections[j].text,'untranslated body');
    });
    const body=article.sections.map(s=>s.text).join(' '),englishBody=english.sections.map(s=>s.text).join(' ');
-   if(file==='en.json')assert(words(body)>=1200,'English long-form length');
+   if(file==='en.json')assert(words(body)>=(article.format==='focused'?850:1200),'English long-form length');
    else assert(body.length/englishBody.length>.65,'translation unexpectedly abbreviated '+article.slug);
   });
   assert.deepEqual(Object.keys(content.guides).sort(),['guide','qc','shipping']);
@@ -55,7 +61,7 @@ for(const file of files){
   }
   assert.deepEqual(Object.keys(content.categoryIntros).sort(),Object.keys(reference.categoryIntros).sort(),'categories');
   for(const category of Object.values(content.categoryIntros))assert.equal(category.checks.length,3,'category checks');
-  console.log(file+': 28 FAQ; 10 complete articles; 3 guides; 11 categories');
+  console.log(file+': 28 FAQ; '+content.articles.length+' complete articles; 3 guides; 11 categories');
  }catch(error){failures.push(file+': '+error.message.split('\n')[0]);}
 }
 if(failures.length){console.error(failures.join('\n'));process.exit(1);}

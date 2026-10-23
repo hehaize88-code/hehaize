@@ -43,10 +43,12 @@ const origin=Astro.site!.origin,canonical=origin+route(localPath);
 const nav=[['/',t.home],['/spreadsheet/',t.browse],['/finds/',u.finds],['/guide/',t.guide],['/qc/',u.qc],['/shipping/',u.shipping],['/faq/',t.faq],['/articles/',u.articles]];
 const icons=['shoe','shirt','shirt','jacket','pants','hat','bag','shirt','device','box','shirt'];
 const reading=article;
-const reviewed='2026-10-21';
+const reviewed=article?.modified||'2026-10-21';
+const published=article?.published||reviewed;
 const paragraphs=(text:string)=>text.split(/\n\s*\n/).filter(Boolean);
 const articleRelated=article?(article as any).related?.map((slug:string)=>e.articles.find(a=>a.slug===slug)).filter(Boolean):[];
-const schema={ '@context':'https://schema.org', '@type':article?'Article':isHome?'WebSite':'WebPage',name:pageTitle,url:canonical,inLanguage:lang,description:intro,...(article?{headline:article.title,author:{'@type':'Organization',name:'OOPBuy Tab'},dateModified:reviewed,datePublished:reviewed,mainEntityOfPage:canonical}:{})};
+const schema={ '@context':'https://schema.org', '@type':article?'Article':isHome?'WebSite':'WebPage',name:pageTitle,url:canonical,inLanguage:lang,description:intro,...(article?{headline:article.title,author:{'@type':'Organization',name:'OOPBuy Tab'},dateModified:reviewed,datePublished:published,mainEntityOfPage:canonical}:{})};
+const breadcrumbSchema=article?{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:t.home,item:origin+route('/')},{'@type':'ListItem',position:2,name:u.articles,item:origin+route('/articles/')},{'@type':'ListItem',position:3,name:article.title,item:canonical}]}:null;
 const faqSchema=isFAQ?{'@context':'https://schema.org','@type':'FAQPage',mainEntity:e.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}:null;
 const pagination=[...new Set([1,page-1,page,page+1,pages].filter(n=>n>=1&&n<=pages))].sort((a,b)=>a-b);
 ---
@@ -62,16 +64,18 @@ const pagination=[...new Set([1,page-1,page,page+1,pages].filter(n=>n>=1&&n<=pag
    gtag('config', 'G-CC6HPXJJN7');
   </script>
  </>}
+ {!preview&&<script is:inline src="/analytics-events.js" defer></script>}
  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
- <title>{pageTitle} · OOPBuy Tab</title><meta name="description" content={intro}/><meta name="robots" content={robots}/>
+ <title>{pageTitle}{article?'':' · OOPBuy Tab'}</title><meta name="description" content={intro}/><meta name="robots" content={robots}/>
  <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/>
+ {breadcrumbSchema&&<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema).replace(/</g,'\\u003c')}/>}
  {faqSchema&&<script type="application/ld+json" set:html={JSON.stringify(faqSchema).replace(/</g,'\\u003c')}/>}
  <meta name="theme-color" content="#ff186b"/><link rel="icon" type="image/png" href={FAVICON}/><link rel="canonical" href={canonical}/>
  {languages.map(([code])=><link rel="alternate" hreflang={code} href={origin+localized(code,localPath)}/>)}<link rel="alternate" hreflang="x-default" href={origin+localPath}/>
  <meta property="og:title" content={pageTitle}/><meta property="og:description" content={intro}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/>
  <link rel="preconnect" href="https://cnbuycha.com"/><link rel="preconnect" href="https://si.geilicdn.com"/>
 </head>
-<body>
+<body data-locale={lang} data-article={article?.slug||undefined} data-product={product?.sourceId||undefined}>
 <header class="site-header">
  <div class="topbar wrap">
   <a class="brand" href={route('/')} aria-label="OOPBuy Tab"><img src={LOGO} width="134" height="48" alt="OOPBuy"/><span class="brand-tab">tab<span class="brand-dot">.</span></span></a>
@@ -111,7 +115,7 @@ const pagination=[...new Set([1,page-1,page,page+1,pages].filter(n=>n>=1&&n<=pag
  {isJournal&&<section class="section journal wrap"><div class="article-grid">{e.articles.map((a,i)=><a class="article-card" href={route(`/articles/${a.slug}/`)}><div class="article-art" data-tone={i%4}><span class="article-index">{String(i+1).padStart(2,'0')}</span><Icon name={['grid','camera','box','shirt','external','search','box','check','arrow','bag'][i%10]} size={46}/><span class="article-mark">↗</span></div><span class="eyebrow muted">{a.tag}</span><h2>{a.title}</h2><p>{a.description}</p><span class="text-link">{u.read}<Icon name="arrow" size={16}/></span></a>)}</div></section>}
  {reading&&<>
  <section class="article-summary wrap"><div class="article-meta"><span>{(u as any).lastReviewed}: <time datetime={reviewed}>{new Intl.DateTimeFormat(lang,{dateStyle:'medium'}).format(new Date(reviewed+'T12:00:00Z'))}</time></span><span>{Math.ceil(reading.sections.reduce((n,s)=>n+s.text.split(/\s+/).length,0)/220)} min</span></div><ul>{(reading as any).takeaways?.map((item:string)=><li>{item}</li>)}</ul></section>
- <section class="reading-layout wrap"><aside class="reading-toc"><details open><summary>{(u as any).contents}<Icon name="chevron" size={14}/></summary><nav>{reading.sections.map((section,i)=><a href={`#section-${i}`}>{String(i+1).padStart(2,'0')}<span>{section.title}</span></a>)}</nav></details><a class="text-link" href={route('/spreadsheet/')}>{t.browse}<Icon name="arrow" size={16}/></a></aside><article class="reading-body"><div class="reading-controls"><button type="button" data-expand-reading>{(u as any).expandAll}</button><button type="button" data-collapse-reading>{(u as any).collapseAll}</button></div>{reading.sections.map((section,i)=><details class="reading-section" id={`section-${i}`} open><summary><span class="step-number">{String(i+1).padStart(2,'0')}</span><h2>{section.title}</h2><span class="expand-symbol">+</span></summary><div class="section-prose">{paragraphs(section.text).map(text=><p>{text}</p>)}</div></details>)}<Sources sources={(reading as any).sources} label={(u as any).sources}/><div class="reading-note"><Icon name="check" size={20}/><p>{c.disclosure}</p></div></article></section>
+ <section class="reading-layout wrap"><aside class="reading-toc"><details open><summary>{(u as any).contents}<Icon name="chevron" size={14}/></summary><nav>{reading.sections.map((section,i)=><a href={`#section-${i}`}>{String(i+1).padStart(2,'0')}<span>{section.title}</span></a>)}</nav></details><a class="text-link" href={route('/spreadsheet/')}>{t.browse}<Icon name="arrow" size={16}/></a></aside><article class="reading-body"><div class="reading-controls"><button type="button" data-expand-reading>{(u as any).expandAll}</button><button type="button" data-collapse-reading>{(u as any).collapseAll}</button></div>{reading.sections.map((section,i)=><details class="reading-section" id={`section-${i}`} open><summary><span class="step-number">{String(i+1).padStart(2,'0')}</span><h2>{section.title}</h2><span class="expand-symbol">+</span></summary><div class="section-prose">{paragraphs(section.text).map(text=><p>{text}</p>)}{i%3===1&&articleRelated?.[Math.floor(i/3)]&&<a class="section-next text-link" href={route(`/articles/${articleRelated[Math.floor(i/3)].slug}/`)}>{articleRelated[Math.floor(i/3)].title}<Icon name="arrow" size={16}/></a>}</div></details>)}<nav class="article-actions" aria-label={u.related}><a class="button primary" href={route('/spreadsheet/')} data-article-action="catalog">{u.browseAll}<Icon name="arrow" size={16}/></a><a class="button outline" href="https://oopbuy.com/estimation" target="_blank" rel="noopener noreferrer" data-article-action="estimator">{u.shippingEstimator}<Icon name="external" size={16}/></a></nav><Sources sources={(reading as any).sources} label={(u as any).sources}/><div class="reading-note"><Icon name="check" size={20}/><p>{c.disclosure}</p></div></article></section>
  {articleRelated?.length>0&&<section class="article-related wrap"><h2>{u.related}</h2><div>{articleRelated.map((item:any)=><a href={route(`/articles/${item.slug}/`)}>{item.title}<Icon name="arrow" size={16}/></a>)}</div></section>}
  </>}
 
