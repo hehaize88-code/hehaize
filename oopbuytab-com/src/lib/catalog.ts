@@ -22,7 +22,15 @@ function imageURL(raw: string) {
 export async function source(path: string) {
   const url = new URL(path, ORIGIN);
   if (url.origin !== ORIGIN) throw new Error('Invalid catalog origin');
-  const response = await fetch(url, { signal: AbortSignal.timeout(15000), headers: { Accept: 'text/html', 'User-Agent': 'Mozilla/5.0 (compatible; OOPBuyTab/1.0; +https://oopbuytab.com)' } });
+  // Anonymous public source HTML is shared across locale pages at the edge.
+  // Keep search requests and source errors out of this short-lived cache.
+  const ttl=url.searchParams.has('q')?-1:(/^\/[a-z-]+\/\d+\.html$/.test(url.pathname)?300:60);
+  const options:RequestInit & {cf:{cacheTtlByStatus:Record<string,number>}}={
+    signal:AbortSignal.timeout(15000),
+    headers:{Accept:'text/html','User-Agent':'Mozilla/5.0 (compatible; OOPBuyTab/1.0; +https://oopbuytab.com)'},
+    cf:{cacheTtlByStatus:{'200':ttl,'201-599':-1}}
+  };
+  const response = await fetch(url,options);
   if (!response.ok) throw new Error(`Catalog HTTP ${response.status}`);
   const html = await response.text();
   if (html.length > 2500000) throw new Error('Catalog response too large');

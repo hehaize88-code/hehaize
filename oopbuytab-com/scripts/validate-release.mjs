@@ -52,4 +52,11 @@ const missing=await get('/sitemap-products/zz.xml');assert.equal(missing.r.statu
 const unknown=await get('/articles/does-not-exist/');assert.equal(unknown.r.status,404);assert(unknown.r.headers.get('x-robots-tag').includes('noindex'));
 const analytics=await get('/analytics-events.js');assert.equal(analytics.r.status,200);assert(analytics.text.includes('article_catalog_click'));
 const redirect=await worker.fetch(new Request('https://www.oopbuytab.com/de/articles/oopbuy-payment-methods/'),{},{});assert.equal(redirect.status,301);assert.equal(redirect.headers.get('location'),origin+'/de/articles/oopbuy-payment-methods/');
+// A temporary product-source outage must not remove the static homepage from search.
+const realFetch=globalThis.fetch,realError=console.error;
+try{
+ globalThis.fetch=async()=>new Response('Source unavailable',{status:503});console.error=()=>{};
+ const fallback=await get('/');assert.equal(fallback.r.status,200);assert(fallback.r.headers.get('x-robots-tag').startsWith('index,follow'));assert.equal(parseHTML(fallback.text).document.querySelectorAll('.article-card').length,4);
+ const unavailable=await get('/spreadsheet/');assert.equal(unavailable.r.status,503);assert(unavailable.r.headers.get('x-robots-tag').includes('noindex'));
+}finally{globalThis.fetch=realFetch;console.error=realError;}
 console.log(JSON.stringify({articles:articleCount,articleIndexes:langs.length,coreSitemapURLs:coreCount,productSitemapURLs:productCount,sitemaps:maps.length,status:'passed'}));

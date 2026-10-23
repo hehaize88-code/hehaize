@@ -40,6 +40,8 @@ Human source links are included with each localized article. Primary entry point
 - Product sitemap: 24 language files, each 3456 paths, discovered from all 58 CNBuyCha catalog pages. Entries require a valid known category path, title, source image and numeric price. This is a URL-only discovery manifest, not a product database; catalog content and images remain live source reads.
 - Root sitemap includes the core map and all product maps. Product maps omit invented modification dates. HTML pages supply their language alternates.
 - `scripts/refresh-product-sitemap.mjs` refreshes the URL-only manifest deliberately, with low concurrency and completeness checks; production builds do not depend on crawling the source.
+- Anonymous source HTML requests use short edge-cache TTLs (product details 300 seconds, other public catalog pages 60 seconds). Search requests and non-200 responses are excluded. This reduces repeated source fetches across locale variants; actual edge hit rates are not claimed from local tests. API semantics: https://developers.cloudflare.com/workers/runtime-apis/request/#the-cf-property-requestinitcfproperties.
+- A temporary source failure preserves the complete editorial homepage as indexable; unavailable catalog/detail responses remain 503/noindex. The release gate simulates this distinction.
 - Sitemap inclusion does not guarantee crawl or indexing. Failed live-source pages remain noindex, and source availability still affects product pages.
 - Eleven live product-detail samples, one per category, returned 200 with a self-canonical, main image and source-derived purchase link. This is sampling, not a claim that every product was individually revalidated.
 
