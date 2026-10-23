@@ -1,7 +1,7 @@
 # CNBuyCha 子站项目记忆：LoveGoBuy
 
 更新时间：2026-10-22（Asia/Shanghai）
-阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式站已部署至 GitHub main 与 Cloudflare Worker，lovegobuytab.com 和 www 已绑定；正式域名首页、搜索、详情、FAQ、文章列表与 robots/sitemap 已实测。Google Analytics 4 已接入并收到实时访问事件，Google Search Console 已成功处理全部 60 个子地图、发现 83,544 个网址；当前状态以第 22 节为准。
+阶段：lovegobuytab.com 已购买；原 chatgpt.site 预览被平台安全层拦截。现已迁移至 Cloudflare 临时 Worker，公开浏览器验证首页、商品搜索、详情、图片、FAQ 和文章列表正常。正式站已部署至 GitHub main 与 Cloudflare Worker，lovegobuytab.com 和 www 已绑定；正式域名首页、搜索、详情、FAQ、文章列表与 robots/sitemap 已实测。Google Analytics 4 已接入并收到实时访问事件，Google Search Console 已成功处理全部 60 个子地图、发现 83,544 个网址；2026-10-23 已完成全 24 语言 SEO 内容改进与部署；当前状态以第 23 节为准。
 本文件是本项目的持续交接记录。后续每次执行先读当前版本，再追加真实进展，不把提案写成已完成事实。
 
 ## 1. 用户已确定的要求
@@ -553,3 +553,21 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - 保留提交入口 https://lovegobuytab.com/sitemap.xml；已发现网址包括 24 语言版本，不代表独立商品数量，也不等于已被 Google 索引。
 - 此轮仅更新项目记忆；应用部署保持 GA4 已验证版本，不触发不必要的发布。
 - Google 官方说明：https://support.google.com/webmasters/answer/7451001?hl=en；“Discovered pages”表示已从地图解析的网址，并不保证抓取或索引。
+
+
+## 23. 全语言 SEO 内容改进并部署（2026-10-23）
+
+- 用户明确要求结合 GSC、Bing、GA4 与竞争对手调研改进网站、改善文章、增加优先主题，并部署全部语言。
+- 调研限制：GSC 成效仍在处理；站点地图发现数不等于索引数。GA4 2026-09-25 至 10-22 仅 8 用户、8 Direct 会话、9 浏览、29 事件。Bing 停在登录页，未取得其关键词数据。优先级依据已观察的搜索意图与内容缺口，未虚构搜索量或 CTR 提升。
+- 24 个语言文件均为完整正文：en、de、es、fr、it、pl、pt、ro、sv、nl、da、fi、el、cs、hu、bg、sk、hr、sl、lt、lv、et、ga、mt。
+- 新增物流追踪、运输时效、官方平台图片搜索三篇指南，英文各约 1,300 字；全部语言同步，共新增 72 个文章页面，现有总数 13 × 24 = 312。
+- 六篇已有指南加入实用检查表与示例：spreadsheet、Weidian 下单、QC、总费用、运费预估、链接排错；共更新 144 个原文章页面。运费/价格示例明确为假设，不保证当前价格或运输时效。其余四篇保留原正文并改善相关导航。
+- 全语言改进首页/文章元信息、首页最新文章、按主题相关链接、商品及目录的阅读入口、移动端正文/表格、文章日期与 sitemap lastmod。英文 title 不再重复追加品牌。
+- GA4 继续使用 G-W9KK0L385M，增加 article_open、product_open、catalog_search、language_change、purchase_link_click、signup_click。搜索事件仅附带长度；不新增 page_view。购买链接点击不等于订单成交。只在实际正式主机输出代码，预览主机仍不收集。
+- 首次应用提交 a11b0bf5cc051d42e1e1bdd9e1bb922598457646：内容构建通过，但 Cloudflare 构建 45ca1b6c-48b0-4397-b0d1-ef56da896a14 的新静态资源上传返回 401。旧线上版本保持可用。
+- 修复提交 6d8511c2848b21f8e4858581667c5fae3fb614e1：把小型交互脚本嵌入现有生产页面构建，避免新增独立静态资源请求和上传；保留原有权限、域名、来源、GA4 标签与既有静态图片。Cloudflare 连接已过期，日志通过现有已登录浏览器读取；未新建或扩大令牌权限。
+- 正式构建 7fb7b60d-3bf2-4752-ab89-41d6d107a0ae 成功；Worker 版本 b6ada243-c760-42d4-a1cf-1bb5ddc88ab0。生产入口 https://lovegobuytab.com/ 。GitHub main 自动部署链路保持原配置。
+- 本地验收：完整生产构建；24 语言、312 文章、864 FAQ 内容门禁；逐一请求 312 个文章页面，核对正文、216 张本地化表格、24 个文章目录、canonical、25 个 hreflang、日期、相关链接、404/www/预览边界；408 个编辑页地图 URL；六个交互事件及无重复浏览事件检查全部通过。
+- 正式浏览器验收：文章目录 13 篇且新三篇优先；英文新追踪正文完整；语言菜单切换德语后仍在同一文章，canonical 与 25 个 alternates 正确；马耳他语图片搜索文章与表格正常。390px 外部视口下正文 15px，页面 clientWidth/scrollWidth 都为 375px，表格右边界 357px，目录刷新后默认折叠并可展开。临时视口已重置。
+- 正式 pages.xml 已输出 408 个 URL，追踪文章 24 个语言版本，日期字段正常。未把发布或站点地图可访问描述为 Google 已收录，也未伪造 GA4 事件收集请求；新自定义事件的报告接收量尚未单独核验。
+- 截图：docs/screenshots/seo-release-2026-10-23.png。商品仍仅来自 CNBuyCha；没有新数据库、独立库存、未验证搜图接口或伪造 QC。

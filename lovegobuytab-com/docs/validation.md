@@ -53,3 +53,26 @@ The execution environment's direct HTTP check returned 403, so it was stopped. B
 - Live first product sitemap contains 1,440 URLs. Live www → apex redirect preserves /de/faq/?q=test; German FAQ renders 36 entries.
 
 - End-to-end GitHub auto-deploy verified: commit b3205df890851a34485f8d619faba487202955c9 triggered build 21047122-962a-4808-99c3-fd49cbdbfa38; Ready in 43 seconds, Worker version 41c2a22b. Homepage reload retains production canonical and indexability.
+
+
+## SEO publication — 2026-10-23
+
+Production source commit: `6d8511c2848b21f8e4858581667c5fae3fb614e1`, following the complete content commit `a11b0bf5cc051d42e1e1bdd9e1bb922598457646`.
+
+Cloudflare build `7fb7b60d-3bf2-4752-ab89-41d6d107a0ae` succeeded. Active Worker version: `b6ada243-c760-42d4-a1cf-1bb5ddc88ab0`. Existing GitHub main/root/watch configuration retained.
+
+The first build passed content and Astro compilation but failed uploading the new interaction-events static asset with 401. The final implementation embeds the same small, tested script in production HTML. It requires no new static upload or credentials and introduces no extra page_view event. Original favicon and logo assets are unchanged.
+
+Validation completed:
+
+- Production build and content gate: 24 locales, 312 complete article pages, 864 FAQ entries, preserved original paragraphs and matching full translation structures.
+- Bundled Worker: all 312 article routes return 200; all expected localized paragraphs, 216 tables, metadata, publication/modification dates and contextual links are present. All 24 indexes have 13 articles, prioritizing the three new guides.
+- Editorial sitemap: 408 unique URLs, including every new locale route; correct stable lastmod dates and hreflang. Preview analytics/noindex boundaries, 404 and www redirects pass.
+- Six interaction events tested; search events carry length only, preview emits none, no duplicate page views. Production event collection volume has not yet been independently confirmed in GA4 reports.
+- Live Chrome: index shows 13 articles and the three new titles; full English tracking article and same-route switch to German work; German has its own canonical and 25 alternates; Maltese image-search page and table render fully.
+- Live mobile check at requested 390 × 844 viewport: Maltese article body is 15px, clientWidth and scrollWidth both 375px, table right edge is 357px, TOC defaults closed after reload and expands on click. Temporary viewport override reset after testing.
+- Live `pages.xml`: 408 URLs and 24 tracking-guide language URLs. Desktop index has no horizontal overflow.
+
+Screenshot: [Published article index](screenshots/seo-release-2026-10-23.png).
+
+These checks establish deployment and rendering, not ranking gains or completed purchases. GSC performance remained in processing at audit time, and Bing query data was unavailable behind sign-in. Keyword priority is qualitative; new-page indexing and click changes require subsequent real search/analytics data.
