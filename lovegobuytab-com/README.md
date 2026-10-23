@@ -4,7 +4,7 @@ Independent LoveGoBuy product directory. Built with Astro 7.4.2 SSR and a standa
 
 ## Development
 
-Node >=22.23.4, `npm ci`, `npm run dev`. `npm run check:content` verifies 24 complete locale resources, 10 full articles per locale, 36 FAQs per locale and matching paragraph/bullet counts. `npm run build` runs this required check, builds Astro, and bundles `dist/server/index.js`. Static assets are in `dist/client/`.
+Node >=22.23.4, `npm ci`, `npm run dev`. `npm run check:content` verifies 24 complete locale resources, 13 full articles per locale, 36 FAQs per locale and matching paragraphs, tables, bullets and related links. `npm run build` runs this required check, builds Astro, and bundles `dist/server/index.js`. Static assets are in `dist/client/`. After building, run `node scripts/check-editorial-routes.mjs` and `node scripts/check-interaction-events.mjs` for complete localized article rendering, sitemap and analytics checks.
 
 ## Data contract
 
@@ -21,7 +21,7 @@ Node >=22.23.4, `npm ci`, `npm run dev`. `npm run check:content` verifies 24 com
 
 `src/content/articles`, `faq`, and `copy` contain full versioned editorial resources. English at `/`; 23 other languages use their locale prefix. Article and product language switching preserves the same path and query. Product identity, images and price are shared across locales. Original seller titles remain unchanged to preserve model names and avoid inventing translated attributes.
 
-The keyword research is qualitative search-intent research; no invented search-volume figures. Platform facts link to official sources, checked 2026-10-22. Practical shopping checklists are independent editorial advice. See `docs/research.md` and `docs/brand-assets.md`.
+The keyword research is qualitative search-intent research; no invented search-volume figures. Platform facts link to official sources, with review dates shown per source. The 2026-10-23 update adds parcel tracking, shipping stages and official-platform image-search guides in all 24 languages, and improves six existing guides with practical tables and examples. Practical shopping checklists are independent editorial advice. See `docs/research.md` and `docs/brand-assets.md`.
 
 ## Routes
 
@@ -29,7 +29,7 @@ The keyword research is qualitative search-intent research; no invented search-v
 - `/spreadsheet/` and `/spreadsheet/{source-category}/`: source-backed catalog
 - `/products/{source-category}/{catalog-id}/`: product details and verified purchase link
 - `/faq/`: searchable 36-question source-linked FAQ
-- `/articles/`: 10-article index
+- `/articles/`: 13-article index
 - `/articles/{slug}/`: complete editorial page with contents and sources
 - `/sitemap.xml`: live index of editorial, category and product sitemaps. Each product shard reads one real CNBuyCha listing page (60 products), then emits 24 locale URLs with hreflang. No product index/database is stored. Upstream failures return 503 rather than an empty success response.
 
@@ -48,6 +48,8 @@ Use Cloudflare Worker Custom Domains for `lovegobuytab.com` and `www.lovegobuyta
 The `.openai/hosting.json` identity belongs to the isolated public preview. No database or storage bindings are required. Do not create another preview project when this ID exists.
 
 ## Operational notes
+
+Production GA4 includes `article_open`, `product_open`, `catalog_search`, `language_change`, `purchase_link_click` and `signup_click`. These describe interactions, not completed purchases or registrations. Search events send query length only, not the entered search text. The script adds no page views and is excluded from preview hosts. Event delivery still depends on the visitor's analytics availability; a passed implementation check does not establish actual reporting volume.
 
 The source HTML adapter intentionally fails visibly if selectors or upstream access change. Watch source availability and parsing after upstream updates. The development preview host may have different outbound-network access from the deployed Worker; direct bundled-Worker integration checks are also recorded in `docs/validation.md`.
 

@@ -83,7 +83,7 @@ const is404 =
     !productMatch) ||
   Astro.response.status === 404;
 if (is404) Astro.response.status = 404;
-let title = c.heroTitle + " | LoveGoBuy Tab",
+let title = c.homeMetaTitle || c.heroTitle + " | LoveGoBuy Tab",
   description = c.heroDescription;
 if (isCatalog) {
   title =
@@ -99,11 +99,11 @@ if (isFaq) {
   description = c.faqPageDescription;
 }
 if (isArticles) {
-  title = `LoveGoBuy ${c.articles} | LoveGoBuy Tab`;
+  title = c.articleIndexTitle;
   description = c.articleIndexDescription;
 }
 if (article) {
-  title = article.title + " | LoveGoBuy Tab";
+  title = article.title;
   description = article.description;
 }
 if (product) {
@@ -124,8 +124,8 @@ const jsonLd = article
       inLanguage: lang,
       mainEntityOfPage: origin + localized(lang, path),
       author: { "@type": "Organization", name: "LoveGoBuy Tab" },
-      datePublished: "2026-10-22",
-      dateModified: "2026-10-22",
+      datePublished: article.datePublished || "2026-10-22",
+      dateModified: article.dateModified || "2026-10-22",
     }
   : isFaq
     ? {
@@ -160,6 +160,43 @@ const catalogURL = (p = 1, s = sort) => {
 };
 const total =
   feed?.categories.reduce((n: number, a: any) => n + a.count, 0) || 0;
+const newestArticles = [...articles].sort((a: any, b: any) =>
+  (b.datePublished || "2026-10-22").localeCompare(
+    a.datePublished || "2026-10-22",
+  ),
+);
+const relatedSlugs: Record<string, string[]> = {
+  "lovegobuy-warehouse-consolidation": [
+    "lovegobuy-shipping-estimate-guide",
+    "lovegobuy-shipping-time",
+    "lovegobuy-tracking-guide",
+  ],
+  "lovegobuy-returns-guide": [
+    "lovegobuy-qc-photo-checklist",
+    "lovegobuy-payment-order-status",
+    "how-to-order-weidian-with-lovegobuy",
+  ],
+  "lovegobuy-sizing-guide": [
+    "lovegobuy-qc-photo-checklist",
+    "how-to-order-weidian-with-lovegobuy",
+    "lovegobuy-returns-guide",
+  ],
+  "lovegobuy-payment-order-status": [
+    "lovegobuy-fees-total-cost",
+    "lovegobuy-tracking-guide",
+    "lovegobuy-shipping-time",
+  ],
+};
+const related = article
+  ? (article.relatedSlugs || relatedSlugs[article.slug] || [])
+      .map((slug: string) => articles.find((a: any) => a.slug === slug))
+      .filter(Boolean)
+  : [];
+const catalogGuides = [
+  "lovegobuy-sizing-guide",
+  "lovegobuy-qc-photo-checklist",
+  "lovegobuy-shipping-estimate-guide",
+].map((slug) => articles.find((a: any) => a.slug === slug));
 ---
 
 <Layout
@@ -403,7 +440,7 @@ const total =
           </a>
         </div>
         <div class="article-grid">
-          {articles.slice(0, 4).map((a: any, i: number) => (
+          {newestArticles.slice(0, 6).map((a: any, i: number) => (
             <ArticleCard article={a} index={i} lang={lang} copy={c} />
           ))}
         </div>
@@ -642,7 +679,20 @@ const total =
             <Icon name="plus" size={16} />
           </summary>
           <p>{c.imageSearchNote}</p>
+          <a href={localized(lang, "/articles/lovegobuy-image-search-guide/")}>
+            {
+              articles.find(
+                (a: any) => a.slug === "lovegobuy-image-search-guide",
+              )?.title
+            }
+          </a>
         </details>
+        <nav class="guide-links" aria-label={c.catalogGuides}>
+          <strong>{c.catalogGuides}</strong>
+          {catalogGuides.map((a: any) => (
+            <a href={localized(lang, `/articles/${a.slug}/`)}>{a.title}</a>
+          ))}
+        </nav>
       </section>
     </>
   ) : productMatch ? (
@@ -758,6 +808,12 @@ const total =
               </div>
             </div>
           </div>
+          <nav class="guide-links" aria-label={c.catalogGuides}>
+            <strong>{c.catalogGuides}</strong>
+            {catalogGuides.map((a: any) => (
+              <a href={localized(lang, `/articles/${a.slug}/`)}>{a.title}</a>
+            ))}
+          </nav>
           {product.related.length > 0 && (
             <section class="section">
               <div class="section-heading">
@@ -851,13 +907,15 @@ const total =
   ) : isArticles ? (
     <>
       <section class="page-hero wrap">
-        <span class="eyebrow">LoveGoBuy {c.articles} / 10</span>
+        <span class="eyebrow">
+          LoveGoBuy {c.articles} / {articles.length}
+        </span>
         <h1>{c.articleIndexTitle}</h1>
         <p>{c.articleIndexDescription}</p>
       </section>
       <section class="wrap section articles-index">
         <div class="article-grid">
-          {articles.map((a: any, i: number) => (
+          {newestArticles.map((a: any, i: number) => (
             <ArticleCard article={a} index={i} lang={lang} copy={c} />
           ))}
         </div>
@@ -886,19 +944,23 @@ const total =
           <span>
             LoveGoBuy Tab
             <br />
-            <small>{c.checked}: 2026-10-22</small>
+            <small>
+              {c.updated}: {article.dateModified || "2026-10-22"}
+            </small>
           </span>
         </div>
       </section>
       <section class="article-layout wrap">
         <aside class="article-toc">
-          <p>{c.onThisPage}</p>
-          <nav>
-            {article.sections.map((s: any, i: number) => (
-              <a href={"#section-" + i}>{s.heading}</a>
-            ))}
-            <a href="#official-sources">{c.sourceHeading}</a>
-          </nav>
+          <details class="toc-details" open>
+            <summary>{c.readingTools}</summary>
+            <nav>
+              {article.sections.map((s: any, i: number) => (
+                <a href={"#section-" + i}>{s.heading}</a>
+              ))}
+              <a href="#official-sources">{c.sourceHeading}</a>
+            </nav>
+          </details>
           <a
             class="button button-outline"
             href={localized(lang, "/spreadsheet/")}
@@ -926,6 +988,27 @@ const total =
                   ))}
                 </ul>
               )}
+              {s.table && (
+                <table class="editorial-table">
+                  <caption>{s.heading}</caption>
+                  <thead>
+                    <tr>
+                      {s.table.columns.map((label: string) => (
+                        <th scope="col">{label}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {s.table.rows.map((row: string[]) => (
+                      <tr>
+                        {row.map((cell: string, j: number) => (
+                          <td data-label={s.table.columns[j]}>{cell}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
             </section>
           ))}
           <aside class="takeaways">
@@ -943,6 +1026,13 @@ const total =
             <Sources ids={article.sourceIds} sources={sources} copy={c} />
           </div>
           <p class="editorial-note">{c.articleAdvice}</p>
+          <nav class="guide-links" aria-label={c.nextStep}>
+            <strong>{c.nextStep}</strong>
+            <a href={localized(lang, "/spreadsheet/")}>{c.explore} →</a>
+            {related.slice(0, 2).map((a: any) => (
+              <a href={localized(lang, `/articles/${a.slug}/`)}>{a.title}</a>
+            ))}
+          </nav>
         </article>
       </section>
       <section class="wrap section">
@@ -954,18 +1044,19 @@ const total =
           </a>
         </div>
         <div class="article-grid">
-          {articles
-            .filter((a: any) => a.slug !== article.slug)
-            .slice(0, 4)
-            .map((a: any, i: number) => (
-              <ArticleCard article={a} index={i} lang={lang} copy={c} />
-            ))}
+          {related.slice(0, 4).map((a: any, i: number) => (
+            <ArticleCard article={a} index={i} lang={lang} copy={c} />
+          ))}
         </div>
       </section>
     </>
   ) : null}
 </Layout>
 <script>
+  const articleContents =
+    document.querySelector<HTMLDetailsElement>(".toc-details");
+  if (articleContents)
+    articleContents.open = window.matchMedia("(min-width: 761px)").matches;
   document
     .querySelector("#sort")
     ?.addEventListener("change", (e) =>

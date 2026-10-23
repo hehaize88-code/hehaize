@@ -2567,3 +2567,206 @@ h3 {
 .product-card h3 {
   overflow-wrap: normal;
 }
+
+/* Readable, compact editorial navigation and examples in every locale. */
+.article-card h3 a {
+  display: block;
+}
+.article-grid {
+  align-items: start;
+}
+.toc-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.sources li > small {
+  display: block;
+  font-size: 11px;
+  margin-top: 3px;
+}
+.guide-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 24px 0;
+  padding: 18px;
+  border: 1px solid #dadccf;
+  border-radius: 10px;
+  background: #f5f6ef;
+}
+.guide-links strong {
+  flex-basis: 100%;
+}
+.guide-links a {
+  color: #383d2a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.editorial-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.92em;
+  table-layout: fixed;
+}
+.editorial-table caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.editorial-table th,
+.editorial-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px;
+  border: 1px solid #d8dacc;
+  overflow-wrap: anywhere;
+}
+.editorial-table th {
+  background: #edf0e3;
+  color: #22271b;
+}
+.editorial-table tbody tr:nth-child(even) {
+  background: #fafbf6;
+}
+@media (min-width: 761px) {
+  .article-body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 760px) {
+  .article-heading {
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
+  .article-heading h1 {
+    font-size: clamp(25px, 6.8vw, 32px);
+  }
+  .article-heading > p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .article-heading > .article-meta {
+    margin-top: 12px;
+    font-size: 11px;
+  }
+  .article-byline,
+  .article-byline small {
+    font-size: 11px;
+  }
+  .article-layout {
+    padding-top: 14px;
+    gap: 16px;
+  }
+  .article-toc {
+    padding: 12px 14px;
+  }
+  .toc-details summary {
+    font-size: 14px;
+    margin: 0;
+  }
+  .toc-details[open] summary {
+    margin-bottom: 10px;
+  }
+  .article-toc nav {
+    font-size: 13px;
+    gap: 8px;
+  }
+  .article-body {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .article-intro p {
+    font-size: 15px;
+  }
+  .article-body h2 {
+    font-size: 22px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  .article-body p {
+    margin-bottom: 14px;
+  }
+  .takeaways {
+    padding: 15px;
+    margin: 18px 0;
+  }
+  .takeaways li,
+  .sources ul {
+    font-size: 14px;
+  }
+  .editorial-note {
+    font-size: 12px;
+  }
+  .guide-links {
+    padding: 14px;
+    margin: 18px 0;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .guide-links a {
+    flex-basis: 100%;
+  }
+  .editorial-table {
+    display: block;
+    font-size: 14px;
+  }
+  .editorial-table caption {
+    display: block;
+  }
+  .editorial-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .editorial-table tbody {
+    display: grid;
+    gap: 10px;
+  }
+  .editorial-table tr {
+    display: block;
+    border: 1px solid #d8dacc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .editorial-table td {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 10px;
+    border: 0;
+    border-bottom: 1px solid #e6e8de;
+    padding: 10px;
+  }
+  .editorial-table td:last-child {
+    border-bottom: 0;
+  }
+  .editorial-table td:before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #414832;
+  }
+  .articles-index .article-grid {
+    gap: 20px 12px;
+  }
+  .article-cover,
+  .articles-index .article-cover {
+    aspect-ratio: 1;
+  }
+  .articles-index .article-card h3,
+  .article-card h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .articles-index .article-card p,
+  .article-card p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .articles-index .article-meta,
+  .article-meta {
+    font-size: 10px;
+  }
+}

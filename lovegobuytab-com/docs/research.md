@@ -4,16 +4,16 @@ Checked: 2026-10-22. Scope: lovegobuytab.com preview. Platform statements below 
 
 ## Evidence register
 
-| ID | Exact official URL | What was observed |
-| --- | --- | --- |
-| official-home | https://lovegobuy.com/ | Official service positioning, purchasing from Chinese marketplaces, keyword/link/image discovery, consolidation, multi-currency payment marketing. |
-| official-guide | https://www.lovegobuy.com/article/index?article_id=10003 | Nine-step purchase-to-parcel guide; mobile equivalent https://m.lovegobuy.com/article/detail?articleId=10003 exposes the same content. |
-| official-fees | https://www.lovegobuy.com/article/index?article_id=10019 | Item cost includes product and domestic delivery; international transport depends on weight, route and destination. |
-| official-help | https://m.lovegobuy.com/help-center/index | Full indexed answers for inspection, modifications, outstanding balances and conditional returns. Desktop https://www.lovegobuy.com/help-center/index exposes topic names. |
-| official-estimator | https://m.lovegobuy.com/shipping/estimation/index | Parcel estimate inputs, dimensional-weight explanation, route limits and rehearsal suggestion. |
-| official-contact | https://lovegobuy.com/article/index?article_id=10082 | Current published support contact, including support@lovegobuy.com. |
-| official-product | https://www.lovegobuy.com/product?id=614560951833&shop_type=taobao | Actual product UI with size/color options, quantity, message field and aftersales reminders. Example only, never a recommended product. |
-| official-1688-product | https://www.lovegobuy.com/product?id=945917006868&shop_type=ali_1688 | Confirms the public ali_1688 source parameter; example only. |
+| ID                    | Exact official URL                                                   | What was observed                                                                                                                                                          |
+| --------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| official-home         | https://lovegobuy.com/                                               | Official service positioning, purchasing from Chinese marketplaces, keyword/link/image discovery, consolidation, multi-currency payment marketing.                         |
+| official-guide        | https://www.lovegobuy.com/article/index?article_id=10003             | Nine-step purchase-to-parcel guide; mobile equivalent https://m.lovegobuy.com/article/detail?articleId=10003 exposes the same content.                                     |
+| official-fees         | https://www.lovegobuy.com/article/index?article_id=10019             | Item cost includes product and domestic delivery; international transport depends on weight, route and destination.                                                        |
+| official-help         | https://m.lovegobuy.com/help-center/index                            | Full indexed answers for inspection, modifications, outstanding balances and conditional returns. Desktop https://www.lovegobuy.com/help-center/index exposes topic names. |
+| official-estimator    | https://m.lovegobuy.com/shipping/estimation/index                    | Parcel estimate inputs, dimensional-weight explanation, route limits and rehearsal suggestion.                                                                             |
+| official-contact      | https://lovegobuy.com/article/index?article_id=10082                 | Current published support contact, including support@lovegobuy.com.                                                                                                        |
+| official-product      | https://www.lovegobuy.com/product?id=614560951833&shop_type=taobao   | Actual product UI with size/color options, quantity, message field and aftersales reminders. Example only, never a recommended product.                                    |
+| official-1688-product | https://www.lovegobuy.com/product?id=945917006868&shop_type=ali_1688 | Confirms the public ali_1688 source parameter; example only.                                                                                                               |
 
 The public site is JavaScript-heavy. Direct web opening can yield only a tracking iframe, while search's indexed official documents expose the relevant article text. Checked date means reviewed on this date, not proof that every account sees the same current offer.
 
@@ -40,14 +40,14 @@ The estimator is useful for collecting parcel inputs, not for quoting a universa
 
 This is qualitative SERP research, not search-volume or keyword-difficulty measurement. No volume figures should be fabricated.
 
-| Observed competitor page | Observed topic coverage | Relevant intent |
-| --- | --- | --- |
-| https://lovegobuy.cc/guide/ | Buying workflow, spreadsheet use, product choice, shipping estimate, FAQ | Beginner guidance leading into discovery |
-| https://lovegobuywithqc.com/ | Spreadsheet, finds, categories, QC finder, link converter, shipping calculator | Product discovery plus pre-purchase checks |
-| https://www.lovegobuy.org/guide/ | Link organization, sizing, photos, price and seller notes | Compare a shortlist |
-| https://lovegobuyus.buzz/guides/lovegobuy-spreadsheet | Product/source/variant/size/QC fields | How to use a spreadsheet |
-| https://repglide.com/agents/LoveGoBuy-Spreadsheet | QC, returns, shipping | Agent workflow and aftersales |
-| https://kakobuypicklist.com/ | Searchable product categories and FAQ; localized paths | Reference for catalog navigation and language structure |
+| Observed competitor page                              | Observed topic coverage                                                        | Relevant intent                                         |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| https://lovegobuy.cc/guide/                           | Buying workflow, spreadsheet use, product choice, shipping estimate, FAQ       | Beginner guidance leading into discovery                |
+| https://lovegobuywithqc.com/                          | Spreadsheet, finds, categories, QC finder, link converter, shipping calculator | Product discovery plus pre-purchase checks              |
+| https://www.lovegobuy.org/guide/                      | Link organization, sizing, photos, price and seller notes                      | Compare a shortlist                                     |
+| https://lovegobuyus.buzz/guides/lovegobuy-spreadsheet | Product/source/variant/size/QC fields                                          | How to use a spreadsheet                                |
+| https://repglide.com/agents/LoveGoBuy-Spreadsheet     | QC, returns, shipping                                                          | Agent workflow and aftersales                           |
+| https://kakobuypicklist.com/                          | Searchable product categories and FAQ; localized paths                         | Reference for catalog navigation and language structure |
 
 Some other results misdescribe LoveGoBuy as a directory, assert generic shipping times/fees, or repeat unconditional free-return claims. Treat those as content-quality gaps to address, not facts to copy. Keyword targets inferred from repeated topic coverage: lovegobuy spreadsheet, lovegobuy finds, how to use lovegobuy, lovegobuy QC, lovegobuy shipping, lovegobuy shipping calculator, lovegobuy sizing, lovegobuy returns, lovegobuy payment, lovegobuy warehouse, lovegobuy link converter. These are intent targets, not a proven ranking or demand ordering.
 
@@ -55,29 +55,29 @@ Some other results misdescribe LoveGoBuy as a directory, assert generic shipping
 
 Use the homepage as the principal "LoveGoBuy spreadsheet" landing page. The catalog serves product searches. Keep FAQ and Articles as visible top-level navigation. Article pages should answer distinct decisions so they do not all compete for the same phrase.
 
-| Page | Primary target | Secondary intent |
-| --- | --- | --- |
-| / | lovegobuy spreadsheet | lovegobuy finds, product directory |
-| /products/ | lovegobuy finds | category and item queries |
-| /faq/ | lovegobuy FAQ | QC, links, orders, shipping |
-| /articles/ | lovegobuy guides | beginner information hub |
+| Page       | Primary target        | Secondary intent                   |
+| ---------- | --------------------- | ---------------------------------- |
+| /          | lovegobuy spreadsheet | lovegobuy finds, product directory |
+| /products/ | lovegobuy finds       | category and item queries          |
+| /faq/      | lovegobuy FAQ         | QC, links, orders, shipping        |
+| /articles/ | lovegobuy guides      | beginner information hub           |
 
-## Final ten articles
+## Initial ten articles (2026-10-22)
 
-The final article package is `articles-en.json`. Every article contains original practical editorial guidance, a restrained official factual anchor, six distinct sections, three takeaways and source IDs. No shipping rates, delivery guarantees, invented coupons or universal payment-method lists are supplied. Checked date: 2026-10-22.
+The original article package is now maintained in `src/content/articles/en.json`. Every article contains original practical editorial guidance, a restrained official factual anchor, six distinct sections, three takeaways and source IDs. No shipping rates, delivery guarantees, invented coupons or universal payment-method lists are supplied. Checked date: 2026-10-22.
 
-| Slug | Primary keyword | Article purpose | Words |
-| --- | --- | --- | --- |
-| lovegobuy-spreadsheet-guide | lovegobuy spreadsheet | Use a LoveGoBuy spreadsheet to compare source links, variants, measurements and costs, then verify your choice before ordering. | 929 |
-| how-to-order-weidian-with-lovegobuy | lovegobuy weidian | Follow a source-first checklist for opening a Weidian find, selecting the right variant and checking the order before parcel planning. | 903 |
-| lovegobuy-qc-photo-checklist | lovegobuy QC | Read warehouse photos carefully, separate visible evidence from assumptions and prepare a precise question when something needs clarification. | 889 |
-| lovegobuy-fees-total-cost | lovegobuy fees | Separate item prices, domestic delivery and international shipping so your budget reflects the decisions still ahead. | 878 |
-| lovegobuy-shipping-estimate-guide | lovegobuy shipping | Prepare the right parcel inputs, compare route conditions and understand why an initial shipping estimate may change. | 860 |
-| lovegobuy-warehouse-consolidation | lovegobuy warehouse | Organize arrived items, resolve open questions and make a deliberate consolidation decision before submitting your parcel. | 876 |
-| lovegobuy-returns-guide | lovegobuy returns | Gather the right order details and evidence, check current eligibility and distinguish a return request from its eventual outcome. | 857 |
-| lovegobuy-sizing-guide | lovegobuy sizing | Use product-specific measurements, a garment that fits and clearly recorded variants to make a more informed sizing decision. | 884 |
-| lovegobuy-payment-order-status | lovegobuy payment | Keep payment records and order progress separate, investigate unclear balances and ask support a focused question about your transaction. | 860 |
-| lovegobuy-link-troubleshooting | lovegobuy link converter | Diagnose incorrect product destinations, preserve the original source URL and understand what a converted agent link does not prove. | 889 |
+| Slug                                | Primary keyword          | Article purpose                                                                                                                                | Words |
+| ----------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| lovegobuy-spreadsheet-guide         | lovegobuy spreadsheet    | Use a LoveGoBuy spreadsheet to compare source links, variants, measurements and costs, then verify your choice before ordering.                | 929   |
+| how-to-order-weidian-with-lovegobuy | lovegobuy weidian        | Follow a source-first checklist for opening a Weidian find, selecting the right variant and checking the order before parcel planning.         | 903   |
+| lovegobuy-qc-photo-checklist        | lovegobuy QC             | Read warehouse photos carefully, separate visible evidence from assumptions and prepare a precise question when something needs clarification. | 889   |
+| lovegobuy-fees-total-cost           | lovegobuy fees           | Separate item prices, domestic delivery and international shipping so your budget reflects the decisions still ahead.                          | 878   |
+| lovegobuy-shipping-estimate-guide   | lovegobuy shipping       | Prepare the right parcel inputs, compare route conditions and understand why an initial shipping estimate may change.                          | 860   |
+| lovegobuy-warehouse-consolidation   | lovegobuy warehouse      | Organize arrived items, resolve open questions and make a deliberate consolidation decision before submitting your parcel.                     | 876   |
+| lovegobuy-returns-guide             | lovegobuy returns        | Gather the right order details and evidence, check current eligibility and distinguish a return request from its eventual outcome.             | 857   |
+| lovegobuy-sizing-guide              | lovegobuy sizing         | Use product-specific measurements, a garment that fits and clearly recorded variants to make a more informed sizing decision.                  | 884   |
+| lovegobuy-payment-order-status      | lovegobuy payment        | Keep payment records and order progress separate, investigate unclear balances and ask support a focused question about your transaction.      | 860   |
+| lovegobuy-link-troubleshooting      | lovegobuy link converter | Diagnose incorrect product destinations, preserve the original source URL and understand what a converted agent link does not prove.           | 889   |
 
 The spreadsheet article supports discovery and comparisons; Weidian covers marketplace-to-order handoff; fees covers budget structure; payment/order status covers transaction diagnosis. These are intentionally different intents. Sizing, QC, returns, warehouse and shipping address the decisions at their respective stages. Link troubleshooting covers navigation and source identity, without pretending an unimplemented converter exists.
 
@@ -94,3 +94,23 @@ Internal-link suggestions: spreadsheet → sizing, fees and links; Weidian → Q
 ## Retrieval references for parent verification
 
 Official guide: turn12search2 / turn12search3; help center: turn15search2; fees: turn15search8; estimator: turn15search7; homepage: turn15search4; contact: turn15search3; products: turn12search7 and turn12search6. Competitor intent sources: turn16search1, turn16search2, turn16search3, turn16search6, turn16search11, turn16search12. Root must open/search the URL itself before using these as final-response citations.
+
+## 2026-10-23 prioritization and implementation
+
+The follow-up audit found that GSC performance was still processing, while the submitted sitemap was successfully read with 83,544 discovered URLs. This count is not an indexed-page count. The inspected shipping article was unknown to the index but passed the live indexability check and was already present in the editorial sitemap. GA4 for 2026-09-25 through 2026-10-22 showed 8 users, 8 sessions (all Direct), 9 views and 29 events; this is too little evidence to rank topics by observed conversion or CTR. Bing remained behind sign-in, so no Bing query metrics were used. Do not report inferred priorities as measured keyword volumes.
+
+Public competitor coverage on lovegobuy.cc, sheetlovegobuy.com and lovegobuying.com reinforced product discovery, ordering, QC, shipping calculators, shipping time and tracking as distinct practical intents. The new pages extend the existing guide set without creating duplicate cost/estimator articles.
+
+| New slug                     | Primary intent          | Supporting phrases                                                | Distinction                                                                                                             |
+| ---------------------------- | ----------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| lovegobuy-tracking-guide     | lovegobuy tracking      | tracking number, parcel status, tracking not updating             | Locating and interpreting parcel information after submission                                                           |
+| lovegobuy-shipping-time      | lovegobuy shipping time | how long does LoveGoBuy take, delivery time, warehouse processing | Explaining separate processing and transit stages without fixed promises                                                |
+| lovegobuy-image-search-guide | lovegobuy image search  | find product from photo, search product links                     | Using the official platform's image search and checking source identity; no claim of image search within this directory |
+
+The official purchase guide (article_id=10003) supports warehouse QC and tracking under Parcels. The live official estimator was reviewed for destination, grams, goods category and dimensions. Worked dimensions use 6000 only as an explicit hypothetical divisor; the selected route's actual calculation governs. No new price, transit-time, customs or coupon promise was added.
+
+Six existing articles now include decision-focused tables: spreadsheet shortlist, ordering checkpoints, QC evidence, total-cost ledger, illustrative dimensional weight, and source-versus-agent link troubleshooting. All 24 locales receive the same full article structure and related-link mapping. The four other guides retain their prose and gain contextually relevant navigation through the shared renderer.
+
+Homepage and guide titles, metadata, latest-article visibility, related articles and product/catalog guide links are localized. Article structured data and editorial sitemap lastmod reflect real publication/modification dates. New pages are reachable from the article index, homepage, contextual links, locale alternatives and sitemap; submitting more URLs does not guarantee indexing.
+
+Measurement: compare the same 28-day windows after data matures, separating page/query search impressions and CTR from GA4 article views and outbound `purchase_link_click` events. Track the new clusters separately. Outbound clicks are not completed orders. Investigate index coverage first if the new guides receive no search impressions.

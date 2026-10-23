@@ -14,9 +14,11 @@ const selected = ids
           {s.title}
           <span aria-hidden="true"> ↗</span>
         </a>
+        <small>
+          {copy.checked}: {s.checkedAt || "2026-10-22"}
+        </small>
       </li>
     ))}
   </ul>
   <p>{copy.sourceHelp}</p>
-  <small>{copy.checked}: 2026-10-22</small>
 </div>

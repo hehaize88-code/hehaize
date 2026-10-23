@@ -18,7 +18,11 @@ export function xml(body: string) {
   });
 }
 
-export function urlset(origin: string, routes: string[]) {
+export function urlset(
+  origin: string,
+  routes: string[],
+  modified: Record<string, string> = {},
+) {
   return xml(
     `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${[
       ...new Set(routes),
@@ -35,7 +39,7 @@ export function urlset(origin: string, routes: string[]) {
         return languages
           .map(
             ([lang]) =>
-              `<url><loc>${xmlEscape(origin + localized(lang, route))}</loc>${alternates}</url>`,
+              `<url><loc>${xmlEscape(origin + localized(lang, route))}</loc>${modified[route] ? `<lastmod>${xmlEscape(modified[route])}</lastmod>` : ""}${alternates}</url>`,
           )
           .join("");
       })
