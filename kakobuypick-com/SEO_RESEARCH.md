@@ -77,3 +77,12 @@ Policy references rechecked for this release:
 - Purchase workflow and manual-link fallback: https://item2.kakobuy.com/index/information?information_id=3
 
 Private analytics report contents and traffic metrics are not included in this public repository.
+
+
+## 2026-10-26 implementation
+
+The owner authorized implementation and publication after the search-engine and analytics review. Prioritize specific refund, warehouse-time, sizing, shipping-calculation and tracking questions. Product-discovery additions cover hoodies and football jerseys; the Poland guide connects destination-specific ordering, shipping and tracking decisions. These are intent priorities, not claimed third-party keyword-volume measurements.
+
+Published-copy scope: update the five existing article URLs and add `kakobuy-hoodie-finds`, `kakobuy-poland-guide` and `kakobuy-football-jerseys` in every existing language. Do not add unverified branded product recommendations, carrier prices, customs rates, stock claims or authenticity claims. Clarify that the conditional 7–15-day refund reference is sourced to the cancellation/refund help page (`https://kakobuy.com/service/help/question?id=87`); the return-eligibility conditions remain sourced separately to page 51.
+
+Use the existing key click events to distinguish catalogue browsing from outbound purchase intent. Do not label an outbound click as a completed sale. Search-console and analytics report rows, traffic metrics and private screenshots are not included in this public repository.

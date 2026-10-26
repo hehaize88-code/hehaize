@@ -25,7 +25,7 @@ Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2
 
 核验页面：首页、`/spreadsheet/?q=adidas&sort=price`、`/de/`、`/fr/category/shoes/`、实际商品详情及购买按钮。首页和分类应呈现主站真实数据；上游故障返回明确不可用状态。
 
-站点地图：https://kakobuypick.com/sitemap.xml 。包含 24 语言共 624 个稳定页面地址：主页、商品目录、11 个分类、指南、FAQ、文章中心及 10 篇文章。商品详情由目录链接发现；站点地图不虚构主站未提供的完整商品清单。
+站点地图：https://kakobuypick.com/sitemap.xml 。包含 24 语言共 768 个稳定页面地址：主页、商品目录、11 个分类、指南、FAQ、文章中心及 16 篇文章。商品详情由目录链接发现；站点地图不虚构主站未提供的完整商品清单。
 
 配置依据：https://developers.cloudflare.com/workers/ci-cd/builds/configuration/ （2026-10-17 核对）。
 
@@ -33,13 +33,13 @@ Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2
 
 - `/guide/`: a six-step independent guide from product research to receipt.
 - `/faq/`: 26 sourced answers in five groups, with client-side filtering and ordinary HTML disclosures.
-- `/articles/`: ten original editorial articles; `/articles/{slug}/` renders each full article with a contents list, worked table, checklist and source links.
+- `/articles/`: sixteen original editorial articles; `/articles/{slug}/` renders each full article with a contents list, worked table, checklist and source links.
 - The same routes and content structure are available in all 24 languages; switching languages preserves the current article and query. Source dates, scope limitations and illustrative calculations remain explicit.
 - Top and footer navigation link to standalone pages. Mobile navigation wraps visibly; the article contents list starts collapsed on narrow screens. Home shows four article cards and a short FAQ introduction.
 - `SEO_RESEARCH.md` records keyword intent and official evidence. `src/content/editorial/en.json` is the factual baseline; the other locale JSON files contain complete, committed text. These are editorial documents, not a product database.
 - Reviewed translations are committed source content. No translation service runs during builds or page requests. Edit them against the English factual baseline and review the diff before replacing existing text.
 - `npm run check:content` runs before every build. It requires all 24 locale files, exact content structure, stable identifiers, all numeric facts (allowing local separators) and no unchanged English sentences in translated content.
-- `node scripts/check-editorial.mjs` checks 312 editorial responses across all locales, article/FAQ counts, section parity, critical numbers, schemas, canonical/hreflang, navigation and redirects after building.
+- `node scripts/check-editorial.mjs` checks 456 editorial responses across all locales, article/FAQ counts, section parity, critical numbers, schemas, canonical/hreflang, navigation and redirects after building.
 
 ## Product data contract
 
@@ -82,3 +82,12 @@ The 2026-10-17 editorial release passed all 312 response checks and the Worker d
 ## Indexing
 
 `robots.txt` permits crawling and declares `/sitemap.xml`. Successful canonical pages emit `index,follow,max-image-preview:large` in both HTML and X-Robots-Tag. Query variants using q/sort/page, unavailable image search, unknown routes and upstream errors remain noindex,follow. Sitemap dates are emitted only for editorial pages with a known revision date; live catalogue dates are not invented. `node scripts/check-indexing.mjs` verifies the map and exclusions after building.
+
+
+## 2026-10-26 content release
+
+Refreshed refund, storage, sizing, shipping-estimate and tracking articles in all 24 languages. Added full hoodie, Poland-ordering and football-jersey guides, each with a comparison table, checklist and official source links. The English bodies contain 1,238, 1,260 and 1,221 words respectively. All 23 translations retain the complete content structure; targeted terminology, introductions and search titles were reviewed after translation.
+
+Article search titles no longer append a redundant site suffix. Refreshed titles have a 70-character source gate. The shipping article includes a localized, client-side actual/volumetric-weight comparison with input validation and an official-estimator link. It does not calculate prices or assert universal carrier billing rules. Homepage and category links expose the new guides; desktop category links wrap.
+
+Local validation: all 24 content bundles, 456 editorial responses, 768 canonical sitemap URLs, search/utility exclusions, existing intent analytics, weight calculations, production build and Worker dry run. The deployment package is about 1.33 MiB gzip, with no bindings. The production domains and GitHub-to-Worker release workflow remain the existing ones documented above.

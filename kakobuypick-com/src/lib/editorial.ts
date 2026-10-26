@@ -10,6 +10,7 @@ export const sourceURLs: Record<string,string> = {
   payment:'https://kakobuy.com/service/help/question?id=64',
   inspection:'https://kakobuy.com/service/help/question?id=89',
   storage:'https://kakobuy.com/service/help/question?id=1',
+  refundTime:'https://kakobuy.com/service/help/question?id=87',
   returns:'https://kakobuy.com/service/help/question?id=51',
   receipt:'https://kakobuy.com/service/help/question?id=54',
   volume:'https://kakobuy.com/service/help/question?id=26&cid=51',

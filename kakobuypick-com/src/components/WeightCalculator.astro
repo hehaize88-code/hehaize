@@ -1,0 +1,28 @@
+---
+const { labels, lang } = Astro.props;
+---
+<div class="weight-tool" data-weight-calculator data-language={lang}>
+  <h2>{labels.title}</h2>
+  <p>{labels.intro}</p>
+  <form>
+    <div class="weight-inputs">
+      {[
+        ['actual', labels.actual, 4], ['length', labels.length, 40],
+        ['width', labels.width, 30], ['height', labels.height, 30],
+        ['divisor', labels.divisor, 6000]
+      ].map(([name,label,value]) => <label><span>{label}</span><input type="number" name={name} value={value} min="0.001" max="1000000" step="any" required inputmode="decimal" /></label>)}
+    </div>
+    <button type="submit" class="button primary">{labels.calculate}</button>
+  </form>
+  <div class="weight-results" aria-live="polite" aria-atomic="true">
+    <p>{labels.volumetric}: <strong data-volumetric>6 kg</strong></p>
+    <p>{labels.chargeable}: <strong data-chargeable>6 kg</strong></p>
+  </div>
+  <p class="weight-error" role="alert" hidden>{labels.invalid}</p>
+  <p class="weight-note">{labels.note}</p>
+  <a class="text-link" href="https://kakobuy.com/tools/estimate" target="_blank" rel="noopener noreferrer">{labels.official} ↗</a>
+</div>
+<script>
+  import { installWeightCalculators } from '../scripts/weight-calculator.js';
+  installWeightCalculators(document);
+</script>

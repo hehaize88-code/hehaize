@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import WeightCalculator from './WeightCalculator.astro';
 import ArticleCard from './ArticleCard.astro';
 import {sourceURLs,reviewed} from '../lib/editorial';
 import {categoryNames} from '../lib/i18n';
@@ -7,25 +8,28 @@ import {slugs} from '../lib/catalog';
 const {kind,e,article,route,lang,t}=Astro.props;
 const articleDate=article?.updatedOn||reviewed;
 const names=categoryNames(lang);
-const articleCategories=article?(article.slug==='kakobuy-jacket-finds'?['jackets']:article.slug==='kakobuy-sneaker-finds'?['shoes']:article.slug==='kakobuy-sizing-guide'?['jackets','shoes','pants-shorts']:['choose-kakobuy-spreadsheet','kakobuy-spreadsheet-guide','kakobuy-product-links'].includes(article.slug)?['jackets','shoes','hoodies-sweaters']:[]):[];
+const articleCategories=article?(article.slug==='kakobuy-hoodie-finds'?['hoodies-sweaters']:article.slug==='kakobuy-football-jerseys'?['jersey']:article.slug==='kakobuy-poland-guide'?['jackets','hoodies-sweaters','t-shirts']:article.slug==='kakobuy-jacket-finds'?['jackets']:article.slug==='kakobuy-sneaker-finds'?['shoes']:article.slug==='kakobuy-sizing-guide'?['jackets','shoes','pants-shorts']:['choose-kakobuy-spreadsheet','kakobuy-spreadsheet-guide','kakobuy-product-links'].includes(article.slug)?['jackets','shoes','hoodies-sweaters']:[]):[];
 const checkedDate=new Intl.DateTimeFormat(lang,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(articleDate));
 const sourceIds=article?.sources ?? (kind==='guide'?['buying','fees','inspection','storage','returns','estimate','receipt']:[]);
 const mins=article?Math.max(1,Math.ceil(article.sections.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length/180)):0;
 const heading=kind==='guide'?e.ui.guideTitle:kind==='faq'?e.ui.faqTitle:article?article.title:e.ui.articlesTitle;
 const description=kind==='guide'?e.ui.guideIntro:kind==='faq'?e.ui.faqIntro:article?article.description:e.ui.articlesIntro;
 const relatedBySlug={
+ 'kakobuy-hoodie-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-shipping-calculator'],
+ 'kakobuy-poland-guide':['kakobuy-shipping-calculator','kakobuy-shipping-time-tracking','kakobuy-returns-refunds'],
+ 'kakobuy-football-jerseys':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-returns-refunds'],
  'choose-kakobuy-spreadsheet':['kakobuy-spreadsheet-guide','kakobuy-jacket-finds','kakobuy-sneaker-finds'],
  'kakobuy-jacket-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-shipping-calculator'],
  'kakobuy-sneaker-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-returns-refunds'],
  'kakobuy-spreadsheet-guide':['choose-kakobuy-spreadsheet','kakobuy-product-links','kakobuy-qc-photos'],
  'kakobuy-product-links':['kakobuy-spreadsheet-guide','kakobuy-fees-payment','kakobuy-qc-photos'],
  'kakobuy-qc-photos':['kakobuy-sizing-guide','kakobuy-returns-refunds','kakobuy-warehouse-storage'],
- 'kakobuy-sizing-guide':['kakobuy-jacket-finds','kakobuy-sneaker-finds','kakobuy-returns-refunds'],
+ 'kakobuy-sizing-guide':['kakobuy-hoodie-finds','kakobuy-football-jerseys','kakobuy-sneaker-finds'],
  'kakobuy-shipping-calculator':['kakobuy-fees-payment','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
  'kakobuy-fees-payment':['kakobuy-shipping-calculator','kakobuy-consolidation-packaging','kakobuy-returns-refunds'],
  'kakobuy-warehouse-storage':['kakobuy-returns-refunds','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
  'kakobuy-consolidation-packaging':['kakobuy-shipping-calculator','kakobuy-warehouse-storage','kakobuy-qc-photos'],
- 'kakobuy-shipping-time-tracking':['kakobuy-warehouse-storage','kakobuy-shipping-calculator','kakobuy-returns-refunds'],
+ 'kakobuy-shipping-time-tracking':['kakobuy-poland-guide','kakobuy-shipping-calculator','kakobuy-returns-refunds'],
  'kakobuy-returns-refunds':['kakobuy-qc-photos','kakobuy-warehouse-storage','kakobuy-shipping-time-tracking']
 };
 const relatedArticles=article?(relatedBySlug[article.slug]||[]).map(slug=>e.articles.find(a=>a.slug===slug)).filter(Boolean):[e.articles[0],e.articles[2],e.articles[4]];
@@ -49,6 +53,7 @@ const relatedArticles=article?(relatedBySlug[article.slug]||[]).map(slug=>e.arti
  {kind==='article'&&article&&<>
   <div class="article-layout"><aside class="knowledge-side"><details class="article-toc mobile-disclosure" data-mobile-collapse open><summary>{e.ui.contents}</summary><ol>{article.sections.map((s,i)=><li><a href={`#section-${i+1}`}>{s.heading}</a></li>)}<li><a href="#checklist">{e.ui.practical}</a></li></ol></details><a class="button outline" href={route('/spreadsheet/')}>{e.ui.browse}<Icon name="arrow" size={17}/></a></aside>
   <article class="reading-body">{article.sections.map((s,i)=><section id={`section-${i+1}`}><details class="article-section" data-mobile-collapse={i>0?true:undefined} open><summary><h2>{s.heading}</h2></summary>{s.paragraphs.map(p=><p>{p}</p>)}</details></section>)}
+   {article.slug==='kakobuy-shipping-calculator'&&<WeightCalculator labels={e.ui.calculator} lang={lang}/>}
    {article.table&&<div class="article-table"><table><caption>{article.table.caption}</caption><thead><tr>{article.table.headers.map(h=><th scope="col">{h}</th>)}</tr></thead><tbody>{article.table.rows.map(row=><tr>{row.map((cell,i)=>i===0?<th scope="row">{cell}</th>:<td>{cell}</td>)}</tr>)}</tbody></table></div>}
    <section class="takeaways" id="checklist"><h2>{e.ui.practical}</h2><ul>{article.checklist.map(item=><li>{item}</li>)}</ul></section>
   {articleCategories.length>0&&<nav class="article-categories" aria-label={e.ui.categoryBrowse}><h2>{e.ui.categoryBrowse}</h2><div class="context-links">{articleCategories.map(slug=><a href={route(`/category/${slug}/`)}>{names[slugs.indexOf(slug)]}<Icon name="arrow" size={16}/></a>)}</div></nav>}

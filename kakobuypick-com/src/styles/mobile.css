@@ -181,3 +181,15 @@
  .reading-body section:has(.article-section) { margin-bottom: 10px; }
  .article-categories { margin-top: 18px; padding-top: 15px; }
 }
+
+/* Wrap the complete category list at larger sizes too. */
+@media(min-width:801px){.category-strip{flex-wrap:wrap;overflow:visible;gap:6px}.category-strip a{white-space:normal}}
+.weight-tool{border:1px solid var(--line);border-radius:12px;padding:22px;margin:24px 0;background:#faf7f7}
+.weight-inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+.weight-inputs label{display:flex;flex-direction:column;gap:7px;font-size:13px;line-height:1.5;min-width:0}
+.weight-inputs input{width:100%;min-height:44px;border:1px solid #d5d5dc;border-radius:7px;padding:9px;background:#fff}
+.weight-results{padding:8px 0}.weight-tool .weight-note{font-size:12px}.weight-tool .text-link{white-space:normal}
+.weight-error{color:#a6213e}.weight-tool [hidden]{display:none}
+@media(max-width:550px){.weight-tool{padding:16px}.weight-inputs{gap:12px}.weight-inputs label{font-size:12px}}
+
+.weight-inputs label{overflow-wrap:anywhere}

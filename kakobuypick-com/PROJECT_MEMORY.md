@@ -95,3 +95,14 @@
 - Article sections remain in server-rendered HTML. On narrow screens, the first section stays open and other sections collapse; table-of-contents links open the selected section. Confirmed no horizontal overflow in the 375px content viewport.
 - GA4 remains G-6WXLRRCDS3. Added `select_item`, `article_open`, `category_click`, `outbound_product_click`, `registration_click`, and `catalog_search`. These measure intent, not completed purchases or signups. Search event sends length/scope, not free-form query text. Local/preview origins no longer load the Google tag.
 - Validation: all 24 content bundles; 384 editorial HTTP responses; canonical/hreflang/schema/date/body checks; 696 sitemap URLs; analytics intent checks; Astro production build; Wrangler dry run (gzip approximately 1.03 MiB). Production release must be verified after the GitHub commit deploys.
+
+
+## 2026-10-26 multilingual SEO release
+
+- User explicitly authorized implementing the researched changes, publishing improved articles and adding the priority articles in all languages, followed by deployment.
+- Content now has 16 articles per language: three new complete guides for hoodies, ordering to Poland and football jerseys; five existing refund/storage/sizing/shipping/tracking guides refreshed without changing their URLs.
+- All 24 JSON bundles retain complete structures. Reviewed short search titles, apparel terminology, selected introductions and calculation labels. No runtime or build-time translation dependency was added.
+- Added a localized weight comparison to the shipping calculator article; examples and UI distinguish weight from a live shipping quote. Added category/related-article links and wrapped desktop category navigation.
+- Sitemap now contains 768 canonical URLs, including 72 new article variants. Existing noindex rules for filters, search and utility/error pages remain in place.
+- Local checks passed for 456 editorial responses, canonical/hreflang/schema/dates, sitemap, engagement events, calculator examples and deployment packaging. Actual production readiness must be checked in Cloudflare after the main-branch commit, then checked on the public domain.
+- The repo, Worker, domains, live product adapter, purchase-link destination and GA4 measurement ID are unchanged. No private performance metrics were committed.
