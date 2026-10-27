@@ -212,3 +212,11 @@ Validation before publication:
 - Static audit: five-language source parity, 170 unique editorial sitemap URLs with six alternates each, canonical/Article metadata and 7,650 internal link/asset references; no missing targets. Full content remains in HTML, with existing mobile disclosures.
 - Mocked Worker: five-language category links, original Weidian ID 7867456361, search noindex and release header hipobuy-20261027-search-v1 passed. JavaScript syntax and git whitespace checks passed.
 - Pending at time of this entry: GitHub publication and production rendering verification. Do not infer deployment or search indexing from local validation alone.
+
+### Production verification completed
+
+- Release commit 13bc44f576ff753be1c7c15e66b05996239a2f64 deployed through Cloudflare Pages deployment ddde450b-cc3a-4078-8b4e-0d6db436ce41. Dashboard production source matches the commit; release header on the custom domain is hipobuy-20261027-search-v1.
+- All 15 new localized articles fetched from the production domain returned HTTP 200, the expected title, self canonical, six hreflang links, all eight chapters and no noindex. Both sitemaps returned XML; the editorial sitemap has 170 URLs and all new pages. Updated CSS and catalogue JS verified on production.
+- Browser: article index contains 28 cards and shows six at a time on mobile; 390 px and 320 px viewport tests showed no horizontal overflow. All eight new QC chapters expanded. EN-to-IT switching retained the same article route. Italian calculator returned 2 kg actual, 6 kg volumetric/billed and USD 65 for entered rate 10 plus fixed fee 5. Temporary viewport override reset. Public production screenshot: docs/seo-release-2026-10-27.jpg.
+- Additional isolated rendering check confirmed live homepage product cards render in every locale, with localized photo labels and unchanged product destinations.
+- No new Google/Bing indexing submission or GA4 key-event administration change was made in this release. Existing sitemap registrations and analytics events remain active; deployment is verified, indexing and traffic improvement are not promised.
