@@ -44,7 +44,7 @@ That does not mean every item should be combined. Restricted materials, batterie
 
 A high-quality finds page should help users narrow choices. Keep a shortlist with columns for source link, category, current price, selected option, seller notes, warehouse status and QC decision. Once an item becomes unavailable, mark it instead of letting the list silently decay.
 
-The result is more useful than a page with thousands of unverified links. Search engines also benefit from clear category structure and descriptive internal links because the relationship between a broad topic and a specific product family is easier to understand.
+A small shortlist makes the remaining checks easier to see. Compare products from the same category, keep their source links and remove a candidate when it no longer meets your size, price or shipping requirements.
 
 ## Connect finds to the rest of the workflow
 

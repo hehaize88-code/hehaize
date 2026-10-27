@@ -44,7 +44,7 @@ Das bedeutet nicht, dass jeder Artikel kombiniert werden sollte. Restriktive Mat
 
 Eine hochwertige Fundseite sollte den Benutzern helfen, ihre Auswahl zu beschränken. Halten Sie eine Shortlist mit Spalten für Quelllink, Kategorie, aktuellen Preis, ausgewählte Option, Verkäuferscheine, Lagerstatus und QC Entscheidung. Sobald ein Element nicht verfügbar ist, markieren Sie es, anstatt die Liste still zu zerfallen.
 
-Das Ergebnis ist nützlicher als eine Seite mit Tausenden von unbeprüften Links. Suchmaschinen profitieren auch von einer klaren Kategoriestruktur und beschreibenden internen Verbindungen, da die Beziehung zwischen einem breiten Thema und einer bestimmten Produktfamilie leichter zu verstehen ist.
+Eine kurze Auswahlliste macht offene Prüfungen sichtbar. Vergleiche dieselbe Produktkategorie, bewahre Quelllinks auf und streiche Kandidaten, die Anforderungen an Größe, Preis oder Versand nicht mehr erfüllen.
 
 ## Connect findet den Rest des Workflows
 

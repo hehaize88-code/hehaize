@@ -44,7 +44,7 @@ Cela ne signifie pas que chaque élément doit être combiné. Les matériaux, b
 
 Une page de recherche de haute qualité devrait aider les utilisateurs à choisir de façon étroite. Conservez une liste de colonnes avec lien source, catégorie, prix courant, option sélectionnée, notes de vendeur, état de l'entrepôt et décision de QC. Une fois qu'un élément devient indisponible, marquez-le au lieu de laisser la liste se désintégrer silencieusement.
 
-Le résultat est plus utile qu'une page avec des milliers de liens non vérifiés. Les moteurs de recherche bénéficient également d'une structure de catégorie claire et de liens internes descriptifs, car la relation entre un sujet général et une famille de produits spécifique est plus facile à comprendre.
+Une sélection courte rend les vérifications restantes visibles. Comparez la même catégorie, conservez les liens sources et écartez les candidats qui ne conviennent plus en taille, prix ou livraison.
 
 ## Connectez les recherches au reste du workflow
 

@@ -8,7 +8,7 @@ const mod=await import('data:text/javascript;base64,'+fs.readFileSync(path.join(
 const worker=mod.default;
 const langs=['en','de','es','fr','it'];
 const editorial=JSON.parse(fs.readFileSync(path.join(root,'content/editorial.json')));
-assert.equal(editorial.length,25);
+assert.equal(editorial.length,28);
 assert.equal(mod.buyUrl('7867456361'),'https://hipobuy.com/product/weidian/7867456361');
 assert.equal(mod.buyUrl('javascript:alert(1)'),null);
 assert.equal(mod.buyUrl('3458'),null);
@@ -59,4 +59,4 @@ if(process.env.SOURCE_FIXTURES){
  globalThis.fetch=async()=>new Response('',{status:503});r=await worker.fetch(new Request('https://hipobuyy-sheet.com/en/catalog/'),{});assert.equal(r.status,503);assert.match(await r.text(),/noindex,follow/);
  assertions+=23;
 }
-console.log('PASS:',assertions,'release checks; 125 translated articles; 5 locales; image coverage',index.indexedCount+'/'+index.catalogCount);
+console.log('PASS:',assertions,'release checks;',editorial.length*langs.length,'translated articles; 5 locales; image coverage',index.indexedCount+'/'+index.catalogCount);

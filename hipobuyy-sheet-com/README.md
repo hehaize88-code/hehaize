@@ -14,7 +14,7 @@ node tests/release.mjs
 
 Python 3.12 or later is required. The build has no external Python dependencies. It renders the original five-language editorial site and bundles the catalogue module using plain text composition, without a Node dependency install. The committed `dist/` is ready to serve. The catalogue has no private credentials or database bindings.
 
-`content/editorial.json` and the five language directories retain all 25 articles per language. The shared header and footer are generated from the same template for editorial and catalogue pages. EN/DE/ES/FR/IT switching preserves the route and catalogue query.
+`content/editorial.json` and the five language directories retain all 28 articles per language. The shared header and footer are generated from the same template for editorial and catalogue pages. EN/DE/ES/FR/IT switching preserves the route and catalogue query.
 
 ## Catalogue and purchases
 
@@ -39,3 +39,9 @@ Official artwork was obtained from the public Hipobuy main-page bundle: `src/ass
 `tests/release.mjs` checks the original-ID purchase mapping, all five locales, article preservation, home sections, image-index coverage, redirects and image-search routes. With `SOURCE_FIXTURES` set to the directory of captured live HTML responses, it also checks source price/search forwarding, full gallery order, the user-supplied ID 7867456361, sitemap mapping and 503 behavior. Release validation passed 563 assertions and an internal-link/asset scan with zero missing targets.
 
 Mobile reading layout (2026-10-13): `mobile_layout.py` groups complete sections into native disclosures. The maintained `dist/assets/mobile-inner.css` and `mobile-inner.js` apply only to inner pages; they keep all content in HTML and support hash links, print, and desktop restoration. Mobile article lists show six compact rows at a time; catalogue lists show twelve products at a time. The homepage is excluded. Build source and committed output together using the commands above.
+
+## 2026-10-27 search-intent update
+
+Adds three complete article groups in EN/DE/ES/FR/IT (15 new pages): missing QC photos, volumetric weight and pending refunds. Refreshes seven existing article groups in all locales, replaces editorial SEO instructions with buyer guidance, and expands QC/shipping hubs. Topic navigation, contextual links, visible modification dates and source-review dates are generated consistently. Source review is distinct from an editorial copy update.
+
+Production still publishes the committed dist directory through the existing GitHub integration; the Cloudflare build command is empty. Run python3 build.py and node tests/release.mjs before committing source and output together. No Cloudflare settings or product database changes are required.

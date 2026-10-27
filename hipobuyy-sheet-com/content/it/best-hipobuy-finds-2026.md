@@ -44,7 +44,7 @@ Ciò non significa che ogni elemento debba essere combinato. Materiali limitati,
 
 Una pagina di ricerca di alta qualità dovrebbe aiutare gli utenti a ridurre le scelte. Tenere una lista con colonne per link sorgente, categoria, prezzo attuale, opzione selezionata, note del venditore, stato del magazzino e decisione QC. Una volta che un elemento diventa non disponibile, segnarlo invece di lasciare la lista decadere silenziosamente.
 
-Il risultato è più utile di una pagina con migliaia di link non verificati. I motori di ricerca beneficiano anche di una chiara struttura di categoria e collegamenti interni descrittivi perché il rapporto tra un tema di ampio respiro e una specifica famiglia di prodotti è più facile da capire.
+Una selezione breve rende visibili i controlli ancora necessari. Confronta la stessa categoria, conserva i link ed elimina prodotti che non rispettano più taglia, prezzo o requisiti di spedizione.
 
 ## Connetti i reperti al resto del flusso di lavoro
 

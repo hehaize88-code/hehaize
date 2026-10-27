@@ -1,3 +1,5 @@
+Hipobuy warehouse QC photos help you compare the received item with your selected variant. Public product pictures are a different source. If the order is Arrived, inspection may still be pending; if photos are missing or unusable, follow the [missing-photo checks](/en/articles/hipobuy-qc-photos-not-showing/) before approving a parcel.
+
 ## QC photos are evidence, not decoration
 
 Hipobuy's public site says products purchased through the service are sent to its warehouse in China, where acceptance and quality inspection are performed and results are provided. That warehouse stage is useful because it gives you a chance to compare the received item with the seller listing before international shipping.

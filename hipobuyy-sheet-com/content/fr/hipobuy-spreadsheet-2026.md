@@ -32,7 +32,7 @@ Un tableur peut vous aider à préparer cette étape en gardant l'offre de produ
 
 Une "trouver" est simplement quelque chose qui mérite d'être ouvert et vérifié. Il ne faut pas confondre cette dernière avec une vérification indépendante de l'authenticité, de la durabilité à long terme ou de la fiabilité du vendeur. Les pages de produits Hipobuy indiquent elles-mêmes que les produits affichés proviennent de plateformes tierces et que le service fournit un support de recherche, d'achat et d'expédition plutôt qu'une garantie de qualité ou d'authenticité du produit.
 
-Cette distinction est utile pour le référencement et pour les acheteurs. Un tableur fiable peut encore être très utile sans faire des affirmations qu'il ne peut pas prouver. Décrivez le produit, montrez le lien source, enregistrez l'instantané des prix et expliquez ce qui doit encore être vérifié.
+Enregistrez produit, source, option, prix daté et preuves manquantes. Une trouvaille intéressante nécessite encore une vérification de l’annonce actuelle et de l’article reçu avant expédition.
 
 ## Une routine pratique de tableur 2026
 
@@ -54,7 +54,7 @@ Cette routine transforme un tableur en liste de contrôle opérationnelle plutô
 
 Les lignes plus anciennes ne doivent pas être supprimées immédiatement, mais elles doivent être traitées comme historiques jusqu'à vérification. Si une page produit se résout encore, confirmez si l'élément est la même version. Si la source n'est pas disponible, ne la remplacez pas silencieusement par un vendeur différent tout en conservant l'ancien titre et le prix. Marquer la ligne comme non disponible ou la remplacer de façon transparente par une nouvelle source.
 
-Pour un annuaire public, datez l'instantané et indiquez clairement que les prix et les stocks peuvent changer. Cela donne des moteurs de recherche et le contexte de lecteurs sans prétendre que la feuille est un système d'inventaire en direct.
+En rouvrant une ligne, comparez sa date à l’annonce actuelle. Confirmez stock et prix de l’option choisie et conservez l’ancienne note comme historique.
 
 ## Où le tableur s'intègre dans le processus d'achat complet
 

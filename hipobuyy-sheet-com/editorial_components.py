@@ -3,10 +3,19 @@ import html
 
 def related_slugs(slug):
     specific={
+        'hipobuy-qc-photos-not-showing':['qc-photo-checklist','order-status-workflow','return-policy-warehouse'],
+        'hipobuy-volumetric-weight':['hipobuy-shipping-calculator','hipobuy-rehearsal-packing','shipping-cost-checklist'],
+        'hipobuy-refund-pending':['return-policy-warehouse','fees-wallet-payment','order-status-workflow'],
+        'hipobuy-shipping-calculator':['hipobuy-volumetric-weight','shipping-cost-checklist','hipobuy-rehearsal-packing'],
+        'shipping-cost-checklist':['hipobuy-shipping-calculator','hipobuy-volumetric-weight','hipobuy-coupon-shipping-discounts'],
+        'return-policy-warehouse':['hipobuy-refund-pending','hipobuy-qc-photos-not-showing','order-status-workflow'],
+        'fees-wallet-payment':['hipobuy-refund-pending','shipping-cost-checklist','return-policy-warehouse'],
+        'hipobuy-qc-photos-2026':['hipobuy-qc-photos-not-showing','qc-photo-checklist','hipobuy-size-guide'],
+        'order-status-workflow':['hipobuy-qc-photos-not-showing','hipobuy-refund-pending','parcel-tracking-delivery'],
         'hipobuy-product-links':['hipobuy-custom-order-forwarding','qc-photo-checklist','hipobuy-shipping-calculator'],
         'hipobuy-custom-order-forwarding':['hipobuy-product-links','order-status-workflow','shipping-cost-checklist'],
         'hipobuy-jacket-finds':['hipobuy-size-guide','qc-photo-checklist','hipobuy-shipping-calculator'],
-        'qc-photo-checklist':['return-policy-warehouse','hipobuy-size-guide','hipobuy-qc-photos-2026'],
+        'qc-photo-checklist':['hipobuy-qc-photos-not-showing','return-policy-warehouse','hipobuy-size-guide'],
         'spreadsheet-first':['hipobuy-product-links','hipobuy-custom-order-forwarding','qc-photo-checklist'],
         'hipobuy-clothing-spreadsheet':['hipobuy-jacket-finds','hipobuy-hoodie-finds','hipobuy-size-guide'],
         'guide':['hipobuy-product-links','hipobuy-custom-order-forwarding','order-status-workflow']}
@@ -17,8 +26,8 @@ def related_slugs(slug):
         ['hipobuy-hoodie-finds','hipobuy-football-jersey-finds','hipobuy-clothing-spreadsheet','hipobuy-size-guide','hipobuy-qc-photos-2026','hipobuy-shoes-spreadsheet'],
         ['hipobuy-spreadsheet-2026','spreadsheet-first','best-hipobuy-finds-2026','qc-photo-checklist','reading-hipobuy-reviews']
     ]
-    if slug=='shipping':return ['hipobuy-shipping-calculator','hipobuy-rehearsal-packing','hipobuy-tracking-not-updating']
-    if slug=='qc':return ['qc-photo-checklist','hipobuy-qc-photos-2026','hipobuy-size-guide']
+    if slug=='shipping':return ['hipobuy-shipping-calculator','hipobuy-volumetric-weight','hipobuy-tracking-not-updating']
+    if slug=='qc':return ['qc-photo-checklist','hipobuy-qc-photos-not-showing','hipobuy-size-guide']
     if slug=='guide':return ['spreadsheet-first','order-status-workflow','hipobuy-tracking-not-updating']
     group=next((g for g in groups if slug in g),groups[-1])
     return [s for s in group if s!=slug][:3]

@@ -1,3 +1,5 @@
+Si le suivi Hipobuy ne se met plus à jour, vérifiez dernier événement confirmé, transporteur concerné et action demandée dans le dossier du colis. Un numéro créé ne prouve pas une collecte. Le tableau distingue entrepôt, transfert et livraison sans inventer un délai d’attente universel.
+
 ## Partir du dernier événement confirmé
 
 Si le suivi Hipobuy ne se met pas à jour, partez du dernier événement que vous pouvez confirmer. Une page inchangée ne suffit pas à déterminer si le colis attend son enlèvement, circule entre deux points de scan, change de transporteur ou rencontre un problème de livraison. Notez le statut exact, l’heure de l’événement et sa source avant d’agir. Ce guide aide à transformer un statut ambigu en vérification précise ; il ne prédit pas une date de livraison sans information sur la ligne.

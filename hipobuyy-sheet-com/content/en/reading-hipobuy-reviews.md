@@ -46,6 +46,10 @@ Do the same for complaints. “My parcel was stuck” needs the last confirmed s
 
 Use official pages to understand published terms, dated buyer reports to see how those terms played out in particular cases and your own live checkout for today's price and route. Look for multiple independent reports with similar evidence, but do not average away important differences in destination, product type or seller. If a site claims to host verified customers, it should explain how it verified them. A screenshot of a star graphic is not a method.
 
-We will only publish customer experience pieces here if the contributor provides consent and enough original order, QC and delivery evidence to support the claims. Until then, the helpful editorial choice is to teach readers how to evaluate reviews, not manufacture one to fill a keyword slot. That standard protects buyers and makes a future real case study more convincing.
+We will only publish customer experience pieces here if the contributor provides consent and enough original order, QC and delivery evidence to support the claims. When reading a review, check which claims are supported by those records and which remain personal impressions. A single documented purchase does not establish the result of every future order.
 
 Source note: Hipobuy's official Order Status Display, Returns and Refunds, Service & Fees, Customs and Taxation, Insurance and compensation pages and its product-page disclaimer were reviewed 24 September 2026. No customer endorsement or personal test is asserted in this article.
+
+## Separate a documented purchase from a general claim
+
+A useful review identifies the exact product, selected option, order period and evidence supporting the account. Check whether its QC and delivery records describe that purchase and distinguish personal impressions from verified events. One successful or delayed shipment does not establish every buyer’s experience.

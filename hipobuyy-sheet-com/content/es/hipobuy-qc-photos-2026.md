@@ -1,3 +1,5 @@
+Las fotos QC del almacén Hipobuy permiten comparar el artículo recibido con la variante elegida. Las imágenes públicas del producto son otra fuente. En Arrived la inspección puede seguir pendiente. Si faltan fotos útiles, consulta los [pasos para fotos QC ausentes](/es/articles/hipobuy-qc-photos-not-showing/) antes de aprobar el paquete.
+
 ## Las fotos de QC son evidencia, no decoración
 
 El sitio público de Hipobuy dice que los productos adquiridos a través del servicio se envían a su almacén en China, donde se realizan la aceptación y la inspección de calidad y se proporcionan resultados. Esa etapa de almacén es útil porque le da la oportunidad de comparar el artículo recibido con la oferta de producto vendedor antes de la entrega internacional.

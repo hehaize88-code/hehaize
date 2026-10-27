@@ -12,3 +12,9 @@ export function productHelp(lang,category,product,escapeHtml) {
  const source=/^https:\/\/weidian\.com\//.test(product.sourceUrl)?`<a href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noopener noreferrer">${t[1]} ↗</a>`:'';
  return `<div class="product-evidence"><p>${source}</p><p>${t[2]}: ${product.images.length}</p><p>${t[3]}</p><p>${t[4]}</p></div><nav class="product-guide-links" aria-label="${t[0]}"><strong>${t[0]}</strong>${links.map(([slug,label])=>`<a href="/${lang}/articles/${slug}/">${label} →</a>`).join('')}</nav>`;
 }
+
+export function categoryHelp(lang) {
+ const t=PRODUCT_GUIDE_COPY[lang]||PRODUCT_GUIDE_COPY.en;
+ const links=[['hipobuy-product-links',t[7]],['qc-photo-checklist',t[5]],['hipobuy-shipping-calculator',t[6]]];
+ return `<nav class="category-guide-links" aria-label="${t[0]}"><strong>${t[0]}</strong>${links.map(([slug,label])=>`<a href="/${lang}/articles/${slug}/">${label} →</a>`).join('')}</nav>`;
+}

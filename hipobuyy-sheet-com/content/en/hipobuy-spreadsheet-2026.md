@@ -32,7 +32,7 @@ A spreadsheet can help you prepare this step by keeping the source listing attac
 
 A "find" is simply something worth opening and checking. It should not be confused with independent verification of authenticity, long-term durability or seller reliability. Hipobuy product pages themselves state that the displayed goods come from third-party platforms and that the service provides search, purchasing and shipping support rather than a guarantee of product quality or authenticity.
 
-That distinction is useful for SEO and for buyers. A trustworthy spreadsheet can still be very useful without making claims it cannot prove. Describe the product, show the source link, record the price snapshot and explain what still needs to be checked.
+Use the spreadsheet as a record of what you checked: exact product, source link, selected option, dated price and missing evidence. A useful find still needs a current listing check and inspection of the received item before you approve shipment.
 
 ## A practical 2026 spreadsheet routine
 
@@ -54,7 +54,7 @@ This routine turns a spreadsheet into an operating checklist rather than a galle
 
 Older spreadsheet rows do not have to be deleted immediately, but they should be treated as historical until checked. If a product page still resolves, confirm whether the item is the same version. If the source is unavailable, do not silently replace it with a different seller while keeping the old title and price. Mark the row as unavailable or replace it transparently with a new source.
 
-For a public directory, date the snapshot and make it clear that prices and inventory can change. This gives search engines and readers context without pretending the sheet is a live inventory system.
+When reopening a saved row, compare its date with the live listing. Confirm stock and price for the selected option and preserve the old note as history rather than treating it as a current quote.
 
 ## Where the spreadsheet fits in the full buying process
 

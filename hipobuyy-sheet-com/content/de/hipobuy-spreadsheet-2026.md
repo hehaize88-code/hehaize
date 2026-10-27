@@ -32,7 +32,7 @@ Eine Tabelle kann Ihnen helfen, diesen Schritt vorzubereiten, indem Sie das Quel
 
 Eine "Finde" ist einfach etwas, das sich öffnen und überprüfen lohnt. Es sollte nicht mit einer unabhängigen Überprüfung der Echtheit, der langfristigen Haltbarkeit oder der Zuverlässigkeit des Verkäufers verwechselt werden. Hipobuy Produktseiten selbst erklären, dass die angezeigten Waren von Drittplattformen stammen und dass der Service Such-, Einkaufs- und Versandunterstützung statt eine Garantie für Produktqualität oder Authentizität bietet.
 
-Diese Unterscheidung ist nützlich für SEO und für Käufer. Eine vertrauenswürdige Tabellenkalkulation kann immer noch sehr nützlich sein, ohne dass sie Behauptungen macht, die sie nicht beweisen kann. Beschreiben Sie das Produkt, zeigen Sie den Quelllink, erfassen Sie den Preis-Snapshot und erklären Sie, was noch überprüft werden muss.
+Halte Artikel, Quelle, Variante, datierten Preis und fehlende Nachweise fest. Ein interessanter Fund benötigt weiterhin eine aktuelle Angebotsprüfung und die Kontrolle des tatsächlich eingegangenen Artikels vor dem Versand.
 
 ## Eine praktische 2026 Tabellen Routine
 
@@ -54,7 +54,7 @@ Diese Routine verwandelt eine Tabellenkalkulation in eine operative Checkliste u
 
 Ältere Tabellenzeilen müssen nicht sofort gelöscht werden, aber sie sollten bis zur Überprüfung als historisch behandelt werden. Wenn eine Produktseite noch aufgelöst wird, bestätigen Sie, ob das Element die gleiche Version ist. Wenn die Quelle nicht verfügbar ist, ersetzen Sie sie nicht still durch einen anderen Verkäufer, während Sie den alten Titel und Preis behalten. Markieren Sie die Zeile als nicht verfügbar oder ersetzen Sie sie transparent durch eine neue Quelle.
 
-Für ein öffentliches Verzeichnis, datieren Sie den Snapshot und machen Sie deutlich, dass Preise und Inventar ändern können. Dies gibt Suchmaschinen und Leser Kontext, ohne vorzugeben, das Blatt ist ein Live-Inventur-System.
+Vergleiche beim erneuten Öffnen das Datum mit dem aktuellen Angebot. Prüfe Bestand und Preis der gewählten Variante und behalte die alte Notiz als historischen Stand.
 
 ## Wo die Tabelle in den vollständigen Kaufprozess passt
 

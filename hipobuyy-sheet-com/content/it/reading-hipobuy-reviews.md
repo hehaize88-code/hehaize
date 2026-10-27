@@ -27,3 +27,7 @@ Prima dell'acquisto salva link, variante, prezzo e data. Durante il deposito con
 «Le mie scarpe sono arrivate in fretta» diventa confrontabile solo con le date dei passaggi, taglia, paese e linea. Questo è un esempio di metodo, non una recensione inventata. Una futura esperienza reale sul sito richiederà consenso e documenti originali sufficienti; fino ad allora è più onesto insegnare a leggere prove e condizioni.
 
 Fonti: documenti ufficiali Hipobuy su stati, resi, costi, dogana e assicurazione e avvertenza nelle schede prodotto, consultati il 24 settembre 2026. Non rivendichiamo acquisti personali.
+
+## Distingui un acquisto documentato da un’affermazione generale
+
+Una recensione utile identifica prodotto, variante, periodo e prove. Controlla che documenti QC e consegna appartengano a quell’acquisto e separa impressioni personali da eventi confermati. Una spedizione riuscita o in ritardo non definisce l’esperienza di ogni compratore.

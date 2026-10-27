@@ -32,7 +32,7 @@ Un foglio di calcolo può aiutarvi a preparare questo passaggio mantenendo l'off
 
 Un "trova" è semplicemente qualcosa che vale la pena aprire e controllare. Non va confuso con una verifica indipendente dell'autenticità, della durata a lungo termine o dell'affidabilità del venditore. Hipobuy pagine di prodotto stessi affermano che i prodotti visualizzati provengono da piattaforme di terze parti e che il servizio fornisce la ricerca, l'acquisto e il supporto di spedizione, piuttosto che una garanzia di qualità del prodotto o autenticità.
 
-Questa distinzione è utile per SEO e per gli acquirenti. Un foglio di calcolo affidabile può ancora essere molto utile senza fare affermazioni che non può dimostrare. Descrivi il prodotto, mostra il link sorgente, registra l'istantanea dei prezzi e spiega cosa deve ancora essere controllato.
+Registra prodotto, fonte, opzione, prezzo datato e prove mancanti. Un articolo interessante richiede comunque la verifica dell’annuncio attuale e del prodotto ricevuto prima di approvare la spedizione.
 
 ## Una pratica routine di fogli di calcolo 2026
 
@@ -54,7 +54,7 @@ Questa routine trasforma un foglio di calcolo in una lista di controllo operativ
 
 Le righe di fogli di calcolo più vecchie non devono essere eliminate immediatamente, ma devono essere trattate come storiche fino al controllo. Se una pagina del prodotto ancora si risolve, verificare se l'articolo è la stessa versione. Se la fonte non è disponibile, non sostituirla silenziosamente con un venditore diverso mantenendo il vecchio titolo e il prezzo. Contrassegna la riga come non disponibile o sostituirla in modo trasparente con una nuova sorgente.
 
-Per un elenco pubblico, date l'istantanea e fate capire che i prezzi e l'inventario possono cambiare. Questo dà motori di ricerca e lettori contesto senza fingere che il foglio è un sistema di inventario dal vivo.
+Quando riapri una riga, confronta la data con l’annuncio attuale. Verifica disponibilità e prezzo dell’opzione scelta e conserva la vecchia nota come storico.
 
 ## Dove il foglio di calcolo si inserisce nel processo di acquisto completo
 

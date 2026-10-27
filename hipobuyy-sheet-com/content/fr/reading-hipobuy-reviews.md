@@ -27,3 +27,7 @@ Avant l'achat, conservez lien, prix, taille et date. Ajoutez ensuite ID, photos 
 Une phrase hypothétique « mes chaussures sont arrivées vite » devient comparable seulement avec vendeur, taille, étapes datées et destination. Ce n'est pas ici un témoignage de client. Pour publier à l'avenir une expérience véritable sur notre site, nous demanderons consentement et preuves originales suffisantes. Dans l'intervalle, lire les sources officielles et analyser des expériences datées offre au lecteur une méthode honnête.
 
 Sources : pages officielles Hipobuy sur statuts, retours, frais, douane et assurance et avis affiché sur les fiches produit, consultés le 24 septembre 2026. Aucun achat personnel n'est revendiqué.
+
+## Distinguer achat documenté et affirmation générale
+
+Un avis utile précise produit, variante, période et preuves. Vérifiez que les éléments QC et de livraison correspondent à cet achat, puis séparez impressions et événements confirmés. Une expédition réussie ou retardée ne décrit pas l’expérience de tous les acheteurs.

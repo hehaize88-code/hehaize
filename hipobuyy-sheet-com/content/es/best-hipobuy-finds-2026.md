@@ -44,7 +44,7 @@ Eso no significa que cada artículo debe ser combinado. Materiales restringidos,
 
 Una página de búsquedas de alta calidad debería ayudar a los usuarios a reducir las opciones. Mantenga una lista con columnas para el enlace fuente, categoría, precio actual, opción seleccionada, notas del vendedor, estado del almacén y decisión de QC. Una vez que un elemento no esté disponible, marquelo en lugar de dejar que la lista se deteriore silenciosamente.
 
-El resultado es más útil que una página con miles de enlaces no verificados. Los motores de búsqueda también se benefician de una estructura de categoría clara y de enlaces internos descriptivos porque la relación entre un tema amplio y una familia de productos específicos es más fácil de entender.
+Una selección breve hace visibles las comprobaciones pendientes. Compara la misma categoría, conserva enlaces y elimina candidatos que ya no cumplen talla, precio o requisitos de envío.
 
 ## Conectar hallazgos al resto del flujo de trabajo
 

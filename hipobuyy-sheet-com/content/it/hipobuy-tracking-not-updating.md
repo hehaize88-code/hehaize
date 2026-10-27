@@ -1,3 +1,5 @@
+Se il tracking Hipobuy non si aggiorna, verifica ultimo evento confermato, corriere corretto e azioni richieste nel registro del pacco. Un numero creato non dimostra il ritiro. La tabella distingue magazzino, passaggio tra corrieri e consegna senza inventare un’attesa universale.
+
 ## Partire dall’ultimo evento confermato
 
 Se il tracking Hipobuy non si aggiorna, parti dall’ultimo evento che puoi confermare. Una pagina ferma non dimostra da sola se il pacco attende il ritiro, viaggia tra punti di scansione, passa a un altro corriere o presenta un problema di consegna. Annota stato esatto, ora dell’evento e fonte prima di agire. Questa guida trasforma uno stato poco chiaro in un controllo preciso; non prevede una data di consegna senza informazioni sulla rotta.

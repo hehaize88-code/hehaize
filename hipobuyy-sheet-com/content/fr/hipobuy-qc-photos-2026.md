@@ -1,3 +1,5 @@
+Les photos QC de l’entrepôt Hipobuy servent à comparer l’article reçu à la variante choisie. Les images publiques du produit sont une autre source. Avec Arrived, l’inspection peut rester en attente. Si les vues manquent, suivez les [vérifications des photos absentes](/fr/articles/hipobuy-qc-photos-not-showing/) avant de valider le colis.
+
 ## Les photos de QC sont des preuves, pas de décoration
 
 Le site public d'Hipobuy indique que les produits achetés par l'entremise du service sont envoyés à son entrepôt en Chine, où l'acceptation et l'inspection de la qualité sont effectuées et les résultats sont fournis. Cette étape d'entrepôt est utile car elle vous donne la chance de comparer l'article reçu avec l'offre de produit vendeur avant l'expédition internationale.

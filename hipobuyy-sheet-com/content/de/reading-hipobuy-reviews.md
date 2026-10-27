@@ -39,3 +39,7 @@ Ein hypothetischer Satz wie „Meine Schuhe waren gut und der Versand günstig�
 Wir veröffentlichen eine echte Kundenbewertung erst mit Einwilligung und ausreichend originalen Bestell-, QC- und Zustellbelegen. Bis dahin ist eine ehrliche Anleitung zum Lesen von Rezensionen nützlicher als eine ausgedachte positive Fallstudie. Prüfe zuerst offizielle Regeln, dann datierte Einzelfälle und schließlich die Angaben im eigenen aktuellen Auftrag.
 
 Quellenhinweis: Hipobuys offizielle Seiten zu Bestellstatus, Rückgabe, Gebühren, Zoll und Versicherung sowie der Hinweis auf Produktseiten wurden am 24. September 2026 geprüft. Keine persönliche Testbestellung wird behauptet.
+
+## Einen belegten Kauf von einer allgemeinen Behauptung trennen
+
+Eine nützliche Bewertung nennt Artikel, Variante, Zeitraum und passende Belege. Prüfe, ob QC- und Zustellunterlagen zu diesem Kauf gehören, und trenne persönliche Eindrücke von bestätigten Ereignissen. Eine erfolgreiche oder verspätete Sendung beschreibt nicht jede Käufererfahrung.

@@ -1,3 +1,5 @@
+Hipobuy-Lagerfotos helfen beim Vergleich des erhaltenen Artikels mit deiner gewählten Variante. Öffentliche Produktbilder sind eine andere Quelle. Bei Arrived kann die Prüfung noch ausstehen. Fehlen brauchbare Bilder, nutze die [Prüfschritte für fehlende QC-Fotos](/de/articles/hipobuy-qc-photos-not-showing/), bevor du ein Paket freigibst.
+
 ## QC-Fotos sind Beweise, keine Dekoration
 
 Hipobuy öffentlichen Website sagt, dass Produkte, die durch den Service gekauft werden, in sein Lager in China geschickt werden, wo Akzeptanz und Qualitätskontrolle durchgeführt werden und Ergebnisse bereitgestellt werden. Diese Lagerphase ist nützlich, weil es Ihnen die Möglichkeit gibt, das empfangene Produkt mit dem Verkäufer Produktangebot vor dem internationalen Versand zu vergleichen.

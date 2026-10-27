@@ -32,7 +32,7 @@ Una hoja de cálculo puede ayudarle a preparar este paso manteniendo la oferta d
 
 Un "encuentro" es simplemente algo que vale la pena abrir y comprobar. No debe confundirse con la verificación independiente de la autenticidad, la durabilidad a largo plazo o la fiabilidad del vendedor. Las páginas de productos Hipobuy afirman que los productos expuestos provienen de plataformas de terceros y que el servicio proporciona apoyo de búsqueda, compra y envío en lugar de una garantía de calidad o autenticidad del producto.
 
-Esa distinción es útil para SEO y para los compradores. Una hoja de cálculo confiable puede ser muy útil sin hacer afirmaciones que no puede probar. Describir el producto, mostrar el enlace fuente, registrar la instantánea de precio y explicar lo que todavía necesita ser comprobado.
+Registra producto, fuente, opción, precio con fecha y pruebas pendientes. Un producto interesante todavía necesita verificar el anuncio actual y revisar la unidad recibida antes de aprobar el envío.
 
 ## Una rutina práctica de hoja de cálculo 2026
 
@@ -54,7 +54,7 @@ Esta rutina convierte una hoja de cálculo en una lista de comprobación de func
 
 Las filas de hojas de cálculo más antiguas no tienen que ser borradas inmediatamente, pero deben ser tratadas como históricas hasta que sean revisadas. Si una página de producto todavía resuelve, confirme si el elemento es la misma versión. Si la fuente no está disponible, no lo sustituya silenciosamente con un vendedor diferente mientras se mantiene el antiguo título y precio. Marcar la fila como no disponible o reemplazarla transparentemente con una nueva fuente.
 
-Para un directorio público, fecha la instantánea y deja claro que los precios y el inventario pueden cambiar. Esto da a los motores de búsqueda y al contexto de los lectores sin pretender que la hoja es un sistema de inventario en vivo.
+Al reabrir una fila guardada, compara su fecha con el anuncio actual. Confirma existencias y precio de la opción elegida y conserva la nota antigua como historial.
 
 ## Donde la hoja de cálculo encaja en el proceso de compra completo
 

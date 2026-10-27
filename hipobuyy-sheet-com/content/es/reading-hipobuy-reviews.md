@@ -27,3 +27,7 @@ Si realizas una compra, guarda enlace, vendedor, talla y precio antes de pagar; 
 Un testimonio que solo afirma «mis zapatillas llegaron bien» no permite inferir talla, plazo, autenticidad o coste entregado para otros compradores. Un reporte con documentación sí puede ser útil, aunque describa una experiencia individual. Publicaremos reseñas reales únicamente con consentimiento y pruebas originales suficientes; por ahora una guía honesta para evaluarlas tiene más valor que una historia fabricada.
 
 Fuentes: avisos oficiales de Hipobuy sobre estados, devoluciones, costes, aduanas y seguro y su aviso en fichas de producto; revisados el 24 de septiembre de 2026. No se atribuye ninguna prueba personal a esta web.
+
+## Distingue una compra documentada de una afirmación general
+
+Una reseña útil identifica producto, variante, periodo y pruebas. Comprueba que los registros QC y de entrega correspondan a esa compra y separa impresiones personales de eventos confirmados. Un envío puntual o retrasado no define la experiencia de todos los compradores.

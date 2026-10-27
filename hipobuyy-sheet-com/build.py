@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import quote
 from datetime import date
 from mobile_layout import assets as mobile_assets, chapters, compact_support
+from seo_hubs import HUBS, apply_hub_copy, topic_paths
 
 ROOT=Path(__file__).parent; DIST=ROOT/'dist'; SITE='https://hipobuyy-sheet.com'; SHOP='https://cnbuycha.com'
 P=json.loads((ROOT/'products.json').read_text())
@@ -163,6 +164,7 @@ COMMERCE={
 'it': {'register':'Registrati su Hipobuy','image':'Ricerca per immagine','hero':'Hipobuy Spreadsheet: prodotti e foto QC','sub':'Cerca prodotti Hipobuy, confronta prezzi in USD e guarda le foto. Esplora scarpe, felpe e altre categorie, poi apri il prodotto originale su Hipobuy.','aside_title':'Trova, controlla, apri su Hipobuy.','aside':'Cerca per nome, ID originale o immagine. Confronta novità, prodotti popolari e prezzi nello stesso catalogo.','products_sub':'Prodotti recenti dal catalogo. Apri una scheda per tutte le foto e il link di acquisto Hipobuy.','independent':'Catalogo Hipobuy indipendente. Registrazione, acquisti, pagamenti e assistenza ordini avvengono su hipobuy.com.','snapshot':'I prezzi in USD escludono la spedizione internazionale. Controlla variante e prezzo attuale su Hipobuy.'}
 }
 for locale in LANGS: T[locale].update(COMMERCE[locale])
+apply_hub_copy(T)
 HOME_PRODUCTS=json.loads((ROOT/'commerce'/'home-products.json').read_text())
 
 def e(v):return html.escape(str(v),quote=True)
@@ -189,15 +191,15 @@ def reader_paths(lang):
 
 def source_links(lang,record):
     if not record.get('sources'):return ''
-    label={'en':'Sources checked for this update','de':'Für diese Aktualisierung geprüfte Quellen','es':'Fuentes revisadas para esta actualización','fr':'Sources consultées pour cette mise à jour','it':'Fonti verificate per questo aggiornamento'}[lang]
-    return '<aside class="article-sources"><strong>'+e(label)+' · '+e(record['modified'])+'</strong><ul>'+''.join('<li><a href="'+e(s['url'])+'">'+e(s['label'])+' ↗</a></li>' for s in record['sources'])+'</ul></aside>'
+    checked=record.get('sources_checked',record['modified'])
+    return '<aside class="article-sources"><strong>'+e(HUBS[lang]['sources'])+'</strong><p>'+e(HUBS[lang]['source_date'])+' · '+e(checked)+'</p><ul>'+''.join('<li><a href="'+e(s['url'])+'">'+e(s['label'])+' ↗</a></li>' for s in record['sources'])+'</ul></aside>'
 def meta(lang,path,title,description):
     alts=''.join(f'<link rel="alternate" hreflang="{l}" href="{SITE}{href(l,path)}">' for l in LANGS)+f'<link rel="alternate" hreflang="x-default" href="{SITE}{href("en",path)}">'
     page_title=title if path.startswith('articles/') else title+' | Hipobuyy Sheet'
     article=BY_SLUG.get(path.split('/')[-1]) if path.startswith('articles/') else None
     share_image=article['image'] if article else 'article-listing.jpg'
     sharing=f'<meta property="og:type" content="{"article" if article else "website"}"><meta property="og:site_name" content="Hipobuyy Sheet"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}"><meta property="og:url" content="{SITE}{href(lang,path)}"><meta property="og:image" content="{SITE}/assets/{share_image}"><meta name="twitter:card" content="summary_large_image">'
-    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261017-seo"><script defer src="/assets/site.js?v=20261017-seo"></script><script defer src="/assets/catalog.js?v=20261012"></script></head>'
+    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261027-search"><script defer src="/assets/site.js?v=20261027-search"></script><script defer src="/assets/catalog.js?v=20261027-search"></script></head>'
 def shell(lang,path,title,description,body,home=False):
     t=T[lang];nav=''.join(f'<a class="{"active" if path.strip("/")==r else ""}" href="{href(lang,r)}">{e(t["nav"][i])}</a>' for i,r in enumerate(ROUTES) if r != "finds")
     opts=''.join(f'<option value="{href(l,path)}" {"selected" if l==lang else ""}>{l.upper()}</option>' for l in LANGS)
@@ -233,7 +235,7 @@ def product(p,lang):
     return f'<article class="card" data-product-category="{e(p["category"])}"><a class="photo" href="{e(p["detail"])}" rel="noopener"><img src="{e(p["local_image"])}" width="500" height="500" loading="lazy" alt="{e(p["title"])}"></a><div class="card-body"><span class="tag">{e(cat)}</span><h3>{e(p["title"])}</h3><div class="card-bottom"><strong class="price">${p["price"]:.2f}</strong><a href="{e(p["detail"])}" rel="noopener">{e(t["open"])} ↗</a></div></div></article>'
 def product_grid(lang,products):return '<div class="cards">'+''.join(product(p,lang) for p in products)+'</div>'
 def home_card(p,lang):
-    return f'<article class="catalog-card"><a href="/{lang}/catalog{e(p["path"])}"><img src="{e(p["image"])}" alt="{e(p["title"])}" width="400" height="400" loading="lazy"><h2>{e(p["title"])}</h2><div class="card-meta"><strong>${float(p["price"]):.2f}</strong><span>USD · QC ↗</span></div></a></article>'
+    return f'<article class="catalog-card"><a href="/{lang}/catalog{e(p["path"])}"><img src="{e(p["image"])}" alt="{e(p["title"])}" width="400" height="400" loading="lazy"><h2>{e(p["title"])}</h2><div class="card-meta"><strong>${float(p["price"]):.2f}</strong><span>USD · {e(HUBS[lang]["photo"])} ↗</span></div></a></article>'
 def article_cards(lang,limit=None):
     t=T[lang]
     records=sorted(enumerate(EDITORIAL),key=lambda x:(x[1]['published'],x[0]),reverse=True)
@@ -294,13 +296,15 @@ for lang in LANGS:
  for route,idx in [('guide',3),('qc',4),('shipping',5),('faq',6)]:
   page=head(lang,idx)+f'<div class="wrap route">{button_search(lang) if route=='qc' else ''}{calculator(lang) if route=='shipping' else ''}{text_sections(t["body"][route])}{'<nav class="related-guides">'+''.join('<a href="'+href(lang,'articles/'+s)+'">'+e(BY_SLUG[s]['locales'][lang]['title'])+'</a>' for s in related_slugs(route))+'</nav>' if route in ['shipping','qc','guide'] else ''}<p><a class="inline-action" href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></p></div>'
   save(lang,route,page,t['page_titles'][idx],t['page_subs'][idx])
- articles=head(lang,7)+f'<div class="wrap route">{reader_paths(lang)}{article_cards(lang)}</div>'
+ articles=head(lang,7)+f'<div class="wrap route">{topic_paths(lang)}{article_cards(lang)}</div>'
  save(lang,'articles',articles,t['page_titles'][7],t['page_subs'][7])
  for i,slug in enumerate(SLUGS):
   path='articles/'+slug
   related_idxs=[SLUGS.index(s) for s in related_slugs(slug) if s in SLUGS and s!=slug]
   related='<nav class="related-guides" aria-label="'+e(t['reading'])+'"><strong>'+e(t['reading'])+'</strong>'+''.join(f'<a href="{href(lang,"articles/"+SLUGS[j])}">{e(t["article_titles"][j])} →</a>' for j in related_idxs if j!=i)+'</nav>'
-  article=f'<div class="page-head wrap"><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["article_titles"][i])}</h1><p>{e(t["article_descriptions"][i])}</p></div><div class="wrap route">{editorial_products(lang,slug,P,product_grid)}{calculator(lang) if slug=='hipobuy-shipping-calculator' else ''}{article_html(lang,slug)}{related}<p><a class="inline-action" href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></p></div>'
+  crumb=f'<nav class="article-breadcrumb" aria-label="{e(t["nav"][7])}"><a href="/{lang}/">{e(t["nav"][0])}</a><span aria-hidden="true"> / </span><a href="/{lang}/articles/">{e(t["nav"][7])}</a></nav>'
+  stamp=f'<p class="article-updated">{e(HUBS[lang]["updated"])} <time datetime="{BY_SLUG[slug]["modified"]}">{BY_SLUG[slug]["modified"]}</time></p>'
+  article=f'<div class="page-head wrap">{crumb}<span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["article_titles"][i])}</h1><p>{e(t["article_descriptions"][i])}</p>{stamp}</div><div class="wrap route">{editorial_products(lang,slug,P,product_grid)}{calculator(lang) if slug=='hipobuy-shipping-calculator' else ''}{article_html(lang,slug)}{related}<p><a class="inline-action" href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></p></div>'
   save(lang,path,article,t['article_titles'][i],t['article_descriptions'][i])
 
 (DIST/'index.html').write_text('<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=/en/"><title>Hipobuyy Sheet</title></head><body><a href="/en/">Open site</a></body></html>')
@@ -335,7 +339,7 @@ nav_code='const CHROME='+json.dumps(chrome,ensure_ascii=False)+';\n'
 nav_code+="function nav(lang,path,query=''){return CHROME[lang].header.replaceAll('__CATALOG__/',path.replace(/^\\//,'')+query)}\nfunction footer(lang){return CHROME[lang].footer}\n"
 (ROOT/'commerce/chrome.mjs').write_text(nav_code.replace('function nav(', 'export function nav(').replace('function footer(', 'export function footer('))
 source=(ROOT/'commerce/catalog.mjs').read_text().replace("import { nav, footer } from './chrome.mjs';",nav_code)
-source=source.replace("import { productHelp } from './product-guides.mjs';",(ROOT/'commerce/product-guides.mjs').read_text().replace('export function productHelp','function productHelp'))
+source=source.replace("import { productHelp, categoryHelp } from './product-guides.mjs';",(ROOT/'commerce/product-guides.mjs').read_text().replace('export function ','function '))
 source+=(ROOT/'commerce/worker.mjs').read_text()
 (DIST/'_worker.js').write_text(source)
 (DIST/'_routes.json').write_text(json.dumps({'version':1,'include':['/*'],'exclude':['/assets/*','/robots.txt']}))

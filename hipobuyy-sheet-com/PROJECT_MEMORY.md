@@ -188,3 +188,27 @@ User explicitly authorized implementation, all-language article additions and pr
 GitHub commit 385a2de deployed successfully through the existing integration. Live product-link guides verified in EN/DE/ES/FR/IT, including same-route language switching and self-canonical URLs. At 390 px and 320 px viewport settings, document width equalled scroll width; mobile chapters collapsed and all 9 jacket chapters expanded correctly. The Italian calculator returned 2 kg actual / 6 kg volumetric / 6 kg billed for its default example.
 
 A follow-up editorial review replaced awkward legacy calculator translations in DE/ES/FR/IT, preserving all 13 topics, examples, units, model limits and workflow guidance. All 25 articles in each language remain. The previous statement about verbatim preservation refers to the first release; these four calculator bodies are now deliberately polished. GSC Wizard IndexNow configuration read was unavailable because its subscription had ended; no IndexNow or manual sitemap submission is claimed. The updated sitemap remains published for the existing search-engine registrations.
+
+## 2026-10-27 — GSC/Bing/GA4-driven five-language release
+
+User explicitly requested implementation, improvement of existing articles, several new articles in every existing language, and production deployment. Repo remains hehaize88-code/hehaize, directory hipobuyy-sheet-com, main. Cloudflare dashboard confirmed correct account 9010cea800ac2a140509889d88fe612e, Pages project hipobuyy-sheet-com, automatic deployment enabled, empty build command and output dist. Source and generated output must be committed together. No account settings changed.
+
+Evidence from signed-in first-party reports, read 27 October:
+- GSC Oct 19–25 vs Oct 12–18: 7 vs 35 clicks; 123 vs 612 impressions; CTR 5.7% in both periods; average position 6.3 vs 6.4. The recent drop is predominantly lost impressions, not a demonstrated CTR collapse or penalty.
+- GA4 property 555650243: sessions 35 vs 52; organic sessions 16 vs 33; pageviews 72 vs 138; existing hipobuy_product_click events 11 vs 15. Key-event report showed zero. Do not call outbound clicks sales or invent revenue.
+- GSC indexing: 2,157 indexed; 15,171 discovered-not-indexed; 130 crawled-not-indexed. Main sitemap was read successfully. Calculator URL indexed, self-canonical, and live URL inspection passed. No blanket noindex or deletion of catalogue pages is justified by these facts alone.
+- Query samples include qc bilder, qc fotos, hipobuy shipping calculator, hipobuy sendungsverfolgung, quanto costa la spedizione su hipobuy and hipobuy refund. These are small first-party samples, not keyword market volumes. Bing's three-month report had four impressions and no clicks, mainly QC queries.
+- Competitor research covered hipobuywithqc.com, qcradar.com/hipobuy-spreadsheet and hipobuy.net. Inspiration is useful tools, clear evidence and specific buyer tasks; no competitor copy, live shipping rate or unverifiable coupon is reproduced.
+
+Implementation:
+- Added hipobuy-qc-photos-not-showing, hipobuy-volumetric-weight and hipobuy-refund-pending in EN/DE/ES/FR/IT. English bodies: 1,260 / 1,249 / 1,301 whitespace-delimited words. Complete localized counterparts preserve all eight sections, decision tables, worked numbers, limitations and next steps (844–1,017 words).
+- Seven existing article groups improved in all five locales: coupon-shipping-discounts, clothing-spreadsheet, spreadsheet-2026, best-finds, QC-photos-2026, tracking-not-updating and reading-reviews. Removed editorial/search-ranking instructions; replaced them with buyer actions, contextual links and direct introductions.
+- QC and shipping hubs now explain the actual workflow, units, photo provenance, route constraints and next steps. Article index has three task groups. New pages appear in home previews; related links connect old and new articles. All articles have visible update dates and breadcrumbs. Source-review dates remain distinct from copy-modification dates.
+- Catalogue cards say product photos rather than claiming personal QC. Category pages link to product-link, QC and shipping guides. Product source, source IDs, images, purchase format, search/image search and five-language routes preserved. Existing GA4 events retained.
+- Rechecked the official Returns and Refunds, Order Status Display and Shipping Estimate pages in the live browser on 27 October. Under Review, Returned and wallet credit are distinguished; no invented external withdrawal duration. Returns page contains inconsistent outbound-postage wording across sections, so the new refund guide asks for the order-specific breakdown. Divisor 6000 and packing examples are explicitly hypothetical.
+
+Validation before publication:
+- python3 build.py, node tests/release.mjs: 660 checks passed; 28 article groups / 140 localized articles. English bodies remain within 1,200–1,800 words.
+- Static audit: five-language source parity, 170 unique editorial sitemap URLs with six alternates each, canonical/Article metadata and 7,650 internal link/asset references; no missing targets. Full content remains in HTML, with existing mobile disclosures.
+- Mocked Worker: five-language category links, original Weidian ID 7867456361, search noindex and release header hipobuy-20261027-search-v1 passed. JavaScript syntax and git whitespace checks passed.
+- Pending at time of this entry: GitHub publication and production rendering verification. Do not infer deployment or search indexing from local validation alone.
