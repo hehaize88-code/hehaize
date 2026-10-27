@@ -74,7 +74,10 @@
       "invalid": "Indtast et positivt tal i hvert felt.",
       "note": "Reglen for større vægt er et eksempel. Din rute kan bruge forskellige faktureringsregler, afrundinger eller minimumsgebyrer.",
       "official": "Åbn den officielle forsendelsesestimator"
-    }
+    },
+    "navShipping": "Forsendelse",
+    "articleTopics": "Vælg dit næste trin",
+    "productGuides": "Tjek før bestilling"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "Hvad hvis et produktlink ikke indlæses automatisk?",
-      "a": "Den officielle købsvejledning indeholder en manuel købsformular til fortegnelser, der ikke kan importeres. Indtast den faktiske sælger-URL og nøjagtige vareoplysninger. Lad være med at opfinde en pris eller vælge et lignende produkt uden at tjekke fortegnelsen og spørge indkøberen, når det er nødvendigt.",
+      "a": "Den officielle købsguide indeholder en manuel købsformular til annoncer, der ikke kan importeres. Indtast den faktiske sælgers URL og nøjagtige vareoplysninger. Opfind ikke en pris eller vælg et lignende produkt uden at kontrollere annoncen og spørge køberen, når det er nødvendigt. Før du anvender denne vejledning, skal du kontrollere de viste betingelser for din nøjagtige ordre. Den officielle manuelle købsformular advarer i øjeblikket om, at visse tredjepartslinks ikke har nogen eftersalgsservice og ikke understøtter refusion, annullering eller ændringer efter betaling. Den generelle lagerreturneringsproces er derfor ikke tilgængelig for alle køb. Afklar en usikker variant, pris eller returneringsbetingelse, før du betaler; antag ikke, at et inspektionsfoto skaber en returret.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "Gælder fem-dages returreglen for hvert produkt?",
-      "a": "Nej. De officielle returneringsregler er betinget af sælgers accept, produktberettigelse, stand og tidspunkt efter lageropbevaring. Nogle kategorier og ændret emballage er udelukket. Tjek ordrens deadline og berettigelse omgående; 100 dages opbevaring er ikke en 100 dages returret.",
+      "a": "Nej. De officielle returregler er betinget af sælgers accept, produktets berettigelse, stand og tidspunkt efter lageropbevaring. Nogle kategorier og ændret emballage er undtaget. Kontroller ordrens deadline og berettigelse omgående; 100 dages opbevaring er ikke en 100-dages returret. Før du anvender denne vejledning, skal du kontrollere de betingelser, der vises for din præcise ordre. Den officielle manuelle købsformular advarer i øjeblikket om, at visse tredjepartslinks ikke har nogen eftersalgsservice og ikke understøtter refusion, annullering eller ændringer efter betaling. Den generelle returproces på lager er derfor ikke tilgængelig for alle køb. Afklar en usikker variant, pris eller returbetingelse, før du betaler; antag ikke, at et inspektionsfoto skaber en returret.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "Er Kakobuy pålidelig? Gebyrer, QC og returnering",
+      "seoTitle": "Er Kakobuy pålidelig? Gebyrer, QC og returnering",
+      "description": "Vurder Kakobuy ved hjælp af dens offentliggjorte købsproces, inspektionsgrænser og returneringsbetingelser. Tjek sælger, samlede pris og ordrebetingelser, før du betaler.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Hvad den tilgængelige dokumentation kan fastslå",
+          "paragraphs": [
+            "Kakobuy udgiver en købsworkflow, vejledning til lagerinspektion og hjælpesider til forsendelse og eftersalg. Disse dokumenter forklarer, hvordan tjenesten er beregnet til at fungere; de beviser ikke uafhængigt, at enhver sælger, pakke eller refusion vil opfylde forventningerne. Hvis du søger efter, om Kakobuy er legitim eller sikker, skal du adskille eksistensen af en driftsproces fra pålideligheden af en bestemt transaktion. Denne vejledning er en dokumentbaseret købstjekliste, ikke en praktisk test eller en vurdering baseret på gennemførte køb.",
+            "Start med den nøjagtige beslutning foran dig. Du skal muligvis bekræfte, at et link tilhører den tilsigtede sælger, at en valgt størrelse matcher en tabel, eller at forsendelsen forbliver overkommelig. En samlet positiv anmeldelse kan ikke afklare nogen af disse kontroller i sig selv. Registrer, hvad der er kendt, hvor informationen stammer fra, og hvad der forbliver usikkert. Forpligt dig kun til en ordre, når de uafklarede punkter er acceptable for det specifikke køb, snarere end fordi en side betegner hele platformen som troværdig."
+          ]
+        },
+        {
+          "heading": "Adskil platform, sælger og opdagelseswebsted",
+          "paragraphs": [
+            "Kakobuy beskriver en agenttjeneste, der køber fra tredjepartssælgere og hjælper med at arrangere levering. Kakobuy Pick er et separat opdagelseswebsted: dets kataloglinks hjælper dig med at undersøge produkter, mens ordrer og betalinger administreres via Kakobuy. Et produkt, der vises i dette katalog, er ikke en anbefaling baseret på test, en officiel brandanbefaling eller et løfte om lagerbeholdning. Brug den originale liste og den aktuelle ordreformular til at bekræfte den vare, du har til hensigt at købe.",
+            "Hold kilde-URL'en og den valgte variant sammen. Lignende fotografier kan vises i forskellige lister, og et velkendt produktnavn fastslår ikke, at sælgeren eller indholdet er identiske. Sammenlign valgmulighedsteksten, de inkluderede dele og relevante mål efter åbning af købssiden. Hvis noget har ændret sig, skal du stoppe og afklare det før betaling. En katalogpris er en opdagelsesreference, så det viste beløb i en aktuel ordre kan variere, når varianten eller sælgerprisen ændres."
+          ]
+        },
+        {
+          "heading": "Læs de ordrespecifikke betingelser, før du betaler",
+          "paragraphs": [
+            "Den manuelle købsformular viser i øjeblikket strengere begrænsninger for visse tredjepartslinks, herunder ingen eftersalgsservice og ingen refusion, annullering eller ændring efter betaling. Dette er en væsentlig undtagelse fra den generelle returvejledning. En hjælpeartikel om almindelige lagerreturneringer må ikke behandles som en berettigelse for hvert manuelt indsendt køb. Læs de betingelser, der vises for din faktiske ordre, og bed support om at afklare eventuelle usikkerheder, før du accepterer dem.",
+            "Gem de vilkår, der gælder, sammen med produktlinket og den valgte variant. Hvis en liste er uklar omkring materialer, mål eller inkluderet tilbehør, giver en restriktiv ordre dig mindre plads til at afklare skuffelse senere. En fornuftig reaktion er at indhente de manglende oplysninger eller vælge en anden købsordning. Antag ikke, at lagerinspektion vil skabe en returret, som ordrebetingelserne udelukker. Det praktiske spørgsmål er, om du kan acceptere transaktionen på dens angivne vilkår."
+          ]
+        },
+        {
+          "heading": "Beregn beslutningen ud fra den samlede pris",
+          "paragraphs": [
+            "Før du sammenligner et køb fra en agent med en anden købsmulighed, skal du angive varens pris, indenrigslevering, international forsendelse og eventuelle yderligere tjenester, du vælger. Kontroller valutaen og det beløb, der faktisk anmodes om ved betalingen. En attraktiv produktpris repræsenterer ikke den fulde leveringspris. Den officielle forsendelsesestimator er nyttig til planlægning med din destination og pakkeinput, men et tidligt estimat bør forblive adskilt fra et endeligt tilbud på en pakke.",
+            "Brug en simpel sammenligningsnote med en kolonne for bekræftede beløb og en anden for uafklarede beløb. For eksempel kender du måske den valgte varepris, mens du stadig mangler pakkede dimensioner. Marker forsendelsesbeløbet som foreløbigt i stedet for at indsætte et præcist gæt. Gentag sammenligningen, når de relevante mål er tilgængelige. Hvis købet kun giver mening under det lavest tænkelige forsendelsesestimat, afhænger beslutningen af en usikkerhed, der fortjener opmærksomhed, før der investeres flere penge."
+          ]
+        },
+        {
+          "heading": "Forstå, hvad QC-fotos kan og ikke kan svare på",
+          "paragraphs": [
+            "Lagerfotos kan hjælpe dig med at sammenligne synlige funktioner med den valgte ordre, såsom farve, antal, størrelsesmærker og åbenlys stand. Bed om en målrettet visning, når der stadig er en specifik usikkerhed. En nyttig anmodning identificerer detaljen og den beslutning, den vil understøtte, i stedet for vagt at bede om bedre billeder. Hold sælgers marketingbilleder, offentlige fotos fra andre ordrer og billeder tilknyttet din egen ordre i separate kategorier, når du gennemgår beviserne.",
+            "Fotografier fastslår ikke ægthed, langvarig holdbarhed, komfort eller elektronikkens funktion. En tydelig etiket kan bekræfte teksten på den etiket uden at bevise alle påstande, der er knyttet til den. Hvis autentiske mærkevarer, teknisk ydeevne eller certificering er afgørende for dig, skal du vælge en købskanal, der giver passende verifikation. Dette katalog og dets vejledninger autentificerer ikke produkter. Behandl bevisernes grænser som en del af din udvælgelsesproces i stedet for at udfylde huller med antagelser."
+          ]
+        },
+        {
+          "heading": "Vurder leverings- og refusionskrav efter deres stadie",
+          "paragraphs": [
+            "En sælgers forsendelse, en lagerkvittering og en international pakkeforsendelse er forskellige begivenheder. Når du læser en leveringsanmeldelse, skal du kontrollere, hvilken hændelse der startede den rapporterede ventetid, og om destinationen og ruten matcher din situation. En hurtig lagerankomst siger ikke meget om den resterende internationale rejse. Ligeledes fastslår en pakkeforsinkelse ikke i sig selv, hvad der skete med en anden købers ordre. Specifikke daterede optegnelser er mere nyttige end en universel påstand om leveringshastighed.",
+            "Refusionsforløb kræver også en defineret fase. En berettiget sælgerreturnering kan involvere godkendelse, returtransport, sælgerrefusion og kreditering af Kakobuy-saldoen. Hævning af den tilgængelige saldo er en separat proces. Spørg, hvilket trin der afventer, og gem de relevante referencer. Fortolk ikke en rapporteret refusionsvarighed som en garanteret bankankomstdato, og antag ikke, at én vellykket refusion tilsidesætter de restriktive betingelser, der vises på en anden ordre. Brug den linkede refusionsvejledning til at skelne mellem disse processer."
+          ]
+        },
+        {
+          "heading": "Væg anmeldelser uden at gøre dem til garantier",
+          "paragraphs": [
+            "Led efter beviser, der matcher den påstand, der fremsættes. En nyttig redegørelse beskriver produktet, bestillingsfasen, relevante datoer og hvordan et problem blev håndteret. Et reklameskærmbillede med et købslink kan vise en rigtig vare, men stadig efterlade disse spørgsmål ubesvarede. Affiliate links bør oplyses, og deres tilstedeværelse er en grund til at læse den underliggende dokumentation omhyggeligt snarere end en grund til automatisk at acceptere eller afvise alle udsagn på siden.",
+            "Undgå at kombinere uafhængige oplevelser til en præcis succesrate. Offentlige kommentarer er ikke en kontrolleret stikprøve af alle transaktioner, og en håndfuld positive eller negative historier kan ikke understøtte en pålidelig procentdel. Når beviser er modstridende, skal du identificere den konkrete usikkerhed, du selv kan kontrollere: den aktuelle sælgerliste, skriftlige ordrebetingelser, inspektionsomfang eller tilgængelige forsendelsesmuligheder. Hvis en anmeldelse ikke kan hjælpe med at besvare nogen af disse spørgsmål, kan den være mindre nyttig for din beslutning end en direkte afklaring."
+          ]
+        },
+        {
+          "heading": "Træf en købsbeslutning med eksplicitte stoppunkter",
+          "paragraphs": [
+            "Brug tjeklisten nedenfor, før du betaler, efter ankomst til lageret og før du afsender en pakke. Skriv i hvert trin den tilstand ned, der ville få dig til at holde pause. Eksempler inkluderer en ubekræftet variant, en uforklarlig pris eller en synlig uoverensstemmelse, der ikke er blevet løst. Dette forvandler et bredt spørgsmål om tillid til et sæt beslutninger, du rent faktisk kan træffe. Det bevarer også en registrering, hvis supporten har brug for at forstå, hvordan problemet udviklede sig.",
+            "Start opdagelsen i regnearket, og åbn derefter den originale annonce og den officielle købsside for at fuldføre kontrollerne. Hold kommunikationen om en ordre inden for den relevante officielle supportproces, og undgå at dele kontooplysninger med uofficielle hjælpere. Kakobuy Pick kan modtage provision gennem offentliggjorte affilierede links; det ændrer ikke de begrænsninger, der er beskrevet her. Ingen vejledning kan garantere resultatet af en individuel transaktion, men klare beviser og realistiske forventninger gør beslutningen mere informeret."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bekræft sælgerlinket, den nøjagtige variant og gældende ordrebetingelser.",
+        "Adskil bekræftede omkostninger fra foreløbige pakkeestimater.",
+        "Brug kvalitetskontrol til synlige kontroller uden at behandle det som godkendelse.",
+        "Løs udestående problemer, før du betaler eller indsender en pakke."
+      ],
+      "table": {
+        "caption": "En praktisk bevisoptegnelse",
+        "headers": [
+          "Kontrol",
+          "Nyttig bevisførelse"
+        ],
+        "rows": [
+          [
+            "Identitet og genstand",
+            "Oprindelig sælgers URL, nøjagtig variant og aktuel ordreside"
+          ],
+          [
+            "Ordrebetingelser",
+            "Gældende vilkår for annullering, returnering og manuelt køb"
+          ],
+          [
+            "Pris og levering",
+            "Bekræftede gebyrer, foreløbige forsendelsesinput og valgt rute"
+          ],
+          [
+            "Inspektion og support",
+            "Ordrespecifikke fotos, uløste problemer og supportreference"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Find og match de rigtige fotos",
+      "seoTitle": "Kakobuy QC Finder: Find og match de rigtige fotos",
+      "description": "Find dine Kakobuy-ordrefotos og evaluer offentlige QC-resultater ved hjælp af det oprindelige sælgerlink, variant og billeddato. Lær, hvad du skal kontrollere, når der mangler fotos.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Start med varen og den type foto, du har brug for",
+          "paragraphs": [
+            "En søgning efter en Kakobuy QC-finder kan betyde at finde fotos til din egen ordre eller undersøge et produkt, før du køber. Dette er forskellige opgaver. For dit eget køb skal du starte i ordre- eller lagerområdet på din officielle konto og åbne den relevante vare. Ved research før køb er et offentligt fotoresultat kun en reference fra en anden annonce eller ordre, indtil du kan matche den med den nøjagtige sælger og variant, du overvejer.",
+            "Kakobuy Pick viser produktreferencefotografier leveret af katalogkilden. Den mærker ikke disse billeder som verificeret lager-QC og leverer ikke en offentlig database med ordrefotos. Trinene her hjælper dig med at finde og vurdere beviser; de låser ikke op for private fotografier eller garanterer, at der findes et offentligt billede for hver vare. Husk denne sondring, når en søgning returnerer attraktive billeder, men ikke giver nogen ordrekontekst, optagelsesdato eller original annoncereference."
+          ]
+        },
+        {
+          "heading": "Bevar det originale sælgerlink før søgning",
+          "paragraphs": [
+            "Kopier den originale annonce-URL, inklusive markedsplads og vare-id, ind i din researchnote. Et katalogs interne sidetal er ikke nødvendigvis sælgerens varenummer. Søgeværktøjer, der forventer et originalt sælgerlink, kan mislykkes eller returnere irrelevante resultater, hvis de i stedet gives en intern katalog-URL. Hvis du kun har et kort link, skal du åbne annoncen via dens normale offentlige side og verificere de endelige produktoplysninger, før du bruger den som din reference.",
+            "Registrer den valgte farve, størrelse, materialevalg og enhver pakke- eller tilbehørsmulighed. Flere varianter kan dele en annonce, mens separate sælgere kan genbruge meget lignende fotografier. At matche et produktnavn eller forsidebillede er derfor svagere bevis end at matche det originale link og den nøjagtige variant. Hvis linket ikke længere indlæses, skal du beholde dine eksisterende noter og bede om afklaring; udskift det ikke lydløst med en lignende annonce og antage, at fotografierne stadig er relevante."
+          ]
+        },
+        {
+          "heading": "Find billeder, der er knyttet til din egen ordre",
+          "paragraphs": [
+            "Den officielle købsguide leder brugerne til kontoens ordrer og lagerområder efter inspektion og opbevaring. Find ordren ved hjælp af den reference, der er knyttet til dit køb, og sammenlign derefter dens status med billedtilgængeligheden. Sælgers afsendelse betyder ikke, at lagerinspektionen er afsluttet. Hvis varen er ankommet, men de forventede billeder ikke er synlige, skal du kontrollere ordremeddelelserne og spørge support, om modtagelse, inspektion eller billedpublicering stadig afventer den pågældende vare.",
+            "Brug den officielle kontogrænseflade i stedet for at give dine loginoplysninger til en tredjepartsfinder. Når du anmoder om hjælp, skal du identificere ordren og den manglende visning uden at offentliggøre personlige adresseetiketter eller kontoskærmbilleder i et åbent forum. En præcis anmodning kan forklare, at den valgte beklædningsstørrelse er uklar, fordi etiketten ikke er synlig. Gem supportsvaret sammen med ordreregistreringen, så du kan skelne en behandlingsopdatering fra en bekræftelse på, at den anmodede inspektion faktisk er gennemført."
+          ]
+        },
+        {
+          "heading": "Match offentlige resultater, før du drager konklusioner",
+          "paragraphs": [
+            "For ethvert offentligt fotoresultat skal du kontrollere sælgerlinket, den valgte variant, optagelsesdatoen, når den er tilgængelig, og om den afbildede vare er beskrevet som tilhørende en faktisk ordre. Et nyligt foto af en anden størrelse kan stadig hjælpe med synlig konstruktion, men det er ikke en måleregistrering for din valgte størrelse. Et ældre foto kan afspejle en anden produktionsbatch eller listekonfiguration. Hvor resultatet mangler kontekst, skal du registrere usikkerheden i stedet for at opgradere billedet til verificeret bevis.",
+            "Sammenlign flere karakteristiske detaljer, såsom lommeplacering, lukning, inkluderede dele og etikettayout. At matche disse detaljer kan gøre en reference mere relevant, men det beviser stadig ikke, at den næste ordre vil være identisk. Hvis det offentlige billede er i konflikt med sælgerens nuværende valgtekst, skal du afklare forskellen, før du køber. Den sikreste konklusion kan være, at de tilgængelige billeder er utilstrækkelige, snarere end at det fotografi, der ser mest overbevisende ud, skal være det korrekte."
+          ]
+        },
+        {
+          "heading": "Lav en manglende detalje om til en nyttig fotoanmodning",
+          "paragraphs": [
+            "En nyttig fotoanmodning navngiver den nøjagtige del af varen og hvordan den skal vises. For en jakke kan det betyde den fulde lynlåsforbindelse eller brystet målt fladt mellem bestemte punkter. For et par sko kan det betyde både størrelsesmærker og et klart udsyn til sålerne. Spørg, om den ønskede visning eller måling er tilgængelig, og om den koster penge, før du antager, at den er inkluderet i normal inspektion.",
+            "Undgå at bede om mange næsten identiske fotografier, der ikke kan afgøre beslutningen. Hvis problemet er en målemetode, skal du anmode eksplicit om den metode. Hvis problemet er, hvilket tilbehør der er inkluderet, skal du bede om delene lagt sammen. Et klart mål gør svaret lettere at evaluere. Hold sondringen mellem et foto, en måling og en funktionstest: et fotografi af en strømforsynet enhed ville for eksempel ikke demonstrere alle funktioner eller dens langsigtede pålidelighed."
+          ]
+        },
+        {
+          "heading": "Læs fotos med ensartede sammenligningsbetingelser",
+          "paragraphs": [
+            "Brug de samme referencepunkter, når du sammenligner dimensioner. En flad beklædningsgenstandsbredde, en kropsomkreds og et udvendigt mål af en pakke beskriver forskellige ting. Kontroller enhederne og start- og slutpunkterne, før du behandler et tal som en størrelsesmatch. Perspektiv og et løst placeret målebånd kan gøre et billede vanskeligt at fortolke. Hvis beviserne er tvetydige, skal du søge afklaring i stedet for at bygge en præcis pasformsanbefaling på en usikker måling.",
+            "Farve og tekstur afhænger også af belysning, kameraindstillinger og din skærm. En forskel mellem et sælgerfotografi og et lagerfotografi kan berettige et nærmere kig, men det fastslår ikke automatisk den nøjagtige årsag. Beskriv det synlige problem specifikt, når du kontakter support. Fotos kan understøtte en tilstands- eller variantkontrol; de kan ikke uafhængigt bevise fibersammensætning, ægthed, komfort, holdbarhed eller fravær af skjulte fejl. Brug den dedikerede QC-vejledning til en mere omfattende inspektionstjekliste."
+          ]
+        },
+        {
+          "heading": "Håndter manglende resultater og uoverensstemmelser hurtigt",
+          "paragraphs": [
+            "Intet offentligt QC-resultat beviser ikke i sig selv, at en vareliste er ny, usikker eller utilgængelig. Det kan simpelthen betyde, at der ikke er offentliggjort et matchende billede i den kilde, du søgte efter. Gå tilbage til sælgerinformationen i realtid, og beslut, hvilke spørgsmål der skal besvares før køb. Efter ankomst til lageret er en uoverensstemmelse i dine egne ordrebilleder et mere direkte problem: behold billederne, identificer den valgte mulighed, og spørg support om det relevante næste trin.",
+            "Kontroller de faktiske ordrebetingelser, før du antager, at en returnering er mulig. Den manuelle købsformular har strengere begrænsninger for visse tredjepartslinks, herunder begrænsninger på annullering, refusion og eftersalg. For berettigede almindelige ordrer har returneringsbeslutningen stadig sin egen deadline og betingelser. At vente på flere offentlige fotografier forlænger ikke denne deadline. Løs først det ordrespecifikke problem, og hold varen, etiketterne og emballagen i den stand, der kræves til enhver tilgængelig returproces."
+          ]
+        },
+        {
+          "heading": "Hold styr på den næste beslutning.",
+          "paragraphs": [
+            "Brug sammenligningstabellen nedenfor som en dokumentation snarere end et scorekort. Adskil det, der er synligt bekræftet, fra det, der forbliver ukendt. For eksempel kan et etiketfoto bekræfte den valgte størrelsestekst, mens den anvendelige pasform forbliver usikker. Et tilbehørslayout kan bekræfte mængde, mens funktionaliteten forbliver utestet. Denne adskillelse forhindrer, at et betryggende fotografi bruges til at understøtte påstande, som det faktisk ikke kan fastslå.",
+            "Når de nødvendige kontroller er udført, skal du gå videre til den næste relevante opgave: størrelsesfortolkning, en returanmodning eller pakkeplanlægning. Behold det originale link og nyttige mål til fremtidig reference, men tjek en liste igen, når du bestiller igen, da lagerbeholdning og muligheder kan ændre sig. Hvis du offentliggør din egen anmeldelse, skal du fjerne personlige identifikatorer og beskrive det nøjagtige omfang af beviserne. En klar, begrænset observation er mere nyttig for en anden køber end en uunderbygget påstand om, at en sælger eller et produkt er universelt sikkert.",
+            "Før du accepterer et resultat som et match, skal du skrive en kort redegørelse for, hvad det ændrer i din beslutning. Hvis fotografiet kun gentager sælgerens reklamebillede, tilføjer det kun lidt uafhængig information. Hvis det viser den ønskede måling til din egen ordre, kan det afklare en specifik usikkerhed om match. Hold både beviserne og deres begrænsninger i samme note, så konklusionen forbliver forståelig senere."
+          ]
+        }
+      ],
+      "checklist": [
+        "Hold det originale sælgerlink adskilt fra et katalogsidenummer.",
+        "Brug din officielle konto til fotografier af din egen ordre.",
+        "Match varianten og konteksten, før du stoler på et offentligt billede.",
+        "Løs synlige uoverensstemmelser inden for de gældende ordrebetingelser."
+      ],
+      "table": {
+        "caption": "En fotomatchningsoptegnelse",
+        "headers": [
+          "Kontrol",
+          "Nyttig dokumentation"
+        ],
+        "rows": [
+          [
+            "Annoncematch",
+            "Oprindelig markedsplads-URL og sælgers vare-id"
+          ],
+          [
+            "Variantmatch",
+            "Valgt farve, størrelse, inkluderede dele og synlige forskelle"
+          ],
+          [
+            "Fotokontekst",
+            "Din egen ordre eller offentlige reference; dato og manglende kontekst"
+          ],
+          [
+            "Beslutning",
+            "Synligt resultat, resterende usikkerhed og næste handling"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Italien: Bestilling, forsendelsesomkostninger og sporing",
+      "seoTitle": "Kakobuy Italien: Bestilling, forsendelsesomkostninger og sporing",
+      "description": "Planlæg en Kakobuy-ordre til Italien: bekræft sælgers links, estimer den fulde pakkepris, tjek tilgængelige ruter og følg den korrekte sporingsfase.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Planlæg en ordre til Italien ud fra hele rejsen",
+          "paragraphs": [
+            "Bestilling via Kakobuy til levering til Italien involverer et køb hos sælger, transport til lageret, inspektion og en separat international pakke. Produktprisen alene beskriver ikke hele rejsen. Start med at bekræfte varen, og tjek derefter, om de nuværende forsendelsesmuligheder accepterer din destination og dit indhold. Denne guide forklarer de beslutninger, du skal træffe; den lover ikke en bestemt rute, leveringsdato eller fast forsendelsespris for hver italiensk adresse.",
+            "Hvis du undersøger, hvordan Kakobuy fungerer i Italien, skal du have en kort ordreplan med sælgerlinket, den valgte variant, den tilsigtede leveringsadresse og de spørgsmål, der stadig er åbne. Beslut, om købet har en fast deadline, før du betaler. En pakke beregnet til en specifik begivenhed kræver mere forsigtighed end en ordre med en fleksibel ankomstdato, fordi sælgerforberedelse og lagerhåndtering sker, før international transit overhovedet begynder. Sammenlign alternativer ved hjælp af hele processen i stedet for et transitestimat isoleret."
+          ]
+        },
+        {
+          "heading": "Tjek sælgers annonce og den valgte variant",
+          "paragraphs": [
+            "Brug regnearket til at finde kandidater, og åbn derefter den originale sælgers annonce og den officielle købsside. Bekræft den nøjagtige farve, størrelse, model og inkluderede dele. Produktnavne og fotografier kan genbruges på tværs af annoncer, så behold den originale URL med den valgte mulighed. Hvis automatisk import mislykkes, skal du kun bruge den nuværende officielle manuelle købsproces efter at have læst dens betingelser og angivet nøjagtige oplysninger. Et lignende billede er ikke en pålidelig erstatning for den originale annonce.",
+            "Vær særlig opmærksom på restriktive vilkår for manuelle bestillinger. Den nuværende manuelle formular advarer om, at visse tredjepartskøb mangler eftersalgsservice og ikke kan refunderes, annulleres eller ændres efter betaling. Generel vejledning til returnering af varer tilsidesætter ikke disse betingelser. Hvis du er usikker på en størrelsesguide, et materiale eller tilbehør, skal du løse det, før du accepterer ordren. Beslutningen bør afhænge af de vilkår, der vises for det pågældende køb, ikke af en antagelse om, at alle varer kan returneres senere."
+          ]
+        },
+        {
+          "heading": "Sammenlign størrelser ved hjælp af produktets målemetode",
+          "paragraphs": [
+            "En italiensk tøj- eller fodtøjsstørrelse, som du normalt bruger, er ikke nok til at vælge en variant fra en ukendt sælger. Sammenlign den specifikke annonces skema med en vare, der passer dig, og noter målemetoden. Mål på flade beklædningsgenstande og kropsmål er forskellige. For beklædning skal du identificere de dimensioner, der er vigtige for det tilsigtede snit og lagdeling. For sko skal du skelne mellem fodlængde, indersålslængde og ydersålslængde i stedet for at behandle hvert længdenummer som udskifteligt.",
+            "Hvis skemaet mangler eller er tvetydigt, skal du bede om afklaring, før du bestiller. Efter ankomst til lageret kan en målrettet måling hjælpe med at løse et udestående spørgsmål, med forbehold for inspektionstjenesten og eventuelle gebyrer. Et foto på etiketten kan verificere den valgte etiket, men kan ikke garantere komfort. Brug størrelsesguiden linket nedenfor til en struktureret sammenligning, og gem dine mål til fremtidige køb. Undgå en universel instruktion om at vælge en større størrelse, da det kan ændre længde og proportioner uden at løse det oprindelige pasformsproblem."
+          ]
+        },
+        {
+          "heading": "Estimer forsendelse med destination og pakkeinput",
+          "paragraphs": [
+            "Åbn den officielle estimator, og vælg Italien som destination, når denne mulighed er tilgængelig. Indtast den relevante varetype, vægt og dimensioner, og læs derefter begrænsningerne og faktureringsoplysningerne for de returnerede ruter. Et tomt resultat er en grund til at kontrollere input eller spørge support, ikke til at antage, at en annonceret rute vil acceptere pakken. Tilgængelighed kan afhænge af indholdet og den pakkede pakke, så verificér igen før endelig indsendelse.",
+            "Før varerne når lageret, skal du mærke dine dimensioner og vægte som estimater. Opdater sammenligningen, når målte oplysninger bliver tilgængelige, og igen, hvis emballagen ændres. Vægtsammenligningen på dette websteds forsendelsesside illustrerer faktisk og volumetrisk vægt; det er ikke en live prisberegner. Brug den divisor og faktureringsmetode, der er angivet af ruten, i stedet for at anvende en universel formel på alle transportører. En lettere vare kan stadig optage nok plads til at ændre forsendelsesberegningen."
+          ]
+        },
+        {
+          "heading": "Opret en omkostningsnota uden at opfinde en samlet pris",
+          "paragraphs": [
+            "Angiv den valgte varepris, indenrigslevering, international forsendelse og valgfrie tjenester separat. Kontroller betalingsvalutaen og det beløb, der anmodes om af den aktuelle betalingsmetode. Behold eventuelle gebyrer beskrevet i rutebetingelserne i deres egne poster, og undgå at tælle et gebyr to gange blot fordi forskellige hjælpesider bruger forskellige etiketter. Et estimat i dollars bør ikke behandles som en garanteret eurodebet. Sammenlign de bekræftede beløb, der vises under den faktiske transaktion.",
+            "For levering til Italien må du ikke fortolke et rutenavn eller en salgsfremmende beskrivelse som bevis på, at alle mulige ankomstgebyrer er inkluderet. Læs, hvad det aktuelle tilbud udtrykkeligt dækker, og bed om afklaring, hvor formuleringen er uklar. Denne vejledning offentliggør ikke en skattesats, toldgrænse eller et garanteret toldresultat. Et nyttigt budget registrerer, hvad der er inkluderet, hvad der er ekskluderet, og hvad der forbliver ukendt, så du kan afgøre, om det samlede beløb forbliver acceptabelt før international forsendelse."
+          ]
+        },
+        {
+          "heading": "Gennemgå inspektionsresultaterne, før du kombinerer varer",
+          "paragraphs": [
+            "Når varerne er opbevaret, skal du sammenligne de billeder, der er knyttet til din egen ordre, med den valgte variant. Kontroller synlig stand, mængde og de mål, der er vigtige for dig. Offentlige referencebilleder fra en anden ordre kan ikke erstatte denne anmeldelse. Hvis noget ser forkert ud, skal du gemme billedet og ordreoplysningerne og derefter kontakte support med det samme. Løs problemet, før du kombinerer varen med andre køb eller anmoder om international forsendelse, mens de relevante muligheder stadig er tilgængelige.",
+            "Hvis du har til hensigt at kombinere tøj, sko og accessories, skal du sammenligne den resulterende pakke med rutens restriktioner og emballagekrav. Fjernelse af unødvendig emballage kan påvirke volumen, men beskyttelse og eventuelle returbetingelser er stadig vigtige. Spørg om den foreslåede emballage i stedet for at antage, at komprimering eller fjernelse af kasser passer til alle varer. Fristen for lageropbevaring er adskilt fra en sælgers returfrist, så det at vente på en anden vare bevarer ikke de samme eftersalgsmuligheder på ubestemt tid."
+          ]
+        },
+        {
+          "heading": "Spor den fase, der rent faktisk gælder",
+          "paragraphs": [
+            "Hold købsordrereferencer og internationale pakkereferencer adskilte. En indenlandsk sporingshændelse markeret som leveret kan henvise til modtagelse på lageret, ikke levering i Italien. International sporing bliver relevant for den afsendte pakke og dens transportørs rejse. Når en opdatering ser ud til at være forsinket, skal du registrere den sidste hændelse, dens dato og den sporingsreference, du tjekker. Spørg support, hvilken fase der afventer, i stedet for at behandle hver stille periode som den samme type forsinkelse.",
+            "Følg enhver overdragelses- eller lokal leveringsreference, der er angivet via den officielle pakkeregistrering. Antag ikke, at en bestemt italiensk transportør vil håndtere alle ruter, eller at der skal findes et nyt sporingsnummer for hver forsendelse. Hvis det angivne leveringsvindue er overskredet, eller registreringen viser et problem, skal du angive den nøjagtige pakkereference og den sidste synlige hændelse, når du beder om hjælp. Gem det accepterede forsendelsestilbud, så du kan skelne det angivne omfang fra et tidligere planlægningsestimat."
+          ]
+        },
+        {
+          "heading": "Forbered levering og behold beviserne",
+          "paragraphs": [
+            "Kontroller, at modtagerens navn, adresse, postnummer og kontaktoplysninger er korrekte, før du afsender pakken. Ved levering skal du straks inspicere den ydre emballage og indholdet. Hvis der er synlige skader eller en manglende vare, skal du gemme emballagen og relevante fotografier og straks kontakte den relevante supportkanal. Læs de aktuelle kvitterings- og reklamationskrav for din pakke. Et fotografi af pakken kan understøtte en rapport, men det giver ikke i sig selv ret til kompensation.",
+            "Efter en vellykket levering skal du gemme nyttige tøjmål, pakkeoplysninger og rutebeskrivelsen til sammenligning. Behandl dem som registreringer af den pågældende ordre snarere end permanente løfter til den næste. Når du bestiller igen, skal du kontrollere sælgeren, tilgængelige varianter og det aktuelle forsendelsestilbud igen. Start med kategorilinkene nedenfor for at finde dem, og brug derefter forsendelses-, sporings- og refusionsvejledningerne til de specifikke beslutninger, de dækker. Dette holder produktgennemsyn forbundet med praktiske kontroller i stedet for at stole på en enkelt bred anbefaling.",
+            "For et simpelt planlægningseksempel kan du sammenligne forsendelse af et færdigt tøj nu med at vente på sko, der endnu ikke er nået til lageret. Registrer den uafklarede forsendelse fra sælger, den mulige ændring af emballagen og de separate returfrister. Gå ikke ud fra, at det vil spare penge at vente, indtil den samlede pakke kan estimeres ved hjælp af realistiske input. Det bedre valg afhænger af det aktuelle tilbud, beskyttelsesbehov og din deadline, ikke blot antallet af varer i pakken."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bekræft den nøjagtige liste og gældende betingelser for manuel bestilling.",
+        "Kontroller tilgængeligheden af Italien-ruten igen ved hjælp af de faktiske pakkeinput.",
+        "Adskil varens pris, betalingsbeløb og forsendelsestilbud.",
+        "Hold ordre- og pakkesporingsoptegnelser adskilt, og gennemgå leveringen omgående."
+      ],
+      "table": {
+        "caption": "En ordreplanlægningsrapport for Italien",
+        "headers": [
+          "Kontrol",
+          "Nyttig dokumentation"
+        ],
+        "rows": [
+          [
+            "Før køb",
+            "Sælgers URL, nøjagtig variant, størrelsesmetode og ordrebetingelser"
+          ],
+          [
+            "Før forsendelse",
+            "Italiensk destination, indhold, pakkemål og tilgængeligt tilbud"
+          ],
+          [
+            "Under transport",
+            "Pakkereference, sidste daterede begivenhed og eventuelle officielle overdragelsesoplysninger"
+          ],
+          [
+            "Ved levering",
+            "Pakkens tilstand, indhold og gældende rapporteringskrav"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "Den officielle guide advarer specifikt om minimumskøbsmængder på 1688. En vist pris kan afhænge af mængde eller variant. Tjek, om din påtænkte ordre opfylder sælgerens krav, før du sammenligner den med et tilbud i ét stykke andetsteds. Tjek også om det valgte antal ændrer indenlandsk porto.",
             "Før du betaler, skal du gennemgå ordreoversigten som helhed: korrekt vare, korrekt mulighed, korrekt mængde og en komplet købspris. Gem det resulterende ordrenummer og noter. Hvis der opstår et problem senere, hjælper disse oplysninger support med at sammenligne købsanmodningen med den modtagne vare."
           ]
+        },
+        {
+          "heading": "Læs betingelserne på den manuelle købsformular",
+          "paragraphs": [
+            "Før du anvender denne vejledning, skal du kontrollere de betingelser, der vises for din nøjagtige ordre. Den officielle manuelle købsformular advarer i øjeblikket om, at visse tredjepartslinks ikke har nogen eftersalgsservice og ikke understøtter refusion, annullering eller ændringer efter betaling. Den generelle returneringsproces på lageret er derfor ikke tilgængelig for alle køb. Afklar en usikker variant, pris eller returneringsbetingelse, før du betaler; antag ikke, at et inspektionsfoto giver en returret."
+          ]
         }
       ],
       "checklist": [
@@ -1176,7 +1507,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy-links: åbn annoncer, kontrollér varianter og bestil"
     },
     {
@@ -1320,6 +1651,13 @@
             "For en hættetrøje eller fodboldtrøje skal du skrive referencebeklædningsgenstandens brystvidde og -længde ud for sælgers værdier. Marker eventuelle forskelle, du rent faktisk ønsker, f.eks. mere plads til lagdeling eller en kortere krop. Tjek ærmekonstruktionen, før du sammenligner ærmenumre. En sænket skulder og en konventionel skuldersøm kan bruge forskellige udgangspunkter, så identiske tal giver ikke nødvendigvis identisk rækkevidde.",
             "Hvis sælgeren kun giver et forslag til højde og vægt, skal du spørge om beklædningsgenstandens mål, når pasformen er vigtig. For sko skal du spørge, hvilken længde diagrammet repræsenterer, og om en modelspecifik breddebeskrivelse er tilgængelig. Registrer den uafklarede måling, før du bestiller; anmod derefter om den nøjagtige kontrol på lageret, hvis det er nødvendigt. Målet er en klar sammenligning, ikke en universel konvertering fra et mærkes størrelsesbogstav til et andet."
           ]
+        },
+        {
+          "heading": "Brug en måleforskel til at træffe en specifik beslutning",
+          "paragraphs": [
+            "Overvej et referencebeklædningsgenstand med komfortabel brystplads, men ærmer, der føles for korte. Sammenlign forskelle i bryst og ærmer separat med sælgers diagram; reducer ikke beslutningen til en enkelt instruktion om at gå op i størrelsen. Bekræft, at begge ærmemål bruger samme udgangspunkt. Hvis diagrammet bruger en anden metode, skal du spørge efter det manglende mål, før du behandler tallene som sammenlignelige.",
+            "Behold den valgte variant ved siden af målesedlen, og sammenlign den igen, når ordrespecifikke billeder ankommer. En matchende størrelsesetiket bekræfter ikke beklædningsgenstandens målte dimensioner. Hvis et mål er nødvendigt, skal du spørge, om lageret kan levere den nøjagtige kontrol, og om det har et gebyr. Fremsæt anmodningen tidligt nok til at handle under de gældende købsbetingelser."
+          ]
         }
       ],
       "checklist": [
@@ -1354,7 +1692,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy størrelsesguide: tøj og sko"
     },
     {
@@ -1409,6 +1747,13 @@
             "Før lageropmåling skal du oprette et let og et tungt planlægningsscenarie, og notere hvilke værdier der er estimater. Inkluder emballagen og alt tilsigtet indhold. Brug begge scenarier i den officielle estimator med samme destination og varetype. Hvis prisen ændrer sig nok til at påvirke din købsbeslutning, skal du vente på bedre information i stedet for at præsentere en omtrentlig produktvægt som et præcist forsendelsestilbud.",
             "Vægtsammenligningen på denne side illustrerer kun beregningen. Den kender ikke den aktuelle rutetakst, faktureringstrin, minimumsgebyr, tillæg eller indholdsbegrænsninger. Læs disse betingelser i det officielle tilbud, og opdater inputtet efter pakning. En nøjagtig multiplikation kan stadig give et upassende budget, hvis den valgte divisor eller pakkemål ikke stemmer overens med den faktiske service."
           ]
+        },
+        {
+          "heading": "Sammenlign tilbud med de samme pakkeforudsætninger",
+          "paragraphs": [
+            "Når du sammenligner ruter, skal du holde destination, varetype, pakket vægt og dimensioner konstante. Registrer, om hvert tilbud inkluderer de tjenester, du har til hensigt at vælge, og noter eventuelle afrundinger eller minimumsgebyrer angivet for ruten. En sammenligning med uemballeret vægt på én rute og pakket vægt på en anden kan give en tilsyneladende besparelse, der forsvinder ved afsendelse.",
+            "Beregneren på denne side sammenligner kun vægte. Den kan ikke fastslå rutetilgængelighed, en valutakurs eller et beløb, der skal betales for fragt. Hvis du ændrer emballagen, skal du opdatere det officielle estimat, før du træffer en beslutning. Gem det tidligere estimat og det accepterede pakketilbud som separate poster, så senere justeringer kan spores til de ændrede input."
+          ]
         }
       ],
       "checklist": [
@@ -1443,7 +1788,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy Forsendelsesberegner: Vægt og omkostninger"
     },
     {
@@ -1597,6 +1942,13 @@
             "Tiden til lageret er forskellig fra den tilladte tid på lageret. Sælgers forberedelse og indenlandsk levering sker før lagermodtagelse; inspektion og kontoopdateringer følger deres egen arbejdsgang. Kontroller først sælgers afsendelse og indenlandsk sporing. En scanning af leveringen skal matches med din ordre, før du antager, at varen er tilgængelig til afsendelse i en international pakke.",
             "Hvis transportøren viser levering, men ordren ikke er vist som opbevaret, skal du angive det indenlandske sporingsnummer, leveringshændelsen og ordrenummeret for at understøtte det. Spørg, om modtagelse, ejerskabsmatchning eller inspektion afventer. Start ikke en nedtælling til lageret fra en gættet sælgers afsendelsesdato, og behandl ikke den normale 100-dages tilladelse som et løfte om behandlingshastighed."
           ]
+        },
+        {
+          "heading": "Vælg den næste handling fra den nærmeste deadline",
+          "paragraphs": [
+            "Gennemgå hver opbevaret vare i forhold til både dens opbevaringsfrist og enhver gældende returfrist. Marker den først som klar til afsendelse, når den valgte variant og synlige tilstand er blevet kontrolleret. Hvis en vare har et uløst problem, skal du kontakte support nu i stedet for at vente på resten af en planlagt pakke. Lav en separat note for varer, du har til hensigt at beholde, og varer, der afventer en sælgers beslutning.",
+            "For en praktisk sammenligning kan du forestille dig, at en jakke er klar, men en anden sælger ikke har sendt et par sko. Ventetid kan ændre pakkeomkostningerne, men den mulige besparelse løser ikke jakkens returfrist. Kontroller først den umiddelbare beslutning, og sammenlign derefter pakkemulighederne ved hjælp af realistiske pakkemål. Beskriv ikke en antaget kombineret pakkebesparelse som et bekræftet beløb."
+          ]
         }
       ],
       "checklist": [
@@ -1631,7 +1983,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy Lager: Opbevaringstid og deadlines"
     },
     {
@@ -1765,6 +2117,13 @@
             "En uændret hændelse identificerer ikke i sig selv årsagen til en forsinkelse. Bekræft først, at du ser den internationale pakke i stedet for sælgerens indenlandske forsendelse. Sammenlign derefter hændelsesdatoen med den valgte linjes aktuelle estimat og eventuelle meddelelser, der er knyttet til forsendelsen. En etiket, der er oprettet før afhentning, er en anden situation end en pakke med en senere transportør- eller destinationsscanning.",
             "Bed support om at bekræfte den afventende fase ved hjælp af pakkenummer, rute, seneste hændelse og dato. Hvis du skal foretage dig noget, skal du anmode om de nøjagtige oplysninger og den officielle kanal, der er nødvendig. Opfind ikke et fast antal dage, hvorefter hver pakke er tabt, og lov ikke en leveringsdato ud fra en generisk statusetiket. Gem svaret sammen med den eksisterende sag, så opfølgningen kan adressere det, der stadig er uløst."
           ]
+        },
+        {
+          "heading": "Forbered en nyttig anmodning om sporingssupport",
+          "paragraphs": [
+            "Før du kontakter support, skal du registrere ordre- eller pakkereferencen, den sidste synlige status, begivenhedsdatoen og hvilken rejse referencen beskriver. Angiv det manglende næste trin: sælgers afsendelse, lagerinspektion, pakkeafsendelse eller en opdatering fra transportøren. Hvis der angives en officiel overdragelsesreference, skal du også kontrollere denne registrering. Antag ikke, at alle ruter bruger den samme lokale transportør eller opdateringsplan.",
+            "Beskriv, hvad registreringen viser, i stedet for at antage årsagen til en forsinkelse. En indenlandsk leveringshændelse og en international leveringshændelse har forskellige betydninger, mens en oprettet forsendelsesetiket ikke altid fastslår transportørens besiddelse. Spørg, hvilken part der i øjeblikket besidder varen eller pakken, og hvilken handling der kræves af dig. Gem svaret med det accepterede forsendelsesestimat og din ordrehistorik."
+          ]
         }
       ],
       "checklist": [
@@ -1799,7 +2158,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy leveringstid og sporingsstatus"
     },
     {
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Åbn den relevante ordre, og identificer det senest gennemførte trin: anmodning indsendt, sælgeraftale, returnering afsendt, sælgerkvittering, refusion bekræftet eller saldo krediteret. Registrer dato og beløb vist. Spørg derefter support om det næste manglende trin med ordrenummeret og den eksisterende sagsreference. En pakke, der stadig sendes tilbage til sælgeren, og en krediteret saldo, der venter på udbetaling, kræver en anden opfølgning.",
             "Hvis saldoen er blevet krediteret, skal du kontrollere udbetalingshistorikken separat. Bekræft destinationsbetalingskanalen, status og enhver angivet reference. Beskriv ikke lagerrefusionen som uafsluttet, udelukkende fordi pengene ikke er nået en bankkonto gennem en separat udbetaling. Hold eventuelle angivne tider knyttet til den fase, de beskriver, og behandl ikke den betingede 7-15-dages reference som en garanti for hver sag."
           ]
+        },
+        {
+          "heading": "Kontroller købsbetingelserne, før du bruger returtidslinjen",
+          "paragraphs": [
+            "Før du anvender denne vejledning, skal du kontrollere de viste betingelser for din nøjagtige ordre. Den officielle manuelle købsformular advarer i øjeblikket om, at visse tredjepartslinks ikke har nogen eftersalgsservice og ikke understøtter refusion, annullering eller ændringer efter betaling. Den generelle lagerreturneringsproces er derfor ikke tilgængelig for alle køb. Afklar en usikker variant, pris eller returbetingelse, før du betaler; antag ikke, at et inspektionsfoto skaber en returret.",
+            "For en berettiget forsinket returnering skal du føre en kort statusoversigt: godkendelse anmodet, sælgers svar, returneringsforsendelse, sælgerkvittering og saldokredit. Spørg support for den udestående fase og referencen, der bekræfter fuldførelse. Når saldoen er krediteret, skal du registrere enhver separat hæveanmodning uafhængigt. Dette gør den næste handling tydeligere end at genstarte den samme returneringsanmodning eller tælle hvert trin fra købsdatoen."
+          ]
         }
       ],
       "checklist": [
@@ -1898,7 +2265,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy Refusionstid & Lagerreturnering"
     }
   ],

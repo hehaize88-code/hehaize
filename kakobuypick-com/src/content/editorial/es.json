@@ -74,7 +74,10 @@
       "invalid": "Introduce un número positivo en cada campo.",
       "note": "La regla del «peso mayor» es solo un ejemplo. Tu ruta puede aplicar reglas de facturación, redondeos o cargos mínimos diferentes.",
       "official": "Abrir la herramienta oficial de estimación de envíos"
-    }
+    },
+    "navShipping": "Envío",
+    "articleTopics": "Elija su siguiente paso",
+    "productGuides": "Verifique antes de realizar el pedido"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "¿Qué pasa si el enlace de un producto no se carga automáticamente?",
-      "a": "La guía de compras oficial incluye un formulario de compra manual para listados que no se pueden importar. Ingrese la URL del vendedor real y los detalles precisos del artículo. No invente un precio ni seleccione un producto de apariencia similar sin consultar el listado y preguntar al comprador cuando sea necesario.",
+      "a": "La guía de compra oficial incluye un formulario de compra manual para los listados que no se pueden importar. Ingrese la URL real del vendedor y los detalles exactos del artículo. No invente un precio ni seleccione un producto de apariencia similar sin verificar el listado y consultar con el comprador cuando sea necesario. Antes de aplicar esta guía, verifique las condiciones que se muestran para su pedido específico. El formulario de compra manual oficial advierte actualmente que ciertos enlaces de terceros no ofrecen servicio posventa y no admiten reembolsos, cancelaciones ni cambios después del pago. Por lo tanto, el proceso general de devolución del almacén no está disponible para todas las compras. Aclare cualquier variante, precio o condición de devolución que no esté claro antes de pagar; no asuma que una foto de inspección crea un derecho de devolución.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "¿Se aplica la regla de devolución de cinco días a todos los productos?",
-      "a": "No. Las reglas oficiales de devolución están condicionadas a la aceptación del vendedor, la elegibilidad del producto, la condición y el tiempo después del almacenamiento en almacén. Se excluyen algunas categorías y embalajes modificados. Verifique la fecha límite y la elegibilidad del pedido con prontitud; El almacenamiento de 100 días no es un derecho de devolución de 100 días.",
+      "a": "No. Las normas oficiales de devolución están sujetas a la aceptación del vendedor, la elegibilidad del producto, su estado y el plazo transcurrido tras su almacenamiento en almacén. Algunas categorías y los embalajes alterados están excluidos. Compruebe la fecha límite y la elegibilidad de su pedido con prontitud; 100 días de almacenamiento no implican un derecho de devolución de 100 días. Antes de aplicar estas directrices, consulte las condiciones específicas de su pedido. El formulario oficial de compra advierte que algunos enlaces de terceros no ofrecen servicio posventa ni admiten reembolsos, cancelaciones o cambios tras el pago. Por lo tanto, el proceso general de devolución desde almacén no está disponible para todas las compras. Aclare cualquier duda sobre la variante, el precio o las condiciones de devolución antes de pagar; no dé por sentado que una foto de inspección le otorga el derecho a devolución.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "¿Es fiable Kakobuy? Costes, QC y devoluciones",
+      "seoTitle": "¿Es fiable Kakobuy? Costes, QC y devoluciones",
+      "description": "Evalúa Kakobuy utilizando su proceso de compra publicado, los límites de inspección y las condiciones de devolución. Verifica al vendedor, el costo total y los términos del pedido antes de pagar.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "¿Qué puede demostrar la evidencia disponible?",
+          "paragraphs": [
+            "Kakobuy publica un flujo de trabajo de compra, una guía de inspección de almacén y páginas de ayuda para envíos y servicio posventa. Estos documentos explican cómo se supone que funciona el servicio; no prueban por sí solos que todos los vendedores, paquetes o reembolsos cumplan con las expectativas. Si buscas información sobre la legitimidad y seguridad de Kakobuy, distingue entre la existencia de un proceso operativo y la confiabilidad de una transacción en particular. Esta guía es una lista de verificación de compra basada en documentos, no una prueba práctica ni una calificación basada en compras completadas.",
+            "Comienza con la decisión exacta que tienes ante ti. Es posible que necesites confirmar que un enlace pertenece al vendedor previsto, que la talla seleccionada coincide con la tabla de tallas o que el envío sigue siendo asequible. Una reseña positiva por sí sola no resuelve ninguna de estas dudas. Registra la información conocida, su origen y las incertidumbres. Confirma el pedido solo cuando los puntos pendientes sean aceptables para esa compra específica, y no porque una página indique que toda la plataforma es fiable."
+          ]
+        },
+        {
+          "heading": "Separa la plataforma, el vendedor y el sitio web de búsqueda.",
+          "paragraphs": [
+            "Kakobuy describe un servicio de intermediación que compra a vendedores externos y ayuda a gestionar la entrega. Kakobuy Pick es un sitio web de búsqueda independiente: sus enlaces de catálogo te ayudan a investigar productos, mientras que los pedidos y pagos se gestionan a través de Kakobuy. Que un producto aparezca en este catálogo no constituye una recomendación basada en pruebas, un respaldo oficial de la marca ni una garantía de disponibilidad. Utiliza la publicación original y el formulario de pedido actual para verificar el artículo que deseas comprar.",
+            "Mantén juntas la URL de origen y la variante seleccionada. Fotografías similares pueden aparecer en diferentes anuncios, y un nombre de producto conocido no garantiza que el vendedor o el contenido sean idénticos. Compare la descripción, los artículos incluidos y las medidas relevantes después de abrir la página de compra. Si algo ha cambiado, deténgase y aclárelo antes de pagar. El precio del catálogo es una referencia, por lo que el importe que se muestra en un pedido actual puede variar si cambia la variante o el precio del vendedor."
+          ]
+        },
+        {
+          "heading": "Lea las condiciones específicas del pedido antes de pagar.",
+          "paragraphs": [
+            "El formulario de compra manual muestra actualmente restricciones más estrictas para ciertos enlaces de terceros, incluyendo la ausencia de servicio posventa y la imposibilidad de reembolso, cancelación o modificación después del pago. Esta es una excepción importante a las directrices generales de devolución. Un artículo de ayuda sobre devoluciones ordinarias en almacén no debe considerarse un derecho para cada compra realizada manualmente. Lea las condiciones que se muestran para su pedido y póngase en contacto con el servicio de asistencia para resolver cualquier duda antes de aceptarlas.",
+            "Guarde los términos que se aplican junto al enlace del producto y la variante elegida. Si un anuncio no especifica claramente los materiales, las medidas o los accesorios incluidos, un pedido con condiciones restrictivas le dará menos margen para resolver cualquier problema posteriormente. Una respuesta sensata es obtener la información faltante o elegir una modalidad de compra diferente. No dé por sentado que la inspección del almacén generará un derecho de devolución que las condiciones del pedido no excluyan. La cuestión práctica es si puede aceptar la transacción en sus términos."
+          ]
+        },
+        {
+          "heading": "Calcule la decisión utilizando el costo total.",
+          "paragraphs": [
+            "Antes de comparar una compra a través de un agente con otra opción de compra, indique el precio del artículo, el envío nacional, el envío internacional y cualquier servicio adicional que seleccione. Verifique la moneda y el monto solicitado al momento del pago. Un precio atractivo del producto no representa el costo total con entrega incluida. El estimador de envío oficial es útil para planificar con su destino y los datos del paquete, pero una estimación inicial debe mantenerse separada de la cotización final del paquete embalado.",
+            "Utilice una nota de comparación simple con una columna para los montos confirmados y otra para los montos pendientes. Por ejemplo, puede conocer el precio del artículo seleccionado, pero aún no las dimensiones del paquete. Marque la cifra de envío como provisional en lugar de ingresar una estimación aproximada. Repita la comparación una vez que tenga las medidas relevantes. Si la compra solo tiene sentido con el costo de envío mínimo imaginable, la decisión depende de una incertidumbre que merece atención antes de comprometer más dinero."
+          ]
+        },
+        {
+          "heading": "Entienda qué pueden y qué no pueden responder las fotos de control de calidad.",
+          "paragraphs": [
+            "Las fotos del almacén pueden ayudarle a comparar características visibles con el pedido seleccionado, como el color, la cantidad, las etiquetas de talla y el estado evidente. Solicite una vista específica cuando persista alguna duda. Una solicitud útil identifica el detalle y la decisión que respalda, en lugar de pedir vagamente mejores fotos. Al revisar la evidencia, mantenga las imágenes de marketing del vendedor, las fotos públicas de otros pedidos y las imágenes asociadas a su propio pedido en categorías separadas.",
+            "Las fotografías no establecen la autenticidad, la durabilidad a largo plazo, la comodidad ni el funcionamiento de los dispositivos electrónicos. Una etiqueta clara puede confirmar el texto que contiene sin probar todas las afirmaciones que lleva. Si para usted son esenciales los productos de marca auténticos, el rendimiento técnico o la certificación, elija un canal de compra que ofrezca una verificación adecuada. Este catálogo y sus guías no autentican los productos. Considere las limitaciones de la evidencia como parte de su proceso de selección, en lugar de llenar los vacíos con suposiciones."
+          ]
+        },
+        {
+          "heading": "Evalúe las reclamaciones de entrega y reembolso según su etapa.",
+          "paragraphs": [
+            "El envío del vendedor, la recepción en el almacén y el envío de un paquete internacional son eventos diferentes. Al leer una reseña de entrega, verifique qué evento inició el período de espera reportado y si el destino y la ruta coinciden con su situación. Una llegada rápida al almacén no dice mucho sobre el resto del trayecto internacional. Del mismo modo, un retraso en la entrega no determina por sí solo qué sucedió con el pedido de otro comprador. Los registros con fechas específicas son más útiles que una afirmación general sobre la velocidad de entrega.",
+            "El progreso del reembolso también necesita una etapa definida. Una devolución elegible por parte del vendedor puede incluir aprobación, transporte de devolución, reembolso al vendedor y crédito al saldo de Kakobuy. Retirar ese saldo disponible es un proceso aparte. Pregunte qué paso está pendiente y conserve las referencias relevantes. No interprete la duración del reembolso reportada como una fecha de llegada garantizada al banco, ni asuma que un reembolso exitoso anula las condiciones restrictivas mostradas en otro pedido. Consulte la guía de reembolsos adjunta para distinguir entre estos procesos."
+          ]
+        },
+        {
+          "heading": "Considere las reseñas sin convertirlas en garantías.",
+          "paragraphs": [
+            "Busque evidencia que respalde la afirmación realizada. Una reseña útil describe el producto, la etapa del pedido, las fechas relevantes y cómo se gestionó el problema. Una captura de pantalla promocional con un enlace de compra puede mostrar un artículo real, pero aun así dejar preguntas sin respuesta. Los enlaces de afiliados deben divulgarse, y su presencia es un motivo para leer detenidamente la información subyacente, en lugar de un motivo para aceptar o rechazar automáticamente cualquier afirmación en la página.",
+            "Evite combinar experiencias no relacionadas para obtener una tasa de éxito precisa. Los comentarios públicos no constituyen una muestra representativa de todas las transacciones, y un puñado de historias positivas o negativas no pueden respaldar un porcentaje fiable. Cuando la información sea contradictoria, identifique la incertidumbre concreta que puede verificar usted mismo: la publicación actual del vendedor, las condiciones del pedido por escrito, el alcance de la inspección o las opciones de envío disponibles. Si una reseña no puede ayudar a responder ninguna de estas preguntas, puede ser menos útil para su decisión que una aclaración directa."
+          ]
+        },
+        {
+          "heading": "Tome una decisión de compra con puntos de parada claros.",
+          "paragraphs": [
+            "Utilice la siguiente lista de verificación antes de pagar, después de la llegada del producto al almacén y antes de enviar un paquete. En cada etapa, anote la condición que le haría dudar. Algunos ejemplos incluyen una variante no confirmada, un costo inexplicable o una discrepancia visible que no se ha resuelto. Esto transforma una pregunta general sobre la confianza en un conjunto de decisiones que usted puede tomar. También conserva un registro si el servicio de soporte necesita comprender cómo se originó el problema.",
+            "Comience la investigación en la hoja de cálculo, luego abra el anuncio original y la página de compra oficial para completar las verificaciones. Mantenga las comunicaciones sobre un pedido dentro del proceso de soporte oficial correspondiente y evite compartir las credenciales de su cuenta con personas no autorizadas. Kakobuy Pick puede recibir una comisión a través de enlaces de afiliados divulgados; esto no modifica las limitaciones descritas aquí. Ninguna guía puede garantizar el resultado de una transacción individual, pero la evidencia clara y las expectativas realistas hacen que la decisión sea más informada."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirme el enlace del vendedor, la variante exacta y las condiciones de pedido aplicables.",
+        "Separe los costos confirmados de las estimaciones provisionales del paquete.",
+        "Utilice el control de calidad para verificaciones visibles sin considerarlo como autenticación.",
+        "Resuelva los problemas pendientes antes de pagar o enviar un paquete."
+      ],
+      "table": {
+        "caption": "Registro práctico de evidencias",
+        "headers": [
+          "Verificación",
+          "Evidencia útil"
+        ],
+        "rows": [
+          [
+            "Identidad y artículo",
+            "URL del vendedor original, variante exacta y página del pedido actual"
+          ],
+          [
+            "Condiciones del pedido",
+            "Condiciones de cancelación, devolución y compra manual aplicables"
+          ],
+          [
+            "Coste y envío",
+            "Cargos confirmados, datos de envío provisionales y ruta elegida"
+          ],
+          [
+            "Inspección y soporte",
+            "Fotos específicas del pedido, problema sin resolver y referencia de soporte"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Cómo encontrar y comparar fotos",
+      "seoTitle": "Kakobuy QC Finder: Cómo encontrar y comparar fotos",
+      "description": "Encuentra las fotos de tu pedido de Kakobuy y evalúa los resultados públicos del control de calidad utilizando el enlace del vendedor original, la variante y la fecha de la imagen. Descubre qué revisar cuando faltan fotos.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Empiece por el artículo y el tipo de foto que necesita.",
+          "paragraphs": [
+            "Una búsqueda en Kakobuy QC puede significar encontrar fotos para su propio pedido o investigar un producto antes de comprarlo. Son tareas diferentes. Para su propia compra, comience en la sección de pedidos o almacén de su cuenta oficial y abra el artículo correspondiente. Para la investigación previa a la compra, un resultado de foto pública es solo una referencia de otro anuncio o pedido hasta que pueda identificar el vendedor y la variante exactos que está considerando.",
+            "Kakobuy Pick muestra fotografías de referencia del producto proporcionadas por la fuente del catálogo. No etiqueta esas imágenes como QC verificadas del almacén ni proporciona una base de datos pública de fotos de pedidos. Los pasos aquí descritos le ayudan a localizar y evaluar la evidencia; no desbloquean fotografías privadas ni garantizan que exista una imagen pública para cada artículo. Tenga en cuenta esta distinción cuando una búsqueda arroje imágenes atractivas pero no proporcione contexto del pedido, fecha de captura ni referencia del anuncio original."
+          ]
+        },
+        {
+          "heading": "Conserve el enlace original del vendedor antes de realizar la búsqueda.",
+          "paragraphs": [
+            "Copie la URL del anuncio original, incluyendo el mercado y el identificador del artículo, en sus notas de investigación. El número de página interna de un catálogo no es necesariamente el número de artículo del vendedor. Las herramientas de búsqueda que esperan un enlace original del vendedor pueden fallar o devolver resultados irrelevantes si se les proporciona una URL interna del catálogo. Si solo dispone de un enlace corto, abra el anuncio a través de su página pública habitual y verifique los detalles finales del producto antes de usarlo como referencia.",
+            "Registre también el color, la talla, el material y cualquier opción de embalaje o accesorio seleccionado. Varios artículos pueden compartir una misma publicación, mientras que diferentes vendedores pueden reutilizar fotografías muy similares. Por lo tanto, hacer coincidir el nombre del producto o la imagen de portada es una prueba menos sólida que hacer coincidir el enlace original con la variante exacta. Si el enlace ya no carga, conserve sus notas existentes y solicite una aclaración; no lo reemplace sin más con un anuncio de aspecto similar y asuma que las fotografías siguen siendo relevantes."
+          ]
+        },
+        {
+          "heading": "Localiza las fotos asociadas a tu pedido.",
+          "paragraphs": [
+            "La guía de compra oficial te dirige a los pedidos de tu cuenta y a las áreas de almacén tras la inspección y el almacenamiento. Busca el pedido usando la referencia adjunta a tu compra y compara su estado con la disponibilidad de las imágenes. El envío por parte del vendedor no significa que la inspección del almacén haya finalizado. Si el artículo ha llegado, pero las imágenes esperadas no están visibles, revisa los mensajes del pedido y pregunta al servicio de asistencia si la recepción, la inspección o la publicación de imágenes aún están pendientes para ese artículo.",
+            "Usa la interfaz oficial de tu cuenta en lugar de proporcionar tus datos de acceso a un buscador de terceros. Al solicitar ayuda, identifica el pedido y la vista que falta sin publicar direcciones personales ni capturas de pantalla de tu cuenta en un foro público. Una solicitud precisa podría explicar que la talla de la prenda seleccionada no está clara porque la etiqueta no es visible. Guarda la respuesta del servicio de asistencia junto con el registro del pedido para que puedas distinguir una actualización del procesamiento de la confirmación de que la inspección solicitada se ha completado."
+          ]
+        },
+        {
+          "heading": "Compare los resultados públicos antes de sacar conclusiones.",
+          "paragraphs": [
+            "Para cualquier resultado de foto pública, verifique el enlace del vendedor, la variante seleccionada, la fecha de captura (si está disponible) y si el artículo fotografiado se describe como perteneciente a un pedido real. Una foto reciente de otra talla puede ayudar a visualizar la confección, pero no constituye un registro de medidas para la talla elegida. Una foto antigua puede reflejar un lote de producción o una configuración de publicación diferente. Si el resultado carece de contexto, registre la incertidumbre en lugar de actualizar la imagen para que sea una prueba verificada.",
+            "Compare varios detalles distintivos, como la ubicación de los bolsillos, el tipo de cierre, las piezas incluidas y la disposición de las etiquetas. Si bien la coincidencia de estos detalles puede hacer que la referencia sea más relevante, esto no garantiza que el próximo pedido sea idéntico. Si la imagen pública contradice la descripción del vendedor, aclare la diferencia antes de comprar. Lo más probable es que las imágenes disponibles sean insuficientes, en lugar de asumir que la fotografía más convincente sea necesariamente la correcta."
+          ]
+        },
+        {
+          "heading": "Convierta un detalle faltante en una solicitud de fotografía útil.",
+          "paragraphs": [
+            "Una solicitud de fotografía útil especifica la parte exacta del artículo y cómo debe mostrarse. En el caso de una chaqueta, podría significar la cremallera completa o la medida del pecho en plano entre puntos específicos. En el caso de un par de zapatos, podría significar ambas etiquetas de talla y una vista clara de las suelas. Pregunte si la vista o la medida solicitada está disponible y si tiene algún costo adicional antes de asumir que está incluida en la inspección normal.",
+            "Evite solicitar muchas fotografías casi idénticas que no permitan tomar una decisión. Si el problema radica en el método de medición, solicítelo explícitamente. Si la duda es qué accesorios se incluyen, pida que se muestren todas las piezas juntas. Un objetivo claro facilita la evaluación de la respuesta. Mantenga la distinción entre una foto, una medición y una prueba funcional: una fotografía de un dispositivo encendido, por ejemplo, no muestra todas sus funciones ni su fiabilidad a largo plazo."
+          ]
+        },
+        {
+          "heading": "Analice las fotos con condiciones de comparación consistentes.",
+          "paragraphs": [
+            "Utilice los mismos puntos de referencia al comparar dimensiones. El ancho de una prenda extendida, la circunferencia corporal y la medida exterior de un paquete describen cosas diferentes. Verifique las unidades y los puntos de inicio y fin antes de considerar un número como una coincidencia de talla. La perspectiva y una cinta métrica mal colocada pueden dificultar la interpretación de una imagen. Si la información es ambigua, solicite una aclaración en lugar de basar una recomendación de ajuste precisa en una medición incierta.",
+            "El color y la textura también dependen de la iluminación, la configuración de la cámara y la pantalla. Una diferencia entre la fotografía del vendedor y la del almacén puede justificar una inspección más detallada, pero no determina automáticamente la causa exacta. Al contactar con el servicio de asistencia, describa el problema visible con precisión. Las fotos pueden ayudar a verificar el estado o la variante del producto; sin embargo, no pueden probar por sí solas la composición de la fibra, la autenticidad, la comodidad, la durabilidad ni la ausencia de defectos ocultos. Consulte la guía de control de calidad específica para obtener una lista de verificación de inspección más completa."
+          ]
+        },
+        {
+          "heading": "Gestione los resultados faltantes y las discrepancias con prontitud.",
+          "paragraphs": [
+            "La ausencia de un resultado público de control de calidad no prueba por sí sola que un anuncio sea nuevo, inseguro o no esté disponible. Simplemente puede significar que no se ha publicado ninguna imagen que coincida en la fuente que consultó. Vuelva a la información del vendedor y decida qué preguntas debe responder antes de comprar. Tras la llegada del producto al almacén, una discrepancia en las fotos de su pedido es un problema más directo: conserve las imágenes, identifique la opción seleccionada y consulte con el servicio de asistencia sobre los pasos a seguir.",
+            "Verifique las condiciones reales del pedido antes de asumir que es posible una devolución. El formulario de compra manual tiene restricciones más estrictas para ciertos enlaces de terceros, incluidas limitaciones en la cancelación, los reembolsos y el servicio posventa. Para los pedidos ordinarios que cumplen los requisitos, la decisión de devolución sigue estando sujeta a sus propias condiciones y plazos. Esperar a que haya más fotografías públicas no extiende el plazo. Resuelva primero el problema específico del pedido y mantenga el artículo, las etiquetas y el embalaje en las condiciones necesarias para cualquier proceso de devolución disponible."
+          ]
+        },
+        {
+          "heading": "Mantenga un registro conciso que respalde la siguiente decisión.",
+          "paragraphs": [
+            "Utilice la tabla comparativa a continuación como registro de evidencia, no como una tabla de puntuación. Separe lo que se confirma visiblemente de lo que se desconoce. Por ejemplo, una foto de la etiqueta puede confirmar el texto de la talla seleccionada, pero dejar incierto el ajuste. El diseño de un accesorio puede confirmar la cantidad, pero dejar la funcionalidad sin probar. Esta separación evita que una fotografía tranquilizadora se utilice para respaldar afirmaciones que no se pueden demostrar.",
+            "Una vez completadas las comprobaciones necesarias, pase a la siguiente tarea relevante: interpretación de la talla, solicitud de devolución o planificación del paquete. Conserve el enlace original y las medidas útiles para futuras referencias, pero vuelva a consultar la publicación al realizar un nuevo pedido, ya que el stock y las opciones pueden cambiar. Si publica su propia reseña, elimine los datos personales y describa el alcance exacto de la evidencia. Una observación clara y concisa resulta más útil para otro comprador que una afirmación sin fundamento de que un vendedor o producto es universalmente seguro.",
+            "Antes de aceptar un resultado como coincidencia, escriba una breve explicación de cómo influye en su decisión. Si la fotografía solo repite la imagen promocional del vendedor, aporta poca información independiente. Si muestra la medida solicitada para su pedido, puede resolver una duda específica sobre el ajuste. Incluya tanto la evidencia como su limitación en la misma nota para que la conclusión sea comprensible posteriormente."
+          ]
+        }
+      ],
+      "checklist": [
+        "Mantenga el enlace original del vendedor separado del número de página del catálogo.",
+        "Utilice su cuenta oficial para las fotografías de su pedido.",
+        "Compare la variante y el contexto antes de basarse en una imagen pública.",
+        "Resuelva las discrepancias visibles dentro de las condiciones del pedido aplicables."
+      ],
+      "table": {
+        "caption": "Registro de coincidencia fotográfica",
+        "headers": [
+          "Verificación",
+          "Evidencia útil"
+        ],
+        "rows": [
+          [
+            "Coincidencia de anuncio",
+            "URL original del mercado e identificador del artículo del vendedor"
+          ],
+          [
+            "Coincidencia de variante",
+            "Color, talla, piezas incluidas y diferencias visibles"
+          ],
+          [
+            "Contexto de la foto",
+            "Tu pedido o referencia pública; fecha y contexto faltante"
+          ],
+          [
+            "Decisión",
+            "Resultado visible, incertidumbre restante y siguiente acción"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Italia: Pedidos, Costos de envío y Seguimiento",
+      "seoTitle": "Kakobuy Italia: Pedidos, Costos de envío y Seguimiento",
+      "description": "Planifica un pedido de Kakobuy a Italia: verifica los enlaces del vendedor, calcula el costo total del paquete, consulta las rutas disponibles y sigue la etapa de seguimiento correcta.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Planifica un pedido a Italia considerando todo el proceso",
+          "paragraphs": [
+            "Realizar un pedido a través de Kakobuy con entrega en Italia implica la compra por parte del vendedor, el traslado al almacén, la inspección y un paquete internacional independiente. El precio del producto por sí solo no refleja todo el proceso. Comienza por confirmar el artículo y luego verifica si las opciones de envío disponibles cubren tu destino y el contenido. Esta guía explica las decisiones que debes tomar; no garantiza una ruta específica, una fecha de entrega ni un precio de envío fijo para todas las direcciones en Italia.",
+            "Si estás investigando cómo funciona Kakobuy en Italia, crea un breve plan de pedido con el enlace del vendedor, la variante elegida, la dirección de entrega prevista y las preguntas que aún tengas. Decide si la compra tiene una fecha límite fija antes de pagar. Un paquete destinado a un evento específico requiere más atención que un pedido con una fecha de llegada flexible, ya que la preparación por parte del vendedor y la gestión en el almacén se realizan antes incluso de que comience el tránsito internacional. Compara las alternativas considerando todo el proceso, en lugar de basarte únicamente en una estimación del tiempo de tránsito."
+          ]
+        },
+        {
+          "heading": "Verifique la publicación del vendedor y la variante seleccionada.",
+          "paragraphs": [
+            "Utilice la hoja de cálculo para encontrar posibles opciones, luego abra la publicación original del vendedor y la página de compra oficial. Confirme el color, la talla, el modelo y las piezas incluidas. Los nombres y las fotografías de los productos se pueden reutilizar en diferentes publicaciones, así que conserve la URL original con la opción elegida. Si la importación automática falla, utilice el proceso oficial de compra manual solo después de leer sus condiciones y proporcionar información precisa. Una imagen similar no es un sustituto fiable de la publicación original.",
+            "Preste especial atención a las condiciones restrictivas de los pedidos manuales. El formulario manual actual advierte que ciertas compras a terceros carecen de servicio posventa y no se pueden reembolsar, cancelar ni modificar después del pago. Las directrices generales de devolución del almacén no anulan estas condiciones. Si tiene dudas sobre una tabla de tallas, un material o un accesorio, aclárelas antes de aceptar el pedido. La decisión debe basarse en las condiciones mostradas para esa compra, no en la suposición de que todos los artículos se pueden devolver posteriormente."
+          ]
+        },
+        {
+          "heading": "Compare las tallas utilizando el método de medición del producto.",
+          "paragraphs": [
+            "Una talla italiana de ropa o calzado que use habitualmente no es suficiente para elegir una variante de un vendedor desconocido. Compare la tabla de tallas del anuncio con una prenda que le quede bien y anote el método de medición. Las medidas de la prenda extendida y las medidas corporales son diferentes. En el caso de la ropa, identifique las dimensiones relevantes para el corte y la superposición de capas. En el caso del calzado, distinga entre la longitud del pie, la longitud de la plantilla y la longitud de la suela, en lugar de considerar todas las medidas como intercambiables.",
+            "Si la tabla de tallas no está disponible o es ambigua, solicite una aclaración antes de realizar el pedido. Tras la llegada del producto al almacén, una medición específica puede ayudar a resolver cualquier duda, sujeta al servicio de inspección y a cualquier cargo adicional. Una foto de la etiqueta puede verificar la etiqueta seleccionada, pero no garantiza la comodidad. Utilice la guía de tallas que se encuentra a continuación para una comparación estructurada y guarde sus medidas para futuras compras. Evite la recomendación general de elegir una talla más grande, ya que puede alterar la longitud y las proporciones sin solucionar el problema de ajuste original."
+          ]
+        },
+        {
+          "heading": "Calcular el envío con destino y datos del paquete",
+          "paragraphs": [
+            "Abra el estimador oficial y seleccione Italia como destino cuando esté disponible. Introduzca el tipo de mercancía, el peso y las dimensiones correspondientes, y lea las restricciones y la información de facturación de las rutas devueltas. Si el resultado está vacío, compruebe los datos introducidos o póngase en contacto con asistencia, en lugar de asumir que la ruta anunciada aceptará el paquete. La disponibilidad puede depender del contenido y del embalaje, así que verifique de nuevo antes de enviar el pedido.",
+            "Antes de que la mercancía llegue al almacén, indique las dimensiones y el peso como estimaciones. Actualice la comparación cuando disponga de la información de medición y de nuevo si cambia el embalaje. La comparación de peso en la página de envíos de este sitio web muestra el peso real y el volumétrico; no es una calculadora de precios en tiempo real. Utilice el divisor y el método de facturación indicados por la ruta en lugar de aplicar una fórmula universal a todos los transportistas. Un artículo más ligero puede ocupar suficiente espacio como para modificar el cálculo del envío."
+          ]
+        },
+        {
+          "heading": "Cree una nota de costos sin inventar un precio total.",
+          "paragraphs": [
+            "Enumere por separado el precio del artículo seleccionado, el envío nacional, el envío internacional y los servicios opcionales. Verifique la moneda de pago y el monto solicitado por el método de pago actual. Mantenga los cargos descritos en los términos de la ruta en entradas separadas y evite contar un cargo dos veces solo porque diferentes páginas de ayuda usan etiquetas diferentes. Un presupuesto en dólares no debe considerarse un débito garantizado en euros. Compare los montos confirmados que se muestran durante la transacción.",
+            "Para envíos a Italia, no interprete el nombre de la ruta o la descripción promocional como prueba de que todos los posibles cargos de llegada están incluidos. Lea lo que cubre expresamente el presupuesto actual y solicite aclaraciones si la redacción no es clara. Esta guía no publica una tasa impositiva, un umbral aduanero ni un resultado de despacho garantizado. Un presupuesto útil registra lo que está incluido, lo que está excluido y lo que se desconoce, lo que le permite decidir si el total sigue siendo aceptable antes del envío internacional."
+          ]
+        },
+        {
+          "heading": "Revise los resultados de la inspección antes de combinar artículos.",
+          "paragraphs": [
+            "Cuando los artículos estén almacenados, compare las fotos asociadas a su pedido con la variante seleccionada. Verifique el estado visible, la cantidad y las medidas que le interesen. Las fotos de referencia públicas de otro pedido no sustituyen esta revisión. Si detecta algún problema, guarde la imagen y los detalles del pedido y contacte con el servicio de atención al cliente lo antes posible. Resuelva el problema antes de combinar el artículo con otras compras o solicitar un envío internacional, mientras las opciones aplicables sigan disponibles.",
+            "Si desea combinar ropa, calzado y accesorios, compare el paquete resultante con las restricciones de la ruta y los requisitos de embalaje. Eliminar el embalaje innecesario puede afectar al volumen, pero la protección y las condiciones de devolución siguen siendo importantes. Pregunte sobre el embalaje propuesto en lugar de asumir que la compresión o la eliminación de cajas son adecuadas para todos los artículos. El plazo de almacenamiento en almacén es independiente del plazo de devolución del vendedor, por lo que esperar otro artículo no garantiza las mismas opciones de posventa indefinidamente."
+          ]
+        },
+        {
+          "heading": "Realice el seguimiento de la etapa que corresponda.",
+          "paragraphs": [
+            "Mantenga separadas las referencias de pedidos y las referencias de paquetes internacionales. Un evento de seguimiento nacional marcado como entregado puede referirse a la recepción en el almacén, no a la entrega en Italia. El seguimiento internacional se refiere al paquete enviado y su recorrido por la empresa de transporte. Si una actualización aparece retrasada, registre el último evento, su fecha y la referencia de seguimiento que está consultando. Pregunte al servicio de asistencia qué etapa está pendiente, en lugar de considerar cada período de inactividad como el mismo tipo de retraso.",
+            "Siga cualquier referencia de entrega o envío local proporcionada a través del registro oficial del paquete. No asuma que una empresa de transporte italiana en particular gestionará todas las rutas ni que debe existir un nuevo número de seguimiento para cada envío. Si el plazo de entrega indicado ha expirado o el registro muestra algún problema, proporcione la referencia exacta del paquete y el último evento visible al solicitar ayuda. Conserve el presupuesto de envío aceptado para poder distinguir su alcance declarado de una estimación de planificación anterior."
+          ]
+        },
+        {
+          "heading": "Prepárese para la entrega y conserve la evidencia.",
+          "paragraphs": [
+            "Antes de enviar el paquete, verifique que el nombre, la dirección, el código postal y la información de contacto del destinatario sean correctos. Al recibir el paquete, inspeccione el embalaje exterior y el contenido de inmediato. Si observa algún daño visible o falta algún artículo, conserve el embalaje y las fotografías pertinentes y comuníquese con el canal de soporte correspondiente sin demora. Lea el recibo y los requisitos para reclamar su paquete. Una fotografía del paquete puede respaldar una reclamación, pero por sí sola no otorga derecho a compensación.",
+            "Después de una entrega exitosa, guarde las medidas útiles de la prenda, los datos del paquete y la descripción de la ruta para compararlos. Considérelos como registros de ese pedido, no como promesas permanentes para el siguiente. Al realizar un nuevo pedido, revise el vendedor, las variantes disponibles y el costo de envío actual. Comience con los enlaces de categorías a continuación para explorar los productos y luego utilice las guías de envío, seguimiento y reembolso para las decisiones específicas que cubren. Esto mantiene la búsqueda de productos vinculada a verificaciones prácticas en lugar de depender de una única recomendación general.",
+            "Como ejemplo de planificación sencillo, compare el envío de una prenda lista ahora con la espera de zapatos que aún no han llegado al almacén. Registre el envío pendiente del vendedor, el posible cambio de embalaje y los plazos de devolución individuales. No dé por sentado que esperar le ahorrará dinero hasta que se pueda calcular el coste del paquete combinado con datos realistas. La mejor opción depende del presupuesto actual, las necesidades de protección y su plazo de entrega, no solo del número de artículos en el paquete."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirme la publicación exacta y las condiciones de pedido manual aplicables.",
+        "Vuelva a comprobar la disponibilidad de la ruta a Italia utilizando los datos reales del paquete.",
+        "Separe el precio del artículo, el importe del pago y el presupuesto de envío.",
+        "Mantenga separados los registros de seguimiento del pedido y del paquete y revise la entrega puntualmente."
+      ],
+      "table": {
+        "caption": "Registro de planificación de pedidos en Italia",
+        "headers": [
+          "Verificación",
+          "Información útil"
+        ],
+        "rows": [
+          [
+            "Antes de la compra",
+            "URL del vendedor, variante exacta, método de talla y condiciones del pedido"
+          ],
+          [
+            "Antes del envío",
+            "Destino en Italia, contenido, medidas del paquete y presupuesto disponible"
+          ],
+          [
+            "Durante el tránsito",
+            "Referencia del paquete, último evento con fecha y detalles de la entrega oficial"
+          ],
+          [
+            "En el momento de la entrega",
+            "Estado del paquete, contenido y requisitos de notificación aplicables"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "La guía oficial advierte específicamente sobre las cantidades mínimas de compra en 1688. El precio mostrado puede depender de la cantidad o la variante. Verifique si su pedido previsto cumple con los requisitos del vendedor antes de compararlo con una oferta de una sola pieza en otro lugar. Comprueba también si la cantidad elegida cambia el envío nacional.",
             "Antes de pagar, revisa el resumen del pedido en su conjunto: artículo correcto, opción correcta, cantidad correcta y coste de compra completo. Guarde el número de pedido resultante y las notas. Si aparece un problema más adelante, estos detalles ayudan a comparar la solicitud de compra con el artículo recibido."
           ]
+        },
+        {
+          "heading": "Lea las condiciones del formulario de compra manual",
+          "paragraphs": [
+            "Antes de aplicar esta guía, verifique las condiciones que se muestran para su pedido específico. El formulario de compra manual oficial advierte actualmente que algunos enlaces de terceros no ofrecen servicio posventa y no admiten reembolsos, cancelaciones ni cambios después del pago. Por lo tanto, el proceso general de devolución del almacén no está disponible para todas las compras. Aclare cualquier duda sobre la variante, el precio o las condiciones de devolución antes de pagar; no dé por sentado que una foto de inspección le otorga el derecho a devolver la prenda."
+          ]
         }
       ],
       "checklist": [
@@ -1177,7 +1508,7 @@
       },
       "seoTitle": "Enlaces Kakobuy: abre anuncios, verifica variantes y pide",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-qc-photos",
@@ -1320,6 +1651,13 @@
             "Para una sudadera con capucha o una camiseta de fútbol, escribe el ancho y el largo del pecho de la prenda de referencia junto a los valores del vendedor. Marque cualquier diferencia que realmente desee, como más espacio para capas o un cuerpo más corto. Verifique la construcción de las mangas antes de comparar los números de las mangas. Un hombro caído y una costura de hombro convencional pueden utilizar diferentes puntos de partida, por lo que números idénticos no necesariamente producen un alcance idéntico.",
             "Si el vendedor solo ofrece una sugerencia de altura y peso, solicite las medidas de la prenda cuando el ajuste sea importante. Para los zapatos, pregunte qué largo representa la tabla y si hay disponible una descripción del ancho específica del modelo. Registre la medida no resuelta antes de realizar el pedido; luego solicite ese control exacto en el almacén si es necesario. El objetivo es una comparación clara, no una conversión universal de la letra de talla de una marca a otra."
           ]
+        },
+        {
+          "heading": "Utilice la diferencia de medidas para tomar una decisión específica.",
+          "paragraphs": [
+            "Considere una prenda de referencia con un pecho cómodo, pero con mangas demasiado cortas. Compare las diferencias de pecho y manga por separado con la tabla del vendedor; no se limite a recomendar una talla más grande. Confirme que ambas medidas de manga parten del mismo punto. Si la tabla utiliza un método diferente, solicite la medida que falta antes de considerar los números como comparables.",
+            "Conserve la variante seleccionada junto a la nota de medidas y compárela de nuevo cuando reciba las imágenes específicas del pedido. Una etiqueta de talla coincidente no confirma las dimensiones medidas de la prenda. Si una medida es esencial, pregunte si el almacén puede realizar esa verificación exacta y si tiene algún costo. Realice la solicitud con suficiente antelación para que se apliquen las condiciones de compra correspondientes."
+          ]
         }
       ],
       "checklist": [
@@ -1355,7 +1693,7 @@
       },
       "seoTitle": "Guía de tallas de Kakobuy: tablas de ropa y calzado",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-shipping-calculator",
@@ -1409,6 +1747,13 @@
             "Antes de medir el almacén, cree un escenario de planificación liviano y uno pesado y observe qué valores son estimaciones. Incluya el embalaje y todo el contenido previsto. Utilice ambos escenarios en el estimador oficial con el mismo destino y tipo de mercancía. Si el costo cambia lo suficiente como para afectar su decisión de compra, espere a obtener mejor información en lugar de presentar un peso aproximado del producto como una cotización de envío precisa.",
             "La comparación de peso en esta página ilustra únicamente el cálculo. No conoce la tarifa de ruta actual, incrementos de facturación, cargo mínimo, recargo o restricciones de contenido. Lea dichas condiciones en la cotización oficial y actualice los insumos después de empacar. Una multiplicación precisa aún puede dar como resultado un presupuesto inadecuado si el divisor elegido o las medidas del paquete no coinciden con el servicio real."
           ]
+        },
+        {
+          "heading": "Compare presupuestos utilizando las mismas suposiciones para el paquete.",
+          "paragraphs": [
+            "Al comparar rutas, mantenga constantes el destino, el tipo de mercancía, el peso embalado y las dimensiones. Registre si cada presupuesto incluye los servicios que piensa elegir y anote cualquier redondeo o cargo mínimo indicado para la ruta. Una comparación que utilice el peso sin embalar en una ruta y el peso embalado en otra puede generar un ahorro aparente que desaparece al enviar el presupuesto.",
+            "La calculadora de esta página solo compara pesos. No puede determinar la disponibilidad de la ruta, el tipo de cambio ni el importe del envío. Si cambia el embalaje, actualice el presupuesto oficial antes de tomar una decisión. Conserve el presupuesto anterior y el presupuesto aceptado como registros separados para que los ajustes posteriores puedan vincularse a los cambios realizados."
+          ]
         }
       ],
       "checklist": [
@@ -1443,7 +1788,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Calculadora de envío de Kakobuy: peso y costo"
     },
     {
@@ -1597,6 +1942,13 @@
             "El tiempo hasta el almacén es diferente del tiempo permitido en almacenamiento. La preparación del vendedor y la entrega nacional se realizan antes de la recepción del almacén; La inspección y las actualizaciones de cuentas siguen su propio flujo de trabajo. Primero verifique el envío del vendedor y el seguimiento nacional. Un escaneo entregado debe coincidir con su pedido antes de asumir que el artículo está disponible para enviarse en un paquete internacional.",
             "Si el transportista muestra la entrega pero el pedido no aparece como almacenado, proporcione el número de seguimiento nacional, el evento de entrega y el número de pedido al soporte. Pregunte si está pendiente de recibo, cotejo de propiedad o inspección. No inicie una cuenta regresiva de almacenamiento a partir de una fecha de envío estimada por el vendedor ni trate la asignación normal de 100 días como una promesa sobre la velocidad de procesamiento."
           ]
+        },
+        {
+          "heading": "Elija la siguiente acción con la fecha límite más próxima.",
+          "paragraphs": [
+            "Revise cada artículo almacenado, teniendo en cuenta tanto su fecha límite de almacenamiento como cualquier fecha límite de devolución aplicable. Márquelo como listo para enviar solo después de haber verificado la variante seleccionada y su estado visible. Si un artículo presenta un problema sin resolver, comuníquese con soporte de inmediato en lugar de esperar el resto del paquete planificado. Mantenga una nota separada para los artículos que desea conservar y los artículos que esperan la decisión del vendedor.",
+            "Para una comparación práctica, imagine que una chaqueta está lista, pero otro vendedor aún no ha enviado un par de zapatos. Esperar podría modificar el costo del paquete, pero ese posible ahorro no resuelve la fecha límite de devolución de la chaqueta. Verifique primero la decisión inmediata y luego compare las opciones de envío utilizando medidas de embalaje realistas. No describa un supuesto ahorro por envío combinado como una cantidad confirmada."
+          ]
         }
       ],
       "checklist": [
@@ -1632,7 +1984,7 @@
       },
       "seoTitle": "Almacén de Kakobuy: tiempo de almacenamiento y plazos",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-consolidation-packaging",
@@ -1765,6 +2117,13 @@
             "Un evento sin cambios no identifica por sí solo la causa de un retraso. Primero, confirme que está viendo el paquete internacional en lugar del envío nacional del vendedor. Luego compare la fecha del evento con la estimación actual de la línea seleccionada y cualquier aviso adjunto al envío. Una etiqueta creada antes de la recogida es una situación diferente a la de un paquete con un escaneo posterior del transportista o del destino.",
             "Solicite a soporte que confirme la etapa pendiente utilizando el número de paquete, ruta, último evento y fecha. Si se requiere alguna acción por su parte, solicite la información exacta y el canal oficial necesario. No invente un número fijo de días después de los cuales cada paquete se pierde, y no prometa una fecha de entrega a partir de una etiqueta de estado genérica. Mantenga la respuesta con el caso existente para que el seguimiento aborde lo que aún está sin resolver."
           ]
+        },
+        {
+          "heading": "Prepare una solicitud de soporte de seguimiento útil.",
+          "paragraphs": [
+            "Antes de contactar con soporte, registre la referencia del pedido o paquete, el último estado visible, la fecha del evento y el trayecto que describe la referencia. Indique el siguiente paso faltante: envío por parte del vendedor, inspección en el almacén, envío del paquete o actualización del transportista. Si se proporciona una referencia oficial de entrega, verifique también ese registro. No asuma que todas las rutas utilizan el mismo transportista local ni el mismo horario de actualización.",
+            "Describa lo que muestra el registro en lugar de asumir la causa de la demora. Un evento de entrega nacional y uno internacional tienen significados diferentes, y una etiqueta de envío creada no siempre establece la posesión del transportista. Pregunte quién tiene actualmente el artículo o paquete y qué acciones debe realizar. Guarde la respuesta junto con la estimación de envío aceptada y su historial de pedidos."
+          ]
         }
       ],
       "checklist": [
@@ -1799,7 +2158,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Tiempo de envío y estado de seguimiento de Kakobuy"
     },
     {
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Abra el pedido correspondiente e identifique el último paso completado: solicitud enviada, acuerdo del vendedor, devolución enviada, recibo del vendedor, reembolso confirmado o saldo acreditado. Registre la fecha y la cantidad mostrada. Luego pregunte a soporte sobre el siguiente paso que falta con el número de pedido y la referencia del caso existente. Un paquete que aún regresa al vendedor y un saldo acreditado pendiente de retiro requieren un seguimiento diferente.",
             "Si el saldo ha sido acreditado, verifique el registro de retiro por separado. Confirmar el canal de pago de destino, el estado y cualquier referencia suministrada. No describa el reembolso del almacén como inconcluso únicamente porque el dinero no llegó a una cuenta bancaria a través de un retiro por separado. Mantenga los tiempos cotizados adjuntos a la etapa que describen y no trate la referencia condicional de 7 a 15 días como una garantía para cada caso."
           ]
+        },
+        {
+          "heading": "Revise los términos de compra antes de utilizar el plazo de devolución.",
+          "paragraphs": [
+            "Antes de aplicar esta guía, verifique las condiciones que se muestran para su pedido específico. El formulario oficial de compra manual advierte actualmente que ciertos enlaces de terceros no ofrecen servicio posventa y no admiten reembolsos, cancelaciones ni cambios después del pago. Por lo tanto, el proceso general de devolución del almacén no está disponible para todas las compras. Aclare cualquier duda sobre la variante, el precio o las condiciones de devolución antes de pagar; no asuma que una foto de inspección crea un derecho de devolución.",
+            "Para una devolución tardía elegible, mantenga un registro breve del estado: solicitud de aprobación, respuesta del vendedor, envío de la devolución, recibo del vendedor y abono del saldo. Solicite al servicio de asistencia la etapa pendiente y la referencia que confirma su finalización. Una vez abonado el saldo, registre cualquier solicitud de retiro por separado. Esto facilita el siguiente paso, en lugar de reiniciar la misma solicitud de devolución o contar cada etapa desde la fecha de compra."
+          ]
         }
       ],
       "checklist": [
@@ -1899,7 +2266,7 @@
       },
       "seoTitle": "Tiempo de reembolso de Kakobuy y devoluciones en almacén",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     }
   ],
   "seo": {

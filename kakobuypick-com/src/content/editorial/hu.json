@@ -74,7 +74,10 @@
       "invalid": "Adjon meg egy pozitív számot minden mezőben.",
       "note": "A nagyobb súly szabálya egy példa. Az útvonala eltérő számlázási szabályokat, kerekítést vagy minimális díjakat használhat.",
       "official": "Nyissa meg a hivatalos szállítási költségkalkulátort"
-    }
+    },
+    "navShipping": "Szállítás",
+    "articleTopics": "Válassza ki a következő lépést",
+    "productGuides": "Ellenőrizze rendelés előtt"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "Mi történik, ha a termékhivatkozás nem töltődik be automatikusan?",
-      "a": "A hivatalos vásárlási útmutató kézi vásárlási űrlapot kínál a nem importálható ajánlatokhoz. Add meg a valódi eladói URL-t és a pontos termékadatokat. Ne találj ki árat, és ne válassz hasonló terméket az ajánlat ellenőrzése, valamint szükség esetén a vásárlási ügyintéző megkérdezése nélkül.",
+      "a": "A hivatalos vásárlási útmutató tartalmaz egy manuális vásárlási űrlapot a nem importálható listákhoz. Adja meg a tényleges eladói URL-t és a pontos tételadatokat. Ne találjon ki árat, és ne válasszon hasonló megjelenésű terméket anélkül, hogy ellenőrizné a listát, és szükség esetén megkérdezné a vásárlót. Az útmutató alkalmazása előtt ellenőrizze a pontos rendeléséhez feltüntetett feltételeket. A hivatalos manuális vásárlási űrlap jelenleg arra figyelmeztet, hogy bizonyos harmadik féltől származó linkek nem rendelkeznek értékesítés utáni szolgáltatással, és nem támogatják a visszatérítést, a lemondást vagy a fizetés utáni módosításokat. Az általános raktári visszaküldési folyamat ezért nem minden vásárláshoz érhető el. Fizetés előtt tisztázza a bizonytalan változatot, árat vagy visszaküldési feltételt; ne feltételezze, hogy egy ellenőrző fotó visszaküldési jogot teremt.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "Minden termékre érvényes az ötnapos visszaküldési szabály?",
-      "a": "Nem. A hivatalos szabályok az eladó beleegyezésétől, a termék jogosultságától, állapotától és a raktárba vétel utáni időzítéstől függnek. Bizonyos kategóriák és megváltoztatott csomagolások kizártak. Gyorsan ellenőrizd a rendelés határidejét és jogosultságát; a 100 napos tárolás nem 100 napos visszaküldési jog.",
+      "a": "Nem. A hivatalos visszaküldési szabályok az eladó általi elfogadástól, a termék jogosultságától, állapotától és a raktári tárolás utáni időtől függenek. Egyes kategóriák és módosított csomagolások ki vannak zárva. Azonnal ellenőrizze a rendelés határidejét és jogosultságát; a 100 napos tárolás nem jelent 100 napos visszaküldési jogot. Mielőtt ezt az útmutatót alkalmazná, ellenőrizze a pontos rendelésre vonatkozó feltételeket. A hivatalos kézi vásárlási űrlap jelenleg arra figyelmeztet, hogy bizonyos harmadik féltől származó linkek nem rendelkeznek értékesítés utáni szolgáltatással, és nem támogatják a visszatérítést, a lemondást vagy a fizetés utáni módosításokat. Az általános raktári visszaküldési folyamat ezért nem minden vásárláshoz érhető el. Fizetés előtt tisztázza a bizonytalan változatokat, árat vagy visszaküldési feltételeket; ne feltételezze, hogy egy ellenőrző fotó visszaküldési jogot teremt.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "Megbízható a Kakobuy? Díjak, QC és visszaküldés",
+      "seoTitle": "Megbízható a Kakobuy? Díjak, QC és visszaküldés",
+      "description": "Értékelje a Kakobuy-t a közzétett vásárlási folyamat, az ellenőrzési korlátok és a visszaküldési feltételek alapján. Fizetés előtt ellenőrizze az eladót, a teljes költséget és a rendelési feltételeket.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Mit állapíthatnak meg a rendelkezésre álló bizonyítékok",
+          "paragraphs": [
+            "A Kakobuy közzétesz egy vásárlási munkafolyamatot, raktári ellenőrzési útmutatót és súgóoldalakat a szállításhoz és az értékesítés utáni szolgáltatásokhoz. Ezek a dokumentumok elmagyarázzák, hogyan működik a szolgáltatás; nem bizonyítják önállóan, hogy minden eladó, csomag vagy visszatérítés megfelel az elvárásoknak. Ha azt keresi, hogy a Kakobuy megbízható és biztonságos-e, válassza szét a működési folyamat meglétét egy adott tranzakció megbízhatóságától. Ez az útmutató egy dokumentumalapú vásárlási ellenőrzőlista, nem pedig gyakorlati teszt vagy a befejezett vásárlásokon alapuló értékelés.",
+            "Kezdje a pontosan előtte álló döntéssel. Lehet, hogy meg kell erősítenie, hogy egy link a kívánt eladóhoz tartozik, hogy a kiválasztott méret megfelel a táblázatnak, vagy hogy a szállítás továbbra is megfizethető. Egy összességében pozitív értékelés önmagában nem tudja megoldani ezeket az ellenőrzéseket. Jegyezze fel, ami ismert, honnan származik az információ, és mi marad bizonytalan. Csak akkor vállaljon megrendelést, ha a megoldatlan pontok elfogadhatóak az adott vásárláshoz, ne pedig azért, mert egy oldal megbízhatónak minősíti az egész platformot."
+          ]
+        },
+        {
+          "heading": "Válassza szét a platformot, az eladót és a felfedező weboldalt",
+          "paragraphs": [
+            "A Kakobuy egy olyan ügynöki szolgáltatást ír le, amely harmadik fél eladóktól vásárol, és segít a szállítás megszervezésében. A Kakobuy Pick egy különálló felfedező weboldal: a katalóguslinkjei segítenek a termékek kutatásában, míg a megrendeléseket és a fizetéseket a Kakobuy kezeli. A katalógusban megjelenő termék nem tesztelésen alapuló ajánlás, hivatalos márkajelzés vagy készletígéret. Használja az eredeti listát és az aktuális megrendelőlapot a megvásárolni kívánt termék ellenőrzéséhez.",
+            "Tartsa együtt a forrás URL-t és a kiválasztott változatot. Hasonló fényképek jelenhetnek meg különböző listákban, és egy ismerős terméknév nem bizonyítja, hogy az eladó vagy a tartalom azonos. Hasonlítsa össze az opció szövegét, a mellékelt darabokat és a vonatkozó méreteket a vásárlási oldal megnyitása után. Ha bármi megváltozott, fizetés előtt állítsa le és tisztázza. A katalógusár egy referenciaérték, így az aktuális rendelésben feltüntetett összeg eltérhet, ha a változat vagy az eladó ára változik."
+          ]
+        },
+        {
+          "heading": "Fizetés előtt olvassa el a rendelésre vonatkozó feltételeket.",
+          "paragraphs": [
+            "A manuális vásárlási űrlap jelenleg szigorúbb korlátozásokat tartalmaz bizonyos harmadik féltől származó linkekre vonatkozóan, beleértve az értékesítés utáni szolgáltatás hiányát, valamint a visszatérítés, a lemondás vagy a módosítás hiányát a fizetés után. Ez egy lényeges kivétel az általános visszaküldési útmutató alól. A szokásos raktári visszaküldésről szóló súgócikket nem szabad minden manuálisan benyújtott vásárlásra vonatkozó jogosultságként kezelni. Olvassa el a tényleges rendelésre vonatkozóan megjelenített feltételeket, és kérje meg az ügyfélszolgálatot a bizonytalanságok eloszlatására, mielőtt elfogadná azokat.",
+            "Mentse el a terméklink és a kiválasztott változat mellett érvényes feltételeket. Ha egy lista nem egyértelmű az anyagok, a méretek vagy a mellékelt tartozékok tekintetében, a korlátozó rendelés kevesebb lehetőséget biztosít a későbbi csalódás megoldására. Ésszerű válasz a hiányzó információk beszerzése, vagy más vásárlási mód kiválasztása. Ne feltételezze, hogy a raktári ellenőrzés olyan visszaküldési jogot teremt, amelyet a rendelési feltételek kizárnak. A gyakorlati kérdés az, hogy el tudja-e fogadni a tranzakciót a megadott feltételek szerint."
+          ]
+        },
+        {
+          "heading": "Számítsa ki a döntést a teljes költség felhasználásával",
+          "paragraphs": [
+            "Mielőtt összehasonlítana egy ügynök általi vásárlást egy másik vásárlási lehetőséggel, sorolja fel a tétel árát, a belföldi szállítást, a nemzetközi szállítást és az esetlegesen kiválasztott kiegészítő szolgáltatásokat. Ellenőrizze a pénznemet és a fizetéskor ténylegesen kért összeget. A vonzó termékár nem jelenti a teljes szállítási költséget. A hivatalos szállítási költségbecslés hasznos a célállomás és a csomagadatokkal való tervezéshez, de a korai becslésnek el kell különülnie a végleges csomagolt csomag árajánlatától.",
+            "Használjon egyszerű összehasonlító jegyzetet, amelyben külön oszlopban vannak a megerősített összegek, egy másikban pedig a feldolgozatlan összegek. Például ismerheti a kiválasztott tétel árát, miközben még hiányoznak a csomagolt méretek. Jelölje meg a szállítási összeget előzetesként, ahelyett, hogy pontosnak tűnő becslést adna meg. Ismételje meg az összehasonlítást, ha a vonatkozó méretek rendelkezésre állnak. Ha a vásárlás csak az elképzelhető legalacsonyabb szállítási becslés mellett van értelme, a döntés egy olyan bizonytalanságtól függ, amelyre figyelmet kell fordítani, mielőtt további pénzt költene."
+          ]
+        },
+        {
+          "heading": "Értse meg, hogy a minőségellenőrzési fotók mire tudnak és mire nem tudnak választ adni",
+          "paragraphs": [
+            "A raktárfotók segíthetnek összehasonlítani a látható jellemzőket a kiválasztott rendeléssel, például a színt, a mennyiséget, a méretcímkéket és a nyilvánvaló állapotot. Kérjen célzott nézetet, ha továbbra is fennáll egy konkrét bizonytalanság. Egy hasznos kérés azonosítja a részletet és az általa alátámasztott döntést, ahelyett, hogy homályosan jobb képeket kérne. A bizonyítékok áttekintésekor tartsa külön kategóriákban az eladói marketingképeket, a más megrendelésekből származó nyilvános fotókat és a saját rendeléséhez kapcsolódó képeket.",
+            "A fényképek nem bizonyítják a hitelességet, a hosszú távú tartósságot, a kényelmet vagy az elektronika működését. Egy egyértelmű címke megerősítheti a címkén szereplő szöveget anélkül, hogy minden hozzá tartozó állítást bizonyítana. Ha az eredeti márkás áruk, a műszaki teljesítmény vagy a tanúsítvány elengedhetetlen az Ön számára, válasszon olyan vásárlási csatornát, amely megfelelő ellenőrzést biztosít. Ez a katalógus és útmutatói nem hitelesítik a termékeket. A bizonyítékok korlátait a kiválasztási folyamat részeként kezelje, ahelyett, hogy feltételezésekkel töltené ki a hiányosságokat."
+          ]
+        },
+        {
+          "heading": "Értékelje a szállítási és visszatérítési igényeket szakaszuk szerint",
+          "paragraphs": [
+            "Az eladói feladás, a raktári elismervény és a nemzetközi csomagfeladás különböző események. Egy kézbesítési vélemény elolvasásakor ellenőrizze, hogy melyik esemény indította el a jelentett várakozási időt, és hogy a célállomás és az útvonal megfelel-e az Ön helyzetének. Egy gyors raktári érkezés keveset mond a fennmaradó nemzetközi útról. Hasonlóképpen, egy csomag késése önmagában nem állapítja meg, hogy mi történt egy másik vevő rendelésével. A konkrét dátummal ellátott feljegyzések hasznosabbak, mint egy általános állítás a kézbesítési sebességről.",
+            "A visszatérítés folyamatához is szükség van egy meghatározott szakaszra. Egy jogosult eladói visszaküldés magában foglalhatja a jóváhagyást, a visszaszállítást, az eladói visszatérítést és a Kakobuy egyenlegének jóváírását. Az elérhető egyenleg felvétele külön folyamat. Kérdezze meg, hogy melyik lépés függőben van, és őrizze meg a vonatkozó hivatkozásokat. Ne értelmezze a jelentett visszatérítési időtartamot garantált banki érkezési dátumként, és ne feltételezze, hogy egy sikeres visszatérítés felülírja a másik rendelésen megjelenített korlátozó feltételeket. Használja a kapcsolódó visszatérítési útmutatót a folyamatok közötti különbségtételhez."
+          ]
+        },
+        {
+          "heading": "Súlyozza a véleményeket anélkül, hogy garanciává alakítaná őket",
+          "paragraphs": [
+            "Keressen olyan bizonyítékokat, amelyek megfelelnek az állításnak. Egy hasznos beszámoló leírja a terméket, a rendelési szakaszt, a releváns dátumokat és a probléma kezelésének módját. Egy vásárlási linkkel ellátott promóciós képernyőképen látható lehet egy valódi termék, de a kérdések továbbra is megválaszolatlanok maradhatnak. A partnerlinkeket közzé kell tenni, és jelenlétük okot ad arra, hogy alaposan elolvassuk az alapul szolgáló bizonyítékokat, ahelyett, hogy automatikusan elfogadnánk vagy elutasítanánk az oldalon található minden egyes állítást.",
+            "Kerüljük a független tapasztalatok pontos sikerarányba való összevonását. A nyilvános hozzászólások nem képezik az összes tranzakció kontrollált mintáját, és néhány pozitív vagy negatív történet nem támaszthat alá megbízható százalékot. Ha a bizonyítékok ellentmondanak egymásnak, azonosítsuk a konkrét bizonytalanságot, amelyet saját kezűleg is ellenőrizhetünk: az aktuális eladói lista, az írásos megrendelési feltételek, az ellenőrzés hatóköre vagy az elérhető szállítási lehetőségek. Ha egy értékelés nem segít megválaszolni ezeket a kérdéseket, kevésbé lehet hasznos a döntésünk szempontjából, mint egy közvetlen tisztázás."
+          ]
+        },
+        {
+          "heading": "Hozzunk vásárlási döntést egyértelmű megállási pontokkal",
+          "paragraphs": [
+            "Használjuk az alábbi ellenőrzőlistát fizetés előtt, a raktárba érkezés után és a csomag beküldése előtt. Minden szakaszban írjuk le azt a feltételt, amely miatt elakadnánk. Ilyenek például a nem megerősített változatok, a megmagyarázhatatlan költségek vagy a látható eltérések, amelyeket még nem oldottak meg. Ez a bizalommal kapcsolatos tág kérdést olyan döntésekké alakítja, amelyeket ténylegesen meghozhat. Emellett megőrzi a feljegyzéseket, ha a támogatásnak meg kell értenie, hogyan alakult ki a probléma.",
+            "Kezdje a felderítést a táblázatban, majd nyissa meg az eredeti listát és a hivatalos vásárlási oldalt az ellenőrzések elvégzéséhez. A megrendeléssel kapcsolatos kommunikációt tartsa a vonatkozó hivatalos támogatási folyamaton belül, és kerülje a fiókadatok nem hivatalos segítőkkel való megosztását. A Kakobuy Pick jutalékot kaphat a közzétett affiliate linkeken keresztül; ez nem változtat az itt leírt korlátozásokon. Egyetlen útmutató sem garantálja az egyes tranzakciók eredményét, de a világos bizonyítékok és a reális elvárások megalapozottabbá teszik a döntést."
+          ]
+        }
+      ],
+      "checklist": [
+        "Erősítse meg az eladó linkjét, a pontos változatot és az alkalmazandó rendelési feltételeket.",
+        "Válassza szét a megerősített költségeket az ideiglenes csomagbecslésektől.",
+        "Használja a minőségellenőrzést (QC) a látható ellenőrzésekhez anélkül, hogy hitelesítésként kezelné.",
+        "Oldja meg a fennálló problémákat a csomag kifizetése vagy elküldése előtt."
+      ],
+      "table": {
+        "caption": "Gyakorlati bizonyítékok",
+        "headers": [
+          "Ellenőrzés",
+          "Hasznos bizonyítékok"
+        ],
+        "rows": [
+          [
+            "Azonosítás és tárgy",
+            "Eredeti eladó URL-címe, pontos változat és aktuális rendelési oldal"
+          ],
+          [
+            "Rendelési feltételek",
+            "Alkalmazandó lemondási, visszaküldési és manuális vásárlási feltételek"
+          ],
+          [
+            "Költség és szállítás",
+            "Megerősített díjak, ideiglenes szállítási adatok és a kiválasztott útvonal"
+          ],
+          [
+            "Ellenőrzés és támogatás",
+            "Rendelésre vonatkozó fotók, megoldatlan probléma és támogatási referencia"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Keresse meg és párosítsa a megfelelő fotókat",
+      "seoTitle": "Kakobuy QC Finder: Keresse meg és párosítsa a megfelelő fotókat",
+      "description": "Keresse meg Kakobuy rendelési fotóit, és értékelje a nyilvános QC eredményeket az eredeti eladói link, a változat és a kép dátuma alapján. Ismerje meg, mit kell ellenőrizni, ha hiányoznak a fotók.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Kezdje a termékkel és a szükséges fotótípussal",
+          "paragraphs": [
+            "A Kakobuy QC Finder keresése jelentheti a saját rendeléséhez tartozó fotók keresését vagy egy termék vásárlás előtti kutatását. Ezek különböző feladatok. Saját vásárláshoz kezdje hivatalos fiókja rendelések vagy raktár területén, és nyissa meg a megfelelő terméket. Vásárlás előtti kutatás esetén a nyilvános fotótalálat csak egy másik listából vagy rendelésből származó hivatkozás, amíg nem tudja pontosan összepárosítani a szóban forgó eladóval és változattal.",
+            "A Kakobuy Pick a katalógus forrása által biztosított termékreferencia-fényképeket jeleníti meg. Nem jelöli meg ezeket a képeket ellenőrzött raktári minőségellenőrzésként, és nem biztosít nyilvános rendelési fotó adatbázist. Az itt található lépések segítenek a bizonyítékok megtalálásában és értékelésében; nem oldják fel a privát fényképeket, és nem garantálják, hogy minden termékhez létezik nyilvános kép. Tartsa szem előtt ezt a különbséget, amikor egy keresés vonzó képeket ad vissza, de nem ad meg rendelési kontextust, rögzítési dátumot vagy eredeti lista hivatkozást."
+          ]
+        },
+        {
+          "heading": "Őrizze meg az eredeti eladói linket a keresés előtt",
+          "paragraphs": [
+            "Másolja az eredeti lista URL-jét, beleértve a piacteret és a termék azonosítóját, a kutatási megjegyzésébe. A katalógus belső oldalszáma nem feltétlenül egyezik meg az eladó cikkszámával. Azok a keresőeszközök, amelyek eredeti eladói linket várnak, hibásak lehetnek, vagy nem kapcsolódó eredményeket adhatnak vissza, ha ehelyett belső katalógus URL-t adnak meg. Ha csak egy rövid linked van, nyisd meg a listát a normál nyilvános oldalon keresztül, és ellenőrizd a végleges termékadatokat, mielőtt referenciaként használnád.",
+            "Jegyezd fel a kiválasztott színt, méretet, anyagválasztást és az esetleges csomagolási vagy kiegészítő opciókat is. Több változat is megoszthat egy listát, míg a különálló eladók nagyon hasonló fényképeket használhatnak újra. A terméknév vagy a borítókép egyeztetése ezért gyengébb bizonyíték, mint az eredeti link és a pontos változat egyeztetése. Ha a link már nem töltődik be, őrizd meg a meglévő jegyzeteidet, és kérj pontosítást; ne cseréld le csendben egy hasonló megjelenésű listával, és ne feltételezd, hogy a fényképek továbbra is relevánsak."
+          ]
+        },
+        {
+          "heading": "Keresd meg a saját rendeléshez kapcsolódó fényképeket",
+          "paragraphs": [
+            "A hivatalos vásárlási útmutató a felhasználókat az ellenőrzés és a tárolás után a fiók rendelési és raktári területeire irányítja. Keresd meg a rendelést a vásárláshoz csatolt referencia alapján, majd hasonlítsd össze az állapotát a kép elérhetőségével. Az eladó kiszállítása nem jelenti azt, hogy a raktári ellenőrzés befejeződött. Ha a tétel megérkezett, de a várt képek nem láthatók, ellenőrizd a rendelési üzeneteket, és kérdezd meg az ügyfélszolgálatot, hogy az adott tétel átvétele, ellenőrzése vagy kép közzététele még függőben van-e.",
+            "Használd a hivatalos fiókfelületet ahelyett, hogy megadnád a bejelentkezési adataidat egy harmadik félnek. Segítségkéréskor azonosítsd a rendelést és a hiányzó nézetet anélkül, hogy személyes címkecímkéket vagy fiók képernyőképeket tennél közzé egy nyílt fórumon. Egy pontos kérés megmagyarázhatja, hogy a kiválasztott ruhadarab mérete nem egyértelmű, mert a címke nem látható. Őrizd meg a támogatási választ a rendelési nyilvántartással együtt, hogy meg tudd különböztetni a feldolgozási frissítést attól a megerősítéstől, hogy a kért ellenőrzés ténylegesen megtörtént."
+          ]
+        },
+        {
+          "heading": "Párosítsd a nyilvános eredményeket a következtetések levonása előtt",
+          "paragraphs": [
+            "Bármely nyilvános fotótalálat esetén ellenőrizd az eladó linkjét, a kiválasztott változatot, a rögzítés dátumát (ha van), és azt, hogy a képen látható tétel egy tényleges rendeléshez tartozik-e. Egy másik méretű, friss fotó is segíthet a látható konstrukció azonosításában, de nem a választott méret mérési adatait tartalmazza. Egy régebbi fotó eltérő gyártási tételt vagy listakonfigurációt tükrözhet. Ahol az eredményből hiányzik a kontextus, rögzítsd a bizonytalanságot ahelyett, hogy a képet ellenőrzött bizonyítékká frissítenéd.",
+            "Hasonlítson össze több megkülönböztető részletet, például a zsebek elhelyezkedését, a zár típusát, a mellékelt alkatrészeket és a címke elrendezését. Ezen részletek egyeztetése relevánsabbá teheti a hivatkozást, de még nem bizonyítja, hogy a következő rendelés azonos lesz. Ha a nyilvános kép ütközik az eladó aktuális opciós szövegével, tisztázza a különbséget a vásárlás előtt. A legbiztonságosabb következtetés az lehet, hogy a rendelkezésre álló képek nem elegendőek, ahelyett, hogy a legmeggyőzőbbnek tűnő fényképnek kell lennie a helyesnek."
+          ]
+        },
+        {
+          "heading": "Hiányzó részletből hasznos fotókérést készítsen",
+          "paragraphs": [
+            "Egy hasznos fotókérés megnevezi a termék pontos részét és azt, hogyan kell azt bemutatni. Egy kabát esetében ez jelentheti a teljes cipzárcsatlakozást vagy a mellkas méretét, amelyet a megadott pontok között laposan mérnek. Egy cipő esetében ez jelentheti mind a méretcímkéket, mind a talp tiszta láthatóságát. Kérdezze meg, hogy a kért nézet vagy mérés elérhető-e, és hogy díjköteles-e, mielőtt feltételezné, hogy a normál ellenőrzés része.",
+            "Kerülje a sok közel azonos fénykép kérését, amelyek nem oldják meg a döntést. Ha a probléma egy mérési módszerrel kapcsolatos, kérje meg kifejezetten a módszert. Ha a kérdés az, hogy mely tartozékok tartoznak a csomaghoz, kérje el az együtt elhelyezett darabokat. Egy világos célkitűzés megkönnyíti a válasz értékelését. Tartsa meg a különbséget a fénykép, a mérés és a funkcionális teszt között: egy működő eszköz fényképe például nem mutat be minden funkciót vagy annak hosszú távú megbízhatóságát."
+          ]
+        },
+        {
+          "heading": "Olvasson el következetes összehasonlítási feltételekkel rendelkező fényképeket",
+          "paragraphs": [
+            "Használja ugyanazokat a referenciapontokat a méretek összehasonlításakor. A lapos ruhadarab szélessége, a test kerülete és a csomag külső mérete különböző dolgokat ír le. Ellenőrizze a mértékegységeket, valamint a kezdő- és végpontokat, mielőtt egy számot méretegyezésként kezelne. A perspektíva és a lazán elhelyezett mérőszalag megnehezítheti a kép értelmezését. Ha a bizonyítékok nem egyértelműek, kérjen tisztázást, ahelyett, hogy egy bizonytalan mérésre alapozná a pontos illeszkedési ajánlást.",
+            "A szín és a textúra a megvilágítástól, a kamerabeállításoktól és a kijelzőjétől is függ. Az eladói fénykép és a raktári fénykép közötti különbség indokolttá teheti a közelebbi vizsgálatot, de nem feltétlenül állapítja meg a pontos okot. Írja le konkrétan a látható problémát, amikor kapcsolatba lép az ügyfélszolgálattal. A fotók alátámaszthatják az állapot- vagy változatellenőrzést; önállóan nem tudják bizonyítani a szálösszetételt, a hitelességet, a kényelmet, a tartósságot vagy a rejtett hibák hiányát. A teljesebb ellenőrzési ellenőrzőlistához használja a dedikált minőségellenőrzési útmutatót."
+          ]
+        },
+        {
+          "heading": "A hiányzó eredmények és eltérések azonnali kezelése",
+          "paragraphs": [
+            "A nyilvános minőségellenőrzési eredmény önmagában nem bizonyítja, hogy egy hirdetés új, nem biztonságos vagy nem elérhető. Ez egyszerűen azt jelentheti, hogy a keresett forrásban nem jelent meg egyező kép. Térjen vissza az élő eladói információkhoz, és döntse el, mely kérdésekre kell válaszolni a vásárlás előtt. A raktárba érkezés után a saját rendelési fotóiban lévő eltérés közvetlenebb probléma: őrizze meg a képeket, azonosítsa a kiválasztott opciót, és kérdezze meg az ügyfélszolgálatot a vonatkozó következő lépésről.",
+            "Ellenőrizze a tényleges rendelési feltételeket, mielőtt feltételezné, hogy a visszaküldés lehetséges. A manuális vásárlási űrlap szigorúbb korlátozásokat tartalmaz bizonyos harmadik féltől származó linkekre vonatkozóan, beleértve a lemondásra, a visszatérítésre és az értékesítés utáni szolgáltatásokra vonatkozó korlátozásokat. A jogosult szokásos rendelések esetében a visszaküldési döntésnek továbbra is megvan a saját határideje és feltételei. A további nyilvános fényképek megvárása nem hosszabbítja meg ezt a határidőt. Először a megrendeléssel kapcsolatos problémát oldja meg, és őrizze meg a terméket, a címkéket és a csomagolást a rendelkezésre álló visszaküldési folyamathoz szükséges állapotban."
+          ]
+        },
+        {
+          "heading": "Vezessen egy kompakt feljegyzést, amely alátámasztja a következő döntést.",
+          "paragraphs": [
+            "Használja az alábbi összehasonlító táblázatot bizonyítékként, ne pedig pontozólapként. Válassza szét a láthatóan megerősített dolgokat az ismeretlenektől. Például egy címkefotó megerősítheti a kiválasztott méretszöveget, miközben a használható illeszkedés bizonytalan marad. Egy kiegészítő elrendezése megerősítheti a mennyiséget, miközben a funkcionalitást nem teszteli. Ez az elkülönítés megakadályozza, hogy egy megnyugtató fényképet olyan állítások alátámasztására használjanak fel, amelyeket valójában nem tud alátámasztani.",
+            "Miután a szükséges ellenőrzések elvégezték, folytassa a következő releváns feladattal: méretértelmezés, visszaküldési kérelem vagy csomagtervezés. Őrizze meg az eredeti linket és a hasznos méréseket későbbi referencia céljából, de ellenőrizze újra a listát, amikor újra rendel, mert a készlet és a választható opciók változhatnak. Ha közzéteszi saját értékelését, távolítsa el a személyes azonosítókat, és írja le a bizonyítékok pontos terjedelmét. Egy egyértelmű, korlátozott megfigyelés hasznosabb egy másik vásárló számára, mint egy alátámasztatlan állítás, miszerint egy eladó vagy termék univerzálisan biztonságos.",
+            "Mielőtt elfogadnál egy eredményt egyezésként, írj egy rövid nyilatkozatot arról, hogy mit változtat az a döntéseden. Ha a fénykép csak az eladó promóciós képét ismétli, kevés független információt ad hozzá. Ha a kért méretet mutatja a saját rendelésedhez, az feloldhat egy adott illeszkedési bizonytalanságot. A bizonyítékot és annak korlátozását is tartsd ugyanabban a megjegyzésben, hogy a következtetés később is érthető maradjon."
+          ]
+        }
+      ],
+      "checklist": [
+        "Az eredeti eladói linket tartsd elkülönítve a katalógus oldalszámától.",
+        "Használd a hivatalos fiókodat a saját rendelésed fényképeihez.",
+        "Párosítsd a változatot és a kontextust, mielőtt egy nyilvános képre hagyatkoznál.",
+        "Oldd fel a látható eltéréseket a vonatkozó rendelési feltételeken belül."
+      ],
+      "table": {
+        "caption": "Fotóegyeztető rekord",
+        "headers": [
+          "Ellenőrzés",
+          "Hasznos bizonyíték"
+        ],
+        "rows": [
+          [
+            "Hirdetési egyezés",
+            "Eredeti piactér URL-címe és az eladó termékazonosítója"
+          ],
+          [
+            "Változat egyezése",
+            "Kiválasztott szín, méret, a mellékelt darabok és látható különbségek"
+          ],
+          [
+            "Fotó kontextusa",
+            "Saját rendelés vagy nyilvános hivatkozás; dátum és hiányzó kontextus"
+          ],
+          [
+            "Döntés",
+            "Látható eredmény, fennmaradó bizonytalanság és a következő lépés"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Olaszország: Rendelés, szállítási költségek és követés",
+      "seoTitle": "Kakobuy Olaszország: Rendelés, szállítási költségek és követés",
+      "description": "Tervezzen Kakobuy rendelést Olaszországba: ellenőrizze az eladó linkjeit, becsülje meg a teljes csomagköltséget, ellenőrizze az elérhető útvonalakat és kövesse a megfelelő követési lépést.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Tervezzen meg egy olaszországi rendelést a teljes útvonal alapján",
+          "paragraphs": [
+            "A Kakobuy-n keresztül történő olaszországi szállítási megrendelés magában foglalja az eladótól történő vásárlást, a raktárba szállítást, az ellenőrzést és egy külön nemzetközi csomagot. A termék ára önmagában nem írja le a teljes útvonalat. Kezdje a tétel megerősítésével, majd ellenőrizze, hogy a jelenlegi szállítási lehetőségek elfogadják-e a célállomást és a tartalmat. Ez az útmutató elmagyarázza a meghozandó döntéseket; nem ígér konkrét útvonalat, szállítási dátumot vagy fix szállítási árat minden olasz címre.",
+            "Ha azt vizsgálja, hogyan működik a Kakobuy Olaszországban, tartson fenn egy rövid rendelési tervet az eladó linkjével, a kiválasztott változattal, a kívánt szállítási címmel és a nyitott kérdésekre. Fizetés előtt döntse el, hogy a vásárlásnak van-e határozott határideje. Egy adott eseményre szánt csomag nagyobb körültekintést igényel, mint egy rugalmas érkezési dátumú rendelés, mivel az eladó előkészítése és a raktári kezelés még a nemzetközi szállítás megkezdése előtt megtörténik. Hasonlítsa össze az alternatívákat a teljes folyamat felhasználásával, ne pedig egy különálló szállítási becsléssel."
+          ]
+        },
+        {
+          "heading": "Ellenőrizze az eladó listáját és a kiválasztott változatot",
+          "paragraphs": [
+            "Használja a táblázatot a jelöltek kereséséhez, majd nyissa meg az eredeti eladói listát és a hivatalos vásárlási oldalt. Erősítse meg a pontos színt, méretet, modellt és a mellékelt darabokat. A terméknevek és fényképek újra felhasználhatók a listákon keresztül, ezért tartsa meg az eredeti URL-t a kiválasztott opcióval. Ha az automatikus importálás sikertelen, csak a feltételek elolvasása és a pontos adatok megadása után használja az aktuális hivatalos manuális vásárlási folyamatot. Egy hasonló kép nem helyettesíti megbízhatóan az eredeti listát.",
+            "Fordítson különös figyelmet a korlátozó manuális rendelési feltételekre. A jelenlegi manuális űrlap figyelmeztet, hogy bizonyos harmadik féltől származó vásárlások nem rendelkeznek értékesítés utáni szolgáltatással, és a fizetés után nem téríthetők vissza, nem törölhetők vagy módosíthatók. Az általános raktári visszaküldési útmutató nem írja felül ezeket a feltételeket. Ha bizonytalan egy mérettáblázattal, anyaggal vagy kiegészítővel kapcsolatban, oldja meg a kérdést a megrendelés elfogadása előtt. A döntésnek az adott vásárláshoz feltüntetett feltételeken kell alapulnia, nem pedig azon a feltételezésen, hogy minden tétel később visszaküldhető."
+          ]
+        },
+        {
+          "heading": "Méretek összehasonlítása a termék mérési módszerével",
+          "paragraphs": [
+            "Egy olasz ruha- vagy lábbeliméret, amelyet általában visel, nem elegendő egy ismeretlen eladótól származó változat kiválasztásához. Hasonlítsa össze a konkrét hirdetés táblázatát egy Önnek megfelelő termékkel, és jegyezze fel a mérési módszert. A lapos ruhadarabok méretei és a testméretek eltérőek. Ruházat esetén azonosítsa a kívánt szabás és rétegezés szempontjából fontos méreteket. Cipők esetén különítse el a lábhosszt, a talpbetét hosszát és a külső talp hosszát, ahelyett, hogy minden hosszszámot felcserélhetőnek tekintene.",
+            "Ha a táblázat hiányzik vagy nem egyértelmű, rendelés előtt kérjen pontosítást. Raktárba érkezés után egy célzott mérés segíthet egy nyitott kérdés megoldásában, az ellenőrzési szolgáltatás és az esetleges díjak függvényében. Egy címkefotó ellenőrizheti a kiválasztott címkét, de nem garantálja a kényelmet. Használja az alábbi mérettáblázatot a strukturált összehasonlításhoz, és őrizze meg a méreteit a jövőbeni vásárlásokhoz. Kerülje az univerzális utasítást a nagyobb méret kiválasztására, mert az megváltoztathatja a hosszt és az arányokat anélkül, hogy megoldaná az eredeti illeszkedési problémát."
+          ]
+        },
+        {
+          "heading": "Szállítási költség becslése célállomás és csomag megadásával",
+          "paragraphs": [
+            "Nyissa meg a hivatalos becslőt, és válassza Olaszországot célállomásként, ha ez a lehetőség elérhető. Adja meg a vonatkozó árutípust, súlyt és méreteket, majd olvassa el a visszaadott útvonalakra vonatkozó korlátozásokat és számlázási információkat. Az üres eredmény okot ad a megadott adatok ellenőrzésére vagy az ügyfélszolgálat megkérdezésére, nem pedig arra, hogy egy hirdetett útvonal átveszi a csomagot. Az elérhetőség a tartalomtól és a becsomagolt csomagtól függhet, ezért a végső beküldés előtt ellenőrizze újra.",
+            "Mielőtt az áruk megérkeznének a raktárba, jelölje meg a méreteket és súlyokat becslésként. Frissítse az összehasonlítást, amikor a mért információk elérhetővé válnak, és ismételje meg, ha a csomagolás megváltozik. A webhely szállítási oldalán található súly-összehasonlítás a tényleges és a térfogatsúlyt mutatja; ez nem élő árkalkulátor. Használja az útvonal által megadott osztót és számlázási módszert, ahelyett, hogy minden szállítóra univerzális képletet alkalmazna. Egy könnyebb tétel is elegendő helyet foglalhat el a szállítási számítás módosításához."
+          ]
+        },
+        {
+          "heading": "Költségjegyzék készítése teljes ár feltalálása nélkül",
+          "paragraphs": [
+            "Külön sorolja fel a kiválasztott tétel árát, a belföldi szállítást, a nemzetközi szállítást és az opcionális szolgáltatásokat. Ellenőrizze a fizetés pénznemét és az aktuális fizetési mód által kért összeget. Az útvonalfeltételekben leírt díjakat külön bejegyzésekben tárolja, és kerülje a díj kétszeri elszámolását pusztán azért, mert a különböző súgóoldalak eltérő címkéket használnak. A dollárban megadott becslést nem szabad garantált euróban történő terhelésként kezelni. Hasonlítsa össze a tényleges tranzakció során feltüntetett megerősített összegeket.",
+            "Olaszországba történő szállítás esetén ne értelmezze az útvonalnevet vagy a promóciós leírást annak bizonyítékaként, hogy minden lehetséges érkezési díj benne van az árban. Olvassa el, hogy mit tartalmaz kifejezetten az aktuális árajánlat, és kérjen pontosítást, ha a megfogalmazás nem egyértelmű. Ez az útmutató nem tesz közzé adókulcsot, vámküszöböt vagy garantált vámkezelési eredményt. Egy hasznos költségvetés rögzíti, hogy mi van benne, mi nincs benne, és mi marad ismeretlen, lehetővé téve, hogy eldöntse, hogy a teljes összeg elfogadható-e a nemzetközi szállítás előtt."
+          ]
+        },
+        {
+          "heading": "A termékek összevonása előtt tekintse át az ellenőrzés eredményeit",
+          "paragraphs": [
+            "Amikor az áruk raktározásra kerültek, hasonlítsa össze a saját rendeléséhez tartozó fényképeket a kiválasztott változattal. Ellenőrizze a látható állapotot, a mennyiséget és az Ön számára fontos méreteket. Egy másik rendelésből származó nyilvános referenciafotók nem helyettesíthetik ezt az értékelést. Ha valami hibát mutat, őrizze meg a képet és a rendelési adatokat, majd haladéktalanul vegye fel a kapcsolatot az ügyfélszolgálattal. Oldja meg a problémát, mielőtt a terméket más vásárlásokkal kombinálná, vagy nemzetközi szállítást kérne, amíg az alkalmazható opciók még elérhetők.",
+            "Ha ruházatot, cipőt és kiegészítőket kíván összevonni, hasonlítsa össze a kapott csomagot az útvonal korlátozásaival és csomagolási követelményeivel. A felesleges csomagolás eltávolítása befolyásolhatja a mennyiséget, de a védelem és az esetleges visszaküldési feltételek továbbra is számítanak. Kérdezzen a javasolt csomagolásról, ahelyett, hogy feltételezné, hogy a tömörítés vagy a doboz eltávolítása minden termékhez illik. A raktári tárolás határideje elkülönül az eladó visszaküldési határidejétől, így egy másik termékre való várakozás nem őrzi meg a végtelenségig ugyanazokat az értékesítés utáni lehetőségeket."
+          ]
+        },
+        {
+          "heading": "Kövesse nyomon a ténylegesen érvényes szakaszt",
+          "paragraphs": [
+            "A megrendelési és a nemzetközi csomagok hivatkozásait tartsa külön. A kézbesítettként megjelölt belföldi követési esemény a raktárba történő átvételre vonatkozhat, nem pedig az olaszországi kézbesítésre. A nemzetközi követés a beküldött csomag és a szállítói útja szempontjából válik relevánssá. Ha egy frissítés késik, rögzítse az utolsó eseményt, annak dátumát és az ellenőrzött követési hivatkozást. Kérdezze meg az ügyfélszolgálattól, hogy melyik szakasz van függőben, ahelyett, hogy minden csendes időszakot ugyanolyan típusú késésként kezelne.",
+            "Kövesse a hivatalos csomagnyilvántartásban megadott átadás-átvételi vagy helyi kézbesítési hivatkozásokat. Ne feltételezze, hogy egy adott olasz szállító minden útvonalat kezel, vagy hogy minden szállítmányhoz új követési számnak kell léteznie. Ha a megadott kézbesítési időkeret lejárt, vagy a nyilvántartás problémát mutat, adja meg a pontos csomagazonosítót és az utolsó látható eseményt, amikor segítséget kér. Őrizze meg az elfogadott szállítási árajánlatot, hogy meg tudja különböztetni a megadott terjedelmet egy korábbi tervezési becsléstől."
+          ]
+        },
+        {
+          "heading": "Készüljön fel a kézbesítésre és őrizze meg a bizonyítékokat.",
+          "paragraphs": [
+            "A csomag feladása előtt ellenőrizze, hogy a címzett neve, címe, irányítószáma és elérhetőségei pontosak-e. Kézbesítéskor haladéktalanul vizsgálja meg a külső csomagolást és a tartalmat. Ha látható sérülést vagy hiányzó tételt észlel, őrizze meg a csomagolást és a vonatkozó fényképeket, és haladéktalanul vegye fel a kapcsolatot a megfelelő ügyfélszolgálattal. Olvassa el a csomagra vonatkozó aktuális átvételi és reklamációs követelményeket. A csomag fényképe alátámaszthatja a jelentést, de önmagában nem alapoz meg kártérítési jogot.",
+            "Sikeres kézbesítés után őrizze meg a hasznos ruhadarab-méreteket, a csomag adatait és az útvonal leírását összehasonlítás céljából. Tekintse ezeket az adott rendelés feljegyzéseiként, ne pedig a következőre vonatkozó állandó ígéretekként. Újrarendeléskor ellenőrizze újra az eladót, az elérhető változatokat és az aktuális szállítási árajánlatot. Kezdje az alábbi kategórialinkekkel a felfedezéshez, majd használja a szállítási, nyomon követési és visszatérítési útmutatókat az általuk lefedett konkrét döntésekhez. Ezáltal a termékböngészés gyakorlati ellenőrzésekhez kapcsolódik, ahelyett, hogy egyetlen általános ajánlásra támaszkodna.",
+            "Egy egyszerű tervezési példaként hasonlítsa össze egy kész ruhadarab mostani feladását azzal, hogy olyan cipőkre vár, amelyek még nem érkeztek meg a raktárba. Jegyezze fel a megoldatlan eladói küldeményt, az esetleges csomagolásváltozást és a külön visszaküldési határidőket. Ne feltételezze, hogy a várakozás pénzt takarít meg, amíg a kombinált csomag értékét reális adatok alapján meg nem becsüli. A jobb választás az aktuális árajánlattól, a védelmi igényektől és a határidőtől függ, nem csupán a csomagban lévő tételek számától."
+          ]
+        }
+      ],
+      "checklist": [
+        "Erősítse meg a pontos listát és az alkalmazandó manuális rendelési feltételeket.",
+        "Ellenőrizze újra az olaszországi útvonal elérhetőségét a tényleges csomagadatok alapján.",
+        "Válassza szét a tétel árát, a fizetendő összeget és a szállítási árajánlatot.",
+        "Tartsa külön a rendelési és csomagkövetési nyilvántartásokat, és haladéktalanul ellenőrizze a kézbesítést."
+      ],
+      "table": {
+        "caption": "Olaszországi rendeléstervezési nyilvántartás",
+        "headers": [
+          "Ellenőrzés",
+          "Hasznos bizonyítékok"
+        ],
+        "rows": [
+          [
+            "Vásárlás előtt",
+            "Eladó URL-címe, pontos változat, méretezési mód és rendelési feltételek"
+          ],
+          [
+            "Szállítás előtt",
+            "Olaszországi célállomás, tartalom, csomagolási méretek és elérhető árajánlat"
+          ],
+          [
+            "Szállítás közben",
+            "Csomagazonosító, utolsó dátumú esemény és minden hivatalos átadási adat"
+          ],
+          [
+            "Szállításkor",
+            "A csomag állapota, tartalma és az alkalmazandó jelentési követelmények"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "A hivatalos útmutató külön figyelmeztet a 1688 minimális vásárlási mennyiségeire. A megjelenített ár függhet a mennyiségtől vagy változattól. Mielőtt más oldal egydarabos ajánlatával hasonlítod össze, ellenőrizd, hogy a tervezett rendelés teljesíti-e az eladó követelményét. Azt is nézd meg, módosítja-e a mennyiség a belföldi szállítást.",
             "Fizetés előtt az egész rendelési összesítést ellenőrizd: megfelelő termék, opció, mennyiség és teljes vásárlási költség. Mentsd el a kapott rendelésszámot és jegyzeteket. Ha később probléma merül fel, ezek segítik a támogatást a vásárlási kérés és a beérkezett termék összevetésében."
           ]
+        },
+        {
+          "heading": "Olvassa el a kézi vásárlási űrlapon található feltételeket",
+          "paragraphs": [
+            "Az útmutató alkalmazása előtt ellenőrizze a pontos rendeléséhez tartozó feltételeket. A hivatalos kézi vásárlási űrlap jelenleg arra figyelmeztet, hogy bizonyos harmadik féltől származó linkek nem rendelkeznek értékesítés utáni szolgáltatással, és nem támogatják a visszatérítést, a lemondást vagy a fizetés utáni módosításokat. Az általános raktári visszaküldési folyamat ezért nem minden vásárláshoz érhető el. Fizetés előtt tisztázzon egy bizonytalan változatot, árat vagy visszaküldési feltételt; ne feltételezze, hogy egy ellenőrző fotó visszaküldési jogot teremt."
+          ]
         }
       ],
       "checklist": [
@@ -1176,7 +1507,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy-linkek: hirdetések megnyitása, változatok ellenőrzése és rendelés"
     },
     {
@@ -1320,6 +1651,13 @@
             "Kapucnis pulóver vagy futballmez esetén a referencia ruhadarab mellkasszélességét és hosszát írja az eladó értékei mellé. Jelölje meg azokat az eltéréseket, amelyeket ténylegesen szeretne, például több helyet a rétegezéshez vagy rövidebb testrészt. Ellenőrizze az ujjak kialakítását, mielőtt összehasonlítaná az ujjszámokat. A leengedett váll és a hagyományos vállvarrás eltérő kiindulópontokat használhat, így az azonos számok nem feltétlenül eredményeznek azonos hosszt.",
             "Ha az eladó csak magasság- és súlyjavaslatot ad meg, kérjen ruhadarab méreteit, ha a méret fontos. Cipők esetében kérdezze meg, hogy a táblázat melyik hosszúságot jelöli, és hogy van-e modellspecifikus szélességi leírás. Rendelés előtt jegyezze fel a fel nem oldott méretet; majd szükség esetén kérje a pontos ellenőrzést a raktárban. A cél az egyértelmű összehasonlítás, nem pedig az egyik márka méretbetűjének a másikra való univerzális átváltása."
           ]
+        },
+        {
+          "heading": "Mérési különbség alapján hozzon konkrét döntést",
+          "paragraphs": [
+            "Vegyünk egy referencia ruhadarabot, amelynek kényelmes a mellkasa, de az ujjai túl rövidnek érződnek. Hasonlítsa össze a mellkas és az ujjak különbségeit külön-külön az eladói táblázattal; ne redukálja a döntést egyetlen utasításra a nagyobb méretre vonatkozóan. Győződjön meg arról, hogy mindkét ujjméret ugyanabból a kiindulópontból indul ki. Ha a táblázat más módszert használ, kérdezze meg a hiányzó méretet, mielőtt a számokat összehasonlíthatónak tekintené.",
+            "Tartsa a kiválasztott változatot a mérési megjegyzés mellett, és hasonlítsa össze újra, amikor megérkeznek a rendelés-specifikus képek. Az egyező méretcímke nem erősíti meg a ruhadarab mért méreteit. Ha a mérés elengedhetetlen, kérdezze meg, hogy a raktár tudja-e pontosan ezt az ellenőrzést biztosítani, és hogy van-e díja. A kérést elég korán tegye meg, hogy a vonatkozó vásárlási feltételek szerint cselekedhessen."
+          ]
         }
       ],
       "checklist": [
@@ -1354,7 +1692,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy Mérettáblázat: Ruházat és cipőtáblázatok"
     },
     {
@@ -1409,6 +1747,13 @@
             "Raktári mérés előtt készítsen egy könnyű és egy nehéz tervezési forgatókönyvet, és jegyezze fel, hogy mely értékek becsültek. Tüntesse fel a csomagolást és az összes tervezett tartalmat. Használja mindkét forgatókönyvet a hivatalos becslőben ugyanazzal a célállomással és árutípussal. Ha a költség annyira megváltozik, hogy befolyásolja a vásárlási döntését, várjon pontosabb információkra, ahelyett, hogy egy durva terméksúlyt mutatna be pontos szállítási árajánlatként.",
             "Az ezen az oldalon található súly-összehasonlítás csak a számítást szemlélteti. Nem ismeri az aktuális útvonaldíjat, a számlázási növekményeket, a minimális díjat, a felárat vagy a tartalomkorlátozásokat. Olvassa el ezeket a feltételeket a hivatalos árajánlatban, és frissítse a bemeneteket a csomagolás után. A pontos szorzás továbbra is nem megfelelő költségvetést eredményezhet, ha a kiválasztott osztó vagy a csomag méretei nem egyeznek meg a tényleges szolgáltatással."
           ]
+        },
+        {
+          "heading": "Árajánlatok összehasonlítása ugyanazon csomagfeltételek alapján",
+          "paragraphs": [
+            "Útvonalak összehasonlításakor tartsa állandónak a célállomást, az áru típusát, a csomagolt súlyt és a méreteket. Jegyezze fel, hogy az egyes árajánlatok tartalmazzák-e a kiválasztani kívánt szolgáltatásokat, és jegyezze fel az útvonal által feltüntetett kerekítéseket vagy minimum díjakat. Az egyik útvonalon a csomagolatlan súly és a másikon a csomagolt súly összehasonlítása látszólagos megtakarítást eredményezhet, amely a beküldéskor eltűnik.",
+            "Az ezen az oldalon található kalkulátor csak a súlyokat hasonlítja össze. Nem tudja meghatározni az útvonal elérhetőségét, az árfolyamot vagy a fizetendő szállítási összeget. Ha megváltoztatja a csomagolást, frissítse a hivatalos becslést a döntés meghozatala előtt. A korábbi becslést és az elfogadott csomagajánlatot külön nyilvántartásként őrizze meg, hogy a későbbi módosítások nyomon követhetők legyenek a megváltozott bemenetekre."
+          ]
         }
       ],
       "checklist": [
@@ -1443,7 +1788,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy szállítási kalkulátor: Súly és költség"
     },
     {
@@ -1597,6 +1942,13 @@
             "A raktárba érkezés ideje eltér a tárolásban megengedett időtől. Az eladó előkészítése és a belföldi kézbesítés a raktári átvétel előtt történik; az ellenőrzés és a fiókfrissítések saját munkafolyamatot követnek. Először ellenőrizze az eladó feladását és a belföldi nyomon követést. A kézbesített szkennelést össze kell hangolni a rendelésével, mielőtt feltételezné, hogy a tétel nemzetközi csomagban beküldhető.",
             "Ha a szállító a kézbesítést mutatja, de a megrendelés nem jelent meg raktározottként, adja meg a belföldi nyomon követési számot, a kézbesítési eseményt és a megrendelési számot az ügyfélszolgálatnak. Kérdezze meg, hogy az átvétel, a tulajdonjog-egyeztetés vagy az ellenőrzés függőben van-e. Ne indítson tárolási visszaszámlálást egy feltételezett eladói feladási dátumtól, és ne tekintse a szokásos 100 napos határidőt a feldolgozási sebesség ígéretének."
           ]
+        },
+        {
+          "heading": "Válassza ki a következő műveletet a legközelebbi határidőtől",
+          "paragraphs": [
+            "Tekintse át az egyes tárolt tételeket a tárolási határidő és az esetleges visszaküldési határidő alapján. Csak a kiválasztott változat és a látható állapot ellenőrzése után jelölje meg szállításra késznek. Ha egy tétellel megoldatlan probléma van, vegye fel a kapcsolatot az ügyfélszolgálattal most, ahelyett, hogy megvárná a tervezett csomag többi részét. Külön jegyzetet vezessen azokról az árukról, amelyeket meg kíván tartani, és azokról az árukról, amelyek az eladó döntésére várnak.",
+            "Gyakorlati összehasonlításképpen képzelje el, hogy egy kabát készen áll, de egy másik eladó még nem küldött el egy pár cipőt. A várakozás megváltoztathatja a csomag költségét, de ez a lehetséges megtakarítás nem oldja meg a kabát visszaküldési határidejét. Először ellenőrizze az azonnali döntést, majd hasonlítsa össze a csomaglehetőségeket reális csomagolási méretekkel. Ne írjon le egy feltételezett kombinált csomag megtakarítást megerősített összegként."
+          ]
         }
       ],
       "checklist": [
@@ -1631,7 +1983,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy raktár: Tárolási idő és határidők"
     },
     {
@@ -1765,6 +2117,13 @@
             "A változatlan esemény önmagában nem azonosítja a késedelem okát. Először is győződjön meg arról, hogy a nemzetközi csomagot látja, nem pedig az eladó belföldi szállítmányát. Ezután hasonlítsa össze az esemény dátumát a kiválasztott sor aktuális becslésével és a szállítmányhoz csatolt értesítésekkel. Az átvétel előtt létrehozott címke más helyzet, mint egy későbbi szállítóval vagy célállomással szkennelt csomag.",
             "Kérje meg az ügyfélszolgálatot, hogy erősítse meg a függőben lévő szakaszt a csomagszám, az útvonal, a legutóbbi esemény és a dátum alapján. Ha intézkedésre van szükség Öntől, kérje el a pontos információkat és a szükséges hivatalos csatornát. Ne találjon ki egy fix számú napot, amely után minden csomag elveszik, és ne ígérjen kézbesítési dátumot egy általános állapotcímke alapján. Tartsa meg a választ a meglévő üggyel együtt, hogy a további teendők során a még megoldatlan problémákra is választ kapjon."
           ]
+        },
+        {
+          "heading": "Készítsen hasznos nyomon követési támogatási kérelmet",
+          "paragraphs": [
+            "Mielőtt kapcsolatba lépne az ügyfélszolgálattal, jegyezze fel a rendelés vagy a csomag hivatkozását, az utolsó látható állapotot, az esemény dátumát és azt, hogy melyik utat írja le a hivatkozás. Adja meg a hiányzó következő lépést: eladói kiszállítás, raktári ellenőrzés, csomag kiszállítása vagy fuvarozói frissítés. Ha hivatalos átadási hivatkozást adnak meg, ellenőrizze azt a feljegyzést is. Ne következtessen arra, hogy minden útvonal ugyanazt a helyi szállítót használja, vagy frissítse az ütemtervet.",
+            "Írja le, mit mutat a feljegyzés, ahelyett, hogy feltételezné a késedelem okát. A belföldi és a nemzetközi kézbesítési eseménynek eltérő jelentése van, míg a létrehozott szállítási címke nem mindig igazolja a szállító birtoklását. Kérdezze meg, hogy melyik fél birtokolja jelenleg a terméket vagy csomagot, és milyen intézkedésre van szüksége. Őrizze meg a választ az elfogadott szállítási becsléssel és a rendelési előzményeivel."
+          ]
         }
       ],
       "checklist": [
@@ -1799,7 +2158,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy szállítási idő és nyomon követési állapot"
     },
     {
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Nyissa meg a vonatkozó rendelést, és azonosítsa az utolsó befejezett lépést: kérés elküldve, eladói szerződés, visszaküldés feladva, eladói elismervény, visszatérítés megerősítve vagy egyenleg jóváírva. Jegyezze fel a feltüntetett dátumot és összeget. Ezután kérdezze meg az ügyfélszolgálatot a következő hiányzó lépésről a rendelési számmal és a meglévő ügyazonosítóval. Egy még mindig az eladóhoz visszafelé tartó csomag és egy jóváírt egyenleg, amely felvételre vár, eltérő követést igényel.",
             "Ha az egyenleg jóváírásra került, külön ellenőrizze a felvételi rekordot. Erősítse meg a cél fizetési csatornát, az állapotot és a megadott hivatkozást. Ne nevezze meg a raktári visszatérítést befejezetlenként pusztán azért, mert a pénz nem érkezett meg a bankszámlára külön felvétellel. A megadott időpontokat csatolja a leírt szakaszhoz, és ne kezelje a feltételes 7–15 napos hivatkozást minden esetre vonatkozó garanciaként."
           ]
+        },
+        {
+          "heading": "Ellenőrizze a vásárlási feltételeket a visszaküldési idővonal használata előtt",
+          "paragraphs": [
+            "Mielőtt alkalmazná ezt az útmutatót, ellenőrizze a pontos rendeléséhez tartozó feltételeket. A hivatalos kézi vásárlási űrlap jelenleg arra figyelmeztet, hogy bizonyos harmadik féltől származó linkek nem rendelkeznek értékesítés utáni szolgáltatással, és nem támogatják a visszatérítést, a lemondást vagy a fizetés utáni módosításokat. Az általános raktári visszaküldési folyamat ezért nem minden vásárláshoz érhető el. Fizetés előtt tisztázza a bizonytalan változatot, árat vagy visszaküldési feltételt; ne feltételezze, hogy egy ellenőrző fotó visszaküldési jogot teremt.",
+            "Jogosult késedelmes visszaküldés esetén vezessen rövid állapotjelentést: jóváhagyás kérése, eladói válasz, visszaküldés feladása, eladói bizonylat és egyenleg jóváírása. Kérjen ügyfélszolgálatot a fennmaradó szakaszhoz és a teljesítést megerősítő hivatkozáshoz. Miután az egyenleg jóváírásra került, rögzítse a külön kifizetési kérelmeket. Ezáltal a következő lépés egyértelműbbé válik, mint ugyanazon visszaküldési kérelem újraindítása vagy minden szakasz számlálása a vásárlás dátumától számítva."
+          ]
         }
       ],
       "checklist": [
@@ -1898,7 +2265,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy visszatérítési idő és raktári visszaküldések"
     }
   ],

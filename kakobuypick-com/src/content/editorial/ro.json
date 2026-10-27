@@ -74,7 +74,10 @@
       "invalid": "Introduceți un număr pozitiv în fiecare câmp.",
       "note": "Regula greutății mai mari este un exemplu. Ruta dvs. poate utiliza reguli de facturare, rotunjiri sau taxe minime diferite.",
       "official": "Deschideți estimatorul oficial de livrare"
-    }
+    },
+    "navShipping": "Livrare",
+    "articleTopics": "Alegeți următorul pas",
+    "productGuides": "Verificați înainte de a comanda"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "Ce se întâmplă dacă linkul unui produs nu se va încărca automat?",
-      "a": "Ghidul oficial de cumpărare include un formular de cumpărare manuală pentru listările care nu pot fi importate. Introduceți adresa URL reală a vânzătorului și detaliile exacte ale articolului. Nu inventați un preț și nu selectați un produs asemănător fără să verificați lista și să întrebați agentul de achiziții atunci când este necesar.",
+      "a": "Ghidul oficial de cumpărare include un formular de achiziție manuală pentru listările care nu pot fi importate. Introduceți adresa URL reală a vânzătorului și detaliile exacte ale articolului. Nu inventați un preț și nu selectați un produs cu aspect similar fără a verifica listarea și a întreba cumpărătorul atunci când este necesar. Înainte de a aplica aceste îndrumări, verificați condițiile afișate pentru comanda dvs. exactă. Formularul oficial de achiziție manuală avertizează în prezent că anumite linkuri terțe nu au servicii post-vânzare și nu acceptă rambursări, anulări sau modificări după plată. Prin urmare, procesul general de returnare din depozit nu este disponibil pentru fiecare achiziție. Clarificați o variantă, un preț sau o condiție de returnare incertă înainte de a plăti; nu presupuneți că o fotografie de inspecție creează un drept de returnare.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "Se aplică regula de returnare a cinci zile pentru fiecare produs?",
-      "a": "Nu. Regulile oficiale de returnare sunt condiționate de acceptarea vânzătorului, eligibilitatea produsului, starea și momentul după depozitare. Sunt excluse unele categorii și ambalaje modificate. Verificați cu promptitudine termenul limită și eligibilitatea comenzii; Stocarea de 100 de zile nu este un drept de returnare de 100 de zile.",
+      "a": "Nu. Regulile oficiale de returnare sunt condiționate de acceptarea vânzătorului, eligibilitatea produsului, starea și termenul de livrare după depozitarea în depozit. Unele categorii și ambalaje modificate sunt excluse. Verificați prompt termenul limită și eligibilitatea comenzii; depozitarea de 100 de zile nu reprezintă un drept de returnare de 100 de zile. Înainte de a aplica aceste instrucțiuni, verificați condițiile afișate pentru comanda dvs. exactă. Formularul oficial de achiziție manuală avertizează în prezent că anumite linkuri terțe nu oferă servicii post-vânzare și nu acceptă rambursări, anulări sau modificări după plată. Prin urmare, procesul general de returnare în depozit nu este disponibil pentru fiecare achiziție. Clarificați o variantă, un preț sau o condiție de returnare incertă înainte de a plăti; nu presupuneți că o fotografie de inspecție creează un drept de returnare.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "Este Kakobuy de încredere? Costuri, QC și retururi",
+      "seoTitle": "Este Kakobuy de încredere? Costuri, QC și retururi",
+      "description": "Evaluați Kakobuy folosind procesul de cumpărare publicat, limitele de inspecție și condițiile de returnare. Verificați vânzătorul, costul total și termenii comenzii înainte de a plăti.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Ce pot stabili dovezile disponibile",
+          "paragraphs": [
+            "Kakobuy publică un flux de lucru pentru achiziții, îndrumări pentru inspecția depozitului și pagini de ajutor pentru livrare și post-vânzare. Aceste documente explică modul în care este conceput serviciul; ele nu dovedesc independent că fiecare vânzător, colet sau rambursare va îndeplini așteptările. Dacă sunteți în căutarea unei soluții pentru a afla dacă Kakobuy este legitim sau sigur, separați existența unui proces operațional de fiabilitatea unei anumite tranzacții. Acest ghid este o listă de verificare a cumpărăturilor bazată pe documente, nu un test practic sau o evaluare bazată pe achizițiile finalizate.",
+            "Începeți cu decizia exactă din fața dvs. Este posibil să fie nevoie să confirmați că un link aparține vânzătorului vizat, că o dimensiune selectată se potrivește cu un tabel sau că livrarea rămâne accesibilă. O recenzie generală pozitivă nu poate rezolva niciuna dintre aceste verificări de la sine. Înregistrați ce se știe, de unde provin informațiile și ce rămâne incert. Angajați-vă la o comandă doar atunci când punctele nerezolvate sunt acceptabile pentru acea achiziție specifică, mai degrabă decât pentru că o pagină etichetează întreaga platformă ca fiind demnă de încredere."
+          ]
+        },
+        {
+          "heading": "Separați platforma, vânzătorul și site-ul web de descoperire",
+          "paragraphs": [
+            "Kakobuy descrie un serviciu de agent care achiziționează de la vânzători terți și ajută la aranjarea livrării. Kakobuy Pick este un site web de descoperire separat: linkurile sale din catalog vă ajută să cercetați produse, în timp ce comenzile și plățile sunt gestionate prin Kakobuy. Un produs care apare în acest catalog nu este o recomandare bazată pe testare, o aprobare oficială a mărcii sau o promisiune de stoc. Utilizați listarea originală și formularul de comandă actual pentru a verifica articolul pe care intenționați să îl cumpărați.",
+            "Păstrați împreună adresa URL sursă și varianta selectată. Fotografii similare pot apărea în listări diferite, iar un nume de produs familiar nu stabilește că vânzătorul sau conținutul sunt identice. Comparați textul opțiunii, piesele incluse și măsurătorile relevante după deschiderea paginii de cumpărare. Dacă s-a schimbat ceva, opriți-vă și clarificați-l înainte de plată. Un preț de catalog este o referință de descoperire, astfel încât suma afișată într-o comandă curentă poate diferi atunci când varianta sau prețul vânzătorului se modifică."
+          ]
+        },
+        {
+          "heading": "Citiți condițiile specifice comenzii înainte de a plăti",
+          "paragraphs": [
+            "Formularul de achiziție manuală afișează în prezent restricții mai puternice pentru anumite linkuri de la terți, inclusiv lipsa serviciilor post-vânzare și lipsa rambursării, anulării sau modificării după plată. Aceasta este o excepție semnificativă de la îndrumările generale de returnare. Un articol de ajutor despre retururile obișnuite din depozit nu trebuie tratat ca un drept pentru fiecare achiziție trimisă manual. Citiți condițiile afișate pentru comanda dvs. reală și solicitați asistență pentru a rezolva orice incertitudine înainte de a le accepta.",
+            "Salvați termenii care se aplică alături de linkul produsului și varianta aleasă. Dacă o listare este neclară în ceea ce privește materialele, măsurătorile sau accesoriile incluse, o comandă restrictivă vă oferă mai puțin spațiu pentru a rezolva dezamăgirea ulterior. Un răspuns sensibil este să obțineți informațiile lipsă sau să alegeți un alt aranjament de achiziție. Nu presupuneți că inspecția din depozit va crea un drept de returnare pe care condițiile comenzii îl exclud. Întrebarea practică este dacă puteți accepta tranzacția în termenii declarați."
+          ]
+        },
+        {
+          "heading": "Calculați decizia folosind costul complet",
+          "paragraphs": [
+            "Înainte de a compara o achiziție de la un agent cu o altă opțiune de cumpărare, enumerați prețul articolului, livrarea internă, livrarea internațională și orice servicii suplimentare pe care le selectați. Verificați moneda și suma solicitată efectiv la plată. Un preț atractiv al produsului nu reprezintă costul total al livrării. Estimatorul oficial de transport este util pentru planificarea cu destinația și intrările coletului, dar o estimare timpurie ar trebui să rămână separată de o ofertă finală pentru coletul ambalat.",
+            "Utilizați o notă de comparație simplă cu o coloană pentru sumele confirmate și o alta pentru sumele nerezolvate. De exemplu, este posibil să cunoașteți prețul articolului selectat, dar încă nu aveți dimensiunile ambalate. Marcați cifra de transport ca fiind provizorie, mai degrabă decât să introduceți o estimare exactă. Repetați comparația odată ce sunt disponibile măsurătorile relevante. Dacă achiziția are sens doar în limita celei mai mici estimări de transport imaginabile, decizia depinde de o incertitudine care merită atenție înainte de a se angaja mai mulți bani."
+          ]
+        },
+        {
+          "heading": "Înțelegeți ce pot și ce nu pot răspunde fotografiile QC",
+          "paragraphs": [
+            "Fotografiile din depozit vă pot ajuta să comparați caracteristicile vizibile cu comanda aleasă, cum ar fi culoarea, cantitatea, etichetele de mărime și starea evidentă. Solicitați o vizualizare specifică atunci când persistă o incertitudine specifică. O solicitare utilă identifică detaliul și decizia pe care o va susține, în loc să solicitați vag imagini mai bune. Păstrați imaginile de marketing ale vânzătorului, fotografiile publice din alte comenzi și imaginile asociate cu propria comandă în categorii separate atunci când examinați dovezile.",
+            "Fotografiile nu stabilesc autenticitatea, durabilitatea pe termen lung, confortul sau funcționarea electronicelor. O etichetă clară poate confirma textul de pe acea etichetă fără a dovedi fiecare afirmație atașată acesteia. Dacă bunurile de marcă autentice, performanța tehnică sau certificarea sunt esențiale pentru dvs., alegeți un canal de achiziție care oferă o verificare adecvată. Acest catalog și ghidurile sale nu autentifică produsele. Tratați limitele dovezilor ca parte a procesului dvs. de selecție, în loc să completați lacunele cu presupuneri."
+          ]
+        },
+        {
+          "heading": "Evaluați livrarea și cererile de rambursare în funcție de stadiul lor",
+          "paragraphs": [
+            "O expediere a vânzătorului, o chitanță de depozit și o expediere de colet internațional sunt evenimente diferite. Când citiți o recenzie de livrare, verificați ce eveniment a inițiat perioada de așteptare raportată și dacă destinația și ruta se potrivesc situației dvs. O sosire rapidă în depozit spune puțin despre călătoria internațională rămasă. În mod similar, o întârziere a coletului nu stabilește în sine ce s-a întâmplat cu comanda unui alt cumpărător. Înregistrările datate specifice sunt mai utile decât o afirmație universală despre viteza de livrare.",
+            "Progresul rambursării necesită, de asemenea, o etapă definită. O returnare eligibilă a vânzătorului poate implica aprobarea, transportul de returnare, rambursarea vânzătorului și creditarea soldului Kakobuy. Retragerea soldului disponibil este un proces separat. Întrebați ce etapă este în așteptare și păstrați referințele relevante. Nu interpretați o durată de rambursare raportată ca o dată garantată de sosire la bancă și nu presupuneți că o rambursare reușită anulează condițiile restrictive afișate pe o altă comandă. Utilizați ghidul de rambursare conectat pentru a distinge dintre aceste procese."
+          ]
+        },
+        {
+          "heading": "Evaluați recenziile fără a le transforma în garanții",
+          "paragraphs": [
+            "Căutați dovezi care se potrivesc cu afirmația făcută. O relatare utilă descrie produsul, etapa comenzii, datele relevante și modul în care a fost gestionată o problemă. O captură de ecran promoțională cu un link de achiziție poate afișa un articol real, dar totuși poate lăsa aceste întrebări fără răspuns. Linkurile de afiliere ar trebui dezvăluite, iar prezența lor este un motiv pentru a citi cu atenție dovezile subiacente, mai degrabă decât un motiv pentru a accepta sau respinge automat fiecare afirmație de pe pagină.",
+            "Evitați combinarea experiențelor fără legătură într-o rată de succes precisă. Comentariile publice nu reprezintă un eșantion controlat al tuturor tranzacțiilor, iar o mână de povești pozitive sau negative nu pot susține un procent fiabil. Atunci când dovezile sunt contradictorii, identificați incertitudinea concretă pe care o puteți verifica singur: listarea actuală a vânzătorului, condițiile comenzii scrise, domeniul de aplicare al inspecției sau opțiunile de livrare disponibile. Dacă o recenzie nu poate ajuta la răspunsul la niciuna dintre aceste întrebări, aceasta poate fi mai puțin utilă pentru decizia dvs. decât o clarificare directă."
+          ]
+        },
+        {
+          "heading": "Luați o decizie de cumpărare cu puncte de oprire explicite",
+          "paragraphs": [
+            "Utilizați lista de verificare de mai jos înainte de a plăti, după sosirea în depozit și înainte de a trimite un colet. În fiecare etapă, notați condiția care v-ar face să vă opriți. Exemplele includ o variantă neconfirmată, un cost inexplicabil sau o nepotrivire vizibilă care nu a fost rezolvată. Acest lucru transformă o întrebare generală despre încredere într-un set de decizii pe care le puteți lua efectiv. De asemenea, păstrează o evidență dacă asistența trebuie să înțeleagă cum s-a dezvoltat problema.",
+            "Începeți descoperirea în foaia de calcul, apoi deschideți listarea originală și pagina oficială de cumpărare pentru a finaliza verificările. Păstrați comunicările despre o comandă în cadrul procesului oficial de asistență relevant și evitați partajarea acreditărilor contului cu asistenți neoficiali. Kakobuy Pick poate primi un comision prin link-uri de afiliere dezvăluite; acest lucru nu schimbă limitările descrise aici. Niciun ghid nu poate garanta rezultatul unei tranzacții individuale, dar dovezile clare și așteptările realiste fac decizia mai informată."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirmați linkul vânzătorului, varianta exactă și condițiile comenzii aplicabile.",
+        "Separați costurile confirmate de estimările provizorii ale coletelor.",
+        "Utilizați QC pentru cecuri vizibile fără a le trata ca autentificare.",
+        "Rezolvați problemele restante înainte de a plăti sau trimite un colet."
+      ],
+      "table": {
+        "caption": "O înregistrare a dovezilor practice",
+        "headers": [
+          "Verificare",
+          "Dovezi utile"
+        ],
+        "rows": [
+          [
+            "Identitate și obiect",
+            "URL-ul vânzătorului original, varianta exactă și pagina comenzii curente"
+          ],
+          [
+            "Condiții comandă",
+            "Termeni aplicabili pentru anulare, returnare și achiziție manuală"
+          ],
+          [
+            "Cost și livrare",
+            "Taxe confirmate, intrări provizorii de livrare și ruta aleasă"
+          ],
+          [
+            "Inspecție și asistență",
+            "Fotografii specifice comenzii, problemă nerezolvată și referință de asistență"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Cum găsești și compari fotografiile",
+      "seoTitle": "Kakobuy QC Finder: Cum găsești și compari fotografiile",
+      "description": "Găsiți fotografiile comenzii dvs. Kakobuy și evaluați rezultatele publice ale QC folosind linkul vânzătorului original, varianta și data imaginii. Aflați ce trebuie să verificați atunci când lipsesc fotografii.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Începeți cu articolul și tipul de fotografie de care aveți nevoie",
+          "paragraphs": [
+            "O căutare pentru un instrument de căutare Kakobuy QC poate însemna găsirea de fotografii pentru propria comandă sau cercetarea unui produs înainte de a cumpăra. Acestea sunt sarcini diferite. Pentru propria achiziție, începeți din zona de comenzi sau depozit a contului dvs. oficial și deschideți articolul relevant. Pentru cercetarea pre-cumpărare, un rezultat al unei fotografii publice este doar o referință dintr-o altă listare sau comandă până când îl puteți potrivi cu vânzătorul și varianta exactă pe care le aveți în vedere.",
+            "Kakobuy Pick afișează fotografii de referință ale produsului furnizate de sursa catalogului. Nu etichetează aceste imagini ca fiind verificate QC-ul depozitului și nu oferă o bază de date publică cu fotografii de comandă. Pașii de aici vă ajută să localizați și să evaluați dovezile; nu deblochează fotografii private și nu garantează că există o imagine publică pentru fiecare articol. Rețineți această distincție atunci când o căutare returnează imagini atractive, dar nu oferă contextul comenzii, data capturii sau referința listării originale."
+          ]
+        },
+        {
+          "heading": "Păstrați linkul vânzătorului original înainte de a căuta",
+          "paragraphs": [
+            "Copiați adresa URL a listării originale, inclusiv piața și identificatorul articolului, în nota dvs. de cercetare. Numărul paginii interne a unui catalog nu este neapărat numărul articolului vânzătorului. Instrumentele de căutare care se așteaptă la un link al vânzătorului original pot eșua sau pot returna rezultate fără legătură dacă li se oferă în schimb o adresă URL internă a catalogului. Dacă aveți doar un link scurt, deschideți listarea prin pagina publică normală și verificați detaliile finale ale produsului înainte de a o utiliza ca referință.",
+            "Înregistrați culoarea selectată, dimensiunea, materialul ales și orice opțiune de pachet sau accesoriu. Mai multe variante pot partaja o listare, în timp ce vânzătorii separați pot reutiliza fotografii foarte similare. Prin urmare, potrivirea unui nume de produs sau a unei imagini de copertă este o dovadă mai slabă decât potrivirea linkului original cu varianta exactă. Dacă linkul nu se mai încarcă, păstrați notele existente și solicitați clarificări; nu îl înlocuiți în tăcere cu o listare similară și nu presupuneți că fotografiile rămân relevante."
+          ]
+        },
+        {
+          "heading": "Localizați fotografiile asociate propriei comenzi",
+          "paragraphs": [
+            "Ghidul oficial de cumpărare direcționează utilizatorii către comenzile și zonele de depozit ale contului după inspecție și depozitare. Găsiți comanda folosind referința atașată achiziției dvs., apoi comparați starea acesteia cu disponibilitatea imaginii. Expedierea vânzătorului nu înseamnă că inspecția din depozit s-a încheiat. Dacă articolul a sosit, dar imaginile așteptate nu sunt vizibile, verificați mesajele comenzii și solicitați asistență dacă primirea, inspecția sau publicarea imaginii sunt încă în așteptare pentru articolul respectiv.",
+            "Folosește interfața oficială a contului în loc să oferi datele de conectare unui terț. Când soliciți ajutor, identifică comanda și vizualizarea lipsă fără a publica etichete de adresă personală sau capturi de ecran ale contului într-un forum deschis. O solicitare precisă ar putea explica faptul că mărimea selectată a articolului de îmbrăcăminte este neclară deoarece eticheta nu este vizibilă. Păstrează răspunsul de asistență cu înregistrarea comenzii, astfel încât să poți distinge o actualizare de procesare de confirmarea că inspecția solicitată a fost efectiv finalizată."
+          ]
+        },
+        {
+          "heading": "Potrivește rezultatele publice înainte de a trage concluzii",
+          "paragraphs": [
+            "Pentru orice rezultat al unei fotografii publice, verifică linkul vânzătorului, varianta selectată, data capturii, atunci când este disponibilă, și dacă articolul din imagine este descris ca aparținând unei comenzi reale. O fotografie recentă a unei alte mărimi poate ajuta în continuare la construcția vizibilă, dar nu este o înregistrare a măsurătorilor pentru mărimea aleasă. O fotografie mai veche poate reflecta un lot de producție sau o configurație de listare diferită. În cazul în care rezultatul nu are context, înregistrează incertitudinea în loc să actualizezi imaginea la o dovadă verificată.",
+            "Comparați mai multe detalii distinctive, cum ar fi amplasarea buzunarelor, tipul de fixare, piesele incluse și aspectul etichetei. Potrivirea acestor detalii poate face o referință mai relevantă, dar tot nu dovedește că următoarea comandă va fi identică. Dacă imaginea publică intră în conflict cu textul opțiunii curente a vânzătorului, clarificați diferența înainte de cumpărare. Cea mai sigură concluzie poate fi că imaginile disponibile sunt insuficiente, mai degrabă decât că fotografia care pare cea mai convingătoare trebuie să fie cea corectă."
+          ]
+        },
+        {
+          "heading": "Transformați un detaliu lipsă într-o solicitare de fotografie utilă",
+          "paragraphs": [
+            "O solicitare de fotografie utilă denumește partea exactă a articolului și modul în care ar trebui afișată. Pentru o jachetă, aceasta ar putea însemna conexiunea completă cu fermoarul sau pieptul măsurat plat între punctele specificate. Pentru o pereche de pantofi, aceasta ar putea însemna ambele etichete de mărime și o vedere clară a tălpilor. Întrebați dacă vizualizarea sau măsurătoarea solicitată este disponibilă și dacă are o taxă înainte de a presupune că este inclusă în inspecția normală.",
+            "Evitați să solicitați multe fotografii aproape identice care nu pot lua o decizie. Dacă problema este o metodă de măsurare, solicitați explicit acea metodă. Dacă preocuparea este ce accesorii sunt incluse, solicitați piesele așezate împreună. Un obiectiv clar face ca răspunsul să fie mai ușor de evaluat. Păstrați distincția dintre o fotografie, o măsurare și un test funcțional: o fotografie a unui dispozitiv alimentat, de exemplu, nu ar demonstra fiecare funcție sau fiabilitatea sa pe termen lung."
+          ]
+        },
+        {
+          "heading": "Citiți fotografiile cu condiții de comparație consistente",
+          "paragraphs": [
+            "Folosiți aceleași puncte de referință atunci când comparați dimensiunile. Lățimea unui articol de îmbrăcăminte plat, circumferința corpului și o măsurătoare exterioară a unui pachet descriu lucruri diferite. Verificați unitățile și punctele de început și de sfârșit înainte de a trata un număr ca o potrivire a mărimii. Perspectiva și o ruletă poziționată lejer pot face o imagine dificil de interpretat. Dacă dovezile sunt ambigue, solicitați clarificări în loc să construiți o recomandare precisă de potrivire pe o măsurătoare incertă.",
+            "Culoarea și textura depind, de asemenea, de iluminare, setările camerei și afișajul dvs. O diferență între o fotografie a vânzătorului și o fotografie a depozitului poate justifica o privire mai atentă, dar nu stabilește automat cauza exactă. Descrieți problema vizibilă în mod specific atunci când contactați asistența. Fotografiile pot susține o verificare a stării sau a variantei; acestea nu pot dovedi independent compoziția fibrelor, autenticitatea, confortul, durabilitatea sau absența defectelor ascunse. Utilizați ghidul dedicat QC pentru o listă de verificare a inspecției mai completă."
+          ]
+        },
+        {
+          "heading": "Gestionați prompt rezultatele lipsă și neconcordanțele",
+          "paragraphs": [
+            "Lipsa unui rezultat QC public nu dovedește în sine că o listare este nouă, nesigură sau indisponibilă. Poate însemna pur și simplu că nu a fost publicată nicio imagine potrivită în sursa pe care ați căutat-o. Reveniți la informațiile live despre vânzător și decideți la ce întrebări trebuie răspuns înainte de cumpărare. După sosirea în depozit, o neconcordanță în fotografiile comenzii dvs. este o problemă mai directă: păstrați imaginile, identificați opțiunea selectată și solicitați asistență cu privire la pasul următor aplicabil.",
+            "Verificați condițiile reale ale comenzii înainte de a presupune că este posibilă o returnare. Formularul de achiziție manuală are restricții mai puternice pentru anumite linkuri terțe, inclusiv limitări privind anularea, rambursările și post-vânzare. Pentru comenzile obișnuite eligibile, decizia de returnare are în continuare propriul termen limită și propriile condiții. Așteptarea mai multor fotografii publice nu prelungește acest termen limită. Rezolvați mai întâi problema specifică comenzii și păstrați articolul, etichetele și ambalajul în starea necesară pentru orice proces de returnare disponibil."
+          ]
+        },
+        {
+          "heading": "Păstrați o evidență compactă care să susțină următoarea decizie",
+          "paragraphs": [
+            "Folosiți tabelul comparativ de mai jos ca o evidență a dovezilor, mai degrabă decât ca un tabel de punctaj. Separați ceea ce este vizibil confirmat de ceea ce rămâne necunoscut. De exemplu, o fotografie de pe etichetă poate confirma textul cu dimensiunea selectată, lăsând în același timp incertă potrivirea utilizabilă. Un aspect al accesoriilor poate confirma cantitatea, lăsând în același timp funcționalitatea netestată. Această separare împiedică utilizarea unei fotografii liniștitoare pentru a susține afirmații pe care nu le poate stabili de fapt.",
+            "După finalizarea verificărilor necesare, treceți la următoarea sarcină relevantă: interpretarea dimensiunii, o cerere de returnare sau planificarea coletului. Păstrați linkul original și măsurătorile utile pentru referințe viitoare, dar verificați din nou o listare atunci când comandați din nou, deoarece stocul și opțiunile se pot schimba. Dacă publicați propria recenzie, eliminați identificatorii personali și descrieți domeniul exact de aplicare al dovezilor. O observație clară și limitată este mai utilă pentru un alt cumpărător decât o afirmație nejustificată conform căreia un vânzător sau un produs este universal sigur.",
+            "Înainte de a accepta un rezultat ca fiind potrivit, scrieți o scurtă declarație despre ce anume schimbă acesta în decizia dvs. Dacă fotografia repetă doar imaginea promoțională a vânzătorului, aceasta adaugă puține informații independente. Dacă prezintă măsurătoarea solicitată pentru propria comandă, aceasta poate rezolva o incertitudine specifică privind potrivirea. Păstrați atât dovezile, cât și limitarea acestora în aceeași notă, astfel încât concluzia să rămână ușor de înțeles ulterior."
+          ]
+        }
+      ],
+      "checklist": [
+        "Păstrați linkul original al vânzătorului separat de numărul paginii din catalog.",
+        "Folosiți contul dvs. oficial pentru fotografiile propriei comenzi.",
+        "Potriviți varianta și contextul înainte de a vă baza pe o imagine publică.",
+        "Rezolvați neconcordanțele vizibile în condițiile comenzii aplicabile."
+      ],
+      "table": {
+        "caption": "O înregistrare de potrivire a fotografiilor",
+        "headers": [
+          "Verificare",
+          "Dovezi utile"
+        ],
+        "rows": [
+          [
+            "Potrivirea listării",
+            "URL-ul original al pieței și identificatorul articolului vânzătorului"
+          ],
+          [
+            "Potrivirea variantei",
+            "Culoarea, mărimea alese, piesele incluse și distincțiile vizibile"
+          ],
+          [
+            "Contextul fotografiei",
+            "Comanda proprie sau referința publică; data și contextul lipsă"
+          ],
+          [
+            "Decizie",
+            "Rezultatul vizibil, incertitudinea rămasă și acțiunea următoare"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Italia: Comandă, costuri de livrare și urmărire",
+      "seoTitle": "Kakobuy Italia: Comandă, costuri de livrare și urmărire",
+      "description": "Planificați o comandă Kakobuy către Italia: verificați linkurile vânzătorului, estimați costul total al coletului, verificați rutele disponibile și urmați etapa corectă de urmărire.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Planificați o comandă către Italia pornind de la întregul traseu",
+          "paragraphs": [
+            "Comanda prin Kakobuy pentru livrare în Italia implică o achiziție de la vânzător, mutarea în depozit, inspecția și un colet internațional separat. Prețul produsului în sine nu descrie întregul traseu. Începeți prin a confirma articolul și apoi verificați dacă opțiunile actuale de livrare acceptă destinația și conținutul dvs. Acest ghid explică deciziile care trebuie luate; nu promite o anumită rută, o dată de livrare sau un preț fix de livrare pentru fiecare adresă din Italia.",
+            "Dacă cercetați cum funcționează Kakobuy în Italia, păstrați un plan scurt de comandă cu linkul vânzătorului, varianta aleasă, adresa de livrare dorită și întrebările care rămân deschise. Decideți dacă achiziția are un termen limită ferm înainte de a plăti. Un colet destinat unui anumit eveniment necesită mai multă prudență decât o comandă cu o dată de sosire flexibilă, deoarece pregătirea vânzătorului și manipularea în depozit au loc chiar înainte de începerea tranzitului internațional. Comparați alternativele folosind întregul proces, mai degrabă decât o estimare a tranzitului în mod izolat."
+          ]
+        },
+        {
+          "heading": "Verificați lista vânzătorului și varianta selectată",
+          "paragraphs": [
+            "Folosiți foaia de calcul pentru a descoperi candidați, apoi deschideți lista originală a vânzătorului și pagina oficială de cumpărare. Confirmați culoarea exactă, dimensiunea, modelul și piesele incluse. Numele produselor și fotografiile pot fi reutilizate în mai multe listări, așadar păstrați adresa URL originală cu opțiunea aleasă. Dacă importul automat eșuează, utilizați procesul oficial actual de achiziție manuală numai după ce ați citit condițiile acestuia și ați furnizat detalii exacte. O imagine similară nu este un substitut fiabil pentru lista originală.",
+            "Acordați o atenție deosebită termenilor restrictivi ai comenzii manuale. Formularul manual actual avertizează că anumite achiziții de la terți nu beneficiază de servicii post-vânzare și nu pot fi rambursate, anulate sau modificate după plată. Îndrumările generale privind returnarea în depozit nu anulează aceste condiții. Dacă nu sunteți sigur de un tabel de mărimi, material sau accesoriu, rezolvați problema înainte de a accepta comanda. Decizia ar trebui să depindă de termenii afișați pentru achiziția respectivă, nu de presupunerea că fiecare articol poate fi returnat ulterior."
+          ]
+        },
+        {
+          "heading": "Comparați mărimile folosind metoda de măsurare a produsului",
+          "paragraphs": [
+            "O mărime italiană pentru haine sau încălțăminte pe care o purtați în mod normal nu este suficientă pentru a alege o variantă de la un vânzător necunoscut. Comparați tabelul specific al listei cu un articol care vi se potrivește și înregistrați metoda de măsurare. Măsurătorile articolelor de îmbrăcăminte plate și măsurătorile corpului sunt diferite. Pentru îmbrăcăminte, identificați dimensiunile care contează pentru croiala și stratificarea dorite. Pentru încălțăminte, distingeți lungimea piciorului, lungimea branțului și lungimea tălpii exterioare, mai degrabă decât să tratați fiecare număr de lungime ca fiind interschimbabil.",
+            "Dacă tabelul lipsește sau este ambiguu, solicitați clarificări înainte de a comanda. După sosirea în depozit, o măsurătoare specifică poate ajuta la rezolvarea unei întrebări restante, sub rezerva serviciului de inspecție și a oricărei taxe. O fotografie a etichetei poate verifica eticheta selectată, dar nu poate garanta confortul. Utilizați ghidul de mărimi de mai jos pentru o comparație structurată și păstrați măsurătorile pentru achiziții viitoare. Evitați o instrucțiune universală de a alege o mărime mai mare, deoarece poate schimba lungimea și proporțiile fără a rezolva problema potrivirii inițiale."
+          ]
+        },
+        {
+          "heading": "Estimați costul transportului cu destinația și datele introduse pentru colet",
+          "paragraphs": [
+            "Deschideți estimatorul oficial și alegeți Italia ca destinație atunci când opțiunea respectivă este disponibilă. Introduceți tipul, greutatea și dimensiunile relevante ale mărfurilor, apoi citiți restricțiile și informațiile de facturare pentru rutele returnate. Un rezultat gol este un motiv pentru a verifica datele introduse sau pentru a solicita asistență, nu pentru a presupune că o rută anunțată va accepta coletul. Disponibilitatea poate depinde de conținut și de coletul ambalat, așa că verificați din nou înainte de trimiterea finală.",
+            "Înainte ca mărfurile să ajungă la depozit, etichetați dimensiunile și greutățile ca estimări. Actualizați comparația atunci când informațiile măsurate devin disponibile și din nou dacă ambalajul se modifică. Comparația greutății de pe pagina de expediere a acestui site ilustrează greutatea reală și volumetrică; nu este un calculator de preț live. Folosiți divizorul și metoda de facturare indicate de rută, mai degrabă decât să aplicați o formulă universală fiecărui transportator. Un articol mai ușor poate ocupa suficient spațiu pentru a modifica calculul transportului."
+          ]
+        },
+        {
+          "heading": "Creați o notă de cost fără a inventa un preț total",
+          "paragraphs": [
+            "Enumerați separat prețul articolului selectat, livrarea internă, livrarea internațională și serviciile opționale. Verificați moneda de plată și suma solicitată de metoda de plată curentă. Păstrați orice taxe descrise în termenii rutei în propriile intrări și evitați să numărați o taxă de două ori doar pentru că diferite pagini de ajutor utilizează etichete diferite. O estimare în dolari nu trebuie tratată ca o debitare garantată în euro. Comparați sumele confirmate afișate în timpul tranzacției efective.",
+            "Pentru livrarea în Italia, nu interpretați un nume de rută sau o descriere promoțională ca dovadă că este inclusă fiecare taxă de sosire posibilă. Citiți ce acoperă în mod expres oferta curentă și solicitați clarificări acolo unde formularea este neclară. Acest ghid nu publică o cotă de impozitare, un prag vamal sau un rezultat garantat al vămuirii. Un buget util înregistrează ce este inclus, ce este exclus și ce rămâne necunoscut, permițându-vă să decideți dacă totalul rămâne acceptabil înainte de expedierea internațională."
+          ]
+        },
+        {
+          "heading": "Verificați rezultatele inspecției înainte de a combina articolele",
+          "paragraphs": [
+            "Când bunurile sunt depozitate, comparați fotografiile asociate propriei comenzi cu varianta selectată. Verificați starea vizibilă, cantitatea și măsurătorile care contează pentru dvs. Fotografiile de referință publice dintr-o altă comandă nu pot înlocui această recenzie. Dacă ceva pare greșit, păstrați imaginea și detaliile comenzii, apoi contactați prompt serviciul de asistență. Rezolvați problema înainte de a combina articolul cu alte achiziții sau de a solicita livrare internațională, cât timp opțiunile aplicabile sunt încă disponibile.",
+            "Dacă intenționați să combinați îmbrăcăminte, încălțăminte și accesorii, comparați coletul rezultat cu restricțiile rutei și cerințele de ambalare. Îndepărtarea ambalajelor inutile poate afecta volumul, dar protecția și orice condiții de returnare contează în continuare. Întrebați despre ambalajul propus, mai degrabă decât să presupuneți că compresia sau îndepărtarea cutiei se potrivesc fiecărui articol. Termenul limită pentru depozitarea în depozit este separat de termenul limită de returnare al vânzătorului, astfel încât așteptarea unui alt articol nu păstrează aceleași opțiuni post-vânzare pe termen nelimitat."
+          ]
+        },
+        {
+          "heading": "Urmăriți etapa care se aplică efectiv",
+          "paragraphs": [
+            "Păstrați separat referințele comenzii de achiziție și referințele coletului internațional. Un eveniment de urmărire internă marcat ca livrat se poate referi la primirea în depozit, nu la livrarea în Italia. Urmărirea internațională devine relevantă pentru coletul trimis și parcursul transportatorului său. Când o actualizare pare a fi întârziată, înregistrați ultimul eveniment, data acesteia și referința de urmărire pe care o verificați. Întrebați asistența care etapă este în așteptare în loc să tratați fiecare perioadă de liniște ca același tip de întârziere.",
+            "Urmați orice referință de predare sau livrare locală furnizată prin intermediul registrului oficial al coletelor. Nu presupuneți că un anumit transportator italian va gestiona fiecare rută sau că trebuie să existe un nou număr de urmărire pentru fiecare expediere. Dacă fereastra de livrare cotată a trecut sau înregistrarea arată o problemă, furnizați referința exactă a coletului și ultimul eveniment vizibil atunci când solicitați ajutor. Păstrați cotația de livrare acceptată, astfel încât să puteți distinge domeniul de aplicare declarat de o estimare de planificare anterioară."
+          ]
+        },
+        {
+          "heading": "Pregătiți-vă pentru livrare și păstrați dovezile",
+          "paragraphs": [
+            "Verificați dacă numele, adresa, codul poștal și informațiile de contact ale destinatarului sunt corecte înainte de a trimite coletul. La livrare, inspectați prompt ambalajul exterior și conținutul. Dacă există daune vizibile sau lipsește un articol, păstrați ambalajul și fotografiile relevante și contactați canalul de asistență corespunzător fără întârziere. Citiți chitanța actuală și cerințele de reclamație pentru coletul dvs. O fotografie a coletului poate susține un raport, dar nu stabilește în sine un drept la despăgubire.",
+            "După o livrare reușită, păstrați măsurătorile utile ale hainelor, intrările coletului și descrierea traseului pentru comparație. Tratați-le ca înregistrări ale acelei comenzi, mai degrabă decât ca promisiuni permanente pentru următoarea. Când comandați din nou, verificați din nou vânzătorul, variantele disponibile și cotația de livrare actuală. Începeți cu linkurile de categorie de mai jos pentru descoperire, apoi utilizați ghidurile de livrare, urmărire și rambursare pentru deciziile specifice pe care le acoperă. Acest lucru menține navigarea produselor conectată la verificări practice în loc să se bazeze pe o singură recomandare generală.",
+            "Pentru un exemplu simplu de planificare, comparați expedierea unui articol de îmbrăcăminte gata de livrare acum cu așteptarea încălțămintei care nu a ajuns încă în depozit. Înregistrați expedierea vânzătorului nerezolvată, posibila modificare a ambalajului și termenele limită separate de returnare. Nu presupuneți că așteptarea va economisi bani până când coletul combinat poate fi estimat folosind date de intrare realiste. Alegerea mai bună depinde de cotația actuală, de nevoile de protecție și de termenul limită, nu doar de numărul de articole din colet."
+          ]
+        }
+      ],
+      "checklist": [
+        "Confirmați lista exactă și condițiile aplicabile pentru comanda manuală.",
+        "Verificați din nou disponibilitatea rutei pentru Italia folosind datele de intrare reale ale coletului.",
+        "Separați prețul articolului, suma plății și cotația de livrare.",
+        "Păstrați separat înregistrările comenzii și ale urmăririi coletului și verificați prompt livrarea."
+      ],
+      "table": {
+        "caption": "O înregistrare de planificare a comenzilor din Italia",
+        "headers": [
+          "Verificare",
+          "Dovezi utile"
+        ],
+        "rows": [
+          [
+            "Înainte de cumpărare",
+            "URL-ul vânzătorului, varianta exactă, metoda de dimensiune și condițiile comenzii"
+          ],
+          [
+            "Înainte de expediere",
+            "Destinația din Italia, conținutul, măsurătorile ambalate și cotația disponibilă"
+          ],
+          [
+            "În timpul transportului",
+            "Referința coletului, ultimul eveniment datat și orice detalii oficiale de predare"
+          ],
+          [
+            "La livrare",
+            "Starea coletului, conținutul și cerințele de raportare aplicabile"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "Ghidul oficial avertizează în mod specific despre cantitățile minime de achiziție pe 1688. Un preț afișat poate depinde de cantitate sau variantă. Verificați dacă comanda dorită îndeplinește cerințele vânzătorului înainte de a o compara cu o ofertă dintr-o singură bucată din altă parte. De asemenea, verificați dacă cantitatea aleasă modifică taxele poștale interne.",
             "Înainte de a plăti, examinați rezumatul comenzii în ansamblu: articol corect, opțiune corectă, cantitate corectă și cost complet de achiziție. Salvați numărul de comandă și notele rezultate. Dacă o problemă apare mai târziu, aceste detalii ajută la compararea cererii de cumpărare cu articolul primit."
           ]
+        },
+        {
+          "heading": "Citiți condițiile de pe formularul de achiziție manuală",
+          "paragraphs": [
+            "Înainte de a aplica aceste instrucțiuni, verificați condițiile afișate pentru comanda dvs. exactă. Formularul oficial de achiziție manuală avertizează în prezent că anumite linkuri terțe nu oferă servicii post-vânzare și nu acceptă rambursări, anulări sau modificări după plată. Prin urmare, procesul general de returnare în depozit nu este disponibil pentru fiecare achiziție. Clarificați o variantă, un preț sau o condiție de returnare incertă înainte de a plăti; nu presupuneți că o fotografie de inspecție creează un drept de returnare."
+          ]
         }
       ],
       "checklist": [
@@ -1177,7 +1508,7 @@
       },
       "seoTitle": "Linkuri Kakobuy: deschideți oferte, verificați variante și comandați",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-qc-photos",
@@ -1320,6 +1651,13 @@
             "Pentru un hanorac sau un tricou de fotbal, scrieți lățimea și lungimea pieptului articolului de îmbrăcăminte de referință lângă valorile vânzătorului. Marcați orice diferență pe care o doriți de fapt, cum ar fi mai mult spațiu pentru stratificare sau un corp mai scurt. Verificați construcția mânecilor înainte de a compara numerele mânecilor. Un umăr căzut și o cusătură convențională a umărului pot utiliza puncte de plecare diferite, astfel încât numere identice nu produc neapărat o lungime identică.",
             "Dacă vânzătorul oferă doar o sugestie de înălțime și greutate, solicitați măsurătorile articolului de îmbrăcăminte atunci când potrivirea este importantă. Pentru încălțăminte, întrebați ce lungime reprezintă tabelul și dacă este disponibilă o descriere a lățimii specifice modelului. Înregistrați măsura nerezolvată înainte de a comanda; apoi solicitați verificarea exactă la depozit, dacă este necesar. Scopul este o comparație clară, nu o conversie universală de la o literă de mărime a unei mărci la alta."
           ]
+        },
+        {
+          "heading": "Folosiți o diferență de măsură pentru a lua o decizie specifică",
+          "paragraphs": [
+            "Luați în considerare un articol de îmbrăcăminte de referință cu spațiu confortabil la piept, dar cu mâneci care par prea scurte. Comparați diferențele de piept și mâneci separat cu graficul vânzătorului; nu reduceți decizia la o singură instrucțiune de mărire mai mare. Confirmați că ambele măsurători ale mânecilor utilizează același punct de plecare. Dacă graficul utilizează o metodă diferită, solicitați măsurarea lipsă înainte de a trata numerele ca fiind comparabile.",
+            "Păstrați varianta selectată lângă nota de măsurare și comparați-o din nou când sosesc imagini specifice comenzii. O etichetă de mărime potrivită nu confirmă dimensiunile măsurate ale articolului de îmbrăcăminte. Dacă o măsurătoare este esențială, întrebați dacă depozitul poate oferi acea verificare exactă și dacă are o taxă. Faceți solicitarea suficient de devreme pentru a acționa în conformitate cu condițiile de achiziție aplicabile."
+          ]
         }
       ],
       "checklist": [
@@ -1355,7 +1693,7 @@
       },
       "seoTitle": "Ghid de mărimi Kakobuy: tabele pentru haine și pantofi",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-shipping-calculator",
@@ -1409,6 +1747,13 @@
             "Înainte de măsurarea în depozit, creați un scenariu de planificare pentru marfă ușoară și una pentru marfă grea și notați care valori sunt estimări. Includeți ambalajul și tot conținutul prevăzut. Utilizați ambele scenarii în estimatorul oficial cu aceeași destinație și tip de marfă. Dacă costul se modifică suficient pentru a vă afecta decizia de cumpărare, așteptați informații mai bune, în loc să prezentați o greutate aproximativă a produsului ca o ofertă precisă de livrare.",
             "Comparația greutății de pe această pagină ilustrează doar calculul. Nu cunoaște tariful actual al rutei, incrementele de facturare, taxa minimă, suprataxa sau restricțiile de conținut. Citiți aceste condiții în oferta oficială și actualizați intrările după ambalare. O înmulțire precisă poate da totuși un buget nepotrivit dacă divizorul ales sau măsurătorile coletului nu corespund serviciului real."
           ]
+        },
+        {
+          "heading": "Comparați ofertele folosind aceleași ipoteze privind coletele",
+          "paragraphs": [
+            "Când comparați rutele, mențineți constante destinația, tipul de mărfuri, greutatea ambalată și dimensiunile. Înregistrați dacă fiecare ofertă include serviciile pe care intenționați să le alegeți și notați orice rotunjire sau taxă minimă indicată de rută. O comparație folosind greutatea neambalată pe o rută și greutatea ambalată pe alta poate produce o economie aparentă care dispare la depunere.",
+            "Calculatorul de pe această pagină compară doar greutățile. Nu poate stabili disponibilitatea rutei, un curs de schimb sau o sumă de transport plătibilă. Dacă modificați ambalajul, actualizați estimarea oficială înainte de a lua o decizie. Păstrați estimarea anterioară și oferta de colet acceptată ca înregistrări separate, astfel încât ajustările ulterioare să poată fi urmărite la intrările modificate."
+          ]
         }
       ],
       "checklist": [
@@ -1443,7 +1788,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Calculator de livrare Kakobuy: Greutate și cost"
     },
     {
@@ -1597,6 +1942,13 @@
             "Timpul de livrare până la depozit este diferit de timpul permis în depozitare. Pregătirea vânzătorului și livrarea internă au loc înainte de recepția în depozit; inspecția și actualizările contului urmează propriul flux de lucru. Verificați mai întâi expedierea vânzătorului și urmărirea internă. O scanare livrată trebuie să fie corelată cu comanda dvs. înainte de a presupune că articolul este disponibil pentru a fi trimis într-un colet internațional.",
             "Dacă curierul afișează livrarea, dar comanda nu a apărut ca stocată, furnizați numărul de urmărire internă, evenimentul de livrare și numărul comenzii pentru asistență. Întrebați dacă recepția, potrivirea proprietății sau inspecția sunt în așteptare. Nu începeți o numărătoare inversă pentru depozitare de la o dată de expediere ghicită de vânzător și nu tratați alocația normală de 100 de zile ca o promisiune privind viteza de procesare."
           ]
+        },
+        {
+          "heading": "Alegeți următoarea acțiune de la cel mai apropiat termen limită",
+          "paragraphs": [
+            "Verificați fiecare articol depozitat atât în raport cu termenul limită de depozitare, cât și cu orice termen limită de returnare aplicabil. Marcați-l ca gata de expediere numai după ce au fost verificate varianta selectată și starea vizibilă. Dacă un articol are o problemă nerezolvată, contactați asistența acum în loc să așteptați restul unui colet planificat. Păstrați o notă separată pentru bunurile pe care intenționați să le păstrați și bunurile care așteaptă o decizie din partea vânzătorului.",
+            "Pentru o comparație practică, imaginați-vă că o jachetă este gata, dar un alt vânzător nu a expediat o pereche de pantofi. Așteptarea ar putea modifica costul coletului, dar această posibilă economie nu rezolvă termenul limită de returnare a jachetei. Verificați mai întâi decizia imediată, apoi comparați opțiunile de colet folosind măsurători realiste de ambalare. Nu descrieți o economie presupusă a coletului combinat ca o sumă confirmată."
+          ]
         }
       ],
       "checklist": [
@@ -1632,7 +1984,7 @@
       },
       "seoTitle": "Depozitul Kakobuy: Timp și termene limită de depozitare",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-consolidation-packaging",
@@ -1765,6 +2117,13 @@
             "Un eveniment neschimbat nu identifică în sine cauza unei întârzieri. Mai întâi confirmați că vizualizați coletul internațional și nu expedierea internă a vânzătorului. Apoi comparați data evenimentului cu estimarea curentă a liniei selectate și cu orice notificări atașate expedierii. O etichetă creată înainte de colectare este o situație diferită față de un colet cu o scanare ulterioară a transportatorului sau a destinației.",
             "Solicitați asistenței să confirme etapa în așteptare folosind numărul coletului, ruta, cel mai recent eveniment și data. Dacă este necesară o acțiune din partea dvs., solicitați informațiile exacte și canalul oficial necesar. Nu inventați un număr fix de zile după care fiecare colet se pierde și nu promiteți o dată de livrare dintr-o etichetă de stare generică. Păstrați răspunsul cu cazul existent, astfel încât urmărirea să abordeze ceea ce este încă nerezolvat."
           ]
+        },
+        {
+          "heading": "Pregătiți o solicitare utilă de asistență pentru urmărire",
+          "paragraphs": [
+            "Înainte de a contacta asistența, înregistrați referința comenzii sau a coletului, ultima stare vizibilă, data evenimentului și ce călătorie descrie referința. Menționați următorul pas lipsă: expedierea vânzătorului, inspecția depozitului, expedierea coletului sau o actualizare a transportatorului. Dacă este furnizată o referință oficială de predare, verificați și acea înregistrare. Nu deduceți că fiecare rută utilizează același transportator local sau un program de actualizare.",
+            "Descrieți ce arată înregistrarea, mai degrabă decât să presupuneți cauza unei întârzieri. Un eveniment de livrare internă și un eveniment de livrare internațională au semnificații diferite, în timp ce o etichetă de expediere creată nu stabilește întotdeauna posesia transportatorului. Întrebați care parte deține în prezent articolul sau coletul și ce acțiune este necesară din partea dvs. Păstrați răspunsul cu estimarea de livrare acceptată și istoricul comenzilor dvs."
+          ]
         }
       ],
       "checklist": [
@@ -1799,7 +2158,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Timpul de livrare și starea urmăririi Kakobuy"
     },
     {
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Deschideți comanda relevantă și identificați ultimul pas finalizat: cerere trimisă, acord vânzător, retur expediat, chitanță vânzător, rambursare confirmată sau sold creditat. Înregistrați data și suma afișate. Apoi, solicitați asistență despre următorul pas lipsă, împreună cu numărul comenzii și referința cazului existent. Un colet care încă se întoarce la vânzător și un sold creditat care așteaptă retragerea necesită o urmărire diferită.",
             "Dacă soldul a fost creditat, verificați separat înregistrarea retragerii. Confirmați canalul de plată de destinație, starea și orice referință furnizată. Nu descrieți rambursarea din depozit ca fiind neterminată doar pentru că banii nu au ajuns într-un cont bancar printr-o retragere separată. Păstrați orice timp citat atașat etapei pe care o descriu și nu tratați referința condiționată de 7-15 zile ca o garanție pentru fiecare caz."
           ]
+        },
+        {
+          "heading": "Verificați termenii de achiziție înainte de a utiliza calendarul de returnare",
+          "paragraphs": [
+            "Înainte de a aplica aceste îndrumări, verificați condițiile afișate pentru comanda dvs. exactă. Formularul oficial de achiziție manuală avertizează în prezent că anumite linkuri terțe nu au servicii post-vânzare și nu acceptă rambursări, anulări sau modificări după plată. Prin urmare, procesul general de returnare în depozit nu este disponibil pentru fiecare achiziție. Clarificați o variantă, un preț sau o condiție de returnare incertă înainte de a plăti; nu presupuneți că o fotografie de inspecție creează un drept de returnare.",
+            "Pentru o returnare întârziată eligibilă, păstrați o evidență scurtă a stării: aprobare solicitată, răspunsul vânzătorului, expedierea returului, chitanța vânzătorului și creditarea soldului. Solicitați asistență pentru etapa restantă și referința care confirmă finalizarea. Odată ce soldul este creditat, înregistrați orice cerere de retragere separată și independent. Acest lucru face ca următoarea acțiune să fie mai clară decât reluarea aceleiași cereri de returnare sau numărarea fiecărei etape de la data achiziției."
+          ]
         }
       ],
       "checklist": [
@@ -1899,7 +2266,7 @@
       },
       "seoTitle": "Timpul de rambursare Kakobuy și retururile în depozit",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     }
   ],
   "seo": {

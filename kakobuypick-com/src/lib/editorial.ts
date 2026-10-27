@@ -3,6 +3,7 @@ import en from '../content/editorial/en.json';
 const modules = import.meta.glob('../content/editorial/*.json', { eager: true, import: 'default' });
 export type EditorialContent = typeof en;
 export const reviewed = '2026-10-17';
+export const faqReviewed = '2026-10-27';
 export const sourceURLs: Record<string,string> = {
   buying:'https://kakobuy.com/index/information?information_id=3',
   fees:'https://kakobuy.com/service/help/question?id=63',

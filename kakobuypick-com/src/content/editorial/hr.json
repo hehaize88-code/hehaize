@@ -74,7 +74,10 @@
       "invalid": "Unesite pozitivan broj u svako polje.",
       "note": "Pravilo veće težine je primjer. Vaša ruta može koristiti različita pravila naplate, zaokruživanje ili minimalne troškove.",
       "official": "Otvorite službeni procjenitelj troškova dostave"
-    }
+    },
+    "navShipping": "Dostava",
+    "articleTopics": "Odaberite sljedeći korak",
+    "productGuides": "Provjerite prije naručivanja"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "Što ako se poveznica proizvoda ne učita automatski?",
-      "a": "Službeni vodič za kupnju uključuje obrazac za ručnu kupnju ponuda koje nije moguće uvesti. Unesite stvarnu adresu prodavatelja i točne podatke o artiklu. Nemojte izmišljati cijenu ni odabrati vizualno sličan proizvod bez provjere ponude i, kada je potrebno, upita agentu za kupnju.",
+      "a": "Službeni vodič za kupnju uključuje ručni obrazac za kupnju za oglase koji se ne mogu uvesti. Unesite stvarni URL prodavatelja i točne podatke o artiklu. Nemojte izmišljati cijenu niti odabrati sličan proizvod bez provjere oglasa i pitanja kupcu kada je to potrebno. Prije primjene ovih smjernica provjerite uvjete prikazane za vašu točnu narudžbu. Službeni ručni obrazac za kupnju trenutno upozorava da određene poveznice trećih strana nemaju postprodajnu uslugu i ne podržavaju povrat novca, otkazivanje ili promjene nakon plaćanja. Opći postupak povrata u skladište stoga nije dostupan za svaku kupnju. Razjasnite neizvjesnu varijantu, cijenu ili uvjet povrata prije plaćanja; nemojte pretpostavljati da fotografija pregleda stvara pravo na povrat.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "Primjenjuje li se pravilo povrata u pet dana na svaki proizvod?",
-      "a": "Ne. Službena pravila povrata ovise o prihvaćanju prodavatelja, prihvatljivosti proizvoda, stanju i vremenu nakon skladištenja. Neke kategorije i promijenjena ambalaža isključene su. Odmah provjerite rok i prihvatljivost narudžbe; 100 dana skladištenja ne znači pravo na povrat tijekom 100 dana.",
+      "a": "Ne. Službena pravila povrata uvjetovana su prihvaćanjem prodavatelja, ispunjavanjem uvjeta za proizvod, stanjem i vremenom nakon skladištenja u skladištu. Neke kategorije i promijenjena ambalaža su isključeni. Odmah provjerite rok i ispunjavanje uvjeta za narudžbu; 100-dnevno skladištenje nije pravo na povrat u roku od 100 dana. Prije primjene ovih smjernica, provjerite uvjete prikazane za vašu točnu narudžbu. Službeni obrazac za ručnu kupnju trenutno upozorava da određene poveznice trećih strana nemaju postprodajnu uslugu i ne podržavaju povrat novca, otkazivanje ili promjene nakon plaćanja. Opći postupak povrata u skladište stoga nije dostupan za svaku kupnju. Razjasnite neizvjesnu varijantu, cijenu ili uvjet povrata prije plaćanja; nemojte pretpostavljati da fotografija pregleda stvara pravo na povrat.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "Je li Kakobuy pouzdan? Naknade, QC i povrati",
+      "seoTitle": "Je li Kakobuy pouzdan? Naknade, QC i povrati",
+      "description": "Procijenite Kakobuy koristeći njegov objavljeni postupak kupnje, ograničenja inspekcije i uvjete povrata. Prije plaćanja provjerite prodavatelja, ukupni trošak i uvjete narudžbe.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Što se može utvrditi dostupnim dokazima",
+          "paragraphs": [
+            "Kakobuy objavljuje tijek rada kupnje, smjernice za inspekciju skladišta i stranice za pomoć za dostavu i postprodaju. Ti dokumenti objašnjavaju kako bi usluga trebala funkcionirati; oni neovisno ne dokazuju da će svaki prodavatelj, paket ili povrat novca ispuniti očekivanja. Ako tražite je li Kakobuy legitiman ili siguran, odvojite postojanje operativnog postupka od pouzdanosti određene transakcije. Ovaj vodič je kontrolna lista za kupnju temeljena na dokumentima, a ne praktični test ili ocjena temeljena na dovršenim kupnjama.",
+            "Počnite s točnom odlukom pred sobom. Možda ćete morati potvrditi da poveznica pripada namjeravanom prodavatelju, da odabrana veličina odgovara tablici ili da je dostava i dalje pristupačna. Sveukupno pozitivna recenzija ne može sama po sebi riješiti nijednu od tih provjera. Zabilježite što je poznato, odakle dolaze informacije i što ostaje neizvjesno. Obvezujte se na narudžbu samo kada su neriješene točke prihvatljive za tu određenu kupnju, a ne zato što stranica označava cijelu platformu kao pouzdanu."
+          ]
+        },
+        {
+          "heading": "Odvojite platformu, prodavatelja i web stranicu za otkrivanje proizvoda",
+          "paragraphs": [
+            "Kakobuy opisuje agentsku uslugu koja kupuje od prodavača trećih strana i pomaže u organiziranju dostave. Kakobuy Pick je zasebna web stranica za otkrivanje proizvoda: poveznice na katalog pomažu vam u istraživanju proizvoda, dok se narudžbe i plaćanja upravljaju putem Kakobuya. Proizvod koji se pojavljuje u ovom katalogu nije preporuka temeljena na testiranju, službena podrška robnoj marki ili obećanje zaliha. Koristite izvorni popis i trenutni obrazac za narudžbu kako biste provjerili artikl koji namjeravate kupiti.",
+            "Držite izvorni URL i odabranu varijantu zajedno. Slične fotografije mogu se pojaviti u različitim popisima, a poznati naziv proizvoda ne utvrđuje da su prodavatelj ili sadržaj identični. Usporedite tekst opcije, uključene dijelove i relevantne mjere nakon otvaranja stranice za kupnju. Ako se nešto promijenilo, zaustavite se i razjasnite to prije plaćanja. Kataloška cijena je referentna vrijednost za otkrivanje, pa se iznos prikazan u trenutnoj narudžbi može razlikovati kada se promijeni varijanta ili cijena prodavatelja."
+          ]
+        },
+        {
+          "heading": "Pročitajte uvjete specifične za narudžbu prije plaćanja",
+          "paragraphs": [
+            "Ručni obrazac za kupnju trenutno prikazuje stroža ograničenja za određene poveznice trećih strana, uključujući nedostatak postprodajne usluge i nedostatak povrata novca, otkazivanja ili izmjene nakon plaćanja. Ovo je bitna iznimka od općih smjernica za povrat. Članak pomoći o uobičajenim povratima u skladište ne smije se tretirati kao pravo za svaku ručno poslanu kupnju. Pročitajte uvjete prikazane za vašu stvarnu narudžbu i zatražite podršku da riješi sve nejasnoće prije nego što ih prihvatite.",
+            "Spremite uvjete koji se primjenjuju uz poveznicu na proizvod i odabranu varijantu. Ako je popis nejasan u vezi s materijalima, mjerama ili uključenom opremom, restriktivna narudžba daje vam manje prostora za kasnije rješavanje razočaranja. Razuman odgovor je pribaviti nedostajuće informacije ili odabrati drugačiji aranžman kupnje. Nemojte pretpostavljati da će pregled skladišta stvoriti pravo na povrat koje uvjeti narudžbe isključuju. Praktično pitanje je možete li prihvatiti transakciju pod navedenim uvjetima."
+          ]
+        },
+        {
+          "heading": "Izračunajte odluku koristeći ukupnu cijenu",
+          "paragraphs": [
+            "Prije usporedbe kupnje agenta s drugom opcijom kupnje, navedite cijenu artikla, domaću dostavu, međunarodnu dostavu i sve dodatne usluge koje odaberete. Provjerite valutu i stvarno traženi iznos prilikom plaćanja. Atraktivna cijena proizvoda ne predstavlja punu cijenu dostave. Službeni procjenitelj troškova dostave koristan je za planiranje s vašim odredištem i unosima za paket, ali rana procjena trebala bi ostati odvojena od konačne ponude za pakirani paket.",
+            "Koristite jednostavnu bilješku za usporedbu s jednim stupcem za potvrđene iznose i drugim za neriješene iznose. Na primjer, možda znate cijenu odabranog artikla, a još uvijek vam nedostaju dimenzije pakiranog paketa. Označite iznos dostave kao privremeni umjesto da unosite točnu pretpostavku. Ponovite usporedbu kada su dostupne relevantne mjere. Ako kupnja ima smisla samo ispod najniže zamislive procjene troškova dostave, odluka ovisi o neizvjesnosti koja zaslužuje pažnju prije nego što se uloži više novca."
+          ]
+        },
+        {
+          "heading": "Razumite što fotografije kontrole kvalitete mogu, a što ne mogu odgovoriti",
+          "paragraphs": [
+            "Fotografije skladišta mogu vam pomoći u usporedbi vidljivih značajki s odabranom narudžbom, kao što su boja, količina, oznake veličine i očito stanje. Zatražite ciljani pregled kada postoji određena nesigurnost. Koristan zahtjev identificira detalje i odluku koju će podržati, umjesto da nejasno traži bolje slike. Prilikom pregleda dokaza, marketinške slike prodavatelja, javne fotografije s drugih narudžbi i slike povezane s vašom vlastitom narudžbom držite u odvojenim kategorijama.",
+            "Fotografije ne utvrđuju autentičnost, dugotrajnu izdržljivost, udobnost ili funkcioniranje elektronike. Jasna naljepnica može potvrditi tekst na toj naljepnici bez dokazivanja svake tvrdnje koja je uz nju priložena. Ako su vam autentična roba robne marke, tehničke performanse ili certifikati bitni, odaberite kanal kupnje koji pruža odgovarajuću provjeru. Ovaj katalog i njegovi vodiči ne provjeravaju autentičnost proizvoda. Tretirajte ograničenja dokaza kao dio procesa odabira, umjesto da praznine popunjavate pretpostavkama."
+          ]
+        },
+        {
+          "heading": "Procijenite zahtjeve za dostavu i povrat novca prema njihovoj fazi",
+          "paragraphs": [
+            "Otprema prodavatelja, skladišna potvrda i međunarodna otprema paketa su različiti događaji. Prilikom čitanja recenzije dostave provjerite koji je događaj započeo prijavljeno razdoblje čekanja i odgovaraju li odredište i ruta vašoj situaciji. Brzi dolazak u skladište malo govori o preostalom međunarodnom putovanju. Isto tako, kašnjenje paketa samo po sebi ne utvrđuje što se dogodilo s narudžbom drugog kupca. Specifični datirani zapisi korisniji su od univerzalne tvrdnje o brzini dostave.",
+            "Napredak povrata također treba definiranu fazu. Povrat prodavača koji ispunjava uvjete može uključivati odobrenje, povratni prijevoz, povrat novca prodavaču i uplatu na stanje Kakobuy. Povlačenje tog raspoloživog stanja zaseban je proces. Pitajte koji je korak na čekanju i sačuvajte relevantne reference. Nemojte tumačiti prijavljeno trajanje povrata kao zajamčeni datum dolaska u banku ili pretpostavljati da jedan uspješan povrat nadjačava restriktivne uvjete prikazane na drugoj narudžbi. Koristite povezani vodič za povrat kako biste razlikovali ove procese."
+          ]
+        },
+        {
+          "heading": "Odvažite recenzije bez pretvaranja u jamstva",
+          "paragraphs": [
+            "Potražite dokaze koji odgovaraju iznesenoj tvrdnji. Koristan prikaz opisuje proizvod, fazu naručivanja, relevantne datume i kako je problem riješen. Promocijski snimak zaslona s poveznicom za kupnju može prikazati stvarni artikl, ali i dalje ostaviti ta pitanja bez odgovora. Partnerske poveznice trebale bi biti otkrivene, a njihova prisutnost razlog je za pažljivo čitanje temeljnih dokaza, a ne razlog za automatsko prihvaćanje ili odbacivanje svake izjave na stranici.",
+            "Izbjegavajte kombiniranje nepovezanih iskustava u preciznu stopu uspjeha. Javni komentari nisu kontrolirani uzorak svih transakcija, a nekoliko pozitivnih ili negativnih priča ne može podržati pouzdan postotak. Kada se dokazi sukobljavaju, identificirajte konkretnu nesigurnost koju možete sami provjeriti: trenutni popis prodavača, uvjeti pisane narudžbe, opseg inspekcije ili dostupne opcije dostave. Ako pregled ne može pomoći u odgovoru na bilo koje od tih pitanja, može biti manje koristan za vašu odluku od izravnog pojašnjenja."
+          ]
+        },
+        {
+          "heading": "Donesite odluku o kupnji s eksplicitnim točkama zaustavljanja",
+          "paragraphs": [
+            "Koristite donju kontrolnu listu prije plaćanja, nakon dolaska u skladište i prije slanja paketa. U svakoj fazi zapišite stanje koje bi vas natjeralo da zastanete. Primjeri uključuju nepotvrđenu varijantu, neobjašnjiv trošak ili vidljivu neusklađenost koja nije riješena. Ovo pretvara široko pitanje o povjerenju u skup odluka koje zapravo možete donijeti. Također čuva zapis ako podrška treba razumjeti kako se problem razvio.",
+            "Započnite otkrivanje u proračunskoj tablici, a zatim otvorite izvorni oglas i službenu stranicu za kupnju kako biste dovršili provjere. Komunikaciju o narudžbi održavajte unutar relevantnog službenog procesa podrške i izbjegavajte dijeljenje vjerodajnica računa s neslužbenim pomagačima. Kakobuy Pick može primiti proviziju putem objavljenih partnerskih poveznica; to ne mijenja ograničenja opisana ovdje. Nijedan vodič ne može jamčiti ishod pojedinačne transakcije, ali jasni dokazi i realna očekivanja čine odluku informiranijom."
+          ]
+        }
+      ],
+      "checklist": [
+        "Potvrdite poveznicu prodavatelja, točnu varijantu i primjenjive uvjete narudžbe.",
+        "Odvojite potvrđene troškove od privremenih procjena paketa.",
+        "Koristite QC za vidljive provjere bez tretiranja kao autentifikacija.",
+        "Riješite neriješena pitanja prije plaćanja ili slanja paketa."
+      ],
+      "table": {
+        "caption": "Zapis o praktičnim dokazima",
+        "headers": [
+          "Provjera",
+          "Korisni dokazi"
+        ],
+        "rows": [
+          [
+            "Identitet i predmet",
+            "URL originalnog prodavatelja, točna varijanta i trenutna stranica narudžbe"
+          ],
+          [
+            "Uvjeti narudžbe",
+            "Primjenjivi uvjeti otkazivanja, povrata i ručne kupnje"
+          ],
+          [
+            "Trošak i dostava",
+            "Potvrđene naplate, privremeni unosi dostave i odabrana ruta"
+          ],
+          [
+            "Pregled i podrška",
+            "Fotografije specifične za narudžbu, neriješeni problem i referenca za podršku"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Pronađite i uskladite prave fotografije",
+      "seoTitle": "Kakobuy QC Finder: Pronađite i uskladite prave fotografije",
+      "description": "Pronađite fotografije svoje Kakobuy narudžbe i procijenite javne rezultate QC-a koristeći originalnu poveznicu prodavatelja, varijantu i datum slike. Saznajte što provjeriti kada nedostaju fotografije.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Počnite s artiklom i vrstom fotografije koja vam je potrebna",
+          "paragraphs": [
+            "Pretraga Kakobuy QC tražilice može značiti pronalaženje fotografija za vašu vlastitu narudžbu ili istraživanje proizvoda prije kupnje. To su različiti zadaci. Za vlastitu kupnju, počnite u području narudžbi ili skladišta na svom službenom računu i otvorite relevantnu stavku. Za istraživanje prije kupnje, javni rezultat fotografije samo je referenca s drugog oglasa ili narudžbe dok ga ne možete usporediti s točnim prodavateljem i varijantom koju razmatrate.",
+            "Kakobuy Pick prikazuje referentne fotografije proizvoda koje je dostavio izvor kataloga. Ne označava te slike kao provjerenu kontrolu kvalitete skladišta i ne pruža javnu bazu podataka fotografija narudžbi. Koraci u ovom tekstu pomažu vam da pronađete i procijenite dokaze; ne otključavaju privatne fotografije niti jamče da postoji javna slika za svaku stavku. Imajte tu razliku na umu kada pretraživanje vrati atraktivne slike, ali ne daje kontekst narudžbe, datum snimanja ili originalnu referencu oglasa."
+          ]
+        },
+        {
+          "heading": "Sačuvajte originalnu poveznicu prodavatelja prije pretraživanja",
+          "paragraphs": [
+            "Kopirajte originalni URL oglasa, uključujući tržište i identifikator artikla, u svoju istraživačku bilješku. Interni broj stranice kataloga nije nužno i broj artikla prodavatelja. Alati za pretraživanje koji očekuju originalnu poveznicu prodavatelja mogu propasti ili vratiti nepovezane rezultate ako im se umjesto toga da interni URL kataloga. Ako imate samo kratku poveznicu, otvorite oglas putem njegove uobičajene javne stranice i provjerite konačne detalje o proizvodu prije nego što ga upotrijebite kao referencu.",
+            "Zabilježite odabranu boju, veličinu, izbor materijala i bilo koju opciju pakiranja ili dodatne opreme. Nekoliko varijanti može dijeliti oglas, dok zasebni prodavači mogu ponovno koristiti vrlo slične fotografije. Stoga je usklađivanje naziva proizvoda ili slike naslovnice slabiji dokaz od usklađivanja izvorne poveznice i točne varijante. Ako se poveznica više ne učitava, zadržite postojeće bilješke i zatražite pojašnjenje; nemojte je tiho zamjenjivati sličnim oglasom i pretpostavljati da fotografije ostaju relevantne."
+          ]
+        },
+        {
+          "heading": "Pronađite fotografije povezane s vašom vlastitom narudžbom",
+          "paragraphs": [
+            "Službeni vodič za kupnju usmjerava korisnike na narudžbe računa i skladišna područja nakon pregleda i skladištenja. Pronađite narudžbu pomoću reference priložene uz vašu kupnju, a zatim usporedite njezin status s dostupnošću slike. Otprema prodavatelja ne znači da je pregled skladišta završen. Ako je artikl stigao, ali očekivane slike nisu vidljive, provjerite poruke o narudžbi i pitajte podršku je li primitak, pregled ili objava slike još uvijek na čekanju za taj artikl.",
+            "Koristite službeno sučelje računa umjesto da dajete svoje podatke za prijavu trećoj strani koja traži podatke. Prilikom traženja pomoći, identificirajte narudžbu i nedostajući prikaz bez objavljivanja osobnih adresnih oznaka ili snimaka zaslona računa na otvorenom forumu. Precizan zahtjev može objasniti da je odabrana veličina odjeće nejasna jer etiketa nije vidljiva. Odgovor podrške čuvajte uz zapis narudžbe kako biste mogli razlikovati ažuriranje obrade od potvrde da je zatraženi pregled zapravo dovršen."
+          ]
+        },
+        {
+          "heading": "Usporedite javne rezultate prije donošenja zaključaka",
+          "paragraphs": [
+            "Za svaki javni rezultat fotografije provjerite poveznicu prodavatelja, odabranu varijantu, datum snimanja ako je dostupan i je li prikazani artikl opisan kao dio stvarne narudžbe. Nedavna fotografija druge veličine i dalje može pomoći s vidljivom konstrukcijom, ali nije zapis mjerenja za vašu odabranu veličinu. Starija fotografija može odražavati drugačiju proizvodnu seriju ili konfiguraciju popisa. Tamo gdje rezultatu nedostaje kontekst, zabilježite nesigurnost umjesto da nadogradite sliku na provjereni dokaz.",
+            "Usporedite nekoliko karakterističnih detalja, kao što su položaj džepa, vrsta kopčanja, uključeni dijelovi i raspored etikete. Usklađivanje ovih detalja može učiniti referencu relevantnijom, ali i dalje ne dokazuje da će sljedeća narudžba biti identična. Ako je javna slika u suprotnosti s trenutnim tekstom opcije prodavatelja, razjasnite razliku prije kupnje. Najsigurniji zaključak može biti da su dostupne slike nedovoljne, a ne da je fotografija koja izgleda najuvjerljivije ispravna."
+          ]
+        },
+        {
+          "heading": "Pretvorite nedostajući detalj u koristan zahtjev za fotografiju",
+          "paragraphs": [
+            "Koristan zahtjev za fotografiju imenuje točan dio artikla i kako bi trebao biti prikazan. Za jaknu to može značiti puni patentni zatvarač ili opseg prsa izmjeren ravno između određenih točaka. Za par cipela to može značiti i etikete s veličinom i jasan prikaz potplata. Pitajte je li traženi prikaz ili mjerenje dostupno i naplaćuje li se prije nego što pretpostavite da je uključeno u uobičajeni pregled.",
+            "Izbjegavajte tražiti mnogo gotovo identičnih fotografija koje ne mogu riješiti odluku. Ako je problem u metodi mjerenja, izričito zatražite tu metodu. Ako je problem u tome koji su pribor uključeni, zatražite dijelove poredane zajedno. Jasan cilj olakšava procjenu odgovora. Napravite razliku između fotografije, mjerenja i funkcionalnog testa: fotografija uređaja s napajanjem, na primjer, ne bi pokazala svaku funkciju ili njegovu dugoročnu pouzdanost."
+          ]
+        },
+        {
+          "heading": "Čitajte fotografije s dosljednim uvjetima usporedbe",
+          "paragraphs": [
+            "Koristite iste referentne točke prilikom usporedbe dimenzija. Ravna širina odjeće, opseg tijela i vanjska mjera paketa opisuju različite stvari. Provjerite jedinice te početnu i krajnju točku prije nego što broj tretirate kao podudaranje veličina. Perspektiva i labavo postavljena mjerna traka mogu otežati tumačenje slike. Ako su dokazi dvosmisleni, potražite pojašnjenje umjesto da gradite preciznu preporuku za pristajanje na nesigurnoj mjeri.",
+            "Boja i tekstura također ovise o osvjetljenju, postavkama fotoaparata i vašem zaslonu. Razlika između fotografije prodavača i fotografije skladišta može opravdati detaljniji pogled, ali ne utvrđuje automatski točan uzrok. Opišite vidljivi problem posebno prilikom kontaktiranja podrške. Fotografije mogu potvrditi provjeru stanja ili varijante; ne mogu samostalno dokazati sastav vlakana, autentičnost, udobnost, izdržljivost ili odsutnost skrivenih nedostataka. Za potpuniji popis za provjeru koristite namjenski vodič za kontrolu kvalitete."
+          ]
+        },
+        {
+          "heading": "Odmah riješite nedostajuće rezultate i neusklađenosti",
+          "paragraphs": [
+            "Nijedan javni rezultat kontrole kvalitete sam po sebi ne dokazuje da je oglas nov, nesiguran ili nedostupan. To jednostavno može značiti da u izvoru koji ste pretraživali nije objavljena odgovarajuća slika. Vratite se na podatke o prodavatelju uživo i odlučite na koja pitanja morate odgovoriti prije kupnje. Nakon dolaska u skladište, neusklađenost u vašim fotografijama narudžbe izravniji je problem: zadržite slike, identificirajte odabranu opciju i pitajte podršku o primjenjivom sljedećem koraku.",
+            "Provjerite stvarne uvjete narudžbe prije nego što pretpostavite da je povrat moguć. Ručni obrazac za kupnju nosi stroža ograničenja za određene poveznice trećih strana, uključujući ograničenja otkazivanja, povrata novca i postprodaje. Za prihvatljive obične narudžbe, odluka o povratu i dalje ima svoj rok i uvjete. Čekanje više javnih fotografija ne produžuje taj rok. Prvo riješite problem specifičan za narudžbu i čuvajte artikl, etikete i ambalažu u stanju potrebnom za bilo koji dostupni postupak povrata."
+          ]
+        },
+        {
+          "heading": "Vodite sažet zapis koji podržava sljedeću odluku",
+          "paragraphs": [
+            "Koristite donju tablicu za usporedbu kao zapis dokaza, a ne kao tablicu rezultata. Odvojite ono što je vidljivo potvrđeno od onoga što ostaje nepoznato. Na primjer, fotografija etikete može potvrditi odabrani tekst veličine, a istovremeno ostaviti upotrebljivu veličinu neizvjesnom. Izgled dodatnog pribora može potvrditi količinu, a funkcionalnost ostaviti netestiranom. Ovo odvajanje sprječava da se uvjerljiva fotografija koristi za potkrepljivanje tvrdnji koje zapravo ne može utvrditi.",
+            "Nakon što su potrebne provjere dovršene, prijeđite na sljedeći relevantni zadatak: tumačenje veličine, zahtjev za povrat ili planiranje paketa. Zadržite izvornu poveznicu i korisne mjere za buduću referencu, ali ponovno provjerite popis prilikom ponovnog naručivanja jer se zalihe i opcije mogu promijeniti. Ako objavite vlastitu recenziju, uklonite osobne identifikatore i opišite točan opseg dokaza. Jasno, ograničeno zapažanje korisnije je drugom kupcu od neutemeljene tvrdnje da je prodavač ili proizvod univerzalno siguran.",
+            "Prije prihvaćanja rezultata kao podudaranja, napišite kratku izjavu o tome što to mijenja u vašoj odluci. Ako fotografija samo ponavlja prodavateljevu promotivnu sliku, dodaje malo neovisnih informacija. Ako prikazuje traženu mjeru za vašu vlastitu narudžbu, može riješiti određenu nesigurnost oko pristajanja. Držite i dokaze i njihova ograničenja u istoj bilješci kako bi zaključak kasnije ostao razumljiv."
+          ]
+        }
+      ],
+      "checklist": [
+        "Držite izvornu poveznicu prodavatelja odvojeno od broja stranice kataloga.",
+        "Koristite svoj službeni račun za fotografije vlastite narudžbe.",
+        "Usporedite varijantu i kontekst prije nego što se oslonite na javnu sliku.",
+        "Riješite vidljive neusklađenosti unutar primjenjivih uvjeta narudžbe."
+      ],
+      "table": {
+        "caption": "Zapis o podudaranju fotografija",
+        "headers": [
+          "Provjera",
+          "Korisni dokazi"
+        ],
+        "rows": [
+          [
+            "Podudaranje oglasa",
+            "Izvorni URL tržišta i identifikator artikla prodavatelja"
+          ],
+          [
+            "Podudaranje varijanti",
+            "Odabrana boja, veličina, uključeni dijelovi i vidljive razlike"
+          ],
+          [
+            "Kontekst fotografije",
+            "Vaša vlastita narudžba ili javna referenca; datum i nedostajući kontekst"
+          ],
+          [
+            "Odluka",
+            "Vidljivi rezultat, preostala neizvjesnost i sljedeća radnja"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Italija: Naručivanje, troškovi dostave i praćenje",
+      "seoTitle": "Kakobuy Italija: Naručivanje, troškovi dostave i praćenje",
+      "description": "Planirajte Kakobuy narudžbu za Italiju: provjerite poveznice prodavača, procijenite puni trošak paketa, provjerite dostupne rute i slijedite ispravnu fazu praćenja.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Planirajte narudžbu za Italiju od cijelog putovanja",
+          "paragraphs": [
+            "Naručivanje putem Kakobuya za dostavu u Italiju uključuje kupnju prodavatelja, premještaj u skladište, pregled i zaseban međunarodni paket. Sama cijena proizvoda ne opisuje cijeli put. Započnite potvrdom artikla, a zatim provjerite prihvaćaju li trenutne opcije dostave vaše odredište i sadržaj. Ovaj vodič objašnjava odluke koje treba donijeti; ne obećava određenu rutu, datum dostave ili fiksnu cijenu dostave za svaku talijansku adresu.",
+            "Ako istražujete kako Kakobuy funkcionira u Italiji, napravite kratki plan narudžbe s poveznicom prodavatelja, odabranom varijantom, namjeravanom adresom dostave i pitanjima koja ostaju otvorena. Odlučite ima li kupnja fiksni rok prije plaćanja. Paket namijenjen određenom događaju zahtijeva više opreza nego narudžba s fleksibilnim datumom dolaska, jer priprema prodavatelja i rukovanje skladištem događaju se prije nego što međunarodni tranzit uopće počne. Usporedite alternative koristeći cijeli proces, a ne samo procjenu tranzita zasebno."
+          ]
+        },
+        {
+          "heading": "Provjerite popis prodavatelja i odabranu varijantu",
+          "paragraphs": [
+            "Pomoću proračunske tablice pronađite kandidate, a zatim otvorite originalni popis prodavatelja i službenu stranicu za kupnju. Potvrdite točnu boju, veličinu, model i uključene dijelove. Nazivi proizvoda i fotografije mogu se ponovno koristiti u više popisa, stoga zadržite originalni URL s odabranom opcijom. Ako automatski uvoz ne uspije, koristite trenutni službeni postupak ručne kupnje tek nakon što pročitate njegove uvjete i navedete točne podatke. Slična slika nije pouzdana zamjena za originalni popis.",
+            "Obratite posebnu pozornost na restriktivne uvjete ručne narudžbe. Trenutni obrazac priručnika upozorava da određene kupnje trećih strana nemaju postprodajnu uslugu i ne mogu se vratiti, otkazati ili izmijeniti nakon plaćanja. Opće smjernice za povrat u skladište ne nadjačavaju te uvjete. Ako niste sigurni u vezi s tablicom veličina, materijalom ili dodatkom, riješite to prije prihvaćanja narudžbe. Odluka bi trebala ovisiti o uvjetima prikazanim za tu kupnju, a ne o pretpostavci da se svaki artikl može kasnije vratiti."
+          ]
+        },
+        {
+          "heading": "Usporedite veličine koristeći metodu mjerenja proizvoda",
+          "paragraphs": [
+            "Veličina talijanske odjeće ili obuće koju inače nosite nije dovoljna za odabir varijante od nepoznatog prodavača. Usporedite tablicu određenog oglasa s artiklom koji vam odgovara i zabilježite metodu mjerenja. Mjere ravne odjeće i mjere tijela razlikuju se. Za odjeću odredite dimenzije koje su važne za namjeravani kroj i slojevitost. Za cipele razlikovajte duljinu stopala, duljinu uloška i duljinu potplata, umjesto da svaki broj duljine tretirate kao zamjenjiv.",
+            "Ako tablica nedostaje ili je dvosmislena, zatražite pojašnjenje prije naručivanja. Nakon dolaska u skladište, ciljano mjerenje može pomoći u rješavanju neriješenog pitanja, podložno inspekcijskoj službi i eventualnoj naplati. Fotografija etikete može potvrditi odabranu etiketu, ali ne može jamčiti udobnost. Koristite vodič za veličine povezan u nastavku za strukturiranu usporedbu i sačuvajte svoje mjere za buduće kupnje. Izbjegavajte univerzalnu uputu za odabir veće veličine, jer može promijeniti duljinu i proporcije bez rješavanja izvornog problema s pristajanjem."
+          ]
+        },
+        {
+          "heading": "Procjena dostave s unosima za odredište i paket",
+          "paragraphs": [
+            "Otvorite službeni procjenitelj i odaberite Italiju kao odredište kada je ta opcija dostupna. Unesite relevantnu vrstu robe, težinu i dimenzije, a zatim pročitajte ograničenja i podatke o naplati za vraćene rute. Prazan rezultat razlog je za provjeru unosa ili traženje podrške, a ne za pretpostavku da će oglašena ruta prihvatiti paket. Dostupnost može ovisiti o sadržaju i pakiranom paketu, stoga ponovno provjerite prije konačne dostave.",
+            "Prije nego što roba stigne u skladište, označite svoje dimenzije i težine kao procjene. Ažurirajte usporedbu kada izmjerene informacije postanu dostupne i ponovno ako se pakiranje promijeni. Usporedba težine na stranici dostave ove stranice ilustrira stvarnu i volumetrijsku težinu; to nije kalkulator cijene uživo. Koristite djelitelj i metodu naplate navedene za rutu umjesto primjene univerzalne formule na svakog prijevoznika. Lakši predmet i dalje može zauzeti dovoljno prostora da promijeni izračun dostave."
+          ]
+        },
+        {
+          "heading": "Izradite troškovnik bez izmišljanja ukupne cijene",
+          "paragraphs": [
+            "Zasebno navedite cijenu odabrane stavke, domaću dostavu, međunarodnu dostavu i dodatne usluge. Provjerite valutu plaćanja i iznos koji zahtijeva trenutni način plaćanja. Sve troškove opisane u uvjetima rute zadržite u njihovim zasebnim unosima i izbjegavajte dvostruko brojanje troškova samo zato što različite stranice pomoći koriste različite oznake. Procjena u dolarima ne bi se trebala tretirati kao zajamčeni terećenje u eurima. Usporedite potvrđene iznose prikazane tijekom stvarne transakcije.",
+            "Za dostavu u Italiju, nemojte tumačiti naziv rute ili promotivni opis kao dokaz da je uključena svaka moguća naknada za dolazak. Pročitajte što trenutna ponuda izričito pokriva i zatražite pojašnjenje ako je formulacija nejasna. Ovaj vodič ne objavljuje poreznu stopu, carinski prag ili zajamčeni ishod carinjenja. Koristan proračun bilježi što je uključeno, što je isključeno, a što ostaje nepoznato, što vam omogućuje da odlučite je li ukupni iznos prihvatljiv prije međunarodne otpreme."
+          ]
+        },
+        {
+          "heading": "Pregledajte rezultate pregleda prije kombiniranja artikala",
+          "paragraphs": [
+            "Kada je roba uskladištena, usporedite fotografije povezane s vašom narudžbom s odabranom varijantom. Provjerite vidljivo stanje, količinu i mjere koje su vam važne. Javne referentne fotografije s druge narudžbe ne mogu zamijeniti ovaj pregled. Ako nešto izgleda pogrešno, sačuvajte sliku i detalje narudžbe, a zatim se odmah obratite podršci. Riješite problem prije kombiniranja artikla s drugim kupnjama ili zahtjeva za međunarodnu dostavu, dok su još uvijek dostupne primjenjive opcije.",
+            "Ako namjeravate kombinirati odjeću, obuću i dodatke, usporedite rezultirajući paket s ograničenjima rute i zahtjevima za pakiranje. Uklanjanje nepotrebne ambalaže može utjecati na volumen, ali zaštita i svi uvjeti povrata i dalje su važni. Pitajte o predloženom pakiranju umjesto da pretpostavljate da kompresija ili uklanjanje kutije odgovaraju svakom artiklu. Rok za skladištenje odvojen je od roka povrata prodavatelja, pa čekanje na drugi artikl ne zadržava iste postprodajne mogućnosti unedogled."
+          ]
+        },
+        {
+          "heading": "Pratite fazu koja se stvarno primjenjuje",
+          "paragraphs": [
+            "Odvojite reference narudžbenica i reference međunarodnih paketa. Domaći događaj praćenja označen kao isporučen može se odnositi na primitak u skladištu, a ne na dostavu u Italiji. Međunarodno praćenje postaje relevantno za poslani paket i njegovo putovanje prijevoznika. Kada se ažuriranje čini odgođenim, zabilježite posljednji događaj, njegov datum i referencu za praćenje koju provjeravate. Pitajte podršku koja je faza u tijeku umjesto da svako mirno razdoblje tretirate kao istu vrstu kašnjenja.",
+            "Slijedite sve reference za primopredaju ili lokalnu dostavu navedene putem službenog zapisa o paketima. Nemojte pretpostavljati da će određeni talijanski prijevoznik obraditi svaku rutu ili da za svaku pošiljku mora postojati novi broj za praćenje. Ako je navedeni rok dostave prošao ili zapis pokazuje problem, navedite točnu referencu paketa i posljednji vidljivi događaj kada tražite pomoć. Sačuvajte prihvaćenu ponudu za dostavu kako biste mogli razlikovati njezin navedeni opseg od ranije procjene planiranja."
+          ]
+        },
+        {
+          "heading": "Pripremite se za dostavu i sačuvajte dokaze",
+          "paragraphs": [
+            "Prije slanja paketa provjerite jesu li ime, adresa, poštanski broj i kontaktni podaci primatelja točni. Prilikom dostave odmah pregledajte vanjsko pakiranje i sadržaj. Ako postoje vidljiva oštećenja ili nedostaje neki artikl, sačuvajte pakiranje i relevantne fotografije te se bez odgađanja obratite odgovarajućem kanalu za podršku. Pročitajte važeći račun i uvjete za podnošenje zahtjeva za svoj paket. Fotografija paketa može potkrijepiti prijavu, ali sama po sebi ne uspostavlja pravo na naknadu.",
+            "Nakon uspješne dostave sačuvajte korisne mjere odjeće, podatke o paketu i opis rute za usporedbu. Tretirajte ih kao zapise o toj narudžbi, a ne kao trajna obećanja za sljedeću. Prilikom ponovnog naručivanja ponovno provjerite prodavatelja, dostupne varijante i trenutnu ponudu dostave. Počnite s donjim poveznicama kategorija za otkrivanje, a zatim upotrijebite vodiče za dostavu, praćenje i povrat novca za specifične odluke koje pokrivaju. To omogućuje povezivanje pregledavanja proizvoda s praktičnim provjerama umjesto oslanjanja na jednu široku preporuku.",
+            "Za jednostavan primjer planiranja, usporedite slanje gotovog odjevnog predmeta sada s čekanjem cipela koje još nisu stigle u skladište. Zabilježite neriješenu otpremu prodavatelja, moguću promjenu pakiranja i odvojene rokove za povrat. Nemojte pretpostavljati da će čekanje uštedjeti novac dok se kombinirani paket ne može procijeniti korištenjem realnih podataka. Bolji izbor ovisi o trenutnoj ponudi, potrebama zaštite i vašem roku, a ne samo o broju artikala u paketu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Potvrdite točan popis i primjenjive uvjete ručne narudžbe.",
+        "Ponovno provjerite dostupnost rute za Italiju koristeći stvarne podatke o paketu.",
+        "Odvojite cijenu artikla, iznos plaćanja i ponudu za dostavu.",
+        "Držite evidenciju praćenja narudžbe i paketa odvojeno i odmah pregledajte dostavu."
+      ],
+      "table": {
+        "caption": "Zapis o planiranju narudžbe za Italiju",
+        "headers": [
+          "Provjera",
+          "Korisni dokazi"
+        ],
+        "rows": [
+          [
+            "Prije kupnje",
+            "URL prodavatelja, točna varijanta, način veličine i uvjeti narudžbe"
+          ],
+          [
+            "Prije otpreme",
+            "Odredište u Italiji, sadržaj, pakirane mjere i dostupna ponuda"
+          ],
+          [
+            "Tijekom prijevoza",
+            "Referenca paketa, posljednji datum događaja i svi službeni detalji primopredaje"
+          ],
+          [
+            "Prilikom isporuke",
+            "Stanje paketa, sadržaj i primjenjivi zahtjevi za izvješćivanje"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "Službeni vodič izričito upozorava na minimalne količine kupnje na 1688. Prikazana cijena može ovisiti o količini ili varijanti. Prije usporedbe s ponudom za jedan komad drugdje provjerite ispunjava li planirana narudžba zahtjev prodavatelja. Provjerite i mijenja li odabrana količina domaću poštarinu.",
             "Prije plaćanja pregledajte sažetak narudžbe u cjelini: ispravan artikl, ispravna opcija, ispravna količina i potpun trošak kupnje. Spremite dobiveni broj narudžbe i bilješke. Ako se kasnije pojavi problem, ti podaci pomažu podršci usporediti zahtjev za kupnju s primljenim artiklom."
           ]
+        },
+        {
+          "heading": "Pročitajte uvjete na obrascu za ručnu kupnju",
+          "paragraphs": [
+            "Prije primjene ovih smjernica, provjerite uvjete prikazane za vašu točnu narudžbu. Službeni obrazac za ručnu kupnju trenutno upozorava da određene poveznice trećih strana nemaju postprodajnu uslugu i ne podržavaju povrat novca, otkazivanje ili promjene nakon plaćanja. Opći postupak povrata u skladište stoga nije dostupan za svaku kupnju. Prije plaćanja razjasnite nesigurnu varijantu, cijenu ili uvjet povrata; nemojte pretpostavljati da fotografija pregleda stvara pravo na povrat."
+          ]
         }
       ],
       "checklist": [
@@ -1177,7 +1508,7 @@
       },
       "seoTitle": "Kakobuy poveznice: otvaranje ponuda, provjera varijanti i naručivanje",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-qc-photos",
@@ -1320,6 +1651,13 @@
             "Za majicu s kapuljačom ili nogometnu majicu, napišite širinu i duljinu prsa referentnog odjevnog predmeta pored vrijednosti prodavatelja. Označite sve razlike koje stvarno želite, poput više prostora za slojevito odijevanje ili kraćeg tijela. Provjerite konstrukciju rukava prije usporedbe brojeva rukava. Spušteno rame i konvencionalni šav na ramenu mogu koristiti različite početne točke, tako da identični brojevi ne moraju nužno rezultirati identičnim dosegom.",
             "Ako prodavatelj daje samo prijedlog visine i težine, zatražite mjere odjevnog predmeta kada je važno pristajanje. Za cipele pitajte koju duljinu tablica predstavlja i je li dostupan opis širine specifičan za model. Zabilježite neriješenu mjeru prije naručivanja; zatim zatražite tu točnu provjeru u skladištu ako je potrebno. Cilj je jasna usporedba, a ne univerzalna pretvorba iz slova veličine jedne marke u drugo."
           ]
+        },
+        {
+          "heading": "Koristite razliku u mjerenju kako biste donijeli konkretnu odluku",
+          "paragraphs": [
+            "Razmotrite referentni odjevni predmet s udobnim prostorom za prsa, ali rukavima koji se čine prekratkim. Usporedite razlike u prsima i rukavima zasebno s tablicom prodavatelja; nemojte svesti odluku na jednu uputu za povećanje veličine. Potvrdite da obje mjere rukava koriste istu početnu točku. Ako tablica koristi drugačiju metodu, zatražite nedostajuću mjeru prije nego što brojeve tretirate kao usporedive.",
+            "Odabranu varijantu držite pokraj bilješke o mjeri i ponovno je usporedite kada stignu slike specifične za narudžbu. Etiketa s odgovarajućom veličinom ne potvrđuje izmjerene dimenzije odjevnog predmeta. Ako je mjerenje bitno, pitajte može li skladište osigurati tu točnu provjeru i naplaćuje li se. Zahtjev podnesite dovoljno rano kako biste djelovali prema važećim uvjetima kupnje."
+          ]
         }
       ],
       "checklist": [
@@ -1355,7 +1693,7 @@
       },
       "seoTitle": "Vodič za veličine Kakobuy: Tablice veličina odjeće i obuće",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-shipping-calculator",
@@ -1409,6 +1747,13 @@
             "Prije mjerenja u skladištu, stvorite scenarij planiranja za laku i tešku robu i zabilježite koje su vrijednosti procjene. Uključite ambalažu i sav predviđeni sadržaj. Koristite oba scenarija u službenom procjenitelju s istim odredištem i vrstom robe. Ako se cijena dovoljno promijeni da utječe na vašu odluku o kupnji, pričekajte bolje informacije umjesto da predstavljate okvirnu težinu proizvoda kao preciznu ponudu za dostavu.",
             "Usporedba težine na ovoj stranici ilustrira samo izračun. Ne zna trenutnu cijenu rute, povećanja naplate, minimalnu naknadu, dodatnu naknadu ili ograničenja sadržaja. Pročitajte te uvjete u službenoj ponudi i ažurirajte unose nakon pakiranja. Točno množenje i dalje može dati neprikladan proračun ako odabrani djelitelj ili mjere paketa ne odgovaraju stvarnoj usluzi."
           ]
+        },
+        {
+          "heading": "Usporedite ponude koristeći iste pretpostavke o paketima",
+          "paragraphs": [
+            "Prilikom usporedbe ruta, odredište, vrstu robe, pakiranu težinu i dimenzije zadržite konstantnima. Zabilježite uključuje li svaka ponuda usluge koje namjeravate odabrati i zabilježite svako zaokruživanje ili minimalnu naknadu navedenu za rutu. Usporedba korištenjem nepakirane težine na jednoj ruti i pakirane težine na drugoj može rezultirati prividnom uštedom koja nestaje prilikom slanja.",
+            "Kalkulator na ovoj stranici uspoređuje samo težine. Ne može utvrditi dostupnost rute, tečaj ili iznos dostave koji se plaća. Ako promijenite pakiranje, ažurirajte službenu procjenu prije donošenja odluke. Zadržite raniju procjenu i prihvaćenu ponudu za paket kao odvojene zapise kako bi se kasnije prilagodbe mogle pratiti do promijenjenih ulaznih podataka."
+          ]
         }
       ],
       "checklist": [
@@ -1444,7 +1789,7 @@
       },
       "seoTitle": "Kakobuy kalkulator dostave: Težina i trošak",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-fees-payment",
@@ -1597,6 +1942,13 @@
             "Vrijeme do skladišta razlikuje se od vremena dopuštenog u skladištu. Priprema prodavatelja i domaća dostava događaju se prije prijema u skladište; pregled i ažuriranja računa slijede vlastiti tijek rada. Prvo provjerite otpremu prodavatelja i domaće praćenje. Isporučeni skenirani dokument mora se uskladiti s vašom narudžbom prije nego što pretpostavite da je artikl dostupan za slanje u međunarodnom paketu.",
             "Ako prijevoznik prikazuje dostavu, ali narudžba se nije pojavila kao pohranjena, navedite domaći broj za praćenje, događaj isporuke i broj narudžbe kako biste podržali podršku. Pitajte je li prijem, podudaranje vlasništva ili pregled u tijeku. Nemojte pokretati odbrojavanje skladištenja od nagađanog datuma otpreme prodavatelja ili tretirati uobičajenih 100 dana kao obećanje o brzini obrade."
           ]
+        },
+        {
+          "heading": "Odaberite sljedeću radnju iz najbližeg roka",
+          "paragraphs": [
+            "Pregledajte svaku pohranjenu stavku u odnosu na rok skladištenja i bilo koji primjenjivi rok povrata. Označite je spremnom za otpremu tek nakon što se provjere odabrana varijanta i vidljivo stanje. Ako s artiklom postoji neriješen problem, odmah se obratite podršci umjesto da čekate ostatak planirane pošiljke. Zadržite zasebnu bilješku za robu koju namjeravate zadržati i robu koja čeka odluku prodavatelja.",
+            "Za praktičnu usporedbu, zamislite da je jakna spremna, ali drugi prodavač nije poslao par cipela. Čekanje bi moglo promijeniti cijenu paketa, ali ta moguća ušteda ne rješava rok povrata jakne. Prvo provjerite trenutnu odluku, a zatim usporedite opcije paketa koristeći realne mjere pakiranja. Nemojte opisivati pretpostavljenu uštedu kombiniranog paketa kao potvrđeni iznos."
+          ]
         }
       ],
       "checklist": [
@@ -1632,7 +1984,7 @@
       },
       "seoTitle": "Kakobuy skladište: Vrijeme i rokovi skladištenja",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-consolidation-packaging",
@@ -1765,6 +2117,13 @@
             "Nepromijenjeni događaj sam po sebi ne identificira uzrok kašnjenja. Prvo potvrdite da pregledavate međunarodni paket, a ne domaću pošiljku prodavatelja. Zatim usporedite datum događaja s trenutnom procjenom odabrane linije i svim obavijestima priloženim pošiljci. Oznaka kreirana prije preuzimanja drugačija je situacija od paketa s kasnijim skeniranjem prijevoznika ili odredišta.",
             "Zatražite od podrške da potvrdi fazu čekanja koristeći broj paketa, rutu, najnoviji događaj i datum. Ako je od vas potrebna akcija, zatražite točne informacije i službeni kanal koji je potreban. Nemojte izmišljati fiksni broj dana nakon kojih se svaki paket gubi i nemojte obećavati datum isporuke s generičke oznake statusa. Odgovor zadržite uz postojeći slučaj kako bi se praćenjem riješilo ono što je još uvijek neriješeno."
           ]
+        },
+        {
+          "heading": "Pripremite koristan zahtjev za podršku za praćenje",
+          "paragraphs": [
+            "Prije kontaktiranja podrške, zabilježite referencu narudžbe ili paketa, posljednji vidljivi status, datum događaja i koje putovanje referenca opisuje. Navedite sljedeći korak koji nedostaje: otprema prodavatelja, pregled skladišta, otprema paketa ili ažuriranje prijevoznika. Ako je dostavljena službena referenca primopredaje, provjerite i taj zapis. Nemojte pretpostavljati da svaka ruta koristi istog lokalnog prijevoznika ili ažurirati raspored.",
+            "Opišite što zapis pokazuje umjesto da pretpostavite uzrok kašnjenja. Domaća i međunarodna dostava imaju različita značenja, dok kreirana naljepnica za otpremu ne utvrđuje uvijek posjed prijevoznika. Pitajte koja strana trenutno posjeduje predmet ili paket i koja se radnja od vas traži. Sačuvajte odgovor s prihvaćenom procjenom dostave i poviješću narudžbi."
+          ]
         }
       ],
       "checklist": [
@@ -1800,7 +2159,7 @@
       },
       "seoTitle": "Vrijeme dostave i status praćenja Kakobuy",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-returns-refunds",
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Otvorite relevantnu narudžbu i identificirajte posljednji dovršeni korak: zahtjev poslan, ugovor s prodavateljem, otpremljeni povrat, prodavateljeva potvrda, potvrđen povrat ili uplaćeni saldo. Zabilježite prikazani datum i iznos. Zatim pitajte podršku o sljedećem nedostajućem koraku s brojem narudžbe i postojećom referencom slučaja. Paket koji se još uvijek vraća prodavatelju i uplaćeni saldo koji čeka isplatu zahtijevaju drugačije praćenje.",
             "Ako je saldo uplaćen, zasebno provjerite zapis o isplati. Potvrdite kanal odredišnog plaćanja, status i sve navedene reference. Nemojte opisivati povrat u skladište kao nedovršen samo zato što novac nije stigao na bankovni račun putem zasebnog isplate. Neka sva navedena vremena budu priložena uz fazu koju opisuju i nemojte tretirati uvjetnu referencu od 7-15 dana kao jamstvo za svaki slučaj."
           ]
+        },
+        {
+          "heading": "Provjerite uvjete kupnje prije korištenja vremenskog okvira povrata",
+          "paragraphs": [
+            "Prije primjene ovih smjernica, provjerite uvjete prikazane za vašu točnu narudžbu. Službeni obrazac za ručnu kupnju trenutno upozorava da određene poveznice trećih strana nemaju postprodajnu uslugu i ne podržavaju povrat novca, otkazivanje ili promjene nakon plaćanja. Opći postupak povrata u skladište stoga nije dostupan za svaku kupnju. Razjasnite neizvjesnu varijantu, cijenu ili uvjet povrata prije plaćanja; nemojte pretpostavljati da fotografija pregleda stvara pravo na povrat.",
+            "Za prihvatljiv odgođeni povrat, vodite kratku evidenciju statusa: zatraženo odobrenje, odgovor prodavatelja, otprema povrata, potvrda prodavatelja i uplata stanja. Zatražite podršku za preostalu fazu i referencu koja potvrđuje dovršetak. Nakon što je stanje uplaćeno, zasebno zabilježite svaki zaseban zahtjev za povlačenje. To sljedeću radnju čini jasnijom od ponovnog pokretanja istog zahtjeva za povrat ili brojanja svake faze od datuma kupnje."
+          ]
         }
       ],
       "checklist": [
@@ -1899,7 +2266,7 @@
       },
       "seoTitle": "Vrijeme povrata novca i povrati u skladište za Kakobuy",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     }
   ],
   "seo": {

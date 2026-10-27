@@ -34,13 +34,13 @@ function compare(value, source, path, locale) {
 for (const locale of locales) {
   const data = JSON.parse(fs.readFileSync(new URL(`${locale}.json`, root), 'utf8'));
   compare(data, base, '', locale);
-  assert.equal(data.articles.length, 16);
-  assert.equal(new Set(data.articles.map(a=>a.slug)).size,16,`${locale}: duplicate article slug`);
+  assert.equal(data.articles.length, 19);
+  assert.equal(new Set(data.articles.map(a=>a.slug)).size,19,`${locale}: duplicate article slug`);
   for(const article of data.articles) {
     assert.ok(article.updatedOn>=article.publishedOn,`${locale}: invalid article dates`);
     assert.equal(article.seoTitle,article.title,`${locale}: localized search title`);
-    if(article.updatedOn==='2026-10-26')assert.ok(article.seoTitle.length<=70,`${locale}: overlong refreshed title ${article.slug}`);
-    if(locale==='en' && article.publishedOn==='2026-10-26')assert.ok(article.sections.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length>=1200,`Incomplete new guide ${article.slug}`);
+    if(article.updatedOn==='2026-10-26'||article.publishedOn==='2026-10-27')assert.ok(article.seoTitle.length<=70,`${locale}: overlong refreshed title ${article.slug}`);
+    if(locale==='en' && article.publishedOn>='2026-10-26')assert.ok(article.sections.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length>=1200,`Incomplete new guide ${article.slug}`);
   }
   assert.equal(data.faq.length, 26);
   assert.equal(data.guide.sections.length, 6);

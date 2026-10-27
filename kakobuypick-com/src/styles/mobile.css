@@ -193,3 +193,24 @@
 @media(max-width:550px){.weight-tool{padding:16px}.weight-inputs{gap:12px}.weight-inputs label{font-size:12px}}
 
 .weight-inputs label{overflow-wrap:anywhere}
+
+/* Short paths from search intent to a useful tool or catalogue. */
+.topic-links { margin: 0 0 24px; padding: 16px; background: #faf7f8; border-radius: 10px; }
+.topic-links h2, .product-guides h2, .article-next h2 { font-size: 18px; margin-bottom: 10px; }
+.article-next { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+.article-next .button { margin-top: 14px; }
+.product-guides { margin-top: 20px; }
+.nav { flex-wrap: wrap; column-gap: 18px; row-gap: 0; }
+.nav a { padding-top: 20px; padding-bottom: 20px; }
+@media (max-width: 1100px) and (min-width: 801px) {
+ .header-inner { flex-wrap: wrap; gap: 0 20px; padding-top: 10px; }
+ .nav { order: 3; width: 100%; flex-basis: 100%; justify-content: flex-start; }
+ .nav a { padding: 12px 0; }
+}
+@media (max-width: 800px) {
+ .nav { gap: 0 12px; justify-content: flex-start; }
+ .nav a { padding: 6px 0; min-height: 36px; max-width: none; }
+ .topic-links { margin-bottom: 16px; padding: 12px; }
+ .topic-links h2, .product-guides h2, .article-next h2 { font-size: 16px; }
+ .article-next { margin-top: 18px; padding-top: 14px; }
+}

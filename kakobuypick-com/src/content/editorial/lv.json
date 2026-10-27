@@ -74,7 +74,10 @@
       "invalid": "Ievadiet pozitīvu skaitli katrā laukā.",
       "note": "Lielāka svara noteikums ir piemērs. Jūsu maršruts var izmantot dažādus norēķinu noteikumus, noapaļošanu vai minimālās maksas.",
       "official": "Atveriet oficiālo piegādes aprēķinātāju"
-    }
+    },
+    "navShipping": "Piegāde",
+    "articleTopics": "Izvēlieties nākamo soli",
+    "productGuides": "Pārbaudiet pirms pasūtīšanas"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "Ko darīt, ja preces saite netiek automātiski ielādēta?",
-      "a": "Oficiālajā pirkšanas ceļvedī ir manuālā pirkuma veidlapa piedāvājumiem, kurus nevar importēt. Ievadiet īsto pārdevēja URL un precīzus preces datus. Neizdomājiet cenu un neizvēlieties līdzīgu preci, nepārbaudot piedāvājumu un vajadzības gadījumā nejautājot iepirkuma darbiniekam.",
+      "a": "Oficiālajā pirkšanas ceļvedī ir iekļauta manuāla pirkuma veidlapa sludinājumiem, kurus nevar importēt. Ievadiet faktisko pārdevēja URL un precīzu preces informāciju. Neizdomājiet cenu un neizvēlieties līdzīga izskata preci, nepārbaudot sludinājumu un nepieciešamības gadījumā nejautājot pircējam. Pirms šo norādījumu piemērošanas pārbaudiet nosacījumus, kas norādīti jūsu konkrētajam pasūtījumam. Oficiālā manuālā pirkuma veidlapa pašlaik brīdina, ka noteiktām trešo pušu saitēm nav pēcpārdošanas servisa un tās neatbalsta atmaksu, atcelšanu vai izmaiņas pēc apmaksas. Tāpēc vispārējais noliktavas atgriešanas process nav pieejams katram pirkumam. Pirms apmaksas noskaidrojiet neskaidru variantu, cenu vai atgriešanas nosacījumu; nepieņemiet, ka pārbaudes fotoattēls rada atgriešanas tiesības.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "Vai piecu dienu atgriešanas noteikums attiecas uz katru preci?",
-      "a": "Nē. Oficiālie atgriešanas noteikumi ir atkarīgi no pārdevēja piekrišanas, preces atbilstības, stāvokļa un laika pēc ievietošanas noliktavā. Dažas kategorijas un mainīts iepakojums ir izslēgti. Nekavējoties pārbaudiet pasūtījuma termiņu un atbilstību; 100 dienu glabāšana nav 100 dienu atgriešanas tiesības.",
+      "a": "Nē. Oficiālie atgriešanas noteikumi ir atkarīgi no pārdevēja pieņemšanas, produkta atbilstības, stāvokļa un laika pēc uzglabāšanas noliktavā. Dažas kategorijas un mainīts iepakojums nav iekļauti. Nekavējoties pārbaudiet pasūtījuma termiņu un atbilstību; 100 dienu uzglabāšana negarantē 100 dienu atgriešanas tiesības. Pirms šo norādījumu piemērošanas pārbaudiet nosacījumus, kas norādīti jūsu konkrētajam pasūtījumam. Oficiālajā manuālajā pirkuma veidlapā pašlaik tiek brīdināts, ka noteiktām trešo pušu saitēm nav pēcpārdošanas servisa un tās neatbalsta atmaksu, atcelšanu vai izmaiņas pēc apmaksas. Tāpēc vispārējais noliktavas atgriešanas process nav pieejams katram pirkumam. Pirms apmaksas noskaidrojiet neskaidru variantu, cenu vai atgriešanas nosacījumu; nepieņemiet, ka pārbaudes fotoattēls rada atgriešanas tiesības.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "Vai Kakobuy ir uzticams? Maksas, QC un preču atgriešana",
+      "seoTitle": "Vai Kakobuy ir uzticams? Maksas, QC un preču atgriešana",
+      "description": "Novērtējiet Kakobuy, izmantojot tā publicēto pirkšanas procesu, pārbaudes ierobežojumus un atgriešanas nosacījumus. Pirms apmaksas pārbaudiet pārdevēju, kopējās izmaksas un pasūtījuma noteikumus.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Ko var pierādīt pieejamie pierādījumi",
+          "paragraphs": [
+            "Kakobuy publicē pirkšanas darbplūsmu, noliktavas pārbaudes vadlīnijas un palīdzības lapas piegādei un pēcpārdošanai. Šie dokumenti paskaidro, kā pakalpojumam ir paredzēts darboties; tie neatkarīgi nepierāda, ka katrs pārdevējs, sūtījums vai atmaksa atbildīs cerībām. Ja meklējat, vai Kakobuy ir uzticams un drošs, atdaliet darbības procesa esamību no konkrēta darījuma uzticamības. Šī rokasgrāmata ir uz dokumentiem balstīts pirkšanas kontrolsaraksts, nevis praktisks tests vai vērtējums, kas balstīts uz pabeigtiem pirkumiem.",
+            "Sāciet ar precīzu lēmumu, kas ir jūsu priekšā. Jums, iespējams, būs jāapstiprina, ka saite pieder paredzētajam pārdevējam, ka izvēlētais izmērs atbilst tabulai vai ka piegāde joprojām ir pieejama. Kopumā pozitīva atsauksme pati par sevi nevar atrisināt nevienu no šīm pārbaudēm. Pierakstiet to, kas ir zināms, no kurienes informācija nākusi un kas paliek neskaidrs. Veiciet pasūtījumu tikai tad, ja neatrisinātie jautājumi ir pieņemami konkrētajam pirkumam, nevis tāpēc, ka lapa visu platformu apzīmē kā uzticamu."
+          ]
+        },
+        {
+          "heading": "Atdaliet platformu, pārdevēju un atklāšanas vietni",
+          "paragraphs": [
+            "Kakobuy apraksta aģenta pakalpojumu, kas iepērkas no trešo pušu pārdevējiem un palīdz organizēt piegādi. Kakobuy Pick ir atsevišķa atklāšanas vietne: tās kataloga saites palīdz jums izpētīt produktus, savukārt pasūtījumi un maksājumi tiek pārvaldīti, izmantojot Kakobuy. Produkts, kas parādās šajā katalogā, nav ieteikums, kas balstīts uz testēšanu, oficiālu zīmola apstiprinājumu vai krājumu solījumu. Izmantojiet sākotnējo sarakstu un pašreizējo pasūtījuma veidlapu, lai pārbaudītu preci, kuru plānojat iegādāties.",
+            "Saglabājiet avota URL un atlasīto variantu kopā. Līdzīgas fotogrāfijas var parādīties dažādos sarakstos, un pazīstams produkta nosaukums nenorāda, ka pārdevējs vai saturs ir identisks. Pēc pirkšanas lapas atvēršanas salīdziniet opcijas tekstu, iekļautās detaļas un atbilstošos mērījumus. Ja kaut kas ir mainījies, pirms apmaksas apstājieties un noskaidrojiet to. Kataloga cena ir atklāšanas atsauce, tāpēc pašreizējā pasūtījumā norādītā summa var atšķirties, mainoties variantam vai pārdevēja cenai."
+          ]
+        },
+        {
+          "heading": "Pirms apmaksas izlasiet pasūtījumam specifiskos nosacījumus.",
+          "paragraphs": [
+            "Manuālajā pirkuma veidlapā pašlaik ir norādīti stingrāki ierobežojumi noteiktām trešo pušu saitēm, tostarp nav pieejams pēcpārdošanas serviss un nav iespējama atmaksa, atcelšana vai modifikācija pēc apmaksas. Šis ir būtisks izņēmums no vispārējiem atgriešanas norādījumiem. Palīdzības raksts par parasto noliktavas atgriešanu nedrīkst tikt uzskatīts par tiesībām uz katru manuāli iesniegtu pirkumu. Izlasiet jūsu faktiskajam pasūtījumam norādītos nosacījumus un lūdziet atbalsta dienestam atrisināt jebkādas neskaidrības pirms to pieņemšanas.",
+            "Saglabājiet noteikumus, kas attiecas uz produkta saiti un izvēlēto variantu. Ja sarakstā nav skaidrības par materiāliem, izmēriem vai iekļautajiem piederumiem, ierobežojošs pasūtījums dod jums mazāk iespēju vēlāk atrisināt vilšanos. Saprātīga atbilde ir iegūt trūkstošo informāciju vai izvēlēties citu pirkuma veidu. Nepieņemiet, ka noliktavas pārbaude radīs atgriešanas tiesības, kuras pasūtījuma nosacījumi izslēdz. Praktiskais jautājums ir, vai varat pieņemt darījumu ar tā noteiktajiem noteikumiem."
+          ]
+        },
+        {
+          "heading": "Aprēķiniet lēmumu, izmantojot pilnas izmaksas",
+          "paragraphs": [
+            "Pirms salīdzināt aģenta pirkumu ar citu pirkšanas iespēju, norādiet preces cenu, vietējo piegādi, starptautisko piegādi un visus izvēlētos papildu pakalpojumus. Pārbaudiet valūtu un faktiski pieprasīto summu maksājuma laikā. Pievilcīga preces cena neatspoguļo pilnas piegādes izmaksas. Oficiālais piegādes aprēķinātājs ir noderīgs plānošanai ar jūsu galamērķa un sūtījuma ievadi, taču agrīnam novērtējumam jāpaliek atsevišķam no galīgā iepakotas pakas piedāvājuma.",
+            "Izmantojiet vienkāršu salīdzināšanas piezīmi ar kolonnu apstiprinātām summām un otru kolonnu neatrisinātām summām. Piemēram, jūs varat zināt izvēlētās preces cenu, bet joprojām trūkst iepakotu izmēru. Atzīmējiet piegādes summu kā provizorisku, nevis ievietojiet precīzu minējumu. Atkārtojiet salīdzinājumu, kad ir pieejami atbilstošie mērījumi. Ja pirkums ir jēgpilns tikai ar zemāko iedomājamo piegādes tāmi, lēmums ir atkarīgs no nenoteiktības, kurai ir jāpievērš uzmanība, pirms tiek ieguldīts vairāk naudas."
+          ]
+        },
+        {
+          "heading": "Izprotiet, uz ko kvalitātes kontroles fotoattēli var un ko nevar atbildēt",
+          "paragraphs": [
+            "Noliktavas fotoattēli var palīdzēt salīdzināt redzamās funkcijas ar izvēlēto pasūtījumu, piemēram, krāsu, daudzumu, izmēru etiķetes un acīmredzamo stāvokli. Ja pastāv konkrēta neskaidrība, pieprasiet mērķtiecīgu skatu. Noderīgs pieprasījums identificē detaļu un lēmumu, ko tā pamatos, nevis neskaidri lūdz labākus attēlus. Pārskatot pierādījumus, atsevišķās kategorijās saglabājiet pārdevēja mārketinga attēlus, publiskas fotogrāfijas no citiem pasūtījumiem un attēlus, kas saistīti ar jūsu pasūtījumu.",
+            "Fotoattēli neapstiprina autentiskumu, ilgtermiņa izturību, komfortu vai elektronikas darbību. Skaidra etiķete var apstiprināt tekstu uz šīs etiķetes, nepierādot katru tai pievienoto apgalvojumu. Ja jums ir svarīgas autentiskas firmas preces, tehniskā veiktspēja vai sertifikācija, izvēlieties pirkšanas kanālu, kas nodrošina atbilstošu verifikāciju. Šis katalogs un tā ceļveži neautentificē produktus. Uztveriet pierādījumu ierobežojumus kā daļu no jūsu atlases procesa, nevis aizpildiet nepilnības ar pieņēmumiem."
+          ]
+        },
+        {
+          "heading": "Novērtējiet piegādes un atmaksas prasības pēc to stadijas",
+          "paragraphs": [
+            "Pārdevēja sūtījums, noliktavas kvīts un starptautiskā sūtījuma sūtījums ir dažādi notikumi. Lasot piegādes atsauksmi, pārbaudiet, kurš notikums uzsāka ziņoto gaidīšanas periodu un vai galamērķis un maršruts atbilst jūsu situācijai. Ātra piegāde noliktavā maz ko pasaka par atlikušo starptautisko ceļojumu. Tāpat pakas kavēšanās pati par sevi nenosaka, kas notika ar cita pircēja pasūtījumu. Konkrēti datēti ieraksti ir noderīgāki nekā universāls apgalvojums par piegādes ātrumu.",
+            "Atmaksas gaitai ir nepieciešams arī definēts posms. Atbilstoša pārdevēja atgriešana var ietvert apstiprinājumu, atgriešanas transportu, pārdevēja atmaksu un kredītu Kakobuy atlikumā. Šī pieejamā atlikuma izņemšana ir atsevišķs process. Pajautājiet, kurš solis ir gaidāms, un saglabājiet attiecīgās atsauces. Neinterpretējiet ziņoto atmaksas ilgumu kā garantētu bankas piegādes datumu un nepieņemiet, ka viena veiksmīga atmaksa ignorē ierobežojošos nosacījumus, kas parādīti citā pasūtījumā. Izmantojiet saistīto atmaksas rokasgrāmatu, lai atšķirtu šos procesus."
+          ]
+        },
+        {
+          "heading": "Izvērtējiet atsauksmes, nepārvēršot tās par garantijām",
+          "paragraphs": [
+            "Meklējiet pierādījumus, kas atbilst izvirzītajam apgalvojumam. Noderīgs apraksts apraksta produktu, pasūtīšanas posmu, attiecīgos datumus un to, kā problēma tika risināta. Reklāmas ekrānuzņēmumā ar pirkuma saiti var būt redzama reāla prece, bet šie jautājumi joprojām var palikt neatbildēti. Partneru saites ir jāatklāj, un to klātbūtne ir iemesls rūpīgi izlasīt pamatā esošos pierādījumus, nevis iemesls automātiski pieņemt vai noraidīt katru apgalvojumu lapā.",
+            "Izvairieties apvienot nesaistītas pieredzes precīzā veiksmes rādītājā. Publiski komentāri nav kontrolēts visu darījumu paraugs, un daži pozitīvi vai negatīvi stāsti nevar pamatot ticamu procentuālo daļu. Ja pierādījumi ir pretrunā, norādiet konkrēto nenoteiktību, ko varat pārbaudīt pats: pašreizējais pārdevēja saraksts, rakstiskā pasūtījuma nosacījumi, pārbaudes apjoms vai pieejamās piegādes iespējas. Ja atsauksme nevar palīdzēt atbildēt uz nevienu no šiem jautājumiem, tā var būt mazāk noderīga jūsu lēmuma pieņemšanai nekā tiešs skaidrojums."
+          ]
+        },
+        {
+          "heading": "Pieņemiet pirkuma lēmumu ar skaidriem pieturas punktiem",
+          "paragraphs": [
+            "Izmantojiet tālāk norādīto kontrolsarakstu pirms apmaksas, pēc preces saņemšanas noliktavā un pirms pakas iesniegšanas. Katrā posmā pierakstiet stāvokli, kas liktu jums apstāties. Piemēri: neapstiprināts variants, neizskaidrojamas izmaksas vai redzama neatbilstība, kas nav atrisināta. Tas pārvērš plašu jautājumu par uzticēšanos lēmumu kopumā, ko jūs faktiski varat pieņemt. Tas arī saglabā ierakstu, ja atbalsta dienestam ir jāsaprot, kā problēma attīstījās.",
+            "Sāciet atklāšanu izklājlapā, pēc tam atveriet sākotnējo sarakstu un oficiālo pirkšanas lapu, lai pabeigtu pārbaudes. Saglabājiet saziņu par pasūtījumu attiecīgajā oficiālajā atbalsta procesā un izvairieties no konta akreditācijas datu kopīgošanas ar neoficiāliem palīgiem. Kakobuy Pick var saņemt komisijas maksu, izmantojot atklātas saistītās saites; tas nemaina šeit aprakstītos ierobežojumus. Neviens ceļvedis nevar garantēt atsevišķa darījuma rezultātu, taču skaidri pierādījumi un reālistiskas cerības padara lēmumu pamatotāku."
+          ]
+        }
+      ],
+      "checklist": [
+        "Apstipriniet pārdevēja saiti, precīzu variantu un piemērojamos pasūtījuma nosacījumus.",
+        "Atdaliet apstiprinātās izmaksas no provizoriskām sūtījumu tāmēm.",
+        "Izmantojiet kvalitātes kontroli redzamām pārbaudēm, neuzskatot to par autentifikāciju.",
+        "Atrisiniet neatrisinātās problēmas pirms sūtījuma apmaksas vai iesniegšanas."
+      ],
+      "table": {
+        "caption": "Praktisks pierādījumu ieraksts",
+        "headers": [
+          "Pārbaude",
+          "Noderīgi pierādījumi"
+        ],
+        "rows": [
+          [
+            "Identitāte un priekšmets",
+            "Sākotnējā pārdevēja URL, precīzs variants un pašreizējā pasūtījuma lapa"
+          ],
+          [
+            "Pasūtījuma nosacījumi",
+            "Piemērojamie atcelšanas, atgriešanas un manuālās iegādes noteikumi"
+          ],
+          [
+            "Izmaksas un piegāde",
+            "Apstiprinātas maksas, provizoriskas piegādes ievades un izvēlētais maršruts"
+          ],
+          [
+            "Pārbaude un atbalsts",
+            "Pasūtījumam specifiski fotoattēli, neatrisināta problēma un atbalsta atsauce"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Kā atrast un salīdzināt fotoattēlus",
+      "seoTitle": "Kakobuy QC Finder: Kā atrast un salīdzināt fotoattēlus",
+      "description": "Atrodiet sava Kakobuy pasūtījuma fotoattēlus un novērtējiet publiskos kvalitātes kontroles rezultātus, izmantojot sākotnējo pārdevēja saiti, variantu un attēla datumu. Uzziniet, ko pārbaudīt, ja trūkst fotoattēlu.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Sāciet ar preci un nepieciešamā fotoattēla veidu",
+          "paragraphs": [
+            "Kakobuy kvalitātes kontroles meklētāja meklēšana var nozīmēt fotoattēlu atrašanu savam pasūtījumam vai produkta izpēti pirms pirkšanas. Tie ir dažādi uzdevumi. Lai veiktu savu pirkumu, sāciet sava oficiālā konta pasūtījumu vai noliktavas sadaļā un atveriet atbilstošo preci. Pirms pirkuma izpētes publisks fotoattēlu rezultāts ir tikai atsauce no cita saraksta vai pasūtījuma, līdz jūs varat to saskaņot ar precīzu pārdevēju un variantu, kuru apsverat.",
+            "Kakobuy Pick parāda produktu atsauces fotoattēlus, ko nodrošina kataloga avots. Tas neapzīmē šos attēlus kā pārbaudītu noliktavas kvalitātes kontroli un nenodrošina publisku pasūtījumu fotoattēlu datubāzi. Šeit norādītās darbības palīdz atrast un novērtēt pierādījumus; tās neatbloķē privātas fotogrāfijas un negarantē, ka katrai precei ir publisks attēls. Paturiet prātā šo atšķirību, ja meklēšana atgriež pievilcīgus attēlus, bet nesniedz pasūtījuma kontekstu, uzņemšanas datumu vai sākotnējo saraksta atsauci."
+          ]
+        },
+        {
+          "heading": "Saglabājiet sākotnējo pārdevēja saiti pirms meklēšanas",
+          "paragraphs": [
+            "Kopējiet sākotnējo saraksta URL, ieskaitot tirgus un preces identifikatoru, savā izpētes piezīmē. Kataloga iekšējais lapas numurs ne vienmēr ir pārdevēja preces numurs. Meklēšanas rīki, kas sagaida sākotnējo pārdevēja saiti, var neizdoties vai atgriezt nesaistītus rezultātus, ja tā vietā tiek norādīts iekšējais kataloga URL. Ja jums ir tikai īsa saite, atveriet sludinājumu tā parastajā publiskajā lapā un pārbaudiet galīgo produkta informāciju, pirms izmantojat to kā atsauci.",
+            "Ierakstiet arī izvēlēto krāsu, izmēru, materiāla izvēli un jebkuru iepakojuma vai aksesuāru opciju. Sludinājumu var koplietot vairāki varianti, savukārt atsevišķi pārdevēji var atkārtoti izmantot ļoti līdzīgas fotogrāfijas. Tāpēc produkta nosaukuma vai vāka attēla saskaņošana ir vājāks pierādījums nekā sākotnējās saites un precīzā varianta saskaņošana. Ja saite vairs neielādējas, saglabājiet esošās piezīmes un lūdziet precizējumus; neaizstājiet to klusībā ar līdzīga izskata sludinājumu un nepieņemiet, ka fotogrāfijas joprojām ir atbilstošas."
+          ]
+        },
+        {
+          "heading": "Atrodiet ar savu pasūtījumu saistītos fotoattēlus",
+          "paragraphs": [
+            "Oficiālais pirkšanas ceļvedis pēc pārbaudes un uzglabāšanas novirza lietotājus uz konta pasūtījumiem un noliktavas zonām. Atrodiet pasūtījumu, izmantojot pirkumam pievienoto atsauci, pēc tam salīdziniet tā statusu ar attēla pieejamību. Pārdevēja nosūtīšana nenozīmē, ka noliktavas pārbaude ir pabeigta. Ja prece ir pienākusi, bet paredzētie attēli nav redzami, pārbaudiet pasūtījuma ziņojumus un jautājiet atbalsta dienestam, vai šai precei joprojām ir gaidāma saņemšana, pārbaude vai attēla publicēšana.",
+            "Izmantojiet oficiālo konta saskarni, nevis sniedziet savu pieteikšanās informāciju trešās puses meklētājam. Lūdzot palīdzību, identificējiet pasūtījumu un trūkstošo skatu, nepublicējot personīgās adreses uzlīmes vai konta ekrānuzņēmumus atklātā forumā. Precīzs pieprasījums varētu paskaidrot, ka izvēlētais apģērba izmērs nav skaidrs, jo etiķete nav redzama. Saglabājiet atbalsta atbildi kopā ar pasūtījuma ierakstu, lai varētu atšķirt apstrādes atjauninājumu no apstiprinājuma, ka pieprasītā pārbaude faktiski ir pabeigta."
+          ]
+        },
+        {
+          "heading": "Pirms secinājumu izdarīšanas salīdziniet publiskos rezultātus",
+          "paragraphs": [
+            "Jebkuram publiskam fotoattēla rezultātam pārbaudiet pārdevēja saiti, izvēlēto variantu, uzņemšanas datumu, ja tas ir pieejams, un to, vai attēlā redzamā prece ir aprakstīta kā piederoša faktiskam pasūtījumam. Nesens cita izmēra fotoattēls joprojām var palīdzēt ar redzamu konstrukciju, taču tas nav jūsu izvēlētā izmēra mērījumu ieraksts. Vecāks fotoattēls var atspoguļot atšķirīgu ražošanas partiju vai saraksta konfigurāciju. Ja rezultātam trūkst konteksta, reģistrējiet nenoteiktību, nevis atjauniniet attēlu uz pārbaudītu pierādījumu.",
+            "Salīdziniet vairākas atšķirīgas detaļas, piemēram, kabatu izvietojumu, aizdares veidu, iekļautās detaļas un etiķetes izkārtojumu. Šo detaļu saskaņošana var padarīt atsauci atbilstošāku, taču tā joprojām nepierāda, ka nākamais pasūtījums būs identisks. Ja publiskais attēls ir pretrunā ar pārdevēja pašreizējo izvēles tekstu, pirms pirkšanas noskaidrojiet atšķirību. Drošākais secinājums varētu būt tāds, ka pieejamo attēlu skaits ir nepietiekams, nevis tāds, ka fotogrāfija, kas izskatās vispārliecinošāk, noteikti ir pareizā."
+          ]
+        },
+        {
+          "heading": "Pārveidojiet trūkstošu detaļu par noderīgu foto pieprasījumu",
+          "paragraphs": [
+            "Noderīgs foto pieprasījums norāda precīzu preces daļu un to, kā tā būtu jāparāda. Žaketes gadījumā tas varētu nozīmēt pilnu rāvējslēdzēja savienojumu vai krūšu apkārtmēru, kas izmērīts plakaniski starp norādītajiem punktiem. Apavu pāra gadījumā tas varētu nozīmēt gan izmēru etiķetes, gan skaidru zoles skatu. Pirms pieņemat, ka tas ir iekļauts parastajā pārbaudē, pajautājiet, vai pieprasītais skats vai mērījums ir pieejams un vai par to ir jāmaksā.",
+            "Izvairieties lūgt daudz gandrīz identisku fotogrāfiju, kas nevar atrisināt lēmumu. Ja problēma ir mērīšanas metode, skaidri pieprasiet šo metodi. Ja problēma ir par to, kuri piederumi ir iekļauti, pieprasiet kopā izkārtotas daļas. Skaidrs mērķis atvieglo atbildes novērtēšanu. Saglabājiet atšķirību starp fotoattēlu, mērījumu un funkcionālo testu: piemēram, darbināmas ierīces fotogrāfija neuzrādītu visas funkcijas vai tās ilgtermiņa uzticamību."
+          ]
+        },
+        {
+          "heading": "Lasiet fotoattēlus ar konsekventiem salīdzināšanas nosacījumiem",
+          "paragraphs": [
+            "Salīdzinot izmērus, izmantojiet tos pašus atskaites punktus. Plakans apģērba platums, ķermeņa apkārtmērs un iepakojuma ārējais izmērs raksturo dažādas lietas. Pirms skaitļa uztveršanas kā izmēra atbilstības pārbaudiet mērvienības un sākuma un beigu punktus. Perspektīva un vaļīgi novietota mērlente var apgrūtināt attēla interpretāciju. Ja pierādījumi ir neskaidri, meklējiet skaidrojumu, nevis veidojiet precīzu izmēru ieteikumu, pamatojoties uz nenoteiktu mērījumu.",
+            "Krāsa un tekstūra ir atkarīga arī no apgaismojuma, kameras iestatījumiem un displeja. Atšķirība starp pārdevēja fotoattēlu un noliktavas fotoattēlu var attaisnot rūpīgāku izpēti, taču tā automātiski nenosaka precīzu cēloni. Sazinoties ar atbalsta dienestu, aprakstiet redzamo problēmu konkrēti. Fotoattēli var palīdzēt stāvokļa vai varianta pārbaudē; tie nevar patstāvīgi pierādīt šķiedru sastāvu, autentiskumu, komfortu, izturību vai slēptu defektu neesamību. Izmantojiet speciālo kvalitātes kontroles rokasgrāmatu, lai iegūtu pilnīgāku pārbaudes sarakstu."
+          ]
+        },
+        {
+          "heading": "Nekavējoties risiniet trūkstošos rezultātus un neatbilstības",
+          "paragraphs": [
+            "Nepublisks kvalitātes kontroles rezultāts pats par sevi nepierāda, ka sludinājums ir jauns, nedrošs vai nepieejams. Tas var vienkārši nozīmēt, ka meklētajā avotā nav publicēts atbilstošs attēls. Atgriezieties pie pārdevēja informācijas tiešsaistē un izlemiet, uz kuriem jautājumiem ir jāatbild pirms pirkuma. Pēc preces saņemšanas noliktavā neatbilstība jūsu pasūtījuma fotoattēlos ir tiešāka problēma: saglabājiet attēlus, norādiet izvēlēto opciju un jautājiet atbalsta dienestam par piemērojamo nākamo soli.",
+            "Pirms pieņemat, ka atgriešana ir iespējama, pārbaudiet faktiskos pasūtījuma nosacījumus. Manuālajā pirkuma veidlapā ir stingrāki ierobežojumi noteiktām trešo pušu saitēm, tostarp ierobežojumi attiecībā uz atcelšanu, atmaksu un pēcpārdošanas pakalpojumiem. Atbilstīgiem parastajiem pasūtījumiem atgriešanas lēmumam joprojām ir savs termiņš un nosacījumi. Gaidot vairāk publisku fotoattēlu, šis termiņš netiek pagarināts. Vispirms atrisiniet ar pasūtījumu saistīto problēmu un saglabājiet preci, etiķetes un iepakojumu tādā stāvoklī, kādā tas ir nepieciešams jebkuram pieejamam atgriešanas procesam."
+          ]
+        },
+        {
+          "heading": "Saglabājiet kompaktu ierakstu, kas pamato nākamo lēmumu",
+          "paragraphs": [
+            "Izmantojiet zemāk esošo salīdzināšanas tabulu kā pierādījumu ierakstu, nevis vērtēšanas tabulu. Atdaliet to, kas ir redzami apstiprināts, no tā, kas paliek nezināms. Piemēram, etiķetes fotoattēls var apstiprināt izvēlētā izmēra tekstu, vienlaikus atstājot lietošanas ērtumu neskaidru. Piederumu izkārtojums var apstiprināt daudzumu, vienlaikus atstājot funkcionalitāti nepārbaudītu. Šī atdalīšana neļauj izmantot pārliecinošu fotoattēlu, lai pamatotu apgalvojumus, kurus tas faktiski nevar pierādīt.",
+            "Kad nepieciešamās pārbaudes ir pabeigtas, pārejiet pie nākamā atbilstošā uzdevuma: izmēra interpretācija, atgriešanas pieprasījums vai sūtījuma plānošana. Saglabājiet sākotnējo saiti un noderīgos mērījumus turpmākai atsaucei, bet vēlreiz pārbaudiet sarakstu, veicot pasūtījumu, jo krājumi un opcijas var mainīties. Ja publicējat savu atsauksmi, noņemiet personas identifikatorus un aprakstiet precīzu pierādījumu apjomu. Skaidrs, ierobežots novērojums ir noderīgāks citam pircējam nekā nepamatots apgalvojums, ka pārdevējs vai produkts ir universāli drošs.",
+            "Pirms pieņemt rezultātu kā atbilstību, uzrakstiet īsu paziņojumu par to, ko tas maina jūsu lēmumā. Ja fotoattēlā ir tikai atkārtots pārdevēja reklāmas attēls, tas pievieno maz neatkarīgas informācijas. Ja tajā ir redzams pieprasītais jūsu pasūtījuma mērījums, tas var atrisināt konkrētu atbilstības nenoteiktību. Gan pierādījumus, gan to ierobežojumus saglabājiet vienā piezīmē, lai secinājums vēlāk būtu saprotams."
+          ]
+        }
+      ],
+      "checklist": [
+        "Saglabājiet sākotnējo pārdevēja saiti atsevišķi no kataloga lapas numura.",
+        "Izmantojiet savu oficiālo kontu sava pasūtījuma fotoattēliem.",
+        "Pirms paļauties uz publisku attēlu, salīdziniet variantu un kontekstu.",
+        "Atrisiniet redzamās neatbilstības piemērojamo pasūtījuma nosacījumu ietvaros."
+      ],
+      "table": {
+        "caption": "Fotoattēla salīdzināšanas ieraksts",
+        "headers": [
+          "Pārbaude",
+          "Noderīgi pierādījumi"
+        ],
+        "rows": [
+          [
+            "Saraksta atbilstība",
+            "Sākotnējais tirgus URL un pārdevēja preces identifikators"
+          ],
+          [
+            "Varianta atbilstība",
+            "Izvēlētā krāsa, izmērs, iekļautās daļas un redzamās atšķirības"
+          ],
+          [
+            "Fotoattēla konteksts",
+            "Jūsu pašu pasūtījums vai publiska atsauce; datums un trūkstošais konteksts"
+          ],
+          [
+            "Lēmums",
+            "Redzams rezultāts, atlikušā nenoteiktība un turpmākā darbība"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Itālija: pasūtīšana, piegādes izmaksas un izsekošana",
+      "seoTitle": "Kakobuy Itālija: pasūtīšana, piegādes izmaksas un izsekošana",
+      "description": "Plānojiet Kakobuy pasūtījumu uz Itāliju: pārbaudiet pārdevēja saites, novērtējiet pilnu sūtījuma cenu, pārbaudiet pieejamos maršrutus un sekojiet pareizajam izsekošanas posmam.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Plānojiet pasūtījumu uz Itāliju no visa ceļojuma",
+          "paragraphs": [
+            "Pasūtījums, izmantojot Kakobuy, piegādei uz Itāliju ietver pārdevēja pirkumu, pārvietošanu uz noliktavu, pārbaudi un atsevišķu starptautisku sūtījumu. Preces cena vien neapraksta visu ceļojumu. Sāciet, apstiprinot preci, un pēc tam pārbaudiet, vai pašreizējās piegādes iespējas pieņem jūsu galamērķi un saturu. Šajā ceļvedī ir paskaidroti lēmumi, kas jāpieņem; tas nesola konkrētu maršrutu, piegādes datumu vai fiksētu piegādes cenu katrai Itālijas adresei.",
+            "Ja pētāt, kā Kakobuy darbojas Itālijā, saglabājiet īsu pasūtījuma plānu ar pārdevēja saiti, izvēlēto variantu, paredzēto piegādes adresi un neatbildētiem jautājumiem. Pirms apmaksas izlemiet, vai pirkumam ir stingrs termiņš. Sūtījums, kas paredzēts konkrētam notikumam, ir jāpieskata vairāk nekā pasūtījums ar elastīgu piegādes datumu, jo pārdevēja sagatavošana un apstrāde noliktavā notiek pirms starptautiskā tranzīta sākuma. Salīdziniet alternatīvas, izmantojot visu procesu, nevis atsevišķu tranzīta tāmi."
+          ]
+        },
+        {
+          "heading": "Pārbaudiet pārdevēja sarakstu un izvēlēto variantu",
+          "paragraphs": [
+            "Izmantojiet izklājlapu, lai atrastu kandidātus, pēc tam atveriet sākotnējo pārdevēja sarakstu un oficiālo pirkšanas lapu. Apstipriniet precīzu krāsu, izmēru, modeli un iekļautās preces. Produktu nosaukumus un fotoattēlus var atkārtoti izmantot dažādos sarakstos, tāpēc saglabājiet sākotnējo URL ar izvēlēto opciju. Ja automātiskā importēšana neizdodas, izmantojiet pašreizējo oficiālo manuālās iegādes procesu tikai pēc tam, kad esat izlasījis tā nosacījumus un sniedzis precīzu informāciju. Līdzīgs attēls nav uzticams sākotnējā saraksta aizstājējs.",
+            "Pievērsiet īpašu uzmanību ierobežojošiem manuālās pasūtīšanas noteikumiem. Pašreizējā manuālā veidlapa brīdina, ka noteiktiem trešo pušu pirkumiem nav pieejams pēcpārdošanas serviss, un tos nevar atmaksāt, atcelt vai mainīt pēc apmaksas. Vispārīgie noliktavas atgriešanas norādījumi neatceļ šos nosacījumus. Ja neesat pārliecināts par izmēru tabulu, materiālu vai aksesuāru, atrisiniet to pirms pasūtījuma pieņemšanas. Lēmumam jābūt balstītam uz šim pirkumam norādītajiem noteikumiem, nevis uz pieņēmumu, ka katru preci var atgriezt vēlāk."
+          ]
+        },
+        {
+          "heading": "Salīdziniet izmērus, izmantojot produkta mērīšanas metodi",
+          "paragraphs": [
+            "Itāļu apģērba vai apavu izmērs, ko parasti valkājat, nav pietiekams, lai izvēlētos variantu no nepazīstama pārdevēja. Salīdziniet konkrētā sludinājuma tabulu ar preci, kas jums der, un pierakstiet mērīšanas metodi. Plakanā apģērba izmēri un ķermeņa izmēri atšķiras. Apģērbam nosakiet izmērus, kas ir svarīgi paredzētajam piegriezumam un slāņošanai. Apaviem nošķiriet pēdas garumu, zolītes garumu un zoles garumu, nevis uzskatiet katru garuma numuru par savstarpēji aizvietojamu.",
+            "Ja tabulas trūkst vai tā ir neskaidra, pirms pasūtīšanas lūdziet paskaidrojumus. Pēc preces saņemšanas noliktavā mērķtiecīgs mērījums var palīdzēt atrisināt neatbildētu jautājumu, ņemot vērā pārbaudes pakalpojumu un jebkādu maksu. Etiķetes fotoattēls var pārbaudīt izvēlēto etiķeti, bet negarantē komfortu. Izmantojiet zemāk esošo izmēru ceļvedi strukturētai salīdzināšanai un saglabājiet savus mērījumus turpmākajiem pirkumiem. Izvairieties no universāla norādījuma izvēlēties lielāku izmēru, jo tas var mainīt garumu un proporcijas, neatrisinot sākotnējo piemērotības problēmu."
+          ]
+        },
+        {
+          "heading": "Novērtēt piegādes izmaksas, ievadot galamērķi un sūtījumu",
+          "paragraphs": [
+            "Atveriet oficiālo aprēķinātāju un izvēlieties Itāliju kā galamērķi, ja šī opcija ir pieejama. Ievadiet atbilstošo preču veidu, svaru un izmērus, pēc tam izlasiet ierobežojumus un norēķinu informāciju atgrieztajiem maršrutiem. Tukšs rezultāts ir iemesls pārbaudīt ievades datus vai lūgt atbalsta dienestam, nevis pieņemt, ka reklamētais maršruts pieņems sūtījumu. Pieejamība var būt atkarīga no satura un iepakotā sūtījuma, tāpēc pirms galīgās iesniegšanas vēlreiz pārbaudiet.",
+            "Pirms preces nonāk noliktavā, norādiet savus izmērus un svaru kā aptuvenus. Atjauniniet salīdzinājumu, kad kļūst pieejama izmērītā informācija, un vēlreiz, ja mainās iepakojums. Svara salīdzinājums šīs vietnes piegādes lapā parāda faktisko un tilpuma svaru; tas nav tiešraides cenu kalkulators. Izmantojiet maršruta norādīto dalītāju un norēķinu metodi, nevis piemērojiet universālu formulu katram pārvadātājam. Vieglāka prece joprojām var aizņemt pietiekami daudz vietas, lai mainītu piegādes aprēķinu."
+          ]
+        },
+        {
+          "heading": "Izveidojiet izmaksu aprēķinu, neizgudrojot pilnu cenu",
+          "paragraphs": [
+            "Atsevišķi uzskaitiet izvēlētās preces cenu, vietējo piegādi, starptautisko piegādi un papildu pakalpojumus. Pārbaudiet maksājuma valūtu un pašreizējā maksājuma metodes pieprasīto summu. Visas maršruta noteikumos aprakstītās maksas saglabājiet atsevišķos ierakstos un izvairieties no maksas divkāršas uzskaitīšanas tikai tāpēc, ka dažādās palīdzības lapās tiek izmantotas dažādas etiķetes. Novērtējums dolāros nav jāuzskata par garantētu eiro debetu. Salīdziniet apstiprinātās summas, kas parādītas faktiskā darījuma laikā.",
+            "Piegādei uz Itāliju neinterpretējiet maršruta nosaukumu vai reklāmas aprakstu kā pierādījumu tam, ka ir iekļautas visas iespējamās piegādes maksas. Izlasiet, ko pašreizējā piedāvājumā ir skaidri ietverts, un lūdziet skaidrojumu, ja formulējums ir neskaidrs. Šajā rokasgrāmatā nav publicēta nodokļu likme, muitas slieksnis vai garantēts muitošanas rezultāts. Noderīgā budžetā ir norādīts, kas ir iekļauts, kas nav iekļauts un kas paliek nezināms, ļaujot jums izlemt, vai kopsumma joprojām ir pieņemama pirms starptautiskās piegādes."
+          ]
+        },
+        {
+          "heading": "Pirms preču apvienošanas pārskatiet pārbaudes rezultātus",
+          "paragraphs": [
+            "Kad preces ir noliktavā, salīdziniet ar savu pasūtījumu saistītās fotogrāfijas ar izvēlēto variantu. Pārbaudiet redzamo stāvokli, daudzumu un jums svarīgos mērījumus. Publiski atsauces fotoattēli no cita pasūtījuma nevar aizstāt šo pārskatu. Ja kaut kas šķiet nepareizi, saglabājiet attēlu un pasūtījuma informāciju un nekavējoties sazinieties ar atbalsta dienestu. Atrisiniet problēmu, pirms apvienojat preci ar citiem pirkumiem vai pieprasāt starptautisku piegādi, kamēr vēl ir pieejamas piemērojamās iespējas.",
+            "Ja plānojat apvienot apģērbu, apavus un aksesuārus, salīdziniet iegūto sūtījumu ar maršruta ierobežojumiem un iepakošanas prasībām. Nevajadzīgā iepakojuma noņemšana var ietekmēt apjomu, taču aizsardzība un jebkādi atgriešanas nosacījumi joprojām ir svarīgi. Jautājiet par ierosināto iepakojumu, nevis pieņemot, ka saspiešana vai kastes izņemšana atbilst katrai precei. Noliktavas uzglabāšanas termiņš atšķiras no pārdevēja atgriešanas termiņa, tāpēc gaidīšana uz citu preci nesaglabā tās pašas pēcpārdošanas iespējas bezgalīgi."
+          ]
+        },
+        {
+          "heading": "Izsekojiet posmu, kas faktiski attiecas",
+          "paragraphs": [
+            "Saglabājiet pirkuma pasūtījuma atsauces un starptautisko paku atsauces atsevišķi. Vietējais izsekošanas notikums, kas atzīmēts kā piegādāts, var attiekties uz saņemšanu noliktavā, nevis piegādi Itālijā. Starptautiskā izsekošana kļūst svarīga iesniegtajai pakai un tās pārvadātāja ceļojumam. Ja atjauninājums šķiet aizkavēts, reģistrējiet pēdējo notikumu, tā datumu un izsekošanas atsauci, ko pārbaudāt. Jautājiet atbalsta dienestam, kurš posms ir gaidāms, nevis katru kluso periodu uzskatiet par viena veida kavēšanos.",
+            "Ievērojiet jebkuru nodošanas vai vietējās piegādes atsauci, kas sniegta oficiālajā paku reģistrā. Nepieņemiet, ka konkrēts Itālijas pārvadātājs apstrādās katru maršrutu vai ka katram sūtījumam ir jābūt jaunam izsekošanas numuram. Ja norādītais piegādes laiks ir pagājis vai reģistrā ir redzama problēma, lūdzot palīdzību, norādiet precīzu pakas atsauci un pēdējo redzamo notikumu. Saglabājiet pieņemto piegādes tāmi, lai varētu atšķirt tās norādīto darbības jomu no iepriekšējās plānošanas tāmes."
+          ]
+        },
+        {
+          "heading": "Sagatavojieties piegādei un saglabājiet pierādījumus.",
+          "paragraphs": [
+            "Pirms pakas iesniegšanas pārbaudiet, vai saņēmēja vārds, uzvārds, adrese, pasta indekss un kontaktinformācija ir precīza. Piegādes laikā nekavējoties pārbaudiet ārējo iepakojumu un saturu. Ja ir redzami bojājumi vai trūkst kāda prece, saglabājiet iepakojumu un atbilstošās fotogrāfijas un nekavējoties sazinieties ar atbilstošo atbalsta kanālu. Izlasiet pašreizējās pakas saņemšanas un pretenzijas prasības. Pakas fotogrāfija var pamatot ziņojumu, taču tā pati par sevi nerada tiesības uz kompensāciju.",
+            "Pēc veiksmīgas piegādes saglabājiet noderīgus apģērba izmērus, pakas ievades datus un maršruta aprakstu salīdzināšanai. Uztveriet tos kā šī pasūtījuma ierakstus, nevis pastāvīgus solījumus nākamajam. Veicot atkārtotu pasūtījumu, vēlreiz pārbaudiet pārdevēju, pieejamos variantus un pašreizējo piegādes cenu piedāvājumu. Sāciet ar zemāk esošajām kategoriju saitēm, lai atklātu informāciju, pēc tam izmantojiet piegādes, izsekošanas un atmaksas rokasgrāmatas konkrētiem lēmumiem, uz kuriem tās attiecas. Tas ļauj produktu pārlūkošanu savienot ar praktiskām pārbaudēm, nevis paļauties uz vienu plašu ieteikumu.",
+            "Vienkāršam plānošanas piemēram salīdziniet gatava apģērba nosūtīšanu tagad ar gaidīšanu apaviem, kas vēl nav nonākuši noliktavā. Reģistrējiet neatrisināto pārdevēja sūtījumu, iespējamās iepakojuma izmaiņas un atsevišķos atgriešanas termiņus. Nepieņemiet, ka gaidīšana ietaupīs naudu, līdz apvienotās pakas vērtību varēs novērtēt, izmantojot reālistiskus ievades datus. Labāka izvēle ir atkarīga no pašreizējās cenas, aizsardzības vajadzībām un jūsu termiņa, nevis tikai no sūtījumā esošo vienību skaita."
+          ]
+        }
+      ],
+      "checklist": [
+        "Apstipriniet precīzu sarakstu un piemērojamos manuālās pasūtīšanas nosacījumus.",
+        "Vēlreiz pārbaudiet Itālijas maršruta pieejamību, izmantojot faktiskos sūtījumu ievades datus.",
+        "Atdaliet preces cenu, maksājuma summu un piegādes cenu piedāvājumu.",
+        "Saglabājiet pasūtījuma un pakas izsekošanas ierakstus atsevišķi un nekavējoties pārskatiet piegādi."
+      ],
+      "table": {
+        "caption": "Itālijas pasūtījuma plānošanas ieraksts",
+        "headers": [
+          "Pārbaude",
+          "Noderīgi pierādījumi"
+        ],
+        "rows": [
+          [
+            "Pirms pirkuma",
+            "Pārdevēja URL, precīzs variants, izmēra metode un pasūtījuma nosacījumi"
+          ],
+          [
+            "Pirms nosūtīšanas",
+            "Itālijas galamērķis, saturs, iepakotie izmēri un pieejamais piedāvājums"
+          ],
+          [
+            "Tranzīta laikā",
+            "Sūtījuma atsauce, pēdējais datums un jebkāda oficiāla nodošanas informācija"
+          ],
+          [
+            "Piegādes laikā",
+            "Sūtījuma stāvoklis, saturs un piemērojamās ziņošanas prasības"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "Oficiālais ceļvedis īpaši brīdina par minimāliem pirkšanas daudzumiem 1688. Norādītā cena var būt atkarīga no daudzuma vai varianta. Pirms salīdzināt ar viena gabala piedāvājumu citur, pārbaudiet, vai iecerētais pasūtījums atbilst pārdevēja prasībai. Pārbaudiet arī, vai daudzums maina iekšzemes piegādes cenu.",
             "Pirms maksājat, pārskatiet visu pasūtījuma kopsavilkumu: pareizā prece, variants, daudzums un pilnas pirkuma izmaksas. Saglabājiet pasūtījuma numuru un piezīmes. Ja vēlāk rodas problēma, šie dati palīdz atbalstam salīdzināt pirkuma pieprasījumu ar saņemto preci."
           ]
+        },
+        {
+          "heading": "Izlasiet nosacījumus manuālajā pirkuma veidlapā",
+          "paragraphs": [
+            "Pirms šo norādījumu piemērošanas pārbaudiet nosacījumus, kas norādīti jūsu konkrētajam pasūtījumam. Oficiālajā manuālajā pirkuma veidlapā pašlaik tiek brīdināts, ka noteiktām trešo pušu saitēm nav pēcpārdošanas servisa un tās neatbalsta atmaksu, atcelšanu vai izmaiņas pēc apmaksas. Tāpēc vispārīgais noliktavas atgriešanas process nav pieejams katram pirkumam. Pirms apmaksas noskaidrojiet neskaidru variantu, cenu vai atgriešanas nosacījumu; nepieņemiet, ka pārbaudes fotoattēls rada atgriešanas tiesības."
+          ]
         }
       ],
       "checklist": [
@@ -1176,7 +1507,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy saites: atveriet sludinājumus, pārbaudiet variantus un pasūtiet"
     },
     {
@@ -1320,6 +1651,13 @@
             "Džemperim ar kapuci vai futbola kreklam blakus pārdevēja vērtībām pierakstiet atsauces apģērba gabala krūšu platumu un garumu. Atzīmējiet jebkuru atšķirību, ko patiešām vēlaties, piemēram, vairāk vietas slāņošanai vai īsāku ķermeni. Pirms piedurkņu numuru salīdzināšanas pārbaudiet piedurkņu konstrukciju. Pazeminātiem pleciem un parastai plecu vīlei var būt atšķirīgi sākuma punkti, tāpēc identiski skaitļi ne vienmēr nodrošina identisku garumu.",
             "Ja pārdevējs sniedz tikai ieteikumu par augumu un svaru, pieprasiet apģērba izmērus, ja svarīga ir piemērotība. Apaviem jautājiet, kāds garums ir norādīts tabulā un vai ir pieejams konkrētam modelim atbilstošs platuma apraksts. Pirms pasūtīšanas pierakstiet neatrisināto mērījumu; pēc tam, ja nepieciešams, pieprasiet precīzu pārbaudi noliktavā. Mērķis ir skaidrs salīdzinājums, nevis universāla konvertēšana no viena zīmola izmēra burta uz citu."
           ]
+        },
+        {
+          "heading": "Izmantojiet mērījumu atšķirību, lai pieņemtu konkrētu lēmumu",
+          "paragraphs": [
+            "Apsveriet atsauces apģērbu ar ērtu krūšu vietu, bet piedurknēm, kas šķiet pārāk īsas. Salīdziniet krūšu un piedurkņu atšķirības atsevišķi ar pārdevēja tabulu; nesamaziniet lēmumu līdz vienam norādījumam par lielāku izmēru. Pārliecinieties, ka abiem piedurkņu mērījumiem tiek izmantots viens un tas pats sākumpunkts. Ja tabulā tiek izmantota cita metode, pirms skaitļu uzskatīšanas par salīdzināmiem, pieprasiet trūkstošo mērījumu.",
+            "Saglabājiet atlasīto variantu blakus mērījumu piezīmei un salīdziniet to vēlreiz, kad tiek saņemti pasūtījumam specifiski attēli. Atbilstoša izmēra etiķete neapstiprina apģērba izmērītos izmērus. Ja mērījums ir būtisks, jautājiet, vai noliktava var nodrošināt precīzu pārbaudi un vai tai ir jāmaksā. Iesniedziet pieprasījumu pietiekami agri, lai rīkotos saskaņā ar piemērojamajiem pirkuma nosacījumiem."
+          ]
         }
       ],
       "checklist": [
@@ -1354,7 +1692,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy izmēru ceļvedis: apģērbu un apavu tabulas"
     },
     {
@@ -1409,6 +1747,13 @@
             "Pirms noliktavas mērīšanas izveidojiet vieglu un sarežģītu plānošanas scenāriju un atzīmējiet, kuras vērtības ir aplēses. Iekļaujiet iepakojumu un visu paredzēto saturu. Izmantojiet abus scenārijus oficiālajā tāmē ar vienu un to pašu galamērķi un preču veidu. Ja izmaksas mainās pietiekami, lai ietekmētu jūsu pirkuma lēmumu, gaidiet labāku informāciju, nevis sniedziet aptuvenu produkta svaru kā precīzu piegādes piedāvājumu.",
             "Šajā lapā sniegtais svara salīdzinājums ilustrē tikai aprēķinu. Tajā nav zināms pašreizējais maršruta tarifs, rēķina pieaugumi, minimālā maksa, piemaksa vai satura ierobežojumi. Izlasiet šos nosacījumus oficiālajā piedāvājumā un atjauniniet ievades datus pēc iepakošanas. Precīzs reizināšanas rezultāts joprojām var radīt nepiemērotu budžetu, ja izvēlētais dalītājs vai pakas izmēri neatbilst faktiskajam pakalpojumam."
           ]
+        },
+        {
+          "heading": "Salīdziniet piedāvājumus, izmantojot vienādus sūtījumu pieņēmumus",
+          "paragraphs": [
+            "Salīdzinot maršrutus, saglabājiet nemainīgu galamērķi, preču veidu, iepakoto svaru un izmērus. Pierakstiet, vai katrā piedāvājumā ir iekļauti pakalpojumi, kurus plānojat izvēlēties, un ņemiet vērā jebkādu noapaļošanu vai maršrutam noteikto minimālo maksu. Salīdzinājums, izmantojot neiepakotu svaru vienā maršrutā un iepakotu svaru citā maršrutā, var radīt šķietamu ietaupījumu, kas pazūd iesniegšanas brīdī.",
+            "Šajā lapā esošais kalkulators salīdzina tikai svaru. Tas nevar noteikt maršruta pieejamību, valūtas kursu vai maksājamo piegādes summu. Ja maināt iepakojumu, pirms lēmuma pieņemšanas atjauniniet oficiālo tāmi. Saglabājiet iepriekšējo tāmi un pieņemto sūtījumu tāmi kā atsevišķus ierakstus, lai vēlāk veiktās korekcijas varētu izsekot mainītajiem ievades datiem."
+          ]
         }
       ],
       "checklist": [
@@ -1443,7 +1788,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy piegādes kalkulators: svars un izmaksas"
     },
     {
@@ -1597,6 +1942,13 @@
             "Laiks līdz noliktavai atšķiras no laika, kas atļauts noliktavā. Pārdevēja sagatavošana un piegāde vietējā tirgū notiek pirms saņemšanas noliktavā; pārbaude un konta atjauninājumi notiek pēc savas darbplūsmas. Vispirms pārbaudiet pārdevēja nosūtīšanu un vietējās piegādes izsekošanu. Piegādātajam skenējumam ir jābūt saskaņotam ar jūsu pasūtījumu, pirms pieņemat, ka prece ir pieejama iesniegšanai starptautiskā sūtījumā.",
             "Ja pārvadātājs uzrāda piegādi, bet pasūtījums nav parādījies kā noliktavā, norādiet atbalsta dienestam vietējo izsekošanas numuru, piegādes notikumu un pasūtījuma numuru. Pajautājiet, vai ir gaidāma saņemšana, īpašumtiesību saskaņošana vai pārbaude. Nesāciet uzglabāšanas atpakaļskaitīšanu no uzminēta pārdevēja nosūtīšanas datuma un neuztveriet parasto 100 dienu limitu kā solījumu par apstrādes ātrumu."
           ]
+        },
+        {
+          "heading": "Izvēlieties nākamo darbību no tuvākā termiņa.",
+          "paragraphs": [
+            "Pārskatiet katru uzglabāto preci, ņemot vērā gan tās uzglabāšanas termiņu, gan piemērojamo atgriešanas termiņu. Atzīmējiet to kā gatavu nosūtīšanai tikai pēc tam, kad ir pārbaudīts izvēlētais variants un redzamais stāvoklis. Ja precei ir neatrisināta problēma, sazinieties ar atbalsta dienestu tūlīt, nevis gaidiet pārējo plānoto sūtījumu. Saglabājiet atsevišķu piezīmi precēm, kuras plānojat paturēt, un precēm, kas gaida pārdevēja lēmumu.",
+            "Praktiskam salīdzinājumam iedomājieties, ka jaka ir gatava, bet cits pārdevējs nav nosūtījis apavu pāri. Gaidīšana var mainīt sūtījuma izmaksas, taču šis iespējamais ietaupījums neatrisina jakas atgriešanas termiņu. Vispirms pārbaudiet tūlītējo lēmumu un pēc tam salīdziniet sūtījuma iespējas, izmantojot reālistiskus iepakošanas mērījumus. Neaprakstiet pieņemto kombinētā sūtījuma ietaupījumu kā apstiprinātu summu."
+          ]
         }
       ],
       "checklist": [
@@ -1631,7 +1983,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy noliktava: uzglabāšanas laiks un termiņi"
     },
     {
@@ -1765,6 +2117,13 @@
             "Nemainīts notikums pats par sevi nenosaka kavēšanās cēloni. Vispirms pārliecinieties, ka skatāt starptautisko sūtījumu, nevis pārdevēja iekšzemes sūtījumu. Pēc tam salīdziniet notikuma datumu ar izvēlētās rindas pašreizējo tāmi un visiem sūtījumam pievienotajiem paziņojumiem. Etiķete, kas izveidota pirms savākšanas, atšķiras no pakas ar vēlāku pārvadātāja vai galamērķa skenēšanu.",
             "Lūdziet atbalsta dienestam apstiprināt gaidāmo posmu, izmantojot pakas numuru, maršrutu, jaunāko notikumu un datumu. Ja no jums ir nepieciešama rīcība, pieprasiet precīzu informāciju un nepieciešamo oficiālo kanālu. Neizdomājiet fiksētu dienu skaitu, pēc kura katra paka ir pazudusi, un nesoliet piegādes datumu no vispārīgas statusa etiķetes. Saglabājiet atbildi esošajā lietā, lai turpmākā rīcība varētu risināt to, kas joprojām nav atrisināts."
           ]
+        },
+        {
+          "heading": "Sagatavojiet noderīgu izsekošanas atbalsta pieprasījumu",
+          "paragraphs": [
+            "Pirms sazināšanās ar atbalsta dienestu, pierakstiet pasūtījuma vai sūtījuma atsauci, pēdējo redzamo statusu, notikuma datumu un to, kuru ceļojumu apraksta atsauce. Norādiet trūkstošo nākamo soli: pārdevēja nosūtīšana, noliktavas pārbaude, sūtījuma nosūtīšana vai pārvadātāja atjauninājums. Ja ir sniegta oficiāla nodošanas atsauce, pārbaudiet arī šo ierakstu. Nenorādiet, ka katrs maršruts izmanto vienu un to pašu vietējo pārvadātāju vai atjauniniet grafiku.",
+            "Aprakstiet ierakstā redzamo, nevis pieņemot kavēšanās cēloni. Vietējam piegādes notikumam un starptautiskajam piegādes notikumam ir atšķirīga nozīme, savukārt izveidota piegādes etiķete ne vienmēr nosaka pārvadātāja valdījumu. Pajautājiet, kurai pusei pašlaik pieder prece vai sūtījums un kāda rīcība no jums ir nepieciešama. Saglabājiet atbildi ar pieņemto piegādes tāmi un pasūtījumu vēsturi."
+          ]
         }
       ],
       "checklist": [
@@ -1799,7 +2158,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy piegādes laiks un izsekošanas statuss"
     },
     {
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Atveriet attiecīgo pasūtījumu un norādiet pēdējo pabeigto darbību: iesniegts pieprasījums, pārdevēja līgums, nosūtīta atgriešana, pārdevēja kvīts, apstiprināta atmaksa vai ieskaitīts atlikums. Pierakstiet norādīto datumu un summu. Pēc tam jautājiet atbalsta dienestam par nākamo trūkstošo darbību, norādot pasūtījuma numuru un esošo lietas atsauci. Sūtījums, kas joprojām tiek nosūtīts atpakaļ pie pārdevēja, un ieskaitīts atlikums, kas gaida izņemšanu, prasa atšķirīgu turpmāko rīcību.",
             "Ja atlikums ir ieskaitīts, atsevišķi pārbaudiet izņemšanas ierakstu. Apstipriniet galamērķa maksājuma kanālu, statusu un jebkuru sniegto atsauci. Neaprakstiet noliktavas atmaksu kā nepabeigtu tikai tāpēc, ka nauda nav nonākusi bankas kontā, izmantojot atsevišķu izņemšanu. Saglabājiet visus norādītos laikus, kas saistīti ar aprakstīto posmu, un neuztveriet nosacīto 7–15 dienu atsauci kā garantiju katram gadījumam."
           ]
+        },
+        {
+          "heading": "Pirms atgriešanas laika grafika izmantošanas pārbaudiet pirkuma noteikumus",
+          "paragraphs": [
+            "Pirms šo vadlīniju piemērošanas pārbaudiet nosacījumus, kas norādīti jūsu konkrētajam pasūtījumam. Oficiālā manuālā pirkuma veidlapa pašlaik brīdina, ka noteiktām trešo pušu saitēm nav pēcpārdošanas servisa un tās neatbalsta atmaksu, atcelšanu vai izmaiņas pēc apmaksas. Tāpēc vispārējais noliktavas atgriešanas process nav pieejams katram pirkumam. Pirms apmaksas noskaidrojiet neskaidru variantu, cenu vai atgriešanas nosacījumu; nepieņemiet, ka pārbaudes fotoattēls rada atgriešanas tiesības.",
+            "Lai veiktu atbilstošu aizkavētu atgriešanu, veiciet īsu statusa ierakstu: pieprasītais apstiprinājums, pārdevēja atbilde, atgriešanas nosūtīšana, pārdevēja kvīts un atlikuma kredīts. Lūdziet atbalsta dienestu par nepabeigto posmu un atsauci, kas apstiprina pabeigšanu. Kad atlikums ir ieskaitīts, reģistrējiet jebkuru atsevišķu izņemšanas pieprasījumu atsevišķi. Tas padara nākamo darbību skaidrāku nekā atkārtoti sākt to pašu atgriešanas pieprasījumu vai skaitīt katru posmu no pirkuma datuma."
+          ]
         }
       ],
       "checklist": [
@@ -1898,7 +2265,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy atmaksas laiks un atgriešana noliktavā"
     }
   ],

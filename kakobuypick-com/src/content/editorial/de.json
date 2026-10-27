@@ -74,7 +74,10 @@
       "invalid": "Geben Sie in jedes Feld einen positiven Zahlenwert ein.",
       "note": "Die Regel, dass das höhere Gewicht ausschlaggebend ist, dient lediglich als Beispiel. Für Ihre gewählte Versandroute können abweichende Abrechnungsregeln, Rundungsvorgaben oder Mindestgebühren gelten.",
       "official": "Offiziellen Versandkostenrechner öffnen"
-    }
+    },
+    "navShipping": "Versand",
+    "articleTopics": "Nächster Schritt",
+    "productGuides": "Vor der Bestellung prüfen"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "Was passiert, wenn ein Produktlink nicht automatisch geladen wird?",
-      "a": "Der offizielle Einkaufsführer enthält ein manuelles Kaufformular für Angebote, die nicht importiert werden können. Geben Sie die tatsächliche Verkäufer-URL und genaue Artikeldetails ein. Erfinden Sie keinen Preis und wählen Sie kein ähnlich aussehendes Produkt aus, ohne das Angebot zu prüfen und bei Bedarf den Käufer zu fragen.",
+      "a": "Der offizielle Einkaufsleitfaden enthält ein manuelles Bestellformular für Angebote, die nicht importiert werden können. Geben Sie die tatsächliche Verkäufer-URL und die korrekten Artikeldetails ein. Erfinden Sie keinen Preis und wählen Sie kein ähnlich aussehendes Produkt aus, ohne das Angebot zu prüfen und gegebenenfalls den Verkäufer zu kontaktieren. Bevor Sie diese Anleitung anwenden, prüfen Sie die Bedingungen für Ihre Bestellung. Das offizielle manuelle Bestellformular weist aktuell darauf hin, dass bestimmte Drittanbieter keinen Kundendienst anbieten und nach der Zahlung keine Rückerstattungen, Stornierungen oder Änderungen unterstützen. Der allgemeine Rückgabeprozess des Lagers ist daher nicht für jeden Kauf verfügbar. Klären Sie Unklarheiten bezüglich Variante, Preis oder Rückgabebedingungen vor der Zahlung; gehen Sie nicht davon aus, dass ein Inspektionsfoto ein Rückgaberecht begründet.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "Gilt die Fünf-Tage-Rückgaberegel für jedes Produkt?",
-      "a": "Nein. Die offiziellen Rückgaberegeln hängen von der Akzeptanz des Verkäufers, der Berechtigung des Produkts, dem Zustand und dem Zeitpunkt nach der Lagerung im Lager ab. Einige Kategorien und geänderte Verpackungen sind ausgeschlossen. Überprüfen Sie zeitnah die Frist und die Berechtigung der Bestellung. Eine 100-tägige Lagerung ist kein 100-tägiges Rückgaberecht.",
+      "a": "Nein. Die offiziellen Rückgabebedingungen gelten vorbehaltlich der Zustimmung des Verkäufers, der Produktberechtigung, des Zustands und des Zeitpunkts nach der Einlagerung. Einige Kategorien und veränderte Verpackungen sind ausgeschlossen. Prüfen Sie umgehend die Frist und die Berechtigung Ihrer Bestellung;100 Tage Lagerung bedeuten kein 100-tägiges Rückgaberecht. Bevor Sie diese Hinweise anwenden, prüfen Sie die Bedingungen für Ihre Bestellung. Das offizielle Bestellformular weist aktuell darauf hin, dass bestimmte Drittanbieter keinen Kundendienst anbieten und nach Zahlungseingang keine Rückerstattungen, Stornierungen oder Änderungen unterstützen. Das allgemeine Rückgabeverfahren ist daher nicht für jeden Kauf verfügbar. Klären Sie Unklarheiten bezüglich Variante, Preis oder Rückgabebedingungen vor der Zahlung; gehen Sie nicht davon aus, dass ein Inspektionsfoto ein Rückgaberecht begründet.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "Ist Kakobuy seriös? Gebühren, QC und Rückgaben",
+      "seoTitle": "Ist Kakobuy seriös? Gebühren, QC und Rückgaben",
+      "description": "Bewerten Sie Kakobuy anhand des veröffentlichten Kaufprozesses, der Prüfgrenzen und der Rückgabebedingungen. Prüfen Sie den Verkäufer, die Gesamtkosten und die Bestellbedingungen vor der Zahlung.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Was die verfügbaren Informationen belegen können",
+          "paragraphs": [
+            "Kakobuy veröffentlicht einen Kaufprozess, Richtlinien für die Lagerprüfung sowie Hilfeseiten zu Versand und Kundendienst. Diese Dokumente erklären die Funktionsweise des Services; sie beweisen jedoch nicht, dass jeder Verkäufer, jedes Paket oder jede Rückerstattung den Erwartungen entspricht. Wenn Sie wissen möchten, ob Kakobuy seriös und sicher ist, trennen Sie die Existenz eines Betriebsprozesses von der Zuverlässigkeit einer einzelnen Transaktion. Dieser Leitfaden ist eine dokumentenbasierte Checkliste für den Kauf, kein praktischer Test oder eine Bewertung basierend auf abgeschlossenen Käufen.",
+            "Beginnen Sie mit der konkreten Entscheidung, die vor Ihnen liegt. Sie sollten überprüfen, ob ein Link tatsächlich zum gewünschten Verkäufer führt, ob die gewählte Größe mit der Größentabelle übereinstimmt oder ob die Versandkosten weiterhin erschwinglich sind. Eine insgesamt positive Bewertung allein reicht dafür nicht aus. Notieren Sie sich, was bekannt ist, woher die Informationen stammen und was noch unklar ist. Geben Sie eine Bestellung erst auf, wenn die offenen Punkte für den jeweiligen Kauf akzeptabel sind, und nicht, weil eine Seite die gesamte Plattform als vertrauenswürdig einstuft."
+          ]
+        },
+        {
+          "heading": "Trennen Sie Plattform, Verkäufer und Produktsuche-Website.",
+          "paragraphs": [
+            "Kakobuy beschreibt einen Vermittlungsdienst, der bei Drittanbietern einkauft und die Lieferung organisiert. Kakobuy Pick ist eine separate Produktsuche-Website: Die Kataloglinks helfen Ihnen bei der Produktrecherche, während Bestellungen und Zahlungen über Kakobuy abgewickelt werden. Ein Produkt in diesem Katalog ist keine Empfehlung basierend auf Tests, keine offizielle Markenempfehlung und keine Verfügbarkeitsgarantie. Verwenden Sie das Originalangebot und das aktuelle Bestellformular, um den Artikel, den Sie kaufen möchten, zu überprüfen.",
+            "Speichern Sie die Quell-URL und die gewählte Variante zusammen. Ähnliche Fotos können in verschiedenen Angeboten erscheinen, und ein bekannter Produktname garantiert nicht, dass Verkäufer oder Inhalt identisch sind. Vergleichen Sie nach dem Öffnen der Kaufseite die Angebotsbeschreibung, die enthaltenen Teile und die relevanten Maße. Sollte sich etwas geändert haben, halten Sie inne und klären Sie dies vor der Zahlung. Der Katalogpreis dient als Orientierungshilfe; der angezeigte Betrag in Ihrer Bestellung kann abweichen, wenn sich die Variante oder der Preis des Verkäufers ändert."
+          ]
+        },
+        {
+          "heading": "Lesen Sie die bestellungsspezifischen Bedingungen vor der Zahlung.",
+          "paragraphs": [
+            "Das manuelle Bestellformular weist derzeit strengere Einschränkungen für bestimmte Drittanbieter-Links auf, darunter kein Kundendienst und keine Rückerstattung, Stornierung oder Änderung nach Zahlungseingang. Dies stellt eine wesentliche Ausnahme von den allgemeinen Rückgabebedingungen dar. Ein Hilfeartikel zu regulären Lagerretouren darf nicht als Anspruch für jede manuell aufgegebene Bestellung verstanden werden. Lesen Sie die für Ihre Bestellung angezeigten Bedingungen und wenden Sie sich bei Unklarheiten an den Support, bevor Sie diese bestätigen.",
+            "Speichern Sie die Bedingungen, die neben dem Produktlink und der gewählten Variante gelten. Wenn ein Angebot hinsichtlich Materialien, Maßen oder enthaltenem Zubehör unklar ist, schränkt eine restriktive Bestellung Ihre Möglichkeiten zur späteren Behebung von Unzufriedenheit ein. Eine sinnvolle Reaktion ist, die fehlenden Informationen zu beschaffen oder eine andere Kaufoption zu wählen. Gehen Sie nicht davon aus, dass eine Lagerprüfung ein Rückgaberecht begründet, das in den Bestellbedingungen ausgeschlossen ist. Entscheidend ist, ob Sie die Transaktion zu den angegebenen Bedingungen akzeptieren können."
+          ]
+        },
+        {
+          "heading": "Berechnen Sie die Entscheidung anhand der Gesamtkosten.",
+          "paragraphs": [
+            "Bevor Sie einen Agentenkauf mit einer anderen Kaufoption vergleichen, notieren Sie den Artikelpreis, die Kosten für Inlandsversand, internationalen Versand und alle gewählten Zusatzleistungen. Überprüfen Sie die Währung und den tatsächlich angeforderten Betrag. Ein attraktiver Produktpreis entspricht nicht den gesamten Lieferkosten. Der offizielle Versandkostenrechner ist hilfreich für die Planung mit Ihren Zielort- und Paketdaten, sollte aber getrennt vom endgültigen Angebot für das verpackte Paket aufbewahrt werden.",
+            "Verwenden Sie eine einfache Vergleichsnotiz mit einer Spalte für bestätigte und einer für noch offene Beträge. Beispielsweise kennen Sie möglicherweise den Preis des ausgewählten Artikels, aber noch nicht die Verpackungsmaße. Kennzeichnen Sie die Versandkosten als vorläufig, anstatt eine exakte Schätzung einzutragen. Wiederholen Sie den Vergleich, sobald die relevanten Maße vorliegen. Wenn der Kauf nur bei der niedrigsten denkbaren Versandkostenangabe sinnvoll ist, beruht die Entscheidung auf einer Unsicherheit, die vor weiteren Ausgaben geklärt werden sollte."
+          ]
+        },
+        {
+          "heading": "Verstehen Sie, was QC-Fotos aussagen können und was nicht.",
+          "paragraphs": [
+            "Fotos aus dem Lager helfen Ihnen, sichtbare Merkmale wie Farbe, Menge, Größenangaben und den offensichtlichen Zustand mit der bestellten Ware zu vergleichen. Bitten Sie um ein gezieltes Bild, wenn noch Unklarheiten bestehen. Eine sinnvolle Anfrage benennt das Detail und die damit verbundene Entscheidung, anstatt vage nach besseren Fotos zu fragen. Sortieren Sie bei der Überprüfung der Unterlagen Marketingbilder des Verkäufers, öffentliche Fotos anderer Bestellungen und Bilder Ihrer eigenen Bestellung in separate Kategorien.",
+            "Fotos belegen weder die Echtheit noch die Langlebigkeit, den Komfort oder die Funktionsfähigkeit von Elektronikartikeln. Ein gut lesbares Etikett kann den Text darauf bestätigen, ohne jedoch alle damit verbundenen Behauptungen zu beweisen. Wenn Ihnen authentische Markenware, technische Leistung oder Zertifizierung wichtig sind, wählen Sie einen Vertriebskanal, der eine entsprechende Überprüfung ermöglicht. Dieser Katalog und seine Anleitungen dienen nicht der Authentifizierung von Produkten. Berücksichtigen Sie die Grenzen der verfügbaren Informationen bei Ihrer Auswahl, anstatt Lücken durch Annahmen zu füllen."
+          ]
+        },
+        {
+          "heading": "Prüfen Sie Liefer- und Rückerstattungsansprüche nach ihrem Bearbeitungsstand.",
+          "paragraphs": [
+            "Versand durch den Verkäufer, Wareneingang im Lager und internationaler Paketversand sind unterschiedliche Vorgänge. Prüfen Sie beim Lesen einer Lieferbewertung, welches Ereignis die angegebene Wartezeit ausgelöst hat und ob Zielort und Route mit Ihrer Situation übereinstimmen. Eine schnelle Ankunft im Lager sagt wenig über den weiteren internationalen Transport aus. Ebenso wenig lässt sich anhand einer Paketverzögerung feststellen, was mit der Bestellung eines anderen Käufers geschehen ist. Spezifische, datierte Aufzeichnungen sind hilfreicher als allgemeine Aussagen zur Liefergeschwindigkeit.",
+            "Auch der Rückerstattungsprozess muss in einzelne Schritte unterteilt sein. Eine berechtigte Verkäuferrückgabe kann die Genehmigung, den Rücktransport, die Erstattung an den Verkäufer und die Gutschrift auf das Kakobuy-Guthaben umfassen. Die Auszahlung dieses Guthabens ist ein separater Prozess. Fragen Sie nach dem aktuellen Stand und notieren Sie sich die entsprechenden Informationen. Interpretieren Sie die angegebene Rückerstattungsdauer nicht als garantierten Bankeingangstermin und gehen Sie nicht davon aus, dass eine erfolgreiche Rückerstattung die für eine andere Bestellung geltenden Bedingungen außer Kraft setzt. Nutzen Sie den verlinkten Rückerstattungsleitfaden, um die Unterschiede zwischen diesen Prozessen zu verstehen."
+          ]
+        },
+        {
+          "heading": "Bewerten Sie Bewertungen, ohne sie als Garantien zu interpretieren.",
+          "paragraphs": [
+            "Suchen Sie nach Belegen, die die Aussage stützen. Ein hilfreicher Bericht beschreibt das Produkt, den Bestellvorgang, die relevanten Daten und wie ein Problem gelöst wurde. Ein Screenshot aus einer Werbeanzeige mit Kauflink mag zwar ein echtes Produkt zeigen, lässt aber dennoch Fragen offen. Affiliate-Links sollten offengelegt werden. Ihr Vorhandensein ist Anlass, die zugrundeliegenden Informationen sorgfältig zu prüfen, anstatt jede Aussage auf der Seite automatisch zu akzeptieren oder abzulehnen.",
+            "Vermeiden Sie es, unzusammenhängende Erfahrungen zu einer exakten Erfolgsquote zu verallgemeinern. Öffentliche Kommentare stellen keine repräsentative Stichprobe aller Transaktionen dar, und einige wenige positive oder negative Berichte reichen nicht aus, um eine verlässliche Prozentzahl zu ermitteln. Bei widersprüchlichen Informationen identifizieren Sie die konkrete Unsicherheit, die Sie selbst überprüfen können: das aktuelle Angebot des Verkäufers, die schriftlichen Bestellbedingungen, den Umfang der Inspektion oder die verfügbaren Versandoptionen. Wenn eine Bewertung keine dieser Fragen beantworten kann, ist sie für Ihre Entscheidung möglicherweise weniger hilfreich als eine direkte Klärung."
+          ]
+        },
+        {
+          "heading": "Treffen Sie Ihre Kaufentscheidung anhand klar definierter Stopppunkte.",
+          "paragraphs": [
+            "Nutzen Sie die folgende Checkliste vor der Zahlung, nach Wareneingang im Lager und vor der Paketabgabe. Notieren Sie sich in jedem Schritt den Punkt, der Sie zum Innehalten veranlassen würde. Beispiele hierfür sind eine unbestätigte Variante, unerklärliche Kosten oder eine offensichtliche, noch nicht geklärte Abweichung. Dies macht aus einer allgemeinen Vertrauensfrage konkrete Entscheidungen, die Sie treffen können. Außerdem wird ein Nachweis erstellt, falls der Support nachvollziehen muss, wie das Problem entstanden ist.",
+            "Beginnen Sie die Recherche in der Tabelle und öffnen Sie anschließend das Originalangebot und die offizielle Kaufseite, um die Prüfungen abzuschließen. Kommunizieren Sie bezüglich einer Bestellung ausschließlich über den offiziellen Support und geben Sie Ihre Zugangsdaten nicht an inoffizielle Helfer weiter. Kakobuy Pick erhält möglicherweise eine Provision über offengelegte Affiliate-Links; dies ändert jedoch nichts an den hier beschriebenen Einschränkungen. Kein Leitfaden kann den Ausgang einer einzelnen Transaktion garantieren, aber klare Nachweise und realistische Erwartungen ermöglichen eine fundiertere Entscheidung."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bestätigen Sie den Verkäuferlink, die genaue Variante und die geltenden Bestellbedingungen.",
+        "Trennen Sie die bestätigten Kosten von den vorläufigen Versandkosten.",
+        "Nutzen Sie die Qualitätskontrolle für sichtbare Prüfungen, ohne sie als Authentifizierung zu betrachten.",
+        "Klären Sie offene Fragen, bevor Sie bezahlen oder ein Paket abschicken."
+      ],
+      "table": {
+        "caption": "Praktischer Nachweis",
+        "headers": [
+          "Prüfen",
+          "Nützlicher Nachweis"
+        ],
+        "rows": [
+          [
+            "Identität und Gegenstand",
+            "URL des Originalverkäufers, genaue Variante und aktuelle Bestellseite"
+          ],
+          [
+            "Bestellbedingungen",
+            "Anwendbare Stornierungs-, Rückgabe- und Kaufbedingungen"
+          ],
+          [
+            "Kosten und Lieferung",
+            "Bestätigte Gebühren, vorläufige Versandkosten und gewählte Versandart"
+          ],
+          [
+            "Prüfung und Support",
+            "Fotos zur Bestellung, offene Probleme und Support-Referenz"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Die richtigen Fotos finden und zuordnen",
+      "seoTitle": "Kakobuy QC Finder: Die richtigen Fotos finden und zuordnen",
+      "description": "Finden Sie Ihre Kakobuy-Bestellfotos und bewerten Sie öffentliche QC-Ergebnisse anhand des Links des Originalverkäufers, der Variante und des Bilddatums. Erfahren Sie, was zu prüfen ist, wenn Fotos fehlen.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Beginnen Sie mit dem Artikel und der Art des benötigten Fotos.",
+          "paragraphs": [
+            "Die Suche nach einem Kakobuy-Qualitätskontrollfinder kann bedeuten, Fotos für Ihre eigene Bestellung zu finden oder ein Produkt vor dem Kauf zu recherchieren. Dies sind unterschiedliche Aufgaben. Für Ihren eigenen Kauf beginnen Sie im Bestell- oder Lagerbereich Ihres offiziellen Kontos und öffnen Sie den entsprechenden Artikel. Bei der Recherche vor dem Kauf dient ein öffentliches Foto nur als Referenz aus einem anderen Angebot oder einer anderen Bestellung, bis Sie es dem genauen Verkäufer und der gewünschten Variante zuordnen können.",
+            "Kakobuy Pick zeigt Produktreferenzfotos an, die vom Kataloganbieter bereitgestellt werden. Diese Bilder sind nicht als verifizierte Lagerqualitätskontrolle gekennzeichnet und es wird keine öffentliche Bestellfotodatenbank bereitgestellt. Die hier beschriebenen Schritte helfen Ihnen, Nachweise zu finden und zu bewerten; sie schalten keine privaten Fotos frei und garantieren nicht, dass für jeden Artikel ein öffentliches Bild existiert. Beachten Sie diesen Unterschied, wenn eine Suche ansprechende Bilder liefert, aber keinen Bestellkontext, kein Aufnahmedatum oder keine Referenz zum ursprünglichen Angebot anzeigt."
+          ]
+        },
+        {
+          "heading": "Bewahren Sie den ursprünglichen Verkäuferlink vor der Suche auf.",
+          "paragraphs": [
+            "Kopieren Sie die URL des ursprünglichen Angebots inklusive Marktplatz und Artikel-ID in Ihre Recherchenotiz. Die interne Seitenzahl eines Katalogs entspricht nicht unbedingt der Artikelnummer des Verkäufers. Suchwerkzeuge, die einen ursprünglichen Verkäuferlink erwarten, können fehlschlagen oder irrelevante Ergebnisse liefern, wenn stattdessen eine interne Katalog-URL angegeben wird. Falls Sie nur einen Kurzlink haben, öffnen Sie das Angebot über die öffentliche Seite und überprüfen Sie die Produktdetails, bevor Sie es als Referenz verwenden.",
+            "Notieren Sie außerdem die gewählte Farbe, Größe, das Material sowie alle Verpackungs- oder Zubehöroptionen. Mehrere Varianten können in einem Angebot gelistet sein, und verschiedene Verkäufer können sehr ähnliche Fotos wiederverwenden. Die Übereinstimmung eines Produktnamens oder Titelbildes ist daher weniger aussagekräftig als die Übereinstimmung des ursprünglichen Links und der exakten Variante. Falls der Link nicht mehr funktioniert, bewahren Sie Ihre bestehenden Notizen auf und fragen Sie nach. Ersetzen Sie ihn nicht stillschweigend durch ein ähnlich aussehendes Angebot und gehen Sie nicht davon aus, dass die Fotos weiterhin relevant sind."
+          ]
+        },
+        {
+          "heading": "Fotos zu Ihrer Bestellung finden",
+          "paragraphs": [
+            "Der offizielle Einkaufsleitfaden führt Sie nach Prüfung und Einlagerung zu den Bestellungen und Lagerbereichen Ihres Kontos. Suchen Sie die Bestellung anhand der Ihrer Bestellung zugeordneten Referenz und vergleichen Sie deren Status mit der Bildverfügbarkeit. Der Versand durch den Verkäufer bedeutet nicht, dass die Lagerprüfung abgeschlossen ist. Falls der Artikel eingetroffen ist, die erwarteten Bilder aber nicht sichtbar sind, prüfen Sie die Bestellnachrichten und fragen Sie beim Support nach, ob der Empfang, die Prüfung oder die Bildveröffentlichung für diesen Artikel noch aussteht.",
+            "Nutzen Sie die offizielle Kontooberfläche und geben Sie Ihre Zugangsdaten nicht an Dritte weiter. Geben Sie bei Anfragen die Bestellung und das fehlende Bild an, ohne persönliche Adressetiketten oder Konto-Screenshots in einem öffentlichen Forum zu veröffentlichen. Eine präzise Anfrage könnte beispielsweise erklären, dass die ausgewählte Kleidergröße unklar ist, weil das Etikett nicht sichtbar ist. Bewahren Sie die Support-Antwort zusammen mit dem Bestelldatensatz auf, um eine Aktualisierung der Bearbeitung von der Bestätigung der abgeschlossenen Prüfung unterscheiden zu können."
+          ]
+        },
+        {
+          "heading": "Vergleichen Sie öffentliche Ergebnisse, bevor Sie Schlussfolgerungen ziehen.",
+          "paragraphs": [
+            "Überprüfen Sie bei jedem öffentlichen Foto den Verkäuferlink, die gewählte Variante, das Aufnahmedatum (sofern verfügbar) und ob der abgebildete Artikel zu einer tatsächlichen Bestellung gehört. Ein aktuelles Foto einer anderen Größe kann zwar die sichtbare Verarbeitung verdeutlichen, dient aber nicht als Messnachweis für Ihre gewählte Größe. Ein älteres Foto kann eine andere Produktionscharge oder Produktkonfiguration zeigen. Wenn das Ergebnis keinen Kontext bietet, dokumentieren Sie die Unsicherheit, anstatt das Bild als verifizierten Beweis aufzuwerten.",
+            "Vergleichen Sie verschiedene Details, wie z. B. die Position der Taschen, die Art des Verschlusses, die enthaltenen Teile und die Anordnung der Etiketten. Der Abgleich dieser Details kann eine Referenz aussagekräftiger machen, garantiert aber nicht, dass die nächste Bestellung identisch sein wird. Wenn das Bild in der Online-Beschreibung nicht mit der aktuellen Beschreibung des Verkäufers übereinstimmt, klären Sie die Unterschiede vor dem Kauf. Es ist ratsamer anzunehmen, dass die verfügbaren Bilder nicht ausreichen, anstatt anzunehmen, dass das überzeugendste Foto das richtige ist."
+          ]
+        },
+        {
+          "heading": "Formulieren Sie eine fehlende Information als hilfreiche Fotoanfrage.",
+          "paragraphs": [
+            "Eine hilfreiche Fotoanfrage benennt das genaue Teil des Artikels und wie es dargestellt werden soll. Bei einer Jacke könnte dies beispielsweise der vollständige Reißverschluss oder der flach gemessene Brustumfang zwischen bestimmten Punkten sein. Bei Schuhen wären dies möglicherweise beide Größenetiketten und eine klare Ansicht der Sohlen. Fragen Sie nach, ob die gewünschte Ansicht oder Messung verfügbar ist und ob dafür Kosten anfallen, bevor Sie davon ausgehen, dass sie zur Standardprüfung gehört.",
+            "Vermeiden Sie es, viele nahezu identische Fotos anzufordern, die keine Entscheidungshilfe darstellen. Wenn es um die Messmethode geht, fragen Sie explizit danach. Wenn Sie wissen möchten, welches Zubehör enthalten ist, bitten Sie um eine Übersicht der Teile. Ein klares Ziel erleichtert die Bewertung der Antwort. Beachten Sie den Unterschied zwischen einem Foto, einer Messung und einem Funktionstest: Ein Foto eines elektrischen Geräts zeigt beispielsweise nicht alle Funktionen oder dessen Langzeitstabilität."
+          ]
+        },
+        {
+          "heading": "Betrachten Sie Fotos unter vergleichbaren Bedingungen.",
+          "paragraphs": [
+            "Verwenden Sie beim Vergleichen von Maßen dieselben Bezugspunkte. Die Breite eines flach liegenden Kleidungsstücks, ein Körperumfang und die Außenmaße einer Verpackung beschreiben unterschiedliche Dinge. Überprüfen Sie die Einheiten sowie Anfangs- und Endpunkte, bevor Sie eine Zahl als Größenangabe interpretieren. Perspektive und ein locker positioniertes Maßband können die Interpretation eines Bildes erschweren. Bei unklaren Angaben bitten Sie um Klärung, anstatt eine präzise Passformempfehlung auf einer unsicheren Messung zu basieren.",
+            "Farbe und Textur hängen auch von der Beleuchtung, den Kameraeinstellungen und Ihrem Bildschirm ab. Ein Unterschied zwischen einem Verkäuferfoto und einem Lagerfoto kann zwar einen genaueren Blick rechtfertigen, klärt aber nicht automatisch die genaue Ursache. Beschreiben Sie das sichtbare Problem genau, wenn Sie den Support kontaktieren. Fotos können den Zustand oder die Variante überprüfen; sie können jedoch nicht eigenständig die Faserzusammensetzung, Echtheit, den Tragekomfort, die Haltbarkeit oder das Fehlen versteckter Mängel beweisen. Nutzen Sie die spezielle Qualitätskontrollanleitung für eine umfassendere Checkliste."
+          ]
+        },
+        {
+          "heading": "Beheben Sie fehlende Ergebnisse und Abweichungen umgehend.",
+          "paragraphs": [
+            "Ein fehlendes öffentliches Qualitätskontrollergebnis beweist nicht automatisch, dass ein Angebot neu, unsicher oder nicht verfügbar ist. Es kann lediglich bedeuten, dass in der von Ihnen durchsuchten Quelle kein passendes Bild veröffentlicht wurde. Sehen Sie sich die Verkäuferinformationen erneut an und entscheiden Sie, welche Fragen vor dem Kauf geklärt werden müssen. Nach Wareneingang im Lager ist eine Abweichung zwischen den Fotos Ihrer Bestellung ein direkteres Problem: Bewahren Sie die Bilder auf, identifizieren Sie die ausgewählte Option und fragen Sie den Support nach dem weiteren Vorgehen.",
+            "Prüfen Sie den tatsächlichen Zustand Ihrer Bestellung, bevor Sie von einer Rückgabe ausgehen. Das manuelle Bestellformular enthält strengere Einschränkungen für bestimmte Drittanbieter-Links, einschließlich Einschränkungen bei Stornierung, Rückerstattung und Kundendienst. Für berechtigte reguläre Bestellungen gelten weiterhin die eigenen Fristen und Bedingungen für die Rückgabeentscheidung. Das Warten auf weitere öffentliche Fotos verlängert diese Frist nicht. Klären Sie zunächst das Problem mit Ihrer Bestellung und bewahren Sie Artikel, Etiketten und Verpackung in dem Zustand auf, der für eine eventuelle Rückgabe erforderlich ist."
+          ]
+        },
+        {
+          "heading": "Führen Sie eine kurze Dokumentation, die die nächste Entscheidung unterstützt.",
+          "paragraphs": [
+            "Nutzen Sie die untenstehende Vergleichstabelle als Beweismittel und nicht als Bewertungsraster. Trennen Sie sichtbar bestätigte von ungeklärten Informationen. Beispielsweise kann ein Foto des Etiketts die angegebene Größe bestätigen, die tatsächliche Passform aber unklar lassen. Eine Zubehörübersicht kann die Menge bestätigen, die Funktionalität aber ungeprüft lassen. Diese Trennung verhindert, dass ein scheinbar überzeugendes Foto missbraucht wird, um Behauptungen zu untermauern, die es nicht belegen kann.",
+            "Sobald die notwendigen Prüfungen abgeschlossen sind, fahren Sie mit der nächsten Aufgabe fort: Größenbestimmung, Rücksendeantrag oder Paketplanung. Bewahren Sie den ursprünglichen Link und die relevanten Maße für spätere Verwendung auf. Überprüfen Sie jedoch bei einer erneuten Bestellung den Artikel erneut, da sich Lagerbestand und Optionen ändern können. Wenn Sie eine eigene Bewertung veröffentlichen, entfernen Sie alle personenbezogenen Daten und beschreiben Sie den genauen Umfang der Beweise. Eine klare, begrenzte Beobachtung ist für einen anderen Käufer hilfreicher als eine unbegründete Behauptung, dass ein Verkäufer oder ein Produkt allgemein sicher sei.",
+            "Bevor Sie ein Ergebnis als Übereinstimmung akzeptieren, verfassen Sie eine kurze Erklärung, welche Auswirkungen dies auf Ihre Entscheidung hat. Wenn das Foto lediglich das Werbebild des Verkäufers wiederholt, liefert es kaum zusätzliche Informationen. Zeigt es hingegen die für Ihre Bestellung benötigten Maße, kann es eine Unsicherheit bezüglich der Passform beseitigen. Dokumentieren Sie sowohl die Beweislage als auch deren Einschränkung in derselben Notiz, damit die Schlussfolgerung später nachvollziehbar bleibt."
+          ]
+        }
+      ],
+      "checklist": [
+        "Halten Sie den Link zum Originalverkäufer von der Katalogseitennummer getrennt.",
+        "Verwenden Sie für Fotos Ihrer eigenen Bestellung Ihr offizielles Konto.",
+        "Vergleichen Sie Variante und Kontext, bevor Sie sich auf ein öffentliches Bild verlassen.",
+        "Beheben Sie sichtbare Abweichungen im Rahmen der geltenden Bestellbedingungen."
+      ],
+      "table": {
+        "caption": "Fotovergleich",
+        "headers": [
+          "Prüfen",
+          "Nützliche Informationen"
+        ],
+        "rows": [
+          [
+            "Übereinstimmung mit dem Angebot",
+            "URL des ursprünglichen Marktplatzes und Artikel-ID des Verkäufers"
+          ],
+          [
+            "Übereinstimmung mit der Variante",
+            "Ausgewählte Farbe, Größe, enthaltene Teile und sichtbare Unterschiede"
+          ],
+          [
+            "Fotokontext",
+            "Ihre eigene Bestellung oder öffentliche Referenz; Datum und fehlender Kontext"
+          ],
+          [
+            "Entscheidung",
+            "Sichtbares Ergebnis, verbleibende Unsicherheit und nächste Schritte"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Italien: Bestellung, Versandkosten & Sendungsverfolgung",
+      "seoTitle": "Kakobuy Italien: Bestellung, Versandkosten & Sendungsverfolgung",
+      "description": "Planen Sie eine Kakobuy-Bestellung nach Italien: Verkäuferlinks überprüfen, Gesamtkosten des Pakets schätzen, verfügbare Routen prüfen und den Sendungsstatus verfolgen.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Planen Sie Ihre Bestellung nach Italien anhand des gesamten Ablaufs",
+          "paragraphs": [
+            "Eine Bestellung über Kakobuy mit Lieferadresse Italien umfasst den Kauf beim Verkäufer, die Einlagerung, die Qualitätskontrolle und den Versand eines separaten internationalen Pakets. Der Produktpreis allein beschreibt nicht den gesamten Ablauf. Bestätigen Sie zunächst den Artikel und prüfen Sie dann, ob die verfügbaren Versandoptionen Ihre Lieferadresse und den Inhalt berücksichtigen. Dieser Leitfaden erklärt Ihnen die zu treffenden Entscheidungen; er garantiert jedoch keine bestimmte Route, kein bestimmtes Lieferdatum und keinen festen Versandpreis für jede italienische Adresse.",
+            "Wenn Sie sich über die Funktionsweise von Kakobuy in Italien informieren, notieren Sie sich einen kurzen Bestellplan mit dem Link des Verkäufers, der gewählten Versandart, der gewünschten Lieferadresse und offenen Fragen. Entscheiden Sie vor der Zahlung, ob die Bestellung einen festen Liefertermin hat. Ein Paket für einen bestimmten Anlass erfordert mehr Sorgfalt als eine Bestellung mit flexiblem Liefertermin, da die Vorbereitung durch den Verkäufer und die Einlagerung erfolgen, bevor der internationale Versand überhaupt beginnt. Vergleichen Sie Alternativen anhand des gesamten Prozesses und nicht nur anhand der geschätzten Lieferzeit."
+          ]
+        },
+        {
+          "heading": "Überprüfen Sie das Angebot des Verkäufers und die ausgewählte Variante.",
+          "paragraphs": [
+            "Nutzen Sie die Tabelle, um passende Artikel zu finden. Öffnen Sie anschließend das Originalangebot des Verkäufers und die offizielle Kaufseite. Bestätigen Sie Farbe, Größe, Modell und Lieferumfang. Produktnamen und Fotos können in verschiedenen Angeboten wiederverwendet werden. Speichern Sie daher die Original-URL der gewählten Option. Falls der automatische Import fehlschlägt, nutzen Sie den aktuellen offiziellen manuellen Bestellprozess erst, nachdem Sie die Bedingungen gelesen und korrekte Angaben gemacht haben. Ein ähnliches Bild ist kein zuverlässiger Ersatz für das Originalangebot.",
+            "Beachten Sie insbesondere die restriktiven Bedingungen für manuelle Bestellungen. Das aktuelle Formular weist darauf hin, dass für bestimmte Käufe bei Drittanbietern kein Kundendienst besteht und diese nach der Zahlung weder erstattet, storniert noch geändert werden können. Allgemeine Rückgabebestimmungen des Lagers haben keinen Einfluss auf diese Bedingungen. Wenn Sie sich bezüglich einer Größentabelle, eines Materials oder eines Zubehörs unsicher sind, klären Sie dies, bevor Sie die Bestellung annehmen. Ihre Entscheidung sollte auf den für den jeweiligen Kauf geltenden Bedingungen basieren und nicht auf der Annahme, dass jeder Artikel später zurückgegeben werden kann."
+          ]
+        },
+        {
+          "heading": "Vergleichen Sie die Größen anhand der Messmethode des Produkts.",
+          "paragraphs": [
+            "Ihre übliche italienische Konfektionsgröße reicht nicht aus, um bei einem unbekannten Verkäufer die richtige Größe zu wählen. Vergleichen Sie die Größentabelle des jeweiligen Angebots mit einem Ihnen passenden Kleidungsstück und notieren Sie die Messmethode. Maße von flach liegenden Kleidungsstücken und Körpermaße unterscheiden sich. Achten Sie bei Kleidung auf die Maße, die für den gewünschten Schnitt und das Tragen mehrerer Lagen relevant sind. Bei Schuhen unterscheiden Sie zwischen Fußlänge, Innensohlenlänge und Außensohlenlänge, anstatt alle Längenangaben als austauschbar zu betrachten.",
+            "Falls die Größentabelle fehlt oder unklar ist, fragen Sie vor der Bestellung nach. Nach Wareneingang im Lager kann eine gezielte Messung zur Klärung offener Fragen beitragen (vorbehaltlich der Qualitätskontrolle und eventueller Kosten). Ein Foto des Etiketts kann die Richtigkeit des ausgewählten Etiketts bestätigen, aber keine Passformgarantie geben. Nutzen Sie die unten verlinkte Größentabelle für einen systematischen Vergleich und notieren Sie sich Ihre Maße für zukünftige Einkäufe. Vermeiden Sie die pauschale Empfehlung, eine größere Größe zu wählen, da dies Länge und Proportionen verändern kann, ohne das ursprüngliche Passformproblem zu lösen."
+          ]
+        },
+        {
+          "heading": "Versandkosten berechnen: Zielort und Paketgröße angeben",
+          "paragraphs": [
+            "Öffnen Sie den offiziellen Versandkostenrechner und wählen Sie Italien als Zielort, sofern diese Option verfügbar ist. Geben Sie die Warenart, das Gewicht und die Abmessungen ein und lesen Sie die Beschränkungen und Abrechnungsinformationen der angezeigten Versandrouten. Sollten die Ergebnisse leer sein, überprüfen Sie bitte Ihre Eingaben oder wenden Sie sich an den Support. Gehen Sie nicht davon aus, dass eine der angezeigten Routen das Paket annimmt. Die Verfügbarkeit kann vom Inhalt und der Verpackung abhängen. Überprüfen Sie daher alle Angaben vor der endgültigen Absendebestätigung.",
+            "Bevor die Ware im Lager eintrifft, geben Sie die Abmessungen und Gewichte als Schätzwerte an. Aktualisieren Sie den Vergleich, sobald die gemessenen Daten vorliegen und auch bei Änderungen der Verpackung. Der Gewichtsvergleich auf der Versandseite dieser Website zeigt das tatsächliche und das Volumengewicht an; es handelt sich nicht um einen Live-Preisrechner. Verwenden Sie den für die jeweilige Route angegebenen Divisor und die Abrechnungsmethode, anstatt eine universelle Formel für alle Versanddienstleister anzuwenden. Auch leichtere Artikel können so viel Platz beanspruchen, dass sich die Versandkostenberechnung ändert."
+          ]
+        },
+        {
+          "heading": "Erstellen Sie eine Kostenaufstellung, ohne einen Pauschalpreis anzugeben.",
+          "paragraphs": [
+            "Listen Sie den Preis des ausgewählten Artikels, die Inlandslieferung, den internationalen Versand und optionale Services separat auf. Prüfen Sie die Zahlungswährung und den von der aktuellen Zahlungsmethode angeforderten Betrag. Erfassen Sie alle in den Versandbedingungen aufgeführten Gebühren separat und vermeiden Sie doppelte Zählungen, nur weil auf verschiedenen Hilfeseiten unterschiedliche Bezeichnungen verwendet werden. Ein Kostenvoranschlag in US-Dollar ist keine Garantie für eine Euro-Abbuchung. Vergleichen Sie die bestätigten Beträge, die während der Transaktion angezeigt werden.",
+            "Bei Lieferungen nach Italien sollten Sie den Namen der Versandroute oder eine Werbebeschreibung nicht als Beweis dafür interpretieren, dass alle möglichen Zustellgebühren enthalten sind. Lesen Sie genau, was das aktuelle Angebot beinhaltet, und fragen Sie nach, wenn die Formulierung unklar ist. Dieser Leitfaden veröffentlicht weder Steuersätze noch Zollfreigrenzen oder Garantien für die Zollabfertigung. Ein übersichtliches Budget dokumentiert, was enthalten, was ausgeschlossen und was noch unklar ist. So können Sie vor dem internationalen Versand entscheiden, ob der Gesamtbetrag für Sie akzeptabel ist."
+          ]
+        },
+        {
+          "heading": "Überprüfen Sie die Inspektionsergebnisse, bevor Sie Artikel zusammenfassen.",
+          "paragraphs": [
+            "Vergleichen Sie nach der Einlagerung der Ware die Fotos Ihrer Bestellung mit der ausgewählten Variante. Prüfen Sie den sichtbaren Zustand, die Menge und die für Sie relevanten Maße. Öffentliche Referenzfotos aus einer anderen Bestellung ersetzen diese Prüfung nicht. Sollte etwas nicht stimmen, bewahren Sie das Bild und die Bestelldetails auf und kontaktieren Sie umgehend den Kundenservice. Beheben Sie das Problem, bevor Sie den Artikel mit anderen Käufen zusammenfassen oder eine internationale Lieferung anfordern, solange die entsprechenden Optionen noch verfügbar sind.",
+            "Wenn Sie Kleidung, Schuhe und Accessoires zusammenfassen möchten, vergleichen Sie das resultierende Paket mit den Beschränkungen und Verpackungsanforderungen des Versanddienstleisters. Das Entfernen unnötiger Verpackung kann das Volumen beeinflussen, der Schutz und die Rückgabebedingungen bleiben jedoch wichtig. Fragen Sie nach der vorgeschlagenen Verpackung, anstatt anzunehmen, dass Komprimierung oder das Entfernen von Karton für jeden Artikel geeignet ist. Die Einlagerungsfrist ist unabhängig von der Rückgabefrist des Verkäufers. Das Warten auf einen anderen Artikel erhält daher nicht unbegrenzt dieselben Kundendienstoptionen."
+          ]
+        },
+        {
+          "heading": "Verfolgen Sie den relevanten Status.",
+          "paragraphs": [
+            "Trennen Sie Bestell- und internationale Paketnummern. Ein im Inland als „zugestellt“ markierter Sendungsstatus kann sich auf den Wareneingang im Lager und nicht auf die Zustellung in Italien beziehen. Der internationale Sendungsstatus bezieht sich auf das jeweilige Paket und dessen Transportweg. Bei verzögerten Aktualisierungen notieren Sie das letzte Ereignis, dessen Datum und die entsprechende Sendungsnummer. Fragen Sie beim Support nach, welcher Status noch aussteht, anstatt jede Phase ohne Aktualisierung als Verzögerung zu betrachten.",
+            "Beachten Sie alle Übergabe- oder Zustellungshinweise aus dem offiziellen Paketdatensatz. Gehen Sie nicht davon aus, dass ein bestimmter italienischer Transportdienstleister alle Routen bedient oder dass für jede Sendung eine neue Sendungsnummer erforderlich ist. Wenn der angegebene Lieferzeitraum überschritten ist oder der Datensatz ein Problem anzeigt, geben Sie bei der Kontaktaufnahme die genaue Paketnummer und das letzte sichtbare Ereignis an. Bewahren Sie das akzeptierte Versandangebot auf, um den angegebenen Umfang von einer früheren Kostenschätzung zu unterscheiden."
+          ]
+        },
+        {
+          "heading": "Bereiten Sie die Zustellung vor und sichern Sie die Nachweise.",
+          "paragraphs": [
+            "Prüfen Sie vor der Paketabgabe, ob Name, Adresse, Postleitzahl und Kontaktdaten des Empfängers korrekt sind. Kontrollieren Sie bei der Zustellung umgehend die Verpackung und den Inhalt. Bei sichtbaren Schäden oder fehlenden Artikeln bewahren Sie die Verpackung und entsprechende Fotos auf und kontaktieren Sie unverzüglich den zuständigen Kundenservice. Lesen Sie die aktuellen Anforderungen für Empfang und Reklamation Ihres Pakets. Ein Foto des Pakets kann die Schadensmeldung unterstützen, begründet aber allein keinen Anspruch auf Entschädigung.",
+            "Bewahren Sie nach einer erfolgreichen Zustellung wichtige Maße des Kleidungsstücks, die Paketinformationen und die Routenbeschreibung zum Vergleich auf. Betrachten Sie diese als Belege für die jeweilige Bestellung und nicht als verbindliche Zusage für die nächste. Prüfen Sie bei einer erneuten Bestellung den Verkäufer, die verfügbaren Varianten und die aktuellen Versandkosten. Nutzen Sie zunächst die unten stehenden Kategorienlinks zur Produktsuche und anschließend die Anleitungen zu Versand, Sendungsverfolgung und Rückerstattung für die jeweiligen Entscheidungen. So bleiben Sie bei der Produktsuche auf praktische Aspekte fokussiert und verlassen sich nicht auf eine allgemeine Empfehlung.",
+            "Vergleichen Sie beispielsweise den Versand eines sofort verfügbaren Kleidungsstücks mit dem Warten auf Schuhe, die noch nicht im Lager eingetroffen sind. Notieren Sie den noch nicht geklärten Versand durch den Verkäufer, die mögliche Verpackungsänderung und die separaten Rückgabefristen. Gehen Sie nicht davon aus, dass Sie durch Warten Kosten sparen, bis die Versandkosten für das kombinierte Paket anhand realistischer Angaben berechnet werden können. Die beste Option hängt vom aktuellen Angebot, Ihrem Versicherungsbedarf und Ihrem Liefertermin ab, nicht nur von der Anzahl der Artikel im Paket."
+          ]
+        }
+      ],
+      "checklist": [
+        "Bestätigen Sie die genaue Artikelbeschreibung und die geltenden Bedingungen für manuelle Bestellungen.",
+        "Prüfen Sie die Verfügbarkeit der Route nach Italien anhand der aktuellen Paketdaten.",
+        "Trennen Sie Artikelpreis, Zahlungsbetrag und Versandkosten.",
+        "Bewahren Sie Bestell- und Sendungsverfolgungsdaten getrennt auf und überprüfen Sie die Lieferung umgehend."
+      ],
+      "table": {
+        "caption": "Bestellplanung für Italien",
+        "headers": [
+          "Prüfen",
+          "Nützliche Informationen"
+        ],
+        "rows": [
+          [
+            "Vor dem Kauf",
+            "Verkäufer-URL, genaue Variante, Größenberechnung und Bestellbedingungen"
+          ],
+          [
+            "Vor dem Versand",
+            "Zielort Italien, Inhalt, Verpackungsmaße und Preisangebot"
+          ],
+          [
+            "Während des Transports",
+            "Paketreferenz, Datum des letzten Ereignisses und offizielle Übergabedetails"
+          ],
+          [
+            "Bei Lieferung",
+            "Zustand des Pakets, Inhalt und geltende Meldepflichten"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "Der offizielle Leitfaden warnt ausdrücklich vor Mindestabnahmemengen bei 1688. Ein angezeigter Preis kann von der Menge oder der Variante abhängen. Prüfen Sie, ob Ihre beabsichtigte Bestellung den Anforderungen des Verkäufers entspricht, bevor Sie sie mit einem Einzelangebot anderswo vergleichen. Prüfen Sie auch, ob sich durch die gewählte Menge das Inlandsporto ändert.",
             "Überprüfen Sie vor dem Bezahlen die gesamte Bestellübersicht: korrekter Artikel, richtige Option, richtige Menge und vollständige Kaufkosten. Speichern Sie die resultierende Bestellnummer und Notizen. Wenn später ein Problem auftritt, helfen diese Details dabei, die Kaufanfrage mit dem erhaltenen Artikel zu vergleichen."
           ]
+        },
+        {
+          "heading": "Lesen Sie die Bedingungen auf dem Bestellformular",
+          "paragraphs": [
+            "Bevor Sie diese Anleitung anwenden, prüfen Sie die Bedingungen für Ihre Bestellung. Das offizielle Bestellformular weist darauf hin, dass bestimmte Drittanbieter keinen Kundendienst anbieten und nach der Zahlung keine Rückerstattungen, Stornierungen oder Änderungen akzeptieren. Der allgemeine Rückgabeprozess des Lagers ist daher nicht für jeden Kauf verfügbar. Klären Sie Unklarheiten bezüglich Variante, Preis oder Rückgabebedingungen vor der Zahlung; gehen Sie nicht davon aus, dass ein Inspektionsfoto ein Rückgaberecht begründet."
+          ]
         }
       ],
       "checklist": [
@@ -1177,7 +1508,7 @@
       },
       "seoTitle": "Kakobuy-Links: Angebote öffnen, Varianten prüfen und bestellen",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-qc-photos",
@@ -1320,6 +1651,13 @@
             "Geben Sie bei einem Kapuzenpullover oder einem Fußballtrikot neben den Werten des Verkäufers auch die Brustweite und -länge des Referenzkleidungsstücks an. Markieren Sie jeden Unterschied, den Sie tatsächlich wünschen, z. B. mehr Platz zum Schichten oder einen kürzeren Körper. Überprüfen Sie die Ärmelkonstruktion, bevor Sie die Ärmelnummern vergleichen. Eine überschnittene Schulter und eine herkömmliche Schulternaht können unterschiedliche Startpunkte haben, sodass identische Zahlen nicht unbedingt zu identischer Reichweite führen.",
             "Wenn der Verkäufer nur einen Vorschlag für Größe und Gewicht macht, fragen Sie nach den Maßen des Kleidungsstücks, wenn die Passform wichtig ist. Fragen Sie bei Schuhen nach, welche Länge die Tabelle darstellt und ob eine modellspezifische Weitenbeschreibung verfügbar ist. Notieren Sie die nicht aufgelöste Messung, bevor Sie eine Bestellung aufgeben. Fordern Sie dann bei Bedarf eine genaue Überprüfung im Lager an. Das Ziel ist ein klarer Vergleich, nicht eine universelle Umrechnung von der Buchstabengröße einer Marke auf eine andere."
           ]
+        },
+        {
+          "heading": "Nutzen Sie Maßunterschiede, um eine konkrete Entscheidung zu treffen.",
+          "paragraphs": [
+            "Betrachten Sie ein Referenzkleidungsstück mit ausreichend Platz im Brustbereich, dessen Ärmel jedoch zu kurz sind. Vergleichen Sie die Unterschiede in Brust- und Ärmellänge separat mit der Größentabelle des Verkäufers; treffen Sie Ihre Entscheidung nicht allein aufgrund der Empfehlung, eine Nummer größer zu bestellen. Stellen Sie sicher, dass beide Ärmellängen vom selben Ausgangspunkt ausgehen. Falls die Tabelle eine andere Methode verwendet, fragen Sie nach dem fehlenden Maß, bevor Sie die Werte als vergleichbar betrachten.",
+            "Bewahren Sie die ausgewählte Variante neben dem Maßzettel auf und vergleichen Sie sie erneut, sobald die auftragsspezifischen Bilder eintreffen. Ein übereinstimmendes Größenetikett bestätigt nicht die gemessenen Maße des Kleidungsstücks. Falls eine genaue Messung erforderlich ist, fragen Sie nach, ob das Lager diese exakt durchführen kann und ob dafür Kosten anfallen. Stellen Sie die Anfrage frühzeitig, um gemäß den geltenden Kaufbedingungen handeln zu können."
+          ]
         }
       ],
       "checklist": [
@@ -1355,7 +1693,7 @@
       },
       "seoTitle": "Kakobuy-Größenratgeber: Kleidungs- und Schuhtabellen",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-shipping-calculator",
@@ -1409,6 +1747,13 @@
             "Erstellen Sie vor der Lagervermessung ein leichtes und ein schweres Planungsszenario und notieren Sie, welche Werte Schätzungen sind. Fügen Sie die Verpackung und den gesamten vorgesehenen Inhalt bei. Verwenden Sie beide Szenarien im amtlichen Kostenvoranschlag mit demselben Bestimmungsort und derselben Warenart. Wenn sich die Kosten so stark ändern, dass sie Ihre Kaufentscheidung beeinflussen, warten Sie auf bessere Informationen, anstatt ein ungefähres Produktgewicht als genaues Versandangebot anzugeben.",
             "Der Gewichtsvergleich auf dieser Seite dient lediglich der Berechnung. Der aktuelle Streckentarif, die Abrechnungsstufen, die Mindestgebühr, der Zuschlag oder die Inhaltsbeschränkungen sind nicht bekannt. Lesen Sie diese Bedingungen im offiziellen Angebot und aktualisieren Sie die Eingaben nach dem Packen. Eine genaue Multiplikation kann dennoch zu einem ungeeigneten Budget führen, wenn der gewählte Divisor oder die Paketmaße nicht mit der tatsächlichen Leistung übereinstimmen."
           ]
+        },
+        {
+          "heading": "Angebote unter Verwendung der gleichen Paketannahmen vergleichen",
+          "paragraphs": [
+            "Beim Vergleich von Routen müssen Zielort, Warenart, Packgewicht und Abmessungen konstant bleiben. Notieren Sie, ob jedes Angebot die gewünschten Leistungen beinhaltet, und vermerken Sie eventuelle Rundungen oder Mindestgebühren. Ein Vergleich anhand des Unverpacktgewichts einer Route und des Packgewichts einer anderen kann eine scheinbare Ersparnis vortäuschen, die sich nach der Angebotsabgabe nicht mehr darstellt.",
+            "Der Rechner auf dieser Seite vergleicht ausschließlich Gewichte. Er kann weder die Routenverfügbarkeit noch einen Wechselkurs oder die Versandkosten ermitteln. Wenn Sie die Verpackung ändern, aktualisieren Sie den Kostenvoranschlag, bevor Sie eine Entscheidung treffen. Bewahren Sie den früheren Kostenvoranschlag und das angenommene Paketangebot getrennt auf, damit spätere Anpassungen den geänderten Eingaben zugeordnet werden können."
+          ]
         }
       ],
       "checklist": [
@@ -1443,7 +1788,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy-Versandrechner: Gewicht und Kosten"
     },
     {
@@ -1597,6 +1942,13 @@
             "Die Zeit bis zum Lager unterscheidet sich von der zulässigen Lagerzeit. Die Vorbereitung des Verkäufers und die Lieferung im Inland erfolgen vor dem Wareneingang; Inspektionen und Kontoaktualisierungen folgen ihrem eigenen Arbeitsablauf. Überprüfen Sie zunächst den Versand des Verkäufers und die Sendungsverfolgung im Inland. Ein gelieferter Scan muss mit Ihrer Bestellung abgeglichen werden, bevor Sie davon ausgehen können, dass der Artikel für den Versand in einem internationalen Paket verfügbar ist.",
             "Wenn der Spediteur die Lieferung anzeigt, die Bestellung jedoch nicht als gespeichert angezeigt wird, geben Sie dem Support die inländische Sendungsverfolgungsnummer, das Lieferereignis und die Bestellnummer an. Fragen Sie nach, ob eine Quittung, ein Eigentumsabgleich oder eine Inspektion ansteht. Starten Sie keinen Speicher-Countdown ab einem geschätzten Versanddatum des Verkäufers und betrachten Sie die normale Frist von 100 Tagen nicht als Versprechen hinsichtlich der Bearbeitungsgeschwindigkeit."
           ]
+        },
+        {
+          "heading": "Wählen Sie die nächste Aktion anhand der nächstgelegenen Frist.",
+          "paragraphs": [
+            "Überprüfen Sie jeden eingelagerten Artikel hinsichtlich seiner Lagerfrist und der geltenden Rückgabefrist. Markieren Sie ihn erst dann als versandbereit, nachdem die ausgewählte Variante und der sichtbare Zustand geprüft wurden. Sollte ein Artikel ein ungelöstes Problem aufweisen, kontaktieren Sie den Support umgehend, anstatt auf den Rest eines geplanten Pakets zu warten. Notieren Sie sich Artikel, die Sie behalten möchten, und Artikel, bei denen noch eine Entscheidung des Verkäufers aussteht.",
+            "Stellen Sie sich beispielsweise vor, eine Jacke ist versandbereit, ein anderer Verkäufer hat jedoch ein Paar Schuhe noch nicht versendet. Durch das Warten könnten sich die Paketkosten ändern, die mögliche Ersparnis ändert jedoch nichts an der Rückgabefrist der Jacke. Prüfen Sie daher zuerst die unmittelbare Entscheidung und vergleichen Sie anschließend die Paketoptionen anhand realistischer Packmaße. Beschreiben Sie eine angenommene Ersparnis durch kombinierten Versand nicht als bestätigten Betrag."
+          ]
         }
       ],
       "checklist": [
@@ -1632,7 +1984,7 @@
       },
       "seoTitle": "Kakobuy-Lager: Lagerzeit und -fristen",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     },
     {
       "slug": "kakobuy-consolidation-packaging",
@@ -1765,6 +2117,13 @@
             "Ein unverändertes Ereignis allein identifiziert nicht die Ursache einer Verzögerung. Vergewissern Sie sich zunächst, dass Sie sich das internationale Paket und nicht die Inlandssendung des Verkäufers ansehen. Vergleichen Sie dann das Ereignisdatum mit dem aktuellen Kostenvoranschlag der ausgewählten Linie und allen der Sendung beigefügten Mitteilungen. Bei einem vor der Abholung erstellten Etikett ist die Situation anders als bei einem Paket mit einem späteren Spediteur- oder Zielscan.",
             "Bitten Sie den Support, die ausstehende Etappe anhand der Paketnummer, der Route, des letzten Ereignisses und des Datums zu bestätigen. Wenn Ihrerseits Maßnahmen erforderlich sind, fordern Sie die genauen Informationen und den erforderlichen offiziellen Kanal an. Erfinden Sie keine feste Anzahl von Tagen, nach denen jedes Paket verloren geht, und versprechen Sie kein Lieferdatum anhand eines generischen Statusetiketts. Behalten Sie die Antwort beim bestehenden Fall bei, damit bei der Nachverfolgung noch Ungelöstes behoben werden kann."
           ]
+        },
+        {
+          "heading": "Erstellen Sie eine aussagekräftige Anfrage zur Sendungsverfolgung.",
+          "paragraphs": [
+            "Notieren Sie sich vor der Kontaktaufnahme mit dem Support die Bestell- oder Paketreferenz, den letzten sichtbaren Status, das Ereignisdatum und den beschriebenen Versandweg. Geben Sie den fehlenden nächsten Schritt an: Versand durch den Verkäufer, Lagerprüfung, Paketversand oder Aktualisierung durch den Versanddienstleister. Wenn eine offizielle Übergabebestätigung vorliegt, prüfen Sie diese ebenfalls. Gehen Sie nicht davon aus, dass für jede Route derselbe lokale Zusteller oder derselbe Aktualisierungsplan verwendet wird.",
+            "Beschreiben Sie den Inhalt des Datensatzes, anstatt die Ursache einer Verzögerung anzunehmen. Inlands- und Auslandszustellungen haben unterschiedliche Bedeutungen, und ein erstelltes Versandetikett bedeutet nicht zwangsläufig, dass sich die Ware im Besitz des Zustellers befindet. Fragen Sie nach, wer den Artikel oder das Paket aktuell verwahrt und welche Schritte von Ihnen erforderlich sind. Bewahren Sie die Antwort zusammen mit der akzeptierten Versandprognose und Ihrer Bestellhistorie auf."
+          ]
         }
       ],
       "checklist": [
@@ -1799,7 +2158,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy-Versandzeit und Sendungsverfolgungsstatus"
     },
     {
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Öffnen Sie die entsprechende Bestellung und identifizieren Sie den zuletzt abgeschlossenen Schritt: eingereichte Anfrage, Verkäufervereinbarung, versandte Rücksendung, Verkäuferbeleg, bestätigte Rückerstattung oder Gutschrift des Restbetrags. Notieren Sie das angezeigte Datum und den angezeigten Betrag. Dann fragen Sie den Support nach dem nächsten fehlenden Schritt mit der Bestellnummer und der vorhandenen Fallreferenz. Ein Paket, das immer noch zum Verkäufer zurückgeschickt wird, und ein Guthaben, das auf die Abhebung wartet, erfordern eine andere Nachverfolgung.",
             "Wenn das Guthaben gutgeschrieben wurde, überprüfen Sie bitte separat das Auszahlungsprotokoll. Bestätigen Sie den Zielzahlungskanal, den Status und alle angegebenen Referenzen. Beschreiben Sie die Lagerrückerstattung nicht nur deshalb als unvollendet, weil das Geld nicht durch eine separate Auszahlung auf einem Bankkonto eingetroffen ist. Behalten Sie alle angegebenen Zeiten im Zusammenhang mit der beschriebenen Phase und betrachten Sie die bedingte 7–15-Tage-Referenz nicht als Garantie für jeden Fall."
           ]
+        },
+        {
+          "heading": "Prüfen Sie die Kaufbedingungen, bevor Sie die Rückgabefrist nutzen.",
+          "paragraphs": [
+            "Bevor Sie diese Anleitung anwenden, prüfen Sie die Bedingungen für Ihre Bestellung. Das offizielle Bestellformular weist darauf hin, dass bestimmte Drittanbieter keinen Kundendienst anbieten und nach der Zahlung keine Rückerstattungen, Stornierungen oder Änderungen unterstützen. Der allgemeine Rückgabeprozess des Lagers ist daher nicht für jeden Kauf verfügbar. Klären Sie Unklarheiten bezüglich Variante, Preis oder Rückgabebedingungen vor der Zahlung; gehen Sie nicht davon aus, dass ein Inspektionsfoto ein Rückgaberecht begründet.",
+            "Bei berechtigten verspäteten Rücksendungen dokumentieren Sie bitte den Status: Genehmigungsanfrage, Antwort des Verkäufers, Versand der Rücksendung, Empfangsbestätigung durch den Verkäufer und Gutschrift des Guthabens. Fragen Sie den Support nach dem aktuellen Status und der Referenznummer, die den Abschluss bestätigt. Sobald das Guthaben gutgeschrieben wurde, erfassen Sie bitte jeden separaten Auszahlungsantrag separat. Dies vereinfacht die weiteren Schritte, anstatt denselben Rücksendeantrag erneut zu stellen oder jeden Schritt ab Kaufdatum zu zählen."
+          ]
         }
       ],
       "checklist": [
@@ -1899,7 +2266,7 @@
       },
       "seoTitle": "Kakobuy: Erstattung & Rücksendung aus dem Lager",
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26"
+      "updatedOn": "2026-10-27"
     }
   ],
   "seo": {

@@ -74,7 +74,10 @@
       "invalid": "Sisestage igale väljale positiivne arv.",
       "note": "Suurema kaalu reegel on näide. Teie marsruut võib kasutada erinevaid arveldusreegleid, ümardamist või miinimumtasusid.",
       "official": "Ava ametlik saatmiskulude kalkulaator"
-    }
+    },
+    "navShipping": "Saatmine",
+    "articleTopics": "Valige järgmine samm",
+    "productGuides": "Kontrollige enne tellimist"
   },
   "guide": {
     "sections": [
@@ -163,7 +166,7 @@
       "id": "manual-order",
       "group": 0,
       "q": "Mida teha, kui tootelink ei laadi automaatselt?",
-      "a": "Ametlik ostujuhend sisaldab käsitsi ostutellimuse vormi toodetele, mida ei saa importida. Sisesta müüja tegelik URL ja täpsed tooteandmed. Ära mõtle hinda välja ega vali sarnase välimusega toodet ilma tootelehte kontrollimata ja vajaduse korral ostuagendilt küsimata.",
+      "a": "Ametlik ostujuhend sisaldab käsitsi ostuvormi kuulutuste jaoks, mida ei saa importida. Sisestage tegelik müüja URL ja täpsed tooteandmed. Ärge mõelge hinda välja ega valige sarnase välimusega toodet ilma kuulutust kontrollimata ja vajadusel ostjalt küsimata. Enne selle juhise rakendamist kontrollige oma täpse tellimuse tingimusi. Ametlik käsitsi ostuvorm hoiatab praegu, et teatud kolmandate osapoolte linkidel puudub müügijärgne teenindus ja need ei toeta tagasimakseid, tühistamisi ega muudatusi pärast maksmist. Seetõttu ei ole üldine lao tagastusprotsess iga ostu puhul saadaval. Enne maksmist selgitage ebakindel variant, hind või tagastustingimus; ärge eeldage, et kontrollfoto loob tagastusõiguse.",
       "sources": [
         "buying",
         "manual"
@@ -347,10 +350,11 @@
       "id": "returns-window",
       "group": 4,
       "q": "Kas viiepäevane tagastusreegel kehtib kõigile toodetele?",
-      "a": "Ei. Ametlikud tagastusreeglid sõltuvad müüja nõusolekust, toote tagastamiskõlblikkusest, seisukorrast ja ajast pärast lattu arvelevõtmist. Mõned kategooriad ja muudetud pakendid on välistatud. Kontrolli tellimuse tähtaega ja tagastamisvõimalust kiiresti; 100-päevane hoiustamine ei tähenda 100-päevast tagastusõigust.",
+      "a": "Ei. Ametlikud tagastusreeglid sõltuvad müüja nõusolekust, toote sobivusest, seisukorrast ja ajast pärast laos hoiustamist. Mõned kategooriad ja muudetud pakendid on välja arvatud. Kontrollige tellimuse tähtaega ja sobivust viivitamatult; 100-päevane hoiustamine ei ole 100-päevane tagastusõigus. Enne selle juhise rakendamist kontrollige oma täpse tellimuse tingimusi. Ametlik käsitsi ostuvorm hoiatab praegu, et teatud kolmandate osapoolte linkidel puudub müügijärgne teenindus ja need ei toeta tagasimakseid, tühistamisi ega muudatusi pärast maksmist. Seetõttu ei ole üldine laost tagastusprotsess iga ostu puhul saadaval. Enne maksmist selgitage ebakindel variant, hind või tagastustingimus; ärge eeldage, et kontrollfoto loob tagastusõiguse.",
       "sources": [
         "returns",
-        "storage"
+        "storage",
+        "manual"
       ]
     },
     {
@@ -373,6 +377,327 @@
     }
   ],
   "articles": [
+    {
+      "slug": "is-kakobuy-legit",
+      "category": "research",
+      "title": "Kas Kakobuy on usaldusväärne? Tasud, QC ja tagastused",
+      "seoTitle": "Kas Kakobuy on usaldusväärne? Tasud, QC ja tagastused",
+      "description": "Hinnake Kakobuyd avaldatud ostmisprotsessi, kontrollipiirangute ja tagastustingimuste abil. Enne maksmist kontrollige müüjat, kogumaksumust ja tellimuse tingimusi.",
+      "sources": [
+        "buying",
+        "manual",
+        "inspection",
+        "returns",
+        "refundTime",
+        "estimate"
+      ],
+      "sections": [
+        {
+          "heading": "Mida olemasolevad tõendid saavad kindlaks teha",
+          "paragraphs": [
+            "Kakobuy avaldab ostuprotsessi, lao kontrollimise juhised ja abilehed saatmise ja järelmüügi kohta. Need dokumendid selgitavad, kuidas teenus peaks toimima; need ei tõesta iseseisvalt, et iga müüja, pakk või tagasimakse vastab ootustele. Kui otsite, kas Kakobuy on usaldusväärne ja turvaline, eraldage toimimisprotsessi olemasolu konkreetse tehingu usaldusväärsusest. See juhend on dokumentidel põhinev ostukontrollnimekiri, mitte praktiline test ega hinnang, mis põhineb sooritatud ostudel.",
+            "Alustage täpse otsusega, mis on teie ees. Teil võib olla vaja kinnitada, et link kuulub kavandatud müüjale, et valitud suurus vastab tabelile või et saatmiskulud on taskukohased. Üldine positiivne arvustus ei lahenda ühtegi neist kontrollidest iseenesest. Pange kirja, mis on teada, kust teave pärineb ja mis jääb ebaselgeks. Esitage tellimus ainult siis, kui lahendamata punktid on selle konkreetse ostu jaoks vastuvõetavad, mitte sellepärast, et leht nimetab kogu platvormi usaldusväärseks."
+          ]
+        },
+        {
+          "heading": "Eraldage platvorm, müüja ja avastamisveebisait",
+          "paragraphs": [
+            "Kakobuy kirjeldab agenditeenust, mis ostab kolmandatelt osapooltelt müüjatelt ja aitab korraldada kohaletoimetamist. Kakobuy Pick on eraldi avastamisveebisait: selle kataloogilingid aitavad teil tooteid uurida, samas kui tellimusi ja makseid hallatakse Kakobuy kaudu. Selles kataloogis kuvatav toode ei ole testimisel põhinev soovitus, ametlik kaubamärgi kinnitus ega laoseisu lubadus. Kasutage algset nimekirja ja praegust tellimisvormi, et kontrollida toodet, mida kavatsete osta.",
+            "Hoidke allika URL ja valitud variant koos. Sarnased fotod võivad esineda erinevates nimekirjades ja tuttav tootenimi ei tõenda, et müüja või sisu on identsed. Võrrelge valiku teksti, kaasasolevaid osi ja asjakohaseid mõõte pärast ostulehe avamist. Kui midagi on muutunud, peatage ja selgitage see enne maksmist. Kataloogihind on avastamisviide, seega praeguses tellimuses kuvatav summa võib variandi või müüjahinna muutumisel erineda."
+          ]
+        },
+        {
+          "heading": "Enne maksmist lugege tellimusepõhiseid tingimusi.",
+          "paragraphs": [
+            "Manuaalsel ostuvormil on praegu teatud kolmandate osapoolte linkide puhul rangemad piirangud, sealhulgas müügijärgse teeninduse puudumine ning tagasimakse, tühistamise või muutmise keeld pärast maksmist. See on oluline erand üldistest tagastusjuhistest. Abiartiklit tavaliste laotagastuste kohta ei tohiks käsitleda iga käsitsi esitatud ostu õigusena. Lugege oma tegeliku tellimuse kohta kuvatavaid tingimusi ja paluge enne nende vastuvõtmist tugiteenusel kõik ebakindlused lahendada.",
+            "Salvestage tootelingi ja valitud variandi kõrval kehtivad tingimused. Kui loendis on materjalide, mõõtmete või kaasasolevate tarvikute osas ebaselge, annab piirav tellimus teile vähem võimalusi pettumuse hilisemaks lahendamiseks. Mõistlik vastus on hankida puuduv teave või valida teine ostukorraldus. Ärge eeldage, et laokontroll loob tagastusõiguse, mille tellimuse tingimused välistavad. Praktiline küsimus on selles, kas saate tehingu selles sätestatud tingimustel vastu võtta."
+          ]
+        },
+        {
+          "heading": "Arvutage otsus täismaksumuse abil",
+          "paragraphs": [
+            "Enne agendi ostu võrdlemist teise ostuvõimalusega loetlege toote hind, riigisisene kohaletoimetamine, rahvusvaheline saatmine ja kõik valitud lisateenused. Kontrollige makse sooritamisel valuutat ja tegelikult küsitud summat. Atraktiivne toote hind ei kajasta täielikku kohaletoimetamise maksumust. Ametlik saatmiskulu kalkulaator on kasulik sihtkoha ja paki sisestatud andmetega planeerimisel, kuid varajane hinnang peaks jääma eraldi pakendatud paki lõplikust hinnapakkumisest.",
+            "Kasutage lihtsat võrdlusmärkust, kus on üks veerg kinnitatud summade ja teine lahendamata summade jaoks. Näiteks võite teada valitud toote hinda, kuid pakitud mõõtmed puuduvad. Märkige saatmiskulu esialgseks, selle asemel, et sisestada täpne oletus. Korrake võrdlust, kui asjakohased mõõtmed on saadaval. Kui ost on mõttekas ainult madalaima kujuteldava saatmiskulu kalkulaatori korral, sõltub otsus ebakindlusest, mis väärib tähelepanu enne suurema raha eraldamist."
+          ]
+        },
+        {
+          "heading": "Saage aru, millele kvaliteedikontrolli fotod saavad ja millele mitte vastata",
+          "paragraphs": [
+            "Laofotod aitavad teil võrrelda nähtavaid omadusi valitud tellimusega, näiteks värvi, kogust, suurussilte ja ilmset seisukorda. Kui konkreetne ebakindlus püsib, küsige sihipärast vaadet. Kasulik päring toob välja detaili ja otsuse, mida see toetab, selle asemel, et küsida ebamääraselt paremaid pilte. Hoidke müüja turunduspildid, teiste tellimuste avalikud fotod ja teie enda tellimusega seotud pildid tõendite ülevaatamisel eraldi kategooriates.",
+            "Fotod ei kinnita autentsust, pikaajalist vastupidavust, mugavust ega elektroonika toimimist. Selge silt saab kinnitada sellel sildil olevat teksti, ilma et see tõestaks kõiki sellele lisatud väiteid. Kui autentsed kaubamärgiga kaubad, tehniline jõudlus või sertifitseerimine on teie jaoks olulised, valige ostukanal, mis pakub sobivat kinnitust. See kataloog ja selle juhendid ei kinnita tooteid. Käsitlege tõendite piiranguid oma valikuprotsessi osana, selle asemel, et täita lünki eeldustega."
+          ]
+        },
+        {
+          "heading": "Hinnake tarne- ja tagasimaksenõudeid nende etapi järgi",
+          "paragraphs": [
+            "Müüja lähetus, lao kviitung ja rahvusvaheline paki lähetus on erinevad sündmused. Tarneülevaate lugemisel kontrollige, milline sündmus algatas teatatud ooteaja ja kas sihtkoht ja marsruut vastavad teie olukorrale. Kiire lattu saabumine ei ütle järelejäänud rahvusvahelise teekonna kohta vähe. Samamoodi ei selgita paki hilinemine iseenesest, mis juhtus teise ostja tellimusega. Konkreetsed dateeritud andmed on kasulikumad kui universaalne väide tarnekiiruse kohta.",
+            "Tagasimakse edenemine vajab samuti määratletud etappi. Müüja poolt tagastusele õigustatud olemine võib hõlmata kinnitamist, tagastustransporti, müüjalt raha tagastamist ja Kakobuy saldo krediteerimist. Selle saadaoleva saldo väljavõtmine on eraldi protsess. Küsige, milline etapp on ootel, ja hoidke alles asjakohased viited. Ärge tõlgendage teatatud tagasimakse kestust garanteeritud panga saabumiskuupäevana ega eeldage, et üks edukas tagasimakse tühistab teisel tellimusel kuvatavad piiravad tingimused. Nende protsesside eristamiseks kasutage lingitud tagasimakse juhendit."
+          ]
+        },
+        {
+          "heading": "Kaaluge arvustusi ilma neid garantiideks muutmata",
+          "paragraphs": [
+            "Otsige tõendeid, mis vastavad esitatud väitele. Kasulik ülevaade kirjeldab toodet, tellimisetappi, asjakohaseid kuupäevi ja probleemi lahendamise viisi. Reklaamekraanipilt koos ostulingiga võib küll kuvada päris eset, kuid jätta need küsimused siiski vastuseta. Partnerlingid tuleks avalikustada ja nende olemasolu on pigem põhjus, miks alusmaterjali hoolikalt lugeda, mitte põhjus, miks iga lehel olev väide automaatselt vastu võtta või tagasi lükata.",
+            "Vältige omavahel mitteseotud kogemuste ühendamist täpseks edumääraks. Avalikud kommentaarid ei ole kõigi tehingute kontrollitud valim ja käputäis positiivseid või negatiivseid lugusid ei saa usaldusväärset protsenti toetada. Kui tõendid on vastuolus, tuvastage konkreetne ebakindlus, mida saate ise kontrollida: praegune müüja nimekiri, kirjaliku tellimuse tingimused, kontrolli ulatus või saadaolevad saatmisvõimalused. Kui arvustus ei aita ühelegi neist küsimustest vastata, võib see teie otsuse tegemisel olla vähem kasulik kui otsene selgitus."
+          ]
+        },
+        {
+          "heading": "Tehke ostuotsus selgete peatuspunktidega",
+          "paragraphs": [
+            "Kasutage allolevat kontroll-lehte enne maksmist, pärast lattu saabumist ja enne paki esitamist. Kirjutage igas etapis üles seisund, mis paneks teid peatuma. Näideteks on kinnitamata variant, seletamatu maksumus või nähtav mittevastavus, mida pole lahendatud. See muudab laiaulatusliku usaldusküsimuse otsuste kogumiks, mida saate tegelikult teha. See säilitab ka andmed, kui tugimeeskond vajab aru, kuidas probleem tekkis.",
+            "Alustage uurimist arvutustabelis, seejärel avage algne kuulutus ja ametlik ostuleht, et kontrollid lõpule viia. Hoidke tellimuse kohta käiv suhtlus vastava ametliku tugiprotsessi piires ja vältige konto andmete jagamist mitteametlike abilistega. Kakobuy Pick võib saada vahendustasu avalikustatud partnerluslinkide kaudu; see ei muuda siin kirjeldatud piiranguid. Ükski juhend ei saa garanteerida üksiku tehingu tulemust, kuid selged tõendid ja realistlikud ootused muudavad otsuse teadlikumaks."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kinnitage müüja link, täpne variant ja kohaldatavad tellimuse tingimused.",
+        "Eraldage kinnitatud kulud esialgsetest pakihinnangutest.",
+        "Kasutage nähtavate kontrollide jaoks kvaliteedikontrolli ilma seda autentimiseks käsitlemata.",
+        "Lahendage lahendamata probleemid enne paki eest tasumist või esitamist."
+      ],
+      "table": {
+        "caption": "Praktiline tõendite kogu",
+        "headers": [
+          "Kontroll",
+          "Kasulikud tõendid"
+        ],
+        "rows": [
+          [
+            "Identiteet ja ese",
+            "Algse müüja URL, täpne variant ja praegune tellimisleht"
+          ],
+          [
+            "Tellimuse tingimused",
+            "Kehtivad tühistamis-, tagastamis- ja käsitsi ostmise tingimused"
+          ],
+          [
+            "Maksumus ja kohaletoimetamine",
+            "Kinnitatud tasud, esialgsed saatmisandmed ja valitud marsruut"
+          ],
+          [
+            "Kontroll ja tugi",
+            "Tellimusepõhised fotod, lahendamata probleemid ja tugiviide"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-qc-finder",
+      "category": "inspection",
+      "title": "Kakobuy QC Finder: Kuidas fotosid leida ja võrrelda",
+      "seoTitle": "Kakobuy QC Finder: Kuidas fotosid leida ja võrrelda",
+      "description": "Leidke oma Kakobuy tellimuse fotod ja hinnake avalikke kvaliteedikontrolli tulemusi, kasutades algse müüja linki, varianti ja pildi kuupäeva. Siit saate teada, mida kontrollida, kui fotosid pole.",
+      "sources": [
+        "buying",
+        "inspection",
+        "forwardingInspection",
+        "manual",
+        "returns"
+      ],
+      "sections": [
+        {
+          "heading": "Alustage tootest ja vajaliku foto tüübist",
+          "paragraphs": [
+            "Kakobuy kvaliteedikontrolli otsija otsing võib tähendada oma tellimuse jaoks fotode leidmist või toote uurimist enne ostmist. Need on erinevad ülesanded. Oma ostu sooritamiseks alustage oma ametliku konto tellimuste või lao alalt ja avage vastav toode. Ostueelse uurimistöö puhul on avalik fototulemus vaid viide teisele kuulutusele või tellimusele, kuni saate selle sobitada täpse müüja ja variandiga, mida kaalute.",
+            "Kakobuy Pick kuvab kataloogi allika esitatud toote viitefotosid. See ei märgista neid pilte kinnitatud lao kvaliteedikontrolliks ega paku avalikku tellimuste fotode andmebaasi. Siinsed sammud aitavad teil tõendeid leida ja hinnata; need ei ava privaatseid fotosid ega garanteeri, et iga toote kohta on olemas avalik pilt. Pidage seda erinevust meeles, kui otsing annab küll atraktiivseid pilte, kuid ei anna tellimuse konteksti, jäädvustamise kuupäeva ega algset kuulutuse viidet."
+          ]
+        },
+        {
+          "heading": "Säilitage algne müüja link enne otsimist",
+          "paragraphs": [
+            "Kopeerige algse kuulutuse URL, sealhulgas turuplats ja toote identifikaator, oma uurimismärkmesse. Kataloogi sisemine leheküljenumber ei pruugi olla müüja tootenumber. Otsingutööriistad, mis ootavad algset müüja linki, võivad ebaõnnestuda või tagastada mitteseotud tulemusi, kui neile antakse selle asemel sisemine kataloogi URL. Kui teil on ainult lühike link, avage kuulutus selle tavalise avaliku lehe kaudu ja kontrollige enne viitena kasutamist toote lõplikke andmeid.",
+            "Pange kirja valitud värv, suurus, materjalivalik ning kõik pakendi- või lisatarvikute valikud. Kuulutust saab jagada mitme variandiga, samas kui eraldi müüjad saavad kasutada väga sarnaseid fotosid. Toote nime või kaanepildi sobitamine on seega nõrgem tõend kui algse lingi ja täpse variandi sobitamine. Kui link enam ei laadi, hoidke alles olemasolevad märkmed ja küsige selgitusi; ärge asendage seda vaikselt sarnase välimusega kuulutusega ja eeldage, et fotod on endiselt asjakohased."
+          ]
+        },
+        {
+          "heading": "Leidke oma tellimusega seotud fotod",
+          "paragraphs": [
+            "Ametlik ostujuhend suunab kasutajad pärast kontrolli ja ladustamist konto tellimuste ja laopindade juurde. Leidke tellimus ostule lisatud viite abil ja võrrelge selle olekut pildi saadavusega. Müüja lähetamine ei tähenda, et laokontroll on lõppenud. Kui toode on saabunud, kuid oodatud pilte pole näha, kontrollige tellimuse sõnumeid ja küsige toelt, kas selle toote puhul on veel ootel kättesaamine, kontroll või pildi avaldamine.",
+            "Kasutage ametlikku kontoliidest, selle asemel et anda oma sisselogimisandmeid kolmanda osapoole otsingumootorile. Abi taotlemisel tuvastage tellimus ja puuduv vaade ilma isiklikke aadressimärke või konto ekraanipilte avalikus foorumis avaldamata. Täpne päring võib selgitada, et valitud rõivaeseme suurus on ebaselge, kuna silt pole nähtav. Hoidke tugiteenuse vastus tellimuse andmete juures, et saaksite eristada töötlemise värskendust kinnitusest, et taotletud kontroll on tegelikult lõpule viidud."
+          ]
+        },
+        {
+          "heading": "Enne järelduste tegemist leidke avalike tulemuste vaste",
+          "paragraphs": [
+            "Avaliku fototulemuse puhul kontrollige müüja linki, valitud varianti, jäädvustamise kuupäeva (kui see on saadaval) ja seda, kas pildil olev ese on kirjeldatud kuuluvana tegeliku tellimuse juurde. Hiljutine foto teisest suurusest võib siiski aidata nähtava konstruktsiooni osas, kuid see ei ole teie valitud suuruse mõõtude arvestus. Vanem foto võib kajastada erinevat tootmispartiid või loendi konfiguratsiooni. Kui tulemusel puudub kontekst, registreerige ebakindlus, selle asemel, et pilti kontrollitud tõendiks uuendada.",
+            "Võrdle mitmeid eristavaid detaile, näiteks taskute paigutust, kinnitusviisi, komplektis olevaid osi ja siltide paigutust. Nende detailide sobitamine võib muuta viite asjakohasemaks, kuid see ei tõesta ikkagi, et järgmine tellimus on identne. Kui avalik pilt on vastuolus müüja praeguse valiku tekstiga, selgitage erinevus enne ostmist. Kõige kindlam järeldus võib olla, et saadaolevatest piltidest ei piisa, mitte et kõige veenvam foto peab olema õige."
+          ]
+        },
+        {
+          "heading": "Muutke puuduv detail kasulikuks fotopäringuks",
+          "paragraphs": [
+            "Kasulik fotopäring nimetab eseme täpse osa ja seda, kuidas seda tuleks näidata. Jaki puhul võib see tähendada täielikku lukuühendust või rinnaümbermõõtu, mis on mõõdetud kindlate punktide vahelt. Kingapaari puhul võib see tähendada nii suurussilte kui ka taldade selget vaadet. Enne kui eeldate, et see kuulub tavapärase kontrolli alla, küsige, kas soovitud vaade või mõõt on saadaval ja kas see on tasuline.",
+            "Vältige paljude peaaegu identsete fotode küsimist, mis ei suuda otsust lahendada. Kui probleem on mõõtmismeetodis, küsige seda meetodit selgesõnaliselt. Kui mure on selles, millised lisatarvikud on kaasas, küsige koos asetatud osi. Selge eesmärk muudab vastuse hindamise lihtsamaks. Tehke vahet foto, mõõtmise ja funktsionaalse testi vahel: näiteks toitega seadme foto ei näitaks kõiki funktsioone ega selle pikaajalist töökindlust."
+          ]
+        },
+        {
+          "heading": "Lugege fotosid järjepidevate võrdlustingimustega",
+          "paragraphs": [
+            "Kasutage mõõtmete võrdlemisel samu võrdluspunkte. Lameda rõivaeseme laius, kehaümbermõõt ja paki välismõõt kirjeldavad erinevaid asju. Enne numbri käsitlemist suuruse vastena kontrollige ühikuid ning algus- ja lõpp-punkte. Perspektiiv ja lõdvalt asetatud mõõdulint võivad pildi tõlgendamise raskendada. Kui tõendid on mitmetähenduslikud, otsige selgitust, selle asemel et ehitada ebakindla mõõtmise põhjal täpne sobivussoovitus.",
+            "Värv ja tekstuur sõltuvad ka valgustusest, kaamera sätetest ja teie ekraanist. Müüja foto ja lao foto erinevus võib õigustada lähemat uurimist, kuid see ei määra automaatselt täpset põhjust. Kirjeldage nähtavat probleemi konkreetselt, kui võtate ühendust toega. Fotod võivad toetada seisukorra või variandi kontrolli; need ei saa iseseisvalt tõestada kiu koostist, autentsust, mugavust, vastupidavust ega varjatud vigade puudumist. Täielikuma kontrolli kontrollnimekirja saamiseks kasutage spetsiaalset kvaliteedikontrolli juhendit."
+          ]
+        },
+        {
+          "heading": "Puuduvate tulemuste ja mittevastavuste kiire käsitlemine",
+          "paragraphs": [
+            "Avalik kvaliteedikontrolli tulemus iseenesest ei tõesta, et kuulutus on uus, ohtlik või pole saadaval. See võib lihtsalt tähendada, et otsitud allikas pole avaldatud vastavat pilti. Naaske reaalajas müüja teabe juurde ja otsustage, millistele küsimustele tuleb enne ostmist vastata. Pärast lattu saabumist on teie enda tellimuse fotode mittevastavus otsesem probleem: hoidke pildid alles, tuvastage valitud variant ja küsige klienditoelt järgmise sammu kohta.",
+            "Enne kui eeldate, et tagastamine on võimalik, kontrollige tegelikke tellimuse tingimusi. Manuaalsel ostuvormil on teatud kolmandate osapoolte linkide jaoks rangemad piirangud, sealhulgas tühistamise, tagasimaksete ja järelmüügi piirangud. Tavaliste tellimuste puhul on tagastamisotsusel endiselt oma tähtaeg ja tingimused. Rohkemate avalike fotode ootamine seda tähtaega ei pikenda. Lahendage esmalt tellimusega seotud probleem ja hoidke toodet, silte ja pakendit tagastusprotsessi jaoks nõutavas seisukorras."
+          ]
+        },
+        {
+          "heading": "Pidage kompaktset arvestust, mis toetab järgmist otsust.",
+          "paragraphs": [
+            "Kasutage allolevat võrdlustabelit tõendite kogumina, mitte tulemustabelina. Eraldage nähtavalt kinnitatud ja teadmata osa. Näiteks võib sildi foto kinnitada valitud suuruse teksti, jättes kasutatava sobivuse ebaselgeks. Lisatarviku paigutus võib kinnitada kogust, jättes funktsionaalsuse testimata. See eraldamine takistab julgustava foto kasutamist väidete toetamiseks, mida see tegelikult ei suuda tõestada.",
+            "Kui vajalikud kontrollid on tehtud, liikuge järgmise asjakohase ülesande juurde: suuruse tõlgendamine, tagastustaotlus või paki planeerimine. Hoidke algne link ja kasulikud mõõdud edaspidiseks kasutamiseks alles, kuid kontrollige uuesti tellimuse esitamisel nimekirja, kuna laoseis ja valikud võivad muutuda. Kui avaldate oma arvustuse, eemaldage isikut tuvastavad andmed ja kirjeldage tõendite täpset ulatust. Selge ja piiratud tähelepanek on teisele ostjale kasulikum kui põhjendamata väide, et müüja või toode on universaalselt ohutu.",
+            "Enne tulemuse vastena aktsepteerimist kirjutage lühike selgitus selle kohta, mida see teie otsuses muudab. Kui foto kordab ainult müüja reklaampilti, lisab see vähe iseseisvat teavet. Kui see näitab teie enda tellimuse jaoks nõutud mõõtu, võib see lahendada konkreetse sobivuse ebakindluse. Hoidke nii tõendeid kui ka nende piiranguid samas märkuses, et järeldus jääks hiljem arusaadavaks."
+          ]
+        }
+      ],
+      "checklist": [
+        "Hoidke algne müüja link kataloogi leheküljenumbrist eraldi.",
+        "Kasutage oma tellimuse fotode jaoks oma ametlikku kontot.",
+        "Enne avalikule pildile tuginemist sobitage variant ja kontekst.",
+        "Lahendage nähtavad mittevastavused kehtivate tellimuse tingimuste piires."
+      ],
+      "table": {
+        "caption": "Fotode vastavustõend",
+        "headers": [
+          "Kontroll",
+          "Kasulikud tõendid"
+        ],
+        "rows": [
+          [
+            "Kuulutuse vaste",
+            "Algse turuplatsi URL ja müüja kauba identifikaator"
+          ],
+          [
+            "Variandi vaste",
+            "Valitud värv, suurus, kaasasolevad osad ja nähtavad erinevused"
+          ],
+          [
+            "Foto kontekst",
+            "Teie enda tellimus või avalik viide; kuupäev ja puuduv kontekst"
+          ],
+          [
+            "Otsus",
+            "Nähtav tulemus, ülejäänud ebakindlus ja edasine tegevus"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
+    {
+      "slug": "kakobuy-italy-guide",
+      "category": "shipping",
+      "title": "Kakobuy Itaalia: tellimine, saatmiskulud ja jälgimine",
+      "seoTitle": "Kakobuy Itaalia: tellimine, saatmiskulud ja jälgimine",
+      "description": "Planeerige Kakobuy tellimus Itaaliasse: kontrollige müüja linke, hinnake paki täielikku maksumust, kontrollige saadaolevaid marsruute ja järgige õiget jälgimisetappi.",
+      "sources": [
+        "buying",
+        "manual",
+        "estimate",
+        "volume",
+        "inspection",
+        "returns",
+        "refundTime",
+        "receipt"
+      ],
+      "sections": [
+        {
+          "heading": "Planeeri tellimus Itaaliasse kogu teekonna põhjal",
+          "paragraphs": [
+            "Kakobuy kaudu Itaaliasse tarnimiseks tellimine hõlmab müüjalt ostu, lattu transportimist, ülevaatust ja eraldi rahvusvahelist pakki. Toote hind üksi ei kirjelda kogu teekonda. Alusta toote kinnitamisest ja seejärel kontrolli, kas praegused saatmisvõimalused aktsepteerivad teie sihtkohta ja sisu. See juhend selgitab otsuseid, mida teha; see ei luba iga Itaalia aadressi jaoks kindlat marsruuti, tarnekuupäeva ega fikseeritud saatmishinda.",
+            "Kui uurite, kuidas Kakobuy Itaalias töötab, pidage lühikest tellimusplaani, mis sisaldab müüja linki, valitud varianti, kavandatud tarneaadressi ja lahtisi küsimusi. Enne maksmist otsustage, kas ostul on kindel tähtaeg. Konkreetseks sündmuseks mõeldud pakk vajab suuremat ettevaatust kui paindliku saabumiskuupäevaga tellimus, sest müüja ettevalmistus ja lao käitlemine toimuvad enne rahvusvahelise transiidi algust. Võrrelge alternatiive, kasutades kogu protsessi, mitte eraldi transiidihinnangut."
+          ]
+        },
+        {
+          "heading": "Kontrollige müüja nimekirja ja valitud varianti",
+          "paragraphs": [
+            "Kasutage kandidaatide leidmiseks arvutustabelit, seejärel avage algne müüja nimekiri ja ametlik ostuleht. Kinnitage täpne värv, suurus, mudel ja kaasasolevad osad. Tootenimesid ja fotosid saab uuesti kasutada erinevates nimekirjades, seega jätke valitud valiku juures alles algne URL. Kui automaatne import ebaõnnestub, kasutage praegust ametlikku käsitsi tellimise protsessi alles pärast selle tingimustega tutvumist ja täpsete andmete esitamist. Sarnane pilt ei ole usaldusväärne asendaja algsele nimekirjale.",
+            "Pöörake erilist tähelepanu piiravatele käsitsi tellimise tingimustele. Praegune käsitsi tellimise vorm hoiatab, et teatud kolmandate osapoolte ostudel puudub müügijärgne teenindus ning neid ei saa pärast maksmist tagastada, tühistada ega muuta. Üldised lao tagastamise juhised ei tühista neid tingimusi. Kui te pole suurustabeli, materjali või lisatarviku osas kindel, lahendage see enne tellimuse vastuvõtmist. Otsus peaks põhinema selle ostu puhul näidatud tingimustel, mitte eeldusel, et iga eset saab hiljem tagastada."
+          ]
+        },
+        {
+          "heading": "Võrdle suurusi toote mõõtmismeetodi abil",
+          "paragraphs": [
+            "Itaalia rõivaeseme või jalatsi suurusest, mida tavaliselt kannad, ei piisa, et valida variant tundmatult müüjalt. Võrdle konkreetse kuulutuse tabelit endale sobiva esemega ja pane kirja mõõtmismeetod. Lamedate rõivaste mõõdud ja keha mõõdud on erinevad. Rõivaste puhul määra kindlaks mõõdud, mis on olulised kavandatud lõike ja kihilisuse jaoks. Jalanõude puhul erista jala pikkus, sisetalla pikkus ja välistalla pikkus, selle asemel, et käsitleda iga pikkuse numbrit omavahel asendatavana.",
+            "Kui tabel puudub või on ebaselge, küsi enne tellimist selgitust. Pärast lattu saabumist võib sihipärane mõõtmine aidata lahendada lahtise küsimuse, arvestades kontrollteenust ja võimalikke tasusid. Sildifoto saab valitud silti kinnitada, kuid ei saa garanteerida mugavust. Struktureeritud võrdluseks kasuta allpool lingitud suuruste juhendit ja säilita oma mõõdud tulevaste ostude jaoks. Väldi universaalset juhist valida suurem suurus, sest see võib muuta pikkust ja proportsioone ilma algset sobivusprobleemi lahendamata."
+          ]
+        },
+        {
+          "heading": "Saatmiskulu hindamine sihtkoha ja paki sisestamise abil",
+          "paragraphs": [
+            "Avage ametlik kalkulaator ja valige sihtkohaks Itaalia, kui see valik on saadaval. Sisestage asjakohane kauba tüüp, kaal ja mõõtmed ning seejärel lugege tagastatud marsruutide piiranguid ja arveldusinfot. Tühi tulemus on põhjus sisendeid kontrollida või tugiteenuse poole pöörduda, mitte eeldada, et reklaamitud marsruut paki vastu võtab. Saadavus võib sõltuda sisust ja pakitud pakist, seega kontrollige enne lõplikku esitamist uuesti.",
+            "Enne kauba lattu jõudmist märkige oma mõõtmed ja kaalud hinnangulistena. Uuendage võrdlust, kui mõõdetud teave on saadaval, ja uuesti, kui pakend muutub. Selle saidi saatmislehel olev kaaluvõrdlus näitab tegelikku ja mahukaalu; see ei ole reaalajas hinnakalkulaator. Kasutage marsruudi poolt määratud jagajat ja arveldusmeetodit, selle asemel, et rakendada universaalset valemit igale vedajale. Kergem ese võib ikkagi võtta piisavalt ruumi, et saatmiskulude arvutust muuta."
+          ]
+        },
+        {
+          "heading": "Koostage kuluarve ilma koguhinda välja mõtlemata",
+          "paragraphs": [
+            "Loetlege valitud kauba hind, riigisisene kohaletoimetamine, rahvusvaheline saatmine ja valikulised teenused eraldi. Kontrollige makse valuutat ja praeguse makseviisi poolt nõutavat summat. Hoidke marsruuditingimustes kirjeldatud tasud eraldi kirjetes ja vältige tasu topeltlugemist ainult seetõttu, et erinevad abilehed kasutavad erinevaid silte. Dollarites esitatud hinnangut ei tohiks käsitleda garanteeritud eurodeebetina. Võrrelge tegeliku tehingu ajal kuvatud kinnitatud summasid.",
+            "Itaaliasse kohaletoimetamise puhul ärge tõlgendage marsruudi nime ega reklaamikirjeldust tõendina, et kõik võimalikud saabumistasud on kaasatud. Lugege, mida praegune pakkumine otseselt hõlmab, ja küsige selgitust, kui sõnastus on ebaselge. See juhend ei avalda maksumäära, tolliläve ega garanteeritud tollivormistuse tulemust. Kasulik eelarve kajastab, mis on kaasatud, mis on välja jäetud ja mis jääb teadmata, võimaldades teil enne rahvusvahelist saatmist otsustada, kas kogusumma on endiselt vastuvõetav."
+          ]
+        },
+        {
+          "heading": "Enne esemete ühendamist vaadake ülevaatuse tulemused üle",
+          "paragraphs": [
+            "Kui kaup on hoiustatud, võrrelge oma tellimusega seotud fotosid valitud variandiga. Kontrollige nähtavat seisukorda, kogust ja teile olulisi mõõte. Teise tellimuse avalikud võrdlusfotod ei saa seda ülevaadet asendada. Kui midagi tundub valesti, hoidke pilt ja tellimuse andmed alles ning võtke seejärel viivitamatult ühendust toega. Lahendage probleem enne eseme ühendamist teiste ostudega või rahvusvahelise saatmise taotlemist, kuni vastavad valikud on veel saadaval.",
+            "Kui kavatsete riideid, jalanõusid ja aksessuaare kombineerida, võrrelge saadud pakki marsruudi piirangute ja pakkimisnõuetega. Mittevajaliku pakendi eemaldamine võib mõjutada mahtu, kuid kaitse ja kõik tagastustingimused on siiski olulised. Küsige kavandatava pakkimise kohta, selle asemel, et eeldada, et kokkusurumine või kasti eemaldamine sobib igale esemele. Lao ladustamise tähtaeg on eraldi müüja tagastustähtajast, seega teise eseme ootamine ei säilita samu müügijärgseid valikuid lõputult."
+          ]
+        },
+        {
+          "heading": "Jälgige etappi, mis tegelikult kohaldub",
+          "paragraphs": [
+            "Hoidke ostutellimuse viitenumbrid ja rahvusvaheliste pakkide viitenumbrid eraldi. Kodumaine jälgimissündmus, mis on märgitud kohaletoimetatuks, võib viidata lattu vastuvõtmisele, mitte kohaletoimetamisele Itaalias. Rahvusvaheline jälgimine muutub oluliseks esitatud paki ja selle vedaja teekonna jaoks. Kui värskendus näib olevat hilinenud, registreerige viimane sündmus, selle kuupäev ja jälgimisviide, mida kontrollite. Küsige toelt, milline etapp on ootel, selle asemel, et käsitleda iga vaikset perioodi sama tüüpi viivitusena.",
+            "Järgige ametliku pakiregistri kaudu esitatud üleandmise või kohaliku kohaletoimetamise viitenumbrit. Ärge eeldage, et konkreetne Itaalia vedaja tegeleb iga marsruudiga või et iga saadetise jaoks peab olema uus jälgimisnumber. Kui pakutud kohaletoimetamise ajavahemik on möödas või registris on probleem, esitage abi palumisel täpne paki viitenumber ja viimane nähtav sündmus. Hoidke aktsepteeritud saatmispakkumist alles, et saaksite eristada selle märgitud ulatust varasemast planeerimishinnangust."
+          ]
+        },
+        {
+          "heading": "Valmistuge kohaletoimetamiseks ja säilitage tõendid.",
+          "paragraphs": [
+            "Enne paki esitamist kontrollige, et saaja nimi, aadress, postiindeks ja kontaktandmed oleksid täpsed. Kohaletoimetamisel kontrollige viivitamatult välimist pakendit ja sisu. Kui on nähtavaid kahjustusi või mõni ese puudub, hoidke pakend ja asjakohased fotod alles ning võtke viivitamatult ühendust vastava tugikanaliga. Lugege oma paki kohta kehtivaid kättesaamis- ja kahjunõude nõudeid. Paki foto võib küll aruande toetuseks olla, kuid see iseenesest ei anna õigust hüvitisele.",
+            "Pärast edukat kohaletoimetamist hoidke võrdluseks alles kasulikud rõivaeseme mõõdud, paki andmed ja marsruudi kirjeldus. Käsitlege neid pigem selle tellimuse dokumentidena kui järgmise tellimuse püsivate lubadustena. Uuesti tellides kontrollige uuesti müüjat, saadaolevaid variante ja kehtivat saatmispakkumist. Alustage avastamiseks allolevatest kategoorialinkidest ja seejärel kasutage saatmis-, jälgimis- ja tagasimaksejuhendeid konkreetsete otsuste tegemiseks, mida need hõlmavad. See hoiab toodete sirvimise seotuna praktiliste kontrollidega, selle asemel et tugineda ühele üldisele soovitusele.",
+            "Lihtsa planeerimisnäitena võrrelge valmis rõivaeseme saatmist ootamisega kingade järele, mis pole veel lattu jõudnud. Registreerige lahendamata müüja saadetis, võimalik pakendimuudatus ja eraldi tagastustähtajad. Ärge eeldage, et ootamine säästab raha, kuni ühendatud paki suurust saab realistlike andmete põhjal hinnata. Parem valik sõltub praegusest hinnapakkumisest, kaitsevajadustest ja teie tähtajast, mitte ainult pakis olevate esemete arvust."
+          ]
+        }
+      ],
+      "checklist": [
+        "Kinnitage täpne nimekiri ja kohaldatavad käsitsi tellimise tingimused.",
+        "Kontrollige uuesti Itaalia marsruudi saadavust, kasutades tegelikke pakiandmeid.",
+        "Eraldage eseme hind, makse summa ja saatmiskulu.",
+        "Hoidke tellimuse ja paki jälgimisandmeid eraldi ning kontrollige kohaletoimetamist viivitamatult."
+      ],
+      "table": {
+        "caption": "Itaalia tellimuse planeerimise protokoll",
+        "headers": [
+          "Kontroll",
+          "Kasulikud tõendid"
+        ],
+        "rows": [
+          [
+            "Enne ostmist",
+            "Müüja URL, täpne variant, suuruse meetod ja tellimuse tingimused"
+          ],
+          [
+            "Enne saatmist",
+            "Itaalia sihtkoht, sisu, pakitud mõõtmed ja saadaolev pakkumine"
+          ],
+          [
+            "Transpordi ajal",
+            "Paki viitenumber, viimase kuupäevaga sündmus ja kõik ametlikud üleandmise üksikasjad"
+          ],
+          [
+            "Kohaletoimetamisel",
+            "Paki seisukord, sisu ja kohaldatavad aruandlusnõuded"
+          ]
+        ]
+      },
+      "publishedOn": "2026-10-27",
+      "updatedOn": "2026-10-27"
+    },
     {
       "slug": "kakobuy-hoodie-finds",
       "category": "research",
@@ -1146,6 +1471,12 @@
             "Ametlik juhend hoiatab eraldi 1688 minimaalsete ostukoguste eest. Kuvatud hind võib sõltuda kogusest või variandist. Enne mujal pakutava ühe tootega võrdlemist kontrolli, kas kavandatud tellimus vastab müüja nõudele. Kontrolli ka seda, kas valitud kogus muudab riigisisest saatmiskulu.",
             "Enne maksmist vaata kogu tellimuse kokkuvõte üle: õige toode, õige valik, õige kogus ja täielik ostukulu. Salvesta saadud tellimuse number ja märkmed. Hilisema probleemi korral aitavad need andmed klienditoel ostusoovi saadud tootega võrrelda."
           ]
+        },
+        {
+          "heading": "Lugege käsitsi ostuvormil olevaid tingimusi",
+          "paragraphs": [
+            "Enne selle juhise rakendamist kontrollige oma täpse tellimuse tingimusi. Ametlik käsitsi ostuvorm hoiatab praegu, et teatud kolmandate osapoolte linkidel puudub müügijärgne teenindus ja need ei toeta tagasimakseid, tühistamisi ega muudatusi pärast maksmist. Seega ei ole üldine lao tagastusprotsess iga ostu puhul saadaval. Enne maksmist selgitage ebakindel variant, hind või tagastustingimus; ärge eeldage, et kontrollfoto loob tagastusõiguse."
+          ]
         }
       ],
       "checklist": [
@@ -1176,7 +1507,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-19",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy lingid: ava kuulutus, kontrolli varianti ja telli"
     },
     {
@@ -1320,6 +1651,13 @@
             "Dressipluusi või jalgpallisärgi puhul kirjutage müüja väärtuste kõrvale võrdlusrõiva rinna laius ja pikkus. Märkige kõik erinevused, mida te tegelikult soovite, näiteks rohkem ruumi kihiliseks kandmiseks või lühem kehaosa. Enne varrukanumbrite võrdlemist kontrollige varruka konstruktsiooni. Madalama õla ja tavalise õlaõmbluse puhul võivad alguspunktid olla erinevad, seega identsed numbrid ei pruugi tingimata anda identset ulatust.",
             "Kui müüja annab ainult pikkuse ja kaalu soovituse, küsige rõivaeseme mõõte, kui sobivus on oluline. Jalatsite puhul küsige, millist pikkust tabel esindab ja kas mudelipõhine laiuse kirjeldus on saadaval. Enne tellimist registreerige lahendamata mõõt; seejärel paluge vajadusel laost täpne kontroll. Eesmärk on selge võrdlus, mitte universaalne teisendamine ühe kaubamärgi suurustähelt teisele."
           ]
+        },
+        {
+          "heading": "Kasutage konkreetse otsuse tegemiseks mõõtude erinevust",
+          "paragraphs": [
+            "Kaaluge referentsrõivast, millel on mugav rinnaruum, kuid varrukad tunduvad liiga lühikesed. Võrrelge rinna- ja varrukamõõtude erinevusi eraldi müüja tabeliga; ärge taandage otsust ühele juhisele suurema suuruse valimiseks. Veenduge, et mõlemad varrukamõõdud on sama lähtepunktiga. Kui tabelis on kasutatud teistsugust meetodit, küsige enne numbrite võrreldavaks käsitlemist puuduvat mõõtu.",
+            "Hoidke valitud varianti mõõtude märkuse kõrval ja võrrelge seda uuesti, kui tellimusepõhised pildid saabuvad. Sobiva suuruse silt ei kinnita rõivaeseme mõõdetud mõõtmeid. Kui mõõt on oluline, küsige, kas ladu saab pakkuda täpset mõõtude kontrolli ja kas neil on tasu. Esitage taotlus piisavalt vara, et tegutseda vastavalt kehtivatele ostutingimustele."
+          ]
         }
       ],
       "checklist": [
@@ -1354,7 +1692,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy suuruste juhend: rõivaste ja jalanõude tabelid"
     },
     {
@@ -1409,6 +1747,13 @@
             "Enne lao mõõtmist looge kerge ja raske planeerimisstsenaarium ning märkige, millised väärtused on hinnangulised. Lisage pakend ja kogu kavandatud sisu. Kasutage mõlemat stsenaariumi ametlikus kalkulaatoris sama sihtkoha ja kaubatüübiga. Kui hind muutub piisavalt, et mõjutada teie ostuotsust, oodake paremat teavet, selle asemel, et esitada ligikaudne tootekaal täpse saatmispakkumisena.",
             "Sellel lehel olev kaaluvõrdlus illustreerib ainult arvutust. See ei tea praegust marsruudi hinda, arveldusastmeid, miinimumtasu, lisatasu ega sisupiiranguid. Lugege need tingimused ametlikust hinnapakkumisest läbi ja värskendage sisendeid pärast pakkimist. Täpne korrutamine võib ikkagi anda sobimatu eelarve, kui valitud jagaja või paki mõõtmed ei vasta tegelikule teenusele."
           ]
+        },
+        {
+          "heading": "Võrdle hinnapakkumisi, kasutades samu paki eeldusi",
+          "paragraphs": [
+            "Marsruutide võrdlemisel hoia sihtkoht, kauba tüüp, pakitud kaal ja mõõtmed konstantsena. Pane kirja, kas iga hinnapakkumine sisaldab teenuseid, mida kavatsed valida, ja pane tähele marsruudi juures märgitud ümardamist või miinimumtasu. Võrdlus pakkimata kaalu abil ühel marsruudil ja pakitud kaalu abil teisel marsruudil võib anda näilise kokkuhoiu, mis esitamisel kaob.",
+            "Sellel lehel olev kalkulaator võrdleb ainult kaalusid. See ei saa määrata marsruudi saadavust, vahetuskurssi ega makstavat saatmissummat. Kui muudad pakendit, uuenda enne otsuse tegemist ametlikku hinnapakkumist. Hoia varasem hinnapakkumine ja aktsepteeritud paki hinnapakkumine eraldi arvestustes, et hilisemaid kohandusi saaks jälgida muudetud sisenditega."
+          ]
         }
       ],
       "checklist": [
@@ -1443,7 +1788,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy saatmiskalkulaator: kaal ja maksumus"
     },
     {
@@ -1597,6 +1942,13 @@
             "Lattu jõudmise aeg erineb laos lubatud ajast. Müüja ettevalmistus ja riigisisene kohaletoimetamine toimuvad enne lattu jõudmist; kontrollimine ja konto värskendused järgivad oma töövoogu. Kontrollige kõigepealt müüja lähetamist ja riigisisest jälgimist. Kohale toimetatud skaneering tuleb teie tellimusega sobitada, enne kui eeldate, et toode on rahvusvahelises pakis esitamiseks saadaval.",
             "Kui vedaja näitab kohaletoimetamist, kuid tellimust ei ole laos olevaks märgitud, esitage toele riigisisene jälgimisnumber, kohaletoimetamise sündmus ja tellimuse number. Küsige, kas kättesaamine, omandiõiguse vastavusse viimine või kontroll on ootel. Ärge alustage laoseisu loendamist arvatava müüja lähetamise kuupäevast ega käsitlege tavapärast 100-päevast lubadust töötlemiskiiruse lubadusena."
           ]
+        },
+        {
+          "heading": "Vali järgmine toiming lähimast tähtajast",
+          "paragraphs": [
+            "Vaadake iga hoiustatud eset üle nii selle hoiustamise tähtaja kui ka kohaldatava tagastustähtaja suhtes. Märkige see saatmiseks valmis alles pärast valitud variandi ja nähtava seisukorra kontrollimist. Kui esemel on lahendamata probleem, võtke kohe ühendust toega, selle asemel et oodata ülejäänud planeeritud paki saatmist. Hoidke eraldi märkust kaupade kohta, mida kavatsete alles hoida, ja kaupade kohta, mis ootavad müüja otsust.",
+            "Praktilise võrdluse huvides kujutage ette, et jope on valmis, kuid teine müüja pole veel kingapaari saatnud. Ootamine võib paki maksumust muuta, kuid see võimalik kokkuhoid ei lahenda jope tagastamise tähtaega. Kontrollige kõigepealt kohest otsust ja seejärel võrrelge pakivalikuid realistlike pakkimismõõtude abil. Ärge kirjeldage eeldatavat kombineeritud paki kokkuhoidu kinnitatud summana."
+          ]
         }
       ],
       "checklist": [
@@ -1631,7 +1983,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy ladu: ladustamisaeg ja tähtajad"
     },
     {
@@ -1765,6 +2117,13 @@
             "Muutumatu sündmus iseenesest ei tuvasta viivituse põhjust. Kõigepealt veenduge, et vaatate rahvusvahelist pakki, mitte müüja siseriiklikku saadetist. Seejärel võrrelge sündmuse kuupäeva valitud rea praeguse hinnangu ja saadetisele lisatud teadetega. Enne kättesaamist loodud silt erineb olukorrast, kus pakk skaneeritakse hiljem vedaja või sihtkoha poolt.",
             "Paluge klienditoel kinnitada ootel olev etapp paki numbri, marsruudi, viimase sündmuse ja kuupäeva abil. Kui teil on vaja midagi ette võtta, küsige täpset teavet ja ametlikku kanalit. Ärge mõelge välja kindlat päevade arvu, mille möödudes iga pakk kaob, ja ärge lubage üldise staatuse sildi põhjal tarnekuupäeva. Hoidke vastus olemasoleva juhtumi juures, et järelmeetmetega saaks lahendada veel lahendamata probleemid."
           ]
+        },
+        {
+          "heading": "Valmistage ette kasulik jälgimistoe taotlus",
+          "paragraphs": [
+            "Enne toega ühenduse võtmist registreerige tellimuse või paki viitenumber, viimane nähtav olek, sündmuse kuupäev ja millist teekonda viide kirjeldab. Märkige puuduv järgmine samm: müüja lähetamine, laokontroll, paki lähetamine või vedaja värskendus. Kui on esitatud ametlik üleandmisviide, kontrollige ka seda dokumenti. Ärge järeldage, et iga marsruut kasutab sama kohalikku vedajat ega uuendage ajakava.",
+            "Kirjeldage, mida dokument näitab, selle asemel, et eeldada viivituse põhjust. Riigisisestel ja rahvusvahelistel tarnetel on erinev tähendus, samas kui loodud saateleht ei tõenda alati vedaja valdust. Küsige, millisel poolel on ese või pakk praegu käes ja milliseid toiminguid teilt nõutakse. Hoidke vastus koos aktsepteeritud saatmishinnangu ja tellimuste ajalooga alles."
+          ]
         }
       ],
       "checklist": [
@@ -1799,7 +2158,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy saatmisaeg ja jälgimise olek"
     },
     {
@@ -1812,7 +2171,8 @@
         "refundTime",
         "storage",
         "withdrawal",
-        "receipt"
+        "receipt",
+        "manual"
       ],
       "sections": [
         {
@@ -1864,6 +2224,13 @@
             "Avage vastav tellimus ja tuvastage viimane lõpule viidud samm: esitatud taotlus, müüja leping, saadetud tagastus, müüja kviitung, kinnitatud tagasimakse või krediteeritud saldo. Kirjutage üles näidatud kuupäev ja summa. Seejärel küsige klienditoelt järgmise puuduva sammu kohta, lisades tellimuse numbri ja olemasoleva juhtumi viitenumbri. Müüjale tagasi teel olev pakk ja krediteeritud saldo, mis ootab väljamakset, vajavad teistsugust järelkontrolli.",
             "Kui saldo on krediteeritud, kontrollige väljamakse kannet eraldi. Kinnitage sihtkoha maksekanal, olek ja kõik esitatud viited. Ärge kirjeldage lao tagasimakset lõpetamata ainult seetõttu, et raha pole eraldi väljamakse kaudu pangakontole jõudnud. Hoidke kõik tsiteeritud ajad seotud kirjeldatud etapiga ja ärge käsitlege tingimuslikku 7–15-päevast viidet iga juhtumi garantiina."
           ]
+        },
+        {
+          "heading": "Enne tagastusajakava kasutamist kontrollige ostutingimusi",
+          "paragraphs": [
+            "Enne selle juhise rakendamist kontrollige oma täpse tellimuse tingimusi. Ametlik käsitsi ostetav vorm hoiatab praegu, et teatud kolmandate osapoolte linkidel puudub müügijärgne teenindus ja need ei toeta tagasimakseid, tühistamisi ega muudatusi pärast maksmist. Seetõttu ei ole üldine lao tagastusprotsess iga ostu puhul saadaval. Enne maksmist selgitage ebakindel variant, hind või tagastustingimus; ärge eeldage, et kontrollfoto loob tagastusõiguse.",
+            "Hilinenud tagastuse korral pidage lühikest staatuse arvestust: taotletud kinnitus, müüja vastus, tagastuse lähetus, müüja kviitung ja saldo krediteerimine. Küsige tuge poolelioleva etapi kohta ja viidet, mis kinnitab lõpuleviimist. Kui saldo on krediteeritud, registreerige iga eraldi tagastustaotlus eraldi. See muudab järgmise tegevuse selgemaks kui sama tagastustaotluse uuesti esitamine või iga etapi lugemine ostukuupäevast."
+          ]
         }
       ],
       "checklist": [
@@ -1898,7 +2265,7 @@
         ]
       },
       "publishedOn": "2026-10-17",
-      "updatedOn": "2026-10-26",
+      "updatedOn": "2026-10-27",
       "seoTitle": "Kakobuy: raha tagastamise aeg ja kauba tagastamine"
     }
   ],
