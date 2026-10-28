@@ -48,21 +48,21 @@
     "catalogGuideNote": "Tá grianghraif agus praghsanna Táirge tagairtí. Seiceáil an liosta díoltóir cruinn agus do stóras QC féin roimh loingseoireachta.",
     "nextStep": "Roghnaigh do chéad chéim eile",
     "weightToolTitle": "Áireamhán meáchain beartáin",
-    "weightToolIntro": "Seiceáil meáchan iarbhír agus méadrach. Ní luann an uirlis seo praghsanna loingseoireachta; bain úsáid as riail roinneoir agus billeála an bhealaigh roghnaithe.",
+    "weightToolIntro": "Déan comparáid idir meáchan iarbhír an bheartáin agus a mheáchan toirte. Úsáid roinnteoir agus riail bhilleála an bhealaigh roghnaithe. Ní ríomhann an uirlis praghsanna loingseoireachta.",
     "actualWeight": "Meáchan iarbhír an bheartáin phacáilte (kg)",
     "parcelLength": "Fad seachtrach (cm)",
     "parcelWidth": "Leithead seachtrach (cm)",
     "parcelHeight": "Airde Amuigh (cm)",
     "weightDivisor": "Roinnteoir meáchain toirte an bhealaigh",
-    "weightRule": "Riail mhuirir",
-    "higherWeight": "Níos airde de mheáchan iarbhír agus meáchan méadrach",
+    "weightRule": "Riail bhilleála",
+    "higherWeight": "An ceann is mó den mheáchan iarbhír agus den mheáchan toirte",
     "actualOnly": "Meáchan iarbhír amháin",
     "calculateWeight": "Ríomh meáchan",
     "volumetricWeight": "Meáchan toirte",
     "billingBase": "Meáchan roimh slánú",
-    "weightDisclaimer": "Ríomh meáchan léiritheach amháin. Tá feidhm fós ag slánú bealaí, muirir íosta, teorainneacha toisí agus táillí seirbhíse. Deimhnigh an ceanglófar reatha le Sugargoo.",
+    "weightDisclaimer": "Taispeánann an toradh an meáchan roimh shlánú agus íosbhilleáil. Tá teorainneacha méide agus táillí seirbhíse fós i bhfeidhm. Deimhnigh an luachan reatha le Sugargoo.",
     "weightError": "Cuir isteach uimhir dhearfach i ngach réimse tomhais.",
-    "officialEstimatorGuide": "Oscail an treoir oifigiúil meastachán loingseoireachta"
+    "officialEstimatorGuide": "Oscail an treoir oifigiúil don áireamhán loingseoireachta"
   },
   "groups": {
     "basics": "Ag tosú",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Áireamhán loingseoireachta Sugargoo: meáchan agus costas",
-      "description": "Ríomh meáchan méadrach dáileacht, tuiscint a fháil ar mheáchan inbhilleála, agus comparáid a dhéanamh Sleachta loingseoireachta Sugargoo baint úsáide as do cheann scríbe, toisí agus catagóir mír.",
+      "description": "Déan comparáid idir meáchan iarbhír an bheartáin agus a mheáchan toirte. Úsáid roinnteoir agus riail bhilleála an bhealaigh roghnaithe. Ní ríomhann an uirlis praghsanna loingseoireachta.",
       "keyword": "áireamhán seolta Sugargoo",
       "category": "shipping",
       "intro": [
-        "Bain úsáid as meastachán loingseoireachta oifigiúil Sugargoo do phraghsanna reatha agus infhaighteacht bealach. Cuir isteach an ceann scríbe, catagóir mír, meáchan pacáilte agus toisí. Cabhraíonn an uirlis meáchain thíos seiceáil ar an matamaitic; ní dhéanann sé ceangal lasta nó ceangal le do chuntas Sugargoo.",
+        "Déan comparáid idir meáchan iarbhír an bheartáin agus a mheáchan toirte. Úsáid roinnteoir agus riail bhilleála an bhealaigh roghnaithe. Ní ríomhann an uirlis praghsanna loingseoireachta. Taispeánann an toradh an meáchan roimh shlánú agus íosbhilleáil. Tá teorainneacha méide agus táillí seirbhíse fós i bhfeidhm. Deimhnigh an luachan reatha le Sugargoo.",
         "Cuir bealaí i gcomparáid le hionchuir dáileachta comhionanna. Is féidir le ceanglófar bunaithe ach amháin ar mheáchan míre a chailleann an spás a úsáideann bróga nó pacáistiú cosanta. Seiceáil riail, slánú agus muirear íosta gach bealaigh sula n-íoctar é."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Sampla oibrithe toirte-meáchain",
+          "title": "Sampla de ríomh meáchain toirte",
           "paragraphs": [
             "Sampla léiritheach, ní ceanglaítear loingseoireachta: tomhaiseann dáileacht 40 × 30 × 20 cm agus meáchann 3 kg. Le roinneoir 6000, is é a mheáchan méadrach ná 4 kg. Bheadh bealach ag baint úsáide as an níos mó de mheáchan iarbhír agus meáchan méadrach tosú ó 4 kg roimh a shlánú nó íosta-mhuirear rialacha. Bheadh bealach a mhuirearú meáchan iarbhír ach amháin tosú ó 3 kg.",
             "Más féidir leis na hearraí céanna oiriúnach go sábháilte i bpacáiste 40 × 30 × 15 cm, bíonn an meáchan méadrach ríomhtha 3 kg leis an roinnteoir sin. Ní dhéanann sé seo ach tomhais a chur i gcomparáid. Ní léir gur coigilteas é: seirbhísí pacála, incháilitheacht bealaí, incrimintí meáchain agus féadfaidh an taraif reatha an t-iomlán deiridh a athrú."
           ],
           "bullets": [
             "Úsáid toisí amuigh pacáilte i gceintiméadair, ní toisí táirge.",
-            "Tiontaigh gramanna go cileagram sula n-úsáideann siad an uirlis thíos: 3000 g is ionann 3 kg.",
+            "Tiontaigh graim go cileagraim: is ionann 3000 g agus 3 kg.",
             "Tóg an riail roinnteora agus muirearú ón mbealach a bhfuil tú ag smaoineamh air."
           ]
         },

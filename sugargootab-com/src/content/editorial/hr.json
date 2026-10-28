@@ -48,21 +48,21 @@
     "catalogGuideNote": "Fotografije i cijene proizvoda su reference. Provjerite točan popis prodavača i svoje skladište QC prije dostave.",
     "nextStep": "Odaberite svoj sljedeći korak",
     "weightToolTitle": "Kalkulator težine paketa",
-    "weightToolIntro": "Provjerite stvarnu i volumetricu težine. Ovaj alat ne navodi cijene dostave; koristite pravilo o dijeljivanju i naplati odabrane rute.",
+    "weightToolIntro": "Usporedite stvarnu težinu paketa s volumetrijskom težinom. Koristite djelitelj i pravilo obračuna odabrane rute. Alat ne izračunava cijenu dostave.",
     "actualWeight": "Stvarna težina zapakiranog paketa (kg)",
     "parcelLength": "Vanjska duljina (cm)",
     "parcelWidth": "Vanjska širina (cm)",
     "parcelHeight": "Vanjska visina (cm)",
     "weightDivisor": "Djelitelj volumetrijske težine za rutu",
-    "weightRule": "Pravilo punjenja",
-    "higherWeight": "Više stvarne i volumetrične težine",
+    "weightRule": "Pravilo obračuna",
+    "higherWeight": "Veća od stvarne i volumetrijske težine",
     "actualOnly": "Samo stvarna težina",
     "calculateWeight": "Izračunaj težinu",
     "volumetricWeight": "Volumetrična težina",
     "billingBase": "Težina prije zaokruženja",
-    "weightDisclaimer": "Samo ilustrativan izračun težine. Još uvijek se primjenjuju zaokruživanje ruta, minimalni troškovi, ograničenja dimenzija i naknade za usluge. Potvrdi trenutni citat s Sugargooom.",
+    "weightDisclaimer": "Rezultat prikazuje težinu prije zaokruživanja i minimalnog obračuna. Vrijede i ograničenja dimenzija te naknade za usluge. Provjerite aktualnu ponudu na Sugargoo.",
     "weightError": "Unesite pozitivan broj u svako mjerno polje.",
-    "officialEstimatorGuide": "Otvorite službeni vodič za procjenu dostave"
+    "officialEstimatorGuide": "Otvorite službeni vodič za kalkulator dostave"
   },
   "groups": {
     "basics": "Prvi koraci",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo kalkulator dostave: težina i troškovi",
-      "description": "Izračunajte količinu paketa težine, razumjeti naplatnu težinu i usporedite Sugargooove navode za dostavu pomoću odredišta, dimenzije i kategorije artikala.",
+      "description": "Usporedite stvarnu težinu paketa s volumetrijskom težinom. Koristite djelitelj i pravilo obračuna odabrane rute. Alat ne izračunava cijenu dostave.",
       "keyword": "Sugargoo kalkulator dostave",
       "category": "shipping",
       "intro": [
-        "Koristite Sugargooov službeni procjenitelj prijevoza za trenutne cijene i raspoloživost ruta. Unesite odredište, kategoriju stavke, ambalažu i dimenzije. Alat za težinu u nastavku pomaže provjeriti matematiku; ne citira teret ili se priključiti na vaš Sugargoo račun.",
+        "Usporedite stvarnu težinu paketa s volumetrijskom težinom. Koristite djelitelj i pravilo obračuna odabrane rute. Alat ne izračunava cijenu dostave. Rezultat prikazuje težinu prije zaokruživanja i minimalnog obračuna. Vrijede i ograničenja dimenzija te naknade za usluge. Provjerite aktualnu ponudu na Sugargoo.",
         "Usporedite rute pomoću identičnih ulaznih paketa. Citat koji se temelji samo na težini predmeta može propustiti prostor koji koriste kutije za cipele ili zaštitno pakiranje. Provjerite pravila za naplatu, zaokruživanje i minimalnu naknadu prije plaćanja."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Obrađen primjer volumenske težine",
+          "title": "Primjer izračuna volumetrijske težine",
           "paragraphs": [
             "Primjer ilustracije, a ne citat o prijevozu: paket mjere 40 × 30 × 20 cm i teži 3 kg. S divizorom od 6000, njegova volumtrijska težina je 4 kg. Ruta kojom se koristi veća stvarna i volumenska težina započela bi od 4 kg prije zaokruživanja ili minimalnih pravila. Ruta punjenja stvarne težina samo će početi od 3 kg.",
             "Ako se ista roba može sigurno uklopiti u paket od 40 × 30 × 15 cm, izračunana volumenska težina postaje 3 kg s tim divizorom. To samo uspoređuje mjerenja. To ne dokazuje uštedu: usluge pakiranja, prihvatljivost ruta, povećanje težine i trenutnu tarifu mogu promijeniti konačni iznos."
           ],
           "bullets": [
             "Koristi vanjske dimenzije u centimetrima, a ne dimenzijama proizvoda.",
-            "Pretvoriti grame u kilograme prije nego što koristite alat ispod: 3000 g jednako 3 kg.",
+            "Pretvorite grame u kilograme: 3000 g iznosi 3 kg.",
             "Uzmi divizor i napuni pravilo iz rute koju razmatraš."
           ]
         },

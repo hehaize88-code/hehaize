@@ -48,21 +48,21 @@
     "catalogGuideNote": "Produktfoton och priser är referenser. Kontrollera den exakta säljaren och ditt eget lager QC före leverans.",
     "nextStep": "Välj nästa steg",
     "weightToolTitle": "Paketviktskalkylator",
-    "weightToolIntro": "Kontrollera verklig och volymetrisk vikt. Detta verktyg inte ange fraktpriser; använda den valda rutten till s divisor och fakturering regel.",
+    "weightToolIntro": "Jämför paketets faktiska vikt med volymvikten. Använd den valda ruttens divisor och debiteringsregel. Verktyget beräknar inga fraktpriser.",
     "actualWeight": "Paketets faktiska vikt (kg)",
     "parcelLength": "Yttre längd (cm)",
     "parcelWidth": "Yttre bredd (cm)",
     "parcelHeight": "Yttre höjd (cm)",
     "weightDivisor": "Ruttens divisor för volymvikt",
-    "weightRule": "Avgiftsregel",
-    "higherWeight": "Högre faktisk och volymetrisk vikt",
+    "weightRule": "Debiteringsregel",
+    "higherWeight": "Det högsta av faktisk vikt och volymvikt",
     "actualOnly": "Endast faktisk vikt",
     "calculateWeight": "Beräkna vikt",
     "volumetricWeight": "Volymvikt",
     "billingBase": "Vikt före avrundning",
-    "weightDisclaimer": "Endast Illustrativ viktberäkning. Ruttavrundning, minimiavgifter, måttgränser och serviceavgifter gäller fortfarande. Bekräfta den aktuella offerten med Sugargoo.",
+    "weightDisclaimer": "Resultatet visar vikten före avrundning och minsta debiterbara vikt. Storleksgränser och serviceavgifter gäller också. Kontrollera det aktuella priset hos Sugargoo.",
     "weightError": "Ange ett positivt tal i varje mätfält.",
-    "officialEstimatorGuide": "Öppna den officiella sjöskattningsguiden"
+    "officialEstimatorGuide": "Öppna den officiella guiden till fraktkalkylatorn"
   },
   "groups": {
     "basics": "Kom igång",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo fraktkalkylator: beräkna vikt och kostnad",
-      "description": "Beräkna paket volymetrisk vikt, förstå fakturerad vikt, och jämföra Sugargoo frakt offerter med hjälp av din destination, dimensioner och artikelkategori.",
+      "description": "Jämför paketets faktiska vikt med volymvikten. Använd den valda ruttens divisor och debiteringsregel. Verktyget beräknar inga fraktpriser.",
       "keyword": "Sugargoo fraktkalkylator",
       "category": "shipping",
       "intro": [
-        "Använd Sugargoos officiella fraktskattare för aktuella priser och tillgång till rutt. Ange destination, objektkategori, förpackad vikt och mått. Viktverktyget nedan hjälper till att kontrollera matematiken; det citerar inte frakt eller ansluta till ditt Sugargoo-konto.",
+        "Jämför paketets faktiska vikt med volymvikten. Använd den valda ruttens divisor och debiteringsregel. Verktyget beräknar inga fraktpriser. Resultatet visar vikten före avrundning och minsta debiterbara vikt. Storleksgränser och serviceavgifter gäller också. Kontrollera det aktuella priset hos Sugargoo.",
         "Jämför rutter med identiska paketingångar. En offert baserad endast på objektvikt kan missa utrymmet som används av skokartonger eller skyddsförpackning. Kontrollera varje rutts avgiftsregler, avrundning och lägsta avgift innan du betalar."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Ett verkställt volymviktsexempel",
+          "title": "Räkneexempel för volymvikt",
           "paragraphs": [
             "Illustrativa exempel, inte ett fraktoffert: ett paket mäter 40 × 30 × 20 cm och väger 3 kg. Med en divisor på 6000 kg är dess volymvikt 4 kg. En rutt med större faktisk och volymmässig vikt börjar från 4 kg före avrundning eller minimiavgiftsregler. En ruttladdningsvikt skulle endast börja från 3 kg.",
             "Om samma varor säkert kan rymmas i en förpackning på 40 × 30 × 15 cm, blir den beräknade volymvikten 3 kg med den divisorn. Detta jämför bara mätningar. Det visar sig inte vara en besparing: förpackningstjänster, linjebehörighet, viktökningar och den nuvarande tariffen kan ändra den slutliga summan."
           ],
           "bullets": [
             "Använd ytterförpackade mått i centimeter, inte produktmått.",
-            "Konvertera gram till kg innan du använder verktyget nedan: 3000 g är lika med 3 kg.",
+            "Omvandla gram till kilogram: 3000 g är 3 kg.",
             "Ta divisorn och laddningsregeln från den rutt du överväger."
           ]
         },

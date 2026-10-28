@@ -48,21 +48,21 @@
     "catalogGuideNote": "Prekės nuotraukos ir kainos yra nuorodos. Patikrinkite tikslią pardavėjo sąrašą ir savo sandėlį QC prieš išsiuntimą.",
     "nextStep": "Pasirinkite kitą žingsnį",
     "weightToolTitle": "Siuntinio svorio skaičiuoklė",
-    "weightToolIntro": "Patikrinkite faktinį ir tūrio svorį. Ši priemonė necituoja vežimo kainų; naudokite pasirinkto maršruto padalijimo ir sąskaitų pateikimo taisyklę.",
+    "weightToolIntro": "Palyginkite faktinį siuntinio svorį su tūriniu svoriu. Naudokite pasirinkto maršruto daliklį ir apmokestinimo taisyklę. Šis įrankis neskaičiuoja siuntimo kainos.",
     "actualWeight": "Faktinis supakuoto siuntinio svoris (kg)",
     "parcelLength": "Išorinis ilgis (cm)",
     "parcelWidth": "Išorinis plotis (cm)",
     "parcelHeight": "Išorinis aukštis (cm)",
     "weightDivisor": "Maršruto tūrinio svorio daliklis",
     "weightRule": "Apmokestinimo taisyklė",
-    "higherWeight": "Didesnis faktinis ir tūrio svoris",
+    "higherWeight": "Didesnis iš faktinio ir tūrinio svorio",
     "actualOnly": "Tik tikrasis svoris",
     "calculateWeight": "Apskaičiuotoji masė",
     "volumetricWeight": "Tūrinė masė",
     "billingBase": "Svoris prieš apvalinimą",
-    "weightDisclaimer": "Tik iliustracinis svorio apskaičiavimas. Maršruto apvalinimas, minimalūs mokesčiai, matmenų apribojimai ir paslaugų mokesčiai vis dar taikomi. Patvirtinkite dabartinę citatą su Sugargoo.",
+    "weightDisclaimer": "Rezultatas rodo svorį prieš apvalinimą ir minimalų apmokestinimą. Taip pat taikomi dydžio apribojimai ir paslaugų mokesčiai. Patikrinkite dabartinį pasiūlymą Sugargoo.",
     "weightError": "Įrašykite teigiamą skaičių kiekviename matavimo lauke.",
-    "officialEstimatorGuide": "Atidarykite oficialų laivybos vertinimo vadovas"
+    "officialEstimatorGuide": "Atidaryti oficialų siuntimo skaičiuoklės vadovą"
   },
   "groups": {
     "basics": "Pradžia",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo siuntimo skaičiuoklė: svoris ir kaina",
-      "description": "Apskaičiuokite siuntinio tūrio svorį, supraskite įkainojamą svorį ir palyginkite Sugargoo pristatymo kainas naudodami savo paskirties vietą, matmenis ir prekių kategoriją.",
+      "description": "Palyginkite faktinį siuntinio svorį su tūriniu svoriu. Naudokite pasirinkto maršruto daliklį ir apmokestinimo taisyklę. Šis įrankis neskaičiuoja siuntimo kainos.",
       "keyword": "Sugargoo siuntimo skaičiuoklė",
       "category": "shipping",
       "intro": [
-        "Naudokite Sugargoo oficialų laivybos įvertinimą dabartinėms kainoms ir maršruto prieinamumą. Įrašomas paskirties vieta, prekių kategorija, supakuotas svoris ir matmenys. Toliau pateiktas svorio įrankis padeda patikrinti matematiką; jis necituoja krovinių ar prisijungia prie jūsų Sugargoo paskyros.",
+        "Palyginkite faktinį siuntinio svorį su tūriniu svoriu. Naudokite pasirinkto maršruto daliklį ir apmokestinimo taisyklę. Šis įrankis neskaičiuoja siuntimo kainos. Rezultatas rodo svorį prieš apvalinimą ir minimalų apmokestinimą. Taip pat taikomi dydžio apribojimai ir paslaugų mokesčiai. Patikrinkite dabartinį pasiūlymą Sugargoo.",
         "Palyginti maršrutus naudojant identiškas siuntinių įvesties. Kotiruojama tik pagal produkto svorį gali praleisti vietą, naudojamą batų dėžėse ar apsauginėje pakuotėje. Prieš sumokėdami patikrinkite kiekvieno maršruto apmokestinimo taisyklę, apvalinimą ir minimalų mokestį."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Dirbtas tūrio-masės pavyzdys",
+          "title": "Tūrinio svorio skaičiavimo pavyzdys",
           "paragraphs": [
             "Pavyzdinis pavyzdys, o ne pristatymo citata: siuntinių matmenys 40 × 30 × 20 cm ir sveria 3 kg. Su 6000 dalijimusi, jo tūrio svoris yra 4 kg. Kelias naudojant didesnį faktinį ir tūrinį svorį būtų pradėtas naudoti nuo 4 kg iki jo apvalinimo arba mažiausio įkrovimo taisyklių. Maršrutas apmokestinti faktinį svorį būtų galima tik nuo 3 kg.",
             "Jeigu tos pačios prekės gali saugiai tilpti 40 × 30 × 15 cm pakuotėje, apskaičiuotas tūrinis svoris su tuo dalijimusi tampa 3 kg. Tai tik palygina matavimus. Tai neįrodo taupymo: pakavimo paslaugos, maršruto tinkamumas, svorio padidinimas ir dabartinis tarifas gali pakeisti galutinę sumą."
           ],
           "bullets": [
             "Naudoti išorinius supakuotus matmenis centimetrais, o ne produkto matmenis.",
-            "Konvertuoti gramus į kilogramus prieš naudojant žemiau esantį įrankį: 3000 g yra lygus 3 kg.",
+            "Perskaičiuokite gramus į kilogramus: 3000 g yra 3 kg.",
             "Pasiimkite dalijimąsi ir įkrovimo taisyklę iš maršruto, kurį svarstote."
           ]
         },

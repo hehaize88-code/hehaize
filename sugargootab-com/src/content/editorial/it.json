@@ -48,21 +48,21 @@
     "catalogGuideNote": "Le foto del prodotto e i prezzi sono riferimenti. Controllare l'elenco esatto del venditore e il proprio magazzino QC prima della spedizione.",
     "nextStep": "Scegli il tuo prossimo passo",
     "weightToolTitle": "Calcolatore del peso del pacco",
-    "weightToolIntro": "Controllare il peso reale e volumetrico. Questo strumento non cita i prezzi di spedizione; utilizzare la linea selezionata divisore e regola di fatturazione.",
+    "weightToolIntro": "Confronta il peso effettivo del pacco con il peso volumetrico. Usa il divisore e la regola di fatturazione della rotta scelta. Questo strumento non calcola i prezzi di spedizione.",
     "actualWeight": "Peso effettivo del pacco (kg)",
     "parcelLength": "Lunghezza esterna (cm)",
     "parcelWidth": "Larghezza esterna (cm)",
     "parcelHeight": "Altezza esterna (cm)",
     "weightDivisor": "Divisore del peso volumetrico della rotta",
-    "weightRule": "Regola di carica",
-    "higherWeight": "Più elevato del peso effettivo e volumetrico",
+    "weightRule": "Regola di fatturazione",
+    "higherWeight": "Il maggiore tra peso effettivo e peso volumetrico",
     "actualOnly": "Solo peso effettivo",
     "calculateWeight": "Calcolo del peso",
     "volumetricWeight": "Peso volumetrico",
     "billingBase": "Peso prima di arrotondare",
-    "weightDisclaimer": "Solo calcolo indicativo del peso. Si applicano ancora arrotondamenti, tariffe minime, limiti di dimensioni e spese di servizio. Confermare l'attuale citazione con Sugargoo.",
+    "weightDisclaimer": "Il risultato indica il peso prima degli arrotondamenti e del minimo fatturabile. Restano validi limiti di dimensioni e costi dei servizi. Conferma il preventivo attuale su Sugargoo.",
     "weightError": "Inserire un numero positivo in ogni campo di misura.",
-    "officialEstimatorGuide": "Aprire la guida ufficiale stimatore della spedizione"
+    "officialEstimatorGuide": "Apri la guida ufficiale al calcolatore delle spedizioni"
   },
   "groups": {
     "basics": "Primi passi",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Calcolatore spedizioni Sugargoo: peso e costi",
-      "description": "Calcola il peso volumetrico del pacco, capisci il peso fatturabile e confronta le quotazioni di spedizione Sugargoo utilizzando la destinazione, le dimensioni e la categoria degli articoli.",
+      "description": "Confronta il peso effettivo del pacco con il peso volumetrico. Usa il divisore e la regola di fatturazione della rotta scelta. Questo strumento non calcola i prezzi di spedizione.",
       "keyword": "calcolatore spedizione Sugargoo",
       "category": "shipping",
       "intro": [
-        "Utilizzare Sugargoo® estimatore ufficiale di spedizione per i prezzi attuali e la disponibilità di rotta. Inserire la destinazione, la categoria di articoli, il peso e le dimensioni impacchettati. Lo strumento peso qui sotto aiuta a controllare la matematica; non cita merci o si collega al tuo account Sugargoo.",
+        "Confronta il peso effettivo del pacco con il peso volumetrico. Usa il divisore e la regola di fatturazione della rotta scelta. Questo strumento non calcola i prezzi di spedizione. Il risultato indica il peso prima degli arrotondamenti e del minimo fatturabile. Restano validi limiti di dimensioni e costi dei servizi. Conferma il preventivo attuale su Sugargoo.",
         "Confrontare i percorsi utilizzando ingressi pacchi identici. Un preventivo basato solo sul peso dell'articolo può perdere lo spazio utilizzato dalle scatole da scarpe o dagli imballaggi protettivi. Controllare ogni linea di ricarica, arrotondamento e tassa minima prima di pagare."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Esempio di peso volumetrico lavorato",
+          "title": "Esempio di calcolo del peso volumetrico",
           "paragraphs": [
             "Esempio indicativo, non un preventivo di spedizione: un pacco misura 40 × 30 × 20 cm e pesa 3 kg. Con un divisore di 6000, il suo peso volumetrico è di 4 kg. Una via che utilizzasse il maggiore peso effettivo e volumetrico partirebbe da 4 kg prima delle sue regole di arrotondamento o di carica minima. Una rotta che carica il peso effettivo parte solo da 3 kg.",
             "Se la stessa merce può essere inserita in una confezione da 40 × 30 × 15 cm, il peso volumetrico calcolato diventa di 3 kg con quel divisore. Questo confronta solo le misurazioni. Non dimostra un risparmio: i servizi di imballaggio, l'ammissibilità alla rotta, gli incrementi di peso e la tariffa attuale possono modificare il totale finale."
           ],
           "bullets": [
             "Utilizzare dimensioni esterne imballate in centimetri, non dimensioni del prodotto.",
-            "Convertire i grammi in chilogrammi prima di utilizzare lo strumento sottostante: 3000 g è uguale a 3 kg.",
+            "Converti i grammi in chilogrammi: 3000 g equivalgono a 3 kg.",
             "Prendere il divisore e la regola di ricarica dal percorso che si sta prendendo in considerazione."
           ]
         },

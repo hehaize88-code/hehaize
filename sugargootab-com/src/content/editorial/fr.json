@@ -48,21 +48,21 @@
     "catalogGuideNote": "Les photos de produit et les prix sont des références. Vérifiez la liste exacte des vendeurs et votre propre entrepôt QC avant l'expédition.",
     "nextStep": "Choisissez votre prochaine étape",
     "weightToolTitle": "Calculateur de poids du colis",
-    "weightToolIntro": "Vérifiez le poids réel et volumétrique. Cet outil ne cite pas les prix d'expédition; utilisez la route sélectionnée , diviseur et la règle de facturation.",
+    "weightToolIntro": "Comparez le poids réel du colis et son poids volumétrique. Utilisez le diviseur et la règle de facturation de la ligne choisie. Cet outil ne calcule pas les frais de livraison.",
     "actualWeight": "Poids réel du colis emballé (kg)",
     "parcelLength": "Longueur extérieure (cm)",
     "parcelWidth": "Largeur extérieure (cm)",
     "parcelHeight": "Hauteur extérieure (cm)",
     "weightDivisor": "Diviseur de poids volumétrique de la ligne",
-    "weightRule": "Règle de charge",
-    "higherWeight": "Augmentation du poids réel et volumétrique",
+    "weightRule": "Règle de facturation",
+    "higherWeight": "Le plus élevé entre le poids réel et le poids volumétrique",
     "actualOnly": "Poids réel seulement",
     "calculateWeight": "Calculer le poids",
     "volumetricWeight": "Poids volumétrique",
     "billingBase": "Poids avant arrondi",
-    "weightDisclaimer": "Calcul du poids indicatif seulement. L'arrondissement des routes, les frais minimums, les limites de dimensions et les frais de service s'appliquent toujours. Confirmez la soumission actuelle avec Sugargoo.",
+    "weightDisclaimer": "Le résultat indique le poids avant arrondi et minimum facturable. Les limites de dimensions et les frais de service restent applicables. Vérifiez le devis actuel sur Sugargoo.",
     "weightError": "Entrez un nombre positif dans chaque champ de mesure.",
-    "officialEstimatorGuide": "Ouvrir le guide officiel de l'estimateur d'expédition"
+    "officialEstimatorGuide": "Ouvrir le guide officiel du calculateur d’expédition"
   },
   "groups": {
     "basics": "Premiers pas",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Calculateur d’expédition Sugargoo : poids et coûts",
-      "description": "Calculer le poids volumétrique du colis, comprendre le poids facturable, et comparer les devis d'expédition de Sugargoo en utilisant votre destination, dimensions et catégorie d'articles.",
+      "description": "Comparez le poids réel du colis et son poids volumétrique. Utilisez le diviseur et la règle de facturation de la ligne choisie. Cet outil ne calcule pas les frais de livraison.",
       "keyword": "calculateur livraison sugargoo",
       "category": "shipping",
       "intro": [
-        "Utilisez l'estimateur d'expédition officiel de Sugargoo pour les prix courants et la disponibilité de l'itinéraire. Indiquer la destination, la catégorie d'articles, le poids emballé et les dimensions. L'outil de poids ci-dessous aide à vérifier les maths; il ne cite pas le fret ou se connecte à votre compte Sugargoo.",
+        "Comparez le poids réel du colis et son poids volumétrique. Utilisez le diviseur et la règle de facturation de la ligne choisie. Cet outil ne calcule pas les frais de livraison. Le résultat indique le poids avant arrondi et minimum facturable. Les limites de dimensions et les frais de service restent applicables. Vérifiez le devis actuel sur Sugargoo.",
         "Comparer les itinéraires à l'aide d'entrées de colis identiques. Un devis basé uniquement sur le poids de l'article peut manquer l'espace utilisé par les boîtes à chaussures ou l'emballage protecteur. Vérifiez la règle de charge de chaque itinéraire, l'arrondi et les frais minimum avant de payer."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Un exemple de poids volumétrique travaillé",
+          "title": "Exemple de calcul du poids volumétrique",
           "paragraphs": [
             "Exemple illustré, pas un devis d'expédition : un colis mesure 40 × 30 × 20 cm et pèse 3 kg. Avec un diviseur de 6000, son poids volumétrique est de 4 kg. Une route utilisant la plus grande du poids réel et volumétrique commencerait à partir de 4 kg avant ses règles d'arrondi ou de charge minimale. Une route qui ne charge que le poids réel commencerait à partir de 3 kg.",
             "Si les mêmes marchandises peuvent s'intégrer en toute sécurité dans un emballage de 40 × 30 × 15 cm, le poids volumétrique calculé devient 3 kg avec ce diviseur. Ceci ne compare que les mesures. Il ne s'avère pas une économie: les services d'emballage, l'admissibilité à la route, les augmentations de poids et le tarif actuel peuvent changer le total final."
           ],
           "bullets": [
             "Utiliser les dimensions extérieures emballées en centimètres, et non les dimensions du produit.",
-            "Convertir les grammes en kilogrammes avant d'utiliser l'outil ci-dessous: 3000 g est égal à 3 kg.",
+            "Convertissez les grammes en kilogrammes : 3000 g correspondent à 3 kg.",
             "Prenez le diviseur et la règle de charge de l'itinéraire que vous envisagez."
           ]
         },

@@ -48,21 +48,21 @@
     "catalogGuideNote": "Termék fotók és árak referenciák. Ellenőrizze a pontos eladói listát és a saját raktár QC szállítás előtt.",
     "nextStep": "Válassza ki a következő lépést",
     "weightToolTitle": "Csomagtömeg-kalkulátor",
-    "weightToolIntro": "Ellenőrizze a tényleges és térfogatsúlyt. Ez az eszköz nem idézi a szállítási árakat; használja a kiválasztott útvonalat a divisor és számlázási szabályt.",
+    "weightToolIntro": "Hasonlítsd össze a csomag tényleges tömegét a térfogattömegével. Használd a kiválasztott útvonal osztóját és díjszámítási szabályát. Az eszköz nem számol szállítási árat.",
     "actualWeight": "A becsomagolt küldemény tényleges tömege (kg)",
     "parcelLength": "Külső hosszúság (cm)",
     "parcelWidth": "Külső szélesség (cm)",
     "parcelHeight": "Külső magasság (cm)",
     "weightDivisor": "Az útvonal térfogattömeg-osztója",
-    "weightRule": "Töltési szabály",
-    "higherWeight": "A tényleges és térfogattömeg magasabb",
+    "weightRule": "Díjszámítási szabály",
+    "higherWeight": "A tényleges tömeg és a térfogattömeg közül a nagyobb",
     "actualOnly": "Csak tényleges tömeg",
     "calculateWeight": "Számítsa ki a súlyt",
     "volumetricWeight": "Volumentömeg",
     "billingBase": "Súly kerekítés előtt",
-    "weightDisclaimer": "Csak illusztrációs súlyszámítás. Útvonal kerekítés, minimális díjak, méretkorlátozások és szolgáltatási díjak továbbra is érvényesek. Erősítse meg az aktuális idézetet a Sugargoonál.",
+    "weightDisclaimer": "Az eredmény a kerekítés és a minimális elszámolás előtti tömeget mutatja. A méretkorlátok és a szolgáltatási díjak továbbra is érvényesek. Ellenőrizd az aktuális ajánlatot a Sugargoo oldalán.",
     "weightError": "Adja meg a pozitív számot minden mérési mezőben.",
-    "officialEstimatorGuide": "Nyissa meg a hivatalos szállítási becslés útmutató"
+    "officialEstimatorGuide": "A hivatalos szállítási kalkulátor útmutatójának megnyitása"
   },
   "groups": {
     "basics": "Kezdő lépések",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo szállítási kalkulátor: tömeg és költségek",
-      "description": "Számítsa ki a csomag térfogatsúlyát, értse meg a számlázható súlyt, és hasonlítsa össze a Sugargoo szállítási idézetek segítségével a rendeltetési hely, méretek és elem kategória.",
+      "description": "Hasonlítsd össze a csomag tényleges tömegét a térfogattömegével. Használd a kiválasztott útvonal osztóját és díjszámítási szabályát. Az eszköz nem számol szállítási árat.",
       "keyword": "Sugargoo szállítási kalkulátor",
       "category": "shipping",
       "intro": [
-        "Használja a Sugargoo-ot hivatalos szállítási becsléssel az aktuális árakra és az útvonal rendelkezésre állására. Adja meg a rendeltetési helyet, az árukategóriát, a csomagolt tömeget és a méreteket. Az alábbi súlyeszköz segít ellenőrizni a matematikát; nem idézi a rakományt vagy csatlakozik a Sugargoo fiókjához.",
+        "Hasonlítsd össze a csomag tényleges tömegét a térfogattömegével. Használd a kiválasztott útvonal osztóját és díjszámítási szabályát. Az eszköz nem számol szállítási árat. Az eredmény a kerekítés és a minimális elszámolás előtti tömeget mutatja. A méretkorlátok és a szolgáltatási díjak továbbra is érvényesek. Ellenőrizd az aktuális ajánlatot a Sugargoo oldalán.",
         "Hasonlítsa össze az útvonalakat azonos csomagbemenetekkel. Az idézet csak az elem súlya alapján hiányozhat a cipősdobozok vagy védőcsomagolás által használt hely. Ellenőrizze a díjszámítási szabályokat, a kerekítést és a minimális díjat, mielőtt fizetne."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Egy megdolgozott térfogat-tömeg példa",
+          "title": "Példa a térfogattömeg kiszámítására",
           "paragraphs": [
             "Illusztrációs példa, nem szállítási árajánlat: a csomag mérete 40 × 30 × 20 cm és súlya 3 kg. 6000 osztóval térfogatsúlya 4 kg. A tényleges és a térfogattömeg nagyobb részét használó útvonal 4 kg-ról indulna a kerekítési vagy minimális töltési szabályok előtt. Az útvonal tényleges tömege 3 kg-ról indulna.",
             "Ha ugyanezek az áruk biztonságosan beférnek egy 40 × 30 × 15 cm-es csomagba, akkor a számított térfogattömeg 3 kg-ot tesz ki az osztóval együtt. Ez csak a méréseket hasonlítja össze. Nem bizonyítja a megtakarítást: a csomagolási szolgáltatások, az útvonali jogosultság, a súlyemelések és a jelenlegi díjszabás megváltoztathatják a végső összeget."
           ],
           "bullets": [
             "A külső csomagolt méreteket centiméterben kell használni, nem termékméretben.",
-            "Konvertálni grammot kilogrammra az alábbi eszköz használata előtt: 3000 g egyenlő 3 kg.",
+            "Váltsd át a grammot kilogrammra: 3000 g egyenlő 3 kg-mal.",
             "Vegyük az osztót és a töltési szabályt az útvonalról, amit fontolgatsz."
           ]
         },

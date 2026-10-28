@@ -48,21 +48,21 @@
     "catalogGuideNote": "Fotos de produtos e preços são referências. Verifique a lista exata do vendedor e seu próprio armazém QC antes do envio.",
     "nextStep": "Escolha o próximo passo",
     "weightToolTitle": "Calculadora de peso da encomenda",
-    "weightToolIntro": "Verifique o peso real e volumétrico. Esta ferramenta não cita os preços de envio; use a regra de divisor e faturamento da rota selecionada.",
+    "weightToolIntro": "Compara o peso real da encomenda com o peso volumétrico. Usa o divisor e a regra de cobrança da rota escolhida. Esta ferramenta não calcula preços de envio.",
     "actualWeight": "Peso real da encomenda embalada (kg)",
     "parcelLength": "Comprimento exterior (cm)",
     "parcelWidth": "Largura exterior (cm)",
     "parcelHeight": "Altura exterior (cm)",
     "weightDivisor": "Divisor de peso volumétrico da rota",
-    "weightRule": "Regra de carregamento",
-    "higherWeight": "Mais alto do peso real e volumétrico",
+    "weightRule": "Regra de cobrança",
+    "higherWeight": "O maior entre o peso real e o peso volumétrico",
     "actualOnly": "Peso real apenas",
     "calculateWeight": "Calcular o peso",
     "volumetricWeight": "Peso volumétrico",
     "billingBase": "Peso antes do arredondamento",
-    "weightDisclaimer": "Cálculo do peso ilustrativo apenas. Rodondamento de rotas, taxas mínimas, limites de dimensões e taxas de serviço ainda se aplicam. Confirme a citação atual com a Sugargoo.",
+    "weightDisclaimer": "O resultado mostra o peso antes do arredondamento e do mínimo faturável. Aplicam-se também limites de dimensões e taxas de serviço. Confirma o orçamento atual na Sugargoo.",
     "weightError": "Digite um número positivo em cada campo de medição.",
-    "officialEstimatorGuide": "Abrir o guia oficial de estimador de transporte"
+    "officialEstimatorGuide": "Abrir o guia oficial da calculadora de envios"
   },
   "groups": {
     "basics": "Primeiros passos",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Calculadora de envios Sugargoo: peso e custos",
-      "description": "Calcule o peso volumétrico da parcela, compreenda o peso factível e compare as cotações de envio da Sugargoo usando o seu destino, dimensões e categoria de itens.",
+      "description": "Compara o peso real da encomenda com o peso volumétrico. Usa o divisor e a regra de cobrança da rota escolhida. Esta ferramenta não calcula preços de envio.",
       "keyword": "calculadora de frete Sugargoo",
       "category": "shipping",
       "intro": [
-        "Utilize o estimador oficial de envio da Sugargoo para preços atuais e disponibilidade de rotas. Insira o destino, a categoria de itens, o peso e as dimensões embalados. A ferramenta de peso abaixo ajuda a verificar as matemáticas; ela não cita frete ou se conecta à sua conta da Sugargoo.",
+        "Compara o peso real da encomenda com o peso volumétrico. Usa o divisor e a regra de cobrança da rota escolhida. Esta ferramenta não calcula preços de envio. O resultado mostra o peso antes do arredondamento e do mínimo faturável. Aplicam-se também limites de dimensões e taxas de serviço. Confirma o orçamento atual na Sugargoo.",
         "Compare rotas usando entradas de pacotes idênticas. Uma citação baseada apenas no peso do item pode perder o espaço usado pelas caixas de sapatos ou embalagem protectora. Verifique cada rota regra de cobrança, arredondamento e custo mínimo antes de pagar."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Um exemplo de peso volumétrico trabalhado",
+          "title": "Exemplo de cálculo do peso volumétrico",
           "paragraphs": [
             "Exemplo ilustrativo, não um orçamento de expedição: uma parcela mede 40 × 30 × 20 cm e pesa 3 kg. Com um divisor de 6000, seu peso volumétrico é de 4 kg. Uma rota que utilize o maior peso real e volumétrico começaria a partir de 4 kg antes das suas regras de arredondamento ou carga mínima. Uma rota carregando peso real apenas começaria a partir de 3 kg.",
             "Se as mesmas mercadorias puderem caber com segurança numa embalagem de 40 × 30 × 15 cm, o peso volumétrico calculado torna-se 3 kg com aquele divisor. Isto só compara as medidas. Não prova uma poupança: serviços de embalagem, elegibilidade rota, aumentos de peso e a actual tarifa pode alterar o total final."
           ],
           "bullets": [
             "Utilizar dimensões externas embaladas em centímetros, não dimensões do produto.",
-            "Converta gramas em quilogramas antes de usar a ferramenta abaixo: 3000 g é igual a 3 kg.",
+            "Converte gramas em quilogramas: 3000 g equivalem a 3 kg.",
             "Pegue o divisor e a regra de cobrança da rota que você está considerando."
           ]
         },

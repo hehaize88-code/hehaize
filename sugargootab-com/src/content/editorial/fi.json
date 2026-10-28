@@ -48,21 +48,21 @@
     "catalogGuideNote": "Tuotekuvat ja hinnat ovat referenssit. Tarkista tarkka myyjälista ja oma varastosi ennen lähetystä.",
     "nextStep": "Valitse seuraava vaihe",
     "weightToolTitle": "Paketin painolaskuri",
-    "weightToolIntro": "Tarkista todellinen ja tilavuuspaino. Tämä työkalu ei lainaa toimitushintoja; käytä valittua reittien jakaja- ja laskutussääntöä.",
+    "weightToolIntro": "Vertaa paketin todellista painoa tilavuuspainoon. Käytä valitun reitin jakajaa ja laskutussääntöä. Työkalu ei laske toimitushintoja.",
     "actualWeight": "Pakatun lähetyksen todellinen paino (kg)",
     "parcelLength": "Ulkopituus (cm)",
     "parcelWidth": "Ulkoleveys (cm)",
     "parcelHeight": "Ulkokorkeus (cm)",
     "weightDivisor": "Reitin tilavuuspainon jakaja",
-    "weightRule": "Lataussääntö",
-    "higherWeight": "Todellisen ja tilavuuden paino suurempi",
+    "weightRule": "Laskutussääntö",
+    "higherWeight": "Suurempi todellisesta painosta ja tilavuuspainosta",
     "actualOnly": "Ainoastaan todellinen paino",
     "calculateWeight": "Laske paino",
     "volumetricWeight": "Tilavuuspaino",
     "billingBase": "Paino ennen pyöristämistä",
-    "weightDisclaimer": "Ainoastaan ohjeellinen painon laskeminen. Reittikierros, minimimaksut, mitat ja palvelumaksut ovat edelleen voimassa. Vahvista nykyinen lainaus Sugargooilla.",
+    "weightDisclaimer": "Tulos näyttää painon ennen pyöristystä ja laskutuksen vähimmäisrajaa. Myös kokorajat ja palvelumaksut ovat voimassa. Tarkista ajantasainen tarjous Sugargoosta.",
     "weightError": "Anna positiivinen luku jokaiseen mittauskenttään.",
-    "officialEstimatorGuide": "Avaa virallinen postin estimaattiopas"
+    "officialEstimatorGuide": "Avaa virallinen rahtilaskurin ohje"
   },
   "groups": {
     "basics": "Alkuun pääseminen",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo-rahtilaskuri: painon ja kulujen arviointi",
-      "description": "Laske pakettien tilavuuspaino, ymmärrä laskutettava paino ja vertaa Sugargooin toimituslainauksia kohteeseen, mittoihin ja tuoteluokkaan.",
+      "description": "Vertaa paketin todellista painoa tilavuuspainoon. Käytä valitun reitin jakajaa ja laskutussääntöä. Työkalu ei laske toimitushintoja.",
       "keyword": "sugargoo toimituslaskuri",
       "category": "shipping",
       "intro": [
-        "Käytä Sugargooin virallista postin estimaattoria nykyhintoihin ja reittien saatavuuteen. Anna määränpää, kohdeluokka, pakkauspaino ja mitat. Alla oleva painotyökalu auttaa tarkistamaan matikan; se ei lainaa rahtia eikä liity Sugargoo-tiliisi.",
+        "Vertaa paketin todellista painoa tilavuuspainoon. Käytä valitun reitin jakajaa ja laskutussääntöä. Työkalu ei laske toimitushintoja. Tulos näyttää painon ennen pyöristystä ja laskutuksen vähimmäisrajaa. Myös kokorajat ja palvelumaksut ovat voimassa. Tarkista ajantasainen tarjous Sugargoosta.",
         "Vertaa reittejä käyttäen identtisiä pakettipanoksia. Vain tuotteen painoon perustuva lainaus voi jättää väliin kenkälaatikoiden tai suojapakkausten käyttämän tilan. Tarkista jokainen reittien lataussääntö, pyöristys ja minimimaksu ennen maksua."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Tehty tilavuuspainoesimerkki",
+          "title": "Tilavuuspainon laskuesimerkki",
           "paragraphs": [
             "Valaiseva esimerkki, ei lähetyslainaus: paketti on kooltaan 40 × 30 × 20 cm ja painaa 3 kg. Kun jakaja on 6000, sen tilavuus on 4 kg. Reitti, jossa käytetään suurempaa todellista ja tilavuuspainoa, käynnistyisi 4 kilosta ennen pyöristys- tai minimimaksusääntöjä. Reitti, joka veloittaisi todellisen painon, alkaisi vain 3 kilosta.",
             "Jos samat tavarat mahtuvat turvallisesti 40 × 30 × 15 cm:n pakkaukseen, laskettu tilavuuspaino muuttuu 3 kg jakajalla. Tässä vain verrataan mittauksia. Se ei todista säästöä: pakkauspalvelut, reittikelpoisuus, painonkorotukset ja nykyinen hinta voivat muuttaa lopullista kokonaissummaa."
           ],
           "bullets": [
             "Käytä ulompia pakkauksia senttimetrin korkeudessa, ei tuotemittoja.",
-            "Muunna grammat kiloiksi ennen alla olevaa työkalua: 3000 g on 3 kg.",
+            "Muunna grammat kilogrammoiksi: 3000 g on 3 kg.",
             "Ota jakaja- ja lataussääntö harkitsemaltasi reitiltä."
           ]
         },

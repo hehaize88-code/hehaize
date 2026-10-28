@@ -48,21 +48,21 @@
     "catalogGuideNote": "Toote fotod ja hinnad on viited. Kontrollige enne kohaletoimetamist müüja nimekirja ja oma lao QC-d.",
     "nextStep": "Vali järgmine samm",
     "weightToolTitle": "Paki kaalu kalkulaator",
-    "weightToolIntro": "Kontrolli tegelikku ja mahukaalu. See tööriist ei tsiteeri veohindu; kasutage valitud marsruudi jagaja ja arve reegel.",
+    "weightToolIntro": "Võrdle paki tegelikku kaalu mahukaaluga. Kasuta valitud marsruudi jagajat ja arvestusreeglit. Tööriist ei arvuta saatmishinda.",
     "actualWeight": "Pakitud saadetise tegelik kaal (kg)",
     "parcelLength": "Välispikkus (cm)",
     "parcelWidth": "Välislaius (cm)",
     "parcelHeight": "Väliskõrgus (cm)",
     "weightDivisor": "Marsruudi mahukaalu jagaja",
-    "weightRule": "Laadimisreegel",
-    "higherWeight": "Tegelikust ja mahukaalust suurem",
+    "weightRule": "Arvestusreegel",
+    "higherWeight": "Suurem tegelikust kaalust ja mahukaalust",
     "actualOnly": "Ainult tegelik kaal",
     "calculateWeight": "Arvutatav kaal",
     "volumetricWeight": "Mahukaal",
     "billingBase": "Kaal enne ümardamist",
-    "weightDisclaimer": "Ainult illustratiivse kaalu arvutamine. Marsruudi ümardamine, miinimumtasud, mõõtmete piirangud ja teenustasud kehtivad endiselt. Kinnitab praeguse tsitaadi Sugargooiga.",
+    "weightDisclaimer": "Tulemus näitab kaalu enne ümardamist ja minimaalset arvestust. Kehtivad ka mõõtmete piirangud ning teenustasud. Kontrolli praegust pakkumist Sugargoos.",
     "weightError": "Sisesta positiivne arv igas mõõteväljas.",
-    "officialEstimatorGuide": "Avada ametlik laevanduse hindamise juhend"
+    "officialEstimatorGuide": "Ava saatekulude kalkulaatori ametlik juhend"
   },
   "groups": {
     "basics": "Alustamine",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo saatekulude kalkulaator: kaal ja hind",
-      "description": "Arvuta paki mahukaal, mõista arvestav kaal, ja võrrelda Sugargoo shipping hinnapakkumisi kasutades oma sihtkohta, mõõtmed ja elemendi kategooria.",
+      "description": "Võrdle paki tegelikku kaalu mahukaaluga. Kasuta valitud marsruudi jagajat ja arvestusreeglit. Tööriist ei arvuta saatmishinda.",
       "keyword": "sugargoo veokalkulaator",
       "category": "shipping",
       "intro": [
-        "Kasutage Sugargoo's ametlik laevanduse hindamine praeguste hindade ja marsruudi kättesaadavust. Märkida sihtkoht, kaubaartiklite kategooria, mass ja mõõtmed. Allpool toodud kaalumisvahend aitab matemaatikat kontrollida; see ei tsiteeri sinu Sugargooi kontoga kaubavedu ega ühendu.",
+        "Võrdle paki tegelikku kaalu mahukaaluga. Kasuta valitud marsruudi jagajat ja arvestusreeglit. Tööriist ei arvuta saatmishinda. Tulemus näitab kaalu enne ümardamist ja minimaalset arvestust. Kehtivad ka mõõtmete piirangud ning teenustasud. Kontrolli praegust pakkumist Sugargoos.",
         "Võrdle marsruute, kasutades identseid pakisisendeid. Tsitaat põhineb ainult kauba kaal võib jätta ruumi, mida kasutatakse kingakarbid või kaitsev pakend. Kontrollige enne maksmist iga liini navigatsioonitasu reeglit, ümardamist ja minimaalset tasu."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Töötatud mahukaalu näide",
+          "title": "Mahukaalu arvutamise näide",
           "paragraphs": [
             "Illustreeriv näide, mitte laevanduse tsitaat: paki suurus on 40 × 30 × 20 cm ja kaalub 3 kg. Jagaja 6000, selle mahukaal on 4 kg. Suurema tegeliku ja mahukaaluga marsruut algab 4 kg-lt enne ümardamist või minimaalset laadimist. Marsruudi tegelik kaal algab ainult 3 kg-st.",
             "Kui sama kaup mahub ohutult 40 × 30 × 15 cm pakendisse, muutub selle jagajaga arvutatud mahukaal 3 kg-ks. See võrdleb ainult mõõtmisi. See ei tõesta säästmist: pakkimisteenused, marsruudi abikõlblikkus, kaalu suurendamine ja praegune tariif võivad muuta lõplikku kogusummat."
           ],
           "bullets": [
             "Kasutada välimisi mõõtmeid sentimeetrites, mitte toote mõõtmetes.",
-            "Enne alloleva tööriista kasutamist teisendada grammideks kilogrammid: 3000 g võrdub 3 kg.",
+            "Teisenda grammid kilogrammideks: 3000 g on 3 kg.",
             "Võta jagaja ja laadimise reegel marsruudilt, mida sa kaalud."
           ]
         },

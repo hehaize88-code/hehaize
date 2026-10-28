@@ -48,21 +48,21 @@
     "catalogGuideNote": "Produktfotos og priser er referencer. Tjek den nøjagtige sælger notering og dit eget lager QC før forsendelse.",
     "nextStep": "Vælg dit næste skridt",
     "weightToolTitle": "Beregner til pakkevægt",
-    "weightToolIntro": "Kontrollér den faktiske og volumetriske vægt. Dette værktøj citerer ikke shipping priser; bruge den valgte rute gør divisor og fakturering regel.",
+    "weightToolIntro": "Sammenlign pakkens faktiske vægt med volumenvægten. Brug den valgte rutes divisor og beregningsregel. Værktøjet beregner ikke fragtpriser.",
     "actualWeight": "Pakkens faktiske vægt (kg)",
     "parcelLength": "Yderlængde (cm)",
     "parcelWidth": "Yderbredde (cm)",
     "parcelHeight": "Yderhøjde (cm)",
     "weightDivisor": "Rutens divisor for volumenvægt",
-    "weightRule": "Regel om opladning",
-    "higherWeight": "Højere faktisk og volumenvægt",
+    "weightRule": "Beregningsregel",
+    "higherWeight": "Den højeste af faktisk vægt og volumenvægt",
     "actualOnly": "Kun den faktiske vægt",
     "calculateWeight": "Beregn vægt",
     "volumetricWeight": "Volumenvægt",
     "billingBase": "Vægt før afrunding",
-    "weightDisclaimer": "Kun vejledende vægtberegning. Ruteafrunding, minimumsafgifter, dimensioner grænser og servicegebyrer stadig gælder. Bekræft det aktuelle citat med Sugargoo.",
+    "weightDisclaimer": "Resultatet viser vægten før afrunding og minimumsberegning. Størrelsesgrænser og servicegebyrer gælder også. Bekræft den aktuelle pris hos Sugargoo.",
     "weightError": "Indtast et positivt tal i hvert målefelt.",
-    "officialEstimatorGuide": "Åbn den officielle shipping estimator vejledning"
+    "officialEstimatorGuide": "Åbn den officielle vejledning til fragtberegneren"
   },
   "groups": {
     "basics": "Kom godt i gang",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo fragtberegner: vægt og pris",
-      "description": "Beregn parcel volumen vægt, forstå faktureringsvægt, og sammenligne Sugargoo forsendelse citater ved hjælp af din destination, dimensioner og varekategori.",
+      "description": "Sammenlign pakkens faktiske vægt med volumenvægten. Brug den valgte rutes divisor og beregningsregel. Værktøjet beregner ikke fragtpriser.",
       "keyword": "sugargoo fragtberegner",
       "category": "shipping",
       "intro": [
-        "Brug Sugargoos officielle shipping estimator for aktuelle priser og rute tilgængelighed. Indtast destination, varekategori, pakket vægt og dimensioner. Vægtværktøjet nedenfor hjælper med at kontrollere matematik; det citerer ikke fragt eller oprette forbindelse til din Sugargoo-konto.",
+        "Sammenlign pakkens faktiske vægt med volumenvægten. Brug den valgte rutes divisor og beregningsregel. Værktøjet beregner ikke fragtpriser. Resultatet viser vægten før afrunding og minimumsberegning. Størrelsesgrænser og servicegebyrer gælder også. Bekræft den aktuelle pris hos Sugargoo.",
         "Sammenlign ruter ved hjælp af identiske pakkeindgange. Et citat, der kun er baseret på varevægt, kan gå glip af den plads, der anvendes af skokasser eller beskyttende emballage. Kontrollér hver rutes laderegel, afrunding og minimumsafgift før betaling."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Eksempel på bearbejdet volumenvægt",
+          "title": "Regneeksempel for volumenvægt",
           "paragraphs": [
             "Illustrativt eksempel: En pakke måler 40 × 30 × 20 cm og vejer 3 kg. Med en divisor på 6000 er dets volumenvægt 4 kg. En rute, der anvender den største faktiske og volumetriske vægt, vil starte fra 4 kg før dens afrunding eller minimumsafgiftsregler. En vejopladnings egentlig vægt kun ville starte fra 3 kg.",
             "Hvis det samme gods kan være sikkert i en 40 × 30 × 15 cm pakke, bliver den beregnede volumenvægt 3 kg med denne divisor. Dette sammenligner kun målinger. Det beviser ikke en besparelse: pakketjenester, rutestøtte, vægtstigninger og den nuværende takst kan ændre det endelige samlede beløb."
           ],
           "bullets": [
             "Anvend ydre emballerede dimensioner i centimeter, ikke produktdimensioner.",
-            "Konverter gram til kg, før du bruger værktøjet nedenfor: 3000 g er lig med 3 kg.",
+            "Omregn gram til kilogram: 3000 g er 3 kg.",
             "Tag divisor og laderegel fra den rute, du overvejer."
           ]
         },

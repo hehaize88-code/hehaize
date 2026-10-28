@@ -48,21 +48,21 @@
     "catalogGuideNote": "Produktfotos und Preise sind Referenzen. Überprüfen Sie die genaue Verkäuferliste und Ihr eigenes Lager QC vor dem Versand.",
     "nextStep": "Wählen Sie Ihren nächsten Schritt",
     "weightToolTitle": "Paketgewichtsrechner",
-    "weightToolIntro": "Prüfen Sie das tatsächliche und volumetrische Gewicht. Dieses Tool zitiert keine Versandkosten; verwenden Sie die gewählte Route-Divisor und Abrechnungsregel.",
+    "weightToolIntro": "Vergleiche das tatsächliche Paketgewicht mit dem Volumengewicht. Verwende den Divisor und die Abrechnungsregel der gewählten Versandroute. Dieses Werkzeug berechnet keine Versandpreise.",
     "actualWeight": "Tatsächliches Paketgewicht (kg)",
     "parcelLength": "Außenlänge (cm)",
     "parcelWidth": "Außenbreite (cm)",
     "parcelHeight": "Außenhöhe (cm)",
     "weightDivisor": "Volumengewichtsdivisor der Versandroute",
-    "weightRule": "Laderegel",
-    "higherWeight": "Höheres tatsächliches und volumetrisches Gewicht",
+    "weightRule": "Abrechnungsregel",
+    "higherWeight": "Der höhere Wert aus tatsächlichem Gewicht und Volumengewicht",
     "actualOnly": "Nur tatsächliches Gewicht",
     "calculateWeight": "Gewicht berechnen",
     "volumetricWeight": "Volumengewicht",
     "billingBase": "Gewicht vor dem Runden",
-    "weightDisclaimer": "Nur für die Berechnung des bebilderten Gewichts. Es gelten weiterhin Streckenrundungen, Mindestgebühren, Abmessungen und Servicegebühren. Bestätigen Sie das aktuelle Angebot mit Sugargoo.",
+    "weightDisclaimer": "Die Berechnung zeigt das Gewicht vor Rundung und Mindestberechnung. Größenlimits und Servicegebühren gelten zusätzlich. Prüfe das aktuelle Angebot bei Sugargoo.",
     "weightError": "Geben Sie in jedem Messfeld eine positive Zahl ein.",
-    "officialEstimatorGuide": "Öffnen Sie den offiziellen Versand Schätzführer"
+    "officialEstimatorGuide": "Offizielle Anleitung zum Versandrechner öffnen"
   },
   "groups": {
     "basics": "Erste Schritte",
@@ -774,25 +774,25 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo-Versandrechner: Gewicht und Kosten schätzen",
-      "description": "Berechnen Sie Paketvolumengewicht, verstehen abziehbares Gewicht und vergleichen Sie Sugargoo Versandvorlagen mit Ihrem Ziel, Abmessungen und Artikelkategorie.",
+      "description": "Vergleiche das tatsächliche Paketgewicht mit dem Volumengewicht. Verwende den Divisor und die Abrechnungsregel der gewählten Versandroute. Dieses Werkzeug berechnet keine Versandpreise.",
       "keyword": "Sugargoo Versandkostenrechner",
       "category": "shipping",
       "intro": [
-        "Verwenden Sie Sugargoos offiziellen Versand-Schätzer für aktuelle Preise und Routenverfügbarkeit. Geben Sie das Ziel, die Artikelkategorie, das verpackte Gewicht und die Abmessungen ein. Das unten stehende Gewicht Werkzeug hilft, die Mathematik zu überprüfen; es zitieren nicht Fracht oder verbinden Sie sich mit Ihrem Sugargoo-Konto.",
-        "Vergleichen Sie Routen mit identischen Paketeingaben. Ein Angebot, das nur auf Artikelgewicht basiert, kann den von Schuhboxen oder Schutzverpackungen verwendeten Platz vermissen. Überprüfen Sie jede Route-Laderegel, Rundung und minimale Gebühr vor der Zahlung."
+        "Vergleiche das tatsächliche Paketgewicht mit dem Volumengewicht. Verwende den Divisor und die Abrechnungsregel der gewählten Versandroute. Dieses Werkzeug berechnet keine Versandpreise. Die Berechnung zeigt das Gewicht vor Rundung und Mindestberechnung. Größenlimits und Servicegebühren gelten zusätzlich. Prüfe das aktuelle Angebot bei Sugargoo.",
+        "Vergleiche Versandrouten mit denselben Paketdaten. Kartons und Schutzmaterial beeinflussen das Volumengewicht. Prüfe Abrechnungsregeln, Rundungen und Mindestgebühren, bevor du bezahlst."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Ein Beispiel für ein bearbeitetes Volumengewicht",
+          "title": "Rechenbeispiel zum Volumengewicht",
           "paragraphs": [
-            "Illustratives Beispiel, kein Versandangebot: ein Paket misst 40 × 30 × 20 cm und wiegt 3 kg. Mit einem Teiler von 6000, sein volumetrisches Gewicht beträgt 4 kg. Eine Route, die das größere tatsächliche und volumetrische Gewicht verwendet, würde von 4 kg beginnen, bevor ihre Rundung oder Mindestladung Regeln. Eine Strecke, die nur das tatsächliche Gewicht aufladen würde, würde von 3 kg beginnen.",
-            "Kann dieselbe Ware sicher in eine 40 × 30 × 15 cm Packung passen, so wird das berechnete Volumengewicht mit diesem Teiler zu 3 kg. Das vergleicht nur Messungen. Es beweist keine Einsparung: Verpackungsdienstleistungen, Streckenzugfähigkeit, Gewichtszuwächse und der aktuelle Tarif kann das Endergebnis ändern."
+            "Rechenbeispiel, kein Versandangebot: Ein Paket misst 40 × 30 × 20 cm und wiegt 3 kg. Mit dem Divisor 6000 beträgt sein Volumengewicht 4 kg. Eine Route, die den höheren der beiden Werte berechnet, würde vor Rundung und Mindestgebühren von 4 kg ausgehen. Bei einer Abrechnung nur nach tatsächlichem Gewicht wären es 3 kg.",
+            "Passen dieselben Waren sicher in ein Paket mit 40 × 30 × 15 cm, sinkt das berechnete Volumengewicht bei diesem Divisor auf 3 kg. Das vergleicht nur Abmessungen und garantiert keine Ersparnis. Verpackungskosten, zulässige Routen, Gewichtsstufen und der aktuelle Tarif können den Endbetrag verändern."
           ],
           "bullets": [
             "Verwenden Sie die Außenabmessungen in Zentimetern, nicht die Produktabmessungen.",
-            "Umrechnen von Gramm in Kilogramm, bevor Sie das Werkzeug unten: 3000 g entspricht 3 kg.",
-            "Nehmen Sie die Divisor- und Laderegel von der Route, die Sie erwägen."
+            "Rechne Gramm in Kilogramm um: 3000 g entsprechen 3 kg.",
+            "Übernimm Divisor und Abrechnungsregel aus den Bedingungen der gewählten Versandroute."
           ]
         },
         {

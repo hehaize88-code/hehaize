@@ -48,21 +48,21 @@
     "catalogGuideNote": "Fotografije in cene izdelkov so reference. Preverite natančen seznam prodajalcev in svoje skladišče QC pred dostavo.",
     "nextStep": "Izberite svoj naslednji korak",
     "weightToolTitle": "Kalkulator teže paketa",
-    "weightToolIntro": "Preverite dejansko in volumtrično težo. To orodje ne navaja cen dostave; uporabite pravilo o deliorju in obračunu izbrane poti.",
+    "weightToolIntro": "Primerjajte dejansko težo paketa s prostorninsko težo. Uporabite delitelj in pravilo obračuna izbrane poti. Orodje ne izračuna cene dostave.",
     "actualWeight": "Dejanska teža zapakiranega paketa (kg)",
     "parcelLength": "Zunanja dolžina (cm)",
     "parcelWidth": "Zunanja širina (cm)",
     "parcelHeight": "Zunanja višina (cm)",
     "weightDivisor": "Delitelj prostorninske teže za pot",
-    "weightRule": "Pravilo polnjenja",
-    "higherWeight": "Večja dejanska in volumtrična masa",
+    "weightRule": "Pravilo obračuna",
+    "higherWeight": "Večja od dejanske in prostorninske teže",
     "actualOnly": "Samo dejanska teža",
     "calculateWeight": "Izračunaj maso",
     "volumetricWeight": "Volumetrična masa",
     "billingBase": "Teža pred zaokroženjem",
-    "weightDisclaimer": "Samo ilustracijski izračun teže. Še vedno veljajo zaokroževanje poti, minimalne pristojbine, mere in storitvene dajatve. Potrjujte trenutni citat z Sugargooom.",
+    "weightDisclaimer": "Rezultat kaže težo pred zaokroževanjem in minimalnim obračunom. Veljajo tudi omejitve velikosti in pristojbine za storitve. Preverite trenutno ponudbo pri Sugargoo.",
     "weightError": "Vnesite pozitivno število v vsako merilno polje.",
-    "officialEstimatorGuide": "Odprite uradni vodnik za ocenjevanje dostave"
+    "officialEstimatorGuide": "Odpri uradni vodnik za kalkulator dostave"
   },
   "groups": {
     "basics": "Prvi koraki",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Kalkulator dostave Sugargoo: teža in stroški",
-      "description": "Izračunajte obseg paketa težo, razumeti računsko maso in primerjati Sugargoo poštni nabori z uporabo svoje namembne strani, dimenzij in kategorije postavk.",
+      "description": "Primerjajte dejansko težo paketa s prostorninsko težo. Uporabite delitelj in pravilo obračuna izbrane poti. Orodje ne izračuna cene dostave.",
       "keyword": "kalkulator pošiljanja Sugargoo",
       "category": "shipping",
       "intro": [
-        "Uporabite Sugargooov uradni ocenjevalec ladij za tekoče cene in razpoložljivost poti. Vnesite namembni kraj, kategorijo postavk, pakirano maso in dimenzije. Spodnje orodje za uteži pomaga preveriti matematiko, ne navaja tovora ali se poveže z vašim Sugargooovim računom.",
+        "Primerjajte dejansko težo paketa s prostorninsko težo. Uporabite delitelj in pravilo obračuna izbrane poti. Orodje ne izračuna cene dostave. Rezultat kaže težo pred zaokroževanjem in minimalnim obračunom. Veljajo tudi omejitve velikosti in pristojbine za storitve. Preverite trenutno ponudbo pri Sugargoo.",
         "Primerjava poti z uporabo identičnih vhodnih paketov. Citat, ki temelji samo na teži predmeta, lahko zgreši prostor v škatlah ali zaščitnem pakiranju. Pred plačilom preverite pravila zaračunavanja, zaokroževanje in najnižji znesek."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Obdelani primer volumske teže",
+          "title": "Primer izračuna prostorninske teže",
           "paragraphs": [
             "Ponazoritveni primer ni kotat za dostavo: paketni ukrepi 40 × 30 × 20 cm in tehta 3 kg. Z delilnikom 6000 je njegova volumska masa 4 kg. Pot, ki uporablja večjo dejansko in volumnsko maso bi se začela od 4 kg pred zaokroženimi pravili ali pravili o minimalnih stroških. Pot zaračunava dejansko težo samo od 3 kg.",
             "Če se lahko isto blago varno ujema s paketom 40 × 30 × 15 cm, izračunana volumska masa postane 3 kg z navedenim deliteljem. To samo primerja meritve. To ne dokazuje prihrankov: storitve pakiranja, upravičenost poti, povečanje teže in sedanja cena lahko spremenijo končni znesek."
           ],
           "bullets": [
             "Uporabite zunanje pakirane dimenzije v centimetrovih, ne pa v dimenzijah proizvodov.",
-            "Pred uporabo orodja spodaj pretvorite grame v kilograme: 3000 g je enako 3 kg.",
+            "Pretvorite grame v kilograme: 3000 g je 3 kg.",
             "Vzemite delilec in napolniti pravilo iz poti, ki ste jo razmišljali."
           ]
         },

@@ -48,21 +48,21 @@
     "catalogGuideNote": "Ir-ritratti u l-prezzijiet tal-prodotti huma referenzi. Iċċekkja l-lista eżatta bejjiegħ u l-maħżen tiegħek QC qabel tbaħħir.",
     "nextStep": "Agħżel il-pass li jmiss tiegħek",
     "weightToolTitle": "Kalkolatur tal-piż tal-pakkett",
-    "weightToolIntro": "Iċċekkja l-piż attwali u volumetriku. Din l-għodda ma tikkwotax il-prezzijiet tat-trasport bil-baħar; tuża r-rotta magħżula u tuża r-regola tad-diviżitur u tal-kontijiet.",
+    "weightToolIntro": "Qabbel il-piż reali tal-pakkett mal-piż volumetriku tiegħu. Uża d-diviżur u r-regola tal-kalkolu tar-rotta magħżula. Din l-għodda ma tikkalkulax il-prezz tat-tbaħħir.",
     "actualWeight": "Piż reali tal-pakkett ippakkjat (kg)",
     "parcelLength": "Tul ta' barra (ċm)",
     "parcelWidth": "Wisa' ta' barra (ċm)",
     "parcelHeight": "Għoli ta' barra (cm)",
     "weightDivisor": "Diviżur tal-piż volumetriku tar-rotta",
-    "weightRule": "Regola tal-iċċarġjar",
-    "higherWeight": "L-ogħla piż attwali u volumetriku",
+    "weightRule": "Regola tal-kalkolu",
+    "higherWeight": "L-ogħla bejn il-piż reali u l-piż volumetriku",
     "actualOnly": "Piż attwali biss",
     "calculateWeight": "Ikkalkula l-piż",
     "volumetricWeight": "Piż volumetriku",
     "billingBase": "Piż qabel l-arrotondament",
-    "weightDisclaimer": "Kalkolu tal-piż illustrattiv biss. Għadhom japplikaw it-tqarrib tar-rotot, l-imposti minimi, il-limiti tad-dimensjonijiet u t-tariffi tas-servizzi. Ikkonferma l-kwotazzjoni attwali b'Sugargoo.",
+    "weightDisclaimer": "Ir-riżultat juri l-piż qabel l-arrotondament u l-minimu fatturabbli. Japplikaw ukoll limiti tad-daqs u tariffi tas-servizz. Ikkonferma l-kwotazzjoni attwali ma’ Sugargoo.",
     "weightError": "Daħħal numru pożittiv f'kull qasam tal-kejl.",
-    "officialEstimatorGuide": "Iftaħ il-gwida tal-istimatur uffiċjali tat-tbaħħir"
+    "officialEstimatorGuide": "Iftaħ il-gwida uffiċjali tal-kalkolatur tat-tbaħħir"
   },
   "groups": {
     "basics": "Kif tibda",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Kalkolatur tat-tbaħħir Sugargoo: piż u spejjeż",
-      "description": "Ikkalkula piż volumetriku pakkett, jifhmu piż kontabbli, u tqabbel kwotazzjonijiet Sugargoo tbaħħir bl-użu destinazzjoni tiegħek, dimensjonijiet u kategorija oġġett.",
+      "description": "Qabbel il-piż reali tal-pakkett mal-piż volumetriku tiegħu. Uża d-diviżur u r-regola tal-kalkolu tar-rotta magħżula. Din l-għodda ma tikkalkulax il-prezz tat-tbaħħir.",
       "keyword": "kalkolatur tat-tbaħħir Sugargoo",
       "category": "shipping",
       "intro": [
-        "Uża l-Sugargoos estimatur uffiċjali tat-tbaħħir għall-prezzijiet attwali u d-disponibbiltà tar-rotot. Daħħal id-destinazzjoni, il-kategorija tal-oġġett, il-piż ippakkjat u d-dimensjonijiet. L-għodda tal-piż ta' hawn taħt tgħinek tiċċekkja l-matematika; ma tikkwotax merkanzija jew tqabbad mal-kont Sugargoo tiegħek.",
+        "Qabbel il-piż reali tal-pakkett mal-piż volumetriku tiegħu. Uża d-diviżur u r-regola tal-kalkolu tar-rotta magħżula. Din l-għodda ma tikkalkulax il-prezz tat-tbaħħir. Ir-riżultat juri l-piż qabel l-arrotondament u l-minimu fatturabbli. Japplikaw ukoll limiti tad-daqs u tariffi tas-servizz. Ikkonferma l-kwotazzjoni attwali ma’ Sugargoo.",
         "Qabbel ir-rotot bl-użu ta' inputs identiċi tal-pakketti. Kwota bbażata biss fuq il-piż tal-oġġett tista' titlef l-ispazju użat mill-kaxxi taż-żraben jew mill-imballaġġ protettiv. Iċċekkja kull rotta billi tuża r-regola tal-iċċarġjar, l-arrotondament u l-imposta minima qabel ma tħallas."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Eżempju ta' piż volumetriku maħdum",
+          "title": "Eżempju tal-kalkolu tal-piż volumetriku",
           "paragraphs": [
             "Eżempju illustrattiv, mhux kwotazzjoni tat-trasport bil-baħar: pakkett ta' 40 × 30 × 20 cm u jiżen 3 kg. B'diviżitur ta' 6000, il-piż volumetriku tiegħu huwa ta' 4 kg. Rotta li tuża l-akbar piż attwali u volumetriku tibda minn 4 kg qabel ir-regoli tagħha ta' tqarrib jew ta' ċarġ minimu. Rotta li tiċċarġja l-piż attwali biss tibda minn 3 kg.",
             "Jekk l-istess oġġetti jistgħu jkunu tajbin b'mod sikur f'pakkett ta' 40 × 30 × 15 cm, il-piż volumetriku kkalkulat isir 3 kg b'dak id-diviżitur. Dan iqabbel biss il-kejl. Ma jirriżultax f'iffrankar: is-servizzi tal-ippakkjar, l-eliġibbiltà tar-rotta, iż-żidiet fil-piż u t-tariffa attwali jistgħu jbiddlu t-total finali."
           ],
           "bullets": [
             "Uża d-dimensjonijiet ta' barra ppakkjati f'ċentimetri, mhux id-dimensjonijiet tal-prodott.",
-            "Ikkonverti grammi għal kilogrammi qabel ma tuża l-għodda ta' hawn taħt: 3000 g huma daqs 3 kg.",
+            "Ikkonverti grammi għal kilogrammi: 3000 g huma 3 kg.",
             "Ħu d-diviżitur u r-regola tal-iċċarġjar mir-rotta li qed tikkunsidra."
           ]
         },

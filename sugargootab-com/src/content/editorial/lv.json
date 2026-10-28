@@ -48,21 +48,21 @@
     "catalogGuideNote": "Produktu fotogrāfijas un cenas ir atsauces. Pirms piegādes pārbaudiet precīzu pārdevēja sarakstu un savu noliktavu QC.",
     "nextStep": "Izvēlieties nākamo soli",
     "weightToolTitle": "Pakas svara kalkulators",
-    "weightToolIntro": "Pārbaudiet faktisko un tilpuma svaru. Šis rīks nenorāda piegādes cenas; izmantojiet izvēlētā maršruta dalīšanas un rēķinu izrakstīšanas noteikumu.",
+    "weightToolIntro": "Salīdzini pakas faktisko svaru ar tilpumsvaru. Izmanto izvēlētā maršruta dalītāju un maksas aprēķina noteikumu. Šis rīks neaprēķina piegādes cenu.",
     "actualWeight": "Faktiskais iepakotās pakas svars (kg)",
     "parcelLength": "Ārējais garums (cm)",
     "parcelWidth": "Ārējais platums (cm)",
     "parcelHeight": "Ārējais augstums (cm)",
     "weightDivisor": "Maršruta tilpumsvara dalītājs",
-    "weightRule": "Maksas noteikums",
-    "higherWeight": "Lielāks par faktisko un tilpuma svaru",
+    "weightRule": "Maksas aprēķina noteikums",
+    "higherWeight": "Lielākais no faktiskā svara un tilpumsvara",
     "actualOnly": "Tikai faktiskais svars",
     "calculateWeight": "Aprēķinātais svars",
     "volumetricWeight": "Tilpuma masa",
     "billingBase": "Svars pirms noapaļošanas",
-    "weightDisclaimer": "Tikai ilustratīvs svara aprēķins. Maršruta noapaļošana, minimālās maksas, izmēru ierobežojumi un pakalpojumu maksa joprojām ir spēkā. Apstiprināt pašreizējo citātu ar Sugargoo.",
+    "weightDisclaimer": "Rezultāts rāda svaru pirms noapaļošanas un minimālās maksas piemērošanas. Joprojām ir spēkā izmēru ierobežojumi un pakalpojumu maksas. Pārbaudi pašreizējo piedāvājumu Sugargoo.",
     "weightError": "Ievadiet pozitīvu skaitli katrā mērījumu laukā.",
-    "officialEstimatorGuide": "Atvērt oficiālo kuģniecības novērtējumu guide"
+    "officialEstimatorGuide": "Atvērt oficiālo piegādes kalkulatora ceļvedi"
   },
   "groups": {
     "basics": "Darba sākšana",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo piegādes kalkulators: svars un izmaksas",
-      "description": "Aprēķiniet paku tilpuma svaru, izprotiet maksas svaru un salīdziniet Sugargoo piegādes piedāvājumus, izmantojot jūsu galamērķi, izmērus un produktu kategoriju.",
+      "description": "Salīdzini pakas faktisko svaru ar tilpumsvaru. Izmanto izvēlētā maršruta dalītāju un maksas aprēķina noteikumu. Šis rīks neaprēķina piegādes cenu.",
       "keyword": "sugargoo piegādes kalkulators",
       "category": "shipping",
       "intro": [
-        "Izmantojiet Sugargoo oficiālo kuģniecības novērtējumu pašreizējām cenām un maršrutu pieejamību. Ieraksta galamērķi, preces kategoriju, iepakoto svaru un izmērus. Svara rīks palīdz pārbaudīt matemātiku; tas nenorāda kravu vai savienojas ar jūsu Sugargoo kontu.",
+        "Salīdzini pakas faktisko svaru ar tilpumsvaru. Izmanto izvēlētā maršruta dalītāju un maksas aprēķina noteikumu. Šis rīks neaprēķina piegādes cenu. Rezultāts rāda svaru pirms noapaļošanas un minimālās maksas piemērošanas. Joprojām ir spēkā izmēru ierobežojumi un pakalpojumu maksas. Pārbaudi pašreizējo piedāvājumu Sugargoo.",
         "Salīdziniet maršrutus, izmantojot identiskus paku datus. Cenu, pamatojoties tikai uz preces svaru, var izlaist vietu, ko izmanto kurpes vai aizsargiepakojums. Pirms samaksas pārbaudiet katra maršruta tarifikācijas noteikumu, noapaļošanu un minimālo maksu."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Darbināta tilpuma-svara piemērs",
+          "title": "Tilpumsvara aprēķina piemērs",
           "paragraphs": [
             "Ilustratīvs piemērs, nevis piegādes citāts: pakas pasākumi 40 × 30 × 20 cm un sver 3 kg. Ar 6000 dalītāju tā tilpuma svars ir 4 kg. Maršruts, kas izmanto lielāku faktisko un tilpuma svaru, sāktos no 4 kg pirms tā noapaļošanas vai minimālās uzlādes. Maršruta tarifikācijas faktiskā masa sāktos tikai no 3 kg.",
             "Ja tās pašas preces var droši iederēties 40 × 30 × 15 cm iepakojumā, aprēķinātais tilpuma svars ar šo dalījumu kļūst par 3 kg. Tas tikai salīdzina mērījumus. Tas nepierāda ietaupījumus: iepakošanas pakalpojumi, maršruta atbilstība, svara pieaugums un pašreizējais tarifs var mainīt galīgo kopējo apjomu."
           ],
           "bullets": [
             "Izmantojiet ārējos iesaiņotos izmērus centimetros, nevis produkta izmērus.",
-            "Konvertēt grami uz kilogramu pirms, izmantojot zemāk minēto rīku: 3000 g ir vienāds ar 3 kg.",
+            "Pārvērt gramus kilogramos: 3000 g ir 3 kg.",
             "Paņemiet nodalīšanas un uzlādes noteikumu no maršruta, ko apsverat."
           ]
         },

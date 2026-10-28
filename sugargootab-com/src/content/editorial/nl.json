@@ -48,21 +48,21 @@
     "catalogGuideNote": "Productfoto's en prijzen zijn referenties. Controleer de exacte verkooplijst en uw eigen magazijn QC voor verzending.",
     "nextStep": "Kies uw volgende stap",
     "weightToolTitle": "Pakketgewichtcalculator",
-    "weightToolIntro": "Controleer het werkelijke en volumetrische gewicht. Deze tool citeert geen verzendprijzen; gebruik de geselecteerde route.",
+    "weightToolIntro": "Vergelijk het werkelijke pakketgewicht met het volumegewicht. Gebruik de deler en berekeningsregel van de gekozen verzendroute. Deze tool berekent geen verzendprijzen.",
     "actualWeight": "Werkelijk gewicht van het verpakte pakket (kg)",
     "parcelLength": "Buitenlengte (cm)",
     "parcelWidth": "Buitenbreedte (cm)",
     "parcelHeight": "Buitenhoogte (cm)",
     "weightDivisor": "Volumetrische deler van de verzendroute",
-    "weightRule": "Opladen regel",
-    "higherWeight": "Hoger van het feitelijke en volumetrische gewicht",
+    "weightRule": "Berekeningsregel",
+    "higherWeight": "Het hoogste van werkelijk gewicht en volumegewicht",
     "actualOnly": "Alleen werkelijk gewicht",
     "calculateWeight": "Bereken gewicht",
     "volumetricWeight": "Volumetrisch gewicht",
     "billingBase": "Gewicht vóór afronding",
-    "weightDisclaimer": "Uitsluitend illustratieve gewichtsberekening. Routeronding, minimale kosten, afmetingen en servicekosten zijn nog steeds van toepassing. Bevestig het huidige citaat met Sugargoo.",
+    "weightDisclaimer": "Het resultaat toont het gewicht vóór afronding en het minimale facturabele gewicht. Ook afmetingslimieten en servicekosten gelden. Controleer de actuele offerte bij Sugargoo.",
     "weightError": "Voer een positief getal in in elk meetveld.",
-    "officialEstimatorGuide": "Open de officiële scheepsschattingsgids"
+    "officialEstimatorGuide": "Open de officiële handleiding van de verzendcalculator"
   },
   "groups": {
     "basics": "Aan de slag",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Sugargoo verzendcalculator: gewicht en kosten",
-      "description": "Bereken pakket volumetrische gewicht, begrijp factureerbaar gewicht, en vergelijk Sugargoo verzending offertes met behulp van uw bestemming, afmetingen en item categorie.",
+      "description": "Vergelijk het werkelijke pakketgewicht met het volumegewicht. Gebruik de deler en berekeningsregel van de gekozen verzendroute. Deze tool berekent geen verzendprijzen.",
       "keyword": "Sugargoo verzendcalculator",
       "category": "shipping",
       "intro": [
-        "Gebruik Sugargoo een officiële verzendwaarde voor huidige prijzen en route beschikbaarheid. Voer de bestemming, itemcategorie, verpakt gewicht en afmetingen in. Het gewicht gereedschap hieronder helpt bij het controleren van de wiskunde; het citaat vracht niet of verbinding maken met uw Sugargoo-account.",
+        "Vergelijk het werkelijke pakketgewicht met het volumegewicht. Gebruik de deler en berekeningsregel van de gekozen verzendroute. Deze tool berekent geen verzendprijzen. Het resultaat toont het gewicht vóór afronding en het minimale facturabele gewicht. Ook afmetingslimieten en servicekosten gelden. Controleer de actuele offerte bij Sugargoo.",
         "Vergelijk routes met dezelfde pakketinvoer. Een offerte op basis van alleen item gewicht kan missen de ruimte gebruikt door schoenen dozen of beschermende verpakking. Controleer elke route en laadregel, afronding en minimale kosten voordat u betaalt."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Een voorbeeld van een bewerkt volume-gewicht",
+          "title": "Rekenvoorbeeld voor volumegewicht",
           "paragraphs": [
             "Illustratief voorbeeld, geen offerte voor verzending: een pakket van 40 × 30 × 20 cm en weegt 3 kg. Met een deler van 6000 is het volumetrische gewicht 4 kg. Een route met het grootste werkelijke en volumetrische gewicht zou beginnen vanaf 4 kg voordat de afrondings- of minimale oplaadregels. Een route opladen eigenlijk gewicht zou alleen beginnen vanaf 3 kg.",
             "Als dezelfde goederen veilig in een verpakking van 40 × 30 × 15 cm kunnen passen, wordt het berekende volumetrische gewicht 3 kg met die deler. Dit vergelijkt alleen metingen. Het levert geen besparing op: verpakkingsdiensten, route-subsidiabiliteit, gewichtsverhogingen en het huidige tarief kunnen het uiteindelijke totaal wijzigen."
           ],
           "bullets": [
             "Gebruik buitenste verpakte afmetingen in centimeters, geen productafmetingen.",
-            "Converteer gram naar kilogram voor gebruik van het gereedschap hieronder: 3000 g is gelijk aan 3 kg.",
+            "Reken gram om naar kilogram: 3000 g is 3 kg.",
             "Neem de deler en laadregel van de route die u overweegt."
           ]
         },

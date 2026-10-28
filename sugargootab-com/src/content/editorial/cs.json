@@ -48,21 +48,21 @@
     "catalogGuideNote": "Fotky produktů a ceny jsou reference. Zkontrolujte přesnou prodejnu a vlastní sklad QC před odesláním.",
     "nextStep": "Vyberte si další krok",
     "weightToolTitle": "Kalkulačka hmotnosti balíku",
-    "weightToolIntro": "Zkontrolujte skutečnou a objemovou hmotnost. Tento nástroj necituje ceny za dopravu; použijte zvolenou trasu rozdělení a pravidla fakturace.",
+    "weightToolIntro": "Porovnejte skutečnou hmotnost balíku s objemovou hmotností. Použijte dělitel a pravidlo účtování zvolené trasy. Nástroj nepočítá cenu dopravy.",
     "actualWeight": "Skutečná hmotnost zabaleného balíku (kg)",
     "parcelLength": "Vnější délka (cm)",
     "parcelWidth": "Vnější šířka (cm)",
     "parcelHeight": "Vnější výška (cm)",
     "weightDivisor": "Dělitel objemové hmotnosti přepravní trasy",
-    "weightRule": "Pravidlo nabíjení",
-    "higherWeight": "Vyšší skutečná a objemová hmotnost",
+    "weightRule": "Pravidlo účtování",
+    "higherWeight": "Vyšší ze skutečné a objemové hmotnosti",
     "actualOnly": "Pouze skutečná hmotnost",
     "calculateWeight": "Vypočítejte hmotnost",
     "volumetricWeight": "Objemová hmotnost",
     "billingBase": "Hmotnost před zaokrouhlením",
-    "weightDisclaimer": "Pouze ilustrativní výpočet hmotnosti. Zaokrouhlení trasy, minimální poplatky, omezení rozměrů a poplatky za služby stále platí. Potvrďte aktuální citát Sugargooem.",
+    "weightDisclaimer": "Výsledek ukazuje hmotnost před zaokrouhlením a minimální účtovanou hmotností. Platí také rozměrové limity a poplatky za služby. Ověřte aktuální nabídku v Sugargoo.",
     "weightError": "V každém měřicím poli zadejte kladné číslo.",
-    "officialEstimatorGuide": "Otevřít oficiální průvodce odhadcem dopravy"
+    "officialEstimatorGuide": "Otevřít oficiální návod ke kalkulačce dopravy"
   },
   "groups": {
     "basics": "Začínáme",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Kalkulačka dopravy Sugargoo: hmotnost a náklady",
-      "description": "Vypočítejte objemovou hmotnost balíku, pochopte fakturovatelnou hmotnost a porovnejte nabídku Sugargoo shipping s využitím vašeho cíle, rozměrů a kategorie položek.",
+      "description": "Porovnejte skutečnou hmotnost balíku s objemovou hmotností. Použijte dělitel a pravidlo účtování zvolené trasy. Nástroj nepočítá cenu dopravy.",
       "keyword": "kalkulačka přepravy Sugargoo",
       "category": "shipping",
       "intro": [
-        "Pro aktuální ceny a dostupnost trasy použijte oficiální odhad zboží Sugargoo Merantis. Zadejte místo určení, kategorii položky, balenou hmotnost a rozměry. Váhový nástroj níže pomáhá kontrolovat matematiku; necituje nákladní dopravu ani se nepřipojuje k účtu Sugargoo.",
+        "Porovnejte skutečnou hmotnost balíku s objemovou hmotností. Použijte dělitel a pravidlo účtování zvolené trasy. Nástroj nepočítá cenu dopravy. Výsledek ukazuje hmotnost před zaokrouhlením a minimální účtovanou hmotností. Platí také rozměrové limity a poplatky za služby. Ověřte aktuální nabídku v Sugargoo.",
         "Porovnejte trasy pomocí stejných balíkových vstupů. Citace založená pouze na hmotnosti položky může chybět místo používané krabicemi od bot nebo ochranným obalem. Před zaplacením zkontrolujte pravidlo poplatků za každou trasu, zaokrouhlování a minimální poplatek."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Příklad pracovní objemové hmotnosti",
+          "title": "Příklad výpočtu objemové hmotnosti",
           "paragraphs": [
             "Ilustrativní příklad, nikoli námořní citace: parcela měří 40 × 30 × 20 cm a váží 3 kg. S dělitelem 6000 má objemovou hmotnost 4 kg. Trasa využívající větší skutečnou a objemovou hmotnost by měla začít od 4 kg před jejím zaokrouhlením nebo minimálním zatížením. Trasa, která nabíjí skutečnou hmotnost, by začala pouze od 3 kg.",
             "Pokud se stejné zboží bezpečně vejde do balení o rozměrech 40 × 30 × 15 cm, vypočtená objemová hmotnost se s tímto děličem stane 3 kg. Tohle jen porovnává měření. Nedokazuje úsporu: balící služby, způsobilost trasy, zvýšení hmotnosti a stávající sazba mohou změnit konečný součet."
           ],
           "bullets": [
             "Používejte vnější rozměr balení v centimetrech, nikoli rozměry výrobku.",
-            "Převést gramy na kilogramy před použitím níže uvedeného nástroje: 3000 g rovná se 3 kg.",
+            "Převeďte gramy na kilogramy: 3000 g jsou 3 kg.",
             "Vezměte dělič a nabíjení pravidlo z trasy, kterou uvažujete."
           ]
         },

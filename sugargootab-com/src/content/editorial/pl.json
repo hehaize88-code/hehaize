@@ -48,21 +48,21 @@
     "catalogGuideNote": "Zdjęcia i ceny produktów to odniesienia. Przed wysyłką sprawdź dokładną listę sprzedawców i własny magazyn QC.",
     "nextStep": "Wybierz kolejny krok",
     "weightToolTitle": "Kalkulator wagi paczki",
-    "weightToolIntro": "Sprawdź rzeczywistą i objętościową masę. Narzędzie to nie cytuje cen wysyłki; korzysta z wybranej zasady podziału trasy i rozliczenia rachunków.",
+    "weightToolIntro": "Porównaj rzeczywistą wagę paczki z wagą objętościową. Użyj dzielnika i zasad naliczania opłat dla wybranej trasy. To narzędzie nie oblicza ceny wysyłki.",
     "actualWeight": "Rzeczywista waga zapakowanej paczki (kg)",
     "parcelLength": "Długość zewnętrzna (cm)",
     "parcelWidth": "Szerokość zewnętrzna (cm)",
     "parcelHeight": "Wysokość zewnętrzna (cm)",
     "weightDivisor": "Dzielnik wagi objętościowej dla danej trasy",
-    "weightRule": "Zasada ładowania",
-    "higherWeight": "Większa od wagi rzeczywistej i objętościowej",
+    "weightRule": "Zasada naliczania opłat",
+    "higherWeight": "Większa z wagi rzeczywistej i objętościowej",
     "actualOnly": "Tylko waga rzeczywista",
     "calculateWeight": "Oblicza masę",
     "volumetricWeight": "Masa objętościowa",
     "billingBase": "Waga przed zaokrągleniem",
-    "weightDisclaimer": "Tylko do obliczenia masy świetlnej. Nadal obowiązują opłaty za zaokrąglenie trasy, minimalne opłaty, ograniczenia wymiarów i opłaty za usługi. Potwierdź bieżący cytat z Sugargoo.",
+    "weightDisclaimer": "Wynik pokazuje wagę przed zaokrągleniem i zastosowaniem minimum rozliczeniowego. Nadal obowiązują limity wymiarów i opłaty za usługi. Sprawdź aktualną wycenę w Sugargoo.",
     "weightError": "Podaj liczbę dodatnią w każdym polu pomiaru.",
-    "officialEstimatorGuide": "Otworzyć oficjalny przewodnik do celów wysyłki"
+    "officialEstimatorGuide": "Otwórz oficjalny poradnik kalkulatora wysyłki"
   },
   "groups": {
     "basics": "Pierwsze kroki",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Kalkulator wysyłki Sugargoo: waga i koszty",
-      "description": "Oblicz wagę paczek, zrozum wagi płatnej i porównaj cytaty wysyłki Sugargoo za pomocą miejsca przeznaczenia, wymiarów i kategorii pozycji.",
+      "description": "Porównaj rzeczywistą wagę paczki z wagą objętościową. Użyj dzielnika i zasad naliczania opłat dla wybranej trasy. To narzędzie nie oblicza ceny wysyłki.",
       "keyword": "kalkulator wysyłki Sugargoo",
       "category": "shipping",
       "intro": [
-        "Użyj oficjalnego estimatora wysyłki Sugargoo dla aktualnych cen i dostępności trasy. Należy podać miejsce przeznaczenia, kategorię pozycji, spakowaną masę i wymiary. Poniższe narzędzie wagowe pomaga sprawdzać matematykę, nie cytuje frachtu ani nie łączy się z Twoim kontam Sugargoo.",
+        "Porównaj rzeczywistą wagę paczki z wagą objętościową. Użyj dzielnika i zasad naliczania opłat dla wybranej trasy. To narzędzie nie oblicza ceny wysyłki. Wynik pokazuje wagę przed zaokrągleniem i zastosowaniem minimum rozliczeniowego. Nadal obowiązują limity wymiarów i opłaty za usługi. Sprawdź aktualną wycenę w Sugargoo.",
         "Porównaj trasy za pomocą identycznych wejść paczek. Cytat oparty tylko na masie elementu może przegapić miejsce używane przez pudełka butów lub opakowania ochronne. Przed uiszczeniem należy sprawdzić zasadę ładowania każdej trasy, zaokrąglanie i minimalne obciążenie."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Przykład obrabiany głośnościowo-masowy",
+          "title": "Przykład obliczenia wagi objętościowej",
           "paragraphs": [
             "Przykład ilustracyjny, nie cytat wysyłkowy: paczka wynosi 40 × 30 × 20 cm i waży 3 kg. Z przekładnią 6000, jego waga objętościowa wynosi 4 kg. Trasa wykorzystująca większą wagę rzeczywistą i objętościową zaczynałaby się od 4 kg przed jej regułami zaokrąglania lub minimalnym ładunkiem. Naładowanie rzeczywistej wagi trasy rozpoczynałoby się od 3 kg.",
             "Jeżeli te same towary mogą bezpiecznie zmieścić się w opakowaniu 40 × 30 × 15 cm, obliczana masa objętościowa staje się 3 kg razem z tym dzielnikiem. To tylko porównuje pomiary. Nie udowodniono w nim oszczędności: usługi pakowania, kwalifikowalność tras, przyrost masy i obecna taryfa może zmienić ostateczną sumę."
           ],
           "bullets": [
             "Zastosowanie zewnętrznych wymiarów pakowanych w centymetry, a nie wymiary produktu.",
-            "Konwertuj gramy na kilogramy przed użyciem poniższego narzędzia: 3000 g równa się 3 kg.",
+            "Przelicz gramy na kilogramy: 3000 g to 3 kg.",
             "Wziąć kombinator i regułę ładowania z trasy, którą rozważasz."
           ]
         },

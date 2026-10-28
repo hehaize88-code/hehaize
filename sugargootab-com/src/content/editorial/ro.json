@@ -48,21 +48,21 @@
     "catalogGuideNote": "Fotografiile si preturile produselor sunt referinte. Verificați lista exact vânzător și propriul depozit QC înainte de expediere.",
     "nextStep": "Alege pasul următor",
     "weightToolTitle": "Calculator pentru greutatea coletului",
-    "weightToolIntro": "Verificați greutatea reală și volumetrică. Acest instrument nu citează preţurile de transport maritim; utilizaţi traseul selectat Divisor şi regula de facturare.",
+    "weightToolIntro": "Compară greutatea reală a coletului cu greutatea volumetrică. Folosește divizorul și regula de tarifare ale rutei alese. Acest instrument nu calculează prețul transportului.",
     "actualWeight": "Greutatea reală a coletului ambalat (kg)",
     "parcelLength": "Lungimea exterioară (cm)",
     "parcelWidth": "Lăţimea exterioară (cm)",
     "parcelHeight": "Înălțimea exterioară (cm)",
     "weightDivisor": "Divizorul greutății volumetrice al rutei",
-    "weightRule": "Regula de încărcare",
-    "higherWeight": "Mai mare de greutate reală și volumetrică",
+    "weightRule": "Regula de tarifare",
+    "higherWeight": "Valoarea mai mare dintre greutatea reală și cea volumetrică",
     "actualOnly": "Numai greutatea reală",
     "calculateWeight": "Calculează greutatea",
     "volumetricWeight": "Greutatea volumimetrică",
     "billingBase": "Greutatea înainte de rotunjire",
-    "weightDisclaimer": "Calculul greutății ilustrative numai. În continuare se aplică rotunjirea rutelor, taxele minime, limitele dimensiunilor și taxele de serviciu. Confirmați citatul curent cu Sugargoo.",
+    "weightDisclaimer": "Rezultatul arată greutatea înainte de rotunjire și de aplicarea minimului facturabil. Se aplică și limitele de dimensiuni și taxele pentru servicii. Confirmă oferta actuală în Sugargoo.",
     "weightError": "Introduceți un număr pozitiv în fiecare câmp de măsurare.",
-    "officialEstimatorGuide": "Deschide ghidul oficial de evaluare a transportului maritim"
+    "officialEstimatorGuide": "Deschide ghidul oficial al calculatorului de transport"
   },
   "groups": {
     "basics": "Primii pași",
@@ -774,24 +774,24 @@
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
       "title": "Calculator de transport Sugargoo: greutate și costuri",
-      "description": "Calculați greutatea volumetrică a parcelei, înțelegeți greutatea facturabilă, și comparați cotațiile de transport maritim Sugargoo folosind destinația, dimensiunile și categoria de produs.",
+      "description": "Compară greutatea reală a coletului cu greutatea volumetrică. Folosește divizorul și regula de tarifare ale rutei alese. Acest instrument nu calculează prețul transportului.",
       "keyword": "calculator transport sugargoo",
       "category": "shipping",
       "intro": [
-        "Utilizaţi Sugargoo lui de transport maritim oficialstimator pentru preţurile curente şi disponibilitatea rutei. Introduceți destinația, categoria de produs, greutatea ambalate și dimensiuni. Instrumentul de greutate de mai jos ajută la verificarea matematicii; nu citează marfă sau nu se conectează la contul Sugargoo.",
+        "Compară greutatea reală a coletului cu greutatea volumetrică. Folosește divizorul și regula de tarifare ale rutei alese. Acest instrument nu calculează prețul transportului. Rezultatul arată greutatea înainte de rotunjire și de aplicarea minimului facturabil. Se aplică și limitele de dimensiuni și taxele pentru servicii. Confirmă oferta actuală în Sugargoo.",
         "Comparați rutele utilizând intrări de colete identice. Un citat bazat numai pe greutatea produsului poate pierde spațiul utilizat de cutii de pantofi sau ambalaj protector. Verificați fiecare regulă de încărcare a traseului, rotunjirea și taxa minimă înainte de plată."
       ],
       "sections": [
         {
           "id": "shipping-inputs",
-          "title": "Un exemplu volumetric de greutate lucrat",
+          "title": "Exemplu de calcul al greutății volumetrice",
           "paragraphs": [
             "Exemplu ilustrativ, nu un citat de transport maritim: o parcelă măsoară 40 × 30 × 20 cm și cântărește 3 kg. Cu un divizor de 6000, greutatea volumetrică este de 4 kg. O rută care utilizează cea mai mare greutate reală și volumetrică ar începe de la 4 kg înainte de regulile sale de rotunjire sau de încărcare minimă. Un traseu de încărcare greutate reală ar începe doar de la 3 kg.",
             "În cazul în care aceleași mărfuri pot încăpea în siguranță într-un pachet de 40 × 30 × 15 cm, greutatea volumetrică calculată devine 3 kg cu acest divizor. Asta compara doar masuratorile. Aceasta nu se dovedește a fi o economie: serviciile de ambalare, eligibilitatea rutelor, creșterile de greutate și tariful actual pot modifica totalul final."
           ],
           "bullets": [
             "Utilizaţi dimensiunile exterioare ambalate în centimetri, nu dimensiunile produsului.",
-            "Conversia gramelor în kilograme înainte de a utiliza instrumentul de mai jos: 3000 g = 3 kg.",
+            "Transformă gramele în kilograme: 3000 g înseamnă 3 kg.",
             "Ia disivorul şi încarcă regula de pe ruta pe care o iei în considerare."
           ]
         },
