@@ -43,4 +43,4 @@ Some official blog pages reject direct retrieval; search-index retrieval supplie
 
 24 content bundles, 432 editorial routes, 24 homepages, 816 unique sitemap URLs, 26 pagination/source-boundary scenarios, source-outage handling, calculator maths and invalid inputs, contextual links, analytics events, Astro build and Wrangler dry-run. Existing FAQ, unaffected articles and retained chapters were compared with the release baseline in all languages.
 
-Production verification is recorded separately after the GitHub-to-Cloudflare release completes. Successful deployment is not evidence that a search engine has indexed the new URLs or that CTR has already improved.
+Production verification completed: 264 live pages passed, including all 72 newly added language routes. See `live-verification.json` and the release entry in `PROJECT_MEMORY.md`. Successful deployment is not evidence that a search engine has indexed the new URLs or that CTR has already improved.

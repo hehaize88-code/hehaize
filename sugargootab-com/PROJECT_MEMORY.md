@@ -1,6 +1,6 @@
 # SugargooTab project memory
 
-Updated: 2026-10-18 (Asia/Shanghai)
+Updated: 2026-10-28 (Asia/Shanghai)
 Status: V2, compact mobile articles and 16-product catalogue pages are live. Dedicated GA4 analytics is deployed; Google's installation test succeeded and live page_view events were received.
 
 ## Google Analytics 4 — 2026-10-18
@@ -143,4 +143,12 @@ Authorized by the owner for production deployment. Updated six existing guides (
 
 Added a client-side parcel-weight calculator to all 24 shipping-calculator pages. It calculates actual/volumetric billing bases with a user-supplied divisor, not freight prices. Uses illustrative inputs; no quotes, delivery guarantees or universal customs declarations. Added article_guide_click without changing existing measurement ID, referral links or source-only catalogue behavior.
 
-Release validation: 24 content bundles, 432 editorial routes, 816 sitemap URLs, 26 pagination scenarios, calculator tests and Wrangler dry-run. Private account metrics are excluded from the committed research notes. Source ledger and rationale: research/seo-2026-10-28/README.md. Production verification is pending until the automatic build and live checks complete.
+Release validation: 24 content bundles, 432 editorial routes, 816 sitemap URLs, 26 pagination scenarios, calculator tests and Wrangler dry-run. Private account metrics are excluded from the committed research notes. Source ledger and rationale: research/seo-2026-10-28/README.md. Production verification completed successfully; see the release details below.
+
+### 2026-10-28 production verification
+
+- Application commit `823ed0df51ecc44fd4f6f30e8714f382fc86673b`: Cloudflare Workers build `562dc1ec-4b80-4dfd-a79c-d2872728ecb5` succeeded.
+- Final wording revision `022998d0bbaf943d2c9941cbb95f5ae55832ecdd`: build `f3f7babd-84b0-47b3-86ba-76016fbb747c` succeeded, Worker version `13b706e8-212e-498b-860f-c727326ef99b`.
+- Live checks passed for 264 pages: all 216 new/revised article routes, 24 article indexes and 24 catalogue pages. Checked complete sections, current introductions/titles, canonical URLs, indexing directives, 25 alternate-language links and same-article language switching. All 72 newly added article URLs appear in the 816-URL sitemap. Robots returns 200 and allows crawling. Evidence: `research/seo-2026-10-28/live-verification.json`.
+- Chrome verification: calculator shows 4 kg for the higher-weight rule and 3 kg for actual-only with the illustrative inputs. German calculator and Maltese shoe guide work at 390px without horizontal document overflow. All eight Maltese reading sections expand; switching to French preserves the shoe-guide path. Desktop homepage category shortcuts render, and all 12 source product images load. Viewport override reset.
+- A request using a Bingbot user-agent returns 200/indexable on the rehearsal article; this does not prove access from real Bing crawler IPs or successful indexing. Search-engine indexing and post-release CTR remain outcomes to measure, not deployment guarantees.
