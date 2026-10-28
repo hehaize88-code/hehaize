@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Articles",
     "articleTitle": "Sugargoo buying guides",
-    "articleIntro": "Practical guides to product links, QC photos, order stages and shipping decisions, with official sources and clear next steps.",
+    "articleIntro": "Practical Sugargoo guides for product links, QC photos, shoe sizes and shipping. Choose the question you need to answer before buying or sending a parcel.",
     "faqTitle": "Sugargoo FAQ",
     "faqIntro": "Clear answers for each stage of your order, with official sources for platform rules and honest limits for this independent catalog.",
     "readArticle": "Read guide",
@@ -34,11 +34,35 @@
     "categoryAccount": "Payments & after-sales",
     "author": "SugargooTab editorial team",
     "siteEvidence": "About this independent catalog",
-    "seoHomeTitle": "Sugargoo Spreadsheet: Product Links, Photos & Buying Guides",
+    "seoHomeTitle": "Sugargoo Spreadsheet: Shoes, Clothing & Product Links",
     "catalogCtaTitle": "Put the checklist to work",
     "catalogCtaBody": "Compare product links in the catalogue, then verify the exact listing and your own order details before buying or shipping.",
     "catalogCtaButton": "Browse product links",
-    "categoryCtaButton": "Explore product categories"
+    "categoryCtaButton": "Explore product categories",
+    "homeSearchIntro": "Find shoes, hoodies, jerseys and accessories. Open a product link, check the seller’s options, then review your own warehouse QC before shipping.",
+    "seoHomeDescription": "Browse Sugargoo product links for shoes, hoodies, jerseys and accessories. Compare reference photos and use practical QC, sizing and shipping guides.",
+    "seoCatalogTitle": "Sugargoo Spreadsheet: Browse Shoes, Clothing & Accessories",
+    "seoCatalogDescription": "Search Sugargoo product links, compare reference photos and prices, and check the original listing before ordering. Browse shoes, clothing and accessories.",
+    "seoCategoryTitle": "Sugargoo {category}: Product Links & Photos",
+    "seoCategoryDescription": "Browse {category} product links for Sugargoo. Compare reference photos and listed prices, then confirm sizes, options and availability before ordering.",
+    "catalogGuideNote": "Product photos and prices are references. Check the exact seller listing and your own warehouse QC before shipping.",
+    "nextStep": "Choose your next step",
+    "weightToolTitle": "Parcel weight calculator",
+    "weightToolIntro": "Check actual and volumetric weight. This tool does not quote shipping prices; use the selected route’s divisor and billing rule.",
+    "actualWeight": "Actual packed weight (kg)",
+    "parcelLength": "Outer length (cm)",
+    "parcelWidth": "Outer width (cm)",
+    "parcelHeight": "Outer height (cm)",
+    "weightDivisor": "Route divisor",
+    "weightRule": "Charging rule",
+    "higherWeight": "Higher of actual and volumetric weight",
+    "actualOnly": "Actual weight only",
+    "calculateWeight": "Calculate weight",
+    "volumetricWeight": "Volumetric weight",
+    "billingBase": "Weight before rounding",
+    "weightDisclaimer": "Illustrative weight calculation only. Route rounding, minimum charges, dimensions limits and service fees still apply. Confirm the current quote with Sugargoo.",
+    "weightError": "Enter a positive number in every measurement field.",
+    "officialEstimatorGuide": "Open the official shipping estimator guide"
   },
   "groups": {
     "basics": "Getting started",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo Spreadsheet Guide: Find & Verify Product Links",
-      "description": "Find products in a Sugargoo spreadsheet, verify live listings and variants, and separate reference images from your own warehouse QC photos.",
+      "title": "How to Use a Sugargoo Spreadsheet: Find, Check & Order",
+      "description": "Use a Sugargoo spreadsheet to find product links, check sizes and seller options, open the correct order page, and review warehouse QC before shipping.",
       "keyword": "sugargoo spreadsheet",
       "category": "getting-started",
       "intro": [
-        "A Sugargoo spreadsheet is useful when it helps you make a smaller, better informed shortlist. A long page of product pictures does not tell you whether a particular size is available, what your parcel will cost, or whether the seller's current listing still matches an older recommendation. Treat the spreadsheet as the beginning of your research and keep the final buying decision tied to the exact listing.",
-        "This independent catalogue reads its product information and reference images from cnbuycha. Ordering and payment happen on Sugargoo. The following method connects those two stages without treating a catalogue entry as a personal recommendation, a stock guarantee or proof of warehouse inspection. It also works if you keep your shortlist in a simple notes app."
+        "A Sugargoo spreadsheet is a directory of product links. Use it to find an item, then check the original listing and the exact variant on Sugargoo before paying. A saved link does not confirm current stock, the selected size, the final price or acceptance by the buying agent.",
+        "Start with the live catalogue or a category such as shoes, hoodies or jerseys. Open a promising item, review its reference photos, and follow the available buying link. Keep your shortlist small enough to verify each item properly."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "How to verify a live listing before buying",
+          "id": "spreadsheet-first-action",
+          "title": "From a spreadsheet find to a checked order",
           "paragraphs": [
-            "Open the catalogue product, then follow its original listing link. Match the marketplace product ID, seller and selected variant with the item shown in Sugargoo. The catalogue's internal page number is a separate identifier. Check the live price, available options and quantity again immediately before payment; a saved card cannot establish current stock.",
-            "If the original listing is missing, the product cannot be loaded, or the variant differs, stop at that step. Return to the spreadsheet and compare another candidate. Record why the first one failed so you do not repeat the same check later. Reference pictures remain discovery evidence, even when they resemble warehouse photos."
+            "Search by the product type or a distinctive name, then open the item page. Compare the listing title, source item identifier, photos and selected options. If the buying page opens a different colour or size, choose the intended variant again and inspect the final order summary. Do not pay just because the image looks familiar.",
+            "The price shown in a catalogue is a reference for the item. Build a separate budget for delivery within China, any selected services and international freight. Save the source link with your chosen size and colour. Once the item reaches the warehouse, use your own QC record to decide whether it is ready to ship."
           ],
-          "table": {
-            "headers": [
-              "Check",
-              "Evidence to use"
-            ],
-            "rows": [
-              [
-                "Product identity",
-                "Original marketplace URL and product ID"
-              ],
-              [
-                "Live availability",
-                "The current seller listing and selected option"
-              ],
-              [
-                "Price",
-                "Exact variant and checkout amount"
-              ],
-              [
-                "Condition",
-                "Your own order photos after warehouse arrival"
-              ]
-            ]
-          }
+          "bullets": [
+            "Find: choose a category and narrow the search.",
+            "Check: match the original listing, options and current order price.",
+            "Order: use the official purchase flow for an eligible item.",
+            "Review: inspect your own warehouse QC before making a parcel."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC Photos: Product Checks Before Shipping",
-      "description": "Use a practical Sugargoo QC photo checklist for shoes, clothing and bags. Check labels, measurements, stitching and missing details before shipping.",
+      "title": "How to Check Sugargoo QC Photos Before Shipping",
+      "description": "Find Sugargoo warehouse QC photos, check the correct item and size, request useful extra measurements, and resolve problems before international shipping.",
       "keyword": "sugargoo qc photos",
       "category": "quality",
       "intro": [
-        "Warehouse photos are most useful when you have a specific decision to make: does the received item match the order, is an important detail unclear, or is there visible damage that needs attention? Looking at every image without a checklist can still leave the most important question unanswered. A clear review method makes the photos easier to use.",
-        "Sugargoo describes typically providing five standard QC photos, with inspection scope depending on the item and order type. Photo quantity is not a guarantee of what can be verified. This site's cnbuycha reference images are catalogue material, not verified QC of your personal Sugargoo order; review your own warehouse record before arranging international shipment."
+        "To check Sugargoo QC photos, sign in and open the received item in your order or Packing Center record. Review the pictures attached to that item before adding it to an international parcel. Catalogue pictures on SugargooTab are reference images, not photographs of your own order.",
+        "Check the selected variant, label, quantity and visible condition first. If fit depends on a measurement that is not shown, request that specific measurement before approving shipping. Visual QC is not authentication or a guarantee of fit."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "QC photo checks for shoes, clothing and bags",
+          "id": "qc-first-check",
+          "title": "Where to find photos and what to check first",
           "paragraphs": [
-            "Start by matching the order, colour, size and quantity. Then inspect the details that could change your decision to keep the item. The following checklist is a practical photo-review aid, not a guarantee that ordinary QC includes every angle or measurement. Request the particular missing evidence and check any service charge before proceeding.",
-            "For example, a bag photographed only from the front does not establish its strap attachment or interior condition. Ask for the relevant angle if that detail matters to you. If a measurement is needed, specify its endpoints and ask for a visible tape. Photographs cannot establish every functional property, and they do not prove authenticity."
+            "Start with the exact order reference. An item still being purchased or delivered by the seller may not yet have warehouse photos. When the item has been received, inspect its order details and Packing Center record for the QC images. If the record says it is ready but no photos appear, send support the order reference and ask whether inspection is complete.",
+            "Open the full image rather than judging a small thumbnail. Match the colour and size label to your paid order, then inspect both sides and any included accessories. Save a specific question for any angle you cannot see. For shoes, an insole measurement and a size-label photo answer different questions; one cannot replace the other."
           ],
-          "table": {
-            "headers": [
-              "Product",
-              "Check in your order photos",
-              "If unclear, request"
-            ],
-            "rows": [
-              [
-                "Shoes",
-                "Pair, size labels, soles and visible seams",
-                "Both size labels and the relevant sole or seam angle"
-              ],
-              [
-                "Clothing",
-                "Size label, fabric appearance and stitching",
-                "A flat measurement with clear starting and ending points"
-              ],
-              [
-                "Bags",
-                "Straps, fastenings, lining and accessories",
-                "Interior and attachment-point close-ups"
-              ],
-              [
-                "Any item",
-                "Correct variant, quantity and visible damage",
-                "A clear image of the specific discrepancy"
-              ]
-            ]
-          }
+          "bullets": [
+            "Check that every photo belongs to the same order and variant.",
+            "Request a close view of a suspected defect, identifying its location.",
+            "Keep unresolved items out of the parcel until you have an answer."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo Shipping Calculator: Weight, Size & Total Cost",
-      "description": "Use the Sugargoo shipping calculator with realistic weight and dimensions. Compare eligible routes and understand what an estimate leaves uncertain.",
+      "title": "Sugargoo Shipping Calculator: Estimate Weight & Cost",
+      "description": "Calculate parcel volumetric weight, understand billable weight, and compare Sugargoo shipping quotes using your destination, dimensions and item category.",
       "keyword": "sugargoo shipping calculator",
       "category": "shipping",
       "intro": [
-        "A shipping estimate becomes useful when you know what went into it. Two people can enter the same item weight and receive different results because their destinations, product categories, parcel dimensions or routes differ. Copying someone else's shipping total therefore gives you a weak budget for your own order.",
-        "Sugargoo's official calculator guidance uses destination, item category, weight and dimensions to compare available shipping options. Treat the result as a dated scenario, then update it as you learn more about the packed parcel. This guide shows how to build those scenarios and identify the uncertainty before it becomes a problem at checkout."
+        "Use Sugargoo’s official shipping estimator for current prices and route availability. Enter the destination, item category, packed weight and dimensions. The weight tool below helps check the maths; it does not quote freight or connect to your Sugargoo account.",
+        "Compare routes using identical parcel inputs. A quote based only on item weight can miss the space used by shoeboxes or protective packaging. Check each route’s charging rule, rounding and minimum charge before paying."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Make two estimates before committing to goods",
+          "id": "shipping-inputs",
+          "title": "A worked volumetric-weight example",
           "paragraphs": [
-            "Build an initial scenario with your best available weight and dimensions, then a conservative scenario that allows for uncertain packaging. Keep the destination, contents and other settings consistent. If the order only fits your budget under the most optimistic assumptions, resolve the uncertainty before paying for the goods.",
-            "Record the quote date, route, units, estimated dimensions and selected extras. Replace assumptions with measured parcel information when available. For a US destination, use the separate USA guide for the comparison process; for multiple stored orders, compare complete combined and split costs using the consolidation guide."
+            "Illustrative example, not a shipping quote: a parcel measures 40 × 30 × 20 cm and weighs 3 kg. With a divisor of 6000, its volumetric weight is 4 kg. A route using the greater of actual and volumetric weight would start from 4 kg before its rounding or minimum-charge rules. A route charging actual weight only would start from 3 kg.",
+            "If the same goods can safely fit in a 40 × 30 × 15 cm package, the calculated volumetric weight becomes 3 kg with that divisor. This only compares measurements. It does not prove a saving: packing services, route eligibility, weight increments and the current tariff may change the final total."
+          ],
+          "bullets": [
+            "Use outer packed dimensions in centimetres, not product dimensions.",
+            "Convert grams to kilograms before using the tool below: 3000 g equals 3 kg.",
+            "Take the divisor and charging rule from the route you are considering."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo Rehearsal Shipping: Weight, Size & When to Use It",
-      "description": "Decide when Sugargoo rehearsal shipping is useful, specify packing choices and compare the measured parcel with your original freight estimate.",
+      "title": "Sugargoo Rehearsal Shipping: How It Works & Is It Worth It?",
+      "description": "Learn what Sugargoo rehearsal shipping does, when it is worth the fee, and how to use packed weight and dimensions before choosing a shipping route.",
       "keyword": "sugargoo rehearsal shipping",
       "category": "shipping",
       "intro": [
-        "Rehearsal shipping is most useful when uncertainty about the packed parcel affects a decision you still need to make. You might be choosing between routes, deciding whether to retain bulky packaging or checking whether a planned combination fits a service's limits. Better measurements can help answer those questions, but they do not guarantee a lower shipping bill.",
-        "Sugargoo describes rehearsal as a pre-shipment package simulation that provides more accurate weight and volume information before shipping. Treat it as a measurement and packing decision, with its current service conditions and cost checked in your account. The practical value comes from knowing what you intend to do with the result."
+        "Sugargoo rehearsal shipping is a packing and measurement service before international dispatch. It helps you check the parcel’s actual weight and dimensions before choosing shipping. It is worth considering when boxes, bulky items or a route limit make your estimate uncertain; it does not guarantee savings.",
+        "First finish your item and QC checks. Then confirm the current service fee and packing options in your account. Use the result to compare eligible routes with the same contents, destination and packaging."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "When is a packing rehearsal worth considering?",
+          "title": "How to use rehearsal shipping",
           "paragraphs": [
-            "Consider a rehearsal when unknown packed dimensions could change your route or budget: a bulky lightweight item, several retail boxes, or a parcel near a route limit. Write down the uncertainty you want resolved and check the current service fee. If your decision would be the same across reasonable estimates, the extra measurement may have less value.",
-            "Compare the result with your original inputs: actual weight, outer dimensions, retained packaging and selected services. Recalculate under the route's current billing rule. A smaller measurement does not guarantee a lower final bill because minimum charges, weight increments and other options can still matter."
-          ]
+            "In your Sugargoo account, identify the warehouse items you want to ship together. Open the available pre-shipment package simulation or rehearsal service, check its fee, and specify whether original boxes and protective packaging should stay. Screen labels can change; ask support before paying if the option or its scope is unclear.",
+            "When the result is ready, record packed weight and all three outer dimensions. Re-enter those measurements in the official estimator. Compare eligible routes, their weight increments and any packing charge before submitting the parcel. If you change the contents or packaging afterwards, the earlier measurements may no longer describe the parcel."
+          ],
+          "table": {
+            "headers": [
+              "Your situation",
+              "Decision"
+            ],
+            "rows": [
+              [
+                "Several shoeboxes or a bulky coat",
+                "Consider measurement before selecting a route."
+              ],
+              [
+                "Parcel close to a size or weight limit",
+                "Check the packed result against that exact limit."
+              ],
+              [
+                "Known compact parcel; route choice stays the same",
+                "The extra service may add little value."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian & Taobao Links on Sugargoo: Verify and Fix Errors",
-      "description": "Check Weidian and Taobao product links before buying on Sugargoo. Resolve missing listings, wrong variants and parsing failures without guessing.",
+      "title": "Sugargoo Link Not Working? Taobao & Weidian Fixes",
+      "description": "Fix common Sugargoo product-link problems: incomplete share links, unavailable items, wrong variants and missing options from Taobao or Weidian.",
       "keyword": "weidian to sugargoo",
       "category": "getting-started",
       "intro": [
-        "A product link connects a recommendation to a specific seller listing. It does not, by itself, confirm the size, colour, stock or final delivered cost. The safest way to use a Weidian or Taobao link on Sugargoo is to preserve that product identity, then verify the options on the official order screen before paying.",
-        "This guide explains what to copy, how to recognise a mismatched listing and what to do when automatic loading fails. It also distinguishes the source marketplace’s product ID from this catalogue’s internal page identifier, so a convenient buying button does not become a reason to skip the final checks."
+        "If a Taobao or Weidian link will not load in Sugargoo, first open the original product page and check that the item still exists. Copy its direct product URL, without surrounding share text, then try the official product search again. Keep the item identifier intact.",
+        "A failed import can mean an incomplete link, unavailable options, a sold-out listing or an item the agent cannot accept. A manual order is only appropriate for an eligible purchase whose details can be confirmed. It does not bypass restrictions."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "What to check when a product link does not load",
+          "id": "link-troubleshooting",
+          "title": "Match the symptom to the next step",
           "paragraphs": [
-            "First open the original product page and confirm that it still identifies the intended item. A shop homepage, shortened sharing text or removed listing is not equivalent to a complete product URL. Compare the marketplace product ID before trying again. Remove unrelated sharing text rather than changing the item's identity.",
-            "If the original item exists but automatic parsing fails, check official manual-order options and acceptance conditions. Keep the seller, exact variant, quantity, product URL and price information together. A manual form does not override product restrictions or guarantee availability. If the live listing cannot be verified, choose another candidate instead of guessing from its picture."
-          ]
+            "Use the same original listing when comparing the marketplace and Sugargoo screens. A similarly named item is not evidence that the imported option is correct. If support is needed, include the direct URL, item identifier, selected variant and exact error text; remove private account details from screenshots."
+          ],
+          "table": {
+            "headers": [
+              "What you see",
+              "What to check"
+            ],
+            "rows": [
+              [
+                "Link opens a sharing screen or text message",
+                "Open the product itself and copy its direct URL."
+              ],
+              [
+                "Original listing is unavailable",
+                "Ask the seller about availability; do not reuse an old price."
+              ],
+              [
+                "Item opens but size or colour is missing",
+                "Confirm that specific option before ordering."
+              ],
+              [
+                "Agent refuses the item",
+                "Ask about eligibility; do not disguise the item."
+              ],
+              [
+                "Listing works but import still fails",
+                "Ask support whether a supported manual order is possible."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Sugargoo Shipping to the USA: Costs, Weight & Delivery",
-      "description": "Plan Sugargoo shipping to the USA: compare parcel weight, dimensions, route terms and delivery stages before paying international freight.",
+      "title": "Sugargoo Shipping to the USA: Costs, Routes & Timing",
+      "description": "Plan Sugargoo shipping to the USA with a complete cost checklist, consistent parcel inputs, route comparisons and tracking steps before dispatch.",
       "keyword": "sugargoo shipping to usa",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "Sugargoo shipping to the USA is a separate decision from buying the goods. Start with your delivery address, the products you intend to send and an estimate of their packed weight and size. Then compare the routes actually offered in your account. A price from somebody else's parcel is only a reference: its destination, date, dimensions and contents may differ from yours.",
-        "This guide gives you a comparison method rather than a fixed price or delivery promise. SugargooTab is an independent catalogue, and it cannot quote, dispatch or track your parcel on Sugargoo's behalf. Use the official estimator for planning and the final parcel screen for the decision to pay. Keep a record of what the quote includes so later changes are understandable."
+        "For Sugargoo shipping to the USA, get a quote for your actual state, item category, packed weight and dimensions. The cheapest displayed line is only useful if your goods and address are eligible. Route availability, pricing and delivery estimates can change.",
+        "Separate the price of the goods from the international parcel budget. Compare the total payable amount and the delivery conditions using the same parcel, then check the final packed measurements before dispatch."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Compare US routes without mixing different parcels",
+          "paragraphs": [
+            "Create one reference parcel before opening several route results. Record its state and postal code, goods category, actual weight, outer dimensions and required protection. Save the quote date and currency with each result. If one result excludes dimensions or uses a different category, rerun it before comparing prices.",
+            "For each eligible route, record the payable freight, weight rule, included services, estimated transit range and final delivery carrier if stated. Add optional packing or insurance separately. Read the current import and route conditions instead of assuming that a route name guarantees no extra charges or customs clearance."
+          ],
+          "bullets": [
+            "Compare the same goods and packing plan.",
+            "Check whether the estimate begins at dispatch or another milestone.",
+            "Keep product receipts and accurate item descriptions with the parcel record."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Separate product spending from the US parcel budget",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Sugargoo Shipping to the UK: Costs, Routes & Delivery",
+      "description": "Compare Sugargoo UK shipping quotes, actual and volumetric weight, delivery handovers and import-charge information before submitting a parcel.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "To estimate Sugargoo shipping to the UK, select your actual destination region, goods category, packed weight and dimensions in the official estimator. Compare only the routes available for that combination. Check the final quote in your account before paying; a price from another buyer’s parcel is not your shipping rate.",
+        "This guide uses a practical comparison worksheet rather than fixed prices. It helps you decide whether a compact parcel, a bulky shoebox parcel or a deadline-sensitive order needs a different shipping plan."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Prepare one parcel for a fair UK comparison",
+          "paragraphs": [
+            "Begin with goods you have already checked in the warehouse. Write down the item list and the packaging you intend to keep. A quote for shoes with retail boxes cannot be compared fairly with a quote that assumes the boxes will be removed. If measurements are uncertain enough to change your decision, consider a packing rehearsal first.",
+            "Use the correct address region and postal code. Great Britain and Northern Ireland have different import arrangements, so avoid copying a location from a previous estimate. Ask the platform to confirm destination coverage if your address is not supported in the selected route."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Build a route comparison you can reuse",
+          "paragraphs": [
+            "Open the eligible results and record the quote date, currency and packed measurements once. Then make one row for each route. Compare the actual amount due after any applicable coupon, not a crossed-out promotional price. A coupon with a minimum spend may not apply to a smaller parcel."
+          ],
+          "table": {
+            "headers": [
+              "Record for each route",
+              "Why it matters"
+            ],
+            "rows": [
+              [
+                "Charging rule and weight increment",
+                "The same measured parcel can have a different billed weight."
+              ],
+              [
+                "Freight and optional services",
+                "Packing or insurance may be separate line items."
+              ],
+              [
+                "Estimated transit and its start point",
+                "Seller delivery and warehouse work may come before international transit."
+              ],
+              [
+                "UK delivery carrier and address coverage",
+                "The final handover affects how you track delivery."
+              ],
+              [
+                "Import-charge terms",
+                "Read what is included and what you may still need to pay."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Shoeboxes: compare protection and parcel size",
+          "paragraphs": [
+            "Suppose two pairs of shoes have passed your size and condition checks. Compare two packing plans: keeping both boxes, or removing boxes where safe and acceptable to you. Ask for the outer dimensions of the finished parcel under the chosen plan. Do not infer those dimensions by adding the shoe lengths together.",
+            "If you collect the boxes or need them for a possible return, keeping them may matter more than reducing volume. If you remove them, agree on protection for the shoes. Recalculate the route using the resulting dimensions and include the cost of the packing service. Smaller packaging is not automatically cheaper or safer."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Check import charges and keep the order record",
+          "paragraphs": [
+            "Use the current GOV.UK guidance linked below for goods sent from abroad. Import treatment depends on the destination, goods and transaction. A route marketed with tax-related wording is not a blanket guarantee of exemption; read its terms and confirm which charges are included.",
+            "Keep receipts, item descriptions and the amount paid with the parcel record. Declare goods accurately and ask support about unclear declaration fields. This guide does not calculate tax or provide a universal declaration amount. If the carrier requests payment or documents, verify the request through the carrier’s official website."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Read tracking as a sequence of handovers",
+          "paragraphs": [
+            "Separate seller dispatch, warehouse receipt, international dispatch and UK delivery. A seller tracking number covers delivery to the warehouse; it does not prove that the international parcel has left. After parcel dispatch, check the logistics record for the number associated with the selected shipping line.",
+            "When a final delivery carrier is identified, follow its official tracking page as well. Save the last scan, date and any action required. For a delay, ask support which stage is waiting and whether documents or an address correction are needed. An estimated delivery range is not a guaranteed arrival date."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Choose the route for the decision you actually face",
+          "paragraphs": [
+            "For a compact parcel without a deadline, compare total cost among eligible routes. For a bulky parcel, investigate the weight rule and packed size first. For a time-sensitive order, allow for warehouse preparation and customs as well as the advertised transit estimate.",
+            "If no eligible route meets your needs, pause the shipment and ask for options. Splitting a parcel creates a new comparison with two base charges and possibly two service fees. Calculate both complete totals rather than assuming that more parcels will be cheaper."
+          ]
+        }
+      ],
+      "checklist": [
+        "Use your real UK region and postal code.",
+        "Finish QC before choosing the packing plan.",
+        "Compare routes with identical contents and measurements.",
+        "Record the quote date, currency and included services.",
+        "Read current import and route terms.",
+        "Save both international and final-delivery tracking references."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: UK shipping overview",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: shipping fee estimation",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: goods sent from abroad",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: parcel tracking",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Sugargoo Shipping to Canada: Costs, Routes & Tracking",
+      "description": "Plan a Sugargoo parcel to Canada using your province, postal code, packed size, route charges and final-carrier tracking information.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo shipping to Canada depends on your province, address, goods and packed parcel measurements. Start with a current quote for those exact inputs. Confirm which carrier will deliver the last stage; do not assume that every route uses Canada Post.",
+        "The most useful comparison includes address coverage, the complete payable amount and how the parcel will be tracked after arrival. This guide explains what to record before paying, without treating an old route price as a current offer."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Check province and postal-code coverage first",
+          "paragraphs": [
+            "Use the delivery address you intend to keep through the shipment. Enter the province and postal code accurately and include any required unit number. Before choosing a route, check whether it accepts your address type and whether a remote-area or delivery surcharge applies. A price for another province may not be a useful comparison.",
+            "If you plan to use a post-office box, a business address or a remote location, ask about that address specifically. Do not substitute a nearby city merely to make a route appear in the estimator. If coverage is unclear, resolve it before the goods leave the warehouse."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Keep the parcel budget separate from the product price",
+          "paragraphs": [
+            "Build a budget with separate entries for the goods, delivery within China, chosen warehouse services, international freight and potential import or handling charges. Record the currency for every amount. A displayed US-dollar price and a Canadian-dollar budget should not be added without a current conversion.",
+            "For freight, compare current eligible quotes using the same actual weight, outer dimensions and goods category. Check whether each line charges actual weight, volumetric weight or another stated rule. If packing has not been completed, mark the measurements as estimates and revisit the comparison before dispatch."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "A bulky coat needs a size check as well as a weight check",
+          "paragraphs": [
+            "Imagine sending a winter coat together with a small accessory. The coat can dominate the box dimensions even when it is not the heaviest item. Record the finished parcel size and calculate the volumetric weight with the divisor used by each route. A route that looks cheap per kilogram may be less attractive after its size rule is applied.",
+            "Ask whether a different packing method is suitable for the fabric and construction. Compression may not be appropriate for every garment or accessory. Include any packing cost, and compare the protected parcel rather than a theoretical minimum volume. If the accessory is fragile, separate protection may be more valuable than the smallest possible box."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Read Canadian import guidance before dispatch",
+          "paragraphs": [
+            "The Canada Border Services Agency explains how imported mail is reviewed and how duties or taxes may apply. Keep the product receipts and accurate descriptions available. Do not treat a retail purchase as a gift just because the parcel is for personal use.",
+            "Check the current route terms for any included import handling and ask which charges may still be collected. Postal and courier handling can differ. Use the official CBSA resources below for your situation instead of assuming that rules for goods sent from another country apply to a parcel from China."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Follow the international and Canadian delivery records",
+          "paragraphs": [
+            "After dispatch, open the parcel logistics record and save its tracking number. The original seller’s delivery number is a different record. Check whether the chosen line provides a separate final-carrier reference after the parcel reaches Canada.",
+            "If Canada Post is the named carrier, use its official tracking service after handover. If another carrier is named, use that carrier instead. A number being created does not by itself mean the carrier has received the parcel. For a stalled shipment, give support the last scan, its date, the route and the parcel reference."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Make a decision with a short comparison sheet",
+          "paragraphs": [
+            "For a lightweight order, compare eligible small-parcel options with all charges included. For a bulky order, resolve packed dimensions before focusing on the advertised rate. For a large order, compare any split plan as several complete shipments, including repeated minimum charges."
+          ],
+          "table": {
+            "headers": [
+              "Before payment",
+              "Record"
+            ],
+            "rows": [
+              [
+                "Address coverage",
+                "Province, postal code and any surcharge confirmation."
+              ],
+              [
+                "Parcel measurements",
+                "Actual weight, outer size and packing instructions."
+              ],
+              [
+                "Route terms",
+                "Amount due, currency, weight rule and estimated transit."
+              ],
+              [
+                "Delivery handover",
+                "Named final carrier and tracking instructions."
+              ],
+              [
+                "Import records",
+                "Receipts, descriptions and applicable charge information."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Confirm province, postal code and address eligibility.",
+        "Keep currencies explicit in your budget.",
+        "Measure bulky goods after the agreed packing method.",
+        "Check the stated final-delivery carrier.",
+        "Keep receipts and declare goods accurately.",
+        "Save the final quote and tracking record."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Canada shipping overview",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: shipping estimator inputs",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: importing by mail",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: determining duties and taxes",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Sugargoo Shoe Size Guide: Check Labels, Insoles & QC",
+      "description": "Choose a shoe size from the seller’s own chart, request useful Sugargoo QC measurements, and compare the received pair before shipping.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo does not have one universal shoe size chart for every seller. Use the chart for the exact listing and variant, then compare the received pair’s label and measurements in your warehouse QC record. A familiar EU, UK or US size number alone is not enough to establish fit.",
+        "This guide gives you a repeatable check for shoes found in a spreadsheet. It separates foot length, insole length and outsole length so you can request the evidence you actually need before international shipping."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Start with the exact seller’s size chart",
+          "paragraphs": [
+            "Open the original product page and save the size chart that belongs to that model. Check whether its measurements describe the foot, the insole or the shoe exterior. Also check whether the sizing system is for men, women or children. A table from another model can create a false match even when the size labels look the same.",
+            "If the chart is unclear, ask the seller or agent what each column means before ordering. Do not add a standard allowance to every chart: the seller may already have built an allowance into its recommendation. Your chosen fit, socks and the shape of the shoe also matter."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Create a useful comparison at home",
+          "paragraphs": [
+            "Measure both feet using the same method and record the longer measurement. For an insole comparison, use a removable insole from a pair that already fits comfortably, if removal is safe. Record where the ruler starts and ends. A foot measurement should be compared with a foot-length chart, while an insole measurement should be compared with another insole measurement.",
+            "Keep the units consistent. For example, 270 millimetres is 27 centimetres. That conversion does not mean a 27 cm insole fits a 27 cm foot. Foot shape, shoe structure and the seller’s measurement method still affect the decision."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Ask for a precise warehouse measurement",
+          "paragraphs": [
+            "When the shoes arrive, review the order and the visible size labels first. If the required measurement is missing, ask what additional photo or measurement service is available and what it costs. Identify the exact item, side and dimension you want checked.",
+            "Example request to adapt: Please photograph the size labels on both shoes. If the insole can be removed without damage, please measure it from heel to toe with a ruler and show both ends clearly. Please confirm whether the measurement is in centimetres. This is a request template, not a promise that every item can be measured that way."
+          ],
+          "bullets": [
+            "Ask for both shoes if you suspect a mismatched pair.",
+            "Request the ruler’s start and end points in the same photo.",
+            "Do not ask staff to damage a fixed insole to obtain a measurement."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Use each photo for the question it can answer",
+          "paragraphs": [
+            "A label confirms what size is printed on the received shoe. It does not prove that the shoe follows a universal conversion chart. A ruler beside the outsole shows exterior length, which is not the same as usable interior space. A full-pair photo helps check that the colours and shapes appear consistent."
+          ],
+          "table": {
+            "headers": [
+              "Evidence",
+              "Useful for",
+              "Cannot establish alone"
+            ],
+            "rows": [
+              [
+                "Size label",
+                "Matching the ordered variant.",
+                "Whether the pair will fit your foot."
+              ],
+              [
+                "Insole measurement",
+                "Comparing a removable insole with a known pair.",
+                "Comfort, width or the complete interior shape."
+              ],
+              [
+                "Outsole measurement",
+                "Checking the shoe’s exterior dimensions.",
+                "The space available for your foot."
+              ],
+              [
+                "Close-up QC photo",
+                "Investigating a visible mark or mismatch.",
+                "Authenticity or long-term durability."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Work through a mismatch before making a parcel",
+          "paragraphs": [
+            "Hypothetical example: the removable insole from a comfortable pair measures 28 cm, while the warehouse photo appears to show 26 cm. First confirm that both measurements use the same endpoints and that the warehouse image belongs to your order. Ask for a clearer photo if the ruler or heel edge is obscured.",
+            "If the difference is confirmed, compare it with the listing’s size chart and contact support about available options. Do not assume the label alone settles the question. Return or exchange eligibility, deadlines and costs depend on the order; resolve the issue while the item is still available for review in the warehouse."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Finish fit checks before removing packaging",
+          "paragraphs": [
+            "Decide whether the shoes are acceptable before requesting box removal or combining them into a parcel. Keep the label photos, measurements, seller chart and support replies together. Ask whether a packaging change could affect a return you are still considering.",
+            "Once the pair is ready, decide what protection it needs during transport. Compare shipping with the actual packed size, especially when keeping multiple shoeboxes. The cheapest packing plan is not useful if it compromises a feature you need to preserve."
+          ]
+        }
+      ],
+      "checklist": [
+        "Use the exact listing’s size chart and sizing system.",
+        "Distinguish foot, insole and outsole measurements.",
+        "Keep centimetres and millimetres consistent.",
+        "Match both shoes and their labels to the paid order.",
+        "Resolve measurement concerns before parcel submission.",
+        "Keep relevant packaging until the order decision is final."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC photos and measurements",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: QC service scope",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: ordering and warehouse review",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

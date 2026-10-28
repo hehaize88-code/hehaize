@@ -11,7 +11,7 @@ for(const lang of locales){
  if(d.locale!==lang)fail(lang,'wrong locale');
  if(d.reviewed!==base.reviewed)fail(lang,'review date differs');
  for(const group of ['ui','groups'])if(JSON.stringify(Object.keys(d[group]||{}).sort())!==JSON.stringify(Object.keys(base[group]).sort()))fail(lang,group+' keys differ');
- if(d.faqs.length!==30||d.articles.length!==13)fail(lang,'expected 30 FAQ / 13 articles, got '+d.faqs.length+'/'+d.articles.length);
+ if(d.faqs.length!==30||d.articles.length!==16)fail(lang,'expected 30 FAQ / 16 articles, got '+d.faqs.length+'/'+d.articles.length);
  for(const [i,f]of d.faqs.entries()){let b=base.faqs[i];if(!b||f.id!==b.id||f.group!==b.group)fail(lang,'FAQ ID/group mismatch '+i);if(!f.question||!f.answer)fail(lang,'empty FAQ '+i);if(b&&JSON.stringify(f.sources.map(x=>x.url))!==JSON.stringify(b.sources.map(x=>x.url)))fail(lang,'FAQ source mismatch '+i);if(lang!=='en'&&b&&f.answer===b.answer)fail(lang,'untranslated FAQ '+f.id);}
  const ratios=[];
  for(const [i,a]of d.articles.entries()){
@@ -35,7 +35,7 @@ for(const lang of locales){
    }
   }
   const ratio=text(a).length/text(b).length;ratios.push(ratio);if(ratio<0.65)fail(lang,`${a.slug}: unexpectedly short (${ratio.toFixed(2)})`);
-  for(const s of a.sources)if(!new URL(s.url).hostname.endsWith('sugargoo.com'))fail(lang,'nonofficial source '+s.url);
+  for(const s of a.sources)if(!['blog.sugargoo.com','www.sugargoo.com','www.gov.uk','www.cbsa-asfc.gc.ca'].includes(new URL(s.url).hostname))fail(lang,'nonofficial source '+s.url);
   for(const slug of a.related)if(!base.articles.some(x=>x.slug===slug))fail(lang,'broken related article '+slug);
  }
  reports.push({locale:lang,faq:d.faqs.length,articles:d.articles.length,minLengthRatio:ratios.length?+Math.min(...ratios).toFixed(2):0});

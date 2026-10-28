@@ -33,7 +33,7 @@ for(const lang of locales){
    assert.equal(schemas.find(s=>s['@type']==='FAQPage')?.mainEntity.length,30,url+' FAQ schema');
    assert.equal(d.querySelector('h1')?.textContent,data.ui.faqTitle+'.');
   }else if(path==='/articles/'){
-   assert.equal(d.querySelectorAll('.article-card').length,13,url+' article index');
+   assert.equal(d.querySelectorAll('.article-card').length,16,url+' article index');
   }else{
    const a=data.articles.find(a=>path==='/articles/'+a.slug+'/');
    assert.equal(d.querySelector('h1')?.textContent,a.title,url+' translated title');
@@ -51,6 +51,16 @@ for(const lang of locales){
    assert.equal(schema?.dateModified,a.updated,url+' modification date');
    assert.equal(d.querySelector('.article-catalog-cta a')?.getAttribute('href'),prefix+'/spreadsheet/',url+' localized catalogue action');
    assert.equal(d.querySelectorAll('.article-catalog-cta [data-track]').length,2,url+' tracked actions');
+   if(a.actions){
+    const actions=[...d.querySelectorAll('.article-next-step a')];
+    assert.deepEqual(actions.map(x=>x.getAttribute('href')),a.actions.map(x=>prefix+x),url+' relevant localized actions');
+    assert(actions.every(x=>x.textContent.trim().length>0),url+' action labels');
+   }
+   if(a.slug==='sugargoo-shipping-calculator'){
+    assert.equal(d.querySelectorAll('[data-weight-tool] input[type=number]').length,5,url+' weight inputs');
+    assert.equal(d.querySelector('.weight-tool h2').textContent,data.ui.weightToolTitle,url+' localized calculator');
+    assert.equal(d.querySelector('[data-weight-tool] button').textContent,data.ui.calculateWeight,url+' localized calculation button');
+   }
    assert.deepEqual(schema?.citation,a.sources.map(s=>s.url),url+' citations');
    for(const code of locales){
     const expected=(code==='en'?'':'/'+code)+path;

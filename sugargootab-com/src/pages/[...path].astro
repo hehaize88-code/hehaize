@@ -41,9 +41,11 @@ const robots=indexable?'index,follow,max-image-preview:large':'noindex,follow';
 Astro.response.headers.set('X-Robots-Tag',robots);
 Astro.response.headers.set('Cache-Control','no-store');
 const activeCategory=category?names[slugs.indexOf(category)]:'';
-const title=type==='faq'?ed.ui.faqTitle:type==='articles'?ed.ui.articleTitle:type==='article'?article!.title:type==='home'?ed.ui.seoHomeTitle:type==='detail'&&data?data.title:type==='listing'?activeCategory||t.browse:type==='categories'?t.categories:type==='guide'?t.guide:type==='qc'?t.photos:type==='visual'?t.visual:'404';
+const listingTitle=category?ed.ui.seoCategoryTitle.replace('{category}',activeCategory):ed.ui.seoCatalogTitle;
+const listingDescription=category?ed.ui.seoCategoryDescription.replace('{category}',activeCategory):ed.ui.seoCatalogDescription;
+const title=type==='faq'?ed.ui.faqTitle:type==='articles'?ed.ui.articleTitle:type==='article'?article!.title:type==='home'?ed.ui.seoHomeTitle:type==='detail'&&data?data.title:type==='listing'?listingTitle:type==='categories'?t.categories:type==='guide'?t.guide:type==='qc'?t.photos:type==='visual'?t.visual:'404';
 const canonical=new URL(localized(lang,path),SITE_ORIGIN).href;
-const description=type==='article'?article!.description:type==='articles'?ed.ui.articleIntro:type==='faq'?ed.ui.faqIntro:c.intro;
+const description=type==='article'?article!.description:type==='articles'?ed.ui.articleIntro:type==='faq'?ed.ui.faqIntro:type==='home'?ed.ui.seoHomeDescription:type==='listing'?listingDescription:c.intro;
 const entity=type==='article'?{'@context':'https://schema.org','@type':'Article',headline:article!.title,description:article!.description,datePublished:article!.published,dateModified:article!.updated,inLanguage:lang,mainEntityOfPage:canonical,author:{'@type':'Organization',name:ed.ui.author},publisher:{'@type':'Organization',name:'SugargooTab'},citation:article!.sources.map(s=>s.url)}:type==='faq'?{'@context':'https://schema.org','@type':'FAQPage',inLanguage:lang,mainEntity:ed.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.answer}}))}:null;
 function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if(q)p.set('q',q);return link(path)+'?'+p.toString();}
 ---
@@ -52,7 +54,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
  <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
   <GoogleAnalytics />
-  <title>{type==='home'||type==='article'?title:`${title} | Sugargoo Spreadsheet`}</title>
+  <title>{type==='home'||type==='article'||type==='listing'?title:`${title} | Sugargoo Spreadsheet`}</title>
   <meta name="description" content={description}/><meta name="robots" content={robots}/>
   <link rel="canonical" href={canonical}/><link rel="icon" href={FAVICON}/>
   {languages.map(([code])=><link rel="alternate" hreflang={code} href={new URL(localized(code,path),SITE_ORIGIN).href}/>)}
@@ -84,9 +86,9 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
     <section class="directory-hero"><div class="container">
      <div class="directory-kicker"><span><span class="orange-dot"></span>SUGARGOOTAB</span><span>{t.browse} / 2026</span></div>
      <h1>Sugargoo <em>Spreadsheet.</em></h1>
-     <div class="directory-intro"><p>{c.intro}</p><a href={link('/guide/')} class="directory-guide-link">{t.guide}<Icon name="external" size={20}/></a></div>
+     <div class="directory-intro"><p>{ed.ui.homeSearchIntro}</p><a href={link('/guide/')} class="directory-guide-link">{t.guide}<Icon name="external" size={20}/></a></div>
      <form class="directory-search" action={link('/spreadsheet/')} method="get"><Icon name="search" size={24}/><input type="search" name="q" aria-label={t.search} placeholder={t.placeholder}/><button type="submit">{t.search}<Icon name="arrow" size={20}/></button></form>
-     <div class="directory-metadata"><span>01 — {t.search}</span><span>02 — {t.photos}</span><span>03 — Sugargoo</span></div>
+     <nav class="hero-shortcuts" aria-label={t.categories}><a class="button" href={link('/spreadsheet/')}>{ed.ui.catalogCtaButton}<Icon name="arrow" size={17}/></a>{['shoes','hoodies-sweaters','jersey'].map(slug=><a class="text-link" href={link('/category/'+slug+'/')}>{names[slugs.indexOf(slug)]}<Icon name="arrow" size={15}/></a>)}</nav><div class="directory-metadata"><span>01 — {t.search}</span><span>02 — {t.photos}</span><span>03 — Sugargoo</span></div>
     </div></section>
     <div class="container directory-layout">
      <aside class="directory-sidebar">
@@ -105,8 +107,8 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
    {type!=='home'&&<div class="container inner-page">
     <div class="breadcrumb"><a href={link()}>{t.home}</a><span>/</span>{type==='article'&&<><a href={link('/articles/')}>{ed.ui.articles}</a><span>/</span></>}<span>{type==='detail'?t.view:title}</span></div>
     {type==='listing'&&<>
-     <div class="catalog-heading"><div><span class="eyebrow">SUGARGOOTAB / {t.browse}</span><h1>{activeCategory||t.catalog}</h1></div><a class="text-link" href={link('/guide/')}>{t.guide}<Icon name="external" size={17}/></a></div>
-     <div class="catalog-workspace">
+     <div class="catalog-heading"><div><span class="eyebrow">SUGARGOOTAB / {t.browse}</span><h1>{activeCategory||ed.ui.seoCatalogTitle}</h1></div><a class="text-link" href={link('/guide/')}>{t.guide}<Icon name="external" size={17}/></a></div>
+     <div class="catalog-guidance"><p>{listingDescription}</p><p class="fine-print">{ed.ui.catalogGuideNote}</p><nav>{(category==='shoes'?['sugargoo-shoe-size-guide','sugargoo-qc-photos']:['sugargoo-spreadsheet-guide','sugargoo-shipping-calculator']).map(slug=><a class="text-link" href={link('/articles/'+slug+'/')}>{ed.articles.find(a=>a.slug===slug)?.title}<Icon name="arrow" size={15}/></a>)}</nav></div><div class="catalog-workspace">
       <aside class="directory-sidebar catalog-sidebar"><div class="sidebar-heading"><span>{t.categories}</span><span>{slugs.length}</span></div><nav class="directory-categories" aria-label={t.categories}><a class:list={{current:!category}} href={link('/spreadsheet/')+(q?'?q='+encodeURIComponent(q):'')}><span class="category-no">↗</span><span>{t.all}</span></a>{slugs.map((s,i)=><a class:list={{current:s===category}} href={link('/category/'+s+'/')+(q?'?q='+encodeURIComponent(q):'')}><span class="category-no">{String(i+1).padStart(2,'0')}</span><span>{names[i]}</span></a>)}</nav></aside>
       <section class="catalog-results">
        <form class="catalog-toolbar" action={link(path)} method="get">

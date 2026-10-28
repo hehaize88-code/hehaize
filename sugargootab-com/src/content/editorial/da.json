@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Artikler",
     "articleTitle": "Købsguider til Sugargoo",
-    "articleIntro": "Praktiske vejledninger til produktlinks, QC-billeder, ordretrin og fragtvalg med officielle kilder og tydelige næste skridt.",
+    "articleIntro": "Praktiske Sugargoo guider til produkt links, QC billeder, sko størrelser og forsendelse. Vælg det spørgsmål, du skal besvare, før du køber eller sender en pakke.",
     "faqTitle": "Ofte stillede spørgsmål om Sugargoo",
     "faqIntro": "Klare svar til hvert trin i din bestilling med officielle kilder til platformens regler og tydelige begrænsninger for dette uafhængige katalog.",
     "readArticle": "Læs guiden",
@@ -34,11 +34,35 @@
     "categoryAccount": "Betaling og eftersalgsservice",
     "author": "SugargooTabs redaktion",
     "siteEvidence": "Om dette uafhængige katalog",
-    "seoHomeTitle": "Sugargoo Spreadsheet: produktlinks, billeder og købsguider",
+    "seoHomeTitle": "Sugargoo Regneark: Sko, Beklædning & Product Links",
     "catalogCtaTitle": "Brug tjeklisten i praksis",
     "catalogCtaBody": "Sammenlign produktlinks i kataloget, og kontrollér derefter den præcise annonce og dine egne ordreoplysninger, før du køber eller sender.",
     "catalogCtaButton": "Se produktlinks",
-    "categoryCtaButton": "Udforsk produktkategorier"
+    "categoryCtaButton": "Udforsk produktkategorier",
+    "homeSearchIntro": "Find sko, hætter, trøjer og tilbehør. Åbn et produkt link, tjek sælgerens muligheder, og gennemse derefter dit eget lager QC før forsendelse.",
+    "seoHomeDescription": "Gennemse Sugargoo produkt links til sko, hættetrøjer, trøjer og tilbehør. Sammenlign referencefotos og brug praktiske QC-, dimensionerings- og forsendelsesvejledninger.",
+    "seoCatalogTitle": "Sugargoo Regneark: Gennemse sko, Beklædning og tilbehør",
+    "seoCatalogDescription": "Søg Sugargoo produkt links, sammenligne reference fotos og priser, og tjek den oprindelige liste før bestilling. Gennemse sko, tøj og tilbehør.",
+    "seoCategoryTitle": "Sugargoo {category}: Produktlinks og fotos",
+    "seoCategoryDescription": "Gennemse {category} produkt links til Sugargoo. Sammenlign referencefotos og anførte priser, og bekræft derefter størrelser, muligheder og tilgængelighed før bestilling.",
+    "catalogGuideNote": "Produktfotos og priser er referencer. Tjek den nøjagtige sælger notering og dit eget lager QC før forsendelse.",
+    "nextStep": "Vælg dit næste skridt",
+    "weightToolTitle": "Beregner til pakkevægt",
+    "weightToolIntro": "Kontrollér den faktiske og volumetriske vægt. Dette værktøj citerer ikke shipping priser; bruge den valgte rute gør divisor og fakturering regel.",
+    "actualWeight": "Pakkens faktiske vægt (kg)",
+    "parcelLength": "Yderlængde (cm)",
+    "parcelWidth": "Yderbredde (cm)",
+    "parcelHeight": "Yderhøjde (cm)",
+    "weightDivisor": "Rutens divisor for volumenvægt",
+    "weightRule": "Regel om opladning",
+    "higherWeight": "Højere faktisk og volumenvægt",
+    "actualOnly": "Kun den faktiske vægt",
+    "calculateWeight": "Beregn vægt",
+    "volumetricWeight": "Volumenvægt",
+    "billingBase": "Vægt før afrunding",
+    "weightDisclaimer": "Kun vejledende vægtberegning. Ruteafrunding, minimumsafgifter, dimensioner grænser og servicegebyrer stadig gælder. Bekræft det aktuelle citat med Sugargoo.",
+    "weightError": "Indtast et positivt tal i hvert målefelt.",
+    "officialEstimatorGuide": "Åbn den officielle shipping estimator vejledning"
   },
   "groups": {
     "basics": "Kom godt i gang",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo Spreadsheet-guide: find og kontrollér produktlinks",
-      "description": "Find produkter i et Sugargoo-spreadsheet, kontrollér aktuelle annoncer og varianter, og adskil referencebilleder fra dine egne QC-billeder fra lageret.",
+      "title": "Sådan bruger du et Sugargoo-regneark: find og bestil",
+      "description": "Brug et Sugargoo regneark til at finde produkt links, tjekke størrelser og sælger muligheder, åbne den korrekte ordreside, og gennemgå lageret QC før forsendelse.",
       "keyword": "sugargoo regneark",
       "category": "getting-started",
       "intro": [
-        "En Sugargoo-spreadsheet er nyttig, når den hjælper dig med at lave en kortere og bedre oplyst liste over mulige køb. En lang side med produktbilleder fortæller ikke, om en bestemt størrelse er på lager, hvad din pakke vil koste, eller om sælgerens aktuelle annonce stadig svarer til en ældre anbefaling. Betragt regnearket som begyndelsen på din undersøgelse, og knyt den endelige købsbeslutning til den konkrete annonce.",
-        "Dette uafhængige katalog henter sine produktoplysninger og referencebilleder fra cnbuycha. Bestilling og betaling foregår hos Sugargoo. Metoden nedenfor forbinder de to trin uden at behandle en katalogpost som en personlig anbefaling, en lagergaranti eller dokumentation for lagerkontrol. Den fungerer også, hvis du holder din udvælgelsesliste i en enkel noteapp."
+        "Et Sugargoo regneark er en mappe med produktlinks. Brug det til at finde et element, og tjek derefter den oprindelige liste og den nøjagtige variant på Sugargoo før du betaler. Et gemt link bekræfter ikke aktuelle aktier, den valgte størrelse, den endelige pris eller accept af købsagenten.",
+        "Start med live kataloget eller en kategori som sko, hættetrøjer eller trøjer. Åbn en lovende vare, gennemgå dens reference fotos, og følg den tilgængelige køb link. Hold din kortliste lille nok til at kontrollere hvert element korrekt."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Sådan kontrollerer du en aktuel annonce før køb",
+          "id": "spreadsheet-first-action",
+          "title": "Fra et regneark til en kontrolleret ordre",
           "paragraphs": [
-            "Åbn produktet i kataloget, og følg linket til den oprindelige annonce. Sammenhold markedspladsens produkt-ID, sælger og valgte variant med varen, der vises i Sugargoo. Katalogets interne sidenummer er en særskilt identifikator. Kontrollér den aktuelle pris, tilgængelige muligheder og antal igen lige før betaling; et gemt produktkort dokumenterer ikke den aktuelle lagerbeholdning.",
-            "Stop, hvis den oprindelige annonce mangler, produktet ikke kan indlæses, eller varianten er anderledes. Gå tilbage til oversigten, og sammenlign en anden kandidat. Notér, hvorfor den første ikke fungerede, så du ikke gentager samme kontrol senere. Referencebilleder er stadig hjælp til at finde produkter, også når de ligner lagerbilleder."
+            "Søg efter produkttypen eller et særligt navn, og åbn derefter emnesiden. Sammenlign listetitlen, kildepost-id, fotos og valgte indstillinger. Hvis købssiden åbner en anden farve eller størrelse, skal du vælge den ønskede variant igen og inspicere den endelige ordreoversigt. Betal ikke bare fordi billedet ser bekendt ud.",
+            "Prisen i et katalog er en reference for varen. Byg et separat budget til levering i Kina, alle udvalgte tjenester og international fragt. Gem kildelinket med din valgte størrelse og farve. Når varen når lageret, skal du bruge din egen QC-rekord til at afgøre, om den er klar til at sende."
           ],
-          "table": {
-            "headers": [
-              "Kontrolpunkt",
-              "Dokumentation, du skal bruge"
-            ],
-            "rows": [
-              [
-                "Produktets identitet",
-                "Oprindelig markedspladsadresse og produkt-ID"
-              ],
-              [
-                "Aktuel tilgængelighed",
-                "Sælgerens nuværende annonce og den valgte mulighed"
-              ],
-              [
-                "Prisoplysning",
-                "Præcis variant og beløb ved betaling"
-              ],
-              [
-                "Varens stand",
-                "Dine egne ordrebilleder efter ankomst til lageret"
-              ]
-            ]
-          }
+          "bullets": [
+            "Find: Vælg en kategori og indsnævre søgningen.",
+            "Check: matche den oprindelige liste, indstillinger og nuværende ordrepris.",
+            "Ordre: Brug den officielle købsstrøm til en støtteberettiget vare.",
+            "Anmeldelse: inspicere dit eget lager QC, før du laver en pakke."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC-billeder: produktkontrol før afsendelse",
-      "description": "Brug en praktisk Sugargoo QC-tjekliste til sko, tøj og tasker. Kontrollér mærker, mål, syninger og manglende detaljer før afsendelse.",
+      "title": "Tjek Sugargoo QC-billeder før afsendelse",
+      "description": "Find Sugargoo warehouse QC billeder, tjek den korrekte vare og størrelse, anmode om nyttige ekstra målinger, og løse problemer før international forsendelse.",
       "keyword": "sugargoo kvalitetskontrolbilleder",
       "category": "quality",
       "intro": [
-        "Lagerfotos er mest nyttige, når du skal træffe en konkret beslutning: Svarer den modtagne vare til ordren, er en vigtig detalje uklar, eller er der en synlig skade, som kræver opmærksomhed? Selv en gennemgang af alle billeder uden en tjekliste kan efterlade det vigtigste spørgsmål ubesvaret. En tydelig metode gør billederne lettere at bruge.",
-        "Sugargoo beskriver normalt fem standardbilleder til kvalitetskontrol, mens kontrollens omfang afhænger af varen og ordretypen. Antallet af fotos garanterer ikke, hvad der kan bekræftes. Dette sites referencebilleder fra cnbuycha er katalogmateriale, ikke verificeret kvalitetskontrol af din personlige Sugargoo-ordre; gennemgå dine egne lageroplysninger, før du arrangerer international fragt."
+        "For at kontrollere Sugargoo QC billeder, logge ind og åbne den modtagne vare i din ordre eller Packing Center post. Gennemgå de billeder, der er knyttet til dette element, før du tilføjer det til en international pakke. Katalog billeder på SugargooTab er referencebilleder, ikke fotografier af din egen ordre.",
+        "Kontrollér først den valgte variant, etiket, mængde og synlig tilstand. Hvis pasformen afhænger af en måling, der ikke er vist, skal du anmode om den specifikke måling, før du godkender forsendelse. Visuel QC er ikke autentificering eller en garanti for pasform."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "QC-billedkontrol af sko, tøj og tasker",
+          "id": "qc-first-check",
+          "title": "Hvor man kan finde billeder og hvad man skal tjekke først",
           "paragraphs": [
-            "Begynd med at sammenholde ordre, farve, størrelse og antal. Undersøg derefter de detaljer, som kan ændre din beslutning om at beholde varen. Tjeklisten er en praktisk hjælp til billedgennemgang, ikke en garanti for, at almindelig QC omfatter alle vinkler eller mål. Bed om den konkrete manglende dokumentation, og kontrollér eventuelle servicegebyrer, før du fortsætter.",
-            "En taske, der kun er fotograferet forfra, viser eksempelvis ikke remmens fastgørelse eller indersidens stand. Bed om den relevante vinkel, hvis detaljen er vigtig for dig. Hvis et mål er nødvendigt, angiv begyndelses- og slutpunkt, og bed om et synligt målebånd. Billeder kan ikke dokumentere alle funktionelle egenskaber og beviser ikke ægthed."
+            "Start med den nøjagtige ordrereference. En vare, der stadig købes eller leveres af sælgeren, kan endnu ikke have lagerfotos. Når varen er modtaget, inspicere dens ordreoplysninger og Packing Center rekord for QC-billederne. Hvis rekorden siger, at det er klar, men ingen billeder vises, send support ordrereferencen og spørg, om inspektion er komplet.",
+            "Åbn det fulde billede i stedet for at dømme en lille miniature. Match farve og størrelse etiket til din betalte ordre, derefter inspicere begge sider og eventuelle medfølgende tilbehør. Gem et specifikt spørgsmål for enhver vinkel, du ikke kan se. For sko kan en indersålsmåling og et billede af størrelsen besvare forskellige spørgsmål; den ene kan ikke erstatte den anden."
           ],
-          "table": {
-            "headers": [
-              "Produkttype",
-              "Kontrollér på dine ordrebilleder",
-              "Bed om dette ved uklarhed"
-            ],
-            "rows": [
-              [
-                "Sko",
-                "Par, størrelsesmærker, såler og synlige syninger",
-                "Begge størrelsesmærker og relevant vinkel på sål eller syning"
-              ],
-              [
-                "Tøj",
-                "Størrelsesmærke, stoffets udseende og syninger",
-                "Et fladt mål med tydeligt start- og slutpunkt"
-              ],
-              [
-                "Tasker",
-                "Remme, lukninger, for og tilbehør",
-                "Nærbilleder af inderside og fastgørelsespunkter"
-              ],
-              [
-                "Alle varer",
-                "Korrekt variant, antal og synlige skader",
-                "Et tydeligt billede af den konkrete afvigelse"
-              ]
-            ]
-          }
+          "bullets": [
+            "Kontroller, at hvert billede tilhører samme rækkefølge og variant.",
+            "Anmoder om et tæt overblik over en mistænkt defekt, der identificerer dens placering.",
+            "Hold uløste emner ude af parcellen, indtil du har et svar."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo-fragtberegner: vægt, mål og samlede omkostninger",
-      "description": "Brug Sugargoo-fragtberegneren med realistisk vægt og realistiske mål. Sammenlign egnede ruter, og forstå, hvad et overslag stadig efterlader usikkert.",
+      "title": "Sugargoo fragtberegner: vægt og pris",
+      "description": "Beregn parcel volumen vægt, forstå faktureringsvægt, og sammenligne Sugargoo forsendelse citater ved hjælp af din destination, dimensioner og varekategori.",
       "keyword": "sugargoo fragtberegner",
       "category": "shipping",
       "intro": [
-        "Et fragtoverslag bliver brugbart, når du ved, hvilke oplysninger det bygger på. To personer kan indtaste den samme varevægt og få forskellige resultater, fordi destinationer, varekategorier, pakkemål eller ruter er forskellige. Derfor giver en andens samlede fragtpris et svagt budgetgrundlag for din egen ordre.",
-        "Sugargoos officielle vejledning til beregneren bruger destination, varekategori, vægt og mål til at sammenligne tilgængelige forsendelsesmuligheder. Betragt resultatet som et dateret scenarie, og opdatér det, efterhånden som du ved mere om den færdige pakke. Denne guide viser, hvordan du opbygger scenarierne og identificerer usikkerheden, før den bliver et problem ved betaling."
+        "Brug Sugargoos officielle shipping estimator for aktuelle priser og rute tilgængelighed. Indtast destination, varekategori, pakket vægt og dimensioner. Vægtværktøjet nedenfor hjælper med at kontrollere matematik; det citerer ikke fragt eller oprette forbindelse til din Sugargoo-konto.",
+        "Sammenlign ruter ved hjælp af identiske pakkeindgange. Et citat, der kun er baseret på varevægt, kan gå glip af den plads, der anvendes af skokasser eller beskyttende emballage. Kontrollér hver rutes laderegel, afrunding og minimumsafgift før betaling."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Lav to overslag, før du køber varerne",
+          "id": "shipping-inputs",
+          "title": "Eksempel på bearbejdet volumenvægt",
           "paragraphs": [
-            "Lav først et scenarie med den bedst tilgængelige vægt og de bedste mål, og derefter et forsigtigt scenarie, der tager højde for usikker emballage. Hold destination, indhold og øvrige indstillinger ens. Hvis ordren kun passer til budgettet under de mest optimistiske antagelser, skal usikkerheden afklares, før du betaler for varerne.",
-            "Notér tilbudsdato, rute, enheder, anslåede mål og valgte tilvalg. Erstat antagelser med målte pakkeoplysninger, når de foreligger. Brug den særskilte USA-guide til sammenligningen ved amerikansk destination; ved flere lagrede ordrer sammenligner du de fulde samlede og opdelte omkostninger med guiden til samling af pakker."
+            "Illustrativt eksempel: En pakke måler 40 × 30 × 20 cm og vejer 3 kg. Med en divisor på 6000 er dets volumenvægt 4 kg. En rute, der anvender den største faktiske og volumetriske vægt, vil starte fra 4 kg før dens afrunding eller minimumsafgiftsregler. En vejopladnings egentlig vægt kun ville starte fra 3 kg.",
+            "Hvis det samme gods kan være sikkert i en 40 × 30 × 15 cm pakke, bliver den beregnede volumenvægt 3 kg med denne divisor. Dette sammenligner kun målinger. Det beviser ikke en besparelse: pakketjenester, rutestøtte, vægtstigninger og den nuværende takst kan ændre det endelige samlede beløb."
+          ],
+          "bullets": [
+            "Anvend ydre emballerede dimensioner i centimeter, ikke produktdimensioner.",
+            "Konverter gram til kg, før du bruger værktøjet nedenfor: 3000 g er lig med 3 kg.",
+            "Tag divisor og laderegel fra den rute, du overvejer."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo-prøvepakning: vægt, mål og hvornår det hjælper",
-      "description": "Afgør, hvornår Sugargoo-prøvepakning er nyttig, angiv emballagevalg, og sammenlign den målte pakke med dit oprindelige fragtoverslag.",
+      "title": "Sugargoo prøvepakning: sådan virker det, og hvornår det gavner",
+      "description": "Lær, hvad Sugargoo øve forsendelse gør, når det er prisen værd, og hvordan du bruger pakket vægt og dimensioner, før du vælger en forsendelse rute.",
       "keyword": "sugargoo prøvepakning",
       "category": "shipping",
       "intro": [
-        "Prøvepakning er mest nyttig, når usikkerhed om den færdige pakke påvirker en beslutning, du endnu skal træffe. Måske vælger du mellem ruter, overvejer at bevare pladskrævende emballage eller undersøger, om en planlagt kombination passer inden for en tjenestes grænser. Bedre mål kan hjælpe med at besvare de spørgsmål, men de garanterer ikke en lavere fragtregning.",
-        "Sugargoo beskriver prøvepakning som en pakkesimulering før afsendelse, der giver mere præcise oplysninger om vægt og rumfang. Betragt den som en beslutning om opmåling og pakning, og kontrollér de aktuelle servicebetingelser og prisen på din konto. Den praktiske værdi kommer af, at du ved, hvad resultatet skal bruges til."
+        "Sugargoo generalprøve forsendelse er en pakning og måling service før international forsendelse. Det hjælper dig med at tjekke parcellens faktiske vægt og dimensioner, før du vælger forsendelse. Det er værd at overveje, når kasser, voluminøse elementer eller en rute grænse gør dit skøn usikkert; det garanterer ikke besparelser.",
+        "Først afslutte din vare og QC checks. Bekræft derefter det aktuelle servicegebyr og pakningsmuligheder på din konto. Brug resultatet til at sammenligne støtteberettigede ruter med samme indhold, destination og emballage."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Hvornår er en prøvepakning værd at overveje?",
+          "title": "Hvordan man bruger generalprøve forsendelse",
           "paragraphs": [
-            "Overvej prøvepakning, når ukendte pakkemål kan ændre din rute eller dit budget: en stor, let vare, flere salgskasser eller en pakke tæt på en rutes grænse. Skriv den usikkerhed ned, som du vil have afklaret, og kontrollér det aktuelle gebyr. Hvis beslutningen er den samme ved rimelige overslag, kan den ekstra måling have mindre værdi.",
-            "Sammenlign resultatet med dine oprindelige oplysninger: faktisk vægt, ydre mål, bevaret emballage og valgte tjenester. Beregn igen efter rutens aktuelle faktureringsregel. Mindre mål garanterer ikke en lavere slutregning, fordi minimumsgebyrer, vægttrin og andre muligheder stadig kan have betydning."
-          ]
+            "På din Sugargoo-konto skal du identificere de lagervarer, du ønsker at sende sammen. Åbn den tilgængelige simulations- eller generalprøvetjeneste før afsendelse, tjek gebyret og angiv, om originale kasser og beskyttende emballage skal forblive. Skærmetiketter kan ændre sig; spørg støtte, før du betaler, om muligheden eller dens omfang er uklar.",
+            "Når resultatet er klar, registrere pakket vægt og alle tre ydre dimensioner. Indtast disse målinger igen i den officielle estimator. Sammenlign støtteberettigede ruter, deres vægtstigninger og enhver pakkeafgift, før du indsender pakken. Hvis du efterfølgende ændrer indholdet eller emballagen, kan de tidligere målinger ikke længere beskrive parcellen."
+          ],
+          "table": {
+            "headers": [
+              "Din situation",
+              "Afgørelse"
+            ],
+            "rows": [
+              [
+                "Flere skotøjsæsker eller en voluminøs frakke",
+                "Overvej måling, før du vælger en rute."
+              ],
+              [
+                "Parcel tæt på en størrelse eller vægtgrænse",
+                "Tjek det pakkede resultat i forhold til den nøjagtige grænse."
+              ],
+              [
+                "Kendt kompakt pakke; rutevalg forbliver det samme",
+                "Den ekstra service kan tilføje lidt værdi."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian- og Taobao-links på Sugargoo: kontrollér og løs fejl",
-      "description": "Kontrollér Weidian- og Taobao-produktlinks før køb på Sugargoo. Løs manglende annoncer, forkerte varianter og indlæsningsfejl uden at gætte.",
+      "title": "Virker Sugargoo-linket ikke? Hjælp til Taobao og Weidian",
+      "description": "Løs almindelige Sugargoo produkt-link problemer: ufuldstændige dele links, utilgængelige elementer, forkerte varianter og manglende muligheder fra Taobao eller Weidian.",
       "keyword": "weidian til sugargoo",
       "category": "getting-started",
       "intro": [
-        "Et produktlink forbinder en anbefaling med en bestemt sælgerannonce. Det bekræfter ikke i sig selv størrelse, farve, lagerstatus eller endelig pris med levering. Den sikreste måde at bruge et Weidian- eller Taobao-link på Sugargoo er at bevare produktets identitet og derefter kontrollere valgmulighederne på den officielle bestillingsside før betaling.",
-        "Denne guide forklarer, hvad du skal kopiere, hvordan du genkender en forkert annonce, og hvad du kan gøre, når automatisk indlæsning mislykkes. Den skelner også mellem den oprindelige markedsplads’ produkt-ID og dette katalogs interne sideidentifikation, så en praktisk købsknap ikke bliver en grund til at springe de sidste kontroller over."
+        "Hvis en Taobao eller Weidian link ikke vil indlæse i Sugargoo, først åbne den oprindelige produktside og kontrollere, at elementet stadig eksisterer. Kopier dens direkte produkt URL, uden omgivende share tekst, og prøv derefter den officielle produktsøgning igen. Hold id'en intakt.",
+        "En fejlslagen import kan betyde et ufuldstændigt link, utilgængelige muligheder, en udsolgt liste eller en vare, agenten ikke kan acceptere. En manuel ordre er kun egnet til et støtteberettiget køb, hvis oplysninger kan bekræftes. Den omgås ikke restriktionerne."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "Hvad skal du kontrollere, når et produktlink ikke indlæses?",
+          "id": "link-troubleshooting",
+          "title": "Match symptomet til næste trin",
           "paragraphs": [
-            "Åbn først den oprindelige produktside, og bekræft, at den stadig identificerer den ønskede vare. En butiksforside, forkortet delingstekst eller fjernet annonce svarer ikke til en fuldstændig produktadresse. Sammenlign markedspladsens produkt-ID, før du prøver igen. Fjern uvedkommende delingstekst uden at ændre varens identitet.",
-            "Hvis den oprindelige vare findes, men automatisk fortolkning mislykkes, kontrollér de officielle muligheder for manuel bestilling og acceptbetingelserne. Gem sælger, præcis variant, antal, produktadresse og prisoplysninger samlet. En manuel formular ophæver ikke produktbegrænsninger og garanterer ikke tilgængelighed. Vælg en anden kandidat, hvis den aktuelle annonce ikke kan verificeres, i stedet for at gætte ud fra billedet."
-          ]
+            "Brug den samme oprindelige liste, når du sammenligner markedspladsen og Sugargoo-skærme. En tilsvarende navngiven post er ikke bevis for, at den importerede mulighed er korrekt. Hvis der er behov for støtte, skal du inkludere den direkte URL, element-id, valgt variant og nøjagtig fejltekst; fjern private kontooplysninger fra skærmbilleder."
+          ],
+          "table": {
+            "headers": [
+              "Hvad du ser",
+              "Hvad skal man kontrollere?"
+            ],
+            "rows": [
+              [
+                "Link åbner en delingsskærm eller tekstbesked",
+                "Åbn selve produktet og kopiere dets direkte URL."
+              ],
+              [
+                "Oprindelig notering er ikke tilgængelig",
+                "Spørg sælgeren om tilgængelighed; genbrug ikke en gammel pris."
+              ],
+              [
+                "Varen åbnes, men der mangler størrelse eller farve",
+                "Bekræft den specifikke mulighed, før du bestiller."
+              ],
+              [
+                "Agent afviser elementet",
+                "Spørg om støtteberettigelse; skjule ikke genstanden."
+              ],
+              [
+                "Listing af værker, men import mislykkes stadig",
+                "Spørg support om en understøttet manuel ordre er mulig."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Sugargoo-fragt til USA: omkostninger, vægt og levering",
-      "description": "Planlæg Sugargoo-fragt til USA: sammenlign pakkevægt, mål, rutevilkår og leveringstrin, før du betaler international fragt.",
+      "title": "Sugargoo-fragt til USA: priser, ruter og leveringstid",
+      "description": "Planlæg Sugargoo forsendelse til USA med en komplet omkostningscheckliste, konsekvente pakke input, rute sammenligninger og sporing trin før afsendelse.",
       "keyword": "sugargoo fragt til USA",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "Sugargoo-fragt til USA er en særskilt beslutning fra købet af varerne. Start med din leveringsadresse, de produkter du vil sende og et overslag over deres pakkede vægt og størrelse. Sammenlign derefter de ruter, der faktisk tilbydes på din konto. Prisen for en andens pakke er kun en reference: destination, dato, mål og indhold kan være anderledes end dine.",
-        "Denne guide giver en sammenligningsmetode, ikke en fast pris eller et leveringsløfte. SugargooTab er et uafhængigt katalog og kan ikke give tilbud, afsende eller spore din pakke på Sugargoos vegne. Brug den officielle beregner til planlægning og den endelige pakkeoversigt til beslutningen om betaling. Gem, hvad tilbuddet omfatter, så senere ændringer er forståelige."
+        "For Sugargoo forsendelse til USA, få et tilbud på din faktiske tilstand, varekategori, pakket vægt og dimensioner. Den billigste viste linje er kun nyttig, hvis dine varer og adresse er støtteberettigede. Rutetilgængelighed, pris- og leveringsoverslag kan ændre sig.",
+        "Separer varernes pris fra det internationale pakkebudget. Sammenlign det samlede skyldige beløb og leveringsbetingelserne ved hjælp af den samme pakke, og kontrollér derefter de endelige pakkede målinger før afsendelse."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Sammenlign amerikanske ruter uden at blande forskellige pakker",
+          "paragraphs": [
+            "Opret en referencepakke før åbning af flere ruteresultater. Optag dens status og postnummer, varekategori, faktisk vægt, ydre dimensioner og den krævede beskyttelse. Gem citatets dato og valuta med hvert resultat. Hvis et resultat udelukker dimensioner eller anvender en anden kategori, skal det gentages før man sammenligner priserne.",
+            "For hver støtteberettigede rute anføres den betalte fragt, vægtreglen, herunder tjenesteydelser, det anslåede transitområde og det endelige leveringsluftfartsselskab, hvis dette er angivet. Tilføj valgfri pakning eller forsikring separat. Læs de nuværende import- og rutebetingelser i stedet for at antage, at et rutenavn ikke garanterer ekstra omkostninger eller toldbehandling."
+          ],
+          "bullets": [
+            "Sammenlign de samme varer og pakningsplan.",
+            "Kontroller, om estimatet begynder ved afsendelse eller en anden milepæl.",
+            "Hold produktkvitteringer og nøjagtige varebeskrivelser med parcellen rekord."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Adskil varekøb fra budgettet til USA-pakken",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Sugargoo-fragt til Storbritannien: priser og levering",
+      "description": "Sammenlign Sugargoo UK shipping citater, faktisk og volumen vægt, levering overdragelser og import-charge oplysninger, før du indsender en pakke.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "For at estimere Sugargoo forsendelse til Storbritannien, skal du vælge din faktiske destination region, varekategori, pakket vægt og dimensioner i den officielle estimator. Sammenlign kun de ruter, der er tilgængelige for denne kombination. Tjek det endelige tilbud på din konto, før du betaler; en pris fra en anden køber er ikke din fragtrate.",
+        "Denne vejledning anvender et praktisk sammenligningsark frem for faste priser. Det hjælper dig med at beslutte, om en kompakt pakke, en voluminøs skotøjsæske pakke eller en deadline-følsom ordre har brug for en anden forsendelsesplan."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Forbered en parcel til en fair sammenligning i Storbritannien",
+          "paragraphs": [
+            "Begynd med varer, du allerede har tjekket i lageret. Skriv emnelisten ned og den emballage, du agter at beholde. Et citat for sko med detailkasser kan ikke sammenlignes retfærdigt med et citat, der antager, at kasserne vil blive fjernet. Hvis målinger er usikre nok til at ændre din beslutning, overveje en pakning prøve først.",
+            "Brug den korrekte adresseregion og postnummer. Storbritannien og Nordirland har forskellige importordninger, så undgå at kopiere et sted fra et tidligere skøn. Bed platformen bekræfte destinationens dækning, hvis din adresse ikke er understøttet på den valgte rute."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Byg en rutesammenligning du kan genbruge",
+          "paragraphs": [
+            "Åbn de støtteberettigede resultater og registrere citatdato, valuta og pakkede målinger én gang. Derefter laves en række for hver rute. Sammenlign det faktiske beløb, der skal betales efter en eventuel kupon, ikke en krydset reklamepris. En kupon med et minimum af udgifter gælder måske ikke for en mindre pakke."
+          ],
+          "table": {
+            "headers": [
+              "Optag for hver rute",
+              "Hvorfor det betyder noget"
+            ],
+            "rows": [
+              [
+                "Regel om opladning og vægtforøgelse",
+                "Den samme målte parcel kan have en anden faktureret vægt."
+              ],
+              [
+                "Gods og valgfrie tjenesteydelser",
+                "Emballage eller forsikring kan være separate linjeposter."
+              ],
+              [
+                "Anslået transit og udgangspunkt",
+                "Leverings- og lagerarbejde kan finde sted inden international transit."
+              ],
+              [
+                "Det Forenede Kongeriges leveringsselskab og adressedækning",
+                "Den endelige overdragelse påvirker, hvordan du sporer levering."
+              ],
+              [
+                "Importafgiftsbetingelser",
+                "Læs hvad der er inkluderet, og hvad du kan stadig nødt til at betale."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Skokasser: Sammenlign beskyttelse og pakkestørrelse",
+          "paragraphs": [
+            "Lad os antage, at to par sko har passeret din størrelse og tilstand kontrol. Sammenlign to pakningsplaner: at holde begge kasser, eller fjerne kasser hvor sikkert og acceptabelt for dig. Bed om yderdimensionerne af den færdige pakke under den valgte plan. Udfør ikke disse dimensioner ved at lægge skolængderne sammen.",
+            "Hvis du indsamler kasserne eller har brug for dem til en mulig tilbagevenden, kan holde dem betyder mere end at reducere volumen. Hvis du fjerner dem, enes om beskyttelse af skoene. Omberegne ruten ved hjælp af de resulterende dimensioner og omfatte omkostningerne ved pakketjenesten. Mindre emballage er ikke automatisk billigere eller sikrere."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Kontrollér importafgifter og behold ordreoptegnelsen",
+          "paragraphs": [
+            "Brug den aktuelle GOV.UK vejledning linket nedenfor for varer sendt fra udlandet. Importbehandlingen afhænger af destinationen, varerne og transaktionen. En rute, der markedsføres med skatterelateret ordlyd, er ikke en generel fritagelsesgaranti; læs dens vilkår og bekræft, hvilke afgifter der er inkluderet.",
+            "Hold kvitteringer, postbeskrivelser og det beløb, der er betalt med parceloptegnelsen. Deklarer varer præcist og spørg støtte om uklare angivelse felter. Denne vejledning beregner ikke skat eller giver et universelt angivelsesbeløb. Hvis luftfartsselskabet anmoder om betaling eller dokumenter, skal det kontrollere anmodningen via luftfartsselskabets officielle websted."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Læs sporing som en sekvens af overdragelser",
+          "paragraphs": [
+            "Separat sælger forsendelse, lagerkvittering, international forsendelse og britisk levering. En sælgers tracking nummer dækker levering til lageret; det beviser ikke, at den internationale pakke er tilbage. Efter pakkeafsendelse skal du kontrollere logistikoptegnelsen for det nummer, der er forbundet med den valgte forsendelseslinje.",
+            "Når en endelig levering luftfartsselskab er identificeret, følge sin officielle tracking side samt. Gem den sidste scanning, dato og alle nødvendige handlinger. For en forsinkelse, spørg støtte, hvilken fase venter, og om der er behov for dokumenter eller en adresse korrektion. Et anslået leveringsområde er ikke en garanteret ankomstdato."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Vælg ruten for den beslutning, du faktisk står over for",
+          "paragraphs": [
+            "For en kompakt pakke uden deadline sammenligner man de samlede omkostninger mellem støtteberettigede ruter. For en voluminøs pakke, undersøge vægt regel og pakket størrelse først. For en tidsfølsom ordre, giver mulighed for oplagsforberedelse og told samt det annoncerede transitoverslag.",
+            "Hvis ingen berettiget rute opfylder dine behov, pause forsendelsen og bede om muligheder. Opsplitning af en pakke skaber en ny sammenligning med to basisafgifter og muligvis to servicegebyrer. Beregn begge totaler i stedet for at antage, at flere pakker vil være billigere."
+          ]
+        }
+      ],
+      "checklist": [
+        "Brug din rigtige UK-region og postnummer.",
+        "Afslut QC før du vælger pakkeplanen.",
+        "Sammenlign ruter med identisk indhold og målinger.",
+        "Optag tilbudsdato, valuta og medfølgende tjenester.",
+        "Læs aktuelle import- og rutevilkår.",
+        "Gem både internationale og endelige sporingsreferencer."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Engelsk oversigt over forsendelse",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: skøn over forsendelsesgebyr",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: Varer afsendt fra udlandet",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: pakkesporing",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Sugargoo-fragt til Canada: priser og sporing",
+      "description": "Planlæg en Sugargoo pakke til Canada ved hjælp af din provins, postnummer, pakket størrelse, rute afgifter og endelig-barriere sporing oplysninger.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo forsendelse til Canada afhænger af din provins, adresse, varer og pakkede pakke målinger. Start med et aktuelt citat for disse nøjagtige indgange. Bekræft, hvilket luftfartsselskab der vil levere det sidste trin; antag ikke, at hver rute bruger Canada Post.",
+        "Den mest nyttige sammenligning omfatter adressedækning, det fulde skyldige beløb og hvordan parcellen vil blive sporet efter ankomsten. Denne guide forklarer, hvad man skal registrere før betaling, uden at behandle en gammel rute pris som et aktuelt tilbud."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Tjek først provins- og postnummerdækning",
+          "paragraphs": [
+            "Brug den leveringsadresse, du har til hensigt at holde gennem forsendelsen. Indtast provins- og postkoden nøjagtigt og medfÃ ̧lg ethvert nÃ ̧dvendigt enhedsnummer. Før du vælger en rute, skal du kontrollere, om den accepterer din adressetype, og om der opkræves et fjernområde- eller leveringsgebyr. En pris for en anden provins kan ikke være en nyttig sammenligning.",
+            "Hvis du planlægger at bruge en post-office boks, en forretningsadresse eller en ekstern placering, spørg om denne adresse specifikt. Du må ikke erstatte en nærliggende by blot for at få en rute til at dukke op i estimatoren. Hvis dækningen er uklar, skal du løse den før varerne forlader lageret."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Hold parcelbudgettet adskilt fra produktprisen",
+          "paragraphs": [
+            "Byg et budget med separate poster for varerne, levering i Kina, udvalgte lagertjenester, international fragt og potentielle import- eller håndteringsomkostninger. Optag valutaen for hvert beløb. En vist US-dollar pris og et canadisk-dollar budget bør ikke tilføjes uden en aktuel konvertering.",
+            "For fragt sammenligner aktuelle støtteberettigede citater med samme faktiske vægt, ydre dimensioner og varekategori. Kontrollér, om hver linje belaster faktisk vægt, volumenvægt eller en anden angivet regel. Hvis emballagen ikke er færdig, markeres målingerne som skøn og genbesøger sammenligningen inden afsendelsen."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "En voluminøs frakke har brug for en størrelse kontrol samt en vægtkontrol",
+          "paragraphs": [
+            "Forestil dig at sende en vinterfrakke sammen med et lille tilbehør. Frakken kan dominere boksens dimensioner, selv når det ikke er den tungeste genstand. Optag den færdige parcelstørrelse og beregne volumetrisk vægt med den divisor, der anvendes af hver rute. En rute, der ser billig ud pr. kg kan være mindre attraktiv, når dens størrelse regel anvendes.",
+            "Spørg, om en anden pakningsmetode er egnet til stoffet og konstruktionen. Kompression kan ikke være egnet til alle beklædningsgenstande eller tilbehør. Inkluder enhver pakning omkostninger, og sammenligne den beskyttede parcel snarere end en teoretisk mindste volumen. Hvis tilbehøret er skrøbeligt, kan separat beskyttelse være mere værdifuld end den mindste mulige boks."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Læs canadisk import vejledning før afsendelse",
+          "paragraphs": [
+            "Canada Border Services Agency forklarer, hvordan importeret post gennemgås, og hvordan afgifter eller skatter kan anvendes. Hold produktkvitteringerne og nøjagtige beskrivelser tilgængelige. Behandl ikke et detailkøb som en gave bare fordi pakken er til personlig brug.",
+            "Tjek de nuværende rutevilkår for enhver inkluderet importhåndtering og spørg, hvilke gebyrer der stadig kan opkræves. Post- og kurerhåndtering kan variere. Brug de officielle CBSA ressourcer nedenfor til din situation i stedet for at antage, at regler for varer sendt fra et andet land gælder for en pakke fra Kina."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Følg de internationale og canadiske leveringsrapporter",
+          "paragraphs": [
+            "Efter afsendelse, åbne pakke logistik record og gemme sit tracking nummer. Den oprindelige sælger giver leveringsnummer er en anden rekord. Kontrollér, om den valgte linje giver en separat reference for slutbæreren, efter at parcellen når Canada.",
+            "Hvis Canada Post er den navngivne luftfartsselskab, skal du bruge sin officielle tracking service efter overdragelse. Hvis et andet luftfartsselskab er navngivet, så brug det luftfartsselskab i stedet. Et tal, der oprettes, betyder ikke i sig selv, at transportvirksomheden har modtaget parcellen. For en forsinket forsendelse, giv støtte den sidste scanning, dens dato, ruten og parcelreferencen."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Træf en beslutning med et kort sammenligningsark",
+          "paragraphs": [
+            "For en letvægts ordre, sammenligne støtteberettigede små-parcel muligheder med alle gebyrer inkluderet. For en voluminøs ordre, løse pakkede dimensioner, før der fokuseres på den annoncerede sats. For en stor ordre, sammenligne enhver opdelt plan som flere komplette forsendelser, herunder gentagne minimumsafgifter."
+          ],
+          "table": {
+            "headers": [
+              "Før betaling",
+              "Optag"
+            ],
+            "rows": [
+              [
+                "Adressedækning",
+                "Provins, postnummer og eventuelle ekstra bekræftelser."
+              ],
+              [
+                "Parcelmålinger",
+                "Faktisk vægt, ydre størrelse og emballage instruktioner."
+              ],
+              [
+                "Rutevilkår",
+                "Beløb forfaldent, valuta, vægtregel og forventet transit."
+              ],
+              [
+                "Leveringslevering",
+                "Navngivet endelige operatør og sporingsinstruktioner."
+              ],
+              [
+                "Importoplysninger",
+                "Kvitteringer, beskrivelser og relevante afgiftsoplysninger."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Bekræft provins, postnummer og adresseberettigelse.",
+        "Hold valutaerne eksplicit på dit budget.",
+        "Mål voluminøse varer efter den aftalte emballeringsmetode.",
+        "Tjek det angivne sidste leveringsselskab.",
+        "Hold kvitteringer og angive varer korrekt.",
+        "Gem den endelige citat og sporing rekord."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Canada shipping oversigt",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: forsendelse estimator input",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: Import via post",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: fastsættelse af skatter og afgifter",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Sugargoo skostørrelser: mærker, indlægssåler og QC",
+      "description": "Vælg en skostørrelse fra sælgerens eget diagram, anmode om nyttige Sugargoo QC målinger, og sammenligne den modtagne par før forsendelse.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo har ikke en universel sko størrelse diagram for hver sælger. Brug diagrammet til den nøjagtige liste og variant, og sammenlign derefter den modtagne parkets etiket og målinger i dit lager QC record. Alene et velkendt EU-, Det Forenede Kongeriges eller USA's størrelse er ikke nok til at fastslå, om det passer.",
+        "Denne guide giver dig en gentagelig check for sko fundet i et regneark. Det adskiller fodlængde, indersålslængde og yderste længde, så du kan anmode om de beviser, du rent faktisk har brug for før international forsendelse."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Start med den nøjagtige sælgers størrelsesdiagram",
+          "paragraphs": [
+            "Åbn den originale produktside og gem størrelsen diagram, der tilhører denne model. Kontrollér, om dens målinger beskriver foden, indersålen eller skoens yderside. Tjek også om størrelsessystemet er for mænd, kvinder eller børn. En tabel fra en anden model kan skabe en falsk match, selv når størrelsen etiketter ser den samme.",
+            "Hvis diagrammet er uklart, spørg sælgeren eller agenten, hvad hver kolonne betyder, før du bestiller. Tilføj ikke en standardgodtgørelse til hvert diagram: sælgeren kan allerede have bygget en godtgørelse i sin anbefaling. Din valgte pasform, sokker og skoens form betyder også noget."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Opret en nyttig sammenligning derhjemme",
+          "paragraphs": [
+            "Måle begge fødder ved hjælp af samme metode og registrere den længere måling. Til en sammenligning skal du bruge en aftagelig indersål fra et par, der allerede passer komfortabelt, hvis fjernelse er sikker. Optag hvor linealen starter og slutter. En måling af foden skal sammenlignes med et diagram over fodlængden, mens en måling på indersålen skal sammenlignes med en anden måling på indersålen.",
+            "Hold enhederne i overensstemmelse. For eksempel er 270 mm 27 centimeter. Denne konvertering betyder ikke, at en 27 cm indsål passer til en 27 cm fod. Fodform, skostruktur og sælgerens målemetode påvirker stadig beslutningen."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Spørg efter en præcis lagermåling",
+          "paragraphs": [
+            "Når skoene ankommer, gennemgå ordren og de synlige størrelse etiketter først. Hvis den krævede måling mangler, kan du spørge, hvilken yderligere foto- eller måletjeneste der er tilgængelig, og hvad det koster. Identificer den nøjagtige vare, side og dimension du ønsker tjekket.",
+            "Eksempel anmodning om at tilpasse: Du bedes fotografere størrelse etiketter på begge sko. Hvis indlægssålen kan fjernes uden beskadigelse, skal du måle den fra hæl til tå med en lineal og vise begge ender klart. Bekræft venligst, om målingen er i centimeter. Dette er en anmodning skabelon, ikke et løfte om, at hver post kan måles på den måde."
+          ],
+          "bullets": [
+            "Spørg efter begge sko, hvis du har mistanke om et par, der ikke stemmer overens.",
+            "Anmoder linealens start- og slutpunkter i samme foto.",
+            "Bed ikke personalet om at beskadige en fast indersål for at opnå en måling."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Brug hvert billede til det spørgsmål, den kan besvare",
+          "paragraphs": [
+            "Et mærke bekræfter hvilken størrelse der er trykt på den modtagne sko. Det beviser ikke, at skoen følger en universel konvertering diagram. En lineal ved siden af ydersålen viser udvendig længde, hvilket ikke er det samme som brugbart indvendigt rum. En fuld par foto hjælper med at kontrollere, at farverne og formerene synes konsekvent."
+          ],
+          "table": {
+            "headers": [
+              "Bevismidler",
+              "Nyttig til",
+              "Kan ikke etablere sig alene"
+            ],
+            "rows": [
+              [
+                "Størrelsesetiket",
+                "Matcher den bestilte variant.",
+                "Om parret passer til din fod."
+              ],
+              [
+                "Måling af indersål",
+                "Sammenligning af en aftagelig indsål med et kendt par.",
+                "Komfort, bredde eller den komplette indre form."
+              ],
+              [
+                "Udendørsmåling",
+                "Kontrol af skoens udvendige dimensioner.",
+                "Der er plads til din fod."
+              ],
+              [
+                "Nærbillede af QC-foto",
+                "Undersøgelse af et synligt mærke eller manglende overensstemmelse.",
+                "Autenticitet eller langtidsholdbarhed."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Arbejd gennem et misforhold, før du laver en pakke",
+          "paragraphs": [
+            "Hypotetisk eksempel: den aftagelige indsål fra et behageligt par måler 28 cm, mens lagerfotoet viser 26 cm. Først bekræfte, at begge målinger bruger de samme endpoints, og at lageret billede tilhører din ordre. Bed om et klarere billede, hvis linealen eller hælkanten er skjult.",
+            "Hvis forskellen er bekræftet, skal du sammenligne det med listens størrelse diagram og kontakt support om tilgængelige muligheder. Må ikke antage, at etiketten alene afgør spørgsmålet. Retur eller bytte støtteberettigelse, frister og omkostninger afhænger af ordren; løse problemet, mens varen stadig er til rådighed for gennemgang i lageret."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Afslut pasform kontrol, før du fjerner emballage",
+          "paragraphs": [
+            "Beslut, om skoene er acceptable, før du anmoder om boks fjernelse eller kombinere dem i en pakke. Hold etiketten billeder, målinger, sælger diagram og support svar sammen. Spørg, om en ændring af emballagen kan påvirke en tilbagevenden, du stadig overvejer.",
+            "Når parret er klar, beslutte, hvilken beskyttelse det har brug for under transport. Sammenlign forsendelse med den faktiske pakkede størrelse, især når du holder flere skokasser. Den billigste pakkeplan er ikke nyttig, hvis det kompromitterer en funktion, du har brug for at bevare."
+          ]
+        }
+      ],
+      "checklist": [
+        "Brug den nøjagtige liste gør størrelsen horoskop og størrelsessystem.",
+        "Distinguished foot, insole og outsole målinger.",
+        "Hold centimeter og mm i overensstemmelse.",
+        "Match både sko og deres etiketter til den betalte ordre.",
+        "Resolve måling bekymringer før parcel indsendelse.",
+        "Hold den relevante emballage, indtil ordren er endelig."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC-fotos og målinger",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: QC-tjenestedækning",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: bestilling og lager gennemgang",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

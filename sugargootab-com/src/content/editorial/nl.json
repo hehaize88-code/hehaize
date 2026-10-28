@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Artikelen",
     "articleTitle": "Koopgidsen voor Sugargoo",
-    "articleIntro": "Praktische gidsen over productlinks, QC-foto’s, bestelstadia en verzendkeuzes, met officiële bronnen en duidelijke vervolgstappen.",
+    "articleIntro": "Praktische Sugargoo gidsen voor product links, QC foto's, schoen maten en verzending. Kies de vraag die u moet beantwoorden voordat u een pakket koopt of verstuurt.",
     "faqTitle": "Veelgestelde vragen over Sugargoo",
     "faqIntro": "Duidelijke antwoorden voor elke fase van je bestelling, met officiële bronnen voor platformregels en eerlijke grenzen voor deze onafhankelijke catalogus.",
     "readArticle": "Lees de gids",
@@ -34,11 +34,35 @@
     "categoryAccount": "Betalingen en nazorg",
     "author": "Redactie van SugargooTab",
     "siteEvidence": "Over deze onafhankelijke catalogus",
-    "seoHomeTitle": "Sugargoo Spreadsheet: productlinks, foto’s en koopgidsen",
+    "seoHomeTitle": "Sugargoo Spreadsheet: Schoenen, kleding & productlinks",
     "catalogCtaTitle": "Gebruik de checklist in de praktijk",
     "catalogCtaBody": "Vergelijk productlinks in de catalogus en controleer daarna de exacte advertentie en je eigen bestelgegevens voordat je koopt of verzendt.",
     "catalogCtaButton": "Bekijk productlinks",
-    "categoryCtaButton": "Ontdek productcategorieën"
+    "categoryCtaButton": "Ontdek productcategorieën",
+    "homeSearchIntro": "Zoek schoenen, capuchon, truien en accessoires. Open een productlink, controleer de opties van de verkoper en bekijk vervolgens uw eigen magazijn QC voor verzending.",
+    "seoHomeDescription": "Blader door Sugargoo product links voor schoenen, hoodies, truien en accessoires. Vergelijk referentiefoto's en gebruik praktische QC, maat- en verzendgidsen.",
+    "seoCatalogTitle": "Sugargoo Spreadsheet: Blader door schoenen, kleding en accessoires",
+    "seoCatalogDescription": "Zoek Sugargoo product links, vergelijk referentie foto's en prijzen, en controleer de oorspronkelijke lijst voordat u bestelt. Blader door schoenen, kleding en accessoires.",
+    "seoCategoryTitle": "Sugargoo {category}: Productlinks & foto's",
+    "seoCategoryDescription": "Blader door {category} product links voor Sugargoo. Vergelijk referentiefoto's en vermelde prijzen, bevestig vervolgens maten, opties en beschikbaarheid voordat u bestelt.",
+    "catalogGuideNote": "Productfoto's en prijzen zijn referenties. Controleer de exacte verkooplijst en uw eigen magazijn QC voor verzending.",
+    "nextStep": "Kies uw volgende stap",
+    "weightToolTitle": "Pakketgewichtcalculator",
+    "weightToolIntro": "Controleer het werkelijke en volumetrische gewicht. Deze tool citeert geen verzendprijzen; gebruik de geselecteerde route.",
+    "actualWeight": "Werkelijk gewicht van het verpakte pakket (kg)",
+    "parcelLength": "Buitenlengte (cm)",
+    "parcelWidth": "Buitenbreedte (cm)",
+    "parcelHeight": "Buitenhoogte (cm)",
+    "weightDivisor": "Volumetrische deler van de verzendroute",
+    "weightRule": "Opladen regel",
+    "higherWeight": "Hoger van het feitelijke en volumetrische gewicht",
+    "actualOnly": "Alleen werkelijk gewicht",
+    "calculateWeight": "Bereken gewicht",
+    "volumetricWeight": "Volumetrisch gewicht",
+    "billingBase": "Gewicht vóór afronding",
+    "weightDisclaimer": "Uitsluitend illustratieve gewichtsberekening. Routeronding, minimale kosten, afmetingen en servicekosten zijn nog steeds van toepassing. Bevestig het huidige citaat met Sugargoo.",
+    "weightError": "Voer een positief getal in in elk meetveld.",
+    "officialEstimatorGuide": "Open de officiële scheepsschattingsgids"
   },
   "groups": {
     "basics": "Aan de slag",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo Spreadsheet-gids: productlinks vinden en controleren",
-      "description": "Vind producten in een Sugargoo-spreadsheet, controleer actuele advertenties en varianten en onderscheid referentiebeelden van je eigen QC-foto’s uit het magazijn.",
+      "title": "Een Sugargoo Spreadsheet gebruiken: zoeken en bestellen",
+      "description": "Gebruik een Sugargoo spreadsheet om product links te vinden, check maten en verkoper opties, open de juiste bestelpagina, en beoordeel magazijn QC voor verzending.",
       "keyword": "Sugargoo spreadsheet",
       "category": "getting-started",
       "intro": [
-        "Een Sugargoo-spreadsheet is nuttig als deze je helpt een kleinere, beter onderbouwde shortlist te maken. Een lange pagina met productfoto’s vertelt niet of een bepaalde maat beschikbaar is, wat je pakket zal kosten of dat de huidige aanbieding van de verkoper nog overeenkomt met een oudere aanbeveling. Beschouw de spreadsheet als het begin van je onderzoek en koppel de uiteindelijke koopbeslissing aan de exacte aanbieding.",
-        "Deze onafhankelijke catalogus haalt productinformatie en referentieafbeeldingen op bij cnbuycha. Bestellen en betalen gebeurt op Sugargoo. De volgende methode verbindt die twee fasen zonder een catalogusvermelding te behandelen als een persoonlijke aanbeveling, voorraadgarantie of bewijs van magazijninspectie. De methode werkt ook wanneer je je shortlist in een eenvoudige notitie-app bijhoudt."
+        "Een Sugargoo spreadsheet is een directory van productlinks. Gebruik het om een item te vinden, controleer dan de oorspronkelijke lijst en de exacte variant op Sugargoo voordat u betaalt. Een opgeslagen link bevestigt niet de huidige voorraad, de geselecteerde grootte, de uiteindelijke prijs of acceptatie door de koopagent.",
+        "Begin met de live catalogus of een categorie zoals schoenen, hoodies of truien. Open een veelbelovend item, bekijk de referentiefoto's en volg de beschikbare kooplink. Houd uw shortlist klein genoeg om elk item goed te controleren."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Zo controleer je een actuele advertentie vóór aankoop",
+          "id": "spreadsheet-first-action",
+          "title": "Van een spreadsheet tot een gecontroleerde bestelling",
           "paragraphs": [
-            "Open het product in de catalogus en volg de link naar de oorspronkelijke advertentie. Vergelijk het product-ID op de marktplaats, de verkoper en de gekozen variant met het artikel dat Sugargoo toont. Het interne paginanummer van de catalogus is een afzonderlijke identificatie. Controleer vlak vóór betaling opnieuw de actuele prijs, beschikbare opties en hoeveelheid; een opgeslagen productkaart bewijst geen actuele voorraad.",
-            "Stop wanneer de oorspronkelijke advertentie ontbreekt, het product niet kan worden geladen of de variant afwijkt. Ga terug naar de spreadsheet en vergelijk een andere kandidaat. Noteer waarom de eerste afviel, zodat je dezelfde controle later niet herhaalt. Referentiefoto’s blijven hulpmiddelen om producten te ontdekken, ook wanneer ze op magazijnfoto’s lijken."
+            "Zoeken op het producttype of een onderscheidende naam, dan openen de item pagina. Vergelijk de lijsttitel, bron-item-identificatie, foto's en geselecteerde opties. Als de aankooppagina een andere kleur of grootte opent, kies dan de beoogde variant opnieuw en inspecteer de definitieve bestelsamenvatting. Betaal niet alleen omdat het beeld er bekend uitziet.",
+            "De prijs in een catalogus is een referentie voor het artikel. Bouw een apart budget voor levering binnen China, alle geselecteerde diensten en internationale vracht. Sla de bronlink op met uw gekozen grootte en kleur. Zodra het item het magazijn bereikt, gebruik uw eigen QC record om te beslissen of het klaar is om te verzenden."
           ],
-          "table": {
-            "headers": [
-              "Controlepunt",
-              "Te gebruiken bewijs"
-            ],
-            "rows": [
-              [
-                "Productidentiteit",
-                "Oorspronkelijke marktplaats-URL en product-ID"
-              ],
-              [
-                "Actuele beschikbaarheid",
-                "Huidige verkopersadvertentie en gekozen optie"
-              ],
-              [
-                "Prijs",
-                "Exacte variant en bedrag bij het afrekenen"
-              ],
-              [
-                "Staat van het artikel",
-                "Je eigen bestelfoto’s na aankomst in het magazijn"
-              ]
-            ]
-          }
+          "bullets": [
+            "Zoeken: kies een categorie en vernauw de zoekopdracht.",
+            "Check: kom overeen met de oorspronkelijke lijst, opties en huidige bestelprijs.",
+            "Bestelling: gebruik de officiële aankoopstroom voor een in aanmerking komend artikel.",
+            "Beoordeling: inspecteer uw eigen magazijn QC voordat u een pakket maakt."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC-foto’s: producten controleren vóór verzending",
-      "description": "Gebruik een praktische Sugargoo QC-fotochecklist voor schoenen, kleding en tassen. Controleer labels, maten, stiksels en ontbrekende details vóór verzending.",
+      "title": "Sugargoo QC-foto’s controleren vóór verzending",
+      "description": "Vind Sugargoo magazijn QC foto's, controleer de juiste item en grootte, vraag nuttige extra metingen, en problemen op te lossen voor internationale verzending.",
       "keyword": "Sugargoo QC-foto’s",
       "category": "quality",
       "intro": [
-        "Magazijnfoto’s zijn het nuttigst wanneer je een specifieke beslissing moet nemen: komt het ontvangen artikel overeen met de bestelling, is een belangrijk detail onduidelijk of is er zichtbare schade die aandacht vraagt? Alle afbeeldingen bekijken zonder checklist kan nog steeds de belangrijkste vraag onbeantwoord laten. Een duidelijke beoordelingsmethode maakt de foto’s makkelijker bruikbaar.",
-        "Sugargoo beschrijft doorgaans vijf standaard-QC-foto’s, waarbij de inspectieomvang afhangt van artikel en besteltype. Het aantal foto’s garandeert niet wat kan worden vastgesteld. De cnbuycha-referentiebeelden op deze site zijn catalogusmateriaal, geen geverifieerde QC van jouw persoonlijke Sugargoo-bestelling; bekijk je eigen magazijndossier voordat je internationale verzending regelt."
+        "Om de foto's van Sugargoo QC te controleren, meld je aan en open je het ontvangen item in je bestelling of Packing Center record. Bekijk de foto's die aan dat item zijn toegevoegd alvorens het toe te voegen aan een internationaal pakket. Catalogusfoto's op SugargooTab zijn referentiebeelden, geen foto's van uw eigen bestelling.",
+        "Controleer eerst de geselecteerde variant, label, hoeveelheid en zichtbare conditie. Indien fit afhankelijk is van een meting die niet wordt getoond, vraag die specifieke meting voordat goedkeuring verzendkosten. Visueel QC is geen authenticatie of een garantie voor fit."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "QC-fotocontroles voor schoenen, kleding en tassen",
+          "id": "qc-first-check",
+          "title": "Waar foto's te vinden en wat eerst te controleren",
           "paragraphs": [
-            "Vergelijk eerst de bestelling, kleur, maat en hoeveelheid. Bekijk daarna de details die je beslissing om het artikel te houden kunnen veranderen. Deze checklist helpt je foto’s praktisch te beoordelen; hij garandeert niet dat standaard-QC iedere hoek of meting omvat. Vraag het specifieke ontbrekende bewijs op en controleer eventuele servicekosten voordat je verdergaat.",
-            "Een tas die bijvoorbeeld alleen van voren is gefotografeerd, toont niet hoe de riem is bevestigd of hoe de binnenkant eruitziet. Vraag de relevante hoek als dat detail belangrijk voor je is. Geef bij een gewenste meting de begin- en eindpunten aan en vraag om een zichtbaar meetlint. Foto’s kunnen niet iedere functionele eigenschap vaststellen en bewijzen geen authenticiteit."
+            "Begin met de exacte orderreferentie. Een item dat nog wordt gekocht of geleverd door de verkoper mag nog geen magazijnfoto's hebben. Wanneer het item is ontvangen, inspecteer de bestelgegevens en Packing Center record voor de QC-beelden. Als de record zegt dat het klaar is maar geen foto's verschijnen, stuur ondersteuning van de bestelling referentie en vraag of inspectie is voltooid.",
+            "Open de volledige afbeelding in plaats van een kleine miniatuur te beoordelen. Pas het kleur- en maatlabel aan uw betaalde bestelling, controleer beide zijden en eventuele bijgeleverde accessoires. Bewaar een specifieke vraag voor elke hoek die je niet kunt zien. Voor schoenen, een binnenzoolmeting en een maat-label foto beantwoorden verschillende vragen; de ene kan de andere niet vervangen."
           ],
-          "table": {
-            "headers": [
-              "Productsoort",
-              "Controleer op je bestelfoto’s",
-              "Vraag bij onduidelijkheid"
-            ],
-            "rows": [
-              [
-                "Schoenen",
-                "Paar, maatlabels, zolen en zichtbare naden",
-                "Beide maatlabels en de relevante hoek van zool of naad"
-              ],
-              [
-                "Kleding",
-                "Maatlabel, uiterlijk van de stof en stiksels",
-                "Een vlakke meting met duidelijke begin- en eindpunten"
-              ],
-              [
-                "Tassen",
-                "Riemen, sluitingen, voering en accessoires",
-                "Detailfoto’s van binnenkant en bevestigingspunten"
-              ],
-              [
-                "Elk artikel",
-                "Juiste variant, hoeveelheid en zichtbare schade",
-                "Een duidelijke foto van de specifieke afwijking"
-              ]
-            ]
-          }
+          "bullets": [
+            "Controleer of elke foto tot dezelfde volgorde en variant behoort.",
+            "Vraag om een goed zicht op een vermoedelijk defect, om de locatie ervan te identificeren.",
+            "Hou onopgeloste items uit het pakket totdat je een antwoord hebt."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo-verzendcalculator: gewicht, afmetingen en totale kosten",
-      "description": "Gebruik de Sugargoo-verzendcalculator met realistisch gewicht en realistische afmetingen. Vergelijk geschikte routes en begrijp wat onzeker blijft in een schatting.",
+      "title": "Sugargoo verzendcalculator: gewicht en kosten",
+      "description": "Bereken pakket volumetrische gewicht, begrijp factureerbaar gewicht, en vergelijk Sugargoo verzending offertes met behulp van uw bestemming, afmetingen en item categorie.",
       "keyword": "Sugargoo verzendcalculator",
       "category": "shipping",
       "intro": [
-        "Een verzendschatting is bruikbaar wanneer je weet welke gegevens eraan ten grondslag liggen. Twee mensen kunnen hetzelfde artikelgewicht invoeren en toch verschillende resultaten krijgen doordat hun bestemmingen, productcategorieën, pakketafmetingen of routes verschillen. Het verzendtotaal van iemand anders overnemen geeft daarom een zwakke begroting voor je eigen bestelling.",
-        "De officiële calculatoruitleg van Sugargoo gebruikt bestemming, artikelcategorie, gewicht en afmetingen om beschikbare verzendopties te vergelijken. Beschouw het resultaat als een gedateerd scenario en werk het bij zodra je meer weet over het ingepakte pakket. Deze gids laat zien hoe je zulke scenario’s opbouwt en onzekerheid herkent voordat die bij het afrekenen een probleem wordt."
+        "Gebruik Sugargoo een officiële verzendwaarde voor huidige prijzen en route beschikbaarheid. Voer de bestemming, itemcategorie, verpakt gewicht en afmetingen in. Het gewicht gereedschap hieronder helpt bij het controleren van de wiskunde; het citaat vracht niet of verbinding maken met uw Sugargoo-account.",
+        "Vergelijk routes met dezelfde pakketinvoer. Een offerte op basis van alleen item gewicht kan missen de ruimte gebruikt door schoenen dozen of beschermende verpakking. Controleer elke route en laadregel, afronding en minimale kosten voordat u betaalt."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Maak twee schattingen voordat je goederen koopt",
+          "id": "shipping-inputs",
+          "title": "Een voorbeeld van een bewerkt volume-gewicht",
           "paragraphs": [
-            "Maak een eerste scenario met het best beschikbare gewicht en de best beschikbare afmetingen, en daarna een voorzichtiger scenario dat rekening houdt met onzekere verpakking. Houd bestemming, inhoud en andere instellingen gelijk. Past de bestelling alleen binnen je budget bij de meest optimistische aannames, los die onzekerheid dan op voordat je de goederen betaalt.",
-            "Noteer de offertedatum, route, eenheden, geschatte afmetingen en gekozen extra’s. Vervang aannames door gemeten pakketgegevens zodra die beschikbaar zijn. Gebruik voor een Amerikaanse bestemming de aparte VS-gids voor de vergelijking; vergelijk bij meerdere opgeslagen bestellingen de volledige gecombineerde en gesplitste kosten met de consolidatiegids."
+            "Illustratief voorbeeld, geen offerte voor verzending: een pakket van 40 × 30 × 20 cm en weegt 3 kg. Met een deler van 6000 is het volumetrische gewicht 4 kg. Een route met het grootste werkelijke en volumetrische gewicht zou beginnen vanaf 4 kg voordat de afrondings- of minimale oplaadregels. Een route opladen eigenlijk gewicht zou alleen beginnen vanaf 3 kg.",
+            "Als dezelfde goederen veilig in een verpakking van 40 × 30 × 15 cm kunnen passen, wordt het berekende volumetrische gewicht 3 kg met die deler. Dit vergelijkt alleen metingen. Het levert geen besparing op: verpakkingsdiensten, route-subsidiabiliteit, gewichtsverhogingen en het huidige tarief kunnen het uiteindelijke totaal wijzigen."
+          ],
+          "bullets": [
+            "Gebruik buitenste verpakte afmetingen in centimeters, geen productafmetingen.",
+            "Converteer gram naar kilogram voor gebruik van het gereedschap hieronder: 3000 g is gelijk aan 3 kg.",
+            "Neem de deler en laadregel van de route die u overweegt."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo-proefverpakking: gewicht, afmetingen en wanneer het helpt",
-      "description": "Bepaal wanneer Sugargoo-proefverpakking nuttig is, leg verpakkingskeuzes vast en vergelijk het gemeten pakket met je oorspronkelijke verzendschatting.",
+      "title": "Sugargoo proefverpakking: hoe werkt het en is het zinvol?",
+      "description": "Leer wat Sugargoo repetitie verzending doet, wanneer het de moeite waard is de vergoeding, en hoe u verpakt gewicht en afmetingen te gebruiken voordat u een verzendroute.",
       "keyword": "Sugargoo proefverpakking",
       "category": "shipping",
       "intro": [
-        "Proefverpakking is vooral nuttig als onzekerheid over het ingepakte pakket invloed heeft op een beslissing die je nog moet nemen. Misschien kies je tussen routes, beslis je of je grote verpakkingen behoudt of controleer je of een geplande combinatie binnen de limieten van een dienst past. Betere metingen kunnen die vragen helpen beantwoorden, maar garanderen geen lagere verzendrekening.",
-        "Sugargoo beschrijft rehearsal als een pakketsimulatie vóór verzending die nauwkeurigere gewichts- en volumegegevens oplevert. Beschouw dit als een meet- en verpakkingsbeslissing en controleer de actuele servicevoorwaarden en kosten in je account. De praktische waarde ontstaat doordat je weet wat je met het resultaat wilt doen."
+        "Sugargoo repetitie verzending is een verpakking en meting dienst voor internationale verzending. Het helpt u het pakket te controleren werkelijke gewicht en afmetingen voordat u kiest verzending. Het is de moeite waard te overwegen wanneer dozen, omvangrijke items of een route limiet maken uw schatting onzeker; het garandeert geen besparingen.",
+        "Maak eerst uw item en QC controles af. Bevestig vervolgens de huidige servicekosten en verpakkingsmogelijkheden in uw account. Gebruik het resultaat om in aanmerking komende routes te vergelijken met dezelfde inhoud, bestemming en verpakking."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Wanneer is een proefverpakking het overwegen waard?",
+          "title": "Hoe repetitieve verzending te gebruiken",
           "paragraphs": [
-            "Overweeg proefverpakking wanneer onbekende verpakte afmetingen je route of budget kunnen veranderen: een groot maar licht artikel, meerdere winkeldozen of een pakket dicht bij een routelimiet. Noteer welke onzekerheid je wilt oplossen en controleer de actuele servicekosten. Als je beslissing bij redelijke schattingen hetzelfde blijft, heeft een extra meting mogelijk minder waarde.",
-            "Vergelijk het resultaat met je oorspronkelijke invoer: werkelijk gewicht, buitenmaten, behouden verpakking en gekozen diensten. Bereken opnieuw volgens de actuele factureringsregel van de route. Kleinere afmetingen garanderen geen lagere eindfactuur, omdat minimumkosten, gewichtsstappen en andere opties nog steeds kunnen meetellen."
-          ]
+            "Identificeer in uw Sugargoo-account de magazijnartikelen die u samen wilt verzenden. Open de beschikbare simulatie van het pakket vóór verzending of repetitiedienst, controleer de vergoeding en geef aan of originele dozen en beschermende verpakkingen moeten blijven. Schermlabels kunnen veranderen; vraag ondersteuning voordat u betaalt als de optie of het toepassingsgebied onduidelijk is.",
+            "Als het resultaat klaar is, noteer dan verpakt gewicht en alle drie de buitenafmetingen. Voer die metingen opnieuw in in de officiële schatting. Vergelijk de in aanmerking komende routes, hun gewichtsverhogingen en eventuele verpakkingskosten voordat u het pakket inlevert. Als u de inhoud of verpakking achteraf wijzigt, mogen de eerdere metingen het pakket niet meer beschrijven."
+          ],
+          "table": {
+            "headers": [
+              "Uw situatie",
+              "Besluit"
+            ],
+            "rows": [
+              [
+                "Meerdere schoenendoosjes of een dikke jas",
+                "Overweeg meting voordat u een route kiest."
+              ],
+              [
+                "Pakket dichtbij een maat- of gewichtslimiet",
+                "Controleer het verpakte resultaat tegen die exacte limiet."
+              ],
+              [
+                "Bekend compact pakket; routekeuze blijft hetzelfde",
+                "De extra service kan weinig waarde toevoegen."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian- en Taobao-links op Sugargoo: controleren en fouten oplossen",
-      "description": "Controleer Weidian- en Taobao-productlinks voordat je via Sugargoo koopt. Los ontbrekende advertenties, verkeerde varianten en laadproblemen op zonder te gokken.",
+      "title": "Sugargoo-link werkt niet? Hulp bij Taobao en Weidian",
+      "description": "Fix gemeenschappelijke Sugargoo product-link problemen: onvolledige delen links, niet beschikbaar items, verkeerde varianten en ontbrekende opties van Taobao of Weidian.",
       "keyword": "Weidian naar Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Een productlink verbindt een aanbeveling met een specifieke aanbieding van een verkoper. Op zichzelf bevestigt die geen maat, kleur, voorraad of definitieve prijs inclusief bezorging. De veiligste manier om een Weidian- of Taobao-link op Sugargoo te gebruiken is de productidentiteit behouden en vervolgens vóór betaling de opties op het officiële bestelscherm controleren.",
-        "Deze gids legt uit wat je moet kopiëren, hoe je een verkeerde aanbieding herkent en wat je kunt doen wanneer automatisch laden mislukt. De gids onderscheidt ook de product-ID van de bronmarktplaats van de interne pagina-identificatie van deze catalogus, zodat een handige koopknop geen reden wordt om de laatste controles over te slaan."
+        "Als een Taobao of Weidian link niet zal laden in Sugargoo, eerst de originele productpagina openen en controleren of het item nog bestaat. Kopieer zijn directe product URL, zonder de omliggende deel tekst, probeer dan het officiële product zoeken opnieuw. Houd de item-identificatie intact.",
+        "Een mislukt importeren kan betekenen een onvolledige link, niet-beschikbare opties, een uitverkochte lijst of een item dat de agent niet kan accepteren. Een handmatige bestelling is alleen geschikt voor een in aanmerking komende aankoop waarvan de gegevens kunnen worden bevestigd. Het gaat niet voorbij aan beperkingen."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "Wat controleer je als een productlink niet laadt?",
+          "id": "link-troubleshooting",
+          "title": "Pas het symptoom aan bij de volgende stap",
           "paragraphs": [
-            "Open eerst de oorspronkelijke productpagina en bevestig dat die nog steeds het bedoelde artikel identificeert. Een winkelhomepage, ingekorte deeltekst of verwijderde advertentie is niet gelijk aan een volledige product-URL. Vergelijk het product-ID van de marktplaats voordat je opnieuw probeert. Verwijder ongerelateerde deeltekst zonder de identiteit van het artikel te veranderen.",
-            "Bestaat het oorspronkelijke artikel maar mislukt automatische verwerking, controleer dan de officiële mogelijkheden en acceptatievoorwaarden voor handmatige bestellingen. Bewaar verkoper, exacte variant, hoeveelheid, product-URL en prijsinformatie bij elkaar. Een handmatig formulier heft productbeperkingen niet op en garandeert geen beschikbaarheid. Kies een andere kandidaat als de actuele advertentie niet kan worden geverifieerd, in plaats van op de foto af te gokken."
-          ]
+            "Gebruik dezelfde originele lijst bij het vergelijken van de marktplaats en Sugargoo schermen. Een soortgelijk genoemd item is geen bewijs dat de geïmporteerde optie correct is. Als ondersteuning nodig is, neem dan de directe URL, item identifier, geselecteerde variant en exacte fouttekst; verwijder privé-accountgegevens van schermafbeeldingen."
+          ],
+          "table": {
+            "headers": [
+              "Wat je ziet.",
+              "Wat te controleren"
+            ],
+            "rows": [
+              [
+                "Link opent een gedeeld scherm of tekstbericht",
+                "Open het product zelf en kopieer de directe URL."
+              ],
+              [
+                "Originele lijst is niet beschikbaar",
+                "Vraag de verkoper naar beschikbaarheid; gebruik geen oude prijs."
+              ],
+              [
+                "Item opent maar grootte of kleur ontbreekt",
+                "Bevestig deze specifieke optie voordat u bestelt."
+              ],
+              [
+                "Agent weigert het item",
+                "Vraag naar de subsidiabiliteit; verberg het item niet."
+              ],
+              [
+                "Lijstwerken maar importeren mislukt nog",
+                "Vraag ondersteuning of een ondersteunde handmatige bestelling mogelijk is."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Sugargoo-verzending naar de VS: kosten, gewicht en levering",
-      "description": "Plan Sugargoo-verzending naar de VS: vergelijk pakketgewicht, afmetingen, routevoorwaarden en leveringsstadia voordat je internationale vracht betaalt.",
+      "title": "Sugargoo-verzending naar de VS: kosten, routes en levertijd",
+      "description": "Plan Sugargoo verzending naar de VS met een complete kostenlijst, consistente pakketinputs, route vergelijkingen en tracking stappen voor verzending.",
       "keyword": "sugargoo verzending naar de VS",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "Sugargoo-verzending naar de VS is een afzonderlijke beslissing naast de aankoop van goederen. Begin met je afleveradres, de producten die je wilt versturen en een schatting van hun verpakte gewicht en afmetingen. Vergelijk vervolgens de routes die daadwerkelijk in je account worden aangeboden. De prijs van iemand anders zijn pakket is slechts een referentie: bestemming, datum, afmetingen en inhoud kunnen afwijken van die van jou.",
-        "Deze gids geeft je een vergelijkingsmethode, geen vaste prijs of leveringsbelofte. SugargooTab is een onafhankelijke catalogus en kan je pakket niet namens Sugargoo offreren, verzenden of volgen. Gebruik de officiële calculator voor je planning en het definitieve pakketscherm voor de betalingsbeslissing. Bewaar wat de offerte omvat, zodat latere wijzigingen begrijpelijk blijven."
+        "Voor Sugargoo verzending naar de VS, krijg een offerte voor uw werkelijke staat, item categorie, verpakt gewicht en afmetingen. De goedkoopste weergegeven lijn is alleen nuttig als uw goederen en adres in aanmerking komen. Route beschikbaarheid, prijs- en leveringsschattingen kunnen veranderen.",
+        "Scheid de prijs van de goederen van het internationale pakketbudget. Vergelijk het totale te betalen bedrag en de leveringsvoorwaarden met hetzelfde pakket, controleer vervolgens de uiteindelijke verpakte metingen voor verzending."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Vergelijk Amerikaanse routes zonder verschillende pakketten te mengen",
+          "paragraphs": [
+            "Maak één referentiepakket aan voordat u meerdere routeresultaten opent. Vermeld de staat en postcode, de goederencategorie, het werkelijke gewicht, de buitenafmetingen en de vereiste bescherming. Bewaar de offertedatum en valuta bij elk resultaat. Als een resultaat afmetingen uitsluit of een andere categorie gebruikt, wordt het opnieuw uitgevoerd voordat de prijzen worden vergeleken.",
+            "Vermeld voor elke in aanmerking komende route de te betalen vracht, gewichtsregel, inclusief diensten, geraamde doorvoerbereik en uiteindelijke leveringsdrager indien vermeld. Voeg optionele verpakking of verzekering afzonderlijk. Lees de huidige invoer- en routevoorwaarden in plaats van aan te nemen dat een routenaam geen extra kosten of inklaring garandeert."
+          ],
+          "bullets": [
+            "Vergelijk dezelfde goederen en verpakkingsplan.",
+            "Controleer of de schatting begint bij verzending of een andere mijlpaal.",
+            "Houd product ontvangstbewijzen en nauwkeurige item beschrijvingen met het pakket record."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Scheid productuitgaven van het budget voor het VS-pakket",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Sugargoo-verzending naar het VK: kosten en levering",
+      "description": "Vergelijk Sugargoo UK verzending offertes, werkelijke en volumetrische gewicht, levering handovers en import-charge informatie voordat u een pakket.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Om de verzending van Sugargoo naar het Verenigd Koninkrijk te schatten, selecteert u uw werkelijke bestemmingsgebied, goederencategorie, verpakt gewicht en afmetingen in de officiële schatting. Vergelijk alleen de beschikbare routes voor die combinatie. Controleer de definitieve offerte in uw account voordat u betaalt; een prijs van een andere koper het pakket is niet uw verzendtarief.",
+        "Deze gids maakt gebruik van een praktische vergelijking werkblad in plaats van vaste prijzen. Het helpt u te beslissen of een compact pakket, een omvangrijk schoenendoospakket of een deadlinegevoelige bestelling een ander verzendplan nodig heeft."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Bereid één pakket voor op een eerlijke Britse vergelijking",
+          "paragraphs": [
+            "Begin met goederen die u al in het magazijn hebt gecontroleerd. Schrijf de lijst met artikelen en de verpakking die u wilt bewaren op. Een citaat voor schoenen met retail dozen kan niet eerlijk worden vergeleken met een citaat dat veronderstelt dat de dozen zullen worden verwijderd. Als metingen zijn onzeker genoeg om uw beslissing te veranderen, overwegen een verpakking repetitie eerst.",
+            "Gebruik de juiste adresregio en postcode. Groot-Brittannië en Noord-Ierland hebben verschillende invoerregelingen, dus vermijd het kopiëren van een locatie van een eerdere schatting. Vraag het platform om de dekking van de bestemming te bevestigen als uw adres niet wordt ondersteund in de geselecteerde route."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Bouw een routevergelijking die u kunt hergebruiken",
+          "paragraphs": [
+            "Open de in aanmerking komende resultaten en noteer eenmaal de koersdatum, valuta en verpakte metingen. Maak dan één rij voor elke route. Vergelijk het werkelijke verschuldigde bedrag na een van toepassing zijnde coupon, niet een doorgestreepte promotieprijs. Een coupon met een minimale besteding kan niet van toepassing zijn op een kleiner perceel."
+          ],
+          "table": {
+            "headers": [
+              "Registreer voor elke route",
+              "Waarom het belangrijk is"
+            ],
+            "rows": [
+              [
+                "Laadregel en gewichtsverhoging",
+                "Hetzelfde gemeten pakket kan een ander gefactureerd gewicht hebben."
+              ],
+              [
+                "Goederen- en optionele diensten",
+                "Verpakking of verzekering kunnen afzonderlijke lijnposten zijn."
+              ],
+              [
+                "Geschatte doorvoer en startpunt",
+                "Verkoperslevering en magazijnwerk kunnen komen voor internationale doorvoer."
+              ],
+              [
+                "Britse bezorger en adres dekking",
+                "De uiteindelijke overdracht heeft invloed op hoe je de levering volgt."
+              ],
+              [
+                "Voorwaarden voor invoerheffing",
+                "Lees wat is inbegrepen en wat u misschien nog moet betalen."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Schoenkasten: vergelijk bescherming en perceelgrootte",
+          "paragraphs": [
+            "Stel dat twee paar schoenen je maat en conditie checks hebben gehaald. Vergelijk twee verpakkingsplannen: het bewaren van beide dozen, of het verwijderen van dozen waar veilig en aanvaardbaar voor u. Vraag naar de buitenafmetingen van het afgewerkte pakket volgens het gekozen plan. Trek deze afmetingen niet door de schoenlengtes aan elkaar toe te voegen.",
+            "Als u de dozen verzamelt of ze nodig heeft voor een mogelijke terugkeer, kan het houden van ze belangrijker zijn dan het verminderen van volume. Als u ze verwijdert, akkoord over bescherming voor de schoenen. Bereken de route met behulp van de resulterende afmetingen en inclusief de kosten van de verpakkingsdienst. Kleinere verpakkingen zijn niet automatisch goedkoper of veiliger."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Controleer de importkosten en houd het orderrecord bij",
+          "paragraphs": [
+            "Gebruik de huidige GOV.UK richtlijnen die hieronder zijn gekoppeld voor goederen verzonden vanuit het buitenland. De invoerbehandeling is afhankelijk van de bestemming, goederen en transactie. Een route die met belastinggerelateerde formuleringen in de handel wordt gebracht, is geen algemene vrijstellingsgarantie; lees de voorwaarden ervan en bevestig welke heffingen zijn inbegrepen.",
+            "Houd ontvangstbewijzen, item beschrijvingen en het bedrag betaald met het pakket record. Declareer goederen nauwkeurig en vraag ondersteuning over onduidelijke aangiftevelden. Deze gids berekent geen belasting of verstrekt een bedrag van de universele aangifte. Indien de vervoerder betaling of documenten aanvraagt, verifieer het verzoek via de officiële website van de vervoerder."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Lees tracking als een opeenvolging van overhandigingen",
+          "paragraphs": [
+            "Aparte verkoper verzending, magazijn ontvangst, internationale verzending en UK levering. Een verkoper tracking nummer heeft betrekking op de levering aan het magazijn; het bewijst niet dat het internationale pakket is vertrokken. Controleer na verzending van het pakket het logistieke record voor het nummer dat met de geselecteerde verzendlijn is verbonden.",
+            "Wanneer een uiteindelijke levering vervoerder wordt geïdentificeerd, volg dan ook de officiële tracking pagina. Sla de laatste scan, datum en elke actie die nodig is. Voor een vertraging, vraag ondersteuning welke fase wacht en of documenten of een adrescorrectie nodig zijn. Een geschatte levertijd is geen gegarandeerde aankomstdatum."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Kies de route voor de beslissing waar je mee te maken hebt",
+          "paragraphs": [
+            "Voor een compact pakket zonder deadline, vergelijk de totale kosten tussen de in aanmerking komende routes. Voor een omvangrijk pakket, onderzoek eerst de gewichtsregel en verpakte maat. Voor een tijdgevoelige bestelling, toestaan voor entrepot voorbereiding en douane alsmede de geadverteerde transit schatting.",
+            "Als geen geschikte route aan uw behoeften voldoet, pauzeer dan de verzending en vraag naar opties. Het splitsen van een pakket zorgt voor een nieuwe vergelijking met twee basiskosten en mogelijk twee servicekosten. Bereken beide volledige totalen in plaats van aan te nemen dat meer pakketten goedkoper zullen zijn."
+          ]
+        }
+      ],
+      "checklist": [
+        "Gebruik uw echte Britse regio en postcode.",
+        "Voltooi QC voordat u het verpakkingsplan kiest.",
+        "Vergelijk routes met identieke inhoud en metingen.",
+        "Registreer de koersdatum, valuta en inbegrepen diensten.",
+        "Lees de huidige import- en routevoorwaarden.",
+        "Bewaar zowel internationale als eindleveringstracking referenties."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: UK verzendoverzicht",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: schatting verzendkosten",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: uit het buitenland verzonden goederen",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: pakkettracking",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Sugargoo-verzending naar Canada: kosten en tracking",
+      "description": "Plan een Sugargoo-pakket naar Canada met behulp van uw provincie, postcode, verpakte grootte, routekosten en trackinggegevens.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo verzending naar Canada hangt af van uw provincie, adres, goederen en verpakte pakketmetingen. Begin met een actuele offerte voor die exacte invoer. Bevestig welke vervoerder de laatste fase zal leveren; ga er niet van uit dat elke route gebruik maakt van Canada Post.",
+        "De meest nuttige vergelijking omvat adres dekking, het volledige te betalen bedrag en hoe het pakket zal worden gevolgd na aankomst. Deze gids legt uit wat u moet opnemen voordat u betaalt, zonder een oude routeprijs te behandelen als een huidig aanbod."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Controleer eerst de provincie en postcode",
+          "paragraphs": [
+            "Gebruik het afleveradres dat u wilt bewaren via de zending. Voer de provincie en postcode nauwkeurig in en vermeld elk verplicht eenheidsnummer. Controleer voordat u een route kiest of het uw adrestype accepteert en of een afstands- of leveringstoeslag van toepassing is. Een prijs voor een andere provincie kan geen nuttige vergelijking zijn.",
+            "Als u van plan bent om een post-office box, een zakelijk adres of een externe locatie te gebruiken, vraag dan specifiek naar dat adres. Vervang een nabijgelegen stad niet alleen om een route in de schatter te laten verschijnen. Als de dekking onduidelijk is, los het op voordat de goederen het magazijn verlaten."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Houd het pakket budget gescheiden van de productprijs",
+          "paragraphs": [
+            "Bouw een budget met aparte vermeldingen voor de goederen, levering binnen China, gekozen magazijndiensten, internationale vracht en mogelijke invoer- of behandelingskosten. Registreer de valuta voor elk bedrag. Een getoonde US-dollar prijs en een Canadees-dollar budget mag niet worden toegevoegd zonder een huidige conversie.",
+            "Voor vracht, vergelijk actuele in aanmerking komende offertes met dezelfde werkelijke gewicht, buitenafmetingen en goederencategorie. Controleer of elke lijn het werkelijke gewicht, het volumetrische gewicht of een andere vermelde regel in rekening brengt. Als de verpakking nog niet is voltooid, markeer dan de metingen als schatting en bekijk de vergelijking vóór verzending."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "Een dikke jas heeft een maatcontrole en een gewichtscontrole nodig",
+          "paragraphs": [
+            "Stel je voor dat je een winterjas stuurt samen met een klein accessoire. De jas kan de afmetingen van de doos domineren, zelfs als het niet het zwaarste item is. Registreer de grootte van het afgewerkte perceel en bereken het volumetrische gewicht met de door elke route gebruikte deler. Een route die er goedkoop uitziet per kilogram kan minder aantrekkelijk zijn na toepassing van de maatregel.",
+            "Vraag of een andere verpakkingsmethode geschikt is voor de stof en constructie. Compressie is niet geschikt voor elk kledingstuk of accessoire. Inclusief eventuele verpakkingskosten, en vergelijk het beschermde perceel in plaats van een theoretisch minimumvolume. Als het accessoire kwetsbaar is, kan een afzonderlijke bescherming waardevoller zijn dan de kleinste mogelijke doos."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Lees Canadian import Guideline voor verzending",
+          "paragraphs": [
+            "Het Canada Border Services Agency legt uit hoe geïmporteerde post wordt beoordeeld en hoe rechten of belastingen van toepassing kunnen zijn. Houd de productbonnen en nauwkeurige beschrijvingen beschikbaar. Beschouw een aankoop niet als een geschenk omdat het pakket voor persoonlijk gebruik is.",
+            "Controleer de huidige routevoorwaarden voor alle inbegrepen invoerafhandelingen en vraag welke kosten nog kunnen worden geïnd. De afhandeling van post en koerier kan verschillen. Gebruik de officiële CBSA middelen hieronder voor uw situatie in plaats van aan te nemen dat regels voor goederen verzonden uit een ander land van toepassing zijn op een pakket uit China."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Volg de internationale en Canadese levering records",
+          "paragraphs": [
+            "Na verzending, open het pakket logistiek record en sla zijn tracking nummer. Het originele nummer van de verkoper is een ander record. Controleer of de gekozen lijn een aparte eindcarrierreferentie geeft nadat het pakket Canada bereikt heeft.",
+            "Als Canada Post de genoemde vervoerder is, gebruik dan zijn officiële tracking service na overdracht. Als een andere vervoerder wordt genoemd, gebruik dan die drager. Een getal dat zelf wordt gecreëerd, betekent niet dat de vervoerder het pakket heeft ontvangen. Voor een geblokkeerde zending, geef ondersteuning de laatste scan, de datum, de route en het pakket referentie."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Een besluit nemen met een korte vergelijkingslijst",
+          "paragraphs": [
+            "Voor een lichte bestelling, vergelijk in aanmerking komende kleine pakket opties met alle kosten inbegrepen. Voor een omvangrijke bestelling, los verpakte afmetingen voordat u zich richt op de geadverteerde tarief. Voor een grote bestelling, vergelijk elk splitplan als meerdere volledige zendingen, inclusief herhaalde minimumkosten."
+          ],
+          "table": {
+            "headers": [
+              "Vóór betaling",
+              "Vastleggen"
+            ],
+            "rows": [
+              [
+                "Adresbereik",
+                "Provincie, postcode en eventuele toeslagbevestiging."
+              ],
+              [
+                "Pakketmetingen",
+                "Werkelijk gewicht, buitenmaat en verpakkingsinstructies."
+              ],
+              [
+                "Routevoorwaarden",
+                "Bedrag, valuta, gewichtsregel en geschatte doorvoer."
+              ],
+              [
+                "Overhandiging van levering",
+                "Genoemde laatste carrier en tracking instructies."
+              ],
+              [
+                "Gegevens importeren",
+                "Ontvangsten, beschrijvingen en toepasselijke kosteninformatie."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Bevestig provincie, postcode en adres in aanmerking komen.",
+        "Houd valuta's expliciet in uw budget.",
+        "Meet omvangrijke goederen na de overeengekomen verpakkingsmethode.",
+        "Controleer de opgegeven eindleveringsdrager.",
+        "Bewaar ontvangstbewijzen en declareer goederen nauwkeurig.",
+        "Sla de laatste offerte en tracking record."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Canada verzendoverzicht",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: verzending schatting inputs",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: importeren per post",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: vaststelling van rechten en belastingen",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Sugargoo schoenmaten: labels, inlegzolen en QC controleren",
+      "description": "Kies een schoenmaat van de verkoper eigen grafiek, vraag handige Sugargoo QC metingen, en vergelijk het ontvangen paar voor verzending.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo heeft niet één universele schoenmaat grafiek voor elke verkoper. Gebruik de grafiek voor de exacte lijst en variant, vergelijk dan het ontvangen pluriform label en metingen in uw magazijn QC record. Alleen al een bekend EU-, UK- of VS-formaat volstaat niet om geschikt te zijn.",
+        "Deze gids geeft u een herhaalbare check voor schoenen gevonden in een spreadsheet. Het scheidt voetlengte, binnenzoollengte en buitenzoollengte zodat u het bewijs kunt vragen dat u eigenlijk nodig heeft voor internationale verzending."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Begin met de exacte verkoper ... grootte grafiek",
+          "paragraphs": [
+            "Open de originele product pagina en sla de maattabel die behoort tot dat model. Controleer of de metingen de voet, de binnenzool of de buitenkant van de schoen beschrijven. Controleer ook of het groottesysteem voor mannen, vrouwen of kinderen is. Een tabel van een ander model kan een valse match creëren, zelfs als de grootte labels er hetzelfde uitzien.",
+            "Als de grafiek onduidelijk is, vraag dan aan de verkoper of agent wat elke kolom betekent voordat u bestelt. Voeg geen standaardvergoeding toe aan elke grafiek: de verkoper kan al een vergoeding in zijn aanbeveling hebben ingebouwd. Uw gekozen pasvorm, sokken en de vorm van de schoen doen er ook toe."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Maak een nuttige vergelijking thuis",
+          "paragraphs": [
+            "Meet beide voeten met dezelfde methode en registreer de langere meting. Voor een insole-vergelijking, gebruik een verwijderbare binnenzool van een paar dat al comfortabel past, als verwijdering veilig is. Noteer waar de liniaal begint en eindigt. Een voetmeting moet worden vergeleken met een voetlengtetabel, terwijl een binnenzoolmeting moet worden vergeleken met een andere binnenzoolmeting.",
+            "Hou de eenheden consistent. Bijvoorbeeld 270 millimeter is 27 centimeter. Die conversie betekent niet dat een 27 cm binnenzool past bij een 27 cm voet. Voetvorm, schoenstructuur en de verkoper meetmethode beïnvloeden nog steeds het besluit."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Vraag om een nauwkeurige magazijnmeting",
+          "paragraphs": [
+            "Als de schoenen arriveren, bekijk dan eerst de bestelling en de zichtbare maatlabels. Als de vereiste meting ontbreekt, vraag dan welke extra foto- of meetdienst beschikbaar is en wat het kost. Identificeer het exacte item, de zijkant en de dimensie die u gecontroleerd wilt hebben.",
+            "Voorbeeld verzoek om aan te passen: fotografeer de maatlabels op beide schoenen. Als de binnenzool zonder schade kan worden verwijderd, meet deze dan van hiel tot teen met een liniaal en laat beide uiteinden duidelijk zien. Bevestig of de meting in centimeter is. Dit is een verzoek template, geen belofte dat elk item kan worden gemeten op die manier."
+          ],
+          "bullets": [
+            "Vraag naar beide schoenen als je vermoedt dat er een niet dezelfde paar.",
+            "Verzoek de liniaal start- en eindpunten in dezelfde foto.",
+            "Vraag het personeel niet om een vaste binnenzool te beschadigen om een meting te verkrijgen."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Gebruik elke foto voor de vraag die het kan beantwoorden",
+          "paragraphs": [
+            "Een label bevestigt welke maat er op de ontvangen schoen gedrukt staat. Het bewijst niet dat de schoen een universele conversiekaart volgt. Een liniaal naast de buitenzool toont buitenlengte, wat niet hetzelfde is als bruikbare binnenruimte. Een full-pair foto helpt controleren of de kleuren en vormen consistent lijken."
+          ],
+          "table": {
+            "headers": [
+              "Bewijs",
+              "Handig voor",
+              "Kan niet alleen vaststellen"
+            ],
+            "rows": [
+              [
+                "Groottelabel",
+                "Past bij de bestelde variant.",
+                "Of het paar past bij je voet."
+              ],
+              [
+                "Binnenzoolmeting",
+                "Een verwijderbare binnenzool vergelijken met een bekend paar.",
+                "Comfort, breedte of het complete interieur."
+              ],
+              [
+                "Buitenzoolmeting",
+                "Controleer de buitenafmetingen van de schoen.",
+                "De ruimte die beschikbaar is voor uw voet."
+              ],
+              [
+                "Close-up QC-foto",
+                "Onderzoek naar een zichtbare markering of mismatch.",
+                "Echtheid of duurzaamheid op lange termijn."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Werk door een mismatch voor het maken van een pakket",
+          "paragraphs": [
+            "Hypothetisch voorbeeld: de uitneembare binnenzool van een comfortabel paar meet 28 cm, terwijl de magazijnfoto 26 cm lijkt te laten zien. Bevestig eerst dat beide metingen dezelfde eindpunten gebruiken en dat de magazijnafbeelding tot uw bestelling behoort. Vraag om een duidelijkere foto als de liniaal of hiel rand is verduisterd.",
+            "Als het verschil wordt bevestigd, vergelijk het met de lijst grootte grafiek en contact ondersteuning over beschikbare opties. Ga er niet van uit dat het label alleen de vraag regelt. Retourneren of ruilen subsidiabiliteit, deadlines en kosten zijn afhankelijk van de bestelling; los het probleem op terwijl het item nog beschikbaar is voor herziening in het magazijn."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Voltooi fit controles voordat verpakking verwijderen",
+          "paragraphs": [
+            "Beslis of de schoenen aanvaardbaar zijn voordat u de doos verwijdert of combineert tot een pakket. Houd de label foto's, metingen, verkoper grafiek en ondersteuning antwoorden samen. Vraag of een verpakking verandering van invloed kan zijn op een retourzending die u nog overweegt.",
+            "Zodra het paar klaar is, beslissen welke bescherming het nodig heeft tijdens het vervoer. Vergelijk verzending met de werkelijke verpakte grootte, vooral bij het houden van meerdere schoenendozen. De goedkoopste verpakking plan is niet handig als het compromissen een functie die u nodig hebt om te behouden."
+          ]
+        }
+      ],
+      "checklist": [
+        "Gebruik de exacte lijst... grootte grafiek en grootte systeem.",
+        "Uitstekende voet-, binnenzool- en buitenmaten.",
+        "Houd centimeters en millimeters consistent.",
+        "Pas beide schoenen en hun labels aan de betaalde bestelling.",
+        "Meetproblemen oplossen voordat het pakket wordt ingediend.",
+        "Bewaar de relevante verpakking totdat de orderbeslissing definitief is."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC foto's en metingen",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: wat de QC-service controleert",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: bestelling en magazijn beoordeling",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

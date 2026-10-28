@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Artikkelit",
     "articleTitle": "Sugargoon osto-oppaat",
-    "articleIntro": "Käytännön oppaita tuotelinkeistä, QC-kuvista, tilauksen vaiheista ja toimitusvalinnoista. Mukana viralliset lähteet ja selkeät seuraavat vaiheet.",
+    "articleIntro": "Käytännöllisiä Sugargooin oppaita tuotelinkkeihin, QC-kuviin, kengänkokoihin ja toimitukseen. Valitse kysymys, johon sinun on vastattava ennen paketin ostamista tai lähettämistä.",
     "faqTitle": "Usein kysyttyä Sugargoosta",
     "faqIntro": "Selkeät vastaukset tilauksesi jokaiseen vaiheeseen, viralliset lähteet alustan säännöille ja avoimesti kerrotut rajoitukset tälle riippumattomalle tuoteluettelolle.",
     "readArticle": "Lue opas",
@@ -34,11 +34,35 @@
     "categoryAccount": "Maksut ja jälkipalvelut",
     "author": "SugargooTabin toimitus",
     "siteEvidence": "Tietoa tästä riippumattomasta tuoteluettelosta",
-    "seoHomeTitle": "Sugargoo Spreadsheet: tuotelinkit, kuvat ja osto-oppaat",
+    "seoHomeTitle": "Sugargooin taulukkolaskenta: Kengät, vaatteet ja tuotelinkit",
     "catalogCtaTitle": "Ota tarkistuslista käyttöön",
     "catalogCtaBody": "Vertaa luettelon tuotelinkkejä ja tarkista sitten täsmällinen ilmoitus sekä oman tilauksesi tiedot ennen ostamista tai lähettämistä.",
     "catalogCtaButton": "Selaa tuotelinkkejä",
-    "categoryCtaButton": "Tutustu tuoteryhmiin"
+    "categoryCtaButton": "Tutustu tuoteryhmiin",
+    "homeSearchIntro": "Etsi kengät, hupparit, pelipaidat ja asusteet. Avaa tuotelinkki, tarkista myyjän vaihtoehdot ja tarkista sitten oma varastosi ennen lähetystä.",
+    "seoHomeDescription": "Selaa Sugargooin tuotelinkkejä kenkiin, huppariin, pelipaitaan ja lisävarusteisiin. Vertaa vertailukuvia ja käytä käytännöllisiä QC-, mitta- ja lähetysoppaita.",
+    "seoCatalogTitle": "Sugargooin taulukkolaskenta: Selaa kenkiä, vaatteita ja lisävarusteita",
+    "seoCatalogDescription": "Etsi Sugargooin tuotelinkkejä, vertaa viitekuvia ja -hintoja ja tarkista alkuperäinen listaus ennen tilaamista. Selaile kenkiä, vaatteita ja asusteita.",
+    "seoCategoryTitle": "Sugargoo {category}: Tuotelinkit ja valokuvat",
+    "seoCategoryDescription": "Selaa {category}-tuotelinkkejä Sugargooille. Vertaile viitekuvia ja listattuja hintoja, vahvista sitten koot, vaihtoehdot ja saatavuus ennen tilaamista.",
+    "catalogGuideNote": "Tuotekuvat ja hinnat ovat referenssit. Tarkista tarkka myyjälista ja oma varastosi ennen lähetystä.",
+    "nextStep": "Valitse seuraava vaihe",
+    "weightToolTitle": "Paketin painolaskuri",
+    "weightToolIntro": "Tarkista todellinen ja tilavuuspaino. Tämä työkalu ei lainaa toimitushintoja; käytä valittua reittien jakaja- ja laskutussääntöä.",
+    "actualWeight": "Pakatun lähetyksen todellinen paino (kg)",
+    "parcelLength": "Ulkopituus (cm)",
+    "parcelWidth": "Ulkoleveys (cm)",
+    "parcelHeight": "Ulkokorkeus (cm)",
+    "weightDivisor": "Reitin tilavuuspainon jakaja",
+    "weightRule": "Lataussääntö",
+    "higherWeight": "Todellisen ja tilavuuden paino suurempi",
+    "actualOnly": "Ainoastaan todellinen paino",
+    "calculateWeight": "Laske paino",
+    "volumetricWeight": "Tilavuuspaino",
+    "billingBase": "Paino ennen pyöristämistä",
+    "weightDisclaimer": "Ainoastaan ohjeellinen painon laskeminen. Reittikierros, minimimaksut, mitat ja palvelumaksut ovat edelleen voimassa. Vahvista nykyinen lainaus Sugargooilla.",
+    "weightError": "Anna positiivinen luku jokaiseen mittauskenttään.",
+    "officialEstimatorGuide": "Avaa virallinen postin estimaattiopas"
   },
   "groups": {
     "basics": "Alkuun pääseminen",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo Spreadsheet -opas: löydä ja tarkista tuotelinkit",
-      "description": "Löydä tuotteita Sugargoo-taulukosta, tarkista ajantasaiset ilmoitukset ja vaihtoehdot sekä erota viitekuvat oman tilauksesi varaston QC-kuvista.",
+      "title": "Sugargoo-taulukon käyttö: etsi, tarkista ja tilaa",
+      "description": "Sugargooin taulukkotaulukosta löydät tuotelinkkejä, tarkistat kokoja ja myyjän vaihtoehtoja, avaat oikean tilaussivun ja arvioit varaston QC:tä ennen lähetystä.",
       "keyword": "sugargoo taulukko",
       "category": "getting-started",
       "intro": [
-        "Sugargoo-taulukosta on hyötyä, kun se auttaa muodostamaan lyhyemmän ja paremmin perustellun ostoehdokkaiden listan. Pitkä sivu tuotekuvia ei kerro, onko tietty koko saatavilla, mitä pakettisi maksaa tai vastaako myyjän nykyinen ilmoitus yhä vanhempaa suositusta. Pidä taulukkoa selvitystyön alkuna ja sido lopullinen ostopäätös täsmälliseen ilmoitukseen.",
-        "Tämä riippumaton luettelo lukee tuotetietonsa ja viitekuvansa cnbuychasta. Tilaaminen ja maksaminen tapahtuvat Sugargoossa. Seuraava menetelmä yhdistää nämä kaksi vaihetta käsittelemättä luettelomerkintää henkilökohtaisena suosituksena, varastosaatavuuden takuuna tai todisteena varastotarkastuksesta. Se toimii myös silloin, kun säilytät ehdokaslistaa yksinkertaisessa muistiinpanosovelluksessa."
+        "Sugargooin laskentataulukko on tuotelinkkien hakemisto. Käytä sitä löytääksesi kohteen, tarkista Sugargooin alkuperäinen listaus ja tarkka versio ennen maksua. Tallennettu linkki ei vahvista nykyistä osaketta, valittua kokoa, lopullista hintaa tai ostajan hyväksyntää.",
+        "Aloita livekuvastosta tai kategoriasta, kuten kengistä, hupparista tai pelipaidoista. Avaa lupaava esine, tarkista sen referenssikuvat ja seuraa saatavilla olevaa ostolinkkiä. Pidä karsintasi riittävän pienenä, jotta voit varmistaa jokaisen kohteen kunnolla."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Näin tarkistat ajantasaisen ilmoituksen ennen ostamista",
+          "id": "spreadsheet-first-action",
+          "title": "Laskentataulukosta löytyy valittu tilaus",
           "paragraphs": [
-            "Avaa luettelon tuote ja seuraa linkkiä alkuperäiseen ilmoitukseen. Vertaa kauppapaikan tuotetunnusta, myyjää ja valittua vaihtoehtoa Sugargoossa näkyvään tuotteeseen. Luettelon sisäinen sivunumero on erillinen tunniste. Tarkista ajantasainen hinta, saatavilla olevat vaihtoehdot ja määrä uudelleen juuri ennen maksamista; tallennettu tuotekortti ei todista tämänhetkistä varastotilannetta.",
-            "Keskeytä tässä vaiheessa, jos alkuperäinen ilmoitus puuttuu, tuote ei lataudu tai vaihtoehto poikkeaa haluamastasi. Palaa taulukkoon ja vertaa toista ehdokasta. Kirjaa, miksi ensimmäinen ei sopinut, jotta et toista samaa tarkistusta myöhemmin. Viitekuvat ovat edelleen tuotteiden löytämisen apuvälineitä, vaikka ne näyttäisivät varastokuvilta."
+            "Etsi tuotetyypistä tai omaperäisestä nimestä ja avaa sen jälkeen tuotesivu. Vertaa listauksen otsikkoa, lähdekoodin tunnistetta, valokuvia ja valittuja vaihtoehtoja. Jos ostosivulla aukeaa eri väri tai koko, valitse haluttu versio uudelleen ja tarkista lopullinen tilaustiiviste. Älä maksa vain siksi, että kuva näyttää tutulta.",
+            "Luettelossa ilmoitettu hinta on viite kyseisen tuotteen osalta. Rakenna erillinen budjetti Kiinan sisäisille toimituksille, valituille palveluille ja kansainväliselle rahtiliikenteelle. Tallenna lähdelinkki valittuun kokoon ja väriin. Kun tuote saapuu varastolle, käytä omaa QC-tallennettasi päättääksesi, onko se valmis toimitettavaksi."
           ],
-          "table": {
-            "headers": [
-              "Tarkistettava asia",
-              "Käytettävä näyttö"
-            ],
-            "rows": [
-              [
-                "Tuotteen tunnistetiedot",
-                "Alkuperäinen kauppapaikan URL ja tuotetunnus"
-              ],
-              [
-                "Ajantasainen saatavuus",
-                "Myyjän nykyinen ilmoitus ja valittu vaihtoehto"
-              ],
-              [
-                "Hintatieto",
-                "Täsmällinen vaihtoehto ja kassalla näkyvä summa"
-              ],
-              [
-                "Tuotteen kunto",
-                "Oman tilauksesi kuvat varastoon saapumisen jälkeen"
-              ]
-            ]
-          }
+          "bullets": [
+            "Etsi: valitse kategoria ja rajaa hakua.",
+            "Tarkista: vastaa alkuperäistä listausta, vaihtoehtoja ja tilaushintaa.",
+            "Tilaus: käytä tukikelpoisten tuotteiden virallista ostovirtaa.",
+            "Arvostelu: tarkasta oma varastosi ennen pakettia."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC-kuvat: tuotteen tarkistus ennen lähettämistä",
-      "description": "Käytä käytännöllistä Sugargoo QC-kuvien tarkistuslistaa kengille, vaatteille ja laukuille. Tarkista merkinnät, mitat, ompeleet ja puuttuvat yksityiskohdat ennen lähetystä.",
+      "title": "Sugargoo QC-kuvien tarkistaminen ennen lähetystä",
+      "description": "Etsi Sugargooin varaston QC-kuvia, tarkista oikea kohde ja koko, pyydä käyttökelpoisia lisämittauksia ja ratkaise ongelmia ennen kansainvälistä lähetystä.",
       "keyword": "sugargoo laaduntarkastuskuvat",
       "category": "quality",
       "intro": [
-        "Varastokuvista on eniten hyötyä, kun sinun on tehtävä tietty päätös: vastaako vastaanotettu tuote tilausta, onko tärkeä yksityiskohta epäselvä vai näkyykö huomiota vaativa vaurio? Kaikkien kuvien katsominen ilman tarkistuslistaa voi silti jättää tärkeimmän kysymyksen avoimeksi. Selkeä tarkistusmenetelmä helpottaa kuvien käyttöä.",
-        "Sugargoo kuvaa tarjoavansa yleensä viisi tavanomaista laaduntarkastuskuvaa, ja tarkastuksen laajuus riippuu tuotteesta ja tilaustyypistä. Kuvien määrä ei takaa sitä, mitä voidaan varmistaa. Tämän sivuston cnbuycha-viitekuvat ovat luettelomateriaalia eivätkä vahvistettua laaduntarkastusta henkilökohtaisesta Sugargoo-tilauksestasi; tarkista oma varastotietueesi ennen kansainvälisen lähetyksen järjestämistä."
+        "Tarkistaaksesi Sugargooin QC-kuvat kirjaudu sisään ja avaa vastaanotettu kohde tilauksessasi tai Packing Centerin levyllä. Katso artikkeliin liitetyt kuvat ennen kuin lisäät ne kansainväliseen pakettiin. SugargooTabin katalogikuvat ovat viitekuvia, eivät oman tilauksen valokuvia.",
+        "Tarkista ensin valittu variantti, etiketti, määrä ja näkyvä tila. Jos sopivuus riippuu mittaustavasta, jota ei näytetä, pyydä kyseistä mittausta ennen kuin hyväksyt lähetyksen. Visual QC ei ole varmennus tai tae istuvuudesta."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "Kenkien, vaatteiden ja laukkujen QC-kuvien tarkistus",
+          "id": "qc-first-check",
+          "title": "Mistä löydät kuvia ja mitä tarkistat ensin",
           "paragraphs": [
-            "Vertaa ensin tilausta, väriä, kokoa ja määrää. Tutki sitten yksityiskohdat, jotka voivat muuttaa päätöstäsi pitää tuote. Tarkistuslista auttaa kuvien käytännön arvioinnissa; se ei takaa, että tavallinen QC sisältää jokaisen kuvakulman tai mittauksen. Pyydä juuri puuttuva näyttö ja tarkista mahdollinen palvelumaksu ennen jatkamista.",
-            "Esimerkiksi vain edestä kuvattu laukku ei osoita hihnan kiinnitystä tai sisäpuolen kuntoa. Pyydä tarvittava kuvakulma, jos yksityiskohta on sinulle tärkeä. Jos tarvitset mitan, määritä mittauksen alku- ja loppupiste ja pyydä näkyvää mittanauhaa. Valokuvat eivät osoita kaikkia toiminnallisia ominaisuuksia eivätkä todista aitoutta."
+            "Aloita tarkasta tilauksesta. Myyjän yhä ostamalla tai toimittamalla esineellä ei välttämättä ole vielä varastokuvia. Kun kohde on saatu, tarkista sen tilaustiedot ja Packing Centerin levy QC-kuvien osalta. Jos levyn mukaan se on valmis, mutta kuvia ei näy, lähetä tilausohje ja kysy, onko tarkastus valmis.",
+            "Avaa koko kuva sen sijaan, että arvioisit pientä peukalonkynttä. Sovita väri- ja kokomerkintä maksulliseen tilaukseesi, tarkista molemmat puolet ja kaikki mukana tulevat lisävarusteet. Tallenna erityinen kysymys mihin tahansa kulmaan, jota et näe. Kengät, sisäpohjan mitta ja kokomerkitty valokuva vastaavat eri kysymyksiin; toinen ei voi korvata toista."
           ],
-          "table": {
-            "headers": [
-              "Tuoteryhmä",
-              "Tarkista oman tilauksesi kuvista",
-              "Pyydä epäselvässä tapauksessa"
-            ],
-            "rows": [
-              [
-                "Kengät",
-                "Pari, kokomerkinnät, pohjat ja näkyvät saumat",
-                "Molemmat kokomerkinnät ja tarvittava pohjan tai sauman kuvakulma"
-              ],
-              [
-                "Vaatteet",
-                "Kokomerkintä, kankaan ulkonäkö ja ompeleet",
-                "Tasossa tehty mittaus, jossa alku- ja loppupiste näkyvät selvästi"
-              ],
-              [
-                "Laukut",
-                "Hihnat, kiinnikkeet, vuori ja tarvikkeet",
-                "Lähikuvat sisäpuolesta ja kiinnityspisteistä"
-              ],
-              [
-                "Kaikki tuotteet",
-                "Oikea vaihtoehto, määrä ja näkyvät vauriot",
-                "Selkeä kuva nimenomaisesta poikkeamasta"
-              ]
-            ]
-          }
+          "bullets": [
+            "Tarkista, että jokainen kuva kuuluu samaan järjestykseen ja versioon.",
+            "Pyydä läheistä kuvaa epäillystä viasta ja tunnista sen sijainti.",
+            "Pidä ratkaisemattomat kohteet poissa paketista, kunnes saat vastauksen."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo-rahtilaskuri: paino, mitat ja kokonaiskustannukset",
-      "description": "Käytä Sugargoo-rahtilaskuria realistisella painolla ja mitoilla. Vertaa soveltuvia kuljetusvaihtoehtoja ja ymmärrä, mikä arviossa jää epävarmaksi.",
+      "title": "Sugargoo-rahtilaskuri: painon ja kulujen arviointi",
+      "description": "Laske pakettien tilavuuspaino, ymmärrä laskutettava paino ja vertaa Sugargooin toimituslainauksia kohteeseen, mittoihin ja tuoteluokkaan.",
       "keyword": "sugargoo toimituslaskuri",
       "category": "shipping",
       "intro": [
-        "Toimitusarviosta tulee hyödyllinen, kun tiedät, mihin se perustuu. Kaksi ihmistä voi syöttää saman tuotepainon ja saada eri tulokset, koska kohteet, tuotekategoriat, paketin mitat tai reitit eroavat. Toisen ostajan toimitussumman kopiointi antaa siksi heikon budjetin omalle tilauksellesi.",
-        "Sugargoon virallisessa laskuriohjeessa käytetään kohdetta, tuotekategoriaa, painoa ja mittoja saatavilla olevien toimitusvaihtoehtojen vertailuun. Käsittele tulosta päivättyyn tilanteeseen perustuvana arviona ja päivitä sitä, kun opit lisää pakatusta lähetyksestä. Tämä opas näyttää, miten rakennat tällaiset vaihtoehdot ja tunnistat epävarmuuden ennen kuin se muodostuu ongelmaksi kassalla."
+        "Käytä Sugargooin virallista postin estimaattoria nykyhintoihin ja reittien saatavuuteen. Anna määränpää, kohdeluokka, pakkauspaino ja mitat. Alla oleva painotyökalu auttaa tarkistamaan matikan; se ei lainaa rahtia eikä liity Sugargoo-tiliisi.",
+        "Vertaa reittejä käyttäen identtisiä pakettipanoksia. Vain tuotteen painoon perustuva lainaus voi jättää väliin kenkälaatikoiden tai suojapakkausten käyttämän tilan. Tarkista jokainen reittien lataussääntö, pyöristys ja minimimaksu ennen maksua."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Tee kaksi arviota ennen tuotteiden ostamista",
+          "id": "shipping-inputs",
+          "title": "Tehty tilavuuspainoesimerkki",
           "paragraphs": [
-            "Laadi ensin vaihtoehto parhaan saatavilla olevan paino- ja mittatiedon perusteella ja sitten varovaisempi vaihtoehto, joka huomioi pakkauksen epävarmuuden. Pidä kohde, sisältö ja muut asetukset samoina. Jos tilaus sopii budjettiin vain kaikkein optimistisimmilla oletuksilla, selvitä epävarmuus ennen tuotteiden maksamista.",
-            "Kirjaa tarjouksen päivämäärä, kuljetusvaihtoehto, yksiköt, arvioidut mitat ja valitut lisäpalvelut. Korvaa oletukset mitatuilla pakettitiedoilla, kun niitä on saatavilla. Käytä Yhdysvaltain kohteeseen erillisen USA-oppaan vertailumenetelmää; useiden varastoitujen tilausten täydet yhdistetyt ja jaetut kustannukset vertailet yhdistämisoppaan avulla."
+            "Valaiseva esimerkki, ei lähetyslainaus: paketti on kooltaan 40 × 30 × 20 cm ja painaa 3 kg. Kun jakaja on 6000, sen tilavuus on 4 kg. Reitti, jossa käytetään suurempaa todellista ja tilavuuspainoa, käynnistyisi 4 kilosta ennen pyöristys- tai minimimaksusääntöjä. Reitti, joka veloittaisi todellisen painon, alkaisi vain 3 kilosta.",
+            "Jos samat tavarat mahtuvat turvallisesti 40 × 30 × 15 cm:n pakkaukseen, laskettu tilavuuspaino muuttuu 3 kg jakajalla. Tässä vain verrataan mittauksia. Se ei todista säästöä: pakkauspalvelut, reittikelpoisuus, painonkorotukset ja nykyinen hinta voivat muuttaa lopullista kokonaissummaa."
+          ],
+          "bullets": [
+            "Käytä ulompia pakkauksia senttimetrin korkeudessa, ei tuotemittoja.",
+            "Muunna grammat kiloiksi ennen alla olevaa työkalua: 3000 g on 3 kg.",
+            "Ota jakaja- ja lataussääntö harkitsemaltasi reitiltä."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo-koepakkaus: paino, mitat ja milloin palvelu auttaa",
-      "description": "Päätä, milloin Sugargoo-koepakkaus on hyödyllinen, määritä pakkausvalinnat ja vertaa mitattua pakettia alkuperäiseen rahtiarvioosi.",
+      "title": "Sugargoo-koepakkaus: miten se toimii ja milloin se kannattaa?",
+      "description": "Ota selvää, mitä Sugargooin harjoituslähetykset tekevät, kun se on maksullista ja kuinka voit käyttää pakattua painoa ja mittoja ennen kuin valitset lähetysreitin.",
       "keyword": "sugargoo koepakkaus",
       "category": "shipping",
       "intro": [
-        "Koepakkauksesta on eniten hyötyä, kun pakattuun lähetykseen liittyvä epävarmuus vaikuttaa vielä tekemättä olevaan päätökseen. Saatat valita reittien välillä, päättää tilaa vievän pakkauksen säilyttämisestä tai tarkistaa, sopiiko suunniteltu yhdistelmä palvelun rajoihin. Tarkemmat mitat voivat auttaa vastaamaan näihin kysymyksiin, mutta ne eivät takaa pienempää toimituslaskua.",
-        "Sugargoo kuvaa koepakkauksen ennen lähetystä tehtäväksi pakettisimulaatioksi, joka tuottaa tarkempaa paino- ja tilavuustietoa. Käsittele sitä mittaus- ja pakkauspäätöksenä ja tarkista ajantasaiset palveluehdot sekä hinta tililtäsi. Käytännön arvo syntyy siitä, että tiedät, mihin aiot tulosta käyttää."
+        "Sugargooin harjoituslähetykset ovat pakkaus- ja mittauspalvelu ennen kansainvälistä lähetystä. Se auttaa sinua tarkistamaan pakettien todellisen painon ja mitat ennen kuin valitset lähetyksen. Kannattaa harkita, milloin laatikot, isot esineet tai reittirajoitus tekevät arviosta epävarman; se ei takaa säästöjä.",
+        "Viimeistele ensin tuote ja QC-tarkistukset. Vahvista tämän jälkeen nykyiset palvelumaksut ja pakkausvaihtoehdot tililläsi. Käytä tulosta vertaillaksesi tukikelpoisia reittejä samaan sisältöön, kohteeseen ja pakkauksiin."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Milloin koepakkausta kannattaa harkita?",
+          "title": "Harjoituslaivojen käyttö",
           "paragraphs": [
-            "Harkitse koepakkausta, jos tuntemattomat pakatun lähetyksen mitat voivat muuttaa kuljetusvalintaa tai budjettia: suuri mutta kevyt tuote, useita myyntipakkauksia tai palvelun rajaa lähestyvä paketti. Kirjaa, minkä epävarmuuden haluat ratkaista, ja tarkista nykyinen palvelumaksu. Jos päätös pysyisi samana kohtuullisten arvioiden välillä, lisämittauksesta voi olla vähemmän hyötyä.",
-            "Vertaa tulosta alkuperäisiin tietoihin: todellinen paino, ulkomitat, säilytetyt pakkaukset ja valitut palvelut. Laske uudelleen kuljetusvaihtoehdon nykyisellä laskutussäännöllä. Pienemmät mitat eivät takaa pienempää loppulaskua, koska vähimmäismaksut, painoportaat ja muut valinnat voivat yhä vaikuttaa."
-          ]
+            "Tunnista Sugargoo-tililläsi varastoesineet, jotka haluat lähettää yhdessä. Avaa saatavilla oleva pakettisimulaatio- tai harjoituspaketti, tarkista sen maksu ja tarkenna, pitäisikö alkuperäiset laatikot ja suojapakkaukset säilyttää. Näytön merkinnät voivat muuttua; pyydä tukea ennen kuin maksat, jos vaihtoehto tai sen soveltamisala on epäselvä.",
+            "Kun tulos on valmis, tallenna paino ja kaikki kolme ulointa ulottuvuutta. Suorita mittaukset uudelleen virallisessa estimoijassa. Vertaa tukikelpoisia reittejä, niiden painoja ja pakkausmaksuja ennen pakettiin lähettämistä. Jos muutat sisältöä tai pakkausta sen jälkeen, aiemmat mittaukset eivät välttämättä enää kuvaa pakettia."
+          ],
+          "table": {
+            "headers": [
+              "Tilanteesi",
+              "Päätös"
+            ],
+            "rows": [
+              [
+                "Useita kenkälaatikoita tai iso takki",
+                "Mittauksia on harkittava ennen reitin valintaa."
+              ],
+              [
+                "Parcel lähellä koko- tai painorajaa",
+                "Tarkista pakkaustulos juuri tuota rajaa vasten."
+              ],
+              [
+                "Tunnettu kompakti paketti; reittivalinta pysyy samana",
+                "Lisäpalvelu voi tuoda vain vähän lisäarvoa."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian- ja Taobao-linkit Sugargoossa: tarkista ja korjaa virheet",
-      "description": "Tarkista Weidian- ja Taobao-tuotelinkit ennen ostamista Sugargoossa. Selvitä puuttuvat ilmoitukset, väärät vaihtoehdot ja tulkintavirheet arvaamatta.",
+      "title": "Sugargoo-linkki ei toimi? Taobao- ja Weidian-ohjeet",
+      "description": "Korjaa yhteiset Sugargooin tuotelinkkiongelmat: epätäydelliset osakelinkit, saatavilla olevat kohteet, väärät vaihtoehdot ja puuttuvat vaihtoehdot Taobaosta tai Weidianista.",
       "keyword": "weidian sugargoohon",
       "category": "getting-started",
       "intro": [
-        "Tuotelinkki yhdistää suosituksen tiettyyn myyjän ilmoitukseen. Se ei yksin vahvista kokoa, väriä, varastosaatavuutta tai toimituksen sisältävää loppuhintaa. Turvallisin tapa käyttää Weidian- tai Taobao-linkkiä Sugargoossa on säilyttää tämä tuotteen identiteetti ja tarkistaa sitten vaihtoehdot virallisella tilaussivulla ennen maksamista.",
-        "Tämä opas selittää, mitä kopioida, miten tunnistaa väärä ilmoitus ja mitä tehdä automaattisen latauksen epäonnistuessa. Se erottaa myös alkuperäisen markkinapaikan tuotetunnuksen tämän luettelon sisäisestä sivutunnisteesta, jotta kätevä ostopainike ei muutu syyksi jättää viimeisiä tarkistuksia väliin."
+        "Jos Taobaon tai Weidianin linkki ei lataudu Sugargooiin, avaa ensin alkuperäinen tuotesivu ja tarkista, että tuote on yhä olemassa. Kopioi sen suoran tuotteen URL ilman ympäröivää jakotekstiä ja yritä sitten virallista tuotehakua uudelleen. Pidä kohteen tunniste koskemattomana.",
+        "Epäonnistunut tuonti voi tarkoittaa puutteellista linkkiä, saatavilla olevia vaihtoehtoja, loppuunmyytyä listausta tai kohdetta, jota agentti ei voi hyväksyä. Manuaalinen tilaus soveltuu vain sellaiseen ostokelpoiseen hankintaan, jonka tiedot voidaan vahvistaa. Se ei ohita rajoituksia."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "Mitä tarkistaa, kun tuotelinkki ei lataudu?",
+          "id": "link-troubleshooting",
+          "title": "Oireet sovitetaan seuraavaan vaiheeseen",
           "paragraphs": [
-            "Avaa ensin alkuperäinen tuotesivu ja varmista, että se edelleen yksilöi tarkoitetun tuotteen. Kaupan etusivu, lyhennetty jakoteksti tai poistettu ilmoitus ei vastaa täydellistä tuoteosoitetta. Vertaa kauppapaikan tuotetunnusta ennen uutta yritystä. Poista asiaan kuulumaton jakoteksti muuttamatta tuotteen tunnistetietoja.",
-            "Jos alkuperäinen tuote on olemassa mutta automaattinen tulkinta epäonnistuu, tarkista viralliset manuaalisen tilauksen mahdollisuudet ja hyväksymisehdot. Säilytä myyjä, täsmällinen vaihtoehto, määrä, tuoteosoite ja hintatiedot yhdessä. Manuaalinen lomake ei poista tuoterajoituksia eikä takaa saatavuutta. Valitse toinen ehdokas, jos ajantasaista ilmoitusta ei voi varmistaa, sen sijaan että arvaat kuvan perusteella."
-          ]
+            "Käytä samaa alkuperäistä listausta markkinoiden ja Sugargooin näyttöjen vertailussa. Samankaltainen tuote ei ole todiste siitä, että tuotu vaihtoehto olisi oikea. Jos tukea tarvitaan, ota mukaan suora URL-osoite, kohteen tunniste, valittu vaihtoehto ja tarkka virheteksti. Poista yksityistilitiedot kuvakaappauksista."
+          ],
+          "table": {
+            "headers": [
+              "Mitä näet",
+              "Mitä tarkistaa"
+            ],
+            "rows": [
+              [
+                "Linkki avaa jakoruudun tai tekstiviestin",
+                "Avaa tuote itse ja kopioi sen suora URL."
+              ],
+              [
+                "Alkuperäinen listaus ei saatavilla",
+                "Kysy myyjältä saatavuudesta; älä käytä vanhaa hintaa uudelleen."
+              ],
+              [
+                "Tuote avautuu, mutta koko tai väri puuttuu",
+                "Vahvista tämä vaihtoehto ennen tilaamista."
+              ],
+              [
+                "Agentti kieltäytyy esineestä",
+                "Kysy kelpoisuudesta, älä peitä kohdetta."
+              ],
+              [
+                "Teoksien listaaminen mutta tuonti epäonnistuu silti",
+                "Kysy tukitulta, onko tuettu manuaalinen tilaus mahdollinen."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Sugargoo-toimitus Yhdysvaltoihin: kustannukset, paino ja toimitus",
-      "description": "Suunnittele Sugargoo-toimitus Yhdysvaltoihin: vertaa paketin painoa, mittoja, kuljetusehtoja ja toimitusvaiheita ennen kansainvälisen rahdin maksamista.",
+      "title": "Sugargoo-toimitus Yhdysvaltoihin: kulut, reitit ja kesto",
+      "description": "Suunnittele Sugargooin toimitus Yhdysvaltoihin täydellisellä kustannuslistalla, johdonmukaisilla pakettituloilla, reittivertailuilla ja seurantavaiheilla ennen lähetystä.",
       "keyword": "sugargoo toimitus Yhdysvaltoihin",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "Sugargoo-toimitus Yhdysvaltoihin on erillinen päätös tuotteiden ostamisesta. Aloita toimitusosoitteesta, lähetettävistä tuotteista sekä arviosta niiden pakatusta painosta ja koosta. Vertaa sitten tililläsi todellisuudessa tarjottuja kuljetusvaihtoehtoja. Toisen henkilön paketin hinta on vain viite: sen kohde, päivämäärä, mitat ja sisältö voivat poiketa omistasi.",
-        "Tämä opas antaa vertailumenetelmän kiinteän hinnan tai toimituslupauksen sijaan. SugargooTab on riippumaton luettelo eikä voi tarjota hintaa, lähettää tai seurata pakettiasi Sugargoon puolesta. Käytä virallista laskuria suunnitteluun ja lopullista pakettinäkymää maksupäätökseen. Säilytä tieto tarjouksen sisällöstä, jotta myöhemmät muutokset ovat ymmärrettäviä."
+        "Sugargooin USA-toimitukseen saat tarjouksen todellisesta tilastasi, tuoteluokasta, pakatusta painosta ja mitoista. Halvin esillä oleva linja on hyödyllinen vain, jos tavarasi ja osoitteesi ovat kelvollisia. Reitin saatavuus, hinnoittelu ja toimitusarviot voivat muuttua.",
+        "Erota tavaran hinta kansainvälisestä pakettibudjetista. Vertaa maksettavaa kokonaissummaa ja toimitusehtoja samaan pakettiin, tarkista lopulliset pakatut mittaukset ennen lähetystä."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Vertaa Yhdysvaltain reittejä sekoittamatta eri pakettia",
+          "paragraphs": [
+            "Luo yksi viitepaketti ennen kuin avaat useita reittituloksia. Kirjaa sen tila- ja postinumero, tavaraluokka, todellinen paino, ulkomitat ja vaadittu suoja. Tallenna lainauspäivä ja valuutta jokaiseen tulokseen. Jos yksi tulos sulkee pois mitat tai käyttää eri kategoriaa, toista se ennen hintojen vertailua.",
+            "Kirjaa kunkin tukikelpoisen reitin osalta maksullinen rahti, painosääntö, mukaan lukien palvelut, arvioitu kauttakulkualue ja lopullinen kuljetusyritys, jos se on ilmoitettu. Lisää vaihtoehtoinen pakkaus tai vakuutus erikseen. Lue nykyiset tuonti- ja reittiehdot sen sijaan, että olettaisit, että reittinimi takaa ei ylimääräisiä maksuja tai tulliselvitystä."
+          ],
+          "bullets": [
+            "Vertaa samaa tavaraa ja pakkaussuunnitelmaa.",
+            "Tarkista, alkaako arvio lähetyksestä vai toisesta virstanpylväästä.",
+            "Pidä tuotekuitit ja tarkat tuotekuvaukset pakettikirjanpidossa."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Erota tuoteostokset USA-paketin budjetista",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Sugargoo-toimitus Britanniaan: kulut ja toimitusaika",
+      "description": "Vertaa Sugargoo UK:n toimituslainauksia, todellista ja tilavuuspainoa, toimituksia ja tuontimaksutietoja ennen pakettien lähettämistä.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Voit arvioida Sugargooin lähetyksen Isoon-Britanniaan valitsemalla varsinaisen kohdealueesi, tavaraluokan, pakatun painon ja mitat virallisessa estimoijassa. Vertaa vain kyseisen yhdistelmän reittejä. Tarkista viimeinen lainaus tililtäsi ennen kuin maksat; toisen ostajan paketti ei ole toimitushintasi.",
+        "Tässä oppaassa käytetään ennemmin käytännön vertailulaskentataulukkoa kuin kiinteitä hintoja. Se auttaa sinua päättämään, tarvitseeko kompakti paketti, iso kenkälaatikkopaketti tai deadline-herkkä tilaus erilaisen laivasuunnitelman."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Valmistele yksi paketti reiluun Iso-Britannia-vertailuun",
+          "paragraphs": [
+            "Aloita tavaroista, jotka olet jo kirjannut varastosta. Kirjoita tuoteluettelo ja pakkaus, jonka aiot pitää. Kauppalaatikoilla varustettujen kenkien lainausta ei voi verrata reilusti lainaukseen, jossa oletetaan, että laatikot poistetaan. Jos mittaukset ovat tarpeeksi epävarmoja muuttamaan päätöstäsi, harkitse ensin pakkausharjoituksia.",
+            "Käytä oikeaa osoitealuetta ja postinumeroa. Isolla-Britannialla ja Pohjois-Irlannilla on erilaiset tuontijärjestelyt, joten vältä aiemmasta arviosta kopiointia. Pyydä alustaa vahvistamaan kohdekattavuus, jos osoitettasi ei tueta valitulla reitillä."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Rakenna reittivertailu, jonka voit käyttää uudelleen",
+          "paragraphs": [
+            "Avaa tukikelpoiset tulokset ja tallenna lainauspäivä, valuutta ja pakatut mittaukset kerran. Tee sitten yksi rivi jokaiselle reitille. Vertaa todellista erääntyvää summaa minkä tahansa sovellettavan kupongin jälkeen, ei yliviivattua mainoshintaa. Minimaalilla kulutuksella varustettu kuponki ei välttämättä koske pienempää pakettia."
+          ],
+          "table": {
+            "headers": [
+              "Tietueet jokaiselle reitille",
+              "Miksi sillä on väliä?"
+            ],
+            "rows": [
+              [
+                "Lataussääntö ja painonnousu",
+                "Samalla mitatulla paketilla voi olla erilainen laskutettu paino."
+              ],
+              [
+                "Rahtipalvelut ja valinnaiset palvelut",
+                "Pakkaus tai vakuutus voi olla erillinen rivi."
+              ],
+              [
+                "Arvioitu kauttakulku ja sen alkupiste",
+                "Myyjän toimitus- ja varastotöitä voi tulla ennen kansainvälistä kauttakulkua."
+              ],
+              [
+                "Iso-Britannian lähetysyhtiö ja osoitekattavuus",
+                "Viimeinen luovutus vaikuttaa siihen, miten seuraat toimitusta."
+              ],
+              [
+                "Tuontimaksuehdot",
+                "Lue, mitä on mukana ja mitä voit vielä maksaa."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Kengät: vertaa suojaa ja pakettikokoa",
+          "paragraphs": [
+            "Oletetaan, että kaksi kenkäparia on läpäissyt kokosi ja kuntosi. Vertaa kahta pakkaussuunnitelmaa: kummankin laatikon säilytystä tai laatikoiden poistoa turvallisissa ja hyväksyttävissä paikoissa. Kysy valmiin paketin ulkomittoja valitun suunnitelman mukaisesti. Älä päättele näitä mittoja lisäämällä kengän pituudet yhteen.",
+            "Jos keräät laatikot tai tarvitset niitä mahdollista palautusta varten, niiden pitäminen voi merkitä enemmän kuin määrän vähentäminen. Jos poistat ne, sovi kenkien suojasta. Laske reitti uudelleen saatujen mittojen mukaan ja laske mukaan pakkauspalvelun kustannukset. Pienemmät pakkaukset eivät ole automaattisesti halvempia tai turvallisempia."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Tarkista tuontimaksut ja pidä tilaus kirjaa",
+          "paragraphs": [
+            "Käytä ulkomailta lähetettyjen tavaroiden osalta alla olevaa GOV.UK:n ohjeistusta. Tuonnin käsittely riippuu määränpäästä, tavaroista ja liiketoimista. Verotukseen liittyvällä muotoilulla markkinoitu reitti ei ole yleinen tae vapautuksesta; lue sen ehdot ja vahvista, mitkä maksut sisältyvät siihen.",
+            "Pidä kuitit, kohdekuvaukset ja pakettikirjan mukana maksettu summa. Ilmoita tavarat tarkasti ja kysy tukea epäselvistä ilmoituskentistä. Tässä oppaassa ei lasketa veroja eikä anneta yleisilmoitussummaa. Jos liikenteenharjoittaja pyytää maksua tai asiakirjoja, tarkista pyyntö liikenteenharjoittajan virallisten verkkosivujen kautta."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Lue seuranta siirtojen sarjana",
+          "paragraphs": [
+            "Erillinen myyjän lähetys, varastokuitti, kansainvälinen lähetys ja Iso-Britannian toimitus. Myyjän seurantanumero kattaa toimituksen varastoon; se ei todista, että kansainvälinen paketti on lähtenyt. Paketin lähettämisen jälkeen tarkista valitun lähetyslinjan numeron logistiikkarekisteristä.",
+            "Kun lopullinen kuljetusalus on tunnistettu, seuraa myös sen virallista seurantasivua. Tallenna viimeinen skannaus, päivämäärä ja kaikki tarvittavat toimet. Viivästykseksi pyydä tukea, mikä vaihe odottaa ja tarvitaanko asiakirjoja tai osoitekorjauksia. Arvioitu toimitusväli ei ole taattu saapumispäivä."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Valitse oikea ratkaisutie",
+          "paragraphs": [
+            "Kun kyseessä on kompakti paketti ilman määräaikaa, vertaa kokonaiskustannuksia tukikelpoisten reittien kesken. Isokokoista pakettia varten kannattaa tutkia painosääntö ja pakata ensin koko. Aikasidonnaista tilausta varten on mahdollista varautua varastoon ja tulliin sekä mainostettuun kauttakulkuarvioon.",
+            "Jos mikään hyväksyttävä reitti ei vastaa tarpeitasi, keskeytä lähetys ja kysy vaihtoehtoja. Pakettien jakaminen luo uuden vertailun kahteen perusmaksuun ja mahdollisesti kahteen palvelumaksuun. Laske molemmat kokonaissummat sen sijaan, että olettaisit, että useampi paketti tulisi halvemmaksi."
+          ]
+        }
+      ],
+      "checklist": [
+        "Käytä oikeaa Britannian aluetta ja postinumeroa.",
+        "Viimeistele QC ennen kuin valitset pakkaussuunnitelman.",
+        "Vertaa reittejä, joiden sisältö ja mitat ovat identtiset.",
+        "Kirjaa lainauspäivä, valuutta ja mukana tulevat palvelut.",
+        "Lue nykyiset tuonti- ja reittiehdot.",
+        "Tallenna sekä kansainväliset että lopulliset jäljitysviitteet."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Britannian merenkulkualan yleiskatsaus",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: laivamaksuarvio",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: ulkomailta lähetetyt tavarat",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: pakettiseuranta",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Sugargoo-toimitus Kanadaan: kulut ja seuranta",
+      "description": "Suunnittele Sugargoo-paketti Kanadaan maakunnastasi, postinumerostasi, pakatusta koosta, reittimaksuista ja lopullisesta rahdinkuljettajan jäljitystiedoista.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargooin toimitus Kanadaan riippuu maakunnastasi, osoitteestasi, tavaroistasi ja pakettien mittauksista. Aloita näiden tarkkojen syötteiden ajankohtaisella lainauksella. Vahvista, mikä lentoyhtiö toimittaa viimeisen vaiheen; älä oleta, että jokainen reitti käyttää Canada Postia.",
+        "Hyödyllisin vertailu sisältää osoitteen kattavuuden, koko maksettavan summan ja sen, miten paketti jäljitetään saapumisen jälkeen. Tässä oppaassa kerrotaan, mitä pitää nauhoittaa ennen maksua ilman, että vanhaa reittihintaa pidetään nykyisenä tarjouksena."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Tarkista ensin maakunta ja postinumeron kattavuus",
+          "paragraphs": [
+            "Käytä toimitusosoitetta, jonka aiot pitää lähetyksen läpi. Kirjoita maakunta ja postinumero tarkasti ja ilmoita kaikki tarvittavat yksikkönumerot. Ennen kuin valitset reitin, tarkista, hyväksyykö se osoitetyypin ja sovelletaanko kauko- vai toimituslisämaksua. Hinta toiselle maakunnalle ei ehkä ole hyödyllinen vertailu.",
+            "Jos aiot käyttää postilokeroa, liikeosoitetta tai syrjäistä sijaintia, kysy siitä tarkemmin. Älä korvaa läheistä kaupunkia vain sillä, että reitti näkyy estimoijassa. Jos kattavuus on epäselvä, ratkaise se ennen kuin tavarat poistuvat varastosta."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Pidä pakettibudjetti erillään tuotteen hinnasta",
+          "paragraphs": [
+            "Rakentaa budjetin, jossa on erilliset tiedot tavaroista, toimituksista Kiinassa, valituista varastopalveluista, kansainvälisestä rahdista ja mahdollisista tuonti- tai käsittelymaksuista. Kirjaa valuutta jokaisesta summasta. Näkyvää Yhdysvaltain dollarin hintaa ja Kanadan dollarin budjettia ei pitäisi lisätä ilman nykyistä muuntamista.",
+            "Rahdin osalta vertaile tämänhetkisiä tukikelpoisia tarjouksia käyttäen samaa todellista painoa, ulkomittoja ja tavaraluokkaa. Tarkista, veloittavatko jokainen rivi todellista painoa, tilavuuspainoa tai muuta ilmoitettua sääntöä. Jos pakkaus ei ole valmis, merkitse mittaukset arvioiksi ja tarkista vertailu ennen lähetystä."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "Suurikokoinen takki tarvitsee sekä koko- että painotarkistuksen",
+          "paragraphs": [
+            "Kuvittele, että lähetät talvitakin yhdessä pienen lisävarusteen kanssa. Takki voi hallita laatikon mittoja silloinkin, kun se ei ole raskain. Kirjaa valmis pakettikoko ja laske tilavuuspaino kunkin reitin käyttämällä jakajalla. Reitti, joka näyttää halvalta kilolta, voi olla vähemmän houkutteleva sen jälkeen, kun sen kokoa koskevaa sääntöä sovelletaan.",
+            "Kysy, sopiiko kangas ja rakenne erilaiseen pakkaustapaan. Puristus ei välttämättä sovi jokaiseen vaatteeseen tai varusteeseen. Sisällytä kaikki pakkauskustannukset ja vertaa suojattua pakettia teoreettisen minimimäärän sijaan. Jos lisälaite on hauras, erillinen suoja voi olla arvokkaampi kuin pienin mahdollinen laatikko."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Lue Kanadan tuontiohjeet ennen lähetystä",
+          "paragraphs": [
+            "Kanadan rajavalvontavirasto kertoo, kuinka tuontipostia tarkistetaan ja miten maksuja tai veroja voidaan soveltaa. Pidä tuotekuitit ja tarkat kuvaukset saatavilla. Älä kohtele vähittäiskauppaa lahjana vain siksi, että paketti on tarkoitettu henkilökohtaiseen käyttöön.",
+            "Tarkista nykyiset reittiehdot tuonnin käsittelyn osalta ja kysy, mitä maksuja voi vielä periä. Postin ja kuriirien käsittely voi olla eri asia. Käytä alla olevia virallisia CBSA-resursseja tilanteeseesi sen sijaan, että oletat, että toisesta maasta lähetettyjä tuotteita koskevat säännöt koskevat Kiinasta tulevaa pakettia."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Seuraa kansainvälisiä ja kanadalaisia toimitustietoja",
+          "paragraphs": [
+            "Avaa lähetyksen jälkeen pakettilogistiikkarekisteri ja tallenna sen seurantanumero. Alkuperäinen myyjän toimitusnumero on eri levy. Tarkista, tarjoaako valittu linja erillisen loppukuljetusreferenssin sen jälkeen, kun paketti saapuu Kanadaan.",
+            "Jos Canada Post on nimetty lentoliikenteen harjoittaja, käytä sen virallista seurantapalvelua luovutuksen jälkeen. Jos toinen liikenteenharjoittaja nimetään, käytä sitä. Lukumäärä, jota luodaan, ei sinällään tarkoita, että liikenteenharjoittaja olisi saanut paketin. Jos lähetys on pysähdyksissä, tukikaappaus, sen päivämäärä, reitti ja pakettiviite."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Tee päätös lyhyellä vertailulistalla",
+          "paragraphs": [
+            "Kevyessä tilauksessa voi vertailla kelvollisia pienparkettioptioita kaikkiin kuluihin. Isoa tilausta varten ratkaise pakatut mitat ennen kuin keskityt mainostettuun hintaan. Suurta tilausta varten vertaa split-suunnitelmaa useisiin täydellisiin lähetyksiin, mukaan lukien toistuvat minimimaksut."
+          ],
+          "table": {
+            "headers": [
+              "Ennen maksua",
+              "Äänitys"
+            ],
+            "rows": [
+              [
+                "Osoitekattavuus",
+                "Maakunta, postinumero ja mahdolliset lisämaksuvahvistukset."
+              ],
+              [
+                "Parcelin mittaukset",
+                "Todellinen paino, ulkokoko ja pakkausohjeet."
+              ],
+              [
+                "Reittiehdot",
+                "Erä, valuutta, painosääntö ja arvioitu kauttakulku."
+              ],
+              [
+                "Toimituksen luovuttaminen",
+                "Nimetty lopulliseksi kantajaksi ja seurantaohjeet."
+              ],
+              [
+                "Tuo tietueita",
+                "Vastaanottoja, kuvauksia ja maksutietoja."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Vahvista maakunta, postinumero ja osoitekelpoisuus.",
+        "Pidä valuutat selkeinä budjetissasi.",
+        "Mittaa irtotavara sovitun pakkausmenetelmän jälkeen.",
+        "Tarkista ilmoitettu lopputoimitustukialus.",
+        "Pidä kuitit ja ilmoita tavarat tarkasti.",
+        "Tallenna viimeinen lainaus ja jäljityslevy."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Kanadan merenkulkualan yleiskatsaus",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: merenkulun estimoija syötteet",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: tuonti postitse",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: tullien ja verojen määrittäminen",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Sugargoo-kenkäkoot: kokomerkinnät, pohjalliset ja QC",
+      "description": "Valitse kenkäkoko myyjän omasta kartasta, pyydä käyttökelpoisia Sugargoo QC -mittauksia ja vertaa saatua paria ennen lähetystä.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargooilla ei ole yhtä yleistä kengänkokotaulukkoa jokaiselle myyjälle. Käytä kaaviota tarkassa listauksessa ja muunnoksessa ja vertaa sen jälkeen saatua paristomerkintää ja mittauksia varastosi QC-levyssä. EU:n, Yhdistyneen kuningaskunnan tai Yhdysvaltojen tuttu kokonumero ei yksin riitä sopivuuden toteamiseen.",
+        "Tämän oppaan avulla voit tarkistaa laskentataulukossa olevat kengät. Se erottaa jalan pituuden, sisäpohjan pituuden ja ulkopohjan pituuden, jotta voit pyytää tarvitsemasi todisteet ennen kansainvälistä lähetystä."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Aloita tarkka myyjän kokokartasta",
+          "paragraphs": [
+            "Avaa alkuperäinen tuotesivu ja tallenna malliin kuuluva kokotaulukko. Tarkista, kuvaavatko sen mittaukset jalkaa, pohjaa vai kengän ulkopintaa. Tarkista myös, onko mitoitusjärjestelmä tarkoitettu miehille, naisille tai lapsille. Toisesta mallista löytyvä pöytä voi luoda väärän vastaavuuden silloinkin, kun kokomerkit näyttävät samalta.",
+            "Jos taulukko on epäselvä, kysy myyjältä tai asiamieheltä, mitä kukin sarake tarkoittaa ennen tilaamista. Älä lisää vakioavustusta jokaiseen taulukkoon: myyjä on jo saattanut lisätä päästöoikeuden suositukseensa. Myös valitsemallasi istuvuudella, sukilla ja kengänmuodolla on merkitystä."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Luo hyödyllinen vertailu kotona",
+          "paragraphs": [
+            "Mittaa molemmat jalat samalla menetelmällä ja tallenna pidempi mitta. Soluttamattomaan vertailuun voit käyttää irrotettavaa pohjaa jo nyt mukavasti sopivasta parista, jos poistaminen on turvallista. Nauhoita, mistä hallitsija aloittaa ja loppuu. Jalkamittaa on verrattava jalkapohjan mittaukseen, kun taas pohjamittaa on verrattava toiseen pohjan mittaukseen.",
+            "Pidä yksiköt yhdenmukaisina. Esimerkiksi 270 millimetriä on 27 senttimetriä. Tämä muuntaminen ei tarkoita, että 27 cm:n pohja mahtuu 27 cm:n jalkaan. Jalkamuoto, kengänrakenne ja myyjän mittausmenetelmä vaikuttavat yhä päätökseen."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Kysy tarkkaa varastomittausta",
+          "paragraphs": [
+            "Kun kengät saapuvat, tarkista ensin tilaus ja näkyvät kokomerkit. Jos vaadittu mittaus puuttuu, kysy, mitä muuta kuva- tai mittauspalvelua on tarjolla ja mitä se maksaa. Tunnista tarkka kohde, sivut ja mitat, jotka haluat tarkistaa.",
+            "Esimerkkipyyntö: Kuvaa molempien kenkien kokomerkit. Jos pohja voidaan poistaa vahingoittumatta, mittaa se kantapäästä varpaaseen viivoittimella ja näytä molemmat päät selvästi. Vahvistakaa, onko mittaus senttimetriä. Tämä on pyyntömalli, ei lupaus siitä, että jokaista erää voidaan mitata sillä tavalla."
+          ],
+          "bullets": [
+            "Kysy molemmat kengät, jos epäilet, että ne eivät sovi yhteen.",
+            "Pyydä hallitsijalta aloitus- ja päätepisteet samaan kuvaan.",
+            "Älä pyydä henkilökuntaa vahingoittamaan kiinteää pohjaa mittauksen tekemiseksi."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Käytä jokaista kuvaa kysymykseen, johon se voi vastata",
+          "paragraphs": [
+            "Etiketissä vahvistetaan, minkä kokoinen kenkä on saatu. Se ei todista, että kenkä seuraisi universaalia muunnoskarttaa. Ulkopohjan vieressä oleva halli näyttää ulkopituutta, joka ei ole sama kuin käyttökelpoinen sisätila. Täysparikuva auttaa tarkistamaan, että värit ja muodot ovat yhdenmukaisia."
+          ],
+          "table": {
+            "headers": [
+              "Todisteet",
+              "Hyödyllistä",
+              "Ei voi määrittää yksin"
+            ],
+            "rows": [
+              [
+                "Kokomerkintä",
+                "Täsmää tilattuun versioon.",
+                "Sopivatko parit jalkaasi?"
+              ],
+              [
+                "Sylinterimittaus",
+                "Verrataan irrotettavaa pohjaa tunnettuun pariin.",
+                "Mukavuus, leveys tai täydellinen sisustus."
+              ],
+              [
+                "Outsole-mittaus",
+                "Tarkistan kengänpohjan ulkomitat.",
+                "Jalkaa varten varattu tila."
+              ],
+              [
+                "Lähikuva QC:stä",
+                "Tutkitaan näkyvää merkkiä tai yhteensopimattomuutta.",
+                "Aitous tai pitkäaikainen kestävyys."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Työskentele epäsuhtaisuuden läpi ennen pakettia",
+          "paragraphs": [
+            "Hypoteettinen esimerkki: mukavasta parista irrotettava pohja on 28 cm, kun taas varastokuva näyttää 26 cm. Vahvista ensin, että molemmissa mittauksissa käytetään samoja päätearvoja ja että varastokuva kuuluu tilaukseesi. Pyydä selkeämpää kuvaa, jos viivoitin tai kantapään reuna on hämärässä.",
+            "Jos ero varmistuu, vertaa sitä listauksen kokotaulukkoon ja ota yhteyttä saatavilla oleviin vaihtoehtoihin. Älä oleta, että etiketti yksin ratkaisee kysymyksen. Palautus- tai vaihtokelpoisuus, määräajat ja kustannukset riippuvat tilauksesta; ratkaise asia, kun tuote on vielä varastossa tarkistettavana."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Viimeistele sopivuustarkistukset ennen pakkausten poistoa",
+          "paragraphs": [
+            "Päätä, ovatko kengät hyväksyttävissä ennen kuin pyydät laatikon poistoa tai yhdistät ne pakettiin. Pidä etiketin kuvat, mittaukset, myyjän kartta ja tukivastaukset yhdessä. Kysy, voiko pakkausmuutos vaikuttaa paluuseen, jota vielä harkitset.",
+            "Kun pari on valmis, päätä, mitä suojaa se tarvitsee kuljetuksen aikana. Vertaa toimitusta varsinaiseen pakattuun kokoon, etenkin kun säilytät useita kenkälaatikoita. Halvin pakkaussuunnitelma ei ole hyödyllinen, jos se vaarantaa ominaisuuden, joka on säilytettävä."
+          ]
+        }
+      ],
+      "checklist": [
+        "Käytä tarkkaa listausta ja kokotaulukkoa.",
+        "Erottava jalka, pohja ja ulkopohjan mittaukset.",
+        "Pidä senttimetrit ja millimetrit tasaisina.",
+        "Maksettuun tilaukseen sopivat sekä kengät että niiden etiketit.",
+        "Ratkaise mittaushuolet ennen pakettien toimittamista.",
+        "Säilytä asiaankuuluvat pakkaukset, kunnes tilauspäätös on lopullinen."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC-kuvat ja -mittaukset",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: QC-palvelun laajuus",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: tilaus- ja varastokatsaus",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

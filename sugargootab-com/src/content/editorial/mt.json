@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Artikli",
     "articleTitle": "Gwidi tax-xiri fuq Sugargoo",
-    "articleIntro": "Gwidi prattiċi għal links tal-prodotti, ritratti QC, stadji tal-ordni u deċiżjonijiet tat-tbaħħir, b’sorsi uffiċjali u passi li jmiss ċari.",
+    "articleIntro": "Gwida prattika tal-Sugargoo għal links tal-prodott, ritratti QC, daqsijiet taż-żraben u tbaħħir. Agħżel il-mistoqsija li għandek bżonn twieġeb qabel tixtri jew tibgħat pakkett.",
     "faqTitle": "Mistoqsijiet frekwenti dwar Sugargoo",
     "faqIntro": "Tweġibiet ċari għal kull stadju tal-ordni tiegħek, b’sorsi uffiċjali għar-regoli tal-pjattaforma u limiti trasparenti għal dan il-katalgu indipendenti.",
     "readArticle": "Aqra l-gwida",
@@ -34,11 +34,35 @@
     "categoryAccount": "Pagamenti u servizz wara l-bejgħ",
     "author": "It-tim editorjali ta’ SugargooTab",
     "siteEvidence": "Dwar dan il-katalgu indipendenti",
-    "seoHomeTitle": "Sugargoo Spreadsheet: links, ritratti u gwidi tax-xiri",
+    "seoHomeTitle": "Sugargoo Spreadsheet: Żraben, Ħwejjeġ & Links tal-Prodott",
     "catalogCtaTitle": "Uża l-lista ta’ kontroll fil-prattika",
     "catalogCtaBody": "Qabbel links tal-prodotti fil-katalgu, imbagħad ivverifika l-listing eżatt u d-dettalji tal-ordni tiegħek qabel tixtri jew tibgħat.",
     "catalogCtaButton": "Fittex links tal-prodotti",
-    "categoryCtaButton": "Esplora l-kategoriji tal-prodotti"
+    "categoryCtaButton": "Esplora l-kategoriji tal-prodotti",
+    "homeSearchIntro": "Sib żraben, hoodies, Jerseys u aċċessorji. Iftaħ il-link tal-prodott, iċċekkja l-għażliet tal-bejjiegħ, imbagħad irrivedi l-maħżen tiegħek QC qabel it-tbaħħir.",
+    "seoHomeDescription": "Browse Sugargoo links prodott għal żraben, hoodies, Jerseys u aċċessorji. Qabbel ritratti ta 'referenza u jużaw QC prattika, sizing u tbaħħir gwidi.",
+    "seoCatalogTitle": "Sugargoo Spreadsheet: Browse Shoes, Ħwejjeġ & Accessories",
+    "seoCatalogDescription": "Fittex links prodott Sugargoo, tqabbel ritratti ta 'referenza u l-prezzijiet, u jiċċekkjaw l-elenkar oriġinali qabel tordna. Żraben, ħwejjeġ u aċċessorji.",
+    "seoCategoryTitle": "Sugargoo {category}: Links tal-Prodott & Ritratti",
+    "seoCategoryDescription": "Ara links ta’ prodotti {category} għal Sugargoo. Qabbel ir-ritratti u l-prezzijiet, imbagħad ikkonferma d-daqsijiet, l-għażliet u d-disponibbiltà qabel tordna.",
+    "catalogGuideNote": "Ir-ritratti u l-prezzijiet tal-prodotti huma referenzi. Iċċekkja l-lista eżatta bejjiegħ u l-maħżen tiegħek QC qabel tbaħħir.",
+    "nextStep": "Agħżel il-pass li jmiss tiegħek",
+    "weightToolTitle": "Kalkolatur tal-piż tal-pakkett",
+    "weightToolIntro": "Iċċekkja l-piż attwali u volumetriku. Din l-għodda ma tikkwotax il-prezzijiet tat-trasport bil-baħar; tuża r-rotta magħżula u tuża r-regola tad-diviżitur u tal-kontijiet.",
+    "actualWeight": "Piż reali tal-pakkett ippakkjat (kg)",
+    "parcelLength": "Tul ta' barra (ċm)",
+    "parcelWidth": "Wisa' ta' barra (ċm)",
+    "parcelHeight": "Għoli ta' barra (cm)",
+    "weightDivisor": "Diviżur tal-piż volumetriku tar-rotta",
+    "weightRule": "Regola tal-iċċarġjar",
+    "higherWeight": "L-ogħla piż attwali u volumetriku",
+    "actualOnly": "Piż attwali biss",
+    "calculateWeight": "Ikkalkula l-piż",
+    "volumetricWeight": "Piż volumetriku",
+    "billingBase": "Piż qabel l-arrotondament",
+    "weightDisclaimer": "Kalkolu tal-piż illustrattiv biss. Għadhom japplikaw it-tqarrib tar-rotot, l-imposti minimi, il-limiti tad-dimensjonijiet u t-tariffi tas-servizzi. Ikkonferma l-kwotazzjoni attwali b'Sugargoo.",
+    "weightError": "Daħħal numru pożittiv f'kull qasam tal-kejl.",
+    "officialEstimatorGuide": "Iftaħ il-gwida tal-istimatur uffiċjali tat-tbaħħir"
   },
   "groups": {
     "basics": "Kif tibda",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Gwida għal Sugargoo Spreadsheet: sib u vverifika links tal-prodotti",
-      "description": "Sib prodotti f’katalgu Sugargoo, ivverifika listings u varjanti attwali, u ddistingwi stampi ta’ referenza mir-ritratti QC tal-ordni tiegħek fil-maħżen.",
+      "title": "Kif tuża tabella Sugargoo: fittex, iċċekkja u ordna",
+      "description": "Uża spreadsheet Sugargoo biex issib links tal-prodott, iċċekkja daqsijiet u għażliet bejjiegħ, tiftaħ il-paġna ordni korretta, u review maħżen QC qabel tbaħħir.",
       "keyword": "spreadsheet ta’ Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Spreadsheet ta’ Sugargoo huwa utli meta jgħinek tagħmel lista iqsar ta’ għażliet ibbażata fuq informazzjoni aħjar. Paġna twila ta’ ritratti tal-prodotti ma tgħidlekx jekk daqs partikolari huwiex disponibbli, kemm se jiswa l-pakkett tiegħek jew jekk l-offerta attwali tal-bejjiegħ għadhiex taqbel ma’ rakkomandazzjoni antika. Qis l-ispreadsheet bħala l-bidu tar-riċerka u żomm id-deċiżjoni finali tax-xiri marbuta mal-offerta eżatta.",
-        "Dan il-katalgu indipendenti jaqra l-informazzjoni tal-prodotti u l-immaġnijiet ta’ referenza minn cnbuycha. L-ordni u l-pagament isiru fuq Sugargoo. Il-metodu li ġej jgħaqqad dawn iż-żewġ stadji mingħajr ma jqis entrata fil-katalgu bħala rakkomandazzjoni personali, garanzija tal-istokk jew prova ta’ spezzjoni fil-maħżen. Jaħdem ukoll jekk iżżomm il-lista ta’ għażliet tiegħek f’app sempliċi tan-noti."
+        "A spreadsheet Sugargoo huwa direttorju ta 'links tal-prodott. Użaha biex issib oġġett, imbagħad iċċekkja l-elenkar oriġinali u l-varjant eżatt fuq Sugargoo qabel ma tħallas. Rabta ffrankata ma tikkonfermax l-istokk kurrenti, id-daqs magħżul, il-prezz finali jew l-aċċettazzjoni mill-aġent tax-xiri.",
+        "Ibda bil-katalogu ħaj jew kategorija bħal żraben, hoodies jew Jerseys. Iftaħ oġġett promettenti, tirrevedi ritratti ta 'referenza tiegħu, u jsegwu l-link xiri disponibbli. Żomm il-lista qasira tiegħek żgħira biżżejjed biex tivverifika kull oġġett kif suppost."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Kif tivverifika listing attwali qabel tixtri",
+          "id": "spreadsheet-first-action",
+          "title": "Minn spreadsheet issib għal ordni ċċekkjata",
           "paragraphs": [
-            "Iftaħ il-prodott fil-katalgu, imbagħad segwi l-link għal-listing oriġinali tiegħu. Qabbel l-ID tal-prodott fuq il-pjattaforma, il-bejjiegħ u l-varjant magħżul mal-oġġett muri fuq Sugargoo. In-numru intern tal-paġna tal-katalgu huwa identifikatur separat. Erġa’ ċċekkja l-prezz attwali, l-għażliet disponibbli u l-kwantità eżatt qabel tħallas; karta salvata ma tikkonfermax l-istokk attwali.",
-            "Jekk il-listing oriġinali jkun nieqes, il-prodott ma jitgħabbiex jew il-varjant ikun differenti, ieqaf f’dak il-pass. Erġa’ lura għall-katalgu u qabbel għażla oħra. Irreġistra għaliex l-ewwel waħda ma rnexxietx biex aktar tard ma tirrepetix l-istess kontroll. Stampi ta’ referenza jibqgħu evidenza għall-iskoperta, anki meta jixbhu ritratti tal-maħżen."
+            "Fittex it-tip ta' prodott jew isem distintiv, imbagħad iftaħ il-paġna tal-oġġett. Qabbel it-titolu elenkar, identifikatur oġġett sors, ritratti u għażliet magħżula. Jekk il-paġna tax-xiri tiftaħ kulur jew daqs differenti, erġa' agħżel il-varjant maħsub u spezzjona s-sommarju tal-ordni finali. Tħallasx sempliċement għax ix - xbieha tidher familjari.",
+            "Il-prezz muri f'katalogu huwa referenza għall-oġġett. Jibnu baġit separat għall-kunsinna ġewwa ċ-Ċina, kwalunkwe servizzi magħżula u merkanzija internazzjonali. Ħlief il-link sors mad-daqs magħżul tiegħek u l-kulur. Ladarba l-oġġett jasal fil-maħżen, uża r-rekord tal-QC tiegħek biex tiddeċiedi jekk huwiex lest għall-vapur."
           ],
-          "table": {
-            "headers": [
-              "Kontroll",
-              "Evidenza li tuża"
-            ],
-            "rows": [
-              [
-                "Identità tal-prodott",
-                "URL oriġinali tal-pjattaforma u ID tal-prodott"
-              ],
-              [
-                "Disponibbiltà attwali",
-                "Il-listing attwali tal-bejjiegħ u l-għażla magħżula"
-              ],
-              [
-                "Prezz",
-                "Il-varjant eżatt u l-ammont waqt il-ħlas"
-              ],
-              [
-                "Kundizzjoni",
-                "Ritratti tal-ordni tiegħek wara l-wasla fil-maħżen"
-              ]
-            ]
-          }
+          "bullets": [
+            "Sib: jagħżlu kategorija u dejqa-tfittxija.",
+            "Iċċekkja: jaqblu mal-elenkar oriġinali, għażliet u l-prezz ordni kurrenti.",
+            "Ordni: uża l-fluss tax-xiri uffiċjali għal oġġett eliġibbli.",
+            "Reviżjoni: spezzjona l-maħżen tiegħek QC qabel ma tagħmel pakkett."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Ritratti QC ta’ Sugargoo: kontrolli qabel it-tbaħħir",
-      "description": "Uża lista prattika għall-kontroll ta’ ritratti QC ta’ żraben, ħwejjeġ u basktijiet fuq Sugargoo. Iċċekkja tikketti, qisien, ħjatat u dettalji neqsin qabel tibgħat.",
+      "title": "Kif tiċċekkja r-ritratti QC ta’ Sugargoo qabel it-tbaħħir",
+      "description": "Sib Sugargoo maħżen QC ritratti, iċċekkja l-oġġett korrett u d-daqs, jitolbu kejl addizzjonali utli, u jsolvu problemi qabel tbaħħir internazzjonali.",
       "keyword": "ritratti QC Sugargoo",
       "category": "quality",
       "intro": [
-        "Ir-ritratti tal-maħżen huma l-aktar utli meta jkollok deċiżjoni speċifika x’tieħu: l-oġġett riċevut jaqbel mal-ordni, hemm dettall importanti mhux ċar, jew hemm ħsara viżibbli li teħtieġ attenzjoni? Li tħares lejn kull stampa mingħajr lista ta’ kontroll xorta jista’ jħalli l-aktar mistoqsija importanti mingħajr tweġiba. Metodu ċar ta’ reviżjoni jagħmel ir-ritratti aktar faċli biex jintużaw.",
-        "Sugargoo tiddeskrivi li tipikament tipprovdi ħames ritratti QC standard, filwaqt li l-ambitu tal-ispezzjoni jiddependi fuq l-oġġett u t-tip ta’ ordni. In-numru ta’ ritratti mhuwiex garanzija ta’ dak li jista’ jiġi vverifikat. L-istampi ta’ referenza ta’ cnbuycha f’dan is-sit huma materjal tal-katalgu, mhux QC ivverifikat tal-ordni personali tiegħek fuq Sugargoo; irrevedi r-rekord tal-maħżen tiegħek stess qabel tirranġa t-tbaħħir internazzjonali."
+        "Biex tiċċekkja Sugargoo QC ritratti, jiffirmaw u tiftaħ l-oġġett riċevut fl-ordni tiegħek jew Packing Ċentru rekord. Irrevedi l-istampi mehmuża ma' dak l-oġġett qabel ma żżidu ma' pakkett internazzjonali. Ritratti katalista fuq SugargooTab huma stampi ta 'referenza, mhux ritratti tal-ordni tiegħek stess.",
+        "Iċċekkja l-varjant, it-tikketta, il-kwantità u l-kundizzjoni viżibbli magħżula l-ewwel. Jekk idoneu jiddependi fuq kejl li ma jintweriex, itlob dak il-kejl speċifiku qabel ma tapprova l-ġarr bil-baħar. QC viżwali mhijiex awtentikazzjoni jew garanzija ta' idoneità."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "Kontrolli tar-ritratti QC għal żraben, ħwejjeġ u basktijiet",
+          "id": "qc-first-check",
+          "title": "Fejn issib ritratti u x'għandek tiċċekkja l-ewwel",
           "paragraphs": [
-            "Ibda billi tqabbel l-ordni, il-kulur, id-daqs u l-kwantità. Imbagħad eżamina d-dettalji li jistgħu jbiddlu d-deċiżjoni tiegħek li żżomm l-oġġett. Il-lista li ġejja hija għajnuna prattika għar-reviżjoni tar-ritratti, mhux garanzija li QC ordinarju jinkludi kull angolu jew kejl. Itlob l-evidenza speċifika nieqsa u ċċekkja kwalunkwe tariffa tas-servizz qabel tkompli.",
-            "Pereżempju, ritratt ta’ basket minn quddiem biss ma jurix kif iċ-ċinga hija mwaħħla jew il-kundizzjoni ta’ ġewwa. Itlob l-angolu rilevanti jekk dak id-dettall huwa importanti għalik. Jekk hemm bżonn kejl, speċifika minn fejn jibda u fejn jispiċċa u itlob li t-tejp tal-kejl jidher. Ir-ritratti ma jistgħux jikkonfermaw kull proprjetà funzjonali u ma jippruvawx l-awtentiċità."
+            "Ibda bir-referenza tal-ordni eżatta. Oġġett li jkun għadu qed jinxtara jew jiġi kkonsenjat mill-bejjiegħ jista' jkun li ma jkollux ritratti ta' maħżen. Meta l-oġġett ikun ġie riċevut, jispezzjona d-dettalji ordni tagħha u r-rekord Ċentru Ippakkjar għall-immaġini QC. Jekk ir-rekord jgħid li huwa lest iżda l-ebda ritratti jidhru, jibgħat appoġġ għar-referenza ordni u staqsi jekk l-ispezzjoni hija kompluta.",
+            "Iftaħ l - istampa kollha minflok tiġġudika s - sabaʼ l - kbir. Match-kulur u d-daqs tikketta għall-ordni mħallsa tiegħek, imbagħad spezzjona ż-żewġ naħat u kwalunkwe aċċessorji inklużi. Ħlief mistoqsija speċifika għal kwalunkwe angolu li ma tistax tara. Għaż-żraben, kejl insole u ritratt daqs-tikketta twieġeb mistoqsijiet differenti; wieħed ma jistax jissostitwixxi l-oħra."
           ],
-          "table": {
-            "headers": [
-              "Prodott",
-              "Iċċekkja fir-ritratti tal-ordni tiegħek",
-              "Jekk mhux ċar, itlob"
-            ],
-            "rows": [
-              [
-                "Żraben",
-                "Il-par, it-tikketti tad-daqs, il-qigħan u l-ħjatat viżibbli",
-                "Iż-żewġ tikketti tad-daqs u l-angolu rilevanti tal-qiegħ jew tal-ħjata"
-              ],
-              [
-                "Ħwejjeġ",
-                "It-tikketta tad-daqs, id-dehra tad-drapp u l-ħjata",
-                "Kejl ċatt b’punti ċari tal-bidu u tat-tmiem"
-              ],
-              [
-                "Basktijiet",
-                "Ċineg, qfieli, inforra u aċċessorji",
-                "Ritratti mill-qrib ta’ ġewwa u tal-punti tat-twaħħil"
-              ],
-              [
-                "Kull oġġett",
-                "Varjant korrett, kwantità u ħsara viżibbli",
-                "Stampa ċara tad-diskrepanza speċifika"
-              ]
-            ]
-          }
+          "bullets": [
+            "Iċċekkja li kull ritratt jappartjeni għall-istess ordni u l-varjant.",
+            "Titlob ħarsa mill-qrib ta' difett suspettat, billi tidentifika l-post fejn tinsab.",
+            "Żomm l-oġġetti mhux solvuti barra mill-pakkett sakemm ikollok tweġiba."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Kalkolatur tat-tbaħħir Sugargoo: piż, daqs u spiża totali",
-      "description": "Uża l-kalkolatur tat-tbaħħir ta’ Sugargoo b’piż u dimensjonijiet realistiċi. Qabbel rotot eliġibbli u ifhem x’jibqa’ inċert fi stima.",
+      "title": "Kalkolatur tat-tbaħħir Sugargoo: piż u spejjeż",
+      "description": "Ikkalkula piż volumetriku pakkett, jifhmu piż kontabbli, u tqabbel kwotazzjonijiet Sugargoo tbaħħir bl-użu destinazzjoni tiegħek, dimensjonijiet u kategorija oġġett.",
       "keyword": "kalkolatur tat-tbaħħir Sugargoo",
       "category": "shipping",
       "intro": [
-        "Stima tat-tbaħħir issir utli meta tkun taf x’ġie inkluż fiha. Żewġ persuni jistgħu jdaħħlu l-istess piż tal-oġġetti u jirċievu riżultati differenti għax id-destinazzjonijiet, il-kategoriji tal-prodotti, id-dimensjonijiet tal-pakketti jew ir-rotot tagħhom ikunu differenti. Għalhekk, li tikkopja t-total tat-tbaħħir ta’ xi ħadd ieħor jagħtik baġit dgħajjef għall-ordni tiegħek stess.",
-        "Il-gwida uffiċjali ta’ Sugargoo għall-kalkolatur tuża d-destinazzjoni, il-kategorija tal-oġġett, il-piż u d-dimensjonijiet biex tqabbel l-għażliet tat-tbaħħir disponibbli. Qis ir-riżultat bħala xenarju b’data, imbagħad aġġornah hekk kif titgħallem aktar dwar il-pakkett ippakkjat. Din il-gwida turi kif tibni dawk ix-xenarji u tidentifika l-inċertezza qabel issir problema waqt il-ħlas."
+        "Uża l-Sugargoos estimatur uffiċjali tat-tbaħħir għall-prezzijiet attwali u d-disponibbiltà tar-rotot. Daħħal id-destinazzjoni, il-kategorija tal-oġġett, il-piż ippakkjat u d-dimensjonijiet. L-għodda tal-piż ta' hawn taħt tgħinek tiċċekkja l-matematika; ma tikkwotax merkanzija jew tqabbad mal-kont Sugargoo tiegħek.",
+        "Qabbel ir-rotot bl-użu ta' inputs identiċi tal-pakketti. Kwota bbażata biss fuq il-piż tal-oġġett tista' titlef l-ispazju użat mill-kaxxi taż-żraben jew mill-imballaġġ protettiv. Iċċekkja kull rotta billi tuża r-regola tal-iċċarġjar, l-arrotondament u l-imposta minima qabel ma tħallas."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Agħmel żewġ stimi qabel timpenja ruħek għax-xiri",
+          "id": "shipping-inputs",
+          "title": "Eżempju ta' piż volumetriku maħdum",
           "paragraphs": [
-            "Oħloq xenarju inizjali bl-aħjar piż u dimensjonijiet disponibbli, imbagħad xenarju prudenti li jippermetti inċertezza fl-ippakkjar. Żomm id-destinazzjoni, il-kontenut u s-settings l-oħra l-istess. Jekk l-ordni tidħol fil-baġit biss taħt l-aktar suppożizzjonijiet ottimistiċi, solvi l-inċertezza qabel tħallas għall-oġġetti.",
-            "Irreġistra d-data tal-kwotazzjoni, ir-rotta, l-unitajiet, id-dimensjonijiet stmati u l-ekstras magħżula. Ibdel is-suppożizzjonijiet b’informazzjoni mkejla tal-pakkett meta tkun disponibbli. Għal destinazzjoni fl-Istati Uniti, uża l-gwida separata tal-Istati Uniti għall-proċess ta’ tqabbil; għal diversi ordnijiet maħżuna, qabbel l-ispejjeż sħaħ ta’ pakketti magħquda u separati bil-gwida tal-konsolidazzjoni."
+            "Eżempju illustrattiv, mhux kwotazzjoni tat-trasport bil-baħar: pakkett ta' 40 × 30 × 20 cm u jiżen 3 kg. B'diviżitur ta' 6000, il-piż volumetriku tiegħu huwa ta' 4 kg. Rotta li tuża l-akbar piż attwali u volumetriku tibda minn 4 kg qabel ir-regoli tagħha ta' tqarrib jew ta' ċarġ minimu. Rotta li tiċċarġja l-piż attwali biss tibda minn 3 kg.",
+            "Jekk l-istess oġġetti jistgħu jkunu tajbin b'mod sikur f'pakkett ta' 40 × 30 × 15 cm, il-piż volumetriku kkalkulat isir 3 kg b'dak id-diviżitur. Dan iqabbel biss il-kejl. Ma jirriżultax f'iffrankar: is-servizzi tal-ippakkjar, l-eliġibbiltà tar-rotta, iż-żidiet fil-piż u t-tariffa attwali jistgħu jbiddlu t-total finali."
+          ],
+          "bullets": [
+            "Uża d-dimensjonijiet ta' barra ppakkjati f'ċentimetri, mhux id-dimensjonijiet tal-prodott.",
+            "Ikkonverti grammi għal kilogrammi qabel ma tuża l-għodda ta' hawn taħt: 3000 g huma daqs 3 kg.",
+            "Ħu d-diviżitur u r-regola tal-iċċarġjar mir-rotta li qed tikkunsidra."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Prova tal-ippakkjar Sugargoo: piż, daqs u meta tużaha",
-      "description": "Iddeċiedi meta prova tal-ippakkjar ta’ Sugargoo hija utli, speċifika l-għażliet tal-ippakkjar u qabbel il-pakkett imkejjel mal-istima oriġinali tat-trasport.",
+      "title": "Ippakkjar ta’ prova Sugargoo: kif jaħdem u meta jkun utli",
+      "description": "Tgħallem dak Sugargoo tbaħħir rehearsal ma, meta huwa jiswew il-miżata, u kif tuża piż ippakkjat u dimensjonijiet qabel tagħżel rotta tbaħħir.",
       "keyword": "prova tat-tbaħħir Sugargoo",
       "category": "shipping",
       "intro": [
-        "Il-prova tal-ippakkjar qabel it-tbaħħir hija l-aktar utli meta l-inċertezza dwar il-pakkett ippakkjat taffettwa deċiżjoni li għad trid tieħu. Tista’ tkun qed tagħżel bejn rotot, tiddeċiedi jekk iżżommx imballaġġ voluminuż jew tiċċekkja jekk taħlita ppjanata taqbilx mal-limiti ta’ servizz. Kejl aħjar jista’ jgħin iwieġeb dawk il-mistoqsijiet, iżda ma jiggarantixxix kont tat-tbaħħir aktar baxx.",
-        "Sugargoo tiddeskrivi rehearsal bħala simulazzjoni tal-pakkett qabel id-dispaċċ li tipprovdi informazzjoni aktar preċiża dwar il-piż u l-volum qabel it-tbaħħir. Qisha bħala deċiżjoni dwar il-kejl u l-ippakkjar, bil-kundizzjonijiet u l-ispiża attwali tas-servizz iċċekkjati fil-kont tiegħek. Il-valur prattiku jiġi minn li tkun taf x’biħsiebek tagħmel bir-riżultat."
+        "It-tbaħħir Sugargoo rehearsal huwa servizz ta' ippakkjar u kejl qabel id-dispaċċ internazzjonali. Dan jgħinek tiċċekkja l-pakkett jgħajjat piż attwali u dimensjonijiet qabel ma tagħżel tbaħħir. Ta' min jikkunsidra meta kaxxi, oġġetti goffi jew limitu ta' rotta jagħmlu l-istima tiegħek inċerta; din ma tiggarantixxix tfaddil.",
+        "L-ewwel finitura oġġett tiegħek u QC kontrolli. Imbagħad tikkonferma l-miżata tas-servizz kurrenti u l-għażliet ta 'ippakkjar fil-kont tiegħek. Uża r-riżultat biex tqabbel ir-rotot eliġibbli mal-istess kontenut, destinazzjoni u imballaġġ."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Meta ta’ min tikkunsidra prova tal-ippakkjar?",
+          "title": "Kif għandek tuża tbaħħir rehersal",
           "paragraphs": [
-            "Ikkunsidra prova meta dimensjonijiet ippakkjati mhux magħrufa jistgħu jbiddlu r-rotta jew il-baġit: oġġett voluminuż u ħafif, diversi kaxxi tal-bejgħ, jew pakkett qrib limitu tar-rotta. Ikteb l-inċertezza li trid issolvi u ċċekkja t-tariffa attwali tas-servizz. Jekk id-deċiżjoni tiegħek tkun l-istess tul firxa ta’ stimi raġonevoli, il-kejl addizzjonali jista’ jkollu inqas valur.",
-            "Qabbel ir-riżultat mal-inputs oriġinali: piż reali, dimensjonijiet esterni, ippakkjar miżmum u servizzi magħżula. Erġa’ kkalkula skont ir-regola attwali tal-kontijiet tar-rotta. Kejl iżgħar ma jiggarantixxix kont finali aktar baxx għax tariffi minimi, żidiet skont il-piż u għażliet oħra jistgħu jibqgħu rilevanti."
-          ]
+            "Fil-kont Sugargoo tiegħek, identifika l-oġġetti maħżen inti tixtieq li vapur flimkien. Iftaħ is-simulazzjoni tal-pakkett ta' qabel it-trażbord jew is-servizz ta' rehearsal disponibbli, iċċekkja t-tariffa tiegħu, u speċifika jekk il-kaxxi oriġinali u l-imballaġġ protettiv għandhomx jibqgħu. It-tikketti tal-iskrin jistgħu jinbidlu; staqsi l-appoġġ qabel ma tħallas jekk l-għażla jew l-ambitu tagħha mhumiex ċari.",
+            "Meta r-riżultat ikun lest, niżżel il-piż ippakkjat u t-tliet dimensjonijiet kollha ta' barra. Erġa' daħħal dan il-kejl fl-istimatur uffiċjali. Qabbel ir-rotot eliġibbli, iż-żidiet fil-piż tagħhom u kwalunkwe ħlas għall-ippakkjar qabel ma tissottometti l-pakkett. Jekk tibdel il-kontenut jew l-imballaġġ wara, il-kejl preċedenti jista' ma jibqax jiddeskrivi l-pakkett."
+          ],
+          "table": {
+            "headers": [
+              "Is-sitwazzjoni tiegħek",
+              "Deċiżjoni"
+            ],
+            "rows": [
+              [
+                "Diversi kaxxi taż-żraben jew pil goff",
+                "Ikkunsidra l - kejl qabel ma tagħżel rotta."
+              ],
+              [
+                "Parċmina qrib id-daqs jew il-limitu tal-piż",
+                "Iċċekkja r-riżultat ippakkjat ma' dak il-limitu eżatt."
+              ],
+              [
+                "Il-pakkett kumpatt magħruf; l-għażla tar-rotta tibqa' l-istess",
+                "Is-servizz addizzjonali jista' jżid ftit valur."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Links Weidian u Taobao fuq Sugargoo: ivverifika u sewwi żbalji",
-      "description": "Iċċekkja links ta’ prodotti Weidian u Taobao qabel tixtri fuq Sugargoo. Solvi listings neqsin, varjanti żbaljati u fallimenti fit-tagħbija mingħajr ma taqta’ bl-addoċċ.",
+      "title": "Il-link Sugargoo ma jaħdimx? Soluzzjonijiet Taobao u Weidian",
+      "description": "Waħħal problemi komuni Sugargoo prodott-link: konnessjonijiet ta 'ishma mhux kompluti, oġġetti disponibbli, varjanti żbaljati u l-għażliet nieqsa minn Taobao jew Weidian.",
       "keyword": "Weidian għal Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Link ta’ prodott jgħaqqad rakkomandazzjoni ma’ offerta speċifika ta’ bejjiegħ. Waħdu ma jikkonfermax id-daqs, il-kulur, l-istokk jew l-ispiża finali bil-kunsinna. L-aktar mod sigur kif tuża link Weidian jew Taobao fuq Sugargoo huwa li żżomm dik l-identità, imbagħad tivverifika l-għażliet fuq l-iskrin uffiċjali tal-ordni qabel tħallas.",
-        "Din il-gwida tispjega x’għandek tikkopja, kif tagħraf offerta li ma taqbilx u x’tagħmel meta t-tagħbija awtomatika tfalli. Tiddistingwi wkoll l-ID tal-prodott fis-suq oriġinali mill-identifikatur intern tal-paġna f’dan il-katalgu, sabiex buttuna konvenjenti tax-xiri ma ssirx raġuni biex taqbeż l-aħħar kontrolli."
+        "Jekk link Taobao jew Weidian mhux se tagħbija fil-Sugargoo, l-ewwel tiftaħ il-paġna tal-prodott oriġinali u jiċċekkjaw li l-oġġett għadu jeżisti. Ikkopja l-prodott dirett tiegħu URL, mingħajr test dwar is-sehem tal-madwar, imbagħad erġa' pprova t-tfittxija uffiċjali tal-prodott. Żomm l-identifikatur tal-oġġett intatt.",
+        "Importazzjoni falluta tista' tfisser rabta mhux kompluta, għażliet mhux disponibbli, lista mibjugħa jew oġġett li l-aġent ma jistax jaċċetta. Ordni manwali hija xierqa biss għal xiri eliġibbli li d-dettalji tiegħu jistgħu jiġu kkonfermati. Ma jevitax ir-restrizzjonijiet."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "X’għandek tiċċekkja meta link ta’ prodott ma jitgħabbiex",
+          "id": "link-troubleshooting",
+          "title": "Match-sintomu għall-pass li jmiss",
           "paragraphs": [
-            "L-ewwel iftaħ il-paġna oriġinali tal-prodott u kkonferma li għadha tidentifika l-oġġett mixtieq. Il-paġna ewlenija ta’ ħanut, test imqassar għall-qsim jew listing imneħħi mhumiex ekwivalenti għal URL sħiħ ta’ prodott. Qabbel l-ID tal-prodott fuq il-pjattaforma qabel terġa’ tipprova. Neħħi test mhux relatat għall-qsim minflok tibdel l-identità tal-oġġett.",
-            "Jekk l-oġġett oriġinali jeżisti iżda t-tagħbija awtomatika tfalli, iċċekkja l-għażliet uffiċjali ta’ ordni manwali u l-kundizzjonijiet ta’ aċċettazzjoni. Żomm flimkien il-bejjiegħ, il-varjant eżatt, il-kwantità, l-URL tal-prodott u l-informazzjoni tal-prezz. Formola manwali ma twarrabx restrizzjonijiet tal-prodotti u ma tiggarantixxix disponibbiltà. Jekk il-listing attwali ma jistax jiġi vverifikat, agħżel kandidat ieħor minflok taqta’ mir-ritratt tiegħu."
-          ]
+            "Uża l-istess elenkar oriġinali meta tqabbel is-suq u l-iskrins Sugargoo. Oġġett imsemmi b'mod simili mhuwiex evidenza li l-għażla importata hija korretta. Jekk ikun meħtieġ appoġġ, inkludi l-URL dirett, l-identifikatur tal-oġġett, il-varjant magħżul u t-test eżatt tal-iżball; neħħi d-dettalji tal-kont privat mill-screenshots."
+          ],
+          "table": {
+            "headers": [
+              "Dak li tara",
+              "X'għandek tiċċekkja"
+            ],
+            "rows": [
+              [
+                "Il-link tiftaħ skrin jew messaġġ ta' qsim",
+                "Iftaħ il-prodott innifsu u kkopja l-URL dirett tiegħu."
+              ],
+              [
+                "L-elenkar oriġinali mhuwiex disponibbli",
+                "Staqsi lill-bejjiegħ dwar id-disponibbiltà; terġax tuża prezz antik."
+              ],
+              [
+                "L-oġġett jinfetaħ iżda d-daqs jew il-kulur huwa nieqes",
+                "Ikkonferma li l-għażla speċifika qabel ma tordna."
+              ],
+              [
+                "Aġent jirrifjuta l-oġġett",
+                "Staqsi dwar l-eliġibbiltà; taħbix l-oġġett."
+              ],
+              [
+                "L-elenkar tax-xogħlijiet iżda l-importazzjoni xorta waħda tfalli",
+                "Staqsi l-appoġġ dwar jekk ordni manwali appoġġata hijiex possibbli."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Tbaħħir Sugargoo lejn l-Istati Uniti: spejjeż, piż u kunsinna",
-      "description": "Ippjana t-tbaħħir Sugargoo lejn l-Istati Uniti: qabbel piż, dimensjonijiet, kundizzjonijiet tar-rotta u stadji tal-kunsinna qabel tħallas it-trasport internazzjonali.",
+      "title": "Tbaħħir Sugargoo lejn l-Istati Uniti: spejjeż u żmien",
+      "description": "Ippjana t-trasport bil-baħar ta' Sugargoo lejn l-Istati Uniti b'lista sħiħa tal-ispejjeż, inputs konsistenti tal-pakketti, paraguni tar-rotot u passi ta' traċċar qabel ma jintbagħtu.",
       "keyword": "tbaħħir sugargoo lejn l-istati uniti",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "It-tbaħħir ta’ Sugargoo lejn l-Istati Uniti huwa deċiżjoni separata mix-xiri tal-oġġetti. Ibda bl-indirizz tal-kunsinna, il-prodotti li beħsiebek tibgħat u stima tal-piż u d-daqs tagħhom meta ppakkjati. Imbagħad qabbel ir-rotot li huma tassew offruti fil-kont tiegħek. Prezz ta’ pakkett ta’ ħaddieħor huwa biss referenza: id-destinazzjoni, id-data, id-dimensjonijiet u l-kontenut tiegħu jistgħu jkunu differenti minn tiegħek.",
-        "Din il-gwida tagħtik metodu ta’ tqabbil aktar milli prezz fiss jew wegħda ta’ kunsinna. SugargooTab huwa katalgu indipendenti u ma jistax jagħti kwotazzjoni, jibgħat jew isegwi l-pakkett tiegħek f’isem Sugargoo. Uża l-istimatur uffiċjali għall-ippjanar u l-iskrin finali tal-pakkett għad-deċiżjoni li tħallas. Żomm rekord ta’ x’tinkludi l-kwotazzjoni biex bidliet aktar tard ikunu jinftiehmu."
+        "Għal Sugargoo tbaħħir lejn l-Istati Uniti, jiksbu kwotazzjoni għall-istat attwali tiegħek, kategorija oġġett, piż ippakkjat u dimensjonijiet. L-irħas linja murija hija utli biss jekk l-oġġetti u l-indirizz tiegħek huma eliġibbli. Id-disponibbiltà tar-rotot, l-ipprezzar u l-istimi tal-konsenja jistgħu jinbidlu.",
+        "Issepara l-prezz tal-merkanzija mill-baġit internazzjonali tal-pakketti. Qabbel l-ammont totali pagabbli u l-kundizzjonijiet tal-kunsinna bl-użu tal-istess pakkett, imbagħad iċċekkja l-kejl finali ppakkjat qabel id-dispaċċ."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Qabbel ir-rotot tal-Istati Uniti mingħajr ma tħallat pakketti differenti",
+          "paragraphs": [
+            "Oħloq pakkett ta' referenza wieħed qabel ma tiftaħ diversi riżultati tar-rotot. Irreġistra l-istat u l-kodiċi postali tiegħu, il-kategorija tal-merkanzija, il-piż attwali, id-dimensjonijiet ta' barra u l-protezzjoni meħtieġa. Ħlief id-data tal-kwotazzjoni u l-munita ma' kull riżultat. Jekk riżultat wieħed jeskludi d-dimensjonijiet jew juża kategorija differenti, erġa' ġibha qabel ma tqabbel il-prezzijiet.",
+            "Għal kull rotta eliġibbli, irreġistra l-merkanzija pagabbli, ir-regola tal-piż, inklużi s-servizzi, il-medda ta' tranżitu stmata u t-trasportatur tal-konsenja finali jekk dan ikun iddikjarat. Żid l-ippakkjar jew l-assigurazzjoni mhux obbligatorja separatament. Aqra l-kundizzjonijiet attwali tal-importazzjoni u tar-rotta minflok tassumi li isem tar-rotta ma jiggarantixxi l-ebda ħlas żejjed jew awtorizzazzjoni doganali."
+          ],
+          "bullets": [
+            "Qabbel l-istess merkanzija u pjan ta' ippakkjar.",
+            "Ivverifika jekk l-istima tibdax mad-dispaċċ jew xi pass ieħor.",
+            "Żomm l-irċevuti tal-prodott u d-deskrizzjonijiet preċiżi tal-oġġetti mar-reġistru tal-pakketti."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Issepara l-ispiża tal-prodotti mill-baġit tal-pakkett lejn l-Istati Uniti",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Tbaħħir Sugargoo lejn ir-Renju Unit: spejjeż u kunsinna",
+      "description": "Qabbel il-kwotazzjonijiet tat-trasport bil-baħar ta' Sugargoo UK, il-piż attwali u volumetriku, l-għoti ta' informazzjoni dwar il-kunsinna u l-importazzjonijiet qabel ma tissottometti pakkett.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Biex tagħmel stima tat-trasport bil-baħar Sugargoo lejn ir-Renju Unit, agħżel ir-reġjun tad-destinazzjoni attwali tiegħek, il-kategorija tal-merkanzija, il-piż ippakkjat u d-dimensjonijiet fl-istimatur uffiċjali. Qabbel biss ir-rotot disponibbli għal dik il-kombinazzjoni. Iċċekkja l-kwotazzjoni finali fil-kont tiegħek qabel il-ħlas; prezz minn xerrej ieħor jittrasmetti pakkett mhuwiex ir-rata tat-tbaħħir tiegħek.",
+        "Din il-gwida tuża worksheet paragun prattiku aktar milli prezzijiet fissi. Tgħinek tiddeċiedi jekk pakkett kumpatt, pakkett goff b'kaxxa taż-żraben jew ordni sensittiva għall-iskadenza teħtieġ pjan ta' tbaħħir differenti."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Ipprepara pakkett wieħed għal tqabbil ġust tar-Renju Unit",
+          "paragraphs": [
+            "Ibda' ma' oġġetti li diġà vverifikajt fil-maħżen. Ikteb il-lista tal-oġġetti u l-imballaġġ li bi ħsiebek iżżomm. Kwota għaż-żraben b'kaxxi bl-imnut ma tistax titqabbel b'mod ġust ma' kwotazzjoni li tassumi li l-kaxxi se jitneħħew. Jekk il-kejl ma jkunx ċert biżżejjed biex tibdel id-deċiżjoni tiegħek, l-ewwel ikkunsidra li l-ippakkjar isir mill-ġdid.",
+            "Uża r-reġjun tal-indirizz u l-kodiċi postali korretti. Il-Gran Brittanja u l-Irlanda ta' Fuq għandhom arranġamenti differenti ta' importazzjoni, u għalhekk jevitaw li jikkopjaw post minn stima preċedenti. Staqsi lill-pjattaforma biex tikkonferma l-kopertura tad-destinazzjoni jekk l-indirizz tiegħek ma jkunx appoġġjat fir-rotta magħżula."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Jibnu rotta paragun inti tista 'tuża mill-ġdid",
+          "paragraphs": [
+            "Iftaħ ir-riżultati eliġibbli u rreġistra d-data tal-kwotazzjoni, il-munita u l-kejl ippakkjat darba. Imbagħad agħmel ringiela waħda għal kull rotta. Qabbel l-ammont attwali dovut wara kwalunkwe kupun applikabbli, mhux prezz promozzjonali inkroċjat. Kupun b'infiq minimu ma jistax japplika għal pakkett iżgħar."
+          ],
+          "table": {
+            "headers": [
+              "Rekord għal kull rotta",
+              "Għala hu importanti"
+            ],
+            "rows": [
+              [
+                "Ir-regola tal-iċċarġjar u ż-żieda fil-piż",
+                "L-istess pakkett imkejjel jista' jkollu piż bi ħlas differenti."
+              ],
+              [
+                "Merkanzija u servizzi fakultattivi",
+                "L-ippakkjar jew l-assigurazzjoni jistgħu jkunu oġġetti tal-linja separati."
+              ],
+              [
+                "It-tranżitu stmat u l-punt tal-bidu tiegħu",
+                "Il-kunsinna tal-bejjiegħ u x-xogħol ta' maħżen jistgħu jiġu qabel it-tranżitu internazzjonali."
+              ],
+              [
+                "Trasportatur tal-konsenja tar-Renju Unit u kopertura tal-indirizz",
+                "Il-handover finali taffettwa kif inti track twassil."
+              ],
+              [
+                "It-termini tat-tariffa fuq l-importazzjoni",
+                "Aqra x'inhu inkluż u x'għadek trid tħallas."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Shootboxes: qabbel il-protezzjoni u d-daqs tal-pakkett",
+          "paragraphs": [
+            "Ejja ngħidu li żewġ pari żraben għaddew mill - kontrolli tad - daqs u l - kundizzjoni tiegħek. Qabbel żewġ pjanijiet ta' ippakkjar: żomm iż-żewġ kaxxi, jew neħħi l-kaxxi fejn ikunu sikuri u aċċettabbli għalik. Itlob għad-dimensjonijiet ta' barra tal-pakkett lest skont il-pjan magħżul. Tinferix dawk id-dimensjonijiet billi żżid it-tul taż-żarbun flimkien.",
+            "Jekk tiġbor il-kaxxi jew ikollok bżonnhom għal ritorn possibbli, iż-żamma tagħhom tista' tkun importanti aktar minn tnaqqis fil-volum. Jekk tneħħihom, aqbel dwar il-protezzjoni għaż-żraben. Jikkalkula mill-ġdid ir-rotta bl-użu tad-dimensjonijiet li jirriżultaw u jinkludi l-ispiża tas-servizz tal-ippakkjar. Ippakkjar iżgħar mhux awtomatikament irħas jew aktar sikur."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Iċċekkja t-tariffi tal-importazzjoni u żomm ir-rekord tal-ordni",
+          "paragraphs": [
+            "Uża l-gwida attwali GOV.UK marbuta hawn taħt għal merkanzija mibgħuta minn barra l-pajjiż. It-trattament tal-importazzjoni jiddependi fuq id-destinazzjoni, il-merkanzija u t-tranżazzjoni. Rotta kkummerċjalizzata bi kliem relatat mat-taxxa mhijiex garanzija ta' eżenzjoni ġenerali; aqra t-termini tagħha u jikkonferma liema imposti huma inklużi.",
+            "Żomm l-irċevuti, id-deskrizzjonijiet tal-oġġetti u l-ammont imħallas mar-reġistru tal-pakketti. Iddikjara l-merkanzija b'mod preċiż u staqsi l-appoġġ tagħha dwar oqsma ta' dikjarazzjoni mhux ċari. Din il-gwida ma tikkalkulax it-taxxa jew tipprovdi ammont ta' dikjarazzjoni universali. Jekk it-trasportatur jitlob ħlas jew dokumenti, ivverifika t-talba permezz tat-trasportatur permezz ta' websajt uffiċjali."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Aqra t-traċċar bħala sekwenza ta' handovers",
+          "paragraphs": [
+            "Il-konsenja separata tal-bejjiegħ, il-wasla ta' maħżen, il-konsenja internazzjonali u r-Renju Unit. Numru ta' traċċar tal-bejjiegħ ikopri l-kunsinna lill-maħżen; ma jagħtix prova li l-pakkett internazzjonali jkun telaq. Wara d-dispaċċ tal-pakketti, iċċekkja r-rekord tal-loġistika għan-numru assoċjat mal-linja tat-tbaħħir magħżula.",
+            "Meta jiġi identifikat trasportatur finali tal-kunsinna, segwi wkoll il-paġna uffiċjali tiegħu ta' traċċar. Ħlief l-aħħar skan, data u kwalunkwe azzjoni meħtieġa. Għal dewmien, staqsi l-appoġġ liema stadju qed jistenna u jekk humiex meħtieġa dokumenti jew korrezzjoni tal-indirizz. Firxa ta' konsenja stmata mhijiex data tal-wasla garantita."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Agħżel it-triq għaddeċiżjoni li fil-fatt qed tiffaċċja",
+          "paragraphs": [
+            "Għal pakkett kumpatt mingħajr skadenza, qabbel l-ispiża totali fost ir-rotot eliġibbli. Għal pakkett goff, investiga r-regola tal-piż u d-daqs ippakkjat l-ewwel. Għal ordni sensittiva għall-ħin, ippermetti l-preparazzjoni u d-dwana tal-maħżen kif ukoll l-istima ta' tranżitu rreklamata.",
+            "Jekk l-ebda rotta eliġibbli ma tissodisfa l-ħtiġijiet tiegħek, ieqaf mill-konsenja u itlob għal għażliet. Il-qsim ta' pakkett joħloq paragun ġdid ma' żewġ imposti bażi u possibbilment żewġ tariffi tas-servizz. Ikkalkula kemm it-totali sħaħ minflok tassumi li aktar pakketti se jkunu irħas."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uża r-reġjun tar-Renju Unit reali tiegħek u l-kodiċi postali.",
+        "Ieqaf QC qabel ma tagħżel il-pjan ta' ippakkjar.",
+        "Qabbel rotot b'kontenut u kejl identiċi.",
+        "Irreġistra d-data tal-kwotazzjoni, il-munita u s-servizzi inklużi.",
+        "Aqra t-termini attwali tal-importazzjoni u tar-rotot.",
+        "Ħlief kemm referenzi ta' traċċar internazzjonali kif ukoll dawk ta' traċċar ta' kunsinna finali."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Ħarsa ġenerali lejn it-tbaħħir tar-Renju Unit",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: stima tat-tariffa tat-trasport marittimu",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: merkanzija mibgħuta minn barra l-pajjiż",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: traċċar tal-pakketti",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Tbaħħir Sugargoo lejn il-Kanada: spejjeż u traċċar",
+      "description": "Ippjana pakkett Sugargoo lejn il-Kanada bl-użu provinċja tiegħek, kodiċi postali, daqs ippakkjat, ħlasijiet tar-rotot u l-informazzjoni finali traċċar trasportatur.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo tbaħħir lejn il-Kanada jiddependi fuq il-provinċja, l-indirizz tiegħek, oġġetti u pakketti ppakkjati kejl. Ibda bi kwotazzjoni attwali għal dawk l-inputs eżatti. Il-konferma ta' liema trasportatur se jwassal l-aħħar stadju; tassumi li kull rotta tuża Canada Post.",
+        "Il-paragun l-aktar utli jinkludi l-kopertura tal-indirizzi, l-ammont sħiħ pagabbli u kif il-pakkett se jiġi ttraċċat wara l-wasla. Din il-gwida tispjega x'għandu jiġi rreġistrat qabel ma jsir il-ħlas, mingħajr ma jiġi ttrattat prezz tar-rotta l-antika bħala offerta attwali."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Verifika provinċja u l-kopertura kodiċi postali l-ewwel",
+          "paragraphs": [
+            "Uża l-indirizz tal-kunsinna li bi ħsiebek iżżomm mill-konsenja. Daħħal il-provinċja u l-kodiċi postali b'mod preċiż u inkludi kwalunkwe numru tal-unità meħtieġ. Qabel ma tagħżel rotta, iċċekkja jekk taċċettax it-tip ta' indirizz tiegħek u jekk tapplikax imposta fuq iż-żona remota jew ħlas addizzjonali għall-kunsinna. Prezz għal provinċja oħra ma jistax ikun paragun utli.",
+            "Jekk qed tippjana li tuża kaxxa postali, indirizz tan-negozju jew post remot, staqsi speċifikament dwar dak l-indirizz. Tbiddilx belt fil - viċin sempliċement biex tara rotta fl - istimatur. Jekk il-kopertura ma tkunx ċara, irriżolviha qabel ma l-merkanzija titlaq mill-maħżen."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Żomm il-baġit tal-pakketti separat mill-prezz tal-prodott",
+          "paragraphs": [
+            "Il-bini ta' baġit b'entrati separati għall-prodotti, il-kunsinna fiċ-Ċina, is-servizzi ta' maħżen magħżula, it-trasport internazzjonali tal-merkanzija u l-ispejjeż potenzjali tal-importazzjoni jew l-immaniġġjar. Irreġistra l-munita għal kull ammont. Prezz muri US-sollar u baġit Canadian-sollar ma għandhomx jiżdiedu mingħajr konverżjoni attwali.",
+            "Għall-merkanzija, qabbel il-kwotazzjonijiet eliġibbli attwali bl-użu tal-istess piż attwali, dimensjonijiet esterni u kategorija ta' oġġetti. Iċċekkja jekk kull linja titlobx piż attwali, piż volumetriku jew regola oħra ddikjarata. Jekk l-ippakkjar ma jkunx tlesta, immarka l-kejl bħala stimi u rrevedi t-tqabbil qabel id-dispaċċ."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "Kowt kbir jeħtieġ verifika tad-daqs kif ukoll verifika tal-piż",
+          "paragraphs": [
+            "Immaġina li tibgħat kowt tax - xitwa flimkien maʼ aċċessorju żgħir. Il-pil jista' jiddomina d-dimensjonijiet tal-kaxxa anki meta ma jkunx l-aktar oġġett tqil. Irreġistra d-daqs tal-pakkett lest u kkalkula l-piż volumetriku bid-diviżitur użat minn kull rotta. Rotta li tidher irħisa għal kull kilogramm tista' tkun inqas attraenti wara li tiġi applikata r-regola tad-daqs tagħha.",
+            "Staqsi jekk metodu ta' ippakkjar differenti huwiex adattat għad-drapp u l-kostruzzjoni. Il-kompressjoni ma tistax tkun adattata għal kull libsa jew aċċessorju. Inkludi kwalunkwe spiża tal-ippakkjar, u qabbel il-pakkett protett minflok volum minimu teoretiku. Jekk l-aċċessorju huwa fraġli, protezzjoni separata tista' tkun ta' valur akbar mill-iżgħar kaxxa possibbli."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Aqra l-gwida Kanadiża dwar l-importazzjoni qabel id-dispaċċ",
+          "paragraphs": [
+            "L-Aġenzija tas-Servizzi tal-Fruntiera tal-Kanada tispjega kif il-posta importata tiġi riveduta u kif jistgħu japplikaw id-dazji jew it-taxxi. Żomm l-irċevuti tal-prodott u d-deskrizzjonijiet preċiżi disponibbli. Tittrattax xiri bl-imnut bħala rigal sempliċement minħabba li l-pakkett huwa għall-użu personali.",
+            "Ivverifika t-termini attwali tar-rotta għal kwalunkwe trattament inkluż tal-importazzjoni u ssaqsi liema imposti xorta jistgħu jinġabru. Il-ġestjoni postali u tal-kurriera tista' tvarja. Uża r-riżorsi uffiċjali tas-CBSA hawn taħt għas-sitwazzjoni tiegħek minflok tassumi li r-regoli għall-merkanzija mibgħuta minn pajjiż ieħor japplikaw għal pakkett miċ-Ċina."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Segwi r-rekords internazzjonali u Kanadiżi tal-konsenja",
+          "paragraphs": [
+            "Wara d-dispaċċ, iftaħ ir-rekord tal-loġistika tal-pakketti u iffranka n-numru ta' traċċar tiegħu. In-numru tal-kunsinna tal-bejjiegħ oriġinali huwa rekord differenti. Ivverifika jekk il-linja magħżula tipprovdix referenza separata tat-trasportatur finali wara li l-pakkett jasal il-Kanada.",
+            "Jekk Canadian Post huwa t-trasportatur imsemmi, uża s-servizz uffiċjali tagħha ta 'traċċar wara handover. Jekk jissemma' trasportatur ieħor, minflok uża dak it-trasportatur. Numru li qed jinħoloq waħdu ma jfissirx li t-trasportatur irċieva l-pakkett. Għal konsenja mwaqqfa, agħti appoġġ lill-aħħar skannjar, id-data tiegħu, ir-rotta u r-referenza tal-pakkett."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Tieħu deċiżjoni b'dokument ta' tqabbil qasir",
+          "paragraphs": [
+            "Għal ordni ħafifa, qabbel l-għażliet eliġibbli ta' bejgħ żgħir mal-imposti kollha inklużi. Għal ordni goff, isolvu dimensjonijiet ppakkjati qabel ma tiffoka fuq ir-rata reklamata. Għal ordni kbira, qabbel kwalunkwe pjan maqsum bħala diversi vjeġġi kompluti, inklużi ħlasijiet minimi ripetuti."
+          ],
+          "table": {
+            "headers": [
+              "Qabel il-ħlas",
+              "Rekord"
+            ],
+            "rows": [
+              [
+                "Kopertura tal-indirizz",
+                "Il-Provinċja, il-kodiċi postali u kwalunkwe konferma ta' ħlas żejjed."
+              ],
+              [
+                "Il-kejl tal-pelvi",
+                "Il-piż attwali, id-daqs ta' barra u l-istruzzjonijiet tal-ippakkjar."
+              ],
+              [
+                "Termini tar-rotot",
+                "L-ammont dovut, il-munita, ir-regola tal-piż u t-tranżitu stmat."
+              ],
+              [
+                "Qsim tal-konsenja",
+                "Isem it-trasportatur finali u l-istruzzjonijiet ta' traċċar."
+              ],
+              [
+                "Rekords tal-importazzjoni",
+                "Irċevuti, deskrizzjonijiet u informazzjoni applikabbli dwar l-imposti."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Ikkonferma l-provinċja, il-kodiċi postali u l-eliġibbiltà tal-indirizz.",
+        "Żomm il-muniti espliċiti fil-baġit tiegħek.",
+        "Kejjel il-merkanzija goffa wara l-metodu ta' ippakkjar miftiehem.",
+        "Iċċekkja t-trasportatur tat-trasport finali ddikjarat.",
+        "Żomm id-dħul u tiddikjara l-merkanzija b'mod preċiż.",
+        "Ħlief il-kwotazzjoni finali u t-traċċar rekord."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Kanada tbaħħir ħarsa ġenerali",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: inputs stimaturi tat-trasport marittimu",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: importazzjoni bil-posta",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: determinazzjoni tad-dazji u t-taxxi",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Qisien taż-żraben Sugargoo: tikketti, suletti u QC",
+      "description": "Agħżel daqs taż-żarbun mill-bejjiegħa stess chart, titlob kejl utli Sugargoo QC, u tqabbel il-par riċevut qabel it-tbaħħir.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Il-Sugargoo m'għandhiex ċart universali waħda tad-daqs taż-żarbun għal kull bejjiegħ. Uża l-grafika għall-elenkar eżatt u l-varjant, imbagħad qabbel it-tikketta par riċevuti u l-kejl fil-maħżen tiegħek QC rekord. Numru tad-daqs familjari tal-UE, ir-Renju Unit jew l-Istati Uniti waħdu mhuwiex biżżejjed biex jistabbilixxi l-adegwatezza.",
+        "Din il-gwida tagħtik kontroll ripetibbli għaż-żraben misjuba fi spreadsheet. Dan jissepara t-tul tas-sieq, it-tul tas-sieq u t-tul tas-sieq ta' barra sabiex tkun tista' titlob l-evidenza li fil-fatt għandek bżonn qabel it-tbaħħir internazzjonali."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Ibda bil-grafika tad-daqs tal-bejjiegħ eżatt",
+          "paragraphs": [
+            "Iftaħ il-paġna oriġinali tal-prodott u ħlief il-grafika daqs li jappartjenu għal dak il-mudell. Iċċekkja jekk il-kejl tiegħu jiddeskrivix is-sieq, in-naħa ta' ġewwa jew iż-żarbun fuq barra. Ukoll, iċċekkja jekk is-sistema tad-daqs hix għall-irġiel, nisa jew tfal. A tabella minn mudell ieħor jista 'joħloq logħba falza anki meta l-tikketti daqs tfittex l-istess.",
+            "Jekk iċ-ċart ma tkunx ċara, staqsi lill-bejjiegħ jew lill-aġent xi tfisser kull kolonna qabel ma tordna. Iżżidx allowance standard ma' kull chart: il-bejjiegħ jista' jkun diġà bena allowance fir-rakkomandazzjoni tiegħu. Inti magħżula tajbin, kalzetti u l-forma tal-żarbun kwistjoni wkoll."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Oħloq tqabbil utli fid - dar",
+          "paragraphs": [
+            "Kejjel iż-żewġ saqajn billi tuża l-istess metodu u rreġistra l-kejl itwal. Għal paragun ta' bejn ir-ras u l-għonq, uża iżolat li jista' jitneħħa minn par li jkun diġà jaqbel sew, jekk it-tneħħija tkun sikura. Ikteb fejn jibda u jispiċċa l - ħakkiem. Il-kejl tas-sieq għandu jitqabbel ma' ċart tat-tul tas-sieq, filwaqt li l-kejl tas-sieq ta' quddiem għandu jitqabbel ma' kejl ieħor tas-sieq ta' quddiem.",
+            "Żomm l-unitajiet konsistenti. Pereżempju, 270 millimetru huma 27 ċentimetru. Dik il-konverżjoni ma tfissirx li l-insole 27 ċm toqgħod f'sieq ta' 27 ċm. Il-forma tas-sieq, l-istruttura taż-żarbun u l-metodu ta' kejl tal-bejjiegħ għadhom jaffettwaw id-deċiżjoni."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Itlob għal kejl preċiż tal-maħżen",
+          "paragraphs": [
+            "Meta jaslu ż-żraben, irrivedi l-ordni u t-tikketti daqs viżibbli l-ewwel. Jekk il-kejl meħtieġ ikun nieqes, staqsi liema servizz addizzjonali tar-ritratti jew tal-kejl huwa disponibbli u x'se jiswa. Identifika l-oġġett eżatt, il-ġenb u d-dimensjoni li trid tiċċekkja.",
+            "Eżempju ta’ talba li tista’ tadatta: Jekk jogħġbok ħu ritratt tat-tikketti tad-daqs fuq iż-żewġ żraben. Jekk is-suletta tista’ titneħħa mingħajr ħsara, kejjelha mill-għarqub sas-swaba’ b’riga u uri ż-żewġt itruf b’mod ċar. Ikkonferma jekk il-kejl huwiex f’ċentimetri. Dan huwa mudell ta’ talba; mhux kull prodott jista’ jitkejjel b’dan il-mod."
+          ],
+          "bullets": [
+            "Staqsi għaż-żewġ żraben jekk tissuspetta par diskrepanza.",
+            "Itlob il-ħakkiem jibda u l-punti tat-tmiem fl-istess ritratt.",
+            "Titlobx lill-persunal biex jagħmel ħsara lil pul fiss biex jikseb kejl."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Uża kull ritratt għall-mistoqsija li tista 'twieġeb",
+          "paragraphs": [
+            "Tikketta tikkonferma liema daqs jiġi stampat fuq iż-żarbun riċevut. Ma jagħtix prova li ż - żarbun isegwi ċart taʼ konverżjoni universali. Il - ħakkiem ħdejn il - barra juri t - tul taʼ barra, li mhuwiex l - istess bħall - ispazju intern li jistaʼ jintuża. A ritratt full-pair jgħin jivverifika li l-kuluri u forom jidhru konsistenti."
+          ],
+          "table": {
+            "headers": [
+              "Evidenza",
+              "Utli għal",
+              "Ma tistax tistabbilixxi ruħha waħedha"
+            ],
+            "rows": [
+              [
+                "Tikketta tad-daqs",
+                "It-tqabbil tal-varjant ordnat.",
+                "Jekk il-par se tajbin sieq tiegħek."
+              ],
+              [
+                "Il-kejl intern",
+                "Meta tqabbel insol li jista' jitneħħa ma' par magħruf.",
+                "Il-kumdità, il-wisa' jew il-forma interna sħiħa."
+              ],
+              [
+                "Kejl tal-outsole",
+                "Il-kontroll taż-żarbun jevapora d-dimensjonijiet esterni.",
+                "L-ispazju disponibbli għal sieqek."
+              ],
+              [
+                "QC photo mill-qrib",
+                "L-investigazzjoni ta' marka viżibbli jew diskrepanza.",
+                "Awtentiċità jew durabilità fit-tul."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Xogħol permezz ta' nuqqas ta' qbil qabel ma jsir pakkett",
+          "paragraphs": [
+            "Eżempju ipotetiku: l-insole li tista' titneħħa minn par komdu ta' 28 cm, filwaqt li r-ritratt tal-maħżen jidher li juri 26 ċm. L-ewwel ikkonferma li ż-żewġ kejliet jużaw l-istess endpoints u li l-immaġni maħżen jappartjeni għall-ordni tiegħek. Staqsi għal ritratt iktar ċar jekk il - ħakkiem jew it - tarf taʼ l - għarqub ikun moħbi.",
+            "Jekk id-differenza hija kkonfermata, ipparaguna mal-grafika daqs elenkar u l-appoġġ kuntatt dwar għażliet disponibbli. Tassumix li t-tikketta waħedha tirriżolvi l-kwistjoni. Ritorn jew skambju eliġibbiltà, skadenzi u l-ispejjeż jiddependu fuq l-ordni; isolvu l-kwistjoni filwaqt li l-oġġett għadu disponibbli għal reviżjoni fil-maħżen."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Kontrolli tal-kundizzjoni tal-fini qabel ma jitneħħa l-ippakkjar",
+          "paragraphs": [
+            "Iddeċiedi jekk iż-żraben humiex aċċettabbli qabel ma titlob it-tneħħija tal-kaxxa jew qabel ma tgħaqqadhom f'pakkett. Żomm ir-ritratti tikketta, kejl, chart bejjiegħ u tweġibiet appoġġ flimkien. Staqsi jekk bidla fl-imballaġġ tistax taffettwa ritorn li għadek qed tikkunsidra.",
+            "Ladarba l-par ikun lest, tiddeċiedi liema protezzjoni teħtieġ waqt it-trasport. Qabbel it-tbaħħir mad-daqs attwali ppakkjat, speċjalment meta żżomm diversi kaxxi taż-żraben. Il-pjan ippakkjar irħas ma jkunx utli jekk jikkomprometti karatteristika li għandek bżonn biex jippreservaw."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uża l-elenkar eżatt chart daqs u sizing sistema.",
+        "Il-kejl tas-sieq, is-sieq iżolanti u s-sieq ta' barra.",
+        "Żomm ċentimetri u millimetri konsistenti.",
+        "Match kemm żraben u t-tikketti tagħhom għall-ordni mħallsa.",
+        "Isolvi t-tħassib dwar il-kejl qabel is-sottomissjoni tal-pakketti.",
+        "Żomm l-imballaġġ rilevanti sakemm id-deċiżjoni tal-ordni tkun finali."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC ritratti u kejl",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: kamp ta' applikazzjoni tas-servizz QC",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: ordni u reviżjoni maħżen",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

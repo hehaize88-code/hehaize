@@ -4,7 +4,7 @@ Astro 7.4.0 SSR website for `https://sugargootab.com`, maintained as one indepen
 
 ## Content
 
-- 24 locales with localized navigation, 30 FAQ answers and 10 full articles per locale.
+- 24 locales with localized navigation, 30 FAQ answers and 16 full articles per locale.
 - FAQ and article links in the header and footer, with four article cards on the homepage.
 - Official Sugargoo logo and favicon; see `ASSET_SOURCES.md` for provenance.
 - Keyword research and official-source records in `research/`.
@@ -66,7 +66,7 @@ npm run deploy
 - `www.sugargootab.com` redirects permanently (308) to the apex, preserving path and query.
 - Successful production content is indexable. Errors, internal search, alternate sort, pagination and the unconnected image-search page are `noindex`.
 - Other hosts, including workers.dev, are `noindex` and use production canonical URLs.
-- `/robots.txt` advertises `/sitemap.xml` on the production origin. The sitemap contains 672 localized content/category URLs; it does not invent product URLs or request a full catalogue crawl.
+- `/robots.txt` advertises `/sitemap.xml` on the production origin. The sitemap contains 816 localized content/category URLs; it does not invent product URLs or request a full catalogue crawl.
 - User-specific parameters, failed upstream responses and personal data are never persisted.
 
 ## Referral links

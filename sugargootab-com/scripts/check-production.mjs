@@ -31,9 +31,9 @@ const sitemap = await request('/sitemap.xml');
 assert.equal(sitemap.status,200);
 const xml = new DOMParser().parseFromString(await sitemap.text(),'text/xml');
 const locations = [...xml.querySelectorAll('loc')].map(el=>el.textContent);
-assert.equal(locations.length,744);
+assert.equal(locations.length,816);
 assert.equal(new Set(locations).size,locations.length);
-assert.equal(xml.querySelectorAll('lastmod').length,336,'All article and article-index URLs carry maintained dates');
+assert.equal(xml.querySelectorAll('lastmod').length,720,'All article and article-index URLs carry maintained dates');
 assert(locations.every(url=>url.startsWith(targets.production+'/')&&!url.includes('?')));
 assert(locations.includes(targets.production+'/mt/faq/'));
 assert(locations.includes(targets.production+'/category/shoes/'));
@@ -89,7 +89,7 @@ try {
   const doc=parseHTML(await response.text()).document;
   assert.equal(doc.querySelector('title').textContent,content.ui.seoHomeTitle);
   assert.equal(doc.querySelectorAll('.home-articles .article-card').length,4);
-  assert(doc.querySelector('.home-articles a[href$="/articles/sugargoo-shipping-to-usa/"]'));
+  assert(doc.querySelector('.home-articles a[href$="/articles/sugargoo-rehearsal-shipping/"]'));
  }
  for(const [page,numbers] of [[1,[1,2,3]],[2,[1,2,3]],[4,[3,4,5]],[8,[7,8,9]],[15,[14,15,16]],[16,[15,16,17]],[29,[28,29,30]],[215,[213,214,215]]]){
   sourceRequests=[];

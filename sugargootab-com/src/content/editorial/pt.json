@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Artigos",
     "articleTitle": "Guias de compras no Sugargoo",
-    "articleIntro": "Guias práticos sobre ligações de produtos, fotografias QC, etapas da encomenda e decisões de envio, com fontes oficiais e próximos passos claros.",
+    "articleIntro": "Práticos guias da Sugargoo para links de produtos, fotos do QC, tamanhos de sapatos e transporte. Escolha a pergunta que você precisa responder antes de comprar ou enviar um pacote.",
     "faqTitle": "Perguntas frequentes sobre o Sugargoo",
     "faqIntro": "Respostas claras para cada etapa do seu pedido, com fontes oficiais sobre as regras da plataforma e limites transparentes deste catálogo independente.",
     "readArticle": "Ler guia",
@@ -34,11 +34,35 @@
     "categoryAccount": "Pagamentos e pós-venda",
     "author": "Equipe editorial do SugargooTab",
     "siteEvidence": "Sobre este catálogo independente",
-    "seoHomeTitle": "Sugargoo Spreadsheet: ligações, fotografias e guias de compra",
+    "seoHomeTitle": "Sugargoo Spreadsheet: Sapatos, Vestuário & Links de Produto",
     "catalogCtaTitle": "Ponha a lista de verificação em prática",
     "catalogCtaBody": "Compare ligações de produtos no catálogo e confirme o anúncio exato e os dados da sua encomenda antes de comprar ou enviar.",
     "catalogCtaButton": "Explorar ligações de produtos",
-    "categoryCtaButton": "Explorar categorias de produtos"
+    "categoryCtaButton": "Explorar categorias de produtos",
+    "homeSearchIntro": "Encontre sapatos, capuzes, camisolas e acessórios. Abra um link de produto, verifique as opções do vendedor, em seguida, reveja o seu próprio armazém QC antes do envio.",
+    "seoHomeDescription": "Explore links de produtos da Sugargoo para sapatos, capuzes, camisolas e acessórios. Compare fotos de referência e use QC prático, tamanho e guias de envio.",
+    "seoCatalogTitle": "Sugargoo Spreadsheet: Procurar sapatos, vestuário e acessórios",
+    "seoCatalogDescription": "Pesquisar links de produtos da Sugargoo, comparar fotos de referência e preços, e verifique a lista original antes de encomendar. Procurar sapatos, roupas e acessórios.",
+    "seoCategoryTitle": "Sugargoo {category}: Links de Produto e Fotos",
+    "seoCategoryDescription": "Navegar por ligações de produtos {category} para a Sugargoo. Compare fotos de referência e preços listados, depois confirme tamanhos, opções e disponibilidade antes de encomendar.",
+    "catalogGuideNote": "Fotos de produtos e preços são referências. Verifique a lista exata do vendedor e seu próprio armazém QC antes do envio.",
+    "nextStep": "Escolha o próximo passo",
+    "weightToolTitle": "Calculadora de peso da encomenda",
+    "weightToolIntro": "Verifique o peso real e volumétrico. Esta ferramenta não cita os preços de envio; use a regra de divisor e faturamento da rota selecionada.",
+    "actualWeight": "Peso real da encomenda embalada (kg)",
+    "parcelLength": "Comprimento exterior (cm)",
+    "parcelWidth": "Largura exterior (cm)",
+    "parcelHeight": "Altura exterior (cm)",
+    "weightDivisor": "Divisor de peso volumétrico da rota",
+    "weightRule": "Regra de carregamento",
+    "higherWeight": "Mais alto do peso real e volumétrico",
+    "actualOnly": "Peso real apenas",
+    "calculateWeight": "Calcular o peso",
+    "volumetricWeight": "Peso volumétrico",
+    "billingBase": "Peso antes do arredondamento",
+    "weightDisclaimer": "Cálculo do peso ilustrativo apenas. Rodondamento de rotas, taxas mínimas, limites de dimensões e taxas de serviço ainda se aplicam. Confirme a citação atual com a Sugargoo.",
+    "weightError": "Digite um número positivo em cada campo de medição.",
+    "officialEstimatorGuide": "Abrir o guia oficial de estimador de transporte"
   },
   "groups": {
     "basics": "Primeiros passos",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Guia Sugargoo Spreadsheet: encontrar e verificar ligações",
-      "description": "Encontre produtos numa Sugargoo spreadsheet, confirme anúncios e variantes atuais e distinga imagens de referência das fotografias QC da sua encomenda.",
+      "title": "Como usar um Spreadsheet Sugargoo: procurar e encomendar",
+      "description": "Use uma planilha da Sugargoo para encontrar links de produtos, verificar tamanhos e opções do vendedor, abrir a página de encomenda correta, e revisar o armazém QC antes do envio.",
       "keyword": "planilha de produtos Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Uma Sugargoo spreadsheet é útil quando ajuda você a montar uma seleção menor e mais bem informada. Uma página longa de fotos não diz se determinado tamanho está disponível, quanto custará o pacote ou se o anúncio atual do vendedor ainda corresponde a uma recomendação antiga. Considere a planilha o início da pesquisa e mantenha a decisão final de compra ligada ao anúncio exato.",
-        "Este catálogo independente obtém as informações dos produtos e as imagens de referência do cnbuycha. Os pedidos e os pagamentos acontecem no Sugargoo. O método a seguir conecta essas duas etapas sem tratar uma entrada do catálogo como recomendação pessoal, garantia de estoque ou prova de inspeção no armazém. Ele também funciona se você guardar sua seleção em um aplicativo simples de notas."
+        "Uma planilha Sugargoo é um diretório de links de produtos. Use-o para encontrar um item, em seguida, verifique a listagem original e a variante exata na Sugargoo antes de pagar. Um link guardado não confirma o estoque atual, o tamanho selecionado, o preço final ou a aceitação pelo agente de compra.",
+        "Comece com o catálogo ao vivo ou uma categoria como sapatos, capuzes ou camisolas. Abra um item promissor, revise suas fotos de referência e siga o link de compra disponível. Mantenha a sua lista pequena o suficiente para verificar cada item corretamente."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Como verificar um anúncio atual antes de comprar",
+          "id": "spreadsheet-first-action",
+          "title": "De uma planilha encontrar para uma ordem verificada",
           "paragraphs": [
-            "Abra o produto no catálogo e siga a ligação para o anúncio original. Compare o ID do produto no marketplace, o vendedor e a variante selecionada com o artigo apresentado no Sugargoo. O número interno da página do catálogo é um identificador diferente. Volte a verificar o preço atual, as opções disponíveis e a quantidade imediatamente antes do pagamento; um cartão guardado não confirma o stock atual.",
-            "Se o anúncio original desaparecer, o produto não carregar ou a variante for diferente, pare nessa etapa. Volte à spreadsheet e compare outro candidato. Registe o motivo pelo qual o primeiro falhou para não repetir a mesma verificação. As imagens de referência continuam a servir para descobrir produtos, mesmo quando se parecem com fotografias do armazém."
+            "Procure pelo tipo de produto ou um nome distintivo, em seguida, abra a página do item. Compare o título da lista, o identificador do item fonte, as fotos e as opções selecionadas. Se a página de compra abrir uma cor ou tamanho diferente, escolher novamente a variante pretendida e inspecionar o resumo da ordem final. Não pague só porque a imagem parece familiar.",
+            "O preço apresentado num catálogo é uma referência para o item. Construir um orçamento separado para a entrega dentro da China, quaisquer serviços selecionados e frete internacional. Salve o link de origem com o tamanho e a cor escolhidos. Uma vez que o item chega ao armazém, use seu próprio registro QC para decidir se ele está pronto para enviar."
           ],
-          "table": {
-            "headers": [
-              "Verificação",
-              "Prova a utilizar"
-            ],
-            "rows": [
-              [
-                "Identidade do produto",
-                "URL original do marketplace e ID do produto"
-              ],
-              [
-                "Disponibilidade atual",
-                "Anúncio atual do vendedor e opção selecionada"
-              ],
-              [
-                "Preço",
-                "Variante exata e valor no pagamento"
-              ],
-              [
-                "Estado",
-                "Fotografias da sua encomenda após a chegada ao armazém"
-              ]
-            ]
-          }
+          "bullets": [
+            "Encontre: escolha uma categoria e restrinja a pesquisa.",
+            "Verifique: corresponder à lista original, opções e preço do pedido atual.",
+            "Encomenda: use o fluxo oficial de compra para um item elegível.",
+            "Revisão: inspecione o seu próprio armazém QC antes de fazer um pacote."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Fotografias QC Sugargoo: verificar produtos antes do envio",
-      "description": "Use uma lista prática de verificação QC para calçado, roupa e malas. Confira etiquetas, medidas, costuras e detalhes em falta antes de enviar.",
+      "title": "Como verificar as fotos QC Sugargoo antes do envio",
+      "description": "Encontre fotos do Sugargoo warehouse QC, verifique o item e tamanho corretos, solicite medidas adicionais úteis e resolva problemas antes do envio internacional.",
       "keyword": "fotos QC Sugargoo",
       "category": "quality",
       "intro": [
-        "As fotos do armazém são mais úteis quando existe uma decisão específica: o item recebido corresponde ao pedido, algum detalhe importante está pouco claro ou há danos visíveis que precisam de atenção? Olhar todas as imagens sem uma lista de verificação ainda pode deixar a pergunta mais importante sem resposta. Um método claro de revisão facilita o uso dessas fotos.",
-        "O Sugargoo descreve a oferta habitual de cinco fotos padrão de QC, com o alcance da inspeção dependendo do item e do tipo de pedido. A quantidade de fotos não garante o que pode ser verificado. As imagens de referência do cnbuycha neste site são material do catálogo, não QC verificado do seu pedido pessoal no Sugargoo; revise seu próprio registro do armazém antes de organizar o envio internacional."
+        "Para verificar as fotos do Sugargoo QC, inicie sessão e abra o item recebido em seu pedido ou registro do Centro de Embalagem. Reveja as imagens anexas a esse item antes de a adicionar a um pacote internacional. Catálogo de imagens no SugargooTab são imagens de referência, não fotos de sua própria ordem.",
+        "Verifique primeiro a variante selecionada, rótulo, quantidade e condição visível. Se o ajuste depende de uma medição que não é mostrada, solicite essa medição específica antes de aprovar o envio. Visual QC não é autenticação ou uma garantia de ajuste."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "Verificações QC para calçado, roupa e malas",
+          "id": "qc-first-check",
+          "title": "Onde encontrar fotos e o que verificar primeiro",
           "paragraphs": [
-            "Comece por confirmar a encomenda, a cor, o tamanho e a quantidade. Depois examine os detalhes que podem alterar a decisão de ficar com o artigo. A lista seguinte ajuda a analisar fotografias; não garante que o QC normal inclua todos os ângulos ou medidas. Peça especificamente a prova em falta e verifique eventuais custos do serviço antes de avançar.",
-            "Por exemplo, uma mala fotografada apenas de frente não permite confirmar a fixação da alça nem o estado do interior. Peça o ângulo relevante se esse detalhe for importante. Se precisar de uma medida, indique os pontos inicial e final e peça uma fita métrica visível. As fotografias não demonstram todas as propriedades funcionais nem provam autenticidade."
+            "Comece com a referência exata da ordem. Um item ainda sendo comprado ou entregue pelo vendedor pode ainda não ter fotos do armazém. Quando o item tiver sido recebido, inspecione os detalhes do seu pedido e o registro do Centro de Embalagem para as imagens do QC. Se o registro diz que está pronto, mas não aparecem fotos, envie o suporte da referência da ordem e pergunte se a inspeção está completa.",
+            "Abra a imagem completa em vez de julgar uma pequena miniatura. Ajuste a cor e o rótulo de tamanho à sua encomenda paga, então inspecione ambos os lados e quaisquer acessórios incluídos. Guarde uma pergunta específica para qualquer ângulo que não possa ver. Para os sapatos, uma medição da sola e uma foto de tamanho respondem a perguntas diferentes; uma não pode substituir a outra."
           ],
-          "table": {
-            "headers": [
-              "Produto",
-              "Verifique nas fotografias da encomenda",
-              "Se não estiver claro, peça"
-            ],
-            "rows": [
-              [
-                "Calçado",
-                "Par, etiquetas de tamanho, solas e costuras visíveis",
-                "Ambas as etiquetas e o ângulo relevante da sola ou costura"
-              ],
-              [
-                "Roupa",
-                "Etiqueta de tamanho, aspeto do tecido e costuras",
-                "Uma medida em plano com início e fim bem definidos"
-              ],
-              [
-                "Malas",
-                "Alças, fechos, forro e acessórios",
-                "Grandes planos do interior e dos pontos de fixação"
-              ],
-              [
-                "Qualquer artigo",
-                "Variante correta, quantidade e danos visíveis",
-                "Uma imagem nítida da diferença identificada"
-              ]
-            ]
-          }
+          "bullets": [
+            "Verifique que todas as fotos pertencem à mesma ordem e variante.",
+            "Solicito uma visão próxima de um defeito suspeito, identificando a sua localização.",
+            "Mantenha os itens não resolvidos fora do pacote até ter uma resposta."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Calculadora de envio Sugargoo: peso, dimensões e custo total",
-      "description": "Use a calculadora de envio Sugargoo com pesos e dimensões realistas. Compare rotas elegíveis e perceba o que continua incerto numa estimativa.",
+      "title": "Calculadora de envios Sugargoo: peso e custos",
+      "description": "Calcule o peso volumétrico da parcela, compreenda o peso factível e compare as cotações de envio da Sugargoo usando o seu destino, dimensões e categoria de itens.",
       "keyword": "calculadora de frete Sugargoo",
       "category": "shipping",
       "intro": [
-        "Uma estimativa de frete se torna útil quando você sabe quais dados a produziram. Duas pessoas podem informar o mesmo peso dos itens e receber resultados diferentes porque destinos, categorias, dimensões dos pacotes ou rotas diferem. Copiar o total de frete de outra pessoa, portanto, oferece uma base fraca para o orçamento do seu próprio pedido.",
-        "As orientações oficiais da calculadora Sugargoo usam destino, categoria do item, peso e dimensões para comparar opções disponíveis. Trate o resultado como um cenário datado e atualize-o à medida que souber mais sobre o pacote embalado. Este guia mostra como construir esses cenários e identificar a incerteza antes de ela virar um problema no pagamento."
+        "Utilize o estimador oficial de envio da Sugargoo para preços atuais e disponibilidade de rotas. Insira o destino, a categoria de itens, o peso e as dimensões embalados. A ferramenta de peso abaixo ajuda a verificar as matemáticas; ela não cita frete ou se conecta à sua conta da Sugargoo.",
+        "Compare rotas usando entradas de pacotes idênticas. Uma citação baseada apenas no peso do item pode perder o espaço usado pelas caixas de sapatos ou embalagem protectora. Verifique cada rota regra de cobrança, arredondamento e custo mínimo antes de pagar."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Faça duas estimativas antes de comprar os produtos",
+          "id": "shipping-inputs",
+          "title": "Um exemplo de peso volumétrico trabalhado",
           "paragraphs": [
-            "Crie um cenário inicial com as melhores informações disponíveis sobre peso e dimensões e depois um cenário conservador que considere a incerteza da embalagem. Mantenha o destino, o conteúdo e as restantes definições iguais. Se a encomenda só couber no orçamento com as hipóteses mais otimistas, esclareça a incerteza antes de pagar os produtos.",
-            "Registe a data da cotação, a rota, as unidades, as dimensões estimadas e os extras selecionados. Substitua as hipóteses pelas medidas da encomenda quando estiverem disponíveis. Para um destino nos EUA, consulte o guia específico sobre o processo de comparação; para várias encomendas armazenadas, compare os custos completos de envio conjunto e separado no guia de consolidação."
+            "Exemplo ilustrativo, não um orçamento de expedição: uma parcela mede 40 × 30 × 20 cm e pesa 3 kg. Com um divisor de 6000, seu peso volumétrico é de 4 kg. Uma rota que utilize o maior peso real e volumétrico começaria a partir de 4 kg antes das suas regras de arredondamento ou carga mínima. Uma rota carregando peso real apenas começaria a partir de 3 kg.",
+            "Se as mesmas mercadorias puderem caber com segurança numa embalagem de 40 × 30 × 15 cm, o peso volumétrico calculado torna-se 3 kg com aquele divisor. Isto só compara as medidas. Não prova uma poupança: serviços de embalagem, elegibilidade rota, aumentos de peso e a actual tarifa pode alterar o total final."
+          ],
+          "bullets": [
+            "Utilizar dimensões externas embaladas em centímetros, não dimensões do produto.",
+            "Converta gramas em quilogramas antes de usar a ferramenta abaixo: 3000 g é igual a 3 kg.",
+            "Pegue o divisor e a regra de cobrança da rota que você está considerando."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Simulação de envio Sugargoo: peso, dimensões e quando usar",
-      "description": "Saiba quando a simulação de envio Sugargoo é útil, especifique a embalagem e compare as medidas obtidas com a estimativa de transporte inicial.",
+      "title": "Simulação de embalagem Sugargoo: como funciona e quando compensa",
+      "description": "Saiba o que o envio de ensaio da Sugargoo faz, quando vale a pena a taxa, e como usar peso embalado e dimensões antes de escolher uma rota de envio.",
       "keyword": "simulação de envio Sugargoo",
       "category": "shipping",
       "intro": [
-        "A simulação de envio é mais útil quando a incerteza sobre o pacote embalado afeta uma decisão que ainda precisa ser tomada. Você pode estar escolhendo entre rotas, decidindo se mantém embalagens volumosas ou conferindo se uma combinação planejada cabe nos limites de um serviço. Medições melhores podem ajudar a responder essas perguntas, mas não garantem uma conta de frete menor.",
-        "O Sugargoo descreve a simulação como uma preparação do pacote antes do envio que fornece informações mais precisas sobre peso e volume. Trate-a como uma decisão de medição e embalagem, conferindo na sua conta as condições e o custo atuais do serviço. O valor prático vem de saber o que pretende fazer com o resultado."
+        "O envio de ensaios da Sugargoo é um serviço de embalagem e medição antes da expedição internacional. Ele ajuda você a verificar o peso real do pacote e dimensões antes de escolher o envio. Vale a pena considerar quando caixas, itens voluminosos ou um limite de rota fazer sua estimativa incerta; não garante poupança.",
+        "Primeiro termine seu item e QC cheques. Em seguida, confirme a taxa de serviço atual e opções de embalagem em sua conta. Utilize o resultado para comparar rotas elegíveis com o mesmo conteúdo, destino e embalagem."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Quando vale a pena considerar uma simulação de embalagem?",
+          "title": "Como usar o envio de ensaio",
           "paragraphs": [
-            "Considere uma simulação quando dimensões ainda desconhecidas puderem alterar a rota ou o orçamento: um artigo volumoso e leve, várias caixas de venda ou um pacote próximo do limite da rota. Anote a incerteza que pretende esclarecer e confirme o preço atual do serviço. Se a decisão fosse igual com várias estimativas razoáveis, a medição adicional pode ser menos valiosa.",
-            "Compare o resultado com os dados iniciais: peso real, dimensões exteriores, embalagens mantidas e serviços selecionados. Recalcule segundo a regra de faturação atual da rota. Uma medida menor não garante uma fatura final inferior, porque os mínimos, escalões de peso e outras opções continuam a poder influenciar o preço."
-          ]
+            "Na sua conta Sugargoo, identifique os itens do armazém que deseja enviar juntos. Abra o serviço de simulação ou ensaio do pacote pré-embarque disponível, verifique a sua taxa e especifique se as caixas originais e as embalagens de proteção devem permanecer. As etiquetas de tela podem mudar; pedir suporte antes de pagar se a opção ou seu escopo não está claro.",
+            "Quando o resultado estiver pronto, registar o peso embalado e as três dimensões externas. Reintroduza essas medições no estimador oficial. Compare as rotas elegíveis, os seus aumentos de peso e qualquer taxa de embalagem antes de apresentar a parcela. Se, posteriormente, alterar o conteúdo ou a embalagem, as medições anteriores podem deixar de descrever a parcela."
+          ],
+          "table": {
+            "headers": [
+              "A sua situação",
+              "Decisão"
+            ],
+            "rows": [
+              [
+                "Várias caixas de sapatos ou um casaco voluminoso",
+                "Considere a medição antes de selecionar uma rota."
+              ],
+              [
+                "Parcela perto de um limite de tamanho ou peso",
+                "Verifique o resultado embalado com aquele limite exato."
+              ],
+              [
+                "Pacote compacto conhecido; escolha de rota permanece a mesma",
+                "O serviço extra pode adicionar pouco valor."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Ligações Weidian e Taobao no Sugargoo: verificar e corrigir erros",
-      "description": "Verifique ligações de produtos Weidian e Taobao antes de comprar no Sugargoo. Resolva anúncios em falta, variantes erradas e falhas de leitura sem adivinhar.",
+      "title": "O link Sugargoo não funciona? Soluções Taobao e Weidian",
+      "description": "Corrija problemas comuns de ligação de produtos da Sugargoo: links de compartilhamento incompletos, itens indisponíveis, variantes erradas e opções faltantes do Taobao ou Weidian.",
       "keyword": "Weidian para Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Um link de produto conecta uma recomendação a um anúncio específico de um vendedor. Ele não confirma, sozinho, tamanho, cor, estoque ou custo final com entrega. A forma mais segura de usar um link Weidian ou Taobao no Sugargoo é preservar a identidade do produto e depois verificar as opções na tela oficial do pedido antes de pagar.",
-        "Este guia explica o que copiar, como reconhecer um anúncio divergente e o que fazer quando o carregamento automático falha. Também diferencia o ID do produto no marketplace de origem do identificador interno da página deste catálogo, para que um botão de compra conveniente não seja motivo para pular as verificações finais."
+        "Se um link Taobao ou Weidian não for carregado na Sugargoo, primeiro abra a página original do produto e verifique se o item ainda existe. Copie a URL direta do seu produto, sem compartilhar o texto ao redor, então tente novamente a busca oficial do produto. Manter o identificador do item intacto.",
+        "Uma importação falhada pode significar um link incompleto, opções indisponíveis, uma listagem sold-out ou um item que o agente não pode aceitar. Uma encomenda manual só é adequada para uma compra elegível cujos detalhes podem ser confirmados. Não passa pelas restrições."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "O que verificar quando uma ligação de produto não carrega",
+          "id": "link-troubleshooting",
+          "title": "Corresponde o sintoma ao próximo passo",
           "paragraphs": [
-            "Abra primeiro a página original e confirme que continua a identificar o artigo pretendido. A página inicial de uma loja, um texto de partilha abreviado ou um anúncio removido não equivalem ao URL completo do produto. Compare o ID do produto no marketplace antes de tentar novamente. Remova texto de partilha irrelevante sem alterar a identidade do artigo.",
-            "Se o artigo original existir mas a leitura automática falhar, consulte as opções oficiais de encomenda manual e as condições de aceitação. Mantenha juntos o vendedor, a variante exata, a quantidade, o URL e o preço. Um formulário manual não elimina restrições nem garante disponibilidade. Se não conseguir verificar o anúncio atual, escolha outro candidato em vez de adivinhar pela fotografia."
-          ]
+            "Use a mesma lista original quando comparar o mercado e telas da Sugargoo. Um item de nome similar não é prova de que a opção importada esteja correta. Se o suporte for necessário, inclua o URL direto, o identificador do item, a variante selecionada e o texto de erro exato; remova os detalhes da conta privada das capturas de tela."
+          ],
+          "table": {
+            "headers": [
+              "O que você vê",
+              "O que verificar"
+            ],
+            "rows": [
+              [
+                "Link abre uma tela de compartilhamento ou mensagem de texto",
+                "Abra o próprio produto e copie a sua URL direta."
+              ],
+              [
+                "A listagem original não está disponível",
+                "Pergunte ao vendedor sobre a disponibilidade; não reutilize um preço antigo."
+              ],
+              [
+                "O item abre-se, mas falta tamanho ou cor",
+                "Confirme essa opção específica antes de encomendar."
+              ],
+              [
+                "Agente recusa o item",
+                "Pergunte sobre elegibilidade; não disfarce o item."
+              ],
+              [
+                "A listagem funciona mas a importação ainda falha",
+                "Pergunte suporte se uma ordem manual suportada é possível."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Envio Sugargoo para os EUA: custos, peso e entrega",
-      "description": "Planeie o envio Sugargoo para os EUA: compare peso, dimensões, condições das rotas e etapas da entrega antes de pagar o transporte internacional.",
+      "title": "Envios Sugargoo para os EUA: custos, rotas e prazos",
+      "description": "Planeje o envio da Sugargoo para os EUA com um checklist de custos completo, entradas consistentes de pacotes, comparações de rotas e etapas de rastreamento antes da expedição.",
       "keyword": "envio sugargoo para os EUA",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "O envio Sugargoo para os EUA é uma decisão separada da compra dos produtos. Comece pela morada de entrega, pelos artigos que pretende enviar e por uma estimativa do peso e das dimensões depois de embalados. Compare depois as rotas efetivamente disponíveis na sua conta. O preço do pacote de outra pessoa é apenas uma referência: o destino, a data, as dimensões e o conteúdo podem ser diferentes dos seus.",
-        "Este guia apresenta um método de comparação, não um preço fixo nem uma promessa de entrega. O SugargooTab é um catálogo independente e não pode fornecer cotações, expedir ou acompanhar pacotes em nome do Sugargoo. Use a calculadora oficial para planear e o ecrã final do pacote para decidir se paga. Registe o que a cotação inclui para compreender alterações posteriores."
+        "Para o envio da Sugargoo para os EUA, obter uma cotação para o seu estado real, categoria de item, peso e dimensões empacotados. A linha mais barata exibida só é útil se os seus bens e endereço forem elegíveis. A disponibilidade de rotas, preços e estimativas de entrega podem mudar.",
+        "Separar o preço das mercadorias do orçamento de encomenda internacional. Compare o montante total a pagar e as condições de entrega usando a mesma parcela, depois verifique as medições finais embaladas antes da expedição."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Compare rotas dos EUA sem misturar diferentes parcelas",
+          "paragraphs": [
+            "Crie um pacote de referência antes de abrir vários resultados de rota. Registar o seu estado e código postal, categoria de mercadorias, peso real, dimensões externas e proteção necessária. Salve a data de cotação e a moeda com cada resultado. Se um resultado excluir dimensões ou utilizar uma categoria diferente, repita-o antes de comparar preços.",
+            "Para cada rota elegível, anote a regra de carga a pagar, peso, serviços incluídos, intervalo estimado de trânsito e transportador de entrega final se indicado. Adicionar embalagem ou seguro opcional separadamente. Leia as condições atuais de importação e rota, em vez de assumir que o nome da rota não garante taxas adicionais ou desdobramento aduaneiro."
+          ],
+          "bullets": [
+            "Compare as mesmas mercadorias e o plano de embalagem.",
+            "Verifique se a estimativa começa na expedição ou em outro marco.",
+            "Mantenha os recibos do produto e as descrições precisas do item com o registro do pacote."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Separe o custo dos produtos do orçamento do pacote para os EUA",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Envios Sugargoo para o Reino Unido: custos e entrega",
+      "description": "Compare as cotações de envio da Sugargoo UK, o peso real e volumétrico, entregas e informações sobre a carga de importação antes de enviar um pacote.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Para estimar o envio da Sugargoo para o Reino Unido, selecione a sua região de destino real, categoria de mercadorias, peso embalado e dimensões no estimador oficial. Compare apenas as rotas disponíveis para essa combinação. Verifique o orçamento final em sua conta antes de pagar; um preço de outro comprador pacote não é a sua taxa de envio.",
+        "Este guia utiliza uma folha de trabalho de comparação prática em vez de preços fixos. Ele ajuda você a decidir se um pacote compacto, um pacote bully shoebox ou uma ordem de prazos sensível precisa de um plano de envio diferente."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Preparar um pacote para uma comparação justa com o Reino Unido",
+          "paragraphs": [
+            "Comece com mercadorias que você já checou no armazém. Escreva a lista de itens e as embalagens que pretende manter. Uma cotação para sapatos com caixas de varejo não pode ser comparada justamente com uma cotação que supõe que as caixas serão removidas. Se as medidas são incertas o suficiente para mudar a sua decisão, considere um ensaio de embalagem primeiro.",
+            "Utilize a região de endereço e o código postal corretos. A Grã-Bretanha e a Irlanda do Norte dispõem de diferentes regimes de importação, pelo que evitam copiar um local de uma estimativa anterior. Pergunte à plataforma para confirmar a cobertura do destino se seu endereço não é suportado na rota selecionada."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Construir uma comparação de rotas que você pode reutilizar",
+          "paragraphs": [
+            "Abra os resultados elegíveis e anote a data de cotação, a moeda e as medições embaladas uma vez. Em seguida, fazer uma linha para cada rota. Compare o montante real devido após qualquer cupom aplicável, não um preço promocional cruzado. Um cupom com uma despesa mínima pode não se aplicar a uma parcela menor."
+          ],
+          "table": {
+            "headers": [
+              "Gravar para cada rota",
+              "Porque é que isso importa"
+            ],
+            "rows": [
+              [
+                "Regra de carregamento e aumento de peso",
+                "A mesma parcela medida pode ter um peso facturado diferente."
+              ],
+              [
+                "Serviços de transporte de mercadorias e serviços opcionais",
+                "Embalagem ou seguro podem ser itens de linha separados."
+              ],
+              [
+                "Estimativa de trânsito e seu ponto de partida",
+                "Entrega do vendedor e trabalho de armazém podem vir antes do trânsito internacional."
+              ],
+              [
+                "Reino Unido transportador de entrega e cobertura de endereços",
+                "A entrega final afeta a forma como você acompanha a entrega."
+              ],
+              [
+                "Termos da taxa de importação",
+                "Leia o que está incluído e o que ainda pode precisar pagar."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Caixas de sapatos: comparar proteção e tamanho da parcela",
+          "paragraphs": [
+            "Suponha que dois pares de sapatos tenham passado o seu tamanho e condições cheques. Compare dois planos de embalagem: manter ambas as caixas, ou remover caixas onde seguro e aceitável para você. Peça as dimensões externas do pacote acabado sob o plano escolhido. Não inferir essas dimensões adicionando os comprimentos do sapato juntos.",
+            "Se você coletar as caixas ou precisar delas para um possível retorno, mantê-las pode importar mais do que reduzir o volume. Se você removê-los, concorde em proteção para os sapatos. Recalcular a rota usando as dimensões resultantes e incluir o custo do serviço de embalagem. Embalagens menores não são automaticamente mais baratas ou mais seguras."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Verificar os encargos de importação e manter o registro da ordem",
+          "paragraphs": [
+            "Utilize a atual orientação GOV.UK ligada abaixo para mercadorias enviadas do exterior. O tratamento de importação depende do destino, das mercadorias e da transação. Uma rota comercializada com formulação relacionada com os impostos não é uma garantia global de isenção; leia os seus termos e confirme quais são os encargos incluídos.",
+            "Mantenha os recibos, as descrições dos itens e o montante pago com o registro da parcela. Declare as mercadorias com precisão e peça apoio sobre campos de declaração pouco claros. Este guia não calcula os impostos nem fornece um montante de declaração universal. Se a transportadora solicitar pagamento ou documentos, verifique o pedido através do site oficial da transportadora."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Leia o rastreamento como uma sequência de entregas",
+          "paragraphs": [
+            "Envio separado do vendedor, recibo do armazém, expedição internacional e entrega no Reino Unido. Um número de rastreamento do vendedor cobre a entrega para o armazém; ele não prova que a parcela internacional deixou. Após a expedição de pacotes, verifique o registro logístico para o número associado à linha de transporte selecionada.",
+            "Quando uma transportadora de entrega final é identificada, siga a sua página oficial de rastreamento também. Salvar a última digitalização, data e qualquer ação necessária. Para um atraso, pedir apoio em que fase está à espera e se são necessários documentos ou uma correção de endereço. Um intervalo estimado de entrega não é uma data de chegada garantida."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Escolha a rota para a decisão que você realmente enfrenta",
+          "paragraphs": [
+            "Para uma parcela compacta sem prazo, comparar o custo total entre as rotas elegíveis. Para um pacote voluminoso, investigar a regra de peso e tamanho embalado primeiro. Para uma ordem sensível ao tempo, permitir a preparação do armazém e da alfândega, bem como a estimativa de trânsito anunciada.",
+            "Se nenhuma rota elegível atender às suas necessidades, interrompa o carregamento e peça opções. Dividir um pacote cria uma nova comparação com duas taxas de base e, possivelmente, duas taxas de serviço. Calcule ambos os totais completos em vez de assumir que mais parcelas será mais barato."
+          ]
+        }
+      ],
+      "checklist": [
+        "Use a sua verdadeira região do Reino Unido e o código postal.",
+        "Termine QC antes de escolher o plano de embalagem.",
+        "Compare rotas com conteúdos e medições idênticos.",
+        "Grave a data de cotação, moeda e serviços incluídos.",
+        "Leia os termos de importação e rota atuais.",
+        "Salve as referências de rastreamento internacional e de entrega final."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Visão geral do transporte no Reino Unido",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: estimativa da taxa de envio",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: mercadorias enviadas do estrangeiro",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: rastreamento de pacotes",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Envios Sugargoo para o Canadá: custos e rastreamento",
+      "description": "Planeje um pacote da Sugargoo para o Canadá usando sua província, código postal, tamanho embalado, taxas de rota e informações de rastreamento do transportador final.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "O envio da Sugargoo para o Canadá depende da sua província, endereço, mercadorias e medidas de pacotes. Comece com uma citação atual para essas entradas exatas. Confirme que transportador vai entregar a última etapa; não suponha que cada rota usa o Canada Posts.",
+        "A comparação mais útil inclui a cobertura de endereços, o montante total a pagar e como o pacote será rastreado após a chegada. Este guia explica o que gravar antes de pagar, sem tratar um preço de rota antiga como uma oferta atual."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Verificar a cobertura da província e do código postal primeiro",
+          "paragraphs": [
+            "Use o endereço de entrega que pretende manter através do carregamento. Indique a província e o código postal com precisão e inclua qualquer número de unidade necessário. Antes de escolher uma rota, verifique se aceita o seu tipo de endereço e se se aplica uma sobretaxa de área remota ou de entrega. Um preço para outra província pode não ser uma comparação útil.",
+            "Se você planeja usar uma caixa de pós-escritório, um endereço comercial ou um local remoto, pergunte sobre esse endereço especificamente. Não substitua uma cidade próxima apenas para fazer aparecer uma rota no estimador. Se a cobertura não for clara, resolva-a antes que as mercadorias saiam do armazém."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Manter o orçamento da parcela separada do preço do produto",
+          "paragraphs": [
+            "Construir um orçamento com entradas separadas para as mercadorias, entrega na China, serviços de armazém escolhidos, frete internacional e potenciais taxas de importação ou manuseio. Grave a moeda por cada quantia. Um preço exibido do dólar americano e um orçamento do dólar canadense não devem ser adicionados sem uma conversão atual.",
+            "Para o transporte de mercadorias, comparar as cotações elegíveis atuais utilizando o mesmo peso real, dimensões externas e categoria de mercadorias. Verifique se cada linha carrega peso real, peso volumétrico ou outra regra declarada. Se a embalagem não tiver sido concluída, assinalar as medições como estimativas e rever a comparação antes da expedição."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "Um casaco voluminoso precisa de uma verificação de tamanho, bem como uma verificação de peso",
+          "paragraphs": [
+            "Imagine enviar um casaco de inverno junto com um pequeno acessório. O casaco pode dominar as dimensões da caixa mesmo quando não é o item mais pesado. Gravar o tamanho da parcela terminada e calcular o peso volumétrico com o divisor utilizado por cada rota. Uma rota que parece barata por quilograma pode ser menos atraente depois de sua regra de tamanho é aplicada.",
+            "Pergunte se um método de embalagem diferente é adequado para o tecido e construção. A compressão pode não ser adequada para cada vestuário ou acessório. Inclua qualquer custo de embalagem e compare a parcela protegida em vez de um volume mínimo teórico. Se o acessório for frágil, a proteção separada pode ser mais valiosa do que a caixa mais pequena possível."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Leia as orientações canadenses de importação antes da expedição",
+          "paragraphs": [
+            "A Agência dos Serviços de Fronteira do Canadá explica como o correio importado é examinado e como os direitos ou impostos podem ser aplicados. Mantenha os recibos do produto e descrições precisas disponíveis. Não trate uma compra de varejo como um presente só porque o pacote é para uso pessoal.",
+            "Verifique os termos da rota atual para qualquer manuseamento de importação incluído e pergunte quais taxas ainda podem ser cobradas. A movimentação postal e de correio pode diferir. Utilize os recursos oficiais do CBSA abaixo para sua situação em vez de assumir que as regras para mercadorias enviadas de outro país se aplicam a uma parcela da China."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Siga os registros de entregas internacionais e canadenses",
+          "paragraphs": [
+            "Após a expedição, abra o registro logístico de pacotes e salve o seu número de rastreamento. O número de entrega original do vendedor é um registro diferente. Verificar se a linha escolhida fornece uma referência separada do transportador final após a parcela chegar ao Canadá.",
+            "Se o Canada Post for a transportadora nomeada, use seu serviço de rastreamento oficial após a entrega. Se outra transportadora for nomeada, use essa transportadora em vez disso. Um número que está a ser criado não significa por si só que o transportador tenha recebido a parcela. Para um carregamento parado, dê suporte à última digitalização, sua data, a rota e a referência da parcela."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Tomar uma decisão com uma folha de comparação curta",
+          "paragraphs": [
+            "Para uma encomenda leve, compare opções de pequeno parcel elegíveis com todas as cargas incluídas. Para uma ordem voluminosa, resolva as dimensões embaladas antes de focar na taxa anunciada. Para uma grande encomenda, compare qualquer plano dividido como vários carregamentos completos, incluindo cargas mínimas repetidas."
+          ],
+          "table": {
+            "headers": [
+              "Antes do pagamento",
+              "Gravar"
+            ],
+            "rows": [
+              [
+                "Cobertura de endereços",
+                "Província, código postal e qualquer confirmação de sobretaxa."
+              ],
+              [
+                "Medições da parquilha",
+                "Peso real, tamanho exterior e instruções de embalagem."
+              ],
+              [
+                "Termos das rotas",
+                "Montante devido, moeda, regra do peso e trânsito estimado."
+              ],
+              [
+                "Transmissão da entrega",
+                "Nomeado último transportador e instruções de rastreamento."
+              ],
+              [
+                "Registos de importação",
+                "Receitas, descrições e informações sobre as taxas aplicáveis."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Confirme a província, o código postal e a elegibilidade do endereço.",
+        "Mantenha as moedas explícitas no seu orçamento.",
+        "Medir as mercadorias voluminosas após o método de embalagem acordado.",
+        "Verifique a transportadora de entrega final indicada.",
+        "Mantenha os recibos e declare com precisão as mercadorias.",
+        "Salve a citação final e o registro de rastreamento."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Visão geral do transporte no Canadá",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: entradas de estimador de transporte",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: Importação por correio",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: determinação dos direitos e impostos",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Tamanhos de calçado Sugargoo: etiquetas, palmilhas e QC",
+      "description": "Escolha um tamanho de sapato do próprio gráfico do vendedor, solicite medidas úteis da Sugargoo QC e compare o par recebido antes do envio.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "A Sugargoo não tem um gráfico universal do tamanho do sapato para cada vendedor. Use o gráfico para a lista exata e a variante, em seguida, compare o rótulo de pares recebidos e as medições no seu registro QC do armazém. Um número familiar de tamanhos da UE, do Reino Unido ou dos EUA não é suficiente para se estabelecer em forma.",
+        "Este guia dá-lhe um cheque repetible para os sapatos encontrados em uma planilha. Ele separa o comprimento do pé, o comprimento da sola interna e o comprimento da sola externa para que você possa solicitar a evidência que você realmente necessita antes do transporte internacional."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Comece com o gráfico de tamanho do vendedor exato",
+          "paragraphs": [
+            "Abra a página original do produto e salve o gráfico de tamanho que pertence a esse modelo. Verifique se as suas medições descrevem o pé, a plantilla ou o exterior do sapato. Verifique também se o sistema de dimensionamento é para homens, mulheres ou crianças. Uma tabela de outro modelo pode criar uma correspondência falsa mesmo quando as etiquetas de tamanho parecem iguais.",
+            "Se o gráfico não for claro, pergunte ao vendedor ou agente o que significa cada coluna antes de encomendar. Não adicione uma licença-padrão a cada carta: o vendedor pode já ter incorporado uma licença na sua recomendação. O ajuste escolhido, meias e a forma do sapato também importam."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Criar uma comparação útil em casa",
+          "paragraphs": [
+            "Medir ambos os pés usando o mesmo método e registrar a medição mais longa. Para uma comparação de solas, use uma sola removível de um par que já se encaixa confortavelmente, se a remoção for segura. Grave onde a régua começa e termina. A medição do pé deve ser comparada com um gráfico de comprimento do pé, enquanto que a medição da sola interior deve ser comparada com outra medição da sola interior.",
+            "Mantenha as unidades consistentes. Por exemplo, 270 milímetros é de 27 centímetros. Essa conversão não significa que uma plancha de 27 cm se encaixe num pé de 27 cm. A forma do pé, a estrutura do sapato e o método de medição do vendedor ainda afetam a decisão."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Peça uma medição precisa do armazém",
+          "paragraphs": [
+            "Quando os sapatos chegarem, revise primeiro a ordem e os rótulos de tamanho visível. Se faltar a medição necessária, pergunte que serviço adicional de foto ou medição está disponível e quanto custa. Identifique o item exato, lado e dimensão que deseja verificar.",
+            "Exemplo de pedido para adaptar: Fotografe os rótulos de tamanho em ambos os sapatos. Se a sola pode ser removida sem danos, por favor medi-la do calcanhar ao dedo com uma régua e mostrar ambos os extremos claramente. Confirme se a medição está em centímetros. Este é um modelo de pedido, não uma promessa de que cada item pode ser medido dessa forma."
+          ],
+          "bullets": [
+            "Pede os dois sapatos se suspeitas de um par desigual.",
+            "Solicite os pontos de início e fim da régua na mesma foto.",
+            "Não peça ao pessoal para danificar uma plancha fixa para obter uma medição."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Use cada foto para a pergunta que pode responder",
+          "paragraphs": [
+            "Um rótulo confirma o tamanho impresso no sapato recebido. Não prova que o sapato segue um gráfico de conversão universal. Uma régua ao lado da sola exterior mostra comprimento exterior, que não é o mesmo que o espaço interior utilizável. Uma foto em par completo ajuda a verificar que as cores e formas parecem consistentes."
+          ],
+          "table": {
+            "headers": [
+              "Provas",
+              "Útil para",
+              "Não é possível estabelecer sozinho"
+            ],
+            "rows": [
+              [
+                "rótulo de tamanho",
+                "Correspondendo à variante ordenada.",
+                "Se o par vai caber no seu pé."
+              ],
+              [
+                "Medição do solado",
+                "Comparando uma sola removível com um par conhecido.",
+                "Conforto, largura ou forma interior completa."
+              ],
+              [
+                "Medição da sola exterior",
+                "Verificando as dimensões exteriores do sapato.",
+                "O espaço disponível para o pé."
+              ],
+              [
+                "Fechar foto de QC",
+                "Investigar uma marca visível ou inadequação.",
+                "Autenticidade ou durabilidade a longo prazo."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Trabalhar através de um desajuste antes de fazer um pacote",
+          "paragraphs": [
+            "Exemplo hipotético: a sola removível de um par confortável mede 28 cm, enquanto a foto do armazém parece mostrar 26 cm. Primeiro confirme que ambas as medições usam os mesmos endpoints e que a imagem do armazém pertence à sua ordem. Peça uma foto mais clara se a regra ou a borda do calcanhar está obscurecida.",
+            "Se a diferença for confirmada, compare-a com o gráfico de tamanho de listagem e suporte de contato sobre as opções disponíveis. Não suponha que o rótulo solucione a questão. Devolução ou troca elegibilidade, prazos e custos dependem da ordem; resolver a questão enquanto o item ainda está disponível para revisão no armazém."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Termine os controlos de ajuste antes de remover a embalagem",
+          "paragraphs": [
+            "Decidir se os sapatos são aceitáveis antes de solicitar a remoção da caixa ou combinando-os em um pacote. Mantenha as fotos do rótulo, medições, gráfico do vendedor e respostas de suporte juntos. Pergunte se uma mudança de embalagem pode afetar um retorno que você ainda está considerando.",
+            "Uma vez que o par esteja pronto, decida de que proteção precisa durante o transporte. Compare o transporte com o tamanho real embalado, especialmente quando manter várias caixas de sapatos. O plano de embalagem mais barato não é útil se comprometer um recurso que você precisa preservar."
+          ]
+        }
+      ],
+      "checklist": [
+        "Use o mapa exato do tamanho da lista e o sistema de dimensionamento.",
+        "Distinguir as medições de pé, sola interior e sola exterior.",
+        "Manter centímetros e milímetros consistentes.",
+        "Combinar ambos os sapatos e seus rótulos com a ordem paga.",
+        "Resolver as preocupações de medição antes da apresentação da parcela.",
+        "Mantenha a embalagem relevante até que a decisão de encomenda seja final."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: fotos e medições de QC",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: Espaço de serviço QC",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: encomenda e revisão de armazém",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

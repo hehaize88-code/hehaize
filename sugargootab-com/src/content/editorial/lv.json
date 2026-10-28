@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Raksti",
     "articleTitle": "Sugargoo iepirkšanās ceļveži",
-    "articleIntro": "Praktiski ceļveži par preču saitēm, QC fotoattēliem, pasūtījuma posmiem un nosūtīšanas lēmumiem ar oficiāliem avotiem un skaidriem turpmākajiem soļiem.",
+    "articleIntro": "Praktiskas Sugargoo rokasgrāmatas produktu saitēm, QC fotogrāfijas, apavu izmēri un piegāde. Izvēlieties jautājumu, uz kuru jums jāatbild pirms sūtījuma iegādes vai nosūtīšanas.",
     "faqTitle": "Biežāk uzdotie jautājumi par Sugargoo",
     "faqIntro": "Skaidras atbildes katram pasūtījuma posmam ar oficiāliem avotiem platformas noteikumiem un godīgi izklāstītiem šī neatkarīgā kataloga ierobežojumiem.",
     "readArticle": "Lasīt ceļvedi",
@@ -34,11 +34,35 @@
     "categoryAccount": "Maksājumi un pēcpārdošanas atbalsts",
     "author": "SugargooTab redakcija",
     "siteEvidence": "Par šo neatkarīgo katalogu",
-    "seoHomeTitle": "Sugargoo Spreadsheet: preču saites, fotoattēli un iepirkšanās ceļveži",
+    "seoHomeTitle": "Sugargoo izsmidzinātāja lapa: kurpes, apģērbs un produktu saites",
     "catalogCtaTitle": "Izmantojiet pārbaudes sarakstu praksē",
     "catalogCtaBody": "Salīdziniet preču saites katalogā, tad pirms pirkšanas vai nosūtīšanas pārbaudiet konkrēto sludinājumu un sava pasūtījuma informāciju.",
     "catalogCtaButton": "Pārlūkot preču saites",
-    "categoryCtaButton": "Izpētīt preču kategorijas"
+    "categoryCtaButton": "Izpētīt preču kategorijas",
+    "homeSearchIntro": "Atrast apavus, kapuces, sjersijas un aksesuāri. Atvērt produktu saiti, pārbaudīt pārdevēja iespējas, pēc tam pirms nosūtīšanas pārskatīt savu noliktavu QC.",
+    "seoHomeDescription": "Pārlūkot Sugargoo produktu saites uz apaviem, hoodies, Jerseys un aksesuāri. Salīdziniet atsauces fotogrāfijas un izmantot praktisku QC, izmēru un kuģniecības rokasgrāmatas.",
+    "seoCatalogTitle": "Sugargoo izsmidzinātāja lapa: Pārlūkot kurpes, apģērbs un aksesuāri",
+    "seoCatalogDescription": "Meklēt Sugargoo produktu saites, salīdzināt atsauces fotogrāfijas un cenas, un pārbaudīt sākotnējo sarakstu pirms pasūtīšanas. Pārlūkot apavus, apģērbu un aksesuārus.",
+    "seoCategoryTitle": "Sugargoo {category}: produktu saites un fotogrāfijas",
+    "seoCategoryDescription": "Pārlūkot {category} produktu saites priekš Sugargoo. Salīdziniet references fotogrāfijas un uzskaitītās cenas, tad apstiprināt izmērus, iespējas un pieejamību pirms pasūtīšanas.",
+    "catalogGuideNote": "Produktu fotogrāfijas un cenas ir atsauces. Pirms piegādes pārbaudiet precīzu pārdevēja sarakstu un savu noliktavu QC.",
+    "nextStep": "Izvēlieties nākamo soli",
+    "weightToolTitle": "Pakas svara kalkulators",
+    "weightToolIntro": "Pārbaudiet faktisko un tilpuma svaru. Šis rīks nenorāda piegādes cenas; izmantojiet izvēlētā maršruta dalīšanas un rēķinu izrakstīšanas noteikumu.",
+    "actualWeight": "Faktiskais iepakotās pakas svars (kg)",
+    "parcelLength": "Ārējais garums (cm)",
+    "parcelWidth": "Ārējais platums (cm)",
+    "parcelHeight": "Ārējais augstums (cm)",
+    "weightDivisor": "Maršruta tilpumsvara dalītājs",
+    "weightRule": "Maksas noteikums",
+    "higherWeight": "Lielāks par faktisko un tilpuma svaru",
+    "actualOnly": "Tikai faktiskais svars",
+    "calculateWeight": "Aprēķinātais svars",
+    "volumetricWeight": "Tilpuma masa",
+    "billingBase": "Svars pirms noapaļošanas",
+    "weightDisclaimer": "Tikai ilustratīvs svara aprēķins. Maršruta noapaļošana, minimālās maksas, izmēru ierobežojumi un pakalpojumu maksa joprojām ir spēkā. Apstiprināt pašreizējo citātu ar Sugargoo.",
+    "weightError": "Ievadiet pozitīvu skaitli katrā mērījumu laukā.",
+    "officialEstimatorGuide": "Atvērt oficiālo kuģniecības novērtējumu guide"
   },
   "groups": {
     "basics": "Darba sākšana",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo Spreadsheet ceļvedis: atrodiet un pārbaudiet preču saites",
-      "description": "Atrodiet preces Sugargoo tabulā, pārbaudiet aktuālos sludinājumus un variantus un atšķiriet paraugattēlus no sava pasūtījuma noliktavas QC fotoattēliem.",
+      "title": "Kā izmantot Sugargoo tabulu: atrast, pārbaudīt un pasūtīt",
+      "description": "Izmanto Sugargoo izklājlapu, lai atrastu produktu saites, pārbaudi izmēri un pārdevēja opcijas, atvērt pareizo pasūtījuma lapu, un pārskatīt noliktavas QC pirms nosūtīšanas.",
       "keyword": "sugargoo spreadsheet",
       "category": "getting-started",
       "intro": [
-        "Sugargoo spreadsheet ir noderīgs, ja tas palīdz izveidot mazāku un labāk izpētītu izvēli. Gara produktu attēlu lapa nepasaka, vai ir pieejams konkrēts izmērs, cik maksās paka vai vai pārdevēja pašreizējais sludinājums joprojām atbilst senākam ieteikumam. Uztver tabulu kā izpētes sākumu un galīgo pirkuma lēmumu saisti ar konkrēto sludinājumu.",
-        "Šis neatkarīgais katalogs saņem produktu informāciju un atsauces attēlus no cnbuycha. Pasūtīšana un maksājumi notiek Sugargoo. Tālāk aprakstītā metode savieno abus posmus, neuztverot kataloga ierakstu kā personīgu ieteikumu, krājumu garantiju vai noliktavas pārbaudes pierādījumu. Tā darbojas arī tad, ja atlasi glabā vienkāršā piezīmju lietotnē."
+        "Sugargoo izklājlapa ir produktu saišu direktorija. Izmantojiet to, lai atrastu vienumu, pēc tam pārbaudiet sākotnējo sarakstu un precīzu variantu par Sugargoo pirms maksājuma. Saglabāta saikne neapstiprina pašreizējos krājumus, izvēlēto lielumu, galīgo cenu vai pirkšanas aģenta pieņemšanu.",
+        "Sākt ar dzīvo katalogu vai kategoriju, piemēram, kurpes, kapuces vai skursteņi. Atvērt daudzsološu objektu, pārskatīt tās atsauces fotogrāfijas, un ievērot pieejamo pirkšanas saiti. Turiet savu īso sarakstu pietiekami mazs, lai pārbaudītu katru posteni pareizi."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Kā pirms pirkšanas pārbaudīt aktuālu sludinājumu",
+          "id": "spreadsheet-first-action",
+          "title": "No izklājlapas atrast pārbaudītu pasūtījumu",
           "paragraphs": [
-            "Atveriet kataloga preci un sekojiet tās sākotnējā sludinājuma saitei. Salīdziniet tirdzniecības vietnes preces ID, pārdevēju un izvēlēto variantu ar Sugargoo parādīto preci. Kataloga iekšējais lapas numurs ir cits identifikators. Tieši pirms maksāšanas vēlreiz pārbaudiet pašreizējo cenu, pieejamās izvēles un daudzumu; saglabāta kartīte neapstiprina pašreizējos krājumus.",
-            "Ja sākotnējā sludinājuma nav, preci nevar ielādēt vai variants atšķiras, šajā solī apstājieties. Atgriezieties tabulā un salīdziniet citu kandidātu. Pierakstiet, kāpēc pirmais nederēja, lai vēlāk neatkārtotu to pašu pārbaudi. Paraugattēli joprojām ir meklēšanas materiāls, pat ja tie atgādina noliktavas fotoattēlus."
+            "Meklēt pēc produkta veida vai īpašā nosaukuma, tad atveriet produkta lapu. Salīdzināt sarakstā virsrakstu, avota objekta identifikatoru, fotogrāfijas un izvēlētās opcijas. Ja pirkuma lapa atver citu krāsu vai izmēru, vēlreiz izvēlieties paredzēto variantu un apskatiet galīgā pasūtījuma kopsavilkumu. Nemaksājiet tikai tāpēc, ka attēls izskatās pazīstams.",
+            "Katalogā norādītā cena ir atsauce uz preci. Izveidot atsevišķu budžetu piegādei Ķīnā, jebkuriem izvēlētajiem pakalpojumiem un starptautiskajiem kravu pārvadājumiem. Saglabāt avota saiti ar savu izvēlēto izmēru un krāsu. Kad prece nonāk noliktavā, izmantojiet savu QC ierakstu, lai izlemtu, vai tas ir gatavs kuģim."
           ],
-          "table": {
-            "headers": [
-              "Pārbaude",
-              "Izmantojamie pierādījumi"
-            ],
-            "rows": [
-              [
-                "Preces identitāte",
-                "Sākotnējais tirdzniecības vietnes URL un preces ID"
-              ],
-              [
-                "Pašreizējā pieejamība",
-                "Aktuālais pārdevēja sludinājums un izvēlētā opcija"
-              ],
-              [
-                "Cena",
-                "Konkrētais variants un summa apmaksai"
-              ],
-              [
-                "Stāvoklis",
-                "Jūsu pasūtījuma fotoattēli pēc saņemšanas noliktavā"
-              ]
-            ]
-          }
+          "bullets": [
+            "Meklēt: izvēlēties kategoriju un šaurināt meklēšanu.",
+            "Pārbaudiet: atbilst sākotnējam sarakstam, opcijas un pašreizējā pasūtījuma cena.",
+            "Pasūtījums: izmantot oficiālo pirkuma plūsmu par atbilstīgu posteni.",
+            "Pārskats: pārbaudīt savu noliktavu QC, pirms veikt paku."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC fotoattēli: preču pārbaude pirms nosūtīšanas",
-      "description": "Izmantojiet praktisku Sugargoo QC fotoattēlu sarakstu apaviem, apģērbam un somām. Pirms nosūtīšanas pārbaudiet etiķetes, izmērus, vīles un trūkstošās detaļas.",
+      "title": "Kā pārbaudīt Sugargoo QC fotoattēlus pirms nosūtīšanas",
+      "description": "Atrast Sugargoo noliktava QC fotogrāfijas, pārbaudīt pareizo vienību un izmēru, pieprasīt noderīgu papildu mērījumus, un atrisināt problēmas pirms starptautiskās kuģniecības.",
       "keyword": "sugargoo qc foto",
       "category": "quality",
       "intro": [
-        "Noliktavas foto visvairāk palīdz tad, ja jāpieņem konkrēts lēmums: vai saņemtā prece atbilst pasūtījumam, vai svarīga detaļa nav skaidra, vai redzams bojājums prasa rīcību? Apskatot visus attēlus bez pārbaudes saraksta, būtiskākais jautājums var palikt neatbildēts. Skaidra metode palīdz foto izmantot mērķtiecīgi.",
-        "Sugargoo apraksta parasti piecus standarta QC attēlus, bet pārbaudes tvērums atkarīgs no preces un pasūtījuma veida. Foto skaits negarantē, ko iespējams pārbaudīt. Šīs vietnes cnbuycha atsauces attēli ir kataloga materiāls, nevis pārbaudīts QC tavam personīgajam Sugargoo pasūtījumam; pirms starptautiskas nosūtīšanas apskati savu noliktavas ierakstu."
+        "Lai pārbaudītu Sugargoo QC fotoattēlus, pierakstieties un atveriet saņemto preci savā pasūtījuma vai pakošanas centra ierakstā. Pārskatiet šim sūtījumam pievienotos attēlus, pirms pievienojat tos kādam starptautiskam sūtījumam. Kataloga attēlus uz SugargooTab ir atsauces attēlus, nevis fotogrāfijas savu pasūtījumu.",
+        "Vispirms pārbaudiet izvēlēto variantu, etiķeti, daudzumu un redzamo stāvokli. Ja piemērotība ir atkarīga no mērījuma, kas nav parādīts, pirms nosūtīšanas apstiprināšanas pieprasa šo konkrēto mērījumu. Vizuālā QC nav autentificēšana vai garantijas piemērotību."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "Apavu, apģērba un somu QC fotoattēlu pārbaudes",
+          "id": "qc-first-check",
+          "title": "Kur atrast fotogrāfijas un ko pārbaudīt vispirms",
           "paragraphs": [
-            "Vispirms salīdziniet pasūtījumu, krāsu, izmēru un daudzumu. Pēc tam apskatiet detaļas, kas varētu mainīt jūsu lēmumu preci paturēt. Šis saraksts ir praktisks fotoattēlu pārskatīšanas palīgs, nevis garantija, ka parastā QC ietver katru leņķi vai mērījumu. Pieprasiet konkrētos trūkstošos pierādījumus un pirms turpināšanas pārbaudiet pakalpojuma maksu.",
-            "Piemēram, tikai no priekšpuses fotografēta soma neapstiprina siksnas stiprinājumu vai iekšpuses stāvokli. Ja šī detaļa ir svarīga, lūdziet atbilstošu skatu. Ja vajadzīgs mērījums, norādiet tā sākumu un beigas un lūdziet redzamu mērlenti. Fotogrāfijas neapstiprina visas funkcionālās īpašības un nepierāda autentiskumu."
+            "Sākot ar precīzu pasūtījuma atsauci. Pārdevēja iegādātajai vai piegādātajai precei vēl var nebūt noliktavas fotoattēlu. Kad prece ir saņemta, pārbaudiet tās pasūtījuma informāciju un pakošanas centra ierakstu par QC attēlus. Ja ieraksts saka, ka tas ir gatavs, bet neviena fotogrāfijas neparādās, nosūtīt atbalstīt pasūtījuma atsauci un jautāt, vai pārbaude ir pabeigta.",
+            "Atveriet pilnu attēlu, nevis spriežot par nelielu sīktēlu. Pieskaņot krāsu un izmēru etiķeti jūsu apmaksātajam pasūtījumam, pēc tam apskatiet abas puses un visus iekļautos piederumus. Saglabāt konkrētu jautājumu jebkurā leņķī jūs nevarat redzēt. Par kurpēm, insoles mērīšanu un izmēra fotoatbild uz dažādiem jautājumiem; viens nevar aizstāt otru."
           ],
-          "table": {
-            "headers": [
-              "Prece",
-              "Pārbaudiet sava pasūtījuma fotoattēlos",
-              "Ja nav skaidrs, pieprasiet"
-            ],
-            "rows": [
-              [
-                "Apavi",
-                "Pāri, izmēra etiķetes, zoles un redzamās vīles",
-                "Abas izmēra etiķetes un vajadzīgo zoles vai vīles leņķi"
-              ],
-              [
-                "Apģērbs",
-                "Izmēra etiķeti, auduma izskatu un šuvumu",
-                "Mērījumu uz līdzenas virsmas ar skaidru sākumu un beigām"
-              ],
-              [
-                "Somas",
-                "Siksnas, aizdares, oderi un piederumus",
-                "Iekšpuses un stiprinājuma vietu tuvplānus"
-              ],
-              [
-                "Jebkura prece",
-                "Pareizo variantu, daudzumu un redzamus bojājumus",
-                "Skaidru konkrētās neatbilstības attēlu"
-              ]
-            ]
-          }
+          "bullets": [
+            "Pārbaudiet, vai katrs foto pieder tai pašai kārtībai un variantam.",
+            "Pieprasīt ciešu skatu uz iespējamu defektu, norādot tā atrašanās vietu.",
+            "Glabāt neatrisinātos sūtījumus ārpus pakas, līdz jums ir atbilde."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo piegādes kalkulators: svars, izmēri un kopējās izmaksas",
-      "description": "Sugargoo piegādes kalkulatorā izmantojiet reālistisku svaru un izmērus. Salīdziniet piemērotus maršrutus un saprotiet, kas aplēsē paliek neskaidrs.",
+      "title": "Sugargoo piegādes kalkulators: svars un izmaksas",
+      "description": "Aprēķiniet paku tilpuma svaru, izprotiet maksas svaru un salīdziniet Sugargoo piegādes piedāvājumus, izmantojot jūsu galamērķi, izmērus un produktu kategoriju.",
       "keyword": "sugargoo piegādes kalkulators",
       "category": "shipping",
       "intro": [
-        "Transporta aplēse ir noderīga, ja zini tās ievaddatus. Divi cilvēki var ievadīt vienādu preces svaru un iegūt atšķirīgus rezultātus, jo atšķiras galamērķi, produktu kategorijas, pakas izmēri vai maršruti. Tādēļ cita pircēja transporta kopsumma ir vājš pamats sava pasūtījuma budžetam.",
-        "Sugargoo oficiālās kalkulatora norādes izmanto galamērķi, preces kategoriju, svaru un izmērus pieejamo variantu salīdzināšanai. Uztver rezultātu kā datētu scenāriju un atjaunini to, uzzinot vairāk par iepakoto paku. Šis ceļvedis rāda, kā izveidot scenārijus un identificēt nenoteiktību pirms problēmām norēķinos."
+        "Izmantojiet Sugargoo oficiālo kuģniecības novērtējumu pašreizējām cenām un maršrutu pieejamību. Ieraksta galamērķi, preces kategoriju, iepakoto svaru un izmērus. Svara rīks palīdz pārbaudīt matemātiku; tas nenorāda kravu vai savienojas ar jūsu Sugargoo kontu.",
+        "Salīdziniet maršrutus, izmantojot identiskus paku datus. Cenu, pamatojoties tikai uz preces svaru, var izlaist vietu, ko izmanto kurpes vai aizsargiepakojums. Pirms samaksas pārbaudiet katra maršruta tarifikācijas noteikumu, noapaļošanu un minimālo maksu."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Pirms preču pirkšanas sagatavojiet divas aplēses",
+          "id": "shipping-inputs",
+          "title": "Darbināta tilpuma-svara piemērs",
           "paragraphs": [
-            "Izveidojiet sākotnējo scenāriju ar labāko pieejamo svara un izmēru informāciju, pēc tam piesardzīgu scenāriju, kas ņem vērā neskaidro iepakojumu. Saglabājiet vienādu galamērķi, saturu un citus iestatījumus. Ja pasūtījums iekļaujas budžetā tikai ar optimistiskākajiem pieņēmumiem, atrisiniet neskaidrību pirms maksāšanas par precēm.",
-            "Pierakstiet piedāvājuma datumu, maršrutu, vienības, paredzamos izmērus un izvēlētos papildinājumus. Kad pieejami mērījumi, aizstājiet pieņēmumus ar faktiskajiem sūtījuma datiem. Sūtīšanai uz ASV izmantojiet atsevišķo ASV ceļvedi; vairākiem noliktavas pasūtījumiem pēc apvienošanas ceļveža salīdziniet visas apvienotā un sadalīto sūtījumu izmaksas."
+            "Ilustratīvs piemērs, nevis piegādes citāts: pakas pasākumi 40 × 30 × 20 cm un sver 3 kg. Ar 6000 dalītāju tā tilpuma svars ir 4 kg. Maršruts, kas izmanto lielāku faktisko un tilpuma svaru, sāktos no 4 kg pirms tā noapaļošanas vai minimālās uzlādes. Maršruta tarifikācijas faktiskā masa sāktos tikai no 3 kg.",
+            "Ja tās pašas preces var droši iederēties 40 × 30 × 15 cm iepakojumā, aprēķinātais tilpuma svars ar šo dalījumu kļūst par 3 kg. Tas tikai salīdzina mērījumus. Tas nepierāda ietaupījumus: iepakošanas pakalpojumi, maršruta atbilstība, svara pieaugums un pašreizējais tarifs var mainīt galīgo kopējo apjomu."
+          ],
+          "bullets": [
+            "Izmantojiet ārējos iesaiņotos izmērus centimetros, nevis produkta izmērus.",
+            "Konvertēt grami uz kilogramu pirms, izmantojot zemāk minēto rīku: 3000 g ir vienāds ar 3 kg.",
+            "Paņemiet nodalīšanas un uzlādes noteikumu no maršruta, ko apsverat."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo izmēģinājuma iepakošana: svars, izmēri un kad to izmantot",
-      "description": "Izlemiet, kad noder Sugargoo izmēģinājuma iepakošana, norādiet iepakojuma izvēli un salīdziniet izmērīto sūtījumu ar sākotnējo piegādes aplēsi.",
+      "title": "Sugargoo izmēģinājuma iepakošana: kā darbojas un kad noder",
+      "description": "Uzziniet, ko Sugargoo mēģinājums kuģniecība dara, kad tas ir vērts maksa, un kā izmantot iepakotu svaru un izmērus pirms izvēlēties kuģniecības maršrutu.",
       "keyword": "sugargoo rehearsal shipping",
       "category": "shipping",
       "intro": [
-        "Izmēģinājuma iepakošana ir visnoderīgākā, ja nenoteiktība par iepakoto paku ietekmē vēl nepieņemtu lēmumu. Varbūt izvēlies maršrutu, lem par apjomīga iepakojuma saglabāšanu vai pārbaudi preču grupas atbilstību pakalpojuma ierobežojumiem. Labāki mērījumi var atbildēt uz šiem jautājumiem, taču negarantē zemāku transporta rēķinu.",
-        "Sugargoo raksturo šo pakalpojumu kā pakas simulāciju pirms nosūtīšanas, kas sniedz precīzāku informāciju par svaru un tilpumu. Uztver to kā mērīšanas un iepakošanas lēmumu, pārbaudot pašreizējo cenu un noteikumus savā kontā. Praktiskā vērtība rodas, zinot, kā izmantosi rezultātu."
+        "Sugargoo mēģinājumu piegāde ir iesaiņošanas un mērīšanas pakalpojums pirms starptautiska nosūtīšanas. Tas palīdz jums pārbaudīt pakas faktisko svaru un izmērus pirms izvēloties kuģniecību. Ir vērts apsvērt, ja kastes, lielgabarīta preces vai maršruta ierobežojums padara jūsu novērtējumu neskaidru; tas negarantē ietaupījumus.",
+        "Vispirms pabeidziet savu preci un QC pārbaudes. Tad apstipriniet pašreizējo pakalpojumu maksu un iepakošanas iespējas savā kontā. Izmanto rezultātu, lai salīdzinātu atbilstīgos maršrutus ar to pašu saturu, galamērķi un iepakojumu."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Kad vērts apsvērt izmēģinājuma iepakošanu?",
+          "title": "Kā izmantot mēģinājumu kuģniecību",
           "paragraphs": [
-            "Apsveriet izmēģinājumu, ja nezināmie iepakotā sūtījuma izmēri var mainīt maršrutu vai budžetu: apjomīga viegla prece, vairākas mazumtirdzniecības kastes vai sūtījums tuvu maršruta robežai. Pierakstiet atrisināmo neskaidrību un pārbaudiet pašreizējo maksu. Ja pie visām saprātīgajām aplēsēm lēmums būtu vienāds, papildu mērījums var būt mazāk vērtīgs.",
-            "Salīdziniet rezultātu ar sākotnējiem datiem: faktisko svaru, ārējiem izmēriem, saglabāto iepakojumu un izvēlētajiem pakalpojumiem. Pārrēķiniet pēc maršruta pašreizējās norēķinu kārtības. Mazāks izmērs negarantē mazāku galīgo rēķinu, jo nozīme vēl var būt minimālajām maksām, svara pakāpēm un citām opcijām."
-          ]
+            "Jūsu Sugargoo kontā norādiet noliktavas priekšmetus, kurus vēlaties nosūtīt kopā. Atveriet pieejamo pirmsnosūtīšanas paketes simulācijas vai mēģinājumu pakalpojumu, pārbaudiet tās maksu un norādiet, vai būtu jāpaliek oriģinālajām kastēm un aizsargiepakojumam. Ekrāna zīmes var mainīties; pirms maksājumu veikšanas lūgt atbalstu, ja risinājums vai tā darbības joma nav skaidra.",
+            "Kad rezultāts ir gatavs, reģistrē iepakoto svaru un visus trīs ārējos izmērus. Atkārtoti ievadiet šos mērījumus oficiālajā vērtēšanā. Salīdziniet atbilstīgos maršrutus, to svara pieaugumu un iepakošanas maksu pirms pakas iesniegšanas. Ja vēlāk mainīsiet saturu vai iepakojumu, sūtījums vairs nedrīkst tikt raksturots iepriekšējos mērījumos."
+          ],
+          "table": {
+            "headers": [
+              "Jūsu situācija",
+              "Lēmums"
+            ],
+            "rows": [
+              [
+                "Vairākas kurpes vai masīvs mētelis",
+                "Pirms izvēlēties maršrutu, pievērsīsim uzmanību mērījumiem."
+              ],
+              [
+                "Pacēlums tuvu izmēram vai svara ierobežojumam",
+                "Pārbauda, vai sapakotais rezultāts atbilst šai precīzajai robežai."
+              ],
+              [
+                "Zināms kompakts sūtījums; maršruta izvēle paliek tāda pati",
+                "Papildu pakalpojums var dot nelielu pievienoto vērtību."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Weidian un Taobao saites Sugargoo: pārbaudiet un novērsiet kļūdas",
-      "description": "Pirms pirkšanas Sugargoo pārbaudiet Weidian un Taobao preču saites. Atrisiniet pazudušu sludinājumu, nepareizu variantu un ielādes problēmas bez minēšanas.",
+      "title": "Sugargoo saite nedarbojas? Taobao un Weidian risinājumi",
+      "description": "Fix kopīgo Sugargoo produktu saite problēmas: nepilnīga dalīšana saites, nepieejami priekšmeti, nepareizi varianti un trūkstošās iespējas no Taobao vai Weidian.",
       "keyword": "no Weidian uz Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Preces saite savieno ieteikumu ar konkrētu pārdevēja sludinājumu. Tā pati par sevi neapstiprina izmēru, krāsu, krājumus vai galīgo cenu ar piegādi. Drošākais veids, kā Sugargoo izmantot Weidian vai Taobao saiti, ir saglabāt šo preces identitāti un pēc tam pirms maksāšanas pārbaudīt izvēles oficiālajā pasūtījuma ekrānā.",
-        "Šis ceļvedis skaidro, ko kopēt, kā atpazīt neatbilstošu sludinājumu un ko darīt, ja automātiska ielāde neizdodas. Tas arī atšķir avota tirgus preces ID no šī kataloga iekšējā lapas identifikatora, lai ērta pirkšanas poga nekļūtu par iemeslu izlaist pēdējās pārbaudes."
+        "Ja Taobao vai Weidian link netiks ielādēts Sugargoo, vispirms atveriet sākotnējo produkta lapu un pārbaudiet, ka produkts joprojām pastāv. Kopēt savu tiešo produkta URL, bez apkārtnes Share tekstu, tad izmēģiniet oficiālo produktu meklēšanu vēlreiz. Saglabāt objekta identifikatoru neskartu.",
+        "Nepareizs imports var nozīmēt nepilnīgu saiti, nepieejamas opcijas, izpārdotu sarakstu vai preci, ko aģents nevar pieņemt. Manuāls pasūtījums ir piemērots tikai atbilstīgam pirkumam, kura informāciju var apstiprināt. Tas neskar ierobežojumus."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "Ko pārbaudīt, ja preces saite neielādējas",
+          "id": "link-troubleshooting",
+          "title": "Pieskaņot simptomu nākamajam solim",
           "paragraphs": [
-            "Vispirms atveriet sākotnējo preces lapu un pārliecinieties, ka tā joprojām identificē paredzēto preci. Veikala sākumlapa, saīsināts kopīgošanas teksts vai noņemts sludinājums nav pilna preces URL aizstājējs. Pirms atkārtota mēģinājuma salīdziniet tirdzniecības vietnes preces ID. Noņemiet nesaistīto kopīgošanas tekstu, nemainot preces identitāti.",
-            "Ja sākotnējā prece pastāv, bet automātiskā nolasīšana neizdodas, pārbaudiet oficiālās manuālā pasūtījuma iespējas un pieņemšanas nosacījumus. Glabājiet kopā pārdevēju, precīzu variantu, daudzumu, preces URL un cenu. Manuāla veidlapa neatceļ preču ierobežojumus un negarantē pieejamību. Ja aktuālo sludinājumu nevar pārbaudīt, izvēlieties citu kandidātu, nevis miniet pēc attēla."
-          ]
+            "Izmantojiet to pašu sākotnējo sarakstu, salīdzinot tirgus un Sugargoo ekrānus. Līdzīgi nosaukts elements nav pierādījums tam, ka importētais variants ir pareizs. Ja atbalsts ir nepieciešams, pievienojiet tiešo URL, produkta identifikatoru, izvēlēto variantu un precīzu kļūdu tekstu; noņemiet privāta konta datus no ekrāna."
+          ],
+          "table": {
+            "headers": [
+              "Ko jūs redzat",
+              "Ko pārbaudīt"
+            ],
+            "rows": [
+              [
+                "Saite atver kopīgošanas ekrānu vai teksta ziņojumu",
+                "Atvērt produktu pats un kopēt tā tiešo URL."
+              ],
+              [
+                "Sākotnējais saraksts nav pieejams",
+                "Vaicājiet pārdevējam par pieejamību; neizmantojiet vecu cenu atkārtoti."
+              ],
+              [
+                "Objekts atveras, bet trūkst izmēra vai krāsas",
+                "Apstiprināt šo konkrēto iespēju pirms pasūtīšanas."
+              ],
+              [
+                "Aģents noraida objektu",
+                "Vaicā par atbilstību; neslēpt objektu."
+              ],
+              [
+                "Darbu saraksts, bet imports joprojām neizdodas",
+                "Vaicā par atbalstu, vai ir iespējams atbalstīt manuālo rīkojumu."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Sugargoo piegāde uz ASV: izmaksas, svars un piegādes posmi",
-      "description": "Plānojiet Sugargoo piegādi uz ASV: pirms starptautiskās pārvadāšanas apmaksas salīdziniet sūtījuma svaru, izmērus, maršruta nosacījumus un piegādes posmus.",
+      "title": "Sugargoo piegāde uz ASV: izmaksas, maršruti un laiks",
+      "description": "Plānot Sugargoo piegāde uz ASV ar pilnīgu izmaksu kontrolsarakstu, konsekventas paku ieejas, maršrutu salīdzināšanu un izsekošanas soļi pirms nosūtīšanas.",
       "keyword": "sugargoo shipping to usa",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "Sugargoo nosūtīšana uz ASV ir atsevišķs lēmums no preču iegādes. Sāciet ar piegādes adresi, precēm, ko vēlaties nosūtīt, un to iepakotā svara un izmēru aplēsi. Tad salīdziniet kontā patiešām piedāvātos maršrutus. Cita cilvēka sūtījuma cena ir tikai atsauce: tā galamērķis, datums, izmēri un saturs var atšķirties no jūsu sūtījuma.",
-        "Šis ceļvedis sniedz salīdzināšanas metodi, nevis fiksētu cenu vai piegādes solījumu. SugargooTab ir neatkarīgs katalogs un nevar Sugargoo vārdā aprēķināt cenu, nosūtīt vai izsekot jūsu sūtījumu. Plānošanai izmantojiet oficiālo kalkulatoru, bet maksāšanas lēmumam – galīgo sūtījuma ekrānu. Saglabājiet piedāvājuma sastāvu, lai vēlākās izmaiņas būtu saprotamas."
+        "Par Sugargoo piegāde uz ASV, saņemt citātu par savu faktisko stāvokli, preces kategoriju, iepakoto svaru un izmēriem. Lētāk parādītā līnija ir noderīga tikai tad, ja jūsu preces un adrese ir atbilstīga. Maršruta pieejamība, cenu noteikšana un piegādes prognozes var mainīties.",
+        "Nošķir preču cenu no starptautiskā paku budžeta. Salīdziniet kopējo maksājamo summu un piegādes nosacījumus, izmantojot vienu un to pašu paku, pirms nosūtīšanas pārbaudiet galīgos iepakotos mērījumus."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Salīdzināt ASV maršrutus, nesajaucot dažādas pakas",
+          "paragraphs": [
+            "Izveidot vienu atsauces paku pirms vairāku maršrutu rezultātu atvēršanas. Reģistrē savu valsts un pasta kodu, preču kategoriju, faktisko svaru, ārējos izmērus un nepieciešamo aizsardzību. Saglabāt cenu piedāvājumu datumu un valūtu ar katru rezultātu. Ja viens rezultāts neietver izmērus vai izmanto citu kategoriju, to atkārtoti pārdala pirms cenu salīdzināšanas.",
+            "Attiecībā uz katru atbilstīgo maršrutu reģistrē maksājamo kravu, svara noteikumu, ietver pakalpojumus, aplēsto tranzīta diapazonu un gala piegādes pārvadātāju, ja norādīts. Pievienot fasējumu vai apdrošināšanu atsevišķi. Izlasiet pašreizējos importa un maršruta nosacījumus, nevis pieņemot, ka maršruta nosaukums negarantē nekādus papildu maksājumus vai muitošanu."
+          ],
+          "bullets": [
+            "Salīdziniet tās pašas preces un iepakojuma plānu.",
+            "Pārbaudīt, vai aplēse sākas no nosūtīšanas brīža vai no cita starpposma.",
+            "Glabāt produktu kvītis un precīzu vienību aprakstus ar paku uzskaiti."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Atdaliet preču tēriņus no ASV sūtījuma budžeta",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Sugargoo piegāde uz Apvienoto Karalisti: izmaksas",
+      "description": "Salīdziniet Sugargoo UK kuģniecības cenas, faktisko un tilpuma svaru, piegādes pārņēmējus un importa maksas informāciju pirms paku iesniegšanas.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Lai novērtētu Sugargoo piegādi uz Apvienoto Karalisti, izvēlieties savu faktisko galamērķa reģionu, preču kategoriju, iepakoto svaru un izmēru oficiālajā vērtēšanā. Salīdziniet tikai šīs kombinācijas izmantošanas ceļus. Pirms samaksas pārbaudiet galīgo cenu savā kontā; cena no cita pircēja paku nav jūsu kuģniecības likme.",
+        "Šajā rokasgrāmatā izmantotas praktiskas salīdzināšanas darba lapas, nevis fiksētas cenas. Tas palīdz jums izlemt, vai kompakts sūtījums, lielgabarīta kurpju paka vai pasūtījums, kam ir paaugstināta jutība pret termiņu, ir nepieciešams cits kuģniecības plāns."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Sagatavot vienu zemes gabalu taisnīgam Apvienotās Karalistes salīdzinājumam",
+          "paragraphs": [
+            "Sākt ar precēm, kuras jau esat reģistrējies noliktavā. Uzrakstiet priekšmetu sarakstu un iepakojumu, kuru plānojat turēt. Cenu kurpēm ar mazumtirdzniecības kastēm nevar salīdzināt taisnīgi ar cenu, kas pieņem, ka kastes tiks noņemtas. Ja mērījumi ir pietiekami neskaidri, lai mainītu savu lēmumu, vispirms apsveriet iepakošanas mēģinājumu.",
+            "Izmantojiet pareizo adreses reģionu un pasta kodu. Lielbritānijā un Ziemeļīrijā ir atšķirīgs importa režīms, tāpēc izvairīties no atrašanās vietas kopēšanas no iepriekšējā novērtējuma. Lūdziet platformu, lai apstiprinātu mērķa pārklājumu, ja jūsu adrese nav atbalstīta izvēlētajā maršrutā."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Izveidot maršruta salīdzinājumu, ko varat izmantot atkārtoti",
+          "paragraphs": [
+            "Atver pieejamos rezultātus un pieraksti piedāvājuma datumu, valūtu un iepakotās pakas izmērus. Katram maršrutam izveido atsevišķu rindu. Salīdzini faktiski maksājamo summu pēc piemērojamās kupona atlaides, nevis pārsvītroto akcijas cenu. Kupons ar minimālo pirkuma summu var nebūt derīgs mazākai pakai."
+          ],
+          "table": {
+            "headers": [
+              "Ieraksts par katru maršrutu",
+              "Kāpēc tas ir svarīgi"
+            ],
+            "rows": [
+              [
+                "Maksas noteikums un svara pieaugums",
+                "Vienam un tam pašam izmērītajam sūtījumam var būt citāds rēķins."
+              ],
+              [
+                "Kravas un izvēles pakalpojumi",
+                "Iepakojums vai apdrošināšana var būt atsevišķi posteņi."
+              ],
+              [
+                "Paredzamais tranzīts un tā sākumpunkts",
+                "Pārdevēja piegādes un noliktavu darbi var notikt pirms starptautiskā tranzīta."
+              ],
+              [
+                "Apvienotās Karalistes piegādes pārvadātājs un adrešu pārklājums",
+                "Pēdējā nodošana ietekmē to, kā jūs izsekot piegādi."
+              ],
+              [
+                "Ievedmuitas nodokļi",
+                "Izlasiet, kas ir iekļauts sarakstā un kas jums, iespējams, vēl būs jāmaksā."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Apmales: salīdzināt aizsardzību un paku izmēru",
+          "paragraphs": [
+            "Pieņemsim, ka divi apavu pāri ir izturējuši jūsu izmēra un stāvokļa pārbaudes. Salīdziniet divus iepakošanas plānus: turēt abas kastes vai noņemt kastes, ja tās ir drošas un pieņemamas jums. Vaicāt par ārējo dimensiju pabeigtas pakas saskaņā ar izvēlēto plānu. Neiedziļiniet šos izmērus, pievienojot apavu garumus kopā.",
+            "Ja jūs savākt kastes vai nepieciešams tos, lai varētu atgriezties, paturot tos var būt svarīgi vairāk nekā samazināt apjomu. Ja jūs tos noņemat, vienojas par apavu aizsardzību. Pārrēķina maršrutu, izmantojot iegūtos izmērus, un iekļauj iepakošanas pakalpojuma izmaksas. Mazāks iepakojums nav automātiski lētāks vai drošāks."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Pārbaudīt importa nodevas un veikt pasūtījumu uzskaiti",
+          "paragraphs": [
+            "Izmantojiet turpmāk minētos GOV.UK norādījumus precēm, kas nosūtītas no ārvalstīm. Importa procedūra ir atkarīga no galamērķa, preču un darījuma. Maršruts, kas tiek tirgots ar nodokli, nav vispārējs atbrīvojums no nodokļa; izlasiet tā noteikumus un apstipriniet, kuri maksājumi ir iekļauti.",
+            "Glabāt kvītis, posteņu aprakstus un summu, kas samaksāta ar zemes gabala ierakstu. Precīzi deklarē preces un lūdz atbalstu par neskaidriem deklarācijas laukiem. Šī rokasgrāmata neaprēķina nodokli un nesniedz vispārējo deklarācijas summu. Ja pārvadātājs pieprasa maksājumu vai dokumentus, pārbaudiet pieprasījumu pārvadātāja oficiālajā tīmekļa vietnē."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Lasīt izsekošanu kā pārsegumu secību",
+          "paragraphs": [
+            "Atsevišķa pārdevēja nosūtīšana, noliktavas kvīts, starptautiskā nosūtīšana un Apvienotās Karalistes piegāde. Pārdevēja uzskaites numurs attiecas uz piegādi noliktavā; tas nepierāda, ka starptautiskais sūtījums ir atstāts. Pēc paku nosūtīšanas pārbaudiet loģistikas ierakstu par numuru, kas saistīts ar izvēlēto kuģniecības līniju.",
+            "Ja tiek identificēts gala piegādes pārvadātājs, ievērojiet arī tā oficiālo izsekošanas lapu. Saglabāt pēdējo skenēšanu, datumu un jebkuru nepieciešamo darbību. Par kavēšanos, lūdziet atbalstu, kurš posms gaida un vai ir vajadzīgi dokumenti vai adreses labojums. Paredzamais piegādes klāsts nav garantēts ierašanās datums."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Izvēlieties maršrutu lēmumam, ar kuru patiesībā saskaraties",
+          "paragraphs": [
+            "Attiecībā uz kompaktu paku bez termiņa, salīdzina kopējās izmaksas starp atbilstīgajiem maršrutiem. Par lielu paku, izpētīt svara noteikumu un iepakota izmēra vispirms. Ja pasūtījums ir sensitīvs laika ziņā, ļauj sagatavot noliktavas un muitu, kā arī publicēto tranzīta aplēsi.",
+            "Ja neviens atbilstošs maršruts neatbilst jūsu vajadzībām, apturiet sūtījumu un lūdziet opcijas. Sūtījumu sadalīšana rada jaunu salīdzinājumu ar divām pamatmaksām un, iespējams, divām pakalpojumu maksām. Aprēķināt gan pilnīgas kopsummas, nevis pieņemot, ka vairāk paku būs lētāk."
+          ]
+        }
+      ],
+      "checklist": [
+        "Izmantojiet reālo Apvienotās Karalistes reģionu un pasta kodu.",
+        "Pabeigt QC pirms izvēlēties iepakošanas plānu.",
+        "Salīdziniet maršrutus ar identisku saturu un mērījumiem.",
+        "Ierakstīt cenu piedāvājumu datumu, valūtu un iekļautie pakalpojumi.",
+        "Izlasiet pašreizējos importa un maršruta noteikumus.",
+        "Saglabāt gan starptautiskas, gan gala piegādes izsekošanas norādes."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Apvienotās Karalistes kuģniecības pārskats",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: kuģniecības maksas aplēse",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: preces nosūtītas no ārvalstīm",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: paku izsekošana",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Sugargoo piegāde uz Kanādu: izmaksas un izsekošana",
+      "description": "Plānot Sugargoo paku uz Kanādu, izmantojot savu provinci, pasta kodu, iepakoto izmēru, maršruta maksas un gala pārvadātāja izsekošanas informāciju.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo piegāde uz Kanādu ir atkarīga no jūsu provinces, adreses, preču un iepakotu paku mērījumiem. Sākt ar pašreizējo cenu šīm precīzajām izejvielām. Apstipriniet, kurš pārvadātājs piegādās pēdējo posmu; nepieņemiet, ka katrs maršruts izmanto Kanāda Post.",
+        "Noderīgākais salīdzinājums ietver adreses pārklājumu, pilnu maksājamo summu un to, kā paka tiks izsekota pēc ierašanās. Šis ceļvedis izskaidro, ko ierakstīt pirms samaksas, neuzlūkojot veco maršruta cenu kā aktuālu piedāvājumu."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Vispirms pārbaudiet provinces un pasta koda pārklājumu",
+          "paragraphs": [
+            "Izmantojiet piegādes adresi, kuru plānojat glabāt sūtījumā. Precīzi ievadiet provinces un pasta kodu, un norādiet visus nepieciešamos vienības numurus. Pirms izvēlaties maršrutu, pārbaudiet, vai tas pieņem jūsu adreses tipu un vai ir piemērojams attālinātais apgabals vai piegādes uzcenojums. Cena citai provincei var nebūt noderīgs salīdzinājums.",
+            "Ja plānojat izmantot pasta kasti, uzņēmuma adresi vai attālo atrašanās vietu, pajautājiet tieši par šo adresi. Neaizvietojiet kādu pilsētu, kas atrodas netālu no pilsētas, tikai tāpēc, lai izveidotu maršrutu, kas parādās aplēsē. Ja aptvērums nav skaidrs, atrisināt to pirms preču izvešanas no noliktavas."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Glabāt paku budžetu atsevišķi no produkta cenas",
+          "paragraphs": [
+            "Veidot budžetu ar atsevišķiem ierakstiem par precēm, piegādei Ķīnā, izvēlētiem noliktavas pakalpojumiem, starptautisko kravu un iespējamo importa vai pārkraušanas maksas. Ierakstīt valūtu par katru summu. Bez pašreizējās konversijas nebūtu jāpievieno parādīta ASV dolāru cena un Kanādas dolāru budžets.",
+            "Kravas pārvadājumiem salīdzināt pašreizējās atbilstošās cenas, izmantojot to pašu faktisko svaru, ārējos izmērus un preču kategoriju. Pārbaudīt, vai katra līnija maksas faktisko svaru, tilpuma svaru vai citu norādīto noteikumu. Ja iepakošana nav pabeigta, atzīmējiet mērījumus kā aprēķinus un pirms nosūtīšanas vēlreiz atkārtojiet salīdzinājumu."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "Lielapjoma mētelis ir nepieciešams izmēra pārbaudi, kā arī svara pārbaudi",
+          "paragraphs": [
+            "Iedomājieties nosūtīt ziemas mēteli kopā ar nelielu aksesuāru. Mētelis var dominēt kastes izmēriem pat tad, ja tas nav smagākais postenis. Ierakstīt pabeigtas pakas izmēru un aprēķināt tilpuma svaru ar dalītāju, ko izmanto katrā maršrutā. Maršruts, kas izskatās lēts par kilogramu, var būt mazāk pievilcīgs pēc tam, kad ir piemērots tā izmēra noteikums.",
+            "Vaicā, vai audumam un konstrukcijai ir piemērota cita iepakošanas metode. Saspiešana var nebūt piemērota katram apģērbam vai piederumiem. Iekļaut jebkādas iepakošanas izmaksas, un salīdzināt aizsargāto paku nevis teorētisko minimālo apjomu. Ja aksesuārs ir trausls, atsevišķa aizsardzība var būt vērtīgāka par mazāko iespējamo kasti."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Lasīt Kanādas importa vadlīnijas pirms nosūtīšanas",
+          "paragraphs": [
+            "Kanādas Robežu pakalpojumu aģentūra paskaidro, kā tiek pārskatīts importētais pasts un kā var piemērot nodevas vai nodokļus. Uzglabāt pieejamos preču kvītis un precīzus aprakstus. Neuzskatiet mazumtirdzniecības pirkumu par dāvanu tikai tāpēc, ka paka ir paredzēta personiskai lietošanai.",
+            "Pārbaudiet pašreizējos maršruta noteikumus visām iekļautajām importa darbībām un jautāt, kādas nodevas vēl var iekasēt. Pasta un kurjera apkalpošana var atšķirties. Izmantojiet zemāk norādītos oficiālos CBSA resursus jūsu situācijai, nevis pieņemot, ka noteikumi par precēm, kas nosūtītas no citas valsts, attiecas uz sūtījumu no Ķīnas."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Sekojiet starptautiskajiem un Kanādas piegādes dokumentiem",
+          "paragraphs": [
+            "Pēc nosūtīšanas atveriet paku loģistikas ierakstu un saglabājiet tā izsekošanas numuru. Oriģinālais pārdevēja piegādes numurs ir cits ieraksts. Pārbaudīt, vai izvēlētajā rindā ir noteikta atsevišķa galapārvadātāja atsauce pēc tam, kad sūtījums nonāk Kanādā.",
+            "Ja Kanādas Pasts ir nosauktais pārvadātājs, pēc nodošanas izmantojiet tā oficiālo izsekošanas dienestu. Ja tiek nosaukts cits pārvadātājs, izmantojiet šo pārvadātāju. Izveidotais skaitlis pats par sevi nenozīmē, ka pārvadātājs ir saņēmis sūtījumu. Ja sūtījums ir apturēts, sniedziet pēdējo skenējumu, tā datumu, maršrutu un zemes gabala atsauci."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Pieņemt lēmumu ar īsu salīdzināšanas lapu",
+          "paragraphs": [
+            "Viegla pasūtījuma gadījumā salīdzināt piemērotas maza apjoma iespējas ar visām iekļautajām maksām. Par lielu pasūtījumu, atrisināt iepakotu izmērus, pirms koncentrēties uz reklamēto likmi. Par lielu pasūtījumu salīdzināt jebkuru sadalīšanas plānu kā vairākus pilnus sūtījumus, tostarp atkārtotu minimālo maksu."
+          ],
+          "table": {
+            "headers": [
+              "Pirms maksājuma",
+              "Ieraksts"
+            ],
+            "rows": [
+              [
+                "Adreses aptvērums",
+                "province, pasta indekss un jebkāds papildu apstiprinājums."
+              ],
+              [
+                "Pacēluma mērījumi",
+                "Faktiskais svars, ārējais izmērs un iepakošanas instrukcijas."
+              ],
+              [
+                "Maršruta termini",
+                "Samaksātā summa, valūta, svara noteikums un aplēstais tranzīts."
+              ],
+              [
+                "Piegādes nodošana",
+                "Nosaukts galīgais pārvadātājs un uzraudzības instrukcijas."
+              ],
+              [
+                "Importa uzskaite",
+                "Ieņēmumi, apraksti un piemērojamā maksas informācija."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Apstiprināt provinci, pasta kodu un adreses tiesības.",
+        "Turiet valūtas skaidri savā budžetā.",
+        "Mēra lielgabarīta preces pēc saskaņotās iepakošanas metodes.",
+        "Pārbaudiet norādīto galapiegādes nesēju.",
+        "Paturiet čekus un precīzi deklarējiet preces.",
+        "Saglabāt pēdējā citāta un izsekošanas ierakstu."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Kanādas kuģniecības pārskats",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: kuģniecības novērtētāja ieejas",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: importēšana pa pastu",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: nodevu un nodokļu noteikšana",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Sugargoo apavu izmēri: etiķetes, iekšzoles un QC",
+      "description": "Izvēlieties apavu izmēru no pārdevēja paša kartes, pieprasa noderīgu Sugargoo QC mērījumus un pirms nosūtīšanas salīdzināt saņemto pāri.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo nav viena universāla apavu izmēra diagramma katram pārdevējam. Izmantojiet diagrammu precīzu sarakstu un variantu, tad salīdzināt saņemto pāra etiķeti un mērījumus jūsu noliktavas QC ierakstu. Nepietiek tikai ar zināmo ES, Apvienotās Karalistes vai ASV iedzīvotāju skaitu, lai noteiktu atbilstību.",
+        "Šis ceļvedis sniedz jums atkārtojamu pārbaudi kurpes atrasti izklājlapā. Tas atdala kāju garumu, iekšējo un ārējo garumu, lai jūs varētu pieprasīt pierādījumus, kas jums faktiski ir nepieciešams pirms starptautiskās kuģniecības."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Sākt ar precīzu pārdevēja izmēra diagrammu",
+          "paragraphs": [
+            "Atvērt sākotnējo produkta lapu un saglabāt izmēra diagrammu, kas pieder šim modelim. Pārbauda, vai mērījumi raksturo pēdu, apšuvumu vai apavu ārpusi. Tāpat pārbaudiet, vai lieluma sistēma ir vīriešiem, sievietēm vai bērniem. Tabula no cita modeļa var radīt nepatiesu atbilstību pat tad, ja izmēra etiķetes izskatās tādas pašas.",
+            "Ja diagramma ir neskaidra, pajautājiet pārdevējam vai aģentam, ko katrs kolonna nozīmē pirms pasūtīšanas. Nepievienojiet standarta pabalstu katrai diagrammai: pārdevējs var jau ir uzbūvējis atlaidi savā ieteikumā. Tava izvēlētā fit, zeķes un kurpes forma arī būtiski."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Izveidot noderīgu salīdzinājumu mājās",
+          "paragraphs": [
+            "Abas pēdas mēra, izmantojot vienu un to pašu metodi, un reģistrē ilgāku mērījumu. Lai salīdzinātu insoles, izmantojiet noņemamu insole no pāra, kas jau ir ērti iederas, ja noņemšana ir droša. Ieraksti, kur lineāls sāk un beidzas. Pēdu mērīšana jāsalīdzina ar pēdu garuma diagrammu, savukārt pēdu mērīšana jāsalīdzina ar citu kārtu mērīšanu.",
+            "Paturēt vienības konsekvences. Piemēram, 270 milimetri ir 27 centimetri. Šī pārveidošana nenozīmē 27 cm iedobi 27 cm pēdā. Kāju forma, kurpju struktūra un pārdevēja mērīšanas metode joprojām ietekmē lēmumu."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Lūdziet precīzu noliktavas mērījumu",
+          "paragraphs": [
+            "Kad kurpes ierodas, vispirms apskatiet pasūtījumu un redzamā izmēra etiķetes. Ja nav vajadzīgā mērījuma, vaicājiet, kāds papildu foto vai mērījumu pakalpojums ir pieejams un kādas izmaksas tas maksā. Identificējiet precīzu produktu, pusi un dimensiju vēlaties pārbaudīt.",
+            "Piemērs pieprasījuma pielāgot: Lūdzu, nofotografējiet izmēru etiķetes uz abiem apaviem. Ja inzolu var noņemt bez bojājumiem, lūdzu, izmēriet to no papēža līdz kājai ar lineālu un skaidri parādiet abus galus. Lūdzu, apstipriniet, vai mērījums ir centimetros. Šī ir pieprasījuma veidne, nevis solījums, ka katru posteni var izmērīt šādā veidā."
+          ],
+          "bullets": [
+            "Ja jums rodas aizdomas par neatbilstošu pāri, lūdziet abus apavus.",
+            "Pieprasīt valdnieka sākuma un beigu punktus tajā pašā foto.",
+            "Nelūdziet personālam sabojāt fiksētu iedobi, lai iegūtu mērījumu."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Izmantot katru fotogrāfiju jautājumam, uz kuru tā var atbildēt",
+          "paragraphs": [
+            "Etiķete apstiprina, kāds izmērs ir iespiests uz saņemtās kurpes. Tas nepierāda, ka kurpe atbilst universālai konversijas shēmai. Ārpus malas ir redzams ārējais garums, kas nav tāds pats kā izmantojamā iekšējā telpa. Pilna pāra foto palīdz pārliecināties, ka krāsas un formas izskatās konsekventas."
+          ],
+          "table": {
+            "headers": [
+              "Pierādījumi",
+              "Noderīgs",
+              "Nevar izveidot vienu"
+            ],
+            "rows": [
+              [
+                "Izmērs",
+                "Pieskaņo pasūtīto variantu.",
+                "Vai pāris iederēsies jūsu kājā."
+              ],
+              [
+                "Izolu mērījumi",
+                "Salīdzinot noņemamo iedobi ar zināmu pāri.",
+                "Komforts, platums vai pilna iekšējā forma."
+              ],
+              [
+                "Ārkārtas mērījumi",
+                "Kurpes ārējo izmēru pārbaude.",
+                "Vieta, kas pieejama jūsu kājām."
+              ],
+              [
+                "Aizvērt QC fotogrāfiju",
+                "Izpētīt redzamu marķējumu vai neatbilstību.",
+                "Autentitāte vai ilgtermiņa izturība."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Darbs, izmantojot neatbilstību, pirms zemes gabala izveidošanas",
+          "paragraphs": [
+            "Hipotētisks piemērs: noņemamais iedobums no ērta pāra mērījumiem 28 cm, kamēr noliktavas foto rāda 26 cm. Vispirms apstiprina, ka abi mērījumi izmanto vienus un tos pašus galapunktus un ka noliktavas attēls pieder jūsu pasūtījumam. Lūdziet skaidrāku fotogrāfiju, ja lineāls vai papēža mala ir aizēnota.",
+            "Ja atšķirība ir apstiprināts, salīdzināt to ar saraksta izmēru diagrammu un kontaktu atbalstu par pieejamām iespējām. Nepieņemsim, ka zīme pati par sevi atrisina jautājumu. Atgriešanās vai apmaiņas tiesības, termiņi un izmaksas ir atkarīgas no pasūtījuma; atrisināt jautājumu, kamēr prece vēl ir pieejama pārskatīšanai noliktavā."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Pabeigt atbilstības pārbaudes pirms iepakojuma noņemšanas",
+          "paragraphs": [
+            "Izlemt, vai kurpes ir pieņemamas pirms pieprasīt kastes noņemšanas vai to apvienošanu zemes gabalā. Glabāt etiķetes fotogrāfijas, mērījumus, pārdevēja diagrammu un atbalsta atbildes kopā. Jautājiet, vai iepakojuma maiņa var ietekmēt atgriešanos jūs joprojām apsverat.",
+            "Kad pāris ir gatavs, izlemiet, kāda aizsardzība tam ir nepieciešama transportēšanas laikā. Salīdziniet piegādi ar faktisko iepakoto izmēru, īpaši, ja tiek turētas vairākas kurpju kastes. lētākais iepakošanas plāns nav noderīgs, ja tas apdraud funkciju jums ir nepieciešams, lai saglabātu."
+          ]
+        }
+      ],
+      "checklist": [
+        "Izmantojiet precīzu saraksta izmēru diagrammu un izmēru sistēmu.",
+        "Atšķirīga pēda, necaurlaidības un izolēšanas mērījumi.",
+        "Turiet centimetrus un milimetrus vienādus.",
+        "Salikt gan apavus, gan to etiķetes ar apmaksātu pasūtījumu.",
+        "Pirms paku iesniegšanas novērst problēmas par mērījumiem.",
+        "Glabāt attiecīgo iepakojumu, līdz pasūtījuma lēmums ir galīgs."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC fotogrāfijas un mērījumi",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: QC pakalpojumu apjoms",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: pasūtīšana un noliktavas pārskatīšana",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

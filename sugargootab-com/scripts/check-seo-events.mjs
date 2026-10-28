@@ -26,4 +26,5 @@ link.dataset={};link.matches['.product-card']=new Element({productId:'/shoes/456
 const form = new HTMLFormElement();form.field={value:' private@example.com '};handlers.get('submit')({target:form});assert.equal(events[4][1],'catalog_search');assert.equal(events[4][2].query_length,'10-29');assert(!JSON.stringify(events).includes('private@example.com'));
 form.field.value='  ';handlers.get('submit')({target:form});assert.equal(events.length,5,'Empty searches are not reported');
 window.gtag=undefined;handlers.get('click')({target:icon});assert.equal(events.length,5,'Missing or blocked analytics does not break links');
+window.gtag=(...args)=>events.push(args);link.dataset={track:'article_guide_click',destination:'/articles/sugargoo-shoe-size-guide/'};handlers.get('click')({target:icon});assert.equal(events.at(-1)[1],'article_guide_click');
 console.log(JSON.stringify({trackingPathRepairs:4,unrelatedPaths:'unchanged',clickEvents:4,searchPrivacy:'pass',blockedAnalytics:'nonblocking'}));

@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Članki",
     "articleTitle": "Nakupovalni vodiči Sugargoo",
-    "articleIntro": "Praktični vodniki o povezavah do izdelkov, fotografijah QC, fazah naročila in odločitvah o pošiljanju z uradnimi viri ter jasnimi naslednjimi koraki.",
+    "articleIntro": "Praktični Sugargoo vodiči za povezave izdelkov, QC fotografije, velikosti čevljev in dostave. Izberite vprašanje, na katero morate odgovoriti pred nakupom ali pošiljanjem paketa.",
     "faqTitle": "Pogosta vprašanja o Sugargoo",
     "faqIntro": "Jasni odgovori za vsako fazo naročila, z uradnimi viri za pravila platforme in odkrito razlago omejitev tega neodvisnega kataloga.",
     "readArticle": "Preberi vodič",
@@ -34,11 +34,35 @@
     "categoryAccount": "Plačila in poprodajna pomoč",
     "author": "Uredništvo SugargooTab",
     "siteEvidence": "O tem neodvisnem katalogu",
-    "seoHomeTitle": "Sugargoo Spreadsheet: povezave do izdelkov, fotografije in nakupovalni vodniki",
+    "seoHomeTitle": "Sugargoo Razpredelnica: Čevlji, Obutev in Povezave z izdelki",
     "catalogCtaTitle": "Uporabite kontrolni seznam v praksi",
     "catalogCtaBody": "Primerjajte povezave v katalogu, nato pred nakupom ali pošiljanjem preverite točno ponudbo in podatke svojega naročila.",
     "catalogCtaButton": "Prebrskajte povezave do izdelkov",
-    "categoryCtaButton": "Raziščite kategorije izdelkov"
+    "categoryCtaButton": "Raziščite kategorije izdelkov",
+    "homeSearchIntro": "Najdi čevlje, kapuce in dodatke. Odpri povezavo z izdelkom, preveri možnosti prodajalca in nato pregledaj svoje skladišče QC pred dostavo.",
+    "seoHomeDescription": "Brskanje Sugargoo proizvodne povezave za čevlje, kapuče, dresov in dodatke. Primerjava referenčnih fotografij in uporaba praktičnih QC, velikosti in ladijskih vodnikov.",
+    "seoCatalogTitle": "Sugargoo Spreadsheet: Brskanje čevljev, obleke in dodatki",
+    "seoCatalogDescription": "Preiščite Sugargooove povezave z izdelki, primerjajte referenčne fotografije in cene ter preverite originalni seznam pred naročilom. Brskajte čevlji, obleke in dodatki.",
+    "seoCategoryTitle": "Sugargoo {category}: Povezave in fotografije izdelkov",
+    "seoCategoryDescription": "Brskajte {category} proizvodne povezave za Sugargoo. Primerjajte referenčne fotografije in navedene cene, nato potrdite velikosti, možnosti in razpoložljivost pred naročanjem.",
+    "catalogGuideNote": "Fotografije in cene izdelkov so reference. Preverite natančen seznam prodajalcev in svoje skladišče QC pred dostavo.",
+    "nextStep": "Izberite svoj naslednji korak",
+    "weightToolTitle": "Kalkulator teže paketa",
+    "weightToolIntro": "Preverite dejansko in volumtrično težo. To orodje ne navaja cen dostave; uporabite pravilo o deliorju in obračunu izbrane poti.",
+    "actualWeight": "Dejanska teža zapakiranega paketa (kg)",
+    "parcelLength": "Zunanja dolžina (cm)",
+    "parcelWidth": "Zunanja širina (cm)",
+    "parcelHeight": "Zunanja višina (cm)",
+    "weightDivisor": "Delitelj prostorninske teže za pot",
+    "weightRule": "Pravilo polnjenja",
+    "higherWeight": "Večja dejanska in volumtrična masa",
+    "actualOnly": "Samo dejanska teža",
+    "calculateWeight": "Izračunaj maso",
+    "volumetricWeight": "Volumetrična masa",
+    "billingBase": "Teža pred zaokroženjem",
+    "weightDisclaimer": "Samo ilustracijski izračun teže. Še vedno veljajo zaokroževanje poti, minimalne pristojbine, mere in storitvene dajatve. Potrjujte trenutni citat z Sugargooom.",
+    "weightError": "Vnesite pozitivno število v vsako merilno polje.",
+    "officialEstimatorGuide": "Odprite uradni vodnik za ocenjevanje dostave"
   },
   "groups": {
     "basics": "Prvi koraki",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Vodnik Sugargoo Spreadsheet: poiščite in preverite povezave do izdelkov",
-      "description": "Poiščite izdelke v preglednici Sugargoo, preverite veljavne ponudbe in različice ter ločite referenčne slike od skladiščnih fotografij QC svojega naročila.",
+      "title": "Kako uporabljati tabelo Sugargoo: iskanje in naročanje",
+      "description": "Uporabite Sugargoo preglednico za iskanje povezav z izdelki, preverite velikosti in možnosti prodajalca, odprite pravilno stran naročila ter pregledajte skladišče QC pred dostavo.",
       "keyword": "preglednica Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Preglednica Sugargoo je uporabna, kadar vam pomaga ustvariti manjši in bolje utemeljen izbor. Dolga stran fotografij ne pove, ali je določena velikost na zalogi, koliko bo stal paket ali ali se trenutna ponudba prodajalca še ujema s starejšim priporočilom. Preglednico obravnavajte kot začetek raziskovanja, končno odločitev pa vedno povežite s točno ponudbo.",
-        "Ta neodvisni katalog podatke in referenčne slike bere iz cnbuycha. Naročanje in plačilo potekata na Sugargoo. Naslednji postopek povezuje ti fazi, ne da bi kataloški vnos obravnaval kot osebno priporočilo, jamstvo zaloge ali dokaz skladiščnega pregleda. Deluje tudi, če ožji izbor hranite v preprosti aplikaciji za zapiske."
+        "Preglednica Sugargoo je imenik povezav izdelkov. Uporabite ga za iskanje predmeta, nato preverite originalni seznam in natančno različico na Sugargoo pred plačilom. Shranjena povezava ne potrjuje tekočega zalog, izbrane velikosti in končne cene ali sprejetja odkupnega agenta.",
+        "Začnite z živim katalogom ali kategorijo kot so čevlji, kapučice in dresi. Odprite obetavno postavko, pregledajte njegove referenčne fotografije in sledite razpoložljivi povezavi nakupa. Obdržite svoj kratek seznam dovolj majhen, da preveri vsak predmet pravilno."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Kako pred nakupom preveriti veljavno ponudbo",
+          "id": "spreadsheet-first-action",
+          "title": "Od razpredelnice do preverjenega naročila",
           "paragraphs": [
-            "Odprite izdelek v katalogu in nato povezavo do njegove izvirne ponudbe. Primerjajte ID izdelka na tržnici, prodajalca in izbrano različico z izdelkom, prikazanim v Sugargoo. Interna številka strani v katalogu je ločen identifikator. Tik pred plačilom znova preverite trenutno ceno, razpoložljive možnosti in količino; shranjena kartica ne potrjuje trenutne zaloge.",
-            "Če izvirne ponudbe ni, izdelka ni mogoče naložiti ali se različica razlikuje, se na tem koraku ustavite. Vrnite se v preglednico in primerjajte drugega kandidata. Zapišite, zakaj prvi ni ustrezal, da pozneje ne ponavljate istega preverjanja. Referenčne slike ostajajo gradivo za iskanje, tudi če spominjajo na skladiščne fotografije."
+            "Iskanje po vrsti izdelka ali značilnem imenu, nato pa odprete stran postavke. Primerjajte naslov, identifikator izvornih postavk, fotografije in izbrane možnosti. Če stran za nakup odpre drugačno barvo ali velikost, izberite nameravano različico ponovno in preverite končni povzetek naročila. Ne plačujte samo zato, ker je slika videti znana.",
+            "Cena v katalogu je referenca za postavko. Graditi ločeni proračun za dostavo znotraj Kitajske, vseh izbranih storitev in mednarodnega tovornega prometa. Shrani izvorno povezavo z izbranim številom in barvo. Ko predmet doseže skladišče, uporabite svoj QC rekord, da se odločijo ali je pripravljen za pošiljanje."
           ],
-          "table": {
-            "headers": [
-              "Preverjanje",
-              "Uporabni dokazi"
-            ],
-            "rows": [
-              [
-                "Identiteta izdelka",
-                "Izvirni URL tržnice in ID izdelka"
-              ],
-              [
-                "Trenutna razpoložljivost",
-                "Aktualna prodajalčeva ponudba in izbrana možnost"
-              ],
-              [
-                "Cena",
-                "Točna različica in znesek ob plačilu"
-              ],
-              [
-                "Stanje",
-                "Fotografije vašega naročila po prihodu v skladišče"
-              ]
-            ]
-          }
+          "bullets": [
+            "Poiščite: izberite kategorijo in zožite iskanje.",
+            "Check: ujema se s prvotnim seznamom, možnostmi in ceno tekočega naročanja.",
+            "Naročilo: uporabite uradni tok nakupa za upravičeni predmet.",
+            "Pregled: preverite svoje skladišče QC pred izdelavo paketa."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Fotografije Sugargoo QC: pregled izdelkov pred pošiljanjem",
-      "description": "Uporabite praktični seznam za fotografije Sugargoo QC pri obutvi, oblačilih in torbah. Pred pošiljanjem preverite oznake, mere, šive in manjkajoče podrobnosti.",
+      "title": "Kako preveriti fotografije QC Sugargoo pred pošiljanjem",
+      "description": "Najdi Sugargoo skladišče QC fotografije, preverite pravilno postavko in velikost, zahtevati uporabne dodatne meritve ter rešiti težave pred mednarodno dostavo.",
       "keyword": "fotografije Sugargoo QC",
       "category": "quality",
       "intro": [
-        "Skladiščne fotografije so najuporabnejše, ko se morate konkretno odločiti: ali prejeti izdelek ustreza naročilu, ali je pomembna podrobnost nejasna ali ali vidna poškodba zahteva ukrepanje? Pregled vseh slik brez seznama lahko najpomembnejše vprašanje še vedno pusti odprto. Jasna metoda pregleda olajša uporabo fotografij.",
-        "Sugargoo običajno opisuje pet standardnih fotografij QC, obseg pregleda pa je odvisen od izdelka in vrste naročila. Število slik ne zagotavlja, kaj je mogoče preveriti. Referenčne slike cnbuycha na tej strani so kataloško gradivo, ne preverjen QC vašega osebnega naročila Sugargoo; pred mednarodno odpremo preglejte svoj skladiščni zapis."
+        "Če želite preveriti Sugargooove QC fotografije, se vpišite in odprite prejeti predmet v vašem vrstnem redu ali zapis Packing Centra. Preden jo dodate mednarodni parceli, si pregledajte slike v zvezi s tem postavko. Kataloške slike na SugargooTab so referenčne slike, ne fotografije po vašem naročilu.",
+        "Najprej preverite izbrano različico, oznako, količino in vidno stanje. Če je primernost odvisna od merjenja, ki ni prikazano, zahtevajte to specifično mero pred odobritvijo dostave. Vizualni QC ni avtentikacija ali garancija za vklop."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "Pregled fotografij QC za obutev, oblačila in torbe",
+          "id": "qc-first-check",
+          "title": "Kje najti fotografije in kaj najprej preveriti",
           "paragraphs": [
-            "Začnite s primerjavo naročila, barve, velikosti in količine. Nato preglejte podrobnosti, ki bi lahko spremenile odločitev, ali izdelek obdržite. Spodnji seznam je praktičen pripomoček za pregled fotografij, ne jamstvo, da običajni QC vključuje vsak kot ali meritev. Zahtevajte konkretne manjkajoče dokaze in pred nadaljevanjem preverite morebitno ceno storitve.",
-            "Na primer, torba, fotografirana samo od spredaj, ne potrjuje pritrditve paščka ali stanja notranjosti. Če vam je ta podrobnost pomembna, prosite za ustrezen kot. Če potrebujete meritev, določite začetno in končno točko ter zahtevajte viden merilni trak. Fotografije ne potrjujejo vseh funkcionalnih lastnosti in ne dokazujejo pristnosti."
+            "Začnite z natančno referenco naročila. Predmet, ki ga prodajalec še vedno kupuje ali dostavlja, morda nima fotografij skladišča. Ko je predmet prejet, preverite podrobnosti naročila in zapis Packing Center za QC slike. Če v evidenci piše, da je pripravljeno, vendar se fotografije ne pojavljajo, pošljite podporo napotku za naročila in vprašajte ali so inšpekcijski pregledi končani.",
+            "Odprite celotno sliko namesto majhne sličice. Ujemajte barvno nalepko in velikost s svojim plačanim naročilom, nato preverite obe strani ter vse vključene dodatke. Shrani posebno vprašanje za katerikoli kot, ki ga ne moreš videti. Za čevlje, merjenje vložka in velikostna fotografija odgovarjata na različna vprašanja; ena ne more nadomestiti druge."
           ],
-          "table": {
-            "headers": [
-              "Izdelek",
-              "Preverite na fotografijah svojega naročila",
-              "Če ni jasno, zahtevajte"
-            ],
-            "rows": [
-              [
-                "Obutev",
-                "Par, oznake velikosti, podplate in vidne šive",
-                "Obe oznaki velikosti ter ustrezen kot podplata ali šiva"
-              ],
-              [
-                "Oblačila",
-                "Oznako velikosti, videz blaga in šivanje",
-                "Meritev na ravni podlagi z jasnim začetkom in koncem"
-              ],
-              [
-                "Torbe",
-                "Paščke, zapirala, podlogo in dodatke",
-                "Bližnje posnetke notranjosti in pritrdilnih mest"
-              ],
-              [
-                "Katerikoli izdelek",
-                "Pravo različico, količino in vidne poškodbe",
-                "Jasno sliko konkretnega odstopanja"
-              ]
-            ]
-          }
+          "bullets": [
+            "Preverite, da vsaka fotografija spada v isti vrstni red in različico.",
+            "Zahtevamo izbliza pogled na sumljivo napako, ki prepozna njeno lokacijo.",
+            "Nerešene predmete shranjujte zunaj paketa, dokler ne boste dobili odgovor."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Kalkulator pošiljanja Sugargoo: teža, mere in skupni stroški",
-      "description": "V kalkulatorju pošiljanja Sugargoo uporabite realno težo in mere. Primerjajte primerne poti in razumite, kaj v oceni ostaja negotovo.",
+      "title": "Kalkulator dostave Sugargoo: teža in stroški",
+      "description": "Izračunajte obseg paketa težo, razumeti računsko maso in primerjati Sugargoo poštni nabori z uporabo svoje namembne strani, dimenzij in kategorije postavk.",
       "keyword": "kalkulator pošiljanja Sugargoo",
       "category": "shipping",
       "intro": [
-        "Ocena pošiljanja postane uporabna, ko veste, iz katerih podatkov je nastala. Dva kupca lahko vneseta enako težo in dobita različna rezultata zaradi cilja, kategorije izdelka, mer paketa ali poti. Kopiranje tujega zneska pošiljanja zato pomeni šibek proračun za vaše naročilo.",
-        "Uradna navodila kalkulatorja Sugargoo uporabljajo cilj, kategorijo, težo in mere za primerjavo možnosti. Rezultat obravnavajte kot datiran scenarij in ga posodobite, ko izveste več o zapakiranem paketu. Vodič pokaže, kako takšne scenarije oblikovati in prepoznati negotovost, preden povzroči težavo ob plačilu."
+        "Uporabite Sugargooov uradni ocenjevalec ladij za tekoče cene in razpoložljivost poti. Vnesite namembni kraj, kategorijo postavk, pakirano maso in dimenzije. Spodnje orodje za uteži pomaga preveriti matematiko, ne navaja tovora ali se poveže z vašim Sugargooovim računom.",
+        "Primerjava poti z uporabo identičnih vhodnih paketov. Citat, ki temelji samo na teži predmeta, lahko zgreši prostor v škatlah ali zaščitnem pakiranju. Pred plačilom preverite pravila zaračunavanja, zaokroževanje in najnižji znesek."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Pred odločitvijo za nakup pripravite dve oceni",
+          "id": "shipping-inputs",
+          "title": "Obdelani primer volumske teže",
           "paragraphs": [
-            "Pripravite začetni scenarij z najboljšimi razpoložljivimi podatki o teži in merah, nato previdnejši scenarij, ki upošteva negotovo embalažo. Cilj, vsebino in druge nastavitve ohranite enake. Če se naročilo prilega proračunu samo ob najbolj optimističnih predpostavkah, negotovost razrešite pred plačilom izdelkov.",
-            "Zapišite datum ponudbe, pot, enote, ocenjene mere in izbrane dodatke. Ko so meritve na voljo, predpostavke zamenjajte z izmerjenimi podatki paketa. Za pošiljanje v ZDA uporabite ločen ameriški vodnik; pri več naročilih v skladišču s pomočjo vodnika za združevanje primerjajte vse stroške skupnega in ločenih paketov."
+            "Ponazoritveni primer ni kotat za dostavo: paketni ukrepi 40 × 30 × 20 cm in tehta 3 kg. Z delilnikom 6000 je njegova volumska masa 4 kg. Pot, ki uporablja večjo dejansko in volumnsko maso bi se začela od 4 kg pred zaokroženimi pravili ali pravili o minimalnih stroških. Pot zaračunava dejansko težo samo od 3 kg.",
+            "Če se lahko isto blago varno ujema s paketom 40 × 30 × 15 cm, izračunana volumska masa postane 3 kg z navedenim deliteljem. To samo primerja meritve. To ne dokazuje prihrankov: storitve pakiranja, upravičenost poti, povečanje teže in sedanja cena lahko spremenijo končni znesek."
+          ],
+          "bullets": [
+            "Uporabite zunanje pakirane dimenzije v centimetrovih, ne pa v dimenzijah proizvodov.",
+            "Pred uporabo orodja spodaj pretvorite grame v kilograme: 3000 g je enako 3 kg.",
+            "Vzemite delilec in napolniti pravilo iz poti, ki ste jo razmišljali."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Poskusno pakiranje Sugargoo: teža, mere in kdaj ga uporabiti",
-      "description": "Odločite se, kdaj je poskusno pakiranje Sugargoo koristno, določite izbire pakiranja ter izmerjeni paket primerjajte s prvotno oceno prevoza.",
+      "title": "Poskusno pakiranje Sugargoo: kako deluje in kdaj se splača",
+      "description": "Ugotovite, kaj Sugargoo vaje ladijski prevoz, ko je vredno pristojbine in kako uporabiti pakirano težo in dimenzije pred izbiro ladijske poti.",
       "keyword": "poskusno pakiranje Sugargoo",
       "category": "shipping",
       "intro": [
-        "Poskusno pakiranje je najuporabnejše, ko negotovost o končnem paketu vpliva na odločitev, ki vas še čaka. Morda izbirate pot, odločate o ohranitvi velike embalaže ali preverjate, ali kombinacija ustreza omejitvam storitve. Boljše meritve lahko odgovorijo na ta vprašanja, vendar ne zagotavljajo nižjega računa za pošiljanje.",
-        "Sugargoo poskus opisuje kot simulacijo paketa pred odpremo, ki zagotovi natančnejšo težo in prostornino. Obravnavajte ga kot odločitev o merjenju in pakiranju ter v računu preverite trenutne pogoje in ceno storitve. Praktična vrednost izhaja iz tega, da veste, kaj boste z rezultatom naredili."
+        "Vadba Sugargoo je storitev pakiranja in merjenja pred mednarodnim odpremo. Pomaga vam preveriti dejansko težo in dimenzije paketa, preden izberete prevoz. Vredno je razmisliti, kdaj škatle, velike postavke ali omejitev poti naredijo vašo oceno negotovim; to ne zagotavlja prihrankov.",
+        "Najprej končajte svoj predmet in QC pregledi. Nato potrdite trenutno storitev pristojbine in možnosti pakiranja na vašem računu. Uporabite rezultat za primerjavo upravičenih poti z enako vsebino, namembnostjo in embalažo."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Kdaj je smiselno razmisliti o poskusnem pakiranju?",
+          "title": "Kako uporabljati vadbeno dostavo",
           "paragraphs": [
-            "Razmislite o njem, kadar neznane mere zapakiranega paketa lahko spremenijo pot ali proračun: velik lahek izdelek, več maloprodajnih škatel ali paket blizu omejitve poti. Zapišite negotovost, ki jo želite odpraviti, in preverite trenutno ceno storitve. Če bi bila odločitev pri vseh razumnih ocenah enaka, ima dodatna meritev lahko manjšo vrednost.",
-            "Rezultat primerjajte s prvotnimi podatki: dejansko težo, zunanjimi merami, ohranjeno embalažo in izbranimi storitvami. Znova izračunajte po trenutnem obračunskem pravilu poti. Manjša mera ne zagotavlja nižjega končnega računa, saj lahko še vedno vplivajo minimalne pristojbine, težnostni razredi in druge možnosti."
-          ]
+            "V Sugargooovem računu identificirajte predmete skladišča, ki jih želite odpreti skupaj. Odprejo razpoložljivo simulacijo predodpremnega paketa ali storitev vzorčenja, preverijo pristojbine in določijo, če bi morali originalne škatle in zaščitni ovojnina ostati. Nalepke zaslona se lahko spremenijo; zahtevajte podporo pred plačilom, če je možnost ali njeno področje uporabe nejasno.",
+            "Ko je rezultat pripravljen, zabeležite pakirano maso in vse tri zunanje dimenzije. Te meritve ponovno vključite v uradni ocenjevalec. Primerjava upravičenih poti, povečanje njihove teže in vsaka pristojbina za pakiranje pred predložitvijo paketa. Če po tem spremenite vsebino ali embalažo, zgodnje meritve ne smejo več opisati paketa."
+          ],
+          "table": {
+            "headers": [
+              "Vaša situacija",
+              "Odločba"
+            ],
+            "rows": [
+              [
+                "Več škatl ali širok plašč",
+                "Razmislite o meritvah pred izbiro poti."
+              ],
+              [
+                "Parcel, ki je blizu velikosti ali omejitve teže",
+                "Preverite pakirani rezultat glede na to mejo."
+              ],
+              [
+                "Znana kompaktna parcela; izbira poti ostane ista",
+                "Dodatna storitev lahko doda malo vrednosti."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Povezave Weidian in Taobao v Sugargoo: preverjanje in odprava napak",
-      "description": "Pred nakupom v Sugargoo preverite povezave do izdelkov Weidian in Taobao. Manjkajoče ponudbe, napačne različice in napake pri nalaganju razrešite brez ugibanja.",
+      "title": "Povezava Sugargoo ne deluje? Rešitve za Taobao in Weidian",
+      "description": "Določite skupne Sugargoo-vezne težave z izdelkom: nepopolne povezave z delnicami, nedostopni predmeti, napačne različice in manjkajoče možnosti od Taobaa ali Weidian.",
       "keyword": "Weidian v Sugargoo",
       "category": "getting-started",
       "intro": [
-        "Povezava izdelka združi priporočilo s konkretno ponudbo prodajalca. Sama ne potrjuje velikosti, barve, zaloge ali končne cene z dostavo. Najvarnejša uporaba povezave Weidian ali Taobao na Sugargoo ohrani identiteto izdelka, nato pa pred plačilom preveri možnosti na uradnem zaslonu naročila.",
-        "Vodič pojasni, kaj kopirati, kako prepoznati napačno ponudbo in kaj narediti ob neuspelem samodejnem nalaganju. Loči tudi ID izdelka izvorne tržnice od notranjega identifikatorja strani tega kataloga, da priročen nakupni gumb ne postane razlog za opuščanje končnih preverjanj."
+        "Če Taobao ali Weidijanska povezava ne bo naložila v Sugargoou, najprej odprite prvotno stran izdelka in preverite še vedno obstaja predmet. Kopirajte njegov neposreden URL izdelka, brez okoličnega besedila delitve in znova poskusite z uradnim iskanjem. Naj identifikator blaga ostane nedotaknjen.",
+        "Neuspešen uvoz lahko pomeni nepopolno povezavo, nedostopne možnosti, prodani seznam ali predmet, ki ga agent ne more sprejeti. Ročna naročila so primerna le za upravičen nakup, katerega podrobnosti je mogoče potrditi. Omejitev ne premosti."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "Kaj preveriti, kadar se povezava do izdelka ne naloži",
+          "id": "link-troubleshooting",
+          "title": "Ujemanje simptoma z naslednjim korakom",
           "paragraphs": [
-            "Najprej odprite izvirno stran izdelka in potrdite, da še vedno označuje želeni izdelek. Domača stran trgovine, skrajšano besedilo za deljenje ali odstranjena ponudba niso enakovredni celotnemu URL-ju izdelka. Pred ponovnim poskusom primerjajte ID izdelka na tržnici. Odstranite nepovezano besedilo za deljenje, namesto da spreminjate identiteto izdelka.",
-            "Če izvirni izdelek obstaja, samodejno branje pa ne uspe, preverite uradne možnosti ročnega naročila in pogoje sprejema. Skupaj shranite prodajalca, točno različico, količino, URL in ceno izdelka. Ročni obrazec ne odpravi omejitev izdelkov in ne zagotavlja razpoložljivosti. Če veljavne ponudbe ne morete preveriti, izberite drugega kandidata namesto ugibanja po sliki."
-          ]
+            "Uporabite isti originalni seznam pri primerjavi trga in Sugargooovih zaslonov. Podobno imenovani predmet ni dokaz, da je uvožena možnost pravilna. Če je podpora potrebna, vključite neposreden URL, identifikator predmeta, izbrano različico in natančno besedilo napake; odstranite podrobnosti o zasebnem računu z zaslonov."
+          ],
+          "table": {
+            "headers": [
+              "Kar vidiš.",
+              "Kaj preveriti"
+            ],
+            "rows": [
+              [
+                "Povezava odpira skupni zaslon ali besedilno sporočilo",
+                "Odpri sam izdelek in kopiraj njegov neposreden URL."
+              ],
+              [
+                "Originalni seznam ni na voljo",
+                "Vprašajte prodajalca o razpoložljivosti; ne ponovno uporabiti staro ceno."
+              ],
+              [
+                "Postavka se odpre, vendar velikost ali barva manjka",
+                "Potrdite to posebno možnost pred naročilom."
+              ],
+              [
+                "Agent zavrača postavko",
+                "Vprašaj o upravičenosti; ne prikrivaj predmeta."
+              ],
+              [
+                "Naštevanje del, vendar uvoz še vedno ne uspe",
+                "Vprašaj podporo, ali je mogoče podpreti ročni red."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Pošiljanje Sugargoo v ZDA: stroški, teža in dostava",
-      "description": "Načrtujte pošiljanje Sugargoo v ZDA: pred plačilom mednarodnega prevoza primerjajte težo, mere, pogoje poti in faze dostave.",
+      "title": "Dostava Sugargoo v ZDA: stroški, poti in roki",
+      "description": "Načrt Sugargoo poštnine v ZDA s celotnim seznamom stroškov, skladno paketnih vhodov, primerjave poti in sledenje koraki pred odpremo.",
       "keyword": "sugargoo shipping to usa",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "Pošiljanje Sugargoo v ZDA je ločena odločitev od nakupa izdelkov. Začnite z naslovom dostave, izdelki, ki jih želite poslati, ter oceno njihove zapakirane teže in velikosti. Nato primerjajte poti, ki so dejansko na voljo v vašem računu. Cena paketa druge osebe je le orientacija: njegov cilj, datum, mere in vsebina se lahko razlikujejo od vaših.",
-        "Ta vodnik ponuja metodo primerjave, ne fiksne cene ali obljube dostave. SugargooTab je neodvisen katalog in v imenu Sugargoo ne more določiti cene, odposlati ali slediti vašemu paketu. Za načrtovanje uporabite uradni kalkulator, za odločitev o plačilu pa končni prikaz paketa. Shranite zapis o tem, kaj ponudba vključuje, da boste razumeli poznejše spremembe."
+        "Za Sugargoo poštnino v ZDA, dobite citat za vaše dejansko stanje, kategorijo postavk, pakirano težo in dimenzije. Najbolj poceni prikazana linija je koristna samo, če so vaše blago in naslov upravičeni. Razpoložljivost poti, cene in ocene dostave se lahko spremenijo.",
+        "Cena blaga se loči od mednarodnega proračuna za pakete. Primerjajte skupni plačljivi znesek in pogoje dostave z istim paketom, nato pa preverite končne pakirane meritve pred odpremo."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Primerjava ameriških poti brez mešanja različnih paketov",
+          "paragraphs": [
+            "Pred odprtjem več rezultatov poti ustvarite en referenčni paket. Zapiše stanje in poštno oznako, kategorijo blaga, dejansko težo, zunanje dimenzije ter zahteva zaščito. Shrani datum in valuto kotacije z vsakim rezultatom. Če rezultat izključuje dimenzije ali uporablja drugo kategorijo, jo ponovno izvede pred primerjavo cen.",
+            "Za vsako upravičeno pot zabeležite plačani tovor, težka pravila, vključno s storitvami in ocenjenim območjem tranzita ter končnim prevoznikom za dostavo. Dodajte ločeno neobvezno pakiranje ali zavarovanje. Preberi trenutne pogoje uvoza in poti, namesto da predpostavljaš, da ime poti ne zagotavlja dodatnih dajatev ali carinskega dovoljenja."
+          ],
+          "bullets": [
+            "Primerjava enakega blaga in načrta pakiranja.",
+            "Preveri, ali se ocena začne ob odpremi ali drugi mejnik.",
+            "Obdržite prejemke izdelkov in natančne opise postavk z paketno evidenco."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Ločite stroške izdelkov od proračuna za paket v ZDA",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Dostava Sugargoo v Združeno kraljestvo: stroški",
+      "description": "Primerjava Sugargoo UK poštni nabori, dejanska in volumtrična teža, izročitve in informacije o uvozu pred predložitvijo paketa.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Da bi ocenili Sugargoo poštnino v Združeno kraljestvo, izberite svojo dejansko destinacijo, kategorija blaga, pakirana teža in dimenzije v uradnem ocenjevalcu. Primerjajte le poti, ki so na voljo za to kombinacijo. Pred plačilom preverite končno ponudbo na svojem računu; cena od tujega paketa ni vaša stopnja dostave.",
+        "Ta vodnik uporablja praktično primerjavo delovnega lista in ne fiksnih cen. Pomaga vam, da se odločite ali kompaktna parcela, velika škatla za čevlje in naročilo občutljiv na rok potrebuje drugačen načrt dostave."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Pripravite paket za pošteno primerjavo Združenega kraljestva",
+          "paragraphs": [
+            "Začnite z blagom, ki ste ga že preverili v skladišču. Napišite seznam predmetov in embalažo, ki jo nameravate hraniti. Citat za čevlje z maloprodajnimi škatlami ni mogoče pošteno primerjati s citatom, ki predvideva, da bodo škatle odstranjene. Če so meritve dovolj negotove, da spremenijo vašo odločitev, najprej razmislite o vadbi pakiranja.",
+            "Uporabite pravilno območje naslova in poštno kodo. Velika Britanija in Severna Irska imata različne uvozne ureditve, zato se izogibaj kopiranju lokacije iz predhodne ocene. Vprašajte platformo za potrditev pokritosti destinacije, če vaš naslov ni podprt na izbrani poti."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Zgradi primerjavo poti, ki jo lahko ponovno uporabite",
+          "paragraphs": [
+            "Odprete primerne rezultate in enkrat zabeležite datum kotacije, valuto in pakirane meritve. Potem naredite eno vrstico za vsako pot. Primerjava dejanskega zneska, ki ga je treba plačati po katerem koli ustreznem kuponu in ni prečrtana promocijska cena. Kupon z minimalno porabo se ne sme uporabljati za manjši paket."
+          ],
+          "table": {
+            "headers": [
+              "Zapis za vsako progo",
+              "Zakaj je pomembno?"
+            ],
+            "rows": [
+              [
+                "Pravilo polnjenja in povečanje teže",
+                "Enaka izmerjena parcela ima lahko drugačno težo."
+              ],
+              [
+                "Prevoz in neobvezne storitve",
+                "Pakiranje ali zavarovanje so lahko ločeni postavke vrstic."
+              ],
+              [
+                "Ocenjeni tranzit in njegova izhodiščna točka",
+                "Dobava prodajalca in skladišče lahko prideta pred mednarodnim tranzitom."
+              ],
+              [
+                "Dobavni prevoznik v Združenem kraljestvu in zajetje naslova",
+                "Končna predaja vpliva na to, kako spremljate dostavo."
+              ],
+              [
+                "Uvozni pogoji",
+                "Preberite, kaj je vključeno in koliko boste morda še morali plačati."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Škatle: primerjajte zaščito in velikost paketa",
+          "paragraphs": [
+            "Predvidevajmo, da sta dva para čevljev prešla vašo velikost in stanje. Primerjava dveh načrtov pakiranja: shranjevanje obeh škatlic ali odstranitev škatl, kjer ste varni in sprejemljivi. Vprašajte za zunanje mere končne parcele v okviru izbranega načrta. Ne sklepajte teh dimenzij z dodajanjem dolžin čevljev skupaj.",
+            "Če vzamete škatle ali jih boste potrebovali za morebitno vrnitev, je lahko njihovo shranjevanje bolj pomembno kot zmanjšanje volumna. Če jih odstranite, se strinjajte o zaščiti čevljev. Preračunavanje poti z uporabo nastalih dimenzij in vključuje stroške storitve pakiranja. Majhna embalaža ni avtomatično cenejša ali varnejša."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Preverite uvozne dajatve in vodite evidenco naročila",
+          "paragraphs": [
+            "Uporabite trenutne smernice GOV.UK, povezane spodaj za blago, poslano iz tujine; Uvozna obravnava je odvisna od namembnega kraja, blaga in transakcije. Pot, ki se trži z davčnim besedilom, ni prekrivno jamstvo za izvzetje; preberite njegove pogoje in potrditev, katere pristojbine so vključene.",
+            "Imejte prejemke, opise postavk in znesek, plačan z paketno evidenco. Natančno razglašajte blago in prosite za podporo glede nejasnega polja deklaracije. Ta vodnik ne izračuna davka ali ne zagotavlja univerzalne deklaracije. Če prevoznik zahteva plačilo ali dokumente, preveri zahtevek na uradni spletni strani prevoznika."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Preberite sledenje kot zaporedje predaj",
+          "paragraphs": [
+            "Odprema ločenega prodajalca, prejemek skladišča in mednarodno odpremo ter dostava Združenega kraljestva. Številka za sledenje prodajalca zajema dostavo v skladišče; to ne dokazuje, da je mednarodni paket odšel. Po odpremi paketov preveri logistično evidenco za številko, povezano z izbranim prevoznim linijo.",
+            "Kadar se ugotovi končni dostavni prevoznik, sledite tudi njegovi uradni strani za sledenje. Shrani zadnje skeniranje, datum in vsako potrebno dejanje. Za zamudo vpraÅ¡ajte podporo, katero fazo čaka in ali so potrebni dokumenti oziroma popravek naslova. Ocenjeno območje dostave ni zajamčen datum prihoda."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Izberite pot odločitve, s katero se soočate.",
+          "paragraphs": [
+            "Za kompaktno parcelo brez roka primerjajte skupne stroške med upravičenimi potmi. Za veliko parcelo, preiščite pravilo teže in najprej pakirano velikost. Za časovno občutljiv vrstni red omogočite pripravo skladišča in carine ter oglaševanje tranzitne ocene.",
+            "Če nobena primerna pot ne ustreza vašim potrebam, ustavite pošiljko in vprašajte za možnosti. Delitev paketa ustvarja novo primerjavo z dvema osnovnima pristojbinama in morda dvema honorarji za storitve. Izračunajte oba popolna vsota namesto domneve, da bo več paketov cenejše."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uporabite pravo Združeno kraljestvo in poštno kodo.",
+        "Končaj QC, preden izbereš načrt pakiranja.",
+        "Primerjava poti z enako vsebino in meritvami.",
+        "Vpišite datum kotacije, valuto in vključene storitve.",
+        "Preberite trenutne pogoje uvoza in poti.",
+        "Prihranite tako mednarodne kot končne reference za sledenje dobave."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Pregled ladijskega prometa v Združenem kraljestvu",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: ocena pristojbine za poštnino",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: blago, poslano iz tujine",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: sledenje paketov",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Dostava Sugargoo v Kanado: stroški in sledenje",
+      "description": "Načrtujte Sugargoo paket v Kanado z uporabo svoje province, poštno kodo, pakiranja velikosti, pristojbin za pot in končni nosilec sledenje informacije.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo poštnino v Kanado je odvisno od vaše province, naslova, blaga in pakiranih paketnih meritev. Začnite s trenutnim citatom za te natančne vhode. Potrdite, kateri prevoznik bo opravil zadnjo fazo; ne domnevajte, da vsaka pot uporablja Kanado Post.",
+        "Najbolj uporabna primerjava vključuje pokritost naslovov, celoten plačani znesek in kako se bo parcela po prihodu. Ta vodnik pojasnjuje, kaj naj beležimo pred plačilom brez obravnavanja stare cene poti kot trenutne ponudbe."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Najprej preverite pokritost pokrajine in poštne kode",
+          "paragraphs": [
+            "Uporabite naslov dostave, ki ga nameravate obdržati. Natančno vnesite pokrajino in poštno kodo ter vključite zahtevano številko enote. Pred izbiro poti preverite, ali sprejema vašo vrsto naslova in ali velja daljinsko območje oziroma dobavna dostava. Cena za drugo provinco morda ni koristna primerjava.",
+            "Če nameravate uporabiti poordinacijsko škatlo, poslovni naslov ali oddaljeni kraj, vprašajte o tem naslovu posebej. Ne nadomeščajte bližnjega mesta samo zato, da bi se v presoji pojavila pot. Če je pokritost nejasna, jo rešite pred zapustitvijo skladišča."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Proračun paketa naj bo ločen od cene izdelka",
+          "paragraphs": [
+            "Izgradi proračun z ločenimi vnosi za blago, dostavo znotraj Kitajske in izbranimi storitvami skladiščenja ter mednarodnim tovornim in potencialnimi stroški za uvoz ali ravnanje. Vpišite valuto za vsak znesek. Prikazana cena ameriških dolarjev in proračun za kanadske dolarje ne bi smeli dodati brez sedanjega prehoda.",
+            "Za tovor primerjajte trenutne primerne citate z enako dejansko težo, zunanjimi dimenzijami in kategorijo blaga. Preverite, ali vsaka linija zaračuna dejansko težo, volumnsko maso in drugo navedeno pravilo. Če pakiranje ni bilo zaključeno, označite meritve kot ocene in ponovno preverite primerjavo pred odpremo."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "Velik plašč potrebuje pregled velikosti in težo.",
+          "paragraphs": [
+            "Predstavljajte si, da pošljete zimski plašč skupaj z majhnim pripomočkom. Plašč lahko prevladuje nad dimenzijami škatle, tudi če ni najtežji predmet. Zabeležite končno velikost paketa in izračunajte prostorninsko maso z delilnikom, ki se uporablja na vsaki poti. Pot, ki izgleda poceni na kilogram je lahko manj privlačna potem ko se uporabi njeno pravilo o velikosti.",
+            "Vprašajte, ali je drugačna metoda pakiranja primerna za tkanino in gradnjo. Kompresiranje morda ni primerno za vsako oblačilo ali dodatek. Vključite kakršne koli stroške pakiranja in primerjajte zaščiteno parcelo namesto teoretične minimalne količine. Če je dodatek krhek, bo ločena zaščita lahko dragocenejša od najmanjše možne škatle."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Pred odpremo preberite Kanadske smernice za uvoz",
+          "paragraphs": [
+            "Kanadska agencija za mejne storitve pojasnjuje, kako se pregleda uvožena pošta in kako lahko veljajo dajatve ali davki. Imejte na voljo prejemke in natančne opise izdelkov. Ne obravnavajte maloprodajnega nakupa kot darilo samo zato, ker je paket za osebno uporabo.",
+            "Preveri obstoječe pogoje za kakršno koli uvoženo ravnanje in vprašaj, katere dajatve se lahko še poberejo. Poštno in kurirsko ravnanje se lahko razlikuje. Uporabite uradna sredstva CBA spodaj za vaš položaj, namesto da domnevajo, da se pravila o blagu iz druge države uporabljajo na paket s Kitajske."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Sledite mednarodnim in kanadskim evidencam dostave",
+          "paragraphs": [
+            "Po odpremi odprite logistiko paketa in prihranite njegovo številko za sledenje. Številka dostave originalnega prodajalca je drugačna številka. Preveri, ali izbrana linija zagotavlja ločeno referenčno številko končnega nosilca po prihodu parcele v Kanado.",
+            "Če je Kanada Post imenovani prevoznik, uporabite svojo uradno storitev sledenja po predaji. Če je imenovan drug prevoznik, namesto tega uporabite ta prevoznik. Številka, ki se ustvari samo po sebi ne pomeni, da je prevoznik prejel paket. Za odloženo pošiljko podprete zadnje skeniranje, datum, pot in referenca paketov."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Odloči se s kratkim primerjalnim listom",
+          "paragraphs": [
+            "Za lahek vrstni red primerjajte primerne možnosti majhnega premoženja z vsemi vključenimi stroški. Za obsežen vrstni red razrešite pakirane dimenzije, preden se osredotočite na oglaševano stopnjo. Za veliko naročilo primerjajte vsak načrt za razdelitev z več popolnimi pošiljkami, vključno s ponavljajočimi se minimalnimi stroški."
+          ],
+          "table": {
+            "headers": [
+              "Pred plačilom",
+              "Zapis"
+            ],
+            "rows": [
+              [
+                "Zajetje naslova",
+                "Provinca, poštna koda in potrdilo o doplačilu."
+              ],
+              [
+                "Meritve parcela",
+                "Dejanska teža, velikost in navodila za pakiranje."
+              ],
+              [
+                "Izrazi poti",
+                "Znesek zapadlosti, valuta, pravilo teže in ocenjeni tranzit."
+              ],
+              [
+                "Dostava",
+                "Imenovani končni prevoznik in navodila za sledenje."
+              ],
+              [
+                "Uvozi zapise",
+                "Prejemki, opisi in ustrezne informacije o pristojbinah."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Potrditi provinco, poštno oznako in upravičenost naslova.",
+        "Imejte valute izrecno v svojem proračunu.",
+        "Izmerite veliko blago po dogovorjeni metodi pakiranja.",
+        "Preverite navedeni nosilec končne dostave.",
+        "Imejte prejemke in natančno razglasite blago.",
+        "Shrani zadnji citat in sledenje."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Kanada pregled ladijskega prometa",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: poštni ocenjevalni vhodi",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: uvoz po pošti",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: določanje dajatev in davkov",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Velikosti čevljev Sugargoo: oznake, vložki in QC",
+      "description": "Izberite velikost čevljev iz prodajalčeve karte, zahtevajte uporabne Sugargoo QC meritve in primerjaj prejeti par pred dostavo.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo nima ene univerzalne velikosti čevljev za vsakega prodajalca. Uporabite karto za natančen seznam in različico, nato pa primerjajte oznako in meritve prejetih parov v vašem skladišču QC evidence. Znano število velikosti EU, Združenega kraljestva ali ZDA ni dovolj za vzpostavitev primernega.",
+        "Ta vodnik vam daje ponavljajoč se pregled čevljev v tabeli. Ločuje dolžino stopala, dolžina vložka in dolžina zunaj, tako da lahko zahtevate dokaze, ki jih dejansko potrebujete pred mednarodno dostavo."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Začnite z natančno prodajalčevo velikostjo",
+          "paragraphs": [
+            "Odprite prvotno stran izdelka in shraniti velikost shemo, ki pripada temu modelu. Preverite, ali njegove meritve opisujejo stopalo, vtičnico in zunanjost čevljev. Preverite tudi, ali je velikost sistema za moške, ženske in otroke. Miza iz drugega modela lahko ustvari napačno ujemanje, tudi če so oznake velikosti enake.",
+            "Če je shema nejasna, vprašajte prodajalca ali agenta kaj pomeni vsak stolpec pred naročanjem. Ne dodajte standardnega dodatka vsakemu grafikonu: prodajalec je morda že v svoje priporočilo vključil dodatek. Vaš izbrani fit, nogavice in oblika čevljev je prav tako pomembna."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Ustvarite uporabno primerjavo doma",
+          "paragraphs": [
+            "Izmerite obe stopali z isto metodo in beležite daljšo mero. Za primerjavo z vložkom uporabite odstranljivo izolacijo iz para, ki se že udobno ujema, če je odstranitev varna. Zapiši, kje se začne in konča vladar. Merjenje stopal je treba primerjati z grafiko dolžine stopal, medtem ko se meritev vložka primerja z drugim merjenjem vložkov.",
+            "Enote naj ostanejo skladne. Na primer, 270 mm je 27 centimetrov. Ta pretvorba ne pomeni 27 cm vložka ustreza 27 centimetrov. Oblika stopal, struktura čevljev in merilna metoda prodajalca še vedno vplivajo na odločitev."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Vprašaj za natančno merjenje skladišča",
+          "paragraphs": [
+            "Ko pridejo čevlji, najprej pregledajte naročilo in vidne oznake velikosti. Če manjka zahtevana mera, vpraÅ¡ajte, koliko dodatnih fotografskih ali merilnih storitev je na voljo in kaj stane. Določite natančen element, stran in dimenzijo, ki jih želite preveriti.",
+            "Primer zahtevek za prilagoditev: Prosimo, fotografirajte velikost oznake na obeh čevljih. Če je omako mogoče odstraniti brez poškodb, jo izmerite od pete do prsta z ravnilom in jasno pokažita oba konca. Prosimo, preverite ali je merjenje v centimetrih. To je predloga zahtevka, ki ne obljublja, da se lahko na ta način izmeri vsako postavko."
+          ],
+          "bullets": [
+            "Vprašaj za obe čevlji, če sumiš na neskladen par.",
+            "Zahtevajte za začetek in končne točke vladarja na isti fotografiji.",
+            "Ne zahtevajte od osebja, da poškoduje neprekinjeno vgradnjo za merjenje."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Uporabite vsako fotografijo za vprašanje, na katero lahko odgovori",
+          "paragraphs": [
+            "Nalepka potrjuje velikost natisnjenega na prejemu čevelja. To ne dokazuje, da čevelj sledi univerzalni konverzijski grafikon. Vladar poleg zunanjega dela prikazuje zunanjo dolžino, ki ni enaka uporabnemu notranjemu prostoru. Slika s polnim parom pomaga preveriti, ali so barve in oblike dosledne."
+          ],
+          "table": {
+            "headers": [
+              "Dokazi",
+              "Uporabno za",
+              "Ni moč ugotoviti samega"
+            ],
+            "rows": [
+              [
+                "Oznaka velikosti",
+                "Ujema se z naročeno različico.",
+                "Ali ti bo par pristal na nogo."
+              ],
+              [
+                "Meritev vložka",
+                "Primerjava odstranljive izločitve z znanim parom.",
+                "Udobje, širina ali celotna notranja oblika."
+              ],
+              [
+                "Meritev zunanjega dela",
+                "Preverjanje zunanjih dimenzij čevlja.",
+                "Prostor, ki je na voljo za tvojo nogo."
+              ],
+              [
+                "Zapri sliko QC",
+                "Preiskovanje vidne znamke ali neskladja.",
+                "Verodostojnost ali dolgotrajna trajnost."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Pred izdelavo paketa delajte skozi neskladje",
+          "paragraphs": [
+            "Hipotetični primer: odstranljiva vložka iz udobnega para meri 28 cm, medtem ko se zdi, da fotografija skladišča prikazuje 26 cm. Najprej potrdite, da obe meritvi uporabljata enake opazovane točke in da je slika skladišča v vašem naročilu. Vprašaj za jasnejšo fotografijo, če je vladar ali peta roba zakrit.",
+            "Če je razlika potrjena, jo primerjajte z velikostjo seznama in kontaktno podporo glede razpoložljivih možnosti. Ne domnevajte, da etiketa sama rešuje vprašanje. Vračilo ali izmenjava upravičenosti, rokov in stroškov je odvisno od naročila; razrešitev vprašanja, medtem ko je predmet še vedno na voljo za pregled v skladišču."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Dokončaj preglede stanja, preden odstraniš embalažo",
+          "paragraphs": [
+            "Odločiti se, ali so čevlji sprejemljivi pred zahtevo za odstranitev škatle oziroma njihovo kombiniranje v paket. Imejte nalepko fotografije, meritve, prodajalec grafikon in podporne odgovore skupaj. Vprašajte, ali bi lahko sprememba embalaže vplivala na vrnitev o kateri še razmišljate.",
+            "Ko je par pripravljen, se odločite za zaščito med prevozom. Primerjajte poštnino z dejansko pakirano velikostjo, še posebej pri vodenju več škatl za čevlje. Najcenejši plan pakiranja ni koristen, če to ogroža funkcijo morate ohraniti."
+          ]
+        }
+      ],
+      "checklist": [
+        "Uporabite natančen seznam velikosti in velikost sistema.",
+        "Različna stopala, meritve vložka in zunanji del.",
+        "Zadržite centimetre in milimetre skladne.",
+        "Ujemajo tako čevlje kot tudi njihove nalepke s plačanim naročilom.",
+        "Rešiti pomisleke glede merjenja pred predložitvijo paketov.",
+        "Imejte ustrezno embalažo, dokler odločitev o naročilu ni dokončna."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: QC fotografije in meritve",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: Področje uporabe storitev QC",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: Naročanje in pregled skladišč",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]

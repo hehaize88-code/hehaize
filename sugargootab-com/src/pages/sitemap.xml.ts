@@ -12,7 +12,7 @@ export const GET = () => {
     const alternatives = [...languages.map(([lang])=>[lang, new URL(localized(lang,path),SITE_ORIGIN).href]), ['x-default', new URL(path,SITE_ORIGIN).href]];
     const links = alternatives.map(([lang,href])=>`<xhtml:link rel="alternate" hreflang="${lang}" href="${xmlEscape(href)}"/>`).join('');
     const article = content('en').articles.find(a=>path===`/articles/${a.slug}/`);
-    const modified = article?.updated || (path==='/articles/' ? '2026-10-21' : undefined);
+    const modified = article?.updated || (path==='/articles/'||path==='/'||path==='/spreadsheet/'||path.startsWith('/category/') ? '2026-10-28' : undefined);
     const lastmod = modified ? `<lastmod>${modified}</lastmod>` : '';
     return languages.map(([lang])=>`<url><loc>${xmlEscape(new URL(localized(lang,path),SITE_ORIGIN).href)}</loc>${lastmod}${links}</url>`);
   });

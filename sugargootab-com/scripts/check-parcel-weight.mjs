@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {parcelWeight} from '../src/lib/parcel-weight.js';
+const sample={actual:3,length:40,width:30,height:20,divisor:6000,rule:'higher'};
+assert.deepEqual(parcelWeight(sample),{volumetric:4,billing:4});
+assert.deepEqual(parcelWeight({...sample,rule:'actual'}),{volumetric:4,billing:3});
+assert.deepEqual(parcelWeight({...sample,height:15}),{volumetric:3,billing:3});
+assert.deepEqual(parcelWeight({...sample,actual:5}),{volumetric:4,billing:5});
+assert.equal(parcelWeight({...sample,divisor:5000}).volumetric,4.8);
+for(const field of ['actual','length','width','height','divisor'])for(const v of [0,-1,NaN,Infinity])assert.equal(parcelWeight({...sample,[field]:v}),null);
+assert.equal(parcelWeight({...sample,rule:'unknown'}),null);
+console.log('Parcel calculation: units, route rules and invalid inputs passed');

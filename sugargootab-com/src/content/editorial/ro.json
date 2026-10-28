@@ -4,7 +4,7 @@
   "ui": {
     "articles": "Articole",
     "articleTitle": "Ghiduri de cumpărături Sugargoo",
-    "articleIntro": "Ghiduri practice despre linkuri de produse, fotografii QC, etapele comenzii și deciziile de expediere, cu surse oficiale și pași următori clari.",
+    "articleIntro": "Sugargoo ghiduri practice pentru link-uri de produs, fotografii QC, dimensiuni pantofi și de transport maritim. Alegeți întrebarea la care trebuie să răspundeți înainte de a cumpăra sau trimite un colet.",
     "faqTitle": "Întrebări frecvente despre Sugargoo",
     "faqIntro": "Răspunsuri clare pentru fiecare etapă a comenzii, cu surse oficiale pentru regulile platformei și limite prezentate sincer pentru acest catalog independent.",
     "readArticle": "Citește ghidul",
@@ -34,11 +34,35 @@
     "categoryAccount": "Plăți și servicii postvânzare",
     "author": "Echipa editorială SugargooTab",
     "siteEvidence": "Despre acest catalog independent",
-    "seoHomeTitle": "Sugargoo Spreadsheet: linkuri, fotografii și ghiduri de cumpărare",
+    "seoHomeTitle": "Sugargoo Spreadsheet: Pantofi, Îmbrăcăminte și link-uri de produs",
     "catalogCtaTitle": "Pune lista de verificare în practică",
     "catalogCtaBody": "Compară linkurile produselor din catalog, apoi verifică anunțul exact și detaliile propriei comenzi înainte de cumpărare sau expediere.",
     "catalogCtaButton": "Răsfoiește linkurile produselor",
-    "categoryCtaButton": "Explorează categoriile de produse"
+    "categoryCtaButton": "Explorează categoriile de produse",
+    "homeSearchIntro": "Găsiți pantofi, hanorac, tricouri și accesorii. Deschideți o legătură de produs, verificați opțiunile vânzătorului, apoi revizuiți propriul depozit QC înainte de expediere.",
+    "seoHomeDescription": "Navighează link-uri de produs Sugargoo pentru pantofi, hanorac, tricouri și accesorii. Comparați fotografii de referință și utilizați QC practice, dimensionare și ghiduri de transport maritim.",
+    "seoCatalogTitle": "Fișă de calcul Sugargoo: Pantofi de navigare, îmbrăcăminte și accesorii",
+    "seoCatalogDescription": "Caută link-uri de produs Sugargoo, compară fotografiile de referință și prețurile, și verifică listarea originală înainte de comandă. Răsfoiţi pantofi, îmbrăcăminte şi accesorii.",
+    "seoCategoryTitle": "Sugargoo {category}: Linkuri de produs & Fotografii",
+    "seoCategoryDescription": "Navighează link-urile de produs {category} pentru Sugargoo. Comparați fotografiile de referință și prețurile enumerate, apoi confirmați dimensiunile, opțiunile și disponibilitatea înainte de comandă.",
+    "catalogGuideNote": "Fotografiile si preturile produselor sunt referinte. Verificați lista exact vânzător și propriul depozit QC înainte de expediere.",
+    "nextStep": "Alege pasul următor",
+    "weightToolTitle": "Calculator pentru greutatea coletului",
+    "weightToolIntro": "Verificați greutatea reală și volumetrică. Acest instrument nu citează preţurile de transport maritim; utilizaţi traseul selectat Divisor şi regula de facturare.",
+    "actualWeight": "Greutatea reală a coletului ambalat (kg)",
+    "parcelLength": "Lungimea exterioară (cm)",
+    "parcelWidth": "Lăţimea exterioară (cm)",
+    "parcelHeight": "Înălțimea exterioară (cm)",
+    "weightDivisor": "Divizorul greutății volumetrice al rutei",
+    "weightRule": "Regula de încărcare",
+    "higherWeight": "Mai mare de greutate reală și volumetrică",
+    "actualOnly": "Numai greutatea reală",
+    "calculateWeight": "Calculează greutatea",
+    "volumetricWeight": "Greutatea volumimetrică",
+    "billingBase": "Greutatea înainte de rotunjire",
+    "weightDisclaimer": "Calculul greutății ilustrative numai. În continuare se aplică rotunjirea rutelor, taxele minime, limitele dimensiunilor și taxele de serviciu. Confirmați citatul curent cu Sugargoo.",
+    "weightError": "Introduceți un număr pozitiv în fiecare câmp de măsurare.",
+    "officialEstimatorGuide": "Deschide ghidul oficial de evaluare a transportului maritim"
   },
   "groups": {
     "basics": "Primii pași",
@@ -420,46 +444,28 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Ghid Sugargoo Spreadsheet: găsește și verifică linkuri",
-      "description": "Găsește produse într-un Sugargoo spreadsheet, verifică anunțurile și variantele actuale și deosebește imaginile de referință de fotografiile QC ale comenzii tale.",
+      "title": "Cum folosești un tabel Sugargoo: cauți, verifici și comanzi",
+      "description": "Utilizați o foaie de calcul Sugargoo pentru a găsi link-uri de produs, dimensiuni de verificare și opțiuni de vânzare, deschide pagina de comandă corectă, și revizui depozitul QC înainte de expediere.",
       "keyword": "sugargoo spreadsheet",
       "category": "getting-started",
       "intro": [
-        "Un Sugargoo spreadsheet este util când te ajută să alcătuiești o selecție mai mică și mai bine documentată. O pagină lungă cu imagini nu îți spune dacă o anumită mărime este disponibilă, cât va costa coletul sau dacă anunțul actual al vânzătorului mai corespunde unei recomandări vechi. Consideră tabelul începutul cercetării și bazează decizia finală pe anunțul exact.",
-        "Acest catalog independent preia informațiile despre produse și imaginile de referință de la cnbuycha. Comanda și plata au loc pe Sugargoo. Metoda următoare leagă aceste două etape fără a prezenta o fișă drept recomandare personală, garanție de stoc sau dovadă a inspecției în depozit. Funcționează și dacă îți păstrezi selecția într-o aplicație simplă de notițe."
+        "O foaie de calcul Sugargoo este un director de link-uri de produs. Utilizați-l pentru a găsi un element, apoi verificați listarea originală și varianta exactă pe Sugargoo înainte de plată. O legătură salvată nu confirmă stocul curent, dimensiunea selectată, prețul final sau acceptarea de către agentul cumpărător.",
+        "Începe cu catalogul live sau o categorie cum ar fi pantofi, hanorac sau tricouri. Deschideți un element promițător, revizuiți fotografiile de referință și urmați link-ul de cumpărare disponibil. Păstrați lista scurtă destul de mici pentru a verifica fiecare element în mod corespunzător."
       ],
       "sections": [
         {
-          "id": "live-listing-check",
-          "title": "Cum verifici un anunț actual înainte de cumpărare",
+          "id": "spreadsheet-first-action",
+          "title": "De la o foaie de calcul găsi la un ordin verificat",
           "paragraphs": [
-            "Deschide produsul din catalog, apoi urmează linkul către anunțul original. Compară ID-ul produsului de pe marketplace, vânzătorul și varianta aleasă cu articolul afișat în Sugargoo. Numărul intern al paginii din catalog este un identificator separat. Verifică din nou prețul actual, opțiunile și cantitatea chiar înainte de plată; un card salvat nu confirmă stocul actual.",
-            "Dacă anunțul original lipsește, produsul nu se încarcă sau varianta diferă, oprește-te în acel punct. Revino la spreadsheet și compară alt candidat. Notează de ce primul nu a trecut verificarea, ca să nu repeți ulterior același demers. Imaginile de referință rămân materiale pentru descoperirea produselor, chiar când seamănă cu fotografii din depozit."
+            "Căutare după tipul de produs sau un nume distinctiv, apoi deschide pagina element. Comparați titlul de listă, identificatorul de element sursă, fotografiile și opțiunile selectate. În cazul în care pagina de cumpărare deschide o culoare sau o dimensiune diferită, alegeți din nou varianta prevăzută și inspectați rezumatul comenzii finale. Nu plătiţi doar pentru că imaginea îmi pare cunoscută.",
+            "Prețul indicat într-un catalog este o referință pentru articol. Construiți un buget separat pentru livrarea în China, orice servicii selectate și mărfuri internaționale. Salvează legătura sursă cu dimensiunea și culoarea aleasă. Odată ce elementul ajunge la depozit, utilizați propriul record QC pentru a decide dacă este gata de expediere."
           ],
-          "table": {
-            "headers": [
-              "Verificare",
-              "Dovada de folosit"
-            ],
-            "rows": [
-              [
-                "Identitatea produsului",
-                "URL-ul original de pe marketplace și ID-ul produsului"
-              ],
-              [
-                "Disponibilitatea actuală",
-                "Anunțul actual al vânzătorului și opțiunea selectată"
-              ],
-              [
-                "Prețul",
-                "Varianta exactă și suma de la plată"
-              ],
-              [
-                "Starea",
-                "Fotografiile comenzii tale după sosirea în depozit"
-              ]
-            ]
-          }
+          "bullets": [
+            "Găsiți: alegeți o categorie și restrângeți căutarea.",
+            "Verificare: se potrivesc cu listarea originală, opțiuni și prețul de comandă curent.",
+            "Ordine: folosiţi fluxul oficial de achiziţii pentru un element eligibil.",
+            "Review: inspecta propriul depozit QC înainte de a face un colet."
+          ]
         },
         {
           "id": "define-the-purchase",
@@ -541,11 +547,15 @@
         }
       ],
       "related": [
-        "how-to-buy-on-sugargoo",
+        "weidian-taobao-links-sugargoo",
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "how-to-buy-on-sugargoo",
@@ -648,51 +658,27 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Fotografii QC Sugargoo: verificări înainte de expediere",
-      "description": "Folosește o listă practică pentru fotografiile QC Sugargoo ale pantofilor, hainelor și genților. Verifică etichete, măsurători, cusături și detalii lipsă înainte de expediere.",
+      "title": "Cum verifici fotografiile QC Sugargoo înainte de expediere",
+      "description": "Găsiți Sugargoo depozit fotografii QC, verificați elementul corect și dimensiunea, solicita măsurători suplimentare utile, și rezolva probleme înainte de transportul maritim internațional.",
       "keyword": "fotografii qc sugargoo",
       "category": "quality",
       "intro": [
-        "Fotografiile din depozit sunt cele mai utile când trebuie să iei o decizie precisă: corespunde produsul primit comenzii, este neclar un detaliu important sau există o deteriorare vizibilă? Poți privi toate imaginile și tot să lași întrebarea esențială fără răspuns dacă nu ai o listă de verificare. O metodă clară face fotografiile mai ușor de folosit.",
-        "Sugargoo descrie furnizarea obișnuită a cinci fotografii QC standard, aria inspecției depinzând de produs și tipul comenzii. Numărul imaginilor nu garantează ce se poate verifica. Imaginile de referință cnbuycha de pe acest site sunt materiale de catalog, nu QC verificat pentru comanda ta Sugargoo; consultă propriul dosar de depozit înainte de transportul internațional."
+        "Pentru a verifica fotografii Sugargoo QC, conectați-vă și deschideți elementul primit în comanda dumneavoastră sau înregistrare Packing Center. Revizuiţi imaginile ataşate acestui articol înainte de a le adăuga într-un pachet internaţional. Imagini de catalog pe SugargooTab sunt imagini de referință, nu fotografii ale propriului ordin.",
+        "Verificați varianta selectată, eticheta, cantitatea și condiția vizibilă mai întâi. Dacă potrivirea depinde de o măsurătoare care nu este afișată, solicitați această măsurare specifică înainte de aprobarea transportului maritim. QC vizual nu este autentificare sau o garanție de potrivire."
       ],
       "sections": [
         {
-          "id": "product-qc-checklist",
-          "title": "Verificări QC pentru pantofi, haine și genți",
+          "id": "qc-first-check",
+          "title": "În cazul în care pentru a găsi fotografii şi ce să verificaţi mai întâi",
           "paragraphs": [
-            "Începe prin a confirma comanda, culoarea, mărimea și cantitatea. Examinează apoi detaliile care ar putea schimba decizia de a păstra articolul. Lista următoare ajută la analizarea fotografiilor, fără să garanteze că QC obișnuit include fiecare unghi sau măsurătoare. Cere dovada specifică lipsă și verifică eventualul tarif înainte să continui.",
-            "De exemplu, o geantă fotografiată numai din față nu dovedește starea prinderii curelei sau a interiorului. Cere unghiul relevant dacă acel detaliu contează. Dacă ai nevoie de o măsurătoare, precizează capetele măsurate și cere o ruletă vizibilă. Fotografiile nu pot demonstra fiecare proprietate funcțională și nu dovedesc autenticitatea."
+            "Începe cu ordinea exactă de referinţă. Un produs încă achiziţionat sau livrat de vânzător nu poate avea încă fotografii de depozit. Atunci când elementul a fost primit, inspectaţi detaliile comenzii sale şi înregistrarea Packing Center pentru imaginile QC. În cazul în care înregistrarea spune că este gata, dar nu apar fotografii, trimiteți sprijin de referință ordine și întrebați dacă inspecția este completă.",
+            "Deschide imaginea completă în loc să judeci o unghie mică. Se potrivește culoarea și dimensiunea etichetei cu comanda plătită, apoi se inspectează ambele părți și orice accesorii incluse. Păstrează o întrebare specifică pentru orice unghi pe care nu-l poţi vedea. Pentru pantofi, o măsurătoare insolă și o fotografie de dimensiuni răspunde la diferite întrebări; unul nu poate înlocui celălalt."
           ],
-          "table": {
-            "headers": [
-              "Produs",
-              "Verifică în fotografiile comenzii",
-              "Dacă nu este clar, cere"
-            ],
-            "rows": [
-              [
-                "Pantofi",
-                "Perechea, etichetele de mărime, tălpile și cusăturile vizibile",
-                "Ambele etichete și unghiul relevant al tălpii sau cusăturii"
-              ],
-              [
-                "Haine",
-                "Eticheta de mărime, aspectul materialului și cusăturile",
-                "O măsurătoare întinsă cu început și sfârșit clare"
-              ],
-              [
-                "Genți",
-                "Curele, închideri, căptușeală și accesorii",
-                "Prim-planuri ale interiorului și punctelor de prindere"
-              ],
-              [
-                "Orice articol",
-                "Varianta corectă, cantitatea și deteriorările vizibile",
-                "O imagine clară a diferenței specifice"
-              ]
-            ]
-          }
+          "bullets": [
+            "Verificați dacă fiecare fotografie aparține aceleiași comenzi și variante.",
+            "Solicită o vedere atentă a unui defect suspect, identificându-i locaţia.",
+            "Păstrați elemente nerezolvate din colet până când aveți un răspuns."
+          ]
         },
         {
           "id": "match-the-order",
@@ -774,30 +760,39 @@
         }
       ],
       "related": [
-        "sugargoo-returns-refunds",
-        "sugargoo-rehearsal-shipping"
+        "sugargoo-shoe-size-guide",
+        "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shoe-size-guide/",
+        "/category/shoes/"
+      ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Calculator de transport Sugargoo: greutate, dimensiuni și cost",
-      "description": "Folosește calculatorul Sugargoo cu greutăți și dimensiuni realiste. Compară rutele eligibile și înțelege ce rămâne incert într-o estimare.",
+      "title": "Calculator de transport Sugargoo: greutate și costuri",
+      "description": "Calculați greutatea volumetrică a parcelei, înțelegeți greutatea facturabilă, și comparați cotațiile de transport maritim Sugargoo folosind destinația, dimensiunile și categoria de produs.",
       "keyword": "calculator transport sugargoo",
       "category": "shipping",
       "intro": [
-        "O estimare de transport devine utilă când știi ce date au produs-o. Două persoane pot introduce aceeași greutate și primi rezultate diferite deoarece destinațiile, categoriile, dimensiunile sau rutele diferă. Copierea totalului altui cumpărător oferă astfel un buget slab pentru comanda ta.",
-        "Instrucțiunile oficiale ale calculatorului Sugargoo folosesc destinația, categoria articolului, greutatea și dimensiunile pentru compararea opțiunilor. Tratează rezultatul drept scenariu datat, apoi actualizează-l când afli mai multe despre coletul ambalat. Ghidul arată cum construiești aceste scenarii și identifici incertitudinea înainte să devină o problemă la plată."
+        "Utilizaţi Sugargoo lui de transport maritim oficialstimator pentru preţurile curente şi disponibilitatea rutei. Introduceți destinația, categoria de produs, greutatea ambalate și dimensiuni. Instrumentul de greutate de mai jos ajută la verificarea matematicii; nu citează marfă sau nu se conectează la contul Sugargoo.",
+        "Comparați rutele utilizând intrări de colete identice. Un citat bazat numai pe greutatea produsului poate pierde spațiul utilizat de cutii de pantofi sau ambalaj protector. Verificați fiecare regulă de încărcare a traseului, rotunjirea și taxa minimă înainte de plată."
       ],
       "sections": [
         {
-          "id": "quote-comparison",
-          "title": "Fă două estimări înainte să cumperi produsele",
+          "id": "shipping-inputs",
+          "title": "Un exemplu volumetric de greutate lucrat",
           "paragraphs": [
-            "Construiește un scenariu inițial cu cele mai bune informații disponibile despre greutate și dimensiuni, apoi unul prudent care ține cont de ambalarea incertă. Păstrează aceleași destinație, conținut și setări. Dacă doar ipotezele cele mai optimiste fac comanda accesibilă, clarifică incertitudinea înainte să plătești produsele.",
-            "Notează data ofertei, ruta, unitățile, dimensiunile estimate și serviciile suplimentare alese. Înlocuiește presupunerile cu măsurătorile coletului când devin disponibile. Pentru SUA, consultă ghidul separat despre procesul de comparare; pentru mai multe comenzi depozitate, compară costurile complete ale expedierii împreună și separat folosind ghidul de consolidare."
+            "Exemplu ilustrativ, nu un citat de transport maritim: o parcelă măsoară 40 × 30 × 20 cm și cântărește 3 kg. Cu un divizor de 6000, greutatea volumetrică este de 4 kg. O rută care utilizează cea mai mare greutate reală și volumetrică ar începe de la 4 kg înainte de regulile sale de rotunjire sau de încărcare minimă. Un traseu de încărcare greutate reală ar începe doar de la 3 kg.",
+            "În cazul în care aceleași mărfuri pot încăpea în siguranță într-un pachet de 40 × 30 × 15 cm, greutatea volumetrică calculată devine 3 kg cu acest divizor. Asta compara doar masuratorile. Aceasta nu se dovedește a fi o economie: serviciile de ambalare, eligibilitatea rutelor, creșterile de greutate și tariful actual pot modifica totalul final."
+          ],
+          "bullets": [
+            "Utilizaţi dimensiunile exterioare ambalate în centimetri, nu dimensiunile produsului.",
+            "Conversia gramelor în kilograme înainte de a utiliza instrumentul de mai jos: 3000 g = 3 kg.",
+            "Ia disivorul şi încarcă regula de pe ruta pe care o iei în considerare."
           ]
         },
         {
@@ -880,31 +875,55 @@
         }
       ],
       "related": [
-        "sugargoo-shipping-to-usa",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-rehearsal-shipping",
+        "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-rehearsal-shipping/",
+        "/articles/sugargoo-shipping-to-usa/"
+      ]
     },
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Simulare de expediere Sugargoo: greutate, dimensiuni și utilitate",
-      "description": "Află când este utilă simularea de expediere Sugargoo, precizează ambalarea și compară coletul măsurat cu estimarea inițială de transport.",
+      "title": "Simularea ambalării Sugargoo: cum funcționează și când merită",
+      "description": "Aflați ce face transportul maritim de repetiții Sugargoo, atunci când merită taxa, și cum să utilizați greutatea și dimensiunile ambalate înainte de a alege un traseu de transport maritim.",
       "keyword": "sugargoo rehearsal shipping",
       "category": "shipping",
       "intro": [
-        "Simularea expedierii este cea mai utilă când incertitudinea privind coletul ambalat influențează o decizie încă deschisă. Poate alegi între rute, hotărăști dacă păstrezi un ambalaj voluminos sau verifici dacă un grup de produse respectă limitele serviciului. Măsurătorile mai bune pot răspunde acestor întrebări, dar nu garantează o factură mai mică.",
-        "Sugargoo descrie serviciul ca o simulare a pachetului înainte de expediere, care oferă informații mai exacte despre greutate și volum. Tratează-l ca pe o decizie de măsurare și ambalare, verificând costul și condițiile actuale în cont. Valoarea practică vine din faptul că știi ce vei face cu rezultatul."
+        "Sugargoo este un serviciu de ambalare şi măsurare înainte de expediere internaţională. Acesta vă ajută să verificaţi greutatea şi dimensiunile reale cocktail-uri înainte de a alege de transport maritim. Merită avut în vedere atunci când cutii, elemente voluminoase sau o limită de traseu face estimarea nesigură; nu garantează economii.",
+        "Mai întâi termină-ţi obiectul şi verifică QC. Apoi confirmați taxa de serviciu curent și opțiuni de ambalare în contul dumneavoastră. Utilizați rezultatul pentru a compara rutele eligibile cu același conținut, destinație și ambalaj."
       ],
       "sections": [
         {
           "id": "rehearsal-decision",
-          "title": "Când merită luată în calcul o simulare de ambalare?",
+          "title": "Cum să utilizaţi transportul de repetiţii",
           "paragraphs": [
-            "Ia în calcul o simulare când dimensiunile ambalate necunoscute pot schimba ruta sau bugetul: un articol voluminos și ușor, mai multe cutii comerciale sau un colet aproape de limita unei rute. Notează incertitudinea pe care vrei să o clarifici și verifică tariful actual. Dacă decizia ar fi aceeași pentru estimări rezonabile diferite, măsurarea suplimentară poate avea o valoare mai mică.",
-            "Compară rezultatul cu datele inițiale: greutate reală, dimensiuni exterioare, ambalaje păstrate și servicii selectate. Recalculează după regula actuală de tarifare a rutei. O măsurătoare mai mică nu garantează o factură finală redusă, deoarece taxele minime, treptele de greutate și alte opțiuni pot conta în continuare."
-          ]
+            "În contul dvs. Sugargoo, identificaţi elementele depozitului pe care doriţi să le expediaţi împreună. Deschideți simularea sau serviciul de repetiție disponibil al pachetului înainte de expediere, verificați taxa acestuia și specificați dacă ambalajele originale și ambalajul protector ar trebui să rămână. Etichetele ecranului pot fi modificate; solicitați sprijin înainte de a plăti dacă opțiunea sau domeniul său de aplicare este neclar.",
+            "Când rezultatul este gata, înregistraţi greutatea ambalată şi toate cele trei dimensiuni exterioare. Reintroduceţi aceste măsurători în estimarea oficială. Comparați rutele eligibile, creșterile de greutate și orice taxă de ambalare înainte de depunerea parcelei. Dacă modificaţi conţinutul sau ambalajul după aceea, măsurătorile anterioare nu mai pot descrie parcela."
+          ],
+          "table": {
+            "headers": [
+              "Situaţia ta",
+              "Decizia"
+            ],
+            "rows": [
+              [
+                "Mai multe cutii de pantofi sau o haină voluminoasă",
+                "Luați în considerare măsurarea înainte de a selecta o rută."
+              ],
+              [
+                "Parcel aproape de o dimensiune sau limită de greutate",
+                "Verificați rezultatul ambalat împotriva acestei limite exacte."
+              ],
+              [
+                "Parcela compactă cunoscută; alegerea traseului rămâne aceeaşi",
+                "Serviciul suplimentar poate adăuga puțină valoare."
+              ]
+            ]
+          }
         },
         {
           "id": "identify-the-decision",
@@ -986,11 +1005,15 @@
         }
       ],
       "related": [
-        "sugargoo-parcel-consolidation",
-        "sugargoo-shipping-calculator"
+        "sugargoo-shipping-calculator",
+        "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-parcel-consolidation/"
+      ]
     },
     {
       "id": "sugargoo-tracking",
@@ -1455,22 +1478,49 @@
     {
       "id": "weidian-taobao-links-sugargoo",
       "slug": "weidian-taobao-links-sugargoo",
-      "title": "Linkuri Weidian și Taobao în Sugargoo: verificare și erori",
-      "description": "Verifică linkurile Weidian și Taobao înainte să cumperi pe Sugargoo. Rezolvă anunțurile lipsă, variantele greșite și erorile de citire fără presupuneri.",
+      "title": "Linkul Sugargoo nu funcționează? Soluții Taobao și Weidian",
+      "description": "Fix probleme comune Sugargoo produs-link: link-uri de partajare incomplete, elemente indisponibile, variante greșite și opțiuni lipsă de la Taobao sau Weidian.",
       "keyword": "weidian către sugargoo",
       "category": "getting-started",
       "intro": [
-        "Un link de produs leagă o recomandare de anunțul unui anumit vânzător. Singur nu confirmă mărimea, culoarea, stocul sau prețul final livrat. Cel mai sigur mod de a utiliza un link Weidian sau Taobao pe Sugargoo este să păstrezi identitatea produsului, apoi să verifici opțiunile pe ecranul oficial înainte de plată.",
-        "Ghidul explică ce copiezi, cum recunoști un anunț nepotrivit și ce faci când încărcarea automată nu reușește. Distingem și ID-ul marketplace-ului de identificatorul paginii interne a catalogului, astfel încât un buton comod de cumpărare să nu devină un motiv să sari peste verificările finale."
+        "În cazul în care un link Taobao sau Weidian nu va încărca în Sugargoo, deschideți prima pagină originală a produsului și verificați dacă elementul încă există. Copiați URL-ul produsului său direct, fără text de partajare din jur, apoi încercați căutarea oficială a produsului din nou. Menținerea identificatorului elementului intact.",
+        "Un import nereuşit poate însemna o legătură incompletă, opţiuni indisponibile, o listă de vânzare-out sau un element pe care agentul nu îl poate accepta. Un ordin manual este adecvat numai pentru o achiziție eligibilă ale cărei detalii pot fi confirmate. Nu ocoleşte restricţiile."
       ],
       "sections": [
         {
-          "id": "link-error-check",
-          "title": "Ce verifici când un link de produs nu se încarcă",
+          "id": "link-troubleshooting",
+          "title": "Se potrivesc cu simptomul la pasul următor",
           "paragraphs": [
-            "Deschide întâi pagina originală și confirmă că identifică încă articolul dorit. Pagina unui magazin, un text de distribuire prescurtat sau un anunț eliminat nu echivalează cu URL-ul complet al produsului. Compară ID-ul de pe marketplace înainte să încerci iar. Elimină textul de distribuire fără legătură, fără să schimbi identitatea articolului.",
-            "Dacă articolul original există, dar citirea automată eșuează, verifică opțiunile oficiale de comandă manuală și condițiile de acceptare. Păstrează împreună vânzătorul, varianta exactă, cantitatea, URL-ul și prețul. Un formular manual nu anulează restricțiile și nu garantează disponibilitatea. Dacă anunțul actual nu poate fi verificat, alege alt candidat în loc să presupui după fotografie."
-          ]
+            "Utilizați aceeași listă originală atunci când se compară ecranele de piață și Sugargoo. Un element denumit în mod similar nu este o dovadă că opțiunea importată este corectă. Dacă este necesar suport, include URL-ul direct, identificatorul de element, varianta selectată și textul exact de eroare; eliminați detaliile contului privat din capturi de ecran."
+          ],
+          "table": {
+            "headers": [
+              "Ceea ce vezi",
+              "Ce trebuie verificat"
+            ],
+            "rows": [
+              [
+                "Link deschide un ecran de partajare sau un mesaj text",
+                "Deschideți produsul în sine și copiați URL-ul său direct."
+              ],
+              [
+                "Listarea originală nu este disponibilă",
+                "Întreabă vânzătorul despre disponibilitate; nu reutilizați un preț vechi."
+              ],
+              [
+                "Element deschis, dar dimensiunea sau culoarea lipsește",
+                "Confirmă această opțiune specifică înainte de a comanda."
+              ],
+              [
+                "Agent refuză elementul",
+                "Întrebaţi despre eligibilitate; nu ascundeţi elementul."
+              ],
+              [
+                "Listarea lucrărilor, dar importul încă nu a reușit",
+                "Cereți sprijin dacă este posibil un ordin manual susținut."
+              ]
+            ]
+          }
         },
         {
           "id": "source-identity",
@@ -1560,22 +1610,39 @@
         "how-to-buy-on-sugargoo"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-21"
+      "updated": "2026-10-28",
+      "actions": [
+        "/spreadsheet/",
+        "/articles/how-to-buy-on-sugargoo/"
+      ]
     },
     {
       "id": "sugargoo-shipping-to-usa",
       "slug": "sugargoo-shipping-to-usa",
-      "title": "Transport Sugargoo către SUA: costuri, greutate și livrare",
-      "description": "Planifică transportul Sugargoo către SUA: compară greutatea, dimensiunile, condițiile rutelor și etapele livrării înainte de plata transportului internațional.",
+      "title": "Livrare Sugargoo în SUA: costuri, rute și durată",
+      "description": "Planificați transportul Sugargoo către SUA cu o listă completă de costuri, intrări consistente în coletărie, comparații de rute și pași de urmărire înainte de expediere.",
       "keyword": "transport sugargoo către SUA",
       "category": "shipping",
       "published": "2026-10-21",
-      "updated": "2026-10-21",
+      "updated": "2026-10-28",
       "intro": [
-        "Expedierea Sugargoo către SUA este o decizie separată de cumpărarea produselor. Începe cu adresa de livrare, articolele pe care vrei să le trimiți și o estimare a greutății și dimensiunilor după ambalare. Compară apoi rutele oferite efectiv în cont. Prețul coletului altei persoane este doar un reper: destinația, data, dimensiunile și conținutul pot fi diferite de ale tale.",
-        "Acest ghid oferă o metodă de comparație, nu un preț fix sau o promisiune de livrare. SugargooTab este un catalog independent și nu poate cota, expedia sau urmări coletul în numele Sugargoo. Folosește calculatorul oficial pentru planificare și ecranul final al coletului pentru decizia de plată. Păstrează o evidență a ceea ce include oferta, pentru a înțelege modificările ulterioare."
+        "Pentru transportul Sugargoo în SUA, obțineți o ofertă pentru starea reală, categoria de produs, greutatea ambalată și dimensiunile. Cea mai ieftină linie afișată este utilă numai dacă bunurile și adresa dumneavoastră sunt eligibile. disponibilitatea rutei, prețurile și estimările privind livrarea pot fi modificate.",
+        "Separaţi preţul bunurilor de bugetul internaţional al parcelelor. Comparați suma totală plătibilă și condițiile de livrare utilizând aceeași parcelă, apoi verificați măsurătorile finale ambalate înainte de expediere."
       ],
       "sections": [
+        {
+          "id": "usa-route-comparison",
+          "title": "Comparați rutele americane fără a amesteca diferite parcele",
+          "paragraphs": [
+            "Creați o parcelă de referință înainte de a deschide mai multe rezultate ale traseului. Înregistrați codul său de stat și poștal, categoria mărfurilor, greutatea reală, dimensiunile exterioare și protecția necesară. Salvează data și moneda de cotare cu fiecare rezultat. Dacă un rezultat exclude dimensiunile sau folosește o altă categorie, reluați-l înainte de a compara prețurile.",
+            "Pentru fiecare rută eligibilă, se înregistrează mărfurile de plătit, regula greutății, serviciile incluse, intervalul de tranzit estimat și transportatorul final de livrare, dacă este specificat. Adaugă ambalaj opţional sau asigurare separat. A se citi condițiile actuale de import și de rută în loc să se presupună că un nume de rută nu garantează taxe suplimentare sau vămuire."
+          ],
+          "bullets": [
+            "Compară aceleaşi mărfuri şi planuri de ambalare.",
+            "Verificați dacă estimarea începe la expediere sau la o altă etapă de referință.",
+            "Păstrați chitanțe produse și descrieri exacte elemente cu dosarul de colete."
+          ]
+        },
         {
           "id": "build-a-complete-budget",
           "title": "Separă costul produselor de bugetul coletului către SUA",
@@ -1687,7 +1754,11 @@
       ],
       "related": [
         "sugargoo-shipping-calculator",
-        "sugargoo-parcel-consolidation"
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
       ]
     },
     {
@@ -1961,6 +2032,383 @@
       "related": [
         "sugargoo-rehearsal-shipping",
         "sugargoo-shipping-to-usa"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-uk",
+      "slug": "sugargoo-shipping-to-uk",
+      "title": "Livrare Sugargoo în Regatul Unit: costuri și termene",
+      "description": "Comparați cotațiile de transport maritim Sugargoo Marea Britanie, greutatea reală și volumetrică, predarea de livrare și informații de import-taxa înainte de a depune un colet.",
+      "keyword": "sugargoo shipping to uk",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Pentru a estima transportul Sugargoo în Marea Britanie, selectați regiunea de destinație reală, categoria de bunuri, greutatea ambalată și dimensiunile în estimarea oficială. Comparați numai rutele disponibile pentru această combinație. Verificați cotația finală în contul dvs. înainte de a plăti; un preț de la un alt cumpărător",
+        "Acest ghid utilizează mai degrabă o foaie de lucru de comparare practică decât preţuri fixe. Te ajută să decizi dacă o parcelă compactă, un pachet de cutii de pantofi voluminoase sau un ordin sensibil la termene limită are nevoie de un alt plan de transport maritim."
+      ],
+      "sections": [
+        {
+          "id": "uk-quote-inputs",
+          "title": "Pregatiti un colet pentru o comparatie corect Marea Britanie",
+          "paragraphs": [
+            "Începeţi cu bunurile pe care le-aţi verificat deja în depozit. Notează lista de articole şi ambalajul pe care intenţionezi să-l păstrezi. Un citat pentru pantofi cu cutii de vânzare cu amănuntul nu poate fi comparat corect cu un citat care presupune că cutiile vor fi eliminate. Dacă măsurătorile sunt suficient de incerte pentru a schimba decizia dumneavoastră, ia în considerare o repetiție de ambalare mai întâi.",
+            "Utilizați regiunea de adresă corectă și codul poștal. Marea Britanie și Irlanda de Nord au diferite acorduri de import, astfel încât să evite copierea unei locații dintr-o estimare anterioară. Cereţi platformei confirmarea acoperirii destinaţiei dacă adresa dvs. nu este acceptată pe ruta selectată."
+          ]
+        },
+        {
+          "id": "uk-route-worksheet",
+          "title": "Construieşte o comparaţie a traseului pe care o poţi refolosi.",
+          "paragraphs": [
+            "Deschideţi rezultatele eligibile şi înregistraţi data citatului, moneda şi măsurătorile ambalate o dată. Apoi faceţi câte un rând pentru fiecare rută. Comparați suma reală datorată după orice cupon aplicabil, nu un preț promoțional încrucișate. Un cupon cu cheltuieli minime nu se poate aplica unui pachet mai mic."
+          ],
+          "table": {
+            "headers": [
+              "Înregistrare pentru fiecare rută",
+              "De ce contează?"
+            ],
+            "rows": [
+              [
+                "Regula de încărcare și creșterea greutății",
+                "Același pachet măsurat poate avea o greutate diferită facturată."
+              ],
+              [
+                "Servicii de transport de mărfuri și servicii opționale",
+                "Împachetarea sau asigurarea pot fi elemente de linie separate."
+              ],
+              [
+                "Tranzitul estimat și punctul său de plecare",
+                "Lucrările de livrare şi depozitare a vânzătorilor pot fi efectuate înainte de tranzitul internaţional."
+              ],
+              [
+                "Transportatorul de livrări din Regatul Unit și acoperirea adreselor",
+                "Predarea finală afectează modul în care urmăriți livrarea."
+              ],
+              [
+                "Termeni de încărcare la import",
+                "Citiţi ce este inclus şi ce mai trebuie să plătiţi."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "uk-box-example",
+          "title": "Cutii de pantofi: comparaţi protecţia şi mărimea parcelei",
+          "paragraphs": [
+            "Să presupunem că două perechi de pantofi au trecut de mărimea şi condiţiile tale. Comparați două planuri de ambalare: păstrarea ambelor cutii, sau eliminarea cutii în cazul în care sunt sigure și acceptabile pentru tine. Cereţi dimensiunile exterioare ale parcelei finite conform planului ales. A nu se deduce aceste dimensiuni prin adăugarea lungimilor pantofilor împreună.",
+            "Dacă colectaţi cutiile sau aveţi nevoie de ele pentru o posibilă întoarcere, păstrarea lor poate conta mai mult decât reducerea volumului. Dacă le eliminaţi, sunteţi de acord cu protecţia pantofilor. Recalculați ruta utilizând dimensiunile rezultate și includeți costul serviciului de ambalare. Ambalajul mai mic nu este automat mai ieftin sau mai sigur."
+          ]
+        },
+        {
+          "id": "uk-import-records",
+          "title": "Verificați taxele de import și țineți evidența comenzii",
+          "paragraphs": [
+            "Utilizați orientările actuale ale GOV.UK legate de mai jos pentru mărfurile trimise din străinătate. Tratamentul importurilor depinde de destinație, bunuri și tranzacție. O rută comercializată cu formulare fiscală nu reprezintă o garanție generală de scutire; citiți termenii și confirmați care sunt taxele incluse.",
+            "Păstrați chitanțe, descrieri ale elementelor și suma plătită cu dosarul de colete. Declararea mărfurilor cu precizie și solicitarea de sprijin cu privire la câmpurile de declarații neclare. Acest ghid nu calculează taxa și nici nu furnizează o valoare a declarației universale. În cazul în care transportatorul solicită plata sau documentele, verificați cererea prin intermediul site-ului web oficial al transportatorului."
+          ]
+        },
+        {
+          "id": "uk-delivery-stages",
+          "title": "Citiţi urmărirea ca o secvenţă de predare",
+          "paragraphs": [
+            "Dispecerat separat, chitanţă depozit, expediere internaţională şi livrare în Marea Britanie. Numărul de urmărire al vânzătorului acoperă livrarea către depozit; acesta nu dovedește că pachetul internațional a plecat. După expedierea coletelor, verificați registrul logistic pentru numărul asociat cu linia de transport maritim selectată.",
+            "Atunci când un transportator final de livrare este identificat, urmați, de asemenea, pagina sa oficială de urmărire. Salvați ultima scanare, data și orice acțiune necesară. Pentru o întârziere, solicitaţi sprijin în ce stadiu aşteaptă şi dacă sunt necesare documente sau o corecţie a adresei. Un interval estimat de livrare nu este o dată de sosire garantată."
+          ]
+        },
+        {
+          "id": "uk-choose",
+          "title": "Alege calea pentru decizia cu care te confrunţi de fapt",
+          "paragraphs": [
+            "Pentru o parcelă compactă fără termen limită, se compară costul total pe rutele eligibile. Pentru o parcelă voluminoasă, investigați regula de greutate și dimensiunea ambalate mai întâi. Pentru un ordin sensibil la timp, permite pregătirea antrepozitului și a vămilor, precum și estimarea de tranzit anunțată.",
+            "Dacă nici o rută eligibilă nu satisface nevoile dumneavoastră, întrerupeţi transportul şi solicitaţi opţiuni. Împărțirea unui pachet creează o nouă comparație cu două taxe de bază și, eventual, două taxe de serviciu. Se calculează ambele totaluri complete, în loc să se presupună că mai multe parcele vor fi mai ieftine."
+          ]
+        }
+      ],
+      "checklist": [
+        "Utilizați regiunea reală Marea Britanie și codul poștal.",
+        "Termină QC înainte de a alege planul de ambalare.",
+        "Comparați rutele cu conținutul și măsurătorile identice.",
+        "Înregistrați data citatului, moneda și serviciile incluse.",
+        "Citiți termenii actuali de import și traseu.",
+        "Salvați atât referințe internaționale și finale de urmărire livrare."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Marea Britanie de transport maritim de ansamblu",
+          "url": "https://blog.sugargoo.com/shipping-china-to-uk/"
+        },
+        {
+          "title": "Sugargoo: estimarea taxelor de transport maritim",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "GOV.UK: mărfuri trimise din străinătate",
+          "url": "https://www.gov.uk/goods-sent-from-abroad"
+        },
+        {
+          "title": "Sugargoo: urmărirea coletelor",
+          "url": "https://blog.sugargoo.com/sugargoo-tracking-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-canada",
+      "slug": "sugargoo-shipping-to-canada",
+      "title": "Livrare Sugargoo în Canada: costuri și urmărire",
+      "description": "Planificați un pachet Sugargoo în Canada folosind provincia dvs., codul poștal, dimensiunea ambalată, tarifele de rută și informații finale de urmărire Carrier.",
+      "keyword": "sugargoo shipping to canada",
+      "category": "shipping",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Transportul prin Sugargoo către Canada depinde de provincia, adresa, bunurile și măsurătorile pachetelor ambalate. Începeți cu un citat curent pentru acele intrări exacte. Confirmați care transportator va livra ultima etapă; nu presupuneți că fiecare rută utilizează Canada Post.",
+        "Comparaţia cea mai utilă include acoperirea adresei, suma plătibilă completă şi modul în care pachetul va fi urmărit după sosire. Acest ghid explică ce să înregistreze înainte de a plăti, fără a trata un preț traseu vechi ca o ofertă curentă."
+      ],
+      "sections": [
+        {
+          "id": "canada-address",
+          "title": "Verificați mai întâi provincia și acoperirea codului poștal",
+          "paragraphs": [
+            "Utilizaţi adresa de livrare pe care intenţionaţi să o păstraţi prin intermediul transportului. Introduceți cu precizie provincia și codul poștal și includeți orice număr de unitate necesar. Înainte de a alege o rută, verificați dacă acceptă tipul de adresă și dacă se aplică o suprataxă la distanță sau o zonă de livrare. Un preţ pentru o altă provincie nu poate fi o comparaţie utilă.",
+            "Dacă intenţionaţi să folosiţi o cutie poştală, o adresă de afaceri sau o locaţie la distanţă, întrebaţi în mod specific despre adresa respectivă. Nu înlocuiți un oraș din apropiere doar pentru a face să apară o rută în evaluator. Dacă acoperirea este neclară, rezolvaţi-o înainte ca mărfurile să părăsească depozitul."
+          ]
+        },
+        {
+          "id": "canada-budget",
+          "title": "Păstrați bugetul parcelei separat de prețul produsului",
+          "paragraphs": [
+            "Construiește un buget cu intrări separate pentru bunuri, livrare în China, servicii de depozitare alese, mărfuri internaționale și taxe potențiale de import sau manipulare. Înregistrați moneda pentru fiecare sumă. Un preţ de dolari SUA afişat şi un buget canadian-dolar nu ar trebui să fie adăugate fără o conversie actuală.",
+            "Pentru transportul de marfă, comparaţi cotaţiile eligibile actuale utilizând aceeaşi greutate reală, dimensiuni exterioare şi categorie de mărfuri. Verificați dacă fiecare linie încarcă greutatea reală, greutatea volumetrică sau o altă regulă declarată. Dacă ambalarea nu a fost finalizată, marcaţi măsurătorile ca estimări şi revizuiţi comparaţia înainte de expediere."
+          ]
+        },
+        {
+          "id": "canada-winter-parcel",
+          "title": "O haină voluminoasă are nevoie de o verificare a mărimii, precum și un control al greutății",
+          "paragraphs": [
+            "Imaginează-ţi să trimiţi o haină de iarnă împreună cu un mic accesoriu. Haina poate domina dimensiunile cutiei chiar și atunci când nu este cel mai greu element. Înregistrați dimensiunea parcelei finite și calculați greutatea volumetrică cu divisorul utilizat pe fiecare rută. O rută care pare ieftină pe kilogram poate fi mai puțin atractivă după aplicarea regulii de mărime.",
+            "Întreabă dacă o metodă diferită de ambalare este potrivită pentru tesatura si constructia. Compresia poate să nu fie adecvată pentru fiecare îmbrăcăminte sau accesoriu. Include orice costuri de ambalare și compară parcela protejată mai degrabă decât un volum minim teoretic. Dacă accesoriul este fragil, protecția separată poate fi mai valoroasă decât cea mai mică cutie posibilă."
+          ]
+        },
+        {
+          "id": "canada-imports",
+          "title": "Citește Ghidul canadian de import înainte de expediere",
+          "paragraphs": [
+            "Agenția pentru Servicii de Frontieră din Canada explică modul în care se revizuiește scrisorile importate și modul în care se pot aplica taxe sau impozite. Păstrați chitanțe produse și descrieri exacte disponibile. Nu tratați o achiziție cu amănuntul ca pe un cadou doar pentru că pachetul este de uz personal.",
+            "Verificați condițiile actuale de rută pentru orice manipulare inclusă a importurilor și întrebați care taxe pot fi încă colectate. Manipularea poștei și curierului poate fi diferită. Utilizaţi resursele oficiale CBSA de mai jos pentru situaţia dumneavoastră în loc să presupuneţi că regulile pentru mărfurile trimise dintr-o altă ţară se aplică unui pachet din China."
+          ]
+        },
+        {
+          "id": "canada-tracking",
+          "title": "Urmăriți înregistrările de livrare internaționale și canadiene",
+          "paragraphs": [
+            "După expediere, deschideți registrul logistic de colete și salvați numărul său de urmărire. Vânzătorul original numărul de livrare este un alt record. Verificaţi dacă linia aleasă oferă o referinţă separată la final-carier după ce pachetul ajunge în Canada.",
+            "În cazul în care Canada Post este transportatorul numit, utilizați serviciul său oficial de urmărire după predare. În cazul în care un alt transportator este numit, utilizați în schimb acel transportor. Un număr creat nu înseamnă că transportatorul a primit pachetul. Pentru un transport blocat, acordaţi sprijin ultimei scanări, datei, traseului şi referinţei parcelei."
+          ]
+        },
+        {
+          "id": "canada-choice",
+          "title": "Luați o decizie cu o foaie de comparație scurtă",
+          "paragraphs": [
+            "Pentru o comandă uşoară, comparaţi opţiunile eligibile pentru parcela mică cu toate taxele incluse. Pentru un ordin voluminos, rezolva dimensiunile ambalate înainte de a se concentra pe rata de publicitate. Pentru un ordin mare, compara orice plan de divizare ca mai multe transporturi complete, inclusiv taxe minime repetate."
+          ],
+          "table": {
+            "headers": [
+              "Înainte de plată",
+              "Înregistrare"
+            ],
+            "rows": [
+              [
+                "Acoperirea adresei",
+                "Provincia, codul poștal și orice confirmare suplimentară."
+              ],
+              [
+                "Măsurători de parcelă",
+                "Greutatea reală, dimensiunea exterioară și instrucțiunile de ambalare."
+              ],
+              [
+                "Termeni de rută",
+                "Suma datorată, moneda, norma de greutate și tranzitul estimat."
+              ],
+              [
+                "Predarea de bunuri",
+                "Numită ultima navă şi instrucţiuni de urmărire."
+              ],
+              [
+                "Importă înregistrări",
+                "Încasări, descrieri și informații privind încărcarea aplicabile."
+              ]
+            ]
+          }
+        }
+      ],
+      "checklist": [
+        "Confirmaţi provincia, codul poştal şi adresaţi-vă eligibilităţii.",
+        "Păstraţi monedele explicite în buget.",
+        "Măsurarea mărfurilor voluminoase după metoda de ambalare convenită.",
+        "Verificați transportatorul declarat de livrare finală.",
+        "Păstraţi chitanţele şi declaraţi bunurile cu exactitate.",
+        "Salvați cotația finală și înregistrare de urmărire."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Privire de ansamblu Canada de transport maritim",
+          "url": "https://blog.sugargoo.com/shipping-from-china-to-canada/"
+        },
+        {
+          "title": "Sugargoo: intrări de estimare a transportului maritim",
+          "url": "https://blog.sugargoo.com/sugargoo-oopbuy-acbuy-cnfans-shipping-calculator/"
+        },
+        {
+          "title": "CBSA: import prin poştă",
+          "url": "https://www.cbsa-asfc.gc.ca/import/personal-personnel/postal-postale-eng.html"
+        },
+        {
+          "title": "CBSA: determinarea taxelor și impozitelor",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-tracking/"
+      ]
+    },
+    {
+      "id": "sugargoo-shoe-size-guide",
+      "slug": "sugargoo-shoe-size-guide",
+      "title": "Mărimi de pantofi Sugargoo: etichete, branțuri și QC",
+      "description": "Alegeți o dimensiune pantof de la vânzătorul propria diagramă, solicita măsurători utile Sugargoo QC, și să compare perechea primită înainte de expediere.",
+      "keyword": "sugargoo shoe size guide",
+      "category": "quality",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "intro": [
+        "Sugargoo nu are o diagramă universală a dimensiunii pantofilor pentru fiecare vânzător. Utilizaţi graficul pentru listarea exactă şi varianta, apoi comparaţi eticheta pereche primit şi măsurători în dosarul QC depozit. Un număr de mărime cunoscut numai pentru UE, Regatul Unit sau SUA nu este suficient pentru a stabili dacă este adecvat.",
+        "Acest ghid vă oferă un cec repetabil pentru pantofii găsiți într-o foaie de calcul. Se separă lungimea piciorului, lungimea interioara si lungimea tălpii astfel încât să puteți solicita dovezile de care aveți nevoie de fapt înainte de transportul maritim internațional."
+      ],
+      "sections": [
+        {
+          "id": "shoe-listing-chart",
+          "title": "Începe cu diagramă exact vânzători",
+          "paragraphs": [
+            "Deschideți pagina originală a produsului și salvați graficul de dimensiune care aparține acelui model. Verificați dacă măsurătorile descriu piciorul, talpa sau exteriorul pantofului. De asemenea, verificați dacă sistemul de dimensionare este pentru bărbați, femei sau copii. O masă dintr-un alt model poate crea o potrivire falsă chiar și atunci când etichetele de dimensiuni arată la fel.",
+            "În cazul în care graficul este neclar, întrebați vânzătorul sau agentul ce înseamnă fiecare coloană înainte de a comanda. Nu adăugaţi o alocaţie standard la fiecare diagramă: este posibil ca vânzătorul să fi construit deja o alocaţie în recomandarea sa. Alesul tău, şosetele şi forma pantofului contează de asemenea."
+          ]
+        },
+        {
+          "id": "shoe-baseline",
+          "title": "Creați o comparație utilă la domiciliu",
+          "paragraphs": [
+            "Se măsoară ambele picioare utilizând aceeași metodă și se înregistrează măsurarea mai lungă. Pentru o comparație intersole, utilizați o talpă detașabilă dintr-o pereche care se potrivește deja confortabil, în cazul în care îndepărtarea este sigură. Înregistrează unde începe şi se termină conducătorul. O măsurătoare a piciorului ar trebui comparată cu o diagramă a lungimii piciorului, în timp ce o măsurare intersolară ar trebui să fie comparată cu o altă măsurare intercalată.",
+            "Păstraţi unităţile consistente. De exemplu, 270 milimetri este 27 centimetri. Această conversie nu înseamnă că o talpă de 27 cm se potriveşte cu un picior de 27 cm. Forma piciorului, structura pantofului și metoda de măsurare a vânzătorului afectează încă decizia."
+          ]
+        },
+        {
+          "id": "shoe-qc-request",
+          "title": "Cere o măsurare precisă a depozitului",
+          "paragraphs": [
+            "Când ajung pantofii, revizuiţi ordinea şi etichetele vizibile. În cazul în care măsurarea necesară lipsește, întrebați ce serviciu suplimentar de fotografie sau de măsurare este disponibil și cât costă. Identificați elementul exact, partea și dimensiunea pe care doriți verificat.",
+            "Exemplu cerere de adaptare: Vă rugăm să fotografiați etichetele de dimensiuni de pe ambii pantofi. În cazul în care talpa poate fi îndepărtată fără daune, vă rugăm să măsurați-l de la călcâi la deget cu un conducător și arată ambele capete în mod clar. Vă rugăm să confirmați dacă măsurarea este în centimetri. Aceasta este o machetă de cerere, nu o promisiune că fiecare element poate fi măsurat în acest fel."
+          ],
+          "bullets": [
+            "Întreabă de ambii pantofi dacă suspectezi o pereche nepotrivită.",
+            "Solicitați riglă începe și puncte de sfârșit în aceeași fotografie.",
+            "Nu cereți personalului să deterioreze o talpă fixă pentru a obține o măsurătoare."
+          ]
+        },
+        {
+          "id": "shoe-evidence",
+          "title": "Utilizați fiecare fotografie pentru întrebarea la care poate răspunde",
+          "paragraphs": [
+            "O etichetă confirmă ce mărime este tipărită pe pantoful primit. Nu dovedeşte că pantoful urmează o diagramă universală de conversie. Un conducător de lângă sol arată lungimea exterioară, care nu este aceeași cu spațiul interior utilizabil. O fotografie full-pereche ajută la verificarea faptului că culorile și formele par consistente."
+          ],
+          "table": {
+            "headers": [
+              "Dovezi",
+              "Utile pentru",
+              "Nu pot stabili singur"
+            ],
+            "rows": [
+              [
+                "Eticheta de mărime",
+                "Se potriveşte variantei comandate.",
+                "Dacă perechea se va potrivi cu piciorul tău."
+              ],
+              [
+                "Măsurători intersonice",
+                "Comparând o talpă detașabilă cu o pereche cunoscută.",
+                "Confort, lățime sau forma interioară completă."
+              ],
+              [
+                "Măsurători exterioare",
+                "Verific dimensiunile exterioare ale pantofilor.",
+                "Spaţiul disponibil pentru piciorul tău."
+              ],
+              [
+                "Închide-up fotografie QC",
+                "Investigarea unei mărci vizibile sau a unei neconcordanțe.",
+                "Autenticitate sau durabilitate pe termen lung."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "shoe-example",
+          "title": "Lucrul printr-o nepotrivire înainte de a face un colet",
+          "paragraphs": [
+            "Exemplu ipotetic: talpa detașabilă dintr-o pereche confortabilă măsoară 28 cm, în timp ce fotografia depozitului pare să arate 26 cm. Mai întâi confirmaţi că ambele măsurători folosesc aceleaşi criterii finale şi că imaginea depozitului aparţine comenzii dumneavoastră. Cere o fotografie mai clară dacă rigla sau marginea tocului sunt ascunse.",
+            "În cazul în care diferența este confirmată, comparați-l cu diagramă de dimensiune listare și suport de contact cu privire la opțiunile disponibile. Nu presupuneţi că numai eticheta soluţionează întrebarea. Returnarea sau schimbul de eligibilitate, termenele și costurile depind de ordin; rezolva problema în timp ce elementul este încă disponibil pentru revizuire în depozit."
+          ]
+        },
+        {
+          "id": "shoe-pack",
+          "title": "Terminați verificările de potrivire înainte de a elimina ambalajul",
+          "paragraphs": [
+            "Se decide dacă pantofii sunt acceptabili înainte de a solicita îndepărtarea casetei sau combinarea lor într-un pachet. Păstrați fotografiile de etichetă, măsurătorile, graficul vânzătorului și răspunsurile de suport împreună. Întrebaţi dacă o schimbare a ambalajului ar putea afecta o întoarcere pe care încă o luaţi în considerare.",
+            "Odată ce perechea este pregătită, decideţi de ce protecţie are nevoie în timpul transportului. Comparați transportul maritim cu dimensiunea reală ambalate, în special atunci când se păstrează mai multe cutii de pantofi. Cel mai ieftin plan de ambalare nu este util în cazul în care compromite o caracteristică aveți nevoie pentru a păstra."
+          ]
+        }
+      ],
+      "checklist": [
+        "Utilizaţi graficul exact listare şi sistem de dimensionare.",
+        "Măsurători distinctive ale piciorului, ale tălpii și ale tălpii exterioare.",
+        "Păstraţi centimetrii şi milimetrii consistenţi.",
+        "Se potrivesc atât pantofii cât și etichetele lor cu ordinul plătit.",
+        "Rezolvarea preocupărilor de măsurare înainte de depunerea parcelei.",
+        "Păstrați ambalajul relevant până când decizia de comandă este finală."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Fotografii și măsurători QC",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: Domeniul de aplicare al serviciului QC",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: recenzie de comandă și depozit",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-rehearsal-shipping"
+      ],
+      "actions": [
+        "/category/shoes/",
+        "/articles/sugargoo-qc-photos/"
       ]
     }
   ]
