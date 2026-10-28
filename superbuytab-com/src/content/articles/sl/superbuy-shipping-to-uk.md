@@ -1,18 +1,24 @@
 ---
 slug: superbuy-shipping-to-uk
-title: 'Dostava Superbuy v Združeno kraljestvo: stroški in DDV'
-description: Primerjava poštnine Superbuy v Združeno kraljestvo z uporabo dejanskih meritev paketov, pogojev poti in kontrolnega seznama za DDV, carine in dostavne dajatve.
+title: Ali Superbuy dostavlja v Združeno kraljestvo? Stroški in DDV
+description: Superbuy navaja Združeno kraljestvo v svojem ladijskem kalkulatorju. Preverite primerne poti, stroške paketov in ocene dostave ter DDV pred predložitvijo pošiljke.
 topic: Dostava v Združeno kraljestvo
 keyword: superbuy shipping to UK
 order: 14
 published: '2026-10-21'
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: sl
 ---
 
-Superbuy poštnine v Združeno kraljestvo je najbolje načrtovana okoli parcele, ki jih boste dejansko poslali. Izbrana pot, namembni kraj, kategorije predmetov, pakirana teža in zunanje mere vplivajo na primerjavo. Poceni citat od drugega kupca je koristen le, če so njegove predpostavke in pogoji storitev dovolj jasni za primerjavo z vašim.
+Da, Superbuy navaja Združeno kraljestvo kot namembno mesto v njenem uradnem kalkulatorju ladij. Pote, ki so na voljo vam je odvisno od vsebine paketa, pakirana teža, dimenzij in podrobnosti dostave. Pred nakupom ali predložitvijo paketa preverite trenutne rezultate za svoje blago.
 
-Uporabite ta priročnik za pripravo primerjave poti in celoten proračun. Začnite z [Uradni kalkulator za prevoz blaga Superbuy](https://www.superbuy.com/en/page/query/freight/) in se posvetuje s sedanjimi vladnimi smernicami Združenega kraljestva za uvozne dajatve. SuperbuyTab je neodvisen vodnik; ne navaja cen prevoznikov ali določa davčne obravnave posameznih pošiljk.
+Za vsak naročilo Združenega kraljestva ni poenotene cene prevoza ali čas dostave. Začnite z [Uradni kalkulator za prevoz Superbuyja](https://www.superbuy.com/en/page/query/freight/), prihranite primerne ocene poti in proračun za vse veljavne namembne dajatve ločeno. SuperbuyTab je neodvisen vodnik in ne navaja cen prevoznikov ali določa vaše davčne obravnave.
+
+## Koliko stane prevoz Superbuy v Združeno kraljestvo?
+
+Uporaben odgovor je citat, ki temelji na vašem dejanskem paketu. Zapišite namembni kraj, pakirane meritve, vsebino in pot; nato primerjajte oceno prevoza z vsemi neobveznimi pristojbinami za pakiranje. Če se ocena zdi visoka, sledite [Kontrolni seznam stroškov dostave](/sl/articles/why-superbuy-shipping-expensive/) preden spremenite svoj načrt pakiranja.
+
+Ocenjevanje tranzita proge naj bo ločeno od časa, potrebnega za odpremo prodajalcev in obdelavo skladišč ter lastne odločitve. Preberite trenutne pogoje storitev in posodobitve sledenja namesto obravnavanja datuma dostave drugega kupca kot obljubo za vaše naročilo.
 
 ## Potrdi namembni kraj in vsebino paketa
 
@@ -96,4 +102,4 @@ Pred predložitvijo preverite naslov, izbrano pot, vsebino in sklepe o inšpekci
 - [Sestava pristojbin za superkupovanje](https://www.superbuy.com/en/page/guide/feecomposition/)
 - [GOV.UK davčna in carinska navodila](https://www.gov.uk/goods-sent-from-abroad/tax-and-duty)
 
-Viri so bili preverjeni 21. oktobra 2026. Preverjanje veljavnih pogojev poti in uradnih uvoznih navodil pred predložitvijo; ta vodič ne obljublja fiksne cene, davčnega izida ali datuma dobave.
+Viri, preverjeni 28. oktobra 2026. Preverjanje veljavnih pogojev poti in uradnih uvoznih navodil pred predložitvijo; ta priročnik ne obljublja fiksne cene, davčnega izida ali datuma dobave.

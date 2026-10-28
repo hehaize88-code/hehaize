@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Pristojbine Superbuy: izdelki, storitve in dostava'
-description: Poglejte, kateri stroški Superbuy spadajo v vaš proračun, kaj se lahko spremeni pred poštnico in kako uskladiti plačila brez štetje enako pristojbino dvakrat.
+title: 'Pristojbine Superbuy: storitve, dostava in skupni stroški'
+description: Ali Superbuy zaračuna storitev? Preverite standardno nakupovanje, domačo dostavo, neobvezne storitve in mednarodno poštnino pred določitvijo vašega celotnega proračuna.
 topic: Stroški in proračuni
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: sl
 ---
 
-Uporaben proračun Superbuy odgovarja na dve vprašanji: kaj ste se že dogovorili plačati in kaj se lahko še vedno spremeni? Z dodajanjem vseh številk v eno skupno prezgodaj skriva to razliko. Ocenjeni proračun za poštni prevoz je lahko tako določen kot račun na plačani postavki.
+Po uradnem ceniku Superbuy ne zaračunava pristojbine za standardno storitev nakupa na platformah Taobao, Tmall, JD in 1688. Še vedno plačate blago, dostavo znotraj Kitajske, mednarodni prevoz in izbrane dodatne storitve. Druge nakupne storitve imajo lahko drugačne pristojbine, zato preverite stroške svojega naročila.
 
-Ta vodnik uporablja enostavno stroškovno evidenco, da bi te odločitve ohranili vidne. To je metoda načrtovanja, ne tekoča ocena cene. Vaš izbrani predmet, možnosti storitev, način plačila, paket in namembni kraj določajo pristojbine, ki jih je treba preveriti na vašem računu.
+Da bi ocenili popoln strošek, dodajte blago, kitajska domača dobava, veljavne pristojbine za storitve, stroške mednarodne dostave in namembni kraj. Potrjena plačila so ločena od ocen. Ta vodič prikazuje, kako beležiti te komponente brez dvakratnega štetja enakega plačila.
+
+## Kateri stroški Superbuyja naj pričakujete?
+
+| Stroški | Kaj določajo uradne informacije | Kar morate potrditi |
+| --- | --- | --- |
+| Standardni nakup | Ni naštete storitvene provizije za Taobao, Tmall, JD in 1688 | Ali vaše naročilo uporablja to standardno storitev |
+| Druge nabavne storitve | Različne ureditve lahko nosijo pristojbino | Veljavna storitev in prikazana količina |
+| Dobava v gospodinjstvu | Ločen del nakupa | Prodajna pristojbina za dostavo skladišču |
+| Deli skladišča | Izbirno delo lahko prišteje pristojbine | Natančna naloga in sprejeta cena |
+| Mednarodna dostava | Odvisno od paketa in poti | Pakirane meritve, upravičena pot in poravnava |
+
+Za 1688 preberite tudi ločene pogoje inšpekcijskih pregledov v: [1688 Vodnik za nakup](/sl/articles/superbuy-1688-guide/). Če je mednarodna ocena nepričakovani del proračuna, uporabite [visoki kontrolni seznam stroškov dostave](/sl/articles/why-superbuy-shipping-expensive/) opredeliti vhodne podatke, ki jih je treba preveriti.
 
 ## Pred primerjavo izdelkov preverite celotno vrednost
 
@@ -98,4 +110,4 @@ Z rezultatom rekord naredi vaš naslednji nakup lažje načrtovati. To kaže, kj
 - [Superbuy sestava pristojbin](https://www.superbuy.com/en/page/guide/feecomposition/) — stroškovne faze, kategorije storitev in končno obračunavanje.
 - [Superbuy kalkulator](https://www.superbuy.com/en/page/query/freight/) — vnesene trenutne informacije o oceni poti.
 
-Uradne strani so bile pregledane 21. oktobra 2026. Ne razmnožujemo neskladnih aritmetičnih primerov, ki jih najdemo na strani provizije; zgoraj navedeni primer je izrecno izmišljen. Potrditev dejanske razčlenitve pristojbin pred plačilom.
+Uradne strani so bile pregledane 28. oktobra 2026. Ne razmnožujemo neskladnih aritmetičnih primerov, ki jih najdemo na strani provizije; zgoraj navedeni primer je izrecno izmišljen. Potrditev dejanske razčlenitve pristojbin pred plačilom.

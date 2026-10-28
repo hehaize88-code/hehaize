@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuys fragtberegner: vægt og priser'
-description: Sammenlign Superbuy forsendelse skøn med den rigtige vægt, dimensioner og destination. Brug pakketjeklisten, før du vælger en rute eller betaler.
+title: 'Superbuys fragtberegner: anslå prisen for din pakke'
+description: Beregn en Superbuy forsendelse skøn ved hjælp af destination, vægt i gram og parcel dimensioner. Sammenlign støtteberettigede ruter og forstå, hvorfor den endelige afgift kan ændre sig.
 topic: Forsendelse
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: da
 ---
 
-Et skibsestimat beskriver en parcel under en række antagelser. Ændr destination, varekategori, dimensioner eller rute, og du kan stille et andet prisspørgsmål. Den nyttige vane er at gemme disse antagelser sammen med resultatet, i stedet for at indsamle en enkelt pris uden sammenhæng.
+For at anslå Superbuy forsendelse, åbne den officielle lommeregner, vælge destinationen og lageret, indtaste vægt i gram og ydre pakke dimensioner i centimeter, og derefter vælge den faktiske vare kategori. Sammenlign de støtteberettigede ruter ved hjælp af de samme input og gem resultatet med dato og målinger.
 
-Superbuy officielle regnemaskine beder om destination, lager, vægt, dimensioner og varekategori. I denne vejledning redegøres der for, hvordan man forbereder disse oplysninger og sammenligner resultaterne. Det offentliggør ikke en universel pris per kilo eller anbefale en rute uden at kende din faktiske pakke.
+Lommeregneren giver et estimat for den parcel, du beskriver. Den fastsætter ikke en universel pris pr. kg eller garanterer den endelige forsendelsesafgift. Hvis et resultat ser uventet højt, kontrollere dimensioner og fakturering regel ved hjælp af vores [shipping cost fejlfinding guide](/da/articles/why-superbuy-shipping-expensive/).
 
 ## Hurtig tjekliste, før du anmoder om et tilbud
 
@@ -98,4 +98,4 @@ Luk op [officielle Superbuy forsendelse regnemaskine](https://www.superbuy.com/e
 - [Superbuy shipping lommeregner](https://www.superbuy.com/en/page/query/freight/) — inputenheder, rutegrænser og forklaring på volumenvægt.
 - [Superbuy gebyr sammensætning](https://www.superbuy.com/en/page/guide/feecomposition/) — international forsendelse betaling og kontrol af de endelige omkostninger.
 
-Officielle sider blev gennemgået den 21. oktober 2026. Arbejdede målinger er uafhængige aritmetiske eksempler, ikke aktuelle fragtrater eller løfter om ruteberettigelse.
+Officielle sider blev gennemgået den 28. oktober 2026. Arbejdede målinger er uafhængige aritmetiske eksempler, ikke aktuelle fragtrater eller løfter om ruteberettigelse.

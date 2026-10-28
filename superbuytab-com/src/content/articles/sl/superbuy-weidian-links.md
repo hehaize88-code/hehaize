@@ -1,18 +1,17 @@
 ---
 slug: superbuy-weidian-links
-title: Kako kupovati na Weidianu prek Superbuya in izbrati pravo različico
-description: Sledite Weidian povezava v Superbuy, preverite ID postavke trga, izberite predvideno možnost in vodite jasno evidenco vašega nakupa.
+title: 'Nakup na Weidianu prek Superbuya: povezave in različice'
+description: Uporabite Weidian izdelek povezavo z Superbuy, preverite prodajalca in izbrano različico, preverite fotografije skladišča in načrt odpreme. Vključuje pomoč, ko povezava ne uspe.
 topic: Vodnik za nakup
 keyword: how to buy from weidian with superbuy
 order: 2
-checked: '2026-10-19'
+checked: '2026-10-28'
 lang: sl
 ---
 
+Če želite kupiti od Weidiana z Superbuy, začnite s prvotnim URL izdelka, ga odpreti v Superbay je nakupni tok in preverite prodajalca, barvo, velikost in količino. Plačilo šele po jasnem naročilu; pregledajte razpoložljive dokaze o skladiščih, preden uredite mednarodno dostavo.
 
-Kupovanje od Weidian seznam skozi Superbuy se začne z URL, vendar je URL le del nakupa. Potrebujete tudi pravilnega prodajalca, različico, barvo, velikost in količino. Večina izogniti napak se zgodi, če se ena od teh podrobnosti predpostavlja, namesto da se preveri.
-
-Ta vodnik sledi predaji od neodvisne strani priporočila naročilu za nakupovanje agenta. Ne obljublja, da je vsak seznam mogoče kupiti ali odposlati. Razpoložljivosti, pogoji prodajalca in vašo destinacijo še vedno morate preveriti preko Superbuy, preden se zavežete.
+Ta vodnik sledi predaji od strani s priporočilom k naročilu. Če originalni seznam ni na voljo, se odpre napačna postavka ali podatki o izdelku ne morejo naložiti, uporabite [povezava vodiča za odpravljanje težav](/sl/articles/superbuy-links-not-working/) Najprej. Delovni URL še vedno zahteva potrditev razpoložljivosti, pogojev prodajalca in upravičenosti do dostave.
 
 ## Najdi prvotno tržno povezavo
 
@@ -91,4 +90,4 @@ Ko se vrneš v restavracijo [živa tabela](/sl/spreadsheet/)Naslednjo odločitev
 - [Superbuy vodič za nakupovanje-agent](https://www.superbuy.com/en/page/guide/shoppingagent/) — Uradna zaporedja ukaza.
 - [Superbuy Center za pomoč](https://www.superbuy.com/en/page/help/) — poizvedbe o nakupu in poprodajne poti.
 
-Razlage povezave in kontrolni seznam primerjav so neodvisne smernice. Uradne strani so bile pregledane. 19 Oktober. 2026. Sedanja upravičenost do nakupa in pristojbine je treba potrditi v Superbuy.
+Razlage povezave in kontrolni seznam primerjav so neodvisne smernice. Uradne strani so bile pregledane 28. oktobra 2026. Sedanja upravičenost do nakupa in pristojbine je treba potrditi v Superbuyu.

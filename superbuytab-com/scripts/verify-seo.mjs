@@ -33,10 +33,22 @@ assert.equal(home.doc.querySelectorAll('.home-articles .article-card').length,4)
 assert(home.doc.querySelector('.home-articles a[href="/articles/superbuy-shipping-to-uk/"]'));
 for(const path of ['/articles/superbuy-shipping-to-uk/','/articles/superbuy-shipping-to-usa/']){
  const {doc}=await render(path),schema=JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent);
- assert.equal(schema.datePublished,'2026-10-21');assert.equal(schema.dateModified,'2026-10-21');
+ assert.equal(schema.datePublished,'2026-10-21');assert.equal(schema.dateModified,path.includes('to-uk')?'2026-10-28':'2026-10-21');
 }
 const old=await render('/articles/superbuy-fees/');
 assert.equal(JSON.parse(old.doc.querySelector('script[type="application/ld+json"]').textContent).datePublished,'2026-10-19');
+// Verify discoverability of every newly published language, including sitemap dates.
+const sitemap=await worker.fetch(new Request(origin+'/sitemap.xml'),{},{});
+const xml=await sitemap.text();
+for(const lang of locales){
+ const prefix=lang==='en'?'':'/'+lang;
+ for(const slug of ['superbuy-links-not-working','why-superbuy-shipping-expensive','superbuy-1688-guide']){
+  assert(xml.includes(`<loc>${origin}${prefix}/articles/${slug}/</loc><lastmod>2026-10-28</lastmod>`));
+ }
+ const {doc}=await render(prefix+'/');
+ assert.equal(doc.querySelectorAll('.task-links a').length,4);
+ for(const link of doc.querySelectorAll('.task-links a'))assert(link.getAttribute('href').startsWith(prefix+'/'));
+}
 
 // Verify event behavior without sending any test traffic to GA4.
 const {document,Event}=parseHTML('<html lang="de"><body><a id="catalog" href="/de/spreadsheet/?category=shoes"><span>Browse</span></a><a id="category" href="/de/categories/shoes/">Shoes</a><a id="product" href="/de/products/shoes/3470/">Product</a><a id="language" href="/fr/articles/superbuy-fees/">French</a><a id="buy" class="buy-button" rel="sponsored noopener noreferrer" href="https://www.superbuy.com/en/page/buy/?partnercode=ES7pVI">Buy</a><a id="official" href="https://www.superbuy.com/en/page/guide/feecomposition/">Source</a><form class="search-form"><input name="q" value="private search terms" /></form></body></html>');
@@ -54,4 +66,8 @@ try{
 assert.equal(events.at(-1).name,'catalogue_search');assert.equal(events.at(-1).params.query_length,20);
 assert(!JSON.stringify(events).includes('private search terms'));
 assert(events.every(e=>e.params.language==='de'));
+const guide=document.createElement('a');guide.href='/de/articles/superbuy-links-not-working/';document.body.appendChild(guide);
+guide.dispatchEvent(new Event('click',{bubbles:true}));
+assert.equal(events.at(-1).name,'guide_click');assert.equal(events.at(-1).params.article_slug,'superbuy-links-not-working');
+assert.equal(events.at(-1).params.source_type,'article');
 console.log(JSON.stringify({passed:true,categoryPages:48,localizedSEOCopy:24,clickEvents:4,privateSearchTextExcluded:true,publishedDates:'preserved'}));

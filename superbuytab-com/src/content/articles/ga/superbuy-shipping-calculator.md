@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Áireamhán seachadta Superbuy: meáchan agus costais'
-description: Déan comparáid idir meastacháin loingseoireachta Superbuy leis an meáchan ceart, toisí agus ceann scríbe. Bain úsáid as an seicliosta dáileachta roimh roghnú bealach nó ag íoc.
+title: 'Áireamhán loingseoireachta Superbuy: costas do phacáiste'
+description: Ríomh meastachán loingseoireachta Superbuy ag baint úsáide as ceann scríbe, meáchan i ngramanna agus toisí dáileachta. Déan bealaí incháilithe a chur i gcomparáid agus a thuiscint cén fáth ar féidir leis an muirear deiridh a athrú.
 topic: Loingsiú
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: ga
 ---
 
-Déanann meastachán loingseoireachta cur síos ar dháileacht faoi shraith boinn tuisceana. Athraigh an ceann scríbe, catagóir mír, toisí nó bealach agus d'fhéadfá a bheith ag iarraidh ceist praghsála éagsúla. Is é an nós úsáideach na boinn tuisceana sin a shábháil taobh leis an toradh, seachas praghas amháin a bhailiú gan aon chomhthéacs.
+Chun meastachán a dhéanamh loingseoireachta Superbuy, an t-áireamhán oifigiúil a oscailt, roghnaigh an ceann scríbe agus stóras, dul isteach meáchan i gramanna agus toisí dáileachta seachtracha i gceintiméadair, ansin roghnaigh an chatagóir mír iarbhír. Déan comparáid idir na bealaí incháilithe ag baint úsáide as na hionchuir chéanna sin agus sábháil an toradh leis an dáta agus na tomhais.
 
-Iarrann áireamhán oifigiúil Superbuy do cheann scríbe, stóras, meáchan, toisí agus catagóir mír. Míníonn an leabhrán eolais seo conas an fhaisnéis sin a ullmhú isteach agus torthaí a chur i gcomparáid. Ní fhoilsíonn sé praghas uilíoch in aghaidh an cileagram nó a mholadh bealach gan a fhios agam do dáileacht iarbhír.
+Táirgeann an t-áireamhán meastachán don dáileacht a dhéanann tú cur síos. Ní bhunaíonn sé praghas uilíoch in aghaidh an chileagraim ná ní ráthaíonn sé an muirear loingseoireachta deiridh. Má Breathnaíonn toradh gan choinne ard, seiceáil na gnéithe agus riail billeála ag baint úsáide as ár [treoir maidir le costas loingseoireachta fabhtcheartú](/ga/articles/why-superbuy-shipping-expensive/).
 
 ## Seiceáil liosta tapa sula n- iarrfaidh tú ceanglófar
 
@@ -98,4 +98,4 @@ Oscail an [oifigiúil Superbuy áireamhán loingseoireachta](https://www.superbu
 - [Áireamhán loingseoireachta Superbuy](https://www.superbuy.com/en/page/query/freight/) — aonaid ionchuir, teorainneacha bealaigh agus míniú meáchain toirte.
 - [Comhdhéanamh táille Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — íocaíocht idirnáisiúnta loingseoireachta agus seiceáil na gcostas deiridh.
 
-Rinneadh athbhreithniú ar leathanaigh oifigiúla ar 21 Deireadh Fómhair 2026. Samplaí uimhríochtúla neamhspleácha is ea tomhais oibrithe, ní rátaí iompróra reatha ná geallúintí incháilitheachta bealaí.
+Rinneadh athbhreithniú ar leathanaigh oifigiúla an 28 Deireadh Fómhair 2026. Samplaí uimhríochtúla neamhspleácha is ea tomhais oibrithe, ní rátaí iompróra reatha ná geallúintí incháilitheachta bealaí.

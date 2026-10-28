@@ -1,18 +1,17 @@
 ---
 slug: superbuy-weidian-links
-title: Como comprar no Weidian com o Superbuy e escolher a variante certa
-description: Siga um link Weidian para o Superbuy, verifique o item de mercado ID, selecione a opção pretendida e mantenha um registro claro da sua compra.
+title: 'Como comprar no Weidian com Superbuy: links e opções'
+description: Utilize um link de produto Weidian com Superbuy, verifique o vendedor e variante selecionada, verifique as fotos do armazém e planifique o envio. Inclui ajuda quando um link falha.
 topic: A comprar um guia
 keyword: how to buy from weidian with superbuy
 order: 2
-checked: '2026-10-19'
+checked: '2026-10-28'
 lang: pt
 ---
 
+Para comprar em Weidian com Superbuy, comece com a URL original do produto, abra-o no fluxo de compras da Superbuy e verifique o vendedor, cor, tamanho e quantidade. Pague apenas depois que os detalhes do pedido são claros; rever as provas disponíveis do armazém antes de organizar a entrega internacional.
 
-A compra de uma lista Weidian através do Superbuy começa com uma URL, mas a URL é apenas parte da compra. Você também precisa do vendedor correto, versão, cor, tamanho e quantidade. A maioria dos erros evitáveis acontece quando um desses detalhes é assumido em vez de verificado.
-
-Este guia segue a entrega de uma página de recomendação independente para um pedido de agente de compras. Não promete que todas as listas podem ser compradas ou enviadas. Disponibilidade, condições do vendedor e seu destino ainda precisam ser verificados através do Superbuy antes de você se comprometer.
+Este guia segue a entrega de uma página de recomendação para uma ordem. Se a listagem original não estiver disponível, o item errado abre ou os detalhes do produto falham em carregar, use o [link guia de resolução de problemas](/pt/articles/superbuy-links-not-working/) Primeiro. Um URL de trabalho ainda requer confirmação de disponibilidade, condições do vendedor e elegibilidade de envio.
 
 ## Encontre o link original do mercado
 
@@ -91,4 +90,4 @@ Quando você voltar para o [Folha de cálculo ao vivo](/pt/spreadsheet/), tratar
 - [Superbuy guia de agentes de compras](https://www.superbuy.com/en/page/guide/shoppingagent/) — Sequência de ordem oficial.
 - [Centro de Ajuda Superbuy](https://www.superbuy.com/en/page/help/) — a aquisição de inquéritos e rotas pós-venda.
 
-As explicações do link e a lista de comparações são orientações independentes. As páginas oficiais foram revistas. 19 Outubro. 2026. A elegibilidade atual para a compra e os encargos devem ser confirmados em Superbuy.
+As explicações do link e a lista de comparações são orientações independentes. As páginas oficiais foram revistas em 28 de outubro de 2026. A elegibilidade atual para a compra e os encargos devem ser confirmados no Superbuy.

@@ -1,18 +1,24 @@
 ---
 slug: superbuy-shipping-to-uk
-title: 'Seachadadh Superbuy chuig an Ríocht Aontaithe: costais agus CBL'
-description: Déan comparáid idir loingseoireachta Superbuy go dtí an Ríocht Aontaithe ag baint úsáide as tomhais dáileacht fíor, coinníollacha bealaigh agus seicliosta le haghaidh CBL, custaim agus muirir seachadta.
+title: An seolann Superbuy chuig an Ríocht Aontaithe? Costais agus CBL
+description: Liostaíonn Superbuy an Ríocht Aontaithe ina áireamhán loingseoireachta. Seiceáil bealaí incháilithe, costais dáileachta, meastacháin seachadta agus CBL sula gcuirtear isteach do loingsiú.
 topic: Loingseoireacht chuig an Ríocht Aontaithe
 keyword: superbuy shipping to UK
 order: 14
 published: '2026-10-21'
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: ga
 ---
 
-Is loingseoireachta Superbuy chuig an Ríocht Aontaithe is fearr beartaithe ar fud an dáileacht a bheidh tú a sheoladh i ndáiríre. Téann an bealach roghnaithe, an ceann scríbe, na catagóirí míre, meáchan pacáilte agus toisí seachtracha go léir i bhfeidhm ar an gcomparáid. Tá ceanglófar saor ó cheannaitheoir eile úsáideach ach amháin nuair a bhíonn a boinn tuisceana agus coinníollacha seirbhíse soiléir go leor chun comparáid a dhéanamh le mise.
+Sea, liostaíonn Superbuy an Ríocht Aontaithe mar cheann scríbe ina áireamhán loingseoireachta oifigiúil. Braitheann na bealaí atá ar fáil duit ar an ábhar dáileachta, meáchan pacáilte, toisí agus sonraí seachadta. Seiceáil na torthaí reatha do do chuid earraí féin roimh cheannach nó a chur isteach beartán.
 
-Bain úsáid as an treoir seo chun comparáid bealach agus buiséad iomlán a ullmhú. Tosaigh leis an [Áireamhán loingseoireachta oifigiúil Superbuy](https://www.superbuy.com/en/page/query/freight/) agus comhairle a ghlacadh faoi láthair rialtas na Ríochta Aontaithe treoir le haghaidh muirir allmhairiúcháin. Is SuperbuyTab treoir neamhspleách; ní dhéanann sé lua praghsanna iompróra nó a chinneadh an chóireáil cánach de loingsithe aonair.
+Níl aon phraghas loingseoireachta amháin nó am seachadta do gach ordú Ríocht Aontaithe. Tosaigh leis an [Áireamhán loingseoireachta oifigiúil Superbuy](https://www.superbuy.com/en/page/query/freight/), ach amháin na meastacháin bealaigh incháilithe agus an buiséad le haghaidh aon mhuirir chinn scríbe is infheidhme ar leithligh. Is SuperbuyTab treoir neamhspleách agus ní ceanglaítear praghsanna iompróra nó a chinneadh do chóireáil cánach.
+
+## Cé mhéad a dhéanann loingseoireachta Superbuy go dtí an costas sa Ríocht Aontaithe?
+
+Is é an freagra úsáideach ceanglófar bunaithe ar do dáileacht iarbhír. Taifead an ceann scríbe, tomhais pacáilte, ábhar agus bealach; ansin comparáid a dhéanamh leis an meastachán iompair le haon táillí roghnacha pacála. Má dhealraíonn an meastachán ard, lean an [seicliosta costais loingseoireachta](/ga/articles/why-superbuy-shipping-expensive/) roimh athrú do phlean pacála.
+
+Coinnigh meastacháin idirthurais bealach ar leith ón am is gá le haghaidh seoladh díoltóir, próiseáil stóras agus do chinntí féin. Léigh na coinníollacha seirbhíse reatha agus rianú nuashonruithe seachas déileáil le dáta seachadta ceannaitheora eile mar gheall ar do ordú.
 
 ## Deimhnigh an ceann scríbe agus ábhar dáileachta
 
@@ -96,4 +102,4 @@ Seiceáil an seoladh, an bealach roghnaithe, an t-ábhar, cinntí cigireachta ag
 - [Comhdhéanamh táille Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/)
 - [Cáin agus treoir ar dhleacht GOV.UK](https://www.gov.uk/goods-sent-from-abroad/tax-and-duty)
 
-Foinsí a sheiceáil ar an 21 Deireadh Fómhair 2026. Fíoraigh téarmaí bealaigh reatha agus an treoir oifigiúil allmhairiúcháin roimh iad a chur isteach; ní geallann an leabhrán seo praghas seasta, toradh cánach ná dáta seachadta.
+Foinsí a sheiceáil ar an 28 Deireadh Fómhair 2026. Fíoraigh téarmaí bealaigh reatha agus an treoir oifigiúil allmhairiúcháin roimh aighneacht; ní geallann an leabhrán seo praghas seasta, toradh cánach ná dáta seachadta.

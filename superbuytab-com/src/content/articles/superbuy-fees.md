@@ -1,16 +1,28 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy Fees: Product, Service & Shipping Cost Breakdown'
-description: See which Superbuy costs belong in your budget, what may change before shipping and how to reconcile payments without counting the same charge twice.
+title: 'Superbuy Fees Explained: Service Fees, Shipping & Total Cost'
+description: 'Does Superbuy charge a service fee? Check standard purchasing, domestic delivery, optional services and international shipping before setting your total budget.'
 topic: Costs & budgeting
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 ---
 
-A useful Superbuy budget answers two questions: what have you already committed to, and what can still change? Adding every number into one total too early hides that distinction. It can make an estimated shipping allowance look as certain as a paid item invoice.
+Superbuy lists no standard purchasing service fee for Taobao, Tmall, JD and 1688 on its official fee page. You still pay for the goods and applicable domestic delivery, international shipping and optional services. Other purchasing arrangements can have different service charges, so check the fee attached to the actual order.
 
-This guide uses a simple cost ledger to keep those decisions visible. It is a planning method, not a live quotation. Your selected item, service options, payment method, parcel and destination determine the charges that need to be checked in your account.
+To estimate the complete cost, add merchandise, Chinese domestic delivery, applicable service charges, international delivery, payment costs and destination charges. Keep confirmed payments separate from estimates. This guide shows how to record those components without counting the same payment twice.
+
+## Which Superbuy costs should you expect?
+
+| Cost | What the official information establishes | What you must confirm |
+| --- | --- | --- |
+| Standard purchasing | No service fee listed for Taobao, Tmall, JD and 1688 | Whether your order uses that standard service |
+| Other purchasing services | Different arrangements can carry a charge | The applicable service and displayed amount |
+| Domestic delivery | A separate part of the purchase | The seller's delivery charge to the warehouse |
+| Warehouse extras | Optional work can add charges | The exact task and its accepted price |
+| International delivery | Depends on the parcel and route | Packed measurements, eligible route and settlement |
+
+For 1688, also read the separate inspection conditions in the [1688 buying guide](/articles/superbuy-1688-guide/). If the international estimate is the unexpected part of your budget, use the [high shipping cost checklist](/articles/why-superbuy-shipping-expensive/) to identify the inputs that need checking.
 
 ## Check the total before comparing products
 
@@ -97,4 +109,4 @@ The resulting record makes your next purchase easier to plan. It shows where you
 - [Superbuy fee composition](https://www.superbuy.com/en/page/guide/feecomposition/) — cost stages, service categories and shipping settlement.
 - [Superbuy shipping calculator](https://www.superbuy.com/en/page/query/freight/) — current route estimation inputs.
 
-Official pages were reviewed on 21 October 2026. We do not reproduce inconsistent arithmetic examples found on the fee page; the example above is explicitly fictional. Confirm the actual fee breakdown before payment.
+Official pages were reviewed on 28 October 2026. We do not reproduce inconsistent arithmetic examples found on the fee page; the example above is explicitly fictional. Confirm the actual fee breakdown before payment.

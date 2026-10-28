@@ -1,18 +1,17 @@
 ---
 slug: superbuy-weidian-links
-title: Jak nakupovat na Weidianu přes Superbuy a vybrat správnou variantu
-description: Následujte odkaz Weidian do Superbuy, ověřte ID položky na trhu, vyberte zamýšlenou volbu a udržujte jasný záznam o nákupu.
+title: 'Jak nakupovat na Weidian přes Superbuy: odkazy a varianty'
+description: Použijte Weidian produktový odkaz s Superbuy, ověřte prodejce a vybranou variantu, zkontrolujte skladové fotografie a plán přepravy. Zahrnuje pomoc při selhání spojení.
 topic: Kupuju průvodce
 keyword: how to buy from weidian with superbuy
 order: 2
-checked: '2026-10-19'
+checked: '2026-10-28'
 lang: cs
 ---
 
+Chcete-li koupit od Weidian s Superbuy, začněte s originálním produktu URL, otevřete jej v nákupním toku Superbuy a ověřit prodejce, barvu, velikost a množství. Zaplatit až poté, co objednávka podrobnosti jsou jasné; přezkoumat dostupné skladové důkazy před zajištěním mezinárodní dodávky.
 
-Nákup ze seznamu Weidian přes Superbuy začíná pomocí URL, ale URL je pouze součástí nákupu. Potřebujete také správného prodejce, verzi, barvu, velikost a množství. Většina chyb, kterým se lze vyhnout, se stává, když se předpokládá jeden z těchto detailů místo kontroly.
-
-Tato příručka navazuje na předání ze strany nezávislého doporučení na objednávku obchodníka. Neslibuje, že každý výpis může být zakoupen nebo odeslán. Dostupnost, podmínky prodávajícího a váš cíl je třeba ještě zkontrolovat přes Superbuy před odevzdáním.
+Tento průvodce následuje předání z doporučené stránky na objednávku. Není- li původní seznam k dispozici, otevře se chybná položka nebo podrobnosti o produktu se nenačítají, použijte [link problemsshooting guide](/cs/articles/superbuy-links-not-working/) Nejdřív. Pracovní URL stále vyžaduje potvrzení dostupnosti, podmínek prodávajícího a způsobilosti k odeslání.
 
 ## Najděte původní odkaz na tržiště
 
@@ -91,4 +90,4 @@ Až se vrátíš [živé tabulky](/cs/spreadsheet/), považovat další nález z
 - [Průvodce nákupním agentem Superbuy](https://www.superbuy.com/en/page/guide/shoppingagent/) — oficiální pořadí.
 - [Centrum pomoci Superbuy](https://www.superbuy.com/en/page/help/) — nákup dotazů a poprodejních tras.
 
-Vysvětlování odkazů a srovnávací seznam jsou nezávislé pokyny. Oficiální stránky byly přezkoumány. 19 Říjen. 2026. Současná kupní způsobilost a poplatky musí být potvrzeny ve Superbuy.
+Vysvětlování odkazů a srovnávací seznam jsou nezávislé pokyny. Oficiální stránky byly přezkoumány dne 28. října 2026. Současná kupní způsobilost a poplatky musí být potvrzeny v Superbuy.

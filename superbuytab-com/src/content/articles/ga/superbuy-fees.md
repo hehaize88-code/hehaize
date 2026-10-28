@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Táillí Superbuy: táirgí, seirbhísí agus seachadadh'
-description: Féach a bhaineann costais Superbuy i do bhuiséad, cad is féidir athrú roimh loingseoireachta agus conas íocaíochtaí a réiteach gan comhaireamh an muirear céanna faoi dhó.
+title: 'Táillí Superbuy: seirbhísí, loingseoireacht agus costas iomlán'
+description: An ngearrann Superbuy táille seirbhíse? Seiceáil ceannach caighdeánach, seachadadh baile, seirbhísí roghnacha agus loingseoireachta idirnáisiúnta roimh shocrú do bhuiséad iomlán.
 topic: Costais agus buiséadú
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: ga
 ---
 
-Freagraíonn buiséid Superbuy úsáideach dhá cheist: cad a d'aontaigh tú cheana féin a íoc, agus cad is féidir a athrú go fóill? Ag cur gach uimhir i iomlán amháin seithí ró-luath go idirdhealú. Is féidir é a dhéanamh measta méid buiséid loingseoireachta cuma chomh cinnte mar sonrasc mír íoctha.
+De réir an leathanaigh oifigiúil táillí, ní ghearrann Superbuy táille seirbhíse ar ghnáthcheannacháin ó Taobao, Tmall, JD agus 1688. Caithfidh tú íoc fós as na hearraí, seachadadh intíre sa tSín, loingseoireacht idirnáisiúnta agus seirbhísí roghnacha. D’fhéadfadh táillí eile a bheith i gceist le socruithe ceannaigh eile; seiceáil na costais a bhaineann le d’ordú féin.
 
-Úsáideann an treoir seo taifead costas simplí chun na cinntí sin a choinneáil le feiceáil. Is modh pleanála, ní meastachán praghsanna reatha. Do mhír roghnaithe, roghanna seirbhíse, modh íocaíochta, dáileacht agus ceann scríbe a chinneadh na muirir is gá a sheiceáil i do chuntas.
+Chun meastachán a dhéanamh ar an gcostas iomlán, cuir marsantas, seachadadh intíre Síneach, muirir seirbhíse is infheidhme, seachadadh idirnáisiúnta, costais íocaíochta agus muirir scríbe. Íocaíochtaí daingnithe a choimeád ar leithligh ó mheastacháin. Léiríonn an treoir seo conas na comhpháirteanna sin a thaifeadadh gan an íocaíocht chéanna a chomhaireamh faoi dhó.
+
+## Cén costais Superbuy ba chóir duit a bheith ag súil?
+
+| Costas | Cad a bhunaíonn an fhaisnéis oifigiúil | Cad a chaithfidh tú a dheimhniú |
+| --- | --- | --- |
+| Ceannach caighdeánach | Níl aon táille seirbhíse liostaithe le haghaidh Taobao, Tmall, JD agus 1688 | Cibé an n- úsáideann do ordú an tseirbhís chaighdeánach sin |
+| CAIBIDIL VI | Is féidir le socruithe éagsúla muirear a chur i gcrích | An tseirbhís is infheidhme agus an méid taispeánta |
+| Seachadadh baile | Cuid ar leith den cheannach | Táille seachadta an díoltóra ar an stóras |
+| Eiseachadtaí stórais | Is féidir le hobair roghnach táillí a chur leis | An tasc cruinn agus a phraghas glactha |
+| Seachadadh idirnáisiúnta | Ag brath ar an dáileacht agus ar an mbealach | Tomhais phacáistithe, bealach incháilithe agus lonnaíocht |
+
+I gcás 1688, léigh freisin na coinníollacha iniúchta ar leith sa [1688 treoir a cheannach](/ga/articles/superbuy-1688-guide/). Má tá an meastachán idirnáisiúnta an chuid gan choinne de do bhuiséad, bain úsáid as an [seicliosta costas loingseoireachta ard](/ga/articles/why-superbuy-shipping-expensive/) a aithint na hionchuir gur gá a sheiceáil.
 
 ## Seiceáil an t-iomlán roimh táirgí comparáide
 
@@ -98,4 +110,4 @@ Déanann an taifead mar thoradh ar do cheannach eile níos éasca a phleanáil. 
 - [Comhdhéanamh táille Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — céimeanna costais, catagóirí seirbhíse agus socrú deiridh na gcostas loingseoireachta.
 - [Áireamhán loingseoireachta Superbuy](https://www.superbuy.com/en/page/query/freight/) — iontráil faisnéis reatha meastacháin ar an mbealach.
 
-Rinneadh athbhreithniú ar leathanaigh oifigiúla ar 21 Deireadh Fómhair 2026. Ní atáirgeann muid samplaí uimhríochtúla neamhsheasmhacha a fhaightear ar an leathanach táille; is ficseanúil an sampla thuas. Deimhnigh an miondealú táille iarbhír roimh íocaíocht.
+Rinneadh athbhreithniú ar leathanaigh oifigiúla an 28 Deireadh Fómhair 2026. Ní atáirgeann muid samplaí uimhríochtúla neamhsheasmhacha le fáil ar an leathanach táille; tá an sampla thuas ficseanúil go sainráite. Deimhnigh an miondealú táille iarbhír roimh íocaíocht.

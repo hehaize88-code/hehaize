@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy maksas: preces, pakalpojumi un piegāde'
-description: Redziet, kas Superbuy izmaksas pieder jūsu budžetā, kas var mainīties pirms kuģniecības un kā saskaņot maksājumus, neskaitot to pašu maksu divreiz.
+title: 'Superbuy maksas: pakalpojumi, piegāde un kopējās izmaksas'
+description: Vai Superbuy maksa par pakalpojumu maksu? Pārbaudīt standarta iepirkumu, iekšzemes piegādi, izvēles pakalpojumus un starptautisko kuģniecību pirms noteikt savu kopējo budžetu.
 topic: Izmaksas un budžeta izstrāde
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: lv
 ---
 
-Noderīgs Superbuy budžets atbild uz diviem jautājumiem: ko jūs jau esat piekritis maksāt, un kas vēl var mainīties? Katra skaitļa pievienošana vienā kopējā par agru slēpj šo atšķirību. Tas var padarīt aprēķināto nosūtīšanas budžeta summu par drošu kā apmaksātu rēķinu.
+Saskaņā ar oficiālo cenrādi Superbuy neiekasē pakalpojuma maksu par standarta pirkumiem Taobao, Tmall, JD un 1688. Tomēr jāmaksā par precēm, piegādi Ķīnā, starptautisko piegādi un izvēlētajiem papildu pakalpojumiem. Citiem pirkšanas pakalpojumiem var būt atsevišķas maksas, tāpēc pārbaudi sava pasūtījuma izmaksu sadalījumu.
 
-Šī rokasgrāmata izmanto vienkāršu izmaksu uzskaiti, lai saglabātu šos lēmumus redzami. Tā ir plānošanas metode, nevis pašreizējo cenu aplēse. Jūsu izvēlētais sūtījums, apkalpošanas iespējas, maksāšanas veids, pakas un galamērķis nosaka maksas, kas jāpārbauda jūsu kontā.
+Lai novērtētu visas izmaksas, pievienojiet preces, Ķīnas iekšzemes piegādes, piemērojamās pakalpojumu maksas, starptautiskās piegādes, maksājumu izmaksas un galamērķa maksas. Saglabāt apstiprinātos maksājumus atsevišķi no aplēsēm. Šis ceļvedis parāda, kā reģistrēt šos komponentus, neskaitot vienu un to pašu maksājumu divreiz.
+
+## Kuras Superbuy izmaksas jums vajadzētu sagaidīt?
+
+| Izmaksas | Ko nosaka oficiālā informācija | Kas jums jāapstiprina |
+| --- | --- | --- |
+| Standarta pirkums | Pakalpojumu maksa Taobao, Tmall, JD un 1688 | Vai jūsu pasūtījums izmanto šo standarta servisu |
+| Citi iepirkumu pakalpojumi | Dažādas vienošanās var veikt maksu | Piemērojamais pakalpojums un parādītā summa |
+| Iekšzemes piegāde | Atsevišķa pirkuma daļa | Pārdevēja piegādes maksa noliktavā |
+| Noliktavu ekstras | Neobligātais darbs var pievienot maksu | Precīzs uzdevums un pieņemtā cena |
+| Starptautiskā piegāde | Atkarībā no pakas un maršruta | Pacedētie mērījumi, atbilstīgais maršruts un apmaksa |
+
+Attiecībā uz 1688 izlasiet arī atsevišķos pārbaudes nosacījumus [1688 pirkšanas ceļvedis](/lv/articles/superbuy-1688-guide/). Ja starptautiskā aplēse ir neparedzēta daļa no jūsu budžeta, izmantojiet [augstu nosūtīšanas izmaksu kontrolsaraksts](/lv/articles/why-superbuy-shipping-expensive/) lai identificētu datus, kas jāpārbauda.
 
 ## Pirms produktu salīdzināšanas pārbaudiet kopskaitu
 
@@ -71,7 +83,7 @@ Nepievienot konversijas izmaksas divreiz. Ja jūsu iegrāmatotā galīgā samaks
 
 ## Atjaunināt nosūtīšanas budžeta summu, kad paka kļūst skaidrāka
 
-Pirms noliktavas ierašanās svars un izmēri var būt neskaidri. Kad prece ir saņemta, jums ir labāka informācija par precēm. Pēc iepakošanas lēmumiem jums ir jēgpilnāks attēls par zemes gabalu. Katrs posms ir iespēja aizstāt pieņēmumu ar pierādījumiem.
+Pirms noliktavas ierašanās svars un izmēri var būt neskaidri. Kad prece ir saņemta, jums ir labāka informācija par precēm. Pēc iepakošanas lēmumiem jums ir jēgpilnāks attēls par paku. Katrs posms ir iespēja aizstāt pieņēmumu ar pierādījumiem.
 
 Izmantojiet [kuģu kalkulatora rokasgrāmata](/lv/articles/superbuy-shipping-calculator/) reģistrēt informāciju, kas ievadīta aiz tāmes. Salīdziniet līdzvērtīgu informāciju: tās pašas galamērķa un preču kategorijas ar paredzēto iepakojumu. Cenas aplēse citam sūtījumam nav uzticams kritērijs tikai tāpēc, ka tā svars izskatās līdzīgs.
 
@@ -98,4 +110,4 @@ Iegūtais ieraksts padara jūsu nākamo pirkumu vieglāk plānot. Tas parāda, k
 - [Superbuy maksas sastāvs](https://www.superbuy.com/en/page/guide/feecomposition/) — izmaksu posmi, pakalpojumu kategorijas un nosūtīšanas galīgais rēķins.
 - [Superbuy kuģniecības kalkulators](https://www.superbuy.com/en/page/query/freight/) — pašreizējā maršruta aplēses informācija ievadīta.
 
-Oficiālās lapas tika pārskatītas 2026. gada 21. oktobrī. Mēs neatkārtojam nekonsekventos aritmētiskos piemērus, kas atrodami maksas lapā; iepriekšminētais piemērs ir skaidri izdomāts. Apstipriniet faktisko maksas sadalījumu pirms maksājuma.
+Oficiālās lapas tika pārskatītas 2026. gada 28. oktobrī. Mēs neatkārtojam nekonsekventus aritmētiskus piemērus, kas atrodami maksas lapā; iepriekšminētais piemērs ir skaidri izdomāts. Apstipriniet faktisko maksas sadalījumu pirms maksājuma.

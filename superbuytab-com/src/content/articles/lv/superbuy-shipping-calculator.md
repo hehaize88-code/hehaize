@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuy piegādes kalkulators: svars un izmaksas'
-description: Salīdzināt Superbuy kuģniecības aplēses ar pareizo svaru, izmēriem un galamērķi. Izmantojiet paku kontrolsarakstu, pirms izvēlēties maršrutu vai maksājumu.
+title: 'Superbuy piegādes kalkulators: novērtē sūtījuma izmaksas'
+description: Aprēķināt superbuy kuģniecības aplēses, izmantojot galamērķi, svars gramos un paku izmēriem. Salīdzināt atbilstīgos maršrutus un saprast, kāpēc galīgā maksa var mainīties.
 topic: Piegāde
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: lv
 ---
 
-Kuģošanas aplēse apraksta paku saskaņā ar vairākiem pieņēmumiem. Mainīt galamērķi, preces kategoriju, izmērus vai maršrutu, un jūs varat būt uzdodot citu cenu jautājumu. Noderīgs ieradums ir saglabāt šos pieņēmumus līdztekus rezultātam, nevis iekasēt vienotu cenu bez konteksta.
+Lai novērtētu Superbuy kuģniecību, atvērt oficiālo kalkulatoru, izvēlēties galamērķi un noliktavu, ievadīt svaru gramos un ārējo paku izmēri centimetros, tad izvēlieties faktisko preces kategoriju. Salīdziniet atbilstīgos maršrutus, izmantojot tos pašus datus, un ietaupiet rezultātu ar datumu un mērījumiem.
 
-Superbuy oficiālais kalkulators pieprasa galamērķi, noliktavu, svaru, izmērus un preces kategoriju. Šajā rokasgrāmatā paskaidrots, kā sagatavot šo ievadīto informāciju un salīdzināt rezultātus. Tā nepublicē universālu cenu par kilogramu un neiesaka maršrutu, nezinot jūsu faktisko sūtījumu.
+Kalkulators sagatavo aplēsi par jūsu aprakstāmo paku. Tā nenosaka universālu cenu par kilogramu un negarantē galīgo kuģniecības maksu. Ja rezultāts izskatās negaidīti liels, pārbaudiet izmērus un rēķinu izrakstīšanas noteikumu, izmantojot mūsu [kuģniecības izmaksu problēmu risināšanas rokasgrāmata](/lv/articles/why-superbuy-shipping-expensive/).
 
 ## Ātrs kontrolsaraksts pirms cita piedāvājuma pieprasīšanas
 
@@ -20,11 +20,11 @@ Glabāt galamērķi, noliktavu, preču kategorijas, fizisko svaru un ārējo pak
 | Pirms salīdzināšanas | Pirms iesniegšanas | Pēc galīgā maksājuma |
 | --- | --- | --- |
 | Pārbaudes vienības un faktiskais saturs | Apstipriniet iepakotus mērījumus un atbilstību maršrutam | Salikt maksājumu ar galīgo rēķinu |
-| Reģistrēt nepieciešamo iepakojumu | Ietvertie pakalpojumi un izņēmumi | Saglabāt zemes gabalu un maksājuma atsauces |
+| Reģistrēt nepieciešamo iepakojumu | Ietvertie pakalpojumi un izņēmumi | Saglabāt paku un maksājuma atsauces |
 
 Lai veiktu galamērķa pārbaudes, izmantojiet: [ASV kuģniecības rokasgrāmata](/lv/articles/superbuy-shipping-to-usa/) vai [Apvienotās Karalistes kuģniecības rokasgrāmata](/lv/articles/superbuy-shipping-to-uk/). Šajās pamatnostādnēs paskaidrots, kā nošķirt pārvadājumus no galamērķa maksām. Aprēķina rezultāts vien nenosaka piemērojamo importa režīmu.
 
-## Sākt ar zemes gabala aprakstu
+## Sākt ar pakas aprakstu
 
 Uzrakstiet, ko jūs plānojat nosūtīt, kur tas ir jādod un kurš iepakojums ir jāsaglabā. Iekļaut iezīmes, kas attiecas uz atbilstību kuģniecībai, piemēram, baterijas vai šķidrumi, kad tie atrodas. Precīza informācija par kategoriju ir daļa no noderīga novērtējuma iegūšanas; tā nav fakultatīva detaļa, ko mainīt līdz brīdim, kad parādās lētāks maršruts.
 
@@ -34,7 +34,7 @@ Saglabāt pirmo aplēsi kā budžeta scenāriju. Atjauniniet to, kad kļūst pie
 
 ## Uzmanīgi ievadiet vienības
 
-Oficiālā kalkulatora svars gramos un izmēri centimetros. Konvertējiet savus mērījumus, pirms ievadiet tos. Divi kilogrami ir. 2 000 grami; ieeja. 2 gramu laukā apraksta ļoti atšķirīgu zemes gabalu.
+Oficiālā kalkulatora svars gramos un izmēri centimetros. Konvertējiet savus mērījumus, pirms ievadiet tos. Divi kilogrami ir. 2 000 grami; ieeja. 2 gramu laukā apraksta ļoti atšķirīgu paku.
 
 Uzglabāt kopā iesaiņotā ārējā iepakojuma garumu, platumu un augstumu. Nejaukt produkta mērījumus no viena avota ar kartona kārbas mērījumu no cita. Ja jūs salīdzināt iepakojuma iespējas, pierakstiet pilnu izmēru komplektu katrai izvēlei.
 
@@ -46,7 +46,7 @@ Fizisko svaru iegūst no skalas. Tilpuma svars ir vieta, kurā iepakojums aizņe
 
 Tikai kā aprēķina piemērs: 40 × 30 × 20 cm sūtījuma tilpums ir 24 000 cm³. Ar dalītāju. 6 000, kas rada skaļumu. 4 kg. Tā nav kuģniecības cenas aplēse un nenosaka, kādu svaru iekasēs konkrētais maršruts.
 
-Izlasiet paša maršruta noteikumus par rēķiniem, tostarp dalīšanos, noapaļošanu un jebkādiem lieluma ierobežojumiem. Ievadītā kalkulatora informācija apraksta zemes gabalu; maršruta nosacījumi izskaidro, kā šis apraksts kļūst par maksu.
+Izlasiet paša maršruta noteikumus par rēķiniem, tostarp dalīšanos, noapaļošanu un jebkādiem lieluma ierobežojumiem. Ievadītā kalkulatora informācija apraksta paku; maršruta nosacījumi izskaidro, kā šis apraksts kļūst par maksu.
 
 ## Salīdzināt scenārijus ar vienu izmaiņu vienlaicīgi
 
@@ -55,7 +55,7 @@ Sākt ar bāzes līniju, kas atspoguļo jūsu pašreizējo plānu. Pēc tam main
 | Scenārija | Paturēt fiksētu | Pārmaiņas | Lēmums palīdz atbildēt |
 | --- | --- | --- | --- |
 | Iepakojumu salīdzinājums | Saturs un galamērķis | Apstiprināti ārējie izmēri | Vai ir vērts apsvērt iepakojuma maiņu? |
-| Sadalījums | Galamērķis un kopējais saturs | Grupēšana un katra zemes gabala mērījumi | Vai plaisa atbilst praktiskiem un maršrutu ierobežojumiem? |
+| Sadalījums | Galamērķis un kopējais saturs | Grupēšana un katra pakas mērījumi | Vai plaisa atbilst praktiskiem un maršrutu ierobežojumiem? |
 | Maršruta salīdzinājums | Ievadīta tāda pati pilnīga informācija par paku | Pieejamais ceļš | Kuri apstākļi atbilst šim sūtījumam? |
 | Aprēķināt atjauninājumu | Paredzētais saturs un iepakojums | Labāk izmērīti dati | Vai agrākais budžets joprojām ir reāls? |
 
@@ -63,7 +63,7 @@ Neaizvietojiet reālu ierobežojumu ar optimistisku pieņēmumu, tikai lai uzlab
 
 ## Izlasiet ārpus pamatcenas
 
-Maršruta rezultāti būtu jāpārskata attiecībā uz atbilstību, nosacījumiem, kā arī izmaksām. Meklējiet svara un dimensijas ierobežojumus, atbalstītas produktu kategorijas, nozīmi jebkuram paredzamajam piegādes diapazonam un attiecīgajiem pakalpojumu noteikumiem. Pievilcīga cena nav noderīga, ja zemes gabals neatbilst kritērijiem.
+Maršruta rezultāti būtu jāpārskata attiecībā uz atbilstību, nosacījumiem, kā arī izmaksām. Meklējiet svara un dimensijas ierobežojumus, atbalstītas produktu kategorijas, nozīmi jebkuram paredzamajam piegādes diapazonam un attiecīgajiem pakalpojumu noteikumiem. Pievilcīga cena nav noderīga, ja paka neatbilst kritērijiem.
 
 Oficiālais kalkulators paskaidro, ka dažādām piegādes metodēm ir savi svara ierobežojumi. Ja sūtījums pārsniedz maršruta robežas, ieejas maiņa par mazāku skaitu neatrisina fizisko problēmu. Atkārtoti izvērtēt paku sastāvu vai lūgt piemērotu nosūtīšanas iespēju.
 
@@ -98,4 +98,4 @@ Atver [oficiālais Superbuy kuģniecības kalkulators](https://www.superbuy.com/
 - [Superbuy kuģniecības kalkulators](https://www.superbuy.com/en/page/query/freight/) — ievades iekārtas, maršruta ierobežojumi un tilpuma-masas skaidrojums.
 - [Superbuy maksas sastāvs](https://www.superbuy.com/en/page/guide/feecomposition/) — starptautiskais kuģniecības maksājums un galīgo izmaksu pārbaude.
 
-Oficiālās lapas tika pārskatītas 2026. gada 21. oktobrī. Apstrādātie mērījumi ir neatkarīgi aritmētiski piemēri, nevis pašreizējie pārvadātāja tarifi vai solījumi par atbilstību maršrutam.
+Oficiālās lapas tika pārskatītas 2026. gada 28. oktobrī. Apstrādātie mērījumi ir neatkarīgi aritmētiski piemēri, nevis pašreizējie pārvadātāja tarifi vai solījumi par atbilstību maršrutam.

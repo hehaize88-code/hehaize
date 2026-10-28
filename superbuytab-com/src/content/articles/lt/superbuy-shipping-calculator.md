@@ -1,21 +1,21 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuy siuntimo skaičiuoklė: svoris ir išlaidos'
-description: Superbuy laivybos vertinimus palyginti su tinkamu svoriu, matmenimis ir paskirties vieta. Naudokite siuntinių kontrolinį sąrašą prieš pasirinkdami maršrutą arba mokėjimo.
+title: 'Superbuy siuntimo skaičiuoklė: kaip įvertinti siuntos kainą'
+description: Apskaičiuoti superbuy laivybos įvertinti naudojant paskirties vietą, svoris gramais ir siuntinio matmenys. Palyginti reikalavimus atitinkančius maršrutus ir suprasti, kodėl galutinis mokestis gali pasikeisti.
 topic: Pristatymas
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: lt
 ---
 
-Laivybos sąmata apibūdina sklypą pagal kelias prielaidas. Pakeisti paskirties vietą, prekių kategoriją, matmenis ar maršrutą ir jums gali būti užduodamas kitoks kainodaros klausimas. Naudinga išsaugoti šias prielaidas kartu su rezultatu, užuot rinkus vienintelę kainą be konteksto.
+Norėdami įvertinti Superbuy laivybą, atidaryti oficialų skaičiuoklę, pasirinkti paskirties ir sandėlio, įvesti svorį gramais ir išorinio siuntinio matmenys centimetrais, tada pasirinkti tikrąją prekių kategoriją. Palyginti reikalavimus atitinkančius maršrutus naudojant tuos pačius įvedinius ir išsaugoti rezultatą su data ir matavimais.
 
-Oficialus Superbuy skaičiuotuvas prašo paskirties, sandėlio, svorio, matmenų ir produkto kategorijos. Šiame vadove paaiškinama, kaip parengti įvestą informaciją ir palyginti rezultatus. Ji neskelbia universalios kainos už kilogramą ar nerekomenduoja maršruto nežinodama jūsų faktinio siuntinio.
+Skaičiuoklyje pateikiamas jūsų aprašomo siuntinio įvertis. Ji nenustato universalios kainos už kilogramą ir negarantuoja galutinio vežimo mokesčio. Jei rezultatas atrodo netikėtai didelis, patikrinkite matmenis ir sąskaitų pateikimo taisyklę naudojant mūsų [laivybos išlaidų problemų sprendimo vadovas](/lt/articles/why-superbuy-shipping-expensive/).
 
 ## Greitas kontrolinis sąrašas prieš prašant pateikti citatą
 
-Laikyti paskirties vietą, sandėlį, prekių kategorijas, fizinį svorį ir išorinio sklypo matmenis kartu. Pažymėkite kiekvieną nepatvirtintą matavimą kaip įvertį. Išsaugokite maršruto pavadinimą, sąskaitos pateikimo taisyklę, rodomą mokestį ir datą su kiekvienu rezultatu, kad vėliau galėtumėte atkurti palyginimą.
+Laikyti paskirties vietą, sandėlį, prekių kategorijas, fizinį svorį ir išorinio siuntinio matmenis kartu. Pažymėkite kiekvieną nepatvirtintą matavimą kaip įvertį. Išsaugokite maršruto pavadinimą, sąskaitos pateikimo taisyklę, rodomą mokestį ir datą su kiekvienu rezultatu, kad vėliau galėtumėte atkurti palyginimą.
 
 | Prieš lyginant | Prieš pateikiant | Po galutinio mokesčio |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Laikyti paskirties vietą, sandėlį, prekių kategorijas, fizinį svorį ir iš
 
 Atliekant su paskirties vieta susijusius patikrinimus, naudokite: [JAV laivybos vadovas](/lt/articles/superbuy-shipping-to-usa/) arba [JK laivybos vadovas](/lt/articles/superbuy-shipping-to-uk/). Jose paaiškinama, kaip atskirti transportą nuo paskirties mokesčių. Vien tik skaičiavimo rezultatas nenustato taikomo importo režimo.
 
-## Pradėti su sklypo aprašymas
+## Pradėti su siuntinio aprašymas
 
 Užsirašykite, ką norite siųsti, kur reikia siųsti ir kokias pakuotes reikia laikyti. Įtraukti su tinkamumu laivybai susijusias savybes, pvz., baterijas ar skysčius, kai jie yra. Tiksli kategorijos informacija yra naudingo įverčio gavimo dalis; tai nėra neprivaloma detalė, kurią reikia keisti, kol nepasirodo pigesnis maršrutas.
 
@@ -34,9 +34,9 @@ Išsaugokite pirmąją sąmatą kaip biudžeto scenarijų. Atnaujinkite jį, kai
 
 ## Atsargiai įveskite vienetus
 
-Oficialus skaičiuotuvas sveria gramais, o matmenys – centimetrais. Konvertuokite savo matavimus prieš įvedant juos. Du kilogramai. 2 000 gramai; įėjimas. 2 gramų lauke aprašomas labai kitoks sklypas.
+Oficialus skaičiuotuvas sveria gramais, o matmenys – centimetrais. Konvertuokite savo matavimus prieš įvedant juos. Du kilogramai. 2 000 gramai; įėjimas. 2 gramų lauke aprašomas labai kitoks siuntinys.
 
-Laikyti supakuoto išorinio sklypo ilgį, plotį ir aukštį kartu. Nemaišykite preparato matavimo iš vieno šaltinio su kartonine dėžute iš kito. Jei lyginate pakavimo galimybes, užrašykite pilną kiekvienos galimybės matmenų rinkinį.
+Laikyti supakuoto išorinio siuntinio ilgį, plotį ir aukštį kartu. Nemaišykite preparato matavimo iš vieno šaltinio su kartonine dėžute iš kito. Jei lyginate pakavimo galimybes, užrašykite pilną kiekvienos galimybės matmenų rinkinį.
 
 Prieš paiešką, skaityti kiekvieną lauką vieną kartą sakiniu: "Šis siuntinis eina į šią paskirties vietą, iš šio sandėlio, sveria šią sumą, matuoja šiuos matmenis ir yra šių prekių kategorijas." Šis paprastas patikrinimas dažnai atskleidžia neteisingą vienetą ar seną paskirties vietą likusią iš ankstesnio įvertinimo.
 
@@ -46,7 +46,7 @@ Fizinis svoris gaunamas iš skalės. Garsinis svoris – tai vieta, kurioje pake
 
 Tik kaip skaičiavimo pavyzdys: 40 × 30 × 20 cm siuntos tūris yra 24 000 cm³. Su dalintoju. 6 000, kuris gamina tūrį. 4 kg. Tai nėra laivybos kainos įvertinimas ir nenustato, kokį svorį rinks tam tikras maršrutas.
 
-Skaityti savo maršruto sąskaitų pateikimo taisykles, įskaitant jo dalijimąsi, apvalinimas ir bet kokio dydžio ribas. Įvesta skaičiuoklė apibūdina sklypą; maršruto sąlygos paaiškina, kaip šis apibūdinimas tampa mokesčiu.
+Skaityti savo maršruto sąskaitų pateikimo taisykles, įskaitant jo dalijimąsi, apvalinimas ir bet kokio dydžio ribas. Įvesta skaičiuoklė apibūdina siuntinį; maršruto sąlygos paaiškina, kaip šis apibūdinimas tampa mokesčiu.
 
 ## Lyginti scenarijus su vienu pakeitimu vienu metu
 
@@ -55,7 +55,7 @@ Pradėti nuo bazinio lygio, kuris atspindi jūsų dabartinį planą. Po to pakei
 | Scenarijus | Nejudėk | Pasikeisk | Sprendimas padeda atsakyti |
 | --- | --- | --- | --- |
 | Pakuotės palyginimas | Turinys ir paskirtis | Patvirtinti išoriniai matmenys | Ar verta apsvarstyti pakuotės pakeitimą? |
-| Padalijimas | Paskirties vieta ir visas turinys | Grupavimas ir kiekvieno sklypo matavimai | Ar skaidymas atitinka praktinius ir maršruto apribojimus? |
+| Padalijimas | Paskirties vieta ir visas turinys | Grupavimas ir kiekvieno siuntinio matavimai | Ar skaidymas atitinka praktinius ir maršruto apribojimus? |
 | Maršruto palyginimas | Įvesta ta pati išsami siuntos informacija | Galimas maršrutas | Kokios sąlygos tinka šiai siuntai? |
 | Numatoma atnaujinta informacija | Numatomas kiekis ir pakavimas | Geresnių išmatuotų duomenų | Ar ankstesnis biudžetas vis dar realus? |
 
@@ -63,7 +63,7 @@ Nekeiskite tikrojo suvaržymo optimistinėmis prielaidomis vien tam, kad pagerin
 
 ## Skaityti už nominalios kainos
 
-Maršruto rezultatai turėtų būti peržiūrimi atsižvelgiant į atitikimą reikalavimams, sąlygas ir sąnaudas. Ieškokite svorio ir matmenų ribų, palaikomų produktų kategorijų, bet kokio numatomo pristatymo intervalo reikšmės ir atitinkamų paslaugų teikimo sąlygų. Patraukli kaina nėra naudinga, jei sklypas neatitinka reikalavimų.
+Maršruto rezultatai turėtų būti peržiūrimi atsižvelgiant į atitikimą reikalavimams, sąlygas ir sąnaudas. Ieškokite svorio ir matmenų ribų, palaikomų produktų kategorijų, bet kokio numatomo pristatymo intervalo reikšmės ir atitinkamų paslaugų teikimo sąlygų. Patraukli kaina nėra naudinga, jei siuntinys neatitinka reikalavimų.
 
 Oficialus skaičiuotojas paaiškina, kad skirtingi pristatymo būdai turi savo svorio ribas. Jei siuntinis viršija maršruto ribas, įvedinio keitimas mažesniu skaičiumi neišsprendžia fizinės problemos. Iš naujo įvertinti siuntinio sudėtį arba prašyti atitinkamą laivybos galimybę.
 
@@ -71,7 +71,7 @@ Laikyti maršruto pavadinimus ir datą su išsaugotu palyginimu. Prieinamumas ir
 
 ## Įvertinti pakuotes tiek kaina ir apsauga
 
-Mažesnis sklypas gali būti patrauklus, kai erdvė veikia mokestį, bet mažesnis nėra automatiškai tinka. Trapus daiktas, struktūrizuotas maišas ir sulankstyti drabužiai turi skirtingą pažeidžiamumą. Nurodyti apsaugą, kurią objektas reikia prieš vertinant siūlomą sumažinimą.
+Mažesnis siuntinys gali būti patrauklus, kai erdvė veikia mokestį, bet mažesnis nėra automatiškai tinka. Trapus daiktas, struktūrizuotas maišas ir sulankstyti drabužiai turi skirtingą pažeidžiamumą. Nurodyti apsaugą, kurią objektas reikia prieš vertinant siūlomą sumažinimą.
 
 Paklauskite, kas bus pašalintas, kas liks ir ar pasikeitimas bus grįžtamas. Jei jums svarbi mažmeninė dėžutė, sakyk. Jeigu tai yra dar nebaigto tyrimo dėl grąžinimo dalis, išspręsti šį klausimą prieš išduodant leidimą.
 
@@ -83,7 +83,7 @@ Pasinaudok mumis [pakavimo vadovas](/lt/articles/superbuy-packing/) parengti ai�
 
 Kai pateikiate siuntinį, saugokite pateiktą maršrutą, pakuotės pasirinkimus ir mokėjimo nuorodą. Jei pakoregavimas bus atliktas vėliau, palyginkite jį su galutine informacija apie siuntą ir atitinkamomis sąskaitomis, o ne su nesusijusiais įverčiais, sutaupytais prieš kelias savaites.
 
-Jei negalite patikrinti skirtumo, paprašykite pagalbos dėl paaiškinimo, naudojant sklypo nuorodą. Naudingame klausimyne nurodomas pirminis įvertis, galutinis mokestis ir konkreti įvesties arba mokesčių eilutė, kurios nesuprantate.
+Jei negalite patikrinti skirtumo, paprašykite pagalbos dėl paaiškinimo, naudojant siuntinio nuorodą. Naudingame klausimyne nurodomas pirminis įvertis, galutinis mokestis ir konkreti įvesties arba mokesčių eilutė, kurios nesuprantate.
 
 ## Padaryti galutinį palyginimą galite veikti toliau
 
@@ -98,4 +98,4 @@ Atidaryk [Oficialus Superbuy laivybos skaičiuotuvas](https://www.superbuy.com/e
 - [Superbuy laivybos skaičiuoklė](https://www.superbuy.com/en/page/query/freight/) — įvesties vienetai, maršruto ribos ir tūrinio svorio paaiškinimas.
 - [Superbuy mokesčių sudėtis](https://www.superbuy.com/en/page/guide/feecomposition/) — tarptautinių laivų apmokėjimas ir galutinių išlaidų tikrinimas.
 
-Oficialūs puslapiai buvo peržiūrėti 2026 m. spalio 21 d. Apdoroti matavimai – tai nepriklausomi aritmetiniai pavyzdžiai, o ne dabartiniai vežėjų tarifai arba pažadai dėl maršruto tinkamumo.
+Oficialūs puslapiai peržiūrėti 2026 m. spalio 28 d. Apdoroti matavimai yra nepriklausomi aritmetiniai pavyzdžiai, o ne dabartiniai vežėjų tarifai arba pažadai, kad maršrutas atitinka reikalavimus.

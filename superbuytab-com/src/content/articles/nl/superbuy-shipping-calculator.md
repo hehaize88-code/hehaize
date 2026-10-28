@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuy-verzendcalculator: gewicht en kosten'
-description: Vergelijk Superbuy verzendschattingen met het juiste gewicht, afmetingen en bestemming. Gebruik de pakketchecklist voordat u een route kiest of betaalt.
+title: 'Superbuy-verzendcalculator: schat de kosten van je pakket'
+description: Bereken een Superbuy verzendschatting met behulp van bestemming, gewicht in gram en perceel afmetingen. Vergelijk in aanmerking komende routes en begrijp waarom de uiteindelijke lading kan veranderen.
 topic: Verzending
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: nl
 ---
 
-Een scheepsraming beschrijft een pakket onder een reeks veronderstellingen. Wijzig de bestemming, item categorie, afmetingen of route en u kunt een andere prijsvraag stellen. De nuttige gewoonte is om deze veronderstellingen naast het resultaat op te slaan, in plaats van een enkele prijs te verzamelen zonder context.
+Voor het schatten van Superbuy verzending, open de officiële rekenmachine, selecteer de bestemming en magazijn, voer gewicht in gram en buitenpakket afmetingen in centimeters, kies dan de werkelijke item categorie. Vergelijk de in aanmerking komende routes met dezelfde ingangen en sla het resultaat op met de datum en metingen.
 
-Superbuy's officiële rekenmachine vraagt om bestemming, magazijn, gewicht, afmetingen en item categorie. In deze gids wordt uitgelegd hoe deze ingevoerde informatie kan worden voorbereid en de resultaten kunnen worden vergeleken. Het publiceert geen universele prijs per kilogram of raadt een route aan zonder uw werkelijke pakket te kennen.
+De rekenmachine geeft een schatting voor het perceel dat u beschrijft. Het stelt geen universele prijs per kilogram vast of garandeert de definitieve verzendkosten niet. Als een resultaat onverwacht hoog lijkt, controleer de afmetingen en facturering regel met behulp van onze [verzendkosten probleemoplossing gids](/nl/articles/why-superbuy-shipping-expensive/).
 
 ## Snelle checklist voordat u een offerte aanvraagt
 
@@ -98,4 +98,4 @@ Doe open [officiële Superbuy verzendcalculator](https://www.superbuy.com/en/pag
 - [Superbuy verzendcalculator](https://www.superbuy.com/en/page/query/freight/) — invoereenheden, routelimieten en verklaring van het volume-gewicht.
 - [Superbuy-kostensamenstelling](https://www.superbuy.com/en/page/guide/feecomposition/) — internationale verzending betaling en het controleren van de uiteindelijke kosten.
 
-Officiële pagina's werden op 21 oktober 2026 opnieuw bekeken. Bewerkte metingen zijn onafhankelijke rekenkundige voorbeelden, niet de huidige carrier rates of beloftes van route-subsidiabiliteit.
+Officiële pagina's werden herzien op 28 oktober 2026. Bewerkte metingen zijn onafhankelijke rekenkundige voorbeelden, niet de huidige carrier rates of beloftes van route subsidiabiliteit.

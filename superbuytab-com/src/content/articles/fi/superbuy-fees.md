@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy-maksut: tuotteet, palvelut ja toimitus'
-description: Katso, mitkä Superbuy-kulut kuuluvat budjettiisi, mitä voi tapahtua ennen lähetystä ja miten maksut sovitetaan yhteen ilman, että samaa maksua lasketaan kahteen kertaan.
+title: 'Superbuyn kulut: palvelumaksut, toimitus ja kokonaishinta'
+description: Maksaako Superbuy palvelumaksun? Tarkista vakio-ostot, kotimaan toimitus, valinnaiset palvelut ja kansainvälinen merenkulku ennen kokonaisbudjettisi vahvistamista.
 topic: Kustannukset ja budjetointi
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: fi
 ---
 
-Hyödyllinen Superbuy-budjetti vastaa kahteen kysymykseen: mitä olet jo suostunut maksamaan ja mikä voi vielä muuttua? Se, että jokainen numero lisätään yhteen kokonaisuuteen liian aikaisin, kätkee tämän eron. Se voi saada arvioidun toimitusbudjetin näyttämään yhtä varmalta kuin maksettu erälasku.
+Virallisen hinnaston mukaan Superbuy ei peri palvelumaksua tavanomaisista ostoista Taobaosta, Tmallista, JD:stä ja 1688:sta. Tuotteet, Kiinan sisäinen toimitus, kansainvälinen kuljetus ja valitut lisäpalvelut ovat silti maksullisia. Muilla ostopalveluilla voi olla omat maksunsa, joten tarkista oman tilauksesi kuluerittely.
 
-Tässä oppaassa käytetään yksinkertaista kustannusrekisteriä, jolla nämä päätökset pidetään näkyvillä. Se on suunnittelumenetelmä, ei nykyinen hinta-arvio. Valitsemasi kohde, palveluvaihtoehdot, maksutapa, paketti ja kohde määrittävät maksut, jotka pitää tarkistaa tililtäsi.
+Kokonaiskustannusten arvioimiseksi lisää kauppatavara, Kiinan kotimainen toimitus, sovellettavat palvelumaksut, kansainvälinen toimitus, maksukulut ja kohdemaksut. Pidä vahvistetut maksut erillään ennakkoarvioista. Tässä oppaassa kerrotaan, kuinka nämä osat kirjataan laskematta samaa maksua kahteen kertaan.
+
+## Mitä Superbuy-kuluja kannattaa odottaa?
+
+| Kulut | Mitä viralliset tiedot osoittavat | Mitä sinun täytyy vahvistaa |
+| --- | --- | --- |
+| Vakiohankinta | Taobaosta, Tmallista, JD:stä ja 1688:sta ei ole palvelumaksua | Käyttääkö tilauksesi tätä vakiopalvelua |
+| Muut ostopalvelut | Erilaiset järjestelyt voivat olla maksullisia | Sovellettava palvelu ja esillä oleva määrä |
+| Kotimaan toimitus | Erillinen osa ostosta | Myyjän toimitusmaksu varastoon |
+| Varastointilisät | Valinnainen työ voi lisätä maksuja | Tarkka tehtävä ja sen hyväksytty hinta |
+| Kansainvälinen toimitus | Riippuu paketista ja reitistä | Pakatut mittaukset, hyväksyttävä reitti ja selvittely |
+
+Vuoden 1688 osalta lue myös erilliset tarkastusolosuhteet [1688 osto-opas](/fi/articles/superbuy-1688-guide/). Jos kansainvälinen arvio on budjettisi yllättävä osa, käytä [Suurten lähetyskustannusten tarkistuslista](/fi/articles/why-superbuy-shipping-expensive/) Tarkistettujen syöttötietojen tunnistaminen.
 
 ## Tarkista kokonaisarvo ennen tuotteiden vertailua
 
@@ -98,4 +110,4 @@ Tuloksena oleva levy helpottaa seuraavan ostoksen suunnittelua. Se osoittaa, mis
 - [Superbuy-maksun koostumus](https://www.superbuy.com/en/page/guide/feecomposition/) — Kustannukset, palveluluokat ja postin loppulaskutus.
 - [Superbuy-toimituslaskuri](https://www.superbuy.com/en/page/query/freight/) — tämänhetkiset reittiarviotiedot syötetty.
 
-Viralliset sivut tarkistettiin 21. lokakuuta 2026. Emme lisää maksusivulla olevia epäjohdonmukaisia aritmeettisia esimerkkejä, vaan yllä oleva esimerkki on nimenomaan kuvitteellinen. Vahvista todellinen maksuerittely ennen maksua.
+Viralliset sivut tarkistettiin 28. lokakuuta 2026. Emme lisää maksusivulla olevia epäjohdonmukaisia aritmeettisia esimerkkejä, vaan yllä oleva esimerkki on nimenomaan kuvitteellinen. Vahvista todellinen maksuerittely ennen maksua.

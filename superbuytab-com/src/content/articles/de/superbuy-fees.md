@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy Gebühren: Warenpreis, Service und Versand'
-description: Sehen Sie, welche Superbuy-Kosten in Ihrem Budget gehören, was sich vor dem Versand ändern kann und wie man Zahlungen miteinander in Einklang bringt, ohne die gleiche Gebühr zweimal zu zählen.
+title: 'Superbuy-Gebühren: Service, Versand und Gesamtkosten'
+description: Berechnet Superbuy eine Servicegebühr? Überprüfen Sie Standard-Kauf, inländische Lieferung, optionale Dienstleistungen und internationalen Versand, bevor Sie Ihr Gesamtbudget.
 topic: Kosten & Budgetierung
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: de
 ---
 
-Ein nützliches Superbuy-Budget beantwortet zwei Fragen: Zu welchen Ausgaben haben Sie sich bereits verpflichtet, und welche Beträge können sich noch ändern? Wer alle Beträge zu früh zu einer Gesamtsumme addiert, verliert diesen Unterschied aus dem Blick. Dadurch kann eine vorläufige Versandkostenschätzung genauso verbindlich wirken wie eine bereits bezahlte Warenrechnung.
+Laut der offiziellen Gebührenübersicht erhebt Superbuy für Standardkäufe bei Taobao, Tmall, JD und 1688 keine Einkaufsservicegebühr. Warenpreis, chinesischer Inlandsversand, internationaler Versand und optionale Leistungen bleiben kostenpflichtig. Für andere Einkaufsleistungen können eigene Gebühren gelten; prüfen Sie deshalb die Kosten Ihrer konkreten Bestellung.
 
-Dieser Leitfaden verwendet eine einfache Kostenliste, um diese Entscheidungen sichtbar zu halten. Es ist eine Planungsmethode, keine aktuelle Preisschätzung. Ihre ausgewählten Artikel, Service-Optionen, Zahlungsmethode, Paket und Ziel bestimmen die Kosten, die in Ihrem Konto überprüft werden müssen.
+Um die vollständigen Kosten zu schätzen, fügen Sie Waren, chinesische Inlandslieferung, geltende Service-Gebühren, internationale Lieferung, Zahlungskosten und Zielgebühren hinzu. Bestätigte Zahlungen getrennt von Schätzungen aufbewahren. Diese Anleitung zeigt, wie diese Komponenten aufgezeichnet werden können, ohne die gleiche Zahlung zweimal zu zählen.
+
+## Welche Superbuy-Kosten sollten Sie erwarten?
+
+| Kosten | Was die offiziellen Informationen ergeben | Was Sie bestätigen müssen |
+| --- | --- | --- |
+| Standardkauf | Keine Servicegebühr aufgeführt für Taobao, Tmall, JD und 1688 | Ob Ihre Bestellung diesen Standard-Service nutzt |
+| Sonstige Beschaffungsleistungen | Verschiedene Arrangements können eine Gebühr tragen | Der anwendbare Service und die angezeigte Menge |
+| Inländische Lieferung | Ein separater Teil des Kaufs | Die Liefergebühr des Verkäufers an das Lager |
+| Warenhaus-Extras | Optionale Arbeit kann Gebühren hinzufügen | Die genaue Aufgabe und ihr akzeptierter Preis |
+| Internationale Lieferung | Abhängig vom Paket und der Route | Verpackte Messungen, förderfähige Route und Abrechnung |
+
+Für 1688, lesen Sie auch die separaten Inspektionsbedingungen in der [1688 Einkaufsleitfaden](/de/articles/superbuy-1688-guide/). . Wenn die internationale Schätzung ist der unerwartete Teil Ihres Budgets, verwenden Sie die [hohe Versandkosten Checkliste](/de/articles/why-superbuy-shipping-expensive/) die Eingaben zu identifizieren, die überprüft werden müssen.
 
 ## Überprüfen Sie die Summe vor dem Vergleich der Produkte
 
@@ -98,4 +110,4 @@ Die daraus resultierende Aufzeichnung macht Ihren nächsten Einkauf einfacher zu
 - [Superbuy Gebührenzusammensetzung](https://www.superbuy.com/en/page/guide/feecomposition/) — Kostenstufen, Service-Kategorien und Versand finale Abrechnung.
 - [Superbuy Versandrechner](https://www.superbuy.com/en/page/query/freight/) — aktuelle Informationen zur Routenschätzung eingegeben.
 
-Die offiziellen Seiten wurden am 21. Oktober 2026 überprüft. Wir reproduzieren nicht inkonsistente arithmetische Beispiele auf der Gebührenseite; das obige Beispiel ist explizit fiktional. Bestätigen Sie die tatsächliche Gebührenaufschlüsselung vor der Zahlung.
+Offizielle Seiten wurden am 28. Oktober 2026 überprüft. Wir reproduzieren nicht inkonsistente arithmetische Beispiele auf der Gebührenseite; das obige Beispiel ist explizit fiktional. Bestätigen Sie die tatsächliche Gebührenaufschlüsselung vor der Zahlung.

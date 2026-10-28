@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy-díjak: termékek, szolgáltatások és szállítás'
-description: Nézd meg, hogy mely Superbuy költségek tartoznak a költségvetésbe, mi változhat a szállítás előtt, és hogyan lehet összeegyeztetni a kifizetéseket anélkül, hogy ugyanazt a díjat kétszer.
+title: 'Superbuy díjak: szolgáltatások, szállítás és teljes költség'
+description: A Superbuy szolgáltatási díjat számít fel? Ellenőrizze a szokásos vásárlás, belföldi szállítás, opcionális szolgáltatások és nemzetközi szállítás előtt meghatározza a teljes költségvetés.
 topic: Költségek és költségvetés
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: hu
 ---
 
-Egy hasznos Superbuy költségvetés két kérdésre ad választ: mit egyezett már bele, hogy fizessen, és mi változhat még? Ha minden számot hozzáadunk egyhez, az túl korán eltünteti ezt a különbséget. Ez lehet, hogy a becsült szállítási költségvetési összeget úgy néz ki, mint egy fizetett tétel számla.
+A hivatalos díjtáblázat szerint a Superbuy nem számít fel szolgáltatási díjat a Taobao, Tmall, JD és 1688 oldalakon végzett szokásos vásárlásokért. A termékekért, a kínai belföldi szállításért, a nemzetközi szállításért és a választott kiegészítő szolgáltatásokért azonban fizetni kell. Más beszerzési szolgáltatások díja eltérhet, ezért ellenőrizd a saját rendelésed költségeit.
 
-Ez az útmutató egy egyszerű költségrekordot használ e döntések láthatóvá tételéhez. Ez egy tervezési módszer, nem pedig egy aktuális árbecslés. A kiválasztott elem, szolgáltatás lehetőségek, fizetési mód, csomag és rendeltetési hely határozza meg azokat a díjakat, amelyeket ellenőrizni kell a számláján.
+A teljes költség becsléséhez hozzáadjuk az árut, a kínai belföldi szállítást, az alkalmazandó szolgáltatási díjakat, a nemzetközi kézbesítést, a fizetési költségeket és a rendeltetési hely díjait. A megerősített kifizetéseket külön kell tartani a becslésektől. Ez az útmutató azt mutatja, hogyan kell rögzíteni ezeket az alkatrészeket anélkül, hogy ugyanazt a kifizetést kétszer.
+
+## Melyik Superbuy-ra számíts?
+
+| Költség | Mit határoznak meg a hivatalos információk | Amit meg kell erősítenie. |
+| --- | --- | --- |
+| Szabványos beszerzés | A Taobao, Tmall, JD és 1688-as szolgáltatások díja nincs felsorolva | Hogy a rendelésed használja-e ezt a szabványos szolgáltatást |
+| Egyéb beszerzési szolgáltatások | A különböző intézkedések díjat is hordozhatnak | Az alkalmazandó szolgáltatás és a megjelenített összeg |
+| Belföldi szállítás | A vásárlás különálló része | Az eladó szállítási díja a raktárba |
+| Raktári extrák | A választható munka felárat adhat | A pontos feladat és az elfogadott ár |
+| Nemzetközi szállítás | A csomagtól és az útvonaltól függ. | Csomagolt mérések, támogatható útvonal és kiegyenlítés |
+
+Az 1688-as évre vonatkozóan a külön vizsgálati feltételeket is el kell olvasni. [1688 vásárlási útmutató](/hu/articles/superbuy-1688-guide/). Ha a nemzetközi becslés a váratlan része a költségvetés, használja a [magas szállítási költség ellenőrzőlista](/hu/articles/why-superbuy-shipping-expensive/) az ellenőrzést igénylő bemeneti adatok azonosítása.
 
 ## Ellenőrizze az összeset a termékek összehasonlítása előtt
 
@@ -98,4 +110,4 @@ Az így kapott rekord megkönnyíti a következő vásárlás tervezését. Megm
 - [Superbuy díjösszetétel](https://www.superbuy.com/en/page/guide/feecomposition/) — költségszakaszok, szolgáltatási kategóriák és szállítási végső számlázás.
 - [Superbuy szállítási kalkulátor](https://www.superbuy.com/en/page/query/freight/) — az útvonal becslésére vonatkozó aktuális információk.
 
-A hivatalos oldalakat 2026. október 21-én felülvizsgálták. Nem reprodukálunk következetlen számtani példákat a díjoldalon; a fenti példa kifejezetten fiktív. Erősítse meg a tényleges díj bontást fizetés előtt.
+A hivatalos oldalakat 2026. október 28-án felülvizsgálták. Nem reprodukáljuk a díjoldalon található következetlen számtani példákat; a fenti példa kifejezetten fiktív. Erősítse meg a tényleges díj bontást fizetés előtt.

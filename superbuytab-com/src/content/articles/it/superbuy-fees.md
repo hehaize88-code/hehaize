@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Commissioni Superbuy: prodotti, servizi e spedizioni'
-description: Vedere quali costi Superbuy appartengono al vostro budget, cosa può cambiare prima della spedizione e come conciliare i pagamenti senza contare la stessa carica due volte.
+title: 'Costi Superbuy: commissioni, spedizione e totale'
+description: Superbuy fa pagare una tassa di servizio? Controllare l'acquisto standard, la consegna nazionale, servizi opzionali e spedizione internazionale prima di impostare il vostro budget totale.
 topic: Costi e budget
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: it
 ---
 
-Un budget utile Superbuy risponde a due domande: cosa hai già accettato di pagare e cosa puoi ancora cambiare? L'aggiunta di ogni numero in un totale troppo presto nasconde questa distinzione. Si può fare una stima del budget di spedizione guardare come certo come una fattura voce pagata.
+Secondo la pagina ufficiale delle tariffe, Superbuy non applica commissioni al servizio di acquisto standard su Taobao, Tmall, JD e 1688. Restano da pagare i prodotti, la consegna interna in Cina, la spedizione internazionale e gli eventuali servizi facoltativi. Altre modalità di acquisto possono prevedere commissioni diverse: controlla il riepilogo del tuo ordine.
 
-Questa guida utilizza un semplice record di costi per mantenere tali decisioni visibili. Si tratta di un metodo di pianificazione, non di una stima attuale dei prezzi. L'articolo selezionato, le opzioni di servizio, il metodo di pagamento, il pacco e la destinazione determinano le spese che devono essere controllate nel tuo account.
+Per stimare il costo completo, aggiungere merce, consegna nazionale cinese, spese di servizio applicabili, consegne internazionali, costi di pagamento e spese di destinazione. Mantenere i pagamenti confermati separati dalle stime. Questa guida mostra come registrare quei componenti senza contare lo stesso pagamento due volte.
+
+## Quali costi di Superbuy si dovrebbe aspettare?
+
+| Costo | Cosa stabilisce l'informazione ufficiale | Ciò che devi confermare |
+| --- | --- | --- |
+| Acquisti standard | Nessun costo di servizio indicato per Taobao, Tmall, JD e 1688 | Indica se il tuo ordine utilizza quel servizio standard |
+| Altri servizi di acquisto | Disposizioni diverse possono comportare un onere | Il servizio applicabile e la quantità visualizzata |
+| Consegna interna | Una parte separata dell'acquisto | La tassa di consegna del venditore al magazzino |
+| Extra magazzino | Il lavoro opzionale può aggiungere delle spese | Il compito esatto e il suo prezzo accettato |
+| Consegna internazionale | Dipende dal pacco e dall'itinerario | Misure imballate, rotta ammissibile e regolamento |
+
+Per il 1688, leggere anche le condizioni di ispezione separate nella [1688 guida all'acquisto](/it/articles/superbuy-1688-guide/). Se la stima internazionale è la parte inaspettata del vostro budget, utilizzare il [checklist ad alto costo di spedizione](/it/articles/why-superbuy-shipping-expensive/) per identificare gli ingressi da controllare.
 
 ## Controllare il totale prima di confrontare i prodotti
 
@@ -98,4 +110,4 @@ Il record risultante rende il vostro prossimo acquisto più facile da pianificar
 - [Composizione della tariffa Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — fasi di costo, categorie di servizio e fatturazione finale di spedizione.
 - [Calcolatrice di spedizione Superbuy](https://www.superbuy.com/en/page/query/freight/) — informazioni correnti sulla stima della rotta inserite.
 
-Le pagine ufficiali sono state riviste il 21 ottobre 2026. Non riproduciamo esempi aritmetici incoerenti trovati nella pagina delle tasse; l'esempio sopra è esplicitamente immaginario. Confermare l'effettiva ripartizione delle tariffe prima del pagamento.
+Le pagine ufficiali sono state riviste il 28 ottobre 2026. Non riproduciamo esempi aritmetici incoerenti trovati nella pagina delle tasse; l'esempio sopra è esplicitamente immaginario. Confermare l'effettiva ripartizione delle tariffe prima del pagamento.

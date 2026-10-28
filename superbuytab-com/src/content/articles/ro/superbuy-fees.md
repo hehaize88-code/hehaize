@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Taxe Superbuy: produse, servicii și livrare'
-description: A se vedea care costurile Superbuy aparțin în bugetul dumneavoastră, ceea ce se poate schimba înainte de expediere și cum să reconcilieze plățile fără a număra aceeași taxă de două ori.
+title: 'Taxe Superbuy: servicii, transport și cost total'
+description: Are Superbuy percepe o taxă de serviciu? Verificaţi achiziţiile standard, livrarea internă, serviciile opţionale şi transportul maritim internaţional înainte de stabilirea bugetului total.
 topic: Costuri și bugetare
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: ro
 ---
 
-Un buget Superbuy util răspunde la două întrebări: ce ați convenit deja să plătiți și ce se poate schimba în continuare? Adăugarea fiecărui număr într-un total prea devreme ascunde această distincție. Acesta poate face ca o sumă estimată bugetul de transport să arate la fel de sigur ca o factură de produs plătit.
+Conform paginii oficiale de tarife, Superbuy nu percepe comision pentru serviciul standard de cumpărare de pe Taobao, Tmall, JD și 1688. Produsele, livrarea internă în China, transportul internațional și serviciile opționale se plătesc separat. Alte modalități de cumpărare pot avea comisioane diferite; verifică taxele comenzii tale.
 
-Acest ghid utilizează o simplă înregistrare a costurilor pentru a menține aceste decizii vizibile. Este o metodă de planificare, nu o estimare a prețului curent. Produsul selectat, opţiunile de service, metoda de plată, parcelă şi destinaţie determină taxele care trebuie verificate în contul dvs.
+Pentru a estima costul complet, adăugați mărfuri, livrare internă chineză, tarife de servicii aplicabile, livrare internațională, costuri de plată și taxe de destinație. Păstrați plățile confirmate separat de estimări. Acest ghid arată cum se înregistrează aceste componente fără a număra aceeași plată de două ori.
+
+## La ce costuri ar trebui să vă aşteptaţi?
+
+| Costuri | Ce precizează informaţiile oficiale | Ce trebuie să confirmi |
+| --- | --- | --- |
+| Achiziții standard | Nicio taxă de serviciu pentru Taobao, Tmall, JD și 1688 | Dacă comanda dvs. utilizează acest serviciu standard |
+| Alte servicii de achiziție | Diferite aranjamente pot transporta o taxă | Serviciul aplicabil și valoarea afișată |
+| Livrarea internă | O parte separată a achiziției | Taxa de livrare a vânzătorului la depozit |
+| Extrasuri de depozit | Munca opţională poate adăuga taxe | Sarcina exacta si pretul acceptat |
+| Livrare internaţională | Depinde de colet și traseu | Măsurători împachetate, rută eligibilă și decontare |
+
+Pentru 1688, a se citi, de asemenea, condițiile de inspecție separate în [Ghid de cumpărare 1688](/ro/articles/superbuy-1688-guide/). În cazul în care estimarea internațională este partea neașteptată a bugetului dumneavoastră, utilizați [o listă de verificare a costurilor mari de transport maritim](/ro/articles/why-superbuy-shipping-expensive/) pentru a identifica intrările care necesită verificare.
 
 ## Verificați totalul înainte de compararea produselor
 
@@ -98,4 +110,4 @@ Recordul rezultat face următoarea achiziție mai ușor de planificat. Arată un
 - [Compoziţia taxei Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — etapele de cost, categoriile de servicii și facturarea finală a transportului maritim.
 - [Calculator de transport Superbuy](https://www.superbuy.com/en/page/query/freight/) — informații actuale privind estimarea traseului introduse.
 
-Paginile oficiale au fost revizuite la 21 octombrie 2026. Nu reproducem exemple aritmetice inconsistente găsite pe pagina taxei; exemplul de mai sus este în mod explicit fictiv. Confirmă defalcarea efectivă a taxei înainte de plată.
+Paginile oficiale au fost revizuite la 28 octombrie 2026. Noi nu reproducem exemple aritmetice inconsistente găsite pe pagina taxei; exemplul de mai sus este în mod explicit fictiv. Confirmă defalcarea efectivă a taxei înainte de plată.

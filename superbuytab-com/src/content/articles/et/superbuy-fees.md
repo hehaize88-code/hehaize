@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy tasud: tooted, teenused ja tarne'
-description: Vaadake, millised Superbuy kulud kuuluvad oma eelarve, mis võib muutuda enne tarnee ja kuidas sobitada maksed lugemata sama tasu kaks korda.
+title: 'Superbuy tasud: teenused, saatmine ja kogukulu'
+description: Kas Superbuy nõuab teenustasu? Kontrollige enne oma kogueelarve kehtestamist standardset ostmist, omamaist kohaletoimetamist, vabatahtlikke teenuseid ja rahvusvahelist laevandust.
 topic: Kulud ja eelarvestamine
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: et
 ---
 
-Kasulik Superbuy eelarve vastab kahele küsimusele: mida olete juba nõus maksma ja mida saab veel muuta? Iga numbri lisamine ühte kokku liiga vara peidab selle erinevuse. See võib teha hinnangulise tarnee eelarve summa tunduda sama kindel kui makstud kaubaartikli arve.
+Ametliku hinnakirja järgi ei võta Superbuy Taobao, Tmalli, JD ja 1688 tavapäraste ostude eest ostuteenuse tasu. Kaupade, Hiina-sisese tarne, rahvusvahelise saatmise ja valitud lisateenuste eest tuleb siiski maksta. Teiste ostuteenuste puhul võivad kehtida eraldi tasud, seega kontrolli oma tellimuse kulude jaotust.
 
-Käesolevas juhendis kasutatakse lihtsaid kuluandmeid, et need otsused oleksid nähtavad. See on planeerimismeetod, mitte praegune hinnahinnang. Teie valitud objekt, teenusevalikud, makseviis, pakid ja sihtkoht määravad kindlaks tasud, mida teie kontol tuleb kontrollida.
+Selleks et hinnata kogukulusid, lisada kauba, Hiina kodumaise tarne, kohaldatavad teenustasud, rahvusvahelise tarne, maksekulud ja sihtkoha tasud. Hoida kinnitatud maksed hinnangutest lahus. Käesolev juhend näitab, kuidas salvestada need komponendid lugemata sama makse kaks korda.
+
+## Millised Superbuy kulud te ootate?
+
+| Kulud | Mida ametlik teave kehtestab | Mida te peate kinnitama |
+| --- | --- | --- |
+| Standardne ostmine | Taobao, Tmall, JD ja 1688 teenustasud puuduvad | Kas teie tellimus kasutab seda standardteenust |
+| Muud ostuteenused | Maksu võivad kanda erinevad kokkulepped. | Kohaldatav teenus ja näidatav kogus |
+| Riigisisene kättetoimetamine | Ostmise eraldi osa | Müüja tarnetasu lattu |
+| Lao lisad | Vabatahtlik töö võib lisada tasusid | Täpne ülesanne ja selle vastuvõetav hind |
+| Rahvusvaheline tarne | Sõltub pakist ja tarneteenusest | Pakitud mõõtmed, sobiv tarneteenus ja lõplik arveldus |
+
+Platvormilt 1688 ostes lugege ka eraldi kontrollitingimusi meie [1688 ostujuhendist](/et/articles/superbuy-1688-guide/). Kui rahvusvaheline saatmine muudab eelarve ootamatult suureks, kasutage [saatmiskulude kontrollnimekirja](/et/articles/why-superbuy-shipping-expensive/), et leida ülevaatamist vajavad sisendandmed.
 
 ## Kontrollige kokku enne toodete võrdlemist
 
@@ -98,4 +110,4 @@ Tulemuseks rekord teeb teie järgmise ostu lihtsam planeerida. See näitab, kus 
 - [Superbuy tasu koosseisu](https://www.superbuy.com/en/page/guide/feecomposition/) — kuluetapid, teenusekategooriad ja tarnee lõplik arve.
 - [Superbuy tarnee kalkulaator](https://www.superbuy.com/en/page/query/freight/) — sisestatud praegune marsruudi hindamise teave.
 
-Ametlikud leheküljed vaadati läbi 21. oktoobril 2026. Me ei paljunda ebajärjekindlaid aritmeetilisi näiteid, mis on toodud tasu leheküljel; eespool toodud näide on selgelt väljamõeldis. Kinnitage tegelik tasu jaotus enne maksmist.
+Ametlikud leheküljed vaadati üle 28. oktoobril 2026. Me ei paljunda ebajärjekindlaid aritmeetilisi näiteid, mis on toodud tasu leheküljel; eespool toodud näide on selgelt väljamõeldis. Kinnitage tegelik tasu jaotus enne maksmist.

@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Taxas Superbuy: produtos, serviços e envios'
-description: Veja quais os custos do Superbuy pertencem ao seu orçamento, o que pode mudar antes do envio e como conciliar pagamentos sem contar a mesma carga duas vezes.
+title: 'Taxas Superbuy: serviços, envio e custo total'
+description: O SuperBuy cobra uma taxa de serviço? Verifique as compras padrão, entrega doméstica, serviços opcionais e transporte internacional antes de definir o seu orçamento total.
 topic: Custos e orçamento
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: pt
 ---
 
-Um orçamento útil do Superbuy responde a duas perguntas: o que você já concordou em pagar, e o que ainda pode mudar? Adicionar cada número em um total muito cedo esconde essa distinção. Pode fazer com que um montante estimado do orçamento de transporte pareça tão certo como uma fatura do item pago.
+Segundo a página oficial de taxas, a Superbuy não cobra comissão pelo serviço de compra padrão no Taobao, Tmall, JD e 1688. Continuas a pagar os produtos, a entrega nacional na China, o envio internacional e os serviços opcionais aplicáveis. Outras modalidades de compra podem ter taxas diferentes; confirma o detalhe do teu pedido.
 
-Este guia usa um simples registro de custos para manter essas decisões visíveis. É um método de planejamento, não uma estimativa de preço atual. O item selecionado, opções de serviço, método de pagamento, pacote e destino determinam as cargas que precisam ser verificadas na sua conta.
+Para estimar o custo completo, adicione mercadoria, entrega nacional chinesa, taxas de serviço aplicáveis, entrega internacional, custos de pagamento e taxas de destino. Manter os pagamentos confirmados separados das estimativas. Este guia mostra como gravar esses componentes sem contar o mesmo pagamento duas vezes.
+
+## Qual é o custo do Superbuy que você deveria esperar?
+
+| Custo | O que as informações oficiais estabelecem | O que tem de confirmar |
+| --- | --- | --- |
+| Aquisição normalizada | Nenhuma taxa de serviço listada para Taobao, Tmall, JD e 1688 | Se o seu pedido usa esse serviço padrão |
+| Outros serviços de aquisição | Disposições diferentes podem carregar uma carga | O serviço aplicável e o montante exibido |
+| Entrega interna | Uma parte separada da compra | Carga de entrega do vendedor para o armazém |
+| Extras do armazém | O trabalho opcional pode adicionar cargas | A tarefa exata e o seu preço aceito |
+| Entrega internacional | Depende da parcela e da rota | Medições embaladas, rota elegível e liquidação |
+
+Em vez de 1688, leia também as condições de inspecção separadas no [1688 guia de compra](/pt/articles/superbuy-1688-guide/)- Sim. Se a estimativa internacional for a parte inesperada do seu orçamento, use o [Lista de verificação de alto custo de transporte](/pt/articles/why-superbuy-shipping-expensive/) identificar as entradas que necessitam de verificação.
 
 ## Verifique o total antes de comparar os produtos
 
@@ -98,4 +110,4 @@ O registro resultante torna sua próxima compra mais fácil de planejar. Mostra 
 - [Composição da taxa Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — estágios de custo, categorias de serviço e faturamento final de transporte.
 - [Calculadora de envio Superbuy](https://www.superbuy.com/en/page/query/freight/) — informação atual de estimativa de rota introduzida.
 
-As páginas oficiais foram revistas em 21 de outubro de 2026. Não reproduzimos exemplos aritméticos inconsistentes encontrados na página de taxas; o exemplo acima é explicitamente fictício. Confirme a desagregação real da taxa antes do pagamento.
+As páginas oficiais foram revistas em 28 de outubro de 2026. Não reproduzimos exemplos aritméticos inconsistentes encontrados na página de taxas; o exemplo acima é explicitamente fictício. Confirme a desagregação real da taxa antes do pagamento.

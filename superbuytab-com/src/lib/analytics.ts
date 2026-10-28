@@ -10,8 +10,10 @@ export function installAnalytics(doc:Document,send:(event:string,params:Record<s
   const anchor=target?.closest?.('a[href]') as HTMLAnchorElement|null;
   if(!anchor)return;
   const url=new URL(anchor.href,doc.location.href),route=withoutLocale(url.pathname);
-  const shared={language:locale,source_type:sourceArticle?'article':sourceCategory?'category':'other'};
+  const shared={language:locale,source_type:sourceArticle?'article':sourceCategory?'category':source==='/'?'home':'other'};
   if(url.origin===doc.location.origin){
+   const destinationArticle=route.match(/^\/articles\/([a-z-]+)\/$/)?.[1];
+   if(destinationArticle&&route!==source)send('guide_click',{...shared,article_slug:destinationArticle,transport_type:'beacon'});
    if(sourceArticle&&(route==='/spreadsheet/'||route.startsWith('/categories/'))){
     send('article_to_catalog',{...shared,article_slug:sourceArticle,destination_category:url.searchParams.get('category')||route.split('/')[2]||'all',transport_type:'beacon'});
    }

@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Kalkulatur tal-kunsinna Superbuy: piż u spejjeż'
-description: Qabbel estimi tbaħħir Superbuy mal-piż dritt, dimensjonijiet u destinazzjoni. Uża l-lista ta' kontroll tal-pakketti qabel ma tagħżel rotta jew tħallas.
+title: 'Kalkulatur Superbuy: stima tal-ispiża tat-tbaħħir'
+description: Ikkalkula stima tat-trasport bil-baħar Superbuy bl-użu ta' destinazzjoni, piż fi grammi u dimensjonijiet tal-pakketti. Qabbel ir-rotot eliġibbli u tifhem għaliex l-imposta finali tista' tinbidel.
 topic: Trasport bil-baħar
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: mt
 ---
 
-Stima tat-tbaħħir tiddeskrivi pakkett taħt sett ta' suppożizzjonijiet. Ibdel id-destinazzjoni, il-kategorija tal-oġġett, id-dimensjonijiet jew ir-rotta u tista' tkun qed tistaqsi mistoqsija differenti dwar l-ipprezzar. Il-vizzju utli huwa li jiġu ffrankati dawk is-suppożizzjonijiet flimkien mar-riżultat, minflok ma jinġabar prezz uniku mingħajr ebda kuntest.
+Biex tagħmel stima tbaħħir Superbuy, tiftaħ il-kalkolatur uffiċjali, tagħżel id-destinazzjoni u l-maħżen, daħħal il-piż fi grammi u d-dimensjonijiet tal-pakkett ta 'barra f'ċentimetri, imbagħad jagħżlu l-kategorija tal-oġġett attwali. Qabbel ir-rotot eliġibbli bl-użu ta' dawk l-istess inputs u iffranka r-riżultat mad-data u l-kejl.
 
-Il-kalkolatur uffiċjali ta' Superbuy jitlob id-destinazzjoni, il-maħżen, il-piż, id-dimensjonijiet u l-kategorija tal-oġġett. Din il-gwida tispjega kif tħejji din l-informazzjoni mdaħħla u tqabbel ir-riżultati. Hija ma tippubblikax prezz universali għal kull kilogramm jew tirrakkomanda rotta mingħajr ma tkun taf il-pakkett attwali tiegħek.
+Il - kalkulatur jipproduċi stima għall - pakkett li tiddeskrivi. Ma jistabbilixxix prezz universali għal kull kilogramm jew jiggarantixxi t-tariffa finali tat-trasport bil-baħar. Jekk riżultat jidher għoli mhux mistenni, iċċekkja d-dimensjonijiet u r-regola tal-kontijiet bl-użu tagħna [gwida dwar l-ispejjeż tat-trasport marittimu](/mt/articles/why-superbuy-shipping-expensive/).
 
 ## Lista ta' kontroll rapida qabel ma tintalab kwotazzjoni
 
@@ -98,4 +98,4 @@ Iftaħ il - fuljett [il-kalkolatur uffiċjali tat-tbaħħir Superbuy](https://ww
 - [Il-kalkolatur tat-tbaħħir Superbuy](https://www.superbuy.com/en/page/query/freight/) — unitajiet ta' input, limiti tar-rotta u spjegazzjoni tal-piż volumetriku.
 - [Il-kompożizzjoni tat-tariffi Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — il-ħlas internazzjonali bil-baħar u l-kontroll tal-ispejjeż finali.
 
-Il-paġni uffiċjali ġew riveduti fil-21 ta' Ottubru 2026. Il-kejl li jsir huwa eżempju aritmetiku indipendenti, mhux ir-rati attwali tal-ġarr jew il-wegħdiet ta' eliġibbiltà tar-rotta.
+Il-paġni uffiċjali ġew riveduti fit-28 ta' Ottubru 2026. Il-kejl li jsir huwa eżempju aritmetiku indipendenti, mhux ir-rati attwali tal-ġarr jew il-wegħdiet ta' eliġibbiltà tar-rotta.

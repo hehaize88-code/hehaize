@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Poplatky Superbuy: zboží, služby a doprava'
-description: Podívejte se, které náklady Superbuy patří do vašeho rozpočtu, co se může změnit před odesláním a jak sladit platby bez počítání stejný poplatek dvakrát.
+title: 'Poplatky Superbuy: služby, doprava a celkové náklady'
+description: Účtuje si Superbuy poplatek za služby? Zkontrolujte standardní nákup, domácí dodávky, volitelné služby a mezinárodní dopravu před nastavením svého celkového rozpočtu.
 topic: Náklady a rozpočet
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: cs
 ---
 
-Užitečný rozpočet Superbuy odpovídá na dvě otázky: co jste již souhlasili s platem a co se ještě může změnit? Přidání každého čísla do jednoho celkem příliš brzy skrývá tento rozdíl. To může učinit odhadovanou částku lodního rozpočtu vypadat tak jistý jako placenou fakturu položky.
+Podle oficiálního ceníku Superbuy neúčtuje servisní poplatek za standardní nákupy na Taobao, Tmall, JD a 1688. Stále však platíte za zboží, dopravu v Číně, mezinárodní přepravu a zvolené doplňkové služby. Jiné nákupní služby mohou mít vlastní poplatky, proto si ověřte rozpis nákladů své objednávky.
 
-Tato příručka používá jednoduchý záznam nákladů, aby tato rozhodnutí byla viditelná. Jedná se o plánovací metodu, nikoli o aktuální odhad ceny. Vaše vybraná položka, možnosti služby, způsob platby, balík a cíl určují poplatky, které je třeba zkontrolovat na vašem účtu.
+K odhadu celkových nákladů, přidejte zboží, čínské domácí dodávky, příslušné servisní poplatky, mezinárodní dodávky, náklady na platby a cílové poplatky. Udržujte potvrzené platby odděleně od odhadů. Tato příručka ukazuje, jak zaznamenat tyto komponenty bez dvojího započítání stejné platby.
+
+## Jaké náklady na Superbuy byste měli očekávat?
+
+| Náklady | Co úřední informace stanoví | Co musíte potvrdit |
+| --- | --- | --- |
+| Standardní nákup | Žádný servisní poplatek uvedený pro Taobao, Tmall, JD a 1688 | Zda vaše objednávka používá tuto standardní službu |
+| Ostatní nákupy | Různé úpravy mohou nést poplatek | Použitelná služba a zobrazené množství |
+| Vnitrostátní dodávky | Samostatná část nákupu | Doručovací poplatek prodávajícího do skladu |
+| Příplatky za sklad | Volitelné práce mohou přidávat poplatky | Přesný úkol a jeho přijatá cena |
+| Mezinárodní dodávka | Záleží na balíku a trase | Balená měření, způsobilá trasa a vypořádání |
+
+Pro rok 1688 si také přečtěte samostatné podmínky inspekce v [1688 průvodce nákupem](/cs/articles/superbuy-1688-guide/). Pokud je mezinárodní odhad nečekanou částí vašeho rozpočtu, použijte [seznam vysokých nákladů na dopravu](/cs/articles/why-superbuy-shipping-expensive/) k identifikaci vstupů, které potřebují kontrolu.
 
 ## Zkontrolujte celkový počet před porovnáním produktů
 
@@ -98,4 +110,4 @@ Výsledný záznam usnadňuje plánování dalšího nákupu. Ukazuje, kde byly 
 - [Složení poplatku Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — fáze nákladů, kategorie služeb a konečná fakturace.
 - [Superbuy přepravní kalkulačka](https://www.superbuy.com/en/page/query/freight/) — aktuální údaje o odhadu trasy zadané.
 
-Oficiální stránky byly přezkoumány 21. října 2026. Nereprodukujeme nekonzistentní aritmetické příklady nalezené na stránce poplatku; výše uvedený příklad je explicitně fiktivní. Potvrďte skutečné členění poplatků před platbou.
+Oficiální stránky byly přezkoumány dne 28. října 2026. Nereprodukujeme nekonzistentní aritmetické příklady nalezené na stránce poplatku; výše uvedený příklad je explicitně fiktivní. Potvrďte skutečné členění poplatků před platbou.

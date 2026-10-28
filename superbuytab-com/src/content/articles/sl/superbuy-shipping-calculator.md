@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Kalkulator dostave Superbuy: teža in stroški'
-description: Primerjava Ocene ladijskega prevoza Superbuy s pravo težo, dimenzijami in namembnostjo. Pred izbiro poti ali plačila uporabite kontrolni seznam paketov.
+title: 'Kalkulator dostave Superbuy: ocena stroškov paketa'
+description: Izračunajte oceno dostave Superbuy z uporabo destinacije, teže v gramih in velikosti paketov. Primerjava upravičenih poti in razumevanje, zakaj se lahko končna pristojbina spremeni.
 topic: Dostava
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: sl
 ---
 
-Ocena prevoza opisuje paket v okviru sklopa predpostavk. Spremenite namembni kraj, kategorijo postavk, dimenzije ali pot in morda postavljate drugačno vprašanje cen. Uporabna navada je, da se te predpostavke shranijo skupaj z rezultatom, namesto da se pobere enotna cena brez konteksta.
+Za oceno dostave Superbuyja, odpre uradni kalkulator, izbere namembni kraj in skladišče, vnese težo v gramih ter zunanje mere paketa v centimetrih, nato pa izbere dejansko kategorijo postavk. Primerjava upravičenih poti z uporabo teh istih vložkov in shranitev rezultata s datumom in meritvami.
 
-Uradni kalkulator Superbuy zahteva namembnost, skladišče, težo, dimenzije in kategorijo blaga. Ta vodnik pojasnjuje, kako pripraviti navedene informacije, vnesene in primerjati rezultate. Ne objavi univerzalne cene na kilogram ali priporoèite poti, ne da bi vedeli svoj dejanski paket.
+Kalkulator izdela oceno za parcelo, ki jo opišete. Ne določa univerzalne cene na kilogram ali zagotavlja končne pristojbine za dostavo. Če se rezultat zdi nepričakovano visok, preverite dimenzije in pravilo obračunov z uporabo naših [Vodnik za reševanje težav pri stroških dostave](/sl/articles/why-superbuy-shipping-expensive/).
 
 ## Hiter kontrolni seznam pred zahtevo za ponudbo
 
@@ -98,4 +98,4 @@ Odpri [uradni Superbuy poštni kalkulator](https://www.superbuy.com/en/page/quer
 - [Superbuy kalkulator](https://www.superbuy.com/en/page/query/freight/) — vhodne enote, omejitve poti in razlaga prostorninske teže.
 - [Superbuy sestava pristojbin](https://www.superbuy.com/en/page/guide/feecomposition/) — mednarodno plačilo ladijskega prometa in preverjanje končnih stroškov.
 
-Uradne strani so bile pregledane 21. oktobra 2026. Delovne meritve so neodvisni aritmetični primeri, niso sedanje stopnje prevoza ali obljube o upravičenosti poti.
+Uradne strani so bile pregledane 28. oktobra 2026. Delovne meritve so neodvisni aritmetični primeri, niso sedanje stopnje prevoza ali obljube o upravičenosti poti.

@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Calculadora de envios Superbuy: peso e custos'
-description: Compare Superbuy estimativas de envio com o peso, dimensões e destino certos. Use a lista de verificação do pacote antes de escolher uma rota ou pagar.
+title: 'Calculadora Superbuy: como estimar o custo de envio'
+description: Calcule uma estimativa de transporte Superbuy usando destino, peso em gramas e dimensões de parcelas. Compare rotas elegíveis e entenda por que a taxa final pode mudar.
 topic: Envio
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: pt
 ---
 
-Uma estimativa de transporte descreve uma encomenda sob um conjunto de pressupostos. Mude o destino, categoria de item, dimensões ou rota e você pode estar fazendo uma pergunta de preços diferente. O hábito útil é salvar esses pressupostos ao lado do resultado, em vez de recolher um único preço sem contexto.
+Para estimar o envio Superbuy, abra a calculadora oficial, selecione o destino e o armazém, insira o peso em gramas e dimensões externas das parcelas em centímetros, em seguida, escolha a categoria de item real. Comparar as rotas elegíveis usando esses mesmos inputs e salvar o resultado com a data e as medições.
 
-A calculadora oficial da Superbuy pede para destino, armazém, peso, dimensões e categoria de item. Este guia explica como preparar essas informações introduzidas e comparar os resultados. Não publica um preço universal por quilograma ou recomenda uma rota sem conhecer seu pacote real.
+A calculadora produz uma estimativa para a parcela que você descreve. Não estabelece um preço universal por quilograma nem garante a taxa de transporte final. Se um resultado parecer inesperadamente alto, verifique as dimensões e regra de faturamento usando o nosso [Guia de resolução de problemas de custos de envio](/pt/articles/why-superbuy-shipping-expensive/).
 
 ## Checklist rápido antes de solicitar uma citação
 
@@ -98,4 +98,4 @@ Abra [A calculadora oficial de envio Superbuy](https://www.superbuy.com/en/page/
 - [Calculadora de envio Superbuy](https://www.superbuy.com/en/page/query/freight/) — unidades de entrada, limites de rota e explicação do peso volumétrico.
 - [Composição da taxa Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — pagamento de transporte internacional e verificação dos custos finais.
 
-As páginas oficiais foram revistas em 21 de outubro de 2026. As medições realizadas são exemplos aritméticos independentes, não taxas de transporte correntes ou promessas de elegibilidade de rota.
+As páginas oficiais foram revistas em 28 de outubro de 2026. As medições trabalhadas são exemplos aritméticos independentes, não taxas atuais de transporte ou promessas de elegibilidade de rota.

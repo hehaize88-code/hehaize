@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Calculateur de livraison Superbuy : poids et frais'
-description: Comparez les estimations d'expédition Superbuy avec le bon poids, dimensions et destination. Utilisez la liste de contrôle du colis avant de choisir un itinéraire ou de payer.
+title: 'Calculateur Superbuy : estimer les frais de livraison'
+description: Calculez une estimation d'expédition Superbuy en utilisant la destination, le poids en grammes et les dimensions du colis. Comparez les itinéraires admissibles et comprenez pourquoi la redevance finale peut changer.
 topic: Expédition
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: fr
 ---
 
-Une estimation d'expédition décrit un colis selon un ensemble d'hypothèses. Changez la destination, la catégorie d'articles, les dimensions ou l'itinéraire et vous pouvez poser une question de prix différente. L'habitude utile est d'épargner ces hypothèses en même temps que le résultat, plutôt que de percevoir un prix unique sans contexte.
+Pour estimer l'expédition de Superbuy, ouvrez le calculateur officiel, sélectionnez la destination et l'entrepôt, entrez le poids en grammes et les dimensions extérieures du colis en centimètres, puis choisissez la catégorie d'article réelle. Comparez les itinéraires admissibles en utilisant ces mêmes entrées et enregistrez le résultat avec la date et les mesures.
 
-La calculatrice officielle de Superbuy demande la destination, l'entrepôt, le poids, les dimensions et la catégorie d'articles. Ce guide explique comment préparer ces informations saisies et comparer les résultats. Il ne publie pas un prix universel par kilogramme ou recommande un itinéraire sans connaître votre colis réel.
+La calculatrice produit une estimation pour le colis que vous décrivez. Il n'établit pas de prix universel par kilogramme ni ne garantit la taxe d'expédition finale. Si un résultat est inattendument élevé, vérifiez les dimensions et la règle de facturation en utilisant notre [guide de dépannage des frais d'expédition](/fr/articles/why-superbuy-shipping-expensive/).
 
 ## Liste de contrôle rapide avant de demander un devis
 
@@ -55,7 +55,7 @@ Commencez par une base de référence qui reflète votre plan actuel. Changez en
 | Scénario | Reste fixe | Changement | La décision qu'elle aide à répondre |
 | --- | --- | --- | --- |
 | Comparaison des emballages | Contenu et destination | Dimensions extérieures confirmées | Le changement d'emballage vaut-il la peine d'être envisagé? |
-| La parcelle s'est divisée | Destination et contenu total | Le regroupement et les mesures de chaque colis | Est-ce qu'une scission répond à des contraintes pratiques et de route? |
+| La colis s'est divisée | Destination et contenu total | Le regroupement et les mesures de chaque colis | Est-ce qu'une scission répond à des contraintes pratiques et de route? |
 | Comparaison de parcours | Mêmes renseignements complets sur le colis | Itinéraire disponible | Quelles conditions conviennent à cette expédition ? |
 | Mise à jour des estimations | Contenu prévu et emballage | Meilleures données mesurées | Le budget précédent est-il toujours réaliste? |
 
@@ -98,4 +98,4 @@ Ouvrez la [calculateur d'expédition officiel Superbuy](https://www.superbuy.com
 - [Calculateur d'expédition Superbuy](https://www.superbuy.com/en/page/query/freight/) — unités d'entrée, limites de route et explication du poids volumétrique.
 - [Composition des frais de Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — le paiement du transport international et la vérification des coûts finals.
 
-Les pages officielles ont été examinées le 21 octobre 2026. Les mesures effectuées sont des exemples arithmétiques indépendants, et non des taux de transporteur actuels ou des promesses d'admissibilité à la route.
+Les pages officielles ont été examinées le 28 octobre 2026. Les mesures effectuées sont des exemples arithmétiques indépendants, et non les taux actuels des transporteurs ou les promesses d'admissibilité à la route.

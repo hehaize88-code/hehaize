@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Opłaty Superbuy: produkty, usługi i wysyłka'
-description: Zobacz, jakie koszty Superbuy należy do budżetu Państwa, co może zmienić przed wysyłką i jak pogodzić płatności bez policzenia tej samej opłaty dwa razy.
+title: 'Opłaty Superbuy: usługi, wysyłka i całkowity koszt'
+description: Czy Superbuy pobiera opłatę za usługi? Sprawdź standardowe zakupy, dostawę krajową, opcjonalne usługi i międzynarodowe wysyłki przed ustaleniem swojego całkowitego budżetu.
 topic: Koszty i budżetowanie
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: pl
 ---
 
-Przydatny budżet Superbuy odpowiada na dwa pytania: co już zgodziłeś się zapłacić i co jeszcze może się zmienić? Dodawanie każdej liczby do jednego razem zbyt wcześnie ukrywa to rozróżnienie. Może ona sprawić, że szacunkowa kwota budżetu żeglugi będzie równie pewna jak płatna faktura pozycji.
+Zgodnie z oficjalnym cennikiem Superbuy nie pobiera opłaty za standardową usługę zakupu na Taobao, Tmall, JD i 1688. Nadal płacisz za towary, dostawę krajową w Chinach, wysyłkę międzynarodową i wybrane usługi dodatkowe. Inne formy zakupu mogą mieć odrębne opłaty, dlatego sprawdź koszt swojej konkretnej usługi.
 
-Ten przewodnik używa prostego zapisu kosztów, aby te decyzje były widoczne. Jest to metoda planowania, a nie obecna prognoza cen. Wybrana pozycja, opcje usług, metoda płatności, paczka i miejsce przeznaczenia określają opłaty, które należy sprawdzić na Twoim koncie.
+Oszacowanie całkowitych kosztów, dodanie towaru, chińska dostawa krajowa, mające zastosowanie opłaty za usługę, międzynarodowe dostawy, koszty płatności i opłaty za miejsce przeznaczenia. Utrzymuj potwierdzone płatności oddzielone od szacunków. Przewodnik ten pokazuje, jak nagrywać te składniki bez liczenia tej samej płatności dwa razy.
+
+## Które koszty Superbuy?
+
+| Koszt | Co określają oficjalne informacje | To, co musisz potwierdzić |
+| --- | --- | --- |
+| Standardowe zakupy | Brak opłat za usługę wymienioną dla Taobao, Tmall, JD i 1688 | Bez względu na to, czy zamówienie korzysta z tej standardowej usługi |
+| Inne usługi zakupu | Różne rozwiązania mogą nosić opłatę | Stosowna usługa i kwota wyświetlana |
+| Dostawa krajowa | Oddzielna część zakupu | Opłata za dostawę sprzedawcy do magazynu |
+| Dodatki do magazynu | Praca fakultatywna może dodawać opłaty | Dokładne zadanie i akceptowana cena |
+| Dostawa międzynarodowa | Zależy od paczki i trasy | Pomiary pakowane, kwalifikująca się trasa i rozliczenie |
+
+W roku 1688 należy również zapoznać się z oddzielnymi warunkami kontroli w [1688 przewodnik zakupu](/pl/articles/superbuy-1688-guide/). Jeśli międzynarodowy szacunek jest nieoczekiwaną częścią budżetu, skorzystaj [kontrola kosztów wysyłki](/pl/articles/why-superbuy-shipping-expensive/) zidentyfikowanie danych, które wymagają sprawdzenia.
 
 ## Sprawdź łącznie przed porównaniem produktów
 
@@ -98,4 +110,4 @@ Wynika z tego, że kolejny zakup łatwiej będzie zaplanować. Pokazuje, gdzie t
 - [Skład opłat Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — etapy kosztów, kategorie usług i końcowe rozliczenie wysyłki.
 - [Kalkulator wysyłki Superbuy](https://www.superbuy.com/en/page/query/freight/) — Wprowadza się bieżącą informację o szacowaniu trasy.
 
-Oficjalne strony zostały poddane przeglądowi w dniu 21 października 2026 r. Nie rozmnażamy niespójnych przykładów arytmetycznych znalezionych na stronie opłat; przykład powyżej jest wyraźnie fikcyjny. Potwierdzenie rzeczywistego podziału opłat przed dokonaniem płatności.
+Oficjalne strony zostały poddane przeglądowi dnia 28 października 2026 r. Nie powielamy niespójnych przykładów arytmetycznych znalezionych na stronie opłat; przykład powyżej jest wyraźnie fikcyjny. Potwierdzenie rzeczywistego podziału opłat przed dokonaniem płatności.

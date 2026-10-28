@@ -76,3 +76,14 @@ Priority changes: improve the existing three pages with impressions; add origina
 Official references checked: https://www.superbuy.com/en/page/query/freight/ ; https://www.superbuy.com/en/page/guide/feecomposition/ ; https://www.gov.uk/goods-sent-from-abroad/tax-and-duty . The USA guide links CBP official import guidance but asserts no universal current exemption or tariff. It explicitly distinguishes transport estimates from import treatment.
 
 GA4 baseline observed: 12 users / 12 views / 40 events in the available recent period; the traffic acquisition report showed 12 Direct sessions and 1 engaged session in its displayed window. These windows are different and must not be combined into a conversion claim. Add article_to_catalog, product_click, outbound_superbuy and catalogue_search custom events to distinguish reading from catalogue and affiliate intent. No key-event setting or GA4 custom dimension registration is implied by code installation.
+
+
+## 2026-10-28 search-led release
+
+The resumed research record reports GSC for 18–25 October: 435 impressions, 3 clicks, CTR 0.7%, average position 8.8. Its GA4 window reported 78 sessions (73 Direct, 3 organic search), 91.03% landing on the homepage and 11 seconds average engagement. These are inherited observations from the preceding research session, not newly queried metrics or a promised improvement. Fees, UK shipping, Weidian and the shipping calculator were the selected existing-page opportunities.
+
+Changes: improve those four articles in all 24 locales; add broken-link troubleshooting, reasons for expensive shipping and a 1688 buying checklist in all 24 locales. Keep separate intent ownership: the calculator explains inputs; the expensive-shipping guide diagnoses differences; fees covers the complete budget; link troubleshooting distinguishes source-listing and import problems; the 1688 guide covers quantity and inspection limitations. Homepage task links and article-to-category links shorten the route into useful content and products.
+
+Official fee-composition, 1688 service and GOV.UK tax-and-duty pages were reopened on 28 October. Standard fee wording is limited to the named platforms on the official page. The 1688 guide does not promise universal inspection, photos or returns. UK guidance distinguishes Great Britain from Northern Ireland and does not treat the £135 threshold as a universal tax exemption. Illustrative parcel values remain examples, not current prices.
+
+Final editorial review corrected 230 localized section headings and the volumetric-weight explanation in all 23 translated versions, including mistranslations of light weight, return conditions, shared links and parcels. Translation review remains machine-assisted and targeted, not a claim of native-language certification.

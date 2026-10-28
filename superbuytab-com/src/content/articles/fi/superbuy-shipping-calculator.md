@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuyn toimituslaskuri: paino ja kulut'
-description: Vertaa Superbuy-toimituksen arvioita oikeaan painoon, mittoihin ja kohteeseen. Käytä pakettilistaa ennen reitin valintaa tai maksamista.
+title: 'Superbuyn toimituslaskuri: arvioi paketin toimituskulut'
+description: Laske Superbuy-toimitusarvio kohteen, painon ja pakettien mittojen mukaan. Vertaile kelpoisia reittejä ja ymmärrä, miksi lopullinen maksu voi muuttua.
 topic: Lähetys
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: fi
 ---
 
-Toimitusarviossa kuvataan pakettia olettamusten perusteella. Muuta määränpäätä, kohdeluokkaa, mittoja tai reittiä, niin saatat kysyä toisenlaista hinnoittelukysymystä. Hyödyllinen tapa on tallentaa nämä oletukset tuloksen rinnalle eikä kerätä yhtä ainoaa hintaa ilman kontekstia.
+Superbuy-lähetyksen arvioimiseksi avaa virallinen laskin, valitse kohde ja varasto, syötä paino grammoina ja uloimmat pakettimitat senttimetrinä ja valitse sitten varsinainen tuoteluokka. Vertaa näitä samoja syöttöjä ja tallenna tulos ajankohtaan ja mittauksiin.
 
-Superbuy:n virallinen laskin kysyy määränpäätä, varastoa, painoa, mittoja ja tuoteluokkaa. Tässä oppaassa kerrotaan, kuinka syötetyt tiedot valmistetaan ja tuloksia verrataan. Se ei julkaise yleishintaa kilogrammalta tai suosittele reittiä tietämättä varsinaista pakettia.
+Laskin tuottaa arvion kuvaamastasi paketista. Se ei vahvista yleistä hintaa kilogrammalta eikä takaa lopullista toimitusmaksua. Jos tulos näyttää yllättävän korkealta, tarkista mitat ja laskutussääntö [Merenkulkukustannusten vianetsintäopas](/fi/articles/why-superbuy-shipping-expensive/).
 
 ## Nopea tarkistuslista ennen tarjouspyynnön esittämistä
 
@@ -98,4 +98,4 @@ Avaa se [virallinen Superbuy-toimituslaskuri](https://www.superbuy.com/en/page/q
 - [Superbuy-toimituslaskuri](https://www.superbuy.com/en/page/query/freight/) — syöttöyksiköt, reittirajat ja tilavuuspainon selitys.
 - [Superbuy-maksun koostumus](https://www.superbuy.com/en/page/guide/feecomposition/) — kansainvälinen lähetysmaksu ja lopullisten kustannusten tarkastaminen.
 
-Viralliset sivut tarkistettiin 21. lokakuuta 2026. Tehdyt mittaukset ovat itsenäisiä aritmeettisia esimerkkejä, eivät nykyisiä kantajien hintoja tai lupauksia reittikelpoisuudesta.
+Viralliset sivut tarkistettiin 28. lokakuuta 2026. Työstetyt mittaukset ovat itsenäisiä aritmeettisia esimerkkejä, eivät nykyisiä kantajien hintoja tai lupauksia reittikelpoisuudesta.

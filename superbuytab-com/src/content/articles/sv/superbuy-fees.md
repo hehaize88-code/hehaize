@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy-avgifter: produkter, tjänster och frakt'
-description: Se vilka Superbuy kostnader hör hemma i din budget, vad som kan ändras innan frakt och hur man förena betalningar utan att räkna samma avgift två gånger.
+title: 'Superbuy-avgifter: tjänster, frakt och totalkostnad'
+description: Tar Superbuy ut en serviceavgift? Kontrollera standardköp, inhemsk leverans, valfria tjänster och internationell frakt innan du sätter din totala budget.
 topic: Kostnader & budgetering
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: sv
 ---
 
-En användbar Superbuy budget svarar på två frågor: vad har du redan gått med på att betala, och vad kan fortfarande förändras? Att lägga till varje tal i ett totalt för tidigt döljer den skillnaden. Det kan göra en uppskattad frakt budgetbelopp ser lika säker som en betald post faktura.
+Enligt den officiella avgiftssidan tar Superbuy inte ut någon serviceavgift för standardköp från Taobao, Tmall, JD och 1688. Du betalar fortfarande för varorna, eventuell inrikesfrakt i Kina, internationell frakt och valda tilläggstjänster. Andra inköpstjänster kan ha egna avgifter, så kontrollera vad som gäller för din beställning.
 
-Denna guide använder en enkel kostnadspost för att hålla dessa beslut synliga. Det är en planeringsmetod, inte en aktuell prisberäkning. Dina valda objekt, servicealternativ, betalningsmetod, paket och destination bestämmer vilka avgifter som behöver kontrolleras på ditt konto.
+För att uppskatta den totala kostnaden, lägga till varor, kinesisk inhemsk leverans, tillämpliga serviceavgifter, internationell leverans, betalningskostnader och destinationsavgifter. Håll bekräftade betalningar åtskilda från uppskattningar. Denna guide visar hur man registrerar dessa komponenter utan att räkna samma betalning två gånger.
+
+## Vilka Superbuy kostnader bör du förvänta dig?
+
+| Kostnad | Vad den officiella informationen fastställer | Vad du måste bekräfta |
+| --- | --- | --- |
+| Standardinköp | Ingen serviceavgift för Taobao, Tmall, JD och 1688 | Om din beställning använder den standardtjänsten |
+| Övriga inköpstjänster | Olika arrangemang kan medföra en avgift | Tillämplig tjänst och visat belopp |
+| Inhemsk leverans | En separat del av köpet | Säljarens leveransavgift till lagret |
+| Lagertillägg | Valfritt arbete kan lägga till avgifter | Den exakta uppgiften och dess accepterade pris |
+| Internationell leverans | Beror på paket och rutt | Packade mätningar, stödberättigande rutt och avveckling |
+
+För 1688, läs även de separata kontrollvillkoren i [1688 inköpsguide](/sv/articles/superbuy-1688-guide/). -Jag vet inte. Om den internationella uppskattningen är den oväntade delen av din budget, använd [checklista med höga fraktkostnader](/sv/articles/why-superbuy-shipping-expensive/) identifiera de ingångar som behöver kontrolleras.
 
 ## Kontrollera totalsumman innan du jämför produkter
 
@@ -98,4 +110,4 @@ Resultatet gör ditt nästa köp lättare att planera. Det visar var era antagan
 - [Superbuy avgift sammansättning](https://www.superbuy.com/en/page/guide/feecomposition/) — kostnadsfaser, tjänstekategorier och slutfakturering av frakt.
 - [Superbuy fraktkalkylator](https://www.superbuy.com/en/page/query/freight/) — Uppgift om aktuell ruttuppskattning.
 
-Officiella sidor granskades den 21 oktober 2026. Vi återger inte inkonsekventa aritmetiska exempel som finns på avgiftssidan; exemplet ovan är explicit fiktivt. Bekräfta den faktiska avgiftsfördelningen före betalning.
+Officiella sidor granskades den 28 oktober 2026. Vi återger inte inkonsekventa aritmetiska exempel som finns på avgiftssidan; exemplet ovan är explicit fiktivt. Bekräfta den faktiska avgiftsfördelningen före betalning.

@@ -1,17 +1,17 @@
 ---
 slug: superbuy-shipping-calculator
-title: 'Superbuy szállítási kalkulátor: tömeg és költségek'
-description: Hasonlítsa össze a Superbuy szállítási becsléseket a megfelelő súly, méretek és úti cél. Az útvonal kiválasztása vagy a fizetés előtt használja a csomaglistát.
+title: 'Superbuy szállítási kalkulátor: a csomagköltség becslése'
+description: Számítsa ki a Superbuy szállítási becslés segítségével rendeltetési hely, súly gramm és csomagméretek. Hasonlítsa össze a támogatható útvonalakat, és értse meg, hogy a végső díj miért változhat.
 topic: Hajózás
 keyword: superbuy shipping calculator
 order: 4
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: hu
 ---
 
-A szállítási becslés egy csomagot ír le feltételezések alapján. Változtasd meg a célállomást, a termékkategóriát, a méreteket vagy az útvonalat, és lehet, hogy más árképzési kérdést teszel fel. A hasznos szokás az, hogy ezeket a feltételezéseket az eredmény mellett mentsük meg, ahelyett, hogy egyetlen árat gyűjtenénk, összefüggések nélkül.
+A Superbuy szállítás becsléséhez nyissa meg a hivatalos számológépet, válassza ki a célállomást és a raktárat, adja meg a súlyt grammban és a külső csomagméreteket centiméterben, majd válassza ki a tényleges termékkategóriát. Hasonlítsa össze a támogatható útvonalakat ugyanazokkal az inputokkal, és mentse el az eredményt a dátummal és mérésekkel.
 
-A Superbuy hivatalos kalkulátora a célállomást, a raktárt, a súlyt, a méreteket és a termékkategóriát kéri. Ez az útmutató ismerteti, hogyan készítsük el ezeket az információkat és hasonlítsuk össze az eredményeket. Nem tesz közzé univerzális árat kilogrammonként, és nem ajánl egy útvonalat anélkül, hogy ismerné a tényleges csomagot.
+A kalkulátor becslést készít az Ön által leírt csomagról. Nem állapít meg kilogrammonkénti univerzális árat, és nem garantálja a végső szállítási díjat. Ha az eredmény váratlanul magasnak tűnik, ellenőrizze a méreteket és számlázási szabályt a mi [szállítási költség hibaelhárítási útmutató](/hu/articles/why-superbuy-shipping-expensive/).
 
 ## Gyors ellenőrzőlista az idézet kérése előtt
 
@@ -98,4 +98,4 @@ Nyisd ki [hivatalos Superbuy szállítási kalkulátor](https://www.superbuy.com
 - [Superbuy szállítási kalkulátor](https://www.superbuy.com/en/page/query/freight/) — bemeneti egységek, útvonalkorlátok és térfogat-súly magyarázat.
 - [Superbuy díjösszetétel](https://www.superbuy.com/en/page/guide/feecomposition/) — nemzetközi szállítási kifizetések és a végső költségek ellenőrzése.
 
-A hivatalos oldalakat 2026. október 21-én felülvizsgálták. A megdolgozott mérések független számtani példák, nem pedig a jelenlegi szállítási díjak vagy az útvonal támogathatóságának ígéretei.
+A hivatalos oldalakat 2026. október 28-án felülvizsgálták. A megdolgozott mérések független számtani példák, nem pedig a jelenlegi fuvardíjak vagy az útvonal támogathatóságának ígéretei.

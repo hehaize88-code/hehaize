@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Tariffi Superbuy: prodotti, servizzi u kunsinna'
-description: Ara liema spejjeż Superbuy jappartjenu fil-baġit tiegħek, dak li jista 'jinbidel qabel it-tbaħħir u kif tirrikonċilja l-pagamenti mingħajr ma jgħoddu l-istess ħlas darbtejn.
+title: 'Tariffi Superbuy: servizzi, tbaħħir u spiża totali'
+description: Is-Superbuy titlob ħlas għas-servizz? Iċċekkja x-xiri standard, kunsinna domestika, servizzi fakultattivi u trasport bil-baħar internazzjonali qabel ma tistabbilixxi l-baġit totali tiegħek.
 topic: Spejjeż u bbaġitjar
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: mt
 ---
 
-Baġit utli Superbuy iwieġeb żewġ mistoqsijiet: dak li diġà qbilt li tħallas, u dak li għadu jista' jinbidel? Iżżid kull numru f'total wieħed ġlud kmieni wisq dik id-distinzjoni. Tista' tagħmel stima tal-ammont tal-baġit tat-trasport marittimu tidher bħala ċerta bħala fattura mħallsa tal-oġġett.
+Skont il-paġna uffiċjali tat-tariffi, Superbuy ma jitlobx tariffa għas-servizz standard tax-xiri minn Taobao, Tmall, JD u 1688. Xorta trid tħallas għall-prodotti, il-kunsinna domestika fiċ-Ċina, it-tbaħħir internazzjonali u s-servizzi fakultattivi magħżula. Servizzi oħra tax-xiri jista’ jkollhom tariffi differenti; iċċekkja l-ispejjeż tal-ordni tiegħek.
 
-Din il-gwida tuża rekord sempliċi tal-ispejjeż biex iżżomm dawk id-deċiżjonijiet viżibbli. Huwa metodu ta' ppjanar, mhux stima attwali tal-prezz. Oġġetti magħżula tiegħek, għażliet ta 'servizz, metodu ta' ħlas, pakkett u destinazzjoni jiddeterminaw l-imposti li jeħtieġ li jiġu vverifikati fil-kont tiegħek.
+Biex jiġi stmat l-ispiża sħiħa, żid il-merkanzija, il-kunsinna domestika Ċiniża, il-ħlasijiet tas-servizz applikabbli, il-konsenja internazzjonali, l-ispejjeż tal-ħlas u l-imposti tad-destinazzjoni. Żomm il-pagamenti kkonfermati separati mill-istimi. Din il-gwida turi kif tirreġistra dawk il-komponenti mingħajr ma tgħodd l-istess pagament darbtejn.
+
+## Liema spejjeż Superbuy għandek tistenna?
+
+| Spiża | X'tistabbilixxi l-informazzjoni uffiċjali | Dak li għandek tikkonferma |
+| --- | --- | --- |
+| Xiri standard | L-ebda tariffa tas-servizz elenkata għal Taobao, Tmall, JD u 1688 | Jekk l-ordni tiegħek tużax dak is-servizz standard |
+| Servizzi oħrajn ta' xiri | Arranġamenti differenti jistgħu jġorru ħlas | Is-servizz applikabbli u l-ammont muri |
+| Konsenja domestika | Parti separata mix-xiri | L-imposta tal-kunsinna tal-bejjiegħ lill-maħżen |
+| Multi tal-Wastehouse | Xogħol mhux obbligatorju jista' jżid l-imposti | Il-kompitu eżatt u l-prezz aċċettat tiegħu |
+| Konsenja internazzjonali | Jiddependi mill-pakkett u r-rotta | Il-kejl ippakkjat, ir-rotta eliġibbli u s-saldu |
+
+Għal 1688, aqra wkoll il-kundizzjonijiet ta' spezzjoni separati [1688 gwida tax-xiri](/mt/articles/superbuy-1688-guide/). Jekk l-istima internazzjonali hija l-parti mhux mistennija tal-baġit tiegħek, uża [Lista ta' verifika tal-ispejjeż għoljin tat-trasport bil-baħar](/mt/articles/why-superbuy-shipping-expensive/) biex jiġu identifikati l-inputs li jeħtieġu verifika.
 
 ## Iċċekkja t-total qabel tqabbel il-prodotti
 
@@ -98,4 +110,4 @@ Ir-rekord li jirriżulta jagħmel ix-xiri li jmiss tiegħek aktar faċli biex ti
 - [Il-kompożizzjoni tat-tariffi Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — l-istadji tal-ispejjeż, il-kategoriji tas-servizzi u l-kontijiet finali tat-tbaħħir.
 - [Il-kalkolatur tat-tbaħħir Superbuy](https://www.superbuy.com/en/page/query/freight/) — l-informazzjoni attwali dwar l-istima tar-rotta mdaħħla.
 
-Il-paġni uffiċjali ġew riveduti fil-21 ta' Ottubru 2026. Aħna ma jirriproduċux eżempji aritmetiċi inkonsistenti misjuba fuq il-paġna miżata; l-eżempju hawn fuq huwa espliċitament fittizju. Il-kodiċi tal-munita tal-emittent.
+Il-paġni uffiċjali ġew riveduti fit-28 ta' Ottubru 2026. Aħna ma jirriproduċux eżempji aritmetiċi inkonsistenti misjuba fuq il-paġna miżata; l-eżempju hawn fuq huwa espliċitament fittizju. Ikkonferma t-tqassim effettiv tat-tariffi qabel il-ħlas.

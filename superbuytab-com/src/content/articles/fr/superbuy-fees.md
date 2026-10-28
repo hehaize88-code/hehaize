@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Frais Superbuy : produits, services et livraison'
-description: Voyez quels coûts Superbuy appartiennent à votre budget, ce qui peut changer avant l'expédition et comment concilier les paiements sans compter la même charge deux fois.
+title: 'Frais Superbuy : services, livraison et coût total'
+description: Superbuy facture-t-il des frais de service? Vérifiez l'achat standard, la livraison nationale, les services optionnels et l'expédition internationale avant de fixer votre budget total.
 topic: Coûts et budget
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: fr
 ---
 
-Un budget Superbuy utile répond à deux questions : qu'avez-vous déjà accepté de payer et que pouvez-vous encore changer ? Ajouter chaque nombre dans un seul total trop tôt cache cette distinction. Il peut faire une estimation du montant du budget d'expédition regarder aussi certain qu'une facture d'article payé.
+Selon sa grille officielle, Superbuy ne facture pas de frais de service pour les achats standard sur Taobao, Tmall, JD et 1688. Les produits, la livraison intérieure en Chine, le transport international et les services optionnels restent à payer. D’autres prestations d’achat peuvent être facturées : vérifiez les frais applicables à votre commande.
 
-Ce guide utilise un simple relevé des coûts pour garder ces décisions visibles. C'est une méthode de planification, et non une estimation des prix. Votre article sélectionné, les options de service, le mode de paiement, le colis et la destination déterminent les frais qui doivent être vérifiés dans votre compte.
+Pour estimer le coût complet, ajouter les marchandises, la livraison intérieure chinoise, les frais de service applicables, la livraison internationale, les frais de paiement et les frais de destination. Tenir les paiements confirmés distincts des estimations. Ce guide montre comment enregistrer ces composantes sans compter le même paiement deux fois.
+
+## Quels coûts Superbuy devriez-vous attendre?
+
+| Coût | Ce que l'information officielle établit | Ce que vous devez confirmer |
+| --- | --- | --- |
+| Achats standard | Pas de frais de service pour Taobao, Tmall, JD et 1688 | Indique si votre commande utilise ce service standard |
+| Autres services d'achat | Différents arrangements peuvent porter une charge | Le service applicable et le montant affiché |
+| Livraison intérieure | Une partie séparée de l'achat | Frais de livraison du vendeur à l'entrepôt |
+| Entrepôts supplémentaires | Le travail optionnel peut ajouter des charges | La tâche exacte et son prix accepté |
+| Livraisons internationales | Dépend du colis et de l'itinéraire | Mesures emballées, itinéraire admissible et règlement |
+
+Au lieu de 1688, lire également les conditions d'inspection distinctes dans la [1688 guide d'achat](/fr/articles/superbuy-1688-guide/)C'est vrai. Si l'estimation internationale est la partie inattendue de votre budget, utilisez le [Liste de contrôle des frais d'expédition élevés](/fr/articles/why-superbuy-shipping-expensive/) pour identifier les entrées qui doivent être vérifiées.
 
 ## Vérifier le total avant de comparer les produits
 
@@ -98,4 +110,4 @@ Le disque résultant rend votre prochain achat plus facile à planifier. Il mont
 - [Composition des frais de Superbuy](https://www.superbuy.com/en/page/guide/feecomposition/) — les étapes de coûts, les catégories de services et la facturation finale de l'expédition.
 - [Calculateur d'expédition Superbuy](https://www.superbuy.com/en/page/query/freight/) — les informations actuelles sur l'estimation de la route sont entrées.
 
-Les pages officielles ont été examinées le 21 octobre 2026. Nous ne reproduisons pas d'exemples arithmétiques incohérents trouvés sur la page des frais; l'exemple ci-dessus est explicitement fictif. Confirmez la ventilation des frais réels avant le paiement.
+Les pages officielles ont été examinées le 28 octobre 2026. Nous ne reproduisons pas d'exemples arithmétiques incohérents trouvés sur la page des frais; l'exemple ci-dessus est explicitement fictif. Confirmez la ventilation des frais réels avant le paiement.

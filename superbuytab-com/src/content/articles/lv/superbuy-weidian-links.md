@@ -1,18 +1,17 @@
 ---
 slug: superbuy-weidian-links
-title: Kā iepirkties Weidian ar Superbuy un izvēlēties pareizo variantu
-description: Sekojiet Weidian saiti uz Superbuy, pārbaudīt tirgus posteni ID, izvēlēties paredzēto iespēju un saglabāt skaidru uzskaiti par savu pirkumu.
+title: 'Pirkumi Weidian ar Superbuy: saites un varianti'
+description: Izmantojiet Weidian produktu saiti ar Superbuy, pārbaudīt pārdevēju un izvēlēto variantu, veikala noliktavu fotogrāfijas un plānu piegādi. Ietver palīdzību, ja saikne neizdodas.
 topic: Iegādāšanās rokasgrāmata
 keyword: how to buy from weidian with superbuy
 order: 2
-checked: '2026-10-19'
+checked: '2026-10-28'
 lang: lv
 ---
 
+Lai iegādātos no Weidian ar Superbuy, sākt ar sākotnējo produkta URL, atvērt to Superbuy iepirkumu plūsmu un pārbaudīt pārdevēju, krāsu, izmēru un daudzumu. Izmaksāt tikai pēc tam, kad pasūtījuma informācija ir skaidra; pārbaudīt pieejamos noliktavas pierādījumus pirms starptautiskas piegādes.
 
-Pērk no Weidian saraksta caur Superbuy sākas ar URL, bet URL ir tikai daļa no pirkuma. Jums ir nepieciešams arī pareizais pārdevējs, versija, krāsa, izmērs un daudzums. Lielākā daļa kļūdu, no kurām var izvairīties, tiek pieļautas, ja tiek pieņemts, ka viena no šīm detaļām ir nevis pārbaudīta.
-
-Šis ceļvedis seko nodošanai no neatkarīgas ieteikumu lapas līdz iepirkšanās-aģenta pasūtījumam. Tas neapsola, ka katru sarakstu var iegādāties vai nosūtīt. Pieejamība, pārdevēja nosacījumi un jūsu galamērķis vēl ir jāpārbauda, izmantojot Superbuy, pirms jūs apstiprināt.
+Šis ceļvedis seko nodošanai no ieteikumu lapas uz rīkojumu. Ja sākotnējais saraksts nav pieejams, nepareiza vienība atveras vai produkta informācija nespēj ielādēt, izmantojiet [saite problēmu risināšanas rokasgrāmata](/lv/articles/superbuy-links-not-working/) pirmā. Darba URL joprojām ir nepieciešams apstiprinājums pieejamību, pārdevēja nosacījumi un nosūtīšanas tiesības.
 
 ## Atrast sākotnējo tirgus saiti
 
@@ -91,4 +90,4 @@ Kad atgriezīsies [dzīva izklājlapa](/lv/spreadsheet/), traktēt nākamo atras
 - [Superbuy iepirkšanās-aģenta ceļvedis](https://www.superbuy.com/en/page/guide/shoppingagent/) — oficiālā kārtas secība.
 - [Superbuy palīdzības centrs](https://www.superbuy.com/en/page/help/) — iegādāties pieprasījumus un pēcpārdošanas maršrutus.
 
-Saiknes skaidrojumi un salīdzināšanas kontrolsaraksts ir neatkarīgi norādījumi. Oficiālās lapas tika pārskatītas. 19 Oktobris. 2026. Pašreizējā iegādes atbilstība un maksas ir jāapstiprina Superbuy.
+Saiknes skaidrojumi un salīdzināšanas kontrolsaraksti ir neatkarīgi norādījumi. Oficiālās lapas tika pārskatītas 2026. gada 28. oktobrī. Pašreizējā pirkuma atbilstība un maksas ir jāapstiprina Superbuy.

@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy-kosten: producten, diensten en verzending'
-description: Zie welke Superbuy kosten behoren in uw budget, wat kan veranderen voor verzending en hoe te combineren betalingen zonder het tellen van dezelfde kosten twee keer.
+title: 'Superbuy-kosten: service, verzending en totaalprijs'
+description: Rekent Superbuy een service vergoeding? Controleer standaard aankoop, binnenlandse levering, optionele diensten en internationale verzending voordat u uw totale budget.
 topic: Kosten & budgettering
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: nl
 ---
 
-Een nuttig Superbuy budget beantwoordt twee vragen: wat heb je al afgesproken om te betalen, en wat kan er nog veranderen? Het toevoegen van elk getal in één totaal te vroeg verbergt dat onderscheid. Het kan een geschatte verzendkosten bedrag kijken zo zeker als een betaalde factuur.
+Volgens de officiële tariefpagina rekent Superbuy geen servicekosten voor standaardinkopen op Taobao, Tmall, JD en 1688. Je betaalt wel voor de producten, eventuele binnenlandse bezorging in China, internationale verzending en optionele diensten. Voor andere inkoopdiensten kunnen afzonderlijke kosten gelden; controleer daarom de kosten van je eigen bestelling.
 
-Deze gids maakt gebruik van een eenvoudige kosten record om die beslissingen zichtbaar te houden. Het is een planningsmethode, geen huidige prijsraming. Uw geselecteerde item, service opties, betaalmethode, pakket en bestemming bepalen de kosten die in uw account moeten worden gecontroleerd.
+Om de volledige kosten te schatten, voeg merchandise, Chinese binnenlandse levering, toepasselijke servicekosten, internationale levering, betalingskosten en bestemmingskosten. Bevestigde betalingen gescheiden houden van ramingen. Deze gids laat zien hoe je deze componenten kunt registreren zonder dezelfde betaling tweemaal te tellen.
+
+## Welke Superbuy kosten moet u verwachten?
+
+| Kosten | Wat is de officiële informatie? | Wat u moet bevestigen |
+| --- | --- | --- |
+| Standaardaankopen | Geen servicekosten vermeld voor Taobao, Tmall, JD en 1688 | Of uw bestelling die standaardservice gebruikt |
+| Overige aankoopdiensten | Verschillende regelingen kunnen een heffing dragen | De toepasselijke dienst en het getoonde bedrag |
+| Binnenlandse levering | Een apart deel van de aankoop | De verzendkosten van de verkoper naar het magazijn |
+| Extra's voor pakhuizen | Optioneel werk kan kosten toevoegen | De exacte taak en de geaccepteerde prijs |
+| Internationale levering | Afhankelijk van het perceel en de route | Verpakte metingen, in aanmerking komende route en afwikkeling |
+
+Voor 1688, lees ook de afzonderlijke controlevoorwaarden in de [1688 koopgids](/nl/articles/superbuy-1688-guide/). Als de internationale schatting het onverwachte deel van uw budget is, gebruik dan de [hoge verzendkosten checklist](/nl/articles/why-superbuy-shipping-expensive/) om de input te identificeren die gecontroleerd moet worden.
 
 ## Controleer het totaal voordat u producten vergelijkt
 
@@ -98,4 +110,4 @@ De resulterende plaat maakt uw volgende aankoop gemakkelijker te plannen. Het la
 - [Superbuy-kostensamenstelling](https://www.superbuy.com/en/page/guide/feecomposition/) — kostenstadia, servicecategorieën en verzending definitieve facturering.
 - [Superbuy verzendcalculator](https://www.superbuy.com/en/page/query/freight/) — de huidige informatie over de schatting van de route.
 
-Officiële pagina's werden op 21 oktober 2026 opnieuw bekeken. We reproduceren geen inconsistente rekenkundige voorbeelden gevonden op de fee pagina; het voorbeeld hierboven is expliciet fictief. Bevestig de feitelijke verdeling van de vergoeding vóór betaling.
+Officiële pagina's werden herzien op 28 oktober 2026. We reproduceren geen inconsistente rekenkundige voorbeelden gevonden op de fee pagina; het voorbeeld hierboven is expliciet fictief. Bevestig de feitelijke verdeling van de vergoeding vóór betaling.

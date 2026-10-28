@@ -1,5 +1,19 @@
 # Superbuy 独立推荐站：项目记忆与实施规划
 
+## 2026-10-28：全语言搜索内容与浏览入口更新
+
+用户授权结合搜索及访问数据改善内容并部署，明确要求覆盖全部语言。本次仅修改 superbuytab-com，沿用现有 GitHub / Cloudflare Worker、商品只读来源与联盟参数。
+
+- 新增三个完整主题：链接失效排查（superbuy-links-not-working）、高运费原因与检查（why-superbuy-shipping-expensive）、1688 购买指南（superbuy-1688-guide）。每篇有现有 24 种语言的完整独立正文，共新增 72 个文章页面。全站为 17 个主题、408 篇语言文章。
+- 改进费用、运费计算、Weidian 和英国运输四篇的标题、描述和开头答案；费用增加收费范围表，英国运输明确当前计算器提供 UK 目的地，并区分可用路线与运输保证。所有改动同步至 24 种语言。
+- 新文章分别处理故障排查、运费诊断、1688 特有的最低数量与验货限制；通过内链连接原有计算器与购买指南，避免用相似文章重复同一任务。
+- 首页新增目录、费用、计算器、链接排查四个入口；文章末尾增加鞋类和卫衣分类入口；相关推荐纳入新主题。站点地图增为 576 个 URL，文章 lastmod 使用实际 checked 日期；原有文章的发布日期保持不变。
+- 保留商品详情和搜索参数页原有 noindex 策略。没有将大量缺少独立编辑内容的商品语言页全部开放收录。
+- 新增 guide_click 点击事件，仅传语言、来源类型和固定文章 slug；现有 product_click、outbound_superbuy、article_to_catalog、catalogue_search 保留。本次代码更新不代表已将 GA4 事件设为关键事件，也不代表产生了真实购买。
+- 官方依据：Superbuy feecomposition、freight、noviceguide、shopguidelines、shopping1688、shoppingagent，以及 GOV.UK goods-sent-from-abroad/tax-and-duty。政策检查日期 2026-10-28；没有伪造当前运输报价、节省幅度、真实使用评价或卖家库存。
+- 多语言正文采用离线 OPUS-MT / CTranslate2 辅助翻译；搜索标题和费用直接答案单独编辑。核对了数字、来源、内链、段落结构、英文残留和异常扩写，并纠正发现的问题。不是全部语言的独立母语审稿；模型与临时翻译脚本不部署。
+- 正式部署结果及线上验收另行追加。内部搜索和访问统计不作为公开仓库附件保存。
+
 更新日期：2026-10-19（Asia/Shanghai），正式域名部署与公网验收完成
 当前阶段：正式站 https://superbuytab.com 已上线，www与HTTP保留路径/参数308跳转至HTTPS主域名。用户Chrome真实商品与图片正常；GitHub main的superbuytab-com/自动部署到独立正式Worker。预览 https://superbuytab-preview.hehaize88.workers.dev 保留且noindex。GA4已接入且收到实时page_view，资源559470846、衡量ID G-4DQX9MML4J；未修改cnbuycha。正式上线细节见第18节，统计接入见第19节。
 本文件是后续开发的连续记录。已确认要求、事实、建议和未解决事项必须分别维护，不能把建议写成用户已批准的决定。

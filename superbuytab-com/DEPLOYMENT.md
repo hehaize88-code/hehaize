@@ -1,5 +1,11 @@
 # SuperbuyTab 部署参数
 
+## 2026-10-28 发布候选
+
+本次版本新增 3 个主题、更新 4 个现有主题，全部覆盖 24 语言；共 408 篇语言文章、576 个站点地图地址。新增文章和内容实质更新的日期为 2026-10-28，旧文原始发布日期保留。首页任务入口、文章分类链接与 guide_click 事件一起发布。
+
+沿用现有 GitHub main → Cloudflare Workers Builds，项目根目录 superbuytab-com，构建 npm run build，部署 npm run deploy，Node 24，关注路径 superbuytab-com/**。不修改其他项目设置。实际生产版本与上线验证待发布后记录。
+
 正式站已于2026-10-19上线：**https://superbuytab.com**。独立正式Worker为superbuytab-com；superbuytab.com和www.superbuytab.com均已绑定，HTTPS与308跳转已实际验收。正式部署记录见文末；下方保留预览阶段历史。
 
 ## 先发布独立预览

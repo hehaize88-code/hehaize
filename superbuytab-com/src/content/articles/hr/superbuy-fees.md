@@ -1,17 +1,29 @@
 ---
 slug: superbuy-fees
-title: 'Superbuy naknade: proizvodi, usluge i dostava'
-description: Pogledajte koji Superbuy troškovi pripadaju u vaš proračun, što se može promijeniti prije isporuke i kako pomiriti plaćanja bez brojanje istu naknadu dva puta.
+title: 'Naknade Superbuy: usluge, dostava i ukupan trošak'
+description: Da li Superbuy naplaćuje uslugu? Provjerite standardnu kupnju, domaću isporuku, opcijske usluge te međunarodnu dostavu prije postavljanja vašeg ukupnog proračuna.
 topic: Troškovi i proračuni
 keyword: superbuy fees
 order: 3
-checked: '2026-10-21'
+checked: '2026-10-28'
 lang: hr
 ---
 
-Koristan Superbuy proračun odgovara na dva pitanja: što ste već pristali platiti, i što još uvijek može promijeniti? Dodavanje svakog broja u jedan ukupni prerano skriva tu razliku. Može učiniti procijenjeni proračun za dostavu izgleda kao siguran kao plaćena stavka faktura.
+Prema službenom cjeniku Superbuy ne naplaćuje naknadu za standardnu uslugu kupnje na platformama Taobao, Tmall, JD i 1688. I dalje plaćate robu, domaću dostavu u Kini, međunarodnu dostavu i odabrane dodatne usluge. Drugi oblici kupnje mogu imati zasebne naknade, stoga provjerite troškove svoje konkretne narudžbe.
 
-Ovaj vodič koristi jednostavan trošak evidencije kako bi se te odluke vidljive. To je metoda planiranja, a ne trenutna procjena cijene. Vaš odabrani predmet, mogućnosti usluge, način plaćanja, paket i odredište odrediti troškove koje je potrebno provjeriti na vašem računu.
+Kako bi se procijenio potpuni trošak, dodaju roba, kineska domaća isporuka, primjenjive naknade za usluge, međunarodnu dostavu, troškove plaćanja te naknadu odredišta. Održavati potvrđena plaćanja odvojenima od procjena. Ovaj vodič pokazuje kako snimiti te komponente bez brojanja isto plaćanje dva puta.
+
+## Koje troškove Superbuy treba da očekuješ?
+
+| Troškovi | Što utvrđuju službene informacije | Što morate potvrditi |
+| --- | --- | --- |
+| Standardna kupnja | Nema naknade za usluge navedene u Taobau, Tmall, JD i 1688 | Koristi li vaš redoslijed tu standardnu uslugu |
+| Ostale usluge kupnje | Različiti aranžmani mogu nositi naknadu | Primjenjiva usluga i prikazani iznos |
+| Domaća isporuka | Odvojen dio kupnje | Naknada za dostavu prodavatelja skladištu |
+| Dijelovi za skladištenje | Opcijski rad može dodati naknade | Točan zadatak i prihvaćena cijena |
+| Međunarodna isporuka | Ovisi o paketu i ruti | Preparirana mjerenja, prihvatljiva ruta i nagodba |
+
+Za 1688. također pročitajte posebne uvjete pregleda u [1688 vodič za kupnju](/hr/articles/superbuy-1688-guide/). Ako je međunarodna procjena neočekivani dio vašeg proračuna, upotrijebite [visoki popis troškova dostave](/hr/articles/why-superbuy-shipping-expensive/) identificirati unose koji trebaju provjeriti.
 
 ## Provjerite ukupan broj prije usporedbe proizvoda
 
@@ -98,4 +110,4 @@ Rekord koji je rezultat čini vašu sljedeću kupovinu lakšim za planiranje. To
 - [Superbuy kompozicija naknade](https://www.superbuy.com/en/page/guide/feecomposition/) — troškovne faze, kategorije usluga i dostava konačni naplata.
 - [Superbuy kalkulator prijevoza](https://www.superbuy.com/en/page/query/freight/) — Unesene informacije o trenutnoj procjeni rute.
 
-Službene stranice preispitivale su se 21. listopada 2026. Mi ne reproducirati nedosljedan aritmetički primjeri nalazi na stranici naknade; primjer gore je izričito izmišljeno. Potvrditi stvarnu razgradnju naknade prije plaćanja.
+Službene stranice pregledane su 28. listopada 2026. Mi ne reproducirati nedosljedan aritmetički primjeri nalaze na stranici naknade; primjer gore je izričito izmišljeno. Potvrditi stvarnu razgradnju naknade prije plaćanja.

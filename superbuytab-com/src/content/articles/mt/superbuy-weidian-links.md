@@ -1,18 +1,17 @@
 ---
 slug: superbuy-weidian-links
-title: Kif tixtri minn Weidian permezz ta’ Superbuy u tagħżel il-varjant it-tajjeb
-description: Segwi l-link Weidian f'Superbuy, ivverifika l-oġġett tas-suq ID, agħżel l-għażla maħsuba u żomm rekord ċar tax-xiri tiegħek.
+title: 'Kif tixtri minn Weidian ma’ Superbuy: links u għażliet'
+description: Uża rabta tal-prodott Weidian ma Superbuy, jivverifika l-bejjiegħ u varjant magħżula, check ritratti maħżen u tbaħħir pjan. Jinkludi għajnuna meta rabta tfalli.
 topic: Gwida tax-xiri
 keyword: how to buy from weidian with superbuy
 order: 2
-checked: '2026-10-19'
+checked: '2026-10-28'
 lang: mt
 ---
 
+Biex jixtru minn Weidian ma Superbuy, ibda bil-prodott oriġinali URL, tiftaħ fil-fluss xiri Superbuy u jivverifika l-bejjiegħ, kulur, daqs u kwantità. Pay only after the order details are clear; review the available maħżen evidence before arrangering international delivery.
 
-Xiri minn Weidian elenkar permezz Superbuy jibda bi URL, iżda l-URL huwa biss parti mix-xiri. Għandek bżonn ukoll il-bejjiegħ korretta, verżjoni, kulur, daqs u kwantità. L-aktar żbalji li jistgħu jiġu evitati jseħħu meta wieħed minn dawk id-dettalji jiġi preżunt minflok jiġi ċċekkjat.
-
-Din il-gwida ssegwi t-trasferiment minn paġna ta' rakkomandazzjoni indipendenti għal ordni ta' xiri b'aġent. Ma twiegħedx li kull elenkar jista' jinxtara jew jintbagħat bil-baħar. Id-disponibbiltà, il-kundizzjonijiet tal-bejjiegħ u d-destinazzjoni tiegħek għad iridu jiġu ċċekkjati permezz ta' Superbuy qabel ma timpenja ruħek.
+Din il-gwida ssegwi t-trasferiment minn paġna ta' rakkomandazzjoni għal ordni. Jekk l-elenkar oriġinali ma jkunx disponibbli, l-oġġett żbaljat jiftaħ jew id-dettalji tal-prodott jonqsu milli jgħabbu, [il-konnessjoni tal-gwida għar-rintraċċar tal-problemi](/mt/articles/superbuy-links-not-working/) l-ewwel. URL tax-xogħol għadu jeħtieġ konferma tad-disponibbiltà, il-kundizzjonijiet tal-bejjiegħ u l-eliġibbiltà tat-tbaħħir.
 
 ## Sib il-link oriġinali tas-suq
 
@@ -91,4 +90,4 @@ Meta inti tmur lura għall- [spreadsheet ħajja](/mt/spreadsheet/), jittrattaw l
 - [Gwida dwar l-aġenti tax-xiri Superbuy](https://www.superbuy.com/en/page/guide/shoppingagent/) — is-sekwenza tal-ordni uffiċjali.
 - [Superbuy Għajnuna Center](https://www.superbuy.com/en/page/help/) — xiri ta' inkjesti u rotot ta' wara l-bejgħ.
 
-L-ispjegazzjonijiet tal-link u l-lista ta' kontroll tat-tqabbil huma gwida indipendenti. Il-paġni uffiċjali ġew riveduti fiż-19 Ottubru 2026. L-eliġibbiltà tax-xiri kurrenti u l-imposti għandhom jiġu kkonfermati f'Superbuy.
+L-ispjegazzjonijiet tal-link u l-lista ta' kontroll tat-tqabbil huma gwida indipendenti. Il-paġni uffiċjali ġew riveduti fit-28 ta' Ottubru 2026. Eliġibbiltà tax-xiri kurrenti u l-imposti għandhom jiġu kkonfermati fis-Superbuy.
