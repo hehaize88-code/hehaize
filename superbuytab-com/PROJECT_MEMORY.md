@@ -547,3 +547,13 @@ GitHub提交完成：c3d2fb75635131a921456adad4349a9a7b922851，基于11b55e573c
 - 研究依据和统计窗口记录在 CONTENT_RESEARCH.md。低样本基线不能用于承诺点击增幅。发布后的实际公开页面验收另行记录。
 
 正式发布确认：提交 fdf35410e8d38325b56587f71d1af6db6a5d62b6，Cloudflare 构建 d28a062b-df7e-461a-bfdb-7fae2fd40b5a / 版本 eb3f523d-f5db-4d3b-947d-8b8b34634133 成功。Chrome 正式站显示新内容，390px 手机布局、真实商品图片、canonical / hreflang 与新文章目录折叠正常。仅在专题推荐区排除上游误放入鞋类的 Wedding flower arch，不修改源商品库。
+
+
+## 2026-10-28 production deployment and verification
+
+- Content release: `e262524a06cbf561cfcb81d63d7ee86c9a4277bd`; production repair: `1692567cc0a99874fa14e86d3c019bceb838445d`. Cloudflare build `46d24f47-65d7-431d-b025-48ca10882159` succeeded; active version `b9285f6e-d5b9-4cd3-87b5-b768fc35e4d2`, deployed to superbuytab.com and www.superbuytab.com at 2026-10-28 11:36 Asia/Shanghai.
+- The first build stopped at npm ci because npm 10 required an Astro-local esbuild peer entry omitted by the prior npm 11 lockfile. Regenerated the lockfile with npm 10.9.2; npm 10 clean installation, build and all checks passed. No package.json version or site configuration changes were needed.
+- Public verification passed every one of the 576 sitemap URLs: HTTP 200, correct language, self canonical, 25 hreflang entries and indexability. All 408 article bodies and schemas exactly matched the validated local build. All 24 article hubs show 17 topics. Four homepage task links, 48 category pages and 26 FAQ answers per locale were verified. www preserves path/query through HTTP 308; a missing article returns 404 and noindex.
+- Real Chrome inspection confirmed the updated article hub. At 390px, English and French 1688 articles have no horizontal overflow, a collapsed contents panel and working same-article language switching. Evidence: docs/release-mobile-20261028.png.
+- Google Search Console confirmed successful re-submission of https://superbuytab.com/sitemap.xml on 2026-10-28. The report still displayed its previous 504 discovered URLs immediately after submission; this is not a claim that all 576 URLs have been indexed.
+- Final scope: 3 new topics × 24 locales = 72 new articles; 4 revised topics × 24 locales = 96 updated articles. Total 17 topics / 408 complete article files. Translation is machine-assisted with structural, numeric, link and targeted semantic review, not independent native-speaker certification.
