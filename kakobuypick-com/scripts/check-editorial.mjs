@@ -21,7 +21,7 @@ for(const lang of locales){
  if(lang!=='en')checkTranslatedSentences(data,source,lang);
  if(lang!=='en')assert.notEqual(data.ui.sources,source.ui.sources,`${lang} untranslated source heading`);
  if(lang==='ga')assert.ok(/(cigireacht|iniúch)/i.test(data.ui.sourceLabels.inspection), 'Irish inspection label must describe inspection, not an invented regulation');
- assert.equal(data.articles.length,19,`${lang} articles`);assert.equal(data.faq.length,26,`${lang} FAQ`);
+ assert.equal(data.articles.length,22,`${lang} articles`);assert.equal(data.faq.length,26,`${lang} FAQ`);
  assert.equal(data.guide.sections.length,6);
  assert.deepEqual(data.articles.map(a=>a.slug),source.articles.map(a=>a.slug));
  for(let i=0;i<source.articles.length;i++){
@@ -58,7 +58,7 @@ for(const lang of locales){
   const schema=JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);
   assert.ok(schema['@graph'].find(x=>x['@type']==='BreadcrumbList'));
   if(path==='/faq/'){assert.equal(document.querySelectorAll('.faq-answer').length,26);assert.equal(schema['@graph'].find(x=>x['@type']==='FAQPage').mainEntity.length,26);}
-  if(path==='/articles/')assert.equal(document.querySelectorAll('main .article-card').length,19);
+  if(path==='/articles/')assert.equal(document.querySelectorAll('main .article-card').length,22);
   if(path.startsWith('/articles/')&&path!=='/articles/'){
    const article=data.articles.find(a=>path.includes(a.slug));assert.equal(document.querySelector('.knowledge-heading h1').textContent,article.title);
    assert.equal(schema['@graph'].find(x=>x['@type']==='Article').inLanguage,lang);
@@ -72,6 +72,9 @@ for(const lang of locales){
    }
    if(['kakobuy-returns-refunds','kakobuy-warehouse-storage','kakobuy-sizing-guide','kakobuy-shipping-time-tracking'].includes(article.slug))assert.ok(document.querySelector('#section-1').nextElementSibling.classList.contains('article-table'));
    assert.ok(document.querySelector(`.article-next a[href="${route(lang,'/spreadsheet/')}"]`));
+   const sourceLinks=[...document.querySelectorAll('.source-panel li a')];
+   assert.equal(sourceLinks.length,article.sources.length,`${url} source link count`);
+   article.sources.forEach((id,index)=>{assert.ok(/^https:\/\//.test(sourceLinks[index].href),`${url} missing source ${id}`);assert.ok(sourceLinks[index].textContent.includes(data.ui.sourceLabels[id]),`${url} untranslated source ${id}`);});
    const articleSchema=schema['@graph'].find(x=>x['@type']==='Article');
    assert.equal(articleSchema.datePublished,article.publishedOn);assert.equal(articleSchema.dateModified,article.updatedOn);
    assert.equal(document.querySelector('title').textContent,article.seoTitle);
@@ -83,7 +86,7 @@ for(const lang of locales){
   assert.ok(document.querySelector('a[href="https://kakobuy.com/register"]'));
   checks++;
  }
- console.log(`PASS ${lang}: 19 articles, 26 FAQs, 6 guide steps, localized routes/schema/links`);
+ console.log(`PASS ${lang}: 22 articles, 26 FAQs, 6 guide steps, localized routes/schema/links`);
 }
 const missing=await worker.fetch(new Request('https://kakobuypick.com/articles/not-an-article/'),{},{});assert.equal(missing.status,404);
 const redirect=await worker.fetch(new Request('https://www.kakobuypick.com/de/articles/kakobuy-qc-photos/?ref=check'),{},{});assert.equal(redirect.status,308);assert.equal(redirect.headers.get('location'),'https://kakobuypick.com/de/articles/kakobuy-qc-photos/?ref=check');

@@ -7,49 +7,62 @@ import ArticleCard from '../components/ArticleCard.astro';
 import {contentFor} from '../lib/editorial';
 import {languages,translate,categoryNames,localized} from '../lib/i18n';
 import {editorial} from '../lib/copy';
-import {home,listing,detail,slugs,LOGO,FAVICON,REGISTER} from '../lib/catalog';
+import {home,listing,detail,CatalogError,slugs,LOGO,FAVICON,REGISTER} from '../lib/catalog';
 import '../styles/global.css';
 import '../styles/mobile.css';
 const parts=Astro.url.pathname.split('/').filter(Boolean);
 const lang=languages.some(([code])=>code===parts[0]) ? parts.shift()! : 'en';
 const localPath='/'+parts.join('/')+(parts.length&&!parts.at(-1)!.includes('.')?'/':'');
 const t=translate(lang), c=editorial(lang), names=categoryNames(lang), e=contentFor(lang);
-const query=(Astro.url.searchParams.get('q')||'').slice(0,120);
+const query=(Astro.url.searchParams.get('q')||'').trim().slice(0,120);
 const sort=['new','click','price'].includes(Astro.url.searchParams.get('sort')||'')?Astro.url.searchParams.get('sort')!:'new';
-const page=Math.max(1,Math.min(500,parseInt(Astro.url.searchParams.get('page')||'1')||1));
+const rawPage=Astro.url.searchParams.get('page')||'1';
+const validPage=/^[1-9]\d*$/.test(rawPage)&&Number(rawPage)<=1500;
+const page=validPage?Number(rawPage):1;
 const category=parts.length===2&&parts[0]==='category'&&slugs.includes(parts[1])?parts[1]:'';
 const isHome=parts.length===0, isProduct=parts.length===3&&parts[0]==='products'&&slugs.includes(parts[1])&&/^\d+\.html$/.test(parts[2]), isVisual=parts.length===1&&parts[0]==='image-search';
 const isGuide=parts.length===1&&parts[0]==='guide',isFAQ=parts.length===1&&parts[0]==='faq',isArticles=parts.length===1&&parts[0]==='articles';
 const article=parts.length===2&&parts[0]==='articles'?e.articles.find(a=>a.slug===parts[1]):undefined;
 const isKnowledge=isGuide||isFAQ||isArticles||!!article;
 const isCatalog=isHome||(parts.length===1&&parts[0]==='spreadsheet')||!!category;
+const isListing=isCatalog&&!isHome;
 const known=isCatalog||isProduct||isVisual||isKnowledge;
+if(isListing&&validPage){
+  const clean=new URL(Astro.url);
+  if(query)clean.searchParams.set('q',query);else clean.searchParams.delete('q');
+  if(sort==='new')clean.searchParams.delete('sort');else clean.searchParams.set('sort',sort);
+  if(page===1)clean.searchParams.delete('page');else clean.searchParams.set('page',String(page));
+  if(clean.search!==Astro.url.search)return Astro.redirect(clean.pathname+clean.search,301);
+}
 if(!known) Astro.response.status=404;
 let products:any[]=[],categories:any[]=[],total=0,pages=1,product:any=null,error=false,debug='';
 try {
+  if(isListing&&!validPage)throw new CatalogError('Invalid catalogue page',404);
   if(isHome){const data=await home();products=data.products.slice(0,12);categories=data.categories;total=categories.reduce((sum,item)=>sum+item.count,0);}
   else if(isProduct) product=await detail('/'+parts.slice(1).join('/'));
-  else if(isCatalog){const data=await listing(category,query,sort,page);({products,total,pages}=data);}
-} catch(e){error=true;Astro.response.status=503;debug=e instanceof Error?e.message:'error';console.error('CnBuyCha request unavailable:',debug);}
-const filtered=['q','sort','page'].some(key=>Astro.url.searchParams.has(key));
+  else if(isCatalog){const data=await listing(category,query,sort,page);({products,total,pages}=data);if(page>pages)throw new CatalogError('Catalogue page not found',404);}
+} catch(e){error=true;Astro.response.status=e instanceof CatalogError?e.status:503;Astro.response.headers.set('Cache-Control','no-store');if(Astro.response.status===503)Astro.response.headers.set('Retry-After','300');debug=e instanceof Error?e.message:'error';console.error('CnBuyCha request unavailable:',debug);}
+const filtered=!!query||sort!=='new'||(!isListing&&['q','sort','page'].some(key=>Astro.url.searchParams.has(key)));
 const indexable=known&&!error&&!isVisual&&!filtered&&Astro.response.status===200;
 const robots=indexable?'index,follow,max-image-preview:large':'noindex,follow';
 Astro.response.headers.set('X-Robots-Tag',robots);
 const title=article?.title||(isGuide?e.ui.guideTitle:isFAQ?e.ui.faqTitle:isArticles?e.ui.articlesTitle:'')||product?.title|| (isVisual?t.visual:category?names[slugs.indexOf(category)]:query?`${t.search}: ${query}`:'Kakobuy Spreadsheet');
 const description=article?.description||(isGuide?e.ui.guideIntro:isFAQ?e.ui.faqIntro:isArticles?e.ui.articlesIntro:category?e.seo.categoryDescriptions[category]:isHome?e.seo.homeDescription:isCatalog?e.seo.spreadsheetDescription:c.intro);
-const seoTitle=article?.seoTitle||(category?`${names[slugs.indexOf(category)]} · Kakobuy`:isHome?e.seo.homeTitle:isCatalog&&!query?e.seo.spreadsheetTitle:title);
+const baseSeoTitle=article?.seoTitle||(category?`${names[slugs.indexOf(category)]} · Kakobuy`:isHome?e.seo.homeTitle:isCatalog&&!query?e.seo.spreadsheetTitle:title);
+const seoTitle=baseSeoTitle+(isListing&&page>1&&!error?` · ${page}/${pages}`:'');
 const categoryArticles=category?(category==='hoodies-sweaters'?['kakobuy-hoodie-finds','kakobuy-sizing-guide']:category==='jersey'?['kakobuy-football-jerseys','kakobuy-sizing-guide']:category==='jackets'?['kakobuy-jacket-finds','kakobuy-sizing-guide']:category==='shoes'?['kakobuy-sneaker-finds','kakobuy-sizing-guide']:['electronics','other-stuff','accessories'].includes(category)?['kakobuy-product-links','kakobuy-fees-payment']:['kakobuy-sizing-guide','kakobuy-product-links']).map(slug=>e.articles.find(a=>a.slug===slug)).filter(Boolean):[];
 const origin=Astro.site!.origin;
 const route=(path:string)=>localized(lang,path);
-const state=(changes:Record<string,string|number>)=>{const p=new URLSearchParams(Astro.url.search);for(const [key,value] of Object.entries(changes)){if(value==='')p.delete(key);else p.set(key,String(value));}return p.size?'?'+p.toString():'';};
-const canonical=origin+route(localPath);
+const state=(changes:Record<string,string|number>)=>{const p=new URLSearchParams(Astro.url.search);for(const [key,value] of Object.entries(changes)){if(value==='')p.delete(key);else p.set(key,String(value));}if(!p.get('q'))p.delete('q');if(p.get('sort')==='new')p.delete('sort');if(p.get('page')==='1')p.delete('page');return p.size?'?'+p.toString():'';};
+const canonicalQuery=isListing&&!filtered&&validPage&&page>1?`?page=${page}`:'';
+const canonical=origin+route(localPath)+canonicalQuery;
 const breadcrumb={ '@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:t.home,item:origin+route('/')},...(article?[{'@type':'ListItem',position:2,name:e.ui.articles,item:origin+route('/articles/')}]:[]),{'@type':'ListItem',position:article?3:2,name:title,item:canonical}]};
-const schema=isKnowledge?{'@context':'https://schema.org','@graph':[breadcrumb,article?{'@type':'Article',headline:article.title,description:article.description,inLanguage:lang,datePublished:article.publishedOn,dateModified:article.updatedOn,author:{'@type':'Organization',name:e.ui.author},publisher:{'@type':'Organization',name:'Kakobuy Pick',url:origin},mainEntityOfPage:canonical}:isFAQ?{'@type':'FAQPage',inLanguage:lang,mainEntity:e.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}:{'@type':isArticles?'CollectionPage':'WebPage',name:title,description,inLanguage:lang,url:canonical}]}:null;
+const schema=isKnowledge?{'@context':'https://schema.org','@graph':[breadcrumb,article?{'@type':'Article',headline:article.title,description:article.description,inLanguage:lang,datePublished:article.publishedOn,dateModified:article.updatedOn,author:{'@type':'Organization',name:e.ui.author},publisher:{'@type':'Organization',name:'Kakobuy Pick',url:origin},mainEntityOfPage:canonical}:isFAQ?{'@type':'FAQPage',inLanguage:lang,mainEntity:e.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}:{'@type':isArticles?'CollectionPage':'WebPage',name:title,description,inLanguage:lang,url:canonical}]}:isListing&&!error?{'@context':'https://schema.org','@graph':[breadcrumb,{'@type':'CollectionPage',name:seoTitle,description,inLanguage:lang,url:canonical,mainEntity:{'@type':'ItemList',itemListElement:products.map((p,i)=>({'@type':'ListItem',position:(page-1)*20+i+1,name:p.title,url:origin+route('/products'+p.path)}))}}]}:null;
 const icons=['shoe','shirt','shirt','jacket','pants','hat','bag','shirt','device','box','shirt'];
 ---
 <!doctype html>
 <html lang={lang}>
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{article?seoTitle:`${seoTitle} · Kakobuy Pick`}</title><meta name="description" content={description}/><meta property="og:title" content={seoTitle}/><meta property="og:description" content={description}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/>{schema&&<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/> }<meta name="robots" content={robots}/><meta name="theme-color" content="#fc3358"/><link rel="icon" href={FAVICON}/><link rel="canonical" href={origin+route(localPath)}/>{languages.map(([code])=><link rel="alternate" hreflang={code} href={origin+localized(code,localPath)}/>)}<link rel="alternate" hreflang="x-default" href={origin+localPath}/><link rel="preconnect" href="https://cnbuycha.com"/><link rel="preconnect" href="https://nstatic.kakobuy.com"/><Analytics/></head>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{article?seoTitle:`${seoTitle} · Kakobuy Pick`}</title><meta name="description" content={description}/><meta property="og:title" content={seoTitle}/><meta property="og:description" content={description}/><meta property="og:type" content={article?'article':'website'}/><meta property="og:url" content={canonical}/>{schema&&<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/> }<meta name="robots" content={robots}/><meta name="theme-color" content="#fc3358"/><link rel="icon" href={FAVICON}/><link rel="canonical" href={canonical}/>{languages.map(([code])=><link rel="alternate" hreflang={code} href={origin+localized(code,localPath)+canonicalQuery}/>)}<link rel="alternate" hreflang="x-default" href={origin+localPath+canonicalQuery}/><link rel="preconnect" href="https://cnbuycha.com"/><link rel="preconnect" href="https://nstatic.kakobuy.com"/><Analytics/></head>
 <body>
 <header class="header"><div class="header-inner">
   <a href={route('/')} class="brand" aria-label={`Kakobuy ${t.home}`}><img src={LOGO} alt="Kakobuy" width="143" height="36"/><span>Spreadsheet</span></a>
@@ -63,6 +76,7 @@ const icons=['shoe','shirt','shirt','jacket','pants','hat','bag','shirt','device
   <details class="category-menu mobile-disclosure" data-mobile-collapse open><summary><span>{t.categories}</span><span class="current-category">{category?names[slugs.indexOf(category)]:t.all}</span></summary><nav class="category-strip" aria-label={t.categories}><a href={route('/spreadsheet/')+state({page:'',q:query})} class:list={{selected:!category}}><Icon name="grid" size={18}/>{t.all}</a>{slugs.map((slug,i)=><a class:list={{selected:category===slug}} href={route(`/category/${slug}/`)+state({page:''})}><Icon name={icons[i]} size={18}/>{names[i]}</a>)}</nav></details>
   <div class="section-heading"><div><span class="eyebrow muted">{isHome?t.catalog:t.browse}</span><h2>{isHome?t.latest:query?`“${query}”`:category?names[slugs.indexOf(category)]:t.all}</h2></div>{isHome?<a class="text-link" href={route('/spreadsheet/')}>{t.all}<Icon name="arrow" size={18}/></a>:<form class="sort-form" method="get"><input type="hidden" name="q" value={query}/><span class="results">{total.toLocaleString(lang)} {t.results}</span><select name="sort" aria-label={t.priceSort} onchange="this.form.requestSubmit()"><option value="new" selected={sort==='new'}>{t.latest}</option><option value="click" selected={sort==='click'}>{t.popular}</option><option value="price" selected={sort==='price'}>{t.priceSort}</option></select><noscript><button type="submit">{t.search}</button></noscript></form>}</div>
   {error?<div class="empty-state"><Icon name="box" size={32}/><h2>{t.unavailable}</h2><p>{c.error}</p><a class="button primary" href={route(localPath)+Astro.url.search}>{t.retry}</a></div>:products.length?<div class="product-grid">{products.map(p=><Card product={p} t={t} names={names} lang={lang}/>)}</div>:<div class="empty-state"><Icon name="search" size={32}/><h2>{t.empty}</h2><a class="button outline" href={route('/spreadsheet/')}>{t.clear}</a></div>}
+  {category&&page===1&&!filtered&&!error&&e.seo.categoryAdvice[category]&&<aside class="category-advice"><h2>{e.seo.categoryAdvice[category].heading}</h2><p>{e.seo.categoryAdvice[category].text}</p></aside>}
   {!isHome&&pages>1&&!error&&<nav class="pagination" aria-label={t.browse}>{page>1?<a class="button outline" href={route(localPath)+state({page:page-1})}>← {t.previous}</a>:<span/>}<span>{page} / {pages}</span>{page<pages?<a class="button outline" href={route(localPath)+state({page:page+1})}>{t.next} →</a>:<span/>}</nav>}
   {isHome&&!error&&<div class="more"><a class="button outline" href={route('/spreadsheet/')}>{t.all}<Icon name="arrow" size={18}/></a></div>}
 </section>}

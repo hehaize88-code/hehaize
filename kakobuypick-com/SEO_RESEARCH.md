@@ -86,3 +86,22 @@ The owner authorized implementation and publication after the search-engine and 
 Published-copy scope: update the five existing article URLs and add `kakobuy-hoodie-finds`, `kakobuy-poland-guide` and `kakobuy-football-jerseys` in every existing language. Do not add unverified branded product recommendations, carrier prices, customs rates, stock claims or authenticity claims. Clarify that the conditional 7–15-day refund reference is sourced to the cancellation/refund help page (`https://kakobuy.com/service/help/question?id=87`); the return-eligibility conditions remain sourced separately to page 51.
 
 Use the existing key click events to distinguish catalogue browsing from outbound purchase intent. Do not label an outbound click as a completed sale. Search-console and analytics report rows, traffic metrics and private screenshots are not included in this public repository.
+
+
+## Source and editorial review — 2026-10-31
+
+Keyword intent informed this release: coupon/discount-code questions need eligibility and expiry checks; W2C/QC/GL/RL searches need definitions tied to verifiable order evidence; USA shipping searches need a parcel comparison method without invented rates or tax claims. Existing refund, sizing, storage, weight, tracking and hoodie guides address the corresponding practical questions more directly. Competitor discovery pages reviewed included kakobuyspreadsheet.gg, kbsheets.com, kakobuydaily.com and kakobuylab.com; their listings and promotional claims are not copied as verified facts.
+
+Primary pages rechecked:
+
+- https://item2.kakobuy.com/tipdetail?id=1 — historical coupon announcement dated September 22, 2024. It is not evidence of an offer valid today; no evergreen working code is asserted.
+- https://www.kakobuy.com/service/help/question?id=91 — seller size standards differ; compare the exact chart and measure both feet.
+- https://www.kakobuy.com/service/help/question?id=51 — conditional warehouse return window, seller agreement, item condition and order-specific costs.
+- https://www.kakobuy.com/service/help/question?id=87 — separate cancellation/return stages; the 7–15-day warehouse-return reference depends on seller confirmation and is not a bank arrival guarantee.
+- https://www.kakobuy.com/service/help/question?id=104 — available-balance withdrawal follows a separate original-payment-channel process.
+- https://www.kakobuy.com/service/help/question?id=95 — visual inspection has limits; community GL/RL opinions are not authenticity certification.
+- https://kakobuy.com/tools/estimate and https://kakobuy.com/service/help/question?id=26&cid=51 — live route inputs and volumetric-weight method. USA examples are explicitly hypothetical, not current freight quotes.
+
+The current indexing policy supersedes historical blanket noindex for pagination: real unfiltered catalogue pages are individually canonical; search and sorting remain noindex. This improves discoverability but does not guarantee indexing, rankings or traffic recovery. Private account analytics are not recorded in this public repository.
+
+Google pagination reference: https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading — separate page URLs and self-referencing canonicals support discovery beyond the first catalogue page.

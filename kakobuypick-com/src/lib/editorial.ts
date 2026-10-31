@@ -23,6 +23,8 @@ export const sourceURLs: Record<string,string> = {
   withdrawal:'https://www.kakobuy.com/service/help/question?id=104',
   forwardingInspection:'https://www.kakobuy.com/service/help/question?id=95',
   euJune:'https://www.kakobuy.com/tipdetail?id=51',
+  couponAnnouncement:'https://item2.kakobuy.com/tipdetail?id=1',
+  sizing:'https://www.kakobuy.com/service/help/question?id=91',
   euRoutes:'https://item2.kakobuy.com/tipdetail?id=52'
 };
 export function contentFor(lang: string): EditorialContent {
