@@ -4,12 +4,12 @@ const directory='src/content/editorial';
 const files=(await fs.readdir(directory)).filter(file=>file.endsWith('.json'));
 const reference=JSON.parse(await fs.readFile(directory+'/en.json','utf8'));
 const slugs=reference.articles.map(article=>article.slug);
-assert.equal(slugs.length,14,'expected article count');
+assert.equal(slugs.length,17,'expected article count');
 assert.equal(new Set(slugs).size,slugs.length,'unique article slugs');
 const words=text=>text.trim().split(/\s+/).length;
 const sources=value=>value.sources.map(source=>source.url).sort();
 function localizedText(value,english,key=''){
- if(['slug','related','url','primaryKeyword','secondaryKeywords','format','published','modified'].includes(key))return;
+ if(['slug','related','url','primaryKeyword','secondaryKeywords','format','published','modified','catalogCategory'].includes(key))return;
  if(Array.isArray(value)&&Array.isArray(english)){value.forEach((item,i)=>localizedText(item,english[i],key));return;}
  if(value&&english&&typeof value==='object'&&typeof english==='object'){
   for(const name of Object.keys(english))if(name in value)localizedText(value[name],english[name],name);
@@ -42,7 +42,23 @@ for(const file of files){
    assert.equal(article.takeaways.length,3,'takeaways');
    assert.deepEqual(sources(article),sources(english),'article sources');
    assert.deepEqual(article.related,english.related,'related slugs');
+   assert.equal(article.catalogCategory,english.catalogCategory,'category destination parity');
    assert(article.related.every(slug=>slugs.includes(slug)&&slug!==article.slug),'valid related routes');
+   assert.equal((article.tables||[]).length,(english.tables||[]).length,'comparison table parity');
+   (article.tables||[]).forEach((table,j)=>{
+    const referenceTable=english.tables[j];
+    assert.equal(table.afterSection,referenceTable.afterSection,'table position');
+    assert(Number.isInteger(table.afterSection)&&table.afterSection>=0&&table.afterSection<article.sections.length,'table section');
+    assert(table.caption&&table.headers.every(Boolean),'table caption and headers');
+    assert.equal(table.headers.length,referenceTable.headers.length,'table columns');
+    assert.equal(table.rows.length,referenceTable.rows.length,'table rows');
+    assert.deepEqual(digits(table.caption),digits(referenceTable.caption),'table caption numbers');
+    table.rows.forEach((row,k)=>{
+     assert.equal(row.length,table.headers.length,'table row width');
+     assert(row.every(cell=>typeof cell==='string'&&cell.length),'table cell text');
+     assert.deepEqual(digits(row.join(' ')),digits(referenceTable.rows[k].join(' ')),'table numeric parity '+article.slug);
+    });
+   });
    article.sections.forEach((section,j)=>{
     assert.equal(section.text.split(/\n\s*\n/).length,3,'paragraphs '+article.slug+' #'+j);
     assert(!section.text.includes('\\n'),'literal escaped newline');

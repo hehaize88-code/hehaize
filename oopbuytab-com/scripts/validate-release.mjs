@@ -25,11 +25,19 @@ for(const lang of langs){
   assert.equal(doc.querySelectorAll('.reading-section').length,article.sections.length,path+' sections');
   assert.equal(doc.querySelectorAll('.section-prose p').length,article.sections.length*3,path+' paragraphs');
   for(const [i,s] of article.sections.entries())assert.equal([...doc.querySelectorAll(`#section-${i} .section-prose p`)].map(p=>p.textContent).join(''),s.text.split(/\n\s*\n/).join(''),path+' text');
+  const tables=[...doc.querySelectorAll('.article-table')];
+  assert.equal(tables.length,(article.tables||[]).length,path+' comparison tables');
+  for(const [i,table] of (article.tables||[]).entries()){
+   assert.equal(tables[i].querySelector('caption').textContent,table.caption,path+' table caption');
+   assert.deepEqual([...tables[i].querySelectorAll('thead th')].map(x=>x.textContent),table.headers,path+' table headers');
+   assert.deepEqual([...tables[i].querySelectorAll('tbody tr')].map(row=>[...row.children].map(cell=>cell.textContent)),table.rows,path+' table content');
+  }
   const schemas=[...doc.querySelectorAll('script[type="application/ld+json"]')].map(x=>JSON.parse(x.textContent));
   const schema=schemas.find(x=>x['@type']==='Article');assert.equal(schema.datePublished,article.published);assert.equal(schema.dateModified,article.modified);assert(schemas.some(x=>x['@type']==='BreadcrumbList'));
   assert.equal(doc.querySelectorAll('script[src*="googletagmanager.com/gtag/js"]').length,1);
   assert.equal(doc.querySelectorAll('script[src="/analytics-events.js"]').length,1);
   assert.equal(doc.querySelector('.article-actions a').href,local(lang,'/spreadsheet/'));
+  if(article.catalogCategory)assert.equal(doc.querySelector('.article-category-link').href,local(lang,`/category/${article.catalogCategory}/`));
   articleCount++;
  }
  const {r,text}=await get(local(lang,'/articles/'));assert.equal(r.status,200);assert.equal(parseHTML(text).document.querySelectorAll('.journal .article-card').length,reference.articles.length);
@@ -57,6 +65,9 @@ const realFetch=globalThis.fetch,realError=console.error;
 try{
  globalThis.fetch=async()=>new Response('Source unavailable',{status:503});console.error=()=>{};
  const fallback=await get('/');assert.equal(fallback.r.status,200);assert(fallback.r.headers.get('x-robots-tag').startsWith('index,follow'));assert.equal(parseHTML(fallback.text).document.querySelectorAll('.article-card').length,4);
+ const homeDoc=parseHTML(fallback.text).document;assert.equal(homeDoc.querySelectorAll('.category-grid a').length,12);assert(homeDoc.querySelector('.category-grid a[href="/category/jersey/"]'));
  const unavailable=await get('/spreadsheet/');assert.equal(unavailable.r.status,503);assert(unavailable.r.headers.get('x-robots-tag').includes('noindex'));
+ assert.equal(unavailable.r.headers.get('retry-after'),'300');assert.equal(unavailable.r.headers.get('cache-control'),'no-store');
+ assert.equal(parseHTML(unavailable.text).document.querySelector('h1').textContent,reference.ui.spreadsheetTitle);
 }finally{globalThis.fetch=realFetch;console.error=realError;}
 console.log(JSON.stringify({articles:articleCount,articleIndexes:langs.length,coreSitemapURLs:coreCount,productSitemapURLs:productCount,sitemaps:maps.length,status:'passed'}));

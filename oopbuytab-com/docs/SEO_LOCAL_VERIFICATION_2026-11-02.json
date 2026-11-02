@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-02T02:51:43.816453+00:00",
+  "command": "npm run build:production",
+  "status": "passed",
+  "locales": 24,
+  "articles": 408,
+  "articleIndexes": 24,
+  "newArticleURLs": 72,
+  "updatedArticleURLs": 96,
+  "comparisonTables": 192,
+  "coreSitemapURLs": 864,
+  "productSitemapURLs": 82944,
+  "sitemaps": 25,
+  "workerBytes": 7909298,
+  "workerGzipBytes": 1920571,
+  "checks": [
+    "complete translation and paragraph coverage",
+    "source URL and numeric parity including quote tables",
+    "canonical and reciprocal hreflang",
+    "Article and BreadcrumbList schema dates",
+    "localized category destinations",
+    "analytics intent events without duplicate initialization",
+    "www redirect through existing Worker",
+    "404 and source-outage 503 behavior",
+    "preservation of unrelated original content in all 24 languages"
+  ],
+  "browserQA": {
+    "desktop": "English UK guide and official estimate table rendered",
+    "mobileViewport": 390,
+    "languages": [
+      "en",
+      "de",
+      "mt"
+    ],
+    "sections": 9,
+    "initiallyOpen": 1,
+    "expandAllOpen": 9,
+    "collapseAllOpen": 0,
+    "malteseIndexArticles": 17,
+    "tableScrollWidth": 480,
+    "tableClientWidth": 330,
+    "keyboardScrollLeft": 40,
+    "bodyClientWidth": 375,
+    "bodyScrollWidth": 375
+  },
+  "limitations": "Local release and browser rendering checks do not verify search-engine indexing or traffic recovery. Live deployment is verified separately."
+}

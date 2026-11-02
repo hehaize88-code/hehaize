@@ -20,9 +20,9 @@
     "faqTitle": "Usein kysyttyä OOPBuysta",
     "faqIntro": "Lyhyet vastaukset tilaamisesta, tarkastuksesta, varastoinnista, toimituksesta ja jälkipalveluista sekä viralliset viitteet alustan käytäntöihin.",
     "articlesTitle": "OOPBuy-osto-oppaat",
-    "articlesIntro": "Käytännön oppaita tuoteluettelosta, QC-kuvista, toimituksen suunnittelusta ja tilaamisen jälkeisistä päätöksistä.",
+    "articlesIntro": "Vertaa kokoja, tarkista tilauskuvat ja suunnittele toimitus käytännöllisten OOPBuy-oppaiden avulla. Tutustu vaatevertailuihin, varastovaiheisiin ja maakohtaisiin kuljetuksiin.",
     "findsTitle": "OOPBuy-löydöt",
-    "findsIntro": "Tutustu CNBuyCha-luettelon suosittuihin tuotteisiin. Vertaa ilmoitusta, kuvia ja hintaa ennen seuraavan löytösi valintaa.",
+    "findsIntro": "Tutustu reaaliaikaisen luettelon suosittuihin tuotteisiin. Vertaa valitsemaasi ilmoitusta, tuotekuvia ja hintaa ennen seuraavan löydön valintaa.",
     "qcTitle": "OOPBuy QC-kuvien opas",
     "qcIntro": "Tarkastele oman tilauksesi aineistoa, tunnista lisäkuvaa vaativat kysymykset ja selvitä epäselvyydet ennen lähettämistä.",
     "shippingTitle": "OOPBuy-toimituskulut ja arviot",
@@ -30,11 +30,11 @@
     "checklist": "Ennen kuin jatkat",
     "related": "Jatka tutustumista",
     "independent": "Riippumatonta tuotteiden löytämistä",
-    "catalogSource": "Tuotetiedot: CNBuyCha",
+    "catalogSource": "Tutustu lähdeluetteloon",
     "shippingEstimator": "Avaa toimituslaskuri",
     "previewLabel": "Ulkoasun esikatselu",
     "photoLabel": "Tuotekuvat",
-    "homeSeoTitle": "OOPBuy Spreadsheet — Tuotelöydöt, kuvat ja oppaat",
+    "homeSeoTitle": "OOPBuy-tuotetaulukko: kengät, takit, pelipaidat ja osto-oppaat",
     "spreadsheetIntro": "Selaa OOPBuy spreadsheet -taulukkoa kategorioittain, hae tuotteen nimellä tai vertaa uusimpia, suosituimpia ja edullisimpia ilmoituksia.",
     "updated": "Päivitetty",
     "productDetails": "Yksityiskohdat",
@@ -53,7 +53,8 @@
     "loading": "Ladataan tuotteita…",
     "loadError": "Tuotteita ei voitu ladata. Yritä uudelleen.",
     "pageLabel": "Sivu",
-    "previewNotice": "Esikatselu · CNBuyCha-tuotteet päivitetty {date}. Haku avaa CNBuyChan."
+    "previewNotice": "Esikatselu · CNBuyCha-tuotteet päivitetty {date}. Haku avaa CNBuyChan.",
+    "spreadsheetTitle": "OOPBuy-tuotetaulukko: selaa tuotteita kategorioittain"
   },
   "steps": [
     {
@@ -429,6 +430,369 @@
   ],
   "articles": [
     {
+      "slug": "oopbuy-jackets-guide",
+      "tag": "Takit",
+      "title": "OOPBuy-takit: vertaa istuvuutta, mittoja ja tuotetietoja",
+      "description": "Vertaa OOPBuy-takkeja myyjän mittojen, kerrospukeutumistilan, näkyvän rakenteen ja pakatun tilavuuden perusteella. Kokoa ehdokaslista ajantasaisesta takkitaulukosta.",
+      "primaryKeyword": "oopbuy jackets",
+      "secondaryKeywords": [
+        "oopbuy jacket spreadsheet",
+        "oopbuy winter jackets",
+        "oopbuy jacket sizing"
+      ],
+      "takeaways": [
+        "Vertaa tarkkaa takkiversiota samankaltaiseen vaatteeseen, jota jo käytät.",
+        "Käytä myyjän tietoja ja tilauskuvia eri kysymyksiin; ulkonäkö ei todista eristystä tai vedenpitävyyttä.",
+        "Huomioi pakkauksen mitat ja kansainvälinen kuljetus budjetissa ennen tilaamista."
+      ],
+      "sections": [
+        {
+          "title": "Aloita takkitaulukosta ja selkeästä käyttötarkoituksesta",
+          "text": "OOPBuy-takkitaulukosta on hyötyä, kun sen avulla voit vertailla samoja käytännön tietoja eri ilmoituksista. Avaa takkikategoria, valitse muutama ehdokas ja kirjaa kunkin käyttötarkoitus. Kevyt työmatkatakki, muotonsa pitävä farkkutakki ja topattu talvitakki edellyttävät eri asioita, vaikka niiden kuvat näyttäisivät yhtä houkuttelevilta.\n\nTämän sivuston kategoria käyttää ajantasaista lähdeluetteloa. Tuotenimet, valokuvat ja näkyvät USD-hinnat auttavat löytämään ilmoituksen; ne eivät todista saatavuutta, materiaalikoostumusta, aitoutta tai testattua lämpötilaluokitusta. Avaa ostosivu ja tarkista myyjä sekä valittu versio ennen kuin pidät luettelon tuotetta saatavilla olevana tarjouksena.\n\nKirjoita jokaisen ehdokkaan viereen lyhyt vaatimus: tilaa villapaidalle, tietty selän pituus, säädettävä huppu tai riittävän suuret taskut arkitarvikkeille. Näin saat konkreettisen tarkistettavan asian. Poista tuotteet, jotka eivät täytä olennaista vaatimusta, sen sijaan että säilyttäisit ne vain houkuttelevan aloituskuvan vuoksi."
+        },
+        {
+          "title": "Vertaa valittua kokoa, älä pelkkää kokomerkintää",
+          "text": "Tuttu kirjainkoko on lähtökohta, ei luotettava mitta. Myyjillä voi olla erilaisia taulukoita, ja saman ilmoituksen samankaltaisten kuvien alla voi olla useita leikkauksia. Tarkista, kuvaako taulukko valmista vaatetta vai käyttäjän vartaloa. Säilytä kokovalinta, taulukko ja tuoteviite yhdessä, ettet vahingossa vertaa yhden ilmoituksen suurta kokoa toisen keskikokoon.\n\nKäytä vertailuvaatteena takkia, joka istuu haluamallasi tavalla. Sulje se, aseta tasaiseksi venyttämättä ja kirjaa rinnanympäryksen sijaan rinnan leveys sekä hartioiden leveys, selän pituus ja hihan pituus samoista pisteistä kuin myyjä. Raglanhihat ja lasketut olkasaumat tarvitsevat erilaisen vertailun kuin tavallinen olkasauma; älä pakota yhteensopimattomia mittoja samaan sarakkeeseen.\n\nJos vertailutakkisi rinnan leveys tasaisena on esimerkiksi 58 cm ja ehdokkaan taulukossa 56 cm, ehdokas on tästä kohdasta 2 cm kapeampi. Nämä ovat havainnollistavia lukuja, eivät luettelossa olevan tuotteen mittoja. Ne eivät ratkaise istuvuutta: vuori, joustavuus, rakenne ja haluamasi kerrospukeutumistila vaikuttavat edelleen."
+        },
+        {
+          "title": "Varaa tilaa kerroksille ilman yleispätevää kokosääntöä",
+          "text": "Sama takki voi tuntua erilaiselta ohuen paidan ja paksun hupparin päällä. Vertaa sitä vaatteeseen, jota jo käytät kyseisten kerrosten kanssa. Huomioi liikkeet, joissa tila merkitsee: eteen kurottaminen, käsien nostaminen, etumuksen sulkeminen ja istuminen. Pelkkä paikallaan mitattu rinnan leveys ei vastaa kaikkiin mukavuutta tai liikkumista koskeviin kysymyksiin.\n\nVältä yleistä ohjetta valita aina suurempi koko. Kokomerkinnän kasvattaminen voi muuttaa rinnan lisäksi hartioita, hihojen pituutta ja vartalo-osan pituutta. Leveämpi rinta voi ratkaista yhden ongelman mutta aiheuttaa toisen. Vertaa sen sijaan tarvittavia mittoja ja päätä, millaiset erot sopivat vartalollesi ja käyttötarkoitukseen.\n\nJos taulukko puuttuu tai mittaustapa on epäselvä, pyydä selvennystä ennen ostamista. Jos tuote on jo varastossa, pyydä tietyn kohdan mitta, jonka alku- ja loppupiste näkyvät. Älä päättele täsmällistä kokoa mallikuvasta, taitellusta vaatteesta tai kuvasta, jossa mittanauha peittyy."
+        },
+        {
+          "title": "Lue materiaali- ja sääväitteet tuotemäärityksinä",
+          "text": "Sanat lämmin, tekninen, vedenpitävä ja premium ovat väitteitä, jotka tarvitsevat tuekseen tietoa. Valokuvassa voi näkyä huppu tai pintakangas, mutta se ei vahvista kalvon ominaisuuksia, eristeen määrää tai toimintaa sateessa. Lue myyjän kuvauksesta juuri ostettavaksi aikomasi vaihtoehdon koostumus ja hoito-ohjeet.\n\nJos säältä suojaaminen on tärkeää, määritä tarvittava näyttö ennen tuotteen valintaa. Tarkista, koskeeko ilmoitettu ominaisuus koko takkia vai yhtä kangaspalaa ja selitetäänkö ilmoituksessa testausolosuhteet. Näkyvä teipattu sauma tai kiiltävä pinta ei yksin todista suorituskykyä. Jätä puuttuva tieto avoimeksi sen sijaan, että muuttaisit ulkonäön takuuksi.\n\nTavallisten arkitakkien hyödyllisiä vertailukohtia ovat vuorin kattavuus, sulkemistapa, hihansuiden säätö ja taskujen sijoittelu. Kirjaa vain myyjän dokumentoimat tai kuvissa selvästi näkyvät tiedot. Älä kopioi toisen ostajan kuvausta eri ilmoitukseen vain siksi, että molemmilla takeilla on sama tyylinimi."
+        },
+        {
+          "title": "Tarkista vetoketjut, taskut, saumat ja mukana tulevat osat",
+          "text": "Aloita kuvien tarkastelu koko etu- ja takapuolesta ja siirry sitten yksityiskohtiin. Vertaa sulkemistapaa, huppua, taskuja ja kangaspalojen sijoittelua valittuun ilmoitukseen. Tarkista, näkyvätkö mukaan kuuluvat napit, kiristysnyörien päät ja irrotettavat osat. Puuttuva kuvakulma on syy kysyä, ei välitön todiste puuttuvasta osasta.\n\nKun tilaus on jo saapunut varastoon, käytä juuri sen tilauksen kuvia. Pyydä kuva suljetusta vetoketjusta, jos kohdistus on epäselvä, tai esteetön kuva hihansuusta, jos kiinnitys on tärkeä. Kerro kohta ja huolenaihe. Pyyntö näyttää etuhelman alaosa tasaisena antaa varastolle selkeämmän tehtävän kuin yleinen vaatimus tarkistaa kaikki.\n\nMuista tarkastuksen rajat. Näkyvät saumat ja etiketit eivät todista aitoutta, kestävyyttä tai erityisominaisuuksien suorituskykyä. Varastotarkastus ei korvaa laboratoriotestiä tai merkkituotteen aitouspalvelua. Käytä sitä havaittavien poikkeamien selvittämiseen ja päätä, tarvitaanko lisätietoja ennen kansainvälistä lähettämistä."
+        },
+        {
+          "title": "Vertaa hintaa yhdessä pakatun tilavuuden kanssa",
+          "text": "Takkiluettelossa näkyvä hinta ei ole toimitetun ostoksen koko kustannus. Budjetissa on huomioitava myös mahdollinen myyjän toimitusmaksu, kansainvälinen rahti sekä soveltuvat lisäpalvelut ja maksukulut. Kirjaa arvioiden yhteyteen valuutat ja päivämäärät. Halvempi tuote ei automaattisesti ole toimitettuna edullisempi, jos pakkaus tai reittivaatimukset eroavat.\n\nPaksut takit voivat viedä paljon tilaa, vaikka tuote olisi melko kevyt. Kuljetuslinja määrittelee, käytetäänkö todellista painoa, tilavuuspainoa vai muuta ilmoitettua veloitussääntöä. Käytä virallisessa laskurissa parhaita saatavilla olevia pakattuja mittoja ja painoa. Älä kopioi toisen reitin jakajaa ja esitä sitä OOPBuyn yleisenä kaavana.\n\nVertaa pakkausvaihtoehtoja ennen niiden pyytämistä. Pehmeä vaate ja muotonsa pitävä takki eivät välttämättä siedä samanlaista puristamista. Kysy, sopiiko palvelu materiaalille ja tarvitseeko alkuperäispakkaus säilyttää. Pienempi tilavuus voi muuttaa arviota, mutta säästö vahvistuu vasta, kun reitti hinnoitellaan uudelleen muuttuneilla lähtötiedoilla."
+        },
+        {
+          "title": "Pidä ehdokaslista päätöksentekoa varten",
+          "text": "Hyödyllisessä ehdokaslistassa alkuperäinen linkki, valittu versio, tarkistuspäivä, olennaiset mitat ja seuraava toimenpide ovat yhdessä. Erota myyjän väitteet omista havainnoistasi. Käytä selkeää tilaa, kuten kokotaulukko puuttuu, vuoritieto puuttuu tai valmis harkittavaksi. Pitkä selittämätön linkkilista vaikeuttaa aidosti puuttuvan tiedon löytämistä.\n\nVertaa keskenään vastaavia vaihtoehtoja. Jos yhdessä ilmoituksessa on irrotettava vuori ja toisessa ei, kirjaa ero ennen hintojen vertailua. Jos halvin valittava vaihtoehto on lisävaruste eikä kuvattu takki, se ei kelpaa takkien hintavertailuun. Tarkastele juuri ostoskoriin menevää versiota.\n\nAlla oleva vertailutaulukko on oman tutkimuksesi rakenne, ei vahvistettujen tuotemääritysten luettelo. Täytä kentät ajantasaisesta myyjän ilmoituksesta ja oman tilauksesi tiedoista. Jos arvoa ei ole saatavilla, jätä se tyhjäksi ja nimeä kysymys, johon tarvitset vastauksen. Taulukon täsmällisyyden pitää perustua näyttöön eikä siististi kohdistettuihin sarakkeisiin."
+        },
+        {
+          "title": "Selvitä istuvuus ja kunto ennen lähettämistä",
+          "text": "Kun takki saapuu varastoon, yhdistä tilausviite ja valittu koko tarkastelemiisi kuviin. Vertaa pyydettyjä mittoja samaan vertailuvaatteeseen ja samalla menetelmällä kuin ennen ostamista. Jos tulos vaikuttaa ristiriitaiselta, pyydä selkeämpi kuva ennen kuin päätät vaatteen olevan sopimaton. Perspektiivi ja kankaan taitokset voivat vaikeuttaa pienten erojen tulkintaa.\n\nJos merkittävä poikkeama jää jäljelle, tarkista viipymättä voimassa olevat palautusehdot ja tilauksessa tarjolla olevat vaihtoehdot. Palautusoikeus, myyjän hyväksyntä, palautusrahti ja lopullinen hyvitys ovat erillisiä kysymyksiä. Pidä ilmoituksen näyttö, tilausviite ja lyhyt ongelmakuvaus yhdessä ottaessasi yhteyttä tukeen. Älä oleta viivyttelyn säilyttävän kaikkia vaihtoehtoja.\n\nEnnen kuin lisäät tuotteen kansainväliseen pakettiin, varmista, mitkä kysymykset on ratkaistu ja mitkä epävarmuudet hyväksyt. Tarkista uudelleen vastaanottaja, reittirajoitukset, pakatut mitat ja kokonaisveloitus. Varastokuvien tarkastaminen on yksi päätöksen vaihe; se ei korvaa lopullisia paketti- ja toimitustarkistuksia."
+        },
+        {
+          "title": "Muuta opas hyödylliseksi seuraavaksi askeleeksi",
+          "text": "Palaa takkikategoriaan, kun olet valmis vertailemaan ajantasaisia ehdokkaita. Käytä koko-opasta mittaustapoihin ja QC-opasta järjestelmälliseen kuvien tarkastukseen. Säilytä kunkin työkalun tarkoitus: luettelo auttaa löytämään tuotteita, myyjän taulukko kuvaa valittua ilmoitusta ja tilauskuvat dokumentoivat juuri kyseistä tilausta varten vastaanotetun tuotteen.\n\nKirjaa toimituksen jälkeen se, minkä voit itse mitata ja havaita. Merkitse alle pukemasi kerrokset, mahdolliset erot myyjän taulukkoon ja maksamasi lopullinen summa. Muistiinpanot auttavat seuraavaa ostostasi olematta yleinen suositus kaikille ostajille. Yhden henkilön työmatkaan sopiva takki ei välttämättä sovi toisen käyttötarkoitukseen.\n\nTarkista vanhat linkit ennen uusintatilausta ja päivää ehdokaslistan päivitykset. Myyjät voivat muuttaa saatavuutta, versioita, kuvauksia ja hintoja. Ajantasainen kirjanpito on arvokkaampaa kuin jokaisen tuotteen kutsuminen ikuisesti vahvistetuksi. Käytä virallista OOPBuy-tiliä ostamiseen, varastokysymyksiin ja kuljetukseen; tämä riippumaton opas auttaa jäsentämään niitä edeltäviä päätöksiä."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuyn virallinen verkkosivusto",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuyn tarkastustiedot",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuyn toimituskulujen arvio",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-shipping-guide"
+      ],
+      "format": "long",
+      "published": "2026-11-02",
+      "modified": "2026-11-02",
+      "catalogCategory": "jackets",
+      "tables": [
+        {
+          "afterSection": 6,
+          "caption": "Takkien vertailutaulukko — täytä valitun ilmoituksen tiedoilla",
+          "headers": [
+            "Tarkistus",
+            "Kirjattava tieto",
+            "Päätös"
+          ],
+          "rows": [
+            [
+              "Istuvuus",
+              "Rinta, hartiat, hihat ja selän pituus",
+              "Vertaa samalla mittaustavalla"
+            ],
+            [
+              "Rakenne",
+              "Vuori, sulkeminen, taskut ja mukana tulevat osat",
+              "Merkitse puuttuva näyttö ennen maksamista"
+            ],
+            [
+              "Kuljetus",
+              "Pakattu paino, mitat ja reittiarvio",
+              "Tarkista toimitetun ostoksen hinta"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "oopbuy-football-jersey-guide",
+      "tag": "Pelipaidat",
+      "title": "OOPBuy-jalkapallopaitataulukko: koot, painatukset ja QC-tarkastukset",
+      "description": "Vertaa OOPBuyn jalkapallopaitataulukon avulla leikkausta, mittoja, painatuksia ja tilauskuvia ennen paidan valintaa tai paketin lähettämistä.",
+      "primaryKeyword": "oopbuy football jersey spreadsheet",
+      "secondaryKeywords": [
+        "oopbuy jerseys",
+        "oopbuy football shirts",
+        "oopbuy jersey sizing"
+      ],
+      "takeaways": [
+        "Tarkista tarkka paita, kausi, leikkaus ja valittu painatusvaihtoehto ennen hintavertailua.",
+        "Vertaa vaatteen mittoja ja painatuksen paikkaa oman tilauksesi tietojen perusteella.",
+        "Tarkista yksilöintiä ja jälkimyyntiä koskevat ehdot ennen yksilöidyn tuotteen maksamista."
+      ],
+      "sections": [
+        {
+          "title": "Tunnista tarkka tuote pelipaitataulukosta",
+          "text": "OOPBuyn jalkapallopaitataulukko kokoaa tuotelinkkejä yhteen, mutta paidan nimi ei yksin yksilöi kaikkia ostoksen tietoja. Aloita pelipaitakategoriasta ja kirjaa tarkka ilmoitus, valittu väri, koko ja mahdollinen painatusvaihtoehto. Kotipaita, vieraspaita, harjoituspaita ja maalivahdin paita voivat olla vierekkäin, vaikka ne ovat eri tuotteita.\n\nTarkista myyjän näyttämä kausi ja malli sen sijaan, että olettaisit tutun seuran nimen tarkoittavan yhtä pysyvää paitaa. Kauluksen muoto, hihansuiden viimeistely, sponsorien sijoittelu ja kangaspalojen yksityiskohdat voivat erota. Jos ilmoitus yhdistää useita malleja, varmista vaihtoehtovalitsimen vastaavan haluamaasi kuvaa ennen kuin luotat näkyvään hintaan.\n\nTämä sivusto tarjoaa löytämistä helpottavia linkkejä ja lähteen tuotekuvia. Luettelomerkintä ei todista lisensointia, aitoutta, saatavuutta tai tulevan tilauksesi kuntoa. Vahvista ajantasainen myyjän tuote ja sen vaihtoehdot viralliselta ostosivulta. Säilytä alkuperäinen linkki, jotta myöhempi vertailu koskee samaa ilmoitusta."
+        },
+        {
+          "title": "Vertaa paitojen leikkauksia mittojen avulla",
+          "text": "Myyjät voivat käyttää nimityksiä faniversio, pelaajaversio, vartalonmyötäinen tai väljä. Nimet voivat kuvata tarkoitettua leikkausta, mutta ne eivät määrittele yleistä mittajärjestelmää. Lue juuri valitun version taulukko ja tarkista, kuvaako se tasaiseksi asetettua vaatetta vai käyttäjän vartaloa.\n\nValitse urheilupaita, joka istuu haluamallasi tavalla, ja mittaa se venyttämättä. Hyödyllisiä vertailukohtia ovat rinnan leveys ja selän pituus sekä hartia- ja hihamitat silloin, kun rakenne sallii vastaavan vertailun. Joustava kangas, raglanhihat ja muotoillut sivupalat voivat tehdä pelkkään kirjainkokoon perustuvasta vertailusta harhaanjohtavan.\n\nHavainnollistavana esimerkkinä tasaisena rinnasta 52 cm leveä vertailupaita on 2 cm leveämpi kuin ehdokkaan taulukon 50 cm. Nämä ovat esimerkkiarvoja, eivät luettelossa olevan tuotteen määrityksiä. Ero auttaa muotoilemaan istuvuutta koskevan kysymyksen; se ei yksin kerro, mikä koko kannattaa ostaa."
+        },
+        {
+          "title": "Tarkista pituus, liikkumatila ja tuleva käyttäjä",
+          "text": "Mieti paidan käyttötapaa. Rento kerrosvaate, liikuntapaita ja esille tarkoitettu tuote voivat edellyttää erilaista istuvuutta. Vertaa vartalo-osan pituutta ja tarvittavaa liikkumatilaa sen sijaan, että valitsisit pelkkien pituus- ja painosuositusten perusteella. Suositustaulukko voi olla hyödyllinen vihje olematta tarkka takuu.\n\nJos ostat toiselle henkilölle, käytä hänen antamiaan mittoja tai sopivaa vaatetta, jota hän jo käyttää. Älä arvioi hänen kokoaan valokuvista. Lasten ilmoituksissa tarkista huolellisesti myyjän todellinen mittataulukko ja mahdollisen setin sisältö; numerokoko tai ikämerkintä voi tarkoittaa eri myyjillä eri asioita.\n\nJos tärkeä mitta puuttuu, kysy ennen tilaamista. Jos tuote on jo varastossa, pyydä mitta näkyvine päätepisteineen ja kerro, pitääkö vaatteen olla rentona tasaisella alustalla. Samalla menetelmällä tehdyt mittaukset ovat hyödyllisempiä kuin kaksi lukua, joilla vain sattuu olemaan sama nimi."
+        },
+        {
+          "title": "Vahvista nimet, numerot, merkit ja kirjoitusasu",
+          "text": "Yksilöinti lisää päätöksiä, joita yleinen tuotekuva ei ratkaise. Tarkista, sisältyykö valintaan nimi, numero, hihamerkki tai muu painettu yksityiskohta ja vaikuttavatko ne hintaan. Jotkin ilmoituskuvat näyttävät täysin koristellun esimerkin, vaikka oletusvaihtoehto on painamaton. Tarkista ostoskorin täsmällinen valinta ennen maksamista.\n\nSäilytä selkeä tieto pyytämästäsi kirjoitusasusta, numerosta ja sijoittelusta virallisissa tilausohjeissa. Tarkista isot ja pienet kirjaimet sekä myyjän hyväksymät merkit. Jos tarvitset tietyn kirjasimen tai asettelun, varmista sen olevan tarjolla; vapaamuotoinen huomautus ei itsessään luo tätä mahdollisuutta. Älä lisää henkilökohtaisia tilaustietoja julkisesti jaettuun taulukkoon.\n\nLue myyjän ja alustan voimassa olevat jälkimyyntiehdot ennen yksilöinnin pyytämistä. Yksilöidyillä tuotteilla voi olla erilaisia rajoituksia, joten selvitä ostoksellesi olennaiset asiat. Älä oleta tavallisen palautussäännön koskevan muuttumattomana ohjeidesi mukaan painettua paitaa tai muutospyynnön onnistuvan tuotannon alettua."
+        },
+        {
+          "title": "Tarkasta painatus oman tilauksesi kuvista",
+          "text": "Varastoon saapumisen jälkeen yhdistä kuvat oikeaan paitaan ja versioon. Aloita kokonaisista etu- ja takakuvista ja tarkasta sitten pyytämäsi painetut alueet. Vertaa kirjoitusasua, numeroa, merkkivalintaa ja likimääräistä sijoittelua tilausohjeisiin. Myyjän mainoskuva ei todista oman yksilöintisi onnistuneen oikein.\n\nJos sijoittelu näyttää epätasaiselta, mieti ensin, selittävätkö taitokset tai kuvauskulma vaikutelman. Pyydä tarvittaessa kuva tasaiseksi asetetusta vaatteesta niin, että koko painatus näkyy. Puuttuvasta tai epäselvästä yksityiskohdasta pyydä juuri kyseinen alue sen sijaan, että pyytäisit varastoa arvioimaan koko paidan. Säilytä vastaus oikean tilausviitteen yhteydessä.\n\nKuva voi paljastaa näkyvän irtoamisen, ilmeisen vaurion tai poikkeaman pyydetyssä tekstissä. Se ei luotettavasti osoita pitkäaikaista kiinnipysymistä, kankaan suorituskykyä tai aitoutta. Älä kuvaa paitaa täysin laatusertifioiduksi vain siksi, että siitä on varastokuvat. Vastaa kuvilla havaittaviin kysymyksiin ja jätä muuta näyttöä edellyttävät ominaisuudet avoimiksi."
+        },
+        {
+          "title": "Tarkasta rakenne ja setin sisältö",
+          "text": "Tarkastele pääpainatuksen lisäksi kaulusta, hihansuita, sivusaumoja ja alareunaa. Vertaa paidan muotoa ja kangaspalojen sijoittelua valittuun ilmoitukseen. Taittunut reuna voi piilottaa yksityiskohdan, joten erota näkymätön alue vahvistetusta viasta. Pyydä lisäkuva vain silloin, kun se voisi muuttaa päätöstäsi.\n\nJos ilmoitus koskee settiä, tarkista mukana olevat osat ja niiden valittujen kokojen vastaavuus tilaukseesi. Kuva paidasta ja shortseista ei välttämättä tarkoita molempien sisältyvän hintaan. Kirjaa vaihtoehdon kuvauksen kappalemäärä ja vertaa sitä varaston näyttöön ennen kansainvälisen paketin valmistelua.\n\nMyös hoitotiedot vaikuttavat tuotteen sopivuuteen tarpeisiisi. Lue myyjän ohjeet juuri kyseiselle kankaalle ja painatusmenetelmälle. Älä sovella yleistä pesulämpötilaa tai kuivaussääntöä eri tuotteen perusteella. Jos hoitovaatimukset puuttuvat ja ovat sinulle tärkeitä, pyydä selvennystä myyjältä tai tuesta."
+        },
+        {
+          "title": "Budjetoi muutakin kuin paidan hinta",
+          "text": "Pelipaidan luettelohinta on vain osa toimitetun ostoksen kustannusta. Tarkista valittu painatusvaihtoehto, mahdollinen kotimaan toimitusmaksu ja myöhempi kansainvälinen kuljetus. Säilytä kukin summa alkuperäisessä valuutassaan ja erota arvio vahvistetusta maksusta. Halvin painamaton vaihtoehto ei ole kelvollinen vertailukohta yksilöidylle versiolle.\n\nKäytä virallista kuljetuslaskuria vastaanottopaikan ja parhaiden saatavilla olevien pakettitietojen kanssa. Älä keksi jalkapallopaidalle yleistä painoa: koko, kangas, setin sisältö ja pakkaus vaikuttavat pakettiin. Jos todellista varastopainoa ei ole, kirjaa epävarmuus ja päivitä arvio, kun tarvittavat mitat ovat saatavilla.\n\nKun yhdistät paitoja muihin tuotteisiin, vertaa pakattua lähetystä ja reittiehtoja sen sijaan, että olettaisit yhdistämisen säästävän aina tietyn summan. Lisäpakkaus, reittirajoitukset ja laskutusportaat voivat muuttaa tulosta. Hyvä budjetti kertoo sisältyvät asiat, avoimet oletukset ja paikan, jossa lopullinen maksettava tarjous tarkistetaan."
+        },
+        {
+          "title": "Käsittele poikkeama ennen kansainvälistä lähettämistä",
+          "text": "Jos paita tai sen yksilöinti ei vastaa tilausta, kerää asiaankuuluva näyttö ennen yhteydenottoa tukeen. Käytä alkuperäistä ilmoitusta, valittua versiota, kirjallisia ohjeita ja varastokuvia. Kuvaile poikkeama selkeästi, esimerkiksi väärä numero tai puuttuva valittu merkki, sen sijaan että sanoisit yleisesti laadun olevan väärä.\n\nTarkista viipymättä tilauksen ajantasainen tila ja voimassa olevat jälkimyyntiehdot. Pyyntö, myyjän hyväksyntä, palautuskuljetus ja hyvityksen maksaminen ovat erillisiä vaiheita. Älä oleta pyynnön automaattisesti peruvan ostosta tai yksilöidyn tuotteen noudattavan samaa prosessia kuin muuttamaton varastotuote. Kysy kyseiselle tuotteelle ja vaiheelle tarjolla olevaa ratkaisua.\n\nPidä tuote erossa kansainvälisestä paketistasi, kun merkittävä kysymys on vielä ratkaisematta. Kun päätät jatkaa, tarkista valittu sisältö ja lähetysohjeet uudelleen. Tavoitteena on lähettää paketti niin, että tiedät selkeästi, mitä vahvistettiin, mitä muutettiin ja minkä epävarmuuden hyväksyit tietoisesti."
+        },
+        {
+          "title": "Rakenna uudelleen käytettävä pelipaitavertailu",
+          "text": "Järjestä alla olevalla taulukolla pieni valikoima ajantasaisia pelipaitalinkkejä. Rivit kuvaavat tarkistettavia asioita, eivät ennalta hyväksyttyjä tuotteita. Täytä taulukko tarkalla ilmoituksella ja omilla havainnoillasi ja jätä tuntemattomat tiedot näkyvästi tuntemattomiksi. Näin houkutteleva luettelokuva ei muutu perusteettomaksi istuvuus- tai painatuslaatuväitteeksi.\n\nLisää toimituksen jälkeen todelliset mitat ja omat istuvuushavaintosi samalla menetelmällä kuin aiemmin. Kirjaa, valitsitko painamattoman vai yksilöidyn paidan, sekä erot valitun vaihtoehdon ja saapuneen tuotteen välillä. Pidä henkilökohtaiset mielipiteet erillään mitattavista tosiasioista, jotta muistiinpanot auttavat myös seuraavan ilmoituksen vertailussa.\n\nPalaa pelipaitakategoriaan ajantasaisia tuotteita varten, koko-oppaaseen mittausmenetelmiä varten ja QC-oppaaseen kuvien tarkastusta varten. Avaa lähdelinkit uudelleen ennen jokaista tilausta, koska saatavuus, versiot ja hinnat voivat muuttua. Hyvä OOPBuy-jalkapallopaitataulukko auttaa tekemään ja kirjaamaan päätöksiä; se ei korvaa myyjän virallisia tietoja, ostotietoja tai jälkimyyntiehtoja."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuyn virallinen verkkosivusto",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuyn tarkastustiedot",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuyn toimituskulujen arvio",
+          "url": "https://oopbuy.com/estimation"
+        }
+      ],
+      "related": [
+        "oopbuy-sizing-guide",
+        "oopbuy-qc-photos",
+        "oopbuy-returns-refunds"
+      ],
+      "format": "long",
+      "published": "2026-11-02",
+      "modified": "2026-11-02",
+      "catalogCategory": "jersey",
+      "tables": [
+        {
+          "afterSection": 8,
+          "caption": "Pelipaitojen ehdokaslista — vahvista jokainen valittu vaihtoehto",
+          "headers": [
+            "Tarkistus",
+            "Säilytettävä näyttö"
+          ],
+          "rows": [
+            [
+              "Tunnistus",
+              "Ilmoitus, malli, kausi ja tarkka versio"
+            ],
+            [
+              "Istuvuus",
+              "Myyjän taulukko ja vertailupaidan mitat"
+            ],
+            [
+              "Painatus",
+              "Pyydetty kirjoitusasu, numero, merkit ja tilauskuvat"
+            ],
+            [
+              "Jälkimyynti",
+              "Valitun yksilöinnin ehdot"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "oopbuy-shipping-uk",
+      "tag": "Yhdistynyt kuningaskunta",
+      "title": "OOPBuy-toimitus Yhdistyneeseen kuningaskuntaan: kulut, paino ja seuranta",
+      "description": "Suunnittele OOPBuy-toimitus Yhdistyneeseen kuningaskuntaan virallisella laskurilla, paketin mitoilla ja postinumerotarkistuksilla. Erota varaston ja kuljetusyhtiön seuranta.",
+      "primaryKeyword": "oopbuy shipping to uk",
+      "secondaryKeywords": [
+        "oopbuy uk shipping cost",
+        "oopbuy shipping calculator uk",
+        "oopbuy shipping time uk"
+      ],
+      "takeaways": [
+        "Vertaa reittejä samalla vastaanottopaikalla, sisällöllä, pakatulla painolla ja mitoilla.",
+        "Lue postinumerorajoitukset ja kunkin reitin ehdot ennen rahdin maksamista.",
+        "Erota myyjän toimitus, varastokäsittely ja kansainvälisen kuljetuksen seuranta."
+      ],
+      "sections": [
+        {
+          "title": "Aloita vastaanottopaikasta ja kahdesta kuljetusvaiheesta",
+          "text": "OOPBuy-toimitus Yhdistyneeseen kuningaskuntaan sisältää muutakin kuin reittiarviossa näkyvän kansainvälisen matkan. Myyjä lähettää ostetun tuotteen ensin Kiinan varastoon. Kun tilaus on vastaanotettu ja olet tarkistanut sen, valmistelet kansainvälisen paketin. Vaiheilla on erilliset viitteet, päätökset ja mahdolliset maksut.\n\nOstotilauksessa lähetetyksi merkitty tuote voi olla yhä matkalla varastoon. Se ei välttämättä tarkoita paketin olevan matkalla Yhdistyneeseen kuningaskuntaan. Pidä myyjän kotimaan seurantatiedot erillään myöhemmin saatavasta kansainvälisestä rahtikirjasta. Ero selkeyttää sekä kustannussuunnittelua että viivästyksiä koskevia kysymyksiä.\n\nAloita todellisesta vastaanottajan osoitteesta ja postinumerosta. Laskurin maakohtainen tulos ei takaa jokaisen reitin palvelevan kaikkia osoitteita. Tarkista harkitsemasi reitin tarkka toimitusalue ja rajoitukset ennen kuin pidät sen hinta-arviota omaan lähetykseesi soveltuvana."
+        },
+        {
+          "title": "Valmistele tiedot virallista kuljetuslaskuria varten",
+          "text": "Käytä virallista OOPBuy-laskuria ja valitse kohdemaaksi Yhdistynyt kuningaskunta. Syötä paketin paino, mitat ja nykyisen lomakkeen pyytämä tuoteluokka. Jos tuote on vielä myyjällä, tunnista lukujen olevan arvioita. Päivitä ne varasto- ja pakkaustietojen valmistuttua sen sijaan, että luottaisit edelleen aiempaan tilanteeseen.\n\nPidä kirjallinen tallenne lähtötiedoista ja tarkistuspäivästä. Tavallisten vaatteiden arviota ei voi automaattisesti käyttää paketille, jossa on akkuja, nesteitä tai muuta rajoitettua tavaraa. Samoin pelkkään tuotepainoon perustuva arvio voi erota pakatun laatikon arviosta. Vertaa samoja oletuksia arvioidessasi kahta reittiä.\n\nKäytä pienempää ja suurempaa skenaariota, jos tärkeitä mittoja ei tiedetä, mutta nimeä molemmat suunnitteluoletuksiksi. Älä esitä keksittyä esimerkkipainoa oikean tilauksen mitattuna painona. Laskuri auttaa rajaamaan vaihtoehtoja; paketin lähetysprosessi ja voimassa olevat reittiehdot määrittävät todellisuudessa valittavan summan ja palvelun."
+        },
+        {
+          "title": "Ymmärrä todellisen painon ja tilavuuspainon ero",
+          "text": "Todellinen paino kertoo valmiin paketin massan. Tilavuuspaino huomioi paketin viemän tilan tietyn reitin veloitussäännön mukaan. Valittu palvelu voi käyttää toista mittaa tai verrata niitä ja soveltaa laskutusportaita tai vähimmäispainoa. Lue juuri kyseisen reitin määritelmä ennen laskutettavan painon laskemista.\n\nPuhtaana matemaattisena esimerkkinä 30 × 20 × 15 cm laatikon tilavuus on 9000 kuutiosenttimetriä. Tilavuuden jakaminen luvulla 6000 antaa 1.5 kg ja luvulla 5000 antaa 1.8 kg. Jakajat ovat havainnollistavia, eivät väite mistään nykyisestä OOPBuyn UK-reitistä. Käytä jakajaa vain, kun valittu linja ilmoittaa sen nimenomaisesti.\n\nPakkauksen muutokset voivat vaikuttaa yhtä aikaa mittoihin, painoon ja suojaan. Kenkälaatikon poistaminen tai pehmeän vaatteen puristaminen ei takaa tiettyä säästöä. Vertaa uudistettua arviota, huomioi tuotteen tarpeet ja vahvista tarjotut palvelut. Säilytä lopulliset pakatut mitat lähetysmerkinnän yhteydessä, jotta ymmärrät muutokset alkuperäiseen arvioon."
+        },
+        {
+          "title": "Vertaa nykyisiä UK-reittiesimerkkejä ja niiden ehtoja",
+          "text": "Tarkistimme 2026-11-02 virallisen laskurin tiedoilla Yhdistynyt kuningaskunta, GBP, tavalliset merkittömät vaatteet, 2000 g ja 30 × 20 × 15 cm paketti. Alla oleva taulukko tallentaa näillä tiedoilla palautuneet saatavilla olevat reittiesimerkit. Summat ovat arvio ennen näytettyä alennusta ja laskurin näyttämä alennettu summa; todellinen kuponkikelpoisuus ja loppulasku on tarkistettava kassalla. Kyseessä ovat kansainvälisen rahdin esimerkit, eivät toimitettujen ostosten kokonaishinnat.\n\nSF-RoyalMail-GB-1 ja ZD-Roymail-GB-1 sulkevat syrjäiset osoitteet pois. S-Remote-RoyalMail-GB-1:n kuvaus luettelee Skotlannin ylämaat ja saaret, Mansaaren, Guernseyn, Jerseyn, Pohjois-Irlannin ja Scillysaaret. Tämä on reitin toimitusalueen sanamuoto, ei väite kaikkien lueteltujen paikkojen kuulumisesta samaan lainkäyttöalueeseen. Julkisessa laskurissa ei ole postinumerokenttää, joten palautunut reitti ei vahvista todellista osoitettasi. Tarkista postinumeron kelpoisuus lähettäessäsi pakettia.\n\nSaatavuus, alennukset ja kuljetusarviot voivat muuttua. Ilmoitetut työpäivävälit ovat arvioita, eivät taattuja toimituspäiviä, eivätkä ne kata myyjän ja varaston välistä vaihetta. Vertaa hinnan lisäksi hyväksyttyjä tavaroita, paino- ja kokorajoja, seurantajärjestelyjä ja kuljetusajan alkamista. Reitti, joka ei ole saatavilla mutta jolla on piilotettu alempi arvio, ei ole varattava tarjous; suorita virallinen laskenta uudelleen ennen valintaa. Älä pidä reitin veromerkintää yleisenä lupauksena jokaiselle tilaukselle."
+        },
+        {
+          "title": "Erota arviot ja maksut kustannustaulukossa",
+          "text": "Kokoa toimitetun ostoksen kustannustaulukko erillisistä riveistä: valitut tuotteet, mahdollinen myyjän toimitus, kansainvälinen rahti, valitut palvelut sekä kassalla näkyvät maksu- tai valuutanvaihtokulut. Pidä tarkistettavat kohdemaan maksut omassa kentässään. Tyhjän kentän tulee tarkoittaa ratkaisematta olevaa asiaa, ei huomaamatta nollaa.\n\nKirjaa valuutta jokaiselle summalle. Luettelon arvioitu USD-tuotehinta ei ole taattu GBP-kassahinta, ja valuuttakurssi voi muuttua tutkimuksen ja maksamisen välillä. Älä laske eri valuuttojen lukuja yhteen ilmoittamatta muunnosta ja sen päivää. Vertailun pitää säilyä ymmärrettävänä myös tilauksen tekemisen jälkeen.\n\nKäytä reittikohtaiseen verokäsittelyyn tai tullausehtoihin voimassa olevia virallisia ehtoja ja kohdemaan asianomaisia viranomaisia. Tämä opas ei määrää ilmoitusarvoa eikä takaa verotulosta. Anna pyydettäessä tarkat kuvaukset ja arvot; kuvauksen muuttaminen rajoituksen kiertämiseksi ei ole hyväksyttävä tapa tehdä reitistä sopivaa."
+        },
+        {
+          "title": "Tarkista osoite ja pakkaus ennen paketin lähettämistä",
+          "text": "Vahvista vastaanottajan nimi, osoiterivit ja postinumero virallisella tilillä ennen lähettämistä. Tarkastele valitun reitin osoitevaatimuksia sekä syrjäalue- tai toimitusrajoituksia. Älä oleta aiemman lähetyksen toiseen UK-osoitteeseen todistavan saman linjan sopivan tähän osoitteeseen.\n\nYhdistä paketin sisältö niihin varastotuotteisiin, jotka aiot lähettää. Varmista koko- ja kuntokysymysten ratkenneen ja lisäpakkausohjeiden vastaavan todellisia tavaroita. Hauraalla lisävarusteella, jäykällä laukulla ja puristettavalla vaatteella on erilaiset tarpeet. Kerro, minkä tuotteiden muoto on suojattava tai pakkaus säilytettävä.\n\nKun pakkaustiedot ovat valmiit, vertaa lopullista summaa aiempaan taulukkoosi. Jos arvio on suurempi, selvitä muuttunut tieto: mitat, paino, sisältö, reitti vai lisäpalvelut. Pyydä selvennystä ennen maksamista, jos ero on epäselvä. Säilytä vahvistettu reitti ja pakettiviite yhdessä seurantavaihetta varten."
+        },
+        {
+          "title": "Lue seuranta luovutusten ketjuna",
+          "text": "Kansainvälinen seuranta on hyödyllistä, kun tiedät tarkistamasi kuljetusyhtiön ja viitteen. Luotu lähetystunniste, varaston lähetysmerkintä ja kuljetusyhtiön vastaanottoskannaus kuvaavat eri vaiheita. Varhainen merkintä ilman liikettä ei yksin osoita paketin kadonneen tai jo saapuneen Yhdistyneeseen kuningaskuntaan.\n\nSeuraa valitulle reitille näytettäviä tietoja ja vertaa tapahtumapäiviä. Joihinkin palveluihin liittyy luovutus tai myöhempi seurantaviite; vahvista tieto virallisesta pakettitietueesta sen sijaan, että arvaisit toisen ostajan lähetyksestä. Myyjän kotimaan seurantanumeroa ei pidä käyttää kansainvälisen paketin etenemisen arviointiin.\n\nJos päivitykset vaikuttavat ristiriitaisilta, kerää pakettiviite, valittu reitti, lähetyspäivä ja kuljetusyhtiön viimeisin tapahtuma. Anna tuelle nämä tiedot ja kerro täsmällisesti puuttuva siirtymä. Se on toimivampaa kuin yleinen kysymys tilauksen sijainnista etenkin silloin, kun useita ostotilauksia yhdistettiin samaan lähetykseen."
+        },
+        {
+          "title": "Selvitä viivästykset reitin omien tietojen avulla",
+          "text": "Vertaa viivästystä todella ostamasi reitin arvioon ja ehtoihin. Huomioi, onko aika ilmoitettu työpäivinä ja mistä se alkaa. Älä laske kaikkea tuotteen ostosta kulunutta aikaa kansainväliseksi kuljetukseksi äläkä oleta lyhyen seurantakatkoksen todistavan tiettyä tulli- tai kuljetusyhtiöongelmaa.\n\nKäytä tarvittaessa virallista tukea ja kuljetusyhtiön kanavia. Säilytä viestit, pakettitiedot ja palveluehtojen edellyttämä näyttö. Jos kadonneesta tai vaurioituneesta lähetyksestä ilmoittamiselle on määräaika, tarkista voimassa olevat ehdot nopeasti sen sijaan, että luottaisit toiselle reitille ilmoitettuun aikaan.\n\nJos seuranta pyytää vastaanottajalta toimenpidettä, varmista pyyntö virallisesta paketti- tai kuljetusyhtiökanavasta ennen tietojen antamista. Pidä yksityiset osoite- ja maksutiedot pois julkisista julkaisuista. Opas auttaa jäsentämään viivästyksen tosiasiat; se ei ennusta yksittäistä toimituspäivää tai korvaa kuljetusyhtiön selvitystä."
+        },
+        {
+          "title": "Säilytä arvion hyöty seuraavaa ostosta varten",
+          "text": "Vertaa toimituksen jälkeen alkuperäistä arviota lopulliseen pakettitietueeseen. Kirjaa pakatut mitat, paino, reitti, maksettu rahti ja havaitut toimitusvaiheet. Selitä sisällön tai pakkauksen muutokset, jotta vertailu pysyy mielekkäänä. Yksi toteutunut lähetys on hyödyllinen vertailukohta, ei yleinen hintalupaus tuleville paketeille.\n\nAvaa virallinen laskuri uudelleen ennen seuraavaa tilausta ja tarkista reittien nykyinen saatavuus. Hinnat, rajoitukset ja palvelut voivat muuttua. Vanhan arvion käyttäminen sen oletuksia tarkistamatta voi tehdä muuten huolellisesta tuotevertailusta harhaanjohtavan. Päivää jokainen esimerkki äläkä kutsu vanhentunutta lukua nykyiseksi reaaliaikaiseksi hinnaksi.\n\nKäytä kuljetusopasta yleiseen kustannusmenetelmään, varasto-opasta paketin valmisteluun ja seurantaopasta epäselviin päivityksiin. Tämän sivun taulukko yhdistää nämä vaiheet. Ostopäätökset vahvistuvat, kun tuotteen, paketin ja toimituksen tiedot koskevat kaikki samaa todellista tilausta."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OOPBuyn virallinen verkkosivusto",
+          "url": "https://oopbuy.com/"
+        },
+        {
+          "label": "OOPBuyn tarkastustiedot",
+          "url": "https://oopbuy.com/notice/details?id=1740664942636404738"
+        },
+        {
+          "label": "OOPBuyn toimituskulujen arvio",
+          "url": "https://oopbuy.com/estimation"
+        },
+        {
+          "label": "OOPBuyn aloittelijan opas",
+          "url": "https://oopbuy.com/notice/details?id=1739829963819945985"
+        },
+        {
+          "label": "OOPBuyn tilausten ja pakettien tilat",
+          "url": "https://oopbuy.com/notice/details?id=1775409280679739393"
+        }
+      ],
+      "related": [
+        "oopbuy-shipping-guide",
+        "oopbuy-warehouse-guide",
+        "oopbuy-tracking-guide"
+      ],
+      "format": "long",
+      "published": "2026-11-02",
+      "modified": "2026-11-02",
+      "tables": [
+        {
+          "afterSection": 3,
+          "caption": "Virallinen UK-arvio tarkistettu 2026-11-02: 2000 g, 30 × 20 × 15 cm, tavalliset merkittömät vaatteet; GBP",
+          "headers": [
+            "Reitti",
+            "Ennen näytettyä alennusta",
+            "Näytetyn alennuksen jälkeen",
+            "Arvio työpäivinä",
+            "Toimitusalueen tarkistus"
+          ],
+          "rows": [
+            [
+              "SF-RoyalMail-GB-1",
+              "£28.55",
+              "£21.34",
+              "7–14",
+              "Ei syrjäisiin osoitteisiin"
+            ],
+            [
+              "ZD-Roymail-GB-1",
+              "£28.86",
+              "£21.62",
+              "8–16",
+              "Ei syrjäisiin osoitteisiin"
+            ],
+            [
+              "S-Remote-RoyalMail-GB-1",
+              "£32.37",
+              "£25.16",
+              "7–14",
+              "Tarkista luetellut syrjäalueet ja postinumerosi"
+            ]
+          ]
+        },
+        {
+          "afterSection": 4,
+          "caption": "UK-paketin taulukko — täytä nykyisen arvion perusteella",
+          "headers": [
+            "Lähtötieto",
+            "Kirjattava tieto"
+          ],
+          "rows": [
+            [
+              "Kohde",
+              "Yhdistyneen kuningaskunnan osoite ja postinumeroalue"
+            ],
+            [
+              "Paketti",
+              "Pakattu paino, mitat ja tarkka tuoteluokka"
+            ],
+            [
+              "Reitti",
+              "Nimi, tarjouksen valuutta, summa, ehdot ja päivä"
+            ],
+            [
+              "Ajoitus",
+              "Alkamisvaihe ja työpäivän määritelmä"
+            ],
+            [
+              "Lopputarkistus",
+              "Vahvistettu veloitus ja pakettiviite"
+            ]
+          ]
+        }
+      ]
+    },
+    {
       "slug": "oopbuy-payment-methods",
       "title": "OOPBuy-maksutavat: saldon lataus, kulut ja maksuongelmat",
       "description": "Vertaa OOPBuyn dokumentoituja maksutapoja, tarkista saldon latauskulut ja valuutanvaihto sekä selvitä veloitettu maksu, joka ei näy saldossa.",
@@ -790,8 +1154,8 @@
     {
       "slug": "oopbuy-qc-photos",
       "tag": "Laaduntarkastus",
-      "title": "OOPBuy QC-kuvat: löydä ja tarkista oma tilauksesi",
-      "description": "Löydä oman tilauksesi OOPBuy-varaston QC-kuvat, tarkista koko ja näkyvä kunto sekä selvitä, milloin pyytää mittoja tai lisätietoja ennen lähetystä.",
+      "title": "OOPBuy QC-kuvat: mistä ne löytyvät ja mitä tarkistaa",
+      "description": "Etsi OOPBuy-tilauksesi QC-kuvat, tarkista valittu koko ja näkyvä kunto sekä pyydä hyödylliset yksityiskohta- tai mittakuvat ennen lähettämistä.",
       "primaryKeyword": "OOPBuy QC photos",
       "secondaryKeywords": [
         "OOPBuy quality check",
@@ -806,8 +1170,8 @@
       ],
       "sections": [
         {
-          "title": "Mistä löydät oman tilauksesi OOPBuy QC-kuvat",
-          "text": "Aloita ostetusta tuotteesta virallisella OOPBuy-tililläsi varaston vastaanoton ja tarkastuksen jälkeen. Katso juuri kyseiseen tilaukseen liitetyt kuvat ja tarkista tuote, vaihtoehto ja viite. Virallinen aloittelijan opas sijoittaa tarkastuksen saapumisen jälkeen; pelkkä myyjän lähetyspäivitys ei tarkoita varaston QC-kuvien olevan valmiita. Jos tieto on epäselvä, kysy tuelta tilausviitteen avulla.\n\nRiippumattoman taulukon kuva, myyjän kuva ja oma varastokuvasi palvelevat eri tarkoituksia. OOPBuy Tab näyttää tuotelähteensä luettelokuvia eikä tarjoa varmennettua julkista QC-kuvahakutietokantaa. Käytä luettelokuvia tuotteiden esivalintaan ja tarkista sitten oman tilauksesi todisteet ennen lähetyspäätöstä. Älä pidä samaa tuotenimeä todisteena siitä, että julkinen valokuva näyttää juuri ostamasi yksilön.\n\nJos yksityiskohta puuttuu, pyydä sen ratkaisemiseksi täsmällinen kuvakulma tai mitta. Määrittele esimerkiksi vaatteen mitta ja mittauspisteet tai kengän etiketti ja pohjallisen kuva. Vakiotarkastuksella on rajansa: kuvat eivät vahvista aitoutta, täydellistä istuvuutta tai ammattimaista toimintatestausta. Perusta päätöksesi siihen, mikä todella näkyy, ja pyydä selvennystä ennen paketin lähetyspyyntöä."
+          "title": "Etsi oikean tilauksen varastokuvat",
+          "text": "Aloita viralliselta OOPBuy-tililtäsi ja avaa asianomainen ostotilaus tai varastotuote sen vastaanottamisen ja käsittelyn jälkeen. Tarkat nimet voivat vaihdella nykyisen käyttöliittymän ja kielen mukaan. Yhdistä tilausviite, valittu väri, koko ja määrä ennen liitettyjen kuvien tarkastamista. Myyjän lähetysmerkintä ei todista varastokuvauksen valmistuneen.\n\nJos kuvat puuttuvat, erota ensin myyjän toimitus, varaston vastaanotto ja valmis varastointi. Tarkista, sisältääkö tilaus vahvistus- tai lisämaksupyynnön. Jos tuote näyttää vastaanotetulta mutta odotettu näyttö puuttuu yhä, ota yhteyttä tukeen tilausviitteen ja näkyvän tilan kanssa. Älä keksi kiinteää odotusaikaa toisen ostajan kokemuksesta.\n\nPäätä alla olevan tarkistuslistan avulla, mikä lisänäyttö vastaisi kysymykseesi. Tämä sivusto näyttää luettelon tuotekuvia eikä tarjoa tällä hetkellä vahvistettua historiallisten QC-kuvien hakua. Kuvia ei saa esittää oman tuotteesi tarkastuspöytäkirjana. Avaa viralliset tilaustiedot ennen istuvuutta, kuntoa tai versiota koskevan päätöksen hyväksymistä."
         },
         {
           "title": "Erota kolme tuotokuvan tyyppiä",
@@ -867,13 +1231,41 @@
       ],
       "format": "long",
       "published": "2026-10-21",
-      "modified": "2026-10-23"
+      "modified": "2026-11-02",
+      "tables": [
+        {
+          "afterSection": 0,
+          "caption": "QC-kysymys ja siihen vastaava näyttö",
+          "headers": [
+            "Kysymys",
+            "Pyydä tai vertaa"
+          ],
+          "rows": [
+            [
+              "Oikea tuote?",
+              "Tilausviite, valittu väri, koko ja määrä"
+            ],
+            [
+              "Oikeat mitat?",
+              "Nimetty mitta, näkyvät päätepisteet ja venyttämätön tuote"
+            ],
+            [
+              "Näkyvä ongelma?",
+              "Selkeä kuva juuri kyseisestä saumasta, kiinnityksestä tai vauriosta"
+            ],
+            [
+              "Kuvia ei saatavilla?",
+              "Tilauksen nykyinen vaihe ja kohdennettu tukipyyntö"
+            ]
+          ]
+        }
+      ]
     },
     {
       "slug": "oopbuy-shipping-guide",
       "tag": "Toimitus",
-      "title": "OOPBuyn toimituskulut: laskuri, paino ja maksut",
-      "description": "Käytä virallista OOPBuy-toimituslaskuria, vertaa pakattua painoa ja mittoja sekä budjetoi rahti, palvelut ja maksukulut ennen lähettämistä.",
+      "title": "OOPBuy-kuljetuslaskuri: arvioi paino, tilavuus ja kokonaiskulut",
+      "description": "Käytä OOPBuy-kuljetuslaskuria oikealla kohdemaalla, pakatulla painolla ja mitoilla. Vertaa reittiehtoja ja erota arviot lopullisista veloituksista.",
       "primaryKeyword": "OOPBuy shipping",
       "secondaryKeywords": [
         "OOPBuy shipping cost",
@@ -888,8 +1280,8 @@
       ],
       "sections": [
         {
-          "title": "Ymmärrä kaksi toimitusvaihetta",
-          "text": "OOPBuy-tilaus kulkee kahden erillisen toimitusvaiheen läpi. Ensin myyjä lähettää ostokset varastolle Kiinaan. Myöhemmin paketti lähetetään varastolta määränpäähäsi. Vaiheiden sekoittaminen selittää usein odottamattomalta näyttävän tilapäivityksen tai maksupyynnön.\n\nOOPBuyn ensikertalaisohje erottaa tuotteiden ja Kiinan sisäisen rahdin ensimmäisen maksun myöhemmästä kansainvälisen rahdin maksusta. Riippumattoman luettelon tuotehinta ei siksi ole kokonaiskustannus toimitettuna. OOPBuy Tabin dollarimäärät ovat tuotteiden löytämistä tukevia arvioita, eivät lopullisia kuljetustarjouksia.\n\nLaadi budjetti ennen tilaamista. Mieti, mitä pystyt maksamaan, jos pakattu lähetys on odotettua suurempi tai painavampi. Jos mietit kansainvälistä kuljetusta vasta kaikkien tavaroiden saavuttua varastolle, joudut ehkä valitsemaan kalliin kokonaishinnan ja suunnittelemattoman jälkipalveluprosessin väliltä."
+          "title": "Laadi käyttökelpoinen kuljetusarvio ennen ostamista",
+          "text": "OOPBuyn kuljetuskulut alkavat kahdesta erillisestä vaiheesta: myyjän toimituksesta Kiinan varastoon ja myöhemmästä kansainvälisestä paketista. Tuotetaulukon hinta ei sisällä kaikkia tilauksen kotiin saamiseksi tarvittavia maksuja. Pidä tuote, kotimaan toimitus, kansainvälinen rahti, lisäpalvelut ja maksukulut erillisinä budjetissasi.\n\nVertaa tarjouksia samalla kohdemaalla, tarkalla tuoteluokalla, pakatulla painolla ja mitoilla. Kirjaa arvion yhteyteen päivä, valuutta ja valittu reitti. Jos pakettia ei ole vielä pakattu, merkitse epävarmat lähtötiedot oletuksiksi ja päivitä ne varaston antaessa parempaa tietoa. Älä käytä pakkaamattoman tuotteen painoa vahvistettuna lähetyspainona.\n\nAlla oleva taulukko näyttää arvion toistamisen mahdollistavat tiedot. Maakohtaisia esimerkkejä varten käytä Saksan, Yhdysvaltojen ja Yhdistyneen kuningaskunnan oppaita ja lue päivämäärällä merkityt oletukset huolellisesti. Näkyvä aiempi summa on esimerkki eikä nykyinen tarjous. Vahvista saatavuus ja lopullinen maksu virallisesta pakettiprosessista ja reittiehdoista."
         },
         {
           "title": "Anna toimituslaskurille hyödylliset tiedot",
@@ -957,17 +1349,49 @@
       "related": [
         "oopbuy-shipping-germany",
         "oopbuy-shipping-usa",
-        "oopbuy-shipping-restrictions"
+        "oopbuy-shipping-uk"
       ],
       "format": "long",
       "published": "2026-10-21",
-      "modified": "2026-10-23"
+      "modified": "2026-11-02",
+      "tables": [
+        {
+          "afterSection": 0,
+          "caption": "Kuljetusarvion tarkistuslista",
+          "headers": [
+            "Lähtötieto",
+            "Kirjaa ennen vertailua"
+          ],
+          "rows": [
+            [
+              "Kohde",
+              "Maa ja mahdolliset postinumerorajoitukset"
+            ],
+            [
+              "Sisältö",
+              "Tarkka tuoteluokka ja reittikelpoisuus"
+            ],
+            [
+              "Koko ja paino",
+              "Pakatut mitat; merkitse oletukset"
+            ],
+            [
+              "Kustannus",
+              "Valuutta, päivä, reitti ja mukana olevat palvelut"
+            ],
+            [
+              "Loppumaksu",
+              "Tarkista todellinen pakattu paketti ja vahvistettu veloitus"
+            ]
+          ]
+        }
+      ]
     },
     {
       "slug": "oopbuy-sizing-guide",
       "tag": "Koot",
-      "title": "OOPBuy-koko-opas: lue kokotaulukot ja tarkista todelliset mitat",
-      "description": "Valitse vaatteet ja kengät selkeällä menetelmällä: vertaile myyjän taulukkoa, mittaa sopiva oma tuote ja pyydä kohdennettuja varastomittoja.",
+      "title": "OOPBuy-kokotaulukko-opas: mittaa vaatteet ja kengät ennen ostamista",
+      "description": "Lue OOPBuy-myyjien kokotaulukoita selkeiden mittaesimerkkien, vaatetarkistuslistan ja kengän istuvuustarkistusten avulla. Vertaa senttimetrejä ja tuumia arvaamatta kokoa.",
       "primaryKeyword": "OOPBuy sizing guide",
       "secondaryKeywords": [
         "OOPBuy size chart",
@@ -982,8 +1406,8 @@
       ],
       "sections": [
         {
-          "title": "Aloita listauksesta, älä yleisestä muunnoksesta",
-          "text": "Hyödyllisin OOPBuy-koko-opas alkaa rajoituksesta: älä oleta kaikkien myyjien käyttävän yhteistä kokotaulukkoa. M-koko, numerollinen kenkäkoko tai pituussuositus voivat tarkoittaa eri listauksissa eri asioita. Aloita vertailu täsmälleen kyseisen tuotteen taulukosta.\n\nOOPBuy on hankinta- ja logistiikka-agentti, kun taas tuotetiedot tulevat alkuperäisestä listauksesta. Tavallisesti käyttämäsi koon valinta ei osoita tilatun vaatteen mittojen vastaavan toisen myyjän tuotetta. Pidä tuttuja kokomerkkejä tunnisteina, kunnes mitat antavat niille merkityksen.\n\nTallenna taulukko ja vaihtoehto tilatessasi. Jos listaus muuttuu, tiedät silti päätöksesi perustan. Kuvakaappauksessa pitäisi näkyä tuotteen tunniste ja mittaustavan selitys, ei pelkkä suosikkikokosi rivi."
+          "title": "Lue kokotaulukko ja vertaa samaa mittaa",
+          "text": "OOPBuyn kokotaulukko kuuluu valittuun myyjän ilmoitukseen, ei yhteen koko alustan yleiseen kokojärjestelmään. Vahvista ensin tarkka tuote ja versio ja selvitä sitten, kuvaako taulukko vartalon mittoja vai valmista vaatetta. Tallenna taulukko valitun vaihtoehdon yhteyteen, jotta ilmoituksen myöhempi muutos ei poista päätöksesi perustaa.\n\nHavainnollistavassa vertailussa oma paitasi voi olla tasaisena rinnasta 54 cm leveä, kun myyjän valittu taulukko näyttää 52 cm. Ero on 2 cm tasaisena mitattuna, ei väite kummankaan paidan sopivuudesta tietylle henkilölle. Nämä esimerkkiluvut eivät ole luettelotuotteen määrityksiä. Käytä samoja mittauspisteitä ja vältä kankaan venyttämistä.\n\nMuunna yksiköt johdonmukaisesti: 1 tuuma on 2.54 cm. Siten 50.8 cm on 20 tuumaa. Älä sekoita vaatteen tasaista leveyttä vartalon ympärysmittaan tai ulkopohjan pituutta kengän sisäpituuteen. Jos taulukko ei kerro menetelmää, pyydä selvennystä sen sijaan, että pitäisit selittämätöntä lukua tarkkana istuvuusennusteena."
         },
         {
           "title": "Mittaa jo sopivaa tuotetta",
@@ -1043,7 +1467,35 @@
       ],
       "format": "long",
       "published": "2026-10-21",
-      "modified": "2026-10-21"
+      "modified": "2026-11-02",
+      "tables": [
+        {
+          "afterSection": 0,
+          "caption": "Mittauslista — vertaa vastaavia menetelmiä",
+          "headers": [
+            "Tuote",
+            "Hyödylliset mitat",
+            "Älä sekoita"
+          ],
+          "rows": [
+            [
+              "Paidat ja takit",
+              "Rinnan leveys tasaisena, hartiat, selkä ja hihat",
+              "Vaatteen leveys ja vartalon ympärysmitta"
+            ],
+            [
+              "Housut",
+              "Rento vyötärönauha, haarakorkeus, reisi ja sisäsauma",
+              "Rennot ja venytetyt mitat"
+            ],
+            [
+              "Kengät",
+              "Myyjän kokojärjestelmä ja ilmoitettu jalan tai sisäosan pituus",
+              "Ulkopohjan pituus ja sisäpituus"
+            ]
+          ]
+        }
+      ]
     },
     {
       "slug": "oopbuy-product-links",
@@ -1211,8 +1663,8 @@
     {
       "slug": "oopbuy-warehouse-guide",
       "tag": "Varasto",
-      "title": "OOPBuy-varasto-opas: saapumisesta paketin lähetyspyyntöön",
-      "description": "Selvitä, mitä tarkistaa OOPBuy-tilauksen saapuessa varastolle, miten seurata säilytyspäiviä ja milloin päättää palautuksesta tai lähetyksestä.",
+      "title": "OOPBuy-varasto-opas: tilauksen tila, QC ja paketin lähettäminen",
+      "description": "Ymmärrä OOPBuyn varastovaiheet, löydä tilauskuvat, selvitä säilytyskysymykset ja valmistele oikeat tuotteet ennen kansainvälisen paketin lähettämistä.",
       "primaryKeyword": "OOPBuy warehouse guide",
       "secondaryKeywords": [
         "OOPBuy warehouse storage",
@@ -1226,8 +1678,8 @@
       ],
       "sections": [
         {
-          "title": "Käsittele varastoa päätösvaiheena",
-          "text": "Varastovaihe tekee etäostoksesta helpommin arvioitavan. Voit verrata tilaukselle kirjattua tuotetta aikomaasi vaihtoehtoon, tarkastella tarkastustietoja ja päättää säilyttämisestä, lisäkysymyksestä tai sallitusta palautuspyynnöstä. Myös paketin suunnittelu konkretisoituu.\n\nÄlä tiivistä kaikkia vaiheita sanaan saapunut. Myyjän toimitus, varaston vastaanotto, tarkastus, säilytys, paketin valmistelu ja kansainvälinen lähetys ovat eri tapahtumia. Lue tilin todellinen tila ja siihen liittyvä tuote- tai pakettitunniste.\n\nHyödyllisintä on valmistella tarkistukset ennen saapumista. Säilytä valittu vaihtoehto ja tärkeät mitat. Kun varastomerkintä ilmestyy, vertaat sitä täsmälliseen odotukseen etkä yritä muistella alkuperäistä valintaasi."
+          "title": "Erota myyjän toimitus, varastokäsittely ja paketin lähetys",
+          "text": "OOPBuy-tilaus voi käydä läpi oston, myyjän lähetyksen, varaston vastaanoton, tarkastuksen ja säilytyksen ennen kansainvälisen paketin lähettämistä. Lue vaihe yhdessä tilaus- tai pakettiviitteen kanssa. Sama lyhyt tilasana voi tarkoittaa eri matkoja, joten lähetetyksi merkitty ostotilaus ei tarkoita kansainvälisen pakettisi lähteneen Kiinasta.\n\nKäytä alla olevaa vaiheluetteloa päätöksenteon apuna, älä lupauksena jokaisen käyttöliittymän täsmällisestä sanamuodosta. Toimituksen kuittaus voi edeltää valmistunutta tarkastusta ja varastointia. Jos tuotetta ei vielä voi valita pakettiin, tarkista nykyinen käsittelytila tai vastaustasi odottava pyyntö sen sijaan, että olettaisit tuotteen kadonneen.\n\nSelvitä ennen paketin lähettämistä valittu versio, näkyvä kunto ja tärkeät mitat oman tilauksesi näytön avulla. Tarkista säilytyksen määräaika ja tuotteelle nykyisin näkyvät vaihtoehdot. Paketin lähettämisen aloittaminen tarkoittaa valittujen varastotuotteiden valmistelua kansainväliseen kuljetukseen; se ei yksin todista kuljetusyhtiön vastaanottoa tai taattua toimituspäivää."
         },
         {
           "title": "Luo jokaiselle tuotteelle erillinen merkintä",
@@ -1287,7 +1739,45 @@
       ],
       "format": "long",
       "published": "2026-10-21",
-      "modified": "2026-10-21"
+      "modified": "2026-11-02",
+      "tables": [
+        {
+          "afterSection": 0,
+          "caption": "Varastovaiheiden tarkistuslista",
+          "headers": [
+            "Vaihe",
+            "Merkitys",
+            "Seuraava tarkistus"
+          ],
+          "rows": [
+            [
+              "Myyjän lähetys",
+              "Matka kohti varastoa",
+              "Kotimaan seurantaviite"
+            ],
+            [
+              "Varaston vastaanotto",
+              "Saapuminen; käsittely voi olla kesken",
+              "Tilauksen tila ja pyydetyt toimet"
+            ],
+            [
+              "Varastoitu tuote",
+              "Tarkasta saatavilla olevat tilaustiedot",
+              "QC, mitat ja säilytyksen määräaika"
+            ],
+            [
+              "Paketin lähettämisen aloitus",
+              "Valmistele valitut tuotteet kansainväliseen kuljetukseen",
+              "Osoite, reitti, pakkaus ja loppuveloitus"
+            ],
+            [
+              "Luovutus kuljetusyhtiölle",
+              "Kansainvälinen matka on alkanut",
+              "Paketin seurantaviite"
+            ]
+          ]
+        }
+      ]
     },
     {
       "slug": "oopbuy-returns-refunds",

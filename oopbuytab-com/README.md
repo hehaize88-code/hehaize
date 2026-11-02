@@ -12,9 +12,9 @@ Keep the existing npm 10-compatible lockfile. No new database, runtime secrets o
 
 CNBuyCha is the only product-data source. The runtime adapter reads the public catalog and detail pages. Images retain the exact source-returned URLs; prices are displayed in USD. The URL-only product-sitemap manifest is crawl-discovery metadata, not a product database or content snapshot. Product titles, prices and photos are not copied into it.
 
-Twenty-four locales share stable paths: English is at the root, and other locales use `/<locale>/`. Locale switching retains the route and valid listing parameters. Every locale contains 28 sourced FAQs, 14 complete articles, 3 guide overviews and 11 category introductions. The existing 10 long-form guides are preserved; four focused guides cover payment, Germany, the USA and restricted goods. All changes must pass locale, paragraph, numeric and reference parity checks before publication.
+Twenty-four locales share stable paths: English is at the root, and other locales use `/<locale>/`. Locale switching retains the route and valid listing parameters. Every locale contains 28 sourced FAQs, 17 complete articles, 3 guide overviews and 11 category introductions. The existing 10 long-form guides and four focused guides are preserved; three full guides add jackets, football jerseys and UK shipping. All changes must pass locale, paragraph, numeric and reference parity checks before publication.
 
-Article pages include summaries, contents, contextual reading links and catalog actions. The mobile view preserves all paragraphs with expandable sections. The homepage shows four recent article cards.
+Article pages include summaries, contents, contextual reading links and catalog actions. The mobile view opens the first section and preserves all paragraphs with expandable sections. Comparison tables and relevant category links support practical next steps. The homepage shows four recent article cards.
 
 ## Build and validation
 
@@ -38,4 +38,4 @@ The sitemap endpoints do not call the source site at request time. Refresh the U
 
 Production uses the existing GA4 measurement ID `G-CC6HPXJJN7`. Custom events measure product/registration/estimator clicks, article navigation and searches. They do not report purchases. `catalog_search` reports only query length in its custom parameters. Preview builds do not load the analytics scripts.
 
-Research and release rationale: `docs/SEO_RELEASE_2026-10-23.md`. Deployment records: `docs/PRODUCTION_DEPLOYMENT.md` and `PROJECT_MEMORY.md`.
+Latest research and release rationale: `docs/SEO_RELEASE_2026-11-02.md`; the previous release is retained in `docs/SEO_RELEASE_2026-10-23.md`. Deployment records: `docs/PRODUCTION_DEPLOYMENT.md` and `PROJECT_MEMORY.md`.
