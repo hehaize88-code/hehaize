@@ -57,3 +57,7 @@ Monitor settled GSC impressions/clicks/CTR by the revised page and query, Bing c
 ## Local validation result
 
 The full production gate passed on 2026-11-02: 408 article renders, 24 indexes, all 25 sitemap maps, 864 core URLs and 82,944 product URLs. Worker size is 7,909,298 bytes (1,920,571 gzip). The source-preservation comparison passed all 24 locales. Browser QA covered desktop UK content and 390px English, German and Maltese layouts, complete article expansion/collapse and keyboard-scrolling comparison tables without body overflow. See `SEO_LOCAL_VERIFICATION_2026-11-02.json`.
+
+## Deployment and live result
+
+Production commit `c7e6d1c88a208475a5feaf5b5332399c4c7999f6` passed Workers Builds and deployed successfully (build `03e6af04-14ac-44bb-ae9d-6f50e6e943bc`, completed `2026-11-02T02:54:18Z`). All 226 live HTTP checks passed, including the complete body and tables of all 168 new/revised localized articles. Chrome confirmed the English article index, English-to-German route-preserving switch, localized category links and source image loading. Details are in `SEO_LIVE_VERIFICATION_2026-11-02.json`. This confirms publication, not search indexing or traffic recovery.

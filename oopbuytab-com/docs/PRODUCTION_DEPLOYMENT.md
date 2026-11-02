@@ -6,29 +6,29 @@ Root directory: oopbuytab-com
 Worker: oopbuytab-com
 Build command: npm run build:production
 Deploy command: npx wrangler deploy
-Node.js: 22.22.0 (Astro requirement; .node-version and Cloudflare NODE_VERSION)
+Node.js: 22.22.0
+Build watch paths: oopbuytab-com/**
+Custom domains: oopbuytab.com and www.oopbuytab.com
 
-Production configuration is wrangler.jsonc. Deploying binds oopbuytab.com and www.oopbuytab.com; the Worker redirects www to the apex with the same path and query. Existing DNS/custom-domain ownership must be inspected before deployment. Do not overwrite unrelated DNS records.
+Current status: multilingual SEO update deployed and verified on 2026-11-02.
 
-The build embeds only client assets and editorial content. Product data continues to come from the CNBuyCha public site at request time. No product database is introduced.
+Production source commit: c7e6d1c88a208475a5feaf5b5332399c4c7999f6
+Cloudflare build: 03e6af04-14ac-44bb-ae9d-6f50e6e943bc
+GitHub Workers Builds result: success, completed 2026-11-02T02:54:18Z.
+
+Production configuration is wrangler.jsonc. The Worker redirects www to the apex with the same path and query. Existing DNS, domain ownership, source data and security configuration were preserved. This release used the existing GitHub integration; no new Cloudflare authorization was required.
+
+The build embeds client assets and editorial content. Product data continues to come from the CNBuyCha public site at request time. No product database is introduced. Images retain the source-returned URLs.
 
 Production robots and sitemaps are generated without source-site requests:
 - https://oopbuytab.com/robots.txt
 - https://oopbuytab.com/sitemap.xml
 - https://oopbuytab.com/sitemap-pages.xml
 
-The sitemap index contains 25 maps: one core map with 792 canonical URLs and 24 product maps with 3,456 URLs each (82,944 localized product URLs). Parameterized catalog/search pages and unavailable image search are excluded.
+The sitemap index contains 25 maps: one core map with 864 canonical URLs and 24 product maps with 3,456 URLs each (82,944 localized product URLs). Parameterized catalog/search pages and unavailable image search are excluded. There are 17 complete articles in each of 24 languages, 408 article pages total.
 
-Current status: multilingual SEO production update verified on 2026-10-23.
+The full local production gate passed, including 408 article renders, 24 article indexes, all sitemap maps, numeric/source/table parity, canonical/hreflang/schema, analytics, redirects, missing routes and source-outage behavior. Worker size: 7,909,298 bytes; gzip: 1,920,571 bytes. See SEO_LOCAL_VERIFICATION_2026-11-02.json.
 
-Deployment commit: cdc43b36929d48b11e63e86cb7c987cc11ae9348
-Cloudflare build: 15a3945e-39c1-4f44-b0a6-8b47033ccd77
-Worker version: a72196e2-18c5-442d-9cb1-20769d90bdb1
-Custom domains: oopbuytab.com and www.oopbuytab.com
-Build watch paths: oopbuytab-com/**
+Live HTTP verification passed all 226 checks: all 168 new/revised article URLs, 24 article indexes, the sitemap index and all 25 maps, homepage, robots, analytics, www redirect, and jacket/jersey category and product samples. Chrome verified English-to-German article switching, localized category navigation, 20 jacket product cards and loaded sample images. Mobile preview QA covered 390px English, German and Maltese layouts, section expansion/collapse and keyboard-scrolling tables. See SEO_LIVE_VERIFICATION_2026-11-02.json.
 
-The lockfile was regenerated with npm 10.9.2 to match Cloudflare Builds. Both clean dependency installation and production bundling pass. Do not replace it with the old extraneous esbuild lock entries.
-
-Current live checks: all 96 new localized article pages, 24 article indexes, four updated English guides, 25 XML maps, homepage, robots and analytics script passed (153 checks). Six additional checks cover www redirect, missing routes, pagination, FAQ and product detail. Chrome verified 390px mobile layout, all-section expansion/collapse, EN-to-DE language switching and all 13 homepage images. See SEO_LIVE_VERIFICATION_2026-10-23.json. The earlier PRODUCTION_VERIFICATION.json remains the initial deployment record.
-
-Browser Integrity Check rejects the stock Python urllib User-Agent with error 1010; a standard browser User-Agent and the user's actual Chrome both work. Security settings were preserved.
+Keep the existing npm 10-compatible lockfile. It was not changed in this release. Previous deployment records remain in SEO_RELEASE_2026-10-23.md and PROJECT_MEMORY.md. Successful publication is not a claim of increased clicks or search-engine indexing.
