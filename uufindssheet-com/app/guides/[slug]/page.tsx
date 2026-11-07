@@ -6,6 +6,7 @@ import { SiteFooter } from "../../components/site-footer";
 import { SiteHeader } from "../../components/site-header";
 import { localizedAlternates } from "../../seo-alternates";
 import { socialImage } from "../../seo-image";
+import { MobileDisclosure } from "../../components/mobile-disclosure";
 
 export const dynamicParams = false;
 
@@ -69,8 +70,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
         <div className="guide-layout">
           <aside>
-            <p>ON THIS PAGE</p>
+            <MobileDisclosure title="ON THIS PAGE" className="guide-toc">
             {guide.sections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{String(index + 1).padStart(2, "0")} — {section.heading.replace(/^\d+\.\s*/, "")}</a>)}
+            </MobileDisclosure>
           </aside>
           <div className="guide-body" data-visible-word-count={wordCount}>
             {guide.intro.map((paragraph) => <p className="lead" key={paragraph}>{paragraph}</p>)}
