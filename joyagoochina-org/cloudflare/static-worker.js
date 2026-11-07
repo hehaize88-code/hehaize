@@ -14,8 +14,10 @@ const localeCodes = new Set([
 const browserHtmlCacheControl = "public, max-age=0";
 const edgeHtmlCacheControl =
   "public, max-age=21600, stale-while-revalidate=86400";
-const htmlCacheVersion = "2026-11-07-joyagoo-mobile-reading";
-const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261107"><script defer data-mobile-reading="true" src="/mobile-reading.js?v=20261107"></script>';
+const htmlCacheVersion = "2026-11-07-joyagoo-mobile-reading-v2";
+// Load the reading controls from MobileReading after React has hydrated.
+// Injecting their script here could mutate article markup before hydration.
+const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261107">';
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
