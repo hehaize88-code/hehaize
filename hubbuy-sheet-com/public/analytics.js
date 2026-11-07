@@ -28,6 +28,7 @@
       const product = url.pathname.match(/^\/product\/2\/(\d+)/);
       if (product) send('hubbuy_product_click', { product_id: product[1], link_domain: url.hostname });
       else if (/^\/signUp\/?$/i.test(url.pathname)) send('hubbuy_signup_click', { link_domain: url.hostname });
+      else if (/^\/estimation\/?$/.test(url.pathname)) send('shipping_calculator_open', { link_domain: url.hostname });
       return;
     }
     if (url.origin !== location.origin) return;
@@ -35,6 +36,8 @@
     if (product) send('catalog_product_click', { catalog_id: product[1], link_path: url.pathname });
     else if (/\/catalog\/image-search\//.test(url.pathname)) send('image_search_open');
     else if (url.pathname.includes('/articles/')) send('article_internal_click', { link_path: url.pathname });
+    else if (/^\/(?:pt-br\/|de\/)?guides\//.test(url.pathname)) send('guide_internal_click', { link_path: url.pathname });
+    else if (/^\/(?:pt-br\/|de\/)?catalog\/[^/]+\/$/.test(url.pathname) && !url.search) send('catalog_category_click', { link_path: url.pathname });
     else if (a.closest('.sort-row') && ['new', 'click', 'price'].includes(url.searchParams.get('sort'))) send('catalog_sort', { sort_order: url.searchParams.get('sort') });
   }, true);
   document.addEventListener('hubbuy:image-search', event => {

@@ -1,3 +1,4 @@
+import { articleIndexCopy } from "@/data/november-ui";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import ArticleCover from "@/components/ArticleCover";
@@ -8,22 +9,23 @@ import { createPageMetadata } from "@/data/seo";
 import { getLocalizedPath } from "@/data/i18n";
 
 export const metadata = createPageMetadata({
-  title: "China Shopping Agent Articles & Hubbuy Guides",
-  description: "Read independent, long-form articles about Hubbuy spreadsheets, China shopping agents, warehouse QC, parcel planning and international shipping decisions.",
+  title: articleIndexCopy.en.title,
+  description: articleIndexCopy.en.intro,
   path: "/articles/",
   imageAlt: "China shopping agent articles from Hubbuy Sheet",
 });
 
 export default function ArticlesPage({ locale = "en" }) {
+  const copy = articleIndexCopy[locale];
   const visibleArticles = articles.filter((article) => !article.locales || article.locales.includes(locale)).map(article => getArticle(article.slug, locale));
   const [featuredArticle, ...moreArticles] = visibleArticles;
   const localPath = (path) => getLocalizedPath(path, locale);
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "China Shopping Agent Articles",
+    name: copy.title,
     url: `${SITE_URL}${localPath("/articles/")}`,
-    description: metadata.description,
+    description: copy.intro,
     hasPart: visibleArticles.map((article) => ({
       "@type": "Article",
       headline: article.title,
@@ -40,13 +42,14 @@ export default function ArticlesPage({ locale = "en" }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
       <PageHero
         eyebrow="Independent editorial"
-        title="China shopping agent articles"
-        intro="Long-form, fact-checked reading about product research, warehouse QC and parcel decisions. Guides explain the interface; articles examine the complete buying workflow."
+        title={copy.title}
+        intro={copy.intro}
         crumbs={["Articles"]}
       />
       <section className="section articles-index">
         <div className="wrap articles-index-grid">
           <div>
+            <nav className="article-topic-links" aria-label={copy.title}>{copy.topics.map(([label, href]) => <Link key={href} href={localPath(href)}>{label}</Link>)}</nav>
             <div className="article-index-heading">
               <span className="eyebrow">Start with the complete workflow</span>
               <p>{locale === "pt-br" ? `${visibleArticles.length} artigos em português com fontes verificadas` : locale === "de" ? `${visibleArticles.length} faktengeprüfte Artikel auf Deutsch` : `${visibleArticles.length} fact-checked English articles`}</p>

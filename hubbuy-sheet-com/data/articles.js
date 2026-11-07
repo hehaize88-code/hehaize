@@ -1,3 +1,4 @@
+import { novemberArticles } from "./november-articles.js";
 import { growthArticles, countEnglishWords } from "./growth-articles.js";
 import { growthUpdates } from "./growth-updates.js";
 import { octoberUpdates } from "./october-updates.js";
@@ -979,6 +980,18 @@ for (const article of articles) {
   article.wordCount += countEnglishWords(update.en.slice(0, 3).join(" "));
   article.toc = [["practical-answer", update.en[0]], ...article.toc];
 }
+// Preserve publication history and indexed URLs when replacing an existing article.
+for (const revision of novemberArticles) {
+  const old = articles.find(a => a.slug === revision.slug);
+  if (old) {
+    revision.published = old.published;
+    for (const locale of revision.locales) revision.variants[locale].displayDate = new Date(old.published + "T12:00:00Z").toLocaleDateString(locale === "pt-br" ? "pt-BR" : locale === "de" ? "de-DE" : "en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+    revision.displayDate = revision.variants.en.displayDate;
+    articles.splice(articles.indexOf(old), 1, revision);
+  }
+}
+articles.unshift(...novemberArticles.filter(a => !articles.some(old => old.slug === a.slug)));
+
 export function getArticle(slug, locale = "en") {
   const article = articles.find(article => article.slug === slug);
   if (article?.variants?.[locale]) return { ...article, ...article.variants[locale] };

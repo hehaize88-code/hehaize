@@ -290,7 +290,7 @@ const articlePages = articles.map((article) => ({
     secondaryTerms: article.longTailKeywords,
     searchIntent: article.excerpt,
     angle: article.deck,
-    evidence: article.growthContent ? ["Catalogue search, original-ID links and local image-search implementation checked 16 October 2026", "GSC and Bing query screenshots supplied by the site owner"] : ["HubbuyCN public purchase flow, service description and calculator checked 1 October 2026"],
+    evidence: article.novemberRevision ? ["Official Hubbuy purchase workflow and estimator checked 7 November 2026", "GSC, Bing and hostname-filtered GA4 audit on 7 November 2026; original editorial comparison examples"] : article.growthContent ? ["Catalogue search, original-ID links and local image-search implementation checked 16 October 2026", "GSC and Bing query screenshots supplied by the site owner"] : ["HubbuyCN public purchase flow, service description and calculator checked 1 October 2026"],
     internalLinkRole: article.growthContent ? "Three-language guide connected to the homepage, catalogue tools and related guides" : "Portuguese decision guide connected to the homepage, article collection and related purchase stages",
   }),
 }));

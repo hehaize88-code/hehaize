@@ -1201,3 +1201,9 @@ p { color: var(--muted); }
 
 .article-next-links { display: flex; flex-wrap: wrap; gap: .65rem; padding: 1rem 0; }
 .article-next-links a { display: inline-flex; align-items: center; padding: .7rem 1rem; border: 1px solid currentColor; border-radius: .6rem; font-weight: 650; }
+
+/* Topic navigation keeps the practical guides one tap from the article index. */
+.article-topic-links{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.article-topic-links a{display:inline-flex;padding:9px 12px;border:1px solid #cbd5d1;border-radius:8px;color:#123d32;font-size:14px;font-weight:650;text-decoration:none;background:#f7faf8}
+.article-topic-links a:hover,.article-topic-links a:focus-visible{background:#e4f1e9;border-color:#326c52}
+@media(max-width:680px){.article-topic-links{gap:6px;margin-bottom:16px}.article-topic-links a{padding:8px 10px;font-size:13px}.home-article-cards{gap:10px}}

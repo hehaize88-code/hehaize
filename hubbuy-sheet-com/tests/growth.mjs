@@ -37,10 +37,10 @@ for (const slug of [...growthArticles.map(a => a.slug), ...Object.keys(growthUpd
    const decoded = decode(body);
    for (const section of article.growthContent.sections) for (const text of section) assert.ok(decoded.includes(text), `${path}: complete local paragraph`);
    assert.ok(!body.includes('Research note:'));
-   for (const [, link] of article.growthContent.links) assert.ok(body.includes(`href="${prefix}${link}"`));
+   for (const [, link] of article.growthContent.links) assert.ok(body.includes(`href="${/^https?:/.test(link) ? link : prefix + link}"`));
    if (locale !== 'en') assert.ok(!decoded.includes(getArticle(slug).growthContent.deck));
   } else assert.ok(decode(body).includes(growthUpdates[slug][locale][0]));
-  assert.ok(html.includes('"dateModified":"2026-10-16"'));
+  assert.ok(html.includes(`"dateModified":"${article.updated}"`));
   pages++;
  }
 }

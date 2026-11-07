@@ -48,8 +48,11 @@ for (const locale of ['en', 'pt-br', 'de']) {
  p.image({ status: 'error', reason: 'file' });
  p.image({ status: 'error', reason: 'index' });
  p.click('https://hubbuy.com.example.com/signUp');
+ p.click('https://hubbuy.com/estimation?private=example');
+ p.click(origin + prefix + '/guides/shipping/');
+ p.click(origin + prefix + '/catalog/shoes/');
  const events = p.events();
- assert.deepEqual(events.map(e => e[1]), ['hubbuy_product_click', 'hubbuy_signup_click', 'catalog_product_click', 'image_search_open', 'article_internal_click', 'catalog_sort', 'site_search_submit', 'site_search_submit', 'site_search_submit', 'image_search_complete', 'image_search_error', 'image_search_error']);
+ assert.deepEqual(events.map(e => e[1]), ['hubbuy_product_click', 'hubbuy_signup_click', 'catalog_product_click', 'image_search_open', 'article_internal_click', 'catalog_sort', 'site_search_submit', 'site_search_submit', 'site_search_submit', 'image_search_complete', 'image_search_error', 'image_search_error', 'shipping_calculator_open', 'guide_internal_click', 'catalog_category_click']);
  assert.equal(events[0][2].product_id, '7853208944');
  assert.equal(events[2][2].catalog_id, '3460');
  assert.deepEqual(events.filter(e => e[1] === 'site_search_submit').map(e => e[2].search_method), ['product_id', 'link', 'text']);
@@ -59,7 +62,7 @@ for (const locale of ['en', 'pt-br', 'de']) {
  assert.ok(!events.some(e => ['purchase', 'sign_up', 'page_view'].includes(e[1])), 'clicks do not assert purchases, completed registration or another page view');
 }
 const worker = readFileSync('_worker.js', 'utf8');
-assert.ok(worker.includes('/analytics.js?v=20261016-growth-v1'));
+assert.ok(worker.includes('/analytics.js?v=20261107-guides-v1'));
 assert.ok(!readFileSync('app/layout.js', 'utf8').includes("gtag('config'"));
 assert.ok(!readFileSync('scripts/postprocess-locales.mjs', 'utf8').includes("gtag('config'"));
 console.log('PASS analytics: one initializer, hostname scope, 3 languages, product/signup/search/image/sort events, pagination exclusion and no custom-event query or file payload.');

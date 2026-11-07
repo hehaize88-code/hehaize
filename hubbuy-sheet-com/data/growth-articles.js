@@ -17,7 +17,7 @@ export const growthArticles = [imageSearch, clothing, searchLinks, shoes].map(so
    title: copy.title, seoTitle: copy.title, excerpt: copy.excerpt, category: copy.category,
    deck: copy.deck, growthContent: copy, socialImageAlt: copy.title,
    languageLabel: labels.language, displayDate: source.published ? labels.oldDate : labels.date,
-   factCheckedDisplayDate: labels.date, readTime: labels.read,
+   factCheckedDisplayDate: source.updated ? ({ en: "7 November 2026", "pt-br": "7 de novembro de 2026", de: "7. November 2026" }[locale]) : labels.date, readTime: labels.read,
    wordCount: locale === 'en' ? countEnglishWords(text) : text.split(/\s+/).filter(Boolean).length,
    cover: { label: copy.category.toLocaleUpperCase(locale), tone: 'workflow', steps: labels.steps },
    toc: copy.sections.map(([heading], index) => [`step-${index + 1}`, heading]),
@@ -27,7 +27,7 @@ export const growthArticles = [imageSearch, clothing, searchLinks, shoes].map(so
   slug: source.slug, ...variants.en, variants,
   locales: ['en', 'pt-br', 'de'],
   primaryKeyword: source.keyword, longTailKeywords: source.secondary,
-  published: source.published || '2026-10-16', updated: '2026-10-16', factChecked: '2026-10-16',
+  published: source.published || '2026-10-16', updated: source.updated || '2026-10-16', factChecked: source.updated || '2026-10-16',
   socialImage: source.image, citations: ['https://hubbuy-sheet.com/catalog/', 'https://hubbuy-sheet.com/catalog/image-search/', 'https://hubbuy.com/'],
   images: [], hideResearchEvidence: true, noExternalSourceLinks: true,
  };

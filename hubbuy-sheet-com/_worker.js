@@ -1,11 +1,11 @@
 import { catalogueRoute } from './commerce/catalog.mjs';
 const LEGACY_PRODUCTS = /*LEGACY_PRODUCTS*/ {};
-const GA4_SNIPPET = '<script src="/analytics.js?v=20261016-growth-v1"></script><script async src="/ga4-tag.js"></script>';
+const GA4_SNIPPET = '<script src="/analytics.js?v=20261107-guides-v1"></script><script async src="/ga4-tag.js"></script>';
 const MOBILE_READING_SCRIPT = '<script defer src="/mobile-reading.js?v=20261016-compact-v2"></script>';
 const MOBILE_INNER_STYLE = '<link rel="stylesheet" href="/mobile-inner.css?v=20261016-compact-v2">';
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
-  if (url.pathname === "/ga4-init.js") return new Response("if(!window.__hubbuyMeasurement){var s=document.createElement('script');s.src='/analytics.js?v=20261016-growth-v1';document.head.appendChild(s);}", { headers: { "content-type": "application/javascript; charset=utf-8", "cache-control": "public, max-age=3600" } });
+  if (url.pathname === "/ga4-init.js") return new Response("if(!window.__hubbuyMeasurement){var s=document.createElement('script');s.src='/analytics.js?v=20261107-guides-v1';document.head.appendChild(s);}", { headers: { "content-type": "application/javascript; charset=utf-8", "cache-control": "public, max-age=3600" } });
   if (url.pathname === "/ga4-tag.js") {
     const upstream = await fetch("https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2");
     const headers = new Headers(upstream.headers);

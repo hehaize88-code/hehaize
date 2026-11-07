@@ -56,10 +56,6 @@ const translatedMetaFields = new Set([
 
 
 function injectAnalytics(html) {
-  html = html.replace(/<article class="seo-article-body">[\s\S]*?<\/article>/g, (body) => body.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/g, (link, attributes, label) => {
-    const href = attributes.match(/href="([^"]+)"/)?.[1] || "";
-    return /^https?:\/\//.test(href) && !/^https:\/\/(?:www\.)?cnbuycha\.com(?:\/|$)/.test(href) && !href.startsWith(siteUrl + "/") ? label : link;
-  }));
   return html.replace("</body>", `<script defer src="/mobile-reading.js?v=20261016-compact-v2"></script></body>`);
 }
 
@@ -304,7 +300,7 @@ function sitemapXml(routes, selectedLocale = null, singleLanguageRoutes = []) {
         ["de", routeForLocale(route, "de")],
         ["x-default", routeForLocale(route, "en")],
       ]).map(([code, href]) => `    <xhtml:link rel="alternate" hreflang="${code}" href="${siteUrl}${href}" />`).join("\n");
-      records.push(`  <url>\n    <loc>${siteUrl}${path}</loc>\n    <lastmod>${article?.updated || (["/", "/articles/"].includes(route) ? "2026-10-16" : lastModified)}</lastmod>\n    <changefreq>${["/", "/products/", "/articles/"].includes(route) ? "weekly" : "monthly"}</changefreq>\n    <priority>${priority}</priority>\n${alternates}\n  </url>`);
+      records.push(`  <url>\n    <loc>${siteUrl}${path}</loc>\n    <lastmod>${article?.updated || (["/", "/articles/"].includes(route) ? "2026-11-07" : lastModified)}</lastmod>\n    <changefreq>${["/", "/products/", "/articles/"].includes(route) ? "weekly" : "monthly"}</changefreq>\n    <priority>${priority}</priority>\n${alternates}\n  </url>`);
     }
   }
   if (!selectedLocale || selectedLocale === "en") {

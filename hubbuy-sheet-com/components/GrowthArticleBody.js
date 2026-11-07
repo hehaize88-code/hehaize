@@ -10,7 +10,7 @@ export default function GrowthArticleBody({ article, locale }) {
    {paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
   </section>)}
   <nav className="article-next-links" aria-label={locale === 'pt-br' ? 'Próximos passos' : locale === 'de' ? 'Nächste Schritte' : 'Next steps'}>
-   {copy.links.map(([label, path]) => <Link key={path} href={getLocalizedPath(path, locale)}>{label}</Link>)}
+   {copy.links.map(([label, path]) => /^https:\/\//.test(path) ? <a key={path} href={path}>{label} ↗</a> : <Link key={path} href={getLocalizedPath(path, locale)}>{label}</Link>)}
   </nav>
  </>;
 }

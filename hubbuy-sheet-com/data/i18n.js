@@ -1,3 +1,4 @@
+import { articleIndexCopy } from "./november-ui.js";
 import { commerceTranslations } from "./commerce-translations.js";
 import { octoberTranslations } from "./october-translations.js";
 import { supplementalTranslations } from "./locale-content.js";
@@ -543,6 +544,12 @@ export function getLanguage(code) {
 export function translateExact(value, locale) {
   if (!value || locale === "en") return value;
   return translations[locale]?.[value] || value;
+}
+
+for (const locale of ["pt-br", "de"]) {
+  translations[locale][articleIndexCopy.en.title + " | Hubbuy Sheet"] = articleIndexCopy[locale].title + " | Hubbuy Sheet";
+  translations[locale][articleIndexCopy.en.title] = articleIndexCopy[locale].title;
+  translations[locale][articleIndexCopy.en.intro] = articleIndexCopy[locale].intro;
 }
 
 const reverseTranslations = Object.values(translations).reduce((reverse, dictionary) => {
