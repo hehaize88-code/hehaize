@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LocalizedPage } from "../components/LocalizedExperience";
 import { editorialSocialMetadata } from "../editorialAssets";
-import { priorityArticleLocales } from "../priorityShippingArticles";
+import { languages } from "../i18n";
 import { getSeoArticleEntry } from "../seoArticleLibrary";
 import { languageAlternates } from "../seoAlternates";
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: { absolute: "Why Is Joyagoo Shipping So Expensive? 7 Cost Drivers" },
   description: entry.article.description,
   keywords: entry.keywords,
-  alternates: languageAlternates(`/${slug}/`, priorityArticleLocales),
+  alternates: languageAlternates(`/${slug}/`, languages.filter(language => getSeoArticleEntry(language.code, slug)).map(language => language.code)),
   ...editorialSocialMetadata({ slug, title: entry.article.title, description: entry.article.description, url: `https://joyagoochina.org/${slug}/` }),
 };
 

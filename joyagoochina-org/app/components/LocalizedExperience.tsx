@@ -407,7 +407,7 @@ export function LocalizedHome({ locale }: { locale: Locale }) {
                   href={localizePath(locale, `/${slug}/`)}
                   key={slug}
                 >
-                  <span className="guide-number">0{index + 1}</span>
+                  <span className="guide-number">{String(index + 1).padStart(2, "0")}</span>
                   <small>{page.eyebrow}</small>
                   <h3>{page.title}</h3>
                   <p>{page.intro}</p>
@@ -439,6 +439,7 @@ function SeoArticleFeature({ locale }: { locale: Locale }) {
           <h2>{seo.indexTitle}</h2>
         </div>
         <p>{seo.indexIntro}</p>
+        <div className="article-count">{articles.length} {seo.navLabel}</div>
       </div>
       <div className="seo-feature-card">
         <a
@@ -542,10 +543,12 @@ function SectionBody({ section }: { section: ContentSection }) {
         <p key={paragraph}>{paragraph}</p>
       ))}
       {section.table && (
-        <table className="editorial-table">
+        <div className="editorial-table-scroll" role="region" aria-label={section.heading} tabIndex={0}>
+        <table className="editorial-table" data-columns={section.table.headers.length}>
           <thead><tr>{section.table.headers.map((label) => <th scope="col" key={label}>{label}</th>)}</tr></thead>
           <tbody>{section.table.rows.map((row, index) => <tr key={index}>{row.map((cell, column) => <td key={column}>{cell}</td>)}</tr>)}</tbody>
         </table>
+        </div>
       )}
       {section.callout && (
         <div className="editorial-callout">
@@ -662,7 +665,7 @@ function LocalizedGuidePage({
             <strong>{details.article.inGuide}</strong>
             {guide.sections.map((section, index) => (
               <a href={`#section-${index + 1}`} key={section.heading}>
-                <span>0{index + 1}</span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
                 {section.heading}
               </a>
             ))}
@@ -671,7 +674,7 @@ function LocalizedGuidePage({
           <div className="article-body">
             {guide.sections.map((section, index) => (
               <section id={`section-${index + 1}`} key={section.heading}>
-                <p className="section-count">0{index + 1}</p>
+                <p className="section-count">{String(index + 1).padStart(2, "0")}</p>
                 <h2>{section.heading}</h2>
                 <SectionBody section={section} />
               </section>
@@ -746,7 +749,7 @@ function LocalizedGuideIndex({ locale }: { locale: Locale }) {
             href={localizePath(locale, `/${card.slug}/`)}
             key={card.slug}
           >
-            <span className="guide-number">0{index + 1}</span>
+            <span className="guide-number">{String(index + 1).padStart(2, "0")}</span>
             <small>{card.eyebrow}</small>
             <h2>{card.title}</h2>
             <p>{card.text}</p>
@@ -770,6 +773,7 @@ function LocalizedSeoArticleIndex({ locale }: { locale: Locale }) {
         <p className="eyebrow">{seo.indexEyebrow}</p>
         <h1>{seo.indexTitle}</h1>
         <p>{seo.indexIntro}</p>
+        <div className="article-count">{articles.length} {seo.navLabel}</div>
       </section>
       <section className="seo-index-grid">
         {articles.map((entry, index) => (
@@ -788,11 +792,11 @@ function LocalizedSeoArticleIndex({ locale }: { locale: Locale }) {
               <p>{entry.article.description}</p>
               <div className="seo-feature-meta">
                 <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
-                <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
+                <span>{locale === "en" || entry.publishedAt === "2026-11-07" ? entry.readTime : seo.readTime}</span>
               </div>
               <strong>{seo.readArticle}</strong>
             </div>
-            <span className="seo-index-number">0{index + 1}</span>
+            <span className="seo-index-number">{String(index + 1).padStart(2, "0")}</span>
           </a>
         ))}
       </section>
@@ -892,7 +896,7 @@ function LocalizedSeoArticlePage({
           <p className="article-intro">{article.description}</p>
           <div className="article-meta">
             <span>{articleUpdatedLabel(locale, entry.modifiedAt)}</span>
-            <span>{locale === "en" ? entry.readTime : seo.readTime}</span>
+            <span>{locale === "en" || entry.publishedAt === "2026-11-07" ? entry.readTime : seo.readTime}</span>
             <span>{translations[locale].common.disclaimer}</span>
           </div>
         </header>
@@ -913,7 +917,7 @@ function LocalizedSeoArticlePage({
             <strong>{seo.contentsLabel}</strong>
             {article.sections.map((section, index) => (
               <a href={`#article-section-${index + 1}`} key={section.heading}>
-                <span>0{index + 1}</span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
                 {section.heading}
               </a>
             ))}
@@ -928,7 +932,7 @@ function LocalizedSeoArticlePage({
                 id={`article-section-${index + 1}`}
                 key={section.heading}
               >
-                <p className="section-count">0{index + 1}</p>
+                <p className="section-count">{String(index + 1).padStart(2, "0")}</p>
                 <h2>{section.heading}</h2>
                 <SectionBody section={section} />
               </section>
@@ -937,7 +941,9 @@ function LocalizedSeoArticlePage({
             <aside className="source-note">
               <strong>{seo.sourceTitle}</strong>
               <p>{entry.sourceBody}</p>
-              {!hidesEditorialSourceLinks.has(slug) && (
+              {entry.sources ? (
+                <div className="official-source-links"><ul>{entry.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul></div>
+              ) : !hidesEditorialSourceLinks.has(slug) && (
                 <OfficialSourceLinks locale={locale} slug={slug} />
               )}
             </aside>

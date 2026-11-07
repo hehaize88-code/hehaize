@@ -21,3 +21,24 @@ test('old product and search links redirect without changing the item or search 
 test('homepage uses live items, while failed reads clearly date the snapshot',async()=>{await mockFetch(async()=>new Response(listing),async()=>{const r=await commerceRoutes(new Request('https://joyagoochina.org/'),{},{});const html=await r.text();assert.match(html,/Lego/);assert.equal(r.headers.has('x-catalog-snapshot'),false)});await mockFetch(async()=>{throw Error()},async()=>{const r=await commerceRoutes(new Request('https://joyagoochina.org/it/'),{},{});assert.equal(r.headers.get('x-catalog-snapshot'),SNAPSHOT.date);assert.match(await r.text(),new RegExp(SNAPSHOT.date))});});
 test('image index has one descriptor per current item with valid local product routes',async()=>{const x=JSON.parse(await readFile(new URL('../public/catalog-image-index.json',import.meta.url)));assert.equal(x.indexedCount,3436);assert.equal(x.products.length,3436);assert.equal(new Set(x.products.map(p=>p.path)).size,3436);for(const p of x.products){assert.match(p.path,/^\/[a-z0-9-]+\/\d+\.html$/);assert.match(p.hash,/^[01]{64}$/);assert.equal(p.cells.length,48)}});
 test('catalogue sitemap includes all ten languages without search variants or duplicate AllProducts routes',async()=>{await mockFetch(async()=>new Response('<urlset><url><loc>https://cnbuycha.com/AllProducts/</loc></url><url><loc>https://cnbuycha.com/shoes/3459.html</loc></url></urlset>'),async()=>{const r=await commerceRoutes(new Request('https://joyagoochina.org/catalog-sitemap.xml'),{},{});const xml=await r.text();assert.equal((xml.match(/<url>/g)||[]).length,20);assert.match(xml,/\/sv\/catalog\/shoes\/3459.html/);assert.doesNotMatch(xml,/AllProducts|\?q=/)});});
+
+test('default catalogue query variants redirect before upstream reads and retain attribution',async()=>{
+ let calls=0;
+ await mockFetch(async()=>{calls++;throw Error('unexpected upstream')},async()=>{
+  for(const method of ['GET','HEAD'])for(const lang of LANGS){
+   const prefix=lang==='en'?'':'/'+lang;
+   const r=await catalogueRoute(new Request(`https://joyagoochina.org${prefix}/catalog/shoes/?q=&sort=new&page=1&utm_source=search`,{method}),{});
+   assert.equal(r.status,308);assert.equal(r.headers.get('location'),`https://joyagoochina.org${prefix}/catalog/shoes/?utm_source=search`);
+  }
+  const filtered=await catalogueRoute(new Request('https://joyagoochina.org/catalog/?q=coat&sort=new&page=1'),{});
+  assert.equal(filtered.headers.get('location'),'https://joyagoochina.org/catalog/?q=coat');
+  assert.equal(calls,0);
+ });
+});
+test('default listing navigation emits clean links while pagination remains usable',async()=>{
+ await mockFetch(async()=>new Response(listing),async()=>{
+  const r=await catalogueRoute(new Request('https://joyagoochina.org/catalog/shoes/'),{}),html=await r.text();
+  assert.doesNotMatch(html,/href="[^\"]*\?q=&/);assert.doesNotMatch(html,/href="[^\"]*[?&]page=1[&\"]/);
+  assert.match(html,/href="\/catalog\/shoes\/\?page=2"/);assert.match(html,/href="\/catalog\/shoes\/" aria-current="page"/);
+ });
+});

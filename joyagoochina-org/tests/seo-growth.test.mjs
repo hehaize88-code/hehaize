@@ -21,7 +21,7 @@ test('three complete new articles and four updates exist in every supported lang
  for(const [lang,copy] of Object.entries(all)){
   assert.equal(copy.articles.length,3);assert.equal(Object.keys(copy.refresh).length,4);
   if(lang!=='en')compare(en,copy,lang);
-  const articles=getSeoArticleEntries(lang);const expected=['en','zh','de','es','fr'].includes(lang)?26:18;assert.equal(articles.length,expected,lang);assert.equal(new Set(articles.map(a=>a.slug)).size,expected,lang);
+  const articles=getSeoArticleEntries(lang);const expected=29;assert.equal(articles.length,expected,lang);assert.equal(new Set(articles.map(a=>a.slug)).size,expected,lang);
   for(const a of articles.filter(a=>a.modifiedAt==='2026-10-16'))for(const link of a.relatedLinks||[])assert.ok(articles.some(a=>a.slug===link)||['articles','how-to-buy','qc-guide','shipping-guide','returns'].includes(link),lang+' '+link);
   for(const a of copy.articles){assert.equal(a.article.sections.length,8);for(const s of a.article.sections)assert.equal(s.paragraphs.length,2);}
  }
@@ -45,7 +45,7 @@ test('published new and revised pages have correct canonical, hreflang, headings
    assert.ok(html.includes(`<html lang="${lang}"`),path);assert.equal((html.match(/<h1(?:\s[^>]*)?>/g)||[]).length,1,path);
    assert.ok(html.includes(`rel="canonical" href="https://joyagoochina.org${path}"`),path);
    for(const alt of [...LANGS,'x-default']){const ap=['en','x-default'].includes(alt)?'':`/${alt}`;assert.ok(html.includes(`hrefLang="${alt}" href="https://joyagoochina.org${ap}/${a.slug}/"`)||html.includes(`hreflang="${alt}" href="https://joyagoochina.org${ap}/${a.slug}/"`),path+' '+alt);}
-   assert.match(html,/"dateModified":"2026-10-16"/,path);assert.match(html,/"@type":"BreadcrumbList"/,path);assert.doesNotMatch(html,/<meta name="robots"[^>]*noindex/i,path);
+   assert.ok(html.includes(`"dateModified":"${getSeoArticleEntries(lang).find(e=>e.slug===a.slug).modifiedAt}"`),path);assert.match(html,/"@type":"BreadcrumbList"/,path);assert.doesNotMatch(html,/<meta name="robots"[^>]*noindex/i,path);
    assert.ok(xml.includes(`<loc>https://joyagoochina.org${path}</loc>`),path);assert.ok(index.includes(`href="${path}"`),path);
    assert.match(html,/data-track-event="article_catalog_click"/,path);
   }

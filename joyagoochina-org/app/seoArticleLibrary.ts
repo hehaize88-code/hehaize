@@ -2,6 +2,7 @@ import {
   localizedContent,
 } from "./localizedContent";
 import { applyEditorialRefresh } from "./seoRefresh";
+import { applyNovemberRefresh } from "./seoNovember";
 import { applyGrowthRefresh } from "./seoGrowth";
 import type { Locale } from "./i18n";
 import {
@@ -90,6 +91,7 @@ export type SeoArticleEntry = {
   modifiedAt: string;
   readTime: string;
   relatedLinks?: string[];
+  sources?: Array<{ label: string; url: string }>;
 };
 
 const relatedArticleLinks: Record<SeoArticleSlug, string[]> = {
@@ -1001,10 +1003,10 @@ export function getSeoArticleEntries(locale: Locale): SeoArticleEntry[] {
       }))
     : [];
 
-  return applyGrowthRefresh(applyEditorialRefresh(
+  return applyNovemberRefresh(applyGrowthRefresh(applyEditorialRefresh(
     [...priorityEntries, ...additionalPriorityEntries, ...extraEntries, feeEntry],
     locale,
-  ), locale);
+  ), locale), locale);
 }
 
 export function getSeoArticleEntry(

@@ -1,0 +1,230 @@
+{
+  "zh": {
+    "slug": "joyagoo-volumetric-weight-shipping-cost",
+    "article": {
+      "eyebrow": "JOYAGOO 运费指南",
+      "title": "Joyagoo 体积重：打包前计算计费重量",
+      "description": "按照运输线路的除数计算 Joyagoo 体积重，与实际重量比较，并了解包装调整如何改变计费重量和运费预估。",
+      "facts": [
+        {
+          "value": "长×宽×高",
+          "label": "体积重计算使用包裹外部尺寸"
+        },
+        {
+          "value": "÷5000",
+          "label": "官方公布的除数之一；线路也可能使用 6000、7000 或 8000"
+        },
+        {
+          "value": "3 美元",
+          "label": "预打包专页标示的单件价格"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "先看一个清晰的计算实例",
+          "paragraphs": [
+            "示例计算：一个长 40、宽 30、高 25 厘米的包裹，体积为 30,000 立方厘米。除数为 5000 时，体积重是 6 千克；除数为 6000 时，则是 5 千克。如果实际重量为 4 千克，而所选线路按实际重量与体积重中的较大值收费，那么在应用该线路的进位规则之前，计费重量分别从 6 千克或 5 千克开始计算。",
+            "这些数字只用于说明算法，并非 Joyagoo 运费报价，也不代表所有线路都遵循同一规则。应使用打包后的外部尺寸、实际测量重量，以及报价线路标明的除数。运费计算器指南中的包裹计算表可以完成这一步计算，但不会凭空提供实时运价。"
+          ]
+        },
+        {
+          "heading": "仓库商品重量不等于最终包裹重量",
+          "paragraphs": [
+            "商品在仓库中看起来很轻，最终国际包裹的运费却可能较高。因为承运商运输的不只是重量，还有占用的空间。同样重七千克，一个紧凑的箱子比装满蓬松外套和大体积鞋类的箱子占用更少的飞机或货车空间。因此，Joyagoo 公布的运费说明区分了实际重量与体积重，并指出部分线路取两者中较大值收费。",
+            "实际重量包括商品及其包装材料。体积重则把包裹尺寸换算成用于计费的千克数。具体采用哪种规则，取决于所选线路和物流服务商。所以，统一的“每千克多少钱”说法容易误导：目的地、商品限制、首重与续重单位、包裹尺寸和线路规则，都可能改变结果。",
+            "购买商品前，应使用预估比较不同方案，而不是把它当作最终总价的承诺。只有仓库合并所选商品并执行包装要求后，最终包裹才真正形成。合理的运费预算应给包装重量、尺寸调整和线路可用性留出余量，不能假设仓储记录中的商品重量会原封不动地成为承运商的计费重量。"
+          ],
+          "callout": {
+            "title": "核心规则",
+            "text": "在采用体积计费的线路上，计费重量可能取实际重量与体积重中的较大值。"
+          }
+        },
+        {
+          "heading": "使用所选线路的除数计算体积重",
+          "paragraphs": [
+            "Joyagoo 公布的公式是包裹长×宽×高，尺寸单位为厘米，再除以 5000。同一帮助页面也提醒，第三方物流服务商可能使用 6000、7000 或 8000。除数直接影响结果：除数越小，体积重越大，因此必须查看所选线路的规则，不能把一个公式套用到所有线路。",
+            "例如，一个尺寸为 50×40×30 厘米的包裹，体积为 60,000 立方厘米。除以 5000，得到 12 千克；除以 6000，得到 10 千克；除以 8000，得到 7.5 千克。如果称重结果是 7 千克，而线路使用除数 5000，体积重会明显高于实际重量。如果另一条线路按实际重量收费，或使用更大的除数，同一个箱子的运费计算结果可能不同。",
+            "这个例子也说明，小幅缩减尺寸可能带来明显变化。将箱子缩为 45×35×25 厘米后，体积是 39,375 立方厘米，按除数 5000 计算为 7.875 千克。这并不保证运费一定降低，因为线路的价格档位和最低收费仍然适用。但它解释了为什么对体积大的包裹而言，减少不必要的空隙有时比减去几十克重量更有价值。"
+          ]
+        },
+        {
+          "heading": "理解预估计费重量与实际计费重量",
+          "paragraphs": [
+            "商品入库时，记录的重量可能包含原始商品包装。Joyagoo 关于计费重量的页面说明，首次提交包裹时，系统会预估额外包装重量。如果要求仓库去除盒子或更换包装，完成后的结果自然可能与预估不同。因此，打包前显示的金额属于预付或规划用费用，并不是对成品包裹测量后得出的费用。",
+            "仓库完成打包后，会称重并测量尺寸。如果物流服务商接受这些数据，它们就成为实际计费依据。如果承运商复测并调整数据，Joyagoo 表示应以物流服务商的测量为准。公布的说明指出，发货约三天后，可以在包裹详情中查看实际计费重量。",
+            "这个流程可以解释为什么有时需要补款，有时会退回差额。购物指南说明，普通包裹提交时先支付预估运费；实际费用更高时，可能需要补足差额。如果预付款较高，公布的处理方式是在最终金额确定后，把差额退回 Joyagoo 余额。核对结果时，应保存包裹详情页面及记录日期。"
+          ]
+        },
+        {
+          "heading": "尺寸可能影响选择时，再考虑预打包",
+          "paragraphs": [
+            "预打包是一项付费服务：在最终支付运费之前，先把选中的商品打包，以便获得测量重量和所选线路更新后的运费。Joyagoo 的预打包专页标价为每包裹 3 美元，并表示服务完成后 24 小时内通知用户。增值服务价目表也标示每包裹 3 美元。",
+            "另一份官方资料，也就是综合购物指南，则把预打包描述为 20 元人民币的服务。这两个公开金额接近，但并不完全相同。原因可能与货币展示或页面更新时间有关，但事实性指南不能直接认定原因。下单购买服务前，应以实时账户页面显示的当前价格为准。",
+            "当包装决定可能明显改变线路适用性或体积重时，预打包更有价值，例如多个鞋盒、蓬松外套、易碎品混装，或接近线路限制的包裹。它可以减少不确定性，但不会固定关税、承运商复核结果或之后所有物流条件。应在测量信息能够改变包裹方案时使用，而不是把它当成每单必加的费用。"
+          ],
+          "callout": {
+            "title": "官方页面存在价格差异",
+            "text": "预打包专页和服务表标示每包裹 3 美元；综合购物指南标示 20 元人民币。请确认实时账户价格。"
+          }
+        },
+        {
+          "heading": "按商品需要选择是否去除包装",
+          "paragraphs": [
+            "去除零售包装盒可能减少体积，也可能失去支撑、外观完整性或保护。鞋盒常是降低体积重的目标，但鞋子不带盒运输也可能增加挤压风险。易碎配件可能需要更多加固，而不是更少。应逐件判断哪些包装只是多余空间，哪些确实承担保护功能。",
+            "合并包裹可能减少重复外包装和重复首重费用，但过大的合包也可能触发体积重计费，或无法使用原本偏好的线路。如果商品的限制或保护需求不同，可以比较一个大包裹与两个合理的小包裹。看起来最便宜的单次预估，不一定对应风险最低的运输方案。",
+            "附加服务应解决明确的问题。Joyagoo 公布的资料涉及去包装、加固、保险和包裹拍照。增值服务表中，包裹拍照标价为每包裹 0.75 美元，包含封箱前一张、封箱后一张照片。照片可记录外部状态，但不能替代保险或适当的防护包装。"
+          ]
+        },
+        {
+          "heading": "比价之前先看线路是否适用",
+          "paragraphs": [
+            "Joyagoo 购物指南说明，系统会根据包裹商品筛选可用线路。电池、液体、磁铁、品牌商品、尺寸限制和目的地规则，都可能减少选择。普通服装预估中出现的线路，在实际包裹含有限制商品时可能不再出现。只要条件允许，应基于仓库中的真实商品组合进行对比。",
+            "官方公布的时效是从仓库发出开始计算的宽泛参考：空运通常为 10–20 天，海运为 45–85 天，铁路为 40–60 天。这些不是保证到货日期。周末、公共假期、海关、运输交接和物流服务商的揽收安排，都可能增加时间。因此，应同时评估价格、速度和风险。",
+            "优惠券只是费用计算中的一部分。购物指南表示，优惠券仅适用于国际运费，而且不可叠加。不要从商品价格中扣除运费券，也不要假设多项优惠能够合用。应在包裹付款时确认适用资格，因为当时展示的线路和账户规则才是实际依据。"
+          ]
+        },
+        {
+          "heading": "建立打包后仍然有用的运费对比",
+          "paragraphs": [
+            "为每个方案记录目的地、所选商品、仓储记录中的实际重量、预估尺寸、线路除数或计费规则、包装选择、可选服务，以及报价日期。对体积较大的方案计算体积重，并标明它与实际重量中较大的一项。随后预留预算余量，不要在商品购买阶段花光全部预算。",
+            "打包后，用测量数据替换预估。检查所选线路是否仍可用、包裹是否跨越价格档位，以及承运商之后是否调整了计费重量。这比只记住第一次计算器结果更有帮助，也便于清楚解释余额退款或额外补款的原因。",
+            "实际操作的重点是：在保留必要保护的前提下减少空隙，使用正确的计费重量比较线路，并在实测尺寸能够影响决定时购买预打包。Joyagoo 公布的公式有助于理解计算机制，但最终仍应参考实时包裹页面和承运商测量结果。"
+          ]
+        }
+      ]
+    },
+    "keywords": [
+      "Joyagoo 运费",
+      "Joyagoo 体积重",
+      "Joyagoo 预打包",
+      "Joyagoo 实际重量",
+      "Joyagoo 计费重量"
+    ],
+    "sourceBody": "于 2026 年 11 月 7 日更新，依据 Joyagoo 关于实际重量与体积重、预估与实际计费重量、预打包、购物指南、增值服务和公布时效的资料。实时线路规则及承运商最终测量仍是决定性依据。",
+    "publishedAt": "2026-07-30",
+    "modifiedAt": "2026-11-07",
+    "readTime": "阅读约 9 分钟",
+    "relatedLinks": [
+      "joyagoo-shipping-calculator-cost-estimate-guide",
+      "joyagoo-shipping-to-usa-cost-planner",
+      "why-is-joyagoo-shipping-so-expensive",
+      "joyagoo-parcel-consolidation-packaging-guide",
+      "articles"
+    ],
+    "seoTitle": "Joyagoo 体积重计算：公式、实例与包装选择"
+  },
+  "de": {
+    "slug": "joyagoo-volumetric-weight-shipping-cost",
+    "article": {
+      "eyebrow": "JOYAGOO-VERSANDKOSTENRATGEBER",
+      "title": "Joyagoo-Volumengewicht: Abrechnungsgewicht vor dem Packen berechnen",
+      "description": "Berechne das Joyagoo-Volumengewicht mit dem Divisor deiner Route, vergleiche es mit dem tatsächlichen Gewicht und prüfe den Einfluss der Verpackung.",
+      "facts": [
+        {
+          "value": "L×B×H",
+          "label": "Paketabmessungen für die Berechnung des Volumengewichts"
+        },
+        {
+          "value": "÷5000",
+          "label": "Ein veröffentlichter Divisor; Routen können 6000, 7000 oder 8000 verwenden"
+        },
+        {
+          "value": "3 US-Dollar",
+          "label": "Preis auf der gesonderten Seite zum Probepacken"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Ein nachvollziehbares Rechenbeispiel",
+          "paragraphs": [
+            "Ein Beispiel zur Veranschaulichung: Ein Paket mit 40 × 30 × 25 cm hat ein Volumen von 30.000 Kubikzentimetern. Mit einem Divisor von 5000 beträgt sein Volumengewicht 6 kg; mit 6000 sind es 5 kg. Wiegt es tatsächlich 4 kg und berechnet die gewählte Route den höheren Wert, beträgt das Ausgangsgewicht für die Abrechnung entsprechend 6 kg oder 5 kg, bevor die Rundungsregeln dieser Route angewendet werden.",
+            "Diese Zahlen erklären die Berechnung. Sie sind weder ein Versandangebot von Joyagoo noch eine Regel für sämtliche Linien. Verwende die Außenmaße des fertig gepackten Pakets, das tatsächlich gemessene Gewicht und den für die angebotene Route angegebenen Divisor. Die Paketrechnung im Ratgeber zum Versandkostenrechner führt diese Berechnung durch, ohne aktuelle Frachttarife zu erfinden."
+          ]
+        },
+        {
+          "heading": "Das Lagergewicht ist noch nicht das Gewicht des fertigen Pakets",
+          "paragraphs": [
+            "Ein Artikel kann im Lager leicht wirken und trotzdem ein teures internationales Paket ergeben. Der Grund: Transportunternehmen befördern Masse und beanspruchten Raum. Ein kompakter Karton mit sieben Kilogramm benötigt weniger Kapazität im Flugzeug oder Lkw als ein gleich schwerer Karton mit sperrigen Schuhen und Jacken. Joyagoos veröffentlichte Versanderklärung unterscheidet deshalb zwischen tatsächlichem Gewicht und Volumengewicht und erklärt, dass einige Routen den höheren der beiden Werte berechnen.",
+            "Das tatsächliche Gewicht umfasst das Produkt und seine Verpackungsmaterialien. Das Volumengewicht rechnet die Paketabmessungen in einen für die Abrechnung verwendeten Kilogrammwert um. Welche Regel gilt, hängt von der gewählten Route und dem Logistikunternehmen ab. Deshalb ist eine pauschale Aussage zum „Preis pro Kilogramm“ irreführend: Zielland, Produktbeschränkungen, erste und weitere Gewichtsstufen, Paketmaße und Routenregeln können das Ergebnis verändern.",
+            "Nutze Schätzungen vor dem Einkauf für den Vergleich verschiedener Möglichkeiten, nicht als Zusage eines endgültigen Gesamtpreises. Das fertige Paket existiert erst, wenn das Lager die ausgewählten Artikel zusammenstellt und deine Verpackungsanweisungen umsetzt. Ein sinnvoller Versandetat berücksichtigt Verpackungsgewicht, mögliche Maßänderungen und verfügbare Routen, statt anzunehmen, dass das erfasste Produktgewicht unverändert beim Transporteur abgerechnet wird."
+          ],
+          "callout": {
+            "title": "Die Grundregel",
+            "text": "Bei einer Route mit Volumenabrechnung kann der höhere Wert aus tatsächlichem Gewicht und Volumengewicht maßgeblich sein."
+          }
+        },
+        {
+          "heading": "Mit dem Divisor der gewählten Route rechnen",
+          "paragraphs": [
+            "Joyagoo veröffentlicht die Formel Paketlänge × Breite × Höhe in Zentimetern, geteilt durch 5000. Dieselbe Hilfeseite weist darauf hin, dass externe Logistikunternehmen stattdessen 6000, 7000 oder 8000 verwenden können. Der Divisor ist entscheidend: Ein kleinerer Divisor ergibt ein höheres Volumengewicht. Lies deshalb die Angaben der ausgewählten Route, statt dieselbe Formel auf jede Linie anzuwenden.",
+            "Ein Paket mit 50 × 40 × 30 Zentimetern hat ein Volumen von 60.000 Kubikzentimetern. Geteilt durch 5000 ergeben sich 12 Kilogramm; durch 6000 sind es 10 Kilogramm und durch 8000 noch 7,5 Kilogramm. Zeigt die Waage 7 Kilogramm an und verwendet die Route den Divisor 5000, liegt das Volumengewicht deutlich höher. Berechnet eine andere Linie das tatsächliche Gewicht oder verwendet einen größeren Divisor, kann derselbe Karton zu einer anderen Abrechnung führen.",
+            "Das Beispiel zeigt auch, warum kleine Änderungen der Abmessungen wichtig sein können. Ein auf 45 × 35 × 25 Zentimeter verkleinerter Karton hat 39.375 Kubikzentimeter Volumen beziehungsweise 7,875 Kilogramm Volumengewicht bei einem Divisor von 5000. Das garantiert keinen günstigeren Versand: Preisstufen und Mindestentgelte gelten weiterhin. Es erklärt aber, warum weniger unnötiger Leerraum bei einem sperrigen Paket wertvoller sein kann als einige eingesparte Gramm."
+          ]
+        },
+        {
+          "heading": "Geschätztes und tatsächliches Abrechnungsgewicht verstehen",
+          "paragraphs": [
+            "Bei der Einlagerung kann das erfasste Gewicht die ursprüngliche Produktverpackung enthalten. Joyagoos Seite zum Abrechnungsgewicht erklärt, dass das System bei der ersten Paketeinreichung zusätzliches Verpackungsgewicht schätzt. Wenn du das Lager bittest, Kartons zu entfernen oder die Verpackung zu ändern, kann das gepackte Ergebnis naturgemäß von dieser Schätzung abweichen. Der vor dem Packen angezeigte Betrag ist daher eine Vorauszahlung oder Planungsgröße, keine Messung eines fertigen Pakets.",
+            "Nach dem Packen wiegt und vermisst das Lager die Sendung. Akzeptiert das Logistikunternehmen diese Daten, werden sie zur tatsächlichen Abrechnungsgrundlage. Misst der Transporteur erneut und korrigiert die Angaben, ist laut Joyagoo die Messung des Logistikunternehmens maßgeblich. Die veröffentlichten Hinweise erklären, dass das tatsächliche Abrechnungsgewicht etwa drei Tage nach dem Versand in den Paketdetails eingesehen werden kann.",
+            "Dieser Ablauf erklärt sowohl Nachzahlungen als auch Erstattungen. Laut Einkaufsanleitung zahlst du bei einer normalen Paketeinreichung zunächst geschätzte Versandkosten. Liegt die tatsächliche Gebühr höher, kann eine Nachzahlung fällig werden. Übersteigt die Vorauszahlung den endgültigen Betrag, wird die Differenz nach dem beschriebenen Verfahren dem Joyagoo-Guthaben gutgeschrieben. Bewahre bei der Überprüfung die Ansicht der Paketdetails und das jeweilige Datum auf."
+          ]
+        },
+        {
+          "heading": "Probepacken nutzen, wenn die Maße die Entscheidung verändern können",
+          "paragraphs": [
+            "Probepacken ist ein kostenpflichtiger Schritt, bei dem ausgewählte Artikel vor der endgültigen Versandzahlung gepackt werden. Dadurch erhältst du ein gemessenes Gewicht und eine aktualisierte Gebühr für die gewählte Linie. Joyagoos gesonderte Seite zum Probepacken nennt 3 US-Dollar pro Paket und erklärt, dass Nutzer innerhalb von 24 Stunden nach Abschluss der Dienstleistung benachrichtigt werden. Auch die Tabelle der Zusatzleistungen nennt 3 US-Dollar pro Paket.",
+            "Eine andere offizielle Seite, die allgemeine Einkaufsanleitung, beschreibt Probepacken als Dienstleistung für 20 CNY. Diese veröffentlichten Beträge liegen nahe beieinander, sind aber nicht identisch. Möglicherweise hängen sie mit der Währungsanzeige oder unterschiedlichen Aktualisierungsständen zusammen; ein sachlicher Ratgeber kann den Grund jedoch nicht voraussetzen. Prüfe deshalb vor der Bestellung den aktuell im Konto angezeigten Preis.",
+            "Probepacken ist besonders hilfreich, wenn Verpackungsentscheidungen die Verfügbarkeit einer Route oder das Volumengewicht wesentlich beeinflussen können: mehrere Schuhkartons, voluminöse Oberbekleidung, gemischte zerbrechliche Artikel oder ein Paket nahe einer Routengrenze. Es verringert Unsicherheit, fixiert aber weder Zollgebühren noch Korrekturen des Transporteurs oder sämtliche späteren Transportbedingungen. Nutze es, wenn die zusätzlichen Informationen den Paketplan verändern können, statt es automatisch bei jeder Bestellung hinzuzufügen."
+          ],
+          "callout": {
+            "title": "Unterschiedliche veröffentlichte Preise",
+            "text": "Die gesonderte Seite und die Leistungstabelle nennen 3 US-Dollar pro Paket, die allgemeine Einkaufsanleitung 20 CNY. Prüfe den aktuellen Preis im Konto."
+          }
+        },
+        {
+          "heading": "Verpackung gezielt entfernen",
+          "paragraphs": [
+            "Das Entfernen eines Verkaufskartons kann Volumen einsparen, aber auch Stabilität, Präsentation oder Schutz kosten. Schuhkartons sind ein typischer Ansatzpunkt zur Senkung des Volumengewichts; Schuhe ohne Karton können jedoch stärker gequetscht werden. Zerbrechliches Zubehör braucht möglicherweise mehr Verstärkung statt weniger Verpackung. Entscheide für jeden Artikel, welche Verpackung unnötigen Leerraum erzeugt und welche eine echte Schutzfunktion erfüllt.",
+            "Das Zusammenlegen von Artikeln kann doppelte Außenverpackungen und mehrfach berechnete erste Gewichtsstufen reduzieren. Ein sehr großes Sammelpaket kann aber unter die Volumenabrechnung fallen oder für eine bevorzugte Route ungeeignet werden. Vergleiche ein großes Paket mit zwei sinnvoll aufgeteilten kleineren Paketen, wenn die Artikel unterschiedliche Beschränkungen oder Schutzanforderungen haben. Die zunächst günstigste Einzelschätzung beschreibt nicht immer die Sendung mit dem geringsten Risiko.",
+            "Zusatzleistungen sollten konkrete Probleme lösen. Joyagoos veröffentlichte Unterlagen erwähnen das Entfernen von Verpackungen, Verstärkung, Versicherung und Paketfotos. Die Tabelle der Zusatzleistungen nennt für Paketfotos 0,75 US-Dollar pro Paket, mit einem Bild vor und einem nach dem Verschließen. Ein Foto dokumentiert den äußeren Zustand; es ersetzt weder Versicherung noch geeignete Schutzverpackung."
+          ]
+        },
+        {
+          "heading": "Vor dem Preisvergleich die Eignung der Route prüfen",
+          "paragraphs": [
+            "Joyagoos Einkaufsanleitung erklärt, dass das System verfügbare Linien anhand der enthaltenen Produkte auswählt. Batterien, Flüssigkeiten, Magnete, Markenwaren, Größenbeschränkungen und Regeln des Ziellands können Optionen ausschließen. Eine Route, die bei einer Schätzung für gewöhnliche Kleidung erscheint, ist möglicherweise nicht verfügbar, sobald das tatsächliche Paket beschränkte Produkte enthält. Erstelle den Vergleich möglichst anhand der wirklichen Auswahl im Lager.",
+            "Die veröffentlichten Lieferzeiten sind grobe Richtwerte ab dem Verlassen des Lagers: Luftfracht wird üblicherweise mit 10–20 Tagen beschrieben, Seefracht mit 45–85 Tagen und Bahntransport mit 40–60 Tagen. Das sind keine garantierten Zustelltermine. Wochenenden, Feiertage, Zoll, Übergaben und der Abholplan des Logistikunternehmens können zusätzliche Zeit verursachen. Preis, Geschwindigkeit und Risiko müssen gemeinsam bewertet werden.",
+            "Gutscheine sind nur ein begrenzter Teil der Rechnung. Laut Einkaufsanleitung gilt ein Gutschein ausschließlich für die internationalen Versandkosten und lässt sich nicht mit weiteren Gutscheinen kombinieren. Ziehe ihn nicht vom Warenpreis ab und gehe nicht davon aus, dass mehrere Angebote gemeinsam nutzbar sind. Prüfe die Bedingungen bei der Paketzahlung, denn maßgeblich sind die dort angezeigten Routen- und Kontoregeln."
+          ]
+        },
+        {
+          "heading": "Einen Versandvergleich erstellen, der auch nach dem Packen hilft",
+          "paragraphs": [
+            "Notiere für jede Variante Zielland, ausgewählte Artikel, tatsächlich erfasstes Lagergewicht, geschätzte Maße, Divisor oder Abrechnungsregel der Route, Verpackungsentscheidung, Zusatzleistungen und Angebotsdatum. Berechne bei sperrigen Varianten das Volumengewicht und markiere den höheren Wert im Vergleich zum tatsächlichen Gewicht. Plane anschließend eine Reserve ein, statt das gesamte Budget bereits für die Waren auszugeben.",
+            "Ersetze die Schätzungen nach dem Packen durch Messwerte. Prüfe, ob die gewählte Route weiterhin verfügbar ist, ob das Paket eine Preisstufe überschritten hat und ob der Transporteur das Abrechnungsgewicht später korrigiert. Das hilft mehr, als sich nur das erste Rechnerergebnis zu merken. Außerdem lassen sich damit eine Gutschrift oder eine zusätzliche Zahlung nachvollziehbar erklären.",
+            "Praktisch heißt das: Leeren Raum reduzieren, ohne notwendigen Schutz aufzugeben; Routen anhand des richtigen Abrechnungsgewichts vergleichen; und Probepacken bezahlen, wenn gemessene Abmessungen die Entscheidung verändern können. Joyagoos veröffentlichte Formeln erklären die Berechnung. Die aktuelle Paketseite und die Messung des Transporteurs bleiben jedoch die endgültigen Bezugspunkte."
+          ]
+        }
+      ]
+    },
+    "keywords": [
+      "Joyagoo Versandkosten",
+      "Joyagoo Volumengewicht",
+      "Joyagoo Probepacken",
+      "Joyagoo tatsächliches Gewicht",
+      "Joyagoo Abrechnungsgewicht"
+    ],
+    "sourceBody": "Am 7. November 2026 aktualisiert anhand der Joyagoo-Seiten zu tatsächlichem Gewicht und Volumengewicht, geschätztem und tatsächlichem Abrechnungsgewicht, Probepacken, Einkaufsanleitung, Zusatzleistungen und veröffentlichten Lieferzeitspannen. Die aktuellen Routenregeln und endgültigen Messungen des Transporteurs bleiben maßgeblich.",
+    "publishedAt": "2026-07-30",
+    "modifiedAt": "2026-11-07",
+    "readTime": "9 Minuten Lesezeit",
+    "relatedLinks": [
+      "joyagoo-shipping-calculator-cost-estimate-guide",
+      "joyagoo-shipping-to-usa-cost-planner",
+      "why-is-joyagoo-shipping-so-expensive",
+      "joyagoo-parcel-consolidation-packaging-guide",
+      "articles"
+    ],
+    "seoTitle": "Joyagoo-Volumengewicht: Formel, Beispiele und Verpackung"
+  }
+}

@@ -63,7 +63,7 @@ export function footer(lang) {
 export function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://joyagoochina.org'+prefix(lang)+path;
  const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}${title.includes('Joyagoo Spreadsheet')?'':' | Joyagoo Spreadsheet'}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${noindex?'noindex,follow':'index,follow'}"><link rel="canonical" href="${canonical}"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><meta property="og:image" content="https://joyagoochina.org/joyagoo-official-logo.svg">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://joyagoochina.org${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://joyagoochina.org${path}"><link rel="icon" href="/joyagoo-official-icon.png"><link rel="stylesheet" href="/catalog.css?v=20261016-seo"><link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v2"><script src="/catalog.js?v=20261016-seo" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-QY8MM7VZV2");</script></head><body>${nav(lang,path+query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
- return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-joyagoo-release':'2026-10-16-joyagoo-seo-growth'}});
+ return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-joyagoo-release':'2026-11-07-joyagoo-content-parity'}});
 }
 export function productsForCategory(products, category) {
  // Confirmed upstream taxonomy error. Keep the item discoverable in All Products;
@@ -120,9 +120,17 @@ export async function catalogueRoute(request,env) {
   const q=(url.searchParams.get('q')||url.searchParams.get('keywords')||'').trim().slice(0,100);
   const sort=['new','click','price'].includes(url.searchParams.get('sort'))?url.searchParams.get('sort'):'new';
   const page=Math.min(10000,Math.max(1,Number.parseInt(url.searchParams.get('page')||'1')||1));
+  // Remove empty/default listing parameters without discarding campaign attribution.
+  const clean=new URL(url);let normalized=false;
+  for(const [key,value] of [['q',''],['sort','new'],['page','1']]) {
+   if(clean.searchParams.has(key)&&clean.searchParams.getAll(key).every(v=>v===value)) {
+    clean.searchParams.delete(key);normalized=true;
+   }
+  }
+  if(normalized)return Response.redirect(clean.href,308);
   const params=new URLSearchParams({q,sort,page:String(page)}),data=parseList(await upstream('/'+cat+'/',params));
   data.products=productsForCategory(data.products,cat);
-  const route=localPath('/'+cat+'/',lang),link=(s,p=1)=>`${route}?${new URLSearchParams({q,sort:s,page:String(p)})}`;
+  const route=localPath('/'+cat+'/',lang),link=(s,p=1)=>{const query=new URLSearchParams();if(q)query.set('q',q);if(s!=='new')query.set('sort',s);if(p>1)query.set('page',String(p));return route+(query.size?'?'+query:'');};
   const names=CATEGORY_LABELS[lang]||CATEGORY_LABELS.en,categoryTitle=names[CATEGORIES.indexOf(cat)];
   const title=cat==='AllProducts'?t[0]:`Joyagoo ${categoryTitle} Spreadsheet`;
   return shell(lang,path,title,`${title}. ${t[15]}`,`<p class="catalog-eyebrow">JOYAGOO SPREADSHEET · USD</p><h1>${title}</h1><div class="catalog-tools">${searchForm(lang,q,cat,sort)}<a class="image-search-link" href="${base(lang)}/image-search/">▧ ${t[6]}</a></div><nav class="category-filters">${CATEGORIES.map((c,i)=>`<a href="${localPath('/'+c+'/',lang)}" ${c===cat?'aria-current="page"':''}>${names[i]}</a>`).join('')}</nav><div class="sort-row">${[['new',t[3]],['click',t[4]],['price',t[5]]].map(([s,n])=>`<a href="${link(s)}" ${sort===s?'aria-current="page"':''}>${n}</a>`).join('')}<span>${page} / ${Math.max(page,data.pages)}</span></div><div class="catalog-grid">${data.products.length?data.products.map(p=>card(p,lang)).join(''):`<p class="empty-state">${t[13]}</p>`}</div>${buyingGuides(lang)}<nav class="catalog-pagination">${page>1?`<a href="${link(sort,page-1)}">← ${t[11]}</a>`:''}${page<data.pages?`<a href="${link(sort,page+1)}">${t[12]} →</a>`:''}</nav>`,{noindex:!!q||sort!=='new'||page>1,query:url.search});
