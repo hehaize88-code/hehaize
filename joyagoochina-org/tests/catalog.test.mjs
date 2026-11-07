@@ -42,3 +42,11 @@ test('default listing navigation emits clean links while pagination remains usab
   assert.match(html,/href="\/catalog\/shoes\/\?page=2"/);assert.match(html,/href="\/catalog\/shoes\/" aria-current="page"/);
  });
 });
+
+
+test('commerce response decoration preserves immutable redirects for GET and HEAD',async()=>{
+ for(const method of ['GET','HEAD'])for(const path of ['/catalog/shoes/?q=&sort=new&page=1','/pl/catalog/shoes/?page=1','/catalog/AllProducts/','/catalog/shoes']){
+  const r=await commerceRoutes(new Request('https://joyagoochina.org'+path,{method}),{},{});
+  assert.ok([301,308].includes(r.status),path);assert.ok(r.headers.get('location'),path);assert.equal(r.headers.get('x-joyagoo-release'),'2026-11-07-joyagoo-content-parity-v2',path);
+ }
+});

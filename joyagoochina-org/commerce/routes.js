@@ -1,7 +1,7 @@
 import {catalogueRoute,upstream,CATEGORIES,LANGS} from './catalog.js';
 import {homepageRoute} from './home.js';
 import {LEGACY_PRODUCTS} from './content.js';
-export const RELEASE='2026-11-07-joyagoo-content-parity';
+export const RELEASE='2026-11-07-joyagoo-content-parity-v2';
 export const SITEMAP_INDEX='<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://joyagoochina.org/editorial-sitemap.xml</loc></sitemap><sitemap><loc>https://joyagoochina.org/catalog-sitemap.xml</loc></sitemap></sitemapindex>';
 export async function commerceRoutes(request,env,ctx) {
  const url=new URL(request.url),locale=url.pathname.match(/^\/(zh|de|pl|es|it|fr|pt|ro|sv)(?=\/|$)/)?.[0]||'',bare=url.pathname.slice(locale.length)||'/';
@@ -30,8 +30,10 @@ export async function commerceRoutes(request,env,ctx) {
  const edge=globalThis.caches?.default,keyURL=new URL(url);keyURL.searchParams.set('__commerce_version',RELEASE);
  const key=new Request(keyURL,{method:'GET'});
  if(edge&&request.method==='GET'){const cached=await edge.match(key);if(cached)return cached;}
- const response=isHome?await homepageRoute(request):await catalogueRoute(request,env);
- if(!response)return null;
+ const routed=isHome?await homepageRoute(request):await catalogueRoute(request,env);
+ if(!routed)return null;
+ // Redirect responses have immutable headers in the Worker runtime.
+ const response=new Response(routed.body,{status:routed.status,statusText:routed.statusText,headers:routed.headers});
  response.headers.set('x-joyagoo-release',RELEASE);
  if(edge&&ctx?.waitUntil&&request.method==='GET'&&response.status===200&&!response.headers.has('x-catalog-snapshot'))ctx.waitUntil(edge.put(key,response.clone()));
  return request.method==='HEAD'?new Response(null,{status:response.status,headers:response.headers}):response;
