@@ -5,6 +5,8 @@ import { SiteFooter } from "../components/site-footer";
 import { articleCards } from "../site-data";
 import { localizedAlternates } from "../seo-alternates";
 import { socialImage } from "../seo-image";
+import { MobileArticleArchive } from "../components/mobile-article-archive";
+import { MobileDisclosure } from "../components/mobile-disclosure";
 
 export const metadata: Metadata = {
   title: "UUFinds Guides: QC Search, Spreadsheets & Comparisons",
@@ -36,12 +38,14 @@ export default function ArticlesPage() {
         <p>Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to the main site.</p>
       </section>
       <section className="hub-content">
+        <MobileDisclosure title="How we check our guides" className="article-standards-disclosure">
         <div className="official-fact-strip article-standard">
           <article><span>01</span><div><strong>Claim standard</strong><p>Feature statements must be supported by UUFinds’ public QC, account, product or app information.</p></div></article>
           <article><span>02</span><div><strong>Advice standard</strong><p>Inspection advice must clearly distinguish a visible observation from an unsupported conclusion.</p></div></article>
           <article><span>03</span><div><strong>Link standard</strong><p>Every shopping, category and product destination on this site points only to the main site.</p></div></article>
         </div>
-        <div className="article-grid article-hub-grid">
+        </MobileDisclosure>
+        <MobileArticleArchive>
           {articleCards.map((article, index) => (
             <Link href={article.href} data-track-event="guide_click" data-cta-position="article_index" className={`article-card${article.featured ? " article-card-featured" : ""}`} key={article.href}>
               <div className="article-meta"><span>{article.tag}</span><b>{String(index + 1).padStart(2, "0")}</b></div>
@@ -49,7 +53,7 @@ export default function ArticlesPage() {
               <div className="article-foot"><span>{article.read}</span><b>Read article ↗</b></div>
             </Link>
           ))}
-        </div>
+        </MobileArticleArchive>
         <div className="source-method-note">
           <p className="eyebrow">Editorial source set</p>
           <p>The current guide set was reviewed against UUFinds’ public QC finder and QC browsing copy, product-detail disclaimers, account pages, personalized display description and public app information. Where those sources do not establish a fact—such as a guaranteed number of recent QC sets, shipping price or product quality—the articles do not invent one.</p>

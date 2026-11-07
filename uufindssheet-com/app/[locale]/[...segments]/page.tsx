@@ -5,6 +5,8 @@ import { SiteHeader } from "../../components/site-header";
 import { SiteFooter } from "../../components/site-footer";
 import { DocumentLanguage } from "../../components/document-language";
 import { SiteImage } from "../../components/site-image";
+import { MobileArticleArchive } from "../../components/mobile-article-archive";
+import { MobileDisclosure } from "../../components/mobile-disclosure";
 import { guides } from "../../guides/article-data";
 import { products, type ProductFind } from "../../products/product-data";
 import { articleCards, categories } from "../../site-data";
@@ -237,8 +239,9 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
           </div>
           <div className="guide-layout">
             <aside>
-              <p>{localizeText(currentLocale, "ON THIS PAGE")}</p>
+              <MobileDisclosure title={localizeText(currentLocale, "ON THIS PAGE")} className="guide-toc">
               {guide.sections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{String(index + 1).padStart(2, "0")} — {section.heading.replace(/^\d+\.\s*/, "")}</a>)}
+              </MobileDisclosure>
             </aside>
             <div className="guide-body">
               {guide.intro.map((paragraph) => <p className="lead" key={paragraph}>{paragraph}</p>)}
@@ -412,6 +415,7 @@ function LocalizedArticles({
         <p>{translate("Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to the main site.")}</p>
       </section>
       <section className="hub-content">
+        <MobileDisclosure title={{ "en-gb": "How we check our guides", de: "So prüfen wir unsere Ratgeber", pl: "Jak sprawdzamy nasze poradniki", "pt-br": "Como verificamos nossos guias" }[locale]} className="article-standards-disclosure">
         <div className="official-fact-strip article-standard">
           {standards.map((standard, index) => (
             <article key={standard.title}>
@@ -420,7 +424,8 @@ function LocalizedArticles({
             </article>
           ))}
         </div>
-        <div className="article-grid article-hub-grid">
+        </MobileDisclosure>
+        <MobileArticleArchive locale={locale}>
           {articleCards.map((article, index) => {
             const slug = article.href.split("/").filter(Boolean).pop() ?? "";
             const guide = guides.find((item) => item.slug === slug);
@@ -438,7 +443,7 @@ function LocalizedArticles({
               </Link>
             );
           })}
-        </div>
+        </MobileArticleArchive>
         <div className="source-method-note">
           <p className="eyebrow">{translate("Editorial source set")}</p>
           <p>{translate("The current guide set was reviewed against UUFinds’ public QC finder and QC browsing copy, product-detail disclaimers, account pages, personalized display description and public app information. Where those sources do not establish a fact—such as a guaranteed number of recent QC sets, shipping price or product quality—the articles do not invent one.")}</p>
