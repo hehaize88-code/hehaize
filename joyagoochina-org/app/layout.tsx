@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import OutboundTracker from "./components/OutboundTracker";
+import MobileReading from "./components/MobileReading";
 import { socialImage } from "./editorialAssets";
 import { languageAlternates } from "./seoAlternates";
 
@@ -87,6 +88,7 @@ export default function RootLayout({
       >
         {children}
         <OutboundTracker />
+        <MobileReading />
       </body>
     </html>
   );
