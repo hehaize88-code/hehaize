@@ -1,3 +1,4 @@
+import { applyNovemberGuide, isNovemberGuide, newNovemberGuides } from "./november-release";
 import { octoberGuides } from "./october-guides";
 import { englishGuideUpdates } from "./english-guide-updates";
 import { completionGuides } from "./completion-guides";
@@ -13,6 +14,7 @@ export type Guide = {
   readTime: string;
   publishedISO?: string;
   sourceNote?: string;
+  sources?: { label: string; href: string }[];
   hideSourceNote?: boolean;
   modifiedISO?: string;
   englishOnly?: boolean;
@@ -34,7 +36,7 @@ export type Guide = {
   relatedLinks?: { href: string; label: string; description: string }[];
 };
 
-export const guides: Guide[] = [
+const baseGuides: Guide[] = [
   ...octoberGuides,
   ...completionGuides,
   {
@@ -2434,7 +2436,9 @@ export const guides: Guide[] = [
   },
 ];
 
+export const guides: Guide[] = [...newNovemberGuides, ...baseGuides.map(guide => isNovemberGuide(guide.slug) ? { ...guide, englishOnly: false, modifiedISO: "2026-11-07" } : guide)];
+
 export function getGuide(slug: string) {
   const guide = guides.find((guide) => guide.slug === slug);
-  return guide ? { ...guide, ...englishGuideUpdates[slug] } : undefined;
+  return guide ? applyNovemberGuide({ ...guide, ...englishGuideUpdates[slug] }) : undefined;
 }

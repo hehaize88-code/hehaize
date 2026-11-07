@@ -1,3 +1,4 @@
+import { GuideResources } from "../../components/guide-resources";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -97,20 +98,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 )}
               </section>
             ))}
-            {guide.relatedLinks && (
-              <section className="related-reading" aria-labelledby="related-reading-heading">
-                <p className="section-number">NEXT</p>
-                <h2 id="related-reading-heading">Continue the research</h2>
-                <div className="related-reading-grid">
-                  {guide.relatedLinks.map((item) => (
-                    <Link href={item.href} key={item.href} data-track-event="guide_click" data-cta-position="related_reading">
-                      <strong>{item.label} →</strong>
-                      <span>{item.description}</span>
-                    </Link>
-                  ))}
-                </div>
-              </section>
-            )}
+            <GuideResources guide={guide} />
             {!guide.hideSourceNote && guide.evidence && (
               <section className="evidence-ledger" aria-labelledby="evidence-ledger-heading">
                 <p className="section-number">SOURCES</p>
