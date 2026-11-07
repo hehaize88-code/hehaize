@@ -1,3 +1,5 @@
+import { GuideResources } from "../../components/guide-resources";
+import { releaseUi } from "../../guides/november-release";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -118,14 +120,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     : product
       ? `${product.shortName} – $${product.price} | UUFinds`
       : guide
-        ? `${guide.title} – ${t.guide}`
-        : `${route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how} | UUFinds Sheet`;
+        ? `${guide.seoTitle ?? guide.title} | UUFinds Sheet`
+        : route === "articles" ? releaseUi[currentLocale].archiveTitle : `${route === "faq" ? t.faq : route === "articles" ? t.articles : route === "products" ? t.products : route === "finds" ? t.finds : t.how} | UUFinds Sheet`;
   const path = `/${locale}/${route}/`;
   const description = policy?.description
     ?? guide?.description
     ?? (product
       ? `${t.productDetail}: ${product.shortName}, $${product.price} USD, ID ${product.listingId}. ${t.check}`
-      : `${t.intro} ${t.check}`);
+      : route === "articles" ? releaseUi[currentLocale].archiveDescription : `${t.intro} ${t.check}`);
   return {
     title,
     description,
@@ -219,7 +221,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
     const description = guide.description;
     const wordCount = [
       ...guide.intro,
-      ...guide.sections.flatMap((section) => [section.heading, ...section.paragraphs, ...(section.points ?? [])]),
+      ...guide.sections.flatMap((section) => [...section.paragraphs, ...(section.points ?? []), ...(section.table ? [section.table.caption, ...section.table.headers, ...section.table.rows.flat()] : [])]),
     ].join(" ").trim().split(/\s+/).length;
     return (
       <main className="guide-page" lang={t.lang}>
@@ -243,7 +245,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
               {guide.sections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{String(index + 1).padStart(2, "0")} — {section.heading.replace(/^\d+\.\s*/, "")}</a>)}
               </MobileDisclosure>
             </aside>
-            <div className="guide-body">
+            <div className="guide-body" data-visible-word-count={wordCount}>
               {guide.intro.map((paragraph) => <p className="lead" key={paragraph}>{paragraph}</p>)}
               {guide.sections.map((section, index) => (
                 <section id={`section-${index + 1}`} key={section.heading}>
@@ -251,13 +253,19 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
                   <h2>{section.heading}</h2>
                   {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                   {"points" in section && section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
+                  {section.table && <div className="guide-table-wrap"><table>
+                    <caption>{section.table.caption}</caption>
+                    <thead><tr>{section.table.headers.map(header => <th scope="col" key={header}>{header}</th>)}</tr></thead>
+                    <tbody>{section.table.rows.map(row => <tr key={row.join("|")}>{row.map((cell, index) => <td data-label={section.table?.headers[index]} key={`${index}-${cell}`}>{cell}</td>)}</tr>)}</tbody>
+                  </table></div>}
                 </section>
               ))}
-              <div className="source-note">
+              <GuideResources guide={guide} locale={currentLocale} />
+              {!guide.hideSourceNote && <div className="source-note">
                 <p className="eyebrow">{localizeText(currentLocale, "Primary source notes")}</p>
                 <p>{guide.sourceNote ?? t.check}</p>
                 <div><a href="https://uufindssheet.com/catalog/AllProducts/" target="_blank" rel="noreferrer">{t.open}</a></div>
-              </div>
+              </div>}
             </div>
           </div>
         </article>
@@ -267,7 +275,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
           "@graph": [
             {
               "@type": "Article", headline: title, description, image: `https://uufindssheet.com${socialImage.url}`,
-              dateModified: guide.modifiedISO ?? "2026-07-22", datePublished: "2026-07-22", inLanguage: t.lang,
+              dateModified: guide.modifiedISO ?? "2026-07-22", datePublished: guide.publishedISO ?? "2026-07-22", inLanguage: t.lang,
               author: { "@type": "Organization", name: "UUFinds Sheet Editorial" },
               publisher: { "@type": "Organization", name: "UUFinds Sheet" },
               wordCount,
@@ -410,9 +418,9 @@ function LocalizedArticles({
       <DocumentLanguage language={t.lang} />
       <SiteHeader locale={t.region} routePath="/articles/" />
       <section className="hub-hero article-hub-hero">
-        <p className="eyebrow">{translate("Articles / Official functions checked July 23, 2026")}</p>
-        <h1>{translate("Search-led guides.")}<br /><em>{translate("Source-led claims.")}</em></h1>
-        <p>{translate("Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to the main site.")}</p>
+        <p className="eyebrow">{articleCards.length} {releaseUi[locale].count} / {releaseUi[locale].update}</p>
+        <h1>{releaseUi[locale].h1}<br /><em>{releaseUi[locale].accent}</em></h1>
+        <p>{releaseUi[locale].deck}</p>
       </section>
       <section className="hub-content">
         <MobileDisclosure title={{ "en-gb": "How we check our guides", de: "So prüfen wir unsere Ratgeber", pl: "Jak sprawdzamy nasze poradniki", "pt-br": "Como verificamos nossos guias" }[locale]} className="article-standards-disclosure">
@@ -439,7 +447,7 @@ function LocalizedArticles({
                 </div>
                 <h2>{localizedCard?.title ?? (locale === "en-gb" ? article.title : localizedGuide?.title ?? translate(article.title))}</h2>
                 <p>{localizedCard?.summary ?? (locale === "en-gb" ? article.summary : localizedGuide?.description ?? translate(article.summary))}</p>
-                <div className="article-foot"><span>{translate(article.read)}</span><b>{translate("Read article ↗")}</b></div>
+                <div className="article-foot"><span>{!article.englishOnly && localizedGuide ? localizedGuide.readTime : translate(article.read)}</span><b>{translate("Read article ↗")}</b></div>
               </Link>
             );
           })}

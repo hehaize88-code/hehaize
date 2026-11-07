@@ -40,7 +40,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-11-07-mobile-articles-v2";
+const HTML_CACHE_VERSION = "2026-11-07-search-guides-v3";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);

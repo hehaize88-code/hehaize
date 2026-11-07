@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-23");
   const productUpdate = new Date("2026-09-17T12:00:00Z");
   const articleUpdate = new Date("2026-10-09T02:00:00Z");
+  const releaseUpdate = new Date("2026-11-07T00:00:00Z");
   const trustPaths = ["about", "contact", "editorial-policy", "privacy", "terms"];
   const localizedPaths = [
     "finds", "products", "how-it-works", "articles", "faq",
@@ -17,10 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return [
     ...["", "en-gb/", "de/", "pl/", "pt-br/"].flatMap(locale => ["catalog", "catalog/shoes", "catalog/hoodies-sweaters", "catalog/t-shirts", "catalog/accessories", "catalog/jersey"].map(route => ({url: `https://uufindssheet.com/${locale}${route}/`, lastModified: articleUpdate, changeFrequency: "daily" as const, priority: 0.9}))),
-    { url: "https://uufindssheet.com/", lastModified: articleUpdate, changeFrequency: "weekly", priority: 1 },
+    { url: "https://uufindssheet.com/", lastModified: releaseUpdate, changeFrequency: "weekly", priority: 1 },
     ...["finds", "products", "how-it-works", "articles", "faq"].map((path) => ({
       url: `https://uufindssheet.com/${path}/`,
-      lastModified: path === "articles" || path === "finds" ? articleUpdate : lastModified,
+      lastModified: path === "articles" ? releaseUpdate : path === "finds" ? articleUpdate : lastModified,
       changeFrequency: "weekly" as const,
       priority: 0.9,
     })),
@@ -32,14 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...["en-gb", "de", "pl", "pt-br"].map((locale) => ({
       url: `https://uufindssheet.com/${locale}/`,
-      lastModified: articleUpdate,
+      lastModified: releaseUpdate,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
     ...["en-gb", "de", "pl", "pt-br"].flatMap((locale) =>
       localizedPaths.map((path) => ({
         url: `https://uufindssheet.com/${locale}/${path}/`,
-        lastModified: path === "articles" ? articleUpdate : path.startsWith("products/") ? productUpdate : lastModified,
+        lastModified: path === "articles" ? releaseUpdate : path.startsWith("guides/") ? new Date(guides.find(guide => guide.slug === path.split("/")[1])?.modifiedISO ?? "2026-07-23") : path.startsWith("products/") ? productUpdate : lastModified,
         changeFrequency: path.startsWith("guides/") ? "monthly" as const : "weekly" as const,
         priority: path.startsWith("products/") ? 0.8 : 0.75,
       }))

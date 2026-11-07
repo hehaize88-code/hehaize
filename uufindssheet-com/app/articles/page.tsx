@@ -1,3 +1,4 @@
+import { releaseUi } from "../guides/november-release";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "../components/site-header";
@@ -9,12 +10,12 @@ import { MobileArticleArchive } from "../components/mobile-article-archive";
 import { MobileDisclosure } from "../components/mobile-disclosure";
 
 export const metadata: Metadata = {
-  title: "UUFinds Guides: QC Search, Spreadsheets & Comparisons",
-  description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
+  title: releaseUi.en.archiveTitle,
+  description: releaseUi.en.archiveDescription,
   alternates: localizedAlternates("/articles/"),
   openGraph: {
-    title: "UUFinds Guides: QC Search, Spreadsheets & Comparisons",
-    description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
+    title: releaseUi.en.archiveTitle,
+    description: releaseUi.en.archiveDescription,
     url: "/articles/",
     siteName: "UUFinds Sheet",
     type: "website",
@@ -22,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UUFinds Guides: QC Search, Spreadsheets & Comparisons",
-    description: "Independent, source-checked guides about UUFinds QC photos, videos, image search, apps, browser extensions, link matching and exact product destinations.",
+    title: releaseUi.en.archiveTitle,
+    description: releaseUi.en.archiveDescription,
     images: [socialImage.url],
   },
 };
@@ -33,9 +34,9 @@ export default function ArticlesPage() {
     <main className="hub-page">
       <SiteHeader routePath="/articles/" />
       <section className="hub-hero article-hub-hero">
-        <p className="eyebrow">Articles / New guides added October 2, 2026</p>
-        <h1>UUFinds guides.<br /><em>Links, photos and spreadsheets.</em></h1>
-        <p>Each article separates what UUFinds publicly confirms from the practical inspection method added by this independent guide. Shopping and product routes remain exclusive to the main site.</p>
+        <p className="eyebrow">{articleCards.length} {releaseUi.en.count} / {releaseUi.en.update}</p>
+        <h1>{releaseUi.en.h1}<br /><em>{releaseUi.en.accent}</em></h1>
+        <p>{releaseUi.en.deck}</p>
       </section>
       <section className="hub-content">
         <MobileDisclosure title="How we check our guides" className="article-standards-disclosure">

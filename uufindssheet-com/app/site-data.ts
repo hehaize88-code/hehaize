@@ -1,3 +1,6 @@
+import { guides, getGuide } from "./guides/article-data";
+import { applyNovemberGuide, releaseSlugs } from "./guides/november-release";
+
 export type Category = {
   code: string;
   name: string;
@@ -29,7 +32,7 @@ type ArticleCard = {
   localized?: Partial<Record<"en-gb" | "de" | "pl" | "pt-br", { tag: string; title: string; summary: string }>>;
 };
 
-export const articleCards: ArticleCard[] = [
+const baseArticleCards: ArticleCard[] = [
   {
     tag: "QC TOOL COMPARISON",
     title: "UUFinds vs FinderQC: QC Search, Product Links and Photo Coverage",
@@ -312,3 +315,15 @@ export const articleCards: ArticleCard[] = [
     englishOnly: true,
   },
 ];
+
+
+const releaseCards: ArticleCard[] = releaseSlugs.map((slug, index) => {
+  const raw = guides.find(guide => guide.slug === slug)!;
+  const guide = getGuide(slug)!;
+  const localized = Object.fromEntries((["en-gb", "de", "pl", "pt-br"] as const).map(locale => {
+    const copy = applyNovemberGuide(raw, locale);
+    return [locale, { tag: copy.label, title: copy.title, summary: copy.description }];
+  }));
+  return { tag: guide.label, title: guide.title, summary: guide.description, href: `/guides/${slug}/`, read: guide.readTime, englishOnly: false, featured: index === 0, localized };
+});
+export const articleCards: ArticleCard[] = [...releaseCards, ...baseArticleCards.filter(card => !releaseSlugs.some(slug => card.href === `/guides/${slug}/`))];

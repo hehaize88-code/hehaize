@@ -1,3 +1,4 @@
+import { applyNovemberGuide } from "../guides/november-release";
 import type { Guide } from "../guides/article-data";
 import type { PolicyPageData } from "../policy-data";
 import {
@@ -347,11 +348,11 @@ export function localizeText(locale: LocalizedContentLocale, value: string): str
 }
 
 export function localizeGuide(locale: LocalizedContentLocale, guide: Guide): Guide {
-  if (locale === "en-gb") return guide;
+  if (locale === "en-gb") return applyNovemberGuide(guide, locale);
   const routeCopy = localizedRouteCopy[locale].guides[guide.slug];
   const translate = (value: string) => localizeText(locale, value);
 
-  return {
+  return applyNovemberGuide({
     ...guide,
     label: translate(guide.label),
     title: routeCopy?.title ?? translate(guide.title),
@@ -361,11 +362,13 @@ export function localizeGuide(locale: LocalizedContentLocale, guide: Guide): Gui
     sourceNote: guide.sourceNote ? translate(guide.sourceNote) : undefined,
     intro: guide.intro.map(translate),
     sections: guide.sections.map((section) => ({
+      ...section,
       heading: translate(section.heading),
       paragraphs: section.paragraphs.map(translate),
       points: section.points?.map(translate),
+      table: section.table ? { caption: translate(section.table.caption), headers: section.table.headers.map(translate), rows: section.table.rows.map(row => row.map(translate)) } : undefined,
     })),
-  };
+  }, locale);
 }
 
 export function localizePolicy(
