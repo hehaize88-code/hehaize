@@ -233,3 +233,13 @@ Seven existing article groups updated in every language; shipping hubs, home pre
 Validation: Python build passed. Node release suite passed 720 checks. Static audit passed 775 article metadata checks, 7,218 internal static link/asset targets, all 155 article variants with correct canonicals and reciprocal hreflang, English article word ranges and 185 unique editorial sitemap URLs. No missing translations or internal static targets. Existing source/ID, registration, route and image-search checks remain passing. Production release marker: hipobuy-20261109-guides-v1.
 
 Deployment verification is recorded separately after GitHub publication; local checks alone do not prove production deployment or search indexing.
+
+
+### 2026-11-09 production verification completed
+
+- GitHub production commit: 4a4a64227652f39bb37c2d65d53ededa23a3b9ce. Published through the connected GitHub service because the local CLI had no push credentials. The uploaded Git tree exactly matched the tested local tree 67868c87f67dda258f6d6baef29c9cb2b0d8b8a5.
+- Cloudflare Pages deployment 514a1332-5c82-4d42-a849-8eb9e279ed61 reports success and aliases hipobuyy-sheet.com / www.hipobuyy-sheet.com. Build duration 25 seconds; deployment source matches the production commit.
+- All 15 new article variants opened on the custom domain with the expected localized content, self canonical, six language alternates, eight complete chapters, loaded styles and no noindex. All three product images loaded in all five budget guides; localized product links and prices matched the checked listings.
+- All five live article archives show 31 cards and the three new articles first. Live editorial-sitemap.xml is application/xml with root urlset, 185 URLs and 1,110 language alternate links, including all 15 new pages.
+- Mobile checks at viewport settings 390 and 320 showed no horizontal document overflow. Budget cards render as compact 88-pixel rows; all eight chapters expand. IT-to-DE switching preserves the budget article route. The live Italian calculator returned actual 2 kg, volumetric/billed 6 kg and USD 65 for rate 10 plus fixed fee 5. Temporary viewport was reset.
+- Public proof screenshot: docs/seo-release-2026-11-09.jpg. The user-facing article archive tab was kept open. Search indexing submissions and GA4 key-event administration were not changed or claimed.
