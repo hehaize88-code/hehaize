@@ -20,7 +20,7 @@ Uporabite uradni kalkulator s skladiščem, destinacijo, ocenjena teža in mere,
 
 Zapiši, katera storitev se je pojavila in datum, ko si jo preveril. Preberite podrobne pogoje za to službo, namesto da bi izbrali samo njeno ime. Če se ne pojavi ustrezna pot, potrdite vložke in poiščite podporo o dejanskem blagu. Sprememba opisa postavke za pridobitev cenejše možnosti ne pomeni, da je pošiljka upravičena.
 
-[Preglednica Superbuy](/sl/spreadsheet/) vam lahko pomaga odkriti izdelke. Odprite prvotni seznam in potrditi natančno različico, količino in pogoje prodajalca pred pretvorbo tega kratkega seznama v plačani nalog. Povezava izdelkov na tej neodvisni strani ni obljuba o razpoložljivosti dostave.
+[Superbuy Spreadsheet](/sl/spreadsheet/) vam lahko pomaga odkriti izdelke. Odprite prvotni seznam in potrditi natančno različico, količino in pogoje prodajalca pred pretvorbo tega kratkega seznama v plačani nalog. Povezava izdelkov na tej neodvisni strani ni obljuba o razpoložljivosti dostave.
 
 ## Izgraditi celoten proračun za dostavo na Poljskem
 

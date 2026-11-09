@@ -20,7 +20,7 @@ Kasutage ametlikku kalkulaatorit koos lao, sihtkoha, hinnangulise kaalu ja mõõ
 
 Salvestab teenuse ilmumise ja kontrolli kuupäeva. Loe selle teenuse täpseid tingimusi, mitte vali ainult selle nime järgi. Kui sobivat marsruuti ei ilmu, kinnita sisendid ja küsi abi tegelike kaupade kohta. Kaubaartikli kirjelduse muutmine odavamaks võimaluseks ei muuda saadetist abikõlblikuks.
 
-{y:bi} [Superbuy arvutustabel](/et/spreadsheet/) aitab teil tooteid avastada. Avage esialgne nimekiri ja kinnitage täpne variant, kogus ja müüja tingimused enne muutes selle nimekirja makstud tellimuse. Tootelink sellel sõltumatul saidil ei ole lubadus kohaletoimetamise kättesaadavust.
+[Superbuy Spreadsheet](/et/spreadsheet/) aitab teil tooteid avastada. Avage esialgne nimekiri ja kinnitage täpne variant, kogus ja müüja tingimused enne muutes selle nimekirja makstud tellimuse. Tootelink sellel sõltumatul saidil ei ole lubadus kohaletoimetamise kättesaadavust.
 
 ## Koostada Poolale tarnimiseks täielik eelarve
 

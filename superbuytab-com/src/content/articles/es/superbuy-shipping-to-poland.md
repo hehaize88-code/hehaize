@@ -20,7 +20,7 @@ Utilice la calculadora oficial con el almacén, destino, peso estimado y dimensi
 
 Registrar qué servicio apareció y la fecha en que lo comprobó. Lea las condiciones detalladas para ese servicio en lugar de elegir solo de su nombre. Si no aparece una ruta adecuada, confirme las entradas y pida apoyo sobre las mercancías reales. Cambiar la descripción del artículo para obtener una opción más barata no hace que el envío sea elegible.
 
-Los [Hoja de cálculo Superbuy](/es/spreadsheet/) puede ayudarle a descubrir productos. Abra la lista original y confirme la variante exacta, cantidad y términos del vendedor antes de convertir esa lista en un pedido pagado. Un enlace de producto en este sitio independiente no es una promesa de disponibilidad de entrega.
+[Superbuy Spreadsheet](/es/spreadsheet/) puede ayudarle a descubrir productos. Abra la lista original y confirme la variante exacta, cantidad y términos del vendedor antes de convertir esa lista en un pedido pagado. Un enlace de producto en este sitio independiente no es una promesa de disponibilidad de entrega.
 
 ## Construir un presupuesto completo para la entrega a Polonia
 

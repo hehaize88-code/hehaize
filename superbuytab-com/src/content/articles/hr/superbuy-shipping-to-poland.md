@@ -20,7 +20,7 @@ Koristite službeni kalkulator s skladištima, odredištem, procijenjenom težin
 
 Snimite koji servis pojavio i datum ste ga provjerili. Pročitajte detaljne uvjete za tu službu umjesto da sami odaberete svoje ime. Ako se ne pojavi odgovarajuća ruta, potvrdite unose i zatražiti potporu o stvarnoj robi. Promjena opisa stavka za dobivanje jeftinije opcije ne čini pošiljku prihvatljivom.
 
-Na... [Masna tablica za Superbuy](/hr/spreadsheet/) može vam pomoći da otkrijete proizvode. Otvorite originalni popis i potvrditi točnu varijantu, količinu i uvjete prodaje prije nego što se taj uži popis u plaćeni narudžbu. Link proizvoda na ovoj neovisnoj stranici nije obećanje dostupnosti isporuke.
+[Superbuy Spreadsheet](/hr/spreadsheet/) može vam pomoći da otkrijete proizvode. Otvorite originalni popis i potvrditi točnu varijantu, količinu i uvjete prodaje prije nego što se taj uži popis u plaćeni narudžbu. Link proizvoda na ovoj neovisnoj stranici nije obećanje dostupnosti isporuke.
 
 ## Izgraditi potpuni proračun za isporuku Poljskoj
 

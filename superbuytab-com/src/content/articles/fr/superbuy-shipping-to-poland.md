@@ -20,7 +20,7 @@ Utilisez la calculatrice officielle avec l'entrepôt, la destination, le poids e
 
 Notez quel service est apparu et la date à laquelle vous l'avez vérifié. Lisez les conditions détaillées de ce service plutôt que de choisir son seul nom. Si aucun itinéraire approprié n'apparaît, confirmez les entrées et demandez de l'aide au sujet des marchandises réelles. Modifier la description de l'article pour obtenir une option moins chère ne rend pas l'expédition admissible.
 
-Les [Feuille de calcul Superbuy](/fr/spreadsheet/) peut vous aider à découvrir des produits. Ouvrez la liste originale et confirmez la variante exacte, la quantité et les conditions du vendeur avant de transformer cette liste restreinte en commande payée. Un lien produit sur ce site indépendant n'est pas une promesse de disponibilité de livraison.
+[Superbuy Spreadsheet](/fr/spreadsheet/) peut vous aider à découvrir des produits. Ouvrez la liste originale et confirmez la variante exacte, la quantité et les conditions du vendeur avant de transformer cette liste restreinte en commande payée. Un lien produit sur ce site indépendant n'est pas une promesse de disponibilité de livraison.
 
 ## Établir un budget complet pour la livraison en Pologne
 

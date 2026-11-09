@@ -20,7 +20,7 @@ Bain úsáid as an áireamhán oifigiúil leis an stóras, ceann scríbe, meách
 
 Taifead a raibh seirbhís le feiceáil agus an dáta a sheiceáil tú é. Léigh na coinníollacha mionsonraithe don tseirbhís sin seachas roghnú óna hainm féin. Mura bhfuil aon bhealach oiriúnach le feiceáil, na hionchuir a dheimhniú agus tacaíocht a iarraidh faoi na hearraí iarbhír. Ní hionann an cur síos míre a athrú chun rogha níos saoire a fháil agus an loingsiú incháilithe.
 
-An [Scarbhileog Superbuy](/ga/spreadsheet/) Is féidir cabhrú leat a fháil amach táirgí. Oscail an liosta bunaidh agus a dhaingniú an leagan cruinn, cainníocht agus téarmaí díoltóir roimh casadh sin gearrliosta i ordú íoctha. Níl nasc táirge ar an suíomh neamhspleách gealltanas seachadta infhaighteacht.
+[Superbuy Spreadsheet](/ga/spreadsheet/) Is féidir cabhrú leat a fháil amach táirgí. Oscail an liosta bunaidh agus a dhaingniú an leagan cruinn, cainníocht agus téarmaí díoltóir roimh casadh sin gearrliosta i ordú íoctha. Níl nasc táirge ar an suíomh neamhspleách gealltanas seachadta infhaighteacht.
 
 ## Buiséad iomlán a thógáil lena sheachadadh ar an bPolainn
 

@@ -20,7 +20,7 @@ Utilizați calculatorul oficial cu depozitul, destinația, greutatea estimată �
 
 Înregistrează ce serviciu a apărut şi data la care l-ai verificat. Citiţi mai degrabă condiţiile detaliate pentru acest serviciu decât să alegeţi numai din numele său. În cazul în care nu apare o rută adecvată, confirmați intrările și cereți sprijin cu privire la bunurile reale. Schimbarea descrierii produsului pentru a obține o opțiune mai ieftină nu face transportul eligibil.
 
-{LL/ AAAA} [Foaie de calcul Superbuy](/ro/spreadsheet/) vă poate ajuta să descoperiți produse. Deschideți listarea originală și confirmați varianta exactă, termenii cantitate și vânzător înainte de a transforma acea listă scurtă într-un ordin plătit. O legătură de produs pe acest site independent nu este o promisiune de disponibilitate de livrare.
+[Superbuy Spreadsheet](/ro/spreadsheet/) vă poate ajuta să descoperiți produse. Deschideți listarea originală și confirmați varianta exactă, termenii cantitate și vânzător înainte de a transforma acea listă scurtă într-un ordin plătit. O legătură de produs pe acest site independent nu este o promisiune de disponibilitate de livrare.
 
 ## Construiește un buget complet pentru livrarea către Polonia
 

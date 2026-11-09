@@ -20,7 +20,7 @@ Käytä virallista laskinta varaston, kohteen, arvioidun painon ja suunnitelmies
 
 Record mikä palvelu ilmestyi ja päivä, jona tarkistit sen. Lue palvelun yksityiskohtaiset ehdot sen sijaan, että valitsisit sen nimestä. Jos sopivaa reittiä ei näy, vahvista syötteet ja kysy tukea todellisista tuotteista. Tavaran kuvauksen muuttaminen halvemman vaihtoehdon saamiseksi ei tee lähetyksestä tukikelpoista.
 
-Erytropoietiini [Superbuy-laskentataulukko](/fi/spreadsheet/) voi auttaa tuotteiden löytämisessä. Avaa alkuperäinen listaus ja vahvista tarkat muunnelma-, määrä- ja myyjäehdot ennen kuin muutat karsinnan maksulliseksi tilaukseksi. Tällä itsenäisellä sivustolla oleva tuotelinkki ei ole lupaus toimituksen saatavuudesta.
+[Superbuy Spreadsheet](/fi/spreadsheet/) voi auttaa tuotteiden löytämisessä. Avaa alkuperäinen listaus ja vahvista tarkat muunnelma-, määrä- ja myyjäehdot ennen kuin muutat karsinnan maksulliseksi tilaukseksi. Tällä itsenäisellä sivustolla oleva tuotelinkki ei ole lupaus toimituksen saatavuudesta.
 
 ## Koko Puolaan toimitettavan budjetin rakentaminen
 

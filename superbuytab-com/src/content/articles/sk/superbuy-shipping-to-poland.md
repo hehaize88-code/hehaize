@@ -20,7 +20,7 @@ Použite oficiálnu kalkulačku so skladom, destináciou, odhadovanou hmotnosťo
 
 Zaznamenajte, ktorá služba sa objavila a dátum, kedy ste ju skontrolovali. Prečítajte si podrobné podmienky pre túto službu namiesto výberu z jej samotného názvu. Ak sa neobjaví vhodná trasa, potvrďte vstupy a požiadajte o podporu o skutočnom tovare. Zmena opisu položky s cieľom získať lacnejšiu možnosť neznamená, že zásielka je oprávnená.
 
-• [Tabuľky Superbuy](/sk/spreadsheet/) vám pomôže nájsť produkty. Otvorte pôvodný výpis a potvrďte presný variant, množstvo a podmienky predávajúceho pred tým, než tento užší zoznam zmení na platenú objednávku. Produktový odkaz na tejto nezávislej stránke nie je prísľubom dostupnosti dodávky.
+[Superbuy Spreadsheet](/sk/spreadsheet/) vám pomôže nájsť produkty. Otvorte pôvodný výpis a potvrďte presný variant, množstvo a podmienky predávajúceho pred tým, než tento užší zoznam zmení na platenú objednávku. Produktový odkaz na tejto nezávislej stránke nie je prísľubom dostupnosti dodávky.
 
 ## Vybudovať kompletný rozpočet na doručenie do Poľska
 

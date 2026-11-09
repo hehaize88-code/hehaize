@@ -20,7 +20,7 @@ Brug den officielle lommeregner med lageret, destinationen, anslået vægt og di
 
 Optag hvilken tjeneste der dukkede op og den dato du tjekkede den. Læs de detaljerede betingelser for denne tjeneste i stedet for at vælge fra sit navn alene. Hvis der ikke vises en passende rute, skal du bekræfte indgangene og bede om støtte til de faktiske varer. Ændring af varebeskrivelsen for at opnå en billigere løsning gør ikke forsendelsen støtteberettiget.
 
-Den [Superbuy- regneark](/da/spreadsheet/) kan hjælpe dig med at finde produkter. Åbn den oprindelige liste og bekræft den nøjagtige variant, mængde og sælger vilkår, før du forvandler denne kortliste til en betalt ordre. Et produkt link på denne uafhængige hjemmeside er ikke et løfte om levering tilgængelighed.
+[Superbuy Spreadsheet](/da/spreadsheet/) kan hjælpe dig med at finde produkter. Åbn den oprindelige liste og bekræft den nøjagtige variant, mængde og sælger vilkår, før du forvandler denne kortliste til en betalt ordre. Et produkt link på denne uafhængige hjemmeside er ikke et løfte om levering tilgængelighed.
 
 ## Opbyg et komplet budget til levering til Polen
 

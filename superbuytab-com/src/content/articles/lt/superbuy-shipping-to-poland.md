@@ -20,7 +20,7 @@ Naudokite oficialų skaičiuoklę su sandėliu, paskirties vieta, apskaičiuotas
 
 Įrašykite, kuri paslauga atsirado ir kada ją patikrinote. Skaitykite detalias sąlygas, kad ši tarnyba, o ne pasirinkti iš jo pavadinimą vienas. Jei nėra tinkamo maršruto, patvirtinkite duomenis ir paprašykite pagalbos apie faktines prekes. Pakeitus elemento aprašymą, kad būtų galima gauti pigesnį pasirinkimą, siunta netampa tinkama.
 
-[Superbuy produktų lentelė](/lt/spreadsheet/) gali padėti jums atrasti produktus. Atidaryti pradinį sąrašą ir patvirtinti tikslų variantą, kiekis ir pardavėjo sąlygas prieš konvertuojant tą galutinį sąrašą į mokamą užsakymą. Produkto nuoroda šioje nepriklausomoje svetainėje nėra pristatymo prieinamumo pažadas.
+[Superbuy Spreadsheet](/lt/spreadsheet/) gali padėti jums atrasti produktus. Atidaryti pradinį sąrašą ir patvirtinti tikslų variantą, kiekis ir pardavėjo sąlygas prieš konvertuojant tą galutinį sąrašą į mokamą užsakymą. Produkto nuoroda šioje nepriklausomoje svetainėje nėra pristatymo prieinamumo pažadas.
 
 ## Sukurti visą biudžetą pristatymo į Lenkiją
 

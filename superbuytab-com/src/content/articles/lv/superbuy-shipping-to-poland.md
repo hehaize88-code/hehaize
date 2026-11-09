@@ -20,7 +20,7 @@ Izmantojiet oficiālo kalkulatoru ar noliktavu, galamērķi, aprēķināto svaru
 
 Ierakstīt, kurš pakalpojums parādījās un kad jūs to pārbaudījāt. Izlasiet detalizētus nosacījumus šim dienestam, nevis izvēloties no tā vienīgo nosaukumu. Ja neparādās piemērots maršruts, apstipriniet datus un lūdziet atbalstu par faktiskajām precēm. Mainot posteņa aprakstu, lai iegūtu lētāku opciju, sūtījums nav piemērots.
 
-[Superbuy produktu tabula](/lv/spreadsheet/) var palīdzēt jums atklāt produktus. Atvērt sākotnējo sarakstu un apstiprināt precīzu variantu, daudzums un pārdevēja noteikumus pirms pārvēršot šo sarakstu apmaksātu pasūtījumu. Produkta link uz šo neatkarīgo vietni nav solījums piegādes pieejamību.
+[Superbuy Spreadsheet](/lv/spreadsheet/) var palīdzēt jums atklāt produktus. Atvērt sākotnējo sarakstu un apstiprināt precīzu variantu, daudzums un pārdevēja noteikumus pirms pārvēršot šo sarakstu apmaksātu pasūtījumu. Produkta link uz šo neatkarīgo vietni nav solījums piegādes pieejamību.
 
 ## Izveidot pilnīgu budžetu piegādes Polijai
 

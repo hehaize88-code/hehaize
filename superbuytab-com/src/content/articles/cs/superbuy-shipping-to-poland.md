@@ -20,7 +20,7 @@ Použijte oficiální kalkulačku se skladem, místem určení, odhadovanou hmot
 
 Zaznamenejte, která služba se objevila a datum, kdy jste ji zkontrolovali. Přečtěte si podrobné podmínky pro tuto službu, spíše než si vybrat z jejího jména sám. Pokud se neobjeví vhodná trasa, potvrďte vstupy a požádejte o podporu o skutečné zboží. Změna popisu položky za účelem získání levnější možnosti neznamená, že zásilka je způsobilá.
 
-• [Tabulka Superbuy](/cs/spreadsheet/) může pomoci objevit produkty. Otevřete původní výpis a potvrďte přesnou variantu, množství a podmínky prodeje předtím, než se tento seznam změní na placenou objednávku. Odkaz na tuto nezávislou stránku není příslibem dostupnosti dodávky.
+[Superbuy Spreadsheet](/cs/spreadsheet/) může pomoci objevit produkty. Otevřete původní výpis a potvrďte přesnou variantu, množství a podmínky prodeje předtím, než se tento seznam změní na placenou objednávku. Odkaz na tuto nezávislou stránku není příslibem dostupnosti dodávky.
 
 ## Vybudovat kompletní rozpočet na dodávku do Polska
 

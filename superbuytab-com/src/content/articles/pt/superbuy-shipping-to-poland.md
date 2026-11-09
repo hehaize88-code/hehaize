@@ -20,7 +20,7 @@ Use a calculadora oficial com o armazém, destino, peso estimado e dimensões qu
 
 Grave o serviço que apareceu e a data em que o verificou. Leia as condições detalhadas para esse serviço em vez de escolher entre seu nome. Se não aparecer uma rota adequada, confirme as entradas e peça suporte sobre os bens reais. Mudar a descrição do item para obter uma opção mais barata não torna o carregamento elegível.
 
-Os [Planilha de Superbuy](/pt/spreadsheet/) pode ajudá-lo a descobrir produtos. Abra a lista original e confirme a variante exata, quantidade e termos do vendedor antes de transformar essa lista em uma ordem paga. Um link de produto neste site independente não é uma promessa de disponibilidade de entrega.
+[Superbuy Spreadsheet](/pt/spreadsheet/) pode ajudá-lo a descobrir produtos. Abra a lista original e confirme a variante exata, quantidade e termos do vendedor antes de transformar essa lista em uma ordem paga. Um link de produto neste site independente não é uma promessa de disponibilidade de entrega.
 
 ## Construir um orçamento completo para a entrega à Polónia
 

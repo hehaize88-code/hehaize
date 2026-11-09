@@ -20,7 +20,7 @@ Gebruik de officiële rekenmachine met het magazijn, de bestemming, het geschatt
 
 Noteer welke dienst verscheen en de datum waarop u het controleerde. Lees de gedetailleerde voorwaarden voor die dienst in plaats van te kiezen uit zijn naam alleen. Als er geen geschikte route verschijnt, bevestig dan de input en vraag ondersteuning over de werkelijke goederen. Het wijzigen van de itembeschrijving om een goedkopere optie te verkrijgen maakt de zending niet subsidiabel.
 
-De [Superbuy spreadsheet](/nl/spreadsheet/) kan u helpen ontdekken producten. Open de oorspronkelijke lijst en bevestig de exacte variant, hoeveelheid en verkoper voorwaarden voordat u die shortlist in een betaalde bestelling. Een productlink op deze onafhankelijke site is geen belofte voor beschikbaarheid van levering.
+[Superbuy Spreadsheet](/nl/spreadsheet/) kan u helpen ontdekken producten. Open de oorspronkelijke lijst en bevestig de exacte variant, hoeveelheid en verkoper voorwaarden voordat u die shortlist in een betaalde bestelling. Een productlink op deze onafhankelijke site is geen belofte voor beschikbaarheid van levering.
 
 ## Bouw een compleet budget voor levering aan Polen
 

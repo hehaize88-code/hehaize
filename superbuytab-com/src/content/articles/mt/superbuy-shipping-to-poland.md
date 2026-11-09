@@ -20,7 +20,7 @@ Uża l-kalkolatur uffiċjali mal-maħżen, destinazzjoni, piż stmat u dimensjon
 
 Irrekordja liema servizz deher u d-data meta iċċekkjajtu. Aqra l - kundizzjonijiet dettaljati għal dan is - servizz minflok ma tagħżel minn isimha biss. Jekk ma tidher l-ebda rotta xierqa, ikkonferma l-inputs u staqsi appoġġ dwar l-oġġetti attwali. Il-bdil tad-deskrizzjoni tal-oġġett biex tinkiseb għażla irħas ma jagħmilx il-konsenja eliġibbli.
 
-Il [Spreadsheet Superbuy](/mt/spreadsheet/) tista 'tgħin inti jiskopru prodotti. Iftaħ il-lista oriġinali u tikkonferma l-varjant, il-kwantità u t-termini tal-bejjiegħ eżatti qabel ma tibdel dik il-lista f'ordni mħallsa. Rabta tal-prodott fuq dan is-sit indipendenti mhijiex wegħda ta' disponibbiltà tal-kunsinna.
+[Superbuy Spreadsheet](/mt/spreadsheet/) tista 'tgħin inti jiskopru prodotti. Iftaħ il-lista oriġinali u tikkonferma l-varjant, il-kwantità u t-termini tal-bejjiegħ eżatti qabel ma tibdel dik il-lista f'ordni mħallsa. Rabta tal-prodott fuq dan is-sit indipendenti mhijiex wegħda ta' disponibbiltà tal-kunsinna.
 
 ## Bini ta' baġit sħiħ għat-twassil lill-Polonja
 

@@ -20,7 +20,7 @@ Utilizzare la calcolatrice ufficiale con il magazzino, destinazione, peso stimat
 
 Registra quale servizio è apparso e la data in cui l'hai controllato. Leggere le condizioni dettagliate per quel servizio piuttosto che scegliere dal suo nome da solo. Se non viene visualizzato alcun percorso adatto, confermare gli input e chiedere supporto circa la merce effettiva. Cambiare la descrizione dell'articolo per ottenere un'opzione più economica non rende la spedizione ammissibile.
 
-La [Superbuy foglio di calcolo](/it/spreadsheet/) può aiutarti a scoprire i prodotti. Aprire l'elenco originale e confermare l'esatta variante, quantità e termini del venditore prima di trasformare quella lista in un ordine pagato. Un link prodotto su questo sito indipendente non è una promessa di disponibilità di consegna.
+[Superbuy Spreadsheet](/it/spreadsheet/) può aiutarti a scoprire i prodotti. Aprire l'elenco originale e confermare l'esatta variante, quantità e termini del venditore prima di trasformare quella lista in un ordine pagato. Un link prodotto su questo sito indipendente non è una promessa di disponibilità di consegna.
 
 ## Costruire un bilancio completo per la consegna in Polonia
 

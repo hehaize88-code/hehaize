@@ -20,7 +20,7 @@ Verwenden Sie den offiziellen Rechner mit dem Lager, Ziel, geschätztes Gewicht 
 
 Nehmen Sie auf, welcher Dienst erschien und das Datum, an dem Sie ihn überprüft haben. Lesen Sie die detaillierten Bedingungen für diesen Dienst, anstatt von seinem Namen allein zu wählen. Wenn keine geeignete Route angezeigt wird, bestätigen Sie die Eingaben und fragen Sie die Unterstützung über die tatsächlichen Waren. Die Änderung der Artikelbeschreibung, um eine billigere Option zu erhalten, macht die Sendung nicht förderfähig.
 
-Das [Superbuy Tabellenkalkulation](/de/spreadsheet/) können Ihnen helfen, Produkte zu entdecken. Öffnen Sie die ursprüngliche Auflistung und bestätigen Sie die genaue Variante, Menge und Verkäuferbedingungen, bevor Sie diese Shortlist in eine bezahlte Bestellung verwandeln. Ein Produkt-Link auf dieser unabhängigen Website ist kein Versprechen der Lieferverfügbarkeit.
+[Superbuy Spreadsheet](/de/spreadsheet/) können Ihnen helfen, Produkte zu entdecken. Öffnen Sie die ursprüngliche Auflistung und bestätigen Sie die genaue Variante, Menge und Verkäuferbedingungen, bevor Sie diese Shortlist in eine bezahlte Bestellung verwandeln. Ein Produkt-Link auf dieser unabhängigen Website ist kein Versprechen der Lieferverfügbarkeit.
 
 ## Bauen Sie ein komplettes Budget für die Lieferung nach Polen
 

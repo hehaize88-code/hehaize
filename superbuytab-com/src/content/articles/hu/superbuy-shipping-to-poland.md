@@ -20,7 +20,7 @@ Használja a hivatalos kalkulátort a raktárral, a célállomással, a becsült
 
 Vedd fel, hogy melyik szolgáltatás jelent meg és mikor ellenőrizted. Olvassa el ennek a szolgáltatásnak a részletes feltételeit, ahelyett, hogy csak a nevét választaná. Ha nem jelenik meg megfelelő útvonal, erősítse meg a bemeneteket és kérjen támogatást a tényleges árukról. A tétel leírásának módosítása egy olcsóbb opció megszerzése érdekében nem teszi a szállítmányt támogathatóvá.
 
-A [Superbuy táblázat](/hu/spreadsheet/) segít felfedezni a termékeket. Nyissa meg az eredeti listát és erősítse meg a pontos változat, mennyiség és eladói feltételek előtt a shortlista egy fizetett megrendelés. A termék link ezen a független oldalon nem ígéret szállítási rendelkezésre állás.
+[Superbuy Spreadsheet](/hu/spreadsheet/) segít felfedezni a termékeket. Nyissa meg az eredeti listát és erősítse meg a pontos változat, mennyiség és eladói feltételek előtt a shortlista egy fizetett megrendelés. A termék link ezen a független oldalon nem ígéret szállítási rendelkezésre állás.
 
 ## Teljes költségvetés létrehozása Lengyelország számára
 

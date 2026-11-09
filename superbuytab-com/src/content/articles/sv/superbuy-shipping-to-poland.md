@@ -20,7 +20,7 @@ Använd den officiella räknaren med lager, destination, uppskattad vikt och dim
 
 Registrera vilken tjänst som dök upp och datumet du kollade den. Läs de detaljerade villkoren för denna tjänst i stället för att välja från sitt namn ensam. Om ingen lämplig rutt visas, bekräfta indata och be om stöd för de faktiska varorna. Att ändra varubeskrivningen för att få ett billigare alternativ gör inte transporten berättigad.
 
-och [Superbuy kalkylblad](/sv/spreadsheet/) kan hjälpa dig att upptäcka produkter. Öppna den ursprungliga noteringen och bekräfta den exakta varianten, kvantitet och säljvillkor innan du gör den kortlistan till en betald order. En produktlänk på denna oberoende webbplats är inte ett löfte om leveranstillgänglighet.
+[Superbuy Spreadsheet](/sv/spreadsheet/) kan hjälpa dig att upptäcka produkter. Öppna den ursprungliga noteringen och bekräfta den exakta varianten, kvantitet och säljvillkor innan du gör den kortlistan till en betald order. En produktlänk på denna oberoende webbplats är inte ett löfte om leveranstillgänglighet.
 
 ## Bygg en komplett budget för leverans till Polen
 
