@@ -24,13 +24,13 @@ const canonicalHostname = "kameymall-sheet.com";
 const wwwHostname = `www.${canonicalHostname}`;
 
 function canonicalHostnameRedirect(url: URL): Response | null {
-  if (url.hostname !== wwwHostname) return null;
+  if (url.hostname !== wwwHostname && !(url.hostname === canonicalHostname && url.protocol === "http:")) return null;
 
   url.protocol = "https:";
   url.hostname = canonicalHostname;
   url.port = "";
 
-  return Response.redirect(url.toString(), 301);
+  return Response.redirect(url.toString(), 308);
 }
 
 function documentLanguage(pathname: string): string {

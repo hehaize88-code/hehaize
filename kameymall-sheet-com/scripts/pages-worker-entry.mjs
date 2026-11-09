@@ -54,11 +54,11 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    if (url.hostname === wwwHostname) {
+    if (url.hostname === wwwHostname || (url.hostname === canonicalHostname && url.protocol === "http:")) {
       url.protocol = "https:";
       url.hostname = canonicalHostname;
       url.port = "";
-      return Response.redirect(url.toString(), 301);
+      return Response.redirect(url.toString(), 308);
     }
 
     if (isStaticAsset(url.pathname) && env?.ASSETS?.fetch) {

@@ -4,6 +4,7 @@ import { languages, routeHref, supportedRoutes, type RouteKey } from "./site-con
 
 const SITE_URL = "https://kameymall-sheet.com";
 const DEFAULT_LAST_MODIFIED = "2026-08-03";
+const novemberRoutes = new Set<RouteKey>(["home", "articles", "categories", "guides", "faq", "guides/how-to-use-kameymall-spreadsheet"]);
 const routeDates: Partial<Record<RouteKey, string>> = {
   home: "2026-10-02",
   articles: "2026-10-02",
@@ -30,9 +31,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     supportedRoutes
       .map((route) => {
       const path = routeHref(language.code, route);
+      const localizedPages = refreshedContent[language.code].pages as Record<string, { modified?: string }>;
       return {
         url: `${SITE_URL}${path === "/" ? "" : path}`,
-        lastModified: new Date(`${(route in refreshedContent.en.pages ? "2026-10-02" : routeDates[route]) ?? DEFAULT_LAST_MODIFIED}T00:00:00Z`),
+        lastModified: new Date(`${novemberRoutes.has(route) ? "2026-11-09" : (localizedPages[route] ? localizedPages[route].modified ?? "2026-10-02" : routeDates[route]) ?? DEFAULT_LAST_MODIFIED}T00:00:00Z`),
         changeFrequency: route === "home" || route === "finds" || route === "articles" ? "weekly" as const : "monthly" as const,
         priority: route === "home" ? 1 : route === "finds" || route === "articles" ? 0.85 : 0.72,
       };

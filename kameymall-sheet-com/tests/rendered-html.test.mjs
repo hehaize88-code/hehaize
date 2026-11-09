@@ -5,7 +5,7 @@ import test from "node:test";
 const developmentPreviewMeta =
   /<meta(?=[^>]*\bname=["']codex-preview["'])(?=[^>]*\bcontent=["']development["'])[^>]*>/i;
 
-test("renders development preview metadata", async () => {
+test("does not publish development-only preview metadata", async () => {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
@@ -30,7 +30,7 @@ test("renders development preview metadata", async () => {
     response.headers.get("content-type") ?? "",
     /^text\/html\b/i,
   );
-  assert.match(await response.text(), developmentPreviewMeta);
+  assert.doesNotMatch(await response.text(), developmentPreviewMeta);
 });
 
 async function loadWorker() {
@@ -125,13 +125,13 @@ test("keeps complete translated page structure", async () => {
   const frenchGuide = await render(worker, "/fr/guides/how-to-use-kameymall-spreadsheet");
   assert.equal(frenchHome.status, 200);
   const homeHtml = await frenchHome.text();
-  assert.match(homeHtml, /Tableur KameyMall 2026/);
-  assert.match(homeHtml, /Guides d’achat/);
+  assert.match(homeHtml, /Tableur KameyMall/);
+  assert.match(homeHtml, /Articles/);
   assert.match(homeHtml, /Articles KameyMall (?:vérifiés|fondés sur la recherche)/i);
   assert.equal(frenchGuide.status, 200);
   const guideHtml = await frenchGuide.text();
-  assert.match(guideHtml, /Commencer par un besoin précis/);
-  assert.match(guideHtml, /Comparer les informations visibles/);
+  assert.match(guideHtml, /Ouvrir la liste complète/);
+  assert.match(guideHtml, /Comparer la fiche exacte/);
 });
 
 test("keeps every localized content module as complete as English", async () => {
@@ -152,10 +152,10 @@ test("keeps every localized content module as complete as English", async () => 
     const faqBlock = faqHtml.match(/<div class="faq-list">([\s\S]*?)<\/div>/)?.[1] ?? "";
     const howBlock = howHtml.match(/<ol class="step-list">([\s\S]*?)<\/ol>/)?.[1] ?? "";
 
-    assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 11, `${prefix || "/"} FAQ`);
+    assert.equal((faqBlock.match(/<details\b/g) ?? []).length, 20, `${prefix || "/"} FAQ`);
     assert.equal((howBlock.match(/<li\b/g) ?? []).length, 6, `${prefix || "/"} buying steps`);
     assert.equal((guidesHtml.match(/class="guide-card(?: |")/g) ?? []).length, 3, `${prefix || "/"} guides`);
-    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 24, `${prefix || "/"} article cards`);
+    assert.equal((articlesHtml.match(/class="article-card"/g) ?? []).length, 26, `${prefix || "/"} article cards`);
     assert.equal((categoriesHtml.match(/class="category-card"/g) ?? []).length, 10, `${prefix || "/"} categories`);
 
     const homeImages = (homeHtml.match(/<img\b/g) ?? []).length;
@@ -211,7 +211,7 @@ test("uses the verified destination search and category URLs", async () => {
   assert.match(categoryHtml, /https:\/\/cnbuycha\.com\/hoodies-sweaters\//);
 });
 
-test("redirects every www path to the matching canonical hostname with HTTP 301", async () => {
+test("redirects every www path to the matching canonical hostname with HTTP 308", async () => {
   const worker = await loadWorker();
   const response = await worker.fetch(
     new Request("https://www.kameymall-sheet.com/fr/categories/shoes?source=gsc&item=1"),
@@ -219,7 +219,7 @@ test("redirects every www path to the matching canonical hostname with HTTP 301"
     { waitUntil() {}, passThroughOnException() {} },
   );
 
-  assert.equal(response.status, 301);
+  assert.equal(response.status, 308);
   assert.equal(
     response.headers.get("location"),
     "https://kameymall-sheet.com/fr/categories/shoes?source=gsc&item=1",
@@ -267,8 +267,8 @@ test("uses accurate route dates and includes every translated article", async ()
   const response = await render(worker, "/sitemap.xml");
   assert.equal(response.status, 200);
   const sitemap = await response.text();
-  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 444);
-  assert.equal((sitemap.match(/<lastmod>2026-10-02T00:00:00\.000Z<\/lastmod>/g) ?? []).length, 114);
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 456);
+  assert.match(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/articles\/kameymall-shipping-to-uk<\/loc>\s*<lastmod>2026-11-09T00:00:00\.000Z<\/lastmod>/);
   assert.match(sitemap, /<lastmod>2026-08-03T00:00:00\.000Z<\/lastmod>/);
   assert.match(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/articles\/is-kameymall-legit-2026<\/loc>/);
   assert.match(sitemap, /<loc>https:\/\/kameymall-sheet\.com\/(?:de|fr|es|it|pl)\/articles\/is-kameymall-legit-2026<\/loc>/);
@@ -370,7 +370,7 @@ test("adds visible-content-matched FAQPage structured data in all six languages"
     assert.equal(schema["@type"], "FAQPage", `${pathname} schema type`);
     assert.equal(schema.url, `https://kameymall-sheet.com${pathname}`, `${pathname} schema URL`);
     assert.equal(schema.inLanguage, prefix ? prefix.slice(1) : "en", `${pathname} schema language`);
-    assert.equal(visibleEntries.length, 11, `${pathname} visible collapsed FAQs`);
+    assert.equal(visibleEntries.length, 20, `${pathname} visible collapsed FAQs`);
     assert.equal(schema.mainEntity.length, visibleEntries.length, `${pathname} schema FAQ count`);
     assert.deepEqual(
       schema.mainEntity.map((entry) => ({
@@ -406,8 +406,8 @@ test("keeps the complete homepage in compact no-swipe mobile grids", async () =>
   assert.equal((html.match(/class="category-card"/g) ?? []).length, 10);
   assert.equal((html.match(/<ol class="step-list">[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g) ?? []).length, 6);
   assert.equal((html.match(/class="guide-card(?: |")/g) ?? []).length, 3);
-  assert.equal((html.match(/class="article-card"/g) ?? []).length, 24);
-  assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 11);
+  assert.equal((html.match(/class="article-card"/g) ?? []).length, 26);
+  assert.equal((html.match(/<div class="faq-list">[\s\S]*?<\/div>/)?.[0].match(/<details\b/g) ?? []).length, 20);
   assert.doesNotMatch(html, /<details\b[^>]*\bopen\b/i, "homepage FAQs and language menu start collapsed");
 });
 
@@ -490,7 +490,7 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-test("uses the correct root HTML language on all 444 canonical pages", async () => {
+test("uses the correct root HTML language on all 456 canonical pages", async () => {
   const worker = await loadWorker();
   const englishImageCounts = new Map();
   const englishSectionCounts = new Map();
@@ -782,9 +782,9 @@ test("publishes a complete shipping-line decision guide in all six languages", a
 test("uses the focused homepage metadata and deepens the three priority category pages", async () => {
   const worker = await loadWorker();
   const homeHtml = await (await render(worker, "/")).text();
-  assert.match(homeHtml, /<title>KameyMall Spreadsheet 2026: 30 Finds, Prices &amp; Direct Links<\/title>/);
-  assert.match(homeHtml, /<h1>KameyMall Spreadsheet 2026: 30 Curated Product Finds<\/h1>/);
-  assert.match(homeHtml, /Browse 30 curated KameyMall spreadsheet finds across shoes, hoodies, jerseys and accessories/);
+  assert.match(homeHtml, /<title>KameyMall Spreadsheet: 30 Finds, Prices &amp; QC Guides<\/title>/);
+  assert.match(homeHtml, /<h1>KameyMall Spreadsheet: 30 Finds, Prices &amp; QC Guides<\/h1>/);
+  assert.match(homeHtml, /Explore 30 KameyMall spreadsheet finds with dated CNY prices/);
 
   const expectations = [
     ["/categories/shoes", "KameyMall Shoes Spreadsheet: 3 Curated Finds", "How to compare these KameyMall shoe finds"],
@@ -857,4 +857,46 @@ test("new product guides have complete localized bodies, real images and recipro
       assert.ok(html.includes(`href="https://kameymall-sheet.com${path}"`));
     }
   }
+});
+
+test("November guides are complete in six languages and linked from each article index", async () => {
+  const worker = await loadWorker();
+  const slugs = ["kameymall-shipping-to-uk", "kameymall-tshirt-finds"];
+  for (const slug of slugs) {
+    let englishBody;
+    for (const prefix of locales) {
+      const pathname = `${prefix}/articles/${slug}`;
+      const response = await render(worker, pathname);
+      assert.equal(response.status, 200, pathname);
+      const html = await response.text();
+      const prose = html.match(/<div class="prose-body">([\s\S]*?)<\/article>/)?.[1] ?? "";
+      assert.equal((prose.match(/<section[^>]*id="section-/g) ?? []).length, 12, pathname);
+      if (!prefix) {
+        englishBody = visibleText(prose);
+        const words = englishBody.match(/[A-Za-z0-9]+(?:[’'-][A-Za-z0-9]+)*/g) ?? [];
+        assert.ok(words.length >= 1200 && words.length <= 1800, `${pathname}: ${words.length} words`);
+      } else assert.notEqual(visibleText(prose), englishBody, pathname);
+      assert.match(html, /"datePublished":"2026-11-09"/);
+      assert.match(html, /"dateModified":"2026-11-09"/);
+      assert.ok(html.includes(`href="https://kameymall-sheet.com${pathname}"`));
+      for (const other of locales) {
+        assert.ok(html.includes(`href="https://kameymall-sheet.com${other}/articles/${slug}"`), `${pathname} alternate ${other}`);
+      }
+      assert.ok(html.includes(`href="${prefix}/finds"`));
+      const index = await (await render(worker, `${prefix}/articles`)).text();
+      assert.ok(index.includes(`href="${pathname}"`));
+      assert.equal((index.match(/class="article-card"/g) ?? []).length, 26);
+      assert.ok(html.includes('href="#section-12"'));
+      for (const link of externalActions(html)) {
+        assert.ok(["https://cnbuycha.com", "https://kameymall-sheet.com"].includes(new URL(link).origin));
+      }
+    }
+  }
+});
+
+test("canonical HTTP requests redirect once while retaining language, path and query", async () => {
+  const worker = await loadWorker();
+  const response = await worker.fetch(new Request("http://kameymall-sheet.com/pl/articles/kameymall-tshirt-finds?from=guide"), {}, {});
+  assert.equal(response.status, 308);
+  assert.equal(response.headers.get("location"), "https://kameymall-sheet.com/pl/articles/kameymall-tshirt-finds?from=guide");
 });

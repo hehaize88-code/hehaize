@@ -18,9 +18,6 @@ export const metadata: Metadata = {
   title: "KameyMall Spreadsheet 2026: 30 Finds, Prices & Direct Links",
   description:
     "Browse 30 curated KameyMall finds with USD prices, product IDs, categories and direct links to the matching live product pages.",
-  other: {
-    "codex-preview": "development",
-  },
   openGraph: {
     title: "KameyMall Spreadsheet 2026: 30 Finds, Prices & Direct Links",
     description:

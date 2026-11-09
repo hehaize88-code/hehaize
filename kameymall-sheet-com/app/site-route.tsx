@@ -6,6 +6,7 @@ import { additionalArticles, additionalArticleRoutes } from "./site-articles";
 import { catalogCopies } from "./site-catalog-copy";
 import { priorityCategoryEditorial } from "./site-category-editorial";
 import { categoryFromRoute, productFromRoute } from "./site-products";
+import novemberCopy from "../content/november/copy.json";
 
 const SITE_URL = "https://kameymall-sheet.com";
 
@@ -20,7 +21,7 @@ const englishSeoOverrides: Partial<Record<RouteKey, { title: string; description
   },
   articles: {
     title: "KameyMall Buying Guides: Finds, Sizing, QC & Shipping",
-    description: "Read 24 KameyMall guides on hoodie and jersey finds, size charts, budget picks, ordering, QC and international shipping.",
+    description: "Read 26 KameyMall guides on T-shirt finds, UK shipping, size checks, product links, warehouse QC and the complete order budget.",
   },
 };
 
@@ -69,7 +70,16 @@ export function buildMetadata(locale: Locale, route: RouteKey): Metadata {
       : isHome
         ? copy.home.lede
         : articlePage?.seoDescription ?? page?.intro;
-  const override = locale === "en" ? englishSeoOverrides[route] : undefined;
+  const release = novemberCopy[locale];
+  const localizedOverrides: Partial<Record<RouteKey, { title: string; description: string }>> = {
+    home: { title: release.homeTitle, description: release.homeDescription },
+    categories: { title: generatedTitle, description: release.categoriesDescription },
+    guides: { title: generatedTitle, description: release.guidesDescription },
+    faq: { title: generatedTitle, description: release.faqDescription },
+    articles: { title: generatedTitle, description: release.library },
+    "guides/how-to-use-kameymall-spreadsheet": { title: release.guideTitle, description: release.guideDescription },
+  };
+  const override = localizedOverrides[route] ?? (locale === "en" ? englishSeoOverrides[route] : undefined);
   const title = override?.title ?? generatedTitle;
   const description = override?.description ?? generatedDescription;
   const canonicalPath = routeHref(locale, route);

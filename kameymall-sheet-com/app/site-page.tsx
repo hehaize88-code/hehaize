@@ -13,6 +13,7 @@ import {
   StaticRouteKey,
 } from "./site-routing";
 import type { SiteCopy } from "./site-content";
+import novemberCopy from "../content/november/copy.json";
 
 import { priorityCategoryEditorial } from "./site-category-editorial";
 import { catalogCopies } from "./site-catalog-copy";
@@ -169,6 +170,8 @@ function Header({ locale, route }: { locale: Locale; route: RouteKey }) {
     ["categories", copy.nav.categories],
     ["how-to-buy", copy.nav.how],
     ["guides", copy.nav.guides],
+    ["articles/how-to-read-kameymall-qc-photos", novemberCopy[locale].qc],
+    ["articles/kameymall-shipping-cost-guide-2026", novemberCopy[locale].shipping],
     ["articles", copy.nav.articles],
     ["faq", copy.nav.faq],
   ];
@@ -460,7 +463,11 @@ function GuidesSection({ locale }: { locale: Locale }) {
 function ArticlesSection({ locale }: { locale: Locale }) {
   const copy = usePageContent().copy;
   const targets: RouteKey[] = articleRoutes;
-  const cardOrder = [...targets.map((_, index) => index).filter((index) => index >= 20), ...targets.map((_, index) => index).filter((index) => index < 20)];
+  const cardOrder = [
+    ...targets.map((_, index) => index).filter((index) => index >= 24),
+    ...targets.map((_, index) => index).filter((index) => index >= 20 && index < 24),
+    ...targets.map((_, index) => index).filter((index) => index < 20),
+  ];
   return (
     <section className="articles-section page-section">
       <SectionHeading kicker={copy.articles.kicker} title={copy.articles.title} intro={copy.articles.intro} />
@@ -660,6 +667,7 @@ function InnerHero({ locale, route, children }: { locale: Locale; route: Exclude
 
 function ProsePage({ locale, route, article = false }: { locale: Locale; route: StaticRouteKey; article?: boolean }) {
   const copy = usePageContent().copy;
+  const release = novemberCopy[locale];
   const activeArticle = usePageContent().article;
   if (article) {
     const page = activeArticle ?? copy.articlePage;
@@ -673,13 +681,18 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
             <a href={routeHref(locale, "articles")}>← {copy.common.backToArticles}</a>
             <p>{copy.common.verifyNote}</p>
             <a className="button button-primary" href="https://cnbuycha.com/AllProducts/" onClick={() => trackMainSiteBrowseClick(locale, "article_sidebar")}>{copy.common.openProducts} <ArrowIcon external /></a>
+            <a className="article-browse" href={routeHref(locale, "finds")}>{release.browse} <ArrowIcon /></a>
+            <details className="article-toc">
+              <summary>{release.toc}</summary>
+              <ol>{page.sections.map((section, index) => <li key={section.heading}><a href={`#section-${index + 1}`}>{section.heading}</a></li>)}</ol>
+            </details>
           </aside>
           <div className="prose-body">
             <p className="prose-lede">{page.intro}</p>
             {page.sourceNote ? <p className="fact-note">{page.sourceNote}</p> : null}
             {page.image ? <figure className="article-figure"><img src={page.image.src} alt={page.image.alt} width={640} height={640} loading="lazy" decoding="async" /><figcaption>{page.image.caption}</figcaption></figure> : null}
-            {page.sections.map((section) => (
-              <section key={section.heading}>
+            {page.sections.map((section, index) => (
+              <section key={section.heading} id={`section-${index + 1}`}>
                 <h2>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
@@ -706,6 +719,8 @@ function ProsePage({ locale, route, article = false }: { locale: Locale; route: 
           <a href={routeHref(locale, "guides")}>← {copy.common.backToGuides}</a>
           <p>{copy.common.verifyNote}</p>
           <a className="button button-primary" href="https://cnbuycha.com/AllProducts/" onClick={() => trackMainSiteBrowseClick(locale, "guide_sidebar")}>{copy.common.openProducts} <ArrowIcon external /></a>
+          <a className="article-browse" href={routeHref(locale, "finds")}>{release.browse} <ArrowIcon /></a>
+          <a className="article-browse" href={routeHref(locale, "articles/kameymall-spreadsheet-guide-2026")}>{release.spreadsheetTitle}</a>
         </aside>
         <div className="prose-body">
           <p className="prose-lede">{page.intro}</p>

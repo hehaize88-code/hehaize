@@ -12,7 +12,7 @@ pages_output="${project_root}/dist/client"
 worker_source="${project_root}/dist/server"
 pages_worker_entry="${script_dir}/pages-worker-entry.mjs"
 pages_headers="${script_dir}/pages-headers.txt"
-asset_version="v20261002-1"
+asset_version="v20261109-1"
 versioned_assets="${pages_output}/assets/${asset_version}"
 esbuild="${project_root}/node_modules/.bin/esbuild"
 async_hooks_polyfill="${project_root}/node_modules/unenv/dist/runtime/node/async_hooks.mjs"
@@ -35,6 +35,9 @@ process_shim="${script_dir}/pages-process-shim.mjs"
 cp "${pages_headers}" "${pages_output}/_headers"
 mkdir -p "${versioned_assets}"
 find "${pages_output}/assets" -maxdepth 1 -type f -exec cp {} "${versioned_assets}/" \;
+if [[ -d "${pages_output}/assets/_vinext_fonts" ]]; then
+  cp -a "${pages_output}/assets/_vinext_fonts" "${versioned_assets}/"
+fi
 
 "${esbuild}" \
   "${pages_worker_entry}" \
@@ -108,7 +111,7 @@ const wwwAssetResponse = await worker.default.fetch(
   {},
 );
 if (
-  wwwAssetResponse.status !== 301 ||
+  wwwAssetResponse.status !== 308 ||
   wwwAssetResponse.headers.get("location") !==
     `https://kameymall-sheet.com/assets/${assetVersion}/test.css?source=www-check`
 ) {

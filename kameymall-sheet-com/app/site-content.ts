@@ -1,4 +1,6 @@
 import refreshedContent from "./site-article-refresh.json";
+import novemberCopy from "../content/november/copy.json";
+import novemberFaq from "../content/november/faq.json";
 import { languages, staticRoutes, opportunityArticleRoutes, type Locale, type StaticRouteKey } from "./site-routing";
 export * from "./site-routing";
 
@@ -1242,6 +1244,28 @@ for (const language of languages) {
   copy.articlePage = content.pages["articles/kameymall-spreadsheet-guide-2026"];
   copy.articles.intro = content.ui.libraryIntro;
   copy.pageIntros.articles = { ...copy.pageIntros.articles, intro: content.ui.libraryIntro };
+}
+
+for (const language of languages) {
+  const copy = copies[language.code];
+  const release = novemberCopy[language.code];
+  copy.nav.articles = release.articles;
+  copy.faq.items.push(...novemberFaq[language.code].map(([question, answer]) => ({ question, answer })));
+  copy.home.title = release.homeTitle;
+  copy.home.lede = release.homeDescription;
+  const guideRoute = "guides/how-to-use-kameymall-spreadsheet";
+  copy.guidePages[guideRoute] = {
+    label: copy.guides.kicker,
+    title: release.guideTitle,
+    intro: release.guideDescription,
+    sections: release.guideSections.map(([heading, ...paragraphs]) => ({ heading, paragraphs })),
+  };
+  copy.pageIntros[guideRoute] = { kicker: copy.guides.kicker, title: release.guideTitle, intro: release.guideDescription };
+  copy.guides.cards[0] = { ...copy.guides.cards[0], title: release.guideTitle, body: release.guideDescription };
+  for (const route of ["categories", "guides", "faq"] as const) {
+    copy.pageIntros[route].intro = release[`${route}Description`];
+    copy[route].intro = release[`${route}Description`];
+  }
 }
 
 function proseStructure(sections: ProseSection[]) {
