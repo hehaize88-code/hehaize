@@ -34,7 +34,7 @@ function productDestination(pathname) {
   return id ? localPath('/'+categories[id]+'/'+id+'.html',lang) : null;
 }
 
-const HEAD_SNIPPET = '<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
+const HEAD_SNIPPET = `<script defer src="/assets/${PAGES_ASSET_VERSION}/seo-interactions.js"></script>`+'<script async src="/ga4-tag.js"></script><script src="/ga4-init.js"></script>';
 
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
@@ -273,7 +273,7 @@ export default {
       ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
     }
 
-    finalResponse.headers.set("x-lolobuy-release","20261109-seo-v1");
+    finalResponse.headers.set("x-lolobuy-release","20261109-seo-v2");
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };

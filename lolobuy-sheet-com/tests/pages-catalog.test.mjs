@@ -22,3 +22,18 @@ test('sitemap entry point covers editorial and live catalogue URLs; nonexistent 
 test('official artwork and catalogue assets are packaged',async()=>{
  for(const p of ['/lolobuy-official.svg','/lolobuy-icon.png','/catalog.css','/catalog.js','/site-shell.css','/catalog-image-index.json','/commerce-events.js'])assert.equal((await get(p)).status,200,p);
 });
+test('Pages injects a packaged calculator and analytics enhancement without React hydration',async()=>{
+ const previous=globalThis.HTMLRewriter;
+ globalThis.HTMLRewriter=class {
+  on(selector,handler){this.handler=handler;return this;}
+  transform(response){let snippet='';this.handler.element({append(value){snippet+=value;}});return new Response(new ReadableStream({async start(controller){controller.enqueue(new TextEncoder().encode((await response.text()).replace('</head>',snippet+'</head>')));controller.close();}}),response);}
+ };
+ try{
+  const html=await(await get('/guides/shipping')).text();
+  assert.match(html,/data-parcel-copy=/);
+  const script=html.match(/<script defer src="([^"]+\/seo-interactions.js)"/);
+  assert.ok(script,'standalone interactions must be injected in production HTML');
+  const response=await get(script[1]);assert.equal(response.status,200);
+  const js=await response.text();assert.match(js,/shipping_calculator_use/);assert.match(js,/shipping_estimator_click|trackEvent/);assert.match(js,/addEventListener/);
+ }finally{if(previous)globalThis.HTMLRewriter=previous;else delete globalThis.HTMLRewriter;}
+});

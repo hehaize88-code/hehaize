@@ -5,6 +5,7 @@ import { useEffect } from "react";
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
+    seoAnalyticsInstalled?: boolean;
   }
 }
 
@@ -21,8 +22,9 @@ function cleanPath(href: string) {
   }
 }
 
-export default function AnalyticsTracker() {
-  useEffect(() => {
+export function installAnalyticsTracker() {
+    if(window.seoAnalyticsInstalled) return;
+    window.seoAnalyticsInstalled=true;
     const onSubmit = (event: SubmitEvent) => {
       const form = event.target;
       if (!(form instanceof HTMLFormElement) || !form.matches("form.product-search")) {
@@ -118,11 +120,14 @@ export default function AnalyticsTracker() {
     document.addEventListener("change", onChange, true);
 
     return () => {
+      window.seoAnalyticsInstalled=false;
       document.removeEventListener("submit", onSubmit, true);
       document.removeEventListener("click", onClick, true);
       document.removeEventListener("change", onChange, true);
     };
-  }, []);
+}
 
+export default function AnalyticsTracker() {
+  useEffect(installAnalyticsTracker, []);
   return null;
 }
