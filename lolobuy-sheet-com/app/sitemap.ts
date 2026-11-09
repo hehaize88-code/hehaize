@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["/", "/categories", "/how-it-works", "/guides/qc", "/guides/shipping", "/articles", "/faq", "/about", "/contact", "/privacy", "/terms"];
   return localeOptions.flatMap(({code: locale}) => {
     const pages = [
-      ...staticRoutes.map(path => ({path, updated: "2026-10-17", priority: path === "/" ? 1 : 0.8})),
+      ...staticRoutes.map(path => ({path, updated: ["/", "/articles", "/guides/shipping", "/how-it-works"].includes(path) ? "2026-11-09" : "2026-10-17", priority: path === "/" ? 1 : 0.8})),
       ...getLocalizedArticles(locale).map(article => ({path: `/articles/${article.slug}`, updated: article.updated, priority: 0.8})),
       ...categoryGuideSlugs.map(slug => ({path: `/categories/${slug}`, updated: "2026-10-17", priority: 0.8})),
     ];

@@ -15,7 +15,7 @@ function sendEvent(name: string, parameters: Record<string, string | number>) {
 function cleanPath(href: string) {
   try {
     const url = new URL(href, window.location.href);
-    return `${url.pathname}${url.search}`.slice(0, 180);
+    return url.pathname.slice(0, 180);
   } catch {
     return "unknown";
   }
@@ -89,9 +89,12 @@ export default function AnalyticsTracker() {
 
       try {
         const destination = new URL(link.href);
-        if (["www.cnbuycha.com", "cnbuycha.com"].includes(destination.hostname)) {
+        if (["www.lolobuy.com", "lolobuy.com"].includes(destination.hostname) && !link.dataset.trackEvent) {
+          sendEvent(destination.pathname.startsWith("/productDetail/") ? "lolobuy_product_click" : "lolobuy_outbound_click", {destination_path:destination.pathname, page_path:window.location.pathname, language});
+        }
+        if (["www.cnbuycha.com", "cnbuycha.com", "cnfansge.com", "www.cnfansge.com"].includes(destination.hostname)) {
           sendEvent("outbound_main_site", {
-            destination_path: `${destination.pathname}${destination.search}`.slice(0, 180),
+            destination_path: destination.pathname.slice(0, 180),
             source_path: window.location.pathname,
             placement: link.closest(".article-product-evidence, .article-section-links") ? "article" : "directory",
           });

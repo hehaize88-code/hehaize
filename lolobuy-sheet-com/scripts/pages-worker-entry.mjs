@@ -40,7 +40,7 @@ async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
   if (url.pathname === "/ga4-init.js") {
     return new Response(
-      "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-QY8MM7VZV2');",
+      "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('js',new Date());if(location.hostname==='lolobuy-sheet.com'||location.hostname==='www.lolobuy-sheet.com')gtag('config','G-QY8MM7VZV2');",
       {
         headers: {
           "content-type": "application/javascript; charset=utf-8",
@@ -273,7 +273,7 @@ export default {
       ctx?.waitUntil?.(cache.put(cacheKey, finalResponse.clone()));
     }
 
-    finalResponse.headers.set("x-lolobuy-release","20261017-seo-v1");
+    finalResponse.headers.set("x-lolobuy-release","20261109-seo-v1");
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };

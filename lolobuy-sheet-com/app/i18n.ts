@@ -523,7 +523,7 @@ export const faqPageCopy = {
 export const workflowPageCopy = {
   en: {
     eyebrow: "THE COMPLETE FLOW",
-    title: "One directory. Four separate decisions.",
+    title: "How to Buy on LoloBuy: Links, Payment, QC and Shipping",
     intro:
       "The spreadsheet helps with discovery. The live listing, warehouse evidence and final parcel data each control a different later decision.",
     crumb: "How it works",
@@ -559,7 +559,7 @@ export const workflowPageCopy = {
   },
   es: {
     eyebrow: "EL FLUJO COMPLETO",
-    title: "Un directorio. Cuatro decisiones separadas.",
+    title: "Cómo comprar en LoloBuy: enlaces, pago, QC y envío",
     intro:
       "La hoja ayuda a descubrir. La ficha actual, las fotos del almacén y los datos finales del paquete controlan decisiones distintas.",
     crumb: "Cómo funciona",
@@ -595,7 +595,7 @@ export const workflowPageCopy = {
   },
   de: {
     eyebrow: "DER KOMPLETTE ABLAUF",
-    title: "Ein Verzeichnis. Vier getrennte Entscheidungen.",
+    title: "Bei LoloBuy bestellen: Links, Zahlung, QC und Versand",
     intro:
       "Das Sheet hilft beim Entdecken. Live-Angebot, Lagerfotos und finale Paketdaten bestimmen jeweils einen anderen Schritt.",
     crumb: "So funktioniert’s",
@@ -631,7 +631,7 @@ export const workflowPageCopy = {
   },
   fr: {
     eyebrow: "LE PARCOURS COMPLET",
-    title: "Un catalogue. Quatre décisions distinctes.",
+    title: "Commander sur LoloBuy : paiement, QC et livraison",
     intro:
       "Le tableau aide à découvrir. La fiche actuelle, les preuves d’entrepôt et les données finales du colis contrôlent des décisions différentes.",
     crumb: "Fonctionnement",
@@ -667,7 +667,7 @@ export const workflowPageCopy = {
   },
   it: {
     eyebrow: "IL FLUSSO COMPLETO",
-    title: "Un catalogo. Quattro decisioni separate.",
+    title: "Come acquistare su LoloBuy: link, pagamento, QC e spedizione",
     intro:
       "Il foglio aiuta a scoprire. Scheda attuale, prove del magazzino e dati finali del pacco guidano decisioni diverse.",
     crumb: "Come funziona",

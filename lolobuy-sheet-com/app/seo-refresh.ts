@@ -89,6 +89,7 @@ const searchTitles: Partial<Record<Locale, Record<string,string>>> = {
   }
 };
 export function improveArticle(article: Article, locale: Locale): Article {
+ if (article.published >= "2026-11-09") return article;
  const refreshedTitle = searchTitles[locale]?.[article.slug] ?? article.searchTitle;
  if (article.published === "2026-10-17") return {...article, searchTitle: refreshedTitle};
  const section = ["lolobuy-fees-explained", "plan-china-shopping-haul"].includes(article.slug) ? savings[locale] : article.slug === "lolobuy-review-early-user-experience" ? review[locale] : article.slug === "lolobuy-tracking-not-updating-guide" ? tracking[locale] : null;

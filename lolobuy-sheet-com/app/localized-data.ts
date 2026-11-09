@@ -1,3 +1,4 @@
+import { novemberArticles, applyNovemberUpdates } from './november-content';
 import type { Locale } from "./i18n";
 import { trackingArticleLocales } from "./tracking-article-locales";
 import { shoeArticleLocales } from "./shoe-article-locales";
@@ -1047,11 +1048,13 @@ const qcMismatchArticleText: Record<
 
 export function getLocalizedArticles(locale: Locale): Article[] {
   if (locale === "en") {
-    return [...articles].map((article) => improveArticle(article, locale)).sort((a, b) => b.published.localeCompare(a.published));
+    return [...articles].map((article) => applyNovemberUpdates(improveArticle(article, locale), locale)).sort((a, b) => b.published.localeCompare(a.published));
   }
 
   return articles
     .map((article, index) => {
+    const november = novemberArticles(locale).find(item => item.slug === article.slug);
+    if(november) return november;
     const refreshed = seoRefreshLocales[locale][article.slug];
     if (refreshed) return refreshed;
     const octoberEdition = octoberArticleLocales[locale][article.slug];
@@ -1141,6 +1144,6 @@ export function getLocalizedArticles(locale: Locale): Article[] {
       sections: body.sections,
     };
     })
-    .map((article) => improveArticle(article, locale))
+    .map((article) => applyNovemberUpdates(improveArticle(article, locale), locale))
     .sort((a, b) => b.published.localeCompare(a.published));
 }

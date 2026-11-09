@@ -1,3 +1,4 @@
+import { novemberArticles } from './november-content';
 import { seoRefreshEn } from "./seo-refresh-en";
 import { sellerPageArticle } from "./seller-page-article";
 import { priorityArticles } from "./priority-articles";
@@ -208,6 +209,7 @@ export type ArticleSection = {
 };
 
 export type ArticleSource = {
+  href?: string;
   label: string;
   note: string;
 };
@@ -1725,6 +1727,7 @@ export const articles: Article[] = [
   sellerPageArticle,
   ...octoberArticles,
   ...Object.values(seoRefreshEn),
+  ...novemberArticles("en"),
 ];
 
 export const faqs = [

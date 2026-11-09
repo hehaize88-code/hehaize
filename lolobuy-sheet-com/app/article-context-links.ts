@@ -10,6 +10,10 @@ type ContextCopy = {
 };
 
 const routesByArticle: Record<string, string[]> = {
+  "lolobuy-shipping-time-guide": ["/articles/lolobuy-tracking-not-updating-guide", "/articles/lolobuy-submit-package-guide", "/articles/lolobuy-shipping-germany-guide", "/guides/shipping"],
+  "lolobuy-shipping-germany-guide": ["/articles/lolobuy-shipping-time-guide", "/articles/lolobuy-shipping-calculator-guide", "/articles/lolobuy-restricted-items-shipping-routes", "/articles/lolobuy-submit-package-guide"],
+  "lolobuy-reduce-shipping-cost-guide": ["/articles/lolobuy-shipping-calculator-guide", "/articles/lolobuy-payment-guide", "/articles/lolobuy-fees-explained", "/articles/lolobuy-shipping-time-guide"],
+
   "lolobuy-shipping-france-guide": ["/articles/lolobuy-fees-explained", "/articles/lolobuy-shipping-calculator-guide", "/articles/lolobuy-submit-package-guide", "/articles/lolobuy-tracking-not-updating-guide"],
   "lolobuy-shipping-calculator-guide": ["/articles/lolobuy-fees-explained", "/articles/lolobuy-haul-cost-breakdown", "/articles/lolobuy-submit-package-guide", "/articles/lolobuy-shipping-france-guide"],
   "lolobuy-submit-package-guide": ["/articles/lolobuy-order-status-guide", "/articles/how-to-read-qc-photos", "/articles/lolobuy-shipping-calculator-guide", "/articles/lolobuy-tracking-not-updating-guide"],

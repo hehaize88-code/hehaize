@@ -1,3 +1,4 @@
+import ParcelWeightCalculator from '../../components/parcel-weight-calculator';
 
 import GuideShortcuts from "../../components/guide-shortcuts";
 import type { Metadata } from "next";
@@ -87,6 +88,7 @@ export default async function ShippingGuidePage({
         </div>
       </section>
 
+      <div className="weight-explainer"><ParcelWeightCalculator locale={locale} /></div>
       <section className="source-note-panel">
         <p className="eyebrow">{copy.sourceEyebrow}</p>
         <h2>{copy.sourceTitle}</h2>
@@ -109,7 +111,7 @@ export default async function ShippingGuidePage({
           headline: copy.title,
           description: copy.intro,
           datePublished: "2026-07-26",
-          dateModified: "2026-10-17",
+          dateModified: "2026-11-09",
           image: "https://lolobuy-sheet.com/articles/plan-china-shopping-haul.webp",
           mainEntityOfPage: `https://lolobuy-sheet.com${localizedPath("/guides/shipping", locale)}`,
           author: { "@type": "Organization", name: "Lolobuy Sheet" },

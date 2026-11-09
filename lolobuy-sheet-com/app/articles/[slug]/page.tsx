@@ -1,3 +1,4 @@
+import ParcelWeightCalculator from '../../components/parcel-weight-calculator';
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -324,6 +325,7 @@ export default async function ArticlePage({
           </MobileChapter>
           <div className="article-prose">
             <MobileReadingTools locale={locale} />
+            {article.slug === "lolobuy-shipping-calculator-guide" && <ParcelWeightCalculator locale={locale} />}
             <div className="article-intro">
               {article.intro.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
@@ -374,7 +376,7 @@ export default async function ArticlePage({
                   {section.links && <nav className="article-section-links" aria-label={section.heading}>
                     {section.links.map((link) => link.href.startsWith("/")
                       ? <Link key={link.href} href={localizedPath(link.href, locale)}>{link.label} →</Link>
-                      : <a key={link.href} href={link.href} target="_blank" rel="sponsored noopener">{link.label} →</a>)}
+                      : <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">{link.label} →</a>)}
                   </nav>}
                   {section.bullets ? (
                     <ul>
@@ -414,7 +416,7 @@ export default async function ArticlePage({
               <ul>
                 {article.sources.map((source) => (
                   <li key={source.label}>
-                    <strong>{source.label}</strong>
+                    <strong>{source.href ? <a href={source.href} target="_blank" rel="noopener noreferrer">{source.label}</a> : source.label}</strong>
                     <span>{source.note}</span>
                   </li>
                 ))}

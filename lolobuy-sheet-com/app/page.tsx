@@ -10,27 +10,27 @@ const homeMetadataCopy: Record<
   { title: string; description: string }
 > = {
   en: {
-    title: "LoloBuy Spreadsheet 2026: Finds, W2C Links & QC",
+    title: "LoloBuy Spreadsheet: Product Finds, QC & Shipping Guides",
     description:
       "Browse Lolobuy product finds by category, open current listing links, and check sizing, variants and QC details before ordering.",
   },
   es: {
-    title: "Spreadsheet Lolobuy 2026 | Productos y guía QC",
+    title: "LoloBuy Spreadsheet: productos, QC y guías de envío",
     description:
       "Explora un spreadsheet Lolobuy seleccionado, descubre categorías, aprende a revisar fotos QC y abre las fichas actuales de cada producto.",
   },
   de: {
-    title: "Lolobuy Spreadsheet 2026 | Produkte & QC-Leitfaden",
+    title: "LoloBuy Spreadsheet: Produkte, QC und Versandratgeber",
     description:
       "Durchsuche ein kuratiertes Lolobuy Spreadsheet, entdecke Kategorien, prüfe Lagerfotos mit einem QC-Leitfaden und öffne aktuelle Angebote.",
   },
   fr: {
-    title: "Spreadsheet LoloBuy 2026 : liens produits, prix et QC",
+    title: "Spreadsheet LoloBuy : produits, QC et livraison",
     description:
       "Trouvez des produits LoloBuy, comparez les prix en USD et consultez les guides QC, frais et livraison en France avant de préparer votre colis.",
   },
   it: {
-    title: "Spreadsheet Lolobuy 2026 | Prodotti e guida QC",
+    title: "LoloBuy Spreadsheet: prodotti, QC e spedizioni",
     description:
       "Esplora uno spreadsheet Lolobuy selezionato, scopri le categorie, impara a controllare le foto QC e apri le schede prodotto attuali.",
   },

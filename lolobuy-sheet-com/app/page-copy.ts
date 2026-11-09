@@ -425,7 +425,7 @@ export const qcPageCopy = {
 export const shippingPageCopy = {
   en: {
     eyebrow: "PARCEL PLANNING",
-    title: "Plan Lolobuy shipping around the packed parcel.",
+    title: "LoloBuy Shipping: Costs, Weight and Delivery Time",
     intro:
       "International shipping cannot be reduced to one price chart. The destination, route, item restrictions, actual weight, dimensions and packaging all affect the final choice.",
     crumb: "Shipping",
@@ -460,7 +460,7 @@ export const shippingPageCopy = {
   },
   es: {
     eyebrow: "PLANIFICACIÓN DEL PAQUETE",
-    title: "Planifica el envío Lolobuy según el paquete preparado.",
+    title: "Envío LoloBuy: gastos, peso y plazos de entrega",
     intro:
       "El envío internacional no cabe en una tarifa única. Destino, ruta, restricciones, peso, dimensiones y embalaje cambian la decisión final.",
     crumb: "Envío",
@@ -489,7 +489,7 @@ export const shippingPageCopy = {
   },
   de: {
     eyebrow: "PAKETPLANUNG",
-    title: "Lolobuy-Versand anhand des gepackten Pakets planen.",
+    title: "LoloBuy Versand: Kosten, Gewicht und Lieferzeit",
     intro:
       "Internationaler Versand lässt sich nicht auf eine Preistabelle reduzieren. Ziel, Route, Einschränkungen, Gewicht, Maße und Verpackung bestimmen die Auswahl.",
     crumb: "Versand",
@@ -518,7 +518,7 @@ export const shippingPageCopy = {
   },
   fr: {
     eyebrow: "PLANIFICATION DU COLIS",
-    title: "Planifiez l'expédition Lolobuy autour du colis emballé.",
+    title: "Livraison LoloBuy : frais, poids et délais",
     intro:
       "L'expédition internationale ne se résume pas à un tarif. Destination, route, restrictions, poids, dimensions et emballage influencent le choix final.",
     crumb: "Expédition",
@@ -547,7 +547,7 @@ export const shippingPageCopy = {
   },
   it: {
     eyebrow: "PIANIFICAZIONE DEL PACCO",
-    title: "Pianifica la spedizione Lolobuy sul pacco preparato.",
+    title: "Spedizione LoloBuy: costi, peso e tempi",
     intro:
       "La spedizione internazionale non si riduce a un listino. Destinazione, rotta, restrizioni, peso, dimensioni e imballaggio determinano la scelta.",
     crumb: "Spedizione",
