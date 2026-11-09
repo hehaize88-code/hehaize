@@ -1,10 +1,10 @@
 {
   "locale": "ga",
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-09",
   "ui": {
     "articles": "Ailt",
     "articleTitle": "Treoracha ceannaigh Sugargoo",
-    "articleIntro": "Treoracha Sugargoo praiticiúla do naisc táirge, grianghraif QC, méideanna bróg agus loingseoireachta. Roghnaigh an cheist is gá duit a fhreagairt roimh cheannach nó a sheoladh beartán.",
+    "articleIntro": "Treoracha praiticiúla Sugargoo le haghaidh naisc táirgí, méideanna éadaí agus bróg, grianghraif QC, aimsithe buiséid agus loingseoireacht tír-shonrach. Roghnaigh an cheist le réiteach sula gceannaíonn tú nó sula seolann tú pacáiste.",
     "faqTitle": "Ceisteanna coitianta faoi Sugargoo",
     "faqIntro": "Freagraí soiléire do gach céim den ordú, le foinsí oifigiúla do rialacha an ardáin agus teorainneacha macánta don chatalóg neamhspleách seo.",
     "readArticle": "Léigh an treoir",
@@ -62,7 +62,10 @@
     "billingBase": "Meáchan roimh slánú",
     "weightDisclaimer": "Taispeánann an toradh an meáchan roimh shlánú agus íosbhilleáil. Tá teorainneacha méide agus táillí seirbhíse fós i bhfeidhm. Deimhnigh an luachan reatha le Sugargoo.",
     "weightError": "Cuir isteach uimhir dhearfach i ngach réimse tomhais.",
-    "officialEstimatorGuide": "Oscail an treoir oifigiúil don áireamhán loingseoireachta"
+    "officialEstimatorGuide": "Oscail an treoir oifigiúil don áireamhán loingseoireachta",
+    "navQc": "Grianghraif QC",
+    "navShipping": "Loingseoireacht",
+    "priceSortedCta": "Brabhsáil praghsanna ó íseal go hard"
   },
   "groups": {
     "basics": "Ag tosú",
@@ -444,8 +447,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Conas scarbhileog Sugargoo a úsáid: aimsigh agus ordaigh",
-      "description": "Bain úsáid as scarbhileog Sugargoo chun teacht ar naisc táirge, méideanna a sheiceáil agus roghanna díoltóir, an leathanach ordú ceart a oscailt, agus stóras a athbhreithniú QC roimh loingseoireachta.",
+      "title": "Treoir Scarbhileog Sugargoo: Aimsigh Naisc, Seiceáil Méideanna & Ceannaigh",
+      "description": "Úsáid scarbhileog Sugargoo chun naisc táirgí a aimsiú, praghsanna a shórtáil, méideanna éadaí a chur i gcomparáid agus QC do stórais féin a sheiceáil roimh loingseoireacht.",
       "keyword": "scarbhileog Sugargoo",
       "category": "getting-started",
       "intro": [
@@ -465,6 +468,19 @@
             "Seiceáil: mheaitseáil an liosta bunaidh, roghanna agus praghas ord reatha.",
             "Ordú: úsáid a bhaint as an sreabhadh ceannaigh oifigiúil le haghaidh mír incháilithe.",
             "Athbhreithniú: iniúchadh a dhéanamh ar do stóras féin QC roimh a dhéanamh beartán."
+          ]
+        },
+        {
+          "id": "spreadsheet-budget-shortlist",
+          "title": "Tóg gearrliosta timpeall ar phraghas agus feistiú",
+          "paragraphs": [
+            "Úsáid an catalóg sórtáilte de réir praghsanna nuair a bhíonn buiséad táirge agat, ansin caolaigh de réir catagóire nó téarma cuardaigh. Fíoraigh an rogha roghnaithe ar an leathanach ceannaigh: féadfaidh an praghas is ísle a thaispeántar a bheith i méid, dath nó cainníocht difriúil. Coinnigh praghas an táirge agus buiséad seachadta mar chinntí ar leithligh.",
+            "I gcás éadaí, sábháil cairt an díoltóra leis an nasc liostála cruinn agus déan comparáid idir é agus éadaí comhchosúla atá agat féin. Marcáil gach iarrthóir le gníomh amháin eile, amhail fad na muinchille a sheiceáil nó an chainníocht atá san áireamh a dheimhniú. Fágann sé seo gur liosta seiceála ceannaigh úsáideach é an t-eolaire seachas bailiúchán méadaitheach de naisc neamhfhíoraithe."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/articles/sugargoo-finds-under-20/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -551,7 +567,7 @@
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/spreadsheet/",
         "/category/shoes/"
@@ -658,8 +674,8 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Conas grianghraif QC Sugargoo a sheiceáil roimh sheoladh",
-      "description": "Aimsigh Sugargoo stóras grianghraif QC, seiceáil an mhír ceart agus méid, a iarraidh tomhais breise úsáideach, agus fadhbanna a réiteach roimh loingseoireachta idirnáisiúnta.",
+      "title": "Grianghraif Sugargoo QC: Cá bhFaighidh tú Iad & Cad atá le Seiceáil",
+      "description": "Aimsigh grianghraif Sugargoo QC d'ordú, seiceáil an malairt agus na tomhais cearta, agus iarr fianaise shoiléir sula gceadaítear loingseoireacht idirnáisiúnta.",
       "keyword": "grianghraif seiceála cáilíochta Sugargoo",
       "category": "quality",
       "intro": [
@@ -678,6 +694,18 @@
             "Seiceáil go mbaineann gach grianghraf leis an ord céanna agus athraitheach.",
             "Iarraidh ar dhearcadh dlúth de locht amhrasta, a shuíomh a aithint.",
             "Coinnigh míreanna gan réiteach amach as an dáileacht go dtí go bhfuil tú freagra."
+          ]
+        },
+        {
+          "id": "qc-photo-request",
+          "title": "Tiontaigh grianghraf doiléir ina iarratas beacht",
+          "paragraphs": [
+            "Oscail na grianghraif atá ceangailte le d'ordú féin sa stóras nó sa limistéar ordaithe. Cuidíonn íomhánna tagartha catalóige leat brabhsáil, ach ní chruthaíonn siad riocht ná tomhais an earra a tháinig chugat. Ar dtús, meaitseáil aitheantóir an earra, an dath roghnaithe, an méid agus an chainníocht leis an taifead ordaithe.",
+            "Maidir le feistiú éadaí, iarr an tomhas cruinn a d'fhéadfadh do chinneadh a athrú: leithead cófra le pointe nialasach an téipe le feiceáil, fad an choirp ó phointe tosaigh ainmnithe, nó crios scaoilte. Maidir le bróga, coinnigh fad na coise, fad an bhoinn istigh agus tiontuithe lipéad méide ar leithligh. Deimhnigh na seirbhísí agus na táillí atá ar fáil, agus ansin déan comparáid idir an toradh agus tagairt a thomhaistear ar an mbealach céanna."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-shoe-size-guide/"
           ]
         },
         {
@@ -764,17 +792,17 @@
         "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
-        "/articles/sugargoo-shoe-size-guide/",
-        "/category/shoes/"
+        "/articles/sugargoo-clothing-size-guide/",
+        "/category/hoodies-sweaters/"
       ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Áireamhán loingseoireachta Sugargoo: meáchan agus costas",
-      "description": "Déan comparáid idir meáchan iarbhír an bheartáin agus a mheáchan toirte. Úsáid roinnteoir agus riail bhilleála an bhealaigh roghnaithe. Ní ríomhann an uirlis praghsanna loingseoireachta.",
+      "title": "Áireamhán Loingseoireachta Sugargoo: Meáchan Iarbhír vs Meáchan Toirtmhéadrach",
+      "description": "Ríomh meáchan an phacáiste, déan comparáid idir billeáil iarbhír agus toirtmhéadrach, agus bailigh na hionchuir atá riachtanach le haghaidh meastachán reatha ar chostas loingseoireachta Sugargoo.",
       "keyword": "áireamhán seolta Sugargoo",
       "category": "shipping",
       "intro": [
@@ -793,6 +821,18 @@
             "Úsáid toisí amuigh pacáilte i gceintiméadair, ní toisí táirge.",
             "Tiontaigh graim go cileagraim: is ionann 3000 g agus 3 kg.",
             "Tóg an riail roinnteora agus muirearú ón mbealach a bhfuil tú ag smaoineamh air."
+          ]
+        },
+        {
+          "id": "calculator-quote-handoff",
+          "title": "Cuir an ríomh i luachan bealaigh reatha",
+          "paragraphs": [
+            "Míníonn an t-áireamhán thuas meáchan; ní aisghabhann sé taraifí loingseoireachta beo. Tar éis an ríomh, oscail an meastóir oifigiúil le do cheann scríbe, d'ábhar agus do thomhais phacáilte. Bain úsáid as roinnteoir an bhealaigh roghnaithe, an muirear íosta agus téarmaí babhtála in ionad glacadh leis go dtugann foirmle aonair cur síos ar gach seirbhís.",
+            "Taifead an t-iomlán a luadh agus a bhfuil ann. Déan comparáid idir bealaí le hionchuir chomhionanna, agus ansin athnuachan an luachan tar éis an pacáiste a athrú. I gcás loingsithe Phoblacht na Seice, léigh an treoir cheann scríbe reatha atá nasctha thíos freisin; ní meastachán iontaofa é sean-riail allmhairithe ísealluacha nó íocaíocht ceannaitheora eile do do phacáiste."
+          ],
+          "actions": [
+            "/articles/sugargoo-rehearsal-shipping/",
+            "/articles/sugargoo-shipping-to-czechia/"
           ]
         },
         {
@@ -879,7 +919,7 @@
         "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-rehearsal-shipping/",
         "/articles/sugargoo-shipping-to-usa/"
@@ -888,8 +928,8 @@
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Triailphacáil Sugargoo: conas a oibríonn sí agus cathain is fiú í",
-      "description": "Foghlaim cad a dhéanann loingseoireachta clúmhillte Sugargoo, nuair is fiú an táille, agus conas a úsáid meáchan pacáilte agus toisí roimh roghnú bealach loingseoireachta.",
+      "title": "Loingseoireacht Cleachtaidh Sugargoo: Céimeanna, Costas & Cathain is Cóir É a Úsáid",
+      "description": "Foghlaim cathain a chabhraíonn loingseoireacht cleachtaidh Sugargoo, cad atá le seiceáil sula n-íoctar, agus conas an toradh pacáilte a chur i gcomparáid le do luachan loingseoireachta deiridh.",
       "keyword": "pacáil thrialach Sugargoo",
       "category": "shipping",
       "intro": [
@@ -924,6 +964,18 @@
               ]
             ]
           }
+        },
+        {
+          "id": "rehearsal-next-decision",
+          "title": "Úsáid toradh an chleachtaidh chun an chéad chinneadh eile a dhéanamh",
+          "paragraphs": [
+            "Léigh an táille seirbhíse reatha i do chuntas sula n-iarrann tú cleachtadh. Is é an toradh úsáideach ná faisnéis phacála níos soiléire: déan comparáid idir an meáchan iarbhír, na toisí seachtracha, riail billeála an bhealaigh agus aon seirbhísí roghnaithe. Ní ráthaíonn cleachtadh íoctha ann féin go mbeidh an t-iomlán loingseoireachta deiridh níos ísle.",
+            "Mura bhfuil an toradh i gcomhréir le do mheastachán, sainaithin cén fáth sula n-athraíonn tú bealaí. An raibh an bosca níos mó ná mar a bhíothas ag súil leis, an ndearna pacáil chosanta meáchan a chur leis, nó an úsáideann an bealach roinnteoir difriúil? Déan comparáid idir ábhar agus pacáistiú comhionann trasna luachana incháilithe. Má bhaineann tú mír nó má athraíonn tú pacáistiú ina dhiaidh sin, athnuachan an fhaisnéis a úsáideadh don luachan deiridh."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-shipping-to-czechia/"
+          ]
         },
         {
           "id": "identify-the-decision",
@@ -1009,7 +1061,7 @@
         "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-shipping-calculator/",
         "/articles/sugargoo-parcel-consolidation/"
@@ -1376,8 +1428,8 @@
     {
       "id": "sugargoo-returns-refunds",
       "slug": "sugargoo-returns-refunds",
-      "title": "Aisfhillteacha agus aisíocaíochtaí Sugargoo: fianaise, incháilitheacht agus na chéad chéimeanna eile",
-      "description": "Láimhseáil earra mícheart nó ordú athraithe le fianaise shoiléir, seiceálacha coinníollacha aisfhillte agus taifead aisíocaíochta a scarann ceadú ó airgead faighte.",
+      "title": "Tuairisceáin & Aisíocaíochtaí Sugargoo: Fianaise ar Cháilíocht Cháilíochta agus na Céimeanna Eile",
+      "description": "Seiceáil céim d'ordú, doiciméadaigh fadhb méide nó riocht, agus tuig an chéad chéim eile maidir le tuairisceáin nó aisíocaíocht roimh sheoladh idirnáisiúnta.",
       "keyword": "aisíocaíocht sugargoo",
       "category": "account",
       "intro": [
@@ -1391,6 +1443,18 @@
           "paragraphs": [
             "Sula dtéann tú i dteagmháil leis an tacaíocht, faigh amach an bhfuil an t-ordú fós ag fanacht le ceannach, ceannaithe cheana, seolta ag an díoltóir, faighte sa stóras nó seolta go hidirnáisiúnta. Tá iarratas chun ceannach neamhchríochnaithe a chealú éagsúil ó earraí fisiciúla a chur ar ais. Úsáid stádas agus dáta iarbhír an ordaithe seachas glacadh leis gur aisiompaíodh an t-idirbheart nuair a bhrúigh tú cnaipe.",
             "Déanann treoir chealaithe oifigiúil Sugargoo cur síos ar phróiseas cealaithe tríd an gcuntas, agus scarann a threoir aisfhillte céimeanna aisfhillte agus aisíocaíochta níos déanaí. Oscail an t-ordú ábhartha agus úsáid an gníomh oifigiúil atá ar fáil. Mura bhfuil an rogha ann nó mura bhfuil an stádas soiléir, fiafraigh den tacaíocht cén gníomh atá indéanta don ordú sin sula socraíonn tú aon rud go neamhspleách."
+          ]
+        },
+        {
+          "id": "return-size-evidence",
+          "title": "Doiciméadaigh fadhb méide sula n-iarrtar leigheas",
+          "paragraphs": [
+            "Coinnigh an leagan roghnaithe, cairt tomhais an díoltóra agus grianghraif cháilíochta cáilíochta d'ordú le chéile. Mínigh an raibh an rogha mícheart tagtha nó an bhfuil tomhais ag an lipéad ceart atá difriúil ón liostú. Déan comparáid idir na pointí tomhais céanna; ní féidir le leithead cothrom agus imlíne neamhréir a chruthú leo féin.",
+            "Fiafraigh cé na roghanna um fhilleadh nó malartú atá ar fáil don ordú sin, lena n-áirítear spriocdhátaí, costais intíre agus an chéad ghníomh eile atá riachtanach. Taifead an freagra agus aon iontrálacha aisíocaíochta ar leithligh. Ná glac le formheas iarratais mar chruthúnas go bhfuil gach costas aisíoctha cheana féin, agus réitigh ceisteanna ábhartha roimh an seoladh idirnáisiúnta."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-order-status/"
           ]
         },
         {
@@ -1473,7 +1537,11 @@
         "sugargoo-fees-payment"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-18"
+      "updated": "2026-11-09",
+      "actions": [
+        "/articles/sugargoo-qc-photos/",
+        "/articles/sugargoo-order-status/"
+      ]
     },
     {
       "id": "weidian-taobao-links-sugargoo",
@@ -2304,6 +2372,10 @@
           "paragraphs": [
             "Oscail an leathanach táirge bunaidh agus an chairt méid a bhaineann leis an tsamhail sin a shábháil. Seiceáil an gcuireann a thomhais síos ar an gcos, ar an insole nó ar an taobh amuigh bróg. Chomh maith leis sin seiceáil an bhfuil an córas sizing do na fir, mná nó leanaí. Is féidir le tábla ó mhúnla eile a chruthú meaitseáil bréagach fiú nuair a fhéachann na lipéid méid mar an gcéanna.",
             "Má tá an chairt neamhshoiléir, a iarraidh ar an díoltóir nó gníomhaire cad a chiallaíonn gach colún roimh ordú. Ná cuir liúntas caighdeánach le gach cairt: d'fhéadfadh an díoltóir a bheith tógtha cheana féin liúntas isteach ina mholadh. Do oiriúnach roghnaithe, stocaí agus cruth an bróg ábhar freisin."
+          ],
+          "actions": [
+            "/category/shoes/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -2409,6 +2481,443 @@
       "actions": [
         "/category/shoes/",
         "/articles/sugargoo-qc-photos/"
+      ]
+    },
+    {
+      "id": "sugargoo-clothing-size-guide",
+      "slug": "sugargoo-clothing-size-guide",
+      "title": "Treoir Méide Éadaí Sugargoo: Tomhais & Seiceálacha Cáilíochta",
+      "description": "Roghnaigh méideanna éadaí ag baint úsáide as tomhais an díoltóra, déan comparáid idir éadaí atá i do sheilbh, agus iarr grianghraif úsáideacha Cáilíochta Sugargoo roimh an seoladh idirnáisiúnta.",
+      "keyword": "sugargoo clothing size guide",
+      "category": "quality",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Tosaigh le tomhais éadaí a oireann duit, ansin déan comparáid idir iad agus cairt an díoltóra chruinn. Ní leor litir mhéide eolach: is féidir leithead, faid agus gearrthacha an-difriúla a bheith ag geansaí meánach agus geansaí meánach. Déanann an treoir méide éadaí Sugargoo seo na difríochtaí sin ina sheicliosta ordaithe praiticiúil.",
+        "Bain úsáid as grianghraif liostála chun stíl a roghnú, an chairt mhéide chun malairt a roghnú, agus Cáilíocht Cáilíochta do stórais féin chun a sheiceáil cad a tháinig. Is trí chineál éagsúla fianaise iad seo. Léiríonn na samplaí comparáide thíos modh; Ní tomhais iad seo ar tháirgí atá ar fáil sa chatalóg faoi láthair."
+      ],
+      "sections": [
+        {
+          "id": "measure-reference",
+          "title": "Tomhais éadaí tagartha sula ndéanann tú brabhsáil",
+          "paragraphs": [
+            "Roghnaigh rud éigin is maith leat a chaitheamh sa chatagóir chéanna. Is drochthagairt é T-léine feistithe do geansaí geimhridh a chaitear thar shraith eile. Leag an t-éadach ar dhromchla cothrom, réidh na fillteacha soiléire gan an fabraic a shíneadh, agus tóg grianghraf soiléir de gach tomhas. Tabhair faoi deara an bhfuil sé nite cheana féin agus an síneann an fabraic.",
+            "Taifead na pointí tomhais chomh maith leis an uimhir. I gcás barr simplí, tomhais díreach trasna an chliabhraigh faoi bhun na n-armphoill, ansin tomhais fad an choirp ó phointe gualainn atá aitheanta go soiléir go dtí an imeall. Bain úsáid as na críochphointí céanna agus tú ag léamh chairt an díoltóra. Is féidir le huaim cuartha, gualainn íslithe nó imeall míchothrom dhá thomhas faid atá cosúil le feiceáil a dhéanamh dochomparáide.",
+            "Coinnigh an bhileog tagartha bheag seo ar fáil agus tú ag brabhsáil. Má athraíonn tú an fheistiú beartaithe ó rialta go rómhór, athraigh an t-éadach tagartha freisin. Is féidir le líon randamach ceintiméadar a chur le gach toise muinchillí a tháirgeadh atá rófhada gan an spás breise cófra a theastaigh uait a sholáthar."
+          ],
+          "actions": [
+            "/category/t-shirts/",
+            "/category/hoodies-sweaters/"
+          ]
+        },
+        {
+          "id": "read-size-chart",
+          "title": "Léigh cairt an díoltóra gan na tomhais a mheascadh",
+          "paragraphs": [
+            "Ar dtús, faigh amach an dtugann an chairt cur síos ar dhuine nó ar an éadach críochnaithe. Ní leithead cófra éadaigh chomhréidh é imlíne cófra coirp. Mar an gcéanna, ní féidir cairt a thaispeánann imlíne éadaigh a chur i gcomparáid go díreach le tomhas comhréidh aonair. Nuair a dhúblaítear leithead comhréidh, níl sa toradh ach meastachán simplí ar an imlíne; ní dhéanann sé cur síos ar an gcruthú, ar an stráice ná ar an gcaoi a gcrochfaidh an t-éadach.",
+            "Seiceáil na haonaid, an rogha táirge cruinn agus aon chaoinfhulaingt tomhais a thaispeánann an díoltóir. Ná haistrigh cairt ó liostú atá cosúil go radhairc. Is féidir le baisceanna nó gearrthacha éagsúla sonraíochtaí éagsúla a úsáid. Más íomhá í cairt, zúmáil isteach agus léigh ceannteidil na gcolún sula ndéanann tú iad a aistriú; is féidir le lipéad aistrithe gan a léaráid tomhais a bheith débhríoch fós.",
+            "I measc na lipéid choitianta tá cófra nó bust, gualainn, fad éadaigh, fad muinchille, coim, cromán, ardú agus fad brístí. Scríobh an bhrí in aice le do thomhais shábháilte. Mura bhfuil an léaráid ann agus má bheadh méideanna difriúla mar thoradh ar dhá léirmhíniú, iarr soiléiriú sula n-íocann tú. Éiríonn buille faoi thuairim níos costasaí tar éis don ordú teacht ar idirthuras idirnáisiúnta."
+          ]
+        },
+        {
+          "id": "fit-example",
+          "title": "Comparáid oibrithe: leithead agus fad le chéile",
+          "paragraphs": [
+            "Smaoinigh ar léine T tagartha léiritheach a thomhaiseann 54 cm trasna an chliabhraigh agus 70 cm ar fhad. Abair go liostaíonn cairt díoltóra rogha amháin ag 52 cm agus 68 cm, agus ceann eile ag 56 cm agus 72 cm, ag baint úsáide as na pointí tomhais céanna. Tá an chéad rogha níos cúinge agus níos giorra ná do thagairt; tá an dara ceann níos leithne agus níos faide. Níl ceachtar acu ceart go huathoibríoch díreach toisc go n-oireann a litir méide do do rogha gnáth.",
+            "Anois socraigh cén difríocht is tábhachtaí duit. Má bhraitheann an tagairt gearr cheana féin, is fiú aire bhreise a thabhairt don rogha níos giorra. Má tá a leithead cliabhraigh gar do do scaoilteacht chompordach uasta, d'fhéadfadh an rogha níos leithne a bheith neamhtharraingteach. Déan comparáid idir tomhais na ngualainn agus na muinchille sula roghnaíonn tú ceachtar acu. Is cinneadh é seo faoi roinnt toisí, ní riail chun dul suas méid amháin i gcónaí.",
+            "Fág difríochtaí gan réiteach le feiceáil i do nótaí. Mar shampla, scríobh “inglactha leis an gcliabhrach, tomhas na muinchille ar iarraidh” in ionad an t-éadach iomlán a mharcáil mar cheadaithe. Ansin is féidir leat an fhianaise atá ar iarraidh a iarraidh gan seiceálacha a bhí soiléir cheana féin a athdhéanamh. Tá na huimhreacha samplacha seo ceaptha le haghaidh uimhríochta agus ní moladh méide díoltóra iad."
+          ]
+        },
+        {
+          "id": "category-checks",
+          "title": "Roghnaigh na seiceálacha a mheaitseálann an chatagóir éadaí",
+          "paragraphs": [
+            "Caithfidh spás a bheith ag geansaithe le haghaidh an tsraith atá beartaithe agat a chaitheamh faoi. Déan comparáid idir leithead an chliabhrach, sroicheadh na muinchille, leithead an imeall agus fad an choirp le geansaí cosúil leis. Athraíonn gualainn íslithe an áit a dtosaíonn tomhas na muinchille, mar sin déan comparáid idir an léaráid iomlán seachas leithead na gualainne agus fad na muinchille a chóireáil mar ráthaíochtaí neamhspleácha oiriúnachta.",
+            "I gcás brístí agus shorts, déan idirdhealú idir crios scaoilte agus tomhas sínte. Déan comparáid idir an choim, an cromán, an t-ardú tosaigh, an t-inseam agus oscailt na gcos nuair a théann na sonraí sin i bhfeidhm ar d’oiriúnacht. Ní léiríonn tomhas na coime leis féin an mbeidh na pluide compordach. I gcás geansaithe, seiceáil an gearradh agus an fad atá beartaithe chomh maith le leithead an chliabhrach; d’fhéadfadh feistiú spóirt a bheith difriúil ó léine T ócáideach.",
+            "Ardaíonn seaicéid ceisteanna breise faoi shraitheanna agus gluaiseacht. Ní féidir le grianghraf a léiriú cé chomh compordach is féidir leat do chuid arm a ardú nó an seaicéad a dhúnadh thar gheansaí. Bain úsáid as seaicéad tagartha inchomparáide, déan iniúchadh ar na hábhair a luaitear, agus déan neamhchinnteacht ar fhaisnéis atá ar iarraidh seachas glacadh leis go leanann gach mír leis an méid céanna litreach cairt uilíoch."
+          ],
+          "table": {
+            "headers": [
+              "Cineál éadaí",
+              "Comparáid úsáideach",
+              "Botún coitianta"
+            ],
+            "rows": [
+              [
+                "Léinte T agus geansaithe",
+                "Leithead cófra, fad coirp agus muinchillí",
+                "Ag roghnú ó airde agus meáchan amháin"
+              ],
+              [
+                "Geansaí geansaithe agus seaicéid",
+                "Seomra le haghaidh sraitheanna, muinchillí agus imeall",
+                "Meascadh guaillí íslithe agus guaillí caighdeánacha"
+              ],
+              [
+                "Bríste agus shorts",
+                "Coim, cromán, ardú agus inseam",
+                "Comparáid a dhéanamh idir bandaí coime sínte agus scaoilte"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "request-clothing-qc",
+          "title": "Iarr grianghraif QC a fhéadfaidh freagra a thabhairt ar do cheist oiriúnachta",
+          "paragraphs": [
+            "Déanann treoir QC Sugargoo cur síos ar sheiceálacha ar an mír a fuarthas agus ar iarratais bhreise ar fhianaise. Seiceáil na seirbhísí atá ar fáil do d'ordú féin, lena n-áirítear aon táille, sula n-iarrann tú tuilleadh grianghraf. Iarr tomhas sonrach le foircinn infheicthe in ionad a fhiafraí an bhfuil an mhír \"fíor don mhéid\". Ní féidir leis an bhfoireann do rogha oiriúnachta pearsanta a aithint ón bhfrása sin.",
+            "Iarratas úsáideach is ea: leag an t-éadach cothrom gan é a shíneadh, taispeáin an téip iomlán ó imeall cófra amháin go dtí an ceann eile díreach faoi bhun na n-armphoill, agus cuir an lipéad méide i ngrianghraf ar leith. Maidir le fad, ainmnigh an pointe tosaigh a d'úsáid tú ar d'éadaí tagartha. Maidir le brístí, sonraigh an bhfuil tú ag iarraidh an crios a bheith scaoilte nó sínte.",
+            "Scrúdaigh an íomhá féin sula gcuireann tú muinín san uimhir. Ba chóir go mbeadh an pointe nialasach le feiceáil, ba chóir don téip an líne atá beartaithe a leanúint, agus níor chóir go gceilfeadh fillteacha an imeall. Mura féidir breithiúnas a thabhairt ar pheirspictíocht nó téip lúbtha, iarr íomhá cheartaithe amháin. Ní dhéanann níos mó grianghraf den uillinn doiléir chéanna an tomhas níos iontaofa."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "resolve-sizing-issues",
+          "title": "Réiteach neamhréireachta fad is atá an fhianaise úsáideach",
+          "paragraphs": [
+            "Coinnigh an rogha roghnaithe, cairt an díoltóra, uimhir an ordaithe agus íomhánna ábhartha QC le chéile. Deighil lipéad mícheart ó éadaí a bhfuil an lipéad ceart ach toisí gan choinne air. Mínigh an neamhréireacht leis an modh tomhais céanna ar an dá thaobh. Cuidíonn comparáid ghearr, shonrach leis an díoltóir an cheist a thuiscint níos fearr ná gearán ginearálta go bhfuil cuma bheag ar an earra.",
+            "Ná glac leis go bhfuil tuairisceán, malartú ná aisíocaíocht uathoibríoch. Braitheann incháilitheacht, spriocdhátaí, costais agus láimhseáil ar an ordú agus ar théarmaí an díoltóra. Fiafraigh cén leigheas atá ar fáil sula gcuireann tú an mhír i bpacáiste idirnáisiúnta. Má shocraíonn tú í a choinneáil, taifead cén fáth a bhfuil an difríocht atá fágtha inghlactha seachas imní neamhréitithe a láimhseáil mar chruthúnas ar oiriúnacht mhaith.",
+            "Ar deireadh, déan idirdhealú idir QC infheicthe agus tástáil chaitheamh. Ní féidir le grianghraif stórais marthanacht fhadtéarmach, crapadh tar éis níocháin ná compord pearsanta a bhunú. Léigh faisnéis chúraim nuair is féidir agus coinnigh taifead an ordaithe. Do do chéad cheannach eile, nuashonraigh do thomhais tagartha ó éadaí atá faighte agus caite agat i ndáiríre; déanann sé seo comparáidí amach anseo níos úsáidí gan brath ar steiréitíopaí méide leathana."
+          ],
+          "actions": [
+            "/articles/sugargoo-returns-refunds/"
+          ]
+        }
+      ],
+      "checklist": [
+        "Bain úsáid as éadaí inchomparáide a oireann don stíl atá beartaithe.",
+        "Meaitseáil aonaid, críochphointí agus leithead cothrom i gcoinne imlíne.",
+        "Seiceáil an malairt chruinn agus cairt an díoltóra sula n-íocann tú.",
+        "Iarr tomhais shonracha stórais le haghaidh toisí neamhréitithe.",
+        "Réiteach mí-oiriúnacht ábhair roimh sheoladh idirnáisiúnta."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: cairteacha méide Taobao a léamh",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: grianghraif, físeáin agus iarratais ar thomhais",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: seiceálacha cáilíochta agus a dteorainneacha",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: tuairisceáin agus aisíocaíochtaí",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shoe-size-guide"
+      ],
+      "actions": [
+        "/category/hoodies-sweaters/",
+        "/category/pants-shorts/"
+      ]
+    },
+    {
+      "id": "sugargoo-finds-under-20",
+      "slug": "sugargoo-finds-under-20",
+      "title": "Sugargoo Fionnachtana Faoi $20: Seiceálacha Praghsanna, Méide & Ceannaigh",
+      "description": "Aimsigh earraí Sugargoo faoi $20 ag baint úsáide as naisc táirgí sórtáilte de réir praghsanna. Seiceáil an leagan cruinn, na tomhais, an caighdeán cáilíochta agus an loingseoireacht sula ndéanann tú cinneadh faoi cad atá inacmhainne.",
+      "keyword": "sugargoo finds under 20",
+      "category": "getting-started",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Don treoir seo, ciallaíonn “faoi $20” praghas táirge taispeánta faoi bhun US$20, roimh chostais bhreise. Ní chiallaíonn sé go gcosnóidh an pacáiste níos lú ná $20 seachadta. Bain úsáid as an gcatalóg beo sórtáilte de réir praghsanna chun gearrliosta a thógáil, ansin fíoraigh an leagan cruinn agus an praghas reatha ar an leathanach ceannaigh.",
+        "Is modh roghnúcháin é seo, ní liosta seasta de tháirgí a bhfuiltear ceaptha go bhfuil tástáil déanta orthu. Is féidir le praghsanna agus infhaighteacht catalóige athrú. Míníonn na samplaí conas costais agus neamhchinnteacht a chur i gcomparáid; ní tairiscintí beo, léirmheasanna ná gealltanais iad go nglacfaidh díoltóir áirithe le hordú."
+      ],
+      "sections": [
+        {
+          "id": "find-budget-links",
+          "title": "Tosaigh leis an gcatalóg sórtáilte de réir praghsanna",
+          "paragraphs": [
+            "Oscail an catalóg ag baint úsáide as an nasc sórtála praghsanna ísle thíos. Cuardaigh an cineál táirge atá uait, nó cúngaigh an liosta go catagóir ábhartha. Ní ionadach úsáideach é gabhálas saor don hoodie a tháinig tú chun a cheannach. Tosaigh leis an úsáid atá beartaithe, ansin déan comparáid idir praghsanna laistigh den ghrúpa sin ionas go mbeidh roghanna bríocha ar an ngearrliosta.",
+            "Oscail leathanach táirge gach iarrthóra agus lean an nasc ceannaigh atá ar fáil. Deimhnigh an teideal, aitheantóir an earra, an dath roghnaithe, an méid agus an chainníocht. Taispeánann roinnt liostaí an praghas rogha is ísle cé go gcosnaíonn an malairt atá uait níos mó. Níl cárta a thaispeánann praghas faoi $20 ach pointe tosaigh go dtí go mbeidh an rogha chruinn seiceáilte.",
+            "Sábháil trí nó ceithre iarrthóir inchreidte seachas mórán nasc a bhailiú. Taifead an chúis a bhféadfadh gach ceann acu oibriú agus an cheist a d'fhéadfadh é a chur as an áireamh. Mar shampla: tomhais oiriúnacha, ach sonraí fabraice ar iarraidh. Is fusa liosta gearr le ceisteanna soiléire a fhíorú ná liosta fada atá ordaithe de réir pictiúir tharraingteacha amháin."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/category/accessories/?sort=price"
+          ]
+        },
+        {
+          "id": "under-20-budget",
+          "title": "Dealaigh liúntas an táirge ón mbuiséad seachadta",
+          "paragraphs": [
+            "Scríobh dhá theorainn: an praghas uasta don mhír agus an méid iomlán uasta atá tú sásta a chaitheamh. Cuidíonn an chéad cheann leat brabhsáil; cinneann an dara ceann an bhfuil ciall leis an gceannach. Lig seachadadh intíre nuair a ghearrtar é, costais íocaíochta nó seirbhíse a thaispeántar ag an tseiceáil amach, seirbhísí roghnacha, muirir loingseoireachta idirnáisiúnta agus muirir ceann scríbe a bhaineann leis an bpacáiste.",
+            "Smaoinigh ar chomparáid léiritheach amháin. Tá mír A liostaithe ar $12 agus mír B ar $17. Má theastaíonn $9 breise i gcostais ghaolmhara ó A agus $3 breise ó B faoin modh comparáide céanna, is iad na hiomláin ná $21 agus $20. Ní rátaí Sugargoo iad na figiúirí seo. Taispeánann siad cén fáth nach gá go dtáirgeann praghas níos ísle an méid iomlán níos ísle.",
+            "Nuair a roinneann roinnt míreanna pacáiste, ná cuir scoilt chomhionann treallach i láthair mar phraghas loingseoireachta luaite do gach táirge. Coinnigh iomlán an phacáiste le feiceáil agus luaigh conas a leithdháil tú aon mhéid comhroinnte. Chun cinneadh ceannaigh a dhéanamh, déan comparáid idir luachan an phacáiste leis an mír bhreise agus gan í a luaithe a bheidh meáchan agus toisí bríocha ar fáil."
+          ],
+          "table": {
+            "headers": [
+              "Líne buiséid",
+              "Cad atá le seiceáil",
+              "Cathain is ceart athnuachan a dhéanamh"
+            ],
+            "rows": [
+              [
+                "Táirge agus an rogha roghnaithe",
+                "Méid, dath, cainníocht agus airgeadra cruinn",
+                "Sula gcuirtear an t-ordú"
+              ],
+              [
+                "Seirbhísí intíre agus roghnacha",
+                "Muirir iarbhír a thaispeántar don ordú",
+                "Sula roghnaítear seirbhísí íoctha"
+              ],
+              [
+                "Costais phacáiste agus ceann scríbe idirnáisiúnta",
+                "Toisí pacáilte agus téarmaí an bhealaigh reatha",
+                "Sula n-íoctar as an seoladh"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-cheap-clothing",
+          "title": "Úsáid tomhais chun éadaí saora a chur i gcomparáid",
+          "paragraphs": [
+            "Ní dhéanann praghas íseal margadh de mhéid mí-oiriúnach. I gcás léinte T, cochall agus geansaithe, déan comparáid idir tomhais an díoltóra agus éadaí comhchosúla atá agat cheana féin. Tabhair faoi deara an leithead comhréidh nó imlíne atá in uimhir. Seachain litir níos mó a roghnú díreach toisc go molann duine eile méid níos mó a roghnú gan an díoltóir agus an liostú cruinn a aithint.",
+            "I gcás brístí agus shorts, seiceáil níos mó ná an crios. Is féidir le hardú, leithead na cromáin, an t-inseam agus oscailt na gcos an fheistiú a athrú fiú nuair is cosúil go bhfuil an choim ainmniúil ceart. Mura dtugann liostú ach litir mhéide agus gan aon tomhais úsáideacha, déan an fhaisnéis atá in easnamh sin mar chuid den chinneadh. B’fhéidir gur fearr leat iarrthóir beagán níos costasaí le fianaise níos soiléire.",
+            "Maidir le gabhálais, seiceáil na toisí agus cad atá san áireamh sa cheannachán. Féadfaidh grianghraf roinnt píosaí a thaispeáint agus níl ach ceann amháin sa rogha roghnaithe. Léigh cur síos an rogha agus achoimre an ordaithe. Is é cuspóir na comparáide ná tuiscint a fháil ar an earra a gheobhaidh tú, ní luach a bhaint as líon na réad i ngrianghraf tagartha."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/category/t-shirts/?sort=price"
+          ]
+        },
+        {
+          "id": "cheap-qc-evidence",
+          "title": "Cinneadh a dhéanamh ar an bhfianaise QC a d'fhéadfadh do rogha a athrú",
+          "paragraphs": [
+            "Sula ndéanann tú ordú, liostaigh an dá nó trí fhíric is tábhachtaí. D'fhéadfadh lipéad méide soiléir agus tomhas cófra a bheith ag teastáil ó éadaí; d'fhéadfadh seiceáil toise agus radharc ar a cheangal a bheith ag teastáil ó ghabhálas. Nuair a shroicheann an t-ordú an stóras, déan comparáid idir an earra a fuarthas agus an malairt roghnaithe agus d'fhaisnéis liostála shábháilte.",
+            "Tá treoir QC foilsithe Sugargoo úsáideach chun tuiscint a fháil ar a bhféadfadh seiceálacha stórais a thaispeáint. Deimhnigh na roghanna seirbhíse atá ar fáil do d'ordú sula n-íocann tú as fianaise bhreise. Iarr dlúthghaol nó tomhas a fhreagraíonn ceist shonrach gan réiteach. Is féidir le hiarratas leathan ar phictiúir de chaighdeán níos fearr moill a chur leis gan an cinneadh a fheabhsú.",
+            "Ní chruthaíonn praghas íseal agus grianghraf glan barántúlacht, marthanacht ná sábháilteacht. Seachain cur síos a dhéanamh ar earraí neamhthástáilte mar na cinn is fearr, fíoraithe nó ráthaithe díreach toisc go bhfuil leathanach táirge ann. Má bhraitheann an úsáid atá beartaithe agat ar fheidhmíocht nach féidir le grianghraif a chruthú, iarr doiciméadacht táirge oiriúnach nó roghnaigh rogha eile le fianaise ar féidir leat a mheas."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "small-haul-costs",
+          "title": "Seiceáil costas earra amháin eile ar phraghas íseal a chur leis",
+          "paragraphs": [
+            "Tógann earra breise ar phraghas íseal spás fós agus cuireann sé meáchan leis. Sula gcuireann tú le pacáiste é, smaoinigh ar an earra agus a phacáistiú le chéile. Is féidir le réad toirtiúil ar phraghas íseal an meáchan inmhuirir a athrú nó pacáiste a bhrú thar theorainn bealaigh. D’fhéadfadh tionchar a bheith ag baint an phacáistithe ar chosaint, mar sin ná glac leis gur coigilteas ciallmhar é gach laghdú toirte.",
+            "Bain úsáid as an áireamhán meáchain chun an uimhríocht a thuiscint, ansin bain úsáid as an meastachán bealaigh oifigiúil le haghaidh praghsanna. Míníonn an t-áireamhán ar an suíomh seo meáchan iarbhír agus toirtmhéadrach; ní seirbhís taraife beo é. Cuir isteach an roinnteoir agus an riail billeála don bhealach atá á chur i gcomparáid agat in ionad roinnteoir coiteann amháin a chóireáil mar uilíoch.",
+            "Má tá an éiginnteacht maidir le pacáistiú mór go leor chun an cinneadh a athrú, déan athbhreithniú ar an tseirbhís cleachtaidh atá ar fáil agus a costas. Iarr í tar éis duit cinneadh a dhéanamh faoi na míreanna atá beartaithe agat a choinneáil. Is féidir le cleachtadh an fhaisnéis phacála a úsáidtear i luachan a fheabhsú, ach ní ráthaíonn íoc as iomlán níos ísle. Déan comparáid idir an fhaisnéis a fhaightear agus an costas agus an éiginnteacht atá fágtha agat."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "budget-decision",
+          "title": "Coinnigh, imscrúdaigh nó scipeáil: riail shimplí gearrliosta",
+          "paragraphs": [
+            "Marcáil iarrthóir “coinnigh” ach amháin nuair a chomhlíonann a rogha chruinn, a thomhais agus an t-iomlán ionchais do riachtanais. Marcáil é “imscrúdaigh” nuair a d’fhéadfadh freagra amháin an cinneadh a athrú. Marcáil é “scipeáil” nuair a fhágann an fhianaise atá ar iarraidh, na toisí mí-oiriúnacha nó an costas iomlán nach bhfuil sé oiriúnach go maith. Cuireann an riail seo cosc ar an bpraghas íseal ceannlíne an cinnteoireacht go léir a dhéanamh.",
+            "Má tá fadhb le mír a ceannaíodh, déan í a dhoiciméadú go pras agus seiceáil na roghanna um fhilleadh nó malartú don ordú sin. Is féidir le mír shaor a bheith costasach fós a thabhairt ar ais i gcomparáid lena praghas ceannaigh. Déan comparáid idir aon leigheas agus costas luaite sula dtéann tú ar aghaidh; ná glac leis go mbainfidh aisíocaíocht amach anseo an riosca a bhaineann le ceannach doiléir a dhéanamh anois.",
+            "Tabhair cuairt arís ar naisc shábháilte ag an tseiceáil amach seachas glacadh leis go bhfanann praghas bailí go deo. Coinnigh fianaise d’ordaithe agus nuashonraigh an gearrliosta nuair a athraíonn díoltóir roghanna nó stoc. Is é an toradh úsáideach a bhaineann le treoir bhuiséid ná ceannach a oireann do do riachtanais agus do liúntas iomlán, fiú nuair a chiallaíonn sé sin níos lú earraí a cheannach nó nasc tarraingteach ar phraghas íseal a fhágáil gan úsáid.",
+            "Athbhreithnigh an gearrliosta arís díreach roimh an íocaíocht. Má athraíonn an malairt roghnaithe, déan na seiceálacha praghais agus méide arís seachas an cinneadh níos luaithe a chur i bhfeidhm ar mhír eile. Ba chóir go mairfeadh teorainn buiséid úsáideach tar éis achoimre deiridh an ordaithe."
+          ]
+        }
+      ],
+      "checklist": [
+        "Déan déileáil le faoi $20 mar an scagaire praghas earra, ní mar ghealltanas praghais seachadta.",
+        "Seiceáil an malairt agus an chainníocht chruinn ar an leathanach ceannaigh.",
+        "Déan comparáid idir tomhais agus mír tagartha oiriúnach.",
+        "Déan buiséad den phacáiste iomlán agus na costais ceann scríbe is infheidhme.",
+        "Bain úsáid as praghsanna agus fianaise reatha in ionad seanliosta rangaithe."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: an próiseas ordaithe",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: cairteacha méide Taobao a léamh",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: seiceálacha cáilíochta agus a dteorainneacha",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: meastachán ar loingseoireacht idirnáisiúnta",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: insamhladh pacáiste réamhloingsithe",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: tuairisceáin agus aisíocaíochtaí",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "sugargoo-clothing-size-guide"
+      ],
+      "actions": [
+        "/spreadsheet/?sort=price",
+        "/category/hoodies-sweaters/?sort=price"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-czechia",
+      "slug": "sugargoo-shipping-to-czechia",
+      "title": "Loingseoireacht Sugargoo go dtí an tSeicia: Costais, Bealaí & Rianú",
+      "description": "Pleanáil loingseoireacht Sugargoo chuig Poblacht na Seice le seiceálacha meáchain pacáilte, luachana bealaigh reatha, foinsí custaim agus seicliosta rianaithe praiticiúil.",
+      "keyword": "sugargoo shipping to czech republic",
+      "category": "shipping",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Chun loingseoireacht Sugargoo chuig an tSeicia a mheas, roghnaigh Poblacht na Seice mar an ceann scríbe sa mheastóir oifigiúil reatha agus bain úsáid as ábhar, meáchan agus toisí do phacáiste féin. Níl aon phraghas loingseoireachta ná am seachadta aonair ann a bhaineann le gach ordú Seiceach.",
+        "Cabhraíonn an treoir seo leat na hionchuir chearta a bhailiú, bealaí atá ar fáil a chur i gcomparáid agus na doiciméid is gá a choinneáil tar éis seolta. Féadfaidh infhaighteacht bealaigh, muirir agus rialacha allmhairithe athrú. Míníonn na samplaí thíos modhanna comparáide; ní luachana reatha iompróra iad ná gealltanas go bhfuil seirbhís ainmnithe ar fáil duit."
+      ],
+      "sections": [
+        {
+          "id": "czech-start",
+          "title": "Ullmhaigh an ceann scríbe agus an fhaisnéis phacáiste",
+          "paragraphs": [
+            "Bain úsáid as seoladh seachadta iomlán an fhaighteora agus an cód poist a bhaineann leis. Seiceáil uimhir an tí nó an fhoirgnimh, aon sonraí árasáin, agus uimhir theileafóin is féidir leis an iompróir a úsáid. Coinnigh ainm an fhaighteora comhsheasmhach leis na taifid a úsáidtear le haghaidh seachadta agus aon doiciméid imréitigh iarrtha. Tuilltear seiceáil eile ar sheoladh sábháilte sula gcuirtear gach paicéad isteach.",
+            "Liostaigh an t-ábhar beartaithe sula ndéantar comparáid idir bealaí. Is féidir le catagóir táirge, ábhair, cadhnraí, leachtanna agus ceanglais láimhseála eile difear a dhéanamh d'incháilitheacht. Léigh na srianta a thaispeántar don tseirbhís roghnaithe agus cuir ceist faoi mhíreanna doiléire sula n-íocann tú. Ní dearbhú é bealach a fheictear i gcomparáid ghinearálta go nglacann sé le hábhar sonrach do phacáiste.",
+            "Coinnigh aitheantóir ordaithe, cur síos, cainníocht agus taifead ceannaigh iarbhír gach míre le chéile. Fágann sé seo go bhfuil sé níos éasca iarratas níos déanaí a fhreagairt gan stair an ordaithe a atógáil ó scáileáin. Bain úsáid as faisnéis chruinn ar fud an phróisis. Ná hathraigh tuairiscí ná luachanna díreach chun bealach a dhéanamh le feiceáil níos saoire nó chun dearbhú ceannaitheora eile a aithris."
+          ]
+        },
+        {
+          "id": "czech-weight",
+          "title": "Tuig an meáchan a ghearrfaidh bealach",
+          "paragraphs": [
+            "Ní gá gurb ionann suim mheáchain an táirge agus an meáchan pacáilte deiridh. Cuireann pacáistiú seachtrach agus ábhair chosanta meáchan leis, agus d'fhéadfadh méid an phacáiste chríochnaithe a bheith tábhachtach ar leithligh. Iarr na toisí pacáilte nuair is gá iad seo chun an bealach a ríomh. Bain úsáid as ceintiméadair agus cileagraim go comhsheasmhach ionas nach gcuireann mí-oiriúnú aonaid saobhadh ar an gcomparáid.",
+            "Tá toirt 30,000 ceintiméadar ciúbach ag dáileacht léiritheach a thomhaiseann 40 × 30 × 25 cm. Má úsáideann bealach hipitéiseach roinnteoir de 6,000, bheadh a mheáchan toirtmhéadrach 5 kg. Má tá an meáchan pacáilte iarbhír 3 kg agus má ghearrann an bealach sin an figiúr is airde, bheadh an meáchan tosaigh 5 kg roimh a rialacha babhtála. Is ionchuir shamplacha iad seo, ní taraif bealaigh Sheicigh.",
+            "Féadfaidh bealach eile roinnteoir difriúil, meáchan iarbhír amháin, muirir íosta nó teorainneacha toise a úsáid. Léigh a riail luaite sula ndéanann tú comparáid idir na praghsanna a thaispeántar. Is féidir leis an áireamhán meáchain ar an láthair cabhrú leis an uimhríocht, ach cinneann luachan reatha Sugargoo an praghas agus na seirbhísí atá ar fáil do d'ordú."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/"
+          ]
+        },
+        {
+          "id": "czech-route-comparison",
+          "title": "Déan comparáid idir an tairiscint bealaigh iomlán",
+          "paragraphs": [
+            "Rith an dáileacht chéanna trí gach bealach incháilithe ionas go n-úsáideann an chomparáid ionchuir chomhoiriúnacha. Taifead an muirear luaite, an riail meáchain, na teorainneacha méide, an meastachán ama luaite, an clúdach rianaithe agus na seirbhísí atá san áireamh. Tabhair faoi deara dáta na comparáide. Is stair úsáideach é pictiúr scáileáin ó sheanordú, ach ní fianaise é go bhfuil an tairiscint chéanna fós ar fáil.",
+            "Seiceáil conas a chuireann an luachan síos ar chánacha ceann scríbe, láimhseáil custaim agus seachadadh. Ní leor ainm bealaigh ina bhfuil frása a bhaineann le cáin chun gach muirear nó oibleagáid fhéideartha a mhíniú. Léigh sonraí na seirbhíse reatha agus fiafraigh cé na méideanna atá san áireamh san íocaíocht. Coinnigh an freagra sin leis an luachan ionas gur féidir leat idirdhealú a dhéanamh idir táille iompróra agus muirear eile níos déanaí.",
+            "Roghnaigh de réir do thosaíochtaí. D’fhéadfadh luachan níos ísle le hamchlár níos lú intuartha a bheith oiriúnach do cheannachán solúbtha; teastaíonn liúntas réalaíoch do gach céim i gcás seachadta práinneach. Seachain an plean a thógáil timpeall ar an seachadadh neamhfhoirmiúil is tapúla is féidir leat a fháil. Smaoinigh ar an iarmhairt phraiticiúil má thagann an dáileacht níos déanaí ná an meastachán sula ndéanann tú cinneadh go bhfuil coigilteas beag fiúntach."
+          ],
+          "table": {
+            "headers": [
+              "Réimse comparáide",
+              "Taifead do gach bealach incháilithe",
+              "Cén fáth a bhfuil sé tábhachtach"
+            ],
+            "rows": [
+              [
+                "Praghas agus bunús billeála",
+                "Riail iomlán, iarbhír nó toirtmhéadrach luaite, babhtú",
+                "Is féidir an dáileacht chéanna a mhuirearú ar bhealach difriúil"
+              ],
+              [
+                "Clúdach seirbhíse",
+                "Rianú, raon feidhme seachadta agus muirir san áireamh",
+                "Ní cur síos iomlán seirbhíse é ainm bealaigh"
+              ],
+              [
+                "Teorainneacha agus uainiú",
+                "Srianta ábhair, toisí agus meastachán ama",
+                "Tá incháilitheacht agus amchlár sainiúil don phacáiste"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "czech-customs",
+          "title": "Úsáid treoirlínte reatha custaim na Seice",
+          "paragraphs": [
+            "Seiceáil foinsí Custaim na Seice atá nasctha thíos sula n-íocann tú as seoladh. D'athraigh a dtreoirlínte 2026 an chaoi a gcaitear le hallmhairí ríomhthráchtála ar luach íseal. Ná bí ag brath ar ráiteas níos sine go bhfuil gach ceannachán faoi bhun €150 saor ó dhleacht. Is ceisteanna ar leithligh iad dleacht, CBL, láimhseáil agus an próiseas dearbhaithe; braitheann a gcóireáil ar na rialacha reatha agus ar an loingsiú.",
+            "Fiafraigh den tseirbhís roghnaithe conas a láimhseálfar imréiteach agus cé na taifid a theastaíonn uaithi. Coinnigh an taifead sonraisc nó ordaithe, fianaise íocaíochta agus cur síos cruinn ar na hearraí atá ar fáil. Má iarrann duine doiciméad nó íocaíocht, fíoraigh an t-iarratas tríd an iompróir nó tríd an tseirbhís custaim ag baint úsáide as cainéal oifigiúil sula seoltar faisnéis.",
+            "Ná glac leis go gcinnfidh muirir phacáiste níos luaithe an chéad cheann eile. Is féidir le liosta ábhair, catagóir dhearbhaithe, próiseas iontrála nó socrú seirbhíse difriúil an ríomh a athrú. Ní ríomhann an treoir seo measúnú custaim ceangailteach. Bain úsáid as na treoracha oifigiúla reatha agus as míniú scríofa na seirbhíse don phacáiste iarbhír, go háirithe nuair a fhágann luachan muirear gan sonrú."
+          ]
+        },
+        {
+          "id": "czech-before-dispatch",
+          "title": "Críochnaigh cinntí QC agus pacála roimh an seoladh",
+          "paragraphs": [
+            "Seiceáil gach mír fad atá sí fós ar fáil le haghaidh athbhreithnithe stórais. Meitseáil an rogha agus an chainníocht a fuarthas le d’ordú, scrúdaigh grianghraif ábhartha QC, agus réitigh ceisteanna tábhachtacha maidir le méid nó riocht. Is féidir le mír neamhréitithe a chomhcheangal i bpacáiste leigheas níos déanaí a dhéanamh níos deacra. Ní chuireann luachan loingseoireachta ionad an chinnidh maidir le cibé ar mhaith leat na hearraí a choinneáil.",
+            "Roghnaigh pacáistiú de réir an ábhair seachas an mheáchan atá ag teastáil amháin. D’fhéadfadh go mbeadh cosaint ag teastáil ó earraí leochaileacha, agus is féidir le boscaí seachtracha neamhriachtanacha toirt a chur leis. Fiafraigh cad a bhaineann athrú pacála atá beartaithe agus an mbíonn tionchar aige ar chosaint na míre. Déan comparáid idir an fhaisnéis phacáilte a leanann as sula nglacann tú leis go sábhálann an t-athrú airgead.",
+            "Má tá cleachtadh ar fáil agus má tá an neamhchinnteacht pacála atá fágtha tábhachtach, déan athbhreithniú ar a tháille agus a raon feidhme reatha sula n-iarrann tú é. Déanann treoir fhoilsithe Sugargoo cur síos ar úsáid na faisnéise pacáilte a leanann as sula dtéann tú ar aghaidh. Ina dhiaidh sin, deimhnigh go bhfuil an t-ábhar agus an pacáistiú roghnaithe fós ag teacht le do loingsiú beartaithe; Is féidir le hathrú an phacáiste meastachán níos luaithe a dhéanamh níos lú úsáideach."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "czech-tracking",
+          "title": "Léigh rianú mar sheicheamh aistrithe",
+          "paragraphs": [
+            "Coinnigh aitheantóir an phacáiste agus an nasc rianaithe a sholáthraítear do do sheirbhís. Déan próiseáil stórais, glacadh iompróra, gluaiseacht idirnáisiúnta, imréiteach agus seachadadh áitiúil a scaradh. Ní chruthaíonn teachtaireacht a chruthaítear le lipéad, inti féin, go bhfuil an chéad aistriú eile críochnaithe ag an bpacáiste. Déan comparáid idir an teagmhas is déanaí agus próiseas luaite na seirbhíse in ionad gach tréimhse chiúin a léirmhíniú mar an fhadhb chéanna.",
+            "Nuair a bhíonn faisnéis seachadta áitiúil ar fáil, bain úsáid as an iompróir a aithníodh i ndáiríre do do phacáiste. Ná glac leis go dtéann gach loingsiú Seiceach chuig an iompróir deiridh céanna. Seiceáil sonraí an fhaighteora, na treoracha seachadta agus aon fhógra bailiúcháin trí chainéal oifigiúil an iompróra sin. Sábháil teachtaireachtaí ábhartha go dtí go mbeidh an seachadadh críochnaithe.",
+            "Mura bhfuil dul chun cinn laistigh den treoir don tseirbhís roghnaithe, déan teagmháil leis an tacaíocht leis an uimhir phacáiste, an teagmhas agus an dáta is déanaí, agus an cheist shonrach a theastaíonn uait a fhreagairt. Coinnigh an chéad fhiosrúchán gonta. Cuidíonn taifead struchtúrtha leis an tacaíocht an chéim cheart a imscrúdú agus cuireann sé cosc ar shonraí neamhghaolmhara ordaithe an t-aistriú atá ar iarraidh a cheilt."
+          ],
+          "actions": [
+            "/articles/sugargoo-tracking/"
+          ]
+        },
+        {
+          "id": "czech-final-review",
+          "title": "Déan athbhreithniú ar an íocaíocht dheireanach in-athdhéanta",
+          "paragraphs": [
+            "Sula n-íocann tú, déan comparáid idir achoimre deiridh an phacáiste agus do nótaí: ceann scríbe, ábhar, tomhais phacáistithe, bealach, seirbhísí roghnaithe agus an t-iomlán. Seiceáil gur athnuachan an luachan tar éis aon athrú ar mhír nó ar phacáistiú. Mura bhfuil mír líne soiléir, réitigh í sula gcuirtear isteach í seachas glacadh leis go bhfuil sí san áireamh i méid eile.",
+            "Tar éis seachadta, taifead cad a gearradh agus conas a chuaigh an loingsiú ar aghaidh, gan toradh amháin a chur i láthair mar ráthaíocht do phacáistí amach anseo. Tugann sé seo fianaise úsáideach duit le haghaidh do chéad chomparáid eile féin. Is simplí an nós in-athdhéanta: fíoraigh na hearraí, luaigh an pacáiste iarbhír, léigh an treoir chustaim reatha agus caomhnaigh na taifid a mhíníonn do chinneadh."
+          ]
+        }
+      ],
+      "checklist": [
+        "Roghnaigh Poblacht na Seice agus fíoraigh seoladh iomlán an fhaighteora.",
+        "Déan comparáid idir bealaí incháilithe ag baint úsáide as na toisí agus an meáchan pacáistithe céanna.",
+        "Seiceáil treoir chustaim reatha na Seice seachas díolúintí níos sine.",
+        "Fadhbanna QC a réiteach sula bhfágann an pacáiste an stóras.",
+        "Lean an t-iompróir atá sainaitheanta le haghaidh d’uimhir rianaithe iarbhír."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: meastachán ar loingseoireacht idirnáisiúnta",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: insamhladh pacáiste réamhloingsithe",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: seiceálacha cáilíochta agus a dteorainneacha",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Custaim na Seice: ríomhthráchtáil, dleacht, CBL agus imréiteach",
+          "url": "https://celnisprava.gov.cz/cz/celni-urad-praha-ruzyne/fyzicke-osoby/postovni-zasilky/prijeti/Stranky/mimo-eu.aspx"
+        },
+        {
+          "title": "Custaim na Seice: fógraí reatha ríomhthráchtála",
+          "url": "https://celnisprava.gov.cz/cz/clo/e-commerce/Stranky/Z%C3%A1silky-e-commerce.aspx"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
       ]
     }
   ]

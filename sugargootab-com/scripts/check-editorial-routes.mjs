@@ -26,6 +26,7 @@ for(const lang of locales){
   assert.equal(d.querySelector('meta[name=robots]')?.getAttribute('content'),'index,follow,max-image-preview:large',url+' production indexing');
   const nav=[...d.querySelectorAll('.site-header nav a')].map(a=>a.getAttribute('href'));
   assert(nav.includes(prefix+'/faq/')&&nav.includes(prefix+'/articles/'),url+' navigation');
+  assert(nav.includes(prefix+'/qc/')&&nav.includes(prefix+'/articles/sugargoo-shipping-calculator/'),url+' QC and shipping navigation');
   const schemas=[...d.querySelectorAll('script[type="application/ld+json"]')].map(s=>JSON.parse(s.textContent));
   assert.equal(schemas[0]['@type'],'WebSite');
   if(path==='/faq/'){
@@ -33,7 +34,7 @@ for(const lang of locales){
    assert.equal(schemas.find(s=>s['@type']==='FAQPage')?.mainEntity.length,30,url+' FAQ schema');
    assert.equal(d.querySelector('h1')?.textContent,data.ui.faqTitle+'.');
   }else if(path==='/articles/'){
-   assert.equal(d.querySelectorAll('.article-card').length,16,url+' article index');
+   assert.equal(d.querySelectorAll('.article-card').length,19,url+' article index');
   }else{
    const a=data.articles.find(a=>path==='/articles/'+a.slug+'/');
    assert.equal(d.querySelector('h1')?.textContent,a.title,url+' translated title');
@@ -52,9 +53,15 @@ for(const lang of locales){
    assert.equal(d.querySelector('.article-catalog-cta a')?.getAttribute('href'),prefix+'/spreadsheet/',url+' localized catalogue action');
    assert.equal(d.querySelectorAll('.article-catalog-cta [data-track]').length,2,url+' tracked actions');
    if(a.actions){
-    const actions=[...d.querySelectorAll('.article-next-step a')];
+    const actions=[...d.querySelectorAll('.article-body > .article-next-step a')];
     assert.deepEqual(actions.map(x=>x.getAttribute('href')),a.actions.map(x=>prefix+x),url+' relevant localized actions');
     assert(actions.every(x=>x.textContent.trim().length>0),url+' action labels');
+   }
+   for(const section of a.sections){
+    if(!section.actions)continue;
+    const links=[...d.querySelectorAll('#'+section.id+' .section-actions a')];
+    assert.deepEqual(links.map(x=>x.getAttribute('href')),section.actions.map(x=>prefix+x),url+' contextual links');
+    assert(links.every(x=>x.textContent.trim().length>0&&x.getAttribute('data-placement')===section.id),url+' contextual labels and tracking');
    }
    if(a.slug==='sugargoo-shipping-calculator'){
     assert.equal(d.querySelectorAll('[data-weight-tool] input[type=number]').length,5,url+' weight inputs');

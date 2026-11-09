@@ -1,10 +1,10 @@
 {
   "locale": "cs",
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-09",
   "ui": {
     "articles": "Články",
     "articleTitle": "Nákupní průvodci Sugargoo",
-    "articleIntro": "Praktické Sugargoo průvodce pro produktové odkazy, QC fotografie, velikost bot a expedice. Vyberte si otázku, na kterou musíte odpovědět před nákupem nebo odesláním balíku.",
+    "articleIntro": "Praktické průvodce Sugargoo pro odkazy na produkty, velikosti oblečení a obuvi, fotografie pro kontrolu kvality, nalezení cen a dopravu specifickou pro danou zemi. Před nákupem nebo odesláním balíku si vyberte otázku, na kterou chcete odpovědět.",
     "faqTitle": "Sugargoo — časté dotazy",
     "faqIntro": "Srozumitelné odpovědi pro každou fázi objednávky, s oficiálními zdroji pravidel platformy a poctivým popisem omezení tohoto nezávislého katalogu.",
     "readArticle": "Přečíst průvodce",
@@ -62,7 +62,10 @@
     "billingBase": "Hmotnost před zaokrouhlením",
     "weightDisclaimer": "Výsledek ukazuje hmotnost před zaokrouhlením a minimální účtovanou hmotností. Platí také rozměrové limity a poplatky za služby. Ověřte aktuální nabídku v Sugargoo.",
     "weightError": "V každém měřicím poli zadejte kladné číslo.",
-    "officialEstimatorGuide": "Otevřít oficiální návod ke kalkulačce dopravy"
+    "officialEstimatorGuide": "Otevřít oficiální návod ke kalkulačce dopravy",
+    "navQc": "Fotografie pro kontrolu kvality",
+    "navShipping": "Doprava",
+    "priceSortedCta": "Procházejte ceny od nejnižší po nejvyšší"
   },
   "groups": {
     "basics": "Začínáme",
@@ -444,8 +447,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Jak používat tabulku Sugargoo: hledání a objednávání",
-      "description": "Pomocí tabulky Sugargoo najít odkazy na produkty, zkontrolovat velikosti a možnosti prodejce, otevřít správnou stránku objednávky, a přezkoumání skladu QC před odesláním.",
+      "title": "Průvodce tabulkou Sugargoo: Najděte odkazy, zkontrolujte velikosti a nakupte",
+      "description": "Použijte tabulku Sugargoo k nalezení odkazů na produkty, třídění cen, porovnání velikostí oblečení a kontrole kvality vašeho vlastního skladu před odesláním.",
       "keyword": "tabulka Sugargoo",
       "category": "getting-started",
       "intro": [
@@ -465,6 +468,19 @@
             "Check: odpovídá původnímu výpisu, variantám a aktuální ceně objednávky.",
             "Objednat: použít oficiální nákupní tok pro způsobilé položky.",
             "Recenze: Prohlédněte si vlastní sklad QC před provedením zásilky."
+          ]
+        },
+        {
+          "id": "spreadsheet-budget-shortlist",
+          "title": "Vytvořte si užší výběr podle ceny a velikosti",
+          "paragraphs": [
+            "Pokud máte rozpočet na produkt, použijte katalog seřazený podle ceny a poté výběr zúžte podle kategorie nebo vyhledávacího dotazu. Ověřte vybranou možnost na stránce nákupu: nejnižší zobrazená cena může patřit k jiné velikosti, barvě nebo množství. Uchovávejte cenu produktu a rozpočet na doručení jako samostatná rozhodnutí.",
+            "U oblečení si uložte tabulku prodejce s přesným odkazem na inzerát a porovnejte ji s podobným oděvem, který vlastníte. Každého kandidáta označte jednou další akcí, například kontrolou délky rukávu nebo potvrzením přiloženého množství. Díky tomu se adresář stává užitečným kontrolním seznamem pro nákup namísto rostoucí sbírky neověřených odkazů."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/articles/sugargoo-finds-under-20/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -551,7 +567,7 @@
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/spreadsheet/",
         "/category/shoes/"
@@ -658,8 +674,8 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Jak zkontrolovat QC fotografie Sugargoo před odesláním",
-      "description": "Najděte fotografie z QC skladu Sugargoo, zkontrolujte správnou položku a velikost, požádejte o užitečná další měření a vyřešte problémy před mezinárodní přepravou.",
+      "title": "Fotografie kontroly kvality Sugargoo: Kde je najít a co zkontrolovat",
+      "description": "Vyhledejte fotografie kontroly kvality Sugargoo vaší objednávky, zkontrolujte správnou variantu a míry a vyžádejte si jasné důkazy před schválením mezinárodní přepravy.",
       "keyword": "fotografie QC Sugargoo",
       "category": "quality",
       "intro": [
@@ -678,6 +694,18 @@
             "Zkontrolujte, zda každá fotografie patří do stejné objednávky a varianty.",
             "Žádám o bližší pohled na podezřelou vadu, která identifikuje její polohu.",
             "Vynechejte nevyřešené položky z balíku, dokud nebudete mít odpověď."
+          ]
+        },
+        {
+          "id": "qc-photo-request",
+          "title": "Proměňte nejasnou fotografii v přesný požadavek",
+          "paragraphs": [
+            "Otevřete fotografie připojené k vaší vlastní objednávce ve skladu nebo v oblasti objednávek. Referenční obrázky z katalogu vám pomohou s procházením, ale nedokazují stav ani míry položky, která vám dorazila. Nejprve porovnejte identifikátor položky, vybranou barvu, velikost a množství se záznamem objednávky.",
+            "Pro střih oblečení si vyžádejte přesné míry, které by mohly změnit vaše rozhodnutí: šířka hrudníku s viditelným nulovým bodem pásky, délka těla od pojmenovaného počátečního bodu nebo volný pas. U bot udržujte délku chodidla, délku stélky a převody velikostí zvlášť. Ověřte dostupné služby a poplatky a poté porovnejte výsledek s referenční hodnotou změřenou stejným způsobem."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-shoe-size-guide/"
           ]
         },
         {
@@ -764,17 +792,17 @@
         "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
-        "/articles/sugargoo-shoe-size-guide/",
-        "/category/shoes/"
+        "/articles/sugargoo-clothing-size-guide/",
+        "/category/hoodies-sweaters/"
       ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Kalkulačka dopravy Sugargoo: hmotnost a náklady",
-      "description": "Porovnejte skutečnou hmotnost balíku s objemovou hmotností. Použijte dělitel a pravidlo účtování zvolené trasy. Nástroj nepočítá cenu dopravy.",
+      "title": "Kalkulačka přepravy Sugargoo: Skutečná vs. objemová hmotnost",
+      "description": "Vypočítejte hmotnost balíku, porovnejte skutečnou a objemovou fakturaci a shromážděte vstupy potřebné pro aktuální odhad nákladů na přepravu Sugargoo.",
       "keyword": "kalkulačka přepravy Sugargoo",
       "category": "shipping",
       "intro": [
@@ -793,6 +821,18 @@
             "Používejte vnější rozměr balení v centimetrech, nikoli rozměry výrobku.",
             "Převeďte gramy na kilogramy: 3000 g jsou 3 kg.",
             "Vezměte dělič a nabíjení pravidlo z trasy, kterou uvažujete."
+          ]
+        },
+        {
+          "id": "calculator-quote-handoff",
+          "title": "Zahrňte výpočet do aktuální cenové nabídky trasy",
+          "paragraphs": [
+            "Výše uvedená kalkulačka vysvětluje hmotnost; nenačítá aktuální přepravní tarify. Po výpočtu otevřete oficiální kalkulátor s vaší destinací, obsahem a rozměry zabaleného balíku. Použijte dělitele, minimální poplatek a zaokrouhlovací podmínky vybrané trasy, místo abyste předpokládali, že jeden vzorec popisuje každou službu.",
+            "Zaznamenejte si celkovou cenu a co zahrnuje. Porovnejte trasy se stejnými vstupy a poté po změně balíku obnovte cenovou nabídku. U zásilek do České republiky si také přečtěte aktuální pokyny pro destinace uvedené níže; staré pravidlo pro dovoz nízké hodnoty nebo platba jiného kupujícího není spolehlivým odhadem pro váš balík."
+          ],
+          "actions": [
+            "/articles/sugargoo-rehearsal-shipping/",
+            "/articles/sugargoo-shipping-to-czechia/"
           ]
         },
         {
@@ -879,7 +919,7 @@
         "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-rehearsal-shipping/",
         "/articles/sugargoo-shipping-to-usa/"
@@ -888,8 +928,8 @@
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Zkušební balení Sugargoo: jak funguje a kdy se vyplatí",
-      "description": "Naučte se, co Sugargoo zkouška lodní dopravy dělá, když to stojí za poplatek, a jak použít balenou hmotnost a rozměry před výběrem trasy přepravy.",
+      "title": "Doprava na zkoušku Sugargoo: Kroky, cena a kdy ji využít",
+      "description": "Zjistěte, kdy vám pomůže doprava na zkoušku Sugargoo, co zkontrolovat před placením a jak porovnat výsledek balení s konečnou cenovou nabídkou.",
       "keyword": "zkušební balení Sugargoo",
       "category": "shipping",
       "intro": [
@@ -924,6 +964,18 @@
               ]
             ]
           }
+        },
+        {
+          "id": "rehearsal-next-decision",
+          "title": "Použijte výsledek zkoušky k dalšímu rozhodnutí.",
+          "paragraphs": [
+            "Před žádostí o zkoušku si přečtěte aktuální poplatek za službu ve svém účtu. Užitečným výsledkem jsou jasnější informace o balení: porovnejte skutečnou hmotnost, vnější rozměry, fakturační pravidlo trasy a všechny vybrané služby. Placená zkouška sama o sobě nezaručuje, že konečná celková cena dopravy bude nižší.",
+            "Pokud se výsledek liší od vašeho odhadu, před změnou trasy zjistěte proč. Byla krabice větší, než se očekávalo, přidalo ochranné balení hmotnost nebo trasa používá jiný dělitel? Porovnejte identický obsah a balení napříč způsobilými cenovými nabídkami. Pokud následně odeberete položku nebo změníte balení, aktualizujte informace použité pro konečnou cenovou nabídku."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-shipping-to-czechia/"
+          ]
         },
         {
           "id": "identify-the-decision",
@@ -1009,7 +1061,7 @@
         "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-shipping-calculator/",
         "/articles/sugargoo-parcel-consolidation/"
@@ -1376,8 +1428,8 @@
     {
       "id": "sugargoo-returns-refunds",
       "slug": "sugargoo-returns-refunds",
-      "title": "Vrácení zboží a peněz Sugargoo: důkazy, podmínky a další kroky",
-      "description": "Řešte nesprávný produkt nebo změněnou objednávku pomocí jasných důkazů, kontroly podmínek vrácení a záznamu rozlišujícího schválení od přijetí peněz.",
+      "title": "Vrácení a refundace Sugargoo: Důkazy kontroly kvality a další kroky",
+      "description": "Před mezinárodním odesláním zkontrolujte fázi objednávky, zdokumentujte problém s velikostí nebo stavem a seznamte se s dalším krokem vrácení nebo refundace.",
       "keyword": "vrácení peněz Sugargoo",
       "category": "account",
       "intro": [
@@ -1391,6 +1443,18 @@
           "paragraphs": [
             "Než kontaktujete podporu, určete, zda objednávka stále čeká na nákup, je již koupená, odeslaná prodejcem, přijatá ve skladu nebo expedovaná mezinárodně. Žádost o zrušení nedokončeného nákupu se liší od vrácení fyzického zboží. Použijte skutečný stav a datum objednávky místo předpokladu, že stisk tlačítka transakci obrátil.",
             "Oficiální průvodce zrušením Sugargoo popisuje postup přes účet, zatímco průvodce vrácením odděluje pozdější fáze vracení zboží a peněz. Otevřete příslušnou objednávku a použijte dostupnou oficiální akci. Pokud možnost chybí nebo je stav nejasný, zeptejte se podpory, co lze u konkrétní objednávky udělat, než cokoli zařídíte samostatně."
+          ]
+        },
+        {
+          "id": "return-size-evidence",
+          "title": "Před žádostí o nápravu zdokumentujte problém s velikostí",
+          "paragraphs": [
+            "Uschovejte si vybranou variantu, tabulku rozměrů prodejce a fotografie kontroly kvality vaší objednávky. Vysvětlete, zda dorazila nesprávná varianta nebo zda správný štítek má rozměry, které se liší od uvedených v seznamu. Porovnejte stejné měřicí body; plochá šířka a obvod nemohou samy o sobě prokázat nesoulad.",
+            "Zeptejte se, jaké možnosti vrácení nebo výměny jsou pro danou objednávku k dispozici, včetně termínů, vnitrostátních nákladů a dalšího požadovaného kroku. Zaznamenejte si odpověď a všechny samostatné položky o vrácení peněz. Schválení žádosti nepovažujte za důkaz, že všechny náklady již byly vráceny, a vyřešte podstatné otázky před mezinárodním odesláním."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-order-status/"
           ]
         },
         {
@@ -1473,7 +1537,11 @@
         "sugargoo-fees-payment"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-18"
+      "updated": "2026-11-09",
+      "actions": [
+        "/articles/sugargoo-qc-photos/",
+        "/articles/sugargoo-order-status/"
+      ]
     },
     {
       "id": "weidian-taobao-links-sugargoo",
@@ -2304,6 +2372,10 @@
           "paragraphs": [
             "Otevřít původní produktovou stránku a uložit velikost grafu, který patří k tomuto modelu. Zkontrolujte, zda jeho měření popisují chodidlo, stélku nebo exteriér boty. Také zkontrolujte, zda systém velikosti je pro muže, ženy nebo děti. Tabulka z jiného modelu může vytvořit falešnou shodu, i když velikost etikety vypadají stejně.",
             "Pokud graf není jasný, zeptejte se prodejce nebo agenta, co každý sloupec znamená před objednáním. Do každé tabulky nepřidávejte standardní příspěvek: prodávající již mohl do svého doporučení vložit příspěvek. Záleží také na vašem vybraném fit, ponožkách a tvaru boty."
+          ],
+          "actions": [
+            "/category/shoes/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -2409,6 +2481,443 @@
       "actions": [
         "/category/shoes/",
         "/articles/sugargoo-qc-photos/"
+      ]
+    },
+    {
+      "id": "sugargoo-clothing-size-guide",
+      "slug": "sugargoo-clothing-size-guide",
+      "title": "Průvodce velikostmi oblečení Sugargoo: Rozměry a kontroly kvality",
+      "description": "Vyberte si velikosti oblečení podle měr prodejce, porovnejte oděv, který vlastníte, a vyžádejte si užitečné fotografie kontroly kvality Sugargoo před mezinárodním odesláním.",
+      "keyword": "sugargoo clothing size guide",
+      "category": "quality",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Začněte s rozměry oděvu, který vám padne, a poté je porovnejte s přesnou tabulkou prodejce. Známé písmeno velikosti nestačí: mikina s kapucí velikosti M a dres velikosti M mohou mít velmi odlišné šířky, délky a střihy. Tento průvodce velikostmi oblečení Sugargoo promění tyto rozdíly v praktický kontrolní seznam objednávky.",
+        "Použijte fotografie z nabídky k výběru stylu, tabulku velikostí k výběru varianty a vlastní kontrolu kvality ve skladu ke kontrole doručeného zboží. Jedná se o tři různé druhy důkazů. Níže uvedené příklady porovnání ilustrují jednu metodu; Nejedná se o rozměry produktů aktuálně nabízených v katalogu."
+      ],
+      "sections": [
+        {
+          "id": "measure-reference",
+          "title": "Před prohlížením změřte referenční oděv.",
+          "paragraphs": [
+            "Vyberte si něco, co se vám ve stejné kategorii skutečně líbí. Přiléhavé tričko je špatným referenčním bodem pro zimní mikinu s kapucí nošenou přes další vrstvu. Položte oděv na rovný povrch, uhlaďte viditelné záhyby bez natahování látky a každé měření jasně vyfoťte. Všimněte si, zda již byl vypraný a zda se látka natahuje.",
+            "Zaznamenejte si měřicí body i počet. U jednoduchého topu změřte rovně přes hrudník pod průramky a poté změřte délku těla od jasně definovaného bodu ramene k lemu. Při čtení tabulky prodejce použijte stejné koncové body. Zakřivený šev, snížená ramena nebo nerovný lem mohou způsobit, že dvě zdánlivě podobné délkové míry budou nesrovnatelné.",
+            "Mějte tento malý referenční list po ruce při prohlížení. Pokud změníte zamýšlený střih z běžného na nadměrný, změňte i referenční oděv. Přidání náhodného počtu centimetrů ke každému rozměru může vést k příliš dlouhým rukávům, aniž by poskytovaly požadovaný extra prostor na hrudi."
+          ],
+          "actions": [
+            "/category/t-shirts/",
+            "/category/hoodies-sweaters/"
+          ]
+        },
+        {
+          "id": "read-size-chart",
+          "title": "Přečtěte si tabulku prodejce bez záměny rozměrů",
+          "paragraphs": [
+            "Nejprve zjistěte, zda tabulka popisuje osobu, nebo hotový oděv. Obvod hrudníku není šířkou hrudníku v plochém oděvu. Stejně tak tabulku zobrazující obvod oděvu nelze přímo porovnávat s jedním rozměrem v plochém oděvu. Pokud se šířka v plochém oděvu zdvojnásobí, výsledkem je pouze jednoduchá aproximace obvodu; nepopisuje tvarování, pružnost ani to, jak bude oděv viset.",
+            "Zkontrolujte jednotky, přesný typ produktu a případné tolerance rozměrů uvedené prodejcem. Nepřenášejte tabulku z vizuálně podobné nabídky. Různé šarže nebo střihy mohou používat různé specifikace. Pokud je tabulka obrázkem, přibližte si ji a přečtěte si záhlaví sloupců před jejich překladem; přeložený štítek bez diagramu rozměrů může být stále nejednoznačný.",
+            "Mezi běžné štítky patří hrudník nebo poprsí, ramena, délka oděvu, délka rukávu, pas, boky, sed a délka kalhot. Napište význam vedle uložených rozměrů. Pokud diagram chybí a dva výklady by vedly k různým velikostem, požádejte o vysvětlení před zaplacením. Hádání se stává dražším poté, co objednávka dosáhne mezinárodní přepravy."
+          ]
+        },
+        {
+          "id": "fit-example",
+          "title": "Srovnání: šířka a délka dohromady",
+          "paragraphs": [
+            "Uvažujme ilustrativní referenční tričko o rozměrech 54 cm přes hrudník a 70 cm na délku. Předpokládejme, že tabulka prodejce uvádí jednu možnost s rozměry 52 cm a 68 cm a druhou s rozměry 56 cm a 72 cm, s použitím stejných měřicích bodů. První možnost je užší a kratší než vaše referenční velikost; druhá je širší a delší. Ani jedna z nich není automaticky správná jen proto, že písmeno velikosti odpovídá vaší obvyklé volbě.",
+            "Nyní se rozhodněte, který rozdíl je pro vás důležitý. Pokud se referenční velikost již zdá krátká, kratší varianta si zaslouží zvláštní pozornost. Pokud se šířka hrudníku blíží vaší maximální pohodlné volnosti, širší varianta může být neatraktivní. Před výběrem kterékoli z nich porovnejte míry ramen a rukávů. Toto rozhodnutí se týká několika rozměrů, nikoli pravidla, že vždy musíte jít o jednu velikost větší.",
+            "Nevyřešené rozdíly nechte ve svých poznámkách viditelné. Například napište „obvod hrudníku přijatelný, chybí měření rukávu“ místo označení celého oděvu jako schválený. Chybějící důkazy pak můžete požádat o opakování kontrol, které již byly jasné. Tato vzorová čísla jsou vymyšlená pro aritmetické účely a nepředstavují doporučení velikosti prodávajícího."
+          ]
+        },
+        {
+          "id": "category-checks",
+          "title": "Vyberte si kontroly, které odpovídají kategorii oblečení.",
+          "paragraphs": [
+            "Mikiny s kapucí potřebují prostor pro vrstvu, kterou plánujete nosit pod nimi. Porovnejte šířku hrudníku, rozsah rukávů, šířku lemu a délku těla s podobnou mikinou s kapucí. Snížená ramena mění místo, kde začíná měření rukávů, proto porovnejte celý diagram, místo abyste šířku ramen a délku rukávů považovali za nezávislé záruky padnutí.",
+            "U kalhot a kraťasů rozlišujte mezi volným pasem a roztaženým měřením. Porovnejte pas, boky, přední sedlo, vnitřní šev a rozevření nohavic, pokud tyto detaily ovlivňují váš střih. Samotné měření pasu neukazuje, zda budou stehna pohodlná. U dresů zkontrolujte zamýšlený střih a délku a také šířku hrudníku; sportovní střih se může lišit od ležérního trička.",
+            "Bundy vyvolávají další otázky ohledně vrstvení a pohybu. Fotografie nedokáže ukázat, jak pohodlně si můžete zvednout ruce nebo zapnout bundu přes svetr. Použijte srovnatelnou referenční bundu, prohlédněte si uvedené materiály a chybějící informace považujte za nejistotu, spíše než předpokládat, že každý kus se stejnou velikostí písmene odpovídá univerzální tabulce."
+          ],
+          "table": {
+            "headers": [
+              "Typ oblečení",
+              "Užitečné srovnání",
+              "Častá chyba"
+            ],
+            "rows": [
+              [
+                "Trička a dresy",
+                "Šířka hrudníku, délka těla a rukávy",
+                "Výběr pouze na základě výšky a hmotnosti"
+              ],
+              [
+                "Mikiny s kapucí a bundy",
+                "Prostor pro vrstvení, rukávy a lem",
+                "Kombinace snížených a standardních ramen"
+              ],
+              [
+                "Kalhoty a kraťasy",
+                "Pas, boky, sed a vnitřní šev",
+                "Porovnání nataženého a uvolněného pasu"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "request-clothing-qc",
+          "title": "Vyžádejte si fotografie pro kontrolu kvality, které odpoví na vaši otázku ohledně velikosti",
+          "paragraphs": [
+            "Pokyny pro kontrolu kvality Sugargoo popisují kontroly přijaté položky a další požadavky na důkazy. Před vyžádáním dalších fotografií si ověřte služby dostupné pro vaši objednávku, včetně případného poplatku. Místo dotazu, zda položka „odpovídá velikosti“, požádejte o konkrétní míru s viditelnými koncovými body. Z této fráze personál nemůže poznat vaši osobní preferenci ohledně velikosti.",
+            "Užitečný požadavek je: položte oděv naplocho, aniž byste ho natahovali, ukažte celou pásku od jednoho okraje hrudníku k druhému těsně pod průramky a na samostatné fotografii uveďte štítek s velikostí. U délky uveďte počáteční bod, který jste použili na referenčním oděvu. U kalhot uveďte, zda chcete mít pas volný nebo natažený.",
+            "Předtím, než se důvěřujete číslu, si prohlédněte samotný obrázek. Nulový bod by měl být viditelný, páska by měla sledovat zamýšlenou linii a záhyby by neměly zakrývat lem. Pokud perspektiva nebo ohnutá páska znemožňují posouzení malého rozdílu, požádejte o jeden opravený obrázek. Více fotografií ze stejného nejasného úhlu nezvyšuje spolehlivost měření."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "resolve-sizing-issues",
+          "title": "Vyřešte neshodu, dokud jsou důkazy užitečné.",
+          "paragraphs": [
+            "Uchovejte vybranou možnost, tabulku prodejce, číslo objednávky a relevantní obrázky kontroly kvality pohromadě. Oddělte nesprávný štítek od oděvu, který má správný štítek, ale neočekávané rozměry. Vysvětlete nesrovnalost stejnou metodou měření na obou stranách. Krátké a konkrétní srovnání pomůže podpoře nebo prodejci lépe pochopit problém než obecná stížnost, že položka vypadá malá.",
+            "Nepředpokládejte, že vrácení, výměna nebo refundace je automatická. Nárok na náhradu, lhůty, náklady a manipulace závisí na objednávce a podmínkách prodejce. Před odesláním zboží do mezinárodního balíku se zeptejte, jaký je možný opravný prostředek. Pokud se rozhodnete zboží ponechat, zaznamenejte si, proč je zbývající rozdíl přijatelný, a nevyřešený problém nepovažujte za důkaz, že vám dobře padne.",
+            "Nakonec rozlišujte viditelnou kontrolu kvality od testu nošení. Fotografie ze skladu nemohou prokázat dlouhodobou trvanlivost, srážlivost po praní ani osobní pohodlí. Přečtěte si informace o péči, pokud jsou k dispozici, a uschovejte si záznam objednávky. Pro další nákup aktualizujte své referenční míry z oděvu, který jste skutečně obdrželi a nosili; díky tomu budoucí srovnání budou užitečnější, aniž by se spoléhalo na obecné stereotypy velikostí."
+          ],
+          "actions": [
+            "/articles/sugargoo-returns-refunds/"
+          ]
+        }
+      ],
+      "checklist": [
+        "Použijte srovnatelný oděv, který odpovídá zamýšlenému stylu.",
+        "Porovnejte jednotky, koncové body a šířku v plochém stavu s obvodem.",
+        "Před zaplacením zkontrolujte přesnou variantu a tabulku prodejce.",
+        "Pro nevyřešené rozměry si vyžádejte konkrétní skladové míry.",
+        "Vyřešte nesoulad materiálu před mezinárodním odesláním."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: čtení tabulek velikostí Taobao",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: fotografie, videa a požadavky na měření",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: kontroly kvality a jejich limity",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: vrácení a refundace",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shoe-size-guide"
+      ],
+      "actions": [
+        "/category/hoodies-sweaters/",
+        "/category/pants-shorts/"
+      ]
+    },
+    {
+      "id": "sugargoo-finds-under-20",
+      "slug": "sugargoo-finds-under-20",
+      "title": "Sugargoo najde zboží pod 20 USD: Kontrola ceny, velikosti a nákupu",
+      "description": "Najděte zboží Sugargoo pod 20 USD pomocí odkazů na produkty seřazených podle ceny. Před rozhodnutím, co je cenově dostupné, zkontrolujte přesnou variantu, rozměry, kontrolu kvality a dopravu.",
+      "keyword": "sugargoo finds under 20",
+      "category": "getting-started",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "V tomto průvodci se „pod 20 USD“ rozumí zobrazená cena produktu nižší než 20 USD před započítáním dodatečných nákladů. To neznamená, že balík bude s doručením stát méně než 20 USD. Použijte živý katalog seřazený podle ceny k vytvoření užšího seznamu a poté ověřte přesnou variantu a aktuální cenu na stránce nákupu.",
+        "Toto je metoda výběru, nikoli pevný seznam údajně testovaných produktů. Ceny a dostupnost v katalogu se mohou měnit. Příklady vysvětlují, jak porovnávat náklady a nejistotu; nejedná se o živé nabídky, recenze ani sliby, že konkrétní prodejce objednávku přijme."
+      ],
+      "sections": [
+        {
+          "id": "find-budget-links",
+          "title": "Začněte s katalogem seřazeným podle ceny",
+          "paragraphs": [
+            "Otevřete katalog pomocí níže uvedeného odkazu pro třídění podle nejnižší ceny. Vyhledejte typ produktu, který potřebujete, nebo seznam zúžte na relevantní kategorii. Levný doplněk není užitečnou náhradou za mikinu, kterou jste si přišli koupit. Začněte s zamýšleným použitím a poté porovnejte ceny v rámci dané skupiny, aby užší výběr obsahoval smysluplné alternativy.",
+            "Otevřete produktovou stránku každého kandidáta a klikněte na dostupný odkaz pro nákup. Potvrďte název, identifikátor položky, vybranou barvu, velikost a množství. Některé nabídky zobrazují nejnižší cenu varianty, i když varianta, kterou potřebujete, stojí více. Karta s cenou pod 20 USD je pouze výchozím bodem, dokud není ověřena přesná možnost.",
+            "Uschovejte si tři nebo čtyři věrohodné kandidáty, místo abyste shromažďovali desítky odkazů. Zaznamenejte si důvod, proč by každý z nich mohl fungovat, a otázku, která by ho mohla vyloučit. Například: vhodné míry, ale chybí detaily látky. Krátký seznam s explicitními otázkami se snáze ověřuje než dlouhý seznam seřazený pouze podle atraktivních obrázků."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/category/accessories/?sort=price"
+          ]
+        },
+        {
+          "id": "under-20-budget",
+          "title": "Oddělte limit produktu od dodaného rozpočtu.",
+          "paragraphs": [
+            "Zapište si dva limity: maximální cenu položky a maximální celkovou částku, kterou jste ochotni utratit. První vám pomůže s orientací; druhý rozhoduje o tom, zda má nákup smysl. Počítejte s vnitrostátním doručením, kde je účtováno, náklady na platbu nebo služby zobrazené při placení, volitelnými službami, mezinárodní dopravou a poplatky za doručení, které se na balík vztahují.",
+            "Uvažujme čistě ilustrativní srovnání. Položka A je uvedena za 12 dolarů a položka B za 17 dolarů. Pokud položka A vyžaduje dalších 9 dolarů souvisejících nákladů, zatímco položka B vyžaduje dalších 3 dolary při stejné metodě srovnání, celkové částky jsou 21 dolarů a 20 dolarů. Tato čísla nejsou sazbami Sugargoo. Ukazují, proč nižší cena položky nemusí nutně vést k nižší celkové ceně.",
+            "Pokud se o balík dělí několik položek, neuvádějte libovolné stejné rozdělení jako cenu dopravy pro každý produkt. Udržujte celkovou částku balíku viditelnou a uveďte, jak jste rozdělenou částku rozdělili. Pro rozhodnutí o koupi porovnejte cenovou nabídku balíku s a bez přidané položky, jakmile bude k dispozici rozumná hmotnost a rozměry."
+          ],
+          "table": {
+            "headers": [
+              "Rozpočet",
+              "Co zkontrolovat",
+              "Kdy aktualizovat"
+            ],
+            "rows": [
+              [
+                "Produkt a vybraná možnost",
+                "Přesná velikost, barva, množství a měna",
+                "Před zadáním objednávky"
+              ],
+              [
+                "Vnitrostátní a volitelné služby",
+                "Poplatky skutečně zobrazené za objednávku",
+                "Před výběrem placených služeb"
+              ],
+              [
+                "Náklady na mezinárodní balík a doručení",
+                "Rozměry balení a aktuální podmínky přepravy",
+                "Před zaplacením za přepravu"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-cheap-clothing",
+          "title": "Použijte míry k porovnání levného oblečení",
+          "paragraphs": [
+            "Nízká cena neznamená, že nevhodná velikost je výhodná. U triček, mikin a svetrů porovnejte míry prodejce s podobným oděvem, který již vlastníte. Všimněte si, zda je číslo šířka nebo obvod. Nevybírejte větší písmeno jen proto, že někdo jiný doporučuje větší velikost, aniž by uvedl prodejce a přesný popis.",
+            "U kalhot a kraťasů zkontrolujte více než jen pas. Pas, šířka boků, vnitřní šev a průstřih nohavic mohou změnit střih, i když se nominální pas zdá být správný. Pokud je v nabídce uvedeno pouze písmeno velikosti a žádné užitečné míry, zahrňte tuto chybějící informaci do svého rozhodnutí. Možná dáte přednost o něco dražšímu kandidátovi s jasnějšími důkazy.",
+            "U doplňků zkontrolujte rozměry a co je součástí nákupu. Fotografie může zobrazovat několik kusů, zatímco vybraná možnost obsahuje pouze jeden. Přečtěte si popis možnosti a shrnutí objednávky. Smyslem porovnání je porozumět položce, kterou obdržíte, nikoli odvodit hodnotu z počtu předmětů na referenční fotografii."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/category/t-shirts/?sort=price"
+          ]
+        },
+        {
+          "id": "cheap-qc-evidence",
+          "title": "Rozhodněte se, které důkazy o kontrole kvality by mohly změnit vaši volbu.",
+          "paragraphs": [
+            "Před objednáním uveďte dva nebo tři nejdůležitější fakta. Oděv může vyžadovat jasný štítek s velikostí a míru hrudníku; doplněk může vyžadovat kontrolu rozměrů a pohled na jeho zapínání. Když objednávka dorazí do skladu, porovnejte přijatou položku s vybranou variantou a uloženými informacemi v nabídce.",
+            "Publikované pokyny pro kontrolu kvality společnosti Sugargoo jsou užitečné pro pochopení toho, co mohou ukázat kontroly ve skladu. Před zaplacením za další důkazy si ověřte dostupné možnosti služeb pro vaši objednávku. Požádejte o detailní záběr nebo míru, která odpovídá na konkrétní nevyřešenou otázku. Opakování obecné žádosti o kvalitnější fotografie může zpoždění, aniž by zlepšilo rozhodnutí.",
+            "Nízká cena a čistá fotografie nezaručují autenticitu, trvanlivost ani bezpečnost. Vyhněte se popisování netestovaných položek jako nejlepších, ověřených nebo zaručených jen proto, že existuje stránka produktu. Pokud vaše zamýšlené použití závisí na výkonu, který fotografie nemohou prokázat, vyhledejte vhodnou dokumentaci k produktu nebo zvolte alternativu s důkazy, které můžete vyhodnotit."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "small-haul-costs",
+          "title": "Zkontrolujte náklady na přidání jedné další levné položky",
+          "paragraphs": [
+            "Levná položka navíc stále zabírá místo a přidává na váze. Než ji přidáte do balíku, zvažte položku a její obal společně. Objemný levný předmět může změnit účtovatelnou hmotnost nebo posunout balík za limit trasy. Odstranění obalu může ovlivnit ochranu, proto nepředpokládejte, že každé snížení objemu je rozumná úspora.",
+            "Použijte kalkulačku hmotnosti k pochopení aritmetiky a poté použijte oficiální odhad trasy pro ceny. Kalkulačka na tomto webu vysvětluje skutečnou a objemovou hmotnost; nejedná se o službu s aktuálním tarifem. Zadejte dělitele a pravidlo fakturace pro trasu, kterou porovnáváte, místo abyste jeden společný dělitel považovali za univerzální.",
+            "Pokud je nejistota ohledně balení dostatečně velká na to, aby změnila rozhodnutí, zkontrolujte dostupnou službu zkoušek a její cenu. Požádejte o ni až poté, co se rozhodnete, které položky si chcete ponechat. Zkouška může zlepšit informace o balení použité v cenové nabídce, ale její zaplacení nezaručuje nižší celkovou cenu. Porovnejte získané informace s náklady a zbývající nejistotou."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "budget-decision",
+          "title": "Ponechat, prozkoumat nebo vynechat: jednoduché pravidlo pro užší výběr",
+          "paragraphs": [
+            "Označte kandidáta „ponechat“ pouze tehdy, když jeho přesná možnost, rozměry a očekávaná celková cena splňují vaše požadavky. Označte „prozkoumat“, pokud by jedna odpověď mohla změnit rozhodnutí. Označte „vynechat“, pokud chybějící důkazy, nevhodné rozměry nebo celkové náklady způsobují, že je nevhodný. Toto pravidlo zabraňuje tomu, aby nízká hlavní cena ovlivňovala veškeré rozhodování.",
+            "Pokud má zakoupená položka problém, neprodleně jej zdokumentujte a zkontrolujte možnosti vrácení nebo výměny pro danou objednávku. Vrácení levné položky může být stále drahé v porovnání s její kupní cenou. Před pokračováním porovnejte jakýkoli uvedený opravný prostředek a cenu; nepředpokládejte, že budoucí vrácení peněz odstraní riziko nejasného nákupu nyní.",
+            "Při placení se vraťte k uloženým odkazům, místo abyste předpokládali, že cena zůstane platná na dobu neurčitou. Uschovejte si doklady o objednávce a aktualizujte užší výběr, když prodejce změní možnosti nebo skladové zásoby. Užitečným výsledkem rozpočtového průvodce je nákup, který odpovídá vašim potřebám a celkovému rozpočtu, i když to znamená nákup menšího počtu položek nebo ponechání atraktivního odkazu na nízkou cenu nevyužitého.",
+            "Zkontrolujte užší výběr znovu bezprostředně před platbou. Pokud se zvolená varianta změní, zopakujte kontrolu ceny a velikosti, místo abyste předchozí rozhodnutí použili na jinou položku. Užitečný rozpočtový limit by měl přetrvat i v konečném shrnutí objednávky."
+          ]
+        }
+      ],
+      "checklist": [
+        "Položky pod 20 USD považujte za filtr ceny položky, nikoli za slib ceny doručení.",
+        "Zkontrolujte přesnou variantu a množství na nákupní stránce.",
+        "Porovnejte rozměry s vhodnou referenční položkou.",
+        "Začleňte do rozpočtu celou zásilku a příslušné náklady na doručení.",
+        "Používejte aktuální ceny a doklady místo starého seznamu s pořadím."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: proces objednávání",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: čtení tabulek velikostí Taobao",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: kontroly kvality a jejich limity",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: odhad ceny mezinárodní dopravy",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulace zásilek před odesláním",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: vrácení a refundace",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "sugargoo-clothing-size-guide"
+      ],
+      "actions": [
+        "/spreadsheet/?sort=price",
+        "/category/hoodies-sweaters/?sort=price"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-czechia",
+      "slug": "sugargoo-shipping-to-czechia",
+      "title": "Doprava do Česka přes Sugargoo: Náklady, trasy a sledování",
+      "description": "Naplánujte si přepravu Sugargoo do České republiky s kontrolou hmotnosti zásilky, aktuálními cenovými nabídkami tras, celními zdroji a praktickým kontrolním seznamem pro sledování.",
+      "keyword": "sugargoo shipping to czech republic",
+      "category": "shipping",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Chcete-li odhadnout přepravu Sugargoo do České republiky, vyberte Českou republiku jako místo určení v aktuálním oficiálním kalkulátoru a použijte obsah, hmotnost a rozměry vašeho vlastního balíku. Neexistuje jednotná cena za dopravu ani doba doručení, která by platila pro každou českou objednávku.",
+        "Tato příručka vám pomůže shromáždit správné vstupy, porovnat dostupné trasy a uchovat potřebné dokumenty po odeslání. Dostupnost tras, poplatky a pravidla dovozu se mohou měnit. Níže uvedené příklady vysvětlují metody porovnání; nejedná se o aktuální cenové nabídky dopravce ani o slib, že vám bude k dispozici pojmenovaná služba."
+      ],
+      "sections": [
+        {
+          "id": "czech-start",
+          "title": "Připravte si místo určení a informace o balíku",
+          "paragraphs": [
+            "Použijte úplnou dodací adresu příjemce a PSČ, které k ní patří. Zkontrolujte číslo domu nebo budovy, případné údaje o bytě a telefonní číslo, které může dopravce použít. Udržujte jméno příjemce v souladu se záznamy použitými pro doručení a s veškerými požadovanými celními dokumenty. Uložená adresa si zaslouží další kontrolu před odesláním každého balíku.",
+            "Před porovnáním tras uveďte zamýšlený obsah. Kategorie produktu, materiály, baterie, kapaliny a další požadavky na manipulaci mohou ovlivnit způsobilost. Přečtěte si omezení uvedená pro vybranou službu a před zaplacením se zeptejte na nejasné položky. Trasa zobrazená v obecném porovnání nepotvrzuje, že akceptuje konkrétní obsah vašeho balíku.",
+            "Uchovávejte identifikátor objednávky, popis, množství a skutečný záznam o nákupu každé položky pohromadě. To usnadní pozdější zodpovězení požadavku, aniž byste museli znovu vytvářet historii objednávek ze snímků obrazovky. V celém procesu používejte přesné informace. Neměňte popisy ani hodnoty pouze proto, abyste trasu vypadali levněji, nebo abyste napodobili prohlášení jiného kupujícího."
+          ]
+        },
+        {
+          "id": "czech-weight",
+          "title": "Pochopte hmotnost, kterou bude trasa účtována",
+          "paragraphs": [
+            "Součet hmotností produktů nemusí nutně odpovídat konečné hmotnosti balení. Vnější obal a ochranné materiály přidávají hmotnost, zatímco velikost hotového balíku může hrát roli samostatně. Zeptejte se na rozměry balení, pokud jsou potřeba pro výpočet trasy. Používejte centimetry a kilogramy konzistentně, aby nesoulad jednotek nezkreslil srovnání.",
+            "Ilustrativní balík o rozměrech 40 × 30 × 25 cm má objem 30 000 krychlových centimetrů. Pokud hypotetická trasa používá dělitel 6 000, její objemová hmotnost by byla 5 kg. Pokud je skutečná hmotnost zabaleného balíku 3 kg a tato trasa účtuje vyšší částku, počáteční hmotnost by byla 5 kg před zaokrouhlovacími pravidly. Toto jsou příklady vstupů, nikoli tarif české trasy.",
+            "Jiná trasa může používat jiný dělitel, pouze skutečnou hmotnost, minimální poplatky nebo omezení rozměrů. Před porovnáním zobrazených cen si přečtěte její stanovené pravidlo. Kalkulačka hmotnosti na místě vám může pomoci s aritmetikou, ale aktuální cenová nabídka Sugargoo určuje cenu a dostupné služby pro vaši objednávku."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/"
+          ]
+        },
+        {
+          "id": "czech-route-comparison",
+          "title": "Porovnejte kompletní nabídku trasy",
+          "paragraphs": [
+            "Projeďte stejný balík každou z vhodných tras tak, aby porovnání používalo shodné vstupy. Zaznamenejte si uvedený poplatek, pravidlo hmotnosti, omezení rozměrů, odhadovaný čas, pokrytí sledování a zahrnuté služby. Poznamenejte si datum porovnání. Snímek obrazovky ze staré objednávky je užitečnou historií, ale není důkazem, že stejná nabídka je stále dostupná.",
+            "Zkontrolujte, jak cenová nabídka popisuje daně z místa určení, celní odbavení a doručení. Název trasy obsahující frázi související s daní nestačí k vysvětlení všech možných poplatků nebo závazků. Přečtěte si aktuální podrobnosti o službě a zeptejte se, jaké částky jsou zahrnuty v platbě. Tuto odpověď si uschovejte u cenové nabídky, abyste později mohli odlišit poplatek přepravce od jiného poplatku.",
+            "Vyberte si podle svých priorit. Nižší cenová nabídka s méně předvídatelným načasováním může vyhovovat flexibilnímu nákupu; urgentní doručení vyžaduje realistický prostor pro každou fázi. Vyhněte se budování plánu kolem nejrychlejšího neoficiálního doručení, které můžete najít. Zvažte praktické důsledky, pokud balík dorazí později než v odhadu, než se rozhodnete, že se vyplatí malá úspora."
+          ],
+          "table": {
+            "headers": [
+              "Pole pro porovnání",
+              "Záznam pro každou způsobilou trasu",
+              "Proč je to důležité"
+            ],
+            "rows": [
+              [
+                "Cena a fakturační základ",
+                "Nabízená celková cena, skutečná nebo objemová hodnota, pravidlo zaokrouhlování",
+                "Stejný balík může být účtován různě"
+              ],
+              [
+                "Pokrytí službou",
+                "Sledování, rozsah doručení a zahrnuté poplatky",
+                "Název trasy není úplným popisem služby"
+              ],
+              [
+                "Limity a časový harmonogram",
+                "Omezení obsahu, rozměry a odhad času",
+                "Způsobilost a načasování se liší podle balíku"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "czech-customs",
+          "title": "Použijte aktuální pokyny českých celních orgánů",
+          "paragraphs": [
+            "Před zaplacením za přepravu si ověřte níže uvedené zdroje českých celních orgánů. Jejich pokyny z roku 2026 změnily zacházení s dovozem zboží z elektronického obchodu s nízkou hodnotou. Nespoléhejte se na starší tvrzení, že každý nákup pod 150 EUR je osvobozen od cla. Clo, DPH, manipulace a proces deklarace jsou oddělené otázky; jejich zacházení závisí na aktuálních pravidlech a zásilce.",
+            "Zeptejte se vybrané služby, jak bude probíhat celní řízení a jaké záznamy jsou k tomu potřeba. Uschovejte si fakturu nebo záznam o objednávce, doklad o platbě a přesný popis dostupného zboží. Pokud někdo požaduje dokument nebo platbu, ověřte si žádost prostřednictvím dopravce nebo celní správy pomocí oficiálního kanálu před odesláním informací.",
+            "Nepředpokládejte, že poplatky za dřívější balík určují poplatky za další. Jiný seznam obsahu, deklarovaná kategorie, proces vstupu nebo ujednání o službě mohou změnit výpočet. Tato příručka nevypočítává závazné celní posouzení. Použijte aktuální oficiální pokyny a písemné vysvětlení služby pro samotný balík, zejména pokud cenová nabídka nespecifikuje poplatek."
+          ]
+        },
+        {
+          "id": "czech-before-dispatch",
+          "title": "Před odesláním dokončete kontrolu kvality a rozhodnutí o balení.",
+          "paragraphs": [
+            "Zkontrolujte každou položku, dokud je ještě k dispozici pro kontrolu ve skladu. Přiřaďte přijatou možnost a množství k vaší objednávce, prohlédněte si příslušné fotografie kontroly kvality a vyřešte důležité otázky týkající se velikosti nebo stavu. Sloučení nevyřešené položky do balíku může ztížit pozdější nápravu. Cenová nabídka na přepravu nenahrazuje rozhodnutí o tom, zda si chcete zboží ponechat.",
+            "Vyberte obal podle obsahu, nikoli pouze podle požadované hmotnosti. Křehké předměty mohou vyžadovat ochranu, zatímco zbytečné vnější krabice mohou zvýšit objem. Zeptejte se, co navrhovaná změna balení odstraní a zda ovlivní ochranu předmětu. Porovnejte výsledné informace o balení, než předpokládáte, že změna ušetří peníze.",
+            "Pokud je k dispozici opakování a zbývající nejistota ohledně balení je důležitá, před jeho vyžádáním si projděte jeho aktuální poplatek a rozsah. Publikovaný průvodce Sugargoo popisuje použití výsledných informací o balení před pokračováním. Poté se ujistěte, že obsah a zvolené balení stále odpovídají zamýšlené zásilce. Změna balíku může snížit užitečnost dřívějšího odhadu."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "czech-tracking",
+          "title": "Sledování čtete jako posloupnost předání.",
+          "paragraphs": [
+            "Uchovejte identifikátor balíku a odkaz na sledování, které jste pro svou službu poskytli. Oddělte zpracování ve skladu, přijetí dopravcem, mezinárodní přepravu, odbavení a místní doručení. Zpráva vytvořená štítkem sama o sobě nedokazuje, že balík dokončil další předání. Porovnejte nejnovější událost s uvedeným procesem služby, místo abyste interpretovali každé klidové období jako stejný problém.",
+            "Jakmile budou k dispozici informace o místním doručení, použijte dopravce skutečně identifikovaného pro váš balík. Nepředpokládejte, že každá česká zásilka putuje ke stejnému konečnému dopravci. Zkontrolujte údaje o příjemci, pokyny k doručení a případné oznámení o vyzvednutí prostřednictvím oficiálního kanálu daného dopravce. Uložte si relevantní zprávy, dokud nebude doručení dokončeno.",
+            "Pokud je postup mimo rámec pokynů pro vybranou službu, kontaktujte podporu s číslem balíku, poslední událostí a datem a konkrétní otázkou, na kterou potřebujete odpověď. První dotaz udržujte stručný. Strukturovaný záznam pomáhá podpoře prozkoumat správnou fázi a zabraňuje tomu, aby nesouvisející podrobnosti objednávky zakryly chybějící předání."
+          ],
+          "actions": [
+            "/articles/sugargoo-tracking/"
+          ]
+        },
+        {
+          "id": "czech-final-review",
+          "title": "Zajistěte opakovatelnou kontrolu konečné platby",
+          "paragraphs": [
+            "Před platbou porovnejte konečné shrnutí zásilky s vašimi poznámkami: místo určení, obsah, rozměry balení, trasa, vybrané služby a celková částka. Zkontrolujte, zda byla cenová nabídka aktualizována po jakékoli změně položky nebo balení. Pokud je některá položka nejasná, vyřešte ji před odesláním, místo abyste předpokládali, že je zahrnuta v jiné částce.",
+            "Po doručení zaznamenejte, co bylo účtováno a jak zásilka postupovala, aniž byste jeden výsledek prezentovali jako záruku pro budoucí zásilky. To vám poskytne užitečné důkazy pro vaše další srovnání. Opakovatelný zvyk je jednoduchý: ověřte zboží, uveďte cenovou nabídku skutečného balíku, přečtěte si aktuální celní pokyny a uschovejte si záznamy, které vysvětlují vaše rozhodnutí."
+          ]
+        }
+      ],
+      "checklist": [
+        "Vyberte Českou republiku a ověřte úplnou adresu příjemce.",
+        "Porovnejte vhodné trasy se stejnými rozměry a hmotností balení.",
+        "Zkontrolujte aktuální české celní pokyny, nikoli starší výjimky.",
+        "Vyřešte problémy s kontrolou kvality předtím, než balík opustí sklad.",
+        "Sledujte dopravce, který jej identifikuje, a získejte skutečné sledovací číslo."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: odhad ceny mezinárodní dopravy",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulace zásilek před odesláním",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: kontroly kvality a jejich limity",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Celní správa: elektronický obchod, clo, DPH a odbavení",
+          "url": "https://celnisprava.gov.cz/cz/celni-urad-praha-ruzyne/fyzicke-osoby/postovni-zasilky/prijeti/Stranky/mimo-eu.aspx"
+        },
+        {
+          "title": "Celní správa: aktuální oznámení o elektronickém obchodování",
+          "url": "https://celnisprava.gov.cz/cz/clo/e-commerce/Stranky/Z%C3%A1silky-e-commerce.aspx"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
       ]
     }
   ]

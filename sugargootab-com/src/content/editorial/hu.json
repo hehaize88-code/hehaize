@@ -1,10 +1,10 @@
 {
   "locale": "hu",
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-09",
   "ui": {
     "articles": "Cikkek",
     "articleTitle": "Sugargoo vásárlási útmutatók",
-    "articleIntro": "Gyakorlati Sugargoo útmutatók a termék linkek, QC fotók, cipőméretek és szállítás. Válassza ki a választ a csomag megvásárlása vagy küldése előtt.",
+    "articleIntro": "Gyakorlati Sugargoo útmutatók terméklinkekhez, ruha- és cipőméretekhez, minőségellenőrzési fotókhoz, költségvetés-keresésekhez és országspecifikus szállításhoz. Vásárlás vagy csomagküldés előtt válaszd ki a megoldandó kérdést.",
     "faqTitle": "Sugargoo gyakori kérdések",
     "faqIntro": "Világos válaszok a rendelés minden szakaszához, hivatalos forrásokkal a platform szabályairól és az önálló katalógus korlátainak őszinte bemutatásával.",
     "readArticle": "Útmutató olvasása",
@@ -62,7 +62,10 @@
     "billingBase": "Súly kerekítés előtt",
     "weightDisclaimer": "Az eredmény a kerekítés és a minimális elszámolás előtti tömeget mutatja. A méretkorlátok és a szolgáltatási díjak továbbra is érvényesek. Ellenőrizd az aktuális ajánlatot a Sugargoo oldalán.",
     "weightError": "Adja meg a pozitív számot minden mérési mezőben.",
-    "officialEstimatorGuide": "A hivatalos szállítási kalkulátor útmutatójának megnyitása"
+    "officialEstimatorGuide": "A hivatalos szállítási kalkulátor útmutatójának megnyitása",
+    "navQc": "Minőségellenőrzési fotók",
+    "navShipping": "Szállítás",
+    "priceSortedCta": "Böngéssz az árak között alacsonytól a magasig"
   },
   "groups": {
     "basics": "Kezdő lépések",
@@ -444,8 +447,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Sugargoo-táblázat használata: keresés, ellenőrzés, rendelés",
-      "description": "A Sugargoo táblázat segítségével megtalálja a termék linkjeit, a méreteket és az eladói opciókat, megnyitja a helyes rendelési oldalt, és felülvizsgálja a QC raktárt szállítás előtt.",
+      "title": "Sugargoo táblázatkezelő útmutató: Linkek keresése, méretek ellenőrzése és vásárlás",
+      "description": "Használj Sugargoo táblázatot terméklinkek kereséséhez, árak rendezéséhez, ruhaméretek összehasonlításához és saját raktárad minőségellenőrzéséhez a szállítás előtt.",
       "keyword": "Sugargoo terméktáblázat",
       "category": "getting-started",
       "intro": [
@@ -465,6 +468,19 @@
             "Ellenőrizze: megfelel az eredeti lista, opciók és aktuális rendelési ár.",
             "Rendelés: használja a hivatalos vásárlási folyamat egy támogatható tétel.",
             "Felülvizsgálat: vizsgálja meg a saját raktár QC előtt egy csomagot."
+          ]
+        },
+        {
+          "id": "spreadsheet-budget-shortlist",
+          "title": "Készíts egy szűkített listát az ár és a méret alapján",
+          "paragraphs": [
+            "Használd az ár szerint rendezett katalógust, ha van termékköltségvetésed, majd szűkítsd kategória vagy keresési kifejezés szerint. Ellenőrizd a kiválasztott opciót a vásárlási oldalon: a legalacsonyabb megjelenített ár más mérethez, színhez vagy mennyiséghez tartozhat. A termék árát és a szállítási költségvetést külön döntésként tartsd meg.",
+            "Ruházat esetén mentsd el az eladói táblázatot a pontos listalinkkel, és hasonlítsd össze egy hasonló ruhadarabbal, amivel rendelkezel. Jelöljön meg minden jelöltet egy következő művelettel, például az ujjhossz ellenőrzésével vagy a mellékelt mennyiség megerősítésével. Ezáltal a katalógus hasznos vásárlási ellenőrzőlistává válik ahelyett, hogy egyre növekvő, ellenőrizetlen linkek gyűjteményévé válna."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/articles/sugargoo-finds-under-20/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -551,7 +567,7 @@
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/spreadsheet/",
         "/category/shoes/"
@@ -658,8 +674,8 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Sugargoo QC-fotók ellenőrzése feladás előtt",
-      "description": "Keresse meg a Sugargoo raktár QC képeket, ellenőrizze a megfelelő elem és méret, kérjen hasznos extra mérések, és megoldja a problémákat a nemzetközi szállítás előtt.",
+      "title": "Sugargoo QC fotók: Hol találom őket és mit kell ellenőrizni",
+      "description": "Keresse meg rendelése Sugargoo QC fotóit, ellenőrizze a helyes változatot és méreteket, és kérjen egyértelmű bizonyítékot a nemzetközi szállítás jóváhagyása előtt.",
       "keyword": "Sugargoo QC-fotók",
       "category": "quality",
       "intro": [
@@ -678,6 +694,18 @@
             "Ellenőrizze, hogy minden kép ugyanahhoz a rendhez és változathoz tartozik.",
             "Kérjen egy alapos képet a feltételezett hibáról, azonosítva a helyét.",
             "A megoldatlan tárgyakat tartsa távol a csomagtól, amíg nem kap választ."
+          ]
+        },
+        {
+          "id": "qc-photo-request",
+          "title": "Alakítson át egy nem egyértelmű fotót pontos kérvényé",
+          "paragraphs": [
+            "Nyissa meg a saját rendeléséhez csatolt fotókat a raktárban vagy a rendelési területen. A katalógus referenciaképei segítenek a böngészésben, de nem bizonyítják a megérkezett cikk állapotát vagy méreteit. Először hasonlítsa össze a cikk azonosítóját, a kiválasztott színt, a méretet és a mennyiséget a rendelési rekorddal.",
+            "A ruházat illeszkedése esetén kérje el a pontos méretet, amely megváltoztathatja a döntését: mellkas szélessége a szalag nullpontjának látható állapotával, testhossz egy megnevezett kiindulóponttól, vagy laza derékrész. Cipők esetében tartsa külön a lábhosszt, a talpbetét hosszát és a méretcímke-átváltásokat. Erősítse meg az elérhető szolgáltatásokat és díjakat, majd hasonlítsa össze az eredményt egy ugyanígy mért referenciával."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-shoe-size-guide/"
           ]
         },
         {
@@ -764,17 +792,17 @@
         "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
-        "/articles/sugargoo-shoe-size-guide/",
-        "/category/shoes/"
+        "/articles/sugargoo-clothing-size-guide/",
+        "/category/hoodies-sweaters/"
       ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo szállítási kalkulátor: tömeg és költségek",
-      "description": "Hasonlítsd össze a csomag tényleges tömegét a térfogattömegével. Használd a kiválasztott útvonal osztóját és díjszámítási szabályát. Az eszköz nem számol szállítási árat.",
+      "title": "Sugargoo Szállítási Kalkulátor: Tényleges vs. Térfogatsúly",
+      "description": "Számítsa ki a csomag súlyát, hasonlítsa össze a tényleges és a térfogat szerinti számlázást, és gyűjtse össze a szükséges adatokat a Sugargoo aktuális szállítási költségbecsléséhez.",
       "keyword": "Sugargoo szállítási kalkulátor",
       "category": "shipping",
       "intro": [
@@ -793,6 +821,18 @@
             "A külső csomagolt méreteket centiméterben kell használni, nem termékméretben.",
             "Váltsd át a grammot kilogrammra: 3000 g egyenlő 3 kg-mal.",
             "Vegyük az osztót és a töltési szabályt az útvonalról, amit fontolgatsz."
+          ]
+        },
+        {
+          "id": "calculator-quote-handoff",
+          "title": "Vegye figyelembe a számítást egy aktuális útvonal-ajánlatban",
+          "paragraphs": [
+            "A fenti kalkulátor a súlyt magyarázza el; nem jeleníti meg az élő szállítási tarifákat. A számítás után nyissa meg a hivatalos becslőt a célállomással, a tartalommal és a csomagolási méretekkel. Használja a kiválasztott útvonal osztóját, a minimális díjat és a kerekítési feltételeket ahelyett, hogy feltételezné, hogy egyetlen képlet írja le az összes szolgáltatást.",
+            "Jegyezze fel az ajánlat végösszegét és annak tartalmát. Hasonlítsa össze az azonos bemenetű útvonalakat, majd frissítse az ajánlatot a csomag módosítása után. Csehországi szállítmányok esetén olvassa el az alábbi linken található aktuális célállomási útmutatót is; egy régi, alacsony értékű importszabály vagy egy másik vevő fizetése nem megbízható becslés a csomagjára vonatkozóan."
+          ],
+          "actions": [
+            "/articles/sugargoo-rehearsal-shipping/",
+            "/articles/sugargoo-shipping-to-czechia/"
           ]
         },
         {
@@ -879,7 +919,7 @@
         "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-rehearsal-shipping/",
         "/articles/sugargoo-shipping-to-usa/"
@@ -888,8 +928,8 @@
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo próbacsomagolás: hogyan működik, és mikor éri meg?",
-      "description": "Ismerje meg, mit csinál a Sugargoo próbahajózása, amikor megéri a díjat, és hogyan kell használni a csomagolt súlyt és a méreteket, mielőtt kiválasztja a szállítási útvonalat.",
+      "title": "Sugargoo próbaszállítás: Lépések, költségek és mikor érdemes használni",
+      "description": "Tudja meg, mikor segít a Sugargoo próbaszállítás, mit kell ellenőrizni fizetés előtt, és hogyan hasonlíthatja össze a becsomagolt eredményt a végső szállítási árajánlattal.",
       "keyword": "Sugargoo próbacsomagolás",
       "category": "shipping",
       "intro": [
@@ -924,6 +964,18 @@
               ]
             ]
           }
+        },
+        {
+          "id": "rehearsal-next-decision",
+          "title": "Használja a próba eredményét a következő döntés meghozatalához",
+          "paragraphs": [
+            "Olvassa el a fiókjában található aktuális szolgáltatási díjat, mielőtt próbát kér. A hasznos eredmény a világosabb csomagolási információk: hasonlítsa össze a tényleges súlyt, a külső méreteket, az útvonal számlázási szabályát és a kiválasztott szolgáltatásokat. A fizetett próba önmagában nem garantálja, hogy a végső szállítási összeg alacsonyabb lesz.",
+            "Ha az eredmény eltér a becsléstől, az útvonalak módosítása előtt állapítsa meg, miért. Nagyobb volt a doboz a vártnál, a védőcsomagolás növelte a súlyt, vagy az útvonal más osztót használ? Hasonlítsa össze az azonos tartalmat és csomagolást a jogosult árajánlatok között. Ha utólag eltávolít egy tételt vagy módosítja a csomagolást, frissítse a végső árajánlathoz használt információkat."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-shipping-to-czechia/"
+          ]
         },
         {
           "id": "identify-the-decision",
@@ -1009,7 +1061,7 @@
         "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-shipping-calculator/",
         "/articles/sugargoo-parcel-consolidation/"
@@ -1376,8 +1428,8 @@
     {
       "id": "sugargoo-returns-refunds",
       "slug": "sugargoo-returns-refunds",
-      "title": "Sugargoo visszaküldés és visszatérítés: bizonyítékok, jogosultság és teendők",
-      "description": "Kezeljen hibás terméket vagy módosult rendelést világos bizonyítékkal, feltételes jogosultsági ellenőrzéssel és a jóváhagyást a pénz beérkezésétől elválasztó nyilvántartással.",
+      "title": "Sugargoo visszaküldések és visszatérítések: Minőség-ellenőrzési bizonyítékok és a következő lépések",
+      "description": "Ellenőrizze a rendelés állapotát, dokumentálja a méret- vagy állapotproblémát, és ismerje meg a következő visszaküldési vagy visszatérítési lépést a nemzetközi kiszállítás előtt.",
       "keyword": "Sugargoo visszatérítés",
       "category": "account",
       "intro": [
@@ -1391,6 +1443,18 @@
           "paragraphs": [
             "Támogatás megkeresése előtt állapítsa meg, a rendelés vásárlásra vár-e, már megvették, az eladó feladta, a raktár átvette vagy nemzetközileg elindult. A még be nem fejezett vásárlás lemondása más, mint fizikai áru visszaküldése. A tényleges állapotot és dátumot használja, ne feltételezze, hogy egy gomb megnyomása visszafordította a tranzakciót.",
             "A Sugargoo hivatalos törlési útmutatója fiókon belüli folyamatot ismertet, a visszaküldési útmutató pedig a későbbi visszaküldési és pénzvisszatérítési szakaszokat különíti el. Nyissa meg a megfelelő rendelést, és a rendelkezésre álló hivatalos műveletet használja. Hiányzó opció vagy bizonytalan állapot esetén önálló intézkedés előtt kérdezze meg, mi lehetséges ennél a konkrét rendelésnél."
+          ]
+        },
+        {
+          "id": "return-size-evidence",
+          "title": "Dokumentálja a méretproblémát, mielőtt jogorvoslatot kér",
+          "paragraphs": [
+            "Őrizze meg együtt a kiválasztott változatot, az eladó mérettáblázatát és a rendelés minőség-ellenőrzési fotóit. Magyarázza el, hogy a rossz opció érkezett-e, vagy a helyes címkén eltérnek-e a listától a méretek. Hasonlítsa össze ugyanazokat a mérési pontokat; a lapos szélesség és a kerület önmagában nem jelenthet eltérést.",
+            "Kérdezze meg, hogy milyen visszaküldési vagy cserelehetőségek állnak rendelkezésre az adott rendeléshez, beleértve a határidőket, a belföldi költségeket és a következő szükséges intézkedést. Jegyezze fel a választ és az esetleges külön visszatérítési bejegyzéseket. Ne tekintse a kérelem jóváhagyását annak bizonyítékaként, hogy minden költséget már visszatérítettek, és a lényeges kérdéseket a nemzetközi kiszállítás előtt tisztázza."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-order-status/"
           ]
         },
         {
@@ -1473,7 +1537,11 @@
         "sugargoo-fees-payment"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-18"
+      "updated": "2026-11-09",
+      "actions": [
+        "/articles/sugargoo-qc-photos/",
+        "/articles/sugargoo-order-status/"
+      ]
     },
     {
       "id": "weidian-taobao-links-sugargoo",
@@ -2304,6 +2372,10 @@
           "paragraphs": [
             "Nyissa meg az eredeti termék oldalt, és mentse el a méret chart tartozik a modell. Ellenőrizze, hogy annak mérései leírják-e a lábfejet, a talpbélést vagy a cipő külső részét. Azt is ellenőrizze, hogy a méretezési rendszer férfiaknak, nőknek vagy gyermekeknek van-e. Egy másik modellből származó táblázat hamis egyezést hozhat létre, még akkor is, ha a méretcímkék ugyanúgy néznek ki.",
             "Ha a táblázat nem világos, kérdezze meg az eladót vagy ügynököt, hogy mit jelent minden oszlop rendelés előtt. Ne adjon hozzá szabványos juttatást minden grafikonhoz: az eladó már felépítette a kedvezményt az ajánlásába. A választott fit, zoknik és a cipő alakja is számít."
+          ],
+          "actions": [
+            "/category/shoes/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -2409,6 +2481,443 @@
       "actions": [
         "/category/shoes/",
         "/articles/sugargoo-qc-photos/"
+      ]
+    },
+    {
+      "id": "sugargoo-clothing-size-guide",
+      "slug": "sugargoo-clothing-size-guide",
+      "title": "Sugargoo Ruházat Mérettáblázat: Méretek és Minőségellenőrzések",
+      "description": "Válassz ruhaméreteket az eladó méretei alapján, hasonlítsd össze a saját ruhadarabjaidat, és kérj hasznos Sugargoo minőségellenőrzési fotókat a nemzetközi szállítás előtt.",
+      "keyword": "sugargoo clothing size guide",
+      "category": "quality",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Kezdd egy rád illő ruhadarab méreteivel, majd hasonlítsd össze azokat az eladó pontos mérettáblázatával. Egy ismerős méretbetű nem elég: egy közepes kapucnis pulóver és egy közepes méretű jersey nagyon eltérő szélességű, hosszúságú és szabású lehet. Ez a Sugargoo ruhaméret-útmutató ezeket a különbségeket egy praktikus rendelési ellenőrzőlistává alakítja.",
+        "Használd a listázási fotókat a stílus kiválasztásához, a mérettáblázatot a változatok kiválasztásához, és a saját raktárad minőségellenőrzését az érkezés ellenőrzéséhez. Ez három különböző típusú bizonyíték. Az alábbi összehasonlító példák egy módszert illusztrálnak; nem a katalógusban jelenleg kínált termékek méretei."
+      ],
+      "sections": [
+        {
+          "id": "measure-reference",
+          "title": "Mérj le egy referencia ruhadarabot böngészés előtt",
+          "paragraphs": [
+            "Válassz valami olyasmit, amit tényleg szeretsz hordani ugyanabban a kategóriában. Egy testhezálló póló nem túl jó referencia egy másik réteg felett viselt téli kapucnis pulóverhez. Fektesd a ruhadarabot sima felületre, simítsd el a látható redőket anélkül, hogy megnyújtaná az anyagot, és készíts egy tiszta fényképet minden mérésről. Figyeld meg, hogy kimosták-e már, és hogy nyúlik-e az anyag.",
+            "Jegyezd fel a mérési pontokat és a számot is. Egy egyszerű felsőhöz mérd egyenesen a mellkason át a karöltők alatt, majd mérd meg a testhosszt egy egyértelműen azonosítható vállponttól az aljáig. Ugyanezeket a végpontokat használd az eladói mérettáblázat olvasásakor. Egy ívelt varrás, egy leengedett váll vagy egyenetlen alj két látszólag hasonló hosszúságmérés összehasonlíthatatlanná teheti.",
+            "Tartsd kéznél ezt a kis referencialapot böngészés közben. Ha a kívánt méretet normálról túlméretezettre változtatod, változtasd meg a referencia ruhadarabot is. Ha minden mérethez véletlenszerűen hozzáadsz centimétereket, az túl hosszú ujjakat eredményezhet anélkül, hogy biztosítanád a kívánt extra mellkasteret."
+          ],
+          "actions": [
+            "/category/t-shirts/",
+            "/category/hoodies-sweaters/"
+          ]
+        },
+        {
+          "id": "read-size-chart",
+          "title": "Olvasd el az eladói mérettáblázatot a méretek összekeverése nélkül",
+          "paragraphs": [
+            "Először állapítsd meg, hogy a táblázat egy személyt vagy a kész ruhadarabot ír-e le. A test mellkaskerülete nem egyezik meg a ruhadarab mellkasszélességével. Hasonlóképpen, egy ruhadarab kerületét mutató táblázat nem hasonlítható össze közvetlenül egyetlen ruhadarabbal. Ha egy ruhadarab szélességét megduplázzuk, az eredmény csak egy egyszerű kerületbecslés; nem írja le a ruhadarab formáját, rugalmasságát vagy azt, hogy hogyan fog állni.",
+            "Ellenőrizze a mértékegységeket, a pontos termékopciót és az eladó által feltüntetett mérési tűréshatárokat. Ne vigyen át táblázatot egy vizuálisan hasonló listából. A különböző tételek vagy vágások eltérő specifikációkat használhatnak. Ha a táblázat egy kép, nagyítson rá és olvassa el az oszlopfejléceket a fordítás előtt; egy mérési ábra nélküli lefordított címke továbbra is kétértelmű lehet.",
+            "A gyakori címkék közé tartozik a mellkas vagy mellkas, váll, ruhahossz, ujjhossz, derék, csípő, derékmagasság és nadrághossz. Írd a jelentést a mentett méreteid mellé. Ha az ábra hiányzik, és két értelmezés eltérő méretekhez vezetne, kérj pontosítást fizetés előtt. A találgatás drágábbá válik, miután a rendelés eléri a nemzetközi tranzitot."
+          ]
+        },
+        {
+          "id": "fit-example",
+          "title": "Műszaki összehasonlítás: szélesség és hosszúság együtt",
+          "paragraphs": [
+            "Vegyünk egy referencia pólót, amelynek mellkasbősége 54 cm, hossza pedig 70 cm. Tegyük fel, hogy az eladó méretei között szerepel egy méret 52 cm és 68 cm, valamint egy másik 56 cm és 72 cm, ugyanazon mérési pontok használatával. Az első méret keskenyebb és rövidebb, mint a referencia méret; a második szélesebb és hosszabb. Egyik sem automatikusan helyes csak azért, mert a hozzá tartozó méret megegyezik a szokásos méretválasztásoddal.",
+            "Most döntsd el, melyik különbség számít számodra. Ha a méret már eleve rövidnek tűnik, a rövidebb változat fokozott figyelmet érdemel. Ha a mellkasbősége közel van a maximálisan kényelmes lazasághoz, a szélesebb változat esetleg nem vonzó. Mielőtt bármelyiket választanál, hasonlítsd össze a váll- és ujjbőséget. Ez egy több méretre vonatkozó döntés, nem pedig egy szabály arra, hogy mindig egyel nagyobb méretet válassz.",
+            "Hagyd láthatóan a feloldatlan eltéréseket a jegyzeteidben. Például írd be, hogy „mellbőség elfogadható, ujjbőség hiányzik” ahelyett, hogy az egész ruhadarabot jóváhagyottnak jelölnéd. Ezután kérheted a hiányzó bizonyítékokat anélkül, hogy megismételnéd a már egyértelmű ellenőrzéseket. Ezeket a példaszámokat számtani célokra találták ki, és nem az eladó méretjavaslatait jelentik."
+          ]
+        },
+        {
+          "id": "category-checks",
+          "title": "Válassza ki a ruházati kategóriának megfelelő csekkeket",
+          "paragraphs": [
+            "A kapucnis pulóvereknek helyet kell biztosítaniuk az alatta viselni kívánt rétegnek. Hasonlítsa össze a mellkas szélességét, az ujjhosszát, az alj szélességét és a testhosszát egy hasonló kapucnis pulóverével. A leengedett váll ott változik, ahol az ujjméret kezdődik, ezért hasonlítsa össze a teljes ábrát, ahelyett, hogy a váll szélességét és az ujjhosszát független illeszkedési garanciaként kezelné.",
+            "Nadrágok és rövidnadrágok esetében különböztesse meg a laza derékrészt a nyújtott mérettől. Hasonlítsa össze a derék, a csípő, az elülső szárhossz, a belső varrás és a szárnyílás méretét, amikor ezek a részletek befolyásolják az illeszkedést. A derékbőség önmagában nem mutatja meg, hogy a comb kényelmes lesz-e. Mezek esetében ellenőrizze a tervezett szabást és hosszúságot, valamint a mellkas szélességét; a sportszabás eltérhet egy lezser pólóétól.",
+            "A dzsekik további kérdéseket vetnek fel a rétegezéssel és a mozgással kapcsolatban. Egy fénykép nem tudja bemutatni, hogy milyen kényelmesen tudja felemelni a karját, vagy összecsukni a dzsekit egy pulóver fölé. Használjon egy hasonló referenciadzsekit, ellenőrizze a megadott anyagokat, és a hiányzó információkat bizonytalanságként kezelje, ahelyett, hogy feltételezné, hogy minden azonos mérettel ellátott darab egy univerzális mérettáblázatot követ."
+          ],
+          "table": {
+            "headers": [
+              "Ruházattípus",
+              "Hasznos összehasonlítás",
+              "Gyakori hiba"
+            ],
+            "rows": [
+              [
+                "Pólók és mezek",
+                "Mellszélesség, testhossz és ujjak",
+                "Csak magasság és súly alapján történő választás"
+              ],
+              [
+                "Kapucnis pulóverek és dzsekik",
+                "Rétegezési lehetőség, ujjak és szegély",
+                "Engedett és normál vállú méretek keverése"
+              ],
+              [
+                "Nadrágok és rövidnadrágok",
+                "Derék, csípő, derékmagasság és belső szárhossz",
+                "Feszített és laza derékpántok összehasonlítása"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "request-clothing-qc",
+          "title": "Kérjen minőségellenőrzési fotókat, amelyek választ adhatnak az illeszkedési kérdésére",
+          "paragraphs": [
+            "A Sugargoo minőségellenőrzési útmutatója leírja a beérkezett termék ellenőrzését és a további bizonyítékok kérését. Ellenőrizze a saját rendeléséhez elérhető szolgáltatásokat, beleértve az esetleges díjakat is, mielőtt további fényképeket kérne. Kérjen látható végpontokkal rendelkező konkrét méretet ahelyett, hogy azt kérdezné, hogy a termék „mérethű-e”. A személyzet nem ismerheti meg az Ön személyes illeszkedési preferenciáját ebből a kifejezésből.",
+            "Hasznos kérés: fektesse le a ruhadarabot laposan, nyújtás nélkül, mutassa meg a teljes szalagot az egyik mellkasszéltől a másikig, közvetlenül a karöltők alatt, és külön fényképen tüntesse fel a méretcímkét. A hossz esetében nevezze meg a referencia ruhadarabon használt kiindulási pontot. Nadrágok esetében adja meg, hogy lazán vagy feszesen szeretné-e a derékpántot.",
+            "Vizsgálja meg magát a képet, mielőtt megbízna a számban. A nullpontnak láthatónak kell lennie, a szalagnak a kívánt vonalat kell követnie, és a hajtások nem takarhatják el a szegélyt. Ha a perspektíva vagy a meggörbült szalag miatt a kis eltérés lehetetlenné teszi a megítélést, kérjen egy korrigált képet. Több, ugyanabból a nem egyértelmű szögből készült fénykép nem teszi a mérést megbízhatóbbá."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "resolve-sizing-issues",
+          "title": "Oldja fel az eltérést, amíg a bizonyíték hasznos",
+          "paragraphs": [
+            "Tartsa együtt a kiválasztott opciót, az eladói táblázatot, a rendelési számot és a vonatkozó minőségellenőrzési képeket. Válassza szét a helytelen címkét egy olyan ruhadarabtól, amelyen a helyes címke szerepel, de a méretek nem megfelelőek. Magyarázza el az eltérést ugyanazzal a mérési módszerrel mindkét oldalon. Egy rövid, konkrét összehasonlítás segít az eladónak jobban megérteni a problémát, mint egy általános panasz, miszerint a termék kicsinek tűnik.",
+            "Ne feltételezze, hogy a visszaküldés, csere vagy visszatérítés automatikus. A jogosultság, a határidők, a költségek és a kezelés a megrendeléstől és az eladó feltételeitől függ. Mielőtt nemzetközi csomagba küldené a terméket, kérdezze meg, milyen jogorvoslati lehetőségek állnak rendelkezésre. Ha úgy dönt, hogy megtartja, jegyezze fel, hogy miért elfogadható a fennmaradó eltérés, ahelyett, hogy a megoldatlan problémát a megfelelő illeszkedés bizonyítékaként kezelné.",
+            "Végül, különböztesse meg a látható minőségellenőrzést a kopási teszttől. A raktári fotók nem tudják bizonyítani a hosszú távú tartósságot, a mosás utáni zsugorodást vagy a személyes kényelmet. Olvassa el a kezelési információkat, ahol elérhetők, és őrizze meg a rendelési nyilvántartást. A következő vásárláshoz frissítse a referencia méreteit egy olyan ruhadarab alapján, amelyet ténylegesen kapott és viselt; Ezáltal a jövőbeni összehasonlítások hasznosabbak lesznek anélkül, hogy a méretek széles skáláján alapuló sztereotípiákra hagyatkoznánk."
+          ],
+          "actions": [
+            "/articles/sugargoo-returns-refunds/"
+          ]
+        }
+      ],
+      "checklist": [
+        "Használjon hasonló ruhadarabot, amely illik a kívánt stílushoz.",
+        "Párosítsa a mértékegységeket, a végpontokat és a lapos szélességet a kerülettel.",
+        "Fizetés előtt ellenőrizze a pontos változatot és az eladói táblázatot.",
+        "Kérjen konkrét raktári méreteket a fel nem oldott méretekhez.",
+        "Anyagbeli eltérések feloldása nemzetközi kiszállítás előtt."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: Taobao mérettáblázatok olvasása",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: fotók, videók és mérési kérések",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: minőségellenőrzések és azok korlátai",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: visszaküldés és visszatérítés",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shoe-size-guide"
+      ],
+      "actions": [
+        "/category/hoodies-sweaters/",
+        "/category/pants-shorts/"
+      ]
+    },
+    {
+      "id": "sugargoo-finds-under-20",
+      "slug": "sugargoo-finds-under-20",
+      "title": "Sugargoo találatok 20 dollár alatt: Ár, méret és vásárlási ellenőrzések",
+      "description": "Keressen 20 dollár alatti Sugargoo termékeket ár szerint rendezett terméklinkek segítségével. Ellenőrizze a pontos változatot, méreteket, minőségellenőrzést és szállítási költségeket, mielőtt eldönti, mi a megfizethető.",
+      "keyword": "sugargoo finds under 20",
+      "category": "getting-started",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Ebben az útmutatóban a „20 dollár alatt” azt jelenti, hogy a megjelenített termék ára 20 USD alatt van, további költségek nélkül. Ez nem azt jelenti, hogy a csomag kézbesítése kevesebb, mint 20 dollárba fog kerülni. Használja az ár szerint rendezett élő katalógust egy rövid lista létrehozásához, majd ellenőrizze a pontos változatot és az aktuális árat a vásárlási oldalon.",
+        "Ez egy kiválasztási módszer, nem pedig a feltételezhetően tesztelt termékek rögzített listája. A katalógus árai és elérhetősége változhat. A példák elmagyarázzák, hogyan hasonlíthatók össze a költségek és a bizonytalanság; nem élő ajánlatok, vélemények vagy ígéretek arra vonatkozóan, hogy egy adott eladó elfogad egy megrendelést."
+      ],
+      "sections": [
+        {
+          "id": "find-budget-links",
+          "title": "Kezdje az ár szerint rendezett katalógussal",
+          "paragraphs": [
+            "Nyissa meg a katalógust az alábbi alacsony árú rendezési link segítségével. Keresse meg a szükséges terméktípust, vagy szűkítse a listát egy releváns kategóriára. Egy olcsó kiegészítő nem hasznos helyettesítője a megvásárolni kívánt kapucnis pulóvernek. Kezdje a tervezett felhasználással, majd hasonlítsa össze az árakat az adott csoporton belül, hogy a rövid lista értelmes alternatívákat tartalmazzon.",
+            "Nyissa meg az egyes jelöltek termékoldalát, és kövesse az elérhető vásárlási linket. Erősítse meg a címet, a termékazonosítót, a kiválasztott színt, méretet és mennyiséget. Egyes listák a legalacsonyabb opciós árat jelenítik meg, annak ellenére, hogy a szükséges változat drágább. A 20 dollár alatti árat mutató kártya csak kiindulópont, amíg a pontos opciót nem ellenőrizték.",
+            "Mentse el a három vagy négy lehetséges jelöltet ahelyett, hogy tucatnyi linket gyűjtene. Jegyezze fel az okot, amiért mindegyik működhet, és a kérdést, amely kizárhatja. Például: megfelelő méretek, de hiányoznak az anyag részletei. Egy rövid, explicit kérdésekkel teli lista könnyebben ellenőrizhető, mint egy hosszú, csak vonzó képek által rendezett lista."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/category/accessories/?sort=price"
+          ]
+        },
+        {
+          "id": "under-20-budget",
+          "title": "Válaszd szét a termékre vonatkozó keretet a kiszállított költségkerettől.",
+          "paragraphs": [
+            "Írj le két korlátot: a maximális tételárat és a maximális teljes összeget, amelyet hajlandó vagy elkölteni. Az első segít a böngészésben; a második eldönti, hogy van-e értelme a vásárlásnak. Vegyél figyelembe belföldi szállítást, ahol felszámításra kerül, a fizetési vagy szolgáltatási költségeket, amelyek a pénztárnál megjelennek, az opcionális szolgáltatásokat, a nemzetközi szállítást és a csomagra vonatkozó célállomási díjakat.",
+            "Vegyünk egy tisztán szemléltető összehasonlítást. Az A tétel ára 12 dollár, a B tételé pedig 17 dollár. Ha az A tételhez további 9 dollár járulékos költség, míg a B tételhez további 3 dollár szükséges ugyanazon összehasonlítási módszer szerint, akkor az összegek 21 és 20 dollár. Ezek az adatok nem Sugargoo árak. Megmutatják, hogy az alacsonyabb tételár miért nem feltétlenül eredményezi az alacsonyabb végösszeget.",
+            "Ha több tétel osztozik egy csomagon, ne adj meg önkényes egyenlő megosztást az egyes termékek szállítási árának feltüntetésével. Tartsd láthatóan a csomag végösszegét, és tüntesd fel, hogyan osztottad fel a megosztott összeget. Vásárlási döntéshez hasonlítsa össze a csomag árajánlatát a plusz tétellel és anélkül, miután rendelkezésre állnak a megfelelő súly és méretek."
+          ],
+          "table": {
+            "headers": [
+              "Költségvetési sor",
+              "Mit kell ellenőrizni",
+              "Mikor kell frissíteni"
+            ],
+            "rows": [
+              [
+                "Termék és a kiválasztott opció",
+                "Pontos méret, szín, mennyiség és pénznem",
+                "Rendelés leadása előtt"
+              ],
+              [
+                "Belföldi és opcionális szolgáltatások",
+                "A megrendeléshez ténylegesen feltüntetett díjak",
+                "Fizetős szolgáltatások kiválasztása előtt"
+              ],
+              [
+                "Nemzetközi csomag- és célállomásköltségek",
+                "Csomagolt méretek és aktuális útvonalfeltételek",
+                "A szállítás kifizetése előtt"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-cheap-clothing",
+          "title": "Méretek használata olcsó ruházat összehasonlítására",
+          "paragraphs": [
+            "Az alacsony ár nem teszi a nem megfelelő méretet alkuvá. Pólók, kapucnis pulóverek és mezek esetén hasonlítsa össze az eladó méreteit egy hasonló ruhadarabbal, amely már rendelkezik. Figyelje meg, hogy egy szám lapos szélességet vagy kerületet jelent-e. Kerüld el, hogy nagyobb betűméretet válassz pusztán azért, mert valaki más nagyobb méretet javasol anélkül, hogy azonosítanád az eladót és a pontos listát.",
+            "Nadrágok és rövidnadrágok esetében ne csak a derékbőséget ellenőrizd. A derékbőség, a csípőbőség, a belső varrás és a szárbőség megváltoztathatja az illeszkedést, még akkor is, ha a névleges derékbőség helyesnek tűnik. Ha egy lista csak egy méretbetűt ad meg, és nem tartalmaz hasznos méreteket, akkor ezt a hiányzó információt vedd figyelembe a döntés során. Előfordulhat, hogy egy valamivel drágább jelöltet részesítesz előnyben, amely világosabb bizonyítékokkal rendelkezik.",
+            "Kiegészítők esetén ellenőrizze a méreteket és a vásárlás tartalmát. Egy fénykép több darabot is mutathat, míg a kiválasztott opció csak egyet tartalmaz. Olvassa el az opció leírását és a rendelési összefoglalót. Az összehasonlítás célja, hogy megértse a kapott terméket, nem pedig az, hogy a referenciaképen szereplő tárgyak számából következtessen az értékre."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/category/t-shirts/?sort=price"
+          ]
+        },
+        {
+          "id": "cheap-qc-evidence",
+          "title": "Döntse el, hogy melyik minőségellenőrzési bizonyíték változtathatja meg a választását.",
+          "paragraphs": [
+            "Rendelés előtt sorolja fel a két vagy három legfontosabb tényt. Egy ruhadarabhoz egyértelmű méretcímke és mellkasbőség szükséges; egy kiegészítőhöz méretellenőrzés és a rögzítésének nézete. Amikor a rendelés megérkezik a raktárba, hasonlítsa össze a beérkezett terméket a kiválasztott változattal és a mentett listainformációkkal.",
+            "A Sugargoo közzétett minőségellenőrzési útmutatója hasznos annak megértéséhez, hogy mit mutathatnak a raktári ellenőrzések. Mielőtt további bizonyítékokért fizetne, ellenőrizze a rendeléséhez elérhető szolgáltatási lehetőségeket. Kérjen közeli képet vagy mérést, amely megválaszol egy konkrét, megoldatlan kérdést. A jobb minőségű képek iránti általános kérés ismétlése késleltetheti a folyamatot anélkül, hogy javítaná a döntést.",
+            "Az alacsony ár és a tiszta fénykép nem garantálja a hitelességet, a tartósságot vagy a biztonságot. Kerülje a nem tesztelt termékek legjobbnak, ellenőrzöttnek vagy garantáltnak állítását pusztán azért, mert létezik egy termékoldal. Ha a tervezett felhasználás olyan teljesítménytől függ, amelyet a fotók nem tudnak igazolni, keressen megfelelő termékdokumentációt, vagy válasszon olyan alternatívát, amelyhez bizonyítékokat is tud értékelni."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "small-haul-costs",
+          "title": "Ellenőrizze egy további olcsóbb elem hozzáadásának költségeit",
+          "paragraphs": [
+            "Egy olcsó plusz tárgy továbbra is helyet foglal és súlyt is ad. Mielőtt hozzáadná a csomaghoz, vegye figyelembe a tárgyat és a csomagolását együtt. Egy terjedelmes, olcsó tárgy megváltoztathatja a díjköteles súlyt, vagy a csomagot a szállítási határon túlra sodorhatja. A csomagolás eltávolítása befolyásolhatja a védelmet, ezért ne feltételezze, hogy minden térfogatcsökkentés ésszerű megtakarítást jelent.",
+            "Használd a súlykalkulátort a számtan megértéséhez, majd a hivatalos útvonal-becslést használd az árak meghatározásához. Az oldalon található kalkulátor a tényleges és a térfogatsúlyt magyarázza el; nem élő tarifás szolgáltatás. Add meg az összehasonlított útvonal osztóját és számlázási szabályát ahelyett, hogy egy közös osztót univerzálisként kezelnél.",
+            "Ha a csomagolási bizonytalanság elég nagy ahhoz, hogy megváltoztassa a döntést, tekintse át a rendelkezésre álló próbaszolgáltatást és annak költségét. Kérje meg, miután eldöntötte, mely tételeket kívánja megtartani. A próba javíthatja az árajánlatban használt csomagolási információkat, de a fizetése nem garantál alacsonyabb végösszeget. Hasonlítsa össze a megszerzett információkat a költséggel és a fennmaradó bizonytalansággal."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "budget-decision",
+          "title": "Megtart, kivizsgál vagy kihagy: egy egyszerű szabály a rövid listáról",
+          "paragraphs": [
+            "Csak akkor jelöljön meg egy jelöltet „megtartani”, ha a pontos opciója, méretei és a várható végösszeg megfelel az Ön igényeinek. Jelölje „kivizsgálni”, ha egyetlen válasz megváltoztathatja a döntést. Jelölje „kihagyni”, ha a hiányzó bizonyítékok, a nem megfelelő méretek vagy a teljes költség miatt nem megfelelő. Ez a szabály megakadályozza, hogy az alacsony címár vezesse át a döntéshozatalt.",
+            "Ha egy megvásárolt tétellel probléma van, azonnal dokumentálja azt, és ellenőrizze az adott megrendelés visszaküldési vagy cserelehetőségeit. Egy olcsó tétel visszaküldése továbbra is drága lehet a vételárához képest. Hasonlítsa össze a megadott jogorvoslatokat és költségeket, mielőtt folytatná; ne feltételezze, hogy a jövőbeni visszatérítés megszünteti a nem egyértelmű vásárlás kockázatát.",
+            "A mentett linkeket a pénztárnál tekintheted meg újra, ahelyett, hogy feltételeznéd, hogy egy ár határozatlan ideig érvényes. Őrizd meg a rendelési bizonylatot, és frissítsd a rövidített listát, amikor az eladó módosítja a lehetőségeket vagy a készletet. A költségvetési útmutató hasznos eredménye egy olyan vásárlás, amely megfelel az igényeidnek és a teljes keretednek, még akkor is, ha ez kevesebb termék vásárlását vagy egy vonzó, alacsony árú link kihasználatlanul hagyását jelenti.",
+            "A fizetés előtt közvetlenül tekintse át újra a kiválasztott termékeket. Ha a kiválasztott változat megváltozik, ismételje meg az ár- és méretellenőrzést, ahelyett, hogy a korábbi döntést egy másik termékre alkalmazná. Egy hasznos költségvetési limitnek kell megmaradnia a végső rendelési összesítésben."
+          ]
+        }
+      ],
+      "checklist": [
+        "A 20 dollár alatti ajánlatokat termékár-szűrőként kezeld, ne pedig teljesített árígéretként.",
+        "A pontos változatot és mennyiséget a vásárlási oldalon ellenőrizheted.",
+        "Hasonlítsa össze a méréseket egy megfelelő referenciaanyaggal.",
+        "Tervezd meg a teljes csomag költségét és az alkalmazandó célállomás költségeit.",
+        "Használj aktuális árakat és bizonyítékokat egy régi rangsorolt lista helyett."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: a rendelési folyamat",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: Taobao mérettáblázatok olvasása",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: minőségellenőrzések és azok korlátai",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: nemzetközi szállítás becslése",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: szállítás előtti csomag szimuláció",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: visszaküldés és visszatérítés",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "sugargoo-clothing-size-guide"
+      ],
+      "actions": [
+        "/spreadsheet/?sort=price",
+        "/category/hoodies-sweaters/?sort=price"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-czechia",
+      "slug": "sugargoo-shipping-to-czechia",
+      "title": "Sugargoo szállítás Csehországba: költségek, útvonalak és nyomon követés",
+      "description": "Tervezd meg a Sugargoo szállítását Csehországba súlyellenőrzésekkel, aktuális útvonalajánlatokkal, vámkezelési forrásokkal és egy praktikus követési ellenőrzőlistával.",
+      "keyword": "sugargoo shipping to czech republic",
+      "category": "shipping",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "A Sugargoo Csehországba történő szállításának becsléséhez válassza ki Csehországot célállomásként az aktuális hivatalos becslőben, és használja a saját csomagja tartalmát, súlyát és méreteit. Nincs egyetlen szállítási ár vagy kézbesítési idő, amely minden cseh megrendelésre vonatkozik.",
+        "Ez az útmutató segít a megfelelő adatok összegyűjtésében, az elérhető útvonalak összehasonlításában és a szükséges dokumentumok megőrzésében a feladás után. Az útvonalak elérhetősége, a díjak és az importszabályok változhatnak. Az alábbi példák az összehasonlítási módszereket ismertetik; ezek nem aktuális fuvarozói árajánlatok, és nem jelentenek ígéretet arra, hogy egy megnevezett szolgáltatás elérhető az Ön számára."
+      ],
+      "sections": [
+        {
+          "id": "czech-start",
+          "title": "Készítse elő a célállomás és a csomag adatait",
+          "paragraphs": [
+            "Használja a címzett teljes szállítási címét és a hozzá tartozó irányítószámot. Ellenőrizze a házszámot vagy épületszámot, a lakás adatait és a fuvarozó által használható telefonszámot. A címzett nevét ügyeljen arra, hogy összhangban legyen a kézbesítéshez használt nyilvántartásokkal és a kért vámkezelési dokumentumokkal. A mentett címet minden csomag beküldése előtt érdemes ellenőrizni.",
+            "Sorolja fel a kívánt tartalmat az útvonalak összehasonlítása előtt. A termékkategória, az anyagok, az elemek, a folyadékok és az egyéb kezelési követelmények befolyásolhatják a jogosultságot. Olvassa el a kiválasztott szolgáltatásra vonatkozó korlátozásokat, és fizetés előtt kérdezzen rá a nem egyértelmű tételekre. Az általános összehasonlításban megjelenő útvonal nem erősíti meg, hogy elfogadja a csomag adott tartalmát.",
+            "Tartsa együtt az egyes tételek rendelési azonosítóját, leírását, mennyiségét és a tényleges vásárlási adatait. Ez megkönnyíti a későbbi kérések megválaszolását anélkül, hogy a rendelési előzményeket képernyőképekből kellene újraépíteni. Használjon pontos információkat a folyamat során. Ne módosítsa a leírásokat vagy az értékeket pusztán azért, hogy egy útvonal olcsóbbnak tűnjön, vagy hogy egy másik vevő nyilatkozatát utánozza."
+          ]
+        },
+        {
+          "id": "czech-weight",
+          "title": "Értse meg az útvonal által felszámított súlyt.",
+          "paragraphs": [
+            "A termékek súlyának összege nem feltétlenül a végső csomagolási súly. A külső csomagolás és a védőanyagok súlyt adnak hozzá, míg a kész csomag mérete külön is számíthat. Kérje meg a csomagolási méreteket, amikor ezekre szükség van az útvonal kiszámításához. Használja következetesen a centimétert és a kilogrammot, hogy az egységek eltérése ne torzítsa az összehasonlítást.",
+            "Egy 40 × 30 × 25 cm-es szemléltető csomag térfogata 30 000 köbcentiméter. Ha egy hipotetikus útvonalon a 6000-es osztót használnánk, a térfogatsúlya 5 kg lenne. Ha a tényleges becsomagolt súly 3 kg, és az útvonal a magasabb értéket számítja fel, a kezdősúly 5 kg lenne a kerekítési szabályok előtt. Ezek példaadatok, nem egy cseh útvonal díjszabása.",
+            "Egy másik útvonal más osztót, csak a tényleges súlyt, minimális díjakat vagy méretkorlátokat használhat. Olvasd el a megadott szabályt, mielőtt összehasonlítanád a megjelenített árakat. A helyszíni súlykalkulátor segíthet a számításban, de az aktuális Sugargoo árajánlat határozza meg a megrendelésed árat és az elérhető szolgáltatásokat."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/"
+          ]
+        },
+        {
+          "id": "czech-route-comparison",
+          "title": "Hasonlítsa össze a teljes útvonalajánlatot",
+          "paragraphs": [
+            "Ugyanazt a csomagot futtassa végig minden jogosult útvonalon, hogy az összehasonlítás egyező bemeneteket használjon. Jegyezze fel az ajánlott díjat, a súlyszabályt, a méretkorlátokat, a megadott időbecslést, a követési lefedettséget és a benne foglalt szolgáltatásokat. Jegyezze fel az összehasonlítás dátumát. Egy régi rendelésről készült képernyőkép hasznos előzmény, de nem bizonyítja, hogy ugyanaz az ajánlat továbbra is elérhető.",
+            "Ellenőrizze, hogy az árajánlat hogyan írja le a célállomás adóit, a vámkezelést és a kézbesítést. Az adózással kapcsolatos kifejezést tartalmazó útvonalnév nem elegendő minden lehetséges díj vagy kötelezettség magyarázatához. Olvassa el az aktuális szolgáltatás részleteit, és kérdezze meg, hogy mely összegek tartoznak a fizetésbe. Őrizze meg ezt a választ az árajánlattal együtt, hogy később meg tudja különböztetni a fuvarozási díjat egy másik díjtól.",
+            "Válasszon a prioritásai szerint. Egy alacsonyabb, kevésbé kiszámítható időzítésű árajánlat rugalmas vásárláshoz megfelelő lehet; egy sürgős szállításhoz reális ráfordításra van szükség minden szakaszra. Kerülje a terv felépítését a leggyorsabb, eseti kézbesítés köré. Gondolja át a gyakorlati következményeket, ha a csomag a becslésnél később érkezik meg, mielőtt eldönti, hogy egy kis megtakarítás megéri-e."
+          ],
+          "table": {
+            "headers": [
+              "Összehasonlító mező",
+              "Minden jogosult útvonal rekordja",
+              "Miért fontos?"
+            ],
+            "rows": [
+              [
+                "Ár és számlázási alap",
+                "Árajánlat szerinti teljes, tényleges vagy térfogati szabály, kerekítés",
+                "Ugyanaz a csomag eltérően is felszámítható"
+              ],
+              [
+                "Szolgáltatási kör",
+                "Nyomon követés, kézbesítési terjedelem és a benne foglalt díjak",
+                "Az útvonal neve nem teljes szolgáltatásleírás"
+              ],
+              [
+                "Korlátok és időzítés",
+                "Tartalomkorlátozások, méretek és időbecslés",
+                "A jogosultság és az időzítés csomagfüggő"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "czech-customs",
+          "title": "Használja a jelenlegi cseh vámirányelveket",
+          "paragraphs": [
+            "Ellenőrizze az alább linkelt cseh vámforrásokat a feladás kifizetése előtt. 2026-os iránymutatásuk megváltoztatta az alacsony értékű e-kereskedelmi importok kezelését. Ne támaszkodjon egy régebbi állításra, miszerint minden 150 euró alatti vásárlás vámmentes. A vám, az áfa, a kezelés és a nyilatkozattételi folyamat külön kérdések; kezelésük a jelenlegi szabályoktól és a szállítmánytól függ.",
+            "Kérdezze meg a kiválasztott szolgáltatást, hogyan kezelik a vámkezelést, és milyen nyilvántartásokra van szüksége. Őrizze meg a számlát vagy a megrendelési nyilvántartást, a fizetési bizonyítékokat és a rendelkezésre álló áruk pontos leírását. Ha valaki dokumentumot vagy fizetést kér, az információk elküldése előtt ellenőrizze a kérést a fuvarozón vagy a vámszolgálaton keresztül hivatalos csatornán keresztül.",
+            "Ne feltételezze, hogy egy korábbi csomag díjai határozzák meg a következő csomag díjait. Egy eltérő tartalomlista, a bejelentett kategória, a beléptetési folyamat vagy a szolgáltatási megállapodás megváltoztathatja a számítást. Ez az útmutató nem számít ki kötelező érvényű vámértékelést. Használja az aktuális hivatalos utasításokat és a szolgáltatás írásos magyarázatát a tényleges csomagra vonatkozóan, különösen akkor, ha az árajánlat meghatározatlan díjat hagy."
+          ]
+        },
+        {
+          "id": "czech-before-dispatch",
+          "title": "Fejezzen be minőségellenőrzési és csomagolási döntéseket a feladás előtt",
+          "paragraphs": [
+            "Ellenőrizzen minden egyes tételt, amíg még elérhető raktári felülvizsgálatra. Párosítsa a kapott opciót és mennyiséget a rendelésével, ellenőrizze a vonatkozó minőségellenőrzési fotókat, és oldja meg a fontos méret- vagy állapotkérdéseket. Egy megoldatlan tétel csomagba való egyesítése megnehezítheti a későbbi orvoslást. A szállítási árajánlat nem helyettesíti a döntést arról, hogy megtartja-e az árut.",
+            "A csomagolást a tartalom alapján válassza ki, ne csak a kívánt súly alapján. A törékeny tételek védelmet igényelhetnek, míg a felesleges külső dobozok növelhetik a térfogatot. Kérdezze meg, hogy mit távolít el a javasolt csomagolási módosítás, és hogy befolyásolja-e a tétel védelmét. Hasonlítsa össze a kapott csomagolási információkat, mielőtt feltételezné, hogy a módosítás pénzt takarít meg.",
+            "Ha van lehetőség a próbára, és a fennmaradó csomagolási bizonytalanság számít, tekintse át annak aktuális díját és terjedelmét, mielőtt kéri. A Sugargoo közzétett útmutatója leírja a kapott csomagolási információk használatát a folytatás előtt. Utána ellenőrizze, hogy a tartalom és a kiválasztott csomagolás továbbra is megfelel-e a tervezett szállítmánynak; A csomag módosítása kevésbé hasznossá teheti a korábbi becslést."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "czech-tracking",
+          "title": "A követést átadási sorozatként kell értelmezni.",
+          "paragraphs": [
+            "Őrizze meg a szolgáltatáshoz megadott csomagazonosítót és követési linket. Különítse el a raktári feldolgozást, a fuvarozói átvételt, a nemzetközi mozgást, a vámkezelést és a helyi kézbesítést. A címkével létrehozott üzenet önmagában nem bizonyítja, hogy a csomag a következő átadást elvégezte. Hasonlítsa össze a legutóbbi eseményt a szolgáltatás megadott folyamatával, ahelyett, hogy minden csendes időszakot ugyanazon problémaként értelmezne.",
+            "Amikor a helyi kézbesítési információk elérhetővé válnak, használja a csomaghoz ténylegesen azonosított fuvarozót. Ne feltételezze, hogy minden cseh szállítmány ugyanahhoz a végső fuvarozóhoz kerül. Ellenőrizze a címzett adatait, a kézbesítési utasításokat és az esetleges átvételi értesítéseket az adott fuvarozó hivatalos csatornáján keresztül. Őrizze meg a vonatkozó üzeneteket a kézbesítés befejezéséig.",
+            "Ha a folyamat kívül esik a kiválasztott szolgáltatásra vonatkozó útmutatáson, vegye fel a kapcsolatot az ügyfélszolgálattal a csomagszámmal, a legutóbbi eseménnyel és dátummal, valamint a konkrét kérdéssel, amelyre választ szeretne kapni. Az első kérdés legyen tömör. A strukturált nyilvántartás segít az ügyfélszolgálatnak a megfelelő szakasz kivizsgálásában, és megakadályozza, hogy a nem kapcsolódó rendelési részletek elfedjék a hiányzó átadást."
+          ],
+          "actions": [
+            "/articles/sugargoo-tracking/"
+          ]
+        },
+        {
+          "id": "czech-final-review",
+          "title": "Tegye a végső fizetési áttekintést megismételhetővé",
+          "paragraphs": [
+            "Fizetés előtt hasonlítsa össze a végső csomagösszesítőt a jegyzeteivel: célállomás, tartalom, csomagolási méretek, útvonal, kiválasztott szolgáltatások és összesen. Ellenőrizze, hogy az árajánlat frissült-e bármilyen tétel vagy csomagolásváltozás után. Ha egy tételsor nem egyértelmű, oldja meg a problémát a beküldés előtt, ahelyett, hogy feltételezné, hogy egy másik összegben szerepel.",
+            "A kézbesítés után jegyezze fel, hogy miért számoltak fel díjat és hogyan haladt a szállítmány, anélkül, hogy egy eredményt garanciaként mutatna be a jövőbeli csomagokra vonatkozóan. Ez hasznos bizonyítékot ad a következő összehasonlításához. Az ismételhető szokás egyszerű: ellenőrizze az árut, idézze a tényleges csomagot, olvassa el a jelenlegi vámirányelveket, és őrizze meg a döntését alátámasztó feljegyzéseket."
+          ]
+        }
+      ],
+      "checklist": [
+        "Válassza ki Csehországot, és ellenőrizze a címzett teljes címét.",
+        "Hasonlítsa össze a jogosult útvonalakat azonos csomagolási méretek és súly használatával.",
+        "Ellenőrizze a jelenlegi cseh vámirányelveket a régebbi mentességek helyett.",
+        "Oldja meg a minőségellenőrzési problémákat, mielőtt a csomag elhagyná a raktárat.",
+        "Kövesse a megadott szállítót a tényleges követési számáért."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: nemzetközi szállítás becslése",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: szállítás előtti csomag szimuláció",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: minőségellenőrzések és azok korlátai",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Cseh Vámhivatal: e-kereskedelem, vám, áfa és vámkezelés",
+          "url": "https://celnisprava.gov.cz/cz/celni-urad-praha-ruzyne/fyzicke-osoby/postovni-zasilky/prijeti/Stranky/mimo-eu.aspx"
+        },
+        {
+          "title": "Cseh Vámhivatal: aktuális e-kereskedelmi közlemények",
+          "url": "https://celnisprava.gov.cz/cz/clo/e-commerce/Stranky/Z%C3%A1silky-e-commerce.aspx"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
       ]
     }
   ]

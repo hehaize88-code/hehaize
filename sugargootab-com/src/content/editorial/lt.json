@@ -1,10 +1,10 @@
 {
   "locale": "lt",
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-09",
   "ui": {
     "articles": "Straipsniai",
     "articleTitle": "Sugargoo pirkimo vadovai",
-    "articleIntro": "Praktiniai \"Sugargoo\" vadovai produktų jungtims, QC nuotraukoms, batų dydžiams ir laivybai. Pasirinkite klausimą, į kurį jums reikia atsakyti prieš perkant ar siunčiant siuntinį.",
+    "articleIntro": "Praktiniai „Sugargoo“ vadovai, kuriuose pateikiamos produktų nuorodos, drabužių ir batų dydžiai, kokybės kontrolės nuotraukos, biudžeto paieškos ir pristatymas konkrečioms šalims. Pasirinkite klausimą, kurį norite išspręsti prieš pirkdami arba siųsdami siuntinį.",
     "faqTitle": "DUK apie Sugargoo",
     "faqIntro": "Aiškūs atsakymai kiekvienam užsakymo etapui, oficialūs platformos taisyklių šaltiniai ir sąžiningai nurodytos šio nepriklausomo katalogo galimybių ribos.",
     "readArticle": "Skaityti vadovą",
@@ -62,7 +62,10 @@
     "billingBase": "Svoris prieš apvalinimą",
     "weightDisclaimer": "Rezultatas rodo svorį prieš apvalinimą ir minimalų apmokestinimą. Taip pat taikomi dydžio apribojimai ir paslaugų mokesčiai. Patikrinkite dabartinį pasiūlymą Sugargoo.",
     "weightError": "Įrašykite teigiamą skaičių kiekviename matavimo lauke.",
-    "officialEstimatorGuide": "Atidaryti oficialų siuntimo skaičiuoklės vadovą"
+    "officialEstimatorGuide": "Atidaryti oficialų siuntimo skaičiuoklės vadovą",
+    "navQc": "Kokybės kontrolės nuotraukos",
+    "navShipping": "Pristatymas",
+    "priceSortedCta": "Naršykite kainas nuo žemiausios iki aukščiausios"
   },
   "groups": {
     "basics": "Pradžia",
@@ -444,8 +447,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Kaip naudoti Sugargoo lentelę: rasti, patikrinti ir užsakyti",
-      "description": "Naudokite \"Sugargoo skaičiuoklę\" rasti produktų nuorodas, patikrinti dydžius ir pardavėjo galimybes, atidaryti teisingą užsakymo puslapį, ir peržiūrėti sandėlį QC prieš pristatymą.",
+      "title": "„Sugargoo“ skaičiuoklės vadovas: raskite nuorodas, patikrinkite dydžius ir pirkite",
+      "description": "Prieš siųsdami naudokite „Sugargoo“ skaičiuoklę, kad rastumėte produktų nuorodas, rūšiuotumėte kainas, palygintumėte drabužių dydžius ir patikrintumėte savo sandėlio kokybės kontrolę.",
       "keyword": "Sugargoo prekių lentelė",
       "category": "getting-started",
       "intro": [
@@ -465,6 +468,19 @@
             "Patikrinti: atitinka pradinį sąrašą, parinktys ir dabartinės užsakymo kaina.",
             "Užsakymas: naudoti oficialų pirkimo srautą reikalavimus atitinkančiam elementui.",
             "Apžvalga: patikrinti savo sandėlį QC prieš priimant sklypą."
+          ]
+        },
+        {
+          "id": "spreadsheet-budget-shortlist",
+          "title": "Sudarykite trumpąjį sąrašą pagal kainą ir dydį",
+          "paragraphs": [
+            "Naudokite pagal kainą rūšiuotą katalogą, kai turite produkto biudžetą, tada susiaurinkite jį pagal kategoriją arba paieškos terminą. Pirkimo puslapyje patikrinkite pasirinktą parinktį: mažiausia rodoma kaina gali priklausyti kitam dydžiui, spalvai ar kiekiui. Produkto kainą ir pristatymo biudžetą laikykite atskirais sprendimais.",
+            "Drabužiams išsaugokite pardavėjo lentelę su tikslia sąrašo nuoroda ir palyginkite ją su panašiu drabužiu, kurį turite. Pažymėkite kiekvieną kandidatą vienu tolesniu veiksmu, pavyzdžiui, patikrinkite rankovės ilgį arba patvirtinkite pridėtą kiekį. Tai paverčia katalogą naudingu pirkimų kontroliniu sąrašu, o ne augančia nepatikrintų nuorodų kolekcija."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/articles/sugargoo-finds-under-20/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -551,7 +567,7 @@
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/spreadsheet/",
         "/category/shoes/"
@@ -658,8 +674,8 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Kaip patikrinti Sugargoo QC nuotraukas prieš siuntimą",
-      "description": "Rasti \"Sugargoo\" sandėlis QC nuotraukas, patikrinti teisingą elementą ir dydį, prašyti naudingų papildomų matavimų ir išspręsti problemas prieš tarptautinę laivybą.",
+      "title": "„Sugargoo QC“ nuotraukos: kur jas rasti ir ką patikrinti",
+      "description": "Suraskite savo užsakymo „Sugargoo QC“ nuotraukas, patikrinkite teisingą variantą ir išmatavimus ir paprašykite aiškių įrodymų prieš patvirtindami tarptautinį siuntimą.",
       "keyword": "Sugargoo kokybės patikros nuotraukos",
       "category": "quality",
       "intro": [
@@ -678,6 +694,18 @@
             "Patikrinkite, ar kiekviena nuotrauka priklauso tai pačiai tvarkai ir variantui.",
             "Prašymas atidžiai peržiūrėti įtariamą defektą, nurodant jo buvimo vietą.",
             "Laikyti neišspręstus daiktus iš siuntinio tol, kol negausite atsakymo."
+          ]
+        },
+        {
+          "id": "qc-photo-request",
+          "title": "Neaiškią nuotrauką paverskite tiksliu prašymu",
+          "paragraphs": [
+            "Sandėlyje arba užsakymo srityje atidarykite prie savo užsakymo pridėtas nuotraukas. Katalogo nuorodų vaizdai padeda naršyti, tačiau jie neįrodo jums atkeliavusios prekės būklės ar išmatavimų. Pirmiausia palyginkite prekės identifikatorių, pasirinktą spalvą, dydį ir kiekį su užsakymo įrašu.",
+            "Dėl drabužių dydžio paprašykite tikslaus išmatavimo, kuris galėtų pakeisti jūsų sprendimą: krūtinės plotis su matomu juostelės nuliniu tašku, kūno ilgis nuo nurodyto pradinio taško arba laisvas juosmuo. Batams pėdos ilgį, vidpadžio ilgį ir dydžio etiketės konvertavimą laikykite atskirai. Patvirtinkite galimas paslaugas ir mokesčius, tada palyginkite rezultatą su tokiu pačiu būdu išmatuotu etalonu."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-shoe-size-guide/"
           ]
         },
         {
@@ -764,17 +792,17 @@
         "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
-        "/articles/sugargoo-shoe-size-guide/",
-        "/category/shoes/"
+        "/articles/sugargoo-clothing-size-guide/",
+        "/category/hoodies-sweaters/"
       ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo siuntimo skaičiuoklė: svoris ir kaina",
-      "description": "Palyginkite faktinį siuntinio svorį su tūriniu svoriu. Naudokite pasirinkto maršruto daliklį ir apmokestinimo taisyklę. Šis įrankis neskaičiuoja siuntimo kainos.",
+      "title": "„Sugargoo“ siuntimo skaičiuoklė: faktinis ir tūrinis svoris",
+      "description": "Apskaičiuokite siuntos svorį, palyginkite faktinį ir tūrinį apmokėjimą ir surinkite duomenis, reikalingus dabartinei „Sugargoo“ siuntimo kainos sąmatai apskaičiuoti.",
       "keyword": "Sugargoo siuntimo skaičiuoklė",
       "category": "shipping",
       "intro": [
@@ -793,6 +821,18 @@
             "Naudoti išorinius supakuotus matmenis centimetrais, o ne produkto matmenis.",
             "Perskaičiuokite gramus į kilogramus: 3000 g yra 3 kg.",
             "Pasiimkite dalijimąsi ir įkrovimo taisyklę iš maršruto, kurį svarstote."
+          ]
+        },
+        {
+          "id": "calculator-quote-handoff",
+          "title": "Įtraukite skaičiavimą į dabartinę maršruto kainą",
+          "paragraphs": [
+            "Aukščiau pateikta skaičiuoklė paaiškina svorį; ji neatkuria tiesioginių siuntimo tarifų. Atlikę skaičiavimą, atidarykite oficialų skaičiuotuvą su savo paskirties vieta, turiniu ir supakuotais matmenimis. Naudokite pasirinkto maršruto daliklį, minimalų mokestį ir apvalinimo sąlygas, užuot darę prielaidą, kad viena formulė apibūdina kiekvieną paslaugą.",
+            "Užrašykite pasiūlytą bendrą sumą ir tai, kas į ją įskaičiuota. Palyginkite maršrutus su identiškais duomenimis, tada atnaujinkite kainą pakeitę siuntą. Čekijos Respublikos siuntoms taip pat perskaitykite dabartines paskirties vietos gaires, pateiktas toliau; sena mažos vertės importo taisyklė arba kito pirkėjo mokėjimas nėra patikimas jūsų siuntos įvertinimas."
+          ],
+          "actions": [
+            "/articles/sugargoo-rehearsal-shipping/",
+            "/articles/sugargoo-shipping-to-czechia/"
           ]
         },
         {
@@ -879,7 +919,7 @@
         "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-rehearsal-shipping/",
         "/articles/sugargoo-shipping-to-usa/"
@@ -888,8 +928,8 @@
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo bandomasis pakavimas: kaip veikia ir kada verta",
-      "description": "Sužinokite, ką „Sugargoo“ repeticija daro, kai verta mokesčio, ir kaip naudoti supakuotą svorį bei matmenis prieš pasirinkdami laivybos maršrutą.",
+      "title": "„Sugargoo“ repeticijų siuntimas: žingsniai, kaina ir kada jį naudoti",
+      "description": "Sužinokite, kada naudingas „Sugargoo“ repeticijų siuntimas, ką patikrinti prieš mokant ir kaip palyginti supakuotą rezultatą su galutine siuntimo kaina.",
       "keyword": "Sugargoo bandomasis pakavimas",
       "category": "shipping",
       "intro": [
@@ -924,6 +964,18 @@
               ]
             ]
           }
+        },
+        {
+          "id": "rehearsal-next-decision",
+          "title": "Remdamiesi repeticijos rezultatu, priimkite kitą sprendimą.",
+          "paragraphs": [
+            "Prieš užsakydami repeticiją, perskaitykite dabartinį paslaugos mokestį savo paskyroje. Naudingas rezultatas – aiškesnė pakavimo informacija: palyginkite tikrąjį svorį, išorinius matmenis, maršruto atsiskaitymo taisyklę ir visas pasirinktas paslaugas. Mokama repeticija pati savaime negarantuoja, kad galutinė siuntimo suma bus mažesnė.",
+            "Jei rezultatas skiriasi nuo jūsų įvertinimo, prieš keisdami maršrutus, nurodykite priežastis. Ar dėžė buvo didesnė nei tikėtasi, ar apsauginė pakuotė pridėjo svorio, ar maršrute naudojamas kitas daliklis? Palyginkite identišką turinį ir pakuotę tarp tinkamų kainų pasiūlymų. Jei vėliau pašalinsite prekę arba pakeisite pakuotę, atnaujinkite informaciją, naudotą galutinei kainai."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-shipping-to-czechia/"
+          ]
         },
         {
           "id": "identify-the-decision",
@@ -1009,7 +1061,7 @@
         "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-shipping-calculator/",
         "/articles/sugargoo-parcel-consolidation/"
@@ -1376,8 +1428,8 @@
     {
       "id": "sugargoo-returns-refunds",
       "slug": "sugargoo-returns-refunds",
-      "title": "Sugargoo prekių ir pinigų grąžinimas: įrodymai, tinkamumas ir kiti veiksmai",
-      "description": "Klaidingą prekę ar pakeistą užsakymą tvarkykite turėdami aiškius įrodymus, patikrinę grąžinimo sąlygas ir atskirdami patvirtinimą nuo gautų pinigų.",
+      "title": "„Sugargoo“ grąžinimai ir pinigų grąžinimas: kokybės kontrolės įrodymai ir tolesni veiksmai",
+      "description": "Prieš išsiunčiant prekes į užsienį, patikrinkite užsakymo etapą, užfiksuokite dydžio ar būklės problemą ir supraskite tolesnį grąžinimo ar pinigų grąžinimo veiksmą.",
       "keyword": "Sugargoo pinigų grąžinimas",
       "category": "account",
       "intro": [
@@ -1391,6 +1443,18 @@
           "paragraphs": [
             "Prieš kreipdamiesi pagalbos nustatykite, ar užsakymas dar laukia pirkimo, jau nupirktas, pardavėjo išsiųstas, gautas sandėlyje ar išsiųstas tarptautiniu maršrutu. Prašymas atšaukti nebaigtą pirkimą skiriasi nuo fizinių prekių grąžinimo. Naudokite tikrą užsakymo būseną ir datą, o ne manykite, kad mygtuko paspaudimas panaikino operaciją.",
             "Oficialus Sugargoo atšaukimo vadovas aprašo paskyroje vykdomą atšaukimo procesą, o grąžinimo vadovas atskiria vėlesnius prekių ir pinigų grąžinimo etapus. Atidarykite atitinkamą užsakymą ir naudokite galimą oficialų veiksmą. Jei pasirinkimo nėra arba būsena neaiški, prieš ką nors organizuodami savarankiškai paklauskite pagalbos, kas įmanoma būtent šiam užsakymui."
+          ]
+        },
+        {
+          "id": "return-size-evidence",
+          "title": "Prieš prašydami taisomosios priemonės, užfiksuokite dydžio problemą",
+          "paragraphs": [
+            "Kartu laikykite pasirinktą variantą, pardavėjo matavimo lentelę ir užsakymo kokybės kontrolės nuotraukas. Paaiškinkite, ar atvyko netinkama parinktis, ar teisingos etiketės matmenys skiriasi nuo nurodytų sąraše. Palyginkite tuos pačius matavimo taškus; plokščias plotis ir apimtis patys savaime negali nustatyti neatitikimo.",
+            "Pasiteiraukite, kokios grąžinimo ar keitimo galimybės galimos tam užsakymui, įskaitant terminus, vietines išlaidas ir kitą reikalingą veiksmą. Užrašykite atsakymą ir visus atskirus grąžinimo įrašus. Nelaikykite prašymo patvirtinimo įrodymu, kad visos išlaidos jau buvo grąžintos, ir išspręskite su medžiaga susijusius klausimus prieš tarptautinį išsiuntimą."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-order-status/"
           ]
         },
         {
@@ -1473,7 +1537,11 @@
         "sugargoo-fees-payment"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-18"
+      "updated": "2026-11-09",
+      "actions": [
+        "/articles/sugargoo-qc-photos/",
+        "/articles/sugargoo-order-status/"
+      ]
     },
     {
       "id": "weidian-taobao-links-sugargoo",
@@ -2304,6 +2372,10 @@
           "paragraphs": [
             "Atidaryti originalų produkto puslapį ir išsaugoti dydžio diagramą, kuri priklauso tam modeliui. Patikrinti, ar jos matavimai apibūdina pėdą, apgaubą arba batų išorę. Taip pat patikrinti, ar dydžio sistema yra skirtas vyrams, moterims arba vaikams. Lentelė iš kito modelio gali sukurti klaidingą atitikimą, net jei dydžio etiketės atrodo tokios pačios.",
             "Jei diagrama yra neaiški, paklausti pardavėjo arba tarpininko, ką kiekvienas stulpelis reiškia prieš užsakant. Nepridėkite standartinės išmokos prie kiekvienos diagramos: pardavėjas jau gali būti pastatytas lengvatą į savo rekomendaciją. Jūsų pasirinktas kostiumas, kojinės ir bato forma taip pat svarbus."
+          ],
+          "actions": [
+            "/category/shoes/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -2409,6 +2481,443 @@
       "actions": [
         "/category/shoes/",
         "/articles/sugargoo-qc-photos/"
+      ]
+    },
+    {
+      "id": "sugargoo-clothing-size-guide",
+      "slug": "sugargoo-clothing-size-guide",
+      "title": "„Sugargoo“ drabužių dydžių vadovas: matmenys ir kokybės kontrolės patikra",
+      "description": "Pasirinkite drabužių dydžius naudodami pardavėjo matmenis, palyginkite savo turimą drabužį ir paprašykite naudingų „Sugargoo“ kokybės kontrolės nuotraukų prieš tarptautinį išsiuntimą.",
+      "keyword": "sugargoo clothing size guide",
+      "category": "quality",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Pradėkite nuo jums tinkamo drabužio matmenų, tada palyginkite juos su tikslia pardavėjo lentele. Pažįstamos dydžio raidės nepakanka: vidutinio dydžio džemperis su gobtuvu ir vidutinio dydžio megztinis gali turėti labai skirtingus pločius, ilgius ir kirpimus. Šis „Sugargoo“ drabužių dydžių vadovas paverčia šiuos skirtumus praktišku užsakymų kontroliniu sąrašu.",
+        "Naudokite sąrašo nuotraukas, kad pasirinktumėte stilių, dydžių lentelę, kad pasirinktumėte variantą, ir savo sandėlio kokybės kontrolės tarnybą, kad patikrintumėte, kas atvyko. Tai yra trys skirtingi įrodymų tipai. Žemiau pateikti palyginimo pavyzdžiai iliustruoja metodą; Tai nėra šiuo metu kataloge siūlomų gaminių išmatavimai."
+      ],
+      "sections": [
+        {
+          "id": "measure-reference",
+          "title": "Prieš naršydami, išmatuokite standartinį drabužį",
+          "paragraphs": [
+            "Pasirinkite drabužį, kurį iš tikrųjų mėgstate dėvėti toje pačioje kategorijoje. Prigludę marškinėliai nėra prastas žieminio džemperio su gobtuvu, dėvimo ant kito sluoksnio, pavyzdys. Padėkite drabužį ant lygaus paviršiaus, išlyginkite akivaizdžias klostes netempdami audinio ir aiškiai nufotografuokite kiekvieną matavimą. Atkreipkite dėmesį, ar jis jau buvo skalbtas ir ar audinys tempiasi.",
+            "Užsirašykite matavimo taškus ir skaičių. Paprastam viršui išmatuokite tiesiai per krūtinę žemiau rankovių angų, tada išmatuokite kūno ilgį nuo aiškiai pažymėto pečių taško iki apačios. Skaitydami pardavėjo lentelę, naudokite tuos pačius galinius taškus. Išlenkta siūlė, nuleisti pečiai arba nelygus apačia gali padaryti du, regis, panašius ilgio matavimus nepalyginamus.",
+            "Naršydami turėkite po ranka šį nedidelį informacinį lapą. Jei pakeisite numatytą dydį iš įprasto į didelį, pakeiskite ir standartinį drabužį. Pridėjus atsitiktinį centimetrų skaičių prie kiekvieno matmens, rankovės gali būti per ilgos, nesuteikiant norimos papildomos vietos krūtinei."
+          ],
+          "actions": [
+            "/category/t-shirts/",
+            "/category/hoodies-sweaters/"
+          ]
+        },
+        {
+          "id": "read-size-chart",
+          "title": "Perskaitykite pardavėjo lentelę nesumaišydami išmatavimų",
+          "paragraphs": [
+            "Pirmiausia nustatykite, ar lentelė apibūdina asmenį, ar jau gatavą drabužį. Kūno krūtinės apimtis nėra plokščio drabužio krūtinės plotis. Taip pat lentelės, kurioje parodytas drabužio apimtis, negalima tiesiogiai palyginti su vienu plokščiu išmatavimu. Kai plokščias plotis padvigubinamas, rezultatas yra tik paprastas apimties apytikslis dydis; jis neapibūdina formos, tempimo ar to, kaip drabužis kabės.",
+            "Patikrinkite vienetus, tikslią produkto parinktį ir bet kokį pardavėjo nurodytą matavimo toleranciją. Neperkelkite lentelės iš vizualiai panašaus skelbimo. Skirtingos partijos ar kirpimai gali naudoti skirtingas specifikacijas. Jei lentelė yra paveikslėlis, prieš versdami priartinkite ir perskaitykite stulpelių antraštes; išversta etiketė be matavimo diagramos vis tiek gali būti dviprasmiška.",
+            "Įprastos etiketės apima krūtinę arba krūtinę, pečius, drabužio ilgį, rankovės ilgį, juosmenį, klubus, liemens apimtį ir kelnių ilgį. Parašykite reikšmę šalia išsaugotų išmatavimų. Jei diagramos nėra ir dvi interpretacijos lemtų skirtingus dydžius, prieš mokėdami paprašykite paaiškinimo. Spėliojimas tampa brangesnis, kai užsakymas pasiekia tarptautinį tranzitą."
+          ]
+        },
+        {
+          "id": "fit-example",
+          "title": "Praktinis palyginimas: plotis ir ilgis kartu",
+          "paragraphs": [
+            "Panagrinėkime iliustracinius marškinėlius, kurių krūtinės apimtis – 54 cm, o ilgis – 70 cm. Tarkime, pardavėjo lentelėje pateikiami 52 cm ir 68 cm dydžio variantai, o kitas – 56 cm ir 72 cm, naudojant tuos pačius matavimo taškus. Pirmasis variantas yra siauresnis ir trumpesnis nei jūsų nurodytas dydis; antrasis – platesnis ir ilgesnis. Nei vienas iš jų nėra automatiškai teisingas vien todėl, kad dydžio raidė atitinka jūsų įprastą pasirinkimą.",
+            "Dabar nuspręskite, kuris skirtumas jums svarbus. Jei nurodytas dydis jau atrodo trumpas, trumpesnis variantas nusipelno ypatingo dėmesio. Jei krūtinės plotis artimas jūsų maksimaliai patogiam laisvumui, platesnis variantas gali atrodyti nepatrauklus. Prieš pasirinkdami bet kurį iš jų, palyginkite pečių ir rankovių išmatavimus. Tai sprendimas dėl kelių matmenų, o ne taisyklė visada rinktis vienu dydžiu didesnį.",
+            "Palikite neišspręstus skirtumus matomus savo užrašuose. Pavyzdžiui, užuot pažymėję visą drabužį kaip patvirtintą, parašykite „krūtinės apimtis priimtina, rankovės išmatavimai trūksta“. Tada galite paprašyti trūkstamų įrodymų nekartodami jau patikrinimų, kurie jau buvo aiškūs. Šie pavyzdiniai skaičiai yra sugalvoti aritmetikai ir nėra pardavėjo dydžio rekomendacija."
+          ]
+        },
+        {
+          "id": "category-checks",
+          "title": "Pasirinkite langelius, kurie atitinka drabužių kategoriją.",
+          "paragraphs": [
+            "Džemperiams su gobtuvu reikia vietos sluoksniui, kurį planuojate dėvėti po apačia. Palyginkite krūtinės plotį, rankovių ilgį, apačios plotį ir kūno ilgį su panašiu džemperiu su gobtuvu. Nuleistas pečių plotis pasikeičia ten, kur prasideda rankovės išmatavimai, todėl palyginkite visą diagramą, o ne laikydami pečių plotį ir rankovės ilgį nepriklausomomis tinkamumo garantijomis.",
+            "Kelnių ir šortų atveju atskirkite laisvą juosmens juostą nuo ištempto matmens. Palyginkite juosmens, klubų, priekinės juostos, vidinės siūlės ir kojų angų apimtį, kai šios detalės turi įtakos jūsų tinkamumui. Vien juosmens apimtis neparodo, ar šlaunys bus patogios. Megztinių atveju patikrinkite numatytą kirpimą ir ilgį, taip pat krūtinės plotį; sportinis kirpimas gali skirtis nuo laisvalaikio marškinėlių.",
+            "Švarkai kelia papildomų klausimų dėl sluoksniavimo ir judėjimo. Nuotrauka negali parodyti, kaip patogiai galite pakelti rankas ar užsisegti švarką ant megztinio. Naudokite panašų etaloninį švarką, patikrinkite nurodytas medžiagas ir trūkstamą informaciją laikykite neapibrėžtumu, o ne manykite, kad kiekvienas drabužis su tuo pačiu dydžio raide atitinka universalią lentelę."
+          ],
+          "table": {
+            "headers": [
+              "Drabužių tipas",
+              "Naudingas palyginimas",
+              "Dažna klaida"
+            ],
+            "rows": [
+              [
+                "Marškinėliai ir megztiniai",
+                "Krūtinės plotis, kūno ilgis ir rankovės",
+                "Pasirinkimas tik pagal ūgį ir svorį"
+              ],
+              [
+                "Megztiniai su gobtuvu ir striukės",
+                "Sluoksniavimo erdvė, rankovės ir apačia",
+                "Nuleistų ir standartinių pečių derinimas"
+              ],
+              [
+                "Kelnės ir šortai",
+                "Liemuo, klubai, liemuo ir vidinė siūlė",
+                "Ištemptų ir atsipalaidavusių juosmenų palyginimas"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "request-clothing-qc",
+          "title": "Prašykite kokybės kontrolės nuotraukų, kurios gali atsakyti į jūsų klausimą apie tinkamumą",
+          "paragraphs": [
+            "„Sugargoo“ kokybės kontrolės gairėse aprašomi gautos prekės patikrinimai ir papildomų įrodymų prašymai. Prieš prašydami daugiau nuotraukų, patikrinkite savo užsakymui prieinamas paslaugas, įskaitant bet kokį mokestį. Užuot klausę, ar prekė atitinka „tikro dydžio“, paprašykite konkretaus matavimo su matomais galais. Personalas negali žinoti jūsų asmeninio tinkamumo iš šios frazės.",
+            "Naudingas prašymas: patieskite drabužį plokščiai jo netempdami, perbraukite per visą juosmens juostą nuo vieno krūtinės krašto iki kito, tiesiai po rankovėmis, ir atskiroje nuotraukoje įtraukite dydžio etiketę. Ilgio atveju nurodykite pradinį tašką, kurį naudojote ant savo etaloninio drabužio. Kelnių atveju nurodykite, ar norite, kad juosmuo būtų atpalaiduotas, ar ištemptas.",
+            "Prieš pasitikėdami skaičiumi, apžiūrėkite patį vaizdą. Nulinis taškas turi būti matomas, juosta turi atitikti numatytą liniją, o sulankstymai neturi paslėpti apsiuvimo. Jei perspektyva arba sulenkta juosta neleidžia įvertinti nedidelio skirtumo, paprašykite vieno pataisyto vaizdo. Daugiau to paties neaiškaus kampo nuotraukų matavimo nepadaro patikimesnio."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "resolve-sizing-issues",
+          "title": "Išspręskite neatitikimą, kol įrodymai yra naudingi",
+          "paragraphs": [
+            "Pasirinktą parinktį, pardavėjo lentelę, užsakymo numerį ir atitinkamus kokybės kontrolės vaizdus laikykite kartu. Atskirkite neteisingą etiketę nuo drabužio, kurio etiketė teisinga, bet matmenys netikėti. Paaiškinkite neatitikimą, naudodami tą patį matavimo metodą abiejose pusėse. Trumpas, konkretus palyginimas padeda pardavėjui geriau suprasti problemą nei bendras skundas, kad prekė atrodo maža.",
+            "Nemanykite, kad grąžinimas, keitimas ar pinigų grąžinimas yra automatiniai. Tinkamumas, terminai, išlaidos ir tvarkymas priklauso nuo užsakymo ir pardavėjo sąlygų. Prieš siųsdami prekę į tarptautinį siuntinį, pasiteiraukite, kokios yra galimos teisių gynimo priemonės. Jei nuspręsite ją pasilikti, užuot neišspręstą problemą laikę tinkamumo įrodymu.",
+            "Galiausiai, atskirkite matomą kokybės kontrolę nuo dėvėjimo bandymo. Sandėlio nuotraukos negali patvirtinti ilgalaikio patvarumo, susitraukimo po skalbimo ar asmeninio patogumo. Jei įmanoma, perskaitykite priežiūros informaciją ir išsaugokite užsakymo įrašą. Kitą kartą pirkdami atnaujinkite savo standartinius išmatavimus pagal drabužį, kurį iš tikrųjų gavote ir dėvėjote; tai padarys būsimus palyginimus naudingesnius, nes remdamiesi plačiais dydžių stereotipais."
+          ],
+          "actions": [
+            "/articles/sugargoo-returns-refunds/"
+          ]
+        }
+      ],
+      "checklist": [
+        "Dėvėkite panašų drabužį, kuris atitiktų numatytą stilių.",
+        "Suderinkite vienetus, galinius taškus ir plokštumos plotį su perimetru.",
+        "Prieš mokėdami patikrinkite tikslų variantą ir pardavėjo lentelę.",
+        "Paprašykite konkrečių sandėlio matmenų, jei matmenys nėra nustatyti.",
+        "Išspręskite medžiagų neatitikimą prieš tarptautinį išsiuntimą."
+      ],
+      "sources": [
+        {
+          "title": "„Sugargoo“: „Taobao“ dydžių lentelių skaitymas",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "„Sugargoo“: nuotraukos, vaizdo įrašai ir matavimų užklausos",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "„Sugargoo“: kokybės patikrinimai ir jų ribos",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "„Sugargoo“: grąžinimai ir pinigų grąžinimas",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shoe-size-guide"
+      ],
+      "actions": [
+        "/category/hoodies-sweaters/",
+        "/category/pants-shorts/"
+      ]
+    },
+    {
+      "id": "sugargoo-finds-under-20",
+      "slug": "sugargoo-finds-under-20",
+      "title": "„Sugargoo“ randa prekių iki 20 USD: kaina, dydis ir pirkimo patikrinimai",
+      "description": "Raskite „Sugargoo“ prekes iki 20 USD naudodami pagal kainą surūšiuotas produktų nuorodas. Prieš nuspręsdami, kas yra įperkama, patikrinkite tikslų variantą, matmenis, kokybės kontrolę ir pristatymą.",
+      "keyword": "sugargoo finds under 20",
+      "category": "getting-started",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Šiame vadove „iki 20 USD“ reiškia rodomą produkto kainą, mažesnę nei 20 USD, prieš papildomus mokesčius. Tai nereiškia, kad siuntinys bus pristatytas pigiau nei 20 USD. Norėdami sudaryti trumpąjį sąrašą, naudokite pagal kainą surūšiuotą tiesioginį katalogą, tada pirkimo puslapyje patikrinkite tikslų variantą ir dabartinę kainą.",
+        "Tai yra atrankos metodas, o ne fiksuotas tariamai išbandytų produktų sąrašas. Katalogo kainos ir prieinamumas gali keistis. Pavyzdžiuose paaiškinama, kaip palyginti kainas ir neapibrėžtumą; tai nėra tiesioginiai pasiūlymai, atsiliepimai ar pažadai, kad konkretus pardavėjas priims užsakymą."
+      ],
+      "sections": [
+        {
+          "id": "find-budget-links",
+          "title": "Pradėkite nuo pagal kainą surūšiuoto katalogo",
+          "paragraphs": [
+            "Atidarykite katalogą naudodami žemiau esančią mažų kainų rūšiavimo nuorodą. Ieškokite reikiamo produkto tipo arba susiaurinkite sąrašą iki atitinkamos kategorijos. Pigus aksesuaras nėra naudingas pakaitalas džemperiui su gobtuvu, kurį pirkote. Pradėkite nuo numatyto naudojimo, tada palyginkite kainas toje grupėje, kad trumpajame sąraše būtų prasmingų alternatyvų.",
+            "Atidarykite kiekvieno kandidato produkto puslapį ir spustelėkite galimą pirkimo nuorodą. Patvirtinkite pavadinimą, prekės identifikatorių, pasirinktą spalvą, dydį ir kiekį. Kai kuriuose sąrašuose rodoma mažiausia pasirinkimo kaina, net jei jums reikalingas variantas kainuoja daugiau. Kortelė, kurioje nurodyta kaina mažesnė nei 20 USD, yra tik pradinis taškas, kol nepatikrinta tiksli parinktis.",
+            "Išsaugokite tris ar keturis tikėtinus kandidatus, o ne rinkite dešimtis nuorodų. Užsirašykite priežastį, kodėl kiekvienas iš jų galėtų tikti, ir klausimą, kuris galėtų jį atmesti. Pavyzdžiui: tinkami išmatavimai, bet trūksta audinio detalių. Trumpą sąrašą su aiškiais klausimais lengviau patikrinti nei ilgą sąrašą, surūšiuotą tik pagal patrauklias nuotraukas."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/category/accessories/?sort=price"
+          ]
+        },
+        {
+          "id": "under-20-budget",
+          "title": "Atskirkite produkto limitą nuo pristatymo biudžeto.",
+          "paragraphs": [
+            "Užrašykite dvi ribas: maksimalią prekės kainą ir maksimalią bendrą sumą, kurią norite išleisti. Pirmoji padeda naršyti; antroji nusprendžia, ar pirkinys yra prasmingas. Numatykite pristatymą šalies viduje, jei jis apmokestintas, mokėjimo ar paslaugų išlaidas, rodomas atsiskaitant, pasirenkamas paslaugas, tarptautinį siuntimą ir siuntai taikomus paskirties mokesčius.",
+            "Apsvarstykite grynai iliustracinį palyginimą. A prekė nurodyta už 12 USD, o B – už 17 USD. Jei pagal tą patį palyginimo metodą A prekei reikia papildomų 9 USD susijusių išlaidų, o B – 3 USD, bendros sumos yra 21 USD ir 20 USD. Šie skaičiai nėra „Sugargoo“ įkainiai. Jie parodo, kodėl mažesnė prekės kaina nebūtinai reiškia mažesnę bendrą sumą.",
+            "Kai siuntinyje yra kelios prekės, nepateikite savavališko lygio padalijimo kaip kiekvienos prekės siuntimo kainos. Bendra siuntos suma turi būti matoma ir nurodykite, kaip paskirstėte bendrą sumą. Prieš priimdami sprendimą pirkti, palyginkite siuntinio kainą su papildoma preke ir be jos, kai žinosite prasmingą svorį ir matmenis."
+          ],
+          "table": {
+            "headers": [
+              "Biudžeto eilutė",
+              "Ką patikrinti",
+              "Kada atnaujinti"
+            ],
+            "rows": [
+              [
+                "Produktas ir pasirinkta parinktis",
+                "Tikslus dydis, spalva, kiekis ir valiuta",
+                "Prieš pateikiant užsakymą"
+              ],
+              [
+                "Vietinės ir pasirenkamos paslaugos",
+                "Faktiniai užsakymo mokesčiai",
+                "Prieš pasirenkant mokamas paslaugas"
+              ],
+              [
+                "Tarptautinių siuntinių ir paskirties vietos išlaidos",
+                "Supakuoto dydžio matmenys ir dabartinės maršruto sąlygos",
+                "Prieš mokėdami už siuntimą"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-cheap-clothing",
+          "title": "Palyginkite nebrangius drabužius, naudodami matmenis",
+          "paragraphs": [
+            "Maža kaina nepadaro netinkamo dydžio pigiu. Marškinėlių, džemperių su gobtuvu ir megztinių atveju palyginkite pardavėjo matmenis su panašiu drabužiu, kurį jau turite. Atkreipkite dėmesį, ar numeris yra plokščias plotis, ar apimtis. Venkite rinktis didesnį dydį vien todėl, kad kažkas kitas rekomenduoja didesnį dydį, nenurodydamas pardavėjo ir tikslaus skelbimo.",
+            "Kelnių ir šortų atveju atkreipkite dėmesį ne tik į juosmenį. Liemuo, klubų plotis, vidinė siūlė ir kojų sruogos gali pakeisti dydį, net jei nominalus juosmuo atrodo teisingas. Jei skelbime pateikiamas tik dydžio raidė ir nėra jokių naudingų išmatavimų, priimant sprendimą, atsižvelkite į šią trūkstamą informaciją. Galite rinktis šiek tiek brangesnį variantą su aiškesniais įrodymais.",
+            "Dėl priedų patikrinkite matmenis ir kas įskaičiuota į pirkinį. Nuotraukoje gali būti pavaizduoti keli priedai, o pasirinktame variante – tik vienas. Perskaitykite parinkties aprašymą ir užsakymo santrauką. Palyginimo tikslas – suprasti prekę, kurią gausite, o ne nustatyti vertę pagal objektų skaičių nuotraukoje."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/category/t-shirts/?sort=price"
+          ]
+        },
+        {
+          "id": "cheap-qc-evidence",
+          "title": "Nuspręskite, kurie kokybės kontrolės įrodymai gali pakeisti jūsų pasirinkimą",
+          "paragraphs": [
+            "Prieš užsakydami, išvardykite du ar tris svarbiausius faktus. Drabužiui gali reikėti aiškios dydžio etiketės ir krūtinės apimties; aksesuarui gali reikėti matmenų patikrinimo ir jo užsegimo vaizdo. Kai užsakymas pasieks sandėlį, palyginkite gautą prekę su pasirinktu variantu ir išsaugota sąrašo informacija.",
+            "„Sugargoo“ paskelbtos kokybės kontrolės gairės yra naudingos norint suprasti, ką gali parodyti sandėlio patikrinimai. Prieš mokėdami už papildomus įrodymus, patvirtinkite savo užsakymui prieinamas paslaugų parinktis. Paprašykite stambaus plano arba matavimo, kuris atsakytų į konkretų neišspręstą klausimą. Pakartotinis platus prašymas dėl geresnės kokybės nuotraukų gali sukelti vėlavimą, nepagerinant sprendimo.",
+            "Maža kaina ir tvarkinga nuotrauka nenurodo autentiškumo, patvarumo ar saugumo. Venkite apibūdinti nepatikrintus daiktus kaip geriausius, patikrintus ar garantuotus vien todėl, kad egzistuoja produkto puslapis. Jei jūsų numatytas naudojimas priklauso nuo našumo, kurio nuotraukos negali įrodyti, ieškokite tinkamos produkto dokumentacijos arba rinkitės alternatyvą su įrodymais, kuriuos galite įvertinti."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "small-haul-costs",
+          "title": "Patikrinkite dar vieno nebrangaus daikto pridėjimo kainą",
+          "paragraphs": [
+            "Nebrangus papildomas daiktas vis tiek užima vietą ir padidina svorį. Prieš pridėdami jį prie siuntinio, apsvarstykite daiktą ir jo pakuotę kartu. Didelis ir pigus daiktas gali pakeisti apmokestinamąjį svorį arba perkelti siuntinį už maršruto ribos. Pakuotės pašalinimas gali paveikti apsaugą, todėl nemanykite, kad kiekvienas tūrio sumažinimas yra protingas sutaupymas.",
+            "Norėdami suprasti aritmetinius veiksmus, naudokite svorio skaičiuoklę, tada kainoms nustatyti naudokite oficialų maršruto įvertinimą. Šioje svetainėje esanti skaičiuoklė paaiškina faktinį ir tūrinį svorį; tai nėra tiesioginio tarifo paslauga. Įveskite daliklį ir atsiskaitymo taisyklę maršrutui, kurį lyginate, užuot laikę vieną bendrą daliklį universaliu.",
+            "Jei pakavimo neapibrėžtumas yra pakankamai didelis, kad pakeistų sprendimą, peržiūrėkite galimą repeticijos paslaugą ir jos kainą. Paprašykite jos nuspręsdami, kuriuos daiktus norite pasilikti. Repeticija gali pagerinti pakavimo informaciją, naudojamą kainos pasiūlyme, tačiau jos apmokėjimas negarantuoja mažesnės bendros sumos. Palyginkite gautą informaciją su kaina ir likusia neapibrėžtumu."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "budget-decision",
+          "title": "Pasilikti, ištirti ar praleisti: paprasta trumpojo sąrašo taisyklė",
+          "paragraphs": [
+            "Pažymėkite kandidatą „pasilikti“ tik tada, kai jo tiksli parinktis, matmenys ir numatoma bendra suma atitinka jūsų reikalavimus. Pažymėkite jį „ištirti“, kai vienas atsakymas gali pakeisti sprendimą. Pažymėkite jį „praleisti“, kai trūkstami įrodymai, netinkami matmenys ar bendra kaina daro jį netinkamu. Ši taisyklė neleidžia mažai pagrindinei kainai nulemti viso sprendimo.",
+            "Jei įsigytas daiktas turi problemų, nedelsdami ją užfiksuokite ir patikrinkite to užsakymo grąžinimo ar keitimo galimybes. Pigios prekės grąžinimas vis tiek gali būti brangus, palyginti su jos pirkimo kaina. Prieš tęsdami, palyginkite bet kokią nurodytą taisomąją priemonę ir kainą; nemanykite, kad būsimas pinigų grąžinimas pašalins riziką dabar atlikti neaiškų pirkinį.",
+            "Užuot dar kartą perskaitę išsaugotas nuorodas, užuot manę, kad kaina galioja neribotą laiką, dar kartą peržiūrėkite jas. Išsaugokite užsakymo įrodymus ir atnaujinkite sąrašą, kai pardavėjas pakeičia parinktis ar prekių kiekį. Biudžeto vadovo naudingas rezultatas – pirkinys, atitinkantis jūsų poreikius ir bendrą limitą, net jei tai reiškia, kad perkate mažiau prekių arba nepanaudojate patrauklią mažos kainos nuorodą.",
+            "Prieš pat mokėjimą dar kartą peržiūrėkite trumpąjį sąrašą. Jei pasirinktas variantas pasikeičia, pakartokite kainos ir dydžio patikrinimus, o ne taikykite ankstesnį sprendimą kitai prekei. Naudinga biudžeto riba turėtų galioti ir galutinėje užsakymo suvestinėje."
+          ]
+        }
+      ],
+      "checklist": [
+        "Suma, mažesnė nei 20 USD, laikoma prekės kainos filtru, o ne kainos pažadu.",
+        "Tikslų variantą ir kiekį patikrinkite pirkimo puslapyje.",
+        "Palyginkite matavimus su tinkamu etaloniniu elementu.",
+        "Į biudžetą įtraukite visą siuntinį ir taikomas pristatymo išlaidas.",
+        "Vietoj seno reitinguoto sąrašo naudokite dabartines kainas ir įrodymus."
+      ],
+      "sources": [
+        {
+          "title": "„Sugargoo“: užsakymo procesas",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "„Sugargoo“: „Taobao“ dydžių lentelių skaitymas",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "„Sugargoo“: kokybės patikrinimai ir jų ribos",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "„Sugargoo“: tarptautinio siuntimo išlaidų įvertinimas",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "„Sugargoo“: siuntinio modeliavimas prieš išsiuntimą",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "„Sugargoo“: grąžinimai ir pinigų grąžinimas",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "sugargoo-clothing-size-guide"
+      ],
+      "actions": [
+        "/spreadsheet/?sort=price",
+        "/category/hoodies-sweaters/?sort=price"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-czechia",
+      "slug": "sugargoo-shipping-to-czechia",
+      "title": "„Sugargoo“ siuntimas į Čekiją: kainos, maršrutai ir sekimas",
+      "description": "Planuokite „Sugargoo“ siuntimą į Čekijos Respubliką, naudodamiesi supakuoto svorio patikrinimais, naujausiais maršrutų pasiūlymais, muitinės šaltiniais ir praktišku sekimo kontroliniu sąrašu.",
+      "keyword": "sugargoo shipping to czech republic",
+      "category": "shipping",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Norėdami įvertinti „Sugargoo“ siuntimą į Čekiją, dabartiniame oficialiame skaičiuoklyje pasirinkite Čekijos Respubliką kaip paskirties vietą ir naudokite savo siuntinio turinį, svorį ir matmenis. Nėra vienos siuntimo kainos ar pristatymo laiko, taikomo kiekvienam Čekijos užsakymui.",
+        "Šis vadovas padės jums surinkti reikiamus duomenis, palyginti galimus maršrutus ir išsaugoti reikiamus dokumentus po išsiuntimo. Maršrutų prieinamumas, mokesčiai ir importo taisyklės gali keistis. Žemiau pateikti pavyzdžiai paaiškina palyginimo metodus; tai nėra dabartiniai vežėjų pasiūlymai ar pažadas, kad jums bus teikiama nurodyta paslauga."
+      ],
+      "sections": [
+        {
+          "id": "czech-start",
+          "title": "Paruoškite paskirties vietos ir siuntinio informaciją",
+          "paragraphs": [
+            "Naudokite visą gavėjo pristatymo adresą ir jam priklausantį pašto kodą. Patikrinkite namo ar pastato numerį, bet kokius buto duomenis ir telefono numerį, kurį vežėjas gali naudoti. Užtikrinkite, kad gavėjo vardas ir pavardė atitiktų pristatymui naudojamus įrašus ir visus prašomus muitinės dokumentus. Prieš pateikiant kiekvieną siuntinį, išsaugotas adresas nusipelno dar vieno patikrinimo.",
+            "Prieš lygindami maršrutus, išvardykite numatytą turinį. Produkto kategorija, medžiagos, baterijos, skysčiai ir kiti tvarkymo reikalavimai gali turėti įtakos tinkamumui. Prieš mokėdami perskaitykite pasirinktai paslaugai nurodytus apribojimus ir pasiteiraukite apie neaiškius daiktus. Maršruto pasirodymas bendrame palyginime nėra patvirtinimas, kad jis priima konkretų jūsų siuntinio turinį.",
+            "Kiekvieno daikto užsakymo identifikatorių, aprašymą, kiekį ir faktinį pirkimo įrašą laikykite kartu. Tai palengvina atsakymą į vėlesnį užklausą neatkuriant užsakymo istorijos iš ekrano kopijų. Viso proceso metu naudokite tikslią informaciją. Nekeiskite aprašymų ar verčių vien tam, kad maršrutas atrodytų pigesnis arba imituotumėte kito pirkėjo deklaraciją."
+          ]
+        },
+        {
+          "id": "czech-weight",
+          "title": "Supraskite svorį, kurį nuskaičiuos maršrutas.",
+          "paragraphs": [
+            "Produktų svorio suma nebūtinai yra galutinis supakuotas svoris. Išorinė pakuotė ir apsauginės medžiagos prideda svorio, o galutinio siuntinio dydis gali būti svarbus atskirai. Paprašykite supakuotų matmenų, kai jų reikia maršrutui apskaičiuoti. Nuosekliai naudokite centimetrus ir kilogramus, kad vienetų neatitikimas neiškreiptų palyginimo.",
+            "Iliustracinio 40 × 30 × 25 cm dydžio siuntinio tūris yra 30 000 kubinių centimetrų. Jei hipotetiniame maršrute daliklis yra 6 000, jo tūrinis svoris būtų 5 kg. Jei faktinis supakuotas svoris yra 3 kg ir tas maršrutas apmokestina didesnį skaičių, pradinis svoris būtų 5 kg prieš apvalinimo taisykles. Tai yra pavyzdiniai duomenys, o ne Čekijos maršruto tarifas.",
+            "Kitam maršrutui gali būti naudojamas skirtingas daliklis, tik faktinis svoris, minimalūs mokesčiai arba matmenų apribojimai. Prieš lygindami rodomas kainas, perskaitykite jo nurodytą taisyklę. Svorio skaičiuoklė vietoje gali padėti atlikti aritmetinius veiksmus, tačiau dabartinė „Sugargoo“ kaina nustato jūsų užsakymo kainą ir galimas paslaugas."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/"
+          ]
+        },
+        {
+          "id": "czech-route-comparison",
+          "title": "Palyginkite visą maršruto pasiūlymą",
+          "paragraphs": [
+            "Siuntinį siųskite tuo pačiu maršrutu per kiekvieną tinkamą maršrutą, kad palyginime būtų naudojami sutampantys įvesties duomenys. Užsirašykite nurodytą mokestį, svorio taisyklę, dydžio apribojimus, nurodytą numatomą laiką, sekimo aprėptį ir įtrauktas paslaugas. Atkreipkite dėmesį į palyginimo datą. Seno užsakymo ekrano kopija yra naudinga istorija, tačiau tai nėra įrodymas, kad tas pats pasiūlymas vis dar galioja.",
+            "Patikrinkite, kaip pasiūlyme aprašomi paskirties mokesčiai, muitinės tvarkymas ir pristatymas. Maršruto pavadinimas, kuriame yra su mokesčiais susijusi frazė, nepakanka visiems galimiems mokesčiams ar įsipareigojimams paaiškinti. Perskaitykite dabartinę paslaugos informaciją ir paklauskite, kokios sumos įtrauktos į mokėjimą. Išsaugokite šį atsakymą kartu su pasiūlymu, kad vėliau galėtumėte atskirti vežėjo mokestį nuo kito mokesčio.",
+            "Rinkitės pagal savo prioritetus. Mažesnė kaina su mažiau nuspėjamu laiku gali tikti lanksčiam pirkimui; skubiam pristatymui reikia realios išlaidų sumos kiekvienam etapui. Venkite kurti planą remdamiesi greičiausiu įmanomu pristatymu. Prieš nuspręsdami, kad verta šiek tiek sutaupyti, apsvarstykite praktines pasekmes, jei siuntinys atvyks vėliau nei sąmata."
+          ],
+          "table": {
+            "headers": [
+              "Palyginimo laukas",
+              "Įrašas apie kiekvieną tinkamą maršrutą",
+              "Kodėl tai svarbu"
+            ],
+            "rows": [
+              [
+                "Kaina ir atsiskaitymo pagrindas",
+                "Bendra, faktinė arba tūrinė kaina, apvalinimas",
+                "Už tą patį siuntinį gali būti taikomas skirtingas mokestis"
+              ],
+              [
+                "Paslaugos aprėptis",
+                "Sekimas, pristatymo apimtis ir įtraukti mokesčiai",
+                "Maršruto pavadinimas nėra išsamus paslaugos aprašymas"
+              ],
+              [
+                "Apribojimai ir laikas",
+                "Turinio apribojimai, matmenys ir laiko sąmata",
+                "Tinkamumas ir laikas priklauso nuo siuntos"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "czech-customs",
+          "title": "Vadovaukitės galiojančiomis Čekijos muitinės gairėmis",
+          "paragraphs": [
+            "Prieš mokėdami už siuntą, patikrinkite toliau pateiktas Čekijos muitinės nuorodas. Jų 2026 m. gairės pakeitė mažos vertės elektroninės prekybos importo tvarką. Nesiremkite senesniu teiginiu, kad kiekvienas pirkinys, kurio vertė mažesnė nei 150 EUR, yra neapmokestinamas muitais. Muitai, PVM, tvarkymas ir deklaravimo procesas yra atskiri klausimai; jų tvarkymas priklauso nuo galiojančių taisyklių ir siuntos.",
+            "Paklauskite pasirinktos tarnybos, kaip bus tvarkomas muitinės formalumų tvarkymas ir kokių įrašų jai reikia. Išsaugokite sąskaitą faktūrą arba užsakymo įrašą, mokėjimo įrodymus ir tikslų turimų prekių aprašymą. Jei kas nors prašo dokumento ar mokėjimo, prieš siųsdami informaciją, patikrinkite prašymą per vežėją arba muitinės tarnybą oficialiu kanalu.",
+            "Nemanykite, kad ankstesnės siuntos mokesčiai nulemia kitos siuntos mokesčius. Skirtingas turinio sąrašas, deklaruota kategorija, įvežimo procesas arba paslaugų teikimo tvarka gali pakeisti skaičiavimą. Šiame vadove neapskaičiuojamas privalomas muitinės įvertinimas. Naudokite galiojančias oficialias instrukcijas ir rašytinį paslaugos paaiškinimą konkrečiam siuntiniui, ypač kai kainos pasiūlyme nenurodytas mokestis."
+          ]
+        },
+        {
+          "id": "czech-before-dispatch",
+          "title": "Užbaikite kokybės kontrolės ir pakavimo sprendimus prieš išsiuntimą.",
+          "paragraphs": [
+            "Patikrinkite kiekvieną prekę, kol ji dar yra sandėlyje peržiūrai. Suderinkite gautą parinktį ir kiekį su savo užsakymu, apžiūrėkite atitinkamas kokybės kontrolės nuotraukas ir išspręskite svarbius dydžio ar būklės klausimus. Neišspręstos prekės sujungimas į siuntinį gali apsunkinti vėlesnį taisymą. Siuntimo kainos pasiūlymas nepakeičia sprendimo, ar norite pasilikti prekes.",
+            "Pasirinkite pakuotę pagal turinį, o ne tik pageidaujamą svorį. Trapiems daiktams gali reikėti apsaugos, o nereikalingos išorinės dėžės gali padidinti tūrį. Paklauskite, ką siūlomas pakuotės pakeitimas pašalina ir ar tai turi įtakos prekės apsaugai. Palyginkite gautą supakuotą informaciją, prieš manydami, kad pakeitimas taupo pinigus.",
+            "Jei yra galimybė pakartoti ir likęs pakavimo netikrumas yra svarbus, prieš prašydami peržiūrėkite dabartinį mokestį ir apimtį. „Sugargoo“ paskelbtame vadove aprašoma, kaip naudoti gautą supakuotą informaciją prieš tęsiant. Vėliau patvirtinkite, kad turinys ir pasirinkta pakuotė vis dar atitinka jūsų numatytą siuntą; Siuntos pakeitimas gali sumažinti ankstesnio įvertinimo naudingumą."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "czech-tracking",
+          "title": "Sekimą skaitykite kaip perdavimo seką",
+          "paragraphs": [
+            "Išsaugokite siuntos identifikatorių ir sekimo nuorodą, pateiktą jūsų paslaugai. Atskirkite sandėlio apdorojimą, vežėjo priėmimą, tarptautinį judėjimą, muitinį įforminimą ir vietinį pristatymą. Etiketės sukurtas pranešimas pats savaime neįrodo, kad siunta jau perduota. Palyginkite paskutinį įvykį su nurodytu paslaugos procesu, užuot kiekvieną ramybės periodą interpretavę kaip tą pačią problemą.",
+            "Kai bus prieinama vietinio pristatymo informacija, naudokite vežėją, kuris iš tikrųjų nurodytas jūsų siuntai. Nemanykite, kad kiekviena Čekijos siunta atitenka tam pačiam galutiniam vežėjui. Patikrinkite gavėjo duomenis, pristatymo instrukcijas ir bet kokį paėmimo pranešimą per oficialų vežėjo kanalą. Išsaugokite atitinkamus pranešimus, kol pristatymas bus baigtas.",
+            "Jei siuntos eiga neatitinka pasirinktos paslaugos nurodymų, susisiekite su palaikymo tarnyba, nurodydami siuntos numerį, paskutinį įvykį ir datą bei konkretų klausimą, į kurį reikia atsakyti. Pirmąją užklausą pateikite glaustą. Struktūrizuotas įrašas padeda palaikymo tarnybai ištirti teisingą etapą ir neleidžia nesusijusioms užsakymo detalėms užgožti trūkstamo perdavimo."
+          ],
+          "actions": [
+            "/articles/sugargoo-tracking/"
+          ]
+        },
+        {
+          "id": "czech-final-review",
+          "title": "Padarykite galutinio mokėjimo peržiūrą kartojamą",
+          "paragraphs": [
+            "Prieš mokėdami palyginkite galutinę siuntos suvestinę su savo pastabomis: paskirties vieta, turinys, supakuoti matmenys, maršrutas, pasirinktos paslaugos ir bendra suma. Patikrinkite, ar pasiūlymas buvo atnaujintas po bet kokio prekės ar pakuotės pakeitimo. Jei eilutės elementas neaiškus, išspręskite jį prieš pateikdami, o ne manykite, kad jis įtrauktas į kitą sumą.",
+            "Po pristatymo užsirašykite, kas buvo apmokestinta ir kaip siunta gabenama, nepateikdami vieno rezultato kaip garantijos būsimiems siuntiniams. Tai suteiks jums naudingų įrodymų kitam palyginimui. Pakartojamas įprotis yra paprastas: patikrinkite prekes, nurodykite tikrąją siuntą, perskaitykite dabartines muitinės gaires ir išsaugokite įrašus, kurie paaiškina jūsų sprendimą."
+          ]
+        }
+      ],
+      "checklist": [
+        "Pasirinkite Čekijos Respubliką ir patikrinkite gavėjo pilną adresą.",
+        "Palyginkite tinkamus maršrutus naudodami tuos pačius supakuotus matmenis ir svorį.",
+        "Patikrinkite dabartines Čekijos muitinės gaires, o ne senesnes išimtis.",
+        "Išspręskite kokybės kontrolės problemas prieš siuntai išvykstant iš sandėlio.",
+        "Norėdami gauti tikrąjį sekimo numerį, sekite nurodytą vežėją."
+      ],
+      "sources": [
+        {
+          "title": "„Sugargoo“: tarptautinio siuntimo išlaidų įvertinimas",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "„Sugargoo“: siuntinio modeliavimas prieš išsiuntimą",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "„Sugargoo“: kokybės patikrinimai ir jų ribos",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Čekijos muitinė: el. prekyba, muitai, PVM ir muitinės formalumai",
+          "url": "https://celnisprava.gov.cz/cz/celni-urad-praha-ruzyne/fyzicke-osoby/postovni-zasilky/prijeti/Stranky/mimo-eu.aspx"
+        },
+        {
+          "title": "Čekijos muitinė: dabartiniai el. prekybos pranešimai",
+          "url": "https://celnisprava.gov.cz/cz/clo/e-commerce/Stranky/Z%C3%A1silky-e-commerce.aspx"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
       ]
     }
   ]

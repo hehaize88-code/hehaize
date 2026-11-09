@@ -152,3 +152,12 @@ Release validation: 24 content bundles, 432 editorial routes, 816 sitemap URLs, 
 - Live checks passed for 264 pages: all 216 new/revised article routes, 24 article indexes and 24 catalogue pages. Checked complete sections, current introductions/titles, canonical URLs, indexing directives, 25 alternate-language links and same-article language switching. All 72 newly added article URLs appear in the 816-URL sitemap. Robots returns 200 and allows crawling. Evidence: `research/seo-2026-10-28/live-verification.json`.
 - Chrome verification: calculator shows 4 kg for the higher-weight rule and 3 kg for actual-only with the illustrative inputs. German calculator and Maltese shoe guide work at 390px without horizontal document overflow. All eight Maltese reading sections expand; switching to French preserves the shoe-guide path. Desktop homepage category shortcuts render, and all 12 source product images load. Viewport override reset.
 - A request using a Bingbot user-agent returns 200/indexable on the rehearsal article; this does not prove access from real Bing crawler IPs or successful indexing. Search-engine indexing and post-release CTR remain outcomes to measure, not deployment guarantees.
+
+## 2026-11-09 — multilingual editorial update
+
+- Added `sugargoo-clothing-size-guide`, `sugargoo-finds-under-20`, and `sugargoo-shipping-to-czechia` in every locale: 19 articles per locale, 456 total, 72 new localized article URLs.
+- Expanded rehearsal, QC, spreadsheet, shipping-calculator and returns articles in place; existing URLs, publication dates and prior chapters retained.
+- Added localized QC/Shipping navigation and contextual article links with placement-level click measurement. Homepage and clothing categories expose the new guides. All article content remains fully server rendered with the existing compact mobile controls.
+- Validation passed: 24 content bundles, 504 editorial routes, 888 sitemap URLs, 26 pagination cases, analytics/privacy checks, parcel-weight checks, build and deployment dry-run. See `research/seo-2026-11-09/README.md` for public sources and keyword mapping. Private account metrics are not committed.
+- Keep the established catalogue source and affiliate configuration; no database, product snapshot, or duplicate replacement article URLs were introduced.
+- Production publication is authorized by the user and will use the existing GitHub main → Cloudflare Workers Builds connection. Record its actual result after verification.

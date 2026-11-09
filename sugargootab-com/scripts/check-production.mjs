@@ -31,9 +31,9 @@ const sitemap = await request('/sitemap.xml');
 assert.equal(sitemap.status,200);
 const xml = new DOMParser().parseFromString(await sitemap.text(),'text/xml');
 const locations = [...xml.querySelectorAll('loc')].map(el=>el.textContent);
-assert.equal(locations.length,816);
+assert.equal(locations.length,888);
 assert.equal(new Set(locations).size,locations.length);
-assert.equal(xml.querySelectorAll('lastmod').length,720,'All article and article-index URLs carry maintained dates');
+assert.equal(xml.querySelectorAll('lastmod').length,816,'All article and article-index URLs carry maintained dates');
 assert(locations.every(url=>url.startsWith(targets.production+'/')&&!url.includes('?')));
 assert(locations.includes(targets.production+'/mt/faq/'));
 assert(locations.includes(targets.production+'/category/shoes/'));
@@ -58,8 +58,8 @@ const articleHtml=await articleResponse.text();
 assert(articleHtml.indexOf('--paper:#fff')>articleHtml.indexOf('--paper:#fafaf7'),'Approved theme follows base styles');
 const articleDoc=parseHTML(articleHtml).document;
 assert(!articleDoc.querySelector('.design-preview-bar'),'Review banner removed from live pages');
-assert.equal(articleDoc.querySelectorAll('[data-reading-section]').length,10);
-assert.equal(articleDoc.querySelectorAll('[data-reading-section][open]').length,10,'Full article present without JS');
+assert.equal(articleDoc.querySelectorAll('[data-reading-section]').length,11);
+assert.equal(articleDoc.querySelectorAll('[data-reading-section][open]').length,11,'Full article present without JS');
 assert(articleDoc.querySelector('[data-expand-reading]'));
 
 // The public 16-item pages must preserve the source's 60-item sequence.
@@ -138,4 +138,4 @@ try {
  assert.equal(failed.status,503,'A failed second source page must not produce a partial successful page');
  assert.match(failed.headers.get('X-Robots-Tag'),/noindex/);
 }finally{globalThis.fetch=originalFetch;}
-console.log(JSON.stringify({approvedDesign:'pass',legacyPreviewRedirect:308,pageSize:16,paginationCases,upstreamBoundaryChecks:'pass',completeCatalogueSequence:'pass',outOfRangeRedirect:302,upstreamFailure:503,articleSections:'10 complete disclosures'}));
+console.log(JSON.stringify({approvedDesign:'pass',legacyPreviewRedirect:308,pageSize:16,paginationCases,upstreamBoundaryChecks:'pass',completeCatalogueSequence:'pass',outOfRangeRedirect:302,upstreamFailure:503,articleSections:'11 complete disclosures'}));

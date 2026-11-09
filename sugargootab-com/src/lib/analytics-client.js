@@ -15,7 +15,7 @@
     if (!link) return;
     const eventName = link.dataset.track;
     if (['article_guide_click', 'article_catalog_click', 'outbound_purchase_click', 'outbound_register_click'].includes(eventName)) {
-      send(eventName, {destination: link.dataset.destination, product_id: link.dataset.productId || undefined});
+      send(eventName, {destination: link.dataset.destination, product_id: link.dataset.productId || undefined, placement: link.dataset.placement || undefined});
       return;
     }
     const card = link.closest('.product-card');

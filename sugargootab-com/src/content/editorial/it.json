@@ -1,10 +1,10 @@
 {
   "locale": "it",
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-09",
   "ui": {
     "articles": "Articoli",
     "articleTitle": "Guide agli acquisti su Sugargoo",
-    "articleIntro": "Pratiche guide Sugargoo per link di prodotti, foto QC, dimensioni delle scarpe e spedizione. Scegli la domanda a cui devi rispondere prima di acquistare o inviare un pacco.",
+    "articleIntro": "Guide pratiche di Sugargoo per link ai prodotti, taglie di abbigliamento e scarpe, foto di controllo qualità, offerte e spedizioni specifiche per paese. Scegli la domanda a cui rispondere prima di acquistare o spedire un pacco.",
     "faqTitle": "Domande frequenti su Sugargoo",
     "faqIntro": "Risposte chiare per ogni fase del tuo ordine, con fonti ufficiali sulle regole della piattaforma e limiti trasparenti di questo catalogo indipendente.",
     "readArticle": "Leggi la guida",
@@ -62,7 +62,10 @@
     "billingBase": "Peso prima di arrotondare",
     "weightDisclaimer": "Il risultato indica il peso prima degli arrotondamenti e del minimo fatturabile. Restano validi limiti di dimensioni e costi dei servizi. Conferma il preventivo attuale su Sugargoo.",
     "weightError": "Inserire un numero positivo in ogni campo di misura.",
-    "officialEstimatorGuide": "Apri la guida ufficiale al calcolatore delle spedizioni"
+    "officialEstimatorGuide": "Apri la guida ufficiale al calcolatore delle spedizioni",
+    "navQc": "Foto di controllo qualità",
+    "navShipping": "Spedizione",
+    "priceSortedCta": "Sfoglia i prezzi dal più basso al più alto"
   },
   "groups": {
     "basics": "Primi passi",
@@ -444,8 +447,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Come usare uno Spreadsheet Sugargoo: cercare e ordinare",
-      "description": "Utilizzare un foglio di calcolo Sugargoo per trovare link di prodotto, controllare le dimensioni e le opzioni di venditore, aprire la pagina di ordine corretto, e rivedere magazzino QC prima della spedizione.",
+      "title": "Guida al foglio di calcolo di Sugargoo: trova link, controlla le taglie e acquista",
+      "description": "Usa un foglio di calcolo di Sugargoo per trovare link ai prodotti, ordinare i prezzi, confrontare le taglie di abbigliamento e controllare la qualità del tuo magazzino prima della spedizione.",
       "keyword": "foglio prodotti Sugargoo",
       "category": "getting-started",
       "intro": [
@@ -465,6 +468,19 @@
             "Controllo: corrisponde alla lista originale, le opzioni e il prezzo corrente dell'ordine.",
             "Ordine: utilizzare il flusso di acquisto ufficiale per un elemento idoneo.",
             "Recensione: ispezionare il proprio magazzino QC prima di fare un pacco."
+          ]
+        },
+        {
+          "id": "spreadsheet-budget-shortlist",
+          "title": "Crea una lista di prodotti in base a prezzo e vestibilità",
+          "paragraphs": [
+            "Usa il catalogo ordinato per prezzo quando hai un budget per i prodotti, quindi restringi la ricerca per categoria o termine di ricerca. Verifica l'opzione selezionata nella pagina di acquisto: il prezzo più basso visualizzato potrebbe corrispondere a una taglia, un colore o una quantità diversi. Considera separatamente il prezzo del prodotto e il budget di spedizione.",
+            "Per l'abbigliamento, salva la tabella del venditore con il link esatto dell'inserzione e confrontala con un capo simile che possiedi. Contrassegna ogni candidato con un'azione successiva, come ad esempio verificare la lunghezza delle maniche o confermare la quantità inclusa. In questo modo, la directory diventa una pratica checklist per gli acquisti, anziché una raccolta sempre più ampia di link non verificati."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/articles/sugargoo-finds-under-20/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -551,7 +567,7 @@
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/spreadsheet/",
         "/category/shoes/"
@@ -658,8 +674,8 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Come controllare le foto QC Sugargoo prima della spedizione",
-      "description": "Trova le foto QC del magazzino di Sugargoo, controlla l'articolo e le dimensioni corrette, richiedi misure aggiuntive utili e risolvi i problemi prima della spedizione internazionale.",
+      "title": "Foto di controllo qualità Sugargoo: dove trovarle e cosa controllare",
+      "description": "Trova le foto di controllo qualità Sugargoo del tuo ordine, verifica la variante e le misure corrette e richiedi prove chiare prima di autorizzare la spedizione internazionale.",
       "keyword": "foto QC Sugargoo",
       "category": "quality",
       "intro": [
@@ -678,6 +694,18 @@
             "Controllare che ogni foto appartiene allo stesso ordine e variante.",
             "Richiedo una visione ravvicinata di un sospetto difetto, identificando la sua posizione.",
             "Tenere gli oggetti irrisolti fuori dal pacco fino a quando non si ha una risposta."
+          ]
+        },
+        {
+          "id": "qc-photo-request",
+          "title": "Trasforma una foto poco chiara in una richiesta precisa",
+          "paragraphs": [
+            "Apri le foto allegate al tuo ordine nel magazzino o nell'area ordini. Le immagini di riferimento del catalogo ti aiutano a sfogliare, ma non dimostrano le condizioni o le misure dell'articolo che ti è arrivato. Innanzitutto, confronta l'identificativo dell'articolo, il colore selezionato, la taglia e la quantità con i dati dell'ordine.",
+            "Per la vestibilità dell'abbigliamento, richiedi la misura esatta che potrebbe influenzare la tua decisione: circonferenza del torace con il punto zero del metro visibile, lunghezza del corpo da un punto di partenza specificato o girovita rilassato. Per le scarpe, tieni separate la lunghezza del piede, la lunghezza della soletta e le conversioni delle etichette delle taglie. Verifica i servizi e le tariffe disponibili, quindi confronta il risultato con un riferimento misurato nello stesso modo."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-shoe-size-guide/"
           ]
         },
         {
@@ -764,17 +792,17 @@
         "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
-        "/articles/sugargoo-shoe-size-guide/",
-        "/category/shoes/"
+        "/articles/sugargoo-clothing-size-guide/",
+        "/category/hoodies-sweaters/"
       ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Calcolatore spedizioni Sugargoo: peso e costi",
-      "description": "Confronta il peso effettivo del pacco con il peso volumetrico. Usa il divisore e la regola di fatturazione della rotta scelta. Questo strumento non calcola i prezzi di spedizione.",
+      "title": "Calcolatore di spedizione Sugargoo: Peso effettivo vs. Peso volumetrico",
+      "description": "Calcola il peso del pacco, confronta la fatturazione del peso effettivo e di quello volumetrico e raccogli i dati necessari per un preventivo di spedizione Sugargoo aggiornato.",
       "keyword": "calcolatore spedizione Sugargoo",
       "category": "shipping",
       "intro": [
@@ -793,6 +821,18 @@
             "Utilizzare dimensioni esterne imballate in centimetri, non dimensioni del prodotto.",
             "Converti i grammi in chilogrammi: 3000 g equivalgono a 3 kg.",
             "Prendere il divisore e la regola di ricarica dal percorso che si sta prendendo in considerazione."
+          ]
+        },
+        {
+          "id": "calculator-quote-handoff",
+          "title": "Inserisci il calcolo in un preventivo per la rotta corrente.",
+          "paragraphs": [
+            "Il calcolatore sopra riportato spiega il peso; non recupera le tariffe di spedizione in tempo reale. Dopo il calcolo, apri il calcolatore ufficiale con la destinazione, il contenuto e le dimensioni dell'imballaggio. Utilizza il divisore, la tariffa minima e i termini di arrotondamento della rotta selezionata, anziché presumere che un'unica formula descriva tutti i servizi.",
+            "Annota il totale del preventivo e cosa include. Confronta le rotte con gli stessi dati di input, quindi aggiorna il preventivo dopo aver modificato il pacco. Per le spedizioni nella Repubblica Ceca, consulta anche le linee guida aggiornate sulla destinazione, disponibili al link sottostante; una vecchia regola di importazione per basso valore o il pagamento di un altro acquirente non sono un preventivo affidabile per il tuo pacco."
+          ],
+          "actions": [
+            "/articles/sugargoo-rehearsal-shipping/",
+            "/articles/sugargoo-shipping-to-czechia/"
           ]
         },
         {
@@ -879,7 +919,7 @@
         "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-rehearsal-shipping/",
         "/articles/sugargoo-shipping-to-usa/"
@@ -888,8 +928,8 @@
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Simulazione imballaggio Sugargoo: come funziona e quando conviene",
-      "description": "Scopri cosa fa la spedizione di prove Sugargoo, quando vale la pena pagare, e come utilizzare peso e dimensioni imballate prima di scegliere una rotta di spedizione.",
+      "title": "Prova di spedizione Sugargoo: passaggi, costi e quando utilizzarla",
+      "description": "Scopri quando la prova di spedizione Sugargoo è utile, cosa verificare prima di pagare e come confrontare il risultato dell'imballaggio con il preventivo di spedizione finale.",
       "keyword": "simulazione spedizione Sugargoo",
       "category": "shipping",
       "intro": [
@@ -924,6 +964,18 @@
               ]
             ]
           }
+        },
+        {
+          "id": "rehearsal-next-decision",
+          "title": "Utilizza il risultato della prova per prendere la decisione successiva",
+          "paragraphs": [
+            "Prima di richiedere la prova, consulta la tariffa di servizio corrente nel tuo account. Il vantaggio è quello di avere informazioni di imballaggio più chiare: confronta il peso effettivo, le dimensioni esterne, la regola di fatturazione del percorso e gli eventuali servizi selezionati. Una prova a pagamento non garantisce di per sé un costo di spedizione finale inferiore.",
+            "Se il risultato differisce dalla tua stima, individua il motivo prima di cambiare percorso. La scatola era più grande del previsto, l'imballaggio protettivo ha aggiunto peso o il percorso utilizza un divisore diverso? Confronta contenuti e imballaggi identici tra i preventivi idonei. Se rimuovi un articolo o modifichi l'imballaggio in seguito, aggiorna le informazioni utilizzate per il preventivo finale."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-shipping-to-czechia/"
+          ]
         },
         {
           "id": "identify-the-decision",
@@ -1009,7 +1061,7 @@
         "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-shipping-calculator/",
         "/articles/sugargoo-parcel-consolidation/"
@@ -1376,8 +1428,8 @@
     {
       "id": "sugargoo-returns-refunds",
       "slug": "sugargoo-returns-refunds",
-      "title": "Resi e rimborsi Sugargoo: prove, requisiti e passaggi successivi",
-      "description": "Gestisci un articolo errato o un ordine modificato con prove chiare, verifiche condizionali di reso e un registro che distingua l’approvazione dal denaro ricevuto.",
+      "title": "Resi e rimborsi Sugargoo: prove di controllo qualità e passaggi successivi",
+      "description": "Verifica lo stato del tuo ordine, documenta un problema di taglia o di condizioni e comprendi i passaggi successivi per il reso o il rimborso prima della spedizione internazionale.",
       "keyword": "rimborso Sugargoo",
       "category": "account",
       "intro": [
@@ -1391,6 +1443,18 @@
           "paragraphs": [
             "Prima di contattare l’assistenza, stabilisci se l’ordine è in attesa di acquisto, già acquistato, spedito dal venditore, ricevuto in magazzino o inviato all’estero. Cancellare un acquisto non completato è diverso dal restituire beni fisici. Usa stato e data effettivi dell’ordine, senza presumere che premere un pulsante abbia annullato la transazione.",
             "La guida ufficiale Sugargoo alla cancellazione descrive un processo nell’account, mentre la guida ai resi distingue le fasi successive di restituzione e rimborso. Apri l’ordine pertinente e usa l’azione ufficiale disponibile. Se l’opzione manca o lo stato non è chiaro, chiedi all’assistenza cosa sia possibile per quell’ordine specifico prima di organizzare qualcosa autonomamente."
+          ]
+        },
+        {
+          "id": "return-size-evidence",
+          "title": "Documenta un problema di taglia prima di richiedere una soluzione.",
+          "paragraphs": [
+            "Conserva la variante selezionata, la tabella delle misure del venditore e le foto di controllo qualità del tuo ordine. Spiega se è arrivata l'opzione sbagliata o se l'etichetta corretta riporta misure diverse da quelle indicate nell'inserzione. Confronta gli stessi punti di misurazione; una larghezza e una circonferenza misurate in piano non sono sufficienti a stabilire una discrepanza.",
+            "Chiedi quali opzioni di reso o cambio sono disponibili per quell'ordine, inclusi i termini, i costi nazionali e le azioni successive necessarie. Registra la risposta e qualsiasi voce di rimborso separata. Non considerare l'approvazione di una richiesta come prova che tutti i costi siano già stati rimborsati e risolvi le questioni sostanziali prima della spedizione internazionale."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-order-status/"
           ]
         },
         {
@@ -1473,7 +1537,11 @@
         "sugargoo-fees-payment"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-18"
+      "updated": "2026-11-09",
+      "actions": [
+        "/articles/sugargoo-qc-photos/",
+        "/articles/sugargoo-order-status/"
+      ]
     },
     {
       "id": "weidian-taobao-links-sugargoo",
@@ -2304,6 +2372,10 @@
           "paragraphs": [
             "Aprire la pagina del prodotto originale e salvare il grafico delle dimensioni che appartiene a quel modello. Controllare se le sue misure descrivono il piede, il sottopiede o l'esterno della scarpa. Controllare anche se il sistema di dimensionamento è per gli uomini, donne o bambini. Una tabella di un altro modello può creare una corrispondenza falsa anche quando le etichette delle dimensioni sono uguali.",
             "Se il grafico non è chiaro, chiedere al venditore o agente che cosa ogni colonna significa prima di ordinare. Non aggiungere una quota standard ad ogni grafico: il venditore può già aver costruito una quota nella sua raccomandazione. La tua vestibilità scelta, i calzini e la forma della scarpa contano."
+          ],
+          "actions": [
+            "/category/shoes/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -2409,6 +2481,443 @@
       "actions": [
         "/category/shoes/",
         "/articles/sugargoo-qc-photos/"
+      ]
+    },
+    {
+      "id": "sugargoo-clothing-size-guide",
+      "slug": "sugargoo-clothing-size-guide",
+      "title": "Taglie dei vestiti su Sugargoo: misure e controlli QC",
+      "description": "Scegli le taglie di abbigliamento utilizzando le misure del venditore, confronta un capo che possiedi e richiedi foto utili di controllo qualità a Sugargoo prima della spedizione internazionale.",
+      "keyword": "sugargoo clothing size guide",
+      "category": "quality",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Inizia con le misure di un capo che ti veste bene, quindi confrontale con la tabella delle taglie esatta del venditore. Una lettera di taglia familiare non è sufficiente: una felpa con cappuccio di taglia M e una maglia di taglia M possono avere larghezze, lunghezze e tagli molto diversi. Questa guida alle taglie di Sugargoo trasforma queste differenze in una pratica lista di controllo per l'ordine.",
+        "Utilizza le foto dell'inserzione per scegliere uno stile, la tabella delle taglie per selezionare una variante e il tuo controllo qualità in magazzino per verificare ciò che è arrivato. Questi sono tre diversi tipi di prove. Gli esempi di confronto riportati di seguito illustrano un metodo; non si tratta di misure di prodotti attualmente offerti nel catalogo."
+      ],
+      "sections": [
+        {
+          "id": "measure-reference",
+          "title": "Misura un capo di riferimento prima di iniziare la ricerca",
+          "paragraphs": [
+            "Scegli un capo che ti piace indossare e che appartenga alla stessa categoria. Una t-shirt aderente non è un buon riferimento per una felpa invernale indossata sopra un altro strato. Stendi il capo su una superficie piana, liscia le pieghe evidenti senza tirare il tessuto e scatta una foto nitida di ogni misura. Annota se è già stato lavato e se il tessuto è elastico.",
+            "Annota i punti di misurazione e il numero. Per una semplice maglia, misura la larghezza del petto sotto le ascelle, quindi misura la lunghezza del corpo da un punto della spalla ben identificato fino all'orlo. Usa gli stessi punti di riferimento quando consulti la tabella delle taglie del venditore. Una cucitura curva, una spalla scesa o un orlo irregolare possono rendere due misure di lunghezza apparentemente simili non confrontabili.",
+            "Tieni a portata di mano questo piccolo foglio di riferimento mentre cerchi. Se cambi la vestibilità desiderata da regolare a oversize, cambia anche il capo di riferimento. Aggiungere un numero casuale di centimetri a ogni dimensione può produrre maniche troppo lunghe senza fornire lo spazio extra sul petto desiderato."
+          ],
+          "actions": [
+            "/category/t-shirts/",
+            "/category/hoodies-sweaters/"
+          ]
+        },
+        {
+          "id": "read-size-chart",
+          "title": "Leggere attentamente la tabella del venditore senza confondere le misure.",
+          "paragraphs": [
+            "Innanzitutto, accertarsi se la tabella si riferisce a una persona o al capo finito. La circonferenza del torace di un corpo non corrisponde alla larghezza del torace di un capo steso. Allo stesso modo, una tabella che mostra la circonferenza di un capo non può essere confrontata direttamente con una singola misura stesa. Raddoppiando una larghezza stesa, si ottiene solo una semplice approssimazione della circonferenza; non descrive la forma, l'elasticità o la vestibilità del capo.",
+            "Verificare le unità di misura, l'opzione di prodotto esatta e l'eventuale tolleranza di misura indicata dal venditore. Non copiare una tabella da un'inserzione visivamente simile. Lotti o tagli diversi possono utilizzare specifiche diverse. Se la tabella è un'immagine, ingrandirla e leggere le intestazioni di colonna prima di tradurle; un'etichetta tradotta senza il relativo diagramma di misurazione può comunque risultare ambigua.",
+            "Le etichette comuni includono circonferenza torace o busto, spalle, lunghezza del capo, lunghezza della manica, vita, fianchi, altezza del cavallo e lunghezza dei pantaloni. Scrivi il significato accanto alle misure salvate. Se il diagramma non è presente e due interpretazioni porterebbero a taglie diverse, chiedi chiarimenti prima di pagare. Andare a tentoni diventa più costoso una volta che l'ordine raggiunge la spedizione internazionale."
+          ]
+        },
+        {
+          "id": "fit-example",
+          "title": "Un confronto pratico: larghezza e lunghezza insieme",
+          "paragraphs": [
+            "Prendiamo come esempio una maglietta di riferimento che misura 54 cm di larghezza sul torace e 70 cm di lunghezza. Supponiamo che la tabella di un venditore elenchi un'opzione da 52 cm e 68 cm e un'altra da 56 cm e 72 cm, utilizzando gli stessi punti di misurazione. La prima opzione è più stretta e più corta del tuo riferimento; la seconda è più larga e più lunga. Nessuna delle due è automaticamente corretta solo perché la lettera della taglia corrisponde alla tua scelta abituale.",
+            "Ora decidi quale differenza è importante per te. Se il riferimento ti sembra già corto, l'opzione più corta merita maggiore attenzione. Se la larghezza del torace è vicina al limite massimo di vestibilità comoda, l'opzione più ampia potrebbe non risultare adatta. Confronta le misure di spalle e maniche prima di scegliere. Si tratta di una decisione che riguarda diverse dimensioni, non è una regola che impone di scegliere sempre una taglia in più.",
+            "Lascia visibili nelle tue note le differenze non risolte. Ad esempio, scrivi \"torace accettabile, misura manica mancante\" invece di contrassegnare l'intero capo come approvato. In questo modo potrai richiedere le informazioni mancanti senza ripetere controlli che erano già stati effettuati correttamente. Questi numeri di esempio sono inventati per l'aritmetica e non rappresentano un consiglio di taglia da parte del venditore."
+          ]
+        },
+        {
+          "id": "category-checks",
+          "title": "Scegli i controlli che corrispondono alla categoria di abbigliamento.",
+          "paragraphs": [
+            "Le felpe con cappuccio necessitano di spazio per lo strato che intendi indossare sotto. Confronta la larghezza del torace, la lunghezza della manica, la larghezza dell'orlo e la lunghezza del corpo con una felpa con cappuccio simile. Una spalla scesa modifica il punto di inizio della misurazione della manica, quindi confronta lo schema completo invece di considerare la larghezza della spalla e la lunghezza della manica come garanzie indipendenti di vestibilità.",
+            "Per pantaloni e pantaloncini, distingui una cintura rilassata da una misura tesa. Confronta vita, fianchi, altezza del cavallo anteriore, interno gamba e apertura della gamba quando questi dettagli influenzano la vestibilità. La sola misura della vita non indica se le cosce saranno comode. Per le maglie, controlla il taglio e la lunghezza desiderati, oltre alla larghezza del torace; La vestibilità di una maglietta sportiva può differire da quella di una t-shirt casual.",
+            "Le giacche sollevano ulteriori interrogativi sulla stratificazione e sulla libertà di movimento. Una fotografia non può mostrare con quanta comodità si possono alzare le braccia o chiudere la giacca sopra un maglione. Utilizzare una giacca di riferimento comparabile, esaminare i materiali indicati e considerare le informazioni mancanti come incertezza, anziché presumere che ogni capo con la stessa lettera di taglia segua una tabella universale."
+          ],
+          "table": {
+            "headers": [
+              "Tipo di abbigliamento",
+              "Confronto utile",
+              "Errore comune"
+            ],
+            "rows": [
+              [
+                "T-shirt e maglie",
+                "Larghezza del torace, lunghezza del corpo e maniche",
+                "Scegliere solo in base ad altezza e peso"
+              ],
+              [
+                "Felpe con cappuccio e giacche",
+                "Spazio per la sovrapposizione di strati, maniche e orlo",
+                "Abbinare spalle scese e spalle standard"
+              ],
+              [
+                "Pantaloni e pantaloncini",
+                "Vita, fianchi, altezza del cavallo e interno gamba",
+                "Confronto tra cinture tese e rilassate"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "request-clothing-qc",
+          "title": "Richiedi foto di controllo qualità che possano rispondere alla tua domanda sulla vestibilità",
+          "paragraphs": [
+            "Le linee guida di controllo qualità di Sugargoo descrivono i controlli dell'articolo ricevuto e le richieste di prove aggiuntive. Verifica i servizi disponibili per il tuo ordine, inclusi eventuali costi, prima di richiedere ulteriori fotografie. Richiedi una misura specifica con punti finali visibili invece di chiedere se l'articolo è \"della taglia giusta\". Il personale non può dedurre le tue preferenze di vestibilità personali da quella frase.",
+            "Una richiesta utile è: stendi il capo in piano senza allungarlo, mostra la misura completa del metro da un bordo del petto all'altro appena sotto le ascelle e includi l'etichetta della taglia in una fotografia separata. Per la lunghezza, indica il punto di partenza utilizzato sul capo di riferimento. Per i pantaloni, specifica se desideri che la cintura sia rilassata o allungata.",
+            "Ispeziona l'immagine stessa prima di fidarti della misura. Il punto zero dovrebbe essere visibile, il metro dovrebbe seguire la linea prevista e le pieghe non dovrebbero nascondere l'orlo. Se la prospettiva o un metro piegato rendono impossibile valutare una piccola differenza, richiedi un'immagine corretta. Ulteriori fotografie dalla stessa angolazione poco chiara non rendono la misurazione più affidabile."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "resolve-sizing-issues",
+          "title": "Risolvi una discrepanza finché le prove sono utili.",
+          "paragraphs": [
+            "Conserva insieme l'opzione selezionata, la tabella del venditore, il numero d'ordine e le relative immagini di controllo qualità. Separa un'etichetta errata da un capo che ha l'etichetta corretta ma dimensioni inaspettate. Spiega la discrepanza utilizzando lo stesso metodo di misurazione su entrambi i lati. Un confronto breve e specifico aiuta l'assistenza clienti o il venditore a comprendere meglio il problema rispetto a una generica lamentela sulla taglia dell'articolo.",
+            "Non dare per scontato che un reso, un cambio o un rimborso siano automatici. Idoneità, tempistiche, costi e gestione dipendono dall'ordine e dalle condizioni del venditore. Chiedi quali soluzioni sono disponibili prima di spedire l'articolo con un pacco internazionale. Se decidi di tenerlo, specifica perché la differenza residua è accettabile, invece di considerare un problema irrisolto come prova di una buona vestibilità.",
+            "Infine, distingui il controllo qualità visibile da un test di utilizzo. Le foto di magazzino non possono stabilire la durata nel tempo, il restringimento dopo il lavaggio o il comfort personale. Leggi le istruzioni per la cura del capo, ove disponibili, e conserva la ricevuta d'ordine. Per il tuo prossimo acquisto, aggiorna le tue misure di riferimento con un capo che hai effettivamente ricevuto e indossato; questo renderà i confronti futuri più utili, evitando di basarti su stereotipi di taglia generici."
+          ],
+          "actions": [
+            "/articles/sugargoo-returns-refunds/"
+          ]
+        }
+      ],
+      "checklist": [
+        "Utilizza un capo simile che si adatti allo stile desiderato.",
+        "Confronta unità di misura, punti finali e larghezza in piano rispetto alla circonferenza. ",
+        "Prima di effettuare il pagamento, verificare la variante esatta e la tabella del venditore.",
+        "Per le dimensioni non definite, richiedere le misure specifiche del magazzino.",
+        "Risolvere eventuali discrepanze di materiale prima della spedizione internazionale."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: come leggere le tabelle delle taglie di Taobao",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: foto, video e richieste di misure",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: controlli di qualità e i loro limiti",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: resi e rimborsi",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shoe-size-guide"
+      ],
+      "actions": [
+        "/category/hoodies-sweaters/",
+        "/category/pants-shorts/"
+      ]
+    },
+    {
+      "id": "sugargoo-finds-under-20",
+      "slug": "sugargoo-finds-under-20",
+      "title": "Sugargoo: articoli a meno di 20 $: prezzo, taglia e controlli prima dell'acquisto",
+      "description": "Trova articoli Sugargoo a meno di 20 $ utilizzando i link dei prodotti ordinati per prezzo. Verifica la variante esatta, le misure, il controllo qualità e la spedizione prima di decidere cosa è conveniente.",
+      "keyword": "sugargoo finds under 20",
+      "category": "getting-started",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "In questa guida, \"meno di 20 $\" significa un prezzo del prodotto visualizzato inferiore a 20 $, escluse le spese aggiuntive. Non significa che il pacco costerà meno di 20 $ con la consegna. Utilizza il catalogo live ordinato per prezzo per creare una lista dei desideri, quindi verifica la variante esatta e il prezzo corrente sulla pagina di acquisto.",
+        "Questo è un metodo di selezione, non un elenco fisso di prodotti presumibilmente testati. I prezzi e la disponibilità del catalogo possono variare. Gli esempi spiegano come confrontare costi e incertezze; non si tratta di offerte reali, recensioni o promesse che un determinato venditore accetterà un ordine."
+      ],
+      "sections": [
+        {
+          "id": "find-budget-links",
+          "title": "Iniziate con il catalogo ordinato per prezzo.",
+          "paragraphs": [
+            "Aprite il catalogo utilizzando il link di ordinamento per prezzo più basso qui sotto. Cercate il tipo di prodotto che vi serve o restringete l'elenco a una categoria pertinente. Un accessorio economico non è un valido sostituto della felpa che siete venuti ad acquistare. Iniziate dall'utilizzo previsto, quindi confrontate i prezzi all'interno di quel gruppo in modo che la lista ristretta contenga alternative valide.",
+            "Aprite la pagina di ciascun prodotto candidato e seguite il link di acquisto disponibile. Confermate il titolo, l'identificativo dell'articolo, il colore selezionato, la taglia e la quantità. Alcune inserzioni mostrano il prezzo più basso anche se la variante che vi serve costa di più. Una scheda che mostra un prezzo inferiore a 20 dollari è solo un punto di partenza finché non avrete verificato l'opzione esatta.",
+            "Salva tre o quattro candidati plausibili invece di raccogliere decine di link. Annota il motivo per cui ciascuno potrebbe funzionare e il dubbio che potrebbe escluderlo. Ad esempio: misure adatte, ma mancano i dettagli sul tessuto. Un elenco breve con domande esplicite è più facile da verificare rispetto a un lungo elenco ordinato solo in base a immagini accattivanti."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/category/accessories/?sort=price"
+          ]
+        },
+        {
+          "id": "under-20-budget",
+          "title": "Separa il budget per il prodotto dal budget per la consegna.",
+          "paragraphs": [
+            "Stabilisci due limiti: il prezzo massimo dell'articolo e l'importo totale massimo che sei disposto a spendere. Il primo ti aiuta a navigare; il secondo ti aiuta a decidere se l'acquisto ha senso. Considera le spese di spedizione nazionali, ove previste, i costi di pagamento o di servizio mostrati al momento del checkout, i servizi opzionali, la spedizione internazionale e le spese di destinazione applicabili al pacco.",
+            "Considera un confronto puramente esemplificativo. L'articolo A è elencato a $12 e l'articolo B a $17. Se A richiede $9 di costi aggiuntivi mentre B richiede $3 di costi aggiuntivi con lo stesso metodo di confronto, i totali sono $21 e $20. Queste cifre non sono le tariffe di Sugargoo. Questi esempi dimostrano perché un prezzo unitario inferiore non si traduce necessariamente in un totale inferiore.",
+            "Quando più articoli vengono spediti insieme, non presentare una ripartizione arbitraria e uguale come prezzo di spedizione per ciascun prodotto. Mantieni visibile il totale del pacco e specifica come è stata ripartita l'eventuale quota condivisa. Per una decisione di acquisto, confronta il preventivo di spedizione con e senza l'articolo aggiuntivo, una volta che siano disponibili dati significativi su peso e dimensioni."
+          ],
+          "table": {
+            "headers": [
+              "Riga di budget",
+              "Cosa controllare",
+              "Quando aggiornare"
+            ],
+            "rows": [
+              [
+                "Prodotto e opzione selezionata",
+                "Taglia, colore, quantità e valuta esatti",
+                "Prima di effettuare l'ordine"
+              ],
+              [
+                "Servizi nazionali e opzionali",
+                "Costi effettivamente visualizzati per l'ordine",
+                "Prima di scegliere servizi a pagamento"
+              ],
+              [
+                "Spese di spedizione internazionali e costi di destinazione",
+                "Misure del pacco e termini di spedizione attuali",
+                "Prima di pagare la spedizione"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-cheap-clothing",
+          "title": "Usa le misure per confrontare i capi economici",
+          "paragraphs": [
+            "Un prezzo basso non rende automaticamente una taglia inadatta un affare. Per t-shirt, felpe con cappuccio e maglie, confronta le misure del venditore con un capo simile che già possiedi. Nota se un numero indica la larghezza o la circonferenza. Evita di selezionare una lettera più grande solo perché qualcun altro consiglia di prendere una taglia in più senza identificare il venditore e l'inserzione esatta.",
+            "Per pantaloni e pantaloncini, controllate più della semplice circonferenza della vita. Altezza del cavallo, larghezza dei fianchi, lunghezza della gamba e apertura della gamba possono influenzare la vestibilità anche quando la circonferenza della vita nominale sembra corretta. Se un'inserzione fornisce solo una lettera di taglia e nessuna misura utile, tenete conto di queste informazioni mancanti nella vostra decisione. Potreste preferire un'opzione leggermente più costosa con dati più chiari.",
+            "Per gli accessori, verifica le dimensioni e cosa è incluso nell'acquisto. Una fotografia potrebbe mostrare diversi pezzi, mentre l'opzione selezionata ne contiene solo uno. Leggi la descrizione dell'opzione e il riepilogo dell'ordine. Lo scopo del confronto è capire l'articolo che riceverai, non dedurre il valore dal numero di oggetti in una foto di riferimento."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/category/t-shirts/?sort=price"
+          ]
+        },
+        {
+          "id": "cheap-qc-evidence",
+          "title": "Decidi quali elementi di controllo qualità potrebbero influenzare la tua scelta.",
+          "paragraphs": [
+            "Prima di ordinare, elenca i due o tre elementi più importanti. Un capo di abbigliamento potrebbe richiedere un'etichetta con la taglia e la misura del torace ben visibili; un accessorio potrebbe richiedere una verifica delle dimensioni e una vista della sua chiusura. Quando l'ordine arriva in magazzino, confronta l'articolo ricevuto con la variante selezionata e con le informazioni dell'inserzione salvate.",
+            "Le linee guida sul controllo qualità pubblicate da Sugargoo sono utili per capire cosa possono mostrare i controlli in magazzino. Conferma le opzioni di servizio disponibili per il tuo ordine prima di pagare per ulteriori elementi di controllo qualità. Richiedi una foto ravvicinata o una misurazione che risponda a una domanda specifica ancora irrisolta. Ripetere una richiesta generica di foto di migliore qualità può causare ritardi senza migliorare la decisione.",
+            "Un prezzo basso e una fotografia nitida non garantiscono autenticità, durata o sicurezza. Evitate di descrivere articoli non testati come i migliori, verificati o garantiti solo perché esiste una pagina prodotto. Se l'uso previsto dipende da prestazioni che le foto non possono dimostrare, richiedete la documentazione del prodotto o scegliete un'alternativa con prove che potete valutare."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "small-haul-costs",
+          "title": "Verificate il costo dell'aggiunta di un altro articolo economico.",
+          "paragraphs": [
+            "Un articolo extra economico occupa comunque spazio e aggiunge peso. Prima di aggiungerlo a un pacco, considerate l'articolo e il suo imballaggio insieme. Un oggetto ingombrante e di basso costo può modificare il peso tassabile o far superare al pacco il limite di peso previsto per il percorso. La rimozione dell'imballaggio può compromettere la protezione, quindi non date per scontato che ogni riduzione di volume si traduca in un risparmio sensato.",
+            "Utilizzate il calcolatore di peso per comprendere i calcoli, quindi utilizzate la stima ufficiale del percorso per i prezzi. Il calcolatore su questo sito spiega il peso effettivo e volumetrico; non è un servizio di tariffe in tempo reale. Inserite il divisore e la regola di fatturazione per il percorso che state confrontando, invece di considerare un divisore comune come universale.",
+            "Se l'incertezza sull'imballaggio è sufficientemente elevata da modificare la decisione, valuta il servizio di prova disponibile e il relativo costo. Richiedilo dopo aver deciso quali articoli intendi conservare. La prova può migliorare le informazioni sull'imballaggio utilizzate nel preventivo, ma pagarla non garantisce un totale inferiore. Confronta le informazioni ottenute con il costo e l'incertezza residua."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "budget-decision",
+          "title": "Conservare, esaminare o scartare: una semplice regola per la selezione",
+          "paragraphs": [
+            "Contrassegna un candidato come \"da conservare\" solo quando le sue opzioni esatte, le misure e il totale previsto soddisfano i tuoi requisiti. Contrassegnalo come \"da esaminare\" quando una risposta potrebbe cambiare la decisione. Contrassegnalo come \"da scartare\" quando la mancanza di prove, le dimensioni non idonee o il costo totale lo rendono inadatto. Questa regola impedisce che il prezzo iniziale basso determini da solo la decisione.",
+            "Se un articolo acquistato presenta un problema, documentalo tempestivamente e verifica le opzioni di reso o sostituzione per quell'ordine. Un articolo economico può comunque risultare costoso da restituire rispetto al suo prezzo di acquisto. Confronta qualsiasi soluzione proposta e il relativo costo prima di procedere; Non dare per scontato che un rimborso futuro elimini il rischio di un acquisto poco chiaro.",
+            "Rivedi i link salvati al momento del pagamento, invece di presumere che un prezzo rimanga valido indefinitamente. Conserva la prova d'ordine e aggiorna la lista dei preferiti quando un venditore cambia opzioni o disponibilità. Il risultato utile di una guida al budget è un acquisto che si adatti alle tue esigenze e al tuo budget totale, anche se ciò significa acquistare meno articoli o non utilizzare un link a basso prezzo interessante.",
+            "Rivedi la lista dei preferiti immediatamente prima del pagamento. Se la variante scelta cambia, ripeti i controlli di prezzo e taglia invece di applicare la decisione precedente a un articolo diverso. Un limite di budget utile dovrebbe rimanere valido anche nel riepilogo finale dell'ordine."
+          ]
+        }
+      ],
+      "checklist": [
+        "Considera \"meno di 20 $\" come filtro per il prezzo dell'articolo, non come una promessa di prezzo di consegna.",
+        "Verifica la variante e la quantità esatte nella pagina di acquisto.",
+        "Confronta le misure con un articolo di riferimento adatto.",
+        "Calcola il budget per l'intero pacco e le spese di spedizione applicabili.",
+        "Utilizza prezzi e dati aggiornati anziché una vecchia classifica."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: il processo di ordinazione",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: come leggere le tabelle delle taglie di Taobao",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: controlli di qualità e i loro limiti",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: stima delle spese di spedizione internazionali",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulazione del pacco prima della spedizione",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: resi e rimborsi",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "sugargoo-clothing-size-guide"
+      ],
+      "actions": [
+        "/spreadsheet/?sort=price",
+        "/category/hoodies-sweaters/?sort=price"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-czechia",
+      "slug": "sugargoo-shipping-to-czechia",
+      "title": "Spedizione Sugargoo in Repubblica Ceca: costi, percorsi e tracciamento",
+      "description": "Pianifica la spedizione di Sugargoo nella Repubblica Ceca con verifiche del peso del pacco, preventivi aggiornati per le diverse rotte, informazioni doganali e una pratica lista di controllo per il tracciamento.",
+      "keyword": "sugargoo shipping to czech republic",
+      "category": "shipping",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Per stimare i costi di spedizione di Sugargoo nella Repubblica Ceca, seleziona la Repubblica Ceca come destinazione nel calcolatore ufficiale e utilizza il contenuto, il peso e le dimensioni del tuo pacco. Non esiste un prezzo di spedizione o un tempo di consegna unico valido per tutti gli ordini nella Repubblica Ceca.",
+        "Questa guida ti aiuta a raccogliere le informazioni corrette, confrontare le rotte disponibili e conservare i documenti necessari dopo la spedizione. La disponibilità delle rotte, i costi e le normative di importazione possono variare. Gli esempi seguenti illustrano i metodi di confronto; non si tratta di preventivi aggiornati dei corrieri né di una garanzia di disponibilità di un servizio specifico."
+      ],
+      "sections": [
+        {
+          "id": "czech-start",
+          "title": "Prepara le informazioni relative alla destinazione e al pacco.",
+          "paragraphs": [
+            "Utilizza l'indirizzo di consegna completo del destinatario e il relativo codice postale. Verifica il numero civico, eventuali dettagli dell'appartamento e un numero di telefono utilizzabile dal corriere. Assicurati che il nome del destinatario corrisponda a quello utilizzato per la spedizione e a eventuali documenti di sdoganamento richiesti. Un indirizzo salvato merita un ulteriore controllo prima di ogni spedizione.",
+            "Elenca il contenuto previsto prima di confrontare i percorsi. La categoria del prodotto, i materiali, le batterie, i liquidi e altri requisiti di movimentazione possono influire sull'idoneità. Leggi le restrizioni visualizzate per il servizio selezionato e chiedi chiarimenti su eventuali articoli non chiari prima di pagare. Un percorso che appare in un confronto generale non è una conferma che accetti il contenuto specifico del tuo pacco.",
+            "Conserva insieme l'identificativo dell'ordine, la descrizione, la quantità e la registrazione effettiva dell'acquisto di ogni articolo. Questo semplifica la risposta a una successiva richiesta senza dover ricostruire la cronologia degli ordini da screenshot. Utilizza informazioni accurate durante tutto il processo. Non modificare descrizioni o valori solo per far sembrare un percorso più economico o per imitare la dichiarazione di un altro acquirente."
+          ]
+        },
+        {
+          "id": "czech-weight",
+          "title": "Comprendi il peso che verrà addebitato per un percorso.",
+          "paragraphs": [
+            "La somma dei pesi dei prodotti non corrisponde necessariamente al peso finale del pacco. L'imballaggio esterno e i materiali di protezione aggiungono peso, mentre le dimensioni del pacco finito possono essere rilevanti separatamente. Richiedi le dimensioni del pacco quando sono necessarie per il calcolo del percorso. Utilizza centimetri e chilogrammi in modo coerente, in modo che un'eventuale discrepanza tra le unità di misura non falsifichi il confronto.",
+            "Un pacco di esempio di 40 × 30 × 25 cm ha un volume di 30.000 centimetri cubi. Se un ipotetico percorso utilizza un divisore di 6.000, il suo peso volumetrico sarebbe di 5 kg. Se il peso effettivo del pacco è di 3 kg e quel percorso applica la cifra più alta, il peso iniziale sarebbe di 5 kg prima dell'arrotondamento. Questi sono esempi di input, non la tariffa di un percorso ceco.",
+            "Un altro percorso potrebbe utilizzare un divisore diverso, basarsi solo sul peso effettivo, applicare tariffe minime o limiti dimensionali differenti. Leggi le regole specificate prima di confrontare i prezzi visualizzati. Il calcolatore di peso presente sul sito può essere d'aiuto con i calcoli, ma il preventivo attuale di Sugargoo determina il prezzo e i servizi disponibili per il tuo ordine."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/"
+          ]
+        },
+        {
+          "id": "czech-route-comparison",
+          "title": "Confronta l'offerta completa dei percorsi.",
+          "paragraphs": [
+            "Invia lo stesso pacco a ciascun percorso idoneo in modo che il confronto utilizzi input coerenti. Annota il costo preventivato, il limite di peso, i limiti di dimensioni, la stima dei tempi di consegna, la copertura di tracciamento e i servizi inclusi. Prendi nota della data del confronto. Uno screenshot di un ordine precedente è utile come riferimento storico, ma non garantisce che la stessa offerta sia ancora valida.",
+            "Verifica come il preventivo descrive le tasse di destinazione, le procedure doganali e la consegna. Un nome di percorso contenente una dicitura relativa alle tasse non è sufficiente a spiegare ogni possibile costo o obbligo. Leggi attentamente i dettagli del servizio e chiedi quali importi sono inclusi nel pagamento. Conserva la risposta insieme al preventivo in modo da poter distinguere in seguito una tariffa del corriere da altri costi.",
+            "Scegli in base alle tue priorità. Un preventivo più basso con tempi di consegna meno prevedibili potrebbe essere adatto a un acquisto flessibile; una consegna urgente richiede una stima realistica per ogni fase. Evita di basare la tua pianificazione sulla consegna più veloce che trovi online. Considera le conseguenze pratiche di un eventuale ritardo nella consegna prima di decidere che un piccolo risparmio ne valga la pena. "
+          ],
+          "table": {
+            "headers": [
+              "Campo di confronto",
+              "Record per ogni percorso idoneo",
+              "Perché è importante"
+            ],
+            "rows": [
+              [
+                "Prezzo e base di fatturazione",
+                "Totale preventivato, regola effettiva o volumetrica, arrotondamento",
+                "Lo stesso pacco può essere addebitato in modo diverso"
+              ],
+              [
+                "Copertura del servizio",
+                "Tracciamento, ambito di consegna e costi inclusi",
+                "Il nome di un percorso non è una descrizione completa del servizio"
+              ],
+              [
+                "Limiti e tempistiche",
+                "Restrizioni sui contenuti, dimensioni e tempi di consegna stimati",
+                "Idoneità e tempistiche variano a seconda del pacco"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "czech-customs",
+          "title": "Consultare le attuali linee guida doganali ceche",
+          "paragraphs": [
+            "Prima di pagare la spedizione, consultare le fonti della dogana ceca indicate di seguito. Le linee guida del 2026 hanno modificato il trattamento delle importazioni di basso valore dall'e-commerce. Non fare affidamento su una vecchia dichiarazione secondo cui ogni acquisto inferiore a 150 € è esente da dazi. Dazi, IVA, gestione e procedura di dichiarazione sono questioni separate; il loro trattamento dipende dalle normative vigenti e dalla spedizione.",
+            "Chiedere al servizio selezionato come verrà gestito lo sdoganamento e quali documenti sono necessari. Conservare la fattura o la ricevuta d'ordine, la prova di pagamento e una descrizione accurata della merce. Se qualcuno richiede un documento o un pagamento, verificare la richiesta tramite il corriere o l'ufficio doganale attraverso un canale ufficiale prima di inviare informazioni.",
+            "Non dare per scontato che le spese doganali di un pacco precedente determinino quelle del successivo. Un elenco dei contenuti diverso, una categoria dichiarata diversa, una procedura di sdoganamento diversa o un diverso accordo di servizio possono modificare il calcolo. Questa guida non calcola un importo doganale vincolante. Utilizzate le istruzioni ufficiali aggiornate e la spiegazione scritta del servizio per il pacco in questione, soprattutto quando un preventivo non specifica un costo."
+          ]
+        },
+        {
+          "id": "czech-before-dispatch",
+          "title": "Completate il controllo qualità e le decisioni sull'imballaggio prima della spedizione.",
+          "paragraphs": [
+            "Controllate ogni articolo finché è ancora disponibile per la verifica in magazzino. Verificate che l'opzione e la quantità ricevute corrispondano al vostro ordine, esaminate le foto di controllo qualità pertinenti e risolvete eventuali dubbi importanti su dimensioni o condizioni. Includere un articolo non ancora risolto in un pacco può rendere più difficile una successiva risoluzione del problema. Un preventivo di spedizione non sostituisce la decisione di tenere o meno la merce.",
+            "Scegliete l'imballaggio in base al contenuto, non solo al peso desiderato. Gli articoli fragili potrebbero necessitare di protezione, mentre le scatole esterne non necessarie possono aumentare il volume. Chiedete cosa viene rimosso da una proposta di modifica dell'imballaggio e se influisce sulla protezione dell'articolo. Confrontate le informazioni di imballaggio risultanti prima di presumere che la modifica comporti un risparmio.",
+            "Se è disponibile una prova di imballaggio e l'incertezza residua sull'imballaggio è rilevante, verificate il costo e la portata attuali prima di richiederla. La guida pubblicata da Sugargoo descrive come utilizzare le informazioni di imballaggio risultanti prima di procedere. Successivamente, verifica che il contenuto e l'imballaggio scelto corrispondano ancora alla spedizione prevista; la modifica del pacco può rendere meno attendibile una stima precedente."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "czech-tracking",
+          "title": "Considera il tracking come una sequenza di passaggi di consegna.",
+          "paragraphs": [
+            "Conserva l'identificativo del pacco e il link di tracking forniti per il tuo servizio. Distingui tra elaborazione in magazzino, accettazione da parte del corriere, movimentazione internazionale, sdoganamento e consegna locale. Un messaggio generato dall'etichetta non dimostra di per sé che il pacco abbia completato il passaggio successivo. Confronta l'ultimo evento con la procedura indicata dal servizio, anziché interpretare ogni periodo di silenzio come lo stesso problema.",
+            "Quando sono disponibili informazioni sulla consegna locale, utilizza il corriere effettivamente indicato per il tuo pacco. Non dare per scontato che tutte le spedizioni ceche vengano consegnate allo stesso corriere finale. Verifica i dati del destinatario, le istruzioni di consegna e qualsiasi avviso di ritiro tramite i canali ufficiali del corriere. Conserva i messaggi pertinenti fino al completamento della consegna.",
+            "Se l'avanzamento non è nei tempi previsti per il servizio selezionato, contatta l'assistenza fornendo il numero di pacco, l'ultimo evento e la data, e la domanda specifica a cui desideri una risposta. Sii conciso nella prima richiesta. Una documentazione strutturata aiuta a individuare la fase corretta e impedisce che dettagli non pertinenti dell'ordine oscurino la consegna mancante."
+          ],
+          "actions": [
+            "/articles/sugargoo-tracking/"
+          ]
+        },
+        {
+          "id": "czech-final-review",
+          "title": "Rendere ripetibile la verifica del pagamento finale",
+          "paragraphs": [
+            "Prima di pagare, confrontare il riepilogo finale del pacco con le proprie note: destinazione, contenuto, dimensioni dell'imballaggio, percorso, servizi selezionati e totale. Verificare che il preventivo sia stato aggiornato dopo qualsiasi modifica agli articoli o all'imballaggio. Se una voce non è chiara, chiarirla prima di inviare il pagamento, anziché presumere che sia inclusa in un altro importo.",
+            "Dopo la consegna, registrare gli addebiti e l'andamento della spedizione, senza presentare un risultato come garanzia per i pacchi futuri. Questo fornisce prove utili per il confronto successivo. L'abitudine ripetibile è semplice: verificare la merce, quotare il pacco effettivo, consultare le normative doganali vigenti e conservare la documentazione che spiega la decisione."
+          ]
+        }
+      ],
+      "checklist": [
+        "Selezionare la Repubblica Ceca e verificare l'indirizzo completo del destinatario.",
+        "Confrontare i percorsi idonei utilizzando le stesse dimensioni e lo stesso peso dell'imballaggio.",
+        "Verificare le normative doganali ceche vigenti, anziché le esenzioni precedenti.",
+        "Risolvere i problemi di controllo qualità prima che il pacco lasci il magazzino.",
+        "Seguire il corriere indicato per visualizzare il numero di tracciamento aggiornato."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: stima delle spese di spedizione internazionali",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulazione del pacco prima della spedizione",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: controlli di qualità e i loro limiti",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Dogana ceca: commercio elettronico, dazi, IVA e sdoganamento",
+          "url": "https://celnisprava.gov.cz/cz/celni-urad-praha-ruzyne/fyzicke-osoby/postovni-zasilky/prijeti/Stranky/mimo-eu.aspx"
+        },
+        {
+          "title": "Dogana ceca: avvisi attuali sul commercio elettronico",
+          "url": "https://celnisprava.gov.cz/cz/clo/e-commerce/Stranky/Z%C3%A1silky-e-commerce.aspx"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
       ]
     }
   ]

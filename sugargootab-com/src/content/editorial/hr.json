@@ -1,10 +1,10 @@
 {
   "locale": "hr",
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-09",
   "ui": {
     "articles": "Članci",
     "articleTitle": "Sugargoo vodiči za kupnju",
-    "articleIntro": "Praktični Sugargoo vodiči za linkove proizvoda, QC fotografije, veličine cipela i dostava. Odaberite pitanje na koje morate odgovoriti prije kupnje ili slanja paketa.",
+    "articleIntro": "Praktični Sugargoo vodiči za poveznice proizvoda, veličine odjeće i obuće, fotografije za kontrolu kvalitete, pronalaske proračuna i dostavu specifičnu za određenu zemlju. Odaberite pitanje koje želite riješiti prije kupnje ili slanja paketa.",
     "faqTitle": "Sugargoo — česta pitanja",
     "faqIntro": "Jasni odgovori za svaku fazu narudžbe, uz službene izvore pravila platforme i iskren opis ograničenja ovog neovisnog kataloga.",
     "readArticle": "Pročitaj vodič",
@@ -62,7 +62,10 @@
     "billingBase": "Težina prije zaokruženja",
     "weightDisclaimer": "Rezultat prikazuje težinu prije zaokruživanja i minimalnog obračuna. Vrijede i ograničenja dimenzija te naknade za usluge. Provjerite aktualnu ponudu na Sugargoo.",
     "weightError": "Unesite pozitivan broj u svako mjerno polje.",
-    "officialEstimatorGuide": "Otvorite službeni vodič za kalkulator dostave"
+    "officialEstimatorGuide": "Otvorite službeni vodič za kalkulator dostave",
+    "navQc": "Fotografije za kontrolu kvalitete",
+    "navShipping": "Dostava",
+    "priceSortedCta": "Pregledajte cijene od najniže do najviše"
   },
   "groups": {
     "basics": "Prvi koraci",
@@ -444,8 +447,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Kako koristiti Sugargoo tablicu: pronađi, provjeri i naruči",
-      "description": "Koristite SugargooTablicu za pronalaženje linkova proizvoda, provjerite veličine i mogućnosti prodavača, otvoriti točnu stranicu narudžbe te pregledati skladište QC prije dostave.",
+      "title": "Sugargoo vodič za proračunske tablice: Pronađite poveznice, provjerite veličine i kupite",
+      "description": "Koristite Sugargoo proračunsku tablicu za pronalaženje poveznica proizvoda, sortiranje cijena, usporedbu veličina odjeće i provjeru vlastite kontrole kvalitete u skladištu prije slanja.",
       "keyword": "Sugargoo tablica",
       "category": "getting-started",
       "intro": [
@@ -465,6 +468,19 @@
             "Provjerite: poklapa se sa izvornom listom, opcijama i cijenam trenutne narudžbe.",
             "Narudžbina: upotrijebiti službeni protok kupnje za prihvatljivi predmet.",
             "Pregled: pregledati svoje skladište QC prije izrade paketa."
+          ]
+        },
+        {
+          "id": "spreadsheet-budget-shortlist",
+          "title": "Izradite uži izbor oko cijene i veličine",
+          "paragraphs": [
+            "Koristite katalog sortiran po cijeni kada imate proračun za proizvod, a zatim suzite po kategoriji ili pojmu za pretraživanje. Provjerite odabranu opciju na stranici za kupnju: najniža prikazana cijena može pripadati drugoj veličini, boji ili količini. Cijenu proizvoda i proračun za dostavu čuvajte kao odvojene odluke.",
+            "Za odjeću spremite tablicu prodavača s točnom poveznicom na oglas i usporedite je sa sličnim odjevnim predmetom koji posjedujete. Označite svakog kandidata jednom sljedećom radnjom, poput provjere duljine rukava ili potvrde uključene količine. To čini imenik korisnim popisom za kupnju umjesto rastuće zbirke neprovjerenih poveznica."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/articles/sugargoo-finds-under-20/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -551,7 +567,7 @@
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/spreadsheet/",
         "/category/shoes/"
@@ -658,8 +674,8 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Kako provjeriti Sugargoo QC fotografije prije slanja",
-      "description": "Pronađite Sugargoo skladište QC fotografije, provjeriti točnu stavku i veličinu, zatražiti korisna dodatna mjerenja, te riješiti probleme prije međunarodne dostave.",
+      "title": "Sugargoo QC fotografije: Gdje ih pronaći i što provjeriti",
+      "description": "Pronađite Sugargoo QC fotografije svoje narudžbe, provjerite ispravnu varijantu i mjere te zatražite jasne dokaze prije odobravanja međunarodne dostave.",
       "keyword": "Sugargoo QC fotografije",
       "category": "quality",
       "intro": [
@@ -678,6 +694,18 @@
             "Provjerite da svaka fotografija pripada istom narudžbi i varijanti.",
             "Zahtijevam izbliza pogled na osumnjičeni defekt, identificirajući njegovu lokaciju.",
             "Drži neriješene stvari dalje od parcele dok ne dobiješ odgovor."
+          ]
+        },
+        {
+          "id": "qc-photo-request",
+          "title": "Pretvorite nejasnu fotografiju u precizan zahtjev",
+          "paragraphs": [
+            "Otvorite fotografije priložene vašoj narudžbi u skladištu ili području narudžbi. Referentne slike iz kataloga pomažu vam u pregledavanju, ali ne dokazuju stanje ili mjere artikla koji vam je stigao. Prvo usporedite identifikator artikla, odabranu boju, veličinu i količinu sa zapisom narudžbe.",
+            "Za veličinu odjeće zatražite točnu mjeru koja bi mogla promijeniti vašu odluku: širina prsa s vidljivom nultom točkom vrpce, duljina tijela od imenovane početne točke ili opušteni pojas. Za cipele odvojeno držite duljinu stopala, duljinu uloška i pretvorbe oznaka veličina. Potvrdite dostupne usluge i naknade, a zatim usporedite rezultat s referentnom vrijednošću izmjerenom na isti način."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-shoe-size-guide/"
           ]
         },
         {
@@ -764,17 +792,17 @@
         "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
-        "/articles/sugargoo-shoe-size-guide/",
-        "/category/shoes/"
+        "/articles/sugargoo-clothing-size-guide/",
+        "/category/hoodies-sweaters/"
       ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Sugargoo kalkulator dostave: težina i troškovi",
-      "description": "Usporedite stvarnu težinu paketa s volumetrijskom težinom. Koristite djelitelj i pravilo obračuna odabrane rute. Alat ne izračunava cijenu dostave.",
+      "title": "Sugargoo kalkulator dostave: Stvarna vs. volumetrijska težina",
+      "description": "Izračunajte težinu paketa, usporedite stvarnu i volumetrijsku naplatu i prikupite potrebne podatke za trenutnu procjenu troškova dostave Sugargooa.",
       "keyword": "Sugargoo kalkulator dostave",
       "category": "shipping",
       "intro": [
@@ -793,6 +821,18 @@
             "Koristi vanjske dimenzije u centimetrima, a ne dimenzijama proizvoda.",
             "Pretvorite grame u kilograme: 3000 g iznosi 3 kg.",
             "Uzmi divizor i napuni pravilo iz rute koju razmatraš."
+          ]
+        },
+        {
+          "id": "calculator-quote-handoff",
+          "title": "Uključite izračun u trenutnu ponudu rute",
+          "paragraphs": [
+            "Gornji kalkulator objašnjava težinu; ne preuzima trenutne tarife dostave. Nakon izračuna, otvorite službeni kalkulator s vašim odredištem, sadržajem i mjerama pakiranja. Koristite djelitelj odabrane rute, minimalnu naknadu i uvjete zaokruživanja umjesto da pretpostavite da jedna formula opisuje svaku uslugu.",
+            "Zabilježite ukupni iznos i što on uključuje. Usporedite rute s identičnim unosima, a zatim osvježite ponudu nakon promjene paketa. Za pošiljke u Češkoj Republici, pročitajte i trenutne smjernice za odredište povezane u nastavku; staro pravilo uvoza niske vrijednosti ili plaćanje drugog kupca nije pouzdana procjena za vaš paket."
+          ],
+          "actions": [
+            "/articles/sugargoo-rehearsal-shipping/",
+            "/articles/sugargoo-shipping-to-czechia/"
           ]
         },
         {
@@ -879,7 +919,7 @@
         "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-rehearsal-shipping/",
         "/articles/sugargoo-shipping-to-usa/"
@@ -888,8 +928,8 @@
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Sugargoo probno pakiranje: kako radi i kada se isplati",
-      "description": "Saznajte što Sugargoo proba dostava radi, kada je vrijedno naknade i kako koristiti pakiranu težinu i dimenzije prije nego što odaberete brodski put.",
+      "title": "Dostava za probu putem Sugargooa: Koraci, trošak i kada je koristiti",
+      "description": "Saznajte kada vam dostava za probu putem Sugargooa pomaže, što provjeriti prije plaćanja i kako usporediti rezultat pakiranja s konačnom ponudom za dostavu.",
       "keyword": "Sugargoo probno pakiranje",
       "category": "shipping",
       "intro": [
@@ -924,6 +964,18 @@
               ]
             ]
           }
+        },
+        {
+          "id": "rehearsal-next-decision",
+          "title": "Koristite rezultat probe za donošenje sljedeće odluke",
+          "paragraphs": [
+            "Pročitajte trenutnu naknadu za uslugu na svom računu prije nego što zatražite probu. Koristan rezultat su jasnije informacije o pakiranju: usporedite stvarnu težinu, vanjske dimenzije, pravilo naplate rute i sve odabrane usluge. Plaćena proba sama po sebi ne jamči da će konačni ukupni iznos dostave biti niži.",
+            "Ako se rezultat razlikuje od vaše procjene, utvrdite zašto prije promjene rute. Je li kutija bila veća od očekivane, je li zaštitno pakiranje dodalo težinu ili ruta koristi drugačiji djelitelj? Usporedite identičan sadržaj i pakiranje u prihvatljivim ponudama. Ako nakon toga uklonite artikl ili promijenite pakiranje, osvježite informacije korištene za konačnu ponudu."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-shipping-to-czechia/"
+          ]
         },
         {
           "id": "identify-the-decision",
@@ -1009,7 +1061,7 @@
         "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-shipping-calculator/",
         "/articles/sugargoo-parcel-consolidation/"
@@ -1376,8 +1428,8 @@
     {
       "id": "sugargoo-returns-refunds",
       "slug": "sugargoo-returns-refunds",
-      "title": "Sugargoo povrati robe i novca: dokazi, uvjeti i sljedeći koraci",
-      "description": "Riješite pogrešan proizvod ili promijenjenu narudžbu jasnim dokazima, provjerom uvjeta povrata i zapisom koji razlikuje odobrenje od primljenog novca.",
+      "title": "Povrat i refundacija Sugargooa: Dokaz o kontroli kvalitete i sljedeći koraci",
+      "description": "Provjerite fazu narudžbe, dokumentirajte problem s veličinom ili stanjem i razumite sljedeći korak povrata ili refundacije prije međunarodne otpreme.",
       "keyword": "Sugargoo povrat novca",
       "category": "account",
       "intro": [
@@ -1391,6 +1443,18 @@
           "paragraphs": [
             "Prije kontaktiranja podrške utvrdite čeka li narudžba još kupnju, je li već kupljena, poslana od prodavatelja, primljena u skladište ili otpremljena međunarodno. Zahtjev za otkazivanje nedovršene kupnje drukčiji je od povrata fizičke robe. Koristite stvarni status i datum narudžbe umjesto pretpostavke da je pritisak gumba poništio transakciju.",
             "Službeni vodič Sugargooa za otkazivanje opisuje postupak kroz račun, dok vodič za povrate razdvaja kasnije faze povrata robe i novca. Otvorite odgovarajuću narudžbu i koristite dostupnu službenu radnju. Ako opcija nedostaje ili status nije jasan, pitajte podršku što je moguće za tu konkretnu narudžbu prije samostalnog organiziranja bilo čega."
+          ]
+        },
+        {
+          "id": "return-size-evidence",
+          "title": "Dokumentirajte problem s veličinom prije nego što zatražite rješenje",
+          "paragraphs": [
+            "Sačuvajte odabranu varijantu, tablicu mjera prodavatelja i fotografije kontrole kvalitete vaše narudžbe. Objasnite je li stigla pogrešna opcija ili ispravna etiketa ima mjere koje se razlikuju od onih na popisu. Usporedite iste mjerne točke; ravna širina i opseg ne mogu sami po sebi utvrditi neusklađenost.",
+            "Pitajte koje su opcije povrata ili zamjene dostupne za tu narudžbu, uključujući rokove, domaće troškove i sljedeću potrebnu radnju. Zabilježite odgovor i sve zasebne unose povrata novca. Ne smatrajte odobrenje zahtjeva dokazom da je svaki trošak već vraćen i riješite bitna pitanja prije međunarodne otpreme."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-order-status/"
           ]
         },
         {
@@ -1473,7 +1537,11 @@
         "sugargoo-fees-payment"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-18"
+      "updated": "2026-11-09",
+      "actions": [
+        "/articles/sugargoo-qc-photos/",
+        "/articles/sugargoo-order-status/"
+      ]
     },
     {
       "id": "weidian-taobao-links-sugargoo",
@@ -2304,6 +2372,10 @@
           "paragraphs": [
             "Otvorite originalnu stranicu proizvoda i spremiti grafikon veličine koja pripada tom modelu. Provjerite je li njegova mjerenja opisuju stopalo, insolu ili vanjski dio cipele. Također provjerite je li sustav veličine za muškarce, žene ili djecu. Stol iz drugog modela može stvoriti lažno poklapanje čak i kada su oznake veličine iste.",
             "Ako je grafikon nejasan, pitajte prodavatelja ili agenta što znači svaki stupac prije narudžbe. Ne dodajte standardni dodatak na svaku grafikonu: prodavatelj je možda već ugradio dodatak u svoju preporuku. Vaš izabrani fit, čarape i oblik cipele također bitno."
+          ],
+          "actions": [
+            "/category/shoes/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -2409,6 +2481,443 @@
       "actions": [
         "/category/shoes/",
         "/articles/sugargoo-qc-photos/"
+      ]
+    },
+    {
+      "id": "sugargoo-clothing-size-guide",
+      "slug": "sugargoo-clothing-size-guide",
+      "title": "Vodič za veličine odjeće Sugargoo: Mjere i provjere kvalitete",
+      "description": "Odaberite veličine odjeće koristeći mjere prodavatelja, usporedite odjevni predmet koji posjedujete i zatražite korisne fotografije kontrole kvalitete Sugargoo prije međunarodne otpreme.",
+      "keyword": "sugargoo clothing size guide",
+      "category": "quality",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Počnite s mjerama odjevnog predmeta koji vam odgovara, a zatim ih usporedite s točnom tablicom prodavatelja. Poznato slovo veličine nije dovoljno: majica s kapuljačom srednje veličine i dres srednje veličine mogu imati vrlo različite širine, duljine i krojeve. Ovaj vodič za veličine odjeće Sugargoo pretvara te razlike u praktičnu kontrolnu listu za narudžbu.",
+        "Koristite fotografije s popisa za odabir stila, tablicu veličina za odabir varijante i vlastitu kontrolu kvalitete u skladištu za provjeru što je stiglo. To su tri različite vrste dokaza. Primjeri usporedbe u nastavku ilustriraju metodu; To nisu mjere proizvoda koji se trenutno nude u katalogu."
+      ],
+      "sections": [
+        {
+          "id": "measure-reference",
+          "title": "Izmjerite referentni odjevni predmet prije pregledavanja.",
+          "paragraphs": [
+            "Odaberite nešto što vam se stvarno sviđa nositi u istoj kategoriji. Uska majica kratkih rukava loša je referenca za zimsku majicu s kapuljačom nošenu preko drugog sloja. Položite odjevni predmet na ravnu površinu, zagladite vidljive nabore bez rastezanja tkanine i jasno fotografirajte svaku mjeru. Zabilježite je li već opran i rasteže li se tkanina.",
+            "Zabilježite mjerne točke kao i broj. Za jednostavan top, izmjerite ravno preko prsa ispod otvora za ruke, a zatim izmjerite duljinu tijela od jasno identificirane točke ramena do ruba. Koristite iste krajnje točke prilikom čitanja tablice prodavača. Zakrivljeni šav, spuštena ramena ili neravni rub mogu učiniti dvije naizgled slične mjere duljine neusporedivima.",
+            "Držite ovaj mali referentni list pri ruci tijekom pregledavanja. Ako promijenite namjeravani kroj iz regularnog u preveliki, promijenite i referentni odjevni predmet. Dodavanje slučajnog broja centimetara svakoj dimenziji može rezultirati predugim rukavima bez pružanja dodatnog prostora za prsa koji ste željeli."
+          ],
+          "actions": [
+            "/category/t-shirts/",
+            "/category/hoodies-sweaters/"
+          ]
+        },
+        {
+          "id": "read-size-chart",
+          "title": "Pročitajte tablicu prodavatelja bez miješanja mjera",
+          "paragraphs": [
+            "Prvo utvrdite opisuje li tablica osobu ili gotov odjevni predmet. Opseg prsa nije širina prsa ravne odjeće. Slično tome, tablica koja prikazuje opseg odjeće ne može se izravno usporediti s jednom ravnom mjerom. Kada se ravna širina udvostruči, rezultat je samo jednostavna aproksimacija opsega; ne opisuje oblikovanje, rastezanje ili kako će odjeća visjeti.",
+            "Provjerite jedinice, točnu opciju proizvoda i sve tolerancije mjerenja koje je prikazao prodavatelj. Nemojte prenositi tablicu s vizualno sličnog popisa. Različite serije ili krojevi mogu koristiti različite specifikacije. Ako je tablica slika, zumirajte i pročitajte naslove stupaca prije nego što ih prevedete; prevedena etiketa bez dijagrama mjerenja i dalje može biti dvosmislena.",
+            "Uobičajene oznake uključuju prsa ili poprsje, rame, duljinu odjeće, duljinu rukava, struk, bokove, rast i duljinu hlača. Napišite značenje pokraj spremljenih mjera. Ako dijagram nedostaje i dva tumačenja dovela bi do različitih veličina, zatražite pojašnjenje prije plaćanja. Pogađanje postaje skuplje nakon što narudžba stigne u međunarodni tranzit."
+          ]
+        },
+        {
+          "id": "fit-example",
+          "title": "Usporedba: širina i duljina zajedno",
+          "paragraphs": [
+            "Razmotrite ilustrativnu referentnu majicu kratkih rukava veličine 54 cm u prsima i 70 cm duljine. Pretpostavimo da tablica prodavatelja navodi jednu opciju s veličinama 52 cm i 68 cm, a drugu s veličinama 56 cm i 72 cm, koristeći iste mjerne točke. Prva opcija je uža i kraća od vaše reference; druga je šira i dulja. Nijedna nije automatski točna samo zato što joj slovo veličine odgovara vašem uobičajenom izboru.",
+            "Sada odlučite koja vam je razlika važna. Ako vam se referenca već čini kratkom, kraća opcija zaslužuje dodatni oprez. Ako je širina prsa blizu vaše maksimalne udobne labavosti, šira opcija može biti neprivlačna. Usporedite mjere ramena i rukava prije nego što odaberete bilo koju od njih. Ovo je odluka o nekoliko dimenzija, a ne pravilo da se uvijek ide za jednu veličinu veće.",
+            "Neriješene razlike ostavite vidljivima u bilješkama. Na primjer, napišite „prsa prihvatljiva, nedostaje mjerenje rukava“ umjesto da označite cijeli odjevni predmet kao odobren. Zatim možete zatražiti nedostajuće dokaze bez ponavljanja provjera koje su već bile jasne. Ovi primjeri brojeva su izmišljeni za aritmetiku i nisu preporuka veličine prodavatelja."
+          ]
+        },
+        {
+          "id": "category-checks",
+          "title": "Odaberite provjere koje odgovaraju kategoriji odjeće",
+          "paragraphs": [
+            "Majice s kapuljačom trebaju prostor za sloj koji planirate nositi ispod. Usporedite širinu prsa, doseg rukava, širinu ruba i duljinu tijela sa sličnom majicom s kapuljačom. Spuštena ramena mijenjaju mjesto gdje počinje mjerenje rukava, stoga usporedite cijeli dijagram umjesto da širinu ramena i duljinu rukava tretirate kao neovisna jamstva pristajanja.",
+            "Kod hlača i kratkih hlača, razlikovajte opušteni pojas od rastegnutog mjerenja. Usporedite struk, bokove, prednji dio, unutarnji šav i otvor nogavice kada ti detalji utječu na vaše pristajanje. Samo mjerenje struka ne pokazuje hoće li bedra biti udobna. Kod dresova provjerite namjeravani kroj i duljinu, kao i širinu prsa; sportski kroj može se razlikovati od ležerne majice.",
+            "Jakne postavljaju dodatna pitanja o slojevitosti i kretanju. Fotografija ne može pokazati koliko udobno možete podići ruke ili zatvoriti jaknu preko džempera. Koristite usporedivu referentnu jaknu, pregledajte navedene materijale i tretirajte nedostajuće informacije kao nesigurnost umjesto da pretpostavljate da svaki artikl s istom veličinom slova slijedi univerzalnu tablicu."
+          ],
+          "table": {
+            "headers": [
+              "Vrsta odjeće",
+              "Korisna usporedba",
+              "Uobičajena pogreška"
+            ],
+            "rows": [
+              [
+                "Majice kratkih rukava i dresovi",
+                "Širina prsa, duljina tijela i rukavi",
+                "Odabir samo na temelju visine i težine"
+              ],
+              [
+                "Majice s kapuljačom i jakne",
+                "Prostor za slojevito odijevanje, rukavi i rub",
+                "Kombiniranje spuštenih i standardnih ramena"
+              ],
+              [
+                "Hlače i kratke hlače",
+                "Struk, bokovi, visina i unutarnji šav",
+                "Usporedba rastegnutog i opuštenog struka"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "request-clothing-qc",
+          "title": "Zatražite fotografije za kontrolu kvalitete koje mogu odgovoriti na vaše pitanje o veličini",
+          "paragraphs": [
+            "Sugargooove smjernice za kontrolu kvalitete opisuju provjere primljenog artikla i dodatne zahtjeve za dokazima. Provjerite usluge dostupne za vašu narudžbu, uključujući eventualnu naknadu, prije nego što zatražite više fotografija. Zatražite određenu mjeru s vidljivim krajnjim točkama umjesto da pitate je li artikl \"odgovara veličini\". Osoblje ne može znati vaše osobne preferencije u pogledu veličine iz te fraze.",
+            "Koristan zahtjev je: položite odjevni predmet ravno bez rastezanja, prikažite cijelu traku od jednog ruba prsa do drugog odmah ispod otvora za ruke i uključite etiketu s veličinom na zasebnoj fotografiji. Za duljinu navedite početnu točku koju ste koristili na referentnom odjevnom predmetu. Za hlače navedite želite li da pojas bude opušten ili rastegnut.",
+            "Pregledajte samu sliku prije nego što se povjerujete broju. Nulta točka treba biti vidljiva, traka treba slijediti predviđenu liniju, a nabori ne smiju skrivati rub. Ako perspektiva ili savijena traka onemogućuju procjenu male razlike, zatražite jednu ispravljenu sliku. Više fotografija istog nejasnog kuta ne čini mjerenje pouzdanijim."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "resolve-sizing-issues",
+          "title": "Riješite neusklađenost dok su dokazi korisni",
+          "paragraphs": [
+            "Zadržite odabranu opciju, tablicu prodavača, broj narudžbe i relevantne slike kontrole kvalitete zajedno. Odvojite netočnu etiketu od odjevnog predmeta koji ima ispravnu etiketu, ali neočekivane dimenzije. Objasnite neslaganje istom metodom mjerenja na obje strane. Kratka, specifična usporedba pomaže podršci ili prodavatelju da bolje razumije problem od općenite pritužbe da artikl izgleda premalen.",
+            "Nemojte pretpostavljati da je povrat, zamjena ili povrat novca automatski. Pravo na povrat, rokovi, troškovi i rukovanje ovise o narudžbi i uvjetima prodavatelja. Prije slanja artikla u međunarodnu pošiljku, pitajte koji je pravni lijek dostupan. Ako se odlučite zadržati artikl, zabilježite zašto je preostala razlika prihvatljiva, umjesto da neriješeni problem tretirate kao dokaz da dobro pristaje.",
+            "Konačno, razlikovajte vidljivu kontrolu kvalitete od testa habanja. Fotografije skladišta ne mogu utvrditi dugoročnu izdržljivost, skupljanje nakon pranja ili osobnu udobnost. Pročitajte informacije o njezi gdje su dostupne i sačuvajte zapis o narudžbi. Za sljedeću kupnju ažurirajte svoje referentne mjere s odjevnog predmeta koji ste stvarno primili i nosili; to čini buduće usporedbe korisnijima bez oslanjanja na široke stereotipe o veličinama."
+          ],
+          "actions": [
+            "/articles/sugargoo-returns-refunds/"
+          ]
+        }
+      ],
+      "checklist": [
+        "Koristite usporediv odjevni predmet koji odgovara željenom stilu.",
+        "Usporedite jedinice, krajnje točke i širinu u ravnom odnosu s opsegom.",
+        "Provjerite točnu varijantu i tablicu prodavatelja prije plaćanja.",
+        "Zatražite specifične skladišne mjere za neriješene dimenzije.",
+        "Riješite neusklađenost materijala prije međunarodne otpreme."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: čitanje Taobao tablica veličina",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: fotografije, videozapisi i zahtjevi za mjerenje",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: provjere kvalitete i njihova ograničenja",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: povrati i refundacije",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shoe-size-guide"
+      ],
+      "actions": [
+        "/category/hoodies-sweaters/",
+        "/category/pants-shorts/"
+      ]
+    },
+    {
+      "id": "sugargoo-finds-under-20",
+      "slug": "sugargoo-finds-under-20",
+      "title": "Sugargoo pronalazi ispod 20 USD: Provjera cijene, veličine i kupnje",
+      "description": "Pronađite Sugargoo artikle ispod 20 USD koristeći poveznice na proizvode sortirane po cijeni. Provjerite točnu varijantu, mjere, kontrolu kvalitete i dostavu prije nego što odlučite što je pristupačno.",
+      "keyword": "sugargoo finds under 20",
+      "category": "getting-started",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "U ovom vodiču, „ispod 20 USD“ znači prikazanu cijenu proizvoda ispod 20 USD, prije dodatnih troškova. To ne znači da će paket koštati manje od 20 USD s dostavom. Koristite katalog uživo sortiran po cijeni za izradu užeg popisa, a zatim provjerite točnu varijantu i trenutnu cijenu na stranici za kupnju.",
+        "Ovo je metoda odabira, a ne fiksni popis navodno testiranih proizvoda. Cijene i dostupnost u katalogu mogu se mijenjati. Primjeri objašnjavaju kako usporediti troškove i nesigurnost; nisu žive ponude, recenzije ili obećanja da će određeni prodavač prihvatiti narudžbu."
+      ],
+      "sections": [
+        {
+          "id": "find-budget-links",
+          "title": "Započnite s katalogom sortiranim po cijeni",
+          "paragraphs": [
+            "Otvorite katalog pomoću poveznice za sortiranje po niskoj cijeni u nastavku. Potražite vrstu proizvoda koja vam je potrebna ili suzite popis na relevantnu kategoriju. Jeftin dodatak nije korisna zamjena za majicu s kapuljačom koju ste došli kupiti. Započnite s namjenom, a zatim usporedite cijene unutar te skupine kako bi uži izbor sadržavao smislene alternative.",
+            "Otvorite stranicu proizvoda svakog kandidata i slijedite dostupnu poveznicu za kupnju. Potvrdite naslov, identifikator artikla, odabranu boju, veličinu i količinu. Neki oglasi prikazuju najnižu cijenu opcije iako varijanta koja vam je potrebna košta više. Kartica koja prikazuje cijenu ispod 20 USD samo je početna točka dok se ne provjeri točna opcija.",
+            "Spremite tri ili četiri vjerojatna kandidata umjesto da prikupljate desetke poveznica. Zabilježite razlog zašto bi svaki mogao funkcionirati i pitanje koje bi ga moglo isključiti. Na primjer: prikladne mjere, ali nedostaju detalji o tkanini. Kratki popis s eksplicitnim pitanjima lakše je provjeriti nego dugi popis poredan samo po atraktivnim slikama."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/category/accessories/?sort=price"
+          ]
+        },
+        {
+          "id": "under-20-budget",
+          "title": "Odvojite dopušteni iznos proizvoda od isporučenog proračuna.",
+          "paragraphs": [
+            "Navedite dva ograničenja: maksimalnu cijenu artikla i maksimalni ukupni iznos koji ste spremni potrošiti. Prvo vam pomaže u pregledavanju; drugo odlučuje ima li kupnja smisla. Uzmite u obzir domaću dostavu gdje se naplaćuje, troškove plaćanja ili usluge prikazane prilikom plaćanja, dodatne usluge, međunarodnu dostavu i troškove odredišta koji se primjenjuju na paket.",
+            "Razmotrite čisto ilustrativnu usporedbu. Stavka A navedena je po cijeni od 12 USD, a stavka B po cijeni od 17 USD. Ako A zahtijeva dodatnih 9 USD povezanih troškova, dok B zahtijeva dodatnih 3 USD prema istoj metodi usporedbe, ukupni iznosi su 21 USD i 20 USD. Ove brojke nisu Sugargoo cijene. One pokazuju zašto niža cijena artikla ne mora nužno rezultirati nižim ukupnim iznosom.",
+            "Kada nekoliko artikala dijeli paket, nemojte prikazivati proizvoljnu jednaku podjelu kao navedenu cijenu dostave za svaki proizvod. Neka ukupni iznos paketa bude vidljiv i navedite kako ste rasporedili bilo koji zajednički iznos. Za donošenje odluke o kupnji, usporedite ponudu paketa sa i bez dodatnog artikla nakon što su dostupne značajne težine i dimenzije."
+          ],
+          "table": {
+            "headers": [
+              "Proračunska linija",
+              "Što provjeriti",
+              "Kada osvježiti"
+            ],
+            "rows": [
+              [
+                "Proizvod i odabrana opcija",
+                "Točna veličina, boja, količina i valuta",
+                "Prije narudžbe"
+              ],
+              [
+                "Domaće i dodatne usluge",
+                "Stvarno prikazani troškovi za narudžbu",
+                "Prije odabira plaćenih usluga"
+              ],
+              [
+                "Međunarodni troškovi paketa i odredišta",
+                "Dimenzije pakiranog i trenutni uvjeti rute",
+                "Prije plaćanja otpreme"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-cheap-clothing",
+          "title": "Koristite mjere za usporedbu jeftine odjeće",
+          "paragraphs": [
+            "Niska cijena ne čini neprikladnu veličinu povoljnom. Za majice kratkih rukava, majice s kapuljačom i dresove, usporedite mjere prodavatelja sa sličnim odjevnim predmetom koji već posjedujete. Obratite pozornost je li broj ravna širina ili opseg. Izbjegavajte odabir većeg slova samo zato što netko drugi preporučuje veću veličinu bez navođenja prodavatelja i točnog popisa.",
+            "Za hlače i kratke hlače provjerite više od pojasa. Rast, širina bokova, unutarnji šav i otvor nogavice mogu promijeniti kroj čak i kada se nominalni struk čini točnim. Ako popis daje samo slovo veličine i nema korisnih mjera, uključite taj nedostajući podatak u odluku. Možda ćete preferirati nešto skupljeg kandidata s jasnijim dokazima.",
+            "Za dodatke provjerite dimenzije i što je uključeno u kupnju. Fotografija može prikazivati nekoliko komada, dok odabrana opcija sadrži samo jedan. Pročitajte opis opcije i sažetak narudžbe. Svrha usporedbe je razumjeti artikl koji ćete primiti, a ne zaključiti vrijednost na temelju broja predmeta na referentnoj fotografiji."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/category/t-shirts/?sort=price"
+          ]
+        },
+        {
+          "id": "cheap-qc-evidence",
+          "title": "Odlučite koji bi dokazi o kontroli kvalitete mogli promijeniti vaš izbor",
+          "paragraphs": [
+            "Prije naručivanja navedite dvije ili tri činjenice koje su najvažnije. Odjevni predmet može zahtijevati jasnu etiketu s veličinom i mjerenjem prsa; dodatak može zahtijevati provjeru dimenzija i prikaz kopčanja. Kada narudžba stigne u skladište, usporedite primljeni artikl s odabranom varijantom i spremljenim informacijama o oglasu.",
+            "Objavljene smjernice za kontrolu kvalitete tvrtke Sugargoo korisne su za razumijevanje što provjere u skladištu mogu pokazati. Potvrdite opcije usluge dostupne za vašu narudžbu prije plaćanja dodatnih dokaza. Zatražite krupni plan ili mjerenje koje odgovara na određeno neriješeno pitanje. Ponavljanje širokog zahtjeva za slikama bolje kvalitete može dodati kašnjenje bez poboljšanja odluke.",
+            "Niska cijena i čista fotografija ne utvrđuju autentičnost, trajnost ili sigurnost. Izbjegavajte opisivati netestirane artikle kao najbolje, provjerene ili zajamčene samo zato što postoji stranica proizvoda. Ako vaša namjeravana upotreba ovisi o performansama koje fotografije ne mogu utvrditi, potražite odgovarajuću dokumentaciju o proizvodu ili odaberite alternativu s dokazima koje možete procijeniti."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "small-haul-costs",
+          "title": "Provjerite trošak dodavanja još jednog jeftinog artikla",
+          "paragraphs": [
+            "Jeftin dodatni artikl i dalje zauzima prostor i povećava težinu. Prije nego što ga dodate paketu, razmotrite artikl i njegovu ambalažu zajedno. Glomazni predmet niske cijene može promijeniti naplativu težinu ili pomaknuti paket preko ograničenja rute. Uklanjanje ambalaže može utjecati na zaštitu, stoga nemojte pretpostavljati da je svako smanjenje volumena razumna ušteda.",
+            "Koristite kalkulator težine kako biste razumjeli aritmetiku, a zatim koristite službenu procjenu rute za cijene. Kalkulator na ovoj stranici objašnjava stvarnu i volumetrijsku težinu; to nije usluga tarifiranja uživo. Unesite djelitelj i pravilo naplate za rutu koju uspoređujete umjesto da jedan zajednički djelitelj tretirate kao univerzalni.",
+            "Ako je nesigurnost oko pakiranja dovoljno velika da promijeni odluku, pregledajte dostupnu uslugu probe i njezinu cijenu. Zatražite je nakon što odlučite koje artikle namjeravate zadržati. Proba može poboljšati informacije o pakiranju korištene u ponudi, ali plaćanje ne jamči niži ukupni iznos. Usporedite dobivene informacije s cijenom i preostalom nesigurnošću."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "budget-decision",
+          "title": "Zadrži, istraži ili preskoči: jednostavno pravilo užeg izbora",
+          "paragraphs": [
+            "Označite kandidata s \"zadrži\" samo kada njegova točna opcija, mjere i očekivani ukupni iznos zadovoljavaju vaše zahtjeve. Označite s \"istraži\" kada jedan odgovor može promijeniti odluku. Označite s \"preskoči\" kada nedostajući dokazi, neprikladne dimenzije ili ukupni trošak čine da ne odgovara. Ovo pravilo sprječava da niska naslovna cijena preuzme svu odluku.",
+            "Ako kupljeni artikl ima problem, odmah ga dokumentirajte i provjerite mogućnosti povrata ili zamjene za tu narudžbu. Jeftin artikl i dalje može biti skup za povrat u odnosu na kupovnu cijenu. Usporedite svaki navedeni lijek i trošak prije nego što nastavite; nemojte pretpostavljati da će budući povrat novca ukloniti rizik od nejasne kupnje sada.",
+            "Ponovno posjetite spremljene poveznice prilikom plaćanja umjesto da pretpostavljate da cijena ostaje važeća unedogled. Sačuvajte dokaze o narudžbi i ažurirajte uži izbor kada prodavatelj promijeni opcije ili zalihe. Koristan rezultat vodiča za proračun je kupnja koja odgovara vašim potrebama i ukupnom iznosu, čak i kada to znači kupnju manjeg broja artikala ili ostavljanje atraktivne poveznice s niskom cijenom neiskorištenom.",
+            "Ponovno pregledajte uži izbor neposredno prije plaćanja. Ako se odabrana varijanta promijeni, ponovite provjeru cijene i veličine umjesto da primijenite raniju odluku na drugi artikl. Korisno ograničenje proračuna trebalo bi ostati u konačnom sažetku narudžbe."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tretirajte ispod 20 USD kao filter cijene artikla, a ne kao obećanje isporučene cijene.",
+        "Provjerite točnu varijantu i količinu na stranici za kupnju.",
+        "Usporedite mjere s odgovarajućim referentnim artiklom.",
+        "Proračunirajte cijeli paket i primjenjive troškove odredišta.",
+        "Koristite trenutne cijene i dokaze umjesto starog rangiranog popisa."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: proces naručivanja",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: čitanje Taobao tablica veličina",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: provjere kvalitete i njihova ograničenja",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: procjena međunarodne dostave",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulacija paketa prije slanja",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: povrati i refundacije",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "sugargoo-clothing-size-guide"
+      ],
+      "actions": [
+        "/spreadsheet/?sort=price",
+        "/category/hoodies-sweaters/?sort=price"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-czechia",
+      "slug": "sugargoo-shipping-to-czechia",
+      "title": "Sugargoo dostava u Češku: troškovi, rute i praćenje",
+      "description": "Planirajte dostavu Sugargooa u Češku Republiku s provjerom težine pakiranja, trenutnim ponudama ruta, carinskim izvorima i praktičnim popisom za praćenje.",
+      "keyword": "sugargoo shipping to czech republic",
+      "category": "shipping",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Za procjenu dostave Sugargooa u Češku, odaberite Češku Republiku kao odredište u trenutnom službenom kalkulatoru i koristite sadržaj, težinu i dimenzije vlastitog paketa. Ne postoji jedinstvena cijena dostave ili vrijeme isporuke koje se primjenjuje na svaku češku narudžbu.",
+        "Ovaj vodič pomaže vam prikupiti ispravne podatke, usporediti dostupne rute i sačuvati potrebne dokumente nakon otpreme. Dostupnost ruta, naknade i pravila uvoza mogu se promijeniti. Primjeri u nastavku objašnjavaju metode usporedbe; oni nisu trenutne ponude prijevoznika ili obećanje da vam je navedena usluga dostupna."
+      ],
+      "sections": [
+        {
+          "id": "czech-start",
+          "title": "Pripremite odredište i podatke o paketu",
+          "paragraphs": [
+            "Koristite punu adresu za dostavu primatelja i poštanski broj koji mu pripada. Provjerite broj kuće ili zgrade, sve detalje o stanu i telefonski broj koji prijevoznik može koristiti. Neka ime primatelja bude u skladu s evidencijom korištenom za dostavu i svim traženim dokumentima o carinjenju. Spremljena adresa zaslužuje još jednu provjeru prije slanja svakog paketa.",
+            "Navedite namjeravani sadržaj prije usporedbe ruta. Kategorija proizvoda, materijali, baterije, tekućine i drugi zahtjevi za rukovanje mogu utjecati na prihvatljivost. Pročitajte ograničenja prikazana za odabranu uslugu i pitajte o nejasnim stavkama prije plaćanja. Ruta koja se pojavljuje u općoj usporedbi ne znači da prihvaća određeni sadržaj vašeg paketa.",
+            "Čuvajte identifikator narudžbe, opis, količinu i stvarni zapis o kupnji svake stavke zajedno. To olakšava odgovaranje na kasniji zahtjev bez ponovnog stvaranja povijesti narudžbi sa snimaka zaslona. Koristite točne informacije tijekom cijelog procesa. Nemojte mijenjati opise ili vrijednosti samo kako biste rutu učinili jeftinijom ili kako biste oponašali izjavu drugog kupca."
+          ]
+        },
+        {
+          "id": "czech-weight",
+          "title": "Razumjeti težinu koju će ruta naplatiti",
+          "paragraphs": [
+            "Zbroj težina proizvoda nije nužno konačna težina pakiranja. Vanjsko pakiranje i zaštitni materijali dodaju težinu, dok veličina gotovog paketa može biti važna zasebno. Pitajte za dimenzije pakiranja kada su potrebne za izračun rute. Dosljedno koristite centimetre i kilograme kako neusklađenost jedinica ne bi iskrivila usporedbu.",
+            "Ilustrativni paket dimenzija 40 × 30 × 25 cm ima volumen od 30 000 kubičnih centimetara. Ako hipotetska ruta koristi djelitelj od 6 000, njegova volumetrijska težina bila bi 5 kg. Ako je stvarna težina pakiranja 3 kg i ta ruta naplaćuje veću brojku, početna težina bila bi 5 kg prije pravila zaokruživanja. Ovo su primjeri unosa, a ne tarifa češke rute.",
+            "Druga ruta može koristiti drugačiji djelitelj, samo stvarnu težinu, minimalne naknade ili ograničenja dimenzija. Pročitajte navedeno pravilo prije usporedbe prikazanih cijena. Kalkulator težine na licu mjesta može pomoći s aritmetikom, ali trenutna Sugargoo ponuda određuje cijenu i dostupne usluge za vašu narudžbu."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/"
+          ]
+        },
+        {
+          "id": "czech-route-comparison",
+          "title": "Usporedite cijelu ponudu rute",
+          "paragraphs": [
+            "Provedite isti paket kroz svaku prihvatljivu rutu kako bi usporedba koristila odgovarajuće unose. Zabilježite navedenu naknadu, pravilo težine, ograničenja veličine, navedenu procjenu vremena, pokrivenost praćenjem i uključene usluge. Zabilježite datum usporedbe. Snimka zaslona stare narudžbe korisna je povijest, ali nije dokaz da je ista ponuda i dalje dostupna.",
+            "Provjerite kako ponuda opisuje poreze na odredište, carinsku obradu i dostavu. Naziv rute koji sadrži frazu vezanu uz porez nije dovoljan da objasni svaku moguću naplatu ili obvezu. Pročitajte trenutne detalje usluge i pitajte koji su iznosi uključeni u plaćanje. Taj odgovor priložite uz ponudu kako biste kasnije mogli razlikovati naknadu za prijevoz od druge naplate.",
+            "Odaberite prema svojim prioritetima. Niža ponuda s manje predvidljivim vremenom može odgovarati fleksibilnoj kupnji; hitna dostava zahtijeva realan iznos za svaku fazu. Izbjegavajte graditi plan oko najbrže anegdotske dostave koju možete pronaći. Razmotrite praktične posljedice ako paket stigne kasnije od procjene prije nego što odlučite da se isplati mala ušteda."
+          ],
+          "table": {
+            "headers": [
+              "Polje za usporedbu",
+              "Zapis za svaku prihvatljivu rutu",
+              "Zašto je važno"
+            ],
+            "rows": [
+              [
+                "Cijena i osnova za naplatu",
+                "Navedena ukupna, stvarna ili volumetrijska vrijednost, pravilo zaokruživanja",
+                "Isti paket može se naplatiti različito"
+              ],
+              [
+                "Pokrivenost uslugom",
+                "Praćenje, opseg dostave i uključeni troškovi",
+                "Naziv rute nije potpuni opis usluge"
+              ],
+              [
+                "Ograničenja i vrijeme",
+                "Ograničenja sadržaja, dimenzije i procjena vremena",
+                "Prihvatljivost i vrijeme ovise o paketu"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "czech-customs",
+          "title": "Koristite trenutne smjernice češke carine",
+          "paragraphs": [
+            "Provjerite izvore češke carine povezane u nastavku prije plaćanja otpreme. Njihove smjernice iz 2026. promijenile su tretman uvoza niske vrijednosti putem e-trgovine. Nemojte se oslanjati na stariju izjavu da je svaka kupnja ispod 150 € oslobođena carine. Carina, PDV, rukovanje i postupak deklaracije su zasebna pitanja; njihov tretman ovisi o trenutnim pravilima i pošiljci.",
+            "Pitajte odabranu službu kako će se carinjenje obavljati i koje su joj evidencije potrebne. Sačuvajte evidenciju računa ili narudžbe, dokaz o plaćanju i točan opis dostupne robe. Ako netko zatraži dokument ili plaćanje, provjerite zahtjev putem prijevoznika ili carinske službe koristeći službeni kanal prije slanja informacija.",
+            "Nemojte pretpostavljati da troškovi ranijeg paketa određuju sljedeći. Drugačiji popis sadržaja, deklarirana kategorija, postupak ulaska ili dogovor o usluzi mogu promijeniti izračun. Ovaj vodič ne izračunava obvezujuću carinsku procjenu. Koristite trenutne službene upute i pismeno objašnjenje službe za stvarni paket, posebno kada ponuda ostavlja neodređenu cijenu."
+          ]
+        },
+        {
+          "id": "czech-before-dispatch",
+          "title": "Završite kontrolu kvalitete i odluke o pakiranju prije otpreme",
+          "paragraphs": [
+            "Provjerite svaku stavku dok je još dostupna za pregled u skladištu. Usporedite primljenu opciju i količinu s vašom narudžbom, pregledajte relevantne fotografije kontrole kvalitete i riješite važna pitanja o veličini ili stanju. Spajanje neriješene stavke u paket može otežati kasniji popravak. Ponuda za dostavu ne zamjenjuje odluku o tome želite li zadržati robu.",
+            "Odaberite pakiranje prema sadržaju, a ne samo prema željenoj težini. Lomljivi predmeti mogu zahtijevati zaštitu, dok nepotrebne vanjske kutije mogu povećati volumen. Pitajte što predložena promjena pakiranja uklanja i utječe li na zaštitu predmeta. Usporedite rezultirajuće informacije o pakiranju prije nego što pretpostavite da promjena štedi novac.",
+            "Ako je proba dostupna i preostala neizvjesnost oko pakiranja je važna, pregledajte njezinu trenutnu cijenu i opseg prije nego što je zatražite. Objavljeni vodič Sugargooa opisuje korištenje rezultirajućih informacija o pakiranju prije nego što nastavite. Nakon toga, potvrdite da sadržaj i odabrano pakiranje i dalje odgovaraju vašoj namjeravanoj pošiljci; Promjena paketa može učiniti raniju procjenu manje korisnom."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "czech-tracking",
+          "title": "Praćenje pročitajte kao niz primopredaja",
+          "paragraphs": [
+            "Zadržite identifikator paketa i poveznicu za praćenje za svoju uslugu. Odvojite obradu u skladištu, prihvaćanje prijevoznika, međunarodno kretanje, carinjenje i lokalnu dostavu. Poruka kreirana naljepnicom sama po sebi ne dokazuje da je paket završio sljedeću primopredaju. Usporedite najnoviji događaj s navedenim postupkom usluge umjesto da svako mirno razdoblje tumačite kao isti problem.",
+            "Kada postanu dostupne informacije o lokalnoj dostavi, koristite prijevoznika koji je stvarno identificiran za vaš paket. Nemojte pretpostavljati da svaka češka pošiljka ide istom konačnom prijevozniku. Provjerite podatke o primatelju, upute za dostavu i sve obavijesti o preuzimanju putem službenog kanala tog prijevoznika. Spremite relevantne poruke dok se dostava ne dovrši.",
+            "Ako je napredak izvan smjernica za odabranu uslugu, obratite se podršci s brojem paketa, najnovijim događajem i datumom te konkretnim pitanjem na koje trebate odgovor. Neka prvi upit bude sažet. Strukturirani zapis pomaže podršci da istraži ispravnu fazu i sprječava da nepovezani detalji narudžbe zasjene nedostajuću primopredaju."
+          ],
+          "actions": [
+            "/articles/sugargoo-tracking/"
+          ]
+        },
+        {
+          "id": "czech-final-review",
+          "title": "Učinite konačni pregled plaćanja ponovljivim",
+          "paragraphs": [
+            "Prije plaćanja usporedite konačni sažetak paketa s vašim bilješkama: odredište, sadržaj, pakirane mjere, ruta, odabrane usluge i ukupan iznos. Provjerite je li ponuda osvježena nakon bilo koje promjene stavke ili pakiranja. Ako je stavka nejasna, riješite je prije slanja umjesto da pretpostavljate da je uključena u drugi iznos.",
+            "Nakon isporuke zabilježite što je naplaćeno i kako je pošiljka napredovala, bez predstavljanja jednog ishoda kao jamstva za buduće pakete. To vam daje korisne dokaze za vašu sljedeću usporedbu. Navika ponavljanja je jednostavna: provjerite robu, navedite stvarnu cijenu paketa, pročitajte važeće carinske smjernice i sačuvajte zapise koji objašnjavaju vašu odluku."
+          ]
+        }
+      ],
+      "checklist": [
+        "Odaberite Češku Republiku i provjerite punu adresu primatelja.",
+        "Usporedite prihvatljive rute koristeći iste pakirane dimenzije i težinu.",
+        "Provjerite važeće češke carinske smjernice umjesto starijih izuzeća.",
+        "Riješite probleme s kontrolom kvalitete prije nego što paket napusti skladište.",
+        "Pratite prijevoznika identificiranog za vaš stvarni broj za praćenje."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: procjena međunarodne dostave",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulacija paketa prije slanja",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: provjere kvalitete i njihova ograničenja",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Češka carina: e-trgovina, carina, PDV i carinjenje",
+          "url": "https://celnisprava.gov.cz/cz/celni-urad-praha-ruzyne/fyzicke-osoby/postovni-zasilky/prijeti/Stranky/mimo-eu.aspx"
+        },
+        {
+          "title": "Češka carina: trenutne obavijesti o e-trgovini",
+          "url": "https://celnisprava.gov.cz/cz/clo/e-commerce/Stranky/Z%C3%A1silky-e-commerce.aspx"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
       ]
     }
   ]

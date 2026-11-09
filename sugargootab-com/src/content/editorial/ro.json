@@ -1,10 +1,10 @@
 {
   "locale": "ro",
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-09",
   "ui": {
     "articles": "Articole",
     "articleTitle": "Ghiduri de cumpărături Sugargoo",
-    "articleIntro": "Sugargoo ghiduri practice pentru link-uri de produs, fotografii QC, dimensiuni pantofi și de transport maritim. Alegeți întrebarea la care trebuie să răspundeți înainte de a cumpăra sau trimite un colet.",
+    "articleIntro": "Ghiduri practice Sugargoo pentru link-uri de produse, mărimi de îmbrăcăminte și încălțăminte, fotografii QC, oferte bugetare și livrare specifică țării. Alegeți întrebarea de rezolvat înainte de a cumpăra sau trimite un colet.",
     "faqTitle": "Întrebări frecvente despre Sugargoo",
     "faqIntro": "Răspunsuri clare pentru fiecare etapă a comenzii, cu surse oficiale pentru regulile platformei și limite prezentate sincer pentru acest catalog independent.",
     "readArticle": "Citește ghidul",
@@ -62,7 +62,10 @@
     "billingBase": "Greutatea înainte de rotunjire",
     "weightDisclaimer": "Rezultatul arată greutatea înainte de rotunjire și de aplicarea minimului facturabil. Se aplică și limitele de dimensiuni și taxele pentru servicii. Confirmă oferta actuală în Sugargoo.",
     "weightError": "Introduceți un număr pozitiv în fiecare câmp de măsurare.",
-    "officialEstimatorGuide": "Deschide ghidul oficial al calculatorului de transport"
+    "officialEstimatorGuide": "Deschide ghidul oficial al calculatorului de transport",
+    "navQc": "Fotografii QC",
+    "navShipping": "Livrare",
+    "priceSortedCta": "Răsfoiți prețurile de la mic la mare"
   },
   "groups": {
     "basics": "Primii pași",
@@ -444,8 +447,8 @@
     {
       "id": "sugargoo-spreadsheet-guide",
       "slug": "sugargoo-spreadsheet-guide",
-      "title": "Cum folosești un tabel Sugargoo: cauți, verifici și comanzi",
-      "description": "Utilizați o foaie de calcul Sugargoo pentru a găsi link-uri de produs, dimensiuni de verificare și opțiuni de vânzare, deschide pagina de comandă corectă, și revizui depozitul QC înainte de expediere.",
+      "title": "Ghid de foaie de calcul Sugargoo: Găsiți link-uri, verificați mărimile și cumpărați",
+      "description": "Folosiți o foaie de calcul Sugargoo pentru a găsi link-uri de produse, a sorta prețurile, a compara mărimile de îmbrăcăminte și a verifica QC-ul propriului depozit înainte de expediere.",
       "keyword": "sugargoo spreadsheet",
       "category": "getting-started",
       "intro": [
@@ -465,6 +468,19 @@
             "Verificare: se potrivesc cu listarea originală, opțiuni și prețul de comandă curent.",
             "Ordine: folosiţi fluxul oficial de achiziţii pentru un element eligibil.",
             "Review: inspecta propriul depozit QC înainte de a face un colet."
+          ]
+        },
+        {
+          "id": "spreadsheet-budget-shortlist",
+          "title": "Creați o listă scurtă în funcție de preț și mărime",
+          "paragraphs": [
+            "Folosiți catalogul sortat în funcție de preț atunci când aveți un buget pentru produse, apoi restrângeți după categorie sau termen de căutare. Verificați opțiunea selectată pe pagina de cumpărare: cel mai mic preț afișat poate aparține unei alte mărimi, culori sau cantități. Păstrați prețul produsului și bugetul de livrare ca decizii separate.",
+            "Pentru îmbrăcăminte, salvați graficul vânzătorului cu link-ul exact de listare și comparați-l cu un articol de îmbrăcăminte similar pe care îl dețineți. Marchează fiecare candidat cu o acțiune următoare, cum ar fi verificarea lungimii mânecilor sau confirmarea cantității incluse. Acest lucru face ca directorul să fie o listă de verificare utilă pentru cumpărături, în loc de o colecție tot mai mare de linkuri neverificate."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/articles/sugargoo-finds-under-20/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -551,7 +567,7 @@
         "sugargoo-qc-photos"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/spreadsheet/",
         "/category/shoes/"
@@ -658,8 +674,8 @@
     {
       "id": "sugargoo-qc-photos",
       "slug": "sugargoo-qc-photos",
-      "title": "Cum verifici fotografiile QC Sugargoo înainte de expediere",
-      "description": "Găsiți Sugargoo depozit fotografii QC, verificați elementul corect și dimensiunea, solicita măsurători suplimentare utile, și rezolva probleme înainte de transportul maritim internațional.",
+      "title": "Fotografii Sugargoo QC: Unde le găsești și ce trebuie verificat",
+      "description": "Găsește fotografiile Sugargoo QC ale comenzii tale, verifică varianta și măsurătorile corecte și solicită dovezi clare înainte de a aproba livrarea internațională.",
       "keyword": "fotografii qc sugargoo",
       "category": "quality",
       "intro": [
@@ -678,6 +694,18 @@
             "Verificați dacă fiecare fotografie aparține aceleiași comenzi și variante.",
             "Solicită o vedere atentă a unui defect suspect, identificându-i locaţia.",
             "Păstrați elemente nerezolvate din colet până când aveți un răspuns."
+          ]
+        },
+        {
+          "id": "qc-photo-request",
+          "title": "Transformă o fotografie neclară într-o solicitare precisă",
+          "paragraphs": [
+            "Deschide fotografiile atașate propriei comenzi în depozit sau în zona de comenzi. Imaginile de referință din catalog te ajută să răsfoiești, dar nu dovedesc starea sau măsurătorile articolului care a sosit pentru tine. Mai întâi, potrivește identificatorul articolului, culoarea selectată, mărimea și cantitatea cu înregistrarea comenzii.",
+            "Pentru potrivirea hainelor, solicită măsura exactă care ți-ar putea schimba decizia: lățimea pieptului cu punctul zero al benzii vizibil, lungimea corpului de la un punct de pornire denumit sau o bandă de talie relaxată. Pentru încălțăminte, păstrează separat lungimea piciorului, lungimea branțului și conversiile mărimi-etichetă. Confirmați serviciile și taxele disponibile, apoi comparați rezultatul cu o referință măsurată în același mod."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-shoe-size-guide/"
           ]
         },
         {
@@ -764,17 +792,17 @@
         "sugargoo-returns-refunds"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
-        "/articles/sugargoo-shoe-size-guide/",
-        "/category/shoes/"
+        "/articles/sugargoo-clothing-size-guide/",
+        "/category/hoodies-sweaters/"
       ]
     },
     {
       "id": "sugargoo-shipping-calculator",
       "slug": "sugargoo-shipping-calculator",
-      "title": "Calculator de transport Sugargoo: greutate și costuri",
-      "description": "Compară greutatea reală a coletului cu greutatea volumetrică. Folosește divizorul și regula de tarifare ale rutei alese. Acest instrument nu calculează prețul transportului.",
+      "title": "Calculator de transport Sugargoo: Greutate reală vs. greutate volumetrică",
+      "description": "Calculați greutatea coletului, comparați facturarea reală și volumetrică și colectați datele necesare pentru o estimare curentă a costurilor de transport Sugargoo.",
       "keyword": "calculator transport sugargoo",
       "category": "shipping",
       "intro": [
@@ -793,6 +821,18 @@
             "Utilizaţi dimensiunile exterioare ambalate în centimetri, nu dimensiunile produsului.",
             "Transformă gramele în kilograme: 3000 g înseamnă 3 kg.",
             "Ia disivorul şi încarcă regula de pe ruta pe care o iei în considerare."
+          ]
+        },
+        {
+          "id": "calculator-quote-handoff",
+          "title": "Includeți calculul într-o ofertă de rută curentă",
+          "paragraphs": [
+            "Calculatorul de mai sus explică greutatea; nu preia tarifele de transport în timp real. După calcul, deschideți estimatorul oficial cu destinația, conținutul și măsurătorile ambalate. Utilizați divizorul rutei selectate, taxa minimă și termenii de rotunjire în loc să presupuneți că o singură formulă descrie fiecare serviciu.",
+            "Înregistrați totalul cotat și ce include acesta. Comparați rutele cu intrări identice, apoi reîmprospătați oferta după modificarea coletului. Pentru expedierile din Republica Cehă, citiți și îndrumările actuale despre destinația menționate mai jos; o regulă veche de import cu valoare mică sau plata unui alt cumpărător nu reprezintă o estimare fiabilă pentru coletul dvs."
+          ],
+          "actions": [
+            "/articles/sugargoo-rehearsal-shipping/",
+            "/articles/sugargoo-shipping-to-czechia/"
           ]
         },
         {
@@ -879,7 +919,7 @@
         "sugargoo-shipping-to-usa"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-rehearsal-shipping/",
         "/articles/sugargoo-shipping-to-usa/"
@@ -888,8 +928,8 @@
     {
       "id": "sugargoo-rehearsal-shipping",
       "slug": "sugargoo-rehearsal-shipping",
-      "title": "Simularea ambalării Sugargoo: cum funcționează și când merită",
-      "description": "Aflați ce face transportul maritim de repetiții Sugargoo, atunci când merită taxa, și cum să utilizați greutatea și dimensiunile ambalate înainte de a alege un traseu de transport maritim.",
+      "title": "Livrare pentru repetiții Sugargoo: Pași, cost și când să o utilizați",
+      "description": "Aflați când vă ajută livrarea pentru repetiții Sugargoo, ce trebuie să verificați înainte de a plăti și cum să comparați rezultatul ambalat cu cotația finală de livrare.",
       "keyword": "sugargoo rehearsal shipping",
       "category": "shipping",
       "intro": [
@@ -924,6 +964,18 @@
               ]
             ]
           }
+        },
+        {
+          "id": "rehearsal-next-decision",
+          "title": "Folosiți rezultatul repetiției pentru a lua următoarea decizie",
+          "paragraphs": [
+            "Citiți taxa de serviciu curentă din contul dvs. înainte de a solicita o repetiție. Rezultatul util este reprezentat de informații mai clare despre ambalare: comparați greutatea reală, dimensiunile exterioare, regula de facturare a rutei și orice servicii selectate. O repetiție plătită nu garantează în sine că totalul final de livrare va fi mai mic.",
+            "Dacă rezultatul diferă de estimarea dvs., identificați motivul înainte de a schimba rutele. Cutia a fost mai mare decât era de așteptat, ambalajul protector a adăugat greutate sau ruta folosește un divizor diferit? Comparați conținut și ambalaj identice între cotațiile eligibile. Dacă eliminați un articol sau modificați ambalajul ulterior, actualizați informațiile utilizate pentru cotația finală."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-shipping-to-czechia/"
+          ]
         },
         {
           "id": "identify-the-decision",
@@ -1009,7 +1061,7 @@
         "sugargoo-parcel-consolidation"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-28",
+      "updated": "2026-11-09",
       "actions": [
         "/articles/sugargoo-shipping-calculator/",
         "/articles/sugargoo-parcel-consolidation/"
@@ -1376,8 +1428,8 @@
     {
       "id": "sugargoo-returns-refunds",
       "slug": "sugargoo-returns-refunds",
-      "title": "Retururi și rambursări Sugargoo: dovezi, eligibilitate și pași",
-      "description": "Gestionează un articol greșit cu dovezi clare, verifică condițiile returului și separă aprobarea rambursării de primirea efectivă a banilor.",
+      "title": "Returnări și rambursări Sugargoo: Dovezi QC și pașii următori",
+      "description": "Verificați stadiul comenzii, documentați o problemă de mărime sau stare și înțelegeți următorul pas de returnare sau rambursare înainte de expedierea internațională.",
       "keyword": "rambursare sugargoo",
       "category": "account",
       "intro": [
@@ -1391,6 +1443,18 @@
           "paragraphs": [
             "Înainte de a contacta suportul, stabilește dacă ordinul încă așteaptă cumpărarea, este cumpărat, expediat de vânzător, primit în depozit sau trimis internațional. Anularea unei achiziții nefinalizate este diferită de returnarea bunurilor fizice. Folosește statutul și data reale, nu presupunerea că apăsarea unui buton a inversat tranzacția.",
             "Ghidul oficial de anulare Sugargoo descrie procesul din cont, iar cel de retur separă etapele ulterioare de returnare și rambursare. Deschide comanda relevantă și folosește acțiunea oficială disponibilă. Dacă opțiunea lipsește sau statutul este neclar, întreabă ce acțiune este posibilă pentru acea comandă înainte să organizezi ceva independent."
+          ]
+        },
+        {
+          "id": "return-size-evidence",
+          "title": "Documentați o problemă de mărime înainte de a solicita o remediere",
+          "paragraphs": [
+            "Păstrați împreună varianta selectată, tabelul de măsurători al vânzătorului și fotografiile QC ale comenzii. Explicați dacă a sosit opțiunea greșită sau dacă eticheta corectă are măsurători care diferă de cele din listare. Comparați aceleași puncte de măsurare; o lățime plată și o circumferință nu pot stabili o nepotrivire prin ele însele.",
+            "Întrebați ce opțiuni de returnare sau schimb sunt disponibile pentru comanda respectivă, inclusiv termenele limită, costurile interne și următoarea acțiune necesară. Înregistrați răspunsul și orice intrări separate de rambursare. Nu considerați aprobarea unei solicitări ca dovadă că fiecare cost a fost deja rambursat și rezolvați întrebările materiale înainte de expedierea internațională."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/articles/sugargoo-order-status/"
           ]
         },
         {
@@ -1473,7 +1537,11 @@
         "sugargoo-fees-payment"
       ],
       "published": "2026-10-18",
-      "updated": "2026-10-18"
+      "updated": "2026-11-09",
+      "actions": [
+        "/articles/sugargoo-qc-photos/",
+        "/articles/sugargoo-order-status/"
+      ]
     },
     {
       "id": "weidian-taobao-links-sugargoo",
@@ -2304,6 +2372,10 @@
           "paragraphs": [
             "Deschideți pagina originală a produsului și salvați graficul de dimensiune care aparține acelui model. Verificați dacă măsurătorile descriu piciorul, talpa sau exteriorul pantofului. De asemenea, verificați dacă sistemul de dimensionare este pentru bărbați, femei sau copii. O masă dintr-un alt model poate crea o potrivire falsă chiar și atunci când etichetele de dimensiuni arată la fel.",
             "În cazul în care graficul este neclar, întrebați vânzătorul sau agentul ce înseamnă fiecare coloană înainte de a comanda. Nu adăugaţi o alocaţie standard la fiecare diagramă: este posibil ca vânzătorul să fi construit deja o alocaţie în recomandarea sa. Alesul tău, şosetele şi forma pantofului contează de asemenea."
+          ],
+          "actions": [
+            "/category/shoes/",
+            "/articles/sugargoo-clothing-size-guide/"
           ]
         },
         {
@@ -2409,6 +2481,443 @@
       "actions": [
         "/category/shoes/",
         "/articles/sugargoo-qc-photos/"
+      ]
+    },
+    {
+      "id": "sugargoo-clothing-size-guide",
+      "slug": "sugargoo-clothing-size-guide",
+      "title": "Ghid de mărimi pentru îmbrăcăminte Sugargoo: măsurători și verificări QC",
+      "description": "Alegeți mărimile pentru îmbrăcăminte folosind măsurătorile vânzătorului, comparați un articol de îmbrăcăminte pe care îl dețineți și solicitați fotografii utile de la QC Sugargoo înainte de expedierea internațională.",
+      "keyword": "sugargoo clothing size guide",
+      "category": "quality",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Începeți cu măsurătorile unui articol de îmbrăcăminte care vi se potrivește, apoi comparați-le cu graficul exact al vânzătorului. O literă de mărime familiară nu este suficientă: un hanorac mediu și un tricou mediu pot avea lățimi, lungimi și croieli foarte diferite. Acest ghid de mărimi pentru îmbrăcăminte Sugargoo transformă aceste diferențe într-o listă de verificare practică a comenzii.",
+        "Folosiți fotografiile din listare pentru a alege un stil, graficul de mărimi pentru a selecta o variantă și propriul QC din depozit pentru a verifica ce a sosit. Acestea sunt trei tipuri diferite de dovezi. Exemplele de comparație de mai jos ilustrează o metodă; Acestea nu sunt măsurători ale produselor oferite în prezent în catalog."
+      ],
+      "sections": [
+        {
+          "id": "measure-reference",
+          "title": "Măsurați un articol vestimentar de referință înainte de a răsfoi",
+          "paragraphs": [
+            "Alegeți ceva ce vă place cu adevărat să purtați din aceeași categorie. Un tricou mulat nu este o referință bună pentru un hanorac de iarnă purtat peste un alt strat. Așezați articolul vestimentar pe o suprafață plană, neteziți pliurile evidente fără a întinde materialul și faceți o fotografie clară a fiecărei măsurători. Observați dacă a fost deja spălat și dacă materialul se întinde.",
+            "Înregistrați punctele de măsurare, precum și numărul. Pentru un top simplu, măsurați drept pe piept sub găurile brațelor, apoi măsurați lungimea corpului de la un punct clar identificat la umăr până la tiv. Folosiți aceleași puncte de capăt atunci când citiți graficul vânzătorului. O cusătură curbată, un umăr căzut sau un tiv neuniform pot face ca două măsurători de lungime aparent similare să fie incomparabile.",
+            "Păstrați această mică foaie de referință la îndemână în timp ce răsfoiți. Dacă schimbați croiala dorită de la obișnuită la supradimensionată, schimbați și articolul vestimentar de referință. Adăugarea unui număr aleatoriu de centimetri la fiecare dimensiune poate produce mâneci prea lungi, fără a oferi spațiul suplimentar la piept dorit."
+          ],
+          "actions": [
+            "/category/t-shirts/",
+            "/category/hoodies-sweaters/"
+          ]
+        },
+        {
+          "id": "read-size-chart",
+          "title": "Citiți graficul vânzătorului fără a amesteca măsurătorile",
+          "paragraphs": [
+            "Mai întâi stabiliți dacă graficul descrie o persoană sau articolul finit de îmbrăcăminte. O circumferință a pieptului nu este o lățime plată a pieptului unui articol de îmbrăcăminte. De asemenea, un grafic care arată circumferința articolului de îmbrăcăminte nu poate fi comparat direct cu o singură măsurătoare plată. Când o lățime plată este dublată, rezultatul este doar o simplă aproximare a circumferinței; nu descrie modelarea, întinderea sau modul în care articolul de îmbrăcăminte va atârna.",
+            "Verificați unitățile, opțiunea exactă a produsului și orice toleranță de măsurare afișată de vânzător. Nu transferați un grafic dintr-o listă similară din punct de vedere vizual. Loturi sau croieli diferite pot utiliza specificații diferite. Dacă un grafic este o imagine, măriți și citiți titlurile coloanelor înainte de a le traduce; o etichetă tradusă fără diagrama sa de măsurare poate fi totuși ambiguă.",
+            "Etichetele comune includ piept sau bust, umăr, lungimea articolului de îmbrăcăminte, lungimea mânecii, talie, șold, înălțime și lungimea pantalonilor. Scrieți semnificația lângă măsurătorile salvate. Dacă diagrama lipsește și două interpretări ar duce la mărimi diferite, solicitați clarificări înainte de a plăti. Ghicitul devine mai scump după ce comanda ajunge în tranzit internațional."
+          ]
+        },
+        {
+          "id": "fit-example",
+          "title": "O comparație elaborată: lățimea și lungimea împreună",
+          "paragraphs": [
+            "Luați în considerare un tricou de referință ilustrativ care măsoară 54 cm pe piept și 70 cm lungime. Să presupunem că graficul unui vânzător listează o opțiune la 52 cm și 68 cm și o alta la 56 cm și 72 cm, folosind aceleași puncte de măsurare. Prima opțiune este mai îngustă și mai scurtă decât referința dvs.; a doua este mai lată și mai lungă. Niciuna nu este automat corectă doar pentru că litera mărimii sale se potrivește cu alegerea dvs. obișnuită.",
+            "Acum decideți care diferență contează pentru dvs. Dacă referința pare deja scurtă, opțiunea mai scurtă merită o atenție sporită. Dacă lățimea pieptului este aproape de lejeritatea maximă confortabilă, opțiunea mai lată poate fi neatractivă. Comparați măsurătorile umerilor și mânecilor înainte de a selecta oricare dintre ele. Aceasta este o decizie privind mai multe dimensiuni, nu o regulă de a alege întotdeauna o mărime mai mare.",
+            "Lăsați diferențele nerezolvate vizibile în notițe. De exemplu, scrieți „piept acceptabil, măsurătoarea mânecii lipsește” în loc să marcați întregul articol de îmbrăcăminte aprobat. Puteți apoi solicita dovezile lipsă fără a repeta verificări care erau deja clare. Aceste numere de exemplu sunt inventate pentru aritmetică și nu reprezintă o recomandare de mărime din partea vânzătorului."
+          ]
+        },
+        {
+          "id": "category-checks",
+          "title": "Alegeți verificările care corespund categoriei de îmbrăcăminte",
+          "paragraphs": [
+            "Hanoracele au nevoie de spațiu pentru stratul pe care intenționați să îl purtați dedesubt. Comparați lățimea pieptului, lungimea mânecii, lățimea tivului și lungimea corpului cu un hanorac similar. Un umăr căzut se schimbă unde începe măsurarea mânecii, așa că comparați diagrama completă în loc să tratați lățimea umerilor și lungimea mânecii ca garanții independente ale potrivirii.",
+            "Pentru pantaloni și pantaloni scurți, distingeți o talie relaxată de o măsurătoare întinsă. Comparați talia, șoldul, înălțimea din față, cusătura interioară și deschiderea piciorului atunci când aceste detalii vă afectează potrivirea. O măsurătoare a taliei în sine nu arată dacă coapsele vor fi confortabile. Pentru tricouri, verificați croiala și lungimea dorite, precum și lățimea pieptului; o croială sport poate diferi de un tricou casual.",
+            "Jachetele ridică întrebări suplimentare despre stratificare și mișcare. O fotografie nu poate demonstra cât de confortabil poți ridica brațele sau închide jacheta peste un pulover. Folosește o jachetă de referință comparabilă, inspectează materialele menționate și tratează informațiile lipsă ca incertitudine, în loc să presupui că fiecare articol cu aceeași literă de mărime urmează un tabel universal."
+          ],
+          "table": {
+            "headers": [
+              "Tipul de îmbrăcăminte",
+              "Comparație utilă",
+              "Greșeală frecventă"
+            ],
+            "rows": [
+              [
+                "Tricouri și tricouri",
+                "Lățimea pieptului, lungimea corpului și mânecile",
+                "Alegerea doar după înălțime și greutate"
+              ],
+              [
+                "Hanorace și jachete",
+                "Spațiu pentru stratificare, mâneci și tiv",
+                "Combinarea umerilor căzuți cu cei standard"
+              ],
+              [
+                "Pantaloni și pantaloni scurți",
+                "Talie, șold, înălțime și cusătură interioară",
+                "Compararea taliei întinse cu cele relaxate"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "request-clothing-qc",
+          "title": "Solicitați fotografii QC care pot răspunde la întrebarea dvs. privind mărimea",
+          "paragraphs": [
+            "Ghidul QC de la Sugargoo descrie verificările articolului primit și solicitările de dovezi suplimentare. Verificați serviciile disponibile pentru propria comandă, inclusiv orice taxă, înainte de a solicita mai multe fotografii. Solicitați o măsurătoare specifică cu puncte de capăt vizibile în loc să întrebați dacă articolul este „adecvat mărimii”. Personalul nu poate cunoaște preferințele dvs. personale de mărime din această frază.",
+            "O solicitare utilă este: așezați articolul de îmbrăcăminte plat fără a-l întinde, arătați banda completă de la o margine a pieptului la cealaltă, chiar sub găurile brațelor, și includeți eticheta cu mărimea într-o fotografie separată. Pentru lungime, denumiți punctul de pornire pe care l-ați folosit pe articolul de îmbrăcăminte de referință. Pentru pantaloni, specificați dacă doriți ca talia să fie relaxată sau întinsă.",
+            "Inspectați imaginea în sine înainte de a vă baza pe număr. Punctul zero trebuie să fie vizibil, banda trebuie să urmeze linia dorită, iar pliurile nu trebuie să ascundă tivul. Dacă perspectiva sau o bandă îndoită face ca o mică diferență să fie imposibil de evaluat, solicitați o imagine corectată. Mai multe fotografii cu același unghi neclar nu fac măsurarea mai fiabilă."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "resolve-sizing-issues",
+          "title": "Rezolvați o nepotrivire cât timp dovezile sunt utile",
+          "paragraphs": [
+            "Păstrați împreună opțiunea selectată, graficul vânzătorului, numărul comenzii și imaginile QC relevante. Separați o etichetă incorectă de un articol de îmbrăcăminte care are eticheta corectă, dar dimensiuni neașteptate. Explicați discrepanța cu aceeași metodă de măsurare pe ambele părți. O comparație scurtă și specifică ajută vânzătorul să înțeleagă problema mai bine decât o reclamație generală că articolul arată mic.",
+            "Nu presupuneți că o returnare, un schimb sau o rambursare sunt automate. Eligibilitatea, termenele limită, costurile și manipularea depind de comandă și de termenii vânzătorului. Întrebați ce remediu este disponibil înainte de a trimite articolul către un colet internațional. Dacă decideți să îl păstrați, înregistrați de ce diferența rămasă este acceptabilă, mai degrabă decât să tratați o problemă nerezolvată ca dovadă a unei potriviri bune.",
+            "În cele din urmă, distingeți QC-ul vizibil de un test de uzură. Fotografiile din depozit nu pot stabili durabilitatea pe termen lung, contracția după spălare sau confortul personal. Citiți informațiile de îngrijire, acolo unde sunt disponibile, și păstrați înregistrarea comenzii. Pentru următoarea achiziție, actualizați măsurătorile de referință de la un articol de îmbrăcăminte pe care l-ați primit și purtat efectiv; acest lucru face ca comparațiile viitoare să fie mai utile, fără a se baza pe stereotipuri generale de mărimi."
+          ],
+          "actions": [
+            "/articles/sugargoo-returns-refunds/"
+          ]
+        }
+      ],
+      "checklist": [
+        "Utilizați un articol de îmbrăcăminte comparabil care se potrivește stilului dorit.",
+        "Potriviți unitățile, punctele de capăt și lățimea plană în funcție de circumferință.",
+        "Verificați varianta exactă și graficul vânzătorului înainte de a plăti.",
+        "Solicitați măsurători specifice din depozit pentru dimensiunile nerezolvate.",
+        "Rezolvați o neconcordanță de material înainte de expedierea internațională."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: citirea tabelelor de mărimi Taobao",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: fotografii, videoclipuri și solicitări de măsurători",
+          "url": "https://blog.sugargoo.com/taobao-agent-quality-check-photos-videos-measurements/"
+        },
+        {
+          "title": "Sugargoo: verificări ale calității și limitele acestora",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: retururi și rambursări",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-qc-photos",
+        "sugargoo-shoe-size-guide"
+      ],
+      "actions": [
+        "/category/hoodies-sweaters/",
+        "/category/pants-shorts/"
+      ]
+    },
+    {
+      "id": "sugargoo-finds-under-20",
+      "slug": "sugargoo-finds-under-20",
+      "title": "Găsiți articole Sugargoo sub 20 USD: Verificări ale prețului, mărimii și achiziției",
+      "description": "Găsiți articole Sugargoo sub 20 USD folosind linkuri de produse sortate după preț. Verificați varianta exactă, măsurătorile, QC și livrarea înainte de a decide ce este accesibil.",
+      "keyword": "sugargoo finds under 20",
+      "category": "getting-started",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Pentru acest ghid, „sub 20 USD” înseamnă un preț afișat al produsului sub 20 USD, înainte de costurile suplimentare. Nu înseamnă că coletul va costa mai puțin de 20 USD la livrare. Utilizați catalogul live sortat după preț pentru a crea o listă scurtă, apoi verificați varianta exactă și prețul curent pe pagina de cumpărare.",
+        "Aceasta este o metodă de selecție, nu o listă fixă de produse presupus testate. Prețurile și disponibilitatea din catalog se pot modifica. Exemplele explică cum să comparați costurile și incertitudinea; acestea nu sunt oferte live, recenzii sau promisiuni că un anumit vânzător va accepta o comandă."
+      ],
+      "sections": [
+        {
+          "id": "find-budget-links",
+          "title": "Începeți cu catalogul sortat în funcție de preț",
+          "paragraphs": [
+            "Deschideți catalogul utilizând linkul de sortare în funcție de prețul mic de mai jos. Căutați tipul de produs de care aveți nevoie sau restrângeți lista la o categorie relevantă. Un accesoriu ieftin nu este un substitut util pentru hanoracul pe care ați venit să-l cumpărați. Începeți cu utilizarea preconizată, apoi comparați prețurile din cadrul acelui grup, astfel încât lista scurtă să conțină alternative semnificative.",
+            "Deschideți pagina de produs a fiecărui candidat și urmați linkul de cumpărare disponibil. Confirmați titlul, identificatorul articolului, culoarea selectată, mărimea și cantitatea. Unele listări afișează cel mai mic preț al opțiunii, chiar dacă varianta de care aveți nevoie costă mai mult. Un card care arată un preț sub 20 USD este doar un punct de plecare până când opțiunea exactă a fost bifată.",
+            "Salvați trei sau patru candidați plauzibili în loc să colectați zeci de linkuri. Înregistrați motivul pentru care fiecare ar putea funcționa și întrebarea care l-ar putea exclude. De exemplu: măsurători potrivite, dar lipsesc detalii despre material. O listă scurtă cu întrebări explicite este mai ușor de verificat decât o listă lungă ordonată doar după imagini atractive."
+          ],
+          "actions": [
+            "/spreadsheet/?sort=price",
+            "/category/accessories/?sort=price"
+          ]
+        },
+        {
+          "id": "under-20-budget",
+          "title": "Separați alocația produsului de bugetul livrat",
+          "paragraphs": [
+            "Scrieți două limite: prețul maxim al articolului și suma totală maximă pe care sunteți dispus să o cheltuiți. Prima vă ajută să navigați; a doua decide dacă achiziția are sens. Permiteți livrarea internă acolo unde se percepe, costurile de plată sau de serviciu afișate la finalizarea comenzii, serviciile opționale, transportul internațional și taxele de destinație care se aplică coletului.",
+            "Luați în considerare o comparație pur ilustrativă. Articolul A este listat la 12 USD, iar articolul B la 17 USD. Dacă A necesită costuri suplimentare de 9 USD, în timp ce B necesită costuri suplimentare de 3 USD în baza aceleiași metode de comparație, totalurile sunt 21 USD și 20 USD. Aceste cifre nu sunt tarife Sugargoo. Ele arată de ce prețul mai mic al articolului nu produce neapărat totalul mai mic.",
+            "Când mai multe articole împart un colet, nu prezentați o împărțire egală arbitrară ca preț de transport cotat pentru fiecare produs. Păstrați totalul coletului vizibil și precizați cum ați alocat orice sumă partajată. Pentru o decizie de cumpărare, comparați cotația de preț pentru colet cu și fără articolul suplimentar, odată ce sunt disponibile o greutate și dimensiuni semnificative."
+          ],
+          "table": {
+            "headers": [
+              "Linie bugetară",
+              "Ce trebuie verificat",
+              "Când se actualizează comanda"
+            ],
+            "rows": [
+              [
+                "Produsul și opțiunea selectată",
+                "Mărimea exactă, culoarea, cantitatea și moneda",
+                "Înainte de plasarea comenzii"
+              ],
+              [
+                "Servicii interne și opționale",
+                "Taxele afișate efectiv pentru comandă",
+                "Înainte de a alege serviciile plătite"
+              ],
+              [
+                "Costuri de colet internațional și de destinație",
+                "Dimensiuni ambalate și termeni de rută actuali",
+                "Înainte de a plăti pentru expediere"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-cheap-clothing",
+          "title": "Utilizați măsurătorile pentru a compara haine ieftine",
+          "paragraphs": [
+            "Un preț mic nu face ca o mărime nepotrivită să fie o afacere. Pentru tricouri, hanorace și jerseuri, comparați măsurătorile vânzătorului cu un articol de îmbrăcăminte similar pe care îl dețineți deja. Rețineți dacă un număr reprezintă o lățime plată sau o circumferință. Evitați să selectați o literă mai mare doar pentru că altcineva recomandă o mărime mai mare, fără a identifica vânzătorul și lista exactă.",
+            "Pentru pantaloni și pantaloni scurți, verificați mai mult decât talia. Talia, lățimea șoldurilor, cusătura interioară și deschiderea piciorului pot schimba croiala chiar și atunci când talia nominală pare corectă. Dacă o listă oferă doar o literă de mărime și nicio măsurătoare utilă, includeți informațiile lipsă în decizie. S-ar putea să preferați o mărime puțin mai scumpă, cu dovezi mai clare.",
+            "Pentru accesorii, verificați dimensiunile și ce este inclus în achiziție. O fotografie poate arăta mai multe piese, în timp ce opțiunea selectată conține doar una. Citiți descrierea opțiunii și rezumatul comenzii. Scopul comparației este de a înțelege articolul pe care îl veți primi, nu de a deduce valoarea din numărul de obiecte dintr-o fotografie de referință."
+          ],
+          "actions": [
+            "/articles/sugargoo-clothing-size-guide/",
+            "/category/t-shirts/?sort=price"
+          ]
+        },
+        {
+          "id": "cheap-qc-evidence",
+          "title": "Decideți ce dovadă QC v-ar putea schimba alegerea",
+          "paragraphs": [
+            "Înainte de a comanda, enumerați cele două sau trei aspecte care contează cel mai mult. Un articol de îmbrăcăminte ar putea necesita o etichetă clară cu mărimea și o măsurătoare a pieptului; un accesoriu ar putea necesita o verificare a dimensiunilor și o vedere a închizătorii sale. Când comanda ajunge în depozit, comparați articolul primit cu varianta selectată și informațiile salvate în listare.",
+            "Ghidul QC publicat de Sugargoo este util pentru a înțelege ce pot arăta verificările din depozit. Confirmați opțiunile de servicii disponibile pentru comanda dvs. înainte de a plăti pentru dovezi suplimentare. Solicitați un prim-plan sau o măsurătoare care să răspundă la o întrebare specifică nerezolvată. Repetarea unei solicitări generale pentru imagini de calitate mai bună poate adăuga întârzieri fără a îmbunătăți decizia.",
+            "Un preț scăzut și o fotografie curată nu garantează autenticitatea, durabilitatea sau siguranța. Evitați să descrieți articolele netestate ca fiind cele mai bune, verificate sau garantate doar pentru că există o pagină de produs. Dacă utilizarea preconizată depinde de performanțe pe care fotografiile nu le pot stabili, căutați documentație adecvată a produsului sau alegeți o alternativă cu dovezi pe care le puteți evalua."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/"
+          ]
+        },
+        {
+          "id": "small-haul-costs",
+          "title": "Verificați costul adăugării unui articol suplimentar ieftin",
+          "paragraphs": [
+            "Un articol suplimentar ieftin ocupă în continuare spațiu și adaugă greutate. Înainte de a-l adăuga la un colet, luați în considerare articolul și ambalajul său împreună. Un obiect voluminos și ieftin poate schimba greutatea taxabilă sau poate împinge un colet dincolo de limita unei rute. Îndepărtarea ambalajului poate afecta protecția, așa că nu presupuneți că fiecare reducere de volum este o economie rezonabilă.",
+            "Folosiți calculatorul de greutate pentru a înțelege aritmetica, apoi utilizați estimarea oficială a rutei pentru prețuri. Calculatorul de pe acest site explică greutatea reală și volumetrică; nu este un serviciu tarifar live. Introduceți divizorul și regula de facturare pentru ruta pe care o comparați în loc să tratați un divizor comun ca fiind universal.",
+            "Dacă incertitudinea privind ambalarea este suficient de mare pentru a schimba decizia, revizuiți serviciul de repetiții disponibil și costul acestuia. Solicitați-l după ce decideți ce articole intenționați să păstrați. Repetițiile pot îmbunătăți informațiile de ambalare utilizate într-o ofertă, dar plata lor nu garantează un total mai mic. Comparați informațiile obținute cu costul și incertitudinea rămasă."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "budget-decision",
+          "title": "Păstrați, investigați sau omiteți: o regulă simplă pentru lista scurtă",
+          "paragraphs": [
+            "Marcați un candidat cu „păstrați” numai atunci când opțiunea exactă, măsurătorile și totalul așteptat îndeplinesc cerințele dumneavoastră. Marcați-l cu „investigați” atunci când un răspuns ar putea schimba decizia. Marcați-l cu „omiteți” atunci când dovezile lipsă, dimensiunile nepotrivite sau costul total îl fac nepotrivit. Această regulă împiedică prețul principal scăzut să ia toate deciziile.",
+            "Dacă un articol achiziționat are o problemă, documentați-o prompt și verificați opțiunile de returnare sau schimb pentru comanda respectivă. Un articol ieftin poate fi totuși scump de returnat în raport cu prețul său de achiziție. Comparați orice remediu și cost menționat înainte de a continua; nu presupuneți că o rambursare viitoare va elimina riscul de a face o achiziție neclară acum.",
+            "Revizuiți linkurile salvate la finalizarea comenzii, în loc să presupuneți că un preț rămâne valabil pe termen nelimitat. Păstrați dovada comenzii și actualizați lista scurtă atunci când un vânzător modifică opțiunile sau stocul. Rezultatul util al unui ghid bugetar este o achiziție care se potrivește nevoilor și alocației dvs. totale, chiar și atunci când asta înseamnă cumpărarea mai puținelor articole sau lăsarea neutilizată a unui link atractiv cu preț redus.",
+            "Revizuiți din nou lista scurtă imediat înainte de plată. Dacă varianta aleasă se modifică, repetați verificările prețului și dimensiunii, în loc să aplicați decizia anterioară unui alt articol. O limită bugetară utilă ar trebui să supraviețuiască rezumatului final al comenzii."
+          ]
+        }
+      ],
+      "checklist": [
+        "Tratați sub 20 USD ca filtru articol-preț, nu ca o promisiune de preț livrat.",
+        "Verificați varianta și cantitatea exactă pe pagina de cumpărare.",
+        "Comparați măsurătorile cu un articol de referință adecvat.",
+        "Bugetați întregul colet și costurile de destinație aplicabile.",
+        "Utilizați prețurile și dovezile actuale în loc de o listă veche clasificată."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: procesul de comandă",
+          "url": "https://blog.sugargoo.com/how-does-ordering-from-sugargoo-work-learn-how-to-buy-from-china-step-by-step/"
+        },
+        {
+          "title": "Sugargoo: citirea tabelelor de mărimi Taobao",
+          "url": "https://blog.sugargoo.com/how-to-read-taobao-size-charts/"
+        },
+        {
+          "title": "Sugargoo: verificări ale calității și limitele acestora",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Sugargoo: estimarea transportului internațional",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulare colet înainte de expediere",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: retururi și rambursări",
+          "url": "https://blog.sugargoo.com/sugargoo-returns-refunds-guide/"
+        }
+      ],
+      "related": [
+        "sugargoo-spreadsheet-guide",
+        "sugargoo-clothing-size-guide"
+      ],
+      "actions": [
+        "/spreadsheet/?sort=price",
+        "/category/hoodies-sweaters/?sort=price"
+      ]
+    },
+    {
+      "id": "sugargoo-shipping-to-czechia",
+      "slug": "sugargoo-shipping-to-czechia",
+      "title": "Livrare Sugargoo către Cehia: Costuri, rute și urmărire",
+      "description": "Planificați livrarea Sugargoo către Republica Cehă cu verificări ale greutății ambalate, cotații actuale ale rutelor, surse vamale și o listă de verificare practică pentru urmărire.",
+      "keyword": "sugargoo shipping to czech republic",
+      "category": "shipping",
+      "published": "2026-11-09",
+      "updated": "2026-11-09",
+      "intro": [
+        "Pentru a estima costul livrării Sugargoo către Cehia, selectați Republica Cehă ca destinație în estimatorul oficial actual și utilizați conținutul, greutatea și dimensiunile propriului colet. Nu există un preț unic de livrare sau un timp de livrare care să se aplice fiecărei comenzi cehe.",
+        "Acest ghid vă ajută să colectați datele corecte, să comparați rutele disponibile și să păstrați documentele necesare după expediere. Disponibilitatea rutelor, taxele și regulile de import se pot modifica. Exemplele de mai jos explică metodele de comparare; acestea nu sunt cotații actuale ale transportatorului sau o promisiune că un serviciu numit este disponibil pentru dvs."
+      ],
+      "sections": [
+        {
+          "id": "czech-start",
+          "title": "Pregătiți destinația și informațiile despre colet",
+          "paragraphs": [
+            "Utilizați adresa completă de livrare a destinatarului și codul poștal care îi aparține. Verificați numărul casei sau al clădirii, orice detaliu al apartamentului și un număr de telefon pe care transportatorul îl poate utiliza. Mențineți numele destinatarului în concordanță cu înregistrările utilizate pentru livrare și cu orice documente de vămuire solicitate. O adresă salvată merită o altă verificare înainte de trimiterea fiecărui colet.",
+            "Enumerați conținutul dorit înainte de a compara rutele. Categoria produsului, materialele, bateriile, lichidele și alte cerințe de manipulare pot afecta eligibilitatea. Citiți restricțiile afișate pentru serviciul selectat și întrebați despre articolele neclare înainte de a plăti. O rută care apare într-o comparație generală nu confirmă că acceptă conținutul specific al coletului dvs.",
+            "Păstrați împreună identificatorul comenzii, descrierea, cantitatea și înregistrarea achiziției efective a fiecărui articol. Acest lucru facilitează răspunsul la o solicitare ulterioară fără a reconstrui istoricul comenzilor din capturi de ecran. Folosiți informații precise pe tot parcursul procesului. Nu modificați descrierile sau valorile doar pentru a face o rută să pară mai ieftină sau pentru a imita declarația unui alt cumpărător."
+          ]
+        },
+        {
+          "id": "czech-weight",
+          "title": "Înțelegeți greutatea pe care o va percepe o rută",
+          "paragraphs": [
+            "Suma greutăților produselor nu este neapărat greutatea finală ambalată. Ambalajul exterior și materialele de protecție adaugă greutate, în timp ce dimensiunea coletului finit poate conta separat. Solicitați dimensiunile ambalate atunci când acestea sunt necesare pentru calcularea rutei. Utilizați centimetri și kilograme în mod constant, astfel încât o nepotrivire a unităților să nu distorsioneze comparația.",
+            "Un colet ilustrativ cu dimensiunile de 40 × 30 × 25 cm are un volum de 30.000 de centimetri cubi. Dacă o rută ipotetică utilizează un divizor de 6.000, greutatea sa volumetrică ar fi de 5 kg. Dacă greutatea reală ambalată este de 3 kg și acea rută percepe cifra mai mare, greutatea inițială ar fi de 5 kg înainte de regulile de rotunjire. Acestea sunt exemple de intrări, nu tariful unei rute cehe.",
+            "O altă rută poate utiliza un divizor diferit, doar greutatea reală, taxe minime sau limite de dimensiune. Citiți regula menționată înainte de a compara prețurile afișate. Calculatorul de greutate de la fața locului vă poate ajuta cu calculele aritmetice, dar cotația actuală Sugargoo determină prețul și serviciile disponibile pentru comanda dvs."
+          ],
+          "actions": [
+            "/articles/sugargoo-shipping-calculator/"
+          ]
+        },
+        {
+          "id": "czech-route-comparison",
+          "title": "Comparați oferta completă de rută",
+          "paragraphs": [
+            "Parcurgeți același colet prin fiecare rută eligibilă, astfel încât comparația să utilizeze intrări corespondente. Înregistrați taxa menționată, regula de greutate, limitele de dimensiune, estimarea timpului menționat, acoperirea de urmărire și serviciile incluse. Notați data comparației. O captură de ecran de la o comandă veche este utilă ca istoric, dar nu este o dovadă că aceeași ofertă rămâne disponibilă.",
+            "Verificați cum descrie oferta taxele de destinație, manipularea vamală și livrarea. Un nume de rută care conține o sintagmă legată de taxe nu este suficient pentru a explica fiecare taxă sau obligație posibilă. Citiți detaliile serviciului actual și întrebați ce sume sunt incluse în plată. Păstrați răspunsul respectiv împreună cu oferta, astfel încât să puteți distinge ulterior o taxă de transport de o altă taxă.",
+            "Alegeți în funcție de prioritățile dvs. O ofertă mai mică, cu un timp mai puțin previzibil, se poate potrivi unei achiziții flexibile; o livrare urgentă necesită o alocație realistă pentru fiecare etapă. Evitați să construiți planul în jurul celei mai rapide livrări anecdotice pe care o puteți găsi. Luați în considerare consecințele practice dacă coletul ajunge mai târziu decât estimarea înainte de a decide că merită o mică economie."
+          ],
+          "table": {
+            "headers": [
+              "Câmp de comparație",
+              "Înregistrare pentru fiecare rută eligibilă",
+              "De ce este important"
+            ],
+            "rows": [
+              [
+                "Preț și bază de facturare",
+                "Total cotat, regulă reală sau volumetrică, rotunjire",
+                "Același colet poate fi facturat diferit"
+              ],
+              [
+                "Acoperire servicii",
+                "Urmărire, domeniul de livrare și taxe incluse",
+                "Numele unei rute nu este o descriere completă a serviciului"
+              ],
+              [
+                "Limite și termene",
+                "Restricții de conținut, dimensiuni și estimare a timpului",
+                "Eligibilitatea și calendarul sunt specifice fiecărui colet"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "czech-customs",
+          "title": "Utilizați îndrumările vamale cehe actuale",
+          "paragraphs": [
+            "Verificați sursele vamale cehe menționate mai jos înainte de a plăti pentru expediere. Îndrumările lor din 2026 au modificat tratamentul importurilor de comerț electronic cu valoare mică. Nu vă bazați pe o declarație mai veche conform căreia fiecare achiziție sub 150 EUR este scutită de taxe vamale. Taxele vamale, TVA-ul, manipularea și procesul de declarare sunt întrebări separate; tratamentul lor depinde de regulile actuale și de expediere.",
+            "Întrebați serviciul selectat cum va fi gestionată vămuirea și de ce înregistrări are nevoie. Păstrați factura sau înregistrarea comenzii, dovada plății și o descriere exactă a mărfurilor disponibile. Dacă cineva solicită un document sau o plată, verificați solicitarea prin intermediul transportatorului sau al serviciului vamal utilizând un canal oficial înainte de a trimite informații.",
+            "Nu presupuneți că taxele unui colet anterior îl determină pe următorul. O listă de conținut diferită, o categorie declarată, un proces de intrare sau un aranjament de serviciu diferit pot modifica calculul. Acest ghid nu calculează o evaluare vamală obligatorie. Utilizați instrucțiunile oficiale actuale și explicația scrisă a serviciului pentru coletul real, în special atunci când o ofertă lasă o taxă nespecificată."
+          ]
+        },
+        {
+          "id": "czech-before-dispatch",
+          "title": "Finalizați deciziile privind controlul calității și ambalarea înainte de expediere",
+          "paragraphs": [
+            "Verificați fiecare articol cât timp este încă disponibil pentru revizuire în depozit. Potriviți opțiunea și cantitatea primită cu comanda dvs., inspectați fotografiile relevante privind controlul calității și rezolvați întrebările importante privind dimensiunea sau starea. Combinarea unui articol nerezolvat într-un colet poate îngreuna o remediere ulterioară. O ofertă de expediere nu înlocuiește decizia cu privire la păstrarea mărfurilor.",
+            "Alegeți ambalajul în funcție de conținut, nu doar de greutatea dorită. Articolele fragile pot necesita protecție, în timp ce cutiile exterioare inutile pot adăuga volum. Întrebați ce elimină o modificare propusă a ambalajului și dacă afectează protecția articolului. Comparați informațiile de ambalare rezultate înainte de a presupune că modificarea economisește bani.",
+            "Dacă repetiția este disponibilă și incertitudinea rămasă privind ambalarea contează, revizuiți taxa și domeniul de aplicare actuale înainte de a o solicita. Ghidul publicat de Sugargoo descrie utilizarea informațiilor de ambalare rezultate înainte de a continua. Ulterior, confirmați că respectivul conținut și ambalajul ales corespund încă expedierii dorite; Schimbarea coletului poate face o estimare anterioară mai puțin utilă."
+          ],
+          "actions": [
+            "/articles/sugargoo-qc-photos/",
+            "/articles/sugargoo-rehearsal-shipping/"
+          ]
+        },
+        {
+          "id": "czech-tracking",
+          "title": "Interpretarea urmăririi ca o secvență de predări",
+          "paragraphs": [
+            "Păstrați identificatorul coletului și linkul de urmărire furnizate pentru serviciul dvs. Separați procesarea în depozit, acceptarea transportatorului, mișcarea internațională, vămuirea și livrarea locală. Un mesaj creat pe etichetă nu dovedește în sine că coletul a finalizat următoarea predare. Comparați cel mai recent eveniment cu procesul declarat al serviciului în loc să interpretați fiecare perioadă de liniște ca fiind aceeași problemă.",
+            "Când informațiile despre livrarea locală devin disponibile, utilizați transportatorul identificat efectiv pentru coletul dvs. Nu presupuneți că fiecare expediere cehă merge la același transportator final. Verificați detaliile destinatarului, instrucțiunile de livrare și orice notificare de colectare prin canalul oficial al transportatorului respectiv. Salvați mesajele relevante până la finalizarea livrării.",
+            "Dacă progresul este în afara instrucțiunilor pentru serviciul selectat, contactați asistența cu numărul coletului, cel mai recent eveniment și dată, precum și întrebarea specifică la care aveți nevoie de răspuns. Mențineți prima solicitare concisă. O înregistrare structurată ajută asistența să investigheze etapa corectă și previne detaliile comenzii fără legătură să ascundă predarea lipsă."
+          ],
+          "actions": [
+            "/articles/sugargoo-tracking/"
+          ]
+        },
+        {
+          "id": "czech-final-review",
+          "title": "Faceți ca revizuirea finală a plății să fie repetabilă",
+          "paragraphs": [
+            "Înainte de a plăti, comparați rezumatul final al coletului cu notițele dvs.: destinație, conținut, dimensiuni ambalate, traseu, servicii selectate și total. Verificați dacă oferta a fost actualizată după orice modificare a articolului sau a ambalajului. Dacă un articol este neclar, rezolvați-l înainte de a-l trimite, în loc să presupuneți că este inclus într-o altă sumă.",
+            "După livrare, înregistrați ce a fost facturat și cum a progresat expedierea, fără a prezenta un rezultat ca garanție pentru coletele viitoare. Acest lucru vă oferă dovezi utile pentru propria comparație următoare. Obiceiul repetabil este simplu: verificați mărfurile, cotați coletul real, citiți îndrumările vamale actuale și păstrați înregistrările care explică decizia dvs."
+          ]
+        }
+      ],
+      "checklist": [
+        "Selectați Republica Cehă și verificați adresa completă a destinatarului.",
+        "Comparați rutele eligibile folosind aceleași dimensiuni și greutate ambalate.",
+        "Verificați îndrumările vamale cehe actuale, mai degrabă decât scutirile mai vechi.",
+        "Rezolvați problemele legate de controlul calității înainte ca coletul să părăsească depozitul.",
+        "Urmați transportatorul identificat pentru numărul dvs. de urmărire real."
+      ],
+      "sources": [
+        {
+          "title": "Sugargoo: estimarea transportului internațional",
+          "url": "https://blog.sugargoo.com/estimate-international-shipping-costs-sugargoo/"
+        },
+        {
+          "title": "Sugargoo: simulare colet înainte de expediere",
+          "url": "https://blog.sugargoo.com/sugargoo-pre-shipment-package-simulation-guide/"
+        },
+        {
+          "title": "Sugargoo: verificări ale calității și limitele acestora",
+          "url": "https://blog.sugargoo.com/sugargoo-qc-service-quality-check-guide/"
+        },
+        {
+          "title": "Vama Cehă: comerț electronic, taxe vamale, TVA și vămuire",
+          "url": "https://celnisprava.gov.cz/cz/celni-urad-praha-ruzyne/fyzicke-osoby/postovni-zasilky/prijeti/Stranky/mimo-eu.aspx"
+        },
+        {
+          "title": "Vama Cehă: notificări actuale privind comerțul electronic",
+          "url": "https://celnisprava.gov.cz/cz/clo/e-commerce/Stranky/Z%C3%A1silky-e-commerce.aspx"
+        }
+      ],
+      "related": [
+        "sugargoo-shipping-calculator",
+        "sugargoo-tracking"
+      ],
+      "actions": [
+        "/articles/sugargoo-shipping-calculator/",
+        "/articles/sugargoo-rehearsal-shipping/"
       ]
     }
   ]

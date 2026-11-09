@@ -15,10 +15,10 @@ class HTMLFormElement extends Element {querySelector(){return this.field;}}
 const document={body:{dataset:{pageType:'article',article:'sugargoo-qc-photos',searchActive:'false'}},documentElement:{lang:'nl'},readyState:'complete',addEventListener:(event,handler)=>handlers.set(event,handler)};
 const window={gtag:(...args)=>events.push(args)};
 vm.runInNewContext(fs.readFileSync(new URL('../src/lib/analytics-client.js',import.meta.url),'utf8'),{document,window,Element,HTMLFormElement});
-const link = new Element({track:'article_catalog_click',destination:'spreadsheet'});
+const link = new Element({track:'article_catalog_click',destination:'spreadsheet',placement:'qc-photo-request'});
 const icon = new Element({}, {'a[href]':link});
 handlers.get('click')({target:icon});
-assert.equal(events[0][1],'article_catalog_click');assert.equal(events[0][2].language,'nl');assert.equal(events[0][2].article_slug,'sugargoo-qc-photos');
+assert.equal(events[0][1],'article_catalog_click');assert.equal(events[0][2].placement,'qc-photo-request');assert.equal(events[0][2].language,'nl');assert.equal(events[0][2].article_slug,'sugargoo-qc-photos');
 link.dataset={track:'outbound_purchase_click',destination:'sugargoo',productId:'123'};handlers.get('click')({target:icon});
 assert.equal(events[1][1],'outbound_purchase_click');assert.equal(events[1][2].product_id,'123');
 link.dataset={track:'outbound_register_click',destination:'sugargoo'};handlers.get('click')({target:icon});assert.equal(events[2][1],'outbound_register_click');
