@@ -65,8 +65,24 @@ test('new editorial routes are served indexable in every language with versioned
  for(const lang of LANGS){const pre=lang==='en'?'':'/'+lang;
   for(const slug of ['pikobuy-fees-product-shipping-extra-costs','pikobuy-tracking-warehouse-to-delivery','pikobuy-image-search-dead-link-recovery']) {
    const response=await worker.fetch(new Request('https://pikobuy-sheet.net'+pre+'/articles/'+slug+'/'),env);
-   assert.equal(response.status,200);assert.equal(response.headers.get('content-language'),lang);assert.equal(response.headers.get('x-pikobuy-release'),'20261016-seo-v1');
+   assert.equal(response.status,200);assert.equal(response.headers.get('content-language'),lang);assert.equal(response.headers.get('x-pikobuy-release'),'20261109-content-v1');
    const markup=await response.text();assert.ok(!markup.includes('content="noindex'));assert.ok(markup.includes('/assets/piko-site-20261016-research-v1.js'));
+  }
+ }
+});
+
+test('every complete article language version is routed and mobile controls are injected once',async()=>{
+ const manifest=JSON.parse(fs.readFileSync(root+'/maintenance/content-20261109/manifest.json'));
+ for(const [lang,articles] of Object.entries(manifest.articles)) {
+  assert.equal(Object.keys(articles).length,32);
+  for(const article of Object.values(articles)) {
+   const response=await worker.fetch(new Request('https://pikobuy-sheet.net'+article.path),env);
+   assert.equal(response.status,200,article.path);
+   assert.equal(response.headers.get('content-language'),lang);
+   const markup=await response.text();
+   assert.equal((markup.match(/<script[^>]+src="\/assets\/piko-mobile-20261109-v1\.js"/g)||[]).length,1,article.path);
+   assert.ok(!markup.includes('<script src="/assets/piko-mobile-20261013-v1.js"'),article.path);
+   assert.ok(markup.includes(`href="https://pikobuy-sheet.net${article.path}"`));
   }
  }
 });
