@@ -71,6 +71,7 @@ for (const [href, attrs] of [
     {},
   ],
   ["https://www.lovegobuy.com/login/signup", {}],
+  ["https://lovegobuytab.com/de/spreadsheet/shoes/?sort=price", {}],
 ])
   env.listeners.click({ target: new env.Element(href, attrs) });
 env.listeners.submit({
@@ -84,6 +85,7 @@ assert.deepEqual(
     "language_change",
     "purchase_link_click",
     "signup_click",
+    "catalog_open",
     "catalog_search",
   ],
 );
@@ -93,7 +95,8 @@ for (const [, , fields] of env.events) {
 }
 assert.equal(env.events[2][2].target_language, "fr");
 assert.equal(env.events[3][2].source_platform, "weidian");
-assert.equal(env.events[5][2].query_length, 22);
+assert.equal(env.events[5][2].item_category, "shoes");
+assert.equal(env.events[6][2].query_length, 22);
 assert.ok(!JSON.stringify(env.events).includes("private search"));
 assert.ok(!JSON.stringify(env.events).includes("7876894732"));
 assert.ok(!env.events.some((e) => e[1] === "page_view"));
@@ -104,5 +107,5 @@ assert.equal(
   0,
 );
 console.log(
-  "Passed six interaction events, language context, search privacy, no duplicate page views and preview isolation.",
+  "Passed seven interaction events, catalogue intent, language context, search privacy, no duplicate page views and preview isolation.",
 );

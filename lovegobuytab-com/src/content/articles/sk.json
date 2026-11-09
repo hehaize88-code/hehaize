@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "Sprievodca kalkulačkou dopravy LoveGoBuy: náklady a hmotnosť zásielky",
-      "description": "Používajte kalkulačku dopravy LoveGoBuy so správnym cieľom, hmotnosťou, rozmermi a kategóriou tovaru. Pochopte objemovú hmotnosť a porovnávajte odhady zásielok.",
+      "title": "Kalkulátor dopravy LoveGoBuy: cena a účtovaná hmotnosť",
+      "description": "Odhadnite dopravu LoveGoBuy podľa skutočnej a objemovej hmotnosti, deliteľov konkrétnych trás a výpočtového príkladu. Oddeľte ponuku dopravy od ceny položky.",
       "category": "Doprava",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy poskytuje oficiálnu kalkulačku s údajmi o zásielke a mieste určenia. Tento sprievodca ponúka nezávislé rady na prípravu vstupov a porovnávanie výsledkov. Neodporúča univerzálne najlacnejšiu trasu ani nesľubuje čas doručenia vašej objednávky."
       ],
       "sections": [
+        {
+          "heading": "Príklad výpočtu účtovanej hmotnosti",
+          "paragraphs": [
+            "Predpokladajme hypotetickú zabalenú zásielku s hmotnosťou 2 kg a rozmermi 40 × 30 × 20 cm. Jej objem je 24 000 centimetrov kubických. Ak trasa stanovuje deliteľ 6000, objemová hmotnosť je 4 kg. Ak iná stanovuje 8000, je to 3 kg. Ide o matematické príklady, nie aktuálne cenové ponuky alebo zameniteľné pravidlá jednej trasy.",
+            "Ak trasa účtuje vyššiu zo skutočnej a objemovej hmotnosti, nezaokrúhlené účtované hodnoty by tu boli 4 kg a 3 kg. Potom použite vlastné účtovacie prírastky, poplatky a limity spôsobilosti danej trasy. Nižšia vypočítaná hmotnosť sama nepreukazuje, že je trasa lacnejšia alebo dostupná. Ak sa nezobrazí žiadna, použite nižšie uvedeného sprievodcu riešením problémov."
+          ],
+          "table": {
+            "columns": [
+              "Príklad vstupu alebo pravidla",
+              "Výsledok"
+            ],
+            "rows": [
+              [
+                "Skutočná hmotnosť po zabalení",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24 000 cm³"
+              ],
+              [
+                "Príklad deliteľa 6000",
+                "Objemová hmotnosť 4 kg"
+              ],
+              [
+                "Príklad deliteľa 8000",
+                "Objemová hmotnosť 3 kg"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Opíšte zásielku, ktorú skutočne zvažujete",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Do oficiálneho kalkulátora dopravy LoveGoBuy zadajte skutočný cieľ, zabalenú hmotnosť a vonkajšie rozmery. Dodržujte pravidlá hmotnosti, deliteľa a zaokrúhľovania zvolenej trasy. Odhad nie je konečný poplatok, kým nie sú potvrdené skutočné údaje zásielky a zvolené služby."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "Sledovanie LoveGoBuy: sledujte zásielku a porozumejte aktualizáciám",
-      "description": "Nájdite správne sledovacie číslo LoveGoBuy, rozlišujte objednávky a zásielky, vyhodnoťte medzery v sledovaní a pripravte užitočný dotaz na podporu.",
+      "title": "Sledovanie LoveGoBuy: stav zásielky a chýbajúce aktualizácie",
+      "description": "Sledujte zásielku LoveGoBuy správnym číslom. Rozlišujte doručenie od predajcu, skladové spracovanie a prestávky v medzinárodnom sledovaní.",
       "category": "Sledovanie zásielok",
       "keyword": "sledovanie lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "Oficiálny nákupný sprievodca LoveGoBuy odkazuje zákazníkov pri sledovaní dopravy na stránku Parcels. Tento nezávislý sprievodca vysvetľuje, ako usporiadať uvedené informácie a preskúmať nejasné aktualizácie. Nenačítava súkromné objednávky, nenahrádza sledovací systém dopravcu ani nesľubuje dátum doručenia. Nasledujúce príklady stavov opisujú všeobecné logistické situácie, nie pevný zoznam označení rozhrania LoveGoBuy."
       ],
       "sections": [
+        {
+          "heading": "Chýba aktualizácia sledovania: začnite poslednou skutočnou udalosťou",
+          "paragraphs": [
+            "Skôr než vyskúšate ďalší sledovací web, priraďte číslo k správnej fáze prepravy. Pre jeden nákup môže existovať číslo objednávky, vnútroštátne číslo sledovania aj číslo medzinárodnej zásielky. Pre medzinárodný úsek použite údaj zo záznamu zásielky a pri žiadosti o pomoc uchovajte poslednú datovanú udalosť.",
+            "Neexistuje univerzálny počet dní, po ktorom každá prestávka v sledovaní znamená stratu. Porovnajte posledný sken a uplynutý čas s aktuálnym odhadom zvolenej služby. Ak ho čas prekročí alebo záznam uvádza výnimku vyžadujúcu zásah, kontaktujte oficiálnu podporu s číslom zásielky a presným stavom namiesto predpokladu zadržania či straty."
+          ],
+          "table": {
+            "columns": [
+              "Zistený stav",
+              "Užitočná ďalšia kontrola"
+            ],
+            "rows": [
+              [
+                "Zásielka predajcu doručená",
+                "Potvrďte príjem v sklade; môže ísť iba o vnútroštátny úsek"
+              ],
+              [
+                "Štítok vytvorený alebo údaje prijaté",
+                "Overte, či dopravca zásielku prevzal"
+              ],
+              [
+                "Po prevzatí nie je nový sken",
+                "Porovnajte odhad trasy a poslednú udalosť dopravcu"
+              ],
+              [
+                "Pokus o doručenie alebo problém s adresou",
+                "Bez odkladu postupujte podľa oficiálnych pokynov dopravcu"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Rozlišujte objednávku produktu, číslo zásielky a sledovacie číslo",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Otvorte záznam medzinárodnej zásielky a skopírujte jej číslo sledovania a dopravcu. Vnútroštátne číslo predajcu sleduje položku do skladu, nie k vám domov. Štítok alebo číslo zásielky bez skenu prevzatia dopravcom samo nepotvrdzuje začatie medzinárodnej prepravy."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "Doba dopravy LoveGoBuy: od odoslania predajcom po doručenie",
-      "description": "Pochopte fázy doručenia LoveGoBuy, porovnávajte aktuálne odhady trás a plánujte s ohľadom na sklad, balenie a odovzdanie dopravcovi.",
+      "title": "Ako dlho trvá doprava LoveGoBuy? Fázy a oneskorenia",
+      "description": "Pochopte čas dopravy LoveGoBuy od odoslania predajcom cez spracovanie v sklade po doručenie. Pred riešením oneskorenia overte správnu fázu.",
       "category": "Doba dopravy",
       "keyword": "doba dopravy lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "Oficiálny sprievodca LoveGoBuy opisuje nákup a odoslanie zásielky ako nadväzujúce rozhodnutia. Kalkulačka umožňuje skúmať služby podľa cieľa a údajov zásielky. Tento článok premieňa uvedený postup na spôsob plánovania. Nezverejňuje pevné sľuby doručenia, netvrdí, že jedna trasa je vždy najrýchlejšia, ani nepremieňa skúsenosť iného zákazníka na odhad vašej objednávky."
       ],
       "sections": [
+        {
+          "heading": "Ktorá fáza dopravy sa skutočne oneskorila?",
+          "paragraphs": [
+            "Skôr než sa rozhodnete, koho kontaktovať, overte poslednú dokončenú udalosť. Ak predajca neodoslal tovar, medzinárodný dopravca položku nevysleduje. Ak je v sklade, ale zásielka nebola zadaná, odhad medzinárodného doručenia ešte nezačal plynúť. Po odoslaní porovnajte históriu sledovania s aktuálnym uvádzaným odhadom zvolenej služby.",
+            "Zmätku zabráni jednoduchá časová os: platbu za položku, odoslanie predajcom, príchod do skladu, zadanie zásielky, prevzatie dopravcom a doručenie zapíšte ako samostatné dátumy. Chýbajúce dátumy nechajte prázdne. Pýtajte sa na konkrétnu nedokončenú fázu a v oficiálnom kanáli podpory priložte príslušné číslo objednávky alebo zásielky."
+          ],
+          "table": {
+            "columns": [
+              "Posledná potvrdená fáza",
+              "Čo skontrolovať ďalej"
+            ],
+            "rows": [
+              [
+                "Položka zaplatená; predajca neodoslal",
+                "Spracovanie predajcom a podpora objednávky"
+              ],
+              [
+                "Príchod do skladu",
+                "Kontrola, čakajúce rozhodnutia a zadanie zásielky"
+              ],
+              [
+                "Zásielka zadaná; dopravca ju neprevzal",
+                "Spracovanie a potvrdenie odovzdania"
+              ],
+              [
+                "Dopravca prevzal zásielku",
+                "Medzinárodné sledovanie a aktualizácie doručenia v cieli"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Určte začiatok a koniec odhadu",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Pre všetky objednávky LoveGoBuy neexistuje jediný čas doručenia. Odoslanie predajcom, vnútroštátna preprava, spracovanie v sklade, medzinárodná doprava a konečné doručenie sú samostatné fázy. Používajte aktuálny odhad zvolenej trasy; nepočítajte ho odo dňa prvej platby za položku."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "Nálezy LoveGoBuy do 20 USD: oblečenie a doplnky",
+      "description": "Prezrite si nálezy LoveGoBuy do 20 USD s datovanými príkladmi cien, odkazmi na oblečenie a doplnky, kontrolou veľkostí a jasným rozpočtom pred odoslaním.",
+      "category": "Lacné nálezy",
+      "keyword": "lovegobuy nálezy do 20",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Začnite kategóriami oblečenia a doplnkov zoradenými podľa ceny a potom overte cenu zvoleného variantu na stránke objednávky. „Do 20 USD“ tu znamená zobrazenú cenu položky v amerických dolároch, nie cenu vrátane doručenia. Medzinárodná doprava, vnútroštátne doručenie, voliteľné služby a ďalšie príslušné poplatky môžu konečnú sumu zvýšiť nad tento limit.",
+        "Nasledujúce príklady boli v našom katalógu viditeľné 9. novembra 2026. Sú východiskom na porovnanie, nie otestovaným odporúčaním ani prísľubom skladovej dostupnosti. Nákupný postup vychádza z oficiálneho sprievodcu LoveGoBuy; spôsob zostavenia rozpočtu a kontrolný zoznam výberu predstavujú naše redakčné rady."
+      ],
+      "sections": [
+        {
+          "heading": "Tri príklady cien na začiatok užšieho výberu",
+          "paragraphs": [
+            "Katalóg zobrazoval neznačkový náhrdelník za 0,97 USD, ponuku neznačkových slnečných okuliarov za 1,11 USD a ponuku trička s krátkym rukávom za 9,58 USD. Aktuálne informácie overte na prepojených stránkach produktov. Zdroj zaraďuje prvé dve položky medzi pokrývky hlavy; zaradenie do kategórie nemení skutočný obsah ponuky.",
+            "Tieto pozorovania potvrdzujú iba to, že uvedené názvy ponúk a ceny boli zobrazené v daný deň. Nepotvrdzujú materiály, pravosť, ochranné vlastnosti, dostupnosť variantov ani kvalitu. Najmä nepredpokladajte uvedenú úroveň ochrany pred UV pri slnečných okuliaroch bez spoľahlivých dôkazov. Opis predajcu ako „vysoká kvalita“ je tvrdenie, ktoré treba preveriť."
+          ],
+          "table": {
+            "columns": [
+              "Príklad z katalógu",
+              "Zobrazená cena položky 9. novembra 2026",
+              "Overte pred objednaním"
+            ],
+            "rows": [
+              [
+                "Neznačkový náhrdelník · 88",
+                "0,97 USD",
+                "Rozmery, materiál a vybraná možnosť"
+              ],
+              [
+                "Neznačkové slnečné okuliare · 99",
+                "1,11 USD",
+                "Rozmery rámu a tvrdenia o ochrane"
+              ],
+              [
+                "Tričko s krátkym rukávom · 3287",
+                "9,58 USD",
+                "Rozmery odevu, látka a farba"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Zobraziť ponuku náhrdelníka",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Zobraziť ponuku slnečných okuliarov",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Zobraziť ponuku trička s krátkym rukávom",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Hľadajte vo vhodnej kategórii",
+          "paragraphs": [
+            "Najskôr vyberte druh položky: tričká, doplnky, pokrývky hlavy alebo nohavice a šortky. Zoradenie celého katalógu podľa ceny môže zobraziť drobné diely, náhradné doplnky či možnosti neporovnateľné s celým odevom. Lacná ponuka je užitočná iba vtedy, ak zodpovedá tomu, čo ste chceli kúpiť. Skôr než posúdite výhodnosť ceny, zúžte kategóriu.",
+            "Použite jednoduchý vyhľadávací výraz opisujúci položku a otvorte niekoľko kandidátov namiesto zbierania desiatok podobných odkazov. Uložte adresu ponuky spolu so zamýšľaným variantom. Ak sa cena na karte líši od ceny vybranej možnosti, porovnávajte vybranú možnosť. Overte, či uvedená suma platí za kus, pár, súpravu alebo minimálne množstvo."
+          ],
+          "links": [
+            {
+              "label": "Prehliadať tričká podľa ceny",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Prehliadať doplnky podľa ceny",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Prehliadať pokrývky hlavy podľa ceny",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Stanovte rozpočet na položku aj doručenie",
+          "paragraphs": [
+            "Skôr než čokoľvek pridáte do objednávky, určte dva limity: najvyššiu cenu položky a maximum, ktoré chcete minúť vrátane doručenia. Odpovedajú na rozdielne otázky. Položka za 18 USD spĺňa limit 20 USD, ale nemusí byť dobrou voľbou, ak doprava vyčerpá zvyšok celkového rozpočtu. Aktuálne poplatky overujte v oficiálnych informáciách o poplatkoch a kalkulátore LoveGoBuy.",
+            "Výlučne ako matematický príklad predpokladajme, že položka stojí 12 USD, vnútroštátna doprava 2 USD a pridelený podiel medzinárodnej dopravy 9 USD. Medzisúčet je už 23 USD pred ďalšími prípadnými poplatkami. Tieto čísla sú vymyslené na vysvetlenie postupu, nejde o cenovú ponuku dopravy. Neisté sumy evidujte samostatne a nenahrádzajte ich bez vysvetlenia nulou."
+          ]
+        },
+        {
+          "heading": "Pred cenou porovnajte strih a materiály",
+          "paragraphs": [
+            "Pri tričku porovnajte šírku cez hrudník, dĺžku tela, šírku ramien a dĺžku rukáva s odevom, ktorý vám sedí. Používajte spôsob merania predajcu a opýtajte sa na chýbajúce rozmery. Samotné písmená veľkostí majú malú výpovednú hodnotu, pretože tabuľky sa medzi predajcami aj strihmi líšia. Nízka cena nevyváži odev, ktorý nemôžete pohodlne nosiť.",
+            "Pri doplnku si zapíšte rozmery rozhodujúce pri používaní: dĺžku náhrdelníka, šírku rámu, typ zapínania alebo kompatibilitu s inou položkou. Rozlišujte vzhľad na fotografii a overené tvrdenie o materiáli. Ak chýba dôležitá špecifikácia, rozhodnutie odložte. Nákup viacerých neistých možností pri hľadaní jednej vhodnej môže stáť viac než výber jedinej dobre opísanej ponuky."
+          ]
+        },
+        {
+          "heading": "Posudzujte hmotnosť spolu s obalom",
+          "paragraphs": [
+            "Aj malý predmet môže zbytočne zvýšiť náklady na doručenie, ak jeho obal zväčší vonkajšie rozmery zásielky. Naopak, hutný predmet môže zvýšiť skutočnú hmotnosť bez toho, aby zabral veľa priestoru. Kalkulátor dopravy LoveGoBuy používa podmienky vybranej trasy; niektoré trasy porovnávajú skutočnú a objemovú hmotnosť. Vyžiadajte si rozmery po zabalení, keď budú dostupné, a porovnajte možnosti pre cieľové miesto.",
+            "Nepridávajte nepotrebné položky iba kvôli rozloženiu dopravy medzi väčšiu objednávku. Zlúčenie môže byť pohodlné, ale iné hmotnostné pásmo, rozmerový limit alebo obmedzenie položky môžu zmeniť dostupné trasy. Porovnávajte celé plány zásielok pre rovnaký cieľ a požiadavky na ochranu. Ochranný obal ponechajte, ak by jeho odstránenie vytvorilo riziko poškodenia, ktoré nechcete prijať."
+          ]
+        },
+        {
+          "heading": "Fotografiami zodpovedajte konkrétne otázky",
+          "paragraphs": [
+            "Obrázky v katalógu sú produktové fotografie, nie automaticky skladové fotografie kontroly kvality vašej objednávky. Po príchode položky do skladu skontrolujte snímky spojené s touto objednávkou a porovnajte ich so zvoleným variantom. Overte viditeľnú farbu, priložené diely, štítky, zjavné chyby a požadované merania. Každú nezrovnalosť jasne zaznamenajte pred rozhodnutím o odoslaní.",
+            "Užitočná žiadosť o ďalšiu fotografiu pomenuje jednu pozorovateľnú vec: ukázať zapínanie náhrdelníka, zmerať šírku odevu cez hrudník alebo odfotiť obe strany doplnku. Fotografie nepotvrdia každé tvrdenie o materiáli či funkčnosti. Ak potrebujete informácie, ktoré snímka neposkytne, opýtajte sa priamo predajcu alebo podpory. Preštudujte príslušné podmienky vrátenia, kým ešte môžete konať."
+          ]
+        },
+        {
+          "heading": "Veďte stručný záznam porovnania",
+          "paragraphs": [
+            "Pri každom kandidátovi uchovajte adresu produktu, zvolenú možnosť, aktuálnu cenu, podklady k rozmerom, očakávané balenie a nezodpovedané otázky. Pripojte rozhodnutie, napríklad preveriť, pripravené na objednanie alebo vyradiť. Ľahšie tak uvidíte, že najlacnejšej možnosti stále chýba rozmer, kým o niečo drahšia už spĺňa vaše požiadavky.",
+            "Bezprostredne pred platbou znova overte konečnú stránku objednávky. Potvrďte zdrojový produkt, množstvo a variant namiesto spoliehania sa na starú snímku obrazovky. Ak produkt zmizol alebo zmenil cenu, vráťte sa do kategórie a porovnanie zopakujte; nenahrádzajte položku len preto, že jej obrázok vyzerá povedome. Uložený odkaz je referencia, nie rezervácia. Pri cene uchovajte dátum kontroly, aby sa staré pozorovanie nikdy nezamenilo za aktuálnu ponuku."
+          ],
+          "table": {
+            "columns": [
+              "Položka porovnania",
+              "Prečo je dôležitá"
+            ],
+            "rows": [
+              [
+                "Presný variant a množstvo",
+                "Zabráni porovnaniu jedného kusu so súpravou"
+              ],
+              [
+                "Rozmery a materiály",
+                "Prepojí ponuku s vašimi skutočnými potrebami"
+              ],
+              [
+                "Cena položky a rezerva na dopravu",
+                "Ukáže, či je celkový rozpočet realistický"
+              ],
+              [
+                "Nezodpovedaná otázka a ďalší krok",
+                "Udržiava chýbajúce podklady na očiach"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Časté otázky o lacných nálezoch",
+          "paragraphs": [
+            "Zahŕňa ponuka do 20 USD doručenie? Nie: tento sprievodca používa zobrazenú cenu položky. Vnútroštátnu aj medzinárodnú dopravu, voliteľné služby a ostatné príslušné poplatky overujte zvlášť. Môže sa cena v katalógu zmeniť? Áno. Datované príklady berte ako pozorovania a zvolený variant overte na aktuálnej stránke objednávky.",
+            "Je kvalita uvedených príkladov otestovaná? Nie. Tieto položky sme netestovali a ich zaradenie nie je potvrdením pravosti. Mali by ste objednať najlacnejší výsledok? Iba ak položka, rozmery a celkový rozpočet spĺňajú vaše požiadavky. Začnite jedným jasným účelom, ponechajte si krátky výber a zvyšné otázky vyriešte pomocou prepojených sprievodcov veľkosťami, kontrolou kvality a nákladmi."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Do 20 USD označuje cenu položky, nie celkovú cenu s doručením.",
+        "Pred platbou overte aktuálny variant, rozmery a množstvo.",
+        "Používajte skutočné fotografie kontroly kvality svojej objednávky a uchovajte zdrojový odkaz."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "Tabuľka topánok LoveGoBuy: veľkosti, ceny a kontrola kvality",
+      "description": "Pomocou tabuľky topánok LoveGoBuy porovnávajte ponuky, rozmery obuvi, zvolené ceny, fotografie kontroly kvality a balenie pred odoslaním.",
+      "category": "Topánky",
+      "keyword": "lovegobuy tabuľka topánok",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Kategóriu topánok použite na užší výber a potom pri každej ponuke porovnajte presnú veľkosť, cenu zvolenej možnosti a dostupné rozmery. Známe číslo veľkosti ani produktová fotografia na posúdenie toho, ako obuv sadne, nestačia. Pred medzinárodným odoslaním prezrite skladové fotografie vlastného páru a overte vplyv obalu na cenu zásielky.",
+        "Tento sprievodca prepája katalóg obuvi s praktickým postupom porovnávania. Nehodnotí neotestované topánky, nepotvrdzuje pravosť ani nesľubuje konkrétnu cenu dopravy. Oficiálny nákupný sprievodca a kalkulátor dopravy LoveGoBuy vysvetľujú postup na platforme; nižšie uvedené pokyny k veľkosti a kontrole sú nezávislým redakčným odporúčaním."
+      ],
+      "sections": [
+        {
+          "heading": "Otvorte katalóg topánok s jasným cieľom",
+          "paragraphs": [
+            "Začnite kategóriou topánok a rozhodnite, na čo pár potrebujete. Každodenná chôdza, príležitostné nosenie a konkrétna aktivita môžu vyžadovať rôzne podklady. Názvy ponúk pomôžu nájsť kandidátov, ale nedokazujú pohodlie, funkčnosť ani životnosť. Známy názov značky v ponuke nepovažujte za dôkaz overenia tvrdení predajcu.",
+            "Zoraďte ponuky podľa ceny, porovnajte zobrazené sumy a ponechajte si dvoch alebo troch realistických kandidátov. Pred uložením otvorte každú produktovú stránku. Zaznamenajte adresu ponuky, zamýšľanú farbu, veľkosť a skutočne zobrazenú cenu možnosti. Neporovnávajte najlacnejší voliteľný doplnok na jednej stránke s kompletným párom na inej."
+          ],
+          "links": [
+            {
+              "label": "Otvoriť tabuľku topánok LoveGoBuy",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Porovnať topánky podľa zobrazenej ceny",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Porovnávajte rozmery, nielen označenia veľkostí",
+          "paragraphs": [
+            "Začnite tabuľkou veľkostí predajcu a zistite, čo jednotlivé čísla merajú. Dĺžka chodidla, vložky a vonkajšej podrážky sú odlišné rozmery. Tabuľka v centimetroch je užitočná iba vtedy, ak je jasný spôsob merania. Nepredpokladajte, že číslo EU možno pri všetkých predajcoch prevádzať rovnako alebo že označenie US vždy používa rovnaký veľkostný systém.",
+            "Zmerajte obe chodidlá rovnakou metódou a väčší rozmer porovnajte s tabuľkou. Zohľadnite aj šírku a tvar špičky, ak ich predajca uvádza. Ak ponuka obsahuje iba označenia veľkostí, požiadajte pred nákupom o vysvetlenie. Skladová fotografia veľkostného štítku môže potvrdiť označenie páru, ale nepreukáže, že vám topánky sadnú."
+          ],
+          "table": {
+            "columns": [
+              "Podklad",
+              "Čo môže povedať",
+              "Čo zostáva neisté"
+            ],
+            "rows": [
+              [
+                "Tabuľka veľkostí predajcu",
+                "Uvedený rozmer vybranej možnosti",
+                "Či metóda zodpovedá vášmu meraniu"
+              ],
+              [
+                "Fotografia veľkostného štítku",
+                "Označenie doručeného páru",
+                "Skutočné prispôsobenie a využiteľný vnútorný priestor"
+              ],
+              [
+                "Vyžiadané meranie",
+                "Viditeľný rozmer zmeraný na fotografii",
+                "Pohodlie a dlhodobé vlastnosti"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Zapíšte si presne pár, ktorý chcete kúpiť",
+          "paragraphs": [
+            "Ku každému kandidátovi vytvorte stručný záznam: zdrojovú adresu, trhovisko, zvolenú veľkosť, farbu, cenu položky a otázky pre predajcu. Ak stránka obsahuje rôzne verzie, výslovne zapíšte tú zvolenú. Podobné produktové obrázky sa môžu objavovať vo viacerých ponukách bez toho, aby boli ponuky zameniteľné. Zachovajte totožnosť produktu od nájdenia až po potvrdenie objednávky.",
+            "Overte obsah balenia. Škatuľa na topánky, ďalšie šnúrky a iné doplnky môžu ovplyvniť dodané veci aj rozmery zásielky. Nepredpokladajte, že všetko z reklamnej fotografie je súčasťou ponuky. Ak niektorá súčasť ovplyvňuje vaše rozhodnutie, potvrďte ju pred platbou a pridajte do zoznamu na kontrolu skladových fotografií."
+          ]
+        },
+        {
+          "heading": "Prezrite vlastné skladové fotografie kontroly kvality",
+          "paragraphs": [
+            "Verejné fotografie môžu ukázať podobu inej objednávky, ale pre pár, ktorý sa chystáte odoslať, sú relevantným podkladom snímky vašej objednávky. Porovnajte obe topánky, viditeľné farby, veľkostné štítky, švy, okraje podrážok a priložené súčasti. Hľadajte zjavné nezrovnalosti alebo poškodenie. Vychádzajte z údajov objednávky namiesto inej ponuky s podobným obrázkom.",
+            "O ďalší uhol alebo meranie žiadajte len vtedy, ak vyrieši konkrétnu neistotu. Napríklad si vyžiadajte čitateľnú fotografiu oboch veľkostných štítkov alebo meranie s viditeľným umiestnením pravítka. Neoznačujte fotografie predajcu za skladovú kontrolu kvality a nepovažujte prehliadku fotografií za záruku pravosti či životnosti. Niektoré skutočnosti nemožno zo snímok zistiť."
+          ],
+          "bullets": [
+            "Overte, že obe topánky zodpovedajú zamýšľanej veľkosti a farebnému variantu.",
+            "Porovnajte viditeľné vyhotovenie a priložené súčasti so záznamom objednávky.",
+            "Vyriešte viditeľnú nezrovnalosť pred schválením medzinárodnej dopravy."
+          ]
+        },
+        {
+          "heading": "Spočítajte celkovú cenu páru",
+          "paragraphs": [
+            "Cenu položky oddeľte od vnútroštátnej dopravy, medzinárodnej prepravy a zvolených služieb. Katalóg zobrazuje sumy v USD na vyhľadávanie, zatiaľ čo účtovanú sumu určujú aktuálne stránky objednávky a platby. Konečnú sumu môžu ovplyvniť kurzy, zvolené možnosti aj zmeny predajcu. Uchovajte aktuálne podrobnosti ponuky namiesto predpokladu, že skôr zobrazená karta predstavuje celý rozpočet.",
+            "Iba ako príklad výpočtu: hypotetický pár za 18 USD s vnútroštátnou dopravou za 3 USD a pridelenou medzinárodnou dopravou za 14 USD už stojí spolu 35 USD. Nejde o zistené poplatky LoveGoBuy ani ponuku pre konkrétne cieľové miesto. Príklad ukazuje, prečo môže byť porovnávanie topánok iba podľa ceny položky zavádzajúce, ak sa líšia zabalenou hmotnosťou či rozmermi."
+          ]
+        },
+        {
+          "heading": "Porovnajte dopravu so škatuľou a bez nej",
+          "paragraphs": [
+            "Ak to dostupná služba balenia umožňuje, opýtajte sa, ako ponechanie alebo odstránenie škatule zmení rozmery zabalenej zásielky, ochranu a dostupnosť trás. Odstránenie škatule nezaručuje nižšiu cenu. Trasa účtujúca skutočnú hmotnosť sa môže líšiť od trasy porovnávajúcej skutočnú a objemovú hmotnosť a zásielka môže zostať v rovnakom cenovom pásme.",
+            "Použite deliteľ a pravidlá zaokrúhľovania konkrétnej zvolenej trasy. Na ilustráciu má zásielka s rozmermi 35 × 25 × 15 cm objem 13 125 centimetrov kubických. Delenie 6000 dáva približne 2,19 kg, delenie 8000 približne 1,64 kg. Ide o alternatívne matematické príklady, nie dve zameniteľné pravidlá pre jednu trasu. So skutočnou hmotnosťou ich porovnávajte iba podľa pokynov zvolenej trasy."
+          ],
+          "table": {
+            "columns": [
+              "Spôsob balenia",
+              "Informácie, ktoré si vyžiadať"
+            ],
+            "rows": [
+              [
+                "Ponechať škatuľu na topánky",
+                "Vonkajšie rozmery zabalenej zásielky, ochrana a úplná cenová ponuka"
+              ],
+              [
+                "Odstrániť škatuľu, ak sa ponúka",
+                "Náhradná ochrana, nové rozmery a úplná cenová ponuka"
+              ],
+              [
+                "Zlúčiť s ďalšími položkami",
+                "Hmotnosť celej zásielky, obmedzenia a dostupné trasy"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Vyriešte problémy, kým je pár ešte v sklade",
+          "paragraphs": [
+            "Ak zistíte nesprávny variant alebo viditeľné poškodenie, uchovajte číslo objednávky, príslušné podrobnosti ponuky a snímky problému. Rozdiel vysvetlite stručnou a vecnou požiadavkou. Opýtajte sa, aké možnosti vrátenia či výmeny sú pre túto objednávku aktuálne dostupné. Podmienky predajcu a fáza objednávky sú dôležité; sprievodca nesľubuje možnosť vrátiť každú položku.",
+            "Neposielajte pár medzinárodne, kým nie je zodpovedaná dôležitá otázka o veľkosti alebo stave. Keď je položka súčasťou odoslanej zásielky, praktické možnosti sa môžu zmeniť. Komunikujte oficiálnym kanálom podpory a odpoveď uchovajte so záznamom porovnania. Jasný opis a konkrétne fotografie pomôžu viac než opakované zasielanie rovnakej neurčitej sťažnosti."
+          ]
+        },
+        {
+          "heading": "Otázky pred odoslaním",
+          "paragraphs": [
+            "Existuje univerzálny prevod veľkostí topánok LoveGoBuy? Použite tabuľku a spôsob merania predajcu zvolenej ponuky namiesto univerzálneho prevodu. Sú katalógové fotografie snímkami kontroly kvality? Nie: produktové obrázky a skladové fotografie vašej objednávky majú rôzne úlohy. Môže pár do 20 USD doraziť celkovo za menej než 20 USD? Samotná zobrazená cena položky túto otázku nezodpovie.",
+            "Ušetrí odstránenie škatule vždy peniaze? Nie. Porovnajte skutočné možnosti balenia a cenu trasy vrátane požadovanej ochrany. Záverečný zoznam je jednoduchý: potvrdiť pár, pochopiť podklady k veľkosti, prezrieť príslušné fotografie, vyriešiť nezrovnalosti a porovnať celý plán dopravy. Keď je medzinárodná zásielka skutočne odoslaná, použite sprievodcu sledovaním."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Uchovávajte presnú zdrojovú adresu, veľkosť a farbu spolu.",
+        "Veľkostný štítok, meranie a posúdenie toho, ako obuv sadne, sú rôzne podklady.",
+        "Pred schválením odoslania porovnajte úplnú cenu balenia a dopravy."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "LoveGoBuy nemá dostupné prepravné trasy: čo overiť",
+      "description": "Nie sú v LoveGoBuy dostupné prepravné trasy? Overte cieľ, hmotnosť, rozmery zásielky a obmedzenia položiek, potom porovnajte podporované možnosti balenia.",
+      "category": "Riešenie problémov s dopravou",
+      "keyword": "lovegobuy žiadne dostupné prepravné trasy",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Ak LoveGoBuy nezobrazuje prepravné trasy, najskôr overte cieľové miesto, jednotku hmotnosti, vonkajšie rozmery zásielky a zadané kategórie položiek. Oficiálny kalkulátor vysvetľuje, že limity veľkosti alebo hmotnosti môžu dostupné možnosti odstrániť. Obmedzená položka, nepodporované cieľové miesto či dočasná zmena trasy môžu tiež vyžadovať vysvetlenie podpory.",
+        "Nemeňte pravdivé informácie o položkách iba preto, aby sa objavila trasa. Užitočným ďalším krokom je zistiť údaj alebo podmienku spôsobilosti spôsobujúcu prázdny výsledok a potom porovnať prípustné možnosti balenia či rozdelenia zásielky. Tento sprievodca je diagnostický zoznam, nie prísľub odoslania každého balíka na každú adresu."
+      ],
+      "sections": [
+        {
+          "heading": "Overte, či počítate odhad, alebo zadávate zásielku",
+          "paragraphs": [
+            "Odhad pred zabalením v sklade používa informácie, ktoré zadáte. Zásielka pripravená na zadanie môže používať skladové merania a údaje o položkách. Ide o rôzne úrovne podkladov. Zapíšte, na ktorej obrazovke je výsledok prázdny, zvolené cieľové miesto a či sú rozmery odhadnuté, alebo zmerané po zabalení. Tento kontext pomôže neriešiť nesprávnu fázu.",
+            "Ak predchádzajúci odhad trasu zobrazoval, ale hotová zásielka nie, porovnajte údaje pred predpokladom systémovej chyby. Balenie môže zmeniť vonkajšie rozmery, konečná hmotnosť môže prejsť do iného pásma a zásielka môže obsahovať predmet s odlišnými prepravnými podmienkami. Aktuálne možnosti hotovej zásielky majú prednosť pred predbežným príkladom."
+          ]
+        },
+        {
+          "heading": "Overte cieľové miesto a jednotky",
+          "paragraphs": [
+            "Skontrolujte cieľovú krajinu alebo región a adresné údaje požadované formulárom. Ak má trasa územné obmedzenia, opýtajte sa podpory, či sa vzťahujú na vašu adresu. Nenahrádzajte skutočný cieľ inou krajinou kvôli upokojujúcej cenovej ponuke. Odhad je užitočný iba vtedy, keď opisuje zásielku, ktorú skutočne plánujete odoslať.",
+            "Potom prečítajte jednotky pri všetkých poliach. Hmotnosť zadaná ako 2000 kilogramov namiesto 2000 gramov môže priniesť nezmyselný výsledok. Rovnaký problém nastane pri zadaní milimetrov do poľa pre centimetre. Zadajte skutočné hodnoty znova v uvedených jednotkách a ponechajte si snímku opravených údajov, ak zoznam trás zostane prázdny."
+          ],
+          "table": {
+            "columns": [
+              "Vstup",
+              "Užitočná kontrola"
+            ],
+            "rows": [
+              [
+                "Cieľové miesto",
+                "Skutočná krajina alebo región a požadované adresné údaje"
+              ],
+              [
+                "Hmotnosť",
+                "Hodnota zodpovedá jednotke uvedenej vo formulári"
+              ],
+              [
+                "Rozmery",
+                "Vonkajšia dĺžka, šírka a výška zabalenej zásielky v uvedených jednotkách"
+              ],
+              [
+                "Kategória položky",
+                "Presný opis celého obsahu zásielky"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Overujte skutočnú hmotnosť a rozmerové limity zvlášť",
+          "paragraphs": [
+            "Zásielka môže splniť hmotnostný limit a napriek tomu prekročiť rozmerové limity trasy. Preštudujte podmienky najdlhšej strany, ďalšie rozmerové pravidlá a prípustný rozsah hmotnosti. Vysvetlenie kalkulátora spomína obmedzenia nadmerných a ťažkých zásielok, ale neexistuje jediný limit platný pre všetky trasy. Čítajte podmienky pre svoje cieľové miesto a dostupnú službu.",
+            "Objemová hmotnosť je samostatný výpočet, ktorý niektoré trasy používajú pri určení účtovanej hmotnosti. Len ako príklad: 40 × 30 × 20 cm zodpovedá 24 000 centimetrom kubickým. Deliteľ 6000 dáva 4 kg, deliteľ 8000 dáva 3 kg. Ani jeden nepovažujte za univerzálny. Použite pravidlo uvedené pre trasu a odlišujte výpočet účtovanej hmotnosti od rozmerových limitov spôsobilosti."
+          ]
+        },
+        {
+          "heading": "Prejdite položky, ktoré môžu zásielku obmedzovať",
+          "paragraphs": [
+            "Overte prepravné podmienky každej položky v zlúčenej zásielke, najmä ak obsahuje batériu, kvapalinu, prášok, magnetickú súčasť alebo inú vlastnosť, ktorú môže dopravca obmedzovať. Ide o zoznam otázok na preverenie, nie tvrdenie, že LoveGoBuy zakazuje všetky položky týchto kategórií. O prípustnosti rozhoduje konkrétna služba a cieľové miesto.",
+            "Požiadajte podporu o určenie konkrétnej vlastnosti položky a podmienky trasy, ktoré bránia odoslaniu. Zachovajte presný opis produktu a neskrývajte položku ani nevyberajte nesúvisiacu kategóriu, aby ste obišli obmedzenie. Ak položka nespĺňa podmienky dostupných služieb, opýtajte sa na prípustné možnosti pred zaplatením ďalšieho balenia alebo predpokladaním náhradného riešenia."
+          ]
+        },
+        {
+          "heading": "Porovnajte podporované prebalenie alebo rozdelenie zásielky",
+          "paragraphs": [
+            "Kalkulátor LoveGoBuy vysvetľuje, že rozdelenie príliš ťažkej či rozmernej zásielky môže byť riešením, a odkazuje na skúšobné balenie alebo súvisiace služby na presnejšie meranie. Dostupnosť a poplatky overte na aktuálnej platforme. Opýtajte sa na zabalenú hmotnosť a rozmery každej navrhnutej zásielky a potom každú odhadnite pre rovnaké skutočné cieľové miesto.",
+            "Porovnajte súčet cien všetkých zásielok a zvolených služieb. Dve menšie zásielky môžu stáť viac, pretože každá môže mať vlastný počiatočný poplatok, aj keď rozdelenie obnoví dostupnosť trasy. Prebalenie môže ovplyvniť ochranu aj veľkosť. Zachovajte nevyhnutnú ochranu krehkých vecí a zmenu neschvaľujte, kým nerozumiete kompromisu a celkovej sume, ktorú môžete zaplatiť."
+          ],
+          "table": {
+            "columns": [
+              "Možný krok",
+              "Čo porovnať pred schválením"
+            ],
+            "rows": [
+              [
+                "Opraviť chybný údaj",
+                "Správne jednotky a skutočné cieľové miesto"
+              ],
+              [
+                "Prebaliť, ak je podporované",
+                "Nové rozmery, ochranné materiály a poplatok za službu"
+              ],
+              [
+                "Rozdeliť, ak je podporované",
+                "Spôsobilosť každej zásielky a súčet ich cien"
+              ],
+              [
+                "Vybrať nespôsobilú položku",
+                "Oficiálne dostupné možnosti ďalšieho nakladania alebo vrátenia"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Rozlišujte prázdny odhad a problém s účtom",
+          "paragraphs": [
+            "Prázdny zoznam trás sám osebe nedokazuje zablokovaný účet, neúspešnú platbu ani stratenú zásielku. Overte informácie skutočne zobrazené na stránke. Ak existuje samostatné chybové hlásenie, zaznamenajte jeho znenie. Obnovenie formulára môže pomôcť pri dočasnej chybe zobrazenia, ale opakované obnovovanie nevyrieši skutočné obmedzenie hmotnosti, rozmerov či spôsobilosti.",
+            "Ak sa zoznam trás zmenil bez zmeny zásielky, opýtajte sa, či boli služby pre cieľové miesto dočasne upravené. Nepreberajte do plánu názov trasy ani prísľub doručenia zo starého príspevku na fóre. Používajte aktuálny oficiálny odhad a odpoveď platformy a uchovajte čas kontroly, aby bolo možné neskoršie zmeny férovo porovnať."
+          ]
+        },
+        {
+          "heading": "Pošlite podpore užitočnú diagnostickú požiadavku",
+          "paragraphs": [
+            "Oficiálnym kanálom podpory súkromne poskytnite číslo objednávky alebo zásielky, cieľové miesto, hmotnosť a rozmery s jednotkami, typy položiek, konkrétnu obrazovku a znenie chyby. Uveďte, či sú rozmery odhadnuté, alebo dodané skladom. Pripojte snímku relevantných vstupov bez zbytočných osobných či platobných údajov.",
+            "Položte jednu konkrétnu otázku: ktorý zadaný údaj, podmienka položky alebo limit trasy bráni zobrazeniu služby a ktorá podporovaná zmena umožní zásielku prepraviť? Ak podpora navrhne rozdelenie alebo prebalenie, vyžiadajte si výsledné rozmery a náklady pred schválením. Odpoveď uchovajte pri zásielke, aby ste mohli overiť, že ďalší odhad používa dohodnuté údaje."
+          ]
+        },
+        {
+          "heading": "Čo robiť, keď sa trasa sprístupní",
+          "paragraphs": [
+            "Pred výberom novo dostupnej možnosti prečítajte podmienky služby. Porovnajte úplnú cenu, uvádzaný odhad doručenia, spôsob sledovania a príslušné obmedzenia. Viditeľná trasa je možnosť na posúdenie, nie záruka príchodu v konkrétny deň. Overte, že konečné zadanie zásielky stále správne uvádza všetky položky aj skutočné cieľové miesto.",
+            "Po odoslaní používajte medzinárodné číslo sledovania zásielky namiesto vnútroštátneho čísla predajcu. Ak stále nie je spôsobilá trasa, zásielku nezadávajte, kým oficiálna podpora nevysvetlí dostupné možnosti nakladania. Najbezpečnejším užitočným výsledkom je presná odpoveď o spôsobilosti a nákladoch; menenie pravdivých údajov do zobrazenia tlačidla nevytvorí platný plán dopravy."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Najskôr overte cieľ, jednotky, rozmery a informácie o položkách.",
+        "Kontrolujte limity konkrétnej trasy; nepredpokladajte jediný deliteľ ani maximálnu hmotnosť.",
+        "Porovnajte celkové náklady a ochranu každého podporovaného plánu rozdelenia či prebalenia."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

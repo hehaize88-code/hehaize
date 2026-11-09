@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "LoveGoBuy siuntimo skaičiuoklės vadovas: kaina ir siuntos svoris",
-      "description": "LoveGoBuy siuntimo skaičiuoklėje nurodykite tinkamą paskirties vietą, svorį, matmenis ir prekių kategoriją. Supraskite tūrinį svorį ir palyginkite siuntų įverčius.",
+      "title": "LoveGoBuy siuntimo skaičiuoklė: kaina ir apmokestinamas svoris",
+      "description": "Apskaičiuokite LoveGoBuy siuntimą pagal faktinį ir tūrinį svorį, maršruto daliklius bei pavyzdį. Siuntimo pasiūlymą atskirkite nuo prekės kainos.",
       "category": "Siuntimas",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy pateikia oficialią skaičiuoklę su siuntos ir paskirties vietos laukais. Šis vadovas teikia nepriklausomų patarimų, kaip paruošti tuos duomenis ir palyginti rezultatus. Jis nerekomenduoja vieno visais atvejais pigiausio maršruto ir nežada jūsų užsakymo pristatymo termino."
       ],
       "sections": [
+        {
+          "heading": "Apmokestinamo svorio skaičiavimo pavyzdys",
+          "paragraphs": [
+            "Tarkime, hipotetinė supakuota siunta sveria 2 kg ir yra 40 × 30 × 20 cm. Jos tūris – 24 000 kubinių centimetrų. Jei maršrutas nurodo 6 000 daliklį, tūrinis svoris yra 4 kg. Jei kitas maršrutas nurodo 8 000, jis yra 3 kg. Tai aritmetiniai pavyzdžiai, o ne dabartiniai pasiūlymai ar sukeičiamos vieno maršruto taisyklės.",
+            "Kai maršrutas apmokestina didesnį iš faktinio ir tūrinio svorio, neapvalinti apmokestinami dydžiai šiame pavyzdyje būtų atitinkamai 4 kg ir 3 kg. Tuomet taikykite to maršruto kainos pakopas, mokesčius ir tinkamumo ribas. Vien mažesnis apskaičiuotas svoris neįrodo, kad maršrutas pigesnis ar prieinamas. Jei nerodomas joks maršrutas, naudokitės toliau pateiktu problemų sprendimo vadovu."
+          ],
+          "table": {
+            "columns": [
+              "Pavyzdžio įvestis ar taisyklė",
+              "Rezultatas"
+            ],
+            "rows": [
+              [
+                "Faktinis supakuotos siuntos svoris",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24 000 cm³"
+              ],
+              [
+                "Pavyzdinis daliklis 6 000",
+                "4 kg tūrinis svoris"
+              ],
+              [
+                "Pavyzdinis daliklis 8 000",
+                "3 kg tūrinis svoris"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Aprašykite siuntą, kurią iš tikrųjų svarstote",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Į oficialią LoveGoBuy siuntimo skaičiuoklę įveskite tikrą paskirties vietą, supakuotos siuntos svorį ir išorinius matmenis. Laikykitės pasirinkto maršruto svorio, daliklio ir apvalinimo taisyklių. Įvertis nėra galutinis mokestis, kol nepatvirtinti tikri siuntos duomenys ir pasirinktos paslaugos."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "LoveGoBuy sekimas: sekite siuntą ir supraskite atnaujinimus",
-      "description": "Raskite tinkamą LoveGoBuy sekimo numerį, atskirkite užsakymus nuo siuntų, supraskite sekimo pertraukas ir paruoškite naudingą pagalbos užklausą.",
+      "title": "LoveGoBuy sekimas: siuntos būsena ir atnaujinimų patikra",
+      "description": "Sekite LoveGoBuy siuntą tinkamu sekimo numeriu. Atskirkite pardavėjo pristatymą, sandėlio apdorojimą ir tarptautinio sekimo pertraukas.",
       "category": "Siuntų sekimas",
       "keyword": "lovegobuy sekimas",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "Oficialus LoveGoBuy pirkimo vadovas nukreipia klientus į puslapį „Parcels“, kuriame galima stebėti siuntimo eigą. Šiame nepriklausomame vadove paaiškinama, kaip susisteminti ten rodomą informaciją ir išsiaiškinti neaiškius atnaujinimus. Jis negauna privačių užsakymų, nepakeičia vežėjo sekimo sistemos ir nežada pristatymo datos. Toliau pateikti būsenų pavyzdžiai aprašo bendras logistikos situacijas, o ne nekintamą LoveGoBuy sąsajos žymų sąrašą."
       ],
       "sections": [
+        {
+          "heading": "Nėra sekimo atnaujinimo: pradėkite nuo paskutinio tikro įvykio",
+          "paragraphs": [
+            "Prieš bandydami kitą sekimo svetainę suderinkite numerį su siuntimo etapu. Tam pačiam pirkiniui gali būti užsakymo numeris, vietinio sekimo numeris ir tarptautinės siuntos sekimo numeris. Tarptautiniam etapui naudokite siuntos įraše rodomą numerį ir prašydami pagalbos išsaugokite naujausią įvykį su data.",
+            "Nėra universalaus dienų skaičiaus, po kurio kiekviena sekimo pertrauka reikštų praradimą. Paskutinį nuskaitymą ir praėjusį laiką palyginkite su dabartiniu pasirinktos paslaugos įverčiu. Jei jis viršytas arba įraše rodoma veiksmų reikalaujanti išimtis, kreipkitės į oficialią pagalbą pateikdami siuntos numerį ir tikslią būseną, užuot manę, kad siunta konfiskuota ar prarasta."
+          ],
+          "table": {
+            "columns": [
+              "Matoma būsena",
+              "Naudinga kita patikra"
+            ],
+            "rows": [
+              [
+                "Pardavėjo siunta pristatyta",
+                "Patvirtinkite sandėlio gavimą; tai gali būti tik vietinis etapas"
+              ],
+              [
+                "Etiketė sukurta arba duomenys gauti",
+                "Patikrinkite, ar vežėjas jau priėmė siuntą"
+              ],
+              [
+                "Po priėmimo nėra naujo nuskaitymo",
+                "Palyginkite maršruto įvertį ir paskutinį vežėjo įvykį"
+              ],
+              [
+                "Bandyta pristatyti arba adreso problema",
+                "Nedelsdami laikykitės oficialių vežėjo nurodymų"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Atskirkite prekės užsakymą, siuntos nuorodos numerį ir sekimo numerį",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Atverkite tarptautinės siuntos įrašą ir nukopijuokite jos sekimo numerį bei vežėją. Pardavėjo vietinio sekimo numeris seka prekę iki sandėlio, o ne iki jūsų namų. Etiketė ar siuntos numeris be vežėjo priėmimo nuskaitymo savaime nepatvirtina, kad tarptautinis gabenimas prasidėjo."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "LoveGoBuy pristatymo laikas: nuo pardavėjo išsiuntimo iki pristatymo",
-      "description": "Supraskite LoveGoBuy pristatymo laiko etapus, palyginkite dabartinius maršrutų įverčius ir planuokite atsižvelgdami į sandėlį, pakavimą ir perdavimą vežėjams.",
+      "title": "Kiek trunka LoveGoBuy siuntimas? Etapai ir vėlavimai",
+      "description": "Supraskite LoveGoBuy siuntimo laiką nuo pardavėjo išsiuntimo iki sandėlio apdorojimo ir galutinio pristatymo. Prieš aiškindamiesi vėlavimą patikrinkite etapą.",
       "category": "Pristatymo laikas",
       "keyword": "lovegobuy pristatymo laikas",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "Oficialus LoveGoBuy vadovas pirkimą ir siuntos siuntimą aprašo kaip vienas po kito priimamus sprendimus. Jo skaičiuoklė leidžia peržiūrėti paslaugas pagal paskirties vietą ir siuntos informaciją. Šiame straipsnyje tas procesas paverčiamas planavimo metodu. Jis nepateikia fiksuotų pristatymo pažadų, neapsimeta, kad vienas maršrutas visada greičiausias, ir nepaverčia kito kliento patirties jūsų užsakymo įverčiu."
       ],
       "sections": [
+        {
+          "heading": "Kuris siuntimo etapas iš tikrųjų vėluoja?",
+          "paragraphs": [
+            "Prieš spręsdami, į ką kreiptis, patikrinkite paskutinį užbaigtą įvykį. Jei pardavėjas dar neišsiuntė, tarptautinis vežėjas negali sekti prekės. Jei prekė sandėlyje, bet siunta nepateikta, tarptautinio pristatymo įverčio laikas dar neprasidėjo. Išsiuntus palyginkite sekimo istoriją su dabartiniu pasirinktos paslaugos nurodomu įverčiu.",
+            "Paprasta laiko juosta padeda išvengti painiavos: atskiromis datomis užrašykite mokėjimą už prekę, pardavėjo išsiuntimą, atvykimą į sandėlį, siuntos pateikimą, vežėjo priėmimą ir pristatymą. Trūkstamas datas palikite tuščias. Klauskite apie konkretų neužbaigtą etapą ir oficialiame pagalbos kanale pateikite atitinkamą užsakymo ar siuntos numerį."
+          ],
+          "table": {
+            "columns": [
+              "Paskutinis patvirtintas etapas",
+              "Ką tikrinti toliau"
+            ],
+            "rows": [
+              [
+                "Už prekę sumokėta; pardavėjas neišsiuntė",
+                "Pardavėjo apdorojimas ir užsakymo pagalba"
+              ],
+              [
+                "Atvykimas į sandėlį",
+                "Apžiūra, laukiami sprendimai ir siuntos pateikimas"
+              ],
+              [
+                "Siunta pateikta; vežėjas nepriėmė",
+                "Apdorojimas ir perdavimo patvirtinimas"
+              ],
+              [
+                "Vežėjas priėmė siuntą",
+                "Tarptautinis sekimas ir pristatymo paskirties vietoje naujienos"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Apibrėžkite įverčio pradžią ir pabaigą",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Visiems LoveGoBuy užsakymams nėra vieno pristatymo termino. Pardavėjo išsiuntimas, vietinis gabenimas, sandėlio apdorojimas, tarptautinis transportas ir galutinis pristatymas yra atskiri etapai. Naudokite dabartinį pasirinkto maršruto įvertį; neskaičiuokite jo nuo dienos, kai pirmą kartą sumokėjote už prekę."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "LoveGoBuy radiniai iki 20 USD: drabužiai ir aksesuarai",
+      "description": "Atraskite LoveGoBuy radinius iki 20 USD: kainų pavyzdžiai su datomis, drabužių bei aksesuarų nuorodos, dydžių patikra ir aiškus biudžetas prieš siuntimą.",
+      "category": "Nebrangūs radiniai",
+      "keyword": "lovegobuy radiniai iki 20 dolerių",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Pradėkite nuo pagal kainą surikiuotų drabužių ir aksesuarų kategorijų, tuomet užsakymo puslapyje patvirtinkite pasirinkto varianto kainą. Šiame vadove „iki 20 USD“ reiškia rodomą prekės kainą JAV doleriais, o ne kainą su pristatymu. Tarptautinis siuntimas, vietinis pristatymas, papildomos paslaugos ir kiti taikomi mokesčiai gali padidinti galutinę sumą.",
+        "Toliau pateikti pavyzdžiai mūsų kataloge buvo matomi 2026 m. lapkričio 9 d. Tai palyginimo pradžia, o ne išbandytų prekių rekomendacijos ar jų prieinamumo pažadai. Pirkimo eiga remiasi oficialiu LoveGoBuy vadovu, o biudžeto metodas ir atrankos sąrašas yra mūsų redakciniai patarimai."
+      ],
+      "sections": [
+        {
+          "heading": "Trys kainų pavyzdžiai pradinei atrankai",
+          "paragraphs": [
+            "Kataloge buvo rodomas 0,97 USD kainuojantis vėrinys be prekės ženklo, 1,11 USD kainuojantys akiniai nuo saulės be prekės ženklo ir 9,58 USD kainuojantys marškinėliai trumpomis rankovėmis. Atverkite susietus prekių puslapius ir patikrinkite dabartinę informaciją. Šaltinis pirmas dvi prekes priskiria galvos apdangalams; kategorija nekeičia to, kas iš tikrųjų siūloma skelbime.",
+            "Šie stebėjimai patvirtina tik tai, kad nurodytą dieną buvo rodomi tokie skelbimų pavadinimai ir kainos. Jie nepatvirtina medžiagų, autentiškumo, apsauginių savybių, variantų prieinamumo ar kokybės. Ypač nemanykite, kad akiniai suteikia nurodyto lygio apsaugą nuo UV spindulių, jei nėra patikimų įrodymų. Pardavėjo frazė „aukšta kokybė“ yra teiginys, kurį reikia patikrinti."
+          ],
+          "table": {
+            "columns": [
+              "Katalogo pavyzdys",
+              "Rodoma prekės kaina 2026-11-09",
+              "Ką tikrinti prieš užsakant"
+            ],
+            "rows": [
+              [
+                "Vėrinys be prekės ženklo · 88",
+                "$0.97",
+                "Matmenys, medžiaga ir pasirinktas variantas"
+              ],
+              [
+                "Akiniai nuo saulės be prekės ženklo · 99",
+                "$1.11",
+                "Rėmelio matmenys ir apsaugos teiginiai"
+              ],
+              [
+                "Marškinėliai trumpomis rankovėmis · 3287",
+                "$9.58",
+                "Drabužio matmenys, audinys ir spalva"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Peržiūrėti vėrinio skelbimą",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Peržiūrėti akinių nuo saulės skelbimą",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Peržiūrėti marškinėlių trumpomis rankovėmis skelbimą",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Ieškokite tinkamoje kategorijoje",
+          "paragraphs": [
+            "Pirmiausia pasirinkite prekės tipą: marškinėlius, aksesuarus, galvos apdangalus arba kelnes ir šortus. Surikiavus visą katalogą pagal kainą, gali pasirodyti smulkios dalys, atsarginiai priedai ar variantai, kurių negalima lyginti su visu drabužiu. Pigus skelbimas naudingas tik tada, kai atitinka jūsų numatytą pirkinį. Prieš vertindami kainos patrauklumą susiaurinkite kategoriją.",
+            "Naudokite paprastą prekę apibūdinančią paieškos frazę ir atverkite kelis kandidatus, užuot rinkę dešimtis panašių nuorodų. Išsaugokite skelbimo URL kartu su numatytu variantu. Jei kortelės kaina skiriasi nuo pasirinkto varianto kainos, palyginimui naudokite pastarąją. Patikrinkite, ar rodoma suma taikoma vienetui, porai, rinkiniui ar minimaliam kiekiui."
+          ],
+          "links": [
+            {
+              "label": "Naršyti marškinėlius pagal kainą",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Naršyti aksesuarus pagal kainą",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Naršyti galvos apdangalus pagal kainą",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Nustatykite prekės ir pristatymo biudžetus",
+          "paragraphs": [
+            "Prieš įtraukdami ką nors į užsakymą nustatykite dvi ribas: didžiausią prekės kainą ir didžiausią bendrą sumą su pristatymu. Jos atsako į skirtingus klausimus. 18 USD prekė telpa į 20 USD prekės limitą, tačiau gali būti prastas pasirinkimas, jei siuntimas sunaudoja visą likusį biudžetą. Dabartinius mokesčius tikrinkite oficialioje LoveGoBuy mokesčių informacijoje ir skaičiuoklėje.",
+            "Vien aritmetiniam pavyzdžiui tarkime, kad prekė kainuoja 12 USD, vietinis pristatymas – 2 USD, o jai priskiriama tarptautinio siuntimo dalis – 9 USD. Tarpinė suma jau siekia 23 USD, dar nepridėjus kitų taikomų mokesčių. Šie skaičiai išgalvoti metodui paaiškinti, tai nėra siuntimo pasiūlymas. Neaiškias sumas žymėkite atskirai, užuot tyliai įrašę nulį."
+          ]
+        },
+        {
+          "heading": "Pirmiausia lyginkite tinkamumą ir medžiagas",
+          "paragraphs": [
+            "Marškinėlių krūtinės plotį, ilgį, pečių plotį ir rankovių ilgį palyginkite su jums tinkančiu drabužiu. Taikykite pardavėjo matavimo metodą ir pasiteiraukite trūkstamų matmenų. Vien dydžių raidės nėra patikimas palyginimas, nes lentelės skiriasi pagal pardavėją ir kirpimą. Maža kaina nekompensuoja drabužio, kurio negalite patogiai dėvėti.",
+            "Aksesuarui užrašykite jo naudojimą lemiančius matmenis ir savybes: vėrinio ilgį, rėmelio plotį, užsegimo tipą ar suderinamumą su kita preke. Nuotraukoje matomą išvaizdą atskirkite nuo patvirtinto teiginio apie medžiagą. Jei svarbios specifikacijos nėra, sprendimą atidėkite. Kelių neaiškių variantų pirkimas ieškant vieno tinkamo gali kainuoti daugiau nei vienos gerai aprašytos prekės pasirinkimas."
+          ]
+        },
+        {
+          "heading": "Vertinkite svorį ir pakuotę kartu",
+          "paragraphs": [
+            "Net maža prekė gali be reikalo padidinti pristatymo kainą, jei jos pakuotė padidina išorinius siuntos matmenis. O tanki prekė gali padidinti faktinį svorį neužimdama daug vietos. LoveGoBuy siuntimo skaičiuoklė remiasi pasirinkto maršruto sąlygomis; kai kuriuose maršrutuose lyginamas faktinis ir tūrinis svoris. Kai įmanoma, paprašykite supakuotos siuntos matmenų ir palyginkite jūsų paskirties vietai siūlomus variantus.",
+            "Nepridėkite nereikalingų prekių vien tam, kad siuntimo kainą padalytumėte didesniam užsakymui. Sujungimas gali būti patogus, tačiau kita svorio pakopa, dydžio riba ar prekių apribojimas gali pakeisti prieinamus maršrutus. Lyginkite visus siuntos planus su ta pačia paskirties vieta ir apsaugos poreikiais. Palikite apsauginę pakuotę, jei ją pašalinus atsirastų jums nepriimtina sugadinimo rizika."
+          ]
+        },
+        {
+          "heading": "Nuotraukomis atsakykite į konkrečius klausimus",
+          "paragraphs": [
+            "Katalogo vaizdai yra prekių nuotraukos, o ne automatiškai jūsų užsakymo sandėlio kokybės patikros (QC) nuotraukos. Prekei atvykus į sandėlį, apžiūrėkite su tuo užsakymu susietus vaizdus ir palyginkite juos su pasirinktu variantu. Tikrinkite matomą spalvą, komplekto dalis, etiketes, akivaizdžius defektus ir prašytus matmenis. Prieš spręsdami dėl siuntimo aiškiai užfiksuokite neatitikimus.",
+            "Naudingas papildomos nuotraukos prašymas įvardija vieną matomą dalyką: parodyti vėrinio užsegimą, išmatuoti drabužio krūtinės plotį ar nufotografuoti abi aksesuaro puses. Nuotraukos negali patvirtinti visų medžiagų ar savybių teiginių. Jei rūpesčiui išspręsti reikia to, ko nuotrauka neparodo, tiesiogiai kreipkitės į pardavėją ar pagalbą. Grąžinimo sąlygas patikrinkite, kol dar galima imtis veiksmų."
+          ]
+        },
+        {
+          "heading": "Pildykite trumpą palyginimo įrašą",
+          "paragraphs": [
+            "Kiekvienam kandidatui išsaugokite prekės URL, pasirinktą variantą, dabartinę kainą, matavimų įrodymus, numatomą pakuotę ir neatsakytus klausimus. Pridėkite sprendimą, pavyzdžiui, tirti toliau, paruošta užsakyti arba pašalinti. Toks įrašas padeda pastebėti, kad pigiausiam variantui vis dar trūksta matmens, o šiek tiek brangesnis jau atitinka jūsų reikalavimus.",
+            "Prieš pat mokėdami dar kartą patikrinkite galutinį užsakymo puslapį. Patvirtinkite pradinę prekę, kiekį ir variantą, užuot pasikliovę sena ekrano kopija. Jei prekė dingo ar pasikeitė kaina, grįžkite į kategoriją ir pakartokite palyginimą; nekeiskite jos kita vien todėl, kad nuotrauka atrodo pažįstama. Išsaugota nuoroda yra orientyras, o ne rezervacija. Prie kainos pažymėkite tikrinimo datą, kad senas stebėjimas niekada nebūtų palaikytas dabartiniu pasiūlymu."
+          ],
+          "table": {
+            "columns": [
+              "Palyginimo laukas",
+              "Kodėl tai svarbu"
+            ],
+            "rows": [
+              [
+                "Tikslus variantas ir kiekis",
+                "Neleidžia vieneto lyginti su rinkiniu"
+              ],
+              [
+                "Matmenys ir medžiagos",
+                "Susieja skelbimą su tikrais jūsų poreikiais"
+              ],
+              [
+                "Prekės kaina ir pristatymui skirta suma",
+                "Parodo, ar bendras biudžetas realistiškas"
+              ],
+              [
+                "Neatsakytas klausimas ir kitas veiksmas",
+                "Neleidžia pamiršti trūkstamų įrodymų"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Dažniausi klausimai apie nebrangius radinius",
+          "paragraphs": [
+            "Ar į mažesnę nei 20 USD skelbimo kainą įtrauktas pristatymas? Ne: šiame vadove naudojama rodoma prekės kaina. Atskirai patikrinkite vietinį pristatymą, tarptautinį siuntimą, papildomas paslaugas ir kitus taikomus mokesčius. Ar katalogo kaina gali keistis? Taip. Pavyzdžius su datomis laikykite stebėjimais, o pasirinktą variantą patikrinkite dabartiniame užsakymo puslapyje.",
+            "Ar pavyzdžių kokybė patikrinta? Ne. Šių prekių neišbandėme, o jų įtraukimas nėra autentiškumo patvirtinimas. Ar verta užsakyti pigiausią rezultatą? Tik jei prekė, matmenys ir bendras biudžetas atitinka jūsų reikalavimus. Pradėkite nuo vieno aiškaus naudojimo tikslo, išlaikykite trumpą atranką ir likusius klausimus spręskite pasitelkę susietus dydžių, QC bei išlaidų vadovus."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Iki 20 USD reiškia prekės kainą, o ne bendrą sumą su pristatymu.",
+        "Prieš mokėdami patikrinkite dabartinį variantą, matmenis ir kiekį.",
+        "Naudokite tikras užsakymo QC nuotraukas ir išsaugokite pradinę nuorodą."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "LoveGoBuy batų lentelė: dydžiai, kainos ir QC patikra",
+      "description": "LoveGoBuy batų lentelėje palyginkite skelbimus, batų matmenis, pasirinktų variantų kainas, QC nuotraukas ir pakuotę prieš siuntimą.",
+      "category": "Batai",
+      "keyword": "lovegobuy batų lentelė",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Batų kategoriją naudokite atrankai, tuomet kiekviename skelbime palyginkite tikslų dydį, pasirinkto varianto kainą ir pateiktus matmenis. Pažįstamo dydžio numerio ar prekės nuotraukos neužtenka tinkamumui nustatyti. Prieš tarptautinį siuntimą peržiūrėkite savo poros sandėlio nuotraukas ir patikrinkite, kaip pakuotė veikia siuntos kainos pasiūlymą.",
+        "Šis vadovas susieja batų katalogą su praktišku palyginimo procesu. Jis nevertina neišbandytų batų, nepatvirtina autentiškumo ir nežada konkrečios siuntimo kainos. Oficialus LoveGoBuy pirkimo vadovas ir siuntimo skaičiuoklė aiškina platformos eigą; toliau pateiktas tinkamumo bei apžiūros sąrašas yra nepriklausomos redakcinės gairės."
+      ],
+      "sections": [
+        {
+          "heading": "Atverkite batų katalogą turėdami aiškų tikslą",
+          "paragraphs": [
+            "Pradėkite nuo batų kategorijos ir nuspręskite, kam pora reikalinga. Kasdieniam vaikščiojimui, retkarčiais dėvėti ar konkrečiai veiklai gali reikėti skirtingų įrodymų. Skelbimų pavadinimai padeda rasti kandidatus, tačiau neįrodo patogumo, funkcinių savybių ar ilgaamžiškumo. Pažįstamo prekės ženklo pavadinimo skelbime nelaikykite įrodymu, kad pardavėjo teiginiai patikrinti.",
+            "Surikiavę pagal kainą palyginkite rodomas prekių sumas ir palikite du ar tris realistiškus kandidatus. Prieš išsaugodami atverkite kiekvienos prekės puslapį. Užrašykite skelbimo URL, numatytą spalvą, dydį ir tikrai matomą varianto kainą. Nelyginkite pigiausio pasirenkamo priedo viename puslapyje su visa batų pora kitame."
+          ],
+          "links": [
+            {
+              "label": "Atverti LoveGoBuy batų lentelę",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Palyginti batus pagal rodomą kainą",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Lyginkite matmenis, o ne vien dydžių etiketes",
+          "paragraphs": [
+            "Pradėkite nuo pardavėjo dydžių lentelės ir išsiaiškinkite, ką matuoja kiekvienas skaičius. Pėdos, vidpadžio ir išorinio pado ilgis yra skirtingi matmenys. Lentelė centimetrais naudinga tik tada, kai aiškus matavimo metodas. Nemanykite, kad ES dydis vienodai perskaičiuojamas pas visus pardavėjus ar kad JAV žymėjimas visada reiškia tą pačią dydžių sistemą.",
+            "Abi pėdas matuokite tuo pačiu metodu ir didesnį matmenį palyginkite su lentele. Atsižvelkite ir į plotį bei pirštų srities formą, jei pardavėjas pateikia tokią informaciją. Jei skelbime nurodyti tik dydžių numeriai, prieš pirkdami paprašykite paaiškinimo. Dydžio etiketės nuotrauka sandėlyje gali patvirtinti poros žymėjimą, bet negali įrodyti, kad batai jums tiks."
+          ],
+          "table": {
+            "columns": [
+              "Įrodymas",
+              "Ką jis gali parodyti",
+              "Kas lieka neaišku"
+            ],
+            "rows": [
+              [
+                "Pardavėjo dydžių lentelė",
+                "Nurodytas varianto matmuo",
+                "Ar jos metodas atitinka jūsų matavimą"
+              ],
+              [
+                "Dydžio etiketės nuotrauka",
+                "Gautos poros žymėjimas",
+                "Tikras tinkamumas ir naudinga vidaus erdvė"
+              ],
+              [
+                "Paprašytas matavimas",
+                "Nuotraukoje matomai išmatuotas dydis",
+                "Patogumas ir ilgalaikės savybės"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Užrašykite, kurią tikslią porą ketinate pirkti",
+          "paragraphs": [
+            "Kiekvienam kandidatui sukurkite trumpą įrašą: pradinis URL, prekyvietė, pasirinktas dydis, spalva, prekės kaina ir klausimas pardavėjui. Jei puslapyje yra skirtingų versijų, aiškiai nurodykite versiją. Panašios nuotraukos gali būti keliuose skelbimuose, tačiau tai nereiškia, kad skelbimai lygiaverčiai. Išsaugokite prekės tapatybę nuo atradimo iki užsakymo patvirtinimo.",
+            "Patikrinkite komplektaciją. Batų dėžė, papildomi raišteliai ar kiti priedai gali paveikti ir gaunamą turinį, ir siuntos matmenis. Nemanykite, kad reklaminėje nuotraukoje matomi daiktai įtraukti. Jei kuri nors dalis svarbi jūsų sprendimui, patvirtinkite ją prieš mokėdami ir pridėkite prie sąrašo, kurį tikrinsite gavę sandėlio nuotraukas."
+          ]
+        },
+        {
+          "heading": "Apžiūrėkite savo sandėlio QC nuotraukas",
+          "paragraphs": [
+            "Viešos nuotraukos gali parodyti kitą užsakymą, tačiau su jūsų užsakymu susieti vaizdai yra svarbūs įrodymai apie porą, kurią ketinate siųsti. Palyginkite abu batus, matomas spalvas, dydžių etiketes, siūles, padų kraštus ir komplekto dalis. Ieškokite akivaizdžių neatitikimų ar pažeidimų. Remkitės užsakymo duomenimis, o ne kitu skelbimu su panašia nuotrauka.",
+            "Papildomo kampo ar matavimo prašykite tik tada, kai jis atsako į konkretų neaiškumą. Pavyzdžiui, paprašykite aiškios abiejų dydžių etikečių nuotraukos arba matavimo, kuriame matytųsi liniuotės padėtis. Pardavėjo nuotraukų nevadinkite sandėlio QC ir nuotraukų peržiūros nelaikykite autentiškumo ar ilgaamžiškumo garantija. Kai kurių problemų iš nuotraukų nustatyti neįmanoma."
+          ],
+          "bullets": [
+            "Patikrinkite, ar abu batai atitinka numatytą dydžio ir spalvos variantą.",
+            "Matomą konstrukciją ir komplekto dalis palyginkite su užsakymo įrašu.",
+            "Matomą neatitikimą išspręskite prieš patvirtindami tarptautinį siuntimą."
+          ]
+        },
+        {
+          "heading": "Apskaičiuokite visą poros kainą",
+          "paragraphs": [
+            "Prekės kainą atskirkite nuo vietinio pristatymo, tarptautinio siuntimo ir pasirinktų paslaugų. Kataloge paieškai rodomos sumos USD, o mokėtiną sumą nustato dabartiniai užsakymo ir mokėjimo puslapiai. Valiutų kursai, pasirinkti variantai ar pardavėjo pakeitimai gali paveikti galutinę sumą. Išsaugokite dabartinio pasiūlymo duomenis, užuot manę, kad anksčiau matyta kortelė parodo visą biudžetą.",
+            "Vien skaičiavimo pavyzdžiui: hipotetinė 18 USD pora su 3 USD vietiniu pristatymu ir 14 USD jai priskirtu tarptautiniu siuntimu jau kainuoja 35 USD. Tai nėra stebėti LoveGoBuy mokesčiai ar pasiūlymas konkrečiai paskirties vietai. Pavyzdys rodo, kodėl vien prekės kainos palyginimas gali klaidinti, kai supakuotų batų svoris ar matmenys skiriasi."
+          ]
+        },
+        {
+          "heading": "Palyginkite siuntimą su dėže ir be jos",
+          "paragraphs": [
+            "Jei teikiama pakavimo paslauga leidžia, paklauskite, kaip batų dėžės palikimas ar pašalinimas pakeistų supakuotos siuntos matmenis, apsaugą ir tinkamumą maršrutui. Dėžės pašalinimas negarantuoja mažesnės kainos. Maršrutas, apmokestinamas pagal faktinį svorį, gali skirtis nuo lyginančio faktinį ir tūrinį svorį, o siunta gali likti toje pačioje kainos pakopoje.",
+            "Naudokite konkretaus pasirinkto maršruto daliklį ir apvalinimo taisykles. Pavyzdžiui, 35 × 25 × 15 cm siuntos tūris yra 13 125 kubiniai centimetrai. Padalijus iš 6 000 gaunama apie 2,19 kg, iš 8 000 – apie 1,64 kg. Tai alternatyvūs matematiniai pavyzdžiai, o ne dvi sukeičiamos vieno maršruto taisyklės. Su faktiniu svoriu juos lyginkite tik taip, kaip nurodo pasirinktas maršrutas."
+          ],
+          "table": {
+            "columns": [
+              "Pakavimo pasirinkimas",
+              "Kokios informacijos prašyti"
+            ],
+            "rows": [
+              [
+                "Palikti batų dėžę",
+                "Išoriniai supakuotos siuntos matmenys, apsauga ir visas pasiūlymas"
+              ],
+              [
+                "Pašalinti batų dėžę, jei siūloma",
+                "Pakaitinė apsauga, nauji matmenys ir visas pasiūlymas"
+              ],
+              [
+                "Sujungti su kitomis prekėmis",
+                "Visos siuntos svoris, apribojimai ir prieinami maršrutai"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Problemas spręskite, kol pora dar sandėlyje",
+          "paragraphs": [
+            "Pastebėję neteisingą variantą ar matomą pažeidimą, išsaugokite užsakymo numerį, susijusius skelbimo duomenis ir problemą rodančius vaizdus. Trumpame, faktiniame prašyme paaiškinkite skirtumą. Paklauskite, kokios grąžinimo ar keitimo galimybės šiuo metu taikomos užsakymui. Svarbios pardavėjo sąlygos ir užsakymo etapas; šis vadovas nežada, kad grąžinti galima kiekvieną prekę.",
+            "Nesiųskite poros tarptautiniu būdu, kol neatsakytas svarbus tinkamumo ar būklės klausimas. Prekei patekus į išsiųstą siuntą, praktinės galimybės gali pasikeisti. Diskusiją tęskite oficialiame pagalbos kanale ir atsakymą saugokite su palyginimo įrašu. Aiškus aprašymas ir konkrečios nuotraukos naudingesni už pakartotinį to paties neaiškaus skundo teikimą."
+          ]
+        },
+        {
+          "heading": "Klausimai, į kuriuos atsakykite prieš siųsdami",
+          "paragraphs": [
+            "Ar yra universalus LoveGoBuy batų dydžių perskaičiavimas? Naudokite pasirinkto skelbimo pardavėjo lentelę ir matavimo metodą, o ne universalų perskaičiavimą. Ar katalogo nuotraukos yra QC nuotraukos? Ne: prekių vaizdai ir jūsų užsakymo sandėlio nuotraukos atlieka skirtingus vaidmenis. Ar pora iki 20 USD gali atvykti už mažiau nei 20 USD? Vien rodoma prekės kaina į tai neatsako.",
+            "Ar dėžės pašalinimas visada sutaupo pinigų? Ne. Palyginkite tikrus pakavimo variantus ir maršruto pasiūlymą, įtraukdami reikiamą apsaugos lygį. Galutinis sąrašas paprastas: patvirtinkite porą, supraskite dydžio įrodymus, apžiūrėkite tinkamas nuotraukas, išspręskite neatitikimus ir palyginkite visą siuntimo planą. Kai tarptautinė siunta iš tiesų išsiųsta, naudokitės sekimo vadovu."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Tikslų pradinį URL, dydį ir spalvą laikykite kartu.",
+        "Dydžio etiketė, matavimas ir tinkamumo vertinimas yra skirtingi įrodymai.",
+        "Prieš patvirtindami išsiuntimą palyginkite visą pakavimo ir siuntimo pasiūlymą."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "LoveGoBuy nėra siuntimo maršrutų: ką patikrinti",
+      "description": "LoveGoBuy nerodo siuntimo maršrutų? Patikrinkite paskirties vietą, svorį, siuntos matmenis ir prekių apribojimus, tada palyginkite siūlomą pakavimą.",
+      "category": "Siuntimo problemų sprendimas",
+      "keyword": "lovegobuy nėra siuntimo maršrutų",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Jei LoveGoBuy nerodo siuntimo maršrutų, pirmiausia patikrinkite paskirties vietą, svorio vienetą, išorinius siuntos matmenis ir įvestas prekių kategorijas. Oficiali skaičiuoklė aiškina, kad dėl dydžio ar svorio ribų pasirinkimų gali nelikti. Ribojama prekė, neaptarnaujama paskirties vieta ar laikinas maršruto pakeitimas taip pat gali pareikalauti pagalbos paaiškinimo.",
+        "Nekeiskite teisingų prekės duomenų vien tam, kad atsirastų maršrutas. Naudingas kitas žingsnis – nustatyti įvestį ar tinkamumo sąlygą, dėl kurios rezultatas tuščias, ir palyginti teisėtas pakavimo ar siuntų galimybes. Šis vadovas yra diagnostinis sąrašas, o ne pažadas, kad kiekvieną siuntą galima pristatyti kiekvienu adresu."
+      ],
+      "sections": [
+        {
+          "heading": "Patikrinkite, ar skaičiuojate, ar teikiate siuntą",
+          "paragraphs": [
+            "Prieš pakavimą sandėlyje skaičiuojamas įvertis remiasi jūsų pateikta informacija. Paruošta pateikti siunta gali naudoti sandėlio matavimus ir prekių duomenis. Tai skirtingo patikimumo įrodymai. Užrašykite, kuriame lange rodomas tuščias rezultatas, pasirinktą paskirties vietą ir ar matmenys numanomi, ar išmatuoti po pakavimo. Šis kontekstas padės netirti netinkamo etapo.",
+            "Jei ankstesnis įvertis rodė maršrutą, o paruošta siunta jo neberodo, prieš įtardami sistemos klaidą palyginkite įvestis. Pakuotė gali pakeisti išorinius matmenis, galutinis svoris gali patekti į kitą pakopą, o siuntoje gali būti prekė, kurios siuntimo sąlygos skiriasi nuo kitų. Dabartinės paruoštos siuntos galimybės svarbesnės už preliminarų pavyzdį."
+          ]
+        },
+        {
+          "heading": "Patikrinkite paskirties vietą ir vienetus",
+          "paragraphs": [
+            "Patikrinkite paskirties šalį ar regioną ir formoje prašomus adreso duomenis. Jei maršrutui taikomi teritoriniai apribojimai, paklauskite pagalbos, ar jie galioja jūsų adresui. Nekeiskite paskirties vietos kita šalimi vien dėl raminančio kainos pasiūlymo. Įvertis naudingas tik tuomet, kai apibūdina siuntą, kurią iš tikrųjų ketinate siųsti.",
+            "Tuomet perskaitykite prie kiekvieno lauko esančius vienetų žymėjimus. Įvedę 2 000 kilogramų vietoj 2 000 gramų galite gauti beprasmį rezultatą. Tas pats nutinka į centimetrų lauką įvedus milimetrus. Tikrus matmenis iš naujo įveskite rodomais vienetais ir, jei maršrutų sąrašas tebėra tuščias, išsaugokite pataisytų įvesčių ekrano kopiją."
+          ],
+          "table": {
+            "columns": [
+              "Įvestis",
+              "Naudinga patikra"
+            ],
+            "rows": [
+              [
+                "Paskirties vieta",
+                "Tikra šalis ar regionas ir būtini adreso duomenys"
+              ],
+              [
+                "Svoris",
+                "Reikšmė atitinka formoje rodomą vienetą"
+              ],
+              [
+                "Matmenys",
+                "Išorinis supakuotos siuntos ilgis, plotis ir aukštis nurodytais vienetais"
+              ],
+              [
+                "Prekės kategorija",
+                "Tikslus viso siuntos turinio aprašymas"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Faktinį svorį ir matmenų ribas tikrinkite atskirai",
+          "paragraphs": [
+            "Siunta gali atitikti svorio ribą ir vis tiek viršyti maršruto matmenų ribas. Peržiūrėkite ilgiausios kraštinės, kitų matmenų taisykles ir leistiną svorio intervalą. Skaičiuoklės paaiškinime minimi per sunkių ir per didelių siuntų apribojimai, tačiau vienos visiems maršrutams taikomos ribos nėra. Skaitykite jūsų paskirties vietos ir prieinamos paslaugos sąlygas.",
+            "Tūrinis svoris yra atskiras skaičiavimas, kurį kai kurie maršrutai naudoja apmokestinamam svoriui nustatyti. Tik pavyzdžiui: 40 × 30 × 20 cm yra 24 000 kubinių centimetrų. Daliklis 6 000 duoda 4 kg, o 8 000 – 3 kg. Nė vieno daliklio negalima laikyti universaliu. Taikykite maršruto nurodytą taisyklę ir atskirkite apmokestinamo svorio skaičiavimą nuo matmenų tinkamumo ribų."
+          ]
+        },
+        {
+          "heading": "Peržiūrėkite prekes, galinčias riboti siuntą",
+          "paragraphs": [
+            "Patikrinkite kiekvienos sujungtoje siuntoje esančios prekės siuntimo sąlygas, ypač jei ji turi bateriją, skysčio, miltelių, magnetinį komponentą ar kitą vežėjo galimai ribojamą savybę. Tai klausimų sąrašas patikrai, o ne teiginys, kad LoveGoBuy draudžia visas šių kategorijų prekes. Kas leidžiama, priklauso nuo konkrečios paslaugos ir paskirties vietos.",
+            "Paprašykite pagalbos nurodyti konkrečią prekės savybę ir maršruto sąlygą, trukdančią siuntimui. Prekės aprašymas turi likti tikslus; neslėpkite prekės ir nesirinkite nesusijusios kategorijos apribojimui apeiti. Jei prekė netinka prieinamoms paslaugoms, prieš mokėdami už papildomą pakavimą ar numanydami apėjimo būdą paklauskite, kokios teisėtos galimybės lieka."
+          ]
+        },
+        {
+          "heading": "Palyginkite siūlomą perpakavimą ar siuntos skaidymą",
+          "paragraphs": [
+            "LoveGoBuy skaičiuoklė aiškina, kad per sunkią ar per didelę siuntą gali būti galima padalyti, ir nurodo bandomojo pakavimo ar susijusias paslaugas tikslesniems matavimams. Prieinamumą ir mokesčius reikia patikrinti dabartinėje platformoje. Paklauskite kiekvienos siūlomos siuntos supakuoto svorio ir matmenų, tada kiekvieną įvertinkite tai pačiai tikrai paskirties vietai.",
+            "Palyginkite visų siuntų pasiūlymų ir pasirinktų paslaugų sumą. Dvi mažesnės siuntos gali kainuoti daugiau, nes kiekvienai gali būti taikomas atskiras pradinis mokestis, net jei skaidymas atkuria tinkamumą maršrutui. Perpakavimas keičia ir apsaugą, ir dydį. Palikite būtiną trapių prekių apsaugą ir netvirtinkite pakeitimo, kol nesuprantate kompromiso bei visos galimos mokėtinos sumos."
+          ],
+          "table": {
+            "columns": [
+              "Galimas veiksmas",
+              "Ką palyginti prieš patvirtinimą"
+            ],
+            "rows": [
+              [
+                "Pataisyti įvesties klaidą",
+                "Tikslūs vienetai ir tikra paskirties vieta"
+              ],
+              [
+                "Perpakuoti, jei siūloma",
+                "Nauji matmenys, apsauginės medžiagos ir paslaugos mokestis"
+              ],
+              [
+                "Padalyti, jei siūloma",
+                "Kiekvienos siuntos tinkamumas ir visų pasiūlymų suma"
+              ],
+              [
+                "Pašalinti netinkamą prekę",
+                "Oficialiai siūlomi tvarkymo ar grąžinimo būdai"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Atskirkite tuščią įvertį nuo paskyros problemos",
+          "paragraphs": [
+            "Tuščias maršrutų sąrašas savaime neįrodo, kad paskyra užblokuota, mokėjimas nepavyko ar siunta prarasta. Patikrinkite puslapyje iš tiesų rodomą informaciją. Jei yra atskiras klaidos pranešimas, užrašykite jo tekstą. Formos atnaujinimas gali padėti dėl laikinos rodymo problemos, tačiau kartojamas atnaujinimas neišspręs tikro svorio, dydžio ar tinkamumo apribojimo.",
+            "Jei maršrutų sąrašas pasikeitė nepakeitus siuntos, paklauskite, ar paslaugos paskirties vietai laikinai pakoreguotos. Neperkelkite maršruto pavadinimo ar pristatymo pažado iš seno forumo įrašo į savo planą. Remkitės dabartiniu oficialiu įverčiu ir platformos atsakymu, išsaugodami patikros laiką, kad vėlesnius pokyčius galėtumėte sąžiningai palyginti."
+          ]
+        },
+        {
+          "heading": "Pagalbai pateikite naudingą diagnostinį prašymą",
+          "paragraphs": [
+            "Privačiai per oficialų pagalbos kanalą pateikite užsakymo ar siuntos numerį, paskirties vietą, svorį ir matmenis su vienetais, prekių tipus, tikslų langą ir klaidos tekstą. Nurodykite, ar matmenys apytiksliai, ar pateikti sandėlio. Pridėkite svarbias įvestis rodančią ekrano kopiją, vengdami nebūtinų asmens ar mokėjimo duomenų.",
+            "Užduokite konkretų klausimą: kuri įvesta reikšmė, prekės sąlyga ar maršruto riba neleidžia paslaugai pasirodyti ir koks siūlomas pakeitimas padarytų siuntą tinkamą? Jei pagalba siūlo skaidymą ar perpakavimą, prieš patvirtindami paprašykite būsimų matmenų ir kainų. Atsakymą saugokite su siuntos įrašu, kad galėtumėte patikrinti, ar kitas įvertis naudoja sutartus duomenis."
+          ]
+        },
+        {
+          "heading": "Ką daryti atsiradus maršrutui",
+          "paragraphs": [
+            "Prieš pasirinkdami naujai atsiradusį variantą perskaitykite paslaugos sąlygas. Palyginkite visą kainą, nurodytą pristatymo įvertį, sekimo tvarką ir taikomus apribojimus. Matomas maršrutas yra vertintina galimybė, o ne garantija atvykti konkrečią dieną. Galutiniame siuntos pateikime patikrinkite, ar visos prekės ir tikra paskirties vieta tebėra nurodytos teisingai.",
+            "Po išsiuntimo naudokite tarptautinės siuntos sekimo numerį, o ne pardavėjo vietinio pristatymo numerį. Jei tinkamo maršruto vis dar nėra, neteikite siuntos, kol oficiali pagalba paaiškins galimus tvarkymo būdus. Saugiausias naudingas rezultatas – tikslus atsakymas apie tinkamumą ir kainą; teisingų duomenų keitimas, kol atsiranda mygtukas, nesukuria galiojančio siuntimo plano."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Pirmiausia patikrinkite paskirties vietą, vienetus, matmenis ir prekių duomenis.",
+        "Tikrinkite konkretaus maršruto ribas; nepriimkite vieno daliklio ar maksimalaus svorio kaip universalaus.",
+        "Palyginkite bendrą siūlomo skaidymo ar perpakavimo kainą ir apsaugą."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

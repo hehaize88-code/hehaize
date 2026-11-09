@@ -25,8 +25,8 @@ for (const lang of langs) {
       errors.push(`${lang} blank copy`);
     if (
       faq.faq.length !== 36 ||
-      articles.articles.length !== 13 ||
-      new Set(articles.articles.map((a) => a.slug)).size !== 13
+      articles.articles.length !== 16 ||
+      new Set(articles.articles.map((a) => a.slug)).size !== 16
     )
       errors.push(`${lang} counts`);
     const sourceIds = new Set(
@@ -45,6 +45,11 @@ for (const lang of langs) {
       if (a.slug !== e?.slug) errors.push(`${lang} article slug ${i}`);
       if (!a.title?.trim() || !a.description?.trim())
         errors.push(`${lang} missing article metadata ${i}`);
+      if (
+        Boolean(a.quickAnswer) !== Boolean(e.quickAnswer) ||
+        (lang !== "en" && a.quickAnswer && a.quickAnswer === e.quickAnswer)
+      )
+        errors.push(`${lang} missing translated quick answer ${i}`);
       if (
         a.datePublished !== e.datePublished ||
         a.dateModified !== e.dateModified
@@ -87,6 +92,18 @@ for (const lang of langs) {
             )
               errors.push(`${lang} table cells ${i}/${j}`);
         }
+        if ((s.links || []).length !== (es.links || []).length)
+          errors.push(`${lang} link count ${i}/${j}`);
+        for (const [k, link] of (s.links || []).entries()) {
+          if (
+            !link.label?.trim() ||
+            link.path !== es.links[k]?.path ||
+            !/^\/(products|spreadsheet)\//.test(link.path)
+          )
+            errors.push(`${lang} article link ${i}/${j}/${k}`);
+          if (lang !== "en" && link.label === es.links[k]?.label)
+            errors.push(`${lang} untranslated link ${i}/${j}/${k}`);
+        }
       }
       if (JSON.stringify(a.relatedSlugs) !== JSON.stringify(e.relatedSlugs))
         errors.push(`${lang} related links ${i}`);
@@ -100,7 +117,7 @@ for (const lang of langs) {
         errors.push(`${lang} untranslated title ${i}`);
       if (lang !== "en" && a.description === e.description)
         errors.push(`${lang} untranslated description ${i}`);
-      if (lang === "en" && a.datePublished === "2026-10-23") {
+      if (lang === "en" && a.datePublished) {
         const text = [
           ...a.intro,
           ...a.takeaways,
@@ -134,5 +151,5 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(
-  "Validated 24 locales, 312 full articles, 864 FAQs; matching text structure, tables, related links and official source references.",
+  "Validated 24 locales, 384 full articles, 864 FAQs; matching text structure, tables, related links and official source references.",
 );

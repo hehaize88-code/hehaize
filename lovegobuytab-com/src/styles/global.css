@@ -164,15 +164,39 @@ a svg {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 29px;
+  gap: 18px;
   margin-left: auto;
   font-size: 13px;
   font-weight: 550;
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.35;
 }
 .desktop-nav a {
+  max-width: 150px;
   padding: 10px 0;
   position: relative;
+}
+
+.quick-answer {
+  border-left: 3px solid var(--accent);
+  padding: 14px 18px;
+  background: #f8f5ec;
+  margin-bottom: 20px;
+  font-weight: 550;
+}
+.quick-answer p {
+  margin: 0;
+}
+.article-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 16px 0 22px;
+  font-weight: 600;
+}
+.article-links a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .desktop-nav a.active:after {
   content: "";
@@ -2753,7 +2777,7 @@ h3 {
   }
   .article-cover,
   .articles-index .article-cover {
-    aspect-ratio: 1;
+    aspect-ratio: 16 / 7;
   }
   .articles-index .article-card h3,
   .article-card h3 {
@@ -2768,5 +2792,40 @@ h3 {
   .articles-index .article-meta,
   .article-meta {
     font-size: 10px;
+  }
+}
+
+/* Keep all six navigation links reachable before translated labels get cramped. */
+@media (min-width: 761px) and (max-width: 1150px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  .mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    padding: 12px 32px;
+    border-top: 1px solid var(--line);
+  }
+  .mobile-nav a {
+    padding: 12px;
+    background: #f5f6f0;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 760px) {
+  .quick-answer {
+    padding: 12px 14px;
+    margin-bottom: 16px;
+  }
+  .article-links {
+    gap: 10px;
+    font-size: 14px;
+  }
+  .article-links a {
+    flex-basis: 100%;
   }
 }

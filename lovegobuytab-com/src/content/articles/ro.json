@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "Calculatorul de expediere LoveGoBuy: costuri și greutatea coletului",
-      "description": "Folosește calculatorul de expediere LoveGoBuy cu destinația, greutatea, dimensiunile și categoria de bunuri corecte. Înțelege greutatea volumetrică și compară estimările pentru colete.",
+      "title": "Calculator de transport LoveGoBuy: cost și greutate taxabilă",
+      "description": "Estimează transportul LoveGoBuy cu greutatea reală și volumetrică, divizori specifici rutei și un exemplu calculat. Separă oferta de prețul articolului.",
       "category": "Transport",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy oferă un estimator oficial cu date despre colet și destinație. Acest ghid oferă recomandări independente pentru pregătirea datelor și compararea rezultatelor. Nu recomandă o rută universal cea mai ieftină și nu promite un termen de livrare pentru comanda ta."
       ],
       "sections": [
+        {
+          "heading": "Un exemplu calculat de greutate taxabilă",
+          "paragraphs": [
+            "Să presupunem că un colet ipotetic ambalat cântărește 2 kg și măsoară 40 × 30 × 20 cm. Volumul său este de 24 000 centimetri cubi. Dacă o rută indică divizorul 6 000, greutatea volumetrică este 4 kg. Dacă alta indică 8 000, este 3 kg. Acestea sunt exemple aritmetice, nu oferte actuale sau reguli interschimbabile pentru aceeași rută.",
+            "Când o rută taxează valoarea mai mare dintre greutatea reală și volumetrică, valorile taxabile nerotunjite în acest exemplu ar fi 4 kg, respectiv 3 kg. Aplică apoi treptele tarifare, taxele și limitele proprii de eligibilitate ale rutei. O greutate calculată mai mică nu dovedește singură că ruta este mai ieftină sau disponibilă. Dacă nu apare nicio rută, folosește ghidul de depanare de mai jos."
+          ],
+          "table": {
+            "columns": [
+              "Dată sau regulă din exemplu",
+              "Rezultat"
+            ],
+            "rows": [
+              [
+                "Greutate reală ambalată",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24 000 cm³"
+              ],
+              [
+                "Divizor de exemplu 6 000",
+                "Greutate volumetrică de 4 kg"
+              ],
+              [
+                "Divizor de exemplu 8 000",
+                "Greutate volumetrică de 3 kg"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Descrie coletul pe care îl iei efectiv în calcul",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Introdu destinația reală, greutatea ambalată și dimensiunile exterioare în calculatorul oficial de transport LoveGoBuy. Respectă regulile de greutate, divizor și rotunjire ale rutei alese. Estimarea nu este taxa finală până nu sunt confirmate informațiile reale ale coletului și serviciile selectate."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "Urmărire LoveGoBuy: urmărește coletul și înțelege actualizările",
-      "description": "Găsește numărul corect de urmărire LoveGoBuy, separă comenzile de colete, interpretează pauzele dintre actualizări și pregătește o solicitare utilă de asistență.",
+      "title": "Urmărire LoveGoBuy: starea coletului și lipsa actualizărilor",
+      "description": "Urmărește coletul LoveGoBuy cu numărul corect. Distinge livrarea vânzătorului, procesarea în depozit și pauzele urmăririi internaționale.",
       "category": "Urmărirea coletelor",
       "keyword": "urmărire lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "Ghidul oficial de cumpărare LoveGoBuy îndrumă clienții către pagina Parcels pentru a urmări progresul expedierii. Acest ghid independent explică organizarea informațiilor afișate acolo și investigarea actualizărilor neclare. Nu accesează comenzi private, nu înlocuiește sistemul de urmărire al transportatorului și nu promite o dată de livrare. Exemplele de stare de mai jos descriu situații logistice generale, nu o listă fixă de etichete din interfața LoveGoBuy."
       ],
       "sections": [
+        {
+          "heading": "Fără actualizări: începe cu ultimul eveniment real",
+          "paragraphs": [
+            "Potrivește referința cu etapa transportului înainte să încerci alt site de urmărire. Aceeași cumpărătură poate avea un număr de comandă, unul de urmărire internă și unul de urmărire internațională. Folosește-l pe cel din evidența coletului pentru segmentul internațional și păstrează ultimul eveniment datat când ceri ajutor.",
+            "Nu există un număr universal de zile după care orice pauză de urmărire înseamnă pierdere. Compară ultima scanare și timpul scurs cu estimarea actuală a serviciului ales. Dacă este depășită, sau evidența arată o excepție care necesită acțiune, contactează asistența oficială cu referința coletului și starea exactă în loc să presupui că pachetul este confiscat sau pierdut."
+          ],
+          "table": {
+            "columns": [
+              "Stare observată",
+              "Următoarea verificare utilă"
+            ],
+            "rows": [
+              [
+                "Expedierea vânzătorului a fost livrată",
+                "Confirmă recepția în depozit; poate fi doar segmentul intern"
+              ],
+              [
+                "Etichetă creată sau date primite",
+                "Verifică dacă a avut loc acceptarea de către transportator"
+              ],
+              [
+                "Nicio scanare nouă după acceptare",
+                "Compară estimarea rutei și ultimul eveniment al transportatorului"
+              ],
+              [
+                "Livrare încercată sau problemă cu adresa",
+                "Urmează prompt instrucțiunile oficiale ale transportatorului"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Separă comanda produsului, referința coletului și numărul de urmărire",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Deschide evidența coletului internațional și copiază numărul de urmărire și transportatorul. Numărul intern al vânzătorului urmărește articolul până la depozit, nu până acasă la tine. O etichetă sau un număr de colet fără scanare de acceptare a transportatorului nu confirmă singur începerea transportului internațional."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "Timpul de expediere LoveGoBuy: de la trimiterea vânzătorului la livrare",
-      "description": "Înțelege etapele duratei de livrare LoveGoBuy, compară estimările actuale ale rutelor și planifică ținând cont de depozit, ambalare și predarea către transportatori.",
+      "title": "Cât durează expedierea LoveGoBuy? Etape și întârzieri",
+      "description": "Înțelege timpul de livrare LoveGoBuy de la expedierea vânzătorului la procesarea în depozit și livrarea finală. Verifică etapa potrivită înainte să investighezi o întârziere.",
       "category": "Durata expedierii",
       "keyword": "durata expedierii lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "Ghidul oficial LoveGoBuy descrie cumpărarea și expedierea coletului ca decizii succesive. Estimatorul permite analizarea serviciilor folosind destinația și informațiile coletului. Acest articol transformă fluxul într-o metodă de planificare. Nu publică promisiuni fixe de livrare, nu pretinde că o rută este întotdeauna cea mai rapidă și nu transformă experiența altui client într-o estimare pentru comanda ta."
       ],
       "sections": [
+        {
+          "heading": "Ce etapă a transportului este efectiv întârziată?",
+          "paragraphs": [
+            "Verifică ultimul eveniment încheiat înainte să decizi pe cine contactezi. Dacă vânzătorul nu a expediat, transportatorul internațional nu poate urmări articolul. Dacă articolul este în depozit, dar niciun colet nu a fost trimis spre expediere, estimarea de livrare internațională nu a început. După expediere, compară istoricul urmăririi cu estimarea actuală declarată a serviciului ales.",
+            "O cronologie simplă poate preveni confuzia: notează plata articolului, expedierea vânzătorului, sosirea în depozit, trimiterea coletului, acceptarea de către transportator și livrarea ca date separate. Lasă necompletate datele lipsă. Întreabă despre etapa concretă neîncheiată și include referința relevantă a comenzii sau coletului în canalul oficial de asistență."
+          ],
+          "table": {
+            "columns": [
+              "Ultima etapă confirmată",
+              "Ce să verifici în continuare"
+            ],
+            "rows": [
+              [
+                "Articol plătit; vânzătorul nu a expediat",
+                "Pregătirea vânzătorului și asistența pentru comandă"
+              ],
+              [
+                "Sosire în depozit",
+                "Inspecție, decizii restante și trimiterea coletului"
+              ],
+              [
+                "Colet trimis; fără acceptare de la transportator",
+                "Procesare și confirmarea predării"
+              ],
+              [
+                "Transportatorul a acceptat coletul",
+                "Urmărirea internațională și actualizările livrării la destinație"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Definește începutul și sfârșitul estimării",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Nu există un singur termen de livrare pentru toate comenzile LoveGoBuy. Expedierea vânzătorului, transportul intern, procesarea în depozit, transportul internațional și livrarea finală sunt etape distincte. Folosește estimarea actuală a rutei selectate; nu o calcula din ziua în care ai plătit inițial articolul."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "Descoperiri LoveGoBuy sub 20 $: îmbrăcăminte și accesorii",
+      "description": "Explorează produse LoveGoBuy sub 20 $, cu exemple de prețuri datate, linkuri pentru haine și accesorii, verificări ale mărimilor și un buget clar înaintea expedierii.",
+      "category": "Produse accesibile",
+      "keyword": "descoperiri lovegobuy sub 20",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Începe cu categoriile de îmbrăcăminte și accesorii sortate după preț, apoi confirmă prețul variantei alese pe pagina comenzii. „Sub 20 $” înseamnă aici prețul afișat al articolului în dolari americani, nu un preț cu livrarea inclusă. Transportul internațional, livrarea internă, serviciile opționale și orice taxe aplicabile pot ridica totalul final peste această sumă.",
+        "Exemplele de mai jos erau vizibile în catalogul nostru pe 9 noiembrie 2026. Sunt puncte de pornire pentru comparație, nu recomandări testate sau promisiuni privind stocul. Procesul de cumpărare se bazează pe ghidul oficial LoveGoBuy; metoda de bugetare și lista de verificare sunt recomandările noastre editoriale."
+      ],
+      "sections": [
+        {
+          "heading": "Trei exemple de prețuri pentru lista ta de opțiuni",
+          "paragraphs": [
+            "Catalogul afișa un colier fără marcă la 0,97 $, o pereche de ochelari de soare fără marcă la 1,11 $ și o cămașă cu mânecă scurtă la 9,58 $. Deschide paginile produselor indicate pentru a verifica informațiile actuale. Sursa le clasifică pe primele două la articole pentru cap; încadrarea în categorie nu schimbă ceea ce oferă efectiv anunțul.",
+            "Aceste observații confirmă doar că numele și prețurile respective erau afișate la acea dată. Nu confirmă materialele, autenticitatea, performanța de protecție, disponibilitatea variantelor sau calitatea. În special, nu presupune că ochelarii de soare oferă un anumit nivel de protecție UV fără dovezi fiabile. O formulare a vânzătorului precum „calitate ridicată” este o afirmație care trebuie investigată."
+          ],
+          "table": {
+            "columns": [
+              "Exemplu din catalog",
+              "Preț afișat pe 9 noiembrie 2026",
+              "Verifică înainte de comandă"
+            ],
+            "rows": [
+              [
+                "Colier fără marcă · 88",
+                "$0.97",
+                "Dimensiuni, material și opțiunea selectată"
+              ],
+              [
+                "Ochelari de soare fără marcă · 99",
+                "$1.11",
+                "Măsurile ramei și orice afirmație despre protecție"
+              ],
+              [
+                "Cămașă cu mânecă scurtă · 3287",
+                "$9.58",
+                "Măsurile hainei, materialul și culoarea"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Vezi anunțul colierului",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Vezi anunțul ochelarilor de soare",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Vezi anunțul cămășii cu mânecă scurtă",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Caută într-o categorie relevantă",
+          "paragraphs": [
+            "Alege mai întâi tipul articolului: tricouri, accesorii, articole pentru cap sau pantaloni și pantaloni scurți. Sortarea întregului catalog după preț poate scoate în față piese mici, accesorii de rezervă sau opțiuni care nu sunt comparabile cu o haină completă. Un anunț ieftin este util numai dacă se potrivește cu ce intenționai să cumperi. Restrânge categoria înainte să decizi dacă prețul este atractiv.",
+            "Folosește un termen simplu care descrie articolul, apoi deschide câteva opțiuni în loc să strângi zeci de linkuri asemănătoare. Salvează împreună adresa anunțului și varianta dorită. Dacă prețul de pe card diferă de cel al opțiunii selectate, folosește opțiunea selectată în comparație. Verifică dacă suma afișată se referă la o bucată, o pereche, un set sau o cantitate minimă."
+          ],
+          "links": [
+            {
+              "label": "Explorează tricouri după preț",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Explorează accesorii după preț",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Explorează articole pentru cap după preț",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Stabilește un buget pentru articol și unul pentru livrare",
+          "paragraphs": [
+            "Stabilește două limite înainte să adaugi ceva la comandă: un plafon pentru prețul articolului și suma maximă pe care vrei să o cheltuiești cu livrarea inclusă. Ele răspund unor întrebări diferite. Un articol de 18 $ respectă plafonul de 20 $, dar poate fi o alegere slabă dacă transportul consumă restul bugetului total. Consultă taxele actuale în informațiile oficiale LoveGoBuy și în calculatorul de transport.",
+            "Doar ca exemplu aritmetic, să presupunem că articolul costă 12 $, livrarea internă 2 $, iar partea de transport internațional alocată lui este 9 $. Subtotalul este deja 23 $, înaintea altor taxe aplicabile. Aceste cifre sunt inventate pentru explicarea metodei, nu reprezintă o ofertă de transport. Păstrează separat sumele incerte în loc să introduci zero fără explicație."
+          ]
+        },
+        {
+          "heading": "Compară potrivirea și materialele înaintea prețului",
+          "paragraphs": [
+            "Pentru un tricou, compară lățimea pieptului, lungimea, lățimea umerilor și lungimea mânecilor cu o haină care îți vine bine. Folosește metoda de măsurare a vânzătorului și întreabă despre dimensiunile lipsă. Literele mărimilor oferă singure o comparație slabă, deoarece tabelele pot diferi între vânzători și croieli. Un preț mic nu compensează o haină pe care nu o poți purta confortabil.",
+            "Pentru un accesoriu, notează măsurile care îi determină utilizarea: lungimea colierului, lățimea ramei, tipul închizătorii sau compatibilitatea cu alt articol. Separă aspectul din fotografie de o afirmație verificată privind materialul. Dacă lipsește o specificație importantă, amână alegerea acelui produs. Cumpărarea mai multor opțiuni incerte pentru a găsi una potrivită poate costa mai mult decât alegerea uneia bine documentate."
+          ]
+        },
+        {
+          "heading": "Ia în calcul împreună greutatea și ambalajul",
+          "paragraphs": [
+            "Un articol mic poate adăuga costuri de livrare evitabile dacă ambalajul mărește dimensiunile exterioare ale coletului. Invers, un articol dens poate adăuga greutate reală fără să ocupe mult spațiu. Calculatorul LoveGoBuy folosește condițiile rutei selectate; unele rute compară greutatea reală și cea volumetrică. Cere măsurile după ambalare când sunt disponibile și compară opțiunile acceptate pentru destinația ta.",
+            "Nu adăuga articole inutile doar pentru a împărți transportul între mai multe produse. Consolidarea poate fi convenabilă, dar o altă tranșă de greutate, o limită dimensională sau o restricție de articol poate schimba rutele disponibile. Compară planurile complete pentru colet folosind aceeași destinație și aceleași cerințe de protecție. Păstrează ambalajul protector dacă eliminarea sa ar crea un risc de deteriorare pe care nu vrei să îl accepți."
+          ]
+        },
+        {
+          "heading": "Folosește fotografiile pentru întrebări concrete",
+          "paragraphs": [
+            "Imaginile din catalog sunt fotografii de produs, nu automat fotografii de control al calității din depozit pentru comanda ta. După sosirea articolului în depozit, examinează imaginile asociate comenzii și compară-le cu varianta selectată. Verifică aspectul culorii, piesele incluse, etichetele, defectele evidente și măsurile cerute. Notează clar orice neconcordanță înainte să decizi expedierea.",
+            "O cerere utilă de fotografie suplimentară numește o întrebare observabilă: arătați închizătoarea colierului, măsurați lățimea pieptului hainei sau arătați ambele părți ale accesoriului. Fotografiile nu pot dovedi orice afirmație despre materiale sau performanță. Dacă o nelămurire necesită informații pe care fotografia nu le poate oferi, întreabă direct vânzătorul sau serviciul de asistență. Consultă condițiile de retur aplicabile cât timp mai poți acționa."
+          ]
+        },
+        {
+          "heading": "Păstrează o evidență scurtă a comparației",
+          "paragraphs": [
+            "Pentru fiecare opțiune, păstrează adresa produsului, varianta selectată, prețul actual, dovezile măsurătorilor, ambalajul estimat și întrebările nerezolvate. Adaugă o decizie precum de investigat, gata de comandă sau de eliminat. Evidența arată mai ușor că opțiunii celei mai ieftine îi lipsește încă o măsură, în timp ce una puțin mai scumpă îndeplinește deja cerințele tale.",
+            "Reverifică pagina finală a comenzii chiar înainte de plată. Confirmă articolul original, cantitatea și varianta în loc să te bazezi pe o captură veche. Dacă produsul a dispărut sau și-a schimbat prețul, revino în categorie și repetă comparația; nu îl înlocui doar pentru că fotografia pare cunoscută. Un link salvat este o referință, nu o rezervare. Păstrează data verificării lângă preț, astfel încât o observație veche să nu fie confundată cu o ofertă actuală."
+          ],
+          "table": {
+            "columns": [
+              "Câmp de comparație",
+              "De ce contează"
+            ],
+            "rows": [
+              [
+                "Varianta și cantitatea exacte",
+                "Evită compararea unei bucăți cu un set"
+              ],
+              [
+                "Măsuri și materiale",
+                "Leagă anunțul de nevoile tale reale"
+              ],
+              [
+                "Prețul articolului plus bugetul de livrare",
+                "Arată dacă bugetul complet este realist"
+              ],
+              [
+                "Întrebarea fără răspuns și următoarea acțiune",
+                "Menține vizibile dovezile lipsă"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Întrebări frecvente despre produsele accesibile",
+          "paragraphs": [
+            "Un anunț sub 20 $ include livrarea? Nu: acest ghid folosește prețul afișat al articolului. Verifică separat livrarea internă, transportul internațional, serviciile opționale și alte taxe aplicabile. Se poate schimba prețul din catalog? Da. Tratează exemplele datate ca observații și verifică varianta selectată pe pagina actuală a comenzii.",
+            "Exemplele sunt testate calitativ? Nu. Nu am testat articolele respective, iar includerea lor nu certifică autenticitatea. Ar trebui să comanzi cel mai ieftin rezultat? Numai dacă articolul, măsurile și bugetul total îndeplinesc cerințele tale. Începe cu o utilizare clară, păstrează o listă scurtă și folosește ghidurile indicate despre mărimi, controlul calității și costuri pentru a rezolva întrebările rămase."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Sub 20 $ se referă la prețul articolului, nu la totalul cu livrare.",
+        "Verifică varianta actuală, măsurile și cantitatea înainte să plătești.",
+        "Folosește fotografiile de control ale comenzii reale și păstrează linkul sursă."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "Catalog de încălțăminte LoveGoBuy: mărimi, prețuri și verificări QC",
+      "description": "Folosește catalogul de încălțăminte LoveGoBuy pentru a compara anunțuri, măsuri, prețuri selectate, fotografii QC și ambalaje înainte de expediere.",
+      "category": "Încălțăminte",
+      "keyword": "catalog încălțăminte lovegobuy",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Folosește categoria de încălțăminte ca listă de opțiuni, apoi compară mărimea exactă, prețul selectat și măsurile disponibile în fiecare anunț. Un număr de mărime cunoscut sau o fotografie nu sunt suficiente pentru a stabili potrivirea. Înaintea transportului internațional, verifică fotografiile din depozit pentru perechea ta și cum influențează ambalajul oferta de transport.",
+        "Acest ghid leagă catalogul de încălțăminte de un proces practic de comparație. Nu evaluează pantofi netestați, nu certifică autenticitatea și nu promite un anumit cost de transport. Ghidul oficial de cumpărare și calculatorul LoveGoBuy explică procesul platformei; lista de verificare a potrivirii și inspecției de mai jos reprezintă recomandări editoriale independente."
+      ],
+      "sections": [
+        {
+          "heading": "Deschide catalogul de încălțăminte cu un scop clar",
+          "paragraphs": [
+            "Începe în categoria de încălțăminte și decide pentru ce îți trebuie perechea. Mersul zilnic, purtarea ocazională și o anumită activitate pot necesita dovezi diferite. Titlurile anunțurilor te ajută să găsești opțiuni, dar nu demonstrează confortul, performanța sau durabilitatea. Evită să tratezi o marcă familiară dintr-un anunț ca dovadă că afirmațiile vânzătorului au fost verificate.",
+            "Sortează după preț pentru a compara sumele afișate și păstrează două sau trei opțiuni realiste. Deschide fiecare pagină înainte să o salvezi. Notează adresa anunțului, culoarea dorită, mărimea și prețul opțiunii pe care îl vezi efectiv. Nu compara cel mai ieftin accesoriu selectabil de pe o pagină cu o pereche completă de pe alta."
+          ],
+          "links": [
+            {
+              "label": "Deschide catalogul de încălțăminte LoveGoBuy",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Compară încălțămintea după prețul afișat",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Compară măsuri, nu doar etichete de mărime",
+          "paragraphs": [
+            "Începe cu tabelul de mărimi al vânzătorului și identifică ce măsoară fiecare număr. Lungimea piciorului, lungimea branțului și lungimea tălpii exterioare sunt măsurători diferite. Un tabel în centimetri este util numai dacă metoda de măsurare este clară. Nu presupune că o mărime UE se convertește identic la toți vânzătorii sau că o etichetă SUA folosește întotdeauna același sistem.",
+            "Măsoară ambele picioare prin aceeași metodă și compară măsura mai mare cu tabelul. Ia în calcul și lățimea și forma zonei degetelor când vânzătorul oferă aceste informații. Dacă anunțul arată doar mărimi, cere clarificări înaintea cumpărării. O fotografie din depozit a etichetei poate confirma mărimea înscrisă pe pereche, dar nu poate dovedi că pantofii îți vor veni."
+          ],
+          "table": {
+            "columns": [
+              "Dovadă",
+              "Ce poate indica",
+              "Ce rămâne incert"
+            ],
+            "rows": [
+              [
+                "Tabelul de mărimi al vânzătorului",
+                "Măsura declarată pentru o opțiune",
+                "Dacă metoda corespunde măsurătorii tale"
+              ],
+              [
+                "Fotografia etichetei de mărime",
+                "Eticheta perechii primite",
+                "Potrivirea reală și spațiul interior utilizabil"
+              ],
+              [
+                "Măsurătoare solicitată",
+                "O dimensiune vizibilă măsurată în fotografie",
+                "Confortul și performanța pe termen lung"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Notează exact perechea pe care intenționezi să o cumperi",
+          "paragraphs": [
+            "Creează o înregistrare scurtă pentru fiecare opțiune: adresa sursă, piața online, mărimea selectată, culoarea, prețul și întrebările pentru vânzător. Dacă pagina conține versiuni diferite, notează explicit versiunea. Imagini asemănătoare pot apărea în mai multe anunțuri, fără ca acestea să fie interschimbabile. Păstrează identitatea produsului de la descoperire până la confirmarea comenzii.",
+            "Verifică ce include pachetul. Cutia de pantofi, șireturile suplimentare sau alte accesorii pot influența atât ce primești, cât și dimensiunile coletului. Nu presupune că obiectele dintr-o fotografie promoțională sunt incluse. Dacă o piesă inclusă contează pentru decizie, confirm-o înainte de plată și adaug-o pe lista de verificat când fotografiile din depozit devin disponibile."
+          ]
+        },
+        {
+          "heading": "Examinează fotografiile QC din depozit pentru comanda ta",
+          "paragraphs": [
+            "Fotografiile publice pot arăta cum a fost altă comandă, dar imaginile atașate comenzii tale sunt dovezile relevante pentru perechea pe care urmează să o expediezi. Compară ambii pantofi, culorile vizibile, etichetele de mărime, cusăturile, marginile tălpilor și piesele incluse. Caută neconcordanțe evidente sau deteriorări. Folosește detaliile comenzii ca referință, nu un alt anunț care are întâmplător o fotografie asemănătoare.",
+            "Cere un unghi sau o măsurătoare suplimentară numai dacă răspunde unei incertitudini concrete. De exemplu, solicită o fotografie clară a ambelor etichete de mărime sau o măsurătoare în care poziția riglei este vizibilă. Nu prezenta fotografiile vânzătorului drept QC din depozit și nu trata analiza fotografiilor ca garanție a autenticității ori durabilității. Unele probleme nu pot fi stabilite din imagini."
+          ],
+          "bullets": [
+            "Verifică dacă ambii pantofi corespund opțiunii dorite de mărime și culoare.",
+            "Compară construcția vizibilă și piesele incluse cu evidența comenzii.",
+            "Rezolvă o neconcordanță vizibilă înainte să aprobi transportul internațional."
+          ]
+        },
+        {
+          "heading": "Calculează costul complet al perechii",
+          "paragraphs": [
+            "Păstrează prețul articolului separat de livrarea internă, transportul internațional și serviciile selectate. Catalogul afișează sume în USD pentru descoperirea produselor, iar paginile actuale de comandă și plată stabilesc cât ți se facturează. Cursul valutar, opțiunile alese sau modificările vânzătorului pot afecta suma finală. Salvează detaliile ofertei actuale în loc să presupui că un card văzut anterior reprezintă bugetul complet.",
+            "Doar ca exemplu de calcul, o pereche ipotetică de 18 $, cu livrare internă de 3 $ și transport internațional alocat de 14 $, ajunge deja la 35 $. Aceste cifre nu sunt taxe LoveGoBuy observate sau o ofertă pentru o destinație. Scopul este să arate de ce compararea a două perechi doar după preț poate induce în eroare când greutățile sau dimensiunile ambalate diferă."
+          ]
+        },
+        {
+          "heading": "Compară transportul cu și fără cutie",
+          "paragraphs": [
+            "Dacă serviciul de ambalare disponibil permite acest lucru, întreabă cum păstrarea sau eliminarea cutiei ar schimba dimensiunile ambalate, protecția și eligibilitatea pentru rută. Eliminarea cutiei nu garantează un preț mai mic. O rută care taxează greutatea reală poate funcționa diferit față de una care compară greutatea reală și volumetrică, iar coletul poate rămâne în aceeași tranșă tarifară.",
+            "Folosește exact divizorul și regulile de rotunjire ale rutei alese. Ca ilustrare, un colet de 35 × 25 × 15 cm are volumul de 13 125 centimetri cubi. Împărțirea la 6 000 dă aproximativ 2,19 kg; împărțirea la 8 000 dă aproximativ 1,64 kg. Sunt exemple matematice alternative, nu două reguli interschimbabile pentru aceeași rută. Compară-le cu greutatea reală numai conform instrucțiunilor rutei selectate."
+          ],
+          "table": {
+            "columns": [
+              "Alegerea ambalajului",
+              "Informații de solicitat"
+            ],
+            "rows": [
+              [
+                "Păstrarea cutiei de pantofi",
+                "Dimensiuni exterioare ambalate, protecție și ofertă completă"
+              ],
+              [
+                "Eliminarea cutiei, dacă este oferită",
+                "Protecție alternativă, dimensiuni noi și ofertă completă"
+              ],
+              [
+                "Combinarea cu alte articole",
+                "Greutatea întregului colet, restricții și rute disponibile"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Rezolvă problemele cât timp perechea este încă în depozit",
+          "paragraphs": [
+            "Dacă observi o opțiune greșită sau deteriorări vizibile, păstrează numărul comenzii, detaliile relevante ale anunțului și imaginile care arată problema. Explică diferența într-o cerere scurtă și factuală. Întreabă ce opțiuni de retur sau schimb sunt disponibile în prezent pentru comanda respectivă. Contează condițiile vânzătorului și etapa comenzii; acest ghid nu promite că fiecare articol poate fi returnat.",
+            "Nu expedia perechea internațional cât timp o întrebare importantă despre potrivire sau stare rămâne fără răspuns. Odată ce articolul face parte dintr-un colet expediat, opțiunile practice se pot schimba. Păstrează discuția în canalul oficial de asistență și răspunsul în evidența comparației. O descriere clară și fotografii specifice sunt mai utile decât trimiterea repetată a aceleiași reclamații vagi."
+          ]
+        },
+        {
+          "heading": "Întrebări de rezolvat înainte de expediere",
+          "paragraphs": [
+            "Există o conversie universală a mărimilor de încălțăminte LoveGoBuy? Folosește tabelul și metoda de măsurare ale vânzătorului pentru anunțul ales, nu o conversie universală. Fotografiile catalogului sunt fotografii QC? Nu: imaginile de produs și fotografiile din depozit ale comenzii tale au roluri diferite. Poate o pereche sub 20 $ să ajungă cu un total sub 20 $? Prețul afișat singur nu răspunde la această întrebare.",
+            "Eliminarea cutiei economisește întotdeauna bani? Nu. Compară opțiunile reale de ambalare și oferta rutei, inclusiv nivelul de protecție necesar. Lista finală este simplă: confirmă perechea, înțelege dovezile mărimii, examinează fotografiile relevante, rezolvă neconcordanțele și compară planul complet de transport. Apoi folosește ghidul de urmărire după ce coletul internațional a fost efectiv expediat."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Păstrează împreună adresa sursă exactă, mărimea și culoarea.",
+        "Eticheta mărimii, măsurătoarea și aprecierea potrivirii sunt dovezi diferite.",
+        "Compară oferta completă de ambalare și transport înainte să aprobi expedierea."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "LoveGoBuy fără rute de transport disponibile: ce să verifici",
+      "description": "Nu apar rute de transport LoveGoBuy? Verifică destinația, greutatea, dimensiunile coletului și restricțiile articolelor, apoi compară ambalarea acceptată.",
+      "category": "Depanarea transportului",
+      "keyword": "lovegobuy fără rute de transport disponibile",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Dacă LoveGoBuy nu afișează rute de transport, verifică mai întâi destinația, unitatea de greutate, dimensiunile exterioare ale coletului și categoriile de articole introduse. Calculatorul oficial explică faptul că limitele de mărime sau greutate pot elimina opțiunile disponibile. Un articol restricționat, o destinație neacceptată sau o schimbare temporară a rutei pot necesita și ele clarificări de la asistență.",
+        "Nu modifica informațiile adevărate despre articole doar pentru a face să apară o rută. Următorul pas util este identificarea datelor sau condiției de eligibilitate care produce rezultatul gol, apoi compararea opțiunilor legitime de ambalare ori împărțire. Acest ghid este o listă de diagnosticare, nu o promisiune că orice colet poate fi expediat la orice adresă."
+      ],
+      "sections": [
+        {
+          "heading": "Verifică dacă estimezi sau trimiți un colet spre expediere",
+          "paragraphs": [
+            "O estimare făcută înainte de ambalarea în depozit folosește informațiile furnizate de tine. Un colet pregătit pentru trimitere poate folosi măsurile și informațiile despre articole din depozit. Sunt niveluri diferite de dovezi. Notează ecranul pe care apare rezultatul gol, destinația selectată și dacă dimensiunile sunt estimări sau date măsurate după ambalare. Contextul te ajută să nu investighezi etapa greșită.",
+            "Dacă o estimare anterioară arăta o rută, dar coletul finalizat nu, compară datele înainte să presupui o eroare de sistem. Ambalajul poate modifica dimensiunile exterioare, greutatea finală poate intra în altă tranșă, iar coletul poate include un articol cu condiții de transport diferite de restul. Opțiunile actuale ale coletului complet au prioritate față de un exemplu preliminar."
+          ]
+        },
+        {
+          "heading": "Verifică destinația și unitățile",
+          "paragraphs": [
+            "Verifică țara sau regiunea de destinație și orice detalii de adresă cerute de formular. Dacă ruta are restricții teritoriale, întreabă asistența dacă se aplică adresei tale. Nu înlocui destinația cu altă țară pentru a obține o ofertă liniștitoare. Estimarea este utilă numai când descrie transportul pe care intenționezi efectiv să îl faci.",
+            "Citește apoi unitățile de lângă fiecare câmp. Introducerea a 2 000 de kilograme în loc de 2 000 de grame poate produce un rezultat fără sens. Aceeași problemă apare când introduci milimetri într-un câmp pentru centimetri. Reintrodu măsurile reale în unitățile afișate și păstrează o captură a datelor corectate dacă lista rutelor rămâne goală."
+          ],
+          "table": {
+            "columns": [
+              "Date introduse",
+              "Verificare utilă"
+            ],
+            "rows": [
+              [
+                "Destinație",
+                "Țara sau regiunea reală și detaliile de adresă necesare"
+              ],
+              [
+                "Greutate",
+                "Valoarea corespunde unității afișate în formular"
+              ],
+              [
+                "Dimensiuni",
+                "Lungimea, lățimea și înălțimea exterioare ambalate în unitățile indicate"
+              ],
+              [
+                "Categoria articolului",
+                "O descriere exactă a tuturor articolelor din colet"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Verifică separat greutatea reală și limitele dimensionale",
+          "paragraphs": [
+            "Un colet poate respecta limita de greutate și totuși poate depăși limitele dimensionale ale rutei. Consultă condițiile pentru latura cea mai lungă, celelalte reguli dimensionale și intervalul de greutate permis. Explicația calculatorului menționează restricții pentru colete prea grele și supradimensionate, dar nu există o singură limită aplicabilă tuturor rutelor. Citește condițiile destinației și ale serviciului disponibil.",
+            "Greutatea volumetrică este un calcul separat folosit de unele rute pentru stabilirea greutății taxabile. Doar ca exemplu, 40 × 30 × 20 cm înseamnă 24 000 de centimetri cubi. Un divizor de 6 000 produce 4 kg; unul de 8 000 produce 3 kg. Niciun divizor nu trebuie presupus universal. Folosește regula declarată a rutei și distinge calculul greutății taxabile de limitele dimensionale de eligibilitate."
+          ]
+        },
+        {
+          "heading": "Examinează articolele care pot restricționa coletul",
+          "paragraphs": [
+            "Verifică condițiile de transport pentru fiecare articol dintr-un colet combinat, mai ales când un articol conține baterie, lichid, pulbere, componentă magnetică sau altă caracteristică pe care transportatorul o poate restricționa. Aceasta este o listă de întrebări de investigat, nu afirmația că LoveGoBuy interzice toate articolele din aceste categorii. Serviciul aplicabil și destinația stabilesc ce este permis.",
+            "Cere asistenței să identifice caracteristica exactă a articolului și condiția rutei care împiedică expedierea. Păstrează descrierea produsului corectă și nu ascunde un articol sau alege o categorie fără legătură pentru a ocoli o restricție. Dacă un articol nu este eligibil pentru serviciile disponibile, întreabă ce opțiuni legitime rămân înainte să plătești ambalare suplimentară sau să presupui o soluție alternativă."
+          ]
+        },
+        {
+          "heading": "Compară opțiunile acceptate de reambalare sau împărțire",
+          "paragraphs": [
+            "Calculatorul LoveGoBuy explică faptul că împărțirea unei expedieri prea grele sau prea mari poate fi o opțiune și menționează servicii de simulare a ambalării ori de ambalare pentru măsuri mai precise. Disponibilitatea și taxele trebuie verificate pe platforma actuală. Întreabă ce greutate și dimensiuni ambalate ar avea fiecare colet propus, apoi estimează fiecare pentru aceeași destinație reală.",
+            "Compară suma tuturor ofertelor pentru colete și a serviciilor selectate. Două colete mai mici pot costa mai mult, deoarece fiecare poate avea propriul tarif inițial, chiar dacă împărțirea restabilește eligibilitatea rutei. Reambalarea poate schimba protecția și dimensiunile. Păstrează protecția esențială pentru articolele fragile și nu aproba o schimbare până nu înțelegi compromisul și suma completă pe care ai putea să o plătești."
+          ],
+          "table": {
+            "columns": [
+              "Acțiune posibilă",
+              "Ce să compari înainte de aprobare"
+            ],
+            "rows": [
+              [
+                "Corectarea unei erori de introducere",
+                "Unități corecte și destinația reală"
+              ],
+              [
+                "Reambalare, dacă este acceptată",
+                "Dimensiuni noi, materiale de protecție și taxa serviciului"
+              ],
+              [
+                "Împărțire, dacă este acceptată",
+                "Eligibilitatea fiecărui colet și suma ofertelor"
+              ],
+              [
+                "Eliminarea unui articol neeligibil",
+                "Opțiuni de gestionare sau retur disponibile oficial"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Distinge o estimare goală de o problemă a contului",
+          "paragraphs": [
+            "O listă goală de rute nu dovedește singură că ai contul blocat, că plata a eșuat sau că s-a pierdut coletul. Verifică informațiile afișate efectiv pe pagină. Dacă există un mesaj de eroare separat, notează formularea. Reîmprospătarea formularului poate ajuta la o problemă temporară de afișare, dar repetarea ei nu va rezolva o restricție reală de greutate, dimensiuni sau eligibilitate.",
+            "Dacă lista rutelor s-a schimbat fără modificarea coletului, întreabă dacă serviciile pentru destinație au fost ajustate temporar. Nu copia în planul tău un nume de rută sau o promisiune de livrare dintr-o postare veche de forum. Folosește estimarea oficială actuală și răspunsul platformei și păstrează momentul verificării pentru a putea compara corect schimbările ulterioare."
+          ]
+        },
+        {
+          "heading": "Trimite asistenței o cerere utilă de diagnosticare",
+          "paragraphs": [
+            "Furnizează în privat prin canalul oficial referința comenzii sau coletului, destinația, greutatea și dimensiunile cu unități, tipurile de articole, ecranul exact și textul erorii. Precizează dacă măsurile sunt estimate sau furnizate de depozit. Atașează o captură care arată datele relevante, evitând informațiile personale sau de plată inutile.",
+            "Pune o întrebare concretă: ce valoare introdusă, condiție a articolului sau limită a rutei împiedică apariția unui serviciu și ce modificare acceptată ar face coletul eligibil? Dacă asistența propune împărțirea sau reambalarea, cere măsurile și costurile rezultate înainte să aprobi. Păstrează răspunsul în evidența coletului, pentru a verifica dacă următoarea estimare folosește informațiile convenite."
+          ]
+        },
+        {
+          "heading": "Ce să faci când o rută devine disponibilă",
+          "paragraphs": [
+            "Citește condițiile serviciului înainte să alegi noua opțiune disponibilă. Compară prețul complet, estimarea declarată de livrare, modalitățile de urmărire și restricțiile relevante. O rută vizibilă este o opțiune de evaluat, nu o garanție de sosire într-o anumită zi. Verifică dacă toate articolele și destinația reală sunt în continuare reprezentate corect în trimiterea finală a coletului.",
+            "După expediere, folosește numărul de urmărire al coletului internațional, nu numărul intern al vânzătorului. Dacă încă nu ai o rută eligibilă, nu trimite coletul spre expediere până când asistența oficială explică opțiunile disponibile. Cel mai sigur rezultat util este un răspuns corect despre eligibilitate și cost; schimbarea datelor adevărate până apare un buton nu creează un plan de transport valid."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Verifică mai întâi destinația, unitățile, dimensiunile și informațiile articolelor.",
+        "Consultă limitele fiecărei rute; nu presupune un singur divizor sau o greutate maximă universală.",
+        "Compară costul total și protecția oricărui plan acceptat de împărțire sau reambalare."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

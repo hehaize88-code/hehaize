@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "LoveGoBuy tarnekalkulaatori juhend: kulud ja paki kaal",
-      "description": "Kasuta LoveGoBuy tarnekalkulaatorit õige sihtkoha, kaalu, mõõtude ja kaubakategooriaga. Mõista mahukaalu ja võrdle pakkide hinnanguid.",
+      "title": "LoveGoBuy saatmiskalkulaator: kulu ja arveldatav kaal",
+      "description": "Hinda LoveGoBuy saatmist tegeliku ja mahukaalu, marsruudijagajate ning arvutusnäitega. Erista hinnapakkumist tootehinnast.",
       "category": "Tarne",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy pakub ametlikku kalkulaatorit paki- ja sihtkohasisenditega. See juhend annab sõltumatut nõu nende sisendite ettevalmistamiseks ja tulemuste võrdlemiseks. See ei soovita universaalselt odavaimat tarneviisi ega luba sinu tellimusele tarneaega."
       ],
       "sections": [
+        {
+          "heading": "Arveldatava kaalu arvutusnäide",
+          "paragraphs": [
+            "Oletame, et hüpoteetiline pakitud pakk kaalub 2 kg ja mõõdab 40 × 30 × 20 cm. Selle ruumala on 24 000 kuupsentimeetrit. Kui marsruut määrab jagajaks 6 000, on mahukaal 4 kg. Kui teine marsruut määrab 8 000, on see 3 kg. Need on arvutusnäited, mitte praegused hinnapakkumised ega ühe marsruudi vahetatavad reeglid.",
+            "Kui marsruut arveldab tegelikust ja mahukaalust suurema järgi, oleksid selle näite ümardamata arveldatavad kaalud vastavalt 4 kg ja 3 kg. Järgmisena rakenda selle marsruudi tasusamme, tasusid ja sobivuspiire. Väiksem arvutatud kaal üksi ei tõenda, et marsruut on odavam või saadaval. Kui ühtegi marsruuti ei ilmu, kasuta allolevat veaotsingujuhendit."
+          ],
+          "table": {
+            "columns": [
+              "Näidissisend või reegel",
+              "Tulemus"
+            ],
+            "rows": [
+              [
+                "Tegelik pakitud kaal",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24 000 cm³"
+              ],
+              [
+                "Näidisjagaja 6 000",
+                "4 kg mahukaalu"
+              ],
+              [
+                "Näidisjagaja 8 000",
+                "3 kg mahukaalu"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Kirjelda pakki, mida sa tegelikult kaalud",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Sisesta ametlikku LoveGoBuy saatmiskalkulaatorisse tegelik sihtkoht, pakitud kaal ja välismõõtmed. Järgi valitud marsruudi kaalu-, jagaja- ja ümardamisreegleid. Hinnang pole lõplik tasu enne, kui tegelikud pakiandmed ja valitud teenused on kinnitatud."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "LoveGoBuy jälgimine: jälgi oma pakki ja mõista uuendusi",
-      "description": "Leia õige LoveGoBuy jälgimisnumber, erista tellimusi pakkidest, tõlgenda jälgimise lünki ja koosta kasulik tugipäring.",
+      "title": "LoveGoBuy jälgimine: paki olek ja uuenduste kontroll",
+      "description": "Jälgi LoveGoBuy pakki õige jälgimisnumbriga. Erista müüja tarnet, lao töötlemist ja rahvusvahelise jälgimise pause.",
       "category": "Paki jälgimine",
       "keyword": "lovegobuy jälgimine",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "LoveGoBuy ametlik ostujuhend suunab kliendid saatmise edenemist jälgima lehele „Parcels“. See sõltumatu juhend selgitab, kuidas seal kuvatavat teavet korrastada ja ebaselgeid uuendusi uurida. See ei hangi privaatseid tellimusi, ei asenda vedaja jälgimissüsteemi ega luba tarnekuupäeva. Allolevad olekunäited kirjeldavad üldisi logistikaolukordi, mitte LoveGoBuy kasutajaliidese muutumatut nimetuste loendit."
       ],
       "sections": [
+        {
+          "heading": "Jälgimisuuendust pole: alusta viimasest tegelikust sündmusest",
+          "paragraphs": [
+            "Sobita viide saatmisetapiga enne teise jälgimislehe proovimist. Sama ostuga võivad kaasneda tellimusnumber, riigisisene jälgimisnumber ja rahvusvahelise paki jälgimisnumber. Kasuta rahvusvahelisel etapil pakikirjes näidatud numbrit ning säilita abi küsides viimane kuupäevastatud sündmus.",
+            "Pole universaalset päevade arvu, mille järel iga jälgimispaus tähendab kadumist. Võrdle viimast skanni ja möödunud aega valitud teenuse praeguse prognoosiga. Kui see ületatakse või kirje näitab tegutsemist nõudvat erandit, võta ühendust ametliku toega ning anna paki viide ja täpne olek, selle asemel et eeldada paki konfiskeerimist või kadumist."
+          ],
+          "table": {
+            "columns": [
+              "Täheldatud olek",
+              "Kasulik järgmine kontroll"
+            ],
+            "rows": [
+              [
+                "Müüja saadetis kohale toimetatud",
+                "Kinnita lao vastuvõtt; see võib olla ainult riigisisene etapp"
+              ],
+              [
+                "Silt loodud või andmed saadud",
+                "Kontrolli, kas vedaja on paki vastu võtnud"
+              ],
+              [
+                "Pärast vastuvõttu pole uut skanni",
+                "Võrdle marsruudi prognoosi ja viimast vedaja sündmust"
+              ],
+              [
+                "Tarnekatse või aadressiprobleem",
+                "Järgi viivitamata vedaja ametlikke juhiseid"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Erista tootetellimust, pakiviidet ja jälgimisnumbrit",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Ava rahvusvahelise paki kirje ning kopeeri selle jälgimisnumber ja vedaja. Müüja riigisisene jälgimisnumber jälgib eset lattu, mitte sinu koju. Silt või pakinumber ilma vedaja vastuvõtuskannita ei kinnita iseenesest rahvusvahelise veo algust."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "LoveGoBuy tarneaeg: müüja teelesaatmisest kättetoimetamiseni",
-      "description": "Mõista LoveGoBuy tarneaja etappe, võrdle praegusi tarneviiside hinnanguid ning planeeri lao, pakkimise ja vedajale üleandmise järgi.",
+      "title": "Kui kaua võtab LoveGoBuy saatmine? Etapid ja viivitused",
+      "description": "Mõista LoveGoBuy tarneaega müüja lähetusest lao töötlemise ja lõpliku kohaletoimetamiseni. Kontrolli õiget etappi enne viivituse uurimist.",
       "category": "Tarneaeg",
       "keyword": "lovegobuy tarneaeg",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "LoveGoBuy ametlik juhend kirjeldab ostmist ja paki saatmist järjestikuste otsustena. Selle kalkulaator võimaldab uurida teenuseid sihtkoha ja pakiandmete alusel. See artikkel muudab töövoo planeerimismeetodiks. See ei avalda kindlaid tarnelubadusi, ei väida, et üks tarneviis on alati kiireim, ega muuda teise kliendi kogemust sinu tellimuse hinnanguks."
       ],
       "sections": [
+        {
+          "heading": "Milline saatmisetapp tegelikult viibib?",
+          "paragraphs": [
+            "Kontrolli viimast lõpetatud sündmust enne otsustamist, kellega ühendust võtta. Kui müüja pole lähetanud, ei saa rahvusvaheline vedaja eset jälitada. Kui ese on laos, kuid pakki pole esitatud, pole rahvusvahelise tarneprognoosi aeg alanud. Pärast lähetust võrdle jälgimisajalugu valitud teenuse praeguse märgitud prognoosiga.",
+            "Lihtne ajajoon aitab segadust vältida: salvesta eraldi kuupäevadena toote maksmine, müüja lähetus, lattu saabumine, paki esitamine, vedaja vastuvõtt ja kohaletoimetamine. Jäta puuduvad kuupäevad tühjaks. Küsi konkreetse lõpetamata etapi kohta ja lisa ametlikus tugikanalis asjakohane tellimuse või paki viide."
+          ],
+          "table": {
+            "columns": [
+              "Viimane kinnitatud etapp",
+              "Mida järgmisena kontrollida"
+            ],
+            "rows": [
+              [
+                "Toote eest makstud; müüja pole lähetanud",
+                "Müüja töötlemine ja tellimuse tugi"
+              ],
+              [
+                "Lattu saabumine",
+                "Ülevaatus, ootel otsused ja paki esitamine"
+              ],
+              [
+                "Pakk esitatud; vedaja pole vastu võtnud",
+                "Töötlemine ja üleandmise kinnitus"
+              ],
+              [
+                "Vedaja võttis paki vastu",
+                "Rahvusvaheline jälgimine ja sihtkoha tarneuuendused"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Määra hinnangu algus ja lõpp",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Kõigi LoveGoBuy tellimuste jaoks pole üht tarneaega. Müüja lähetus, riigisisene vedu, lao töötlemine, rahvusvaheline transport ja lõplik kohaletoimetamine on eraldi etapid. Kasuta valitud marsruudi praegust hinnangut; ära arvesta seda päevast, mil toote eest esimest korda maksid."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "LoveGoBuy leiud alla 20 dollari: rõivad ja aksessuaarid",
+      "description": "Sirvi LoveGoBuy leide alla 20 dollari: kuupäevaga hinnanäited, rõiva- ja aksessuaarilingid, suuruse kontroll ning selge eelarve enne saatmist.",
+      "category": "Soodsad leiud",
+      "keyword": "lovegobuy leiud alla 20 dollari",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Alusta hinna järgi järjestatud rõiva- ja aksessuaarikategooriatest ning kinnita seejärel tellimislehel valitud variandi hind. „Alla 20 dollari” tähendab siin kuvatavat tootehinda USA dollarites, mitte hinda koos kohaletoimetamisega. Rahvusvaheline saatmine, riigisisene kohaletoimetamine, lisateenused ja muud kohaldatavad tasud võivad lõppsumma sellest suuremaks muuta.",
+        "Allolevad näited olid meie kataloogis nähtavad 9. novembril 2026. Need on võrdlemise lähtekohad, mitte katsetatud toodete soovitused ega laoseisu lubadused. Ostukäik põhineb LoveGoBuy ametlikul juhendil; eelarvemeetod ja valikukontroll on meie toimetuse nõuanded."
+      ],
+      "sections": [
+        {
+          "heading": "Kolm hinnanäidet esialgse valiku loomiseks",
+          "paragraphs": [
+            "Kataloogis oli kaubamärgita kaelakee hinnaga 0,97 dollarit, kaubamärgita päikeseprillide pakkumine hinnaga 1,11 dollarit ja lühikeste varrukatega särk hinnaga 9,58 dollarit. Praeguse teabe kontrollimiseks ava lingitud tootelehed. Allikas liigitab kaks esimest peakatete alla; kategooriasse paigutamine ei muuda pakkumise tegelikku sisu.",
+            "Need vaatlused kinnitavad ainult seda, et nimetatud kuupäeval kuvati selliseid tootenimesid ja hindu. Need ei kinnita materjale, ehtsust, kaitseomadusi, variantide saadavust ega kvaliteeti. Eelkõige ära eelda, et päikeseprillid tagavad väidetud UV-kaitse ilma usaldusväärsete tõenditeta. Müüja kirjeldav väljend, näiteks „kõrge kvaliteet”, on väide, mida tuleb uurida."
+          ],
+          "table": {
+            "columns": [
+              "Kataloogi näide",
+              "Kuvatud tootehind 9. novembril 2026",
+              "Kontrolli enne tellimist"
+            ],
+            "rows": [
+              [
+                "Kaubamärgita kaelakee · 88",
+                "$0.97",
+                "Mõõtmed, materjal ja valitud variant"
+              ],
+              [
+                "Kaubamärgita päikeseprillid · 99",
+                "$1.11",
+                "Raami mõõtmed ja kaitseväited"
+              ],
+              [
+                "Lühikeste varrukatega särk · 3287",
+                "$9.58",
+                "Rõiva mõõtmed, kangas ja värv"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Vaata kaelakee pakkumist",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Vaata päikeseprillide pakkumist",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Vaata lühikeste varrukatega särgi pakkumist",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Otsi sobivast kategooriast",
+          "paragraphs": [
+            "Vali esmalt toote liik: T-särgid, aksessuaarid, peakatted või püksid ja lühikesed püksid. Kogu kataloogi hinna järgi järjestamine võib esile tuua väikesi osi, varutarvikuid või variante, mida ei saa võrrelda tervikliku rõivaesemega. Odav pakkumine on kasulik ainult siis, kui see vastab kavandatud ostule. Kitsenda kategooriat enne hinna atraktiivsuse hindamist.",
+            "Kasuta lihtsat toodet kirjeldavat otsinguterminit ja ava mõned kandidaadid, selle asemel et koguda kümneid sarnaseid linke. Salvesta tootelehe URL koos soovitud variandiga. Kui kaardil kuvatud hind erineb valitud variandi hinnast, kasuta võrdluses viimast. Kontrolli, kas kuvatav summa käib ühe eseme, paari, komplekti või miinimumkoguse kohta."
+          ],
+          "links": [
+            {
+              "label": "Sirvi T-särke hinna järgi",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Sirvi aksessuaare hinna järgi",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Sirvi peakatteid hinna järgi",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Määra toote- ja tarneeelarve",
+          "paragraphs": [
+            "Pane enne millegi tellimusse lisamist paika kaks piiri: tootehinna ülempiir ning suurim summa, mida oled nõus koos tarnega maksma. Need vastavad erinevatele küsimustele. 18-dollariline ese mahub 20-dollarilisse tootepiiri, kuid võib olla halb valik, kui saatmine kulutab kogu ülejäänud eelarve. Praeguseid tasusid kontrolli LoveGoBuy ametlikust tasuteabest ja kalkulaatorist.",
+            "Ainult arvutusnäiteks oletame, et toode maksab 12 dollarit, riigisisene tarne 2 dollarit ja sellele määratud rahvusvahelise tarne osa 9 dollarit. Vahesumma on juba 23 dollarit enne muid kohaldatavaid tasusid. Need arvud on meetodi selgitamiseks välja mõeldud, mitte saatmispakkumine. Hoia ebakindlad summad eraldi, selle asemel et sisestada märkamatult null."
+          ]
+        },
+        {
+          "heading": "Võrdle sobivust ja materjale enne hinda",
+          "paragraphs": [
+            "T-särgi puhul võrdle rinna laiust, kere pikkust, õlgade laiust ja varruka pikkust rõivaga, mis sulle sobib. Kasuta müüja mõõtmismeetodit ja küsi puuduvate mõõtude kohta. Suurustähed üksi on nõrk võrdlusalus, sest tabelid võivad müüjate ja lõigete vahel erineda. Madal hind ei korva rõivast, mida sa ei saa mugavalt kanda.",
+            "Aksessuaari puhul märgi üles kasutust määravad mõõtmed ja omadused: kaelakee pikkus, raami laius, kinnituse tüüp või ühilduvus teise esemega. Erista pildil nähtavat välimust kinnitatud materjaliväitest. Kui tähtis spetsifikatsioon puudub, jäta kandidaat ootele. Mitme ebakindla variandi ostmine ühe sobiva leidmiseks võib maksta rohkem kui ühe hästi dokumenteeritud variandi valimine."
+          ]
+        },
+        {
+          "heading": "Arvesta kaalu ja pakendit koos",
+          "paragraphs": [
+            "Väike ese võib ikkagi tarbetuid tarnekulusid lisada, kui selle pakend suurendab paki välismõõtmeid. Tihe ese võib aga lisada tegelikku kaalu ilma palju ruumi võtmata. LoveGoBuy saatmiskalkulaator kasutab valitud marsruudi tingimusi; mõni marsruut võrdleb tegelikku ja mahukaalu. Küsi pakitud mõõtmeid, kui need on saadaval, ning võrdle sinu sihtkohta toetavaid võimalusi.",
+            "Ära lisa tarbetuid esemeid pelgalt selleks, et saatmiskulu suurema tellimuse peale jagada. Koondamine võib olla mugav, kuid teine kaaluvahemik, mõõdupiir või tootepiirang võib muuta saadaolevaid marsruute. Võrdle terviklikke pakiplaane sama sihtkoha ja kaitsevajadusega. Säilita kaitsepakend, kui selle eemaldamine tekitaks kahjustusriski, mida sa ei taha võtta."
+          ]
+        },
+        {
+          "heading": "Kasuta fotosid konkreetsete küsimuste lahendamiseks",
+          "paragraphs": [
+            "Kataloogipildid on tootefotod, mitte automaatselt sinu tellimuse lao kvaliteedikontrolli ehk QC-fotod. Kui toode jõuab lattu, vaata selle tellimusega seotud pilte ja võrdle neid valitud variandiga. Kontrolli nähtavat värvi, kaasasolevaid osi, silte, ilmseid defekte ja küsitud mõõtmeid. Pane lahknevused selgelt kirja enne saatmise otsust.",
+            "Kasulik lisafoto taotlus nimetab ühe vaadeldava asja: näita kaelakee kinnitust, mõõda rõiva rinna laiust või näita aksessuaari mõlemat külge. Fotod ei saa tõendada kõiki materjali- või toimivusväiteid. Kui mure vajab teavet, mida foto ei anna, küsi otse müüjalt või kasutajatoelt. Tutvu tagastustingimustega seni, kuni tegutsemiseks on veel võimalus."
+          ]
+        },
+        {
+          "heading": "Pea lühikest võrdlusarvestust",
+          "paragraphs": [
+            "Salvesta iga kandidaadi toote-URL, valitud variant, praegune hind, mõõtmistõendid, eeldatav pakend ja vastuseta küsimused. Lisa otsus, näiteks uurida, tellimiseks valmis või eemaldada. Nii on lihtsam näha, et odavaimal variandil puudub endiselt mõõt, samas kui pisut kallim juba vastab sinu nõuetele.",
+            "Kontrolli lõplikku tellimislehte uuesti vahetult enne maksmist. Kinnita algne toode, kogus ja variant, mitte ära toetu vanale kuvatõmmisele. Kui toode kadus või hind muutus, mine tagasi kategooriasse ja korda võrdlust; ära asenda eset lihtsalt tuttava pildi tõttu. Salvestatud link on viide, mitte broneering. Hoia kontrollimise kuupäev hinna kõrval, et vana vaatlust ei peetaks kunagi praeguseks pakkumiseks."
+          ],
+          "table": {
+            "columns": [
+              "Võrdlusväli",
+              "Miks see loeb"
+            ],
+            "rows": [
+              [
+                "Täpne variant ja kogus",
+                "Väldib üksikeseme võrdlemist komplektiga"
+              ],
+              [
+                "Mõõtmed ja materjalid",
+                "Seob pakkumise sinu tegelike vajadustega"
+              ],
+              [
+                "Tootehind koos tarnevaruga",
+                "Näitab, kas kogueelarve on realistlik"
+              ],
+              [
+                "Vastuseta küsimus ja järgmine tegevus",
+                "Hoiab puuduvad tõendid nähtaval"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Korduvad küsimused soodsate leidude kohta",
+          "paragraphs": [
+            "Kas alla 20 dollari pakkumine sisaldab tarnet? Ei: see juhend kasutab kuvatavat tootehinda. Kontrolli eraldi riigisisest tarnet, rahvusvahelist saatmist, lisateenuseid ja muid kohaldatavaid tasusid. Kas kataloogihind võib muutuda? Jah. Käsitle kuupäevaga näiteid vaatlustena ja kontrolli valitud varianti praegusel tellimislehel.",
+            "Kas näidete kvaliteeti on katsetatud? Ei. Me pole neid tooteid testinud ning nende lisamine ei ole ehtsustõend. Kas peaks tellima odavaima tulemuse? Ainult siis, kui toode, mõõtmed ja kogukulu vastavad sinu nõuetele. Alusta ühest selgest kasutusvajadusest, hoia valik väike ning lahenda ülejäänud küsimused lingitud suuruse-, QC- ja kulujuhenditega."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Alla 20 dollari tähendab tootehinda, mitte kogusummat koos tarnega.",
+        "Kontrolli enne maksmist praegust varianti, mõõtmeid ja kogust.",
+        "Kasuta tegeliku tellimuse QC-fotosid ning säilita allikalink."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "LoveGoBuy jalatsitabel: suurused, hinnad ja QC-kontroll",
+      "description": "Võrdle LoveGoBuy jalatsitabelis pakkumisi, jalatsite mõõtmeid, valitud hindu, QC-fotosid ja pakendit enne saatmist.",
+      "category": "Jalatsid",
+      "keyword": "lovegobuy jalatsitabel",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Kasuta jalatsikategooriat esialgse valikuna ning võrdle seejärel iga pakkumise täpset suurust, valitud hinda ja olemasolevaid mõõtmeid. Tuttav suurusenumber või tootefoto ei ole sobivuse kinnitamiseks piisav. Enne rahvusvahelist saatmist vaata üle oma paari laofotod ja kontrolli, kuidas pakend mõjutab paki hinnapakkumist.",
+        "See juhend ühendab jalatsikataloogi praktilise võrdlusprotsessiga. See ei hinda testimata jalatseid, tõenda ehtsust ega luba kindlat saatmishinda. LoveGoBuy ametlik ostujuhend ja saatmiskalkulaator selgitavad platvormi töövoogu; allolev sobivus- ja ülevaatusnimekiri on sõltumatu toimetuslik juhis."
+      ],
+      "sections": [
+        {
+          "heading": "Ava jalatsikataloog selge eesmärgiga",
+          "paragraphs": [
+            "Alusta jalatsikategooriast ja otsusta, milleks paari vajad. Igapäevane kõndimine, harv kandmine ning konkreetne tegevus võivad vajada erinevaid tõendeid. Pakkumiste pealkirjad aitavad leida kandidaate, kuid ei tõenda mugavust, toimivust ega vastupidavust. Ära käsitle tuttavat kaubamärki pakkumises tõendina, et müüja väited on kontrollitud.",
+            "Kasuta hinnasorti kuvatavate tootesummade võrdlemiseks ja jäta alles kaks või kolm realistlikku kandidaati. Ava iga tooteleht enne salvestamist. Märgi üles pakkumise URL, soovitud värv, suurus ja tegelikult nähtav variandihind. Ära võrdle ühe lehe odavaimat valitavat tarvikut teise lehe täieliku jalatsipaariga."
+          ],
+          "links": [
+            {
+              "label": "Ava LoveGoBuy jalatsitabel",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Võrdle jalatseid kuvatud hinna järgi",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Võrdle mõõtmeid, mitte üksnes suurusesilte",
+          "paragraphs": [
+            "Alusta müüja suurustabelist ja selgita välja, mida iga number mõõdab. Jala pikkus, sisetalla pikkus ja välistalla pikkus on erinevad mõõtmed. Sentimeetrites tabel on kasulik ainult siis, kui mõõtmismeetod on selge. Ära eelda, et ELi number teisendub kõigi müüjate puhul ühtemoodi või et USA tähis kasutab alati sama suurussüsteemi.",
+            "Mõõda mõlemat jalga sama meetodiga ja võrdle suuremat mõõtu tabeliga. Arvesta ka laiuse ja varbaosa kujuga, kui müüja selle teabe annab. Kui pakkumises on ainult suurustähised, küsi enne ostmist selgitust. Laofoto suurusesildist võib kinnitada paaril olevat tähist, kuid ei tõenda, et jalatsid sulle sobivad."
+          ],
+          "table": {
+            "columns": [
+              "Tõend",
+              "Mida see võib näidata",
+              "Mis jääb ebakindlaks"
+            ],
+            "rows": [
+              [
+                "Müüja suurustabel",
+                "Variandi kohta märgitud mõõt",
+                "Kas selle meetod vastab sinu mõõtmisele"
+              ],
+              [
+                "Suurusesildi foto",
+                "Saadud paari suurustähis",
+                "Tegelik sobivus ja kasutatav siseruum"
+              ],
+              [
+                "Küsitud mõõtmine",
+                "Fotol nähtavalt mõõdetud mõõde",
+                "Mugavus ja pikaajaline toimivus"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Pane kirja täpne paar, mida kavatsed osta",
+          "paragraphs": [
+            "Loo iga kandidaadi kohta lühike kirje: allika URL, kauplemiskeskkond, valitud suurus, värv, tootehind ja küsimus müüjale. Kui lehel on eri versioonid, märgi versioon selgelt üles. Sarnased tootepildid võivad esineda mitmes pakkumises, kuid ei tee neid omavahel asendatavaks. Säilita toote identiteet leidmisest kuni tellimuse kinnitamiseni.",
+            "Kontrolli pakendi sisu. Jalatsikarp, lisapaelad või muud tarvikud võivad mõjutada nii saadavat komplekti kui ka paki mõõtmeid. Ära eelda, et reklaamfotol näidatud esemed kuuluvad kaasa. Kui mõni osa mõjutab sinu otsust, kinnita see enne maksmist ja lisa loendisse, mida kontrollid laofotode saabumisel."
+          ]
+        },
+        {
+          "heading": "Vaata üle oma lao QC-fotod",
+          "paragraphs": [
+            "Avalikud fotod võivad näidata teise tellimuse välimust, kuid sinu tellimusele lisatud pildid on asjakohased tõendid paari kohta, mida hakkad saatma. Võrdle mõlemat jalatsit, nähtavaid värve, suurusesilte, õmblusi, tallaääri ja kaasasolevaid osi. Otsi ilmseid erinevusi või kahjustusi. Kasuta alusena tellimuse andmeid, mitte teist sarnase pildiga pakkumist.",
+            "Küsi lisavaadet või mõõtmist ainult siis, kui see lahendab konkreetse ebakindluse. Näiteks palu selget fotot mõlemast suurusesildist või mõõtmist, kus joonlaua asetus on nähtav. Ära nimeta müüjafotosid lao QC-ks ning ära käsitle fotode ülevaatust ehtsuse või vastupidavuse garantiina. Mõnda probleemi ei saa piltidega tuvastada."
+          ],
+          "bullets": [
+            "Kontrolli, et mõlemad jalatsid vastavad soovitud suuruse- ja värvivariandile.",
+            "Võrdle nähtavat konstruktsiooni ja kaasasolevaid osi tellimuskirjega.",
+            "Lahenda nähtav lahknevus enne rahvusvahelise saatmise kinnitamist."
+          ]
+        },
+        {
+          "heading": "Arvuta paari kogukulu",
+          "paragraphs": [
+            "Hoia tootehind eraldi riigisisesest tarnest, rahvusvahelisest saatmisest ja valitud teenustest. Kataloog kuvab leidmiseks summasid USA dollarites, kuid tegeliku tasu määravad praegused tellimis- ja makselehed. Vahetuskursid, valitud variandid või müüja muudatused võivad lõppsummat mõjutada. Salvesta praeguse pakkumise üksikasjad, selle asemel et pidada varem nähtud kaarti kogu eelarveks.",
+            "Ainult arvutusnäiteks maksab oletuslik 18-dollariline paar koos 3-dollarilise riigisisese tarne ja 14-dollarilise sellele omistatud rahvusvahelise saatmisega juba 35 dollarit. Need arvud ei ole vaadeldud LoveGoBuy tasud ega sihtkohapakkumine. Eesmärk on näidata, miks kahe jalatsi võrdlemine ainult tootehinna alusel võib eksitada, kui pakitud kaalud või mõõtmed erinevad."
+          ]
+        },
+        {
+          "heading": "Võrdle saatmist karbiga ja karbita",
+          "paragraphs": [
+            "Kui pakutav pakkimisteenus seda lubab, küsi, kuidas jalatsikarbi säilitamine või eemaldamine muudaks pakitud mõõtmeid, kaitset ja marsruudile sobivust. Karbi eemaldamine ei taga madalamat hinda. Tegeliku kaalu järgi arveldav marsruut võib käituda teisiti kui tegelikku ja mahukaalu võrdlev marsruut ning pakk võib jääda samasse hinnavahemikku.",
+            "Kasuta täpselt valitud marsruudi jagajat ja ümardamisreegleid. Näiteks 35 × 25 × 15 cm paki ruumala on 13 125 kuupsentimeetrit. Jagades 6 000-ga saad umbes 2,19 kg; 8 000-ga jagades umbes 1,64 kg. Need on alternatiivsed matemaatilised näited, mitte ühe marsruudi kaks omavahel vahetatavat reeglit. Võrdle neid tegeliku kaaluga ainult valitud marsruudi juhiste kohaselt."
+          ],
+          "table": {
+            "columns": [
+              "Pakkimisvalik",
+              "Millist teavet küsida"
+            ],
+            "rows": [
+              [
+                "Säilita jalatsikarp",
+                "Pakitud välismõõtmed, kaitse ja täielik hinnapakkumine"
+              ],
+              [
+                "Eemalda jalatsikarp, kui pakutakse",
+                "Asenduskaitse, uued mõõtmed ja täielik hinnapakkumine"
+              ],
+              [
+                "Ühenda teiste esemetega",
+                "Kogu paki kaal, piirangud ja saadaolevad marsruudid"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Lahenda probleemid, kuni paar on veel laos",
+          "paragraphs": [
+            "Kui märkad valet varianti või nähtavat kahjustust, säilita tellimusnumber, asjakohased pakkumise üksikasjad ja probleemi näitavad pildid. Selgita erinevust lühikeses, faktipõhises taotluses. Küsi, millised tagastus- või vahetusvõimalused sellele tellimusele praegu kehtivad. Müüja tingimused ja tellimuse etapp loevad; see juhend ei luba, et iga toote saab tagastada.",
+            "Ära saada paari rahvusvaheliselt, kuni tähtis sobivuse või seisukorra küsimus on vastuseta. Kui ese on juba lähetatud pakis, võivad praktilised võimalused muutuda. Hoia arutelu ametlikus tugikanalis ja säilita vastus koos võrdluskirjega. Selge kirjeldus ja konkreetsed fotod on kasulikumad kui sama ebamäärase kaebuse korduv esitamine."
+          ]
+        },
+        {
+          "heading": "Küsimused, millele enne saatmist vastata",
+          "paragraphs": [
+            "Kas olemas on universaalne LoveGoBuy jalatsisuuruste teisendus? Kasuta universaalse teisenduse asemel valitud pakkumise müüja tabelit ja mõõtmismeetodit. Kas kataloogifotod on QC-fotod? Ei: tootepiltidel ja sinu tellimuse laofotodel on erinev roll. Kas alla 20 dollari paar võib kohale jõuda alla 20 dollari eest? Kuvatav tootehind üksi sellele ei vasta.",
+            "Kas karbi eemaldamine säästab alati raha? Ei. Võrdle tegelikke pakkimisvõimalusi ja marsruudipakkumist, arvestades vajalikku kaitsetaset. Lõplik kontrollnimekiri on lihtne: kinnita paar, mõista suurustõendeid, vaata asjakohaseid fotosid, lahenda lahknevused ja võrdle täielikku saatmisplaani. Kasuta seejärel jälgimisjuhendit, kui rahvusvaheline pakk on päriselt lähetatud."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Hoia täpne allika URL, suurus ja värv koos.",
+        "Suurusesilt, mõõtmine ja sobivushinnang on erinevad tõendid.",
+        "Võrdle täielikku pakkimis- ja saatmispakkumist enne lähetuse kinnitamist."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "LoveGoBuy saatmismarsruute pole saadaval: mida kontrollida",
+      "description": "LoveGoBuy saatmismarsruute pole? Kontrolli sihtkohta, kaalu, paki mõõtmeid ja tootepiiranguid ning võrdle toetatud pakkimisvõimalusi.",
+      "category": "Saatmisprobleemide lahendamine",
+      "keyword": "lovegobuy saatmismarsruute pole saadaval",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Kui LoveGoBuy ei näita saatmismarsruute, kontrolli esmalt sihtkohta, kaaluühikut, paki välismõõtmeid ja sisestatud tootekategooriaid. Ametlik kalkulaator selgitab, et mõõdu- või kaalupiirid võivad saadaolevaid valikuid eemaldada. Piiranguga ese, toetamata sihtkoht või ajutine marsruudimuudatus võib samuti vajada kasutajatoe selgitust.",
+        "Ära muuda tõeseid tooteandmeid ainult selleks, et marsruut ilmuks. Kasulik järgmine samm on leida tühja tulemuse põhjustav sisend või sobivustingimus ning võrrelda lubatud pakkimis- või pakivõimalusi. See juhend on diagnostiline kontrollnimekiri, mitte lubadus, et iga paki saab saata igale aadressile."
+      ],
+      "sections": [
+        {
+          "heading": "Kontrolli, kas teed hinnangut või esitad pakki",
+          "paragraphs": [
+            "Enne laos pakkimist tehtud hinnang kasutab sinu antud teavet. Esitamiseks valmis pakk võib kasutada lao mõõtmisi ja tooteandmeid. Need on erineva kindlusega tõendid. Pane kirja, millisel ekraanil tühja tulemust näidatakse, millise sihtkoha valisid ja kas mõõtmed on hinnangulised või pakkimisel mõõdetud. See kontekst aitab vältida vale etapi veaotsingut.",
+            "Kui varasem hinnang näitas marsruuti, kuid valmis pakk ei näita, võrdle sisendeid enne süsteemivea eeldamist. Pakend võib muuta välismõõtmeid, lõplik kaal võib minna teise vahemikku ning pakis võib olla ese, mille saatmistingimused erinevad ülejäänutest. Valmis paki praegused võimalused on esialgsest näitest määravamad."
+          ]
+        },
+        {
+          "heading": "Kontrolli sihtkohta ja ühikuid",
+          "paragraphs": [
+            "Kontrolli sihtriiki või piirkonda ja vormis nõutud aadressiandmeid. Kui marsruudil on piirkonnapiirangud, küsi toelt, kas need kehtivad sinu aadressile. Ära asenda sihtkohta teise riigiga, et saada rahustav hinnapakkumine. Hinnang on kasulik ainult siis, kui kirjeldab saadetist, mida päriselt kavatsed saata.",
+            "Seejärel loe iga välja kõrval olevaid ühikutähiseid. Kui sisestad 2 000 grammi asemel 2 000 kilogrammi, võid saada mõttetu tulemuse. Sama juhtub, kui sentimeetriväljale sisestatakse millimeetrid. Sisesta tegelikud mõõdud uuesti kuvatavates ühikutes ning salvesta parandatud sisendite kuvatõmmis, kui marsruudiloend jääb tühjaks."
+          ],
+          "table": {
+            "columns": [
+              "Sisend",
+              "Kasulik kontroll"
+            ],
+            "rows": [
+              [
+                "Sihtkoht",
+                "Tegelik riik või piirkond ja nõutud aadressiandmed"
+              ],
+              [
+                "Kaal",
+                "Väärtus vastab vormil näidatud ühikule"
+              ],
+              [
+                "Mõõtmed",
+                "Pakitud väline pikkus, laius ja kõrgus nõutud ühikutes"
+              ],
+              [
+                "Tootekategooria",
+                "Kõigi pakis olevate esemete täpne kirjeldus"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Kontrolli tegelikku kaalu ja mõõdupiire eraldi",
+          "paragraphs": [
+            "Pakk võib vastata kaalupiirile ning siiski ületada marsruudi mõõdupiire. Vaata üle pikima külje tingimused, muud mõõdureeglid ja lubatud kaaluvahemik. Kalkulaatori selgitus mainib ülekaaluliste ja liiga suurte pakkide piiranguid, kuid kõigile marsruutidele ühist piiri pole. Loe sinu sihtkoha ja saadaoleva teenuse tingimusi.",
+            "Mahukaal on eraldi arvutus, mida mõned marsruudid kasutavad arveldatava kaalu määramiseks. Ainult näiteks: 40 × 30 × 20 cm võrdub 24 000 kuupsentimeetriga. Jagaja 6 000 annab 4 kg; jagaja 8 000 annab 3 kg. Kumbagi ei tohi pidada universaalseks. Kasuta marsruudi märgitud reeglit ning erista arveldatava kaalu arvutust mõõtmetele kehtivatest sobivuspiiridest."
+          ]
+        },
+        {
+          "heading": "Vaata üle esemed, mis võivad pakki piirata",
+          "paragraphs": [
+            "Kontrolli koondpaki iga eseme saatmistingimusi, eriti kui esemel on aku, vedelik, pulber, magnetosa või muu omadus, mida vedaja võib piirata. See on uuritavate küsimuste loend, mitte väide, et LoveGoBuy keelab kõik nende kategooriate esemed. Lubatavuse määravad konkreetne teenus ja sihtkoht.",
+            "Palu toel tuvastada konkreetne tooteomadus ja marsruuditingimus, mis saatmist takistab. Hoia tootekirjeldus täpne ning ära peida eset ega vali piirangu vältimiseks asjassepuutumatut kategooriat. Kui ese ei sobi saadaolevatele teenustele, küsi, millised lubatud võimalused alles jäävad, enne lisapakkimise eest maksmist või möödapääsu eeldamist."
+          ]
+        },
+        {
+          "heading": "Võrdle toetatud ümberpakkimist või paki jagamist",
+          "paragraphs": [
+            "LoveGoBuy kalkulaator selgitab, et liiga raske või suure saadetise jagamine võib olla võimalus, ning viitab proovipakkimisele või seotud teenustele täpsemate mõõtude saamiseks. Saadavust ja tasusid tuleb kontrollida praegusel platvormil. Küsi iga pakutava paki pakitud kaalu ja mõõtmeid ning hinda seejärel igaüht sama tegeliku sihtkoha jaoks.",
+            "Võrdle kõigi pakipakkumiste ja valitud teenuste kogusummat. Kaks väiksemat pakki võivad maksta rohkem, sest kummalgi võib olla eraldi algtasu, isegi kui jagamine taastab sobivuse marsruudile. Ümberpakkimine võib muuta nii kaitset kui ka mõõtmeid. Säilita õrnade esemete vajalik kaitse ja ära kinnita muudatust, kuni mõistad kompromissi ning kogu võimalikku makstavat summat."
+          ],
+          "table": {
+            "columns": [
+              "Võimalik tegevus",
+              "Mida enne kinnitamist võrrelda"
+            ],
+            "rows": [
+              [
+                "Paranda sisestusviga",
+                "Täpsed ühikud ja tegelik sihtkoht"
+              ],
+              [
+                "Paki ümber, kui toetatud",
+                "Uued mõõtmed, kaitsematerjalid ja teenustasu"
+              ],
+              [
+                "Jaga pakk, kui toetatud",
+                "Iga paki sobivus ja pakkumiste kogusumma"
+              ],
+              [
+                "Eemalda sobimatu ese",
+                "Ametlikult saadaolevad käsitlus- või tagastusvõimalused"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Erista tühja hinnangut kontoprobleemist",
+          "paragraphs": [
+            "Tühi marsruudiloend ei tõenda iseenesest, et konto on blokeeritud, makse nurjus või pakk on kadunud. Kontrolli lehel tegelikult näidatavat teavet. Kui kuvatakse eraldi veateade, salvesta selle sõnastus. Vormi värskendamine võib aidata ajutise kuvaprobleemi puhul, kuid korduvad värskendused ei lahenda tegelikku kaalu-, mõõdu- või sobivuspiirangut.",
+            "Kui marsruudiloend muutus ilma paki muutmiseta, küsi, kas sihtkoha teenuseid on ajutiselt kohandatud. Ära kopeeri oma plaani marsruudinime ega tarne lubadust vanast foorumipostitusest. Kasuta praegust ametlikku hinnangut ja platvormi vastust ning säilita kontrolli aeg, et hilisemaid muutusi saaks õiglaselt võrrelda."
+          ]
+        },
+        {
+          "heading": "Saada toele kasulik diagnostiline päring",
+          "paragraphs": [
+            "Esita tellimuse või paki viide privaatselt ametlikus tugikanalis koos sihtkoha, kaalu ja mõõtmetega koos ühikutega, tooteliikide, täpse ekraani ning veateate tekstiga. Ütle, kas mõõtmed on hinnangulised või lao antud. Lisa asjakohaseid sisendeid näitav kuvatõmmis, vältides ebavajalikke isiku- või makseandmeid.",
+            "Küsi üks konkreetne küsimus: milline sisestatud väärtus, tootetingimus või marsruudipiir takistab teenuse ilmumist ning milline toetatud muudatus teeks paki sobivaks? Kui tugi soovitab jagamist või ümberpakkimist, küsi enne kinnitamist tekkivaid mõõtmeid ja kulusid. Hoia vastus pakikirje juures, et kontrollida, kas järgmine hinnang kasutab kokkulepitud teavet."
+          ]
+        },
+        {
+          "heading": "Mida teha, kui marsruut muutub saadavaks",
+          "paragraphs": [
+            "Loe teenusetingimused läbi enne uue valiku tegemist. Võrdle täishinda, märgitud tarneprognoosi, jälgimiskorraldust ja asjakohaseid piiranguid. Nähtav marsruut on hinnatav võimalus, mitte kindlal päeval saabumise garantii. Kontrolli lõplikul paki esitamisel, et kõik esemed ja tegelik sihtkoht on endiselt õigesti esitatud.",
+            "Pärast lähetamist kasuta rahvusvahelise paki jälgimisnumbrit, mitte müüja riigisisest numbrit. Kui sobivat marsruuti endiselt pole, jäta pakk esitamata, kuni ametlik tugi selgitab saadaolevaid käsitlusvõimalusi. Kõige turvalisem kasulik tulemus on täpne vastus sobivuse ja kulu kohta; tõeste andmete muutmine nupu ilmumiseni ei loo kehtivat saatmisplaani."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Kontrolli esmalt sihtkohta, ühikuid, mõõtmeid ja tooteandmeid.",
+        "Kontrolli marsruudipõhiseid piire; ära eelda üht jagajat või maksimumkaalu.",
+        "Võrdle iga toetatud jagamis- või ümberpakkimisplaani kogukulu ja kaitset."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

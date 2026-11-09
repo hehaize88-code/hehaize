@@ -27,13 +27,13 @@ for (const lang of langs) {
   const indexDoc = parseHTML(index.html).document;
   assert.equal(
     indexDoc.querySelectorAll(".articles-index .article-card").length,
-    13,
+    16,
   );
   assert.match(
     indexDoc
       .querySelector(".articles-index .article-card a")
       .getAttribute("href"),
-    /lovegobuy-tracking-guide/,
+    /lovegobuy-finds-under-20/,
   );
   for (const article of articles) {
     const path = local(lang, `/articles/${article.slug}/`);
@@ -73,6 +73,7 @@ for (const lang of langs) {
     assert.equal(schema.dateModified, article.dateModified || "2026-10-22");
     const body = doc.querySelector(".article-body");
     for (const text of [
+      ...(article.quickAnswer ? [article.quickAnswer] : []),
       ...article.intro,
       ...article.takeaways,
       ...article.sections.flatMap((s) => [
@@ -80,6 +81,7 @@ for (const lang of langs) {
         ...s.paragraphs,
         ...(s.bullets || []),
         ...(s.table ? s.table.rows.flat() : []),
+        ...(s.links || []).map((link) => link.label),
       ]),
     ]) {
       assert.ok(
@@ -90,6 +92,16 @@ for (const lang of langs) {
     const count = article.sections.filter((s) => s.table).length;
     assert.equal(doc.querySelectorAll(".editorial-table").length, count, path);
     tables += count;
+    const linkedPaths = article.sections.flatMap((s) =>
+      (s.links || []).map((link) => local(lang, link.path)),
+    );
+    assert.deepEqual(
+      [...doc.querySelectorAll(".article-links a")].map((a) =>
+        a.getAttribute("href"),
+      ),
+      linkedPaths,
+      `Missing or wrong-language catalogue links: ${path}`,
+    );
     assert.ok(
       doc.querySelectorAll(".article-grid .article-card").length >= 3,
       `Missing related articles ${path}`,
@@ -119,19 +131,19 @@ assert.match(sitemapResponse.headers.get("content-type"), /application\/xml/);
 const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (m) => m[1],
 );
-assert.equal(locations.length, 408);
-assert.equal(new Set(locations).size, 408);
+assert.equal(locations.length, 480);
+assert.equal(new Set(locations).size, 480);
 for (const lang of langs)
   for (const slug of [
-    "lovegobuy-tracking-guide",
-    "lovegobuy-shipping-time",
-    "lovegobuy-image-search-guide",
+    "lovegobuy-finds-under-20",
+    "lovegobuy-shoes-spreadsheet",
+    "lovegobuy-no-shipping-routes",
   ]) {
     assert.ok(locations.includes(origin + local(lang, `/articles/${slug}/`)));
   }
 assert.equal(
-  (sitemap.match(/<lastmod>2026-10-23<\/lastmod>/g) || []).length,
-  288,
+  (sitemap.match(/<lastmod>2026-11-09<\/lastmod>/g) || []).length,
+  216,
 );
 const preview = await get(
   "/articles/lovegobuy-tracking-guide/",
@@ -154,5 +166,5 @@ assert.equal(
   origin + "/de/articles/lovegobuy-tracking-guide/?test=1",
 );
 console.log(
-  `Passed ${routes} localized article routes, ${tables} translated tables, ${langs.length} article indexes, 408 sitemap URLs, dates, metadata, related links and production/preview isolation.`,
+  `Passed ${routes} localized article routes, ${tables} translated tables, ${langs.length} article indexes, 480 sitemap URLs, dates, metadata, related links and production/preview isolation.`,
 );

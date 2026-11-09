@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "LoveGoBuy szállítási kalkulátor: költségek és csomagtömeg",
-      "description": "A LoveGoBuy szállítási kalkulátorában a megfelelő célállomást, tömeget, méreteket és árukategóriát add meg. Értsd meg a térfogatsúlyt, és hasonlítsd össze a csomagbecsléseket.",
+      "title": "LoveGoBuy szállítási kalkulátor: díj és számlázható súly",
+      "description": "Becsüld meg a LoveGoBuy szállítást tényleges és térfogatsúllyal, útvonalspecifikus osztókkal és számítási példával. Az árajánlatot válaszd el a termékártól.",
       "category": "Szállítás",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "A LoveGoBuy hivatalos kalkulátort biztosít csomag- és célállomásadatok megadásával. Ez az útmutató független tanácsot ad az adatok előkészítéséhez és az eredmények összehasonlításához. Nem ajánl általánosan legolcsóbb útvonalat, és nem ígér kézbesítési időt a rendelésedhez."
       ],
       "sections": [
+        {
+          "heading": "Példa a számlázható súly kiszámítására",
+          "paragraphs": [
+            "Tételezzünk fel egy 2 kg súlyú, 40 × 30 × 20 cm méretű becsomagolt küldeményt. A térfogata 24 000 köbcentiméter. Ha az útvonal 6000-es osztót ír elő, a térfogatsúly 4 kg. Ha egy másik útvonal 8000-et ír elő, 3 kg. Ezek számítási példák, nem aktuális árajánlatok vagy ugyanazon útvonal felcserélhető szabályai.",
+            "Ha egy útvonal a tényleges és térfogatsúly közül a nagyobbat számlázza, a kerekítés előtti számlázható értékek e példában 4 kg és 3 kg lennének. Ezután az adott útvonal saját díjlépcsőit, díjait és jogosultsági korlátait alkalmazd. Az alacsonyabb számított súly önmagában nem bizonyítja, hogy egy útvonal olcsóbb vagy elérhető. Ha egy sem jelenik meg, használd az alábbi hibaelhárítási útmutatót."
+          ],
+          "table": {
+            "columns": [
+              "Példaadat vagy szabály",
+              "Eredmény"
+            ],
+            "rows": [
+              [
+                "Tényleges becsomagolt súly",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24 000 cm³"
+              ],
+              [
+                "Példa: 6000-es osztó",
+                "4 kg térfogatsúly"
+              ],
+              [
+                "Példa: 8000-es osztó",
+                "3 kg térfogatsúly"
+              ]
+            ]
+          }
+        },
         {
           "heading": "A ténylegesen tervezett csomagot írd le",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "A hivatalos LoveGoBuy szállítási kalkulátorba a valós célállomást, a becsomagolt súlyt és a külső méreteket írd. Kövesd a kiválasztott útvonal súly-, osztó- és kerekítési szabályait. A becslés nem végleges díj, amíg a tényleges csomagadatokat és a választott szolgáltatásokat nem erősítették meg."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "LoveGoBuy nyomkövetés: kövesd csomagodat, és értsd meg a frissítéseket",
-      "description": "Találd meg a helyes LoveGoBuy nyomkövetési számot, különítsd el a rendeléseket a csomagoktól, értelmezd a követési szüneteket, és készíts hasznos ügyfélszolgálati megkeresést.",
+      "title": "LoveGoBuy nyomkövetés: csomagállapot és elmaradó frissítések",
+      "description": "A megfelelő számmal kövesd a LoveGoBuy csomagodat. Különítsd el az eladói kézbesítést, a raktári feldolgozást és a nemzetközi követés szüneteit.",
       "category": "Csomagkövetés",
       "keyword": "lovegobuy nyomkövetés",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "A LoveGoBuy hivatalos vásárlási útmutatója a Parcels oldalra irányítja az ügyfeleket a szállítás követéséhez. Ez a független útmutató elmagyarázza, hogyan rendezd az ott megjelenő információkat és vizsgáld ki a nem egyértelmű frissítéseket. Nem kér le magánrendeléseket, nem helyettesíti a fuvarozó nyomkövető rendszerét és nem ígér kézbesítési dátumot. Az alábbi állapotpéldák általános logisztikai helyzeteket írnak le, nem a LoveGoBuy felületcímkéinek rögzített listáját."
       ],
       "sections": [
+        {
+          "heading": "Nincs nyomkövetési frissítés: az utolsó valós eseményből indulj ki",
+          "paragraphs": [
+            "Mielőtt másik nyomkövető webhelyet próbálsz, illeszd az azonosítót a szállítás szakaszához. Ugyanahhoz a vásárláshoz rendelési szám, belföldi követési szám és nemzetközi csomagszám is tartozhat. A nemzetközi szakaszhoz a csomag adatlapján szereplőt használd, és segítségkéréskor őrizd meg az utolsó dátumozott eseményt.",
+            "Nincs univerzális napérték, amely után minden nyomkövetési szünet elveszést jelent. Az utolsó beolvasást és az eltelt időt a kiválasztott szolgáltatás aktuális becslésével hasonlítsd össze. Ha az idő meghaladja azt, vagy a nyilvántartás intézkedést igénylő kivételt mutat, keresd a hivatalos ügyfélszolgálatot a csomagazonosítóval és a pontos állapottal, ahelyett hogy lefoglalást vagy elveszést feltételeznél."
+          ],
+          "table": {
+            "columns": [
+              "Megfigyelt állapot",
+              "Hasznos következő ellenőrzés"
+            ],
+            "rows": [
+              [
+                "Az eladó küldeménye kézbesítve",
+                "Erősítsd meg a raktári átvételt; ez lehet csak a belföldi szakasz"
+              ],
+              [
+                "Címke létrehozva vagy adatok beérkeztek",
+                "Ellenőrizd, megtörtént-e a fuvarozói átvétel"
+              ],
+              [
+                "Átvétel után nincs új beolvasás",
+                "Vesd össze az útvonal becslését és a fuvarozó utolsó eseményét"
+              ],
+              [
+                "Kézbesítési kísérlet vagy címprobléma",
+                "Haladéktalanul kövesd a fuvarozó hivatalos utasításait"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Különítsd el a termékrendelést, a csomagazonosítót és a nyomkövetési számot",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Nyisd meg a nemzetközi csomag adatlapját, és másold ki a nyomkövetési számot és a fuvarozót. Az eladó belföldi nyomkövetési száma a raktárig követi a terméket, nem az otthonodig. A címke vagy csomagszám fuvarozói átvételi beolvasás nélkül önmagában nem igazolja a nemzetközi szállítás kezdetét."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "LoveGoBuy szállítási idő: az eladói feladástól a kézbesítésig",
-      "description": "Értsd meg a LoveGoBuy kézbesítési idejének szakaszait, hasonlítsd össze az aktuális útvonalbecsléseket, és tervezd be a raktári munkát, csomagolást és fuvarozói átadásokat.",
+      "title": "Mennyi ideig tart a LoveGoBuy szállítás? Szakaszok és késések",
+      "description": "Ismerd meg a LoveGoBuy szállítás idejét az eladói feladástól a raktári feldolgozáson át a kézbesítésig. Késés vizsgálata előtt azonosítsd a megfelelő szakaszt.",
       "category": "Szállítási idő",
       "keyword": "lovegobuy szállítási idő",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "A LoveGoBuy hivatalos útmutatója a vásárlást és a csomagküldést egymást követő döntésekként írja le. Kalkulátora a célállomás és a csomagadatok alapján engedi megvizsgálni a szolgáltatásokat. Ez a cikk a folyamatot tervezési módszerré alakítja. Nem közöl rögzített kézbesítési ígéreteket, nem állítja, hogy mindig egy útvonal a leggyorsabb, és nem alakítja más ügyfél tapasztalatát a te rendelésed becslésévé."
       ],
       "sections": [
+        {
+          "heading": "Valójában melyik szállítási szakasz késik?",
+          "paragraphs": [
+            "Mielőtt eldöntöd, kit keresel meg, ellenőrizd a legutóbbi befejezett eseményt. Ha az eladó nem adta fel a terméket, a nemzetközi fuvarozó nem tudja nyomon követni. Ha a termék a raktárban van, de nem adtak fel csomagot, a nemzetközi kézbesítési becslés még nem indult el. Feladás után a nyomkövetési előzményeket a kiválasztott szolgáltatás aktuálisan közölt becslésével hasonlítsd össze.",
+            "Egy egyszerű idővonal megelőzi a zavart: külön dátumként rögzítsd a termék kifizetését, az eladó feladását, a raktári beérkezést, a csomagfeladási igényt, a fuvarozói átvételt és a kézbesítést. A hiányzó dátumokat hagyd üresen. A konkrét befejezetlen szakaszra kérdezz rá, és a hivatalos támogatási csatornán add meg a megfelelő rendelés- vagy csomagazonosítót."
+          ],
+          "table": {
+            "columns": [
+              "Utolsó igazolt szakasz",
+              "Következő ellenőrzés"
+            ],
+            "rows": [
+              [
+                "Termék kifizetve; az eladó nem adta fel",
+                "Eladói feldolgozás és rendelési ügyfélszolgálat"
+              ],
+              [
+                "Raktári beérkezés",
+                "Ellenőrzés, függő döntések és csomagfeladás"
+              ],
+              [
+                "Csomagfeladás igényelve; nincs fuvarozói átvétel",
+                "Feldolgozás és az átadás megerősítése"
+              ],
+              [
+                "A fuvarozó átvette a csomagot",
+                "Nemzetközi nyomkövetés és célországi kézbesítési frissítések"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Határozd meg a becslés kezdetét és végét",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Nincs minden LoveGoBuy rendelésre egységes szállítási idő. Az eladói feladás, a belföldi szállítás, a raktári feldolgozás, a nemzetközi fuvar és a végső kézbesítés külön szakaszok. A kiválasztott útvonal aktuális becslését használd; ne a termék első kifizetésének napjától számold."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "LoveGoBuy találatok 20 USD alatt: ruhák és kiegészítők",
+      "description": "Böngéssz 20 USD alatti LoveGoBuy találatokat dátumozott árpéldákkal, ruha- és kiegészítőlinkekkel, méretellenőrzéssel és szállítás előtti költségtervvel.",
+      "category": "Kedvező árú találatok",
+      "keyword": "lovegobuy találatok 20 alatt",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Kezdd az ár szerint rendezett ruha- és kiegészítőkategóriákkal, majd a rendelési oldalon ellenőrizd a kiválasztott változat árát. A „20 USD alatt” itt a megjelenített, amerikai dollárban kifejezett termékárat jelenti, nem a kézbesítéssel együtt fizetendő összeget. A nemzetközi szállítás, a belföldi kézbesítés, a választható szolgáltatások és az egyéb alkalmazandó díjak e határ fölé emelhetik a végösszeget.",
+        "Az alábbi példák 2026. november 9-én szerepeltek a katalógusunkban. Összehasonlítási kiindulópontok, nem tesztelt ajánlások vagy készletígéretek. A vásárlási folyamat a LoveGoBuy hivatalos útmutatóján alapul; a költségtervezési módszer és a kiválasztási ellenőrzőlista saját szerkesztőségi tanácsunk."
+      ],
+      "sections": [
+        {
+          "heading": "Három árpélda a szűkített lista indításához",
+          "paragraphs": [
+            "A katalógus egy márkajelzés nélküli nyakláncot 0,97 USD, egy márkajelzés nélküli napszemüveget 1,11 USD, egy rövid ujjú pólót pedig 9,58 USD áron mutatott. Az aktuális információkért nyisd meg a hivatkozott termékoldalakat. A forrás az első két terméket a fejfedők közé sorolja; a kategóriabesorolás nem változtatja meg az ajánlat tényleges tartalmát.",
+            "E megfigyelések kizárólag azt igazolják, hogy az adott napon ezek a terméknevek és árak jelentek meg. Nem igazolják az anyagokat, az eredetiséget, a védelmi tulajdonságokat, a változatok elérhetőségét vagy a minőséget. Különösen ne feltételezz meghatározott UV-védelmet egy napszemüvegről megbízható bizonyíték nélkül. Az eladó „kiváló minőség” jellegű megfogalmazása ellenőrzendő állítás."
+          ],
+          "table": {
+            "columns": [
+              "Katalóguspélda",
+              "Megjelenített termékár 2026. november 9-én",
+              "Rendelés előtt ellenőrizendő"
+            ],
+            "rows": [
+              [
+                "Márkajelzés nélküli nyaklánc · 88",
+                "0,97 USD",
+                "Méretek, anyag és kiválasztott változat"
+              ],
+              [
+                "Márkajelzés nélküli napszemüveg · 99",
+                "1,11 USD",
+                "Keretméretek és a védelemre vonatkozó állítások"
+              ],
+              [
+                "Rövid ujjú póló · 3287",
+                "9,58 USD",
+                "Ruhaméretek, anyag és szín"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "A nyaklánc ajánlatának megtekintése",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "A napszemüveg ajánlatának megtekintése",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "A rövid ujjú póló ajánlatának megtekintése",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Keress a megfelelő kategóriában",
+          "paragraphs": [
+            "Először válaszd ki a terméktípust: póló, kiegészítő, fejfedő vagy nadrág és rövidnadrág. A teljes katalógus ár szerinti rendezése apró alkatrészeket, tartalék kiegészítőket és teljes ruhadarabbal nem összevethető változatokat is előrehozhat. Az olcsó ajánlat csak akkor hasznos, ha megfelel annak, amit vásárolni szeretnél. Az ár vonzerejének megítélése előtt szűkítsd a kategóriát.",
+            "Használj egyszerű, a terméket leíró keresőkifejezést, majd nyiss meg néhány jelöltet ahelyett, hogy több tucat hasonló linket gyűjtenél. Az ajánlat címét a tervezett változattal együtt mentsd el. Ha a kártyán szereplő ár és a kiválasztott változat ára eltér, az utóbbit hasonlítsd össze. Ellenőrizd, hogy az összeg egy darabra, párra, készletre vagy minimális rendelési mennyiségre vonatkozik-e."
+          ],
+          "links": [
+            {
+              "label": "Pólók böngészése ár szerint",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Kiegészítők böngészése ár szerint",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Fejfedők böngészése ár szerint",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Határozz meg termék- és szállítási keretet",
+          "paragraphs": [
+            "Mielőtt bármit hozzáadnál a rendeléshez, állíts fel két korlátot: a termékár felső határát és a kézbesítéssel együtt elkölthető maximumot. Ezek különböző kérdésekre válaszolnak. Egy 18 USD értékű termék belefér a 20 USD termékkeretbe, de rossz választás lehet, ha a szállítás felemészti a teljes keret maradékát. Az aktuális díjakat a LoveGoBuy hivatalos díjtájékoztatójában és kalkulátorában ellenőrizd.",
+            "Pusztán számítási példaként tételezzük fel, hogy a termék 12 USD, a belföldi kézbesítés 2 USD, a ráosztott nemzetközi szállítás pedig 9 USD. A részösszeg máris 23 USD, még minden további alkalmazandó díj előtt. Ezek a módszert szemléltető kitalált számok, nem szállítási árajánlat. A bizonytalan összegeket külön tartsd nyilván, ne írj helyettük magyarázat nélkül nullát."
+          ]
+        },
+        {
+          "heading": "Az ár előtt a méretet és az anyagokat hasonlítsd össze",
+          "paragraphs": [
+            "Pólónál a mellbőséget mérő szélességet, a törzshosszt, a vállszélességet és az ujjhosszt hasonlítsd egy jól illeszkedő ruhádhoz. Használd az eladó mérési módszerét, és kérdezz rá a hiányzó méretekre. A betűs méretjelzések önmagukban gyenge összehasonlítási alapok, mert a táblázatok eladónként és szabásonként eltérhetnek. Az alacsony ár nem ellensúlyozza, ha a ruhát nem tudod kényelmesen hordani.",
+            "Kiegészítőnél jegyezd fel a használatot meghatározó adatokat: a nyaklánc hosszát, a keret szélességét, a kapocs típusát vagy a más tárggyal való kompatibilitást. Különítsd el a lefényképezett megjelenést az igazolt anyagállítástól. Ha fontos adat hiányzik, halaszd el a döntést. Több bizonytalan változat megvétele egy megfelelő megtalálásáért többe kerülhet, mint egy jól dokumentált ajánlat kiválasztása."
+          ]
+        },
+        {
+          "heading": "A súlyt és a csomagolást együtt vizsgáld",
+          "paragraphs": [
+            "Egy kis tárgy is okozhat elkerülhető szállítási többletköltséget, ha a csomagolása növeli a küldemény külső méreteit. Egy tömör tárgy viszont kevés helyet foglalva is növelheti a tényleges súlyt. A LoveGoBuy szállítási kalkulátora a kiválasztott útvonal feltételeit alkalmazza; egyes útvonalak a tényleges és a térfogatsúlyt hasonlítják össze. Ha rendelkezésre állnak, kérd el a becsomagolt méreteket, és hasonlítsd össze a célállomásodra elérhető lehetőségeket.",
+            "Ne adj hozzá fölösleges termékeket pusztán azért, hogy nagyobb rendelésre oszd el a szállítást. Az összevonás kényelmes lehet, de más súlysáv, mérethatár vagy termékkorlátozás megváltoztathatja az elérhető útvonalakat. Azonos célállomással és védelmi követelményekkel hasonlítsd össze a teljes csomagterveket. Tartsd meg a védőcsomagolást, ha eltávolítása számodra elfogadhatatlan sérülési kockázatot teremtene."
+          ]
+        },
+        {
+          "heading": "A fotókkal konkrét kérdésekre keress választ",
+          "paragraphs": [
+            "A katalógus képei termékfotók, nem automatikusan a rendelésed raktári minőségellenőrzési képei. Miután a termék beérkezett a raktárba, nézd meg az adott rendeléshez tartozó képeket, és vesd össze őket a kiválasztott változattal. Ellenőrizd a látható színt, a mellékelt alkatrészeket, a címkéket, a feltűnő hibákat és a kért méréseket. Minden eltérést egyértelműen rögzíts a feladásról való döntés előtt.",
+            "A hasznos kiegészítőfotó-kérés egy megfigyelhető kérdést nevez meg: mutassák meg a nyaklánc kapcsát, mérjék meg a ruha mellkasi szélességét, vagy fotózzák le a kiegészítő mindkét oldalát. A fotók nem igazolnak minden anyag- vagy teljesítményállítást. Ha olyan információ kell, amelyet kép nem adhat meg, közvetlenül az eladót vagy az ügyfélszolgálatot kérdezd. A vonatkozó visszaküldési feltételeket addig nézd át, amíg még tudsz lépni."
+          ]
+        },
+        {
+          "heading": "Vezess rövid összehasonlítási nyilvántartást",
+          "paragraphs": [
+            "Minden jelölthöz mentsd el a termék címét, a kiválasztott változatot, az aktuális árat, a méretek bizonyítékát, a várható csomagolást és a nyitott kérdéseket. Adj hozzá döntést, például ellenőrizendő, rendelhető vagy törlendő. Így könnyebben látszik, ha a legolcsóbb lehetőségnél még hiányzik egy méret, miközben egy kissé drágább már megfelel az igényeidnek.",
+            "Közvetlenül fizetés előtt újra ellenőrizd a végleges rendelési oldalt. Régi képernyőkép helyett az eredeti terméket, a mennyiséget és a változatot erősítsd meg. Ha a termék eltűnt vagy megváltozott az ára, térj vissza a kategóriához, és ismételd meg az összehasonlítást; ne helyettesítsd pusztán ismerős kép alapján. Az elmentett link hivatkozás, nem foglalás. Az ár mellé írd az ellenőrzés dátumát, hogy a régi megfigyelést ne lehessen aktuális ajánlatnak nézni."
+          ],
+          "table": {
+            "columns": [
+              "Összehasonlítási adat",
+              "Miért fontos"
+            ],
+            "rows": [
+              [
+                "Pontos változat és mennyiség",
+                "Megelőzi egy darab és egy készlet összehasonlítását"
+              ],
+              [
+                "Méretek és anyagok",
+                "Összekapcsolja az ajánlatot a tényleges igényeiddel"
+              ],
+              [
+                "Termékár és szállítási tartalék",
+                "Megmutatja, hogy reális-e a teljes költségkeret"
+              ],
+              [
+                "Nyitott kérdés és következő lépés",
+                "Láthatóvá teszi a hiányzó bizonyítékokat"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Gyakori kérdések a kedvező árú találatokról",
+          "paragraphs": [
+            "Tartalmazza a kézbesítést egy 20 USD alatti ajánlat? Nem: ez az útmutató a megjelenített termékárat használja. A belföldi kézbesítést, a nemzetközi szállítást, a választható szolgáltatásokat és a többi alkalmazandó díjat külön ellenőrizd. Változhat a katalógus ára? Igen. A dátumozott példákat megfigyelésként kezeld, és a kiválasztott változatot az aktuális rendelési oldalon ellenőrizd.",
+            "Teszteltük a példák minőségét? Nem. Ezeket a termékeket nem teszteltük, és szerepeltetésük nem eredetiségigazolás. A legolcsóbb találatot érdemes megrendelni? Csak akkor, ha a termék, a méretek és a teljes költségkeret megfelelnek az igényeidnek. Indulj egy világos felhasználási célból, tarts rövid jelöltlistát, a fennmaradó kérdéseket pedig a hivatkozott méretezési, minőségellenőrzési és költségútmutatókkal tisztázd."
+          ]
+        }
+      ],
+      "takeaways": [
+        "A 20 USD alatti összeg a termékárra vonatkozik, nem a kézbesítéssel növelt végösszegre.",
+        "Fizetés előtt ellenőrizd az aktuális változatot, méreteket és mennyiséget.",
+        "A saját rendelésed tényleges minőségellenőrzési képeit használd, és őrizd meg az eredeti linket."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "LoveGoBuy cipőtáblázat: méretek, árak és minőségellenőrzés",
+      "description": "A LoveGoBuy cipőtáblázattal hasonlítsd össze az ajánlatokat, cipőméreteket, kiválasztott árakat, ellenőrzési fotókat és csomagolást a feladás előtt.",
+      "category": "Cipők",
+      "keyword": "lovegobuy cipőtáblázat",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "A cipőkategóriából készíts szűkített listát, majd minden ajánlatnál hasonlítsd össze a pontos méretet, a kiválasztott árat és az elérhető méretadatokat. Egy ismerős méretszám vagy termékfotó nem elegendő az illeszkedés megállapításához. Nemzetközi feladás előtt nézd át a saját párod raktári képeit, és ellenőrizd a csomagolás hatását a szállítási árajánlatra.",
+        "Ez az útmutató gyakorlati összehasonlítási folyamathoz kapcsolja a cipőkatalógust. Nem minősít teszteletlen cipőket, nem igazolja az eredetiséget, és nem ígér meghatározott szállítási díjat. A LoveGoBuy hivatalos vásárlási útmutatója és szállítási kalkulátora a platform folyamatát ismerteti; az alábbi méret- és ellenőrzési lista független szerkesztőségi útmutatás."
+      ],
+      "sections": [
+        {
+          "heading": "Világos céllal nyisd meg a cipőkatalógust",
+          "paragraphs": [
+            "Kezdd a cipőkategóriával, és döntsd el, mire kell a pár. A mindennapos séta, az alkalmi viselet és egy konkrét tevékenység eltérő bizonyítékokat igényelhet. Az ajánlatok címei segítenek jelölteket találni, de nem bizonyítják a kényelmet, a teljesítményt vagy a tartósságot. Ne tekints egy ismerős márkanevet az eladó állításai ellenőrzésének bizonyítékaként.",
+            "Ár szerinti rendezéssel hasonlítsd össze a megjelenített összegeket, és tarts meg két-három reális jelöltet. Mentés előtt minden termékoldalt nyiss meg. Rögzítsd az ajánlat címét, a tervezett színt, méretet és a ténylegesen látható változatárat. Az egyik oldalon választható legolcsóbb kiegészítőt ne hasonlítsd a másik oldal teljes cipőpárjához."
+          ],
+          "links": [
+            {
+              "label": "A LoveGoBuy cipőtáblázat megnyitása",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Cipők összehasonlítása megjelenített ár szerint",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "A méretjelölések mellett a mért adatokat is hasonlítsd össze",
+          "paragraphs": [
+            "Kezdd az eladó mérettáblázatával, és állapítsd meg, mit mérnek az egyes számok. A lábhossz, a talpbetét hossza és a külső talphossz különböző méretek. A centiméteres táblázat csak akkor hasznos, ha a mérési módszer világos. Ne feltételezd, hogy egy EU-méretszám minden eladónál ugyanúgy váltható át, vagy hogy az US-jelölés mindig ugyanazt a méretezési rendszert használja.",
+            "Ugyanazzal a módszerrel mérd meg mindkét lábadat, és a nagyobb értéket hasonlítsd a táblázathoz. A szélességet és az orr-rész alakját is vedd figyelembe, ha az eladó közöl ilyen adatot. Ha az ajánlat csak méretjelöléseket ad meg, vásárlás előtt kérj pontosítást. A méretcímke raktári fotója igazolhatja a pár jelölését, de nem bizonyítja, hogy a cipő illeszkedni fog."
+          ],
+          "table": {
+            "columns": [
+              "Bizonyíték",
+              "Mit mondhat el",
+              "Mi marad bizonytalan"
+            ],
+            "rows": [
+              [
+                "Az eladó mérettáblázata",
+                "A változathoz megadott méret",
+                "Egyezik-e a módszere a saját méréseddel"
+              ],
+              [
+                "Méretcímke fényképe",
+                "A beérkezett pár jelölése",
+                "A tényleges illeszkedés és a használható belső tér"
+              ],
+              [
+                "Kért mérés",
+                "A fotón látható, megmért távolság",
+                "Kényelem és hosszú távú teljesítmény"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Írd le pontosan, melyik párt szeretnéd megvenni",
+          "paragraphs": [
+            "Minden jelölthöz készíts rövid feljegyzést: eredeti cím, piactér, kiválasztott méret, szín, termékár és az eladónak szánt kérdések. Ha az oldal több verziót tartalmaz, kifejezetten rögzítsd a választottat. Hasonló termékképek több ajánlatban is szerepelhetnek, ettől az ajánlatok még nem felcserélhetők. A felfedezéstől a rendelés visszaigazolásáig őrizd meg a termék pontos azonosítását.",
+            "Ellenőrizd a csomag tartalmát. A cipősdoboz, a tartalék fűzők vagy más kiegészítők a kapott tárgyakat és a csomagméreteket is befolyásolhatják. Ne feltételezd, hogy a reklámfotón látható minden tárgy jár a termékhez. Ha valamely tartozék fontos a döntésedhez, fizetés előtt erősítsd meg, és írd a raktári fotókon ellenőrizendő listára."
+          ]
+        },
+        {
+          "heading": "Vizsgáld meg a saját raktári ellenőrzési fotóidat",
+          "paragraphs": [
+            "A nyilvános fotók megmutathatják egy másik rendelés kinézetét, de a feladásra váró párod szempontjából a saját rendelésedhez csatolt képek a releváns bizonyítékok. Hasonlítsd össze mindkét cipőt, a látható színeket, méretcímkéket, varrásokat, talpszéleket és tartozékokat. Keress nyilvánvaló eltéréseket vagy sérülést. A rendelési adatokból indulj ki, ne egy hasonló képet használó másik ajánlatból.",
+            "Csak akkor kérj további szöget vagy mérést, ha az konkrét bizonytalanságot old fel. Például kérj jól olvasható képet mindkét méretcímkéről, vagy olyan mérést, amelyen a vonalzó elhelyezése is látszik. Az eladó képeit ne nevezd raktári minőségellenőrzésnek, és a fotók áttekintését ne tekintsd eredetiségi vagy tartóssági garanciának. Néhány kérdés képekből nem dönthető el."
+          ],
+          "bullets": [
+            "Ellenőrizd, hogy mindkét cipő a tervezett méret- és színváltozathoz tartozik-e.",
+            "A látható kialakítást és a tartozékokat vesd össze a rendelési feljegyzéssel.",
+            "A látható eltérést a nemzetközi szállítás jóváhagyása előtt tisztázd."
+          ]
+        },
+        {
+          "heading": "Számítsd ki a pár teljes költségét",
+          "paragraphs": [
+            "A termékárat különítsd el a belföldi kézbesítéstől, a nemzetközi szállítástól és a választott szolgáltatásoktól. A katalógus USD-összegei a keresést segítik, a ténylegesen felszámított összeget viszont az aktuális rendelési és fizetési oldalak határozzák meg. Az árfolyamok, a kiválasztott változatok vagy az eladó módosításai befolyásolhatják a végösszeget. Mentsd el az aktuális árajánlat részleteit, ne feltételezd, hogy egy korábban látott kártya a teljes keretet mutatja.",
+            "Pusztán számítási példaként egy elképzelt, 18 USD értékű pár 3 USD belföldi és 14 USD ráosztott nemzetközi szállítással már 35 USD. Ezek nem megfigyelt LoveGoBuy-díjak és nem célállomásra szóló árajánlatok. A példa azt mutatja, miért lehet félrevezető két cipőt csak termékár alapján összehasonlítani, ha becsomagolt súlyuk vagy méreteik eltérnek."
+          ]
+        },
+        {
+          "heading": "Hasonlítsd össze a dobozos és doboz nélküli szállítást",
+          "paragraphs": [
+            "Ha az elérhető csomagolási szolgáltatás megengedi, kérdezd meg, hogyan változna a becsomagolt méret, a védelem és az útvonalak elérhetősége a cipősdoboz megtartásával vagy eltávolításával. A doboz eltávolítása nem garantál alacsonyabb árat. A tényleges súly szerint számlázó útvonal eltérhet a tényleges és térfogatsúlyt összevetőtől, és a csomag ugyanabban a díjsávban maradhat.",
+            "A konkrét kiválasztott útvonal osztóját és kerekítési szabályait használd. Szemléltetésként egy 35 × 25 × 15 cm méretű csomag térfogata 13 125 köbcentiméter. 6000-rel osztva körülbelül 2,19 kg, 8000-rel osztva körülbelül 1,64 kg adódik. Ezek alternatív matematikai példák, nem ugyanazon útvonal két felcserélhető szabálya. A tényleges súllyal csak a kiválasztott útvonal előírása szerint hasonlítsd össze őket."
+          ],
+          "table": {
+            "columns": [
+              "Csomagolási választás",
+              "Bekérendő információ"
+            ],
+            "rows": [
+              [
+                "A cipősdoboz megtartása",
+                "Becsomagolt külső méretek, védelem és teljes árajánlat"
+              ],
+              [
+                "A cipősdoboz eltávolítása, ha elérhető",
+                "Helyettesítő védelem, új méretek és teljes árajánlat"
+              ],
+              [
+                "Összevonás más termékekkel",
+                "A teljes csomag súlya, korlátozások és elérhető útvonalak"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Még a raktárban oldd meg a pár problémáit",
+          "paragraphs": [
+            "Ha hibás változatot vagy látható sérülést találsz, őrizd meg a rendelésszámot, az ajánlat releváns részleteit és a hibát mutató képeket. Rövid, tényszerű kérésben magyarázd el az eltérést. Kérdezd meg, milyen visszaküldési vagy cserelehetőségek érhetők el jelenleg az adott rendeléshez. Az eladó feltételei és a rendelés állapota számítanak; ez az útmutató nem ígéri minden termék visszaküldhetőségét.",
+            "Ne indítsd nemzetközi útra a párt, amíg egy fontos illeszkedési vagy állapotkérdés megválaszolatlan. Ha a termék már feladott csomag része, a gyakorlati lehetőségek megváltozhatnak. A beszélgetést a hivatalos támogatási csatornán folytasd, és a választ az összehasonlítási feljegyzéssel együtt őrizd meg. A világos leírás és a konkrét fotók hasznosabbak, mint ugyanazon homályos panasz ismételt beküldése."
+          ]
+        },
+        {
+          "heading": "Feladás előtt megválaszolandó kérdések",
+          "paragraphs": [
+            "Létezik univerzális LoveGoBuy cipőméret-átváltás? Univerzális átváltó helyett a kiválasztott ajánlat eladójának táblázatát és mérési módszerét használd. A katalógusfotók minőségellenőrzési képek? Nem: a termékképek és a saját rendelésed raktári fotói eltérő szerepet töltenek be. Megérkezhet egy 20 USD alatti pár összesen 20 USD alatt? A megjelenített termékár önmagában nem válaszolja meg ezt.",
+            "Mindig pénzt takarít meg a doboz eltávolítása? Nem. A tényleges csomagolási lehetőségeket és az útvonal árajánlatát hasonlítsd össze, a szükséges védelmet is beleértve. A végső lista egyszerű: erősítsd meg a párt, értsd meg a méretadatokat, vizsgáld meg a megfelelő fotókat, tisztázd az eltéréseket, és hasonlítsd össze a teljes szállítási tervet. Ha a nemzetközi csomagot ténylegesen feladták, használd a nyomkövetési útmutatót."
+          ]
+        }
+      ],
+      "takeaways": [
+        "A pontos eredeti címet, méretet és színt együtt őrizd meg.",
+        "A méretcímke, a mérés és az illeszkedés megítélése eltérő bizonyítékok.",
+        "Feladás jóváhagyása előtt hasonlítsd össze a csomagolás és szállítás teljes árajánlatát."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "Nincs elérhető LoveGoBuy szállítási útvonal: mit ellenőrizz",
+      "description": "Nincs elérhető LoveGoBuy szállítási útvonal? Ellenőrizd a célállomást, súlyt, csomagméreteket és termékkorlátozásokat, majd a csomagolási lehetőségeket.",
+      "category": "Szállítási hibaelhárítás",
+      "keyword": "lovegobuy nincs elérhető szállítási útvonal",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Ha a LoveGoBuy nem mutat szállítási útvonalat, először a célállomást, a súly mértékegységét, a csomag külső méreteit és a megadott termékkategóriákat ellenőrizd. A hivatalos kalkulátor szerint a méret- vagy súlyhatárok eltávolíthatnak lehetőségeket. Korlátozott termék, nem támogatott célállomás vagy ideiglenes útvonalváltozás miatt is szükség lehet az ügyfélszolgálat magyarázatára.",
+        "Ne változtass valós termékadatokat pusztán azért, hogy megjelenjen egy útvonal. A hasznos következő lépés az üres eredményt okozó adat vagy jogosultsági feltétel azonosítása, majd a megengedett csomagolási vagy csomagfelosztási lehetőségek összehasonlítása. Ez az útmutató diagnosztikai ellenőrzőlista, nem ígéret arra, hogy minden csomag minden címre elküldhető."
+      ],
+      "sections": [
+        {
+          "heading": "Ellenőrizd, hogy becslést készítesz vagy csomagot adsz fel",
+          "paragraphs": [
+            "A raktári csomagolás előtti becslés az általad megadott információkat használja. A feladásra kész csomag raktári méréseket és termékadatokat is alkalmazhat. Ezek különböző szintű bizonyítékok. Jegyezd fel, melyik képernyő ad üres eredményt, milyen célt választottál, és hogy a méretek becslések vagy becsomagolás utáni mérések. Ez segít elkerülni a rossz szakasz vizsgálatát.",
+            "Ha egy korábbi becslés mutatott útvonalat, a kész csomag viszont nem, rendszerhiba feltételezése előtt hasonlítsd össze a bevitt adatokat. A csomagolás megváltoztathatja a külső méreteket, a végleges súly más sávba kerülhet, és lehet a csomagban a többitől eltérő szállítási feltételű termék. A kész csomag aktuális lehetőségei elsőbbséget élveznek az előzetes példával szemben."
+          ]
+        },
+        {
+          "heading": "Ellenőrizd a célállomást és a mértékegységeket",
+          "paragraphs": [
+            "Nézd meg a célországot vagy régiót és az űrlap által kért címadatokat. Ha az útvonal területi korlátozást alkalmaz, kérdezd meg az ügyfélszolgálatot, érinti-e a címedet. Ne cseréld más országra a célállomást megnyugtató árajánlat kedvéért. A becslés csak akkor hasznos, ha a ténylegesen tervezett küldeményt írja le.",
+            "Ezután olvasd el minden mező mértékegységét. A 2000 gramm helyett 2000 kilogrammként bevitt súly értelmetlen eredményt adhat. Ugyanez történhet, ha millimétert írsz a centiméteres mezőbe. A valós méreteket a kijelzett mértékegységben add meg újra, és ha az útvonallista továbbra is üres, őrizz meg képernyőképet a javított adatokról."
+          ],
+          "table": {
+            "columns": [
+              "Bevitt adat",
+              "Hasznos ellenőrzés"
+            ],
+            "rows": [
+              [
+                "Célállomás",
+                "A tényleges ország vagy régió és a kért címadatok"
+              ],
+              [
+                "Súly",
+                "Az érték megfelel az űrlapon jelzett mértékegységnek"
+              ],
+              [
+                "Méretek",
+                "A becsomagolt küldemény külső hossza, szélessége és magassága a megadott egységben"
+              ],
+              [
+                "Termékkategória",
+                "A csomag teljes tartalmának pontos leírása"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Külön ellenőrizd a tényleges súlyt és a mérethatárokat",
+          "paragraphs": [
+            "A csomag megfelelhet a súlyhatárnak, miközben túllépi az útvonal méretkorlátját. Nézd át a leghosszabb oldalra, más méretekre és a megengedett súlytartományra vonatkozó feltételeket. A kalkulátor magyarázata említ túlsúlyos és túlméretes csomagokra vonatkozó korlátozásokat, de nincs minden útvonalra érvényes egyetlen határ. A célállomásodra és az elérhető szolgáltatásra vonatkozó feltételeket olvasd.",
+            "A térfogatsúly külön számítás, amelyet egyes útvonalak a számlázható súly meghatározására használnak. Pusztán példaként a 40 × 30 × 20 cm térfogata 24 000 köbcentiméter. A 6000-es osztó 4 kg-ot, a 8000-es osztó 3 kg-ot eredményez. Egyiket se tekintsd univerzálisnak. Az útvonal megadott szabályát használd, és különítsd el a számlázható súly számítását a szállíthatóság méretkorlátaitól."
+          ]
+        },
+        {
+          "heading": "Nézd át a csomagot korlátozó termékeket",
+          "paragraphs": [
+            "Az összevont csomag minden termékének szállítási feltételeit ellenőrizd, különösen akkumulátor, folyadék, por, mágneses alkatrész vagy a fuvarozó által korlátozható más tulajdonság esetén. Ez vizsgálandó kérdések listája, nem állítás arról, hogy a LoveGoBuy e kategóriák minden termékét tiltja. A megengedhetőséget az adott szolgáltatás és a célállomás határozza meg.",
+            "Kérd meg az ügyfélszolgálatot a feladást akadályozó konkrét terméktulajdonság és útvonalfeltétel azonosítására. Tartsd pontosan a termékleírást, és ne rejts el terméket vagy válassz oda nem illő kategóriát a korlátozás megkerüléséhez. Ha egy terméket az elérhető szolgáltatások nem fogadnak, további csomagolás kifizetése vagy kerülőút feltételezése előtt kérdezz rá a megengedett lehetőségekre."
+          ]
+        },
+        {
+          "heading": "Hasonlítsd össze a támogatott újracsomagolást és felosztást",
+          "paragraphs": [
+            "A LoveGoBuy kalkulátora szerint a túlsúlyos vagy túlméretes küldemény felosztása lehetséges megoldás, és pontosabb mérésekhez próbacsomagolási vagy kapcsolódó szolgáltatásokat említ. Az elérhetőséget és a díjakat az aktuális platformon ellenőrizd. Kérdezd meg minden javasolt csomag becsomagolt súlyát és méreteit, majd mindegyikre ugyanazzal a valós célállomással készíts becslést.",
+            "Az összes csomag árajánlatának és a kiválasztott szolgáltatásoknak az együttes összegét hasonlítsd össze. Két kisebb csomag drágább lehet, mert mindkettőnek lehet saját alapdíja, még ha a felosztás újra elérhetővé is tesz egy útvonalat. Az újracsomagolás a méret mellett a védelmet is módosíthatja. Őrizd meg a törékeny termékek szükséges védelmét, és csak a kompromisszum és a teljes lehetséges fizetendő összeg ismeretében hagyd jóvá a változást."
+          ],
+          "table": {
+            "columns": [
+              "Lehetséges lépés",
+              "Mit hasonlíts össze jóváhagyás előtt"
+            ],
+            "rows": [
+              [
+                "Hibás adat javítása",
+                "Pontos mértékegységek és valós célállomás"
+              ],
+              [
+                "Újracsomagolás, ha támogatott",
+                "Új méretek, védőanyagok és szolgáltatási díj"
+              ],
+              [
+                "Felosztás, ha támogatott",
+                "Minden csomag szállíthatósága és az árajánlatok összege"
+              ],
+              [
+                "Nem szállítható termék eltávolítása",
+                "Hivatalosan elérhető kezelési vagy visszaküldési lehetőségek"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Különítsd el az üres becslést a fiókhibától",
+          "paragraphs": [
+            "Az üres útvonallista önmagában nem bizonyítja, hogy a fiókod letiltották, a fizetés sikertelen vagy a csomag elveszett. A ténylegesen megjelenített információt ellenőrizd. Ha külön hibaüzenet látható, jegyezd fel a szövegét. Az űrlap frissítése segíthet átmeneti megjelenítési hibánál, de az ismételt frissítés nem old fel valós súly-, méret- vagy szállíthatósági korlátozást.",
+            "Ha az útvonallista a csomag változása nélkül módosult, kérdezd meg, történt-e ideiglenes változtatás a célállomás szolgáltatásaiban. Régi fórumbejegyzésből ne emelj át útvonalnevet vagy kézbesítési ígéretet a tervedbe. Az aktuális hivatalos becslést és a platform válaszát használd, és őrizd meg az ellenőrzés időpontját a későbbi változások korrekt összevetéséhez."
+          ]
+        },
+        {
+          "heading": "Küldj hasznos diagnosztikai kérést az ügyfélszolgálatnak",
+          "paragraphs": [
+            "A hivatalos támogatási csatornán privát módon add meg a rendelés- vagy csomagazonosítót, a célállomást, a súlyt és méreteket mértékegységgel, a terméktípusokat, a pontos képernyőt és a hiba szövegét. Jelezd, hogy a méretek becsültek vagy a raktártól származnak. Mellékelj a releváns adatokat mutató képernyőképet, fölösleges személyes vagy fizetési információk nélkül.",
+            "Egy konkrét kérdést tegyél fel: melyik bevitt érték, termékfeltétel vagy útvonalkorlát akadályozza a szolgáltatás megjelenését, és milyen támogatott változás tenné szállíthatóvá a csomagot? Ha a támogatás felosztást vagy újracsomagolást javasol, jóváhagyás előtt kérd el a várható méreteket és költségeket. A választ a csomag adataival együtt őrizd meg, hogy ellenőrizhesd: a következő becslés az egyeztetett adatokat használja."
+          ]
+        },
+        {
+          "heading": "Mit tegyél, ha elérhetővé válik egy útvonal",
+          "paragraphs": [
+            "Az újonnan elérhető lehetőség kiválasztása előtt olvasd el a szolgáltatás feltételeit. Hasonlítsd össze a teljes árat, a közölt kézbesítési becslést, a nyomkövetés módját és a releváns korlátozásokat. A látható útvonal értékelendő lehetőség, nem egy adott napi érkezés garanciája. Ellenőrizd, hogy a végleges csomagfeladás továbbra is helyesen tartalmazza az összes terméket és a valós célállomást.",
+            "Feladás után a nemzetközi csomag nyomkövetési számát használd az eladó belföldi száma helyett. Ha továbbra sincs megfelelő útvonal, ne véglegesítsd a feladást, amíg a hivatalos ügyfélszolgálat el nem magyarázza az elérhető kezelési lehetőségeket. A legbiztonságosabb hasznos eredmény a szállíthatóság és a költség pontos tisztázása; a valós adatok átírása egy gomb megjelenéséig nem hoz létre érvényes szállítási tervet."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Először a célállomást, mértékegységeket, méreteket és termékadatokat ellenőrizd.",
+        "Az adott útvonal korlátait vizsgáld; ne feltételezz egységes osztót vagy maximális súlyt.",
+        "Minden támogatott felosztási vagy újracsomagolási terv teljes költségét és védelmét hasonlítsd össze."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

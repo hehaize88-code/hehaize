@@ -59,6 +59,11 @@
             item_catalog_id: product[2],
           });
         else if (article) send("article_open", { article_slug: article[1] });
+        else if (/\/spreadsheet\//.test(target.pathname))
+          send("catalog_open", {
+            item_category:
+              target.pathname.match(/\/spreadsheet\/([^/]+)\//)?.[1] || "all",
+          });
       }
     } else if (
       target.hostname === "www.lovegobuy.com" ||

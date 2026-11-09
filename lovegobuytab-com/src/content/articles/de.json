@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "LoveGoBuy-Versandkostenrechner: Kosten und Paketgewicht verstehen",
-      "description": "Nutze den LoveGoBuy-Versandkostenrechner mit dem richtigen Ziel, Gewicht, den Abmessungen und der Warenkategorie. Verstehe das Volumengewicht und vergleiche Paketschätzungen.",
+      "title": "LoveGoBuy-Versandrechner: Kosten und abrechenbares Gewicht",
+      "description": "Berechne LoveGoBuy-Versand mit tatsächlichem und Volumengewicht, dienstabhängigen Divisoren und einem Rechenbeispiel. Trenne Versandangebot und Artikelpreis.",
       "category": "Versand",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy stellt einen offiziellen Rechner mit Angaben zu Paket und Versandziel bereit. Dieser Leitfaden gibt unabhängige Hinweise zur Vorbereitung dieser Angaben und zum Vergleich der Ergebnisse. Er empfiehlt keinen allgemein günstigsten Versandweg und verspricht keine Lieferzeit für deine Bestellung."
       ],
       "sections": [
+        {
+          "heading": "Ein Rechenbeispiel zum abrechenbaren Gewicht",
+          "paragraphs": [
+            "Ein hypothetisches verpacktes Paket wiegt 2 kg und misst 40 × 30 × 20 cm. Sein Volumen beträgt 24.000 Kubikzentimeter. Gibt ein Versandweg den Divisor 6.000 vor, beträgt das Volumengewicht 4 kg. Gibt ein anderer 8.000 vor, sind es 3 kg. Dies sind Rechenbeispiele, keine aktuellen Angebote oder austauschbaren Regeln desselben Versandwegs.",
+            "Berechnet ein Versandweg den höheren Wert aus tatsächlichem und Volumengewicht, ergeben sich hier ungerundet 4 kg beziehungsweise 3 kg als abrechenbare Gewichte. Wende anschließend die eigenen Abrechnungsstufen, Gebühren und Zulassungsgrenzen an. Ein niedriger berechnetes Gewicht beweist allein nicht, dass ein Versandweg billiger oder verfügbar ist. Erscheint keiner, nutze den unten verlinkten Problemlösungsleitfaden."
+          ],
+          "table": {
+            "columns": [
+              "Beispieleingabe oder Regel",
+              "Ergebnis"
+            ],
+            "rows": [
+              [
+                "Tatsächliches verpacktes Gewicht",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24.000 cm³"
+              ],
+              [
+                "Beispieldivisor 6.000",
+                "4 kg Volumengewicht"
+              ],
+              [
+                "Beispieldivisor 8.000",
+                "3 kg Volumengewicht"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Beschreibe das Paket, das du tatsächlich erwägst",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Gib tatsächliches Ziel, verpacktes Gewicht und Außenmaße in den offiziellen LoveGoBuy-Versandrechner ein. Beachte Gewichts-, Divisor- und Rundungsregeln des gewählten Versandwegs. Die Schätzung ist erst endgültig, wenn tatsächliche Paketdaten und gewählte Leistungen bestätigt sind."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "LoveGoBuy-Sendungsverfolgung: Paket verfolgen und Meldungen verstehen",
-      "description": "Finde die richtige LoveGoBuy-Sendungsnummer, unterscheide Bestellungen und Pakete, ordne Aktualisierungslücken ein und bereite eine hilfreiche Supportanfrage vor.",
+      "title": "LoveGoBuy-Sendungsverfolgung: Status und fehlende Aktualisierungen",
+      "description": "Verfolge dein LoveGoBuy-Paket mit der richtigen Nummer. Unterscheide Verkäuferzustellung, Lagerbearbeitung und Lücken in der internationalen Verfolgung.",
       "category": "Paketverfolgung",
       "keyword": "LoveGoBuy-Sendungsverfolgung",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "Der offizielle Einkaufsleitfaden von LoveGoBuy verweist zur Versandverfolgung auf die Seite „Parcels“. Dieser unabhängige Ratgeber erläutert, wie du die dort gezeigten Informationen ordnest und unklare Meldungen untersuchst. Er ruft keine privaten Bestellungen ab, ersetzt kein Tracking des Beförderers und verspricht keinen Liefertermin. Die folgenden Statusbeispiele beschreiben allgemeine Logistiksituationen, keine feste Liste von LoveGoBuy-Oberflächenbezeichnungen."
       ],
       "sections": [
+        {
+          "heading": "Keine neue Meldung: Beginne beim letzten tatsächlichen Ereignis",
+          "paragraphs": [
+            "Ordne die Referenz der Versandphase zu, bevor du eine andere Trackingwebsite ausprobierst. Für denselben Kauf können Bestellnummer, Inlandssendungsnummer und internationale Paketnummer bestehen. Nutze für die internationale Strecke die Nummer im Paketdatensatz und bewahre das letzte datierte Ereignis auf, wenn du Hilfe anforderst.",
+            "Es gibt keine allgemeine Tageszahl, nach der jede Trackinglücke einen Verlust bedeutet. Vergleiche den letzten Scan und die verstrichene Zeit mit der aktuellen Schätzung des gewählten Dienstes. Ist diese überschritten oder zeigt der Datensatz eine handlungsbedürftige Ausnahme, kontaktiere den offiziellen Support mit Paketreferenz und genauem Status, statt eine Beschlagnahme oder einen Verlust anzunehmen."
+          ],
+          "table": {
+            "columns": [
+              "Beobachteter Status",
+              "Hilfreiche nächste Prüfung"
+            ],
+            "rows": [
+              [
+                "Verkäufersendung zugestellt",
+                "Lagereingang bestätigen; möglicherweise betrifft dies nur die Inlandsetappe"
+              ],
+              [
+                "Etikett erstellt oder Daten empfangen",
+                "Prüfen, ob die Übernahme durch den Transporteur erfolgt ist"
+              ],
+              [
+                "Kein neuer Scan nach Übernahme",
+                "Versandschätzung und letztes Transportereignis vergleichen"
+              ],
+              [
+                "Zustellversuch oder Adressproblem",
+                "Den offiziellen Anweisungen des Transporteurs zeitnah folgen"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Unterscheide Produktbestellung, Paketreferenz und Sendungsnummer",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Öffne den Datensatz deines internationalen Pakets und kopiere Sendungsnummer und Transporteur. Die Inlandsnummer des Verkäufers verfolgt den Artikel bis zum Lager, nicht bis zu dir. Ein Etikett oder eine Paketnummer ohne Übernahmescan bestätigt allein keinen begonnenen internationalen Transport."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "LoveGoBuy-Versanddauer: Vom Verkäufer bis zur Zustellung",
-      "description": "Verstehe die Phasen hinter der LoveGoBuy-Lieferzeit, vergleiche aktuelle Routenschätzungen und berücksichtige Lagerbearbeitung, Verpackung und Übergaben an Beförderer.",
+      "title": "Wie lange dauert LoveGoBuy-Versand? Phasen und Verzögerungen",
+      "description": "Verstehe die LoveGoBuy-Versanddauer vom Verkäufer über die Lagerbearbeitung bis zur Zustellung. Prüfe die richtige Phase, bevor du eine Verzögerung meldest.",
       "category": "Versanddauer",
       "keyword": "LoveGoBuy-Versanddauer",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "Der offizielle LoveGoBuy-Leitfaden beschreibt Einkauf und Paketversand als aufeinanderfolgende Entscheidungen. Im Versandkostenrechner kannst du Dienste anhand deines Ziels und deiner Paketangaben prüfen. Dieser Artikel macht daraus eine Planungsmethode. Er veröffentlicht keine festen Lieferzusagen, behauptet nicht, eine Route sei immer am schnellsten, und überträgt nicht die Erfahrung eines anderen Kunden als Schätzung auf deine Bestellung."
       ],
       "sections": [
+        {
+          "heading": "Welche Versandphase ist tatsächlich verzögert?",
+          "paragraphs": [
+            "Prüfe das letzte abgeschlossene Ereignis, bevor du entscheidest, wen du kontaktierst. Hat der Verkäufer noch nicht verschickt, kann der internationale Transporteur den Artikel nicht verfolgen. Liegt der Artikel im Lager, ohne dass ein Paket eingereicht wurde, hat die internationale Lieferprognose noch nicht begonnen. Vergleiche nach dem Versand den Verlauf mit der aktuellen Schätzung des gewählten Dienstes.",
+            "Eine einfache Zeitleiste verhindert Verwechslungen: Notiere Artikelzahlung, Verkäuferabgabe, Lagerankunft, Paketeinreichung, Übernahme durch den Transporteur und Zustellung als getrennte Daten. Lass fehlende Daten offen. Frage gezielt nach der noch offenen Phase und nenne die entsprechende Bestell- oder Paketreferenz im offiziellen Supportkanal."
+          ],
+          "table": {
+            "columns": [
+              "Letzte bestätigte Phase",
+              "Als Nächstes prüfen"
+            ],
+            "rows": [
+              [
+                "Artikel bezahlt; Verkäufer hat nicht verschickt",
+                "Verkäuferbearbeitung und Bestellsupport"
+              ],
+              [
+                "Ankunft im Lager",
+                "Prüfung, offene Entscheidungen und Paketeinreichung"
+              ],
+              [
+                "Paket eingereicht; keine Transporteurübernahme",
+                "Bearbeitung und Übergabebestätigung"
+              ],
+              [
+                "Transporteur hat das Paket übernommen",
+                "Internationale Verfolgung und Zustellmeldungen am Ziel"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Bestimme Anfang und Ende der Schätzung",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Es gibt keine einheitliche Lieferzeit für alle LoveGoBuy-Bestellungen. Verkäuferabgabe, Inlandstransport, Lagerbearbeitung, internationaler Transport und Zustellung sind getrennte Phasen. Nutze die aktuelle Schätzung für deinen Versandweg und zähle sie nicht ab dem Tag der ersten Artikelzahlung."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "LoveGoBuy-Funde unter 20 $: Kleidung und Accessoires",
+      "description": "Entdecke LoveGoBuy-Funde unter 20 $ mit datierten Preisbeispielen, Links zu Kleidung und Accessoires, Größenprüfungen und einem klaren Budget vor dem Versand.",
+      "category": "Günstige Funde",
+      "keyword": "lovegobuy funde unter 20 dollar",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Beginne mit den nach Preis sortierten Kategorien für Kleidung und Accessoires und bestätige anschließend den Preis deiner ausgewählten Variante auf der Bestellseite. „Unter 20 $“ bezeichnet hier den angezeigten Artikelpreis in US-Dollar, nicht den Preis einschließlich Zustellung. Internationaler Versand, Inlandszustellung, Zusatzleistungen und gegebenenfalls weitere Gebühren können den Endbetrag über diese Grenze erhöhen.",
+        "Die folgenden Beispiele waren am 9. November 2026 in unserem Verzeichnis sichtbar. Sie dienen als Ausgangspunkt für einen Vergleich, nicht als getestete Empfehlungen oder Zusage zur Verfügbarkeit. Der Einkaufsablauf folgt der offiziellen Anleitung von LoveGoBuy; die Budgetmethode und Auswahlcheckliste sind unsere redaktionellen Hinweise."
+      ],
+      "sections": [
+        {
+          "heading": "Drei Preisbeispiele für deine erste Auswahl",
+          "paragraphs": [
+            "Das Verzeichnis zeigte eine markenlose Halskette für 0,97 $, eine markenlose Sonnenbrille für 1,11 $ und ein Kurzarmhemd für 9,58 $. Öffne die verlinkten Produktseiten, um die aktuellen Angaben zu prüfen. Die Quelle ordnet die ersten beiden Angebote den Kopfbedeckungen zu; diese Kategoriezuordnung ändert nichts am tatsächlich angebotenen Artikel.",
+            "Diese Beobachtungen bestätigen ausschließlich, dass jene Angebotsnamen und Preise an diesem Datum angezeigt wurden. Sie bestätigen weder Materialien, Echtheit, Schutzwirkung, Verfügbarkeit bestimmter Varianten noch Qualität. Gehe insbesondere ohne zuverlässige Belege nicht davon aus, dass eine Sonnenbrille einen bestimmten UV-Schutz bietet. Eine Beschreibung des Verkäufers wie „hohe Qualität“ ist eine Behauptung, die geprüft werden muss."
+          ],
+          "table": {
+            "columns": [
+              "Beispiel aus dem Verzeichnis",
+              "Angezeigter Artikelpreis am 9. November 2026",
+              "Vor der Bestellung prüfen"
+            ],
+            "rows": [
+              [
+                "Markenlose Halskette · 88",
+                "0,97 $",
+                "Maße, Material und ausgewählte Option"
+              ],
+              [
+                "Markenlose Sonnenbrille · 99",
+                "1,11 $",
+                "Gestellmaße und behauptete Schutzwirkung"
+              ],
+              [
+                "Kurzarmhemd · 3287",
+                "9,58 $",
+                "Kleidungsmaße, Stoff und Farbe"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Angebot der Halskette ansehen",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Angebot der Sonnenbrille ansehen",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Angebot des Kurzarmhemds ansehen",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Suche innerhalb einer passenden Kategorie",
+          "paragraphs": [
+            "Wähle zuerst die Artikelart: T-Shirts, Accessoires, Kopfbedeckungen oder Hosen und Shorts. Eine Preissortierung des gesamten Verzeichnisses kann Kleinteile, Ersatzzubehör oder Optionen anzeigen, die mit einem vollständigen Kleidungsstück nicht vergleichbar sind. Ein günstiges Angebot ist nur hilfreich, wenn es deinem beabsichtigten Kauf entspricht. Grenze die Kategorie ein, bevor du beurteilst, ob der Preis attraktiv ist.",
+            "Verwende einen einfachen Suchbegriff für den Artikel und öffne einige Kandidaten, statt Dutzende ähnliche Links zu sammeln. Speichere die Angebots-URL zusammen mit der gewünschten Variante. Wenn Kartenpreis und ausgewählte Option voneinander abweichen, vergleiche anhand des Optionspreises. Prüfe, ob der angezeigte Betrag für ein Stück, ein Paar, ein Set oder eine Mindestmenge gilt."
+          ],
+          "links": [
+            {
+              "label": "T-Shirts nach Preis durchsuchen",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Accessoires nach Preis durchsuchen",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Kopfbedeckungen nach Preis durchsuchen",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Lege ein Artikelbudget und ein Lieferbudget fest",
+          "paragraphs": [
+            "Setze vor dem Hinzufügen von Artikeln zwei Grenzen: einen Höchstpreis pro Artikel und den maximalen Betrag, den du einschließlich Lieferung ausgeben möchtest. Sie beantworten unterschiedliche Fragen. Ein Artikel für 18 $ passt in eine Produktgrenze von 20 $, kann aber ungeeignet sein, wenn der Versand den Rest deines Gesamtbudgets verbraucht. Die offiziellen Gebühreninformationen und der Versandrechner von LoveGoBuy zeigen die aktuellen Kosten.",
+            "Ein reines Rechenbeispiel: Ein Artikel kostet 12 $, die Inlandszustellung 2 $ und der ihm zugeordnete Anteil am internationalen Versand 9 $. Schon ergibt sich eine Zwischensumme von 23 $, bevor weitere gegebenenfalls anfallende Gebühren hinzukommen. Diese Zahlen sind zur Erklärung erfunden und kein Versandangebot. Halte unsichere Beträge gesondert fest, statt dafür stillschweigend null einzusetzen."
+          ]
+        },
+        {
+          "heading": "Vergleiche Passform und Material vor dem Preis",
+          "paragraphs": [
+            "Vergleiche bei einem T-Shirt Brustweite, Gesamtlänge, Schulterbreite und Ärmellänge mit einem Kleidungsstück, das dir passt. Verwende die Messmethode des Verkäufers und frage fehlende Maße nach. Größenbuchstaben allein sind eine schwache Vergleichsgrundlage, weil Tabellen je nach Verkäufer und Schnitt abweichen können. Ein niedriger Artikelpreis gleicht nicht aus, dass du ein Kleidungsstück nicht bequem tragen kannst.",
+            "Notiere bei einem Accessoire die für seine Verwendung entscheidenden Maße: Kettenlänge, Gestellbreite, Verschlussart oder Kompatibilität mit einem anderen Artikel. Unterscheide das fotografierte Aussehen von einer bestätigten Materialangabe. Fehlt eine wichtige Eigenschaft, stelle den Kandidaten zurück. Mehrere unsichere Optionen zu kaufen, um eine passende zu finden, kann mehr kosten als eine einzige gut dokumentierte Auswahl."
+          ]
+        },
+        {
+          "heading": "Betrachte Gewicht und Verpackung gemeinsam",
+          "paragraphs": [
+            "Ein kleiner Artikel kann vermeidbare Lieferkosten verursachen, wenn seine Verpackung die Außenmaße des Pakets vergrößert. Umgekehrt erhöht ein dichter Artikel das tatsächliche Gewicht, ohne viel Platz zu beanspruchen. Der LoveGoBuy-Versandrechner berücksichtigt die Bedingungen des gewählten Versandwegs; manche vergleichen tatsächliches und Volumengewicht. Frage verfügbare Verpackungsmaße an und vergleiche die für dein Zielland unterstützten Optionen.",
+            "Füge keine unnötigen Artikel hinzu, nur um Versandkosten auf eine größere Bestellung zu verteilen. Zusammenlegen kann praktisch sein, doch eine andere Gewichtsstufe, eine Größenbegrenzung oder eine Artikelbeschränkung kann die verfügbaren Versandwege verändern. Vergleiche vollständige Paketpläne mit demselben Ziel und denselben Schutzanforderungen. Behalte Schutzverpackung bei, wenn ihr Entfernen ein Schadensrisiko erzeugen würde, das du nicht akzeptieren möchtest."
+          ]
+        },
+        {
+          "heading": "Nutze Fotos für konkrete Fragen",
+          "paragraphs": [
+            "Die Bilder im Verzeichnis sind Produktfotos und nicht automatisch Qualitätskontrollfotos deiner Bestellung aus dem Lager. Prüfe nach der Ankunft eines Artikels im Lager die Bilder dieser Bestellung und vergleiche sie mit deiner ausgewählten Variante. Kontrolliere sichtbare Farbe, enthaltene Teile, Etiketten, offensichtliche Mängel und angeforderte Maße. Halte Abweichungen eindeutig fest, bevor du dich für den Versand entscheidest.",
+            "Eine hilfreiche Zusatzfotoanfrage benennt eine überprüfbare Frage: den Kettenverschluss zeigen, die Brustweite messen oder beide Seiten eines Accessoires fotografieren. Fotos belegen nicht jede Material- oder Leistungsaussage. Wenn eine Sorge Informationen erfordert, die ein Bild nicht liefern kann, frage Verkäufer oder Support direkt. Prüfe die geltenden Rückgabebedingungen, solange du noch handeln kannst."
+          ]
+        },
+        {
+          "heading": "Führe eine kurze Vergleichsnotiz",
+          "paragraphs": [
+            "Bewahre für jeden Kandidaten Produkt-URL, gewählte Option, aktuellen Artikelpreis, Maßnachweise, erwartete Verpackung und offene Fragen auf. Ergänze eine Entscheidung wie weiter prüfen, bestellbereit oder entfernen. Diese Notiz macht sichtbar, dass beim günstigsten Angebot noch ein Maß fehlt, während eine etwas teurere Option deine Anforderungen bereits erfüllt.",
+            "Prüfe die endgültige Bestellseite unmittelbar vor der Zahlung erneut. Bestätige Quellartikel, Menge und Variante, statt einem alten Bildschirmfoto zu vertrauen. Ist das Produkt verschwunden oder der Preis verändert, kehre zur Kategorie zurück und wiederhole den Vergleich; ersetze es nicht allein wegen eines vertraut wirkenden Bildes. Ein gespeicherter Link ist eine Referenz, keine Reservierung. Notiere das Prüfdatum beim Preis, damit eine alte Beobachtung nicht mit einem aktuellen Angebot verwechselt wird."
+          ],
+          "table": {
+            "columns": [
+              "Vergleichsfeld",
+              "Warum es wichtig ist"
+            ],
+            "rows": [
+              [
+                "Genaue Variante und Menge",
+                "Verhindert den Vergleich eines Einzelstücks mit einem Set"
+              ],
+              [
+                "Maße und Materialien",
+                "Verknüpft das Angebot mit deinen tatsächlichen Bedürfnissen"
+              ],
+              [
+                "Artikelpreis plus Lieferkostenreserve",
+                "Zeigt, ob das Gesamtbudget realistisch ist"
+              ],
+              [
+                "Offene Frage und nächster Schritt",
+                "Hält fehlende Nachweise sichtbar"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Häufige Fragen zu günstigen Funden",
+          "paragraphs": [
+            "Enthält ein Angebot unter 20 $ die Lieferung? Nein: Dieser Leitfaden verwendet den angezeigten Artikelpreis. Prüfe Inlandszustellung, internationalen Versand, Zusatzleistungen und andere anfallende Gebühren gesondert. Kann sich ein Verzeichnispreis ändern? Ja. Betrachte datierte Beispiele als Beobachtungen und überprüfe die gewählte Variante auf der aktuellen Bestellseite.",
+            "Wurde die Qualität der Beispiele getestet? Nein. Wir haben diese Artikel nicht getestet, und ihre Aufnahme bestätigt keine Echtheit. Solltest du das günstigste Ergebnis bestellen? Nur wenn Artikel, Maße und Gesamtbudget deine Anforderungen erfüllen. Beginne mit einem klaren Verwendungszweck, halte deine Auswahl überschaubar und kläre verbleibende Fragen mithilfe der verlinkten Größen-, Qualitätskontroll- und Kostenleitfäden."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Unter 20 $ bezieht sich auf den Artikelpreis, nicht auf den Gesamtpreis mit Lieferung.",
+        "Prüfe die aktuelle Variante, Maße und Menge vor der Zahlung.",
+        "Nutze die tatsächlichen Kontrollfotos deiner Bestellung und bewahre den Quelllink auf."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "LoveGoBuy-Schuhübersicht: Größen, Preise und Qualitätskontrolle",
+      "description": "Vergleiche mit der LoveGoBuy-Schuhübersicht Angebote, Schuhmaße, ausgewählte Preise, Kontrollfotos und Verpackung vor dem Versand.",
+      "category": "Schuhe",
+      "keyword": "lovegobuy schuhübersicht",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Nutze die Schuhkategorie für eine engere Auswahl und vergleiche dann genaue Größe, ausgewählten Preis und verfügbare Maße jedes Angebots. Eine vertraute Größennummer oder ein Produktfoto reichen nicht aus, um die Passform zu beurteilen. Prüfe vor dem internationalen Versand die Lagerfotos deines eigenen Paars und den Einfluss der Verpackung auf das Paketangebot.",
+        "Dieser Leitfaden verbindet das Schuhverzeichnis mit einem praktischen Vergleichsverfahren. Er bewertet keine ungetesteten Schuhe, bestätigt keine Echtheit und verspricht keine bestimmten Versandkosten. Die offizielle Einkaufsanleitung und der Versandrechner von LoveGoBuy erläutern den Plattformablauf; die folgende Checkliste für Passform und Prüfung ist eine unabhängige redaktionelle Hilfestellung."
+      ],
+      "sections": [
+        {
+          "heading": "Öffne das Schuhverzeichnis mit einem klaren Ziel",
+          "paragraphs": [
+            "Beginne mit der Schuhkategorie und entscheide, wofür du das Paar brauchst. Tägliches Gehen, gelegentliches Tragen und eine bestimmte Aktivität können unterschiedliche Nachweise erfordern. Angebotstitel helfen bei der Suche, beweisen aber weder Komfort, Leistung noch Haltbarkeit. Behandle einen bekannten Markennamen im Angebot nicht als Beleg dafür, dass die Aussagen des Verkäufers überprüft wurden.",
+            "Sortiere nach Preis, um die angezeigten Artikelbeträge zu vergleichen, und behalte zwei oder drei realistische Kandidaten. Öffne jede Produktseite vor dem Speichern. Notiere Angebots-URL, gewünschte Farbe, Größe und den tatsächlich angezeigten Optionspreis. Vergleiche nicht das billigste auswählbare Zubehör einer Seite mit einem vollständigen Paar auf einer anderen Seite."
+          ],
+          "links": [
+            {
+              "label": "LoveGoBuy-Schuhübersicht öffnen",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Schuhe nach angezeigtem Preis vergleichen",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Vergleiche Maße statt ausschließlich Größenangaben",
+          "paragraphs": [
+            "Beginne mit der Größentabelle des Verkäufers und finde heraus, was jede Zahl misst. Fußlänge, Einlegesohlenlänge und Außensohlenlänge sind unterschiedliche Maße. Eine Tabelle in Zentimetern hilft nur, wenn ihre Messmethode klar ist. Gehe nicht davon aus, dass eine EU-Größe bei allen Verkäufern identisch umgerechnet wird oder eine US-Angabe immer dasselbe Größensystem verwendet.",
+            "Miss beide Füße nach derselben Methode und vergleiche das größere Maß mit der Tabelle. Berücksichtige auch Breite und Form des Zehenbereichs, wenn der Verkäufer diese Angaben bereitstellt. Nennt das Angebot nur Größenbezeichnungen, bitte vor dem Kauf um Klarstellung. Ein Lagerfoto des Größenetiketts kann die Kennzeichnung des Paars bestätigen, beweist aber nicht, dass die Schuhe passen werden."
+          ],
+          "table": {
+            "columns": [
+              "Nachweis",
+              "Was er dir sagen kann",
+              "Was unklar bleibt"
+            ],
+            "rows": [
+              [
+                "Größentabelle des Verkäufers",
+                "Das angegebene Maß einer Option",
+                "Ob die Methode deiner Messung entspricht"
+              ],
+              [
+                "Foto des Größenetiketts",
+                "Die Kennzeichnung des erhaltenen Paars",
+                "Tatsächliche Passform und nutzbarer Innenraum"
+              ],
+              [
+                "Angeforderte Messung",
+                "Eine im Foto sichtbar gemessene Abmessung",
+                "Komfort und langfristige Leistung"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Notiere das genaue Paar, das du kaufen möchtest",
+          "paragraphs": [
+            "Erstelle pro Kandidat eine kurze Notiz: Quell-URL, Marktplatz, gewählte Größe, Farbe, Artikelpreis und Fragen an den Verkäufer. Enthält eine Seite mehrere Versionen, notiere die Version ausdrücklich. Ähnliche Produktbilder können bei verschiedenen Angeboten vorkommen, machen diese aber nicht austauschbar. Bewahre die Produktidentität von der Entdeckung bis zur Bestellbestätigung.",
+            "Prüfe den Lieferumfang. Ein Schuhkarton, zusätzliche Schnürsenkel oder weiteres Zubehör beeinflussen möglicherweise sowohl den Inhalt als auch die Paketmaße. Gehe nicht davon aus, dass Gegenstände auf einem Werbefoto enthalten sind. Ist ein Zubehörteil entscheidungsrelevant, bestätige es vor der Zahlung und ergänze es auf deiner Liste für die spätere Kontrolle der Lagerfotos."
+          ]
+        },
+        {
+          "heading": "Prüfe deine eigenen Qualitätskontrollfotos aus dem Lager",
+          "paragraphs": [
+            "Öffentliche Fotos können zeigen, wie eine andere Bestellung aussah. Die Bilder deiner Bestellung sind jedoch die relevanten Nachweise für das Paar, das du versenden möchtest. Vergleiche beide Schuhe, sichtbare Farben, Größenetiketten, Nähte, Sohlenränder und enthaltene Teile. Achte auf offensichtliche Abweichungen oder Schäden. Verwende deine Bestelldaten als Referenz statt eines anderen Angebots mit zufällig ähnlichem Bild.",
+            "Bitte nur dann um einen weiteren Winkel oder eine Messung, wenn damit eine konkrete Unsicherheit geklärt wird. Fordere beispielsweise ein deutliches Foto beider Größenetiketten oder eine Messung mit sichtbarer Linealposition an. Bezeichne Verkäuferfotos nicht als Lagerkontrolle und betrachte eine Fotoprüfung nicht als Garantie für Echtheit oder Haltbarkeit. Manche Fragen lassen sich anhand von Bildern nicht klären."
+          ],
+          "bullets": [
+            "Prüfe, ob beide Schuhe zur gewünschten Größen- und Farboption gehören.",
+            "Vergleiche sichtbare Verarbeitung und enthaltene Teile mit deiner Bestellnotiz.",
+            "Kläre eine sichtbare Abweichung vor der Freigabe des internationalen Versands."
+          ]
+        },
+        {
+          "heading": "Berechne die vollständigen Kosten des Paars",
+          "paragraphs": [
+            "Trenne Artikelpreis, Inlandszustellung, internationalen Versand und gewählte Zusatzleistungen. Das Verzeichnis zeigt zur Produktsuche Dollarbeträge, während die aktuellen Bestell- und Zahlungsseiten den berechneten Betrag bestimmen. Wechselkurse, ausgewählte Optionen oder Änderungen des Verkäufers können die Endsumme beeinflussen. Speichere die aktuellen Angebotsdetails, statt eine früher betrachtete Produktkarte als vollständiges Budget anzusehen.",
+            "Ein reines Rechenbeispiel: Ein hypothetisches Paar für 18 $ mit 3 $ Inlandszustellung und 14 $ zugeordnetem internationalem Versand kostet bereits insgesamt 35 $. Diese Zahlen sind weder beobachtete LoveGoBuy-Gebühren noch ein Angebot für ein Zielland. Sie zeigen, warum ein Vergleich allein anhand des Artikelpreises irreführend sein kann, wenn verpackte Gewichte oder Abmessungen voneinander abweichen."
+          ]
+        },
+        {
+          "heading": "Vergleiche Versand mit und ohne Schuhkarton",
+          "paragraphs": [
+            "Wenn der verfügbare Verpackungsservice es erlaubt, frage, wie das Behalten oder Entfernen des Schuhkartons verpackte Maße, Schutz und zulässige Versandwege verändert. Ohne Karton ist der Preis nicht garantiert niedriger. Ein nach tatsächlichem Gewicht abrechnender Versandweg kann anders funktionieren als einer, der tatsächliches und Volumengewicht vergleicht; außerdem kann das Paket in derselben Preisstufe bleiben.",
+            "Verwende den Divisor und die Rundungsregeln des konkret gewählten Versandwegs. Zur Veranschaulichung: Ein Paket mit 35 × 25 × 15 cm hat ein Volumen von 13.125 Kubikzentimetern. Geteilt durch 6.000 ergibt das etwa 2,19 kg, geteilt durch 8.000 etwa 1,64 kg. Das sind alternative mathematische Beispiele, keine austauschbaren Regeln desselben Versandwegs. Vergleiche sie nur nach dessen Vorgaben mit dem tatsächlichen Gewicht."
+          ],
+          "table": {
+            "columns": [
+              "Verpackungswahl",
+              "Anzufordernde Informationen"
+            ],
+            "rows": [
+              [
+                "Schuhkarton behalten",
+                "Äußere Paketmaße, Schutz und vollständiges Angebot"
+              ],
+              [
+                "Schuhkarton entfernen, falls angeboten",
+                "Ersatzschutz, neue Maße und vollständiges Angebot"
+              ],
+              [
+                "Mit anderen Artikeln zusammenlegen",
+                "Gesamtgewicht, Beschränkungen und verfügbare Versandwege"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Kläre Probleme, solange das Paar noch im Lager ist",
+          "paragraphs": [
+            "Wenn du eine falsche Option oder sichtbare Schäden feststellst, bewahre Bestellnummer, relevante Angebotsdetails und die Bilder des Problems auf. Beschreibe die Abweichung kurz und sachlich. Frage, welche Rückgabe- oder Umtauschmöglichkeiten für diese Bestellung aktuell bestehen. Verkäuferbedingungen und Bestellphase sind entscheidend; dieser Leitfaden verspricht nicht, dass sich jeder Artikel zurückgeben lässt.",
+            "Versende das Paar nicht international, solange eine wichtige Frage zu Passform oder Zustand offen ist. Sobald ein Artikel Teil eines verschickten Pakets ist, können sich die praktischen Möglichkeiten ändern. Führe das Gespräch im offiziellen Supportkanal und speichere die Antwort bei deiner Vergleichsnotiz. Eine klare Beschreibung und konkrete Fotos helfen mehr als wiederholtes Einreichen derselben ungenauen Beschwerde."
+          ]
+        },
+        {
+          "heading": "Fragen vor der Versandfreigabe",
+          "paragraphs": [
+            "Gibt es eine universelle LoveGoBuy-Schuhgrößenumrechnung? Verwende die Tabelle und Messmethode des Verkäufers für das ausgewählte Angebot statt einer universellen Umrechnung. Sind Verzeichnisbilder Qualitätskontrollfotos? Nein: Produktbilder und Lagerfotos deiner eigenen Bestellung erfüllen unterschiedliche Aufgaben. Kann ein Paar unter 20 $ für weniger als 20 $ ankommen? Der angezeigte Artikelpreis allein beantwortet das nicht.",
+            "Spart das Entfernen des Kartons immer Geld? Nein. Vergleiche die tatsächlich verfügbaren Verpackungsoptionen und das Versandangebot einschließlich des benötigten Schutzes. Die abschließende Checkliste ist einfach: Paar bestätigen, Größennachweise verstehen, relevante Fotos prüfen, Abweichungen klären und den vollständigen Versandplan vergleichen. Nutze anschließend den Sendungsverfolgungsleitfaden, sobald das internationale Paket tatsächlich verschickt wurde."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Bewahre genaue Quell-URL, Größe und Farbe gemeinsam auf.",
+        "Größenetikett, Messung und Passformbeurteilung sind unterschiedliche Nachweise.",
+        "Vergleiche das vollständige Verpackungs- und Versandangebot vor der Versandfreigabe."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "Keine LoveGoBuy-Versandwege verfügbar: Das solltest du prüfen",
+      "description": "Keine LoveGoBuy-Versandwege verfügbar? Prüfe Ziel, Gewicht, Paketmaße und Artikelbeschränkungen und vergleiche dann unterstützte Verpackungsoptionen.",
+      "category": "Versandprobleme lösen",
+      "keyword": "lovegobuy keine versandwege verfügbar",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Wenn LoveGoBuy keine Versandwege anzeigt, überprüfe zuerst Ziel, Gewichtseinheit, äußere Paketmaße und die eingegebenen Artikelkategorien. Der offizielle Versandrechner erklärt, dass Größen- oder Gewichtsgrenzen verfügbare Optionen ausschließen können. Ein eingeschränkter Artikel, ein nicht unterstütztes Ziel oder eine vorübergehende Änderung eines Versandwegs können ebenfalls eine Klärung durch den Support erfordern.",
+        "Ändere keine wahrheitsgemäßen Artikelinformationen, nur damit ein Versandweg erscheint. Der sinnvolle nächste Schritt ist, die Eingabe oder Zulassungsbedingung hinter dem leeren Ergebnis zu finden und anschließend zulässige Verpackungs- oder Paketoptionen zu vergleichen. Dieser Leitfaden ist eine Diagnosecheckliste und kein Versprechen, dass jedes Paket an jede Adresse versendet werden kann."
+      ],
+      "sections": [
+        {
+          "heading": "Prüfe, ob du schätzt oder ein Paket einreichst",
+          "paragraphs": [
+            "Eine Schätzung vor der Lagerverpackung verwendet deine eigenen Angaben. Ein einreichungsbereites Paket kann auf Lagermessungen und dort erfassten Artikelinformationen beruhen. Das sind unterschiedliche Nachweisstufen. Notiere, welche Seite das leere Ergebnis zeigt, welches Ziel du gewählt hast und ob die Maße geschätzt oder an der Verpackung gemessen wurden. Dieser Kontext verhindert eine Fehlersuche in der falschen Phase.",
+            "Wenn eine frühere Schätzung einen Versandweg zeigte, das fertig gepackte Paket jedoch nicht, vergleiche zuerst die Eingaben, bevor du einen Systemfehler vermutest. Verpackung kann die Außenmaße verändern, das endgültige Gewicht kann in eine andere Stufe fallen und das Paket kann einen Artikel mit abweichenden Versandbedingungen enthalten. Die aktuellen Optionen für das fertige Paket haben Vorrang vor einem vorläufigen Beispiel."
+          ]
+        },
+        {
+          "heading": "Prüfe Ziel und Einheiten",
+          "paragraphs": [
+            "Kontrolliere Zielland oder Zielregion und die vom Formular verlangten Adressangaben. Hat ein Versandweg regionale Einschränkungen, frage den Support, ob diese deine Adresse betreffen. Ersetze das Ziel nicht durch ein anderes Land, um ein beruhigendes Angebot zu erhalten. Die Schätzung hilft nur, wenn sie die tatsächlich beabsichtigte Sendung beschreibt.",
+            "Lies anschließend die Einheiten neben jedem Eingabefeld. Ein als 2.000 Kilogramm statt 2.000 Gramm eingegebenes Gewicht kann ein bedeutungsloses Ergebnis erzeugen. Dasselbe gilt für Millimeterangaben in einem Zentimeterfeld. Gib die tatsächlichen Maße erneut in den angezeigten Einheiten ein und bewahre einen Screenshot der korrigierten Eingaben auf, falls die Versandliste leer bleibt."
+          ],
+          "table": {
+            "columns": [
+              "Eingabe",
+              "Hilfreiche Prüfung"
+            ],
+            "rows": [
+              [
+                "Ziel",
+                "Tatsächliches Land oder Region und erforderliche Adressangaben"
+              ],
+              [
+                "Gewicht",
+                "Der Wert entspricht der im Formular angezeigten Einheit"
+              ],
+              [
+                "Maße",
+                "Äußere verpackte Länge, Breite und Höhe in den angegebenen Einheiten"
+              ],
+              [
+                "Artikelkategorie",
+                "Genaue Beschreibung des gesamten Paketinhalts"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Prüfe tatsächliches Gewicht und Maßgrenzen getrennt",
+          "paragraphs": [
+            "Ein Paket kann eine Gewichtsgrenze einhalten und dennoch die Maßgrenzen eines Versandwegs überschreiten. Prüfe dessen Bedingungen für die längste Seite, weitere Maßregeln und den zulässigen Gewichtsbereich. Die Erklärung des Rechners nennt Einschränkungen für übergewichtige und übergroße Pakete, aber es gibt keine gemeinsame Grenze für alle Versandwege. Lies die Bedingungen für dein Ziel und den verfügbaren Dienst.",
+            "Volumengewicht ist eine getrennte Berechnung, mit der manche Versandwege das abrechenbare Gewicht bestimmen. Nur als Beispiel: 40 × 30 × 20 cm ergeben 24.000 Kubikzentimeter. Ein Divisor von 6.000 führt zu 4 kg, ein Divisor von 8.000 zu 3 kg. Keiner davon gilt automatisch überall. Verwende die angegebene Regel des Versandwegs und unterscheide die Abrechnungsberechnung von den Maßgrenzen für die Zulässigkeit."
+          ]
+        },
+        {
+          "heading": "Prüfe Artikel, die das Paket einschränken könnten",
+          "paragraphs": [
+            "Kontrolliere die Versandbedingungen für jeden Artikel eines zusammengelegten Pakets, besonders bei Batterie, Flüssigkeit, Pulver, magnetischem Bauteil oder anderen möglicherweise beschränkten Eigenschaften. Dies ist eine Liste zu klärender Fragen, keine Behauptung, dass LoveGoBuy alle Artikel dieser Kategorien verbietet. Der jeweilige Dienst und das Ziel entscheiden, was zulässig ist.",
+            "Bitte den Support, die genaue Artikeleigenschaft und Versandbedingung zu benennen, die den Versand verhindern. Beschreibe Produkte korrekt und verstecke keinen Artikel oder wähle keine unpassende Kategorie, um eine Einschränkung zu umgehen. Ist ein Artikel für die verfügbaren Dienste nicht zugelassen, frage nach den verbleibenden zulässigen Möglichkeiten, bevor du zusätzliche Verpackung bezahlst oder einen Umweg voraussetzt."
+          ]
+        },
+        {
+          "heading": "Vergleiche unterstütztes Umpacken oder Aufteilen",
+          "paragraphs": [
+            "Der LoveGoBuy-Rechner erklärt, dass das Aufteilen einer zu schweren oder zu großen Sendung eine Möglichkeit sein kann, und verweist auf Probeverpackung oder verpackungsbezogene Dienste für bessere Maße. Prüfe Verfügbarkeit und Gebühren auf der aktuellen Plattform. Frage nach verpacktem Gewicht und Abmessungen jedes vorgeschlagenen Pakets und berechne dann alle für dasselbe tatsächliche Ziel.",
+            "Vergleiche die Summe aller Paketangebote und gewählten Leistungen. Zwei kleinere Pakete können teurer sein, weil jedes eine eigene Grundgebühr auslösen kann, selbst wenn das Aufteilen einen Versandweg wieder zulässig macht. Umpacken kann neben der Größe auch den Schutz verändern. Behalte notwendigen Schutz für zerbrechliche Artikel bei und genehmige Änderungen erst, wenn du den Kompromiss und den vollständigen möglichen Zahlbetrag verstehst."
+          ],
+          "table": {
+            "columns": [
+              "Mögliche Maßnahme",
+              "Vor der Freigabe vergleichen"
+            ],
+            "rows": [
+              [
+                "Eingabefehler korrigieren",
+                "Richtige Einheiten und tatsächliches Ziel"
+              ],
+              [
+                "Umpacken, falls unterstützt",
+                "Neue Maße, Schutzmaterial und Servicegebühr"
+              ],
+              [
+                "Aufteilen, falls unterstützt",
+                "Zulässigkeit jedes Pakets und Summe aller Angebote"
+              ],
+              [
+                "Nicht zugelassenen Artikel entfernen",
+                "Offiziell verfügbare Bearbeitungs- oder Rückgabeoptionen"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Unterscheide eine leere Schätzung von einem Kontoproblem",
+          "paragraphs": [
+            "Eine leere Versandliste beweist für sich genommen nicht, dass dein Konto gesperrt, deine Zahlung fehlgeschlagen oder dein Paket verloren ist. Prüfe die tatsächlich angezeigten Informationen. Wenn eine separate Fehlermeldung erscheint, notiere ihren Wortlaut. Das Aktualisieren kann bei einem vorübergehenden Anzeigefehler helfen, doch wiederholtes Neuladen behebt keine echte Gewichts-, Größen- oder Zulassungsbeschränkung.",
+            "Hat sich die Versandliste ohne Änderung am Paket verändert, frage, ob Dienste für das Ziel vorübergehend angepasst wurden. Übernimm keinen Versandwegnamen oder Liefertermin aus einem alten Forenbeitrag in deinen Plan. Nutze die aktuelle offizielle Schätzung und die Antwort der Plattform und notiere den Zeitpunkt der Prüfung, damit spätere Änderungen fair verglichen werden können."
+          ]
+        },
+        {
+          "heading": "Sende dem Support eine hilfreiche Diagnoseanfrage",
+          "paragraphs": [
+            "Übermittle Bestell- oder Paketreferenz privat über den offiziellen Supportkanal sowie Ziel, Gewicht und Maße mit Einheiten, Artikelarten, genaue Seite und Wortlaut der Fehlermeldung. Sage, ob die Maße geschätzt oder vom Lager bereitgestellt wurden. Füge einen Screenshot der relevanten Eingaben bei und vermeide unnötige persönliche oder Zahlungsinformationen.",
+            "Stelle eine konkrete Frage: Welche Eingabe, Artikeleigenschaft oder Versandgrenze verhindert das Anzeigen eines Dienstes und welche unterstützte Änderung würde das Paket zulässig machen? Schlägt der Support Aufteilen oder Umpacken vor, frage vor der Freigabe nach resultierenden Maßen und Kosten. Bewahre die Antwort beim Paketdatensatz auf, damit du prüfen kannst, ob die nächste Schätzung die vereinbarten Angaben verwendet."
+          ]
+        },
+        {
+          "heading": "Was du tun solltest, sobald ein Versandweg verfügbar ist",
+          "paragraphs": [
+            "Lies die Servicebedingungen, bevor du die neu verfügbare Option wählst. Vergleiche Gesamtpreis, angegebene Lieferprognose, Sendungsverfolgung und relevante Einschränkungen. Ein sichtbarer Versandweg ist eine zu prüfende Option, keine Garantie für die Ankunft an einem bestimmten Tag. Kontrolliere, dass alle Artikel und das tatsächliche Ziel bei der endgültigen Paketeinreichung weiterhin korrekt angegeben sind.",
+            "Nutze nach dem Versand die internationale Paketnummer statt der inländischen Sendungsnummer des Verkäufers. Ist weiterhin kein zulässiger Versandweg verfügbar, reiche das Paket noch nicht ein, während der offizielle Support die Bearbeitungsmöglichkeiten erklärt. Das sicherste hilfreiche Ergebnis ist eine korrekte Auskunft zu Zulässigkeit und Kosten; wahre Angaben so lange zu verändern, bis eine Schaltfläche erscheint, erzeugt keinen gültigen Versandplan."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Prüfe zuerst Ziel, Einheiten, Maße und Artikelinformationen.",
+        "Prüfe die Grenzen jedes Versandwegs; setze keinen einheitlichen Divisor oder Höchstwert voraus.",
+        "Vergleiche Gesamtkosten und Schutz jedes unterstützten Plans zum Aufteilen oder Umpacken."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

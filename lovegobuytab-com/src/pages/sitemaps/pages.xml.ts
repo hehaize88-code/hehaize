@@ -14,9 +14,9 @@ export const GET: APIRoute = ({ site }) =>
       ),
     ],
     {
-      "/": "2026-10-23",
-      "/spreadsheet/": "2026-10-23",
-      "/articles/": "2026-10-23",
+      "/": "2026-11-09",
+      "/spreadsheet/": "2026-11-09",
+      "/articles/": "2026-11-09",
       ...Object.fromEntries(
         content("en").articles.map((article: any) => [
           `/articles/${article.slug}/`,

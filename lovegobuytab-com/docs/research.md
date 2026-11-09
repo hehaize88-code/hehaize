@@ -114,3 +114,21 @@ Six existing articles now include decision-focused tables: spreadsheet shortlist
 Homepage and guide titles, metadata, latest-article visibility, related articles and product/catalog guide links are localized. Article structured data and editorial sitemap lastmod reflect real publication/modification dates. New pages are reachable from the article index, homepage, contextual links, locale alternatives and sitemap; submitting more URLs does not guarantee indexing.
 
 Measurement: compare the same 28-day windows after data matures, separating page/query search impressions and CTR from GA4 article views and outbound `purchase_link_click` events. Track the new clusters separately. Outbound clicks are not completed orders. Investigate index coverage first if the new guides receive no search impressions.
+
+
+## 2026-11-09 content prioritization
+
+Private first-party GSC, Bing Webmaster and GA4 reports were reviewed for this domain before editing. Their detailed metrics are not included in this public repository. Observed query intent and page engagement prioritized clearer shipping-time, cost-calculation and tracking answers. Public discovery competitors emphasized searchable finds, price navigation and QC context.
+
+Three distinct new topics fill concrete gaps: budget finds under $20 (item price only), shoe-list comparison and measurement evidence, and troubleshooting an empty shipping-route list. Existing shipping calculator, tracking and delivery-stage URLs retain their URLs and full original guidance, with concise answers, revised metadata and diagnostic tables added.
+
+Editorial observations from the live directory on 9 November 2026: necklace catalogue 88 displayed $0.97, sunglasses catalogue 99 displayed $1.11, shirt catalogue 3287 displayed $9.58. These are dated listing observations, not endorsements, stock guarantees, authenticity claims or delivered prices. The article links directly to the corresponding live pages and explains the limits of photographs and seller descriptions.
+
+Official workflow references remain LoveGoBuy's purchasing guide, help center, fee guide and shipping estimator. The estimator contains different illustrative volumetric divisors; the articles explicitly require the selected route's actual divisor, charge increments and limits. All invented arithmetic examples are marked as hypothetical.
+
+Canonical article slugs:
+- lovegobuy-finds-under-20
+- lovegobuy-shoes-spreadsheet
+- lovegobuy-no-shipping-routes
+
+Each is fully localized in the same 24 languages as the existing site. New source identifiers, destinations or unsupported platform promises are not invented.

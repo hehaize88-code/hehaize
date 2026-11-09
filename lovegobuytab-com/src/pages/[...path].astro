@@ -193,6 +193,9 @@ const related = article
       .filter(Boolean)
   : [];
 const catalogGuides = [
+  ...(category === "shoes"
+    ? ["lovegobuy-shoes-spreadsheet"]
+    : ["lovegobuy-finds-under-20"]),
   "lovegobuy-sizing-guide",
   "lovegobuy-qc-photo-checklist",
   "lovegobuy-shipping-estimate-guide",
@@ -970,6 +973,11 @@ const catalogGuides = [
           </a>
         </aside>
         <article class="article-body">
+          {article.quickAnswer && (
+            <aside class="quick-answer">
+              <p>{article.quickAnswer}</p>
+            </aside>
+          )}
           <div class="article-intro">
             {article.intro.map((p: string) => (
               <p>{p}</p>
@@ -1008,6 +1016,15 @@ const catalogGuides = [
                     ))}
                   </tbody>
                 </table>
+              )}
+              {s.links?.length > 0 && (
+                <nav class="article-links" aria-label={s.heading}>
+                  {s.links.map((link: any) => (
+                    <a href={localized(lang, link.path)}>
+                      {link.label} <span aria-hidden="true">→</span>
+                    </a>
+                  ))}
+                </nav>
               )}
             </section>
           ))}

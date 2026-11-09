@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "Calculateur d'expédition LoveGoBuy : coûts et poids du colis",
-      "description": "Utilisez le calculateur LoveGoBuy avec la bonne destination, le bon poids, les dimensions et la catégorie appropriés. Comprenez le poids volumétrique et comparez les estimations.",
+      "title": "Calculateur d'expédition LoveGoBuy : coût et poids facturable",
+      "description": "Estimez le transport LoveGoBuy avec poids réel et volumétrique, diviseurs propres aux services et exemple détaillé. Distinguez le devis du prix de l'article.",
       "category": "Expédition",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy fournit un estimateur officiel avec des données de colis et de destination. Ce guide apporte des conseils indépendants pour préparer ces données et comparer les résultats. Il ne recommande pas un mode d'expédition universellement moins cher et ne promet pas de délai de livraison pour votre commande."
       ],
       "sections": [
+        {
+          "heading": "Exemple détaillé de poids facturable",
+          "paragraphs": [
+            "Supposons qu'un colis hypothétique emballé pèse 2 kg et mesure 40 × 30 × 20 cm. Son volume est de 24 000 centimètres cubes. Si un service indique un diviseur de 6 000, son poids volumétrique est de 4 kg. Si un autre indique 8 000, il est de 3 kg. Ce sont des exemples arithmétiques, pas des devis actuels ni des règles interchangeables pour un même service.",
+            "Lorsqu'un service facture le plus élevé du poids réel et volumétrique, les poids facturables non arrondis de cet exemple sont respectivement 4 kg et 3 kg. Appliquez ensuite les paliers tarifaires, frais et limites d'admissibilité propres au service. Un poids calculé inférieur ne prouve pas à lui seul qu'un service est moins cher ou disponible. Si aucun service n'apparaît, consultez le guide de dépannage ci-dessous."
+          ],
+          "table": {
+            "columns": [
+              "Donnée ou règle d'exemple",
+              "Résultat"
+            ],
+            "rows": [
+              [
+                "Poids réel après emballage",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24 000 cm³"
+              ],
+              [
+                "Diviseur d'exemple de 6 000",
+                "Poids volumétrique de 4 kg"
+              ],
+              [
+                "Diviseur d'exemple de 8 000",
+                "Poids volumétrique de 3 kg"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Décrivez le colis que vous envisagez réellement",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Saisissez la destination réelle, le poids emballé et les dimensions extérieures dans l'estimateur officiel LoveGoBuy. Suivez les règles de poids, de diviseur et d'arrondi du service choisi. L'estimation ne devient définitive qu'après confirmation des données réelles du colis et des services sélectionnés."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "Suivi LoveGoBuy : retrouvez votre colis et comprenez les mises à jour",
-      "description": "Trouvez le bon numéro de suivi LoveGoBuy, distinguez commandes et colis, interprétez les interruptions et préparez une demande d'assistance utile.",
+      "title": "Suivi LoveGoBuy : état du colis et absence de mises à jour",
+      "description": "Suivez votre colis LoveGoBuy avec le bon numéro. Distinguez livraison du vendeur, traitement en entrepôt et interruptions du suivi international.",
       "category": "Suivi des colis",
       "keyword": "suivi lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "Le guide d'achat officiel de LoveGoBuy invite les clients à consulter la page Parcels pour suivre l'expédition. Ce guide indépendant explique comment organiser les informations affichées et examiner les mises à jour ambiguës. Il ne récupère pas les commandes privées, ne remplace pas le suivi du transporteur et ne promet aucune date de livraison. Les exemples ci-dessous décrivent des situations logistiques générales, pas une liste fixe de libellés de l'interface LoveGoBuy."
       ],
       "sections": [
+        {
+          "heading": "Aucune mise à jour : partez du dernier événement réel",
+          "paragraphs": [
+            "Associez la référence à l'étape d'expédition avant d'essayer un autre site de suivi. Un numéro de commande, un numéro de suivi intérieur et un numéro international peuvent coexister pour le même achat. Pour la partie internationale, utilisez celui du dossier de colis et conservez le dernier événement daté lorsque vous demandez de l'aide.",
+            "Il n'existe pas de nombre universel de jours après lequel toute interruption de suivi signifie une perte. Comparez le dernier scan et le temps écoulé à l'estimation actuelle du service choisi. Si ce délai est dépassé ou si le dossier affiche une anomalie nécessitant une action, contactez l'assistance officielle avec la référence et le statut exact, au lieu de supposer que le colis est saisi ou perdu."
+          ],
+          "table": {
+            "columns": [
+              "Statut observé",
+              "Vérification suivante utile"
+            ],
+            "rows": [
+              [
+                "Envoi du vendeur livré",
+                "Confirmer la réception à l'entrepôt ; il peut s'agir du trajet intérieur"
+              ],
+              [
+                "Étiquette créée ou données reçues",
+                "Vérifier la prise en charge par le transporteur"
+              ],
+              [
+                "Aucun nouveau scan après prise en charge",
+                "Comparer le délai du service au dernier événement transporteur"
+              ],
+              [
+                "Tentative de livraison ou problème d'adresse",
+                "Suivre rapidement les instructions officielles du transporteur"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Distinguez commande, référence du colis et numéro de suivi",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Ouvrez le dossier de votre colis international et copiez son numéro de suivi et son transporteur. Le numéro intérieur du vendeur suit l'article jusqu'à l'entrepôt, pas jusqu'à votre domicile. Une étiquette ou un numéro sans scan de prise en charge ne confirme pas à lui seul le début du transport international."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "Délais LoveGoBuy : de l'expédition du vendeur à la livraison",
-      "description": "Comprenez les étapes du délai de livraison LoveGoBuy, comparez les estimations actuelles et planifiez l'entrepôt, l'emballage et les remises aux transporteurs.",
+      "title": "Combien de temps prend une expédition LoveGoBuy ? Étapes et retards",
+      "description": "Comprenez les délais LoveGoBuy, du départ chez le vendeur au traitement en entrepôt et à la livraison finale. Identifiez l'étape avant de signaler un retard.",
       "category": "Délais d'expédition",
       "keyword": "délai de livraison lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "Le guide officiel LoveGoBuy présente l'achat et l'expédition du colis comme des décisions successives. Son estimateur permet d'examiner les services à partir de votre destination et des données du colis. Cet article transforme ce processus en méthode de planification. Il ne publie pas de promesses fixes, ne prétend pas qu'un itinéraire soit toujours le plus rapide et ne transforme pas l'expérience d'un autre client en estimation pour votre commande."
       ],
       "sections": [
+        {
+          "heading": "Quelle étape de l'expédition est réellement retardée ?",
+          "paragraphs": [
+            "Vérifiez le dernier événement achevé avant de décider qui contacter. Si le vendeur n'a pas expédié, le transporteur international ne peut pas rechercher l'article. Si l'article est à l'entrepôt mais qu'aucun colis n'a été soumis, le délai international n'a pas commencé. Après expédition, comparez l'historique de suivi à l'estimation actuelle annoncée par le service choisi.",
+            "Une chronologie simple évite les confusions : notez séparément les dates du paiement, du départ vendeur, de l'arrivée à l'entrepôt, de la soumission du colis, de la prise en charge par le transporteur et de la livraison. Laissez vides les dates manquantes. Interrogez l'assistance officielle sur l'étape précise inachevée, en indiquant la référence de commande ou de colis pertinente."
+          ],
+          "table": {
+            "columns": [
+              "Dernière étape confirmée",
+              "Vérification suivante"
+            ],
+            "rows": [
+              [
+                "Article payé ; vendeur sans expédition",
+                "Traitement vendeur et assistance commande"
+              ],
+              [
+                "Arrivée à l'entrepôt",
+                "Inspection, décisions en attente et soumission du colis"
+              ],
+              [
+                "Colis soumis ; aucune prise en charge transporteur",
+                "Traitement et confirmation de remise"
+              ],
+              [
+                "Colis accepté par le transporteur",
+                "Suivi international et mises à jour de livraison à destination"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Définissez le début et la fin de l'estimation",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Il n'existe pas de délai unique pour toutes les commandes LoveGoBuy. Expédition du vendeur, transport intérieur, traitement en entrepôt, transport international et livraison finale sont des étapes distinctes. Utilisez l'estimation actuelle du service choisi ; ne la comptez pas depuis le premier paiement de l'article."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "Trouvailles LoveGoBuy à moins de 20 $ : vêtements et accessoires",
+      "description": "Parcourez des trouvailles LoveGoBuy à moins de 20 $ avec des prix datés, des liens de vêtements et d'accessoires, des contrôles de taille et un budget avant expédition.",
+      "category": "Trouvailles petit budget",
+      "keyword": "trouvailles lovegobuy moins de 20 dollars",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Commencez par les catégories de vêtements et d'accessoires triées par prix, puis confirmez le prix de la variante choisie sur la page de commande. « Moins de 20 $ » désigne ici le prix de l'article affiché en dollars américains, et non son prix livré. Le transport international, la livraison intérieure, les services facultatifs et les frais éventuellement applicables peuvent porter le total final au-delà de ce montant.",
+        "Les exemples ci-dessous étaient visibles dans notre annuaire le 9 novembre 2026. Ce sont des points de départ pour comparer, sans recommandation issue d'un test ni garantie de disponibilité. Le parcours d'achat s'appuie sur le guide officiel de LoveGoBuy ; la méthode budgétaire et la liste de critères relèvent de nos conseils éditoriaux."
+      ],
+      "sections": [
+        {
+          "heading": "Trois exemples de prix pour commencer votre sélection",
+          "paragraphs": [
+            "L'annuaire affichait un collier sans marque à 0,97 $, des lunettes de soleil sans marque à 1,11 $ et une chemise à manches courtes à 9,58 $. Ouvrez les fiches liées pour consulter les informations actuelles. La source classe les deux premiers articles dans les couvre-chefs ; ce classement ne modifie pas ce que propose réellement la fiche.",
+            "Ces observations confirment uniquement que ces noms et ces prix étaient affichés à cette date. Elles ne confirment ni matériaux, ni authenticité, ni capacité de protection, ni disponibilité des variantes, ni qualité. En particulier, n'attribuez pas un niveau de protection UV aux lunettes sans preuve fiable. Une formule du vendeur comme « haute qualité » reste une affirmation à vérifier."
+          ],
+          "table": {
+            "columns": [
+              "Exemple de l'annuaire",
+              "Prix affiché le 9 novembre 2026",
+              "À vérifier avant commande"
+            ],
+            "rows": [
+              [
+                "Collier sans marque · 88",
+                "0,97 $",
+                "Dimensions, matériau et option choisie"
+              ],
+              [
+                "Lunettes de soleil sans marque · 99",
+                "1,11 $",
+                "Dimensions de la monture et protection annoncée"
+              ],
+              [
+                "Chemise à manches courtes · 3287",
+                "9,58 $",
+                "Mesures du vêtement, tissu et couleur"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Voir la fiche du collier",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Voir la fiche des lunettes de soleil",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Voir la fiche de la chemise à manches courtes",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Cherchez dans une catégorie pertinente",
+          "paragraphs": [
+            "Choisissez d'abord le type d'article : tee-shirts, accessoires, couvre-chefs ou pantalons et shorts. Trier tout l'annuaire par prix peut faire apparaître de petites pièces, des accessoires de rechange ou des options qui ne sont pas comparables à un vêtement complet. Une fiche bon marché n'est utile que si elle correspond à votre achat prévu. Affinez la catégorie avant de juger l'intérêt du prix.",
+            "Utilisez un terme simple décrivant l'article, puis ouvrez quelques candidats au lieu d'accumuler des dizaines de liens semblables. Enregistrez ensemble l'URL de la fiche et la variante souhaitée. Si le prix de la vignette diffère de celui de l'option choisie, retenez ce dernier pour comparer. Vérifiez si le montant concerne une pièce, une paire, un ensemble ou une quantité minimale."
+          ],
+          "links": [
+            {
+              "label": "Parcourir les tee-shirts par prix",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Parcourir les accessoires par prix",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Parcourir les couvre-chefs par prix",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Fixez un budget pour l'article et un budget livraison comprise",
+          "paragraphs": [
+            "Définissez deux limites avant d'ajouter quoi que ce soit à votre commande : un plafond pour le prix de l'article et le maximum que vous acceptez de dépenser livraison comprise. Ces limites répondent à des questions différentes. Un article à 18 $ respecte un plafond produit de 20 $, mais peut être un mauvais choix si le transport absorbe le reste du budget total. Consultez les informations officielles de LoveGoBuy sur les frais et son estimateur pour connaître les coûts actuels.",
+            "Prenons un exemple purement arithmétique : un article coûte 12 $, sa livraison intérieure 2 $ et la part du transport international que vous lui attribuez 9 $. Le sous-total atteint déjà 23 $, avant tout autre frais applicable. Ces chiffres sont inventés pour expliquer la méthode et ne constituent pas un devis. Conservez les montants incertains à part au lieu de leur attribuer discrètement zéro."
+          ]
+        },
+        {
+          "heading": "Comparez la coupe et les matériaux avant le prix",
+          "paragraphs": [
+            "Pour un tee-shirt, comparez largeur de poitrine, longueur du corps, largeur d'épaules et longueur des manches avec un vêtement qui vous va. Suivez la méthode de mesure du vendeur et demandez les dimensions manquantes. Les lettres de taille constituent une comparaison fragile, car les tableaux peuvent varier selon le vendeur et la coupe. Un prix bas ne compense pas un vêtement inconfortable à porter.",
+            "Pour un accessoire, notez les mesures qui déterminent son usage : longueur du collier, largeur de monture, type de fermoir ou compatibilité avec un autre article. Distinguez l'apparence photographiée d'une affirmation vérifiée sur le matériau. Si une caractéristique importante manque, suspendez ce choix. Acheter plusieurs options incertaines pour en trouver une adaptée peut coûter plus cher qu'une seule option bien documentée."
+          ]
+        },
+        {
+          "heading": "Examinez ensemble le poids et l'emballage",
+          "paragraphs": [
+            "Un petit article peut ajouter des frais de livraison évitables si son emballage augmente les dimensions extérieures du colis. À l'inverse, un article dense peut accroître le poids réel sans occuper beaucoup de place. L'estimateur LoveGoBuy applique les conditions du service choisi ; certains comparent poids réel et poids volumétrique. Demandez les mesures après emballage lorsqu'elles sont disponibles et comparez les options proposées pour votre destination.",
+            "N'ajoutez pas d'articles inutiles uniquement pour répartir le transport sur une commande plus importante. Le regroupement peut être pratique, mais un autre palier de poids, une limite de dimensions ou une restriction sur un article peut modifier les services disponibles. Comparez les projets de colis complets pour une même destination et des exigences de protection identiques. Conservez les protections si leur retrait crée un risque de dommage que vous ne souhaitez pas accepter."
+          ]
+        },
+        {
+          "heading": "Utilisez les photos pour répondre à des questions précises",
+          "paragraphs": [
+            "Les images de l'annuaire sont des photos produit, pas automatiquement des photos de contrôle qualité prises à l'entrepôt pour votre commande. Après l'arrivée de l'article, examinez les images associées à cette commande et comparez-les à la variante choisie. Vérifiez couleur visible, pièces incluses, étiquettes, défauts évidents et mesures demandées. Documentez clairement tout écart avant de décider d'expédier.",
+            "Une demande de photo supplémentaire utile pose une question observable : montrer le fermoir du collier, mesurer la largeur de poitrine du vêtement ou montrer les deux côtés d'un accessoire. Les photos ne prouvent pas toutes les propriétés des matériaux ou performances annoncées. Si une préoccupation exige une information qu'une photo ne fournit pas, interrogez directement le vendeur ou l'assistance. Consultez les conditions de retour applicables tant qu'il reste possible d'agir."
+          ]
+        },
+        {
+          "heading": "Gardez une courte fiche de comparaison",
+          "paragraphs": [
+            "Pour chaque candidat, conservez l'URL produit, l'option choisie, le prix actuel, les preuves de mesures, l'emballage prévu et les questions non résolues. Ajoutez une décision : approfondir, prêt à commander ou supprimer. Ce relevé permet de voir plus facilement que l'option la moins chère manque encore d'une mesure, tandis qu'une option légèrement plus coûteuse répond déjà à vos exigences.",
+            "Revérifiez la page de commande finale juste avant le paiement. Confirmez l'article source, la quantité et la variante sans vous fier à une ancienne capture d'écran. Si le produit a disparu ou changé de prix, revenez à la catégorie et recommencez la comparaison ; ne choisissez pas un remplaçant simplement parce que son image vous semble familière. Un lien enregistré est une référence, pas une réservation. Notez la date du contrôle près du prix pour éviter de confondre une observation ancienne avec une offre actuelle."
+          ],
+          "table": {
+            "columns": [
+              "Champ de comparaison",
+              "Son intérêt"
+            ],
+            "rows": [
+              [
+                "Variante exacte et quantité",
+                "Évite de comparer une pièce seule à un ensemble"
+              ],
+              [
+                "Mesures et matériaux",
+                "Relie la fiche à vos besoins réels"
+              ],
+              [
+                "Prix de l'article et provision pour livraison",
+                "Indique si le budget complet est réaliste"
+              ],
+              [
+                "Question en suspens et prochaine action",
+                "Garde les preuves manquantes visibles"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Questions fréquentes sur les trouvailles petit budget",
+          "paragraphs": [
+            "Une fiche à moins de 20 $ inclut-elle la livraison ? Non : ce guide utilise le prix affiché de l'article. Vérifiez séparément livraison intérieure, transport international, services facultatifs et autres frais applicables. Le prix de l'annuaire peut-il changer ? Oui. Traitez les exemples datés comme des observations et vérifiez la variante sélectionnée sur la page de commande actuelle.",
+            "La qualité des exemples a-t-elle été testée ? Non. Nous n'avons pas testé ces articles et leur présence ne certifie pas leur authenticité. Faut-il commander le résultat le moins cher ? Seulement si l'article, les mesures et le budget total répondent à vos exigences. Partez d'un usage précis, gardez une sélection limitée et consultez les guides de tailles, de contrôle qualité et de coûts liés pour résoudre les questions restantes."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Moins de 20 $ désigne le prix de l'article, pas le total livré.",
+        "Vérifiez la variante actuelle, les mesures et la quantité avant de payer.",
+        "Utilisez les photos de contrôle de votre commande et conservez le lien source."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "Tableau de chaussures LoveGoBuy : tailles, prix et contrôles qualité",
+      "description": "Utilisez le tableau de chaussures LoveGoBuy pour comparer les fiches, mesures, prix sélectionnés, photos de contrôle qualité et emballages avant expédition.",
+      "category": "Chaussures",
+      "keyword": "tableau chaussures lovegobuy",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Utilisez la catégorie chaussures pour établir une sélection, puis comparez la pointure exacte, le prix sélectionné et les mesures disponibles sur chaque fiche. Une pointure familière ou une photo produit ne suffit pas à garantir un bon chaussant. Avant l'expédition internationale, examinez les photos d'entrepôt de votre propre paire et vérifiez l'effet de l'emballage sur le devis du colis.",
+        "Ce guide relie l'annuaire de chaussures à une méthode pratique de comparaison. Il ne note pas de chaussures non testées, ne certifie pas leur authenticité et ne promet aucun coût d'expédition précis. Le guide officiel d'achat de LoveGoBuy et son estimateur expliquent le parcours sur la plateforme ; les contrôles de pointure et d'état ci-dessous constituent des conseils éditoriaux indépendants."
+      ],
+      "sections": [
+        {
+          "heading": "Ouvrez l'annuaire avec un objectif précis",
+          "paragraphs": [
+            "Commencez par la catégorie chaussures et déterminez l'usage de la paire. Marche quotidienne, utilisation occasionnelle et activité particulière peuvent exiger des preuves différentes. Les titres des fiches aident à trouver des candidats, mais ne prouvent ni confort, ni performances, ni durabilité. La présence d'une marque connue dans une fiche ne signifie pas que les affirmations du vendeur ont été vérifiées.",
+            "Triez par prix pour comparer les montants affichés et gardez deux ou trois candidats réalistes. Ouvrez chaque page produit avant de l'enregistrer. Notez l'URL, la couleur souhaitée, la pointure et le prix de l'option réellement affiché. Ne comparez pas l'accessoire sélectionnable le moins cher d'une page à une paire complète proposée sur une autre."
+          ],
+          "links": [
+            {
+              "label": "Ouvrir le tableau de chaussures LoveGoBuy",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Comparer les chaussures par prix affiché",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez les mesures, pas seulement les pointures",
+          "paragraphs": [
+            "Commencez par le tableau des tailles du vendeur et identifiez ce que mesure chaque chiffre. Longueur du pied, longueur de semelle intérieure et longueur de semelle extérieure sont des mesures différentes. Un tableau en centimètres n'est utile que si sa méthode de mesure est claire. Ne supposez pas qu'une pointure européenne se convertit de façon identique chez tous les vendeurs ni qu'une étiquette américaine utilise toujours le même système.",
+            "Mesurez les deux pieds avec la même méthode et comparez la mesure la plus grande au tableau. Tenez aussi compte de la largeur et de la forme de l'avant-pied lorsque le vendeur fournit ces informations. Si la fiche indique seulement des pointures, demandez des précisions avant achat. Une photo d'entrepôt de l'étiquette confirme la pointure marquée sur la paire, mais ne prouve pas qu'elle vous ira."
+          ],
+          "table": {
+            "columns": [
+              "Élément de preuve",
+              "Ce qu'il indique",
+              "Ce qui reste incertain"
+            ],
+            "rows": [
+              [
+                "Tableau des tailles du vendeur",
+                "La mesure annoncée pour une option",
+                "La concordance entre sa méthode et votre mesure"
+              ],
+              [
+                "Photo de l'étiquette de pointure",
+                "L'étiquette de la paire reçue",
+                "Le chaussant réel et l'espace intérieur utilisable"
+              ],
+              [
+                "Mesure demandée",
+                "Une dimension visible mesurée sur la photo",
+                "Le confort et les performances à long terme"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Notez précisément la paire que vous souhaitez acheter",
+          "paragraphs": [
+            "Créez une courte fiche par candidat : URL source, place de marché, pointure choisie, couleur, prix et question éventuelle au vendeur. Si une page contient plusieurs versions, notez explicitement la version. Des images semblables peuvent apparaître sur plusieurs fiches sans rendre ces dernières interchangeables. Préservez l'identité du produit depuis sa découverte jusqu'à la confirmation de commande.",
+            "Vérifiez le contenu du paquet. Une boîte à chaussures, des lacets supplémentaires ou d'autres accessoires peuvent modifier à la fois ce que vous recevez et les dimensions du colis. Ne supposez pas que tous les éléments d'une photo promotionnelle sont inclus. Si une pièce influe sur votre décision, confirmez sa présence avant de payer et ajoutez-la aux points à contrôler sur les photos d'entrepôt."
+          ]
+        },
+        {
+          "heading": "Examinez les photos de contrôle qualité de votre commande",
+          "paragraphs": [
+            "Les photos publiques montrent éventuellement l'apparence d'une autre commande ; les images jointes à votre commande sont les preuves pertinentes pour la paire à expédier. Comparez les deux chaussures, couleurs visibles, étiquettes de pointure, coutures, bords des semelles et pièces incluses. Cherchez les différences ou dommages manifestes. Prenez les détails de votre commande comme référence plutôt qu'une autre fiche utilisant une image semblable.",
+            "Demandez un angle ou une mesure supplémentaire uniquement pour résoudre une incertitude précise. Demandez par exemple une photo nette des deux étiquettes de pointure ou une mesure montrant la position de la règle. Ne présentez pas les photos du vendeur comme un contrôle d'entrepôt et ne considérez pas l'examen de photos comme une garantie d'authenticité ou de durabilité. Certaines questions ne peuvent pas être tranchées par des images."
+          ],
+          "bullets": [
+            "Vérifiez que les deux chaussures correspondent à la pointure et à la couleur prévues.",
+            "Comparez la fabrication visible et les éléments inclus au relevé de commande.",
+            "Résolvez toute différence visible avant d'autoriser l'expédition internationale."
+          ]
+        },
+        {
+          "heading": "Calculez le coût complet de la paire",
+          "paragraphs": [
+            "Distinguez le prix de l'article, la livraison intérieure, le transport international et les services choisis. L'annuaire affiche des montants en dollars américains pour la recherche, tandis que les pages actuelles de commande et de paiement déterminent le montant facturé. Taux de change, options sélectionnées et modifications du vendeur peuvent influer sur le total. Enregistrez le devis actuel au lieu de considérer une ancienne vignette comme le budget complet.",
+            "À titre de calcul uniquement, une paire hypothétique à 18 $, avec 3 $ de livraison intérieure et 14 $ de transport international attribué, totalise déjà 35 $. Ces nombres ne sont ni des frais LoveGoBuy constatés ni un devis pour une destination. Ils montrent pourquoi comparer seulement le prix de deux paires peut tromper lorsque leurs poids ou dimensions emballés diffèrent."
+          ]
+        },
+        {
+          "heading": "Comparez l'expédition avec et sans boîte",
+          "paragraphs": [
+            "Si le service d'emballage disponible le permet, demandez comment conserver ou retirer la boîte modifierait les dimensions, la protection et l'admissibilité aux services de transport. Retirer une boîte ne garantit pas un prix inférieur. Un service facturant au poids réel peut fonctionner différemment d'un service comparant poids réel et volumétrique, et le colis peut rester dans le même palier tarifaire.",
+            "Utilisez le diviseur et les règles d'arrondi du service précisément choisi. À titre d'illustration, un colis de 35 × 25 × 15 cm a un volume de 13 125 centimètres cubes. Diviser par 6 000 donne environ 2,19 kg ; diviser par 8 000 donne environ 1,64 kg. Il s'agit d'exemples mathématiques alternatifs, pas de deux règles interchangeables pour un même service. Comparez-les au poids réel uniquement selon les instructions du service retenu."
+          ],
+          "table": {
+            "columns": [
+              "Choix d'emballage",
+              "Informations à demander"
+            ],
+            "rows": [
+              [
+                "Conserver la boîte à chaussures",
+                "Dimensions extérieures emballées, protection et devis complet"
+              ],
+              [
+                "Retirer la boîte si proposé",
+                "Protection de remplacement, nouvelles dimensions et devis complet"
+              ],
+              [
+                "Regrouper avec d'autres articles",
+                "Poids du colis entier, restrictions et services disponibles"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Résolvez les problèmes pendant que la paire est à l'entrepôt",
+          "paragraphs": [
+            "Si vous constatez une mauvaise option ou un dommage visible, conservez le numéro de commande, les détails pertinents de la fiche et les images du problème. Expliquez l'écart dans une demande brève et factuelle. Demandez les possibilités de retour ou d'échange actuellement ouvertes pour cette commande. Les conditions du vendeur et l'étape de traitement comptent ; ce guide ne promet pas que chaque article peut être retourné.",
+            "N'expédiez pas la paire à l'international tant qu'une question importante sur la taille ou l'état reste sans réponse. Une fois l'article intégré à un colis expédié, les possibilités pratiques peuvent changer. Gardez la discussion dans le canal officiel d'assistance et conservez sa réponse avec votre fiche de comparaison. Une description claire et des photos précises sont plus utiles que plusieurs répétitions de la même plainte vague."
+          ]
+        },
+        {
+          "heading": "Questions à résoudre avant l'expédition",
+          "paragraphs": [
+            "Existe-t-il une conversion universelle des pointures LoveGoBuy ? Utilisez le tableau et la méthode de mesure du vendeur pour la fiche choisie plutôt qu'une conversion universelle. Les images de l'annuaire sont-elles des photos de contrôle qualité ? Non : les images produit et les photos d'entrepôt de votre commande ont des rôles différents. Une paire à moins de 20 $ peut-elle arriver pour moins de 20 $ ? Le seul prix affiché ne répond pas à cette question.",
+            "Retirer la boîte fait-il toujours économiser ? Non. Comparez les emballages réellement proposés et le devis du service, en incluant le niveau de protection nécessaire. Votre contrôle final est simple : confirmer la paire, comprendre les preuves de taille, examiner les bonnes photos, résoudre les écarts et comparer le projet d'expédition complet. Consultez ensuite le guide de suivi une fois le colis international réellement expédié."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Conservez ensemble l'URL source exacte, la pointure et la couleur.",
+        "Une étiquette de pointure, une mesure et un jugement de chaussant sont des preuves différentes.",
+        "Comparez le devis complet d'emballage et d'expédition avant d'autoriser le départ."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "Aucun service d'expédition LoveGoBuy disponible : points à vérifier",
+      "description": "Aucun service LoveGoBuy disponible ? Vérifiez destination, poids, dimensions du colis et restrictions des articles, puis comparez les emballages proposés.",
+      "category": "Résoudre un problème d'expédition",
+      "keyword": "lovegobuy aucun service d'expédition disponible",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Si LoveGoBuy n'affiche aucun service d'expédition, vérifiez d'abord la destination, l'unité de poids, les dimensions extérieures du colis et les catégories d'articles saisies. L'estimateur officiel explique que les limites de dimensions ou de poids peuvent supprimer des options. Un article soumis à restriction, une destination non desservie ou un changement temporaire de service peuvent également nécessiter une clarification de l'assistance.",
+        "Ne modifiez pas des informations exactes sur les articles simplement pour faire apparaître un service. L'étape utile consiste à identifier la saisie ou la condition d'admissibilité qui produit ce résultat vide, puis à comparer des options d'emballage ou de colis autorisées. Ce guide est une méthode de diagnostic, pas la promesse que tout colis peut être envoyé à toute adresse."
+      ],
+      "sections": [
+        {
+          "heading": "Vérifiez si vous faites une estimation ou soumettez un colis",
+          "paragraphs": [
+            "Une estimation réalisée avant l'emballage en entrepôt utilise vos propres informations. Un colis prêt à être soumis peut utiliser les mesures et renseignements de l'entrepôt. Ces niveaux de preuve diffèrent. Notez l'écran présentant le résultat vide, la destination choisie et la nature des dimensions : estimations ou mesures de l'emballage. Ce contexte évite de chercher la cause à la mauvaise étape.",
+            "Si une estimation antérieure proposait un service mais que le colis final n'en propose plus, comparez les données avant de conclure à une erreur système. L'emballage peut modifier les dimensions extérieures, le poids final peut entrer dans un autre palier et le colis peut contenir un article soumis à des conditions particulières. Les options actuelles du colis final priment sur un exemple préliminaire."
+          ]
+        },
+        {
+          "heading": "Vérifiez la destination et les unités",
+          "paragraphs": [
+            "Contrôlez le pays ou la région de destination et les précisions d'adresse demandées par le formulaire. Si un service impose des restrictions géographiques, demandez à l'assistance si votre adresse est concernée. Ne remplacez pas la destination par un autre pays pour obtenir un devis rassurant. L'estimation n'est utile que si elle décrit l'envoi que vous comptez réellement effectuer.",
+            "Lisez ensuite les unités près de chaque champ. Un poids saisi comme 2 000 kilogrammes au lieu de 2 000 grammes peut produire un résultat dénué de sens. Le même problème survient lorsque des millimètres sont saisis dans un champ en centimètres. Saisissez à nouveau les mesures réelles dans les unités indiquées et gardez une capture des données corrigées si la liste reste vide."
+          ],
+          "table": {
+            "columns": [
+              "Donnée saisie",
+              "Vérification utile"
+            ],
+            "rows": [
+              [
+                "Destination",
+                "Pays ou région réel et précisions d'adresse nécessaires"
+              ],
+              [
+                "Poids",
+                "Valeur correspondant à l'unité affichée par le formulaire"
+              ],
+              [
+                "Dimensions",
+                "Longueur, largeur et hauteur extérieures après emballage, dans les unités indiquées"
+              ],
+              [
+                "Catégorie d'article",
+                "Description exacte de tout le contenu du colis"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Vérifiez séparément le poids réel et les limites de dimensions",
+          "paragraphs": [
+            "Un colis peut respecter une limite de poids tout en dépassant les dimensions autorisées par un service. Consultez ses conditions concernant le côté le plus long, les autres règles dimensionnelles et la plage de poids permise. L'estimateur mentionne des restrictions pour les colis trop lourds ou volumineux, mais aucune limite unique ne s'applique à tous les services. Lisez les conditions propres à votre destination et au service disponible.",
+            "Le poids volumétrique est un calcul distinct utilisé par certains services pour déterminer le poids facturable. À titre d'exemple, 40 × 30 × 20 cm correspondent à 24 000 centimètres cubes. Un diviseur de 6 000 donne 4 kg ; un diviseur de 8 000 donne 3 kg. Aucun n'est universel. Appliquez la règle annoncée par le service et distinguez le calcul du poids facturable des limites de dimensions déterminant l'admissibilité."
+          ]
+        },
+        {
+          "heading": "Examinez les articles susceptibles de restreindre le colis",
+          "paragraphs": [
+            "Vérifiez les conditions de transport de chaque article regroupé, notamment en présence d'une batterie, d'un liquide, d'une poudre, d'un composant magnétique ou d'une autre caractéristique potentiellement restreinte par un transporteur. Cette liste indique des questions à examiner ; elle n'affirme pas que LoveGoBuy interdit tous les articles de ces catégories. Le service applicable et la destination déterminent ce qui est permis.",
+            "Demandez à l'assistance d'identifier la caractéristique précise de l'article et la condition du service empêchant l'expédition. Gardez une description exacte et ne dissimulez pas un article ni ne choisissez une catégorie sans rapport pour contourner une restriction. Si un article n'est admissible à aucun service disponible, demandez quelles options autorisées restent possibles avant de payer un emballage supplémentaire ou de présumer une solution de contournement."
+          ]
+        },
+        {
+          "heading": "Comparez les options proposées de réemballage ou de séparation",
+          "paragraphs": [
+            "L'estimateur LoveGoBuy explique que diviser un envoi trop lourd ou volumineux peut constituer une option et mentionne des services de simulation ou d'emballage pour obtenir de meilleures mesures. Vérifiez leur disponibilité et leurs frais sur la plateforme actuelle. Demandez le poids et les dimensions emballés de chaque colis proposé, puis estimez chaque envoi pour la même destination réelle.",
+            "Comparez la somme de tous les devis de colis et services sélectionnés. Deux petits colis peuvent coûter plus cher, chacun pouvant entraîner ses propres frais initiaux, même si la séparation rend à nouveau un service accessible. Le réemballage peut modifier la protection autant que les dimensions. Conservez les protections essentielles des articles fragiles et n'approuvez pas un changement sans comprendre le compromis et le montant complet éventuellement dû."
+          ],
+          "table": {
+            "columns": [
+              "Action possible",
+              "À comparer avant validation"
+            ],
+            "rows": [
+              [
+                "Corriger une erreur de saisie",
+                "Unités exactes et destination réelle"
+              ],
+              [
+                "Réemballer si proposé",
+                "Nouvelles dimensions, matériaux protecteurs et frais du service"
+              ],
+              [
+                "Séparer si proposé",
+                "Admissibilité de chaque colis et somme des devis"
+              ],
+              [
+                "Retirer un article non admissible",
+                "Options officielles de traitement ou de retour"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Distinguez une estimation vide d'un problème de compte",
+          "paragraphs": [
+            "Une liste vide ne prouve pas à elle seule que votre compte est bloqué, votre paiement refusé ou votre colis perdu. Vérifiez les informations réellement affichées. S'il existe un message d'erreur distinct, relevez son texte. Actualiser le formulaire peut résoudre un problème d'affichage temporaire, mais des actualisations répétées ne corrigent pas une véritable restriction de poids, de dimensions ou d'admissibilité.",
+            "Si la liste change alors que le colis reste identique, demandez si les services vers la destination ont été temporairement ajustés. Ne reprenez pas un nom de service ou une promesse de délai dans un ancien message de forum. Utilisez l'estimation officielle actuelle et la réponse de la plateforme, et conservez l'heure du contrôle pour comparer correctement les évolutions ultérieures."
+          ]
+        },
+        {
+          "heading": "Envoyez une demande de diagnostic utile à l'assistance",
+          "paragraphs": [
+            "Communiquez en privé, par le canal officiel, la référence de commande ou de colis, la destination, le poids et les dimensions avec leurs unités, les types d'articles, l'écran précis et le texte de l'erreur. Précisez si les mesures sont estimées ou fournies par l'entrepôt. Joignez une capture montrant les données pertinentes en évitant les informations personnelles ou de paiement inutiles.",
+            "Posez une question concrète : quelle valeur saisie, condition liée à un article ou limite de service empêche l'affichage d'une option, et quel changement pris en charge rendrait le colis admissible ? Si l'assistance propose séparation ou réemballage, demandez les mesures et coûts qui en résulteraient avant de valider. Conservez la réponse avec le dossier du colis pour vérifier que l'estimation suivante utilise les données convenues."
+          ]
+        },
+        {
+          "heading": "Que faire lorsqu'un service apparaît",
+          "paragraphs": [
+            "Lisez les conditions avant de choisir la nouvelle option. Comparez le prix complet, le délai annoncé, les modalités de suivi et les restrictions pertinentes. Un service visible est une option à évaluer, pas une garantie d'arrivée à une date précise. Vérifiez que tous les articles et la destination réelle sont encore correctement décrits lors de la soumission finale du colis.",
+            "Après expédition, utilisez le numéro de suivi du colis international plutôt que celui de la livraison intérieure du vendeur. Si aucun service n'est admissible, ne soumettez pas le colis tant que l'assistance officielle n'a pas expliqué les choix possibles. Le résultat utile le plus sûr est une réponse exacte sur l'admissibilité et le coût ; modifier des informations vraies jusqu'à faire apparaître un bouton ne produit pas un projet d'expédition valable."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Vérifiez d'abord destination, unités, dimensions et informations sur les articles.",
+        "Consultez les limites de chaque service ; ne supposez pas un diviseur ou poids maximal unique.",
+        "Comparez le coût total et la protection de tout projet proposé de séparation ou de réemballage."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

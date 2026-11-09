@@ -126,6 +126,17 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
           >
             {t.faq}
           </a>
+          <a href={localized(lang, "/articles/lovegobuy-qc-photo-checklist/")}>
+            {c.qcNav}
+          </a>
+          <a
+            href={localized(
+              lang,
+              "/articles/lovegobuy-shipping-estimate-guide/",
+            )}
+          >
+            {c.shippingNav}
+          </a>
           <a
             class:list={{
               active: path.startsWith("/articles/") && path !== articlePath,
@@ -168,6 +179,14 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
         <a href={localized(lang, "/spreadsheet/")}>{t.browse}</a>
         <a href={localized(lang, articlePath)}>{c.guideNav}</a>
         <a href={localized(lang, "/faq/")}>{t.faq}</a>
+        <a href={localized(lang, "/articles/lovegobuy-qc-photo-checklist/")}>
+          {c.qcNav}
+        </a>
+        <a
+          href={localized(lang, "/articles/lovegobuy-shipping-estimate-guide/")}
+        >
+          {c.shippingNav}
+        </a>
         <a href={localized(lang, "/articles/")}>{c.articles}</a>
         <a href={REGISTER} target="_blank" rel="noopener">
           {t.register}

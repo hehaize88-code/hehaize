@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "Vodič za kalkulator dostave LoveGoBuy: stroški in teža paketa",
-      "description": "Uporabite kalkulator dostave LoveGoBuy s pravilnim ciljem, težo, merami in kategorijo blaga. Razumite prostorninsko težo in primerjajte ocene za pakete.",
+      "title": "Kalkulator pošiljanja LoveGoBuy: cena in obračunska teža",
+      "description": "Ocenite pošiljanje LoveGoBuy z dejansko in prostorninsko težo, delitelji poti in računskim primerom. Ponudbo ločite od cene izdelka.",
       "category": "Dostava",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy ponuja uradni kalkulator z vnosi za paket in cilj. Ta vodnik daje neodvisne nasvete za pripravo vnosov in primerjavo rezultatov. Ne priporoča splošno najcenejše poti in ne obljublja dobavnega roka za vaše naročilo."
       ],
       "sections": [
+        {
+          "heading": "Izračunan primer obračunske teže",
+          "paragraphs": [
+            "Predpostavimo, da hipotetični zapakiran paket tehta 2 kg in meri 40 × 30 × 20 cm. Njegova prostornina je 24.000 kubičnih centimetrov. Če pot določa delitelj 6.000, je prostorninska teža 4 kg. Če druga pot določa 8.000, je 3 kg. To so računski primeri, ne aktualne ponudbe ali zamenljiva pravila za eno pot.",
+            "Če pot zaračunava po večji izmed dejanske in prostorninske teže, bi bila nezaokrožena obračunska teža v tem primeru 4 kg oziroma 3 kg. Nato uporabite lastne obračunske korake, pristojbine in omejitve upravičenosti te poti. Nižja izračunana teža sama ne dokazuje, da je pot cenejša ali razpoložljiva. Če se ne pojavi nobena pot, uporabite spodnji vodnik za odpravljanje težav."
+          ],
+          "table": {
+            "columns": [
+              "Primer vnosa ali pravila",
+              "Rezultat"
+            ],
+            "rows": [
+              [
+                "Dejanska zapakirana teža",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24.000 cm³"
+              ],
+              [
+                "Primer delitelja 6.000",
+                "4 kg prostorninske teže"
+              ],
+              [
+                "Primer delitelja 8.000",
+                "3 kg prostorninske teže"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Opišite paket, ki ga dejansko obravnavate",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "V uradni kalkulator pošiljanja LoveGoBuy vnesite dejanski cilj, zapakirano težo in zunanje mere. Upoštevajte pravila izbrane poti glede teže, delitelja in zaokroževanja. Ocena ni končna pristojbina, dokler niso potrjeni dejanski podatki paketa in izbrane storitve."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "Sledenje LoveGoBuy: sledite paketu in razumite posodobitve",
-      "description": "Poiščite pravo številko za sledenje LoveGoBuy, ločite naročila od paketov, razumite premore v sledenju in pripravite koristno zahtevo podpori.",
+      "title": "Sledenje LoveGoBuy: status paketa in preverjanje posodobitev",
+      "description": "Sledite paketu LoveGoBuy s pravilno številko. Ločite prodajalčevo dostavo, obdelavo v skladišču in premore v mednarodnem sledenju.",
       "category": "Sledenje paketom",
       "keyword": "lovegobuy sledenje",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "Uradni nakupovalni vodič LoveGoBuy kupce usmeri na stran »Parcels« za spremljanje napredka pošiljanja. Ta neodvisni vodič pojasnjuje, kako urediti tam prikazane podatke in raziskati nejasne posodobitve. Ne pridobiva zasebnih naročil, ne nadomešča prevoznikovega sistema sledenja in ne obljublja datuma dostave. Spodnji primeri statusov opisujejo splošne logistične okoliščine, ne stalnega seznama oznak vmesnika LoveGoBuy."
       ],
       "sections": [
+        {
+          "heading": "Ni posodobitve sledenja: začnite z zadnjim dejanskim dogodkom",
+          "paragraphs": [
+            "Pred uporabo druge strani za sledenje povežite referenco s fazo pošiljanja. Isti nakup ima lahko številko naročila, domačo številko za sledenje in številko mednarodnega paketa. Za mednarodni del uporabite številko iz zapisa paketa ter ob prošnji za pomoč ohranite zadnji datirani dogodek.",
+            "Ni univerzalnega števila dni, po katerem vsak premor v sledenju pomeni izgubo. Zadnji sken in pretečeni čas primerjajte z aktualno oceno izbrane storitve. Če jo presega ali zapis kaže izjemo, ki zahteva ukrepanje, kontaktirajte uradno podporo z referenco paketa in točnim statusom, namesto da predpostavljate zaseg ali izgubo."
+          ],
+          "table": {
+            "columns": [
+              "Opaženi status",
+              "Koristno naslednje preverjanje"
+            ],
+            "rows": [
+              [
+                "Prodajalčeva pošiljka dostavljena",
+                "Potrdite prejem v skladišču; to je lahko le domači del"
+              ],
+              [
+                "Nalepka ustvarjena ali podatki prejeti",
+                "Preverite, ali je prevoznik že prevzel paket"
+              ],
+              [
+                "Po prevzemu ni novega skena",
+                "Primerjajte oceno poti in zadnji dogodek prevoznika"
+              ],
+              [
+                "Poskus dostave ali težava z naslovom",
+                "Nemudoma upoštevajte uradna navodila prevoznika"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Ločite naročilo izdelka, referenco paketa in številko za sledenje",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Odprite zapis mednarodnega paketa ter kopirajte številko za sledenje in prevoznika. Prodajalčeva domača številka sledi izdelku do skladišča, ne do vašega doma. Nalepka ali številka paketa brez skena prevzema prevoznika sama ne potrjuje začetka mednarodnega prevoza."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "Čas dostave LoveGoBuy: od prodajalčeve odpreme do dostave",
-      "description": "Spoznajte faze časa dostave LoveGoBuy, primerjajte trenutne ocene poti ter načrtujte skladiščne postopke, pakiranje in predaje prevoznikom.",
+      "title": "Kako dolgo traja dostava LoveGoBuy? Faze in zamude",
+      "description": "Razumite čas dostave LoveGoBuy od prodajalčeve odpreme do obdelave v skladišču in končne dostave. Pred preverjanjem zamude določite pravo fazo.",
       "category": "Čas dostave",
       "keyword": "lovegobuy čas dostave",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "Uradni vodič LoveGoBuy opisuje nakup in pošiljanje paketov kot zaporedni odločitvi. Kalkulator omogoča pregled storitev s podatki o cilju in paketu. Ta članek postopek spremeni v metodo načrtovanja. Ne objavlja fiksnih obljub o dostavi, ne trdi, da je ena pot vedno najhitrejša, in izkušnje druge stranke ne pretvarja v oceno za vaše naročilo."
       ],
       "sections": [
+        {
+          "heading": "Katera faza pošiljanja dejansko zamuja?",
+          "paragraphs": [
+            "Pred odločitvijo, koga kontaktirati, preverite zadnji zaključen dogodek. Če prodajalec ni odposlal, mednarodni prevoznik izdelka ne more izslediti. Če je izdelek v skladišču, paket pa ni oddan, se ocenjeni čas mednarodne dostave še ni začel. Po odpremi primerjajte zgodovino sledenja z aktualno navedeno oceno izbrane storitve.",
+            "Preprosta časovnica prepreči zmedo: plačilo izdelka, prodajalčevo odpremo, prihod v skladišče, oddajo paketa, prevzem prevoznika in dostavo zapišite kot ločene datume. Manjkajoče datume pustite prazne. Vprašajte o konkretni nedokončani fazi in v uradnem kanalu podpore navedite ustrezno referenco naročila ali paketa."
+          ],
+          "table": {
+            "columns": [
+              "Zadnja potrjena faza",
+              "Kaj preveriti naprej"
+            ],
+            "rows": [
+              [
+                "Izdelek plačan; prodajalec ni odposlal",
+                "Prodajalčeva obdelava in podpora za naročilo"
+              ],
+              [
+                "Prihod v skladišče",
+                "Pregled, čakajoče odločitve in oddaja paketa"
+              ],
+              [
+                "Paket oddan; prevoznik ga ni prevzel",
+                "Obdelava in potrditev predaje"
+              ],
+              [
+                "Prevoznik prevzel paket",
+                "Mednarodno sledenje in posodobitve dostave na cilju"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Določite začetek in konec ocene",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Za vsa naročila LoveGoBuy ni enotnega časa dostave. Prodajalčeva odprema, domači prevoz, skladiščna obdelava, mednarodni prevoz in končna dostava so ločene faze. Uporabite aktualno oceno izbrane poti; ne štejte je od dneva, ko ste prvič plačali izdelek."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "Najdbe LoveGoBuy pod 20 USD: oblačila in dodatki",
+      "description": "Odkrijte najdbe LoveGoBuy pod 20 USD z datiranimi primeri cen, povezavami do oblačil in dodatkov, preverjanjem mer ter jasnim proračunom pred pošiljanjem.",
+      "category": "Ugodne najdbe",
+      "keyword": "lovegobuy najdbe pod 20 dolarji",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Začnite s kategorijama oblačil in dodatkov, razvrščenima po ceni, nato na strani naročila potrdite ceno izbrane različice. »Pod 20 USD« tukaj pomeni prikazano ceno izdelka v ameriških dolarjih, ne cene z dostavo. Mednarodno pošiljanje, domača dostava, dodatne storitve in morebitni drugi stroški lahko končni znesek povečajo nad to mejo.",
+        "Spodnji primeri so bili v našem katalogu vidni 9. novembra 2026. So izhodišča za primerjavo, ne priporočila preizkušenih izdelkov ali obljube zaloge. Postopek nakupa temelji na uradnem vodniku LoveGoBuy; metoda proračuna in kontrolni seznam za izbiro sta naša uredniška nasveta."
+      ],
+      "sections": [
+        {
+          "heading": "Trije primeri cen za začetni izbor",
+          "paragraphs": [
+            "Katalog je prikazoval ogrlico brez blagovne znamke za 0,97 USD, sončna očala brez blagovne znamke za 1,11 USD in majico s kratkimi rokavi za 9,58 USD. Za aktualne podatke odprite povezane strani izdelkov. Vir prva dva izdelka uvršča med pokrivala; uvrstitev v kategorijo ne spremeni dejanske vsebine ponudbe.",
+            "Ta opažanja potrjujejo samo, da so bili tistega dne prikazani takšni nazivi in cene. Ne potrjujejo materialov, pristnosti, zaščitnih lastnosti, razpoložljivosti različic ali kakovosti. Zlasti ne predpostavljajte navedene ravni UV-zaščite sončnih očal brez zanesljivih dokazov. Prodajalčev opis, kot je »visoka kakovost«, je trditev, ki jo je treba preveriti."
+          ],
+          "table": {
+            "columns": [
+              "Primer iz kataloga",
+              "Prikazana cena izdelka 9. 11. 2026",
+              "Preverite pred naročilom"
+            ],
+            "rows": [
+              [
+                "Ogrlica brez blagovne znamke · 88",
+                "$0.97",
+                "Mere, material in izbrana možnost"
+              ],
+              [
+                "Sončna očala brez blagovne znamke · 99",
+                "$1.11",
+                "Mere okvirja in morebitne trditve o zaščiti"
+              ],
+              [
+                "Majica s kratkimi rokavi · 3287",
+                "$9.58",
+                "Mere oblačila, tkanina in barva"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Oglejte si ponudbo ogrlice",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Oglejte si ponudbo sončnih očal",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Oglejte si ponudbo majice s kratkimi rokavi",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Iščite v ustrezni kategoriji",
+          "paragraphs": [
+            "Najprej izberite vrsto izdelka: majice, dodatke, pokrivala ali hlače in kratke hlače. Razvrščanje celotnega kataloga po ceni lahko pokaže drobne dele, rezervne dodatke ali možnosti, ki niso primerljive s celotnim oblačilom. Poceni ponudba je uporabna samo, če ustreza predvidenemu nakupu. Pred oceno privlačnosti cene zožite kategorijo.",
+            "Uporabite preprost iskalni izraz, ki opisuje izdelek, nato odprite nekaj kandidatov, namesto da zbirate desetine podobnih povezav. URL ponudbe shranite skupaj s predvideno različico. Če se cena na kartici razlikuje od cene izbrane možnosti, za primerjavo uporabite slednjo. Preverite, ali prikazani znesek velja za en kos, par, komplet ali najmanjšo količino."
+          ],
+          "links": [
+            {
+              "label": "Brskajte po majicah glede na ceno",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Brskajte po dodatkih glede na ceno",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Brskajte po pokrivalih glede na ceno",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Določite proračun za izdelek in dostavo",
+          "paragraphs": [
+            "Pred dodajanjem v naročilo določite dve omejitvi: najvišjo ceno izdelka in največji znesek, ki ste ga pripravljeni porabiti z dostavo. Odgovarjata na različni vprašanji. Izdelek za 18 USD ustreza omejitvi 20 USD za izdelek, vendar je lahko slaba izbira, če pošiljanje porabi preostanek celotnega proračuna. Aktualne stroške preverite v uradnih informacijah LoveGoBuy o pristojbinah in kalkulatorju.",
+            "Samo za računski primer predpostavimo, da izdelek stane 12 USD, domača dostava 2 USD, pripisani delež mednarodne dostave pa 9 USD. Vmesna vsota je že 23 USD pred morebitnimi drugimi stroški. Te številke so izmišljene za razlago metode, niso ponudba pošiljanja. Negotove zneske obravnavajte ločeno, namesto da brez pojasnila vnesete ničlo."
+          ]
+        },
+        {
+          "heading": "Pred ceno primerjajte prileganje in materiale",
+          "paragraphs": [
+            "Pri majici primerjajte širino prsnega dela, dolžino trupa, širino ramen in dolžino rokavov z oblačilom, ki vam ustreza. Uporabite prodajalčevo metodo merjenja in vprašajte po manjkajočih merah. Same črke velikosti so šibka primerjava, saj se tabele razlikujejo med prodajalci in kroji. Nizka cena ne odtehta oblačila, ki ga ne morete udobno nositi.",
+            "Pri dodatku zabeležite mere in lastnosti, ki določajo uporabo: dolžino ogrlice, širino okvirja, vrsto zaponke ali združljivost z drugim predmetom. Ločite videz na fotografiji od preverjene trditve o materialu. Če pomembna specifikacija manjka, kandidata odložite. Nakup več negotovih možnosti, da bi našli eno primerno, lahko stane več kot izbira ene dobro dokumentirane možnosti."
+          ]
+        },
+        {
+          "heading": "Težo in embalažo ocenite skupaj",
+          "paragraphs": [
+            "Majhen izdelek lahko še vedno povzroči nepotrebne stroške dostave, če embalaža poveča zunanje mere paketa. Gost predmet pa lahko poveča dejansko težo, ne da bi zasedel veliko prostora. Kalkulator pošiljanja LoveGoBuy uporablja pogoje izbrane poti; nekatere primerjajo dejansko in prostorninsko težo. Ko so na voljo, zahtevajte mere zapakiranega paketa in primerjajte možnosti za svoj cilj.",
+            "Ne dodajajte nepotrebnih izdelkov samo zato, da bi stroške pošiljanja porazdelili na večje naročilo. Združevanje je lahko priročno, vendar lahko drug težnostni razred, omejitev velikosti ali izdelka spremeni razpoložljive poti. Primerjajte celotne načrte paketov za isti cilj in enake zahteve glede zaščite. Ohranite zaščitno embalažo, če bi odstranitev ustvarila tveganje poškodb, ki ga ne želite sprejeti."
+          ]
+        },
+        {
+          "heading": "S fotografijami odgovorite na konkretna vprašanja",
+          "paragraphs": [
+            "Slike v katalogu so fotografije izdelkov, ne samodejno fotografije skladiščnega nadzora kakovosti (QC) vašega naročila. Ko izdelek prispe v skladišče, preglejte slike, povezane s tem naročilom, in jih primerjajte z izbrano različico. Preverite vidno barvo, vključene dele, oznake, očitne napake in zahtevane mere. Pred odločitvijo o pošiljanju jasno zabeležite vsako odstopanje.",
+            "Uporabna zahteva za dodatno fotografijo navede eno opazno vprašanje: pokažite zaponko ogrlice, izmerite širino prsnega dela ali pokažite obe strani dodatka. Fotografije ne morejo potrditi vseh trditev o materialu ali delovanju. Če pomislek zahteva informacijo, ki je fotografija ne more dati, vprašajte prodajalca ali podporo neposredno. Preverite veljavne pogoje vračila, dokler je še čas za ukrepanje."
+          ]
+        },
+        {
+          "heading": "Vodite kratek primerjalni zapis",
+          "paragraphs": [
+            "Za vsakega kandidata shranite URL izdelka, izbrano možnost, aktualno ceno, dokaze o merah, pričakovano embalažo in odprta vprašanja. Dodajte odločitev, denimo raziskati, pripravljeno za naročilo ali odstraniti. Zapis olajša prepoznavanje, da najcenejši možnosti še manjka mera, nekoliko dražja pa že izpolnjuje vaše zahteve.",
+            "Tik pred plačilom ponovno preverite končno stran naročila. Potrdite izvorni izdelek, količino in različico, namesto da se zanašate na star posnetek zaslona. Če je izdelek izginil ali se je cena spremenila, se vrnite v kategorijo in ponovite primerjavo; izdelka ne zamenjajte samo zaradi znane fotografije. Shranjena povezava je referenca, ne rezervacija. Ob ceni ohranite datum preverjanja, da starega opažanja nikoli ne zamenjate za aktualno ponudbo."
+          ],
+          "table": {
+            "columns": [
+              "Primerjalno polje",
+              "Zakaj je pomembno"
+            ],
+            "rows": [
+              [
+                "Točna različica in količina",
+                "Preprečuje primerjavo enega kosa s kompletom"
+              ],
+              [
+                "Mere in materiali",
+                "Poveže ponudbo z vašimi dejanskimi potrebami"
+              ],
+              [
+                "Cena izdelka in znesek za dostavo",
+                "Pokaže, ali je celoten proračun realističen"
+              ],
+              [
+                "Odprto vprašanje in naslednji korak",
+                "Ohranja manjkajoče dokaze vidne"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Pogosta vprašanja o ugodnih najdbah",
+          "paragraphs": [
+            "Ali ponudba pod 20 USD vključuje dostavo? Ne: ta vodnik uporablja prikazano ceno izdelka. Domačo dostavo, mednarodno pošiljanje, dodatne storitve in druge veljavne stroške preverite ločeno. Ali se cena v katalogu lahko spremeni? Da. Datirane primere obravnavajte kot opažanja in izbrano različico preverite na aktualni strani naročila.",
+            "Ali je kakovost primerov preizkušena? Ne. Teh izdelkov nismo testirali in vključitev ni potrdilo o pristnosti. Ali naročiti najcenejši rezultat? Samo če izdelek, mere in celoten proračun ustrezajo vašim zahtevam. Začnite z eno jasno uporabo, ohranite kratek izbor ter preostala vprašanja rešite s povezanimi vodniki za velikosti, QC in stroške."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Pod 20 USD se nanaša na ceno izdelka, ne na skupni znesek z dostavo.",
+        "Pred plačilom preverite aktualno različico, mere in količino.",
+        "Uporabite dejanske QC-fotografije naročila in ohranite izvorno povezavo."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "Tabela čevljev LoveGoBuy: velikosti, cene in QC",
+      "description": "S tabelo čevljev LoveGoBuy pred pošiljanjem primerjajte ponudbe, mere čevljev, izbrane cene, QC-fotografije in embalažo.",
+      "category": "Čevlji",
+      "keyword": "lovegobuy tabela čevljev",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Kategorijo čevljev uporabite za ožji izbor, nato pri vsaki ponudbi primerjajte točno velikost, izbrano ceno in razpoložljive mere. Znana številka velikosti ali fotografija izdelka ne zadošča za ugotavljanje prileganja. Pred mednarodnim pošiljanjem preglejte skladiščne fotografije svojega para in preverite vpliv embalaže na ponudbo za paket.",
+        "Ta vodnik povezuje katalog čevljev s praktičnim postopkom primerjave. Ne ocenjuje nepreizkušenih čevljev, ne potrjuje pristnosti in ne obljublja določene cene pošiljanja. Uradni nakupovalni vodnik LoveGoBuy in kalkulator pošiljanja pojasnjujeta potek na platformi; spodnji kontrolni seznam prileganja in pregleda je neodvisno uredniško priporočilo."
+      ],
+      "sections": [
+        {
+          "heading": "Odprite katalog čevljev z jasnim namenom",
+          "paragraphs": [
+            "Začnite s kategorijo čevljev in se odločite, za kaj par potrebujete. Vsakodnevna hoja, občasno nošenje in določena dejavnost lahko zahtevajo različne dokaze. Naslovi ponudb pomagajo najti kandidate, ne dokazujejo pa udobja, zmogljivosti ali trajnosti. Znane blagovne znamke v ponudbi ne obravnavajte kot dokaz, da so bile prodajalčeve trditve preverjene.",
+            "Z razvrščanjem po ceni primerjajte prikazane zneske izdelkov ter obdržite dva ali tri realistične kandidate. Pred shranjevanjem odprite vsako stran izdelka. Zabeležite URL ponudbe, želeno barvo, velikost in dejansko prikazano ceno možnosti. Ne primerjajte najcenejšega izbirnega dodatka na eni strani s celotnim parom na drugi."
+          ],
+          "links": [
+            {
+              "label": "Odprite tabelo čevljev LoveGoBuy",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Primerjajte čevlje po prikazani ceni",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Primerjajte mere, ne samo oznak velikosti",
+          "paragraphs": [
+            "Začnite s prodajalčevo tabelo velikosti in ugotovite, kaj meri vsaka številka. Dolžina stopala, vložka in zunanjega podplata so različne mere. Tabela v centimetrih je koristna samo, če je metoda merjenja jasna. Ne predpostavljajte, da se evropska številka pri vseh prodajalcih pretvori enako ali da ameriška oznaka vedno uporablja isti sistem velikosti.",
+            "Obe stopali izmerite z isto metodo in večjo mero primerjajte s tabelo. Upoštevajte tudi širino in obliko prostora za prste, če prodajalec poda te podatke. Če ponudba navaja samo oznake velikosti, pred nakupom zahtevajte pojasnilo. Skladiščna fotografija oznake lahko potrdi velikost na prejetem paru, ne more pa dokazati, da vam bodo čevlji prav."
+          ],
+          "table": {
+            "columns": [
+              "Dokaz",
+              "Kaj lahko pove",
+              "Kaj ostaja negotovo"
+            ],
+            "rows": [
+              [
+                "Prodajalčeva tabela velikosti",
+                "Navedena mera izbrane možnosti",
+                "Ali metoda ustreza vašemu merjenju"
+              ],
+              [
+                "Fotografija oznake velikosti",
+                "Oznaka na prejetem paru",
+                "Dejansko prileganje in uporabni notranji prostor"
+              ],
+              [
+                "Zahtevana meritev",
+                "Vidna mera, izmerjena na fotografiji",
+                "Udobje in dolgoročne lastnosti"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Zapišite točen par, ki ga nameravate kupiti",
+          "paragraphs": [
+            "Za vsakega kandidata ustvarite kratek zapis: izvorni URL, tržnica, izbrana velikost, barva, cena izdelka in vprašanje za prodajalca. Če stran vsebuje različne izvedbe, izvedbo izrecno zapišite. Podobne fotografije se lahko pojavijo v več ponudbah, vendar jih to ne naredi zamenljivih. Identiteto izdelka ohranite od odkritja do potrditve naročila.",
+            "Preverite vsebino paketa. Škatla za čevlje, dodatne vezalke ali drugi dodatki lahko vplivajo na prejeto vsebino in mere paketa. Ne predpostavljajte, da so predmeti na promocijski fotografiji vključeni. Če je določen del pomemben za vašo odločitev, ga potrdite pred plačilom in dodajte na seznam, ki ga boste preverili ob prejemu skladiščnih fotografij."
+          ]
+        },
+        {
+          "heading": "Preglejte svoje skladiščne QC-fotografije",
+          "paragraphs": [
+            "Javne fotografije lahko pokažejo videz drugega naročila, vendar so slike, priložene vašemu naročilu, ustrezni dokazi za par, ki ga nameravate poslati. Primerjajte oba čevlja, vidne barve, oznake velikosti, šive, robove podplatov in vključene dele. Poiščite očitna odstopanja ali poškodbe. Za referenco uporabite podatke naročila, ne druge ponudbe s podobno sliko.",
+            "Dodaten kot ali meritev zahtevajte samo, če odgovori na konkretno negotovost. Na primer prosite za jasno fotografijo obeh oznak velikosti ali meritev z vidnim položajem ravnila. Prodajalčevih fotografij ne opisujte kot skladiščni QC in pregleda fotografij ne obravnavajte kot jamstva pristnosti ali trajnosti. Nekaterih težav ni mogoče ugotoviti iz slik."
+          ],
+          "bullets": [
+            "Preverite, ali oba čevlja ustrezata predvideni velikosti in barvni različici.",
+            "Vidno izdelavo in vključene dele primerjajte z zapisom naročila.",
+            "Vidno odstopanje rešite pred potrditvijo mednarodnega pošiljanja."
+          ]
+        },
+        {
+          "heading": "Izračunajte celotne stroške para",
+          "paragraphs": [
+            "Ceno izdelka ločite od domače dostave, mednarodnega pošiljanja in izbranih storitev. Katalog za odkrivanje izdelkov prikazuje zneske v USD, dejansko zaračunani znesek pa določata trenutni strani naročila in plačila. Menjalni tečaji, izbrane možnosti ali prodajalčeve spremembe lahko vplivajo na končno vsoto. Shranite podatke aktualne ponudbe, namesto da predpostavljate, da prej ogledana kartica pomeni celoten proračun.",
+            "Samo kot računski primer: hipotetični par za 18 USD s 3 USD domače dostave in 14 USD pripisanega mednarodnega pošiljanja že stane 35 USD. Te številke niso opažene pristojbine LoveGoBuy ali ponudba za določen cilj. Namen je pokazati, zakaj je primerjanje dveh čevljev samo po ceni izdelka lahko zavajajoče, če se zapakirani teži ali mere razlikujejo."
+          ]
+        },
+        {
+          "heading": "Primerjajte pošiljanje s škatlo in brez nje",
+          "paragraphs": [
+            "Če razpoložljiva storitev pakiranja to omogoča, vprašajte, kako bi ohranitev ali odstranitev škatle spremenila zapakirane mere, zaščito in upravičenost do poti. Odstranitev škatle ne zagotavlja nižje cene. Pot, ki zaračunava po dejanski teži, se lahko razlikuje od poti, ki primerja dejansko in prostorninsko težo, paket pa lahko ostane v istem cenovnem razredu.",
+            "Uporabite delitelj in pravila zaokroževanja točno izbrane poti. Za ponazoritev: paket velikosti 35 × 25 × 15 cm ima prostornino 13.125 kubičnih centimetrov. Deljenje s 6.000 da približno 2,19 kg, z 8.000 pa približno 1,64 kg. To sta alternativna matematična primera, ne dve zamenljivi pravili za isto pot. Z dejansko težo ju primerjajte samo po navodilih izbrane poti."
+          ],
+          "table": {
+            "columns": [
+              "Izbira pakiranja",
+              "Katere podatke zahtevati"
+            ],
+            "rows": [
+              [
+                "Ohranite škatlo za čevlje",
+                "Zunanje zapakirane mere, zaščita in celotna ponudba"
+              ],
+              [
+                "Odstranite škatlo, če je ponujeno",
+                "Nadomestna zaščita, nove mere in celotna ponudba"
+              ],
+              [
+                "Združite z drugimi izdelki",
+                "Teža celotnega paketa, omejitve in razpoložljive poti"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Težave rešite, dokler je par še v skladišču",
+          "paragraphs": [
+            "Če opazite napačno možnost ali vidno poškodbo, ohranite številko naročila, ustrezne podatke ponudbe in slike težave. V kratki, stvarni zahtevi pojasnite razliko. Vprašajte, katere možnosti vračila ali menjave so trenutno na voljo za to naročilo. Pomembni so prodajalčevi pogoji in faza naročila; ta vodnik ne obljublja, da je mogoče vrniti vsak izdelek.",
+            "Para ne pošiljajte mednarodno, dokler pomembno vprašanje o prileganju ali stanju ostaja neodgovorjeno. Ko je izdelek del odposlanega paketa, se praktične možnosti lahko spremenijo. Pogovor ohranite v uradnem kanalu podpore in odgovor shranite k primerjalnemu zapisu. Jasen opis in konkretne fotografije so uporabnejši od ponavljanja iste nejasne pritožbe."
+          ]
+        },
+        {
+          "heading": "Vprašanja pred pošiljanjem",
+          "paragraphs": [
+            "Ali obstaja univerzalna pretvorba velikosti čevljev LoveGoBuy? Uporabite prodajalčevo tabelo in metodo merjenja za izbrano ponudbo, ne univerzalne pretvorbe. Ali so fotografije v katalogu QC-fotografije? Ne: slike izdelkov in skladiščne fotografije vašega naročila imajo različni vlogi. Ali lahko par pod 20 USD prispe za manj kot 20 USD? Sama prikazana cena izdelka na to ne odgovori.",
+            "Ali odstranitev škatle vedno prihrani denar? Ne. Primerjajte dejanske možnosti pakiranja in ponudbo poti, vključno z zahtevano ravnjo zaščite. Končni kontrolni seznam je preprost: potrdite par, razumite dokaze o velikosti, preglejte ustrezne slike, rešite odstopanja in primerjajte celoten načrt pošiljanja. Nato uporabite vodnik za sledenje, ko je mednarodni paket dejansko odposlan."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Točen izvorni URL, velikost in barvo hranite skupaj.",
+        "Oznaka velikosti, meritev in presoja prileganja so različni dokazi.",
+        "Pred potrditvijo odpreme primerjajte celotno ponudbo pakiranja in pošiljanja."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "LoveGoBuy nima razpoložljivih poti pošiljanja: kaj preveriti",
+      "description": "Ni poti pošiljanja LoveGoBuy? Preverite cilj, težo, mere paketa in omejitve izdelkov, nato primerjajte podprte možnosti pakiranja.",
+      "category": "Odpravljanje težav pri pošiljanju",
+      "keyword": "lovegobuy ni razpoložljivih poti pošiljanja",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Če LoveGoBuy ne prikazuje poti pošiljanja, najprej preverite cilj, enoto teže, zunanje mere paketa in vnesene kategorije izdelkov. Uradni kalkulator pojasnjuje, da lahko omejitve velikosti ali teže odstranijo razpoložljive možnosti. Omejen izdelek, nepodprt cilj ali začasna sprememba poti lahko prav tako zahteva pojasnilo podpore.",
+        "Ne spreminjajte resničnih podatkov o izdelku samo zato, da bi se pojavila pot. Koristen naslednji korak je ugotoviti vnos ali pogoj upravičenosti, ki povzroča prazen rezultat, nato primerjati dovoljene možnosti pakiranja ali paketov. Ta vodnik je diagnostični kontrolni seznam, ne obljuba, da je vsak paket mogoče poslati na vsak naslov."
+      ],
+      "sections": [
+        {
+          "heading": "Preverite, ali ocenjujete ali oddajate paket",
+          "paragraphs": [
+            "Ocena pred pakiranjem v skladišču uporablja podatke, ki jih vnesete. Paket, pripravljen za oddajo, lahko uporablja skladiščne mere in informacije o izdelkih. Gre za različni ravni dokazov. Zapišite, na katerem zaslonu se pojavi prazen rezultat, izbrani cilj in ali so mere ocenjene ali izmerjene po pakiranju. Ta kontekst prepreči odpravljanje težav v napačni fazi.",
+            "Če je prejšnja ocena prikazovala pot, končni paket pa je ne, primerjajte vnose, preden predpostavite sistemsko napako. Embalaža lahko spremeni zunanje mere, končna teža lahko preide v drug razred, paket pa lahko vsebuje izdelek z drugačnimi pogoji pošiljanja od preostalih. Aktualne možnosti za končni paket imajo prednost pred predhodnim primerom."
+          ]
+        },
+        {
+          "heading": "Preverite cilj in enote",
+          "paragraphs": [
+            "Preverite ciljno državo ali regijo in podatke naslova, ki jih zahteva obrazec. Če ima pot območne omejitve, vprašajte podporo, ali veljajo za vaš naslov. Cilja ne zamenjajte z drugo državo, da bi dobili pomirjujočo ponudbo. Ocena je uporabna samo, če opisuje pošiljko, ki jo dejansko nameravate poslati.",
+            "Nato preberite oznake enot ob vsakem polju. Teža, vnesena kot 2.000 kilogramov namesto 2.000 gramov, lahko da nesmiseln rezultat. Enako se zgodi, ko milimetre vnesete v polje za centimetre. Ponovno vnesite resnične mere v prikazanih enotah in shranite posnetek popravljenih vnosov, če seznam poti ostane prazen."
+          ],
+          "table": {
+            "columns": [
+              "Vnos",
+              "Uporabno preverjanje"
+            ],
+            "rows": [
+              [
+                "Cilj",
+                "Dejanska država ali regija in zahtevani podatki naslova"
+              ],
+              [
+                "Teža",
+                "Vrednost ustreza enoti, prikazani v obrazcu"
+              ],
+              [
+                "Mere",
+                "Zunanja dolžina, širina in višina zapakiranega paketa v navedenih enotah"
+              ],
+              [
+                "Kategorija izdelka",
+                "Točen opis vsega v paketu"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Dejansko težo in omejitve mer preverite ločeno",
+          "paragraphs": [
+            "Paket lahko izpolnjuje omejitev teže, a še vedno presega omejitve velikosti poti. Preglejte pogoje za najdaljšo stranico, druga pravila mer in dovoljeno območje teže. Razlaga kalkulatorja omenja omejitve za pretežke in prevelike pakete, vendar ni ene meje za vse poti. Preberite pogoje za svoj cilj in razpoložljivo storitev.",
+            "Prostorninska teža je ločen izračun, ki ga nekatere poti uporabljajo za določanje obračunske teže. Samo za primer: 40 × 30 × 20 cm je 24.000 kubičnih centimetrov. Delitelj 6.000 da 4 kg, delitelj 8.000 pa 3 kg. Nobenega ne smemo predpostavljati univerzalno. Uporabite navedeno pravilo poti in ločite izračun obračunske teže od omejitev velikosti za upravičenost."
+          ]
+        },
+        {
+          "heading": "Preglejte izdelke, ki lahko omejujejo paket",
+          "paragraphs": [
+            "Preverite pogoje pošiljanja za vsak izdelek v združenem paketu, zlasti če ima baterijo, tekočino, prašek, magnetni del ali drugo lastnost, ki jo prevoznik lahko omejuje. To je seznam vprašanj za preverjanje, ne trditev, da LoveGoBuy prepoveduje vse izdelke teh kategorij. Kaj je dovoljeno, določata ustrezna storitev in cilj.",
+            "Prosite podporo, naj navede konkretno lastnost izdelka in pogoj poti, ki preprečuje pošiljanje. Opis izdelka naj ostane točen; izdelka ne skrivajte in ne izberite nepovezane kategorije za obhod omejitve. Če izdelek ni primeren za razpoložljive storitve, vprašajte, katere dovoljene možnosti ostajajo, preden plačate dodatno pakiranje ali predpostavite obvozno rešitev."
+          ]
+        },
+        {
+          "heading": "Primerjajte podprto prepakiranje ali razdelitev paketov",
+          "paragraphs": [
+            "Kalkulator LoveGoBuy pojasnjuje, da je razdelitev pretežke ali prevelike pošiljke lahko možnost, ter omenja poskusno pakiranje in povezane storitve za natančnejše mere. Razpoložljivost in cene preverite na aktualni platformi. Vprašajte, kakšna bi bila zapakirana teža in mere vsakega predlaganega paketa, nato ocenite vsakega za isti resnični cilj.",
+            "Primerjajte vsoto vseh ponudb za pakete in izbranih storitev. Dva manjša paketa lahko staneta več, ker ima vsak lahko svojo začetno pristojbino, tudi če razdelitev ponovno omogoči pot. Prepakiranje lahko spremeni zaščito in velikost. Ohranite nujno zaščito lomljivih izdelkov in ne potrdite spremembe, dokler ne razumete kompromisa ter celotnega zneska, ki ga boste morda plačali."
+          ],
+          "table": {
+            "columns": [
+              "Možen ukrep",
+              "Kaj primerjati pred potrditvijo"
+            ],
+            "rows": [
+              [
+                "Popravite napako vnosa",
+                "Točne enote in resnični cilj"
+              ],
+              [
+                "Prepakirajte, če je podprto",
+                "Nove mere, zaščitni materiali in cena storitve"
+              ],
+              [
+                "Razdelite, če je podprto",
+                "Upravičenost vsakega paketa in vsota njihovih ponudb"
+              ],
+              [
+                "Odstranite neustrezen izdelek",
+                "Uradno razpoložljive možnosti obravnave ali vračila"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ločite prazno oceno od težave z računom",
+          "paragraphs": [
+            "Prazen seznam poti sam po sebi ne dokazuje, da je račun blokiran, plačilo neuspešno ali paket izgubljen. Preverite informacije, ki so dejansko prikazane na strani. Če obstaja ločeno sporočilo o napaki, zabeležite besedilo. Osvežitev obrazca lahko pomaga pri začasni težavi prikaza, ponavljanje pa ne bo rešilo resnične omejitve teže, velikosti ali upravičenosti.",
+            "Če se je seznam poti spremenil brez spremembe paketa, vprašajte, ali so bile storitve za cilj začasno prilagojene. V svoj načrt ne kopirajte imena poti ali obljube dostave iz stare forumske objave. Uporabite aktualno uradno oceno in odgovor platforme ter shranite čas preverjanja, da boste poznejše spremembe lahko pošteno primerjali."
+          ]
+        },
+        {
+          "heading": "Podpori pošljite uporabno diagnostično zahtevo",
+          "paragraphs": [
+            "Referenco naročila ali paketa zasebno posredujte po uradnem kanalu podpore skupaj s ciljem, težo in merami z enotami, vrstami izdelkov, točnim zaslonom in besedilom napake. Navedite, ali so mere ocenjene ali jih je podalo skladišče. Priložite posnetek zaslona z ustreznimi vnosi, pri tem pa izpustite nepotrebne osebne in plačilne podatke.",
+            "Postavite eno konkretno vprašanje: katera vnesena vrednost, pogoj izdelka ali omejitev poti preprečuje prikaz storitve in katera podprta sprememba bi paket naredila primeren? Če podpora predlaga razdelitev ali prepakiranje, pred potrditvijo zahtevajte nastale mere in stroške. Odgovor shranite ob zapisu paketa, da lahko preverite, ali naslednja ocena uporablja dogovorjene podatke."
+          ]
+        },
+        {
+          "heading": "Kaj storiti, ko pot postane razpoložljiva",
+          "paragraphs": [
+            "Pred izbiro nove možnosti preberite pogoje storitve. Primerjajte celotno ceno, navedeno oceno dostave, ureditev sledenja in ustrezne omejitve. Vidna pot je možnost za presojo, ne jamstvo prihoda na določen dan. Pri končni oddaji paketa preverite, ali so vsi izdelki in dejanski cilj še vedno pravilno navedeni.",
+            "Po odpremi uporabite številko za sledenje mednarodnemu paketu, ne prodajalčeve številke domače dostave. Če ustrezne poti še vedno ni, paketa ne oddajte, dokler uradna podpora ne pojasni razpoložljivih možnosti obravnave. Najvarnejši uporaben rezultat je točen odgovor o upravičenosti in stroških; spreminjanje resničnih podatkov, dokler se ne pojavi gumb, ne ustvari veljavnega načrta pošiljanja."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Najprej preverite cilj, enote, mere in podatke izdelkov.",
+        "Preverite omejitve posamezne poti; ne predpostavljajte enega delitelja ali največje teže.",
+        "Primerjajte celotne stroške in zaščito vsakega podprtega načrta razdelitve ali prepakiranja."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

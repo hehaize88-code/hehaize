@@ -76,3 +76,14 @@ Validation completed:
 Screenshot: [Published article index](screenshots/seo-release-2026-10-23.png).
 
 These checks establish deployment and rendering, not ranking gains or completed purchases. GSC performance remained in processing at audit time, and Bing query data was unavailable behind sign-in. Keyword priority is qualitative; new-page indexing and click changes require subsequent real search/analytics data.
+
+
+## 2026-11-09 release checks
+
+The current release adds three complete editorial topics in all 24 supported languages and improves the shipping estimator, tracking and delivery-time articles in every locale. Validated: 16 articles per language, 384 rendered article pages, 432 translated tables, 24 archives and 480 unique editorial sitemap URLs. Production build, complete content validation, full rendered-route checks, seven event checks and git diff whitespace checks passed on 2026-11-09.
+
+The site-wide navigation adds QC and shipping links. Article sections can link to localized catalogue and product paths. Mobile article covers are shorter while complete article text remains rendered. `catalog_open` records category navigation without search text; the existing purchase-link event remains an outbound-intent event, never a completed purchase.
+
+GA4 setup verified through its own UI on 2026-11-09: purchase_link_click enabled as a key event; Search Console domain lovegobuytab.com linked to the existing LoveGoBuy Tab - Web stream. The detailed analytics reports are private and are not copied into this repository.
+
+The execution host returned HTTP 403 for direct public-site requests. Browser access succeeded, so production rendering will be verified in the signed-in browser session after Cloudflare deployment rather than treating the execution-host response as a search-bot diagnosis.

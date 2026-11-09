@@ -67,7 +67,10 @@
             "For example, compare two jackets using measurements, source details and the intended use, not just their cover photographs. If one listing supplies garment dimensions and the other does not, resolve that difference before selecting a size. Open the original item again before placing the order because a saved spreadsheet does not reserve stock or freeze the price. After purchase, record the actual order reference and move to the QC and parcel guides. This creates a practical route from discovery to verification instead of another collection of tabs."
           ],
           "table": {
-            "columns": ["Record", "Why it matters"],
+            "columns": [
+              "Record",
+              "Why it matters"
+            ],
             "rows": [
               [
                 "Source link and exact variant",
@@ -94,7 +97,11 @@
         "Compare the exact variant and measurements, then verify the live listing.",
         "Keep source information and questions together so the next step is clear."
       ],
-      "sourceIds": ["official-guide", "official-product", "official-fees"],
+      "sourceIds": [
+        "official-guide",
+        "official-product",
+        "official-fees"
+      ],
       "relatedSlugs": [
         "how-to-order-weidian-with-lovegobuy",
         "lovegobuy-sizing-guide",
@@ -168,14 +175,23 @@
             "Treat international shipping as a separate decision after the warehouse stage. Do not assume that paying for the product also sends it overseas. Review your order's available QC photos and address unresolved concerns, then use the parcel information and current route options to decide what to ship. The table is a practical preparation checklist rather than a claim that every interface uses these exact labels. Platform screens may change; follow the action associated with your own order and verify the displayed total at each confirmation."
           ],
           "table": {
-            "columns": ["Checkpoint", "Verify before continuing"],
+            "columns": [
+              "Checkpoint",
+              "Verify before continuing"
+            ],
             "rows": [
               [
                 "Product selection",
                 "Original product ID, colour, size and quantity"
               ],
-              ["Item payment", "Item amount and applicable domestic delivery"],
-              ["Warehouse review", "QC evidence, measurements and open issues"],
+              [
+                "Item payment",
+                "Item amount and applicable domestic delivery"
+              ],
+              [
+                "Warehouse review",
+                "QC evidence, measurements and open issues"
+              ],
               [
                 "Parcel submission",
                 "Contents, address, eligible route and current shipping total"
@@ -269,7 +285,10 @@
             "Keep observations separate from conclusions. A visible loose thread is an observation; durability after months of wear is something a photograph cannot establish. Likewise, a label or logo photograph does not prove authenticity. Save the image and your order reference, explain the discrepancy and wait for clarification before parcel submission if the answer would change your decision. The product images in this directory describe the source listing; warehouse QC relates to the specific item received for your order."
           ],
           "table": {
-            "columns": ["Question", "Useful evidence"],
+            "columns": [
+              "Question",
+              "Useful evidence"
+            ],
             "rows": [
               [
                 "Is the variant correct?",
@@ -283,7 +302,10 @@
                 "Is there visible damage?",
                 "Overall view plus a close view of the affected area"
               ],
-              ["Are all parts present?", "All expected pieces visible together"]
+              [
+                "Are all parts present?",
+                "All expected pieces visible together"
+              ]
             ]
           }
         }
@@ -293,7 +315,10 @@
         "Match identity and options first, then inspect relevant visible condition.",
         "Write precise questions and resolve important uncertainty before parcel submission."
       ],
-      "sourceIds": ["official-help", "official-guide"],
+      "sourceIds": [
+        "official-help",
+        "official-guide"
+      ],
       "relatedSlugs": [
         "lovegobuy-sizing-guide",
         "lovegobuy-returns-guide",
@@ -368,19 +393,31 @@
             "When a shipping quote becomes available, record its destination, parcel inputs, currency and date. Add only charges that actually apply, and avoid counting a fee twice if it is already included in the displayed total. A coupon should reduce the budget only after you have checked its conditions and confirmed that it applies to the relevant payment. Taxes, customs charges and currency conversion depend on the circumstances; check the current official information instead of adopting another shopper's total. A budget is useful when its unknowns remain visible."
           ],
           "table": {
-            "columns": ["Budget entry", "How to record it"],
+            "columns": [
+              "Budget entry",
+              "How to record it"
+            ],
             "rows": [
-              ["Item and domestic delivery", "Current order amounts"],
+              [
+                "Item and domestic delivery",
+                "Current order amounts"
+              ],
               [
                 "International shipping",
                 "Quote with destination, weight, dimensions and date"
               ],
-              ["Optional services", "Only the services actually selected"],
+              [
+                "Optional services",
+                "Only the services actually selected"
+              ],
               [
                 "Other applicable charges",
                 "Check inclusion, currency and current conditions"
               ],
-              ["Discount", "Subtract only when eligibility is confirmed"]
+              [
+                "Discount",
+                "Subtract only when eligibility is confirmed"
+              ]
             ]
           }
         }
@@ -390,7 +427,11 @@
         "Compare exact variants and consistent delivery assumptions.",
         "Retain estimates and paid totals separately so differences can be explained."
       ],
-      "sourceIds": ["official-fees", "official-estimator", "official-home"],
+      "sourceIds": [
+        "official-fees",
+        "official-estimator",
+        "official-home"
+      ],
       "relatedSlugs": [
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-payment-order-status",
@@ -400,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "LoveGoBuy Shipping Calculator Guide: Costs and Parcel Weight",
-      "description": "Use the LoveGoBuy shipping calculator with the right destination, weight, dimensions and goods category. Understand dimensional weight and compare parcel estimates.",
+      "title": "LoveGoBuy Shipping Calculator: Cost & Billable Weight",
+      "description": "Estimate LoveGoBuy shipping with actual and volumetric weight, route-specific divisors and a worked example. Separate the quote from the item price.",
       "category": "Shipping",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -410,6 +451,37 @@
         "LoveGoBuy provides an official estimator with parcel and destination inputs. This guide gives independent advice for preparing those inputs and comparing results. It does not recommend a universally cheapest route or promise a delivery time for your order."
       ],
       "sections": [
+        {
+          "heading": "A worked billable-weight example",
+          "paragraphs": [
+            "Suppose a hypothetical packed parcel weighs 2 kg and measures 40 × 30 × 20 cm. Its volume is 24,000 cubic centimeters. If a route specifies a divisor of 6,000, its volumetric weight is 4 kg. If another route specifies 8,000, it is 3 kg. These are arithmetic examples, not current quotes or interchangeable rules for one route.",
+            "Where a route charges the higher of actual and volumetric weight, the unrounded billable figures in this example would be 4 kg and 3 kg respectively. Apply that route’s own charge increments, fees and eligibility limits next. A lower computed weight alone does not prove that a route is cheaper or available. If no route appears, use the troubleshooting guide below."
+          ],
+          "table": {
+            "columns": [
+              "Example input or rule",
+              "Result"
+            ],
+            "rows": [
+              [
+                "Actual packed weight",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24,000 cm³"
+              ],
+              [
+                "Example divisor 6,000",
+                "4 kg volumetric weight"
+              ],
+              [
+                "Example divisor 8,000",
+                "3 kg volumetric weight"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Describe the parcel you are actually considering",
           "paragraphs": [
@@ -465,11 +537,27 @@
             "Now suppose the same contents can safely fit in a 35 × 25 × 15 cm package. Under the same illustrative divisor, the dimensional weight is about 2.19 kg. This demonstrates why packaging can affect a quote; it does not establish the actual packed dimensions, promise a saving or justify removing protection from fragile goods. Use measured parcel information or ask about available rehearsal services before treating a scenario as a final shipping cost. Enter weight in the units requested by the estimator: confusing kilograms and grams can make a comparison meaningless."
           ],
           "table": {
-            "columns": ["Example input", "Larger box", "Smaller box"],
+            "columns": [
+              "Example input",
+              "Larger box",
+              "Smaller box"
+            ],
             "rows": [
-              ["Actual weight", "2 kg", "2 kg"],
-              ["Dimensions", "40 × 30 × 20 cm", "35 × 25 × 15 cm"],
-              ["Volume ÷ 6,000", "4 kg", "About 2.19 kg"],
+              [
+                "Actual weight",
+                "2 kg",
+                "2 kg"
+              ],
+              [
+                "Dimensions",
+                "40 × 30 × 20 cm",
+                "35 × 25 × 15 cm"
+              ],
+              [
+                "Volume ÷ 6,000",
+                "4 kg",
+                "About 2.19 kg"
+              ],
               [
                 "Meaning",
                 "Illustrative chargeable-weight comparison",
@@ -491,14 +579,19 @@
         "Dimensions can matter; use the selected route's charging rules.",
         "Recheck the actual parcel and current service details before confirmation."
       ],
-      "sourceIds": ["official-estimator", "official-fees", "official-guide"],
+      "sourceIds": [
+        "official-estimator",
+        "official-fees",
+        "official-guide"
+      ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Enter the real destination, packed weight and outer dimensions in the official LoveGoBuy shipping estimator. Follow the selected route’s weight, divisor and rounding rules. The estimate is not the final charge until the actual parcel information and selected services are confirmed."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -565,7 +658,11 @@
         "Check current storage information instead of assuming one universal allowance.",
         "Compare compatible parcel contents and review the final shipment deliberately."
       ],
-      "sourceIds": ["official-guide", "official-estimator", "official-help"]
+      "sourceIds": [
+        "official-guide",
+        "official-estimator",
+        "official-help"
+      ]
     },
     {
       "slug": "lovegobuy-returns-guide",
@@ -634,7 +731,10 @@
         "Describe specific evidence and ask about the available options.",
         "Preserve condition and distinguish a request, approval and completed adjustment."
       ],
-      "sourceIds": ["official-help", "official-contact"]
+      "sourceIds": [
+        "official-help",
+        "official-contact"
+      ]
     },
     {
       "slug": "lovegobuy-sizing-guide",
@@ -702,7 +802,10 @@
         "Do not apply a universal size-up rule or platform-wide conversion.",
         "Record the selected option and resolve important missing measurements before ordering."
       ],
-      "sourceIds": ["official-product", "official-guide"]
+      "sourceIds": [
+        "official-product",
+        "official-guide"
+      ]
     },
     {
       "slug": "lovegobuy-payment-order-status",
@@ -844,7 +947,10 @@
             "For example, a short numeric reference in this site's product path identifies a catalog record; it is not automatically the Weidian item ID needed by the purchase link. Preserve the original source URL and check the live product title and options after opening the agent link. Do not solve an unclear import by selecting a vaguely similar item. Use official search or ask support with the source link, a description of the mismatch and a screenshot that excludes private account information."
           ],
           "table": {
-            "columns": ["Observed problem", "Next check"],
+            "columns": [
+              "Observed problem",
+              "Next check"
+            ],
             "rows": [
               [
                 "Original listing does not open",
@@ -886,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "LoveGoBuy Tracking: Track Your Parcel and Understand Updates",
-      "description": "Find the right LoveGoBuy tracking number, separate orders from parcels, interpret tracking gaps and prepare a useful support request.",
+      "title": "LoveGoBuy Tracking: Parcel Status & No-Update Checks",
+      "description": "Track your LoveGoBuy parcel with the correct tracking number. Distinguish seller delivery, warehouse processing and international tracking gaps.",
       "category": "Parcel tracking",
       "keyword": "lovegobuy tracking",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -904,6 +1011,37 @@
         "LoveGoBuy's official purchasing guide directs customers to the Parcels page to follow shipping progress. This independent guide explains how to organize the information shown there and investigate unclear updates. It does not retrieve private orders, replace the carrier's tracking system or promise a delivery date. The status examples below describe general logistics situations, not a fixed list of LoveGoBuy interface labels."
       ],
       "sections": [
+        {
+          "heading": "No tracking update: start with the last real event",
+          "paragraphs": [
+            "Match the reference to the shipment stage before trying another tracking website. An order number, a domestic tracking number and an international parcel tracking number can all exist for the same purchase. Use the one shown in the parcel record for the international leg and preserve the latest dated event when asking for help.",
+            "There is no universal number of days after which every tracking gap means loss. Compare the last scan and elapsed time with the selected service’s current estimate. If it exceeds that estimate, or the record shows an exception requiring action, contact official support with the parcel reference and the exact status rather than assuming that the parcel is seized or lost."
+          ],
+          "table": {
+            "columns": [
+              "Observed status",
+              "Useful next check"
+            ],
+            "rows": [
+              [
+                "Seller shipment delivered",
+                "Confirm warehouse receipt; this may be only the domestic leg"
+              ],
+              [
+                "Label created or data received",
+                "Check whether carrier acceptance has occurred"
+              ],
+              [
+                "No new scan after acceptance",
+                "Compare route estimate and latest carrier event"
+              ],
+              [
+                "Delivery attempted or address issue",
+                "Follow the carrier’s official instructions promptly"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Separate the product order, parcel reference and tracking number",
           "paragraphs": [
@@ -932,7 +1070,10 @@
             "The table below is an interpretation aid. Its descriptions are deliberately broad because different carriers use different wording. A tracking event records information made available by a logistics system; it does not necessarily show a parcel's current physical position. Avoid turning a broad description into a definite claim that the package has cleared a checkpoint or will arrive the following day."
           ],
           "table": {
-            "columns": ["What the update describes", "What to verify next"],
+            "columns": [
+              "What the update describes",
+              "What to verify next"
+            ],
             "rows": [
               [
                 "Shipment information created",
@@ -1001,19 +1142,25 @@
         "Use the official Parcels record and carrier information; a tracking gap is not a diagnosis by itself.",
         "Send support a precise, private enquiry with the latest dated event and the action you need clarified."
       ],
-      "sourceIds": ["official-guide", "official-home", "official-help"]
+      "sourceIds": [
+        "official-guide",
+        "official-home",
+        "official-help"
+      ],
+      "quickAnswer": "Open your international parcel record and copy its tracking number and carrier. A seller’s domestic tracking number follows the item to the warehouse, not to your home. A label or parcel number without a carrier acceptance scan does not by itself confirm that international transit has begun."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "LoveGoBuy Shipping Time: From Seller Dispatch to Delivery",
-      "description": "Understand the stages behind LoveGoBuy delivery time, compare current route estimates and plan around warehouse, packing and carrier handovers.",
+      "title": "How Long Does LoveGoBuy Take to Ship? Stages & Delays",
+      "description": "Understand LoveGoBuy shipping time from seller dispatch to warehouse processing and final delivery. Check the right stage before chasing a delay.",
       "category": "Shipping time",
       "keyword": "lovegobuy shipping time",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1023,6 +1170,37 @@
         "LoveGoBuy's official guide describes purchasing and parcel shipping as successive decisions. Its estimator lets you examine services using your destination and parcel information. This article turns that workflow into a planning method. It does not publish fixed delivery promises, pretend that one route is always fastest or convert another customer's experience into an estimate for your order."
       ],
       "sections": [
+        {
+          "heading": "Which shipping stage is actually delayed?",
+          "paragraphs": [
+            "Check the latest completed event before deciding whom to contact. If the seller has not dispatched, the international carrier cannot trace the item. If the item is in the warehouse but no parcel has been submitted, an international delivery estimate has not started. Once dispatched, compare the tracking history with the selected service’s current stated estimate.",
+            "A simple timeline can prevent confusion: record item payment, seller dispatch, warehouse arrival, parcel submission, carrier acceptance and delivery as separate dates. Leave missing dates blank. Ask about the specific unfinished stage and include the relevant order or parcel reference in the official support channel."
+          ],
+          "table": {
+            "columns": [
+              "Last confirmed stage",
+              "What to check next"
+            ],
+            "rows": [
+              [
+                "Item paid; seller has not dispatched",
+                "Seller handling and order support"
+              ],
+              [
+                "Warehouse arrival",
+                "Inspection, pending decisions and parcel submission"
+              ],
+              [
+                "Parcel submitted; no carrier acceptance",
+                "Processing and handover confirmation"
+              ],
+              [
+                "Carrier accepted the parcel",
+                "International tracking and destination delivery updates"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Define the start and end of the estimate",
           "paragraphs": [
@@ -1058,7 +1236,10 @@
             "A useful comparison sheet separates speed, cost and suitability. If one route appears faster, identify what that estimate covers and whether it accepts your actual contents and dimensions. Do not infer insurance, guaranteed delivery or a particular customs arrangement from a familiar service name. Where two offers are difficult to compare, ask a specific question about their stated conditions instead of choosing solely from the shortest number displayed."
           ],
           "table": {
-            "columns": ["Planning stage", "Evidence to check"],
+            "columns": [
+              "Planning stage",
+              "Evidence to check"
+            ],
             "rows": [
               [
                 "Purchase and seller dispatch",
@@ -1116,7 +1297,12 @@
         "Compare current estimates for the same destination and parcel; do not reuse another shopper's timetable.",
         "Investigate delays using the last confirmed milestone and the correct order or parcel reference."
       ],
-      "sourceIds": ["official-guide", "official-estimator", "official-help"]
+      "sourceIds": [
+        "official-guide",
+        "official-estimator",
+        "official-help"
+      ],
+      "quickAnswer": "There is no single delivery time for every LoveGoBuy order. Seller dispatch, domestic transit, warehouse processing, international transport and final delivery are separate stages. Use the current estimate for your selected route; do not count it from the day you first paid for an item."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1166,7 +1352,10 @@
             "For a hypothetical two-piece set, several results might show the same outfit while selling different combinations. One option could refer to a single piece and another to the complete set. Record what is included and which option produces the displayed price before comparing candidates. If the listing remains unclear, ask for clarification or leave it out of the shortlist rather than treating the most appealing photo as the answer."
           ],
           "table": {
-            "columns": ["Comparison point", "What to confirm"],
+            "columns": [
+              "Comparison point",
+              "What to confirm"
+            ],
             "rows": [
               [
                 "Visual design",
@@ -1240,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "LoveGoBuy Finds Under $20: Clothing & Accessories",
+      "description": "Browse LoveGoBuy finds under $20 with dated price examples, clothing and accessory links, sizing checks and a clear budget before shipping.",
+      "category": "Budget finds",
+      "keyword": "lovegobuy finds under 20",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Start with the price-sorted clothing and accessories categories, then confirm the price of your chosen variant on the order page. “Under $20” here means the displayed item price in US dollars, not a delivered price. International shipping, domestic delivery, optional services and any applicable charges can take the final total above that amount.",
+        "The examples below were visible in our directory on 9 November 2026. They are starting points for comparison, not tested recommendations or promises of stock. The shopping workflow is based on LoveGoBuy’s official guide; the budget method and selection checklist are our editorial advice."
+      ],
+      "sections": [
+        {
+          "heading": "Three price examples to start your shortlist",
+          "paragraphs": [
+            "The directory displayed an unbranded necklace at $0.97, an unbranded sunglasses listing at $1.11, and a short-sleeve shirt listing at $9.58. Open the linked product pages to check the current information. The source categorizes the first two under headwear; category placement does not change what the listing actually offers.",
+            "These observations confirm only that those listing names and prices were displayed on that date. They do not confirm materials, authenticity, protective performance, variant availability or quality. In particular, do not assume that sunglasses provide a stated level of UV protection without reliable evidence. A seller’s descriptive phrase such as “high quality” is a claim to investigate."
+          ],
+          "table": {
+            "columns": [
+              "Directory example",
+              "Displayed item price on 9 Nov 2026",
+              "Check before ordering"
+            ],
+            "rows": [
+              [
+                "Unbranded necklace · 88",
+                "$0.97",
+                "Dimensions, material and selected option"
+              ],
+              [
+                "Unbranded sunglasses · 99",
+                "$1.11",
+                "Frame measurements and any protection claim"
+              ],
+              [
+                "Short-sleeve shirt · 3287",
+                "$9.58",
+                "Garment measurements, fabric and color"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "View the necklace listing",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "View the sunglasses listing",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "View the short-sleeve shirt listing",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Search within a useful category",
+          "paragraphs": [
+            "Choose the item type first: T-shirts, accessories, headwear or pants and shorts. Sorting the whole directory by price can surface small parts, spare accessories or options that are not comparable with a complete garment. A cheap listing is useful only if it matches what you intended to buy. Narrow the category before judging whether the price is attractive.",
+            "Use a simple search term describing the item, then open a few candidates rather than collecting dozens of similar links. Save the listing URL and the intended variant together. If the card price and the selected option differ, use the selected option for your comparison. Check whether a displayed amount refers to one piece, a pair, a set or a minimum quantity."
+          ],
+          "links": [
+            {
+              "label": "Browse T-shirts by price",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Browse accessories by price",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Browse headwear by price",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Set an item budget and a delivery budget",
+          "paragraphs": [
+            "Make two limits before adding anything to your order: an item-price ceiling and the maximum you are willing to spend after delivery. They answer different questions. An item at $18 fits a $20 product ceiling, but it may be a poor choice if shipping uses up the rest of your total budget. LoveGoBuy’s official fee information and estimator are the places to check current charges.",
+            "For an arithmetic example only, suppose an item costs $12, domestic delivery costs $2, and the share of international delivery you assign to it is $9. The subtotal is already $23 before any further applicable charges. Those figures are invented to explain the method, not a shipping quote. Keep uncertain amounts separate instead of silently entering zero."
+          ]
+        },
+        {
+          "heading": "Compare fit and materials before the price",
+          "paragraphs": [
+            "For a T-shirt, compare chest width, body length, shoulder width and sleeve length with a garment that fits you. Use the seller’s measurement method and ask about missing dimensions. Size letters alone are a weak comparison because charts can differ between sellers and cuts. A low item price does not compensate for a garment that you cannot comfortably wear.",
+            "For an accessory, record the measurements that control its use: necklace length, frame width, clasp type or compatibility with another item. Separate a photographed appearance from a verified material claim. If an important specification is absent, place the candidate on hold. Buying several uncertain options to find one suitable item can cost more than choosing one well-documented option."
+          ]
+        },
+        {
+          "heading": "Consider weight and packaging together",
+          "paragraphs": [
+            "A small item can still add avoidable delivery cost if its packaging increases the parcel’s outer dimensions. Conversely, a dense item can add actual weight without taking much space. LoveGoBuy’s shipping estimator uses the selected route’s conditions; some routes compare actual and volumetric weight. Ask for packed measurements when they are available and compare the options supported for your destination.",
+            "Do not add unnecessary items merely to spread shipping across a larger order. Consolidation can be convenient, but a different weight band, size limit or item restriction can change the available routes. Compare the complete parcel plans using the same destination and protection requirements. Keep protective packaging when removing it would create a damage risk you are unwilling to accept."
+          ]
+        },
+        {
+          "heading": "Use photos to answer specific questions",
+          "paragraphs": [
+            "Directory pictures are product photos, not automatically warehouse QC photos from your order. After an item arrives in the warehouse, inspect the images associated with that order and compare them with the variant you selected. Check visible color, included parts, labels, obvious defects and requested measurements. Record any discrepancy clearly before deciding whether to ship.",
+            "A useful extra-photo request names one observable question: show the necklace clasp, measure the garment’s chest width, or show both sides of an accessory. Photos cannot establish every material or performance claim. If a concern needs information that a photograph cannot provide, ask the seller or support directly. Consult the applicable return conditions while there is still an opportunity to act."
+          ]
+        },
+        {
+          "heading": "Keep a short comparison record",
+          "paragraphs": [
+            "For each candidate, keep the product URL, selected option, current item price, measurement evidence, expected packaging and unresolved questions. Add a decision such as investigate, ready to order or remove. This record makes it easier to see that the cheapest option still lacks a measurement, while a slightly more expensive one already matches your requirements.",
+            "Recheck the final order page immediately before payment. Confirm the source item, quantity and variant rather than relying on an old screenshot. If the product disappeared or changed price, return to the category and repeat the comparison; do not substitute an item simply because its picture looks familiar. A saved link is a reference, not a reservation. Keep the date of your check beside the price so that an old observation is never mistaken for a current offer."
+          ],
+          "table": {
+            "columns": [
+              "Comparison field",
+              "Why it matters"
+            ],
+            "rows": [
+              [
+                "Exact variant and quantity",
+                "Prevents comparing a single piece with a set"
+              ],
+              [
+                "Measurements and materials",
+                "Connects the listing to your actual needs"
+              ],
+              [
+                "Item price plus delivery allowance",
+                "Shows whether the complete budget is realistic"
+              ],
+              [
+                "Unanswered question and next action",
+                "Keeps missing evidence visible"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Frequently asked questions about budget finds",
+          "paragraphs": [
+            "Does an under-$20 listing include delivery? No: this guide uses the displayed item price. Check domestic delivery, international shipping, optional services and other applicable charges separately. Can a directory price change? Yes. Treat the dated examples as observations and verify the selected variant on the current order page.",
+            "Are the examples quality-tested? No. We have not tested those items, and their inclusion is not an authenticity certification. Should you order the cheapest result? Only if the item, measurements and total budget satisfy your requirements. Start with one clear use case, keep a small shortlist, and use the linked sizing, QC and cost guides to resolve the questions that remain."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Under $20 refers to the item price, not the delivered total.",
+        "Verify the current variant, measurements and quantity before paying.",
+        "Use actual order QC photos and retain the source link."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "LoveGoBuy Shoes Spreadsheet: Sizes, Prices & QC Checks",
+      "description": "Use the LoveGoBuy shoes spreadsheet to compare listings, shoe measurements, selected prices, QC photos and packaging before shipping.",
+      "category": "Shoes",
+      "keyword": "lovegobuy shoes spreadsheet",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Use the shoes category as a shortlist, then compare the exact size, selected price and available measurements on each listing. A familiar size number or product photo is not enough to establish fit. Before international shipping, review the warehouse photos for your own pair and check how the packaging affects the parcel quote.",
+        "This guide connects the shoe directory to a practical comparison process. It does not rate untested shoes, certify authenticity or promise a particular shipping cost. LoveGoBuy’s official purchasing guide and shipping estimator explain the platform workflow; the fit and inspection checklist below is independent editorial guidance."
+      ],
+      "sections": [
+        {
+          "heading": "Open the shoe directory with a clear purpose",
+          "paragraphs": [
+            "Start with the shoes category and decide what you need the pair for. Everyday walking, occasional wear and a particular activity may require different evidence. Listing titles can help you find candidates, but they do not prove comfort, performance or durability. Avoid treating a familiar brand name in a listing as evidence that the seller’s claims have been verified.",
+            "Use the price sort to compare the displayed item amounts and keep two or three realistic candidates. Open each product page before saving it. Record the listing URL, intended color, size and the option price you actually see. Do not compare the cheapest selectable accessory on one page with a complete pair on another page."
+          ],
+          "links": [
+            {
+              "label": "Open the LoveGoBuy shoes spreadsheet",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Compare shoes by displayed price",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Compare measurements rather than size labels alone",
+          "paragraphs": [
+            "Begin with the seller’s size chart and identify what each number measures. Foot length, insole length and outer-sole length are different measurements. A chart expressed in centimeters is helpful only when its measuring method is clear. Do not assume that an EU number converts identically across all sellers or that a US label always uses the same sizing system.",
+            "Measure both feet using the same method and compare the larger measurement with the chart. Also consider width and the shape of the toe area when the seller provides that information. If the listing gives only size labels, request clarification before purchase. A warehouse photograph of a size tag can confirm the label on the pair, but it cannot prove that the shoes will fit."
+          ],
+          "table": {
+            "columns": [
+              "Evidence",
+              "What it can tell you",
+              "What remains uncertain"
+            ],
+            "rows": [
+              [
+                "Seller size chart",
+                "The stated measurement for an option",
+                "Whether its method matches your measurement"
+              ],
+              [
+                "Size-tag photo",
+                "The label on the received pair",
+                "Actual fit and internal usable space"
+              ],
+              [
+                "Requested measurement",
+                "A visible dimension measured in the photo",
+                "Comfort and long-term performance"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Write down the exact pair you intend to buy",
+          "paragraphs": [
+            "Create one short record per candidate: source URL, marketplace, selected size, color, item price and any question for the seller. If a page contains different versions, record the version explicitly. Similar product images can appear across several listings and do not make those listings interchangeable. Preserve the product identity from discovery through the order confirmation.",
+            "Check what the package includes. A shoebox, extra laces or other accessories may affect both what you receive and the parcel dimensions. Do not assume that items shown in a promotional photograph are included. If an included part matters to your decision, confirm it before paying and add it to the list you will check when the warehouse photos become available."
+          ]
+        },
+        {
+          "heading": "Inspect your own warehouse QC photos",
+          "paragraphs": [
+            "Public photos can show how another order looked, but the images attached to your order are the relevant evidence for the pair you are about to ship. Compare both shoes, visible colors, size labels, stitching, sole edges and included parts. Look for obvious mismatches or damage. Use the order details as the reference rather than a different listing that happens to use a similar picture.",
+            "Ask for an additional angle or measurement only when it answers a specific uncertainty. For example, request a clear photograph of both size labels or a measurement with the ruler placement visible. Do not describe seller photos as warehouse QC, and do not treat a photo review as a guarantee of authenticity or durability. Some issues cannot be established through pictures."
+          ],
+          "bullets": [
+            "Check that both shoes belong to the intended size and color option.",
+            "Compare visible construction and included parts with the order record.",
+            "Resolve a visible mismatch before approving international shipping."
+          ]
+        },
+        {
+          "heading": "Work out the complete cost of the pair",
+          "paragraphs": [
+            "Keep the item price separate from domestic delivery, international shipping and any selected services. The directory displays USD amounts for discovery, while the current order and payment pages determine what you are charged. Exchange rates, selected options or seller changes can affect the final amount. Save the current quote details instead of assuming that a previously viewed card is the complete budget.",
+            "For a calculation example only, a hypothetical pair priced at $18 with $3 domestic delivery and $14 assigned international shipping already totals $35. These numbers are not observed LoveGoBuy fees or a destination quote. The purpose is to show why comparing two shoes by item price alone can be misleading when their packed weights or dimensions differ."
+          ]
+        },
+        {
+          "heading": "Compare shipping with and without the box",
+          "paragraphs": [
+            "If the available packing service allows it, ask how retaining or removing a shoebox would change the packed dimensions, protection and route eligibility. Removing a box does not guarantee a lower price. A route that charges by actual weight may behave differently from one that compares actual and volumetric weight, and the parcel may remain in the same charge band.",
+            "Use the exact selected route’s divisor and rounding rules. For illustration, a parcel measuring 35 × 25 × 15 cm has a volume of 13,125 cubic centimeters. Dividing by 6,000 gives about 2.19 kg; dividing by 8,000 gives about 1.64 kg. Those are alternative mathematical examples, not two interchangeable rules for the same route. Compare them with actual weight only as the selected route instructs."
+          ],
+          "table": {
+            "columns": [
+              "Packing choice",
+              "Information to request"
+            ],
+            "rows": [
+              [
+                "Keep the shoebox",
+                "Outer packed dimensions, protection and complete quote"
+              ],
+              [
+                "Remove the shoebox if offered",
+                "Replacement protection, new dimensions and complete quote"
+              ],
+              [
+                "Combine with other items",
+                "Whole-parcel weight, restrictions and available routes"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Resolve problems while the pair is still in the warehouse",
+          "paragraphs": [
+            "If you spot an incorrect option or visible damage, keep the order number, the relevant listing details and the images showing the issue. Explain the difference in a short, factual request. Ask which return or exchange options are currently available for that order. The seller’s terms and the order stage matter; this guide does not promise that every item can be returned.",
+            "Do not send the pair internationally while an important fit or condition question remains unanswered. Once an item is part of a dispatched parcel, the practical options can change. Keep the discussion in the official support channel and retain the response with your comparison record. A clear description and specific photos are more useful than repeatedly submitting the same vague complaint."
+          ]
+        },
+        {
+          "heading": "Questions to answer before you ship",
+          "paragraphs": [
+            "Is there a universal LoveGoBuy shoe-size conversion? Use the seller’s chart and measuring method for the selected listing rather than a universal conversion. Are directory photos QC photos? No: product imagery and warehouse photographs from your own order have different roles. Can a pair under $20 arrive for under $20? The displayed item price alone does not answer that question.",
+            "Will removing the box always save money? No. Compare the actual packing options and route quote, including the level of protection you need. Your final checklist is simple: confirm the pair, understand the size evidence, inspect the relevant photos, resolve discrepancies, and compare the complete shipping plan. Then use the tracking guide once an international parcel has actually been dispatched."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Keep the exact source URL, size and color together.",
+        "A size label, a measurement and a fit judgment are different evidence.",
+        "Compare the full packing and shipping quote before approving dispatch."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "LoveGoBuy No Shipping Routes Available: What to Check",
+      "description": "No LoveGoBuy shipping routes available? Check destination, weight, parcel dimensions and item restrictions, then compare supported packing options.",
+      "category": "Shipping troubleshooting",
+      "keyword": "lovegobuy no shipping routes available",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "If LoveGoBuy shows no shipping routes, first verify the destination, the weight unit, the outer parcel dimensions and the item categories you entered. The official estimator explains that size or weight limits can remove available options. A restricted item, an unsupported destination or a temporary route change can also require clarification from support.",
+        "Do not change truthful item information just to make a route appear. The useful next step is to identify the input or eligibility condition causing the empty result, then compare legitimate packing or parcel options. This guide is a diagnostic checklist, not a promise that every parcel can be shipped to every address."
+      ],
+      "sections": [
+        {
+          "heading": "Check whether you are estimating or submitting a parcel",
+          "paragraphs": [
+            "An estimate made before warehouse packing uses the information you supply. A parcel ready for submission may use warehouse measurements and item information. Those are different evidence levels. Write down which screen shows the empty result, the destination you selected and whether the dimensions are estimates or measured packing data. That context helps you avoid troubleshooting the wrong stage.",
+            "If an earlier estimate showed a route but the completed parcel does not, compare the inputs before assuming a system error. Packaging can change outer dimensions, the final weight can enter another band, and the parcel may include an item whose shipping conditions differ from the rest. The current options for the completed parcel take precedence over a preliminary example."
+          ]
+        },
+        {
+          "heading": "Verify the destination and units",
+          "paragraphs": [
+            "Check the destination country or region and any address details requested by the form. If a route has area restrictions, ask support whether they apply to your address. Do not replace the destination with a different country to obtain a reassuring quote. The estimate is useful only when it describes the shipment you actually intend to make.",
+            "Next, read the unit labels beside every field. A weight entered as 2,000 kilograms instead of 2,000 grams can produce a meaningless result. The same problem occurs when millimeters are entered into a centimeters field. Re-enter the real measurements in the displayed units and keep a screenshot of the corrected inputs if the route list remains empty."
+          ],
+          "table": {
+            "columns": [
+              "Input",
+              "Useful check"
+            ],
+            "rows": [
+              [
+                "Destination",
+                "The actual country or region and required address details"
+              ],
+              [
+                "Weight",
+                "The value matches the unit shown by the form"
+              ],
+              [
+                "Dimensions",
+                "Outer packed length, width and height in the stated units"
+              ],
+              [
+                "Item category",
+                "An accurate description of everything in the parcel"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Check actual weight and dimensional limits separately",
+          "paragraphs": [
+            "A parcel can satisfy a weight limit and still exceed a route’s size limits. Review the route conditions for the longest side, other dimensional rules and any permitted weight range. The estimator’s explanation mentions restrictions for overweight and oversized parcels, but there is no single limit that applies to every route. Read the conditions for your destination and available service.",
+            "Volumetric weight is a separate calculation used by some routes when determining billable weight. For example only, 40 × 30 × 20 cm equals 24,000 cubic centimeters. A divisor of 6,000 produces 4 kg; a divisor of 8,000 produces 3 kg. Neither divisor should be assumed universally. Use the route’s stated rule and distinguish the billable-weight calculation from its size-eligibility limits."
+          ]
+        },
+        {
+          "heading": "Review the items that may restrict the parcel",
+          "paragraphs": [
+            "Check the shipping conditions for every item in a combined parcel, particularly when an item has a battery, liquid, powder, magnetic component or another characteristic that a carrier may restrict. This is a list of questions to investigate, not a claim that LoveGoBuy prohibits every item in these categories. The applicable service and destination decide what is permitted.",
+            "Ask support to identify the specific item characteristic and route condition that prevents shipment. Keep the product description accurate and do not conceal an item or choose an unrelated category to bypass a restriction. If an item is ineligible for the available services, ask what legitimate options remain before paying for additional packing or making assumptions about a workaround."
+          ]
+        },
+        {
+          "heading": "Compare supported repacking or split-parcel options",
+          "paragraphs": [
+            "LoveGoBuy’s estimator explains that splitting an overweight or oversized shipment can be an option, and it refers to rehearsal or packing-related services for better measurements. Availability and charges should be checked on the current platform. Ask what packed weight and dimensions each proposed parcel would have, then estimate each one for the same real destination.",
+            "Compare the sum of all parcel quotes and selected services. Two smaller parcels can cost more because each may incur its own initial charge, even if splitting restores route eligibility. Repacking can change protection as well as size. Keep essential protection for fragile items, and do not approve a change until you understand the tradeoff and the complete amount you may have to pay."
+          ],
+          "table": {
+            "columns": [
+              "Possible action",
+              "What to compare before approval"
+            ],
+            "rows": [
+              [
+                "Correct an input error",
+                "Accurate units and real destination"
+              ],
+              [
+                "Repack if supported",
+                "New dimensions, protective materials and service charge"
+              ],
+              [
+                "Split if supported",
+                "Eligibility of every parcel and sum of their quotes"
+              ],
+              [
+                "Remove an ineligible item",
+                "Officially available handling or return options"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Distinguish an empty estimate from an account problem",
+          "paragraphs": [
+            "An empty route list does not by itself prove that your account is blocked, your payment failed or your parcel is lost. Check the information actually shown on the page. If there is a separate error message, record its wording. Refreshing a form may help with a temporary display issue, but repeated refreshes will not solve a genuine weight, size or eligibility restriction.",
+            "If the route list changed without a change to the parcel, ask whether services for the destination have been temporarily adjusted. Do not copy a route name or delivery promise from an old forum post into your plan. Use the current official estimate and the platform’s response, and retain the time of the check so that later changes can be compared fairly."
+          ]
+        },
+        {
+          "heading": "Send support a useful diagnostic request",
+          "paragraphs": [
+            "Provide the order or parcel reference privately through the official support channel, the destination, the weight and dimensions with units, the item types, the exact screen and the error wording. Say whether the measurements are estimated or supplied by the warehouse. Attach a screenshot that shows the relevant inputs, while avoiding unnecessary personal or payment information.",
+            "Ask one concrete question: which entered value, item condition or route limit prevents a service from appearing, and which supported change would make the parcel eligible? If support proposes splitting or repacking, request the resulting measurements and costs before approving it. Keep the answer with the parcel record so you can check that the next estimate uses the agreed information."
+          ]
+        },
+        {
+          "heading": "What to do when a route becomes available",
+          "paragraphs": [
+            "Read the service conditions before choosing the newly available option. Compare the complete price, the stated delivery estimate, tracking arrangements and any relevant restrictions. A visible route is an option to evaluate, not a guarantee of arrival on a particular day. Check that all items and the real destination remain correctly represented in the final parcel submission.",
+            "After dispatch, use the international parcel tracking number rather than the seller’s domestic tracking number. If you still have no eligible route, keep the parcel unsubmitted while official support explains the available handling choices. The safest useful outcome is an accurate answer about eligibility and cost; changing truthful details until a button appears does not create a valid shipping plan."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Verify destination, units, dimensions and item information first.",
+        "Check route-specific limits; do not assume one divisor or maximum weight.",
+        "Compare the total cost and protection of any supported split or repacking plan."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

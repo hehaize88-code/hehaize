@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "Calculadora de envio LoveGoBuy: custos e peso do volume",
-      "description": "Use a calculadora de envio LoveGoBuy com o destino, peso, dimensões e categoria de mercadorias corretos. Compreenda o peso volumétrico e compare estimativas de volumes.",
+      "title": "Calculadora de envio LoveGoBuy: custo e peso faturável",
+      "description": "Estime o envio LoveGoBuy com peso real e volumétrico, divisores específicos da rota e um exemplo calculado. Separe a cotação do preço do artigo.",
       "category": "Envio",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "A LoveGoBuy disponibiliza um estimador oficial com campos para o pacote e o destino. Este guia oferece conselhos independentes para preparar esses dados e comparar resultados. Não recomenda uma rota universalmente mais barata nem promete um prazo de entrega para a sua encomenda."
       ],
       "sections": [
+        {
+          "heading": "Um exemplo calculado de peso faturável",
+          "paragraphs": [
+            "Suponha que uma encomenda hipotética embalada pesa 2 kg e mede 40 × 30 × 20 cm. O volume é 24 000 centímetros cúbicos. Se uma rota especificar um divisor de 6 000, o peso volumétrico é 4 kg. Se outra especificar 8 000, é 3 kg. São exemplos aritméticos, não cotações atuais nem regras intercambiáveis para uma rota.",
+            "Quando uma rota cobra o maior dos pesos real e volumétrico, os valores faturáveis sem arredondamento neste exemplo seriam 4 kg e 3 kg, respetivamente. Aplique depois os incrementos de cobrança, taxas e limites de elegibilidade próprios dessa rota. Um peso calculado menor, por si só, não prova que uma rota seja mais barata ou esteja disponível. Se não aparecer nenhuma, use o guia de resolução de problemas abaixo."
+          ],
+          "table": {
+            "columns": [
+              "Dado ou regra de exemplo",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Peso real depois de embalado",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24 000 cm³"
+              ],
+              [
+                "Divisor de exemplo 6 000",
+                "4 kg de peso volumétrico"
+              ],
+              [
+                "Divisor de exemplo 8 000",
+                "3 kg de peso volumétrico"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Descreva o pacote que realmente está a considerar",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Introduza o destino real, o peso embalado e as dimensões exteriores no simulador oficial de envio da LoveGoBuy. Siga as regras de peso, divisor e arredondamento da rota escolhida. A estimativa não é o valor final até serem confirmados os dados reais da encomenda e os serviços selecionados."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "Acompanhamento LoveGoBuy: siga o seu volume e compreenda as atualizações",
-      "description": "Encontre o número de acompanhamento LoveGoBuy correto, distinga encomendas de volumes, interprete intervalos sem atualizações e prepare um pedido de apoio útil.",
+      "title": "Acompanhamento LoveGoBuy: estados e falta de atualizações",
+      "description": "Acompanhe a encomenda LoveGoBuy com o número correto. Distinga entrega do vendedor, processamento no armazém e intervalos sem atualizações internacionais.",
       "category": "Acompanhamento de volumes",
       "keyword": "acompanhamento lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "O guia oficial de compras LoveGoBuy encaminha os clientes para a página Parcels para acompanhar o progresso do envio. Este guia independente explica como organizar as informações ali apresentadas e investigar atualizações pouco claras. Não consulta encomendas privadas, não substitui o sistema de acompanhamento da transportadora nem promete uma data de entrega. Os exemplos de estados abaixo descrevem situações logísticas gerais, não uma lista fixa de rótulos da interface LoveGoBuy."
       ],
       "sections": [
+        {
+          "heading": "Sem atualizações: comece pelo último evento real",
+          "paragraphs": [
+            "Associe a referência à fase do envio antes de experimentar outro site de acompanhamento. Uma mesma compra pode ter número de encomenda, número de acompanhamento nacional e número internacional. Use o número apresentado no registo do volume para o trajeto internacional e conserve o último evento datado ao pedir ajuda.",
+            "Não existe um número universal de dias após o qual qualquer intervalo sem atualizações significa perda. Compare a última leitura e o tempo decorrido com a estimativa atual do serviço escolhido. Se a ultrapassar, ou se o registo indicar uma exceção que exige ação, contacte o apoio oficial com a referência e o estado exato, em vez de presumir apreensão ou perda."
+          ],
+          "table": {
+            "columns": [
+              "Estado observado",
+              "Próxima verificação útil"
+            ],
+            "rows": [
+              [
+                "Envio do vendedor entregue",
+                "Confirme a receção no armazém; pode ser apenas o trajeto nacional"
+              ],
+              [
+                "Etiqueta criada ou dados recebidos",
+                "Verifique se houve aceitação pela transportadora"
+              ],
+              [
+                "Nenhuma nova leitura após a aceitação",
+                "Compare a estimativa da rota e o último evento da transportadora"
+              ],
+              [
+                "Tentativa de entrega ou problema na morada",
+                "Siga prontamente as instruções oficiais da transportadora"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Distinga a encomenda do produto, a referência do volume e o número de acompanhamento",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Abra o registo da encomenda internacional e copie o número de acompanhamento e a transportadora. O número nacional do vendedor acompanha o artigo até ao armazém, não até à sua casa. Uma etiqueta ou número de encomenda sem leitura de aceitação pela transportadora não confirma, por si só, que o transporte internacional começou."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "Prazo de envio LoveGoBuy: da expedição pelo vendedor à entrega",
-      "description": "Compreenda as etapas do prazo de entrega LoveGoBuy, compare estimativas atuais de rotas e planeie tendo em conta armazém, embalagem e entrega às transportadoras.",
+      "title": "Quanto demora o envio LoveGoBuy? Fases e atrasos",
+      "description": "Compreenda os prazos LoveGoBuy desde a expedição do vendedor até ao processamento no armazém e à entrega final. Identifique a fase certa antes de investigar um atraso.",
       "category": "Prazo de envio",
       "keyword": "prazo de envio lovegobuy",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "O guia oficial LoveGoBuy descreve a compra e o envio de volumes como decisões sucessivas. O estimador permite analisar serviços com os dados do destino e do volume. Este artigo transforma esse processo num método de planeamento. Não publica promessas fixas de entrega, não afirma que uma rota é sempre a mais rápida nem transforma a experiência de outro cliente numa estimativa para a sua encomenda."
       ],
       "sections": [
+        {
+          "heading": "Que fase do envio está realmente atrasada?",
+          "paragraphs": [
+            "Verifique o último evento concluído antes de decidir quem contactar. Se o vendedor ainda não expediu, a transportadora internacional não consegue localizar o artigo. Se este estiver no armazém, mas nenhuma encomenda tiver sido submetida, a estimativa de entrega internacional ainda não começou. Após a expedição, compare o histórico de acompanhamento com a estimativa atual indicada para o serviço escolhido.",
+            "Uma cronologia simples evita confusão: registe como datas distintas o pagamento do artigo, a expedição do vendedor, a chegada ao armazém, a submissão da encomenda, a aceitação pela transportadora e a entrega. Deixe em branco as datas em falta. Pergunte pela fase específica por concluir e inclua a referência relevante da encomenda ou do volume no canal oficial de apoio."
+          ],
+          "table": {
+            "columns": [
+              "Última fase confirmada",
+              "O que verificar a seguir"
+            ],
+            "rows": [
+              [
+                "Artigo pago; vendedor ainda não expediu",
+                "Preparação pelo vendedor e apoio à encomenda"
+              ],
+              [
+                "Chegada ao armazém",
+                "Inspeção, decisões pendentes e submissão da encomenda"
+              ],
+              [
+                "Encomenda submetida; sem aceitação pela transportadora",
+                "Processamento e confirmação de entrega à transportadora"
+              ],
+              [
+                "Transportadora aceitou a encomenda",
+                "Acompanhamento internacional e atualizações da entrega no destino"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Defina o início e o fim da estimativa",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Não existe um prazo único para todas as encomendas LoveGoBuy. Expedição do vendedor, transporte nacional, processamento no armazém, transporte internacional e entrega final são fases distintas. Use a estimativa atual da rota selecionada; não a conte desde o primeiro pagamento de um artigo."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "Produtos LoveGoBuy abaixo de 20 $: roupa e acessórios",
+      "description": "Explore produtos LoveGoBuy abaixo de 20 $, com exemplos de preços datados, ligações de roupa e acessórios, verificação de tamanhos e um orçamento claro antes do envio.",
+      "category": "Opções económicas",
+      "keyword": "produtos lovegobuy abaixo de 20",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Comece pelas categorias de roupa e acessórios ordenadas por preço e confirme depois o preço da variante escolhida na página da encomenda. «Abaixo de 20 $» refere-se aqui ao preço apresentado do artigo em dólares americanos, não ao preço com entrega. O envio internacional, a entrega nacional, os serviços opcionais e outros encargos aplicáveis podem elevar o total final acima desse valor.",
+        "Os exemplos abaixo estavam visíveis no nosso catálogo em 9 de novembro de 2026. São pontos de partida para comparação, não recomendações testadas nem promessas de disponibilidade. O processo de compra baseia-se no guia oficial da LoveGoBuy; o método de orçamento e a lista de verificação são aconselhamento editorial nosso."
+      ],
+      "sections": [
+        {
+          "heading": "Três exemplos de preços para iniciar a sua lista",
+          "paragraphs": [
+            "O catálogo apresentava um colar sem marca a 0,97 $, uns óculos de sol sem marca a 1,11 $ e uma camisa de manga curta a 9,58 $. Abra as páginas de produtos ligadas para consultar as informações atuais. A fonte classifica os dois primeiros como acessórios para a cabeça; a categoria não altera aquilo que o anúncio realmente oferece.",
+            "Estas observações confirmam apenas que aqueles nomes e preços eram apresentados nessa data. Não confirmam materiais, autenticidade, capacidade de proteção, disponibilidade das variantes ou qualidade. Em particular, não presuma que uns óculos de sol fornecem determinado nível de proteção UV sem provas fiáveis. Uma expressão descritiva do vendedor, como «alta qualidade», é uma alegação a investigar."
+          ],
+          "table": {
+            "columns": [
+              "Exemplo do catálogo",
+              "Preço apresentado em 9 de novembro de 2026",
+              "Verificar antes de encomendar"
+            ],
+            "rows": [
+              [
+                "Colar sem marca · 88",
+                "$0.97",
+                "Dimensões, material e opção selecionada"
+              ],
+              [
+                "Óculos de sol sem marca · 99",
+                "$1.11",
+                "Medidas da armação e qualquer alegação de proteção"
+              ],
+              [
+                "Camisa de manga curta · 3287",
+                "$9.58",
+                "Medidas da peça, tecido e cor"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Ver o anúncio do colar",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Ver o anúncio dos óculos de sol",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Ver o anúncio da camisa de manga curta",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Pesquise numa categoria adequada",
+          "paragraphs": [
+            "Escolha primeiro o tipo de artigo: T-shirts, acessórios, acessórios para a cabeça ou calças e calções. Ordenar todo o catálogo por preço pode destacar pequenas peças, acessórios de substituição ou opções que não são comparáveis a uma peça de roupa completa. Um anúncio barato só é útil se corresponder ao que pretendia comprar. Restrinja a categoria antes de avaliar se o preço é atrativo.",
+            "Use um termo simples que descreva o artigo e abra alguns candidatos, em vez de recolher dezenas de ligações semelhantes. Guarde o URL do anúncio juntamente com a variante pretendida. Se o preço do cartão diferir do da opção selecionada, use a opção selecionada na comparação. Verifique se o valor apresentado corresponde a uma unidade, um par, um conjunto ou uma quantidade mínima."
+          ],
+          "links": [
+            {
+              "label": "Explorar T-shirts por preço",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Explorar acessórios por preço",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Explorar acessórios para a cabeça por preço",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Defina um orçamento para o artigo e para a entrega",
+          "paragraphs": [
+            "Estabeleça dois limites antes de acrescentar algo à encomenda: um teto para o preço do artigo e o máximo que pretende gastar incluindo a entrega. Respondem a perguntas diferentes. Um artigo de 18 $ cabe num teto de 20 $, mas pode ser uma má escolha se o envio consumir o resto do orçamento total. Consulte os encargos atuais na informação oficial de taxas e no simulador da LoveGoBuy.",
+            "Como mero exemplo aritmético, suponha que um artigo custa 12 $, a entrega nacional 2 $ e a parcela do envio internacional que lhe atribui 9 $. O subtotal já é 23 $, antes de outros encargos aplicáveis. Estes valores são inventados para explicar o método, não constituem uma cotação de envio. Mantenha os valores incertos separados em vez de introduzir zero sem explicação."
+          ]
+        },
+        {
+          "heading": "Compare o ajuste e os materiais antes do preço",
+          "paragraphs": [
+            "Para uma T-shirt, compare a largura do peito, o comprimento, a largura dos ombros e o comprimento das mangas com uma peça que lhe assente bem. Use o método de medição do vendedor e pergunte pelas dimensões em falta. As letras dos tamanhos são uma comparação fraca, pois as tabelas podem variar entre vendedores e cortes. Um preço baixo não compensa uma peça que não consegue usar confortavelmente.",
+            "Para um acessório, registe as medidas que determinam a sua utilização: comprimento do colar, largura da armação, tipo de fecho ou compatibilidade com outro artigo. Distinga a aparência fotografada de uma alegação de material verificada. Se faltar uma especificação importante, suspenda a escolha desse candidato. Comprar várias opções incertas até encontrar uma adequada pode custar mais do que escolher uma opção bem documentada."
+          ]
+        },
+        {
+          "heading": "Considere o peso e a embalagem em conjunto",
+          "paragraphs": [
+            "Um artigo pequeno pode acrescentar custos de entrega evitáveis se a embalagem aumentar as dimensões exteriores da encomenda. Inversamente, um artigo denso pode acrescentar peso real sem ocupar muito espaço. O simulador de envio da LoveGoBuy utiliza as condições da rota selecionada; algumas rotas comparam peso real e volumétrico. Peça as medidas depois de embalado quando estiverem disponíveis e compare as opções aceites para o seu destino.",
+            "Não acrescente artigos desnecessários apenas para distribuir o envio por uma encomenda maior. A consolidação pode ser conveniente, mas outro escalão de peso, limite de dimensões ou restrição de artigo pode alterar as rotas disponíveis. Compare os planos completos para a encomenda usando o mesmo destino e os mesmos requisitos de proteção. Mantenha a embalagem protetora se a remoção criar um risco de dano que não pretende aceitar."
+          ]
+        },
+        {
+          "heading": "Use fotografias para responder a perguntas específicas",
+          "paragraphs": [
+            "As imagens do catálogo são fotografias de produto, não são automaticamente fotografias de controlo de qualidade do armazém da sua encomenda. Depois de o artigo chegar ao armazém, inspecione as imagens associadas à encomenda e compare-as com a variante selecionada. Verifique a cor visível, os componentes incluídos, as etiquetas, os defeitos evidentes e as medidas pedidas. Registe claramente qualquer diferença antes de decidir enviar.",
+            "Um pedido útil de fotografia adicional identifica uma questão observável: mostrar o fecho do colar, medir a largura do peito da peça ou mostrar ambos os lados de um acessório. As fotografias não demonstram todas as alegações sobre materiais ou desempenho. Se uma preocupação exigir informação que uma fotografia não consegue fornecer, pergunte diretamente ao vendedor ou ao apoio. Consulte as condições de devolução aplicáveis enquanto ainda é possível agir."
+          ]
+        },
+        {
+          "heading": "Mantenha um registo breve da comparação",
+          "paragraphs": [
+            "Para cada candidato, guarde o URL do produto, a opção selecionada, o preço atual, as provas das medidas, a embalagem prevista e as questões por resolver. Acrescente uma decisão como investigar, pronto para encomendar ou remover. Este registo ajuda a perceber que ainda falta uma medida na opção mais barata, enquanto outra ligeiramente mais cara já corresponde aos seus requisitos.",
+            "Volte a verificar a página final da encomenda imediatamente antes do pagamento. Confirme o artigo de origem, a quantidade e a variante em vez de confiar numa captura de ecrã antiga. Se o produto desaparecer ou mudar de preço, volte à categoria e repita a comparação; não o substitua apenas porque a fotografia parece familiar. Uma ligação guardada é uma referência, não uma reserva. Guarde a data da verificação junto do preço para nunca confundir uma observação antiga com uma oferta atual."
+          ],
+          "table": {
+            "columns": [
+              "Campo de comparação",
+              "Porque é importante"
+            ],
+            "rows": [
+              [
+                "Variante e quantidade exatas",
+                "Evita comparar uma unidade com um conjunto"
+              ],
+              [
+                "Medidas e materiais",
+                "Liga o anúncio às suas necessidades reais"
+              ],
+              [
+                "Preço do artigo e verba para entrega",
+                "Mostra se o orçamento completo é realista"
+              ],
+              [
+                "Pergunta sem resposta e próxima ação",
+                "Mantém visível a informação em falta"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Perguntas frequentes sobre opções económicas",
+          "paragraphs": [
+            "Um anúncio abaixo de 20 $ inclui entrega? Não: este guia usa o preço apresentado do artigo. Verifique separadamente a entrega nacional, o envio internacional, os serviços opcionais e outros encargos aplicáveis. O preço do catálogo pode mudar? Sim. Trate os exemplos datados como observações e confirme a variante selecionada na página atual da encomenda.",
+            "A qualidade dos exemplos foi testada? Não. Não testámos estes artigos e a sua inclusão não certifica autenticidade. Deve encomendar o resultado mais barato? Apenas se o artigo, as medidas e o orçamento total cumprirem os seus requisitos. Comece com uma utilização clara, mantenha uma lista pequena e use os guias ligados sobre tamanhos, controlo de qualidade e custos para resolver as questões restantes."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Abaixo de 20 $ refere-se ao preço do artigo, não ao total com entrega.",
+        "Confirme a variante atual, as medidas e a quantidade antes de pagar.",
+        "Use fotografias de controlo de qualidade da encomenda real e guarde a ligação de origem."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "Catálogo de calçado LoveGoBuy: tamanhos, preços e controlo de qualidade",
+      "description": "Use o catálogo de calçado LoveGoBuy para comparar anúncios, medidas, preços selecionados, fotografias de controlo de qualidade e embalagens antes do envio.",
+      "category": "Calçado",
+      "keyword": "catálogo de calçado lovegobuy",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Use a categoria de calçado para criar uma lista e compare depois o tamanho exato, o preço selecionado e as medidas disponíveis em cada anúncio. Um número de tamanho familiar ou uma fotografia de produto não chega para garantir o ajuste. Antes do envio internacional, analise as fotografias do armazém do seu próprio par e verifique como a embalagem afeta a cotação da encomenda.",
+        "Este guia liga o catálogo de calçado a um processo prático de comparação. Não avalia sapatos não testados, não certifica autenticidade nem promete um custo de envio específico. O guia oficial de compra e o simulador de envio da LoveGoBuy explicam o funcionamento da plataforma; a lista abaixo sobre ajuste e inspeção constitui aconselhamento editorial independente."
+      ],
+      "sections": [
+        {
+          "heading": "Abra o catálogo de calçado com um objetivo claro",
+          "paragraphs": [
+            "Comece pela categoria de calçado e decida para que precisa do par. Caminhadas diárias, uso ocasional e uma atividade específica podem exigir provas diferentes. Os títulos dos anúncios ajudam a encontrar candidatos, mas não comprovam conforto, desempenho ou durabilidade. Evite tratar uma marca familiar num anúncio como prova de que as alegações do vendedor foram verificadas.",
+            "Ordene por preço para comparar os valores apresentados e guarde dois ou três candidatos realistas. Abra cada página de produto antes de a guardar. Registe o URL do anúncio, a cor pretendida, o tamanho e o preço da opção que realmente vê. Não compare o acessório selecionável mais barato de uma página com um par completo de outra."
+          ],
+          "links": [
+            {
+              "label": "Abrir o catálogo de calçado LoveGoBuy",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Comparar calçado pelo preço apresentado",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Compare medidas, não apenas etiquetas de tamanho",
+          "paragraphs": [
+            "Comece pela tabela de tamanhos do vendedor e identifique o que cada número mede. Comprimento do pé, da palmilha e da sola exterior são medidas diferentes. Uma tabela em centímetros só é útil quando o método de medição é claro. Não presuma que um número europeu tem a mesma conversão em todos os vendedores ou que uma etiqueta americana usa sempre o mesmo sistema.",
+            "Meça os dois pés com o mesmo método e compare a maior medida com a tabela. Considere também a largura e o formato da zona dos dedos quando o vendedor fornecer essa informação. Se o anúncio indicar apenas tamanhos, peça esclarecimentos antes da compra. Uma fotografia da etiqueta tirada no armazém confirma o tamanho indicado no par, mas não prova que o calçado lhe vai servir."
+          ],
+          "table": {
+            "columns": [
+              "Prova",
+              "O que pode indicar",
+              "O que continua incerto"
+            ],
+            "rows": [
+              [
+                "Tabela de tamanhos do vendedor",
+                "A medida declarada para uma opção",
+                "Se o método corresponde à sua medição"
+              ],
+              [
+                "Fotografia da etiqueta de tamanho",
+                "A etiqueta do par recebido",
+                "O ajuste real e o espaço interior útil"
+              ],
+              [
+                "Medida solicitada",
+                "Uma dimensão visível medida na fotografia",
+                "Conforto e desempenho a longo prazo"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Registe o par exato que pretende comprar",
+          "paragraphs": [
+            "Crie um registo breve por candidato: URL de origem, plataforma de venda, tamanho selecionado, cor, preço e perguntas para o vendedor. Se a página contiver versões diferentes, registe explicitamente a versão. Imagens semelhantes podem surgir em vários anúncios e não tornam esses anúncios equivalentes. Preserve a identidade do produto desde a descoberta até à confirmação da encomenda.",
+            "Verifique o que está incluído. A caixa de sapatos, atacadores adicionais ou outros acessórios podem afetar tanto o que recebe como as dimensões da encomenda. Não presuma que os artigos apresentados numa fotografia promocional estão incluídos. Se um componente incluído for importante para a decisão, confirme-o antes de pagar e acrescente-o à lista a verificar quando as fotografias do armazém estiverem disponíveis."
+          ]
+        },
+        {
+          "heading": "Inspecione as fotografias de controlo de qualidade da sua encomenda",
+          "paragraphs": [
+            "As fotografias públicas mostram como era outra encomenda, mas as imagens associadas à sua são as provas relevantes para o par que vai enviar. Compare os dois sapatos, as cores visíveis, as etiquetas, as costuras, os rebordos das solas e os componentes incluídos. Procure diferenças evidentes ou danos. Use os detalhes da encomenda como referência, não outro anúncio que use uma imagem semelhante.",
+            "Peça outro ângulo ou medida apenas quando isso responder a uma dúvida específica. Por exemplo, solicite uma fotografia nítida das duas etiquetas ou uma medição em que se veja a posição da régua. Não descreva fotografias do vendedor como controlo de qualidade do armazém, nem trate uma análise fotográfica como garantia de autenticidade ou durabilidade. Algumas questões não podem ser esclarecidas por imagens."
+          ],
+          "bullets": [
+            "Confirme que ambos os sapatos correspondem à opção de tamanho e cor pretendida.",
+            "Compare a construção visível e os componentes incluídos com o registo da encomenda.",
+            "Resolva qualquer diferença visível antes de aprovar o envio internacional."
+          ]
+        },
+        {
+          "heading": "Calcule o custo completo do par",
+          "paragraphs": [
+            "Mantenha o preço do artigo separado da entrega nacional, do envio internacional e dos serviços selecionados. O catálogo apresenta valores em USD para descoberta, mas são as páginas atuais de encomenda e pagamento que determinam o valor cobrado. Câmbios, opções escolhidas ou alterações do vendedor podem afetar o montante final. Guarde os detalhes da cotação atual em vez de presumir que um cartão visto anteriormente representa o orçamento completo.",
+            "Apenas como exemplo de cálculo, um par hipotético de 18 $, com 3 $ de entrega nacional e 14 $ de envio internacional atribuído, já totaliza 35 $. Estes números não são taxas observadas da LoveGoBuy nem uma cotação para um destino. O objetivo é mostrar porque comparar dois pares apenas pelo preço pode induzir em erro quando os pesos ou as dimensões depois de embalados diferem."
+          ]
+        },
+        {
+          "heading": "Compare o envio com e sem caixa",
+          "paragraphs": [
+            "Se o serviço de embalagem disponível o permitir, pergunte como manter ou retirar a caixa altera as dimensões, a proteção e a elegibilidade para as rotas. Retirar a caixa não garante um preço inferior. Uma rota cobrada pelo peso real pode comportar-se de forma diferente de outra que compara peso real e volumétrico, e a encomenda pode continuar no mesmo escalão de cobrança.",
+            "Use o divisor e as regras de arredondamento exatos da rota escolhida. Como ilustração, uma encomenda de 35 × 25 × 15 cm tem um volume de 13 125 centímetros cúbicos. Dividir por 6 000 dá cerca de 2,19 kg; dividir por 8 000 dá cerca de 1,64 kg. São exemplos matemáticos alternativos, não duas regras intercambiáveis para a mesma rota. Compare com o peso real apenas conforme as instruções da rota selecionada."
+          ],
+          "table": {
+            "columns": [
+              "Escolha de embalagem",
+              "Informação a pedir"
+            ],
+            "rows": [
+              [
+                "Manter a caixa de sapatos",
+                "Dimensões exteriores depois de embalado, proteção e cotação completa"
+              ],
+              [
+                "Retirar a caixa, se disponível",
+                "Proteção alternativa, novas dimensões e cotação completa"
+              ],
+              [
+                "Juntar a outros artigos",
+                "Peso da encomenda completa, restrições e rotas disponíveis"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Resolva problemas enquanto o par ainda está no armazém",
+          "paragraphs": [
+            "Se detetar uma opção incorreta ou danos visíveis, guarde o número da encomenda, os detalhes relevantes do anúncio e as imagens do problema. Explique a diferença num pedido breve e factual. Pergunte que opções de devolução ou troca estão atualmente disponíveis para essa encomenda. As condições do vendedor e a fase da encomenda contam; este guia não promete que todos os artigos possam ser devolvidos.",
+            "Não envie o par internacionalmente enquanto uma questão importante sobre ajuste ou estado permanecer sem resposta. Depois de o artigo integrar uma encomenda expedida, as opções práticas podem mudar. Mantenha a conversa no canal oficial de apoio e guarde a resposta no seu registo de comparação. Uma descrição clara e fotografias específicas são mais úteis do que repetir a mesma reclamação vaga."
+          ]
+        },
+        {
+          "heading": "Perguntas a responder antes do envio",
+          "paragraphs": [
+            "Existe uma conversão universal de tamanhos de calçado LoveGoBuy? Use a tabela e o método de medição do vendedor para o anúncio selecionado, em vez de uma conversão universal. As fotografias do catálogo são de controlo de qualidade? Não: as imagens de produto e as fotografias do armazém da sua encomenda têm funções distintas. Um par abaixo de 20 $ pode chegar por menos de 20 $? Só o preço apresentado do artigo não responde a essa pergunta.",
+            "Retirar a caixa poupa sempre dinheiro? Não. Compare as opções de embalagem reais e a cotação da rota, incluindo o nível de proteção necessário. A lista final é simples: confirmar o par, compreender as provas do tamanho, inspecionar as fotografias relevantes, resolver diferenças e comparar o plano completo de envio. Use depois o guia de acompanhamento quando a encomenda internacional tiver sido efetivamente expedida."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Guarde juntos o URL de origem exato, o tamanho e a cor.",
+        "Uma etiqueta de tamanho, uma medida e uma avaliação do ajuste são provas diferentes.",
+        "Compare a cotação completa de embalagem e envio antes de aprovar a expedição."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "LoveGoBuy sem rotas de envio disponíveis: o que verificar",
+      "description": "Sem rotas de envio LoveGoBuy disponíveis? Verifique destino, peso, dimensões e restrições dos artigos; compare depois as opções de embalagem aceites.",
+      "category": "Resolução de problemas de envio",
+      "keyword": "lovegobuy sem rotas de envio disponíveis",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Se a LoveGoBuy não apresentar rotas de envio, verifique primeiro o destino, a unidade de peso, as dimensões exteriores da encomenda e as categorias de artigos introduzidas. O simulador oficial explica que os limites de tamanho ou peso podem eliminar opções disponíveis. Um artigo restrito, um destino não servido ou uma alteração temporária da rota também podem exigir esclarecimentos do apoio.",
+        "Não altere informações verdadeiras sobre os artigos apenas para fazer aparecer uma rota. O próximo passo útil é identificar o dado ou a condição de elegibilidade que causa o resultado vazio e depois comparar opções legítimas de embalagem ou encomenda. Este guia é uma lista de diagnóstico, não uma promessa de que qualquer encomenda pode ser enviada para qualquer morada."
+      ],
+      "sections": [
+        {
+          "heading": "Verifique se está a simular ou a submeter uma encomenda",
+          "paragraphs": [
+            "Uma estimativa anterior à embalagem no armazém utiliza os dados que fornece. Uma encomenda pronta para submissão pode usar medidas e informações dos artigos fornecidas pelo armazém. São níveis diferentes de prova. Registe o ecrã que mostra o resultado vazio, o destino selecionado e se as dimensões são estimadas ou medidas após a embalagem. Este contexto evita investigar a fase errada.",
+            "Se uma estimativa anterior mostrava uma rota e a encomenda concluída não, compare os dados antes de presumir um erro do sistema. A embalagem pode alterar as dimensões exteriores, o peso final pode entrar noutro escalão e a encomenda pode incluir um artigo com condições de envio distintas. As opções atuais para a encomenda completa prevalecem sobre um exemplo preliminar."
+          ]
+        },
+        {
+          "heading": "Confirme o destino e as unidades",
+          "paragraphs": [
+            "Verifique o país ou região de destino e os detalhes de morada pedidos no formulário. Se uma rota tiver restrições territoriais, pergunte ao apoio se abrangem a sua morada. Não substitua o destino por outro país para obter uma cotação tranquilizadora. A estimativa só é útil se descrever o envio que realmente pretende fazer.",
+            "Leia depois as unidades indicadas junto de cada campo. Introduzir 2 000 quilogramas em vez de 2 000 gramas pode produzir um resultado sem sentido. O mesmo acontece ao introduzir milímetros num campo de centímetros. Volte a inserir as medidas reais nas unidades apresentadas e guarde uma captura dos dados corrigidos se a lista de rotas continuar vazia."
+          ],
+          "table": {
+            "columns": [
+              "Dado",
+              "Verificação útil"
+            ],
+            "rows": [
+              [
+                "Destino",
+                "O país ou região real e os detalhes de morada necessários"
+              ],
+              [
+                "Peso",
+                "O valor corresponde à unidade apresentada no formulário"
+              ],
+              [
+                "Dimensões",
+                "Comprimento, largura e altura exteriores depois de embalado nas unidades indicadas"
+              ],
+              [
+                "Categoria do artigo",
+                "Descrição exata de tudo o que está na encomenda"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Verifique separadamente o peso real e os limites de dimensões",
+          "paragraphs": [
+            "Uma encomenda pode cumprir um limite de peso e ainda exceder os limites de tamanho de uma rota. Consulte as condições relativas ao lado maior, outras regras dimensionais e o intervalo de peso permitido. A explicação do simulador menciona restrições a encomendas demasiado pesadas ou grandes, mas não existe um único limite para todas as rotas. Leia as condições para o seu destino e serviço disponível.",
+            "O peso volumétrico é um cálculo separado usado por algumas rotas para determinar o peso faturável. Apenas como exemplo, 40 × 30 × 20 cm equivale a 24 000 centímetros cúbicos. Um divisor de 6 000 produz 4 kg; um divisor de 8 000 produz 3 kg. Nenhum divisor deve ser considerado universal. Use a regra indicada para a rota e distinga o cálculo do peso faturável dos limites de elegibilidade por tamanho."
+          ]
+        },
+        {
+          "heading": "Analise os artigos que podem restringir a encomenda",
+          "paragraphs": [
+            "Verifique as condições de envio de cada artigo numa encomenda consolidada, sobretudo se algum tiver bateria, líquido, pó, componente magnético ou outra característica que uma transportadora possa restringir. Esta é uma lista de questões a investigar, não a afirmação de que a LoveGoBuy proíbe todos os artigos destas categorias. O serviço aplicável e o destino determinam o que é permitido.",
+            "Peça ao apoio para identificar a característica específica do artigo e a condição da rota que impedem o envio. Mantenha a descrição do produto correta e não o oculte nem escolha uma categoria sem relação para contornar uma restrição. Se um artigo não for elegível para os serviços disponíveis, pergunte que opções legítimas restam antes de pagar embalagem adicional ou presumir uma solução alternativa."
+          ]
+        },
+        {
+          "heading": "Compare opções aceites de reembalagem ou divisão",
+          "paragraphs": [
+            "O simulador da LoveGoBuy explica que dividir um envio demasiado pesado ou grande pode ser uma opção e refere serviços de ensaio ou embalagem para obter medidas melhores. A disponibilidade e os preços devem ser verificados na plataforma atual. Pergunte qual seria o peso e as dimensões embaladas de cada encomenda proposta e simule cada uma para o mesmo destino real.",
+            "Compare a soma de todas as cotações e serviços selecionados. Duas encomendas menores podem custar mais, pois cada uma pode ter a sua cobrança inicial, mesmo que a divisão torne uma rota elegível. A reembalagem pode alterar a proteção e o tamanho. Mantenha a proteção essencial dos artigos frágeis e não aprove uma alteração antes de compreender as implicações e o montante completo que poderá pagar."
+          ],
+          "table": {
+            "columns": [
+              "Ação possível",
+              "O que comparar antes de aprovar"
+            ],
+            "rows": [
+              [
+                "Corrigir um erro de introdução",
+                "Unidades corretas e destino real"
+              ],
+              [
+                "Reembalar, se permitido",
+                "Novas dimensões, materiais protetores e preço do serviço"
+              ],
+              [
+                "Dividir, se permitido",
+                "Elegibilidade de cada encomenda e soma das cotações"
+              ],
+              [
+                "Retirar um artigo não elegível",
+                "Opções de tratamento ou devolução oficialmente disponíveis"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Distinga uma estimativa vazia de um problema da conta",
+          "paragraphs": [
+            "Uma lista de rotas vazia não prova por si só que a conta está bloqueada, o pagamento falhou ou a encomenda se perdeu. Verifique a informação efetivamente mostrada na página. Se existir uma mensagem de erro separada, registe o texto. Atualizar o formulário pode ajudar num problema temporário de visualização, mas repetir a atualização não resolve uma restrição real de peso, tamanho ou elegibilidade.",
+            "Se a lista de rotas mudar sem alterações à encomenda, pergunte se os serviços para o destino foram ajustados temporariamente. Não copie para o seu plano o nome de uma rota ou uma promessa de entrega de uma publicação antiga num fórum. Use a estimativa oficial atual e a resposta da plataforma e registe a hora da consulta para comparar corretamente alterações posteriores."
+          ]
+        },
+        {
+          "heading": "Envie ao apoio um pedido de diagnóstico útil",
+          "paragraphs": [
+            "Forneça em privado, pelo canal oficial de apoio, a referência da encomenda ou do volume, o destino, o peso e dimensões com unidades, os tipos de artigos, o ecrã exato e o texto do erro. Indique se as medidas são estimadas ou fornecidas pelo armazém. Anexe uma captura que mostre os dados relevantes, evitando informações pessoais ou de pagamento desnecessárias.",
+            "Faça uma pergunta concreta: que valor introduzido, condição de artigo ou limite de rota impede um serviço de aparecer e que alteração aceite tornaria a encomenda elegível? Se o apoio propuser dividir ou reembalar, peça as medidas resultantes e os custos antes de aprovar. Guarde a resposta com o registo da encomenda para verificar se a estimativa seguinte usa a informação acordada."
+          ]
+        },
+        {
+          "heading": "O que fazer quando uma rota fica disponível",
+          "paragraphs": [
+            "Leia as condições do serviço antes de escolher a nova opção. Compare o preço completo, o prazo estimado indicado, o acompanhamento e as restrições relevantes. Uma rota visível é uma opção a avaliar, não uma garantia de chegada num dia específico. Confirme que todos os artigos e o destino real continuam corretamente representados na submissão final da encomenda.",
+            "Após a expedição, use o número de acompanhamento internacional da encomenda, não o número nacional do vendedor. Se continuar sem rota elegível, não submeta a encomenda enquanto o apoio oficial explica as opções de tratamento disponíveis. O resultado útil mais seguro é uma resposta correta sobre elegibilidade e custo; alterar dados verdadeiros até aparecer um botão não cria um plano válido de envio."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Confirme primeiro o destino, as unidades, as dimensões e os dados dos artigos.",
+        "Verifique os limites específicos da rota; não presuma um divisor ou peso máximo único.",
+        "Compare o custo total e a proteção de qualquer plano aceite de divisão ou reembalagem."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],

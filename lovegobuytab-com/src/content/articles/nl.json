@@ -441,8 +441,8 @@
     },
     {
       "slug": "lovegobuy-shipping-estimate-guide",
-      "title": "LoveGoBuy-verzendcalculator: kosten en pakketgewicht",
-      "description": "Gebruik de LoveGoBuy-verzendcalculator met de juiste bestemming, het juiste gewicht, de afmetingen en goederencategorie. Begrijp volumegewicht en vergelijk pakketschattingen.",
+      "title": "LoveGoBuy-verzendcalculator: kosten en factureerbaar gewicht",
+      "description": "Bereken LoveGoBuy-verzending met werkelijk en volumegewicht, routespecifieke delers en een rekenvoorbeeld. Houd de offerte apart van de artikelprijs.",
       "category": "Verzending",
       "keyword": "lovegobuy shipping",
       "readingMinutes": 5,
@@ -451,6 +451,37 @@
         "LoveGoBuy heeft een officiële calculator met invoer voor pakket en bestemming. Deze handleiding geeft onafhankelijk advies om die gegevens voor te bereiden en resultaten te vergelijken. Ze beveelt geen universeel goedkoopste route aan en belooft geen levertijd voor je bestelling."
       ],
       "sections": [
+        {
+          "heading": "Een uitgewerkt voorbeeld van factureerbaar gewicht",
+          "paragraphs": [
+            "Stel dat een denkbeeldig verpakt pakket 2 kg weegt en 40 × 30 × 20 cm meet. Het volume is 24.000 kubieke centimeter. Als een route deler 6.000 voorschrijft, is het volumegewicht 4 kg. Als een andere route 8.000 voorschrijft, is het 3 kg. Dit zijn rekenvoorbeelden, geen actuele offertes of uitwisselbare regels voor één route.",
+            "Wanneer een route het hoogste van werkelijk en volumegewicht factureert, zouden de onafgeronde factureerbare gewichten in dit voorbeeld respectievelijk 4 kg en 3 kg zijn. Pas vervolgens de tariefstappen, kosten en toelatingslimieten van die route toe. Een lager berekend gewicht bewijst op zichzelf niet dat een route goedkoper of beschikbaar is. Gebruik de onderstaande probleemoplossingsgids als er geen route verschijnt."
+          ],
+          "table": {
+            "columns": [
+              "Voorbeeldinvoer of regel",
+              "Resultaat"
+            ],
+            "rows": [
+              [
+                "Werkelijk verpakt gewicht",
+                "2 kg"
+              ],
+              [
+                "40 × 30 × 20 cm",
+                "24.000 cm³"
+              ],
+              [
+                "Voorbeelddeler 6.000",
+                "4 kg volumegewicht"
+              ],
+              [
+                "Voorbeelddeler 8.000",
+                "3 kg volumegewicht"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Beschrijf het pakket dat je daadwerkelijk overweegt",
           "paragraphs": [
@@ -554,12 +585,13 @@
         "official-guide"
       ],
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-fees-total-cost",
         "lovegobuy-warehouse-consolidation",
-        "lovegobuy-shipping-time",
-        "lovegobuy-tracking-guide"
+        "lovegobuy-shipping-time"
       ],
-      "dateModified": "2026-10-23"
+      "dateModified": "2026-11-09",
+      "quickAnswer": "Vul de werkelijke bestemming, het verpakte gewicht en de buitenmaten in de officiële LoveGoBuy-verzendcalculator in. Volg de gewichts-, deler- en afrondingsregels van de gekozen route. De raming is pas een definitief tarief wanneer de daadwerkelijke pakketgegevens en geselecteerde diensten zijn bevestigd."
     },
     {
       "slug": "lovegobuy-warehouse-consolidation",
@@ -960,15 +992,16 @@
     },
     {
       "slug": "lovegobuy-tracking-guide",
-      "title": "LoveGoBuy-tracking: volg je pakket en begrijp de updates",
-      "description": "Vind het juiste LoveGoBuy-trackingnummer, onderscheid bestellingen van pakketten, interpreteer ontbrekende updates en bereid een nuttig verzoek aan de klantenservice voor.",
+      "title": "LoveGoBuy-tracking: pakketstatus en controles bij geen updates",
+      "description": "Volg je LoveGoBuy-pakket met het juiste trackingnummer. Onderscheid verkopersbezorging, magazijnverwerking en ontbrekende internationale trackingupdates.",
       "category": "Pakkettracking",
       "keyword": "lovegobuy pakket volgen",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-time",
         "lovegobuy-warehouse-consolidation",
         "lovegobuy-payment-order-status"
@@ -978,6 +1011,37 @@
         "De officiële aankoopgids van LoveGoBuy verwijst klanten naar de pagina Parcels om de voortgang van verzending te volgen. Deze onafhankelijke gids legt uit hoe je de informatie daar ordent en onduidelijke updates onderzoekt. Hij haalt geen privébestellingen op, vervangt het trackingsysteem van de vervoerder niet en belooft geen bezorgdatum. De statusvoorbeelden hieronder beschrijven algemene logistieke situaties, geen vaste lijst met labels uit de LoveGoBuy-interface."
       ],
       "sections": [
+        {
+          "heading": "Geen trackingupdate: begin bij de laatste echte gebeurtenis",
+          "paragraphs": [
+            "Koppel de referentie aan de verzendfase voordat je een andere trackingwebsite probeert. Voor dezelfde aankoop kunnen een bestelnummer, een binnenlands trackingnummer en een internationaal pakkettrackingnummer bestaan. Gebruik voor het internationale traject het nummer in de pakketgegevens en bewaar de laatste gedateerde gebeurtenis wanneer je hulp vraagt.",
+            "Er bestaat geen universeel aantal dagen waarna elk gat in tracking betekent dat iets verloren is. Vergelijk de laatste scan en verstreken tijd met de actuele schatting van de gekozen dienst. Neem als die wordt overschreden, of als een uitzondering actie vereist, contact op met officiële ondersteuning met de pakketreferentie en exacte status in plaats van aan te nemen dat het pakket in beslag genomen of kwijt is."
+          ],
+          "table": {
+            "columns": [
+              "Waargenomen status",
+              "Nuttige volgende controle"
+            ],
+            "rows": [
+              [
+                "Verkoperszending bezorgd",
+                "Bevestig magazijnontvangst; dit kan alleen het binnenlandse traject zijn"
+              ],
+              [
+                "Label aangemaakt of gegevens ontvangen",
+                "Controleer of de vervoerder het pakket heeft geaccepteerd"
+              ],
+              [
+                "Geen nieuwe scan na acceptatie",
+                "Vergelijk de routeraming en laatste vervoerdersgebeurtenis"
+              ],
+              [
+                "Bezorgpoging of adresprobleem",
+                "Volg de officiële instructies van de vervoerder snel op"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Onderscheid de productbestelling, pakketreferentie en het trackingnummer",
           "paragraphs": [
@@ -1082,19 +1146,21 @@
         "official-guide",
         "official-home",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Open je internationale pakketgegevens en kopieer het trackingnummer en de vervoerder. Het binnenlandse trackingnummer van een verkoper volgt het artikel naar het magazijn, niet naar je huis. Een label- of pakketnummer zonder acceptatiescan van de vervoerder bevestigt op zichzelf niet dat het internationale vervoer is begonnen."
     },
     {
       "slug": "lovegobuy-shipping-time",
-      "title": "LoveGoBuy-verzendtijd: van verzending door de verkoper tot bezorging",
-      "description": "Begrijp de fasen achter de LoveGoBuy-bezorgtijd, vergelijk actuele routeschattingen en plan rond het magazijn, inpakken en overdrachten aan vervoerders.",
+      "title": "Hoelang duurt LoveGoBuy-verzending? Fasen en vertragingen",
+      "description": "Begrijp de LoveGoBuy-verzendtijd van verkopersverzending tot magazijnverwerking en eindbezorging. Controleer de juiste fase voordat je een vertraging navraagt.",
       "category": "Verzendtijd",
       "keyword": "lovegobuy verzendtijd",
       "readingMinutes": 7,
       "datePublished": "2026-10-23",
-      "dateModified": "2026-10-23",
+      "dateModified": "2026-11-09",
       "sourcesCheckedAt": "2026-10-23",
       "relatedSlugs": [
+        "lovegobuy-no-shipping-routes",
         "lovegobuy-shipping-estimate-guide",
         "lovegobuy-tracking-guide",
         "lovegobuy-warehouse-consolidation"
@@ -1104,6 +1170,37 @@
         "De officiële LoveGoBuy-gids beschrijft kopen en pakketverzending als opeenvolgende beslissingen. Met de calculator kun je diensten bekijken op basis van je bestemming en pakketgegevens. Dit artikel maakt van dat proces een planningsmethode. Het publiceert geen vaste bezorgbeloften, doet niet alsof één route altijd het snelst is en zet de ervaring van een andere klant niet om in een schatting voor jouw bestelling."
       ],
       "sections": [
+        {
+          "heading": "Welke verzendfase is daadwerkelijk vertraagd?",
+          "paragraphs": [
+            "Controleer de laatst voltooide gebeurtenis voordat je bepaalt met wie je contact opneemt. Als de verkoper nog niet heeft verzonden, kan de internationale vervoerder het artikel niet traceren. Als het artikel in het magazijn ligt maar geen pakket is ingediend, is een internationale bezorgschatting nog niet begonnen. Vergelijk na verzending de trackinggeschiedenis met de actuele opgegeven schatting van de geselecteerde dienst.",
+            "Een eenvoudige tijdlijn voorkomt verwarring: noteer artikelbetaling, verkopersverzending, magazijnaankomst, pakketindiening, acceptatie door de vervoerder en bezorging als afzonderlijke datums. Laat ontbrekende datums leeg. Vraag naar de specifieke onvoltooide fase en vermeld de relevante bestel- of pakketreferentie in het officiële ondersteuningskanaal."
+          ],
+          "table": {
+            "columns": [
+              "Laatst bevestigde fase",
+              "Wat je vervolgens controleert"
+            ],
+            "rows": [
+              [
+                "Artikel betaald; verkoper heeft niet verzonden",
+                "Verwerking door de verkoper en bestelondersteuning"
+              ],
+              [
+                "Aankomst in magazijn",
+                "Inspectie, openstaande beslissingen en pakketindiening"
+              ],
+              [
+                "Pakket ingediend; nog niet geaccepteerd door vervoerder",
+                "Verwerking en bevestiging van overdracht"
+              ],
+              [
+                "Vervoerder heeft het pakket geaccepteerd",
+                "Internationale tracking en bezorgupdates op bestemming"
+              ]
+            ]
+          }
+        },
         {
           "heading": "Bepaal het begin en einde van de schatting",
           "paragraphs": [
@@ -1204,7 +1301,8 @@
         "official-guide",
         "official-estimator",
         "official-help"
-      ]
+      ],
+      "quickAnswer": "Er bestaat geen vaste levertijd voor elke LoveGoBuy-bestelling. Verzending door de verkoper, binnenlands vervoer, magazijnverwerking, internationaal vervoer en eindbezorging zijn afzonderlijke fasen. Gebruik de actuele schatting van je gekozen route; tel die niet vanaf de dag waarop je voor het eerst voor een artikel betaalde."
     },
     {
       "slug": "lovegobuy-image-search-guide",
@@ -1331,6 +1429,455 @@
         "official-home",
         "official-help",
         "official-estimator"
+      ]
+    },
+    {
+      "slug": "lovegobuy-finds-under-20",
+      "title": "LoveGoBuy-vondsten onder $20: kleding en accessoires",
+      "description": "Bekijk LoveGoBuy-vondsten onder $20 met gedateerde prijsvoorbeelden, links naar kleding en accessoires, maatcontroles en een duidelijk budget vóór verzending.",
+      "category": "Betaalbare vondsten",
+      "keyword": "lovegobuy vondsten onder 20",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Begin bij de op prijs gesorteerde categorieën kleding en accessoires en controleer daarna de prijs van je gekozen variant op de bestelpagina. ‘Onder $20’ betekent hier de weergegeven artikelprijs in Amerikaanse dollars, niet de prijs inclusief bezorging. Internationale verzending, binnenlandse bezorging, optionele diensten en eventuele andere kosten kunnen het eindbedrag boven die grens brengen.",
+        "De voorbeelden hieronder waren op 9 november 2026 zichtbaar in onze catalogus. Het zijn uitgangspunten voor vergelijking, geen geteste aanbevelingen of toezeggingen over voorraad. Het aankoopproces is gebaseerd op de officiële handleiding van LoveGoBuy; de budgetmethode en selectiechecklist zijn ons redactionele advies."
+      ],
+      "sections": [
+        {
+          "heading": "Drie prijsvoorbeelden voor je eerste selectie",
+          "paragraphs": [
+            "De catalogus toonde een merkloze ketting voor $0,97, een merkloze zonnebril voor $1,11 en een overhemd met korte mouwen voor $9,58. Open de gekoppelde productpagina’s om de actuele informatie te controleren. De bron plaatst de eerste twee onder hoofddeksels; de categorie verandert niet wat de advertentie daadwerkelijk aanbiedt.",
+            "Deze waarnemingen bevestigen uitsluitend dat die productnamen en prijzen op die datum werden weergegeven. Ze bevestigen niets over materialen, authenticiteit, beschermende werking, beschikbare varianten of kwaliteit. Ga vooral niet uit van een bepaald niveau van uv-bescherming bij een zonnebril zonder betrouwbaar bewijs. Een verkopersomschrijving zoals ‘hoge kwaliteit’ is een claim die je moet onderzoeken."
+          ],
+          "table": {
+            "columns": [
+              "Voorbeeld uit de catalogus",
+              "Weergegeven artikelprijs op 9 nov. 2026",
+              "Controleren vóór bestellen"
+            ],
+            "rows": [
+              [
+                "Merkloze ketting · 88",
+                "$0.97",
+                "Afmetingen, materiaal en geselecteerde optie"
+              ],
+              [
+                "Merkloze zonnebril · 99",
+                "$1.11",
+                "Montuurmaten en eventuele beschermingsclaims"
+              ],
+              [
+                "Overhemd met korte mouwen · 3287",
+                "$9.58",
+                "Kledingmaten, stof en kleur"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "Bekijk de ketting",
+              "path": "/products/headwear/88/"
+            },
+            {
+              "label": "Bekijk de zonnebril",
+              "path": "/products/headwear/99/"
+            },
+            {
+              "label": "Bekijk het overhemd met korte mouwen",
+              "path": "/products/t-shirts/3287/"
+            }
+          ]
+        },
+        {
+          "heading": "Zoek binnen een passende categorie",
+          "paragraphs": [
+            "Kies eerst het artikeltype: T-shirts, accessoires, hoofddeksels of lange en korte broeken. Als je de hele catalogus op prijs sorteert, kun je kleine onderdelen, losse accessoires of opties vinden die niet vergelijkbaar zijn met een compleet kledingstuk. Een goedkope aanbieding is alleen nuttig als die aansluit bij wat je wilde kopen. Beperk de categorie voordat je beoordeelt of de prijs aantrekkelijk is.",
+            "Gebruik een eenvoudige zoekterm die het artikel beschrijft en open enkele kandidaten in plaats van tientallen vergelijkbare links te verzamelen. Bewaar de productlink samen met de gewenste variant. Als de prijs op de kaart verschilt van die van de geselecteerde optie, gebruik dan de optieprijs voor je vergelijking. Controleer of het bedrag betrekking heeft op één stuk, een paar, een set of een minimumaantal."
+          ],
+          "links": [
+            {
+              "label": "Bekijk T-shirts op prijs",
+              "path": "/spreadsheet/t-shirts/?sort=price"
+            },
+            {
+              "label": "Bekijk accessoires op prijs",
+              "path": "/spreadsheet/accessories/?sort=price"
+            },
+            {
+              "label": "Bekijk hoofddeksels op prijs",
+              "path": "/spreadsheet/headwear/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Stel een artikelbudget en een bezorgbudget vast",
+          "paragraphs": [
+            "Bepaal twee grenzen voordat je iets aan je bestelling toevoegt: een maximale artikelprijs en het maximum dat je inclusief bezorging wilt uitgeven. Die beantwoorden verschillende vragen. Een artikel van $18 valt onder een productlimiet van $20, maar kan ongeschikt zijn als de verzending de rest van je totale budget opslokt. Raadpleeg de officiële kosteninformatie en verzendcalculator van LoveGoBuy voor actuele tarieven.",
+            "Stel, uitsluitend als rekenvoorbeeld, dat een artikel $12 kost, binnenlandse bezorging $2 kost en je $9 van de internationale verzending aan dit artikel toerekent. Het subtotaal is dan al $23, vóór eventuele verdere kosten. Deze bedragen zijn verzonnen om de methode uit te leggen en vormen geen verzendofferte. Houd onzekere bedragen apart in plaats van ongemerkt nul in te vullen."
+          ]
+        },
+        {
+          "heading": "Vergelijk pasvorm en materialen vóór de prijs",
+          "paragraphs": [
+            "Vergelijk bij een T-shirt de borstbreedte, lichaamslengte, schouderbreedte en mouwlengte met een kledingstuk dat je goed past. Gebruik de meetmethode van de verkoper en vraag naar ontbrekende afmetingen. Alleen maatletters vergelijken is weinig betrouwbaar, omdat maattabellen per verkoper en model kunnen verschillen. Een lage artikelprijs maakt een kledingstuk dat je niet comfortabel kunt dragen niet geschikt.",
+            "Noteer bij een accessoire de afmetingen die het gebruik bepalen: kettinglengte, montuurbreedte, sluitingstype of compatibiliteit met een ander artikel. Onderscheid het uiterlijk op een foto van een geverifieerde materiaalclaim. Zet een kandidaat op pauze als een belangrijke specificatie ontbreekt. Meerdere onzekere opties kopen om één geschikt artikel te vinden, kan meer kosten dan één goed gedocumenteerde optie kiezen."
+          ]
+        },
+        {
+          "heading": "Bekijk gewicht en verpakking samen",
+          "paragraphs": [
+            "Ook een klein artikel kan vermijdbare bezorgkosten veroorzaken als de verpakking de buitenmaten van het pakket vergroot. Omgekeerd kan een compact, zwaar artikel werkelijk gewicht toevoegen zonder veel ruimte in te nemen. De verzendcalculator van LoveGoBuy gebruikt de voorwaarden van de gekozen route; sommige routes vergelijken werkelijk gewicht met volumegewicht. Vraag om de verpakte afmetingen zodra die beschikbaar zijn en vergelijk de opties voor je bestemming.",
+            "Voeg geen onnodige artikelen toe alleen om de verzendkosten over een grotere bestelling te verdelen. Samenvoegen kan handig zijn, maar een andere gewichtsklasse, afmetingslimiet of artikelbeperking kan de beschikbare routes veranderen. Vergelijk de volledige pakketplannen voor dezelfde bestemming en dezelfde beschermingseisen. Behoud beschermend verpakkingsmateriaal als verwijderen een schaderisico oplevert dat je niet wilt accepteren."
+          ]
+        },
+        {
+          "heading": "Gebruik foto’s om concrete vragen te beantwoorden",
+          "paragraphs": [
+            "Afbeeldingen in de catalogus zijn productfoto’s, niet automatisch kwaliteitscontrolefoto’s uit het magazijn van jouw bestelling. Bekijk na aankomst in het magazijn de beelden die bij die bestelling horen en vergelijk ze met je gekozen variant. Controleer de zichtbare kleur, meegeleverde onderdelen, labels, duidelijke gebreken en gevraagde maten. Leg afwijkingen helder vast voordat je beslist over verzending.",
+            "Een nuttig verzoek om extra foto’s benoemt één waarneembare vraag: laat de kettingsluiting zien, meet de borstbreedte van het kledingstuk of toon beide kanten van een accessoire. Foto’s kunnen niet iedere materiaal- of prestatieclaim bevestigen. Als je zorg informatie vereist die een foto niet kan geven, vraag dit rechtstreeks aan de verkoper of klantenservice. Bekijk de toepasselijke retourvoorwaarden zolang je nog actie kunt ondernemen."
+          ]
+        },
+        {
+          "heading": "Houd een beknopt vergelijkingsoverzicht bij",
+          "paragraphs": [
+            "Bewaar per kandidaat de product-URL, geselecteerde optie, actuele artikelprijs, maatbewijs, verwachte verpakking en openstaande vragen. Voeg een beslissing toe, zoals onderzoeken, klaar om te bestellen of verwijderen. Zo zie je gemakkelijker dat de goedkoopste optie nog een maat mist, terwijl een iets duurdere al aan je eisen voldoet.",
+            "Controleer de definitieve bestelpagina opnieuw vlak vóór betaling. Bevestig het oorspronkelijke artikel, het aantal en de variant in plaats van op een oude schermafbeelding te vertrouwen. Als het product verdwenen is of de prijs veranderd is, ga dan terug naar de categorie en vergelijk opnieuw; kies geen vervanger alleen omdat de afbeelding bekend voorkomt. Een opgeslagen link is een verwijzing, geen reservering. Noteer de controledatum naast de prijs, zodat een oude waarneming nooit wordt aangezien voor een actuele aanbieding."
+          ],
+          "table": {
+            "columns": [
+              "Vergelijkingsveld",
+              "Waarom het belangrijk is"
+            ],
+            "rows": [
+              [
+                "Exacte variant en aantal",
+                "Voorkomt vergelijking van één stuk met een set"
+              ],
+              [
+                "Afmetingen en materialen",
+                "Verbindt de aanbieding met je daadwerkelijke behoeften"
+              ],
+              [
+                "Artikelprijs plus bezorgreserve",
+                "Laat zien of het volledige budget realistisch is"
+              ],
+              [
+                "Openstaande vraag en volgende actie",
+                "Houdt ontbrekend bewijs zichtbaar"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Veelgestelde vragen over betaalbare vondsten",
+          "paragraphs": [
+            "Is bezorging inbegrepen bij een aanbieding onder $20? Nee: deze gids gebruikt de weergegeven artikelprijs. Controleer binnenlandse bezorging, internationale verzending, optionele diensten en overige toepasselijke kosten apart. Kan een catalogusprijs veranderen? Ja. Behandel de gedateerde voorbeelden als waarnemingen en controleer de geselecteerde variant op de actuele bestelpagina.",
+            "Zijn de voorbeelden op kwaliteit getest? Nee. We hebben deze artikelen niet getest en vermelding is geen authenticiteitscertificaat. Moet je het goedkoopste resultaat bestellen? Alleen als het artikel, de afmetingen en het totale budget aan je eisen voldoen. Begin met één duidelijk gebruiksdoel, houd je selectie klein en gebruik de gekoppelde gidsen over maten, kwaliteitscontrole en kosten om resterende vragen op te lossen."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Onder $20 verwijst naar de artikelprijs, niet naar het totaal inclusief bezorging.",
+        "Controleer de actuele variant, afmetingen en hoeveelheid vóór betaling.",
+        "Gebruik kwaliteitscontrolefoto’s van de daadwerkelijke bestelling en bewaar de bronlink."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-fees",
+        "official-estimator",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-fees-total-cost",
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shoes-spreadsheet"
+      ]
+    },
+    {
+      "slug": "lovegobuy-shoes-spreadsheet",
+      "title": "LoveGoBuy-schoenenoverzicht: maten, prijzen en kwaliteitscontrole",
+      "description": "Gebruik het LoveGoBuy-schoenenoverzicht om aanbiedingen, schoenmaten, geselecteerde prijzen, controlefoto’s en verpakking vóór verzending te vergelijken.",
+      "category": "Schoenen",
+      "keyword": "lovegobuy schoenen spreadsheet",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Gebruik de schoenencategorie voor een eerste selectie en vergelijk vervolgens per aanbieding de exacte maat, geselecteerde prijs en beschikbare afmetingen. Een bekend maatnummer of een productfoto volstaat niet om de pasvorm vast te stellen. Bekijk vóór internationale verzending de magazijnfoto’s van je eigen paar en controleer hoe de verpakking de pakketofferte beïnvloedt.",
+        "Deze gids koppelt de schoenencatalogus aan een praktische vergelijkingsmethode. Hij beoordeelt geen ongeteste schoenen, certificeert geen authenticiteit en belooft geen bepaalde verzendkosten. De officiële aankoopgids en verzendcalculator van LoveGoBuy leggen het platformproces uit; de onderstaande pasvorm- en inspectiechecklist is onafhankelijk redactioneel advies."
+      ],
+      "sections": [
+        {
+          "heading": "Open de schoenencatalogus met een duidelijk doel",
+          "paragraphs": [
+            "Begin bij de schoenencategorie en bepaal waarvoor je het paar nodig hebt. Dagelijks wandelen, incidenteel gebruik en een specifieke activiteit kunnen om verschillend bewijs vragen. Producttitels kunnen helpen om kandidaten te vinden, maar bewijzen geen comfort, prestaties of duurzaamheid. Beschouw een bekende merknaam in een aanbieding niet als bewijs dat de claims van de verkoper zijn gecontroleerd.",
+            "Sorteer op prijs om de weergegeven artikelbedragen te vergelijken en houd twee of drie realistische kandidaten over. Open elke productpagina voordat je die opslaat. Noteer de productlink, gewenste kleur, maat en de optieprijs die je daadwerkelijk ziet. Vergelijk niet het goedkoopste selecteerbare accessoire op de ene pagina met een compleet paar op een andere pagina."
+          ],
+          "links": [
+            {
+              "label": "Open het LoveGoBuy-schoenenoverzicht",
+              "path": "/spreadsheet/shoes/"
+            },
+            {
+              "label": "Vergelijk schoenen op weergegeven prijs",
+              "path": "/spreadsheet/shoes/?sort=price"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk afmetingen, niet alleen maataanduidingen",
+          "paragraphs": [
+            "Begin met de maattabel van de verkoper en bepaal wat elk getal meet. Voetlengte, binnenzoollengte en buitenzoollengte zijn verschillende maten. Een tabel in centimeters is alleen nuttig als de meetmethode duidelijk is. Ga er niet van uit dat een EU-maat bij alle verkopers hetzelfde wordt omgerekend of dat een US-label altijd hetzelfde maatsysteem gebruikt.",
+            "Meet beide voeten op dezelfde manier en vergelijk de grootste maat met de tabel. Let ook op breedte en de vorm van de teenruimte wanneer de verkoper daar informatie over geeft. Vraag vóór aankoop om uitleg als de aanbieding alleen maataanduidingen bevat. Een magazijnfoto van een maatlabel kan het label van het paar bevestigen, maar niet bewijzen dat de schoenen passen."
+          ],
+          "table": {
+            "columns": [
+              "Bewijs",
+              "Wat het je kan vertellen",
+              "Wat onzeker blijft"
+            ],
+            "rows": [
+              [
+                "Maattabel van de verkoper",
+                "De opgegeven afmeting van een optie",
+                "Of de meetmethode overeenkomt met jouw meting"
+              ],
+              [
+                "Foto van het maatlabel",
+                "Het label op het ontvangen paar",
+                "Werkelijke pasvorm en bruikbare binnenruimte"
+              ],
+              [
+                "Gevraagde meting",
+                "Een zichtbare afmeting die op de foto wordt gemeten",
+                "Comfort en prestaties op lange termijn"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Noteer precies welk paar je wilt kopen",
+          "paragraphs": [
+            "Maak per kandidaat een kort overzicht: bron-URL, marktplaats, gekozen maat, kleur, artikelprijs en eventuele vraag voor de verkoper. Noteer de versie uitdrukkelijk als een pagina verschillende uitvoeringen bevat. Vergelijkbare productfoto’s kunnen bij meerdere aanbiedingen voorkomen en maken die niet onderling uitwisselbaar. Behoud de productidentiteit vanaf het zoeken tot en met de bestelbevestiging.",
+            "Controleer wat de verpakking bevat. Een schoenendoos, extra veters of andere accessoires kunnen zowel de inhoud als de pakketafmetingen beïnvloeden. Ga er niet van uit dat alles op een promotiefoto wordt meegeleverd. Als een onderdeel belangrijk is voor je beslissing, bevestig dat dan vóór betaling en voeg het toe aan de controlelijst voor wanneer de magazijnfoto’s beschikbaar komen."
+          ]
+        },
+        {
+          "heading": "Inspecteer je eigen kwaliteitscontrolefoto’s uit het magazijn",
+          "paragraphs": [
+            "Openbare foto’s kunnen laten zien hoe een andere bestelling eruitzag, maar de beelden bij jouw bestelling zijn het relevante bewijs voor het paar dat je gaat verzenden. Vergelijk beide schoenen, zichtbare kleuren, maatlabels, stiksels, zoolranden en meegeleverde onderdelen. Zoek naar duidelijke afwijkingen of schade. Gebruik de bestelgegevens als referentie, niet een andere aanbieding die toevallig een vergelijkbare foto gebruikt.",
+            "Vraag alleen om een extra hoek of meting als die een specifieke onzekerheid oplost. Vraag bijvoorbeeld een duidelijke foto van beide maatlabels of een meting waarop de plaatsing van de liniaal zichtbaar is. Noem verkopersfoto’s geen magazijncontrole en beschouw een fotobeoordeling niet als garantie voor authenticiteit of duurzaamheid. Sommige problemen zijn niet met beelden vast te stellen."
+          ],
+          "bullets": [
+            "Controleer of beide schoenen bij de gewenste maat- en kleuroptie horen.",
+            "Vergelijk de zichtbare constructie en meegeleverde onderdelen met de bestelgegevens.",
+            "Los een zichtbare afwijking op voordat je internationale verzending goedkeurt."
+          ]
+        },
+        {
+          "heading": "Bereken de volledige kosten van het paar",
+          "paragraphs": [
+            "Houd de artikelprijs apart van binnenlandse bezorging, internationale verzending en gekozen diensten. De catalogus toont USD-bedragen ter oriëntatie, terwijl de actuele bestel- en betaalpagina’s bepalen wat wordt afgeschreven. Wisselkoersen, geselecteerde opties of wijzigingen door de verkoper kunnen het eindbedrag beïnvloeden. Bewaar de actuele offertedetails in plaats van aan te nemen dat een eerder bekeken kaart het volledige budget weergeeft.",
+            "Uitsluitend als rekenvoorbeeld: een denkbeeldig paar van $18 met $3 binnenlandse bezorging en $14 toegerekende internationale verzending kost al $35. Dit zijn geen waargenomen LoveGoBuy-tarieven of een offerte voor een bestemming. Het voorbeeld laat zien waarom schoenen alleen op artikelprijs vergelijken misleidend kan zijn wanneer verpakte gewichten of afmetingen verschillen."
+          ]
+        },
+        {
+          "heading": "Vergelijk verzending met en zonder doos",
+          "paragraphs": [
+            "Als de beschikbare verpakkingsdienst dit toestaat, vraag dan hoe het behouden of verwijderen van een schoenendoos de verpakte afmetingen, bescherming en geschiktheid voor routes verandert. Een doos verwijderen garandeert geen lagere prijs. Een route die werkelijk gewicht factureert kan anders werken dan een route die werkelijk en volumegewicht vergelijkt, en het pakket kan in dezelfde tariefklasse blijven.",
+            "Gebruik de deler en afrondingsregels van precies de gekozen route. Ter illustratie: een pakket van 35 × 25 × 15 cm heeft een volume van 13.125 kubieke centimeter. Delen door 6.000 geeft ongeveer 2,19 kg; delen door 8.000 geeft ongeveer 1,64 kg. Dit zijn alternatieve rekenvoorbeelden, geen twee uitwisselbare regels voor dezelfde route. Vergelijk deze alleen met het werkelijke gewicht zoals de gekozen route voorschrijft."
+          ],
+          "table": {
+            "columns": [
+              "Verpakkingskeuze",
+              "Op te vragen informatie"
+            ],
+            "rows": [
+              [
+                "Schoenendoos behouden",
+                "Buitenmaten na verpakken, bescherming en volledige offerte"
+              ],
+              [
+                "Schoenendoos verwijderen indien aangeboden",
+                "Vervangende bescherming, nieuwe afmetingen en volledige offerte"
+              ],
+              [
+                "Combineren met andere artikelen",
+                "Gewicht van het hele pakket, beperkingen en beschikbare routes"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Los problemen op zolang het paar nog in het magazijn staat",
+          "paragraphs": [
+            "Bewaar bij een verkeerde optie of zichtbare schade het bestelnummer, de relevante productgegevens en de beelden die het probleem tonen. Leg het verschil uit in een kort, feitelijk verzoek. Vraag welke retour- of omruilmogelijkheden voor die bestelling momenteel beschikbaar zijn. De verkopersvoorwaarden en bestelfase zijn bepalend; deze gids belooft niet dat ieder artikel retour kan.",
+            "Verzend het paar niet internationaal zolang een belangrijke vraag over pasvorm of staat onbeantwoord blijft. Zodra een artikel deel uitmaakt van een verzonden pakket, kunnen de praktische mogelijkheden veranderen. Houd het gesprek in het officiële ondersteuningskanaal en bewaar het antwoord bij je vergelijkingsoverzicht. Een heldere beschrijving en specifieke foto’s zijn nuttiger dan herhaaldelijk dezelfde vage klacht indienen."
+          ]
+        },
+        {
+          "heading": "Vragen om vóór verzending te beantwoorden",
+          "paragraphs": [
+            "Is er een universele LoveGoBuy-omrekening voor schoenmaten? Gebruik de maattabel en meetmethode van de verkoper bij de gekozen aanbieding in plaats van een universele omrekening. Zijn catalogusfoto’s kwaliteitscontrolefoto’s? Nee: productbeelden en magazijnfoto’s van jouw bestelling hebben verschillende functies. Kan een paar onder $20 voor minder dan $20 worden bezorgd? Alleen de weergegeven artikelprijs geeft daarop geen antwoord.",
+            "Bespaart het verwijderen van de doos altijd geld? Nee. Vergelijk de daadwerkelijke verpakkingsopties en routeofferte, inclusief het beschermingsniveau dat je nodig hebt. De definitieve checklist is eenvoudig: bevestig het paar, begrijp het maatbewijs, inspecteer de relevante foto’s, los afwijkingen op en vergelijk het volledige verzendplan. Gebruik daarna de trackinggids zodra een internationaal pakket daadwerkelijk is verzonden."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Bewaar de exacte bron-URL, maat en kleur bij elkaar.",
+        "Een maatlabel, een meting en een oordeel over pasvorm zijn verschillende soorten bewijs.",
+        "Vergelijk de volledige verpakkings- en verzendofferte voordat je verzending goedkeurt."
+      ],
+      "sourceIds": [
+        "official-guide",
+        "official-help",
+        "official-estimator",
+        "official-fees"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-sizing-guide",
+        "lovegobuy-qc-photo-checklist",
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-finds-under-20"
+      ]
+    },
+    {
+      "slug": "lovegobuy-no-shipping-routes",
+      "title": "Geen LoveGoBuy-verzendroutes beschikbaar: wat moet je controleren?",
+      "description": "Geen LoveGoBuy-verzendroutes beschikbaar? Controleer bestemming, gewicht, pakketafmetingen en artikelbeperkingen en vergelijk ondersteunde verpakkingsopties.",
+      "category": "Verzendproblemen oplossen",
+      "keyword": "lovegobuy geen verzendroutes beschikbaar",
+      "readingMinutes": 7,
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "intro": [
+        "Als LoveGoBuy geen verzendroutes toont, controleer dan eerst de bestemming, gewichtseenheid, buitenmaten van het pakket en ingevoerde artikelcategorieën. De officiële calculator legt uit dat afmetings- of gewichtslimieten opties kunnen uitsluiten. Ook een beperkt toegestaan artikel, een niet-ondersteunde bestemming of een tijdelijke routewijziging kan om uitleg van de klantenservice vragen.",
+        "Verander geen waarheidsgetrouwe artikelgegevens alleen om een route te laten verschijnen. De nuttige volgende stap is vaststellen welke invoer of toelatingsvoorwaarde het lege resultaat veroorzaakt en daarna geldige verpakkings- of pakketopties vergelijken. Deze gids is een diagnosechecklist, geen belofte dat ieder pakket naar ieder adres kan worden verzonden."
+      ],
+      "sections": [
+        {
+          "heading": "Controleer of je een raming maakt of een pakket indient",
+          "paragraphs": [
+            "Een raming vóór het verpakken in het magazijn gebruikt de informatie die je zelf opgeeft. Een pakket dat klaar is voor indiening kan magazijnmetingen en artikelinformatie gebruiken. Dat zijn verschillende bewijskwaliteiten. Noteer welk scherm het lege resultaat toont, welke bestemming je koos en of de afmetingen schattingen of gemeten verpakkingsgegevens zijn. Zo voorkom je dat je de verkeerde fase onderzoekt.",
+            "Als een eerdere raming wel een route toonde maar het afgewerkte pakket niet, vergelijk dan eerst de invoer voordat je een systeemfout vermoedt. Verpakking kan de buitenmaten veranderen, het definitieve gewicht kan in een andere klasse vallen en het pakket kan een artikel bevatten met afwijkende verzendvoorwaarden. De actuele opties voor het afgewerkte pakket gaan vóór een voorlopig voorbeeld."
+          ]
+        },
+        {
+          "heading": "Controleer de bestemming en eenheden",
+          "paragraphs": [
+            "Controleer het land of de regio van bestemming en eventuele adresgegevens die het formulier vraagt. Vraag bij gebiedsbeperkingen of die op jouw adres van toepassing zijn. Vervang de bestemming niet door een ander land om een geruststellende offerte te krijgen. De raming is alleen nuttig als die de zending beschrijft die je daadwerkelijk wilt versturen.",
+            "Lees vervolgens de eenheidslabels naast elk veld. Een gewicht van 2.000 kilogram in plaats van 2.000 gram kan een betekenisloos resultaat opleveren. Hetzelfde gebeurt als millimeters in een centimeterveld worden ingevoerd. Voer de echte maten opnieuw in de weergegeven eenheden in en bewaar een schermafbeelding van de gecorrigeerde invoer als de routelijst leeg blijft."
+          ],
+          "table": {
+            "columns": [
+              "Invoer",
+              "Nuttige controle"
+            ],
+            "rows": [
+              [
+                "Bestemming",
+                "Het werkelijke land of de regio en vereiste adresgegevens"
+              ],
+              [
+                "Gewicht",
+                "De waarde past bij de eenheid op het formulier"
+              ],
+              [
+                "Afmetingen",
+                "Verpakte buitenlengte, breedte en hoogte in de aangegeven eenheden"
+              ],
+              [
+                "Artikelcategorie",
+                "Een juiste beschrijving van alles in het pakket"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Controleer werkelijk gewicht en afmetingslimieten afzonderlijk",
+          "paragraphs": [
+            "Een pakket kan aan een gewichtslimiet voldoen en toch de afmetingslimieten van een route overschrijden. Bekijk de routevoorwaarden voor de langste zijde, andere afmetingsregels en het toegestane gewichtsbereik. De calculator noemt beperkingen voor te zware en te grote pakketten, maar er bestaat geen enkele limiet die voor iedere route geldt. Lees de voorwaarden voor jouw bestemming en beschikbare dienst.",
+            "Volumegewicht is een afzonderlijke berekening die sommige routes gebruiken om het factureerbare gewicht te bepalen. Alleen als voorbeeld: 40 × 30 × 20 cm is 24.000 kubieke centimeter. Een deler van 6.000 levert 4 kg op; een deler van 8.000 levert 3 kg op. Geen van beide delers geldt automatisch overal. Gebruik de opgegeven routeregel en onderscheid de berekening van factureerbaar gewicht van de afmetingslimieten voor toelating."
+          ]
+        },
+        {
+          "heading": "Bekijk welke artikelen het pakket kunnen beperken",
+          "paragraphs": [
+            "Controleer de verzendvoorwaarden voor ieder artikel in een gecombineerd pakket, vooral als een artikel een batterij, vloeistof, poeder, magnetisch onderdeel of een andere eigenschap heeft die een vervoerder kan beperken. Dit is een lijst met te onderzoeken vragen, geen bewering dat LoveGoBuy ieder artikel in deze categorieën verbiedt. De toepasselijke dienst en bestemming bepalen wat is toegestaan.",
+            "Vraag de klantenservice om de specifieke artikeleigenschap en routevoorwaarde die verzending verhinderen te benoemen. Houd de productomschrijving correct en verberg geen artikel of kies geen ongerelateerde categorie om een beperking te omzeilen. Als een artikel niet is toegestaan bij de beschikbare diensten, vraag dan welke geldige mogelijkheden overblijven voordat je voor extra verpakking betaalt of uitgaat van een omweg."
+          ]
+        },
+        {
+          "heading": "Vergelijk ondersteunde opties voor herverpakken of splitsen",
+          "paragraphs": [
+            "De calculator van LoveGoBuy legt uit dat het splitsen van een te zware of te grote zending mogelijk een optie is en verwijst naar proefverpakking of verpakkingsdiensten voor nauwkeurigere maten. Controleer beschikbaarheid en kosten op het actuele platform. Vraag welk verpakt gewicht en welke afmetingen elk voorgesteld pakket krijgt en bereken elk pakket vervolgens voor dezelfde werkelijke bestemming.",
+            "Vergelijk de som van alle pakketoffertes en geselecteerde diensten. Twee kleinere pakketten kunnen duurder zijn omdat voor elk een eigen basistarief kan gelden, zelfs als splitsen routes weer beschikbaar maakt. Herverpakken kan zowel bescherming als afmetingen veranderen. Behoud essentiële bescherming voor breekbare artikelen en keur een wijziging pas goed als je de afweging en het volledige mogelijke bedrag begrijpt."
+          ],
+          "table": {
+            "columns": [
+              "Mogelijke actie",
+              "Wat vergelijken vóór goedkeuring"
+            ],
+            "rows": [
+              [
+                "Een invoerfout herstellen",
+                "Juiste eenheden en werkelijke bestemming"
+              ],
+              [
+                "Herverpakken indien ondersteund",
+                "Nieuwe afmetingen, beschermingsmateriaal en servicekosten"
+              ],
+              [
+                "Splitsen indien ondersteund",
+                "Toelating van ieder pakket en de som van de offertes"
+              ],
+              [
+                "Een niet-toegestaan artikel verwijderen",
+                "Officieel beschikbare afhandelings- of retouropties"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Onderscheid een lege raming van een accountprobleem",
+          "paragraphs": [
+            "Een lege routelijst bewijst op zichzelf niet dat je account geblokkeerd is, je betaling mislukt is of je pakket kwijt is. Controleer de informatie die de pagina daadwerkelijk toont. Noteer de tekst als er een aparte foutmelding is. Vernieuwen kan helpen bij een tijdelijk weergaveprobleem, maar herhaaldelijk vernieuwen lost geen echte gewichts-, afmetings- of toelatingsbeperking op.",
+            "Als de routelijst veranderde zonder wijziging aan het pakket, vraag dan of diensten voor de bestemming tijdelijk zijn aangepast. Neem geen routenaam of bezorgbelofte uit een oud forumbericht over in je plan. Gebruik de actuele officiële raming en het platformantwoord en bewaar het tijdstip van controle, zodat latere wijzigingen eerlijk kunnen worden vergeleken."
+          ]
+        },
+        {
+          "heading": "Stuur de klantenservice een bruikbaar diagnoseverzoek",
+          "paragraphs": [
+            "Geef via het officiële ondersteuningskanaal privé de bestel- of pakketreferentie, bestemming, gewicht en afmetingen met eenheden, artikeltypen, het exacte scherm en de fouttekst door. Vermeld of de maten geschat zijn of door het magazijn zijn aangeleverd. Voeg een schermafbeelding met de relevante invoer toe en vermijd onnodige persoons- of betaalgegevens.",
+            "Stel één concrete vraag: welke ingevoerde waarde, artikelvoorwaarde of routelimiet verhindert dat een dienst verschijnt en welke ondersteunde wijziging zou het pakket geschikt maken? Als de klantenservice splitsen of herverpakken voorstelt, vraag dan de resulterende maten en kosten voordat je akkoord gaat. Bewaar het antwoord bij de pakketgegevens, zodat je kunt controleren of de volgende raming de afgesproken informatie gebruikt."
+          ]
+        },
+        {
+          "heading": "Wat te doen zodra een route beschikbaar is",
+          "paragraphs": [
+            "Lees de dienstvoorwaarden voordat je de nieuw beschikbare optie kiest. Vergelijk de volledige prijs, opgegeven bezorgschatting, tracking en eventuele relevante beperkingen. Een zichtbare route is een optie om te beoordelen, geen garantie voor aankomst op een bepaalde dag. Controleer dat alle artikelen en de werkelijke bestemming correct in de definitieve pakketindiening staan.",
+            "Gebruik na verzending het internationale pakkettrackingnummer in plaats van het binnenlandse trackingnummer van de verkoper. Als er nog steeds geen geschikte route is, dien het pakket dan niet in terwijl officiële ondersteuning de beschikbare afhandelingsmogelijkheden uitlegt. Het veiligste bruikbare resultaat is een juist antwoord over toelating en kosten; ware gegevens veranderen totdat een knop verschijnt levert geen geldig verzendplan op."
+          ]
+        }
+      ],
+      "takeaways": [
+        "Controleer eerst bestemming, eenheden, afmetingen en artikelgegevens.",
+        "Controleer routespecifieke limieten; ga niet uit van één deler of maximaal gewicht.",
+        "Vergelijk totale kosten en bescherming van elk ondersteund splitsings- of herverpakkingsplan."
+      ],
+      "sourceIds": [
+        "official-estimator",
+        "official-guide",
+        "official-help"
+      ],
+      "relatedSlugs": [
+        "lovegobuy-shipping-estimate-guide",
+        "lovegobuy-warehouse-consolidation",
+        "lovegobuy-shipping-time",
+        "lovegobuy-tracking-guide"
       ]
     }
   ],
