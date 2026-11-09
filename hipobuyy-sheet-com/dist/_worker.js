@@ -142,7 +142,7 @@ export async function catalogueRoute(request,env) {
  } catch(error) { if(error.status===404)return shell(lang,path,'404','',`<h1>404</h1>`,{status:404,noindex:true}); return shell(lang,path,t[20],t[20],`<h1>${t[20]}</h1><a href="${base(lang)}/">${t[7]}</a>`,{status:503,noindex:true}); }
 }
 
-const RELEASE='hipobuy-20261027-search-v1';
+const RELEASE='hipobuy-20261109-guides-v1';
 function finish(response,request) {
  const headers=new Headers(response.headers);headers.set('x-hipobuy-release',RELEASE);headers.set('x-content-type-options','nosniff');headers.set('referrer-policy','strict-origin-when-cross-origin');
  return new Response(request.method==='HEAD'?null:response.body,{status:response.status,headers});

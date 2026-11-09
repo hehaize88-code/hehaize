@@ -1,5 +1,9 @@
 Arrived means the item reached the warehouse and awaits inspection; Stored means it is in warehouse storage. Neither means your international parcel has shipped. Check the order record for purchasing and warehouse progress, then the parcel record for packing, additional shipping payment and carrier collection. Waiting for Confirmation on a parcel can require a weight-related payment difference.
 
+## Which payment record needs attention?
+
+Outstanding Payment concerns a product order’s item or domestic-delivery difference; Waiting for Confirmation concerns a submitted parcel’s shipping adjustment in the official status guide. Open the record named in the message and compare the changed amount before paying. An item order and an international parcel can have different references. A parcel payment does not resolve every possible issue on a separate item order. Use the [stage-by-stage time guide](/en/articles/hipobuy-shipping-time/) to separate processing from transport.
+
 [Check the correct tracking record](/en/articles/parcel-tracking-delivery/)
 
 ## An order and a parcel are different records

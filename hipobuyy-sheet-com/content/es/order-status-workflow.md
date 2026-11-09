@@ -1,5 +1,9 @@
 Arrived significa llegada al almacén pendiente de inspección; Stored indica almacenamiento. Ninguno significa envío internacional. Consulta el pedido para compra y recepción, y el paquete para embalaje, diferencias de transporte y recogida. Waiting for Confirmation puede requerir pagar una diferencia por el peso real.
 
+## ¿Qué registro de pago necesita atención?
+
+Outstanding Payment corresponde a una diferencia del artículo o transporte nacional; Waiting for Confirmation, a un ajuste de envío del paquete según la guía oficial. Abre el registro indicado y compara el importe antes de pagar. Pedido y paquete pueden usar referencias distintas. Pagar un paquete no resuelve todos los asuntos de otro pedido. La [cronología por fases](/es/articles/hipobuy-shipping-time/) separa procesamiento y transporte.
+
 [Consulta el seguimiento correcto](/es/articles/parcel-tracking-delivery/)
 
 ## Ficha, pedido y paquete son registros distintos

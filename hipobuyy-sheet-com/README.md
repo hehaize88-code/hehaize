@@ -14,7 +14,7 @@ node tests/release.mjs
 
 Python 3.12 or later is required. The build has no external Python dependencies. It renders the original five-language editorial site and bundles the catalogue module using plain text composition, without a Node dependency install. The committed `dist/` is ready to serve. The catalogue has no private credentials or database bindings.
 
-`content/editorial.json` and the five language directories retain all 28 articles per language. The shared header and footer are generated from the same template for editorial and catalogue pages. EN/DE/ES/FR/IT switching preserves the route and catalogue query.
+`content/editorial.json` and the five language directories retain all 31 articles per language. The shared header and footer are generated from the same template for editorial and catalogue pages. EN/DE/ES/FR/IT switching preserves the route and catalogue query.
 
 ## Catalogue and purchases
 
@@ -45,3 +45,12 @@ Mobile reading layout (2026-10-13): `mobile_layout.py` groups complete sections 
 Adds three complete article groups in EN/DE/ES/FR/IT (15 new pages): missing QC photos, volumetric weight and pending refunds. Refreshes seven existing article groups in all locales, replaces editorial SEO instructions with buyer guidance, and expands QC/shipping hubs. Topic navigation, contextual links, visible modification dates and source-review dates are generated consistently. Source review is distinct from an editorial copy update.
 
 Production still publishes the committed dist directory through the existing GitHub integration; the Cloudflare build command is empty. Run python3 build.py and node tests/release.mjs before committing source and output together. No Cloudflare settings or product database changes are required.
+
+
+## 2026-11-09 delivery and budget guides
+
+Publishes three complete topics in EN/DE/ES/FR/IT: shipping time, shipping to Italy, and finds under US$25. Each locale now has 31 articles and 21 FAQ answers. The budget guide uses three existing source-linked products whose visible prices and original IDs were checked on 9 November; prices exclude shipping and the images remain explicitly identified as listing photos. The Italy guide links ADM's current low-value shipment update rather than repeating an outdated blanket exemption.
+
+Seven existing article groups receive practical next steps in every locale: calculator, tracking interruptions, order status, parcel delivery, shipping cost, QC pictures and QC checklist. Homepage previews, related guides, article topic navigation and shipping hubs connect the new content. Existing publication dates and source-review dates are preserved. The editorial sitemap contains 185 URLs with reciprocal language alternates.
+
+The existing production-only GA4 setup, catalogue source, product-ID mapping and Cloudflare Pages deployment settings are unchanged. The budget cards have a compact mobile layout. Run the build and release checks above before committing both source and dist.

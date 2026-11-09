@@ -8,7 +8,7 @@ const mod=await import('data:text/javascript;base64,'+fs.readFileSync(path.join(
 const worker=mod.default;
 const langs=['en','de','es','fr','it'];
 const editorial=JSON.parse(fs.readFileSync(path.join(root,'content/editorial.json')));
-assert.equal(editorial.length,28);
+assert.equal(editorial.length,31);
 assert.equal(mod.buyUrl('7867456361'),'https://hipobuy.com/product/weidian/7867456361');
 assert.equal(mod.buyUrl('javascript:alert(1)'),null);
 assert.equal(mod.buyUrl('3458'),null);

@@ -1,5 +1,9 @@
 QC photos are quality-control pictures used to inspect the received item. For Hipobuy, compare your warehouse photo set with the exact ordered variant: size label, colour, construction, included parts and measurements. A catalogue picture is not proof of your own item. Request a clear missing view before approving packing; photographs do not certify authenticity or every material claim.
 
+## Use the checklist on a budget find
+
+The [under-US$25 shortlist](/en/articles/hipobuy-finds-under-25/) includes a T-shirt, jeans and jersey with dated catalogue prices and source IDs. For each, match the actual ordered option first, then inspect the relevant measurements and visible details. A low price does not make a missing size check less important. Keep listing photos, received-item photos and any unverified material claim separate in your notes; resolve the specific uncertainty before parcel approval.
+
 [Check return timing before approving](/en/articles/return-policy-warehouse/)
 
 ## QC photo meaning and the first decision

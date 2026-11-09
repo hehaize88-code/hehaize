@@ -1,5 +1,9 @@
 Quanto costa la spedizione su Hipobuy dipende da destinazione, rotta disponibile, peso imballato, dimensioni e servizi. Separa merce, consegna nazionale, opzioni, trasporto internazionale e possibili costi a destinazione. Confronta lo stesso pacco e controlla il preventivo finale prima del pagamento.
 
+## Un preventivo italiano richiede verifiche aggiornate
+
+Confronta Italia, contenuto reale e stesse misure. Tieni separati prezzi USD e oneri EUR fino alla conversione. La [guida Italia](/it/articles/hipobuy-shipping-to-italy/) collega l’aggiornamento ADM sulle spedizioni di modico valore e spiega inclusioni, indirizzo e tracking. Prezzo basso o commissione di dichiarazione non determinano il totale consegnato. Per il solo prodotto consulta [tre articoli sotto 25 USD](/it/articles/hipobuy-finds-under-25/).
+
 [Calcola peso reale e volumetrico](/it/articles/hipobuy-shipping-calculator/)
 
 ## Il prezzo dell’articolo non è il totale consegnato

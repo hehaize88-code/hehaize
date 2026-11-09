@@ -1,5 +1,9 @@
 Kläre bei der Hipobuy-Sendungsverfolgung zuerst, ob die Nummer Inlandslieferung zum Lager oder das internationale Paket betrifft. Nutze den passenden Transportdienst und notiere sein letztes datiertes Ereignis. Etiketterstellung, Lagerankunft und Auslandsversand sind verschiedene Phasen. Halte Paket-ID, Route und letzten Scan für den offiziellen Support bereit.
 
+## Zugestellt gemeldet, aber das Paket fehlt
+
+Prüfe, ob es eine tatsächliche Zustellung oder einen Versuch gab. Lies Nachweis, Abholort und Anweisungen der Sendung. Frage Empfänger oder berechtigte Annahmestelle und kontaktiere dann Transporteur und Hipobuy mit Referenz und datierten Belegen. Bestätige den Erhalt nicht allein wegen des Status. Beachte die tatsächliche Meldefrist statt einer beliebigen Wartezeit. Für Italien hilft zusätzlich die [Zielcheckliste](/de/articles/hipobuy-shipping-to-italy/).
+
 [Tracking-Lücke gezielt prüfen](/de/articles/hipobuy-tracking-not-updating/)
 
 ## Die richtige Sendung verfolgen

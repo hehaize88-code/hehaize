@@ -1,5 +1,9 @@
 Il calcolatore modella peso imballato e tariffa opzionale inserita, senza prezzi Hipobuy live. Esempio: 40 × 30 × 30 cm ÷ 6000 = 6 kg volumetrici. Rispetto a 2 kg reali ipotetici, una rotta che addebita il maggiore parte da 6 kg prima degli arrotondamenti. Usa le regole correnti della tua rotta.
 
+## Stimatore di peso: confronta due imballaggi
+
+Esempio da 2 kg: 40 × 30 × 30 cm diviso 6000 dà 6 kg. Con 35 × 25 × 20 cm ottieni circa 2,917 kg, arrotondati a 3 kg con un ipotetico incremento di 0,5 kg. Entrambi usano il maggiore tra reale e volumetrico. Con divisore 5000, la scatola piccola sale a 3,5 kg. Sono esempi, non regole confermate o risultati reali di imballaggio. Usa il divisore della rotta e confronta protezione e costi. Per la destinazione consulta la [guida Italia](/it/articles/hipobuy-shipping-to-italy/).
+
 [Confronta tutti i costi](/it/articles/shipping-cost-checklist/)
 
 ## Il calcolatore fornisce una stima

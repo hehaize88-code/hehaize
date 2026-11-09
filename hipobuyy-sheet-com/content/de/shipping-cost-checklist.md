@@ -1,5 +1,9 @@
 Es gibt keinen einheitlichen Hipobuy-Versandpreis für jedes Paket. Ziel, verfügbare Route, verpacktes Gewicht, Maße und Leistungen beeinflussen das Angebot. Addiere Ware, Inlandstransport, Optionen, Auslandsversand und mögliche Zielkosten getrennt. Vergleiche dieselben Paketannahmen und prüfe vor Zahlung das endgültige Angebot.
 
+## Italienangebote brauchen eine aktuelle Zielprüfung
+
+Vergleiche Italien, tatsächliche Waren und dieselben Packmaße. Halte USD-Preise und EUR-Kosten bis zur Umrechnung auseinander. Der [Italienratgeber](/de/articles/hipobuy-shipping-to-italy/) verlinkt das aktuelle ADM-Update für kleine Sendungen und erklärt Leistungsumfang, Adresse und Tracking. Niedriger Warenpreis oder Anmeldegebühr bestimmen nicht den Endpreis. Eine reine Warenauswahl findest du bei den [drei Funden unter 25 USD](/de/articles/hipobuy-finds-under-25/).
+
 [Paket- und Volumengewicht berechnen](/de/articles/hipobuy-shipping-calculator/)
 
 ## Der Produktpreis ist nicht der Lieferpreis

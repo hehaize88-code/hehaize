@@ -1,5 +1,9 @@
 Per il tracking Hipobuy, identifica se il numero riguarda consegna al magazzino o pacco internazionale. Usa il corriere giusto e conserva l’ultimo evento datato. Etichetta creata, arrivo in magazzino e partenza internazionale sono fasi diverse. Se non cambia, prepara ID del pacco, rotta e ultimo evento per l’assistenza ufficiale.
 
+## Il tracking dice consegnato, ma il pacco manca
+
+Verifica se l’evento è consegna effettiva o tentativo. Controlla prova, punto di ritiro e istruzioni di quell’invio. Chiedi al destinatario o alla ricezione autorizzata, poi contatta corriere e Hipobuy con riferimento e prove datate. Non confermare ricezione solo perché cambia lo stato. Segui il termine reale di segnalazione invece di aspettare giorni arbitrari. Consulta anche la [checklist per l’Italia](/it/articles/hipobuy-shipping-to-italy/).
+
 [Verifica un tracking fermo](/it/articles/hipobuy-tracking-not-updating/)
 
 ## Il tracciamento comincia prima del numero internazionale

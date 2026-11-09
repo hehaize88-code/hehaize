@@ -220,3 +220,16 @@ Validation before publication:
 - Browser: article index contains 28 cards and shows six at a time on mobile; 390 px and 320 px viewport tests showed no horizontal overflow. All eight new QC chapters expanded. EN-to-IT switching retained the same article route. Italian calculator returned 2 kg actual, 6 kg volumetric/billed and USD 65 for entered rate 10 plus fixed fee 5. Temporary viewport override reset. Public production screenshot: docs/seo-release-2026-10-27.jpg.
 - Additional isolated rendering check confirmed live homepage product cards render in every locale, with localized photo labels and unchanged product destinations.
 - No new Google/Bing indexing submission or GA4 key-event administration change was made in this release. Existing sitemap registrations and analytics events remain active; deployment is verified, indexing and traffic improvement are not promised.
+
+
+## 2026-11-09 — five-language delivery and budget release
+
+User authorized implementation and deployment after a first-party GSC, Bing and GA4 review and competitor research. This release adds hipobuy-shipping-time, hipobuy-shipping-to-italy and hipobuy-finds-under-25 in every existing locale (EN/DE/ES/FR/IT), reaching 31 articles each. English new articles contain 1,342–1,423 words; all translations preserve eight sections, decision tables, concrete examples and limitations.
+
+Research checked the official Order Status Display, estimator and Service & Fees. Italy content references https://www.adm.gov.it/portale/dazi-spedizioni-modico-valore, which supersedes older generic low-value summaries for this topic. No live freight rates, fixed delivery guarantees or personalised tax calculation are invented. Catalogue entries t-shirts/3423, pants-shorts/3420 and jersey/3292 visibly showed USD 15.00 / 16.39 / 17.92 with original IDs 7840486036 / 7840470534 / 7788837248 on 9 November. These are product-only prices, not delivered totals or personal QC evidence.
+
+Seven existing article groups updated in every language; shipping hubs, home previews, archive topic paths, metadata and related links updated. FAQs now 21 per locale. New budget cards have localized names and compact phone rows. The existing source is cnbuycha.com and was deliberately preserved; no source migration, database change or analytics administration change was performed.
+
+Validation: Python build passed. Node release suite passed 720 checks. Static audit passed 775 article metadata checks, 7,218 internal static link/asset targets, all 155 article variants with correct canonicals and reciprocal hreflang, English article word ranges and 185 unique editorial sitemap URLs. No missing translations or internal static targets. Existing source/ID, registration, route and image-search checks remain passing. Production release marker: hipobuy-20261109-guides-v1.
+
+Deployment verification is recorded separately after GitHub publication; local checks alone do not prove production deployment or search indexing.

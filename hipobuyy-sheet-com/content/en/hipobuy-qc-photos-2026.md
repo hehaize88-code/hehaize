@@ -1,5 +1,9 @@
 Hipobuy warehouse QC photos help you compare the received item with your selected variant. Public product pictures are a different source. If the order is Arrived, inspection may still be pending; if photos are missing or unusable, follow the [missing-photo checks](/en/articles/hipobuy-qc-photos-not-showing/) before approving a parcel.
 
+## Ask for a photo that resolves one decision
+
+For a top, ask for a flat chest-width measurement with the tape endpoints visible; for trousers, specify waist or inseam; for shoes, clarify whether you need the label or an available insole measurement. Include the exact order and selected size in the private request. These examples are requests, not a promise that every measurement service is available or free. Ask about availability and cost before ordering extras, and keep the return deadline in view.
+
 ## QC photos are evidence, not decoration
 
 Hipobuy's public site says products purchased through the service are sent to its warehouse in China, where acceptance and quality inspection are performed and results are provided. That warehouse stage is useful because it gives you a chance to compare the received item with the seller listing before international shipping.

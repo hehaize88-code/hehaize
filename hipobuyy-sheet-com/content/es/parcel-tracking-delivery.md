@@ -1,5 +1,9 @@
 Para el seguimiento Hipobuy, identifica si el número corresponde a entrega al almacén o paquete internacional. Usa el transportista correcto y guarda el último evento fechado. Etiqueta creada, llegada al almacén y salida internacional son etapas distintas. Si no cambia, reúne ID del paquete, ruta y último evento para soporte oficial.
 
+## Figura entregado, pero falta el paquete
+
+Comprueba si el evento es entrega efectiva o intento. Revisa prueba, punto de recogida e instrucciones de ese envío. Pregunta al destinatario o recepción autorizada y contacta con transportista e Hipobuy con referencia y pruebas fechadas. No confirmes recepción solo por el cambio de estado. Sigue el plazo real de comunicación, no una espera arbitraria. Para Italia utiliza también la [checklist del destino](/es/articles/hipobuy-shipping-to-italy/).
+
 [Revisa un seguimiento sin cambios](/es/articles/hipobuy-tracking-not-updating/)
 
 ## Un seguimiento empieza antes del número internacional

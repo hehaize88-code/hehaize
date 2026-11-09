@@ -1,5 +1,9 @@
 Dieser Rechner modelliert Paketgewicht und einen optional eingegebenen Tarif, keine Hipobuy-Livepreise. Beispiel: 40 × 30 × 30 cm ÷ 6000 = 6 kg Volumengewicht. Gegenüber angenommenen 2 kg Realgewicht ergibt eine Route mit höherer Abrechnungsbasis 6 kg vor Rundung. Ersetze alle Annahmen durch aktuelle Routenregeln.
 
+## Gewichtsschätzung: zwei Verpackungen vergleichen
+
+Rechenbeispiel mit 2 kg: 40 × 30 × 30 cm geteilt durch 6000 ergibt 6 kg. Bei 35 × 25 × 20 cm ergeben sich etwa 2,917 kg, auf angenommene 0,5-kg-Schritte aufgerundet 3 kg. Beide Modelle nutzen den höheren Wert aus Real- und Volumengewicht. Mit Divisor 5000 würde die kleinere Box auf 3,5 kg aufgerundet. Das sind keine bestätigten Linienregeln oder Packresultate. Nutze den tatsächlichen Divisor und vergleiche auch Schutz und Gebühren. Zielbezogene Fragen erklärt der [Italienratgeber](/de/articles/hipobuy-shipping-to-italy/).
+
 [Die vollständigen Kosten vergleichen](/de/articles/shipping-cost-checklist/)
 
 ## Ein Versandrechner liefert eine Schätzung

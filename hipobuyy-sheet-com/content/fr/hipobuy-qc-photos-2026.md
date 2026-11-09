@@ -1,5 +1,9 @@
 Les photos QC de l’entrepôt Hipobuy servent à comparer l’article reçu à la variante choisie. Les images publiques du produit sont une autre source. Avec Arrived, l’inspection peut rester en attente. Si les vues manquent, suivez les [vérifications des photos absentes](/fr/articles/hipobuy-qc-photos-not-showing/) avant de valider le colis.
 
+## Demander une photo qui résout une décision
+
+Pour un haut, demandez une largeur poitrine à plat avec extrémités du mètre visibles ; pour un pantalon, précisez taille ou entrejambe. Pour une chaussure, distinguez étiquette et mesure de semelle intérieure disponible. Indiquez commande et taille en privé. Ces exemples ne promettent pas un service gratuit ou toujours disponible. Vérifiez disponibilité et prix avant les options et surveillez le délai de retour.
+
 ## Les photos de QC sont des preuves, pas de décoration
 
 Le site public d'Hipobuy indique que les produits achetés par l'entremise du service sont envoyés à son entrepôt en Chine, où l'acceptation et l'inspection de la qualité sont effectuées et les résultats sont fournis. Cette étape d'entrepôt est utile car elle vous donne la chance de comparer l'article reçu avec l'offre de produit vendeur avant l'expédition internationale.

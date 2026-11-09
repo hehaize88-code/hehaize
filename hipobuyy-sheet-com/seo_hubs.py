@@ -1,4 +1,4 @@
-"""Localized reader routes for the October 2026 search-intent release."""
+"""Localized reader routes for the five-language editorial site."""
 from html import escape
 
 HUBS={
@@ -99,6 +99,44 @@ HUBS={
  'photo':'Foto del prodotto','updated':'Aggiornato','sources':'Riferimenti ufficiali','source_date':'Verifica delle fonti'}
 }
 
+NOVEMBER={
+ 'en':{
+  'shipping_title':'Hipobuy Shipping: Cost Calculator, Delivery Time & Tracking',
+  'shipping_desc':'Compare Hipobuy shipping cost and billed weight, understand delivery stages and plan a parcel to Italy. Use current route quotes and the right tracking record.',
+  'shipping_extra':('Plan the delivery stages and destination','Separate seller dispatch, warehouse QC, packing and international transit. A route estimate is not necessarily the full order-to-door time. For Italy, verify destination, address, quote inclusions and current customs guidance before payment.'),
+  'new_group':'Delivery plans and budget finds','new_links':['Shipping time by stage','Shipping to Italy','Three finds under US$25'],
+  'articles_title':'Hipobuy Guides: Shipping, QC, Tracking & Budget Finds','articles_desc':'Browse {count} practical guides with product checks, shipping tools, order help and dated budget finds. Choose the question that matches your next step.'},
+ 'de':{
+  'shipping_title':'Hipobuy-Versand: Kostenrechner, Lieferzeit und Tracking',
+  'shipping_desc':'Vergleiche Versandkosten und Abrechnungsgewicht, verstehe Lieferphasen und plane Italienpakete mit aktuellen Angeboten und dem richtigen Tracking.',
+  'shipping_extra':('Lieferphasen und Ziel planen','Trenne Verkäuferabgang, Lager-QC, Verpackung und Auslandstransport. Eine Linienlaufzeit umfasst nicht unbedingt den gesamten Auftrag. Für Italien prüfe Ziel, Adresse, enthaltene Kosten und aktuelle Zollinformationen vor der Zahlung.'),
+  'new_group':'Lieferplanung und günstige Funde','new_links':['Lieferzeit nach Phasen','Versand nach Italien','Drei Funde unter 25 USD'],
+  'articles_title':'Hipobuy-Ratgeber: Versand, QC, Tracking und günstige Funde','articles_desc':'{count} praktische Ratgeber zu Produktprüfung, Versandtools, Bestellhilfe und datierten günstigen Angeboten. Wähle die Frage für deinen nächsten Schritt.'},
+ 'es':{
+  'shipping_title':'Envío Hipobuy: calculadora, tiempo y seguimiento',
+  'shipping_desc':'Compara coste y peso facturable, entiende las fases y prepara envíos a Italia con presupuestos actuales y el seguimiento correcto.',
+  'shipping_extra':('Planifica fases y destino','Separa salida del vendedor, QC, embalaje y tránsito internacional. La estimación de una ruta no siempre cubre todo el pedido. Para Italia verifica destino, dirección, inclusiones y orientación aduanera actual antes de pagar.'),
+  'new_group':'Entrega y productos económicos','new_links':['Tiempo de envío por fases','Envío a Italia','Tres productos bajo 25 USD'],
+  'articles_title':'Guías Hipobuy: envío, QC, seguimiento y productos económicos','articles_desc':'{count} guías prácticas de productos, herramientas de envío, ayuda con pedidos y precios económicos fechados. Elige la pregunta de tu siguiente paso.'},
+ 'fr':{
+  'shipping_title':'Livraison Hipobuy : calculateur, délais et suivi',
+  'shipping_desc':'Comparez frais et poids facturable, comprenez les étapes et préparez un colis vers l’Italie avec devis actuels et suivi adapté.',
+  'shipping_extra':('Préparer les étapes et la destination','Séparez départ vendeur, QC, emballage et transit international. Une estimation de ligne ne couvre pas forcément toute la commande. Pour l’Italie, vérifiez destination, adresse, inclusions et informations douanières actuelles avant paiement.'),
+  'new_group':'Livraison et trouvailles économiques','new_links':['Délais par étape','Livraison vers l’Italie','Trois articles sous 25 USD'],
+  'articles_title':'Guides Hipobuy : livraison, QC, suivi et petits prix','articles_desc':'{count} guides pratiques : contrôle produit, outils de livraison, aide aux commandes et prix datés. Choisissez la question de votre prochaine étape.'},
+ 'it':{
+  'shipping_title':'Spedizione Hipobuy: costi, calcolatore, tempi e tracking',
+  'shipping_desc':'Quanto costa la spedizione Hipobuy? Confronta peso fatturabile e preventivi, verifica i tempi per fase e prepara un pacco verso l’Italia.',
+  'shipping_extra':('Pianifica fasi e destinazione','Separa partenza del venditore, QC, imballaggio e transito internazionale. La stima della rotta non copre necessariamente tutto l’ordine. Per l’Italia verifica destinazione, indirizzo, inclusioni e indicazioni doganali aggiornate prima di pagare.'),
+  'new_group':'Consegna e articoli economici','new_links':['Tempi per fase','Spedizione in Italia','Tre articoli sotto 25 USD'],
+  'articles_title':'Guide Hipobuy: spedizione, QC, tracking e prodotti economici','articles_desc':'{count} guide pratiche per controllare prodotti, stimare spedizione e seguire ordini, con offerte a prezzo datato. Scegli la domanda del prossimo passo.'}
+}
+for lang,copy in NOVEMBER.items():
+    HUBS[lang].update({k:copy[k] for k in ['shipping_title','shipping_desc']})
+    HUBS[lang]['shipping'].append(copy['shipping_extra'])
+    HUBS[lang]['groups'].append(copy['new_group'])
+    HUBS[lang]['links'].extend(copy['new_links'])
+
 def apply_hub_copy(translations):
     for lang,t in translations.items():
         copy=HUBS[lang]
@@ -106,12 +144,14 @@ def apply_hub_copy(translations):
             t['page_titles'][idx]=copy[route+'_title']
             t['page_subs'][idx]=copy[route+'_desc']
             t['body'][route]=copy[route]
+        t['page_titles'][7]=NOVEMBER[lang]['articles_title']
+        t['page_subs'][7]=NOVEMBER[lang]['articles_desc']
 
 def topic_paths(lang):
     t=HUBS[lang]
-    slugs=['hipobuy-qc-photos-not-showing','qc-photo-checklist','hipobuy-size-guide','hipobuy-shipping-calculator','hipobuy-volumetric-weight','hipobuy-rehearsal-packing','order-status-workflow','hipobuy-tracking-not-updating','hipobuy-refund-pending']
+    slugs=['hipobuy-qc-photos-not-showing','qc-photo-checklist','hipobuy-size-guide','hipobuy-shipping-calculator','hipobuy-volumetric-weight','hipobuy-rehearsal-packing','order-status-workflow','hipobuy-tracking-not-updating','hipobuy-refund-pending','hipobuy-shipping-time','hipobuy-shipping-to-italy','hipobuy-finds-under-25']
     groups=[]
-    for i in range(3):
+    for i in range(4):
         links=''.join(f'<a href="/{lang}/articles/{slugs[j]}/">{escape(t["links"][j])} →</a>' for j in range(i*3,i*3+3))
         groups.append('<div><h3>'+escape(t['groups'][i+1])+'</h3>'+links+'</div>')
     return '<nav class="topic-paths" aria-label="'+escape(t['groups'][0])+'">'+''.join(groups)+'</nav>'

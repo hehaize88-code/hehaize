@@ -1,5 +1,9 @@
 Ce calculateur modélise poids emballé et tarif facultatif saisi, sans prix Hipobuy en direct. Exemple : 40 × 30 × 30 cm ÷ 6000 = 6 kg volumétriques. Face à 2 kg réels hypothétiques, une ligne retenant le maximum part de 6 kg avant arrondi. Remplacez les hypothèses par les règles actuelles.
 
+## Estimer le poids : comparer deux emballages
+
+Exemple de 2 kg : 40 × 30 × 30 cm divisé par 6000 donne 6 kg. À 35 × 25 × 20 cm, on obtient environ 2,917 kg, soit 3 kg après arrondi supérieur à un palier supposé de 0,5 kg. Les deux prennent le maximum réel ou volumétrique. Avec un diviseur de 5000, la petite boîte arrondit à 3,5 kg. Ce sont des exemples, pas des règles de ligne ni des résultats réels. Utilisez le bon diviseur et comparez protection et frais. Consultez le [guide Italie](/fr/articles/hipobuy-shipping-to-italy/) pour la destination.
+
 [Comparer l’ensemble des coûts](/fr/articles/shipping-cost-checklist/)
 
 ## Un calculateur fournit une estimation

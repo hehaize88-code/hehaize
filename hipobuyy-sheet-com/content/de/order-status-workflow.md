@@ -1,5 +1,9 @@
 Arrived bedeutet Ankunft im Lager vor der Prüfung, Stored bezeichnet Lagerung. Beides bedeutet keinen internationalen Versand. Prüfe den Bestelldatensatz für Einkauf und Wareneingang, den Paketdatensatz für Verpackung, Nachzahlung und Abholung. Waiting for Confirmation kann eine gewichtsbedingte Versandnachzahlung erfordern.
 
+## Welcher Zahlungsdatensatz braucht Aufmerksamkeit?
+
+Outstanding Payment betrifft laut offizieller Übersicht eine Differenz bei Warenpreis oder Inlandslieferung; Waiting for Confirmation betrifft eine Versandkorrektur des aufgegebenen Pakets. Öffne den genannten Datensatz und prüfe den geänderten Betrag. Artikel und Paket können verschiedene Nummern haben. Eine Paketzahlung löst nicht jede offene Frage einer separaten Bestellung. Der [Zeitplan nach Phasen](/de/articles/hipobuy-shipping-time/) trennt Bearbeitung und Transport.
+
 [Die passende Sendungsverfolgung prüfen](/de/articles/parcel-tracking-delivery/)
 
 ## Produktlink, Bestellung und Paket sind drei verschiedene Dinge

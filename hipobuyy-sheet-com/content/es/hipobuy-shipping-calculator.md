@@ -1,5 +1,9 @@
 Esta calculadora modela peso embalado y una tarifa opcional introducida; no carga precios Hipobuy en directo. Ejemplo: 40 × 30 × 30 cm ÷ 6000 = 6 kg volumétricos. Frente a 2 kg reales hipotéticos, una ruta que cobre el mayor parte de 6 kg antes del redondeo. Sustituye los supuestos por las reglas actuales.
 
+## Estimador de peso: compara dos embalajes
+
+Ejemplo de 2 kg: 40 × 30 × 30 cm dividido entre 6000 da 6 kg. Con 35 × 25 × 20 cm resultan unos 2,917 kg; redondeando hacia arriba a un supuesto tramo de 0,5 kg, son 3 kg. Ambos usan el mayor peso real o volumétrico. Con divisor 5000, la caja pequeña redondea a 3,5 kg. Son ejemplos, no reglas confirmadas ni resultados reales de embalaje. Usa el divisor de tu ruta y compara también protección y gastos. Consulta la [guía para Italia](/es/articles/hipobuy-shipping-to-italy/) para el destino.
+
 [Compara todos los costes](/es/articles/shipping-cost-checklist/)
 
 ## Una calculadora ofrece una estimación

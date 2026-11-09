@@ -1,5 +1,9 @@
 Si el seguimiento Hipobuy no se actualiza, revisa el último evento confirmado, el transportista correcto y cualquier acción indicada en el paquete. Crear un número no demuestra recogida. La tabla distingue problemas de almacén, traspaso y entrega sin inventar un plazo universal de espera.
 
+## Un mensaje que soporte puede responder
+
+En un hilo oficial privado: “Paquete [referencia], ruta [nombre], último evento [texto y fecha]. Estado actual [estado]. Confirmen [recogida, confirmación pendiente o siguiente número]”. Añade pruebas pertinentes. No confundas etiqueta y recogida física ni publiques dirección y referencia completa. Para estimar cuánto falta, identifica el inicio correcto con la [guía de tiempos](/es/articles/hipobuy-shipping-time/).
+
 ## Empezar por el último evento confirmado
 
 Si el seguimiento de Hipobuy no se actualiza, empieza por el último evento que puedas confirmar. Una página sin cambios no demuestra por sí sola si el paquete espera recogida, viaja entre puntos de escaneo, cambia de transportista o tiene un problema de entrega. Anota el estado exacto, la hora del evento y su fuente antes de actuar. Esta guía convierte un estado poco claro en una comprobación concreta; no predice una fecha de entrega sin información sobre la ruta.

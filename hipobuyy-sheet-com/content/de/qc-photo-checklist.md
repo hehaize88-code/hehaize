@@ -1,5 +1,9 @@
 QC-Bilder sind Fotos zur Qualitätskontrolle des eingetroffenen Artikels. Vergleiche deine Hipobuy-Lagerfotos mit der bestellten Variante: Größenetikett, Farbe, Verarbeitung, Zubehör und Maße. Ein Katalogbild belegt nicht dein eigenes Exemplar. Fordere fehlende Ansichten vor der Verpackung an; Fotos bestätigen weder Echtheit noch jede Materialangabe.
 
+## Die Checkliste auf günstige Funde anwenden
+
+Die [Auswahl unter 25 USD](/de/articles/hipobuy-finds-under-25/) enthält T-Shirt, Jeans und Trikot mit datierten Preisen und Original-IDs. Gleiche zuerst die bestellte Variante ab und prüfe dann Maße und sichtbare Details. Ein niedriger Preis macht die Größenprüfung nicht unwichtig. Trenne Angebotsbilder, tatsächliche Lagerbilder und unbestätigte Materialaussagen; kläre die offene Frage vor der Paketfreigabe.
+
 [Rückgabefrist vor Freigabe prüfen](/de/articles/return-policy-warehouse/)
 
 ## Bedeutung von QC-Fotos und die erste Entscheidung

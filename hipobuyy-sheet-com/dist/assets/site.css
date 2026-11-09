@@ -57,3 +57,18 @@ header{position:relative}.nav{flex-wrap:wrap;gap:12px 24px;padding:15px 26px}.br
 
 /* Localized reader paths and compact publication context. */
 .topic-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 24px}.topic-paths>div{border:1px solid #d7e2ec;border-radius:10px;padding:14px;background:#f6f9fc}.topic-paths h3{font-size:16px;margin:0 0 8px}.topic-paths a{display:block;padding:6px 0;overflow-wrap:anywhere}.article-breadcrumb{font-size:13px;margin-bottom:10px}.page-head .article-updated{font-size:12px;color:#516477;margin-top:8px}.category-guide-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:16px 0;border-top:1px solid #d7e2ec;margin-top:20px}.category-guide-links a{overflow-wrap:anywhere}.card-meta span{min-width:0;overflow-wrap:anywhere;text-align:right}@media(max-width:680px){.topic-paths{grid-template-columns:1fr;gap:7px;margin-bottom:16px}.topic-paths>div{padding:9px 12px}.topic-paths h3{font-size:14px;margin-bottom:3px}.topic-paths a{display:inline-block;font-size:12px;margin-right:12px;padding:5px 0}.category-guide-links{font-size:12px;gap:8px}.article-breadcrumb{margin-bottom:7px}.page-head .article-updated{margin-top:6px}}
+
+/* Three dated budget examples remain easy to scan on a phone. */
+.budget-finds .cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:700px){
+ .budget-finds .cards{grid-template-columns:1fr;gap:8px}
+ .budget-finds .card{display:grid;grid-template-columns:86px minmax(0,1fr);align-items:center}
+ .budget-finds .photo{height:86px;aspect-ratio:1}
+ .budget-finds .photo img{width:86px;height:86px;object-fit:cover}
+ .budget-finds .card-body{padding:7px 10px;min-width:0}
+ .budget-finds .card h3{font-size:13px;min-height:0;margin:3px 0 5px}
+ .budget-finds .card-bottom{gap:8px}
+ .budget-finds .card-bottom a{font-size:12px}
+ .budget-finds .price{font-size:15px}
+ .budget-finds h2{font-size:20px}
+}

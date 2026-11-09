@@ -1,5 +1,9 @@
 No existe un coste de envío Hipobuy único para todos los paquetes. Destino, ruta admisible, peso embalado, dimensiones y opciones cambian el presupuesto. Separa mercancía, entrega nacional, servicios, envío internacional y posibles cargos de destino. Compara el mismo paquete y revisa el importe final antes de pagar.
 
+## Un presupuesto italiano exige revisar el destino
+
+Compara Italia, contenido real y medidas idénticas. Separa precios USD y cargos EUR hasta convertirlos. La [guía para Italia](/es/articles/hipobuy-shipping-to-italy/) enlaza la actualización de ADM sobre envíos de bajo valor y explica inclusiones, dirección y tracking. Un precio bajo o comisión de declaración no determina el total entregado. Para producto sin transporte, consulta [tres hallazgos bajo 25 USD](/es/articles/hipobuy-finds-under-25/).
+
 [Calcula peso real y volumétrico](/es/articles/hipobuy-shipping-calculator/)
 
 ## Precio del artículo y coste de entrega son cifras distintas

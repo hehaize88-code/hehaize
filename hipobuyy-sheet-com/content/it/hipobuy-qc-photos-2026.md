@@ -1,5 +1,9 @@
 Le foto QC del magazzino Hipobuy aiutano a confrontare l’articolo ricevuto con la variante scelta. Le immagini pubbliche del prodotto sono una fonte diversa. Con Arrived l’ispezione può essere ancora in attesa. Se mancano foto utili, segui i [controlli per foto QC assenti](/it/articles/hipobuy-qc-photos-not-showing/) prima di approvare il pacco.
 
+## Chiedi una foto che risolva una decisione
+
+Per una maglia chiedi larghezza del torace in piano con estremità del metro visibili; per pantaloni specifica vita o interno gamba. Per scarpe chiarisci se serve etichetta o una misura disponibile della soletta. Includi ordine e taglia privatamente. Sono esempi di richieste, non promesse di servizio gratuito o sempre disponibile. Verifica disponibilità e costo degli extra e tieni presente il termine del reso.
+
 ## Le foto QC sono prove, non decorazioni
 
 Il sito pubblico di Hipobuy dice che i prodotti acquistati attraverso il servizio vengono inviati al suo magazzino in Cina, dove vengono effettuate l'accettazione e l'ispezione di qualità e i risultati sono forniti. Quella fase di magazzino è utile perché ti dà la possibilità di confrontare l'articolo ricevuto con l'offerta prodotto venditore prima della spedizione internazionale.

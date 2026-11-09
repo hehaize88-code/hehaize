@@ -3,11 +3,16 @@ import html
 
 def related_slugs(slug):
     specific={
+        'hipobuy-shipping-time':['order-status-workflow','hipobuy-tracking-not-updating','hipobuy-shipping-to-italy'],
+        'hipobuy-shipping-to-italy':['hipobuy-shipping-calculator','hipobuy-shipping-time','shipping-cost-checklist'],
+        'hipobuy-finds-under-25':['hipobuy-size-guide','qc-photo-checklist','hipobuy-shipping-calculator'],
+        'hipobuy-tracking-not-updating':['hipobuy-shipping-time','order-status-workflow','parcel-tracking-delivery'],
+        'parcel-tracking-delivery':['hipobuy-tracking-not-updating','hipobuy-shipping-time','hipobuy-shipping-to-italy'],
         'hipobuy-qc-photos-not-showing':['qc-photo-checklist','order-status-workflow','return-policy-warehouse'],
         'hipobuy-volumetric-weight':['hipobuy-shipping-calculator','hipobuy-rehearsal-packing','shipping-cost-checklist'],
         'hipobuy-refund-pending':['return-policy-warehouse','fees-wallet-payment','order-status-workflow'],
-        'hipobuy-shipping-calculator':['hipobuy-volumetric-weight','shipping-cost-checklist','hipobuy-rehearsal-packing'],
-        'shipping-cost-checklist':['hipobuy-shipping-calculator','hipobuy-volumetric-weight','hipobuy-coupon-shipping-discounts'],
+        'hipobuy-shipping-calculator':['hipobuy-volumetric-weight','hipobuy-shipping-to-italy','hipobuy-rehearsal-packing'],
+        'shipping-cost-checklist':['hipobuy-shipping-calculator','hipobuy-shipping-to-italy','hipobuy-finds-under-25'],
         'return-policy-warehouse':['hipobuy-refund-pending','hipobuy-qc-photos-not-showing','order-status-workflow'],
         'fees-wallet-payment':['hipobuy-refund-pending','shipping-cost-checklist','return-policy-warehouse'],
         'hipobuy-qc-photos-2026':['hipobuy-qc-photos-not-showing','qc-photo-checklist','hipobuy-size-guide'],
@@ -17,7 +22,7 @@ def related_slugs(slug):
         'hipobuy-jacket-finds':['hipobuy-size-guide','qc-photo-checklist','hipobuy-shipping-calculator'],
         'qc-photo-checklist':['hipobuy-qc-photos-not-showing','return-policy-warehouse','hipobuy-size-guide'],
         'spreadsheet-first':['hipobuy-product-links','hipobuy-custom-order-forwarding','qc-photo-checklist'],
-        'hipobuy-clothing-spreadsheet':['hipobuy-jacket-finds','hipobuy-hoodie-finds','hipobuy-size-guide'],
+        'hipobuy-clothing-spreadsheet':['hipobuy-finds-under-25','hipobuy-jacket-finds','hipobuy-size-guide'],
         'guide':['hipobuy-product-links','hipobuy-custom-order-forwarding','order-status-workflow']}
     if slug in specific:return specific[slug]
     groups=[
@@ -26,14 +31,14 @@ def related_slugs(slug):
         ['hipobuy-hoodie-finds','hipobuy-football-jersey-finds','hipobuy-clothing-spreadsheet','hipobuy-size-guide','hipobuy-qc-photos-2026','hipobuy-shoes-spreadsheet'],
         ['hipobuy-spreadsheet-2026','spreadsheet-first','best-hipobuy-finds-2026','qc-photo-checklist','reading-hipobuy-reviews']
     ]
-    if slug=='shipping':return ['hipobuy-shipping-calculator','hipobuy-volumetric-weight','hipobuy-tracking-not-updating']
+    if slug=='shipping':return ['hipobuy-shipping-calculator','hipobuy-shipping-to-italy','hipobuy-shipping-time','hipobuy-tracking-not-updating']
     if slug=='qc':return ['qc-photo-checklist','hipobuy-qc-photos-not-showing','hipobuy-size-guide']
     if slug=='guide':return ['spreadsheet-first','order-status-workflow','hipobuy-tracking-not-updating']
     group=next((g for g in groups if slug in g),groups[-1])
     return [s for s in group if s!=slug][:3]
 
 def editorial_products(lang,slug,products,render):
-    ids={'hipobuy-jacket-finds':['3403','3391','3388'],'hipobuy-hoodie-finds':['3373','3372','3439'],'hipobuy-football-jersey-finds':['3407','3207','3203','3202']}.get(slug)
+    ids={'hipobuy-finds-under-25':['3423','3420','3292'],'hipobuy-jacket-finds':['3403','3391','3388'],'hipobuy-hoodie-finds':['3373','3372','3439'],'hipobuy-football-jersey-finds':['3407','3207','3203','3202']}.get(slug)
     if not ids:return ''
     title={'en':'Catalog examples to compare','de':'Katalogbeispiele zum Vergleichen','es':'Ejemplos del catálogo para comparar','fr':'Exemples du catalogue à comparer','it':'Esempi del catalogo da confrontare'}[lang]
     note={'en':'USD item-price snapshot: 23 September 2026. Listing images, not warehouse QC. Open the exact listing to confirm current options and price.',
@@ -42,7 +47,22 @@ def editorial_products(lang,slug,products,render):
     'fr':'Prix des articles en USD relevés le 23 septembre 2026. Images des annonces, pas de contrôle QC en entrepôt. Vérifiez les variantes et prix actuels sur chaque fiche.',
     'it':'Prezzi degli articoli in USD rilevati il 23 settembre 2026. Immagini degli annunci, non foto QC del magazzino. Controlla opzioni e prezzi attuali nella scheda esatta.'}[lang]
     chosen=[next(p for p in products if str(p['id'])==i) for i in ids]
-    return '<section class="editorial-products"><h2>'+title+'</h2><p class="note">'+note+'</p>'+render(lang,chosen)+'</section>'
+    if slug=='hipobuy-finds-under-25':
+        names={
+            'en':['Loose crewneck T-shirt','Cherry-blossom embroidered jeans','Short-sleeve jersey'],
+            'de':['Weites Rundhals-T-Shirt','Jeans mit Blumenstickerei','Kurzärmeliges Trikot'],
+            'es':['Camiseta holgada de cuello redondo','Vaqueros con bordado floral','Camiseta deportiva de manga corta'],
+            'fr':['T-shirt ample à col rond','Jean à broderie florale','Maillot à manches courtes'],
+            'it':['T-shirt ampia girocollo','Jeans con ricamo floreale','Maglia a maniche corte']}[lang]
+        chosen=[dict(p,title=name) for p,name in zip(chosen,names)]
+        note={
+            'en':'Catalogue prices and original IDs checked on 9 November 2026. Under US$25 per item, excluding shipping and other charges. Listing images, not personal warehouse QC. Recheck the selected variant before purchase.',
+            'de':'Katalogpreise und Original-IDs am 9. November 2026 geprüft. Unter 25 USD pro Artikel, ohne Versand und weitere Kosten. Angebotsbilder, keine persönlichen Lagerfotos. Variante vor Kauf erneut prüfen.',
+            'es':'Precios e IDs originales comprobados el 9 de noviembre de 2026. Menos de 25 USD por artículo, sin envío ni otros cargos. Imágenes del anuncio, no QC de tu pedido. Revisa la variante antes de comprar.',
+            'fr':'Prix et identifiants originaux vérifiés le 9 novembre 2026. Moins de 25 USD par article, hors livraison et autres frais. Images d’annonce, pas de QC personnel. Revérifiez la variante avant achat.',
+            'it':'Prezzi e ID originali verificati il 9 novembre 2026. Meno di 25 USD per articolo, spedizione e altri oneri esclusi. Immagini dell’annuncio, non QC personale. Ricontrolla la variante prima di acquistare.'}[lang]
+    extra=' budget-finds' if slug=='hipobuy-finds-under-25' else ''
+    return '<section class="editorial-products'+extra+'"><h2>'+title+'</h2><p class="note">'+note+'</p>'+render(lang,chosen)+'</section>'
 
 CALC={
 'en':{'title':'Plan parcel weight and cost','note':'Illustrative starting measurements. Replace them with your own parcel data and the current route rules. No live rates are loaded.','weight':'Packed weight (kg)','length':'Length (cm)','width':'Width (cm)','height':'Height (cm)','divisor':'Route volumetric divisor','basis':'Billing basis','both':'Greater of actual and volumetric','actual':'Actual weight only','rounding':'Round up to (kg)','rate':'Optional rate (USD/kg)','fee':'Optional fixed fee (USD)','button':'Calculate estimate','actual_label':'Actual weight','volume_label':'Volumetric weight','billed_label':'Planning billed weight','cost_label':'Estimated linear-rate cost','norate':'Add a current rate to model cost.','error':'Enter valid positive measurements, a divisor and rounding step; optional prices must be zero or greater.','limit':'Model: fixed fee + billed kg × entered rate. Initial-weight tiers, minimum charges, taxes and other surcharges are not included. The live eligible parcel quote controls payment.'},

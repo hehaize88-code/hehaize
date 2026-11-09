@@ -1,5 +1,9 @@
 Pour le suivi Hipobuy, identifiez si le numéro concerne la livraison à l’entrepôt ou le colis international. Utilisez le bon transporteur et gardez le dernier événement daté. Création d’étiquette, arrivée en entrepôt et départ international sont distincts. En cas de blocage, réunissez identifiant, ligne et dernier événement pour l’assistance officielle.
 
+## Le suivi dit livré, mais le colis manque
+
+Vérifiez livraison effective ou tentative. Consultez preuve, point de retrait et consignes de cet envoi. Interrogez destinataire ou réception autorisée, puis contactez transporteur et Hipobuy avec référence et éléments datés. Ne confirmez pas réception uniquement parce que le statut a changé. Respectez le vrai délai de signalement plutôt qu’une attente arbitraire. Pour l’Italie, consultez aussi la [liste de destination](/fr/articles/hipobuy-shipping-to-italy/).
+
 [Examiner un suivi sans mise à jour](/fr/articles/hipobuy-tracking-not-updating/)
 
 ## Suivre la commande, puis le colis

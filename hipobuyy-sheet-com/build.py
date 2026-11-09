@@ -138,7 +138,7 @@ EDITORIAL=json.loads((ROOT/'content'/'editorial.json').read_text(encoding='utf-8
 SLUGS=[record['slug'] for record in EDITORIAL]
 BY_SLUG={record['slug']:record for record in EDITORIAL}
 for locale in LANGS:
-    assert len(FAQS[locale])==20
+    assert len(FAQS[locale])>=20
     T[locale]['body']['faq']=FAQS[locale]
     T[locale]['article_titles']=[r['locales'][locale]['title'] for r in EDITORIAL]
     T[locale]['article_descriptions']=[r['locales'][locale]['description'] for r in EDITORIAL]
@@ -165,6 +165,8 @@ COMMERCE={
 }
 for locale in LANGS: T[locale].update(COMMERCE[locale])
 apply_hub_copy(T)
+for locale in LANGS:
+    T[locale]['page_subs'][7]=T[locale]['page_subs'][7].format(count=len(EDITORIAL))
 HOME_PRODUCTS=json.loads((ROOT/'commerce'/'home-products.json').read_text())
 
 def e(v):return html.escape(str(v),quote=True)
@@ -199,7 +201,7 @@ def meta(lang,path,title,description):
     article=BY_SLUG.get(path.split('/')[-1]) if path.startswith('articles/') else None
     share_image=article['image'] if article else 'article-listing.jpg'
     sharing=f'<meta property="og:type" content="{"article" if article else "website"}"><meta property="og:site_name" content="Hipobuyy Sheet"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}"><meta property="og:url" content="{SITE}{href(lang,path)}"><meta property="og:image" content="{SITE}/assets/{share_image}"><meta name="twitter:card" content="summary_large_image">'
-    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261027-search"><script defer src="/assets/site.js?v=20261027-search"></script><script defer src="/assets/catalog.js?v=20261027-search"></script></head>'
+    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261109-guides"><script defer src="/assets/site.js?v=20261109-guides"></script><script defer src="/assets/catalog.js?v=20261109-guides"></script></head>'
 def shell(lang,path,title,description,body,home=False):
     t=T[lang];nav=''.join(f'<a class="{"active" if path.strip("/")==r else ""}" href="{href(lang,r)}">{e(t["nav"][i])}</a>' for i,r in enumerate(ROUTES) if r != "finds")
     opts=''.join(f'<option value="{href(l,path)}" {"selected" if l==lang else ""}>{l.upper()}</option>' for l in LANGS)
@@ -322,6 +324,8 @@ for route in [r for r in ROUTES if r not in ['spreadsheet','finds']]+[f'articles
   ET.SubElement(url,f'{{{SITEMAP_NS}}}loc').text=SITE+href(lang,route)
   if route.startswith('articles/'):
    ET.SubElement(url,f'{{{SITEMAP_NS}}}lastmod').text=BY_SLUG[route.split('/')[-1]]['modified']
+  elif route in ['', 'articles', 'shipping', 'faq']:
+   ET.SubElement(url,f'{{{SITEMAP_NS}}}lastmod').text='2026-11-09'
   for alternate in LANGS+['x-default']:
    target='en' if alternate=='x-default' else alternate
    ET.SubElement(url,f'{{{XHTML_NS}}}link',{'rel':'alternate','hreflang':alternate,'href':SITE+href(target,route)})

@@ -1,5 +1,9 @@
 Wenn die Hipobuy-Sendungsverfolgung kein Update zeigt, prüfe letztes bestätigtes Ereignis, richtigen Transporteur und eine mögliche Handlungsaufforderung im Paketdatensatz. Eine erzeugte Nummer ist kein Abholscan. Die Tabelle trennt Lager-, Übergabe- und Zustellprobleme ohne pauschale Wartefrist.
 
+## Eine beantwortbare Supportnachricht
+
+Nutze einen privaten offiziellen Vorgang: „Paket [Referenz], Linie [Name], letztes Ereignis [Text und Datum]. Aktueller Status: [Status]. Bitte bestätigen Sie [Abholung, offene Bestätigung oder nächste Trackingnummer].“ Ergänze nur passende Belege. Ein Etikett ist keine physische Übernahme; veröffentliche Referenz und Adresse nicht. Bei Fragen zur verbleibenden Zeit hilft zuerst der [Lieferzeitratgeber](/de/articles/hipobuy-shipping-time/), den richtigen Startpunkt zu bestimmen.
+
 ## Beim letzten bestätigten Ereignis beginnen
 
 Wenn die Hipobuy-Sendungsverfolgung kein Update zeigt, beginne beim letzten bestätigten Ereignis. Eine unveränderte Anzeige allein verrät nicht, ob das Paket auf Abholung wartet, zwischen Erfassungspunkten unterwegs ist, übergeben wird oder ein Zustellproblem hat. Notiere den genauen Status, den Zeitpunkt und die Quelle, bevor du den nächsten Schritt wählst. Dieser Ratgeber hilft, eine unklare Meldung gezielt zu prüfen; ohne Angaben zur Versandlinie lässt sich daraus kein Lieferdatum ableiten.

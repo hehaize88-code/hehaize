@@ -1,5 +1,9 @@
 For Hipobuy tracking that is not updating, check the last confirmed event, the correct carrier and any action requested in your parcel record. A created number is not a collection scan. The table below separates warehouse, handover and delivery problems without guessing a universal waiting period.
 
+## A message that support can answer
+
+Use a private official support thread: “Parcel [reference], route [name], last event [text and date]. The current record shows [status]. Please confirm [collection, missing confirmation or next carrier reference].” Add only the evidence relevant to that question. Do not describe a label as physical collection or post the complete reference and address publicly. If the main question is how much time remains, compare the starting event in the [shipping time guide](/en/articles/hipobuy-shipping-time/) before calling the whole order late.
+
 ## Start with the last confirmed event
 
 When Hipobuy tracking is not updating, the useful starting point is the last event you can actually verify. A quiet tracking page does not, by itself, show whether a parcel is waiting for collection, travelling between scanning points, undergoing a handover or facing a delivery problem. Record the exact wording, event time and source before deciding what to do. The purpose of this guide is to turn an unclear status into a specific check, not to predict a delivery date without information about the route.

@@ -1,5 +1,9 @@
 Il n’existe pas un prix de livraison Hipobuy unique. Destination, ligne admissible, poids emballé, dimensions et options modifient le devis. Séparez produits, livraison intérieure, services, transport international et éventuels frais à destination. Comparez le même colis puis vérifiez le devis final avant paiement.
 
+## Un devis italien exige une vérification actuelle
+
+Comparez Italie, contenu réel et mêmes dimensions. Séparez prix USD et charges EUR jusqu’à conversion. Le [guide Italie](/fr/articles/hipobuy-shipping-to-italy/) renvoie à la mise à jour ADM sur les petits envois et explique inclusions, adresse et suivi. Prix bas ou frais de déclaration ne déterminent pas le total livré. Pour une sélection produit seule, voyez [trois articles sous 25 USD](/fr/articles/hipobuy-finds-under-25/).
+
 [Calculer les poids réel et volumétrique](/fr/articles/hipobuy-shipping-calculator/)
 
 ## Le prix de l’article ne représente pas le total livré

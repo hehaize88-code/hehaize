@@ -1,5 +1,9 @@
 For Hipobuy tracking, first identify whether the number covers seller-to-warehouse delivery or the international parcel. Use the matching carrier and record its latest dated event. A created label, warehouse arrival and international dispatch are different stages. If tracking stops, keep the parcel ID, route and last event together before asking official support for clarification.
 
+## Delivered in tracking, but the parcel is missing
+
+Check whether the latest event is an actual delivery or a delivery attempt. Review any official proof, named collection location or instruction connected to that shipment. Ask the intended recipient or authorised receiving point, then contact the named carrier and Hipobuy with the parcel reference and dated evidence. Do not confirm receipt solely because the status changed. Follow the actual reporting deadline rather than waiting an arbitrary number of days. Italy-bound readers can also use the [destination checklist](/en/articles/hipobuy-shipping-to-italy/).
+
 [Work through a tracking gap](/en/articles/hipobuy-tracking-not-updating/)
 
 ## Choose the correct record to track

@@ -1,5 +1,9 @@
 Arrived signifie arrivée à l’entrepôt avant inspection ; Stored indique le stockage. Aucun ne signifie départ international. Consultez la commande pour achat et réception, puis le colis pour emballage, supplément et collecte. Waiting for Confirmation peut nécessiter un complément lié au poids réel.
 
+## Quel dossier de paiement demande une action ?
+
+Outstanding Payment concerne une différence de prix produit ou transport intérieur ; Waiting for Confirmation concerne un ajustement de fret du colis selon la notice officielle. Ouvrez le dossier indiqué et comparez le montant. Commande et colis peuvent avoir des références différentes. Payer un colis ne règle pas toutes les questions d’une commande distincte. La [chronologie par étape](/fr/articles/hipobuy-shipping-time/) distingue traitement et transport.
+
 [Vérifier le bon suivi](/fr/articles/parcel-tracking-delivery/)
 
 ## La fiche, la commande et le colis désignent trois choses

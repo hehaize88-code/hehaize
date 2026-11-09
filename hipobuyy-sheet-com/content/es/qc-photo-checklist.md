@@ -1,5 +1,9 @@
 Las fotos QC son imágenes de control del artículo recibido. Compara las de tu almacén Hipobuy con la variante pedida: etiqueta, color, construcción, piezas y medidas. Una foto del catálogo no demuestra cómo es tu unidad. Pide la vista que falta antes del embalaje; las imágenes no certifican autenticidad ni todas las afirmaciones materiales.
 
+## Aplica la checklist a un producto económico
+
+La [selección bajo 25 USD](/es/articles/hipobuy-finds-under-25/) incluye camiseta, vaqueros y prenda deportiva con precios fechados e IDs. Confirma primero la opción pedida y revisa medidas y detalles visibles. Un precio bajo no resta importancia a la talla. Separa imágenes del anuncio, fotos recibidas y afirmaciones de material sin verificar; resuelve la duda antes de aprobar el paquete.
+
 [Revisa el plazo antes de aprobar](/es/articles/return-policy-warehouse/)
 
 ## Significado de las fotos QC y primera decisión

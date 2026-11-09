@@ -1,5 +1,9 @@
 This calculator models packed weight and an optional entered rate; it does not load live Hipobuy prices. Example: 40 × 30 × 30 cm ÷ 6000 = 6 kg volumetric weight. Against an illustrative 2 kg scale weight, a route charging the greater value starts at 6 kg before rounding. Replace every assumption with your route’s current rules.
 
+## Weight estimator: compare two packed scenarios
+
+For an illustrative 2 kg parcel, 40 × 30 × 30 cm divided by 6000 gives 6 kg. Reducing the outside dimensions to 35 × 25 × 20 cm gives about 2.917 kg; with an assumed 0.5 kg upward increment, that becomes 3 kg. Both examples use the greater of actual and volumetric weight. With divisor 5000, the smaller box instead rounds to 3.5 kg. These are examples, not route rules or measured packing results. Enter the selected line’s actual divisor and compare protection and fees as well as weight. For destination checks, use the [Italy shipping guide](/en/articles/hipobuy-shipping-to-italy/).
+
 [Compare the complete cost checklist](/en/articles/shipping-cost-checklist/)
 
 ## A shipping calculator is an estimate, not a promise
@@ -56,9 +60,9 @@ The cheapest displayed rate is irrelevant if the route cannot carry the contents
 
 Filter for eligible routes first. Then compare chargeable weight, tracking, expected service range, compensation terms and final price.
 
-## Build a transparent calculator
+## Prepare the inputs for a useful estimate
 
-A useful calculator needs only a few fields:
+Keep these details beside your estimate:
 
 - Destination or route selection.
 - Actual packed weight.
@@ -68,7 +72,7 @@ A useful calculator needs only a few fields:
 - Rate structure or live quote.
 - Optional packaging scenario.
 
-Show the actual-weight result, dimensional-weight result and the larger chargeable figure. Label every output as an estimate unless it comes directly from the packed parcel quote.
+Read actual weight, dimensional weight and the rounded chargeable figure separately. Treat the result as an estimate until you have the packed parcel quote, and keep the chosen destination and route with your saved inputs.
 
 ## When to stop estimating
 

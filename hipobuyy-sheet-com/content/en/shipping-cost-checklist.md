@@ -1,5 +1,9 @@
 There is no single Hipobuy shipping cost for every parcel. Destination, eligible route, packed weight, dimensions and service options change the quote. Add goods, domestic delivery, optional services, international shipping and possible destination charges separately. Compare the same parcel assumptions, then use the final packed quote before paying.
 
+## An Italy quote needs a current destination check
+
+Use Italy, the actual contents and the same packed measurements for each comparison. Keep USD catalogue prices and EUR charges visibly separate until converted. The [Italy shipping guide](/en/articles/hipobuy-shipping-to-italy/) links the current ADM update for low-value shipments and explains quote inclusions, address checks and tracking. A low product price or declaration service fee does not establish the final delivered cost. For a product-only shortlist, see [three finds below US$25](/en/articles/hipobuy-finds-under-25/).
+
 [Calculate packed and volumetric weight](/en/articles/hipobuy-shipping-calculator/)
 
 ## The item price is only the first number
