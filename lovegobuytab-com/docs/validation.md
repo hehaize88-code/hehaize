@@ -86,4 +86,14 @@ The site-wide navigation adds QC and shipping links. Article sections can link t
 
 GA4 setup verified through its own UI on 2026-11-09: purchase_link_click enabled as a key event; Search Console domain lovegobuytab.com linked to the existing LoveGoBuy Tab - Web stream. The detailed analytics reports are private and are not copied into this repository.
 
-The execution host returned HTTP 403 for direct public-site requests. Browser access succeeded, so production rendering will be verified in the signed-in browser session after Cloudflare deployment rather than treating the execution-host response as a search-bot diagnosis.
+The execution host returned HTTP 403 for direct public-site requests. Live production checks used the connected browser; that execution-host response is not a search-bot diagnosis.
+
+### Published and verified
+
+- Production commit `784d0591effb8ae8f4ad9f6d6dfba990b9f8a134`; Cloudflare build `b4e7ca84-8f28-4aeb-9e68-7b3281b42c3e` Ready in 40 seconds; active Worker version prefix `b7c96b77`.
+- All 24 live article archives were visited individually: each has 16 cards, its own language and matching canonical. All three new English guides render complete bodies and two tables each, with 25 language alternates. Maltese budget-guide body, tables and localized links render completely.
+- At a 390 x 844 mobile viewport, Maltese body text is 15px, document clientWidth and scrollWidth both 375px. The table of contents defaults closed and expands on click; the mobile menu exposes localized QC and shipping links. Temporary viewport overrides were reset.
+- Live editorial XML contains 480 URLs, including all 72 new language URLs. Google Search Console accepted and read this sitemap on 2026-11-09: status Success, 480 discovered pages. This does not establish indexing.
+- Bing accepted submission of all 72 new article URLs on 2026-11-09. Its URL-submission page reported 72 submitted today and 28 quota remaining. Submission does not establish successful crawling or indexing.
+- Bing's homepage live test reported unable to fetch at 15:06 Asia/Shanghai, then passed the post-publication retest at 15:30: URL can be indexed, no SEO/GEO problems found, two markup types detected. Cloudflare's single Browser Integrity Check event in the inspected period was a Python-urllib request, not evidence of a Bing block. No security settings were changed. The transient failure's cause is unproven; the successful live test does not establish completed indexing.
+- Public release screenshot: [Article archive with 16 guides](screenshots/seo-release-2026-11-09.jpg).

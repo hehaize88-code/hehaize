@@ -573,7 +573,7 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - 截图：docs/screenshots/seo-release-2026-10-23.png。商品仍仅来自 CNBuyCha；没有新数据库、独立库存、未验证搜图接口或伪造 QC。
 
 
-## 24. 2026-11-09 全语言内容与点击改进（发布准备）
+## 24. 2026-11-09 全语言内容与点击改进（已发布）
 
 - 用户明确授权基于 GSC、Bing、GA4 与竞品调研改进并部署，全部语言同步。私有报告的详细统计不写入公共仓库。
 - 24 种语言均新增完整预算选品、鞋类表格、无可用物流路线三篇；每语言从 13 增至 16，总文章页 384。英文三篇分别约 1210、1276、1235 词，其他语言保持完整段落、表格、清单和链接文字。
@@ -583,4 +583,10 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - GA4 官方 UI 已确认 purchase_link_click 标记为关键事件；GSC 域资源 lovegobuytab.com 已关联原 LoveGoBuy Tab - Web 流。新增 catalog_open，仅记录分类和语言/页面类型，不发送搜索词、不重复 page_view。
 - 完整生产构建与验证通过：24 语言、384 文章、864 FAQ、432 表格、24 目录、480 编辑页 sitemap URL、canonical/hreflang/日期/相关链接/预览隔离及 7 个事件。
 - 2026-11-09 15:06（北京时间）Bing 实时首页检测报告无法提取，尚不能声称抓取恢复；Cloudflare 检查中。未据此关闭站点整体安全防护。
-- 所有本轮新/更新文章与文章目录共 168 个 URL 保存于 docs/resubmit-2026-11-09.txt。实际部署结果待发布后追加。
+- 所有本轮新/更新文章与文章目录共 168 个 URL 保存于 docs/resubmit-2026-11-09.txt。
+- 生产提交 784d0591effb8ae8f4ad9f6d6dfba990b9f8a134；Cloudflare 构建 b4e7ca84-8f28-4aeb-9e68-7b3281b42c3e 用时 40 秒 Ready；活动版本前缀 b7c96b77。
+- 逐一访问正式站 24 个文章目录，全部显示 16 篇，语言和 canonical 正确。新三篇英文正文、每篇两张表格和 25 alternates 正常；马耳他语全文、表格和商品链接正常。
+- 390×844 移动验收：正文 15px，clientWidth 与 scrollWidth 均 375px；目录默认折叠且可点击展开，手机菜单包含本地化 QC 和 Shipping；验收后重置临时视口。
+- GSC 2026-11-09 成功接收并读取 https://lovegobuytab.com/sitemaps/pages.xml，状态成功、发现 480 个 URL，其中 72 个本轮新增语言页。Bing 已接受 72 个新增 URL 提交，当日计数 72，剩余额度 28。均不等同于已收录。
+- Cloudflare 唯一 BIC 拦截样本为 Python-urllib 请求，不能据此归因 Bing 失败。未改安全规则。15:30（北京时间）发布后 Bing 实时首页复测通过：该 URL 可以由必应编制索引，未发现 SEO/GEO 问题，识别 2 个标记类型。前次短暂提取失败原因未证实；复测通过不等于已正式收录。
+- 发布截图 docs/screenshots/seo-release-2026-11-09.jpg。
