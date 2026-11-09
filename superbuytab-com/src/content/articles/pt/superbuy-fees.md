@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: pt
+modified: '2026-11-09'
 ---
 
 Segundo a página oficial de taxas, a Superbuy não cobra comissão pelo serviço de compra padrão no Taobao, Tmall, JD e 1688. Continuas a pagar os produtos, a entrega nacional na China, o envio internacional e os serviços opcionais aplicáveis. Outras modalidades de compra podem ter taxas diferentes; confirma o detalhe do teu pedido.
@@ -104,6 +105,12 @@ Verifique cada pagamento, reembolso e ajuste final do custo de transporte em rel
 Para um pacote contendo vários itens, você pode alocar custos de envio compartilhados para sua própria comparação. Indicar o método utilizado: repartições de custos iguais, repartições dos custos com base no peso ou outra abordagem transparente. Nenhuma dessas atribuições pessoais altera a factura real, e cada uma responde a uma questão de orçamento ligeiramente diferente.
 
 O registro resultante torna sua próxima compra mais fácil de planejar. Mostra onde seus pressupostos eram precisos e onde eles eram fracos, sem fingir que um pacote passado estabelece uma taxa universal para pedidos futuros.
+
+## Separar um complemento, um pagamento e um ajuste final
+
+Adicionar fundos à sua conta e gastar esses fundos em uma ordem são registros diferentes do mesmo dinheiro. Não adicione ambos como compras separadas no seu orçamento final. Corresponde o movimento do saldo à carga real da encomenda ou do pacote, em seguida, registrar qualquer reembolso posterior ou ajuste de envio contra a sua própria referência.
+
+Utilizar o [Guia dos métodos de pagamento](/pt/articles/superbuy-payment-methods/) quando um cartão ou transferência aparecer pendente. Para um pedido de pagamento de pacotes inesperado, verifique a explicação detalhada com o [guia de estado da ordem](/pt/articles/superbuy-order-status/)- Sim. Confirme o que permanece devido antes de repetir um pagamento; uma etiqueta de status por si só não pode estabelecer que a transação original falhou.
 
 ## Referências oficiais
 

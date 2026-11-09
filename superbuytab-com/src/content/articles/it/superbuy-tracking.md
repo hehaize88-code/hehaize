@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: it
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Una volta che la questione è risolta, registrare il risultato e qualsiasi aggiu
 I tuoi record completati possono aiutarti a pianificare gli acquisti futuri e identificare quali domande fare prima. Essi non stabiliscono un tempo di transito permanente per una rotta o garantiscono che un pacco futuro incontrerà le stesse condizioni.
 
 L'abitudine di tracciamento più affidabile è semplice: identificare la spedizione, utilizzare i suoi riferimenti ufficiali, preservare gli eventi rilevanti e porre una domanda specifica quando le prove non sono chiare. Tale metodo rimane utile anche quando il vettore, la destinazione o il contenuto dei pacchi cambiano
+
+## Ancora nessun numero di tracking? Verificare se esiste un pacco
+
+Un articolo acquistato da un venditore e un pacco internazionale presentato sono record diversi. Prima di cercare le scansioni del vettore, confermare che la merce ha raggiunto il magazzino, che hai presentato un pacco e che i passi necessari per il pagamento e l'imballaggio sono completi. Il numero di tracciamento nazionale del venditore non descrive il successivo viaggio internazionale.
+
+Utilizzare il [guida sullo stato dell'ordine](/it/articles/superbuy-order-status/) per gli acquisti in corso, l'assunzione di magazzino o pacchi non spediti. Utilizzare il [Guida al pagamento](/it/articles/superbuy-payment-methods/) se una tassa di spedizione rimane irrisolta. Una volta spedito il pacco, tornare alla cronologia del vettore e conservare l'ultimo evento e riferimento per qualsiasi richiesta.
 
 ## Riferimenti ufficiali
 

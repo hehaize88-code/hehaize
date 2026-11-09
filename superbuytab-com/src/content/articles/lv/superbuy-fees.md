@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: lv
+modified: '2026-11-09'
 ---
 
 Saskaņā ar oficiālo cenrādi Superbuy neiekasē pakalpojuma maksu par standarta pirkumiem Taobao, Tmall, JD un 1688. Tomēr jāmaksā par precēm, piegādi Ķīnā, starptautisko piegādi un izvēlētajiem papildu pakalpojumiem. Citiem pirkšanas pakalpojumiem var būt atsevišķas maksas, tāpēc pārbaudi sava pasūtījuma izmaksu sadalījumu.
@@ -104,6 +105,12 @@ Pārbaudiet katru maksājumu, kompensāciju un galīgo nosūtīšanas izmaksu ko
 Sūtījumam, kas satur vairākus sūtījumus, jūs varat sadalīt dalītās nosūtīšanas izmaksas par savu salīdzinājumu. Norādīt metodi, kuru izmantojat: vienāds izmaksu sadalījums, izmaksu piešķīrums, pamatojoties uz svaru vai citu pārredzamu pieeju. Neviens no šiem personīgajiem piešķīrumiem nemaina faktisko rēķinu, un katrs atbild uz nedaudz atšķirīgu budžeta jautājumu.
 
 Iegūtais ieraksts padara jūsu nākamo pirkumu vieglāk plānot. Tas parāda, kur jūsu pieņēmumi bija precīzi un kur tie bija vāji, neizliekoties, ka viens pagātnes paka nosaka vispārēju likmi nākotnes pasūtījumiem.
+
+## Atdalīt papildinājumu, maksājumu un galīgo korekciju
+
+Pievienojot līdzekļus savam kontam un tērējot šos līdzekļus pasūtījumam ir dažādi ieraksti par to pašu naudu. Nepievienojiet gan kā atsevišķus pirkumus savā galīgajā budžetā. Pieskaņot bilances kustību uz faktisko pasūtījumu vai paku maksu, tad reģistrēt jebkuru vēlāk kompensāciju vai nosūtīšanas korekciju pēc savas atsauces.
+
+Lietojot [maksājumu metodes rokasgrāmata](/lv/articles/superbuy-payment-methods/) ja karte vai pārskaitījums parādās vēl nav. Par negaidītu paku maksājuma pieprasījumu [Rīkojuma statusa rokasgrāmata](/lv/articles/superbuy-order-status/). Apstiprināt, kas vēl ir jāmaksā pirms atkārtota maksājuma; statusa zīme tikai nevar pierādīt, ka sākotnējais darījums nav izdevies.
 
 ## Oficiālās atsauces
 

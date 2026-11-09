@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: hr
+modified: '2026-11-09'
 ---
 
 Za procjenu dostava Superbuy, otvoriti službeni kalkulator, odabrati odredište i skladište, unijeti težine u grama i vanjske dimenzija parceli u centimetre, a zatim odabrati stvarna kategoriju stavke. Usporedi prihvatljive rute korištenjem tih istih ulaznih podataka i sačuvaj rezultat s datumom i mjerenjima.
@@ -92,6 +93,12 @@ Odaberite među opcijama koje se istinski primjenjuju na vaš paket. Usporedite 
 Zadržite rezervni plan ako konačna mjerenja čine vašu željenu rutu nedostupnom. To bi moglo značiti promjenu grupiranja, odgađanje nebitne stvari ili traženje savjeta o drugoj prihvatljivoj službi. Odlučite se na temelju potvrđenih informacija, a ne natjerati paket da sliči na vašu prvu procjenu.
 
 Otvori [službeni Superbuy kalkulator prijevoza](https://www.superbuy.com/en/page/query/freight/) kada ste spremni usporediti svoje podatke unesene. Koristite naše [Naknade vodič](/hr/articles/superbuy-fees/) da se rezultat stavi u potpuni proračun za kupovinu.
+
+## Procjena se može reproducirati prije uspoređivanja cijena
+
+Voditi evidenciju odredišta, kategorija artikala, pakiranih dimenzija, težine razmjera i odabrane usluge. Usporedite alternative korištenjem istih ulaza. Ako uklanjanje kutije mijenja dimenzije, snimite drugi scenarij umjesto tihog zamjene originala. Zatim usporediti cijenu pune usluge i njegove uključene naknade, a ne samo naslovnu stopu.
+
+Za poljsku destinaciju, upotrijebite [Poljska poštanski popis](/hr/articles/superbuy-shipping-to-poland/). Nakon što dostavite paket, [vodič za porudžbu](/hr/articles/superbuy-order-status/) pomaže razlikovati otpremninu od predaje pakiranja i prijevoznika. Računalni rezultat ne znači da je paket rezerviran ili poslat.
 
 ## Službene preporuke
 

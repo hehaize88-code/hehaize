@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: pl
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Gdy sprawa zostanie rozwiązana, zanotować wynik i wszelkie powiązane korekty 
 Ukończony rekord może pomóc w planowaniu przyszłych zakupów i zidentyfikowaniu pytań, które należy zadać wcześniej. Nie ustanawiają one stałego czasu tranzytowego na trasę ani nie gwarantują, że w przyszłości paczka spełnia te same warunki.
 
 Najbardziej wiarygodny nawyk śledzenia jest prosty: identyfikacja wysyłki, użycie jej urzędowych odniesień, zachowanie stosownych zdarzeń i zadać konkretne pytanie, gdy dowody są niejasne. Metoda ta pozostaje pożyteczna nawet w przypadku zmiany treści przewoźnika, miejsca przeznaczenia lub paczki.
+
+## Nie masz jeszcze numeru namierzania? Sprawdź, czy paczka istnieje
+
+Pozycja zakupiona od sprzedawcy i dostarczona paczka międzynarodowa to różne zapisy. Przed wyszukiwaniem skan przewoźnika należy potwierdzić, że towary dotarły do magazynu, że złożyli Państwo paczkę oraz że wymagane kroki w zakresie płatności i pakowania są kompletne. Krajowy numer śledzenia sprzedawcy nie opisuje późniejszej podróży międzynarodowej.
+
+Użyj [przewodnik stanu zamówienia](/pl/articles/superbuy-order-status/) w przypadku nierozstrzygniętych zakupów, przyjmowania do magazynu lub nieprzesyłek. Użyj [przewodnik płatniczy](/pl/articles/superbuy-payment-methods/) jeżeli opłata za wysyłkę pozostaje nierozwiązana. Po wysłaniu paczki, wrócić do historii przewoźnika i zachować ostatnie wydarzenie i odniesienie do wszelkich zapytań.
 
 ## Oficjalne odniesienia
 

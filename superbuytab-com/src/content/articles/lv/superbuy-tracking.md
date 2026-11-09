@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: lv
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Kad jautājums ir atrisināts, reģistrējiet iznākumu un ar to saistītās fin
 Jūsu aizpildītie ieraksti var palīdzēt jums plānot nākotnes pirkumus un noteikt, kurus jautājumus uzdot agrāk. Tās nenosaka pastāvīgu tranzīta laiku maršrutam vai negarantē, ka turpmākai pakai būs vienādi nosacījumi.
 
 Uzticamākais izsekošanas ieradums ir vienkāršs: identificēt sūtījumu, izmantot tā oficiālās atsauces, saglabāt attiecīgos notikumus un uzdot konkrētu jautājumu, ja pierādījumi nav skaidri. Šī metode joprojām ir noderīga pat tad, ja mainās pārvadātāja, galamērķa vai pakas saturs.
+
+## Vēl nav nevienas izsekošanas? Pārbaudīt, vai sūtījums pastāv
+
+Postenis, kas iegādāts no pārdevēja, un iesniegtais starptautiskais sūtījums ir dažādi ieraksti. Pirms meklēt pārvadātāja skenēšanu, apstiprināt, ka preces ir sasniegušas noliktavu, ka esat iesniedzis paku un ka nepieciešamie apmaksas un iepakošanas posmi ir pabeigti. Pārdevēja iekšzemes uzskaites numurs neapraksta vēlāko starptautisko braucienu.
+
+Lietojot [Rīkojuma statusa rokasgrāmata](/lv/articles/superbuy-order-status/) Gaidāmiem iepirkumiem, noliktavu iegrāmatojumiem vai bezkuģa pakām. Lietojot [maksājuma norādījums](/lv/articles/superbuy-payment-methods/) ja kuģniecības maksa joprojām nav ievērota. Kad sūtījums ir nosūtīts, atgriezieties pārvadātāja vēsturē un saglabājiet jaunāko notikumu un atsauci uz jebkādu izmeklēšanu.
 
 ## Oficiālās atsauces
 

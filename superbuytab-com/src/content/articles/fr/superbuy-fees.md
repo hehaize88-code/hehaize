@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: fr
+modified: '2026-11-09'
 ---
 
 Selon sa grille officielle, Superbuy ne facture pas de frais de service pour les achats standard sur Taobao, Tmall, JD et 1688. Les produits, la livraison intérieure en Chine, le transport international et les services optionnels restent à payer. D’autres prestations d’achat peuvent être facturées : vérifiez les frais applicables à votre commande.
@@ -104,6 +105,12 @@ Vérifiez chaque paiement, remboursement et ajustement final des frais d'expédi
 Pour un colis contenant plusieurs articles, vous pouvez répartir les frais d'expédition partagés pour votre propre comparaison. Indiquez la méthode que vous utilisez : répartition égale des coûts, répartition des coûts en fonction du poids ou d'une autre approche transparente. Aucune de ces allocations personnelles ne modifie la facture réelle, et chacune répond à une question budgétaire légèrement différente.
 
 Le disque résultant rend votre prochain achat plus facile à planifier. Il montre où vos hypothèses étaient exactes et où elles étaient faibles, sans prétendre qu'un colis passée établit un taux universel pour les commandes futures.
+
+## Séparer un supplément, un paiement et un ajustement final
+
+Ajouter des fonds à votre compte et dépenser ces fonds sur un ordre sont des documents différents du même argent. N'ajoutez pas les deux à titre d'achats distincts dans votre budget final. Correspondez au mouvement du solde à la charge réelle de commande ou de colis, puis enregistrez tout remboursement ultérieur ou ajustement d'expédition par rapport à sa propre référence.
+
+Utiliser la [guide des méthodes de paiement](/fr/articles/superbuy-payment-methods/) lorsqu'une carte ou un transfert apparaît en attente. Pour une demande inattendue de paiement de colis, consultez l'explication détaillée avec la [guide d'état de l'ordre](/fr/articles/superbuy-order-status/)C'est vrai. Confirmer ce qui reste dû avant de répéter un paiement; une étiquette de statut à elle seule ne peut établir que la transaction originale a échoué.
 
 ## Références officielles
 

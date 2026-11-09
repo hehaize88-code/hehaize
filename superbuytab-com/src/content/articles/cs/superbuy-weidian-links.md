@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: cs
+modified: '2026-11-09'
 ---
 
 Chcete-li koupit od Weidian s Superbuy, začněte s originálním produktu URL, otevřete jej v nákupním toku Superbuy a ověřit prodejce, barvu, velikost a množství. Zaplatit až poté, co objednávka podrobnosti jsou jasné; přezkoumat dostupné skladové důkazy před zajištěním mezinárodní dodávky.
@@ -84,6 +85,12 @@ Váš záznam může být stejně jednoduchý jako původní URL, vybraná volba
 Tento záznam také pomáhá odlišit položku vydání od lodního vydání. O nesprávné variaci by se mělo diskutovat proti nákupnímu příkazu. Problém s sledováním balíků by měl být projednán proti záznamu o balíku. Použití správné reference snižuje šanci na podporu vyšetřování špatné fáze.
 
 Až se vrátíš [živé tabulky](/cs/spreadsheet/), považovat další nález za nové rozhodnutí. Znovuvyužití známého prodejce nebo fotografie produktu není důvodem k přeskočení možnosti kontroly. Pečlivé předání trvá málo času a zachovává detaily, na kterých nejvíce záleží.
+
+## Poté, co odkaz funguje, sledovat skutečný nákup
+
+Úspěšně importovaný seznam je pouze začátek. Uložit původní odkaz na prodejce, zvolenou volbu, množství a přijatelnou cenu s referencí na objednávku. Je-li platba vyřízena, vyřešte transakci před vytvořením jiné objednávky na stejné zboží. Duplikovat spojení dovoz může jinak, aby bylo těžší určit, který nákup by měl pokračovat.
+
+• [platební příručka](/cs/articles/superbuy-payment-methods/) vysvětluje, jak vysledovat doplňky a objednat poplatek. • [průvodce stavem objednávky](/cs/articles/superbuy-order-status/) vysvětluje pozdější fázi prodeje a skladu. Když položka dorazí, porovnejte své vlastní kontrolní důkazy se zaznamenanou specifikací před povolením mezinárodního balení.
 
 ## Úřední reference
 

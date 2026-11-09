@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: pt
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Assim que o assunto for resolvido, registre o resultado e qualquer ajuste financ
 Seus registros completados podem ajudá-lo a planejar compras futuras e identificar quais perguntas fazer antes. Não estabelecem um tempo de trânsito permanente para uma rota nem garantem que uma encomenda futura terá as mesmas condições.
 
 O hábito de rastreamento mais confiável é simples: identificar o carregamento, usar suas referências oficiais, preservar os eventos relevantes e fazer uma pergunta específica quando a evidência não está clara. Esse método continua a ser útil mesmo quando o transporte, destino ou conteúdo de pacotes mudar.
+
+## Ainda não há número de rastreamento? Verificar se existe uma parcela
+
+Um item comprado a um vendedor e um pacote internacional apresentado são registros diferentes. Antes de procurar por varreduras transportadoras, confirme que as mercadorias chegaram ao armazém, que você enviou uma encomenda e que as etapas de pagamento e embalagem necessárias estão completas. O número de rastreamento interno de um vendedor não descreve a viagem internacional posterior.
+
+Utilizar o [guia de estado da ordem](/pt/articles/superbuy-order-status/) para as compras pendentes, a entrada no armazém ou as parcelas não expedidas. Utilizar o [Guia de pagamento](/pt/articles/superbuy-payment-methods/) Se um encargo de transporte não for resolvido. Uma vez que a parcela é enviada, retornar ao histórico da transportadora e preservar o último evento e referência para qualquer inquérito.
 
 ## Referências oficiais
 

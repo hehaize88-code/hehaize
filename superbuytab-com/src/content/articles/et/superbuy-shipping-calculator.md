@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: et
+modified: '2026-11-09'
 ---
 
 Superbuy laevanduse hindamiseks avage ametlik kalkulaator, valige sihtkoht ja laohoone, sisestage kaal grammides ja välispaki mõõtmed sentimeetrites, seejärel valige tegelik kaubaartikli kategooria. Võrrelge neid samu sisendeid kasutavaid rahastamiskõlblikke teid ning säästke tulemus kuupäeva ja mõõtmistega.
@@ -92,6 +93,12 @@ Valige variante, mis kehtivad teie pakile. Võrdle kõiki kuvatud tasusid ja tee
 Hoidke varuplaani alles, kui lõplikud mõõtmised muudavad eelistatud marsruudi kättesaamatuks. See võib tähendada huvigrupi muutmist, mitteolulise teema edasilükkamist või nõu küsimist mõne muu abikõlbliku teenuse kohta. Otsustage kinnitatud teabe põhjal, selle asemel et sundida pakki teie esimese hinnanguga sarnanema.
 
 Tee lahti [ametlik Superbuy tarnee kalkulaator](https://www.superbuy.com/en/page/query/freight/) kui oled valmis oma sisestatud andmeid võrdlema. Kasuta meie oma [Tasude juhend](/et/articles/superbuy-fees/) panna tulemus kogu ostueelarvesse.
+
+## Enne hindade võrdlemist muuta hinnang korratavaks
+
+Pidada kuupäevastatud andmeid sihtkoha, kaubaartiklite kategooriate, pakitud mõõtmete, kaalu ja valitud teenuse kohta. Võrdle alternatiive kasutades samu sisendeid. Kui kasti eemaldamine muudab mõõtmeid, salvestage pigem teine stsenaarium kui asendage vaikselt originaal. Seejärel võrdlege kogu teenuse hinda ja selle juurde kuuluvaid tasusid, mitte ainult põhikurssi.
+
+Poola sihtkohas: [Poola laevanduse kontrollnimekiri](/et/articles/superbuy-shipping-to-poland/). Kui olete esitanud paki, [tellimuse oleku juhend](/et/articles/superbuy-order-status/) aitab eristada laevamakse pakkimisest ja vedaja üleandmisest. Kalkulaatori tulemus ei tähenda, et pakk on broneeritud või lähetatud.
 
 ## Ametlikud viited
 

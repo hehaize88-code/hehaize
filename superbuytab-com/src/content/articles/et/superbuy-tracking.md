@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: et
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Kui asi on lahendatud, registreerige tulemus ja sellega seotud finantskohandus o
 Täidetud dokumendid aitavad sul tulevikus oste planeerida ja kindlaks teha, milliseid küsimusi varem esitada. Nad ei kehtesta marsruudi jaoks alalist transiidiaega ega taga, et tulevasel maatükil on samad tingimused.
 
 Kõige usaldusväärsem jälitusharjumus on lihtne: identifitseerige saadetis, kasutage selle ametlikke viiteid, säilitage asjakohased sündmused ja esitage konkreetne küsimus, kui tõendid on ebaselged. See meetod on kasulik isegi siis, kui vedaja, sihtkoht või paki sisu muutub.
+
+## Jälitusnumbrit pole veel? Kontrolli, kas pakk on olemas
+
+Müüjalt ostetud kaup ja esitatud rahvusvaheline saadetis on erinevad andmed. Enne kanderaami otsimist kinnitage, et kaup on jõudnud lattu, et olete paki esitanud ning et vajalikud makse- ja pakkimistoimingud on lõpetatud. Müüja kodune jälgimisnumber ei kirjelda hilisemat rahvusvahelist reisi.
+
+Kasutage [tellimuse oleku juhend](/et/articles/superbuy-order-status/) ootel olevate ostude, laos sissetulevate või vahustamata pakkide puhul. Kasutage [maksejuhis](/et/articles/superbuy-payment-methods/) kui laevandustasu jääb lahendamata. Kui maatükk on saadetud, pöörduge tagasi vedaja ajaloo juurde ning säilitage viimane sündmus ja viide järelepärimisele.
 
 ## Ametlikud viited
 

@@ -121,3 +121,9 @@
 @media(max-width:800px){.task-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}.task-links a{padding:13px;font-size:13px}}
 
 .article-category-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:18px}.article-category-links a{display:inline-flex;align-items:center;gap:8px}
+
+/* Question shortcuts and a compact navigation retain every article and language. */
+.article-task-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 24px}.article-task-nav a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;border:1px solid var(--line);border-radius:10px;font-size:14px;font-weight:650;line-height:1.45}.article-task-nav a:hover{border-color:var(--red);background:#fff7f5}.article-task-nav svg{flex-shrink:0}.site-header nav{gap:15px}.site-header nav a{white-space:normal}
+@media(min-width:801px) and (max-width:1250px){.header-inner{flex-wrap:wrap}.site-header nav{order:3;flex-basis:100%;justify-content:center}.header-actions{margin-left:auto}}
+@media(max-width:800px){.site-header nav{gap:0;justify-content:flex-start;flex-wrap:wrap}.site-header nav a{padding:10px 9px}.article-task-nav{gap:7px;margin-bottom:16px}.article-task-nav a{padding:11px;font-size:12px;align-items:flex-start}}
+@media(max-width:560px){.site-header nav a{font-size:11px;min-height:40px;padding:10px 7px}.article-task-nav{grid-template-columns:1fr}.article-task-nav a{align-items:center;padding:10px 12px}.articles-heading{margin-bottom:16px}.article-card h3{hyphens:auto}.article-prose{overflow-wrap:break-word}}

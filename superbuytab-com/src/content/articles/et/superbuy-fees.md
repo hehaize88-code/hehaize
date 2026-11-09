@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: et
+modified: '2026-11-09'
 ---
 
 Ametliku hinnakirja järgi ei võta Superbuy Taobao, Tmalli, JD ja 1688 tavapäraste ostude eest ostuteenuse tasu. Kaupade, Hiina-sisese tarne, rahvusvahelise saatmise ja valitud lisateenuste eest tuleb siiski maksta. Teiste ostuteenuste puhul võivad kehtida eraldi tasud, seega kontrolli oma tellimuse kulude jaotust.
@@ -104,6 +105,12 @@ Kontrollige iga makset, tagasimakset ja lõplikku tarnekulude korrigeerimist sel
 Mitut eset sisaldava paki puhul võite jagada oma veokulud enda võrdluseks. Märkida meetod, mida te kasutate: võrdsed kulueraldised, kulude jaotamine kaalu või muu läbipaistva lähenemisviisi alusel. Ükski neist isiklikest eraldistest ei muuda tegelikku arvet ja igaüks vastab veidi erinevale eelarveküsimusele.
 
 Tulemuseks rekord teeb teie järgmise ostu lihtsam planeerida. See näitab, kus teie oletused olid täpsed ja kus nad olid nõrgad, ilma teesklemata, et üks varasem pakike kehtestab universaalse määra tulevaste tellimuste jaoks.
+
+## Eraldada lisatoetus, makse ja lõplik kohandamine
+
+Raha lisamine oma kontole ja kulutamine neid vahendeid tellimusele on erinevad andmed sama raha. Ärge lisage neid nii eraldi ostudena oma lõplikusse eelarvesse. Sobib tasakaal liikumine tegeliku tellimuse või paki tasu, seejärel salvestada mis tahes hiljem tagasi või laevandus korrigeerimine vastavalt oma viide.
+
+Kasutage [maksemeetodite juhend](/et/articles/superbuy-payment-methods/) kui kaart või ülekanne on ootel. Ootamatu pakimakse taotluse korral kontrollige üksikasjalikku selgitust koos [tellimuse oleku juhend](/et/articles/superbuy-order-status/). Kinnitab, mis jääb tasumisele enne makse kordamist; ainult olekutähis ei suuda tõendada, et esialgne tehing ebaõnnestus.
 
 ## Ametlikud viited
 

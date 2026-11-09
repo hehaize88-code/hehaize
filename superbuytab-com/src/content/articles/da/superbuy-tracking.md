@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: da
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Når sagen er løst, registrere resultatet og eventuelle relaterede finansielle 
 Dine udfyldte optegnelser kan hjælpe dig med at planlægge fremtidige køb og identificere, hvilke spørgsmål du skal stille tidligere. De fastsætter ikke en permanent transittid for en rute eller garanterer, at en fremtidig pakke vil opfylde de samme betingelser.
 
 Den mest pålidelige tracking vane er ligetil: identificere forsendelsen, bruge sine officielle referencer, bevare de relevante begivenheder og stille et specifikt spørgsmål, når beviserne er uklare. Denne metode er fortsat nyttig, selv når fragtføreren, destinationen eller pakkeindholdet ændres.
+
+## Har du ikke sporet noget nummer? Tjek om en pakke findes
+
+En vare købt hos en sælger og en indsendt international pakke er forskellige poster. Før du leder efter carrier scanner, bekræfte, at varerne har nået lageret, at du har indsendt en pakke, og at de krævede betaling og pakning trin er komplet. En sælgers indenlandske tracking nummer beskriver ikke den senere internationale rejse.
+
+Brug [ordrestatusguide](/da/articles/superbuy-order-status/) for verserende køb, lagerindlagring eller ikke-afskibede pakker. Brug [betalingsvejledning](/da/articles/superbuy-payment-methods/) hvis en forsendelsesafgift fortsat er uløst. Når parcellen er afsendt, skal du vende tilbage til luftfartsselskabet historie og bevare den seneste begivenhed og reference for enhver forespørgsel.
 
 ## Officielle referencer
 

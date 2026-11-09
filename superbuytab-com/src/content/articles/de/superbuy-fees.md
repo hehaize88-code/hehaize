@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: de
+modified: '2026-11-09'
 ---
 
 Laut der offiziellen Gebührenübersicht erhebt Superbuy für Standardkäufe bei Taobao, Tmall, JD und 1688 keine Einkaufsservicegebühr. Warenpreis, chinesischer Inlandsversand, internationaler Versand und optionale Leistungen bleiben kostenpflichtig. Für andere Einkaufsleistungen können eigene Gebühren gelten; prüfen Sie deshalb die Kosten Ihrer konkreten Bestellung.
@@ -104,6 +105,12 @@ Betrachten Sie auch das Timing. Eine sinnvolle Kontrolle vor dem Versand kann ve
 Für ein Paket, das mehrere Artikel enthält, können Sie gemeinsame Versandkosten für Ihren eigenen Vergleich zuweisen. Geben Sie die Methode an, die Sie verwenden: gleiche Kostenzuweisungen, Kostenzuteilungen basierend auf Gewicht oder einem anderen transparenten Ansatz. Keine dieser persönlichen Zuweisungen ändert die tatsächliche Rechnung, und jeder beantwortet eine etwas andere Frage der Budgetierung.
 
 Die daraus resultierende Aufzeichnung macht Ihren nächsten Einkauf einfacher zu planen. Es zeigt, wo Ihre Annahmen korrekt waren und wo sie schwach waren, ohne vorzugeben, dass ein vergangenes Paket einen universellen Satz für zukünftige Aufträge festlegt.
+
+## Trennen Sie eine Ergänzung, eine Zahlung und eine endgültige Anpassung
+
+Hinzufügen von Geldern auf Ihr Konto und Ausgabe dieser Mittel für eine Bestellung sind unterschiedliche Aufzeichnungen des gleichen Geldes. Fügen Sie nicht beide als separate Einkäufe in Ihrem endgültigen Budget. Passen Sie die Balance Bewegung zu der tatsächlichen Bestellung oder Paketgebühr, dann jede spätere Rückerstattung oder Verschiffung Anpassung auf ihre eigene Referenz.
+
+Verwenden Sie die [Leitfaden für Zahlungsmethoden](/de/articles/superbuy-payment-methods/) wenn eine Karte oder Überweisung noch aussteht. Für eine unerwartete Paketzahlung Anfrage, überprüfen Sie die detaillierte Erklärung mit dem [Handbuch zum Auftragsstatus](/de/articles/superbuy-order-status/). . Bestätigen Sie, was vor der Wiederholung einer Zahlung fällig bleibt; ein Status-Label allein kann nicht belegen, dass die ursprüngliche Transaktion fehlgeschlagen ist.
 
 ## Offizielle Verweise
 

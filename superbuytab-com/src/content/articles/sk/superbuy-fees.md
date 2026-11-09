@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: sk
+modified: '2026-11-09'
 ---
 
 Podľa oficiálneho cenníka Superbuy neúčtuje servisný poplatok za štandardné nákupy na Taobao, Tmall, JD a 1688. Naďalej však platíte za tovar, dopravu v Číne, medzinárodnú prepravu a zvolené doplnkové služby. Iné nákupné služby môžu mať vlastné poplatky, preto si overte rozpis nákladov svojej objednávky.
@@ -104,6 +105,12 @@ Skontrolujte každú platbu, refundáciu a konečnú úpravu nákladov na doprav
 Pre parcelu obsahujúcu niekoľko položiek, môžete prideliť zdieľané náklady na dopravu pre vaše vlastné porovnanie. Uveďte metódu, ktorú používate: rovnaké rozdelenie nákladov, rozdelenie nákladov na základe hmotnosti alebo iného transparentného prístupu. Žiadny z týchto osobných prídelov nemení skutočnú faktúru a každá odpovedá na mierne odlišnú rozpočtovú otázku.
 
 Výsledný záznam uľahčuje plánovanie vášho ďalšieho nákupu. Ukazuje to, kde boli vaše predpoklady presné a kde boli slabé, bez predstierania, že jeden z minulých parcely stanovuje univerzálnu sadzbu pre budúce objednávky.
+
+## Oddeliť doplnenie, platbu a konečnú úpravu
+
+Pridanie finančných prostriedkov na váš účet a míňanie týchto finančných prostriedkov na objednávku sú rôzne záznamy tých istých peňazí. Nepočítajte ako samostatné nákupy do svojho konečného rozpočtu. Zosúladiť pohyb zostatku so skutočným poplatkom za objednávku alebo parcelu, potom zaznamenať akékoľvek neskoršie vrátenie peňazí alebo úpravy prepravy podľa vlastného odkazu.
+
+Použite [Príručka platobných metód](/sk/articles/superbuy-payment-methods/) keď sa karta alebo prevod objaví v očakávaní. V prípade neočakávanej žiadosti o platbu parcely si prečítajte podrobné vysvetlenie [Príručka stavu objednávky](/sk/articles/superbuy-order-status/). Potvrďte, čo zostáva splatné pred opakovaním platby; samotný popis stavu nemôže potvrdiť, že pôvodná transakcia zlyhala.
 
 ## Oficiálne odkazy
 

@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: da
+modified: '2026-11-09'
 ---
 
 Ifølge den officielle prisliste opkræver Superbuy ikke et servicegebyr for standardkøb fra Taobao, Tmall, JD og 1688. Du betaler stadig for varerne, eventuel indenrigsfragt i Kina, international fragt og valgte ekstraydelser. Andre indkøbsordninger kan have særskilte gebyrer, så kontrollér prisen for din konkrete ordre.
@@ -104,6 +105,12 @@ Kontroller hver betaling, tilbagebetaling og endelige forsendelsesomkostninger j
 For en pakke, der indeholder flere elementer, kan du tildele delte forsendelsesomkostninger til din egen sammenligning. Angiv den metode, du bruger: lige omkostninger tildelinger, omkostningstildelinger baseret på vægt eller en anden gennemsigtig tilgang. Ingen af disse personlige tildelinger ændrer den faktiske faktura, og hver besvarer et lidt anderledes budgetspørgsmål.
 
 Den resulterende rekord gør dit næste køb lettere at planlægge. Det viser, hvor dine antagelser var korrekte, og hvor de var svage, uden at foregive, at en tidligere parcel fastsætter en universel sats for fremtidige ordrer.
+
+## Separat en top-up, en betaling og en endelig justering
+
+Tilføjelse af midler til din konto og bruge disse midler på en ordre er forskellige optegnelser over de samme penge. Du må ikke tilføje begge som separate køb i dit endelige budget. Match saldoen bevægelse til den faktiske ordre eller parcel afgift, derefter registrere eventuelle senere tilbagebetaling eller forsendelse justering i forhold til sin egen reference.
+
+Brug [vejledning i betalingsmetoder](/da/articles/superbuy-payment-methods/) når et kort eller en overførsel vises afventende. For en uventet anmodning om parcelbetaling, tjek den detaljerede forklaring med [ordrestatusguide](/da/articles/superbuy-order-status/)Hr. formand! Bekræft, hvad der er tilbage, før du gentager en betaling; en statusetiket alene kan ikke fastslå, at den oprindelige transaktion mislykkedes.
 
 ## Officielle referencer
 

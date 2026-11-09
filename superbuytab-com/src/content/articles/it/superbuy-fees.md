@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: it
+modified: '2026-11-09'
 ---
 
 Secondo la pagina ufficiale delle tariffe, Superbuy non applica commissioni al servizio di acquisto standard su Taobao, Tmall, JD e 1688. Restano da pagare i prodotti, la consegna interna in Cina, la spedizione internazionale e gli eventuali servizi facoltativi. Altre modalità di acquisto possono prevedere commissioni diverse: controlla il riepilogo del tuo ordine.
@@ -104,6 +105,12 @@ Controllare ogni pagamento, rimborso e adeguamento dei costi di spedizione final
 Per un pacco contenente più articoli, è possibile assegnare spese di spedizione condivise per il proprio confronto Indicare il metodo utilizzato: allocazioni di costi uguali, allocazioni in base al peso o ad un altro approccio trasparente. Nessuna di queste assegnazioni personali cambia la fattura effettiva, e ciascuna risponde ad una domanda di budget leggermente diversa.
 
 Il record risultante rende il vostro prossimo acquisto più facile da pianificare. Mostra dove le tue ipotesi erano accurate e dove erano deboli, senza far finta che un pacco passato stabilisca un tasso universale per gli ordini futuri.
+
+## Separare un'aggiunta, un pagamento e una rettifica finale
+
+Aggiungere fondi al tuo conto e spendere quei fondi su un ordine sono record diversi dello stesso denaro. Non aggiungere sia come acquisti separati nel vostro budget finale. Corrispondere il movimento di equilibrio all'ordine effettivo o pacco carica, quindi registrare qualsiasi rimborso successivo o adeguamento della spedizione contro il proprio riferimento.
+
+Utilizzare il [Guida ai metodi di pagamento](/it/articles/superbuy-payment-methods/) quando appare in sospeso una carta o un trasferimento. Per una richiesta di pagamento del pacco inaspettato, controllare la spiegazione dettagliata con il [guida sullo stato dell'ordine](/it/articles/superbuy-order-status/). Confermare ciò che resta da pagare prima di ripetere un pagamento; una sola etichetta di stato non può stabilire che l'operazione originale è fallita.
 
 ## Riferimenti ufficiali
 

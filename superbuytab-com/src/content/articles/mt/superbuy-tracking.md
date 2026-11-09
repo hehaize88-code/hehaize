@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: mt
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Ladarba l-kwistjoni tiġi solvuta, irreġistra r-riżultat u kwalunkwe aġġusta
 Rekords mimlija tiegħek jistgħu jgħinuk tippjana xiri futur u jidentifikaw liema mistoqsijiet li jistaqsu qabel. Huma ma jistabbilixxux ħin ta' tranżitu permanenti għal rotta jew jiggarantixxu li pakkett futur jiltaqa' mal-istess kundizzjonijiet.
 
 L-aktar drawwa ta' traċċar affidabbli hija sempliċi: l-identifikazzjoni tal-konsenja, l-użu tar-referenzi uffiċjali tagħha, il-preservazzjoni tal-avvenimenti rilevanti u ssaqsi mistoqsija speċifika meta l-evidenza ma tkunx ċara. Dak il-metodu jibqa' utli anki meta jinbidel il-kontenut tat-trasportatur, tad-destinazzjoni jew tal-pakketti.
+
+## L-ebda numru traċċar s'issa? Iċċekkja jekk jeżistix pakkett
+
+Oġġett mixtri minn bejjiegħ u pakkett internazzjonali sottomess huma rekords differenti. Qabel ma tfittex għal scans trasportatur, ikkonferma li l-merkanzija tkun waslet fil-maħżen, li tkun issottomettejt pakkett u li l-passi meħtieġa għall-ħlas u l-ippakkjar huma kompluti. In-numru tat-traċċar domestiku ta' bejjiegħ ma jiddeskrivix il-vjaġġ internazzjonali ta' wara.
+
+Uża l - [gwida dwar l-istatus tal-ordni](/mt/articles/superbuy-order-status/) għal xiri pendenti, dħul ta' maħżen jew pakketti mhux trasbordati. Uża l - [gwida dwar il-ħlas](/mt/articles/superbuy-payment-methods/) jekk l-imposta tat-trasport tibqa' mhux solvuta. Ladarba l-pakkett jintbagħat, jerġa' lura għall-istorja tat-trasportatur u jippreserva l-aħħar avveniment u referenza għal kwalunkwe inkjesta.
 
 ## Referenzi uffiċjali
 

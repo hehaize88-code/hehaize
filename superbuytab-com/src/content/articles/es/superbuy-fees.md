@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: es
+modified: '2026-11-09'
 ---
 
 Según su página oficial de tarifas, Superbuy no cobra comisión por el servicio de compra estándar en Taobao, Tmall, JD y 1688. Sí debes pagar los productos, el envío nacional en China, el transporte internacional y los servicios opcionales que correspondan. Otras modalidades de compra pueden tener comisiones distintas; revisa el desglose de tu pedido.
@@ -104,6 +105,12 @@ Compruebe cada pago, reembolso y ajuste final de los gastos de envío en funció
 Para un paquete que contenga varios artículos, puede asignar gastos de envío compartidos para su propia comparación. Indicar el método que utilizas: asignaciones de costos iguales, asignaciones basadas en el peso u otro enfoque transparente. Ninguna de estas asignaciones personales cambia la factura real, y cada una responde a una pregunta de presupuesto ligeramente diferente.
 
 El registro resultante hace su próxima compra más fácil de planificar. Muestra dónde sus suposiciones eran precisas y donde eran débiles, sin fingir que un paquete pasado establece una tasa universal para pedidos futuros.
+
+## Separar un complemento, un pago y un ajuste final
+
+Añadiendo fondos a su cuenta y gastando esos fondos en un pedido son diferentes registros del mismo dinero. No agregue ambos como compras separadas en su presupuesto final. Ajuste el movimiento del saldo al pedido o cargo de paquete real, a continuación, registrar cualquier reembolso posterior o ajuste de envío contra su propia referencia.
+
+Utilice el [guía de los métodos de pago](/es/articles/superbuy-payment-methods/) cuando aparezca pendiente una tarjeta o transferencia. Para una solicitud de pago de paquetes inesperado, verifique la explicación detallada con el [guía de estado del pedido](/es/articles/superbuy-order-status/)¿Por qué no? Confirmar lo que queda adeudado antes de repetir un pago; una etiqueta de estado por sí sola no puede establecer que la transacción original fracasó.
 
 ## Referencias oficiales
 

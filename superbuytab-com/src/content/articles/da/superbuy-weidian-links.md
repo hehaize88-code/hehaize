@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: da
+modified: '2026-11-09'
 ---
 
 For at købe fra Weidian med Superbuy, starte med det originale produkt URL, åbne det i Superbuys købsflow og kontrollere sælgeren, farve, størrelse og mængde. Betal først, når ordredetaljerne er klare; gennemgå de tilgængelige lagerbeviser, før der arrangeres international levering.
@@ -84,6 +85,12 @@ Din registrering kan være så enkel som den oprindelige URL, valgt mulighed, or
 Denne post hjælper også med at skelne en vare problem fra en forsendelse problem. En forkert variation bør drøftes i forhold til indkøbsordren. Et pakkesporingsproblem bør diskuteres i forhold til pakkeoptegnelsen. Brug af den rigtige reference reducerer chancen for at støtte undersøge den forkerte fase.
 
 Når du vender tilbage til den [direkte regneark](/da/spreadsheet/), behandle det næste fund som en ny beslutning. Genbrug af en velkendt sælger eller produktfoto er ikke en grund til at springe option check. En omhyggelig aflevering tager lidt tid og bevarer de detaljer, der betyder mest.
+
+## Efter linket virker, spore den faktiske køb
+
+En vellykket importeret liste er kun begyndelsen. Gem den oprindelige sælger link, valgt mulighed, mængde og accepteret pris med ordrereferencen. Hvis en betaling er i vente, skal du løse transaktionen, før du opretter en anden ordre på de samme varer. Duplikate link import kan ellers gøre det sværere at fortælle, hvilket køb skal fortsætte.
+
+Den [betalingsvejledning](/da/articles/superbuy-payment-methods/) forklarer, hvordan man kan spore en top-up og ordre opladning. Den [ordrestatusguide](/da/articles/superbuy-order-status/) forklarer den senere sælger og lageret faser. Når varen ankommer, skal du sammenligne din egen inspektionsdokumentation med den registrerede specifikation, før du tillader international pakning.
 
 ## Officielle referencer
 

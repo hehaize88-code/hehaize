@@ -6,6 +6,7 @@ topic: Shipping
 keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
+modified: '2026-11-09'
 ---
 
 To estimate Superbuy shipping, open the official calculator, select the destination and warehouse, enter weight in grams and outer parcel dimensions in centimetres, then choose the actual item category. Compare the eligible routes using those same inputs and save the result with the date and measurements.
@@ -91,6 +92,12 @@ Choose among options that genuinely apply to your parcel. Compare total displaye
 Keep a fallback plan if the final measurements make your preferred route unavailable. That might mean changing the grouping, postponing a nonessential item or seeking advice on another eligible service. Decide based on confirmed information rather than forcing the parcel to resemble your first estimate.
 
 Open the [official Superbuy shipping calculator](https://www.superbuy.com/en/page/query/freight/) when you are ready to compare your own inputs. Use our [fees guide](/articles/superbuy-fees/) to place the result within the complete purchase budget.
+
+## Make the estimate reproducible before comparing prices
+
+Keep a dated record of the destination, item categories, packed dimensions, scale weight and selected service. Compare alternatives using the same inputs. If removing a box changes the dimensions, record a second scenario rather than silently replacing the original. Then compare the full service price and its included charges, not just the headline rate.
+
+For a Polish destination, use the [Poland shipping checklist](/articles/superbuy-shipping-to-poland/). Once you submit a parcel, the [order status guide](/articles/superbuy-order-status/) helps distinguish a shipping payment from packing and carrier handover. A calculator result does not mean a parcel has been booked or dispatched.
 
 ## Official references
 

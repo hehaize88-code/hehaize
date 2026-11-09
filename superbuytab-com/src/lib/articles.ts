@@ -8,7 +8,7 @@ const all=Object.entries(modules).map(([file,module])=>({
  minutes:Math.max(1,Math.ceil(module.rawContent().split(/\s+/).length/220)),
  path:`/articles/${module.frontmatter.slug}/`
 }));
-export const getArticles=(lang:string='en')=>all.filter(a=>a.lang===lang).sort((a,b)=>a.order-b.order);
+export const getArticles=(lang:string='en')=>all.filter(a=>a.lang===lang).sort((a,b)=>b.order-a.order);
 export const articles=getArticles('en');
 export const findArticle=(path:string,lang:string='en')=>getArticles(lang).find(a=>a.path===path);
 export const articleLocales=languages.map(([code])=>code);

@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: sk
+modified: '2026-11-09'
 ---
 
 Ak chcete odhadnúť prepravu Superbuy, otvorte oficiálnu kalkulačku, vyberte miesto určenia a skladu, zadajte hmotnosť v gramoch a vonkajšie rozmery parciel v centimetrov, potom vyberte skutočnú kategóriu položky. Porovnajte oprávnené trasy s použitím tých istých vstupov a ušetrite výsledok s dátumom a meraniami.
@@ -92,6 +93,12 @@ Vyberte si medzi možnosťami, ktoré sa skutočne vzťahujú na váš balík. P
 Dodržujte záložný plán, ak konečné merania urobia vašu preferovanú trasu nedostupnou. To by mohlo znamenať zmenu zoskupenia, odloženie niečoho, čo nie je podstatné, alebo poskytnutie rady inej spôsobilej službe. Rozhodnite sa na základe potvrdených informácií, skôr než nútiť balík, aby sa podobali vášmu prvému odhadu.
 
 Otvor [oficiálna kalkulačka prepravy Superbuy](https://www.superbuy.com/en/page/query/freight/) keď ste pripravení porovnať vaše zadané vlastné informácie. Použi naše [príručka poplatkov](/sk/articles/superbuy-fees/) uviesť výsledok do úplného kúpneho rozpočtu.
+
+## Pred porovnaním cien urobte odhad reprodukovateľný.
+
+Uchovávať datované záznamy o mieste určenia, kategóriách položiek, balených rozmeroch, hmotnosti stupnice a zvolenej službe. Porovnajte alternatívy s použitím rovnakých vstupov. Ak odstránenie políčka zmení rozmery, zaznamenajte druhý scenár namiesto tichej výmeny originálu. Potom porovnajte plnú cenu služieb a jej zahrnuté poplatky, nielen hlavnú sadzbu.
+
+Pre poľské miesto určenia použite: [Poľský kontrolný zoznam prepravy](/sk/articles/superbuy-shipping-to-poland/). Keď odošlete zásielku, [Príručka stavu objednávky](/sk/articles/superbuy-order-status/) pomáha rozlišovať poštovné platby od balenia a doručovateľa odovzdania. Výsledok kalkulačky neznamená, že zásielka bola zarezervovaná alebo odoslaná.
 
 ## Oficiálne odkazy
 

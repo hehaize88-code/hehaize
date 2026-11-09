@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: ga
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Nuair a bhíonn an t-ábhar a réiteach, taifead ar an toradh agus aon coigeart�
 Is féidir le do thaifid chomhlánaithe cabhrú leat pleanáil a dhéanamh ar cheannacháin sa todhchaí agus a aithint na ceisteanna a chur níos luaithe. Ní bhunaíonn siad buan-am idirthurais le haghaidh bealaigh nó ráthaíochta go mbeidh dáileacht sa todhchaí ag teacht ar na coinníollacha céanna.
 
 Is é an nós rianaithe is iontaofa ná simplí: an loingsiú a aithint, a theistiméireachtaí oifigiúla a úsáid, na himeachtaí ábhartha a chaomhnú agus ceist shonrach a chur nuair nach bhfuil an fhianaise soiléir. Tá an modh sin fós úsáideach fiú nuair a athraíonn an t-ábhar iompróir, ceann scríbe nó dáileachta.
+
+## Níl aon uimhir rianaithe fós? Seiceáil an bhfuil dáileacht ann
+
+Is taifid éagsúla iad mír a ceannaíodh ó dhíoltóir agus beartán idirnáisiúnta a cuireadh isteach. Sula lorgaíonn tú scanaí iompróra, deimhnigh go bhfuil na hearraí bainte amach ag an stóras, gur chuir tú beartán isteach agus go bhfuil an íocaíocht is gá agus céimeanna pacála críochnaithe. Ní chuireann uimhir rianaithe baile díoltóra síos ar an turas idirnáisiúnta níos déanaí.
+
+Úsáid an [treoraí stádais ordaithe](/ga/articles/superbuy-order-status/) le haghaidh ceannacháin, iontógáil stórais nó dáileachtaí neamhloingsithe ar feitheamh. Úsáid an [treoir maidir le híocaíocht](/ga/articles/superbuy-payment-methods/) má tá muirear loingseoireachta gan réiteach. Nuair a sheoltar an beartán, filleann sé ar stair an iompróra agus caomhnaíonn sé an ócáid agus an tagairt is déanaí d'aon fhiosrúchán.
 
 ## tagairtí oifigiúla
 

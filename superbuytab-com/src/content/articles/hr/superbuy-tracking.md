@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: hr
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Nakon što je pitanje riješeno, zabilježite ishod i sve povezane financijske p
 Vaši završeni podaci mogu vam pomoći planirati buduće kupnje i identificirati koja pitanja postaviti ranije. Oni ne utvrđuju trajno tranzitno vrijeme za rutu ili garantiraju da će se buduća parcela susresti s istim uvjetima.
 
 Najpouzdanija navika praćenja je jednostavna: identificirati pošiljku, koristiti svoje službene preporuke, sačuvati relevantne događaje i postaviti posebno pitanje kada su dokazi nejasni. Ta metoda ostaje korisna čak i kada se prijenosnik, odredište ili paket sadržaja mijenja.
+
+## Još nema broja za praćenje? Provjeri da li paket postoji
+
+Stavka kupljena od prodavatelja i predloženi međunarodni paket su različita evidencija. Prije nego što potražite skeniranje nosača, potvrdite da je roba stigla do skladišta i da ste podnijeli paket te da su potrebni koraci plaćanja i pakiranja potpuni. Domaći broj praćenja prodaje ne opisuje kasnije međunarodno putovanje.
+
+Koristi [vodič za porudžbu](/hr/articles/superbuy-order-status/) za predstojeća nabava, unos skladišta ili nenabavljeni paket. Koristi [vodič za plaćanje](/hr/articles/superbuy-payment-methods/) Ako teret ostaje neriješen. Nakon što paket je poslan, vratiti u povijesti nosača i sačuvati najnoviji događaj i referencu za bilo koji upit.
 
 ## Službene preporuke
 

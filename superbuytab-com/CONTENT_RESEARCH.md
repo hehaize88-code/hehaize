@@ -87,3 +87,24 @@ Changes: improve those four articles in all 24 locales; add broken-link troubles
 Official fee-composition, 1688 service and GOV.UK tax-and-duty pages were reopened on 28 October. Standard fee wording is limited to the named platforms on the official page. The 1688 guide does not promise universal inspection, photos or returns. UK guidance distinguishes Great Britain from Northern Ireland and does not treat the £135 threshold as a universal tax exemption. Illustrative parcel values remain examples, not current prices.
 
 Final editorial review corrected 230 localized section headings and the volumetric-weight explanation in all 23 translated versions, including mistranslations of light weight, return conditions, shared links and parcels. Translation review remains machine-assisted and targeted, not a claim of native-language certification.
+
+
+## Research and editorial release — 2026-11-09
+
+First-party evidence: GSC 28-day UI, observed data 2026-10-18–2026-11-07: 3 clicks, 440 impressions, 0.7% CTR, average position 8.8. Fees had 53 impressions, UK shipping 31, Weidian 30, calculator 26. Poland had 25 country impressions and an explicit shipping query. Query rows were privacy-limited. These are site metrics, not keyword market volumes. Bing performance displayed zero clicks/impressions in its selected 30-day report, while GA4 recorded a small number of Bing sessions; do not equate the two reporting scopes. Bing keyword research showed demand for Superbuy and spreadsheet queries, not a verified traffic estimate for competitors.
+
+GA4 2026-10-12–2026-11-08: 145 sessions, 135 active users, 216 views. Organic Search had 5 sessions; Direct had 136. Homepage landing sessions dominated. Existing product_click and outbound_superbuy events were present; key events were not configured. No GA4 account settings changed in this code release.
+
+Content decisions: add Poland shipping, order status and payment methods. These fill distinct missing intents rather than duplicate existing USA/UK delivery, international tracking, or total-fees guides. Improve fees, shipping calculator, Weidian ordering and tracking in every locale with stage-specific checks and related links. Move new articles to the start of the article hub, retain all old content, and add QC/shipping navigation plus question-based entry points.
+
+Official sources checked 2026-11-09:
+- https://www.superbuy.com/en/ — current payment guidance links; published availability does not guarantee account-specific options.
+- https://www.superbuy.com/en/page/query/freight/ — Poland destination, weight/dimension and item-category inputs.
+- https://www.superbuy.com/en/page/guide/feecomposition/ — purchasing/delivery stages and shipping reconciliation.
+- https://www.superbuy.com/en/page/guide/shoppingagent/ — purchase, warehouse and delivery workflow.
+- https://m.superbuy.com/en/me/index — separate order, parcel and balance records.
+- https://www.superbuy.com/en/page/help/ — order enquiry and support tools.
+- https://podatki.gov.pl/narzedzia/kalkulator-taryfowy — official Polish tariff estimation; informational results.
+- https://www.poczta-polska.pl/en/news/przypomnienie-oraz-zmiany-dotyczace-procesu-i-kosztow-obslugi-zgloszen-celno-podatkowych/ — customs processing information.
+
+The Poland article links current official import information rather than publishing potentially outdated thresholds, tax rates or blanket exemptions. No invented shipping quotes, guaranteed timelines or universal payment availability claims.

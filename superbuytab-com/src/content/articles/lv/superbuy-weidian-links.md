@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: lv
+modified: '2026-11-09'
 ---
 
 Lai iegādātos no Weidian ar Superbuy, sākt ar sākotnējo produkta URL, atvērt to Superbuy iepirkumu plūsmu un pārbaudīt pārdevēju, krāsu, izmēru un daudzumu. Izmaksāt tikai pēc tam, kad pasūtījuma informācija ir skaidra; pārbaudīt pieejamos noliktavas pierādījumus pirms starptautiskas piegādes.
@@ -84,6 +85,12 @@ Jūsu ieraksts var būt tikpat vienkāršs kā sākotnējais URL, izvēlētā op
 Šis ieraksts arī palīdz atšķirt postenis jautājums no kuģniecības jautājums. Pret iepirkuma rīkojumu būtu jāapspriež nepareizas izmaiņas. Sūtījumu izsekošanas problēma būtu jāapspriež pret paku ierakstu. Izmantojot pareizo atsauci, tiek samazināta iespēja saņemt atbalstu nepareizajā stadijā.
 
 Kad atgriezīsies [dzīva izklājlapa](/lv/spreadsheet/), traktēt nākamo atrast kā jaunu lēmumu. Atkārtot pazīstama pārdevēja vai produkta fotogrāfiju nav iemesls izlaist opciju pārbaudi. Uzmanīga nodošana aizņem maz laika un saglabā detaļas, kas ir vissvarīgākais.
+
+## Pēc saites darbiem, izsekot faktisko pirkumu
+
+Sekmīgi importēts saraksts ir tikai sākums. Saglabāt sākotnējo pārdevēja saiti, izvēlētā iespēja, daudzums un pieņemtā cena ar pasūtījuma atsauci. Ja maksājums vēl nav veikts, nokārtot darījumu, pirms tiek izveidots cits pasūtījums par tām pašām precēm. Divkārša saikne starp importu citādi var apgrūtināt noteikt, kuram pirkumam būtu jānotiek.
+
+E ir [maksājuma norādījums](/lv/articles/superbuy-payment-methods/) paskaidro, kā izsekot papildmaksājumu un pasūtīt maksu. E ir [Rīkojuma statusa rokasgrāmata](/lv/articles/superbuy-order-status/) paskaidro vēlāk pārdevējs un noliktavas posmi. Ierodoties precei, salīdzināt savus pārbaudes pierādījumus ar reģistrēto specifikāciju, pirms atļaut starptautisko iepakošanu.
 
 ## Oficiālās atsauces
 

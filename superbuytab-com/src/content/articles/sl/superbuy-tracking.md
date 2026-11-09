@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: sl
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Ko je zadeva rešena, zabeležite izid in vse povezane finančne prilagoditve v 
 Vaše zaključene evidence vam lahko pomagajo načrtovati prihodnje nakupe in ugotovite, katera vprašanja za postavite prej. Ne določajo trajnega tranzitnega časa za pot ali zagotavljajo, da bo bodoča parcela dosegla enake pogoje.
 
 Najbolj zanesljiva navada sledenja je enostavna: opredelite pošiljko, uporabite njene uradne reference, ohranite ustrezne dogodke in zastavite posebno vprašanje, kadar dokazi niso jasni. Ta metoda ostaja koristna tudi, če se prevoznik, namembni kraj ali vsebina paketa spremenijo.
+
+## Še ni številke sledenja? Preveri, ali paket obstaja
+
+Predmet, kupljen od prodajalca in predloženi mednarodni paket, so različni podatki. Preden poiščete preglede nosilcev, potrdite, da je blago prispelo do skladišča in da ste predložili paket ter da so potrebni plačilni in embalažski ukrepi popolni. Domača številka sledenja prodajalca ne opisuje poznejšega mednarodnega potovanja.
+
+Uporabite [Vodnik stanja naročila](/sl/articles/superbuy-order-status/) za predhodne nakupe, vnos skladišča ali neskrbljenih parcel. Uporabite [Vodnik za plačilo](/sl/articles/superbuy-payment-methods/) če je poštna pristojbina še vedno nerešena. Ko je paket odposlana, se vrnite v zgodovino prevoznika in ohranite najnovejši dogodek ter referenco za kakršno koli preiskavo.
 
 ## Uradna sklicevanja
 

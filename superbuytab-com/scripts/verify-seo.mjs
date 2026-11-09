@@ -30,7 +30,7 @@ const home=await render('/'),catalog=await render('/spreadsheet/');
 assert.notEqual(home.doc.title,catalog.doc.title);
 assert.notEqual(home.doc.querySelector('meta[name=description]').content,catalog.doc.querySelector('meta[name=description]').content);
 assert.equal(home.doc.querySelectorAll('.home-articles .article-card').length,4);
-assert(home.doc.querySelector('.home-articles a[href="/articles/superbuy-shipping-to-uk/"]'));
+assert(home.doc.querySelector('.home-articles a[href="/articles/superbuy-shipping-to-poland/"]'));
 for(const path of ['/articles/superbuy-shipping-to-uk/','/articles/superbuy-shipping-to-usa/']){
  const {doc}=await render(path),schema=JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent);
  assert.equal(schema.datePublished,'2026-10-21');assert.equal(schema.dateModified,path.includes('to-uk')?'2026-10-28':'2026-10-21');
@@ -42,11 +42,18 @@ const sitemap=await worker.fetch(new Request(origin+'/sitemap.xml'),{},{});
 const xml=await sitemap.text();
 for(const lang of locales){
  const prefix=lang==='en'?'':'/'+lang;
- for(const slug of ['superbuy-links-not-working','why-superbuy-shipping-expensive','superbuy-1688-guide']){
-  assert(xml.includes(`<loc>${origin}${prefix}/articles/${slug}/</loc><lastmod>2026-10-28</lastmod>`));
+ for(const slug of ['superbuy-shipping-to-poland','superbuy-order-status','superbuy-payment-methods']){
+  assert(xml.includes(`<loc>${origin}${prefix}/articles/${slug}/</loc><lastmod>2026-11-09</lastmod>`));
  }
  const {doc}=await render(prefix+'/');
  assert.equal(doc.querySelectorAll('.task-links a').length,4);
+ assert(doc.querySelector(`.site-header nav a[href="${prefix}/articles/superbuy-qc-photos/"]`));
+ assert(doc.querySelector(`.site-header nav a[href="${prefix}/articles/superbuy-shipping-calculator/"]`));
+ const hub=await render(prefix+'/articles/');
+ const cards=[...hub.doc.querySelectorAll('.article-card')];
+ assert.equal(cards.length,20);
+ assert.deepEqual(cards.slice(0,3).map(a=>a.getAttribute('href').split('/').filter(Boolean).at(-1)),['superbuy-payment-methods','superbuy-order-status','superbuy-shipping-to-poland']);
+ assert.equal(hub.doc.querySelectorAll('.article-task-nav a').length,3);
  for(const link of doc.querySelectorAll('.task-links a'))assert(link.getAttribute('href').startsWith(prefix+'/'));
 }
 

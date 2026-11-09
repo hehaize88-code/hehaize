@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: nl
+modified: '2026-11-09'
 ---
 
 Voor het schatten van Superbuy verzending, open de officiële rekenmachine, selecteer de bestemming en magazijn, voer gewicht in gram en buitenpakket afmetingen in centimeters, kies dan de werkelijke item categorie. Vergelijk de in aanmerking komende routes met dezelfde ingangen en sla het resultaat op met de datum en metingen.
@@ -92,6 +93,12 @@ Kies uit opties die echt van toepassing zijn op uw pakket. Vergelijk de totale g
 Houd een terugvalplan als de laatste metingen uw gewenste route niet beschikbaar maken. Dat zou kunnen betekenen dat de groepering wordt gewijzigd, dat een niet-essentiële zaak wordt uitgesteld of dat advies wordt ingewonnen over een andere in aanmerking komende dienst. Beslis op basis van bevestigde informatie in plaats van het pakket te dwingen om te lijken op uw eerste schatting.
 
 Doe open [officiële Superbuy verzendcalculator](https://www.superbuy.com/en/page/query/freight/) wanneer u klaar bent om uw eigen ingevoerde informatie te vergelijken. Gebruik onze [Leidraad voor de vergoedingen](/nl/articles/superbuy-fees/) het resultaat binnen het volledige aankoopbudget te plaatsen.
+
+## Maak de raming reproduceerbaar alvorens prijzen te vergelijken
+
+Houd een gedateerd register bij van de bestemming, itemcategorieën, verpakte afmetingen, schaalgewicht en geselecteerde dienst. Vergelijk alternatieven met dezelfde ingangen. Als het verwijderen van een doos de afmetingen verandert, neemt u een tweede scenario op in plaats van het origineel stil te vervangen. Vergelijk dan de full service prijs en de inbegrepen kosten, niet alleen het nominale tarief.
+
+Voor een Poolse bestemming, gebruik [Controlelijst voor de Poolse scheepvaart](/nl/articles/superbuy-shipping-to-poland/). Zodra u een pakket in te dienen, de [status-handleiding bestellen](/nl/articles/superbuy-order-status/) helpt onderscheiden een verzending betaling van verpakking en carrier overdracht. Een rekenresultaat betekent niet dat een pakket is geboekt of verzonden.
 
 ## Officiële referenties
 

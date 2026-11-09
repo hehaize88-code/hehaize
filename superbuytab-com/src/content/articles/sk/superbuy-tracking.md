@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: sk
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Akonáhle sa vec vyrieši, zaznamenať výsledok a všetky súvisiace finančné
 Vaše dokončené záznamy vám môžu pomôcť naplánovať budúce nákupy a určiť, ktoré otázky sa opýtať skôr. Nestanovujú trvalý tranzitný čas pre trasu ani nezaručujú, že budúca parcela bude spĺňať rovnaké podmienky.
 
 Najspoľahlivejší sledovací zvyk je jednoduchý: identifikovať zásielku, použiť jej oficiálne referencie, zachovať relevantné udalosti a položiť konkrétnu otázku, keď dôkazy nie sú jasné. Táto metóda zostáva užitočná aj vtedy, keď sa zmení obsah prepravcu, miesta určenia alebo zásielky.
+
+## Žiadne sledovacie číslo? Skontrolujte, či parcela existuje
+
+Položka zakúpená od predávajúceho a predložená medzinárodná parcela sú odlišné záznamy. Pred hľadaním nosných skenov, potvrďte, že tovar sa dostal do skladu, že ste predložili parcelu a že požadované platby a baliace kroky sú kompletné. Domáce sledovacie číslo predávajúceho neopisuje neskoršiu medzinárodnú cestu.
+
+Použite [Príručka stavu objednávky](/sk/articles/superbuy-order-status/) v prípade nevybavených nákupov, príjmu zo skladu alebo nevyslaných balíkov. Použite [Príručka platieb](/sk/articles/superbuy-payment-methods/) ak prepravný poplatok zostáva nevyriešený. Po odoslaní zásielky sa vráťte do histórie dopravcu a uchovajte najnovšie udalosti a referencie pre akékoľvek otázky.
 
 ## Oficiálne odkazy
 

@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: mt
+modified: '2026-11-09'
 ---
 
 Skont il-paġna uffiċjali tat-tariffi, Superbuy ma jitlobx tariffa għas-servizz standard tax-xiri minn Taobao, Tmall, JD u 1688. Xorta trid tħallas għall-prodotti, il-kunsinna domestika fiċ-Ċina, it-tbaħħir internazzjonali u s-servizzi fakultattivi magħżula. Servizzi oħra tax-xiri jista’ jkollhom tariffi differenti; iċċekkja l-ispejjeż tal-ordni tiegħek.
@@ -104,6 +105,12 @@ Iċċekkja kull ħlas, rifużjoni u aġġustament tal-ispejjeż finali tat-trasp
 Għal pakkett li jkun fih diversi oġġetti, tista' talloka l-ispejjeż komuni tat-trasport bil-baħar għall-paragun tiegħek stess. Agħti l-metodu li tuża: allokazzjonijiet indaqs tal-ispejjeż, allokazzjonijiet tal-kostijiet ibbażati fuq il-piż jew approċċ trasparenti ieħor. L-ebda waħda minn dawn l-allokazzjonijiet personali ma tbiddel il-fattura attwali, u kull waħda twieġeb mistoqsija ta' bbaġitjar kemmxejn differenti.
 
 Ir-rekord li jirriżulta jagħmel ix-xiri li jmiss tiegħek aktar faċli biex tippjana. Dan juri fejn is-suppożizzjonijiet tiegħek kienu preċiżi u fejn kienu dgħajfa, mingħajr ma jippretendu li pakkett wieħed passat jistabbilixxi rata universali għal ordnijiet futuri.
+
+## Separazzjoni ta' żieda, ħlas u aġġustament finali
+
+Iż-żieda ta' fondi fil-kont tiegħek u l-infiq ta' dawn il-fondi fuq ordni huma rekords differenti tal-istess flus. Iżżidx kemm bħala xiri separat fil-baġit finali tiegħek. Match the balance movement to the actual or harbour charge, imbagħad jirreġistraw kwalunkwe rifużjoni jew aġġustament tat-trasport bil-baħar aktar tard kontra r-referenza tiegħu stess.
+
+Uża l - [Gwida dwar il-metodi ta' ħlas](/mt/articles/superbuy-payment-methods/) meta kard jew trasferiment jidher pendenti. Għal talba għal pagament ta' pakketti mhux mistennija, iċċekkja l-ispjegazzjoni dettaljata mal [gwida dwar l-istatus tal-ordni](/mt/articles/superbuy-order-status/). Ikkonferma dak li jibqa' dovut qabel ma jiġi ripetut il-pagament; tikketta tal-istatus waħedha ma tistax tistabbilixxi li t-tranżazzjoni oriġinali falliet.
 
 ## Referenzi uffiċjali
 

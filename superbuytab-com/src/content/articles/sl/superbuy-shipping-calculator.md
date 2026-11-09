@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: sl
+modified: '2026-11-09'
 ---
 
 Za oceno dostave Superbuyja, odpre uradni kalkulator, izbere namembni kraj in skladišče, vnese težo v gramih ter zunanje mere paketa v centimetrih, nato pa izbere dejansko kategorijo postavk. Primerjava upravičenih poti z uporabo teh istih vložkov in shranitev rezultata s datumom in meritvami.
@@ -92,6 +93,12 @@ Izberite med možnostmi, ki resnično veljajo za vaš paket. Primerjajte skupne 
 Obdržite rezervni načrt, če bodo končne meritve omogočile, da vaša najprimernejša pot ni na voljo. To bi lahko pomenilo spremembo skupine, odložitev nebistvene postavke ali iskanje nasvetov za drugo upravičeno storitev. Odloči se na podlagi potrjenih informacij namesto da bi parcela podobna vaši prvi oceni.
 
 Odpri [uradni Superbuy poštni kalkulator](https://www.superbuy.com/en/page/query/freight/) ko ste pripravljeni primerjati vnesene lastne podatke. Uporabite naše [Vodnik za pristojbine](/sl/articles/superbuy-fees/) da se rezultat vključi v celoten proračun za nakup.
+
+## Pred primerjavo cen naj bi bila ocena ponovljiva
+
+Voditi evidenco o namembnem kraju, kategorijah postavk, pakiranih merah in tehtnici lestve ter izbrani storitvi. Primerjava alternativ z uporabo istih vložkov. Če odstranite polje spreminja dimenzije, namesto tiho zamenjave izvirnika zapišite drugi scenarij. Nato primerjajte ceno celotne storitve in njene vključene pristojbine, ne le obrestno mero.
+
+Za namembni kraj na Poljskem uporabite [Poljski kontrolni seznam ladij](/sl/articles/superbuy-shipping-to-poland/). Ko predložite paket, [Vodnik stanja naročila](/sl/articles/superbuy-order-status/) pripomore k razločevanju plačila za prevoz blaga od predaje pakiranja in prevoznikov. Računalni rezultat ne pomeni, da je bila parcela rezervirana ali odposlana.
 
 ## Uradna sklicevanja
 

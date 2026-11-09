@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: lt
+modified: '2026-11-09'
 ---
 
 Norėdami pirkti iš Weidian su Superbuy, pradėti su originaliu produkto URL, atidaryti jį Superbuy pirkimo srautas ir patikrinti pardavėją, spalva, dydis ir kiekis. Mokėti tik po to, kai užsakymo duomenys yra aiškūs; patikrinti turimus sandėlio įrodymus prieš organizuojant tarptautinį pristatymą.
@@ -84,6 +85,12 @@ Jūsų įrašas gali būti toks paprastas kaip originalus URL, pasirinkta parink
 Šis įrašas taip pat padeda atskirti elemento klausimą nuo laivybos klausimu. Neteisingas keitimas turėtų būti aptartas prieš pirkimo užsakymą. Siuntų sekimo problema turėtų būti aptarta su siuntinių įrašais. Naudodami teisingą nuorodą, sumažėja tikimybė, kad parama ištirs netinkamą etapą.
 
 Kai grįši prie to [gyvų skaičiuoklių](/lt/spreadsheet/), laikyti kitą rasti kaip naują sprendimą. Atsisakymas pakartotinai naudoti pažįstamą pardavėją ar gaminio nuotrauką nėra priežastis praleisti pasirinkimo patikrinti. Atsargus atidėjimas užima mažai laiko ir išsaugo detales, kad svarbiausia.
+
+## Po ryšio darbų, sekti faktinį pirkimą
+
+Sėkmingai importuotas sąrašas yra tik pradžia. Išsaugokite pradinį pardavėjo nuorodą, pasirinktą variantą, kiekį ir priimtiną kainą su užsakymo nuoroda. Jei mokėjimas laukia, išspręsti sandorį prieš sukuriant kitą užsakymą už tas pačias prekes. Dvigubas importo susiejimas kitaip gali apsunkinti informacijos apie tai, kuris pirkimas turėtų vykti.
+
+AM [mokėjimo vadovas](/lt/articles/superbuy-payment-methods/) paaiškina, kaip atsekti papildomą ir užsisakyti mokestį. AM [Užsakymų būklės vadovas](/lt/articles/superbuy-order-status/) paaiškina vėlesnius pardavėjo ir sandėlio etapus. Prieš išduodant tarptautinę įpakavimą, palyginkite savo patikrinimo įrodymus su užregistruota specifikacija.
 
 ## Oficialios nuorodos
 

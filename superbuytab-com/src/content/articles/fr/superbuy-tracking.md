@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: fr
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Une fois la question réglée, inscrivez le résultat et tout rajustement financ
 Vos dossiers complétés peuvent vous aider à planifier vos achats futurs et à déterminer les questions à poser plus tôt. Ils n'établissent pas de temps de transit permanent pour un itinéraire ou ne garantissent pas qu'un colis futur rencontrera les mêmes conditions.
 
 L'habitude de suivi la plus fiable est simple : identifier l'expédition, utiliser ses références officielles, préserver les événements pertinents et poser une question précise lorsque la preuve n'est pas claire. Cette méthode reste utile même lorsque le contenu du transporteur, de la destination ou du colis change.
+
+## Pas encore de numéro de suivi ? Vérifier si un colis existe
+
+Un article acheté auprès d'un vendeur et un colis international soumis sont des documents différents. Avant de chercher des scans de transporteur, confirmez que les marchandises ont atteint l'entrepôt, que vous avez soumis un colis et que les étapes de paiement et d'emballage requises sont complètes. Le numéro de suivi national d'un vendeur ne décrit pas le voyage international ultérieur.
+
+Utiliser la [guide d'état de l'ordre](/fr/articles/superbuy-order-status/) pour les achats en attente, l'entrée d'entrepôt ou les colis non expédiés. Utiliser la [guide de paiement](/fr/articles/superbuy-payment-methods/) si une redevance d'expédition n'est pas réglée. Une fois le colis expédié, retournez à l'historique du transporteur et conservez le dernier événement et la référence pour toute demande de renseignements.
 
 ## Références officielles
 

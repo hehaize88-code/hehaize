@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: sv
+modified: '2026-11-09'
 ---
 
 Enligt den officiella avgiftssidan tar Superbuy inte ut någon serviceavgift för standardköp från Taobao, Tmall, JD och 1688. Du betalar fortfarande för varorna, eventuell inrikesfrakt i Kina, internationell frakt och valda tilläggstjänster. Andra inköpstjänster kan ha egna avgifter, så kontrollera vad som gäller för din beställning.
@@ -104,6 +105,12 @@ Kontrollera varje betalning, återbetalning och slutlig justering av fraktkostna
 För ett paket som innehåller flera artiklar, kan du fördela delade fraktkostnader för din egen jämförelse. Ange den metod du använder: lika kostnadsfördelning, kostnadsfördelning baserad på vikt eller annan transparent metod. Ingen av dessa personliga tilldelningar ändrar själva fakturan, och var och en svarar på en något annorlunda budgetfråga.
 
 Resultatet gör ditt nästa köp lättare att planera. Det visar var era antaganden var korrekta och var de var svaga, utan att låtsas att ett tidigare paket fastställer en allmän kurs för framtida order.
+
+## Separera ett tillägg, en betalning och en slutlig justering
+
+Att lägga till pengar på ditt konto och spendera dessa pengar på en beställning är olika poster av samma pengar. Lägg inte till båda som separata inköp i din slutliga budget. Matcha balansrörelsen med den faktiska beställningen eller paketavgiften, anteckna sedan eventuella senare återbetalnings- eller fraktjusteringar mot sin egen referens.
+
+Använd [Riktlinjer för betalningsmetoder](/sv/articles/superbuy-payment-methods/) när ett kort eller en överföring visas i väntan. För en oväntad begäran om paketbetalning, kontrollera den detaljerade förklaringen med [Guide för orderstatus](/sv/articles/superbuy-order-status/). -Jag vet inte. Bekräfta vad som återstår innan en betalning upprepas. En statusetikett kan inte ensam fastställa att den ursprungliga transaktionen misslyckades.
 
 ## Officiella hänvisningar
 

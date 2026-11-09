@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: fr
+modified: '2026-11-09'
 ---
 
 Pour acheter chez Weidian avec Superbuy, commencez par l'URL du produit original, ouvrez-le dans le flux d'achat de Superbuy et vérifiez le vendeur, la couleur, la taille et la quantité. Ne payez qu'une fois que les détails de la commande sont clairs; examinez les preuves d'entrepôt disponibles avant d'organiser la livraison internationale.
@@ -84,6 +85,12 @@ Votre enregistrement peut être aussi simple que l'URL originale, l'option séle
 Ce dossier permet également de distinguer un problème d'article d'un problème d'expédition. Une mauvaise variation devrait être discutée par rapport au bon de commande. Un problème de suivi des colis devrait être discuté dans le dossier des colis. L'utilisation de la bonne référence réduit les chances de soutenir l'enquête sur la mauvaise étape.
 
 Quand vous retournerez à la [feuille de calcul en direct](/fr/spreadsheet/), traitez la prochaine découverte comme une nouvelle décision. La réutilisation d'un vendeur familier ou d'une photographie de produit n'est pas une raison pour sauter la vérification d'option. Une remise soigneuse prend peu de temps et conserve les détails qui comptent le plus.
+
+## Après que le lien fonctionne, suivre l'achat réel
+
+Une liste importée avec succès n'est que le début. Enregistrer le lien de vente original, l'option choisie, la quantité et le prix accepté avec la référence de commande. Si un paiement est en cours, résolvez la transaction avant de créer une autre commande pour les mêmes marchandises. Les importations de liaisons dupliquées peuvent autrement rendre plus difficile de savoir quel achat doit être effectué.
+
+Les [guide de paiement](/fr/articles/superbuy-payment-methods/) explique comment tracer une charge supplémentaire et de commande. Les [guide d'état de l'ordre](/fr/articles/superbuy-order-status/) explique les étapes ultérieures du vendeur et de l'entrepôt. Lorsque l'article arrive, comparez vos propres preuves d'inspection avec la spécification enregistrée avant d'autoriser l'emballage international.
 
 ## Références officielles
 

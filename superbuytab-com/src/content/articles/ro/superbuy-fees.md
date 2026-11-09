@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: ro
+modified: '2026-11-09'
 ---
 
 Conform paginii oficiale de tarife, Superbuy nu percepe comision pentru serviciul standard de cumpărare de pe Taobao, Tmall, JD și 1688. Produsele, livrarea internă în China, transportul internațional și serviciile opționale se plătesc separat. Alte modalități de cumpărare pot avea comisioane diferite; verifică taxele comenzii tale.
@@ -104,6 +105,12 @@ Verificați fiecare plată, rambursare și ajustarea finală a costurilor de tra
 Pentru un pachet care conține mai multe elemente, puteți aloca costurile de transport comun pentru propria comparație. Spuneți metoda pe care o folosiți: alocări egale de costuri, alocări de costuri bazate pe greutate sau o altă abordare transparentă. Niciuna dintre aceste alocări personale nu modifică factura reală și fiecare răspunde la o întrebare ușor diferită privind bugetul.
 
 Recordul rezultat face următoarea achiziție mai ușor de planificat. Arată unde presupunerile tale au fost corecte şi unde au fost slabe, fără a pretinde că un pachet anterior stabileşte o rată universală pentru ordinele viitoare.
+
+## Separați un supliment, o plată și o ajustare finală
+
+Adăugarea de fonduri în contul dvs. și cheltuirea acestor fonduri pe un ordin sunt înregistrări diferite ale acelorași bani. Nu adăugaţi atât ca achiziţii separate în bugetul final. Se potrivesc mișcarea de echilibru la comanda reală sau taxa de parcelă, apoi se înregistrează orice rambursare ulterioară sau ajustarea de transport maritim în funcție de propria referință.
+
+Utilizaţi [ghidul metodelor de plată](/ro/articles/superbuy-payment-methods/) atunci când un card sau un transfer nu este disponibil. Pentru o cerere neaşteptată de plată a coletelor, verificaţi explicaţia detaliată cu [Ghid de stare a comenzii](/ro/articles/superbuy-order-status/). Confirmați ceea ce rămâne datorat înainte de repetarea unei plăți; numai o etichetă de stare nu poate stabili că tranzacția inițială a eșuat.
 
 ## Referinţe oficiale
 

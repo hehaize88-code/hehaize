@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: ro
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Odată ce problema este rezolvată, înregistrați rezultatul și orice ajustare
 Înregistrările completate vă pot ajuta să planificaţi viitoare achiziţii şi să identificaţi întrebările pe care trebuie să le puneţi mai devreme. Acestea nu stabilesc un timp de tranzit permanent pentru o rută sau nu garantează că o viitoare parcelă va îndeplini aceleași condiții.
 
 Cel mai fiabil obicei de urmărire este simplu: să identifice transportul, să utilizeze referințele sale oficiale, să păstreze evenimentele relevante și să pună o întrebare specifică atunci când dovezile sunt neclare. Această metodă rămâne utilă chiar și atunci când transportatorul, destinația sau conținutul parcelelor se schimbă.
+
+## Nici un număr de urmărire încă? Verificați dacă există un colet
+
+Un articol achiziţionat de la un vânzător şi un pachet internaţional prezentat sunt înregistrări diferite. Înainte de a căuta scanări ale transportatorului, confirmaţi că mărfurile au ajuns la depozit, că aţi depus un colet şi că plăţile necesare şi etapele de ambalare sunt complete. Numărul de urmărire intern al vânzătorului nu descrie călătoria internațională ulterioară.
+
+Utilizaţi [Ghid de stare a comenzii](/ro/articles/superbuy-order-status/) pentru achizițiile în curs, aportul depozitului sau coletele nenavăte. Utilizaţi [ghidul de plată](/ro/articles/superbuy-payment-methods/) dacă o taxă de transport maritim rămâne nerezolvată. Odată ce pachetul este expediat, reveniți la istoricul transportatorului și păstrați cel mai recent eveniment și referință pentru orice anchetă.
 
 ## Referinţe oficiale
 

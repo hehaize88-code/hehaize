@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: sv
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ När ärendet är löst, registrera resultatet och eventuella relaterade finansi
 Dina färdiga poster kan hjälpa dig att planera framtida inköp och identifiera vilka frågor du ska ställa tidigare. De fastställer inte en permanent transittid för en rutt eller garanterar att ett framtida paket kommer att uppfylla samma villkor.
 
 Den mest tillförlitliga spårning vanan är enkel: identifiera transporten, använda sina officiella referenser, bevara relevanta händelser och ställa en specifik fråga när bevisen är oklar. Denna metod är fortfarande användbar även när transportören, destinationen eller paketets innehåll ändras.
+
+## Inget spårningsnummer än? Kontrollera om ett paket finns
+
+En vara som köpts av en säljare och ett inlämnat internationellt paket är olika poster. Innan du letar efter transportören skannar, bekräfta att varorna har nått lagret, att du har lämnat in ett paket och att den betalning och packning steg är komplett. Säljarens nationella spårningsnummer beskriver inte den senare internationella resan.
+
+Använd [Guide för orderstatus](/sv/articles/superbuy-order-status/) För pågående inköp, lagerinköp eller oskeppade paket. Använd [betalningsvägledning](/sv/articles/superbuy-payment-methods/) Om en fraktavgift fortfarande är olöst. När paketet har skickats, återgå till transportörens historik och bevara den senaste händelsen och referens för eventuella förfrågningar.
 
 ## Officiella hänvisningar
 

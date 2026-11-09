@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: ro
+modified: '2026-11-09'
 ---
 
 Pentru a cumpăra de la Weidian cu Superbuy, începeți cu URL-ul original al produsului, deschideți-l în fluxul de cumpărare al Superbuy-ului și verificați vânzătorul, culoarea, dimensiunea și cantitatea. Plătiți numai după ce detaliile comenzii sunt clare; revizuiți dovezile disponibile ale depozitului înainte de a aranja livrarea internațională.
@@ -84,6 +85,12 @@ Recordul dvs. poate fi la fel de simplu ca URL-ul original, opțiunea selectată
 Această înregistrare ajută, de asemenea, distinge un element de la o problemă de transport. Ar trebui discutată o variație greșită față de ordinul de achiziție. O problemă de urmărire a coletelor ar trebui discutată în raport cu dosarul de colete. Utilizarea referinţei corecte reduce şansele de susţinere a investigaţiei în etapa greşită.
 
 Când te întorci la [Foaie de calcul live](/ro/spreadsheet/), trata următoarea găsi ca o nouă decizie. Refolosirea unui vânzător familiar sau fotografie de produs nu este un motiv pentru a sări peste verificarea opțiunii. O predare atentă ia puțin timp și păstrează detaliile care contează cel mai mult.
+
+## După ce link-ul funcționează, urmăriți achiziția reală
+
+O listă de import cu succes este doar începutul. Salvează link-ul original al vânzătorului, opțiunea aleasă, cantitatea și prețul acceptat cu referința comenzii. Dacă o plată este în curs de desfășurare, rezolva tranzacția înainte de a crea o altă comandă pentru aceleași bunuri. În caz contrar, o legătură dublă între importuri poate îngreuna procesul de cumpărare.
+
+{LL/ AAAA} [ghidul de plată](/ro/articles/superbuy-payment-methods/) explică modul în care să urmăriți un top-up și taxa de comandă. {LL/ AAAA} [Ghid de stare a comenzii](/ro/articles/superbuy-order-status/) explică etapele ulterioare de vânzare și depozitare. Atunci când punctul ajunge, comparaţi propriile dovezi de inspecţie cu specificaţiile înregistrate înainte de a autoriza ambalarea internaţională.
 
 ## Referinţe oficiale
 

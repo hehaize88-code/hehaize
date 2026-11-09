@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: ga
+modified: '2026-11-09'
 ---
 
 De réir an leathanaigh oifigiúil táillí, ní ghearrann Superbuy táille seirbhíse ar ghnáthcheannacháin ó Taobao, Tmall, JD agus 1688. Caithfidh tú íoc fós as na hearraí, seachadadh intíre sa tSín, loingseoireacht idirnáisiúnta agus seirbhísí roghnacha. D’fhéadfadh táillí eile a bheith i gceist le socruithe ceannaigh eile; seiceáil na costais a bhaineann le d’ordú féin.
@@ -104,6 +105,12 @@ Seiceáil gach íocaíocht, aisíocaíocht agus coigeartú costais loingseoireac
 Chun beartán ina bhfuil roinnt míreanna, is féidir leat a leithdháileadh costais loingseoireachta roinnte do do chomparáid féin. Luaigh an modh a úsáideann tú: leithdháiltí costas comhionann, leithdháileadh costais bunaithe ar mheáchan nó cur chuige trédhearcach eile. Ní athraíonn aon cheann de na leithdháiltí pearsanta an sonrasc iarbhír, agus freagraíonn gach ceist bhuiséadach beagán difriúil.
 
 Déanann an taifead mar thoradh ar do cheannach eile níos éasca a phleanáil. Taispeánann sé nuair a bhí do boinn tuisceana cruinn agus áit a raibh siad lag, gan ligean go bunaíonn beartán amháin am atá caite ráta uilíoch le haghaidh orduithe sa todhchaí.
+
+## Scaradh breise, íocaíocht agus coigeartú deiridh
+
+Tá cistí a chur le do chuntas agus na cistí sin a chaitheamh ar ordú taifid éagsúla den airgead céanna. Ná cuir an dá cheann mar cheannacháin ar leith i do bhuiséad deiridh. Meaitseáil an ghluaiseacht iarmhéid leis an ord iarbhír nó muirear dáileachta, ansin aon aisíocaíocht níos déanaí nó coigeartú loingseoireachta a thaifeadadh i gcoinne a tagartha féin.
+
+Úsáid an [treoir modhanna íocaíochta](/ga/articles/superbuy-payment-methods/) nuair is cosúil cárta nó aistriú ar feitheamh. I gcás iarratas ar íocaíocht dáileachta gan choinne, seiceáil an míniú mionsonraithe leis an [treoraí stádais ordaithe](/ga/articles/superbuy-order-status/). Deimhnigh cad atá dlite roimh íocaíocht a athdhéanamh; ní féidir le lipéad stádais amháin a shuíomh gur theip ar an idirbheart bunaidh.
 
 ## tagairtí oifigiúla
 

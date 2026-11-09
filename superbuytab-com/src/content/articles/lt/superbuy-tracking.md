@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: lt
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Kai klausimas bus išspręstas, užregistruokite rezultatą ir visus susijusius 
 Jūsų užpildyti įrašai gali padėti jums planuoti būsimus pirkinius ir nustatyti, kuriuos klausimus užduoti anksčiau. Jos nenustato nuolatinio maršruto tranzito laiko arba neužtikrina, kad būsimam sklypui bus taikomos tos pačios sąlygos.
 
 Patikimas sekimo įprotis yra paprastas: identifikuoti siuntą, naudoti jos oficialias nuorodas, išsaugoti susijusius įvykius ir užduoti konkretų klausimą, kai įrodymai yra neaišku. Toks metodas ir toliau yra naudingas, net jei pasikeičia vežėjo, paskirties vietos ar siuntos turinys.
+
+## Kol kas nėra jokio sekimo numerio? Tikrinti, ar siuntinis egzistuoja
+
+Straipsnis, įsigytas iš pardavėjo, ir pateiktas tarptautinis siuntinis yra skirtingi įrašai. Prieš ieškodami vežėjo skenavimo, patvirtinate, kad prekės pasiekė sandėlį, kad pateikėte siuntinį ir kad reikiami mokėjimo ir pakavimo etapai yra baigti. Pardavėjo vietinis sekimo numeris vėliausios tarptautinės kelionės neaprašo.
+
+Naudoti [Užsakymų būklės vadovas](/lt/articles/superbuy-order-status/) neužbaigtiems pirkimams, sandėlių įvežimui arba be krovinio siuntoms. Naudoti [mokėjimo vadovas](/lt/articles/superbuy-payment-methods/) jei laivybos mokestis lieka neišspręstas. Išsiuntus siuntą, grįžti į vežėjo istoriją ir išsaugoti paskutinį įvykį bei informaciją apie bet kokį tyrimą.
 
 ## Oficialios nuorodos
 

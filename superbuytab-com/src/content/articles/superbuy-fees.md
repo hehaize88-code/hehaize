@@ -6,6 +6,7 @@ topic: Costs & budgeting
 keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
+modified: '2026-11-09'
 ---
 
 Superbuy lists no standard purchasing service fee for Taobao, Tmall, JD and 1688 on its official fee page. You still pay for the goods and applicable domestic delivery, international shipping and optional services. Other purchasing arrangements can have different service charges, so check the fee attached to the actual order.
@@ -103,6 +104,12 @@ Reconcile each payment, refund and final shipping adjustment against its referen
 For a parcel containing several items, you may allocate shared shipping costs for your own comparison. State the method you use: equal shares, weight-based shares or another transparent approach. None of these personal allocations changes the actual invoice, and each answers a slightly different budgeting question.
 
 The resulting record makes your next purchase easier to plan. It shows where your assumptions were accurate and where they were weak, without pretending that one past parcel establishes a universal rate for future orders.
+
+## Separate a top-up, a payment and a final adjustment
+
+Adding funds to your account and spending those funds on an order are different records of the same money. Do not add both as separate purchases in your final budget. Match the balance movement to the actual order or parcel charge, then record any later refund or shipping adjustment against its own reference.
+
+Use the [payment methods guide](/articles/superbuy-payment-methods/) when a card or transfer appears pending. For an unexpected parcel payment request, check the detailed explanation with the [order status guide](/articles/superbuy-order-status/). Confirm what remains due before repeating a payment; a status label alone cannot establish that the original transaction failed.
 
 ## Official references
 

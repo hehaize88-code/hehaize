@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: mt
+modified: '2026-11-09'
 ---
 
 Biex jixtru minn Weidian ma Superbuy, ibda bil-prodott oriġinali URL, tiftaħ fil-fluss xiri Superbuy u jivverifika l-bejjiegħ, kulur, daqs u kwantità. Pay only after the order details are clear; review the available maħżen evidence before arrangering international delivery.
@@ -84,6 +85,12 @@ Rekord tiegħek jista 'jkun sempliċi bħall-URL oriġinali, għażla magħżula
 Dan ir-rekord jgħin ukoll biex issir distinzjoni bejn ħruġ ta' oġġett u ħruġ ta' tbaħħir. Għandha tiġi diskussa varjazzjoni ħażina kontra l-ordni ta' xiri. Problema ta' traċċar tal-pakketti għandha tiġi diskussa kontra r-rekord tal-pakketti. L-użu tar-referenza t-tajba jnaqqas iċ-ċans ta' appoġġ li jinvestiga l-istadju żbaljat.
 
 Meta inti tmur lura għall- [spreadsheet ħajja](/mt/spreadsheet/), jittrattaw l-jinstab li jmiss bħala deċiżjoni ġdida. L-użu mill-ġdid ta' bejjiegħ jew ritratt tal-prodott familjari mhuwiex raġuni biex wieħed jaqbeż il-verifika tal-għażla. A handoff bir-reqqa jieħu ftit ħin u jippreserva d-dettalji li l-aktar kwistjoni.
+
+## Wara x-xogħlijiet rabta, track-xiri attwali
+
+Lista importata b'suċċess hija biss il-bidu. Ħlief il-link bejjiegħ oriġinali, għażla magħżula, kwantità u prezz aċċettat bir-referenza ordni. Jekk il-ħlas ikun pendenti, issolvi t-tranżazzjoni qabel ma toħloq ordni oħra għall-istess merkanzija. B'mod ieħor, l-importazzjonijiet b'rabta doppja jistgħu jagħmluha aktar diffiċli biex wieħed jgħid liema xiri għandu jipproċedi.
+
+Il [gwida dwar il-ħlas](/mt/articles/superbuy-payment-methods/) jispjega kif tista' tiġi traċċata tariffa minn fuq għal fuq u minn fuq l-ordni. Il [gwida dwar l-istatus tal-ordni](/mt/articles/superbuy-order-status/) jispjega l-istadji ta' wara tal-bejjiegħ u tal-maħżen. Meta tasal l-oġġett, qabbel l-evidenza tal-ispezzjoni tiegħek mal-ispeċifikazzjoni rreġistrata qabel ma tawtorizza l-ippakkjar internazzjonali.
 
 ## Referenzi uffiċjali
 

@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: sl
+modified: '2026-11-09'
 ---
 
 Po uradnem ceniku Superbuy ne zaračunava pristojbine za standardno storitev nakupa na platformah Taobao, Tmall, JD in 1688. Še vedno plačate blago, dostavo znotraj Kitajske, mednarodni prevoz in izbrane dodatne storitve. Druge nakupne storitve imajo lahko drugačne pristojbine, zato preverite stroške svojega naročila.
@@ -104,6 +105,12 @@ Preverite vsako plačilo, nadomestilo in končno prilagoditev stroškov ladijske
 Za paket, ki vsebuje več izdelkov, lahko za vašo primerjavo dodelite skupne stroške dostave. Navedite metodo, ki jo uporabljate: enake dodelitve stroškov, porazdelitve stroškov na podlagi teže ali drugega preglednega pristopa. Nobena od teh osebnih dodelitev ne spremeni dejanskega računa in vsak od njih odgovarja na nekoliko drugačno proračunsko vprašanje.
 
 Z rezultatom rekord naredi vaš naslednji nakup lažje načrtovati. To kaže, kje so bile vaše predpostavke točne in kje so šibke, ne da bi se pretvarjali, da je ena pretekla parcela določila univerzalno stopnjo za prihodnje naročila.
+
+## Ločitev najema, plačila in končne prilagoditve
+
+Dodajanje sredstev na vaš račun in poraba teh sredstev za naročilo so različni podatki o istem denarju. Ne dodajte obeh kot ločenih nakupov v končnem proračunu. Ujemanje gibanja stanja z dejanskim naročilom ali pristojbino za pakete, nato pa evidentiranje kakršnega koli kasnejšega nadomestila oziroma prilagoditev ladijskega prometa v skladu s svojim sklicem.
+
+Uporabite [Vodnik za plačilne metode](/sl/articles/superbuy-payment-methods/) ko se pojavi kartica ali prenos. Za nepričakovano zahtevo za plačilo paketa preverite podrobno razlago z [Vodnik stanja naročila](/sl/articles/superbuy-order-status/). Potrdite, kaj je še potrebno pred ponovitvijo plačila; etiketa stanja samo ne more ugotoviti, da prvotna transakcija ni uspela.
 
 ## Uradna sklicevanja
 

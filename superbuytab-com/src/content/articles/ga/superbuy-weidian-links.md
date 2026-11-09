@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: ga
+modified: '2026-11-09'
 ---
 
 A cheannach ó Weidian le Superbuy, tús a chur leis an URL táirge bunaidh, é a oscailt i sreabhadh ceannaigh Superbuy agus an díoltóir, dath, méid agus méid a fhíorú. Íoc ach amháin tar éis na sonraí ordaithe soiléir; athbhreithniú a dhéanamh ar an bhfianaise stóras atá ar fáil roimh a shocrú seachadadh idirnáisiúnta.
@@ -84,6 +85,12 @@ Is féidir do thaifead a bheith chomh simplí leis an URL bunaidh, rogha roghnai
 Cabhraíonn an taifead seo freisin le saincheist mír a idirdhealú ó shaincheist loingseoireachta. Ba chóir athrú mícheart a phlé i gcoinne an t-ordú ceannaigh. Ba chóir fadhb rianaithe dáileachtaí a phlé i gcoinne an taifead dáileachta. Ag baint úsáide as an tagairt ceart laghdaíonn an seans tacaíocht a imscrúdú ar an gcéim mícheart.
 
 Nuair a fhilleann tú ar an [scarbhileog bheo](/ga/spreadsheet/), a chóireáil an chéad aimsiú eile mar chinneadh nua. Ní athúsáid díoltóir eolach nó grianghraf táirge ar chúis a scipeáil an seiceáil rogha. Bíonn láimhdeachas cúramach beagán ama agus caomhnaíonn na sonraí go ábhar an chuid is mó.
+
+## Tar éis oibríonn an nasc, rianaigh an ceannach iarbhír
+
+Níl liosta iompórtáilte ach an tosú. Sábháil an nasc díoltóir bunaidh, rogha roghnaithe, cainníocht agus praghas glactha leis an tagairt ordú. Má tá íocaíocht ar feitheamh, an t-idirbheart a réiteach sula gcruthaítear ordú eile do na hearraí céanna. Is féidir le hallmhairí nasc dúbailte a dhéanamh ar shlí eile níos deacra a insint cén ceannach ba chóir dul ar aghaidh.
+
+An [treoir maidir le híocaíocht](/ga/articles/superbuy-payment-methods/) Míníonn conas a rianú muirear breisithe agus ordú. An [treoraí stádais ordaithe](/ga/articles/superbuy-order-status/) Míníonn an díoltóir níos déanaí agus céimeanna stóras. Nuair a thagann an mhír, comparáid a dhéanamh idir d'fhianaise iniúchta féin leis an tsonraíocht taifeadta sula n-údaraítear pacáil idirnáisiúnta.
 
 ## tagairtí oifigiúla
 

@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: fi
+modified: '2026-11-09'
 ---
 
 Jos haluat ostaa Weidianilta Superbuyn, aloita alkuperäisestä tuotteen URL-osoitteesta, avaa se Superbuyn ostovirtaan ja varmista myyjän väri, koko ja määrä. Maksa vasta, kun tilaustiedot ovat selvillä; tarkista varaston todisteet ennen kansainvälisen toimituksen järjestämistä.
@@ -84,6 +85,12 @@ Rekisterisi voi olla yhtä yksinkertainen kuin alkuperäinen URL, valittu vaihto
 Tämä levy auttaa myös erottamaan esineen laivausongelmasta. Väärästä vaihtelusta tulisi keskustella ostomääräystä vastaan. Pakettien jäljitysongelmasta olisi keskusteltava pakettirekisteriä vastaan. Oikean viitteen käyttö vähentää tuen mahdollisuutta tutkia väärää vaihetta.
 
 Kun palaat.. [Suora laskentataulukko](/fi/spreadsheet/), kohtele seuraavaa löytöä uutena päätöksenä. Tutun myyjän tai tuotekuvan uudelleenkäyttö ei ole syy jättää vaihtoehtotarkistusta väliin. Huolellinen luovutus vie vain vähän aikaa ja säilyttää yksityiskohdat, joilla on eniten merkitystä.
+
+## Linkin teon jälkeen seuraa todellista ostosta
+
+Onnistunut tuontilistaus on vasta alkua. Tallenna alkuperäinen myyjän linkki, valittu vaihtoehto, määrä ja hyväksytty hinta tilauksen viite. Jos maksu on kesken, ratkaise tapahtuma ennen kuin teet toisen tilauksen samoille tavaroille. Kaksinkertaisen linkin tuonti voi muuten vaikeuttaa sen erottamista, minkä ostoksen pitäisi edetä.
+
+Erytropoietiini [maksuopas](/fi/articles/superbuy-payment-methods/) selittää, miten voi jäljittää lisämaksun ja tilauksen. Erytropoietiini [tilaustilaopas](/fi/articles/superbuy-order-status/) selittää myöhemmät myyjän ja varaston vaiheet. Kun tuote saapuu, vertaa omaa tarkastusnäyttöäsi tallennettuun eritelmään ennen kuin annat luvan kansainväliseen pakkaamiseen.
 
 ## Viralliset viitetiedot
 

@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: lt
+modified: '2026-11-09'
 ---
 
 Pagal oficialų kainoraštį Superbuy netaiko paslaugos mokesčio standartiniams pirkimams iš Taobao, Tmall, JD ir 1688. Tačiau reikia mokėti už prekes, pristatymą Kinijoje, tarptautinį siuntimą ir pasirinktas papildomas paslaugas. Kitoms pirkimo paslaugoms gali būti taikomi atskiri mokesčiai, todėl patikrinkite savo užsakymo išlaidų sąrašą.
@@ -104,6 +105,12 @@ Patikrinti kiekvieną mokėjimą, grąžinamąją išmoką ir galutinį vežimo 
 Jei siuntoje yra keli daiktai, galite paskirstyti pasidalijamojo vežimo išlaidas savo palyginimui. Nurodykite metodą, kurį naudojate: vienodas išlaidų paskirstymas, išlaidų paskirstymas pagal svorį ar kitą skaidrų metodą. Nė vienas iš šių asmeninių paskyrimų nepakeičia faktinės sąskaitos faktūros ir kiekvienas iš jų atsako į šiek tiek kitokį biudžeto sudarymo klausimą.
 
 Sukurtas įrašas leidžia jūsų kitą pirkinį lengviau planuoti. Tai rodo, kur jūsų prielaidos buvo tikslios ir kur jos buvo silpnos, neapsimetant, kad vienas praeities siuntinys nustato visuotinę normą būsimiems užsakymams.
+
+## Atskirti papildymą, mokėjimą ir galutinį patikslinimą
+
+Pridėti lėšas į savo sąskaitą ir išleisti šias lėšas į užsakymą yra skirtingi įrašai tų pačių pinigų. Nepridėkite tiek kaip atskiri pirkimai į savo galutinį biudžetą. Suderinkite balanso judėjimą su faktiniu užsakymo arba sklypo mokesčiu, tada įrašyti bet kurį vėlesnį grąžinamųjų išmokų ar laivybos koregavimas pagal savo nuorodą.
+
+Naudoti [mokėjimo būdai vadovas](/lt/articles/superbuy-payment-methods/) kai korta ar pervedimas nepavyksta. Netikėtai pateikus prašymą dėl mokėjimo siuntoje, [Užsakymų būklės vadovas](/lt/articles/superbuy-order-status/). Patvirtinti, kas liko mokėtina prieš kartojant mokėjimą; būsenos ženklas vienas negali įrodyti, kad pradinis sandoris nepavyko.
 
 ## Oficialios nuorodos
 

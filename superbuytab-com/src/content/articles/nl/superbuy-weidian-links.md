@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: nl
+modified: '2026-11-09'
 ---
 
 Om te kopen van Weidian met Superbuy, start met de originele product URL, open het in Superbuy's aankoopstroom en controleer de verkoper, kleur, grootte en hoeveelheid. Betaal pas nadat de details van de bestelling duidelijk zijn; bekijk het beschikbare magazijnbewijs voordat u internationale levering regelt.
@@ -84,6 +85,12 @@ Uw record kan zo eenvoudig zijn als de originele URL, geselecteerde optie, beste
 Deze record helpt ook om een item probleem te onderscheiden van een scheepvaart probleem. Een verkeerde variatie moet worden besproken tegen de inkooporder. Een probleem met het volgen van pakketten moet worden besproken tegen het pakketrecord. Met behulp van de juiste referentie vermindert de kans op steun het onderzoeken van de verkeerde fase.
 
 Als je terugkomt naar het [live spreadsheet](/nl/spreadsheet/), behandel de volgende vondst als een nieuwe beslissing. Hergebruik van een bekende verkoper of productfoto is geen reden om de optie check over te slaan. Een zorgvuldige overdracht kost weinig tijd en behoudt de details die het belangrijkst zijn.
+
+## Na de link werkt, volg de werkelijke aankoop
+
+Een succesvol geïmporteerde lijst is slechts het begin. Sla de oorspronkelijke verkoper link, gekozen optie, hoeveelheid en geaccepteerde prijs met de bestelling referentie. Indien een betaling in behandeling is, lost u de transactie op voordat u een andere bestelling voor dezelfde goederen aanmaakt. Dubbele koppeling import kan anders maken het moeilijker om te zeggen welke aankoop moet doorgaan.
+
+De [betaalgids](/nl/articles/superbuy-payment-methods/) legt uit hoe je een up-up en bestellading kunt traceren. De [status-handleiding bestellen](/nl/articles/superbuy-order-status/) legt de latere verkoper en magazijn stadia. Wanneer het item aankomt, vergelijk uw eigen inspectie bewijs met de geregistreerde specificatie voordat toestemming internationale verpakking.
 
 ## Officiële referenties
 

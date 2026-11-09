@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: fi
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Kun asia on ratkaistu, kirjaa tulos ja kaikki siihen liittyvät rahoitusoikaisut
 Valmistuneet tietosi voivat auttaa sinua suunnittelemaan tulevia ostoksia ja tunnistamaan, mitä kysymyksiä voit kysyä aiemmin. Ne eivät määrää reitille pysyvää kauttakulkuaikaa eivätkä takaa, että tuleva paketti täyttää samat ehdot.
 
 Luotettavin jäljitystapa on yksinkertainen: tunnistetaan lähetys, käytetään sen virallisia viitetietoja, säilytetään merkitykselliset tapahtumat ja esitetään erityinen kysymys, kun todisteet ovat epäselviä. Tämä menetelmä on hyödyllinen myös silloin, kun rahdinkuljettaja, määränpää tai pakettien sisältö vaihtuu.
+
+## Onko jäljitysnumeroa vielä? Tarkista, onko paketti olemassa
+
+Myyjältä ostettu tuote ja toimitettu kansainvälinen paketti ovat eri tietueita. Ennen kuin etsit rahdinkuljettajan luotauksia, varmista, että tavarat ovat saapuneet varastoon, että olet toimittanut paketin ja että vaaditut maksu- ja pakkausvaiheet ovat valmiit. Myyjän kotimainen seurantanumero ei kuvaa myöhempää kansainvälistä matkaa.
+
+Käytä [tilaustilaopas](/fi/articles/superbuy-order-status/) vireillä olevat ostokset, varaston otto tai lastaamattomat paketit. Käytä [maksuopas](/fi/articles/superbuy-payment-methods/) jos laivamaksu jää selvittämättä. Kun paketti on lähetetty, palaa liikenteenharjoittajan historiaan ja säilytä viimeisin tapahtuma ja viite mahdollisiin tiedusteluihin.
 
 ## Viralliset viitetiedot
 

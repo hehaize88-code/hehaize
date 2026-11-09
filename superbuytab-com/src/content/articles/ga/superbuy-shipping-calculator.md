@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: ga
+modified: '2026-11-09'
 ---
 
 Chun meastachán a dhéanamh loingseoireachta Superbuy, an t-áireamhán oifigiúil a oscailt, roghnaigh an ceann scríbe agus stóras, dul isteach meáchan i gramanna agus toisí dáileachta seachtracha i gceintiméadair, ansin roghnaigh an chatagóir mír iarbhír. Déan comparáid idir na bealaí incháilithe ag baint úsáide as na hionchuir chéanna sin agus sábháil an toradh leis an dáta agus na tomhais.
@@ -92,6 +93,12 @@ Roghnaigh i measc roghanna a bhaineann go fírinneach le do dáileacht. Déan co
 Coinnigh plean aiseolas má dhéanann na tomhais deiridh do bhealach is fearr nach bhfuil ar fáil. D'fhéadfadh sé sin a chiallaíonn athrú ar an ngrúpáil, mír nonessential a chur siar nó comhairle a lorg maidir le seirbhís incháilithe eile. Cinneadh bunaithe ar fhaisnéis dheimhnithe seachas forcing an dáileacht a resemble do chéad mheastachán.
 
 Oscail an [oifigiúil Superbuy áireamhán loingseoireachta](https://www.superbuy.com/en/page/query/freight/) nuair a bhíonn tú réidh chun do chuid faisnéise féin a iontráil i gcomparáid. Bain úsáid as ár [Treoir maidir le táillí](/ga/articles/superbuy-fees/) an toradh a chur laistigh den bhuiséad ceannaigh iomlán.
+
+## Déan an meastachán in-atáirgthe roimh phraghsanna comparáide
+
+Coinnigh taifead dátaithe ar an gceann scríbe, catagóirí mír, toisí pacáilte, meáchan scála agus seirbhís roghnaithe. Déan comparáid idir roghanna eile ag baint úsáide as na hionchuir chéanna. Má athraíonn baint bosca na toisí, taifeadtar an dara cás in áit an bhunaidh go ciúin. Ansin, comparáid a dhéanamh leis an bpraghas iomlán seirbhíse agus leis na muirir atá air san áireamh, ní hamháin an príomhráta.
+
+Le haghaidh ceann scríbe Polannach, bain úsáid as an [Seicliosta loingseoireachta na Polainne](/ga/articles/superbuy-shipping-to-poland/). Nuair a chuireann tú beartán, an [treoraí stádais ordaithe](/ga/articles/superbuy-order-status/) Cuidíonn idirdhealú a dhéanamh idir íocaíocht loingseoireachta ó phacáil agus láimhseáil iompróra. Ní chiallaíonn toradh áireamháin go bhfuil dáileacht curtha in áirithe nó seolta.
 
 ## tagairtí oifigiúla
 

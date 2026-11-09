@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: es
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Una vez resuelto el asunto, registre el resultado y cualquier ajuste financiero 
 Sus registros completados pueden ayudarle a planificar futuras compras e identificar qué preguntas hacer antes. No establecen un tiempo de tránsito permanente para una ruta ni garantizan que un paquete futuro se encuentre con las mismas condiciones.
 
 El hábito de seguimiento más fiable es sencillo: identificar el envío, utilizar sus referencias oficiales, preservar los eventos relevantes y hacer una pregunta específica cuando la evidencia no está clara. Este método sigue siendo útil incluso cuando el porteador, el destino o el contenido del paquete cambian.
+
+## ¿Aún no hay número de rastreo? Compruebe si existe un paquete
+
+Un artículo comprado a un vendedor y un paquete internacional presentado son registros diferentes. Antes de buscar los escaneos del portador, confirme que las mercancías han llegado al almacén, que usted ha enviado un paquete y que los pasos de pago y embalaje requeridos están completos. El número de seguimiento interno de un vendedor no describe el viaje internacional posterior.
+
+Utilice el [guía de estado del pedido](/es/articles/superbuy-order-status/) para las compras pendientes, admisión en almacén o paquetes no expedidos. Utilice el [guía de pago](/es/articles/superbuy-payment-methods/) si un cargo de envío sigue sin resolverse. Una vez enviado el paquete, vuelva al historial del transportista y conserve el último evento y referencia para cualquier consulta.
 
 ## Referencias oficiales
 

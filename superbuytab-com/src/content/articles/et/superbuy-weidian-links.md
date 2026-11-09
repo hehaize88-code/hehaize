@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: et
+modified: '2026-11-09'
 ---
 
 Et osta Weidian Superbuy, alustada originaal toote URL, avada see Superbuy ostuvoog ja kontrollida müüja, värvi, suurus ja kogus. Maksa alles siis, kui tellimuse üksikasjad on selged; vaata olemasolevad laotõendid üle enne rahvusvahelise tarne korraldamist.
@@ -84,6 +85,12 @@ Sinu rekord võib olla sama lihtne kui algne URL, valitud valik, tellimuse viide
 See rekord aitab eristada kauba emissioon laevanduse küsimus. Ostutellimuse suhtes tuleks arutada valet varieerumist. Pakkide jälgimise probleemi tuleks arutada postipakkide registriga. Õige viite kasutamine vähendab võimalust toetada vale etapi uurimist.
 
 Kui sa naased [elusad tabelid](/et/spreadsheet/), käsitleda järgmist leida uue otsuse. Tutvunud müüja või tootefoto taaskasutamine ei ole põhjus valiku kontrolli vahele jätmiseks. Hoolikas kätteandmine võtab vähe aega ja säilitab kõige tähtsamad üksikasjad.
+
+## Pärast link töötab, jälgida tegelikku ostu
+
+Edukalt imporditud nimekiri on alles algus. Salvestage algne müüja link, valitud valik, kogus ja aktsepteeritud hind koos tellimuse viide. Kui makse on pooleli, siis lahendage tehing enne sama kauba teise tellimuse tegemist. Kahekordistada link import võib muidu raskendada öelda, milline ost peaks jätkuma.
+
+{y:bi} [maksejuhis](/et/articles/superbuy-payment-methods/) selgitab, kuidas jälgida lisa- ja tellimistasu. {y:bi} [tellimuse oleku juhend](/et/articles/superbuy-order-status/) selgitab hilisemaid müüja ja lao etappe. Kui toode saabub, võrdlege enne rahvusvahelisele pakendile loa andmist oma kontrollitõendeid salvestatud spetsifikatsiooniga.
 
 ## Ametlikud viited
 

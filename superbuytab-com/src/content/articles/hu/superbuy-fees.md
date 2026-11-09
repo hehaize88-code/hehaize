@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: hu
+modified: '2026-11-09'
 ---
 
 A hivatalos díjtáblázat szerint a Superbuy nem számít fel szolgáltatási díjat a Taobao, Tmall, JD és 1688 oldalakon végzett szokásos vásárlásokért. A termékekért, a kínai belföldi szállításért, a nemzetközi szállításért és a választott kiegészítő szolgáltatásokért azonban fizetni kell. Más beszerzési szolgáltatások díja eltérhet, ezért ellenőrizd a saját rendelésed költségeit.
@@ -104,6 +105,12 @@ Ellenőrizze minden kifizetést, visszatérítést és a szállítási költség
 Egy csomag, amely több elemet tartalmaz, lehet osztani megosztott szállítási költségek a saját összehasonlítás. Adja meg az Ön által alkalmazott módszert: egyenlő költségelosztás, súlyon vagy más átlátható megközelítésen alapuló költségelosztás. Ezek közül egyik sem változtatja meg a tényleges számlát, és mindegyik egy kissé eltérő költségvetési kérdésre válaszol.
 
 Az így kapott rekord megkönnyíti a következő vásárlás tervezését. Megmutatja, hogy hol voltak a feltételezéseid pontosak és hol voltak gyengék, anélkül, hogy úgy tettél volna, mintha egy korábbi csomag univerzális arányt állapítana meg a jövőbeli megrendelésekre.
+
+## Válassza el a feltöltést, a kifizetést és a végső kiigazítást
+
+Pénzt hozzáadni a számládhoz, és azokat a pénzeket megrendelésre költeni különböző rekordok ugyanarról a pénzről. Ne add hozzá mindkettő külön vásárlások a végső költségvetés. Egyeztesse a mérlegmozgást a tényleges megrendelési vagy csomagdíjjal, majd rögzítse a későbbi visszatérítést vagy szállítási kiigazítást a saját referenciájával szemben.
+
+Használja a [fizetési módszerek útmutatója](/hu/articles/superbuy-payment-methods/) ha egy kártya vagy átutalás folyamatban van. Egy váratlan csomagfizetési kérelem esetén ellenőrizze a részletes magyarázatot a [Rendelési állapot útmutató](/hu/articles/superbuy-order-status/). Erősítse meg, hogy mi marad még hátra a fizetés megismétlése előtt; egy státuszcímke önmagában nem tudja megállapítani, hogy az eredeti tranzakció meghiúsult.
 
 ## Hivatalos hivatkozások
 

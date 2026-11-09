@@ -48,3 +48,10 @@ Draft translations used the same offline OPUS-MT / CTranslate2 workflow describe
 Search titles were edited separately in each language. Translation review included recurring delivery/package terminology, reference labels, source-block parity, internal link localization, and all numeric facts. The UK threshold was checked against the English source in every translation. Avoid claiming native-speaker review: these are machine-assisted translations with editorial checks.
 
 Final 2026-10-28 review additionally rewrote 230 section headings and the volumetric-weight explanation across all 23 translated locales, correcting light/illumination, parcel/land and returns ambiguities. Production verification matched all 408 article bodies against the checked source build.
+
+
+## 2026-11-09 release
+
+Three new complete topics and four matching article additions were prepared for all 24 locales: 480 complete articles, 20 topics per language. New English articles contain 1,367–1,413 words under the repository word-count rule. Translation drafts used the existing offline OPUS-MT/CTranslate2 approach; models and authoring scripts are not build dependencies or deployed assets. All 69 translated titles and descriptions were edited individually. Review corrected 184 ambiguous section headings, provider names such as Wise, malformed short fragments, and the Polish 1688 introduction. All source paragraphs, numerical facts, tables, official references and localized internal destinations are checked structurally. This is machine-assisted translation with targeted editorial review, not independent native-language certification.
+
+Existing policy-check dates remain intact when only editorial links and examples change. A separate modified field now records editorial changes for Article schema and per-locale sitemap dates. New content is dated 2026-11-09.

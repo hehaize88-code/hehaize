@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: nl
+modified: '2026-11-09'
 ---
 
 Volgens de officiële tariefpagina rekent Superbuy geen servicekosten voor standaardinkopen op Taobao, Tmall, JD en 1688. Je betaalt wel voor de producten, eventuele binnenlandse bezorging in China, internationale verzending en optionele diensten. Voor andere inkoopdiensten kunnen afzonderlijke kosten gelden; controleer daarom de kosten van je eigen bestelling.
@@ -104,6 +105,12 @@ Controleer elke betaling, terugbetaling en definitieve verzendkosten aanpassing 
 Voor een pakket met verschillende items, kunt u gedeelde verzendkosten toewijzen voor uw eigen vergelijking. Vermeld de methode die u gebruikt: gelijke kostentoewijzingen, kostentoewijzing op basis van gewicht of een andere transparante benadering. Geen van deze persoonlijke toewijzingen verandert de werkelijke factuur, en elk beantwoordt een iets andere budgetteringsvraag.
 
 De resulterende plaat maakt uw volgende aankoop gemakkelijker te plannen. Het laat zien waar uw veronderstellingen accuraat waren en waar ze zwak waren, zonder te doen alsof een pakket uit het verleden een universeel tarief voor toekomstige bestellingen vaststelt.
+
+## Scheid een aanvulling, een betaling en een laatste aanpassing
+
+Het toevoegen van fondsen aan uw account en het uitgeven van die fondsen op een bestelling zijn verschillende records van hetzelfde geld. Voeg niet beide als afzonderlijke aankopen toe in uw uiteindelijke budget. Pas de balansbeweging aan de werkelijke bestelling of pakketlading aan, noteer dan eventuele latere terugbetaling of verzendaanpassingen aan de hand van zijn eigen referentie.
+
+Gebruik de [Gids voor betaalmethoden](/nl/articles/superbuy-payment-methods/) wanneer een kaart of overdracht in behandeling is. Voor een onverwacht verzoek om pakketbetaling, controleer de gedetailleerde uitleg met de [status-handleiding bestellen](/nl/articles/superbuy-order-status/). Bevestigen wat nog verschuldigd is voordat een betaling wordt herhaald; een statuslabel alleen kan niet aantonen dat de oorspronkelijke transactie mislukt is.
 
 ## Officiële referenties
 

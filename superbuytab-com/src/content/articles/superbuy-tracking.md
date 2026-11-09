@@ -6,6 +6,7 @@ topic: Delivery
 keyword: superbuy tracking
 order: 10
 checked: "2026-10-19"
+modified: '2026-11-09'
 ---
 
 A Superbuy purchase can involve more than one shipment. The seller's delivery to a warehouse and the later international parcel are separate movements, and they may have different references. Confusing them can make a perfectly real tracking update appear to describe the wrong journey.
@@ -88,6 +89,12 @@ Once the matter is resolved, record the outcome and any related financial adjust
 Your completed records can help you plan future purchases and identify which questions to ask earlier. They do not establish a permanent transit time for a route or guarantee that a future parcel will encounter the same conditions.
 
 The most reliable tracking habit is straightforward: identify the shipment, use its official references, preserve the relevant events and ask a specific question when the evidence is unclear. That method remains useful even when the carrier, destination or parcel contents change.
+
+## No tracking number yet? Check whether a parcel exists
+
+An item purchased from a seller and a submitted international parcel are different records. Before looking for carrier scans, confirm that the goods have reached the warehouse, that you have submitted a parcel and that the required payment and packing steps are complete. A seller's domestic tracking number does not describe the later international journey.
+
+Use the [order status guide](/articles/superbuy-order-status/) for pending purchases, warehouse intake or unshipped parcels. Use the [payment guide](/articles/superbuy-payment-methods/) if a shipping charge remains unresolved. Once the parcel is dispatched, return to the carrier history and preserve the latest event and reference for any enquiry.
 
 ## Official references
 

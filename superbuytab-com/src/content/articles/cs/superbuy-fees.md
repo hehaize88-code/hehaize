@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: cs
+modified: '2026-11-09'
 ---
 
 Podle oficiálního ceníku Superbuy neúčtuje servisní poplatek za standardní nákupy na Taobao, Tmall, JD a 1688. Stále však platíte za zboží, dopravu v Číně, mezinárodní přepravu a zvolené doplňkové služby. Jiné nákupní služby mohou mít vlastní poplatky, proto si ověřte rozpis nákladů své objednávky.
@@ -104,6 +105,12 @@ Ověřte si každou platbu, vrácení a konečnou úpravu nákladů na dopravu v
 Pro balík obsahující několik položek, můžete přidělit sdílené přepravní náklady pro vaše vlastní srovnání. Uveďte metodu, kterou používáte: stejné rozdělení nákladů, rozdělení nákladů na základě hmotnosti nebo jiného transparentního přístupu. Žádný z těchto osobních přídělů nemění skutečnou fakturu a každý z nich odpovídá na poněkud jinou rozpočtovou otázku.
 
 Výsledný záznam usnadňuje plánování dalšího nákupu. Ukazuje, kde byly vaše předpoklady přesné a kde byly slabé, aniž by předstíral, že jeden minulý balík stanoví univerzální sazbu pro budoucí objednávky.
+
+## Oddělit zálohu, platbu a konečnou úpravu
+
+Přidání finančních prostředků na váš účet a utrácení těchto fondů na objednávku jsou různé záznamy o stejných penězích. Nepřidávejte oba jako samostatné nákupy ve svém konečném rozpočtu. Shodovat pohyb zůstatku s aktuální objednávkou nebo balíkem poplatku, pak zaznamenat jakoukoli pozdější vrácení nebo úpravu lodní oproti jeho vlastní odkaz.
+
+Použijte [příručka pro platební metody](/cs/articles/superbuy-payment-methods/) pokud se karta nebo převod objeví probíhá. Pro nečekanou žádost o platbu balíku zkontrolujte podrobné vysvětlení [průvodce stavem objednávky](/cs/articles/superbuy-order-status/). Potvrďte, co zůstává splatné před opakováním platby; samotný etiketa stavu nemůže prokázat, že původní transakce selhala.
 
 ## Úřední reference
 

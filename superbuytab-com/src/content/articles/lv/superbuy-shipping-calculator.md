@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: lv
+modified: '2026-11-09'
 ---
 
 Lai novērtētu Superbuy kuģniecību, atvērt oficiālo kalkulatoru, izvēlēties galamērķi un noliktavu, ievadīt svaru gramos un ārējo paku izmēri centimetros, tad izvēlieties faktisko preces kategoriju. Salīdziniet atbilstīgos maršrutus, izmantojot tos pašus datus, un ietaupiet rezultātu ar datumu un mērījumiem.
@@ -92,6 +93,12 @@ Izvēlieties vienu no iespējām, kas tiešām attiecas uz jūsu paku. Salīdzin
 Paturēt rezerves plānu, ja galīgie mērījumi padara jūsu vēlamo maršrutu nepieejamu. Tas varētu nozīmēt grupu maiņu, nebūtisku priekšmetu atlikšanu vai padomu par citu attaisnotu pakalpojumu meklēšanu. Nolēmiet, pamatojoties uz apstiprinātu informāciju, nevis piespiežot sūtījumu līdzināties jūsu pirmajai aplēsei.
 
 Atver [oficiālais Superbuy kuģniecības kalkulators](https://www.superbuy.com/en/page/query/freight/) ja esat gatavs salīdzināt ievadīto informāciju. Izmantojiet mūsu [maksu rokasgrāmata](/lv/articles/superbuy-fees/) ievietot rezultātu pilnajā pirkuma budžetā.
+
+## Pirms cenu salīdzināšanas veikt aprēķinu reproducējamību
+
+Datētu informāciju par galamērķi, preču kategorijām, iepakotiem izmēriem, svaru un izvēlēto pakalpojumu. Salīdziniet alternatīvas, izmantojot tās pašas izejvielas. Ja izņem kasti maina izmērus, ieraksta otru scenāriju, nevis klusi aizstāj oriģinālo. Tad salīdzināt pilnu pakalpojumu cenu un tās iekļautās maksas, ne tikai nominālo likmi.
+
+Poļu galamērķim [Polija kuģniecības kontrolsaraksts](/lv/articles/superbuy-shipping-to-poland/). Iesniedzot sūtījumu, [Rīkojuma statusa rokasgrāmata](/lv/articles/superbuy-order-status/) palīdz atšķirt kuģniecības maksājumu no iepakojuma un pārvadātāja nodošanas. Aprēķina rezultāts nenozīmē, ka paka ir rezervēta vai nosūtīta.
 
 ## Oficiālās atsauces
 

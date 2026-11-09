@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: mt
+modified: '2026-11-09'
 ---
 
 Biex tagħmel stima tbaħħir Superbuy, tiftaħ il-kalkolatur uffiċjali, tagħżel id-destinazzjoni u l-maħżen, daħħal il-piż fi grammi u d-dimensjonijiet tal-pakkett ta 'barra f'ċentimetri, imbagħad jagħżlu l-kategorija tal-oġġett attwali. Qabbel ir-rotot eliġibbli bl-użu ta' dawk l-istess inputs u iffranka r-riżultat mad-data u l-kejl.
@@ -92,6 +93,12 @@ Agħżel fost l-għażliet li ġenwinament japplikaw għall-pakkett tiegħek. Qa
 Żomm pjan lura jekk il-kejl finali jagħmel ir-rotta preferuta tiegħek mhux disponibbli. Dan jista' jfisser bidla fil-grupp, posponiment ta' oġġett mhux essenzjali jew it-tiftix ta' pariri dwar servizz eliġibbli ieħor. Iddeċiedi abbażi ta' informazzjoni kkonfermata minflok ma tisforza l-pakkett biex jixbah l-ewwel stima tiegħek.
 
 Iftaħ il - fuljett [il-kalkolatur uffiċjali tat-tbaħħir Superbuy](https://www.superbuy.com/en/page/query/freight/) meta tkun lest li tqabbel l-informazzjoni tiegħek stess imdaħħla. Uża tagħna [gwida dwar it-tariffi](/mt/articles/superbuy-fees/) li tqiegħed ir-riżultat fil-baġit sħiħ tax-xiri.
+
+## Agħmel l-istima riproduċibbli qabel tqabbel il-prezzijiet
+
+Żomm rekord bid-data tad-destinazzjoni, il-kategoriji tal-oġġetti, id-dimensjonijiet ippakkjati, il-piż tal-iskala u s-servizz magħżul. Qabbel alternattivi li jużaw l-istess inputs. Jekk tneħħi kaxxa tbiddel id-dimensjonijiet, irreġistra t-tieni xenarju aktar milli sieket tissostitwixxi l-oriġinal. Imbagħad qabbel il-prezz tas-servizz sħiħ u l-imposti inklużi tiegħu, mhux biss ir-rata nominali.
+
+Għal destinazzjoni Pollakka, uża [Lista ta' kontroll tat-trasport bil-baħar fil-Polonja](/mt/articles/superbuy-shipping-to-poland/). Ladarba inti tissottometti pakkett, il- [gwida dwar l-istatus tal-ordni](/mt/articles/superbuy-order-status/) jgħin biex issir distinzjoni bejn il-ħlas tat-trasport bil-baħar u l-ippakkjar u l-ġarr bil-baħar. Riżultat kalkulatur ma jfissirx li pakkett ġie rreġistrat jew mibgħut.
 
 ## Referenzi uffiċjali
 

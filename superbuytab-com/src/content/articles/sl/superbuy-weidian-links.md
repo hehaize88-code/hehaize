@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: sl
+modified: '2026-11-09'
 ---
 
 Če želite kupiti od Weidiana z Superbuy, začnite s prvotnim URL izdelka, ga odpreti v Superbay je nakupni tok in preverite prodajalca, barvo, velikost in količino. Plačilo šele po jasnem naročilu; pregledajte razpoložljive dokaze o skladiščih, preden uredite mednarodno dostavo.
@@ -84,6 +85,12 @@ Vaš zapis je lahko preprost kot prvotni URL, izbrana možnost, referenca naroč
 Ta evidenca prav tako pomaga razlikovati vprašanje predmeta od izdaje ladijskega prometa. Razpravljati bi bilo treba o napačni variaciji proti naročilnemu naročilu. O problemu sledenja paketov je treba razpravljati v nasprotju z evidenco paketov. Z uporabo pravilnega sklicevanja se zmanjša možnost, da se podpre preiskava napačne stopnje.
 
 Ko se vrneš v restavracijo [živa tabela](/sl/spreadsheet/)Naslednjo odločitev obravnavajte kot novo. Ponovna uporaba znanega prodajalca ali fotografije izdelka ni razlog, da preskočite preverjanje možnosti. Previdno oddajanje vzame malo časa in ohranja podrobnosti, ki so najbolj pomembne.
+
+## Po povezovanju sledite dejanskemu nakupu
+
+Uspešno uvožen seznam je šele začetek. Prihranite prvotno povezavo prodajalca, izbrano možnost, količino in sprejeta cena s sklicevanjem na naročilo. Če je plačilo v teku, poravnajte transakcijo pred pripravo drugega naročila za isto blago. Uvoz dvojnih povezav sicer lahko oteži določanje, kateri nakup bi moral potekati.
+
+Vprašanje [Vodnik za plačilo](/sl/articles/superbuy-payment-methods/) Pojasnjuje, kako izslediti naboj. Vprašanje [Vodnik stanja naročila](/sl/articles/superbuy-order-status/) pojasnjuje poznejše prodajne in skladiščne faze. Ob prihodu predmeta primerjajte lastne inšpekcijske dokaze z zabeleženo specifikacijo, preden odobrite mednarodno pakiranje.
 
 ## Uradna sklicevanja
 

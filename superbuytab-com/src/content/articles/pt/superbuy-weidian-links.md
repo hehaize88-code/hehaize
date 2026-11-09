@@ -7,6 +7,7 @@ keyword: how to buy from weidian with superbuy
 order: 2
 checked: '2026-10-28'
 lang: pt
+modified: '2026-11-09'
 ---
 
 Para comprar em Weidian com Superbuy, comece com a URL original do produto, abra-o no fluxo de compras da Superbuy e verifique o vendedor, cor, tamanho e quantidade. Pague apenas depois que os detalhes do pedido são claros; rever as provas disponíveis do armazém antes de organizar a entrega internacional.
@@ -84,6 +85,12 @@ Seu registro pode ser tão simples como o URL original, opção selecionada, ref
 Este registro também ajuda a distinguir uma questão do item de uma questão de transporte. Uma variação errada deve ser discutida contra a ordem de compra. Um problema de rastreamento de parcelas deve ser discutido contra o registro de parcelas. Usar a referência certa reduz a chance de apoio investigando o estágio errado.
 
 Quando você voltar para o [Folha de cálculo ao vivo](/pt/spreadsheet/), tratar o próximo encontrar como uma nova decisão. Reutilizar um vendedor familiar ou foto de produto não é uma razão para pular a opção check. Uma entrega cuidadosa leva pouco tempo e preserva os detalhes que mais importam.
+
+## Após o link funcionar, rastrear a compra real
+
+Uma listagem importada com sucesso é apenas o início. Salva o link original do vendedor, opção escolhida, quantidade e preço aceito com a referência do pedido. Se um pagamento estiver pendente, resolver a transação antes de criar outra ordem para os mesmos bens. Duplicar as importações de ligações pode, caso contrário, tornar mais difícil dizer qual compra deve prosseguir.
+
+Os [Guia de pagamento](/pt/articles/superbuy-payment-methods/) explica como rastrear uma carga suplementar e encomendar. Os [guia de estado da ordem](/pt/articles/superbuy-order-status/) explica as fases posteriores do vendedor e do armazém. Quando o item chegar, compare as suas próprias provas de inspeção com as especificações registradas antes de autorizar a embalagem internacional.
 
 ## Referências oficiais
 

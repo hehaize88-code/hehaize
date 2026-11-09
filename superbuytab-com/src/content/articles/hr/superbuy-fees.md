@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: hr
+modified: '2026-11-09'
 ---
 
 Prema službenom cjeniku Superbuy ne naplaćuje naknadu za standardnu uslugu kupnje na platformama Taobao, Tmall, JD i 1688. I dalje plaćate robu, domaću dostavu u Kini, međunarodnu dostavu i odabrane dodatne usluge. Drugi oblici kupnje mogu imati zasebne naknade, stoga provjerite troškove svoje konkretne narudžbe.
@@ -104,6 +105,12 @@ Provjerite svaku isplatu, povrat i završnu prilagodbu troškova prijevoza u odn
 Za paket koji sadrži nekoliko predmeta, možete dodijeliti zajedničke troškove dostave za vlastitu usporedbu. Navedite metodu koju koristite: jednaku raspodjelu troškova, raspodjela troškova na temelju težine ili drugog transparentnog pristupa. Nijedna od tih osobnih raspodjela ne mijenja stvarnu fakturu, a svaka odgovara na nešto drugačije pitanje proračuna.
 
 Rekord koji je rezultat čini vašu sljedeću kupovinu lakšim za planiranje. To pokazuje gdje su vaše pretpostavke bile točne i gdje su bile slabe, bez pretvaranja da je jedan prošli paket uspostavlja univerzalnu stopu za buduće narudžbe.
+
+## Odvojite nadogradnju, plaćanje i završnu prilagodbu
+
+Dodavanje sredstava na vaš račun i trošenje tih sredstava za narudžbu su različiti podaci o istom novcu. Nemojte dodati oboje kao odvojene kupnje u svom konačnom proračunu. Usporedi kretanje ravnoteže s stvarnim narudžbama ili paketima, a zatim zabilježi bilo koji kasniji povrat ili popravak prijevoza u odnosu na njezinu referentnu vrijednost.
+
+Koristi [Vodič za metode plaćanja](/hr/articles/superbuy-payment-methods/) kada se kartica ili transfer pojavi u tijeku. Za neočekivani zahtjev za uplatu paketa provjerite detaljno objašnjenje s [vodič za porudžbu](/hr/articles/superbuy-order-status/). Potvrdite što je potrebno prije ponavljanja uplate; samo oznaka statusa ne može utvrditi da originalna transakcija nije uspjela.
 
 ## Službene preporuke
 

@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: fi
+modified: '2026-11-09'
 ---
 
 Virallisen hinnaston mukaan Superbuy ei peri palvelumaksua tavanomaisista ostoista Taobaosta, Tmallista, JD:stä ja 1688:sta. Tuotteet, Kiinan sisäinen toimitus, kansainvälinen kuljetus ja valitut lisäpalvelut ovat silti maksullisia. Muilla ostopalveluilla voi olla omat maksunsa, joten tarkista oman tilauksesi kuluerittely.
@@ -104,6 +105,12 @@ Tarkista jokainen maksu-, palautus- ja lopullinen toimituskustannusten oikaisu s
 Useita eriä sisältävälle paketille voit jakaa jaetut lähetyskulut omaan vertailuusi. Kerro käyttämäsi menetelmä: yhtäläiset kustannusjaot, painoon perustuva kustannusjako tai muu läpinäkyvä lähestymistapa. Mikään näistä henkilökohtaisista määrärahoista ei muuta varsinaista laskua, ja jokainen vastaa hieman erilaiseen budjetointikysymykseen.
 
 Tuloksena oleva levy helpottaa seuraavan ostoksen suunnittelua. Se osoittaa, missä olettamuksesi olivat tarkkoja ja missä ne olivat heikkoja, teeskentelemättä, että yksi ohikulkenut paketti vahvistaa yleisen kurssin tuleville tilauksille.
+
+## Erota lisäosa, maksu ja lopullinen mukautus
+
+Rahan lisääminen tilillesi ja varojen käyttäminen tilaukseen ovat saman rahan eri tietueita. Älä lisää molempia erillisinä ostoina lopulliseen budjettiin. Massaa saldon liike todelliseen tilaukseen tai pakettimaksuun ja kirjaa sen jälkeen mahdolliset myöhemmät palautukset tai toimituskorjaukset sen omaan referenssiin.
+
+Käytä [maksutapaopas](/fi/articles/superbuy-payment-methods/) kun kortti tai siirto on vireillä. Jos haluat odottamattoman pakettimaksupyynnön, tarkista yksityiskohtaiset selvitykset [tilaustilaopas](/fi/articles/superbuy-order-status/). Vahvista, mitä jää jäljelle ennen kuin toistat maksua; pelkkä tilamerkintä ei voi osoittaa, että alkuperäinen tapahtuma olisi epäonnistunut.
 
 ## Viralliset viitetiedot
 

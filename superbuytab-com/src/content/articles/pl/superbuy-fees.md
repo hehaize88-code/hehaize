@@ -7,6 +7,7 @@ keyword: superbuy fees
 order: 3
 checked: '2026-10-28'
 lang: pl
+modified: '2026-11-09'
 ---
 
 Zgodnie z oficjalnym cennikiem Superbuy nie pobiera opłaty za standardową usługę zakupu na Taobao, Tmall, JD i 1688. Nadal płacisz za towary, dostawę krajową w Chinach, wysyłkę międzynarodową i wybrane usługi dodatkowe. Inne formy zakupu mogą mieć odrębne opłaty, dlatego sprawdź koszt swojej konkretnej usługi.
@@ -104,6 +105,12 @@ Sprawdź każdą płatność, zwrot kosztów końcowych i korektę kosztów żeg
 W przypadku paczki zawierającej kilka pozycji, można przypisać współdzielone koszty wysyłki na własne porównanie. Podaj metodę, którą używasz: równe przydziały kosztów, alokacje kosztów na podstawie wagi lub innego przejrzystego podejścia. Żadne z tych osobistych przydziałów nie zmienia rzeczywistej faktury, a każda odpowiada na nieco inne pytanie budżetowe.
 
 Wynika z tego, że kolejny zakup łatwiej będzie zaplanować. Pokazuje, gdzie twoje założenia były dokładne i gdzie były słabe, bez udawania, że jedna z poprzednich paczek ustala powszechną stawkę dla przyszłych zamówień.
+
+## Oddzielanie dopłat, płatności i ostatecznej korekty
+
+Dodawanie funduszy do konta i wydawanie tych funduszy na zamówienie to różne zapisy tych samych pieniędzy. Nie dodawać zarówno jako odrębne zakupy w ostatecznym budżecie. Porównać ruch salda do rzeczywistego zamówienia lub opłaty za przesyłkę, następnie zarejestrować ewentualne późniejsze korekty zwrotu lub wysyłki na własną stronę odniesienia.
+
+Użyj [przewodnik po metodach płatności](/pl/articles/superbuy-payment-methods/) jeżeli karta lub przeniesienie pojawiają się w toku. W przypadku nieoczekiwanego wniosku o płatność paczek należy sprawdzić szczegółowe wyjaśnienie za pomocą [przewodnik stanu zamówienia](/pl/articles/superbuy-order-status/). Potwierdź, co pozostaje należne przed powtórzeniem płatności; sama etykieta statusu nie może ustalić, że oryginalna transakcja nie powiodła się.
 
 ## Oficjalne odniesienia
 

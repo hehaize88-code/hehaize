@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: lt
+modified: '2026-11-09'
 ---
 
 Norėdami įvertinti Superbuy laivybą, atidaryti oficialų skaičiuoklę, pasirinkti paskirties ir sandėlio, įvesti svorį gramais ir išorinio siuntinio matmenys centimetrais, tada pasirinkti tikrąją prekių kategoriją. Palyginti reikalavimus atitinkančius maršrutus naudojant tuos pačius įvedinius ir išsaugoti rezultatą su data ir matavimais.
@@ -92,6 +93,12 @@ Pasirinkite vieną iš variantų, kuris iš tikrųjų tinka jūsų siuntui. Paly
 Laikykite atsarginį planą, jei atlikus galutinius matavimus Jūsų pasirinktas maršrutas bus nepasiekiamas. Tai gali reikšti, kad reikia keisti grupę, atidėti neesminį punktą arba ieškoti patarimų dėl kitos reikalavimus atitinkančios paslaugos. Nuspręskite remdamiesi patvirtinta informacija, o ne priversdami siuntinį panašus į pirmąjį įvertį.
 
 Atidaryk [Oficialus Superbuy laivybos skaičiuotuvas](https://www.superbuy.com/en/page/query/freight/) kai esate pasirengęs palyginti jūsų įvesties informaciją. Pasinaudok mumis [mokesčių vadovas](/lt/articles/superbuy-fees/) įterpti rezultatą į visą pirkimo biudžetą.
+
+## Prieš palyginant kainas padaryti įvertį atkuriamą
+
+Įrašykite paskirties vietą, prekių kategorijas, supakuotus matmenis, mastelio svorį ir pasirinktą paslaugą. Palyginti alternatyvas naudojant tas pačias žaliavas. Jei pašalinus langelį pasikeičia matmenys, įrašykite antrąjį scenarijų, o ne tyliai pakeiskite originalą. Tada palyginkite visą paslaugų kainą ir į ją įtrauktus mokesčius, o ne tik nominaliąją kainą.
+
+Jei paskirties šalis yra Lenkija, naudokite: [Lenkijos laivybos kontrolinis sąrašas](/lt/articles/superbuy-shipping-to-poland/). Kai tik pateikiate siuntinį, [Užsakymų būklės vadovas](/lt/articles/superbuy-order-status/) padeda atskirti vežimo mokestį nuo pakavimo ir vežėjo perleidimo. Skaičiavimo rezultatas nereiškia, kad siunta užsakyta ar išsiųsta.
 
 ## Oficialios nuorodos
 

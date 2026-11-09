@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: de
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Sobald die Angelegenheit gelöst ist, das Ergebnis und alle damit verbundenen fi
 Ihre abgeschlossenen Aufzeichnungen können Ihnen helfen, zukünftige Einkäufe zu planen und zu identifizieren, welche Fragen Sie früher stellen. Sie stellen keine permanente Transitzeit für eine Strecke fest oder garantieren, dass ein künftiges Paket dieselben Bedingungen erfüllt.
 
 Die zuverlässigste Tracking-Gewohnheit ist einfach: die Sendung identifizieren, ihre offiziellen Referenzen verwenden, die relevanten Ereignisse bewahren und eine spezifische Frage stellen, wenn die Beweise unklar sind. Diese Methode bleibt auch dann nützlich, wenn sich der Inhalt des Transporters, des Ziels oder des Pakets ändert.
+
+## Noch keine Tracking-Nummer? Prüfen, ob ein Paket existiert
+
+Ein von einem Verkäufer gekaufter Artikel und ein eingereichtes internationales Paket sind unterschiedliche Aufzeichnungen. Vor der Suche nach Carrier-Scans bestätigen Sie, dass die Ware das Lager erreicht hat, dass Sie ein Paket eingereicht haben und dass die erforderlichen Zahlungs- und Verpackungsschritte abgeschlossen sind. Die nationale Tracking-Nummer eines Verkäufers beschreibt nicht die spätere internationale Reise.
+
+Verwenden Sie die [Handbuch zum Auftragsstatus](/de/articles/superbuy-order-status/) bei ausstehenden Käufen, Lagereinnahme oder unverschifften Paketen. Verwenden Sie die [Zahlungsleitfaden](/de/articles/superbuy-payment-methods/) wenn eine Versandgebühr ungelöst bleibt. Sobald das Paket versandt wird, kehren Sie zur Geschichte des Frachtführers zurück und bewahren das neueste Ereignis und die Referenz für jede Anfrage auf.
 
 ## Offizielle Verweise
 

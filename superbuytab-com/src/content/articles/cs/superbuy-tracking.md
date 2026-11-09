@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: cs
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Jakmile je záležitost vyřešena, zaznamenejte výsledek a veškeré souvisej�
 Vaše vyplněné záznamy vám mohou pomoci naplánovat budoucí nákupy a určit, na které otázky se zeptat dříve. Nestanovují dobu trvalého průjezdu pro trasu nebo nezaručují, že budoucí balík bude splňovat stejné podmínky.
 
 Nejspolehlivější způsob sledování je jednoduchý: identifikovat zásilku, použít její oficiální reference, zachovat příslušné události a položit konkrétní otázku, když důkazy nejsou jasné. Tato metoda zůstává užitečná i v případě, že se obsah obalu, místa určení nebo balíku změní.
+
+## Zatím žádné sledovací číslo? Zkontrolujte, zda balíček existuje
+
+Zboží zakoupené od prodávajícího a odeslaný mezinárodní balík jsou různé záznamy. Před hledáním skenu dopravce potvrďte, že zboží dorazilo do skladu, že jste odeslali balíček a že požadované platební a balící kroky jsou kompletní. Číslo domácího sledování prodávajícího nepopisuje pozdější mezinárodní cestu.
+
+Použijte [průvodce stavem objednávky](/cs/articles/superbuy-order-status/) pro nevyřízené nákupy, příjem skladů nebo neposílané zásilky. Použijte [platební příručka](/cs/articles/superbuy-payment-methods/) v případě, že přepravní poplatek zůstane nevyřešen. Jakmile je zásilka odeslána, vraťte se do historie dopravce a zachraňte nejnovější událost a odkaz na jakýkoli dotaz.
 
 ## Úřední reference
 

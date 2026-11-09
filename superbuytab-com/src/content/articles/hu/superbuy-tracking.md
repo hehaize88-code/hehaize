@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: hu
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Miután az ügy megoldódott, rögzítse az eredményt és a kapcsolódó pénz�
 A kitöltött rekordok segíthetnek megtervezni a jövőbeli vásárlásokat, és azonosítani, hogy mely kérdéseket kell feltenni korábban. Nem határoznak meg állandó tranzitidőt egy útvonalra, illetve nem garantálják, hogy egy jövőbeli csomagnak ugyanilyen feltételekkel kell szembenéznie.
 
 A legmegbízhatóbb nyomkövetési szokás egyszerű: azonosítani a szállítmányt, használni a hivatalos referenciáit, megőrizni a releváns eseményeket, és feltenni egy konkrét kérdést, ha a bizonyíték nem tisztázott. Ez a módszer akkor is hasznos, ha a fuvarozó, a rendeltetési hely vagy a csomag tartalma megváltozik.
+
+## Nincs még nyomkövetési szám? Annak ellenőrzése, hogy létezik-e csomag
+
+Az eladótól vásárolt termék és a benyújtott nemzetközi csomag különböző rekordok. A szállítói szkennerek keresése előtt erősítse meg, hogy az áruk elérték a raktárt, hogy Ön csomagot nyújtott be, és hogy a szükséges fizetési és csomagolási lépések elkészültek. Az eladó belföldi nyomkövetési száma nem írja le a későbbi nemzetközi utazást.
+
+Használja a [Rendelési állapot útmutató](/hu/articles/superbuy-order-status/) a függőben lévő beszerzések, raktári átvétel vagy hajózatlan csomagok esetében. Használja a [fizetési útmutató](/hu/articles/superbuy-payment-methods/) ha a szállítási díj továbbra is megoldatlan. A csomag feladása után térjen vissza a fuvarozó történetébe, és őrizze meg a legutóbbi eseményt, valamint az esetleges vizsgálatokhoz való hivatkozást.
 
 ## Hivatalos hivatkozások
 

@@ -7,6 +7,7 @@ keyword: superbuy shipping calculator
 order: 4
 checked: '2026-10-28'
 lang: hu
+modified: '2026-11-09'
 ---
 
 A Superbuy szállítás becsléséhez nyissa meg a hivatalos számológépet, válassza ki a célállomást és a raktárat, adja meg a súlyt grammban és a külső csomagméreteket centiméterben, majd válassza ki a tényleges termékkategóriát. Hasonlítsa össze a támogatható útvonalakat ugyanazokkal az inputokkal, és mentse el az eredményt a dátummal és mérésekkel.
@@ -92,6 +93,12 @@ Válasszon olyan lehetőségek közül, amelyek valóban érvényesek a csomagra
 Tartsa meg a visszalépési tervet, ha a végső mérések miatt az előnyben részesített útvonal nem érhető el. Ez jelentheti az egyesülés megváltoztatását, a nem alapvető fontosságú napirendi pont elhalasztását vagy egy másik jogosult szolgálattal kapcsolatos tanácsadást. Döntse el a megerősített információk alapján ahelyett, hogy kényszerítené a csomagot, hogy hasonlítson az első becslés.
 
 Nyisd ki [hivatalos Superbuy szállítási kalkulátor](https://www.superbuy.com/en/page/query/freight/) ha készen áll összehasonlítani a saját adatait. Használd a miénket [díjútmutató](/hu/articles/superbuy-fees/) az eredménynek a teljes vásárlási költségvetésen belül kell lennie.
+
+## Az árak összehasonlítása előtt a becslés megismételhető
+
+A rendeltetési helyről, a termékkategóriákról, a csomagolt méretekről, a skálasúlyról és a kiválasztott szolgáltatásról keltezett nyilvántartást kell vezetni. Hasonlítsa össze az alternatívákat ugyanazokkal a bemenetekkel. Ha egy doboz eltávolítása megváltoztatja a méreteket, jegyezz fel egy második forgatókönyvet ahelyett, hogy csendesen helyettesítenéd az eredetit. Majd hasonlítsa össze a teljes szolgáltatási árat és annak díját, nem csak a főcímet.
+
+Lengyel úti célhoz használja a [Lengyelországi hajózási ellenőrzőlista](/hu/articles/superbuy-shipping-to-poland/). Ha egyszer beadsz egy csomagot, [Rendelési állapot útmutató](/hu/articles/superbuy-order-status/) segít megkülönböztetni a szállítási kifizetést a csomagolástól és a szállító átadásától. A kalkulátor eredménye nem jelenti azt, hogy a csomagot lefoglalták vagy feladták.
 
 ## Hivatalos hivatkozások
 

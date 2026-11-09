@@ -7,6 +7,7 @@ keyword: superbuy tracking
 order: 10
 checked: '2026-10-19'
 lang: nl
+modified: '2026-11-09'
 ---
 
 
@@ -90,6 +91,12 @@ Zodra de zaak is opgelost, registreert u het resultaat en elke gerelateerde fina
 Uw voltooide records kunnen u helpen bij het plannen van toekomstige aankopen en identificeren welke vragen u eerder moet stellen. Zij stellen geen permanente doorreistijd vast voor een route of garanderen niet dat een toekomstig pakket aan dezelfde voorwaarden zal voldoen.
 
 De meest betrouwbare tracking gewoonte is eenvoudig: de zending identificeren, de officiële referenties gebruiken, de relevante gebeurtenissen bewaren en een specifieke vraag stellen wanneer het bewijs onduidelijk is. Deze methode blijft nuttig, zelfs wanneer de drager, bestemming of pakketinhoud verandert.
+
+## Nog geen traceernummer? Controleren of een pakket bestaat
+
+Een item gekocht van een verkoper en een ingediend internationaal pakket zijn verschillende records. Voordat u op zoek bent naar carrierscans, bevestig dat de goederen het magazijn hebben bereikt, dat u een pakket hebt ingediend en dat de vereiste betaal- en pakstappen zijn voltooid. Het binnenlandse trackingnummer van een verkoper beschrijft de latere internationale reis niet.
+
+Gebruik de [status-handleiding bestellen](/nl/articles/superbuy-order-status/) voor lopende aankopen, opslag of niet-verscheepte pakketten. Gebruik de [betaalgids](/nl/articles/superbuy-payment-methods/) indien er nog geen verzendkosten zijn. Zodra het pakket is verzonden, keert u terug naar de carriergeschiedenis en bewaart u de laatste gebeurtenis en referentie voor elk onderzoek.
 
 ## Officiële referenties
 
