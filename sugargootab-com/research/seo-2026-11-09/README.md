@@ -46,4 +46,10 @@ The Czech guide explicitly avoids the outdated blanket claim that purchases belo
 
 Passed: content checks for 24 locales; 504 editorial routes; article counts, paragraphs, tables, related links, localized navigation, canonical and 25 alternates per page; 888 unique sitemap URLs; 26 pagination cases and source-failure handling; analytics event/privacy tests; parcel-calculation tests; production build and Wrangler deployment dry-run.
 
-Publication and live checks are recorded separately after the deployment completes.
+## Publication and live verification
+
+Application commit: `5b3649ee04039ee28a186d1769330f6269c31685`. Cloudflare Workers Build `76b54a53-f8a3-44fa-820f-4028e3f4cb45` completed successfully in 44 seconds; version prefix `a367fb3a`.
+
+Browser verification on the formal domain confirmed all 24 article indexes contain 19 articles with all three new localized links, self-canonical URLs and 25 alternates. Eight sampled article pages retain their complete expected paragraphs and sections. The live XML sitemap contains 888 URLs, including all 72 new localized article URLs. At 390px the clothing guide has no horizontal page overflow, compact initial chapters, and a working Expand all control. The viewport override was reset.
+
+Evidence: `live-verification.json` and `live-articles.png`. These are deployment and rendering checks; they do not claim Google/Bing submission, indexation or measured traffic uplift. GA4 key-event administration was not changed.
