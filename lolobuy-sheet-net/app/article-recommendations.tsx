@@ -7,7 +7,7 @@ import type { Locale } from "./translations";
 
 const groups = {
   featured: ["lolobuy-shipping-usa-guide", "lolobuy-shipping-uk-guide", "lolobuy-shoe-qc-checklist", "lolobuy-shoe-box-removal-guide"],
-  shipping: ["lolobuy-shipping-usa-guide", "lolobuy-shipping-uk-guide", "lolobuy-shoe-box-removal-guide", "lolobuy-shipping-calculator-guide"],
+  shipping: ["lolobuy-reduce-shipping-costs", "lolobuy-warehouse-storage-guide", "lolobuy-shipping-france-guide", "lolobuy-shipping-calculator-guide"],
   qc: ["lolobuy-shoe-qc-checklist", "lolobuy-size-conversion-guide", "lolobuy-qc-photos-guide", "lolobuy-shoe-box-removal-guide"],
 };
 const headings: Record<Locale, string> = {

@@ -69,29 +69,24 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/categories": {
     en: {
-      title: "LoloBuy Product Links by Category | 2026 Spreadsheet",
-      description:
-        "Browse shoes, hoodies, jackets and accessories through focused main-catalog category links.",
-    },
-    es: {
-      title: "Categorías de productos LoloBuy",
-      description:
-        "Explora calzado, sudaderas, chaquetas y accesorios mediante enlaces directos a las categorías del catálogo principal.",
+      title: "LoloBuy Spreadsheet Categories: Shoes, Clothing & QC",
+      description: "Browse LoloBuy product links for shoes, hoodies, jackets and accessories. Compare variants and use category-specific QC checks before ordering.",
     },
     de: {
-      title: "LoloBuy Produktkategorien",
-      description:
-        "Stöbere über gezielte Kategorien des Hauptkatalogs nach Schuhen, Hoodies, Jacken und Accessoires.",
+      title: "LoloBuy Kategorien: Schuhe, Kleidung und QC",
+      description: "Entdecke LoloBuy-Produktlinks für Schuhe, Hoodies, Jacken und Accessoires. Vergleiche Varianten und prüfe passende QC-Punkte vor der Bestellung.",
     },
     fr: {
-      title: "Liens LoloBuy 2026 : produits, catégories et QC",
-      description:
-        "Parcourez des liens LoloBuy pour chaussures, sweats, vestes et accessoires, puis vérifiez le produit et les photos QC.",
+      title: "Catégories LoloBuy : chaussures, vêtements et QC",
+      description: "Parcourez les liens LoloBuy pour chaussures, sweats, vestes et accessoires. Comparez les variantes et les contrôles QC utiles avant de commander.",
+    },
+    es: {
+      title: "Categorías LoloBuy: calzado, ropa y QC",
+      description: "Explora enlaces LoloBuy de calzado, sudaderas, chaquetas y accesorios. Compara variantes y comprueba el QC de cada categoría antes de comprar.",
     },
     it: {
-      title: "Categorie di prodotti LoloBuy",
-      description:
-        "Esplora scarpe, felpe, giacche e accessori tramite link mirati alle categorie del catalogo principale.",
+      title: "Categorie LoloBuy: scarpe, abbigliamento e QC",
+      description: "Esplora link LoloBuy per scarpe, felpe, giacche e accessori. Confronta le varianti e i controlli QC specifici prima di ordinare.",
     },
   },
   "/qc-guide": {
@@ -123,56 +118,46 @@ const routeSeo: Record<CorePath, Record<Locale, SeoCopy>> = {
   },
   "/shipping": {
     en: {
-      title: "LoloBuy Shipping Cost: Weight, Packing & Routes",
-      description:
-        "Compare LoloBuy shipping costs with packed weight, dimensions, route rules and USA/UK planning guides. Check your inputs before paying.",
-    },
-    es: {
-      title: "Coste de envío LoloBuy y planificación del paquete",
-      description:
-        "Comprende las variables del envío LoloBuy: rutas, peso real y volumétrico, consolidación y opciones de embalaje.",
+      title: "LoloBuy Shipping Cost: Estimate, Save & Track",
+      description: "Estimate LoloBuy shipping with packed weight and dimensions, compare routes, reduce unnecessary packaging and follow your parcel after dispatch.",
     },
     de: {
-      title: "LoloBuy Versandkosten und Paketplanung",
-      description:
-        "Verstehe LoloBuy-Versandfaktoren wie Routenlimits, tatsächliches und volumetrisches Gewicht, Konsolidierung und Verpackung.",
+      title: "LoloBuy Versandkosten: Berechnen, sparen und verfolgen",
+      description: "Prüfe LoloBuy-Versandkosten mit Packgewicht und Maßen, vergleiche Routen, reduziere unnötige Verpackung und verfolge dein Paket nach dem Versand.",
     },
     fr: {
-      title: "Coût de livraison LoloBuy et préparation du colis",
-      description:
-        "Comprenez les variables de livraison LoloBuy : limites de ligne, poids réel et volumétrique, consolidation et emballage.",
+      title: "Frais de livraison LoloBuy : calcul, économies et suivi",
+      description: "Estimez les frais LoloBuy avec poids et dimensions, comparez les lignes, réduisez l’emballage superflu et suivez votre colis après l’expédition.",
+    },
+    es: {
+      title: "Envío LoloBuy: calcular costes, ahorrar y hacer seguimiento",
+      description: "Estima el envío LoloBuy con peso y medidas, compara rutas, reduce embalaje innecesario y consulta el seguimiento de tu paquete tras el despacho.",
     },
     it: {
-      title: "Costi di spedizione LoloBuy e pianificazione del pacco",
-      description:
-        "Comprendi le variabili di spedizione LoloBuy: limiti delle linee, peso reale e volumetrico, consolidamento e imballaggio.",
+      title: "Spedizione LoloBuy: costi, risparmio e tracking",
+      description: "Stima i costi LoloBuy con peso e misure, confronta le linee, riduci imballaggi superflui e segui il pacco dopo la spedizione.",
     },
   },
   "/articles": {
     en: {
-      title: "LoloBuy Guides 2026: Links, QC, Sizing & Shipping",
-      description:
-        "Read evidence-led LoloBuy guides for product links, QC photos, sizing, fees, shipping estimates, reviews and order status.",
-    },
-    es: {
-      title: "Guías LoloBuy: hoja, QC y envío",
-      description:
-        "Lee guías verificadas sobre la hoja LoloBuy, QC y envío, centradas en decisiones reales de compra.",
+      title: "LoloBuy Guides: Shipping, Tracking, Refunds & QC",
+      description: "Explore 30 LoloBuy guides covering product links, QC, shipping costs, tracking, refunds, balance withdrawals and warehouse storage decisions.",
     },
     de: {
-      title: "LoloBuy Ratgeber: Spreadsheet, QC und Versand",
-      description:
-        "Lies geprüfte LoloBuy-Ratgeber zu Spreadsheet, QC und Versand, die sich an echten Kaufentscheidungen orientieren.",
+      title: "LoloBuy Ratgeber: Versand, Tracking, Erstattung und QC",
+      description: "Lies 30 LoloBuy-Ratgeber zu Produktlinks, QC, Versandkosten, Tracking, Erstattung, Guthabenauszahlung und Lagerfristen.",
     },
     fr: {
-      title: "Guides LoloBuy : tableur, QC et livraison",
-      description:
-        "Lisez des guides LoloBuy vérifiés sur le tableur, le QC et la livraison, conçus pour de vraies décisions d'achat.",
+      title: "Guides LoloBuy : livraison, suivi, remboursement et QC",
+      description: "Consultez 30 guides LoloBuy sur les liens produits, le QC, les frais, le suivi, les remboursements, le retrait du solde et le stockage.",
+    },
+    es: {
+      title: "Guías LoloBuy: envío, seguimiento, reembolsos y QC",
+      description: "Consulta 30 guías LoloBuy sobre enlaces, QC, costes de envío, seguimiento, reembolsos, retirada del saldo y almacenamiento.",
     },
     it: {
-      title: "Guide LoloBuy: foglio, QC e spedizione",
-      description:
-        "Leggi guide LoloBuy verificate su foglio, QC e spedizione, pensate per decisioni di acquisto reali.",
+      title: "Guide LoloBuy: spedizione, tracking, rimborsi e QC",
+      description: "Leggi 30 guide LoloBuy su link prodotti, QC, costi, tracking, rimborsi, prelievo del saldo e scadenze del magazzino.",
     },
   },
   "/faq": {

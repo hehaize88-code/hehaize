@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   >;
   const articleDates = contentDates.articles as Record<
     string,
-    { published: string; modified: string }
+    { published: string; modified: string; localeModified?: Record<string, string> }
   >;
   const trustDates = contentDates.trust as Record<string, string>;
 
@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articles.flatMap((article) =>
       (article.localized === false ? ["en"] as const : locales).map((locale) => ({
         url: absoluteUrl(localizedPath(locale, `/articles/${article.slug}`)),
-        lastModified: articleDates[article.slug].modified,
+        lastModified: articleDates[article.slug].localeModified?.[locale] ?? articleDates[article.slug].modified,
         alternates: {
           languages: articleLanguageAlternates(
             article.slug,

@@ -1,5 +1,6 @@
 import {improveArticle} from "./search-improvements";
 import growthArticles from "./growth-articles/en.json";
+import novemberArticles from "./november-articles/en.json";
 import contentDates from "./content-dates.json";
 import { priorityArticles } from "./priority-articles";
 import octoberArticles from "./october-articles.json";
@@ -1346,6 +1347,7 @@ const existingArticles: ArticleRecord[] = [
 type Revision = Partial<ArticleRecord> & { first?: string };
 
 export const articles: ArticleRecord[] = [
+  ...novemberArticles,
   ...growthArticles,
   ...octoberArticles,
   ...priorityArticles,

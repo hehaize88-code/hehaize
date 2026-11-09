@@ -5,6 +5,7 @@ import vm from 'node:vm';
 import worker from '../dist/client/_worker.js';
 const langs=['en','es','de','fr','it'];
 const data=Object.fromEntries(langs.map(l=>[l,JSON.parse(fs.readFileSync(new URL('../app/growth-articles/'+l+'.json',import.meta.url)))]));
+const november=JSON.parse(fs.readFileSync(new URL('../app/november-revisions.json',import.meta.url)));
 const old=JSON.parse(fs.readFileSync(new URL('../app/search-improvements.json',import.meta.url)));
 const origin='https://lolobuy-sheet.net';
 const env={ASSETS:{fetch:async()=>new Response('Not found',{status:404})}};
@@ -13,7 +14,7 @@ const escaped=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"'
 test('all 20 new articles render their complete language text, links and reciprocal metadata',async()=>{
  for(const l of langs)for(const a of data[l]){
   const p=(l==='en'?'':'/'+l)+'/articles/'+a.slug,h=await page(p);
-  assert.ok(h.includes('<h1>'+escaped(a.title)+'</h1>'),p+' heading');
+  assert.ok(h.includes('<h1>'+escaped(november[l][a.slug]?.title ?? a.title)+'</h1>'),p+' heading');
   assert.ok(h.includes('rel="canonical" href="'+origin+p+'"'),p+' canonical');
   for(const other of langs)assert.ok(h.includes('hrefLang="'+other+'"'),p+' alternate '+other);
   assert.ok(h.includes('hrefLang="x-default"'),p+' x-default');
@@ -21,18 +22,18 @@ test('all 20 new articles render their complete language text, links and recipro
   const header=h.match(/<header class="lolo-header"[\s\S]*?<\/header>/)[0];
   for(const other of langs)assert.ok(header.includes('href="'+(other==='en'?'':'/'+other)+'/articles/'+a.slug+'"'),p+' switch '+other);
   for(const section of a.sections){for(const paragraph of section.paragraphs)assert.ok(h.includes(escaped(paragraph)),p+' complete paragraph');for(const link of section.links??[])assert.ok(h.includes((l==='en'?'':'/'+l)+link.href.replace(/\/$/,'')),p+' internal link')}
-  assert.ok(h.includes('"dateModified":"2026-10-17"'),p+' modified date');
+  assert.ok(h.includes('"dateModified":"'+(november[l][a.slug]?'2026-11-09':'2026-10-17')+'"'),p+' modified date');
   assert.doesNotMatch(h,/<meta[^>]+name="codex-preview"/);
   if(/women|long-sleeve/.test(a.slug))assert.equal((h.match(/class="article-find-card"/g)||[]).length,3,p+' curated products');
  }
 });
-test('all five indexes expose 27 unique articles and the sitemap includes all new canonicals',async()=>{
+test('all five indexes expose 30 unique articles and the sitemap includes all new canonicals',async()=>{
  const sitemap=await(await worker.fetch(new Request(origin+'/editorial-sitemap.xml'),env,{})).text();
- for(const l of langs){const prefix=l==='en'?'':'/'+l,h=await page(prefix+'/articles');const matches=[...h.matchAll(/href="([^"#?]*\/articles\/[^"#?]+)"/g)].map(m=>m[1]);assert.equal(new Set(matches.filter(p=>p.startsWith(prefix+'/articles/'))).size,27,l+' index count');for(const a of data[l])assert.ok(sitemap.includes('<loc>'+origin+prefix+'/articles/'+a.slug+'</loc>'));}
- assert.equal((sitemap.match(/<url>/g)||[]).length,177);
+ for(const l of langs){const prefix=l==='en'?'':'/'+l,h=await page(prefix+'/articles');const matches=[...h.matchAll(/href="([^"#?]*\/articles\/[^"#?]+)"/g)].map(m=>m[1]);assert.equal(new Set(matches.filter(p=>p.startsWith(prefix+'/articles/'))).size,30,l+' index count');for(const a of data[l])assert.ok(sitemap.includes('<loc>'+origin+prefix+'/articles/'+a.slug+'</loc>'));}
+ assert.equal((sitemap.match(/<url>/g)||[]).length,192);
 });
 test('existing four priority articles receive the same substantive updates in every language',async()=>{
- for(const l of langs)for(const [slug,a]of Object.entries(old[l])){const p=(l==='en'?'':'/'+l)+'/articles/'+slug,h=await page(p);assert.ok(h.includes(escaped(a.standfirst)),p);for(const paragraph of a.section.paragraphs)assert.ok(h.includes(escaped(paragraph)),p+' new workflow');assert.equal((h.match(new RegExp(escaped(a.section.heading).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'g'))||[]).length>=2,true,p);}
+ for(const l of langs)for(const [slug,a]of Object.entries(old[l])){const p=(l==='en'?'':'/'+l)+'/articles/'+slug,h=await page(p);assert.ok(h.includes(escaped(november[l][slug]?.standfirst ?? a.standfirst)),p);for(const paragraph of a.section.paragraphs)assert.ok(h.includes(escaped(paragraph)),p+' new workflow');assert.equal((h.match(new RegExp(escaped(a.section.heading).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'g'))||[]).length>=2,true,p);}
 });
 test('shipping quick actions stay localized and the home header keeps all five choices',async()=>{
  for(const l of langs){const prefix=l==='en'?'':'/'+l,h=await page(prefix+'/shipping');assert.ok(h.includes('class="section-shell shipping-start"'));for(const slug of ['lolobuy-coupons-guide','lolobuy-order-tracking-guide','lolobuy-shipping-calculator-guide'])assert.ok(h.includes(prefix+'/articles/'+slug));}

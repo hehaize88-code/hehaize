@@ -58,7 +58,7 @@ const articleEntries = articleRecords.flatMap(([slug, article]) =>
       `/articles/${slug}`,
       article.localized !== false,
     ),
-    lastModified: article.modified,
+    lastModified: article.localeModified?.[locale] ?? article.modified,
   })),
 );
 const categoryEntries = categorySlugs.map((slug) => ({

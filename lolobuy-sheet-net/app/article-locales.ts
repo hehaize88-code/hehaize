@@ -3,6 +3,10 @@ import growthde from "./growth-articles/de.json";
 import growthes from "./growth-articles/es.json";
 import growthfr from "./growth-articles/fr.json";
 import growthit from "./growth-articles/it.json";
+import novemberde from "./november-articles/de.json";
+import novemberfr from "./november-articles/fr.json";
+import novemberes from "./november-articles/es.json";
+import novemberit from "./november-articles/it.json";
 import type { ArticleRecord } from "./article-data";
 import type { LocalizedLocale } from "./i18n";
 import type { Locale } from "./translations";
@@ -85,10 +89,10 @@ export function articleText(locale: Locale, key: string) {
 
 
 const fullArticles: Record<LocalizedLocale, Record<string, Partial<ArticleRecord>>> = {
- de: {...de, ...Object.fromEntries(growthde.map(a => [a.slug, a]))},
- es: {...es, ...Object.fromEntries(growthes.map(a => [a.slug, a]))},
- fr: {...fr, ...Object.fromEntries(growthfr.map(a => [a.slug, a]))},
- it: {...it, ...Object.fromEntries(growthit.map(a => [a.slug, a]))}
+ de: {...de, ...Object.fromEntries([...growthde, ...novemberde].map(a => [a.slug, a]))},
+ es: {...es, ...Object.fromEntries([...growthes, ...novemberes].map(a => [a.slug, a]))},
+ fr: {...fr, ...Object.fromEntries([...growthfr, ...novemberfr].map(a => [a.slug, a]))},
+ it: {...it, ...Object.fromEntries([...growthit, ...novemberit].map(a => [a.slug, a]))}
 };
 
 export function getLocalizedArticle(article: ArticleRecord, locale: Locale): ArticleRecord {

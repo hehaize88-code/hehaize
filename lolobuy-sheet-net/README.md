@@ -7,7 +7,7 @@ website with:
 
 - internal product and category pages using catalog data from `cnbuycha.com`;
 - LoloBuy spreadsheet, QC, shipping, and ordering guides;
-- 27 long-form articles in each of English, Spanish, German, French and Italian;
+- 30 articles in each of English, Spanish, German, French and Italian;
 - a fact-based FAQ;
 - English, Spanish, German, French, and Italian content and interface translations;
 - responsive desktop and compact mobile layouts;

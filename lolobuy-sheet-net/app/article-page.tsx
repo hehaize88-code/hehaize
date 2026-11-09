@@ -32,7 +32,7 @@ export function ArticlePage({
         (locale === "en" || candidate.localized !== false),
     )
     .sort((a, b) => {
-      const topic = /shipping|parcel|fees|box/.test(copy.slug) ? /shipping|parcel|fees|box/ : /qc|size|measurement/;
+      const topic = /refund|warehouse|risk|tracking/.test(copy.slug) ? /refund|warehouse|risk|tracking/ : /shipping|parcel|fees|box/.test(copy.slug) ? /shipping|parcel|fees|box/ : /qc|size|measurement/;
       return Number(topic.test(b.slug)) - Number(topic.test(a.slug));
     })
     .slice(0, 4)
@@ -225,7 +225,7 @@ export function ArticlePage({
                       ))}
                     </ul>
                   )}
-                  {section.links && <ul className="article-checklist">{section.links.map(link => <li key={link.href}><a href={localPath(link.href)} data-track-event="article_internal_click">{link.label} →</a></li>)}</ul>}
+                  {section.links && <ul className="article-checklist">{section.links.map(link => <li key={link.href}><a href={localPath(link.href)} data-track-event={link.href.startsWith("https://") ? "research_source_click" : "article_internal_click"}>{link.label} →</a></li>)}</ul>}
                   {section.note && (
                     <aside className="calculation-note">
                       <strong>{articleText(locale, "Worked example")}</strong>
