@@ -42,3 +42,11 @@ npm run test:release
 ```
 
 `tests/content-inventory.json` is generated from source and validates all 112 article/guide language routes. The public Pages worker, sitemap and hashed assets must be committed with the source. Historical research remains in `editorial/2026-10-03-release.json`.
+
+## November 9, 2026 editorial update
+
+The article library now has 28 articles in each of EN, PT-BR, DE and ES. Three complete guides cover UK shipping, rehearsal packing and parcel insurance claims. The returns and product-link pages have revised search titles, summaries and quick answers; the link-check page also has a compatibility table. Homepage reading links and all language indexes expose the new guides.
+
+New content is in `app/articles/november-article-data.json`; targeted revisions are in `november-updates.json`. The existing dictionaries contain every new paragraph and interface label. Mobile articles retain full text with an optional contents list and shorter spacing. Responsive table labels now use the actual translated column headings instead of fixed English category labels.
+
+Research uses current CSSBuy public buying/packing guidance, the shipping estimator, return/refund help and GOV.UK import guidance. Hypothetical weight and cost examples are labeled; no live tariff, universal insurance premium, guaranteed delivery time or compensation promise is asserted. The existing hostname-aware GA4 ID and event instrumentation are retained.

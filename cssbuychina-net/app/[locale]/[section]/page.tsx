@@ -23,7 +23,7 @@ const sectionMeta = {
     categories: ["Categorias da planilha CSSBuy", "Encontre calçados, roupas, camisas, acessórios e eletrônicos com verificações específicas de tamanho, QC e envio."],
     "how-it-works": ["Como funciona um pedido CSSBuy", "Entenda as duas etapas de pagamento, a inspeção no armazém, a embalagem e a escolha da rota internacional."],
     guides: ["Guias CSSBuy de planilha, QC e pacote", "Leia guias práticos sobre opções, medidas, fotos de QC, devoluções, armazenamento e custo do pacote."],
-    articles: ["Artigos CSSBuy sobre planilha, QC e envio", "Artigos detalhados e pesquisados sobre links de produto, escolha de categorias e planejamento do envio internacional."],
+    articles: ["Guias CSSBuy: frete, QC, devoluções e seguro", "Guias CSSBuy de frete para Brasil, Reino Unido, EUA e Alemanha, pré-embalagem, seguro, devoluções após QC e links de produtos."],
     faq: ["Perguntas frequentes sobre a planilha CSSBuy", "Respostas claras sobre pagamentos, inspeção, fotos de QC, devoluções, armazenamento, preços e envio."],
   },
   de: {
@@ -31,7 +31,7 @@ const sectionMeta = {
     categories: ["Kategorien der CSSBuy-Tabelle", "Finde Schuhe, Kleidung, Trikots, Accessoires und Elektronik mit passenden Größen-, QC- und Versandprüfungen."],
     "how-it-works": ["So funktioniert eine CSSBuy-Bestellung", "Verstehe die beiden Zahlungsstufen, die Lagerprüfung, Verpackung und Auswahl der internationalen Route."],
     guides: ["CSSBuy-Ratgeber zu Tabelle, QC und Paket", "Praktische Hinweise zu Varianten, Maßen, QC-Fotos, Rückgabe, Lagerung und Paketkosten."],
-    articles: ["CSSBuy-Artikel zu Tabelle, QC und Versand", "Ausführliche, recherchierte Artikel über Produktlinks, Kategorienwahl und internationale Versandplanung."],
+    articles: ["CSSBuy-Ratgeber: Versand, QC, Rückgabe & Versicherung", "CSSBuy-Ratgeber zu Deutschland, Großbritannien, Brasilien und USA, Probeverpackung, Versicherung, QC-Rückgabe und Produktlinks."],
     faq: ["Häufige Fragen zur CSSBuy-Tabelle", "Klare Antworten zu Zahlungen, Lagerprüfung, QC-Fotos, Rückgabe, Lagerung, Preisen und Versand."],
   },
   es: {
@@ -39,7 +39,7 @@ const sectionMeta = {
     categories: ["Categorías de la hoja CSSBuy", "Encuentra calzado, ropa, camisetas, accesorios y electrónica con controles específicos de talla, QC y envío."],
     "how-it-works": ["Cómo funciona un pedido de CSSBuy", "Entiende las dos etapas de pago, la inspección del almacén, el embalaje y la elección de la ruta internacional."],
     guides: ["Guías CSSBuy de hoja, QC y paquete", "Lee guías prácticas sobre opciones, medidas, fotos de QC, devoluciones, almacenamiento y coste del paquete."],
-    articles: ["Artículos CSSBuy sobre hoja, QC y envío", "Artículos detallados e investigados sobre enlaces de producto, elección de categorías y planificación del envío internacional."],
+    articles: ["Guías CSSBuy: envío, QC, devoluciones y seguro", "Guías CSSBuy de envíos a Reino Unido, Brasil, EE. UU. y Alemania, embalaje de prueba, seguro, devoluciones tras QC y enlaces."],
     faq: ["Preguntas frecuentes sobre la hoja CSSBuy", "Respuestas claras sobre pagos, inspección, fotos de QC, devoluciones, almacenamiento, precios y envío."],
   },
 } as const;
@@ -160,8 +160,9 @@ function Guides({ locale }: { locale: SiteLocale }) {
 
 function Articles({ locale }: { locale: SiteLocale }) {
   const copy = localeCopy[locale];
+  const articleMeta = sectionMeta[locale as Exclude<SiteLocale, "en">].articles;
   const cards = Object.entries(articles).map(([slug, article]) => ({ slug, ...localizedArticle(article, locale) }));
-  return <><section className="inner-hero articles-hero"><p className="eyebrow"><span /> {sectionLabels[locale].articles}</p><h1>{copy.nav.articles}</h1><p>{copy.reading.description}</p></section><section className="guides-index"><div className="editorial-grid">{cards.map((article, index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index % 3]}`} href={`/${locale}/articles/${article.slug}`} key={article.slug} data-track-event="article_open" data-click-area="article-index"><div className="editorial-number">{String(index + 1).padStart(2, "0")}</div><span>{article.label}</span><h2>{article.title}</h2><p>{article.description}</p><b>{localizedUi[locale as Exclude<SiteLocale, "en">].read} ↗</b></a>)}</div></section></>;
+  return <><section className="inner-hero articles-hero"><p className="eyebrow"><span /> {sectionLabels[locale].articles}</p><h1>{articleMeta[0]}</h1><p>{Object.keys(articles).length} · {articleMeta[1]}</p></section><section className="guides-index"><div className="editorial-grid">{cards.map((article, index) => <a className={`editorial-card editorial-${["blue", "acid", "orange"][index % 3]}`} href={`/${locale}/articles/${article.slug}`} key={article.slug} data-track-event="article_open" data-click-area="article-index"><div className="editorial-number">{String(index + 1).padStart(2, "0")}</div><span>{article.label}</span><h2>{article.title}</h2><p>{article.description}</p><b>{localizedUi[locale as Exclude<SiteLocale, "en">].read} ↗</b></a>)}</div></section></>;
 }
 
 function Faq({ locale }: { locale: SiteLocale }) {

@@ -559,11 +559,7 @@ footer { padding: 65px max(5vw, calc((100vw - 1480px) / 2)) 27px; color: var(--i
   .category-comparison tbody tr:last-child { border-bottom: 0; }
   .category-comparison tbody th { padding: 0 0 10px; border: 0; background: transparent; font-size: 16px; }
   .category-comparison tbody td { padding: 7px 0 7px 42%; position: relative; border: 0; font-size: 11px; }
-  .category-comparison tbody td::before { width: 38%; position: absolute; left: 0; color: var(--muted); font: 700 7px/1.4 var(--font-geist-mono), monospace; text-transform: uppercase; }
-  .category-comparison tbody td:nth-child(2)::before { content: "Before ordering"; }
-  .category-comparison tbody td:nth-child(3)::before { content: "Warehouse QC"; }
-  .category-comparison tbody td:nth-child(4)::before { content: "Shipping risk"; }
-  .category-comparison tbody td:nth-child(5)::before { content: "Category entry"; }
+  .category-comparison tbody td::before { content: attr(data-label); width: 38%; position: absolute; left: 0; color: var(--muted); font: 700 7px/1.4 var(--font-geist-mono), monospace; text-transform: uppercase; }
   .article-resource-links > div { display: grid; }
   .article-resource-links a { border-radius: 12px; }
   .faq-page-layout { padding: 60px 20px; display: block; }

@@ -118,3 +118,18 @@
   .catalog-page .image-drop { gap: 10px; padding: 12px; font-size: 14px; }
   .catalog-page #image-preview { width: 96px; height: 96px; margin-top: 12px; }
 }
+
+/* November editorial update: full text, a compact optional contents list. */
+.article-mobile-toc { display: none; }
+.article-context { margin: 18px 0; border: 1px solid #dce3ee; border-radius: 8px; padding: 12px; }
+.article-context summary, .article-mobile-toc summary { cursor: pointer; font-weight: 650; padding: 8px 0; }
+@media (max-width: 680px) {
+ .unified-inner .article-layout > aside { display: none; }
+ .unified-inner .article-mobile-toc { display: block; margin: 0 0 16px; padding: 4px 10px; border: 1px solid #dce3ee; border-radius: 6px; font-size: 14px; }
+ .article-mobile-toc nav { display: grid; }
+ .article-mobile-toc a { padding: 9px 0; border-top: 1px solid #e1e6ed; line-height: 1.4; }
+ .unified-inner .article-body section { margin-bottom: 16px; padding-bottom: 12px; }
+ .unified-inner .article-body > section[id] { scroll-margin-top: 100px; }
+ .unified-inner .article-body p { line-height: 1.55; }
+ .unified-inner .article-context .article-note { margin: 8px 0; padding: 8px 0; }
+}

@@ -1,3 +1,5 @@
+import novemberArticles from "./november-article-data.json";
+import novemberUpdates from "./november-updates.json";
 import growthArticles from "./growth-article-data.json";
 import octoberArticles from "./october-article-data.json";
 import octoberUpdates from "./october-updates.json";
@@ -673,7 +675,7 @@ const existingArticles = {
   },
 } as const;
 
-const allArticles: Record<string, Article> = { ...(octoberArticles as unknown as Record<string, Article>), ...(growthArticles as unknown as Record<string, Article>), ...priorityArticles, ...existingArticles };
-export const articles: Record<string, Article> = Object.fromEntries(Object.entries(allArticles).map(([slug, article]) => [slug, { ...article, ...articleEnhancements[slug], ...(octoberUpdates as unknown as Record<string, Partial<Article>>)[slug] }]));
+const allArticles: Record<string, Article> = { ...(novemberArticles as unknown as Record<string, Article>), ...(octoberArticles as unknown as Record<string, Article>), ...(growthArticles as unknown as Record<string, Article>), ...priorityArticles, ...existingArticles };
+export const articles: Record<string, Article> = Object.fromEntries(Object.entries(allArticles).map(([slug, article]) => [slug, { ...article, ...articleEnhancements[slug], ...(octoberUpdates as unknown as Record<string, Partial<Article>>)[slug], ...(novemberUpdates as unknown as Record<string, Partial<Article>>)[slug] }]));
 
 export type ArticleSlug = keyof typeof articles;

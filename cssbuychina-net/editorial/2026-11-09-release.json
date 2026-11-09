@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-09",
+  "domain": "cssbuychina.net",
+  "locales": ["en", "pt-br", "de", "es"],
+  "articles_per_locale": 28,
+  "new_topics": {
+    "cssbuy-shipping-to-uk": ["cssbuy shipping to uk", "cssbuy uk shipping cost", "cssbuy delivery time uk"],
+    "cssbuy-rehearsal-shipping-repacking": ["cssbuy rehearsal shipping", "cssbuy rehearsal packaging", "cssbuy repacking"],
+    "cssbuy-parcel-insurance-claims": ["cssbuy insurance", "cssbuy insurance claim", "cssbuy lost parcel"]
+  },
+  "revised_topics": ["cssbuy returns after qc", "cssbuy product links compatibility checks", "planilha cssbuy"],
+  "sources": ["https://m.cssbuy.com/buyforme", "https://www.cssbuy.com/estimates", "https://www.cssbuy.com/shop/helpCenter?id=80", "https://www.cssbuy.com/shop/helpCenter?id=19", "https://www.gov.uk/goods-sent-from-abroad/tax-and-duty"],
+  "research_limits": "Insurance content is an evidence and policy-review checklist. No universal premium, coverage or deadline is asserted. Confirm route quotes and service availability for the actual parcel. Examples are hypothetical.",
+  "validation": ["15 release tests passed", "124 localized article and guide routes", "28 article entries per language", "Canonical and hreflang reciprocity", "Article and BreadcrumbList dates", "New URLs in editorial sitemap", "Full text retained on mobile", "Responsive table labels localized", "Existing GA4 ID retained"],
+  "typecheck_note": "Full tsc remains blocked by pre-existing Cloudflare environment typings and LiveFinds response typing; production build and all release tests pass."
+}

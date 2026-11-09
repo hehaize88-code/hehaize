@@ -8,7 +8,7 @@ import {articles} from './articles/article-data';
 import {localizedArticle} from './articles/translation';
 export function HomeView({locale='en'}:{locale?:SiteLocale}) {
  const t=homeCopy[locale],prefix=localePrefix(locale),faq=homeFaq[locale];
- const reading=['cssbuy-returns-refunds-after-qc','find-original-product-link-cssbuy','cssbuy-shipping-to-brazil','cssbuy-restrictions-brands-batteries-liquids'].map(slug=>({slug,...localizedArticle(articles[slug],locale)}));
+ const reading=['cssbuy-shipping-to-uk','cssbuy-rehearsal-shipping-repacking','cssbuy-parcel-insurance-claims','how-to-check-a-cssbuy-product-link','cssbuy-returns-refunds-after-qc','find-original-product-link-cssbuy','cssbuy-shipping-to-brazil','cssbuy-restrictions-brands-batteries-liquids'].map(slug=>({slug,...localizedArticle(articles[slug],locale)}));
  const schema={'@context':'https://schema.org','@type':'WebSite',name:'CSSBuy Spreadsheet',url:'https://cssbuychina.net'+(prefix||'/'),inLanguage:locale,potentialAction:{'@type':'SearchAction',target:'https://cssbuychina.net'+prefix+'/catalog/?q={search_term_string}','query-input':'required name=search_term_string'}};
  return <div className="seo-page">
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify([schema,{'@context':'https://schema.org','@type':'FAQPage',mainEntity:faq.items.map(([question,answer])=>({'@type':'Question',name:question,acceptedAnswer:{'@type':'Answer',text:answer}}))}])}}/>

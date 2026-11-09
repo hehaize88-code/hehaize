@@ -20,7 +20,7 @@ function* strings(value,key='') {
  if(value&&typeof value==='object')for(const [name,entry] of Object.entries(value))yield* strings(entry,name);
 }
 test('all editorial text has complete Portuguese, German and Spanish translations',async()=>{
- assert.equal(Object.keys(articles).length,25);
+ assert.equal(Object.keys(articles).length,28);
  assert.equal(Object.keys(guides).length,3);
  for(const lang of ['pt-br','de','es']){
   const dictionary=JSON.parse(await readFile(new URL(`../app/articles/translations/${lang}.json`,import.meta.url),'utf8'));
@@ -42,7 +42,7 @@ test('new articles are discoverable in all languages and expose dated sources',a
    assert.equal(response.status,200);
    assert.match(html,/class="article-sources"/);
    assert.match(html,/"datePublished":"2026-10-16"/);
-   assert.match(html,/"dateModified":"2026-10-16"/);
+   assert.ok(html.includes(`"dateModified":"${slug === "cssbuy-returns-refunds-after-qc" ? "2026-11-09" : "2026-10-16"}"`));
    assert.match(html,/data-track-event="article_catalog_click"/);
    assert.ok(html.includes(`href="${locale}/catalog/"`));
    for(const href of [...html.matchAll(/href="([^"#]+)"/g)].map(m=>m[1]).filter(h=>/^\/(articles|guides)\//.test(h))){
@@ -56,5 +56,26 @@ test('updated decision pages retain localized quick answers and sources',async()
   const html=await(await get(prefix+path)).text();
   assert.match(html,/<section class="article-note" aria-label=/);
   assert.match(html,/"dateModified":"2026-10-16"/);
+ }
+});
+test('November articles have translated discovery, sources, dates and compact navigation',async()=>{
+ const slugs=['cssbuy-shipping-to-uk','cssbuy-rehearsal-shipping-repacking','cssbuy-parcel-insurance-claims'];
+ const sitemap=await readFile(new URL('../editorial-sitemap.xml',import.meta.url),'utf8');
+ for(const slug of slugs){
+  const article=articles[slug];
+  const words=[article.title,article.description,...article.quickAnswer.paragraphs,...article.sections.flatMap(([heading,paragraphs])=>[heading,...paragraphs])].join(' ').split(/\s+/).length;
+  assert.ok(words>=1200&&words<=1800,`${slug}: ${words} English words`);
+  for(const prefix of ['','/pt-br','/de','/es']){
+   const path=`${prefix}/articles/${slug}`;
+   const html=await(await get(path)).text();
+   assert.match(html,/"datePublished":"2026-11-09"/);
+   assert.match(html,/"dateModified":"2026-11-09"/);
+   assert.match(html,/class="article-mobile-toc"/);
+   assert.match(html,/class="article-sources"/);
+   assert.ok(sitemap.includes(`<loc>https://cssbuychina.net${path}</loc>`));
+   const home=await(await get(prefix||'/')).text();
+   assert.ok(home.includes(`href="${path}"`));
+   if(article.table)assert.match(html,/<td[^>]+data-label=/);
+  }
  }
 });

@@ -11,9 +11,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isSiteLocale(locale) || locale === "en") return {};
   const titles = {
-    "pt-br": "Planilha CSSBuy 2026: Achados, Links e Frete",
-    de: "CSSBuy Spreadsheet 2026: Funde, Links & Versand",
-    es: "Hoja CSSBuy 2026: Productos, Enlaces y Envíos",
+    "pt-br": "Planilha CSSBuy: Achados, QC e Frete para o Brasil",
+    de: "CSSBuy Spreadsheet: Produktlinks, QC & Versand",
+    es: "Hoja CSSBuy: Productos, QC y Guías de Envío",
     en: "CSSBuy Spreadsheet 2026",
   };
   const descriptions = {
