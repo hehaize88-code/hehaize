@@ -1,0 +1,30 @@
+{
+  "verifiedAtUTC": "2026-11-09T08:56:23.900487+00:00",
+  "command": "npm run build:production",
+  "locales": 24,
+  "content": "Full article text, numerical examples, source URLs, tables, UI translation and related/product routes passed in all locales.",
+  "analytics": "Intent events passed, including article_qc_click and article_shipping_click; no purchase or raw search text emitted.",
+  "worker": {
+    "worker": "dist/cloudflare/worker.js",
+    "bytes": 9208436,
+    "gzipBytes": 2224361,
+    "assets": 6
+  },
+  "workerSHA256": "e586a061e25797ad1493a8b8bfd6155e73d557f34c7c043312e0530a985ad09e",
+  "renderAndSitemapChecks": {
+    "articles": 480,
+    "articleIndexes": 24,
+    "coreSitemapURLs": 936,
+    "productSitemapURLs": 82968,
+    "sitemaps": 25,
+    "status": "passed"
+  },
+  "otherChecks": [
+    "Canonical and 25 hreflang alternatives per article",
+    "Article and BreadcrumbList schema",
+    "Missing-route HTTP status and noindex",
+    "www redirect preserving path",
+    "Static homepage remains indexable during a simulated product-source outage"
+  ],
+  "scope": "Local production verification; does not assert deployment or search-engine indexing."
+}

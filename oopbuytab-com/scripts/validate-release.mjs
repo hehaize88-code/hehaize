@@ -38,9 +38,11 @@ for(const lang of langs){
   assert.equal(doc.querySelectorAll('script[src="/analytics-events.js"]').length,1);
   assert.equal(doc.querySelector('.article-actions a').href,local(lang,'/spreadsheet/'));
   if(article.catalogCategory)assert.equal(doc.querySelector('.article-category-link').href,local(lang,`/category/${article.catalogCategory}/`));
+  assert.deepEqual([...doc.querySelectorAll('.article-next-steps a')].map(a=>a.href),[local(lang,article.catalogCategory?`/category/${article.catalogCategory}/`:'/spreadsheet/'),local(lang,'/qc/'),local(lang,'/shipping/')],path+' early navigation');
+  assert.deepEqual([...doc.querySelectorAll('.article-example-links a')].map(a=>({path:a.href,name:a.textContent})),(article.productExamples||[]).map(p=>({path:local(lang,p.path),name:p.name})),path+' product example links');
   articleCount++;
  }
- const {r,text}=await get(local(lang,'/articles/'));assert.equal(r.status,200);assert.equal(parseHTML(text).document.querySelectorAll('.journal .article-card').length,reference.articles.length);
+ const {r,text}=await get(local(lang,'/articles/'));assert.equal(r.status,200);assert.equal(parseHTML(text).document.querySelectorAll('.journal .article-card').length,reference.articles.length);assert.equal(parseHTML(text).document.querySelector('.article-count').textContent,content.ui.articleCount);
 }
 const parser=new DOMParser();
 const root=await get('/sitemap.xml');assert.equal(root.r.status,200);

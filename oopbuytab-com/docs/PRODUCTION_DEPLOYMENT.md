@@ -10,7 +10,13 @@ Node.js: 22.22.0
 Build watch paths: oopbuytab-com/**
 Custom domains: oopbuytab.com and www.oopbuytab.com
 
-Current status: multilingual SEO update deployed and verified on 2026-11-02.
+## 2026-11-09 release
+
+The updated source contains 20 articles in each of 24 locales (480 article pages), a core sitemap with 936 URLs and 24 product maps with 3,457 URLs each. The complete local production gate passed; see SEO_LOCAL_VERIFICATION_2026-11-09.json and SEO_RELEASE_2026-11-09.md. It uses the existing integration and configuration above. Check the release commit's `Workers Builds: oopbuytab-com` result and live content for publication status.
+
+## Historical verified deployment — 2026-11-02
+
+The following record describes the previous release.
 
 Production source commit: c7e6d1c88a208475a5feaf5b5332399c4c7999f6
 Cloudflare build: 03e6af04-14ac-44bb-ae9d-6f50e6e943bc

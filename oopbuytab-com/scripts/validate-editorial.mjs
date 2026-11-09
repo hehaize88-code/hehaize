@@ -4,18 +4,20 @@ const directory='src/content/editorial';
 const files=(await fs.readdir(directory)).filter(file=>file.endsWith('.json'));
 const reference=JSON.parse(await fs.readFile(directory+'/en.json','utf8'));
 const slugs=reference.articles.map(article=>article.slug);
-assert.equal(slugs.length,17,'expected article count');
+assert.equal(slugs.length,20,'expected article count');
 assert.equal(new Set(slugs).size,slugs.length,'unique article slugs');
+const literalNames=new Set(reference.articles.flatMap(a=>(a.productExamples||[]).map(p=>p.name)));
+const productPaths=new Set(JSON.parse(await fs.readFile('src/content/seo/product-paths.json','utf8')).paths.map(p=>'/products'+p));
 const words=text=>text.trim().split(/\s+/).length;
 const sources=value=>value.sources.map(source=>source.url).sort();
 function localizedText(value,english,key=''){
- if(['slug','related','url','primaryKeyword','secondaryKeywords','format','published','modified','catalogCategory'].includes(key))return;
+ if(['slug','related','url','primaryKeyword','secondaryKeywords','format','published','modified','catalogCategory','productExamples'].includes(key))return;
  if(Array.isArray(value)&&Array.isArray(english)){value.forEach((item,i)=>localizedText(item,english[i],key));return;}
  if(value&&english&&typeof value==='object'&&typeof english==='object'){
   for(const name of Object.keys(english))if(name in value)localizedText(value[name],english[name],name);
   return;
  }
- if(typeof value==='string'&&typeof english==='string'&&(key==='label'||english.length>35))assert.notEqual(value,english,'untranslated '+key);
+ if(typeof value==='string'&&typeof english==='string'&&!literalNames.has(english)&&(key==='label'||english.length>35))assert.notEqual(value,english,'untranslated '+key);
 }
 const digits=text=>[...new Set((text.replace(/(?<=\d)[., \u00a0\u202f](?=\d{3}(?:\D|$))/g,'').match(/\d+(?:[.,]\d+)*/g)||[]).map(n=>n.replace(',','.')))].sort();
 const failures=[];
@@ -24,6 +26,7 @@ for(const file of files){
   const content=JSON.parse(await fs.readFile(directory+'/'+file,'utf8'));
   if(file!=='en.json')localizedText(content,reference);
   assert.deepEqual(Object.keys(content.ui).sort(),Object.keys(reference.ui).sort(),'UI keys');
+  if(file!=='en.json')for(const key of ['articleCount','chooseNext','exampleProducts','quickAnswer','articleBrowseLabel','shippingHelpLabel','qcHelpLabel','articlesIntro'])assert.notEqual(content.ui[key],reference.ui[key],'translated article navigation '+key);
   assert(content.ui.previewNotice.includes('{date}'),'preview date placeholder');
   assert.equal(content.faq.length,28,'FAQ count');
   assert.deepEqual(content.articles.map(a=>a.slug),slugs,'article slugs');
@@ -43,6 +46,8 @@ for(const file of files){
    assert.deepEqual(sources(article),sources(english),'article sources');
    assert.deepEqual(article.related,english.related,'related slugs');
    assert.equal(article.catalogCategory,english.catalogCategory,'category destination parity');
+   assert.deepEqual(article.productExamples,english.productExamples,'product example destination parity');
+   for(const item of article.productExamples||[])assert(productPaths.has(item.path)&&item.name,'valid product example');
    assert(article.related.every(slug=>slugs.includes(slug)&&slug!==article.slug),'valid related routes');
    assert.equal((article.tables||[]).length,(english.tables||[]).length,'comparison table parity');
    (article.tables||[]).forEach((table,j)=>{

@@ -13,6 +13,7 @@
   else if(url.origin===location.origin&&/\/products\//.test(url.pathname))send('product_detail_click',{product_path:url.pathname});
   if(document.body.dataset.article&&url.origin===location.origin&&/\/(spreadsheet|category)\//.test(url.pathname))send('article_catalog_click');
   else if(document.body.dataset.article&&url.origin===location.origin&&/\/articles\/[^/]+\//.test(url.pathname)&&!url.hash)send('article_related_click',{target_article:url.pathname.split('/').filter(Boolean).at(-1)});
+  else if(document.body.dataset.article&&url.origin===location.origin&&/\/(qc|shipping)\/$/.test(url.pathname))send(url.pathname.endsWith('/qc/')?'article_qc_click':'article_shipping_click');
  });
  document.addEventListener('submit',event=>{
   const form=event.target;if(!(form instanceof HTMLFormElement))return;
