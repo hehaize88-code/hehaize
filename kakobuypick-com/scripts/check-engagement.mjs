@@ -26,3 +26,20 @@ document.querySelector('input').value='   ';
 document.querySelector('form').dispatchEvent(new window.Event('submit',{bubbles:true}));
 assert.equal(events.length,6);
 console.log('PASS real click/search intent, localized paths, no purchase/signup claim, no raw query/source URL, no empty-search event');
+// An article reader's next action must be attributed without sending query text.
+const second=parseHTML(`<html lang="hr"><body>
+<a id="all" href="/hr/spreadsheet/?q=private-search">Catalogue</a>
+<a id="cat" href="/hr/category/electronics/">Electronics</a>
+<a id="estimate" href="https://kakobuy.com/tools/estimate">Estimator</a>
+</body></html>`);
+const funnel=[];
+installEngagementTracking(second.document,new URL('https://kakobuypick.com/hr/articles/kakobuy-electronics-guide/'),(name,params)=>funnel.push({name,params}));
+for(const id of ['all','cat','estimate'])second.document.getElementById(id).dispatchEvent(new second.window.Event('click',{bubbles:true}));
+assert.deepEqual(funnel.map(e=>e.name),['article_to_catalog','article_to_catalog','category_click','shipping_estimator_open']);
+assert.equal(funnel[0].params.article_slug,'kakobuy-electronics-guide');
+assert.equal(funnel[1].params.destination,'electronics');
+assert.ok(!JSON.stringify(funnel).includes('private-search'));
+const cancelled=new second.window.Event('click',{bubbles:true,cancelable:true});cancelled.preventDefault();
+second.document.getElementById('all').dispatchEvent(cancelled);
+assert.equal(funnel.length,4);
+console.log('PASS article-to-catalogue and official-estimator intent; cancelled clicks ignored');

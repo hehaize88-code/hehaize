@@ -5,7 +5,7 @@ export function compareWeights({actual,length,width,height,divisor}) {
   const volumetric=length*width*height/divisor;
   return {volumetric,chargeable:Math.max(actual,volumetric)};
 }
-export function installWeightCalculators(doc) {
+export function installWeightCalculators(doc, onCalculation=()=>{}) {
   doc.querySelectorAll('[data-weight-calculator]').forEach(tool=>{
     const form=tool.querySelector('form');
     const format=new Intl.NumberFormat(tool.dataset.language,{maximumFractionDigits:3});
@@ -18,6 +18,7 @@ export function installWeightCalculators(doc) {
       if(!result)return;
       tool.querySelector('[data-volumetric]').textContent=`${format.format(result.volumetric)} kg`;
       tool.querySelector('[data-chargeable]').textContent=`${format.format(result.chargeable)} kg`;
+      if(event)onCalculation(tool.dataset.language);
     }
     form.addEventListener('submit',update);
     form.addEventListener('input',()=>{tool.querySelector('.weight-results').hidden=true;});

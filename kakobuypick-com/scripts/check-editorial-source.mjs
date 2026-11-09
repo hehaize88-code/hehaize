@@ -34,8 +34,8 @@ function compare(value, source, path, locale) {
 for (const locale of locales) {
   const data = JSON.parse(fs.readFileSync(new URL(`${locale}.json`, root), 'utf8'));
   compare(data, base, '', locale);
-  assert.equal(data.articles.length, 22);
-  assert.equal(new Set(data.articles.map(a=>a.slug)).size,22,`${locale}: duplicate article slug`);
+  assert.equal(data.articles.length, 25);
+  assert.equal(new Set(data.articles.map(a=>a.slug)).size,25,`${locale}: duplicate article slug`);
   for(const article of data.articles) {
     assert.ok(article.updatedOn>=article.publishedOn,`${locale}: invalid article dates`);
     assert.equal(article.seoTitle,article.title,`${locale}: localized search title`);

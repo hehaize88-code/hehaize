@@ -24,5 +24,10 @@ const { labels, lang } = Astro.props;
 </div>
 <script>
   import { installWeightCalculators } from '../scripts/weight-calculator.js';
-  installWeightCalculators(document);
+  installWeightCalculators(document, language=>{
+    const analytics=(window as any).gtag;
+    if(typeof analytics==='function')analytics('event','weight_calculator_use',{
+      language,page_path:window.location.pathname,article_slug:'kakobuy-shipping-calculator'
+    });
+  });
 </script>

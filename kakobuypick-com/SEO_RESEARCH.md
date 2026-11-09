@@ -105,3 +105,14 @@ Primary pages rechecked:
 The current indexing policy supersedes historical blanket noindex for pagination: real unfiltered catalogue pages are individually canonical; search and sorting remain noindex. This improves discoverability but does not guarantee indexing, rankings or traffic recovery. Private account analytics are not recorded in this public repository.
 
 Google pagination reference: https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading — separate page URLs and self-referencing canonicals support discovery beyond the first catalogue page.
+
+
+## 2026-11-09 editorial and discovery review
+
+- Three new topics: Croatia ordering/shipping (including the natural Croatian wording “Kakobuy Hrvatska”), electronics versus accessories and specialist QC limits, and women’s clothing/shoes/bags measurements. Each English article contains over 1,200 words, eight sections, a comparison table and four practical actions. The same complete structure is translated into every supported locale.
+- Refresh existing URLs for refund timing and warehouse returns, storage deadlines, size-chart comparisons, shipping weight calculation and missing tracking updates. Replace repetitive closing sections with actionable workflows and worked examples; preserve publication dates and update only changed articles.
+- Official sources rechecked in the rendered Kakobuy Help Center on 2026-11-09: return rules (id=51), storage (id=1), purchasing inspection (id=89), forwarding inspection (id=95), and measurement guidance (id=91). Visual checks do not authenticate or establish functionality of electronics. The general return workflow does not override seller or manual-purchase restrictions. No live rates, guaranteed arrival dates or unverified product endorsements were added.
+- Competitor structures reviewed: https://kakobuyspreadsheet.gg/ , https://kakobuy-spreadsheet.com/ and https://spreadsheet-kakobuy.com/tools/kakobuy-shipping-calculator . Borrow no content, inventory or numerical promises; use clear category discovery and practical task-focused guides.
+- The product sitemap remains a valid sitemap index with source-page shards. A zero discovered-URL display on its parent is not evidence that child XML is invalid. Stable editorial sitemap grows to 984 canonical URLs, with all 72 new article variants included.
+- Article, category and relevant product pages connect the new guides. Homepage and article centre display the actual article total. New GA4 intent events record article-to-catalogue navigation, official-estimator openings and user-triggered valid weight calculations without logging free-form searches or claiming a purchase.
+- Private account metrics and individual performance data are intentionally not stored in this public repository. Publication is not evidence of restored rankings or guaranteed indexing.

@@ -25,7 +25,7 @@ Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2
 
 核验页面：首页、`/spreadsheet/?q=adidas&sort=price`、`/de/`、`/fr/category/shoes/`、实际商品详情及购买按钮。首页和分类应呈现主站真实数据；上游故障返回明确不可用状态。
 
-站点地图：https://kakobuypick.com/sitemap.xml 。包含24语言共912个稳定页面地址：主页、商品目录、11个分类、指南、FAQ、文章中心及22篇文章。`/sitemap-products.xml` 是按真实源站目录页拆分的商品地图索引；每个 `/sitemaps/products-{page}.xml` 读取一页源站商品并输出24种语言URL，不虚构商品ID或修改日期。
+站点地图：https://kakobuypick.com/sitemap.xml 。包含24语言共984个稳定页面地址：主页、商品目录、11个分类、指南、FAQ、文章中心及25篇文章。`/sitemap-products.xml` 是按真实源站目录页拆分的商品地图索引；每个 `/sitemaps/products-{page}.xml` 读取一页源站商品并输出24种语言URL，不虚构商品ID或修改日期。
 
 配置依据：https://developers.cloudflare.com/workers/ci-cd/builds/configuration/ （2026-10-17 核对）。
 
@@ -33,13 +33,13 @@ Astro 7.4.0 SSR. User-confirmed domain: **https://kakobuypick.com** (purchased 2
 
 - `/guide/`: a six-step independent guide from product research to receipt.
 - `/faq/`: 26 sourced answers in five groups, with client-side filtering and ordinary HTML disclosures.
-- `/articles/`: 22 original editorial articles; `/articles/{slug}/` renders each full article with a contents list, worked table, checklist and source links.
+- `/articles/`: 25 original editorial articles; `/articles/{slug}/` renders each full article with a contents list, worked table, checklist and source links.
 - The same routes and content structure are available in all 24 languages; switching languages preserves the current article and query. Source dates, scope limitations and illustrative calculations remain explicit.
 - Top and footer navigation link to standalone pages. Mobile navigation wraps visibly; the article contents list starts collapsed on narrow screens. Home shows four article cards and a short FAQ introduction.
 - `SEO_RESEARCH.md` records keyword intent and official evidence. `src/content/editorial/en.json` is the factual baseline; the other locale JSON files contain complete, committed text. These are editorial documents, not a product database.
 - Reviewed translations are committed source content. No translation service runs during builds or page requests. Edit them against the English factual baseline and review the diff before replacing existing text.
 - `npm run check:content` runs before every build. It requires all 24 locale files, exact content structure, stable identifiers, all numeric facts (allowing local separators) and no unchanged English sentences in translated content.
-- `node scripts/check-editorial.mjs` checks 600 editorial responses across all locales, article/FAQ counts, section parity, critical numbers, schemas, canonical/hreflang, navigation and redirects after building.
+- `node scripts/check-editorial.mjs` checks 672 editorial responses across all locales, article/FAQ counts, section parity, critical numbers, schemas, canonical/hreflang, navigation and redirects after building.
 
 ## Product data contract
 

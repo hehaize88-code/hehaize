@@ -8,13 +8,16 @@ import {slugs} from '../lib/catalog';
 const {kind,e,article,route,lang,t}=Astro.props;
 const articleDate=article?.updatedOn||(kind==='faq'?faqReviewed:reviewed);
 const names=categoryNames(lang);
-const articleCategories=article?(article.slug==='kakobuy-hoodie-finds'?['hoodies-sweaters']:article.slug==='kakobuy-football-jerseys'?['jersey']:['kakobuy-poland-guide','kakobuy-italy-guide','is-kakobuy-legit','kakobuy-qc-finder'].includes(article.slug)?['jackets','hoodies-sweaters','t-shirts']:article.slug==='kakobuy-jacket-finds'?['jackets']:article.slug==='kakobuy-sneaker-finds'?['shoes']:article.slug==='kakobuy-sizing-guide'?['jackets','shoes','pants-shorts']:['choose-kakobuy-spreadsheet','kakobuy-spreadsheet-guide','kakobuy-product-links','kakobuy-w2c-qc-terms'].includes(article.slug)?['jackets','shoes','hoodies-sweaters']:[]):[];
+const articleCategories=article?(article.slug==='kakobuy-electronics-guide'?['electronics']:article.slug==='kakobuy-womens-finds'?['accessories','shoes','pants-shorts']:article.slug==='kakobuy-hoodie-finds'?['hoodies-sweaters']:article.slug==='kakobuy-football-jerseys'?['jersey']:['kakobuy-croatia-guide','kakobuy-poland-guide','kakobuy-italy-guide','is-kakobuy-legit','kakobuy-qc-finder'].includes(article.slug)?['jackets','hoodies-sweaters','t-shirts']:article.slug==='kakobuy-jacket-finds'?['jackets']:article.slug==='kakobuy-sneaker-finds'?['shoes']:article.slug==='kakobuy-sizing-guide'?['jackets','shoes','pants-shorts']:['choose-kakobuy-spreadsheet','kakobuy-spreadsheet-guide','kakobuy-product-links','kakobuy-w2c-qc-terms'].includes(article.slug)?['jackets','shoes','hoodies-sweaters']:[]):[];
 const checkedDate=new Intl.DateTimeFormat(lang,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(articleDate));
 const sourceIds=article?.sources ?? (kind==='guide'?['buying','fees','inspection','storage','returns','estimate','receipt']:[]);
 const mins=article?Math.max(1,Math.ceil(article.sections.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length/180)):0;
 const heading=kind==='guide'?e.ui.guideTitle:kind==='faq'?e.ui.faqTitle:article?article.title:e.ui.articlesTitle;
 const description=kind==='guide'?e.ui.guideIntro:kind==='faq'?e.ui.faqIntro:article?article.description:e.ui.articlesIntro;
 const relatedBySlug={
+ 'kakobuy-croatia-guide':['kakobuy-shipping-calculator','kakobuy-shipping-time-tracking','kakobuy-returns-refunds'],
+ 'kakobuy-electronics-guide':['kakobuy-product-links','kakobuy-qc-photos','kakobuy-shipping-calculator'],
+ 'kakobuy-womens-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-returns-refunds'],
  'kakobuy-coupons-guide':['kakobuy-fees-payment','kakobuy-shipping-calculator','kakobuy-returns-refunds'],
  'kakobuy-w2c-qc-terms':['kakobuy-product-links','kakobuy-qc-finder','is-kakobuy-legit'],
  'kakobuy-shipping-usa-guide':['kakobuy-shipping-calculator','kakobuy-shipping-time-tracking','kakobuy-warehouse-storage'],
@@ -28,17 +31,17 @@ const relatedBySlug={
  'kakobuy-jacket-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-shipping-calculator'],
  'kakobuy-sneaker-finds':['kakobuy-sizing-guide','kakobuy-qc-photos','kakobuy-returns-refunds'],
  'kakobuy-spreadsheet-guide':['choose-kakobuy-spreadsheet','kakobuy-product-links','kakobuy-qc-photos'],
- 'kakobuy-product-links':['kakobuy-spreadsheet-guide','is-kakobuy-legit','kakobuy-qc-finder'],
+ 'kakobuy-product-links':['kakobuy-electronics-guide','is-kakobuy-legit','kakobuy-qc-finder'],
  'kakobuy-qc-photos':['kakobuy-qc-finder','kakobuy-w2c-qc-terms','kakobuy-sizing-guide'],
- 'kakobuy-sizing-guide':['kakobuy-hoodie-finds','kakobuy-football-jerseys','kakobuy-sneaker-finds'],
+ 'kakobuy-sizing-guide':['kakobuy-womens-finds','kakobuy-football-jerseys','kakobuy-sneaker-finds'],
  'kakobuy-shipping-calculator':['kakobuy-fees-payment','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
  'kakobuy-fees-payment':['kakobuy-coupons-guide','kakobuy-shipping-calculator','kakobuy-returns-refunds'],
  'kakobuy-warehouse-storage':['kakobuy-returns-refunds','kakobuy-consolidation-packaging','kakobuy-shipping-time-tracking'],
  'kakobuy-consolidation-packaging':['kakobuy-shipping-calculator','kakobuy-warehouse-storage','kakobuy-qc-photos'],
- 'kakobuy-shipping-time-tracking':['kakobuy-shipping-usa-guide','kakobuy-italy-guide','kakobuy-shipping-calculator'],
+ 'kakobuy-shipping-time-tracking':['kakobuy-croatia-guide','kakobuy-shipping-usa-guide','kakobuy-shipping-calculator'],
  'kakobuy-returns-refunds':['kakobuy-qc-photos','kakobuy-warehouse-storage','kakobuy-shipping-time-tracking']
 };
-const prioritySlugs=['kakobuy-coupons-guide','kakobuy-w2c-qc-terms','kakobuy-shipping-usa-guide','kakobuy-returns-refunds','kakobuy-warehouse-storage','kakobuy-sizing-guide','kakobuy-shipping-calculator','kakobuy-shipping-time-tracking','is-kakobuy-legit'];
+const prioritySlugs=['kakobuy-returns-refunds','kakobuy-warehouse-storage','kakobuy-sizing-guide','kakobuy-shipping-calculator','kakobuy-shipping-time-tracking'];
 const earlyTable=article&&['kakobuy-returns-refunds','kakobuy-warehouse-storage','kakobuy-sizing-guide','kakobuy-shipping-time-tracking'].includes(article.slug);
 const relatedArticles=article?(relatedBySlug[article.slug]||[]).map(slug=>e.articles.find(a=>a.slug===slug)).filter(Boolean):[e.articles[0],e.articles[2],e.articles[4]];
 ---
@@ -48,7 +51,7 @@ const relatedArticles=article?(relatedBySlug[article.slug]||[]).map(slug=>e.arti
   {article?<><a href={route('/articles/')}>{e.ui.articles}</a><span>/</span><span>{article.title}</span></>:<span>{heading}</span>}
  </nav>
  <header class="knowledge-heading"><span class="eyebrow muted">KAKOBUY PICK</span><h1>{heading}</h1><p>{description}</p>
-  <div class="reading-meta"><span>{e.ui.author}</span><span>{article?e.ui.updated:e.ui.checked}: <time datetime={articleDate}>{checkedDate}</time></span>{article&&<span>{mins} {e.ui.readTime}</span>}</div>
+  <div class="reading-meta"><span>{e.ui.author}</span>{kind==='articles'?<span class="article-total"><strong>{e.articles.length}</strong> {e.ui.articleCount}</span>:<span>{article?e.ui.updated:e.ui.checked}: <time datetime={articleDate}>{checkedDate}</time></span>}{article&&<span>{mins} {e.ui.readTime}</span>}</div>
  </header>
  {kind==='articles'&&<nav class="topic-links" aria-label={e.ui.articleTopics}><h2>{e.ui.articleTopics}</h2><div class="context-links">{prioritySlugs.map(slug=>e.articles.find(a=>a.slug===slug)).filter(Boolean).map(a=><a href={route(`/articles/${a.slug}/`)}>{a.title}</a>)}</div></nav>}
  {kind==='articles'&&<div class="articles-grid">{e.articles.map((a,index)=><ArticleCard article={a} e={e} route={route} index={index}/>)}</div>}
