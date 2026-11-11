@@ -155,13 +155,58 @@ export async function detail(path: string) {
   if (!title) throw new CatalogError("Product unavailable", 404);
   const sourceUrl = attr(doc.querySelector(".weidian-btn"), "href"),
     buy = purchase(sourceUrl);
+  const sourceId = buy ? new URL(buy).searchParams.get("id") || "" : "";
+  const agentHosts = new Set([
+    "litbuy.com",
+    "usfans.com",
+    "kakobuy.com",
+    "superbuy.com",
+    "lovegobuy.com",
+    "joyagoo.com",
+    "hipobuy.com",
+    "cssbuy.com",
+    "lolobuy.com",
+    "oopbuy.com",
+    "sugargoo.com",
+    "allchinabuy.com",
+    "pikobuy.com",
+    "acbuy.com",
+    "hubbuy.com",
+  ]);
+  const agents = [...doc.querySelectorAll(".platform-option")]
+    .flatMap((a: any) => {
+      try {
+        const url = new URL(attr(a, "href"));
+        if (
+          !sourceId ||
+          url.protocol !== "https:" ||
+          url.username ||
+          url.password ||
+          url.port ||
+          !agentHosts.has(url.hostname.replace(/^www\./, "")) ||
+          !new RegExp(`(?<!\\d)${sourceId}(?!\\d)`).test(
+            decodeURIComponent(url.href),
+          )
+        )
+          return [];
+        return [{ name: txt(a.querySelector("span")), url: url.href }];
+      } catch {
+        return [];
+      }
+    })
+    .filter(
+      (a: any) => a.name && !/lovegobuy\.com/.test(new URL(a.url).hostname),
+    );
   return {
     path,
     title,
     category: path.split("/")[1],
     price: txt(doc.querySelector(".product-detail .product-price")),
-    sourceId: buy ? new URL(buy).searchParams.get("id") || "" : "",
-    sourceUrl,
+    sourceId,
+    sourceUrl: sourceId
+      ? `https://weidian.com/item.html?itemID=${sourceId}`
+      : "",
+    agents,
     buy,
     images: [
       ...new Set(

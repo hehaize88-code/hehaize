@@ -1,0 +1,15 @@
+---
+import { formatPrice } from "../lib/catalog";
+const { price, lang } = Astro.props;
+const numeric = Number(String(price).replace(/[$,\s]/g, ""));
+---
+
+<span
+  data-money-usd={
+    String(price).trim() && Number.isFinite(numeric) && numeric >= 0
+      ? numeric
+      : undefined
+  }
+>
+  {formatPrice(String(price), lang)}
+</span>

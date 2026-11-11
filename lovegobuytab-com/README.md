@@ -8,10 +8,10 @@ Node >=22.23.4, `npm ci`, `npm run dev`. `npm run check:content` verifies 24 com
 
 ## Data contract
 
-- All catalog information comes from https://cnbuycha.com public HTML. No product database, secondary inventory, admin interface or external catalog.
+- All catalog information comes from https://cnbuycha.com public HTML. No product database, secondary inventory or admin interface. The original Weidian listing supplies supplemental style images and CNY prices for the verified seller item ID; it does not replace catalog discovery.
 - Search `q`, sorting `sort=new|click|price`, categories and pagination remain source operations. Source pages contain 60 records; the directory renders 20 per page.
 - An in-memory two-minute source response cache (up to 100 URLs) reduces duplicate reads. A previously successful response may be reused for at most 15 minutes on a transient source error. No product snapshots are written to disk or fabricated as fallbacks.
-- Source images remain the exact CNBuyCha-returned URL from its own image paths or the observed Weidian image CDN. Prices from source HTML are already USD and are only formatted, never converted again.
+- Source images remain the exact CNBuyCha-returned URL from its own image paths or the observed Weidian image CDN. Prices from source HTML are already USD. Display conversion uses daily ExchangeRate-API rates; USD is the base, so there is no second CNY-to-USD conversion. Selected seller styles carry their actual CNY prices and use CNY as their base. Rates are cached in browser storage for 24 hours, with a maximum data age of 72 hours, a visible update date and original-currency fallback.
 - Internal catalog IDs and seller item IDs are separate. `/shoes/3470.html` supplies original Weidian ID `7876894732`.
 - Purchase format: `https://www.lovegobuy.com/product?id={productId}&shop_type=weidian&invite_code=161CPG`. Only verified Weidian URLs are converted; unsupported platforms do not receive invented purchase links.
 - Registration: https://www.lovegobuy.com/login/signup
@@ -19,7 +19,7 @@ Node >=22.23.4, `npm ci`, `npm run dev`. `npm run check:content` verifies 24 com
 
 ## Content and languages
 
-`src/content/articles`, `faq`, and `copy` contain full versioned editorial resources. English at `/`; 23 other languages use their locale prefix. Article and product language switching preserves the same path and query. Product identity, images and price are shared across locales. Original seller titles remain unchanged to preserve model names and avoid inventing translated attributes.
+`src/content/articles`, `faq`, and `copy` contain full versioned editorial resources. English at `/`; 23 other languages use their locale prefix. Article and product language switching preserves the same path and query. Product identity, images and price are shared across locales. Descriptive product title terms are localized server-side using the shared 23-language glossary across cards, detail headings, alt text and metadata. Brand/model identifiers remain unchanged; the original title is available in a disclosure. Unrecognized source words remain original rather than acquiring guessed attributes.
 
 The November 2026 prioritization uses observed GSC queries and pages, Bing keyword research, GA4 landing-page engagement and public competitor coverage; small query samples are treated as directional evidence, not measured growth predictions. Platform facts link to official sources, with review dates shown per source. The 2026-10-23 update adds parcel tracking, shipping stages and official-platform image-search guides in all 24 languages, and improves six existing guides with practical tables and examples. Practical shopping checklists are independent editorial advice. See `docs/research.md` and `docs/brand-assets.md`.
 
@@ -54,3 +54,12 @@ Production GA4 includes `article_open`, `product_open`, `catalog_open`, `catalog
 The source HTML adapter intentionally fails visibly if selectors or upstream access change. Watch source availability and parsing after upstream updates. The development preview host may have different outbound-network access from the deployed Worker; direct bundled-Worker integration checks are also recorded in `docs/validation.md`.
 
 Article text and FAQ translations are complete machine-assisted editorial translations; a native-language editorial review is a sensible later quality pass. No claims of official affiliation, item authenticity, tested sellers, fixed shipping rates or guaranteed refunds are made.
+
+## Product experience — 2026-11-11
+
+- Dual-column detail layout, image enlargement, scrollable style thumbnails with wheel/touch/mouse-drag support, source purchase links and clipboard fallback.
+- `/api/styles/{sellerId}.json` reads the public original Weidian page, checks its embedded item ID and only accepts images on `si.geilicdn.com`. It does not execute source JavaScript. Upstream requests time out after 12 seconds and do not delay the initial product HTML. Memory cache is bounded to 100 items and 10 minutes; no product database is introduced.
+- A style price range covers its sizes when they differ. Copying uses the verified item URL; it does not claim to preselect a style or size on another platform.
+- Other-agent links come from the existing catalog, filtered to recognized HTTPS agent hosts and the same seller ID. Existing referral codes are preserved.
+- The source catalog currently has no verified per-item QC feed; the separate QC section reports this honestly and links to the QC guide. Product/style photos are never relabeled as QC.
+- Run `node scripts/check-commerce.mjs` after the normal build/content and editorial/interaction checks. Managed local preview could not start in this session; live browser validation follows publication.
