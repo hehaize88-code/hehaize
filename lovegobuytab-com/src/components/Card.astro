@@ -1,21 +1,23 @@
 ---
 import Icon from "./Icon.astro";
-import { formatPrice } from "../lib/catalog";
+import Price from "./Price.astro";
+import { productTitle } from "../lib/product-title";
 import { localized } from "../lib/i18n";
 import { productRoute } from "../lib/content";
 const { product: p, lang, t, priority = false } = Astro.props;
+const title = productTitle(p.title, lang);
 ---
 
 <article class="product-card">
   <a
     href={localized(lang, productRoute(p.path))}
     class="product-image"
-    aria-label={p.title}
+    aria-label={title}
   >
     {p.image ? (
       <img
         src={p.image}
-        alt={p.title}
+        alt={title}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         referrerpolicy="no-referrer"
@@ -31,9 +33,11 @@ const { product: p, lang, t, priority = false } = Astro.props;
   </a>
   <div class="product-meta">
     <span>{p.categoryLabel || p.category.replaceAll("-", " ")}</span>
-    <b>{formatPrice(p.price, lang)}</b>
+    <b>
+      <Price price={p.price} lang={lang} />
+    </b>
   </div>
   <h3>
-    <a href={localized(lang, productRoute(p.path))}>{p.title}</a>
+    <a href={localized(lang, productRoute(p.path))}>{title}</a>
   </h3>
 </article>

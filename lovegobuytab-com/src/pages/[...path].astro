@@ -2,6 +2,9 @@
 import Layout from "../components/Layout.astro";
 import Icon from "../components/Icon.astro";
 import Card from "../components/Card.astro";
+import Price from "../components/Price.astro";
+import { productTitle } from "../lib/product-title";
+import productUi from "../content/product-ui.json";
 import ArticleCard from "../components/ArticleCard.astro";
 import Sources from "../components/Sources.astro";
 import { translate, localized, categoryNames } from "../lib/i18n";
@@ -17,6 +20,7 @@ import {
 const { lang, path } = route(Astro.url.pathname);
 const { copy: c, faq, articles, sources } = content(lang);
 const t = translate(lang);
+const ui = (productUi as any)[lang];
 const isHome = path === "/",
   isCatalog =
     path === "/spreadsheet/" || /^\/spreadsheet\/[a-z0-9-]+\/$/.test(path),
@@ -90,7 +94,7 @@ if (isCatalog) {
     (q
       ? `${c.searchResults}: ${q}`
       : category
-        ? `${categoryLabel(category)} — LoveGoBuy Finds`
+        ? `${categoryLabel(category)} — LoveGoBuy ${t.browse}`
         : `LoveGoBuy ${t.browse}`) + " | LoveGoBuy Tab";
   description = c.browseDescription;
 }
@@ -107,6 +111,8 @@ if (article) {
   description = article.description;
 }
 if (product) {
+  product.originalTitle = product.title;
+  product.title = productTitle(product.title, lang);
   title = product.title + " | LoveGoBuy Tab";
   description = `${product.title}. ${c.beforeOrderText}`;
 }
@@ -284,7 +290,7 @@ const catalogGuides = [
                 {p.image && (
                   <img
                     src={p.image}
-                    alt={p.title}
+                    alt={productTitle(p.title, lang)}
                     fetchpriority={i === 0 ? "high" : "auto"}
                     loading="eager"
                     referrerpolicy="no-referrer"
@@ -293,7 +299,9 @@ const catalogGuides = [
               </div>
               <div class="hero-product-caption">
                 <span>{categoryLabel(p.category)}</span>
-                <b>{formatPrice(p.price, lang)}</b>
+                <b>
+                  <Price price={p.price} lang={lang} />
+                </b>
                 <Icon size={16} />
               </div>
             </a>
@@ -711,9 +719,18 @@ const catalogGuides = [
               {categoryLabel(product.category)}
             </a>
           </div>
-          <div class="product-detail">
+          <div
+            class="product-detail product-detail-v2"
+            data-release="product-2026-11-11"
+          >
             <div class="gallery">
-              <div class="gallery-main">
+              <button
+                class="gallery-main"
+                type="button"
+                data-enlarge-main
+                aria-label={ui.enlarge}
+                disabled={!product.images[0]}
+              >
                 {product.images[0] ? (
                   <img
                     id="product-main-image"
@@ -721,60 +738,74 @@ const catalogGuides = [
                     alt={product.title}
                     referrerpolicy="no-referrer"
                     fetchpriority="high"
+                    width="640"
+                    height="640"
                   />
                 ) : (
                   <span>{t.photoMissing}</span>
                 )}
+                <span class="photo-counter">
+                  <span data-photo-index>1</span>
+                  <span data-photo-total> / {product.images.length}</span>
+                </span>
+                <span class="enlarge-hint">{ui.enlarge} ↗</span>
+              </button>
+              <div class="gallery-thumbnails">
+                {product.images.map((image: string, i: number) => (
+                  <button
+                    type="button"
+                    data-photo-src={image}
+                    data-photo-index={i + 1}
+                    data-catalog-photo
+                    data-catalog-price={product.price}
+                    aria-label={`${t.photos} ${i + 1}`}
+                    aria-pressed={i === 0 ? "true" : "false"}
+                  >
+                    <img
+                      src={image}
+                      alt={`${product.title} — ${i + 1}`}
+                      loading="lazy"
+                      referrerpolicy="no-referrer"
+                      width="80"
+                      height="80"
+                    />
+                  </button>
+                ))}
               </div>
-              {product.images.length > 1 && (
-                <div class="gallery-thumbnails">
-                  {product.images.map((image: string, i: number) => (
-                    <button
-                      data-gallery-src={image}
-                      class:list={{ selected: i === 0 }}
-                      aria-label={`${t.photos} ${i + 1}`}
-                      aria-pressed={i === 0 ? "true" : "false"}
-                    >
-                      <img
-                        src={image}
-                        alt={`${product.title} — ${i + 1}`}
-                        loading="lazy"
-                        referrerpolicy="no-referrer"
-                      />
-                    </button>
-                  ))}
-                </div>
-              )}
-              <p class="photo-caption">
-                <Icon name="info" size={16} />
-                {c.photoNote}
-              </p>
+              <p class="photo-caption">{c.photoNote}</p>
             </div>
             <div class="product-information">
               <span class="eyebrow">{categoryLabel(product.category)}</span>
               <h1>{product.title}</h1>
+              <p class="product-id">
+                {c.sourceId}: {product.sourceId || "—"}
+              </p>
+              {lang !== "en" && product.title !== product.originalTitle && (
+                <details class="original-name">
+                  <summary>{ui.original}</summary>
+                  <p lang="en">{product.originalTitle}</p>
+                </details>
+              )}
               <div class="detail-price">
-                {formatPrice(product.price, lang)}
-                <small>USD</small>
+                <span data-detail-money>
+                  <Price price={product.price} lang={lang} />
+                </span>
+                <small data-currency-code>USD</small>
               </div>
-              <p class="price-note">{c.itemPriceNote}</p>
-              <dl>
-                <div>
-                  <dt>{c.sourceId}</dt>
-                  <dd>{product.sourceId || "—"}</dd>
-                </div>
-                <div>
-                  <dt>{c.catalogRef}</dt>
-                  <dd>{productMatch[2]}</dd>
-                </div>
-                <div>
-                  <dt>{t.source}</dt>
-                  <dd>CNBuyCha</dd>
-                </div>
-              </dl>
+              <p class="price-note">{ui.estimate}</p>
+              <p class="rate-note">
+                <span data-rate-status aria-live="polite"></span> ·{" "}
+                <a
+                  href="https://www.exchangerate-api.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  ExchangeRate-API
+                </a>
+              </p>
               {product.buy ? (
                 <a
-                  class="button full-width"
+                  class="button full-width product-buy"
                   href={product.buy}
                   target="_blank"
                   rel="sponsored noopener"
@@ -785,32 +816,116 @@ const catalogGuides = [
               ) : (
                 <p>{c.noPurchaseLink}</p>
               )}
-              <a
-                class="source-link"
-                href={ORIGIN + product.path}
-                target="_blank"
-                rel="noopener"
-              >
-                {c.viewOnSource}
-                <Icon name="arrow" size={15} />
-              </a>
-              <div class="before-order">
-                <Icon name="check" />
-                <div>
-                  <h2>{c.beforeOrder}</h2>
-                  <p>{c.beforeOrderText}</p>
-                  <a
-                    href={localized(
-                      lang,
-                      "/articles/lovegobuy-qc-photo-checklist/",
-                    )}
+              <div class="product-tools">
+                {product.agents.length > 0 && (
+                  <details class="agent-picker">
+                    <summary>
+                      <Icon name="globe" size={17} />
+                      {ui.agents}
+                      <Icon name="chevron" size={14} />
+                    </summary>
+                    <div class="agent-list">
+                      {product.agents.map((agent: any) => (
+                        <a
+                          href={agent.url}
+                          target="_blank"
+                          rel="sponsored noopener"
+                          data-agent={agent.name}
+                        >
+                          {agent.name}
+                          <Icon name="arrow" size={15} />
+                        </a>
+                      ))}
+                    </div>
+                  </details>
+                )}
+                {product.sourceUrl && (
+                  <button
+                    class="copy-weidian"
+                    type="button"
+                    data-copy-weidian={product.sourceUrl}
                   >
-                    {c.qcNav} ↗
-                  </a>
-                </div>
+                    {ui.copy}
+                  </button>
+                )}
               </div>
+              <p
+                class="copy-status"
+                data-copy-status
+                role="status"
+                aria-live="polite"
+              ></p>
+              <input
+                class="original-link"
+                data-original-link
+                value={product.sourceUrl}
+                aria-label={ui.copy}
+                readonly
+                hidden
+              />
+              <p class="selection-note">{ui.selectionNote}</p>
+              <section
+                class="photo-options"
+                data-style-product={product.sourceId}
+              >
+                <div class="photo-options-heading">
+                  <h2>{ui.styles}</h2>
+                  <span data-style-count></span>
+                </div>
+                <p class="style-note" data-style-loading role="status">
+                  {ui.loading}
+                </p>
+                <div
+                  class="style-grid"
+                  data-style-grid
+                  data-drag-scroll
+                  tabindex="0"
+                  role="region"
+                  aria-label={ui.styles}
+                  hidden
+                ></div>
+                <p
+                  class="selected-style"
+                  data-selected-style
+                  aria-live="polite"
+                ></p>
+                <p class="style-note" data-styles-empty hidden>
+                  {ui.noStyles}
+                </p>
+                <noscript>
+                  <p class="style-note">{ui.noStyles}</p>
+                </noscript>
+                {product.sourceUrl && (
+                  <a
+                    class="style-source"
+                    href={product.sourceUrl}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    {t.source} · Weidian ↗
+                  </a>
+                )}
+              </section>
             </div>
           </div>
+          <section class="qc-section" aria-labelledby="qc-heading">
+            <div class="photo-options-heading">
+              <h2 id="qc-heading">{ui.qc}</h2>
+              <span>0</span>
+            </div>
+            <p>{ui.noQc}</p>
+            <a
+              href={localized(lang, "/articles/lovegobuy-qc-photo-checklist/")}
+            >
+              {c.qcNav} ↗
+            </a>
+          </section>
+          <dialog class="photo-dialog" data-photo-dialog aria-label={t.photos}>
+            <button type="button" data-photo-close aria-label={ui.close}>
+              ×
+            </button>
+            <img alt={product.title} referrerpolicy="no-referrer" />
+          </dialog>
           <nav class="guide-links" aria-label={c.catalogGuides}>
             <strong>{c.catalogGuides}</strong>
             {catalogGuides.map((a: any) => (
@@ -1089,19 +1204,4 @@ const catalogGuides = [
     const empty = document.querySelector<HTMLElement>(".no-faq");
     if (empty) empty.hidden = count > 0;
   });
-  document
-    .querySelectorAll<HTMLButtonElement>("[data-gallery-src]")
-    .forEach((button) =>
-      button.addEventListener("click", () => {
-        const main = document.querySelector<HTMLImageElement>(
-          "#product-main-image",
-        );
-        if (main && button.dataset.gallerySrc)
-          main.src = button.dataset.gallerySrc;
-        document.querySelectorAll("[data-gallery-src]").forEach((b) => {
-          b.classList.toggle("selected", b === button);
-          b.setAttribute("aria-pressed", String(b === button));
-        });
-      }),
-    );
 </script>
