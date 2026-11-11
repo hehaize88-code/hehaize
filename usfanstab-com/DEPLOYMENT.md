@@ -26,3 +26,5 @@ All 3467 product galleries (13544 images) indexed. Additional verified styles fr
 Source prepared. Astro build and 16 language sitemap/SEO checks passed, including robots, www redirect, preview noindex and invalid sitemap handling. Cloudflare login is required before deployment/domain activation can be verified.
 
 Local Wrangler dry-run could not complete because Windows sandbox denied esbuild parent-directory access. Astro build and direct Worker request checks passed. Cloudflare runtime validation remains pending authentication.
+
+GitHub main publication confirmed: 730586b48cff73dfeda56550c124e377d9586e5f. Cloudflare connector, dashboard and local CLI are unauthenticated/expired; Worker publication and DNS/HTTPS verification are still pending.

@@ -184,3 +184,16 @@ FAQ 规划至少 20 个实用问题；文章先按已核实需求写，避免批
 
 ## 2026-11-11 production domain
 User purchased usfanstab.com and authorized GitHub + Cloudflare deployment. Folder usfanstab-com in hehaize88-code/hehaize. Production SEO and Worker domain settings prepared; Cloudflare connector unauthorized and dashboard logged out. Do not claim live until verified.
+
+
+## 2026-11-11 正式域名部署进度
+- 用户已购买 usfanstab.com，并授权部署 GitHub 和 Cloudflare。域名选择结束，不再使用候选域名。
+- GitHub 已提交到 hehaize88-code/hehaize 的 main 分支，独立文件夹 usfanstab-com；初始提交 730586b48cff73dfeda56550c124e377d9586e5f。其他站点目录未修改。
+- 地址：https://github.com/hehaize88-code/hehaize/tree/main/usfanstab-com 。
+- Astro SSR 构建通过；50个源文件内容 SHA 与 GitHub blob 完全一致。Wrangler 4.160.0 已锁定，Worker 名 usfanstab-com，主域与www custom_domain 已配置。
+- 正式版 canonical、8语言互指hreflang和x-default、robots、8份语言 sitemap（每份3497 URL，其中3467商品）已配置。www及HTTP统一308到HTTPS主域；保留路径和查询。搜索/排序、错误、API及workers.dev不索引。
+- 16项语言sitemap/FAQ SEO检查以及robots、www跳转、预览noindex、无效sitemap404通过。Astro build通过，打包Worker gzip约2.12MB。
+- 本地Wrangler dry-run受Windows目录读取限制未完成；不宣称Cloudflare运行时已经验收。
+- Cloudflare连接未授权、浏览器停在登录页、本机Wrangler令牌过期且无法刷新。尚未发布Worker、绑定域名或核实DNS/HTTPS。需要用户恢复Cloudflare登录/连接后继续。
+- 预览继续可用：https://usfans-catalog-preview.hehaize88.chatgpt.site/ ，未修改预览。
+- 数据源仍为cnbuycha.com；图库全量及款式部分覆盖的限制保持不变。
