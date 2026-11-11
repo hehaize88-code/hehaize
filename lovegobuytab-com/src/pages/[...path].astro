@@ -253,6 +253,7 @@ const catalogGuides = [
           <p class="hero-description">{c.heroDescription}</p>
           <form
             class="search-form hero-search"
+            data-image-search-form
             action={localized(lang, "/spreadsheet/")}
           >
             <Icon name="search" />
@@ -263,6 +264,17 @@ const catalogGuides = [
               aria-label={t.search}
               maxlength="120"
             />
+            <button
+              type="button"
+              class="search-camera"
+              data-image-search-trigger
+              aria-label={t.visual}
+              title={t.visual}
+              aria-haspopup="dialog"
+              aria-controls="search-image-dialog"
+            >
+              <Icon name="camera" size={22} />
+            </button>
             <button type="submit" aria-label={t.search}>
               <Icon name="right" />
             </button>
@@ -538,6 +550,7 @@ const catalogGuides = [
         <p>{c.browseDescription}</p>
         <form
           class="search-form catalog-search"
+          data-image-search-form
           action={localized(
             lang,
             category ? `/spreadsheet/${category}/` : "/spreadsheet/",
@@ -553,6 +566,17 @@ const catalogGuides = [
             maxlength="120"
           />
           {sort !== "new" && <input type="hidden" name="sort" value={sort} />}
+          <button
+            type="button"
+            class="search-camera"
+            data-image-search-trigger
+            aria-label={t.visual}
+            title={t.visual}
+            aria-haspopup="dialog"
+            aria-controls="search-image-dialog"
+          >
+            <Icon name="camera" size={22} />
+          </button>
           <button type="submit" aria-label={t.search}>
             <Icon name="right" />
           </button>
@@ -1011,7 +1035,11 @@ const catalogGuides = [
       <section class="wrap narrow section faq-page">
         <div class="faq-list">
           {faq.map((f: any, i: number) => (
-            <details id={f.id} data-faq={f.question + " " + f.answer}>
+            <details
+              id={f.id}
+              name="faq-answers"
+              data-faq={f.question + " " + f.answer}
+            >
               <summary>
                 <span class="faq-index">{String(i + 1).padStart(2, "0")}</span>
                 {f.question}
@@ -1134,49 +1162,58 @@ const catalogGuides = [
             ))}
           </div>
           {article.sections.map((s: any, i: number) => (
-            <section id={"section-" + i}>
-              <h2>{s.heading}</h2>
-              {s.paragraphs.map((p: string) => (
-                <p>{p}</p>
-              ))}
-              {s.bullets?.length > 0 && (
-                <ul>
-                  {s.bullets.map((b: string) => (
-                    <li>{b}</li>
-                  ))}
-                </ul>
-              )}
-              {s.table && (
-                <table class="editorial-table">
-                  <caption>{s.heading}</caption>
-                  <thead>
-                    <tr>
-                      {s.table.columns.map((label: string) => (
-                        <th scope="col">{label}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {s.table.rows.map((row: string[]) => (
+            <details
+              class="article-section"
+              name="article-sections"
+              id={"section-" + i}
+            >
+              <summary>
+                <h2>{s.heading}</h2>
+                <Icon name="plus" size={18} />
+              </summary>
+              <div class="article-section-content">
+                {s.paragraphs.map((p: string) => (
+                  <p>{p}</p>
+                ))}
+                {s.bullets?.length > 0 && (
+                  <ul>
+                    {s.bullets.map((b: string) => (
+                      <li>{b}</li>
+                    ))}
+                  </ul>
+                )}
+                {s.table && (
+                  <table class="editorial-table">
+                    <caption>{s.heading}</caption>
+                    <thead>
                       <tr>
-                        {row.map((cell: string, j: number) => (
-                          <td data-label={s.table.columns[j]}>{cell}</td>
+                        {s.table.columns.map((label: string) => (
+                          <th scope="col">{label}</th>
                         ))}
                       </tr>
+                    </thead>
+                    <tbody>
+                      {s.table.rows.map((row: string[]) => (
+                        <tr>
+                          {row.map((cell: string, j: number) => (
+                            <td data-label={s.table.columns[j]}>{cell}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+                {s.links?.length > 0 && (
+                  <nav class="article-links" aria-label={s.heading}>
+                    {s.links.map((link: any) => (
+                      <a href={localized(lang, link.path)}>
+                        {link.label} <span aria-hidden="true">→</span>
+                      </a>
                     ))}
-                  </tbody>
-                </table>
-              )}
-              {s.links?.length > 0 && (
-                <nav class="article-links" aria-label={s.heading}>
-                  {s.links.map((link: any) => (
-                    <a href={localized(lang, link.path)}>
-                      {link.label} <span aria-hidden="true">→</span>
-                    </a>
-                  ))}
-                </nav>
-              )}
-            </section>
+                  </nav>
+                )}
+              </div>
+            </details>
           ))}
           <aside class="takeaways">
             <h2>{c.takeaways}</h2>
@@ -1189,9 +1226,16 @@ const catalogGuides = [
               ))}
             </ul>
           </aside>
-          <div id="official-sources">
+          <details
+            id="official-sources"
+            class="article-section article-sources"
+          >
+            <summary>
+              <h2>{c.sourceHeading}</h2>
+              <Icon name="plus" size={18} />
+            </summary>
             <Sources ids={article.sourceIds} sources={sources} copy={c} />
-          </div>
+          </details>
           <p class="editorial-note">{c.articleAdvice}</p>
           <nav class="guide-links" aria-label={c.nextStep}>
             <strong>{c.nextStep}</strong>
@@ -1218,8 +1262,47 @@ const catalogGuides = [
       </section>
     </>
   ) : null}
+  {(isHome || isCatalog) && !is404 && (
+    <dialog
+      id="search-image-dialog"
+      class="visual-dialog"
+      aria-labelledby="search-image-title"
+      data-image-search-dialog
+    >
+      <div class="visual-dialog-heading">
+        <h2 id="search-image-title">{t.visual}</h2>
+        <button
+          type="button"
+          class="icon-button"
+          data-image-search-close
+          aria-label={c.close}
+        >
+          <Icon name="close" />
+        </button>
+      </div>
+      <ImageSearch lang={lang} t={t} embedded />
+    </dialog>
+  )}
 </Layout>
 <script>
+  function revealArticleSection() {
+    let id;
+    try {
+      id = decodeURIComponent(location.hash.slice(1));
+    } catch {
+      return;
+    }
+    const section = document.getElementById(id);
+    if (
+      section instanceof HTMLDetailsElement &&
+      section.matches(".article-section, [data-faq]")
+    ) {
+      section.open = true;
+      section.scrollIntoView({ block: "start" });
+    }
+  }
+  window.addEventListener("hashchange", revealArticleSection);
+  if (location.hash) revealArticleSection();
   const articleContents =
     document.querySelector<HTMLDetailsElement>(".toc-details");
   if (articleContents)

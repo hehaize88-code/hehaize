@@ -6,6 +6,7 @@ import productUi from "../content/product-ui.json";
 import { languages, localized } from "../lib/i18n";
 import { REGISTER } from "../lib/catalog";
 import "../styles/global.css";
+import "../styles/compact.css";
 const { lang, path, title, description, copy: c, t, jsonLd } = Astro.props;
 const ui = (productUi as any)[lang];
 const currencies =
@@ -97,7 +98,7 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
       />
     )}
   </head>
-  <body>
+  <body class:list={{ "compact-page": path !== "/" }}>
     <div class="announcement">
       <span>{c.independent}</span>
       <span class="announcement-sep">/</span>
