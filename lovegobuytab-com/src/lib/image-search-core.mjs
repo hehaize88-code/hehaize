@@ -64,6 +64,9 @@ export function fingerprint(
   function pixels(w, h) {
     canvas.width = w;
     canvas.height = h;
+    // Downsampling must average fine detail rather than aliasing compressed images.
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = "high";
     ctx.fillStyle = "#fff";
     ctx.fillRect(0, 0, w, h);
     ctx.drawImage(image, ...area, 0, 0, w, h);

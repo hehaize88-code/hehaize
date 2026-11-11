@@ -71,7 +71,7 @@ import json,io
 im=Image.open('tests/fixtures/visual-lego.jpg').convert('RGB')
 b=io.BytesIO();im.resize((320,320)).save(b,format='JPEG',quality=65)
 out=[]
-for x in [im,Image.open(io.BytesIO(b.getvalue()))]:
+for x in [im,Image.open(io.BytesIO(b.getvalue())),im.resize((128,128)).quantize(colors=64).convert('RGB')]:
  d={}
  for w,h in [(9,8),(4,4)]: d[str(w)]=list(x.resize((w,h),Image.Resampling.LANCZOS).convert('RGBA').tobytes())
  out.append(d)
@@ -179,6 +179,7 @@ async function setup() {
   }
   return {
     document,
+    window,
     node,
     event,
     file,
@@ -196,6 +197,7 @@ async function setup() {
   );
   assert.ok(u.refreshes() > 0);
   assert.equal(u.fetches(), 1);
+  u.event(u.window, "pagehide", { persisted: true });
   u.event(u.node("retry"), "click");
   await flush();
   assert.equal(u.fetches(), 1);
