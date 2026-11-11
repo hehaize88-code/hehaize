@@ -10,11 +10,9 @@ export async function dictionary(lang:string,assets?:any){
  if(cache.size>=3)cache.delete(cache.keys().next().value!);
  cache.set(lang,data);return data as Record<string,string>;
 }
-const brands=/\b(?:True Religion|Ture Religion|Chrome Hearts|Stone Island|Palm Angels|Off[- ]White|The North Face|White Fox|New Balance|Black Diamond|Golden Goose|Canada Goose|Louis Vuitton|Air Force \d+|Air Jordan \d+|Ralph Lauren|Nike|Adidas|Dior|Burberry|Balenciaga|Chanel|Gucci|Moncler|Prada|Corteiz|Amiri|Fendi|Stussy|Lacoste|Supreme|Cartier|Rolex|Saint Laurent|Hermes|YSL|Versace|Patagonia|Margiela|Carhartt|Trapstar)\b/gi;
-export function localizedProduct(raw:string,lang:string,d:Record<string,string>={}){
- const normalized=raw.replace(/\s+/g,' ').trim();
- const candidate=d[raw]||d[normalized];
- if(candidate&&[...normalized.matchAll(brands)].every(match=>candidate.toLowerCase().includes(match[0].toLowerCase())))return candidate;
- return productTitle(normalized,lang);
+// Use reviewed clothing/product terms, never the legacy sentence translations
+// which confused products (for example German Hoodie -> Kopf).
+export function localizedProduct(raw:string,lang:string,_dictionary:Record<string,string>={}){
+ return productTitle(raw,lang);
 }
 export function ui(lang:string){return (productUI as any)[lang]||productUI.en;}

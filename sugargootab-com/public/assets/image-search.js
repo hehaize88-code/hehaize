@@ -1,9 +1,10 @@
+import {translateProductTitle} from './product-title.mjs?v=20261111-sugar-2';
 import {loadDictionary} from './locale-core.mjs';
 import { acceptsImage, fingerprint, rankProducts, validProduct, selectResults } from './image-search-core.mjs?v=20261111-visual-v2';
 
 const input = document.getElementById('image-file');
 if (input) initialize();
-async function initialize() {
+function initialize() {
   const locale = document.querySelector('body[data-locale]')?.dataset.locale || 'en';
   const base = (locale === 'en' ? '' : '/' + locale) + '/products';
   const text = {
@@ -11,25 +12,40 @@ async function initialize() {
     'pt-br': {loading:'Carregando imagens do catálogo…',reading:'Lendo sua foto…',comparing:'Comparando imagens…',file:'Escolha JPG, PNG, WebP ou GIF de até 20 MB.',large:'Esta foto é grande demais. Reduza para menos de 40 megapixels e tente novamente.',index:'Não foi possível carregar o catálogo. Verifique sua conexão e selecione Buscar novamente.',cancel:'Busca cancelada. Busque novamente ou escolha outra foto.',empty:'Escolha uma foto para encontrar produtos semelhantes.',count:'produtos comparados',results:'fotos mais próximas',date:'Catálogo atualizado em',weak:'Nenhuma correspondência visual próxima foi encontrada. Estas são as fotos mais próximas do catálogo; tente uma foto mais nítida ou o recorte central.',blank:'Esta imagem tem poucos detalhes visíveis. Escolha uma foto nítida de um único produto.',note:'Compare as fotos e o ID original. A aparência semelhante não confirma que seja o mesmo produto.',more:'Mostrar mais',remaining:'restantes',readError:'Não foi possível ler a imagem. Salve como JPG, PNG ou WebP e tente novamente.'},
     de: {loading:'Katalogbilder werden geladen…',reading:'Foto wird gelesen…',comparing:'Bilder werden verglichen…',file:'Wähle JPG, PNG, WebP oder GIF bis zu 20 MB.',large:'Dieses Foto ist zu groß. Verkleinere es auf unter 40 Megapixel und versuche es erneut.',index:'Die Katalogbilder konnten nicht geladen werden. Prüfe deine Verbindung und wähle Erneut suchen.',cancel:'Suche abgebrochen. Suche erneut oder wähle ein anderes Foto.',empty:'Wähle ein Foto, um ähnliche Produkte zu finden.',count:'Produkte verglichen',results:'ähnlichste Fotos',date:'Katalogstand',weak:'Keine hohe visuelle Übereinstimmung gefunden. Dies sind die ähnlichsten Katalogfotos. Versuche ein deutlicheres Foto oder den mittleren Ausschnitt.',blank:'Dieses Bild enthält zu wenige sichtbare Details. Wähle ein klares Foto eines einzelnen Artikels.',note:'Vergleiche die Fotos und die Original-ID. Ähnliches Aussehen bestätigt keinen identischen Artikel.',more:'Mehr anzeigen',remaining:'übrig',readError:'Das Bild konnte nicht gelesen werden. Speichere es als JPG, PNG oder WebP und versuche es erneut.'}
   };
-  const dictionary=await loadDictionary(locale);
+  let dictionary={},glossaries={};
+  const translationsReady=Promise.all([loadDictionary(locale),fetch('/assets/product-glossary.json').then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([labels,terms])=>{
+    dictionary=labels;glossaries=terms;
+    Object.keys(text.en).forEach(key=>t[key]=dictionary[text.en[key]]||(text[locale]||text.en)[key]);
+  });
+  const title=value=>translateProductTitle(value,locale,glossaries);
   const tr=value=>dictionary[value]||value;
   const t = Object.fromEntries(Object.entries(text.en).map(([key,value])=>[key,dictionary[value]||(text[locale]||text.en)[key]]));
   const byId = id => document.getElementById('image-' + id);
   const status = byId('status'), results = byId('results'), preview = byId('preview'), controls = byId('controls');
   const drop = byId('drop'), focus = byId('focus'), crop = byId('crop-overlay'), cancel = byId('cancel');
   const retry = byId('retry'), reset = byId('reset'), progress = byId('progress'), more = byId('more'), note = byId('result-note');
-  let sequence = 0, objectUrl = null, currentImage = null, indexPromise = null, ranked = [], visible = 12;
+  const dialog = document.getElementById('image-search-dialog');
+  let lastTrigger = null;
+  document.querySelectorAll('[data-image-search-trigger]').forEach(trigger => trigger.addEventListener('click', e => {
+    e.preventDefault(); lastTrigger = trigger; input.click();
+  }));
+  if (dialog) {
+    dialog.addEventListener('close', () => { if (results.getAttribute('aria-busy') === 'true') stop(); lastTrigger?.focus(); });
+    dialog.addEventListener('click', e => { if (e.target !== dialog) return; const r=dialog.getBoundingClientRect(); if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close(); });
+  }
+  let sequence = 0, objectUrl = null, currentImage = null, indexPromise = null, ranked = [], visible = 8;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const event = detail => document.dispatchEvent(new CustomEvent('sugargoo:image-search', {detail}));
   function busy(value) { results.setAttribute('aria-busy', String(value)); progress.hidden = cancel.hidden = !value; retry.disabled = value || !currentImage; }
-  function clearResults() { ranked = []; results.replaceChildren(); note.hidden = more.hidden = true; }
+  function clearResults() { byId('results-section').hidden = true; ranked = []; results.replaceChildren(); note.hidden = more.hidden = true; }
   function release() { if (objectUrl) URL.revokeObjectURL(objectUrl); objectUrl = null; currentImage = null; preview.removeAttribute('src'); }
   function stop() { sequence++; if (!currentImage) release(); busy(false); status.textContent = t.cancel; }
   function showResults() {
+    byId('results-section').hidden = false;
     results.innerHTML = ranked.slice(0, visible).map(({p}) => {
       const image = p.image.startsWith('https://') ? p.image : 'https://cnbuycha.com' + p.image;
       const price = p.price !== '' && Number.isFinite(Number(p.price)) ? '$' + Number(p.price).toFixed(2) : '—';
-      return `<article class="catalog-card"><a href="${base}${esc(p.path)}"><img src="${esc(image)}" alt="${esc(tr(p.title))}" width="400" height="400" loading="lazy"><h3>${esc(tr(p.title))}</h3><div class="card-meta"><strong data-price-amount="${esc(p.price)}" data-price-currency="USD">${price}</strong><span><span data-currency-code>USD</span> · ↗</span></div></a></article>`;
+      return `<article class="catalog-card"><a href="${base}${esc(p.path)}"><img src="${esc(image)}" alt="${esc(title(p.title))}" width="400" height="400" loading="lazy"><h3>${esc(title(p.title))}</h3><div class="card-meta"><strong data-price-amount="${esc(p.price)}" data-price-currency="USD">${price}</strong><span><span data-currency-code>USD</span> · ↗</span></div></a></article>`;
     }).join('');
     more.hidden = visible >= ranked.length;
     more.textContent = `${t.more} (${Math.max(0, ranked.length - visible)} ${t.remaining})`;
@@ -65,7 +81,7 @@ async function initialize() {
       if (turn !== sequence) return;
       const selected = selectResults(rankProducts(query, index.products));
       ranked = selected.items;
-      visible = 12; showResults();
+      visible = 8; showResults();
       // A distance is a heuristic, never a probability or an identity claim.
       note.textContent = selected.weak ? t.weak : t.note;
       note.classList.toggle('image-low-confidence', selected.weak);
@@ -77,8 +93,12 @@ async function initialize() {
   }
   async function choose(file) {
     if (!file) return;
+    if (dialog && !dialog.open) dialog.showModal();
     const turn = ++sequence;
     clearResults(); release(); controls.hidden = true; focus.value = 'full'; crop.hidden = true; input.value = '';
+    busy(true); status.textContent = t.reading;
+    await translationsReady;
+    if (turn !== sequence) return;
     if (!acceptsImage(file)) { busy(false); status.textContent = t.file; event({status:'error',reason:'file'}); return; }
     busy(true); status.textContent = t.reading;
     const url = URL.createObjectURL(file), img = new Image();
@@ -92,19 +112,28 @@ async function initialize() {
     } catch { if (turn === sequence) { release(); busy(false); status.textContent = t.readError; event({status:'error',reason:'file'}); } }
   }
   input.addEventListener('change', () => choose(input.files[0]));
-  drop.addEventListener('dragover', e => { if ([...e.dataTransfer.types].includes('Files')) { e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; drop.classList.add('is-dragging'); } });
-  drop.addEventListener('dragleave', e => { if (!drop.contains(e.relatedTarget)) drop.classList.remove('is-dragging'); });
-  drop.addEventListener('drop', e => { e.preventDefault(); drop.classList.remove('is-dragging'); choose(e.dataTransfer.files[0]); });
+  [drop, ...document.querySelectorAll('[data-image-search-target]')].forEach(target => {
+    target.addEventListener('dragover', e => { if ([...e.dataTransfer.types].includes('Files')) { e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; target.classList.add('is-dragging'); } });
+    target.addEventListener('dragleave', e => { if (!target.contains(e.relatedTarget)) target.classList.remove('is-dragging'); });
+    target.addEventListener('drop', e => {
+      if (![...e.dataTransfer.types].includes('Files')) return;
+      e.preventDefault(); target.classList.remove('is-dragging');
+      lastTrigger = target.querySelector('[data-image-search-trigger]') || lastTrigger;
+      choose(e.dataTransfer.files[0]);
+    });
+  });
   document.addEventListener('paste', e => {
-    if (e.target?.closest('input:not([type="file"]),textarea,[contenteditable="true"]')) return;
+    const searchBox = e.target?.closest('[data-image-search-target]');
+    if (e.target?.closest('input:not([type="file"]),textarea,[contenteditable="true"]') && !searchBox) return;
+    if (dialog && !dialog.open && !searchBox) return;
     const item = [...(e.clipboardData?.items || [])].find(item => item.kind === 'file' && item.type.startsWith('image/'));
-    if (item) { e.preventDefault(); choose(item.getAsFile()); }
+    if (item) { e.preventDefault(); lastTrigger=searchBox?.querySelector('[data-image-search-trigger]')||lastTrigger; choose(item.getAsFile()); }
   });
   retry.addEventListener('click', compare);
   focus.addEventListener('change', compare);
   cancel.addEventListener('click', stop);
   reset.addEventListener('click', () => { sequence++; clearResults(); release(); controls.hidden = true; input.value = ''; focus.value = 'full'; crop.hidden = true; busy(false); status.textContent = t.empty; input.focus(); });
-  more.addEventListener('click', () => { visible += 12; showResults(); });
+  more.addEventListener('click', () => { visible += 8; showResults(); });
   window.addEventListener('pagehide', () => { sequence++; release(); });
   busy(false);
 }

@@ -28,7 +28,7 @@ function renderPrices() {
   if (node.textContent !== formatted) node.textContent = formatted;
   node.dataset.displayCurrency = code;
   node.title = `${t('Reference price')}: ${formatPrice(amount, original)}`;
-  const codeNode = node.closest('.product-card,.detail-price,.live-product-price')?.querySelector('[data-currency-code]');
+  const codeNode = node.closest('.product-card,.catalog-card,.detail-price,.live-product-price')?.querySelector('[data-currency-code]');
   if (codeNode && codeNode.textContent !== code) codeNode.textContent = code;
  }
 }
@@ -124,7 +124,7 @@ function initDetail(){
   if(selected.has(styleGroup))url.searchParams.set('style',selected.get(styleGroup));
   if(variant)url.searchParams.set('option',variant.id);
   history.replaceState(null,'',url.pathname+url.search+url.hash);
-  document.querySelectorAll('[data-locale-code]').forEach(link=>{const next=new URL(link.href);next.search=url.search;link.href=next.href;});
+  document.querySelectorAll('a[data-locale-code]').forEach(link=>{const next=new URL(link.href);next.search=url.search;link.href=next.href;});
  }
  function chooseStyle(id){
   selected.set(styleGroup,id);

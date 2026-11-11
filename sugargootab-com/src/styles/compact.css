@@ -1,0 +1,70 @@
+/* Search photos directly from the existing text search, without leaving the page. */
+.search-camera{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;color:#343834;background:#f6f4f0;border:1px solid #e4e0d8;border-radius:5px;cursor:pointer}
+.search-camera:hover{background:#fff0e7;color:#bd3c15;border-color:#ee9e80}
+.search-camera:focus-visible{outline:3px solid #e65a31;outline-offset:2px}
+.input-wrap .search-camera{margin-right:-9px}.input-wrap .search-camera svg{color:inherit}
+[data-image-search-target].is-dragging{outline:3px dashed #ef5b2b;outline-offset:4px;background:#fff1e8}
+.image-search-dialog{margin:auto;width:min(960px,94vw);max-height:92dvh;padding:0 24px 24px;border:1px solid #e4ded5;border-radius:14px;background:#fff;color:#262b26;overflow:auto;overscroll-behavior:contain}
+.image-search-dialog::backdrop{background:#171f21b8;backdrop-filter:blur(3px)}
+body:has(.image-search-dialog[open]){overflow:hidden}
+.image-search-dialog:not([open]),.image-results-section[hidden]{display:none}
+.image-dialog-heading{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0 12px;background:white;border-bottom:1px solid var(--line)}
+.image-dialog-heading h2{font-size:23px;line-height:1.2}
+.image-dialog-close{width:44px;height:44px;border:1px solid #deded7;border-radius:50%;background:#f5f4f0;font-size:29px;line-height:1;cursor:pointer}
+.image-search-dialog .image-search-panel{margin-top:16px;margin-bottom:16px;padding:16px}
+.image-search-dialog .image-drop{padding:20px 12px}.image-search-dialog .image-drop strong{font-size:18px}
+.image-search-panel:has(#image-controls:not([hidden])) .image-drop{flex-direction:row;justify-content:center;padding:12px;gap:6px 16px}
+.image-search-panel:has(#image-controls:not([hidden])) .image-drop span{display:none}
+.image-search-dialog .image-results-section{margin:20px 0 0}
+.image-search-dialog .catalog-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+/* Keep the initial reading view short; every section and archive link stays in the HTML. */
+.article-archive{margin-top:18px;border:1px solid var(--line)}
+.article-archive>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;padding:12px 18px;background:#f6f5f0;cursor:pointer;font-size:14px;font-weight:600;list-style:none}
+.article-archive>summary::-webkit-details-marker{display:none}
+.article-archive .archive-open,.article-archive[open] .archive-closed{display:none}
+.article-archive[open] .archive-open{display:inline}.article-archive[open]>summary svg{transform:rotate(180deg)}
+.article-section{margin-top:0;border-top:1px solid var(--line)}
+.article-section>summary{min-height:52px;padding:14px 0}
+.article-section>summary h2{font-size:21px;line-height:1.4;letter-spacing:-.3px}
+.article-section[open]>summary{margin-bottom:0}
+.article-section .chapter-body{padding-bottom:14px}
+.article-checklist,.article-sources{margin:16px 0;padding:14px 16px}
+.article-checklist>summary h2,.article-sources>summary h2{font-size:21px}
+.article-sources{border:1px solid var(--line)}
+.article-related{margin-top:28px;padding-top:22px}
+body:not([data-page-type="home"]) .inner-page{padding-top:18px;padding-bottom:28px}
+.catalog-guidance{margin-bottom:18px}.catalog-guidance nav{gap:8px 18px}
+.category-grid>a{padding:20px}.category-grid h2{margin:12px 0 8px}
+.source-photo-grid{max-height:320px;overflow:auto;overscroll-behavior-y:contain}
+@media(max-width:1050px){.header-inner>nav{overflow:visible;white-space:normal}}
+@media(max-width:760px){
+ .directory-search{gap:8px;padding-left:10px}.directory-search>svg{display:none}
+ .directory-search input{font-size:13px}.directory-search .search-camera{flex-basis:44px}
+ .catalog-toolbar .input-wrap{padding-left:10px;gap:8px}.catalog-toolbar .input-wrap>svg{display:none}
+ .catalog-toolbar .input-wrap input{font-size:13px}
+ .image-search-dialog{width:96vw;max-height:94dvh;padding:0 12px 16px;border-radius:10px}
+ .image-dialog-heading{padding-top:10px}.image-dialog-heading h2{font-size:20px}
+ .image-search-dialog .image-search-panel{padding:12px;margin-top:12px}
+ .image-search-dialog .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .image-controls{gap:10px;padding-block:12px}.image-preview-wrap{flex-basis:86px;max-width:86px}
+ .image-controls .image-options p{font-size:12px}.image-actions{gap:6px;flex-wrap:wrap}
+ .image-actions button{padding:8px 10px;min-height:42px}.image-drop{padding:18px 12px}
+ .image-results-section{margin-block:18px}.image-results-section>h2{margin-top:16px}
+ .article-section>summary{padding:12px 0;min-height:48px}
+ .article-section>summary h2{font-size:17px;letter-spacing:-.2px}
+ .article-checklist>summary h2,.article-sources>summary h2{font-size:17px}
+ .article-checklist,.article-sources{margin:12px 0;padding:12px}
+ .article-related{margin-top:20px;padding-top:16px}.article-related>h2{font-size:20px}
+ .article-archive>summary{font-size:13px;padding:12px}
+ .faq-columns{gap:18px}.faq-group h2{font-size:18px;padding-bottom:8px}
+ .faq-item summary{padding:11px 0;min-height:44px;font-size:13px}
+ .category-grid>a{padding:16px}.category-grid h2{font-size:17px;margin-top:10px}
+ .source-photo-grid{max-height:250px}
+ body[data-page-type="detail"] .product-section{padding:24px 0 12px}
+ body[data-page-type="detail"] .product-section>h2{font-size:22px;margin-bottom:16px}
+}
+@media print{
+ .reading-controls,.article-archive>summary,.search-camera{display:none}
+ .source-photo-grid{max-height:none;overflow:visible}
+}

@@ -20,6 +20,7 @@ export function localizeCatalogueHtml(html, dictionary, locale) {
   return found?s.replace(trimmed,encodeText(found)):s;
  };
  const protectedBlocks = [];
+ html=html.replace(/<h1\b[^>]*data-product-title[^>]*>[\s\S]*?<\/h1>|<img\b[^>]*data-product-title[^>]*>/gi,value=>`<!--LOCALE_BLOCK_${protectedBlocks.push(value)-1}-->`);
  html=html.replace(/<a\b[^>]*(?:data-locale-code|data-agent)="[^"]+"[^>]*>[\s\S]*?<\/a>/gi,value=>`<!--LOCALE_BLOCK_${protectedBlocks.push(value)-1}-->`);
  html = html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, value => {
   if(value.includes('application/ld+json'))try{const data=JSON.parse(value.replace(/^<script[^>]*>|<\/script>$/gi,''));const walk=(v,key='')=>Array.isArray(v)?v.map(x=>walk(x,key)):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,walk(x,k)])):typeof v==='string'&&!key.startsWith('@')?(key==='inLanguage'?locale:dictionary[v]||v):v;value='<script type="application/ld+json">'+JSON.stringify(walk(data)).replaceAll('<','\\u003c')+'</script>';}catch{}

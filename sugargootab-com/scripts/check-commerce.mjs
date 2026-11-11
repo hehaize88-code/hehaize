@@ -33,3 +33,47 @@ const index=JSON.parse(fs.readFileSync(new URL('../public/assets/catalog-image-i
 for(const sample of [index.products[0],index.products[100],index.products.at(-1)]){const hits=selectResults(rankProducts(sample,index.products));assert(hits.items.some(x=>x.p.path===sample.path&&x.score===0));}
 assert(!acceptsImage({name:'test.svg',type:'image/svg+xml',size:100}));assert(!acceptsImage({name:'big.jpg',type:'image/jpeg',size:21*1024*1024}));
 console.log(JSON.stringify({locales:locales.length,detailAndSearchRoutes:48,realTitleAndMetadata:'pass',currencies:30,agents:12,optionsIdentityAndAvailability:'pass',ratesValidation:'pass',imageIndex:index.indexedCount,imageExactMatches:'pass'}));
+// Regression: legacy sentence translations must not turn clothing into unrelated words.
+const {translateProductTitle}=await import('../public/assets/product-title.mjs');
+const glossaries=JSON.parse(fs.readFileSync(new URL('../src/content/product-glossary.json',import.meta.url)));
+for(const [lang,g] of Object.entries(glossaries)){
+ assert.equal(translateProductTitle('Lacoste Hoodie',lang,glossaries),'Lacoste '+g.hoodie,lang);
+ assert.equal(translateProductTitle('Lacoste Polo',lang,glossaries),'Lacoste '+g['polo shirt'],lang);
+ assert.equal(translateProductTitle('New Balance shoes',lang,glossaries),'New Balance '+g.shoes,lang);
+ assert.equal(translateProductTitle('Adidas XLG Runner Deluxe',lang,glossaries),'Adidas XLG Runner Deluxe',lang);
+ assert.equal(translateProductTitle('Goyard Shoulder Bag',lang,glossaries),'Goyard '+g['shoulder bag'],lang);
+ assert(!translateProductTitle('Stone Island T-shirt #StoneIsland_W2C #Tshirt_W2C',lang,glossaries).includes('#'),lang);
+}
+globalThis.fetch=async()=>new Response(fixture.replace('High-quality jacket','Lacoste Hoodie'));
+try{
+ const response=await worker.fetch(new Request('https://sugargootab.com/de/products/jackets/3492.html'),{ASSETS:assets},{});
+ const document=parseHTML(await response.text()).document;
+ assert.equal(document.querySelector('h1').textContent,'Lacoste Kapuzenpullover');
+ assert.equal(document.querySelector('#gallery-main').getAttribute('alt'),'Lacoste Kapuzenpullover');
+}finally{globalThis.fetch=originalFetch;}
+console.log('Product title regressions: 23 languages, preserved brand/model names and rendered German heading/alt passed');
+
+// Search-box entry points share one local-file dialog and keep text search intact.
+const catalogueFixture='<a class="category-item" href="/jackets/"><h3>Jackets</h3><span class="category-count">1</span></a><div class="results-summary">1 products</div><article class="product-card"><a class="product-title" href="/jackets/3492.html"><h3>High-quality jacket</h3></a><img src="/media/products/3492/test.jpg"><span class="product-price">137.22</span></article>';
+globalThis.fetch=async()=>new Response(catalogueFixture);
+try{for(const lang of locales){
+ const prefix=lang==='en'?'':'/'+lang;
+ for(const path of ['/','/spreadsheet/','/category/jackets/']){
+  const r=await worker.fetch(new Request('https://sugargootab.com'+prefix+path),{ASSETS:assets},{});
+  const doc=parseHTML(await r.text()).document;
+  assert.equal(doc.querySelectorAll('[data-image-search-trigger]').length,1,lang+path);
+  assert.equal(doc.querySelectorAll('#image-file').length,1);
+  assert.equal(doc.querySelectorAll('h1').length,1);
+  assert.equal(doc.querySelector('#image-search-dialog').hasAttribute('open'),false);
+  assert.equal(doc.querySelector('[data-image-search-trigger]').getAttribute('href'),prefix+'/search/visual/');
+  assert.equal(doc.querySelector('input[name="q"]').closest('form').getAttribute('method'),'get');
+  if(lang!=='en')assert.notEqual(doc.querySelector('.image-dialog-close').getAttribute('aria-label'),'Close',lang);
+ }
+ const r=await worker.fetch(new Request('https://sugargootab.com'+prefix+'/articles/'),{ASSETS:assets},{});
+ const doc=parseHTML(await r.text()).document;
+ assert.equal(doc.querySelectorAll('.editorial-index>.article-grid .article-card').length,8);
+ assert.equal(doc.querySelectorAll('.article-archive .article-card').length,11);
+ assert.equal(doc.querySelectorAll('.article-card').length,19,'All article links remain in HTML');
+ if(lang!=='en')assert(!doc.querySelector('.archive-closed').textContent.includes('Show more'),lang);
+}}finally{globalThis.fetch=originalFetch;}
+console.log('Search-box and compact archive regressions: 72 entry routes, 24 archives passed');

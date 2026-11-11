@@ -59,7 +59,8 @@ assert(articleHtml.indexOf('--paper:#fff')>articleHtml.indexOf('--paper:#fafaf7'
 const articleDoc=parseHTML(articleHtml).document;
 assert(!articleDoc.querySelector('.design-preview-bar'),'Review banner removed from live pages');
 assert.equal(articleDoc.querySelectorAll('[data-reading-section]').length,11);
-assert.equal(articleDoc.querySelectorAll('[data-reading-section][open]').length,11,'Full article present without JS');
+assert.equal(articleDoc.querySelectorAll('[data-reading-section][open]').length,1,'Compact article opens the first chapter by default');
+for(const section of articleDoc.querySelectorAll('[data-reading-section]')){assert(section.querySelector('summary'));assert(section.querySelector('.chapter-body')?.textContent.length>30,'Full chapter remains accessible with native details, even without JS');}
 assert(articleDoc.querySelector('[data-expand-reading]'));
 
 // The public 16-item pages must preserve the source's 60-item sequence.

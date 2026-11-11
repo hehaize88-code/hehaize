@@ -1,4 +1,4 @@
-// Small-screen reading controls. Article content itself remains fully rendered.
+// Compact reading controls. Article content itself remains fully rendered.
 const labels: Record<string, [string,string]> = {
  en:['Expand all','Collapse all'], de:['Alle aufklappen','Alle zuklappen'],
  es:['Expandir todo','Contraer todo'], fr:['Tout déplier','Tout replier'],

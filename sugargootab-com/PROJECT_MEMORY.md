@@ -1,6 +1,6 @@
 # SugargooTab project memory
 
-Updated: 2026-10-28 (Asia/Shanghai)
+Updated: 2026-11-11 (Asia/Shanghai)
 Status: V2, compact mobile articles and 16-product catalogue pages are live. Dedicated GA4 analytics is deployed; Google's installation test succeeded and live page_view events were received.
 
 ## Google Analytics 4 — 2026-10-18
@@ -164,3 +164,39 @@ Release validation: 24 content bundles, 432 editorial routes, 816 sitemap URLs, 
 - Live browser verification: all 24 article indexes show 19 articles, all three new localized links, self-canonical URLs and 25 alternates. Eight sampled new article pages have complete expected paragraphs/chapters, localized titles and matching canonicals. The live XML sitemap contains 888 URLs including all 72 new article URLs.
 - At 390x844, the new clothing guide has no horizontal page overflow; the first chapter is open, remaining chapters compact, and Expand all opens all eight reading chapters. Desktop and mobile styles render correctly; temporary viewport override was reset. Evidence: `research/seo-2026-11-09/live-verification.json` and `live-articles.png`.
 - GA4 key-event settings were not changed. This release does not assert search-engine submission, indexation or post-release traffic improvements; measure those after recrawling.
+
+
+## 2026-11-11 — product experience and resumed verification
+
+- The first product release was already deployed from `20dd54fa335f1b5e34911d7b826ae08e3825e2ca`, Workers Build `d6286ddb-751b-4664-af67-e0f77ff9abd9`, Worker version `dfe31f4e-125a-4519-90cb-a3092c6f8374`. The prior scratch checkout was not advanced by its API-based commit; compare it with current main before resuming.
+- Added source gallery/zoom, real public Weidian option groups and SKU prices, 30 reference currencies (Frankfurter, six-hour cache), 12 alternative purchase platforms and copying the original URL plus the selected style/size/SKU. Weidian item IDs are checked against the requested product. No unverified variant URL parameters.
+- User-requested visual search is now implemented with a dated derived index of 3,467 catalogue photos and browser-local dHash/colour matching. This supersedes the earlier unconnected visual-search note. There is no new product database or paid API. The authoritative product catalogue remains live CNBUYCHA; Weidian supplies optional SKU records. Uploaded search images never leave the visitor's device; similar photos are not proof of the same product.
+- QC remains explicitly empty where the source has no verified warehouse QC; seller/source reference images are separately labelled.
+- Resumed QA found unreliable legacy full-title translations, e.g. German Lacoste Hoodie becoming Lacoste Kopf and Lacoste Polo becoming Lacoste Die. Replaced these for product names with a shared product glossary in all 23 translated locales, expanded descriptive terms, preserved brand/model names and removed source marketing hashtags. Cards, product headings/metadata/alt text and visual-search results use the same rule. Unknown names are preserved rather than invented. English remains the 24th locale.
+- Fixed visual-search result currency labels to follow converted amounts. Selection propagation now changes only navigation links, leaving SEO hreflang URLs canonical.
+- Verified original live flow: 22 actual style choices for Adidas XLG Runner Deluxe, real size choices, reference FX and copied-selection feedback; jacket size M and EUR persist when switching English to German. At 390x844 the localized product page fits without horizontal overflow and visible images load.
+- Retain 19 articles and 30 FAQ entries per locale, 888 sitemap URLs, 16-item catalogue pages, existing domain/referral/GA4 configuration and the GitHub main → Cloudflare deployment. Additional checks exercise the prior Hoodie/Polo mistranslation, brand/model retention and rendered title/alt consistency.
+
+### Resumed session handoff — publication blocked
+
+- Local application commit `3831729f8c9910bd4598780b67ca735f8477058e` contains the follow-up translation/currency/hreflang fixes and passes the full route/commerce suite and Worker dry run. It is based on main `95c2d768bd2c1129449795f34751f1c0931de81e`.
+- Automatic approval review rejected pushing to main because it considered this turn insufficiently explicit about publishing production code. A safer feature-branch push was also rejected as an unapproved upload to GitHub. Neither was bypassed. No draft PR was created. Obtain explicit authorization to upload these changes to hehaize88-code/hehaize and publish to sugargootab.com, then recheck current main before merging.
+- The existing production version was verified through the public site: actual photo upload searched 3,467 images and returned the correct jacket as the only close result; the old result displayed an EUR amount with a USD label, confirming the fixed bug. Product style 02 + size 42 resolves to SKU 132093455571 and the copy control reports successful copying.
+- Built-worker preview correctly renders `Lacoste Kapuzenpullover` in the German heading and image description. Screenshot: research/commerce-qa-2026-11-11/translation-preview.png. The temporary local preview could not retrieve live option/rate endpoints before their timeouts; their production endpoints worked earlier. This is not a claim that the follow-up fixes are live.
+- Working checkout: /workspace/scratch/ba307731a088/sugargootab-review/sugargootab-com. Keep the old cb0528d71f6b checkout intact. The untracked node_modules symlink is local dependency setup and must not be committed.
+
+
+## 2026-11-11 — search-box camera and compact pages follow-up
+
+- New user request: camera/image search directly in the homepage search field, and standalone pages compressed to roughly 3–5 screens.
+- Implemented home/list/category camera selection, drop and clipboard image paste into search fields, with same-page modal results; ordinary text search preserved. Existing standalone visual search remains. Matching is local and limited to the catalogue.
+- Shared compact styling covers all 24 locales. Article index starts with 8 cards and exposes the other 11 via native disclosure. Articles now start compact on desktop too; the complete server-rendered chapters remain accessible. All 19 articles and 30 FAQs per locale remain.
+- Browser verified file selection from home and listing, clipboard paste, correct single jacket match across 3,467 images, text search, and reading/archival controls. At 360×800 sampled long translated pages measure 3.9–5.0 screens with no document horizontal overflow. Shorter guides/QC/category/index pages remain shorter. See research/search-box-compact-2026-11-11/README.md and screenshots.
+- Full content/routes/commerce regression suite, build, Worker dry run, JS syntax and diff checks pass. Publication remains blocked by the preceding approval review; this added-feature request has not explicitly authorized GitHub upload/production release. No push was retried or bypassed. The local follow-up commits include the earlier translation/currency/hreflang fixes as well.
+
+
+### Publication authorization — 2026-11-11
+
+- The user explicitly answered “是” to uploading these reviewed changes to GitHub and publishing sugargootab.com. This supersedes the pending-authorization status above.
+- Rebased the three reviewed local commits onto current main 5475d5d without conflicts; intervening commits affected another site and made no changes to sugargootab-com. Only this site's folder is included in this release. Existing full validation and browser QA remain applicable.
+- Proceed with the established GitHub main → Cloudflare Worker build, then verify production before reporting completion.

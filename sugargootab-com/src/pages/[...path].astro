@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import '../styles/directory.css';
 import '../styles/commerce.css';
+import '../styles/compact.css';
 import {dictionary,localizedProduct,ui} from '../lib/commerce-locale';
 import {renderProductDetail} from '../lib/product-detail';
 import {localizeCatalogueHtml} from '../lib/localize-html';
@@ -102,7 +103,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
      <div class="directory-kicker"><span><span class="orange-dot"></span>SUGARGOOTAB</span><span>{t.browse} / 2026</span></div>
      <h1>Sugargoo <em>{t.browse}.</em></h1>
      <div class="directory-intro"><p>{ed.ui.homeSearchIntro}</p><a href={link('/guide/')} class="directory-guide-link">{t.guide}<Icon name="external" size={20}/></a></div>
-     <form class="directory-search" action={link('/spreadsheet/')} method="get"><Icon name="search" size={24}/><input type="search" name="q" aria-label={t.search} placeholder={t.placeholder}/><button type="submit">{t.search}<Icon name="arrow" size={20}/></button></form>
+     <form class="directory-search" data-image-search-target action={link('/spreadsheet/')} method="get"><Icon name="search" size={24}/><input type="search" name="q" aria-label={t.search} placeholder={t.placeholder}/><a class="search-camera" href={link('/search/visual/')} data-image-search-trigger aria-label={t.visual} title={t.visual} aria-haspopup="dialog"><Icon name="camera" size={24}/></a><button type="submit">{t.search}<Icon name="arrow" size={20}/></button></form>
      <nav class="hero-shortcuts" aria-label={t.categories}><a class="button" href={link('/spreadsheet/')}>{ed.ui.catalogCtaButton}<Icon name="arrow" size={17}/></a>{['shoes','hoodies-sweaters','jersey'].map(slug=><a class="text-link" href={link('/category/'+slug+'/')}>{names[slugs.indexOf(slug)]}<Icon name="arrow" size={15}/></a>)}</nav><div class="directory-metadata"><span>01 — {t.search}</span><span>02 — {t.photos}</span><span>03 — Sugargoo</span></div>
     </div></section>
     <div class="container directory-layout">
@@ -127,7 +128,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
       <aside class="directory-sidebar catalog-sidebar"><div class="sidebar-heading"><span>{t.categories}</span><span>{slugs.length}</span></div><nav class="directory-categories" aria-label={t.categories}><a class:list={{current:!category}} href={link('/spreadsheet/')+(q?'?q='+encodeURIComponent(q):'')}><span class="category-no">↗</span><span>{t.all}</span></a>{slugs.map((s,i)=><a class:list={{current:s===category}} href={link('/category/'+s+'/')+(q?'?q='+encodeURIComponent(q):'')}><span class="category-no">{String(i+1).padStart(2,'0')}</span><span>{names[i]}</span></a>)}</nav></aside>
       <section class="catalog-results">
        <form class="catalog-toolbar" action={link(path)} method="get">
-        <div class="input-wrap"><Icon name="search"/><input type="search" name="q" value={q} placeholder={t.placeholder} aria-label={t.search}/></div>
+        <div class="input-wrap" data-image-search-target><Icon name="search"/><input type="search" name="q" value={q} placeholder={t.placeholder} aria-label={t.search}/><a class="search-camera" href={link('/search/visual/')} data-image-search-trigger aria-label={t.visual} title={t.visual} aria-haspopup="dialog"><Icon name="camera" size={24}/></a></div>
         <select name="sort" aria-label={t.popular}><option value="new" selected={sort==='new'}>{t.latest}</option><option value="click" selected={sort==='click'}>{t.popular}</option><option value="price" selected={sort==='price'}>{t.priceSort}</option></select>
         <button class="button" type="submit">{t.search}<Icon name="arrow" size={18}/></button>
        </form>
@@ -140,7 +141,7 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
       <div set:html={localizeCatalogueHtml(renderProductDetail({...data,title:localizedProduct(data.title,lang,d)},lang,t,data.buy),d,lang)} />
       {data.related.length>0&&<section class="product-section"><h2>{t.related}</h2><div class="product-grid">{data.related.map((p:any)=><Card {basePath} product={p} t={t} names={names} lang={lang}/>)}</div></section>}
     </>}
-    {['faq','articles','article'].includes(type)&&<EditorialPage {ed} {lang} {basePath} {type} {article}/>}
+    {['faq','articles','article'].includes(type)&&<EditorialPage {ed} {lang} {basePath} {type} {article} {d}/>}
     {(type==='guide'||type==='qc')&&<section class="reading-page"><span class="eyebrow">SUGARGOO / {t.guide}</span><h1>{type==='guide'?c.howTitle:title}</h1>
      {type==='guide'&&<><p class="lead">{c.how}</p><div class="reading-block"><span>01</span><div><h2>{t.catalog}</h2><p>{c.intro}</p><a class="text-link" href={link('/spreadsheet/')}>{t.browse}<Icon name="arrow"/></a></div></div><div class="reading-block"><span>02</span><div><h2>{t.photos}</h2><p>{c.qcNote}</p></div></div><div class="reading-block"><span>03</span><div><h2>{t.price}</h2><p>{c.priceNote}</p></div></div><a class="button" data-track="outbound_register_click" data-destination="sugargoo" href={REGISTER} target="_blank" rel="noopener noreferrer">{t.register}<Icon name="external"/></a></>}
      {type==='qc'&&<><p class="lead">{c.qcNote}</p><nav class="article-next-step" aria-label={ed.ui.nextStep}><strong>{ed.ui.nextStep}</strong><div>{['sugargoo-qc-photos','sugargoo-clothing-size-guide','sugargoo-shoe-size-guide'].map(slug=><a class="text-link" href={link('/articles/'+slug+'/')}>{ed.articles.find(a=>a.slug===slug)?.title}<Icon name="arrow" size={16}/></a>)}</div></nav><a class="button" href={link('/spreadsheet/')}>{t.browse}<Icon name="arrow"/></a></>}
@@ -150,8 +151,9 @@ function pageURL(n:number){const p=new URLSearchParams({sort,page:String(n)});if
     {error&&<section class="empty-state"><Icon name="image" size={36}/><h2>{t.unavailable}</h2><p>{error}</p><a class="button" href={Astro.url.href}>{t.retry}<Icon name="arrow"/></a></section>}
     {type==='404'&&<section class="empty-state"><span class="error-number">404</span><h1>{t.unavailable}</h1><a class="button" href={link()}>{t.home}<Icon name="arrow"/></a></section>}
    </div>}
+   {['home','listing'].includes(type)&&<dialog class="image-search-dialog" id="image-search-dialog" aria-labelledby="image-dialog-title"><div class="image-dialog-heading"><h2 id="image-dialog-title">{t.visual}</h2><form method="dialog"><button class="image-dialog-close" aria-label={u.close} title={u.close}>×</button></form></div><ImageSearch {lang} {t} {d} embedded/></dialog>}
   </main>
-  <script type="module" src="/assets/experience.js?v=20261111-sugar-1" is:inline></script>
+  <script type="module" src="/assets/experience.js?v=20261111-sugar-3" is:inline></script>
   <footer class="site-footer"><div class="container footer-top"><a href={link()} class="brand"><img src={LOGO} alt="SUGARGOO" width="150" height="35"/><span class="brand-tab">TAB</span></a><p>{c.disclosure}</p><div><a href={link('/spreadsheet/')}>{t.browse}</a><a href={link('/guide/')}>{t.guide}</a><a href={link('/qc/')}>{ed.ui.navQc}</a><a href={link('/articles/sugargoo-shipping-calculator/')}>{ed.ui.navShipping}</a><a href={link('/faq/')}>{t.faq}</a><a href={link('/articles/')}>{ed.ui.articles}</a></div></div><div class="container footer-bottom"><span>© 2026 Sugargoo Spreadsheet</span><span>SugargooTab</span></div></footer>
   <script>
    const main=document.querySelector<HTMLImageElement>('#main-image');

@@ -3,7 +3,7 @@
 Production target: sugargootab.com; existing GitHub → Cloudflare Worker deployment.
 
 - Preserve 24 locale routes, 19 articles per locale, 30 FAQs per locale and the existing 888 sitemap URLs.
-- Product cards, detail headings, metadata and product schema use localized descriptive names. Brand/model identifiers remain recognizable. Existing catalogue-title translations are reused with a brand-preservation check and a local descriptive-name glossary for new products.
+- Product cards, detail headings, metadata and product schema use localized descriptive names. Brand/model identifiers remain recognizable. A shared descriptive-name glossary replaces unreliable legacy full-title translations on cards, details and visual-search results. Brand/model names are preserved and source marketing hashtags are removed.
 - Detail layout: source gallery and zoom, source Weidian ID, 30 display currencies, Sugargoo purchase link, 12 alternative agents, source link copying, real Weidian style/size/SKU selection, scrollable thumbnails with mouse dragging.
 - Styles come from the publicly visible Weidian listing and are validated against the requested original item ID. Missing/blocked options have an explicit retry/original-listing state. A copied SKU is supplementary text; no unverified Weidian variant URL parameters are invented.
 - QC remains empty because the current source does not identify any gallery images as warehouse QC. Source product photos are shown separately.
