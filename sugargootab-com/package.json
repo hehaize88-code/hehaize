@@ -9,10 +9,11 @@
     "dev": "astro dev --host 0.0.0.0 --port 4173",
     "build": "astro build && node scripts/finalize.mjs",
     "check:content": "node scripts/check-editorial.mjs",
-    "check:routes": "node scripts/check-editorial-routes.mjs && node scripts/check-production.mjs && node scripts/check-seo-events.mjs && node scripts/check-parcel-weight.mjs",
+    "check:routes": "node scripts/check-editorial-routes.mjs && node scripts/check-production.mjs && node scripts/check-seo-events.mjs && node scripts/check-parcel-weight.mjs && npm run check:commerce",
     "preview": "wrangler dev",
     "deploy": "wrangler deploy",
-    "deploy:check": "wrangler deploy --dry-run"
+    "deploy:check": "wrangler deploy --dry-run",
+    "check:commerce": "node scripts/check-commerce.mjs"
   },
   "dependencies": {
     "astro": "7.4.0",

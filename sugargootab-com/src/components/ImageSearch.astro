@@ -1,0 +1,15 @@
+---
+const {lang,t,d}=Astro.props;
+const tr=(text:string)=>d[text]||text;
+---
+<h1>{t.visual}</h1>
+<section class="image-search-panel" aria-label={t.visual}>
+ <label for="image-file" class="image-drop" id="image-drop"><strong>{tr('Choose a photo')}</strong><span>{tr('Drop an image here, or paste with Ctrl / ⌘ + V')}</span><small>JPG / PNG / WebP / GIF · {tr('up to 20 MB')}</small><input id="image-file" class="image-file-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" aria-label={tr('Choose a photo')}/></label>
+ <p class="image-private">{tr('Free image search. Your photo stays on your device.')}</p>
+ <div id="image-controls" class="image-controls" hidden><div class="image-preview-wrap"><img id="image-preview" alt={tr('Your selected photo')}/><span id="image-crop-overlay" hidden></span></div><div class="image-options"><label for="image-focus">{tr('Search area')}</label><select id="image-focus"><option value="full">{tr('Whole photo')}</option><option value="center">{tr('Center crop — reduce the background')}</option></select><p>{tr('Use one clearly visible item. For a screenshot, try the center crop or crop the photo before choosing it.')}</p><div class="image-actions"><button id="image-retry" type="button">{tr('Search again')}</button><button id="image-reset" type="button">{tr('Clear photo')}</button></div></div></div>
+ <div class="image-progress-row"><p id="image-status" role="status" aria-live="polite">{tr('Choose a photo to find similar products.')}</p><button id="image-cancel" type="button" hidden>{tr('Cancel')}</button></div><progress id="image-progress" aria-label={tr('Searching catalogue images')} hidden></progress>
+ <p class="catalog-note">{tr('Image search compares visual similarity; it does not confirm an identical item.')} {tr('Search covers the indexed catalogue, not the whole web.')}</p>
+</section>
+<section class="image-results-section" aria-labelledby="image-results-title"><h2 id="image-results-title">{tr('Similar products')}</h2><p id="image-result-note" hidden></p><div class="catalog-grid" id="image-results" aria-busy="false"></div><button class="catalog-more" id="image-more" type="button" hidden>{tr('Show more')}</button></section>
+<noscript><p>{tr('Enable JavaScript to compare images on your device.')}</p></noscript>
+<script type="module" src="/assets/image-search.js?v=20261111-sugar-1" is:inline></script>

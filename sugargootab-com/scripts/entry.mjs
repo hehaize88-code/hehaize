@@ -1,11 +1,14 @@
 import { createApp } from 'astro/app/entrypoint';
 import { targets } from '../site-targets.mjs';
 import { normalizeTrackingPath } from './tracking-path.mjs';
+import {experienceRoute} from './commerce-api.mjs';
 const app=createApp();
 export default {
   async fetch(request,env,ctx){
     const url = new URL(request.url);
     const production = new URL(targets.production);
+    const commerce=await experienceRoute(request);
+    if(commerce)return commerce;
     const cleanPath = normalizeTrackingPath(url.pathname);
     if (cleanPath) {
       url.pathname = cleanPath;
@@ -26,10 +29,10 @@ export default {
       url.host = production.host;
       return Response.redirect(url.href, 308);
     }
-    if (env?.ASSETS && (url.pathname.startsWith('/brand/') || url.pathname.startsWith('/_astro/'))) {
+    if (env?.ASSETS && (url.pathname.startsWith('/assets/') || url.pathname.startsWith('/brand/') || url.pathname.startsWith('/_astro/'))) {
       return env.ASSETS.fetch(request);
     }
-    return app.render(request,{locals:{},waitUntil:ctx?.waitUntil?.bind(ctx)});
+    return app.render(request,{locals:{assets:env?.ASSETS},waitUntil:ctx?.waitUntil?.bind(ctx)});
   }
 };
 

@@ -1,18 +1,20 @@
 ---
+import {localizedProduct} from '../lib/commerce-locale';
 import Icon from './Icon.astro';
 import {localized} from '../lib/i18n';
 import {slugs} from '../lib/catalog';
 const {product:p,t,names,lang,eager=false,basePath=''}=Astro.props;
+const name=localizedProduct(p.title,lang,Astro.locals.commerceDictionary);
 const href=basePath+localized(lang,`/products${p.path}`);
 ---
 <article class="product-card" data-product-id={p.path} data-product-category={p.category}>
- <a class="product-image" href={href} aria-label={`${t.view}: ${p.title}`}>
+ <a class="product-image" href={href} aria-label={`${t.view}: ${name}`}>
   <span class="missing-image">{t.photoMissing}</span>
-  {p.image && <img src={p.image} alt={p.title} width="440" height="440" loading={eager?'eager':'lazy'} decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"/>}
+  {p.image && <img src={p.image} alt={name} width="440" height="440" loading={eager?'eager':'lazy'} decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"/>}
   <span class="image-arrow"><Icon name="arrow" size={18}/></span>
  </a>
- <div class="product-meta"><span>{names[slugs.indexOf(p.category)] || t.all}</span><span>USD</span></div>
- <a href={href}><h3>{p.title}</h3></a>
- <div class="product-bottom"><strong>${p.price}</strong><a href={href}>{t.view}<Icon name="arrow" size={15}/></a></div>
+ <div class="product-meta"><span>{names[slugs.indexOf(p.category)] || t.all}</span><span data-currency-code>USD</span></div>
+ <a href={href}><h3>{name}</h3></a>
+ <div class="product-bottom"><strong data-price-amount={p.price} data-price-currency="USD">${p.price}</strong><a href={href}>{t.view}<Icon name="arrow" size={15}/></a></div>
 </article>
 

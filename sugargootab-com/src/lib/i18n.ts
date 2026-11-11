@@ -52,7 +52,8 @@ et:'Jalatsid|Pusad ja kampsunid|T-särgid|Jakid|Püksid ja lühikesed püksid|Pe
 ga:'Bróga|Húdaí agus geansaithe|T-léinte|Seaicéid|Bríste agus brístí gearra|Ceannbhearta|Oiriúintí|Tacair|Leictreonaic|Táirgí eile|Geansaithe spóirt',
 mt:'Żraben|Hoodies u ġersijiet|T-shirts|Ġkieket|Qliezet u xorts|Kpiepel|Aċċessorji|Settijiet|Elettronika|Prodotti oħra|Flokkijiet sportivi'
 };
-export function translate(lang: string) { return Object.fromEntries(keys.map((key,i)=>[key,rows[lang].split('|')[i]])) as Record<string,string>; }
+const browseNames: Record<string,string> = {"en": "Spreadsheet", "de": "Produktübersicht", "es": "Catálogo", "fr": "Catalogue", "it": "Catalogo", "pl": "Katalog", "pt": "Catálogo", "ro": "Catalog", "sv": "Produktkatalog", "nl": "Productcatalogus", "da": "Produktkatalog", "fi": "Tuoteluettelo", "el": "Κατάλογος προϊόντων", "cs": "Katalog produktů", "hu": "Termékkatalógus", "bg": "Каталог", "sk": "Katalóg produktov", "hr": "Katalog proizvoda", "sl": "Katalog izdelkov", "lt": "Prekių katalogas", "lv": "Preču katalogs", "et": "Tootekataloog", "ga": "Catalóg táirgí", "mt": "Katalgu tal-prodotti"};
+export function translate(lang: string) { return Object.fromEntries(keys.map((key,i)=>[key,key==='browse'?browseNames[lang]:rows[lang].split('|')[i]])) as Record<string,string>; }
 export function categoryNames(lang:string) {return categoryRows[lang].split('|');}
 export function localized(lang:string,path='/') {return (lang==='en'?'':`/${lang}`)+path;}
 
