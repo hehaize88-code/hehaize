@@ -4,6 +4,7 @@ import {resolve,dirname} from 'node:path';
 import {localeList,htmlLocale} from '../public/assets/locale-core.mjs';
 import {experienceTranslations} from '../data/experience-translations.js';
 import {catalogUiTranslations} from '../data/catalog-ui-translations.js';
+import {chromeTranslations} from '../data/chrome-translations.js';
 import {portugueseEnglish} from '../data/portuguese-english.js';
 import {translations} from '../data/i18n.js';
 import {articles} from '../data/articles.js';
@@ -57,7 +58,7 @@ export function localizeStaticDocument(html,route,locale,dictionary){
  if(body){const text=decode(body.replace(/<[^>]+>/g,' '));const wordCount=[...new Intl.Segmenter(htmlLocale(locale),{granularity:'word'}).segment(text)].filter(item=>item.isWordLike).length;
   html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(tag,json)=>{try{const value=JSON.parse(json);if(value['@type']==='Article')value.wordCount=wordCount;return '<script type="application/ld+json">'+JSON.stringify(value).replaceAll('<','\\u003c')+'</script>';}catch{return tag;}});
  }
- return html.replace('</body>',`<!-- Static localized edition: ${htmlLocale(locale)} --><script defer src="/mobile-reading.js?v=20261111-locales-v3"></script><script defer src="/assets/catalog.js?v=20261111-detail-v3"></script><script type="module" src="/assets/experience.js?v=20261111-detail-v3"></script></body>`);
+ return html.replace('</body>',`<!-- Static localized edition: ${htmlLocale(locale)} --><script defer src="/mobile-reading.js?v=20261111-locales-v3"></script><script defer src="/assets/catalog.js?v=20261111-detail-v4"></script><script type="module" src="/assets/experience.js?v=20261111-detail-v4"></script></body>`);
 }
 export async function completeLocales(outputRoot){
  const manifestFile=resolve('data/locale-manifest.json');
@@ -72,7 +73,7 @@ export async function completeLocales(outputRoot){
   const generated=JSON.parse(readFileSync(asset,'utf8'));
   const completed=manifest.locales?.[locale];
   if(!completed?.full||completed.keyCount!==Object.keys(generated).length||completed.sha256!==createHash('sha256').update(readFileSync(asset)).digest('hex'))throw Error('Incomplete locale asset: '+locale);
-  const dictionary={...translations[locale],...generated,...experienceTranslations[locale],...catalogUiTranslations[locale],...(locale==='pt-br'?Object.fromEntries(Object.keys(portugueseEnglish).map(key=>[key,key])):{})};
+  const dictionary={...translations[locale],...generated,...experienceTranslations[locale],...catalogUiTranslations[locale],...chromeTranslations[locale],...(locale==='pt-br'?Object.fromEntries(Object.keys(portugueseEnglish).map(key=>[key,key])):{})};
   // Highest priority UI overrides are already merged in the saved asset.
   for(const route of staticRoutes){
    const existing=file(outputRoot,route,locale);

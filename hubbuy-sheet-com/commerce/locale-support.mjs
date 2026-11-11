@@ -18,15 +18,22 @@ export function localizeCatalogueHtml(html, dictionary, locale) {
  });
  const encodeText = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const translate = s => {
-  const trimmed=s.trim(),value=decodeText(trimmed); let found=dictionary[value];
-  if(!found){const parts=value.match(/^(←\s*)?(.+?)(\s*[↗→]|\s+\d+)?$/);if(parts&&dictionary[parts[2]])found=(parts[1]||'')+dictionary[parts[2]]+(parts[3]||'');}
+  const trimmed=s.trim(),value=decodeText(trimmed); let found;
+  // Reuse reviewed base labels for decorated buttons and numbered photos.
+  const parts=value.match(/^(←\s*)?(.+?)(\s*[↗→]|\s+\d+)?$/);
+  if(parts&&(parts[1]||parts[3])&&dictionary[parts[2]])found=(parts[1]||'')+dictionary[parts[2]]+(parts[3]||'');
+  if(!found&&value.includes(' | ')){
+   const sections=value.split(' | ');
+   if(sections.every(part=>dictionary[part]||part==='Hubbuy Sheet'))found=sections.map(part=>dictionary[part]||part).join(' | ');
+  }
+  if(!found)found=dictionary[value];
   if(!found&&/^Hubbuy (.+) Spreadsheet$/.test(value)){const category=value.match(/^Hubbuy (.+) Spreadsheet$/)[1];found=(dictionary['Hubbuy spreadsheet']||'Hubbuy Spreadsheet')+' · '+(dictionary[category]||category);}
   if(!found&&value.startsWith('Hubbuy ')&&dictionary[value.slice(7)])found='Hubbuy '+dictionary[value.slice(7)];
   if(!found&&value.includes(' | '))found=value.split(' | ').map(part=>dictionary[part]||part).join(' | ');
   return found?s.replace(trimmed,encodeText(found)):s;
  };
  const protectedBlocks = [];
- html=html.replace(/<a\b[^>]*data-locale-code="[^"]+"[^>]*>[\s\S]*?<\/a>/gi,value=>`<!--LOCALE_BLOCK_${protectedBlocks.push(value)-1}-->`);
+ html=html.replace(/<a\b[^>]*(?:data-locale-code|data-agent)="[^"]+"[^>]*>[\s\S]*?<\/a>/gi,value=>`<!--LOCALE_BLOCK_${protectedBlocks.push(value)-1}-->`);
  html = html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, value => {
   if(value.includes('application/ld+json'))try{const data=JSON.parse(value.replace(/^<script[^>]*>|<\/script>$/gi,''));const walk=(v,key='')=>Array.isArray(v)?v.map(x=>walk(x,key)):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,walk(x,k)])):typeof v==='string'&&!key.startsWith('@')?(key==='inLanguage'?htmlLocale(locale):dictionary[v]||v):v;value='<script type="application/ld+json">'+JSON.stringify(walk(data)).replaceAll('<','\\u003c')+'</script>';}catch{}
   return `<!--LOCALE_BLOCK_${protectedBlocks.push(value)-1}-->`;

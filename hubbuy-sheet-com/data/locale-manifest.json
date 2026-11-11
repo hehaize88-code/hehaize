@@ -4,7 +4,7 @@
   "baseSourceKeyCount": 6516,
   "augmentationKeyCount": 18,
   "requiredSourceKeyCount": 6534,
-  "generatedAt": "2026-11-11T04:44:47.058594+00:00",
+  "generatedAt": "2026-11-11T05:02:51.483Z",
   "method": "Static offline machine translation with protected factual tokens and human UI/high-risk passage corrections; no runtime translation API.",
   "humanReviewScope": "Interface strings and selected critical passages; remaining prose is machine translated.",
   "reviewedNumericUnitEquivalences": {
@@ -17,36 +17,37 @@
   "locales": {
     "en": {
       "full": true,
-      "keyCount": 6540,
+      "keyCount": 6544,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "f464fee1471af72c36c563b268386113b7a0c60b9920188b06d1ef2f0c1437ae",
+      "sha256": "d7981844b071aaff3cbefe0addb1c11ddad2e5678ffa2a11a346e53d89b8f425",
       "model": {
         "name": "English source with human Portuguese-to-English pivot",
         "license": "human-authored"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 0,
       "humanQualityFixCount": 20,
       "sourceIdentityCount": 6227,
       "sourceIdentityKeys": [],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "de": {
       "full": true,
-      "keyCount": 6997,
+      "keyCount": 6999,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "d271279cf196b66810c56b05f744f6499dc83101109d98bfd5f67c5eb2f01661",
+      "sha256": "94bdd3d2c25c6141f33fb51b809d11940a28e09112f3914ea0d2bbbb75cd0f02",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-de",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 75,
-      "sourceIdentityCount": 349,
+      "sourceIdentityCount": 351,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -61,7 +62,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -79,6 +79,7 @@
         "AUD",
         "PLN",
         "SGD",
+        "Hoodies",
         "Čeština",
         "NZD",
         "Suomi",
@@ -135,6 +136,8 @@
         "Kakobuy",
         "Oopbuy",
         "Litbuy",
+        "Asics Gel-1130 × Hal Studios",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "CSSBuy",
         "NIKE AF1",
@@ -399,22 +402,23 @@
         "Pandora Ring"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "pt-br": {
       "full": true,
-      "keyCount": 7007,
+      "keyCount": 7009,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "6141f1f7573779ec2330c8762645fff451de257aed6560b1addc435ec6a8c3d3",
+      "sha256": "848a5a8851d87d56f1f2603db10de57e6c0c363ceb093943e8d197ba0d5371a7",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-ROMANCE",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 23,
-      "sourceIdentityCount": 766,
+      "sourceIdentityCount": 765,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -429,7 +433,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -1184,22 +1187,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "fr": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "ba24f72082032327473c463023a00cf76e6a124c509b13aad568b7e2fe44bc63",
+      "sha256": "3a89f8aae715493d3375cf1e3c58831d42a0ccc36179865ff02dc1d87b3e84ac",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-fr",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 73,
-      "sourceIdentityCount": 384,
+      "sourceIdentityCount": 385,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -1215,7 +1219,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -1233,8 +1236,8 @@
         "Italiano",
         "AUD",
         "PLN",
+        "Site",
         "SGD",
-        "QC guide",
         "Articles",
         "Čeština",
         "NZD",
@@ -1253,6 +1256,7 @@
         "RON",
         "IDR",
         "DKK",
+        "Contact",
         "Hrvatski",
         "USD",
         "MXN",
@@ -1310,6 +1314,7 @@
         "Image 3",
         "Asics Gel-1130 × Hal Studios",
         "Image 4",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "NIKE AF1",
         "Sugargoo",
@@ -1587,22 +1592,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "es": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "1b62e2d9a63a99cebe432226b905645a0d825bf6170398113d20628fa24b8072",
+      "sha256": "10fb796429fac9745dfc7b1496555f7b60d5a921210cefb5a7e8738a4326cc0b",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-es",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 43,
-      "sourceIdentityCount": 486,
+      "sourceIdentityCount": 485,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -1618,7 +1624,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -2092,22 +2097,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "it": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "190e887578a053672dbf697ace9c03f97470b36dadc1ed6501b9ca33803d12df",
+      "sha256": "88bb5aab24892f2424c2daf16e53ce2c1489c6b0ffc1ba58fbf29afa0c7e6807",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-it",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 20,
-      "sourceIdentityCount": 499,
+      "sourceIdentityCount": 498,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -2122,7 +2128,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -2610,22 +2615,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "nl": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "75ec7dc5c05796ed2369705cc9ceaf7055b7ecef233f674843409abf521a6cf5",
+      "sha256": "3a849fe8fee7024b2cbb2e96d61f6899d279dd26c17963b2b3fb9bd5f66a3aff",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-nl",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 21,
-      "sourceIdentityCount": 689,
+      "sourceIdentityCount": 686,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -2641,9 +2647,7 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
-        "Register",
         "Español",
         "TRY",
         "Bahasa Indonesia",
@@ -2660,7 +2664,6 @@
         "Italiano",
         "AUD",
         "PLN",
-        "Site",
         "SGD",
         "Hoodies",
         "Čeština",
@@ -2681,6 +2684,7 @@
         "RON",
         "IDR",
         "DKK",
+        "Contact",
         "Hrvatski",
         "USD",
         "MXN",
@@ -2765,7 +2769,6 @@
         "Hoobuy",
         "Asics Gel-1130 × Hal Studios",
         "Timberland x Louis Vuitton 1",
-        "GUCCI Slippers",
         "Timberland x Louis Vuitton",
         "Timberland x Louis Vuitton 4",
         "Superbuy",
@@ -3318,22 +3321,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "pl": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "2655dfb973a61f19764b6e778d8894ef648969f678411d8e6f10df0634395002",
+      "sha256": "f4523bc04f15d96a9f3d079e2597d7c52a217d58870507a4afcdf9aac8151ca9",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-sla",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 21,
-      "sourceIdentityCount": 458,
+      "sourceIdentityCount": 456,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -3348,7 +3352,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -3455,7 +3458,6 @@
         "Hoobuy",
         "Asics Gel-1130 × Hal Studios",
         "Timberland x Louis Vuitton 1",
-        "GUCCI Slippers",
         "Timberland x Louis Vuitton",
         "Timberland x Louis Vuitton 4",
         "Superbuy",
@@ -3795,22 +3797,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "ro": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "51f7de1916c3050582e38c592c5b07744220d46a84a89b2470c59a8d9f80b618",
+      "sha256": "b61c18a64ee43a61f2d5566b9718f1557db112051fe75f2204214b06af59bc84",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-ro",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 20,
-      "sourceIdentityCount": 448,
+      "sourceIdentityCount": 447,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -3825,7 +3828,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -4262,19 +4264,20 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "sv": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "fbc7b0c19cb7bae9d7c4e6b9820e2e5a235cbd489426ff2cd7c9cc703ebf11c6",
+      "sha256": "73907bbbb858c942f25d1b061d283fb8a28c212d7d02239f7276e339dfbfc06c",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-sv",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 31,
       "sourceIdentityCount": 277,
@@ -4292,7 +4295,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -4310,7 +4312,6 @@
         "AUD",
         "PLN",
         "SGD",
-        "QC guide",
         "Čeština",
         "NZD",
         "Suomi",
@@ -4350,8 +4351,10 @@
         "ORDER",
         "AUDIT",
         "Syna World Mask",
+        "Adidas XLG Runner Deluxe",
         "Oopbuy",
         "Asics Gel-1130 × Hal Studios",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "NIKE AF1",
         "Sugargoo",
@@ -4558,22 +4561,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "zh": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6658,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "e824d10cfb3d24142a592ccd90bc7192d59d808331c4e879ef6c15d8b1e33ae3",
+      "sha256": "2732db3b9c3bcbbf297595081f8138e247bff330d8201164ae0f49337191f9a8",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-zh",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 52,
-      "sourceIdentityCount": 163,
+      "sourceIdentityCount": 165,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -4588,7 +4592,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -4640,7 +4643,10 @@
         "HUBBUY",
         "ORDER",
         "AUDIT",
+        "Adidas XLG Runner Deluxe",
         "Oopbuy",
+        "Asics Gel-1130 × Hal Studios",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "NIKE AF1",
         "Sugargoo",
@@ -4740,22 +4746,24 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47,
+      "humanHeadingKeyCount": 515
     },
     "da": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "397140e80ae84bde107b616812f411123007eaa97b959ab033d840bce6461711",
+      "sha256": "35bab08a80fee3e8d3439b154817838c873c72bb34c12d98a68cbc203f8efbdc",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-da",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 21,
-      "sourceIdentityCount": 604,
+      "sourceIdentityCount": 602,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -4771,7 +4779,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -4892,7 +4899,6 @@
         "Asics Gel-1130 × Hal Studios",
         "Timberland x Louis Vuitton 1",
         "Timberland x Louis Vuitton",
-        "HUBBUY SPREADSHEET",
         "Timberland x Louis Vuitton 4",
         "Superbuy",
         "CSSBuy",
@@ -5363,22 +5369,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "fi": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "ffd247d12937ebc576b2e6f1213681150000ac9ce5857288a19159e79c8192c2",
+      "sha256": "026b8b130bf0d668e083faa5a7328770ff35d2977b4cfb1b1a6450e42a2ff1bc",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-fi",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 20,
-      "sourceIdentityCount": 467,
+      "sourceIdentityCount": 466,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -5393,7 +5400,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -5849,22 +5855,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "el": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "7005312d4bf025d4a5e8722c5cd93e8e7712b97882924f5a33674824dff8ea7a",
+      "sha256": "0bad4b5129a17a5e9c95ad9aef11320c1aaf600ac3c3b8cc600b2649b102b98a",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-el",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 21,
-      "sourceIdentityCount": 356,
+      "sourceIdentityCount": 355,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -5879,7 +5886,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -6224,22 +6230,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "cs": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "fc0e9077d2a2119aaa270064d61ae510bf7414776fa90775d57d8e146ad79d64",
+      "sha256": "4e93fbd05544f3a03d52316ab9c10e856231dbb7261cffa69f3d9621a69fe772",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-cs",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 20,
-      "sourceIdentityCount": 473,
+      "sourceIdentityCount": 472,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -6254,7 +6261,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -6716,22 +6722,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "hu": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "8a2e4d4016cd39bfce5e9966b1eedb9e97afa9e7392341deda5cb1157f5236cd",
+      "sha256": "b4351d47b7822c72d852ddd8afd44404e03a13031ce390432d4ed27ba0b682a1",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-hu",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 25,
-      "sourceIdentityCount": 419,
+      "sourceIdentityCount": 418,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -6746,7 +6753,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -7154,22 +7160,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "bg": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "e8ed9b13c160dad661fe2a8fe5e58e4c30c2f178b75ad7e456bec8372f4271e4",
+      "sha256": "66f519c649dfbe11072589e28d22b8e0337b27ee0cc5dd4320990c8b8c28d820",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-sla",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 20,
-      "sourceIdentityCount": 189,
+      "sourceIdentityCount": 190,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -7184,7 +7191,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -7237,8 +7243,10 @@
         "HUBBUY",
         "ORDER",
         "AUDIT",
+        "Adidas XLG Runner Deluxe",
         "Oopbuy",
         "Asics Gel-1130 × Hal Studios",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "CSSBuy",
         "NIKE AF1",
@@ -7362,22 +7370,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "sk": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "4af9610bdfab955fa40291f68190ac91f0adb2beda62e85313c1c86aff31ac28",
+      "sha256": "d55cc6a47285a37d8d0bd92173c21bc89b14b939ba020041ef30e4300335e857",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-sk",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 21,
-      "sourceIdentityCount": 432,
+      "sourceIdentityCount": 430,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -7392,9 +7401,7 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
-        "Register",
         "Español",
         "TRY",
         "Bahasa Indonesia",
@@ -7813,22 +7820,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "hr": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "9ee67b90956880216b7bd9c768bbba3f3474752c2ecc221a37af1231861af91b",
+      "sha256": "c8fc18626dc1f61393bd235784b6a29964245f96748c20b08fe1e8f5fbbd9cc4",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-sla",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 21,
-      "sourceIdentityCount": 401,
+      "sourceIdentityCount": 400,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -7843,7 +7851,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -7935,6 +7942,7 @@
         "Nike Bag",
         "Adidas Bag",
         "link.",
+        "Adidas XLG Runner Deluxe",
         "Timberland x Louis Vuitton 2",
         "Joyagoo",
         "Timberland x Louis Vuitton 3",
@@ -7944,7 +7952,6 @@
         "Hoobuy",
         "Asics Gel-1130 × Hal Studios",
         "Timberland x Louis Vuitton 1",
-        "GUCCI Slippers",
         "Timberland x Louis Vuitton",
         "Timberland x Louis Vuitton 4",
         "Superbuy",
@@ -8233,22 +8240,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "ja": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "38bdd58f1348874f66d018d0b6377bc712e38b6e8ac64ea0f4a87ddcf22cf7ce",
+      "sha256": "7e830d449b106b2db8cdab61e063c2b34c1d6c76b4ef636f1e143ffc8c0035b6",
       "model": {
         "name": "facebook/m2m100_418M",
         "license": "MIT"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 62,
-      "sourceIdentityCount": 179,
+      "sourceIdentityCount": 180,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -8263,7 +8271,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -8315,8 +8322,10 @@
         "HUBBUY",
         "ORDER",
         "AUDIT",
+        "Adidas XLG Runner Deluxe",
         "Oopbuy",
         "Asics Gel-1130 × Hal Studios",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "CSSBuy",
         "NIKE AF1",
@@ -8431,22 +8440,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "ko": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "1877e04611738aa3f98ca9ee9d3b05771cc91a56e911d716942d5082a9968c51",
+      "sha256": "45d2f289508e9cdaeab4d7ee9b519d65fc7c9055c79e548c9342bd89fd980b6a",
       "model": {
         "name": "Helsinki-NLP/opus-mt-tc-big-en-ko",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 20,
-      "sourceIdentityCount": 163,
+      "sourceIdentityCount": 165,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -8461,7 +8471,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -8513,7 +8522,10 @@
         "HUBBUY",
         "ORDER",
         "AUDIT",
+        "Adidas XLG Runner Deluxe",
         "Oopbuy",
+        "Asics Gel-1130 × Hal Studios",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "NIKE AF1",
         "Sugargoo",
@@ -8613,19 +8625,20 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "vi": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "06c187eed72b55694ea6ceaec216adbcc93cc0a57432d9ed4b316edf2f0f3c45",
+      "sha256": "3d70bad1c385e9f7a4d860f72888a5cc61e7afa4dccfaad9bd4e3ed373da8092",
       "model": {
         "name": "facebook/m2m100_418M",
         "license": "MIT"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 129,
       "sourceIdentityCount": 342,
@@ -8644,7 +8657,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -8705,12 +8717,13 @@
         "Maison Margiela Hoodie",
         "Dior Sweater",
         "Keychain",
+        "Adidas XLG Runner Deluxe",
         "Lovegobuy",
         "Oopbuy",
         "Litbuy",
         "Hoobuy",
         "Asics Gel-1130 × Hal Studios",
-        "GUCCI Slippers",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "CSSBuy",
         "NIKE AF1",
@@ -8974,14 +8987,15 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "th": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "ecb7dfdd9106e221b3d65ef8b1c8fcbabeefc3854383a3a3690f6906eb365596",
+      "sha256": "fd3850e0dd9b84ad7a40123dc4688aedca7e3a29d17ab48d74c55022ed2fa399",
       "model": {
         "name": [
           "Nextcloud-AI/madlad400-3b-mt-ct2-int8",
@@ -8992,10 +9006,10 @@
           "MIT"
         ]
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 108,
-      "sourceIdentityCount": 172,
+      "sourceIdentityCount": 173,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -9010,7 +9024,6 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Español",
         "TRY",
@@ -9063,8 +9076,10 @@
         "HUBBUY",
         "ORDER",
         "AUDIT",
+        "Adidas XLG Runner Deluxe",
         "Oopbuy",
         "Asics Gel-1130 × Hal Studios",
+        "Timberland x Louis Vuitton",
         "Superbuy",
         "NIKE AF1",
         "Sugargoo",
@@ -9171,22 +9186,23 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     },
     "id": {
       "full": true,
-      "keyCount": 6574,
+      "keyCount": 6576,
       "coverageCount": 6534,
       "coverageMissing": 0,
-      "sha256": "da11d64da8861c6107157e487e6f4485655a170e1ef67d198e97b67b43890721",
+      "sha256": "ecaeb62fda579e759eb01927184921ccaac77531e6e1df03077239801b372d56",
       "model": {
         "name": "Helsinki-NLP/opus-mt-en-id",
         "license": "Apache-2.0 model card / CC-BY-4.0 original OPUS checkpoint"
       },
-      "reviewedAt": "2026-11-11T04:44:47.058594+00:00",
+      "reviewedAt": "2026-11-11T05:02:51.483Z",
       "humanUiKeyCount": 136,
       "humanQualityFixCount": 22,
-      "sourceIdentityCount": 662,
+      "sourceIdentityCount": 659,
       "sourceIdentityKeys": [
         "Dansk",
         "Svenska",
@@ -9201,10 +9217,8 @@
         "CZK",
         "Slovenčina",
         "Tiếng Việt",
-        "FAQ",
         "HUF",
         "Hubbuy Shoes Spreadsheet: Nike Searches, Sizing and QC",
-        "Register",
         "Español",
         "TRY",
         "Bahasa Indonesia",
@@ -9343,7 +9357,6 @@
         "Asics Gel-1130 × Hal Studios",
         "Timberland x Louis Vuitton 1",
         "Timberland x Louis Vuitton",
-        "HUBBUY SPREADSHEET",
         "Timberland x Louis Vuitton 4",
         "Superbuy",
         "Hipobuy",
@@ -9852,7 +9865,15 @@
         "Pop Mart Labubu"
       ],
       "identityReason": "English baseline, names/model identifiers, native language names, source UI labels, and Portuguese source text in Portuguese locale.",
-      "issueCount": 0
+      "issueCount": 0,
+      "humanChromeKeyCount": 47
     }
-  }
+  },
+  "humanChrome": {
+    "keys": 47,
+    "source": "data/chrome-translations.js",
+    "sha256": "fa66d9f384e46a58664024ba627f86eb9ee70f952851dc5a809120efe0996de8",
+    "reviewedAt": "2026-11-11T05:02:51.483Z"
+  },
+  "humanChineseHeadingKeyCount": 515
 }
