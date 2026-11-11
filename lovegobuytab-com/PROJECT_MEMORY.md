@@ -590,3 +590,11 @@ QC 照片功能核验完成前，不在标题写“全部 QC Verified”或保�
 - GSC 2026-11-09 成功接收并读取 https://lovegobuytab.com/sitemaps/pages.xml，状态成功、发现 480 个 URL，其中 72 个本轮新增语言页。Bing 已接受 72 个新增 URL 提交，当日计数 72，剩余额度 28。均不等同于已收录。
 - Cloudflare 唯一 BIC 拦截样本为 Python-urllib 请求，不能据此归因 Bing 失败。未改安全规则。15:30（北京时间）发布后 Bing 实时首页复测通过：该 URL 可以由必应编制索引，未发现 SEO/GEO 问题，识别 2 个标记类型。前次短暂提取失败原因未证实；复测通过不等于已正式收录。
 - 发布截图 docs/screenshots/seo-release-2026-11-09.jpg。
+
+### 2026-11-11 — independent catalogue image search
+
+The user requested the upload/drop/paste experience from oopbuylists.com, explaining that the source site has no image-search feature. Implemented `/image-search/` in all 24 existing locales, with entries in desktop/mobile navigation, homepage, catalogue, footer and the existing guide. Matching runs locally against 3,467 source-photo fingerprints from the 2026-11-11 CNBuyCha snapshot. Current source count was independently checked as 3,467. The same-source index and one test fixture are reused from the user's existing sites; no external image-search API, database or user-image upload is introduced.
+
+Results link to the locale-preserving LoveGoBuy product route and refresh the existing currency renderer. Common title terms use the shared glossary. Full/center image comparison, cancel/retry/reset, 20-result display batches, explicit weak-match feedback and malformed-file/index handling are included. Method: perceptual difference hash plus coarse spatial colour; it is best for the same/similar photos and does not establish product identity or search the whole internet. The UI shows the index date. Refresh command and its Python dependencies are in README.
+
+Validation before publication: normal build/content checks; all 24 image-search routes with canonical and reciprocal hreflang; all source index records; retrieval of a real product image and resized/recompressed copy; validation and URL constraints; currency refresh event; failure/retry/cache; cancellation/stale result; reset/paste/drop; existing commerce, editorial (504 sitemap URLs) and analytics checks.

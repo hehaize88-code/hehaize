@@ -3236,3 +3236,334 @@ h3 {
 .style-note[hidden] {
   display: none;
 }
+
+/* Browser-local visual catalogue search. */
+.visual-entry {
+  margin: 12px 24px 12px 0;
+  color: var(--accent);
+  gap: 8px;
+}
+.visual-guide-entry {
+  margin-bottom: 22px;
+}
+.visual-page {
+  padding-top: 42px;
+  padding-bottom: 64px;
+  min-height: 65vh;
+}
+.visual-heading {
+  max-width: 740px;
+  margin-bottom: 30px;
+}
+.visual-heading h1 {
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -0.04em;
+  margin: 8px 0 14px;
+}
+.visual-heading > p:last-child {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #626b5d;
+}
+.visual-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 330px) minmax(0, 1fr);
+  gap: 38px;
+  align-items: start;
+}
+.visual-input {
+  min-width: 0;
+}
+.visual-drop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  border: 2px dashed #d7dacf;
+  border-radius: 18px;
+  padding: 32px 22px;
+  text-align: center;
+  background: #fafbf8;
+  min-height: 270px;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+.visual-drop > svg {
+  color: var(--accent);
+}
+.visual-drop > strong {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.visual-drop small {
+  font-size: 11px;
+  color: #68715f;
+  line-height: 1.6;
+}
+.visual-drop.is-dragging,
+.visual-drop:focus-within {
+  border-color: var(--accent);
+  background: #fff4eb;
+}
+.visual-file {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.visual-file-button {
+  padding: 12px 20px;
+  min-height: 44px;
+}
+.visual-privacy {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #4c6445;
+  margin: 14px 0 20px;
+}
+.visual-privacy svg {
+  flex: 0 0 16px;
+  margin-top: 2px;
+}
+.visual-preview-wrap {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f3f4ef;
+  margin-bottom: 12px;
+  line-height: 0;
+}
+#image-preview {
+  display: block;
+  width: 100%;
+  max-height: 310px;
+  object-fit: contain;
+}
+#image-crop-overlay {
+  position: absolute;
+  inset: 15%;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 200px #0004;
+  pointer-events: none;
+}
+#image-focus {
+  width: 100%;
+  max-width: 100%;
+  padding: 11px 8px;
+  border: 1px solid #d4d7cf;
+  border-radius: 8px;
+  background: white;
+  font: inherit;
+  font-size: 12px;
+  color: inherit;
+}
+.visual-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.visual-controls .button {
+  flex: 1;
+  padding: 10px 8px;
+  min-height: 44px;
+  font-size: 12px;
+}
+.visual-help {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #747c6c;
+  margin-top: 18px;
+}
+.visual-output {
+  min-width: 0;
+}
+.visual-result-heading {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 14px;
+}
+.visual-result-heading h2 {
+  font-size: 23px;
+  margin: 0;
+  text-transform: none;
+}
+#image-cancel {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--accent);
+  font: inherit;
+  font-size: 13px;
+}
+#image-progress {
+  width: 100%;
+  height: 5px;
+  accent-color: var(--accent);
+  margin-bottom: 12px;
+}
+#image-status {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #6c7662;
+  margin: 0 0 18px;
+  min-height: 44px;
+}
+.visual-note {
+  padding: 12px 16px;
+  background: #f2f5ec;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #4a5b3d;
+}
+.visual-note.visual-weak {
+  background: #fff4df;
+  color: #785020;
+}
+.visual-results {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 16px;
+}
+.visual-result-link {
+  display: block;
+  border: 1px solid #e5e7df;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  background: white;
+}
+.visual-result-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.visual-result-link:hover {
+  border-color: var(--accent);
+}
+.visual-result-image {
+  aspect-ratio: 1;
+  background: #f5f6f1;
+  overflow: hidden;
+}
+.visual-result-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.visual-result-link:hover img {
+  transform: scale(1.035);
+}
+.visual-result-copy {
+  padding: 12px;
+}
+.visual-result-copy h3 {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+.visual-result-price {
+  font-size: 14px;
+}
+#image-more {
+  margin-top: 24px;
+}
+@media (min-width: 901px) and (max-width: 1250px) {
+  .desktop-nav {
+    gap: 12px;
+    font-size: 11px;
+  }
+  .header-actions .join-button {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .visual-layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 24px;
+  }
+  .visual-results {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .visual-page {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .visual-heading {
+    margin-bottom: 20px;
+  }
+  .visual-heading h1 {
+    font-size: 30px;
+  }
+  .visual-heading > p:last-child {
+    font-size: 13px;
+  }
+  .visual-layout {
+    display: block;
+  }
+  .visual-drop {
+    min-height: 190px;
+    padding: 20px;
+    gap: 12px;
+  }
+  .visual-drop > strong {
+    font-size: 14px;
+  }
+  .visual-drop > svg {
+    width: 30px;
+    height: 30px;
+  }
+  .visual-privacy {
+    margin: 10px 0 14px;
+  }
+  .visual-help {
+    margin: 12px 0 24px;
+  }
+  .visual-preview-wrap {
+    max-width: 260px;
+    margin: 0 auto 12px;
+  }
+  #image-preview {
+    max-height: 220px;
+  }
+  .visual-controls {
+    margin-bottom: 12px;
+  }
+  .visual-result-heading h2 {
+    font-size: 21px;
+  }
+  .visual-results {
+    gap: 16px 10px;
+  }
+  .visual-result-copy {
+    padding: 10px;
+  }
+  .visual-result-copy h3 {
+    font-size: 12px;
+  }
+  .visual-entry {
+    margin-top: 8px;
+  }
+  .visual-note {
+    padding: 10px 12px;
+  }
+  #image-status {
+    font-size: 12px;
+    min-height: 0;
+  }
+}

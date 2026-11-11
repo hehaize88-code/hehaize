@@ -10,12 +10,12 @@ Node >=22.23.4, `npm ci`, `npm run dev`. `npm run check:content` verifies 24 com
 
 - All catalog information comes from https://cnbuycha.com public HTML. No product database, secondary inventory or admin interface. The original Weidian listing supplies supplemental style images and CNY prices for the verified seller item ID; it does not replace catalog discovery.
 - Search `q`, sorting `sort=new|click|price`, categories and pagination remain source operations. Source pages contain 60 records; the directory renders 20 per page.
-- An in-memory two-minute source response cache (up to 100 URLs) reduces duplicate reads. A previously successful response may be reused for at most 15 minutes on a transient source error. No product snapshots are written to disk or fabricated as fallbacks.
+- An in-memory two-minute source response cache (up to 100 URLs) reduces duplicate reads. A previously successful response may be reused for at most 15 minutes on a transient source error. No product-page snapshots are fabricated as fallbacks. Image search uses a separate, dated, static index of source photo fingerprints; product details still read the live source.
 - Source images remain the exact CNBuyCha-returned URL from its own image paths or the observed Weidian image CDN. Prices from source HTML are already USD. Display conversion uses daily ExchangeRate-API rates; USD is the base, so there is no second CNY-to-USD conversion. Selected seller styles carry their actual CNY prices and use CNY as their base. Rates are cached in browser storage for 24 hours, with a maximum data age of 72 hours, a visible update date and original-currency fallback.
 - Internal catalog IDs and seller item IDs are separate. `/shoes/3470.html` supplies original Weidian ID `7876894732`.
 - Purchase format: `https://www.lovegobuy.com/product?id={productId}&shop_type=weidian&invite_code=161CPG`. Only verified Weidian URLs are converted; unsupported platforms do not receive invented purchase links.
 - Registration: https://www.lovegobuy.com/login/signup
-- CNBuyCha has no verified image-search endpoint or verified warehouse-QC type in the inspected public HTML. Image search is explicitly unavailable. Product photos are not relabeled as order QC. The QC guide links to official platform information.
+- CNBuyCha has no verified image-search endpoint or verified warehouse-QC type in the inspected public HTML. The independent image-search page compares a source catalogue image index locally in the browser; it does not call or invent a source image-search API. Product photos are not relabeled as order QC. The QC guide links to official platform information.
 
 ## Content and languages
 
@@ -31,7 +31,7 @@ The November 2026 prioritization uses observed GSC queries and pages, Bing keywo
 - `/faq/`: searchable 36-question source-linked FAQ
 - `/articles/`: 16-article index
 - `/articles/{slug}/`: complete editorial page with contents and sources
-- `/sitemap.xml`: live index of editorial, category and product sitemaps. Each product shard reads one real CNBuyCha listing page (60 products), then emits 24 locale URLs with hreflang. No product index/database is stored. Upstream failures return 503 rather than an empty success response.
+- `/sitemap.xml`: live index of editorial, category and product sitemaps. Each product shard reads one real CNBuyCha listing page (60 products), then emits 24 locale URLs with hreflang. No product database is used for these live sitemaps. Upstream failures return 503 rather than an empty success response.
 
 ## Preview and production boundary
 
@@ -63,3 +63,14 @@ Article text and FAQ translations are complete machine-assisted editorial transl
 - Other-agent links come from the existing catalog, filtered to recognized HTTPS agent hosts and the same seller ID. Existing referral codes are preserved.
 - The source catalog currently has no verified per-item QC feed; the separate QC section reports this honestly and links to the QC guide. Product/style photos are never relabeled as QC.
 - Run `node scripts/check-commerce.mjs` after the normal build/content and editorial/interaction checks. Managed local preview could not start in this session; live browser validation follows publication.
+
+
+## Image search — 2026-11-11
+
+`/image-search/` and all 23 locale variants accept JPG/PNG/WebP/GIF files up to 20 MB via file selection, drag/drop or paste. The selected image stays in the browser. A dated, static image index covers 3,467 CNBuyCha products at release. The index is reused from the same source catalogue already verified by SugargooTab and contains no private user images. Result links use LoveGoBuy Tab detail routes and shared title/currency presentation. Home, catalogue, desktop/mobile navigation, footer and all image-search guides expose the tool.
+
+The comparison uses a 64-bit perceptual difference hash and coarse spatial colour features, not semantic AI recognition. It works best with the same or similar catalogue photos; different angles/backgrounds can produce weak matches. No confidence percentage or identity guarantee is shown. Near-exact results are not padded with unrelated records; weak results explicitly invite a clearer image. Empty/invalid files, blank images, failed index requests, cancellation and stale asynchronous replies have separate handling.
+
+The static index is not a live stock or price guarantee. Refresh it before catalogue-focused releases with `python scripts/refresh-image-index.py` (requires requests, beautifulsoup4 and Pillow), inspect reported coverage, and commit the updated JSON. Refreshing compares source image URLs and only downloads new/changed photos. No database, API key, paid inference or user-image storage is required.
+
+After `npm run build`, run `node scripts/check-image-search.mjs` (Pillow required), `node scripts/check-commerce.mjs`, `node scripts/check-editorial-routes.mjs` and `node scripts/check-interaction-events.mjs`. The visual check covers original/recompressed real-photo retrieval, 24 routes and hreflang/canonical, every index record, safe image URLs, file validation, currency refresh, retry/cache, cancellation, reset, paste and drop.

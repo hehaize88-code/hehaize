@@ -116,6 +116,12 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
         </a>
         <nav class="desktop-nav" aria-label={t.browse}>
           <a
+            class:list={{ active: path === "/image-search/" }}
+            href={localized(lang, "/image-search/")}
+          >
+            {t.visual}
+          </a>
+          <a
             class:list={{ active: path.startsWith("/spreadsheet") }}
             href={localized(lang, "/spreadsheet/")}
           >
@@ -191,6 +197,7 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
         </div>
       </div>
       <nav id="mobile-nav" class="mobile-nav" hidden>
+        <a href={localized(lang, "/image-search/")}>{t.visual}</a>
         <a href={localized(lang, "/spreadsheet/")}>{t.browse}</a>
         <a href={localized(lang, articlePath)}>{c.guideNav}</a>
         <a href={localized(lang, "/faq/")}>{t.faq}</a>
@@ -243,6 +250,7 @@ const isPreview = !["lovegobuytab.com", "www.lovegobuytab.com"].includes(
         </div>
         <div class="footer-column">
           <h3>{c.directory}</h3>
+          <a href={localized(lang, "/image-search/")}>{t.visual}</a>
           <a href={localized(lang, "/spreadsheet/")}>{t.browse}</a>
           <a href={localized(lang, "/spreadsheet/?sort=new")}>
             {c.newArrivals}

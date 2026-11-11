@@ -70,11 +70,23 @@ for (const lang of langs) {
     assert.equal(schema["@type"], "Article");
     assert.equal(schema.inLanguage, lang);
     assert.equal(schema.datePublished, article.datePublished || "2026-10-22");
-    assert.equal(schema.dateModified, article.dateModified || "2026-10-22");
+    assert.equal(
+      schema.dateModified,
+      article.slug === "lovegobuy-image-search-guide"
+        ? "2026-11-11"
+        : article.dateModified || "2026-10-22",
+    );
     const body = doc.querySelector(".article-body");
     for (const text of [
       ...(article.quickAnswer ? [article.quickAnswer] : []),
-      ...article.intro,
+      ...(article.slug === "lovegobuy-image-search-guide"
+        ? [
+            article.intro[0],
+            JSON.parse(
+              fs.readFileSync("src/content/image-search-ui.json", "utf8"),
+            )[lang].scope,
+          ]
+        : article.intro),
       ...article.takeaways,
       ...article.sections.flatMap((s) => [
         s.heading,
@@ -131,8 +143,8 @@ assert.match(sitemapResponse.headers.get("content-type"), /application\/xml/);
 const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (m) => m[1],
 );
-assert.equal(locations.length, 480);
-assert.equal(new Set(locations).size, 480);
+assert.equal(locations.length, 504);
+assert.equal(new Set(locations).size, 504);
 for (const lang of langs)
   for (const slug of [
     "lovegobuy-finds-under-20",
@@ -143,7 +155,7 @@ for (const lang of langs)
   }
 assert.equal(
   (sitemap.match(/<lastmod>2026-11-09<\/lastmod>/g) || []).length,
-  216,
+  168,
 );
 const preview = await get(
   "/articles/lovegobuy-tracking-guide/",
@@ -166,5 +178,5 @@ assert.equal(
   origin + "/de/articles/lovegobuy-tracking-guide/?test=1",
 );
 console.log(
-  `Passed ${routes} localized article routes, ${tables} translated tables, ${langs.length} article indexes, 480 sitemap URLs, dates, metadata, related links and production/preview isolation.`,
+  `Passed ${routes} localized article routes, ${tables} translated tables, ${langs.length} article indexes, 504 sitemap URLs, dates, metadata, related links and production/preview isolation.`,
 );

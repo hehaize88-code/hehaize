@@ -3,6 +3,8 @@ import Layout from "../components/Layout.astro";
 import Icon from "../components/Icon.astro";
 import Card from "../components/Card.astro";
 import Price from "../components/Price.astro";
+import ImageSearch from "../components/ImageSearch.astro";
+import imageUi from "../content/image-search-ui.json";
 import { productTitle } from "../lib/product-title";
 import productUi from "../content/product-ui.json";
 import ArticleCard from "../components/ArticleCard.astro";
@@ -24,6 +26,7 @@ const ui = (productUi as any)[lang];
 const isHome = path === "/",
   isCatalog =
     path === "/spreadsheet/" || /^\/spreadsheet\/[a-z0-9-]+\/$/.test(path),
+  isVisual = path === "/image-search/",
   isFaq = path === "/faq/",
   isArticles = path === "/articles/";
 const article = path.startsWith("/articles/")
@@ -83,6 +86,7 @@ const is404 =
     !isCatalog &&
     !isFaq &&
     !isArticles &&
+    !isVisual &&
     !article &&
     !productMatch) ||
   Astro.response.status === 404;
@@ -101,6 +105,10 @@ if (isCatalog) {
 if (isFaq) {
   title = `LoveGoBuy ${t.faq} | LoveGoBuy Tab`;
   description = c.faqPageDescription;
+}
+if (isVisual) {
+  title = `LoveGoBuy ${t.visual} | LoveGoBuy Tab`;
+  description = (imageUi as any)[lang].scope;
 }
 if (isArticles) {
   title = c.articleIndexTitle;
@@ -227,6 +235,8 @@ const catalogGuides = [
         <Icon name="right" />
       </a>
     </section>
+  ) : isVisual ? (
+    <ImageSearch lang={lang} t={t} />
   ) : isHome ? (
     <>
       <section class="hero wrap">
@@ -257,6 +267,14 @@ const catalogGuides = [
               <Icon name="right" />
             </button>
           </form>
+          <a
+            class="text-link visual-entry"
+            href={localized(lang, "/image-search/")}
+          >
+            <Icon name="camera" size={20} />
+            {t.visual}
+            <Icon name="right" size={16} />
+          </a>
           <a
             class="text-link"
             href={localized(
@@ -539,6 +557,14 @@ const catalogGuides = [
             <Icon name="right" />
           </button>
         </form>
+        <a
+          class="text-link visual-entry"
+          href={localized(lang, "/image-search/")}
+        >
+          <Icon name="camera" size={20} />
+          {t.visual}
+          <Icon name="right" size={16} />
+        </a>
       </section>
       <section class="wrap catalog-section">
         <div class="category-tabs">
@@ -1088,6 +1114,15 @@ const catalogGuides = [
           </a>
         </aside>
         <article class="article-body">
+          {article.slug === "lovegobuy-image-search-guide" && (
+            <a
+              class="button visual-guide-entry"
+              href={localized(lang, "/image-search/")}
+            >
+              <Icon name="camera" />
+              {t.visual}
+            </a>
+          )}
           {article.quickAnswer && (
             <aside class="quick-answer">
               <p>{article.quickAnswer}</p>

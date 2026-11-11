@@ -1,3 +1,4 @@
+import imageSearchUi from "../content/image-search-ui.json";
 import { languages } from "./i18n";
 const copies = import.meta.glob("../content/copy/*.json", {
   eager: true,
@@ -20,7 +21,22 @@ export function content(lang: string) {
   return {
     copy,
     faq: faq.faq,
-    articles: editorial.articles,
+    articles: editorial.articles.map((article: any) =>
+      article.slug === "lovegobuy-image-search-guide"
+        ? {
+            ...article,
+            dateModified: "2026-11-11",
+            intro: [
+              article.intro[0],
+              [
+                (imageSearchUi as any)[lang].privacy,
+                (imageSearchUi as any)[lang].scope,
+                (imageSearchUi as any)[lang].note,
+              ].join(" "),
+            ],
+          }
+        : article,
+    ),
     sources: [
       ...new Map(
         [...faq.sources, ...(editorial.sources || [])].map((s: any) => [

@@ -91,6 +91,7 @@
       set(key, currency);
       render();
     });
+  document.addEventListener("lovegobuy:prices-refresh", render);
   render();
   // The provider updates daily. Cache one response per visitor for 24 hours.
   if (!rates || Date.now() - Number(get(rateKey + ":at")) > 24 * 3600000) {
