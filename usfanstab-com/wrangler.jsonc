@@ -1,0 +1,23 @@
+{
+  "name": "usfanstab-com",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-11",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "usfanstab.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.usfanstab.com",
+      "custom_domain": true
+    }
+  ],
+  "build": {
+    "command": "npm run build"
+  },
+  "no_bundle": true
+}

@@ -1,0 +1,1 @@
+import {defineConfig} from 'astro/config';import adapter from './scripts/adapter.mjs';export default defineConfig({site:'https://usfanstab.com',output:'server',adapter:adapter(),build:{inlineStylesheets:'always'},image:{service:{entrypoint:'astro/assets/services/noop'}},devToolbar:{enabled:false}});

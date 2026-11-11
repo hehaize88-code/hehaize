@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import sharp from 'sharp';
+import {parseStyles} from '../src/lib/styles.ts';
+const index=JSON.parse(await readFile('src/content/image-index.json','utf8'));
+assert.equal(index.meta.coveredProducts,index.meta.catalogProducts,'Every catalogue product is covered');
+assert.equal(index.meta.failedProducts,0);assert.equal(index.meta.failedImages,0);
+assert(index.meta.galleryImages>index.meta.catalogProducts,'Secondary images are indexed');
+const rows=index.rows.map(r=>({...{path:r[0],url:r[1],kind:r[3],style:r[4]},f:Uint8Array.from([...Buffer.from(r[2],'base64')].flatMap(n=>[(n>>4)*17,(n&15)*17]))}));
+assert(rows.every(r=>r.f.length===192));
+async function verify(row){const r=await fetch(row.url);assert.equal(r.status,200);const b=Buffer.from(await r.arrayBuffer());const f=await sharp(b).rotate().flatten({background:'#fff'}).resize(8,8,{fit:'fill',kernel:'linear'}).removeAlpha().toColourspace('srgb').raw().toBuffer();let best=null;for(const x of rows){const score=x.f.reduce((n,v,i)=>n+(v-f[i])**2,0);if(!best||score<best.score)best={path:x.path,url:x.url,score};}assert.equal(best.url,row.url,'Original source photo is the first visual match');console.log('PASS',row.kind,row.path,row.url);}
+const secondary=rows.find(r=>r.path==='/shoes/3470.html'&&r.url.includes('4c65e71f'));
+assert(secondary);await verify(secondary);
+const style=rows.find(r=>r.path==='/shoes/3470.html'&&r.kind==='style');assert(style);await verify(style);
+const oldest=rows.filter(r=>r.kind==='gallery').at(-1);await verify(oldest);
+const saved=JSON.parse(await readFile('src/content/style-options.json','utf8')).items['/shoes/3470.html'];
+assert.equal(saved.sourceId,'7876894732');assert.equal(saved.photos.length,22);assert.equal(new Set(saved.photos.map(p=>p.id)).size,22);
+assert.throws(()=>parseStyles('<script id="__rocker-render-inject__" data-obj=\'{"status":{"code":0},"result":{"default_model":{"item_info":{"item_id":"7876894732"}}}}\'></script>','1111111111'),/mismatch/);
+const base=process.argv[2]||'http://127.0.0.1:4173';
+const api=await fetch(base+'/api/styles.json?path=%2Fshoes%2F3470.html');assert.equal(api.status,200);assert.equal((await api.json()).photos.length,22);
+const bad=await fetch(base+'/api/image-results.json',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({paths:['https://example.com']})});assert.equal(bad.status,400);
+const hyd=await fetch(base+'/api/image-results.json',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({paths:['/shoes/3470.html'],lang:'zh'})});assert.equal(hyd.status,200);assert.equal((await hyd.json()).products[0].path,'/shoes/3470.html');
+console.log('PASS all-gallery coverage, secondary/style/last-product matches, style IDs and API input validation',index.meta);

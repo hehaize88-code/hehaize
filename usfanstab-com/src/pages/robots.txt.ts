@@ -1,0 +1,1 @@
+export const GET=({url})=>new Response(url.hostname==='usfanstab.com'?'User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: https://usfanstab.com/sitemap.xml\n':'User-agent: *\nDisallow: /\n',{headers:{'Content-Type':'text/plain; charset=utf-8'}});

@@ -1,0 +1,2 @@
+import {locales,origin,response,xml,paths} from '../lib/sitemap';
+export const GET=({params})=>{const lang=params.locale;if(!locales.includes(lang))return new Response('Not found',{status:404});return response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+paths().map(p=>'<url><loc>'+xml(origin+(lang==='en'?'':'/'+lang)+p)+'</loc></url>').join('')+'</urlset>');};

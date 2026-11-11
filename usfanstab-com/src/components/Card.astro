@@ -1,0 +1,6 @@
+---
+import {translationPending} from '../lib/translate';
+const {p,lang='en',prefix=''}=Astro.props;
+const title=p.localizedTitle||p.title;
+---
+<article class="product-card"><a class="card-image" href={`${prefix}/product${p.path}`}><img src={p.image} alt={title} width="400" height="400" loading="lazy" referrerpolicy="no-referrer"/><span class="card-arrow">↗</span></a><div class="card-body"><span class="card-source">WEIDIAN</span><h3><a data-translate-title={translationPending(p.title,lang,title)?p.title:undefined} href={`${prefix}/product${p.path}`}>{title}</a></h3><p class="card-price" data-usd={p.price}>${p.price} <small>USD</small></p></div></article>
