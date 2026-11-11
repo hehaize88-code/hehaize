@@ -1,0 +1,102 @@
+---
+import Icon from "./Icon.astro";
+import imageUi from "../content/image-search-ui.json";
+const { lang, t } = Astro.props;
+const ui = (imageUi as any)[lang];
+---
+
+<section class="wrap visual-page" data-visual-app>
+  <header class="visual-heading">
+    <p class="eyebrow">LoveGoBuy Tab</p>
+    <h1>{t.visual}</h1>
+    <p>{ui.scope}</p>
+  </header>
+  <div class="visual-layout">
+    <aside class="visual-input">
+      <div class="visual-drop" id="image-drop">
+        <Icon name="camera" size={40} />
+        <strong>{ui.drop}</strong>
+        <label class="button visual-file-button" for="image-file">
+          {ui.choose}
+        </label>
+        <input
+          class="visual-file"
+          id="image-file"
+          type="file"
+          accept="image/jpeg,image/png,image/webp,image/gif"
+          aria-label={ui.choose}
+        />
+        <small>{ui.file}</small>
+      </div>
+      <p class="visual-privacy">
+        <Icon name="check" size={16} />
+        {ui.privacy}
+      </p>
+      <div id="image-controls" hidden>
+        <div class="visual-preview-wrap">
+          <img id="image-preview" alt={ui.preview} />
+          <span id="image-crop-overlay" hidden></span>
+        </div>
+        <label for="image-focus" class="sr-only">
+          {ui.preview}
+        </label>
+        <select id="image-focus">
+          <option value="full">{ui.whole}</option>
+          <option value="center">{ui.center}</option>
+        </select>
+        <div class="visual-controls">
+          <button
+            class="button button-dark"
+            id="image-retry"
+            type="button"
+            disabled
+          >
+            {ui.retry}
+          </button>
+          <button class="button button-outline" id="image-reset" type="button">
+            {ui.reset}
+          </button>
+        </div>
+      </div>
+      <p class="visual-help">{ui.help}</p>
+    </aside>
+    <div class="visual-output">
+      <div class="visual-result-heading">
+        <h2>{ui.results}</h2>
+        <button type="button" id="image-cancel" class="text-link" hidden>
+          {ui.cancel}
+        </button>
+      </div>
+      <progress id="image-progress" aria-label={ui.comparing} hidden></progress>
+      <p id="image-status" role="status" aria-live="polite">
+        {ui.empty}
+      </p>
+      <p id="image-result-note" class="visual-note" hidden></p>
+      <div
+        id="image-results"
+        class="product-grid visual-results"
+        aria-busy="false"
+      ></div>
+      <button
+        type="button"
+        id="image-more"
+        class="button button-outline"
+        hidden
+      >
+        {ui.more}
+      </button>
+      <noscript>
+        <p>{ui.nojs}</p>
+      </noscript>
+    </div>
+  </div>
+  <script
+    is:inline
+    type="application/json"
+    data-visual-ui
+    set:html={JSON.stringify(ui).replace(/</g, "\\u003c")}
+  />
+</section>
+<script>
+  import "../lib/image-search.js";
+</script>

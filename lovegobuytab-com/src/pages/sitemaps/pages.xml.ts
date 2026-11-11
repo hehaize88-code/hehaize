@@ -7,6 +7,7 @@ export const GET: APIRoute = ({ site }) =>
     [
       "/",
       "/spreadsheet/",
+      "/image-search/",
       "/faq/",
       "/articles/",
       ...content("en").articles.map(
@@ -14,8 +15,9 @@ export const GET: APIRoute = ({ site }) =>
       ),
     ],
     {
-      "/": "2026-11-09",
-      "/spreadsheet/": "2026-11-09",
+      "/": "2026-11-11",
+      "/spreadsheet/": "2026-11-11",
+      "/image-search/": "2026-11-11",
       "/articles/": "2026-11-09",
       ...Object.fromEntries(
         content("en").articles.map((article: any) => [
