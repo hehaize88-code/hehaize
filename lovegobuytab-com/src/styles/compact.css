@@ -124,6 +124,32 @@
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+.compact-related > details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.compact-related > details > summary::-webkit-details-marker {
+  display: none;
+}
+.compact-related summary h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.compact-related summary svg {
+  flex: 0 0 18px;
+}
+.compact-related details[open] > summary svg {
+  transform: rotate(45deg);
+}
+.compact-related > details > .text-link {
+  margin-top: 16px;
+}
 .article-section-content {
   padding-bottom: 8px;
 }
