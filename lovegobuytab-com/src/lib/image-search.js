@@ -277,7 +277,8 @@ function initialize() {
     visible += 20;
     renderResults();
   });
-  window.addEventListener("pagehide", () => {
+  window.addEventListener("pagehide", (event) => {
+    if (event.persisted) return;
     invalidate();
     release();
   });
