@@ -1,3 +1,5 @@
+import { localeRepair } from './locale-repair.js';
+import { localeList } from '../public/assets/locale-core.mjs';
 import { articleIndexCopy } from "./november-ui.js";
 import { commerceTranslations } from "./commerce-translations.js";
 import { octoberTranslations } from "./october-translations.js";
@@ -8,16 +10,12 @@ import { researchTranslations } from "./research-translations.js";
 
 export const LANGUAGE_STORAGE_KEY = "hubbuy-sheet-language";
 
-export const languages = [
-  { code: "en", short: "EN", label: "English", market: "Global", flag: "🌐", htmlLang: "en", hrefLang: "en", url: "/" },
-  { code: "pt-br", short: "PT", label: "Português", market: "Brasil", flag: "🇧🇷", htmlLang: "pt-BR", hrefLang: "pt-BR", url: "/pt-br/" },
-  { code: "de", short: "DE", label: "Deutsch", market: "Deutschland", flag: "🇩🇪", htmlLang: "de", hrefLang: "de", url: "/de/" },
-];
+export const languages = localeList.map(([code,label,short]) => ({code,label,short,market:'',flag:'',htmlLang:code==='pt-br'?'pt-BR':code==='zh'?'zh-CN':code,hrefLang:code==='pt-br'?'pt-BR':code==='zh'?'zh-CN':code,url:code==='en'?'/':`/${code}/`}));
 
 export function getBaseLanguagePath(pathname = "/") {
   const cleanPath = pathname.split("?")[0].split("#")[0] || "/";
   const segments = cleanPath.split("/").filter(Boolean);
-  if (segments[0] === "pt-br" || segments[0] === "de") segments.shift();
+  if (languages.some(language => language.code === segments[0])) segments.shift();
   return segments.length ? `/${segments.join("/")}${/\.html$/i.test(segments.at(-1)) ? "" : "/"}` : "/";
 }
 
@@ -551,6 +549,8 @@ for (const locale of ["pt-br", "de"]) {
   translations[locale][articleIndexCopy.en.title] = articleIndexCopy[locale].title;
   translations[locale][articleIndexCopy.en.intro] = articleIndexCopy[locale].intro;
 }
+
+for (const [locale, dictionary] of Object.entries(localeRepair)) Object.assign(translations[locale], dictionary);
 
 const reverseTranslations = Object.values(translations).reduce((reverse, dictionary) => {
   for (const [english, translated] of Object.entries(dictionary)) reverse.set(translated, english);

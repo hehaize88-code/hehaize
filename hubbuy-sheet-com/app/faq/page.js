@@ -55,7 +55,7 @@ export default function FAQPage() {
             </div>
             <aside className="faq-sidebar">
               <div className="faq-source-card"><span className="eyebrow eyebrow-light">Research source</span><h2>Checked against Hubbuy itself.</h2><p>Service claims on this page come from Hubbuy's public homepage. Transaction-specific prices, routes and policies should be rechecked in the live interface.</p><a href="https://hubbuy.com/" target="_blank" rel="noopener">Open official Hubbuy site <ArrowIcon /></a></div>
-              <div className="faq-side"><span className="eyebrow">Find something specific</span><h2>Search the live catalog</h2><p>Your keyword opens the current CNBuy Sheet results, including individual product links and current reference prices.</p><SearchBox compact /></div>
+              <div className="faq-side"><span className="eyebrow">Find something specific</span><h2>Search the live catalog</h2><p>Search by product name, original ID or link to view this site's catalogue results. Use image search to compare a photo with the indexed catalogue on your device.</p><SearchBox compact /></div>
             </aside>
           </div>
         </div>

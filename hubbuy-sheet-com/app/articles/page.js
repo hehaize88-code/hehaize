@@ -17,7 +17,7 @@ export const metadata = createPageMetadata({
 
 export default function ArticlesPage({ locale = "en" }) {
   const copy = articleIndexCopy[locale];
-  const visibleArticles = articles.filter((article) => !article.locales || article.locales.includes(locale)).map(article => getArticle(article.slug, locale));
+  const visibleArticles = articles.map(article => getArticle(article.slug, locale));
   const [featuredArticle, ...moreArticles] = visibleArticles;
   const localPath = (path) => getLocalizedPath(path, locale);
   const collectionSchema = {
@@ -52,7 +52,7 @@ export default function ArticlesPage({ locale = "en" }) {
             <nav className="article-topic-links" aria-label={copy.title}>{copy.topics.map(([label, href]) => <Link key={href} href={localPath(href)}>{label}</Link>)}</nav>
             <div className="article-index-heading">
               <span className="eyebrow">Start with the complete workflow</span>
-              <p>{locale === "pt-br" ? `${visibleArticles.length} artigos em português com fontes verificadas` : locale === "de" ? `${visibleArticles.length} faktengeprüfte Artikel auf Deutsch` : `${visibleArticles.length} fact-checked English articles`}</p>
+              <p><strong>{visibleArticles.length}</strong> <span>articles</span></p>
             </div>
             <Link className="featured-article" href={localPath(`/articles/${featuredArticle.slug}/`)}>
               <ArticleCover compact cover={featuredArticle.cover} />

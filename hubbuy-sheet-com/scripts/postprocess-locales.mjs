@@ -4,6 +4,7 @@ import { articles } from "../data/articles.js";
 import { categoryPages } from "../data/categories.js";
 import { getLocalizedPath, translations } from "../data/i18n.js";
 import { localePages } from "../data/locale-content.js";
+import { completeLocales } from "./complete-locales.mjs";
 import { buildCommerce } from "./build-commerce.mjs";
 import { products } from "../data/site.js";
 
@@ -56,7 +57,7 @@ const translatedMetaFields = new Set([
 
 
 function injectAnalytics(html) {
-  return html.replace("</body>", `<script defer src="/mobile-reading.js?v=20261016-compact-v2"></script></body>`);
+  return html.replace("</body>", `<script defer src="/mobile-reading.js?v=20261111-locales-v3"></script></body>`);
 }
 
 function escapeHtml(value) {
@@ -373,4 +374,5 @@ for (const name of ["sitemap.xml", "sitemap-en.xml", "sitemap-pt-br.xml", "sitem
 writeFileSync(robotsPath, `${robots}\n`);
 copyFileSync(resolve("_worker.js"), resolve(outputRoot, "_worker.js"));
 
+await completeLocales(outputRoot);
 await buildCommerce(outputRoot);

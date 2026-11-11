@@ -1,3 +1,4 @@
+import {localeCodes} from '../public/assets/locale-core.mjs';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { readFileSync } from 'node:fs';
@@ -24,7 +25,7 @@ function page(url) {
 const excluded = page('https://another-site.example/');
 excluded.click('https://hubbuy.com/signUp');
 assert.equal(excluded.context.window.dataLayer, undefined);
-for (const locale of ['en', 'pt-br', 'de']) {
+for (const locale of localeCodes) {
  const prefix = locale === 'en' ? '' : '/' + locale;
  const origin = 'https://hubbuy-sheet.com';
  const p = page(origin + prefix + '/');
@@ -62,7 +63,7 @@ for (const locale of ['en', 'pt-br', 'de']) {
  assert.ok(!events.some(e => ['purchase', 'sign_up', 'page_view'].includes(e[1])), 'clicks do not assert purchases, completed registration or another page view');
 }
 const worker = readFileSync('_worker.js', 'utf8');
-assert.ok(worker.includes('/analytics.js?v=20261107-guides-v1'));
+assert.ok(worker.includes('/analytics.js?v=20261111-locales-v3'));
 assert.ok(!readFileSync('app/layout.js', 'utf8').includes("gtag('config'"));
 assert.ok(!readFileSync('scripts/postprocess-locales.mjs', 'utf8').includes("gtag('config'"));
-console.log('PASS analytics: one initializer, hostname scope, 3 languages, product/signup/search/image/sort events, pagination exclusion and no custom-event query or file payload.');
+console.log('PASS analytics: one initializer, hostname scope, 24 languages, product/signup/search/image/sort events, pagination exclusion and no custom-event query or file payload.');

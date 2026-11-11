@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { novemberArticles, newNovemberSlugs } from '../data/november-articles.js';
 import { articles, getArticle } from '../data/articles.js';
-const decode = s => s.replaceAll('&amp;','&').replaceAll('&#x27;',"'").replaceAll('&quot;','"');
+const decode = s => s.replaceAll('&amp;','&').replaceAll('&#x27;',"'").replaceAll('&#39;',"'").replaceAll('&quot;','"');
 let checked = 0;
 for (const item of novemberArticles) for (const locale of ['en','pt-br','de']) {
  const article=getArticle(item.slug,locale);
@@ -29,6 +29,6 @@ for(const locale of ['en','pt-br','de']) {
  const prefix=locale==='en'?'':'/'+locale;
  const html=decode(readFileSync('out'+prefix+'/articles/index.html','utf8'));
  for(const slug of newNovemberSlugs) assert.ok(html.includes(getArticle(slug,locale).title));
- console.log(locale,articles.filter(a=>!a.locales||a.locales.includes(locale)).length,'articles');
+ console.log(locale,articles.length,'articles');
 }
 console.log(`PASS November: ${checked} complete translated new/revised pages, original publication dates, updated schema, working official source links, index discovery and reciprocal alternates.`);

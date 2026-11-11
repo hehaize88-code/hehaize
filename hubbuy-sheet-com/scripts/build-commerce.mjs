@@ -15,12 +15,13 @@ export async function buildCommerce(outputRoot) {
     if (!chrome[locale].header || !chrome[locale].footer) throw Error('Missing site shell: ' + locale);
     if (locale === 'en') chrome.styles = [...html.matchAll(/<link\b[^>]*rel="stylesheet"[^>]*>/g)].map(m => m[0]).join('');
   }
+  const extensions = ['public/assets/locale-core.mjs', 'commerce/locale-support.mjs', 'commerce/experience.mjs'].map(path => readFileSync(path,'utf8').replace(/^import .*?;\n/gm,'').replaceAll('export ', '')).join('\n');
   let shell = readFileSync('commerce/chrome.mjs', 'utf8').replaceAll('export ', '');
   shell += `\nconfigureChrome(${JSON.stringify(chrome)});\n`;
-  const adapter = readFileSync('commerce/catalog.mjs', 'utf8').replace(/^import .*?;\n/, '').replaceAll('export ', '');
+  const adapter = readFileSync('commerce/catalog.mjs', 'utf8').replace(/^import .*?;\n/gm, '').replaceAll('export ', '');
   const legacy = Object.fromEntries(products.map(product => [product.id, product.catalogHref]));
-  const worker = readFileSync('_worker.js', 'utf8').replace(/^import .*?;\n/, '').replace('/*LEGACY_PRODUCTS*/ {}', JSON.stringify(legacy));
-  writeFileSync(resolve(outputRoot, '_worker.js'), shell + adapter + worker);
+  const worker = readFileSync('_worker.js', 'utf8').replace(/^import .*?;\n/gm, '').replace('/*LEGACY_PRODUCTS*/ {}', JSON.stringify(legacy));
+  writeFileSync(resolve(outputRoot, '_worker.js'), extensions + shell + adapter + worker);
   mkdirSync(resolve(outputRoot, 'brand'), { recursive: true });
   writeFileSync(resolve(outputRoot, 'brand/hubbuy-favicon.ico'), Buffer.from(readFileSync('commerce/favicon.base64', 'utf8').trim(), 'base64'));
 
@@ -36,8 +37,13 @@ export async function buildCommerce(outputRoot) {
   mkdirSync(resolve(outputRoot, 'assets'), { recursive: true });
   writeFileSync(resolve(outputRoot, 'assets/catalog-image-index.json'), JSON.stringify(index));
   const paths = ['/', ...CATEGORIES.filter(category => category !== 'AllProducts').map(category => '/' + category + '/'), ...index.products.map(product => product.path), ...(delta.unindexedPaths || [])];
-  const records = LANGS.flatMap(locale => paths.map(path => `<url><loc>https://hubbuy-sheet.com${prefix(locale)}/catalog${path}</loc></url>`));
-  writeFileSync(resolve(outputRoot, 'sitemap-catalog.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${records.join('')}</urlset>`);
+  const catalogueMaps = [];
+  for (const locale of LANGS) {
+    const name = `sitemap-catalog-${locale}.xml`; catalogueMaps.push(name);
+    const records = paths.map(path => `<url><loc>https://hubbuy-sheet.com${prefix(locale)}/catalog${path}</loc></url>`);
+    writeFileSync(resolve(outputRoot, name), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${records.join('')}</urlset>`);
+  }
+  writeFileSync(resolve(outputRoot, 'sitemap-catalog.xml'), `<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${catalogueMaps.map(name=>`<sitemap><loc>https://hubbuy-sheet.com/${name}</loc></sitemap>`).join('')}</sitemapindex>`);
   for (const filename of ['sitemap.xml', 'sitemap-en.xml', 'sitemap-pt-br.xml', 'sitemap-de.xml']) {
     writeFileSync(resolve(outputRoot, filename), read(filename).replace(/\s*<url>\s*<loc>https:\/\/hubbuy-sheet\.com\/(?:pt-br\/|de\/)?products\/[^<]*<\/loc>[\s\S]*?<\/url>/g, ''));
   }

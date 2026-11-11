@@ -1,11 +1,12 @@
 import { catalogueRoute } from './commerce/catalog.mjs';
+import { experienceRoute } from './commerce/experience.mjs';
 const LEGACY_PRODUCTS = /*LEGACY_PRODUCTS*/ {};
-const GA4_SNIPPET = '<script src="/analytics.js?v=20261107-guides-v1"></script><script async src="/ga4-tag.js"></script>';
-const MOBILE_READING_SCRIPT = '<script defer src="/mobile-reading.js?v=20261016-compact-v2"></script>';
+const GA4_SNIPPET = '<script src="/analytics.js?v=20261111-locales-v3"></script><script async src="/ga4-tag.js"></script>';
+const MOBILE_READING_SCRIPT = '<script defer src="/mobile-reading.js?v=20261111-locales-v3"></script>';
 const MOBILE_INNER_STYLE = '<link rel="stylesheet" href="/mobile-inner.css?v=20261016-compact-v2">';
 async function googleAnalyticsAsset(request) {
   const url = new URL(request.url);
-  if (url.pathname === "/ga4-init.js") return new Response("if(!window.__hubbuyMeasurement){var s=document.createElement('script');s.src='/analytics.js?v=20261107-guides-v1';document.head.appendChild(s);}", { headers: { "content-type": "application/javascript; charset=utf-8", "cache-control": "public, max-age=3600" } });
+  if (url.pathname === "/ga4-init.js") return new Response("if(!window.__hubbuyMeasurement){var s=document.createElement('script');s.src='/analytics.js?v=20261111-locales-v3';document.head.appendChild(s);}", { headers: { "content-type": "application/javascript; charset=utf-8", "cache-control": "public, max-age=3600" } });
   if (url.pathname === "/ga4-tag.js") {
     const upstream = await fetch("https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2");
     const headers = new Headers(upstream.headers);
@@ -23,16 +24,18 @@ function withGoogleAnalytics(response, request) {
   const csp = headers.get("content-security-policy");
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE + MOBILE_READING_SCRIPT + '<script defer src="/assets/catalog.js?v=20261111-visual-v2"></script>', { html: true }); } }).transform(htmlResponse);
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + MOBILE_INNER_STYLE + MOBILE_READING_SCRIPT + '<script defer src="/assets/catalog.js?v=20261111-detail-v3"></script><script type="module" src="/assets/experience.js?v=20261111-detail-v3"></script>', { html: true }); } }).transform(htmlResponse);
 }
 
 
 export default {
   async fetch(request, env) {
+    const experience = await experienceRoute(request);
+    if (experience) return experience;
     const analyticsAsset = await googleAnalyticsAsset(request);
     if (analyticsAsset) return analyticsAsset;
     const url = new URL(request.url);
-    const legacy = url.pathname.match(/^\/(?:(pt-br|de)\/)?products(?:\/(\d+))?\/?$/);
+    const legacy = url.pathname.match(/^\/(?:(de|fr|es|it|nl|pt-br|pl|ro|sv|zh|da|fi|el|cs|hu|bg|sk|hr|ja|ko|vi|th|id)\/)?products(?:\/(\d+))?\/?$/);
     if (legacy) {
       const prefix = legacy[1] ? '/' + legacy[1] : '';
       const destination = legacy[2] ? LEGACY_PRODUCTS[legacy[2]] : '/catalog/';

@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
   <html lang="en">
 <body>
 
-<Script src="/mobile-reading.js?v=20261016-compact-v2" strategy="afterInteractive" />
+<Script src="/mobile-reading.js?v=20261111-locales-v3" strategy="afterInteractive" />
 
 <LanguageRuntime>
   <a className="skip-link" href="#main-content">

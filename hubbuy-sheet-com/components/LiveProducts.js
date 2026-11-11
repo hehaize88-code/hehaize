@@ -18,7 +18,7 @@ export default function LiveProducts({ initialProducts, locale }) {
       <a href={`${prefix}/catalog${product.path}`}>
         <img src={product.image} alt={product.title} width="400" height="400" loading="lazy" />
         <h3>{product.title}</h3>
-        <div className="card-meta"><strong>${Number(product.price).toFixed(2)}</strong><span>USD · ↗</span></div>
+        <div className="card-meta"><strong data-price-amount={product.price} data-price-currency="USD">${Number(product.price).toFixed(2)}</strong><span><span data-currency-code>USD</span> · ↗</span></div>
       </a>
     </article>)}
   </div>;

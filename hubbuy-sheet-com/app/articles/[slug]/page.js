@@ -105,7 +105,7 @@ export default async function ArticlePage({ params, locale = "en" }) {
             <nav className="breadcrumbs" aria-label="Breadcrumb">
               <Link href={localPath("/")}>Home</Link><span>/</span><Link href={localPath("/articles/")}>Articles</Link><span>/</span><span>Research article</span>
             </nav>
-            <div className="article-card-meta"><span>{article.category}</span><span>{article.languageLabel || (locale === "pt-br" ? "Artigo em português" : locale === "de" ? "Artikel auf Deutsch" : "English article")}</span></div>
+            <div className="article-card-meta"><span>{article.category}</span><span>{locale === "pt-br" ? "Artigo" : locale === "de" ? "Artikel" : "Article"}</span></div>
             <h1>{article.title}</h1>
             <p>{article.excerpt}</p>
             <div className="article-byline">

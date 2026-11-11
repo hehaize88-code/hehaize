@@ -7,13 +7,15 @@
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.gtag('js', new Date());
   window.gtag('config', 'G-QY8MM7VZV2');
-  const language = () => location.pathname.startsWith('/pt-br/') ? 'pt-br' : location.pathname.startsWith('/de/') ? 'de' : 'en';
+  const languages = ['en','de','fr','es','it','nl','pt-br','pl','ro','sv','zh','da','fi','el','cs','hu','bg','sk','hr','ja','ko','vi','th','id'];
+  const language = () => languages.includes(location.pathname.split('/')[1])?location.pathname.split('/')[1]:'en';
+  const basePath = path => languages.includes(path.split('/')[1])?'/'+path.split('/').slice(2).join('/'):path;
   const send = (name, params = {}) => window.gtag('event', name, { page_path: location.pathname, content_language: language(), transport_type: 'beacon', ...params });
   document.addEventListener('submit', event => {
     const form = event.target;
     if (!(form instanceof HTMLFormElement)) return;
     const action = new URL(form.action, location.href);
-    if (action.origin !== location.origin || !/^\/(?:pt-br\/|de\/)?catalog\//.test(action.pathname)) return;
+    if (action.origin !== location.origin || !/^\/catalog\//.test(basePath(action.pathname))) return;
     const value = String(new FormData(form).get('q') || '').trim();
     if (!value) return;
     const method = /^https?:\/\//i.test(value) ? 'link' : /^\d{8,}$/.test(value) ? 'product_id' : 'text';
@@ -36,8 +38,8 @@
     if (product) send('catalog_product_click', { catalog_id: product[1], link_path: url.pathname });
     else if (/\/catalog\/image-search\//.test(url.pathname)) send('image_search_open');
     else if (url.pathname.includes('/articles/')) send('article_internal_click', { link_path: url.pathname });
-    else if (/^\/(?:pt-br\/|de\/)?guides\//.test(url.pathname)) send('guide_internal_click', { link_path: url.pathname });
-    else if (/^\/(?:pt-br\/|de\/)?catalog\/[^/]+\/$/.test(url.pathname) && !url.search) send('catalog_category_click', { link_path: url.pathname });
+    else if (/^\/guides\//.test(basePath(url.pathname))) send('guide_internal_click', { link_path: url.pathname });
+    else if (/^\/catalog\/[^/]+\/$/.test(basePath(url.pathname)) && !url.search) send('catalog_category_click', { link_path: url.pathname });
     else if (a.closest('.sort-row') && ['new', 'click', 'price'].includes(url.searchParams.get('sort'))) send('catalog_sort', { sort_order: url.searchParams.get('sort') });
   }, true);
   document.addEventListener('hubbuy:image-search', event => {

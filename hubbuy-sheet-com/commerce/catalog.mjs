@@ -1,9 +1,11 @@
 import { nav, footer, styles } from './chrome.mjs';
+import { localeCodes, htmlLocale } from '../public/assets/locale-core.mjs';
+import { catalogueDictionary, localizeCatalogueHtml } from './locale-support.mjs';
 // Public catalogue adapter. All catalogue reads come from cnbuycha.com.
 export const DATA_ORIGIN = 'https://cnbuycha.com';
 export const REGISTER_URL = 'https://hubbuy.com/signUp';
 export const CATEGORIES = ['AllProducts','shoes','hoodies-sweaters','t-shirts','jackets','pants-shorts','headwear','accessories','short-sets','electronics','other-stuff','jersey'];
-export const LANGS = ['en','pt-br','de'];
+export const LANGS = localeCodes;
 const COPY = {
  en: ['Products & QC photos','Search products or source ID','Search','Latest','Popular','Price: low to high','Search by image','Browse the full spreadsheet','Product photos / QC','Open in Hubbuy','Register on Hubbuy','Previous','Next','No products found. Try another keyword.','Product ID','Product images from the source catalogue. Check the exact item, option and photo context before buying.','Choose an image to find visually similar catalogue products. Images are compared on your device.','Related products','All products','Image search compares visual similarity; it does not confirm an identical item.','Catalogue temporarily unavailable. Please try again.'],
  de: ['Produkte & QC-Bilder','Produkte oder Artikel-ID suchen','Suchen','Neueste','Beliebt','Preis: aufsteigend','Bildersuche','Das komplette Spreadsheet ansehen','Produktbilder / QC','Bei Hubbuy öffnen','Bei Hubbuy registrieren','Zurück','Weiter','Keine Produkte gefunden. Versuche einen anderen Suchbegriff.','Artikel-ID','Bilder aus dem Quellkatalog. Prüfe den genauen Artikel, die Variante und den Bildkontext vor dem Kauf.','Wähle ein Bild für ähnliche Produkte aus dem Katalog. Der Vergleich erfolgt auf deinem Gerät.','Ähnliche Produkte','Alle Produkte','Visuelle Ähnlichkeit bestätigt nicht, dass es derselbe Artikel ist.','Katalog vorübergehend nicht verfügbar. Bitte erneut versuchen.'],
@@ -65,11 +67,50 @@ const labels=lang=>COPY[lang]||COPY.en;
 function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://hubbuy-sheet.com'+prefix(lang)+path;
  const crumbs={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Hubbuy Spreadsheet',item:'https://hubbuy-sheet.com'+prefix(lang)+'/'},{'@type':'ListItem',position:2,name:title,item:canonical}]};
- const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | Hubbuy Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://hubbuy-sheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://hubbuy-sheet.com${path}"><link rel="icon" href="/brand/hubbuy-favicon.ico" sizes="64x64">${styles()}<link rel="stylesheet" href="/assets/catalog.css?v=20261111-visual-v2"><script src="/assets/catalog.js?v=20261111-visual-v2" defer></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main id="main-content" class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
- return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-hubbuy-release':'20261111-hubbuy-visual-v2'}});
+ const html=`<!doctype html><html lang="${htmlLocale(lang)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | Hubbuy Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${htmlLocale(l)}" href="https://hubbuy-sheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://hubbuy-sheet.com${path}"><link rel="icon" href="/brand/hubbuy-favicon.ico" sizes="64x64">${styles()}<link rel="stylesheet" href="/assets/catalog.css?v=20261111-detail-v3"><script src="/assets/catalog.js?v=20261111-detail-v3" defer></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main id="main-content" class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
+ return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-hubbuy-release':'20261111-hubbuy-detail-v3'}});
 }
 export function card(p,lang) {
- return `<article class="catalog-card"><a href="${localPath(p.path,lang)}"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" width="400" height="400" loading="lazy"><h2>${escapeHtml(p.title)}</h2><div class="card-meta"><strong>${money(p.price)}</strong><span>USD · ↗</span></div></a></article>`;
+ return `<article class="catalog-card"><a href="${localPath(p.path,lang)}"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" width="400" height="400" loading="lazy"><h2>${escapeHtml(p.title)}</h2><div class="card-meta"><strong data-price-amount="${escapeHtml(p.price)}" data-price-currency="USD">${money(p.price)}</strong><span><span data-currency-code>USD</span> · ↗</span></div></a></article>`;
+}
+export function purchasingPlatforms(sourceId) {
+ if (!/^\d{5,20}$/.test(String(sourceId))) return [];
+ const id = String(sourceId), source = encodeURIComponent(`https://weidian.com/item.html?itemID=${id}`);
+ return [
+  ['Superbuy', `https://www.superbuy.com/en/page/buy/?url=${source}`],
+  ['CSSBuy', `https://www.cssbuy.com/shop/goodsDetail?type=micro&id=${id}`],
+  ['Kakobuy', `https://kakobuy.com/item/details?url=${source}`],
+  ['USFans', `https://www.usfans.com/product/3/${id}`],
+  ['Sugargoo', `https://www.sugargoo.com/products?productLink=${source}`],
+  ['Oopbuy', `https://oopbuy.com/goods/details?id=${id}&channel=weidian`],
+  ['Hipobuy', `https://hipobuy.com/product/weidian/${id}`],
+  ['Litbuy', `https://litbuy.com/product/weidian/${id}`],
+  ['Lovegobuy', `https://www.lovegobuy.com/product?id=${id}&shop_type=weidian`],
+  ['Hoobuy', `https://hoobuy.com/product/2/${id}`],
+  ['OrientDig', `https://orientdig.com/product/?shop_type=weidian&id=${id}`],
+  ['Joyagoo', `https://joyagoo.com/product?id=${id}&platform=WEIDIAN`],
+ ];
+}
+function renderProductDetail(product,lang,t,buy) {
+ const im=(url,i,kind='catalogue')=>`<button class="photo-tile" type="button" data-photo-src="${escapeHtml(url)}" data-photo-kind="${kind}" aria-label="Enlarge photo ${i+1}"><img src="${escapeHtml(url)}" alt="${escapeHtml(product.title)} ${i+1}" width="160" height="160" loading="lazy"><span>${i+1}</span></button>`;
+ return `<a class="back" href="${base(lang)}/">← ${t[7]}</a>
+<section class="catalog-detail" data-product-detail data-source-id="${escapeHtml(product.sourceId)}" data-source-url="${escapeHtml(product.sourceUrl)}">
+ <div class="catalog-gallery"><div class="section-caption"><h2>Product photos</h2><span>${product.images.length}</span></div>
+  <div class="gallery-main" tabindex="0" role="region" aria-label="Product photos"><button type="button" data-gallery-prev aria-label="Previous photo">‹</button><img id="gallery-main" src="${escapeHtml(product.images[0]||'')}" alt="${escapeHtml(product.title)}" width="800" height="800"><button type="button" data-gallery-next aria-label="Next photo">›</button><button class="gallery-zoom" type="button" data-enlarge aria-label="Enlarge photo">⤢</button><span class="gallery-counter" aria-live="polite">1 / ${product.images.length}</span></div>
+  <div class="gallery-thumbs" aria-label="Product photos">${product.images.map((url,i)=>`<button type="button" data-gallery-index="${i}" aria-label="Image ${i+1}" aria-current="${i===0}"><img src="${escapeHtml(url)}" alt="" width="120" height="120" loading="lazy"></button>`).join('')}</div>
+ </div>
+ <div class="catalog-product-info"><p class="catalog-eyebrow">HUBBUY SPREADSHEET</p><h1>${escapeHtml(product.title)}</h1><p class="product-source-id">${t[14]}: <strong>${escapeHtml(product.sourceId)}</strong></p>
+  <p class="detail-price"><span data-detail-price data-price-amount="${escapeHtml(product.price)}" data-price-currency="USD">${money(product.price)}</span> <small data-currency-code>USD</small></p><p class="detail-price-note" data-source-price></p><p class="detail-price-note">Estimated conversion. Shipping, taxes and platform fees are not included.</p><p class="rate-status" data-rate-status role="status"></p>
+  ${buy?`<a class="buy-button" href="${escapeHtml(buy)}" target="_blank" rel="noopener noreferrer" data-track-event="hubbuy_product_click">${t[9]} ↗</a>`:''}
+  <div class="product-action-row"><details class="agent-picker"><summary>Other buying agents <span aria-hidden="true">⌄</span></summary><div class="agent-options"><p>Open this product with another buying agent. Confirm its price and available options there.</p><label class="sr-only" for="agent-query">Search buying agents</label><input id="agent-query" type="search" placeholder="Search buying agents"><div class="agent-list">${purchasingPlatforms(product.sourceId).map(([name,href])=>`<a href="${escapeHtml(href)}" data-agent="${name.toLowerCase()}" target="_blank" rel="noopener noreferrer">${name} <span aria-hidden="true">↗</span></a>`).join('')}</div><p data-no-agents hidden>No buying agents found.</p></div></details><button type="button" class="copy-source" data-copy-source>Copy Weidian link</button></div>
+  <p class="copy-status" data-copy-status role="status"></p><textarea data-copy-fallback hidden readonly aria-label="Original Weidian listing"></textarea>
+  <section class="product-styles" aria-labelledby="styles-title"><div class="section-caption"><h2 id="styles-title">Styles</h2><span data-style-count></span></div><p data-options-status role="status">Loading styles…</p><button data-options-retry type="button" hidden>Retry</button><div class="style-grid" tabindex="0" role="group" aria-label="Styles" data-style-grid></div><div data-option-groups></div><p class="selected-option" data-selected-option role="status"></p><p class="style-note">Style photos are a reference. Confirm the selected style and size on the buying platform.</p><a class="original-link" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open on Weidian ↗</a></section>
+ </div>
+</section>
+<section class="product-qc" aria-labelledby="qc-title"><div class="section-caption"><h2 id="qc-title">QC photos</h2><span>0</span></div><div class="qc-empty"><p>No verified QC photos are available from the catalogue source for this item.</p><a href="${prefix(lang)}/guides/qc-checks/">Read the QC guide →</a></div></section>
+<section class="source-photos" aria-labelledby="source-photos-title"><div class="section-caption"><h2 id="source-photos-title">Catalogue photos</h2><span>${product.images.length}</span></div><p>These are catalogue reference photos; they are not identified as warehouse QC.</p><div class="source-photo-grid">${product.images.map((url,i)=>im(url,i)).join('')}</div></section>
+<section class="related-products"><h2>${t[17]}</h2><div class="catalog-grid">${product.related.slice(0,8).map(p=>card(p,lang)).join('')}</div></section>
+<dialog class="photo-viewer" aria-label="Product photos"><button type="button" data-close-viewer aria-label="Close">×</button><img alt="${escapeHtml(product.title)}"><button type="button" data-viewer-prev aria-label="Previous photo">‹</button><button type="button" data-viewer-next aria-label="Next photo">›</button><p data-viewer-counter></p></dialog>`;
 }
 const cameraIcon = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5l1.5-2h5L16 5h4a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2h4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="12.5" r="4" stroke="currentColor" stroke-width="1.7"/></svg>';
 const visualCopy = {
@@ -88,8 +129,8 @@ export async function upstream(path,params) {
  if(!r.ok){const error=new Error('Catalogue response '+r.status);error.status=r.status;throw error;}
  return r.text();
 }
-export async function catalogueRoute(request,env) {
- const url=new URL(request.url),match=url.pathname.match(/^\/(?:(en|pt-br|de)\/)?catalog(?:\/(.*))?$/);
+async function catalogueRouteBase(request,env) {
+ const url=new URL(request.url),match=url.pathname.match(/^\/(?:(en|de|fr|es|it|nl|pt-br|pl|ro|sv|zh|da|fi|el|cs|hu|bg|sk|hr|ja|ko|vi|th|id)\/)?catalog(?:\/(.*))?$/);
  if(url.pathname==='/api/catalog-photos') {
   if(request.method!=='GET')return new Response(null,{status:405});
   const path=url.searchParams.get('path')||'',parts=path.match(/^\/([a-z0-9-]+)\/\d+\.html$/);
@@ -126,16 +167,16 @@ export async function catalogueRoute(request,env) {
  <div id="image-controls" class="image-controls" hidden><div class="image-preview-wrap"><img id="image-preview" alt="${v.preview}"><span id="image-crop-overlay" hidden></span></div><div class="image-options"><label for="image-focus">${v.area}</label><select id="image-focus"><option value="full">${v.full}</option><option value="center">${v.center}</option></select><p>${v.tip}</p><div class="image-actions"><button id="image-retry" type="button">${v.again}</button><button id="image-reset" type="button">${v.clear}</button></div></div></div>
  <div class="image-progress-row"><p id="image-status" role="status" aria-live="polite">${v.empty}</p><button id="image-cancel" type="button" hidden>${v.cancel}</button></div><progress id="image-progress" aria-label="${v.searching}" hidden></progress>
  <p class="catalog-note">${t[19]} ${v.scope}</p>
-</section><section class="image-results-section" aria-labelledby="image-results-title"><h2 id="image-results-title">${v.results}</h2><p id="image-result-note" hidden></p><div class="catalog-grid" id="image-results" aria-busy="false"></div><button class="catalog-more" id="image-more" type="button" hidden>${v.more}</button></section><noscript><p>${v.javascript}</p></noscript><script type="module" src="/assets/image-search.js?v=20261111-visual-v2"></script>`,{noindex:true});
+</section><section class="image-results-section" aria-labelledby="image-results-title"><h2 id="image-results-title">${v.results}</h2><p id="image-result-note" hidden></p><div class="catalog-grid" id="image-results" aria-busy="false"></div><button class="catalog-more" id="image-more" type="button" hidden>${v.more}</button></section><noscript><p>${v.javascript}</p></noscript><script type="module" src="/assets/image-search.js?v=20261111-detail-v3"></script>`,{noindex:true});
  }
 
  try {
   if(/^[a-z0-9-]+\/\d+\.html$/i.test(tail)) {
    const product=parseDetail(await upstream('/'+tail));if(!product.title)return shell(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
    const buy=buyUrl(product.sourceId);
-   return shell(lang,path,product.title,`${product.title}. ${t[8]}. ${t[15]}`,`<a class="back" href="${base(lang)}/">← ${t[7]}</a><section class="catalog-detail"><div class="catalog-gallery"><div class="gallery-main"><button type="button" data-gallery-prev aria-label="${t[11]}">‹</button><img id="gallery-main" src="${escapeHtml(product.images[0]||'')}" alt="${escapeHtml(product.title)}" width="800" height="800"><button type="button" data-gallery-next aria-label="${t[12]}">›</button></div><div class="gallery-thumbs" aria-label="${t[8]}">${product.images.map((im,i)=>`<button type="button" data-gallery-index="${i}" aria-label="${t[8]} ${i+1}" aria-current="${i===0}"><img src="${escapeHtml(im)}" alt="${escapeHtml(product.title)} ${i+1}" width="120" height="120" loading="lazy"></button>`).join('')}</div></div><div class="catalog-product-info"><p class="catalog-eyebrow">HUBBUY SPREADSHEET</p><h1>${escapeHtml(product.title)}</h1><p>${t[14]}: <strong>${escapeHtml(product.sourceId)}</strong></p><p class="detail-price">${money(product.price)} <small>USD</small></p>${buy?`<a class="buy-button" href="${escapeHtml(buy)}" target="_blank" rel="noopener noreferrer" data-track-event="hubbuy_product_click">${t[9]} ↗</a>`:''}<h2>${t[8]}</h2><p>${t[15]}</p></div></section><h2>${t[17]}</h2><div class="catalog-grid">${product.related.slice(0,8).map(p=>card(p,lang)).join('')}</div>`);
+   return shell(lang,path,product.title,`${product.title}. ${t[8]}. ${t[15]}`,renderProductDetail(product,lang,t,buy),{query:url.search});
   }
-  const cat=tail.replace(/\/$/,'')||'AllProducts';if(!CATEGORIES.includes(cat))return shell(lang,path,'Not found','',`<h1>404</h1>`,{status:404,noindex:true});
+  const cat=tail.replace(/\/$/,'')||'AllProducts';if(!CATEGORIES.includes(cat))return shell(lang,path,'Page not found','',`<h1>404</h1>`,{status:404,noindex:true});
   const q=normalizeQuery(url.searchParams.get('q')||url.searchParams.get('keywords')||'');
   const sort=['new','click','price'].includes(url.searchParams.get('sort'))?url.searchParams.get('sort'):'new';
   const page=Math.min(10000,Math.max(1,Number.parseInt(url.searchParams.get('page')||'1')||1));
@@ -143,7 +184,7 @@ export async function catalogueRoute(request,env) {
   const route=localPath('/'+cat+'/',lang),link=(s,p=1)=>`${route}?${new URLSearchParams({q,sort:s,page:String(p)})}`;
   const names=CATEGORY_LABELS[lang]||CATEGORY_LABELS.en,categoryTitle=names[CATEGORIES.indexOf(cat)];
   const title=cat==='AllProducts'?t[0]:`Hubbuy ${categoryTitle} Spreadsheet`;
-  return shell(lang,path,title,`${title}. ${t[15]}`,`<p class="catalog-eyebrow">HUBBUY SPREADSHEET · USD</p><h1>${title}</h1><div class="catalog-tools">${searchForm(lang,q,cat,sort)}<a class="image-search-link" href="${base(lang)}/image-search/">${cameraIcon} ${t[6]}</a></div><nav class="category-filters" aria-label="${t[18]}">${CATEGORIES.map((c,i)=>`<a href="${localPath('/'+c+'/',lang)}" ${c===cat?'aria-current="page"':''}>${names[i]}</a>`).join('')}</nav><div class="sort-row">${[['new',t[3]],['click',t[4]],['price',t[5]]].map(([s,n])=>`<a href="${escapeHtml(link(s))}" ${sort===s?'aria-current="page"':''}>${n}</a>`).join('')}<span>${data.total.toLocaleString()} · ${page} / ${Math.max(page,data.pages)}</span></div><div class="catalog-grid">${data.products.length?data.products.map(p=>card(p,lang)).join(''):`<p class="empty-state">${t[13]}</p>`}</div><nav class="catalog-pagination" aria-label="${t[11]} / ${t[12]}">${page>1?`<a href="${escapeHtml(link(sort,page-1))}">← ${t[11]}</a>`:''}${page<data.pages?`<a href="${escapeHtml(link(sort,page+1))}">${t[12]} →</a>`:''}</nav>`,{noindex:!!q||sort!=='new'||page>1,query:url.search});
+  return shell(lang,path,title,`${title}. ${t[15]}`,`<p class="catalog-eyebrow">HUBBUY SPREADSHEET</p><h1>${title}</h1><div class="catalog-tools">${searchForm(lang,q,cat,sort)}<a class="image-search-link" href="${base(lang)}/image-search/">${cameraIcon} ${t[6]}</a></div><nav class="category-filters" aria-label="${t[18]}">${CATEGORIES.map((c,i)=>`<a href="${localPath('/'+c+'/',lang)}" ${c===cat?'aria-current="page"':''}>${names[i]}</a>`).join('')}</nav><div class="sort-row">${[['new',t[3]],['click',t[4]],['price',t[5]]].map(([s,n])=>`<a href="${escapeHtml(link(s))}" ${sort===s?'aria-current="page"':''}>${n}</a>`).join('')}<span>${data.total.toLocaleString()} · ${page} / ${Math.max(page,data.pages)}</span></div><div class="catalog-grid">${data.products.length?data.products.map(p=>card(p,lang)).join(''):`<p class="empty-state">${t[13]}</p>`}</div><nav class="catalog-pagination" aria-label="${t[11]} / ${t[12]}">${page>1?`<a href="${escapeHtml(link(sort,page-1))}">← ${t[11]}</a>`:''}${page<data.pages?`<a href="${escapeHtml(link(sort,page+1))}">${t[12]} →</a>`:''}</nav>`,{noindex:!!q||sort!=='new'||page>1,query:url.search});
  } catch(error) { if(error.status===404)return shell(lang,path,'404','',`<h1>404</h1>`,{status:404,noindex:true}); return shell(lang,path,t[20],t[20],`<h1>${t[20]}</h1><a href="${base(lang)}/">${t[7]}</a>`,{status:503,noindex:true}); }
 }
 
@@ -154,4 +195,13 @@ export function normalizeQuery(raw) {
   if(/^\d{5,20}$/.test(id||''))return id;
  }} catch {}
  return value.slice(0,100);
+}
+
+export async function catalogueRoute(request, env) {
+ const result = await catalogueRouteBase(request, env);
+ if (!result || !result.headers.get('content-type')?.includes('text/html')) return result;
+ const segment = new URL(request.url).pathname.split('/')[1];
+ const locale = LANGS.includes(segment) ? segment : 'en';
+ const dictionary = await catalogueDictionary(locale, env);
+ return new Response(localizeCatalogueHtml(await result.text(), dictionary, locale), {status:result.status,headers:result.headers});
 }

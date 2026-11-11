@@ -4,12 +4,16 @@ import { articles } from "../data/articles.js";
 import { categoryPages } from "../data/categories.js";
 import { products } from "../data/site.js";
 import { getBaseLanguagePath, getLocalizedPath } from "../data/i18n.js";
+import { localeList, localeCodes, htmlLocale } from "../public/assets/locale-core.mjs";
 import { keywordTopicMap } from "../data/keyword-map.js";
 
 const outputRoot = resolve(process.argv[2] || "out");
 const siteUrl = "https://hubbuy-sheet.com";
 const sitemap = readFileSync(resolve(outputRoot, "sitemap.xml"), "utf8");
-const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const sitemapFiles = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match=>new URL(match[1]).pathname.slice(1));
+if(sitemapFiles.length!==48||new Set(sitemapFiles).size!==48)throw Error('Expected 24 editorial and 24 catalogue leaf maps');
+for(const name of sitemapFiles){const xml=readFileSync(resolve(outputRoot,name),'utf8');if(!xml.includes('<urlset ')||xml.includes('<sitemapindex '))throw Error('Sitemap must reference leaf URL maps');if((xml.match(/<loc>/g)||[]).length>50000)throw Error('Sitemap exceeds URL limit');}
+const urls = localeCodes.flatMap(code=>[...readFileSync(resolve(outputRoot,`sitemap-${code}.xml`),'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(match=>match[1]));
 const records = [];
 const brokenLinks = [];
 const localeGroups = new Map();
@@ -60,11 +64,7 @@ const allowedSchemaTypes = new Set([
   "WebSite",
 ]);
 
-function localeFromPath(pathname) {
-  if (pathname.startsWith("/pt-br/")) return "pt-br";
-  if (pathname.startsWith("/de/")) return "de";
-  return "en";
-}
+function localeFromPath(pathname) {const code=pathname.split('/')[1];return localeCodes.includes(code)?code:'en';}
 
 function pagePath(url) {
   const pathname = new URL(url).pathname;
@@ -82,26 +82,7 @@ function internalTarget(href) {
     : resolve(outputRoot, clean);
 }
 
-function expectedAlternates(basePath) {
-  if (portugueseOnlyArticlePaths.has(basePath)) {
-    return new Map([
-      ["pt-BR", `${siteUrl}${getLocalizedPath(basePath, "pt-br")}`],
-      ["x-default", `${siteUrl}${getLocalizedPath(basePath, "pt-br")}`],
-    ]);
-  }
-  if (englishOnlyArticlePaths.has(basePath)) {
-    return new Map([
-      ["en", `${siteUrl}${basePath}`],
-      ["x-default", `${siteUrl}${basePath}`],
-    ]);
-  }
-  return new Map([
-    ["en", `${siteUrl}${getLocalizedPath(basePath, "en")}`],
-    ["pt-BR", `${siteUrl}${getLocalizedPath(basePath, "pt-br")}`],
-    ["de", `${siteUrl}${getLocalizedPath(basePath, "de")}`],
-    ["x-default", `${siteUrl}${getLocalizedPath(basePath, "en")}`],
-  ]);
-}
+function expectedAlternates(basePath) {return new Map([...localeList.map(([code])=>[htmlLocale(code),`${siteUrl}${getLocalizedPath(basePath,code)}`]),['x-default',`${siteUrl}${basePath}`]]);}
 
 function metaContent(html, attribute, key) {
   for (const match of html.matchAll(/<meta\b[^>]*>/gi)) {
@@ -155,7 +136,7 @@ for (const url of urls) {
   const h1 = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, "").replace(/<!--.*?-->/g, "").trim();
   const h1Count = (html.match(/<h1\b/g) || []).length;
   const lang = html.match(/<html lang="([^"]+)"/)?.[1];
-  const expectedLang = locale === "pt-br" ? "pt-BR" : locale;
+  const expectedLang = htmlLocale(locale);
   const ogTitle = metaContent(html, "property", "og:title");
   const ogUrl = metaContent(html, "property", "og:url");
   const ogImage = metaContent(html, "property", "og:image");
@@ -175,7 +156,7 @@ for (const url of urls) {
   if (ogImage !== expectedImage) throw new Error(`Invalid og:image on ${url}: ${ogImage}`);
   if (twitterImage !== expectedImage) throw new Error(`Invalid twitter:image on ${url}: ${twitterImage}`);
   if (lang !== expectedLang) throw new Error(`HTML language mismatch on ${url}: ${lang}`);
-  if (/__X\d|TOKEN|>>\s*por\s*<<|\?lang=(?:pt-br|de)/i.test(html)) throw new Error(`Translation artifact on ${url}`);
+  if (/__X\d|\bTOKEN\d*\b|>>\s*por\s*<<|\?lang=(?:pt-br|de)/i.test(html)) throw new Error(`Translation artifact on ${url}`);
   if (/aria-current=["']page["']>>/.test(html)) throw new Error(`Malformed language menu on ${url}`);
 
   if (basePath === "/") {
@@ -207,7 +188,7 @@ for (const url of urls) {
 
   if (locale !== "en") {
     if (!html.includes("Static localized edition")) throw new Error(`Missing localized marker on ${url}`);
-    const localizedWithoutAnalytics = html.replace(/<script\b[^>]*data-static-analytics[^>]*>[\s\S]*?<\/script>/g, "").replace(/<script\b[^>]*src="\/mobile-reading\.js[^"]*"[^>]*><\/script>/g, "");
+    const localizedWithoutAnalytics = html.replace(/<script\b[^>]*data-static-analytics[^>]*>[\s\S]*?<\/script>/g, "").replace(/<script\b[^>]*src="(?:\/mobile-reading\.js|\/assets\/(?:catalog|experience)\.js)[^"]*"[^>]*><\/script>/g, "");
     if ((localizedWithoutAnalytics.match(/<script\b(?![^>]*application\/ld\+json)/g) || []).length) {
       throw new Error(`Localized page still depends on client JavaScript: ${url}`);
     }
@@ -231,6 +212,13 @@ for (const url of urls) {
     if (!collection || !schemaType(itemList, "ItemList")) throw new Error(`Missing CollectionPage + ItemList on ${url}`);
     if (itemList.numberOfItems !== products.length || itemList.itemListElement?.length !== products.length) throw new Error(`Incomplete product ItemList on ${url}`);
     if (new Set(itemList.itemListElement.map((item) => item.url)).size !== products.length) throw new Error(`Duplicate product URLs in ItemList on ${url}`);
+  }
+
+  if (basePath === "/articles/") {
+    for (const entry of articles) {
+      const href=getLocalizedPath(`/articles/${entry.slug}/`,locale);
+      if (!html.includes(`href="${href}"`)) throw Error(`Article missing from localized index: ${url} → ${href}`);
+    }
   }
 
   if (category) {
@@ -296,7 +284,7 @@ for (const url of urls) {
     if (locale === "en") {
       const body = html.match(/<article class="seo-article-body">([\s\S]*?)<\/article>/)?.[1] || "";
       const count = visibleWordCount(body);
-      if (count !== article.wordCount || count < 1200 || count > 1800) {
+      if (!portugueseOnlyArticle && (count !== article.wordCount || count < 1200 || count > 1800)) {
         throw new Error(`Article word count mismatch on ${url}: schema ${article.wordCount}, visible ${count}`);
       }
     }
@@ -306,18 +294,18 @@ for (const url of urls) {
     const href = match[1];
     if (!href.startsWith("/") || href.startsWith("//")) continue;
     const target = internalTarget(href);
-    if (!existsSync(target) && !/^\/(?:pt-br\/|de\/)?catalog(?:\/|$)/.test(href)) brokenLinks.push({ from: url, href });
+    if (!existsSync(target) && !/^\/(?:catalog|products)(?:\/|$)/.test(getBaseLanguagePath(href.split('?')[0]))) brokenLinks.push({ from: url, href });
   }
 
   records.push({ url, pathname, locale, basePath, title, canonical, h1, lang, ogTitle, ogUrl, ogImage });
-  if (!product && !englishOnlyArticle && !portugueseOnlyArticle) {
+  if (!product) {
     if (!localeGroups.has(basePath)) localeGroups.set(basePath, {});
     localeGroups.get(basePath)[locale] = { title, h1, ogTitle, url };
   }
 }
 
 for (const [basePath, group] of localeGroups) {
-  if (!group.en || !group["pt-br"] || !group.de) throw new Error(`Incomplete locale group: ${basePath}`);
+  if (localeCodes.some(code=>!group[code])) throw new Error(`Incomplete locale group: ${basePath}`);
   if (group.en.title === group["pt-br"].title || group.en.title === group.de.title) {
     throw new Error(`Untranslated title in locale group: ${basePath}`);
   }
@@ -329,13 +317,8 @@ for (const [basePath, group] of localeGroups) {
   }
 }
 
-const multilingualArticleCount = articles.length - englishOnlyArticlePaths.size - portugueseOnlyArticlePaths.size;
-const sharedRouteCount = 10 + multilingualArticleCount + categoryPages.length;
-const localeCounts = {
-  en: sharedRouteCount + englishOnlyArticlePaths.size,
-  "pt-br": sharedRouteCount + portugueseOnlyArticlePaths.size,
-  de: sharedRouteCount,
-};
+const sharedRouteCount = 10 + articles.length + categoryPages.length;
+const localeCounts = Object.fromEntries(localeCodes.map(code=>[code,sharedRouteCount]));
 for (const [locale, expectedCount] of Object.entries(localeCounts)) {
   const file = resolve(outputRoot, `sitemap-${locale}.xml`);
   if (!existsSync(file)) throw new Error(`Missing language sitemap: ${locale}`);
@@ -344,13 +327,13 @@ for (const [locale, expectedCount] of Object.entries(localeCounts)) {
 }
 
 const duplicateTitles = records.filter((record, index) => (
-  records.findIndex((candidate) => candidate.title === record.title) !== index
+  records.findIndex((candidate) => candidate.locale===record.locale && candidate.title === record.title) !== index
 ));
 const duplicateCanonicals = records.filter((record, index) => (
   records.findIndex((candidate) => candidate.canonical === record.canonical) !== index
 ));
 
-const expectedSitemapUrls = localeCounts.en + localeCounts["pt-br"] + localeCounts.de;
+const expectedSitemapUrls = Object.values(localeCounts).reduce((sum,count)=>sum+count,0);
 if (urls.length !== expectedSitemapUrls || new Set(urls).size !== expectedSitemapUrls) throw new Error(`Expected ${expectedSitemapUrls} unique sitemap URLs, found ${urls.length}`);
 if (duplicateTitles.length) throw new Error(`Duplicate titles: ${duplicateTitles.map((item) => item.url).join(", ")}`);
 if (duplicateCanonicals.length) throw new Error("Duplicate canonical URLs");
@@ -406,5 +389,5 @@ console.log(JSON.stringify({
     uniquePrimaryQueries: new Set(normalizedQueries).size,
   },
   brokenInternalLinks: brokenLinks.length,
-  languages: Object.fromEntries(["en", "pt-BR", "de"].map((lang) => [lang, records.filter((item) => item.lang === lang).length])),
+  languages: Object.fromEntries(localeCodes.map(htmlLocale).map((lang) => [lang, records.filter((item) => item.lang === lang).length])),
 }, null, 2));

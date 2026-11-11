@@ -19,8 +19,8 @@ export default function ProductCard({ product, priority = false }) {
       <div className="product-content">
         <div>
           <h3>{product.name}</h3>
-          <p><span>$</span>{usdReference(product.price)} <small>approx.</small></p>
-          <small className="cny-reference">Reference ¥{product.price}</small>
+          <p className="live-product-price"><strong data-price-amount={product.price} data-price-currency="CNY">${usdReference(product.price)}</strong> <small data-currency-code>USD</small> <small>approx.</small></p>
+          <small className="cny-reference">CNY: ¥{product.price}</small>
         </div>
         <a className="product-link" href={product.catalogHref} aria-label={`View ${product.name} product photos`}><ArrowIcon /></a>
       </div>

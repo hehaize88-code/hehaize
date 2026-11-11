@@ -18,6 +18,7 @@ assert.equal(normalizeQuery(exactBuy), '7853208944');
 assert.equal(normalizeQuery('https://weidian.com/item.html?itemID=7853208944'), '7853208944');
 assert.equal(normalizeQuery('  green shirt  '), 'green shirt');
 assert.equal(getLocalizedPath('/catalog/accessories/3438.html', 'de'), '/de/catalog/accessories/3438.html');
+const env={ASSETS:{fetch:async request=>new Response(readFileSync('public'+new URL(request.url).pathname,'utf8'))}};
 const requests = [];
 globalThis.fetch = async url => {
   const parsed = new URL(url); requests.push(parsed);
@@ -34,7 +35,7 @@ let checks = 13;
 for (const locale of LANGS) {
   for (const category of CATEGORIES) {
     const path = localPath('/' + category + '/', locale);
-    const response = await catalogueRoute(new Request('https://hubbuy-sheet.com' + path + '?q=bag&sort=price&page=2'));
+    const response = await catalogueRoute(new Request('https://hubbuy-sheet.com' + path + '?q=bag&sort=price&page=2'),env);
     assert.equal(response.status, 200);
     const html = await response.text();
     assert.equal(requests.at(-1).pathname, '/' + category + '/');
@@ -46,7 +47,7 @@ for (const locale of LANGS) {
     checks += 8;
   }
   const path = localPath('/accessories/3438.html', locale);
-  const detailResponse = await catalogueRoute(new Request('https://hubbuy-sheet.com' + path));
+  const detailResponse = await catalogueRoute(new Request('https://hubbuy-sheet.com' + path),env);
   const html = await detailResponse.text();
   assert.equal(detailResponse.status, 200); assert.ok(html.includes(exactBuy.replaceAll('&', '&amp;')));
   assert.equal([...html.matchAll(/data-gallery-index=/g)].length, 2);
@@ -56,7 +57,7 @@ for (const locale of LANGS) {
     assert.match(html, new RegExp(`href="${other}"[^>]*data-locale-code="${code}"`));
   }
   assert.ok(html.includes(`rel="canonical" href="https://hubbuy-sheet.com${path}"`));
-  const imageResponse = await catalogueRoute(new Request('https://hubbuy-sheet.com' + localPath('/image-search/', locale)));
+  const imageResponse = await catalogueRoute(new Request('https://hubbuy-sheet.com' + localPath('/image-search/', locale)),env);
   assert.equal(imageResponse.status, 200); assert.ok((await imageResponse.text()).includes('id="image-file"'));
   checks += 12;
 }
@@ -84,11 +85,11 @@ assert.equal(index.source, 'https://cnbuycha.com'); assert.equal(index.products.
 assert.equal(index.catalogCount, 3446); assert.equal(index.indexedCount, 3446);
 assert.ok(index.products.every(product => /^\/[a-z-]+\/\d+\.html$/.test(product.path) && product.hash.length === 64 && product.cells.length === 48));
 const sitemap = readFileSync('out/sitemap-catalog.xml', 'utf8');
-assert.equal([...sitemap.matchAll(/<loc>/g)].length, 3 * (index.catalogCount + CATEGORIES.length));
-assert.ok(sitemap.includes('https://hubbuy-sheet.com/catalog/accessories/3438.html'));
+assert.equal([...sitemap.matchAll(/<loc>/g)].length,LANGS.length);
+for(const locale of LANGS){const leaf=readFileSync('out/sitemap-catalog-'+locale+'.xml','utf8');assert.equal([...leaf.matchAll(/<loc>/g)].length,index.catalogCount+CATEGORIES.length);assert.ok(leaf.includes('https://hubbuy-sheet.com'+(locale==='en'?'':'/'+locale)+'/catalog/accessories/3438.html'));}
 assert.ok(readFileSync('out/robots.txt', 'utf8').includes('sitemap-catalog.xml'));
 assert.ok(readFileSync('out/brand/hubbuy-favicon.ico').equals(Buffer.from(readFileSync('commerce/favicon.base64', 'utf8').trim(), 'base64')));
-console.log(`PASS: commerce routes across 12 categories and 3 locales; live-source fixtures, exact purchase URL, all categories/locales, errors, 192 legacy redirects, image index, sitemap and official favicon.`);
+console.log(`PASS: commerce routes across 12 categories and 24 locales; live-source fixtures, exact purchase URL, all categories/locales, errors, all legacy redirects, image index, sitemap and official favicon.`);
 
 const repaired='https://cnbuycha.com/media/products/3460/59921312-605e-42f7-a647-f3d8a9713fb2.jpg?v=2';
 const missing=readFileSync('tests/fixtures/missing-image.html','utf8');

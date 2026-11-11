@@ -3,6 +3,7 @@ import { preload } from "react-dom";
 import { REGISTER_URL } from "@/data/site";
 import { ArrowIcon } from "@/components/Icons";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import CurrencySwitcher from "@/components/CurrencySwitcher";
 
 const nav = [
   ["Products", "/catalog/"],
@@ -32,6 +33,7 @@ export default function Header() {
           {nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
         </nav>
         <LanguageSwitcher />
+        <CurrencySwitcher />
         <a className="nav-cta" href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
           Register <ArrowIcon size={16} />
         </a>

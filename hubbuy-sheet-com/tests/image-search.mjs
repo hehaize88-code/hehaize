@@ -30,34 +30,34 @@ for(const [name,bytes] of [['original',photo],['small JPEG',await sharp(photo).r
 }
 
 // UI state tests exercise retries, malformed data and async cancellation with no browser/network dependency.
-const source=fs.readFileSync('public/assets/image-search.js','utf8').replace(/^import[^\n]+\n/,'');
+const source=fs.readFileSync('public/assets/image-search.js','utf8').replace(/^import[^\n]+\n/gm,'');
 const flush=async()=>{for(let i=0;i<12;i++)await new Promise(r=>setImmediate(r));};
-function setup(){
+async function setup(){
  const nodes=new Map(),handlers={},events=[];let fetches=0,reply=()=>Promise.resolve({ok:true,json:async()=>({products:[original],updatedAt:'2026-10-16'})});
  function node(id){if(!nodes.has(id))nodes.set(id,{id,hidden:false,value:'full',files:[],disabled:false,innerHTML:'',textContent:'',dataset:{locale:'en'},classList:{add(){},remove(){},toggle(){}},addEventListener(n,f){this[n]=f;},setAttribute(n,v){this[n]=v;},removeAttribute(n){delete this[n];},replaceChildren(){this.innerHTML='';},focus(){},contains(){return false;}});return nodes.get(id);}
  const document={getElementById:node,querySelector:()=>node('main'),addEventListener:(n,f)=>handlers[n]=f,dispatchEvent:e=>events.push(e.detail)};
- const context={document,window:{addEventListener(){}},Image:class {naturalWidth=100;naturalHeight=100;decode(){return Promise.resolve()}},URL:{createObjectURL:()=> 'blob:test',revokeObjectURL(){}},AbortController,CustomEvent:class{constructor(n,options){this.detail=options.detail}},setTimeout,clearTimeout,requestAnimationFrame:f=>setImmediate(f),fetch:()=>{fetches++;return reply();},acceptsImage,rankProducts,selectResults,validProduct,fingerprint:()=>({...original,variation:30})};
- vm.runInNewContext(source,context);
+ const context={loadDictionary:async()=>({}),document,window:{addEventListener(){}},Image:class {naturalWidth=100;naturalHeight=100;decode(){return Promise.resolve()}},URL:{createObjectURL:()=> 'blob:test',revokeObjectURL(){}},AbortController,CustomEvent:class{constructor(n,options){this.detail=options.detail}},setTimeout,clearTimeout,requestAnimationFrame:f=>setImmediate(f),fetch:()=>{fetches++;return reply();},acceptsImage,rankProducts,selectResults,validProduct,fingerprint:()=>({...original,variation:30})};
+ vm.runInNewContext(source,context);await flush();
  const file={type:'image/jpeg',name:'photo.jpg',size:100};
  async function choose(value=file){node('image-file').files=[value];node('image-file').change();await flush();}
  return {node,handlers,events,choose,reply:fn=>reply=fn,fetches:()=>fetches};
 }
 {
- const u=setup();await u.choose();assert.ok(u.node('image-results').innerHTML.includes('/catalog/other-stuff/3459.html'));assert.equal(u.fetches(),1);
+ const u=await setup();await u.choose();assert.ok(u.node('image-results').innerHTML.includes('/catalog/other-stuff/3459.html'));assert.equal(u.fetches(),1);
  u.node('image-retry').click();await flush();assert.equal(u.fetches(),1,'Reuse loaded index');
  await u.choose({type:'text/html',name:'bad.html',size:50});assert.equal(u.node('image-results').innerHTML,'');assert.equal(u.node('image-controls').hidden,true);assert.ok(u.node('image-status').textContent.includes('20 MB'));
 }
 {
- const u=setup();u.reply(()=>Promise.resolve({ok:false}));await u.choose();assert.ok(u.node('image-status').textContent.includes('could not be loaded'));assert.equal(u.node('image-retry').disabled,false);
+ const u=await setup();u.reply(()=>Promise.resolve({ok:false}));await u.choose();assert.ok(u.node('image-status').textContent.includes('could not be loaded'));assert.equal(u.node('image-retry').disabled,false);
  u.reply(()=>Promise.resolve({ok:true,json:async()=>({products:[original]})}));u.node('image-retry').click();await flush();assert.equal(u.fetches(),2);assert.ok(u.node('image-results').innerHTML.includes('Lego'));
 }
 {
- const u=setup();let finish;u.reply(()=>new Promise(r=>finish=r));await u.choose();u.node('image-cancel').click();finish({ok:true,json:async()=>({products:[original]})});await flush();assert.equal(u.node('image-results').innerHTML,'');assert.ok(u.node('image-status').textContent.includes('cancelled'));
+ const u=await setup();let finish;u.reply(()=>new Promise(r=>finish=r));await u.choose();u.node('image-cancel').click();finish({ok:true,json:async()=>({products:[original]})});await flush();assert.equal(u.node('image-results').innerHTML,'');assert.ok(u.node('image-status').textContent.includes('cancelled'));
  u.node('image-retry').click();await flush();assert.ok(u.node('image-results').innerHTML.includes('Lego'));
  u.node('image-reset').click();assert.equal(u.node('image-results').innerHTML,'');assert.equal(u.node('image-controls').hidden,true);
 }
 {
- const u=setup();let prevented=false;
+ const u=await setup();let prevented=false;
  u.handlers.paste({target:{closest:()=>null},clipboardData:{items:[{kind:'file',type:'image/jpeg',getAsFile:()=>({type:'image/jpeg',name:'paste.jpg',size:100})}]},preventDefault(){prevented=true}});await flush();assert.equal(prevented,true);assert.ok(u.node('image-results').innerHTML.includes('Lego'));
  u.node('image-drop').drop({dataTransfer:{files:[{type:'image/png',name:'drop.png',size:100}]},preventDefault(){}});await flush();assert.equal(u.fetches(),1);assert.ok(u.node('image-results').innerHTML.includes('Lego'));
 }

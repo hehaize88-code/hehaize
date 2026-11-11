@@ -239,7 +239,7 @@ export const faqGroups = [
       },
       {
         q: "Are spreadsheet prices and product links always current?",
-        a: "No catalog can guarantee that. Prices on this site are reference prices in Chinese yuan recorded during review. Sellers can change prices, variants, stock, or URLs, so re-check the live product page before submitting an order."
+        a: "No catalogue can guarantee current stock or a final checkout price. Use the currency selector for estimated conversions. Catalogue cards may start from USD reference prices, while a selected Weidian option uses its CNY source price. Shipping, taxes and platform fees are separate; confirm the item, option and total on the buying platform."
       }
     ]
   }

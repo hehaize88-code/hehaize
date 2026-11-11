@@ -1,16 +1,15 @@
 /* Progressive mobile reading: original text, headings and links stay in the DOM. */
-(() => {
+(async () => {
   if (window.__hubbuyCompactReading) return;
   window.__hubbuyCompactReading = true;
   const mobile = window.matchMedia('(max-width: 680px)');
   let serial = 0;
   let scheduled = false;
-  const copy = () => {
-    const lang = location.pathname.split('/')[1];
-    if (lang === 'pt-br') return { hint: 'Leia por seção', expand: 'Expandir tudo', collapse: 'Recolher tudo', more: 'Mostrar mais', less: 'Mostrar menos' };
-    if (lang === 'de') return { hint: 'Abschnitt auswählen', expand: 'Alles öffnen', collapse: 'Alles schließen', more: 'Mehr anzeigen', less: 'Weniger anzeigen' };
-    return { hint: 'Read by section', expand: 'Expand all', collapse: 'Collapse all', more: 'Show more', less: 'Show less' };
-  };
+  const {loadDictionary}=await import('/assets/locale-core.mjs');
+  const dictionary=await loadDictionary(document.documentElement.lang.toLowerCase().replace('zh-cn','zh'));
+  const tr=value=>dictionary[value]||value;
+  const copy=()=>({hint:tr('Read by section'),expand:tr('Expand all'),collapse:tr('Collapse all'),more:tr('Show more'),less:tr('Show less')});
+
   function setOpen(section, open) {
     section.dataset.compactOpen = String(open);
     section.querySelector('.compact-section-toggle')?.setAttribute('aria-expanded', String(open));
