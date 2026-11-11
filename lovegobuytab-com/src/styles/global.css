@@ -339,6 +339,7 @@ a svg {
 }
 .search-form input {
   flex: 1;
+  min-width: 0;
   border: 0;
   background: transparent;
   outline: none;
@@ -351,6 +352,7 @@ a svg {
   color: #94998d;
 }
 .search-form button {
+  flex-shrink: 0;
   width: 42px;
   height: 42px;
   background: var(--accent);
@@ -362,6 +364,77 @@ a svg {
 .hero-search {
   max-width: 475px;
   margin-bottom: 20px;
+}
+.search-form[data-image-search-form] {
+  gap: 8px;
+}
+.search-form .search-camera {
+  color: var(--accent);
+  background: transparent;
+}
+.search-form .search-camera:hover,
+.search-form .search-camera:focus-visible,
+.search-form.is-dragging {
+  background: #fff1e7;
+}
+.search-form .search-camera:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.search-form.is-dragging {
+  border-color: var(--accent);
+}
+.visual-dialog {
+  width: min(1100px, calc(100% - 32px));
+  max-width: none;
+  max-height: 90dvh;
+  border: 0;
+  border-radius: 18px;
+  padding: 0 28px 28px;
+  color: var(--ink);
+  background: #fff;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.visual-dialog::backdrop {
+  background: rgb(24 30 22 / 55%);
+}
+html:has(.visual-dialog[open]) {
+  overflow: hidden;
+}
+.visual-dialog-heading {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0 12px;
+  background: #fff;
+}
+.visual-dialog-heading h2 {
+  font-size: 26px;
+  margin: 0;
+}
+.visual-dialog .visual-embedded {
+  width: 100%;
+  padding: 0;
+  min-height: 0;
+}
+.visual-dialog .visual-heading {
+  margin-bottom: 20px;
+}
+@media (max-width: 650px) {
+  .visual-dialog {
+    width: calc(100% - 16px);
+    max-height: calc(100dvh - 24px);
+    padding: 0 16px 20px;
+    border-radius: 12px;
+  }
+  .visual-dialog-heading h2 {
+    font-size: 22px;
+  }
 }
 .text-link {
   display: inline-flex;

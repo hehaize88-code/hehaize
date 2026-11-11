@@ -1,14 +1,21 @@
 ---
 import Icon from "./Icon.astro";
 import imageUi from "../content/image-search-ui.json";
-const { lang, t } = Astro.props;
+const { lang, t, embedded = false } = Astro.props;
 const ui = (imageUi as any)[lang];
 ---
 
-<section class="wrap visual-page" data-visual-app>
+<section
+  class:list={["wrap visual-page", { "visual-embedded": embedded }]}
+  data-visual-app
+>
   <header class="visual-heading">
-    <p class="eyebrow">LoveGoBuy Tab</p>
-    <h1>{t.visual}</h1>
+    {!embedded && (
+      <>
+        <p class="eyebrow">LoveGoBuy Tab</p>
+        <h1>{t.visual}</h1>
+      </>
+    )}
     <p>{ui.scope}</p>
   </header>
   <div class="visual-layout">

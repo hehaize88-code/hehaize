@@ -121,11 +121,38 @@ const source = fs
 const flush = async () => {
   for (let i = 0; i < 12; i++) await new Promise((r) => setImmediate(r));
 };
-async function setup() {
+async function setup(embedded = false) {
   const html = await (
     await worker.fetch(new Request(origin + "/image-search/"), {})
   ).text();
   const { document, window } = parseHTML(html);
+  let pickerClicks = 0;
+  if (embedded) {
+    const app = document.querySelector("[data-visual-app]");
+    const dialog = document.createElement("dialog");
+    dialog.setAttribute("data-image-search-dialog", "");
+    dialog.open = false;
+    dialog.showModal = () => {
+      dialog.open = true;
+    };
+    dialog.close = () => {
+      dialog.open = false;
+      dialog.dispatchEvent(new window.Event("close"));
+    };
+    app.replaceWith(dialog);
+    dialog.append(app);
+    const close = document.createElement("button");
+    close.setAttribute("data-image-search-close", "");
+    dialog.append(close);
+    const form = document.createElement("form");
+    form.setAttribute("data-image-search-form", "");
+    form.innerHTML =
+      '<input type="search" name="q"><button type="button" data-image-search-trigger>Camera</button><button type="submit">Search</button>';
+    document.body.append(form);
+    document
+      .getElementById("image-file")
+      .addEventListener("click", () => pickerClicks++);
+  }
   let fetches = 0,
     refreshes = 0,
     reply = async () => ({
@@ -187,6 +214,7 @@ async function setup() {
     reply: (fn) => (reply = fn),
     fetches: () => fetches,
     refreshes: () => refreshes,
+    pickerClicks: () => pickerClicks,
   };
 }
 {
@@ -249,6 +277,49 @@ async function setup() {
   await flush();
   assert.equal(u.node("results").children.length, 1);
   assert.equal(u.fetches(), 1);
+}
+{
+  const u = await setup(true);
+  const form = u.document.querySelector("[data-image-search-form]");
+  const dialog = u.document.querySelector("[data-image-search-dialog]");
+  let submissions = 0;
+  form.addEventListener("submit", () => submissions++);
+  u.event(form.querySelector("[data-image-search-trigger]"), "click");
+  assert.equal(dialog.open, true);
+  assert.equal(u.pickerClicks(), 1);
+  assert.equal(submissions, 0, "The camera must not submit a text search");
+  u.event(u.document.querySelector("[data-image-search-close]"), "click");
+  assert.equal(dialog.open, false);
+  const search = form.querySelector("input");
+  search.value = "jacket";
+  u.event(search, "paste", {
+    clipboardData: {
+      items: [{ kind: "file", type: "image/jpeg", getAsFile: () => u.file }],
+    },
+  });
+  await flush();
+  assert.equal(dialog.open, true);
+  assert.equal(u.node("results").children.length, 1);
+  assert.equal(search.value, "jacket", "Image search preserves the text query");
+  dialog.close();
+  u.event(form, "drop", { dataTransfer: { files: [u.file] } });
+  await flush();
+  assert.equal(dialog.open, true);
+  assert.equal(u.node("results").children.length, 1);
+  assert.equal(u.fetches(), 1, "Search box shares the cached catalogue index");
+  dialog.close();
+  u.event(search, "paste", {
+    clipboardData: { items: [{ kind: "string", type: "text/plain" }] },
+  });
+  assert.equal(dialog.open, false, "Text paste remains a normal text search");
+  u.event(form, "drop", {
+    dataTransfer: {
+      files: [{ type: "text/html", name: "bad.html", size: 10 }],
+    },
+  });
+  await flush();
+  assert.equal(u.node("results").children.length, 0);
+  assert.equal(u.node("status").textContent, ui.en.file);
 }
 console.log(
   `PASS: ${index.catalogCount} valid source products, original/recompressed image retrieval, 24 localized routes, safe URLs, file validation, currency refresh, retry, cancellation, clear, paste and drop.`,

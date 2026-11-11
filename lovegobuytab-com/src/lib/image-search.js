@@ -16,6 +16,7 @@ function initialize() {
     document.querySelector("[data-visual-ui]").textContent,
   );
   const byId = (id) => document.getElementById("image-" + id);
+  const dialog = document.querySelector("[data-image-search-dialog]");
   const input = byId("file"),
     drop = byId("drop"),
     status = byId("status"),
@@ -37,6 +38,24 @@ function initialize() {
     controller = null,
     ranked = [],
     visible = 20;
+  function openSearch() {
+    if (dialog && !dialog.open) dialog.showModal();
+  }
+  document.querySelectorAll("[data-image-search-trigger]").forEach((button) => {
+    button.addEventListener("click", () => {
+      openSearch();
+      input.click();
+    });
+  });
+  document
+    .querySelector("[data-image-search-close]")
+    ?.addEventListener("click", () => dialog.close());
+  dialog?.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog?.addEventListener("close", () => {
+    if (app.getAttribute("aria-busy") === "true") stop();
+  });
   function busy(value) {
     app.setAttribute("aria-busy", String(value));
     results.setAttribute("aria-busy", String(value));
@@ -179,6 +198,7 @@ function initialize() {
   }
   async function choose(file) {
     if (!file) return;
+    openSearch();
     invalidate();
     const turn = sequence;
     clearResults();
@@ -228,23 +248,32 @@ function initialize() {
     }
   }
   input.addEventListener("change", () => choose(input.files[0]));
-  drop.addEventListener("dragover", (e) => {
-    if ([...e.dataTransfer.types].includes("Files")) {
+  function bindDrop(target) {
+    target.addEventListener("dragover", (e) => {
+      if ([...e.dataTransfer.types].includes("Files")) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "copy";
+        target.classList.add("is-dragging");
+      }
+    });
+    target.addEventListener("dragleave", (e) => {
+      if (!target.contains(e.relatedTarget))
+        target.classList.remove("is-dragging");
+    });
+    target.addEventListener("drop", (e) => {
+      if (!e.dataTransfer.files?.length) return;
       e.preventDefault();
-      e.dataTransfer.dropEffect = "copy";
-      drop.classList.add("is-dragging");
-    }
-  });
-  drop.addEventListener("dragleave", (e) => {
-    if (!drop.contains(e.relatedTarget)) drop.classList.remove("is-dragging");
-  });
-  drop.addEventListener("drop", (e) => {
-    e.preventDefault();
-    drop.classList.remove("is-dragging");
-    choose(e.dataTransfer.files[0]);
-  });
+      target.classList.remove("is-dragging");
+      choose(e.dataTransfer.files[0]);
+    });
+  }
+  bindDrop(drop);
+  document.querySelectorAll("[data-image-search-form]").forEach(bindDrop);
   document.addEventListener("paste", (e) => {
+    const inSearch = e.target?.closest("[data-image-search-form]");
+    if (dialog && !dialog.open && !inSearch) return;
     if (
+      !inSearch &&
       e.target?.closest(
         'input:not([type="file"]),textarea,[contenteditable="true"]',
       )

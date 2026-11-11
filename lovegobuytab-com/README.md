@@ -74,3 +74,11 @@ The comparison uses a 64-bit perceptual difference hash and coarse spatial colou
 The static index is not a live stock or price guarantee. Refresh it before catalogue-focused releases with `python scripts/refresh-image-index.py` (requires requests, beautifulsoup4 and Pillow), inspect reported coverage, and commit the updated JSON. Refreshing compares source image URLs and only downloads new/changed photos. No database, API key, paid inference or user-image storage is required.
 
 After `npm run build`, run `node scripts/check-image-search.mjs` (Pillow required), `node scripts/check-commerce.mjs`, `node scripts/check-editorial-routes.mjs` and `node scripts/check-interaction-events.mjs`. The visual check covers original/recompressed real-photo retrieval, 24 routes and hreflang/canonical, every index record, safe image URLs, file validation, currency refresh, retry/cache, cancellation, reset, paste and drop.
+
+## Search-box camera and compact independent pages
+
+Home and catalogue search boxes open the existing local image matcher directly through a camera button, image paste or file drop. Text submission and query/sort values remain intact. The native dialog can be closed with its button, Escape or backdrop; closing cancels unfinished matching. No uploaded photo leaves the browser.
+
+Independent pages share `src/styles/compact.css`. Articles use native chapter disclosures and retain their complete server-rendered text, tables, links and schema. Contents links reveal the matching chapter. FAQ answers remain fully present and expandable. Article indexes use small covers and complete summaries; catalogue pagination remains 20 items. Long photo/result grids scroll within their section.
+
+Validation: `node scripts/check-compact-pages.mjs` checks all 24 languages; `node scripts/check-image-search.mjs` covers camera, pasted/dropped images, ordinary text paste and query preservation.
