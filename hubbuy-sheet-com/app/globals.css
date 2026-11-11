@@ -1207,3 +1207,8 @@ p { color: var(--muted); }
 .article-topic-links a{display:inline-flex;padding:9px 12px;border:1px solid #cbd5d1;border-radius:8px;color:#123d32;font-size:14px;font-weight:650;text-decoration:none;background:#f7faf8}
 .article-topic-links a:hover,.article-topic-links a:focus-visible{background:#e4f1e9;border-color:#326c52}
 @media(max-width:680px){.article-topic-links{gap:6px;margin-bottom:16px}.article-topic-links a{padding:8px 10px;font-size:13px}.home-article-cards{gap:10px}}
+
+/* Camera action inside every localized search box. */
+.search-box .search-camera{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;min-width:44px;min-height:44px;color:#285b42;background:#edf3ed;border-radius:9px;margin:0 6px 0 2px}
+.search-box .search-camera:hover{background:#dfeadc}.search-box .search-camera:focus-visible{outline:3px solid #e4683b;outline-offset:2px}
+@media(max-width:680px){.search-box .search-camera{flex-basis:40px;min-width:40px;min-height:40px;margin-right:4px}.commerce-search .search-box>svg{display:none}}

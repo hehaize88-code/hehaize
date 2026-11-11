@@ -31,3 +31,7 @@ export function ExternalIcon({ size = 15 }) {
     </svg>
   );
 }
+
+export function CameraIcon({ size = 22 }) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5l1.5-2h5L16 5h4a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2h4Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/><circle cx="12" cy="12.5" r="4" stroke="currentColor" strokeWidth="1.7"/></svg>;
+}

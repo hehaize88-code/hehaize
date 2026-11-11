@@ -1,6 +1,6 @@
 import SearchBox from "@/components/SearchBox";
 import LiveProducts from "@/components/LiveProducts";
-import { ArrowIcon } from "@/components/Icons";
+import { ArrowIcon, CameraIcon } from "@/components/Icons";
 import { REGISTER_URL, SITE_URL } from "@/data/site";
 import { articles, getArticle } from "@/data/articles";
 import { getLocalizedPath } from "@/data/i18n";
@@ -26,7 +26,7 @@ export default function HomePage({ locale = "en" } = {}) {
         <h1>{t.title}</h1>
         <p className="commerce-subtitle">{t.subtitle}</p>
         <p className="commerce-intro">{t.intro}</p>
-        <div className="commerce-search"><SearchBox locale={locale} /><a className="image-search-link" href={path('/catalog/image-search/')}>{t.image} <ArrowIcon size={16} /></a></div>
+        <div className="commerce-search"><SearchBox locale={locale} /><a className="image-search-link" href={path('/catalog/image-search/')}><CameraIcon size={18} /> {t.image}</a></div>
         <nav className="commerce-categories" aria-label={t.browse}>{t.categories.map(([label, category]) => <a key={category} href={path(`/catalog/${category}/`)}>{label} <span>↗</span></a>)}</nav>
         <div className="commerce-hero-links"><a href={path('/catalog/')}>{t.browse} <ArrowIcon size={16} /></a><a href={REGISTER_URL} target="_blank" rel="noopener noreferrer">{t.register} ↗</a></div>
       </div>
