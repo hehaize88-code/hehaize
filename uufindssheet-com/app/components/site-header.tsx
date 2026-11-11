@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { SiteImage } from "./site-image";
+import {localeList} from "../../public/assets/locale-core.mjs";
+import {CURRENCIES} from "../../commerce/experience.mjs";
 const languageOptions = [
   { code: "EN", label: "English", language: "en", href: "/", hrefLang: "en" },
   { code: "UK", label: "English (UK)", language: "en-gb", href: "/en-gb/", hrefLang: "en-GB" },
@@ -49,8 +51,9 @@ export function SiteHeader({
   const current = languageOptions.find((option) => option.language === language) || languageOptions[0];
   const prefix = language === "en" ? "" : `/${language}`;
   const localHref = (path: string) => `${prefix}${path}`;
+  const expandedLanguages = localeList.map(([language,label,code]:string[])=>({language,label,code,hrefLang:language}));
   const languageHref = (option: (typeof languageOptions)[number]) =>
-    `${option.language === "en" ? "" : `/${option.language}`}${routePath || "/"}`;
+    `${option.language === "en" ? "" : `/${option.language}`}${["en","en-gb","de","pl","pt-br"].includes(option.language)?routePath || "/":"/catalog/"}`;
   const currentLabels = language === "de"
     ? { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "Hauptseite öffnen", language: "Sprache", menu: "Menü" }
     : language === "pl"
@@ -105,9 +108,9 @@ export function SiteHeader({
                 </Link>
                 <p className="language-availability-note">This article is currently published in English only. Other site pages remain available in every listed language.</p>
               </>
-            ) : languageOptions.map((option) => (
-                <Link
-                  href={languageHref(option)}
+            ) : expandedLanguages.map((option) => (
+                <a
+                  href={languageHref(option as (typeof languageOptions)[number])}
                   hrefLang={option.hrefLang}
                   lang={option.hrefLang}
                   aria-current={option.language === language ? "page" : undefined}
@@ -115,12 +118,13 @@ export function SiteHeader({
                 >
                   <b>{option.code}</b>
                   <span>{option.label}</span>
-                </Link>
+                </a>
               ))}
           </div>
         </details>
+        <label className="header-currency"><span className="sr-only">Currency</span><select data-currency-select aria-label="Currency">{CURRENCIES.map((code:string)=><option key={code} value={code}>{code}</option>)}</select></label>
         <a className="seo-guide-button" href="https://www.uufinds.com/register" target="_blank" rel="noreferrer" data-track-event="register_click" data-cta-position="header">
-          <span className="long-label">{({de:"Bei UUFinds registrieren",pl:"Rejestracja UUFinds","pt-br":"Cadastrar no UUFinds"} as Record<string,string>)[language] || "Register on UUFinds"}</span><span className="short-label">REGISTER</span> ↗
+          <span className="long-label">{({de:"Bei UUFinds registrieren",pl:"Rejestracja UUFinds","pt-br":"Cadastrar no UUFinds"} as Record<string,string>)[language] || "Register on UUFinds"}</span><span className="short-label">{({de:"Registrieren",pl:"Rejestracja","pt-br":"Cadastrar"} as Record<string,string>)[language]||"Register"}</span> ↗
         </a>
       </div>
     </header>

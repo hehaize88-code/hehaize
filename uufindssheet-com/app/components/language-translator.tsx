@@ -360,7 +360,8 @@ function translatePage(language: SiteLanguage) {
 
 export function LanguageTranslator() {
   useEffect(() => {
-    let currentLanguage = (window.localStorage.getItem("uufinds-language") || "en") as SiteLanguage;
+    const routeLanguage=window.location.pathname.split("/")[1];
+    let currentLanguage = (["de","pl","pt-br"].includes(routeLanguage)?routeLanguage:"en") as SiteLanguage;
     let translationQueued = false;
 
     const queueTranslation = () => {

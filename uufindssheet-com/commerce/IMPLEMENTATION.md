@@ -34,3 +34,14 @@ Refresh the index after source catalogue changes with `python scripts/build-imag
 - `npm run test:catalog` checks source pagination, gallery order, individual item handoff, upstream routing and errors.
 - `node scripts/sync-static-export.mjs` copies the export to the existing GitHub publish directory.
 - Publish by committing to the existing GitHub repository. No Cloudflare dashboard, DNS or account changes are required.
+
+## Product experience update — 2026-11-11
+
+- Product catalogue, detail and visual-search routes support 25 locale choices (24 languages/regions plus UK English). Existing editorial pages retain their five published editions. New-locale editorial navigation deliberately opens the available English edition rather than a missing page.
+- Product descriptors are translated on the server and in dynamically loaded cards, keeping brand/model identities. The title, metadata and image descriptions use the same formatter.
+- The two-column detail view uses only real catalogue photographs. It does not label unclassified catalogue images as verified warehouse QC.
+- Public Weidian listing data supplies style images, size attributes, SKU IDs, stock status and CNY prices. The parser verifies the returned product ID. A failed fetch shows a retry and the original listing rather than fabricated options.
+- Eleven other-agent links use the same Weidian item ID. Styles are restored through this site's `style` and `option` query parameters. Copying includes the original Weidian URL and selected labels/SKU; no unsupported Weidian SKU parameter is invented.
+- Thirty currencies use dated Frankfurter reference rates, cached for six hours. If rates fail, the original currency remains visible. Reference prices exclude shipping, taxes and agent fees.
+- Catalogue sitemaps are split into one XML file per locale under `/catalog-sitemap.xml`, keeping each file below the 50,000-URL limit.
+- Verification: production build and static release validation; 13 route/parser/translation/price/identity tests; browser checks for French and Chinese, EUR conversion, style/size price changes, copy confirmation and agent filtering.

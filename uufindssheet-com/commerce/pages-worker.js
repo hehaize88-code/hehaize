@@ -25,7 +25,7 @@ function withGoogleAnalytics(response, request) {
   const mobileStyles = response.status === 200
     ? '<style id="uufinds-mobile-inner">' + MOBILE_INNER_CSS + '</style>'
     : '';
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + mobileStyles, { html: true }); } }).transform(htmlResponse);
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + mobileStyles + '<script type="module" src="/assets/experience.js?v=20261111-detail-v1"></script>', { html: true }); } }).transform(htmlResponse);
 }
 
 const CANONICAL_HOST = "uufindssheet.com";
@@ -40,7 +40,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-11-07-search-guides-v3";
+const HTML_CACHE_VERSION = "2026-11-11-detail-v1";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);
@@ -157,16 +157,25 @@ const googleAnalyticsWorker = {
     if (analyticsAsset) return analyticsAsset;
 
     const url = new URL(request.url);
-    if (url.pathname === "/sitemap.xml") return new Response('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://uufindssheet.com/editorial-sitemap.xml</loc></sitemap><sitemap><loc>https://uufindssheet.com/catalog-sitemap.xml</loc></sitemap></sitemapindex>', {headers:{"content-type":"application/xml; charset=utf-8","cache-control":"public, max-age=300"}});
+    if (REDIRECT_HOSTS.has(url.hostname)||(url.hostname===CANONICAL_HOST&&url.protocol!=="https:")) {url.protocol="https:";url.hostname=CANONICAL_HOST;url.port="";return Response.redirect(url.href,308);}
+    if (url.pathname === "/sitemap.xml") return new Response('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://uufindssheet.com/editorial-sitemap.xml</loc></sitemap>'+LANGS.map(l=>'<sitemap><loc>https://uufindssheet.com/catalog-sitemap-'+l+'.xml</loc></sitemap>').join('')+'</sitemapindex>', {headers:{"content-type":"application/xml; charset=utf-8","cache-control":"public, max-age=300"}});
     if (url.pathname === "/editorial-sitemap.xml") return env.ASSETS.fetch(new Request(new URL('/sitemap.xml',url.origin),request));
     if (url.pathname === "/catalog-sitemap.xml") {
+      const entries=LANGS.map(l=>'<sitemap><loc>https://uufindssheet.com/catalog-sitemap-'+l+'.xml</loc></sitemap>').join('');
+      return new Response('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+entries+'</sitemapindex>',{headers:{"content-type":"application/xml; charset=utf-8","cache-control":"public, max-age=600"}});
+    }
+    const sitemapLocale=url.pathname.match(/^\/catalog-sitemap-([a-z-]+)\.xml$/)?.[1];
+    if(sitemapLocale){
+      if(!LANGS.includes(sitemapLocale))return new Response('Not found',{status:404});
       try {
         const xml=await upstream('/sitemap.xml');
-        const paths=[...xml.matchAll(/<loc>https:\/\/(?:www\.)?cnbuycha\.com([^<]+)<\/loc>/g)].map(m=>m[1]).filter(p=>/^\/[a-z0-9-]+\/\d+\.html$/i.test(p) || CATEGORIES.some(c=>p==='/'+c+'/'));
-        const entries=LANGS.flatMap(l=>paths.map(p=>'<url><loc>https://uufindssheet.com'+localPath(p,l)+'</loc></url>')).join('');
+        const paths=[...new Set([...xml.matchAll(/<loc>https:\/\/(?:www\.)?cnbuycha\.com([^<]+)<\/loc>/g)].map(m=>m[1]).filter(p=>/^\/[a-z0-9-]+\/\d+\.html$/i.test(p) || CATEGORIES.some(c=>p==='/'+c+'/')))];
+        const entries=paths.map(p=>'<url><loc>https://uufindssheet.com'+localPath(p,sitemapLocale)+'</loc></url>').join('');
         return new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+entries+'</urlset>',{headers:{"content-type":"application/xml; charset=utf-8","cache-control":"public, max-age=600"}});
-      } catch {return new Response('Sitemap temporarily unavailable',{status:503});}
+      }catch{return new Response('Sitemap temporarily unavailable',{status:503,headers:{'retry-after':'60'}});}
     }
+    const firstLocale=url.pathname.split('/')[1];
+    if(LANGS.includes(firstLocale)&&!['en','en-gb','de','pl','pt-br'].includes(firstLocale)&&url.pathname==='/'+firstLocale+'/')return Response.redirect(url.origin+'/'+firstLocale+'/catalog/'+url.search,302);
     const legacyLocale = url.pathname.match(/^\/(en-gb|de|pl|pt-br)(?=\/)/)?.[0] || "";
     const barePath = url.pathname.slice(legacyLocale.length);
     const legacyProducts = {"/products/skyline-floatx-running-hiking-shoes/": "/shoes/3328.html", "/products/loose-printed-hooded-sweater/": "/hoodies-sweaters/3373.html", "/products/printed-short-sleeve-collection-2/": "/t-shirts/3332.html", "/products/autumn-winter-loose-fitting-coat/": "/jackets/3402.html", "/products/hello-kitty-plush-lounge-pants/": "/pants-shorts/3337.html", "/products/mlb-world-series-baseball-cap-collection/": "/headwear/3315.html", "/products/xjxpcs-fashion-backpack/": "/accessories/3295.html", "/products/galaxy-watch-ultra-8-smartwatch/": "/electronics/3286.html"};
@@ -179,6 +188,8 @@ const googleAnalyticsWorker = {
     }
     const legacyProduct = legacyProducts[barePath];
     if (legacyProduct) return Response.redirect(url.origin + legacyLocale + "/catalog" + legacyProduct, 302);
+    const enhanced = await experienceRoute(request);
+    if(enhanced)return enhanced;
     const catalogue = await catalogueRoute(request, env);
     if (catalogue) return withGoogleAnalytics(catalogue, request);
     const cacheKey = request.method === "GET" ? htmlCacheKey(request) : null;
