@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { SiteImage } from "./site-image";
 import {localeList} from "../../public/assets/locale-core.mjs";
+import {pageLanguages,pageLanguageHref} from "../../public/assets/page-languages.mjs";
 import {CURRENCIES} from "../../commerce/experience.mjs";
 const languageOptions = [
   { code: "EN", label: "English", language: "en", href: "/", hrefLang: "en" },
@@ -52,8 +53,9 @@ export function SiteHeader({
   const prefix = language === "en" ? "" : `/${language}`;
   const localHref = (path: string) => `${prefix}${path}`;
   const expandedLanguages = localeList.map(([language,label,code]:string[])=>({language,label,code,hrefLang:language}));
-  const languageHref = (option: (typeof languageOptions)[number]) =>
-    `${option.language === "en" ? "" : `/${option.language}`}${["en","en-gb","de","pl","pt-br"].includes(option.language)?routePath || "/":"/catalog/"}`;
+  const availableLanguages=pageLanguages(englishOnly);
+  const languageHref = (code:string) => pageLanguageHref(code,routePath || "/");
+  const availability = ({de:{available:"Sprachen dieser Seite",missing:"Für diese Seite noch nicht verfügbar",more:"Weitere Sprachen sind im Produktkatalog verfügbar."},pl:{available:"Języki tej strony",missing:"Tłumaczenie tej strony jeszcze niedostępne",more:"Więcej języków jest dostępnych w katalogu produktów."},"pt-br":{available:"Idiomas desta página",missing:"Tradução desta página ainda indisponível",more:"Mais idiomas estão disponíveis no catálogo de produtos."}} as Record<string,{available:string;missing:string;more:string}>)[language] || {available:"Languages for this page",missing:"Translation not yet available for this page",more:"More languages are available in the product catalogue."};
   const currentLabels = language === "de"
     ? { finds: "Funde", products: "Produkte", qcGuide: "QC-Leitfaden", howItWorks: "So funktioniert es", articles: "Artikel", faq: "FAQ", shopMain: "Hauptseite öffnen", language: "Sprache", menu: "Menü" }
     : language === "pl"
@@ -101,25 +103,18 @@ export function SiteHeader({
           </summary>
           <div className="language-panel">
             <p>{currentLabels.language}</p>
-            {englishOnly ? (
-              <>
-                <Link href={routePath} hrefLang="en" lang="en" aria-current="page">
-                  <b>EN</b><span>English (article language)</span>
-                </Link>
-                <p className="language-availability-note">This article is currently published in English only. Other site pages remain available in every listed language.</p>
-              </>
-            ) : expandedLanguages.map((option) => (
-                <a
-                  href={languageHref(option as (typeof languageOptions)[number])}
-                  hrefLang={option.hrefLang}
-                  lang={option.hrefLang}
-                  aria-current={option.language === language ? "page" : undefined}
-                  key={option.code}
-                >
-                  <b>{option.code}</b>
-                  <span>{option.label}</span>
-                </a>
-              ))}
+            {expandedLanguages.filter(option=>availableLanguages.includes(option.language)).map((option) => (
+              <a href={languageHref(option.language)} hrefLang={option.hrefLang} lang={option.hrefLang}
+                onClick={event=>{event.currentTarget.href=pageLanguageHref(option.language,routePath || "/",window.location.search,window.location.hash);}}
+                aria-current={option.language === language ? "page" : undefined} key={option.code}>
+                <b>{option.code}</b><span>{option.label}</span>
+              </a>
+            ))}
+            <details className="unavailable-languages">
+              <summary>{availability.missing}</summary>
+              <p>{availability.more}</p>
+              {expandedLanguages.filter(option=>!availableLanguages.includes(option.language)).map(option=><span className="language-unavailable" aria-disabled="true" lang={option.hrefLang} key={option.code}><b>{option.code}</b>{option.label}</span>)}
+            </details>
           </div>
         </details>
         <label className="header-currency"><span className="sr-only">Currency</span><select data-currency-select aria-label="Currency">{CURRENCIES.map((code:string)=><option key={code} value={code}>{code}</option>)}</select></label>

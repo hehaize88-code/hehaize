@@ -1,4 +1,4 @@
-// Compatible with the existing, static 64-bit dHash + 4x4 RGB catalogue index.
+// area-v2: deterministic cell-area RGB means shared with the Python indexer.
 // No uploads, remote inference, new database or paid service.
 export const MAX_BYTES = 20 * 1024 * 1024;
 export function acceptsImage(file) {
@@ -21,25 +21,31 @@ export function distance(a, b) {
 export function cropArea(width, height, mode) {
   return mode === 'center' ? [width * .15, height * .15, width * .7, height * .7] : [0, 0, width, height];
 }
+export function meanRGB(pixels) {
+  let r=0,g=0,b=0;for(let i=0;i<pixels.length;i+=4){r+=pixels[i];g+=pixels[i+1];b+=pixels[i+2];}
+  const n=pixels.length/4;if(!n)throw Error('Empty image cell');
+  return [Math.floor(r/n+.5),Math.floor(g/n+.5),Math.floor(b/n+.5)];
+}
 export function fingerprint(image, mode = 'full', canvas = document.createElement('canvas')) {
-  const ctx = canvas.getContext('2d', { willReadFrequently: true });
-  if (!ctx) throw Error('canvas');
-  const area = cropArea(image.naturalWidth || image.width, image.naturalHeight || image.height, mode);
-  function pixels(w, h) {
-    canvas.width = w; canvas.height = h;
-    ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, w, h);
-    ctx.drawImage(image, ...area, 0, 0, w, h);
-    return ctx.getImageData(0, 0, w, h).data;
+  const ctx=canvas.getContext('2d',{willReadFrequently:true});if(!ctx)throw Error('canvas');
+  const width=image.naturalWidth||image.width,height=image.naturalHeight||image.height;
+  const area=cropArea(width,height,mode),left=Math.floor(area[0]),top=Math.floor(area[1]);
+  const w=Math.max(1,Math.floor(area[0]+area[2])-left),h=Math.max(1,Math.floor(area[1]+area[3])-top);
+  // Read each cell at native resolution, without engine-dependent downsampling.
+  // This bounds canvas memory while matching the build-time area means.
+  function grid(cols,rows){const result=[];
+    for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){
+      const sx=left+Math.floor(x*w/cols),sy=top+Math.floor(y*h/rows);
+      const sw=Math.max(1,Math.floor((x+1)*w/cols)-Math.floor(x*w/cols)),sh=Math.max(1,Math.floor((y+1)*h/rows)-Math.floor(y*h/rows));
+      canvas.width=sw;canvas.height=sh;ctx.fillStyle='#fff';ctx.fillRect(0,0,sw,sh);
+      ctx.drawImage(image,sx,sy,sw,sh,0,0,sw,sh);result.push(meanRGB(ctx.getImageData(0,0,sw,sh).data));
+    }return result;
   }
-  const p = pixels(9, 8), gray = [];
-  for (let i = 0; i < p.length; i += 4) gray.push(.299 * p[i] + .587 * p[i + 1] + .114 * p[i + 2]);
-  let hash = '';
-  for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) hash += gray[y * 9 + x] > gray[y * 9 + x + 1] ? '1' : '0';
-  const c = pixels(4, 4), cells = [];
-  for (let i = 0; i < c.length; i += 4) cells.push(c[i], c[i + 1], c[i + 2]);
-  const mean = gray.reduce((sum, n) => sum + n, 0) / gray.length;
-  const variation = Math.sqrt(gray.reduce((sum, n) => sum + (n - mean) ** 2, 0) / gray.length);
-  return { hash, cells, variation };
+  const gray=grid(9,8).map(([r,g,b])=>.299*r+.587*g+.114*b);let hash='';
+  for(let y=0;y<8;y++)for(let x=0;x<8;x++)hash+=gray[y*9+x]>gray[y*9+x+1]?'1':'0';
+  const cells=grid(4,4).flat(),mean=gray.reduce((sum,n)=>sum+n,0)/gray.length;
+  const variation=Math.sqrt(gray.reduce((sum,n)=>sum+(n-mean)**2,0)/gray.length);
+  canvas.width=canvas.height=1;return {hash,cells,variation};
 }
 export function rankProducts(query, products, limit = 24) {
   const unique = new Map();

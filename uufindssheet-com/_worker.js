@@ -3,7 +3,7 @@ const localeList = [
  ['en','English','EN'],['en-gb','English (UK)','UK'],['de','Deutsch','DE'],['fr','Français','FR'],['es','Español','ES'],['it','Italiano','IT'],['nl','Nederlands','NL'],['pt-br','Português','PT'],['pl','Polski','PL'],['ro','Română','RO'],['sv','Svenska','SV'],['zh','简体中文','ZH'],['da','Dansk','DA'],['fi','Suomi','FI'],['el','Ελληνικά','EL'],['cs','Čeština','CS'],['hu','Magyar','HU'],['bg','Български','BG'],['sk','Slovenčina','SK'],['hr','Hrvatski','HR'],['ja','日本語','JA'],['ko','한국어','KO'],['vi','Tiếng Việt','VI'],['th','ไทย','TH'],['id','Bahasa Indonesia','ID'],
 ];
 const localeCodes = localeList.map(([code]) => code);
-const englishCatalogueCopy = {'Adidas pans':'Adidas pants','Ture Religion  Jeans':'True Religion Jeans'};
+const englishCatalogueCopy = {'Adidas pans':'Adidas pants','Ture Religion  Jeans':'True Religion Jeans',"黑色":"Black","白色":"White","蓝色":"Blue","红色":"Red","绿色":"Green","灰色":"Grey","粉色":"Pink","棕色":"Brown","黄色":"Yellow","米色":"Beige"};
 const htmlLocale = code => code === 'pt-br' ? 'pt-BR' : code === 'zh' ? 'zh-CN' : code;
 function translation(value, dictionary = {}) { return dictionary[value] || value; }
 const dictionaries = new Map();
@@ -180,7 +180,7 @@ function nav(locale,path,query=''){
  return `<header class="catalog-header"><a class="catalog-brand" href="${p}/" aria-label="UUFinds Spreadsheet"><img class="catalog-wordmark" src="/uufinds-official-logo.png" width="208" height="52" alt="UUFinds"></a><nav class="catalog-primary-nav" aria-label="Main navigation"><a href="${p}/catalog/">Products</a><a href="${p}/catalog/image-search/">Search by image</a><a href="${editorial}/guides/uufinds-qc-checklist/">QC Guide</a><a href="${editorial}/how-it-works/">How It Works</a><a href="${editorial}/articles/">Articles</a><a href="${editorial}/faq/">FAQ</a></nav><div class="catalog-actions">${languageMenu(locale,path,query)}${currencyMenu()}<a class="register" href="https://www.uufinds.com/register" target="_blank" rel="noopener noreferrer">Register on UUFinds ↗</a></div></header>`;
 }
 function footer(locale){return `<footer class="catalog-footer"><p>Independent spreadsheet. Not operated by UUFinds.</p><a href="${locale==='en'?'':'/'+locale}/catalog/">Browse the full spreadsheet</a></footer>`;}
-function styles(){return '<link rel="stylesheet" href="/catalog.css?v=20261111-detail-v1"><script type="module" src="/assets/experience.js?v=20261111-detail-v1"></script>';}
+function styles(){return '<link rel="stylesheet" href="/catalog.css?v=20261111-all-photos-v2"><script type="module" src="/assets/experience.js?v=20261111-all-photos-v2"></script>';}
 
 // Public catalogue adapter. All catalogue reads come from cnbuycha.com.
 const DATA_ORIGIN = 'https://cnbuycha.com';
@@ -249,7 +249,7 @@ const labels=lang=>COPY.en;
 function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://uufindssheet.com'+prefix(lang)+path;
  const crumbs={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'UUFinds Spreadsheet',item:'https://uufindssheet.com'+prefix(lang)+'/'},{'@type':'ListItem',position:2,name:title,item:canonical}]};
- const html=`<!doctype html><html lang="${htmlLocale(lang)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | UUFinds Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${htmlLocale(l)}" href="https://uufindssheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://uufindssheet.com${path}"><link rel="icon" href="/favicon.ico" sizes="64x64">${styles()}<link rel="stylesheet" href="/assets/catalog.css?v=20261111-detail-v4"><script src="/assets/catalog.js?v=20261111-detail-v4" defer></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main id="main-content" class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
+ const html=`<!doctype html><html lang="${htmlLocale(lang)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | UUFinds Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${htmlLocale(l)}" href="https://uufindssheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://uufindssheet.com${path}"><link rel="icon" href="/favicon.ico" sizes="64x64">${styles()}<link rel="stylesheet" href="/assets/catalog.css?v=20261111-all-photos-v2"><script src="/assets/catalog.js?v=20261111-all-photos-v2" defer></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main id="main-content" class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
  return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-uufinds-release':'20261111-uufinds-detail-v1'}});
 }
 function card(p,lang) {
@@ -344,12 +344,12 @@ async function catalogueRouteBase(request,env) {
   const v=visualCopy.en;
   return shell(lang,path,`UUFinds ${t[6]}`,t[16],`<p class="catalog-eyebrow">UUFINDS SPREADSHEET</p><h1>${t[6]}</h1><p>${t[16]}</p>
 <section class="image-search-panel" aria-label="${t[6]}">
- <label for="image-file" class="image-drop" id="image-drop">${cameraIcon}<strong>${v.choose}</strong><span>${v.drop}</span><small>JPG / PNG / WebP / GIF · ${v.limit}</small><input id="image-file" class="image-file-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" aria-label="${v.choose}"></label>
+ <label for="image-file" class="image-drop" id="image-drop">${cameraIcon}<strong>${v.choose}</strong><span>${v.drop}</span><small>JPG / PNG / WebP / GIF · <span>${v.limit}</span></small><input id="image-file" class="image-file-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" aria-label="${v.choose}"></label>
  <p class="image-private">${v.private}</p>
  <div id="image-controls" class="image-controls" hidden><div class="image-preview-wrap"><img id="image-preview" alt="${v.preview}"><span id="image-crop-overlay" hidden></span></div><div class="image-options"><label for="image-focus">${v.area}</label><select id="image-focus"><option value="full">${v.full}</option><option value="center">${v.center}</option></select><p>${v.tip}</p><div class="image-actions"><button id="image-retry" type="button">${v.again}</button><button id="image-reset" type="button">${v.clear}</button></div></div></div>
  <div class="image-progress-row"><p id="image-status" role="status" aria-live="polite">${v.empty}</p><button id="image-cancel" type="button" hidden>${v.cancel}</button></div><progress id="image-progress" aria-label="${v.searching}" hidden></progress>
- <p class="catalog-note">${t[19]} ${v.scope}</p>
-</section><section class="image-results-section" aria-labelledby="image-results-title"><h2 id="image-results-title">${v.results}</h2><p id="image-result-note" hidden></p><div class="catalog-grid" id="image-results" aria-busy="false"></div><button class="catalog-more" id="image-more" type="button" hidden>${v.more}</button></section><noscript><p>${v.javascript}</p></noscript><script type="module" src="/assets/image-search.js?v=20261111-detail-v4"></script>`,{noindex:true});
+ <p class="catalog-note"><span>${t[19]}</span> <span>${v.scope}</span></p>
+</section><section class="image-results-section" aria-labelledby="image-results-title"><h2 id="image-results-title">${v.results}</h2><p id="image-result-note" hidden></p><div class="catalog-grid" id="image-results" aria-busy="false"></div><button class="catalog-more" id="image-more" type="button" hidden>${v.more}</button></section><noscript><p>${v.javascript}</p></noscript><script type="module" src="/assets/image-search.js?v=20261111-all-photos-v2"></script>`,{noindex:true});
  }
 
  try {
@@ -415,7 +415,7 @@ function withGoogleAnalytics(response, request) {
   const mobileStyles = response.status === 200
     ? '<style id="uufinds-mobile-inner">' + MOBILE_INNER_CSS + '</style>'
     : '';
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + mobileStyles + '<script type="module" src="/assets/experience.js?v=20261111-detail-v1"></script>', { html: true }); } }).transform(htmlResponse);
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + mobileStyles + '<script type="module" src="/assets/experience.js?v=20261111-all-photos-v2"></script>', { html: true }); } }).transform(htmlResponse);
 }
 
 const CANONICAL_HOST = "uufindssheet.com";
@@ -430,7 +430,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-11-11-detail-v1";
+const HTML_CACHE_VERSION = "2026-11-11-all-photos-v2";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);

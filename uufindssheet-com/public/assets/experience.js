@@ -78,7 +78,7 @@ function initDetail(){
  const prev=detail.querySelector('[data-gallery-prev]'),next=detail.querySelector('[data-gallery-next]'),counter=detail.querySelector('.gallery-counter');
  const styleStatus=detail.querySelector('[data-style-count]');
  main.referrerPolicy='no-referrer';viewerImage.referrerPolicy='no-referrer';
- const optionLabel=value=>/^(conventional standard|one size|均码|均碼)$/i.test(value.trim())?t('One size'):value.replace(/\bWomen['’]s style|女款/gi,t('Women’s style')).replace(/\bMen['’]s style|男款/gi,t('Men’s style'));
+ const optionLabel=value=>/^(conventional standard|one size|均码|均碼)$/i.test(value.trim())?t('One size'):t(value.trim()).replace(/\bWomen['’]s style|女款/gi,t('Women’s style')).replace(/\bMen['’]s style|男款/gi,t('Men’s style'));
  const imageDisplay=url=>{const parsed=new URL(url);if(/(^|\.)geilicdn\.com$/.test(parsed.hostname)&&/\.(?:jpe?g|png)$/i.test(parsed.pathname)){parsed.pathname+='.webp';parsed.search='?w=1200&h=1200';}return parsed.href;};
  const photo=(url)=>{try{const parsed=new URL(url);return parsed.protocol==='https:'?parsed.href:'';}catch{return '';}};
  function showPhoto(index){
@@ -141,7 +141,7 @@ function initDetail(){
    const count=styleGroup>=0?options.groups[styleGroup].values.length:0;styleStatus.textContent=count?String(count):'';
    grid.replaceChildren();groups.replaceChildren();selected.clear();
    if(styleGroup>=0){
-    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+value.label)}" title="${esc(value.label)}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(value.label)}</span></button>`).join('');
+    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+optionLabel(value.label))}" title="${esc(value.label)}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(optionLabel(value.label))}</span></button>`).join('');
     grid.querySelectorAll('[data-style]').forEach(button=>button.addEventListener('click',()=>chooseStyle(button.dataset.style)));
    }
    options.groups.forEach((group,index)=>{
@@ -168,5 +168,6 @@ function initDetail(){
   catch{const fallback=detail.querySelector('[data-copy-fallback]');fallback.hidden=false;fallback.value=value;fallback.focus();fallback.select();copyStatus.textContent=t('Copy failed. Select and copy the link below.');}
  });
  const agentQuery=detail.querySelector('#agent-query');agentQuery.addEventListener('input',()=>{let count=0;detail.querySelectorAll('[data-agent]').forEach(link=>{link.hidden=!link.dataset.agent.includes(agentQuery.value.trim().toLowerCase());if(!link.hidden)count++;});detail.querySelector('[data-no-agents]').hidden=count>0;});
- showPhoto(0);loadOptions();
+ const initialPhoto=Number(new URL(location.href).searchParams.get('photo')||1);
+ showPhoto(Number.isSafeInteger(initialPhoto)&&initialPhoto>0?initialPhoto-1:0);loadOptions();
 }

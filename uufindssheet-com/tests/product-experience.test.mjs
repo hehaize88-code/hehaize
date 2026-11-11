@@ -36,6 +36,13 @@ test('all 25 locale routes localize product descriptors and preserve brands and 
 test('localization handles punctuation, protects language names and agent URLs',()=>{
  const result=localizeCatalogueHtml('<p>Product ID: </p><a data-agent="superbuy" href="https://example.com/?id=123">Superbuy</a>',{'Product ID':'商品编号',Superbuy:'bad'},'zh');assert.match(result,/商品编号:/);assert.match(result,/>Superbuy<\/a>/);
 });
+test('image-search upload limits and scope notices translate on every non-English route',async()=>{
+ const env={ASSETS:{fetch:async req=>Response.json(JSON.parse(await readFile(new URL(req.url).pathname.replace(/^\//,'public/'),'utf8')))}};
+ for(const locale of localeCodes.filter(code=>!['en','en-gb'].includes(code))){
+  const page=await (await catalogueRoute(new Request(`https://uufindssheet.com/${locale}/catalog/image-search/`),env)).text();
+  assert.doesNotMatch(page,/up to 20 MB|Image search compares visual similarity;|Search covers the indexed catalogue, not the whole web\./,locale);
+ }
+});
 test('buying agent links each carry the same source item and have no competitor referral code',()=>{
  for(const [,href] of purchasingPlatforms(id)){assert.ok(decodeURIComponent(href).includes(id),href);assert.ok(href.startsWith('https://'));assert.doesNotMatch(href,/inviteCode|referral|aff=/i);}
 });

@@ -26,7 +26,7 @@ Official wordmark asset: `https://www.uufinds.com/assets/logo_light-DT50k8lw.png
 
 The cnbuycha repository has no image-search endpoint. This integration adds local visual similarity search using only its catalogue images. `public/catalog-image-index.json` includes its update date and indexed/total counts. The user's image is decoded and compared in the browser; it is not uploaded to a third party. Difference hash and color cells rank similar candidates; results are not an identity/authenticity guarantee. Product prices/details are re-read live when opened.
 
-Refresh the index after source catalogue changes with `python scripts/build-image-index.py` (Python + Pillow + curl). It fetches the current public catalogue and its main images. The dated index is a snapshot; text search, sorting and details remain live. No recurring automation is added.
+Refresh the index after source catalogue changes with `python scripts/build-image-index.py --gallery-only` (Python + Pillow + requests). It fetches every current public product detail page and every image in its gallery. Omit `--gallery-only` to add readable Weidian style images; upstream failures are recorded, never counted as indexed images. The version 2 manifest points to content-hashed shards and reports product/image coverage. Download caching, bounded concurrency and Retry-After handling allow safe resumption. The dated index is a snapshot; text search, sorting and details remain live. No recurring automation is added.
 
 ## Build and checks
 
@@ -45,3 +45,12 @@ Refresh the index after source catalogue changes with `python scripts/build-imag
 - Thirty currencies use dated Frankfurter reference rates, cached for six hours. If rates fail, the original currency remains visible. Reference prices exclude shipping, taxes and agent fees.
 - Catalogue sitemaps are split into one XML file per locale under `/catalog-sitemap.xml`, keeping each file below the 50,000-URL limit.
 - Verification: production build and static release validation; 13 route/parser/translation/price/identity tests; browser checks for French and Chinese, EUR conversion, style/size price changes, copy confirmation and agent filtering.
+
+## Page language navigation and all-photo search — 2026-11-11
+
+- Editorial language menus link only to published editions of the same document. Query parameters and section anchors survive a switch. Unpublished editions are labelled unavailable; English-only articles do not offer false translated routes. Catalogue language choices remain unchanged.
+- Common Chinese option colors are displayed in the selected catalogue language while retaining the original option IDs and source labels for reference.
+- Image records preserve gallery position or source style ID. Search deduplicates products using each product’s closest image, shows that matched image and opens its gallery position (`photo`) or style (`style`).
+- The browser and indexer share deterministic area-v2 RGB cell means and difference hashes; native cell averages avoid browser/Pillow resize differences. This remains visual similarity, not semantic AI recognition.
+- The browser loads all hashed shards with bounded concurrency and validates every record/count before searching. Interrupted or missing shards cause a retryable error rather than silently searching only part of the index.
+- Geist fonts are served locally with their OFL license to make production builds independent of font-host availability.

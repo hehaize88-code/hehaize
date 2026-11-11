@@ -25,7 +25,7 @@ function withGoogleAnalytics(response, request) {
   const mobileStyles = response.status === 200
     ? '<style id="uufinds-mobile-inner">' + MOBILE_INNER_CSS + '</style>'
     : '';
-  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + mobileStyles + '<script type="module" src="/assets/experience.js?v=20261111-detail-v1"></script>', { html: true }); } }).transform(htmlResponse);
+  return new HTMLRewriter().on("head", { element(element) { element.append(GA4_SNIPPET + mobileStyles + '<script type="module" src="/assets/experience.js?v=20261111-all-photos-v2"></script>', { html: true }); } }).transform(htmlResponse);
 }
 
 const CANONICAL_HOST = "uufindssheet.com";
@@ -40,7 +40,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-11-11-detail-v1";
+const HTML_CACHE_VERSION = "2026-11-11-all-photos-v2";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);
