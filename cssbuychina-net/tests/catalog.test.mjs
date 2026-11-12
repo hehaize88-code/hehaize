@@ -1,3 +1,5 @@
+import {createHash} from 'node:crypto';
+import {validProduct} from '../public/commerce/image-search-core.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -29,7 +31,10 @@ test('detail uses marketplace source ID and handles missing and unavailable data
 });
 test('image search exposes accessible controls in every existing language and a complete source index',async()=>{
  const index=JSON.parse(await readFile(new URL('../public/catalog-image-index.json',import.meta.url),'utf8'));
- assert.equal(index.products.length,index.indexedCount);assert.ok(index.indexedCount>3000);
- assert.ok(index.products.every(p=>/^\/[a-z0-9-]+\/\d+\.html$/.test(p.path)&&p.hash.length===64&&p.cells.length===48));
+ assert.equal(index.version,2);assert.ok(index.indexedProductCount>3000);
+ assert.equal(index.indexedProductCount,index.catalogCount);assert.equal(index.failedDetailCount,0);
+ assert.equal(index.shards.reduce((total,shard)=>total+shard.count,0),index.indexedImageCount);
+ assert.ok(index.galleryImageCount>index.catalogCount);assert.ok(index.styleImageCount>0);
+ for(const shard of index.shards){const bytes=await readFile(new URL('../public'+shard.url,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),shard.sha256);const data=JSON.parse(bytes);assert.equal(data.products.length,shard.count);assert.ok(data.products.every(validProduct));}
  for(const l of ['','/de','/es','/pt-br']){const r=await catalogueRoute(new Request('https://cssbuychina.net'+l+'/catalog/image-search/'),{});const html=await r.text();assert.equal(r.status,200);assert.match(html,/type="file"/);assert.match(html,/aria-live="polite"/);assert.match(html,/noindex,follow/)}
 });

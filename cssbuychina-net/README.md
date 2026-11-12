@@ -73,3 +73,26 @@ original Vinext development server remains available as `npm run dev:app`.
 Run `npm run test:release` and `node --test tests/product-experience.test.mjs`
 after packaging. Catalogue dictionaries are static assets; no new database,
 translation subscription or private API credential is required.
+
+## Full product-image search
+
+Image search compares catalogue/detail photos, seller galleries and available
+style photos, retaining the best matching photo for each product. Results carry
+the catalogue/seller photo number or actual style ID to the product page. Seller
+data arriving later does not replace a specifically requested catalogue photo.
+
+The dated `public/catalog-image-index.json` manifest reports actual product,
+photo and source-failure counts. Immutable, SHA-256-verified shards are scanned
+in a browser worker; incomplete downloads fail visibly instead of silently
+searching a smaller catalogue. Uploaded photos stay on the visitor's device.
+
+To refresh the snapshot, install `requests` and `Pillow` in a Python environment
+and run `python scripts/build-image-index.py --workers 4 --image-workers 16`.
+The builder caches downloaded images and descriptors under `.cache`, respects
+source Retry-After responses, and writes the manifest atomically after indexing.
+Use `--seed-index public/catalog-image-index.json` to reuse previously verified
+descriptors. The optional `--reuse-gallery-snapshot` requires a same-day seed
+and an unchanged listing photo; a normal refresh fetches each product gallery.
+Run the Python index tests, `npm run build:pages` and `npm run test:release` before
+publishing. Copy the generated shards and manifest together; preserve older
+immutable shards for visitors holding a previous manifest.

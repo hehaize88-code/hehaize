@@ -9,6 +9,6 @@ const dictionaries = new Map();
 export function loadDictionary(locale) {
  if (locale === 'en') return Promise.resolve(englishCatalogueCopy);
  if (!localeCodes.includes(locale)) return Promise.resolve({});
- if (!dictionaries.has(locale)) dictionaries.set(locale, fetch(`/assets/locales/${locale}.json`).then(r => {if (!r.ok) throw Error('Translation unavailable'); return r.json();}).catch(() => {dictionaries.delete(locale); return {};}));
+ if (!dictionaries.has(locale)) dictionaries.set(locale, fetch(`/assets/locales/${locale}.json?v=20261112-all-images`).then(r => {if (!r.ok) throw Error('Translation unavailable'); return r.json();}).catch(() => {dictionaries.delete(locale); return {};}));
  return dictionaries.get(locale);
 }

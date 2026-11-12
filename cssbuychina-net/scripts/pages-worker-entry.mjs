@@ -4,7 +4,7 @@ import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath} from '../commerc
 import {products} from '../app/site-data.ts';
 const legacyProducts = new Map(products.map(p=>['/product/'+p.id,p.storeUrl]));
 const catalogAssets = new Set(['/catalog.js','/catalog.css','/mobile-inner.css','/catalog-image-index.json','/editorial-sitemap.xml']);
-const RELEASE = '2026-11-12-product-experience';
+const RELEASE = '2026-11-12-all-product-images';
 function catalogAnalytics(response, request) {
  if(request.method==='HEAD')return new Response(null,{status:response.status,headers:response.headers});
  if(!response.headers.get('content-type')?.includes('text/html'))return response;
@@ -35,7 +35,7 @@ const staticFiles = new Set([
 ]);
 
 function isStaticAsset(pathname) {
-  return pathname.startsWith("/commerce/") || pathname.startsWith("/assets/") || staticFiles.has(pathname) || catalogAssets.has(pathname);
+  return pathname.startsWith("/catalog-image-index/") || pathname.startsWith("/commerce/") || pathname.startsWith("/assets/") || staticFiles.has(pathname) || catalogAssets.has(pathname);
 }
 
 function languageForPath(pathname) {

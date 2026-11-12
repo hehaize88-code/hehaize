@@ -1,4 +1,5 @@
-import {localeCodes,htmlLocale,loadDictionary} from '/assets/locale-core.mjs';
+import {initialGallery} from './photo-selection.mjs';
+import {localeCodes,htmlLocale,loadDictionary} from '/assets/locale-core.mjs?v=20261112-all-images';
 
 const pathLocale = document.documentElement.lang.toLowerCase().replace('zh-cn','zh').replace('de-de','de');
 const locale = localeCodes.includes(pathLocale) ? pathLocale : 'en';
@@ -69,6 +70,7 @@ const detail = document.querySelector('[data-product-detail]');
 if(detail) initDetail();
 function initDetail(){
  const main = document.getElementById('gallery-main'), originalImages=[...document.querySelectorAll('[data-gallery-index] img')].map(img=>img.src);
+ const catalogueImages=[...originalImages];
  const viewer=document.querySelector('.photo-viewer'),viewerImage=viewer.querySelector('img');
  const selected = new Map();
  let options=null,styleGroup=-1,images=[...originalImages],current=0,viewerImages=[],viewerIndex=0,loading=false;
@@ -128,6 +130,7 @@ function initDetail(){
  }
  function chooseStyle(id){
   selected.set(styleGroup,id);
+  const url=new URL(location.href);url.searchParams.delete('photo');url.searchParams.delete('photoSource');history.replaceState(null,'',url.pathname+url.search+url.hash);
   const value=options.groups[styleGroup].values.find(value=>value.id===id);if(value?.image){images=[value.image];showPhoto(0);}
   updateSelection();
  }
@@ -138,7 +141,7 @@ function initDetail(){
    if(!response.ok)throw Error('options');const data=await response.json();
    if(data.sourceId!==detail.dataset.sourceId||!Array.isArray(data.groups)||!Array.isArray(data.variants))throw Error('identity');
    options=data;
-   if(data.images?.length){originalImages.splice(0,originalImages.length,...data.images);images=originalImages;const thumbs=detail.querySelector('.gallery-thumbs');thumbs.innerHTML=originalImages.map((url,i)=>`<button type="button" data-gallery-index="${i}" aria-label="${esc(t('Image'))} ${i+1}"><img referrerpolicy="no-referrer" src="${esc(imageDisplay(url))}" alt="" width="120" height="120" loading="lazy"></button>`).join('');thumbs.querySelectorAll('[data-gallery-index]').forEach((b,i)=>b.addEventListener('click',()=>{images=originalImages;showPhoto(i);}));detail.querySelector('.section-caption>span').textContent=String(originalImages.length);showPhoto(0);}
+   if(data.images?.length){const gallery=initialGallery(new URL(location.href).searchParams,catalogueImages,data.images);originalImages.splice(0,originalImages.length,...gallery.photos);images=originalImages;const thumbs=detail.querySelector('.gallery-thumbs');thumbs.innerHTML=originalImages.map((url,i)=>`<button type="button" data-gallery-index="${i}" aria-label="${esc(t('Image'))} ${i+1}"><img referrerpolicy="no-referrer" src="${esc(imageDisplay(url))}" alt="" width="120" height="120" loading="lazy"></button>`).join('');thumbs.querySelectorAll('[data-gallery-index]').forEach((b,i)=>b.addEventListener('click',()=>{images=originalImages;showPhoto(i);}));detail.querySelector('.section-caption>span').textContent=String(originalImages.length);showPhoto(gallery.index);}
    styleGroup=options.groups.findIndex(group=>group.values.some(value=>photo(value.image)));
    const count=styleGroup>=0?options.groups[styleGroup].values.length:0;styleStatus.textContent=count?String(count):'';
    grid.replaceChildren();groups.replaceChildren();selected.clear();
@@ -170,8 +173,7 @@ function initDetail(){
   catch{const fallback=detail.querySelector('[data-copy-fallback]');fallback.hidden=false;fallback.value=value;fallback.focus();fallback.select();copyStatus.textContent=t('Copy failed. Select and copy the link below.');}
  });
  const agentQuery=detail.querySelector('#agent-query');agentQuery.addEventListener('input',()=>{let count=0;detail.querySelectorAll('[data-agent]').forEach(link=>{link.hidden=!link.dataset.agent.includes(agentQuery.value.trim().toLowerCase());if(!link.hidden)count++;});detail.querySelector('[data-no-agents]').hidden=count>0;});
- const initialPhoto=Number(new URL(location.href).searchParams.get('photo')||1);
- showPhoto(Number.isSafeInteger(initialPhoto)&&initialPhoto>0?initialPhoto-1:0);loadOptions();
+ showPhoto(initialGallery(new URL(location.href).searchParams,catalogueImages).index);loadOptions();
 }
 
 const styleGrid=document.querySelector('[data-style-grid]');
