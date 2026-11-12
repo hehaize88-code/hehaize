@@ -16,6 +16,17 @@ const aliases = {
   'short':'shorts', 'suits':'suit', 'tops':'top', 'short sleeved':'short sleeve', 'long sleeved':'long sleeve', 'colors':'color', 'sleeves':'sleeve', 'fashionable':'fashion', 'clothes':'clothing', 'trainers':'sneakers', 'handbag':'bag',
 };
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+// Older full-title dictionaries sometimes left descriptions untranslated or
+// translated a brand as an ordinary word. Prefer the product glossary in those
+// cases, and preserve the source spelling of known brand identities.
+const identityNames = /\b(?:Dsquared(?:\s*2)?|Moncler|Diesel|Nike|Adidas|Asics|Timberland|Louis Vuitton|Gucci|Dior|Prada|Balenciaga|Burberry|Stussy|Corteiz|Stone Island|Chrome Hearts|Ralph Lauren|New Balance|Off[- ]White)\b/gi;
+export function localizedProductTitle(raw, lang, dictionary, glossaries) {
+ const exact = dictionary[raw];
+ const brands = String(raw).match(identityNames) || [];
+ const identityPreserved = exact && brands.every(name => exact.toLowerCase().includes(name.toLowerCase()));
+ if (exact && exact.trim().toLowerCase() !== String(raw).trim().toLowerCase() && identityPreserved && !/\bpuffer\b/i.test(raw)) return exact;
+ return translateProductTitle(raw,lang,glossaries);
+}
 export function translateProductTitle(raw, lang, glossaries, fullTitles = {}) {
   raw=String(raw||'').replace(/&amp;/gi,'&').replace(/#[^\s#]+/g,'').replace(/\s+/g,' ').trim();
   const exact=fullTitles[lang]?.[raw.toLowerCase()];

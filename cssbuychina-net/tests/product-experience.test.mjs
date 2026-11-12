@@ -26,3 +26,12 @@ test('exchange rates stay references and reject invalid data; unavailable source
 test('buying platforms all preserve the original Weidian ID without inherited affiliate codes',()=>{
  const links=purchasingPlatforms('7506441136');assert.equal(links.length,10);for(const [name,link] of links){assert.ok(decodeURIComponent(link).includes('7506441136'),name);assert.doesNotMatch(link,/ref=|invite|affcode|partnercode/);assert.equal(new URL(link).protocol,'https:');}assert.ok(links.some(([n,l])=>n==='Litbuy'&&l.includes('/product/2/')));assert.deepEqual(purchasingPlatforms('bad'),[]);
 });
+
+
+import {localizedProductTitle} from '../public/commerce/product-title.js';
+import {productGlossaries} from '../public/commerce/product-glossaries.js';
+test('old title translations cannot retain English clothing descriptors or corrupt a brand',()=>{
+ assert.equal(localizedProductTitle('Moncler Puffer','fr',{'Moncler Puffer':'Moncler Puffer'},productGlossaries),'Moncler Doudoune');
+ assert.equal(localizedProductTitle('Moncler Puffer','zh',{'Moncler Puffer':'Moncler 缓冲'},productGlossaries),'Moncler 羽绒服');
+ assert.match(localizedProductTitle('Dsquared 2 Denim Jacket','fr',{'Dsquared 2 Denim Jacket':'D2 2 Veste en jean'},productGlossaries),/^Dsquared 2 /);
+});

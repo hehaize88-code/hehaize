@@ -1,9 +1,6 @@
 import {experienceRoute} from '../commerce/experience.js';
-import {catalogueDictionary,localizeCatalogueHtml} from '../commerce/locale-support.js';
-import {translateProductTitle} from '../public/commerce/product-title.js';
-import {productGlossaries} from '../public/commerce/product-glossaries.js';
 import applicationWorker from "../dist/server/index.js";
-import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath, nav, footer} from '../commerce/catalog.js';
+import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath} from '../commerce/catalog.js';
 import {products} from '../app/site-data.ts';
 const legacyProducts = new Map(products.map(p=>['/product/'+p.id,p.storeUrl]));
 const catalogAssets = new Set(['/catalog.js','/catalog.css','/mobile-inner.css','/catalog-image-index.json','/editorial-sitemap.xml']);
@@ -108,7 +105,7 @@ const pagesWorker = {
       const to=new URL(bare,url.origin);to.search=url.search;to.searchParams.set('reading_lang','en');return Response.redirect(to.href,302);
     }
     const response = await applicationWorker.fetch(request, env, ctx);
-    const localized=await enhanceDocument(await localizeDocumentLanguage(response, url.pathname),url,env);
+    const localized=await localizeDocumentLanguage(response, url.pathname);
     const headers=new Headers(localized.headers);headers.set('x-cssbuy-release',RELEASE);
     if(headers.get('content-type')?.includes('text/html'))headers.set('cache-control','public, max-age=0, s-maxage=60');
     return new Response(localized.body,{status:localized.status,headers});
@@ -118,17 +115,3 @@ const pagesWorker = {
 export default pagesWorker;
 
 function catalogSitemapIndex(){return new Response('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+LANGS.map(l=>'<sitemap><loc>https://cssbuychina.net/catalog-sitemap-'+l+'.xml</loc></sitemap>').join('')+'</sitemapindex>',{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=300'}});}
-async function enhanceDocument(response,url,env){
- if(!response.headers.get('content-type')?.includes('text/html')||response.status!==200)return response;
- const locale=url.pathname.match(/^\/(pt-br|de|es)(?=\/|$)/)?.[1]||'en';
- const path=url.pathname.replace(/^\/(pt-br|de|es)(?=\/|$)/,'')||'/';
- const dictionary=await catalogueDictionary(locale,env);let html=await response.text();
- let header=nav(locale,path,url.search);
- if(path!=='/')header=header.replace(/href="\/(fr|it|nl|pl|ro|sv|zh|da|fi|el|cs|hu|bg|sk|hr|ja|ko|vi|th|id)([^"?]*)[^"]*" hreflang=/g,(_,lang)=>`href="/${lang}/catalog/" title="${dictionary['Products']||'Products'}" hreflang=`);
- header=localizeCatalogueHtml(header,dictionary,locale);
- html=html.replace(/<header class="unified-header">[\s\S]*?<\/header>/,header);
- html=html.replace(/(<h2>)([^<>]+)(<\/h2><strong>)/g,(_,a,title,b)=>a+(dictionary[title]||translateProductTitle(title,locale,productGlossaries))+b);
- html=html.replace(/<strong>\$([\d.]+) <small>USD<\/small><\/strong>/g,'<strong><span data-price-amount="$1" data-price-currency="USD">$$$1</span> <small data-currency-code>USD</small></strong>');
- html=html.replace('</head>','<link rel="stylesheet" href="/commerce/product.css?v=20261112"><script type="module" src="/commerce/client.js?v=20261112"></script></head>');
- const headers=new Headers(response.headers);headers.delete('content-length');headers.delete('content-encoding');return new Response(html,{status:response.status,headers});
-}

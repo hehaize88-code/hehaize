@@ -1,6 +1,6 @@
 import {localeCodes,localeList,htmlLocale} from '../public/assets/locale-core.mjs';
 import {catalogueDictionary,localizeCatalogueHtml} from './locale-support.js';
-import {translateProductTitle} from '../public/commerce/product-title.js';
+import {localizedProductTitle} from '../public/commerce/product-title.js';
 import {productGlossaries} from '../public/commerce/product-glossaries.js';
 import {CURRENCIES} from './experience.js';
 import { chromeCopy, siteNavigation, footerNavigation } from '../shared/site-chrome.js';
@@ -112,7 +112,7 @@ async function rawCatalogueRoute(request,env) {
  }
  try {
   if(/^[a-z0-9-]+\/\d+\.html$/i.test(tail)) {
-   const product=parseDetail(await upstream('/'+tail));const dictionary=await catalogueDictionary(lang,env);product.title=dictionary[product.title]||translateProductTitle(product.title,lang,productGlossaries);product.related=product.related.map(p=>({...p,title:dictionary[p.title]||translateProductTitle(p.title,lang,productGlossaries)}));if(!product.title)return shellWithEnv(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
+   const product=parseDetail(await upstream('/'+tail));const dictionary=await catalogueDictionary(lang,env);product.title=localizedProductTitle(product.title,lang,dictionary,productGlossaries);product.related=product.related.map(p=>({...p,title:localizedProductTitle(p.title,lang,dictionary,productGlossaries)}));if(!product.title)return shellWithEnv(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
    const buy=buyUrl(product.sourceId);
    const schema=JSON.stringify({'@context':'https://schema.org','@type':'Product',name:product.title,sku:product.sourceId,image:product.images,...(product.price?{offers:{'@type':'Offer',price:product.price,priceCurrency:'USD',url:'https://cssbuychina.net'+prefix(lang)+path}}:{})}).replace(/</g,'\\u003c');
    return shellWithEnv(lang,path,product.title,`${product.title}. ${t[15]}`,`<script type="application/ld+json">${schema}</script>`+renderProductDetail(product,lang,t,buy),{query:url.search});
@@ -122,7 +122,7 @@ async function rawCatalogueRoute(request,env) {
   const sort=['new','click','price'].includes(url.searchParams.get('sort'))?url.searchParams.get('sort'):'new';
   const page=Math.min(10000,Math.max(1,Number.parseInt(url.searchParams.get('page')||'1')||1));
   const params=new URLSearchParams({q,sort,page:String(page)}),data=parseList(await upstream('/'+cat+'/',params));
-  const dictionary=await catalogueDictionary(lang,env);data.products=data.products.map(p=>({...p,title:dictionary[p.title]||translateProductTitle(p.title,lang,productGlossaries)}));
+  const dictionary=await catalogueDictionary(lang,env);data.products=data.products.map(p=>({...p,title:localizedProductTitle(p.title,lang,dictionary,productGlossaries)}));
   const route=localPath('/'+cat+'/',lang),link=(s,p=1)=>`${route}?${new URLSearchParams({q,sort:s,page:String(p)})}`;
   const names=CATEGORY_LABELS.en,categoryTitle=names[CATEGORIES.indexOf(cat)];
   const title=cat==='AllProducts'?t[0]:`CSSBuy ${categoryTitle} Spreadsheet`;

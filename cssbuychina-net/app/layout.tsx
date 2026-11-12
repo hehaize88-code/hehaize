@@ -2,9 +2,11 @@ import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { AnalyticsEvents } from "./components/AnalyticsEvents";
+import { CommerceRuntime } from "./components/CommerceRuntime";
 import "./globals.css";
 import "../public/site-shell.css";
 import "../public/mobile-inner.css";
+import "../public/commerce/product.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"
@@ -75,6 +77,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </Script>
         <AnalyticsEvents />
         {children}
+        <CommerceRuntime />
       </body>
     </html>
   );
