@@ -4,18 +4,18 @@ No database. Resumable JSON checkpoints, immutable SHA-256 shards, truthful cove
 """
 from email.utils import parsedate_to_datetime
 import argparse,concurrent.futures,hashlib,io,json,math,os,pathlib,threading,time,urllib.error,urllib.parse,urllib.request
-from PIL import Image,ImageStat
+from PIL import Image,ImageStat,ImageOps
 import httpx
 http_clients=threading.local()
 ROOT=pathlib.Path(__file__).resolve().parent
 CACHE=ROOT/'cache';PUBLIC=ROOT/'public';CHECKPOINT=ROOT/'checkpoints'
 for p in [CACHE,PUBLIC,CHECKPOINT,CACHE/'options',CACHE/'descriptors']:p.mkdir(parents=True,exist_ok=True)
-lock=threading.Lock();host_deadlines={};cdn_condition=threading.Condition();cdn_active=0;cdn_limit=8;cdn_successes=0;last_cdn_limit=0;stats={'options':0,'images':0,'failed_images':0};stage='starting'
+lock=threading.Lock();host_deadlines={};cdn_condition=threading.Condition();cdn_active=0;cdn_limit=4;cdn_successes=0;last_cdn_limit=time.time();last_cdn_scale=time.time();host_starts={};stats={'options':0,'images':0,'failed_images':0};stage='starting'
 
 def save(p,data):
  p=pathlib.Path(p);p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix(p.suffix+'.'+str(threading.get_ident())+'.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')));tmp.replace(p)
 def get(url,timeout=25,retries=2):
- global cdn_active,cdn_limit,cdn_successes,last_cdn_limit
+ global cdn_active,cdn_limit,cdn_successes,last_cdn_limit,last_cdn_scale
  host=urllib.parse.urlsplit(url).netloc;cdn='geilicdn.com' in host
  for attempt in range(retries+1):
   if cdn:
@@ -26,7 +26,9 @@ def get(url,timeout=25,retries=2):
      cdn_condition.wait(timeout=1)
   else:
    while True:
-    with lock:delay=host_deadlines.get(host,0)-time.time()
+    with lock:
+     now=time.time();delay=max(host_deadlines.get(host,0)-now,host_starts.get(host,0)+.5-now)
+     if delay<=0:host_starts[host]=now
     if delay<=0:break
     time.sleep(min(delay,1))
   try:
@@ -37,7 +39,7 @@ def get(url,timeout=25,retries=2):
    if cdn:
     with cdn_condition:
      cdn_successes+=1
-     if cdn_successes>=300 and cdn_limit<12 and time.time()-last_cdn_limit>120:cdn_limit+=1;cdn_successes=0;cdn_condition.notify_all()
+     if cdn_successes>=20 and cdn_limit<12 and time.time()-last_cdn_limit>120 and time.time()-last_cdn_scale>60:cdn_limit+=1;cdn_successes=0;last_cdn_scale=time.time();cdn_condition.notify_all()
    return body
   except urllib.error.HTTPError as e:
    retry=e.headers.get('Retry-After','0')
@@ -99,7 +101,7 @@ def styles_for(p):
  return result
 
 def fingerprint(raw):
- im=Image.open(io.BytesIO(raw));im.load()
+ im=Image.open(io.BytesIO(raw));im.load();im=ImageOps.exif_transpose(im)
  if im.mode=='RGBA':
   bg=Image.new('RGBA',im.size,'white');bg.alpha_composite(im);im=bg.convert('RGB')
  else:im=im.convert('RGB')
@@ -168,8 +170,8 @@ def main():
  seen=set();records=[r for r in records if not ((r['path'],r['image']) in seen or seen.add((r['path'],r['image'])))]
  stage='output';shards=list(manifest['shards']);style_records=records[len(galleries):]
  out=PUBLIC/'catalog-image-index';out.mkdir(exist_ok=True)
- for i in range(0,len(style_records),250):
-  body=json.dumps({'products':style_records[i:i+250]},ensure_ascii=False,separators=(',',':')).encode();sha=hashlib.sha256(body).hexdigest();name=f'styles-{i//250:03d}-{sha[:12]}.json';(out/name).write_bytes(body);shards.append({'url':'/catalog-image-index/'+name,'count':len(style_records[i:i+250]),'bytes':len(body),'sha256':sha})
+ for i in range(0,len(style_records),1000):
+  body=json.dumps({'products':style_records[i:i+1000]},ensure_ascii=False,separators=(',',':')).encode();sha=hashlib.sha256(body).hexdigest();name=f'styles-{i//1000:03d}-{sha[:12]}.json';(out/name).write_bytes(body);shards.append({'url':'/catalog-image-index/'+name,'count':len(style_records[i:i+1000]),'bytes':len(body),'sha256':sha})
  failed=[{'image':u,**d} for u,d in desc.items() if d.get('error')]
  new={**{k:v for k,v in manifest.items() if k!='shards'},'updatedAt':time.strftime('%Y-%m-%d',time.gmtime()),'indexedImageCount':len(records),'indexedProductCount':len(set(r['path'] for r in records)),'indexedCount':len(products),'discoveredImageCount':len(set((r['path'],r['image']) for r in galleries+styles)),'uniqueImageCount':len(set(r['image'] for r in galleries+styles)),'indexedUniqueImageCount':len(set(r['image'] for r in records)),'galleryImageCount':len(galleries),'styleImageCount':sum(r['kind']=='style' for r in records),'includesStyles':True,'failedDetailCount':0,'failedStylePageCount':sum(bool(x.get('error')) for x in options),'failedImageCount':len(failed),'unattemptedStylePageCount':0,'shards':shards}
  save(PUBLIC/'catalog-image-index.json',new);save(CHECKPOINT/'coverage-report.json',{'manifest':{k:v for k,v in new.items() if k!='shards'},'unavailableProducts':[{**x['product'],'error':x['error']} for x in options if x.get('error')],'failedImages':failed})
