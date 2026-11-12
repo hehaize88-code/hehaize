@@ -1,3 +1,5 @@
+import {translateOptionLabel} from './product-title.js?v=20261112-v5';
+import {productGlossaries} from './product-glossaries.js';
 import {PRODUCT_UI} from './ui.js?v=20261112-v4';
 const localeCodes=["en", "zh", "de", "pl", "es", "it", "fr", "pt", "ro", "sv"];
 const htmlLocale=code=>code==='zh'?'zh-CN':code;
@@ -81,7 +83,7 @@ function initDetail(){
  const prev=detail.querySelector('[data-gallery-prev]'),next=detail.querySelector('[data-gallery-next]'),counter=detail.querySelector('.gallery-counter');
  const styleStatus=detail.querySelector('[data-style-count]');
  main.referrerPolicy='no-referrer';viewerImage.referrerPolicy='no-referrer';
- const optionLabel=value=>/^(conventional standard|one size|均码|均碼)$/i.test(value.trim())?t('One size'):t(value.trim()).replace(/\bWomen['’]s style|女款/gi,t('Women’s style')).replace(/\bMen['’]s style|男款/gi,t('Men’s style'));
+ const optionLabel=value=>/^(conventional standard|one size|均码|均碼)$/i.test(value.trim())?t('One size'):translateOptionLabel(t(value.trim()).replace(/\bWomen['’]s style|女款/gi,t('Women’s style')).replace(/\bMen['’]s style|男款/gi,t('Men’s style')),locale,productGlossaries);
  const imageDisplay=(url,size=1200)=>{const parsed=new URL(url);if(/(^|\.)geilicdn\.com$/.test(parsed.hostname)&&/\.(?:jpe?g|png)$/i.test(parsed.pathname)){parsed.pathname+='.webp';parsed.search='?w='+size+'&h='+size;}return parsed.href;};
  const photo=(url)=>{try{const parsed=new URL(url);return parsed.protocol==='https:'?parsed.href:'';}catch{return '';}};
  function showPhoto(index){
@@ -157,7 +159,7 @@ function initDetail(){
    }
    options.groups.forEach((group,index)=>{
     if(index===styleGroup)return;
-    const label=document.createElement('label');label.className='option-group';const title=document.createElement('span');title.textContent=t(/size|尺码|尺寸|码数/i.test(group.name)?'Size':group.name)||t('Available options');label.append(title);
+    const label=document.createElement('label');label.className='option-group';const title=document.createElement('span');title.textContent=/colou?r|颜色|顏色/i.test(group.name)?(productGlossaries[locale]?.color||'Color'):t(/size|尺码|尺寸|码数/i.test(group.name)?'Size':/style|款式/i.test(group.name)?'Style':group.name)||t('Available options');label.append(title);
     const select=document.createElement('select');select.dataset.optionGroup=String(index);select.setAttribute('aria-label',title.textContent);
     select.innerHTML=`<option value="">${esc(t(/size|尺码|尺寸|码数/i.test(group.name)?'Select a size':'Available options'))}</option>`+group.values.map(value=>`<option value="${esc(value.id)}">${esc(optionLabel(value.label))}</option>`).join('');
     select.addEventListener('change',()=>{if(select.value)selected.set(index,select.value);else selected.delete(index);updateSelection();});label.append(select);groups.append(label);
