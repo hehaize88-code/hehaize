@@ -8,7 +8,7 @@ import build_complete_index as b
 ROOT=pathlib.Path(__file__).resolve().parent
 p=argparse.ArgumentParser();p.add_argument('--fetch-missing',action='store_true');args=p.parse_args()
 manifest,galleries,products=b.bootstrap()
-rows=json.loads((ROOT/'cache/combined-candidates.json').read_text());expected={p['path']:p['sourceId'] for p in products}
+rows=json.loads((ROOT/'cache/combined-candidates.json').read_text());coverage=json.loads((ROOT/'checkpoints/combined-coverage.json').read_text());assert len(rows)==coverage['combinedCandidates'],'Incomplete metadata checkpoint';expected={p['path']:p['sourceId'] for p in products}
 assert all(expected.get(r['path'])==r['sourceId'] for r in rows)
 urls=list(dict.fromkeys(r['image'] for r in rows));desc={};missing=[]
 for u in urls:
