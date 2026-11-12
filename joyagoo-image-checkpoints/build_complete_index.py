@@ -10,22 +10,25 @@ http_clients=threading.local()
 ROOT=pathlib.Path(__file__).resolve().parent
 CACHE=ROOT/'cache';PUBLIC=ROOT/'public';CHECKPOINT=ROOT/'checkpoints'
 for p in [CACHE,PUBLIC,CHECKPOINT,CACHE/'options',CACHE/'descriptors']:p.mkdir(parents=True,exist_ok=True)
-lock=threading.Lock();host_deadlines={};cdn_condition=threading.Condition();cdn_active=0;cdn_limit=48;cdn_successes=0;stats={'options':0,'images':0,'failed_images':0};stage='starting'
+lock=threading.Lock();host_deadlines={};cdn_condition=threading.Condition();cdn_active=0;cdn_limit=8;cdn_successes=0;last_cdn_limit=0;stats={'options':0,'images':0,'failed_images':0};stage='starting'
 
 def save(p,data):
  p=pathlib.Path(p);p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix(p.suffix+'.'+str(threading.get_ident())+'.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')));tmp.replace(p)
 def get(url,timeout=25,retries=2):
- global cdn_active,cdn_limit,cdn_successes
+ global cdn_active,cdn_limit,cdn_successes,last_cdn_limit
  host=urllib.parse.urlsplit(url).netloc;cdn='geilicdn.com' in host
  for attempt in range(retries+1):
-  while True:
-   with lock: delay=host_deadlines.get(host,0)-time.time()
-   if delay<=0:break
-   time.sleep(min(delay,1))
   if cdn:
    with cdn_condition:
-    while cdn_active>=cdn_limit:cdn_condition.wait(timeout=1)
-    cdn_active+=1
+    while True:
+     with lock:delay=host_deadlines.get(host,0)-time.time()
+     if cdn_active<cdn_limit and delay<=0:cdn_active+=1;break
+     cdn_condition.wait(timeout=1)
+  else:
+   while True:
+    with lock:delay=host_deadlines.get(host,0)-time.time()
+    if delay<=0:break
+    time.sleep(min(delay,1))
   try:
    if not hasattr(http_clients,'client'):http_clients.client=httpx.Client(proxy=os.environ.get('HTTPS_PROXY'),trust_env=False,headers={'User-Agent':'Mozilla/5.0','Accept':'*/*'},limits=httpx.Limits(max_connections=2,max_keepalive_connections=2,keepalive_expiry=120),follow_redirects=True)
    r=http_clients.client.get(url,timeout=timeout)
@@ -34,7 +37,7 @@ def get(url,timeout=25,retries=2):
    if cdn:
     with cdn_condition:
      cdn_successes+=1
-     if cdn_successes>=100 and cdn_limit<48:cdn_limit+=1;cdn_successes=0;cdn_condition.notify_all()
+     if cdn_successes>=300 and cdn_limit<12 and time.time()-last_cdn_limit>120:cdn_limit+=1;cdn_successes=0;cdn_condition.notify_all()
    return body
   except urllib.error.HTTPError as e:
    retry=e.headers.get('Retry-After','0')
@@ -43,11 +46,11 @@ def get(url,timeout=25,retries=2):
     try:delay=max(0,parsedate_to_datetime(retry).timestamp()-time.time())
     except Exception:delay=0
    if e.code==429:
-    print('RATE_LIMIT',host,'retry_after',delay,'cdn_limit',cdn_limit,flush=True)
+    print('RATE_LIMIT',host,'retry_after',delay,'cdn_limit',cdn_limit,'headers',{k:r.headers.get(k) for k in ['server','cf-ray','x-ratelimit-limit','x-ratelimit-remaining','retry-after'] if r.headers.get(k)},'body',r.text[:160],flush=True)
     delay=max(delay,30)
     with lock:host_deadlines[host]=max(host_deadlines.get(host,0),time.time()+delay)
     if cdn:
-     with cdn_condition:cdn_limit=max(6,cdn_limit//2);cdn_successes=0
+     with cdn_condition:cdn_limit=max(1,cdn_limit//2);cdn_successes=0;last_cdn_limit=time.time()
    if attempt>=retries:raise
    if e.code==503:time.sleep(max(delay,2))
    elif e.code!=429:time.sleep(2*(attempt+1))
