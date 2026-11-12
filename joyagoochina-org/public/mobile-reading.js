@@ -1,147 +1,34 @@
-/* Progressive enhancement: all article text and links remain in the HTML. */
+/* Progressive mobile layout: all original content stays in the document. */
 (() => {
-  const copy = {
-    en: ['Expand full article', 'Collapse sections', 'Show more articles'],
-    zh: ['展开全文', '收起章节', '显示更多文章'],
-    de: ['Ganzen Artikel öffnen', 'Abschnitte einklappen', 'Weitere Artikel anzeigen'],
-    pl: ['Rozwiń cały artykuł', 'Zwiń sekcje', 'Pokaż więcej artykułów'],
-    es: ['Expandir artículo completo', 'Contraer secciones', 'Mostrar más artículos'],
-    it: ['Espandi tutto l’articolo', 'Comprimi le sezioni', 'Mostra altri articoli'],
-    fr: ['Afficher tout l’article', 'Replier les sections', 'Afficher plus d’articles'],
-    pt: ['Expandir artigo completo', 'Recolher seções', 'Mostrar mais artigos'],
-    ro: ['Extinde întregul articol', 'Restrânge secțiunile', 'Arată mai multe articole'],
-    sv: ['Visa hela artikeln', 'Fäll ihop avsnitten', 'Visa fler artiklar'],
-  };
-
-  function init() {
-    const main = document.querySelector('main.seo-article-page, main.seo-index-page');
-    if (!main || main.dataset.mobileReading) return;
-    main.dataset.mobileReading = 'ready';
-    const labels = copy[document.documentElement.lang.split('-')[0]] || copy.en;
-    const media = window.matchMedia('(max-width: 680px)');
-
-    if (main.classList.contains('seo-index-page')) {
-      const grid = main.querySelector('.seo-index-grid');
-      if (!grid) return;
-      const cards = [...grid.querySelectorAll('.seo-index-card')];
-      if (cards.length <= 8) return;
-      let visible = 8;
-      const more = document.createElement('button');
-      more.type = 'button';
-      more.className = 'mobile-reading-more';
-      grid.id ||= 'article-list';
-      more.setAttribute('aria-controls', grid.id);
-      grid.after(more);
-      function showCards() {
-        cards.forEach((card, i) => card.classList.toggle('mobile-reading-hidden', media.matches && i >= visible));
-        more.hidden = !media.matches || visible >= cards.length;
-        more.textContent = `${labels[2]} (${Math.max(0, cards.length - visible)})`;
-      }
-      more.addEventListener('click', () => {
-        const next = cards[visible];
-        visible += 8;
-        showCards();
-        next?.focus();
-      });
-      media.addEventListener('change', showCards);
-      window.addEventListener('beforeprint', () => cards.forEach(card => card.classList.remove('mobile-reading-hidden')));
-      window.addEventListener('afterprint', showCards);
-      showCards();
-      return;
-    }
-
-    const body = main.querySelector('.article-body');
-    if (!body) return;
-    const sections = [...body.querySelectorAll(':scope > section[id^="article-section-"]')];
-    if (!sections.length) return;
-    const controls = document.createElement('div');
-    controls.className = 'mobile-reading-controls';
-    const expand = document.createElement('button');
-    const collapse = document.createElement('button');
-    expand.type = collapse.type = 'button';
-    expand.textContent = labels[0];
-    collapse.textContent = labels[1];
-    controls.append(expand, collapse);
-    body.prepend(controls);
-
-    const items = sections.map((section) => {
-      const heading = section.querySelector('h2');
-      if (!heading) return null;
-      const content = document.createElement('div');
-      content.className = 'mobile-section-content';
-      content.id = `${section.id}-content`;
-      while (heading.nextSibling) content.append(heading.nextSibling);
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'mobile-section-toggle';
-      button.setAttribute('aria-controls', content.id);
-      while (heading.firstChild) button.append(heading.firstChild);
-      heading.append(button);
-      section.append(content);
-      function setOpen(open) {
-        content.hidden = !open;
-        button.setAttribute('aria-expanded', String(open));
-        section.classList.toggle('mobile-section-collapsed', !open);
-      }
-      button.addEventListener('click', () => {
-        if (media.matches) setOpen(content.hidden);
-      });
-      return { section, button, content, setOpen };
-    }).filter(Boolean);
-    const controlledIds = items.map(item => item.content.id).join(' ');
-    expand.setAttribute('aria-controls', controlledIds);
-    collapse.setAttribute('aria-controls', controlledIds);
-
-    const index = main.querySelector('.article-index');
-    const indexTitle = index?.querySelector(':scope > strong');
-    let contents;
-    if (indexTitle) {
-      contents = document.createElement('details');
-      contents.className = 'mobile-reading-contents';
-      const summary = document.createElement('summary');
-      summary.textContent = indexTitle.textContent;
-      contents.append(summary);
-      indexTitle.remove();
-      while (index.firstChild) contents.append(index.firstChild);
-      index.append(contents);
-    }
-    function openHash() {
-      let id;
-      try { id = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
-      const item = items.find(item => item.section.id === id);
-      if (item) item.setOpen(true);
-    }
-    function resize() {
-      controls.hidden = !media.matches;
-      items.forEach((item, i) => {
-        item.button.disabled = !media.matches;
-        item.setOpen(!media.matches || i === 0);
-      });
-      if (contents) contents.open = !media.matches;
-      openHash();
-    }
-    expand.addEventListener('click', () => items.forEach(item => item.setOpen(true)));
-    collapse.addEventListener('click', () => items.forEach((item, i) => item.setOpen(i === 0)));
-    index?.addEventListener('click', event => {
-      const link = event.target.closest('a[href^="#"]');
-      if (!link) return;
-      items.find(item => `#${item.section.id}` === link.getAttribute('href'))?.setOpen(true);
-    });
-    window.addEventListener('hashchange', openHash);
-    let printState;
-    window.addEventListener('beforeprint', () => {
-      printState = { open: items.map(item => !item.content.hidden), toc: contents?.open };
-      items.forEach(item => item.setOpen(true));
-      if (contents) contents.open = true;
-    });
-    window.addEventListener('afterprint', () => {
-      if (!printState) return;
-      items.forEach((item, i) => item.setOpen(printState.open[i]));
-      if (contents) contents.open = printState.toc;
-    });
-    media.addEventListener('change', resize);
-    resize();
-  }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
-  else init();
+const copy={en:['Expand all','Collapse sections','Previous','Next','Categories','Page'],zh:['展开全部','收起章节','上一页','下一页','商品分类','页'],de:['Alle öffnen','Abschnitte schließen','Zurück','Weiter','Kategorien','Seite'],pl:['Rozwiń wszystko','Zwiń sekcje','Poprzednia','Następna','Kategorie','Strona'],es:['Expandir todo','Contraer secciones','Anterior','Siguiente','Categorías','Página'],it:['Espandi tutto','Comprimi sezioni','Precedente','Successiva','Categorie','Pagina'],fr:['Tout ouvrir','Replier les sections','Précédente','Suivante','Catégories','Page'],pt:['Expandir tudo','Recolher seções','Anterior','Próxima','Categorias','Página'],ro:['Extinde tot','Restrânge secțiunile','Înapoi','Înainte','Categorii','Pagina'],sv:['Öppna alla','Fäll ihop avsnitt','Föregående','Nästa','Kategorier','Sida']};
+function init(){
+ const main=document.querySelector('main');if(!main||main.dataset.mobileReading==='v3')return;main.dataset.mobileReading='v3';
+ const t=copy[main.dataset.locale||document.documentElement.lang.split('-')[0]]||copy.en,media=matchMedia('(max-width:680px)'),panels=[];let serial=0,printing=false;
+ const button=(text,cls='')=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.className=cls;return b;};
+ function panel(host,heading,initial=false){
+  if(!host||!heading||host.dataset.mobilePanel)return;host.dataset.mobilePanel='true';host.id||=`mobile-section-${++serial}`;
+  const content=document.createElement('div');content.className='mobile-section-content';content.id=host.id+'-content';while(heading.nextSibling)content.append(heading.nextSibling);
+  const toggle=button('','mobile-section-toggle');toggle.setAttribute('aria-controls',content.id);while(heading.firstChild)toggle.append(heading.firstChild);heading.append(toggle);host.append(content);let open=initial;
+  const render=()=>{const shown=printing||!media.matches||open;content.hidden=!shown;toggle.disabled=!media.matches;toggle.setAttribute('aria-expanded',String(shown));host.classList.toggle('mobile-section-collapsed',!shown);};
+  const setOpen=value=>{open=value;render();};toggle.onclick=()=>setOpen(!open);media.addEventListener('change',render);const item={host,content,render,setOpen};panels.push(item);render();return item;
+ }
+ main.querySelectorAll('.article-body > section,.policy-copy > section').forEach((section,i)=>panel(section,section.querySelector(':scope > h2'),i===0&&section.textContent.length<1100));
+ const body=main.querySelector('.article-body');if(body&&panels.length){const controls=document.createElement('div');controls.className='mobile-reading-controls';const expand=button(t[0]),collapse=button(t[1]);expand.onclick=()=>panels.forEach(p=>p.setOpen(true));collapse.onclick=()=>panels.forEach(p=>p.setOpen(false));controls.append(expand,collapse);body.prepend(controls);}
+ const index=main.querySelector('.article-index'),title=index?.querySelector(':scope > strong');if(title){const h=document.createElement('h2');h.textContent=title.textContent;title.replaceWith(h);panel(index,h);}
+ main.querySelectorAll('.home-steps,.home-context > div,.catalog-reading,.shipping-worksheet').forEach(el=>panel(el,el.querySelector(':scope > h2')));
+ const filters=main.querySelector('.category-filters');if(filters){const wrap=document.createElement('section');wrap.className='mobile-filter-panel';const h=document.createElement('h2');h.textContent=t[4];filters.before(wrap);wrap.append(h,filters);panel(wrap,h);}
+ function paging(grid,size){
+  if(!grid||grid.dataset.mobilePaged)return;const cards=[...grid.children];if(cards.length<=size)return;grid.dataset.mobilePaged='true';grid.id||=`mobile-list-${++serial}`;let page=0;
+  const pages=Math.ceil(cards.length/size),nav=document.createElement('nav');nav.className='mobile-list-pages';nav.setAttribute('aria-label',t[5]);const prev=button('← '+t[2]),next=button(t[3]+' →'),status=document.createElement('span');status.setAttribute('role','status');prev.setAttribute('aria-controls',grid.id);next.setAttribute('aria-controls',grid.id);nav.append(prev,status,next);grid.after(nav);
+  function render(){cards.forEach((card,i)=>card.classList.toggle('mobile-reading-hidden',!printing&&media.matches&&Math.floor(i/size)!==page));nav.hidden=printing||!media.matches;prev.disabled=page===0;next.disabled=page===pages-1;status.textContent=`${page+1} / ${pages}`;}
+  function move(delta){page=Math.max(0,Math.min(pages-1,page+delta));render();grid.scrollIntoView({block:'start'});cards[page*size]?.querySelector('a,summary,button')?.focus({preventScroll:true});}
+  prev.onclick=()=>move(-1);next.onclick=()=>move(1);media.addEventListener('change',render);panels.push({host:grid,render,setOpen:()=>{}});render();
+ }
+ paging(main.querySelector('.seo-index-grid'),6);paging(main.querySelector('.guide-index-grid'),6);paging(main.querySelector('.faq-list'),10);main.querySelectorAll('.catalog-grid').forEach(grid=>paging(grid,12));
+ const results=main.querySelector('#image-results');if(results)new MutationObserver(()=>{delete results.dataset.mobilePaged;if(results.nextElementSibling?.classList.contains('mobile-list-pages'))results.nextElementSibling.remove();paging(results,12);}).observe(results,{childList:true});
+ function revealHash(hash){let id;try{id=decodeURIComponent(hash.replace(/^#/,''));}catch{return;}if(!id)return;const target=document.getElementById(id);if(!target)return;panels.forEach(p=>{if(p.host===target||p.content?.contains(target))p.setOpen(true);});}
+ main.addEventListener('click',e=>{const a=e.target.closest('a[href*="#"]');if(a){try{const u=new URL(a.href);if(u.pathname===location.pathname)revealHash(u.hash);}catch{}}});window.addEventListener('hashchange',()=>revealHash(location.hash));revealHash(location.hash);
+ window.addEventListener('beforeprint',()=>{printing=true;panels.forEach(p=>p.render());});window.addEventListener('afterprint',()=>{printing=false;panels.forEach(p=>p.render());});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
