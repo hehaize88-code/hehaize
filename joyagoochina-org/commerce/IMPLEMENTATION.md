@@ -24,7 +24,7 @@ Purchase URL: `https://joyagoo.com/product?id={sourceId}&platform=WEIDIAN`. Sour
 
 `commerce/home.js` renders the SEO homepage in all ten languages. Homepage products are read live; if the source is temporarily unavailable, a visibly dated catalogue snapshot is shown. `commerce/content.js` is generated from the existing article library, guide titles and image index. The editorial source of truth remains in `app/`.
 
-Source gallery images can include seller and warehouse photos. The UI does not label all images as independently verified warehouse QC. Products retain source titles in every locale; surrounding navigation and guidance are translated.
+Source gallery images can include seller and warehouse photos. The UI does not label all images as independently verified warehouse QC. Product descriptions are localized in all ten locales using complete title translations plus a shared descriptor glossary for new titles. Brand and model identities are retained.
 
 ## Image search
 
@@ -55,3 +55,13 @@ Article archives, article detail pages, guides and FAQ pages now share the nativ
 All ten homepages show four existing translated FAQ entries, a link to the complete FAQ page and matching FAQPage structured data. Both the commerce cache version and the editorial HTML cache version were advanced, and the CSS URL was versioned to avoid stale mixed templates.
 
 Validation: production build and TypeScript passed; all 12 catalogue tests passed; all 230 existing article/guide bodies were byte-normalized and compared with the previous published export with no text changes; archive counts stayed unchanged per locale; generated homepage/FAQ/archive/guide/detail headers and link targets passed in all ten locales.
+
+## Product experience — 2026-11-12
+
+Detail pages have a product gallery, a scrollable source-style grid, live size/SKU selection, source price conversion, ten alternate buying agents and source-link copying with selected option details. The public Weidian response is identity-checked; no synthetic SKU parameters are added to Weidian links. Catalogue photos remain labeled as references because the source does not identify warehouse QC separately.
+
+The Frankfurter reference-rate endpoint is cached for six hours; currency preferences are stored in the browser. Rate dates and excluded fees are displayed. Failures retain the original currency and show a clear notice.
+
+Product headings, cards, metadata and image-search results share the title translator. Whole-title translations are precomputed from public catalogue text in nine target languages, with brand tokens protected, and a descriptor glossary handles newer titles. No external translation call is made when visitors browse. Existing editorial content, language URLs and sitemap routes remain intact.
+
+Validation: catalogue and product identity tests, ten-locale render tests, TypeScript check, complete Cloudflare Pages build, 390px layout inspection, FX and option-price interaction, copy feedback and platform menu inspection.

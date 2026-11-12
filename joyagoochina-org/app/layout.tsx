@@ -89,6 +89,7 @@ export default function RootLayout({
         {children}
         <OutboundTracker />
         <MobileReading />
+        <script type="module" src="/commerce/client.js?v=20261112" />
       </body>
     </html>
   );

@@ -1,0 +1,10 @@
+import zh from '../public/commerce/titles/zh.json' with {type:'json'};
+import de from '../public/commerce/titles/de.json' with {type:'json'};
+import pl from '../public/commerce/titles/pl.json' with {type:'json'};
+import es from '../public/commerce/titles/es.json' with {type:'json'};
+import it from '../public/commerce/titles/it.json' with {type:'json'};
+import fr from '../public/commerce/titles/fr.json' with {type:'json'};
+import pt from '../public/commerce/titles/pt.json' with {type:'json'};
+import ro from '../public/commerce/titles/ro.json' with {type:'json'};
+import sv from '../public/commerce/titles/sv.json' with {type:'json'};
+export const titleTranslations = {zh,de,pl,es,it,fr,pt,ro,sv};

@@ -1,9 +1,11 @@
+import {experienceRoute} from './experience.js';
 import {catalogueRoute,upstream,CATEGORIES,LANGS} from './catalog.js';
 import {homepageRoute} from './home.js';
 import {LEGACY_PRODUCTS} from './content.js';
-export const RELEASE='2026-11-07-joyagoo-content-parity-v2';
+export const RELEASE='2026-11-12-joyagoo-product-v1';
 export const SITEMAP_INDEX='<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://joyagoochina.org/editorial-sitemap.xml</loc></sitemap><sitemap><loc>https://joyagoochina.org/catalog-sitemap.xml</loc></sitemap></sitemapindex>';
 export async function commerceRoutes(request,env,ctx) {
+ const experience=await experienceRoute(request);if(experience)return experience;
  const url=new URL(request.url),locale=url.pathname.match(/^\/(zh|de|pl|es|it|fr|pt|ro|sv)(?=\/|$)/)?.[0]||'',bare=url.pathname.slice(locale.length)||'/';
  if(locale&&url.pathname===locale)return Response.redirect(url.origin+locale+'/'+url.search,301);
  if(bare==='/sitemap.xml')return new Response(SITEMAP_INDEX,{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=300'}});
