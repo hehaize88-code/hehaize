@@ -17,7 +17,7 @@ const aliases = {
 };
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 export function translateProductTitle(raw, lang, glossaries, fullTitles = {}) {
-  raw=String(raw||'').replace(/&amp;/gi,'&').replace(/#[^\s#]+/g,'').replace(/\s+/g,' ').trim();
+  raw=String(raw||'').replace(/&amp;/gi,'&').replace(/#[^\s#]+/g,'').replace(/\s+/g,' ').replace(/Ture Religion/gi,'True Religion').replace(/\bpans\b/gi,'pants').trim();
   const exact=fullTitles[lang]?.[raw.toLowerCase()];
   if(exact)return exact;
   const glossary = glossaries[lang];

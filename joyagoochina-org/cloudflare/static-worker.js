@@ -17,7 +17,7 @@ const edgeHtmlCacheControl =
 const htmlCacheVersion = "2026-11-12-joyagoo-mobile-images-v2";
 // Load the reading controls from MobileReading after React has hydrated.
 // Injecting their script here could mutate article markup before hydration.
-const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261107">';
+const mobileInnerStyle = '<link rel="stylesheet" href="/mobile-inner.css?v=20261107"><link rel="stylesheet" href="/mobile-compact.css?v=20261112-v4">';
 const outboundEndpoint = "/api/outbound-click";
 const maxOutboundPayloadBytes = 4096;
 
