@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import {useEffect,useRef} from "react";
+import {bindHeaderMenus} from "../../public/assets/header-menus.mjs";
 import { SiteImage } from "./site-image";
 import {localeList} from "../../public/assets/locale-core.mjs";
 import {pageLanguages,pageLanguageHref} from "../../public/assets/page-languages.mjs";
@@ -48,6 +50,8 @@ export function SiteHeader({
   routePath?: string;
   englishOnly?: boolean;
 }) {
+  const headerRef = useRef<HTMLElement>(null);
+  useEffect(() => bindHeaderMenus(headerRef.current), []);
   const language = locale === "UK" ? "en-gb" : locale === "DE" ? "de" : locale === "PL" ? "pl" : locale === "BR" ? "pt-br" : "en";
   const current = languageOptions.find((option) => option.language === language) || languageOptions[0];
   const prefix = language === "en" ? "" : `/${language}`;
@@ -65,7 +69,7 @@ export function SiteHeader({
         : labels;
 
   return (
-    <header className="site-header">
+    <header className="site-header" ref={headerRef}>
       <Link className="brand" href={localHref("/")} aria-label="UUFinds Sheet home">
         <SiteImage
           className="brand-logo"
@@ -86,7 +90,7 @@ export function SiteHeader({
         <Link href={localHref("/faq/")}>{currentLabels.faq}</Link>
       </nav>
       <div className="header-actions">
-        <details className="mobile-nav-menu">
+        <details className="mobile-nav-menu" name="site-header-menu">
           <summary aria-label={currentLabels.menu ?? "Menu"}>{currentLabels.menu ?? "Menu"}</summary>
           <div className="mobile-nav-panel">
             <a href={localHref("/catalog/")}>{currentLabels.finds}</a>
@@ -97,7 +101,7 @@ export function SiteHeader({
             <Link href={localHref("/faq/")}>{currentLabels.faq}</Link>
           </div>
         </details>
-        <details className="language-menu">
+        <details className="language-menu" name="site-header-menu">
           <summary aria-label={currentLabels.language}>
             <span aria-hidden="true">◎</span> {current.code} <b aria-hidden="true">⌄</b>
           </summary>

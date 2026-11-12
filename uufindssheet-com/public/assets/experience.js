@@ -1,4 +1,7 @@
 import {loadDictionary, localeCodes, htmlLocale} from './locale-core.mjs';
+import {bindHeaderMenus} from './header-menus.mjs';
+
+bindHeaderMenus(document.querySelector('.catalog-header'));
 
 const pathLocale = document.documentElement.lang.toLowerCase().replace('zh-cn','zh');
 const locale = localeCodes.includes(pathLocale) ? pathLocale : 'en';
