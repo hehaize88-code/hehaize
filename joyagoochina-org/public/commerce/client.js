@@ -154,7 +154,7 @@ function initDetail(){
    const count=styleGroup>=0?options.groups[styleGroup].values.length:0;styleStatus.textContent=count?String(count):'';
    grid.replaceChildren();groups.replaceChildren();selected.clear();
    if(styleGroup>=0){
-    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+optionLabel(value.label))}" title="${esc(value.label)}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image,160))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(optionLabel(value.label))}</span></button>`).join('');
+    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+optionLabel(value.label))}" title="${esc(optionLabel(value.label))}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image,160))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(optionLabel(value.label))}</span></button>`).join('');
     grid.querySelectorAll('[data-style]').forEach(button=>button.addEventListener('click',()=>chooseStyle(button.dataset.style)));
    }
    options.groups.forEach((group,index)=>{
