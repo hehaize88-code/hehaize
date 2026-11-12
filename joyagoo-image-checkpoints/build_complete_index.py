@@ -43,6 +43,7 @@ def get(url,timeout=25,retries=2):
     try:delay=max(0,parsedate_to_datetime(retry).timestamp()-time.time())
     except Exception:delay=0
    if e.code==429:
+    print('RATE_LIMIT',host,'retry_after',delay,'cdn_limit',cdn_limit,flush=True)
     delay=max(delay,30)
     with lock:host_deadlines[host]=max(host_deadlines.get(host,0),time.time()+delay)
     if cdn:
@@ -134,10 +135,12 @@ def write_checkpoint(records,batch):
 def main():
  global stage
  stage='bootstrap';manifest,galleries,products=bootstrap();print('BASE',len(galleries),len(products),flush=True)
- stage='options+images';options=[];styles=[];unique=set();desc={};ready=[];batch=0;submitted=0
+ stage='options+images';options=[];styles=[];unique=set();desc={};ready=[];batch=0;submitted=0;last_status=time.time()
  with concurrent.futures.ThreadPoolExecutor(max_workers=6) as options_pool,concurrent.futures.ThreadPoolExecutor(max_workers=48) as image_pool:
   option_jobs={options_pool.submit(styles_for,p) for p in products};image_jobs={}
   while option_jobs or image_jobs:
+   if time.time()-last_status>=30:
+    print('STATUS','options',len(options),'styles',len(styles),'images',len(desc),'pending',len(image_jobs),'cdn_limit',cdn_limit,'active',cdn_active,'failures',stats['failed_images'],flush=True);last_status=time.time()
    done,_=concurrent.futures.wait(option_jobs|image_jobs.keys(),timeout=2,return_when=concurrent.futures.FIRST_COMPLETED)
    for f in done:
     if f in option_jobs:
