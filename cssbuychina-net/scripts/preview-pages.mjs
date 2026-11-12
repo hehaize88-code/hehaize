@@ -1,0 +1,10 @@
+import http from 'node:http';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import worker from '../_worker.js';
+const root=path.resolve(import.meta.dirname,'..');
+const mime={'.js':'text/javascript','.mjs':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.woff2':'font/woff2','.xml':'application/xml'};
+const env={ASSETS:{async fetch(request){try{const pathname=decodeURIComponent(new URL(request.url).pathname);const file=path.resolve(root,'.'+pathname);if(!file.startsWith(root+'/'))return new Response(null,{status:403});return new Response(await fs.readFile(file),{headers:{'content-type':mime[path.extname(file)]||'text/plain'}});}catch{return new Response('Not found',{status:404});}}}};
+const ctx={waitUntil(p){p.catch(console.error)},passThroughOnException(){}};
+const i=process.argv.indexOf('--port');const port=Number(process.env.PORT||(i>=0?process.argv[i+1]:3000));
+http.createServer(async(req,res)=>{try{const r=await worker.fetch(new Request('http://'+req.headers.host+req.url,{method:req.method}),env,ctx);res.writeHead(r.status,Object.fromEntries(r.headers));res.end(Buffer.from(await r.arrayBuffer()));}catch(e){console.error(e);res.writeHead(500);res.end('Preview error');}}).listen(port,'0.0.0.0',()=>console.log('Pages preview listening on '+port));

@@ -1,12 +1,12 @@
 {
-  "_LanguageSwitcher-BX9j2DJ0.js": {
-    "file": "assets/LanguageSwitcher-BX9j2DJ0.js",
+  "_LanguageSwitcher-d6xfMA35.js": {
+    "file": "assets/LanguageSwitcher-d6xfMA35.js",
     "name": "LanguageSwitcher",
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "virtual:vinext-app-browser-entry",
-      "_i18n-D-HAF8qh.js",
-      "_framework-DjPHiq1u.js"
+      "_framework-DjPHiq1u.js",
+      "_locale-core-Rba-qHr1.js"
     ]
   },
   "_framework-DjPHiq1u.js": {
@@ -16,9 +16,13 @@
       "_rolldown-runtime-S-ySWqyJ.js"
     ]
   },
-  "_i18n-D-HAF8qh.js": {
-    "file": "assets/i18n-D-HAF8qh.js",
+  "_i18n-DpZR1QpX.js": {
+    "file": "assets/i18n-DpZR1QpX.js",
     "name": "i18n"
+  },
+  "_locale-core-Rba-qHr1.js": {
+    "file": "assets/locale-core-Rba-qHr1.js",
+    "name": "locale-core"
   },
   "_rolldown-runtime-S-ySWqyJ.js": {
     "file": "assets/rolldown-runtime-S-ySWqyJ.js",
@@ -35,18 +39,19 @@
     ]
   },
   "app/components/LiveFinds.tsx": {
-    "file": "assets/LiveFinds-U5suIjjz.js",
+    "file": "assets/LiveFinds-BtZTz3gZ.js",
     "name": "LiveFinds",
     "src": "app/components/LiveFinds.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
-      "_i18n-D-HAF8qh.js",
-      "_framework-DjPHiq1u.js"
+      "_i18n-DpZR1QpX.js",
+      "_framework-DjPHiq1u.js",
+      "_locale-core-Rba-qHr1.js"
     ]
   },
   "app/components/ParcelWeightCalculator.tsx": {
-    "file": "assets/ParcelWeightCalculator-DpbjRwuU.js",
+    "file": "assets/ParcelWeightCalculator-B_dBv1Px.js",
     "name": "ParcelWeightCalculator",
     "src": "app/components/ParcelWeightCalculator.tsx",
     "isDynamicEntry": true,
@@ -57,20 +62,20 @@
     ]
   },
   "app/products/page.tsx": {
-    "file": "assets/page-yBpOfuyb.js",
+    "file": "assets/page-CdKimR68.js",
     "name": "page",
     "src": "app/products/page.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "app/components/AnalyticsEvents.tsx",
-      "_LanguageSwitcher-BX9j2DJ0.js",
-      "_i18n-D-HAF8qh.js",
+      "_LanguageSwitcher-d6xfMA35.js",
+      "_i18n-DpZR1QpX.js",
       "_framework-DjPHiq1u.js"
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-CqYJihaH.js",
+    "file": "assets/layout-segment-context-BrXrEk00.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -81,7 +86,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/script.js": {
-    "file": "assets/script-C-o1ODDo.js",
+    "file": "assets/script-BNq3GXuV.js",
     "name": "script",
     "src": "node_modules/vinext/dist/shims/script.js",
     "isDynamicEntry": true,
@@ -91,7 +96,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-7PZAjJ8f.js",
+    "file": "assets/index-D_9J1Mvh.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -107,7 +112,7 @@
       "node_modules/vinext/dist/shims/script.js",
       "app/products/page.tsx",
       "app/components/AnalyticsEvents.tsx",
-      "_LanguageSwitcher-BX9j2DJ0.js"
+      "_LanguageSwitcher-d6xfMA35.js"
     ]
   }
 }

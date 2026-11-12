@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import worker from '../_worker.js';
 const inventory=JSON.parse(await readFile(new URL('./content-inventory.json',import.meta.url),'utf8'));
-const env={ASSETS:{fetch:async()=>new Response('Not found',{status:404})}};
+const env={ASSETS:{fetch:async request=>{try{return new Response(await readFile(new URL('..'+new URL(request.url).pathname,import.meta.url)))}catch{return new Response('Not found',{status:404})}}}};
 const ctx={waitUntil(){},passThroughOnException(){}};
 const get=path=>worker.fetch(new Request(`https://cssbuychina.net${path}`),env,ctx);
 test('all articles and guides have complete localized routes and matching metadata',async()=>{

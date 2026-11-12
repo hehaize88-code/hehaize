@@ -50,3 +50,26 @@ The article library now has 28 articles in each of EN, PT-BR, DE and ES. Three c
 New content is in `app/articles/november-article-data.json`; targeted revisions are in `november-updates.json`. The existing dictionaries contain every new paragraph and interface label. Mobile articles retain full text with an optional contents list and shorter spacing. Responsive table labels now use the actual translated column headings instead of fixed English category labels.
 
 Research uses current CSSBuy public buying/packing guidance, the shipping estimator, return/refund help and GOV.UK import guidance. Hypothetical weight and cost examples are labeled; no live tariff, universal insurance premium, guaranteed delivery time or compensation promise is asserted. The existing hostname-aware GA4 ID and event instrumentation are retained.
+
+## November 12, 2026 product experience
+
+Catalogue pages now have 24 language choices (including the existing Brazilian
+Portuguese paths), localized product names, a 30-currency selector with dated
+Frankfurter reference rates, and ten other buying platforms tied to the original
+Weidian ID. Actual Weidian option data supplies the style grid, size controls,
+source CNY price and SKU; the clipboard includes the original URL and selected
+option rather than inventing unsupported SKU URL parameters. Seller photos and
+catalogue reference photos remain separate. Unclassified photos are not claimed
+to be verified warehouse QC.
+
+The long-form editorial library remains in its four existing complete editions
+(EN, PT-BR, DE, ES). Catalogue navigation marks English editorial destinations
+for the additional languages. No absent translated article is indexed. The main
+sitemap links directly to 24 catalogue shards and the existing editorial sitemap,
+without nested sitemap indexes. Existing analytical measurement is preserved.
+
+The preview server runs the actual packaged Pages worker (`npm run dev`); the
+original Vinext development server remains available as `npm run dev:app`.
+Run `npm run test:release` and `node --test tests/product-experience.test.mjs`
+after packaging. Catalogue dictionaries are static assets; no new database,
+translation subscription or private API credential is required.

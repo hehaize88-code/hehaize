@@ -1,20 +1,24 @@
+import {experienceRoute} from '../commerce/experience.js';
+import {catalogueDictionary,localizeCatalogueHtml} from '../commerce/locale-support.js';
+import {translateProductTitle} from '../public/commerce/product-title.js';
+import {productGlossaries} from '../public/commerce/product-glossaries.js';
 import applicationWorker from "../dist/server/index.js";
-import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath} from '../commerce/catalog.js';
+import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath, nav, footer} from '../commerce/catalog.js';
 import {products} from '../app/site-data.ts';
 const legacyProducts = new Map(products.map(p=>['/product/'+p.id,p.storeUrl]));
 const catalogAssets = new Set(['/catalog.js','/catalog.css','/mobile-inner.css','/catalog-image-index.json','/editorial-sitemap.xml']);
-const RELEASE = '2026-10-16-cssbuy-multilingual-seo';
+const RELEASE = '2026-11-12-product-experience';
 function catalogAnalytics(response, request) {
  if(request.method==='HEAD')return new Response(null,{status:response.status,headers:response.headers});
  if(!response.headers.get('content-type')?.includes('text/html'))return response;
  return response.text().then(html=>new Response(html.replace('</head>', `<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-QY8MM7VZV2');</script></head>`),{status:response.status,headers:response.headers}));
 }
-async function catalogSitemap() {
+async function catalogSitemap(locale) {
  try {
   const xml=await upstream('/sitemap.xml');
   const paths=[...new Set([...xml.matchAll(/<loc>https:\/\/(?:www\.)?cnbuycha\.com([^<]+)<\/loc>/g)].map(m=>m[1]).filter(p=>/^\/[a-z0-9-]+\/\d+\.html$/i.test(p)||CATEGORIES.some(c=>p==='/'+c+'/')))];
   if(!paths.length)throw Error('Empty catalogue sitemap');
-  const entries=LANGS.flatMap(lang=>paths.map(p=>'<url><loc>https://cssbuychina.net'+localPath(p,lang)+'</loc></url>')).join('');
+  const entries=[locale].flatMap(lang=>paths.map(p=>'<url><loc>https://cssbuychina.net'+localPath(p,lang)+'</loc></url>')).join('');
   return new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+entries+'</urlset>',{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=300, s-maxage=600'}});
  }catch{return new Response('Sitemap temporarily unavailable',{status:503,headers:{'retry-after':'60'}})}
 }
@@ -34,7 +38,7 @@ const staticFiles = new Set([
 ]);
 
 function isStaticAsset(pathname) {
-  return pathname.startsWith("/assets/") || staticFiles.has(pathname) || catalogAssets.has(pathname);
+  return pathname.startsWith("/commerce/") || pathname.startsWith("/assets/") || staticFiles.has(pathname) || catalogAssets.has(pathname);
 }
 
 function languageForPath(pathname) {
@@ -74,8 +78,10 @@ const pagesWorker = {
       return Response.redirect(url.toString(), 301);
     }
 
-    if(url.pathname==='/catalog-sitemap.xml')return catalogSitemap();
-    const locale=url.pathname.match(/^\/(pt-br|de|es)(?=\/|$)/)?.[0]||'';
+    const experience=await experienceRoute(request);if(experience)return experience;
+    if(url.pathname==='/catalog-sitemap.xml')return catalogSitemapIndex();
+    if(/^\/catalog-sitemap-([a-z-]+)\.xml$/.test(url.pathname)){const l=url.pathname.match(/^\/catalog-sitemap-([a-z-]+)\.xml$/)[1];if(LANGS.includes(l))return catalogSitemap(l);return new Response('Not found',{status:404});}
+    const locale=url.pathname.match(new RegExp('^/('+LANGS.filter(l=>l!=='en').join('|')+')(?=/|$)'))?.[0]||'';
     const bare=url.pathname.slice(locale.length).replace(/\/$/,'')||'/';
     let target;
     if(['/products','/finds','/spreadsheet','/AllProducts','/search.html'].includes(bare))target=locale+'/catalog/';
@@ -95,8 +101,14 @@ const pagesWorker = {
       }
     }
 
+    if(locale&&!['/pt-br','/de','/es'].includes(locale)) {
+      if(bare==='/')return Response.redirect(url.origin+locale+'/catalog/'+url.search,308);
+      // Existing long-form editions are explicitly identified; never present an
+      // English article under a different html lang or claim an absent translation.
+      const to=new URL(bare,url.origin);to.search=url.search;to.searchParams.set('reading_lang','en');return Response.redirect(to.href,302);
+    }
     const response = await applicationWorker.fetch(request, env, ctx);
-    const localized=await localizeDocumentLanguage(response, url.pathname);
+    const localized=await enhanceDocument(await localizeDocumentLanguage(response, url.pathname),url,env);
     const headers=new Headers(localized.headers);headers.set('x-cssbuy-release',RELEASE);
     if(headers.get('content-type')?.includes('text/html'))headers.set('cache-control','public, max-age=0, s-maxage=60');
     return new Response(localized.body,{status:localized.status,headers});
@@ -104,3 +116,19 @@ const pagesWorker = {
 };
 
 export default pagesWorker;
+
+function catalogSitemapIndex(){return new Response('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+LANGS.map(l=>'<sitemap><loc>https://cssbuychina.net/catalog-sitemap-'+l+'.xml</loc></sitemap>').join('')+'</sitemapindex>',{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=300'}});}
+async function enhanceDocument(response,url,env){
+ if(!response.headers.get('content-type')?.includes('text/html')||response.status!==200)return response;
+ const locale=url.pathname.match(/^\/(pt-br|de|es)(?=\/|$)/)?.[1]||'en';
+ const path=url.pathname.replace(/^\/(pt-br|de|es)(?=\/|$)/,'')||'/';
+ const dictionary=await catalogueDictionary(locale,env);let html=await response.text();
+ let header=nav(locale,path,url.search);
+ if(path!=='/')header=header.replace(/href="\/(fr|it|nl|pl|ro|sv|zh|da|fi|el|cs|hu|bg|sk|hr|ja|ko|vi|th|id)([^"?]*)[^"]*" hreflang=/g,(_,lang)=>`href="/${lang}/catalog/" title="${dictionary['Products']||'Products'}" hreflang=`);
+ header=localizeCatalogueHtml(header,dictionary,locale);
+ html=html.replace(/<header class="unified-header">[\s\S]*?<\/header>/,header);
+ html=html.replace(/(<h2>)([^<>]+)(<\/h2><strong>)/g,(_,a,title,b)=>a+(dictionary[title]||translateProductTitle(title,locale,productGlossaries))+b);
+ html=html.replace(/<strong>\$([\d.]+) <small>USD<\/small><\/strong>/g,'<strong><span data-price-amount="$1" data-price-currency="USD">$$$1</span> <small data-currency-code>USD</small></strong>');
+ html=html.replace('</head>','<link rel="stylesheet" href="/commerce/product.css?v=20261112"><script type="module" src="/commerce/client.js?v=20261112"></script></head>');
+ const headers=new Headers(response.headers);headers.delete('content-length');headers.delete('content-encoding');return new Response(html,{status:response.status,headers});
+}

@@ -10,7 +10,7 @@ const module={exports:{}};
 runInNewContext(result.outputFiles[0].text,{module,exports:module.exports});
 const {articles,guides}=module.exports;
 const newSlugs=['cssbuy-returns-refunds-after-qc','find-original-product-link-cssbuy','cssbuy-shipping-to-brazil'];
-const env={ASSETS:{fetch:async()=>new Response('Not found',{status:404})}};
+const env={ASSETS:{fetch:async request=>{try{return new Response(await readFile(new URL('..'+new URL(request.url).pathname,import.meta.url)))}catch{return new Response('Not found',{status:404})}}}};
 const ctx={waitUntil(){},passThroughOnException(){}};
 const get=path=>worker.fetch(new Request(`https://cssbuychina.net${path}`),env,ctx);
 function* strings(value,key='') {

@@ -1,16 +1,19 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { localeOptions, SiteLocale } from "../i18n";
+import { SiteLocale } from "../i18n";
 
+import {localeList} from '../../public/assets/locale-core.mjs';
+const localeOptions=localeList.map(([code,label,short]:string[])=>({code,label,short,hrefLang:code==='pt-br'?'pt-BR':code}));
 const localizedSections = new Set(["/", "/products", "/categories", "/how-it-works", "/guides", "/articles", "/faq"]);
 
 function removeLocale(pathname: string) {
   return pathname.replace(/^\/(pt-br|de|es)(?=\/|$)/, "") || "/";
 }
 
-function localeHref(pathname: string, target: SiteLocale) {
+function localeHref(pathname: string, target: string) {
   const cleanPath = removeLocale(pathname);
+  if(cleanPath!=='/' && !['en','de','es','pt-br'].includes(target)) return `/${target}/catalog/`;
   const safePath = localizedSections.has(cleanPath) || /^\/(articles|guides)\/[^/]+$/.test(cleanPath) ? cleanPath : "/";
   if (target === "en") return safePath;
   return safePath === "/" ? `/${target}` : `/${target}${safePath}`;
