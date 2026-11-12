@@ -1,3 +1,4 @@
+import { MobileSection } from "./mobile-section";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { policyPages, type PolicyPageData } from "../policy-data";
@@ -49,11 +50,10 @@ export function TrustPage({ slug }: { slug: PolicyPageData["slug"] }) {
         {page.sections.map((section, index) => (
           <section key={section.heading}>
             <span>{String(index + 1).padStart(2, "0")}</span>
-            <div>
-              <h2>{section.heading}</h2>
+            <MobileSection first={index === 0} group="policy" title={<h2>{section.heading}</h2>}>
               {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               {section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
-            </div>
+            </MobileSection>
           </section>
         ))}
         {page.contactEmail && (

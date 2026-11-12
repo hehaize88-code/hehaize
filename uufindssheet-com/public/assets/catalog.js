@@ -30,14 +30,4 @@
  document.addEventListener('error',event=>recoverCardImage(event.target),true);
  document.querySelectorAll('.catalog-card img,.product-card img').forEach(img=>{if(img.complete&&!img.naturalWidth)recoverCardImage(img);});
  const home=document.getElementById('uufinds-live-products');if(home)fetch('/api/catalog').then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{if(data.products?.length)home.innerHTML=data.products.slice(0,4).map(p=>`<article class="catalog-card"><a href="${base}${esc(p.path)}"><img src="${esc(p.image)}" alt="${esc(productTitle(p.title))}" width="400" height="400" loading="lazy"><h3>${esc(productTitle(p.title))}</h3><div class="card-meta"><strong data-price-amount="${esc(p.price)}" data-price-currency="USD">$${Number(p.price).toFixed(2)}</strong><span><span data-currency-code>USD</span> · ↗</span></div></a></article>`).join('')}).catch(()=>{});
- function compactGrid(grid){
- if(!matchMedia('(max-width:680px)').matches||grid.children.length<=12)return;
- grid.nextElementSibling?.classList.contains('catalog-more')&&grid.nextElementSibling.remove();
- let visible=12;const children=[...grid.children];
- const button=document.createElement('button');button.type='button';button.className='catalog-more';
- const label=tr('Show more products');
- const update=()=>{children.forEach((card,i)=>card.hidden=i>=visible);button.textContent=label+' ('+Math.max(0,children.length-visible)+')';if(visible>=children.length)button.remove();};
- button.addEventListener('click',()=>{visible+=12;update();});grid.after(button);update();
- }
- document.querySelectorAll('.catalog-main>.catalog-grid').forEach(compactGrid);
 })();

@@ -1,0 +1,109 @@
+/* Mobile reading overview. No fixed-height clipping; complete copy remains available. */
+.mobile-section { min-width: 0; }
+.mobile-section > summary { list-style: none; }
+.mobile-section > summary::-webkit-details-marker { display: none; }
+.mobile-section-icon { display: none; }
+.mobile-catalog-pagination { display: none; }
+@media (min-width: 681px) {
+  .mobile-section > summary { pointer-events: none; }
+}
+@media (max-width: 680px) {
+  .site-header { height: auto; min-height: 64px; padding: 8px 12px; }
+  .site-header .header-actions { flex-wrap: wrap; justify-content: flex-end; gap: 5px; min-width: 0; }
+  .site-header .brand-logo { width: 96px; }
+  .site-header :is(.language-menu,.mobile-nav-menu) > summary,
+  .site-header .header-currency select,
+  .site-header .seo-guide-button { min-height: 36px; height: auto; }
+  .site-header .header-currency select { width: 60px; }
+  .site-header .seo-guide-button { font-size: 10px; padding: 0 6px; }
+  .site-header .language-panel { right: 0; min-width: min(285px,calc(100vw - 24px)); max-width: calc(100vw - 24px); }
+  main :is(.hub-hero,.guide-hero,.trust-page-hero,.page-hero) { padding: 22px 16px 18px; }
+  main :is(.hub-hero,.guide-hero,.trust-page-hero,.page-hero) h1 { font-size: clamp(28px,8vw,36px); line-height: 1.12; letter-spacing: -.035em; overflow-wrap: anywhere; }
+  main :is(.hub-hero,.guide-hero,.trust-page-hero,.page-hero) > p:not(.eyebrow) { font-size: 15px; line-height: 1.5; margin-top: 12px; }
+  main :is(.hub-content,.guide-layout,.trust-page-body) { padding-left: 16px; padding-right: 16px; }
+  main .guide-layout { gap: 16px; padding-top: 16px; padding-bottom: 24px; }
+  main.guide-page .guide-body > p.lead { font-size: 15px; line-height: 1.55; margin: 0 0 12px; }
+  main.guide-page .guide-body > section { padding: 0; scroll-margin-top: 90px; }
+  main.guide-page .guide-body > section > .section-number { display: none; }
+  main:is(.guide-page,.trust-page,.faq-page) .mobile-section > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; padding: 14px 0; cursor: pointer; }
+  main:is(.guide-page,.trust-page,.faq-page) .mobile-section > summary h2 { margin: 0; font-size: 18px; line-height: 1.35; letter-spacing: -.02em; }
+  .mobile-section-icon { display: inline-flex; flex-shrink: 0; width: 24px; height: 24px; align-items: center; justify-content: center; border: 1px solid #bfc4c8; border-radius: 50%; font: 20px/1 Arial,sans-serif; color: var(--blue); }
+  .mobile-section[open] > summary .mobile-section-icon { transform: rotate(45deg); }
+  .mobile-section > summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+  main:is(.guide-page,.trust-page,.faq-page) .mobile-section-body { padding: 0 0 16px; min-width: 0; }
+  main:is(.guide-page,.trust-page,.faq-page) .mobile-section-body > p { font-size: 15px; line-height: 1.6; margin: 10px 0; }
+  main:is(.guide-page,.trust-page,.faq-page) .mobile-section-body ul { margin: 12px 0 0; }
+  main:is(.guide-page,.trust-page,.faq-page) .mobile-section-body li { font-size: 15px; line-height: 1.5; padding-top: 9px; padding-bottom: 9px; }
+  main.trust-page .trust-page-body > section { grid-template-columns: 26px minmax(0,1fr); gap: 10px; padding: 0; }
+  main.trust-page .trust-page-body > section > span { margin-top: 14px; width: 26px; height: 26px; font-size: 11px; }
+  main.trust-page .trust-page-body .mobile-section-body p { font-size: 15px; line-height: 1.55; }
+  main .source-note { padding: 12px; margin-top: 18px; }
+  main .source-note p { font-size: 13px; line-height: 1.5; }
+  main .official-fact-strip article { padding: 10px; }
+  main .official-fact-strip p { font-size: 13px; line-height: 1.45; }
+  main .hub-content .official-fact-strip { margin-bottom: 18px; }
+  main.faq-page .faq-directory { gap: 16px; }
+  main.faq-page .faq-group h2 { font-size: 22px; margin: 8px 0 12px; }
+  main.faq-page .faq-list summary { font-size: 14px; line-height: 1.45; min-height: 48px; padding: 10px 0; }
+  main.faq-page .faq-list details p { font-size: 14px; line-height: 1.55; }
+  main.faq-page .faq-group { padding-bottom: 16px; }
+  main .how-page-content :is(.workflow-grid article,.evidence-grid article) { padding: 12px; min-height: 0; }
+  main .how-page-content :is(.workflow-grid,.evidence-grid) p { font-size: 14px; line-height: 1.5; }
+  main .how-page-content .method-note { padding: 16px; }
+  main .how-page-content .method-note h2 { font-size: 24px; }
+  .seo-home .seo-hero { padding: 22px 16px 16px; gap: 18px; }
+  .seo-home .seo-hero h1 { font-size: 36px; letter-spacing: -1.6px; }
+  .seo-home .seo-intro { font-size: 15px; line-height: 1.5; }
+  .seo-home .seo-live-grid { gap: 10px; }
+  .seo-home .seo-live-card > img { max-height: 150px; }
+  .seo-home :is(.seo-category-strip,.seo-workflow,.seo-articles) { padding: 18px 16px; }
+  .seo-home .seo-article-grid { gap: 8px; }
+  .seo-home .seo-article-grid > a { padding: 12px; }
+  .seo-home .seo-section-intro > p:last-child { font-size: 14px; line-height: 1.5; }
+  .seo-home .seo-steps { gap: 10px; }
+  main > footer { padding: 18px 16px; }
+  .footer-links a { min-height: 36px; display: inline-flex; align-items: center; }
+
+  /* Live lists: paginate the 60-item source page into phone-sized groups. */
+  .catalog-header { grid-template-columns: 1fr; padding: 10px 12px; gap: 8px; min-height: 0; }
+  .catalog-header .catalog-brand { grid-column: 1; grid-row: 1; }
+  .catalog-header .catalog-brand .catalog-wordmark { width: 112px; }
+  .catalog-header .catalog-actions { grid-column: 1; grid-row: 2; justify-self: stretch; justify-content: space-between; gap: 8px; }
+  .catalog-header .catalog-primary-nav { grid-row: 3; grid-column: 1; display: flex; justify-content: flex-start; gap: 16px; overflow-x: auto; scrollbar-width: thin; }
+  .catalog-header .catalog-primary-nav a { flex-shrink: 0; min-height: 38px; white-space: nowrap; font-size: 12px; }
+  .catalog-main { padding: 18px 12px 24px; }
+  .catalog-main > h1 { margin: 10px 0 16px; font-size: 28px; }
+  .catalog-main .category-filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; padding-bottom: 5px; }
+  .catalog-main .category-filters a { flex-shrink: 0; min-height: 38px; display: flex; align-items: center; }
+  .catalog-main .sort-row { margin: 14px 0; flex-wrap: wrap; }
+  .catalog-main .catalog-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+  .catalog-main .catalog-card :is(h2,h3) { margin: 10px; font-size: 14px; line-height: 1.35; min-height: 0; }
+  .catalog-main .card-meta { margin: 8px 10px 12px; gap: 4px; }
+  .catalog-main .card-meta strong { font-size: 17px; }
+  .catalog-main .catalog-grid[data-mobile-paged] > [data-mobile-visible="false"] { display: none; }
+  .mobile-catalog-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 18px 0; }
+  .mobile-catalog-pagination button { min-height: 44px; border: 1px solid #bac5c0; border-radius: 6px; background: #fff; padding: 8px 14px; font-size: 14px; }
+  .mobile-catalog-pagination button:disabled { opacity: .4; }
+  .mobile-catalog-pagination span { font-size: 13px; }
+  .catalog-main .catalog-pagination { margin: 18px 0; flex-wrap: wrap; gap: 12px; }
+  .catalog-main .catalog-detail { grid-template-columns: 1fr; gap: 18px; margin: 0 0 24px; }
+  .catalog-main .gallery-main { aspect-ratio: auto; }
+  .catalog-main .gallery-main > img { height: min(72vw,320px); max-height: 320px; object-fit: contain; }
+  .catalog-main .gallery-thumbs { display: flex; overflow-x: auto; gap: 6px; padding-bottom: 5px; }
+  .catalog-main .gallery-thumbs button { flex: 0 0 54px; }
+  .catalog-main .catalog-product-info h1 { font-size: 26px; line-height: 1.2; }
+  .catalog-main .detail-price { font-size: 30px; margin-top: 12px!important; }
+  .catalog-main .style-grid { max-height: 184px; grid-template-columns: repeat(auto-fill,minmax(58px,1fr)); gap: 6px; }
+  .catalog-main .source-photo-grid { display: flex; overflow-x: auto; gap: 8px; padding-bottom: 8px; scroll-snap-type: x proximity; }
+  .catalog-main .source-photo-grid .photo-tile { flex: 0 0 94px; scroll-snap-align: start; }
+  .catalog-main :is(.source-photos,.product-qc) { padding: 18px 0; }
+  .catalog-main .product-action-row { grid-template-columns: 1fr 1fr; }
+  .catalog-main :is(.agent-picker > summary,.copy-source) { padding: 10px 8px; font-size: 12px; }
+  .catalog-main .image-search-panel { padding: 14px; margin-bottom: 18px; }
+  .catalog-main .image-drop { padding: 14px; }
+  .catalog-footer { padding: 18px 12px; gap: 8px; font-size: 12px; }
+  .catalog-footer p { margin: 0; }
+}
+
+.compact-method > summary { display: none; }
+@media(max-width:680px){.compact-method > summary{display:list-item;cursor:pointer;min-height:44px;padding:10px 0;font-size:15px;font-weight:700}.compact-method .mobile-disclosure-content{padding-top:12px}main.faq-page .faq-group .mobile-section > summary h2{margin:0;font-size:19px}main.faq-page .faq-group + .faq-group{padding-top:12px}main.faq-page .faq-group > .eyebrow{margin-bottom:0}}

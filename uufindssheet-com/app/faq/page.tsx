@@ -1,3 +1,5 @@
+import { MobileDisclosure } from "../components/mobile-disclosure";
+import { MobileSection } from "../components/mobile-section";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter } from "../components/site-footer";
@@ -163,7 +165,7 @@ export default function FAQPage() {
       </section>
 
       <section className="hub-content faq-page-content">
-        <div className="official-fact-strip">
+        <MobileDisclosure className="article-standards-disclosure" title="At a glance"><div className="official-fact-strip">
           <article>
             <span>01</span>
             <div><strong>QC discovery</strong><p>UUFinds publicly describes a finder for available product photos and videos.</p></div>
@@ -176,7 +178,7 @@ export default function FAQPage() {
             <span>03</span>
             <div><strong>Evidence boundary</strong><p>A matched album documents a sample; it does not guarantee a later unit or live listing data.</p></div>
           </article>
-        </div>
+        </div></MobileDisclosure>
 
         <div className="faq-directory">
           <aside aria-label="FAQ topics">
@@ -188,7 +190,7 @@ export default function FAQPage() {
             {faqGroups.map((group, groupIndex) => (
               <section id={group.id} className="faq-group" key={group.id}>
                 <p className="eyebrow">{group.label}</p>
-                <h2>{group.title}</h2>
+                <MobileSection first={groupIndex === 0} group="faq" title={<h2>{group.title}</h2>}>
                 <div className="faq-list">
                   {group.items.map((item, itemIndex) => (
                     <details key={item.question} open={groupIndex === 0 && itemIndex === 0}>
@@ -197,6 +199,7 @@ export default function FAQPage() {
                     </details>
                   ))}
                 </div>
+              </MobileSection>
               </section>
             ))}
           </div>

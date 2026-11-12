@@ -1,3 +1,4 @@
+import { MobileSection } from "../../components/mobile-section";
 import { GuideResources } from "../../components/guide-resources";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -80,7 +81,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             {guide.sections.map((section, index) => (
               <section id={`section-${index + 1}`} key={section.heading}>
                 <p className="section-number">{String(index + 1).padStart(2, "0")}</p>
-                <h2>{section.heading}</h2>
+                  <MobileSection first={index === 0} title={<h2>{section.heading}</h2>}>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 {section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
                 {section.table && (
@@ -96,13 +97,14 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                     </table>
                   </div>
                 )}
-              </section>
+              </MobileSection>
+                </section>
             ))}
             <GuideResources guide={guide} />
             {!guide.hideSourceNote && guide.evidence && (
               <section className="evidence-ledger" aria-labelledby="evidence-ledger-heading">
                 <p className="section-number">SOURCES</p>
-                <h2 id="evidence-ledger-heading">Evidence and source ledger</h2>
+                <MobileSection title={<h2 id="evidence-ledger-heading">Evidence and source ledger</h2>}>
                 <p>Official platform statements, carrier methods and editorial examples are kept separate so that a documented feature is not mistaken for an independent guarantee.</p>
                 <div className="evidence-ledger-grid">
                   {guide.evidence.map((item) => (
@@ -115,7 +117,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                     </article>
                   ))}
                 </div>
-              </section>
+              </MobileSection></section>
             )}
             {!guide.hideSourceNote && <div className="source-note">
               <p className="eyebrow">Primary source notes</p>

@@ -54,3 +54,12 @@ Refresh the index after source catalogue changes with `python scripts/build-imag
 - The browser and indexer share deterministic area-v2 RGB cell means and difference hashes; native cell averages avoid browser/Pillow resize differences. This remains visual similarity, not semantic AI recognition.
 - The browser loads all hashed shards with bounded concurrency and validates every record/count before searching. Interrupted or missing shards cause a retryable error rather than silently searching only part of the index.
 - Geist fonts are served locally with their OFL license to make production builds independent of font-host availability.
+
+## Compact mobile pages — 2026-11-12
+
+- Shared mobile styles cover home, catalogue, product, image search, article archive, guides, FAQ, workflow and policy templates. Desktop layouts retain expanded reading content.
+- Guides, FAQ topics and policies retain complete server-rendered copy in native disclosures. Phone views open one chapter at a time; shorter screens start with chapter headings. Direct section anchors expand their matching chapter. JavaScript-free pages retain their open content.
+- Catalogue source pages retain all 60 items and source pagination. Mobile presentation pages show 12 items at a time, preserve the selected group in `view`, and restore it after returning from a product. Replaces the old cumulative Show more control.
+- Gallery thumbnails and reference photos scroll horizontally; style grids retain bounded scrolling. No product images or source identities are removed.
+- Validation: 162-page production build; 18 existing commerce/navigation tests; browser height audits of all 104 non-redirect editorial routes at 390px, 360px and 320px. Final 320×740 overview maximum: 4.70 screens, zero horizontal overflow. Shorter pages are not padded to reach three screens. Expanded reading naturally increases page length.
+- Browser interactions verified: catalogue items 13–24 (12 visible), article direct anchor `section-7`, switching to `section-2`, and all 12 QC-guide chapters open at desktop width. Example product detail measured 2,742px at 360px width.

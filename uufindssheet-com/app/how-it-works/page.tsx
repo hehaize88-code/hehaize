@@ -1,3 +1,4 @@
+import { MobileDisclosure } from "../components/mobile-disclosure";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "../components/site-header";
@@ -27,11 +28,11 @@ export default function HowItWorksPage() {
         <p>UUFinds publicly describes a QC finder for photos and videos, image recognition, and link handling for Taobao, Weidian, 1688 and shopping agents. Those tools can support research, but the exact live listing still decides the current price, variants and availability.</p>
       </section>
       <section className="hub-content how-page-content">
-        <div className="official-fact-strip" aria-label="Verified UUFinds functions">
+        <MobileDisclosure className="article-standards-disclosure" title="At a glance"><div className="official-fact-strip" aria-label="Verified UUFinds functions">
           <article><span>01</span><div><strong>QC media</strong><p>UUFinds says its QC finder can surface available product photos and videos.</p></div></article>
           <article><span>02</span><div><strong>Supported inputs</strong><p>Its public app information names 1688, Taobao, Weidian and shopping-agent link conversion.</p></div></article>
           <article><span>03</span><div><strong>Platform boundary</strong><p>UUFinds states that it does not sell products directly or indirectly.</p></div></article>
-        </div>
+        </div></MobileDisclosure>
 
         <div className="workflow-grid">
           <article>
@@ -87,12 +88,12 @@ export default function HowItWorksPage() {
           </ol>
         </section>
 
-        <div className="method-note">
+        <MobileDisclosure className="method-note compact-method" title="Research boundary">
           <p className="eyebrow inverse">Research boundary</p>
           <h2>Discovery expands options. QC reduces uncertainty. The live listing confirms current facts.</h2>
           <p>Official claims reviewed: UUFinds QC finder, QC browsing copy, product-detail disclaimer, account pages and public app information. No UUFinds outbound link is included on this site.</p>
           <Link href="/guides/uufinds-spreadsheet-shopping-guide-2026/">Read the complete buying guide →</Link>
-        </div>
+        </MobileDisclosure>
       </section>
       <SiteFooter />
     </main>

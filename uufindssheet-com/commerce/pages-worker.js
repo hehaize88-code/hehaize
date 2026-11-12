@@ -21,7 +21,7 @@ function withGoogleAnalytics(response, request) {
   if (csp) headers.set("content-security-policy", csp.replace("connect-src 'self'", "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com"));
   const htmlResponse = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   // Keep the scoped CSS available after client navigation from a homepage.
-  // Every selector targets an inner-page root; .seo-home never matches.
+  // Shared mobile styles include the homepage and every editorial/catalogue template.
   const mobileStyles = response.status === 200
     ? '<style id="uufinds-mobile-inner">' + MOBILE_INNER_CSS + '</style>'
     : '';
@@ -40,7 +40,7 @@ const ROUTE_LANGUAGES = new Map([
   ["pt-br", "pt-BR"],
 ]);
 const TRACK_PATH = "/__track";
-const HTML_CACHE_VERSION = "2026-11-11-all-photos-v2";
+const HTML_CACHE_VERSION = "2026-11-12-mobile-compact";
 
 function htmlCacheKey(request) {
   const url = new URL(request.url);

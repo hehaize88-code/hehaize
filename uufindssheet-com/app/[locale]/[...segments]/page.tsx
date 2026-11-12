@@ -1,3 +1,4 @@
+import { MobileSection } from "../../components/mobile-section";
 import { GuideResources } from "../../components/guide-resources";
 import { releaseUi } from "../../guides/november-release";
 import type { Metadata } from "next";
@@ -177,11 +178,10 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
           {policy.sections.map((section, index) => (
             <section key={section.heading}>
               <span>{String(index + 1).padStart(2, "0")}</span>
-              <div>
-                <h2>{section.heading}</h2>
+              <MobileSection first={index === 0} group="policy" title={<h2>{section.heading}</h2>}>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 {section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
-              </div>
+              </MobileSection>
             </section>
           ))}
           {policy.contactEmail && <aside className="trust-contact-card"><p className="eyebrow inverse">{localizeText(currentLocale, "Direct contact")}</p><a href={`mailto:${policy.contactEmail}`}>{policy.contactEmail}</a></aside>}
@@ -250,7 +250,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
               {guide.sections.map((section, index) => (
                 <section id={`section-${index + 1}`} key={section.heading}>
                   <p className="section-number">{String(index + 1).padStart(2, "0")}</p>
-                  <h2>{section.heading}</h2>
+                  <MobileSection first={index === 0} title={<h2>{section.heading}</h2>}>
                   {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                   {"points" in section && section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
                   {section.table && <div className="guide-table-wrap"><table>
@@ -258,6 +258,7 @@ export default async function LocalizedRoute({ params }: { params: Promise<{ loc
                     <thead><tr>{section.table.headers.map(header => <th scope="col" key={header}>{header}</th>)}</tr></thead>
                     <tbody>{section.table.rows.map(row => <tr key={row.join("|")}>{row.map((cell, index) => <td data-label={section.table?.headers[index]} key={`${index}-${cell}`}>{cell}</td>)}</tr>)}</tbody>
                   </table></div>}
+                </MobileSection>
                 </section>
               ))}
               <GuideResources guide={guide} locale={currentLocale} />
@@ -549,11 +550,11 @@ function LocalizedHowItWorks({ locale, t }: { locale: Locale; t: (typeof text)[L
         <p>{copy.deck}</p>
       </section>
       <section className="hub-content how-page-content">
-        <div className="official-fact-strip" aria-label={copy.factsLabel}>
+        <MobileDisclosure className="article-standards-disclosure" title={{"en-gb":"At a glance",de:"Auf einen Blick",pl:"W skrócie","pt-br":"Visão geral"}[locale]}><div className="official-fact-strip" aria-label={copy.factsLabel}>
           {copy.facts.map((fact, index) => (
             <article key={fact.title}><span>{String(index + 1).padStart(2, "0")}</span><div><strong>{fact.title}</strong><p>{fact.body}</p></div></article>
           ))}
-        </div>
+        </div></MobileDisclosure>
         <div className="workflow-grid">
           {copy.workflow.map((step, index) => (
             <article key={step.label}>
@@ -580,10 +581,10 @@ function LocalizedHowItWorks({ locale, t }: { locale: Locale; t: (typeof text)[L
             ))}
           </ol>
         </section>
-        <div className="method-note">
+        <MobileDisclosure className="method-note compact-method" title={copy.boundaryLabel}>
           <p className="eyebrow inverse">{copy.boundaryLabel}</p><h2>{copy.boundaryTitle}</h2><p>{copy.boundaryBody}</p>
           <Link href={`/${locale}/guides/uufinds-spreadsheet-shopping-guide-2026/`}>{copy.boundaryLink} →</Link>
-        </div>
+        </MobileDisclosure>
       </section>
       <SiteFooter locale={locale} />
     </main>
@@ -608,17 +609,17 @@ function LocalizedFAQ({ locale, t }: { locale: Locale; t: (typeof text)[Locale] 
         <h1>{copy.title[0]}<br /><em>{copy.title[1]}</em></h1><p>{copy.deck}</p>
       </section>
       <section className="hub-content faq-page-content">
-        <div className="official-fact-strip">
+        <MobileDisclosure className="article-standards-disclosure" title={{"en-gb":"At a glance",de:"Auf einen Blick",pl:"W skrócie","pt-br":"Visão geral"}[locale]}><div className="official-fact-strip">
           {copy.facts.map((fact, index) => (
             <article key={fact.title}><span>{String(index + 1).padStart(2, "0")}</span><div><strong>{fact.title}</strong><p>{fact.body}</p></div></article>
           ))}
-        </div>
+        </div></MobileDisclosure>
         <div className="faq-directory">
           <aside aria-label="FAQ topics"><p className="eyebrow">{copy.jumpLabel}</p>{copy.groups.map((group) => <a href={`#${group.id}`} key={group.id}>{group.label}</a>)}</aside>
           <div className="faq-groups">
             {copy.groups.map((group, groupIndex) => (
               <section id={group.id} className="faq-group" key={group.id}>
-                <p className="eyebrow">{group.label}</p><h2>{group.title}</h2>
+                <p className="eyebrow">{group.label}</p><MobileSection first={groupIndex === 0} group="faq" title={<h2>{group.title}</h2>}>
                 <div className="faq-list">
                   {group.items.map((item, itemIndex) => (
                     <details key={item.question} open={groupIndex === 0 && itemIndex === 0}>
@@ -626,7 +627,8 @@ function LocalizedFAQ({ locale, t }: { locale: Locale; t: (typeof text)[Locale] 
                     </details>
                   ))}
                 </div>
-              </section>
+              </MobileSection>
+                </section>
             ))}
           </div>
         </div>

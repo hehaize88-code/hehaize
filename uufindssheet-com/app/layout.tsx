@@ -3,6 +3,7 @@ import { ClickTracker } from "./components/click-tracker";
 import { socialImage } from "./seo-image";
 import "./fonts.css";
 import "./globals.css";
+import "../public/assets/mobile-compact.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uufindssheet.com"),
