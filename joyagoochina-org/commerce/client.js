@@ -82,7 +82,7 @@ function initDetail(){
  const styleStatus=detail.querySelector('[data-style-count]');
  main.referrerPolicy='no-referrer';viewerImage.referrerPolicy='no-referrer';
  const optionLabel=value=>/^(conventional standard|one size|均码|均碼)$/i.test(value.trim())?t('One size'):t(value.trim()).replace(/\bWomen['’]s style|女款/gi,t('Women’s style')).replace(/\bMen['’]s style|男款/gi,t('Men’s style'));
- const imageDisplay=url=>{const parsed=new URL(url);if(/(^|\.)geilicdn\.com$/.test(parsed.hostname)&&/\.(?:jpe?g|png)$/i.test(parsed.pathname)){parsed.pathname+='.webp';parsed.search='?w=1200&h=1200';}return parsed.href;};
+ const imageDisplay=(url,size=1200)=>{const parsed=new URL(url);if(/(^|\.)geilicdn\.com$/.test(parsed.hostname)&&/\.(?:jpe?g|png)$/i.test(parsed.pathname)){parsed.pathname+='.webp';parsed.search='?w='+size+'&h='+size;}return parsed.href;};
  const photo=(url)=>{try{const parsed=new URL(url);return parsed.protocol==='https:'?parsed.href:'';}catch{return '';}};
  function showPhoto(index){
   if(!images.length){main.hidden=true;counter.textContent=t('Photo unavailable');prev.disabled=next.disabled=true;return;}
@@ -140,11 +140,19 @@ function initDetail(){
    const response=await fetch('/api/product-options?'+new URLSearchParams({id:detail.dataset.sourceId}),{signal:AbortSignal.timeout(20000)});
    if(!response.ok)throw Error('options');const data=await response.json();
    if(data.sourceId!==detail.dataset.sourceId||!Array.isArray(data.groups)||!Array.isArray(data.variants))throw Error('identity');
-   options=data;styleGroup=options.groups.findIndex(group=>group.values.some(value=>photo(value.image)));
+   options=data;
+   const sellerImages=(options.images||[]).map(photo).filter(Boolean);
+   if(sellerImages.length){
+    let seller=document.querySelector('[data-seller-photos]');
+    if(!seller){seller=document.createElement('section');seller.className='source-photos seller-photos';seller.dataset.sellerPhotos='';document.querySelector('.source-photos').after(seller);}
+    seller.innerHTML=`<div class="section-caption"><h2>${esc(t('Seller photos'))}</h2><span>${sellerImages.length}</span></div><div class="source-photo-grid">${sellerImages.map((url,i)=>`<button class="photo-tile" type="button" data-seller-photo="${i}" aria-label="${esc(t('Enlarge photo'))} ${i+1}"><img src="${esc(imageDisplay(url,240))}" alt="${esc(t('Seller photos'))} ${i+1}" width="160" height="160" loading="lazy" referrerpolicy="no-referrer"><span>${i+1}</span></button>`).join('')}</div>`;
+    seller.querySelectorAll('[data-seller-photo]').forEach(button=>button.addEventListener('click',()=>openViewer(sellerImages,Number(button.dataset.sellerPhoto))));
+   }
+   styleGroup=options.groups.findIndex(group=>group.values.some(value=>photo(value.image)));
    const count=styleGroup>=0?options.groups[styleGroup].values.length:0;styleStatus.textContent=count?String(count):'';
    grid.replaceChildren();groups.replaceChildren();selected.clear();
    if(styleGroup>=0){
-    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+optionLabel(value.label))}" title="${esc(value.label)}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(optionLabel(value.label))}</span></button>`).join('');
+    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+optionLabel(value.label))}" title="${esc(value.label)}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image,160))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(optionLabel(value.label))}</span></button>`).join('');
     grid.querySelectorAll('[data-style]').forEach(button=>button.addEventListener('click',()=>chooseStyle(button.dataset.style)));
    }
    options.groups.forEach((group,index)=>{
@@ -159,7 +167,10 @@ function initDetail(){
    if(savedVariant){options.groups.forEach((group,index)=>{const value=group.values.find(value=>savedVariant.attrs.includes(value.id));if(value)selected.set(index,value.id);});}
    else if(styleGroup>=0&&options.groups[styleGroup].values.some(value=>value.id===params.get('style')))selected.set(styleGroup,params.get('style'));
    groups.querySelectorAll('select').forEach(select=>select.value=selected.get(Number(select.dataset.optionGroup))||'');
-   if(selected.has(styleGroup))chooseStyle(selected.get(styleGroup));else updateSelection();
+   if(selected.has(styleGroup))chooseStyle(selected.get(styleGroup));else {
+    updateSelection();const sellerPhoto=Number(params.get('seller'));
+    if(Number.isSafeInteger(sellerPhoto)&&sellerPhoto>0&&sellerPhoto<=sellerImages.length){images=sellerImages;showPhoto(sellerPhoto-1);}
+   }
   }catch{status.textContent=t('Styles could not be loaded. Open the original listing to check the available options.');retry.hidden=false;}
   finally{loading=false;}
  }

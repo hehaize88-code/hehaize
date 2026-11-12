@@ -29,6 +29,7 @@ export async function loadImageIndex({fetcher=fetch,signal,onProgress=()=>{}}={}
 export function matchingPhotoPath(product){
  const params=new URLSearchParams();
  if(product.kind==='style'&&/^\d+$/.test(product.styleId||''))params.set('style',product.styleId);
+ else if(product.kind==='seller'&&Number.isSafeInteger(product.imageIndex)&&product.imageIndex>=0)params.set('seller',String(product.imageIndex+1));
  else if(Number.isSafeInteger(product.imageIndex)&&product.imageIndex>=0)params.set('photo',String(product.imageIndex+1));
  return product.path+(params.size?'?'+params:'');
 }

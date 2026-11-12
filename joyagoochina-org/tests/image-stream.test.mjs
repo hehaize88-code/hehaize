@@ -26,6 +26,7 @@ test('style matches preserve the actual style identifier',async()=>{
  const f=fixture([[record('/bags/3.html',{kind:'style',styleId:'835901',imageIndex:91})]]);
  const result=await searchAllImages(query,{fetcher:f.fetcher});
  assert.equal(matchingPhotoPath(result.items[0].p),'/bags/3.html?style=835901');
+ assert.equal(matchingPhotoPath(record('/bags/3.html',{kind:'seller',imageIndex:3})),'/bags/3.html?seller=4');
 });
 test('corrupt or missing shards cannot silently return incomplete results',async()=>{
  const f=fixture([[record('/bags/3.html')]]);f.data.set(f.manifest.shards[0].url,'{}');
