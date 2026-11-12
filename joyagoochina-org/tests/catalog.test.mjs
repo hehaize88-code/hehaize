@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {parseList,parseDetail,buyUrl,catalogueRoute,LANGS,COPY,CATEGORY_LABELS} from '../commerce/catalog.js';
 import {renderHome} from '../commerce/home.js';
-import {commerceRoutes} from '../commerce/routes.js';
+import {commerceRoutes,RELEASE} from '../commerce/routes.js';
 import {EXTRA} from '../commerce/translations.js';
 import {EDITORIAL,SNAPSHOT,LEGACY_PRODUCTS} from '../commerce/content.js';
 const listing=await readFile(new URL('./fixtures/cnbuycha-list.html',import.meta.url),'utf8');
@@ -47,6 +47,6 @@ test('default listing navigation emits clean links while pagination remains usab
 test('commerce response decoration preserves immutable redirects for GET and HEAD',async()=>{
  for(const method of ['GET','HEAD'])for(const path of ['/catalog/shoes/?q=&sort=new&page=1','/pl/catalog/shoes/?page=1','/catalog/AllProducts/','/catalog/shoes']){
   const r=await commerceRoutes(new Request('https://joyagoochina.org'+path,{method}),{},{});
-  assert.ok([301,308].includes(r.status),path);assert.ok(r.headers.get('location'),path);assert.equal(r.headers.get('x-joyagoo-release'),'2026-11-12-joyagoo-mobile-images-v4',path);
+  assert.ok([301,308].includes(r.status),path);assert.ok(r.headers.get('location'),path);assert.equal(r.headers.get('x-joyagoo-release'),RELEASE,path);
  }
 });
