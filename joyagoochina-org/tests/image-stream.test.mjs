@@ -38,3 +38,9 @@ test('declared product and image coverage must match the scanned data',async()=>
  f.manifest.indexedImageCount=2;
  await assert.rejects(searchAllImages(query,{fetcher:f.fetcher}),/Incomplete image index/);
 });
+test('transient shard failure retries, but a long Retry-After is respected',async()=>{
+ const f=fixture([[record('/bags/3.html')]]);let calls=0;
+ const fetcher=async(url,opts)=>url.includes('/test-')&&++calls===1?new Response('',{status:503}):f.fetcher(url,opts);
+ assert.equal((await searchAllImages(query,{fetcher})).imageCount,1);assert.equal(calls,2);
+ let limited=0;await assert.rejects(searchAllImages(query,{fetcher:async()=>{limited++;return new Response('',{status:429,headers:{'retry-after':'120'}});}}),/Index unavailable/);assert.equal(limited,1);
+});
