@@ -1,4 +1,4 @@
-import {searchAllImages} from './image-search-stream.mjs';
+import {searchAllImages} from './image-search-stream.mjs?v=20261112-v4';
 let active;
 self.onmessage=async({data})=>{
  active?.abort();const controller=new AbortController();active=controller;

@@ -1,6 +1,6 @@
 import {fingerprint} from './commerce/image-search-core.mjs';
-import {matchingPhotoPath} from './commerce/image-index-loader.mjs';
-import {translateProductTitle} from './commerce/product-title.js';
+import {matchingPhotoPath} from './commerce/image-index-loader.mjs?v=20261112-v4';
+import {translateProductTitle} from './commerce/product-title.js?v=20261112-v4';
 import {productGlossaries} from './commerce/product-glossaries.js';
 (()=>{
  const locale=document.querySelector('[data-locale]')?.dataset.locale||'en';
@@ -21,7 +21,7 @@ import {productGlossaries} from './commerce/product-glossaries.js';
  function search(query,turn){
   worker?.terminate();
   return new Promise((resolve,reject)=>{
-   const current=new Worker('/commerce/image-search-worker.js?v=20261112-v3',{type:'module'});worker=current;
+   const current=new Worker('/commerce/image-search-worker.js?v=20261112-v4',{type:'module'});worker=current;
    current.onmessage=({data})=>{if(data.id!==turn||worker!==current)return;if(data.type==='progress'){if(turn===sequence)status.textContent=m[1]+' '+Math.round(data.loaded/data.total*100)+'%';}else if(data.type==='result'){current.terminate();worker=null;resolve(data.result);}else{current.terminate();worker=null;reject(Error(data.message));}};
    current.onerror=()=>{current.terminate();if(worker===current)worker=null;reject(Error('Image index unavailable'));};current.postMessage({id:turn,query});
   });

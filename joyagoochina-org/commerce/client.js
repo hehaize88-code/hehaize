@@ -1,4 +1,4 @@
-import {PRODUCT_UI} from './ui.js';
+import {PRODUCT_UI} from './ui.js?v=20261112-v4';
 const localeCodes=["en", "zh", "de", "pl", "es", "it", "fr", "pt", "ro", "sv"];
 const htmlLocale=code=>code==='zh'?'zh-CN':code;
 const loadDictionary=async code=>PRODUCT_UI[code]||{};
