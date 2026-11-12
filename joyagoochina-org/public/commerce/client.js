@@ -1,4 +1,4 @@
-import {translateOptionLabel} from './product-title.js?v=20261112-v5';
+import {translateOptionLabel} from './product-title.js?v=20261112-v7';
 import {productGlossaries} from './product-glossaries.js';
 import {PRODUCT_UI} from './ui.js?v=20261112-v4';
 const localeCodes=["en", "zh", "de", "pl", "es", "it", "fr", "pt", "ro", "sv"];

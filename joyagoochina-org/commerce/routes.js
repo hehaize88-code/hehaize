@@ -2,7 +2,7 @@ import {experienceRoute} from './experience.js';
 import {catalogueRoute,upstream,CATEGORIES,LANGS} from './catalog.js';
 import {homepageRoute} from './home.js';
 import {LEGACY_PRODUCTS} from './content.js';
-export const RELEASE='2026-11-12-joyagoo-mobile-images-v4';
+export const RELEASE='2026-11-12-joyagoo-mobile-images-v7';
 export const SITEMAP_INDEX='<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://joyagoochina.org/editorial-sitemap.xml</loc></sitemap><sitemap><loc>https://joyagoochina.org/catalog-sitemap.xml</loc></sitemap></sitemapindex>';
 export async function commerceRoutes(request,env,ctx) {
  const experience=await experienceRoute(request);if(experience)return experience;

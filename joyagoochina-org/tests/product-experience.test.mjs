@@ -32,5 +32,6 @@ test('real numbered style colours translate without changing seller identifiers 
  }
  assert.equal(translateOptionLabel('01 Black and White', 'zh',productGlossaries),'01 黑色 / 白色');
  assert.equal(translateOptionLabel('01 黑色白色','en',productGlossaries),'01 black white');
+ assert.equal(translateOptionLabel('09 Cyan / 08 Colorful / 24 colors','zh',productGlossaries),'09 青色 / 08 彩色 / 24 彩色');
  assert.equal(translateOptionLabel('Light Blue','fr',productGlossaries),'Bleu clair');
 });

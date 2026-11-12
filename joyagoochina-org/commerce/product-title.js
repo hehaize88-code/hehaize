@@ -35,17 +35,17 @@ export function translateProductTitle(raw, lang, glossaries, fullTitles = {}) {
 }
 
 // Option labels keep seller numbering, model codes and brand names intact.
-const optionColorKeys=['purple','orange','navy','khaki','gold','silver','cream','burgundy','light','dark'];
+const optionColorKeys=['purple','orange','navy','khaki','gold','silver','cream','burgundy','light','dark','cyan','colorful'];
 const optionColorValues={
- zh:['紫色','橙色','藏蓝色','卡其色','金色','银色','奶油色','酒红色','浅','深'],
- de:['Lila','Orange','Marineblau','Khaki','Gold','Silber','Creme','Bordeaux','Hell','Dunkel'],
- pl:['Fioletowy','Pomarańczowy','Granatowy','Khaki','Złoty','Srebrny','Kremowy','Bordowy','Jasny','Ciemny'],
- es:['Morado','Naranja','Azul marino','Caqui','Dorado','Plateado','Crema','Burdeos','Claro','Oscuro'],
- it:['Viola','Arancione','Blu navy','Kaki','Oro','Argento','Crema','Bordeaux','Chiaro','Scuro'],
- fr:['Violet','Orange','Bleu marine','Kaki','Doré','Argenté','Crème','Bordeaux','Clair','Foncé'],
- pt:['Roxo','Laranja','Azul-marinho','Caqui','Dourado','Prateado','Creme','Bordô','Claro','Escuro'],
- ro:['Mov','Portocaliu','Bleumarin','Kaki','Auriu','Argintiu','Crem','Bordo','Deschis','Închis'],
- sv:['Lila','Orange','Marinblå','Khaki','Guld','Silver','Gräddvit','Vinröd','Ljus','Mörk']
+ zh:['紫色','橙色','藏蓝色','卡其色','金色','银色','奶油色','酒红色','浅','深','青色','彩色'],
+ de:['Lila','Orange','Marineblau','Khaki','Gold','Silber','Creme','Bordeaux','Hell','Dunkel','Cyan','Bunt'],
+ pl:['Fioletowy','Pomarańczowy','Granatowy','Khaki','Złoty','Srebrny','Kremowy','Bordowy','Jasny','Ciemny','Cyjanowy','Wielokolorowy'],
+ es:['Morado','Naranja','Azul marino','Caqui','Dorado','Plateado','Crema','Burdeos','Claro','Oscuro','Cian','Multicolor'],
+ it:['Viola','Arancione','Blu navy','Kaki','Oro','Argento','Crema','Bordeaux','Chiaro','Scuro','Ciano','Multicolore'],
+ fr:['Violet','Orange','Bleu marine','Kaki','Doré','Argenté','Crème','Bordeaux','Clair','Foncé','Cyan','Multicolore'],
+ pt:['Roxo','Laranja','Azul-marinho','Caqui','Dourado','Prateado','Creme','Bordô','Claro','Escuro','Ciano','Multicolorido'],
+ ro:['Mov','Portocaliu','Bleumarin','Kaki','Auriu','Argintiu','Crem','Bordo','Deschis','Închis','Cian','Multicolor'],
+ sv:['Lila','Orange','Marinblå','Khaki','Guld','Silver','Gräddvit','Vinröd','Ljus','Mörk','Cyan','Flerfärgad']
 };
 export function translateOptionLabel(raw,lang,glossaries){
  const colors=['black','white','blue','red','green','grey','pink','brown','yellow','beige',...optionColorKeys];
@@ -55,7 +55,7 @@ export function translateOptionLabel(raw,lang,glossaries){
  const chinese=Object.fromEntries(colors.map(key=>[glossaries.zh?.[key]||optionColorValues.zh[optionColorKeys.indexOf(key)],key]).filter(([key])=>key&&key.length>1));
  const sourcePattern=new RegExp(Object.keys(chinese).sort((a,b)=>b.length-a.length).map(esc).join('|'),'g');
  value=value.replace(sourcePattern,color=>save(lang==='zh'?dictionary[chinese[color]]:' '+dictionary[chinese[color]]+' '));
- value=value.replace(/\bgray\b/gi,'grey');
+ value=value.replace(/\bgray\b/gi,'grey').replace(/\b(?:colors|colours|multicolou?r(?:ed)?|multi[- ]colou?r(?:ed)?)\b/gi,'colorful');
  const colorPattern=colors.filter(key=>!['light','dark'].includes(key)).join('|');
  value=value.replace(new RegExp(`\\b(${colorPattern})\\s+and\\s+(?=(?:${colorPattern})\\b)`,'gi'),'$1 / ');
  value=value.replace(new RegExp(`\\b(light|dark)\\s+(${colorPattern})\\b`,'gi'),(_,tone,color)=>{
