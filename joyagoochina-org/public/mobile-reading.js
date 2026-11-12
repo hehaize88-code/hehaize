@@ -12,7 +12,7 @@ function init(){
   const render=()=>{const shown=printing||!media.matches||open;content.hidden=!shown;toggle.disabled=!media.matches;toggle.setAttribute('aria-expanded',String(shown));host.classList.toggle('mobile-section-collapsed',!shown);};
   const setOpen=value=>{open=value;render();};toggle.onclick=()=>setOpen(!open);media.addEventListener('change',render);const item={host,content,render,setOpen};panels.push(item);render();return item;
  }
- main.querySelectorAll('.article-body > section,.policy-copy > section').forEach((section,i)=>panel(section,section.querySelector(':scope > h2'),i===0&&section.textContent.length<1100));
+ main.querySelectorAll('.article-body > section,.policy-copy > section').forEach((section,i)=>panel(section,section.querySelector(':scope > h2'),i===0&&!section.matches('.shipping-worksheet')&&section.textContent.length<1100));
  const body=main.querySelector('.article-body');if(body&&panels.length){const controls=document.createElement('div');controls.className='mobile-reading-controls';const expand=button(t[0]),collapse=button(t[1]);expand.onclick=()=>panels.forEach(p=>p.setOpen(true));collapse.onclick=()=>panels.forEach(p=>p.setOpen(false));controls.append(expand,collapse);body.prepend(controls);}
  const index=main.querySelector('.article-index'),title=index?.querySelector(':scope > strong');if(title){const h=document.createElement('h2');h.textContent=title.textContent;title.replaceWith(h);panel(index,h);}
  main.querySelectorAll('.home-steps,.home-context > div,.catalog-reading,.shipping-worksheet').forEach(el=>panel(el,el.querySelector(':scope > h2')));
