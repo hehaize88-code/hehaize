@@ -17,7 +17,7 @@ body:not([data-page="home"]) .intro{margin:14px 0 18px;line-height:1.65}
 .article-section{border-bottom:1px solid var(--line);padding:14px 0;scroll-margin-top:150px}
 .article-section summary{cursor:pointer;display:flex;align-items:center;gap:12px;list-style:none}
 .article-section summary::before{content:'+';color:var(--accent);font-size:22px;flex:0 0 18px}
-.article-section[open] summary::before{content:'?'}
+.article-section[open] summary::before{content:'−'}
 .article-section summary h2{font-size:21px;line-height:1.35;margin:0}
 .article-section p{line-height:1.65;margin:12px 0}
 .article-sources{margin-top:20px;padding-top:8px}.article-sources h2{margin:16px 0;font-size:22px}
