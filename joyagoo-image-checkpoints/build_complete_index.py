@@ -110,25 +110,28 @@ def write_checkpoint(records,batch):
 def main():
  global stage
  stage='bootstrap';manifest,galleries,products=bootstrap();print('BASE',len(galleries),len(products),flush=True)
- stage='options';options=[]
- with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
-  for i,x in enumerate(pool.map(styles_for,products)):
-   options.append(x)
-   if (i+1)%100==0:
-    print('OPTIONS',i+1,'styles',sum(len(x['styles']) for x in options),'failures',sum(bool(x.get('error')) for x in options),flush=True)
-   if (i+1)%100==0:save(CHECKPOINT/f'options-{i//100:03d}.json',options[-100:])
+ stage='options+images';options=[];styles=[];unique=set();desc={};ready=[];batch=0;submitted=0
+ with concurrent.futures.ThreadPoolExecutor(max_workers=6) as options_pool,concurrent.futures.ThreadPoolExecutor(max_workers=48) as image_pool:
+  option_jobs={options_pool.submit(styles_for,p) for p in products};image_jobs={}
+  while option_jobs or image_jobs:
+   done,_=concurrent.futures.wait(option_jobs|image_jobs.keys(),timeout=2,return_when=concurrent.futures.FIRST_COMPLETED)
+   for f in done:
+    if f in option_jobs:
+     option_jobs.remove(f);x=f.result();options.append(x);styles.extend(x['styles'])
+     for r in x['styles']:
+      u=r['image']
+      if u not in unique:unique.add(u);image_jobs[image_pool.submit(descriptor,u)]=u;submitted+=1
+     if len(options)%100==0:
+      print('OPTIONS',len(options),'styles',len(styles),'unique',len(unique),'failures',sum(bool(x.get('error')) for x in options),flush=True)
+      save(CHECKPOINT/f'options-{len(options)//100-1:03d}.json',options[-100:])
+    else:
+     del image_jobs[f];u,d=f.result();desc[u]=d
+     if not d.get('error'):ready.append({'image':u,**d})
+     if len(desc)%500==0:print('IMAGES',len(desc),'/',submitted,'failed',sum(bool(d.get('error')) for d in desc.values()),flush=True)
+     if len(ready)>=2000:write_checkpoint(ready,batch);ready=[];batch+=1
  if len(options)%100:save(CHECKPOINT/f'options-{len(options)//100:03d}.json',options[-(len(options)%100):])
  save(CACHE/'options-all.json',options)
- styles=[r for x in options for r in x['styles']];unique=list(dict.fromkeys(r['image'] for r in styles));print('DISCOVERY',len(styles),len(unique),'unavailable',sum(bool(x.get('error')) for x in options),flush=True)
- stage='images';desc={};ready=[];batch=0
- with concurrent.futures.ThreadPoolExecutor(max_workers=48) as pool:
-  pending={pool.submit(descriptor,u):u for u in unique}
-  for i,f in enumerate(concurrent.futures.as_completed(pending)):
-   u,d=f.result();desc[u]=d
-   if not d.get('error'):ready.append({'image':u,**d})
-   if (i+1)%500==0:print('IMAGES',i+1,'/',len(unique),'failed',sum(bool(d.get('error')) for d in desc.values()),flush=True)
-   if len(ready)>=2000:
-    write_checkpoint(ready,batch);ready=[];batch+=1
+ print('DISCOVERY',len(styles),len(unique),'unavailable',sum(bool(x.get('error')) for x in options),flush=True)
  if ready:write_checkpoint(ready,batch)
  records=galleries+[{**r,**desc[r['image']]} for r in styles if not desc[r['image']].get('error')]
  seen=set();records=[r for r in records if not ((r['path'],r['image']) in seen or seen.add((r['path'],r['image'])))]
@@ -138,6 +141,6 @@ def main():
   body=json.dumps({'products':records[i:i+250]},ensure_ascii=False,separators=(',',':')).encode();sha=hashlib.sha256(body).hexdigest();name=f'part-{i//250:03d}-{sha[:12]}.json';(out/name).write_bytes(body);shards.append({'url':'/catalog-image-index/'+name,'count':len(records[i:i+250]),'bytes':len(body),'sha256':sha})
  failed=[{'image':u,**d} for u,d in desc.items() if d.get('error')]
  new={**{k:v for k,v in manifest.items() if k!='shards'},'updatedAt':time.strftime('%Y-%m-%d',time.gmtime()),'indexedImageCount':len(records),'indexedProductCount':len(set(r['path'] for r in records)),'indexedCount':len(products),'discoveredImageCount':len(set((r['path'],r['image']) for r in galleries+styles)),'uniqueImageCount':len(set(r['image'] for r in galleries+styles)),'indexedUniqueImageCount':len(set(r['image'] for r in records)),'galleryImageCount':len(galleries),'styleImageCount':sum(r['kind']=='style' for r in records),'includesStyles':True,'failedDetailCount':0,'failedStylePageCount':sum(bool(x.get('error')) for x in options),'failedImageCount':len(failed),'unattemptedStylePageCount':0,'shards':shards}
- save(PUBLIC/'catalog-image-index.json',new);save(CHECKPOINT/'coverage-report.json',{'manifest':{k:v for k,v in new.items() if k!='shards'},'unavailableProducts':[x['product'] for x in options if x.get('error')],'failedImages':failed})
+ save(PUBLIC/'catalog-image-index.json',new);save(CHECKPOINT/'coverage-report.json',{'manifest':{k:v for k,v in new.items() if k!='shards'},'unavailableProducts':[{**x['product'],'error':x['error']} for x in options if x.get('error')],'failedImages':failed})
  stage='complete';print('COMPLETE',json.dumps({k:v for k,v in new.items() if k!='shards'}),flush=True)
 if __name__=='__main__':main()
