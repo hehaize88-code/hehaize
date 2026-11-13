@@ -1,0 +1,2 @@
+import fs from 'node:fs';
+let localization=fs.readFileSync('worker/locales.js','utf8').replace('export const ','const ');let source=fs.readFileSync('worker/index.js','utf8').replace("import { CLIENT, LOGO, ICON, SEARCH_INDEX } from './assets.js';",'');source=source.replace("import { EXTRA_LOCALES } from './locales.js';",'');let assets=fs.readFileSync('worker/assets.js','utf8').replace(/export const /g,'const ');fs.writeFileSync('dist/server/index.js',localization+'\n'+assets+'\n'+source);
