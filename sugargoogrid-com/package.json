@@ -1,0 +1,9 @@
+{
+  "name": "sugargoogrid-com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "mkdir -p dist/server && node scripts/bundle.mjs",
+    "deploy": "npm run build && npx wrangler deploy"
+  }
+}
