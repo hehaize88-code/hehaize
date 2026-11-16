@@ -1,0 +1,11 @@
+{
+  "name": "vigorbuygrid-com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/bundle.mjs",
+    "test": "node test/catalog.mjs",
+    "deploy": "npm run build && npx wrangler deploy"
+  }
+}
