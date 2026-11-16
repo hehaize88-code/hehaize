@@ -1,0 +1,5 @@
+import http from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+const port=Number(process.argv[process.argv.indexOf('--port')+1]||process.env.PORT||3000);
+http.createServer(async(req,res)=>{try{if(req.url.startsWith('/__mobile')){res.writeHead(200,{'content-type':'text/html'});res.end('<html><title>Mobile QA</title><body style="margin:0;background:#ddd;display:flex;gap:20px"><iframe title="Mobile home" src="/en/" style="width:390px;height:844px;border:0"></iframe><iframe title="Mobile detail" src="/fr/product/shoes/3475.html" style="width:390px;height:844px;border:0"></iframe></body></html>');return;}const m=await import(pathToFileURL(process.cwd()+'/worker/index.js').href+'?v='+Date.now());const response=await m.default.fetch(new Request('http://localhost:'+port+req.url));res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));}catch(e){console.error(e);res.writeHead(500);res.end('Preview unavailable')}}).listen(port,'0.0.0.0');
