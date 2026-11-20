@@ -30,6 +30,13 @@ function cameraLink(lang){
  return '<a class="camera" href="/'+lang+'/image-search/" aria-label="'+label+'" title="'+label+'">'+cameraIcon+'</a>';
 }
 function page(lang,heading,body,url){
+ const analytics = url.origin === 'https://ootdbuygrid.com'
+   ? `<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ40MHDX1T"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FQ40MHDX1T');
+</script>` : '';
  const t=labels(lang);
  const home='/'+lang+'/';
  const langs=Object.entries(languages).map(([code,name])=>{
@@ -39,7 +46,7 @@ function page(lang,heading,body,url){
  }).join('');
  const nav=[[home+'spreadsheet/',t.catalog],[home+'#categories',t.categories],[home+'image-search/',t.imageSearch],[home+'#faq',t.faq]]
    .map(([link,label])=>'<a href="'+link+'">'+escape(label)+'</a>').join('');
- return '<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="'+escape(new URL(url.pathname+url.search,'https://ootdbuygrid.com').href)+'">'+faviconTag()+'<title>'+escape(heading)+' · OOTDBuy</title><style>'+css+theme+'</style></head><body><header><div class="wrap"><a class="word" href="'+home+'" aria-label="OOTDBuy">'+brandImage()+'</a><nav class="nav">'+nav+'</nav><div class="tools"><select aria-label="'+escape(t.language)+'" onchange="location.href=this.value+location.hash">'+langs+'</select>'+currencyControl(lang)+'<a class="btn signup" href="https://ootdbuy.com/register">'+escape(t.register)+'</a></div></div></header><main class="wrap">'+body+'<footer class="foot"><a href="'+home+'">OOTDBuy</a> · '+escape(t.catalog)+'</footer></main>'+currencyScript(lang)+'<script>'+titleTranslationClient()+'</script></body></html>';
+ return '<!doctype html><html lang="'+lang+'"><head>'+analytics+'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="'+escape(new URL(url.pathname+url.search,'https://ootdbuygrid.com').href)+'">'+faviconTag()+'<title>'+escape(heading)+' · OOTDBuy</title><style>'+css+theme+'</style></head><body><header><div class="wrap"><a class="word" href="'+home+'" aria-label="OOTDBuy">'+brandImage()+'</a><nav class="nav">'+nav+'</nav><div class="tools"><select aria-label="'+escape(t.language)+'" onchange="location.href=this.value+location.hash">'+langs+'</select>'+currencyControl(lang)+'<a class="btn signup" href="https://ootdbuy.com/register">'+escape(t.register)+'</a></div></div></header><main class="wrap">'+body+'<footer class="foot"><a href="'+home+'">OOTDBuy</a> · '+escape(t.catalog)+'</footer></main>'+currencyScript(lang)+'<script>'+titleTranslationClient()+'</script></body></html>';
 }
 const theme=`
 :root{--ink:#171b23;--accent:#a64208;--line:#e2e5e5}body{background:#fff;color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif}header{position:sticky;top:0;z-index:10;border-color:var(--line)}[id]{scroll-margin-top:90px}@media(max-width:940px){[id]{scroll-margin-top:120px}}.hero-search{display:flex;gap:4px;align-items:center;max-width:38em;background:white;border:1px solid var(--line);border-radius:10px;padding:5px}.hero-search input{min-width:0;width:100%;border:0;padding:8px;font:inherit}.hero-search .camera{border:none;flex:none}.hero-search button{color:white}.copy{padding:clamp(18px,3vw,46px)}.word img{display:block;width:118px;max-height:44px;object-fit:contain}header .wrap{gap:18px}.nav{gap:22px}.tools{gap:8px}.tools select{max-width:9em;font-size:.925rem;border-color:var(--line)}.btn,button,.chip.on{background:var(--accent)}.hero{background:#fff5e9;color:var(--ink);border-radius:16px;grid-template-columns:1fr 1fr}.copy p{color:#49534e}.copy .btn{background:var(--accent);color:white}.mosaic{height:310px;grid-template-columns:1.4fr 1fr;gap:4px}.mosaic a{height:100%;min-height:0}.mosaic a:first-child{grid-row:span 2}.mosaic img:first-child{grid-row:auto}.camera{width:44px;height:44px;display:inline-grid;place-items:center;border:1px solid #cbd3d0;border-radius:6px;background:white;color:#873604}.fields{flex-wrap:nowrap}.fields .camera{flex:none}.fields input{min-width:0}.card img{border-radius:9px}.nav a{font-size:.94rem}.nav,.chips{scrollbar-width:thin}header .wrap{max-width:1420px}.tools select{background:white}.catalog-count{margin:0 0 14px;color:#4a504e}.paging{flex-wrap:wrap}.foot{font-size:.9rem;color:#4a504e}
