@@ -1,0 +1,11 @@
+{
+  "name": "kakobuysheetgrid-com",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-20",
+  "workers_dev": true,
+  "routes": [
+    {"pattern": "kakobuysheetgrid.com", "custom_domain": true},
+    {"pattern": "www.kakobuysheetgrid.com", "custom_domain": true}
+  ],
+  "build": {"command":"npm run build"}
+}
