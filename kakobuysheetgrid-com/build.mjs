@@ -34,5 +34,25 @@ for (const lang of languages) {
   children.push(child);
 }
 fs.writeFileSync(directory+'/sitemap.xml',xml('sitemapindex',children.map(path=>entry('sitemap',origin+path))));
-fs.writeFileSync(directory+'/_headers','/sitemaps/*\n  Content-Type: application/xml; charset=utf-8\n  Cache-Control: public, max-age=300\n/sitemap*.xml\n  Content-Type: application/xml; charset=utf-8\n');
-fs.writeFileSync(directory+'/_redirects','https://www.kakobuysheetgrid.com/* https://kakobuysheetgrid.com/:splat 301\n');
+// Include the generated XML in the Worker release so serving it requires no upstream call.
+const {gzipSync} = await import('node:zlib');
+const maps = {};
+for (const path of ['/sitemap.xml', ...children, ...languages.map(l=>'/sitemap-'+l+'.xml')]) {
+  maps[path] = gzipSync(fs.readFileSync(directory+path)).toString('base64');
+}
+await build({
+  stdin: {contents: `
+    import app from './dist/server/index.js';
+    const maps = ${JSON.stringify(maps)};
+    export default {fetch(request, env, ctx){
+      const url=new URL(request.url);
+      if(url.protocol==='https:' && url.hostname==='kakobuysheetgrid.com' && Object.hasOwn(maps,url.pathname)){
+        const bytes=Uint8Array.from(atob(maps[url.pathname]),c=>c.charCodeAt(0));
+        const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+        return new Response(request.method==='HEAD'?null:stream,{headers:{'Content-Type':'application/xml; charset=utf-8','Cache-Control':'public,max-age=300'}});
+      }
+      return app.fetch(request,env,ctx);
+    }};
+  `, resolveDir:process.cwd()},
+  outfile:'dist/server/production.js', bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true
+});
