@@ -1,0 +1,24 @@
+{
+  "name": "hubbuysheetgrid",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2025-10-01",
+  "workers_dev": false,
+  "build": {
+    "command": "npm run build"
+  },
+  "routes": [
+    {
+      "pattern": "hubbuysheetgrid.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.hubbuysheetgrid.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "dist/assets",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  }
+}
