@@ -1,3 +1,4 @@
+import { commerceWorker } from "../commerce/handler.mjs";
 import applicationWorker from "../dist/server/index.js";
 
 const versionedAssetsPrefix = `/assets/${PAGES_ASSET_VERSION}/`;
@@ -50,7 +51,7 @@ async function versionAssetReferences(response) {
   });
 }
 
-export default {
+const legacyWorker = {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
@@ -72,3 +73,5 @@ export default {
     return versionAssetReferences(response);
   },
 };
+
+export default commerceWorker(legacyWorker);

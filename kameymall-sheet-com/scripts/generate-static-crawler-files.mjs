@@ -1,3 +1,4 @@
+import { expandSitemap } from "./expand-commerce-sitemap.mjs";
 import { mkdir, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import path from "node:path";
@@ -46,9 +47,10 @@ if (!robots.includes("https://kameymall-sheet.com/sitemap.xml")) {
   throw new Error("robots.txt does not reference the production sitemap");
 }
 
+const expanded = expandSitemap(sitemap);
 await Promise.all([
-  writeFile(path.join(clientOutput, "sitemap.xml"), sitemap),
-  writeFile(path.join(clientOutput, "sitemap.txt"), `${sitemapUrls.join("\n")}\n`),
+  writeFile(path.join(clientOutput, "sitemap.xml"), expanded.xml),
+  writeFile(path.join(clientOutput, "sitemap.txt"), expanded.text),
   writeFile(path.join(clientOutput, "robots.txt"), robots),
 ]);
 

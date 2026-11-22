@@ -142,6 +142,7 @@ if (
 }
 NODE
 
+cp -a "${project_root}/kamey-search" "${pages_output}/"
 rsync -a "${pages_output}/" "${project_root}/"
 
 product_image_count="$(find "${project_root}/product-images" -maxdepth 1 -type f \( -name '*.jpg' -o -name '*.png' -o -name '*.webp' \) | wc -l)"

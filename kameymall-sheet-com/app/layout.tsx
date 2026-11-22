@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/kameymall-icon.png" },
   title: "KameyMall Spreadsheet 2026: 30 Finds, Prices & Direct Links",
   description:
     "Browse 30 curated KameyMall finds with USD prices, product IDs, categories and direct links to the matching live product pages.",
