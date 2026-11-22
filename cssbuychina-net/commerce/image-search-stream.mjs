@@ -25,6 +25,10 @@ export async function searchAllImages(query,{fetcher=fetch,signal,onProgress=()=
  const response=await get('/catalog-image-index.json',{cache:'no-cache'});
  if(!response.ok)throw Error('Index unavailable');
  const manifest=await response.json(),shards=manifest.shards;
+ if(manifest.version===3 && manifest.descriptorAlgorithm==='compact-rgb-dhash'){
+  const {compactSearch}=await import('./compact-search.mjs');
+  return compactSearch(manifest,query,get,onProgress,limit);
+ }
  if(manifest.version!==2||manifest.descriptorAlgorithm!=='area-v2'||!Array.isArray(shards)||!shards.length||shards.length>1000)throw Error('Invalid image index');
  const total=shards.reduce((n,s)=>n+s.count,0);
  if(total!==manifest.indexedImageCount||shards.some(s=>!/^\/catalog-image-index\/[a-z0-9.-]+\.json$/.test(s.url)||!Number.isSafeInteger(s.count)||s.count<1||!/^[a-f0-9]{64}$/.test(s.sha256)))throw Error('Incomplete image index');
@@ -47,3 +51,4 @@ export async function searchAllImages(query,{fetcher=fetch,signal,onProgress=()=
  return {...selectResults(best),productCount:paths.size,imageCount:loaded,catalogCount:manifest.catalogCount,updatedAt:manifest.updatedAt,
   pendingImageCount:manifest.pendingImageCount||0,failedImageCount:manifest.failedImageCount||0,failedStylePageCount:manifest.failedStylePageCount||0,failedDetailCount:manifest.failedDetailCount||0};
 }
+

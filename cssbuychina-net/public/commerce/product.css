@@ -7,3 +7,13 @@
 .catalog-actions{position:relative}.catalog-actions>details{position:static}.catalog-languages{top:calc(100% + 8px);right:0;max-width:calc(100vw - 32px)}
 
 .unified-language-menu{max-height:340px!important;overflow:auto;display:grid!important;grid-template-columns:1fr 1fr;min-width:300px;z-index:200}.unified-language-menu>span{grid-column:1/-1}.unified-actions{overflow:visible}.unified-header{overflow:visible}.unified-actions>details{position:relative}.unified-language-menu a{font-size:12px!important;min-height:40px}.catalog-currency{min-height:40px}.catalog-detail .buy-button{color:white}.product-styles h2{font-size:18px}.catalog-gallery .gallery-main img{width:100%;height:100%;object-fit:contain}.editorial-language-note{padding:12px 18px;border:1px solid #ddd;border-radius:8px;margin:12px 0;font-size:13px;line-height:1.6}.catalog-gallery .gallery-thumbs{overflow-x:auto;flex-wrap:nowrap}.gallery-main{position:relative}.catalog-detail .gallery-main>img{max-height:520px}.catalog-detail{margin-top:20px}.catalog-main{max-width:1180px}.catalog-card strong[data-price-amount]{white-space:nowrap}@media(max-width:680px){.unified-language-menu{min-width:280px;right:0;left:auto}.unified-actions{gap:8px}.unified-register{max-width:140px}.unified-header{position:relative}.catalog-detail .gallery-main>img{max-height:320px}.catalog-product-info{min-width:0}.unified-actions>details{position:static}.unified-language-menu{max-width:calc(100vw - 24px);right:12px;top:100%}.catalog-main{padding:16px}.catalog-detail .source-photo-grid{max-height:240px}.unified-language summary{font-size:12px;padding:8px}.unified-actions .catalog-currency{width:65px}.catalog-header{overflow:visible}}
+
+/* The first row pairs the main photo with the purchase controls and scrollable styles. */
+@media(min-width:801px){
+ .catalog-detail{max-width:1120px;margin-inline:auto;grid-template-columns:minmax(0,460fr) minmax(0,620fr);gap:40px}
+ .catalog-detail .buy-button{display:flex;justify-content:center;align-items:center;width:100%;box-sizing:border-box;min-height:50px}
+ .product-styles .style-grid{grid-template-columns:repeat(auto-fill,minmax(60px,1fr));max-height:228px}
+}
+.style-grid button:has(img){position:relative;padding:0}
+.style-grid button:has(img)>span{position:absolute;left:0;right:0;bottom:0;background:#fffffff2;opacity:0}
+.style-grid button:focus-visible>span,.style-grid button:hover>span{opacity:1}

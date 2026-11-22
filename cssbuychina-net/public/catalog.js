@@ -4,7 +4,11 @@ import {productGlossaries} from '/commerce/product-glossaries.js';
 import {initializeImageSearch} from '/commerce/image-search.js';
 {
  const locale=document.querySelector('[data-locale]')?.dataset.locale||'en';
- const dictionary=await loadDictionary(locale);
+ const [baseDictionary, productNames] = await Promise.all([
+   loadDictionary(locale),
+   document.getElementById('image-file') ? readProductNames(locale) : Promise.resolve({})
+ ]);
+ const dictionary = Object.assign(Object.create(null), baseDictionary, productNames);
  const titleText=s=>localizedProductTitle(s,locale,dictionary,productGlossaries);
  const base=(locale==='en'?'':'/'+locale)+'/catalog';
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -15,3 +19,21 @@ import {initializeImageSearch} from '/commerce/image-search.js';
 
  initializeImageSearch({locale,dictionary,titleText});
 }
+
+async function readProductNames(locale) {
+ try {
+   const language = locale === 'pt-br' ? 'pt' : locale;
+   const response = await fetch('/assets/catalog-titles/' + language + '.json.gz');
+   if (!response.ok) return {};
+   const bytes = await response.arrayBuffer();
+   const data = new Uint8Array(bytes);
+   if (data[0] === 31 && data[1] === 139) {
+     const stream = new Response(bytes).body.pipeThrough(new DecompressionStream('gzip'));
+     return await new Response(stream).json();
+   }
+   return await new Response(bytes).json();
+ } catch {
+   return {};
+ }
+}
+

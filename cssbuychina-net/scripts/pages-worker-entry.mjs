@@ -112,6 +112,7 @@ const pagesWorker = {
   },
 };
 
-export default pagesWorker;
+import {enhanceStorefront} from '../enhancements/storefront.mjs';
+export default enhanceStorefront(pagesWorker);
 
 function catalogSitemapIndex(){return new Response('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+LANGS.map(l=>'<sitemap><loc>https://cssbuychina.net/catalog-sitemap-'+l+'.xml</loc></sitemap>').join('')+'</sitemapindex>',{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=300'}});}

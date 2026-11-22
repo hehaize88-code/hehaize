@@ -130,6 +130,9 @@ function initDetail(){
  }
  function chooseStyle(id){
   selected.set(styleGroup,id);
+  if(options.variants.length && !matchingVariants().some(v=>v.available)){
+   for(const select of groups.querySelectorAll('select')){selected.delete(Number(select.dataset.optionGroup));select.value='';}
+  }
   const url=new URL(location.href);url.searchParams.delete('photo');url.searchParams.delete('photoSource');history.replaceState(null,'',url.pathname+url.search+url.hash);
   const value=options.groups[styleGroup].values.find(value=>value.id===id);if(value?.image){images=[value.image];showPhoto(0);}
   updateSelection();
@@ -137,7 +140,7 @@ function initDetail(){
  async function loadOptions(){
   if(loading)return;loading=true;retry.hidden=true;status.hidden=false;status.textContent=t('Loading styles…');
   try{
-   const response=await fetch('/api/product-options?'+new URLSearchParams({id:detail.dataset.sourceId}),{signal:AbortSignal.timeout(20000)});
+   const response=await fetch('/api/product-options?'+new URLSearchParams({id:detail.dataset.sourceId,lang:locale}),{signal:AbortSignal.timeout(20000)});
    if(!response.ok)throw Error('options');const data=await response.json();
    if(data.sourceId!==detail.dataset.sourceId||!Array.isArray(data.groups)||!Array.isArray(data.variants))throw Error('identity');
    options=data;
@@ -146,7 +149,7 @@ function initDetail(){
    const count=styleGroup>=0?options.groups[styleGroup].values.length:0;styleStatus.textContent=count?String(count):'';
    grid.replaceChildren();groups.replaceChildren();selected.clear();
    if(styleGroup>=0){
-    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+optionLabel(value.label))}" title="${esc(value.label)}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(optionLabel(value.label))}</span></button>`).join('');
+    grid.innerHTML=options.groups[styleGroup].values.map(value=>`<button type="button" data-style="${esc(value.id)}" aria-pressed="false" aria-label="${esc(t('Style')+': '+optionLabel(value.label))}" title="${esc(optionLabel(value.label))}">${photo(value.image)?`<img referrerpolicy="no-referrer" src="${esc(imageDisplay(value.image))}" alt="" width="80" height="80" loading="lazy">`:''}<span>${esc(optionLabel(value.label))}</span></button>`).join('');
     grid.querySelectorAll('[data-style]').forEach(button=>button.addEventListener('click',()=>chooseStyle(button.dataset.style)));
    }
    options.groups.forEach((group,index)=>{
@@ -160,6 +163,7 @@ function initDetail(){
    const params=new URL(location.href).searchParams,savedVariant=options.variants.find(variant=>variant.id===params.get('option'));
    if(savedVariant){options.groups.forEach((group,index)=>{const value=group.values.find(value=>savedVariant.attrs.includes(value.id));if(value)selected.set(index,value.id);});}
    else if(styleGroup>=0&&options.groups[styleGroup].values.some(value=>value.id===params.get('style')))selected.set(styleGroup,params.get('style'));
+   else if(styleGroup>=0 && params.has('matchedImage')){const found=options.groups[styleGroup].values.find(v=>v.image===params.get('matchedImage'));if(found)selected.set(styleGroup,found.id);}
    groups.querySelectorAll('select').forEach(select=>select.value=selected.get(Number(select.dataset.optionGroup))||'');
    if(selected.has(styleGroup))chooseStyle(selected.get(styleGroup));else updateSelection();
   }catch{status.textContent=t('Styles could not be loaded. Open the original listing to check the available options.');retry.hidden=false;}
@@ -168,7 +172,8 @@ function initDetail(){
  retry.addEventListener('click',loadOptions);
  copy.addEventListener('click',async()=>{
   let value=detail.dataset.sourceUrl;
-  if(options&&selected.size){value+='\n'+t('Selected option')+': '+selectionLabels().join(' · ');const variant=activeVariant();if(variant)value+='\nSKU: '+variant.id;}
+  if(options&&selected.size){value+='\n'+t('Selected option')+': '+selectionLabels().join(' · ');const variant=activeVariant();if(variant)value+='\nSKU: '+variant.id;
+   value+='\n'+location.href;}
   try{await navigator.clipboard.writeText(value);copyStatus.textContent=t('Copied')+(selected.size?' · '+t('The original link opens the product. The copied style, size and SKU help you select the same option there.'):'');}
   catch{const fallback=detail.querySelector('[data-copy-fallback]');fallback.hidden=false;fallback.value=value;fallback.focus();fallback.select();copyStatus.textContent=t('Copy failed. Select and copy the link below.');}
  });
