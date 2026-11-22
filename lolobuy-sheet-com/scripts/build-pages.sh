@@ -31,6 +31,8 @@ process_shim="${script_dir}/pages-process-shim.mjs"
 }
 
 cp "${project_root}"/{catalog,commerce-client,language-client}.js "${pages_output}/"
+mkdir -p "${pages_output}/assets"
+cp -R "${project_root}/assets/catalog-titles" "${pages_output}/assets/"
 cp -R "${project_root}/visual-index" "${pages_output}/"
 mkdir -p "${versioned_assets}"
 find "${pages_output}/assets" -maxdepth 1 -type f -exec cp {} "${versioned_assets}/" \;

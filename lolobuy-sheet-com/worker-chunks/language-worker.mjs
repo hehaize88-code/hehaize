@@ -54,10 +54,26 @@ function batches(strings) {
   return out;
 }
 const memory=new Map();
-async function translate(strings,locale,origin,ctx) {
+const titleCaches = new Map();
+async function titles(locale,origin,env) {
+  if (titleCaches.has(locale)) return titleCaches.get(locale);
+  try {
+    const filename = locale === 'zh-cn' ? 'zh' : locale;
+    const response = await env.ASSETS.fetch(new Request(origin+'/assets/catalog-titles/'+filename+'.json.gz'));
+    if (!response.ok) return {};
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    const body = bytes[0]===31 && bytes[1]===139 ? new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip')) : bytes;
+    const values = await new Response(body).json();
+    if (titleCaches.size >= 4) titleCaches.delete(titleCaches.keys().next().value);
+    titleCaches.set(locale,values);
+    return values;
+  } catch { return {}; }
+}
+async function translate(strings,locale,origin,ctx,env) {
+  const names=await titles(locale,origin,env);
   const dict=new Map(),missing=[];
   for(const s of new Set(strings)){
-    const value=memory.get(locale+'\n'+s);
+    const value=Object.hasOwn(names,s) ? names[s] : memory.get(locale+'\n'+s);
     if(value)dict.set(s,value);else missing.push(s);
   }
   const groups=batches(missing);
@@ -71,8 +87,9 @@ async function translate(strings,locale,origin,ctx) {
     if(!translated){
       const endpoint = new URL('https://translate.googleapis.com/translate_a/t');
       endpoint.search = new URLSearchParams({client:'dict-chrome-ex',sl:'auto',tl:tag(locale)});
-      for (const s of items) endpoint.searchParams.append('q',s);
-      const resp=await fetch(endpoint,{signal:AbortSignal.timeout(9000)});
+      const payload=new URLSearchParams();
+      for (const s of items) payload.append('q',s);
+      const resp=await fetch(endpoint,{method:'POST',body:payload,signal:AbortSignal.timeout(6000)});
       if(!resp.ok)throw Error('Translation provider status '+resp.status);
       const body=await resp.json();
       translated=Array.isArray(body) ? body.map(x=>Array.isArray(x)?x[0]:x):null;
@@ -85,7 +102,7 @@ async function translate(strings,locale,origin,ctx) {
       memory.set(locale+'\n'+s,result);
     });
   }
-  for(let i=0;i<groups.length;i+=4) await Promise.all(groups.slice(i,i+4).map(group));
+  for(let i=0;i<groups.length;i+=4) await Promise.allSettled(groups.slice(i,i+4).map(group));
   return dict;
 }
 function nav(url,locale) {
@@ -232,8 +249,8 @@ export async function languageFetch(request,env,ctx,innerFetch) {
       const body=await request.text();if(body.length>30000)return new Response(null,{status:413});
       const {locale,strings}=JSON.parse(body);
       if(!has(locale)||!Array.isArray(strings)||strings.length>60||strings.some(s=>typeof s!=='string'||s.length>5000))return new Response(null,{status:400});
-      const map=await translate(strings,locale,url.origin,ctx);
-      return Response.json(strings.map(s=>map.get(s)||s));
+      const map=await translate(strings,locale,url.origin,ctx,env);
+      return Response.json(strings.map(s=>map.get(s)||null));
     }catch{return new Response(null,{status:503,headers:{'retry-after':'5'}});}
   }
   const locale=getLocale(url.pathname);
@@ -262,7 +279,7 @@ export async function languageFetch(request,env,ctx,innerFetch) {
   const pass=parsePass(html,url,locale,null);await pass.body;
   for(const value of schemaValues)pass.found.add(value);
   let dict;
-  try {dict=await translate(pass.found,locale,url.origin,ctx);}
+  try {dict=await translate(pass.found,locale,url.origin,ctx,env);}
   catch {
     // Keep the document accessible if the provider is briefly unavailable.
     // The observer retries public page text; do not cache partial translations.
