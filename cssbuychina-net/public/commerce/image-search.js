@@ -62,20 +62,20 @@ export function initializeImageSearch({locale,dictionary,titleText}) {
    const query=fingerprint(currentImage);
    query.resize=resizeFingerprint(currentImage);
    if(query.variation<3){status.textContent=t('This image has too little visible detail. Choose a clear photo of a single item.');results.setAttribute('aria-busy','false');retry.hidden=false;return;}
-   worker=new Worker('/commerce/image-search-worker.js',{type:'module'});
+   worker=new Worker('/commerce/visual-worker-20261122.js');
    const done=()=>{worker?.terminate();worker=null;results.setAttribute('aria-busy','false');retry.hidden=false;};
    worker.onmessage=({data})=>{
     if(turn!==sequence||data.id!==turn)return;
     if(data.type==='progress')status.textContent=`${t('Comparing images…')} ${number(data.loaded)} / ${number(data.total)}`;
     else if(data.type==='result'){render(data.result);done();}
-    else {status.textContent=t('Catalogue images could not be loaded. Check your connection and select Search again.');done();}
+    else {status.textContent=t('Catalogue images could not be loaded. Check your connection and select Search again.')+' ('+String(data.message||'index')+')';done();}
    };
    worker.onerror=()=>{if(turn===sequence){status.textContent=t('Catalogue images could not be loaded. Check your connection and select Search again.');done();}};
    status.textContent=t('Loading catalogue images…');worker.postMessage({id:turn,query});
   }catch{if(turn===sequence){stop();status.textContent=t('This image could not be read. Save it as JPG, PNG or WebP and try again.');retry.hidden=false;}}
  }
- input.addEventListener('change',async()=>{
-  stop();const turn=sequence,file=input.files[0];currentImage=null;results.replaceChildren();retry.hidden=true;preview.hidden=true;
+ async function selectImage(file){
+  stop();const turn=sequence;currentImage=null;results.replaceChildren();retry.hidden=true;preview.hidden=true;
   if(objectUrl)URL.revokeObjectURL(objectUrl);objectUrl=null;preview.removeAttribute('src');
   if(!file){status.textContent='';return;}
   if(!acceptsImage(file)){status.textContent=t('Choose a JPG, PNG, WebP or GIF up to 20 MB.');return;}
@@ -84,7 +84,13 @@ export function initializeImageSearch({locale,dictionary,titleText}) {
    if(image.naturalWidth*image.naturalHeight>40_000_000){status.textContent=t('This photo is too large to process safely. Resize it to under 40 megapixels and try again.');return;}
    preview.src=image.src;preview.hidden=false;currentImage=image;await compare();
   }catch{if(turn===sequence)status.textContent=t('This image could not be read. Save it as JPG, PNG or WebP and try again.');}
- });
+ }
+ input.addEventListener('change',()=>{const file=input.files[0];input.value='';selectImage(file);});
+ if(input.files.length)selectImage(input.files[0]);
+ document.addEventListener('paste',event=>{const file=Array.from(event.clipboardData?.files||[]).find(f=>f.type.startsWith('image/'));if(file){event.preventDefault();selectImage(file);}});
+ const drop=input.closest('label');
+ drop.addEventListener('dragover',event=>event.preventDefault());
+ drop.addEventListener('drop',event=>{event.preventDefault();const file=event.dataTransfer.files[0];if(file)selectImage(file);});
  retry.addEventListener('click',compare);
  window.addEventListener('pagehide',()=>{stop();if(objectUrl)URL.revokeObjectURL(objectUrl);});
 }

@@ -50,12 +50,12 @@ function scorePhoto(signature, colors, query) {
 
 async function verifiedJSON(file,get) {
   const r = await get(file.url);
-  if (!r.ok) throw Error('Image index file unavailable');
+  if (!r.ok) throw Error('Index '+r.status+' · '+file.url.split('/').pop());
   const bytes = new Uint8Array(await r.arrayBuffer());
   const digest = await crypto.subtle.digest('SHA-256', bytes);
   const hash = Array.from(new Uint8Array(digest), n => n.toString(16).padStart(2,'0')).join('');
   const zipped = bytes[0] === 31 && bytes[1] === 139;
-  if (hash !== (file.jsonSha256 && !zipped ? file.jsonSha256 : file.sha256)) throw Error('Image index checksum mismatch');
+  if (hash !== (file.jsonSha256 && !zipped ? file.jsonSha256 : file.sha256)) throw Error('Index integrity · '+file.url.split('/').pop());
   const body = zipped ? new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip')) : bytes;
   return new Response(body).json();
 }
