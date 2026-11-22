@@ -1,0 +1,36 @@
+name: Sync PikoBuy Sheet product images
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Refresh Kakobuy Pick image index"]
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: write
+concurrency:
+  group: pikobuy-sheet-images
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            pikobuy-sheet-net/maintenance
+            pikobuy-sheet-net/assets/visual-index
+            kakobuypick-com/public/image-index
+            kakobuypick-com/src/lib/visual
+      - name: Verify the complete shared inventory before publishing
+        run: python3 pikobuy-sheet-net/maintenance/build-image-index.py
+      - name: Publish changed PikoBuy fingerprints
+        run: |
+          git add -- pikobuy-sheet-net/assets/visual-index pikobuy-sheet-net/catalog-image-index.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh PikoBuy Sheet product image coverage'
+          git pull --rebase origin main
+          git push origin HEAD:main
