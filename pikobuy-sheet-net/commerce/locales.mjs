@@ -56,8 +56,13 @@ async function localizeMarkup(html,lang,env,request,editorial){
  const sensitive=/^(?:https?:|\/|[\d$€£¥ .,/%×–+()–-]+$)/;
  function lookup(raw,map,collect){
   const key=localeKey(raw);
+  if(/^(?:[a-z0-9-]+\.)+[a-z]{2,}$/i.test(key))return raw;
   if(!key || sensitive.test(key)||!/[\p{L}]/u.test(key)||key.length>4500)return raw;
   let tr=Object.hasOwn(pack,key)?pack[key]:map?.get(key);
+  if(!tr){
+   const parts=key.match(/^([←→↗\s]*)([\s\S]*?)([\s·:→↗\d]*)$/u);
+   if(parts && parts[2]!==key && Object.hasOwn(pack,parts[2]))tr=parts[1]+pack[parts[2]]+parts[3];
+  }
   if(!tr){const title=titleFor(key);if(title!==key)tr=title;}
   if(!tr && collect && !authored && (lang!=='en'||/[\p{Script=Han}]/u.test(key)))missing.add(key);
   return typeof tr==='string'?raw.replace(/\S[\s\S]*\S|\S/,()=>escapeHtml(tr)):raw;
@@ -84,7 +89,10 @@ async function localizeMarkup(html,lang,env,request,editorial){
      return token.slice(0,start)+JSON.stringify(schema).replaceAll('<','\\u003c')+token.slice(end);
     }catch{return token}
    }
-   if(skipMenu||skipOption||/^<(script|style|!)/i.test(token))return token;
+   if(skipMenu || skipOption){
+    return token.replace(/aria-label="(Language|Currency)"/g,(_,word)=>'aria-label="'+lookup(word,map,collect)+'"');
+   }
+   if(/^<(script|style|!)/i.test(token))return token;
    if(token[0]!=='<')return lookup(token,map,collect);
    const attrs=token.replace(attrPattern,(_,name,value)=>name+'="'+lookup(value,map,collect)+'"');
    if(/^<meta\b/i.test(attrs)&&/(name|property)="(?:description|og:title|og:description|twitter:title|twitter:description)"/.test(attrs))return attrs.replace(/content="([^"]*)"/,(_,v)=>'content="'+lookup(v,map,collect)+'"');

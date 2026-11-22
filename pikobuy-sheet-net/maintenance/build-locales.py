@@ -77,6 +77,37 @@ def overrides(lang):
             "Product unavailable": "商品暂不可用", "Register on Pikobuy ↗": "注册 PikoBuy ↗",
             "Select a style": "选择款式", "Selected style": "已选款式", "Shipping": "配送",
         })
+    link_guide = "PikoBuy Links Guide: Taobao, Weidian, 1688 & Yupoo"
+    parcel_guide = "PikoBuy Parcel Consolidation & Packing Guide (2026)"
+    reviewed = {
+        "da": {link_guide: "Guide til PikoBuy-links fra Taobao, Weidian, 1688 og Yupoo"},
+        "el": {
+            link_guide: "Οδηγός συνδέσμων PikoBuy για Taobao, Weidian, 1688 και Yupoo",
+            parcel_guide: "Οδηγός ενοποίησης και συσκευασίας δεμάτων PikoBuy (2026)",
+            "PikoBuy Guides: Shipping, QC, Fees & Product Research": "Οδηγοί PikoBuy για αποστολές, έλεγχο ποιότητας, χρεώσεις και έρευνα προϊόντων",
+            "Acne Studios Longsleeve": "Μακρυμάνικο Acne Studios", "Fuzzy Slippers": "Χνουδωτές παντόφλες",
+            "Palm Angels Short": "Σορτς Palm Angels",
+        },
+        "fi": {
+            link_guide: "PikoBuy-linkkiopas: Taobao, Weidian, 1688 ja Yupoo",
+            "PikoBuy Returns: 5-Day Warehouse Guide": "PikoBuy-palautukset: varaston viiden päivän määräaika",
+        },
+        "sk": {
+            link_guide: "Sprievodca odkazmi PikoBuy: Taobao, Weidian, 1688 a Yupoo",
+            parcel_guide: "Sprievodca zlučovaním a balením zásielok PikoBuy (2026)",
+        },
+        "sv": {
+            link_guide: "Guide till PikoBuy-länkar från Taobao, Weidian, 1688 och Yupoo",
+            "PikoBuy Spreadsheet Research: From a Find to a Better Shortlist": "Produktjämförelser i PikoBuys kalkylark: från fynd till genomtänkt urval",
+        },
+        "bg": {
+            "Acne Studios Longsleeve": "Блуза с дълъг ръкав Acne Studios", "Diesel Bag": "Чанта Diesel",
+            "Palm Angels Short": "Къси панталони Palm Angels", "identity test": "проверка на идентичността",
+            "size test": "проверка на размера", "source test": "проверка на източника",
+            "Run four tests. The": "Направете четири проверки. Първата е",
+        },
+    }
+    result.update(reviewed.get(lang, {}))
     return result
 
 
@@ -207,6 +238,11 @@ def run():
             save(lang, {})
             continue
         dictionary = json.loads(path.read_text()) if path.exists() else {}
+        # Retry untranslated prose independently of the original request batch.
+        dictionary = {
+            source: translated for source, translated in dictionary.items()
+            if source != translated or len(source.split()) < 5
+        }
         for source, choices in aligned[lang].items():
             if len(choices) == 1:
                 dictionary[source] = next(iter(choices))

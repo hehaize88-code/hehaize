@@ -21,7 +21,7 @@ export function parseListingStyles(page,id) {
   if(String(model?.item_info?.item_id)!==id) throw Error('Wrong product');
   const properties=model.sku_properties || {};
   const groups=(properties.attr_list||[]).map(group=>({
-    name:String(group.attr_title||'Styles'),
+    name:/^(?:款式|style)\s*0?$/i.test(group.attr_title||'')?'Styles':String(group.attr_title||'Styles'),
     values:(group.attr_values||[]).map(value=>({id:String(value.attr_id),name:String(value.attr_value||''),image:imageAddress(value.img)}))
   })).filter(group=>group.values.length);
   const variants=Object.values(properties.sku||{}).filter(sku=>/^\d+$/.test(String(sku.id))).map(sku=>({
