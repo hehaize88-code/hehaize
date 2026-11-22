@@ -1,3 +1,4 @@
+import { loadSellerVariants, purchasePanel, readAgentLinks } from './purchase.mjs';
 import { nav, footer } from './chrome.mjs';
 import { productHelp, categoryHelp } from './product-guides.mjs';
 // Public catalogue adapter. All catalogue reads come from cnbuycha.com.
@@ -46,7 +47,7 @@ export function parseDetail(html) {
  const sourceUrl=first(section,/href="(https:\/\/weidian\.com\/[^\"]+)"/);
  const id=sourceUrl?new URL(sourceUrl).searchParams.get('itemID')||'':'';
  const images=[...section.matchAll(/<img[^>]*itemprop="image"[^>]*src="([^"]+)"/g)].map(m=>imageUrl(m[1])).filter(Boolean);
- return {title:textOnly(first(section,/<h1[^>]*>([\s\S]*?)<\/h1>/)),sourceId:id,price:first(section,/<meta itemprop="price" content="([^"]+)"/),images:[...new Set(images)],sourceUrl,related:parseList(html).products};
+ return {title:textOnly(first(section,/<h1[^>]*>([\s\S]*?)<\/h1>/)),sourceId:id,price:first(section,/<meta itemprop="price" content="([^"]+)"/),images:[...new Set(images)],sourceUrl,agentLinks:readAgentLinks(html,id),related:parseList(html).products};
 }
 // Hipobuy accepts the original Weidian item ID, not the catalogue row ID.
 export function buyUrl(sourceId) {
@@ -61,11 +62,11 @@ const labels=lang=>COPY[lang]||COPY.en;
 function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://hipobuyy-sheet.com'+prefix(lang)+path;
  const crumbs={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Hipobuy Spreadsheet',item:'https://hipobuyy-sheet.com/'+lang+'/'},{'@type':'ListItem',position:2,name:title,item:canonical}]};
- const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | Hipobuy Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://hipobuyy-sheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://hipobuyy-sheet.com/en${path}"><link rel="icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261027-search"><script src="/assets/site.js?v=20261027-search" defer></script><script src="/assets/catalog.js?v=20261027-search" defer></script><link rel="stylesheet" href="/assets/mobile-inner.css?v=20261013-mobile-1"><script defer src="/assets/mobile-inner.js?v=20261013-mobile-1"></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
+ const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)} | Hipobuy Spreadsheet</title><meta name="description" content="${escapeHtml(description)}"><script type="application/ld+json">${JSON.stringify(crumbs).replaceAll('<','\\u003c')}</script><meta name="robots" content="${noindex?'noindex,follow':'index, follow'}"><link rel="canonical" href="${canonical}">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://hipobuyy-sheet.com${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://hipobuyy-sheet.com/en${path}"><link rel="icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261027-search"><script src="/assets/site.js?v=20261027-search" defer></script><script src="/assets/catalog.js?v=20261027-search" defer></script><link rel="stylesheet" href="/assets/mobile-inner.css?v=20261013-mobile-1"><script defer src="/assets/mobile-inner.js?v=20261013-mobile-1"></script><link rel="stylesheet" href="/assets/purchase.css?v=1"><script defer src="/assets/purchase.js?v=1"></script></head><body class="catalog-page mobile-inner">${nav(lang,path,query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
  return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-hipobuy-release':'20261017-five-language-seo'}});
 }
 export function card(p,lang) {
- return `<article class="catalog-card"><a href="${localPath(p.path,lang)}"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" width="400" height="400" loading="lazy"><h2>${escapeHtml(p.title)}</h2><div class="card-meta"><strong>${money(p.price)}</strong><span>USD · ${({en:'Photos',de:'Bilder',es:'Fotos',fr:'Photos',it:'Foto'})[lang]} ↗</span></div></a></article>`;
+ return `<article class="catalog-card"><a href="${localPath(p.path,lang)}"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" width="400" height="400" loading="lazy"><h2>${escapeHtml(p.title)}</h2><div class="card-meta"><strong data-usd="${escapeHtml(p.price)}">${money(p.price)}</strong><span>${({en:'Photos',de:'Bilder',es:'Fotos',fr:'Photos',it:'Foto'})[lang]} ↗</span></div></a></article>`;
 }
 function searchForm(lang,q='',category='AllProducts',sort='new') {
  const t=labels(lang);
@@ -80,6 +81,15 @@ export async function upstream(path,params) {
 }
 export async function catalogueRoute(request,env) {
  const url=new URL(request.url),match=url.pathname.match(/^\/(?:(en|es|de|fr|it)\/)?catalog(?:\/(.*))?$/);
+ if(url.pathname==='/api/image-search/results') {
+  const paths=url.searchParams.getAll('p');
+  if(paths.length>24||paths.some(p=>!/^\/[a-z0-9-]+\/\d+\.html$/.test(p)))return Response.json({error:'Invalid path'},{status:400});
+  const response=await env.ASSETS.fetch(new Request(new URL('/assets/image-search-names.json',url)));
+  if(!response.ok)return Response.json({error:'Index unavailable'},{status:503});
+  const names=await response.json();
+  if(paths.some(p=>!Object.hasOwn(names,p)))return Response.json({error:'Index updated'},{status:409});
+  return Response.json({titles:paths.map(p=>names[p])},{headers:{'cache-control':'public,max-age=300'}});
+ }
  if(url.pathname==='/api/catalog') {
   if(request.method!=='GET')return new Response(null,{status:405});
   try{const q=new URLSearchParams();for(const k of ['q','sort','page'])if(url.searchParams.has(k))q.set(k,url.searchParams.get(k).slice(0,100));
@@ -99,13 +109,14 @@ export async function catalogueRoute(request,env) {
   return Response.redirect(destination.href,302);
  }
  if(tail==='image-search/') {
-  return shell(lang,path,`Hipobuy ${t[6]}`,t[16],`<p class="catalog-eyebrow">HIPOBUY SPREADSHEET</p><h1>${t[6]}</h1><p>${t[16]}</p><section class="image-search-panel"><label for="image-file" class="image-drop">${t[6]}<input id="image-file" type="file" accept="image/jpeg,image/png,image/webp"></label><img id="image-preview" alt="" hidden><p id="image-status" role="status" aria-live="polite"></p><p class="catalog-note">${t[19]}</p></section><div class="catalog-grid" id="image-results"></div>`,{noindex:true});
+  return shell(lang,path,`Hipobuy ${t[6]}`,t[16],`<p class="catalog-eyebrow">HIPOBUY SPREADSHEET</p><h1>${t[6]}</h1><p>${t[16]}</p><section class="image-search-panel"><label for="image-file" class="image-drop">${t[6]}<input id="image-file" type="file" data-i18n-indexed="Indexed products" data-i18n-images="Searchable images" data-i18n-searching="Searching catalogue images…" data-i18n-format="Choose a JPEG, PNG or WebP under 10 MB." data-i18n-failure="Image search is temporarily unavailable. Please try again." data-i18n-matches="Matching products" data-i18n-empty="No similar products found." accept="image/jpeg,image/png,image/webp"></label><img id="image-preview" alt="" hidden><p id="image-status" role="status" aria-live="polite"></p><p class="catalog-note">${t[19]}</p></section><div class="catalog-grid" id="image-results"></div>`,{noindex:true});
  }
  try {
   if(/^[a-z0-9-]+\/\d+\.html$/i.test(tail)) {
    const product=parseDetail(await upstream('/'+tail));if(!product.title)return shell(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
-   const buy=buyUrl(product.sourceId);
-   return shell(lang,path,product.title,`${product.title}. ${t[8]}. ${t[15]}`,`<a class="back" href="${base(lang)}/">← ${t[7]}</a><section class="catalog-detail"><div class="catalog-gallery"><div class="gallery-main"><button type="button" data-gallery-prev aria-label="${t[11]}">‹</button><img id="gallery-main" src="${escapeHtml(product.images[0]||'')}" alt="${escapeHtml(product.title)}" width="800" height="800"><button type="button" data-gallery-next aria-label="${t[12]}">›</button></div><div class="gallery-thumbs">${product.images.map((im,i)=>`<button type="button" data-gallery-index="${i}" aria-label="${t[8]} ${i+1}" aria-current="${i===0}"><img src="${escapeHtml(im)}" alt="${escapeHtml(product.title)} ${i+1}" width="120" height="120" loading="lazy"></button>`).join('')}</div></div><div class="catalog-product-info"><p class="catalog-eyebrow">HIPOBUY SPREADSHEET</p><h1>${escapeHtml(product.title)}</h1><p>${t[14]}: <strong>${escapeHtml(product.sourceId)}</strong></p><p class="detail-price">${money(product.price)} <small>USD</small></p>${buy?`<a class="buy-button" href="${escapeHtml(buy)}" target="_blank" rel="noopener noreferrer" data-track-event="hipobuy_product_click">${t[9]} ↗</a>`:''}<h2>${t[8]}</h2><p>${t[15]}</p>${productHelp(lang,tail.split('/')[0],product,escapeHtml)}</div></section><h2>${t[17]}</h2><div class="catalog-grid">${product.related.slice(0,8).map(p=>card(p,lang)).join('')}</div>`);
+   const variants = await loadSellerVariants(product.sourceId);
+   const panel = purchasePanel(product, variants, t, escapeHtml);
+   return shell(lang,path,product.title,`${product.title}. ${t[8]}. ${t[15]}`,`<a class="back" href="${base(lang)}/">← ${t[7]}</a>${panel}${productHelp(lang,tail.split('/')[0],product,escapeHtml)}<h2>${t[17]}</h2><div class="catalog-grid">${product.related.slice(0,8).map(p=>card(p,lang)).join('')}</div>`);
   }
   const cat=tail.replace(/\/$/,'')||'AllProducts';if(!CATEGORIES.includes(cat))return shell(lang,path,'Not found','',`<h1>404</h1>`,{status:404,noindex:true});
   const q=(url.searchParams.get('q')||url.searchParams.get('keywords')||'').trim().slice(0,100);
@@ -115,6 +126,6 @@ export async function catalogueRoute(request,env) {
   const route=localPath('/'+cat+'/',lang),link=(s,p=1)=>`${route}?${new URLSearchParams({q,sort:s,page:String(p)})}`;
   const names=CATEGORY_LABELS[lang]||CATEGORY_LABELS.en,categoryTitle=names[CATEGORIES.indexOf(cat)];
   const title=cat==='AllProducts'?t[0]:`Hipobuy ${categoryTitle} Spreadsheet`;
-  return shell(lang,path,title,`${title}. ${t[15]}`,`<p class="catalog-eyebrow">HIPOBUY SPREADSHEET · USD</p><h1>${title}</h1><div class="catalog-tools">${searchForm(lang,q,cat,sort)}<a class="image-search-link" href="${base(lang)}/image-search/">▧ ${t[6]}</a></div><nav class="category-filters">${CATEGORIES.map((c,i)=>`<a href="${localPath('/'+c+'/',lang)}" ${c===cat?'aria-current="page"':''}>${names[i]}</a>`).join('')}</nav><div class="sort-row">${[['new',t[3]],['click',t[4]],['price',t[5]]].map(([s,n])=>`<a href="${link(s)}" ${sort===s?'aria-current="page"':''}>${n}</a>`).join('')}<span>${data.total.toLocaleString()} · ${page} / ${Math.max(page,data.pages)}</span></div><div class="catalog-grid">${data.products.length?data.products.map(p=>card(p,lang)).join(''):`<p class="empty-state">${t[13]}</p>`}</div>${categoryHelp(lang)}<nav class="catalog-pagination">${page>1?`<a href="${link(sort,page-1)}">← ${t[11]}</a>`:''}${page<data.pages?`<a href="${link(sort,page+1)}">${t[12]} →</a>`:''}</nav>`,{noindex:!!q||sort!=='new'||page>1,query:url.search});
+  return shell(lang,path,title,`${title}. ${t[15]}`,`<p class="catalog-eyebrow">HIPOBUY SPREADSHEET</p><h1>${title}</h1><div class="catalog-tools">${searchForm(lang,q,cat,sort)}<a class="image-search-link" href="${base(lang)}/image-search/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.5"/></svg> ${t[6]}</a></div><nav class="category-filters">${CATEGORIES.map((c,i)=>`<a href="${localPath('/'+c+'/',lang)}" ${c===cat?'aria-current="page"':''}>${names[i]}</a>`).join('')}</nav><div class="sort-row">${[['new',t[3]],['click',t[4]],['price',t[5]]].map(([s,n])=>`<a href="${link(s)}" ${sort===s?'aria-current="page"':''}>${n}</a>`).join('')}<span>${data.total.toLocaleString()} · ${page} / ${Math.max(page,data.pages)}</span></div><div class="catalog-grid">${data.products.length?data.products.map(p=>card(p,lang)).join(''):`<p class="empty-state">${t[13]}</p>`}</div>${categoryHelp(lang)}<nav class="catalog-pagination">${page>1?`<a href="${link(sort,page-1)}">← ${t[11]}</a>`:''}${page<data.pages?`<a href="${link(sort,page+1)}">${t[12]} →</a>`:''}</nav>`,{noindex:!!q||sort!=='new'||page>1,query:url.search});
  } catch(error) { if(error.status===404)return shell(lang,path,'404','',`<h1>404</h1>`,{status:404,noindex:true}); return shell(lang,path,t[20],t[20],`<h1>${t[20]}</h1><a href="${base(lang)}/">${t[7]}</a>`,{status:503,noindex:true}); }
 }

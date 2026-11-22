@@ -6,7 +6,16 @@
   const copy = {
     en: ['Show more', 'Show fewer'], de: ['Mehr anzeigen', 'Weniger anzeigen'],
     es: ['Mostrar más', 'Mostrar menos'], fr: ['Afficher plus', 'Afficher moins'],
-    it: ['Mostra altro', 'Mostra meno'],
+    it: ['Mostra altro', 'Mostra meno'], nl: ['Meer tonen','Minder tonen'],
+    pt: ['Mostrar mais','Mostrar menos'], pl: ['Pokaż więcej','Pokaż mniej'],
+    ro: ['Arată mai mult','Arată mai puțin'], sv: ['Visa fler','Visa färre'],
+    'zh-CN': ['显示更多','收起'], da: ['Vis flere','Vis færre'],
+    fi: ['Näytä lisää','Näytä vähemmän'], el: ['Εμφάνιση περισσότερων','Εμφάνιση λιγότερων'],
+    cs: ['Zobrazit více','Zobrazit méně'], hu: ['Több megjelenítése','Kevesebb megjelenítése'],
+    bg: ['Показване на още','Показване на по-малко'], sk: ['Zobraziť viac','Zobraziť menej'],
+    hr: ['Prikaži više','Prikaži manje'], ja: ['もっと表示','表示を減らす'],
+    ko: ['더 보기','간략히 보기'], vi: ['Hiện thêm','Thu gọn'],
+    th: ['แสดงเพิ่มเติม','แสดงน้อยลง'], id: ['Tampilkan lebih banyak','Tampilkan lebih sedikit'],
   }[document.documentElement.lang] || ['Show more', 'Show fewer'];
   const sections = [...root.querySelectorAll('.mobile-chapter, .mobile-topic')];
   const lists = [];

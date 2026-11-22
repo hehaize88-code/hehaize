@@ -1,10 +1,10 @@
 
-const RELEASE='hipobuy-20261109-guides-v1';
+const RELEASE='hipobuy-20261122-catalog-v2';
 function finish(response,request) {
  const headers=new Headers(response.headers);headers.set('x-hipobuy-release',RELEASE);headers.set('x-content-type-options','nosniff');headers.set('referrer-policy','strict-origin-when-cross-origin');
  return new Response(request.method==='HEAD'?null:response.body,{status:response.status,headers});
 }
-export default {
+const coreHandler = {
  async fetch(request,env,ctx){
   const url=new URL(request.url);
   if(!['GET','HEAD'].includes(request.method))return new Response(null,{status:405,headers:{allow:'GET, HEAD'}});
@@ -17,12 +17,13 @@ export default {
    if(target.searchParams.has('keywords')){target.searchParams.set('q',target.searchParams.get('keywords'));target.searchParams.delete('keywords');target.searchParams.delete('channelid')}
    return Response.redirect(target,301);
   }
-  if(url.pathname==='/catalog-sitemap.xml'){
+  const shard=url.pathname.match(/^\/catalog-sitemap-([a-z-]+)\.xml$/);
+  if(url.pathname==='/catalog-sitemap.xml' || (shard && Object.hasOwn(SITE_LOCALES,shard[1]))){
    try{
     const source=await upstream('/sitemap.xml');
     const paths=[...new Set([...source.matchAll(/<loc>https:\/\/(?:www\.)?cnbuycha\.com([^<]+)<\/loc>/g)].map(m=>m[1]).filter(p=>/^\/[a-z0-9-]+\/\d+\.html$/i.test(p)||CATEGORIES.some(c=>p==='/'+c+'/')))];
     if(!paths.length)throw Error('No catalogue entries');
-    const body='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+LANGS.flatMap(lang=>paths.map(p=>'<url><loc>https://hipobuyy-sheet.com'+localPath(p,lang)+'</loc></url>')).join('')+'</urlset>';
+    const body='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+(shard ? [shard[1]] : LANGS).flatMap(lang=>paths.map(p=>'<url><loc>https://hipobuyy-sheet.com'+localPath(p,lang)+'</loc></url>')).join('')+'</urlset>';
     return finish(new Response(body,{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public,max-age=300'}}),request);
    }catch{return finish(new Response('Catalogue temporarily unavailable',{status:503,headers:{'retry-after':'60'}}),request)}
   }
@@ -30,4 +31,10 @@ export default {
   if(catalog)return finish(catalog,request);
   return finish(await env.ASSETS.fetch(request),request);
  }
+};
+
+export default {
+  fetch(request, env, ctx) {
+    return localeResponse(request, env, ctx, (r, e, c) => coreHandler.fetch(r, e, c));
+  }
 };

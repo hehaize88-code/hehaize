@@ -201,13 +201,13 @@ def meta(lang,path,title,description):
     article=BY_SLUG.get(path.split('/')[-1]) if path.startswith('articles/') else None
     share_image=article['image'] if article else 'article-listing.jpg'
     sharing=f'<meta property="og:type" content="{"article" if article else "website"}"><meta property="og:site_name" content="Hipobuyy Sheet"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}"><meta property="og:url" content="{SITE}{href(lang,path)}"><meta property="og:image" content="{SITE}/assets/{share_image}"><meta name="twitter:card" content="summary_large_image">'
-    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261109-guides"><script defer src="/assets/site.js?v=20261109-guides"></script><script defer src="/assets/catalog.js?v=20261109-guides"></script></head>'
+    return f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(page_title)}</title><meta name="description" content="{e(description)}"><link rel="canonical" href="{SITE}{href(lang,path)}">{alts}{sharing}<link rel="icon" type="image/png" href="/assets/hipobuy-favicon.png"><link rel="apple-touch-icon" href="/assets/hipobuy-favicon.png"><link rel="stylesheet" href="/assets/catalog.css?v=20261012"><link rel="stylesheet" href="/assets/site.css?v=20261109-guides"><script defer src="/assets/site.js?v=20261109-guides"></script><script defer src="/assets/catalog.js?v=20261109-guides"></script><link rel="stylesheet" href="/assets/purchase.css?v=1"><script defer src="/assets/purchase.js?v=1"></script></head>'
 def shell(lang,path,title,description,body,home=False):
     t=T[lang];nav=''.join(f'<a class="{"active" if path.strip("/")==r else ""}" href="{href(lang,r)}">{e(t["nav"][i])}</a>' for i,r in enumerate(ROUTES) if r != "finds")
     opts=''.join(f'<option value="{href(l,path)}" {"selected" if l==lang else ""}>{l.upper()}</option>' for l in LANGS)
     logo='<span class="logo-image-shell"><img class="logo-image" src="/assets/hipobuy-official-logo1.png" width="244" height="56" alt="HIPOBUY"></span>'
-    head=f'<div class="topline"><div class="wrap"><strong>{e(LOCAL[lang][0])}</strong> · {e(LOCAL[lang][1])}</div></div><header><div class="wrap nav"><div class="brand-actions"><a class="register-left" href="https://hipobuy.com/register" target="_blank" rel="noopener noreferrer" data-track-event="hipobuy_register_click">{e(t["register"])} ↗</a><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a></div><nav class="navlinks" aria-label="{e(LOCAL[lang][2])}">{nav}</nav><select class="langs" id="language" aria-label="Language">{opts}</select></div></header>'
-    footer=f'<footer class="foot"><div class="wrap"><div class="foot-grid"><div><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a><p>{e(t["independent"])}</p></div><nav>{"".join(f"<a href={chr(34)+href(lang,r)+chr(34)}>{e(t[chr(110)+chr(97)+chr(118)][i])}</a>" for i,r in enumerate(ROUTES[1:],1) if r != "finds")}</nav></div><div class="foot-base">© 2026 Hipobuyy Sheet · {e(LOCAL[lang][6])}</div></div></footer>'
+    head=f'<div class="topline"><div class="wrap"><strong>{e(LOCAL[lang][0])}</strong> · {e(LOCAL[lang][1])}</div></div><header><div class="wrap nav"><div class="brand-actions"><a class="register-left" href="https://hipobuy.com/register" target="_blank" rel="noopener noreferrer" data-track-event="hipobuy_register_click">{e(t["register"])} ↗</a><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a></div><nav class="navlinks" aria-label="{e(LOCAL[lang][2])}">{nav}</nav><a class="search-camera" href="/{lang}/catalog/image-search/" aria-label="{e(t["image"])}" title="{e(t["image"])}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.5"/></svg></a><select class="langs" id="language" aria-label="Language">{opts}</select><span class="fx-control"><select data-currency-select aria-label="Currency"><option value="USD">USD</option><option value="CNY">CNY</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="CAD">CAD</option><option value="AUD">AUD</option><option value="HKD">HKD</option><option value="JPY">JPY</option><option value="KRW">KRW</option><option value="BRL">BRL</option><option value="CHF">CHF</option><option value="CZK">CZK</option><option value="DKK">DKK</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option><option value="INR">INR</option><option value="ISK">ISK</option><option value="MXN">MXN</option><option value="MYR">MYR</option><option value="NOK">NOK</option><option value="NZD">NZD</option><option value="PHP">PHP</option><option value="PLN">PLN</option><option value="RON">RON</option><option value="SEK">SEK</option><option value="SGD">SGD</option><option value="THB">THB</option><option value="TRY">TRY</option><option value="ZAR">ZAR</option><option value="TWD">TWD</option><option value="VND">VND</option></select><span data-fx-error hidden role="status">Exchange rates unavailable. Prices shown in USD.</span></span></div></header>'
+    footer=f'<footer class="foot"><div class="wrap"><div class="foot-grid"><div><a class="logo" href="{href(lang)}" aria-label="Hipobuyy Sheet">{logo}</a><p>{e(t["independent"])}</p></div><nav>{"".join(f"<a href={chr(34)+href(lang,r)+chr(34)}>{e(t[chr(110)+chr(97)+chr(118)][i])}</a>" for i,r in enumerate(ROUTES[1:],1) if r != "finds")}</nav></div><div class="foot-base"><a href="https://www.exchangerate-api.com/" rel="external noopener">Exchange rates by ExchangeRate-API</a> · © 2026 Hipobuyy Sheet · {e(LOCAL[lang][6])}</div></div></footer>'
     document_head=meta(lang,path,title,description)
     if path:
         document_head=document_head.replace('</head>', mobile_assets()+'</head>')
@@ -231,13 +231,13 @@ def save(lang,path,body,title,desc):
     directory=DIST/lang/path;directory.mkdir(parents=True,exist_ok=True)
     (directory/'index.html').write_text(shell(lang,path,title,desc,body),encoding='utf-8')
 def button_search(lang):
-    t=T[lang];return f'<form class="search" action="/{lang}/catalog/" method="get" data-shop-search><input name="q" required type="search" aria-label="{e(t["search"])}" placeholder="{e(t["search"])}"><button type="submit">{e(t["searchbutton"])} ↗</button></form>'
+    t=T[lang];return f'<form class="search" action="/{lang}/catalog/" method="get" data-shop-search><input name="q" required type="search" aria-label="{e(t["search"])}" placeholder="{e(t["search"])}"><a class="search-camera" href="/{lang}/catalog/image-search/" aria-label="{e(t["image"])}" title="{e(t["image"])}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.5"/></svg></a><button type="submit">{e(t["searchbutton"])} ↗</button></form>'
 def product(p,lang):
     t=T[lang];cat=CAT_NAMES[lang][CATEGORIES.index(p['category'])]
-    return f'<article class="card" data-product-category="{e(p["category"])}"><a class="photo" href="{e(p["detail"])}" rel="noopener"><img src="{e(p["local_image"])}" width="500" height="500" loading="lazy" alt="{e(p["title"])}"></a><div class="card-body"><span class="tag">{e(cat)}</span><h3>{e(p["title"])}</h3><div class="card-bottom"><strong class="price">${p["price"]:.2f}</strong><a href="{e(p["detail"])}" rel="noopener">{e(t["open"])} ↗</a></div></div></article>'
+    return f'<article class="card" data-product-category="{e(p["category"])}"><a class="photo" href="{e(p["detail"])}" rel="noopener"><img src="{e(p["local_image"])}" width="500" height="500" loading="lazy" alt="{e(p["title"])}"></a><div class="card-body"><span class="tag">{e(cat)}</span><h3>{e(p["title"])}</h3><div class="card-bottom"><strong class="price" data-usd="{p["price"]:.2f}">${p["price"]:.2f}</strong><a href="{e(p["detail"])}" rel="noopener">{e(t["open"])} ↗</a></div></div></article>'
 def product_grid(lang,products):return '<div class="cards">'+''.join(product(p,lang) for p in products)+'</div>'
 def home_card(p,lang):
-    return f'<article class="catalog-card"><a href="/{lang}/catalog{e(p["path"])}"><img src="{e(p["image"])}" alt="{e(p["title"])}" width="400" height="400" loading="lazy"><h2>{e(p["title"])}</h2><div class="card-meta"><strong>${float(p["price"]):.2f}</strong><span>USD · {e(HUBS[lang]["photo"])} ↗</span></div></a></article>'
+    return f'<article class="catalog-card"><a href="/{lang}/catalog{e(p["path"])}"><img src="{e(p["image"])}" alt="{e(p["title"])}" width="400" height="400" loading="lazy"><h2>{e(p["title"])}</h2><div class="card-meta"><strong data-usd="{float(p["price"]):.2f}">${float(p["price"]):.2f}</strong><span>{e(HUBS[lang]["photo"])} ↗</span></div></a></article>'
 def article_cards(lang,limit=None):
     t=T[lang]
     records=sorted(enumerate(EDITORIAL),key=lambda x:(x[1]['published'],x[0]),reverse=True)
@@ -278,7 +278,7 @@ from editorial_components import calculator, editorial_products, related_slugs
 for lang in LANGS:
  t=T[lang]
  cats=''.join(f'<a class="cat" href="{SHOP}/{c}/"><span>{e(CAT_NAMES[lang][i])}</span><span aria-hidden="true">↗</span></a>' for i,c in enumerate(CATEGORIES))
- hero=f'<div class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["hero"])}</h1><p>{e(t["sub"])}</p>{button_search(lang)}<a class="image-shortcut" href="/{lang}/catalog/image-search/">▧ {e(t["image"])} →</a><div class="quicklinks">'+''.join(f'<a class="pill" href="{SHOP}/{c}/">{e(CAT_NAMES[lang][i])} ↗</a>' for i,c in enumerate(CATEGORIES[:5]))+f'</div></div><div class="hero-aside"><span class="label">HIPOBUY / SPREADSHEET</span><strong>{e(t["aside_title"])}</strong><p>{e(t["aside"])}</p><a href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></div></div></div>'
+ hero=f'<div class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">{e(t["eyebrow"])}</span><h1>{e(t["hero"])}</h1><p>{e(t["sub"])}</p>{button_search(lang)}<div class="quicklinks">'+''.join(f'<a class="pill" href="{SHOP}/{c}/">{e(CAT_NAMES[lang][i])} ↗</a>' for i,c in enumerate(CATEGORIES[:5]))+f'</div></div><div class="hero-aside"><span class="label">HIPOBUY / SPREADSHEET</span><strong>{e(t["aside_title"])}</strong><p>{e(t["aside"])}</p><a href="{href(lang,"spreadsheet")}">{e(t["tablelink"])} →</a></div></div></div>'
  link=f'<a class="text-link" href="{href(lang,"spreadsheet")}">{e(t["viewall"])} →</a>'
  home=hero+f'<div class="wrap">{reader_paths(lang)}</div>'+f'<section><div class="wrap">{section_header(t["products"],t["products_sub"],link)}<div id="hipo-live-products" class="catalog-grid">{''.join(home_card(p,lang) for p in HOME_PRODUCTS)}</div></div></section>'
  home+=f'<section style="background:#edf3f8"><div class="wrap">{section_header(t["categories"],t["categories_sub"])}<div class="cat-grid">{cats}</div></div></section>'
@@ -291,7 +291,7 @@ for lang in LANGS:
  filters=''.join(f'<button type="button" data-category-filter="{c}" class="{"on" if c=="all" else ""}">{e(t["all"] if c=="all" else CAT_NAMES[lang][CATEGORIES.index(c)])}</button>' for c in ['all']+CATEGORIES)
  finds=head(lang,2)+f'<div class="wrap route">{button_search(lang)}<div style="height:20px"></div><div class="filterbar">{filters}</div>{product_grid(lang,P)}<p class="empty hide" id="empty">{e(LOCAL[lang][5])}</p><p class="note">{e(t["snapshot"])}</p></div>'
  save(lang,'finds',finds,t['page_titles'][2],t['page_subs'][2])
- rows=''.join(f'<tr><td data-label="{e(LOCAL[lang][3])}"><img src="{e(p["local_image"])}" loading="lazy" alt=""></td><td data-label="{e(t["item"])}">{e(p["title"])}</td><td data-label="{e(t["category"])}">{e(CAT_NAMES[lang][CATEGORIES.index(p["category"])])}</td><td data-label="{e(t["price"])}">${p["price"]:.2f}</td><td data-label="{e(t["link"])}"><a href="{e(p["detail"])}" rel="noopener">{e(t["open"])} ↗</a></td></tr>' for p in P)
+ rows=''.join(f'<tr><td data-label="{e(LOCAL[lang][3])}"><img src="{e(p["local_image"])}" loading="lazy" alt=""></td><td data-label="{e(t["item"])}">{e(p["title"])}</td><td data-label="{e(t["category"])}">{e(CAT_NAMES[lang][CATEGORIES.index(p["category"])])}</td><td data-label="{e(t["price"])}" data-usd="{p["price"]:.2f}">${p["price"]:.2f}</td><td data-label="{e(t["link"])}"><a href="{e(p["detail"])}" rel="noopener">{e(t["open"])} ↗</a></td></tr>' for p in P)
  table=f'<div class="tablewrap"><table class="sp-table"><thead><tr><th>{e(LOCAL[lang][3])}</th><th>{e(t["item"])}</th><th>{e(t["category"])}</th><th>{e(t["price"])}</th><th>{e(t["link"])}</th></tr></thead><tbody>{rows}</tbody></table></div>'
  spreadsheet=head(lang,1)+f'<div class="wrap route">{button_search(lang)}<div style="height:21px"></div>{table}<p class="note">{e(t["snapshot"])}</p></div>'
  save(lang,'spreadsheet',spreadsheet,t['page_titles'][1],t['products_sub'])
@@ -317,18 +317,18 @@ SITEMAP_NS='http://www.sitemaps.org/schemas/sitemap/0.9'
 XHTML_NS='http://www.w3.org/1999/xhtml'
 ET.register_namespace('',SITEMAP_NS)
 ET.register_namespace('xhtml',XHTML_NS)
+# Catalogue shards stay below the 50,000 URL limit as languages are added.
+SITE_LOCALES = ['en','de','fr','es','it','nl','pt','pl','ro','sv','zh-cn','da','fi','el','cs','hu','bg','sk','hr','ja','ko','vi','th','id']
 sitemap=ET.Element(f'{{{SITEMAP_NS}}}urlset')
 for route in [r for r in ROUTES if r not in ['spreadsheet','finds']]+[f'articles/{slug}' for slug in SLUGS]:
- for lang in LANGS:
+ for lang in SITE_LOCALES:
   url=ET.SubElement(sitemap,f'{{{SITEMAP_NS}}}url')
   ET.SubElement(url,f'{{{SITEMAP_NS}}}loc').text=SITE+href(lang,route)
   if route.startswith('articles/'):
    ET.SubElement(url,f'{{{SITEMAP_NS}}}lastmod').text=BY_SLUG[route.split('/')[-1]]['modified']
   elif route in ['', 'articles', 'shipping', 'faq']:
    ET.SubElement(url,f'{{{SITEMAP_NS}}}lastmod').text='2026-11-09'
-  for alternate in LANGS+['x-default']:
-   target='en' if alternate=='x-default' else alternate
-   ET.SubElement(url,f'{{{XHTML_NS}}}link',{'rel':'alternate','hreflang':alternate,'href':SITE+href(target,route)})
+  # Page heads carry the reciprocal hreflang links.
 ET.indent(sitemap,space='  ')
 ET.ElementTree(sitemap).write(DIST/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 print('Built',len(list(DIST.rglob('index.html'))),'localized pages and',len(ROUTES+SLUGS),'route groups with a sitemap')
@@ -344,10 +344,18 @@ nav_code+="function nav(lang,path,query=''){return CHROME[lang].header.replaceAl
 (ROOT/'commerce/chrome.mjs').write_text(nav_code.replace('function nav(', 'export function nav(').replace('function footer(', 'export function footer('))
 source=(ROOT/'commerce/catalog.mjs').read_text().replace("import { nav, footer } from './chrome.mjs';",nav_code)
 source=source.replace("import { productHelp, categoryHelp } from './product-guides.mjs';",(ROOT/'commerce/product-guides.mjs').read_text().replace('export function ','function '))
+source=source.replace("import { loadSellerVariants, purchasePanel, readAgentLinks } from './purchase.mjs';",(ROOT/'commerce/purchase.mjs').read_text())
+source+=(ROOT/'commerce/locales.mjs').read_text()+'\n'
 source+=(ROOT/'commerce/worker.mjs').read_text()
+# Pages exposes only the request handler. Source module exports remain available for tests.
+source=re.sub(r'^export (?=(?:async )?function |const )','',source,flags=re.M)
 (DIST/'_worker.js').write_text(source)
 (DIST/'_routes.json').write_text(json.dumps({'version':1,'include':['/*'],'exclude':['/assets/*','/robots.txt']}))
 (DIST/'editorial-sitemap.xml').write_bytes((DIST/'sitemap.xml').read_bytes())
-(DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>'+SITE+'/editorial-sitemap.xml</loc></sitemap><sitemap><loc>'+SITE+'/catalog-sitemap.xml</loc></sitemap></sitemapindex>')
+sitemap_index=ET.Element(f'{{{SITEMAP_NS}}}sitemapindex')
+for filename in ['editorial-sitemap.xml']+[f'catalog-sitemap-{lang}.xml' for lang in SITE_LOCALES]:
+    entry=ET.SubElement(sitemap_index,f'{{{SITEMAP_NS}}}sitemap')
+    ET.SubElement(entry,f'{{{SITEMAP_NS}}}loc').text=f'{SITE}/{filename}'
+ET.ElementTree(sitemap_index).write(DIST/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 
 (DIST/'404.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><title>Page not found | Hipobuy Spreadsheet</title><link rel="icon" href="/assets/hipobuy-favicon.png"></head><body><main><h1>Page not found</h1><p><a href="/en/">Hipobuy Spreadsheet</a></p></main></body></html>')

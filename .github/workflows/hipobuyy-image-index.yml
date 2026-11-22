@@ -1,0 +1,48 @@
+name: Refresh Hipobuy visual search
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/hipobuyy-image-index.yml'
+      - 'hipobuyy-sheet-com/scripts/refresh-visual-index.py'
+  workflow_dispatch:
+  schedule:
+    - cron: '31 */3 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: hipobuyy-image-index
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: hipobuyy-sheet-com
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/hipobuy-visual
+          key: hipobuy-visual-v1-${{ github.run_id }}
+          restore-keys: hipobuy-visual-v1-
+      - name: Refresh image fingerprints
+        working-directory: hipobuyy-sheet-com
+        run: |
+          set +e
+          timeout 150m python -u scripts/refresh-visual-index.py --cache-dir "$HOME/.cache/hipobuy-visual" --metadata-hours 168 --batch-size 40 --max-products 500
+          status=$?
+          if [ "$status" -ne 0 ] && [ "$status" -ne 124 ]; then exit "$status"; fi
+      - name: Publish completed batches
+        run: |
+          git add hipobuyy-sheet-com/dist/assets/image-search-data.mjs hipobuyy-sheet-com/dist/assets/image-search-names.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name github-actions
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh Hipobuy catalogue image fingerprints'
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
