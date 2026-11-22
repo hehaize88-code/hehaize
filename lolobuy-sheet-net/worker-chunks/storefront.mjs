@@ -18,7 +18,7 @@ export function storefront(application) {
     async fetch(request, env, ctx) {
       const path = new URL(request.url).pathname;
       if (path.startsWith('/lolo-commerce/')) return commerceRoute(request);
-      if (path.startsWith('/visual-index/')) return env.ASSETS.fetch(request);
+      if (path === '/commerce-client.js' || path.startsWith('/visual-index/')) return env.ASSETS.fetch(request);
       return languageFetch(request, env, ctx, page);
     }
   };
