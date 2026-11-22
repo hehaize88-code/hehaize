@@ -3,8 +3,6 @@ import Icon from './Icon.astro';
 import {labels} from '../lib/commerce/locale.mjs';
 import {imageMeta} from '../lib/visual/manifest.mjs';
 import {localized,translate} from '../lib/i18n';
-import {imageFeatures} from '../lib/visual/features.js';
-import {bindImageSearch} from '../lib/visual/client.js';
 const {lang}=Astro.props;
 const t=labels(lang);
 const config=JSON.stringify({lang,base:localized(lang,'/products'),shards:imageMeta.shards,revision:imageMeta.revision,
@@ -14,7 +12,7 @@ const progress:Record<string,string>={
 };
 const updated=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeZone:'UTC'}).format(Date.parse(imageMeta.updated));
 ---
-<div class="upload-search">
+<div class="upload-search" id="visual-search" data-config={config}>
   <a class="breadcrumb" href={localized(lang,'/')}>← {translate(lang).home}</a>
   <h1>{t.imageSearch}</h1>
   <p>{t.uploadHelp}</p>
@@ -30,7 +28,15 @@ const updated=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeZone:'UTC'}).
   <button type="button" id="visual-retry" hidden>{t.retry}</button>
   <div id="visual-results"></div>
 </div>
-<script is:inline set:html={`(${bindImageSearch.toString()})(${config},${imageFeatures.toString()});`}></script>
+<script>
+  import {imageFeatures} from '../lib/visual/features.js';
+  import {bindImageSearch} from '../lib/visual/client.js';
+
+  const root = document.getElementById('visual-search');
+  if (root?.dataset.config) {
+    bindImageSearch(JSON.parse(root.dataset.config), imageFeatures);
+  }
+</script>
 <style is:global>
 .upload-search{padding-bottom:24px}.upload-search h1{margin:.6em 0 .3em}.upload-area{display:grid;gap:12px;justify-items:center;padding:clamp(22px,4vw,48px);border:2px dashed var(--line);border-radius:var(--radius);background:var(--paper)}
 .upload-area.dragging{border-color:var(--red)}.upload-area label,.upload-search button{cursor:pointer;padding:.75em 1.4em;background:var(--red);border:0;border-radius:24px;color:white;font-weight:700;position:relative}
