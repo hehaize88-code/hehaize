@@ -16,6 +16,14 @@ import {productGlossaries} from './commerce/product-glossaries.js';
  const input=document.getElementById('image-file');
  if(!input)return;
  const status=document.getElementById('image-status'), results=document.getElementById('image-results'), preview=document.getElementById('image-preview');
+ const pager=document.getElementById('image-pages');
+ const pageInput=pager.querySelector('input');
+ const previous=pager.querySelector('[data-prev]'),next=pager.querySelector('[data-next]');
+ let renderPage=null;
+ previous.onclick=()=>renderPage(Number(pageInput.value)-1,true);
+ next.onclick=()=>renderPage(Number(pageInput.value)+1,true);
+ pageInput.onchange=()=>renderPage(Number(pageInput.value),true);
+ pageInput.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();pageInput.blur();}};
  const t=key=>PRODUCT_UI[locale]?.[key]||key;
  const number=n=>Number(n).toLocaleString(locale);
  let sequence=0,worker=null,objectUrl=null,detailsPromise=null;
@@ -28,6 +36,10 @@ import {productGlossaries} from './commerce/product-glossaries.js';
   if(/(^|\.)geilicdn\.com$/.test(url.hostname)&&/\.(jpg|jpeg|png)$/i.test(url.pathname)){url.pathname+='.webp';url.search='?w=400&h=400';}
   return url.href;
  }
+ results.addEventListener('error',event=>{
+  const img=event.target;
+  if(img.tagName==='IMG'&&img.dataset.original){const original=img.dataset.original;delete img.dataset.original;if(img.src!==original)img.src=original;}
+ },true);
  function stop(){
   sequence++;
   worker?.terminate();worker=null;
@@ -36,7 +48,7 @@ import {productGlossaries} from './commerce/product-glossaries.js';
  async function selectImage(file){
   stop();
   const turn=sequence;
-  results.replaceChildren();preview.hidden=true;status.textContent='';
+  pager.hidden=true;pager.style.display='none';renderPage=null;results.replaceChildren();preview.hidden=true;status.textContent='';
   if(!file)return;
   if(file.size<=0 || file.size>10*1024*1024 || !(/^image\/(jpeg|png|webp)$/.test(file.type)||(!file.type&&/\.(jpe?g|png|webp)$/i.test(file.name)))){
    status.textContent=t('Choose a JPEG, PNG or WebP under 10 MB.');return;
@@ -48,7 +60,7 @@ import {productGlossaries} from './commerce/product-glossaries.js';
    preview.src=image.src;preview.hidden=false;
    status.textContent=t('Loading image index…');
    const query=fingerprint(image);query.resize=resizeFingerprint(image);
-   const current=new Worker('/commerce/visual-worker-20261122.js');worker=current;
+   const current=new Worker('/commerce/visual-worker-20261122.js?v=2');worker=current;
    const metadata=detailData();
    current.onerror=()=>{if(turn===sequence){status.textContent=t('Image index unavailable. Please try again.');current.terminate();worker=null;}};
    current.onmessage=async({data})=>{
@@ -62,14 +74,25 @@ import {productGlossaries} from './commerce/product-glossaries.js';
     const [titles,prices]=await metadata;
     if(turn!==sequence)return;
     const index=data.result;
-    results.innerHTML=index.items.map(({p})=>{
+    const pageSize=24,pages=Math.ceil(index.items.length/pageSize);
+    pager.querySelector('span').textContent=number(pages);
+    pageInput.max=String(pages);
+    renderPage=(requested,scroll=false)=>{
+     const page=Math.min(Math.max(1,Math.floor(requested)||1),pages||1);
+     pageInput.value=String(page);
+     previous.disabled=page===1;next.disabled=page>=pages;
+     const start=(page-1)*pageSize;
+     results.innerHTML=index.items.slice(start,start+pageSize).map(({p})=>{
      const title=translateProductTitle(p.title,locale,productGlossaries,{[locale]:titles});
      const amount=prices[p.path]??(p.price?Number(p.price):null);
      const price=Number.isFinite(amount)?`<div class="card-meta"><strong data-price-amount="${amount}" data-price-currency="USD">$${amount.toFixed(2)}</strong><span data-currency-code>USD</span></div>`:'';
-     return `<article class="catalog-card"><a href="${base}${esc(matchingPhotoPath(p))}"><img src="${esc(thumbnail(p.image))}" alt="${esc(title)}" width="400" height="400" loading="lazy" referrerpolicy="no-referrer"><h2>${esc(title)}</h2>${price}</a></article>`;
+     return `<article class="catalog-card"><a href="${base}${esc(matchingPhotoPath(p))}"><img src="${esc(thumbnail(p.image))}" data-original="${esc(p.image)}" alt="${esc(title)}" width="400" height="400" loading="lazy" referrerpolicy="no-referrer"><h2>${esc(title)}</h2>${price}</a></article>`;
     }).join('');
     document.dispatchEvent(new Event('joyagoo:prices'));
-    status.textContent=[t('Similar products')+' '+number(index.items.length),t('Products indexed')+' '+number(index.productCount),t('Images')+' '+number(index.imageCount),t('Index updated')+' '+index.updatedAt].join(' · ');
+    if(scroll)results.scrollIntoView({block:'start'});
+    };
+    renderPage(1);pager.hidden=pages<=1;pager.style.display=pages>1?'flex':'none';
+    status.textContent=[t('Products indexed')+' '+number(index.productCount),t('Images')+' '+number(index.imageCount),t('Index updated')+' '+index.updatedAt].join(' · ');
    };
    current.postMessage({id:turn,query});
   }catch{if(turn===sequence)status.textContent=preview.hidden?t('Choose a JPEG, PNG or WebP under 10 MB.'):t('Image index unavailable. Please try again.');}

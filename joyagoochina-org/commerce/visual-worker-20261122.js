@@ -1,3 +1,4 @@
+"use strict";
 (() => {
   var __defProp = Object.defineProperty;
   var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -9,7 +10,7 @@
       __defProp(target, name, { get: all[name], enumerable: true });
   };
 
-  // repair/compact-search.mjs
+  // public/commerce/compact-search.mjs
   var compact_search_exports = {};
   __export(compact_search_exports, {
     compactSearch: () => compactSearch,
@@ -106,17 +107,18 @@
     if (loaded !== manifest.indexedImageCount || paths.size !== manifest.indexedProductCount) throw Error("Incomplete image catalogue");
     matches.sort((a, b) => a.score - b.score || a.p.path.localeCompare(b.p.path));
     const weak = !matches.length || matches[0].score > 0.24;
-    const items = weak ? matches.slice(0, 6) : matches.filter((x) => x.score <= Math.min(0.24, matches[0].score + 0.075)).slice(0, limit);
+    const items = matches;
     return { items, weak, imageCount: loaded, productCount: paths.size, updatedAt: manifest.updatedAt, failedImageCount: manifest.failedImageCount || 0, failedStylePageCount: manifest.failedStylePageCount || 0, failedDetailCount: manifest.failedDetailCount || 0, pendingImageCount: manifest.pendingImageCount || 0 };
   }
   var population;
   var init_compact_search = __esm({
-    "repair/compact-search.mjs"() {
+    "public/commerce/compact-search.mjs"() {
+      "use strict";
       population = [0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4];
     }
   });
 
-  // repair/image-search-core.mjs
+  // public/commerce/image-search-core.mjs
   var MAX_BYTES = 20 * 1024 * 1024;
   function validProduct(p) {
     return p && /^\/[a-z0-9-]+\/\d+\.html$/.test(p.path) && /^[01]{64}$/.test(p.hash) && Array.isArray(p.cells) && p.cells.length === 48 && p.cells.every((n) => Number.isFinite(n) && n >= 0 && n <= 255) && typeof p.title === "string" && typeof p.image === "string" && (/^\/(?:media\/products|uploads\/allimg)\//.test(p.image) || /^https:\/\/[a-z0-9.-]+\//i.test(p.image));
@@ -143,45 +145,46 @@
     return { items: ranked.filter((item) => item.score <= Math.min(0.27, best + 0.09)), weak: false };
   }
 
-  // repair/image-search-stream.mjs
-  var pause = (ms, signal) => new Promise((resolve, reject) => {
-    if (signal?.aborted) {
-      reject(signal.reason);
-      return;
-    }
-    const abort = () => {
-      clearTimeout(timer);
-      reject(signal.reason);
-    };
-    const timer = setTimeout(() => {
-      signal?.removeEventListener("abort", abort);
-      resolve();
-    }, ms);
-    signal?.addEventListener("abort", abort, { once: true });
-  });
+  // public/commerce/image-search-stream.mjs?v=20261112-v4
   async function searchAllImages(query, { fetcher = fetch, signal, onProgress = () => {
-  }, limit = 24, wait = pause } = {}) {
-    async function get(url, options = {}) {
+  }, limit = 24 } = {}) {
+    const request = async (url, options = {}) => {
       for (let attempt = 0; attempt < 3; attempt++) {
         try {
-          const response2 = await fetcher(url, { ...options, signal });
-          if (![408, 429, 500, 502, 503, 504].includes(response2.status) || attempt === 2) return response2;
-          const header = response2.headers.get("Retry-After");
-          const seconds = header === null ? 1 + attempt : Number(header);
-          const delay = Number.isFinite(seconds) ? Math.max(0, seconds * 1e3) : Math.max(0, Date.parse(header) - Date.now()) || 1e3;
-          await wait(delay, signal);
+          const r = await fetcher(url, { ...options, signal });
+          if (attempt === 2 || ![408, 429, 500, 502, 503, 504].includes(r.status)) return r;
+          const after = r.headers?.get("retry-after"), seconds = after ? Number(after) || Math.max(0, (Date.parse(after) - Date.now()) / 1e3) : 0;
+          if (seconds > 20) return r;
+          await pause(Math.max(seconds * 1e3, 500 * (attempt + 1)));
         } catch (error) {
           if (signal?.aborted || attempt === 2) throw error;
-          await wait(1e3 * (attempt + 1), signal);
+          await pause(500 * (attempt + 1));
         }
       }
+    };
+    function pause(ms) {
+      return new Promise((resolve, reject) => {
+        if (signal?.aborted) {
+          reject(signal.reason);
+          return;
+        }
+        const abort = () => {
+          clearTimeout(timer);
+          reject(signal.reason);
+        };
+        const timer = setTimeout(() => {
+          signal?.removeEventListener("abort", abort);
+          resolve();
+        }, ms);
+        signal?.addEventListener("abort", abort, { once: true });
+      });
     }
-    const response = await get("/catalog-image-index.json", { cache: "no-cache" });
+    const response = await request("/catalog-image-index.json", { cache: "no-cache" });
     if (!response.ok) throw Error("Index unavailable");
     const manifest = await response.json(), shards = manifest.shards;
     if (manifest.version === 3 && manifest.descriptorAlgorithm === "compact-rgb-dhash") {
       const { compactSearch: compactSearch2 } = await Promise.resolve().then(() => (init_compact_search(), compact_search_exports));
-      return compactSearch2(manifest, query, get, onProgress, limit);
+      return compactSearch2(manifest, query, request, onProgress, limit);
     }
     if (manifest.version !== 2 || manifest.descriptorAlgorithm !== "area-v2" || !Array.isArray(shards) || !shards.length || shards.length > 1e3) throw Error("Invalid image index");
     const total = shards.reduce((n, s) => n + s.count, 0);
@@ -190,7 +193,7 @@
     const paths = /* @__PURE__ */ new Set();
     await Promise.all(Array.from({ length: Math.min(4, shards.length) }, async () => {
       while (cursor < shards.length) {
-        const shard = shards[cursor++], r = await get(shard.url);
+        const shard = shards[cursor++], r = await request(shard.url);
         if (!r.ok) throw Error("Missing image shard");
         const bytes = await r.arrayBuffer();
         const hash = [...new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))].map((n) => n.toString(16).padStart(2, "0")).join("");
@@ -211,14 +214,13 @@
       imageCount: loaded,
       catalogCount: manifest.catalogCount,
       updatedAt: manifest.updatedAt,
-      pendingImageCount: manifest.pendingImageCount || 0,
       failedImageCount: manifest.failedImageCount || 0,
       failedStylePageCount: manifest.failedStylePageCount || 0,
       failedDetailCount: manifest.failedDetailCount || 0
     };
   }
 
-  // repair/image-search-worker.js
+  // public/commerce/image-search-worker.js
   var active;
   self.onmessage = async ({ data }) => {
     active?.abort();
@@ -228,7 +230,7 @@
       const result = await searchAllImages(data.query, { signal: controller.signal, onProgress: (loaded, total) => self.postMessage({ id: data.id, type: "progress", loaded, total }) });
       if (!controller.signal.aborted) self.postMessage({ id: data.id, type: "result", result });
     } catch (error) {
-      if (!controller.signal.aborted) self.postMessage({ id: data.id, type: "error", message: String(error?.message || "Index unavailable").slice(0, 130) });
+      if (!controller.signal.aborted) self.postMessage({ id: data.id, type: "error", message: "Image index unavailable" });
     }
   };
 })();

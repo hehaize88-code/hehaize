@@ -95,6 +95,6 @@ export async function compactSearch(manifest, query, get, onProgress, limit) {
   if (loaded !== manifest.indexedImageCount || paths.size !== manifest.indexedProductCount) throw Error('Incomplete image catalogue');
   matches.sort((a,b) => a.score-b.score || a.p.path.localeCompare(b.p.path));
   const weak = !matches.length || matches[0].score > .24;
-  const items = weak ? matches.slice(0,6) : matches.filter(x => x.score <= Math.min(.24, matches[0].score + .075)).slice(0,limit);
+  const items = matches;
   return {items,weak,imageCount:loaded,productCount:paths.size,updatedAt:manifest.updatedAt,failedImageCount:manifest.failedImageCount||0,failedStylePageCount:manifest.failedStylePageCount||0,failedDetailCount:manifest.failedDetailCount||0,pendingImageCount:manifest.pendingImageCount||0};
 }
