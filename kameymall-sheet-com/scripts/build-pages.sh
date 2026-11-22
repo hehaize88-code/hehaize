@@ -142,7 +142,9 @@ if (
 }
 NODE
 
-cp -a "${project_root}/kamey-search" "${pages_output}/"
+mkdir -p "${pages_output}/kamey-language"
+cp "${project_root}/kamey-language/restore.js" "${pages_output}/kamey-language/"
+cp -a "${project_root}/kamey-search" "${project_root}/kamey-editions" "${pages_output}/"
 rsync -a "${pages_output}/" "${project_root}/"
 
 product_image_count="$(find "${project_root}/product-images" -maxdepth 1 -type f \( -name '*.jpg' -o -name '*.png' -o -name '*.webp' \) | wc -l)"

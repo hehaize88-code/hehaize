@@ -32,16 +32,12 @@ export function languageMenu(path,lang){
   return '<details class="language-menu km-language" translate="no"><summary aria-label="'+htmlEscape(title)+'">'+lang.toUpperCase()+' ▾</summary><div class="language-popover">'+links+'</div></details>';
 }
 
-// Only pass public merchant/editorial strings to this function. Uploads, form
-// values and search terms are handled locally by their respective pages.
-const memory=new Map(), activeTargets=new Map(), editions=new Map();
-// Complete checked-in editions are immutable for the life of a Worker version.
-// Limit the number retained in each isolate while concurrent requests finish.
+// Shipped editions are immutable within a Worker version; up to 24 can be
+// loaded. Locale changes, uploads and searches never call a translation service.
+const editions=new Map();
 export const hasEdition=lang=>editions.has(lang);
 export function installEdition(lang,object){
-  if(!codes.includes(lang) || !object || typeof object!=='object' || Array.isArray(object))return;
-  if(!editions.has(lang) && editions.size>=24)editions.delete(editions.keys().next().value);
-  editions.set(lang,object);
+  if(codes.includes(lang) && object && typeof object==='object' && !Array.isArray(object))editions.set(lang,object);
 }
 function editionValue(edition,source){
   if(!edition)return null;
@@ -53,94 +49,29 @@ function editionValue(edition,source){
 const terms=/\b(?:KameyMall|Weidian|Tmall|Taobao|HOKA One One Speedgoat 5|Adidas Futurecraft 4D|New Balance(?: 1906R)?|Canada Goose|Polo Ralph Lauren|Saint Vanity|Syna World|Hello Kitty|Samsung Galaxy Watch8|Nike(?: Air (?:Force|Jordan) \d+)?|Adidas|Louis Vuitton|Gucci|Burberry|Prada|Miu Miu|The North Face|Chrome Hearts|Stone Island|Palm Angels|Moncler|Amiri|Balmain|Balenciaga|Asics|Salomon|Dior|Off[- ]White|Ralph Lauren|Supreme|Stussy|Corteiz|Alexander McQueen|Yeezy|Converse|Puma|Fear of God|Fendi|Diesel|Bottega Veneta|Timberland|Carhartt|Audemars Piguet Royal Oak|Audemars Piguet|Cartier|Swatch|Rolex|Jellycat|Celine|Coach|Oopbuy|Superbuy|Kakobuy|AllChinaBuy|CNFans|Sugargoo|Acbuy|Hipobuy|Joyagoo)\b|\b(?=[A-Za-z0-9-]*\d)(?=[A-Za-z0-9-]*[A-Za-z])[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*\b/gi;
 const letter=/\p{L}/u;
 const exempt=/^(?:https?:\/\/\S+|\S+@\S+|[\w.-]+\.(?:com|net)|(?:XS|S|M|L|XL|XXL|\dXL|QC|SKU|ID|USD|CNY|EUR|JPY|UK|EU|US|CM|KG|[A-Z]{3}\s*[\d.,]+))$/i;
-const memoKey=(lang,source)=>lang+'\n'+source;
-function remember(lang,key,value){
-  if(memory.size>=10000)memory.delete(memory.keys().next().value);
-  if(activeTargets.size>=10000)activeTargets.delete(activeTargets.keys().next().value);
-  memory.set(memoKey(lang,key),value);
-  activeTargets.set(memoKey(lang,value),true);
-}
-function chunkRows(values){
-  const chunks=[];let current=[],size=0;
-  for(const s of values){
-    const n=encodeURIComponent(s).length+4;
-    if(current.length && (current.length>=38 || size+n>6100)){chunks.push(current);current=[];size=0;}
-    size+=n;current.push(s);
-  }
-  if(current.length)chunks.push(current);
-  return chunks;
-}
-async function fetchTranslations(lang,values){
-  const options={cf:{cacheEverything:true,cacheTtlByStatus:{'200-299':2592000,'400-599':0}}};
-  const params=new URLSearchParams({client:'dict-chrome-ex',sl:'auto',tl:languageTag(lang)});
-  values.forEach(v=>params.append('q',v));
-  try {
-    const r=await fetch('https://translate.googleapis.com/translate_a/t?'+params,{...options,signal:AbortSignal.timeout(3600)});
-    if(r.ok){
-      const data=await r.json();
-      if(Array.isArray(data) && data.length===values.length){
-        const rows=data.map(x=>typeof x==='string'?x:x?.[0]);
-        if(rows.every(x=>typeof x==='string'&&x.trim()))return rows;
+function translatedMap(strings,lang){
+  const output=new Map(),missing=[];
+  const index=codes.indexOf(lang),edition=editions.get(lang);
+  for(const source of new Set(strings)){
+    let value=source;
+    if(typeof source==='string' && source.trim() && letter.test(source) && !exempt.test(source) && index>=0){
+      const curated=Object.hasOwn(dictionary,source) && dictionary[source][index];
+      let translated=curated || editionValue(edition,source);
+      if(!translated){
+        const numbered=/^(.*?) (\d+)$/.exec(source);
+        const base=numbered && Object.hasOwn(dictionary,numbered[1]) && dictionary[numbered[1]][index];
+        if(base)translated=base+' '+numbered[2];
       }
+      if(translated)value=translated;
+      else if((lang!=='en' || /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(source))
+        && letter.test(source.replace(terms,'')))missing.push(source);
     }
-  } catch{}
-  const q=new URLSearchParams({client:'gtx',sl:'auto',tl:languageTag(lang),dt:'t',q:values.join('\n')});
-  const r=await fetch('https://translate.googleapis.com/translate_a/single?'+q,{...options,signal:AbortSignal.timeout(4200)});
-  if(!r.ok)throw Error('Translation provider unavailable');
-  const rows=(await r.json())[0].map(seg=>seg[0]||'').join('').trim().split(/\s*\n\s*/);
-  if(rows.length!==values.length || rows.some(v=>!v))throw Error('Translation provider returned an incomplete batch');
-  return rows;
+    output.set(source,value);
+  }
+  return {output,missing};
 }
-async function translatedMap(strings,lang){
-  const output=new Map(), pending=new Map(),inputs=new Map();
-  const edition=editions.get(lang);
-  for(const s of new Set(strings)){
-    if(typeof s!=='string'||!s.trim()||!letter.test(s)||exempt.test(s)||!codes.includes(lang)){output.set(s,s);continue;}
-    const key=memoKey(lang,s);
-    const index=codes.indexOf(lang);
-    const numbered=/^(.*?) (\d+)$/.exec(s);
-    const base=numbered && dictionary[numbered[1]]?.[index];
-    const exact=(Object.hasOwn(dictionary,s)&&dictionary[s][index]) || editionValue(edition,s) || (base && base+' '+numbered[2]);
-    if(!exact && memory.has(key)){output.set(s,memory.get(key));continue;}
-    if(!exact && activeTargets.has(key)){output.set(s,s);continue;}
-    if(exact){remember(lang,s,exact);output.set(s,exact);continue;}
-    if(lang==='en'&&!/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(s)){output.set(s,s);continue;}
-    const names=[],input=s.replace(terms,name=>{names.push(name);return '⟪'+(names.length-1)+'⟫';}).replace(/\s+/g,' ').trim();
-    if(!letter.test(input)){output.set(s,s);continue;}
-    inputs.set(input,null);pending.set(s,{names,input});
-  }
-  const tasks=chunkRows(inputs.keys());
-  let i=0;
-  await Promise.all(Array.from({length:Math.min(5,tasks.length)},async()=>{
-    while(i<tasks.length){const batch=tasks[i++];try{
-      const values=await fetchTranslations(lang,batch);
-      batch.forEach((s,j)=>inputs.set(s,values[j]));
-    }catch{/* Missing translations are flagged and never cached as complete. */}}
-  }));
-  const missing=[];
-  for(const [s,{names,input}] of pending){
-    const raw=inputs.get(input);
-    const translated=raw?.replace(/[⟪《〈]{1,2}\s*(\d+)\s*[⟫》〉]{1,2}/g,'⟪$1⟫');
-    if(!translated||!names.every((_,n)=>translated.includes('⟪'+n+'⟫'))){missing.push(s);output.set(s,s);continue;}
-    const value=translated.replace(/⟪(\d+)⟫/g,(_,n)=>names[n]??'');
-    remember(lang,s,value);output.set(s,value);
-  }
-  // Some Google locales drop punctuation around protected brand names. Retry
-  // only those rows with the original public wording, preserving the provider's
-  // natural word order and brand rendering. An unavailable provider is retried
-  // on the next request rather than caching the fallback.
-  const changedMarkers=missing.filter(s=>inputs.get(pending.get(s).input));
-  const repaired=new Set();
-  for(const batch of chunkRows(changedMarkers)){
-    try {
-      const values=await fetchTranslations(lang,batch);
-      batch.forEach((s,n)=>{remember(lang,s,values[n]);output.set(s,values[n]);repaired.add(s);});
-    }catch{}
-  }
-  return {output,missing:missing.filter(s=>!repaired.has(s))};
-}
-export async function translateTexts(strings,lang){
-  const {output}=await translatedMap(strings,lang);
+export function translateTexts(strings,lang){
+  const {output}=translatedMap(strings,lang);
   return strings.map(s=>output.get(s)??s);
 }
 
@@ -257,7 +188,7 @@ export async function localizePage(response,request,lang,{native=false}={}){
   html=await rewriter.transform(new Response(html)).text();
   const noMatches='No matching products';
   if(legacy)strings.add(noMatches);
-  const {output,missing}=await translatedMap([...strings],lang);
+  const {output,missing}=translatedMap([...strings],lang);
   html=html.replace(new RegExp(prefix+'(S?)(\\d+)__','g'),(_,type,id)=>{
     if(type==='S')return JSON.stringify(visitSchema(schemaRows[Number(id)],lang,url,s=>output.get(s)??s)).replace(/</g,'\\u003c');
     const s=slots[Number(id)];return htmlEscape(nativeFragments.get(s)??output.get(s)??s);

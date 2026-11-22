@@ -12,7 +12,7 @@ function isAsset(path) {
 
 
 async function loadEdition(lang,origin,env) {
-  if(lang==='en'||hasEdition(lang)||!env.ASSETS) return;
+  if(native.has(lang)||hasEdition(lang)||!env.ASSETS) return;
   const edition = await env.ASSETS.fetch(new Request(origin+'/kamey-editions/'+lang+'.json.gz'));
   if(!edition.ok) return;
   const bytes=await edition.arrayBuffer();
@@ -39,7 +39,7 @@ export function commerceWorker(legacy) {
       const [lang,path] = splitLocale(url.pathname);
       const cache = globalThis.caches?.default;
       const key = request.method === 'GET' && !url.search && !request.headers.has('authorization') && !path.startsWith('/kamey-product/')
-        ? new Request(url.origin+'/.km-rendered-v5'+url.pathname) : null;
+        ? new Request(url.origin+'/.km-rendered-local-v6'+url.pathname) : null;
       if(cache && key) {
         const hit = await cache.match(key);
         if(hit) return hit;
