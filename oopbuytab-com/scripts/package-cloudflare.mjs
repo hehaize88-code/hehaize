@@ -1,7 +1,7 @@
 import {build} from 'esbuild';
 import {readFile,readdir,mkdir,writeFile,rm} from 'node:fs/promises';
 import path from 'node:path';
-import {gzipSync} from 'node:zlib';
+import {gzipSync,gunzipSync} from 'node:zlib';
 
 const output=path.resolve('dist/cloudflare');
 await mkdir(output,{recursive:true});
@@ -16,6 +16,20 @@ async function collect(directory,prefix=''){
   }
 }
 await collect(path.resolve('dist/client'));
+// Package the shared CNBuyCha catalog index at build time so searches stay on this origin.
+const cacheDir = path.resolve('../eastmallbuygrid-com/image-cache');
+const manifest = JSON.parse(await readFile(path.join(cacheDir, 'manifest.json'), 'utf8'));
+const rows = [];
+for (const shard of manifest.shards) {
+  const bytes = await readFile(path.join(cacheDir, shard.id + '.json.gz'));
+  rows.push(...JSON.parse(gunzipSync(bytes).toString('utf8')));
+}
+if (!rows.length || rows.length !== manifest.products) throw new Error('Incomplete photo index');
+const photoDirectory = path.join(output, 'static/photo-index');
+await mkdir(photoDirectory, {recursive: true});
+await writeFile(path.join(photoDirectory, 'catalog.bin'), gzipSync(JSON.stringify(rows)));
+
+
 const entry=path.join(output,'entry.mjs');
 await writeFile(entry,`import application from '../server/index.js';
 const assets=${JSON.stringify(assets)};
