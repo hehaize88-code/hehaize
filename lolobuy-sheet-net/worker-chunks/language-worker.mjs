@@ -158,7 +158,7 @@ function parsePass(html,url,locale,dict,retry=false) {
         canonical.pathname=pathFor(url.pathname,code==='x-default'?'en':code);
         extra+='<link rel="alternate" hreflang="'+tag(code)+'" href="'+esc(canonical.href)+'">';
       }
-      extra+='<script defer src="/language-client.js?v=1"></script><link rel="stylesheet" href="/language-menu.css?v=1">';
+      extra+='<script defer src="/language-client.js?v=2"></script><link rel="stylesheet" href="/language-menu.css?v=1">';
       el.append(extra,{html:true});
     }});
   }
@@ -268,11 +268,17 @@ export async function languageFetch(request,env,ctx,innerFetch) {
     dict=new Map();
   }
   const headers=new Headers(response.headers);
+  const csp=headers.get('content-security-policy');
+  if(csp && !csp.includes('https://translate.googleapis.com')){
+    headers.set('content-security-policy',csp.match(/(?:^|;\s*)connect-src\s/i)
+      ? csp.replace(/(connect-src\s+[^;]+)/i,'$1 https://translate.googleapis.com')
+      : csp+"; connect-src 'self' https://translate.googleapis.com");
+  }
   for(const key of ['content-length','content-encoding','etag','last-modified'])headers.delete(key);
   headers.set('content-language',tag(locale));
   const retry=pass.found.size>dict.size;
-  if(retry){headers.set('cache-control','no-store');headers.set('x-locale-status','retry');headers.set('retry-after','60');}
+  if(retry){headers.set('cache-control','no-store');headers.set('x-locale-status','retry');if(!legacy.has(locale))headers.set('x-robots-tag','noindex, follow');}
   const localizedSchemas=rewriteSchemas(html,url,locale,null,dict);
   const output=await parsePass(localizedSchemas,url,locale,dict,retry).body;
-  return new Response(output,{status:retry && !legacy.has(locale) && response.ok ? 503 : response.status,headers});
+  return new Response(output,{status:response.status,headers});
 }

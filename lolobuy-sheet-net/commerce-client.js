@@ -137,7 +137,10 @@ function initCommerce(currencyCodes) {
       const retry=make('button','Retry');retry.type='button';note.append(' ',retry);status.after(note);
       retry.onclick=()=>{note.remove();options();};return;
     }
-    if(data.images[0]&&top)top.src=data.images[0];
+    const matchedImage = new URL(location.href).searchParams.get('match');
+    const listedPhotos = [...qc, ...data.images];
+    if (top && matchedImage && listedPhotos.includes(matchedImage)) top.src = matchedImage;
+    else if (top && data.images[0]) top.src = data.images[0];
     const variantImages=new Set(data.groups.flatMap(g=>g.values.map(v=>v.image)).filter(Boolean));
     addPhotoGroup('Product details',data.images.filter((src,i)=>i>0&&!variantImages.has(src)),qcSection);
     if(!data.groups.length)return;
@@ -185,6 +188,12 @@ function initCommerce(currencyCodes) {
         field.onchange=()=>choose(index,g.values.find(v=>v.id===field.value));
       }
     });
+    if (matchedImage) {
+      for (const [index, group] of data.groups.entries()) {
+        const matches = group.values.filter(value => value.image === matchedImage);
+        if (matches.length === 1) choose(index, matches[0]);
+      }
+    }
   }
   options();
 }

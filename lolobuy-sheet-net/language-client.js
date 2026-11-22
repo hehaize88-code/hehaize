@@ -82,6 +82,18 @@
     scheduled=true;
     setTimeout(()=>{scheduled=false;flush();},retry?Math.min(30000,1000*2**retry):80);
   }
+  async function browserTranslations(strings) {
+    const query=new URLSearchParams();
+    for(const text of strings)query.append('q',text);
+    const result=await fetch('https://translate.googleapis.com/translate_a/t?client=dict-chrome-ex&sl=auto&tl='+encodeURIComponent(activeTag),{
+      method:'POST',credentials:'omit',referrerPolicy:'no-referrer',body:query,
+      signal:AbortSignal.timeout(18000)
+    });
+    if(!result.ok)throw Error('Translations temporarily unavailable');
+    const rows=await result.json();
+    if(!Array.isArray(rows)||rows.length!==strings.length)throw Error('Incomplete translations');
+    return rows.map(row=>Array.isArray(row)?row[0]:row);
+  }
   async function flush(){
     if(running||!targets.size)return;
     running=true;
@@ -91,10 +103,18 @@
       strings.push(s);size+=s.length;
     }
     try {
-      const response=await fetch('/_locale/strings',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({locale,strings})});
-      if(!response.ok)throw Error('Translations unavailable');
-      const values=await response.json();
-      if(!Array.isArray(values)||values.length!==strings.length)throw Error('Incomplete translations');
+      let values=[];
+      try{
+        const response=await fetch('/_locale/strings',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({locale,strings}),signal:AbortSignal.timeout(4500)});
+        if(response.ok)values=await response.json();
+      }catch{}
+      if(!Array.isArray(values))values=[];
+      const missing=strings.map((s,i)=>values[i]?null:i).filter(i=>i!==null);
+      if(missing.length){
+        const translated=await browserTranslations(missing.map(i=>strings[i]));
+        missing.forEach((index,i)=>{values[index]=translated[i];});
+      }
+      if(values.some(v=>typeof v!=='string'||!v))throw Error('Incomplete translations');
       strings.forEach((s,i)=>{
         const value=values[i];
         known.set(s,value);known.set(value,value);
