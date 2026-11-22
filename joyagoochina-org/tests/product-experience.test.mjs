@@ -10,6 +10,18 @@ test('style identity and real price validated, unsafe images excluded',()=>{
  const html=`<script id="__rocker-render-inject__" data-obj='${JSON.stringify(model)}'></script>`;
  const p=parseWeidianOptions(html,id);assert.equal(p.variants[0].price,150);assert.equal(p.variants[0].id,'100');assert.deepEqual(p.images,['https://si.geilicdn.com/item.jpg']);assert.throws(()=>parseWeidianOptions(html,'12345'),/identity/);
 });
+test('source variant links must be supplied by Weidian and point to this item',()=>{
+ const data=structuredClone(model);
+ const props=data.result.default_model.sku_properties;
+ props.sku.a.share_url='https://weidian.com/item.html?itemID='+id+'&share=example';
+ props.attr_list[0].attr_values[0].share_url='https://weidian.com/item.html?itemID=1234567';
+ props.sku.missing={id:101,attr_ids:'10',price:'',stock:1};
+ const html=`<script id="__rocker-render-inject__" data-obj='${JSON.stringify(data)}'></script>`;
+ const parsed=parseWeidianOptions(html,id);
+ assert.equal(parsed.variants.length,1);
+ assert.equal(parsed.variants[0].sourceUrl,props.sku.a.share_url);
+ assert.equal(parsed.groups[0].values[0].sourceUrl,undefined);
+});
 test('FX requires valid base, date and positive rates',()=>{
  const good=[{base:'USD',quote:'EUR',rate:0.9,date:'2026-11-12'},{base:'USD',quote:'CNY',rate:7,date:'2026-11-12'}];
  const r=normalizeRates([...good,{base:'USD',quote:'GBP',rate:-1,date:'2026-11-12'}]);assert.equal(r.rates.GBP,undefined);assert.equal(70/r.rates.CNY*r.rates.EUR,9);assert.throws(()=>normalizeRates([]));

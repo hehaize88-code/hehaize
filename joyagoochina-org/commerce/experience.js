@@ -7,6 +7,16 @@ const secureImage = value => {
   try { const u = new URL(value); return u.protocol === 'https:' && /(^|\.)geilicdn\.com$/.test(u.hostname) ? u.href : ''; } catch { return ''; }
 };
 
+// Accept only listing links explicitly provided by the source for the same item.
+function weidianOptionLink(raw, itemId) {
+  if (typeof raw !== 'string' || !raw) return undefined;
+  try {
+    const link = new URL(raw, 'https://weidian.com/');
+    if (link.origin === 'https://weidian.com' && link.pathname === '/item.html' &&
+        link.searchParams.get('itemID') === String(itemId)) return link.href;
+  } catch {}
+}
+
 export function parseWeidianOptions(html, expectedId) {
   const tag = html.match(/<script\b[^>]*\bid=["']__rocker-render-inject__["'][^>]*>/i)?.[0] || '';
   const raw = tag.match(/\bdata-obj=(['"])([\s\S]*?)\1/)?.[2];
@@ -18,11 +28,13 @@ export function parseWeidianOptions(html, expectedId) {
     name: String(group.attr_title || '').slice(0, 120),
     values: (group.attr_values || []).slice(0, 500).map(value => ({
       id: String(value.attr_id), label: String(value.attr_value || '').slice(0, 160), image: secureImage(value.img),
+      sourceUrl: weidianOptionLink(value.share_url || value.item_url, expectedId),
     })).filter(value => /^\d+$/.test(value.id)),
   }));
   const variants = Object.values(properties.sku || {}).slice(0, 5000).map(sku => ({
     id: String(sku.id), attrs: String(sku.attr_ids || '').split('-'),
-    price: Number(sku.price), available: Number(sku.stock) > 0,
+    sourceUrl: weidianOptionLink(sku.share_url || sku.item_url, expectedId),
+    price: sku.price == null || sku.price === '' ? NaN : Number(sku.price), available: Number(sku.stock) > 0,
   })).filter(sku => /^\d+$/.test(sku.id) && Number.isFinite(sku.price) && sku.price >= 0);
   return { sourceId: String(expectedId), groups, variants,
     images: [...new Set((model.item_info.imgs || []).map(secureImage).filter(Boolean))].slice(0, 100),

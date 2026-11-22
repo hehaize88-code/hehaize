@@ -327,13 +327,20 @@ def build(args):
     assert sum(s['count'] for s in shards)==len(records)
     assert len(shards)<=1000,'Too many shards; increase --shard-size'
     temporary=pathlib.Path(args.output)/'catalog-image-index.next.json'
-    temporary.write_text(json.dumps(manifest,indent=2)+'\n');temporary.replace(pathlib.Path(args.output)/'catalog-image-index.json')
+    temporary.write_text(json.dumps(manifest,indent=2)+'\n')
+    if args.format=='compact':
+        from export_visual_index import publish
+        temporary.replace(pathlib.Path(args.output)/'catalog-image-index-seed.json')
+        publish(args.output,manifest,rows)
+    else:
+        temporary.replace(pathlib.Path(args.output)/'catalog-image-index.json')
     (CACHE/'failures.json').write_text(json.dumps(dict(details=detail_failures,styles=style_failures,images=image_failures,staleSourcePaths=stale_paths,unattemptedStylePaths=unattempted_style_paths,blockedHosts=sorted(BLOCKED_HOSTS),reasons=ERRORS),ensure_ascii=False,indent=2))
     log('COMPLETE',json.dumps(manifest))
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--workers',type=int,default=4);p.add_argument('--image-workers',type=int,default=4)
     p.add_argument('--seed-index',default=str(ROOT/'public/catalog-image-index.json'))
+    p.add_argument('--format',choices=('compact','area-v2'),default='compact')
     p.add_argument('--cache',default=str(CACHE));p.add_argument('--output',default=str(ROOT/'public'))
     p.add_argument('--requests-per-second',type=float,default=4)
     p.add_argument('--refresh',action='store_true',help='Refresh public metadata; keep validated image descriptors')
@@ -346,5 +353,12 @@ if __name__=='__main__':
     if not 1<=args.shard_size<=1000:p.error('shard-size must be 1–1000')
     if args.refresh and args.offline:p.error('--refresh and --offline cannot be combined')
     if args.limit and pathlib.Path(args.output).resolve()==(ROOT/'public').resolve():p.error('--limit requires an explicit separate --output directory')
-    if args.seed_index and not pathlib.Path(args.seed_index).exists():args.seed_index=None
+    if args.seed_index:
+        seed=pathlib.Path(args.seed_index)
+        if seed.exists() and json.loads(seed.read_text()).get('version')==3:
+            seed=seed.with_name('catalog-image-index-seed.json')
+            args.seed_index=str(seed)
+        if not seed.exists():
+            # Compact 5-bit RGB descriptors cannot seed the full-precision v2 builder.
+            args.seed_index=None
     build(args)

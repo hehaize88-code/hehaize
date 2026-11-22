@@ -19,8 +19,43 @@ test('source failure and removed source item are distinct errors',async()=>{awai
 test('full detail route exposes the correct buy URL and five ordered thumbnail controls',async()=>{await mockFetch(async()=>new Response(detail),async()=>{const r=await catalogueRoute(new Request('https://joyagoochina.org/fr/catalog/shoes/3459.html'),{});const html=await r.text();assert.equal(r.status,200);assert.match(html,/https:\/\/joyagoo.com\/product\?id=7874413518&amp;platform=WEIDIAN/);assert.equal((html.match(/data-gallery-index=/g)||[]).length,5);assert.doesNotMatch(html,/cnbuycha.com\/yc.php|wa.me|uufinds/)});});
 test('old product and search links redirect without changing the item or search term',async()=>{for(const [old,path] of Object.entries(LEGACY_PRODUCTS)){const r=await commerceRoutes(new Request('https://joyagoochina.org/es'+old),{},{});assert.equal(r.status,301);assert.equal(r.headers.get('location'),'https://joyagoochina.org/es/catalog'+path)}const r=await commerceRoutes(new Request('https://joyagoochina.org/de/search.html?keywords=coat&channelid=2'),{},{});assert.equal(r.headers.get('location'),'https://joyagoochina.org/de/catalog/?q=coat');});
 test('homepage uses live items, while failed reads clearly date the snapshot',async()=>{await mockFetch(async()=>new Response(listing),async()=>{const r=await commerceRoutes(new Request('https://joyagoochina.org/'),{},{});const html=await r.text();assert.match(html,/Lego/);assert.equal(r.headers.has('x-catalog-snapshot'),false)});await mockFetch(async()=>{throw Error()},async()=>{const r=await commerceRoutes(new Request('https://joyagoochina.org/it/'),{},{});assert.equal(r.headers.get('x-catalog-snapshot'),SNAPSHOT.date);assert.match(await r.text(),new RegExp(SNAPSHOT.date))});});
-test('image index covers current products across all verified shards',async()=>{const x=JSON.parse(await readFile(new URL('../public/catalog-image-index.json',import.meta.url)));assert.equal(x.version,2);assert.ok(x.indexedProductCount>=3436);let count=0;const paths=new Set();for(const shard of x.shards){const data=JSON.parse(await readFile(new URL('../public'+shard.url,import.meta.url)));assert.equal(data.products.length,shard.count);for(const p of data.products){paths.add(p.path);assert.match(p.path,/^\/[a-z0-9-]+\/\d+\.html$/);assert.match(p.hash,/^[01]{64}$/);assert.equal(p.cells.length,48);count++;}}assert.equal(count,x.indexedImageCount);assert.equal(paths.size,x.indexedProductCount);assert.ok(count>paths.size);});
-test('catalogue sitemap includes all ten languages without search variants or duplicate AllProducts routes',async()=>{await mockFetch(async()=>new Response('<urlset><url><loc>https://cnbuycha.com/AllProducts/</loc></url><url><loc>https://cnbuycha.com/shoes/3459.html</loc></url></urlset>'),async()=>{const r=await commerceRoutes(new Request('https://joyagoochina.org/catalog-sitemap.xml'),{},{});const xml=await r.text();assert.equal((xml.match(/<url>/g)||[]).length,20);assert.match(xml,/\/sv\/catalog\/shoes\/3459.html/);assert.doesNotMatch(xml,/AllProducts|\?q=/)});});
+test('image index covers all catalogue products and verifies every gallery, style and seller shard',async()=>{
+ const {createHash}=await import('node:crypto');
+ const {gunzipSync}=await import('node:zlib');
+ const asset=path=>readFile(new URL('../public'+path,import.meta.url));
+ const manifest=JSON.parse(await asset('/catalog-image-index.json'));
+ assert.equal(manifest.descriptorAlgorithm,'compact-rgb-dhash');
+ const counts={source:0,gallery:0,style:0},paths=new Set();
+ for(const shard of manifest.shards){
+  const bytes=await asset(shard.url);
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),shard.sha256);
+  let count=0;
+  for(const [path,images] of JSON.parse(gunzipSync(bytes))){
+   assert.match(path,/^\/[a-z0-9-]+\/\d+\.html$/);assert.ok(!paths.has(path));paths.add(path);
+   for(const [url,hash,color,type] of images){
+    assert.match(url,/^(?:https:\/\/|\/)/);assert.match(hash,/^[a-f0-9]{16,17}$/);
+    assert.equal(Buffer.from(color,'base64').length,48);assert.ok(type in counts);counts[type]++;count++;
+   }
+  }
+  assert.equal(count,shard.count);
+ }
+ assert.equal(paths.size,manifest.catalogCount);
+ assert.equal(counts.style,manifest.styleImageCount);
+ assert.equal(counts.gallery,manifest.sellerImageCount);
+ assert.equal(counts.source,manifest.galleryImageCount);
+ assert.equal(Object.values(counts).reduce((sum,n)=>sum+n,0),manifest.indexedImageCount);
+});
+test('catalogue sitemap splits all 24 locales and keeps only canonical product paths',async()=>{
+ await mockFetch(async()=>new Response('<urlset><url><loc>https://cnbuycha.com/AllProducts/</loc></url><url><loc>https://cnbuycha.com/shoes/3459.html</loc></url></urlset>'),async()=>{
+  const route=path=>commerceRoutes(new Request('https://joyagoochina.org'+path),{},{}).then(r=>r.text());
+  const index=await route('/catalog-sitemap.xml');
+  assert.equal((index.match(/<sitemap>/g)||[]).length,24);
+  const xml=await route('/catalog-sitemap-ja.xml');
+  assert.equal((xml.match(/<url>/g)||[]).length,2);
+  assert.match(xml,/\/ja\/catalog\/shoes\/3459.html/);
+  assert.doesNotMatch(xml,/AllProducts|\?q=/);
+ });
+});
 
 test('default catalogue query variants redirect before upstream reads and retain attribution',async()=>{
  let calls=0;

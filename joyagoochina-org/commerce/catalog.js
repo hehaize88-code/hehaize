@@ -67,7 +67,7 @@ export function footer(lang) {
 }
 export function shell(lang,path,title,description,body,{noindex=false,status=200,query=''}={}) {
  const canonical='https://joyagoochina.org'+prefix(lang)+path;
- const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}${title.includes('Joyagoo Spreadsheet')?'':' | Joyagoo Spreadsheet'}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${noindex?'noindex,follow':'index,follow'}"><link rel="canonical" href="${canonical}"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><meta property="og:image" content="https://joyagoochina.org/joyagoo-official-logo.svg">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://joyagoochina.org${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://joyagoochina.org${path}"><link rel="icon" href="/joyagoo-official-icon.png"><link rel="stylesheet" href="/catalog.css?v=20261016-seo"><link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v2"><link rel="stylesheet" href="/commerce/product.css?v=20261112"><script type="module" src="/catalog.js?v=20261112-images-v4"></script><script type="module" src="/commerce/client.js?v=20261112-v7"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-QY8MM7VZV2");</script><link rel="stylesheet" href="/mobile-compact.css?v=20261112-v5"><script defer src="/mobile-reading.js?v=20261112-v4"></script></head><body>${nav(lang,path+query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
+ const html=`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}${title.includes('Joyagoo Spreadsheet')?'':' | Joyagoo Spreadsheet'}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${noindex?'noindex,follow':'index,follow'}"><link rel="canonical" href="${canonical}"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="website"><meta property="og:image" content="https://joyagoochina.org/joyagoo-official-logo.svg">${LANGS.map(l=>`<link rel="alternate" hreflang="${l}" href="https://joyagoochina.org${prefix(l)}${path}">`).join('')}<link rel="alternate" hreflang="x-default" href="https://joyagoochina.org${path}"><link rel="icon" href="/joyagoo-official-icon.png"><link rel="stylesheet" href="/catalog.css?v=20261016-seo"><link rel="stylesheet" href="/mobile-inner.css?v=20261013-inner-v2"><link rel="stylesheet" href="/commerce/product.css?v=20261122"><script type="module" src="/catalog.js?v=20261122"></script><script type="module" src="/commerce/client.js?v=20261122"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-QY8MM7VZV2");</script><link rel="stylesheet" href="/mobile-compact.css?v=20261112-v5"><script defer src="/mobile-reading.js?v=20261112-v4"></script></head><body>${nav(lang,path+query)}<main class="catalog-main" data-locale="${lang}">${body}</main>${footer(lang)}</body></html>`;
  return new Response(html,{status,headers:{'content-type':'text/html; charset=utf-8','content-language':lang,'cache-control':status>=400?'no-store':'public, max-age=0, s-maxage=60','x-content-type-options':'nosniff','x-catalog-source':DATA_ORIGIN,'x-joyagoo-release':'2026-11-12-joyagoo-mobile-images-v2'}});
 }
 export function productsForCategory(products, category) {
@@ -82,9 +82,10 @@ export function card(p,lang) {
 export function buyingGuides(lang) {
  return `<aside class="catalog-reading"><h2>${NAV_LABELS[lang][0]}</h2><ul>${EDITORIAL[lang].buyingGuides.map(a=>`<li><a href="${prefix(lang)}/${escapeHtml(a.slug)}/" data-track-event="article_open">${escapeHtml(a.title)}</a></li>`).join('')}</ul></aside>`;
 }
-export function searchForm(lang,q='',category='AllProducts',sort='new') {
+const cameraIcon='<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="3.5"/></svg>';
+export function searchForm(lang,q='',category='AllProducts',sort='new',inlinePhoto=false) {
  const t=labels(lang);
- return `<form class="catalog-search" action="${localPath('/'+category+'/',lang)}" method="get" role="search"><label class="sr-only" for="catalog-query">${t[1]}</label><input id="catalog-query" name="q" value="${escapeHtml(q)}" placeholder="${t[1]}" type="search" maxlength="100"><input type="hidden" name="sort" value="${sort}"><button>${t[2]} →</button></form>`;
+ return `<form class="catalog-search" action="${localPath('/'+category+'/',lang)}" method="get" role="search"><label class="sr-only" for="catalog-query">${t[1]}</label><input id="catalog-query" name="q" value="${escapeHtml(q)}" placeholder="${t[1]}" type="search" maxlength="100"><input type="hidden" name="sort" value="${sort}">${inlinePhoto ? `<label class="search-camera upload-camera" title="${escapeHtml(t[6])}">${cameraIcon}<input id="image-file" type="file" class="sr-only" aria-label="${escapeHtml(t[6])}" accept="image/jpeg,image/png,image/webp"></label>` : `<a class="search-camera" href="${base(lang)}/image-search/" aria-label="${escapeHtml(t[6])}" title="${escapeHtml(t[6])}">${cameraIcon}</a>` }<button>${t[2]} →</button></form>`;
 }
 export async function upstream(path,params) {
  const u=new URL(path,DATA_ORIGIN);if(params)u.search=params.toString();
@@ -154,17 +155,20 @@ export function purchasingPlatforms(sourceId) {
   ['Sugargoo', `https://www.sugargoo.com/products?productLink=${source}`],
   ['Oopbuy', `https://oopbuy.com/goods/details?id=${id}&channel=weidian`],
   ['Hipobuy', `https://hipobuy.com/product/weidian/${id}`],
-  ['Litbuy', `https://litbuy.com/product/weidian/${id}`],
+  ['Litbuy', `https://litbuy.com/product/2/${id}`],
   ['Lovegobuy', `https://www.lovegobuy.com/product?id=${id}&shop_type=weidian`],
+  ['Itaobuy', `https://www.itaobuy.com/product-detail?url=${source}`],
+  ['CNShopper', `https://cnshopper.com/goods/detail?keyword=${id}&platform=weidian`],
+  ['HubBuy', `https://hubbuy.com/product/2/${id}`],
   ['OrientDig', `https://orientdig.com/product/?shop_type=weidian&id=${id}`],
-  
+
  ];
 }
 function renderProductDetail(product,lang,t,buy) {
  const im=(url,i,kind='catalogue')=>`<button class="photo-tile" type="button" data-photo-src="${escapeHtml(url)}" data-photo-kind="${kind}" aria-label="Enlarge photo ${i+1}"><img src="${escapeHtml(url)}" alt="${escapeHtml(product.title)} ${i+1}" width="160" height="160" loading="lazy"><span>${i+1}</span></button>`;
  const markup = `<a class="back" href="${base(lang)}/">← ${t[7]}</a>
 <section class="catalog-detail" data-product-detail data-source-id="${escapeHtml(product.sourceId)}" data-source-url="${escapeHtml(product.sourceUrl)}">
- <div class="catalog-gallery"><div class="section-caption"><h2>Product photos</h2><span>${product.images.length}</span></div>
+ <div class="catalog-gallery"><div class="section-caption"><h2>Product photos</h2><span data-gallery-count>${product.images.length}</span></div>
   <div class="gallery-main" tabindex="0" role="region" aria-label="Product photos"><button type="button" data-gallery-prev aria-label="Previous photo">‹</button><img id="gallery-main" src="${escapeHtml(product.images[0]||'')}" alt="${escapeHtml(product.title)}" width="800" height="800"><button type="button" data-gallery-next aria-label="Next photo">›</button><button class="gallery-zoom" type="button" data-enlarge aria-label="Enlarge photo">⤢</button><span class="gallery-counter" aria-live="polite">1 / ${product.images.length}</span></div>
   <div class="gallery-thumbs" aria-label="Product photos">${product.images.map((url,i)=>`<button type="button" data-gallery-index="${i}" aria-label="Image ${i+1}" aria-current="${i===0}"><img src="${escapeHtml(url)}" alt="" width="120" height="120" loading="lazy"></button>`).join('')}</div>
  </div>

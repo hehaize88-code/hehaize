@@ -1,6 +1,21 @@
 /* Progressive enhancement: all article text and links remain in the HTML. */
 (() => {
   const copy = {
+    nl: ["Volledig artikel tonen", "Secties inklappen", "Meer artikelen tonen"],
+    da: ["Vis hele artiklen", "Skjul afsnit", "Vis flere artikler"],
+    fi: ["Näytä koko artikkeli", "Tiivistä osiot", "Näytä lisää artikkeleita"],
+    el: ["Εμφάνιση πλήρους άρθρου", "Σύμπτυξη ενοτήτων", "Περισσότερα άρθρα"],
+    cs: ["Zobrazit celý článek", "Sbalit oddíly", "Zobrazit další články"],
+    hu: ["Teljes cikk megjelenítése", "Szakaszok összecsukása", "További cikkek"],
+    bg: ["Покажи цялата статия", "Свий разделите", "Още статии"],
+    sk: ["Zobraziť celý článok", "Zbaliť sekcie", "Zobraziť viac článkov"],
+    hr: ["Prikaži cijeli članak", "Sažmi odjeljke", "Prikaži više članaka"],
+    ja: ["記事を全文表示", "セクションを折りたたむ", "記事をもっと見る"],
+    ko: ["기사 전체 보기", "섹션 접기", "기사 더 보기"],
+    vi: ["Xem toàn bộ bài viết", "Thu gọn các mục", "Xem thêm bài viết"],
+    th: ["แสดงบทความทั้งหมด", "ย่อหัวข้อ", "แสดงบทความเพิ่มเติม"],
+    id: ["Tampilkan artikel lengkap", "Tutup bagian", "Tampilkan artikel lainnya"],
+
     en: ['Expand full article', 'Collapse sections', 'Show more articles'],
     zh: ['展开全文', '收起章节', '显示更多文章'],
     de: ['Ganzen Artikel öffnen', 'Abschnitte einklappen', 'Weitere Artikel anzeigen'],

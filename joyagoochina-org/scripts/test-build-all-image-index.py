@@ -26,7 +26,7 @@ with tempfile.TemporaryDirectory() as temporary:
  cached(builder.OPTIONS_SOURCE+'12345678',{'sourceId':'12345678','groups':[{'name':'Color','values':[{'id':'11','label':'Blue','image':urls[2]}]}],'images':[urls[3]]})
  seed={'path':'/sneakers/1.html','title':'Example shoe','price':'12.00','sourceId':'12345678','image':urls[0],'imageIndex':0,'kind':'gallery',**descriptors[urls[0]]};body=encode({'products':[seed]});digest=hashlib.sha256(body).hexdigest();old_url='/catalog-image-index/gallery-seed-'+digest[:12]+'.json';(out/old_url.lstrip('/')).write_bytes(body)
  manifest=out/'catalog-image-index.json';manifest.write_bytes(encode({'version':2,'descriptorAlgorithm':'area-v2','updatedAt':time.strftime('%Y-%m-%d',time.gmtime()),'shards':[{'url':old_url,'count':1,'bytes':len(body),'sha256':digest}]}))
- command=[sys.executable,str(SCRIPT),'--offline','--cache',str(cache),'--output',str(out),'--seed-index',str(manifest)]
+ command=[sys.executable,str(SCRIPT),'--format','area-v2','--offline','--cache',str(cache),'--output',str(out),'--seed-index',str(manifest)]
  def run():
   r=subprocess.run(command,capture_output=True,text=True);assert r.returncode==0,r.stdout+r.stderr
   data=json.loads(manifest.read_text());assert old_url in [s['url'] for s in data['shards']]
@@ -40,6 +40,19 @@ with tempfile.TemporaryDirectory() as temporary:
  second=run();assert second['catalogCount']==2 and second['indexedProductCount']==2 and second['indexedImageCount']==5,second
  (html/(sha(builder.OPTIONS_SOURCE+'12345678')+'.bin')).unlink()
  stale=run();assert stale['indexedImageCount']==5 and stale['failedStylePageCount']==1 and stale['staleSourcePageCount']==1,stale
+ import gzip
+ compact_command=[arg for arg in command if arg not in ('--format','area-v2')]
+ for _ in range(2):
+  r=subprocess.run(compact_command,capture_output=True,text=True);assert r.returncode==0,r.stderr+r.stdout
+  compact=json.loads(manifest.read_bytes());assert compact['version']==3 and compact['indexedImageCount']==5
+  rows=[]
+  for part in compact['shards']:
+   raw=(out/part['url'].lstrip('/')).read_bytes()
+   assert hashlib.sha256(raw).hexdigest()==part['sha256']
+   rows.extend(json.loads(gzip.decompress(raw)))
+  assert {photo[3] for _,images in rows for photo in images}=={'source','style','gallery'}
+  assert all(len(photo[1])==17 and photo[1].startswith('a') for _,images in rows for photo in images)
+  assert json.loads((out/'commerce/image-search-prices.json').read_bytes())['/pants/2.html']==12
  try:builder.parse_options_api({'sourceId':'999','groups':[]},'12345678');raise AssertionError('Identity mismatch was accepted')
  except ValueError:pass
  transparent=Image.new('RGBA',(9,8),(0,0,0,0));buf=io.BytesIO();transparent.save(buf,format='PNG');assert builder.descriptor(buf.getvalue())['cells']==[255]*48

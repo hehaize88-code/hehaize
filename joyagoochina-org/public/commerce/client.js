@@ -1,7 +1,7 @@
 import {translateOptionLabel} from './product-title.js?v=20261112-v7';
 import {productGlossaries} from './product-glossaries.js';
-import {PRODUCT_UI} from './ui.js?v=20261112-v4';
-const localeCodes=["en", "zh", "de", "pl", "es", "it", "fr", "pt", "ro", "sv"];
+import {PRODUCT_UI, LANG_NAMES} from './ui.js?v=20261122-24';
+const localeCodes = Object.keys(LANG_NAMES);
 const htmlLocale=code=>code==='zh'?'zh-CN':code;
 const loadDictionary=async code=>PRODUCT_UI[code]||{};
 
@@ -18,7 +18,7 @@ const formatPrice = (value, code) => new Intl.NumberFormat(htmlLocale(locale), {
 function setRateStatus(error = false) {
  const targetDate = rates?.dates[currency] || rates?.dates.CNY;
  document.querySelectorAll('[data-rate-status]').forEach(node => {
-  node.textContent = error ? t('Exchange rates are temporarily unavailable. Prices remain in their original currency.') : targetDate ? `${t('Reference rates')}: Frankfurter · ${t('Rate date')}: ${targetDate}` : '';
+  node.textContent = (error || (rates && !rates.rates[currency])) ? t('Exchange rates are temporarily unavailable. Prices remain in their original currency.') : targetDate ? `${t('Reference rates')}: Frankfurter · ${t('Rate date')}: ${targetDate}` : '';
  });
 }
 function renderPrices() {
@@ -58,7 +58,7 @@ for(const select of currencySelects) {
  select.addEventListener('change', async()=>{
   currency=select.value;currencySelects.forEach(other=>other.value=currency);
   try{localStorage.setItem('joyagoo-currency',currency);}catch{}
-  renderPrices();
+  renderPrices();setRateStatus();
   try{await getRates();}catch{}
  });
 }
@@ -75,7 +75,11 @@ if(detail) initDetail();
 function initDetail(){
  const main = document.getElementById('gallery-main'), originalImages=[...document.querySelectorAll('[data-gallery-index] img')].map(img=>img.src);
  const viewer=document.querySelector('.photo-viewer'),viewerImage=viewer.querySelector('img');
+ const thumbnails = detail.querySelector('.gallery-thumbs');
+ let galleryImages = originalImages;
  const selected = new Map();
+ const matchedImage=new URL(location.href).searchParams.get('matchedImage');
+ const matchedCatalogue=matchedImage ? originalImages.indexOf(matchedImage) : -1;
  let options=null,styleGroup=-1,images=[...originalImages],current=0,viewerImages=[],viewerIndex=0,loading=false;
  const status=detail.querySelector('[data-options-status]'),grid=detail.querySelector('[data-style-grid]'),groups=detail.querySelector('[data-option-groups]'),retry=detail.querySelector('[data-options-retry]');
  const price=detail.querySelector('[data-detail-price]'),initialPrice=price.dataset.priceAmount,initialCurrency=price.dataset.priceCurrency;
@@ -90,9 +94,25 @@ function initDetail(){
   if(!images.length){main.hidden=true;counter.textContent=t('Photo unavailable');prev.disabled=next.disabled=true;return;}
   current=Math.max(0,Math.min(index,images.length-1));main.hidden=false;main.src=imageDisplay(images[current]);counter.textContent=`${current+1} / ${images.length}`;
   prev.disabled=current===0;next.disabled=current===images.length-1;
-  detail.querySelectorAll('[data-gallery-index]').forEach((button,i)=>button.setAttribute('aria-current',String(images===originalImages&&i===current||images[current]===originalImages[i])));
+  detail.querySelectorAll('[data-gallery-index]').forEach((button,i)=>button.setAttribute('aria-current',String(images[current]===galleryImages[i])));
  }
- detail.querySelectorAll('[data-gallery-index]').forEach((button,i)=>button.addEventListener('click',()=>{images=originalImages;showPhoto(i);}));
+ thumbnails.addEventListener('click',event=>{
+  const button=event.target.closest('[data-gallery-index]');
+  if(button){images=galleryImages;showPhoto(Number(button.dataset.galleryIndex));}
+ });
+ function showSellerGallery(sellerImages) {
+  galleryImages=sellerImages;
+  const fragment=document.createDocumentFragment();
+  sellerImages.forEach((url,i)=>{
+   const button=document.createElement('button'),img=document.createElement('img');
+   button.type='button';button.dataset.galleryIndex=String(i);button.setAttribute('aria-label',t('Image')+' '+(i+1));
+   img.src=imageDisplay(url,160);img.alt='';img.width=120;img.height=120;img.loading='lazy';img.referrerPolicy='no-referrer';
+   button.append(img);fragment.append(button);
+  });
+  thumbnails.replaceChildren(fragment);thumbnails.hidden=sellerImages.length<2;
+  const count=detail.querySelector('[data-gallery-count]');
+  if(count)count.textContent=String(sellerImages.length);
+ }
  prev.addEventListener('click',()=>showPhoto(current-1));next.addEventListener('click',()=>showPhoto(current+1));
  detail.querySelector('.gallery-main').addEventListener('keydown',event=>{if(event.key==='ArrowRight'){event.preventDefault();showPhoto(current+1);}if(event.key==='ArrowLeft'){event.preventDefault();showPhoto(current-1);}});
  let touchX=null;main.addEventListener('touchstart',e=>touchX=e.touches[0].clientX,{passive:true});main.addEventListener('touchend',e=>{if(touchX!==null&&Math.abs(e.changedTouches[0].clientX-touchX)>40)showPhoto(current+(e.changedTouches[0].clientX<touchX?1:-1));touchX=null;},{passive:true});
@@ -126,30 +146,33 @@ function initDetail(){
   copy.textContent=selected.size?t('Copy link and selected option'):t('Copy Weidian link');
   // Share selection on this site; never invent a Weidian SKU URL parameter.
   const url=new URL(location.href);url.searchParams.delete('style');url.searchParams.delete('option');
+  url.searchParams.delete('attrs');
+  if(selected.size){url.searchParams.delete('matchedImage');url.searchParams.delete('seller');url.searchParams.delete('photo');}
   if(selected.has(styleGroup))url.searchParams.set('style',selected.get(styleGroup));
+  if(selected.size&&!variant&&[...selected.keys()].some(index=>index!==styleGroup))url.searchParams.set('attrs',[...selected.values()].join('-'));
   if(variant)url.searchParams.set('option',variant.id);
   history.replaceState(null,'',url.pathname+url.search+url.hash);
   document.querySelectorAll('.catalog-languages a').forEach(link=>{const next=new URL(link.href);next.search=url.search;link.href=next.href;});
  }
- function chooseStyle(id){
+ function chooseStyle(id,restore=false){
   selected.set(styleGroup,id);
+  // A size offered by one colourway may be absent from the next.
+  if(!restore&&!matchingVariants().some(variant=>variant.available)){
+   for(const [index] of selected)if(index!==styleGroup)selected.delete(index);
+   groups.querySelectorAll('select').forEach(select=>select.value='');
+  }
   const value=options.groups[styleGroup].values.find(value=>value.id===id);if(value?.image){images=[value.image];showPhoto(0);}
   updateSelection();
  }
  async function loadOptions(){
   if(loading)return;loading=true;retry.hidden=true;status.hidden=false;status.textContent=t('Loading styles…');
   try{
-   const response=await fetch('/api/product-options?'+new URLSearchParams({id:detail.dataset.sourceId}),{signal:AbortSignal.timeout(20000)});
+   const response=await fetch('/api/product-options?'+new URLSearchParams({id:detail.dataset.sourceId,lang:locale}),{signal:AbortSignal.timeout(20000)});
    if(!response.ok)throw Error('options');const data=await response.json();
    if(data.sourceId!==detail.dataset.sourceId||!Array.isArray(data.groups)||!Array.isArray(data.variants))throw Error('identity');
    options=data;
    const sellerImages=(options.images||[]).map(photo).filter(Boolean);
-   if(sellerImages.length){
-    let seller=document.querySelector('[data-seller-photos]');
-    if(!seller){seller=document.createElement('section');seller.className='source-photos seller-photos';seller.dataset.sellerPhotos='';document.querySelector('.source-photos').after(seller);}
-    seller.innerHTML=`<div class="section-caption"><h2>${esc(t('Seller photos'))}</h2><span>${sellerImages.length}</span></div><div class="source-photo-grid">${sellerImages.map((url,i)=>`<button class="photo-tile" type="button" data-seller-photo="${i}" aria-label="${esc(t('Enlarge photo'))} ${i+1}"><img src="${esc(imageDisplay(url,240))}" alt="${esc(t('Seller photos'))} ${i+1}" width="160" height="160" loading="lazy" referrerpolicy="no-referrer"><span>${i+1}</span></button>`).join('')}</div>`;
-    seller.querySelectorAll('[data-seller-photo]').forEach(button=>button.addEventListener('click',()=>openViewer(sellerImages,Number(button.dataset.sellerPhoto))));
-   }
+   if(sellerImages.length)showSellerGallery(sellerImages);
    styleGroup=options.groups.findIndex(group=>group.values.some(value=>photo(value.image)));
    const count=styleGroup>=0?options.groups[styleGroup].values.length:0;styleStatus.textContent=count?String(count):'';
    grid.replaceChildren();groups.replaceChildren();selected.clear();
@@ -167,11 +190,25 @@ function initDetail(){
    status.textContent=options.groups.length?'':t('No selectable styles are provided for this product.');status.hidden=!!options.groups.length;
    const params=new URL(location.href).searchParams,savedVariant=options.variants.find(variant=>variant.id===params.get('option'));
    if(savedVariant){options.groups.forEach((group,index)=>{const value=group.values.find(value=>savedVariant.attrs.includes(value.id));if(value)selected.set(index,value.id);});}
-   else if(styleGroup>=0&&options.groups[styleGroup].values.some(value=>value.id===params.get('style')))selected.set(styleGroup,params.get('style'));
+   else {
+    const attrs=(params.get('attrs')||'').split('-').filter(id=>/^\d+$/.test(id));
+    options.groups.forEach((group,index)=>{
+     const value=group.values.find(value=>attrs.includes(value.id)||(index===styleGroup&&value.id===params.get('style')));
+     if(value)selected.set(index,value.id);
+    });
+   }
+   if(!selected.size && matchedImage && styleGroup>=0){
+    const match=options.groups[styleGroup].values.find(value=>value.image===matchedImage);
+    if(match)selected.set(styleGroup,match.id);
+   }
    groups.querySelectorAll('select').forEach(select=>select.value=selected.get(Number(select.dataset.optionGroup))||'');
-   if(selected.has(styleGroup))chooseStyle(selected.get(styleGroup));else {
-    updateSelection();const sellerPhoto=Number(params.get('seller'));
-    if(Number.isSafeInteger(sellerPhoto)&&sellerPhoto>0&&sellerPhoto<=sellerImages.length){images=sellerImages;showPhoto(sellerPhoto-1);}
+   if(selected.has(styleGroup))chooseStyle(selected.get(styleGroup),true);else {
+    updateSelection();
+    const cataloguePhoto=matchedCatalogue>=0 ? matchedCatalogue+1 : Number(params.get('photo'));
+    const matchedSeller=sellerImages.indexOf(matchedImage);
+    const sellerPhoto=matchedSeller>=0 ? matchedSeller+1 : Number(params.get('seller'));
+    if(cataloguePhoto>0&&cataloguePhoto<=originalImages.length){images=originalImages;showPhoto(cataloguePhoto-1);}
+    else{images=galleryImages;showPhoto(sellerPhoto>0&&sellerPhoto<=images.length?sellerPhoto-1:0);}
    }
   }catch{status.textContent=t('Styles could not be loaded. Open the original listing to check the available options.');retry.hidden=false;}
   finally{loading=false;}
@@ -179,12 +216,23 @@ function initDetail(){
  retry.addEventListener('click',loadOptions);
  copy.addEventListener('click',async()=>{
   let value=detail.dataset.sourceUrl;
-  if(options&&selected.size){value+='\n'+t('Selected option')+': '+selectionLabels().join(' · ');const variant=activeVariant();if(variant)value+='\nSKU: '+variant.id;}
+  if(options&&selected.size){
+   const variant=activeVariant(),style=options.groups[styleGroup]?.values.find(item=>item.id===selected.get(styleGroup));
+   value=variant?.sourceUrl||style?.sourceUrl||value;
+   value+='\n'+t('Selected option')+': '+selectionLabels().join(' · ');
+   if(variant)value+=' · '+t('SKU')+': '+variant.id;
+   const selectionLink=new URL(location.pathname,location.origin);
+   for(const key of ['style','option','attrs']){
+    const param=new URL(location.href).searchParams.get(key);
+    if(param)selectionLink.searchParams.set(key,param);
+   }
+   value+='\n'+selectionLink.href;
+  }
   try{await navigator.clipboard.writeText(value);copyStatus.textContent=t('Copied')+(selected.size?' · '+t('The original link opens the product. The copied style, size and SKU help you select the same option there.'):'');}
   catch{const fallback=detail.querySelector('[data-copy-fallback]');fallback.hidden=false;fallback.value=value;fallback.focus();fallback.select();copyStatus.textContent=t('Copy failed. Select and copy the link below.');}
  });
  const agentQuery=detail.querySelector('#agent-query');agentQuery.addEventListener('input',()=>{let count=0;detail.querySelectorAll('[data-agent]').forEach(link=>{link.hidden=!link.dataset.agent.includes(agentQuery.value.trim().toLowerCase());if(!link.hidden)count++;});detail.querySelector('[data-no-agents]').hidden=count>0;});
- const initialPhoto=Number(new URL(location.href).searchParams.get('photo')||1);
+ const initialPhoto=matchedCatalogue>=0 ? matchedCatalogue+1 : Number(new URL(location.href).searchParams.get('photo')||1);
  showPhoto(Number.isSafeInteger(initialPhoto)&&initialPhoto>0?initialPhoto-1:0);loadOptions();
 }
 

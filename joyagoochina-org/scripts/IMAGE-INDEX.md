@@ -12,7 +12,7 @@ python scripts/build-all-image-index.py --refresh
 python scripts/test-build-all-image-index.py
 ```
 
-已有 `public/catalog-image-index.json` 会自动作为种子。脚本逐片验证 SHA-256 和记录数后复用 `area-v2` 特征，不重新下载已建立特征的图片。未变化的不可变分片保持原 URL；新增和变化的记录按最多 1,000 条一片输出。历史分片保留，避免正在搜索的访客读取旧 manifest 时遇到 404。
+线上检索读取 v3 `public/catalog-image-index.json` 以及 `public/assets/visual-index/` 内按内容校验的压缩分片。价格取自同一次读取的目录，保存在 `public/commerce/image-search-prices.json`。重建时会读取 `public/catalog-image-index-seed.json` 中的全精度特征。脚本逐片验证 SHA-256 和记录数后复用 `area-v2` 特征，不重新下载已建立特征的图片。未变化的不可变分片保持原 URL；新增和变化的记录按最多 1,000 条一片输出。历史分片保留，避免正在搜索的访客读取旧 manifest 时遇到 404。
 
 `--refresh` 更新商品和选项元数据，仍保留图片特征缓存。新增商品会从当前分页目录发现。普通重跑可复用六小时内的公开元数据缓存。首次全量构建可能较久，后续只处理新增图片；中断后直接重跑即可。
 

@@ -5,3 +5,10 @@
 @media(max-width:680px){.catalog-detail{grid-template-columns:1fr;gap:16px}.catalog-detail .gallery-main{max-height:320px;max-width:320px}.catalog-gallery .gallery-thumbs{max-height:60px}.catalog-product-info h1{font-size:24px}.catalog-detail .style-grid{max-height:210px}.catalog-currency{max-width:72px;font-size:12px;padding:7px 3px}.catalog-languages{right:0;min-width:240px}.catalog-header{position:relative}.catalog-actions{flex-wrap:nowrap;gap:7px}.source-photo-grid{max-height:230px}.source-photos{margin-top:20px}.product-action-row{gap:7px}.related-products .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .catalog-actions{position:relative}.catalog-actions>details{position:static}.catalog-languages{top:calc(100% + 8px);right:0;max-width:calc(100vw - 32px)}
+
+/* Keep the image column and purchase controls together above the source photo grid. */
+.gallery-thumbs[hidden]{display:none}
+.catalog-detail .gallery-main{margin-inline:auto}
+.catalog-detail .gallery-thumbs{justify-content:flex-start}
+.catalog-detail .style-grid button>span{font-size:.6875rem}
+.style-grid:focus-visible,.style-grid button:focus-visible,.photo-tile:focus-visible{outline:2px solid #285b42;outline-offset:1px}

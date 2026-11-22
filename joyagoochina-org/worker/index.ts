@@ -1,3 +1,4 @@
+import {withLocalization} from "../commerce/localization.js";
 import {commerceRoutes} from "../commerce/routes.js";
 /** Cloudflare Worker entry point for the vinext-starter template. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
@@ -291,4 +292,7 @@ const worker = {
   },
 };
 
-export default worker;
+const localizedWorker = withLocalization(worker);
+export default {fetch(request: Request, env: Env, ctx: ExecutionContext) {
+  return env.COMMERCE_EXPORT ? worker.fetch(request, env, ctx) : localizedWorker.fetch(request, env, ctx);
+}};

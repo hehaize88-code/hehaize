@@ -1,5 +1,7 @@
 import {fingerprint} from './commerce/image-search-core.mjs';
-import {matchingPhotoPath} from './commerce/image-index-loader.mjs?v=20261112-v4';
+import {matchingPhotoPath} from './commerce/image-index-loader.mjs?v=20261122';
+import {resizeFingerprint} from './commerce/compact-search.mjs';
+import {PRODUCT_UI} from './commerce/ui.js?v=20261122-24';
 import {translateProductTitle} from './commerce/product-title.js?v=20261112-v4';
 import {productGlossaries} from './commerce/product-glossaries.js';
 (()=>{
@@ -10,21 +12,73 @@ import {productGlossaries} from './commerce/product-glossaries.js';
  if(!document.querySelector('[data-product-detail]') && main && document.querySelector('[data-gallery-index]')){let current=0,start=null;const thumbs=[...document.querySelectorAll('[data-gallery-index]')];const go=i=>{current=Math.max(0,Math.min(thumbs.length-1,i));main.src=thumbs[current].querySelector('img').src;thumbs.forEach((t,n)=>t.setAttribute('aria-current',String(n===current)));document.querySelector('[data-gallery-prev]').disabled=current===0;document.querySelector('[data-gallery-next]').disabled=current===thumbs.length-1;};thumbs.forEach((t,i)=>t.addEventListener('click',()=>go(i)));document.querySelector('[data-gallery-prev]').onclick=()=>go(current-1);document.querySelector('[data-gallery-next]').onclick=()=>go(current+1);main.addEventListener('touchstart',e=>start=e.touches[0].clientX,{passive:true});main.addEventListener('touchend',e=>{if(start!==null&&Math.abs(e.changedTouches[0].clientX-start)>40)go(current+(e.changedTouches[0].clientX<start?1:-1));start=null;},{passive:true});main.tabIndex=0;main.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();go(current+(e.key==='ArrowRight'?1:-1));}});let dragStart=null;main.draggable=false;main.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse')dragStart=e.clientX;});main.addEventListener('pointerup',e=>{if(dragStart!==null&&Math.abs(e.clientX-dragStart)>40)go(current+(e.clientX<dragStart?1:-1));dragStart=null;});go(0);}
  document.addEventListener('click',event=>{const a=event.target.closest('[data-track-event]');if(a)window.gtag?.('event',a.dataset.trackEvent,{page_path:location.pathname,language:locale,destination_path:new URL(a.href).pathname,item_id:new URL(a.href).searchParams.get('id')||''});});
  document.querySelector('.catalog-search')?.addEventListener('submit',()=>window.gtag?.('event','search_submit',{page_path:location.pathname}));
- let fullTitles={};
- const input=document.getElementById('image-file');if(!input)return;
- const status=document.getElementById('image-status'),results=document.getElementById('image-results'),preview=document.getElementById('image-preview');
- const messages={en:['Loading image index…','Comparing catalogue images…','similar products','Could not read this image. Choose a JPEG, PNG or WebP under 10 MB.','Image index unavailable. Please try again.','products indexed','Index updated'],de:['Bildindex wird geladen…','Katalogbilder werden verglichen…','ähnliche Produkte','Bitte JPEG, PNG oder WebP unter 10 MB wählen.','Bildindex nicht verfügbar. Bitte erneut versuchen.','Produkte indexiert','Index aktualisiert'],pl:['Ładowanie indeksu zdjęć…','Porównywanie zdjęć…','podobnych produktów','Wybierz JPEG, PNG lub WebP poniżej 10 MB.','Indeks niedostępny. Spróbuj ponownie.','produktów w indeksie','Aktualizacja indeksu'],pt:['Carregando índice de imagens…','Comparando imagens…','produtos semelhantes','Escolha JPEG, PNG ou WebP com menos de 10 MB.','Índice indisponível. Tente novamente.','produtos indexados','Índice atualizado']};Object.assign(messages,{"zh": ["正在载入图片索引…", "正在比较商品图片…", "件相似商品", "请选择10MB以内的JPEG、PNG或WebP图片。", "图片索引暂时不可用，请重试。", "件商品已收录", "索引更新"], "es": ["Cargando índice…", "Comparando imágenes…", "productos similares", "Elige JPEG, PNG o WebP de menos de 10 MB.", "Índice no disponible. Inténtalo de nuevo.", "productos indexados", "Índice actualizado"], "it": ["Caricamento indice…", "Confronto immagini…", "prodotti simili", "Scegli JPEG, PNG o WebP sotto 10 MB.", "Indice non disponibile. Riprova.", "prodotti indicizzati", "Indice aggiornato"], "fr": ["Chargement de l’index…", "Comparaison des images…", "produits similaires", "Choisissez un JPEG, PNG ou WebP de moins de 10 Mo.", "Index indisponible. Réessayez.", "produits indexés", "Index mis à jour"], "ro": ["Se încarcă indexul…", "Se compară imaginile…", "produse similare", "Alege JPEG, PNG sau WebP sub 10 MB.", "Index indisponibil. Încearcă din nou.", "produse indexate", "Index actualizat"], "sv": ["Laddar bildindex…", "Jämför bilder…", "liknande produkter", "Välj JPEG, PNG eller WebP under 10 MB.", "Indexet är inte tillgängligt. Försök igen.", "indexerade produkter", "Index uppdaterat"]});const m=messages[locale]||messages.en;
- const coverageWords={"en":["product style lists unavailable","images unavailable"],"zh":["个商品的款式暂无法读取","张图片暂无法读取"],"de":["Produktvarianten derzeit nicht verfügbar","Bilder derzeit nicht verfügbar"],"pl":["list wariantów niedostępnych","zdjęć niedostępnych"],"es":["listas de variantes no disponibles","imágenes no disponibles"],"it":["elenchi varianti non disponibili","immagini non disponibili"],"fr":["listes de variantes indisponibles","images indisponibles"],"pt":["listas de variantes indisponíveis","imagens indisponíveis"],"ro":["liste de variante indisponibile","imagini indisponibile"],"sv":["variantlistor otillgängliga","bilder otillgängliga"]};
- const imageWords={en:'images',zh:'张图片',de:'Bilder',pl:'zdjęć',es:'imágenes',it:'immagini',fr:'images',pt:'imagens',ro:'imagini',sv:'bilder'};
- function thumbnail(src){const url=src.startsWith('https://')?src:'https://cnbuycha.com'+src;return /^https:\/\/[^/]*geilicdn\.com\//.test(url)&&/\.(jpg|png)$/i.test(url)?url+'.webp?w=400&h=400':url;}
- let objectUrl,sequence=0,worker;
- function search(query,turn){
-  worker?.terminate();
-  return new Promise((resolve,reject)=>{
-   const current=new Worker('/commerce/image-search-worker.js?v=20261112-v4',{type:'module'});worker=current;
-   current.onmessage=({data})=>{if(data.id!==turn||worker!==current)return;if(data.type==='progress'){if(turn===sequence)status.textContent=m[1]+' '+Math.round(data.loaded/data.total*100)+'%';}else if(data.type==='result'){current.terminate();worker=null;resolve(data.result);}else{current.terminate();worker=null;reject(Error(data.message));}};
-   current.onerror=()=>{current.terminate();if(worker===current)worker=null;reject(Error('Image index unavailable'));};current.postMessage({id:turn,query});
-  });
+
+ const input=document.getElementById('image-file');
+ if(!input)return;
+ const status=document.getElementById('image-status'), results=document.getElementById('image-results'), preview=document.getElementById('image-preview');
+ const t=key=>PRODUCT_UI[locale]?.[key]||key;
+ const number=n=>Number(n).toLocaleString(locale);
+ let sequence=0,worker=null,objectUrl=null,detailsPromise=null;
+ const detailData=()=>detailsPromise??=Promise.all([
+  fetch('/commerce/titles/'+locale+'.json').then(r=>r.ok?r.json():{}),
+  fetch('/commerce/image-search-prices.json').then(r=>r.ok?r.json():{})
+ ]).catch(()=>{detailsPromise=null;return [{},{}];});
+ function thumbnail(src){
+  const url=new URL(src,'https://cnbuycha.com');
+  if(/(^|\.)geilicdn\.com$/.test(url.hostname)&&/\.(jpg|jpeg|png)$/i.test(url.pathname)){url.pathname+='.webp';url.search='?w=400&h=400';}
+  return url.href;
  }
- input.addEventListener('change',async()=>{const turn=++sequence,file=input.files[0];results.innerHTML='';if(!file)return;if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>10*1024*1024){status.textContent=m[3];return;}try{if(objectUrl)URL.revokeObjectURL(objectUrl);objectUrl=URL.createObjectURL(file);preview.src=objectUrl;preview.hidden=false;await preview.decode();status.textContent=m[0];const index=await search(fingerprint(preview),turn);if(locale!=='en'&&!fullTitles[locale]){try{const r=await fetch('/commerce/titles/'+locale+'.json');if(r.ok)fullTitles[locale]=await r.json();}catch{}};if(turn!==sequence)return;status.textContent=m[1];await new Promise(r=>requestAnimationFrame(r));const ranked=index.items.map(({p,score})=>({p:{...p,title:translateProductTitle(p.title,locale,productGlossaries,fullTitles)},score}));if(turn!==sequence)return;results.innerHTML=ranked.map(({p})=>`<article class="catalog-card"><a href="${base}${esc(matchingPhotoPath(p))}"><img src="${esc(thumbnail(p.image))}" alt="${esc(p.title)}" width="400" height="400" loading="lazy" referrerpolicy="no-referrer"><h2>${esc(p.title)}</h2><div class="card-meta"><strong data-price-amount="${esc(p.price)}" data-price-currency="USD">$${Number(p.price).toFixed(2)}</strong><span><span data-currency-code>USD</span> ↗</span></div></a></article>`).join('');status.textContent=`${ranked.length} ${m[2]} · ${index.productCount}/${index.catalogCount} ${m[5]} · ${index.imageCount.toLocaleString()} ${imageWords[locale]||imageWords.en} · ${m[6]} ${index.updatedAt}`;const cw=coverageWords[locale]||coverageWords.en;if(index.failedStylePageCount)status.textContent+=` · ${index.failedStylePageCount} ${cw[0]}`;if(index.failedImageCount)status.textContent+=` · ${index.failedImageCount} ${cw[1]}`;}catch(e){if(turn===sequence)status.textContent=preview.complete&&preview.naturalWidth?m[4]:m[3];}});
+ function stop(){
+  sequence++;
+  worker?.terminate();worker=null;
+  if(objectUrl){URL.revokeObjectURL(objectUrl);objectUrl=null;}
+ }
+ async function selectImage(file){
+  stop();
+  const turn=sequence;
+  results.replaceChildren();preview.hidden=true;status.textContent='';
+  if(!file)return;
+  if(file.size<=0 || file.size>10*1024*1024 || !(/^image\/(jpeg|png|webp)$/.test(file.type)||(!file.type&&/\.(jpe?g|png|webp)$/i.test(file.name)))){
+   status.textContent=t('Choose a JPEG, PNG or WebP under 10 MB.');return;
+  }
+  objectUrl=URL.createObjectURL(file);
+  try {
+   const image=new Image();image.src=objectUrl;await image.decode();
+   if(turn!==sequence)return;
+   preview.src=image.src;preview.hidden=false;
+   status.textContent=t('Loading image index…');
+   const query=fingerprint(image);query.resize=resizeFingerprint(image);
+   const current=new Worker('/commerce/visual-worker-20261122.js');worker=current;
+   const metadata=detailData();
+   current.onerror=()=>{if(turn===sequence){status.textContent=t('Image index unavailable. Please try again.');current.terminate();worker=null;}};
+   current.onmessage=async({data})=>{
+    if(turn!==sequence||data.id!==turn)return;
+    if(data.type==='progress'){
+     status.textContent=t('Comparing catalogue images…')+' '+Math.round(data.loaded/data.total*100)+'%';
+     return;
+    }
+    current.terminate();worker=null;
+    if(data.type!=='result'){status.textContent=t('Image index unavailable. Please try again.');return;}
+    const [titles,prices]=await metadata;
+    if(turn!==sequence)return;
+    const index=data.result;
+    results.innerHTML=index.items.map(({p})=>{
+     const title=translateProductTitle(p.title,locale,productGlossaries,{[locale]:titles});
+     const amount=prices[p.path]??(p.price?Number(p.price):null);
+     const price=Number.isFinite(amount)?`<div class="card-meta"><strong data-price-amount="${amount}" data-price-currency="USD">$${amount.toFixed(2)}</strong><span data-currency-code>USD</span></div>`:'';
+     return `<article class="catalog-card"><a href="${base}${esc(matchingPhotoPath(p))}"><img src="${esc(thumbnail(p.image))}" alt="${esc(title)}" width="400" height="400" loading="lazy" referrerpolicy="no-referrer"><h2>${esc(title)}</h2>${price}</a></article>`;
+    }).join('');
+    document.dispatchEvent(new Event('joyagoo:prices'));
+    status.textContent=[t('Similar products')+' '+number(index.items.length),t('Products indexed')+' '+number(index.productCount),t('Images')+' '+number(index.imageCount),t('Index updated')+' '+index.updatedAt].join(' · ');
+   };
+   current.postMessage({id:turn,query});
+  }catch{if(turn===sequence)status.textContent=preview.hidden?t('Choose a JPEG, PNG or WebP under 10 MB.'):t('Image index unavailable. Please try again.');}
+ }
+ input.addEventListener('change',()=>{const file=input.files[0];input.value='';selectImage(file);});
+ const drop=input.closest('label');
+ drop.addEventListener('dragover',event=>event.preventDefault());
+ drop.addEventListener('drop',event=>{event.preventDefault();selectImage(event.dataTransfer?.files[0]);});
+ document.addEventListener('paste',event=>{const file=Array.from(event.clipboardData?.files||[]).find(f=>f.type.startsWith('image/'));if(file){event.preventDefault();selectImage(file);}});
+ if(input.files.length)selectImage(input.files[0]);
+ window.addEventListener('pagehide',stop);
 })();
