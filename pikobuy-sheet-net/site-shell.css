@@ -14,3 +14,15 @@ body .hero{background:#f1f6ed}body .primary-button,body .search-box button{backg
 @media(max-width:680px){.piko-header{padding:15px 5%;gap:13px}.piko-brand-actions{gap:12px}.piko-brand img{width:115px;height:28px}.piko-header .piko-register{font-size:11px;padding:9px 10px;max-width:143px}.piko-language summary{padding:10px 8px}.piko-header>nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:0 8px;text-align:center;font-size:12px}.piko-header>nav a{padding:9px 0;white-space:normal}.piko-live-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.piko-live-grid h2{font-size:13px;padding:0 10px}.piko-live-grid .card-meta{font-size:12px;padding:10px}.piko-live-grid .card-meta span{display:none}.piko-footer{padding:24px 5%}.catalog-page .catalog-main{padding:25px 5%}.catalog-page .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-page .catalog-tools{flex-wrap:wrap}.catalog-page .catalog-search{min-width:0;width:100%}.catalog-page .category-filters{gap:6px}.catalog-page .category-filters a{padding:8px;font-size:12px}.catalog-page .sort-row{flex-wrap:wrap;font-size:12px}.catalog-page .sort-row span{flex-basis:100%}.catalog-page h1{overflow-wrap:anywhere}body .hero{padding-top:26px;padding-bottom:22px}body .hero-visual{display:none}body .section{padding-top:30px;padding-bottom:30px}body .hero-copy>p{font-size:15px}body .hero h1{font-size:36px}body .trust-row{font-size:11px;flex-wrap:wrap}body .category-strip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}body .section-workflow{display:none}body .section-qc{display:none}body .section-guides{display:none}body .section-cta{display:none}}
 @media(max-width:360px){.piko-brand img{width:95px}.piko-brand-actions{gap:7px}.piko-header .piko-register{font-size:10px;max-width:122px}.piko-language summary{font-size:10px}.catalog-page .gallery-thumbs{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:680px){.piko-hero-products{display:none!important}.hero~.research-section,.hero~.soft-section,.hero~.final-cta{display:none}.hero~.section:has(.workflow),.hero~.section:has(.steps){display:none}}
+
+.search-box.piko-camera-form{grid-template-columns:30px minmax(0,1fr) 40px auto}
+.piko-camera{position:relative;display:grid;place-items:center;min-width:40px;min-height:42px;color:inherit;cursor:pointer;border-radius:8px}
+.piko-camera:focus-within{outline:2px solid currentColor}
+.search-box .piko-camera input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.piko-visual-home[hidden]{display:none}
+.piko-visual-home{margin:1rem 0}
+.piko-visual-home #image-preview{max-width:6rem;max-height:6rem;object-fit:contain}
+.piko-visual-home .catalog-grid{max-height:52vh;overflow:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(9rem,100%),1fr));gap:.6rem}
+.piko-visual-home .catalog-card img{width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+.piko-visual-home .catalog-card h2{font-size:1rem}
+@media(max-width:700px){.search-box.piko-camera-form{grid-template-columns:24px minmax(0,1fr) 40px}.search-box.piko-camera-form button[type=submit]{display:none}}

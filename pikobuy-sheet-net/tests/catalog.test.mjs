@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { gunzipSync } from 'node:zlib';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {parseList,parseDetail,buyUrl,LANGS,catalogueRoute} from '../commerce/catalog.mjs';
@@ -22,7 +23,7 @@ test('purchase URLs use each original item ID and encode the nested URL',()=>{
  for(const id of ['7874413518','1234567890']){const u=new URL(buyUrl(id));assert.equal(u.origin,'https://www.pikobuy.com');assert.equal(new URL(u.searchParams.get('productUrl')).searchParams.get('itemID'),id)}
  assert.equal(buyUrl('42'),null);assert.equal(buyUrl('12345&x=1'),null);
 });
-test('all seven catalogue languages retain complete navigation and localized labels',async()=>{
+test('all 24 catalogue languages retain complete navigation and localized labels',async()=>{
  for(const lang of LANGS){const pre=lang==='en'?'':'/'+lang;const r=await worker.fetch(new Request('https://pikobuy-sheet.net'+pre+'/catalog/'),env);assert.equal(r.status,200);const s=await r.text();assert.ok(s.includes(`<html lang="${lang}">`));assert.ok(s.includes(pre+'/guides/pikobuy-qc-checklist/'));assert.ok(s.includes(pre+'/guides/pikobuy-shipping-cost/'));assert.ok(s.includes(pre+'/seo-articles/'));assert.ok(s.includes(pre+'/faq/'));assert.ok(s.includes('mode=register&amp;redirect=/home'));assert.ok(s.includes('hreflang="x-default"'));}
 });
 test('query, sorting, paging and language links preserve state; search is noindex',async()=>{
@@ -36,7 +37,12 @@ test('legacy product and listing routes stay on this site and retain locale/quer
  r=await worker.fetch(new Request('https://pikobuy-sheet.net/pt/search.html?keywords=shirt&sort=price'),env);const u=new URL(r.headers.get('location'));assert.equal(u.pathname,'/pt/catalog/');assert.equal(u.searchParams.get('keywords'),'shirt');assert.equal(u.searchParams.get('sort'),'price');
 });
 test('sitemap includes product routes for each language and excludes search URLs',async()=>{
- const r=await worker.fetch(new Request('https://pikobuy-sheet.net/catalog-sitemap.xml'),env);const s=await r.text();for(const lang of LANGS)assert.ok(s.includes((lang==='en'?'':'/'+lang)+'/catalog/shoes/42.html'));assert.ok(!s.includes('?q='));
+ const index=await (await worker.fetch(new Request('https://pikobuy-sheet.net/catalog-sitemap.xml'),env)).text();
+ for(const lang of LANGS){
+  const shard='https://pikobuy-sheet.net/catalog-sitemap-'+lang+'.xml';assert.ok(index.includes(shard));
+  const xml=await (await worker.fetch(new Request(shard),env)).text();
+  assert.ok(xml.includes((lang==='en'?'':'/'+lang)+'/catalog/shoes/42.html'));assert.ok(!xml.includes('?q='));
+ }
 });
 test('unknown routes, private source routes and upstream failures cannot become soft 200s',async()=>{
  let r=await worker.fetch(new Request('https://pikobuy-sheet.net/commerce/catalog.mjs'),env);assert.equal(r.status,404);
@@ -46,7 +52,19 @@ test('homepage, FAQ, articles and guides all retain shared registration/navigati
  for(const lang of LANGS){const pre=lang==='en'?'':'/'+lang;for(const route of ['/','/faq/','/seo-articles/','/guides/pikobuy-qc-checklist/']){const r=await worker.fetch(new Request('https://pikobuy-sheet.net'+pre+route),env);assert.equal(r.status,200);const s=await r.text();assert.ok(s.includes('piko-header'));assert.ok(s.includes(pre+'/catalog/'));assert.ok(s.includes('/pikobuy-icon.png'));assert.ok(s.includes('mode=register&amp;redirect=/home'));}}
 });
 test('image-search data is complete, dated and sourced only from cnbuycha',()=>{
- const data=JSON.parse(fs.readFileSync(root+'/catalog-image-index.json'));assert.equal(data.source,'https://cnbuycha.com');assert.equal(data.catalogCount,data.indexedCount);assert.equal(data.indexedCount,data.products.length);assert.ok(data.products.length>3400);for(const p of data.products){assert.equal(p.hash.length,64);assert.equal(p.cells.length,48);assert.match(p.path,/^\/[a-z0-9-]+\/\d+\.html$/i)}
+ const meta=JSON.parse(fs.readFileSync(root+'/catalog-image-index.json'));
+ assert.equal(meta.source,'https://cnbuycha.com');assert.equal(meta.partial,false);
+ const products=new Set(), counts={};
+ for(let i=0;i<meta.shards;i++) {
+   const json=gunzipSync(fs.readFileSync(root+'/assets/visual-index/'+meta.revision+'/'+i+'.json.gz'));
+   for(const [path,photos] of JSON.parse(json)){
+     assert.ok(!products.has(path));products.add(path);assert.ok(photos.length);
+     for(const [url,hash,colors,kind] of photos){assert.match(url,/^https:\/\//);assert.match(hash,/^.?[a-f0-9]{16}$/);assert.equal(Buffer.from(colors,'base64').length,48);counts[kind]=(counts[kind]||0)+1;}
+   }
+ }
+ assert.deepEqual(counts,meta.kinds);assert.equal(products.size,meta.total);assert.equal(meta.completeProducts,meta.total);
+ assert.equal(Object.values(counts).reduce((a,b)=>a+b,0),meta.images);
+ assert.ok(counts.source && counts.style && counts.gallery);
 });
 test('corrected non-shoe item preserves old links and stays out of shoe listings',async()=>{
  const saved=fetch;
@@ -80,7 +98,7 @@ test('every complete article language version is routed and mobile controls are 
    assert.equal(response.status,200,article.path);
    assert.equal(response.headers.get('content-language'),lang);
    const markup=await response.text();
-   assert.equal((markup.match(/<script[^>]+src="\/assets\/piko-mobile-20261109-v1\.js"/g)||[]).length,1,article.path);
+   assert.equal((markup.match(/<script[^>]+src="\/assets\/piko-mobile-20261122\.js"/g)||[]).length,1,article.path);
    assert.ok(!markup.includes('<script src="/assets/piko-mobile-20261013-v1.js"'),article.path);
    assert.ok(markup.includes(`href="https://pikobuy-sheet.net${article.path}"`));
   }

@@ -1,6 +1,6 @@
-export const LANGUAGES = ['en','de','fr','es','it','pl','pt'];
+export const LANGUAGES = ["en", "de", "fr", "es", "it", "nl", "pt", "pl", "ro", "sv", "zh", "da", "fi", "el", "cs", "hu", "bg", "sk", "hr", "ja", "ko", "vi", "th", "id"];
 export const SITE_REGISTER = 'https://www.pikobuy.com/?mode=register&redirect=/home';
-export const NAMES = {en:'English',de:'Deutsch',fr:'Français',es:'Español',it:'Italiano',pl:'Polski',pt:'Português'};
+export const NAMES = {"en": "English", "de": "Deutsch", "fr": "Français", "es": "Español", "it": "Italiano", "nl": "Nederlands", "pt": "Português", "pl": "Polski", "ro": "Română", "sv": "Svenska", "zh": "简体中文", "da": "Dansk", "fi": "Suomi", "el": "Ελληνικά", "cs": "Čeština", "hu": "Magyar", "bg": "Български", "sk": "Slovenčina", "hr": "Hrvatski", "ja": "日本語", "ko": "한국어", "vi": "Tiếng Việt", "th": "ไทย", "id": "Bahasa Indonesia"};
 export const CHROME = {
  en:['Register on Pikobuy','Home','Guides','QC photos','Shipping','Articles','Independent product research. Not operated by or affiliated with Pikobuy.'],
  de:['Bei Pikobuy registrieren','Startseite','Anleitungen','QC-Bilder','Versand','Artikel','Unabhängige Produktrecherche. Nicht von Pikobuy betrieben oder mit Pikobuy verbunden.'],
@@ -13,7 +13,7 @@ export const CHROME = {
 const escChrome=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function navigation(lang='en') {
  const p=lang==='en'?'':`/${lang}`,t=CHROME[lang]||CHROME.en;
- return [['Spreadsheet',p+'/catalog/'],[t[2],p+'/guides/'],[t[3],p+'/guides/pikobuy-qc-checklist/'],[t[4],p+'/guides/pikobuy-shipping-cost/'],[t[5],p+'/seo-articles/'],['FAQ',p+'/faq/']];
+ return [['Spreadsheet',p+'/catalog/'],['Search by image',p+'/catalog/image-search/'],[t[2],p+'/guides/'],[t[3],p+'/guides/pikobuy-qc-checklist/'],[t[4],p+'/guides/pikobuy-shipping-cost/'],[t[5],p+'/seo-articles/'],['FAQ',p+'/faq/']];
 }
 export function nav(lang,path,query='',available=null) {
  const t=CHROME[lang]||CHROME.en,p=lang==='en'?'':`/${lang}`;

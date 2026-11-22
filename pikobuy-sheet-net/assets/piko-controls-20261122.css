@@ -1,0 +1,4 @@
+.piko-header .piko-language>div{display:none;max-height:min(55vh,24rem);overflow:auto;min-width:min(17rem,85vw);z-index:20}
+.piko-header .piko-language[open]>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.piko-currency{max-width:5rem;font:inherit;font-size:.875rem;padding:.4rem .2rem;border:1px solid #cbd5e1;border-radius:.4rem;background:white;color:#182333}
+@media(max-width:680px){.piko-header .piko-currency{font-size:.78rem;max-width:4rem}.piko-header .piko-language>div{position:absolute;right:0}.piko-header{flex-wrap:wrap}}

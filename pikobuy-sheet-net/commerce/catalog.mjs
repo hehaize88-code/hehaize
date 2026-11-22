@@ -1,10 +1,12 @@
-import { nav, footer } from './chrome.mjs';
+import { parseAgentLinks, fetchListingStyles, detailView } from './detail.mjs';
+import { loadProductTitles } from './titles.mjs';
+import { nav, footer, LANGUAGES } from './chrome.mjs';
 import { researchLinks } from './research.mjs';
 // Public catalogue adapter. All catalogue reads come from cnbuycha.com.
 export const DATA_ORIGIN = 'https://cnbuycha.com';
 export const REGISTER_URL = 'https://www.pikobuy.com/?mode=register&redirect=/home';
 export const CATEGORIES = ['AllProducts','shoes','hoodies-sweaters','t-shirts','jackets','pants-shorts','headwear','accessories','short-sets','electronics','other-stuff','jersey'];
-export const LANGS = ['en','de','fr','es','it','pl','pt'];
+export const LANGS = LANGUAGES;
 const COPY = {
  en: ['Products & QC photos','Search products or source ID','Search','Latest','Popular','Price: low to high','Search by image','Browse the full spreadsheet','Product photos / QC','Open in Pikobuy','Register on Pikobuy','Previous','Next','No products found. Try another keyword.','Product ID','Product images from the source catalogue. Check the exact item, option and photo context before buying.','Choose an image to find visually similar catalogue products. Images are compared on your device.','Related products','All products','Image search compares visual similarity; it does not confirm an identical item.','Catalogue temporarily unavailable. Please try again.'],
  de: ['Produkte & QC-Bilder','Produkte oder Artikel-ID suchen','Suchen','Neueste','Beliebt','Preis: aufsteigend','Bildersuche','Das komplette Spreadsheet ansehen','Produktbilder / QC','Bei Pikobuy öffnen','Bei Pikobuy registrieren','Zurück','Weiter','Keine Produkte gefunden. Versuche einen anderen Suchbegriff.','Artikel-ID','Bilder aus dem Quellkatalog. Prüfe den genauen Artikel, die Variante und den Bildkontext vor dem Kauf.','Wähle ein Bild für ähnliche Produkte aus dem Katalog. Der Vergleich erfolgt auf deinem Gerät.','Ähnliche Produkte','Alle Produkte','Visuelle Ähnlichkeit bestätigt nicht, dass es derselbe Artikel ist.','Katalog vorübergehend nicht verfügbar. Bitte erneut versuchen.'],
@@ -45,7 +47,7 @@ export function parseDetail(html) {
  const section=html.split('<section class="product-detail"')[1]?.split('</section>')[0]||'';
  const id=first(section,/<meta itemprop="sku" content="([^"]+)"/);
  const images=[...section.matchAll(/<img[^>]*itemprop="image"[^>]*src="([^"]+)"/g)].map(m=>imageUrl(m[1])).filter(Boolean);
- return {title:textOnly(first(section,/<h1[^>]*>([\s\S]*?)<\/h1>/)),sourceId:id,price:first(section,/<meta itemprop="price" content="([^"]+)"/),images:[...new Set(images)],sourceUrl:first(section,/href="(https:\/\/weidian\.com\/[^\"]+)"/),related:parseList(html).products};
+ return {title:textOnly(first(section,/<h1[^>]*>([\s\S]*?)<\/h1>/)),sourceId:id,price:first(section,/<meta itemprop="price" content="([^"]+)"/),images:[...new Set(images)],sourceUrl:first(section,/href="(https:\/\/weidian\.com\/[^\"]+)"/),agents:parseAgentLinks(html,id),related:parseList(html).products};
 }
 // Pikobuy accepts the original Weidian item ID, not the catalogue row ID.
 export function buyUrl(sourceId) {
@@ -76,12 +78,12 @@ function searchForm(lang,q='',category='AllProducts',sort='new') {
 export async function upstream(path,params) {
  const u=new URL(path,DATA_ORIGIN);if(params)u.search=params.toString();
  const r=await fetch(u.href,{headers:{accept:'text/html'},redirect:'follow',signal:AbortSignal.timeout(18000)});
- if(new URL(r.url||u.href).origin!==DATA_ORIGIN)throw new Error('Unexpected catalogue destination');
+ if(![DATA_ORIGIN,'https://www.cnbuycha.com'].includes(new URL(r.url||u.href).origin))throw new Error('Unexpected catalogue destination');
  if(!r.ok){const error=new Error('Catalogue response '+r.status);error.status=r.status;throw error;}
  return r.text();
 }
 export async function catalogueRoute(request,env) {
- const url=new URL(request.url),match=url.pathname.match(/^\/(?:(de|fr|es|it|pl|pt)\/)?catalog(?:\/(.*))?$/);
+ const url=new URL(request.url),match=url.pathname.match(/^\/(?:(de|fr|es|it|nl|pt|pl|ro|sv|zh|da|fi|el|cs|hu|bg|sk|hr|ja|ko|vi|th|id)\/)?catalog(?:\/(.*))?$/);
  if(url.pathname==='/api/catalog') {
   if(request.method!=='GET')return new Response(null,{status:405});
   try{const q=new URLSearchParams();for(const k of ['q','sort','page'])if(url.searchParams.has(k))q.set(k,url.searchParams.get(k).slice(0,100));
@@ -104,9 +106,9 @@ export async function catalogueRoute(request,env) {
  try {
   if(/^[a-z0-9-]+\/\d+\.html$/i.test(tail)) {
    if(correctedPath('/'+tail)!=='/'+tail)return Response.redirect(url.origin+localPath('/'+tail,lang)+url.search,301);
-   const product=parseDetail(await upstream(sourcePath('/'+tail)));if(!product.title)return shell(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
+   const product=parseDetail(await upstream(sourcePath('/'+tail)));const titleFor=await loadProductTitles(env,request,lang);product.title=titleFor(product.title);product.related.forEach(p=>p.title=titleFor(p.title));if(!product.title)return shell(lang,path,'Product unavailable','',`<h1>${t[13]}</h1>`,{status:404,noindex:true});
    const buy=buyUrl(product.sourceId);
-   return shell(lang,path,product.title,`${product.title}. ${t[8]}. ${t[15]}`,`<a class="back" href="${base(lang)}/">← ${t[7]}</a><section class="catalog-detail"><div class="catalog-gallery"><div class="gallery-main"><button type="button" data-gallery-prev aria-label="${t[11]}">‹</button><img id="gallery-main" src="${escapeHtml(product.images[0]||'')}" alt="${escapeHtml(product.title)}" width="800" height="800"><button type="button" data-gallery-next aria-label="${t[12]}">›</button></div><div class="gallery-thumbs">${product.images.map((im,i)=>`<button type="button" data-gallery-index="${i}" aria-label="${t[8]} ${i+1}" aria-current="${i===0}"><img src="${escapeHtml(im)}" alt="${escapeHtml(product.title)} ${i+1}" width="120" height="120" loading="lazy"></button>`).join('')}</div></div><div class="catalog-product-info"><p class="catalog-eyebrow">PIKOBUY SPREADSHEET</p><h1>${escapeHtml(product.title)}</h1><p>${t[14]}: <strong>${escapeHtml(product.sourceId)}</strong></p><p class="detail-price">${money(product.price)} <small>USD</small></p>${buy?`<a class="buy-button" href="${escapeHtml(buy)}" target="_blank" rel="noopener noreferrer" data-track-event="pikobuy_product_click">${t[9]} ↗</a>`:''}<h2>${t[8]}</h2><p>${t[15]}</p></div></section><h2>${t[17]}</h2><div class="catalog-grid">${product.related.slice(0,8).map(p=>card(p,lang)).join('')}</div>`);
+   return shell(lang,path,product.title,`${product.title}. ${t[8]}. ${t[15]}`,`<a class="back" href="${base(lang)}/">← ${t[7]}</a>${detailView(product,await fetchListingStyles(product.sourceId),buy,t,escapeHtml,money)}<h2>${t[17]}</h2><div class="catalog-grid">${product.related.slice(0,8).map(p=>card(p,lang)).join('')}</div>`);
   }
   const cat=tail.replace(/\/$/,'')||'AllProducts';if(!CATEGORIES.includes(cat))return shell(lang,path,'Not found','',`<h1>404</h1>`,{status:404,noindex:true});
   const q=(url.searchParams.get('q')||url.searchParams.get('keywords')||'').trim().slice(0,100);
@@ -123,6 +125,7 @@ export async function catalogueRoute(request,env) {
     try {const p=parseDetail(await upstream('/shoes/3448.html'));if(p.title&&p.images.length)data.products.push({path:'/other-stuff/3448.html',title:p.title,image:p.images[0],price:p.price});} catch {}
    }
   }
+  const titleFor=await loadProductTitles(env,request,lang);data.products.forEach(p=>p.title=titleFor(p.title));
   const route=localPath('/'+cat+'/',lang),link=(s,p=1)=>`${route}?${new URLSearchParams({q,sort:s,page:String(p)})}`;
   const names=CATEGORY_LABELS[lang]||CATEGORY_LABELS.en,categoryTitle=names[CATEGORIES.indexOf(cat)];
   const title=cat==='AllProducts'?`Pikobuy Spreadsheet: ${t[18]}`:`Pikobuy ${categoryTitle} Spreadsheet`;

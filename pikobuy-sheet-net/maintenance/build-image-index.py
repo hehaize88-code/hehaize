@@ -1,66 +1,59 @@
-import re,json,subprocess,concurrent.futures,pathlib,math,io,time,os,warnings,hashlib
-warnings.filterwarnings('ignore',category=DeprecationWarning)
-from html import unescape
-from PIL import Image,ImageOps
-root=pathlib.Path(__file__).resolve().parents[1]
-out=root
-cache=root/'.cache/image-index';cache.mkdir(parents=True,exist_ok=True)
-def fetch(url,path):
- if path.exists() and path.stat().st_size>100 and (path.suffix!='.html' or os.environ.get('INDEX_CACHED_ONLY')=='1'):return path.read_bytes()
- if os.environ.get('INDEX_CACHED_ONLY')=='1':return None
- r=subprocess.run(['curl','-fLsS','--max-time','35','--retry','1',url,'-o',str(path)],capture_output=True)
- if r.returncode:return None
- return path.read_bytes()
-def parse(s):
- rows=[]
- for b in re.findall(r'<article class="product-card[^>]*>(.*?)</article>',s,re.S):
-  def find(p):
-   m=re.search(p,b,re.S);return unescape(m.group(1)) if m else ''
-  rows.append(dict(path=find(r'<a href="([^"]+)'),title=find(r'<h3>(.*?)</h3>'),image=find(r'<img src="([^"]+)'),price=find(r'data-currency="USD"[^>]*>([\d.]+)')))
- return rows
-first_bytes=fetch('https://cnbuycha.com/AllProducts/',cache/'page-1.html')
-if not first_bytes:raise RuntimeError('Source catalogue unavailable; existing index was not changed')
-first=first_bytes.decode()
-total=int(re.search(r'<div class="results-summary">([\d,]+) products',first).group(1).replace(',',''));pages=math.ceil(total/60)
-print('pages',pages,flush=True)
-def page(n):
- b=fetch('https://cnbuycha.com/AllProducts/?page='+str(n),cache/f'page-{n}.html')
- if not b:raise RuntimeError('Page failed '+str(n))
- return parse(b.decode())
-rows=[]
-with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
- for result in ex.map(page,range(1,pages+1)):rows+=result
-rows=list({r['path']:r for r in rows}.values());(root/'live-catalog.json').write_text(json.dumps(rows))
-print('catalog products',len(rows),flush=True)
-# Low-resolution RGB and difference hash descriptors: same source photos, no third-party catalogue.
-existing=json.loads((out/'catalog-image-index.json').read_text()) if (out/'catalog-image-index.json').exists() else {}
-previous={r['path']:r for r in existing.get('products',[])}
-def index(r):
- old=previous.get(r['path']);absolute=lambda u:u if u.startswith('https:') else 'https://cnbuycha.com'+u
- if old and absolute(old['image'])==absolute(r['image']) and 'cells' in old:return {**old,**r}
- id=re.search(r'(\d+)\.html',r['path']).group(1)
- url=r['image'] if r['image'].startswith('https://') else 'https://cnbuycha.com'+r['image']
- b=fetch(url,cache/(hashlib.sha256(url.encode()).hexdigest()+'.img'))
- try:
-  im=ImageOps.exif_transpose(Image.open(io.BytesIO(b))).convert('RGB')
-  rgb=list(im.resize((8,8),Image.Resampling.BILINEAR).getdata());colors=[round(sum(p[c] for p in rgb)/64) for c in range(3)]
-  pix=list(im.resize((9,8),Image.Resampling.BILINEAR).convert('L').getdata())
-  bits=['1' if pix[y*9+x]>pix[y*9+x+1] else '0' for y in range(8) for x in range(8)]
-  # 4x4 color cells provide a small, interpretable visual fingerprint.
-  cells=[int(c) for p in im.resize((4,4),Image.Resampling.BILINEAR).getdata() for c in p]
-  return {**r,'hash':''.join(bits),'colors':colors,'cells':cells}
- except Exception:return None
-indexed=[];failed=[];start=time.time()
-with concurrent.futures.ThreadPoolExecutor(max_workers=16) as ex:
- for i,res in enumerate(ex.map(index,rows),1):
-  if res:indexed.append(res)
-  else:failed.append(rows[i-1]['path'])
-  if i%100==0:print('indexed',i,'/',len(rows),'ok',len(indexed),'seconds',round(time.time()-start),flush=True)
-  if i%400==0:(root/'index-checkpoint.json').write_text(json.dumps(indexed))
-payload=dict(source='https://cnbuycha.com',updatedAt=time.strftime('%Y-%m-%d',time.gmtime()),catalogCount=len(rows),indexedCount=len(indexed),products=indexed)
-if len(indexed)<len(rows)*.95:raise RuntimeError('Less than 95% image coverage; existing index was not changed')
-target=out/'catalog-image-index.json'
-temporary=target.with_suffix('.tmp')
-temporary.write_text(json.dumps(payload,separators=(',',':')))
-temporary.replace(target)
-(root/'index-failures.json').write_text(json.dumps(failed));print('finished',len(indexed),'failed',len(failed),flush=True)
+"""Publish the shared cnbuycha catalogue snapshot as first-party PikoBuy assets.
+
+The sibling KakobuyPick refresh workflow builds the underlying visual fingerprints
+from cnbuycha and the corresponding Weidian listings. Both sites use the same
+source product paths. Run after a shared index revision changes.
+"""
+from pathlib import Path
+from collections import Counter
+import gzip
+import hashlib
+import json
+import re
+import shutil
+
+root = Path(__file__).resolve().parents[1]
+source = root.parent / 'kakobuypick-com'
+metadata = {}
+for line in (source / 'src/lib/visual/manifest.mjs').read_text().splitlines():
+    name, _, raw = line.partition('=')
+    metadata[name.split()[-1]] = json.loads(raw.removesuffix(';'))
+meta = metadata['imageMeta']
+if meta['source'] != 'https://cnbuycha.com' or meta['partial']:
+    raise ValueError('The shared image inventory is incomplete')
+revision = meta['revision']
+if not re.fullmatch(r'[0-9a-f]{16}', revision):
+    raise ValueError('Invalid revision')
+source_dir = source / 'public/image-index' / revision
+target = root / 'assets/visual-index' / revision
+digest = hashlib.sha256()
+kinds = Counter()
+paths = set()
+for number in range(meta['shards']):
+    blob = (source_dir / f'{number}.json.gz').read_bytes()
+    digest.update(blob)
+    for path, photos in json.loads(gzip.decompress(blob)):
+        if path in paths or not photos:
+            raise ValueError(f'Invalid image record for {path}')
+        paths.add(path)
+        for _, signature, color, kind in photos:
+            if not signature or not color:
+                raise ValueError(f'Missing image fingerprint for {path}')
+            kinds[kind] += 1
+if (digest.hexdigest()[:16] != revision or kinds != meta['kinds']
+        or paths != set(metadata['imageNames']) or paths != set(metadata['verifiedProducts'])):
+    raise ValueError('Catalogue/image index mismatch')
+target.mkdir(parents=True, exist_ok=True)
+for number in range(meta['shards']):
+    shutil.copyfile(source_dir / f'{number}.json.gz', target / f'{number}.json.gz')
+(target / 'titles.json').write_text(json.dumps(metadata['imageNames'], separators=(',', ':'), ensure_ascii=False))
+manifest = root / 'catalog-image-index.json'
+temporary = manifest.with_suffix('.tmp')
+temporary.write_text(json.dumps(meta, separators=(',', ':')))
+temporary.replace(manifest)
+# Keep the previous revision available to tabs opened during deployment.
+revisions = sorted((root / 'assets/visual-index').iterdir(), key=lambda p: p.stat().st_mtime, reverse=True)
+previous = next((p for p in revisions if p != target and re.fullmatch('[0-9a-f]{16}', p.name)), None)
+for directory in revisions:
+    if directory not in (target, previous) and re.fullmatch('[0-9a-f]{16}', directory.name):
+        shutil.rmtree(directory)
