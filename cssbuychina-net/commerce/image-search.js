@@ -1,3 +1,4 @@
+import {compatibleSearch} from './compatible-search.mjs';
 import {acceptsImage,fingerprint} from './image-search-core.mjs';
 import {resizeFingerprint} from './compact-search.mjs';
 import {matchingPhotoPath} from './image-index-loader.mjs';
@@ -41,7 +42,8 @@ export function initializeImageSearch({locale,dictionary,titleText}) {
   cards.forEach(card=>observer.observe(card));
  }
  const number=value=>Number(value).toLocaleString(locale);
- function stop(){sequence++;prices?.abort();prices=null;worker?.terminate();worker=null;results.setAttribute('aria-busy','false');}
+ let recovery=null, watch;
+ function stop(){sequence++;clearTimeout(watch);recovery?.abort();recovery=null;prices?.abort();prices=null;worker?.terminate();worker=null;results.setAttribute('aria-busy','false');}
  function render(result){
   results.innerHTML=result.items.map(({p})=>{
    const url=new URL(p.image,'https://cnbuycha.com');
@@ -62,16 +64,33 @@ export function initializeImageSearch({locale,dictionary,titleText}) {
    const query=fingerprint(currentImage);
    query.resize=resizeFingerprint(currentImage);
    if(query.variation<3){status.textContent=t('This image has too little visible detail. Choose a clear photo of a single item.');results.setAttribute('aria-busy','false');retry.hidden=false;return;}
-   worker=new Worker('/commerce/visual-worker-20261122.js');
-   const done=()=>{worker?.terminate();worker=null;results.setAttribute('aria-busy','false');retry.hidden=false;};
+   const done=()=>{clearTimeout(watch);worker?.terminate();worker=null;results.setAttribute('aria-busy','false');retry.hidden=false;};
+   const progress=(loaded,total)=>{if(turn===sequence)status.textContent=t('Comparing images…')+' '+number(loaded)+' / '+number(total);};
+   async function recover(){
+    if(turn!==sequence || recovery)return;
+    clearTimeout(watch);worker?.terminate();worker=null;
+    recovery=new AbortController();
+    status.textContent=t('Comparing images…');
+    try{
+     const result=await compatibleSearch(query,recovery.signal,progress);
+     if(turn===sequence)render(result);
+    }catch(error){
+     if(turn===sequence)status.textContent=t('Catalogue images could not be loaded. Check your connection and select Search again.')+' ('+String(error.message).slice(0,100)+')';
+    }finally{if(turn===sequence){done();recovery=null;}}
+   }
+   const arm=()=>{clearTimeout(watch);watch=setTimeout(recover,12000);};
+   if(new URL(location.href).searchParams.get('mode')==='compat'){await recover();return;}
+   try{worker=new Worker('/commerce/visual-worker-20261122b.js');}
+   catch{await recover();return;}
    worker.onmessage=({data})=>{
-    if(turn!==sequence||data.id!==turn)return;
-    if(data.type==='progress')status.textContent=`${t('Comparing images…')} ${number(data.loaded)} / ${number(data.total)}`;
+    if(turn!==sequence || data.id!==turn || recovery)return;
+    if(data.type==='progress'){arm();progress(data.loaded,data.total);}
     else if(data.type==='result'){render(data.result);done();}
-    else {status.textContent=t('Catalogue images could not be loaded. Check your connection and select Search again.')+' ('+String(data.message||'index')+')';done();}
+    else recover();
    };
-   worker.onerror=()=>{if(turn===sequence){status.textContent=t('Catalogue images could not be loaded. Check your connection and select Search again.');done();}};
-   status.textContent=t('Loading catalogue images…');worker.postMessage({id:turn,query});
+   worker.onerror=recover;
+   worker.onmessageerror=recover;
+   arm();status.textContent=t('Loading catalogue images…');worker.postMessage({id:turn,query});
   }catch{if(turn===sequence){stop();status.textContent=t('This image could not be read. Save it as JPG, PNG or WebP and try again.');retry.hidden=false;}}
  }
  async function selectImage(file){
