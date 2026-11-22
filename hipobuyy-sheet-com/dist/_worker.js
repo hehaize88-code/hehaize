@@ -274,7 +274,7 @@ const decodeEntities = s => s.replace(/&(amp|lt|gt|quot|apos|nbsp|#(?:[0-9]+|x[\
   return n>0 && n<=0x10ffff?String.fromCodePoint(n):s;
 });
 const translationMemo = new Map();
-const localeVersion = '20261122-locale-4';
+const localeVersion = '20261122-locale-5';
 const namedBrands = /^(?:HipoBuyy?(?: Sheet)?|Oopbuy|Kakobuy|Weidian|CNFans|Superbuy|USFans|Sugargoo|Litbuy|Lovegobuy|CSSBuy|Rizzitgo|Joyagoo|Nike|Adidas|SKU|USD|EUR|CNY|GBP|CAD|AUD|JPY|HKD|PLN|SEK|CHF|DKK|NOK|KRW|IDR|MXN|BRL|QC|FAQ)$/i;
 function needsTranslation(text,lang,translatePage) {
   return /\p{L}/u.test(text) && !namedBrands.test(text) && !/^(?:https?:\/\/|www\.|[\w.-]+@\w|(?=[0-9A-Z-]*\d)[0-9A-Z-]+$)/.test(text) &&
@@ -346,11 +346,36 @@ async function translateProductBatch(batch,lang,fetchTranslation){
     return chunks.map(s=>names.get(s)??(translated.has(s.trim())?s.replace(/\S[\s\S]*\S|\S/,translated.get(s.trim())):s)).join('');
   }));
 }
-async function localeStrings(strings,lang,fetchTranslation=fetch) {
+const bundledLocales=new Map();
+async function bundledDictionary(env,lang,origin){
+  if(!env?.ASSETS || !Object.hasOwn(SITE_LOCALES,lang))return null;
+  const prior=bundledLocales.get(lang);
+  if(prior)return prior;
+  try{
+    const res=await env.ASSETS.fetch(new Request(new URL('/assets/locales/'+lang+'.json',origin)));
+    if(!res.ok || !res.headers.get('content-type')?.includes('json'))return null;
+    const values=await res.json();
+    if(typeof values!=='object'||values===null||Array.isArray(values))return null;
+    if(bundledLocales.size>=3)bundledLocales.delete(bundledLocales.keys().next().value);
+    bundledLocales.set(lang,values);
+    return values;
+  }catch{return null}
+}
+function localeFailureCode(error){
+  const status=/^Translation service (\d{3})$/.exec(error?.message||'');
+  if(status)return 'provider-'+status[1];
+  if(error?.name==='TimeoutError'||error?.name==='AbortError')return 'provider-timeout';
+  if(error?.message==='Translation service unavailable')return 'provider-unavailable';
+  if(error?.message==='Empty translation')return 'provider-empty';
+  if(error?.name==='SyntaxError')return 'provider-format';
+  if(error?.name==='TypeError')return 'type-error';
+  return 'render-error';
+}
+async function localeStrings(strings,lang,fetchTranslation=fetch,dictionary=null) {
   const found=new Map(), groups=[];
   let group=[],length=0;
   for(const s of new Set(strings)) {
-    const cached=translationMemo.get(lang+'\n'+s);
+    const cached=dictionary&&Object.hasOwn(dictionary,s)&&typeof dictionary[s]==='string'?dictionary[s]:translationMemo.get(lang+'\n'+s);
     if(cached){found.set(s,cached);continue}
     // Keep Unicode-heavy URLs below conservative intermediary limits.
     const size=encodeURIComponent(s).length;
@@ -379,7 +404,7 @@ function rewriteStructured(value,key,lang,origin,mark) {
   if(value.startsWith('https://')||value.startsWith('/'))return pageLink(value,lang,origin);
   return ['name','headline','description','text','articleBody','caption','articleSection','keywords'].includes(key)?mark(value,'json'):value;
 }
-async function localeHtml(response,lang,sourceLang,url,fetchTranslation) {
+async function localeHtml(response,lang,sourceLang,url,fetchTranslation,dictionary) {
   const source=await response.text(), markers=new Map(), originals=new Set();
   // Never submit user-entered search terms to the translation service. Existing templates
   // keep the query only in URLs and form values; mask it if a future template echoes it.
@@ -453,7 +478,7 @@ async function localeHtml(response,lang,sourceLang,url,fetchTranslation) {
       token.replace(changed,{html:true});nodeText='';
     }});
   const html=await localized.transform(new Response(source)).text();
-  const translated=await localeStrings(originals,lang,fetchTranslation);
+  const translated=await localeStrings(originals,lang,fetchTranslation,dictionary);
   const result=html.replace(new RegExp(nonce+'\\d+_','g'),marker=>{
     const {raw,context,replacements}=markers.get(marker);
     let value=translated.get(raw);
@@ -480,11 +505,12 @@ async function localeResponse(request,env,ctx,coreFetch,fetchTranslation=fetch) 
   if(cached)return request.method==='HEAD'?new Response(null,cached):cached;
   let result;
   try {
+    const dictionary=await bundledDictionary(env,apiLang||lang,url.origin);
     if(catalogApi){
       const response=await coreFetch(request,env,ctx);
       if(!response.ok || request.method==='HEAD')return response;
       const data=await response.json(), titles=[...(data.products||[]).map(p=>p.title),...(data.titles||[])];
-      const translated=await localeStrings(titles.filter(s=>typeof s==='string'&&needsTranslation(s,apiLang,apiLang!=='en')),apiLang,fetchTranslation);
+      const translated=await localeStrings(titles.filter(s=>typeof s==='string'&&needsTranslation(s,apiLang,apiLang!=='en')),apiLang,fetchTranslation,dictionary);
       if(data.products)for(const item of data.products)item.title=translated.get(item.title)||item.title;
       if(data.titles)data.titles=data.titles.map(s=>translated.get(s)||s);
       result=Response.json(data,{headers:{'content-language':machineLocale(apiLang),'cache-control':'public,max-age=60'}});
@@ -499,11 +525,11 @@ async function localeResponse(request,env,ctx,coreFetch,fetchTranslation=fetch) 
         return new Response(null,{status:response.status,headers});
       }
       if(!response.headers.get('content-type')?.includes('text/html'))return response;
-      result=await localeHtml(response,lang,sourceLang,url,fetchTranslation);
+      result=await localeHtml(response,lang,sourceLang,url,fetchTranslation,dictionary);
     }
   } catch(error) {
     console.error('Locale render failed',apiLang||lang,error?.message);
-    return new Response('Temporarily unavailable',{status:503,headers:{'retry-after':'30','cache-control':'no-store'}});
+    return new Response('Temporarily unavailable',{status:503,headers:{'retry-after':'30','cache-control':'no-store','x-hipobuy-locale-error':localeFailureCode(error)}});
   }
   if(result.ok&&cache&&!url.searchParams.has('q')&&!url.searchParams.has('keywords')&&!result.headers.has('set-cookie')&&!/private|no-store/i.test(result.headers.get('cache-control')||'')){
     const copy=new Response(result.clone().body,result);
