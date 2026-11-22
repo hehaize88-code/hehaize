@@ -23,7 +23,7 @@ import {productGlossaries} from './commerce/product-glossaries.js';
  previous.onclick=()=>renderPage(Number(pageInput.value)-1,true);
  next.onclick=()=>renderPage(Number(pageInput.value)+1,true);
  pageInput.onchange=()=>renderPage(Number(pageInput.value),true);
- pageInput.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();pageInput.blur();}};
+ pageInput.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();renderPage(Number(pageInput.value),true);pageInput.blur();}};
  const t=key=>PRODUCT_UI[locale]?.[key]||key;
  const number=n=>Number(n).toLocaleString(locale);
  let sequence=0,worker=null,objectUrl=null,detailsPromise=null;
