@@ -33,7 +33,12 @@ jobs:
       - name: Refresh visual fingerprints
         env:
           BATCH: ${{ inputs.batch || 150 }}
-        run: python lolobuy-sheet-net/scripts/refresh-visual-index.py --cache-dir "$RUNNER_TEMP/lolobuy-images" --limit "$BATCH"
+          INITIAL_BACKFILL: ${{ github.event_name == 'push' }}
+        run: |
+          if [ "$INITIAL_BACKFILL" = true ]; then
+            BATCH=$(python -c "import json; m=json.load(open('lolobuy-sheet-net/visual-index/manifest.json')); print(max(150,m['liveCatalogCount']-m['total']))")
+          fi
+          python lolobuy-sheet-net/scripts/refresh-visual-index.py --cache-dir "$RUNNER_TEMP/lolobuy-images" --limit "$BATCH"
       - name: Publish updated index to the deployment branch
         run: |
           git add -- lolobuy-sheet-net/visual-index
