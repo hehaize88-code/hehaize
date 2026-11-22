@@ -22,7 +22,11 @@
   update('CNY');
   selector.disabled = true;
   fetch('/kamey-product/rates').then(r=>r.ok?r.json():null).then(data=>{
-    if(data?.rates) rates={...data.rates,CNY:1};
+    if(data?.rates) {
+      rates={...data.rates,CNY:1};
+      const date = document.getElementById('km-rate-asof');
+      if(date && data.asOf) date.textContent=data.asOf;
+    }
   }).catch(()=>{}).finally(()=>{
     for(const option of selector.options) option.disabled = !(rates[option.value]>0);
     selector.disabled=false;

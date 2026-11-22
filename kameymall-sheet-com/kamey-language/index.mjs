@@ -37,9 +37,10 @@ export function languageMenu(path,lang){
 const memory=new Map(), activeTargets=new Map(), editions=new Map();
 // Complete checked-in editions are immutable for the life of a Worker version.
 // Limit the number retained in each isolate while concurrent requests finish.
+export const hasEdition=lang=>editions.has(lang);
 export function installEdition(lang,object){
   if(!codes.includes(lang) || !object || typeof object!=='object' || Array.isArray(object))return;
-  if(!editions.has(lang) && editions.size>=4)editions.delete(editions.keys().next().value);
+  if(!editions.has(lang) && editions.size>=24)editions.delete(editions.keys().next().value);
   editions.set(lang,object);
 }
 function editionValue(edition,source){
@@ -96,7 +97,10 @@ async function translatedMap(strings,lang){
   for(const s of new Set(strings)){
     if(typeof s!=='string'||!s.trim()||!letter.test(s)||exempt.test(s)||!codes.includes(lang)){output.set(s,s);continue;}
     const key=memoKey(lang,s);
-    const exact=(Object.hasOwn(dictionary,s)&&dictionary[s][codes.indexOf(lang)]) || editionValue(edition,s);
+    const index=codes.indexOf(lang);
+    const numbered=/^(.*?) (\d+)$/.exec(s);
+    const base=numbered && dictionary[numbered[1]]?.[index];
+    const exact=(Object.hasOwn(dictionary,s)&&dictionary[s][index]) || editionValue(edition,s) || (base && base+' '+numbered[2]);
     if(!exact && memory.has(key)){output.set(s,memory.get(key));continue;}
     if(!exact && activeTargets.has(key)){output.set(s,s);continue;}
     if(exact){remember(lang,s,exact);output.set(s,exact);continue;}
@@ -187,13 +191,20 @@ export async function localizePage(response,request,lang,{native=false}={}){
   const prefix='__KML'+crypto.randomUUID().replaceAll('-','')+'_';
   const safeSource=s=>!queryValues.some(q=>s.toLowerCase().includes(q));
   const edition=editions.get(lang);
+  const nativeFragments=new Map();
+  const productNames=native?legacyNames.filter(name=>dictionary[name]?.[codes.indexOf(lang)]).sort((a,b)=>b.length-a.length):[];
   const needsTranslation=s=>safeSource(s) && (!native || Object.hasOwn(dictionary,s) || editionValue(edition,s) || englishHashes.has(englishTextHash(s)) || legacyNames.some(name=>s.includes(name)) || /[\p{Script=Han}]/u.test(s));
   function mark(raw){
     const trimmed=raw.trim();
     if(!trimmed)return raw;
     const value=fromHTML(trimmed);
     if(!letter.test(value)||!needsTranslation(value))return raw;
-    const token=prefix+slots.length+'__';slots.push(value);strings.add(value);
+    const token=prefix+slots.length+'__';slots.push(value);
+    if(native && !englishHashes.has(englishTextHash(value)) && !Object.hasOwn(dictionary,value) && productNames.some(s=>value.includes(s))){
+      let translated=value;
+      for(const name of productNames)translated=translated.split(name).join(dictionary[name][codes.indexOf(lang)]);
+      nativeFragments.set(value,translated);
+    }else strings.add(value);
     return raw.replace(trimmed,()=>token);
   }
   function block(el,type){
@@ -249,7 +260,7 @@ export async function localizePage(response,request,lang,{native=false}={}){
   const {output,missing}=await translatedMap([...strings],lang);
   html=html.replace(new RegExp(prefix+'(S?)(\\d+)__','g'),(_,type,id)=>{
     if(type==='S')return JSON.stringify(visitSchema(schemaRows[Number(id)],lang,url,s=>output.get(s)??s)).replace(/</g,'\\u003c');
-    const s=slots[Number(id)];return htmlEscape(output.get(s)??s);
+    const s=slots[Number(id)];return htmlEscape(nativeFragments.get(s)??output.get(s)??s);
   });
   if(legacy){
     const restore='<script defer src="/kamey-language/restore.js" data-lang="'+htmlEscape(lang)+'" data-empty="'+htmlEscape(output.get(noMatches)||noMatches)+'"></script>';

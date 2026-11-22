@@ -1,4 +1,4 @@
-import { localizePage, splitLocale, localePath, installEdition } from '../kamey-language/index.mjs';
+import { localizePage, splitLocale, localePath, installEdition, hasEdition } from '../kamey-language/index.mjs';
 import { productRoute } from '../kamey-product/index.mjs';
 import { searchPage } from '../kamey-search/page.mjs';
 import { enhanceLegacy } from './legacy-ui.mjs';
@@ -10,14 +10,20 @@ function isAsset(path) {
     /^\/kamey-search\/[\w.-]+\.(?:css|mjs|js|json)$/.test(path);
 }
 
-const knownEditions = new Set();
+
 async function loadEdition(lang,origin,env) {
-  if(lang==='en'||knownEditions.has(lang)||!env.ASSETS) return;
-  const edition = await env.ASSETS.fetch(new Request(origin+'/kamey-editions/'+lang+'.json'));
-  if(edition.ok && edition.headers.get('content-type')?.includes('json')) {
-    installEdition(lang,await edition.json());
-    knownEditions.add(lang);
+  if(lang==='en'||hasEdition(lang)||!env.ASSETS) return;
+  const edition = await env.ASSETS.fetch(new Request(origin+'/kamey-editions/'+lang+'.json.gz'));
+  if(!edition.ok) return;
+  const bytes=await edition.arrayBuffer();
+  const magic=new Uint8Array(bytes,0,Math.min(2,bytes.byteLength));
+  if(magic[0]===31 && magic[1]===139) {
+    const json=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).json();
+    installEdition(lang,json);
+  } else if(magic[0]===123) {
+    installEdition(lang,JSON.parse(new TextDecoder().decode(bytes)));
   }
+
 }
 
 export function commerceWorker(legacy) {
@@ -33,7 +39,7 @@ export function commerceWorker(legacy) {
       const [lang,path] = splitLocale(url.pathname);
       const cache = globalThis.caches?.default;
       const key = request.method === 'GET' && !url.search && !request.headers.has('authorization') && !path.startsWith('/kamey-product/')
-        ? new Request(url.origin+'/.km-rendered-v4'+url.pathname) : null;
+        ? new Request(url.origin+'/.km-rendered-v5'+url.pathname) : null;
       if(cache && key) {
         const hit = await cache.match(key);
         if(hit) return hit;

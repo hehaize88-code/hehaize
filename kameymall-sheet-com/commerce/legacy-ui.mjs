@@ -17,6 +17,7 @@ export function enhanceLegacy(html, searchPath, localePrefix) {
    .replace(/<nav aria-label="Primary navigation">/,s=>s+'<a href="'+searchPath+'">Image search</a>')
    .replace('<details class="language-menu">',selector()+'<details class="language-menu">')
    .replaceAll('href="/favicon.svg"','href="/kameymall-icon.png"')
+   .replace(/<p class="rate-note">[\s\S]*?<\/p>/g,'<p class="rate-note"><a href="https://www.exchangerate-api.com/">ExchangeRate-API</a> <time id="km-rate-asof"></time></p>')
    .replace('</head>', style+'</head>')
    .replace('</body>','<script type="application/json" id="km-cny">'+JSON.stringify(data)+'</script><script defer src="/km-ui.js"></script></body>');
 }
