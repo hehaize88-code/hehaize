@@ -1,0 +1,45 @@
+name: Refresh LoloBuy Sheet image index
+on:
+  push:
+    branches: [main]
+    paths:
+      - lolobuy-sheet-net/scripts/refresh-visual-index.py
+      - .github/workflows/refresh-lolobuy-sheet-net-images.yml
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: Products to refresh in this batch
+        type: number
+        default: 150
+  schedule:
+    - cron: '17 */4 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: refresh-lolobuy-sheet-net-images
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: lolobuy-sheet-net
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - name: Refresh visual fingerprints
+        env:
+          BATCH: ${{ inputs.batch || 150 }}
+        run: python lolobuy-sheet-net/scripts/refresh-visual-index.py --cache-dir "$RUNNER_TEMP/lolobuy-images" --limit "$BATCH"
+      - name: Publish updated index to the deployment branch
+        run: |
+          git add -- lolobuy-sheet-net/visual-index
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh LoloBuy Sheet visual search index"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin HEAD:"$GITHUB_REF_NAME"
