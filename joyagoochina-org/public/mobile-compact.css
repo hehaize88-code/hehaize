@@ -30,3 +30,43 @@ main.guide-page[data-mobile-reading] .article-body>section,main.policy-page[data
 main.catalog-main:has(.catalog-detail) .catalog-gallery{max-width:none}.catalog-detail .gallery-main{height:280px}.catalog-detail .gallery-main>img{height:280px}.catalog-product-info h1{font-size:25px!important}.product-styles{margin-top:14px}.source-photo-grid{max-height:230px;overflow:auto}.gallery-thumbs{max-height:70px;overflow-y:auto}.catalog-detail{margin-bottom:20px!important}.product-reference-note,.rates-status{font-size:11px}
 }
 @media print{.mobile-list-pages,.mobile-reading-controls{display:none!important}.mobile-section-content{display:contents}.mobile-section-toggle::after{display:none}}
+
+/* Keep full spreadsheet pages browsable on portrait phones. */
+@media (max-width:680px) and (orientation:portrait) {
+  .sort-row + .catalog-grid {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
+  }
+  .sort-row + .catalog-grid .catalog-card img {
+    height:clamp(54px,9svh,94px);
+    object-fit:contain;
+  }
+  .sort-row + .catalog-grid .catalog-card h2 {
+    font-size:12px;
+    line-height:1.25;
+    margin:5px 6px 3px;
+    min-height:2.5em;
+  }
+  .sort-row + .catalog-grid .card-meta {
+    flex-wrap:wrap;
+    gap:0 4px;
+    line-height:1.2;
+    margin:0 6px 6px;
+  }
+  .sort-row + .catalog-grid .card-meta strong { font-size:14px; }
+}
+@media (max-width:680px) and (max-height:740px) and (orientation:portrait) {
+  .sort-row + .catalog-grid { row-gap:3px; }
+  .sort-row + .catalog-grid .catalog-card img { height:7.4svh; }
+  .sort-row + .catalog-grid .catalog-card { position:relative; }
+  .sort-row + .catalog-grid .card-meta > span {
+    position:absolute;
+    top:2px;
+    left:2px;
+    background:#fff;
+    padding:1px 3px;
+    border-radius:3px;
+  }
+  .sort-row + .catalog-grid .catalog-card h2 { margin-top:3px; }
+  .sort-row + .catalog-grid .card-meta { margin-bottom:3px; }
+}
