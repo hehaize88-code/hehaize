@@ -1,3 +1,4 @@
+import { storefront } from "../worker-chunks/storefront.mjs";
 import {catalogueRoute, upstream, CATEGORIES, LANGS, localPath} from "../commerce/catalog.mjs";
 import {
   withSearchSafeNotFound,
@@ -179,7 +180,7 @@ function withPageCacheHeaders(response, status) {
   });
 }
 
-export default {
+const application = {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
@@ -264,3 +265,5 @@ export default {
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };
+
+export default storefront(application);
