@@ -7,5 +7,5 @@ export default { async fetch(request, env, ctx) {
     url.protocol = 'https:';
     return Response.redirect(url.href, 308);
   }
-  return app.render(request, { locals: {}, waitUntil: ctx?.waitUntil?.bind(ctx) });
+  return app.render(request, { locals: {assets:env?.ASSETS}, waitUntil: ctx?.waitUntil?.bind(ctx) });
 }};

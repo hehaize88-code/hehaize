@@ -1,0 +1,93 @@
+---
+import snapshot from '../lib/fx-snapshot.json';
+const { lang } = Astro.props;
+const currency = ({
+  en:'Currency',de:'Währung',fr:'Devise',es:'Moneda',it:'Valuta',nl:'Valuta',pt:'Moeda',
+  pl:'Waluta',ro:'Monedă',sv:'Valuta',zh:'货币',da:'Valuta',fi:'Valuutta',el:'Νόμισμα',
+  cs:'Měna',hu:'Pénznem',bg:'Валута',sk:'Mena',hr:'Valuta',ja:'通貨',ko:'통화',vi:'Tiền tệ',
+  th:'สกุลเงิน',id:'Mata uang',sl:'Valuta',lt:'Valiuta',lv:'Valūta',et:'Valuuta',ga:'Airgeadra',mt:'Munita'
+} as Record<string,string>)[String(lang).split('-')[0]] || 'Currency';
+---
+<select class="fx-switch" aria-label={currency} data-fx-control>
+  {Object.keys(snapshot.rates).map(code=><option value={code}>{code}</option>)}
+</select>
+<style>
+.fx-switch{color:inherit;background:transparent;border:1px solid currentColor;border-radius:.5rem;padding:.35rem .15rem;max-width:5rem;font:inherit;font-size:.85rem}
+.fx-switch option{background:white;color:#202025}
+:global(.fx-credit:not([hidden])){display:block;width:fit-content;margin:0 auto;padding:.5rem;font-size:.8rem;text-decoration:underline}
+</style>
+<script is:inline>
+document.addEventListener('DOMContentLoaded', () => {
+  const select = document.querySelector('[data-fx-control]');
+  if (!select) return;
+  const locale = document.documentElement.lang || 'en';
+  const selector = '[data-cny],[data-usd]';
+  const week = 7 * 86400000;
+  const read = key => { try { return localStorage.getItem(key); } catch { return null; } };
+  const save = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
+  const supported = [...select.options].map(o => o.value);
+  let chosen = read('kakobuypick.currency');
+  if (!supported.includes(chosen)) chosen = 'USD';
+  let feed;
+  const usable = data => data && Number.isFinite(data.updated) && data.updated <= Date.now() + 3600000
+    && Date.now()-data.updated < week && data.rates?.USD === 1 && supported.every(c => Number.isFinite(data.rates[c]) && data.rates[c] > 0);
+  try { const cached = JSON.parse(read('kakobuypick.fx')); if (usable(cached)) feed = cached; } catch {}
+  const formats = new Map();
+  const credit = document.createElement('a');
+  credit.href = 'https://www.exchangerate-api.com/';
+  credit.rel = 'external noopener';
+  credit.className = 'fx-credit';
+  credit.hidden = true;
+  document.querySelector('footer')?.append(credit);
+  function formatPrice(el) {
+    const base = el.hasAttribute('data-cny') ? 'CNY' : 'USD';
+    const raw = el.getAttribute(base === 'CNY' ? 'data-cny' : 'data-usd');
+    if (!raw?.trim() || !Number.isFinite(Number(raw))) return;
+    const code = feed ? chosen : base;
+    if (!formats.has(code)) formats.set(code, new Intl.NumberFormat(locale, { style:'currency', currency:code }));
+    const value = Number(raw) * (feed ? feed.rates[chosen] / feed.rates[base] : 1);
+    const formatted = formats.get(code).format(value);
+    if (el.textContent !== formatted) el.textContent = formatted;
+  }
+  function render() {
+    select.value = feed ? chosen : 'USD';
+    credit.hidden = !feed;
+    if (feed) {
+      const stamp = new Date(feed.updated).toLocaleDateString(locale,{timeZone:'UTC'});
+      credit.textContent = 'ExchangeRate-API · ' + stamp;
+      select.title = credit.textContent;
+    }
+    document.querySelectorAll(selector).forEach(formatPrice);
+  }
+  select.addEventListener('change', () => {
+    chosen = select.value;
+    save('kakobuypick.currency', chosen);
+    render();
+  });
+  new MutationObserver(mutations => {
+    for (const record of mutations) {
+      if (record.type === 'attributes' && record.target.matches(selector)) formatPrice(record.target);
+      for (const node of record.addedNodes) {
+        if (node.nodeType !== 1) continue;
+        if (node.matches(selector)) formatPrice(node);
+        node.querySelectorAll(selector).forEach(formatPrice);
+      }
+    }
+  }).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['data-usd','data-cny']});
+  select.disabled = !feed;
+  render();
+  async function update() {
+    try {
+      const r = await fetch('/api/rates');
+      if (!r.ok) throw new Error();
+      const data = await r.json();
+      if (!usable(data)) throw new Error();
+      feed = data;
+      save('kakobuypick.fx', JSON.stringify(data));
+    } catch { if (!usable(feed)) feed = undefined; }
+    select.disabled = !feed;
+    render();
+  }
+  if (!feed || Date.now() - feed.updated > 86400000) update();
+});
+</script>

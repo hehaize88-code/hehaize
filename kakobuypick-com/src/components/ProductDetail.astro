@@ -1,0 +1,54 @@
+---
+import {labels} from '../lib/commerce/locale.mjs';
+import {productLabels} from '../lib/commerce/detail-labels.mjs';
+import {translateProductNames} from '../lib/product-names';
+import '../styles/product-detail.css';
+import productClient from '../scripts/product-detail.js?raw';
+const {product:p, lang} = Astro.props;
+const ui = labels(lang), text = productLabels[lang] || productLabels.en;
+const gallery = (p.seller?.gallery?.length ? p.seller.gallery : p.images.slice(0,1));
+const groups = [...(p.seller?.groups || [])].sort((a,b) => Number(b.values.some(v=>v.image))-Number(a.values.some(v=>v.image)));
+const optionNames = [...new Set<string>(groups.flatMap(g => g.values.map(v => v.name)))];
+const sourceDescription = p.description?.trim();
+const [translations, localizedDescription] = await Promise.all([
+  translateProductNames(lang,optionNames,Astro.locals.assets),
+  sourceDescription ? translateProductNames(lang,[sourceDescription],Astro.locals.assets) : Promise.resolve([]),
+]);
+const description = localizedDescription[0]?.trim();
+const localName = new Map(optionNames.map((name,i)=>[name,translations[i]||name]));
+const skus = p.seller?.skus || [];
+const primary = gallery[0] || p.images[0];
+const photoGroups = [{name:text.qc,photos:p.qc}, {name:text.detailPhotos,photos:p.details}];
+---
+<article class="pick-detail" data-product-choice data-hint={text.skuChoice}>
+  <div class="pick-columns">
+    <figure class="pick-gallery">
+      <figcaption>{text.gallery}<small>{gallery.length}</small></figcaption>
+      {primary && <a class="pick-main" href={primary} target="_blank" rel="noopener noreferrer"><img src={primary} alt={p.title} width="620" height="620" fetchpriority="high" referrerpolicy="no-referrer"/></a>}
+      {gallery.length>1 && <div class="pick-gallery-thumbs">{gallery.map((src,i)=><button type="button" data-gallery-image={src} aria-label={text.gallery+' '+(i+1)}><img src={src} loading="lazy" alt="" width="64" height="64"/></button>)}</div>}
+    </figure>
+    <div class="pick-info">
+      <h1>{p.title}</h1>
+      <p class="pick-id">{text.productId} {p.sourceId}</p>
+      {p.price && <p class="pick-price" data-list-usd={p.price} data-usd={p.price}>{new Intl.NumberFormat(lang,{style:'currency',currency:'USD'}).format(Number(p.price))}</p>}
+      {p.buy && <a class="button primary pick-buy" href={p.buy} target="_blank" rel="sponsored nofollow noopener noreferrer">{ui.buy}</a>}
+      <div class="pick-actions">
+        {p.agents.length>0 && <details><summary>{text.agents}</summary><div class="pick-agents">{p.agents.map(a=><a href={a.url} target="_blank" rel="sponsored nofollow noopener noreferrer">{a.name}</a>)}</div></details>}
+        {p.weidian && <button type="button" data-copy-source={p.weidian} data-item={text.copyItem} data-style={text.copyStyle} data-success={text.copied}>{text.copyItem}</button>}
+      </div>
+      <p class="pick-status" role="status"></p>
+      {groups.map((g,i)=>{
+        const legend = /size|尺码|尺寸|尺碼/i.test(g.name) ? text.size : i===0 || g.values.some(v=>v.image) ? text.styles : text.option;
+        return <fieldset class="pick-group" data-sku-group><legend>{legend} <output></output></legend>
+          <div class="pick-options" tabindex="0" aria-label={legend}>{g.values.map(v=><button type="button" data-attr-id={v.id} data-image={v.image || undefined} data-original={v.name} aria-pressed="false" title={localName.get(v.name)} aria-label={localName.get(v.name)}>{v.image ? <img src={v.image} alt="" loading="lazy" referrerpolicy="no-referrer" width="64" height="64" draggable="false"/> : localName.get(v.name)}</button>)}</div>
+        </fieldset>
+      })}
+      {!p.weidian && p.sourceUrl && <a class="button outline" href={p.sourceUrl} target="_blank" rel="noopener noreferrer nofollow">{text.chooseOptions}</a>}
+      {!groups.length && p.weidian && <p class="pick-no-options"><a href={p.weidian} target="_blank" rel="noopener noreferrer nofollow">{text.chooseOptions} · Weidian</a></p>}
+    </div>
+  </div>
+  {description && description.toLocaleLowerCase(lang)!==p.title.toLocaleLowerCase(lang) && <p class="pick-description">{description}</p>}
+  {photoGroups.map(({name,photos},i)=>(photos.length>0 || i===0) && <section class="pick-photo-section"><h2>{name} <small>{photos.length}</small></h2>{photos.length ? <div>{photos.map((src,n)=><a href={src} target="_blank" rel="noopener noreferrer"><img src={src} alt={name+' '+(n+1)} width="180" height="180" loading="lazy" decoding="async" referrerpolicy="no-referrer"/></a>)}</div> : <p>{text.noQc}</p>}</section>)}
+  <script is:inline type="application/json" data-sku-model set:html={JSON.stringify(skus).replace(/</g,'\\u003c')}></script>
+</article>
+<script is:inline type="module" set:html={productClient + "\ndocument.querySelectorAll('[data-product-choice]').forEach(bindProduct);"}></script>

@@ -40,7 +40,7 @@ try{
     assert.ok(urls.every(x=>!x.includes('/unknown/')));
     all.push(...urls);
   }
-  assert.ok(all.includes(origin+'/mt/products/shoes/63.html'),'A real product remains discoverable when its listing photo is missing');
+  assert.ok(all.includes(origin+'/id/products/shoes/63.html'),'A real product remains discoverable when its listing photo is missing');
   assert.equal(new Set(all).size,1488,'Source pages do not repeat first-page products');
   for(const page of ['0','01','3','501','abc'])assert.equal((await request(`/sitemaps/products-${page}.xml`)).status,404,page);
   for(mode of ['empty','invalid','incomplete','error']){

@@ -20,7 +20,7 @@ for(const value of urls){
   assert.equal(url.search,'');
   assert.ok(!url.pathname.includes('/image-search/')&&!url.pathname.startsWith('/en/'));
 }
-for(const locale of 'en de es fr it pl pt ro sv nl da fi el cs hu bg sk hr sl lt lv et ga mt'.split(' ')){
+for(const locale of 'en de fr es it nl pt pl ro sv zh da fi el cs hu bg sk hr ja ko vi th id'.split(' ')){
   const prefix=locale==='en'?'':`/${locale}`;
   for(const path of ['/','/spreadsheet/','/guide/','/faq/','/articles/','/category/shoes/','/articles/kakobuy-qc-photos/','/articles/choose-kakobuy-spreadsheet/','/articles/kakobuy-jacket-finds/','/articles/kakobuy-sneaker-finds/','/articles/kakobuy-hoodie-finds/','/articles/kakobuy-poland-guide/','/articles/kakobuy-football-jerseys/','/articles/is-kakobuy-legit/','/articles/kakobuy-qc-finder/','/articles/kakobuy-italy-guide/','/articles/kakobuy-coupons-guide/','/articles/kakobuy-w2c-qc-terms/','/articles/kakobuy-shipping-usa-guide/','/articles/kakobuy-croatia-guide/','/articles/kakobuy-electronics-guide/','/articles/kakobuy-womens-finds/'])assert.ok(urls.includes(origin+prefix+path));
 }

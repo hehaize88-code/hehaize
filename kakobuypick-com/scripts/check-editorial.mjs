@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {parseHTML} from 'linkedom';
 import worker from '../dist/server/index.js';
-const locales=process.argv.slice(2).length?process.argv.slice(2):'en de es fr it pl pt ro sv nl da fi el cs hu bg sk hr sl lt lv et ga mt'.split(' ');
+const locales=process.argv.slice(2).length?process.argv.slice(2):(await fs.readdir(new URL('../src/content/editorial/',import.meta.url))).filter(file=>file.endsWith('.json')).map(file=>file.slice(0,-5));
 const source=JSON.parse(await fs.readFile(new URL('../src/content/editorial/en.json',import.meta.url),'utf8'));
 const route=(lang,path)=>lang==='en'?path:`/${lang}${path}`;
 function checkTranslatedSentences(actual, original, locale, path='') {
@@ -88,7 +88,7 @@ for(const lang of locales){
    const sections=[...document.querySelectorAll('.article-section')];
    article.sections.forEach((section,index)=>assert.deepEqual([...sections[index].querySelectorAll('p')].map(p=>p.textContent),section.paragraphs));
   }
-  for(const code of locales){assert.ok(document.querySelector(`.language-grid a[href="${route(code,path)}"]`),`${url} wrong language destination ${code}`);}
+  for(const code of 'en de fr es it nl pt pl ro sv zh da fi el cs hu bg sk hr ja ko vi th id'.split(' ')){assert.ok(document.querySelector(`.language-grid a[href="${route(code,path)}"]`),`${url} wrong language destination ${code}`);}
   assert.ok(document.querySelector('a[href="https://kakobuy.com/register"]'));
   checks++;
  }

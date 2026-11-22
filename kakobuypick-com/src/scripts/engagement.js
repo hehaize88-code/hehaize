@@ -1,7 +1,7 @@
 // Track intent on Kakobuy Pick, never claim a completed purchase or registration.
 export function installEngagementTracking(doc, location, send) {
   const lang=doc.documentElement.lang || 'en';
-  const localPath=path=>path.replace(/^\/(?:de|es|fr|it|pl|pt|ro|sv|nl|da|fi|el|cs|hu|bg|sk|hr|sl|lt|lv|et|ga|mt)(?=\/)/,'');
+  const localPath=path=>path.replace(/^\/(?:de|es|fr|it|pl|pt|ro|sv|nl|da|fi|el|cs|hu|bg|sk|hr|sl|lt|lv|et|ga|mt|zh|ja|ko|vi|th|id)(?=\/)/,'');
   const current=localPath(location.pathname);
   const currentArticle=current.match(/^\/articles\/([a-z-]+)\/$/)?.[1];
   const emit=(name,params)=>send(name,{language:lang,page_path:location.pathname,...params});

@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 
 const root = new URL('../src/content/editorial/', import.meta.url);
-const locales = process.argv.slice(2).length ? process.argv.slice(2) : 'en de es fr it pl pt ro sv nl da fi el cs hu bg sk hr sl lt lv et ga mt'.split(' ');
+const locales = process.argv.slice(2).length ? process.argv.slice(2) : fs.readdirSync(root).filter(file => file.endsWith('.json')).map(file => file.slice(0,-5));
 const base = JSON.parse(fs.readFileSync(new URL('en.json', root), 'utf8'));
 function numericTokens(text) {
   return (text.replace(/(?<=\d)[ ,.\u00a0]000\b/g, '000').replace(/,/g, '.').match(/\d+(?:\.\d+)?/g) || []).sort();

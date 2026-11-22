@@ -1,3 +1,4 @@
+import {loadSeller} from './commerce/seller.mjs';
 import { parseHTML } from 'linkedom/worker';
 export const ORIGIN = 'https://cnbuycha.com';
 export const LOGO = 'https://nstatic.kakobuy.com/banner/202602/22/1080564df2b8f006455d32460b53b7d9.png';
@@ -106,5 +107,36 @@ export async function detail(path: string) {
   const title=txt(doc.querySelector('h1.product-title'));
   if (!title) throw new Error('Product unavailable');
   const sourceUrl=attr(doc.querySelector('.weidian-btn'),'href');
-  return {path,title,category:path.split('/')[1],price:txt(doc.querySelector('.product-detail .product-price')),sourceId:attr(doc.querySelector('meta[itemprop="sku"]'),'content'),sourceUrl,buy:purchase(sourceUrl),images:[...new Set([...doc.querySelectorAll('.gallery-slide img')].map((im:any)=>imageURL(attr(im,'src'))).filter(Boolean))] as string[],description:txt(doc.querySelector('.product-copy p')),related:cards(doc).slice(0,4)};
+  const buy = purchase(sourceUrl);
+  let weidian = '', itemId = '';
+  if (buy) {
+    const u = new URL(sourceUrl);
+    const id = u.searchParams.get('itemID') || '';
+    if (/^(www\.)?weidian\.com$/.test(u.hostname) && u.pathname === '/item.html' && /^\d{6,16}$/.test(id)) {
+      itemId = id;
+      weidian = u.href;
+    }
+  }
+  const photos = (selector:string) => [...new Set(Array.from(doc.querySelectorAll(selector), (im:any) =>
+    imageURL(attr(im,'data-src') || attr(im,'data-original') || attr(im,'src'))).filter(Boolean))] as string[];
+  const images = photos('.product-gallery .gallery-slide img');
+  const qc = photos('.qc-photos img,.qc-gallery img,.qc-images img,[data-image-type="qc"] img,img[data-image-type="qc"],img[data-role="qc"],[data-role="qc"] img,.product-detail img[alt*="QC photo" i]');
+  const details = photos('.product-description img,.detail-images img,.product-content img,.product-details-content img');
+  const agents: {name:string;url:string}[] = [];
+  const agentHosts = ['cnfans.com','mulebuy.com','oopbuy.com','allchinabuy.com','acbuy.com','ootdbuy.com','hubbuycn.com','eastmallbuy.com','loongbuy.com','superbuy.com','sugargoo.com','orientdig.com','bbdbuy.com','hoobuy.com','joyagoo.com','ponybuy.com','lovegobuy.com','panglobalbuy.com','basetao.com'];
+  if (itemId) for (const el of doc.querySelectorAll('a.platform-option')) {
+    try {
+      const u = new URL(attr(el,'href'));
+      const name = txt(el.querySelector('span')) || txt(el);
+      if (!agentHosts.includes(u.hostname.replace(/^www\./,'')) || !['https:', 'http:'].includes(u.protocol) || u.username || u.password || u.port || !name) continue;
+      if (!new RegExp('(?:^|[^0-9])'+itemId+'(?:$|[^0-9])').test(decodeURIComponent(u.href))) continue;
+      u.protocol = 'https:';
+      if (!agents.some(a => a.name === name)) agents.push({name,url:u.href});
+    } catch {}
+  }
+  const seller = itemId ? await loadSeller(itemId) : null;
+  return {path,title,category:path.split('/')[1],price:attr(doc.querySelector('.product-price [itemprop="price"]'),'content') || txt(doc.querySelector('.product-detail .product-price')),
+    sourceId:itemId || attr(doc.querySelector('meta[itemprop="sku"]'),'content'), sourceUrl:buy ? sourceUrl : '', weidian, buy, images, qc,
+    details:[...new Set([...images.slice(seller?.gallery?.length ? 0 : 1), ...details])].filter(src=>!qc.includes(src)), seller, agents,
+    description:txt(doc.querySelector('.product-copy p')),related:cards(doc).slice(0,4)};
 }

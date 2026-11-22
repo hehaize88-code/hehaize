@@ -214,3 +214,19 @@
  .topic-links h2, .product-guides h2, .article-next h2 { font-size: 16px; }
  .article-next { margin-top: 18px; padding-top: 14px; }
 }
+
+.search-form .camera-search {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  min-height: 44px;
+  flex: none;
+  color: var(--muted);
+}
+.search-form .camera-search:hover,
+.search-form .camera-search:focus-visible { color: var(--red); }
+.header .language-panel { max-height: min(65vh, 30rem); overflow-y: auto; }
+@media (max-width: 800px) {
+  .header-actions { margin-left: auto; }
+  .header .brand span { display: none; }
+}

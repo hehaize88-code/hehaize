@@ -1,0 +1,39 @@
+---
+import Icon from './Icon.astro';
+import {labels} from '../lib/commerce/locale.mjs';
+import {imageMeta} from '../lib/visual/manifest.mjs';
+import {localized,translate} from '../lib/i18n';
+import {imageFeatures} from '../lib/visual/features.js';
+import {bindImageSearch} from '../lib/visual/client.js';
+const {lang}=Astro.props;
+const t=labels(lang);
+const config=JSON.stringify({lang,base:localized(lang,'/products'),shards:imageMeta.shards,revision:imageMeta.revision,
+  failed:t.failed,searching:t.searching,retry:t.retry,matches:t.matches,empty:t.emptyMatches,error:t.error}).replace(/</g,'\\u003c');
+const progress:Record<string,string>={
+  en:'More product photos are being indexed.',de:'Weitere Produktfotos werden indexiert.',fr:'D’autres photos de produits sont en cours d’indexation.',es:'Se están indexando más fotos de productos.',it:'Altre foto dei prodotti sono in fase di indicizzazione.',pt:'Estão a ser indexadas mais fotografias de produtos.',pl:'Trwa indeksowanie kolejnych zdjęć produktów.',ro:'Se indexează mai multe fotografii ale produselor.',sv:'Fler produktbilder indexeras.',nl:'Meer productfoto’s worden geïndexeerd.',da:'Flere produktbilleder indekseres.',fi:'Lisää tuotekuvia indeksoidaan.',el:'Ευρετηριάζονται περισσότερες φωτογραφίες προϊόντων.',cs:'Probíhá indexování dalších fotografií produktů.',hu:'További termékfotók indexelése folyamatban van.',bg:'Индексират се още продуктови снимки.',sk:'Indexujú sa ďalšie fotografie produktov.',hr:'Indeksiraju se dodatne fotografije proizvoda.',sl:'Indeksirajo se dodatne fotografije izdelkov.',lt:'Indeksuojama daugiau produktų nuotraukų.',lv:'Tiek indeksēti citi produktu attēli.',et:'Täiendavaid tootefotosid indekseeritakse.',ga:'Tá tuilleadh grianghraf táirgí á n-innéacsú.',mt:'Qed jiġu indiċjati aktar ritratti tal-prodotti.',zh:'更多商品图片正在加入搜索索引。',ja:'ほかの商品画像も順次検索対象に追加しています。',ko:'다른 상품 사진도 검색 색인에 추가하고 있습니다.',vi:'Các ảnh sản phẩm khác đang được lập chỉ mục.',th:'กำลังจัดทำดัชนีรูปภาพสินค้าเพิ่มเติม',id:'Foto produk lainnya sedang diindeks.'
+};
+const updated=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeZone:'UTC'}).format(Date.parse(imageMeta.updated));
+---
+<div class="upload-search">
+  <a class="breadcrumb" href={localized(lang,'/')}>← {translate(lang).home}</a>
+  <h1>{t.imageSearch}</h1>
+  <p>{t.uploadHelp}</p>
+  <div class="upload-area" id="visual-drop">
+    <Icon name="camera" size={32}/>
+    <label for="visual-file">{t.upload}<input id="visual-file" type="file" accept="image/*" /></label>
+    <small>JPG · PNG · WebP</small>
+    <img id="visual-query" hidden alt="" />
+  </div>
+  <p class="coverage">{t.coverage} · {(imageMeta.searchableProducts ?? imageMeta.total).toLocaleString(lang)} / {imageMeta.total.toLocaleString(lang)} &nbsp; {t.images} · {imageMeta.images.toLocaleString(lang)} &nbsp; {t.updated} · {updated}</p>
+  {imageMeta.partial && <small>{progress[lang]}</small>}
+  <p id="visual-status" role="status" aria-live="polite"></p>
+  <button type="button" id="visual-retry" hidden>{t.retry}</button>
+  <div id="visual-results"></div>
+</div>
+<script is:inline set:html={`(${bindImageSearch.toString()})(${config},${imageFeatures.toString()});`}></script>
+<style is:global>
+.upload-search{padding-bottom:24px}.upload-search h1{margin:.6em 0 .3em}.upload-area{display:grid;gap:12px;justify-items:center;padding:clamp(22px,4vw,48px);border:2px dashed var(--line);border-radius:var(--radius);background:var(--paper)}
+.upload-area.dragging{border-color:var(--red)}.upload-area label,.upload-search button{cursor:pointer;padding:.75em 1.4em;background:var(--red);border:0;border-radius:24px;color:white;font-weight:700;position:relative}
+.upload-area label:focus-within{outline:2px solid currentColor;outline-offset:3px}.upload-area input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}
+.upload-area img{width:auto;max-width:min(100%,240px);max-height:180px;object-fit:contain}.upload-search .coverage,.upload-area small{font-size:.88rem;color:var(--muted)}#visual-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,45%),1fr));gap:16px}#visual-results a{display:grid;align-content:start;gap:7px}#visual-results img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:var(--paper)}
+</style>

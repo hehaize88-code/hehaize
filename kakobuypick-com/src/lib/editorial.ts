@@ -32,3 +32,7 @@ export function contentFor(lang: string): EditorialContent {
   if (!content) throw new Error(`Missing editorial locale: ${lang}`);
   return content as EditorialContent;
 }
+
+export function localizedEditorial(locale:string, _path:string):EditorialContent {
+  return contentFor(locale);
+}
