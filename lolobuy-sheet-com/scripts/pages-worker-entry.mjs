@@ -195,7 +195,8 @@ function withPageCacheHeaders(response, status) {
   });
 }
 
-export default {
+import { storefront } from '../worker-chunks/storefront.mjs';
+const application = {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
@@ -277,3 +278,5 @@ export default {
     return request.method==="HEAD" ? new Response(null,{status:finalResponse.status,headers:finalResponse.headers}) : finalResponse;
   },
 };
+
+export default storefront(application);

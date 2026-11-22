@@ -30,6 +30,8 @@ process_shim="${script_dir}/pages-process-shim.mjs"
   exit 69
 }
 
+cp "${project_root}"/{catalog,commerce-client,language-client}.js "${pages_output}/"
+cp -R "${project_root}/visual-index" "${pages_output}/"
 mkdir -p "${versioned_assets}"
 find "${pages_output}/assets" -maxdepth 1 -type f -exec cp {} "${versioned_assets}/" \;
 "${esbuild}" "${script_dir}/seo-client.ts" --bundle --format=iife --platform=browser --minify --outfile="${versioned_assets}/seo-interactions.js"
