@@ -103,21 +103,45 @@ function initCommerce(currencyCodes) {
   const actions=make('div',null,'lc-actions'),agents=make('details'),copy=make('button','Copy Weidian link'),status=make('p',null,'lc-status');
   status.setAttribute('role','status');copy.type='button';agents.append(make('summary','Other buying agents'));actions.append(agents,copy);buy.after(actions);actions.after(status);
   const copyOptions=make('button','Copy style and size');copyOptions.type='button';copyOptions.hidden=true;status.before(copyOptions);
+  const agentList=make('div',null,'lc-agent-list');agents.append(agentList);
   let activeSku=null, hasSelection=false, selectionText='';
   function updateLinks(){
     const original=new URL(originalURL);
     if(activeSku) original.searchParams.set('skuId',activeSku.id);
 
+    const encoded = encodeURIComponent(original.href);
     const links=[
       ['Superbuy','https://www.superbuy.com/en/page/buy/?url='+encodeURIComponent(original.href)],
       ['Oopbuy','https://oopbuy.com/goods/details?id='+id+'&channel=weidian'],
       ['Kakobuy','https://kakobuy.com/item/details?url='+encodeURIComponent(original.href)],
       ['Litbuy','https://litbuy.com/product/weidian/'+id],
-      ['HipoBuy','https://hipobuy.com/product/weidian/'+id]
+      ['HipoBuy','https://hipobuy.com/product/weidian/'+id],
+      ['ACBuy','https://www.acbuy.com/product?id='+id+'&source=WD'],
+      ['AllChinaBuy','https://www.allchinabuy.com/en/page/buy/?url='+encoded],
+      ['Basetao','https://www.basetao.com/best-taobao-agent-service/products/agent/weidian/'+id+'.html'],
+      ['BBDBuy','https://www.bbdbuyeu.com/goods/WEIDIAN/'+id],
+      ['BoonBuy','https://boonbuy.com/product/2/'+id],
+      ['CSSBuy','https://www.cssbuy.com/item-micro-'+id+'.html'],
+      ['EastMallBuy','https://eastmallbuy.com/index/item/index.html?searchlang=en&url='+encoded],
+      ['Fishgoo','https://www.fishgoo.com/#/product?productLink='+encoded],
+      ['GTBuy','https://gtbuy.com/product/2/'+id],
+      ['Hoobuy','https://hoobuy.com/product/2/'+id],
+      ['HubBuy','https://www.hubbuy.com/product/2/'+id],
+      ['ItaoBuy','https://www.itaobuy.com/product-detail?url='+encoded],
+      ['Joyagoo','https://joyagoo.com/product?id='+id+'&platform=WEIDIAN'],
+      ['LoongBuy','https://www.loongbuy.com/product-details?weidian='+id],
+      ['LoveGoBuy','https://www.lovegobuy.com/product?id='+id+'&shop_type=weidian'],
+      ['OOTDBuy','https://www.ootdbuy.com/goods/details?id='+id+'&channel=weidian'],
+      ['OrientDig','https://orientdig.com/product/?shop_type=weidian&id='+id],
+      ['PikoBuy','https://www.pikobuy.com/product/detail?productUrl='+encoded],
+      ['RizzitGo','https://www.rizzitgo.com/detailPage?goodsId='+id+'&source=3'],
+      ['Sugargoo','https://www.sugargoo.com/#/home/productDetail?productLink='+encoded],
+      ['USFans','https://www.usfans.com/product/3/'+id],
+      ['VigorBuy','https://vigorbuy.com/product/2/'+id]
     ];
-    for(const a of agents.querySelectorAll('a'))a.remove();
+    agentList.replaceChildren();
     for(const [name,url] of links){
-      const a=make('a',name);a.href=url;a.target='_blank';a.rel='nofollow noopener noreferrer';a.setAttribute('translate','no');agents.append(a);
+      const a=make('a',name);a.href=url;a.target='_blank';a.rel='nofollow noopener noreferrer';a.setAttribute('translate','no');agentList.append(a);
     }
     const primary=new URL(buy.href);primary.searchParams.set('url',original.href);buy.href=primary.href;
     copyOptions.hidden=!activeSku;

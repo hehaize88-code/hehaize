@@ -61,9 +61,17 @@ export async function commerceRoute(request) {
 }
 
 export function commerceHTML(html) {
-  return html.replace('</head>','<link rel="stylesheet" href="/lolo-commerce/v1.css"><script defer src="/commerce-client.js?v=20261122b"></script></head>');
+  return html.replace('</head>','<link rel="stylesheet" href="/lolo-commerce/v1.css?v=2"><script defer src="/commerce-client.js?v=20261122c"></script></head>');
 }
 
 const commerceCSS = `
+form.product-search:has(.image-camera){grid-template-columns:minmax(0,1fr) 44px clamp(44px,5vw,64px)}
+form.product-search .image-camera{display:grid;place-items:center;align-self:stretch;min-height:44px;background:#fff;color:#39332d;border-inline-start:1px solid #ddd4ca}
+form.product-search .image-camera svg{display:block;position:static;width:21px;height:21px}
+form.product-search .image-camera:hover,form.product-search .image-camera:focus-visible{color:#ad3815;background:#fff3e9}
+form.product-search:has(.image-camera)+.image-search-shortcut{display:none}
+.lc-agent-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,7.5rem),1fr));max-height:16rem;overflow-y:auto;overscroll-behavior:contain}
+.lc-agent-list a:hover,.lc-agent-list a:focus-visible{background:#fff3e9;text-decoration:underline}
+
 .lc-currency{max-width:5.6rem;min-width:4.3rem;padding:.35rem .2rem;font:inherit;background:transparent;color:inherit;border:1px solid #8886;border-radius:.4rem}.lolo-header:has(.lc-currency){flex-wrap:wrap}
 .catalog-detail .catalog-product-info{min-width:0}.catalog-detail .buy-button{display:block;text-align:center}.lc-actions{display:flex;align-items:start;gap:.5rem;margin:.6rem 0 1rem}.lc-actions>*{flex:1;min-width:0}.lc-actions button,.lc-actions summary,.lc-group button,.lc-group select{font:inherit;color:inherit;background:var(--background,#fff);border:1px solid #aaa;border-radius:.5rem;padding:.65rem;cursor:pointer}.lc-actions summary{text-align:center}.lc-actions details a{display:block;padding:.4rem}.lc-group{border:0;padding:0;margin:.7rem 0;min-width:0}.lc-group legend{padding:0 0 .4rem;font-weight:600}.lc-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(3.7rem,1fr));max-height:14rem;overflow-y:auto;gap:.35rem;padding:.2rem}.lc-options button{padding:.12rem;max-width:100%;aspect-ratio:1;overflow:hidden}.lc-options button img{display:block;width:100%;height:100%;object-fit:cover;border-radius:.3rem}.lc-options button[aria-pressed=true]{outline:2px solid currentColor;outline-offset:0}.lc-group select{max-width:100%}.lc-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(8rem,40%),1fr));gap:.5rem}.lc-gallery img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:.55rem}.lc-status:empty{display:none}.lc-rates-credit{font-size:.8rem}.catalog-gallery .lc-selected{width:100%;height:auto;aspect-ratio:1;object-fit:contain}.lc-qc{margin:2rem 0}.lc-options button:focus-visible{outline:3px solid #245df5}.lc-actions button:disabled{opacity:.6}`;
