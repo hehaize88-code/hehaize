@@ -205,7 +205,7 @@ async function rewritePage(response,url,lang,clean,dictionary,translateAll,stati
     if(tag==='a'){
       const href=el.getAttribute('href'),alt=el.getAttribute('hreflang');
       if(alt || el.hasAttribute('data-locale-code')){
-        const l=el.getAttribute('data-locale-code')||LANGS.find(x=>languageTag(x).toLowerCase()===alt?.toLowerCase() || x==='de'&&/^de/i.test(alt||''));
+        const l=el.getAttribute('data-locale-code')||LANGS.find(x=>x===alt?.toLowerCase() || languageTag(x).toLowerCase()===alt?.toLowerCase() || x==='de'&&/^de/i.test(alt||''));
         if(l){el.setAttribute('href',localPath(clean,l)+url.search);el.setAttribute('class',lang===l?'active':'');el.setAttribute('data-locale-code',l);}
         if(!el.selfClosing){const id={};skipped.add(id);el.onEndTag(()=>skipped.delete(id));}
         return;
@@ -309,17 +309,23 @@ export function withLocalization(worker){
       return Response.json(data,{headers:{'cache-control':failed?'no-store':'public, max-age=600','content-language':languageTag(target)}});
     }
     if(!edition.test(clean) || /\.(?!html$)[a-z\d]{1,10}$/i.test(clean) || /\.(?:json|xml|js|css)$/i.test(clean))return original();
-    const cat=/^\/catalog(?:\/|$)/.test(clean),staticEdition=!cat && !ORIGINAL.has(lang);
+    const cat=/^\/catalog(?:\/|$)/.test(clean);
+    let staticEdition=!cat && !ORIGINAL.has(lang);
     // Product and catalogue markup already has its own vanilla client; use the public
     // English renderer as the source so a partial word-by-word title is never retranslated.
-    const translateAll=cat || staticEdition;
+    let translateAll=cat || staticEdition;
     const u=new URL(url);
     if(translateAll)u.pathname=clean;
     const cacheable=!url.search && !request.headers.has('authorization') && !request.headers.has('cookie');
     const cache=cacheable && globalThis.caches?.default;
     const cacheKey=new URL(url);cacheKey.searchParams.set('__cssbuy_locale_version','20261122-1');
     if(cache){const found=await cache.match(cacheKey.href);if(found)return request.method==='HEAD'?new Response(null,found):found;}
-    const r=await original(new Request(u,{method:'GET',headers:{accept:'text/html'}}));
+    let r=await original(new Request(u,{method:'GET',headers:{accept:'text/html'}}));
+    if(!cat && lang!=='en' && !staticEdition && r.status===404){
+      u.pathname=clean;
+      const fallback=await original(new Request(u,{headers:{accept:'text/html'}}));
+      if(fallback.ok){r=fallback;staticEdition=true;translateAll=true;}
+    }
     if(r.status>=300 && r.status<400 && translateAll){
       const dest=r.headers.get('location');if(dest)return Response.redirect(new URL(localizedUrl(new URL(dest,u).href,lang),url),r.status);
     }
