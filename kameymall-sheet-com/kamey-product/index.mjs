@@ -1,6 +1,5 @@
 import { products } from './products.mjs';
 import { purchaseLinks } from './agents.mjs';
-import { productClient } from './client.mjs';
 import { css } from './style.mjs';
 import { snapshot } from './rates-snapshot.mjs';
 import { splitLocale, localePath } from '../kamey-language/index.mjs';
@@ -52,7 +51,7 @@ export async function productRoute(request,env){
   const url=new URL(request.url), [lang,route]=splitLocale(url.pathname);
   if(!['GET','HEAD'].includes(request.method))return null;
   if(route==='/kamey-product/rates')return cached(request.method==='HEAD'?null:JSON.stringify(await currentRates()),'application/json; charset=utf-8',3600);
-  if(route==='/kamey-product/client.js')return cached(request.method==='HEAD'?null:'('+productClient.toString()+')();','text/javascript; charset=utf-8',300);
+  if(route==='/kamey-product/client.js')return env.ASSETS.fetch(new Request(new URL('/km-product-ui.js',request.url),request));
   const match=route.match(/^\/(?:products|product(?:\/weidian)?)\/([\w-]+)\/?$/);
   if(!match)return null;
   const p=products.find(row=>row.slug===match[1]||row.reference===match[1]);

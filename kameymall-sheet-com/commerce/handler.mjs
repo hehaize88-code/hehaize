@@ -1,13 +1,23 @@
-import { localizePage, splitLocale, localePath } from '../kamey-language/index.mjs';
+import { localizePage, splitLocale, localePath, installEdition } from '../kamey-language/index.mjs';
 import { productRoute } from '../kamey-product/index.mjs';
 import { searchPage } from '../kamey-search/page.mjs';
 import { enhanceLegacy } from './legacy-ui.mjs';
 
 const native = new Set(['en','de','fr','es','it','pl']);
-const staticPaths = new Set(['/favicon.ico','/kameymall-icon.png','/favicon.svg','/km-ui.js','/kameymall-logo.png']);
+const staticPaths = new Set(['/favicon.ico','/kameymall-icon.png','/favicon.svg','/km-ui.js','/km-product-ui.js','/kamey-language/restore.js','/kameymall-logo.png']);
 function isAsset(path) {
   return staticPaths.has(path) || /^\/(?:assets|product-images)\//.test(path) ||
     /^\/kamey-search\/[\w.-]+\.(?:css|mjs|js|json)$/.test(path);
+}
+
+const knownEditions = new Set();
+async function loadEdition(lang,origin,env) {
+  if(lang==='en'||knownEditions.has(lang)||!env.ASSETS) return;
+  const edition = await env.ASSETS.fetch(new Request(origin+'/kamey-editions/'+lang+'.json'));
+  if(edition.ok && edition.headers.get('content-type')?.includes('json')) {
+    installEdition(lang,await edition.json());
+    knownEditions.add(lang);
+  }
 }
 
 export function commerceWorker(legacy) {
@@ -23,11 +33,12 @@ export function commerceWorker(legacy) {
       const [lang,path] = splitLocale(url.pathname);
       const cache = globalThis.caches?.default;
       const key = request.method === 'GET' && !url.search && !request.headers.has('authorization') && !path.startsWith('/kamey-product/')
-        ? new Request(url.origin+'/.km-rendered-v3'+url.pathname) : null;
+        ? new Request(url.origin+'/.km-rendered-v4'+url.pathname) : null;
       if(cache && key) {
         const hit = await cache.match(key);
         if(hit) return hit;
       }
+      await loadEdition(lang,url.origin,env);
       let result = await productRoute(request,env);
       const isLegacy = !result && !/^\/image-search\/?$/.test(path);
       const useNative = isLegacy && native.has(lang);

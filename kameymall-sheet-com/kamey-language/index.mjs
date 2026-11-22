@@ -34,7 +34,21 @@ export function languageMenu(path,lang){
 
 // Only pass public merchant/editorial strings to this function. Uploads, form
 // values and search terms are handled locally by their respective pages.
-const memory=new Map(), activeTargets=new Map();
+const memory=new Map(), activeTargets=new Map(), editions=new Map();
+// Complete checked-in editions are immutable for the life of a Worker version.
+// Limit the number retained in each isolate while concurrent requests finish.
+export function installEdition(lang,object){
+  if(!codes.includes(lang) || !object || typeof object!=='object' || Array.isArray(object))return;
+  if(!editions.has(lang) && editions.size>=4)editions.delete(editions.keys().next().value);
+  editions.set(lang,object);
+}
+function editionValue(edition,source){
+  if(!edition)return null;
+  const s=source.replace(/\s+/g,' ').trim();
+  const found=Object.hasOwn(edition,source)?edition[source]:Object.hasOwn(edition,s)?edition[s]:null;
+  return typeof found==='string' && found.trim()?found:null;
+}
+
 const terms=/\b(?:KameyMall|Weidian|Tmall|Taobao|HOKA One One Speedgoat 5|Adidas Futurecraft 4D|New Balance(?: 1906R)?|Canada Goose|Polo Ralph Lauren|Saint Vanity|Syna World|Hello Kitty|Samsung Galaxy Watch8|Nike(?: Air (?:Force|Jordan) \d+)?|Adidas|Louis Vuitton|Gucci|Burberry|Prada|Miu Miu|The North Face|Chrome Hearts|Stone Island|Palm Angels|Moncler|Amiri|Balmain|Balenciaga|Asics|Salomon|Dior|Off[- ]White|Ralph Lauren|Supreme|Stussy|Corteiz|Alexander McQueen|Yeezy|Converse|Puma|Fear of God|Fendi|Diesel|Bottega Veneta|Timberland|Carhartt|Audemars Piguet Royal Oak|Audemars Piguet|Cartier|Swatch|Rolex|Jellycat|Celine|Coach|Oopbuy|Superbuy|Kakobuy|AllChinaBuy|CNFans|Sugargoo|Acbuy|Hipobuy|Joyagoo)\b|\b(?=[A-Za-z0-9-]*\d)(?=[A-Za-z0-9-]*[A-Za-z])[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*\b/gi;
 const letter=/\p{L}/u;
 const exempt=/^(?:https?:\/\/\S+|\S+@\S+|[\w.-]+\.(?:com|net)|(?:XS|S|M|L|XL|XXL|\dXL|QC|SKU|ID|USD|CNY|EUR|JPY|UK|EU|US|CM|KG|[A-Z]{3}\s*[\d.,]+))$/i;
@@ -78,13 +92,14 @@ async function fetchTranslations(lang,values){
 }
 async function translatedMap(strings,lang){
   const output=new Map(), pending=new Map(),inputs=new Map();
+  const edition=editions.get(lang);
   for(const s of new Set(strings)){
     if(typeof s!=='string'||!s.trim()||!letter.test(s)||exempt.test(s)||!codes.includes(lang)){output.set(s,s);continue;}
     const key=memoKey(lang,s);
-    if(memory.has(key)){output.set(s,memory.get(key));continue;}
-    if(activeTargets.has(key)){output.set(s,s);continue;}
-    const exact=Object.hasOwn(dictionary,s)&&dictionary[s][codes.indexOf(lang)];
-    if(exact){output.set(s,exact);continue;}
+    const exact=(Object.hasOwn(dictionary,s)&&dictionary[s][codes.indexOf(lang)]) || editionValue(edition,s);
+    if(!exact && memory.has(key)){output.set(s,memory.get(key));continue;}
+    if(!exact && activeTargets.has(key)){output.set(s,s);continue;}
+    if(exact){remember(lang,s,exact);output.set(s,exact);continue;}
     if(lang==='en'&&!/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(s)){output.set(s,s);continue;}
     const names=[],input=s.replace(terms,name=>{names.push(name);return '⟪'+(names.length-1)+'⟫';}).replace(/\s+/g,' ').trim();
     if(!letter.test(input)){output.set(s,s);continue;}
@@ -100,12 +115,25 @@ async function translatedMap(strings,lang){
   }));
   const missing=[];
   for(const [s,{names,input}] of pending){
-    const translated=inputs.get(input);
+    const raw=inputs.get(input);
+    const translated=raw?.replace(/[⟪《〈]{1,2}\s*(\d+)\s*[⟫》〉]{1,2}/g,'⟪$1⟫');
     if(!translated||!names.every((_,n)=>translated.includes('⟪'+n+'⟫'))){missing.push(s);output.set(s,s);continue;}
     const value=translated.replace(/⟪(\d+)⟫/g,(_,n)=>names[n]??'');
     remember(lang,s,value);output.set(s,value);
   }
-  return {output,missing};
+  // Some Google locales drop punctuation around protected brand names. Retry
+  // only those rows with the original public wording, preserving the provider's
+  // natural word order and brand rendering. An unavailable provider is retried
+  // on the next request rather than caching the fallback.
+  const changedMarkers=missing.filter(s=>inputs.get(pending.get(s).input));
+  const repaired=new Set();
+  for(const batch of chunkRows(changedMarkers)){
+    try {
+      const values=await fetchTranslations(lang,batch);
+      batch.forEach((s,n)=>{remember(lang,s,values[n]);output.set(s,values[n]);repaired.add(s);});
+    }catch{}
+  }
+  return {output,missing:missing.filter(s=>!repaired.has(s))};
 }
 export async function translateTexts(strings,lang){
   const {output}=await translatedMap(strings,lang);
@@ -137,39 +165,6 @@ function visitSchema(value,lang,source,translate,key=''){
   }
   return value;
 }
-function restoreFindBrowser(noMatches,lang){
-  const analytics=(name,params)=>window.gtag?.('event',name,{...params,language:lang,source_page:location.pathname,transport_type:'beacon'});
-  for(const browser of document.querySelectorAll('.find-browser')){
-    const find=browser.querySelector('.table-search input'),select=browser.querySelector('select');
-    const clear=browser.querySelector('.clear-filter'),body=browser.querySelector('.table-body');
-    if(!find||!select||!body)continue;
-    const rows=Array.from(body.querySelectorAll('.product-row'));
-    const empty=document.createElement('p');empty.className='empty-state';empty.textContent=noMatches;empty.hidden=true;body.append(empty);
-    const filter=()=>{
-      const q=find.value.trim().toLocaleLowerCase(lang);
-      for(const row of rows){
-        const category=row.querySelector('.category-cell');
-        const key=(category?.getAttribute('href')||'').split('/').filter(Boolean).pop();
-        row.hidden=(select.value!=='all'&&key!==select.value)||!row.textContent.toLocaleLowerCase(lang).includes(q);
-      }
-      empty.hidden=rows.some(row=>!row.hidden);
-    };
-    find.addEventListener('input',filter);select.addEventListener('change',filter);
-    clear?.addEventListener('click',()=>{find.value='';select.value='all';filter();});
-  }
-  document.addEventListener('click',event=>{
-    const a=event.target.closest?.('a[href]');if(!a)return;
-    const url=new URL(a.href,location.href);
-    if(url.hostname!=='cnbuycha.com')return;
-    const product=a.closest('.product-row, .catalog-product, .product-visual');
-    const params={link_domain:url.hostname,link_url:a.href,outbound:true};
-    if(product){params.item_id=product.querySelector('code')?.textContent;params.item_name=product.querySelector('.product-name,h2')?.textContent;}
-    analytics(product?'product_click':url.pathname==='/AllProducts/'?'main_site_browse_click':'category_click',params);
-  });
-  document.addEventListener('submit',event=>{
-    if(event.target.matches?.('form.hero-search')) analytics('main_search_submit',{link_domain:new URL(event.target.action,location.href).hostname});
-  });
-}
 const menuCSS='<style>.km-language{position:relative;flex:none}.km-language summary{cursor:pointer;list-style:none;white-space:nowrap}.km-language .language-popover{position:absolute;inset:auto 0 auto auto;top:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-height:min(24rem,65svh);overflow-y:auto;overscroll-behavior:contain;width:min(19rem,84vw);z-index:90;border:1px solid #ced3db;border-radius:.75rem;padding:.55rem;background:#fff;box-shadow:0 8px 24px #18202c28;color:#20242a}.km-language:not([open]) .language-popover{display:none}.km-language .language-popover a{display:block;padding:.5rem;text-decoration:none;color:inherit;font-size:.875rem;line-height:1.2}.km-language a[aria-current=true]{font-weight:700}.km-language a:focus-visible,.km-language a:hover{background:#eef1f4}.find-browser [hidden]{display:none!important}</style>';
 const ignoredTags=new Set(['script','style','svg','code','pre','textarea','noscript','template']);
 const translatableMeta=new Set(['description','og:title','og:description','twitter:title','twitter:description']);
@@ -191,7 +186,8 @@ export async function localizePage(response,request,lang,{native=false}={}){
   const queryValues=Array.from(url.searchParams.values()).filter(Boolean).map(s=>s.toLowerCase());
   const prefix='__KML'+crypto.randomUUID().replaceAll('-','')+'_';
   const safeSource=s=>!queryValues.some(q=>s.toLowerCase().includes(q));
-  const needsTranslation=s=>safeSource(s) && ((!native || Object.hasOwn(dictionary,s) || englishHashes.has(englishTextHash(s)))||legacyNames.some(name=>s.includes(name))||/[\p{Script=Han}]/u.test(s));
+  const edition=editions.get(lang);
+  const needsTranslation=s=>safeSource(s) && (!native || Object.hasOwn(dictionary,s) || editionValue(edition,s) || englishHashes.has(englishTextHash(s)) || legacyNames.some(name=>s.includes(name)) || /[\p{Script=Han}]/u.test(s));
   function mark(raw){
     const trimmed=raw.trim();
     if(!trimmed)return raw;
@@ -256,9 +252,9 @@ export async function localizePage(response,request,lang,{native=false}={}){
     const s=slots[Number(id)];return htmlEscape(output.get(s)??s);
   });
   if(legacy){
-    const args=JSON.stringify([output.get(noMatches)||noMatches,lang]).replace(/</g,'\\u003c');
+    const restore='<script defer src="/kamey-language/restore.js" data-lang="'+htmlEscape(lang)+'" data-empty="'+htmlEscape(output.get(noMatches)||noMatches)+'"></script>';
     const ga=/<script[^>]*src=["']https:\/\/www\.googletagmanager\.com\/gtag\/js/i.test(html)?'':'<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8MM7VZV2"></script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config","G-QY8MM7VZV2");</script>';
-    html=html.replace(/<\/body>/i,()=>ga+'<script>('+restoreFindBrowser.toString()+')(...'+args+');</script></body>');
+    html=html.replace(/<\/body>/i,()=>ga+restore+'</body>');
   }
   const headers=new Headers(response.headers);
   for(const k of ['content-length','content-encoding','etag'])headers.delete(k);
