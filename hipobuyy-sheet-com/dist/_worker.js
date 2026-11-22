@@ -274,7 +274,7 @@ const decodeEntities = s => s.replace(/&(amp|lt|gt|quot|apos|nbsp|#(?:[0-9]+|x[\
   return n>0 && n<=0x10ffff?String.fromCodePoint(n):s;
 });
 const translationMemo = new Map();
-const localeVersion = '20261122-locale-5';
+const localeVersion = '20261122-locale-6';
 const namedBrands = /^(?:HipoBuyy?(?: Sheet)?|Oopbuy|Kakobuy|Weidian|CNFans|Superbuy|USFans|Sugargoo|Litbuy|Lovegobuy|CSSBuy|Rizzitgo|Joyagoo|Nike|Adidas|SKU|USD|EUR|CNY|GBP|CAD|AUD|JPY|HKD|PLN|SEK|CHF|DKK|NOK|KRW|IDR|MXN|BRL|QC|FAQ)$/i;
 function needsTranslation(text,lang,translatePage) {
   return /\p{L}/u.test(text) && !namedBrands.test(text) && !/^(?:https?:\/\/|www\.|[\w.-]+@\w|(?=[0-9A-Z-]*\d)[0-9A-Z-]+$)/.test(text) &&
@@ -289,7 +289,9 @@ function pageLink(value,lang,origin) {
   u.pathname=u.pathname.replace(/^\/[^/]+/,'/'+lang);
   return value.startsWith('/') ? u.pathname+u.search+u.hash : u.href;
 }
+let providerRetryAfter=0;
 async function requestTranslation(batch,lang,fetchTranslation) {
+  if(Date.now()<providerRetryAfter)throw Error('Translation service 429');
   const url=new URL('https://translate.googleapis.com/translate_a/single');
   url.search=new URLSearchParams({client:'gtx',sl:'auto',tl:machineLocale(lang),dt:'t',q:batch.join('\n')});
   let response;
@@ -297,8 +299,9 @@ async function requestTranslation(batch,lang,fetchTranslation) {
     try {
       response=await fetchTranslation(url,{signal:AbortSignal.timeout(12000),cf:{cacheEverything:true,cacheTtlByStatus:{'200-299':604800,'300-599':0}}});
       if(response.ok)break;
+      if(response.status===429){providerRetryAfter=Date.now()+60000;throw Error('Translation service 429')}
       if(attempt||response.status<500&&response.status!==429)throw Error('Translation service '+response.status);
-    } catch(error){if(attempt)throw error}
+    } catch(error){if(attempt||Date.now()<providerRetryAfter)throw error}
   }
   if(!response?.ok)throw Error('Translation service unavailable');
   const data=await response.json();
@@ -347,19 +350,37 @@ async function translateProductBatch(batch,lang,fetchTranslation){
   }));
 }
 const bundledLocales=new Map();
-async function bundledDictionary(env,lang,origin){
-  if(!env?.ASSETS || !Object.hasOwn(SITE_LOCALES,lang))return null;
-  const prior=bundledLocales.get(lang);
-  if(prior)return prior;
-  try{
-    const res=await env.ASSETS.fetch(new Request(new URL('/assets/locales/'+lang+'.json',origin)));
-    if(!res.ok || !res.headers.get('content-type')?.includes('json'))return null;
-    const values=await res.json();
-    if(typeof values!=='object'||values===null||Array.isArray(values))return null;
-    if(bundledLocales.size>=3)bundledLocales.delete(bundledLocales.keys().next().value);
-    bundledLocales.set(lang,values);
-    return values;
-  }catch{return null}
+async function localeAsset(env,path,origin) {
+  if(bundledLocales.has(path))return bundledLocales.get(path);
+  try {
+    const res=await env.ASSETS.fetch(new Request(new URL('/assets/'+path,origin)));
+    if(!res.ok)return null;
+    const bytes=await res.arrayBuffer(),magic=new Uint8Array(bytes,0,Math.min(2,bytes.byteLength));
+    const uncompressed=magic[0]===31&&magic[1]===139?
+      new Response(new Response(bytes).body.pipeThrough(new DecompressionStream('gzip'))):new Response(bytes);
+    const values=await uncompressed.json();
+    if(!values||typeof values!=='object'||Array.isArray(values))return null;
+    if(bundledLocales.size>=9)bundledLocales.delete(bundledLocales.keys().next().value);
+    bundledLocales.set(path,values);return values;
+  } catch{return null}
+}
+async function bundledDictionary(env,lang,url){
+  if(!env?.ASSETS || !Object.hasOwn(SITE_LOCALES,lang))return [];
+  const paths=['locales/'+lang+'.json','catalog-locales/'+lang+'.json'];
+  if(!nativeEditorial.has(lang)&&!url.pathname.startsWith('/api/')&&!/^\/[^/]+\/catalog(?:\/|$)/.test(url.pathname))paths.push('editorial-locales/'+lang+'.json.gz');
+  return (await Promise.all(paths.map(p=>localeAsset(env,p,url.origin)))).filter(Boolean);
+}
+function dictionaryEntry(text,dict){
+  for(const d of dict||[])if(Object.hasOwn(d,text)&&typeof d[text]==='string'&&d[text].length)return d[text];
+}
+function dictionaryPhrase(text,dict){
+  const exact=dictionaryEntry(text,dict);if(exact)return exact;
+  const id=/^Product ID (\d+)$/.exec(text), numbered=/^(.+?)((?::| )\s*\d+)$/.exec(text);
+  if(id){const prefix=dictionaryEntry('Product ID',dict);if(prefix)return prefix+' '+id[1]}
+  if(numbered){const base=dictionaryEntry(numbered[1],dict);if(base)return base+numbered[2]}
+  const suffix=' | Hipobuy Spreadsheet',desc='. Product photos / QC. Product images from the source catalogue. Check the exact item, option and photo context before buying.';
+  if(text.endsWith(suffix)){const title=dictionaryEntry(text.slice(0,-suffix.length),dict), tail=dictionaryEntry('Hipobuy Spreadsheet',dict);if(title&&tail)return title+' | '+tail}
+  if(text.endsWith(desc)){const pieces=[text.slice(0,-desc.length),'Product photos / QC',desc.slice('. Product photos / QC. '.length)].map(k=>dictionaryEntry(k,dict));if(pieces.every(Boolean))return pieces.join('. ')}
 }
 function localeFailureCode(error){
   const status=/^Translation service (\d{3})$/.exec(error?.message||'');
@@ -375,7 +396,7 @@ async function localeStrings(strings,lang,fetchTranslation=fetch,dictionary=null
   const found=new Map(), groups=[];
   let group=[],length=0;
   for(const s of new Set(strings)) {
-    const cached=dictionary&&Object.hasOwn(dictionary,s)&&typeof dictionary[s]==='string'?dictionary[s]:translationMemo.get(lang+'\n'+s);
+    const cached=dictionaryPhrase(s,dictionary)||translationMemo.get(lang+'\n'+s);
     if(cached){found.set(s,cached);continue}
     // Keep Unicode-heavy URLs below conservative intermediary limits.
     const size=encodeURIComponent(s).length;
@@ -386,7 +407,14 @@ async function localeStrings(strings,lang,fetchTranslation=fetch,dictionary=null
   let next=0;
   await Promise.all(Array.from({length:Math.min(4,groups.length)},async()=>{
     while(next<groups.length){
-      const batch=groups[next++],values=await translateProductBatch(batch,lang,fetchTranslation);
+      const batch=groups[next++];
+      let values;try{values=await translateProductBatch(batch,lang,fetchTranslation)}
+      catch(error){
+        found.pending??=new Map();
+        found.failureCode=localeFailureCode(error);
+        for(const s of batch){found.set(s,s);found.pending.set(s,protectProductNames(s))}
+        continue;
+      }
       batch.forEach((s,i)=>{
         found.set(s,values[i]);
         if(translationMemo.size>=6000)translationMemo.delete(translationMemo.keys().next().value);
@@ -479,13 +507,22 @@ async function localeHtml(response,lang,sourceLang,url,fetchTranslation,dictiona
     }});
   const html=await localized.transform(new Response(source)).text();
   const translated=await localeStrings(originals,lang,fetchTranslation,dictionary);
-  const result=html.replace(new RegExp(nonce+'\\d+_','g'),marker=>{
+  let result=html.replace(new RegExp(nonce+'\\d+_','g'),marker=>{
     const {raw,context,replacements}=markers.get(marker);
     let value=translated.get(raw);
     for(const [placeholder,term] of replacements)value=value.replaceAll(placeholder,term);
     return context==='json'?JSON.stringify(value).slice(1,-1).replaceAll('<','\\u003c'):localeEscape(value);
   });
+  if(translated.pending?.size){
+    const fragments=[];
+    for(const {raw,replacements} of markers.values())if(translated.pending.has(raw))fragments.push([raw,replacements]);
+    const payload=JSON.stringify({lang, pending:[...translated.pending], fragments}).replaceAll('<','\\u003c');
+    result=result.replace(/<\/body>/i,()=>'<script type="application/json" id="hipo-locale-pending">'+payload+'</script><script type="module" src="/assets/locale-recovery.mjs"></script></body>');
+  }
   const headers=new Headers(response.headers);
+  if(translated.pending?.size){
+    headers.set('x-hipobuy-locale-error',translated.failureCode);headers.set('x-hipobuy-locale-pending',String(translated.pending.size));headers.set('cache-control','no-store');
+  }
   for(const key of ['content-length','content-encoding','etag','last-modified'])headers.delete(key);
   headers.set('content-language',machineLocale(lang));
   return new Response(result,{status:response.status,headers});
@@ -505,7 +542,7 @@ async function localeResponse(request,env,ctx,coreFetch,fetchTranslation=fetch) 
   if(cached)return request.method==='HEAD'?new Response(null,cached):cached;
   let result;
   try {
-    const dictionary=await bundledDictionary(env,apiLang||lang,url.origin);
+    const dictionary=await bundledDictionary(env,apiLang||lang,url);
     if(catalogApi){
       const response=await coreFetch(request,env,ctx);
       if(!response.ok || request.method==='HEAD')return response;
@@ -513,7 +550,8 @@ async function localeResponse(request,env,ctx,coreFetch,fetchTranslation=fetch) 
       const translated=await localeStrings(titles.filter(s=>typeof s==='string'&&needsTranslation(s,apiLang,apiLang!=='en')),apiLang,fetchTranslation,dictionary);
       if(data.products)for(const item of data.products)item.title=translated.get(item.title)||item.title;
       if(data.titles)data.titles=data.titles.map(s=>translated.get(s)||s);
-      result=Response.json(data,{headers:{'content-language':machineLocale(apiLang),'cache-control':'public,max-age=60'}});
+      if(translated.pending?.size)data.localePending=[...translated.pending];
+      result=Response.json(data,{headers:{'content-language':machineLocale(apiLang),'cache-control':translated.pending?.size?'no-store':'public,max-age=60',...(translated.pending?.size?{'x-hipobuy-locale-error':translated.failureCode}:{})}});
     }else{
       const sourceLang=nativeEditorial.has(lang)&&!/^\/[^/]+\/catalog(?:\/|$)/.test(url.pathname)?lang:'en';
       const sourceUrl=new URL(url);sourceUrl.pathname=sourceUrl.pathname.replace(/^\/[^/]+/,'/'+sourceLang);
@@ -540,7 +578,7 @@ async function localeResponse(request,env,ctx,coreFetch,fetchTranslation=fetch) 
 }
 
 
-const RELEASE='hipobuy-20261122-catalog-v2';
+const RELEASE='hipobuy-20261122-catalog-v3';
 function finish(response,request) {
  const headers=new Headers(response.headers);headers.set('x-hipobuy-release',RELEASE);headers.set('x-content-type-options','nosniff');headers.set('referrer-policy','strict-origin-when-cross-origin');
  return new Response(request.method==='HEAD'?null:response.body,{status:response.status,headers});

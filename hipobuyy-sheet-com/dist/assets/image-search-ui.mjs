@@ -48,7 +48,12 @@ async function display({data}) {
       data.hits.forEach(hit => url.searchParams.append('p', hit.path));
       const response = await fetch(url);
       if(!response.ok) throw Error();
-      const translated = (await response.json()).titles;
+      const packet = await response.json(), translated = packet.titles;
+      if(packet.localePending?.length && Array.isArray(translated)){
+        const {resolveLocalePending}=await import('/assets/locale-recovery.mjs');
+        const names=await resolveLocalePending(packet.localePending,locale);
+        for(let i=0;i<translated.length;i++)translated[i]=names.get(translated[i])||translated[i];
+      }
       if(!Array.isArray(translated)||translated.length !== titles.length) throw Error();
       titles = translated;
     }
