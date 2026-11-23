@@ -3,9 +3,9 @@
   "locale": "id",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "5c42c86d0a00ac55941636b4579ebb7539acd679cd1dd9d88b46a57857283662",
-  "effective_dictionary_sha256": "d1b63033fdb5ce93cd61908813bccfd80e0ba68077df7f703c7b1fdc739f02fa",
+  "effective_dictionary_sha256": "7e76935c1144ce6085d73025341360a11ab09ae3e219dc170efe941cdf9bd1cc",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "Every English source field and its final localized replacement reviewed, including all ten articles, section headings, numeric examples, FAQ questions and answers, and navigation labels. Source and raw target hashes verified when creating corrections.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -188,7 +188,7 @@
       "source": "Put the route's displayed freight figure on one line. Beneath it, list each other cost you expect to encounter: seller price, domestic delivery, packing services and any other item actually named on the offer. Mark each one as included, separately quoted, already paid or unknown. Treat an omitted entry as unknown unless the live terms tell you otherwise. An estimate showing only international delivery cannot settle the price of seller-side goods.",
       "source_sha256": "037c7ba2b966ad7f1d3675e7960ccc475b9952fa7c092c4d72b80ba15747980c",
       "raw_target_sha256": "f732908e33db8ce2a2cf94b4c6cd64ba5eab407ac7ce12de1d593d68f3118a31",
-      "translation": "Catat ongkir yang ditampilkan untuk rute itu di satu baris. Di bawahnya, tulis setiap biaya yang perlu diperiksa: harga barang dari penjual, pengiriman dalam negeri, layanan pengemasan, dan biaya lain yang benar-benar disebut dalam penawaran. Tandai masing-masing sebagai sudah termasuk, ditawarkan terpisah, sudah dibayar, atau belum diketahui. Bila suatu biaya tidak disebutkan, biarkan statusnya belum diketahui kecuali ketentuan yang berlaku menjelaskan sebaliknya. Perkiraan yang hanya menampilkan pengiriman internasional belum mencakup harga barang di pihak penjual."
+      "translation": "Taruh ongkir rute yang ditampilkan pada satu baris. Di bawahnya daftar harga barang, pengiriman domestik, pengemasan, dan komponen lain yang benar-benar disebut. Tandai sebagai termasuk, ditawarkan terpisah, sudah dibayar, atau belum diketahui. Bila halaman tidak menyebutnya, simpan sebagai belum pasti sampai ada ketentuan. Ongkir internasional sendiri tidak menetapkan harga barang penjual."
     },
     {
       "source": "HubBuy domestic shipping: where a seller's charge belongs in your budget",
@@ -326,43 +326,43 @@
       "source": "Read a freight result as a quotation for a named parcel, route and destination. Use it to answer the transport question it was calculated for, then check the remaining parts of your purchase separately.",
       "source_sha256": "2cd882f31d23dff41843fa37f4d719ea88f49530f4d5f8743111a2b1883a6c13",
       "raw_target_sha256": "dec637a91b62acdaeb830ddd04c757eb8353f3bce1b93f8e2306dc1b71385ca7",
-      "translation": "Baca hasil kargo sebagai penawaran harga untuk paket yang diberi nama, rute dan tujuan. Gunakan untuk menjawab pertanyaan transportasi yang dihitung, kemudian periksa bagian yang tersisa dari pembelian Anda secara terpisah."
+      "translation": "Baca hasil ongkir sebagai penawaran untuk paket, rute, dan tujuan tertentu. Gunakan untuk menilai perjalanan yang dihitung, kemudian periksa bagian pembelian lain secara terpisah."
     },
     {
       "source": "The destination is part of the quote. Use the correct country and any region or postal information the estimator requests on the official page. If you share a comparison with someone, retain enough information to identify the route while removing the full delivery address. A screenshot of two prices cannot establish identical coverage when the destination fields are out of view.",
       "source_sha256": "772b6852b6b8df80c857ccfed55f46417b780bc273629e0bf89a7dd966bb25aa",
       "raw_target_sha256": "7e5ced90c841a9be7a9256a08a9b934edd218488456babd262c96a867381ad6e",
-      "translation": "Destinasi adalah bagian dari penawaran harga. Gunakan negara yang benar dan wilayah atau informasi pos apa pun yang diminta estimator pada halaman resmi. Jika Anda berbagi perbandingan dengan seseorang, simpan informasi yang cukup untuk mengidentifikasi rute sementara menghapus alamat pengiriman penuh. Sebuah tangkapan layar dari dua harga tidak dapat mendirikan cakupan yang identik ketika bidang tujuan berada di luar pandangan."
+      "translation": "Tujuan adalah bagian dari penawaran. Masukkan negara serta wilayah atau kode pos yang diminta pada halaman resmi. Saat membagikan hasil, sisakan informasi yang cukup untuk mengenali rute tetapi hapus alamat lengkap. Dua tangkapan harga tanpa kolom tujuan tidak membuktikan cakupannya sama."
     },
     {
       "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
       "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
       "raw_target_sha256": "f9e9dc86b10d0bb9c43d15497f253aa58ad4f4674f8946e06e1b10270e0b93f9",
-      "translation": "Ubah satu yang tidak diketahui menjadi satu pertanyaan dukungan. Alih-alih bertanya apakah seluruh perkiraan benar, jelaskan bahwa Anda memasukkan tujuan yang diberi nama dan mengukur paket, menerima penawaran harga untuk rute tertentu, dan perlu tahu apakah layanan pengemasan yang dipilih sudah berada di dalam total yang ditampilkan. Simpan jawaban dengan tanggal dan versi penawaran harga. Hindari menerapkan jawaban tentang satu rute ke layanan yang berbeda dengan istilah yang berbeda."
+      "translation": "Ubah satu ketidakpastian menjadi satu pertanyaan. Sebutkan tujuan, hasil ukur, serta rute yang dipakai, lalu tanyakan apakah layanan pengemasan pilihan sudah termasuk dalam total. Simpan jawaban dengan tanggal dan versi penawaran. Jangan menerapkan jawaban untuk satu rute ke layanan lain dengan syarat berbeda."
     },
     {
       "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
       "source_sha256": "10ec70bbae6b9a7c22fe16e97239c46b035d424eb2c54f4181e1741356e9a670",
       "raw_target_sha256": "98ba0a7b69466c1659f997d4c72b75f72a7ab3a8c24e1d9f65e3ca4778bf34c8",
-      "translation": "Pembeli dapat awalnya mengutip satu pasang sepatu menggunakan preset quick-estimate. Kemudian kotak penjual dipelihara, lalu sabuk ditambahkan sebelum pengiriman internasional. Pengukuran yang dihasilkan tidak lagi menggambarkan pengiriman yang sama dengan preset. Bandingkan penawaran harga yang direvisi dengan pernyataan paket akhir, sementara menyimpan aslinya sebagai bukti bagaimana anggaran berkembang. Perbedaan antara jumlah pertama dan terakhir tidak secara otomatis menjadi biaya baru."
+      "translation": "Awalnya Anda mungkin memakai contoh cepat untuk sepasang sepatu. Kemudian kotak penjual dipertahankan dan satu ikat pinggang ditambahkan. Paket jadi kini berbeda. Bandingkan estimasi terbaru dengan tagihan akhir; simpan yang pertama sebagai riwayat anggaran. Selisih awal dan akhir belum membuktikan adanya biaya baru."
     },
     {
       "source": "A useful quote summary fits into a short paragraph: name the destination, contents, dimensions, scale weight, route, currency and the date of the estimate. Add a sentence identifying any fee that is known to be separate and any part still unresolved. Keep private delivery and payment details out of shared screenshots. Another buyer can then reproduce the estimate for the same inputs or identify why their own parcel differs.",
       "source_sha256": "ba5fa4c4188d13fde99181875f36934ff3ce18f1d0801a5f2fa940444f7c4b38",
       "raw_target_sha256": "ff2045b2650ee52ece127be40226fb92cb0ab0a2dd173cc9485a30e69ab7ec05",
-      "translation": "Ringkasan penawaran harga yang berguna cocok dalam paragraf pendek: nama tujuan, isi, dimensi, berat skala, rute, mata uang dan tanggal perkiraan. Tambahkan kalimat yang mengidentifikasi biaya apapun yang diketahui terpisah dan bagian apapun yang masih belum terpecahkan. Jaga pengiriman pribadi dan rincian pembayaran dari screenshot yang dibagikan. Pembeli lain kemudian dapat mereproduksi perkiraan untuk input yang sama atau mengidentifikasi mengapa paket mereka sendiri berbeda."
+      "translation": "Tulis tujuan, isi paket, dimensi, berat timbangan, rute, mata uang, dan tanggal estimasi dalam satu paragraf. Tambahkan biaya terpisah yang diketahui serta bagian yang belum pasti. Hapus rincian alamat dan pembayaran dari gambar yang dibagikan. Pembaca bisa mengulang perhitungan untuk kondisi yang sama atau melihat mengapa paketnya berbeda."
     },
     {
       "source": "Gather the original estimate, the warehouse submission and the final payment record. Confirm they refer to the same parcel contents and destination. A quote for two garments and a bill for two garments plus a box of shoes cannot be explained by checking the arithmetic alone. Keep the old list visible and make a separate column for the list eventually sent.",
       "source_sha256": "c58c367b30785c5aaf6492b78162ffa4354e0168c946faffd5d8b2b4e2ca5c75",
       "raw_target_sha256": "f4fc883deb00ef92c6b321e31878272d6639307fe7348d8ffb2637973cd6098c",
-      "translation": "Kumpulkan perkiraan asli, pengiriman gudang dan rekaman pembayaran akhir. Konfirmasi mereka mengacu pada isi paket yang sama dan tujuan. Sebuah penawaran harga untuk dua pakaian dan tagihan untuk dua pakaian plus sebuah kotak sepatu tidak dapat dijelaskan dengan memeriksa aritmatika saja. Biarkan daftar lama terlihat dan buat kolom terpisah untuk daftar yang akhirnya dikirim."
+      "translation": "Kumpulkan estimasi pertama, permintaan paket ke gudang, dan bukti pembayaran akhir. Pastikan tujuan dan isinya sama. Penawaran dua pakaian dan tagihan dua pakaian plus sekotak sepatu tidak dapat dijelaskan lewat penjumlahan saja. Simpan daftar awal di samping daftar yang benar-benar dikirim."
     },
     {
       "source": "If a difference remains, identify the charge and both records where you expected it to match. For example, ask which input changed the base freight between a named quote and a named parcel. Include the route, measurement date and currency, and omit unrelated payment details. HubBuy's public support page lists parcel submission, orders and shipping among its support topics. Use that channel for an explanation specific to your account.",
       "source_sha256": "83e7626e367cbcfb1564e0cf0042f3344cac38061405501350cf549334019df8",
       "raw_target_sha256": "96771b481a520648e1611835afd173a334b4984217640a836aaceef91827383f",
-      "translation": "Jika masih ada perbedaan, identifikasikan muatan dan kedua rekaman di mana Anda mengharapkannya untuk cocok. Sebagai contoh, tanyakan input mana yang mengubah basis kargo antara penawaran harga bernama dan paket bernama. Termasuk rute, tanggal pengukuran dan mata uang, dan lupakan rincian pembayaran yang tidak terkait. Halaman dukungan publik HubBuy mencatat pengiriman paket, pesanan dan pengiriman di antara topik dukungannya. Gunakan saluran itu untuk penjelasan khusus untuk akun Anda."
+      "translation": "Jika masih ada selisih, identifikasi baris dan dua catatan yang Anda harap cocok. Misalnya, tanyakan masukan apa yang mengubah ongkir dasar antara penawaran tertentu dan paket tertentu. Sertakan rute, tanggal ukur, dan mata uang, tanpa detail pembayaran lain. Halaman dukungan publik HubBuy mencantumkan pengajuan paket, pesanan, dan pengiriman sebagai topik bantuan untuk kasus akun Anda."
     },
     {
       "source": "Why should I keep the quote currency beside the amount?",
@@ -452,25 +452,25 @@
       "source": "When an item changes after quotation",
       "source_sha256": "e3a9ac352c98cfaf77ceb712b26621433e6333dd16a0eeaed9141dc69de852c5",
       "raw_target_sha256": "3898623a78fc8faeb81b4a5fbe33126c4956a2e4d4704b1da15d3bd1acf650a1",
-      "translation": "Ketika sebuah item berubah setelah penawaran harga"
+      "translation": "Jika isi berubah setelah mendapat penawaran"
     },
     {
       "source": "If you want to learn which change drove the difference, vary one input at a time in your own planning worksheet, provided the estimator supports the comparison. Keep the original destination and category, replace the assumed weight with the packed weight and record the result. Then apply the new dimensions. Label intermediate results as analytical scenarios rather than quotes for parcels you intend to send. If package category or eligibility changed, that can invalidate a direct one-input comparison.",
       "source_sha256": "5f8584b005f53740c8815cd5f5e3efcb6e8e36dc95d0bd275b5033c759c1282e",
       "raw_target_sha256": "28cb71b0c1dc152d429b601a862d5141ff4f34fc550e481dfb26ea273f7dfa74",
-      "translation": "Jika Anda ingin belajar perubahan mana yang mendorong perbedaan, variasi satu masukan pada satu waktu dalam lembar kerja perencanaan Anda sendiri, dengan persyaratan estimator mendukung perbandingan. Pertahankan tujuan dan kategori asli, ganti berat yang diasumsikan dengan berat yang dikemas dan rekam hasilnya. Lalu terapkan dimensi baru. Label hasil pertengahan sebagai skenario analitis daripada penawaran harga untuk paket Anda berencana untuk mengirim. Jika kategori paket atau kelayakan berubah, itu dapat membatalkan perbandingan satu-input langsung."
+      "translation": "Untuk menyelidiki penyebab, ubah satu masukan setiap kali jika kalkulator mendukungnya. Pertahankan tujuan dan kategori, ganti berat asumsi dengan berat jadi, catat hasil, kemudian terapkan ukuran baru. Tandai hasil antara sebagai simulasi analitis. Jika kategori atau kelayakan rute ikut berubah, perbandingan satu variabel tidak lagi langsung."
     },
     {
       "source": "Write the initial and final weight beside the initial and final outer dimensions. Record which inputs came from product presets, seller figures, proposed packing or an actual completed parcel. Put the route and service choice on the same row. If the original option disappeared because of a size limit, compare the final route's charge with a revised quote for that route rather than blaming every difference on the weight change.",
       "source_sha256": "0590b52a4c0802cfdba04363c9d0fc6ee3b4845acc370899a7f3c395de81352f",
       "raw_target_sha256": "fefd397812ab75e877b10369142394f93d8396cb58e7918598dd2ec54cf640fa",
-      "translation": "Tulis berat awal dan akhir di samping dimensi luar awal dan akhir. Catatan yang masukan berasal dari preset produk, angka penjual, kemasan yang diusulkan atau paket yang benar-benar selesai. Letakkan rute dan pilihan layanan pada baris yang sama. Jika pilihan asli menghilang karena batas ukuran, bandingkan tarif rute akhir dengan penawaran harga yang direvisi untuk rute itu daripada menyalahkan setiap perbedaan pada perubahan berat."
+      "translation": "Tuliskan berat awal dan akhir bersama dimensi luar masing-masing. Tandai apakah berasal dari contoh produk, penjual, rencana kemasan, atau paket selesai. Cantumkan rute dan layanan pada baris itu. Jika rute pertama gugur karena batas ukuran, bandingkan tagihan dengan penawaran baru untuk rute yang benar-benar dipakai."
     },
     {
       "source": "When the final route appears identical by name, check any displayed service variation or delivery zone. Two similar names may describe different delivery products. Compare actual route identifiers if the account exposes them. Save relevant screenshots with private addresses and payment information cropped out before sharing. If a code has changed but its meaning is unclear, ask support to confirm whether the quote and statement refer to the same service.",
       "source_sha256": "3515ed095ff9b262fd74d8ad6036b9eaf490e9bd8f910e96ff6a3d81039f457d",
       "raw_target_sha256": "61b60e3940de417a85e49006c862d7d71cf421577676f490c0a07fa9876a6779",
-      "translation": "Ketika rute terakhir muncul identik dengan nama, periksa varian layanan atau zona pengiriman yang ditampilkan. Dua nama yang serupa dapat menggambarkan produk pengiriman yang berbeda. Bandingkan identifikator rute sebenarnya jika akun memaparkan mereka. Simpan tangkapan layar yang relevan dengan alamat pribadi dan informasi pembayaran dipotong sebelum berbagi. Jika kode telah berubah tetapi artinya tidak jelas, tanyakan dukungan untuk mengkonfirmasi apakah penawaran harga dan pernyataan mengacu pada layanan yang sama."
+      "translation": "Walau nama terlihat sama, periksa variasi layanan dan zona pengantaran yang ditampilkan. Nama serupa bisa merujuk pada produk pengiriman berbeda. Cocokkan kode rute jika tersedia. Potong alamat dan rincian pembayaran dari gambar sebelum berbagi. Bila kode berubah tanpa penjelasan, tanyakan apakah penawaran dan tagihan memang untuk layanan sama."
     },
     {
       "source": "Reconcile several outbound packages against one original quote",
@@ -482,7 +482,7 @@
       "source": "Send a message containing the parcel reference, original quote date, input measurements, final amount and arithmetic that remains unexplained. If the answer identifies an existing line, correct its classification instead of adding a duplicate. If a new credit is promised, follow it through to the account record. Close the reconciliation when both the invoice composition and the actual payment movements can be traced. Keep the dated comparison with the parcel documents for the next time you budget a similar shipment.",
       "source_sha256": "8703ace3ef2d7e2fc013ae16841626fc20b2a78154da3c7d127de28b8327a5be",
       "raw_target_sha256": "c49536eeff1bd69712c48265ec6f55d376ebba74ed7cc7d57021f131e90e6bdb",
-      "translation": "Kirim pesan yang berisi referensi paket, tanggal penawaran harga asli, pengukuran masukan, jumlah akhir dan aritmatika yang masih belum dijelaskan. Jika jawaban mengidentifikasi sebuah baris yang sudah ada, perbaiki klasifikasinya daripada menambahkan duplikat. Jika kredit baru dijanjikan, ikuti sampai ke catatan akun. Tutup rekonsiliasi ketika komposisi invoice dan pergerakan pembayaran yang sebenarnya dapat dilacak. Simpan perbandingan tanggal dengan dokumen paket untuk waktu berikutnya Anda menganggarkan pengiriman serupa."
+      "translation": "Sertakan referensi paket, tanggal penawaran, masukan ukuran, tagihan akhir, dan hitungan yang belum cocok. Jika jawaban menunjuk ke baris yang sudah ada, perbaiki kategorinya alih-alih menggandakan. Bila ada janji refund, ikuti sampai muncul di akun. Akhiri setelah komposisi tagihan dan pergerakan pembayaran sama-sama bisa dilacak. Simpan hasil bertanggal untuk rencana berikut."
     },
     {
       "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
@@ -1779,6 +1779,252 @@
       "source_sha256": "5cb97076580f3fca382b1ae29f7054ea017cd35e5a2055d9087b45d9f1d8a344",
       "raw_target_sha256": "7f32f6339c0a40c519ad9d4132bfb913e3ee718e039e4d2a60192d64199cc116",
       "translation": "Jika satu kotak dikirim langsung ke orang lain, untuk opsi gabungan perhitungkan juga biaya dan kemungkinan meneruskan barang secara lokal. Bandingkan hingga kedua penerima mendapat barang, bukan hanya hingga alamat pertama. Bedakan biaya pengiriman lanjutan yang sudah terkonfirmasi dengan biaya yang baru diasumsikan."
+    },
+    {
+      "source": "Read the inputs before the result",
+      "source_sha256": "fadf01a958b2e76aca3b969dcb1a687f2663fd03de0272dfbc255c776794f78a",
+      "raw_target_sha256": "b278651a23a6c8bd6ba37d9b01c606da93c3a71463d1403d5c6970a30dde0fb4",
+      "translation": "Baca masukan sebelum melihat hasil"
+    },
+    {
+      "source": "The HubBuy estimator accepts a destination and weight in grams and provides fields for product category and centimetre dimensions. An estimate based on a preset hoodie and one based on a measured packed box describe different evidence. Record which you used. A result without its inputs is difficult to reuse because you may later forget whether it covered a single garment or the full shipment.",
+      "source_sha256": "e21cfbef201266db79f7fa2ed14432937dc30d4c2f53373e808f5ac78ab41d76",
+      "raw_target_sha256": "e4b2b39a4791d2bb35d9dcf92239749f8ba47e1c56cd146acb5a8b32a81e5ace",
+      "translation": "Kalkulator HubBuy meminta tujuan dan berat dalam gram serta menyediakan kategori dan dimensi sentimeter. Perkiraan dari contoh hoodie dan dari kotak jadi yang diukur memiliki dasar berbeda. Catat mana yang digunakan; tanpa masukan, Anda bisa lupa apakah hasil untuk satu pakaian atau seluruh kiriman."
+    },
+    {
+      "source": "Build an inclusion list",
+      "source_sha256": "516c7c8edf582f72463d187709443adaf54e33affa696d8e9caad293af0ced3f",
+      "raw_target_sha256": "258487e99725523da24bf5ced35614211db9be723802aac25c07fff5f0002f6e",
+      "translation": "Daftar apa yang termasuk dalam penawaran"
+    },
+    {
+      "source": "Compare timing on the same basis",
+      "source_sha256": "a5e664b56a88c9e7b65e33025b88db1c29d8b226ebdc0c1fad07ace44ba92007",
+      "raw_target_sha256": "0c6e88960fc9ff5166972ee2c2174c5e9a11ca25aecef2a5e0d5f350634c134e",
+      "translation": "Bandingkan waktu dari titik awal yang sama"
+    },
+    {
+      "source": "Recheck destination details privately",
+      "source_sha256": "42a0a1a181dd827b9911d0a7e97c649e712e2a420ab93a2e8d4b504c7f9ecb94",
+      "raw_target_sha256": "30dcfac666d616cd83b94643c4608ccb13114452238c046fc764e4d7690d66e3",
+      "translation": "Periksa tujuan tanpa membagikan alamat pribadi"
+    },
+    {
+      "source": "Changing the contents, packing, measurements or selected services calls for a fresh estimate. Keep the old result because it can help explain a later difference. Mark the revised input with the reason for the change, such as a retained shoebox or a removed accessory. Ask HubBuy support about a specific line if the conditions appear identical but the quoted result still differs.",
+      "source_sha256": "5404359e370df79f7003ee10774e8d4b3ec30d27335d5e5784413cdd5c77cf08",
+      "raw_target_sha256": "9b4b4ce79cc3fe9f73f0ffa881e6ee9b1dce54020285e2c9bd275b7aa738969b",
+      "translation": "Perubahan isi, kemasan, ukuran, atau layanan memerlukan perhitungan baru. Simpan hasil lama untuk menjelaskan selisih. Catat alasan pembaruan, misalnya kotak sepatu dipertahankan atau aksesori dikeluarkan. Jika semua kondisi terlihat sama tetapi tarif berubah, tanyakan baris tertentu kepada dukungan HubBuy."
+    },
+    {
+      "source": "Mark the boundary of the estimate with an example",
+      "source_sha256": "dbc6edb49e3b7fa7912c1c30435ee70040d6a63e27c0a01fdf2d53227d0c18da",
+      "raw_target_sha256": "3899a2abb43bb9933e3188a65ecd59bff225ef5dce877c453ccdc893fcfa3ebe",
+      "translation": "Contoh batas cakupan estimasi"
+    },
+    {
+      "source": "Imagine a buyer who has a confirmed merchandise total of 280 yuan, a domestic delivery charge of 12 and a screen showing an illustrative international freight estimate of 135. The cost recorded so far is 427, provided the freight estimate holds and there are no other separately applied charges. The 135 is not the price of the entire purchase. Equally, adding the 280 and 12 again to a consolidated budget that already includes those entries would overstate the amount.",
+      "source_sha256": "8d50523044e945bafff091c275202b8b8ae2bfa9be2c34e7bcc93a3f527230e3",
+      "raw_target_sha256": "5125bfafdbf47d16fa66dc1906d74e369f89edbfd9ed78bfe7ed0f7481dacab4",
+      "translation": "Misalnya barang berjumlah 280 yuan, pengiriman domestik 12, dan estimasi ongkir internasional 135. Anggaran saat ini 427 bila ongkir itu berlaku dan tidak ada biaya terpisah. Angka 135 bukan harga seluruh pembelian. Sebaliknya, menambahkan 280 dan 12 lagi pada anggaran yang sudah memuat keduanya akan melebihkan total."
+    },
+    {
+      "source": "Suppose the buyer keeps a separate running budget containing 292 already paid. To evaluate cash still needed, start with the prospective 135 and any other unpaid components that can be documented. To evaluate the total cost of acquiring and receiving the goods, include paid and unpaid components. Both calculations are valid, but they answer different questions. Label the output remaining payment or total purchase budget rather than presenting a single unexplained figure.",
+      "source_sha256": "e2424e9a4b33216e0e03f53764fc50e1b4e01f6b508c607d9fac81e67ef2ad90",
+      "raw_target_sha256": "16a1bfb3c4553fbc4745004c169d6873bc4fbb33a5b163e2e9ae5a89199ef399",
+      "translation": "Jika anggaran berjalan sudah memuat 292 yang dibayar, sisa kas dimulai dari perkiraan 135 ditambah komponen lain yang belum dibayar dan dapat dibuktikan. Untuk biaya keseluruhan hingga barang diterima, masukkan bagian yang sudah dan belum dibayar. Beri label “sisa pembayaran” atau “anggaran pembelian total” sesuai pertanyaan."
+    },
+    {
+      "source": "Compare two routes on one parcel",
+      "source_sha256": "6abbea692de48ad4d459e851dc7f34f22557d4a3859921769c98b3066fc3936e",
+      "raw_target_sha256": "14252be0035f8c6e78699c15f499609cc29b48e3185668e70a50f01a118bc91d",
+      "translation": "Bandingkan dua rute untuk paket yang sama"
+    },
+    {
+      "source": "A route summary can show an estimated duration, price and brief notes, while a detail page may describe eligibility and service conditions. For a fair comparison, run both routes against the same parcel. Keep the destination, category, weight, outer dimensions, packing and declared contents consistent. Check what the figures include and whether one service shown in the summary becomes a separate charge later. If a route does not accept the contents, remove it from the usable comparison.",
+      "source_sha256": "6e4f6dbd9b279632ad1a8b6d80cd5340d6c12d9f5517c37235576fdcb113d4fc",
+      "raw_target_sha256": "2d351760fa33ccad5d4f2bb80e0924ad8cc47bb18bc794be9436f6fcc3331b83",
+      "translation": "Ringkasan bisa menunjukkan harga dan durasi; detail rute dapat memuat batas dan kondisi layanan. Gunakan paket identik pada kedua rute: tujuan, kategori, berat, dimensi luar, kemasan, dan isi. Periksa apakah layanan tertentu termasuk atau akan ditagih nanti. Jika rute tidak menerima salah satu isi, keluarkan dari pilihan yang bisa digunakan."
+    },
+    {
+      "source": "In a teaching exercise, route A displays 150 and route B displays 166. If A requires a separately quoted 12-unit service that B includes, the comparable amounts are 162 and 166. If B includes something you do not need and A needs nothing additional, the original 150 and 166 may be the relevant comparison. The example does not represent a real HubBuy route or a real price. Its purpose is to show why a service description can change which arithmetic belongs beside the price.",
+      "source_sha256": "f441673ba26fdcb6014c194f593f2f715aaccc25da7bebd3937adbc0ea6216cb",
+      "raw_target_sha256": "ebc81e06a6890ae4d3f0292b407198fbdc08ae54d69c24db17cf8f4c38b43d4e",
+      "translation": "Dalam latihan, A menunjukkan 150 dan B 166. Jika A perlu layanan 12 yang sudah termasuk di B, pembandingnya 162 dan 166. Jika layanan di B tidak dibutuhkan dan A tidak memerlukan tambahan, bandingkan kembali 150 dan 166. Ini bukan tarif atau rute nyata HubBuy, melainkan contoh mengapa keterangan layanan menentukan hitungan."
+    },
+    {
+      "source": "Translate uncertain components into clear questions",
+      "source_sha256": "cf0fbf457645bd5cf729b85c17026792fac5983bc4cd31fdee5be47cb1cca807",
+      "raw_target_sha256": "3fb12a1d8b225ecc3963fb3a0330c9c10023fa8493560b8b0e45e607f9bd7c7a",
+      "translation": "Ubah hal yang belum diketahui menjadi pertanyaan"
+    },
+    {
+      "source": "Use a short list with four statuses: included, already paid separately, confirmed additional cost, and unknown. Place each disputed component into one category only. For example, if an invoice confirms payment of domestic delivery with the seller order, do not also treat it as an unknown outbound fee. If the estimator does not explain how a particular optional service is handled, record the uncertainty beside that service.",
+      "source_sha256": "1c712d402d0db8850d4730e0a54275b3145f12eb3b7c709970844b94b786094f",
+      "raw_target_sha256": "6eeee68552f185d9e40c282222b7af28827488d9b821dea95488b2090ecc638c",
+      "translation": "Gunakan empat status: termasuk, sudah dibayar terpisah, tambahan yang dikonfirmasi, dan belum diketahui. Satu komponen hanya masuk satu kelompok. Jika kuitansi menunjukkan ongkir domestik sudah dibayar bersama barang, jangan masukkan sebagai biaya keluar yang belum pasti. Jika biaya pelindung tidak dijelaskan, letakkan ketidakpastian pada baris pelindung."
+    },
+    {
+      "source": "Use actual parcel changes to explain an apparent price change",
+      "source_sha256": "8622e8ef5e5779511a9f31048414891df3016a519c4bd2e41729fccfd0c80f01",
+      "raw_target_sha256": "94bfaf89f793bc69b72bb235dc3eee12706a82668dc433c02d16d8e688d94b41",
+      "translation": "Jelaskan perubahan harga melalui perubahan paket"
+    },
+    {
+      "source": "Hand the result to another buyer clearly",
+      "source_sha256": "7d29d29748598b972a745cb73e53cd521a3bb7a1d824ef18fb136178e7e116af",
+      "raw_target_sha256": "8367ec9973015984aff34b9966f25036f0cf246d6fa365ff6a09a7e74a39d8fd",
+      "translation": "Berikan ringkasan yang dapat diulangi pembeli lain"
+    },
+    {
+      "source": "When the parcel is ready, revisit the paragraph. Replace assumed measurements with confirmed ones, check that the route still appears and compare the actual payment request with the latest estimate. If an input is still provisional, say so before approving the expense. Keep the final payment record for reconciliation. The value of an estimate is its ability to support a decision under specified conditions, not its ability to guarantee a number after those conditions have changed.",
+      "source_sha256": "ceb695ccc6ed47b07bfe359ad8c4c364cc28d20c79a2bf55e254573894714fef",
+      "raw_target_sha256": "3241cc165559892a0a8b2208fe41a80a45dc96c341ef7cc63e8687e0ecf79ed2",
+      "translation": "Ketika barang siap, ganti ukuran asumsi dengan ukuran terkonfirmasi, periksa rute masih tersedia, dan cocokkan permintaan pembayaran dengan estimasi terbaru. Jika masukan masih sementara, jelaskan sebelum menyetujui biaya. Simpan bukti akhir. Estimasi mendukung keputusan hanya selama syarat yang mendasarinya masih berlaku."
+    },
+    {
+      "source": "Record who provided each figure",
+      "source_sha256": "37ad54d19fadab80ecf36fb42f1b658f7192531b19996b6c7149076024e199ce",
+      "raw_target_sha256": "217022f60dc24d33336eb10493caef6c5efaa324f278daf866e91026f67305b3",
+      "translation": "Catat sumber tiap angka"
+    },
+    {
+      "source": "Put the source beside each amount when the seller, warehouse, and carrier all appear in one comparison. A seller’s approximate packed weight can be enough for an early screening decision. Once a warehouse measurement arrives, retain the seller figure in a separate column so a reader can see why the estimate changed and which measurement supported the eventual booking.",
+      "source_sha256": "0fa92a04f2f2920d7f416075cf761327cdcc393bb5b9eb1461b1adc76c248a8b",
+      "raw_target_sha256": "2709401d734903db24bdc62470294ae26bc71556e199b8c38159bd2fce507b2a",
+      "translation": "Bila satu tabel memuat data penjual, gudang, dan pengangkut, tuliskan sumber di samping nominal atau ukuran. Perkiraan berat penjual bisa cukup untuk penyaringan awal. Sesudah gudang menimbang, pertahankan angka penjual di kolom lain agar pembaca mengerti perubahan estimasi dan ukuran yang dipakai untuk pemesanan sebenarnya."
+    },
+    {
+      "source": "A good reconciliation tells you where a difference first appeared. Work in the original currency and parcel reference before looking at exchange effects or assuming a fee was added.",
+      "source_sha256": "672a7805192a6ba58cf8b65f83376d075d928a576304bfcb1e9c11235c0a8731",
+      "raw_target_sha256": "f7e6b7ffa9e5e2870391406a5eae10d4a751136ee33389753a28472dee360f0d",
+      "translation": "Pencocokan yang baik memperlihatkan di titik mana selisih pertama muncul. Mulailah dengan mata uang dan nomor paket asli sebelum memeriksa efek konversi atau menyimpulkan ada biaya tambahan."
+    },
+    {
+      "source": "Reconstruct the original comparison",
+      "source_sha256": "585a341f53b71b3427894cd711b1550be9beedd01e81f062caa67b1048d81bb4",
+      "raw_target_sha256": "02372a7e79643452fabe23b5820145e26003aaa06f0b2d9393414bb3505bad50",
+      "translation": "Susun kembali perbandingan awal"
+    },
+    {
+      "source": "Compare physical inputs before money",
+      "source_sha256": "280a3c623c455d7633eb184062d503db7ddf4b76302481b0c1f032910a359b4e",
+      "raw_target_sha256": "02574757b0e7cabd3fb631faedc8a678a2cda4fa6a2adacc03454bd86fc223e0",
+      "translation": "Bandingkan data fisik sebelum membandingkan uang"
+    },
+    {
+      "source": "Separate displayed totals from independent charges",
+      "source_sha256": "acffd07d3485b23f842c3a800d8719b79d2156222e07f88d5433164965a0c19d",
+      "raw_target_sha256": "5e9b1934c97a6ce5524c2c9ec297e382e1b9dcfad7593a4dae1422598a3e7042",
+      "translation": "Bedakan total yang ditampilkan dari komponen tagihan"
+    },
+    {
+      "source": "Imagine that an estimated 140 rises to a final debit of 168. A final statement shows base freight of 156 and packing of 12. The first 16 of the difference comes from the freight line, and the remaining 12 is the packing line. The reconstructed final amount is 168. Do not sum 168, 156 and 12: the total already contains the two components.",
+      "source_sha256": "32e65e70ac5d42111df6901a022f14160bb1bf9e7df21f9841473cb4cd7ed93a",
+      "raw_target_sha256": "ce9b3fdad466363b93b557990ca62f9b2ff12ac1667fe5bd942df5c148bc9b4d",
+      "translation": "Misalnya perkiraan 140 menjadi debit akhir 168. Rinciannya ongkir dasar 156 dan pengemasan 12. Selisih terdiri dari 16 pada ongkir dan 12 pada kemasan. Jumlahnya tepat 168. Jangan menjumlahkan 168 dengan 156 dan 12, karena keduanya sudah membentuk angka 168."
+    },
+    {
+      "source": "Reconcile the payment destination",
+      "source_sha256": "6d44efb3c0b973e92fba97fe2dcf4b0e024044882015ddc71703e3b0d3189f20",
+      "raw_target_sha256": "5f4a4b33728510ec3dedd09e446d75b3f538d052aeeb930e8d2baaa758175cad",
+      "translation": "Cocokkan dari mana pembayaran berasal"
+    },
+    {
+      "source": "A coupon, account credit or refund can change the amount paid from an external card without changing the invoice subtotal. Record invoice total, balance used, external payment and credits as separate fields. When converting to your home currency, keep the original values intact and state the rate or posted amount used. If a promised credit has not posted, label it as pending instead of deducting it from the confirmed payment history.",
+      "source_sha256": "99c44293144f828d2a0ff6efcd386004ff6dd9739a80723b263e9fcd0effdaea",
+      "raw_target_sha256": "8b21b4acd3b40b67df469828d07e302f39c37bd6775005ceb6b6054e7c32d32a",
+      "translation": "Kupon, saldo akun, atau refund dapat mengubah debit kartu tanpa mengubah subtotal tagihan. Pisahkan total faktur, saldo terpakai, pembayaran eksternal, dan pengembalian. Bila dikonversi, pertahankan nilai asal dan nyatakan kurs atau jumlah tercatat. Refund yang baru dijanjikan masuk kolom tertunda sebelum benar-benar dibukukan."
+    },
+    {
+      "source": "Ask one question with the relevant evidence",
+      "source_sha256": "abbbb28812a26e51834af9d19afeee2c14a1fed37cc288506dc0ac3b56399da1",
+      "raw_target_sha256": "34b773095efdfdf15c2f67a20631f74c0946ada7d9488839fec1b24b95b98ce5",
+      "translation": "Ajukan satu pertanyaan beserta bukti yang tepat"
+    },
+    {
+      "source": "A complete fictional reconciliation",
+      "source_sha256": "e92e67bcbd9109ee3bba9caa76b2012a1807f7dbc279a9aea46d3733712569ae",
+      "raw_target_sha256": "041390951699779f5cd64ccafe83db0f8db46aacfc0a97daa9bcd73a9144461e",
+      "translation": "Contoh lengkap mencocokkan tagihan"
+    },
+    {
+      "source": "Suppose the planning sheet contains an old seller subtotal of 220, domestic delivery of 10 and an outbound estimate of 145. The initial overall figure is 375. During packing the buyer adds a separately purchased accessory. Its purchase and domestic movement have already been recorded elsewhere. The outbound box also changes: the final freight line is 153 and the packing service line is 9. The new outbound total is 162. Comparing 162 with 145 gives a 17-unit change on the parcel side.",
+      "source_sha256": "9c1a40111580ea305b7a37933c57096d7fa261c27e35750c2e58fc4ecc3f5584",
+      "raw_target_sha256": "662fcbe900f42aa7245d92237c88540553c33d69dac5017d5b4b7217aed5fae5",
+      "translation": "Misalnya rencana awal memuat barang 220, ongkir domestik 10, dan ongkir keluar 145. Total awal 375. Saat mengemas, pembeli menambah aksesori yang pembelian serta perjalanan domestiknya sudah dicatat di tempat lain. Paket akhir memiliki ongkir 153 dan layanan kemasan 9, total keluar 162. Selisih terhadap perkiraan keluar 145 adalah 17."
+    },
+    {
+      "source": "That 17 consists of eight more in the freight line and nine in the selected service under these example assumptions. It does not measure the cost of the accessory itself and should not be compared with the earlier all-purchase total of 375. Add the accessory's actual purchase entries separately if the question is total cost for the entire basket. Keep the same currency and identify whether any discount applies to freight, merchandise or the charge as a whole. The purpose is to reach an explanation for every difference without counting anything twice.",
+      "source_sha256": "416a611b06f6fcbb91f4881f16daf863f251becb1224d994d38b3793cf0ab96f",
+      "raw_target_sha256": "ae188be4f3ad34bcfada9582e6d3b1a0f7ce081648432343daa6172ddd5a522b",
+      "translation": "Dalam contoh ini 17 terdiri dari tambahan delapan pada ongkir dan sembilan pada layanan. Ini bukan harga aksesori dan tidak sebanding dengan 375, total seluruh pembelian sebelumnya. Untuk biaya seluruh keranjang, masukkan pembelian aksesori pada barisnya. Gunakan satu mata uang dan jelaskan apakah diskon berlaku untuk barang, ongkir, atau seluruh tagihan, sehingga tak ada penghitungan ganda."
+    },
+    {
+      "source": "Distinguish invoice totals from sources of payment",
+      "source_sha256": "fa813dd61f243c3913f549d775bfca28833759a7094f67225534a2f24abd705e",
+      "raw_target_sha256": "e081b1a8a97bb33008a9aba58e57c81b1f7bbdb6860ac9b721392913675f9719",
+      "translation": "Bedakan jumlah faktur dari sumber dananya"
+    },
+    {
+      "source": "Imagine the final parcel invoice is 162, the buyer uses 20 of account credit and the external card supplies the remaining 142. Checking only the card account might make the shipment look cheaper than it was. The invoice total still describes 162 of parcel charges. The payment history shows how that amount was settled. Record both pieces of information instead of replacing the invoice total with the smaller card debit.",
+      "source_sha256": "8690db122b73072e5bfa62e24e8058c793394d3f7e936a0f49f15fb50f4bad64",
+      "raw_target_sha256": "c0503c905c1113513b68a2a7fb8d7d4f00947b9a5989f8db8d4e63059436f7f7",
+      "translation": "Andaikan faktur paket 162 dibayar dengan 20 saldo akun dan sisanya 142 melalui kartu. Melihat mutasi kartu saja membuat ongkir tampak lebih rendah. Biaya tercatat tetap 162; riwayat pembayaran menjelaskan dua sumber dananya. Jangan menambahkan kredit akun sekali lagi ke nilai faktur."
+    },
+    {
+      "source": "The distinction also matters after a refund. Suppose six units are returned to the account balance later. Preserve the original 162 invoice, the original combination of payments and the separate six-unit credit with its destination. You can calculate a net cost when the refund is confirmed. If it has merely been requested, keep it in a pending column. That way one person reviewing the sheet for available funds and another reviewing it for net cost can both understand the figures.",
+      "source_sha256": "fa0728631d1847c51f92a7f569e17ce57d20ab9b52d74e8b57cf129b1fad61f1",
+      "raw_target_sha256": "32f9a221c53e4b9ab209af0ec7cec1dd93c2e5f1efaecd657beb80a24ba98be2",
+      "translation": "Jika kemudian enam unit dikembalikan ke saldo akun, simpan faktur 162, gabungan pembayaran awal, serta kredit enam dengan tujuan dananya. Biaya bersih baru dihitung ketika refund terkonfirmasi. Jika baru diminta, masukkan ke kolom tertunda. Dengan begitu pembaca dapat membedakan dana yang bisa dipakai dari biaya bersih."
+    },
+    {
+      "source": "Account for a route change before comparing rates",
+      "source_sha256": "aad8d93c3e66bf0232035b2833d8aa842faa3f8be7363daef870bb033862ef85",
+      "raw_target_sha256": "a51a2aa50e5daa87b28610152e824a6ad2b1eb2ea7def4e8c84cf65c72e208be",
+      "translation": "Periksa perubahan rute sebelum menilai tarif"
+    },
+    {
+      "source": "If the originally chosen route could not take the final parcel, compare the final statement with an estimate for the route that was actually used. Keep the old option separately and note why it became unavailable if the platform supplies a reason. A rate difference between two routes does not prove an unexpected change in the price of either route. Likewise, a change of destination or declared category can produce a different service set before weight and volume are even considered.",
+      "source_sha256": "6c0a52c36f462c6515f96a1dd82935a2a58341b27445f8608dd698bc18f5a91e",
+      "raw_target_sha256": "2b025729ee40ceaaca9193b6b4336daabf8a5937e204d4a71a8c402c7a56eedb",
+      "translation": "Jika rute awal tidak menerima paket akhir, cocokkan tagihan dengan penawaran untuk rute yang benar-benar dipakai. Simpan rute awal dan alasan gugur jika ada. Perbedaan tarif antara dua rute tidak membuktikan salah satunya mendadak naik harga. Tujuan atau kategori yang berubah juga dapat mengubah layanan yang tersedia sebelum berat dan volume diperhitungkan."
+    },
+    {
+      "source": "A single initial estimate might turn into two shipments after an item is delayed. Compare their combined final cost with the original estimate only after identifying what changed. For example, two final parcels costing 88 and 76 have a combined cost of 164. Comparing only the 88 with the original estimate would leave the second box out; comparing each final box independently with the entire original estimate would count the same baseline twice.",
+      "source_sha256": "f421844ec70dcd8587f29f9fc6d7e0cc0397f3900e49d455738030450dab661c",
+      "raw_target_sha256": "9366bee0fd9b36f48f4cbf14f18f8ed28ef61fb8e5146bd50bd080279254b3a1",
+      "translation": "Satu perkiraan awal bisa berubah menjadi dua pengiriman ketika satu barang terlambat. Catat dahulu perubahannya sebelum membandingkan total. Misalnya tagihan akhir 88 dan 76 berjumlah 164. Membandingkan 88 saja melupakan kotak kedua. Membandingkan masing-masing dengan seluruh perkiraan asli secara terpisah justru memakai dasar sama dua kali."
+    },
+    {
+      "source": "Build a one-line contents list for each final parcel and match each original item exactly once. Identify excluded, returned or later-added items. If the contents have changed substantially, also retain a separate estimate calculated for the revised two-box arrangement. This new comparison is often better for checking the final charge, while the original estimate remains useful for understanding why the shopping plan exceeded the initial budget.",
+      "source_sha256": "0ba44aeee9236a3d8c1afd090c9fcccde45464eb5bc58aba71337cafaa07a71b",
+      "raw_target_sha256": "746d6b6b2525a869cf965f73c1d7b3e4b9eb788c9bfc560010202c324ae9ddf4",
+      "translation": "Tuliskan isi tiap paket akhir satu baris dan cocokkan setiap barang awal tepat sekali. Tandai yang dikeluarkan, dikembalikan, atau ditambahkan. Jika isinya sangat berubah, pertahankan pula penawaran baru untuk rancangan dua kotak. Penawaran baru lebih tepat untuk pemeriksaan tagihan, sementara penawaran awal menjelaskan perubahan rencana belanja."
+    },
+    {
+      "source": "Decide whether the remaining difference is actionable",
+      "source_sha256": "f5622605da33b051a5b790a2040f8712f49e07fa0d42c7f36ab6fbf189b2161a",
+      "raw_target_sha256": "71ec4e0018708a23d88c80d9f6e234b68e5fddd2a0f999fd300e6d4fbc2370f7",
+      "translation": "Tentukan apakah sisa selisih perlu ditanyakan"
+    },
+    {
+      "source": "A small difference can come from rounding after currency conversion. It can also identify a real missing service line. Reconstruct the original-currency amounts first. Check whether rounding at the invoice level instead of at the item level accounts for the difference. If both the currency and all inputs match and a residual remains, do not create an unnamed miscellaneous charge just to make the sheet total agree. Preserve the residual and ask about it.",
+      "source_sha256": "1c0e45e369c2ccb8b8391e59e0367c503734a9dca7c4b138dfc361f9226c61db",
+      "raw_target_sha256": "31797608e297cf27ac0eac5091472b528b40efd4016f750d01da5f790edd566c",
+      "translation": "Selisih kecil bisa dari pembulatan konversi atau layanan yang belum tertulis. Susun ulang dalam mata uang asal, lalu cek pembulatan per faktur dibanding per item. Jika mata uang dan semua masukan cocok tetapi selisih masih ada, jangan membuat biaya “lain-lain” hanya untuk menyeimbangkan tabel. Pertahankan selisih dan tanyakan sumbernya."
+    },
+    {
+      "source": "Keep a readable closing note",
+      "source_sha256": "4df428e7a3b004f4cbbeff95d9f12e7050010e7a55f5d9fad427851b472ebeb4",
+      "raw_target_sha256": "536eeb12adeee135d08be036c579c6320cd6b77d1b79e1240c20f2641d89a68d",
+      "translation": "Tulis kesimpulan singkat yang mudah ditelusuri"
+    },
+    {
+      "source": "Write a one-sentence conclusion next to each resolved difference. For example, a previously unexplained charge might match a packing service on an earlier confirmation. Record that confirmation date and amount. Someone checking your records later can follow that connection even if the original transaction description was abbreviated.",
+      "source_sha256": "95c223af7a7e468996befdd5dd8634bccbb3fdcd082c40ccc2a0ce53ddcd08c9",
+      "raw_target_sha256": "b00517e6b0d5131cb845e258dba2dd297805c2bdeb2c18a7c8a8c195c2b8c788",
+      "translation": "Tulis satu kalimat untuk tiap selisih yang sudah selesai. Misalnya biaya yang sebelumnya tidak jelas ternyata cocok dengan layanan kemasan pada konfirmasi lebih awal. Sertakan tanggal konfirmasi dan jumlahnya agar pembaca bisa menelusuri kaitannya walaupun uraian transaksi disingkat."
     }
   ]
 }
