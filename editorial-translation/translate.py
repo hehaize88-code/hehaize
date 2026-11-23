@@ -20,7 +20,7 @@ sp=sentencepiece.SentencePieceProcessor(model_file=str(model_dir/'sentencepiece.
 out=pathlib.Path('translations');out.mkdir(exist_ok=True)
 for path in sorted(pathlib.Path('editorial-translation/input').glob('*.json')):
     data=json.loads(path.read_text())
-    if lang not in data['languages']:continue
+    if lang not in data['languages'] or data['group']!=int(sys.argv[2]):continue
     texts=data['texts']; dest={}
     for start in range(0,len(texts),48):
         batch=texts[start:start+48];keys=[];sentences=[]

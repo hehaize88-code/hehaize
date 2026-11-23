@@ -10,6 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        group: [0, 1, 2]
         language: [de, fr, es, it, pt, pl, nl, ro, sv, zh, da, fi, el, cs, hu, bg, sk, hr, ja, ko, vi, th, id, sl, lt, lv, et, ga]
     runs-on: ubuntu-latest
     timeout-minutes: 300
@@ -19,12 +20,12 @@ jobs:
           sparse-checkout: editorial-translation
           persist-credentials: false
       - run: python -m pip install ctranslate2==4.9.1 sentencepiece==0.2.1
-      - run: python editorial-translation/translate.py "${{ matrix.language }}"
+      - run: python editorial-translation/translate.py "${{ matrix.language }}" "${{ matrix.group }}"
       - uses: actions/upload-artifact@v4
         with:
-          name: translations-${{ matrix.language }}
+          name: translations-${{ matrix.language }}-${{ matrix.group }}
           path: translations/
-          if-no-files-found: error
+          if-no-files-found: ignore
           retention-days: 7
   collect:
     needs: translate
