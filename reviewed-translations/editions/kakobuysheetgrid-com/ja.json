@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "e3344f15ecc9b07195fcfe8707060cf61aa6246371337cb41c67ac2414316a23",
-  "effective_dictionary_sha256": "7ab9b049baf9d3048ef8714effc81b0827f9f8a6410bfaea103fd8e06e3d676d",
+  "effective_dictionary_sha256": "7bc3cf7cf05c8fdc7e006c9960a46d630d2ad9e2ea430267438bdb018e0f824c",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -1521,6 +1521,162 @@
       "source_sha256": "1ea9a43d1c9a2471ecdbeb6718389cad9068fd6676961a635139847a53efbdac",
       "raw_target_sha256": "8a95d1194eeb8b4b07d32e51aa092f481b013447667a7e7a095fbecda61bce48",
       "translation": "海外発送の選択でセットの全入庫品が含まれるかを見ます。再送の肩掛けに別番号があれば画面どおり選択・関連付けし、すでに本体にまとめたという案内があればその確認を保存します。二重選択と選び漏れを避けてください。"
+    },
+    {
+      "source": "A useful request tells a person holding the item what to photograph, how to position it and which question the resulting frame should answer.",
+      "source_sha256": "2d65b2df7718d2f7dacf2d58b22659c773b0b0b2ed79a69baafd20326eb01f50",
+      "raw_target_sha256": "44a874bd1fcc9209b60e1f829d77718a162682d079768c2ecd527066ddc10e68",
+      "translation": "実物を持っている人に、何を、どう置いて、どの疑問に答える写真を撮ってほしいか伝えます。"
+    },
+    {
+      "source": "Write the decision first",
+      "source_sha256": "0da8b62efdd7341a40c049107f28879f21f35b68e5cb054246710f5918c48722",
+      "raw_target_sha256": "f8016d164e4a9507751afd4a73cca1d9647dc5dbb2e6c86ec935be88ed5c7e5f",
+      "translation": "何を決めたいか先に書く"
+    },
+    {
+      "source": "Explain what changes depending on the result. You might need to decide whether a jacket has a two-way zipper, whether a printed name is spelled correctly, or whether a sleeve is long enough. The phrase more pictures leaves the photographer to choose an angle. Starting with the decision helps you ask for one informative view rather than several attractive views that repeat the original gallery.",
+      "source_sha256": "cc862a441ffa87d6cd5900d5014cf57bfc495e041c93c33edba6f89baed4651b",
+      "raw_target_sha256": "cc88a46d083179bc50dcadf77d5cc063a43aa74dfc8b129e2f625bd33e5671e8",
+      "translation": "双方向ファスナーか、印字のつづりが正しいか、袖丈が足りるかなど、結果が左右する判断を書きます。「もっと写真を」だけでは範囲が分かりません。必要な答えに合った一枚を指定してください。"
+    },
+    {
+      "source": "Identify the object unambiguously",
+      "source_sha256": "060c1fcb69ea637c0338dee731f9d75c318d06fcd4d1004d6a3afdd8c9fbbfdb",
+      "raw_target_sha256": "10324fa67b9f9bb391c0fddee3af09dc94a2ec53844f8e52e741f61afdfc8791",
+      "translation": "対象物を取り違えない伝え方"
+    },
+    {
+      "source": "Give the item or order reference and exact option. When two navy jackets differ only in size, a colour name is insufficient. Ask that the item remains identifiable in the picture. For a personalisation check, provide the exact text from the order and specify whether front, back or sleeve should be visible. Avoid including unrelated personal or payment information in the request.",
+      "source_sha256": "a7520529013e27430019015132ce0b2f7690037861f054603849e16c9a136fca",
+      "raw_target_sha256": "2fa99d06ade7fced93f03d051eb7e0f5d1f28373689c693227aa9c8113fd86e4",
+      "translation": "注文または入庫番号と選択した仕様を記します。紺のジャケットがサイズ違いで二着あるなら色だけでは足りません。写真で本体を特定できる手掛かりを入れ、名入れなら正確な文字列を示します。"
+    },
+    {
+      "source": "Specify composition and endpoints",
+      "source_sha256": "bd9c2066d273a2a7820dfb11fed384b2f435cd689f332fc9f59a11dcda5475b4",
+      "raw_target_sha256": "a5b3c587c6dab1ae4fa6145284cbe556e5d9f157836dcf2ffd4fd9ed0d97f0bd",
+      "translation": "構図と測定の両端を決める"
+    },
+    {
+      "source": "For a zipper, ask for a closed full-front view with both ends and any sliders visible. For a flat garment width, describe the seam points and ask that the tape's beginning and reading appear in one frame. For a print, ask for a straight-on view that shows placement and another view only if the text is too small. A tightly cropped image may improve legibility while removing the context needed to identify the unit.",
+      "source_sha256": "11e911fcb8f1db6a920af1e0b3ba290d5e32b4a4d3c59bb050c3d48acd832443",
+      "raw_target_sha256": "bc00d95629191de020c2d4d95a9693ae83e7e76e0e8c2d3ff156976f4e5b472d",
+      "translation": "ファスナーなら閉じた状態で正面全体、両端とスライダーが見える一枚を。平置き身幅は左右の縫い目と目盛りの始終を一枚に収めます。印字は正面を向けて文字が隠れないよう指定します。"
+    },
+    {
+      "source": "Check the response against the question",
+      "source_sha256": "d0faa0571e78d2c976577f7942ce0e8bc843dfbc759f9f63652f5a14c39a0e28",
+      "raw_target_sha256": "d1666ff1513cab050c8ea6a670622001e12f834fc4393c15cf8a87bc94504b24",
+      "translation": "依頼した質問に答えたかを見る"
+    },
+    {
+      "source": "Look at the requested feature before scanning the rest of the photograph. Can you see both endpoints? Is the label readable? Is the unit laid flat, or held at an angle that distorts the apparent length? If the image leaves a gap, describe that gap in a follow-up. Asking for the lower slider to be visible is more actionable than saying that the first picture was bad.",
+      "source_sha256": "04dc73a1603213c88839edbf512ba4b9de73e34bb4b2816460c10b00591a0035",
+      "raw_target_sha256": "8fcbb14cfb50cf027283f364e12e317c4614b52efe649e3ff5bf7a61aece2bd3",
+      "translation": "まず目的の箇所を見て、両端が写るか、タグが読めるか、平置きか斜めかを確認します。不足ならどの情報が欠けたかを具体的に示します。すでに答えが出たときは結果を記録して終了します。"
+    },
+    {
+      "source": "Budget the service and retain the result",
+      "source_sha256": "2ec032fddef99bc2e247b3e947de25b5c884df5dc9dbbff9ad753f1f80379eb8",
+      "raw_target_sha256": "706dc3605647421368fe4203b076e946e02fc3ea39f76e54ae2a2ecdabe660cc",
+      "translation": "料金と撮影結果を残す"
+    },
+    {
+      "source": "Check availability, fees and processing information in the current KakoBuy order flow. A third-party article can suggest useful angles, but the conditions attached to your own order decide which request can be fulfilled. Once the image arrives, keep it with the original request and the decision you made. A dated note explaining the accepted measurement remains useful if the item later becomes part of a multi-item parcel.",
+      "source_sha256": "3ca6d6bc596c9fe8f803c4e0c6ea38a15b849cd14a1babc9285b3dc269ed882e",
+      "raw_target_sha256": "e88515c946e603695b8b830508acdec38f1a4e33b6cfe42acb30804b22d8a92f",
+      "translation": "提供範囲、料金、処理方法は現行のKakoBuy注文画面で確認します。外部記事は角度の参考になりますが、何を頼めるかは注文条件次第です。受け取った写真と依頼文、判断、日付をまとめると同梱時にも使えます。"
+    },
+    {
+      "source": "Write the question before selecting the view",
+      "source_sha256": "db185ad5f978383e2792f1c26d030c43dbc668801e8c1ee74b57d3dd60dd1868",
+      "raw_target_sha256": "5a1d3f5ac25e1e9a07043605a4efa88093da4dfbbf3062fe2688c2264134e3b5",
+      "translation": "必要な写真を一文で表す"
+    },
+    {
+      "source": "Begin by finishing a sentence such as “I need this photo to decide whether the folder will fit inside the sleeve.” A question with a concrete decision helps you choose the subject, angle and reference point. If the sleeve opens along one edge, the useful view might show the clear opening between the two zipper stops. A photo of the entire bag laid beside a ruler can look informative while leaving that exact opening hidden by the zipper or by folded fabric.",
+      "source_sha256": "b855867c5d08a3636cab4d3f72c3ad39e157a266eb2cddae19d3b54c0b82e1fe",
+      "raw_target_sha256": "2130eeec34428fd00360ccf83c8f5b0946bb2db4cd36e0cfc23e0a4ce5a9ed7e",
+      "translation": "「書類フォルダーがケースに入るか決めたい」と述べると、撮るべき対象と基準が定まります。片側の開口なら、ファスナー両端の留め具間の実際のすき間が重要です。バッグ全体の隣に定規を置くだけでは、肝心な開口部が布に隠れることがあります。"
+    },
+    {
+      "source": "An item can invite many interesting close-ups. Prioritise the one detail that determines whether you will accept it. For a garment bought for layering, the flat chest width may be more important than a logo close-up. For a bag bought to replace a lost part, the attachment clip and its inner width may matter most. Use the available gallery to eliminate questions already answered. A focused request takes less interpretation and makes it easier to recognise whether the resulting photo actually satisfies your purpose.",
+      "source_sha256": "1d2f85c324b492055e6d11cb1175441ebc52ed6f9509d89ed8196c5292472cb3",
+      "raw_target_sha256": "7b9e14593748df30b7ded76881a9627749dd55f401947168a3d8936e90096743",
+      "translation": "気になる接写が多くても、受け入れるかを決める一点を優先します。重ね着用ならロゴより平置き身幅、書類バッグなら図柄より有効開口を確認します。"
+    },
+    {
+      "source": "Describe a location anyone can find",
+      "source_sha256": "f3ea640e8ec4d9175559602b760b8bd3179e65a079618ac13e14e77fb76a5e60",
+      "raw_target_sha256": "ec4dca66c49459f52d2f7723208d50853c0495035194f4ac0402bb5af6b19f22",
+      "translation": "誰にでも分かる位置を指定する"
+    },
+    {
+      "source": "Use an object and a landmark instead of ambiguous directions. “The inside seam below the left arm when the jacket is worn” identifies a different spot from “the seam on the left of my screen.” Where possible, attach a cropped reference with the area circled and retain a wider view that establishes its location. A close crop of two black seams can be hard to locate on a dark garment. The wide view gives the photographer a way to identify the correct area.",
+      "source_sha256": "85a02fd5e79009d4ea196aa31f630c86693a3ccd3162fffadda5aaa165804aa2",
+      "raw_target_sha256": "a998a90636631f16949e92e1eabc3df393a358ae0d757cbad0a40dd3fe6dedd4",
+      "translation": "「着たときの左腕の下の内側の縫い目」と「画面の左の縫い目」は別の場所かもしれません。物の向きと基準を示し、可能なら丸を付けた拡大図と位置の分かる全体図を添えます。黒い縫い目二本の接写だけでは場所を取り違えます。"
+    },
+    {
+      "source": "For a pair or a set, name the component as well. A request for the tongue label can produce a clear image of the right shoe while your question concerns the left. If both need checking, say so explicitly and explain what must be readable. A request for a bag buckle should specify which strap and whether the buckle should be shown open, closed or from the inside. Each detail serves an actual comparison and helps avoid a repetition of the existing overview.",
+      "source_sha256": "85dd80a581e9c7c949ca0a2dc1dac66994523d08ee867f2e0a4ebff53015a96a",
+      "raw_target_sha256": "eb10e27e0b70ce030528c2f99030df5a681a0e2f1a937616fac9f00167966fe9",
+      "translation": "左右やセット内のどの部品かも指定してください。「シュータンのタグ」だけだと右足の鮮明な写真が届いても左足の疑問は残ります。両方が必要ならそう記し、読めるべき表示を説明しましょう。"
+    },
+    {
+      "source": "Specify how a measurement should be taken",
+      "source_sha256": "354f63f2eb7b551c1ecac9b7fc32a6580f59900676018025d3d379ea0247b51f",
+      "raw_target_sha256": "3ed721e99edc62a0116d74fe992862105e7197d8fb053013dc33a8acaadbc4f5",
+      "translation": "測り方まで依頼に含める"
+    },
+    {
+      "source": "For a flat garment measurement, state the start point, end point and unit. If you want the width across a sweatshirt under the arms, ask to see the garment laid flat, the tape beginning at one underarm seam and ending at the other, with both ends visible. Avoid asking for a fit verdict from a picture. Compare the resulting measurement with a garment you own taken by the same method, and keep any material stretch or garment shape in mind.",
+      "source_sha256": "a60be411b8b02d5740a3d514373920e0446cd734f65013f4cb8cba0843fcd2b0",
+      "raw_target_sha256": "ec19afb23dc292a97a8c5bc3e93f8b75272756372b66d804d77cc8251eaef16f",
+      "translation": "平置き寸法は始点、終点、単位を指定します。スウェットの身幅なら伸ばさず広げて両脇の縫い目を一直線に結び、両端が読めるようにします。手持ちの服も同じ方法で測り、伸縮や形を考慮して比べます。写真だけで着用感を断定しません。"
+    },
+    {
+      "source": "For a small opening, a wide view with both ends of a ruler readable may be more useful than a very tight close-up. A cropped photograph of the number at the far end does not establish the starting point. If a rigid object needs to pass through the opening, distinguish the usable gap from the overall length of the closing hardware. In your note, state which measurement you received. Keep an approximate reading separate from any conclusion about whether the object will fit comfortably.",
+      "source_sha256": "a8410710eecfede469acd3027a55970880f8f2fc3c1e17ca8922462a94207e3a",
+      "raw_target_sha256": "cf4fcfd0e5c5a0daa49fc41e269050a80f861df09d413a14eb822c0af1675923",
+      "translation": "小さい開口でも、終点の数字だけの接写より、定規の両端が見える一枚の方が役立ちます。硬い物を通すなら金具全体の長さと通せるすき間を区別し、受け取った測定と入るかどうかの判断を別々に記します。"
+    },
+    {
+      "source": "Adapt the request to realistic handling",
+      "source_sha256": "c949872cd5fca44faf42e818dac22bea2b9c52779b0917d3e71994cad84c4a30",
+      "raw_target_sha256": "451c12cc0372b03e475c77c1217d25835fb1b158880d7fddf9063615eb42abf5",
+      "translation": "実際にできる取扱いに合わせる"
+    },
+    {
+      "source": "Some details can be shown by rotating an item. Others require opening packaging, removing a tag or disassembling a component. Identify what the photo would require and check whether the service can perform that action. If it would affect a seal or condition important to your purchase, stop and decide whether the evidence is worth that change. A request to show a manufacturer's printed seal from the outside may answer part of the question with less handling.",
+      "source_sha256": "50b7c53cdec957944ccfccfa6b0ab216c47eeffad543b4195c1c2d4a8a8bdb1a",
+      "raw_target_sha256": "aafd56cb0dfd81added65c238145b1708befcea2bd4e088e10d68e3d81a94024",
+      "translation": "回すだけで見える箇所と、開封、タグ外し、部品分解が必要な箇所があります。どの操作を要するかと対応可否を確認し、封や商品状態に影響するなら価値を考えてから頼みます。外からメーカーの封印を撮るだけで一部を確かめられる場合もあります。"
+    },
+    {
+      "source": "If the available service offers a priced photo option, check the displayed scope before using it. Confirm whether you are ordering a single image, a requested angle or another defined service. Avoid assuming that adding five unrelated instructions to one message guarantees five separate results. If you have a fixed budget for inspection, choose the detail with the greatest impact on your decision and specify what would count as a readable answer. Save the confirmation with your order evidence.",
+      "source_sha256": "0ce3c594dee13cef1290cb60e888d475c19ee91d2308fcb8f73e26603431bb9d",
+      "raw_target_sha256": "a067bd90f3688284e5bd705486cdb01ad3df8c88b721a08329a2a8a4060c58fc",
+      "translation": "有料なら一枚、特定の一角度、別の作業のどれが料金の対象かを確かめます。五種類の依頼を一通に書いても五枚を保証しません。予算内で判断への影響が最も大きい箇所と、何が読めれば十分かを伝えて確認を保存します。"
+    },
+    {
+      "source": "Evaluate the result and decide whether to follow up",
+      "source_sha256": "6bf636e88ba539865bd822e4b694a16591d22b700e32b2670aca552f566675e8",
+      "raw_target_sha256": "6358e9c6a2ef68e47e9cffc79a7e31d4ee55c2ad634765bb00a97f84170f278d",
+      "translation": "追加撮影が要るか決める"
+    },
+    {
+      "source": "Open the original result rather than judging it from a thumbnail. Check three things: whether it is the correct item, whether it shows the specified area and whether the detail is readable or measurable. If it answers your question, write down the observation and date. A concise note such as “zip opening is visible between both stops, measured across the usable gap” preserves the basis of your decision more clearly than a generic acceptance mark.",
+      "source_sha256": "a29c614768ff41172088eb1e033eb79dc7b73edb276d436373c8a8fe789cd466",
+      "raw_target_sha256": "2f510522eb541d631ee0ea83c6324ac9cfacd7d1580bfe860f69d289d6b2d25f",
+      "translation": "サムネイルではなく元画像を開き、対象品、指定した箇所、読める・測れる状態の三つを確かめます。答えが出たら日付と「留め具の間の有効幅を測定」などの観察を控えます。合格印だけより判断根拠が伝わります。"
+    },
+    {
+      "source": "If the result misses one requirement, quote that requirement and identify what the image did show. For example, the photograph shows the zipper's total length, while the usable opening between the stops remains hidden. Ask for that specific change only if it still matters to the order. If photography cannot settle the issue, consider the seller's written answer, the available order options or declining the purchase. Repeating the same unanswerable request is unlikely to produce stronger evidence.",
+      "source_sha256": "6dbe2ef6e045e6912ff1988175abe23ef26e82f1e53783b98ed73ec768c3a4b6",
+      "raw_target_sha256": "d11042ce64e79d329c8afe33e311381f8a1e46f89bdd3d98d362ea79012810ac",
+      "translation": "足りない条件が一つなら、元の依頼を引き、見えたことを示します。例えばファスナー全長は分かるが留め具間は見えない、という具合です。判断に影響する時だけ補い、写真で決まらなければ店の回答、別仕様、購入見送りも検討します。"
     }
   ]
 }

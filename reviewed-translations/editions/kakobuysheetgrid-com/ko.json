@@ -3,7 +3,7 @@
   "locale": "ko",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "3d2e7d027a4e70636e329e3cca5b88a94648ace88348eea5aeccbf9e7d473a72",
-  "effective_dictionary_sha256": "8e318ad0426545987696c7ba9755d58b84b23d8cc1fffd269fb4bf02f8867311",
+  "effective_dictionary_sha256": "f5bb2e81cf6c394201682638562db6ecf19567ac19f14d1fdc427ec992009f2a",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -44,7 +44,7 @@
       "source": "Check availability, fees and processing information in the current KakoBuy order flow. A third-party article can suggest useful angles, but the conditions attached to your own order decide which request can be fulfilled. Once the image arrives, keep it with the original request and the decision you made. A dated note explaining the accepted measurement remains useful if the item later becomes part of a multi-item parcel.",
       "source_sha256": "3ca6d6bc596c9fe8f803c4e0c6ea38a15b849cd14a1babc9285b3dc269ed882e",
       "raw_target_sha256": "92e66da53a7c98aabc13ec093107e90526a2a02f22ab66442785109306f14522",
-      "translation": "추가 촬영 가능 여부와 요금, 처리 방법은 현재 KakoBuy 주문 화면에서 확인하세요. 다른 사이트의 글은 촬영 각도를 고르는 데 참고가 되지만 실제 요청 가능 범위는 주문 조건에 따릅니다. 사진이 도착하면 요청 문구와 결정 내용을 함께 보관하세요. 어떤 치수를 확인했는지 날짜와 함께 남겨 두면 나중에 여러 상품을 합배송할 때도 도움이 됩니다."
+      "translation": "현재 KakoBuy 주문 화면에서 가능 여부, 요금, 처리 방법을 확인하세요. 외부 글은 각도를 제안할 수 있지만 주문 조건이 실제 서비스를 결정합니다. 요청과 사진, 날짜와 승인한 측정값을 같이 남겨 합배송 때도 활용하세요."
     },
     {
       "source": "An album tied to the same marketplace identifier may show a version sold before the edit. Check the recording date, label, visible construction and package contents. Use it as a guide to the detail worth checking rather than evidence of the new offer. If your own current warehouse pictures become available, connect them to their order and option first and document any specific difference before deciding about shipping.",
@@ -1461,6 +1461,156 @@
       "source_sha256": "1ea9a43d1c9a2471ecdbeb6718389cad9068fd6676961a635139847a53efbdac",
       "raw_target_sha256": "44c4d0be735a17d7886f1e3411cafddbe80708a71b05643e4a5a57f8c7bc1744",
       "translation": "해외 배송을 신청할 때 전체 세트에 필요한 입고품이 모두 선택됐는지 확인하세요. 대체 어깨끈은 별도 입고 번호를 연결하거나 선택합니다. 본체에 이미 합쳤다는 답변이 있으면 보관해 중복이나 누락을 피하세요."
+    },
+    {
+      "source": "A useful request tells a person holding the item what to photograph, how to position it and which question the resulting frame should answer.",
+      "source_sha256": "2d65b2df7718d2f7dacf2d58b22659c773b0b0b2ed79a69baafd20326eb01f50",
+      "raw_target_sha256": "0028397d556bc807f9af79cb4c832b6010051f167bc449fac9a31be5c65ca268",
+      "translation": "물건을 들고 있는 사람이 무엇을 어떻게 놓고 찍어야 하는지, 사진이 어떤 질문에 답해야 하는지 알려 주세요."
+    },
+    {
+      "source": "Write the decision first",
+      "source_sha256": "0da8b62efdd7341a40c049107f28879f21f35b68e5cb054246710f5918c48722",
+      "raw_target_sha256": "0ad7c414f303cccdd942d699fe2a25902792e105e5c3fefd998362a2dd28018f",
+      "translation": "어떤 결정을 할지 먼저 쓰기"
+    },
+    {
+      "source": "Explain what changes depending on the result. You might need to decide whether a jacket has a two-way zipper, whether a printed name is spelled correctly, or whether a sleeve is long enough. The phrase more pictures leaves the photographer to choose an angle. Starting with the decision helps you ask for one informative view rather than several attractive views that repeat the original gallery.",
+      "source_sha256": "cc862a441ffa87d6cd5900d5014cf57bfc495e041c93c33edba6f89baed4651b",
+      "raw_target_sha256": "fe18ebf033b50c7febdefe2644667fc568099484e35c9e23887d9bca8221d688",
+      "translation": "양방향 지퍼인지, 인쇄된 이름 철자가 맞는지, 소매가 충분히 긴지 등 사진에 따라 달라질 결정을 말하세요. ‘사진 더 주세요’만으로는 촬영자가 필요한 각도를 알기 어렵습니다."
+    },
+    {
+      "source": "Identify the object unambiguously",
+      "source_sha256": "060c1fcb69ea637c0338dee731f9d75c318d06fcd4d1004d6a3afdd8c9fbbfdb",
+      "raw_target_sha256": "ac1e2e5e38870c95d9ee807d3a719db5a91ec8cdf3daae974a533af8ccc1c649",
+      "translation": "어떤 물건인지 분명히 하기"
+    },
+    {
+      "source": "Give the item or order reference and exact option. When two navy jackets differ only in size, a colour name is insufficient. Ask that the item remains identifiable in the picture. For a personalisation check, provide the exact text from the order and specify whether front, back or sleeve should be visible. Avoid including unrelated personal or payment information in the request.",
+      "source_sha256": "a7520529013e27430019015132ce0b2f7690037861f054603849e16c9a136fca",
+      "raw_target_sha256": "509c951f690d3be8bf9b595c20964b8391b24b80d5ca02483426d5ff9712eedc",
+      "translation": "상품이나 주문 번호와 정확한 옵션을 주세요. 남색 재킷 두 벌이 사이즈만 다르면 색만으로 부족합니다. 사진에서 상품을 식별할 수 있게 하고 각인이라면 정확한 문자열을 알려 주세요."
+    },
+    {
+      "source": "Specify composition and endpoints",
+      "source_sha256": "bd9c2066d273a2a7820dfb11fed384b2f435cd689f332fc9f59a11dcda5475b4",
+      "raw_target_sha256": "f6613434bebdf263c62123ab0b1ad91620284cef049afb871886251fedf40892",
+      "translation": "화면 구성과 측정 끝점 정하기"
+    },
+    {
+      "source": "For a zipper, ask for a closed full-front view with both ends and any sliders visible. For a flat garment width, describe the seam points and ask that the tape's beginning and reading appear in one frame. For a print, ask for a straight-on view that shows placement and another view only if the text is too small. A tightly cropped image may improve legibility while removing the context needed to identify the unit.",
+      "source_sha256": "11e911fcb8f1db6a920af1e0b3ba290d5e32b4a4d3c59bb050c3d48acd832443",
+      "raw_target_sha256": "2fb7b0bb2036c592d117dca45e7f847ff25f6ee7a3e4e4cf04629b4f0f917b75",
+      "translation": "지퍼는 잠근 상태의 정면 전체에 양끝과 슬라이더가 나오게 합니다. 옷 너비는 평평하게 놓고 지정한 솔기와 줄자의 시작·끝 눈금을 한 장에 담습니다. 인쇄는 글자 전체를 정면에서 읽을 수 있게 요청하세요."
+    },
+    {
+      "source": "Check the response against the question",
+      "source_sha256": "d0faa0571e78d2c976577f7942ce0e8bc843dfbc759f9f63652f5a14c39a0e28",
+      "raw_target_sha256": "a8bae62b8229be32a10a2754b77ce0d77962a540b716df512d9d2d415c8ca37e",
+      "translation": "답변 사진이 질문을 해결했는지 보기"
+    },
+    {
+      "source": "Look at the requested feature before scanning the rest of the photograph. Can you see both endpoints? Is the label readable? Is the unit laid flat, or held at an angle that distorts the apparent length? If the image leaves a gap, describe that gap in a follow-up. Asking for the lower slider to be visible is more actionable than saying that the first picture was bad.",
+      "source_sha256": "04dc73a1603213c88839edbf512ba4b9de73e34bb4b2816460c10b00591a0035",
+      "raw_target_sha256": "56b05ef2c1f9da3667f599172f91b0244442c48618590ce81a447ea54a792838",
+      "translation": "먼저 요청한 부위에서 두 끝점이 보이는지, 라벨을 읽을 수 있는지, 평평하게 놓았는지 확인하세요. 부족하면 빠진 조건을 구체적으로 말하고 답이 됐다면 결과를 적으세요."
+    },
+    {
+      "source": "Budget the service and retain the result",
+      "source_sha256": "2ec032fddef99bc2e247b3e947de25b5c884df5dc9dbbff9ad753f1f80379eb8",
+      "raw_target_sha256": "b67f7802f93c8f09872b7a319c5948af50e18aebd9fdbcca011673978b9a72e2",
+      "translation": "서비스 비용과 결과 보관하기"
+    },
+    {
+      "source": "Write the question before selecting the view",
+      "source_sha256": "db185ad5f978383e2792f1c26d030c43dbc668801e8c1ee74b57d3dd60dd1868",
+      "raw_target_sha256": "738d7f1f3ad9577edd46e55e7d351e25324f169c70d59519b7a895a729dbb9a4",
+      "translation": "필요한 사진의 목적을 한 문장으로 쓰기"
+    },
+    {
+      "source": "Begin by finishing a sentence such as “I need this photo to decide whether the folder will fit inside the sleeve.” A question with a concrete decision helps you choose the subject, angle and reference point. If the sleeve opens along one edge, the useful view might show the clear opening between the two zipper stops. A photo of the entire bag laid beside a ruler can look informative while leaving that exact opening hidden by the zipper or by folded fabric.",
+      "source_sha256": "b855867c5d08a3636cab4d3f72c3ad39e157a266eb2cddae19d3b54c0b82e1fe",
+      "raw_target_sha256": "5fe993175ff2b367d5d6c0e62cd1f23b28b2e5c21661f3bb2639b4d561caf26e",
+      "translation": "‘서류철이 슬리브 안으로 들어갈지 결정하려고 합니다’처럼 쓰면 기준이 분명해집니다. 한쪽 지퍼형이면 두 스토퍼 사이의 실제 입구가 중요합니다. 전체 가방 옆에 자를 놓은 사진은 지퍼나 접힌 천에 가려 그 부분이 안 보일 수 있습니다."
+    },
+    {
+      "source": "An item can invite many interesting close-ups. Prioritise the one detail that determines whether you will accept it. For a garment bought for layering, the flat chest width may be more important than a logo close-up. For a bag bought to replace a lost part, the attachment clip and its inner width may matter most. Use the available gallery to eliminate questions already answered. A focused request takes less interpretation and makes it easier to recognise whether the resulting photo actually satisfies your purpose.",
+      "source_sha256": "1d2f85c324b492055e6d11cb1175441ebc52ed6f9509d89ed8196c5292472cb3",
+      "raw_target_sha256": "10d4d3b292f04ab3f75aa9a7a8a7274f2487da89d6b5c25025095ef499353288",
+      "translation": "관심 가는 부분이 많아도 수락 여부를 결정할 한 가지를 먼저 보세요. 겹쳐 입을 옷은 로고보다 가슴 단면이, 서류 가방은 그림보다 입구 폭이 중요할 수 있습니다."
+    },
+    {
+      "source": "Describe a location anyone can find",
+      "source_sha256": "f3ea640e8ec4d9175559602b760b8bd3179e65a079618ac13e14e77fb76a5e60",
+      "raw_target_sha256": "50c1f2a59e2f51edfdc75590ed65918b0c57104c3c3a1beb4f895601107663cc",
+      "translation": "누구나 찾을 수 있는 위치 설명하기"
+    },
+    {
+      "source": "Use an object and a landmark instead of ambiguous directions. “The inside seam below the left arm when the jacket is worn” identifies a different spot from “the seam on the left of my screen.” Where possible, attach a cropped reference with the area circled and retain a wider view that establishes its location. A close crop of two black seams can be hard to locate on a dark garment. The wide view gives the photographer a way to identify the correct area.",
+      "source_sha256": "85a02fd5e79009d4ea196aa31f630c86693a3ccd3162fffadda5aaa165804aa2",
+      "raw_target_sha256": "3c562f8cf4b3a16e9ded15f0c8bb9ec8fac7856ea81895c6a01f10d214511eb9",
+      "translation": "‘입었을 때 왼쪽 겨드랑이 아래의 안쪽 솔기’와 ‘화면 왼쪽 솔기’는 다릅니다. 가능하면 표시한 부분 사진과 위치가 보이는 전체 사진을 함께 주세요. 검은 솔기 두 줄만 확대하면 어두운 옷에서 다시 찾기 어렵습니다."
+    },
+    {
+      "source": "For a pair or a set, name the component as well. A request for the tongue label can produce a clear image of the right shoe while your question concerns the left. If both need checking, say so explicitly and explain what must be readable. A request for a bag buckle should specify which strap and whether the buckle should be shown open, closed or from the inside. Each detail serves an actual comparison and helps avoid a repetition of the existing overview.",
+      "source_sha256": "85dd80a581e9c7c949ca0a2dc1dac66994523d08ee867f2e0a4ebff53015a96a",
+      "raw_target_sha256": "5a6c45acd753e29d052191baf0d256d3fad641a3a27c38181e98946c41e422da",
+      "translation": "좌우나 세트의 어느 부품인지 지정하세요. ‘설포 라벨’만 요청하면 오른쪽 사진이 선명해도 왼쪽 문제는 남습니다. 둘 다 필요하면 명시하고 읽혀야 할 글자를 설명하세요."
+    },
+    {
+      "source": "Specify how a measurement should be taken",
+      "source_sha256": "354f63f2eb7b551c1ecac9b7fc32a6580f59900676018025d3d379ea0247b51f",
+      "raw_target_sha256": "bb3922fe41f4aa8b1e4bd8ab38e1652647f85b254203747d7881bf64174367f1",
+      "translation": "어떻게 잴지 요청에 포함하기"
+    },
+    {
+      "source": "For a flat garment measurement, state the start point, end point and unit. If you want the width across a sweatshirt under the arms, ask to see the garment laid flat, the tape beginning at one underarm seam and ending at the other, with both ends visible. Avoid asking for a fit verdict from a picture. Compare the resulting measurement with a garment you own taken by the same method, and keep any material stretch or garment shape in mind.",
+      "source_sha256": "a60be411b8b02d5740a3d514373920e0446cd734f65013f4cb8cba0843fcd2b0",
+      "raw_target_sha256": "48e061e7c3b9be86925e06ac742365428f8fd069e3dcdce9f8ddcfcf456dab1d",
+      "translation": "평면 측정의 시작점, 끝점, 단위를 말하세요. 맨투맨은 늘이지 않고 펴서 양 겨드랑이 솔기를 곧게 잰 사진에 양끝이 나오게 합니다. 내 옷도 같은 방법으로 재고 신축성과 형태를 고려하세요. 사진만으로 착용감을 보장할 수는 없습니다."
+    },
+    {
+      "source": "For a small opening, a wide view with both ends of a ruler readable may be more useful than a very tight close-up. A cropped photograph of the number at the far end does not establish the starting point. If a rigid object needs to pass through the opening, distinguish the usable gap from the overall length of the closing hardware. In your note, state which measurement you received. Keep an approximate reading separate from any conclusion about whether the object will fit comfortably.",
+      "source_sha256": "a8410710eecfede469acd3027a55970880f8f2fc3c1e17ca8922462a94207e3a",
+      "raw_target_sha256": "b982e6bfcbf054b6a624c927eaf39d65fd98f5ae7694e2a69e9cb211fb401d06",
+      "translation": "작은 입구도 끝 숫자만 확대하기보다 자 양끝이 한 장에 보이는 편이 좋습니다. 단단한 물건이 통과할지 보려면 지퍼 전체 길이와 실제 빈틈을 구분하세요. 관측한 치수와 수월하게 들어갈지에 대한 판단은 따로 적으세요."
+    },
+    {
+      "source": "Adapt the request to realistic handling",
+      "source_sha256": "c949872cd5fca44faf42e818dac22bea2b9c52779b0917d3e71994cad84c4a30",
+      "raw_target_sha256": "4712cd45a159e95d46ea7d7626f7cb80f574a2f112552e127a25801bc67882db",
+      "translation": "실제로 가능한 취급 범위에 맞추기"
+    },
+    {
+      "source": "Some details can be shown by rotating an item. Others require opening packaging, removing a tag or disassembling a component. Identify what the photo would require and check whether the service can perform that action. If it would affect a seal or condition important to your purchase, stop and decide whether the evidence is worth that change. A request to show a manufacturer's printed seal from the outside may answer part of the question with less handling.",
+      "source_sha256": "50b7c53cdec957944ccfccfa6b0ab216c47eeffad543b4195c1c2d4a8a8bdb1a",
+      "raw_target_sha256": "9aaa554203f35ae0bdb17d98c139486e3feca917e58fe5c005733a9d2064b4fa",
+      "translation": "돌리기만 하면 보이는 곳도 있고 포장 개봉, 태그 제거, 부품 분리가 필요한 곳도 있습니다. 필요한 조작과 서비스 가능 여부를 확인하세요. 봉인이나 품질 상태가 달라진다면 촬영 가치와 비교합니다. 제조사 봉인을 바깥에서 찍는 것으로 충분할 수도 있습니다."
+    },
+    {
+      "source": "If the available service offers a priced photo option, check the displayed scope before using it. Confirm whether you are ordering a single image, a requested angle or another defined service. Avoid assuming that adding five unrelated instructions to one message guarantees five separate results. If you have a fixed budget for inspection, choose the detail with the greatest impact on your decision and specify what would count as a readable answer. Save the confirmation with your order evidence.",
+      "source_sha256": "0ce3c594dee13cef1290cb60e888d475c19ee91d2308fcb8f73e26603431bb9d",
+      "raw_target_sha256": "610a905ea396c6941ffb614478980269d6645801e27e068c02b26c0692292afc",
+      "translation": "유료 촬영이 한 장인지, 지정 각도인지, 다른 서비스인지 범위를 보세요. 한 메시지에 다섯 요청을 써도 다섯 결과가 보장되지는 않습니다. 예산 안에서 결정에 가장 중요한 부분과 답으로 인정할 조건을 정하고 확인서를 보관하세요."
+    },
+    {
+      "source": "Evaluate the result and decide whether to follow up",
+      "source_sha256": "6bf636e88ba539865bd822e4b694a16591d22b700e32b2670aca552f566675e8",
+      "raw_target_sha256": "8d8bab3128ed2574f3799c60f92d45f614d02c00410f8460c97d7972c286d866",
+      "translation": "추가 요청이 필요한지 결정하기"
+    },
+    {
+      "source": "Open the original result rather than judging it from a thumbnail. Check three things: whether it is the correct item, whether it shows the specified area and whether the detail is readable or measurable. If it answers your question, write down the observation and date. A concise note such as “zip opening is visible between both stops, measured across the usable gap” preserves the basis of your decision more clearly than a generic acceptance mark.",
+      "source_sha256": "a29c614768ff41172088eb1e033eb79dc7b73edb276d436373c8a8fe789cd466",
+      "raw_target_sha256": "246b596c1c25ea01591d336e15b304666ce04e0b159e7bd08729a8428544f379",
+      "translation": "원본에서 정확한 상품인지, 요청한 부위인지, 읽거나 잴 수 있는지 확인하세요. 답을 얻었다면 날짜와 ‘두 스토퍼 사이 실제 개구부를 재었음’ 같은 관찰을 적으세요. 단순 승인 표시보다 판단 근거가 선명합니다."
+    },
+    {
+      "source": "If the result misses one requirement, quote that requirement and identify what the image did show. For example, the photograph shows the zipper's total length, while the usable opening between the stops remains hidden. Ask for that specific change only if it still matters to the order. If photography cannot settle the issue, consider the seller's written answer, the available order options or declining the purchase. Repeating the same unanswerable request is unlikely to produce stronger evidence.",
+      "source_sha256": "6dbe2ef6e045e6912ff1988175abe23ef26e82f1e53783b98ed73ec768c3a4b6",
+      "raw_target_sha256": "32c2984b99f442449791687c61f1a9194b6ca4b6db03e6c6d1c1487b9764e83b",
+      "translation": "한 조건만 빠졌다면 원래 요청을 짚고 무엇이 보였는지 설명하세요. 지퍼 전체 길이는 보이지만 스토퍼 사이의 입구는 안 보일 수 있습니다. 결정에 중요할 때만 보완을 요청하고 사진으로 해결이 안 되면 서면 답변, 다른 옵션, 구매 보류를 검토하세요."
     }
   ]
 }
