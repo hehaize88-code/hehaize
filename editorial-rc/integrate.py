@@ -31,7 +31,7 @@ def outputs(values):
 
 def request(path):
     data = read(path)
-    for field in ['source_sha', 'results_sha', 'maltese_sha']:
+    for field in ['source_sha', 'results_sha', 'maltese_sha', 'reviewed_sha']:
         if not re.fullmatch('[0-9a-f]{40}', str(data.get(field, ''))):
             raise ValueError(f'{field} must pin an exact Git commit')
     if not re.fullmatch('[0-9a-f]{64}', str(data.get('maltese_sha256', ''))):
@@ -41,7 +41,7 @@ def request(path):
         raise ValueError('Maltese dictionary must have a repository-relative JSON path')
     if type(data.get('update_draft')) is not bool:
         raise ValueError('update_draft must be a boolean')
-    return {**{key: data[key] for key in ('source_sha', 'results_sha', 'maltese_sha', 'maltese_sha256')},
+    return {**{key: data[key] for key in ('source_sha', 'results_sha', 'maltese_sha', 'maltese_sha256', 'reviewed_sha')},
             'maltese_path': str(mt_path), 'update_draft': str(data['update_draft']).lower()}
 
 
@@ -58,6 +58,27 @@ def allowed_outputs(source):
                 _, output = origin(source, site)
                 paths.add(output.relative_to(source))
     return paths
+
+
+def apply_reviews(workspace, dictionaries, expected, reviewed_sha):
+    review = workspace/'reviews'
+    if run('git','rev-parse','HEAD',cwd=review) != reviewed_sha:
+        raise ValueError('Unexpected reviewed translations commit')
+    report = workspace/'reports/review-overlay.json'
+    tool = review/'reviewed-translations/apply.py'
+    subprocess.run([sys.executable,tool,'--input-packs',Path(__file__).with_name('input'),
+                    '--dictionaries',dictionaries,'--summary',report,'--require-complete'],check=True)
+    receipt = read(report)
+    rows = {(r['site'],r['locale']):r for r in receipt['reviewed']}
+    if receipt['checkOnly'] or receipt['pending'] or rows.keys()!=expected or len(receipt['reviewed'])!=len(expected):
+        raise ValueError('Incomplete review coverage or corrections were not applied')
+    for (site, lang), row in rows.items():
+        effective = read(dictionaries/site/(lang+'.json'))
+        canonical = json.dumps(effective,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()
+        if hashlib.sha256(canonical).hexdigest() != row['effective_sha256']:
+            raise ValueError(f'Reviewed dictionary mismatch: {site}/{lang}')
+    receipt['reviewed_sha'] = reviewed_sha
+    report.write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n')
 
 
 def install(workspace, args):
@@ -96,6 +117,7 @@ def install(workspace, args):
         dest = destination/site/(lang+'.json')
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(path,dest)
+    apply_reviews(workspace, destination, expected, args['reviewed_sha'])
     tool = Path(__file__).with_name('install_editorial_locales.py')
     subprocess.run([sys.executable, tool, '--root',source,'--dictionaries',destination],check=True)
     paths = allowed_outputs(source)

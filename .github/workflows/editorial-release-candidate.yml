@@ -15,6 +15,7 @@ jobs:
     outputs:
       source_sha: ${{ steps.pins.outputs.source_sha }}
       results_sha: ${{ steps.pins.outputs.results_sha }}
+      reviewed_sha: ${{ steps.pins.outputs.reviewed_sha }}
       maltese_sha: ${{ steps.pins.outputs.maltese_sha }}
       maltese_path: ${{ steps.pins.outputs.maltese_path }}
       update_draft: ${{ steps.pins.outputs.update_draft }}
@@ -74,10 +75,16 @@ jobs:
           sparse-checkout: ${{ needs.request.outputs.maltese_path }}
           sparse-checkout-cone-mode: false
           persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.request.outputs.reviewed_sha }}
+          path: reviews
+          sparse-checkout: reviewed-translations
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Validate dictionaries and stage only native source changes
+      - name: Verify raw results, apply all reviewed corrections, then stage native editions
         run: python editorial-rc/integrate.py install editorial-rc/request.json
       - uses: actions/setup-python@v5
         with:
@@ -109,6 +116,7 @@ jobs:
             release-qa/*.json
             candidate-outputs/*/*.log
             candidate-outputs/sizes.json
+            reports/review-overlay.json
             linguistic-report/summary.json
             linguistic-report/samples.jsonl
             linguistic-report/review.jsonl
