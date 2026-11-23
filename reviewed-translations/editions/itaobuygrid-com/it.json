@@ -3,7 +3,7 @@
   "locale": "it",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "26ca169fabcc65d62543b26ef2f63267074a741c370cc3fa703b6baf8e428a80",
-  "effective_dictionary_sha256": "d2a57f2c27bc563c4c130d2979ed98f8d4a1d40949d97cbaaa79527264d96fe2",
+  "effective_dictionary_sha256": "653dc9e8af5cbbcc432e7117c5d716273b2db86f37de8ca53f8e1e3309842b6e",
   "checked_entries": 277,
   "review_scope": "Machine checks over all keys. Inspected the FAQ, source links, ten SEO titles, numerical examples, garments, notebook and product variants, support terminology, long paragraph samples and all flagged rows. The checkout example is corrected across all 24 editions by the source-hashed post-install erratum.",
   "reviewed_flags": [
@@ -177,6 +177,60 @@
       "source_sha256": "5e797c682b81f54f697b2e0a54552740025ff8b9379b1853d171fef8ea624901",
       "raw_target_sha256": "40082191fa8a4ab3340e3b43ccfce29f18a660d429306dca3624b6121c030342",
       "translation": "Ricostruisci il percorso dal prezzo dell’articolo all’addebito sul conto. Parti dal costo dei prodotti e della spedizione nazionale nella valuta originaria. Aggiungi soltanto le spese documentate, poi annota valuta e importo del pagamento. Se la banca effettua un’ulteriore conversione, registrala in una colonna a parte. Non applicare di nuovo il tuo cambio stimato a un importo già espresso nella valuta del conto: la doppia conversione può falsare sensibilmente il costo effettivo."
+    },
+    {
+      "source": "What should a manual note say for a two-tone colourway?",
+      "source_sha256": "68fb8d9f1980bca2e371af6afb6b84b9f67e6016eca06b9fcc02b12ec069f833",
+      "raw_target_sha256": "9c0fcaf3734d990b6c17490e4ac91dc6c92a612511617d1206ab44f543b6ed8c",
+      "translation": "Come descrivo un capo bicolore nella nota d’ordine?"
+    },
+    {
+      "source": "How do I verify what is included in a matching set?",
+      "source_sha256": "69153d089af6ae16710e7e575112b27cecd1eadfcdceab24b757a3229a55a7c9",
+      "raw_target_sha256": "d4d37551dd6afa8fb6adcbfa8083c6031f52b14f48aef19a4e271c5e57dae42a",
+      "translation": "Come verifico quali capi sono inclusi nel completo?"
+    },
+    {
+      "source": "Can I use another buyer's QC measurement for my own order?",
+      "source_sha256": "e95caefa1929438f512015f5af7f1b581f37f755c261410aa32a5b18692667ce",
+      "raw_target_sha256": "795244bc713ff47bbfcfc168ee353f0ae6707bd56cc54d6756b3d29d34e6b282",
+      "translation": "Posso usare per il mio ordine le misure rilevate durante il controllo del capo di un altro acquirente?"
+    },
+    {
+      "source": "Why does a seller tracking number say delivered before I receive anything?",
+      "source_sha256": "ba4f72ff064823b27ccbe0dd669373ee6373d0dac80b44066a031ea9effd1466",
+      "raw_target_sha256": "ff560985d5d53d3c45b92e5916d4bdb7cd5617764d669f6ca56a06d293be1d6b",
+      "translation": "Perché il tracciamento del venditore indica «consegnato» se non ho ancora ricevuto nulla?"
+    },
+    {
+      "source": "Should I confirm a replacement from a thumbnail alone?",
+      "source_sha256": "a681a5e4c8348d344721a6fc438d8b58434eedffa45f9e74feab050a07f58ce9",
+      "raw_target_sha256": "b29ba1f041237257a43a3703dbef787c7bdce78ed3cea314999236b8c8178284",
+      "translation": "Basta una foto in miniatura per approvare un articolo sostitutivo?"
+    },
+    {
+      "source": "Give both colours, their positions on the item and the seller's option text or code. For example, distinguish a black body with white sleeves from a white body with black sleeves.",
+      "source_sha256": "e02c6715cd81cd5f765bab29af89f9a0b822201ff38b4f29949e84f3b1940819",
+      "raw_target_sha256": "454d1b0c8a7012723ca97cdd28b6e791f268153e22d9c8d1ad97eedf7196d339",
+      "translation": "Indica entrambi i colori, dove si trovano sul capo e il nome o codice dell’opzione usato dal venditore. Per esempio, distingui il busto nero con maniche bianche dal busto bianco con maniche nere."
+    },
+    {
+      "source": "Follow the chart definition. Compare a garment chart with a similar garment measured the same way. A body-size chart describes the wearer and may already allow for ease, so it requires a different comparison.",
+      "source_sha256": "3ec7183237adc66df968c96e7b2fe7e35ab51abffbb687f98d85a2db8edd1f7e",
+      "raw_target_sha256": "01e0fd380a4c0392f9b8fc33fd26290a59b9ca17e2a817f57d2e960a08aef01a",
+      "translation": "Verifica che cosa misura la tabella. Confronta le misure del capo finito con quelle di un capo simile misurato allo stesso modo. Una tabella delle misure corporee si riferisce alla persona. Nell’abbinamento con la taglia può essere già compreso il margine di vestibilità."
+    },
+    {
+      "source": "Check the destination of that shipment. Domestic delivery to the warehouse and an international parcel sent to you have different endpoints. Find the outbound parcel reference before looking for the final delivery scan.",
+      "source_sha256": "f84744acf4853436979507b04656657287ab6b3f5361b23116e06dc002678753",
+      "raw_target_sha256": "1ee65077c627fb6857c08449fc2f23cf8f76b11f36eb08fae568a0a6678d64cc",
+      "translation": "Controlla la destinazione dell’invio. La spedizione nazionale del venditore termina al magazzino, mentre il pacco internazionale è diretto a te. Cerca il numero del pacco spedito dal magazzino prima di verificare la consegna finale."
+    },
+    {
+      "source": "List the outbound parcel number, affected purchase reference, last known scan and a short description of the missing or damaged contents. Keep pictures of the label and packing with that record.",
+      "source_sha256": "b621914ddf38a4525d929631f421acd04f8bac487d8c7ee8dd61c3bda95960d4",
+      "raw_target_sha256": "13429d344f636e1964b8c34997e298c8882500b5883631bd36fc198774ead4d0",
+      "translation": "Indica il numero del pacco partito dal magazzino, il riferimento dell’acquisto interessato, l’ultimo evento di tracciamento e una breve descrizione di ciò che manca o è danneggiato. Conserva con la segnalazione le foto dell’etichetta e dell’imballo."
     }
   ]
 }

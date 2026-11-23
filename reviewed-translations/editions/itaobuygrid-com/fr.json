@@ -3,7 +3,7 @@
   "locale": "fr",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "20aba0c7deaca313004c5791c5ecf4b91f1e88bb85ae8ecaba3d1b7dc823bc16",
-  "effective_dictionary_sha256": "844765f5c554cdafdfcbc28b3ef31f392e726623582a428251aae050147ab696",
+  "effective_dictionary_sha256": "9244d888d4bfc8b04689ab49c1f4fc4e347e33e8f7bd543189c7e287b4f9ab11",
   "checked_entries": 277,
   "review_scope": "Machine checks over all keys. Inspected the FAQ, source links, ten SEO titles, numerical examples, garments, notebook and product variants, support terminology, long paragraph samples and all flagged rows. The checkout example is corrected across all 24 editions by the source-hashed post-install erratum.",
   "reviewed_flags": [
@@ -177,6 +177,60 @@
       "source_sha256": "5e797c682b81f54f697b2e0a54552740025ff8b9379b1853d171fef8ea624901",
       "raw_target_sha256": "ca8c610f8863bfab2bf8c3e2b15e622dae251725943543c899b864398a05fb54",
       "translation": "Reconstituez le montant depuis le prix de l’article jusqu’au débit du compte. Partez des marchandises et de la livraison intérieure dans leur devise d’origine, puis ajoutez uniquement les frais indiqués. Notez ensuite la devise et le montant du paiement. Si la banque effectue une autre conversion, consignez-la dans une colonne distincte. N’appliquez pas une seconde fois votre taux estimé à un montant déjà exprimé dans la devise de votre compte. Une double conversion peut fausser sensiblement le coût réel."
+    },
+    {
+      "source": "What should a manual note say for a two-tone colourway?",
+      "source_sha256": "68fb8d9f1980bca2e371af6afb6b84b9f67e6016eca06b9fcc02b12ec069f833",
+      "raw_target_sha256": "7c19005fcea4c830fbaeab59b5631ff2324eae4666f2a0a9f3d22f1630b57062",
+      "translation": "Comment décrire un modèle bicolore dans ma note de commande ?"
+    },
+    {
+      "source": "How do I verify what is included in a matching set?",
+      "source_sha256": "69153d089af6ae16710e7e575112b27cecd1eadfcdceab24b757a3229a55a7c9",
+      "raw_target_sha256": "f1429076d5e459a687e0c38c6b4892c361c992050119249ffaaad320894a1764",
+      "translation": "Comment vérifier quelles pièces sont comprises dans un ensemble assorti ?"
+    },
+    {
+      "source": "Can I use another buyer's QC measurement for my own order?",
+      "source_sha256": "e95caefa1929438f512015f5af7f1b581f37f755c261410aa32a5b18692667ce",
+      "raw_target_sha256": "ff23b4eda8c7d6c132607207709d09dd9f1ce1f55b5df719c3fd8affaa2df727",
+      "translation": "Puis-je me fier aux mesures relevées lors du contrôle de la commande d’un autre acheteur ?"
+    },
+    {
+      "source": "Why does a seller tracking number say delivered before I receive anything?",
+      "source_sha256": "ba4f72ff064823b27ccbe0dd669373ee6373d0dac80b44066a031ea9effd1466",
+      "raw_target_sha256": "1a882673758729f86d06ea4bb08eb3c39267f0d7831009a2f6693d9cf7ff104d",
+      "translation": "Pourquoi le suivi du vendeur indique-t-il « livré » alors que je n’ai encore rien reçu ?"
+    },
+    {
+      "source": "Should I confirm a replacement from a thumbnail alone?",
+      "source_sha256": "a681a5e4c8348d344721a6fc438d8b58434eedffa45f9e74feab050a07f58ce9",
+      "raw_target_sha256": "d93d364801707bf0e532bc17d6fbd551351e95259181e455b83591b203c935b5",
+      "translation": "Une image miniature suffit-elle pour accepter un article de remplacement ?"
+    },
+    {
+      "source": "Give both colours, their positions on the item and the seller's option text or code. For example, distinguish a black body with white sleeves from a white body with black sleeves.",
+      "source_sha256": "e02c6715cd81cd5f765bab29af89f9a0b822201ff38b4f29949e84f3b1940819",
+      "raw_target_sha256": "7be20cbaa464b82406cd5818d37b59de93fd863f2440399194f939305cec0beb",
+      "translation": "Précisez les deux couleurs, leur emplacement sur le vêtement et le libellé ou le code du vendeur. Un vêtement noir à manches blanches se distingue ainsi d’un vêtement blanc à manches noires."
+    },
+    {
+      "source": "Follow the chart definition. Compare a garment chart with a similar garment measured the same way. A body-size chart describes the wearer and may already allow for ease, so it requires a different comparison.",
+      "source_sha256": "3ec7183237adc66df968c96e7b2fe7e35ab51abffbb687f98d85a2db8edd1f7e",
+      "raw_target_sha256": "53190df3c1f867af3bc2e2ec0aa62879109f14d024d7f0e9c309ebb443da5f5b",
+      "translation": "Vérifiez ce que mesure le tableau. Comparez les dimensions du vêtement avec une pièce similaire mesurée de la même façon. Un tableau de mensurations décrit la personne qui portera le vêtement. L’aisance peut déjà avoir été prise en compte dans la correspondance des tailles."
+    },
+    {
+      "source": "Check the destination of that shipment. Domestic delivery to the warehouse and an international parcel sent to you have different endpoints. Find the outbound parcel reference before looking for the final delivery scan.",
+      "source_sha256": "f84744acf4853436979507b04656657287ab6b3f5361b23116e06dc002678753",
+      "raw_target_sha256": "bbdd7e99c9bc0fe4da74410bb55125bb64af813c5c2bd32e3f93b728d3451cd0",
+      "translation": "Regardez la destination du colis. L’envoi intérieur du vendeur arrive à l’entrepôt, tandis que le colis international doit arriver chez vous. Retrouvez d’abord le numéro du colis expédié par l’entrepôt, puis consultez son suivi pour la livraison finale."
+    },
+    {
+      "source": "List the outbound parcel number, affected purchase reference, last known scan and a short description of the missing or damaged contents. Keep pictures of the label and packing with that record.",
+      "source_sha256": "b621914ddf38a4525d929631f421acd04f8bac487d8c7ee8dd61c3bda95960d4",
+      "raw_target_sha256": "9c00448b5e7096279e91ba9e38ce7c2135312fa4686ce8beca625112511282bd",
+      "translation": "Indiquez le numéro du colis expédié par l’entrepôt, la référence de l’achat concerné, le dernier événement de suivi et les articles manquants ou endommagés. Joignez au dossier des photos de l’étiquette et de l’emballage."
     }
   ]
 }

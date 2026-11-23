@@ -3,7 +3,7 @@
   "locale": "da",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "e668ff68b184dcb778bdde522056fd786de15002e28a587504699c433efe587b",
-  "effective_dictionary_sha256": "739fef6dbbbde144bb4a946810091215545cf22f98f0b4454b5572b0056f6a30",
+  "effective_dictionary_sha256": "eb42064c2cb75cbea3ec9df68103828f0125199346523a200aeef7e1d528750a",
   "checked_entries": 277,
   "review_scope": "Machine checks over all keys. Inspected the FAQ, source links, ten SEO titles, numerical examples, garments, notebook and product variants, support terminology, long paragraph samples and all flagged rows. The checkout example is corrected across all 24 editions by the source-hashed post-install erratum.",
   "reviewed_flags": [
@@ -177,6 +177,60 @@
       "source_sha256": "520498aa5960011bc75f68455ebb7bbaa9acd1bae32e9aaef1fa2a05b774ba29",
       "raw_target_sha256": "65d5ff3702f1d779edcb29cc1365c656a4ed31912d01288baa77df4e7935f633",
       "translation": "Sådan beskriver du en tofarvet variant præcist i din iTaoBuy-bestilling"
+    },
+    {
+      "source": "What should a manual note say for a two-tone colourway?",
+      "source_sha256": "68fb8d9f1980bca2e371af6afb6b84b9f67e6016eca06b9fcc02b12ec069f833",
+      "raw_target_sha256": "8f9d8af75553b87a31ca4f2568a7fdeaa771f25fad86e7d7834e66fa985ff88c",
+      "translation": "Hvordan beskriver jeg placeringen af to farver i min bestillingsnote?"
+    },
+    {
+      "source": "How do I verify what is included in a matching set?",
+      "source_sha256": "69153d089af6ae16710e7e575112b27cecd1eadfcdceab24b757a3229a55a7c9",
+      "raw_target_sha256": "6b534589e1dff782f6ae18a2ccd8a0d7856ad8e2788601cff0f7b02bb6036c68",
+      "translation": "Hvordan ser jeg, hvilke dele der følger med et tøjsæt?"
+    },
+    {
+      "source": "Can I use another buyer's QC measurement for my own order?",
+      "source_sha256": "e95caefa1929438f512015f5af7f1b581f37f755c261410aa32a5b18692667ce",
+      "raw_target_sha256": "85888360b3d177132a01567a1d9516d42f7c294d6375552246de8ef188ee6031",
+      "translation": "Kan jeg bruge de mål, lageret har taget for en anden køber, til at vurdere min egen vare?"
+    },
+    {
+      "source": "Why does a seller tracking number say delivered before I receive anything?",
+      "source_sha256": "ba4f72ff064823b27ccbe0dd669373ee6373d0dac80b44066a031ea9effd1466",
+      "raw_target_sha256": "1ca5d950deba5c62635abe9fcff3eac17c58b73535f6743925217b4c7fad6025",
+      "translation": "Hvorfor står der »leveret« i sælgerens pakkesporing, når jeg endnu ikke har modtaget noget?"
+    },
+    {
+      "source": "Should I confirm a replacement from a thumbnail alone?",
+      "source_sha256": "a681a5e4c8348d344721a6fc438d8b58434eedffa45f9e74feab050a07f58ce9",
+      "raw_target_sha256": "07d699e32ae876ac652afe798ad492b5094af9bc57a389c8dcaeca97dbf1a3b1",
+      "translation": "Er et miniaturebillede nok til at godkende en erstatningsvare?"
+    },
+    {
+      "source": "Give both colours, their positions on the item and the seller's option text or code. For example, distinguish a black body with white sleeves from a white body with black sleeves.",
+      "source_sha256": "e02c6715cd81cd5f765bab29af89f9a0b822201ff38b4f29949e84f3b1940819",
+      "raw_target_sha256": "7d9672c7c8f8b89a9160839a58d8921f6afc1876a53c72b2713078597eeed057",
+      "translation": "Skriv begge farver, hvor de sidder på varen, og sælgerens variantnavn eller kode. En sort trøje med hvide ærmer er en anden variant end en hvid trøje med sorte ærmer."
+    },
+    {
+      "source": "Follow the chart definition. Compare a garment chart with a similar garment measured the same way. A body-size chart describes the wearer and may already allow for ease, so it requires a different comparison.",
+      "source_sha256": "3ec7183237adc66df968c96e7b2fe7e35ab51abffbb687f98d85a2db8edd1f7e",
+      "raw_target_sha256": "17f5cbfce9342f24892257a9336768a3a993b834bfdf6a17d1a919c694c372fe",
+      "translation": "Se først, hvad tabellen måler. Sammenlign et færdigt tøjmål med et lignende stykke tøj, som du har målt på samme måde. En tabel med kropsmål beskriver personen, der skal bære tøjet. Der kan allerede være taget højde for bevægelsesvidde ved angivelsen af størrelse."
+    },
+    {
+      "source": "Check the destination of that shipment. Domestic delivery to the warehouse and an international parcel sent to you have different endpoints. Find the outbound parcel reference before looking for the final delivery scan.",
+      "source_sha256": "f84744acf4853436979507b04656657287ab6b3f5361b23116e06dc002678753",
+      "raw_target_sha256": "cfca17d28af5f401e6033458e9d080280ebd29405e6c7104a919568d6891dd1d",
+      "translation": "Se, hvor forsendelsen er på vej hen. Sælgerens indenrigspakke afleveres på lageret, mens den internationale pakke skal hjem til dig. Find sporingsnummeret på pakken fra lageret, før du leder efter den endelige leveringsregistrering."
+    },
+    {
+      "source": "List the outbound parcel number, affected purchase reference, last known scan and a short description of the missing or damaged contents. Keep pictures of the label and packing with that record.",
+      "source_sha256": "b621914ddf38a4525d929631f421acd04f8bac487d8c7ee8dd61c3bda95960d4",
+      "raw_target_sha256": "66174716bae512f6e6d3e9731c72f9e56471252e675cc475a8b20929b5e6cda0",
+      "translation": "Oplys pakkenummeret fra lageret, hvilken bestilling det gælder, den seneste sporingshændelse og kort, hvad der mangler eller er beskadiget. Gem billeder af fragtetiket og emballage sammen med oplysningerne."
     }
   ]
 }

@@ -1,0 +1,116 @@
+{
+  "site": "kakobuysheetgrid-com",
+  "locale": "fi",
+  "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
+  "raw_dictionary_sha256": "a5bc4b33e42184512cacf671c6945b01d5ab60f2f15736e8ae03d46bfc933a43",
+  "effective_dictionary_sha256": "d21afee1250b99681ad2bdb50529711a5a8a4d4ed3ff17527324686375b5ef43",
+  "checked_entries": 317,
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "reviewed_flags": [
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "2ef2f3a66ed21a67deb485f33a7f656ce915ef2cb1c6ee10790dde0b4e5b328a",
+      "raw_target_sha256": "ed5524b4f86206a22fdbc91e3ab68b9145d0779e954074ad78491bf62de800e5",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "repeated translated sentence",
+      "source_sha256": "131b2645a2d582758f779e9dbe1abe0b32459c97802771961b3f32a7c59cbcef",
+      "raw_target_sha256": "8fbe68a5b234858297c21b78c974e4e3b2d30918cf181455c1de534693bb37f6",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "b0c92e9eba09b098ae1aec157a176a4cb535879115a92b3624d827b59db20342",
+      "raw_target_sha256": "0865b49c3c21a855f86cbf89c29c168cf0c089ea335bcb7b4ad8aa414350082a",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "KakoBuy spreadsheet FAQ",
+      "source_sha256": "2ef2f3a66ed21a67deb485f33a7f656ce915ef2cb1c6ee10790dde0b4e5b328a",
+      "raw_target_sha256": "ed5524b4f86206a22fdbc91e3ab68b9145d0779e954074ad78491bf62de800e5",
+      "translation": "Usein kysyttyä KakoBuyn tuotetaulukosta"
+    },
+    {
+      "source": "It means that search produced no usable reference for your query. Check the marketplace, item number and link type. An empty search does not tell you whether an inspection exists in a private order or whether a product is in stock.",
+      "source_sha256": "131b2645a2d582758f779e9dbe1abe0b32459c97802771961b3f32a7c59cbcef",
+      "raw_target_sha256": "8fbe68a5b234858297c21b78c974e4e3b2d30918cf181455c1de534693bb37f6",
+      "translation": "Haulla ei löytynyt annetuilla tiedoilla käyttökelpoista vertailukuvaa. Tarkista markkinapaikka, tuotetunnus ja linkin tyyppi. Tyhjä tulos ei kerro, onko yksityisellä tilauksella tarkastuskuvia tai onko tuotetta varastossa."
+    },
+    {
+      "source": "If a replacement is associated with a new order or warehouse number, connect it to the original using a dated note. Avoid changing the original number to the new one and losing the connection. The original record documents the paid selection and the first unit. The replacement record documents what arrived later. If the replacement is bundled with another item, make sure your note identifies which piece belongs to the exchange and which piece belongs to an unrelated purchase.",
+      "source_sha256": "8234fb29110072eddcdf1aba4ddaa37a13cb33a2288972dfee35f82a25ddb4d9",
+      "raw_target_sha256": "04803631836d6edefad1861d40333ce85838b721880468074625ce37d47339c9",
+      "translation": "Jos vaihtotuote saa uuden tilaus- tai varastotunnuksen, yhdistä se päivätyllä merkinnällä alkuperäiseen tuotteeseen. Älä korvaa vanhaa tunnusta uudella. Alkuperäinen tietue kertoo, minkä vaihtoehdon maksoit ja mitä ensin saapui. Uusi tietue kertoo, mitä sait tilalle. Jos vaihtotuote on samassa paketissa toisen tuotteen kanssa, merkitse erikseen vaihtoon kuuluva tuote ja muuhun ostokseen kuuluva tuote."
+    },
+    {
+      "source": "Suppose an option once called “olive large” now appears as “green B.” The names alone do not establish whether the products match. Compare the seller's current dimensions, materials, quantity and included components with the original record. If the seller displays an internal option code, compare it as additional evidence, keeping the marketplace item identifier separate. A continuing item identifier establishes the listing reference. The seller may still have changed one or more choices inside that listing.",
+      "source_sha256": "70d217db6afb9a0092741c3135aa8b8705a94b5d11ee01a2c0d9c1f2090843f8",
+      "raw_target_sha256": "0cbeca778a114ab38bcd0e4986eebd2d0db518b715e3a0c5f25d754e020444f2",
+      "translation": "Jos vaihtoehdon entinen nimi oli ”oliivinvihreä, suuri” ja uusi nimi on ”vihreä B”, nimet eivät yksin osoita tuotetta samaksi. Vertaa nykyisiä mittoja, materiaaleja, kappalemäärää ja osia aiempaan merkintään. Tarkista myös myyjän oma vaihtoehtokoodi, jos se on näkyvissä. Pidä markkinapaikan tuotetunnus siitä erillään: sama tunnus viittaa samaan ilmoitukseen, vaikka myyjä olisi muuttanut sen vaihtoehtoja."
+    },
+    {
+      "source": "KakoBuy QC lookup: matching a photograph by marketplace and item ID",
+      "source_sha256": "173a739a992ecd8a6d356b89b50944b89164d1098cc950c7fac9e3ba1fbe29a7",
+      "raw_target_sha256": "290ebf63a59680408b479843682431ed986fcff26d0c115ad1d70484585dd3a5",
+      "translation": "KakoBuyn tarkastuskuvan tunnistaminen kauppapaikan ja tuotetunnuksen avulla"
+    },
+    {
+      "source": "KakoBuy item ID versus size and colour: preserving the exact choice",
+      "source_sha256": "b0c92e9eba09b098ae1aec157a176a4cb535879115a92b3624d827b59db20342",
+      "raw_target_sha256": "0865b49c3c21a855f86cbf89c29c168cf0c089ea335bcb7b4ad8aa414350082a",
+      "translation": "Tuotetunnus, koko ja väri KakoBuyssa: kirjaa valittu vaihtoehto tarkasti"
+    },
+    {
+      "source": "How to recover the seller listing behind a KakoBuy link",
+      "source_sha256": "fa6f7133bed0cc0b7ccc996f2ee1a02a56d431512a005e841e92c77b6d465fe6",
+      "raw_target_sha256": "2d44cff0ab29ddeb45f2632802638d23cd121080a1327cedb5695ead5538a88a",
+      "translation": "Alkuperäisen myynti-ilmoituksen löytäminen KakoBuy-linkin takaa"
+    },
+    {
+      "source": "Same photo, different listing: comparing two KakoBuy spreadsheet finds",
+      "source_sha256": "59eaebae8149b4ca75904c016b5b173a08e7ce47c0f535fa8adeae816fe4dfb0",
+      "raw_target_sha256": "3fbb99f3b25a4be78e944d985d2d81a289f3faba8323c912489f5e7dab791083",
+      "translation": "Sama kuva eri ilmoituksissa: kahden KakoBuy-taulukosta löytyneen tuotteen vertailu"
+    },
+    {
+      "source": "How to read a clothing label in KakoBuy warehouse photos",
+      "source_sha256": "8a097b3bd82f4c7aa54feba94799ecfea1a24b8dace7538862bc898bdc1293c7",
+      "raw_target_sha256": "3e0860a9ec202941c698d4909b9428f30aa2d672456143d797900439fef5c668",
+      "translation": "Vaatteen merkintöjen lukeminen KakoBuyn varastokuvista"
+    },
+    {
+      "source": "KakoBuy shoe QC: checking both shoes in the pair",
+      "source_sha256": "59cbcf77fe4300e6d4b06a4b6f8cfe19756df35cb88c99ca1f98b7574f407ef5",
+      "raw_target_sha256": "d326e52a8b72c32620b749a429998856d98009c6064650c60c86821eb8643a7d",
+      "translation": "Kenkien tarkastus KakoBuyssa: tarkista parin molemmat kengät"
+    },
+    {
+      "source": "A missing strap, cable or pouch: documenting a KakoBuy accessory issue",
+      "source_sha256": "a210033930baba6fbadd360cf6f85f6c67443479a6571d4a672e7a20bf70bba3",
+      "raw_target_sha256": "ca5bf87fdcaa982b3303601707066e8ad77a55707ffbba30c1ebf11961fab305",
+      "translation": "Hihna, johto tai kotelo puuttuu: näin kirjaat lisävarusteongelman KakoBuyssa"
+    },
+    {
+      "source": "Writing a useful KakoBuy detail-photo request before shipping",
+      "source_sha256": "cd8bee9c280c2a7037f3f1417bc3793df7dda7b898281c5f45fca31da3a5bf87",
+      "raw_target_sha256": "5ee387cc2f19a976d5339ae08c8e62ff4f3641a0203f4d6223a35b6111d7d697",
+      "translation": "Näin pyydät KakoBuylta hyödyllisen lähikuvan ennen lähetystä"
+    },
+    {
+      "source": "Tracking a KakoBuy exchange from the original purchase to the replacement",
+      "source_sha256": "6393f6a7d4ab9783cb5128f3e2412caa08cfde692d860d39ea0cdf421b05ff12",
+      "raw_target_sha256": "455107ba2ca2557e2524d6ea2e562c5ac384d9ef851e933ba814789a6359d075",
+      "translation": "KakoBuyn tuotevaihdon seuranta alkuperäisestä ostoksesta korvaavaan tuotteeseen"
+    },
+    {
+      "source": "When a seller changes a KakoBuy listing after you save or buy it",
+      "source_sha256": "cb73284ec36da0cbb2899dca06f01d4fbf451b51eae43f8a6a2f1cde5248ff7b",
+      "raw_target_sha256": "8579f7b9ce030c134ed962dcc76795376f4617b5ffa61e55e362457a97e68946",
+      "translation": "Mitä tarkistaa, jos myyjä muuttaa KakoBuy-ilmoitusta tallentamisen tai oston jälkeen?"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "locale": "hr",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "c207c9a4b1ad2923cf3a6a9f7c97d56c2b5750ae398fdc57d986831673baff5c",
-  "effective_dictionary_sha256": "33816c29d6f1cf9a67a6554d5ae997276623b35901e91fc2a13c71c7be4b5d5b",
+  "effective_dictionary_sha256": "caeb50423f67e7dbab2b40bda31127d8132334b611ec785431d2a237e75f08e0",
   "checked_entries": 277,
   "review_scope": "Machine checks over all keys. Inspected the FAQ, source links, ten SEO titles, numerical examples, garments, notebook and product variants, support terminology, long paragraph samples and all flagged rows. The checkout example is corrected across all 24 editions by the source-hashed post-install erratum.",
   "reviewed_flags": [
@@ -164,7 +164,7 @@
       "source": "Give both colours, their positions on the item and the seller's option text or code. For example, distinguish a black body with white sleeves from a white body with black sleeves.",
       "source_sha256": "e02c6715cd81cd5f765bab29af89f9a0b822201ff38b4f29949e84f3b1940819",
       "raw_target_sha256": "9a91798e8ddffdccc76df9c1bd488691e54dd139500787ccb29c705db1165168",
-      "translation": "Navedite obje boje, dijelove odjevnog predmeta na kojima se nalaze i izvorni naziv ili šifru varijante. Primjerice, crni trup s bijelim rukavima razlikuje se od bijelog trupa s crnim rukavima."
+      "translation": "Navedite obje boje, njihov položaj na artiklu te izvorni naziv ili šifru varijante. Primjerice, crna majica s bijelim rukavima razlikuje se od bijele majice s crnim rukavima."
     },
     {
       "source": "Use a simple hypothetical example. A row starts at 38 yuan, a listing offers a separate belt at 38 and the overshirt at 118. Choosing two overshirts gives a merchandise subtotal of 236 yuan before other applicable charges. If you compare that with twice the headline number, the difference is an option difference, not necessarily a price error. Write the original currency alongside the amount. If the checkout also displays a conversion, retain the unconverted subtotal for comparison when the display currency changes.",
@@ -285,6 +285,54 @@
       "source_sha256": "520498aa5960011bc75f68455ebb7bbaa9acd1bae32e9aaef1fa2a05b774ba29",
       "raw_target_sha256": "da1bc09903ea10726dadd6974cb99a4f41172330c149d77dea3535036610efbc",
       "translation": "Kako precizno navesti dvobojnu varijantu u napomeni uz narudžbu na iTaoBuyju"
+    },
+    {
+      "source": "What should a manual note say for a two-tone colourway?",
+      "source_sha256": "68fb8d9f1980bca2e371af6afb6b84b9f67e6016eca06b9fcc02b12ec069f833",
+      "raw_target_sha256": "fb8d1a32b4eeadb8886aa63d74754e0490323d28dcb67aef3505f0badf0bf382",
+      "translation": "Kako u napomeni uz narudžbu opisati raspored dviju boja na artiklu?"
+    },
+    {
+      "source": "How do I verify what is included in a matching set?",
+      "source_sha256": "69153d089af6ae16710e7e575112b27cecd1eadfcdceab24b757a3229a55a7c9",
+      "raw_target_sha256": "03c0929ddb7a6b24452de60c5ff1a2095e27f6197cb32753f5c73f2b89faa39e",
+      "translation": "Kako provjeriti koji su odjevni predmeti uključeni u komplet?"
+    },
+    {
+      "source": "Can I use another buyer's QC measurement for my own order?",
+      "source_sha256": "e95caefa1929438f512015f5af7f1b581f37f755c261410aa32a5b18692667ce",
+      "raw_target_sha256": "cc91cb89b27846c97a301376927255be044f0c69d7cca33c187258c73e102629",
+      "translation": "Mogu li se za svoju narudžbu osloniti na mjere koje je skladište provjerilo za drugoga kupca?"
+    },
+    {
+      "source": "Why does a seller tracking number say delivered before I receive anything?",
+      "source_sha256": "ba4f72ff064823b27ccbe0dd669373ee6373d0dac80b44066a031ea9effd1466",
+      "raw_target_sha256": "429c2790f3368a1056c306d216fb2a2c5e65a2c8fbd9423138c266666b738aa6",
+      "translation": "Zašto u praćenju prodavateljeve pošiljke piše „dostavljeno” ako još ništa nisam primio?"
+    },
+    {
+      "source": "Should I confirm a replacement from a thumbnail alone?",
+      "source_sha256": "a681a5e4c8348d344721a6fc438d8b58434eedffa45f9e74feab050a07f58ce9",
+      "raw_target_sha256": "c7e13ad11b19f3b497eb514e55ba8263bbf8df070712c2fd84cd29d5875749a9",
+      "translation": "Je li umanjena slika dovoljna da odobrim zamjenski proizvod?"
+    },
+    {
+      "source": "Follow the chart definition. Compare a garment chart with a similar garment measured the same way. A body-size chart describes the wearer and may already allow for ease, so it requires a different comparison.",
+      "source_sha256": "3ec7183237adc66df968c96e7b2fe7e35ab51abffbb687f98d85a2db8edd1f7e",
+      "raw_target_sha256": "722703dff47e0d7f047766c6599311ead7bf3bca2c8059d6a7c54adca4352f21",
+      "translation": "Provjerite što tablica mjeri. Dimenzije gotovog odjevnog predmeta usporedite sa sličnim komadom koji ste izmjerili na isti način. Tablica tjelesnih mjera odnosi se na osobu koja će nositi odjeću. Pri preporuci veličine možda je već uračunat prostor za kretanje."
+    },
+    {
+      "source": "Check the destination of that shipment. Domestic delivery to the warehouse and an international parcel sent to you have different endpoints. Find the outbound parcel reference before looking for the final delivery scan.",
+      "source_sha256": "f84744acf4853436979507b04656657287ab6b3f5361b23116e06dc002678753",
+      "raw_target_sha256": "deca747cb1fe5e2f9e8396465817d32213fcb48a56d493f39e4891f342d91ab3",
+      "translation": "Provjerite odredište pošiljke. Domaća dostava od prodavatelja završava u skladištu, a međunarodni paket putuje do vas. Pronađite broj pošiljke koju je skladište otpremilo prije nego potražite potvrdu konačne dostave."
+    },
+    {
+      "source": "List the outbound parcel number, affected purchase reference, last known scan and a short description of the missing or damaged contents. Keep pictures of the label and packing with that record.",
+      "source_sha256": "b621914ddf38a4525d929631f421acd04f8bac487d8c7ee8dd61c3bda95960d4",
+      "raw_target_sha256": "ae4867386c0c2499c3fd1d7a66fa1ee43b65e159f38285a678cb67dbd9c2c4cc",
+      "translation": "Navedite broj paketa koji je skladište otpremilo, oznaku kupnje, posljednji evidentirani događaj u praćenju i kratak opis onoga što nedostaje ili je oštećeno. Uz prijavu sačuvajte fotografije naljepnice i ambalaže."
     }
   ]
 }

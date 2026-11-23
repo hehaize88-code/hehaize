@@ -3,7 +3,7 @@
   "locale": "de",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "68c16ad3ebe69311caf45c63d513eb4ac07f0db04ce5200ef61a825ed964eb63",
-  "effective_dictionary_sha256": "c4fec4c4cf378b6931053ecccaf58883945f99542eac4904f2df91019da66667",
+  "effective_dictionary_sha256": "179f30ddf797d4e55fef8c7089fc1e5a6a3433fd21e9174b7569807dc69bcdd4",
   "checked_entries": 277,
   "review_scope": "Machine checks over all keys. Inspected the FAQ, source links, ten SEO titles, numerical examples, garments, notebook and product variants, support terminology, long paragraph samples and all flagged rows. The checkout example is corrected across all 24 editions by the source-hashed post-install erratum.",
   "reviewed_flags": [],
@@ -194,6 +194,48 @@
       "source_sha256": "5e797c682b81f54f697b2e0a54552740025ff8b9379b1853d171fef8ea624901",
       "raw_target_sha256": "95089c1c4d5c46bd3525f7a80926f04fc42b00eb3af017518ad76742968430c2",
       "translation": "Verfolgen Sie den Weg vom Warenpreis bis zur Kontobuchung. Erfassen Sie Waren und Inlandsversand in der ursprünglichen Währung und ergänzen Sie nur belegte Gebühren. Notieren Sie anschließend Zahlungsbetrag und Zahlungswährung. Rechnet die Bank noch einmal um, gehört das in eine eigene Spalte. Wenden Sie Ihren geschätzten Wechselkurs auf Beträge in Ihrer Kontowährung kein zweites Mal an. Sonst kann der errechnete Betrag erheblich von der tatsächlichen Belastung abweichen."
+    },
+    {
+      "source": "How do I verify what is included in a matching set?",
+      "source_sha256": "69153d089af6ae16710e7e575112b27cecd1eadfcdceab24b757a3229a55a7c9",
+      "raw_target_sha256": "727da1bb31de9fdbe10b88cc125e5b27a2ed34bddece6583c19d5da05aaa9d0f",
+      "translation": "Wie erkenne ich, welche Kleidungsstücke zu einem Set gehören?"
+    },
+    {
+      "source": "Can I use another buyer's QC measurement for my own order?",
+      "source_sha256": "e95caefa1929438f512015f5af7f1b581f37f755c261410aa32a5b18692667ce",
+      "raw_target_sha256": "e83970582efd49a2805dfd092379414ea1a50fcc7e2cc40e872390ab6a75e413",
+      "translation": "Kann ich die bei der Warenprüfung ermittelten Maße eines anderen Käufers auf meine Bestellung übertragen?"
+    },
+    {
+      "source": "Why does a seller tracking number say delivered before I receive anything?",
+      "source_sha256": "ba4f72ff064823b27ccbe0dd669373ee6373d0dac80b44066a031ea9effd1466",
+      "raw_target_sha256": "0d9a32ea9b8b3bd9e365477cf7275f2aff2b2334e3bf9476139d9c71bbb812bf",
+      "translation": "Warum meldet die Sendungsverfolgung des Verkäufers eine Zustellung, obwohl bei mir noch nichts angekommen ist?"
+    },
+    {
+      "source": "Give both colours, their positions on the item and the seller's option text or code. For example, distinguish a black body with white sleeves from a white body with black sleeves.",
+      "source_sha256": "e02c6715cd81cd5f765bab29af89f9a0b822201ff38b4f29949e84f3b1940819",
+      "raw_target_sha256": "2d81b9caabf6e9466726b8cd2448d8e3e0b2ac52a7dbf231f6faa7e7002fac78",
+      "translation": "Nennen Sie beide Farben, ihre Positionen am Kleidungsstück und die Bezeichnung oder den Code des Verkäufers. Ein schwarzes Oberteil mit weißen Ärmeln ist eine andere Variante als ein weißes Oberteil mit schwarzen Ärmeln."
+    },
+    {
+      "source": "Follow the chart definition. Compare a garment chart with a similar garment measured the same way. A body-size chart describes the wearer and may already allow for ease, so it requires a different comparison.",
+      "source_sha256": "3ec7183237adc66df968c96e7b2fe7e35ab51abffbb687f98d85a2db8edd1f7e",
+      "raw_target_sha256": "ea79f940fce7166bd63d48f01e9748a73ee1346f60075472035f69cd2767ad83",
+      "translation": "Lesen Sie zuerst, was die Tabelle misst. Vergleichen Sie die Maße des fertigen Kleidungsstücks mit einem ähnlichen Teil, das Sie auf dieselbe Weise gemessen haben. Eine Körpermaßtabelle bezieht sich auf die tragende Person. Die nötige Bewegungszugabe kann bei der Größenzuordnung bereits berücksichtigt sein."
+    },
+    {
+      "source": "Check the destination of that shipment. Domestic delivery to the warehouse and an international parcel sent to you have different endpoints. Find the outbound parcel reference before looking for the final delivery scan.",
+      "source_sha256": "f84744acf4853436979507b04656657287ab6b3f5361b23116e06dc002678753",
+      "raw_target_sha256": "a94d0c38535937c30b1395f18af2d2cbf6b7635e92f7e6bf6737b7643a6690d7",
+      "translation": "Prüfen Sie das Ziel dieser Sendung. Die Inlandssendung des Verkäufers endet am Lager, Ihr internationales Paket an Ihrer Lieferadresse. Suchen Sie zunächst die Nummer des ausgehenden Pakets, bevor Sie nach dem Scan für die Zustellung bei Ihnen suchen."
+    },
+    {
+      "source": "List the outbound parcel number, affected purchase reference, last known scan and a short description of the missing or damaged contents. Keep pictures of the label and packing with that record.",
+      "source_sha256": "b621914ddf38a4525d929631f421acd04f8bac487d8c7ee8dd61c3bda95960d4",
+      "raw_target_sha256": "6fdf4918902a6237bd1c5ada78072b66392331582770b5f9d1e54224b3360f58",
+      "translation": "Geben Sie die Nummer des ausgehenden Pakets, die betroffene Bestellposition, den letzten bekannten Sendungsstatus und eine kurze Beschreibung des fehlenden oder beschädigten Inhalts an. Bewahren Sie Fotos vom Versandetikett und von der Verpackung bei diesen Angaben auf."
     }
   ]
 }
