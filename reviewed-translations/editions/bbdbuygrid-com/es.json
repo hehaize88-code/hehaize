@@ -3,9 +3,9 @@
   "locale": "es",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "28f5d991c3d04c70e1805a540d786c0a766e15f6f98c0b0d3cbc269aa1942947",
-  "effective_dictionary_sha256": "a3c80e844b143647c79d18a1eed0dbeb759a617ce795002d19a449c84760a8d2",
+  "effective_dictionary_sha256": "884eba0ee3bac419e87f38f49f2051c0f52a77d84f741940110608b9ac023555",
   "checked_entries": 324,
-  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
+  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -135,6 +135,12 @@
       "source_sha256": "1ece4a807f600b2794d8f6056fc94f6f6e8525e98ede74c254a823b176c76aa7",
       "raw_target_sha256": "eabde89c13e4be8ebbc32299e03863346706e6820cc650eb59013a6a4b17f554",
       "translation": "Para las formas irregulares, use la regla que la ruta realmente pide. Un artículo cilíndrico embalado en una caja de cartón rectangular tiene medidas exteriores rectangulares en el envío. Medir el volumen del artículo curvo con una fórmula geométrica describe el objeto, pero puede tener poca relación con lo que la calculadora de envío acepta. Del mismo modo, dos paquetes atados entre sí pueden crear una envoltura externa diferente de las dos consideradas por separado. Si la forma final o el tratamiento del portador es incierto, solicite las medidas empacadas y la orientación de la ruta actual antes de hacer un compromiso. Anota si un resultado es una estimación aproximada independiente, una cotización mostrada o el cargo final; esos son tres números útiles con diferentes niveles de certeza."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "008bca89f690d84e7ce45828301b7cd3beb7a417db6b3964611cbd8019844f02",
+      "translation": "Imagina un pedido de tres cuadernos a 18 cada uno, con un gasto de envío nacional de 6. El total inicial es 60. Más tarde, el vendedor avisa de que solo quedan dos cuadernos del color pedido y ofrece un nuevo total de 46. A primera vista parece más barato. Sin embargo, dos cuadernos a 20 cada uno más 6 de envío también suman 46. El precio por unidad ha subido y recibirías menos unidades. Si comparas solo los totales, pasas por alto ambos cambios."
     }
   ]
 }

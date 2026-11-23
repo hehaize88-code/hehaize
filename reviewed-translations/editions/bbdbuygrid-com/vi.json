@@ -1,0 +1,200 @@
+{
+  "site": "bbdbuygrid-com",
+  "locale": "vi",
+  "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
+  "raw_dictionary_sha256": "048ff52d6ab53002212a2fbcd5d18a84b02aab1f4eeb83fe8951248ced3d35d1",
+  "effective_dictionary_sha256": "817fa56f5afe0038d891706c8138eab7d4570db1ccd5bfb7d40721e7390499bf",
+  "checked_entries": 324,
+  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology.",
+  "reviewed_flags": [
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "a2694b46ba3f88beffce706125fcfdcb06ca44c5f75666ef3a824a9c3b7658c5",
+      "raw_target_sha256": "cacbce3c1d5bb9a80dcd03d36e9d7054331ee333b02f2b2ca07c500750a3623b",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "9531cb63d77c6fabee1375845ccd1b96751ca329dc6f7782a93957110c0cf55d",
+      "raw_target_sha256": "68f743cbd2c05ba1c5f856055aad1c19b233653b0f5b5b910b419d2ed9c91ec8",
+      "resolution": "The extra digit is the exponent of cubic centimetres, as specified in the source. Verified numerical values."
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "6088c544ef6096eceeba981d8dc83b7ffcbb1f5d1b0a6e7a53e8f1515eb7e112",
+      "raw_target_sha256": "84d140843e45058f84684217dbde6fdf9ff1ccdf935f039fe022cc2c380f5c2a",
+      "resolution": "The extra digit is the exponent of cubic centimetres, as specified in the source. Verified numerical values."
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "2c3e025e522359927de3321c25acaf0f3cbfa2c3003b8ffd4aaacc4a144c714e",
+      "raw_target_sha256": "687bb5d59302b55a79ab24abaec353e50db2a64b3d7e66d8e658da08f82360b8",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "034a3a5ae73a2dd3198c5e051b15a34026001a77e501e9e6a6fd86e649a3c3a0",
+      "raw_target_sha256": "30c022e42f33c8e08930442f28048f61a915d2240a2427f67bf15faf23fee2a0",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "034a3a5ae73a2dd3198c5e051b15a34026001a77e501e9e6a6fd86e649a3c3a0",
+      "raw_target_sha256": "30c022e42f33c8e08930442f28048f61a915d2240a2427f67bf15faf23fee2a0",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "9a0631e1ed66d4191a8bb61140b87316ce395e7cfa86088b466dee824524711f",
+      "raw_target_sha256": "b5f6ea4ce44e550e7c458c501db7c4bea68025be4d21a2a1dd8bb87fb1fd3e35",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "How to read a BBDBuy payment record when an order has several charges",
+      "source_sha256": "2e683e05a22119f9c40cec68118679f768658e9f230c4d89ffbb9208a29c5a96",
+      "raw_target_sha256": "e4446cb33b84b1e8c3e48d2ca4659c64d19e6a4287406c231f52d2725bffcbd1",
+      "translation": "Cách đọc chi tiết thanh toán trên BBDBuy khi một đơn hàng có nhiều khoản phí"
+    },
+    {
+      "source": "BBDBuy purchase or parcel forwarding? Choose the right workflow for your seller order",
+      "source_sha256": "365c8efdcc8f3c14e3c09dc0448104ed063b55d009cca4a0935c5a0f946b6b1d",
+      "raw_target_sha256": "76eaf89241e3708d398845619927a0a1707e86d2692a794c730a7751c42ab874",
+      "translation": "Mua hộ qua BBDBuy hay chỉ gửi tiếp kiện hàng đã mua?"
+    },
+    {
+      "source": "BBDBuy multipack quantities: count what the seller will actually send",
+      "source_sha256": "3f25642571da3f03a9cffe24d44654d6faf4b48928f4a3655ead9735f7a2cb77",
+      "raw_target_sha256": "33934e56e384bd0e55f70e948704f670d08e16b5466529755ebdc9741af1d709",
+      "translation": "Mua theo bộ trên BBDBuy: cách tính số sản phẩm người bán sẽ gửi"
+    },
+    {
+      "source": "Before accepting a BBDBuy seller price change, reconstruct the two offers",
+      "source_sha256": "e2791753b1fe688b2829fb8e5debc640859aa8ec80c01fdf9c6e793aae303957",
+      "raw_target_sha256": "eab1005c4f25922bd70f710d0a60274f195ce0ad57a30d922ad82767f1b2a7c4",
+      "translation": "Người bán đổi giá trên BBDBuy: cách đối chiếu báo giá cũ và mới"
+    },
+    {
+      "source": "A BBDBuy warehouse arrival notice: how to tell which parcel arrived",
+      "source_sha256": "80d04839358e00ea253d3c9cfb0f5a8a86927e4130adc169b247f90edea7352b",
+      "raw_target_sha256": "f9babf7ee666f4ccb3292626d3d97d7d6ec7c5ea6b09c9436f8b6e739bd23f63",
+      "translation": "Thông báo nhập kho BBDBuy: cách xác định kiện hàng vừa đến"
+    },
+    {
+      "source": "Match BBDBuy warehouse photos to the right item, colour and size",
+      "source_sha256": "9aca0fdddaddb22cb515f532d9731d5ac64e3ff054eedcb2f2aee067622a8490",
+      "raw_target_sha256": "59866c4524434c21b37de29560d555258756183577ca81561f942be3208fabed",
+      "translation": "Cách đối chiếu sản phẩm, màu sắc và kích cỡ qua ảnh kho BBDBuy"
+    },
+    {
+      "source": "Keeping or removing a shoebox with BBDBuy: compare two packing plans",
+      "source_sha256": "cf39d98c7607a4a4846533c2aaaccc5d81c2dbe8c7f38fa40772267d2cfb87f0",
+      "raw_target_sha256": "e62b09945625cb4313b69588e3df56560ae97563da7df817882e9e18eb410e9b",
+      "translation": "Giữ hay bỏ hộp giày? So sánh hai cách đóng gói tại BBDBuy"
+    },
+    {
+      "source": "Enter parcel dimensions correctly in a BBDBuy shipping estimate",
+      "source_sha256": "5eb842601780f729c12dbc6985b5fccdffe6c9d91d363bc669a4648e85503d61",
+      "raw_target_sha256": "f6807716d58c7f4d7edf70b4a91ebedb7c30d5514b31e7d18781e00d45bb3c45",
+      "translation": "Cách nhập kích thước kiện hàng để ước tính phí vận chuyển trên BBDBuy"
+    },
+    {
+      "source": "Comparing BBDBuy shipping lines for one parcel without mixing quotes",
+      "source_sha256": "d15393b64e300b311b6b060fd6b3e2ec6f4027fb3dc965ff0ed1c6d10cf0d8f3",
+      "raw_target_sha256": "1e209b6982fa13dd66169c273bb5e40e5faf8e698e889d2e7a139fdf92f21326",
+      "translation": "Cách so sánh các phương án vận chuyển BBDBuy cho cùng một kiện hàng"
+    },
+    {
+      "source": "Prepare a BBDBuy refund enquiry with an item, amount and destination",
+      "source_sha256": "b824579d8556fb3cc1934d8524c8af7bb8f82b619276d01970c192de0be6ec59",
+      "raw_target_sha256": "40a847211bae971385ee9479afb43b52ad9e8541c683cf6432c26e482f1b336a",
+      "translation": "Hỏi BBDBuy về khoản hoàn tiền: ghi rõ sản phẩm, số tiền và nơi nhận tiền hoàn"
+    },
+    {
+      "source": "BBDBuy official buying guide",
+      "source_sha256": "5faa3384a7fa1032e262907231c2faf9b28ff8aa68b897c1a199f6ea75237368",
+      "raw_target_sha256": "5faa3384a7fa1032e262907231c2faf9b28ff8aa68b897c1a199f6ea75237368",
+      "translation": "Hướng dẫn mua hàng chính thức của BBDBuy"
+    },
+    {
+      "source": "BBDBuy returns and support guide",
+      "source_sha256": "cba693964307dd403996580941e2dd2635d28093e7976adee3180d3ff00d65ff",
+      "raw_target_sha256": "cba693964307dd403996580941e2dd2635d28093e7976adee3180d3ff00d65ff",
+      "translation": "Hướng dẫn đổi trả và hỗ trợ của BBDBuy"
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "2e139dbaa5447b4d52ff31f87c5c13b6ee6d60f6cae962de163b34ccc3dc619a",
+      "translation": "Giả sử bạn đặt ba cuốn sổ tay, giá 18 mỗi cuốn, còn phí giao hàng nội địa là 6. Tổng ban đầu là 60. Sau đó người bán báo chỉ còn hai cuốn đúng màu bạn chọn và đưa ra tổng mới là 46. Thoạt nhìn giá có vẻ thấp hơn. Tuy nhiên, hai cuốn với đơn giá 20, cộng 6 tiền giao hàng, cũng thành 46. Đơn giá đã tăng và bạn nhận được ít sản phẩm hơn. Nếu chỉ so hai tổng tiền, bạn sẽ bỏ qua cả hai thay đổi."
+    },
+    {
+      "source": "Take an illustrative order for two medium work shirts and a separate order for a cap. Assume the confirmation lists the shirts at 75 each and a single domestic delivery charge of 12. The purchase subtotal is 162. The cap costs 38 with domestic delivery included, bringing the amount paid for the two purchases to 200 in the same currency. At this point both purchase records can be closed as paid even though there is no figure yet for the journey from the warehouse to your home.",
+      "source_sha256": "21cd8ec9cdc033be40fa29a6b7f3fc5473879babedda43400b722373cecd0db5",
+      "raw_target_sha256": "87a1c1d16ebe1e6d83fe405a8c16ca251b85ba668e9e57ef4d3d308a82decc68",
+      "translation": "Giả sử bạn đặt hai áo sơ mi đi làm cỡ M trong một đơn và đặt riêng một chiếc mũ. Xác nhận đơn hàng ghi giá mỗi áo là 75 và phí giao hàng nội địa cho cả đơn là 12. Tổng tiền đơn áo là 162. Chiếc mũ giá 38, đã gồm giao hàng nội địa, nên số tiền đã trả cho hai đơn là 200, tính cùng một loại tiền. Lúc này có thể ghi nhận cả hai đơn đã thanh toán, dù bạn vẫn chưa biết phí vận chuyển từ kho về nhà."
+    },
+    {
+      "source": "If you want to compare the cost of the cap with a local alternative, you still need to decide how to allocate the shared parcel cost. An equal split attributes 25 to the cap. A split by measured weight might attribute much less. Neither division appears on the carrier invoice unless the invoice actually itemizes freight per piece. Keep a column labelled personal allocation. It allows another person to understand how you reached the comparison without mistaking your method for a charge imposed by BBDBuy.",
+      "source_sha256": "6d74cd0af2705ef2674d0803d5cd5455ce671597134771f5fe0a3d679ea9df53",
+      "raw_target_sha256": "787f92a6fffaf968bb2aeb03411be1b95cf917b92e9921dfb981843f6ca0f5f2",
+      "translation": "Muốn so sánh chi phí mua chiếc mũ với giá một chiếc mũ ở gần nhà, bạn cần xác định phần phí vận chuyển chung được tính cho chiếc mũ. Nếu chia đều, chiếc mũ chịu 25. Nếu chia theo cân nặng thực tế thì phần này có thể thấp hơn nhiều. Hai cách chia đều do người mua tự chọn, trừ khi hóa đơn của hãng vận chuyển ghi phí theo từng món. Hãy dành một cột riêng cho cách phân bổ của bạn để người khác hiểu phép so sánh và tránh nhầm đây là khoản phí do BBDBuy quy định."
+    },
+    {
+      "source": "Work through an illustrative shipment of a folded garment and a rigid storage basket. The garment package might weigh 1.1 kilograms with dimensions of 30 by 24 by 10 centimetres. The basket might weigh only 0.8 kilograms while measuring 42 by 32 by 28 centimetres after protection. Keep all three dimensions and the weight with each physical carton. The lighter basket occupies 37,632 cubic centimetres, much more than the garment's 7,200. Comparing the two scale readings alone misses that difference.",
+      "source_sha256": "034a3a5ae73a2dd3198c5e051b15a34026001a77e501e9e6a6fd86e649a3c3a0",
+      "raw_target_sha256": "30c022e42f33c8e08930442f28048f61a915d2240a2427f67bf15faf23fee2a0",
+      "translation": "Hãy xét ví dụ gửi một món quần áo đã gấp cùng một chiếc giỏ cứng. Kiện quần áo có thể nặng 1,1 kg và đo được 30 × 24 × 10 cm. Kiện giỏ chỉ nặng 0,8 kg nhưng sau khi bọc bảo vệ lại có kích thước 42 × 32 × 28 cm. Với mỗi kiện, ghi đủ ba kích thước và cân nặng. Dù nhẹ hơn, kiện giỏ chiếm 37 632 cm³, lớn hơn nhiều so với 7 200 cm³ của kiện quần áo. Chỉ nhìn vào hai số cân sẽ bỏ qua sự chênh lệch này."
+    },
+    {
+      "source": "Consider a hypothetical box measuring 36 by 24 by 14 centimetres. Its volume is 12,096 cubic centimetres. A hypothetical replacement package measuring 34 by 22 by 13 is 9,724 cubic centimetres. These are examples for checking arithmetic, not dimensions for your shipment. The difference tells you about volume, not the amount a carrier will charge.",
+      "source_sha256": "a2694b46ba3f88beffce706125fcfdcb06ca44c5f75666ef3a824a9c3b7658c5",
+      "raw_target_sha256": "cacbce3c1d5bb9a80dcd03d36e9d7054331ee333b02f2b2ca07c500750a3623b",
+      "translation": "Xem xét một hộp giả định đo 36 x 24 x 14 cm. Thể tích của nó là 12.096 centimét khối. Một gói thay thế giả định đo 34 x 22 x 13 là 9.724 cm3. Đây là ví dụ để kiểm tra số học, không phải kích thước của hàng hóa. Sự khác biệt cho bạn biết về thể tích, không phải là số tiền một nhà vận chuyển sẽ thu."
+    },
+    {
+      "source": "Imagine the shoe box shares a larger carton with two folded jackets. The outer carton measures 50 by 35 by 25 centimetres with the shoe box in place. Removing the box lets the jackets settle into the freed space, but the outer carton remains 50 by 35 by 25. In that scenario exterior volume has not changed. There may be a small reduction in scale weight, yet the freight quote can remain in the same billing band. The volume of the discarded box alone cannot tell you what changed on the carrier side.",
+      "source_sha256": "061bdab933d40ac865d096fa0a152a8c0b3858b0c3e53c477763a05fb418b4c3",
+      "raw_target_sha256": "a210be5b3998ac44126d5956ffd6a99095d9f66766274eb8c48c265261e8f6d9",
+      "translation": "Tưởng tượng cái hộp giày chia sẻ một cái hộp lớn hơn với hai cái áo khoác gấp. Hộp bên ngoài có kích thước 50 x 35 x 25 cm với hộp giày ở vị trí. Việc gỡ bỏ hộp cho phép các áo khoác được đặt vào không gian được giải phóng, nhưng hộp bên ngoài vẫn là 50 x 35 x 25. Trong kịch bản đó, thể tích bên ngoài không thay đổi. Có thể có một sự giảm sút nhỏ trong trọng lượng quy mô, tuy nhiên, báo giá vận chuyển có thể vẫn ở trong cùng một dải biên lai. Chỉ riêng thể tích của hộp đã bỏ không thể cho bạn biết điều gì đã thay đổi trong cách tính phí của hãng vận chuyển."
+    },
+    {
+      "source": "Compare the original and revised measurement line by line. Increasing one dimension from 20 to 24 centimetres with the other two held at 40 and 30 raises volume from 24,000 to 28,800 cubic centimetres. The percentage change in volume does not guarantee the same percentage change in price.",
+      "source_sha256": "2c3e025e522359927de3321c25acaf0f3cbfa2c3003b8ffd4aaacc4a144c714e",
+      "raw_target_sha256": "687bb5d59302b55a79ab24abaec353e50db2a64b3d7e66d8e658da08f82360b8",
+      "translation": "So sánh đo lường gốc và sửa đổi theo hàng. Tăng một chiều từ 20 đến 24 cm với hai chiều còn lại ở 40 và 30 sẽ tăng thể tích từ 24.000 đến 28.800 cm3. Sự thay đổi tỷ lệ phần trăm về thể tích không đảm bảo thay đổi tỷ lệ phần trăm tương tự trong giá."
+    },
+    {
+      "source": "Suppose you want to ship them together. Adding the two volumes gives 44,832 cubic centimetres, but this sum does not tell you the exterior dimensions of a combined box. The garment might fit inside the basket if the packing method allows it, or the basket might need to remain empty to avoid pressure on its sides. Padding and the geometry of the items influence the final arrangement. Obtain a complete exterior measurement or use a clearly labelled estimate for the proposed combined carton.",
+      "source_sha256": "9a0631e1ed66d4191a8bb61140b87316ce395e7cfa86088b466dee824524711f",
+      "raw_target_sha256": "b5f6ea4ce44e550e7c458c501db7c4bea68025be4d21a2a1dd8bb87fb1fd3e35",
+      "translation": "Giả sử anh muốn gửi chúng cùng lúc. Cộng thể tích của hai kiện cho ra 44.832 cm3, nhưng tổng này không cho bạn biết kích thước bên ngoài của một hộp kết hợp. Quần áo có thể phù hợp bên trong giỏ nếu phương pháp đóng gói cho phép, hoặc giỏ có thể cần phải giữ trống để tránh áp lực ở hai bên. Lớp đệm và hình dạng của đồ vật ảnh hưởng đến sắp xếp cuối cùng. Lấy một phép đo bên ngoài hoàn chỉnh hoặc sử dụng một ước tính có nhãn rõ ràng cho hộp gộp được đề xuất."
+    },
+    {
+      "source": "Photographing all three sides of a carton can help when you need to reconcile two measurements. Label length, width and height consistently in your notes. Swapping two sides leaves volume unchanged but may matter when a particular route states a separate maximum for its longest side.",
+      "source_sha256": "1b61b85df62e458f549f7a16c339551419c0fc4764d1c054a8a451540afeb500",
+      "raw_target_sha256": "e2561b73a1d53b0aa12e701cef7cebebc677e85c19097bca1ccb048d43eaf189",
+      "translation": "Chụp ảnh cả ba mặt của một hộp giấy có thể giúp khi bạn cần hòa giải hai phép đo. Đánh dấu chiều dài, chiều rộng và chiều cao trong ghi chú của bạn. Trao đổi hai mặt không làm thay đổi thể tích nhưng có thể quan trọng khi một tuyến đường cụ thể nói một tối đa riêng biệt cho mặt dài nhất của nó."
+    },
+    {
+      "source": "For Lines Two and Three, consider other costs or services you intend to select. If Line Two charges 5 for the desired feature, its comparable total becomes 43. If Line Three includes that feature at 41, it is now lower for your chosen service level. Another buyer who does not need the feature could reasonably prefer Line Two at 38. There is no contradiction because the buyers are pricing different requirements. The comparison should make that difference explicit.",
+      "source_sha256": "ceed2cd91c5115c79cbe57026abfe7036799f01c118ec1c51c3bf4ef66319661",
+      "raw_target_sha256": "6b6bbcf8898b9e6a8f0bd370af4841034f8b31e05bddcbf87d44dc137aedcd21",
+      "translation": "Khi so sánh phương án vận chuyển thứ hai và thứ ba, hãy cộng cả những dịch vụ bạn định chọn. Nếu phương án thứ hai tính thêm 5 cho dịch vụ bạn cần thì tổng phí sẽ là 43. Nếu phương án thứ ba đã bao gồm dịch vụ đó trong mức 41 thì nó rẻ hơn cho nhu cầu của bạn. Người không cần dịch vụ bổ sung vẫn có thể chọn phương án thứ hai với giá 38. Hai lựa chọn đều hợp lý vì nhu cầu khác nhau. Hãy ghi rõ điều đó trong bảng so sánh."
+    },
+    {
+      "source": "The reverse error is registering a forwarding notice for something the seller has never sold or dispatched. An incoming notice cannot answer who will pay for the item or choose its option. Check for a seller payment confirmation and domestic tracking. If both are absent because you have only a catalogue link, decide whether you intend to purchase it yourself or submit an agent purchase. Do not invent a courier number merely to complete a form that does not match your situation.",
+      "source_sha256": "6a75da0247e9cb2e92971536a03a2b9a28c19c237a9a0234f218d1f4c5d16503",
+      "raw_target_sha256": "2c21838fd7ac78329abe2713fc237757092a07fb7be7259cd9e8b1ee348f4fe9",
+      "translation": "Sai lầm theo chiều ngược lại là khai báo một kiện hàng gửi tiếp khi người bán chưa bán hoặc chưa gửi món hàng đó. Phiếu báo hàng sắp đến kho không quyết định ai sẽ thanh toán hay chọn phiên bản sản phẩm. Hãy kiểm tra xác nhận thanh toán của người bán và thông tin theo dõi vận chuyển nội địa. Nếu chưa có cả hai vì bạn mới chỉ có liên kết sản phẩm, hãy quyết định tự mua hay nhờ dịch vụ mua hộ. Đừng tự đặt mã vận đơn chỉ để điền một biểu mẫu không phù hợp với giao dịch."
+    },
+    {
+      "source": "For a proposed credit, confirm which unit the amount covers. Save the order, received count, seller reply and refund destination. This is particularly important if a replacement will come in another delivery: keep its tracking reference separate until you can close the original count.",
+      "source_sha256": "fad99593e82bb215977fe0868003993378dc379bc224a58b1c37bc7b40b035f0",
+      "raw_target_sha256": "6534bd1d5776290bf40f45c63f2481ca0751152a49c449af487f9aee189b2f91",
+      "translation": "Nếu người bán đề nghị hoàn một khoản tiền, hãy xác nhận khoản đó dành cho món nào. Lưu lại đơn hàng, số lượng thực nhận, phản hồi của người bán và nơi nhận tiền hoàn. Nếu hàng thay thế được gửi trong một kiện khác, hãy ghi riêng mã vận đơn mới cho đến khi đối chiếu xong số lượng của đơn ban đầu."
+    }
+  ]
+}

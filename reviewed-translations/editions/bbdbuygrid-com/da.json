@@ -3,9 +3,9 @@
   "locale": "da",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "595b8bc70d31b40c8113edeedd17a0034f667fc7af3e4aa94cf7376cc63fafd3",
-  "effective_dictionary_sha256": "48d15a031b0a0820e1f9cf9e23deea68cfd768d78d39471740a31cb37228de5f",
+  "effective_dictionary_sha256": "042a051c327d4834b20063f57438982ac0e14853bd99449e8152b9ed58e6a472",
   "checked_entries": 324,
-  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
+  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -129,6 +129,12 @@
       "source_sha256": "17c8e613676ec8768a58f1d66c1e750362c538222b5fba239c361c3b655a062b",
       "raw_target_sha256": "b7f766409ba7c4cf542eb000b9ca6ff860b02a81e52f93095e4ff892b667bdf0",
       "translation": "Nu ændre en indgang bevidst. Hvis pakken er lettere efter ompakning, skal du kontrollere, om begge linjer bruger den lavere faktiske vægt, eller om der stadig er dimensioneret fakturering eller et minimumsgebyr. Indhent begge pristilbud igen. En besparelse på den ene rute overføres ikke automatisk til den anden. Når kun den ene forbliver berettiget, skal du notere, hvorfor den anden forsvandt. Dette kan forklare resultatet, hvis support senere gengiver det ved hjælp af de gamle dimensioner."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "581c82ec0384279354eb6db10d7aacdb92e4315ea9968dff4961810448141ad5",
+      "translation": "Forestil dig en ordre på tre notesbøger til 18 pr. stk. Fragten til lageret koster 6, så det oprindelige beløb er 60. Senere oplyser sælgeren, at der kun er to notesbøger tilbage i den ønskede farve, og at den nye pris i alt er 46. Ved første øjekast er tilbuddet billigere. Men to notesbøger til 20 pr. stk. plus 6 i fragt giver netop 46. Prisen pr. stk. er steget, og du får færre varer. Begge ændringer forsvinder, hvis du kun ser på totalbeløbet."
     }
   ]
 }

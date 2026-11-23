@@ -3,9 +3,9 @@
   "locale": "nl",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "9c2f76c1672c0a3f6420ad5e8dbe568a1ccbdb8a84ed64fccb6cb51a1f762b08",
-  "effective_dictionary_sha256": "805bc5a0988a1b07ee24cfb4622cc91021d48fca677d179413b6bef9caf9286d",
+  "effective_dictionary_sha256": "6ca95aca4330195fa1b8be0c60aaeaa2750974b486ad130e11a4804914756d12",
   "checked_entries": 324,
-  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
+  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -111,6 +111,12 @@
       "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
       "raw_target_sha256": "ad5f27a0c99b7dcc48641f7fa9e19c9c43cf1e92c0ed7e807c867740a6939691",
       "translation": "Gebruik onafhankelijke rekenkunde als een foutcontrole, niet als vervanging voor een offerte van een vervoerder. Wanneer u een schijnbaar onwaarschijnlijk getal krijgt, controleert u op gemengde eenheden, een ontbrekend decimaal, herhaalde lengte in plaats van hoogte of een productafmeting die is gekopieerd in plaats van de verpakte afmeting. Een resultaat dat na correctie van één invoer zinvol wordt, is een reden om de herziene berekening te behouden, geen reden om een gunstiger cijfer in te voeren dan de werkelijke afmetingen van het pakket aangeven."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "b378a89b900bfc96654f2dfaf3edaada8f391c8f7934c5e60a0abcfb7e028ddc",
+      "translation": "Stel dat je drie notitieboeken bestelt voor 18 per stuk. De binnenlandse verzending kost 6 en het oorspronkelijke totaal is dus 60. Later meldt de verkoper dat er nog maar twee notitieboeken in de gevraagde kleur zijn en dat het nieuwe totaal 46 is. Op het eerste gezicht lijkt dat goedkoper. Maar twee boeken van 20 plus 6 aan verzendkosten komen ook uit op 46. De prijs per stuk is gestegen en je krijgt minder exemplaren. Als je alleen de totalen vergelijkt, mis je beide veranderingen."
     }
   ]
 }

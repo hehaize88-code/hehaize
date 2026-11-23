@@ -1,0 +1,278 @@
+{
+  "site": "bbdbuygrid-com",
+  "locale": "pl",
+  "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
+  "raw_dictionary_sha256": "8ec89124bb61c75c5942d366f42ca03878f7b1f60f0976a99cdbfa81a90c427a",
+  "effective_dictionary_sha256": "d9962f262567ffd7e83d913a26ec1ca130b97dde94069822e280debc260f105b",
+  "checked_entries": 324,
+  "review_scope": "All automated flags, ten article titles and worked examples for prices, quantities, volumetric weight, rounding and centimetre/metre conversions. Additional lexical sweep for mistranslated parcel, cubic seconds, and invented currency. Targeted review; not full line-by-line copyediting.",
+  "reviewed_flags": [
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "365c8efdcc8f3c14e3c09dc0448104ed063b55d009cca4a0935c5a0f946b6b1d",
+      "raw_target_sha256": "8f2759a870e20d65a6efb78939b747ee4f1e8304f441eb5d4ac8e23fe0f95529",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "9aca0fdddaddb22cb515f532d9731d5ac64e3ff054eedcb2f2aee067622a8490",
+      "raw_target_sha256": "0e5c64f27d0d5a8b584a9abec65ae1974b7e5e49428bc8533384d40101889448",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "5eb842601780f729c12dbc6985b5fccdffe6c9d91d363bc669a4648e85503d61",
+      "raw_target_sha256": "96205babaf949d27f75a90a8d3e2a6d3ade2de2194b143b6e4ede593100af8e1",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "034a3a5ae73a2dd3198c5e051b15a34026001a77e501e9e6a6fd86e649a3c3a0",
+      "raw_target_sha256": "1b6cb9dad472146fd859027d06713196e2e7df3652b00c85527106d269905311",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "034a3a5ae73a2dd3198c5e051b15a34026001a77e501e9e6a6fd86e649a3c3a0",
+      "raw_target_sha256": "1b6cb9dad472146fd859027d06713196e2e7df3652b00c85527106d269905311",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "How to read a BBDBuy payment record when an order has several charges",
+      "source_sha256": "2e683e05a22119f9c40cec68118679f768658e9f230c4d89ffbb9208a29c5a96",
+      "raw_target_sha256": "4eea9bb3368d50b5d4913ccf4e4701d56e11e98ffe40fcfc6e6ab3c0bed3fa58",
+      "translation": "Jak odczytać zestawienie płatności w BBDBuy, gdy jedno zamówienie obejmuje kilka opłat"
+    },
+    {
+      "source": "BBDBuy purchase or parcel forwarding? Choose the right workflow for your seller order",
+      "source_sha256": "365c8efdcc8f3c14e3c09dc0448104ed063b55d009cca4a0935c5a0f946b6b1d",
+      "raw_target_sha256": "8f2759a870e20d65a6efb78939b747ee4f1e8304f441eb5d4ac8e23fe0f95529",
+      "translation": "Zakup przez BBDBuy czy przekazanie paczki do dalszej wysyłki? Jak wybrać właściwą usługę"
+    },
+    {
+      "source": "BBDBuy multipack quantities: count what the seller will actually send",
+      "source_sha256": "3f25642571da3f03a9cffe24d44654d6faf4b48928f4a3655ead9735f7a2cb77",
+      "raw_target_sha256": "75f32e5e3990dcd7ca947b12b103731a14a3a586702f2deea402a2fead8741dc",
+      "translation": "Wielopaki w BBDBuy: jak policzyć, ile sztuk faktycznie wyśle sprzedawca"
+    },
+    {
+      "source": "Before accepting a BBDBuy seller price change, reconstruct the two offers",
+      "source_sha256": "e2791753b1fe688b2829fb8e5debc640859aa8ec80c01fdf9c6e793aae303957",
+      "raw_target_sha256": "4a1e7ef7d7bff524f4a4cbe01fb6d533c6e75b1db4bbc8e8098be53b39f77bba",
+      "translation": "Zmiana ceny u sprzedawcy: jak porównać obie oferty przed zatwierdzeniem zakupu przez BBDBuy"
+    },
+    {
+      "source": "A BBDBuy warehouse arrival notice: how to tell which parcel arrived",
+      "source_sha256": "80d04839358e00ea253d3c9cfb0f5a8a86927e4130adc169b247f90edea7352b",
+      "raw_target_sha256": "f6883333fb51c278f7b2d673401c22d40237bf0376dc8abb9debcf986ed2d429",
+      "translation": "Powiadomienie z magazynu BBDBuy: jak ustalić, która paczka dotarła"
+    },
+    {
+      "source": "Match BBDBuy warehouse photos to the right item, colour and size",
+      "source_sha256": "9aca0fdddaddb22cb515f532d9731d5ac64e3ff054eedcb2f2aee067622a8490",
+      "raw_target_sha256": "0e5c64f27d0d5a8b584a9abec65ae1974b7e5e49428bc8533384d40101889448",
+      "translation": "Jak sprawdzić na zdjęciach z magazynu BBDBuy, czy produkt, kolor i rozmiar zgadzają się z zamówieniem"
+    },
+    {
+      "source": "Keeping or removing a shoebox with BBDBuy: compare two packing plans",
+      "source_sha256": "cf39d98c7607a4a4846533c2aaaccc5d81c2dbe8c7f38fa40772267d2cfb87f0",
+      "raw_target_sha256": "b15b0df4af92e99a6d7fd219bfeab55674c5fcdc0a784115ddf69e9b23cec4d1",
+      "translation": "Zachować pudełko po butach czy je usunąć? Porównanie dwóch sposobów pakowania w BBDBuy"
+    },
+    {
+      "source": "Enter parcel dimensions correctly in a BBDBuy shipping estimate",
+      "source_sha256": "5eb842601780f729c12dbc6985b5fccdffe6c9d91d363bc669a4648e85503d61",
+      "raw_target_sha256": "96205babaf949d27f75a90a8d3e2a6d3ade2de2194b143b6e4ede593100af8e1",
+      "translation": "Jak poprawnie wpisać wymiary paczki do kalkulatora kosztów wysyłki BBDBuy"
+    },
+    {
+      "source": "Comparing BBDBuy shipping lines for one parcel without mixing quotes",
+      "source_sha256": "d15393b64e300b311b6b060fd6b3e2ec6f4027fb3dc965ff0ed1c6d10cf0d8f3",
+      "raw_target_sha256": "f116d6c634f1bb380d3c4c56b68743eace8e1f65e531987553f514aa6eca10d5",
+      "translation": "Jak porównać oferty wysyłki tej samej paczki w BBDBuy"
+    },
+    {
+      "source": "Prepare a BBDBuy refund enquiry with an item, amount and destination",
+      "source_sha256": "b824579d8556fb3cc1934d8524c8af7bb8f82b619276d01970c192de0be6ec59",
+      "raw_target_sha256": "60f2075a565e3627b54c2244603ab96271bc9f4dbb4daf5f134f7247c102d42d",
+      "translation": "Jak zapytać BBDBuy o zwrot: wskaż produkt, kwotę i miejsce, do którego powinny trafić środki"
+    },
+    {
+      "source": "Imagine two seller charges of 80 and 120 in the same currency with one shared domestic charge of 10. Their purchase subtotal is 210. Counting 10 on each item produces 220 and makes the later parcel look more expensive than it was. If you want a per-item estimate for your own budget, split the 10 equally or proportionally and note the method. The seller still charged one amount.",
+      "source_sha256": "5b139f73cd5c8981d4c940866a4b489048c21a5f76221d99d6552c12ea37eca2",
+      "raw_target_sha256": "44adcf30905bdb5ae2e26f25160ae8ecfc6f94596aede86a3409a0f61e802b76",
+      "translation": "Załóżmy, że sprzedawca nalicza 80 i 120 za dwa produkty w tej samej walucie, a ich wspólna dostawa krajowa kosztuje 10. Suma wynosi 210. Doliczenie 10 do każdej pozycji daje 220 i zawyża koszt. Na potrzeby własnego budżetu możesz podzielić 10 równo lub proporcjonalnie do cen i zapisać metodę podziału. Sprzedawca pobrał opłatę za dostawę tylko raz."
+    },
+    {
+      "source": "Suppose the first order showed 80 and a later request shows 86. Save the old and new figures, selected option and reason given. Six more for the same product is a different issue from a six-unit delivery adjustment. Ask which changed if the message is unclear. Preserve your original note until the agent confirms the final purchase or cancellation.",
+      "source_sha256": "aa1bbb2188e02856dcb4e7fea4b145886556c0a55eac28b4d71842104d6b6a0d",
+      "raw_target_sha256": "fb58318d6aca67625ce84d491e3c36a59c3e9c53555b149287c16522bb685cdf",
+      "translation": "Załóżmy, że początkowo zamówienie opiewało na 80, a teraz pojawiła się prośba o zapłatę 86. Zapisz obie kwoty, wybrany wariant i podany powód zmiany. Wzrost ceny produktu o sześć jednostek waluty to co innego niż podwyżka opłaty za dostawę o tę samą kwotę. Jeśli wiadomość jest niejasna, zapytaj, która pozycja się zmieniła. Zachowaj pierwotną notatkę do czasu potwierdzenia zakupu lub anulowania przez pośrednika."
+    },
+    {
+      "source": "Take an illustrative order for two medium work shirts and a separate order for a cap. Assume the confirmation lists the shirts at 75 each and a single domestic delivery charge of 12. The purchase subtotal is 162. The cap costs 38 with domestic delivery included, bringing the amount paid for the two purchases to 200 in the same currency. At this point both purchase records can be closed as paid even though there is no figure yet for the journey from the warehouse to your home.",
+      "source_sha256": "21cd8ec9cdc033be40fa29a6b7f3fc5473879babedda43400b722373cecd0db5",
+      "raw_target_sha256": "6f8dd9d8e199891e35fd1848eea120b6628e988fce4e1817fc14b1e9b7763a96",
+      "translation": "Załóżmy, że zamawiasz dwie koszule robocze w rozmiarze M, a w osobnym zamówieniu czapkę z daszkiem. W potwierdzeniu cena koszuli wynosi 75 za sztukę, a wspólna dostawa krajowa kosztuje 12. Razem daje to 162. Czapka kosztuje 38 z dostawą krajową, więc za oba zakupy płacisz łącznie 200 w tej samej walucie. Możesz oznaczyć oba zamówienia jako opłacone, chociaż koszt wysyłki z magazynu pod twój adres jest jeszcze nieznany."
+    },
+    {
+      "source": "Now imagine the seller can supply only one shirt. You might expect a credit of 75, the unused unit price. Whether some domestic delivery is credited must be checked against the actual agreement. If the seller delivers one shirt for the originally quoted domestic fee and a credit of 75 really is recorded, the net cost of the goods and domestic delivery becomes 125. Keep the original 162 payment intact in the record. Replacing it with 87 conceals the transaction you will need if the credit is delayed.",
+      "source_sha256": "ebece8a93209ba3d02192633d2818966dc4d63221ebf3e3b4cf38a6b1b36472d",
+      "raw_target_sha256": "70c65e2121f2b99cbeaa03aa0ba87cf142933375a54326407a47221fc02be555",
+      "translation": "Teraz załóżmy, że sprzedawca może dostarczyć tylko jedną koszulę. Możesz oczekiwać zwrotu 75, czyli ceny niedostarczonej sztuki. To, czy zwrot obejmie również część kosztów dostawy krajowej, zależy od uzgodnień. Jeśli opłata krajowa pozostaje bez zmian, a zwrot 75 zostanie faktycznie zaksięgowany, koszt netto towarów i dostaw krajowych wyniesie 125. Zachowaj zapis pierwotnej płatności 162. Jeśli nadpiszesz ją kwotą 87, trudniej będzie odnaleźć transakcję w razie opóźnienia zwrotu."
+    },
+    {
+      "source": "Suppose the single shirt and cap are later packed into one outbound parcel. Freight is 46 and a separately itemized packing choice is 4. Add a parcel payment of 50. The total cash out across the original payments is 250, with 75 credited, yielding a net of 175. The items have purchase records of 162 and 38, the parcel has a payment of 50, and the credit has a reference of its own. Those four numbers give you a way to reproduce the result without guessing what any bank entry meant.",
+      "source_sha256": "b8fafea33d0aa78ff2e9fecd888289057c71d631660095f6b04851107c9c1eb0",
+      "raw_target_sha256": "80d587d71a09823745e8649d165371447715dfb0024bed7430446ef468f2529c",
+      "translation": "Załóżmy, że koszula i czapka zostały później zapakowane do wspólnej przesyłki. Przewóz kosztuje 46, a osobno wyszczególniona usługa pakowania 4. Zapisz płatność za paczkę w wysokości 50. Łączne wydatki wyniosły 250, a po odjęciu zwrotu 75 koszt netto to 175. Dwa zakupy mają osobne płatności 162 i 38, paczka ma płatność 50, a zwrot ma własny numer referencyjny. Te zapisy pozwalają odtworzyć wynik bez zgadywania, czego dotyczy dana operacja bankowa."
+    },
+    {
+      "source": "If you want to compare the cost of the cap with a local alternative, you still need to decide how to allocate the shared parcel cost. An equal split attributes 25 to the cap. A split by measured weight might attribute much less. Neither division appears on the carrier invoice unless the invoice actually itemizes freight per piece. Keep a column labelled personal allocation. It allows another person to understand how you reached the comparison without mistaking your method for a charge imposed by BBDBuy.",
+      "source_sha256": "6d74cd0af2705ef2674d0803d5cd5455ce671597134771f5fe0a3d679ea9df53",
+      "raw_target_sha256": "f80283d52ef9d3efe6bfdbc640913373b06346f5a86b398eebb95b544b405e3c",
+      "translation": "Jeśli chcesz porównać koszt czapki z ceną w lokalnym sklepie, zdecyduj, jak podzielisz koszt wspólnej przesyłki. Przy równym podziale na czapkę przypada 25. Przy podziale proporcjonalnym do zmierzonej masy jej udział może być znacznie mniejszy. Żaden z tych podziałów nie wynika z faktury przewoźnika, chyba że wyszczególniono na niej koszt przewozu każdej sztuki. Dodaj kolumnę „Własny podział kosztów”. Inna osoba zobaczy, jak powstała cena porównawcza i odróżni twój podział od opłaty naliczonej przez BBDBuy."
+    },
+    {
+      "source": "A useful payment message identifies one unresolved difference. For the example above it might ask where the 75 credit from the unavailable shirt was posted, quoting the purchase reference and date of the message approving it. That is easier to investigate than a general claim that the order cost more than expected. Include an image of the relevant confirmation if needed, showing the item, amount and reference while excluding unrelated financial details.",
+      "source_sha256": "61d35c6d6b62a0e462f1292e9b2fb53142889a8c349b38990ad23746f0d348cc",
+      "raw_target_sha256": "d9b05cdfce70dbefd7956093a64cdffc8d630f011068eb647ab9718055f13e1a",
+      "translation": "W pytaniu o płatność wskaż jedną konkretną rozbieżność. W powyższym przykładzie możesz zapytać, gdzie zaksięgowano zwrot 75 za niedostępną koszulę. Podaj numer zakupu i datę wiadomości potwierdzającej zwrot. Łatwiej sprawdzić taką sprawę niż ogólną skargę, że zamówienie wyszło drożej. W razie potrzeby dołącz fragment potwierdzenia z produktem, kwotą i numerem referencyjnym. Ukryj dane dotyczące innych płatności."
+    },
+    {
+      "source": "Suppose a seller quotes 12 per pair or 30 per sealed three-pair pack. For six pairs, two packs at 30 total 60. Six single pairs at 12 total 72. If the lower pack price requires all three pairs in each pack to have the same colour, the nominal saving can disappear for a buyer who needs a specific mix. Write down the desired colours and count the pieces you will actually use before calling the larger pack cheaper.",
+      "source_sha256": "5a09678b7eb5f56ac48d2eefd45c8b6236705580e048f3ff323b8df36193ffd5",
+      "raw_target_sha256": "a3246a033cdbf09ac4d609bfd56334d8fc0f1cd84dd1903cb7eea01ca5530e97",
+      "translation": "Załóżmy, że para kosztuje 12, a zamknięte opakowanie trzech par kosztuje 30. Za sześć par w dwóch opakowaniach po 30 zapłacisz 60. Sześć par kupionych osobno po 12 kosztuje 72. Jeśli niższa cena wymaga, żeby wszystkie trzy pary w opakowaniu były w jednym kolorze, oszczędność może być pozorna dla osoby, która potrzebuje kilku różnych kolorów. Zapisz wybrane kolory i policz pary, których rzeczywiście użyjesz, zanim uznasz wielopak za tańszy."
+    },
+    {
+      "source": "For illustration, consider an order originally quoted at 100 for the goods plus 8 domestic freight. A later total of 118 could mean the item is now 110 with freight unchanged, or the item is still 100 with freight now 18. Both totals differ by 10, but only one is a higher merchandise price. Ask for the two components when the message shows only a total.",
+      "source_sha256": "04e84e83e7314cef3ce9b0adc4d97d1cd357338a4edb89df21b625d8c54ff31d",
+      "raw_target_sha256": "a0e6389362287722bc9fe3b217fe5a755638fd89ffcee65d2e6b60a35ec3d53e",
+      "translation": "Załóżmy, że w pierwotnej ofercie towary kosztują 100, a dostawa krajowa 8. Nowa suma 118 może oznaczać wzrost ceny produktu do 110 przy niezmiennej opłacie za dostawę albo cenę produktu 100 i wzrost kosztu dostawy do 18. W obu przypadkach suma rośnie o 10, ale tylko w pierwszym drożeje towar. Jeśli wiadomość zawiera tylko sumę, poproś o osobne podanie obu kwot."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "e413430ba3604b665beee2684de27a71081f7dafd60a0eb673c7a3c2a8e45f45",
+      "translation": "Załóżmy, że zamawiasz trzy notesy po 18 za sztukę, a dostawa krajowa kosztuje 6. Początkowa suma to 60. Sprzedawca informuje później, że w wybranym kolorze zostały dwa notesy, i podaje nową sumę 46. Oferta na pierwszy rzut oka jest tańsza. Dwa notesy po 20 i dostawa za 6 również dają jednak 46. Cena jednostkowa wzrosła, a dostaniesz mniej sztuk. Porównanie samych sum ukrywa obie zmiany."
+    },
+    {
+      "source": "If the replacement offer instead includes three differently bound notebooks at 20 with delivery included, it also totals 60. That matches the original price exactly while changing what was bought. Look at the new thickness, binding, colour and quantity before agreeing. Matching a number cannot compensate for losing the feature that made you choose the original item. Treat an offer with a different option as a new purchasing decision in its own right.",
+      "source_sha256": "3e9b77d857808f1a7567ef6463c7a745dbb051766ebc1192c67c1dc77a63e59c",
+      "raw_target_sha256": "75cbba4d1042d954e3e58b0cfe47d6c783e291f8366cc4cf52d5c337859477c2",
+      "translation": "Jeśli w zamian sprzedawca proponuje trzy notesy w innej oprawie po 20 za sztukę z dostawą w cenie, suma także wynosi 60. Kwota jest taka sama, lecz kupujesz inny produkt. Przed zgodą sprawdź grubość, oprawę, kolor i liczbę notesów. Identyczna cena nie zrekompensuje utraty cechy, ze względu na którą wybrałeś pierwszy wariant. Potraktuj propozycję innego wariantu jako nową decyzję o zakupie."
+    },
+    {
+      "source": "Consider a hypothetical box measuring 36 by 24 by 14 centimetres. Its volume is 12,096 cubic centimetres. A hypothetical replacement package measuring 34 by 22 by 13 is 9,724 cubic centimetres. These are examples for checking arithmetic, not dimensions for your shipment. The difference tells you about volume, not the amount a carrier will charge.",
+      "source_sha256": "a2694b46ba3f88beffce706125fcfdcb06ca44c5f75666ef3a824a9c3b7658c5",
+      "raw_target_sha256": "4a2deef96ebfc0c308a4d8914266927d10769bcb84a5d4aba45658a714fa40b0",
+      "translation": "Przykładowe pudełko o wymiarach 36 × 24 × 14 cm ma objętość 12 096 cm³. Opakowanie zastępcze o wymiarach 34 × 22 × 13 cm ma objętość 9 724 cm³. Liczby służą do sprawdzenia obliczeń. Własną paczkę trzeba zmierzyć osobno. Różnica objętości nie przesądza o tym, ile naliczy przewoźnik."
+    },
+    {
+      "source": "Imagine the shoe box shares a larger carton with two folded jackets. The outer carton measures 50 by 35 by 25 centimetres with the shoe box in place. Removing the box lets the jackets settle into the freed space, but the outer carton remains 50 by 35 by 25. In that scenario exterior volume has not changed. There may be a small reduction in scale weight, yet the freight quote can remain in the same billing band. The volume of the discarded box alone cannot tell you what changed on the carrier side.",
+      "source_sha256": "061bdab933d40ac865d096fa0a152a8c0b3858b0c3e53c477763a05fb418b4c3",
+      "raw_target_sha256": "d22255c90e6b08c8216c30c7d0f8926d123fb7092dc8717ded1ffff025d336ca",
+      "translation": "Wyobraź sobie, że pudełko po butach i dwie złożone kurtki znajdują się w jednym kartonie o wymiarach zewnętrznych 50 × 35 × 25 cm. Po usunięciu pudełka kurtki zajmują wolną przestrzeń, ale wymiary kartonu nadal wynoszą 50 × 35 × 25 cm. Jego objętość się nie zmieniła. Paczka może ważyć nieco mniej i nadal mieścić się w tym samym przedziale cenowym. Objętość samego usuniętego pudełka nie wystarczy więc, aby ustalić zmianę opłaty za przewóz."
+    },
+    {
+      "source": "Now consider a second arrangement. After packing differently, the complete outer carton changes to 50 by 35 by 20 centimetres. Volume has fallen from 43,750 to 35,000 cubic centimetres. That is a reduction of 8,750 cubic centimetres, or one fifth of the original volume. Whether it saves money depends on route eligibility, the actual scale weight and the applicable billing rule. A route with a fixed minimum or an actual-weight band above the dimensional figure might charge the same amount.",
+      "source_sha256": "9531cb63d77c6fabee1375845ccd1b96751ca329dc6f7782a93957110c0cf55d",
+      "raw_target_sha256": "783cd3bf31401f820c358e4e1533ceca02f330fcbb633aeea82a8ced586bea99",
+      "translation": "Rozważ teraz inny sposób pakowania. Wymiary zewnętrzne kartonu zmniejszają się do 50 × 35 × 20 cm. Objętość spada z 43 750 do 35 000 cm³. Różnica wynosi 8 750 cm³, czyli jedną piątą pierwotnej objętości. Ewentualna oszczędność zależy od dostępności usługi dla tej paczki, jej rzeczywistej masy i zasad naliczania opłat. Cena może pozostać bez zmian, jeśli obowiązuje opłata minimalna lub masa rzeczywista wyznacza wyższy próg niż masa gabarytowa."
+    },
+    {
+      "source": "Distinguish the product, its retail box and the complete outbound carton. A laptop sleeve might be advertised as 34 centimetres long. That figure describes neither the depth of a carton containing several sleeves nor the extra space required for protection. Label every saved dimension with the object it describes.",
+      "source_sha256": "ce7b8c5aeca500e582a699fe4b1646b0c04af72cdb3664b57c4c3d097ae8bcc4",
+      "raw_target_sha256": "bb2a8d560b0b9385cbd4acefc0a965b263ddac9d629902119d9eb9189ad91d41",
+      "translation": "Rozróżnij wymiary produktu, jego opakowania sklepowego i gotowego kartonu wysyłkowego. Sprzedawca może podać, że etui na laptop ma 34 cm długości. Nie wynika z tego ani głębokość kartonu mieszczącego kilka takich etui, ani ilość miejsca potrzebnego na zabezpieczenie. Przy każdym zapisanym wymiarze zaznacz, czego dokładnie dotyczy."
+    },
+    {
+      "source": "A carton measuring 40 by 30 by 20 centimetres has a volume of 24,000 cubic centimetres. The equivalent lengths in metres are 0.40, 0.30 and 0.20, which give 0.024 cubic metres. Both results describe the same carton. Enter whichever units the tool requests.",
+      "source_sha256": "6088c544ef6096eceeba981d8dc83b7ffcbb1f5d1b0a6e7a53e8f1515eb7e112",
+      "raw_target_sha256": "2f1d8184927f2b33a04015b90532f092e81965889711e4fcaecdee3c2e201655",
+      "translation": "Karton o wymiarach 40 × 30 × 20 cm ma objętość 24 000 cm³. Te same wymiary w metrach to 0,40 × 0,30 × 0,20 m, co daje 0,024 m³. Oba wyniki opisują ten sam karton. W kalkulatorze użyj jednostek wymaganych w danym polu."
+    },
+    {
+      "source": "A service may consider both actual and volumetric weight. If a route explicitly supplied a divisor of 6,000 for centimetres and kilograms, the example carton would have a volumetric figure of 4 kilograms. This hypothetical divisor demonstrates the method. Use the divisor and rounding rules shown for the route you are actually considering.",
+      "source_sha256": "db79f7a5f2f7644db45a035b1fcb3cd838ed1ed167eb5b4652c8d68300f444b0",
+      "raw_target_sha256": "0f2797fc54a2a629813bbf7ead5ff64ac2e9dcd2a6ab47594773d13ae739d93f",
+      "translation": "Przewoźnik może uwzględniać zarówno masę rzeczywistą, jak i gabarytową. Gdyby dla danej usługi podano dzielnik 6 000 dla wymiarów w centymetrach i wyniku w kilogramach, masa gabarytowa przykładowego kartonu wyniosłaby 4 kg. Ten dzielnik służy tylko do pokazania obliczenia. Zastosuj dzielnik i reguły zaokrąglania podane dla usługi, którą rozważasz."
+    },
+    {
+      "source": "Check billing increments after determining the underlying figure. A rule rounding upward to 0.5-kilogram steps would place 4.1 kilograms in a different band from 4.0. Another service might use a different increment or a minimum billable amount. Record the selected route with every calculation.",
+      "source_sha256": "2be9e3778290539ea1010ff478458c678db126c468d7ee305d3b743b1a5b28ce",
+      "raw_target_sha256": "b41ea7a75667a98febe69bf3993ff0da0f44f3d19e7b833ef1a6e918aca8ddcc",
+      "translation": "Po obliczeniu masy sprawdź progi rozliczeniowe. Przy zaokrąglaniu w górę do wielokrotności 0,5 kg paczki o masie 4,1 kg i 4,0 kg trafią do różnych przedziałów. W innej usłudze może obowiązywać inny krok lub minimalna masa do rozliczenia. Przy każdym obliczeniu zapisz wybraną usługę."
+    },
+    {
+      "source": "Compare the original and revised measurement line by line. Increasing one dimension from 20 to 24 centimetres with the other two held at 40 and 30 raises volume from 24,000 to 28,800 cubic centimetres. The percentage change in volume does not guarantee the same percentage change in price.",
+      "source_sha256": "2c3e025e522359927de3321c25acaf0f3cbfa2c3003b8ffd4aaacc4a144c714e",
+      "raw_target_sha256": "bbe393147e8507eba5796d7981fc68e47e6cc93ec99d9a6c9e3c6c47c787092c",
+      "translation": "Porównaj kolejno pierwotne i skorygowane wymiary. Gdy jeden z nich rośnie z 20 do 24 cm, a dwa pozostałe nadal wynoszą 40 i 30 cm, objętość zwiększa się z 24 000 do 28 800 cm³. Taki procentowy wzrost objętości nie musi oznaczać takiego samego wzrostu ceny."
+    },
+    {
+      "source": "Work through an illustrative shipment of a folded garment and a rigid storage basket. The garment package might weigh 1.1 kilograms with dimensions of 30 by 24 by 10 centimetres. The basket might weigh only 0.8 kilograms while measuring 42 by 32 by 28 centimetres after protection. Keep all three dimensions and the weight with each physical carton. The lighter basket occupies 37,632 cubic centimetres, much more than the garment's 7,200. Comparing the two scale readings alone misses that difference.",
+      "source_sha256": "034a3a5ae73a2dd3198c5e051b15a34026001a77e501e9e6a6fd86e649a3c3a0",
+      "raw_target_sha256": "1b6cb9dad472146fd859027d06713196e2e7df3652b00c85527106d269905311",
+      "translation": "Weźmy przykład złożonej odzieży i sztywnego kosza. Paczka z odzieżą może ważyć 1,1 kg i mierzyć 30 × 24 × 10 cm. Zabezpieczony kosz może ważyć zaledwie 0,8 kg, a mimo to mierzyć 42 × 32 × 28 cm. Przy każdym kartonie zapisz wszystkie trzy wymiary i masę. Lżejszy kosz zajmuje 37 632 cm³, a paczka z odzieżą tylko 7 200 cm³. Porównanie samych wskazań wagi nie ujawnia tej różnicy."
+    },
+    {
+      "source": "Suppose you want to ship them together. Adding the two volumes gives 44,832 cubic centimetres, but this sum does not tell you the exterior dimensions of a combined box. The garment might fit inside the basket if the packing method allows it, or the basket might need to remain empty to avoid pressure on its sides. Padding and the geometry of the items influence the final arrangement. Obtain a complete exterior measurement or use a clearly labelled estimate for the proposed combined carton.",
+      "source_sha256": "9a0631e1ed66d4191a8bb61140b87316ce395e7cfa86088b466dee824524711f",
+      "raw_target_sha256": "0d1576ea678c1df877a7e32c0a2485e77565223d7a0b1ccb3278e6fbcec48315",
+      "translation": "Załóżmy, że chcesz wysłać oba produkty razem. Suma ich objętości wynosi 44 832 cm³, ale nie określa wymiarów zewnętrznych wspólnego kartonu. Odzież może zmieścić się w koszu, jeśli pozwala na to sposób pakowania. Może też być konieczne pozostawienie kosza pustego, by nie obciążać jego ścianek. O układzie decydują kształt produktów i wypełnienie. Uzyskaj trzy wymiary zewnętrzne gotowego kartonu albo wyraźnie zaznacz, że używasz szacunku."
+    },
+    {
+      "source": "Consider a combined carton measured at 44 by 34 by 30 centimetres. It occupies 44,880 cubic centimetres. If a hypothetical line uses 6,000 as its centimetre-to-kilogram divisor, the dimensional figure is 7.48 kilograms. If a second hypothetical line uses 5,000, its figure is 8.976 kilograms. Those differences arose from the route rules while the physical box remained identical. Compare the rules displayed with the current quote rather than treating either example divisor as a default for all BBDBuy shipments.",
+      "source_sha256": "9fec52b7abdb4b14a2ab5bb839f84a7d5f8060c65db407fb3e1f5cd62bec195e",
+      "raw_target_sha256": "2a9af6e4684e1761072f3ce4444814e8aa74156b959dd8a13e196d1b6e4a94ea",
+      "translation": "Załóżmy, że wspólny karton mierzy 44 × 34 × 30 cm. Jego objętość wynosi 44 880 cm³. Jeśli przykładowa usługa stosuje dzielnik 6 000 do obliczania masy gabarytowej w kilogramach z wymiarów w centymetrach, wynik wyniesie 7,48 kg. Przy dzielniku 5 000 otrzymamy 8,976 kg. Karton jest ten sam, a różnica wynika z zasad rozliczenia. Sprawdź warunki aktualnej wyceny. Żaden z przykładowych dzielników nie jest domyślny dla wszystkich przesyłek BBDBuy."
+    },
+    {
+      "source": "Read whether a route rounds individual dimensions, final weight or both. Consider two weights of 2.01 and 2.49 kilograms. Under an illustrative rule rounding upward to half-kilogram steps, both become 2.5 kilograms. Reducing a parcel from 2.49 to 2.10 under that rule would not move it into a lower band. Reducing it to exactly 2.00 could do so if actual weight governs and there are no other minimums. Check the interface or route description before applying that reasoning to your own case.",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "89a7ff31801c5afa6588e54fa80ef4b2d520e46e007d4e8e4eefc9336be51a07",
+      "translation": "Sprawdź, czy przewoźnik zaokrągla poszczególne wymiary, masę końcową czy oba rodzaje wartości. Jeśli masę zaokrągla się w górę do wielokrotności pół kilograma, zarówno 2,01 kg, jak i 2,49 kg daje do rozliczenia 2,5 kg. Zmniejszenie masy paczki z 2,49 do 2,10 kg nie obniży wtedy progu cenowego. Zmniejszenie jej do dokładnie 2,00 kg może go obniżyć, o ile decyduje masa rzeczywista i nie obowiązują inne minima. Przed obliczeniem sprawdź opis własnej usługi."
+    },
+    {
+      "source": "Use independent arithmetic as an error check, not a substitute for a carrier quote. When you obtain a seemingly improbable number, check for mixed units, a missing decimal, length repeated in place of height, or a product dimension copied instead of the packed dimension. A result that becomes sensible after correcting one input is a reason to preserve the revised calculation, not a reason to enter a more favourable figure than the parcel actually measures.",
+      "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
+      "raw_target_sha256": "9da85e6a906c328d8d64e3bd77147eb46b7ec9916da4c590ebf8305e10eaba75",
+      "translation": "Własne obliczenia pomagają wykryć błąd, ale cenę podaje przewoźnik. Jeśli wynik wydaje się nieprawdopodobny, sprawdź jednostki, przecinek dziesiętny oraz to, czy zamiast wysokości nie wpisano długości lub zamiast wymiaru gotowej paczki nie podano wymiaru produktu. Gdy po poprawieniu danych wynik jest wiarygodny, zapisz skorygowane obliczenie. W kalkulatorze podaj faktycznie zmierzone wymiary paczki."
+    },
+    {
+      "source": "Suppose three hypothetical lines appear against an early estimate. Line One is inexpensive but cannot accept the parcel after the longest side is measured. Line Two accepts the dimensions and quotes 38 in your chosen currency. Line Three quotes 41 and displays an included service you want. Remove Line One from the price ranking. Its earlier figure may have been accurate for the earlier dimensions; it no longer describes an available choice for this box.",
+      "source_sha256": "4a8aa8e23c741ca70b0eb12d46f7e27003b3576f0b3d92ab1341fa122f64fe3a",
+      "raw_target_sha256": "9718fc3f223f6be0f009e9f69615c742b54032e5369fa65bc1c0a1d772906f68",
+      "translation": "Załóżmy, że we wstępnej wycenie pojawiają się trzy usługi. Pierwsza jest tania, lecz po zmierzeniu najdłuższego boku okazuje się, że przewoźnik nie przyjmie tej paczki. Druga akceptuje jej wymiary i kosztuje 38 w wybranej walucie. Trzecia kosztuje 41 i zawiera potrzebną ci usługę dodatkową. Wyklucz pierwszą opcję z porównania cen. Jej wcześniejsza wycena mogła być poprawna dla wcześniejszych wymiarów, ale tego kartonu nie da się tak wysłać."
+    },
+    {
+      "source": "For Lines Two and Three, consider other costs or services you intend to select. If Line Two charges 5 for the desired feature, its comparable total becomes 43. If Line Three includes that feature at 41, it is now lower for your chosen service level. Another buyer who does not need the feature could reasonably prefer Line Two at 38. There is no contradiction because the buyers are pricing different requirements. The comparison should make that difference explicit.",
+      "source_sha256": "ceed2cd91c5115c79cbe57026abfe7036799f01c118ec1c51c3bf4ef66319661",
+      "raw_target_sha256": "c09ecdf003232082f93603af468f7e1c83f1a19a9c50b2980efe56aa27c25366",
+      "translation": "Dla drugiej i trzeciej opcji sprawdź koszty potrzebnych usług dodatkowych. Jeśli w drugiej opłata za dodatek wynosi 5, porównywalny koszt całkowity to 43. Jeśli trzecia zawiera ten dodatek w cenie 41, jest tańsza przy twoich wymaganiach. Osoba, która nie potrzebuje dodatku, może wybrać drugą usługę za 38. Zaznacz w porównaniu, jakie wymagania odpowiadają każdej cenie."
+    },
+    {
+      "source": "For illustration, a two-piece order costs 90 and a separate domestic charge is 8. A proposed credit of 45 does not tell you by itself whether one piece, half the merchandise or another charge was accepted. Obtain the breakdown and currency before recording the case as resolved.",
+      "source_sha256": "f13b3247943e35a82057d80d06bed3832aaa9eb632900b7b267f120fb7f53e99",
+      "raw_target_sha256": "5060044f724754cc5d46c9dc7484a102f739935da7e2230d0d8450ea0bab3922",
+      "translation": "Załóżmy, że zamówienie dwóch sztuk kosztuje 90, a osobna opłata za dostawę krajową wynosi 8. Sama propozycja zwrotu 45 nie mówi, czy uznano roszczenie dotyczące jednej sztuki, połowy wartości towaru czy innej opłaty. Przed oznaczeniem sprawy jako zakończonej poproś o rozbicie kwoty na składniki i potwierdzenie waluty."
+    },
+    {
+      "source": "If you accepted a partial credit of 15 and see a new balance entry of 15 in the same currency, match its date and reference before closing the case. If you see a credit of 15 in a different currency, compare the destination and conversion details rather than assuming the numbers match. If you see a reversal of an earlier authorization, confirm that it corresponds to the approved remedy. Similar amounts alone do not establish the origin of a transaction.",
+      "source_sha256": "41192c5cbab1892a12267ef3ffe6dba54e1bfcd1ec88b9159c9a14f19b2df0d7",
+      "raw_target_sha256": "efea1db9c5c2b967c7d63bc95b33ae556a4aa02e1bfe3d8859d313615c06257f",
+      "translation": "Jeśli zaakceptowano częściowy zwrot 15, a w historii salda pojawiło się 15 w tej samej walucie, przed zamknięciem sprawy porównaj datę i numer referencyjny. Jeśli zapis opiewa na 15 w innej walucie, sprawdź miejsce zaksięgowania i szczegóły przewalutowania. Jeżeli anulowano wcześniejszą blokadę środków, potwierdź, że odpowiada to uzgodnionemu rozwiązaniu. Sama zbieżność kwot nie wskazuje źródła transakcji."
+    },
+    {
+      "source": "When sending a follow-up, lead with the outstanding event and the action you need. For instance, ask where the approved 15 credit was posted for the named order and state the date of the approval. Attach the relevant excerpt of the agreement and the transaction history covering that event. A long gallery of unrelated products or a whole account statement makes it harder to see the question and can disclose unnecessary information.",
+      "source_sha256": "a77e4b237101f7296cc230bd6cd6384b0bfa9fdab124ff7e547a67ed61d666bb",
+      "raw_target_sha256": "0815a2d3a5fb6848556c0ac523c79a5cdd437c95d6fa0e3e87a3eba3e5e5fede",
+      "translation": "W kolejnej wiadomości zacznij od tego, co pozostało do wyjaśnienia i jakiej odpowiedzi potrzebujesz. Możesz na przykład zapytać, gdzie zaksięgowano zatwierdzony zwrot 15 za wskazane zamówienie, i podać datę zatwierdzenia. Dołącz odpowiedni fragment uzgodnienia i historii transakcji. Zdjęcia innych produktów lub cały wyciąg z konta utrudniają odczytanie pytania i mogą niepotrzebnie ujawnić prywatne dane."
+    }
+  ]
+}

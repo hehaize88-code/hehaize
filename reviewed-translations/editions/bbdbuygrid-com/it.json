@@ -3,9 +3,9 @@
   "locale": "it",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "c50e4cacf97ee5e638c6502f5d8b46750aae3fa9651ad01207a21a712718d260",
-  "effective_dictionary_sha256": "1686e74f3007d3da98a53baf50327c8f43e235cbec792fe2001263e15703b401",
+  "effective_dictionary_sha256": "6e144de7ead168f379c1d278bef32a5fd16d43f5df62a6d71315dd2c557d25b6",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -111,6 +111,12 @@
       "source_sha256": "6d74cd0af2705ef2674d0803d5cd5455ce671597134771f5fe0a3d679ea9df53",
       "raw_target_sha256": "e57b0b62d34169b3814d03ea1b4464cec7fbc328f4c02a0538462576fd80b3ed",
       "translation": "Se vuoi confrontare il costo del berretto con un'alternativa locale, devi ancora decidere come allocare il costo del pacco condiviso. Una divisione uguale attribuisce 25 al berretto. Una divisione per peso misurato potrebbe attribuire molto meno. Nessuna delle due divisioni appare sulla fattura del vettore a meno che la fattura specifici effettivamente il trasporto per pezzo. Mantenere una colonna etichettata allocazione personale. Permette ad un'altra persona di capire come hai raggiunto il confronto senza scambiare il tuo metodo per un addebito imposto da BBDBuy."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "e63a6bf1d2d9d3a7cc130e4bfe16d7b1cc894a1acc74a8cad81688cfd168cc5d",
+      "translation": "Immagina di ordinare tre quaderni a 18 ciascuno, con una spesa di spedizione interna di 6: il totale iniziale è 60. Il venditore comunica poi che nel colore richiesto restano solo due quaderni e propone un nuovo totale di 46. A prima vista sembra un prezzo più basso. Tuttavia, due quaderni a 20 ciascuno, più 6 di spedizione, costano proprio 46. Il prezzo unitario è salito e riceveresti meno pezzi. Confrontare soltanto i totali nasconde entrambe le differenze."
     }
   ]
 }

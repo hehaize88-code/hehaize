@@ -1,0 +1,140 @@
+{
+  "site": "bbdbuygrid-com",
+  "locale": "sv",
+  "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
+  "raw_dictionary_sha256": "8e0051f6d346baa4bd2c7e0ac69810e6a6a309b9b8d94c53e49089247642839f",
+  "effective_dictionary_sha256": "b90251e7cd527a708d25ec893d271091f02754e4057f78a2c4a80dc19dbd44bb",
+  "checked_entries": 324,
+  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology.",
+  "reviewed_flags": [
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "365c8efdcc8f3c14e3c09dc0448104ed063b55d009cca4a0935c5a0f946b6b1d",
+      "raw_target_sha256": "ffcb087799e383b68638c4e77f6c9e0783ca357e543050dda41f3164888f385f",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "9aca0fdddaddb22cb515f532d9731d5ac64e3ff054eedcb2f2aee067622a8490",
+      "raw_target_sha256": "5acd474324fe97076660babb84f5b18a9d6bccd70de74444bcc395390c83e505",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "541dcd12d1a818dd77a0bd3bf732d7adc7cc8f8b2bb88e2c235803b34623f37d",
+      "raw_target_sha256": "fc5b80b018d4291146a7b61d3cdf5f492c37fdab1ee9e71a7d9bbade13418e1e",
+      "resolution": "Verified Swedish kilo denotes kg, and example values agree."
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "034a3a5ae73a2dd3198c5e051b15a34026001a77e501e9e6a6fd86e649a3c3a0",
+      "raw_target_sha256": "4d13b19bbf319fc882e671e49059efce756c38cad4c587d5531408d2e9d3801d",
+      "resolution": "Verified Swedish kilo denotes kg, and example values agree."
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "287f33805abaa226267f00596e3637b799cdc9e1a57764e11530747af9ef5229",
+      "resolution": "Verified Swedish kilo denotes kg, and example values agree."
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "How to read a BBDBuy payment record when an order has several charges",
+      "source_sha256": "2e683e05a22119f9c40cec68118679f768658e9f230c4d89ffbb9208a29c5a96",
+      "raw_target_sha256": "92955a8bc03f10043fdbca10ec7ced70381f6d6077452f0d63846771f764e9c6",
+      "translation": "Så läser du betalningsuppgifterna hos BBDBuy när en order har flera avgifter"
+    },
+    {
+      "source": "BBDBuy purchase or parcel forwarding? Choose the right workflow for your seller order",
+      "source_sha256": "365c8efdcc8f3c14e3c09dc0448104ed063b55d009cca4a0935c5a0f946b6b1d",
+      "raw_target_sha256": "ffcb087799e383b68638c4e77f6c9e0783ca357e543050dda41f3164888f385f",
+      "translation": "Köp via BBDBuy eller enbart vidarebefordran av ett paket: vilken tjänst passar?"
+    },
+    {
+      "source": "BBDBuy multipack quantities: count what the seller will actually send",
+      "source_sha256": "3f25642571da3f03a9cffe24d44654d6faf4b48928f4a3655ead9735f7a2cb77",
+      "raw_target_sha256": "318addd35fac6511a1af0bd6b50f6c2fef3ed5a18f8db527cafe52a8bc0cee95",
+      "translation": "Flerpack hos BBDBuy: räkna ut hur många varor säljaren skickar"
+    },
+    {
+      "source": "Before accepting a BBDBuy seller price change, reconstruct the two offers",
+      "source_sha256": "e2791753b1fe688b2829fb8e5debc640859aa8ec80c01fdf9c6e793aae303957",
+      "raw_target_sha256": "a7d55fd0d70f229529f2f4920f2034ca7fb9a73a4be3e7d74dbaecd6aa6c7fde",
+      "translation": "Säljaren ändrar priset hos BBDBuy: jämför det ursprungliga erbjudandet med det nya"
+    },
+    {
+      "source": "A BBDBuy warehouse arrival notice: how to tell which parcel arrived",
+      "source_sha256": "80d04839358e00ea253d3c9cfb0f5a8a86927e4130adc169b247f90edea7352b",
+      "raw_target_sha256": "3e43f54d5cc3bb3513e7493cd198ceefde6a9407c26c0f03713229880034d0bb",
+      "translation": "Ankomstbesked från BBDBuys lager: så ser du vilket paket som har kommit fram"
+    },
+    {
+      "source": "Match BBDBuy warehouse photos to the right item, colour and size",
+      "source_sha256": "9aca0fdddaddb22cb515f532d9731d5ac64e3ff054eedcb2f2aee067622a8490",
+      "raw_target_sha256": "5acd474324fe97076660babb84f5b18a9d6bccd70de74444bcc395390c83e505",
+      "translation": "Kontrollera vara, färg och storlek på BBDBuys lagerbilder"
+    },
+    {
+      "source": "Keeping or removing a shoebox with BBDBuy: compare two packing plans",
+      "source_sha256": "cf39d98c7607a4a4846533c2aaaccc5d81c2dbe8c7f38fa40772267d2cfb87f0",
+      "raw_target_sha256": "bf083a5b6de0c3128b610a1b3b180cdc50266c93773c61d505153f63e4dea1d1",
+      "translation": "Behålla eller ta bort skokartongen? Jämför två sätt att packa hos BBDBuy"
+    },
+    {
+      "source": "Enter parcel dimensions correctly in a BBDBuy shipping estimate",
+      "source_sha256": "5eb842601780f729c12dbc6985b5fccdffe6c9d91d363bc669a4648e85503d61",
+      "raw_target_sha256": "f85cb10995f61134f6ff1e7ce67b3d8daec76205f45d474110a7f3648e0d3adb",
+      "translation": "Så anger du paketets mått i BBDBuys fraktkalkyl"
+    },
+    {
+      "source": "Comparing BBDBuy shipping lines for one parcel without mixing quotes",
+      "source_sha256": "d15393b64e300b311b6b060fd6b3e2ec6f4027fb3dc965ff0ed1c6d10cf0d8f3",
+      "raw_target_sha256": "c525beb0bc8fc4c2f1230593190291c00d2c3752fbd08fa06e0c3f1a10503784",
+      "translation": "Jämför BBDBuys fraktalternativ för samma paket"
+    },
+    {
+      "source": "Prepare a BBDBuy refund enquiry with an item, amount and destination",
+      "source_sha256": "b824579d8556fb3cc1934d8524c8af7bb8f82b619276d01970c192de0be6ec59",
+      "raw_target_sha256": "64e73ed07c72d843297482c71379f31915f397bf1371f7963ee282f07c388013",
+      "translation": "Fråga BBDBuy om en återbetalning: ange vara, belopp och vart pengarna ska gå"
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "5705400b970496c2ed91a86eb01678402922a82253bdc539e76c45f9880e17e8",
+      "translation": "Tänk dig att du beställer tre anteckningsböcker för 18 styck. Den inrikes frakten kostar 6, så det ursprungliga totalpriset är 60. Säljaren meddelar sedan att bara två anteckningsböcker finns kvar i den önskade färgen och föreslår ett nytt totalpris på 46. Det ser billigare ut, men två böcker för 20 styck plus 6 i frakt blir också 46. Styckpriset har gått upp och du får färre böcker. Om du bara jämför totalsummorna missar du båda förändringarna."
+    },
+    {
+      "source": "Take an illustrative order for two medium work shirts and a separate order for a cap. Assume the confirmation lists the shirts at 75 each and a single domestic delivery charge of 12. The purchase subtotal is 162. The cap costs 38 with domestic delivery included, bringing the amount paid for the two purchases to 200 in the same currency. At this point both purchase records can be closed as paid even though there is no figure yet for the journey from the warehouse to your home.",
+      "source_sha256": "21cd8ec9cdc033be40fa29a6b7f3fc5473879babedda43400b722373cecd0db5",
+      "raw_target_sha256": "5e038fe6621b043cd50c536a10c2166cb730e6f50165d36ac337c98fefb55212",
+      "translation": "Ta en illustrativ beställning på två medelstora arbetsskjortor och en separat beställning på en keps. Anta att bekräftelsen listar skjortorna till 75 per styck och en enda inhemsk leveransavgift på 12. Delsumman för köpet är 162. Kepsen kostar 38 med inhemsk leverans ingår, vilket gör det belopp som betalas för de två köpen till 200 i samma valuta. Vid denna tidpunkt kan båda inköpsposterna stängas som betalda även om det ännu inte finns någon siffra för resan från lagret till ditt hem."
+    },
+    {
+      "source": "If you want to compare the cost of the cap with a local alternative, you still need to decide how to allocate the shared parcel cost. An equal split attributes 25 to the cap. A split by measured weight might attribute much less. Neither division appears on the carrier invoice unless the invoice actually itemizes freight per piece. Keep a column labelled personal allocation. It allows another person to understand how you reached the comparison without mistaking your method for a charge imposed by BBDBuy.",
+      "source_sha256": "6d74cd0af2705ef2674d0803d5cd5455ce671597134771f5fe0a3d679ea9df53",
+      "raw_target_sha256": "f07e0e1a9cb60692a8d8f70f3e88ee6670e443720edfe28e3f6626ecc5131afc",
+      "translation": "Om du vill jämföra kostnaden för kepsen med ett lokalt alternativ, måste du fortfarande bestämma hur du ska fördela kostnaden för det delade paketet. En lika split ger 25 till kepsen. En uppdelning efter uppmätt vikt kan tillskriva mycket mindre. Ingen av dessa uppdelningar visas på transportörens faktura om inte fakturan faktiskt specificerar frakt per styck. Håll en kolumn märkt personlig tilldelning. Det gör det möjligt för en annan person att förstå hur du kom fram till jämförelsen utan att missta din metod för en avgift som införts av BBDBuy."
+    },
+    {
+      "source": "Keep the quote reproducible",
+      "source_sha256": "56bd03dff5d82ca50922d04e1b2be8dad1b369e2e6d314cd12221fd2092255f6",
+      "raw_target_sha256": "adf8e5ffef6d7e6ab03f7a2a055cc020ca1eb6a41689555b3537a64db5119481",
+      "translation": "Spara underlaget så att prisuppgiften kan kontrolleras"
+    },
+    {
+      "source": "Now change one input deliberately. If the parcel is lighter after repacking, check whether both lines use the lower actual weight or whether dimensional billing or a minimum charge still governs. Recapture both quotes. A saving on one route does not automatically transfer to the other. When only one remains eligible, keep a note of why the other disappeared. This can explain the result if support later reproduces it using the old dimensions.",
+      "source_sha256": "17c8e613676ec8768a58f1d66c1e750362c538222b5fba239c361c3b655a062b",
+      "raw_target_sha256": "f5e43233f11a015c195ecca4ac7146e50a3274546de42b1cf637876ac0fb1a32",
+      "translation": "Nu ändra en ingång medvetet. Om paketet är lättare efter ompackning, kontrollera om båda raderna använder den lägre faktiska vikten eller om dimensionell fakturering eller en minimiavgift fortfarande gäller. Ta fram nya prisuppgifter för båda alternativen. En besparing på en rutt överförs inte automatiskt till den andra. När bara en förblir berättigad, hålla en anteckning om varför den andra försvann. Detta kan förklara resultatet om supporten senare återskapar det med de gamla dimensionerna."
+    },
+    {
+      "source": "Suppose three hypothetical lines appear against an early estimate. Line One is inexpensive but cannot accept the parcel after the longest side is measured. Line Two accepts the dimensions and quotes 38 in your chosen currency. Line Three quotes 41 and displays an included service you want. Remove Line One from the price ranking. Its earlier figure may have been accurate for the earlier dimensions; it no longer describes an available choice for this box.",
+      "source_sha256": "4a8aa8e23c741ca70b0eb12d46f7e27003b3576f0b3d92ab1341fa122f64fe3a",
+      "raw_target_sha256": "1fa9ab1d855b98e39060bb67102ba9b35a6b5238eb6d7e570cdcfa5ba487aeeb",
+      "translation": "Anta att tre fraktalternativ visas i en tidig kalkyl. Det första är billigt men tillåter inte paketet när den längsta sidan har mätts. Det andra godtar måtten och kostar 38 i din valda valuta. Det tredje kostar 41 och inkluderar en tjänst du vill ha. Stryk det första alternativet från prisjämförelsen. Dess tidigare pris kan ha varit korrekt för de tidigare måtten, men alternativet är inte längre tillgängligt för den här kartongen."
+    }
+  ]
+}

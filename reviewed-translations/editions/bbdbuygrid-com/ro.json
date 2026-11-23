@@ -3,9 +3,9 @@
   "locale": "ro",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "b52f864313dca52498cd99e7b02e11ad5d556f2bf1f45c6cdec16b20d51e49f3",
-  "effective_dictionary_sha256": "2dd784c230dc2e72559cf741de087253b1fab80dc32f1eeda32a9eabdbd43ca0",
+  "effective_dictionary_sha256": "adfc4d5c127a42be094e968490aacedc954cb27b791ffefa922de77f471fd007",
   "checked_entries": 324,
-  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
+  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -141,6 +141,12 @@
       "source_sha256": "e8f4acadfcb919533f345d943c4e9b2f2d0bdb4e5e2dace3b06f30f8e56fab63",
       "raw_target_sha256": "9d9695753f4ce6f27e153d4695118464d4545986819b9fe7656d6d2878e5ad69",
       "translation": "A patra greșeală este să presupui că două etichete asemănătoare indică produse identice. Doi pantofi de același model, dar de mărimi diferite, pot avea același cod de model. Verifică la amândoi sistemul de numerotare și mărimea de pe etichetă. A cincea greșeală este să confunzi fotografiile vânzătorului cu cele din depozit. Primele arată ce a fost prezentat la vânzare. Fotografiile de inspecție ale comenzii arată detaliile vizibile ale produselor primite. Păstrează ambele seturi și notează sursa fiecăruia."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "d9dbf048017b3f52113b7f3748af6ccbab5163c5ace18bcaeb208c728d078bc5",
+      "translation": "Să presupunem că ai comandat trei caiete la 18 bucata, iar transportul intern costă 6. Totalul inițial este 60. Mai târziu vânzătorul spune că au rămas doar două caiete în culoarea cerută și propune un total nou de 46. La prima vedere oferta este mai ieftină. Dar două caiete la 20 bucata, plus 6 pentru transport, costă tot 46. Prețul pe bucată a crescut și primești mai puține produse. Dacă te uiți numai la total, nu observi niciuna dintre aceste schimbări."
     }
   ]
 }

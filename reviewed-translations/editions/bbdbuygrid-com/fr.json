@@ -3,9 +3,9 @@
   "locale": "fr",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "a2be24ada70614c9abbb21144d45bcec100e232edc1e19985db26c2ec87ade98",
-  "effective_dictionary_sha256": "b188f0a99015adc6b39b93c64a03d8c4ddf165d8ca97801e1e731c67678b8cdc",
+  "effective_dictionary_sha256": "42e5dc018f50006763b44ed39450759260b30c45693e56c513b1e2e21ca8f997",
   "checked_entries": 324,
-  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
+  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -111,6 +111,12 @@
       "source_sha256": "79715f5fbeaa547f7c816bb6b2905d83268f420c917eb8560ffcf078af72278a",
       "raw_target_sha256": "87ee829b4e47edb4d60f6a6a9ab83a287fac85f1780047dcf909a9d932643c20",
       "translation": "Avant de confirmer, vérifiez la destination, le contenu du colis, ses dimensions après emballage, son poids, le service choisi et le montant total. Après l’expédition, conservez le numéro de suivi du transporteur avec l’offre retenue. Vous pourrez ainsi relier les hypothèses de départ au service effectivement choisi. Si vous devez poser une question sur l’enlèvement, la facturation ou la livraison, ces éléments seront plus précis qu’une capture d’écran de deux prix sans contexte."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "ad4d5efccf5cc359e911d69d24f5efa3ef7601ee7d43e33f65ce19c74da49f36",
+      "translation": "Prenons trois cahiers proposés à 18 pièce, avec 6 de frais de livraison jusqu’au dépôt. Le total initial est de 60. Le vendeur annonce ensuite qu’il ne reste que deux cahiers dans la couleur demandée et propose un nouveau total de 46. À première vue, le montant a baissé. Pourtant, deux cahiers à 20 pièce plus 6 de livraison coûtent aussi 46. Le prix unitaire a augmenté et vous recevrez moins d’articles. Comparer uniquement les totaux masque les deux changements."
     }
   ]
 }

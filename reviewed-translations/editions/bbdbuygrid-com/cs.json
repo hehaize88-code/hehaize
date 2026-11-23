@@ -3,9 +3,9 @@
   "locale": "cs",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "f124caa0f9748b1a1c2c6a6e4ce85c3bfbeea5b78d61be6b956082ea984de041",
-  "effective_dictionary_sha256": "bef938b9e0357b671de7d85cc9d688ff74b3c79d6e3907017ecccf4f2fb591c3",
+  "effective_dictionary_sha256": "5c90984fba9d905f6c5c9c19d8a383c6945f2f86a74cf57a2e89179ea8143e11",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -123,6 +123,12 @@
       "source_sha256": "6d74cd0af2705ef2674d0803d5cd5455ce671597134771f5fe0a3d679ea9df53",
       "raw_target_sha256": "231405fb780f96b8e09329489eb69a4cfc5395068adc86dc6d17919316d1d54b",
       "translation": "Pokud chcete porovnat cenu kšiltovky s místní alternativou, stále se musíte rozhodnout, jak přidělit náklady na sdílený balíček. Stejné rozdělení přiřadí kšiltovce částku 25. Rozdělení podle naměřené hmotnosti by mohlo připisovat mnohem méně. Žádné z těchto rozdělení se neobjeví na faktuře dopravce, pokud faktura skutečně neuvádí náklady na jednotlivé kusy. Udržujte sloupec označený osobní alokace. To umožňuje jiné osobě pochopit, jak jste dosáhli srovnání bez záměny vaší metody za poplatek uložený společností BBDBuy."
+    },
+    {
+      "source": "Consider a hypothetical order for three notebooks initially priced at 18 each with 6 domestic delivery. Its original total is 60. Later the seller reports that only two notebooks in the requested colour remain and gives a new total of 46. At first glance the new offer is cheaper. Yet two units at 20 plus domestic delivery of 6 also total 46. The unit price has risen, and the buyer would receive fewer pieces. Comparing totals alone hides both changes.",
+      "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
+      "raw_target_sha256": "2b64c7cac6faf3b5d8f8fb137a064a9e53c84bfbce30dc443d69494db9e86297",
+      "translation": "Představte si objednávku tří sešitů po 18. Za vnitrostátní dopravu se platí dalších 6, takže původní cena celé objednávky je 60. Prodejce později oznámí, že v požadované barvě zbývají jen dva sešity a nová cena činí 46. Na první pohled je nabídka levnější. Dva sešity po 20 a doprava za 6 však také dávají 46. Cena za kus vzrostla a dostanete méně kusů. Z pouhého porovnání konečných částek by ani jedna změna nebyla zřejmá."
     }
   ]
 }
