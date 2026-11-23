@@ -1,3 +1,5 @@
+import * as guide from './qc-guide.mjs';
+import {questions} from './editorial.mjs';
 import {brandImage, faviconTag, currencyControl, currencyScript, fxRoute} from './brandfx.mjs';
 import {productBody} from './product.mjs';
 import {imageRoute} from './images.mjs';
@@ -41,10 +43,10 @@ gtag('config', 'G-FQ40MHDX1T');
  const home='/'+lang+'/';
  const langs=Object.entries(languages).map(([code,name])=>{
    const next=new URL(url);
-   next.pathname='/'+code+next.pathname.slice(lang.length+1);
+   next.pathname=/^\/en\/(faq|articles)\//.test(url.pathname) && code!=='en'?'/'+code+'/':'/'+code+next.pathname.slice(lang.length+1);
    return '<option value="'+escape(next.pathname+next.search)+'" '+(code===lang?'selected':'')+'>'+escape(name)+'</option>';
  }).join('');
- const nav=[[home+'spreadsheet/',t.catalog],[home+'#categories',t.categories],[home+'image-search/',t.imageSearch],[home+'#faq',t.faq]]
+ const nav=[[home+'spreadsheet/',t.catalog],[home+'#categories',t.categories],[home+'image-search/',t.imageSearch],[lang==='en'?home+'faq/':home+'#faq',t.faq],...(lang==='en'?[[home+'articles/','Articles']]:[])]
    .map(([link,label])=>'<a href="'+link+'">'+escape(label)+'</a>').join('');
  return '<!doctype html><html lang="'+lang+'"><head>'+analytics+'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="'+escape(new URL(url.pathname+url.search,'https://ootdbuygrid.com').href)+'">'+faviconTag()+'<title>'+escape(heading)+' · OOTDBuy</title><style>'+css+theme+'</style></head><body><header><div class="wrap"><a class="word" href="'+home+'" aria-label="OOTDBuy">'+brandImage()+'</a><nav class="nav">'+nav+'</nav><div class="tools"><select aria-label="'+escape(t.language)+'" onchange="location.href=this.value+location.hash">'+langs+'</select>'+currencyControl(lang)+'<a class="btn signup" href="https://ootdbuy.com/register">'+escape(t.register)+'</a></div></div></header><main class="wrap">'+body+'<footer class="foot"><a href="'+home+'">OOTDBuy</a> · '+escape(t.catalog)+'</footer></main>'+currencyScript(lang)+'<script>'+titleTranslationClient()+'</script></body></html>';
 }
@@ -63,6 +65,23 @@ export default {async fetch(req,env,ctx){
  if(!Object.hasOwn(languages,lang))return response('404',404);
  const t=labels(lang),home='/'+lang+'/',params=u.searchParams,sec=sections.includes(params.get('cat'))?params.get('cat'):'AllProducts';
  const sheet=home+'spreadsheet/';
+
+ if(lang==='en' && u.pathname===home+'articles/'){
+   const body='<section><h1>OOTDBuy articles</h1><h2><a href="'+home+'articles/'+guide.slug+'/">'+escape(guide.title)+'</a></h2><p>'+escape(guide.introduction)+'</p></section>';
+   return response(page(lang,'Articles',body,u));
+ }
+ if(lang==='en' && u.pathname===home+'articles/'+guide.slug+'/'){
+   const sections=guide.sections.map(([heading,paragraphs])=>'<section><h2>'+escape(heading)+'</h2>'+paragraphs.map(p=>'<p>'+escape(p)+'</p>').join('')+'</section>').join('');
+   const schema={'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.introduction,mainEntityOfPage:'https://ootdbuygrid.com'+u.pathname};
+   const body='<article style="max-width:72ch;margin:auto"><a href="'+home+'articles/">Articles</a><h1>'+escape(guide.title)+'</h1><p>'+escape(guide.introduction)+'</p>'+sections+'<p>Further reading: <a href="https://ootdbuy.com/helpcenter">OOTDBuy inspection and after-sales help</a> · <a href="https://repsheet.net/spreadsheet/ootdbuy">Repsheet OOTDBuy spreadsheet and historical QC references</a> · <a href="'+home+'faq/">Spreadsheet FAQ</a></p></article><script type="application/ld+json">'+JSON.stringify(schema)+'</script>';
+   return response(page(lang,guide.title,body,u));
+ } if(u.pathname==='/en/faq/'){
+   const entries=questions.map(([q,a])=>'<details><summary>'+escape(q)+'</summary><p>'+escape(a)+'</p></details>').join('');
+   const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:questions.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))};
+   const body='<section><h1>OOTDBuy spreadsheet FAQ</h1>'+entries+'<p><a href="https://ootdbuy.com/helpcenter">OOTDBuy Help Center</a></p></section><script type="application/ld+json">'+JSON.stringify(schema).replaceAll('<','\\u003c')+'</script>';
+   return response(page(lang,'Spreadsheet FAQ',body,u));
+ }
+
  const link=(changes,hash='catalog')=>{const v=new URLSearchParams(params);for(const [k,value] of Object.entries(changes))value?v.set(k,value):v.delete(k);return sheet+'?'+escape(v.toString())+'#'+hash};
  try{
  if(parts[2]==='p'&&sections.includes(parts[3])&&/^\d+\.html$/.test(parts[4])){
