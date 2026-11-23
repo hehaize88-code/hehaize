@@ -3,9 +3,9 @@
   "locale": "hr",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "b248191358e1d86ec6a6550a5b4279e387dbb2bf2220adb452ad8195be7a2a09",
-  "effective_dictionary_sha256": "0e86f06fe09d71f16a8d4a3b751638d60e2634f2fe5e58001052a1b202612bae",
+  "effective_dictionary_sha256": "4ae7769bf3a3f119f0332cfff111dd4e302ef643cf6539b43db3bcc32ed64d4c",
   "checked_entries": 324,
-  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
+  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -213,6 +213,12 @@
       "source_sha256": "4a8aa8e23c741ca70b0eb12d46f7e27003b3576f0b3d92ab1341fa122f64fe3a",
       "raw_target_sha256": "a34f6363b8d5901ef3da58e646a200a7d9c55d31b6d218ae7ca8f8d3f670c398",
       "translation": "Pretpostavimo da se tri hipotetske linije pojavljuju protiv rane procjene. Prva linija je jeftina, ali ne može prihvatiti paket nakon što se izmjeri najduža strana. Druga linija prihvaća dimenzije i kotacije 38 u odabranoj valuti. Treća linija navodi 41 i prikazuje uključenu uslugu koju želite. Uklonite prvu mogućnost dostave iz rangiranja cijena. Njegova ranija slika mogla je biti točna za ranije dimenzije; ona više ne opisuje raspoloživi izbor za ovu kutiju."
+    },
+    {
+      "source": "In the notebook example a useful reply would state that you requested three units in one colour, that the new offer appears to cover two, and that you want confirmation of the unit price and domestic charge. Add what should happen if the third unit is unavailable. That gives the agent a bounded action rather than asking them to guess whether quantity, colour or price matters most.",
+      "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
+      "raw_target_sha256": "c8dd112f34cfd6fd5e1271a3070ad778fee312915959f92d865192a65a63c2ab",
+      "translation": "U primjeru s bilježnicama koristan bi odgovor bio da ste zatražili tri jedinice u jednoj boji, da se čini da nova ponuda pokriva dvije te da želite potvrdu jedinične cijene i domaće pristojbe. Dodajte što bi se trebalo dogoditi ako treća jedinica nije dostupna. To agentu daje ograničenu akciju umjesto da ga pita da pogodi je li količina, boja ili cijena najvažnija."
     }
   ]
 }

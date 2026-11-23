@@ -3,9 +3,9 @@
   "locale": "sk",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "4fb9c81515eaf5edaef095af0b8c69789661f40fc47286033ef22e5262875551",
-  "effective_dictionary_sha256": "2b1d933bd4e21d4a23498fff2842f0c86f49cbbf1cfb10364d7aac50f79b3dc4",
+  "effective_dictionary_sha256": "44edebf7274c31bdaa7b1afb790077b1d16a0853957c8e025af4eb799da7ad26",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -129,6 +129,18 @@
       "source_sha256": "2bee72ebb82f10d0cd0204aa9e83cf8d91f8cec5f2de312005ac9a33b75d816d",
       "raw_target_sha256": "c457ee1ad302bbfbc8f0dd3503e58459d4bd4f9db11901b3687aad10a9758673",
       "translation": "Predstavte si objednávku troch zošitov po 18. Za vnútroštátnu dopravu zaplatíte ďalších 6, takže pôvodná cena objednávky je 60. Predajca potom oznámi, že v požadovanej farbe ostali iba dva zošity a nová celková cena je 46. Na prvý pohľad sa ponuka zdá lacnejšia. Dva zošity po 20 a doprava za 6 však tiež vychádzajú na 46. Cena za kus stúpla a dostanete menej kusov. Samotným porovnaním konečných súm obe zmeny prehliadnete."
+    },
+    {
+      "source": "If the replacement offer instead includes three differently bound notebooks at 20 with delivery included, it also totals 60. That matches the original price exactly while changing what was bought. Look at the new thickness, binding, colour and quantity before agreeing. Matching a number cannot compensate for losing the feature that made you choose the original item. Treat an offer with a different option as a new purchasing decision in its own right.",
+      "source_sha256": "3e9b77d857808f1a7567ef6463c7a745dbb051766ebc1192c67c1dc77a63e59c",
+      "raw_target_sha256": "12d28484c18c07c20e5b76af9dfce05210bf0f5fd538658b350c80f82eb12743",
+      "translation": "Ak náhradná ponuka namiesto toho obsahuje tri rôzne viazané zošity za 20 vrátane doručenia, je to tiež 60. To sa zhoduje s pôvodnou cenou presne pri zmene toho, čo bolo zakúpené. Pred dohodnutím sa pozrite na novú hrúbku, väzbu, farbu a množstvo. Zhoda čísla nemôže nahradiť stratu funkcie, ktorá vás prinútila vybrať si pôvodnú položku. S ponukou s inou možnosťou zaobchádzajte ako s novým rozhodnutím o kúpe."
+    },
+    {
+      "source": "In the notebook example a useful reply would state that you requested three units in one colour, that the new offer appears to cover two, and that you want confirmation of the unit price and domestic charge. Add what should happen if the third unit is unavailable. That gives the agent a bounded action rather than asking them to guess whether quantity, colour or price matters most.",
+      "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
+      "raw_target_sha256": "7a33147ad7a0d710ca2fb2fa287225de8f56be1d1e86b25fb8c1e391d7d33da8",
+      "translation": "V príklade so zošitmi by užitočná odpoveď uvádzala, že ste požadovali tri jednotky v jednej farbe, že nová ponuka pokrýva dve a že chcete potvrdenie jednotkovej ceny a vnútroštátneho poplatku. Pridajte, čo by sa malo stať, ak tretia jednotka nie je k dispozícii. To dáva agentovi obmedzenú akciu namiesto toho, aby ich požiadal, aby uhádli, či je najdôležitejšie množstvo, farba alebo cena."
     }
   ]
 }

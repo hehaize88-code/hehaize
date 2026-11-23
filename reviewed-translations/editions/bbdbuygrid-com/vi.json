@@ -3,9 +3,9 @@
   "locale": "vi",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "048ff52d6ab53002212a2fbcd5d18a84b02aab1f4eeb83fe8951248ced3d35d1",
-  "effective_dictionary_sha256": "817fa56f5afe0038d891706c8138eab7d4570db1ccd5bfb7d40721e7390499bf",
+  "effective_dictionary_sha256": "3d64a219efd2408fbf0f24179a0ebf8fb187cf1147061b4d1575fe3e769ec673",
   "checked_entries": 324,
-  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology.",
+  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example.",
   "reviewed_flags": [
     {
       "issue": "new digit or localized conversion",
@@ -195,6 +195,18 @@
       "source_sha256": "fad99593e82bb215977fe0868003993378dc379bc224a58b1c37bc7b40b035f0",
       "raw_target_sha256": "6534bd1d5776290bf40f45c63f2481ca0751152a49c449af487f9aee189b2f91",
       "translation": "Nếu người bán đề nghị hoàn một khoản tiền, hãy xác nhận khoản đó dành cho món nào. Lưu lại đơn hàng, số lượng thực nhận, phản hồi của người bán và nơi nhận tiền hoàn. Nếu hàng thay thế được gửi trong một kiện khác, hãy ghi riêng mã vận đơn mới cho đến khi đối chiếu xong số lượng của đơn ban đầu."
+    },
+    {
+      "source": "In the notebook example a useful reply would state that you requested three units in one colour, that the new offer appears to cover two, and that you want confirmation of the unit price and domestic charge. Add what should happen if the third unit is unavailable. That gives the agent a bounded action rather than asking them to guess whether quantity, colour or price matters most.",
+      "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
+      "raw_target_sha256": "98023f3bf487142e2c2e1c35d2cd564a3f42cff39f87114064b9ebcadfdf2e7e",
+      "translation": "Trong ví dụ về những cuốn sổ tay, một câu trả lời hữu ích sẽ nói rằng bạn yêu cầu ba đơn vị trong một màu, rằng đề nghị mới dường như bao gồm hai, và rằng bạn muốn xác nhận giá đơn vị và phí nội địa. Thêm điều gì sẽ xảy ra nếu đơn vị thứ ba không có sẵn. Điều đó cho phép nhân viên một hành động giới hạn hơn là yêu cầu họ đoán xem số lượng, màu sắc hay giá trị là quan trọng nhất."
+    },
+    {
+      "source": "If the replacement offer instead includes three differently bound notebooks at 20 with delivery included, it also totals 60. That matches the original price exactly while changing what was bought. Look at the new thickness, binding, colour and quantity before agreeing. Matching a number cannot compensate for losing the feature that made you choose the original item. Treat an offer with a different option as a new purchasing decision in its own right.",
+      "source_sha256": "3e9b77d857808f1a7567ef6463c7a745dbb051766ebc1192c67c1dc77a63e59c",
+      "raw_target_sha256": "472a802df2296eb95d9859d68448a6e88fe85eb2efebaeba26edc82f554213e3",
+      "translation": "Nếu đề nghị thay thế thay vào đó bao gồm ba cuốn sổ có kiểu đóng gáy khác, giá mỗi cuốn là 20 và đã bao gồm phí giao hàng, nó cũng có tổng cộng 60. Điều đó tương ứng chính xác với giá ban đầu trong khi thay đổi những gì đã được mua. Xem độ dày mới, màu sắc và số lượng trước khi đồng ý. Chọn một con số không thể bù đắp cho việc mất đi tính năng đã khiến bạn chọn mục đích ban đầu. Xử lý một đề nghị với một tùy chọn khác như một quyết định mua mới trong chính quyền của nó."
     }
   ]
 }
