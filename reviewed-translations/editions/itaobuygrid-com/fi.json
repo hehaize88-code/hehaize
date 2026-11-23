@@ -3,7 +3,7 @@
   "locale": "fi",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "7543a3eb1f4c65a13d89179a41948d9c757076f8d8a5cf1dfa3a209ada5f20fb",
-  "effective_dictionary_sha256": "c9ed0b0cf4136387a269437cd9a797f9ced2ba744693851c0e6ae289763ca075",
+  "effective_dictionary_sha256": "4999149682ed699118204fbcb1c26cba491b7d80d959839b9fc751711222b14c",
   "checked_entries": 277,
   "review_scope": "Ten headlines, every automated finding and reproducible samples, exchange-rate direction and scope, physical notebook and bag dimensions, flat garment and body measurement examples. Targeted review, not exhaustive copyediting. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
@@ -195,6 +195,90 @@
       "source_sha256": "2d2846c36a169bcfe29484ce528b1662cb3c1ffc3ab28271cc628d2583c65e9c",
       "raw_target_sha256": "f87ba4e9dc6728c569602df55633e2621c2e3b29ae1bf1b950e974df774a5301",
       "translation": "Oletetaan, että myyjä tarjoaa yhtä tyynynpäällistä, kahden päällisen paria sekä tyynyä sisätyynyineen. Haluat kaksi päällistä. Jos ensimmäinen hinta on yhden päällisen hinta, kerro oikean vaihtoehdon kappalehinta kahdella, ellei paria myydä erikseen. Jos parille on ilmoitettu oma hinta, vertaa sitä kahden yksittäisen päällisen yhteishintaan. Merkitse vertailutaulukkoon, mitä yksi myyntiyksikkö sisältää. Pelkkä ”rivi A: 79, rivi B: 88” jättää tärkeimmän oletuksen piiloon."
+    },
+    {
+      "source": "Suppose a row shows a dark overshirt with two chest pockets. You want that exact style in medium. The row tells you enough to open a candidate. It cannot, by itself, establish that the seller still offers the same construction in medium at the displayed amount. Write down the listing feature that made the row worth opening. Doing this at the start helps prevent a visually similar substitute from becoming your choice simply because it was the easiest option available on the next page.",
+      "source_sha256": "982044994d95b1ab8eb1424d4efdf93d1dbd3987f55959aa276b1267fc8c5c42",
+      "raw_target_sha256": "6c39912e8e2932f91c95f0001f4eb247c4204a70200f87c0a9c899425b8d829b",
+      "translation": "Oletetaan, että taulukon rivillä näkyy tumma päällyspaita, jossa on kaksi rintataskua. Haluat juuri tämän mallin M-koossa. Rivi antaa aiheen avata ilmoitus, mutta se ei osoita, että myyjällä on yhä sama rakenne M-koossa taulukon hinnalla. Merkitse, mikä yksityiskohta sai sinut avaamaan tuotteen. Silloin et huomaamatta vaihda valintaasi samannäköiseen vaatteeseen vain siksi, että se on seuraavan sivun helpoin vaihtoehto."
+    },
+    {
+      "source": "In the overshirt example, count the pockets and inspect the arrangement of the buttons. Then locate the dark option and see whether medium is available for that option. If neutral and dark versions have different constructions, select each to determine which specifications apply. A screenshot showing the dark cover photograph and a separate dropdown listing medium does not prove that dark medium is a valid combination. Try selecting the combination and read what the page actually displays for it.",
+      "source_sha256": "3851d6ab67f3aab0db2c60d8ae69626bd41f6df063dccd46105bf761130e1afd",
+      "raw_target_sha256": "85a7988f3fb8ef031d8a2a9531d5c2d9660a9bf6daf6f51d3324b9a7513163df",
+      "translation": "Laske päällyspaidan taskut ja tarkista nappien sijoittelu. Valitse tumma väri ja selvitä, onko juuri siitä saatavilla M-koko. Jos neutraalin ja tumman version rakenne poikkeaa, valitse kumpikin erikseen ja lue sen tiedot. Kuvakaappaus tummasta paidasta ja erillinen valikko, jossa näkyy M, eivät vielä todista yhdistelmän olevan saatavilla. Kokeile valita tumma M ja lue, mitä sivu siitä kertoo."
+    },
+    {
+      "source": "When catalogue, seller and agent disagree, identify the first step at which the information changes. If the seller page no longer contains medium, the original row may be stale. If medium exists on the seller page but the agent import omits it, the question concerns the import or manual ordering route. If both list medium but the checkout subtotal changes after quantity is set, investigate unit pricing or domestic shipping. Different disagreements call for different evidence and different questions.",
+      "source_sha256": "b43e9c9fccefa42595c73d0a848b489322e9ff1518046889b8a467d325e2803e",
+      "raw_target_sha256": "8f60c7242c5f409fb57c924b74215cc93178ebd333f21cb8cb219152607bf681",
+      "translation": "Jos taulukon, myyjän ja ostovälittäjän tiedot eroavat, paikanna vaihe, jossa muutos tapahtuu. Jos myyjän sivulla ei enää ole M-kokoa, taulukon rivi voi olla vanhentunut. Jos M näkyy myyjällä muttei välittäjän tuomissa vaihtoehdoissa, kysy tietojen tuonnista tai manuaalisesta tilauksesta. Jos M näkyy molemmissa mutta summa muuttuu määrän valitsemisen jälkeen, tarkista kappalehinta ja kotimaan toimitus. Eri ristiriidat vaativat eri tiedot ja kysymykset."
+    },
+    {
+      "source": "Send the smallest useful packet: original marketplace URL, item identifier, the option text you selected and one screenshot of the mismatch. Describe the outcome you want. For example, ask whether the dark-medium overshirt can be obtained at the selected unit price before purchase. Avoid authorizing a substitute merely by asking about availability. If you would accept another colour, specify which colour and any price limit in a separate instruction after you have seen the alternative listing.",
+      "source_sha256": "d9af5d5ff5a8c4832c94f90ffb6b73de2f140f24e661efa02646bcbd64a7b900",
+      "raw_target_sha256": "388a9b5172864edd1da38b5de91a42c9332b20d6bb31d79bdb89865aecd0e5c0",
+      "translation": "Lähetä alkuperäinen markkinapaikan linkki, tuotetunniste, valitsemasi vaihtoehdon teksti ja yksi kuvakaappaus eroavuudesta. Kerro, mitä haluat selvittää. Voit esimerkiksi kysyä ennen ostoa, saako tumman M-kokoisen päällyspaidan valitulla kappalehinnalla. Saatavuuskysymys ei tarkoita lupaa valita korvaava tuote. Jos hyväksyt toisen värin, tarkista sen ilmoitus ja anna väri sekä mahdollinen hintaraja erillisessä ohjeessa."
+    },
+    {
+      "source": "A buyer might need a medium jacket and large trousers. Look at whether the complete-set selector allows independent sizes for each piece. A single size for the set may mean both pieces use that size, while separate individual options may give you more control. Do not assume a free-text note will override a fixed bundle. Ask whether the seller can supply your requested size mix and at what price before treating the mixed set as an available offer.",
+      "source_sha256": "b761022d0d2286ab24ec618fe5c942ce7ccba065469128f304f4b19588dc1129",
+      "raw_target_sha256": "a2e964a4c94039e3290d5c4f19ff4493e7a0a7832f1a314007fb08e806fbc246",
+      "translation": "Ostaja voi tarvita M-kokoisen takin ja L-kokoiset housut. Selvitä, saako kokonaisen asun osille valita eri koot. Yksi kokovalinta voi tarkoittaa samaa kokoa molemmille, kun taas erilliset tuotteet voi ehkä valita vapaammin. Vapaamuotoinen viesti ei välttämättä muuta kiinteää settivaihtoehtoa. Kysy ennen päätöstä, toimittaako myyjä pyydetyn kokoyhdistelmän ja mihin hintaan."
+    },
+    {
+      "source": "Create a compact expected-contents record at checkout. For example: one complete dark set; jacket medium and trousers large as confirmed; two garments total; no cap; selected option code and seller reference saved. Add the actual price and currency. This list gives the warehouse check a definite target. It also avoids confusing an agent-facing purchase confirmation that says “quantity one” with evidence that only a single physical garment should arrive.",
+      "source_sha256": "e4ffac11c86643dbcd239a93371da242294809d5d8658cf1a8626ad1bb89b187",
+      "raw_target_sha256": "83f93c3e20f46070f492318a691fe0d9e56f2b10de0e68c600897e52059b6f4f",
+      "translation": "Kirjaa kassalla odotettu sisältö lyhyesti. Esimerkiksi yksi kokonainen tumma asu, vahvistetusti takki kokoa M ja housut kokoa L, yhteensä kaksi vaatetta, ei lippalakkia. Tallenna valintakoodi ja myyjän viite sekä todellinen hinta ja valuutta. Näin varastotarkastuksella on selkeä vertailukohta. Myyjän tai välittäjän tilausvahvistuksen ”määrä yksi” voi tarkoittaa yhtä settiä, vaikka saapuvia vaatteita on kaksi."
+    },
+    {
+      "source": "Imagine that you ordered two blue shirts in medium and a blue shirt in large. A front view of a blue shirt confirms something about colour and design but little about size or count. Make three expected-unit rows, then attach photographs only where the account record supports the connection. If the warehouse supplies one shared gallery for a group, keep it at group level until you can identify the pieces. This prevents a single attractive photograph from being counted as a separate check for all three clothes.",
+      "source_sha256": "d485bfc2e899849158c1b47690268e0f5ef1beaaeedca43ac0b61cb5b5b7b559",
+      "raw_target_sha256": "6e35eb42f879f052ea97f00231dd72c78c5c4d08e68b80c63294210cbe0c4775",
+      "translation": "Oletetaan, että tilasit kaksi sinistä M-kokoista paitaa ja yhden sinisen L-kokoisen paidan. Yhden paidan etukuva kertoo jotain väristä ja mallista muttei juuri koosta tai kappalemäärästä. Tee kolmelle odotetulle paidalle omat rivit ja liitä kuva riville vain, kun tilaustiedot yhdistävät ne toisiinsa. Jos varasto antaa ryhmälle yhden yhteisen kuvakansion, säilytä se ryhmän yhteydessä, kunnes paidat voi tunnistaa. Silloin yhtä hyvää kuvaa ei lasketa kolmeksi erilliseksi tarkastukseksi."
+    },
+    {
+      "source": "Save or reference the original photograph with its warehouse entry. When you crop or draw an arrow, retain the original and label the copy by purpose, such as “medium tag enlarged” or “stitch near right cuff.” Cropping can be excellent for showing a small detail, yet it can remove the surroundings that associate the detail with the actual garment. Put a full-unit overview beside the close-up. If both images come from a sequence, keep their original order or note their source.",
+      "source_sha256": "0e11c5c4d1c4d6eb0319a2a51ec1b3d5c445520b70ca5d6180b551a77b7a1bdb",
+      "raw_target_sha256": "f275633951424991eda94958190315ff53dc53567a946cf02bba5342cfad9616",
+      "translation": "Säilytä alkuperäinen kuva tai linkki siihen oikean varastomerkinnän yhteydessä. Jos rajaat kuvaa tai lisäät nuolen, pidä alkuperäinen ja nimeä kopio tarkoituksen mukaan, esimerkiksi ”M-kokolapun suurennos” tai ”ommel oikean hihansuun vieressä”. Rajaus voi näyttää pienen yksityiskohdan, mutta jättää pois sen ympäristön, joka yhdistää sen vaatteeseen. Pidä lähikuvan vieressä koko vaatteen kuva. Säilytä kuvasarjan alkuperäinen järjestys tai merkitse lähde."
+    },
+    {
+      "source": "For the three shirts, check visible colour and pattern from the overviews, then inspect size evidence individually. A picture labelled medium and another labelled large can show two label values without proving there are two medium shirts. A third overview showing all three units together can help establish quantity. If labels still cannot be linked to distinct garments, record the uncertainty. The right response may be a single grouped photograph with the relevant labels visible, subject to what the warehouse can provide.",
+      "source_sha256": "feeedb500d1ce95f2be7de629992c8e8a4eb372bfb3879f2f75b66f4fc102696",
+      "raw_target_sha256": "25ffcdacad3b24b1821acffc9d352b84749c07d6f0ca2b4c672630e59b21e644",
+      "translation": "Tarkista kolmen paidan näkyvät värit ja kuviot yleiskuvista ja tutki sitten koko kerrallaan sitä koskevat todisteet. Yhdessä kuvassa lukeva M ja toisessa L todistavat kahden eri kokomerkinnän olemassaolon. Niistä ei selviä, onko M-kokoisia paitoja kaksi. Yleiskuva kaikista kolmesta voi vahvistaa kappalemäärän. Jos et pysty yhdistämään lappuja eri paitoihin, merkitse se epäselväksi ja pyydä mahdollisuuksien mukaan yhteiskuvaa, jossa asianomaiset laput näkyvät."
+    },
+    {
+      "source": "Consider a case where medium shirt A matches the design, medium shirt B has no readable label and large shirt C has a clear label but the cuff is folded out of view. Two distinct evidence requests emerge. If size is crucial for B, ask for its attached label. If a cuff issue is suspected for C, ask to see that cuff unfolded. Do not ask for three new full galleries indiscriminately. Specific requests use the existing evidence and tell the warehouse exactly what remains unresolved.",
+      "source_sha256": "e1b697dfd4328aac986d23f88f0117b5efaac8b6d652c055f4d3c131e5dc9134",
+      "raw_target_sha256": "6982e1fb1afcf5c8610f78d5ceb18b8edf40722d6e6659fcd5e6f3581e36ae11",
+      "translation": "Oletetaan, että M-kokoinen paita A vastaa mallia, M-kokoisen paidan B kokolappu ei ole luettavissa ja L-kokoisen paidan C lappu näkyy mutta hihansuu on taitettu piiloon. Tästä seuraa kaksi eri pyyntöä. Jos B:n koko ratkaisee, pyydä kuvaa sen omasta lapusta. Jos epäilet C:n hihansuussa virhettä, pyydä kuvaa suoristetusta hihansuusta. Kolmea kokonaan uutta kuvasarjaa ei tarvita, kun pyynnöt täsmentävät juuri avoimet asiat."
+    },
+    {
+      "source": "If you suspect a photograph belongs to the wrong entry, describe the conflict rather than accusing the warehouse of reusing an image. For example, one entry is for a blue medium but the visible label reads large, while the next entry is for a blue large. Ask whether the label picture was attached to the intended unit. Keep the earlier images while the check proceeds. If a corrected image arrives, record what it replaces so that the superseded picture does not accidentally guide a later decision.",
+      "source_sha256": "bc0dcdb54b2b47de13ed684cef0425c98e5a189e42a02af481c2c1f03a9827be",
+      "raw_target_sha256": "f0d4cd58950d007a5e896990b0bd3dee245f2c64f999125853245c739965148a",
+      "translation": "Jos arvelet kuvan liittyvän väärään varastomerkintään, kuvaa epäselvyys. Esimerkiksi ensimmäinen merkintä koskee sinistä M-kokoista paitaa mutta kuvan lapussa lukee L, ja seuraava merkintä koskee sinistä L-kokoa. Kysy, onko lähikuva liitetty oikeaan tuotteeseen. Säilytä aiemmat kuvat tarkistuksen ajan. Jos saat korjatun kuvan, merkitse, minkä kuvan se korvaa, jotta vanhaa kuvaa ei myöhemmin käytetä päätöksessä."
+    },
+    {
+      "source": "Keep at least one image connecting the unit with the size label. This matters if several similar pieces arrived. Compare the warehouse result with your reference and chart using the same convention. If the label is correct but dimensions appear different, describe that discrepancy precisely: ordered medium, medium tag visible, measured back length from collar seam differs from the medium chart using the same endpoints. That gives support an observable question to investigate. Saying only “this looks small” leaves too many explanations open.",
+      "source_sha256": "232a442d3b83199a5107fcb26447f1dc54a1f43a915294ea4f7b498fc824e6fb",
+      "raw_target_sha256": "7876874107dcf37b2b04e95a9821c5495079bcc321183668208e89360d582e81",
+      "translation": "Säilytä ainakin yksi kuva, josta näkee sekä vaatteen että sen kokolapun. Se on tärkeää, jos samanlaisia vaatteita saapui useita. Vertaa varaston mittausta omaan vaatteeseesi ja taulukkoon samalla mittaustavalla. Jos koko vastaa tilausta mutta mitat poikkeavat, määrittele ero: tilaus M, lapussa M, kauluksen saumasta mitattu selkäpituus poikkeaa M-koon taulukosta samoilla mittapisteillä. Tällainen kuvaus antaa tuelle tarkistettavan kysymyksen. Pelkkä ”näyttää pieneltä” ei riitä erottamaan mahdollisia syitä."
+    },
+    {
+      "source": "If several units are involved, list each option separately. For example, specify one model A in medium and two model B in large. Keep the total number of units as a cross-check, but do not let it replace the distribution. Three correct units in the wrong size mix still leave an incorrect order. When the order confirmation appears, compare every line with the note and check the price after selection. Resolve a discrepancy before treating the purchase as settled.",
+      "source_sha256": "73611ca35d5b816a2112f6aea8d36b2446c74827c52cb5417a4779fa3d7762a7",
+      "raw_target_sha256": "3d55602b528f51d3b993bc275bfc92bf9e74c49de2d3d3d04007634c3c7b87e2",
+      "translation": "Jos tilaat useita tuotteita, luettele jokainen vaihtoehto erikseen. Esimerkiksi yksi mallin A vaate koossa M ja kaksi mallin B vaatetta koossa L. Säilytä kokonaismäärä tarkistusta varten, mutta älä korvaa kokojakoa sillä. Kolme tuotetta väärillä koilla on silti väärä tilaus. Vertaa vahvistuksen jokaista riviä ohjeeseen ja tarkista valinnan jälkeinen hinta. Selvitä erot ennen kuin pidät ostoa vahvistettuna."
+    },
+    {
+      "source": "The first sentence should specify the listing, original option and quantity. The second can state the visual identifier and any relevant size. A final sentence can state what to do if the option is unavailable. For instance, a buyer could request one medium jacket in the seller's labelled option B, identified by its pale body and black sleeves, and ask to be contacted before any substitution. This supplies a concrete check without asking the agent to guess which property is essential.",
+      "source_sha256": "e5c5f5314873c84b6e8796aef30b4b1f7f1da7860252aa775d42f70c08597edd",
+      "raw_target_sha256": "8e670b7ab58483fa55d309443d46bd7b4da0623368c1b0c91ae1b61e632c5c15",
+      "translation": "Kerro ensimmäisessä virkkeessä ilmoitus, myyjän alkuperäinen vaihtoehto ja määrä. Toisessa voit kuvailla näkyvän tuntomerkin ja koon. Viimeinen kertoo, miten toimitaan, jos versiota ei ole. Voit esimerkiksi pyytää yhden M-kokoisen takin myyjän vaihtoehdosta B, jonka vartalo-osa on vaalea ja hihat mustat, ja pyytää yhteydenottoa ennen vaihtoa. Näin välittäjä tietää, mikä pitää tarkistaa."
     }
   ]
 }

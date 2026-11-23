@@ -3,7 +3,7 @@
   "locale": "el",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "77789dc1218e066e6e0adcd08482321966a37c1afdec7f1e349bc98ad3a3f86e",
-  "effective_dictionary_sha256": "bf66cbb22f2990ae845d6bfafe77793a5c389b60b713213c6c5c714ddd4b1e02",
+  "effective_dictionary_sha256": "b6f74d8c294e20434b6756b5ae1ef76d67b4b209ed1206739309e785afbb8fa3",
   "checked_entries": 277,
   "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, paper notebook, garment chest width and circumference, colour codes, rates and ordering terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing.",
   "reviewed_flags": [
@@ -1083,6 +1083,102 @@
       "source_sha256": "ca379ec9fe5750e7a4d8470a6a4bcbf1a5667559dd854924388bbba2ccafc20a",
       "raw_target_sha256": "2dc81e74d595701d1d402b2430204e254f9928644a3104153aadbebd2b5df0bb",
       "translation": "Αφού υποβάλετε τον σύνδεσμο του πωλητή στο iTaoBuy, δείτε την τελική σύνοψη. Ο προγραμματιστής αναφέρει ότι η υπηρεσία διαβάζει τους συνδέσμους που επικολλάτε και εκτελεί αγορές κατόπιν αιτήματος. Ελέγξτε μήπως επανήλθε η προεπιλογή αντί της παραλλαγής που θέλατε. Διαβάστε ξανά την ποσότητα και την τιμή μονάδας: μια δίχρωμη εκδοχή μπορεί να πωλείται ως σετ και άλλη επιλογή να περιλαμβάνει μόνο το μπουφάν. Η σημείωση συμπληρώνει την επιλογή, αλλά δεν διορθώνει από μόνη της λάθος γραμμή αγοράς."
+    },
+    {
+      "source": "Suppose a row shows a dark overshirt with two chest pockets. You want that exact style in medium. The row tells you enough to open a candidate. It cannot, by itself, establish that the seller still offers the same construction in medium at the displayed amount. Write down the listing feature that made the row worth opening. Doing this at the start helps prevent a visually similar substitute from becoming your choice simply because it was the easiest option available on the next page.",
+      "source_sha256": "982044994d95b1ab8eb1424d4efdf93d1dbd3987f55959aa276b1267fc8c5c42",
+      "raw_target_sha256": "a731e664ceb82924cc46b0702c5f52f3feca107c524761e1ea983a768206cb63",
+      "translation": "Έστω ότι μια γραμμή δείχνει σκούρο πουκάμισο-τζάκετ με δύο τσέπες στο στήθος και θέλετε ακριβώς αυτό το σχέδιο σε μέγεθος M. Η γραμμή αρκεί για να ανοίξετε μια πιθανή καταχώριση. Δεν αποδεικνύει όμως ότι ο πωλητής διαθέτει ακόμη την ίδια κατασκευή σε M στην αναγραφόμενη τιμή. Σημειώστε ποιο χαρακτηριστικό σάς έκανε να ανοίξετε τη σελίδα, ώστε να μην καταλήξετε ακούσια σε παρόμοιο υποκατάστατο επειδή ήταν πιο εύκολο να επιλεγεί."
+    },
+    {
+      "source": "In the overshirt example, count the pockets and inspect the arrangement of the buttons. Then locate the dark option and see whether medium is available for that option. If neutral and dark versions have different constructions, select each to determine which specifications apply. A screenshot showing the dark cover photograph and a separate dropdown listing medium does not prove that dark medium is a valid combination. Try selecting the combination and read what the page actually displays for it.",
+      "source_sha256": "3851d6ab67f3aab0db2c60d8ae69626bd41f6df063dccd46105bf761130e1afd",
+      "raw_target_sha256": "eea9eb3a590c1c597465613f28c110abce237da3ab89ac264b2a96b3e780c065",
+      "translation": "Για το πουκάμισο-τζάκετ, μετρήστε τις τσέπες και δείτε πώς είναι τοποθετημένα τα κουμπιά. Επιλέξτε τη σκούρα παραλλαγή και ελέγξτε αν διατίθεται σε M. Αν η ουδέτερη και η σκούρα εκδοχή έχουν διαφορετική κατασκευή, εξετάστε καθεμία χωριστά. Μια σκούρα κεντρική φωτογραφία και ένα χωριστό μενού που αναφέρει M δεν αποδεικνύουν ότι ο συνδυασμός είναι διαθέσιμος. Δοκιμάστε τον και διαβάστε τι εμφανίζεται."
+    },
+    {
+      "source": "When catalogue, seller and agent disagree, identify the first step at which the information changes. If the seller page no longer contains medium, the original row may be stale. If medium exists on the seller page but the agent import omits it, the question concerns the import or manual ordering route. If both list medium but the checkout subtotal changes after quantity is set, investigate unit pricing or domestic shipping. Different disagreements call for different evidence and different questions.",
+      "source_sha256": "b43e9c9fccefa42595c73d0a848b489322e9ff1518046889b8a467d325e2803e",
+      "raw_target_sha256": "5094d3b80c4957ce62a1cc0fb8cc1d666e6ff1662315ba183c61b4d6aff3688c",
+      "translation": "Αν κατάλογος, πωλητής και μεσάζων διαφέρουν, βρείτε το πρώτο σημείο όπου αλλάζει η πληροφορία. Αν ο πωλητής δεν αναφέρει πια το μέγεθος M, η γραμμή ίσως είναι παλιά. Αν το M υπάρχει στον πωλητή αλλά λείπει μετά την εισαγωγή, ρωτήστε για την εισαγωγή ή για χειροκίνητη παραγγελία. Αν το M υπάρχει και στις δύο σελίδες αλλά το υποσύνολο αλλάζει μόλις ορίσετε ποσότητα, ελέγξτε τιμή μονάδας και εσωτερικά μεταφορικά. Κάθε περίπτωση θέλει διαφορετικά στοιχεία."
+    },
+    {
+      "source": "Send the smallest useful packet: original marketplace URL, item identifier, the option text you selected and one screenshot of the mismatch. Describe the outcome you want. For example, ask whether the dark-medium overshirt can be obtained at the selected unit price before purchase. Avoid authorizing a substitute merely by asking about availability. If you would accept another colour, specify which colour and any price limit in a separate instruction after you have seen the alternative listing.",
+      "source_sha256": "d9af5d5ff5a8c4832c94f90ffb6b73de2f140f24e661efa02646bcbd64a7b900",
+      "raw_target_sha256": "6a54a05653ce722aa7e36c262425114137b057c505062dceed5bdc48ebad9788",
+      "translation": "Στείλτε την αρχική διεύθυνση της καταχώρισης, τον κωδικό προϊόντος, το κείμενο της επιλογής και ένα στιγμιότυπο της διαφοράς. Ρωτήστε, για παράδειγμα, αν διατίθεται το σκούρο πουκάμισο-τζάκετ σε μέγεθος M στη συγκεκριμένη τιμή μονάδας. Ερώτηση για τη διαθεσιμότητα δεν αποτελεί έγκριση αντικατάστασης. Αν δέχεστε άλλο χρώμα, δείτε πρώτα την εναλλακτική καταχώριση και δώστε χωριστή οδηγία με το χρώμα και τυχόν ανώτατη τιμή."
+    },
+    {
+      "source": "A buyer might need a medium jacket and large trousers. Look at whether the complete-set selector allows independent sizes for each piece. A single size for the set may mean both pieces use that size, while separate individual options may give you more control. Do not assume a free-text note will override a fixed bundle. Ask whether the seller can supply your requested size mix and at what price before treating the mixed set as an available offer.",
+      "source_sha256": "b761022d0d2286ab24ec618fe5c942ce7ccba065469128f304f4b19588dc1129",
+      "raw_target_sha256": "e47741c3e23de92c8abbe23dcc58605c6f1b1a3b1a1ffe33318af1f6570ebafb",
+      "translation": "Ίσως χρειάζεστε μπουφάν μεγέθους M και παντελόνι L. Ελέγξτε αν η επιλογή του πλήρους σετ επιτρέπει διαφορετικά μεγέθη ανά κομμάτι. Ένα μέγεθος για το σετ μπορεί να ισχύει και για τα δύο, ενώ οι χωριστές επιλογές μπορεί να δίνουν περισσότερη ευελιξία. Μην θεωρήσετε ότι μια ελεύθερη σημείωση αλλάζει μια προκαθορισμένη σύνθεση. Ρωτήστε τον πωλητή αν προσφέρει τον συνδυασμό και σε ποια τιμή."
+    },
+    {
+      "source": "Create a compact expected-contents record at checkout. For example: one complete dark set; jacket medium and trousers large as confirmed; two garments total; no cap; selected option code and seller reference saved. Add the actual price and currency. This list gives the warehouse check a definite target. It also avoids confusing an agent-facing purchase confirmation that says “quantity one” with evidence that only a single physical garment should arrive.",
+      "source_sha256": "e4ffac11c86643dbcd239a93371da242294809d5d8658cf1a8626ad1bb89b187",
+      "raw_target_sha256": "35266b3d2f0e166dcdde91a29de44a87fbe1b6252d456222d76c08e3f6e672da",
+      "translation": "Στο ταμείο καταγράψτε τι αναμένετε: ένα πλήρες σκούρο σετ, μπουφάν M και παντελόνι L όπως επιβεβαιώθηκαν, δύο ρούχα συνολικά, χωρίς καπέλο. Φυλάξτε τον κωδικό επιλογής, τα στοιχεία του πωλητή, την πραγματική τιμή και το νόμισμα. Έτσι υπάρχει σαφής βάση για τον έλεγχο της αποθήκης. Η ένδειξη «ποσότητα ένα» στη σύνοψη μπορεί να σημαίνει ένα σετ με δύο τεμάχια."
+    },
+    {
+      "source": "Imagine that you ordered two blue shirts in medium and a blue shirt in large. A front view of a blue shirt confirms something about colour and design but little about size or count. Make three expected-unit rows, then attach photographs only where the account record supports the connection. If the warehouse supplies one shared gallery for a group, keep it at group level until you can identify the pieces. This prevents a single attractive photograph from being counted as a separate check for all three clothes.",
+      "source_sha256": "d485bfc2e899849158c1b47690268e0f5ef1beaaeedca43ac0b61cb5b5b7b559",
+      "raw_target_sha256": "c687d5f5065cbada07fe8878d0c89ac8ca93df11ffb5d8ea8da7c8ff4c0b0c2f",
+      "translation": "Έστω ότι παραγγείλατε δύο μπλε πουκάμισα M και ένα μπλε L. Μια μπροστινή φωτογραφία δείχνει χρώμα και σχέδιο, αλλά ελάχιστα για μέγεθος ή ποσότητα. Φτιάξτε τρεις εγγραφές και συνδέστε φωτογραφία μόνο όταν ο λογαριασμός τεκμηριώνει σε ποιο τεμάχιο ανήκει. Αν η αποθήκη έδωσε κοινή συλλογή, κρατήστε την ως ομαδική μέχρι να ταυτοποιηθούν τα επιμέρους ρούχα. Έτσι μία φωτογραφία δεν θα μετρηθεί ως τρεις ξεχωριστοί έλεγχοι."
+    },
+    {
+      "source": "Save or reference the original photograph with its warehouse entry. When you crop or draw an arrow, retain the original and label the copy by purpose, such as “medium tag enlarged” or “stitch near right cuff.” Cropping can be excellent for showing a small detail, yet it can remove the surroundings that associate the detail with the actual garment. Put a full-unit overview beside the close-up. If both images come from a sequence, keep their original order or note their source.",
+      "source_sha256": "0e11c5c4d1c4d6eb0319a2a51ec1b3d5c445520b70ca5d6180b551a77b7a1bdb",
+      "raw_target_sha256": "bbe95dd625113b7651b498e7d79ebf0f1d2a9de42fa33a1f072501841750b6b3",
+      "translation": "Φυλάξτε την αρχική φωτογραφία μαζί με την εγγραφή αποθήκης. Αν την περικόψετε ή βάλετε βέλος, κρατήστε το πρωτότυπο και ονομάστε το αντίγραφο ανάλογα με τον σκοπό, π.χ. «μεγέθυνση ετικέτας μεγέθους M» ή «ραφή κοντά στη δεξιά μανσέτα». Η περικοπή αναδεικνύει μια λεπτομέρεια αλλά μπορεί να κρύψει σε ποιο ρούχο ανήκει. Βάλτε δίπλα μια γενική λήψη και φυλάξτε την αρχική σειρά ή την πηγή των εικόνων."
+    },
+    {
+      "source": "For the three shirts, check visible colour and pattern from the overviews, then inspect size evidence individually. A picture labelled medium and another labelled large can show two label values without proving there are two medium shirts. A third overview showing all three units together can help establish quantity. If labels still cannot be linked to distinct garments, record the uncertainty. The right response may be a single grouped photograph with the relevant labels visible, subject to what the warehouse can provide.",
+      "source_sha256": "feeedb500d1ce95f2be7de629992c8e8a4eb372bfb3879f2f75b66f4fc102696",
+      "raw_target_sha256": "3364ecd653bd24631222a8cd7349a60960730359a2b5b3d3820e0d995c1e18e7",
+      "translation": "Ελέγξτε χρώμα και σχέδιο των τριών πουκαμίσων στις γενικές λήψεις και μετά το μέγεθος κάθε ρούχου χωριστά. Μία εικόνα ετικέτας M και μία ετικέτας L δείχνουν δύο μεγέθη, αλλά δεν αποδεικνύουν ότι υπάρχουν δύο πουκάμισα M. Μια τρίτη εικόνα και των τριών μαζί βοηθά στην καταμέτρηση. Αν οι ετικέτες δεν συνδέονται με συγκεκριμένα πουκάμισα, σημειώστε την αβεβαιότητα και ρωτήστε αν μπορεί να δοθεί κοινή φωτογραφία με τις σχετικές ετικέτες ορατές."
+    },
+    {
+      "source": "Each row can contain expected item, observed evidence, unresolved question and next action. Keep the observation narrow. For example, “medium label visible on warehouse entry A” is stronger and more precise than “correct size and perfect fit.” Fit requires additional measurements or a physical try-on. Similarly, “front print appears centred in this image” is a more defensible statement than a broad quality verdict. The difference matters when another person later relies on the notes to approve international shipment.",
+      "source_sha256": "48722a57c2b8409ac73935e81851a163fe81656e7d9da017072b6a7de6e0660a",
+      "raw_target_sha256": "59e00dcd11009d0a934982a7cd0a6dc1b291631a5fa05494903bc459fba287ee",
+      "translation": "Σε κάθε γραμμή γράψτε τι περιμένατε, τι φαίνεται, ποια ερώτηση εκκρεμεί και τι ακολουθεί. Το «στην εγγραφή αποθήκης A φαίνεται ετικέτα M» είναι ακριβέστερο από το «σωστό μέγεθος και τέλεια εφαρμογή», αφού η εφαρμογή χρειάζεται μετρήσεις ή δοκιμή. Ομοίως, το «η στάμπα φαίνεται κεντραρισμένη σε αυτή την εικόνα» τεκμηριώνεται καλύτερα από μια γενική κρίση ποιότητας. Κάποιος άλλος μπορεί να βασιστεί στη σημείωση για να εγκρίνει διεθνή αποστολή."
+    },
+    {
+      "source": "Consider a case where medium shirt A matches the design, medium shirt B has no readable label and large shirt C has a clear label but the cuff is folded out of view. Two distinct evidence requests emerge. If size is crucial for B, ask for its attached label. If a cuff issue is suspected for C, ask to see that cuff unfolded. Do not ask for three new full galleries indiscriminately. Specific requests use the existing evidence and tell the warehouse exactly what remains unresolved.",
+      "source_sha256": "e1b697dfd4328aac986d23f88f0117b5efaac8b6d652c055f4d3c131e5dc9134",
+      "raw_target_sha256": "c6c7fab66f2deb82d01287ffa44d0356b2b5003426d8734788cf67b682790230",
+      "translation": "Έστω ότι το πουκάμισο A μεγέθους M ταιριάζει στο σχέδιο, στο B μεγέθους M η ετικέτα δεν διαβάζεται και στο C μεγέθους L η ετικέτα φαίνεται, αλλά η μανσέτα είναι διπλωμένη. Αν για το B έχει σημασία το μέγεθος, ζητήστε λήψη της ετικέτας πάνω στο συγκεκριμένο ρούχο. Για το C ζητήστε ανοιχτή τη μανσέτα που σας προβληματίζει. Δεν χρειάζονται τρεις νέες πλήρεις συλλογές. Ζητήστε από την αποθήκη ακριβώς όσα δεν έλυσαν οι υπάρχουσες εικόνες."
+    },
+    {
+      "source": "If you suspect a photograph belongs to the wrong entry, describe the conflict rather than accusing the warehouse of reusing an image. For example, one entry is for a blue medium but the visible label reads large, while the next entry is for a blue large. Ask whether the label picture was attached to the intended unit. Keep the earlier images while the check proceeds. If a corrected image arrives, record what it replaces so that the superseded picture does not accidentally guide a later decision.",
+      "source_sha256": "bc0dcdb54b2b47de13ed684cef0425c98e5a189e42a02af481c2c1f03a9827be",
+      "raw_target_sha256": "12c4c49ac0c6d004cebc8db6b74e1ca70fa768326ef6f32bc7a1b0ba758fcaff",
+      "translation": "Αν υποπτεύεστε ότι μια εικόνα μπήκε σε λάθος εγγραφή, περιγράψτε την ασυμφωνία. Για παράδειγμα, η μία εγγραφή αφορά μπλε πουκάμισο M αλλά στη φωτογραφία η ετικέτα γράφει L, ενώ η επόμενη εγγραφή πράγματι αφορά μπλε L. Ρωτήστε αν η φωτογραφία της ετικέτας συνδέθηκε με το σωστό τεμάχιο. Κρατήστε τις παλιές εικόνες όσο γίνεται ο έλεγχος. Αν έρθει διορθωμένη φωτογραφία, σημειώστε ποια αντικαθιστά για να μη βασιστείτε αργότερα στη λανθασμένη."
+    },
+    {
+      "source": "If you ordered two similar products, describe the affected variant as well as the product. “Green roll-top pouch, medium, quantity one” is easier to match than “the bag.” Where the original order displays a seller style code, include it alongside your plain-language description. A warehouse label may use the code while the order page uses a translated name. Those two pieces of information allow the agent to follow the same item across records without needing to interpret a photograph of similar green products.",
+      "source_sha256": "ea378339e62b60ea08b1544c99fb6102862c0982a6a789bc968221ad2e4b7b14",
+      "raw_target_sha256": "aa7253550ad8e36078e3460d55b9d23140cea5cb7e6fe96f409dce5046d2f988",
+      "translation": "Αν παραγγείλατε δύο παρόμοια προϊόντα, περιγράψτε και την παραλλαγή: «πράσινο τσαντάκι με ρολαριστό κλείσιμο, μέγεθος M, ένα τεμάχιο» αναγνωρίζεται ευκολότερα από το «η τσάντα». Αν η αρχική παραγγελία δείχνει κωδικό σχεδίου του πωλητή, προσθέστε τον δίπλα στην περιγραφή. Η ετικέτα αποθήκης μπορεί να έχει κωδικό, ενώ η σελίδα παραγγελίας μεταφρασμένο όνομα. Έτσι ο μεσάζων βρίσκει το ίδιο αντικείμενο χωρίς εικασίες από παρόμοιες φωτογραφίες."
+    },
+    {
+      "source": "Keep at least one image connecting the unit with the size label. This matters if several similar pieces arrived. Compare the warehouse result with your reference and chart using the same convention. If the label is correct but dimensions appear different, describe that discrepancy precisely: ordered medium, medium tag visible, measured back length from collar seam differs from the medium chart using the same endpoints. That gives support an observable question to investigate. Saying only “this looks small” leaves too many explanations open.",
+      "source_sha256": "232a442d3b83199a5107fcb26447f1dc54a1f43a915294ea4f7b498fc824e6fb",
+      "raw_target_sha256": "a9564255b35a883ed0256ba13c108aadc70b744cea41d398307d20aff1006f7b",
+      "translation": "Κρατήστε τουλάχιστον μία εικόνα που συνδέει το συγκεκριμένο ρούχο με την ετικέτα μεγέθους, ιδιαίτερα αν έφτασαν παρόμοια τεμάχια. Συγκρίνετε τη μέτρηση της αποθήκης με το δικό σας ρούχο και τον πίνακα χρησιμοποιώντας την ίδια μέθοδο. Περιγράψτε με ακρίβεια μια διαφορά: παραγγέλθηκε M, φαίνεται ετικέτα M, αλλά το μήκος πλάτης από τη ραφή του γιακά διαφέρει από τον πίνακα M με τα ίδια σημεία μέτρησης. Αυτό μπορεί να διερευνηθεί. Το «φαίνεται μικρό» αφήνει πολλές ερμηνείες."
+    },
+    {
+      "source": "If several units are involved, list each option separately. For example, specify one model A in medium and two model B in large. Keep the total number of units as a cross-check, but do not let it replace the distribution. Three correct units in the wrong size mix still leave an incorrect order. When the order confirmation appears, compare every line with the note and check the price after selection. Resolve a discrepancy before treating the purchase as settled.",
+      "source_sha256": "73611ca35d5b816a2112f6aea8d36b2446c74827c52cb5417a4779fa3d7762a7",
+      "raw_target_sha256": "265c1b768af57947bde8c9cd27c72c3f7ea89bc347c68c6b784e453505a193f3",
+      "translation": "Αν αγοράζετε περισσότερα τεμάχια, γράψτε κάθε επιλογή χωριστά: π.χ. ένα μοντέλο A σε M και δύο μοντέλα B σε L. Κρατήστε το συνολικό πλήθος για διασταύρωση χωρίς να χάσετε την κατανομή. Τρία τεμάχια με λάθος συνδυασμό μεγεθών παραμένουν λάθος παραγγελία. Όταν εμφανιστεί η επιβεβαίωση, αντιπαραβάλετε κάθε γραμμή με τη σημείωση και ελέγξτε την τιμή μετά την επιλογή. Λύστε τυχόν διαφορά πριν θεωρήσετε την αγορά οριστική."
+    },
+    {
+      "source": "The first sentence should specify the listing, original option and quantity. The second can state the visual identifier and any relevant size. A final sentence can state what to do if the option is unavailable. For instance, a buyer could request one medium jacket in the seller's labelled option B, identified by its pale body and black sleeves, and ask to be contacted before any substitution. This supplies a concrete check without asking the agent to guess which property is essential.",
+      "source_sha256": "e5c5f5314873c84b6e8796aef30b4b1f7f1da7860252aa775d42f70c08597edd",
+      "raw_target_sha256": "5d99787a439580710cbcf04a2de55c9449974db5a985e4a659c15e7787075e1a",
+      "translation": "Στην πρώτη πρόταση δώστε την καταχώριση, την αρχική επιλογή και την ποσότητα. Στη δεύτερη γράψτε οπτικό γνώρισμα και μέγεθος. Στην τελευταία εξηγήστε τι να γίνει αν δεν υπάρχει απόθεμα. Για παράδειγμα, ζητήστε ένα μπουφάν M στην επιλογή B του πωλητή, με ανοιχτόχρωμο κορμό και μαύρα μανίκια, και να επικοινωνήσουν μαζί σας πριν από οποιαδήποτε αντικατάσταση. Έτσι ο μεσάζων ξέρει ποια χαρακτηριστικά να ελέγξει."
     }
   ]
 }

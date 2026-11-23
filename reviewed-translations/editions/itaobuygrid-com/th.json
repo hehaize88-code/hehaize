@@ -3,7 +3,7 @@
   "locale": "th",
   "source_set_sha256": "ddea28b596d3eae2575f177356f6beb47f91f6d247047dbf4fa800248c3375bb",
   "raw_dictionary_sha256": "7658cf7b7af72a3cdd6428c1d932ff871858f499575a9effd32df439852b7d0e",
-  "effective_dictionary_sha256": "e0f8e9fb0d3795a375f662478432407ad962bf36e748ba37f6cc607d0efa25d7",
+  "effective_dictionary_sha256": "1a51b99829189644e9e21eab75d76fca27109aa44622ac2766d5a5ff92496552",
   "checked_entries": 277,
   "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, paper notebook, garment chest width and circumference, colour codes, rates and ordering terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing.",
   "reviewed_flags": [
@@ -903,6 +903,102 @@
       "source_sha256": "cdf4a18fdbfde5c747d26f744c9529ca56ee96376aa4abda45219597361f315d",
       "raw_target_sha256": "d42dba2386949955781031bdf52f5f3f19a77e37e71c84eeb78efe0712baa321",
       "translation": "ผู้พัฒนาอธิบายว่า iTaoBuy รับลิงก์สินค้าในตลาดออนไลน์และให้รูปตรวจสินค้าจากคลังได้ เมื่อสินค้าของคุณมาถึง ให้เทียบรายการรับเข้าคลังกับรายการสั่งซื้อ แล้วตรวจรายละเอียดรุ่นที่เห็นกับตัวเลือกที่เคยจดไว้ แม้สีดำจะดูถูกต้อง ก็ยังไม่ยืนยันว่ามีซับใน ฮู้ดตามตัวเลือก หรืออุปกรณ์ชิ้นที่สอง เลือกมุมรูปที่ช่วยตอบสิ่งที่ยังสงสัย แล้วถามว่าสามารถขอรูปมุมนั้นได้หรือไม่"
+    },
+    {
+      "source": "Suppose a row shows a dark overshirt with two chest pockets. You want that exact style in medium. The row tells you enough to open a candidate. It cannot, by itself, establish that the seller still offers the same construction in medium at the displayed amount. Write down the listing feature that made the row worth opening. Doing this at the start helps prevent a visually similar substitute from becoming your choice simply because it was the easiest option available on the next page.",
+      "source_sha256": "982044994d95b1ab8eb1424d4efdf93d1dbd3987f55959aa276b1267fc8c5c42",
+      "raw_target_sha256": "b25bc6d471c1e38c7c8bc43063ab382d10e5a89588f383e9e95a6672eaa91576",
+      "translation": "สมมติว่าในตารางมีเสื้อเชิ้ตตัวนอกสีเข้ม กระเป๋าหน้าอกสองข้าง และคุณอยากได้แบบนี้ไซซ์ M ข้อมูลในตารางช่วยให้เปิดหาสินค้าที่เป็นไปได้ แต่ยังไม่ยืนยันว่าร้านมีแบบเดิมไซซ์ M ในราคาที่แสดง จดลักษณะที่ทำให้คุณสนใจสินค้านี้ไว้ตั้งแต่แรก เพื่อป้องกันไม่ให้เผลอเลือกสินค้าคล้ายกันเพียงเพราะหาง่ายกว่าในหน้าถัดไป"
+    },
+    {
+      "source": "In the overshirt example, count the pockets and inspect the arrangement of the buttons. Then locate the dark option and see whether medium is available for that option. If neutral and dark versions have different constructions, select each to determine which specifications apply. A screenshot showing the dark cover photograph and a separate dropdown listing medium does not prove that dark medium is a valid combination. Try selecting the combination and read what the page actually displays for it.",
+      "source_sha256": "3851d6ab67f3aab0db2c60d8ae69626bd41f6df063dccd46105bf761130e1afd",
+      "raw_target_sha256": "820645f1b8a9debc10f33966e707a01ff50dd0e79db479bb38a5483b577e153c",
+      "translation": "สำหรับเสื้อเชิ้ตตัวนอกในตัวอย่าง ให้นับกระเป๋าและดูตำแหน่งกระดุม แล้วเลือกสีเข้มและตรวจว่ามีไซซ์ M สำหรับสีนั้นไหม หากสีโทนกลางกับสีเข้มตัดเย็บต่างกัน ให้เปิดแต่ละแบบเพื่อตรวจรายละเอียด รูปหลักเป็นสีเข้มและมี M ในเมนูอีกช่องยังไม่ได้แปลว่าสั่งสีเข้มไซซ์ M ได้ ลองเลือกสองอย่างนี้พร้อมกันแล้วดูผลบนหน้าเว็บ"
+    },
+    {
+      "source": "When catalogue, seller and agent disagree, identify the first step at which the information changes. If the seller page no longer contains medium, the original row may be stale. If medium exists on the seller page but the agent import omits it, the question concerns the import or manual ordering route. If both list medium but the checkout subtotal changes after quantity is set, investigate unit pricing or domestic shipping. Different disagreements call for different evidence and different questions.",
+      "source_sha256": "b43e9c9fccefa42595c73d0a848b489322e9ff1518046889b8a467d325e2803e",
+      "raw_target_sha256": "56038b7fb6169583b703b241357a0d57b56619e8341e27149987d3e5cfab6dd6",
+      "translation": "เมื่อข้อมูลในแค็ตตาล็อก หน้าร้าน และหน้าตัวแทนไม่ตรงกัน ให้หาขั้นแรกที่ข้อมูลเปลี่ยน หากหน้าร้านไม่มีไซซ์ M แล้ว ตารางอาจล้าสมัย หากหน้าร้านมี M แต่หน้าที่นำเข้าของตัวแทนไม่มี ให้ถามเรื่องการนำเข้าลิงก์หรือสั่งแบบกรอกเอง ถ้าทั้งสองหน้ามี M แต่ยอดย่อยเปลี่ยนหลังระบุจำนวน ให้ตรวจราคาต่อชิ้นและค่าขนส่งภายในประเทศ ปัญหาแต่ละแบบต้องใช้คำถามและหลักฐานต่างกัน"
+    },
+    {
+      "source": "Send the smallest useful packet: original marketplace URL, item identifier, the option text you selected and one screenshot of the mismatch. Describe the outcome you want. For example, ask whether the dark-medium overshirt can be obtained at the selected unit price before purchase. Avoid authorizing a substitute merely by asking about availability. If you would accept another colour, specify which colour and any price limit in a separate instruction after you have seen the alternative listing.",
+      "source_sha256": "d9af5d5ff5a8c4832c94f90ffb6b73de2f140f24e661efa02646bcbd64a7b900",
+      "raw_target_sha256": "6668a7fb86b10304e00897fc498c655b76601ab8422b4b7c2630fa7e301733e8",
+      "translation": "ส่ง URL ต้นฉบับของร้าน รหัสสินค้า ข้อความตัวเลือกที่เลือก และภาพหน้าจอหนึ่งรูปที่เห็นจุดไม่ตรงกัน บอกสิ่งที่อยากรู้ เช่น เสื้อเชิ้ตตัวนอกสีเข้มไซซ์ M ยังซื้อได้ในราคาต่อชิ้นที่เลือกหรือไม่ การถามว่ามีของไหมยังไม่ได้หมายถึงอนุมัติสินค้าทดแทน หากรับสีอื่นได้ ให้ดูหน้าสินค้าทางเลือกก่อน แล้วค่อยแจ้งสีและเพดานราคาแยกต่างหาก"
+    },
+    {
+      "source": "A buyer might need a medium jacket and large trousers. Look at whether the complete-set selector allows independent sizes for each piece. A single size for the set may mean both pieces use that size, while separate individual options may give you more control. Do not assume a free-text note will override a fixed bundle. Ask whether the seller can supply your requested size mix and at what price before treating the mixed set as an available offer.",
+      "source_sha256": "b761022d0d2286ab24ec618fe5c942ce7ccba065469128f304f4b19588dc1129",
+      "raw_target_sha256": "1a6894d16d91466e053faacffbe04c1a8bb75f5989ed52f758430a8b73b8ac20",
+      "translation": "ผู้ซื้ออาจต้องการแจ็กเก็ตไซซ์ M กับกางเกงไซซ์ L ตรวจว่าเมนูแบบทั้งชุดให้เลือกไซซ์แยกท่อนบนและล่างได้ไหม หากเลือกไซซ์ได้เพียงช่องเดียวอาจเป็นไซซ์เดียวกันทั้งชุด ในขณะที่ซื้อแยกชิ้นอาจเลือกได้มากกว่า อย่าคาดว่าหมายเหตุจะแก้ชุดที่กำหนดตายตัวได้ ให้ถามผู้ขายว่าจัดไซซ์ผสมที่ต้องการได้ไหมและราคาเท่าไร"
+    },
+    {
+      "source": "Create a compact expected-contents record at checkout. For example: one complete dark set; jacket medium and trousers large as confirmed; two garments total; no cap; selected option code and seller reference saved. Add the actual price and currency. This list gives the warehouse check a definite target. It also avoids confusing an agent-facing purchase confirmation that says “quantity one” with evidence that only a single physical garment should arrive.",
+      "source_sha256": "e4ffac11c86643dbcd239a93371da242294809d5d8658cf1a8626ad1bb89b187",
+      "raw_target_sha256": "690cd849c8ab920cc1970e21d16231b9ba944343612793d0581a3d304d9b0731",
+      "translation": "ตอนชำระเงินให้จดของที่ควรได้ เช่น ชุดสีเข้มครบหนึ่งชุด แจ็กเก็ต M และกางเกง L ตามที่ยืนยัน รวมเสื้อผ้าสองชิ้น ไม่มีหมวก เก็บรหัสตัวเลือกและเลขอ้างอิงผู้ขาย พร้อมราคาจริงและสกุลเงิน รายการนี้เป็นเกณฑ์ให้คลังตรวจได้ชัดเจน ข้อความ “จำนวนหนึ่ง” ในคำยืนยันอาจหมายถึงหนึ่งชุด แม้ของจริงจะมีสองชิ้น"
+    },
+    {
+      "source": "Imagine that you ordered two blue shirts in medium and a blue shirt in large. A front view of a blue shirt confirms something about colour and design but little about size or count. Make three expected-unit rows, then attach photographs only where the account record supports the connection. If the warehouse supplies one shared gallery for a group, keep it at group level until you can identify the pieces. This prevents a single attractive photograph from being counted as a separate check for all three clothes.",
+      "source_sha256": "d485bfc2e899849158c1b47690268e0f5ef1beaaeedca43ac0b61cb5b5b7b559",
+      "raw_target_sha256": "b147764f84d6e4eb7e613100709c360193a5c93921ba014dba0754f03b97af2e",
+      "translation": "สมมติว่าคุณสั่งเสื้อเชิ้ตสีน้ำเงินไซซ์ M สองตัวและไซซ์ L หนึ่งตัว รูปด้านหน้าช่วยดูสีและแบบ แต่ยังบอกไซซ์หรือจำนวนได้ไม่มาก ให้แยกสามบันทึกสำหรับของสามตัว ผูกรูปกับแต่ละตัวเฉพาะเมื่อข้อมูลในบัญชียืนยัน หากคลังให้แกลเลอรีรวม ให้เก็บไว้เป็นรูปกลุ่มจนกว่าจะระบุแต่ละตัวได้ จะได้ไม่นับภาพเดียวเป็นการตรวจครบทั้งสามตัว"
+    },
+    {
+      "source": "Save or reference the original photograph with its warehouse entry. When you crop or draw an arrow, retain the original and label the copy by purpose, such as “medium tag enlarged” or “stitch near right cuff.” Cropping can be excellent for showing a small detail, yet it can remove the surroundings that associate the detail with the actual garment. Put a full-unit overview beside the close-up. If both images come from a sequence, keep their original order or note their source.",
+      "source_sha256": "0e11c5c4d1c4d6eb0319a2a51ec1b3d5c445520b70ca5d6180b551a77b7a1bdb",
+      "raw_target_sha256": "525bfd91188b4ddaf1538c53e11ccfd8332f7f700105bc706fbc57afac0e1a4e",
+      "translation": "เก็บรูปต้นฉบับพร้อมรายการรับเข้าคลัง หากจะครอปหรือวาดลูกศร ให้แยกสำเนาและตั้งชื่อตามจุดประสงค์ เช่น “ขยายป้ายไซซ์ M” หรือ “ตะเข็บใกล้ปลายแขนขวา” ภาพครอปช่วยให้เห็นรายละเอียดเล็ก ๆ แต่อาจตัดส่วนที่บอกว่าเป็นเสื้อตัวไหนออก เก็บรูปเต็มชิ้นคู่กับรูปใกล้ และรักษาลำดับหรือจดแหล่งที่มาหากเป็นภาพชุด"
+    },
+    {
+      "source": "For the three shirts, check visible colour and pattern from the overviews, then inspect size evidence individually. A picture labelled medium and another labelled large can show two label values without proving there are two medium shirts. A third overview showing all three units together can help establish quantity. If labels still cannot be linked to distinct garments, record the uncertainty. The right response may be a single grouped photograph with the relevant labels visible, subject to what the warehouse can provide.",
+      "source_sha256": "feeedb500d1ce95f2be7de629992c8e8a4eb372bfb3879f2f75b66f4fc102696",
+      "raw_target_sha256": "ffc341895949494fd050e4987881fc25cc13697c881249bd32e8dd26156e3566",
+      "translation": "ตรวจสีและลายของเสื้อสามตัวจากรูปภาพรวม แล้วดูหลักฐานไซซ์ทีละตัว รูปป้าย M หนึ่งภาพกับป้าย L หนึ่งภาพแสดงว่ามีป้ายสองไซซ์ แต่ยังไม่ยืนยันว่ามีเสื้อ M สองตัว รูปที่สามซึ่งเห็นเสื้อครบทั้งสามตัวพร้อมกันช่วยตรวจจำนวนได้ หากยังจับคู่ป้ายกับเสื้อแต่ละตัวไม่ได้ ให้จดจุดที่ยังไม่แน่ใจแล้วถามว่าคลังถ่ายรูปรวมที่เห็นป้ายทุกตัวชัด ๆ ได้ไหม"
+    },
+    {
+      "source": "Each row can contain expected item, observed evidence, unresolved question and next action. Keep the observation narrow. For example, “medium label visible on warehouse entry A” is stronger and more precise than “correct size and perfect fit.” Fit requires additional measurements or a physical try-on. Similarly, “front print appears centred in this image” is a more defensible statement than a broad quality verdict. The difference matters when another person later relies on the notes to approve international shipment.",
+      "source_sha256": "48722a57c2b8409ac73935e81851a163fe81656e7d9da017072b6a7de6e0660a",
+      "raw_target_sha256": "3aa86872e9e14893eea88999fb8280a7c80a02682860c5d2e8c7a4c0aa4e279d",
+      "translation": "แต่ละบันทึกใส่ของที่ควรได้ สิ่งที่เห็น คำถามที่ยังไม่ชัด และขั้นตอนถัดไป เช่น “รายการคลัง A เห็นป้ายไซซ์ M” ให้ข้อมูลแม่นกว่าคำว่า “ถูกไซซ์และใส่พอดีแน่นอน” เพราะความพอดีต้องดูผลวัดหรือลองสวม เช่นเดียวกับ “ภาพนี้ลายด้านหน้าดูอยู่กึ่งกลาง” ที่ตรวจสอบได้มากกว่าการสรุปคุณภาพโดยรวม บันทึกชัดช่วยคนถัดไปตัดสินใจส่งออกต่างประเทศ"
+    },
+    {
+      "source": "Consider a case where medium shirt A matches the design, medium shirt B has no readable label and large shirt C has a clear label but the cuff is folded out of view. Two distinct evidence requests emerge. If size is crucial for B, ask for its attached label. If a cuff issue is suspected for C, ask to see that cuff unfolded. Do not ask for three new full galleries indiscriminately. Specific requests use the existing evidence and tell the warehouse exactly what remains unresolved.",
+      "source_sha256": "e1b697dfd4328aac986d23f88f0117b5efaac8b6d652c055f4d3c131e5dc9134",
+      "raw_target_sha256": "84cf1386a984f5c1a09c22b918778b62c39c228014bad653cdbd81d39fb1fb6b",
+      "translation": "สมมติว่าเสื้อ A ไซซ์ M มีแบบตรงตามที่สั่ง ป้ายบนเสื้อ B ไซซ์ M อ่านไม่ออก ส่วนเสื้อ C ไซซ์ L อ่านป้ายได้แต่ปลายแขนพับบังอยู่ หากต้องยืนยันไซซ์ B ให้ขอรูปป้ายที่ติดเสื้อตัว B หากสงสัยปลายแขน C ให้ขอรูปปลายแขน C หลังคลี่ออก ไม่จำเป็นต้องขอรูปทั้งชุดใหม่ครบสามตัว คำขอเจาะจงช่วยให้คลังรู้ว่ายังขาดหลักฐานตรงไหน"
+    },
+    {
+      "source": "If you suspect a photograph belongs to the wrong entry, describe the conflict rather than accusing the warehouse of reusing an image. For example, one entry is for a blue medium but the visible label reads large, while the next entry is for a blue large. Ask whether the label picture was attached to the intended unit. Keep the earlier images while the check proceeds. If a corrected image arrives, record what it replaces so that the superseded picture does not accidentally guide a later decision.",
+      "source_sha256": "bc0dcdb54b2b47de13ed684cef0425c98e5a189e42a02af481c2c1f03a9827be",
+      "raw_target_sha256": "c2339e7d4dc1f50c3d8563f6e30f78084a18a871c0d1d52c00215744b8c084a7",
+      "translation": "หากสงสัยว่ารูปถูกแนบผิดรายการ ให้เล่าข้อขัดแย้งที่เห็น เช่น รายการแรกเป็นเสื้อสีน้ำเงินไซซ์ M แต่ป้ายในรูปเขียน L ส่วนรายการถัดไปเป็นเสื้อสีน้ำเงินไซซ์ L ให้ถามว่ารูปป้ายผูกกับสินค้าถูกตัวหรือไม่ เก็บรูปเดิมไว้ระหว่างตรวจ หากมีรูปแก้ไข ให้ระบุว่าแทนรูปไหนเพื่อไม่เผลอใช้รูปเก่าตัดสินใจ"
+    },
+    {
+      "source": "If you ordered two similar products, describe the affected variant as well as the product. “Green roll-top pouch, medium, quantity one” is easier to match than “the bag.” Where the original order displays a seller style code, include it alongside your plain-language description. A warehouse label may use the code while the order page uses a translated name. Those two pieces of information allow the agent to follow the same item across records without needing to interpret a photograph of similar green products.",
+      "source_sha256": "ea378339e62b60ea08b1544c99fb6102862c0982a6a789bc968221ad2e4b7b14",
+      "raw_target_sha256": "65320acff5de617b2dd021f0013d5e4d82d3e31471b0f3f61ea9b5a7f4016ada",
+      "translation": "ถ้าสั่งสินค้าสองชิ้นที่คล้ายกัน ให้ระบุตัวเลือกของชิ้นที่มีปัญหาด้วย เช่น “กระเป๋าใบเล็กสีเขียว ปิดปากแบบม้วน ไซซ์ M จำนวนหนึ่งใบ” ชัดกว่า “กระเป๋า” หากรายการเดิมมีรหัสรุ่นของร้าน ให้ระบุคู่กับคำอธิบาย ป้ายคลังอาจใช้รหัสแต่ว่าหน้าคำสั่งซื้อใช้ชื่อแปล ข้อมูลทั้งคู่ช่วยให้เจ้าหน้าที่ตามของชิ้นเดียวกันได้โดยไม่ต้องเดาจากรูปของสีเขียวที่คล้ายกัน"
+    },
+    {
+      "source": "Keep at least one image connecting the unit with the size label. This matters if several similar pieces arrived. Compare the warehouse result with your reference and chart using the same convention. If the label is correct but dimensions appear different, describe that discrepancy precisely: ordered medium, medium tag visible, measured back length from collar seam differs from the medium chart using the same endpoints. That gives support an observable question to investigate. Saying only “this looks small” leaves too many explanations open.",
+      "source_sha256": "232a442d3b83199a5107fcb26447f1dc54a1f43a915294ea4f7b498fc824e6fb",
+      "raw_target_sha256": "595f1353e75406699e03f382def564b6a65b1c0f30dc96d7c178dcc2321ce5e8",
+      "translation": "เก็บรูปที่เห็นป้ายไซซ์ติดกับเสื้อจริงอย่างน้อยหนึ่งรูป โดยเฉพาะเมื่อมีหลายชิ้นคล้ายกัน เทียบผลวัดจากคลังกับเสื้อของคุณและตารางด้วยวิธีเดียวกัน หากป้ายถูกแต่ขนาดดูต่าง ให้ระบุให้ชัด เช่น “สั่งไซซ์ M เห็นป้าย M แต่ความยาวหลังที่วัดจากตะเข็บปกถึงปลายเดิมต่างจากตารางไซซ์ M ทั้งที่ใช้จุดเริ่มและจุดปลายเดียวกัน” เจ้าหน้าที่ตรวจตามได้ ข้อความเพียงว่า “ดูตัวเล็ก” ยังไม่บอกว่าควรตรวจตรงไหน"
+    },
+    {
+      "source": "If several units are involved, list each option separately. For example, specify one model A in medium and two model B in large. Keep the total number of units as a cross-check, but do not let it replace the distribution. Three correct units in the wrong size mix still leave an incorrect order. When the order confirmation appears, compare every line with the note and check the price after selection. Resolve a discrepancy before treating the purchase as settled.",
+      "source_sha256": "73611ca35d5b816a2112f6aea8d36b2446c74827c52cb5417a4779fa3d7762a7",
+      "raw_target_sha256": "083cda4ff3495969491ed3fb84c1cab880e77bdbec83460a57d6c6cc8e42ae75",
+      "translation": "ถ้าสั่งหลายตัวให้แยกแต่ละตัวเลือก เช่น รุ่น A ไซซ์ M หนึ่งตัว และรุ่น B ไซซ์ L สองตัว จดจำนวนรวมไว้ตรวจยอดแต่ต้องเก็บสัดส่วนรายรุ่นและไซซ์ด้วย ได้สามตัวครบแต่ไซซ์ผิดก็ยังไม่ตรงคำสั่งซื้อ เมื่อหน้าคำยืนยันแสดงขึ้นมาให้เทียบแต่ละรายการกับหมายเหตุและดูราคาหลังเลือกแล้ว หากไม่ตรงให้แก้ก่อนถือว่ารายการซื้อเรียบร้อย"
+    },
+    {
+      "source": "The first sentence should specify the listing, original option and quantity. The second can state the visual identifier and any relevant size. A final sentence can state what to do if the option is unavailable. For instance, a buyer could request one medium jacket in the seller's labelled option B, identified by its pale body and black sleeves, and ask to be contacted before any substitution. This supplies a concrete check without asking the agent to guess which property is essential.",
+      "source_sha256": "e5c5f5314873c84b6e8796aef30b4b1f7f1da7860252aa775d42f70c08597edd",
+      "raw_target_sha256": "c04f52832c4fe0588e2130eb45d4ade8e511c6fbaaa5ae15a641582c603a0128",
+      "translation": "ประโยคแรกระบุหน้าสินค้า ตัวเลือกตามชื่อเดิม และจำนวน ประโยคถัดไประบุจุดสังเกตกับไซซ์ ส่วนท้ายบอกว่าถ้าของหมดให้ทำอย่างไร เช่น “แจ็กเก็ตหนึ่งตัว ไซซ์ M ตัวเลือก B ของร้าน ตัวเสื้อสีอ่อน แขนสีดำ หากต้องเปลี่ยนสินค้าให้ติดต่อก่อน” ตัวแทนจะได้มีเกณฑ์ตรวจชัดเจนว่าอะไรสำคัญ"
     }
   ]
 }
