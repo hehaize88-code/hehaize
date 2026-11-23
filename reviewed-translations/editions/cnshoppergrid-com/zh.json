@@ -3,7 +3,7 @@
   "locale": "zh",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "a5de9afda121fa52df26efffb25e18d342595894928b20e8c60fc9427ec1348f",
-  "effective_dictionary_sha256": "b02a7f3ed7c36deeaa3ca71f5c5562e8bc07d5a11dc7c92d232ac415cced10ba",
+  "effective_dictionary_sha256": "175364aaf065af7e7e3e7a480a5fc7b754fb85fc2c468feaba4e96b0eb05bba3",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [],
@@ -91,7 +91,7 @@
       "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
       "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
       "raw_target_sha256": "6777ecc1f5bcb17c837228941d13afb36c3b1f24b7d8bef7eafc7adf2bd5c928",
-      "translation": "以一本书、两件折好的衬衫和一个硬质笔盒为例。假设第一次估算用的纸箱为 35 × 25 × 15 厘米，总重 1,800 克。第二次估算应按要求换算单位，输入同一组数据，别误填成书本本身的尺寸。包裹实测前，这些数值都只是示例。即使最终报价尚未确定，采用相同假设也能得到有意义的比较。"
+      "translation": "假设包裹里有一本书、两件折好的衬衫和一个硬笔盒。若首次估价用的是 35 × 25 × 15 厘米的外箱、重量 1800 克，换目的地做第二次比较时仍输入相同的数据，并按页面要求换算单位。不要错把书本尺寸填进第二份估价。实际装箱测量前，明确标注这些是示例值。即使还没有最终报价，统一假设后也能比较两个目的地。"
     },
     {
       "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
@@ -698,6 +698,24 @@
       "source_sha256": "a90c0710050e568da1cb7e574f5f46fbee8ae81efc2e4e529f93ab68d7760979",
       "raw_target_sha256": "c9dc4f093e76dbea6ede3a20823e58ddf57ce51a1c1bcb94fd4ce976d2077f32",
       "translation": "把新金额与最初选择的规格、数量和国内运费逐项对照，问清变动原因。决定是否接受新的总价后，再授权继续采购。"
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "08139974c4ed728f48673996680a738f113501cfaeadf353071c8c442a1c20a2",
+      "translation": "记录包裹数据，方便用相同条件复算"
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "164b90ddfa8626b5ffdf712b01eb54b6628554a31d00a56aba2c2407586fd68d",
+      "translation": "比较收货目的地，再单独判断要不要拆包寄送"
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "3564b2ee6ae610975229c15816d6f48fceee9c25deddc3ea4517c41b857c249e",
+      "translation": "将两份报价、日期、包裹内容和最终选择保存在自己的记录中，并写下决定性因素。例如：“同一个已封箱包裹，比较两个目的地；选地址 B，因为可用线路能满足收件人的时间安排和总预算。”若选择依赖预估重量，标记为待复核，等装箱实测数据出来后再看一次。"
     }
   ]
 }

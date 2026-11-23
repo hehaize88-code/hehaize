@@ -3,7 +3,7 @@
   "locale": "vi",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "7dbb7854beeb818018cbcf65a5be6a744b426e22aa758283674bd39143432f52",
-  "effective_dictionary_sha256": "de35dbe5d55d653ebe4a97aff164f6acec2343949ab60897f46e25ebca6c88bd",
+  "effective_dictionary_sha256": "ebc779ff7fe85520b60158073f54e360a122dc1b544a99b92042f4af07d917ed",
   "checked_entries": 305,
   "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
@@ -146,6 +146,42 @@
       "source_sha256": "aa89f51a160ae0bccfb13836549ddf758e4f646ef17d9e73655546b07d0eed0d",
       "raw_target_sha256": "3c95915b561d63a75a2743517f7d182fca37df7da187b983ce2ba4fe3f03171e",
       "translation": "Bạn có thể muốn ước tính chi phí giao hàng của từng sản phẩm. Quyết định quy tắc phân bổ nào phù hợp với mục đích của bạn và dán nhãn nó như là phân tích của bạn. Phân chia bằng nhau là dễ dàng khi các mảnh tương tự nhau. Việc chia theo trọng lượng mục có thể hữu ích hơn cho một bìa còng nặng và hai bìa hồ sơ nhẹ. Cả hai phương pháp đều không tự động đại diện cho giá thực sự của nhà vận chuyển cho mỗi mặt hàng; hãng vận chuyển thường báo giá cho cả kiện theo điều kiện của dịch vụ."
+    },
+    {
+      "source": "Confirm each item has arrived, completed any inspection you need and is eligible for the intended route. Compare one combined quote with separate quotes using the same destination and packing assumptions.",
+      "source_sha256": "5b949b6b03dbd06a25b78091f4dee77948b0d63d88a24a8c4a075b9c456bceec",
+      "raw_target_sha256": "baaba12493294c6c8e447ae3c2153c54eaae711efbe48e790117a9a89a159cfe",
+      "translation": "Hãy xác nhận từng món đã đến kho, đã được kiểm tra theo yêu cầu và đủ điều kiện đi tuyến dự kiến. So sánh báo giá gửi chung với báo giá gửi riêng trên cùng điểm đến và giả định đóng gói."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "98a84a0b85ffa607447394c8366e505048f614f88f6bb3f44053be79858120fb",
+      "translation": "So sánh các điểm đến riêng với quyết định có nên tách kiện hay không"
+    },
+    {
+      "source": "Take the example with a book, shirts and pencil case. One possible arrangement sends all four pieces to address A. Another sends the book to address B and the shirts and case to address A. The second arrangement has two service decisions and two actual delivery events. Add both eligible quotes and relevant packing amounts before comparing the total with the single-parcel alternative. Also consider what the intended recipients actually need; the lowest combined quote may deliver the wrong item to one of them.",
+      "source_sha256": "5095930601411f385deb21900008342a8eb5d375f03e5a0c0529416d9c1687ce",
+      "raw_target_sha256": "2e4d1296a830df5e085147d0b2d829bb037264486ac46efa352d01e9f820feae",
+      "translation": "Lấy ví dụ một cuốn sách, hai chiếc áo sơ mi và một hộp bút. Phương án thứ nhất gửi cả bốn món tới địa chỉ A. Phương án thứ hai gửi sách tới địa chỉ B, còn áo và hộp bút tới địa chỉ A. Phương án hai cần chọn hai dịch vụ và có hai lần giao hàng. Cộng hai báo giá khả dụng cùng các phí đóng gói liên quan trước khi so với cách gửi một kiện. Cũng cần xem mỗi người nhận thực sự cần món nào, vì phương án gửi chung rẻ nhất có thể đưa nhầm món cho người nhận."
+    },
+    {
+      "source": "Preserve the assumptions with the quote you choose. When the actual parcel is packed, update its weight and dimensions and check the service still offered for the complete address. This last check is particularly important if the two addresses had different delivery arrangements. A parcel that looked cheaper to send to a relative may become less attractive if its size prevents collection from the intended location.",
+      "source_sha256": "da1512090fab0899a783ac2fb64e8b0e3f695b7f62d53a1c91034d8a21e3b20c",
+      "raw_target_sha256": "bd3050e837253460298205a433d269a589c95aba7e5a9c243c368924432f732d",
+      "translation": "Lưu các giả định cùng với báo giá đã chọn. Khi đóng kiện xong, hãy cập nhật trọng lượng và kích thước, rồi kiểm tra dịch vụ còn áp dụng cho địa chỉ đầy đủ hay không. Bước này đặc biệt quan trọng khi điều kiện giao nhận ở hai địa chỉ khác nhau. Gửi cho người thân có thể trông rẻ hơn, nhưng chưa chắc thuận lợi nếu kiện quá lớn để nhận tại địa điểm dự kiến."
+    },
+    {
+      "source": "A useful last check is to add the domestic charges at the same level at which they were quoted. If three lines share one seller shipment and the seller gave one combined figure, enter it once in the purchase total. If the account ultimately records separate domestic entries, reconcile those against the combined quote. Save the seller's explanation if different fulfillment locations or separate waybills changed how the goods were sent.",
+      "source_sha256": "9e619d9d0d4194b7b9dcd99b6cca4490eefce4422fb070612ddc63d399227da4",
+      "raw_target_sha256": "f7cbd34c9c89ed7552dfce6b5386c04d79094ee80c7edcdc4399c6afa3f641c2",
+      "translation": "Cuối cùng, cộng phí vận chuyển nội địa theo đúng cách người bán báo giá. Nếu ba dòng hàng đi chung một chuyến và người bán báo một mức phí chung, chỉ cộng khoản đó một lần vào chi phí mua hàng. Nếu tài khoản sau cùng ghi riêng các khoản phí nội địa, hãy đối chiếu chúng với báo giá chung. Lưu lời giải thích của người bán nếu việc xuất hàng từ nhiều kho hoặc lập hóa đơn riêng làm thay đổi cách gửi."
+    },
+    {
+      "source": "A specification should contain an exit condition. If the precise option is missing, would you like a message, a cancellation proposal or another quote? Give permission only for the substitutions you would actually accept. “Please contact me” is useful when a wrong alternative would leave you with an unusable item. For low-priority attributes, define a narrow substitute explicitly.",
+      "source_sha256": "618fbcf2233f23f7ae2f6d0029f84ea9cfed07d2286545e288920669554cd3d8",
+      "raw_target_sha256": "8a9b4f76dbbff27f0f47288dc2a69f9adf57fcfcd5830428fa963cb2b0d8463f",
+      "translation": "Hướng dẫn mua hàng nên nêu cách xử lý nếu hết đúng phiên bản bạn chọn. Bạn muốn được nhắn tin, đề nghị hủy đơn hay nhận một báo giá khác? Chỉ cho phép những phương án thay thế bạn thực sự chấp nhận. Nếu chọn nhầm sẽ khiến sản phẩm không dùng được, hãy ghi “Vui lòng liên hệ với tôi”. Với đặc điểm ít quan trọng hơn, hãy mô tả rõ phạm vi thay thế được phép."
     }
   ]
 }

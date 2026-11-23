@@ -3,7 +3,7 @@
   "locale": "el",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "eb7a38d3d4f5e36cef712cdbced96dd98a361b39b88fa21570d9b6ff012420ca",
-  "effective_dictionary_sha256": "8c7ec726eca19b1ccca15d354a0e0a7e78a1ff68053b9d2146d8a6aa6557afb5",
+  "effective_dictionary_sha256": "e829a3d5d4fe1706c172e762ae12bc0e4dde9a03322721f82ae2c872d0b75f87",
   "checked_entries": 305,
   "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
@@ -423,6 +423,42 @@
       "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
       "raw_target_sha256": "c3de15b38b791fe736a203b030379562d602bd776db4ca35a0a975fa75302468",
       "translation": "Φανταστείτε ένα βιβλίο, δύο διπλωμένα πουκάμισα και μια άκαμπτη μολυβοθήκη. Εάν η αρχική προσφορά χρησιμοποιεί ένα χαρτοκιβώτιο με διαστάσεις 35 επί 25 επί 15 εκατοστά και βάρος 1.800 γραμμάρια, αντιγράψτε αυτές τις τιμές στη δεύτερη σύγκριση στις ζητούμενες μονάδες. Μην εισάγετε τις διαστάσεις του βιβλίου για τη δεύτερη αναζήτηση κατά λάθος. Διατηρήστε τα στοιχεία ως επεξηγηματικά μέχρι να μετρήσετε το πραγματικό δέμα. Μια συνεπής υπόθεση κάνει μια ουσιαστική σύγκριση ακόμη και πριν γίνει διαθέσιμη η τελική προσφορά."
+    },
+    {
+      "source": "Write down packed length, width, height and actual weight, with units. Keep destination and route constant when testing how a packing decision changes the estimate. Record any service included in only one quote.",
+      "source_sha256": "caec92a3dd7d8d4576ae0af1669c068528da60e752f849cd83d0ed8f8fa29ee9",
+      "raw_target_sha256": "15a907de01b6abd09a4b4994df17e4b938b1408dd70e1780bebbf098cdbb508b",
+      "translation": "Γράψτε το συσκευασμένο μήκος, το πλάτος, το ύψος και το πραγματικό βάρος, με τις μονάδες. Διατηρήστε τον προορισμό και τη διαδρομή σταθερή όταν ελέγχετε πώς μια απόφαση συσκευασίας αλλάζει την εκτίμηση. Καταγράψτε οποιαδήποτε υπηρεσία που περιλαμβάνεται σε μία μόνο προσφορά."
+    },
+    {
+      "source": "Preserve the assumptions with the quote you choose. When the actual parcel is packed, update its weight and dimensions and check the service still offered for the complete address. This last check is particularly important if the two addresses had different delivery arrangements. A parcel that looked cheaper to send to a relative may become less attractive if its size prevents collection from the intended location.",
+      "source_sha256": "da1512090fab0899a783ac2fb64e8b0e3f695b7f62d53a1c91034d8a21e3b20c",
+      "raw_target_sha256": "121e6517b0e8f9668ace698dfee2d075a49270b4ecb57a25501a7bd64bbbd0ca",
+      "translation": "Διατηρήστε τις υποθέσεις με την προσφορά που επιλέγετε. Όταν το πραγματικό δέμα είναι συσκευασμένο, ενημερώστε το βάρος και τις διαστάσεις του και ελέγξτε την υπηρεσία που εξακολουθεί να προσφέρεται για την πλήρη διεύθυνση. Αυτός ο τελευταίος έλεγχος είναι ιδιαίτερα σημαντικός εάν οι δύο διευθύνσεις είχαν διαφορετικές ρυθμίσεις παράδοσης. Ένα δέμα που φαινόταν φθηνότερο για αποστολή σε συγγενή μπορεί να γίνει λιγότερο ελκυστικό αν το μέγεθός του εμποδίζει την παραλαβή από την προβλεπόμενη τοποθεσία."
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "55184b5c9326cb73f42dae44bbe31a03c99b05ce829b5433960c0a29809e6609",
+      "translation": "Αποθηκεύστε τις δύο προσφορές, την ημερομηνία, την περιγραφή του δέματος και την επιλογή σε ένα ιδιωτικό αρχείο. Ονομάστε τον παράγοντα που καθόρισε το αποτέλεσμα. Για παράδειγμα, \"το ίδιο συσκευασμένο κουτί, διαφορετικοί προορισμοί. Επέλεξα τη διεύθυνση Β επειδή η επιλέξιμη υπηρεσία ταιριάζει με το πρόγραμμα και τον συνολικό προϋπολογισμό του παραλήπτη.\" Εάν η επιλογή εξαρτάται από ένα εκτιμώμενο βάρος, επισημάνετε το για αναθεώρηση αφού φτάσουν τα πραγματικά δεδομένα συσκευασίας."
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "55b093bca2ee2185d75fc05de78daf2483ea8c256da31008e62b0ad73c881065",
+      "translation": "Καταγράψτε τα στοιχεία του δέματος για να επαναλάβετε τη σύγκριση"
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "02f8550db64b678b897861128d35287835807f8e7761ab253f117b5df16e6dcb",
+      "translation": "Συγκρίνετε τους προορισμούς χωριστά από την απόφαση για διαίρεση της αποστολής"
+    },
+    {
+      "source": "Compare the full alternatives. One quote for the current pieces does not represent the cost of shipping the later pieces separately. A future combined quote may also change when all dimensions are known. Record the chosen scenario as “dispatch confirmed item now; remaining items held for intake” or “wait for all matched pieces.” That wording prevents a later reader from assuming every item on the original purchase was inside the first outbound parcel.",
+      "source_sha256": "d0d227861d82b3c7c18909822693149a5f4f44c18fc35ec48cbc2104b9d33129",
+      "raw_target_sha256": "31df4a32fea9774d541bf5940f732eedecf8f8afef27e240708662b5d866085f",
+      "translation": "Συγκρίνετε τα σενάρια στο σύνολό τους. Η προσφορά για τα διαθέσιμα είδη δεν δείχνει το κόστος αποστολής των υπόλοιπων ειδών χωριστά. Μια μελλοντική προσφορά για κοινή αποστολή μπορεί επίσης να αλλάξει όταν γίνουν γνωστές όλες οι διαστάσεις. Σημειώστε «αποστολή τώρα του επιβεβαιωμένου είδους, αναμονή παραλαβής των υπόλοιπων» ή «αναμονή ώσπου να ταυτοποιηθούν όλα τα είδη». Έτσι, όποιος δει αργότερα την εγγραφή δεν θα υποθέσει ότι όλα τα είδη της αρχικής αγοράς βρίσκονταν στο πρώτο δέμα."
     }
   ]
 }

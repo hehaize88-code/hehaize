@@ -3,7 +3,7 @@
   "locale": "th",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "4dba409c9b9ce88c3fd5a623b4e15af7db89d4fd7a98e1b985fdd5a228acbd2d",
-  "effective_dictionary_sha256": "a74741d4c2fbafeb777e935b49907e4267d730aef3a6fd1843eaa0e8e17b45f6",
+  "effective_dictionary_sha256": "82fe4fddc361fad9562b6a3f7a0c48b68407e7861beac98b0f69c77aa3f1db9f",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [
@@ -116,7 +116,7 @@
       "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
       "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
       "raw_target_sha256": "f5d3ca0fae8d2efbe01063d4dd475559065f000f01a6575115faf6e454507ca0",
-      "translation": "สมมติว่าคุณจะส่งหนังสือหนึ่งเล่ม เสื้อพับสองตัว และกล่องดินสอแบบแข็งหนึ่งใบ หากครั้งแรกประเมินจากกล่องขนาด 35 × 25 × 15 เซนติเมตร น้ำหนักรวม 1,800 กรัม ให้ใช้ค่าเดิมเมื่อเปรียบเทียบครั้งที่สอง โดยแปลงเป็นหน่วยที่เครื่องมือกำหนด อย่าเผลอใส่ขนาดของหนังสือแทนขนาดกล่อง ตัวเลขเหล่านี้ยังเป็นเพียงตัวอย่างจนกว่าจะวัดพัสดุจริง การใช้สมมติฐานเดียวกันช่วยให้เปรียบเทียบได้แม้ยังไม่มีราคาสุดท้าย"
+      "translation": "สมมติว่าในกล่องมีหนังสือหนึ่งเล่ม เสื้อพับสองตัว และกล่องดินสอแบบแข็งหนึ่งใบ ถ้าประเมินครั้งแรกด้วยขนาดกล่อง 35 × 25 × 15 เซนติเมตร น้ำหนัก 1800 กรัม ให้ใส่ค่าชุดเดิมในการเปรียบเทียบครั้งที่สอง โดยใช้หน่วยตามที่ระบบกำหนด อย่าเผลอใส่เฉพาะขนาดหนังสือ ระบุว่าเป็นตัวเลขสมมติจนกว่าจะได้วัดพัสดุจริง การใช้สมมติฐานเดียวกันช่วยให้เทียบปลายทางได้แม้ยังไม่มีราคาสุดท้าย"
     },
     {
       "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
@@ -483,6 +483,24 @@
       "source_sha256": "42192a2c8eb86ff5f6f58c38b26781625509dc40072bd4ae55abe5289d907864",
       "raw_target_sha256": "fbae8fe749260183e5784e98df4657bf99765a61b9069f6496f622bed0935d5f",
       "translation": "เก็บข้อความฉบับที่ตกลงกันแล้วไว้คู่กับเลขคำสั่งซื้อ เมื่อถึงคลัง ให้เทียบของที่มองเห็นกับคุณสมบัติที่จำเป็นก่อน ภาพด้านหน้าอาจยืนยันสีและรูปทรงโดยรวม ภาพขณะเปิดกล่องอาหารช่วยยืนยันว่ามีช่องที่สอง ส่วนภาพสายวัดพาดข้ามจุดที่กว้างที่สุดช่วยตรวจว่าใส่ชั้นได้หรือไม่ ขอเฉพาะหลักฐานเพิ่มที่มีผลต่อการตัดสินใจ และตรวจว่าบริการรองรับการตรวจแบบนั้นก่อน"
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "e7537454a76c89176a3749fc34abb85cf517c7dce8f7c614d91ac3e28c2bed29",
+      "translation": "บันทึกรายละเอียดพัสดุเพื่อเทียบราคาโดยใช้เงื่อนไขชุดเดิม"
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "cb6779b6f8d6a862be7c2d4160e0c9b8af2c199781fb2defda37846e2c65d1aa",
+      "translation": "เปรียบเทียบปลายทางก่อน แล้วค่อยพิจารณาแยกกล่องส่งเป็นอีกคำถามหนึ่ง"
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "5405f0a5ddda395dc4625d3432302951a9db081e19175f2bed32bb633b604a59",
+      "translation": "บันทึกใบเสนอราคาทั้งสองฉบับ วันที่ รายละเอียดพัสดุ และตัวเลือกที่ตัดสินใจไว้เป็นการส่วนตัว ระบุเหตุผลให้ชัด เช่น «ใช้กล่องที่บรรจุแล้วใบเดียวกันแต่เทียบสองปลายทาง เลือกที่อยู่ B เพราะบริการที่ใช้ได้ตรงกับเวลาของผู้รับและงบรวม» หากการเลือกนี้อาศัยน้ำหนักประมาณ ให้จดว่าจะกลับมาตรวจเมื่อทราบน้ำหนักจริงหลังบรรจุ"
     }
   ]
 }

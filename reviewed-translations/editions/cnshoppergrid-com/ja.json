@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "6b7f7329ae3334f84ed64a2104620ae0ee0e9d5ddff58b466d05ffd13de91865",
-  "effective_dictionary_sha256": "7bd9564902be3b4867e01cc919df8b1322a8ccab86bfab9123123d9f2d901eee",
+  "effective_dictionary_sha256": "e160c8b49194124ac75592624b52317d8a7471f32b2acb00ca82a313f6d6513c",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [
@@ -182,7 +182,7 @@
       "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
       "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
       "raw_target_sha256": "bf0c4a056c16fb14a7f9537365e73c373274ffdb96d6dc07d82876ec81997f04",
-      "translation": "本を1冊、畳んだシャツを2枚、硬い筆箱を1個送る例を考えます。最初の見積もりで、箱の大きさを35×25×15センチ、重さを1,800グラムと仮定したなら、2回目も指定の単位に合わせて同じ値を入力します。本そのものの寸法を誤って入力しないでください。実際の梱包後に測るまでは、これらは仮の数値です。最終見積もりがなくても、前提をそろえれば比較できます。"
+      "translation": "本1冊、畳んだシャツ2枚、硬い筆箱1個を同じ箱に入れる例で考えます。最初の見積もりで箱の外寸を35 × 25 × 15 cm、重量を1800 gとしたら、2回目にも指定単位を確認して同じ値を入力します。本だけの大きさを入力しないよう注意してください。梱包後の実測値が出るまでは仮の値と明記します。条件を統一すれば、正式な見積もり前でも配送先どうしを比較できます。"
     },
     {
       "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
@@ -627,6 +627,18 @@
       "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
       "raw_target_sha256": "4d8fcafb3d7a5056ab50a85e31190f4e72965d39155d9248187eea1295bf3d46",
       "translation": "2件の見積もりと日付、荷物の内容、選んだ案を自分用に保存し、決め手も書き添えます。たとえば「同じ梱包済みの箱で配送先のみ異なる。住所Bで利用できる配送方法が、受取人の日程と総予算に合ったためBを選択」と記録します。判断に使った重量が推定値なら、梱包後の実測値が分かった時点で再確認するよう印を付けてください。"
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "62dd567bc6acd0d193133f1905a6b1dab7fee359056ff4f6864bef51a9622c03",
+      "translation": "同じ条件で再比較できるよう荷物の内容と寸法を記録する"
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "204fdd51dff4726d7d9aa991e197746afbb72e0bcdba14ec77bc28699855ad7c",
+      "translation": "配送先の比較と、荷物を分けて発送する判断は別に行う"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "pt",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "0ad965f60a0d0d5b882fc9de71cf539186b711b8452dfc00a6e74ce3497ff09e",
-  "effective_dictionary_sha256": "6f45671ea6f35b55589c821d147a0a66946162483d9cbca4faa94148ec4f644f",
+  "effective_dictionary_sha256": "af18092e2b332f22dbdbd84229d1fdff4e889fb5140c55ee8e91e3945c3f041f",
   "checked_entries": 305,
   "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
@@ -98,6 +98,42 @@
       "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
       "raw_target_sha256": "8e1a102b7213ace724fdc6d24c42845d87b6d05dd6c6705e7d0da5412eb11d90",
       "translation": "Salve as duas cotações, a data, a descrição da encomenda e escolha em um registro privado. Nomeie o fator que determinou o resultado. Por exemplo, “mesma caixa embalada, destinos diferentes; escolhi o endereço B porque o serviço elegível se encaixa na programação e no orçamento total do destinatário”. Se a escolha depender de um peso estimado, marque-o para revisão após a chegada dos dados reais da embalagem."
+    },
+    {
+      "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
+      "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
+      "raw_target_sha256": "5a226a2857c2040aee15225262ba28f22a966f7155a1d48978500eec01a5c9d2",
+      "translation": "Imagine um livro, duas camisas dobradas e um estojo rígido. Se a cotação inicial usa uma caixa de 35 por 25 por 15 centímetros a 1.800 gramas, copie esses valores para a segunda comparação nas unidades solicitadas. Não insira as dimensões do livro para a segunda pesquisa por engano. Trate esses valores como exemplos até ter as medidas reais da encomenda. Uma suposição consistente faz uma comparação significativa, mesmo antes da cotação final estar disponível."
+    },
+    {
+      "source": "Preserve the assumptions with the quote you choose. When the actual parcel is packed, update its weight and dimensions and check the service still offered for the complete address. This last check is particularly important if the two addresses had different delivery arrangements. A parcel that looked cheaper to send to a relative may become less attractive if its size prevents collection from the intended location.",
+      "source_sha256": "da1512090fab0899a783ac2fb64e8b0e3f695b7f62d53a1c91034d8a21e3b20c",
+      "raw_target_sha256": "55c39aa8c1e0d6dae252f0ca01ea0f5aeaa7d8351afb21632d8a8a2a428bf898",
+      "translation": "Preserve as suposições com a cotação que você escolher. Quando a encomenda for embalada, atualize o seu peso e dimensões e verifique o serviço ainda oferecido para o endereço completo. Esta última verificação é particularmente importante se os dois endereços tiveram arranjos de entrega diferentes. Um pacote que parecia mais barato para enviar a um parente pode se tornar menos atraente se seu tamanho impedir a coleta no local pretendido."
+    },
+    {
+      "source": "If the item is still in the warehouse, decide whether you want more information before an exchange or return. The issue may be resolved by a clearer image of a label or a count of pieces inside a bundle. Specify the warehouse item and ask whether the check involves opening sealed packaging or paying a fee. Keep it out of a parcel submission while you are deciding. Once the item is packed with unrelated goods, identifying and separating it may require a different process.",
+      "source_sha256": "d5bc3ace4f86e29b27bdd3efca70381a2df6062d9b1e54787757eb7fa93193e4",
+      "raw_target_sha256": "5130430cc638530ff24dd4893eb105138931072bc816cf4d8f7efd57f2da6aa0",
+      "translation": "Se o item ainda estiver no armazém, decida se deseja mais informações antes de uma troca ou devolução. O problema pode ser resolvido por uma imagem mais clara de uma etiqueta ou uma contagem de peças dentro de um pacote. Especifique o item do armazém e pergunte se a verificação envolve a abertura de embalagens seladas ou o pagamento de uma taxa. Mantenha-o fora do pedido de envio enquanto você está decidindo. Uma vez que o item é embalado com mercadorias não relacionadas, identificá-lo e separá-lo pode exigir um processo diferente."
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "ed1be4d78551be0d56eec1866e82c975c6de0bba402de885281eed8cac90216c",
+      "translation": "Descreva a encomenda para poder repetir a comparação"
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "277c1c1cb13b3fc5407adb434215198f580115d75011fb7543221fb6e66caccc",
+      "translation": "Compare os destinos separadamente da decisão de dividir a encomenda"
+    },
+    {
+      "source": "Close the purchase by unit, then by parcel",
+      "source_sha256": "e195bbe2567cd7d9d26fdb529ff2ac28fcd211da2403907349341a18f76c9f4d",
+      "raw_target_sha256": "859e0eed7cf17e049f63e01ceb0f21b339290989a56de89e4df00d65251d1f83",
+      "translation": "Confira a compra primeiro por unidade e depois por encomenda"
     }
   ]
 }
