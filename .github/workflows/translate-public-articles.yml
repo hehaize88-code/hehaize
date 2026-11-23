@@ -26,3 +26,25 @@ jobs:
           path: translations/
           if-no-files-found: error
           retention-days: 7
+  collect:
+    needs: translate
+    if: ${{ always() && needs.translate.result != 'cancelled' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-translation
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: translations-*
+          path: locale-output
+      - name: Save completed language packs to a results branch
+        run: |
+          python -c "import glob; assert glob.glob('locale-output/*/*.json'), 'No completed packs'"
+          git config user.name github-actions
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add --sparse -- locale-output
+          git commit -m "Cache translated editorial text from run ${GITHUB_RUN_ID}"
+          git push origin "HEAD:refs/heads/editorial-locale-output-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
