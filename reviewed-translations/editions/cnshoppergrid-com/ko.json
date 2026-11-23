@@ -3,7 +3,7 @@
   "locale": "ko",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "9ae3ee6c8c737758e3261a219afd8c6de94dd9b4001d7548ec7bf012720201ac",
-  "effective_dictionary_sha256": "dbe0ffe3ebc0e8f5847fa0a2b389776adba2e0919dc6e54fec8f4785dcbea415",
+  "effective_dictionary_sha256": "7676afbcf733790ae001fabcefa5a52a59dab9182a4dba7594d85e4986a2c808",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [
@@ -189,6 +189,258 @@
       "source_sha256": "ac884d8def8a1339dfb12db13e3fabc211bb31f91c656288d31d9316de6f4c33",
       "raw_target_sha256": "d1278b41b1c65fb0857cb3d503505ffe2c6d9e1b388869cbb2066186091bf58a",
       "translation": "예를 들어 “무지 색인 카드 열두 장짜리 두 묶음, 총 스물네 장”이라고 쓰면 구매할 때와 입고될 때 모두 수량을 확인할 수 있습니다. “색인 카드 두 세트”라고만 쓰면 포장 단위도 낱장 수도 분명하지 않습니다. 판매자의 최소 주문 수량이 원하는 양보다 많다면, 필요한 구성을 표시된 가격에 살 수 있는지 먼저 물어보세요. 최소 주문 조건이 무엇을 기준으로 적용되는지 알기 전에는 신청서의 수량을 늘리지 마세요."
+    },
+    {
+      "source": "What belongs in the note for a CNShopper manual purchase?",
+      "source_sha256": "ef30e7c107b5939ba516d3cad995cbb1e86e7dcea54d22125e5828e8ac4eedc4",
+      "raw_target_sha256": "7ba3f8e04203ec8b5757f15aee7a74ca558ee4d0b811e2c7620de80bbdb6e8e1",
+      "translation": "CNShopper 수동 구매 요청서에는 어떤 내용을 적어야 하나요?"
+    },
+    {
+      "source": "Include the seller URL, original option text, size, colour and quantity. If the seller offers a set and separate pieces, name the piece you want. State whether you want to be contacted if the exact option is unavailable.",
+      "source_sha256": "00c106baa4e83a7c23f43615ea64367d731f732e11cd97ba9fb8f764a9b67148",
+      "raw_target_sha256": "65b7ac002103b9e58b17b399d17bd1447f01f5ade00167bd9dbeb1bab082f6c1",
+      "translation": "판매자 링크, 옵션명 원문, 사이즈, 색상, 수량을 적으세요. 세트와 단품을 함께 판매하는 경우 무엇을 원하는지 명시하세요. 정확한 옵션이 없을 때 구매 전에 연락받을지도 알려 주세요."
+    },
+    {
+      "source": "How do I order two colours of the same item without mixing them up?",
+      "source_sha256": "59fffdeaf53e06cfe671c9ce73782e8d27078c2fe1608004fd95c9f4505c95f2",
+      "raw_target_sha256": "7d6c9277254ad3a78f3b93f8df658450293be64f0384d9f7492da38a3ad756fa",
+      "translation": "같은 상품의 색상 두 가지를 헷갈리지 않게 주문하려면 어떻게 하나요?"
+    },
+    {
+      "source": "Record each colour as a separate line with its size and count. For example, two navy medium shirts and one grey large shirt are two distinct selections. Compare both lines with the purchase confirmation.",
+      "source_sha256": "d26973353a9a726ef696fc01aed39d79201b5b06f4eebb79203739390865725b",
+      "raw_target_sha256": "f3b1a9851a42c63a29c47be5b01ae5b0535142cee31e3b54415636600b545094",
+      "translation": "색상마다 줄을 나누어 사이즈와 수량을 적으세요. 예를 들어 남색 M 셔츠 두 장과 회색 L 셔츠 한 장은 서로 다른 선택입니다. 주문 확인서에서도 두 항목을 각각 대조하세요."
+    },
+    {
+      "source": "Can I identify a seller listing using only a screenshot?",
+      "source_sha256": "bd574b02cee7f33de87fce969c97a307e31f96763891bb2c220778d3868b8cbe",
+      "raw_target_sha256": "550ea78235b8f76798f1a2f31ed240c204dbb7a0878dc7b9eda74c86a296525c",
+      "translation": "화면 캡처만으로 원래 판매자의 상품 페이지를 찾을 수 있나요?"
+    },
+    {
+      "source": "Use the screenshot to find candidates, then compare seller, item number and available options. A copied studio picture can appear in several shops. Save the seller URL before submitting a purchase request.",
+      "source_sha256": "a5366e1e221ee40e58273cdcdd7196f80ab1bd2cdbce0ef7490429ffd1a78b2f",
+      "raw_target_sha256": "b2aa9dbbe6ea2f024abc1accc1a3815826f544d50c055a159da8721e1821b885",
+      "translation": "캡처로 후보를 찾은 다음 판매자, 상품 번호, 선택 가능한 옵션을 비교하세요. 여러 상점이 같은 홍보 사진을 쓸 수 있습니다. 구매 요청을 제출하기 전에 확인한 판매자 링크를 저장하세요."
+    },
+    {
+      "source": "What if a translated option sounds like the wrong product?",
+      "source_sha256": "2bc07a854dc206e71b892700861f1d8573a4ae0bf2e5200bcb544db51e57c94d",
+      "raw_target_sha256": "c4a42eb74aff32e67d340eb78ac6ab0e3a6fd3a66620408d268f6d12df97365e",
+      "translation": "옵션 번역이 다른 상품을 가리키는 것 같으면 어떻게 하나요?"
+    },
+    {
+      "source": "Keep the original option text and screenshot the selected swatch. Ask what that exact option includes before paying. A price for a cushion cover, for example, can appear next to a photograph of a filled cushion.",
+      "source_sha256": "77e73d453a6d234daafefbd05e06c549bf96b7172b042bd4cb8a4dc1e963551b",
+      "raw_target_sha256": "79fe184c4257df7db156b32b4f9a64e15f039c6a31041b0efc9fa0f508b7d695",
+      "translation": "원래 옵션명을 남겨 두고 선택한 색상이나 이미지가 표시된 화면을 캡처하세요. 결제 전에 해당 옵션에 무엇이 포함되는지 확인하세요. 속이 채워진 쿠션 사진 옆에 커버만의 가격이 표시된 경우도 있습니다."
+    },
+    {
+      "source": "What should I do if a 1688 offer has a minimum quantity?",
+      "source_sha256": "aceed7f7b51736bf9907395a4d4fb2df44b1f8031fdb820b68205b93c8e8059f",
+      "raw_target_sha256": "14e59fd69ca2ff90634a4e6230bf37f3bdecce8f8433ca612cff1b87b2e0d15f",
+      "translation": "1688 상품에 최소 주문 수량이 있으면 어떻게 해야 하나요?"
+    },
+    {
+      "source": "Check the seller’s minimum, whether different colours can be combined and the price tier for your total. Ask CNShopper to confirm the requested mix if the imported order does not display those conditions clearly.",
+      "source_sha256": "f747aee05e67797def9961bc1909a50145a9577ac30b2556309ec7dcd1e1b5c6",
+      "raw_target_sha256": "1270b938cd2af20cb5337d061538452c1f8c2adf68065a8110f8e8337b0faf2a",
+      "translation": "판매자의 최소 주문 수량, 다른 색상을 섞어도 되는지, 총수량에 적용되는 가격 구간을 확인하세요. 불러온 주문 화면에서 조건이 분명하지 않으면 원하는 조합을 주문할 수 있는지 CNShopper에 문의하세요."
+    },
+    {
+      "source": "How can I check whether a Chinese size chart fits me?",
+      "source_sha256": "ba05364ceee5ad68dc32d67c20ecbf5145d0224e7cf28b0be7d4277633c0c74d",
+      "raw_target_sha256": "60c3f13c51370e73792d27dd7bdb4be410c67f86534ddfa854dee58dd20ae1bc",
+      "translation": "중국 판매자의 사이즈표로 내게 맞을지 확인하려면 어떻게 하나요?"
+    },
+    {
+      "source": "Look at the measurement diagram and units. Compare a similar garment you own using the same endpoints. If the chart gives a flat width and your notes give a circumference, convert the units and measurement method before choosing a size.",
+      "source_sha256": "029c89acb63e78674fb2a434e3f16859f650188934acf084f706610cfa2f7c0a",
+      "raw_target_sha256": "544ed3f21c504cdfcecfde326ab5a42c16697963578625f3c7428e1777267b27",
+      "translation": "측정 도식과 단위를 확인한 뒤 가지고 있는 비슷한 옷을 같은 지점에서 재세요. 표에는 평평하게 놓은 너비가, 내 기록에는 둘레가 적혀 있다면 단위와 측정 기준을 맞춘 뒤 사이즈를 고르세요."
+    },
+    {
+      "source": "When does international freight enter my CNShopper budget?",
+      "source_sha256": "fce7c7338dd9744f6780146dcab34c159ec366ca514efcef44c2b08d4dc09bbf",
+      "raw_target_sha256": "29f8326079be5355f358b1588a5b2936fb8821a7b2bfdad8f99c8707e37ba52a",
+      "translation": "CNShopper 주문의 국제 운임은 언제 예산에 넣어야 하나요?"
+    },
+    {
+      "source": "Allow for it before the purchase. CNShopper describes collecting the product payment first and calculating international shipping after warehouse measurement. Leave room for a parcel quote based on the actual contents.",
+      "source_sha256": "915f64670ad29adbce6484a0427f877681ec612a79a623151347f3f357d55764",
+      "raw_target_sha256": "9a5db79e8ddfa595c037d5d4ea7207b86cbb5549339d4be4cd5c7938da633fc1",
+      "translation": "구매 전부터 예산을 잡아 두세요. CNShopper는 상품 대금을 먼저 받고 창고에서 실측한 뒤 국제 배송비를 계산한다고 안내합니다. 실제 포장 내용에 따라 나올 견적을 감당할 여유를 두세요."
+    },
+    {
+      "source": "How should I record delivery charges from several sellers?",
+      "source_sha256": "84993b54e16ac2aef51b8d1311d4b365abeb4f17d3a138653f4e4f8dcee64dcc",
+      "raw_target_sha256": "ef1aac2140b64210972158d16a52c7337bc1ea9dd539f630a50562eeb71f367a",
+      "translation": "여러 판매자의 배송비는 어떻게 기록하나요?"
+    },
+    {
+      "source": "Record domestic delivery on each seller order and outbound freight on the parcel record. If two items share one domestic charge, enter it once. Keep the currency alongside each amount.",
+      "source_sha256": "30292fcb8584901e7cad3415a9696bd6fda76c45f17256050065204d6b303e6a",
+      "raw_target_sha256": "d871226418acf4d4c871a9ee9fb15b4e335a5bb52b670f27c6cba30e23ca1fa4",
+      "translation": "중국 내 배송비는 판매자별 주문에, 국제 운임은 출고할 소포의 기록에 적으세요. 상품 두 개에 국내 배송비를 한 번 냈다면 한 번만 입력하세요. 금액마다 통화도 함께 표시하세요."
+    },
+    {
+      "source": "The seller says delivered. Where should I look for my purchase?",
+      "source_sha256": "b37fbd6e349cece5020e1c57f786d8c24124359d2dad8037984db411598df8ce",
+      "raw_target_sha256": "31f313e071c3037fc4e63d12da89e7feb541b6bb36d9492c7cbabb0ef4eebe45",
+      "translation": "판매자 쪽에는 배송 완료라고 나옵니다. 어디에서 찾아야 하나요?"
+    },
+    {
+      "source": "Check the destination on that tracking record. A domestic delivery to the CNShopper warehouse precedes the outbound parcel. Match the seller tracking number to the order and check the warehouse record before looking for an international scan.",
+      "source_sha256": "5821293af831486c0fbc29a92e68b676d5bed42fcc6815ba61a1021deac17727",
+      "raw_target_sha256": "5961cd51f0d35f20390d5838e24a71c3b72d6b4e5418f9186dcfab0a2e15cf94",
+      "translation": "해당 배송 기록의 목적지를 확인하세요. 중국 내 택배가 CNShopper 창고에 도착한 뒤에야 국제 소포를 보낼 수 있습니다. 국제 운송 이력을 찾기 전에 판매자의 운송장 번호를 주문과 맞추고 입고 기록을 확인하세요."
+    },
+    {
+      "source": "How do I check a delivery containing only part of an order?",
+      "source_sha256": "a8c451147b028e6502d1964bcd6814e229dfcb41488242815a85b513cc49c834",
+      "raw_target_sha256": "01e5004cc43d4c3e7f6f2d2493644e19af105140001c613977c69345f5bfb36e",
+      "translation": "주문한 상품 중 일부만 도착했을 때 어떻게 확인하나요?"
+    },
+    {
+      "source": "Make a list of expected pieces and mark the items identifiable in the warehouse entry. Compare seller tracking numbers for a second shipment. Give support the order reference and identify the pieces still unaccounted for.",
+      "source_sha256": "fce92eb1ef720b3e4be42050649d6eee07f482cb8f02ce7a73d79a34fc581f5f",
+      "raw_target_sha256": "141ece528235d8c99ccd622a4f4911e44eec65c572b1c968553085cc69306064",
+      "translation": "도착해야 할 물품 목록을 만들고 창고 기록에서 확인된 것을 표시하세요. 판매자가 제공한 운송장 번호를 비교해 별도 발송분이 있는지 확인하세요. 고객 지원에는 주문 번호와 아직 찾지 못한 물품을 구체적으로 알려 주세요."
+    },
+    {
+      "source": "Which warehouse photo would help confirm a personalised print?",
+      "source_sha256": "efffb623d3508bf868ca28cc134e134256401016a3da1afed1f9a246dc82b041",
+      "raw_target_sha256": "4159efcb0a80d4c9302725492af5d339d8e9b892b5788a2a3076c720d1ecbced",
+      "translation": "맞춤 인쇄가 주문대로 되었는지 확인하려면 어떤 창고 사진이 필요한가요?"
+    },
+    {
+      "source": "Request a view showing the entire printed area and another close enough to read the lettering. Compare spelling, number and placement against your written order before packing. Keep the original text with the photos.",
+      "source_sha256": "69f63b8bfb5773d2b4a6c6d7bfde6b7345369086e7b4101fac607e4a1d72b06b",
+      "raw_target_sha256": "0751e7a746e312b9badb8956ed36b67e68f3f414c409a92bd6c4ffd7cea09708",
+      "translation": "인쇄한 부분 전체가 보이는 사진과 글자를 읽을 수 있는 확대 사진을 요청하세요. 포장 전에 철자, 인쇄한 숫자, 배치를 서면 주문 내용과 비교하고 원래 문구를 사진과 함께 보관하세요."
+    },
+    {
+      "source": "What should I do if the warehouse image shows the wrong size label?",
+      "source_sha256": "2110ba797a84cf908b6d7eb3e41d9213a3f625762e12c8ba940e533d38e9b7f3",
+      "raw_target_sha256": "9a7bdc81fedf99ccbc0e32f499452c979ce756b9935c995970b24d72639b2c96",
+      "translation": "창고 사진 속 사이즈 라벨이 주문과 다르면 어떻게 하나요?"
+    },
+    {
+      "source": "Save the image and the order confirmation showing the selected size. Point out the two labels in your message and ask for a check before international shipment. A measurement can help if two labels use different sizing systems.",
+      "source_sha256": "09531d800ec89e6061828fbccfeef10ea67bfaf5fa105a4ad1943221c3825875",
+      "raw_target_sha256": "8d573f792f333e44713f035fe40b1f85d8c00b67554afbab2593899694704300",
+      "translation": "선택한 사이즈가 표시된 주문 확인서와 사진을 저장하세요. 어떤 두 표기가 다른지 메시지에 적고 국제 발송 전에 확인을 요청하세요. 서로 다른 사이즈 체계라면 실측값을 비교하는 방법도 있습니다."
+    },
+    {
+      "source": "What should I check before combining orders into one parcel?",
+      "source_sha256": "29f1e52f4c402dcaf37a3d956c5c890578870e6cd413d4047726099f031af0ea",
+      "raw_target_sha256": "e1f02d863bfeb36ff2e53419e7ac1e6809ed0acd9f3ef591187abdee36d5a24d",
+      "translation": "여러 주문을 한 소포로 합치기 전에 무엇을 확인해야 하나요?"
+    },
+    {
+      "source": "Confirm each item has arrived, completed any inspection you need and is eligible for the intended route. Compare one combined quote with separate quotes using the same destination and packing assumptions.",
+      "source_sha256": "5b949b6b03dbd06a25b78091f4dee77948b0d63d88a24a8c4a075b9c456bceec",
+      "raw_target_sha256": "da1dd0eceaaf81faac637f7a13e816029ba55e4a37dc04acfb20e60168ed669b",
+      "translation": "각 상품이 입고되었고 필요한 검수가 끝났으며 원하는 배송 경로로 보낼 수 있는지 확인하세요. 같은 목적지와 포장 조건으로 합배송 견적과 개별 발송 견적을 비교하세요."
+    },
+    {
+      "source": "Which measurements matter when I compare parcel estimates?",
+      "source_sha256": "6f656ea64aabd21d3d6a9892befa4e76425951312825525cd4c8e60505005000",
+      "raw_target_sha256": "b26a2c017b5c07902809571c7907ac37b8b9d62a0af9e3daf609727f7cb33085",
+      "translation": "소포 운임 견적을 비교할 때 어떤 값이 필요한가요?"
+    },
+    {
+      "source": "Write down packed length, width, height and actual weight, with units. Keep destination and route constant when testing how a packing decision changes the estimate. Record any service included in only one quote.",
+      "source_sha256": "caec92a3dd7d8d4576ae0af1669c068528da60e752f849cd83d0ed8f8fa29ee9",
+      "raw_target_sha256": "190f6fd74e94f30d4080ded15e561fb3e94deb1bb29decf972bd0b83ec057f75",
+      "translation": "포장 후 길이, 너비, 높이와 실제 무게를 단위와 함께 기록하세요. 포장 방식에 따른 견적 변화를 보려면 목적지와 배송 경로를 동일하게 맞추세요. 한쪽 견적에만 포함된 서비스도 적어 두세요."
+    },
+    {
+      "source": "How can I tell if an after-sales case concerns the seller or the carrier?",
+      "source_sha256": "9f2cefbd5f0ac530270962e59b9a04e89fcfe930bd0e1a94e06439ab336e607b",
+      "raw_target_sha256": "d9d0632e6821300be1aa623b13d9bce01f19b8caa6719a0dc8ff829fe7020568",
+      "translation": "판매자에게 문의할 문제인지 배송사에 문의할 문제인지 어떻게 구분하나요?"
+    },
+    {
+      "source": "Identify when the issue first appeared. A wrong colour in a warehouse image points to the item order. Damage first observed on delivery also calls for parcel-label, packaging and delivery evidence. Provide both references if the cause is uncertain.",
+      "source_sha256": "4495f3b158716ad727cef6bb310c648c5bf27e78e98ef44e74972a100dbe6fb8",
+      "raw_target_sha256": "81b4cfef6937aaad72be39bda1c0119cd46fabe19feea66a30d3cdb7b40f4abd",
+      "translation": "문제가 처음 확인된 시점을 찾으세요. 창고 사진에서 이미 색상이 다르면 상품 주문을 확인해야 합니다. 배송받은 후 처음 파손을 발견했다면 운송장, 포장 상태, 인도 기록도 필요합니다. 원인이 불분명하면 주문 번호와 소포 번호를 모두 제공하세요."
+    },
+    {
+      "source": "Where should I look for CNShopper’s current order and return instructions?",
+      "source_sha256": "27634b7dd3ecf92b53266a1f6df82e5c975b1d6b90a982e362595245b699c701",
+      "raw_target_sha256": "b99e1393f7b54513107ac73155c1ef10aec09db42aa2e06d92ee821228ed33d7",
+      "translation": "CNShopper의 최신 주문 및 반품 안내는 어디에서 확인하나요?"
+    },
+    {
+      "source": "The official How to Order guide describes purchasing and parcel submission. The official FAQ links to After-Sales & Returns and the warehouse policy. Check those pages and the specific order before acting on an older screenshot.",
+      "source_sha256": "bd0d1c6f94fc1b9db58bfa28fb093f2b195813073ff16897492af6291f3e6453",
+      "raw_target_sha256": "697b685e037d9353ac08332b2d4932df2e45d55acc1f904b22b80cd4b876128a",
+      "translation": "공식 How to Order 안내에는 구매와 소포 발송 신청 절차가 있습니다. 공식 FAQ에는 사후 지원·반품 및 창고 정책 링크가 있습니다. 오래된 캡처대로 진행하기 전에 현재 안내와 본인의 주문을 확인하세요."
+    },
+    {
+      "source": "Which CNShopper order number belongs with a payment receipt?",
+      "source_sha256": "1e597302651cee97e6dd6159ccab6c80e266f27fce4fa93836c57262cb00a774",
+      "raw_target_sha256": "0ff66554fb195a12014206804d509a6c861d386d240af9624f8bb3b992b86a1b",
+      "translation": "결제 영수증과 함께 보관할 CNShopper 번호는 무엇인가요?"
+    },
+    {
+      "source": "Use the purchase or parcel reference attached to the payment, and note which stage it covers. Save the payment provider's transaction reference separately so support can match both systems.",
+      "source_sha256": "b8b5c9c9cf613e7ad7a300fa8258ae987636d42891e4f2b366e320ce106657a9",
+      "raw_target_sha256": "8223811044a55e9e8f4b1b102564673258b4c51d41f1f96efb70b7469e971b51",
+      "translation": "해당 결제에 연결된 구매 번호 또는 소포 번호를 보관하고 어느 단계의 결제인지 적으세요. 결제업체 거래 번호는 따로 남겨 두면 고객 지원에서 두 시스템의 기록을 대조할 수 있습니다."
+    },
+    {
+      "source": "Should I ask the seller to substitute a different shade if mine is unavailable?",
+      "source_sha256": "fff14ac0b78ad58442895c9c7da6f06272c958a22c39f26a2a2561878d2c7d21",
+      "raw_target_sha256": "c2366b6d20d6cf309e82c6dd662a63a207ff16513d0f05ec46bb403b58ce9536",
+      "translation": "원하는 색상이 없을 때 비슷한 색으로 바꿔 달라고 해도 되나요?"
+    },
+    {
+      "source": "State your preference explicitly. If shade matters, ask to be contacted before substitution and keep the original seller colour text with the request.",
+      "source_sha256": "2502349693cd6cf5fb42d8531eff74146fe52d5323b7584000b515725176a02e",
+      "raw_target_sha256": "2a47d8434c5849e1ec446ea69b5e6609bd47bab8813847a4870b59a8c28be305",
+      "translation": "어떤 변경을 받아들일지 분명히 적으세요. 색감이 중요하다면 변경 전에 연락해 달라고 하고 판매자가 표시한 원래 색상명을 요청서와 함께 보관하세요."
+    },
+    {
+      "source": "Can a listed measurement tell me whether trousers will fit over my shoes?",
+      "source_sha256": "38fec788cfa1d5b165878203610096da78ba328eb27e612b83965c11c180c8d7",
+      "raw_target_sha256": "302df012f69ce8566a22f0c4e57f57987470fbfab4f145f5b06811585443ba03",
+      "translation": "표시된 치수로 바지 밑단이 신발 위에 잘 덮일지 알 수 있나요?"
+    },
+    {
+      "source": "Compare the leg opening, inseam and rise separately with trousers you already wear. Confirm whether the seller measured the opening flat or around its circumference before comparing numbers.",
+      "source_sha256": "3e71823ce599c72d9891a9813d44c5b89b0a0f0f5033be929bcf70400b393200",
+      "raw_target_sha256": "65137c8f002d2385a40b9935c651f38ff2d977720f39b1841a4caaba1adb0213",
+      "translation": "평소 입는 바지와 밑단 너비, 인심 길이, 밑위를 따로 비교하세요. 밑단 수치를 비교하기 전에 판매자가 바지를 펼쳐 잰 너비인지 한 바퀴 잰 둘레인지 확인하세요."
+    },
+    {
+      "source": "How should I identify an order when two similar parcels arrive?",
+      "source_sha256": "27b31a7473b9ba19ddd06d6cb08facd2a30d18b517aff9deb269d623565ade3e",
+      "raw_target_sha256": "04a14ec0dff50b9d26ee35c249c47d227c13be0849e2ddf688a3d83f353d4774",
+      "translation": "비슷한 소포 두 개가 도착하면 어느 주문인지 어떻게 구분하나요?"
+    },
+    {
+      "source": "Match each external label to its outbound tracking number before unpacking. Photograph the contents of one parcel at a time and record the linked warehouse entries.",
+      "source_sha256": "8fb5e6913472958df583875b45265e7467507ab760fba8d7f8198a45f4060bbe",
+      "raw_target_sha256": "e29c897544fdc306f0612c92de841e85f73a45c149c21bbe51a104c003ed83cc",
+      "translation": "개봉 전에 겉면 운송장을 해당 국제 운송장 번호와 대조하세요. 한 번에 한 소포씩 열어 내용물을 촬영하고 각 상품에 해당하는 창고 입고 기록을 적으세요."
+    },
+    {
+      "source": "What if the seller changes the price before the purchase is confirmed?",
+      "source_sha256": "214131f846a9f28eb83fbfa6ce7db2814a7df33658de7d59ed82edaf13cfed0a",
+      "raw_target_sha256": "532f6a8509902b719403ecef525f6d1b68f9a9ebbfc7aaf992ade3cf0ab3f05d",
+      "translation": "구매가 확정되기 전에 판매자 가격이 바뀌면 어떻게 하나요?"
+    },
+    {
+      "source": "Compare the revised amount with your original option, quantity and domestic shipping. Ask what changed and decide whether to accept the revised total before authorizing a different purchase.",
+      "source_sha256": "a90c0710050e568da1cb7e574f5f46fbee8ae81efc2e4e529f93ab68d7760979",
+      "raw_target_sha256": "2f16ec29599445f8a7cb19f5fc77ffdd1da2892411b952911878d4de881936a6",
+      "translation": "새 금액을 원래 선택한 옵션, 수량, 중국 내 배송비와 비교하세요. 무엇이 바뀌었는지 확인하고 새 총액을 받아들일 수 있는지 판단한 후 변경된 조건의 구매를 승인하세요."
     }
   ]
 }
